@@ -1,0 +1,346 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1"><meta http-equiv="Content-Type" content="text/javascript; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"gov-bam.nr-data.net","errorBeacon":"gov-bam.nr-data.net","licenseKey":"9993044f26","applicationID":"91215909","transactionName":"Z1xRYBQHCxYFAEQNCl4Wcmc2SQYECAZeAARCFlFNAxAACxBNURcVSA==","queueTime":0,"applicationTime":121,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["gov-bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"9993044f26",applicationID:"91215909",browserID:"91215921"};;/*! For license information please see nr-loader-rum-1.312.1.min.js.LICENSE.txt */
+(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>T});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const o="experimental.resources",a="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(2614),d=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(a)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:u.wk,inactiveMs:u.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,d.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,d.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,d.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),m=r(9324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)},w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var x=r(7836),R=r(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,k);function T(e,t={},r,o){let{init:a,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();a=e.init,c=e.info,u=e.loader_config}e.init=g(a||{}),e.loader_config=A(u||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init;e.runtime??=_(d),f.proxy.assets&&w(f.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>a,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,o=18e5,a={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>s,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.312.1",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>a,bz:()=>o});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(s(r,i++).toString(16));return o.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.312.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.312.1.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-EBevTx+IXLhfp3rcdB/+2IBkydvAvYO85Bg7o/JAfe5/1BHeAY6HkMhclfLvNo4yjovWHNXDKPvq85KQM98H1Q=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.312.1.PROD"]=self["webpackChunk:NRBA-1.312.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),o=i(1863),a=i(4261),c=i(1738);var u=i(1687),d=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const m=e=>f.RI&&!0===e?.privacy.cookies_enabled;function h(e){return!!(0,p.dV)().o.MO&&m(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends d.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,u.Ak)(e,this.featureName),t()}))}):(0,u.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(m(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,3521));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,u.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,u.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return h(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class R extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(),t=e,(0,c.Y)(a.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(a.Pl+a.Fw,[(0,o.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,146)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,l.sB)(t=>{e(t,"DOMContentLoaded")}),(0,l.GG)(t=>{e(t,"load")}),(0,l.Qr)(t=>{e(t,"navigate")}),this.ee.on(w.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class k extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(a.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,a.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(a.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(a.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,a.Dl,!0)},e)}(this),function(e){(0,c.Y)(a.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,a.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(a.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(a.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(a.Pl+a.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),T=i(782);class E extends y{static featureName=T.T;constructor(e){super(e,T.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,o.t)()],void 0,T.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,o.t)()],void 0,T.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var S=i(3969);class j extends y{static featureName=S.TZ;constructor(e){super(e,S.TZ),f.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(S.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new k({features:[R,E,j],loaderType:"lite"})})()})();</script><meta name="keywords" /><meta name="description" /><meta name="robots" content="index, follow" /><meta name="rating" content="GENERAL" /><meta name="resource-type" content="document" /><meta name="distribution" content="GLOBAL" /><meta name="classification" content="Legislative Federal Government" /><meta name="author" content="Office of the Clerk, U.S. House of Representatives" /><meta name="govType" content="federal" /><meta name="revisit-after" content="15 Days" /><meta name="resource-type" content="document" /><meta name="doc-class" content="Completed" /><title>
+	Unidentified Aerial Phenomena (Open and Closed) | Committee Repository | U.S. House of Representatives
+</title><link href="../Resources/Styles/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="../Resources/Styles/Default.css" rel="stylesheet" type="text/css" /><link href="../Resources/Styles/Print.css" rel="Stylesheet" type="text/css" media="print" />
+    <script src="../Resources/Scripts/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="../Resources/Scripts/bootstrap.min.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <form method="post" action="./ByEvent.aspx?EventID=114761" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E70C8E28" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="DWK8aM3xp8rRFO0xkNo7P4Z5wVSy1uv3OI-lb23niPctQS7zGdFloF3y5ESBTPSw6jkBDTx_48w9p8IKhct8OCoIkBUVe8VWzM3IND5ocNrvaE3P8rkkQL0u3I7e_2O90" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="G7mkd5gnXPeq9kfNbrv/oMyl4AwPecQOcjaidLwjhdwqVtN8Fp4lQyEvEtT6tLIZNa4fcpB9/g4usWBJsj0+edzA+g7xeD0W8uG+VCH9SIYBQM2l6xvJOfFTMTfjDZHypAHlljTXF0h/Qjjjs+i7p/AoaWdkfB+G2SDwuFHiSBck8miSSFAC53vrPBZm8ubD43EqHDKctODBOu+WD7rTg2WIvvPP1petYr1f4/hrjUU=" />
+    <div id='container-outer' class='bg'>
+    <div id="container-inner">
+        <div id="header">
+            <div class="header-top">
+                <div class="header-text">
+                    <ul class="navigation-h">
+                        <li><a href="http://docs.house.gov/floor/" title="Bills this Week" target="_blank"
+                            accesskey="3">Bills this Week</a></li>
+                        <li><a href="http://clerk.house.gov/" title="Office of the Clerk" target="_blank"
+                            accesskey="2">Office of the Clerk</a></li>
+                        <li><a href="http://majorityleader.gov/" title="Majority Leader" target="_blank"
+                            accesskey="4">Majority Leader</a></li>
+                        <li><a href="http://rules.house.gov/" title="Committee on Rules" target="_blank"
+                            accesskey="5">Committee on Rules</a></li>
+                        <li><a href="http://house.gov/" title="U.S. House of Representatives" target="_blank"
+                            accesskey="1">U.S. House of Representatives</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-primary">
+                <a id="LinkButtonLogo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButtonLogo&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Default.aspx&quot;, false, true))"><img id="ImageLogo" title="Committee Repository Logo" src="../Resources/Images/Layout/logo.png" alt="Committee Repository Logo" /></a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation">
+                <li>
+                    <a id="LinkButtonHome" accesskey="h" title="Home" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButtonHome&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Default.aspx&quot;, false, true))">Calendar</a></li>
+                <li>
+                    <a id="LinkButtonCommittees" accesskey="c" title="Committees" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButtonCommittees&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Committees.aspx&quot;, false, true))">Committees</a></li>
+                <li>
+                    <a id="LinkButtonSearch" accesskey="s" title="Search" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButtonSearch&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Search/Home.aspx&quot;, false, true))">Document Search</a></li>
+            </ul>
+        </div>
+        <div id="body">
+            
+            <h2>
+                
+            </h2>
+            <noscript>
+                <div class="alert alert-block">
+                    <b>JavaScript not detected</b>: JavaScript is required to run this site. Please
+                    enable JavaScript in your browser's settings.
+                </div>
+            </noscript>
+            
+    <div id="DivMeetingContent">
+        <style xmlns:dt="http://xsltsl.org/date-time">
+      /* preview styles */
+      div#previewPanel
+      {
+      margin: 10px;
+      font-family: Arial, "Helvetica Neue" , Helvetica, sans-serif;
+      color: #000;
+      font-size: 14px;
+      width: 800px;
+      }
+
+      div#previewPanel h1
+      {
+      font-size: 1.75em;
+      line-height: normal !important;
+      font-weight: bold;
+      border: none;
+      margin: 0px;
+      font-family: Arial, "Helvetica Neue" , Helvetica, sans-serif;
+      color: #000;
+      }
+
+      div#previewPanel h1 blockquote
+      {
+      margin: 5px 0px;
+      padding-left: 15px;
+      border-left: 5px solid #CCC;
+      }
+
+      div#previewPanel h1 blockquote p
+      {
+      margin: 0px;
+      }
+
+      div#previewPanel h2
+      {
+      clear: both;
+      margin: 0 0 5px 0;
+      font-family: Arial, "Helvetica Neue" , Helvetica, sans-serif;
+      color: #000;
+      font-weight: bold;
+      }
+
+      div#previewPanel p
+      {
+      margin: 0px;
+      padding: 0px;
+      }
+
+      div#previewPanel div.witnessPanel
+      {
+      margin-bottom: 15px;
+      }
+
+      div#previewPanel ul
+      {
+      list-style: none;
+      margin: 5px 0px 0px 25px !important;
+      padding: 0px;
+      }
+
+      div#previewPanel a
+      {
+      color: #3457BF;
+      text-decoration: none;
+      }
+
+      div#previewPanel a:hover
+      {
+      text-decoration: underline;
+      }
+
+      div#previewPanel div.divider
+      {
+      border-top: 1px dashed #CCC;
+      padding-top: 15px;
+      margin-top: 15px;
+      clear: both;
+      }
+
+      div#previewPanel .text-small
+      {
+      font-size: 0.85em;
+      }
+
+      div#previewPanel .text-tiny
+      {
+      font-size: 0.75em;
+      }
+
+      div#previewPanel li
+      {
+      margin: 0px 0 3px 0;
+      }
+
+      div#previewPanel p.lastUpdated
+      {
+      font-size: 0.75em;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed #CCC;
+      }
+
+      div#previewPanel div.meeting-date
+      {
+      padding: 5px 15px 5px 0;
+      width: 450px;
+      float: left;
+      border-right: 1px solid #CCC;
+      margin-right: 15px;
+      clear: left;
+      }
+
+      div#previewPanel div.meeting-date p.meetingTime
+      {
+      margin: 0px 0px 3px 0px;
+      }
+
+      div#previewPanel strong.status-alert
+      {
+      padding-top: 5px;
+      display: block;
+      font-style: italic;
+      font-weight: normal;
+      color: #BF3434;
+      }
+
+      div#previewPanel blockquote.location
+      {
+      width: 314px;
+      float: left;
+      clear: right;
+      margin: 0px;
+      padding: 5px 0 5px 0;
+      }
+
+      div#previewPanel strong.notes
+      {
+      clear: both;
+      float: left;
+      width: 100%;
+      display: block;
+      font-weight: normal;
+      margin: 0 0 15px 0;
+      }
+      div#previewPanel strong.newFlags, div#previewPanel strong.updateFlags
+      {
+      padding: 1px 3px;
+      margin:  0;
+      display: block;
+      width: 50%;
+      }
+      div#previewPanel strong.newFlags
+      {
+      color: #4A9152;
+      background-color: #F0F5F0;
+      font-weight: bold;
+      }
+      div#previewPanel strong.updateFlags
+      {
+      color: #D18C0A;
+      font-weight: bold;
+      background-color: #FAEBCF;
+      }
+      h3.witPanelHeader
+      {
+      font-size: 0.85em;
+      font-weight: bold;
+      font-family: Arial;
+      color: #426294;
+      font-style: italic;
+      display: block;
+      background-color: #F0F5F0;
+      width: 25%;
+      }
+    </style>
+<div id="previewPanel" xmlns:dt="http://xsltsl.org/date-time">
+  <div class="well">
+    <h1>
+                Hearing:
+               Unidentified Aerial Phenomena (Open and Closed)<small class="text-tiny"><blockquote>
+          <p>Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation (Permanent Select Committee on Intelligence)<br></p>
+        </blockquote></small></h1>
+  </div>
+  <div class="divider"></div>
+  <div class="meeting-date">
+    <p class="meetingTime">
+    Tuesday, May 17, 2022 (9:00 AM)</p><strong class="status-alert">
+                  Meeting was rescheduled to the time and date listed above.
+                </strong></div>
+  <blockquote class="location"><strong>HVC-210 CAPITOL</strong><br> Washington, D.C. </blockquote>
+  <div style="clear: both; width: 100%;"></div>
+  <div class="divider"></div><strong class="notes">The closed portion will start at 12:00 PM in HVC-304.</strong><div style="clear: both; width: 100%;"></div>
+  <h2>Support Documents</h2>
+  <ul class="unstyled">
+    <li>Rep. Gallagher Submission for the Record
+      [<a target="_blank" href="http://docs.house.gov/meetings/IG/IG05/20220517/114761/HHRG-117-IG05-20220517-SD001.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        05/24/2022 at 01:58 PM</strong></li>
+  </ul>
+  <h2>Member Statements</h2>
+  <ul class="unstyled">
+    <li>Chairman Carson's Opening Statement
+      [<a target="_blank" href="http://docs.house.gov/meetings/IG/IG05/20220517/114761/HHRG-117-IG05-MState-C001072-20220517.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        05/24/2022 at 01:58 PM</strong></li>
+    <li>Chairman Schiff's Opening Statement
+      [<a target="_blank" href="http://docs.house.gov/meetings/IG/IG05/20220517/114761/HHRG-117-IG05-MState-S001150-20220517.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        05/24/2022 at 01:58 PM</strong></li>
+  </ul>
+  <h2>Hearing Record</h2>
+  <ul class="unstyled">
+    <li>Open Transcript
+      [<a target="_blank" href="http://docs.house.gov/meetings/IG/IG05/20220517/114761/HHRG-117-IG05-Transcript-20220517.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        05/24/2022 at 12:29 PM</strong></li>
+  </ul>
+  <p class="lastUpdated">
+            First Published:
+            May 10, 2022 at 05:05 PM<br>
+            Last Updated:
+            May 24, 2022 at 01:58 PM</p>
+</div>
+    </div>
+    
+    <br />
+    <div class="button-row">
+        <a id="MainContent_LinkButtonDownloadMtgXML" class="btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$LinkButtonDownloadMtgXML&#39;,&#39;&#39;)">Download Meeting XML (.xml)</a>&nbsp;&nbsp;<a id="MainContent_LinkButtonDownloadMtgPackage" class="btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$LinkButtonDownloadMtgPackage&#39;,&#39;&#39;)">Download Meeting Package (.zip)</a>&nbsp;&nbsp;
+        <a id="MainContent_HyperLinKCommittee" class="btn" href="http://intelligence.house.gov/" target="_blank">Visit Committee Site</a>
+    </div>
+    <div class="clearfix">
+    </div>
+
+            <br />
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-text">
+            <div class="left text-small">
+                <a href="http://clerk.house.gov/" title="Office of the Clerk">Office of the Clerk</a><br />
+                U.S. House of Representatives<br />
+                U.S. Capitol, Room H-154<br />
+                Washington D.C., 20515-6601<br />
+                202-225-7000
+            </div>
+            <div class="right">
+                
+                <a href="https://www.house.gov/accessibility" target="_blank">
+                    Accessibility</a> | <a href="/committee/Help.aspx">Help</a>
+                <br />
+                
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+    <div class="footer-end">
+    </div>
+    </div>
+    </form>
+	
+	<script>
+	    (function (i, s, o, g, r, a, m) {
+	        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+	            (i[r].q = i[r].q || []).push(arguments)
+	        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+	  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+	    ga('create', 'UA-9875785-20', 'auto');
+	    ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

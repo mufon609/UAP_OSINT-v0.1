@@ -1,0 +1,25 @@
+id: research/written-testimony-fravor-2023
+type: research-artifact
+schema_version: 1
+target_node: documents/written-testimony-fravor-2023
+status: active
+created: '2026-04-17'
+last_iteration: i0
+description: ''
+primary_sources:
+- path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+  format: pdf
+document_intrinsic: {}
+context_extrinsic: {}
+quotes: []
+claims: []
+entities_referenced: []
+naming_quirks: []
+research_gaps: []
+iterations:
+- id: i0
+  date: '2026-04-17'
+  trigger: initial-build
+  summary: Scaffolded empty research artifact — to be populated during Phase I
+  entries_added: []
+  entries_modified: []

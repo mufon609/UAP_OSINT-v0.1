@@ -1,0 +1,585 @@
+# Primary-source investigation knowledge-base — schema
+#
+# Single source of truth for node types, required sections, vocabularies,
+# and structural rules. Read by scripts/validate.py and scripts/new.py.
+# Human-readable rationale lives in meta/conventions.md.
+
+schema:
+  version: 1
+  revision_date: 2026-04-17
+  compatible_with: [1]
+  # compatible_with lists which file-level schema_version values validate
+  # cleanly against this spec. Expanded during migration windows; shrunk
+  # when a version is retired. Migration docs live in
+  # meta/toolkit-notes/schema-migrations/{from}-to-{to}.md.
+
+# Every schema-governed file carries schema_version in its frontmatter
+# (nodes, templates, research artifacts, governance docs under meta/).
+# Version is checked at validation time against `schema.compatible_with`
+# above. Mismatches surface as errors with a pointer to the migration doc.
+
+# ---------------------------------------------------------------------------
+# Cross-cutting vocabularies
+# ---------------------------------------------------------------------------
+
+status_markers:
+  confirmed: "✅ Confirmed"
+  pending: "⏳ Pending"
+  flagged: "⚠ Flagged"
+  disputed: "⚠ Disputed — unknown"     # both sides assert; neither has primary-source evidence
+  contradiction: "❌ Contradiction"     # positions directly contradict and at least one side is backed by primary-source evidence
+
+limits:
+  table_cell_words_soft: 50  # table cells exceeding this should promote to
+                              # a ### subsection or a finding node
+
+quote_verification_fields:
+  required: [Attributed to, Source, Verified]
+  optional: [Location, Note]
+
+# ---------------------------------------------------------------------------
+# Open Questions formatting
+# ---------------------------------------------------------------------------
+
+open_questions:
+  unresolved: "- [ ] {imperative statement} — {context}"
+  resolved: "- [x] {original} — DONE YYYY-MM-DD: {resolution}"
+  rule: |
+    Remove resolved items and promote the resolution into the node body
+    (Description, Key Passages, What It Confirms, Credibility Notes, etc).
+    Retain `- [x] DONE` only for null findings, provenance-chain notes,
+    or methodology outcomes where the closure itself is the useful record.
+
+# ---------------------------------------------------------------------------
+# Node types
+# ---------------------------------------------------------------------------
+
+types:
+
+  # --- PERSON -------------------------------------------------------------
+  person:
+    status_values: [active, in-progress]
+    frontmatter:
+      required: [id, type, schema_version, status, archetype, created]
+      optional: [authored_works]  # list of /books/... paths
+    archetypes:
+      eyewitness:
+        description: "Someone who personally observed a documented event"
+        required_sections:
+          - Identity
+          - Background
+          - UAP Relevance
+          - Affiliations
+          - Key Statements
+          - Relationships
+          - Corroboration
+          - Credibility Notes
+          - Associated Nodes
+          - Open Questions / Research Gaps
+      whistleblower:
+        description: "Someone who filed a formal complaint and makes structured claims"
+        required_sections:
+          - Identity
+          - Background
+          - UAP Relevance
+          - Affiliations
+          - Key Statements
+          - Relationships
+          - Claim Inventory
+          - Credibility Notes
+          - Vouching Chain
+          - Associated Nodes
+          - Open Questions / Research Gaps
+      institutional-actor:
+        description: "Significance rests on institutional access and role"
+        required_sections:
+          - Identity
+          - Background
+          - UAP Relevance
+          - Affiliations
+          - Key Statements
+          - Relationships
+          - Program Involvement
+          - Credibility Notes
+          - Associated Nodes
+          - Open Questions / Research Gaps
+      reporter:
+        description: "Significance rests on published journalism"
+        required_sections:
+          - Identity
+          - Background
+          - UAP Relevance
+          - Affiliations
+          - Key Statements
+          - Relationships
+          - Publication Record
+          - Credibility Notes
+          - Associated Nodes
+          - Open Questions / Research Gaps
+    section_rules:
+      Background: {prose_only: true}
+      Affiliations: {split: [Confirmed, Flagged]}
+      Relationships: {split: [Confirmed, Flagged]}
+      Key Statements: {requires_quote_verification: true}
+      Associated Nodes: {auto_generated: true}
+
+  # --- ORGANIZATION -------------------------------------------------------
+  organization:
+    status_values: [active, in-progress]
+    frontmatter:
+      required: [id, type, schema_version, status, kind, created]
+    kinds:
+      gov:
+        description: "Government — federal department, agency, program office, federal lab, congressional body, military service, military unit"
+        required_sections:
+          - Overview
+          - Description
+          - Key Personnel
+          - What Is Confirmed
+          - Timeline
+          - Relationships
+          - Associated Nodes
+          - Open Questions / Research Gaps
+      gov-contractor:
+        description: "Organization whose existence is a government contract (e.g., BAASS, EarthTech)"
+        required_sections:
+          - Overview
+          - Description
+          - Key Personnel
+          - Primary Contracts
+          - Relationships
+          - Associated Nodes
+          - Open Questions / Research Gaps
+        optional_sections:
+          - What Is Confirmed
+          - Timeline
+      private:
+        description: "Private company, nonprofit, academic institution, media outlet"
+        required_sections:
+          - Overview
+          - Description
+          - Key Personnel
+          - Relationships
+          - Associated Nodes
+          - Open Questions / Research Gaps
+        optional_sections:
+          - What Is Confirmed
+          - Timeline
+    section_rules:
+      Relationships: {split: [Confirmed, Flagged]}
+      Key Personnel: {split: [Confirmed, Flagged]}
+      Associated Nodes: {auto_generated: true}
+
+  # --- DOCUMENT -----------------------------------------------------------
+  document:
+    status_values:
+      - primary-source-confirmed
+      - declassified-full
+      - declassified-partial
+      - classified
+      - unverified-existence
+    frontmatter:
+      required: [id, type, schema_version, status, kind, doc_form, created]
+      optional: [corpus]  # e.g., "aawsap-dird" — loads meta/addenda/{corpus}.md
+    kinds:
+      gov-doc:
+        description: "Government-originated document"
+        required_sections:
+          - Document Summary
+          - Description
+          - Provenance
+          - What This Establishes
+          - Key Passages
+          - Associated Nodes
+          - Open Questions / Research Gaps
+      non-gov-doc:
+        description: "Non-government document — book excerpt, article, private filing"
+        required_sections:
+          - Document Summary
+          - Description
+          - What This Establishes
+          - Key Passages
+          - Associated Nodes
+          - Open Questions / Research Gaps
+    doc_form_values:
+      # Extensible. Validator warns on unknown values but does not error.
+      - technical-report
+      - testimony
+      - memo
+      - letter
+      - contract
+      - press-release
+      - assessment
+      - bio
+      - complaint
+      - video
+      - article
+      - book-excerpt
+      - filing
+      - other
+    section_rules:
+      Key Passages: {requires_quote_verification: true}
+      Associated Nodes: {auto_generated: true}
+
+  # --- EVENT --------------------------------------------------------------
+  event:
+    status_values: [documented, in-progress]
+    frontmatter:
+      required: [id, type, schema_version, status, kind, created]
+    kinds:
+      hearing:
+        description: "Formal proceeding — congressional hearing, deposition"
+        required_sections:
+          - Event Summary
+          - Description
+          - Participants
+          - Timeline
+          - Key Testimony
+          - What The Hearing Established
+          - Associated Nodes
+          - Open Questions / Research Gaps
+        participants_structure:
+          # Hearings nest participant types by evidentiary category
+          confirmed_subsections:
+            - "Witnesses — Eyewitness Testimony"
+            - "Witnesses — Whistleblower Testimony"
+            - "Witnesses — Institutional Testimony"
+            - "Committee Members"
+      encounter:
+        description: "Observed event — UAP sighting, incident"
+        required_sections:
+          - Event Summary
+          - Description
+          - Participants
+          - Timeline
+          - Corroboration
+          - Associated Nodes
+          - Open Questions / Research Gaps
+    section_rules:
+      Participants: {split: [Confirmed, Flagged]}
+      Key Testimony: {requires_quote_verification: true}
+      Associated Nodes: {auto_generated: true}
+
+  # --- TRANSCRIPT ---------------------------------------------------------
+  transcript:
+    status_values: [primary-source-confirmed, partial]
+    frontmatter:
+      required: [id, type, schema_version, status, kind, created]
+    kinds:
+      hearing:
+        description: "Verbatim hearing testimony (congressional, deposition)"
+        required_sections:
+          - Publication Record
+          - Summary
+          - Speakers
+          - Key Passages
+          - Material Differences
+          - Associated Nodes
+          - Open Questions / Research Gaps
+      interview:
+        description: "Broadcast, podcast, or print interview"
+        required_sections:
+          - Publication Record
+          - Summary
+          - Speakers
+          - Key Passages
+          - Associated Nodes
+          - Open Questions / Research Gaps
+    section_rules:
+      Key Passages: {requires_quote_verification: true}
+      Associated Nodes: {auto_generated: true}
+
+  # --- NEWS ---------------------------------------------------------------
+  news:
+    status_values: [published]
+    frontmatter:
+      required: [id, type, schema_version, status, created]
+    required_sections:
+      - Publication Record
+      - Summary
+      - What The Article Established
+      - Authors
+      - Key Passages
+      - Credibility Notes
+      - Associated Nodes
+      - Open Questions / Research Gaps
+    section_rules:
+      Authors: {split: [Confirmed, Flagged]}
+      Key Passages: {requires_quote_verification: true}
+      Associated Nodes: {auto_generated: true}
+
+  # --- BOOK ---------------------------------------------------------------
+  book:
+    status_values: [published, announced-not-released, out-of-print]
+    frontmatter:
+      required: [id, type, schema_version, status, archival_status, created]
+    archival_status_values:
+      - full-text-archived
+      - excerpts-only
+      - not-archived
+    required_sections:
+      - Publication Record
+      - Summary
+      - What The Book States
+      - Authors
+      - Credibility Notes
+      - Associated Nodes
+      - Open Questions / Research Gaps
+    section_rules:
+      Key Passages:
+        # Optional section — populate only when archival_status supports it
+        requires_quote_verification: true
+      Associated Nodes: {auto_generated: true}
+
+  # --- LOCATION -----------------------------------------------------------
+  location:
+    status_values: [active, historical]
+    frontmatter:
+      required: [id, type, schema_version, status, created]
+    required_sections:
+      - Overview
+      - Description
+      - Ownership Timeline
+      - UAP-Scope Activity
+      - Relationships
+      - Associated Nodes
+      - Open Questions / Research Gaps
+    section_rules:
+      Relationships: {split: [Confirmed, Flagged]}
+      Associated Nodes: {auto_generated: true}
+
+  # --- FINDING ------------------------------------------------------------
+  finding:
+    status_values: [active, superseded, unresolved]
+    frontmatter:
+      required: [id, type, schema_version, status, entities, created]
+      # `entities` is a list of node paths that the finding concerns.
+      # Validator checks that each listed entity's body links back to this finding.
+    creation_threshold: |
+      Create a finding node when ANY of:
+        (a) the pattern spans 3+ entity nodes,
+        (b) the analytical narrative would exceed ~200 words in any single
+            entity node's table cell or subsection, OR
+        (c) the same text is about to be written into 3+ different nodes.
+      Below these thresholds, keep the analysis in the single most relevant
+      entity node.
+    required_sections:
+      - Summary
+      - Timeline
+      - Primary Source Basis
+      - What This Establishes
+      - Entities Involved
+      - Open Questions / Research Gaps
+    section_rules:
+      Timeline: {chronological: true}
+
+  # --- META ---------------------------------------------------------------
+  meta:
+    description: "Governing documents (conventions.md, topic/research-queue.md, addenda, toolkit-notes) — no enforced node structure"
+    frontmatter:
+      required: [id, type, schema_version, created]
+
+  # --- RESEARCH-ARTIFACT --------------------------------------------------
+  # Structured investigation record backing each node. Stored at
+  # /research/{slug}.yaml as pure YAML (not markdown). One artifact per
+  # content node; target_node declares the pointer.
+  #
+  # The research artifact is the canonical record of what the repository
+  # knows about a node's subject. Nodes are regeneratable from research
+  # artifacts via scripts/build-from-research.py (Phase II of the layered
+  # build process).
+  research-artifact:
+    path_prefix: research/
+    format: yaml
+
+    # Top-level required keys — the research artifact is a flat YAML dict
+    # (no markdown frontmatter / body distinction since it's pure YAML).
+    required_keys:
+      - id                    # research/{slug}; must match file path
+      - type                  # literal: research-artifact
+      - schema_version        # validated against schema.compatible_with
+      - target_node           # {type}/{slug} of the node this artifact backs
+      - status                # active | archived
+      - created               # YYYY-MM-DD
+      - last_iteration        # i0 | i1 | i2 ... (bumps with each iteration)
+      - description           # 1-3 paragraphs of prose; renders as node's Description section
+      - primary_sources       # list — sources this artifact draws on
+      - document_intrinsic    # dict — facts the primary source(s) state internally
+      - context_extrinsic     # dict — contextual metadata (hearing date, etc.)
+      - quotes                # list — verbatim-quotable passages
+      - claims                # list — atomic claims the sources establish
+      - entities_referenced   # list — every named person/org/event/doc/location
+      - naming_quirks         # list — source-specific oddities (typos, alt spellings)
+      - research_gaps         # list — investigation threads, resolved or open
+      - iterations            # list — audit log of updates since initial build
+
+    # `rumors` is type-conditional — present only on research artifacts
+    # whose target_node is of one of these types. Captures widely-reported
+    # claims circulating in public discourse that lack primary-source
+    # support in this artifact (fabrication-prevention mechanism).
+    conditional_keys:
+      rumors:
+        required_when_target_node_type_in: [person, organization, event, location]
+
+    # Primary-source list entries
+    primary_sources_entry:
+      required: [path, format]
+      optional: [extracted_text_path, pdf_metadata, sha256_at_extraction]
+      # path: relative to sources/, must appear in sources/manifest.yaml
+      # sha256_at_extraction: captured SHA256 at extraction time (optional
+      #   audit trail; separate from manifest's live sha256 field)
+
+    # --- Entry shapes per top-level list section ---
+
+    # Every entry across claims, quotes, entities_referenced, rumors,
+    # naming_quirks, research_gaps carries the lifecycle fields below.
+    entry_lifecycle_fields:
+      required: [id, added_date, added_by_iteration]
+      optional:
+        - last_audited_date
+        - last_audited_by
+        - audit_status            # verified | flagged | superseded | contradicted | needs-reaudit
+        - audit_cadence_days      # re-audit expected within this window; default 365
+        - superseded_by           # entry id within this artifact, or external ref
+        - contradicted_by         # same
+        - corroborated_by         # list of entry ids or external refs
+      default_audit_cadence_days: 365
+      # Default cadence is uniform at 365 across all entry types. See
+      # BACKLOG.md (audit-cadence defaults may need type-specific tuning)
+      # for re-examination after research-artifact corpus accumulates.
+
+    # Per-section entry shapes (each inherits lifecycle fields above):
+
+    quote_entry:
+      required: [text, source]
+      optional: [significance, context]
+      # text: verbatim quote, YAML literal block (|) preserves multi-line
+      # source: object with path + location (single source per quote)
+
+    quote_source:
+      required: [path, location]
+      # path: appears in manifest.yaml
+      # location: paragraph ref (¶N), line number (line N), page (p. N), timestamp, etc.
+
+    claim_entry:
+      required: [statement, sources, evidentiary_type]
+      optional: [independently_verifiable]
+      # statement: prose sentence, one atomic claim
+      # sources: list — a claim may draw on multiple sources
+      # evidentiary_type: sworn-testimony | documented | cited | secondary
+      # independently_verifiable: free-text note on corroboration status
+
+    claim_source:
+      required: [path, location]
+      optional: [quote_ref]
+      # quote_ref: links the claim to a specific quote entry's id
+
+    entity_entry:
+      required: [entity_type, name, wrap_path]
+      optional: [context_summary, references]
+      # entity_type: person | organization | document | event | location | finding
+      # name: display name
+      # wrap_path: canonical repo path (/people/..., /organizations/..., etc.)
+      # references: list of {quote_id: X} or {claim_id: Y} — auto-populated
+      #   by scaffolder/build-from-research.py; contributors don't hand-maintain
+
+    rumor_entry:
+      required: [claim, status]
+      optional: [observed_sources, primary_source_search, note]
+      # claim: the circulating claim as prose
+      # status: not-primary-source-established | primary-source-identified | primary-source-disputed
+      # observed_sources: list of descriptions — where the rumor circulates
+      # primary_source_search: list — where we've looked or where to look
+
+    naming_quirk_entry:
+      required: [observed, canonical, location, source_path, resolution]
+      optional: [note]
+      # observed: as it appears in source (e.g., "Leslie Keane")
+      # canonical: corrected form (e.g., "Leslie Kean")
+      # resolution: preserve-as-sic-in-quotes | use-canonical | disputed | unresolved
+
+    research_gap_entry:
+      required: [statement, resolved]
+      optional: [methodology, resolved_date, resolving_source, resolution_summary, retain_as_done]
+      # statement: the question or gap
+      # methodology: how to resolve
+      # resolved: bool
+      # resolved_* fields: required when resolved == true
+      # retain_as_done: bool (default false) — when true, a resolved gap renders
+      #   in the node's Open Questions section as "- [x] DONE YYYY-MM-DD: ...".
+      #   When false (default), resolved gaps are omitted from node render —
+      #   their resolution lives in the node body (as a new claim). Only set to
+      #   true when the gap's closure is itself the primary record (null
+      #   findings, methodology outcomes).
+
+    iteration_entry:
+      required: [id, date, trigger, summary]
+      optional: [entries_added, entries_modified]
+      # id: i0 (initial build), i1, i2, ... — sequential
+      # trigger: initial-build | new-source | oq-resolution | cross-node-update | audit-correction | other
+      # summary: short prose describing what changed
+      # entries_added / entries_modified: lists of entry ids
+
+    # --- Validation invariants (enforced by scripts/validate-research.py) ---
+
+    invariants:
+      # Frontmatter / top-level
+      - "target_node field points to a file that exists (type/slug.md)"
+      - "schema_version value appears in schema.compatible_with"
+      - "status is one of [active, archived]"
+
+      # Entry-level
+      - "every entry id is unique within its section"
+      - "every entry has required lifecycle fields (id, added_date, added_by_iteration)"
+
+      # Cross-reference
+      - "every sources[].path exists in sources/manifest.yaml"
+      - "every quote_ref points to an existing quote.id"
+      - "every reference in entity.references points to an existing quote.id or claim.id"
+      - "every superseded_by / contradicted_by / corroborated_by ref points to an existing entry id (or is a structured external ref)"
+
+      # Enum values
+      - "evidentiary_type (claims) in [sworn-testimony, documented, cited, secondary]"
+      - "resolution (naming_quirks) in [preserve-as-sic-in-quotes, use-canonical, disputed, unresolved]"
+      - "audit_status in [verified, flagged, superseded, contradicted, needs-reaudit]"
+      - "rumor status in [not-primary-source-established, primary-source-identified, primary-source-disputed]"
+      - "entity entity_type in [person, organization, document, event, location, finding]"
+
+      # Iterations log
+      - "iterations[].id values are sequential (i0, i1, i2, ...) with no gaps"
+      - "every entry's added_by_iteration refers to an existing iteration.id"
+
+      # Conditional sections
+      - "rumors section present if target_node type in [person, organization, event, location]; absent otherwise"
+
+# ---------------------------------------------------------------------------
+# Manifest (sources/manifest.yaml) schema
+# ---------------------------------------------------------------------------
+
+manifest_entry:
+  required: [url, format, status]
+  optional: [path, sha256, archived_date, wayback_date, note, category]
+  conditionally_required:
+    path: "status == archived"       # must be set when the file is archived locally
+    sha256: "status == archived"     # SHA256 of the archived file; integrity backstop
+  status_values: [archived, 403-blocked, 402-blocked, pending]
+  format_values: [pdf, html, txt, post, video, transcript]
+  # `category` is derived from path prefix (government/, news/, etc.) unless overridden
+  # `sha256` detects local file corruption, accidental overwrite, and silent
+  # substitution. Computed at archive-time by manifest.py add; re-verified
+  # by manifest.py verify-checksums.
+
+# ---------------------------------------------------------------------------
+# Addenda
+# ---------------------------------------------------------------------------
+
+addenda:
+  # Corpus-specific addenda live at meta/topic/addenda/{name}.md and are
+  # referenced from node frontmatter via the `corpus:` field on document
+  # nodes. Addenda may declare additional required sections and additional
+  # required frontmatter fields. Validator merges addendum rules with the
+  # base type's rules.
+  resolution: "Nodes with `corpus: X` in frontmatter inherit rules from meta/topic/addenda/X.md"
+  # Addenda are topic-specific by definition. They live under meta/topic/
+  # so they are deleted cleanly when the toolkit is forked to a different
+  # topic. See meta/topic/overview.md for the topic scope of this instance.

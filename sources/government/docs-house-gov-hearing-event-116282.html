@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1"><meta http-equiv="Content-Type" content="text/javascript; charset=utf-8" /><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"beacon":"gov-bam.nr-data.net","errorBeacon":"gov-bam.nr-data.net","licenseKey":"9993044f26","applicationID":"91215909","transactionName":"Z1xRYBQHCxYFAEQNCl4Wcmc2SQYECAZeAARCFlFNAxAACxBNURcVSA==","queueTime":0,"applicationTime":158,"agent":"","atts":""}</script><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["gov-bam.nr-data.net"]},feature_flags:["soft_nav"]};(window.NREUM||(NREUM={})).loader_config={licenseKey:"9993044f26",applicationID:"91215909",browserID:"91215921"};;/*! For license information please see nr-loader-rum-1.312.1.min.js.LICENSE.txt */
+(()=>{var e,t,r={163:(e,t,r)=>{"use strict";r.d(t,{j:()=>T});var n=r(384),i=r(1741);var s=r(2555);r(860).K7.genericEvents;const o="experimental.resources",a="register",c=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var u=r(2614),d=r(944),l=r(8122);const f="[data-nr-mask]",g=e=>(0,l.a)(e,(()=>{const e={feature_flags:[],experimental:{allow_registered_children:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{get allow_registered_children(){return e.feature_flags.includes(a)||e.experimental.allow_registered_children},set allow_registered_children(t){e.experimental.allow_registered_children=t},duplicate_registered_data:!1},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(o)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:u.wk,inactiveMs:u.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){c(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,d.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){c(t)?e.block_selector+=",".concat(t):""!==t&&(0,d.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,d.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var p=r(6154),m=r(9324);let h=0;const v={buildEnv:m.F3,distMethod:m.Xs,version:m.xv,originTime:p.WN},b={consented:!1},y={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||b.consented},set consented(e){b.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++h}},_=e=>{const t=(0,l.a)(e,y),r=Object.keys(v).reduce((e,t)=>(e[t]={value:v[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)},w=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};var x=r(7836),R=r(3241);const k={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A=e=>(0,l.a)(e,k);function T(e,t={},r,o){let{init:a,info:c,loader_config:u,runtime:d={},exposed:l=!0}=t;if(!c){const e=(0,n.pV)();a=e.init,c=e.info,u=e.loader_config}e.init=g(a||{}),e.loader_config=A(u||{}),c.jsAttributes??={},p.bv&&(c.jsAttributes.isWorker=!0),e.info=(0,s.D)(c);const f=e.init;e.runtime??=_(d),f.proxy.assets&&w(f.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(i.W.prototype).forEach(r=>{const n=i.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let s=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return s?s(...t):n})})}(e),e.runtime.loaderType=r,e.ee=x.ee.get(e.agentIdentifier),e.exposed=l,(0,R.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(6154),i=r(1863),s=r(944),o=r(1910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(3241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},1687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(3241),i=r(3606),s=r(860),o=r(2646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},1738:(e,t,r)=>{"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(3241),i=r(9908),s=r(1863),o=r(944),a=r(3969),c=r(8362),u=r(860),d=r(4261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},1741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(4261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},1863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},1910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},2555:(e,t,r)=>{"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(8122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},2614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>o,H3:()=>n,g:()=>u,iL:()=>c,tS:()=>a,uh:()=>i,wk:()=>s});const n="NRBA",i="SESSION",s=144e5,o=18e5,a={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},c={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},u={OFF:0,FULL:1,ERROR:2}},2646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},2843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(3878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},3241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},3606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(9908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},3878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},3969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},4234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(1687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},4261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>s,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},5289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(3878),i=r(6389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},5607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(9566).bz)()},6154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(1863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},6389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},6630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},7699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},7836:(e,t,r)=>{"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(8990),s=r(2646),o=r(5607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},8122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},8362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(9566),i=r(1741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},8374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},8990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},9324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.312.1",i="PROD",s="CDN"},9566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>a,bz:()=>o});var n=r(6154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(s(r,i++).toString(16));return o.join("")}},9908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(7836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.312.1.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.312.1.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-EBevTx+IXLhfp3rcdB/+2IBkydvAvYO85Bg7o/JAfe5/1BHeAY6HkMhclfLvNo4yjovWHNXDKPvq85KQM98H1Q=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.312.1.PROD"]=self["webpackChunk:NRBA-1.312.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(8374);var e=i(8362),t=i(860);const r=Object.values(t.K7);var n=i(163);var s=i(9908),o=i(1863),a=i(4261),c=i(1738);var u=i(1687),d=i(4234),l=i(5289),f=i(6154),g=i(944),p=i(384);const m=e=>f.RI&&!0===e?.privacy.cookies_enabled;function h(e){return!!(0,p.dV)().o.MO&&m(e)&&!0===e?.session_trace.enabled}var v=i(6389),b=i(7699);class y extends d.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,v.J)(()=>{(0,u.Ak)(e,this.featureName),t()}))}):(0,u.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{let n;await this.deferred;try{if(m(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,3521));n=t(e)}}catch(e){(0,g.R)(20,e),this.ee.emit("internal-error",[e]),(0,s.p)(b.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#t(this.featureName,n,e.init))return(0,u.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,g.R)(34,e),this.abortHandler?.(),(0,u.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};f.RI?(0,l.GG)(()=>n(),!0):n()}#t(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return h(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}}var _=i(6630),w=i(2614),x=i(3241);class R extends y{static featureName=_.T;constructor(e){var t;super(e,_.T),this.setupInspectionEvents(),t=e,(0,c.Y)(a.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,s.p)(a.Pl+a.Fw,[(0,o.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,146)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,l.sB)(t=>{e(t,"DOMContentLoaded")}),(0,l.GG)(t=>{e(t,"load")}),(0,l.Qr)(t=>{e(t,"navigate")}),this.ee.on(w.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class k extends e.d{constructor(e){var t;(super(),f.gm)?(this.features={},(0,p.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(R),(0,n.j)(this,e,e.loaderType||"agent"),t=this,(0,c.Y)(a.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,c.U)(t,e,r,a.cD,n);(0,g.R)(40,typeof r)}else(0,g.R)(39,typeof e)},t),function(e){(0,c.Y)(a.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,g.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,s.p)(a.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,c.U)(e,"enduser.id",t,a.Dl,!0)},e)}(this),function(e){(0,c.Y)(a.nb,function(t){if("string"==typeof t||null===t)return(0,c.U)(e,"application.version",t,a.nb,!1);(0,g.R)(42,typeof t)},e)}(this),function(e){(0,c.Y)(a.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,c.Y)(a.Pv,function(t=!0){if("boolean"==typeof t){if((0,s.p)(a.Pl+a.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,g.R)(65,typeof t)},e)}(this),this.run()):(0,g.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,g.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,g.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,p.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var A=i(2843),T=i(782);class E extends y{static featureName=T.T;constructor(e){super(e,T.T),f.RI&&((0,A.u)(()=>(0,s.p)("docHidden",[(0,o.t)()],void 0,T.T,this.ee),!0),(0,A.G)(()=>(0,s.p)("winPagehide",[(0,o.t)()],void 0,T.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,2117))))}}var S=i(3969);class j extends y{static featureName=S.TZ;constructor(e){super(e,S.TZ),f.RI&&document.addEventListener("securitypolicyviolation",e=>{(0,s.p)(S.xV,["Generic/CSPViolation/Detected"],void 0,this.featureName,this.ee)}),this.importAggregator(e,()=>i.e(296).then(i.bind(i,9623)))}}new k({features:[R,E,j],loaderType:"lite"})})()})();</script><meta name="keywords" /><meta name="description" /><meta name="robots" content="index, follow" /><meta name="rating" content="GENERAL" /><meta name="resource-type" content="document" /><meta name="distribution" content="GLOBAL" /><meta name="classification" content="Legislative Federal Government" /><meta name="author" content="Office of the Clerk, U.S. House of Representatives" /><meta name="govType" content="federal" /><meta name="revisit-after" content="15 Days" /><meta name="resource-type" content="document" /><meta name="doc-class" content="Completed" /><title>
+	“Unidentified Anomalous Phenomena: Implications on National Security, Public Safety, and Government Transparency” | Committee Repository | U.S. House of Representatives
+</title><link href="../Resources/Styles/bootstrap.min.css" rel="stylesheet" type="text/css" /><link href="../Resources/Styles/Default.css" rel="stylesheet" type="text/css" /><link href="../Resources/Styles/Print.css" rel="Stylesheet" type="text/css" media="print" />
+    <script src="../Resources/Scripts/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="../Resources/Scripts/bootstrap.min.js" type="text/javascript"></script>
+    
+</head>
+<body>
+    <form method="post" action="./ByEvent.aspx?EventID=116282" id="Form1">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E70C8E28" />
+<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+<input type="hidden" name="__PREVIOUSPAGE" id="__PREVIOUSPAGE" value="DWK8aM3xp8rRFO0xkNo7P4Z5wVSy1uv3OI-lb23niPctQS7zGdFloF3y5ESBTPSw6jkBDTx_48w9p8IKhct8OCoIkBUVe8VWzM3IND5ocNrvaE3P8rkkQL0u3I7e_2O90" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="m7/+sWicH+iqQdudUv/1hjlOveH+6BEIPUaB3HAmQQruuDyRWkb6vjm/btTEwO9kFPhxs4uZ/kQ+c087hxRBFl3HLRke3dbC0Ch/H0jvtAocWGkFknmWzEQ5Yk/YMWpj2bY94J/omqTk9X7gMw69pLCXKene0n/6Mmednl6WtsGxGmq1HtQhzNHZuQYEYfuUNo5i7eAvloLtA0VfsXd5uOl1KSSNMzQqqz0EDZTERng=" />
+    <div id='container-outer' class='bg'>
+    <div id="container-inner">
+        <div id="header">
+            <div class="header-top">
+                <div class="header-text">
+                    <ul class="navigation-h">
+                        <li><a href="http://docs.house.gov/floor/" title="Bills this Week" target="_blank"
+                            accesskey="3">Bills this Week</a></li>
+                        <li><a href="http://clerk.house.gov/" title="Office of the Clerk" target="_blank"
+                            accesskey="2">Office of the Clerk</a></li>
+                        <li><a href="http://majorityleader.gov/" title="Majority Leader" target="_blank"
+                            accesskey="4">Majority Leader</a></li>
+                        <li><a href="http://rules.house.gov/" title="Committee on Rules" target="_blank"
+                            accesskey="5">Committee on Rules</a></li>
+                        <li><a href="http://house.gov/" title="U.S. House of Representatives" target="_blank"
+                            accesskey="1">U.S. House of Representatives</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-primary">
+                <a id="LinkButtonLogo" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButtonLogo&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Default.aspx&quot;, false, true))"><img id="ImageLogo" title="Committee Repository Logo" src="../Resources/Images/Layout/logo.png" alt="Committee Repository Logo" /></a>
+            </div>
+        </div>
+        <div id="navigation">
+            <ul class="navigation">
+                <li>
+                    <a id="LinkButtonHome" accesskey="h" title="Home" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButtonHome&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Default.aspx&quot;, false, true))">Calendar</a></li>
+                <li>
+                    <a id="LinkButtonCommittees" accesskey="c" title="Committees" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButtonCommittees&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Committees.aspx&quot;, false, true))">Committees</a></li>
+                <li>
+                    <a id="LinkButtonSearch" accesskey="s" title="Search" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$LinkButtonSearch&quot;, &quot;&quot;, false, &quot;&quot;, &quot;../Search/Home.aspx&quot;, false, true))">Document Search</a></li>
+            </ul>
+        </div>
+        <div id="body">
+            
+            <h2>
+                
+            </h2>
+            <noscript>
+                <div class="alert alert-block">
+                    <b>JavaScript not detected</b>: JavaScript is required to run this site. Please
+                    enable JavaScript in your browser's settings.
+                </div>
+            </noscript>
+            
+    <div id="DivMeetingContent">
+        <style xmlns:dt="http://xsltsl.org/date-time">
+      /* preview styles */
+      div#previewPanel
+      {
+      margin: 10px;
+      font-family: Arial, "Helvetica Neue" , Helvetica, sans-serif;
+      color: #000;
+      font-size: 14px;
+      width: 800px;
+      }
+
+      div#previewPanel h1
+      {
+      font-size: 1.75em;
+      line-height: normal !important;
+      font-weight: bold;
+      border: none;
+      margin: 0px;
+      font-family: Arial, "Helvetica Neue" , Helvetica, sans-serif;
+      color: #000;
+      }
+
+      div#previewPanel h1 blockquote
+      {
+      margin: 5px 0px;
+      padding-left: 15px;
+      border-left: 5px solid #CCC;
+      }
+
+      div#previewPanel h1 blockquote p
+      {
+      margin: 0px;
+      }
+
+      div#previewPanel h2
+      {
+      clear: both;
+      margin: 0 0 5px 0;
+      font-family: Arial, "Helvetica Neue" , Helvetica, sans-serif;
+      color: #000;
+      font-weight: bold;
+      }
+
+      div#previewPanel p
+      {
+      margin: 0px;
+      padding: 0px;
+      }
+
+      div#previewPanel div.witnessPanel
+      {
+      margin-bottom: 15px;
+      }
+
+      div#previewPanel ul
+      {
+      list-style: none;
+      margin: 5px 0px 0px 25px !important;
+      padding: 0px;
+      }
+
+      div#previewPanel a
+      {
+      color: #3457BF;
+      text-decoration: none;
+      }
+
+      div#previewPanel a:hover
+      {
+      text-decoration: underline;
+      }
+
+      div#previewPanel div.divider
+      {
+      border-top: 1px dashed #CCC;
+      padding-top: 15px;
+      margin-top: 15px;
+      clear: both;
+      }
+
+      div#previewPanel .text-small
+      {
+      font-size: 0.85em;
+      }
+
+      div#previewPanel .text-tiny
+      {
+      font-size: 0.75em;
+      }
+
+      div#previewPanel li
+      {
+      margin: 0px 0 3px 0;
+      }
+
+      div#previewPanel p.lastUpdated
+      {
+      font-size: 0.75em;
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px dashed #CCC;
+      }
+
+      div#previewPanel div.meeting-date
+      {
+      padding: 5px 15px 5px 0;
+      width: 450px;
+      float: left;
+      border-right: 1px solid #CCC;
+      margin-right: 15px;
+      clear: left;
+      }
+
+      div#previewPanel div.meeting-date p.meetingTime
+      {
+      margin: 0px 0px 3px 0px;
+      }
+
+      div#previewPanel strong.status-alert
+      {
+      padding-top: 5px;
+      display: block;
+      font-style: italic;
+      font-weight: normal;
+      color: #BF3434;
+      }
+
+      div#previewPanel blockquote.location
+      {
+      width: 314px;
+      float: left;
+      clear: right;
+      margin: 0px;
+      padding: 5px 0 5px 0;
+      }
+
+      div#previewPanel strong.notes
+      {
+      clear: both;
+      float: left;
+      width: 100%;
+      display: block;
+      font-weight: normal;
+      margin: 0 0 15px 0;
+      }
+      div#previewPanel strong.newFlags, div#previewPanel strong.updateFlags
+      {
+      padding: 1px 3px;
+      margin:  0;
+      display: block;
+      width: 50%;
+      }
+      div#previewPanel strong.newFlags
+      {
+      color: #4A9152;
+      background-color: #F0F5F0;
+      font-weight: bold;
+      }
+      div#previewPanel strong.updateFlags
+      {
+      color: #D18C0A;
+      font-weight: bold;
+      background-color: #FAEBCF;
+      }
+      h3.witPanelHeader
+      {
+      font-size: 0.85em;
+      font-weight: bold;
+      font-family: Arial;
+      color: #426294;
+      font-style: italic;
+      display: block;
+      background-color: #F0F5F0;
+      width: 25%;
+      }
+    </style>
+<div id="previewPanel" xmlns:dt="http://xsltsl.org/date-time">
+  <div class="well">
+    <h1>
+                Hearing:
+               “Unidentified Anomalous Phenomena: Implications on National Security, Public Safety, and Government Transparency”<small class="text-tiny"><blockquote>
+          <p>Subcommittee on National Security, the Border, and Foreign Affairs (Committee on Oversight and Accountability)<br></p>
+        </blockquote></small></h1>
+  </div>
+  <div class="divider"></div>
+  <div class="meeting-date">
+    <p class="meetingTime">
+    Wednesday, July 26, 2023 (10:00 AM)</p>
+  </div>
+  <blockquote class="location"><strong>2154 RHOB</strong><br> Washington, D.C. </blockquote>
+  <div style="clear: both; width: 100%;"></div>
+  <div class="divider"></div>
+  <div style="clear: both; width: 100%;"></div>
+  <h2>Witnesses</h2>
+  <div class="witnessPanel">
+    <p><strong>Commander David Fravor (Ret.) </strong><br><small class="text-small">Former Commanding Officer, United States Navy</small></p><strong class="newFlags">
+        Added
+        07/21/2023 at 02:51 PM</strong><ul>
+      <li>Witness Statement
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Wstate-FravorD-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/25/2023 at 02:21 PM</strong></li>
+      <li>Truth in Testimony
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-TTF-FravorD-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/26/2023 at 12:52 PM</strong></li>
+      <li>Bio
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Bio-FravorD-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/25/2023 at 02:21 PM</strong></li>
+    </ul>
+  </div>
+  <div class="witnessPanel">
+    <p><strong>Mr. Ryan Graves </strong><br><small class="text-small">Executive Director, Americans for Safe Aerospace</small></p><strong class="newFlags">
+        Added
+        07/21/2023 at 02:51 PM</strong><ul>
+      <li>Witness Statement
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Wstate-GravesR-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/25/2023 at 02:21 PM</strong></li>
+      <li>Truth in Testimony
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-TTF-GravesR-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/25/2023 at 02:21 PM</strong></li>
+      <li>Bio
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Bio-GravesR-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/25/2023 at 02:21 PM</strong></li>
+    </ul>
+  </div>
+  <div class="witnessPanel">
+    <p><strong>Mr. David Grusch </strong><br><small class="text-small">Former National Reconnaissance Office Representative, Unidentified Aerial Phenomena Task Force, Department of Defense</small></p><strong class="newFlags">
+        Added
+        07/21/2023 at 02:51 PM</strong><ul>
+      <li>Witness Statement
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Wstate-GruschD-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/25/2023 at 02:21 PM</strong></li>
+      <li>Truth in Testimony
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-TTF-GruschD-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/25/2023 at 02:21 PM</strong></li>
+      <li>Bio
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Bio-GruschD-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/25/2023 at 02:21 PM</strong></li>
+    </ul>
+  </div>
+  <h2>Support Documents</h2>
+  <ul class="unstyled">
+    <li>Notice
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-20230726-SD001.pdf">PDF</a>]
+    </li>
+    <li>Memo
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-20230726-SD002.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/21/2023 at 02:51 PM</strong></li>
+    <li>UC - Burchett - Report - "The UAP Puzzle" - Jeremy Corbell
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-20230726-SD003.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        08/21/2023 at 05:03 PM</strong></li>
+    <li>UC - Burchett - Statement for the Record - George Knapp
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-20230726-SD004.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        08/21/2023 at 05:03 PM</strong></li>
+    <li>UC - Burchett - Defense Intelligence Reference Document - "Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering"
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-20230726-SD005.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        08/21/2023 at 05:03 PM</strong></li>
+    <li>UC - Luna - Article - "We are not alone: The UFO whistleblower speaks" - NewsNation
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-20230726-SD006.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        08/22/2023 at 10:47 AM</strong></li>
+  </ul>
+  <h2>Hearing Record</h2>
+  <ul class="unstyled">
+    <li>Attendance Sheet
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-20230726-MbrRoster.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        07/26/2023 at 01:59 PM</strong></li>
+    <li>Transcript
+      [<a target="_blank" href="http://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Transcript-20230726.pdf">PDF</a>]
+    <strong class="newFlags">
+        Added
+        09/08/2023 at 02:16 PM</strong></li>
+  </ul>
+  <p class="lastUpdated">
+            First Published:
+            July 19, 2023 at 07:33 PM<br>
+            Last Updated:
+            September 8, 2023 at 02:16 PM</p>
+</div>
+    </div>
+    
+    <br />
+    <div class="button-row">
+        <a id="MainContent_LinkButtonDownloadMtgXML" class="btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$LinkButtonDownloadMtgXML&#39;,&#39;&#39;)">Download Meeting XML (.xml)</a>&nbsp;&nbsp;<a id="MainContent_LinkButtonDownloadMtgPackage" class="btn" href="javascript:__doPostBack(&#39;ctl00$MainContent$LinkButtonDownloadMtgPackage&#39;,&#39;&#39;)">Download Meeting Package (.zip)</a>&nbsp;&nbsp;
+        <a id="MainContent_HyperLinKCommittee" class="btn" href="http://oversight.house.gov/" target="_blank">Visit Committee Site</a>
+    </div>
+    <div class="clearfix">
+    </div>
+
+            <br />
+        </div>
+    </div>
+    <div id="footer">
+        <div class="footer-text">
+            <div class="left text-small">
+                <a href="http://clerk.house.gov/" title="Office of the Clerk">Office of the Clerk</a><br />
+                U.S. House of Representatives<br />
+                U.S. Capitol, Room H-154<br />
+                Washington D.C., 20515-6601<br />
+                202-225-7000
+            </div>
+            <div class="right">
+                
+                <a href="https://www.house.gov/accessibility" target="_blank">
+                    Accessibility</a> | <a href="/committee/Help.aspx">Help</a>
+                <br />
+                
+            </div>
+            <div class="clearfix">
+            </div>
+        </div>
+    </div>
+    <div class="footer-end">
+    </div>
+    </div>
+    </form>
+	
+	<script>
+	    (function (i, s, o, g, r, a, m) {
+	        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+	            (i[r].q = i[r].q || []).push(arguments)
+	        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+	  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+	    ga('create', 'UA-9875785-20', 'auto');
+	    ga('send', 'pageview');
+
+	</script>
+</body>
+</html>

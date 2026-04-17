@@ -1,0 +1,693 @@
+#!/usr/bin/env python3
+"""
+Validate nodes against meta/schema.yaml.
+
+Checks:
+  1. Frontmatter — required fields + valid type/kind/archetype/status
+  2. id frontmatter matches file path
+  3. Required sections per type + kind/archetype (+ corpus addendum)
+  4. Confirmed / Flagged subsection splits (Flagged omitted when empty)
+  5. Quote verification blocks in sections that require them
+  6. Background prose-only (person nodes)
+  7. Internal link resolution (reports broken-link registry as backlog)
+  8. Open Questions formatting (- [ ] and - [x] DONE YYYY-MM-DD: ...)
+  9. Table cell word budget (soft warning)
+ 10. Finding cross-reference consistency (entities listed must link back)
+ 11. Verbatim-quote verification — for every '> blockquote' followed by a
+     verification block claiming '✅ Confirmed — verified verbatim',
+     extract the cited source file to plaintext and confirm the quote
+     appears as a substring (with whitespace/dash/quote-style
+     normalization). Errors if the quote is not present.
+
+     Requires `pdftotext` for PDF sources (poppler-utils on Linux).
+     HTML/TXT sources are read directly.
+ 12. Manifest checksum integrity — for every archived entry in
+     sources/manifest.yaml, recompute SHA256 and compare to stored value.
+     Errors on: file missing on disk, missing sha256 field when required,
+     checksum mismatch (silent corruption / substitution). Run once per
+     validator invocation, before the per-node checks.
+
+Usage:
+  validate.py                    # all nodes
+  validate.py PATH               # single node
+  validate.py --quiet            # errors only
+"""
+
+import argparse
+import hashlib
+import re
+import subprocess
+import sys
+from pathlib import Path
+from collections import defaultdict
+
+try:
+    import yaml
+except ImportError:
+    print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
+    sys.exit(1)
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
+ADDENDA_DIR = REPO_ROOT / "meta" / "topic" / "addenda"
+SOURCES_DIR = REPO_ROOT / "sources"
+MANIFEST_PATH = SOURCES_DIR / "manifest.yaml"
+
+CONTENT_DIRS = [
+    "people", "organizations", "documents", "events",
+    "transcripts", "news", "books", "locations", "findings",
+]
+
+LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
+
+
+# =============================================================================
+# Types and reporting
+# =============================================================================
+
+
+class Issue:
+    def __init__(self, path, level, message):
+        self.path = str(path)
+        self.level = level
+        self.message = message
+
+
+# =============================================================================
+# Schema loading
+# =============================================================================
+
+
+def load_schema():
+    with open(SCHEMA_PATH) as f:
+        return yaml.safe_load(f)
+
+
+# =============================================================================
+# Parsing utilities — frontmatter, sections, links, tables
+# =============================================================================
+
+
+def parse_frontmatter(text):
+    if not text.startswith("---"):
+        return None, None
+    end = text.find("\n---", 3)
+    if end < 0:
+        return None, None
+    try:
+        fm = yaml.safe_load(text[3:end])
+        return fm, text[end + 4:]
+    except yaml.YAMLError:
+        return None, None
+
+
+def extract_h2_sections(text):
+    return re.findall(r"^## (.+?)\s*$", text, re.MULTILINE)
+
+
+def extract_section(text, title):
+    pattern = re.compile(rf"^## {re.escape(title)}\s*$", re.MULTILINE)
+    match = pattern.search(text)
+    if not match:
+        return None
+    start = match.end()
+    next_h2 = re.search(r"^## ", text[start:], re.MULTILINE)
+    end = start + next_h2.start() if next_h2 else len(text)
+    return text[start:end]
+
+
+def extract_h3_subsections(section_text):
+    return re.findall(r"^### (.+?)\s*$", section_text, re.MULTILINE)
+
+
+def extract_links(text):
+    return set(LINK_PATTERN.findall(text))
+
+
+def section_has_table(section_text):
+    return bool(
+        re.search(r"^\|[^\n]*\|\s*\n\|[\s:|-]+\|", section_text, re.MULTILINE)
+    )
+
+
+def count_quote_blocks_and_verifications(section_text):
+    quotes = sum(1 for line in section_text.splitlines() if line.strip().startswith(">"))
+    verifications = sum(1 for line in section_text.splitlines() if "| Verified |" in line)
+    return quotes, verifications
+
+
+# =============================================================================
+# Source-integrity checks — manifest checksum verification (check #12)
+# =============================================================================
+
+def compute_sha256(file_path):
+    """Compute SHA256 of a file in streaming chunks. Returns hex digest or
+    None on read error. Duplicates the implementation in manifest.py
+    (by design — keeping scripts flat and self-contained per our layout)."""
+    try:
+        h = hashlib.sha256()
+        with open(file_path, "rb") as f:
+            for chunk in iter(lambda: f.read(65536), b""):
+                h.update(chunk)
+        return h.hexdigest()
+    except OSError:
+        return None
+
+
+def check_manifest_checksums():
+    """For every archived entry in sources/manifest.yaml, recompute SHA256
+    and compare against the stored value.
+
+    Emits:
+      - ERROR if manifest.yaml is malformed (parse failure)
+      - ERROR if an archived entry's file is missing on disk
+      - ERROR if an archived entry has no sha256 (schema requires it
+        when status == archived; manifest.py backfills on demand)
+      - ERROR if recomputed SHA256 differs from stored value
+        (silent corruption / substitution)
+      - No output for entries that verify cleanly
+
+    Skips entries whose status is not 'archived' (nothing to verify).
+    Returns [] if the manifest file doesn't exist (an empty repo state).
+    """
+    issues = []
+    if not MANIFEST_PATH.exists():
+        return issues
+
+    try:
+        with open(MANIFEST_PATH) as f:
+            entries = yaml.safe_load(f) or []
+    except yaml.YAMLError as e:
+        issues.append(Issue("sources/manifest.yaml", "error",
+            f"Manifest parse failure: {e}"))
+        return issues
+
+    if not isinstance(entries, list):
+        issues.append(Issue("sources/manifest.yaml", "error",
+            "Manifest root must be a list of entries"))
+        return issues
+
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        if entry.get("status") != "archived":
+            continue
+        path = entry.get("path")
+        if not path:
+            continue
+        url = entry.get("url", "(no url)")
+        full = SOURCES_DIR / path
+
+        if not full.exists():
+            issues.append(Issue(f"sources/{path}", "error",
+                f"Archived source file missing on disk (cited URL: {url})"))
+            continue
+
+        stored = entry.get("sha256")
+        if not stored:
+            # Schema marks sha256 as conditionally_required for status=archived.
+            # manifest.py verify-checksums backfills on first run; if we reach
+            # here with status=archived and no sha256, something is structurally
+            # wrong — fail loudly.
+            issues.append(Issue(f"sources/{path}", "error",
+                f"Archived manifest entry has no sha256 — run: "
+                f"python3 scripts/manifest.py verify-checksums  "
+                f"(cited URL: {url})"))
+            continue
+
+        current = compute_sha256(full)
+        if current is None:
+            issues.append(Issue(f"sources/{path}", "error",
+                f"Could not compute sha256 (file read error) — URL: {url}"))
+            continue
+
+        if current != stored:
+            issues.append(Issue(f"sources/{path}", "error",
+                f"Checksum MISMATCH — stored:{stored[:16]}... vs current:{current[:16]}... "
+                f"(URL: {url}) — possible corruption, overwrite, or substitution"))
+
+    return issues
+
+
+# =============================================================================
+# Verbatim quote verification (check #11) — against archived source files
+# =============================================================================
+
+_source_text_cache = {}  # Path -> extracted plain text (or None on failure)
+
+BLOCKQUOTE_BLOCK = re.compile(
+    r"(^>[ \t].+(?:\n>[ \t].*)*)",
+    re.MULTILINE,
+)
+
+
+def extract_source_text(source_path):
+    """Extract plain text from a source file. Returns None if unavailable.
+    Cached for the duration of one validator run."""
+    if source_path in _source_text_cache:
+        return _source_text_cache[source_path]
+    result = None
+    suffix = source_path.suffix.lower()
+    if suffix == ".pdf":
+        try:
+            proc = subprocess.run(
+                ["pdftotext", "-layout", str(source_path), "-"],
+                capture_output=True, text=True, timeout=60,
+            )
+            if proc.returncode == 0:
+                result = proc.stdout
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            result = None
+    elif suffix in (".html", ".htm", ".txt", ".md"):
+        try:
+            result = source_path.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            result = None
+    _source_text_cache[source_path] = result
+    return result
+
+
+def normalize_for_compare(text):
+    """Normalize text for substring comparison.
+
+    Handles common PDF-extraction artifacts:
+      - smart quotes -> straight
+      - em/en dashes -> hyphen
+      - non-breaking spaces -> space
+      - all hyphens removed (uniform handling of PDF line-wrap hyphenation,
+        compound-word hyphens, and em-dashes — the tradeoff is we cannot
+        distinguish "brand-new" from "brandnew", but we gain robustness
+        against pdftotext artifacts where "brand-\\nnew" appears in source)
+      - whitespace collapsed to single space
+    """
+    # Smart quotes -> straight
+    text = text.replace("\u201c", '"').replace("\u201d", '"')
+    text = text.replace("\u2018", "'").replace("\u2019", "'")
+    # Em/en dash -> hyphen (will be stripped next)
+    text = text.replace("\u2014", "-").replace("\u2013", "-")
+    # Non-breaking space -> space
+    text = text.replace("\u00a0", " ")
+    # Collapse hyphen+whitespace to just hyphen, so PDF line-wrap "brand-\nnew"
+    # and hand-written "brand-new" normalize the same way after hyphen-strip
+    text = re.sub(r"-\s+", "-", text)
+    # Strip all hyphens uniformly (see docstring)
+    text = text.replace("-", "")
+    # Collapse whitespace
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def find_quote_verification_pairs(text):
+    """Yield (quote_text, source_ref, verified_text) for each quote block
+    followed by a verification table."""
+    for bq_match in BLOCKQUOTE_BLOCK.finditer(text):
+        raw = bq_match.group(1)
+        # Strip leading "> " from each line, join with spaces
+        quote_lines = [re.sub(r"^>[ \t]?", "", line) for line in raw.splitlines()]
+        quote_text = " ".join(line for line in quote_lines if line.strip())
+        # Strip surrounding quote marks
+        quote_text = re.sub(r'^["\u201c\u201d\u2018\u2019]+', "", quote_text)
+        quote_text = re.sub(r'["\u201c\u201d\u2018\u2019]+$', "", quote_text)
+        quote_text = quote_text.strip()
+        if not quote_text:
+            continue
+        # Look for verification table within ~2500 chars after the quote
+        after = text[bq_match.end():bq_match.end() + 2500]
+        ver_match = re.search(
+            r"^\|\s*Verified\s*\|\s*([^|]+?)\s*\|",
+            after, re.MULTILINE,
+        )
+        if not ver_match:
+            continue
+        verified_text = ver_match.group(1).strip()
+        src_match = re.search(
+            r"^\|\s*Source\s*\|\s*([^|]+?)\s*\|",
+            after[:ver_match.start()], re.MULTILINE,
+        )
+        if not src_match:
+            continue
+        source_ref = src_match.group(1).strip()
+        yield quote_text, source_ref, verified_text
+
+
+def check_verbatim_quotes(node_path, text, rel_path):
+    """For every quote claimed '✅ Confirmed — verified verbatim', confirm the
+    quote appears in the cited source file."""
+    issues = []
+    for quote_text, source_ref, verified_text in find_quote_verification_pairs(text):
+        if "verified verbatim" not in verified_text.lower():
+            continue
+        # Extract local source path from markdown link (../sources/foo.pdf)
+        path_match = re.search(r"\(\.\./sources/([^)]+)\)", source_ref)
+        if not path_match:
+            # Source refers to a node link (e.g. [`/transcripts/...`]) rather
+            # than a file. Can't mechanically verify — skip (soft case).
+            continue
+        rel_source = path_match.group(1)
+        source_file = SOURCES_DIR / rel_source
+        if not source_file.exists():
+            issues.append(Issue(rel_path, "error",
+                f"Quote claimed verbatim cites missing source file: sources/{rel_source}"))
+            continue
+        source_text = extract_source_text(source_file)
+        if source_text is None:
+            issues.append(Issue(rel_path, "warn",
+                f"Could not extract text from sources/{rel_source} (pdftotext missing or failed)"))
+            continue
+        norm_quote = normalize_for_compare(quote_text)
+        norm_source = normalize_for_compare(source_text)
+        if norm_quote not in norm_source:
+            preview = quote_text[:80] + ("..." if len(quote_text) > 80 else "")
+            issues.append(Issue(rel_path, "error",
+                f'Quote claimed verbatim NOT FOUND in sources/{rel_source}: "{preview}"'))
+    return issues
+
+
+# =============================================================================
+# Structural-check utilities — table cell word budget, addendum loading,
+# required-sections computation
+# =============================================================================
+
+
+def table_cell_overages(section_text, budget):
+    """Return list of (cell_preview, word_count) for cells exceeding budget."""
+    out = []
+    for line in section_text.splitlines():
+        if not (line.strip().startswith("|") and line.count("|") >= 2):
+            continue
+        if re.match(r"^\s*\|[\s:|-]+\|\s*$", line):
+            continue  # separator row
+        cells = [c.strip() for c in line.strip().strip("|").split("|")]
+        for cell in cells:
+            # Strip markdown link syntax before counting words
+            stripped = re.sub(r"\[`[^`]+`\]", "", cell)
+            stripped = re.sub(r"[*_`]", "", stripped)
+            words = stripped.split()
+            if len(words) > budget:
+                preview = cell[:60] + ("..." if len(cell) > 60 else "")
+                out.append((preview, len(words)))
+    return out
+
+
+def load_addendum_sections(corpus):
+    """Parse an addendum file for required sections."""
+    path = ADDENDA_DIR / f"{corpus}.md"
+    if not path.exists():
+        return []
+    text = path.read_text()
+    # Look for "## Additional required sections" block; then ### `## SectionName`
+    m = re.search(
+        r"##\s+Additional required sections\s*\n(.*?)(?=\n---|\n##\s|\Z)",
+        text, re.DOTALL,
+    )
+    if not m:
+        return []
+    block = m.group(1)
+    return re.findall(r"`##\s+([^`]+)`", block)
+
+
+def compute_required_sections(fm, type_spec):
+    sections = []
+    arch = fm.get("archetype")
+    kind = fm.get("kind")
+    if arch and "archetypes" in type_spec:
+        sections = list(type_spec["archetypes"].get(arch, {}).get("required_sections", []))
+    elif kind and "kinds" in type_spec:
+        sections = list(type_spec["kinds"].get(kind, {}).get("required_sections", []))
+    else:
+        sections = list(type_spec.get("required_sections", []))
+    corpus = fm.get("corpus")
+    if corpus:
+        sections.extend(load_addendum_sections(corpus))
+    return sections
+
+
+# =============================================================================
+# Per-node validation orchestration
+# =============================================================================
+
+
+def validate_node(path, schema):
+    issues = []
+    text = path.read_text()
+    rel = path.relative_to(REPO_ROOT)
+
+    fm, _ = parse_frontmatter(text)
+    if fm is None:
+        issues.append(Issue(rel, "error", "Missing or malformed YAML frontmatter"))
+        return issues, set()
+
+    node_type = fm.get("type")
+    if not node_type:
+        issues.append(Issue(rel, "error", "Missing 'type' in frontmatter"))
+        return issues, set()
+
+    type_spec = schema["types"].get(node_type)
+    if not type_spec:
+        issues.append(Issue(rel, "error", f"Unknown type '{node_type}'"))
+        return issues, set()
+
+    # Required frontmatter fields
+    required_fm = type_spec.get("frontmatter", {}).get("required", [])
+    for field in required_fm:
+        if field not in fm:
+            issues.append(Issue(rel, "error", f"Missing required frontmatter field '{field}'"))
+
+    # schema_version value check — must be in schema.compatible_with
+    # (content-node scope only per the B2 design decision)
+    sv = fm.get("schema_version")
+    if sv is not None:
+        schema_block = schema.get("schema", {}) or {}
+        compatible_with = schema_block.get("compatible_with", [1])
+        if not isinstance(sv, int) or isinstance(sv, bool):
+            issues.append(Issue(rel, "error",
+                f"schema_version must be an integer; got {sv!r} ({type(sv).__name__})"))
+        elif sv not in compatible_with:
+            current = schema_block.get("version", "?")
+            issues.append(Issue(rel, "error",
+                f"schema_version {sv} not in compatible_with {compatible_with} "
+                f"(current schema version is {current}). "
+                f"Migrate per meta/toolkit-notes/schema-migrations/."))
+
+    # id matches path
+    expected_id = str(rel).removesuffix(".md")
+    if fm.get("id") and fm["id"] != expected_id:
+        issues.append(Issue(rel, "error",
+            f"Frontmatter id '{fm['id']}' does not match path '{expected_id}'"))
+
+    # Valid status
+    status_values = type_spec.get("status_values", [])
+    if fm.get("status") and status_values and fm["status"] not in status_values:
+        issues.append(Issue(rel, "error",
+            f"Invalid status '{fm['status']}'. Valid: {status_values}"))
+
+    # Valid archetype / kind
+    if fm.get("archetype"):
+        valid = list(type_spec.get("archetypes", {}).keys())
+        if valid and fm["archetype"] not in valid:
+            issues.append(Issue(rel, "error",
+                f"Invalid archetype '{fm['archetype']}'. Valid: {valid}"))
+    if fm.get("kind"):
+        valid = list(type_spec.get("kinds", {}).keys())
+        if valid and fm["kind"] not in valid:
+            issues.append(Issue(rel, "error",
+                f"Invalid kind '{fm['kind']}'. Valid: {valid}"))
+
+    # Document form
+    if node_type == "document":
+        valid_forms = type_spec.get("doc_form_values", [])
+        df = fm.get("doc_form")
+        if df and valid_forms and df not in valid_forms:
+            issues.append(Issue(rel, "warn",
+                f"Unknown doc_form '{df}' (not in schema list; add if established)"))
+
+    # Required sections
+    required_sections = compute_required_sections(fm, type_spec)
+    h2_sections = extract_h2_sections(text)
+    for req in required_sections:
+        found = any(s == req or s.startswith(req + " (") or s.startswith(req + " —")
+                    for s in h2_sections)
+        if not found:
+            issues.append(Issue(rel, "error", f"Missing required section '## {req}'"))
+
+    # Section rules
+    section_rules = type_spec.get("section_rules", {})
+    for section_name, rules in section_rules.items():
+        if section_name not in h2_sections:
+            continue
+        section_text = extract_section(text, section_name)
+        if section_text is None:
+            continue
+
+        if rules.get("prose_only") and section_has_table(section_text):
+            issues.append(Issue(rel, "error",
+                f"Section '{section_name}' must be prose only (no tables)"))
+
+        if "split" in rules:
+            h3s = extract_h3_subsections(section_text)
+            for sub in rules["split"]:
+                if sub == "Flagged":
+                    continue  # omitted when empty by convention
+                if sub not in h3s:
+                    issues.append(Issue(rel, "error",
+                        f"Section '{section_name}' missing '### {sub}' subsection"))
+
+        if rules.get("requires_quote_verification"):
+            quotes, verifies = count_quote_blocks_and_verifications(section_text)
+            if quotes > 0 and verifies == 0:
+                issues.append(Issue(rel, "error",
+                    f"Section '{section_name}' has quotes but no verification blocks"))
+
+    # Verbatim quote verification — critical check (fix from 2026-04-17 pilot failure)
+    issues.extend(check_verbatim_quotes(path, text, rel))
+
+    # Internal link resolution
+    links = extract_links(text)
+    broken = set()
+    for link in links:
+        target = REPO_ROOT / link.lstrip("/")
+        target_md = target.with_suffix(".md") if not target.suffix else target
+        if not target_md.exists() and not target.exists():
+            broken.add(link)
+
+    # Open Questions formatting
+    oq_text = extract_section(text, "Open Questions / Research Gaps")
+    if oq_text:
+        for line in oq_text.splitlines():
+            s = line.strip()
+            if s.startswith("- [x]"):
+                if "— DONE " not in s:
+                    issues.append(Issue(rel, "warn",
+                        "Resolved OQ missing '— DONE' keyword"))
+                elif not re.search(r"— DONE \d{4}-\d{2}-\d{2}", s):
+                    issues.append(Issue(rel, "warn",
+                        "Resolved OQ missing 'DONE YYYY-MM-DD' date"))
+
+    # Table cell word budget
+    budget = schema.get("limits", {}).get("table_cell_words_soft", 50)
+    for section_name in h2_sections:
+        section_text = extract_section(text, section_name)
+        if section_text is None:
+            continue
+        for preview, count in table_cell_overages(section_text, budget):
+            issues.append(Issue(rel, "warn",
+                f"Table cell in '{section_name}' exceeds word budget ({count}>{budget}): {preview}"))
+
+    # Finding cross-reference consistency
+    if node_type == "finding":
+        entities = fm.get("entities") or []
+        if isinstance(entities, list):
+            for entity in entities:
+                ep = REPO_ROOT / entity.lstrip("/")
+                ep_md = ep.with_suffix(".md") if not ep.suffix else ep
+                if ep_md.exists():
+                    entity_text = ep_md.read_text()
+                    fid = fm.get("id", "")
+                    if fid and f"/{fid}" not in entity_text:
+                        issues.append(Issue(rel, "warn",
+                            f"Entity {entity} does not link back to this finding"))
+
+    return issues, broken
+
+
+# =============================================================================
+# Node collection
+# =============================================================================
+
+
+def collect_nodes():
+    nodes = []
+    for d in CONTENT_DIRS:
+        cd = REPO_ROOT / d
+        if cd.is_dir():
+            nodes.extend(sorted(cd.glob("*.md")))
+    return nodes
+
+
+# =============================================================================
+# Main — CLI, orchestration, and report formatting
+# =============================================================================
+
+
+def main():
+    parser = argparse.ArgumentParser(description=__doc__,
+                                     formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("path", nargs="?", help="Single node path (optional)")
+    parser.add_argument("--quiet", action="store_true", help="Errors only")
+    args = parser.parse_args()
+
+    schema = load_schema()
+    nodes = [Path(args.path).resolve()] if args.path else collect_nodes()
+
+    all_issues = []
+    broken_links = defaultdict(set)
+
+    # Source-integrity backstop (check #12). Runs once per invocation, before
+    # per-node checks. "Do I trust my sources?" is a precondition for
+    # interpreting node content; a checksum mismatch means downstream quote
+    # verifications may be validating against altered source material.
+    all_issues.extend(check_manifest_checksums())
+
+    # Required-instance-file check: every toolkit instance must declare its
+    # topic scope in meta/topic/overview.md. Catches fork scenarios where
+    # meta/topic/ was emptied without recreating overview.md.
+    overview_path = REPO_ROOT / "meta" / "topic" / "overview.md"
+    if not overview_path.exists():
+        all_issues.append(Issue("meta/topic/overview.md", "error",
+            "Required file missing — every toolkit instance must declare its "
+            "topic scope in meta/topic/overview.md. See README.md for fork "
+            "procedure."))
+
+    for node in nodes:
+        issues, broken = validate_node(node, schema)
+        all_issues.extend(issues)
+        for link in broken:
+            broken_links[link].add(str(node.relative_to(REPO_ROOT)))
+
+    errors = [i for i in all_issues if i.level == "error"]
+    warnings = [i for i in all_issues if i.level == "warn"]
+
+    print("=" * 64)
+    print(" Validation Report")
+    print("=" * 64)
+    print(f"\n  Nodes scanned: {len(nodes)}")
+    print(f"  Errors:        {len(errors)}")
+    if not args.quiet:
+        print(f"  Warnings:      {len(warnings)}")
+    print(f"  Broken links:  {len(broken_links)} unbuilt-stub targets (backlog)")
+
+    if all_issues:
+        print("\n" + "-" * 64)
+        print(" Issues")
+        print("-" * 64)
+        by_file = defaultdict(list)
+        for issue in all_issues:
+            if args.quiet and issue.level != "error":
+                continue
+            by_file[issue.path].append(issue)
+        for f in sorted(by_file.keys()):
+            print(f"\n  {f}")
+            for issue in by_file[f]:
+                tag = "ERROR" if issue.level == "error" else "WARN "
+                print(f"    [{tag}] {issue.message}")
+
+    if broken_links and not args.quiet:
+        print("\n" + "-" * 64)
+        print(" Broken Link Registry")
+        print("-" * 64)
+        for link in sorted(broken_links.keys()):
+            refs = sorted(broken_links[link])
+            print(f"\n  {link} ({len(refs)} ref{'s' if len(refs) != 1 else ''})")
+            for r in refs:
+                print(f"    <- {r}")
+
+    print("\n" + "=" * 64)
+    if errors:
+        print(f"  FAILED — {len(errors)} error(s)")
+        sys.exit(1)
+    print(f"  PASSED — {len(warnings)} warning(s)")
+    sys.exit(0)
+
+
+if __name__ == "__main__":
+    main()
