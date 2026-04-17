@@ -119,6 +119,7 @@ Step 4–6 (extract → scratchpad → copy-paste).
 | `research-scaffold.py` | Scaffold an empty research artifact for a node |
 | `extract-source.py` | Extract a primary source to plaintext (Phase I) |
 | `build-from-research.py` | Regenerate a document node from its research artifact (Phase II) |
+| `review-coverage.py` | Coverage / boundary / stub-link / OQ review (Phase III) |
 | `validate.py` | Schema, structural, and verbatim-quote validation |
 | `validate-research.py` | Research-artifact structural validation |
 | `manifest.py` | Manage `sources/manifest.yaml` (add, verify-paths, verify-checksums, …) |

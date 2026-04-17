@@ -5,9 +5,8 @@ Investigation → Build → Review process. **One node per session** is the
 hard rule established after the 2026-04-17 pilot failure (see
 `meta/toolkit-notes/pilot-failure-2026-04-17.md`).
 
-This prompt documents **Phase I (Investigation)** and **Phase II
-(Build)** in full. Phase III (`review-coverage.py`) will be added here
-when that tool ships (Step D.4 of the refactor roadmap).
+This prompt documents all three phases: **Phase I (Investigation)**,
+**Phase II (Build)**, and **Phase III (Review)**.
 
 Phase II scope (D.3): **document-type nodes only**. Regeneration of
 person, organization, event, transcript, news, book, location, and
@@ -374,33 +373,77 @@ or to the frontmatter.
 
 ## Phase III — Review
 
-*Pending — to be added in D.4 when `scripts/review-coverage.py`
-ships.*
+Mechanical consistency checks between the regenerated node and its
+research artifact. Runs last — assumes Phase I and Phase II have passed.
 
-Summary of intent: automated and agent-assisted consistency checks
-between the regenerated node and its research artifact (coverage,
-boundary, stub-linking, OQ deduplication).
+### Step 1. Run the coverage checker
+
+```
+python3 scripts/review-coverage.py research/{slug}.yaml
+```
+
+The script runs four mechanical checks:
+
+1. **Coverage** — every artifact `claims[].statement` and `quotes[].text`
+   appears in the node body (whitespace/punctuation normalized).
+2. **Boundary** — the node body (outside `## Associated Nodes`) matches
+   what `build-from-research.py --dry-run` would regenerate from the
+   current artifact. Divergence means the artifact drifted from the
+   node, or the node was hand-edited.
+3. **Stub-linking** — every `entities_referenced[].wrap_path` appears
+   as a `[`/path`]` link in the node body.
+4. **OQ deduplication** — items in `## Open Questions / Research Gaps`
+   map 1:1 to unresolved research_gaps (plus any `retain_as_done: true`
+   resolved gaps).
+
+Must exit 0. Fix failures by updating the **artifact** (add the missing
+claim/quote/entity/gap, or remove orphan node content) and re-running
+`build-from-research.py` to resync. Never hand-edit the node to silence
+a coverage error.
+
+### Step 2. Semantic review (agent-assisted)
+
+Mechanical checks catch structural drift but not narrative coherence —
+whether the Description reads cleanly, whether the What This
+Establishes table tells a coherent evidentiary story, whether Open
+Questions are genuinely actionable.
+
+After `review-coverage.py` passes, read the regenerated node
+top-to-bottom. For any issue: fix the **artifact**, not the node.
+Re-run `build-from-research.py` and `review-coverage.py`.
+
+No dedicated prompt for this pass yet — planned as a bounded agent
+task (T7) in a later increment.
+
+### Phase III complete
+
+All four mechanical checks pass, and a human read of the regenerated
+node surfaces no semantic issues. Ready to commit.
 
 ---
 
-## End-of-session procedure (document nodes, D.3)
+## End-of-session procedure (document nodes)
 
-Until Phase III ships, end a session this way:
+1. `python3 scripts/validate-research.py research/{slug}.yaml` — must pass
+2. `python3 scripts/build-from-research.py research/{slug}.yaml` — must
+   complete cleanly (includes post-build `validate.py`)
+3. `python3 scripts/review-coverage.py research/{slug}.yaml` — must pass
+4. Read the regenerated node top-to-bottom; fix any issues in the
+   **artifact** (not the node) and re-run steps 2–3
+5. Commit the research artifact + regenerated node + any manifest
+   changes in one focused commit (one node per session — hard rule)
 
-1. Confirm `validate-research.py research/{slug}.yaml` passes
-2. Confirm `build-from-research.py research/{slug}.yaml` completed
-   cleanly (including post-build `validate.py`)
-3. Read the regenerated node top-to-bottom; fix any artifact issues
-   and re-run `build-from-research.py`
-4. Commit research artifact + regenerated node + any manifest changes
-   in one focused commit (one node per session — hard rule)
+For non-document node types (Phase II renderer not yet implemented —
+tracked in `BACKLOG.md`):
 
-For non-document node types (Phase II not yet supported):
+1. `validate-research.py` passes
+2. Hand-author the node body per `meta/conventions.md`, drawing
+   exclusively from artifact entries
+3. `validate.py` passes; commit when clean
 
-1. Confirm `validate-research.py` passes
-2. Hand-author the node body per `meta/conventions.md` discipline,
-   drawing exclusively from artifact entries
-3. Run `validate.py` until clean; commit when clean
+`review-coverage.py` currently skips non-document artifacts with a
+notice; full coverage review unlocks for each type as its Phase II
+renderer lands.
 
 ---
 

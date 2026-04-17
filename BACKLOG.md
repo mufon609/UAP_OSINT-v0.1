@@ -124,6 +124,12 @@ structural changes.
 
 **Surfaced.** During B2 summary review (2026-04-17).
 
+**Design decision (D.4, 2026-04-17).** `review-coverage.py` shipped as
+a sibling script rather than bolted into `validate.py`. This confirms
+the split pattern — future check modules will follow the same approach.
+`validate.py` remains at ~693 lines; full refactor still gated on the
+~800-line trigger or contributor confusion.
+
 ---
 
 ### Validator scope expansion to meta files

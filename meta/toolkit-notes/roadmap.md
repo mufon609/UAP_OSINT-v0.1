@@ -56,7 +56,7 @@ process fixes:
 
 ---
 
-## Step D — Layered-process tooling  🟡 IN PROGRESS
+## Step D — Layered-process tooling  🟡 IN PROGRESS (D.0–D.4 done)
 
 Three-phase build process: **Investigation → Build → Review**. Each
 phase has dedicated tooling and a bounded discipline.
@@ -90,16 +90,23 @@ validation invariants.
   section.
 - Prompt updated with Phase II workflow.
 
-### D.4 — Phase III review  ⏳ PENDING
-- `scripts/review-coverage.py` — consistency checks between regenerated
-  node and its research artifact:
-  - Coverage: every artifact claim/quote appears in the node body
-  - Boundary: no node-body claim lacks an artifact backing
-  - Stub-linking: every entity in `entities_referenced` renders as a
-    `[\`/path\`]` link in the node
-  - OQ deduplication: open questions match unresolved research_gaps
-- Agent-assisted passes for semantic checks that don't reduce to
-  mechanical rules
+### D.4 — Phase III review  ✅ DONE
+- `scripts/review-coverage.py` — four mechanical consistency checks
+  between the regenerated node and its research artifact: Coverage
+  (artifact claim/quote → node body), Boundary (node body matches
+  build-from-research.py dry-run, excluding Associated Nodes),
+  Stub-linking (every `entities_referenced.wrap_path` renders as a
+  `[\`/path\`]` link), and OQ deduplication (Open Questions items
+  map 1:1 to unresolved + retain_as_done research_gaps).
+- Shipped as a sibling script (not bolted onto validate.py), confirming
+  the split pattern for future check modules. Resolves BACKLOG item 2's
+  deferred design decision.
+- Document-type scope (matches build-from-research.py D.3); other
+  types emit a skip notice. Per-type extension lands with its Phase II
+  renderer (BACKLOG).
+- Agent-assisted semantic review is not a separate script — documented
+  in `prompts/build.md` Phase III Step 2 as a human-read pass. Bounded
+  agent task (T7) is a future increment.
 
 ### D.5 — Fravor pilot rebuild  ⏳ PENDING
 First end-to-end run of Phase I → II → III on a single node (the

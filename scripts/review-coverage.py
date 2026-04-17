@@ -1,0 +1,441 @@
+#!/usr/bin/env python3
+"""
+Phase III — Coverage review between a research artifact and its regenerated node.
+
+Mechanical consistency checks run after Phase II build. Complements
+validate.py (node structure + verbatim quotes) and validate-research.py
+(artifact structure); this script compares the two layers against each
+other.
+
+Checks:
+  1. Coverage     — every artifact claim.statement and every quote.text
+                    appears in the node body (whitespace/punctuation
+                    normalized per validate.py rules).
+  2. Boundary     — the node body (outside Associated Nodes) matches what
+                    `build-from-research.py --dry-run` would regenerate
+                    from the current artifact. Divergence means the
+                    artifact drifted from the node, the node was
+                    hand-edited, or the renderer changed.
+  3. Stub-linking — every entities_referenced.wrap_path appears as a
+                    [`/path`] link in the node body.
+  4. OQ dedup     — the '## Open Questions / Research Gaps' items map 1:1
+                    to unresolved research_gaps (plus any retained-DONE
+                    resolved gaps).
+
+Scope: document nodes only (matching build-from-research.py D.3). Other
+node types are acknowledged and skipped — extension is BACKLOG work
+alongside the per-type Phase II renderers.
+
+This script handles mechanical rules only. Semantic / narrative-coherence
+review (agent-assisted) is a separate pass referenced in
+`prompts/build.md`.
+
+Usage:
+  review-coverage.py {artifact_path}
+  review-coverage.py --all
+  review-coverage.py --quiet
+
+Expected execution order per prompts/build.md:
+  validate-research.py {artifact}  →  build-from-research.py {artifact}
+    →  validate.py {node}  →  review-coverage.py {artifact}
+"""
+
+import argparse
+import re
+import subprocess
+import sys
+from pathlib import Path
+from collections import defaultdict
+
+try:
+    import yaml
+except ImportError:
+    print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
+    sys.exit(1)
+
+
+# =============================================================================
+# Constants
+# =============================================================================
+
+REPO_ROOT = Path(__file__).resolve().parent.parent
+SCRIPTS_DIR = REPO_ROOT / "scripts"
+BUILD_FROM_RESEARCH = SCRIPTS_DIR / "build-from-research.py"
+RESEARCH_DIR = REPO_ROOT / "research"
+
+TYPE_DIRS = {
+    "person": "people", "organization": "organizations", "document": "documents",
+    "event": "events", "transcript": "transcripts", "news": "news",
+    "book": "books", "location": "locations", "finding": "findings",
+}
+# Matches build-from-research.py SUPPORTED_TYPES. Expand in lockstep.
+SUPPORTED_TYPES = {"document"}
+
+LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
+
+
+# =============================================================================
+# Types and reporting
+# =============================================================================
+
+class Issue:
+    def __init__(self, path, level, message):
+        self.path = str(path)
+        self.level = level  # "error" | "warn" | "info"
+        self.message = message
+
+
+# =============================================================================
+# Parsing helpers
+# =============================================================================
+
+def normalize_for_compare(text):
+    """Mirror validate.py.normalize_for_compare exactly.
+
+    Handles common rendering artifacts so a claim/quote from the artifact
+    can be found as a substring in the rendered node body regardless of
+    table-cell punctuation, line wrap, smart quotes, etc.
+    """
+    text = text.replace("\u201c", '"').replace("\u201d", '"')
+    text = text.replace("\u2018", "'").replace("\u2019", "'")
+    text = text.replace("\u2014", "-").replace("\u2013", "-")
+    text = text.replace("\u00a0", " ")
+    text = re.sub(r"-\s+", "-", text)
+    text = text.replace("-", "")
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def load_artifact(path):
+    try:
+        with open(path) as f:
+            data = yaml.safe_load(f)
+    except yaml.YAMLError as e:
+        sys.exit(f"ERROR: artifact parse failure: {e}")
+    if not isinstance(data, dict):
+        sys.exit(f"ERROR: artifact root is not a YAML mapping: {path}")
+    return data
+
+
+def target_node_path(artifact):
+    target = artifact.get("target_node") or ""
+    if "/" not in target:
+        return None
+    return REPO_ROOT / f"{target}.md"
+
+
+def target_node_type(artifact):
+    target = artifact.get("target_node") or ""
+    if "/" not in target:
+        return None
+    dir_name = target.split("/", 1)[0]
+    reverse = {v: k for k, v in TYPE_DIRS.items()}
+    return reverse.get(dir_name)
+
+
+def excise_associated_nodes(text):
+    """Strip the '## Associated Nodes' section (up to the next H2) so the
+    boundary diff can focus on the Phase II-rendered body. The Associated
+    Nodes section is regenerated by associate.py post-build and is not part
+    of build-from-research.py's deterministic output (it emits a placeholder).
+    """
+    pattern = re.compile(
+        r"^## Associated Nodes\s*$.*?(?=^## |\Z)",
+        re.MULTILINE | re.DOTALL,
+    )
+    return pattern.sub("", text).rstrip() + "\n"
+
+
+def truncate(s, n=80):
+    s = s.replace("\n", " ").strip()
+    return s if len(s) <= n else s[:n] + "..."
+
+
+# =============================================================================
+# Check 1 — Coverage
+# =============================================================================
+
+def check_coverage(artifact, node_text, rel):
+    issues = []
+    normalized_body = normalize_for_compare(node_text)
+
+    for c in artifact.get("claims") or []:
+        if not isinstance(c, dict):
+            continue
+        stmt = (c.get("statement") or "").strip()
+        if not stmt:
+            continue
+        if normalize_for_compare(stmt) not in normalized_body:
+            issues.append(Issue(rel, "error",
+                f"Coverage: claim {c.get('id')!r} statement not found in node "
+                f'body: "{truncate(stmt)}"'))
+
+    for q in artifact.get("quotes") or []:
+        if not isinstance(q, dict):
+            continue
+        text = (q.get("text") or "").strip()
+        if not text:
+            continue
+        if normalize_for_compare(text) not in normalized_body:
+            issues.append(Issue(rel, "error",
+                f"Coverage: quote {q.get('id')!r} text not found in node "
+                f'body: "{truncate(text)}"'))
+
+    return issues
+
+
+# =============================================================================
+# Check 2 — Boundary (re-render + diff, excluding Associated Nodes)
+# =============================================================================
+
+def check_boundary(artifact_path, node_path, rel):
+    issues = []
+    try:
+        proc = subprocess.run(
+            ["python3", str(BUILD_FROM_RESEARCH),
+             str(artifact_path), "--dry-run", "--no-validate"],
+            capture_output=True, text=True, timeout=60,
+        )
+    except subprocess.TimeoutExpired:
+        issues.append(Issue(rel, "error",
+            "Boundary: build-from-research.py timed out during dry-run"))
+        return issues
+
+    if proc.returncode != 0:
+        detail = (proc.stderr.strip() or proc.stdout.strip())[:200]
+        issues.append(Issue(rel, "error",
+            f"Boundary: build-from-research.py exited {proc.returncode}: {detail}"))
+        return issues
+
+    regenerated = proc.stdout
+    current = node_path.read_text()
+
+    regen_excised = excise_associated_nodes(regenerated).strip()
+    current_excised = excise_associated_nodes(current).strip()
+
+    if regen_excised != current_excised:
+        issues.append(Issue(rel, "error",
+            "Boundary: node body diverges from build-from-research.py output. "
+            "Either the artifact drifted from the node, or the node was "
+            "hand-edited. Re-run build-from-research.py to resync."))
+    return issues
+
+
+# =============================================================================
+# Check 3 — Stub-linking
+# =============================================================================
+
+def check_stub_linking(artifact, node_text, rel):
+    issues = []
+    links_in_node = set(LINK_PATTERN.findall(node_text))
+    for e in artifact.get("entities_referenced") or []:
+        if not isinstance(e, dict):
+            continue
+        wp = e.get("wrap_path")
+        if not wp:
+            continue
+        if wp not in links_in_node:
+            issues.append(Issue(rel, "error",
+                f"Stub-linking: entity {e.get('id')!r} ({e.get('name')!r}) "
+                f"wrap_path {wp!r} does not appear as a [`{wp}`] link in the node"))
+    return issues
+
+
+# =============================================================================
+# Check 4 — OQ dedup (research_gaps ↔ Open Questions)
+# =============================================================================
+
+def extract_oq_items(node_text):
+    """Return (unresolved_lines, resolved_lines) from the Open Questions section.
+    Strips the leading '- [ ]' / '- [x]' marker."""
+    m = re.search(
+        r"^## Open Questions / Research Gaps\s*$(.*?)(?=^## |\Z)",
+        node_text, re.MULTILINE | re.DOTALL,
+    )
+    if not m:
+        return [], []
+    section = m.group(1)
+    unresolved, resolved = [], []
+    for line in section.splitlines():
+        s = line.strip()
+        if s.startswith("- [ ]"):
+            unresolved.append(s[5:].strip())
+        elif s.startswith("- [x]"):
+            resolved.append(s[5:].strip())
+    return unresolved, resolved
+
+
+def check_oq_dedup(artifact, node_text, rel):
+    issues = []
+    node_unresolved, node_resolved = extract_oq_items(node_text)
+
+    gaps = artifact.get("research_gaps") or []
+    artifact_unresolved = []
+    artifact_retained = []
+    for g in gaps:
+        if not isinstance(g, dict):
+            continue
+        stmt = (g.get("statement") or "").strip()
+        if not stmt:
+            continue
+        if g.get("resolved"):
+            if g.get("retain_as_done"):
+                artifact_retained.append(stmt)
+        else:
+            artifact_unresolved.append(stmt)
+
+    node_u_norm = [normalize_for_compare(s) for s in node_unresolved]
+    art_u_norm = [normalize_for_compare(s) for s in artifact_unresolved]
+    node_r_norm = [normalize_for_compare(s) for s in node_resolved]
+    art_r_norm = [normalize_for_compare(s) for s in artifact_retained]
+
+    # Every unresolved artifact gap must appear in node unresolved items
+    for stmt, nstmt in zip(artifact_unresolved, art_u_norm):
+        if not any(nstmt in u for u in node_u_norm):
+            issues.append(Issue(rel, "error",
+                f'OQ: unresolved research_gap missing from node Open Questions: '
+                f'"{truncate(stmt)}"'))
+
+    # Every node unresolved item must map to an unresolved artifact gap
+    for stmt, nstmt in zip(node_unresolved, node_u_norm):
+        if not any(a in nstmt for a in art_u_norm):
+            issues.append(Issue(rel, "error",
+                f'OQ: node unresolved item does not map to an unresolved '
+                f'research_gap: "{truncate(stmt)}"'))
+
+    # Every retained-DONE artifact gap must appear in node resolved items
+    for stmt, nstmt in zip(artifact_retained, art_r_norm):
+        if not any(nstmt in r for r in node_r_norm):
+            issues.append(Issue(rel, "error",
+                f'OQ: retained-DONE gap missing from node Open Questions: '
+                f'"{truncate(stmt)}"'))
+
+    # Every node resolved item must map to a retained-DONE gap
+    for stmt, nstmt in zip(node_resolved, node_r_norm):
+        if not any(a in nstmt for a in art_r_norm):
+            issues.append(Issue(rel, "error",
+                f'OQ: node resolved item does not map to a retain_as_done '
+                f'research_gap: "{truncate(stmt)}"'))
+
+    return issues
+
+
+# =============================================================================
+# Per-artifact orchestration
+# =============================================================================
+
+def review_artifact(artifact_path, quiet=False):
+    """Return (issues, skipped_reason_or_None)."""
+    rel = artifact_path.relative_to(REPO_ROOT)
+
+    if not artifact_path.exists():
+        return [Issue(rel, "error", "Artifact file does not exist")], None
+
+    artifact = load_artifact(artifact_path)
+
+    node_path = target_node_path(artifact)
+    if node_path is None or not node_path.exists():
+        return [Issue(rel, "error",
+            f"target_node {artifact.get('target_node')!r} does not point to an existing file")], None
+
+    node_type = target_node_type(artifact)
+    if node_type not in SUPPORTED_TYPES:
+        return [], f"node type {node_type!r} not yet supported in Phase III (BACKLOG)"
+
+    node_text = node_path.read_text()
+
+    issues = []
+    issues.extend(check_coverage(artifact, node_text, rel))
+    issues.extend(check_boundary(artifact_path, node_path, rel))
+    issues.extend(check_stub_linking(artifact, node_text, rel))
+    issues.extend(check_oq_dedup(artifact, node_text, rel))
+    return issues, None
+
+
+def collect_artifacts():
+    if not RESEARCH_DIR.is_dir():
+        return []
+    return sorted(RESEARCH_DIR.glob("*.yaml"))
+
+
+# =============================================================================
+# Main
+# =============================================================================
+
+def main():
+    parser = argparse.ArgumentParser(
+        description=__doc__,
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+    )
+    parser.add_argument("path", nargs="?",
+                        help="Research artifact path (research/{slug}.yaml)")
+    parser.add_argument("--all", action="store_true",
+                        help="Review every artifact under research/")
+    parser.add_argument("--quiet", action="store_true",
+                        help="Errors only; suppress info/skip notices")
+    args = parser.parse_args()
+
+    if args.path:
+        artifacts = [Path(args.path).resolve()]
+    elif args.all:
+        artifacts = collect_artifacts()
+    else:
+        parser.print_help()
+        sys.exit(0)
+
+    all_issues = []
+    reviewed = 0
+    skipped = []
+
+    for p in artifacts:
+        issues, skip_reason = review_artifact(p, quiet=args.quiet)
+        if skip_reason:
+            skipped.append((p.relative_to(REPO_ROOT), skip_reason))
+            continue
+        reviewed += 1
+        all_issues.extend(issues)
+
+    errors = [i for i in all_issues if i.level == "error"]
+    warnings = [i for i in all_issues if i.level == "warn"]
+
+    print("=" * 64)
+    print(" Phase III — Coverage Review")
+    print("=" * 64)
+    print(f"\n  Artifacts reviewed: {reviewed}")
+    print(f"  Skipped:            {len(skipped)}")
+    print(f"  Errors:             {len(errors)}")
+    if not args.quiet:
+        print(f"  Warnings:           {len(warnings)}")
+
+    if skipped and not args.quiet:
+        print("\n" + "-" * 64)
+        print(" Skipped")
+        print("-" * 64)
+        for p, reason in skipped:
+            print(f"  {p} — {reason}")
+
+    if all_issues:
+        print("\n" + "-" * 64)
+        print(" Issues")
+        print("-" * 64)
+        by_file = defaultdict(list)
+        for issue in all_issues:
+            if args.quiet and issue.level != "error":
+                continue
+            by_file[issue.path].append(issue)
+        for f in sorted(by_file.keys()):
+            print(f"\n  {f}")
+            for issue in by_file[f]:
+                tag = "ERROR" if issue.level == "error" else "WARN "
+                print(f"    [{tag}] {issue.message}")
+
+    print("\n" + "=" * 64)
+    if errors:
+        print(f"  FAILED — {len(errors)} error(s)")
+        sys.exit(1)
+    print(f"  PASSED — {len(warnings)} warning(s)")
+    sys.exit(0)
+
+
+if __name__ == "__main__":
+    main()
