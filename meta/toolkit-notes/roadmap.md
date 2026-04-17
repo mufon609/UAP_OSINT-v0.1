@@ -136,9 +136,10 @@ Append-only research artifacts demand iteration tooling:
 - Cross-node updates: when a claim in one artifact changes the
   evidentiary picture for another node, propagate the reference
   (`corroborated_by`, `superseded_by`, `contradicted_by`)
-- Audit-cadence enforcement: `audit-schedule.py` currently a stub;
-  needs per-entry staleness detection driven by `last_audited_date +
-  audit_cadence_days`
+- Audit-cadence enforcement plumbing: `audit-schedule.py` is
+  operational (per-entry staleness detection shipped with D.1). What
+  remains is wiring `--overdue` into a pre-commit / CI hook so stale
+  artifacts block commits past the grace period
 
 Deferred until after Step D stabilizes and the iteration pressure
 becomes real (likely after ~10 nodes have been through Phase I→II→III

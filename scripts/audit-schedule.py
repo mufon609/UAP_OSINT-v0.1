@@ -6,9 +6,13 @@ Scans /research/*.yaml for claims, quotes, entities, and research gaps
 whose `last_audited_date + audit_cadence_days` is past today's date.
 Lists overdue entries sorted by how long they've been overdue.
 
-Currently a stub — becomes operational once /research/ artifacts exist
-(Phase I of the layered-process implementation). Until then it reports
-the absence of the research layer.
+Operational but dormant until research artifacts exist with populated
+`last_audited_date` fields. When no scannable data exists, it reports
+the absence of the research layer rather than erroring.
+
+Audit-cadence enforcement plumbing (wiring `--overdue` into a
+pre-commit / CI hook so stale artifacts block commits past the grace
+period) is tracked under Step E of the refactor roadmap.
 
 Usage:
   audit-schedule.py               # list overdue entries

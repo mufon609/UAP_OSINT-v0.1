@@ -54,13 +54,10 @@ corpus: {{corpus}}
 |---|---|---|
 |  |  |  |
 
----
-
-## What This Does Not Establish
-
-| Claim | Status |
-|---|---|
-|  |  |
+<!-- Each claim row carries a status marker. For claims contradicted by
+     another primary source, use ❌ Contradiction or ⚠ Disputed — unknown
+     directly in the Status column; the claim stays, the disagreement is
+     recorded in place. -->
 
 ---
 

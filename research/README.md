@@ -36,8 +36,15 @@ artifact, regenerated via `scripts/build-from-research.py`.
 - Never hand-delete entries; use lifecycle fields
   (`superseded_by`, `contradicted_by`) to preserve history
 
-## Current state
+## Workflow
 
-`/research/` is currently empty. Populated through Phase I of the
-layered build process (see `prompts/build.md` when the Phase I rewrite
-ships in sub-phase D.2).
+Artifacts are produced by Phase I of the layered build process —
+`research-scaffold.py` creates an empty shell, `extract-source.py`
+produces scratch files from the archived primary sources, and Phase I
+populates the sections per `prompts/build.md`. Phase II
+(`build-from-research.py`) then regenerates the narrative node from the
+artifact. Phase III (`review-coverage.py`) verifies the two layers are
+in coverage alignment.
+
+Current inventory lives on disk under `research/`. Use
+`validate-research.py` to audit artifact integrity.

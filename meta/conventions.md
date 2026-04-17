@@ -124,7 +124,7 @@ contradiction is documented in the context where it gains meaning:
 |---|---|
 | Post-event denial | `Node Versioning` on the relevant node |
 | Institutional self-contradiction | `Credibility Notes` |
-| Official finding contradicts a claim | `What This Establishes` / `What This Does Not Establish` on the relevant document node |
+| Official finding contradicts a claim | Status marker (`❌ Contradiction` or `⚠ Disputed — unknown`) on the claim row in `What This Establishes` on the relevant document node |
 | Written vs. oral testimony divergence | `Material Differences` on the transcript node |
 | Contested affiliation | `Flagged` subsection of `Affiliations` |
 
