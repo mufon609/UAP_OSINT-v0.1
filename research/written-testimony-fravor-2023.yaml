@@ -4,7 +4,7 @@ schema_version: 1
 target_node: documents/written-testimony-fravor-2023
 status: active
 created: '2026-04-17'
-last_iteration: i2
+last_iteration: i3
 
 description: |
   David Fravor's prepared written statement submitted for the record at the July 26, 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]). The statement opens with Fravor's identification as a retired U.S. Navy ([`/organizations/us-navy`]) Commander and his November 2004 role as Commanding Officer of Strike Fighter Squadron Forty-One ([`/organizations/vfa-41`]). The bulk of the document is a first-person narrative of the November 2004 USS Nimitz UAP encounter ([`/events/2004-nimitz-encounter`]): the 2 V 2 training context controlled by USS Princeton ([`/organizations/uss-princeton`]), Princeton's prior two weeks of Aegis tracking, the intercept at approximately 20,000 ft, the object's disappearance at close range, and its reacquisition 60 miles east in less than a minute.
@@ -337,7 +337,7 @@ claims:
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "Per Fravor, the object at intercept was a small white Tic Tac shaped object with longitudinal axis pointing N/S, had no Rotors, no Rotor wash, and no visible flight control surfaces like wings"
+    statement: "Per Fravor, the object was a small white Tic Tac shaped object with longitudinal axis pointing N/S, had no Rotors, no Rotor wash, and no visible flight control surfaces like wings"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶6"
@@ -827,3 +827,11 @@ iterations:
       - c16
     entries_modified:
       - c4
+
+  - id: i3
+    date: '2026-04-17'
+    trigger: audit-correction
+    summary: "Follow-on semantic polish: c6 dropped the contributor framing word \"at intercept\" (not in source anywhere) from its opening. Source ¶6 does not use \"intercept\" — it describes what the pilots saw when they \"looked down\" at the contact location. The rewrite drops the framing: \"Per Fravor, the object was a small white Tic Tac shaped object with longitudinal axis pointing N/S...\". No factual content changed; only the contributor-voice opener was aligned to source-neutral phrasing."
+    entries_added: []
+    entries_modified:
+      - c6
