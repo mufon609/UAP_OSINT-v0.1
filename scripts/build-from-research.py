@@ -63,16 +63,6 @@ TYPE_DIRS = {
 # Types this script can regenerate (D.3 scope)
 SUPPORTED_TYPES = {"document"}
 
-# evidentiary_type → base status string for the What This Establishes table.
-# sworn-testimony gets an additional suffix when independently_verifiable is
-# not populated — see _claim_status().
-EVIDENTIARY_STATUS_BASE = {
-    "sworn-testimony": "✅ Confirmed as sworn testimony",
-    "documented":      "✅ Confirmed",
-    "cited":           "✅ Confirmed as cited — see cited source",
-    "secondary":       "⚠ Flagged (secondary source)",
-}
-
 # Separator between H2 sections in the rendered node body.
 # Matches repository convention: blank line, '---', blank line.
 SECTION_SEP = "\n---\n\n"
@@ -214,50 +204,6 @@ def render_provenance(artifact):
     return "\n".join(lines) + "\n"
 
 
-def _claim_status(claim):
-    et = claim.get("evidentiary_type")
-    base = EVIDENTIARY_STATUS_BASE.get(et, "⏳ Pending")
-    if et == "sworn-testimony" and not claim.get("independently_verifiable"):
-        return base + " — claim not independently verified"
-    return base
-
-
-def _claim_source_cell(claim):
-    """Render the claim's Source column. Deduplicates identical location
-    strings while preserving their first-occurrence order, so a claim
-    with multiple quote_refs pointing to the same paragraph renders as
-    "¶3" rather than "¶3; ¶3". Distinct locations on the same claim
-    (multi-paragraph anchors) still render joined with "; "."""
-    srcs = claim.get("sources") or []
-    seen = set()
-    parts = []
-    for s in srcs:
-        if isinstance(s, dict) and s.get("location"):
-            loc = str(s["location"])
-            if loc not in seen:
-                seen.add(loc)
-                parts.append(loc)
-    return "; ".join(parts)
-
-
-def render_what_establishes(artifact):
-    claims = sort_by_id(artifact.get("claims") or [])
-    lines = ["## What This Establishes", ""]
-    if not claims:
-        lines.append("<!-- TODO: populate `claims` in the research artifact -->")
-        return "\n".join(lines) + "\n"
-    lines.append("| Claim | Status | Source |")
-    lines.append("|---|---|---|")
-    for c in claims:
-        if not isinstance(c, dict):
-            continue
-        stmt = (c.get("statement") or "").replace("\n", " ").strip()
-        status = _claim_status(c)
-        src = _claim_source_cell(c)
-        lines.append(f"| {stmt} | {status} | {src} |")
-    return "\n".join(lines) + "\n"
-
-
 def render_key_passages(artifact):
     quotes = sort_by_id(artifact.get("quotes") or [])
     ctx = artifact.get("context_extrinsic") or {}
@@ -318,7 +264,7 @@ def render_open_questions(artifact):
             continue
         if g.get("resolved"):
             if not g.get("retain_as_done"):
-                # Resolution lives in node body (as a new claim / prose); omit
+                # Resolution lives in node body (as prose or a new quote); omit
                 continue
             rd = g.get("resolved_date", "")
             rs = g.get("resolution_summary", "")
