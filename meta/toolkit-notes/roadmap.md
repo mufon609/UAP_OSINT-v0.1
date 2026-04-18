@@ -56,7 +56,7 @@ process fixes:
 
 ---
 
-## Step D — Layered-process tooling  🟡 IN PROGRESS (D.0–D.4 done)
+## Step D — Layered-process tooling  ✅ DONE (D.0 through D.7)
 
 Three-phase build process: **Investigation → Build → Review**. Each
 phase has dedicated tooling and a bounded discipline.
@@ -137,9 +137,18 @@ Four pilot findings absorbed:
 Two pilot observations required no action (document_intrinsic field
 design solid; one-node rule held under a realistic-scope artifact).
 
-### D.7 — Post-pilot cleanup  ⏳ PENDING
-Retiring temporary scaffolding, consolidating interim decisions into
-permanent docs, BACKLOG triage.
+### D.7 — Post-pilot cleanup  ✅ DONE
+- `scripts/build-from-research.py` `_claim_source_cell` — dedupe
+  identical location strings while preserving order, so claims with
+  multiple quote_refs pointing to the same paragraph render as
+  "¶3" rather than "¶3; ¶3" (surfaced during the D.5 audit).
+- Claim-anchoring discipline (Check A + Check B, shipped post-D.6)
+  is the load-bearing D-era defect-prevention mechanism; the
+  discipline + the three Fravor iterations (i1 claim-anchoring, i2
+  c4/c16 split, i3 c6 framing polish) stand as the reference for
+  subsequent node builds.
+- Step D now complete. Step E remains deferred until ~10 nodes have
+  been through the full pipeline.
 
 ---
 

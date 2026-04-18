@@ -223,11 +223,20 @@ def _claim_status(claim):
 
 
 def _claim_source_cell(claim):
+    """Render the claim's Source column. Deduplicates identical location
+    strings while preserving their first-occurrence order, so a claim
+    with multiple quote_refs pointing to the same paragraph renders as
+    "¶3" rather than "¶3; ¶3". Distinct locations on the same claim
+    (multi-paragraph anchors) still render joined with "; "."""
     srcs = claim.get("sources") or []
+    seen = set()
     parts = []
     for s in srcs:
         if isinstance(s, dict) and s.get("location"):
-            parts.append(str(s["location"]))
+            loc = str(s["location"])
+            if loc not in seen:
+                seen.add(loc)
+                parts.append(loc)
     return "; ".join(parts)
 
 
