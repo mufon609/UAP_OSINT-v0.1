@@ -14,7 +14,7 @@ and `meta/schema.yaml`.
    `meta/toolkit-notes/pilot-failure-2026-04-17.md` for the postmortem that established
    this rule.
 
-2. **Source-read-first.** Every `✅ Confirmed — verified verbatim` claim
+2. **Source-read-first.** Every `✅ Confirmed — verified verbatim` quote
    must rest on text you extracted from the archived source file **in this
    session**. Not training knowledge. Not popular reporting. Not what you
    remember. See Step 4–6 below.

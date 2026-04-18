@@ -104,7 +104,7 @@ quote-verification), and is committed. Batch node construction caused the
 2026-04-17 pilot failure; see `meta/toolkit-notes/pilot-failure-2026-04-17.md`.
 
 **Source-read-first — hard rule.** Every `✅ Confirmed — verified verbatim`
-claim must rest on text you extracted from the archived source file in
+quote must rest on text you extracted from the archived source file in
 this session (via `pdftotext` for PDFs, direct read for HTML/TXT). Not
 training knowledge. The validator now mechanically verifies this — but
 write the node correctly to begin with by following `prompts/build.md`
