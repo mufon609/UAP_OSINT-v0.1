@@ -128,7 +128,9 @@ Fields used by `build-from-research.py` when rendering document nodes
   "Attributed to" field (typically `"{Speaker}, {occasion}, {date}"`)
 - `provenance` — list of custody-chain steps; each step is a dict with
   `step`, `date`, `entity`, `verified` keys. Rendered as the
-  Provenance table (gov-doc nodes only).
+  Provenance table (gov-doc nodes only). **`date` values use ISO
+  format (`YYYY-MM-DD`)** — the renderer passes them through verbatim;
+  ISO keeps provenance sortable and unambiguous across documents.
 
 ### Step 5. Populate `description`
 
@@ -161,6 +163,10 @@ mechanically. For now: hand-write with discipline.
   rephrased, not composited.
 - Multi-line quotes use YAML literal block (`|`) so original line
   breaks are preserved character-for-character.
+- **Paragraph references are counted from the extracted scratch file,
+  not from memory.** The D.5 pilot corrected a ¶7/¶8 error in a
+  hand-authored node this way; an extraction-based count is the
+  authoritative anchor, not pre-existing prose.
 - Quote text must match source exactly except for surrounding
   quotation marks (which are not part of the quoted content).
 
@@ -263,6 +269,12 @@ mechanically. For now: hand-write with discipline.
 - Naming quirks with unresolved resolution automatically imply a
   research gap; record separately so the research_gap can be independently
   tracked/closed.
+- Keep `methodology` concise (one or two sentences). The renderer
+  concatenates `statement — methodology` into a single Open-Questions
+  line; long multi-sentence methodologies produce unwieldy lines.
+  If the methodology truly needs a paragraph of explanation, capture
+  that in a linked finding node or in the target node's Description,
+  and leave the research_gap methodology as the actionable pointer.
 
 ### Step 11. Populate `rumors` (bounded agent task T6, conditional)
 

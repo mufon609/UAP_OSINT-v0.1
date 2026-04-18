@@ -61,17 +61,10 @@ corpus: {{corpus}}
 
 ---
 
-## Authors
-
-<!-- Link each author/signatory to their /people/ node. For documents
-     without identifiable individuals (agency press releases, anonymous
-     filings), delete this section. -->
-
-| Name | Role / Contribution | Node Link |
-|---|---|---|
-|  |  |  |
-
----
+<!-- Author info for document nodes lives in document_intrinsic.authors_per_document
+     on the research artifact and renders as the Author row in Document Summary.
+     No separate Authors section needed — the D.5 pilot confirmed the redundancy.
+     For node types where Authors is load-bearing (news, book), see those templates. -->
 
 <!-- CORPUS-ADDENDUM-INSERT: Additional sections required by the corpus
      addendum (e.g., Review Status for aawsap-dird) are inserted here by

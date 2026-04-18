@@ -108,18 +108,34 @@ validation invariants.
   in `prompts/build.md` Phase III Step 2 as a human-read pass. Bounded
   agent task (T7) is a future increment.
 
-### D.5 — Fravor pilot rebuild  ⏳ PENDING
-First end-to-end run of Phase I → II → III on a single node (the
-existing Fravor written-testimony document). Populates the empty
-research artifact, regenerates the node, passes Phase III review.
-Serves as the working example for the rest of the build queue and
-exposes integration bugs the sub-phase smoke tests missed.
+### D.5 — Fravor pilot rebuild  ✅ DONE
+First end-to-end run of Phase I → II → III on the Fravor
+written-testimony document. Populated 8 quotes / 15 claims / 20
+entities / 4 naming_quirks / 4 research_gaps. All validators green:
+validate-research.py, build-from-research.py (with post-build
+validate.py), and review-coverage.py (all four checks). Demonstrated
+that artifact-driven builds produce more accurate location refs than
+hand-authored nodes (corrected ¶7→¶8 on "What is shocking") and that
+the pilot-failure-era architectural guarantees hold in practice.
 
-### D.6 — Docs + prompt updates post-pilot  ⏳ PENDING
-Updates driven by what D.5 teaches. Likely: revised Phase I
-discipline, clarified field conventions in `context_extrinsic` /
-`document_intrinsic`, any new validator checks surfaced by pilot
-observation.
+### D.6 — Docs + prompt updates post-pilot  ✅ DONE
+Four pilot findings absorbed:
+- `meta/templates/document.md` — removed redundant `## Authors`
+  section. Author info lives in `document_intrinsic.authors_per_document`
+  and renders as the Document Summary "Author (per document)" row.
+  News and book templates keep their Authors sections (different
+  authorship semantics).
+- `prompts/build.md` Phase I Step 4 — `context_extrinsic.provenance[].date`
+  values standardized to ISO format (YYYY-MM-DD); renderer passthrough.
+- `prompts/build.md` Phase I Step 6 — quote `location` paragraph refs
+  must be counted from the extracted scratch file, not from memory
+  or prior prose. Pilot evidence: the ¶7/¶8 correction.
+- `prompts/build.md` Phase I Step 10 — research_gap `methodology`
+  should be concise; the renderer concatenates `statement — methodology`
+  into a single Open-Questions line.
+
+Two pilot observations required no action (document_intrinsic field
+design solid; one-node rule held under a realistic-scope artifact).
 
 ### D.7 — Post-pilot cleanup  ⏳ PENDING
 Retiring temporary scaffolding, consolidating interim decisions into
