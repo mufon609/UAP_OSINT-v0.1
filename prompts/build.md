@@ -336,8 +336,8 @@ not populate the node body in Phase I.**
 ## Phase II — Build
 
 Deterministic transformation from research artifact → populated node
-body. No creative writing in Phase II. Every node-body claim traces
-to a research-artifact entry.
+body. No creative writing in Phase II. Every line in the node body
+traces to a research-artifact entry.
 
 **Scope (D.3):** document-type nodes only. For other node types,
 Phase II is still manual — follow `meta/conventions.md`. Extension is
@@ -359,8 +359,10 @@ This:
    - `## Description` — from `description`
    - `## Provenance` (gov-doc only) — from
      `context_extrinsic.provenance`
-   - `## What This Establishes` — from `claims`
-   - `## Key Passages` — from `quotes` (with verification blocks)
+   - `## Key Passages` — from `quotes` (with verification blocks). For
+     document nodes this is the sole evidentiary layer — there is no
+     `## What This Establishes` table. See `meta/conventions.md`
+     "Document nodes vs synthesis nodes".
    - `## Associated Nodes` — placeholder (associate.py fills below)
    - `## Open Questions / Research Gaps` — from `research_gaps`
 3. Preserves the node's existing frontmatter verbatim.
@@ -406,7 +408,8 @@ python3 scripts/review-coverage.py research/{slug}.yaml
 
 The script runs four mechanical checks:
 
-1. **Coverage** — every artifact `claims[].statement` and `quotes[].text`
+1. **Coverage** — every artifact `quotes[].text` (and
+   `claims[].statement`, on synthesis artifacts that carry claims)
    appears in the node body (whitespace/punctuation normalized).
 2. **Boundary** — the node body (outside `## Associated Nodes`) matches
    what `build-from-research.py --dry-run` would regenerate from the
@@ -419,15 +422,15 @@ The script runs four mechanical checks:
    resolved gaps).
 
 Must exit 0. Fix failures by updating the **artifact** (add the missing
-claim/quote/entity/gap, or remove orphan node content) and re-running
-`build-from-research.py` to resync. Never hand-edit the node to silence
-a coverage error.
+quote / entity / gap, or remove orphan node content; on synthesis
+artifacts, add the missing claim) and re-running `build-from-research.py`
+to resync. Never hand-edit the node to silence a coverage error.
 
 ### Step 2. Semantic review (agent-assisted)
 
 Mechanical checks catch structural drift but not narrative coherence —
-whether the Description reads cleanly, whether the What This
-Establishes table tells a coherent evidentiary story, whether Open
+whether the Description reads cleanly, whether the Key Passages
+collectively tell a coherent evidentiary picture, whether Open
 Questions are genuinely actionable.
 
 After `review-coverage.py` passes, read the regenerated node
