@@ -55,11 +55,12 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 
 *No nodes yet.*
 
-### Documents (1)
+### Documents (2)
 
 | Node | Status | Kind |
 |---|---|---|
 | `/documents/written-testimony-fravor-2023` | primary-source-confirmed | gov-doc |
+| `/documents/written-testimony-graves-2023` | primary-source-confirmed | gov-doc |
 
 ### Transcripts (0)
 
