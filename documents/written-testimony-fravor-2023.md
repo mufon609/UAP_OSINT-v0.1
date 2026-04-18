@@ -51,7 +51,7 @@ The document is a primary source for what David Fravor ([`/people/david-fravor`]
 | David Fravor ([`/people/david-fravor`]) identified himself as a retired Commander in the U.S. Navy ([`/organizations/us-navy`]) | ✅ Confirmed as sworn testimony — claim not independently verified | ¶2 |
 | Fravor states he was Commanding Officer of Strike Fighter Squadron Forty-One ([`/organizations/vfa-41`], "the World Famous Black Aces") in Nov 2004 | ✅ Confirmed as sworn testimony — claim not independently verified | ¶2 |
 | Fravor's squadron was attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) aboard USS Nimitz ([`/organizations/uss-nimitz`]) (CVN-68) | ✅ Confirmed as sworn testimony — claim not independently verified | ¶2 |
-| The intercept occurred during a 2 V 2 Air to Air training exercise controlled by USS Princeton ([`/organizations/uss-princeton`]) (CG-59); Red Air was flown by Marine F/A-18 squadron VMFA-232 ([`/organizations/vmfa-232`]) | ✅ Confirmed as sworn testimony — claim not independently verified | ¶3; ¶3 |
+| Fravor was scheduled to lead a 2 V 2 Air to Air training exercise controlled by USS Princeton ([`/organizations/uss-princeton`]) (CG-59); Red Air was to be flown by Marine F/A-18 squadron VMFA-232 ([`/organizations/vmfa-232`]) | ✅ Confirmed as sworn testimony — claim not independently verified | ¶3; ¶3 |
 | Per Fravor, the air controller on the ship had been observing these objects on their Aegis combat system for the previous 2 weeks; the objects descended from above 80,000 ft to 20,000 ft, remained for hours, and then went straight back up | ✅ Confirmed as sworn testimony — claim not independently verified | ¶5 |
 | Per Fravor, the object at intercept was a small white Tic Tac shaped object with longitudinal axis pointing N/S, had no Rotors, no Rotor wash, and no visible flight control surfaces like wings | ✅ Confirmed as sworn testimony — claim not independently verified | ¶6 |
 | Per Fravor, the object rapidly accelerated and disappeared when his aircraft was approximately ½ mile from it; his wingman approximately 8,000 ft above also lost visual | ✅ Confirmed as sworn testimony — claim not independently verified | ¶6 |
@@ -63,6 +63,7 @@ The document is a primary source for what David Fravor ([`/people/david-fravor`]
 | Per Fravor, Lue had left the pentagon in protest and joined forces with Tom DeLonge ([`/people/tom-delonge`]), Chris Mellon ([`/people/christopher-mellon`]), Steve Justice ([`/people/steve-justice`]) and others to form To The Stars Academy ([`/organizations/ttsa`]) | ✅ Confirmed as sworn testimony — claim not independently verified | ¶10 |
 | Per Fravor, this organization worked with Leslie Keane [sic — source spelling; canonical is Leslie Kean] ([`/people/leslie-kean`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Helene Cooper ([`/people/helene-cooper`]) to publish the articles in the NYT in Dec 2017 | ✅ Confirmed as sworn testimony — claim not independently verified | ¶10 |
 | Per Fravor, the Tic Tac Object engaged in Nov 2004 was far superior to anything that we had at the time, have today, or are looking to develop in the next 10+ years | ✅ Confirmed as sworn testimony — claim not independently verified | ¶13 |
+| As Fravor's flight launched off USS Nimitz ([`/organizations/uss-nimitz`]) and checked in with the USS Princeton ([`/organizations/uss-princeton`]) air controller, they were told training was going to be suspended for real world tasking | ✅ Confirmed as sworn testimony — claim not independently verified | ¶4 |
 
 ---
 
@@ -312,6 +313,19 @@ The document is a primary source for what David Fravor ([`/people/david-fravor`]
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶10 |
+
+---
+
+### Training-suspension fact — the intercept did not occur during training; training was suspended for real-world tasking upon launch check-in with Princeton
+
+> As we launched off the USS Nimitz, we checked in with the air controller on the USS Princeton, we were told that training was going to be suspended for real world tasking.
+
+| Field | Value |
+|---|---|
+| Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
+| Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | ¶4 |
 
 ---
 

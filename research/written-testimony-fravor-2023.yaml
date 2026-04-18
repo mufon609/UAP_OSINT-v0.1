@@ -4,7 +4,7 @@ schema_version: 1
 target_node: documents/written-testimony-fravor-2023
 status: active
 created: '2026-04-17'
-last_iteration: i1
+last_iteration: i2
 
 description: |
   David Fravor's prepared written statement submitted for the record at the July 26, 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]). The statement opens with Fravor's identification as a retired U.S. Navy ([`/organizations/us-navy`]) Commander and his November 2004 role as Commanding Officer of Strike Fighter Squadron Forty-One ([`/organizations/vfa-41`]). The bulk of the document is a first-person narrative of the November 2004 USS Nimitz UAP encounter ([`/events/2004-nimitz-encounter`]): the 2 V 2 training context controlled by USS Princeton ([`/organizations/uss-princeton`]), Princeton's prior two weeks of Aegis tracking, the intercept at approximately 20,000 ft, the object's disappearance at close range, and its reacquisition 60 miles east in less than a minute.
@@ -263,6 +263,17 @@ quotes:
     significance: "NYT journalism — Keane [sic], Blumenthal, Cooper; Dec 2017; TTSA role"
     context: "disclosure-pipeline narrative"
 
+  - id: q20
+    added_date: '2026-04-17'
+    added_by_iteration: i2
+    audit_cadence_days: 365
+    text: "As we launched off the USS Nimitz, we checked in with the air controller on the USS Princeton, we were told that training was going to be suspended for real world tasking."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶4"
+    significance: "Training-suspension fact — the intercept did not occur during training; training was suspended for real-world tasking upon launch check-in with Princeton"
+    context: "post-launch context"
+
 claims:
   - id: c1
     added_date: '2026-04-17'
@@ -301,7 +312,7 @@ claims:
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "The intercept occurred during a 2 V 2 Air to Air training exercise controlled by USS Princeton ([`/organizations/uss-princeton`]) (CG-59); Red Air was flown by Marine F/A-18 squadron VMFA-232 ([`/organizations/vmfa-232`])"
+    statement: "Fravor was scheduled to lead a 2 V 2 Air to Air training exercise controlled by USS Princeton ([`/organizations/uss-princeton`]) (CG-59); Red Air was to be flown by Marine F/A-18 squadron VMFA-232 ([`/organizations/vmfa-232`])"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶3"
@@ -436,6 +447,17 @@ claims:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶13"
         quote_ref: q8
+    evidentiary_type: sworn-testimony
+
+  - id: c16
+    added_date: '2026-04-17'
+    added_by_iteration: i2
+    audit_cadence_days: 365
+    statement: "As Fravor's flight launched off USS Nimitz ([`/organizations/uss-nimitz`]) and checked in with the USS Princeton ([`/organizations/uss-princeton`]) air controller, they were told training was going to be suspended for real world tasking"
+    sources:
+      - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+        location: "¶4"
+        quote_ref: q20
     evidentiary_type: sworn-testimony
 
 entities_referenced:
@@ -795,3 +817,13 @@ iterations:
       - c13
       - c14
       - c15
+
+  - id: i2
+    date: '2026-04-17'
+    trigger: audit-correction
+    summary: "Semantic review (post-i1 audit) caught a conflation in c4: the original statement \"The intercept occurred during a 2 V 2 Air to Air training exercise\" was inaccurate — per source ¶4, training was explicitly suspended for real-world tasking before the intercept, so the intercept did not occur during training. The mechanical token-drift check did not flag this (all proper nouns were in source; \"intercept\" and \"during\" are common words). Fix: narrowed c4 to describe only the scheduled training context (\"Fravor was scheduled to lead...\"); added c16 as a new atomic claim capturing the suspension fact (\"Upon launch, Fravor's flight was informed by the USS Princeton air controller that training was being suspended for real-world tasking\") anchored to new quote q20 from ¶4. This preserves both source facts atomically rather than conflating them."
+    entries_added:
+      - q20
+      - c16
+    entries_modified:
+      - c4
