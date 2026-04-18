@@ -34,6 +34,19 @@ Checks:
                     Paired with validate-research.py's quote_ref-required
                     check which ensures every claim has an anchor to
                     check against.
+  6. Description  — every significant token in the node's ## Description
+     drift         section appears in the artifact's grounding text:
+                    source text + context_extrinsic strings +
+                    document_intrinsic strings + naming_quirks canonical
+                    forms + entities_referenced names. This closes the
+                    drift surface the claims-layer elimination opened
+                    wider: Description is the last contributor-prose
+                    layer on document nodes. Same error semantics as
+                    Check 5 — fabricated entities or abbreviation
+                    expansions that don't match source become commit-
+                    blocking errors. Fine drift (dropped qualifiers,
+                    synonym rephrases at the lowercase level) is still
+                    not caught — semantic review required.
 
 Scope: document nodes only (matching build-from-research.py D.3). Other
 node types are acknowledged and skipped — extension is BACKLOG work
@@ -339,6 +352,72 @@ def gather_source_text(artifact):
     return ("\n".join(chunks), missing)
 
 
+def gather_grounding_text(artifact, source_text):
+    """Build the text corpus against which Description prose tokens are
+    checked (Check 6).
+
+    Grounding sources:
+      - source_text                        (what the document actually says)
+      - context_extrinsic string values    (contextual metadata — hearing
+                                            date, display title, provenance
+                                            entries; facts the artifact
+                                            declares from outside the doc)
+      - document_intrinsic string values   (facts from inside the document —
+                                            internal title, classification,
+                                            authors_per_document)
+      - naming_quirks[].canonical          (approved canonical forms to use
+                                            in prose, even when source uses
+                                            a different spelling — e.g.,
+                                            "Leslie Kean" canonical vs
+                                            source's "Leslie Keane")
+      - entities_referenced[].name         (approved entity display names)
+
+    Explicitly NOT in grounding (would be circular — grounding contributor
+    prose with other contributor prose):
+      - claims[].statement
+      - entities_referenced[].context_summary
+      - research_gaps[] text
+      - rumors[] text
+    """
+    chunks = [source_text or ""]
+
+    def collect_strings(obj):
+        if isinstance(obj, str):
+            chunks.append(obj)
+        elif isinstance(obj, list):
+            for item in obj:
+                collect_strings(item)
+        elif isinstance(obj, dict):
+            for v in obj.values():
+                collect_strings(v)
+
+    collect_strings(artifact.get("context_extrinsic") or {})
+    collect_strings(artifact.get("document_intrinsic") or {})
+
+    for nq in (artifact.get("naming_quirks") or []):
+        if isinstance(nq, dict) and nq.get("canonical"):
+            chunks.append(nq["canonical"])
+
+    for e in (artifact.get("entities_referenced") or []):
+        if isinstance(e, dict) and e.get("name"):
+            chunks.append(e["name"])
+
+    return "\n".join(chunks)
+
+
+def extract_description_text(node_text):
+    """Return the prose body of the node's `## Description` section, or
+    None if the section is absent (e.g., non-document node type during
+    the build-from-research per-type extension)."""
+    m = re.search(
+        r"^## Description\s*$(.*?)(?=^## |\Z)",
+        node_text, re.MULTILINE | re.DOTALL,
+    )
+    if not m:
+        return None
+    return m.group(1).strip()
+
+
 # =============================================================================
 # Check 1 — Coverage
 # =============================================================================
@@ -600,6 +679,58 @@ def check_claim_token_drift(artifact, source_text, rel):
 
 
 # =============================================================================
+# Check 6 — Description token drift (against artifact grounding)
+# =============================================================================
+
+def check_description_token_drift(artifact, node_text, source_text, rel):
+    """Verify every significant token in the node's ## Description section
+    appears in the artifact's grounding text (source + context_extrinsic +
+    document_intrinsic + naming_quirks canonical + entities_referenced
+    names). See gather_grounding_text() docstring for the full rationale.
+
+    Closes the drift surface the claims-layer elimination opened wider:
+    Description is the last contributor-prose layer on document nodes.
+    Same error semantics as Check 5 — fabricated entities, abbreviation
+    expansions that don't match source, numbers not in any grounding
+    field become commit-blocking errors.
+
+    Limit: fine drift at the lowercase level (e.g., "warning area" vs
+    source's "early warning area") is NOT caught — "early" is lowercase
+    and not extracted as a significant token. Semantic review (Phase III
+    Step 2) remains required for that class of drift.
+    """
+    issues = []
+    desc = extract_description_text(node_text)
+    if desc is None:
+        return issues
+
+    tokens = extract_significant_tokens(desc)
+    if not tokens:
+        return issues
+
+    if not source_text:
+        # Missing-source error already reported by gather_source_text
+        # caller; skip here to avoid duplicate noise
+        return issues
+
+    grounding = gather_grounding_text(artifact, source_text)
+    norm_grounding = normalize_for_compare(grounding).lower()
+
+    for token in sorted(tokens):
+        norm_token = normalize_for_compare(token).lower()
+        if not norm_token:
+            continue
+        if norm_token not in norm_grounding:
+            issues.append(Issue(rel, "error",
+                f"Description drift: token {token!r} not found in source, "
+                f"context_extrinsic, document_intrinsic, naming_quirks "
+                f"canonical, or entities_referenced names. Either correct "
+                f"the description to match available grounding, or add "
+                f"the supporting data to the artifact."))
+    return issues
+
+
+# =============================================================================
 # Per-artifact orchestration
 # =============================================================================
 
@@ -637,6 +768,7 @@ def review_artifact(artifact_path, quiet=False):
     issues.extend(check_stub_linking(artifact, node_text, rel))
     issues.extend(check_oq_dedup(artifact, node_text, rel))
     issues.extend(check_claim_token_drift(artifact, source_text, rel))
+    issues.extend(check_description_token_drift(artifact, node_text, source_text, rel))
     return issues, None
 
 
