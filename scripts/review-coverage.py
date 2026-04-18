@@ -295,18 +295,21 @@ def extract_significant_tokens(claim_text):
             continue
         tokens.add(word)
 
-    # 4. Quoted strings ("..." and '...' — preserves whichever form the
-    #    claim used; matched against the source post-normalization).
+    # 4. Double-quoted strings — content inside "..." is an explicit
+    #    claim about source wording and must match verbatim.
     for m in re.finditer(r'"([^"]+)"', text):
         q = m.group(1).strip()
         if q:
             tokens.add(q)
-    for m in re.finditer(r"'([^']+)'", text):
-        q = m.group(1).strip()
-        # Skip single-char contractions like 's possessive (handled by
-        # outer quote; the inner content is what we check)
-        if q and len(q) > 1:
-            tokens.add(q)
+
+    # Single-quoted strings are NOT extracted. In English prose, a naked
+    # apostrophe is overwhelmingly a possessive or contraction (e.g.,
+    # "Gallaudet's system and his deputy's"), not a quote delimiter.
+    # Matching `'([^']+)'` over prose produces false positives like
+    # "s system and his deputy" that flag as bogus drift. Any legitimate
+    # single-quoted passage worth checking already gets caught by the
+    # capitalized-word and designator extractors, or can be written with
+    # double quotes if it must be matched as a phrase.
 
     return tokens
 
