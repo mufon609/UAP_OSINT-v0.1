@@ -56,7 +56,7 @@ process fixes:
 
 ---
 
-## Step D — Layered-process tooling  ✅ DONE (D.0 through D.7)
+## Step D — Layered-process tooling  ✅ DONE (D.0 through D.7; see post-Step-D section below for the subsequent claims-layer refactor)
 
 Three-phase build process: **Investigation → Build → Review**. Each
 phase has dedicated tooling and a bounded discipline.
@@ -139,16 +139,87 @@ design solid; one-node rule held under a realistic-scope artifact).
 
 ### D.7 — Post-pilot cleanup  ✅ DONE
 - `scripts/build-from-research.py` `_claim_source_cell` — dedupe
-  identical location strings while preserving order, so claims with
-  multiple quote_refs pointing to the same paragraph render as
-  "¶3" rather than "¶3; ¶3" (surfaced during the D.5 audit).
+  identical location strings while preserving order (surfaced during
+  the D.5 audit). Note: this helper was subsequently removed as dead
+  code during the post-Step-D claims-layer refactor; dedupe is moot
+  when there are no claim rows.
 - Claim-anchoring discipline (Check A + Check B, shipped post-D.6)
-  is the load-bearing D-era defect-prevention mechanism; the
-  discipline + the three Fravor iterations (i1 claim-anchoring, i2
-  c4/c16 split, i3 c6 framing polish) stand as the reference for
-  subsequent node builds.
-- Step D now complete. Step E remains deferred until ~10 nodes have
-  been through the full pipeline.
+  was the load-bearing D-era defect-prevention mechanism for the
+  claims layer. It caught coarse drift reliably but not fine drift;
+  see the post-Step D section below for the architectural resolution.
+- Step D (D.0 through D.7) complete.
+
+---
+
+## Post-Step D — Claims-layer elimination for document nodes  ✅ DONE
+
+Audit-driven architectural correction. Discovered through:
+- Fravor audits (iterations i1 → i4) that kept finding the same
+  shape of fine drift: c4 "intercept occurred during training" vs
+  source "training was suspended," c13 dropped "and others," c6
+  "at intercept" contributor framing
+- Graves audit (iteration i0 → i1) that surfaced c16 "warning area"
+  vs source "early warning area" and the possessive-apostrophe
+  false-positive in the token extractor
+
+Root cause: the claims layer itself. `claim.statement` was
+contributor-written prose anchored to a verbatim quote, but the
+prose was subject to fine drift that mechanical checks could not
+catch (dropped qualifiers, synonym rephrases, word-level
+condensations). A contributor-synthesis layer between source and
+reader is an unavoidable drift surface *while the layer exists*.
+
+Correction: **document nodes have no claims layer.** A document
+node IS the fact record; evidentiary content is verbatim source
+passages in Key Passages. Contributor prose exists only in the
+Description section (explicitly labeled as synthesis). Other nodes
+that cite facts from a document link to the document and reference
+the specific passage — no intermediate paraphrase exists to drift.
+
+Changes landed:
+- `meta/schema.yaml` — `What This Establishes` dropped from gov-doc /
+  non-gov-doc required_sections
+- `meta/templates/document.md` — section removed; Key Passages is
+  the sole evidentiary layer
+- `scripts/build-from-research.py` — `render_what_establishes()` and
+  its helpers removed as dead code (−55 lines)
+- `meta/conventions.md` — new "Document nodes vs synthesis nodes"
+  section; contradictions-routing table reframed (document nodes
+  don't own contradictions; synthesis nodes do)
+- `prompts/build.md` — Step 7 scope note (`claims: []` for documents);
+  Phase II/III wording aligned
+- `CLAUDE.md` / `CONTRIBUTING.md` — "`verified verbatim` claim" →
+  "quote" (marker attaches only to quote-verification blocks)
+- Fravor artifact → iteration i4: `claims: []`; description expanded
+  to wrap the entities previously reachable only through claim prose
+- Graves artifact → iteration i1: `claims: []`
+- Both nodes regenerated; 0 errors / 0 warnings across the pipeline
+
+**Synthesis nodes** (person, organization, event, finding, news,
+book, location) retain claim-like sections when their analytical
+purpose requires them (Claim Inventory on whistleblowers,
+What The Hearing Established on hearings, etc.). Check A
+(validate-research quote_ref requirement) and Check B
+(review-coverage token drift) still apply to those contexts.
+
+This is the **second architectural correction post-launch**. The
+first was the 2026-04-17 pilot-failure postmortem (fabricated
+verbatim quotes) which produced the validator's mechanical
+verbatim-quote check. This one is deeper — it eliminates the
+source-to-reader contributor-prose layer entirely for fact
+documents. Both corrections came from running the pipeline against
+real sources and observing the gap between what mechanical checks
+can catch and what the discipline requires.
+
+Graves written-testimony node was also built during this period
+(commits 517d273 / 4d0bf8a / e24a726) — second node through the
+full layered pipeline and the first built without a retrofit. The
+extractor fix (single-quote false-positive) landed mid-build,
+demonstrating dogfood catching a real extractor bug.
+
+Node count after this work: 2 document nodes (Fravor, Graves), both
+iterated through the full Phase I → II → III pipeline under the
+claims-layer-free architecture.
 
 ---
 
