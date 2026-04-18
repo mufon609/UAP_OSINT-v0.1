@@ -4,12 +4,12 @@ schema_version: 1
 target_node: documents/written-testimony-fravor-2023
 status: active
 created: '2026-04-17'
-last_iteration: i0
+last_iteration: i1
 
 description: |
   David Fravor's prepared written statement submitted for the record at the July 26, 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]). The statement opens with Fravor's identification as a retired U.S. Navy ([`/organizations/us-navy`]) Commander and his November 2004 role as Commanding Officer of Strike Fighter Squadron Forty-One ([`/organizations/vfa-41`]). The bulk of the document is a first-person narrative of the November 2004 USS Nimitz UAP encounter ([`/events/2004-nimitz-encounter`]): the 2 V 2 training context controlled by USS Princeton ([`/organizations/uss-princeton`]), Princeton's prior two weeks of Aegis tracking, the intercept at approximately 20,000 ft, the object's disappearance at close range, and its reacquisition 60 miles east in less than a minute.
 
-  The closing sections cover subsequent contacts from Jay Stratton ([`/people/jay-stratton`]) in 2009 and Lue Elizondo ([`/people/luis-elizondo`]) in 2016, the formation of To The Stars Academy ([`/organizations/ttsa`]) with Tom DeLonge ([`/people/tom-delonge`]), Chris Mellon ([`/people/christopher-mellon`]), and Steve Justice ([`/people/steve-justice`]), TTSA's work with journalists Leslie Kean ([`/people/leslie-kean`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Helene Cooper ([`/people/helene-cooper`]) on the December 2017 New York Times articles, and a call for Congressional oversight of any U.S. government programs involving craft Fravor characterizes as "not from this world."
+  The closing sections cover subsequent contacts from Jay Stratton ([`/people/jay-stratton`]) in 2009 and Lue Elizondo ([`/people/luis-elizondo`]) in 2016, the formation of To The Stars Academy ([`/organizations/ttsa`]) with Tom DeLonge ([`/people/tom-delonge`]), Chris Mellon ([`/people/christopher-mellon`]), Steve Justice ([`/people/steve-justice`]) and others, TTSA's work with journalists Leslie Kean ([`/people/leslie-kean`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Helene Cooper ([`/people/helene-cooper`]) on the December 2017 NYT articles, and a call for Congressional oversight of any U.S. government programs involving craft Fravor characterizes as "not from this world."
 
   The document is a primary source for what David Fravor ([`/people/david-fravor`]) stated in writing on July 25, 2023 for submission to the hearing. It is not independent verification of the underlying encounter claims — those rest on Fravor's sworn account.
 
@@ -113,11 +113,11 @@ quotes:
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    text: "Not until 2009 did Jay Stratton contact me to investigate what we observed."
+    text: "Not until 2009 did Jay Stratton contact me to investigate what we observed. Unbeknownst to all of us, Jay was part of the ATIP (Anomalous Threat Identification Program) program led by Lue Elizondo out of the DOD."
     source:
       path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
       location: "¶8"
-    significance: "2009 Stratton contact — first institutional follow-up"
+    significance: "2009 Stratton contact; Fravor's naming of \"ATIP\" program and Elizondo lead"
     context: "post-encounter"
 
   - id: q7
@@ -142,6 +142,127 @@ quotes:
     significance: "Closing — performance assessment"
     context: "closing statement"
 
+  - id: q9
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "We were attached to Carrier Airwing Eleven and stationed onboard the USS Nimitz (CVN-68)."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶2"
+    significance: "Squadron attachment — Airwing, Nimitz, CVN-68 designator"
+    context: "opening statement"
+
+  - id: q10
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "I was scheduled to lead a 2 V 2 Air to Air training exercise. My flight of 2 F/A-18Fs was the Blue Air, the good guys, and we were being controlled by the USS Princeton, CG-59."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶3"
+    significance: "Training-exercise context — 2 V 2 Air to Air, Blue Air, Princeton controlling"
+    context: "training context"
+
+  - id: q11
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "The Red Air was being flown by our Marine F/A-18 squadron VMFA-232."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶3"
+    significance: "Red Air participant — Marine squadron VMFA-232"
+    context: "training context"
+
+  - id: q12
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "The air controller on the ship also had no idea but had been observing these objects on their Aegis combat system for the previous 2 weeks. They had been descending from above 80,000ft and coming rapidly down to 20,000ft would stay for hours and then go straight back up."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶5"
+    significance: "Aegis-tracking history — 2-week prior observation, altitude behavior"
+    context: "pre-intercept context"
+
+  - id: q13
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "As all 4 looked down we saw a small white Tic Tac shaped object with the longitudinal axis pointing N/S and moving very abruptly over the white water. There were no Rotors, No Rotor wash, or any visible flight control surfaces like wings."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶6"
+    significance: "Tic Tac description — shape, axis, absence of rotors/wash/control surfaces"
+    context: "encounter narrative"
+
+  - id: q14
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "It was that crew that took the now famous approximately 90 second video that was released by the USG in 2017."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶7"
+    significance: "90-second video — captured by another crew, USG 2017 release"
+    context: "post-encounter"
+
+  - id: q15
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "Years later I was contacted by Alex Dietrich, the other pilot in my flight asking if I had ever been contacted about the incident after 2009."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶9"
+    significance: "Alex Dietrich identification as the other pilot in Fravor's flight"
+    context: "post-encounter"
+
+  - id: q16
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "Alex stated that she had been invited to the Pentagon multiple times to discuss the event and view other videos of UAPs."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶9"
+    significance: "Dietrich Pentagon invitations — Fravor's relay of Dietrich's account"
+    context: "post-encounter"
+
+  - id: q17
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "I was contacted by Mr Elizondo shortly after talking with Alex in 2016."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶9"
+    significance: "2016 Elizondo direct contact with Fravor"
+    context: "post-encounter"
+
+  - id: q18
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "In the weeks that passed I was made aware that Lue had left the pentagon in protest and joined forces with Tom Delonge, Chris Mellon, Steve Justice and others to form To The Stars Academy."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶10"
+    significance: "TTSA formation — Elizondo (\"in protest\"), DeLonge / Mellon / Justice / and others"
+    context: "TTSA formation narrative"
+
+  - id: q19
+    added_date: '2026-04-17'
+    added_by_iteration: i1
+    audit_cadence_days: 365
+    text: "It was this organization that pressed the issue with leading Industry experts and USG officials, worked with Leslie Keane, Ralph Blumenthal and Helene Cooper to publish the articles in the NYT in Dec 2017 admitting the USG was looking at UAPs and removed the Stigma of the UFO topic which led to us being here today."
+    source:
+      path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+      location: "¶10"
+    significance: "NYT journalism — Keane [sic], Blumenthal, Cooper; Dec 2017; TTSA role"
+    context: "disclosure-pipeline narrative"
+
 claims:
   - id: c1
     added_date: '2026-04-17'
@@ -158,7 +279,7 @@ claims:
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "Fravor states he was Commanding Officer of Strike Fighter Squadron Forty-One ([`/organizations/vfa-41`], \"the World Famous Black Aces\") in November 2004"
+    statement: "Fravor states he was Commanding Officer of Strike Fighter Squadron Forty-One ([`/organizations/vfa-41`], \"the World Famous Black Aces\") in Nov 2004"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶2"
@@ -173,36 +294,43 @@ claims:
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶2"
+        quote_ref: q9
     evidentiary_type: sworn-testimony
 
   - id: c4
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "The intercept occurred during a 2 V 2 Air-to-Air training exercise controlled by USS Princeton ([`/organizations/uss-princeton`]) (CG-59); Red Air was flown by Marine F/A-18 squadron VMFA-232 ([`/organizations/vmfa-232`])"
+    statement: "The intercept occurred during a 2 V 2 Air to Air training exercise controlled by USS Princeton ([`/organizations/uss-princeton`]) (CG-59); Red Air was flown by Marine F/A-18 squadron VMFA-232 ([`/organizations/vmfa-232`])"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶3"
+        quote_ref: q10
+      - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+        location: "¶3"
+        quote_ref: q11
     evidentiary_type: sworn-testimony
 
   - id: c5
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "Per Fravor, USS Princeton had observed these objects on its Aegis combat system for the previous two weeks, descending from above 80,000 ft to 20,000 ft and remaining for hours before going straight back up"
+    statement: "Per Fravor, the air controller on the ship had been observing these objects on their Aegis combat system for the previous 2 weeks; the objects descended from above 80,000 ft to 20,000 ft, remained for hours, and then went straight back up"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶5"
+        quote_ref: q12
     evidentiary_type: sworn-testimony
 
   - id: c6
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "Per Fravor, the object at intercept was Tic Tac shaped with its longitudinal axis pointing north-south, had no rotors, no rotor wash, and no visible flight control surfaces such as wings"
+    statement: "Per Fravor, the object at intercept was a small white Tic Tac shaped object with longitudinal axis pointing N/S, had no Rotors, no Rotor wash, and no visible flight control surfaces like wings"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶6"
+        quote_ref: q13
     evidentiary_type: sworn-testimony
 
   - id: c7
@@ -231,10 +359,11 @@ claims:
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "Per Fravor, a subsequent crew from the same squadron captured the now-famous approximately 90-second video that was released by the U.S. Government in 2017"
+    statement: "Per Fravor, one of his crews captured the now famous approximately 90 second video that was released by the USG in 2017"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶7"
+        quote_ref: q14
     evidentiary_type: sworn-testimony
 
   - id: c10
@@ -263,37 +392,46 @@ claims:
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "Per Fravor, Alex Dietrich ([`/people/alex-dietrich`]), the other pilot in his flight, told Fravor she had been invited to the Pentagon multiple times to discuss the event and view other UAP videos; Fravor was contacted by Elizondo in 2016"
+    statement: "Per Fravor, Alex Dietrich ([`/people/alex-dietrich`]), the other pilot in his flight, stated she had been invited to the Pentagon multiple times to discuss the event and view other UAPs videos; Fravor was contacted by Mr Elizondo ([`/people/luis-elizondo`]) shortly after in 2016"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶9"
+        quote_ref: q15
+      - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+        location: "¶9"
+        quote_ref: q16
+      - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+        location: "¶9"
+        quote_ref: q17
     evidentiary_type: sworn-testimony
 
   - id: c13
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "Per Fravor, Elizondo left the Pentagon \"in protest\" and joined Tom DeLonge ([`/people/tom-delonge`]), Chris Mellon ([`/people/christopher-mellon`]), and Steve Justice ([`/people/steve-justice`]) to form To The Stars Academy ([`/organizations/ttsa`])"
+    statement: "Per Fravor, Lue had left the pentagon in protest and joined forces with Tom DeLonge ([`/people/tom-delonge`]), Chris Mellon ([`/people/christopher-mellon`]), Steve Justice ([`/people/steve-justice`]) and others to form To The Stars Academy ([`/organizations/ttsa`])"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶10"
+        quote_ref: q18
     evidentiary_type: sworn-testimony
 
   - id: c14
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "Per Fravor, To The Stars Academy worked with journalists Leslie Keane [sic — source spelling; canonical is Leslie Kean] ([`/people/leslie-kean`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Helene Cooper ([`/people/helene-cooper`]) to publish the December 2017 New York Times articles on UAP"
+    statement: "Per Fravor, this organization worked with Leslie Keane [sic — source spelling; canonical is Leslie Kean] ([`/people/leslie-kean`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Helene Cooper ([`/people/helene-cooper`]) to publish the articles in the NYT in Dec 2017"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶10"
+        quote_ref: q19
     evidentiary_type: sworn-testimony
 
   - id: c15
     added_date: '2026-04-17'
     added_by_iteration: i0
     audit_cadence_days: 365
-    statement: "Per Fravor, the Tic Tac object engaged in November 2004 was far superior to anything available at the time, today, or anticipated in the next 10+ years"
+    statement: "Per Fravor, the Tic Tac Object engaged in Nov 2004 was far superior to anything that we had at the time, have today, or are looking to develop in the next 10+ years"
     sources:
       - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
         location: "¶13"
@@ -628,3 +766,32 @@ iterations:
       - rg3
       - rg4
     entries_modified: []
+
+  - id: i1
+    date: '2026-04-17'
+    trigger: audit-correction
+    summary: "Applied claim-anchoring discipline (Check A quote_ref requirement + Check B token drift). Added 11 new quotes (q9–q19) to anchor previously-unanchored claims; expanded q6 to cover the ATIP sentence so c11 tokens fall within the cited quote; wired quote_refs on c3, c4, c5, c6, c9, c12, c13, c14. Fixed token drift by bringing claim prose closer to source wording: c2 and c15 \"November\" → \"Nov\"; c4 \"Air-to-Air\" → \"Air to Air\"; c5 reworded to drop redundant USS Princeton repetition; c6 \"north-south\" → \"N/S\" and \"such as wings\" → \"like wings\"; c9 dropped inference \"from the same squadron\" and the \"U.S. Government\"/\"U.S.\" abbreviations, replaced with verbatim \"USG\"; c13 restored source qualifier \"and others\" after Steve Justice (D.5 audit finding); c14 reworded to \"articles in the NYT in Dec 2017\" matching source wording."
+    entries_added:
+      - q9
+      - q10
+      - q11
+      - q12
+      - q13
+      - q14
+      - q15
+      - q16
+      - q17
+      - q18
+      - q19
+    entries_modified:
+      - q6
+      - c2
+      - c3
+      - c4
+      - c5
+      - c6
+      - c9
+      - c12
+      - c13
+      - c14
+      - c15
