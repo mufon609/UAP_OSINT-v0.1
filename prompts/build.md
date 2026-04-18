@@ -177,8 +177,8 @@ mechanically. For now: hand-write with discipline.
 - **Output:** YAML fragment of `claims:` entries, each with:
   - `id` (c1, c2, c3, …)
   - `statement` (one sentence; atomic factual claim the source establishes)
-  - `sources` (list — paths + locations; may include `quote_ref` pointing
-    to a supporting quote)
+  - `sources` (list — paths + locations; **must include `quote_ref`** on
+    at least one source; see discipline)
   - `evidentiary_type` — one of:
     - `sworn-testimony` (the source is sworn/on-record; the claim-fact is
       "the witness said X," not "X is true")
@@ -196,8 +196,31 @@ mechanically. For now: hand-write with discipline.
   Use `sworn-testimony` evidentiary_type and phrase carefully.
 - One claim per sentence. Complex claims break into multiple atomic
   entries.
-- Every claim cites at least one source. If you can't trace a claim to
-  a location, it doesn't belong in this artifact.
+- **Every claim must be anchored by `quote_ref`.** At least one source
+  on each claim must point (`quote_ref: qN`) to an existing quote whose
+  verbatim text supports the claim. This is the mechanical hook that
+  ties contributor prose to mechanically-verified source passages.
+  Without it, the claim.statement is a free-floating paraphrase that
+  nothing mechanical can audit against the document. `validate-research.py`
+  errors on any unanchored claim.
+- **If no existing quote supports the claim, ADD the quote first.** The
+  common trap: writing a summary claim that spans material no single
+  quote captures. Fix: extract a verbatim passage from the source into
+  `quotes:` that carries the supporting text, then reference its id.
+  If a claim genuinely requires two or more source spans, give it
+  multiple sources each with its own `quote_ref`.
+- **Claim prose tokens must appear in the source.** `review-coverage.py`
+  extracts significant tokens (proper nouns, designators like `VFA-41`,
+  numbers, quoted strings) from each claim and requires every token to
+  appear somewhere in the source text. Fabricated entities, expanded
+  abbreviations (`November` when source says `Nov`), and added facts
+  become commit-blocking errors. Tokens in the source but not in the
+  referenced quote produce warnings — consider tightening the quote or
+  splitting the claim.
+- **Limits.** Mechanical drift-check catches additions and fabrications.
+  It does NOT catch dropped qualifiers ("and others" silently removed)
+  or semantically-equivalent rephrases ("one of my crews" → "from the
+  same squadron"). Those need semantic review in Phase III Step 2.
 
 ### Step 8. Populate `entities_referenced` (bounded agent task T3)
 

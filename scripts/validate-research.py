@@ -359,6 +359,25 @@ def check_claims(rel, data, manifest_paths):
                     issues.append(Issue(rel, "error",
                         f"claims[{i}] ({c.get('id')!r}) sources[{si}]: "
                         f"quote_ref {src['quote_ref']!r} does not match any quote.id"))
+            # Check A — claim-anchor requirement. Every claim must tie to at
+            # least one verbatim quote via sources[].quote_ref. This is the
+            # mechanical hook that prevents unanchored claim-text drift
+            # (surfaced during the D.5 pilot audit: contributor prose can
+            # silently introduce facts, drop qualifiers, or reword beyond what
+            # any quoted source actually supports). If a claim genuinely
+            # synthesizes across multiple source spans, add quotes for each
+            # span and link them; do NOT leave the claim unanchored.
+            has_quote_ref = any(
+                isinstance(s, dict) and s.get("quote_ref")
+                for s in sources
+            )
+            if not has_quote_ref:
+                issues.append(Issue(rel, "error",
+                    f"claims[{i}] ({c.get('id')!r}): no quote_ref anchors this "
+                    f"claim. Every claim must tie to at least one verbatim "
+                    f"quote via sources[].quote_ref. If the needed quote "
+                    f"doesn't exist yet, add it to quotes: first, then "
+                    f"reference its id here."))
         # evidentiary_type enum
         et = c.get("evidentiary_type")
         if et is None:

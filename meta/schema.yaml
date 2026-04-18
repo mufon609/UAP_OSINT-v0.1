@@ -472,7 +472,14 @@ types:
     claim_source:
       required: [path, location]
       optional: [quote_ref]
-      # quote_ref: links the claim to a specific quote entry's id
+      # quote_ref: links the claim to a specific quote entry's id.
+      # Every claim must have quote_ref set on at least one of its sources
+      # (enforced by validate-research.py check_claims). This is the
+      # anchor that ties the contributor-written claim.statement text to
+      # a mechanically-verified verbatim source passage. Without it,
+      # claim-prose drift (fabricated facts, dropped qualifiers, rephrased
+      # inferences) is invisible to the validator. If no existing quote
+      # supports a claim, add the quote first, then reference its id here.
 
     entity_entry:
       required: [entity_type, name, wrap_path]
@@ -535,6 +542,7 @@ types:
       # Cross-reference
       - "every sources[].path exists in sources/manifest.yaml"
       - "every quote_ref points to an existing quote.id"
+      - "every claim has at least one sources[] entry with quote_ref set (anchor requirement — prevents unanchored claim drift)"
       - "every reference in entity.references points to an existing quote.id or claim.id"
       - "every superseded_by / contradicted_by / corroborated_by ref points to an existing entry id (or is a structured external ref)"
 

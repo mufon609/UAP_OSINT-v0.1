@@ -21,6 +21,19 @@ Checks:
   4. OQ dedup     — the '## Open Questions / Research Gaps' items map 1:1
                     to unresolved research_gaps (plus any retained-DONE
                     resolved gaps).
+  5. Claim drift  — every significant token (proper noun, designator,
+                    number, quoted string) in a claim.statement appears
+                    in the source text. Catches coarse drift: fabricated
+                    facts, fabricated entities, contributor additions not
+                    anchored in the source. For claims with quote_ref,
+                    tokens present in source but NOT in the referenced
+                    quote emit a warning — the contributor drew beyond
+                    the cited anchor. Does NOT catch fine drift (dropped
+                    qualifiers, rephrased inferences, voice changes);
+                    those require semantic review (Phase III Step 2).
+                    Paired with validate-research.py's quote_ref-required
+                    check which ensures every claim has an anchor to
+                    check against.
 
 Scope: document nodes only (matching build-from-research.py D.3). Other
 node types are acknowledged and skipped — extension is BACKLOG work
@@ -60,6 +73,7 @@ except ImportError:
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS_DIR = REPO_ROOT / "scripts"
+SOURCES_DIR = REPO_ROOT / "sources"
 BUILD_FROM_RESEARCH = SCRIPTS_DIR / "build-from-research.py"
 RESEARCH_DIR = REPO_ROOT / "research"
 
@@ -72,6 +86,44 @@ TYPE_DIRS = {
 SUPPORTED_TYPES = {"document"}
 
 LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
+
+# --- Check 5 (Claim drift) patterns and vocab -------------------------------
+# Markdown link syntax used to wrap entity paths in claim prose. Stripped
+# before token extraction since wrap_paths are repo identifiers, not
+# content claims about the source.
+MARKDOWN_LINK_PATTERN = re.compile(r"\[`/[^`]+`\]")
+
+# Designator patterns like VFA-41, CVN-68, F/A-18F, APG-73 — uppercase
+# tokens combining letters and digits around a hyphen or slash. These
+# should appear verbatim in the source when the claim cites them.
+DESIGNATOR_PATTERN = re.compile(r"\b[A-Z][A-Z0-9]*[-/][A-Z0-9/-]*[A-Z0-9]\b")
+
+# Digit sequences — years, altitudes, counts. Allows commas, periods,
+# and trailing + ("10+").
+NUMBER_PATTERN = re.compile(r"\b\d[\d,.]*\+?\b")
+
+# Capitalized word pattern — proper-noun candidates. Matches hyphenated
+# words like "Forty-One" as a single token.
+CAPWORD_PATTERN = re.compile(r"\b[A-Z][A-Za-z0-9-]*\b")
+
+# Capitalized words that are grammatical (pronouns, articles, prepositions,
+# conjunctions, adverbs). Excluded from drift-check token collection so
+# "Per Fravor," doesn't flag "Per" as a missing proper noun.
+CAPITALIZED_STOPWORDS = frozenset({
+    "I", "He", "She", "They", "We", "You", "It", "Me", "Us", "Them",
+    "The", "A", "An",
+    "Per", "This", "That", "These", "Those",
+    "Here", "There", "When", "Where", "Why", "How",
+    "But", "And", "Or", "So", "Yet", "For", "Nor",
+    "In", "On", "At", "By", "To", "From", "With", "Of", "About",
+    "After", "Before", "During", "Since", "Until", "Throughout",
+    "As", "If", "While", "Though", "Although", "Because",
+    "My", "Your", "His", "Her", "Their", "Our", "Its",
+    "All", "Any", "Each", "Every", "Some", "Most", "Few", "Many",
+    "No", "Not", "None", "Nothing",
+    "Yes", "Now", "Then", "Also",
+    "Both", "Either", "Neither",
+})
 
 
 # =============================================================================
@@ -149,6 +201,139 @@ def excise_associated_nodes(text):
 def truncate(s, n=80):
     s = s.replace("\n", " ").strip()
     return s if len(s) <= n else s[:n] + "..."
+
+
+# --- Check 5 helpers: source extraction and claim-token analysis -----------
+
+_source_text_cache = {}  # Path -> extracted plaintext (or None on failure)
+
+
+def extract_source_text(source_path):
+    """Extract plaintext from an archived source file. Returns None on
+    failure. Cached per validator run to avoid repeated subprocess calls
+    for multi-source artifacts.
+
+    Mirrors the extraction logic in validate.py (`extract_source_text`)
+    and extract-source.py by design — the token drift check must see
+    exactly what the verbatim-quote check sees to avoid normalization
+    skew between the two layers.
+    """
+    if source_path in _source_text_cache:
+        return _source_text_cache[source_path]
+    result = None
+    suffix = source_path.suffix.lower()
+    if suffix == ".pdf":
+        try:
+            proc = subprocess.run(
+                ["pdftotext", "-layout", str(source_path), "-"],
+                capture_output=True, text=True, timeout=60,
+            )
+            if proc.returncode == 0:
+                result = proc.stdout
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            result = None
+    elif suffix in (".html", ".htm", ".txt", ".md"):
+        try:
+            result = source_path.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            result = None
+    _source_text_cache[source_path] = result
+    return result
+
+
+def strip_markdown_links(text):
+    """Remove [`/path/to/entity`] wrap-path link syntax from claim text.
+
+    These are repository identifiers (navigational cross-references), not
+    content claims about the source document. A claim that wraps
+    `[`/organizations/vfa-41`]` around a squadron name is stating a repo
+    fact (the canonical entity lives here), not a source fact (the
+    document said "VFA-41"). Drift checks run on the bare prose left
+    after stripping — the entity linkage is checked separately by the
+    stub-linking pass.
+    """
+    return MARKDOWN_LINK_PATTERN.sub("", text)
+
+
+def extract_significant_tokens(claim_text):
+    """Return set of tokens from a claim statement worth checking against
+    the source. A "significant token" is one that, if fabricated, would
+    represent real evidentiary drift:
+
+      - Hyphen/slash designators (VFA-41, F/A-18F, CVN-68, APG-73)
+      - Digit sequences (2004, 20,000, 10+)
+      - Capitalized non-stopword words (proper nouns: Fravor, Pentagon,
+        Nimitz, etc. — also compound pieces like "Forty-One")
+      - Quoted strings (content inside " " or ' ') — direct source-word
+        claims
+
+    Grammatical / function words that happen to be capitalized (pronouns,
+    articles, sentence-initial conjunctions) are filtered via the
+    CAPITALIZED_STOPWORDS list. Single characters and empty strings are
+    dropped.
+    """
+    text = strip_markdown_links(claim_text)
+    tokens = set()
+
+    # 1. Hyphen/slash designators (caps + digit/letter mix)
+    for m in DESIGNATOR_PATTERN.finditer(text):
+        tokens.add(m.group())
+
+    # 2. Digit sequences
+    for m in NUMBER_PATTERN.finditer(text):
+        tokens.add(m.group())
+
+    # 3. Capitalized words (proper-noun candidates). Remove designators
+    #    and numbers first so they don't double-match.
+    clean = DESIGNATOR_PATTERN.sub(" ", text)
+    clean = NUMBER_PATTERN.sub(" ", clean)
+    for m in CAPWORD_PATTERN.finditer(clean):
+        word = m.group()
+        if len(word) < 2:
+            continue
+        if word in CAPITALIZED_STOPWORDS:
+            continue
+        tokens.add(word)
+
+    # 4. Quoted strings ("..." and '...' — preserves whichever form the
+    #    claim used; matched against the source post-normalization).
+    for m in re.finditer(r'"([^"]+)"', text):
+        q = m.group(1).strip()
+        if q:
+            tokens.add(q)
+    for m in re.finditer(r"'([^']+)'", text):
+        q = m.group(1).strip()
+        # Skip single-char contractions like 's possessive (handled by
+        # outer quote; the inner content is what we check)
+        if q and len(q) > 1:
+            tokens.add(q)
+
+    return tokens
+
+
+def gather_source_text(artifact):
+    """Concatenate plaintext of every archived primary source on the
+    artifact. Returns (combined_text, missing_paths) where
+    missing_paths is any primary_sources[].path that could not be
+    extracted."""
+    chunks = []
+    missing = []
+    for ps in (artifact.get("primary_sources") or []):
+        if not isinstance(ps, dict):
+            continue
+        rel_path = ps.get("path")
+        if not rel_path:
+            continue
+        full = SOURCES_DIR / rel_path
+        if not full.exists():
+            missing.append(rel_path)
+            continue
+        text = extract_source_text(full)
+        if text is None:
+            missing.append(rel_path)
+            continue
+        chunks.append(text)
+    return ("\n".join(chunks), missing)
 
 
 # =============================================================================
@@ -321,6 +506,97 @@ def check_oq_dedup(artifact, node_text, rel):
 
 
 # =============================================================================
+# Check 5 — Claim token drift (against source and optional referenced quote)
+# =============================================================================
+
+def check_claim_token_drift(artifact, source_text, rel):
+    """Verify every significant token in each claim.statement appears in
+    the source text. For claims with a quote_ref, also emit a warning
+    when the token appears in the source but NOT in the referenced quote
+    — the contributor drew from outside the cited anchor.
+
+    Error (in source / not in source) vs warning (in source / not in
+    quote) is deliberate. Errors block commit because a token not in the
+    source is either a fabrication or a wording drift that breaks
+    grep-ability. Warnings don't block because the contributor may have
+    legitimate reasons to reference broader source context, but the
+    cited anchor should ideally be tight enough that no such expansion
+    is needed.
+
+    This check is paired with validate-research.py's claim-anchor
+    requirement (every claim must have at least one quote_ref), so
+    every claim reaches this check with an anchor to compare against.
+    """
+    issues = []
+    if not source_text:
+        # No source to check against (missing files already reported
+        # elsewhere). Skip silently rather than false-positive.
+        return issues
+
+    quotes_by_id = {
+        q.get("id"): q
+        for q in (artifact.get("quotes") or [])
+        if isinstance(q, dict) and q.get("id")
+    }
+
+    norm_source = normalize_for_compare(source_text).lower()
+
+    for c in (artifact.get("claims") or []):
+        if not isinstance(c, dict):
+            continue
+        statement = (c.get("statement") or "").strip()
+        if not statement:
+            continue
+        claim_id = c.get("id", "?")
+
+        tokens = extract_significant_tokens(statement)
+        if not tokens:
+            continue
+
+        # Identify the referenced quote text (first source with a
+        # quote_ref pointing to an existing quote wins). Concatenate
+        # multiple if several sources carry quote_refs.
+        quote_texts = []
+        for src in (c.get("sources") or []):
+            if not isinstance(src, dict):
+                continue
+            qref = src.get("quote_ref")
+            if qref and qref in quotes_by_id:
+                qt = quotes_by_id[qref].get("text")
+                if qt:
+                    quote_texts.append(qt)
+        norm_quote = (
+            normalize_for_compare("\n".join(quote_texts)).lower()
+            if quote_texts else None
+        )
+
+        for token in sorted(tokens):
+            norm_token = normalize_for_compare(token).lower()
+            if not norm_token:
+                continue
+
+            in_source = norm_token in norm_source
+            if not in_source:
+                issues.append(Issue(rel, "error",
+                    f"Drift: claim {claim_id!r} contains token {token!r} "
+                    f"not found anywhere in the source text. Either "
+                    f"correct the claim to match source wording, or add "
+                    f"the source passage that supports it."))
+                continue
+
+            if norm_quote is not None:
+                in_quote = norm_token in norm_quote
+                if not in_quote:
+                    issues.append(Issue(rel, "warn",
+                        f"Drift: claim {claim_id!r} token {token!r} is in "
+                        f"the source but not in the referenced quote "
+                        f"(quote_ref). Claim may be drawing from outside "
+                        f"the cited anchor — tighten the quote or split "
+                        f"the claim."))
+    return issues
+
+
+# =============================================================================
 # Per-artifact orchestration
 # =============================================================================
 
@@ -344,11 +620,20 @@ def review_artifact(artifact_path, quiet=False):
 
     node_text = node_path.read_text()
 
+    # Gather source plaintext for claim-drift check (cached across calls)
+    source_text, missing_sources = gather_source_text(artifact)
+
     issues = []
+    for path in missing_sources:
+        issues.append(Issue(rel, "error",
+            f"Claim drift check: primary source {path!r} missing or "
+            f"unreadable — can't verify claim tokens against source."))
+
     issues.extend(check_coverage(artifact, node_text, rel))
     issues.extend(check_boundary(artifact_path, node_path, rel))
     issues.extend(check_stub_linking(artifact, node_text, rel))
     issues.extend(check_oq_dedup(artifact, node_text, rel))
+    issues.extend(check_claim_token_drift(artifact, source_text, rel))
     return issues, None
 
 
