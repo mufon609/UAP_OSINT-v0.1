@@ -57,6 +57,42 @@ incident), and documents (government vs. non-government).
 
 ---
 
+## Document nodes vs synthesis nodes
+
+A document node IS the fact record for its primary source. Evidentiary
+content lives in `Key Passages` — verbatim source text with per-quote
+mechanical verification (`validate.py` check #11 extracts the cited
+source and substring-checks every passage marked `✅ Confirmed —
+verified verbatim`). Document nodes have no contributor-authored claims
+layer. No prose paraphrase of what the document "establishes" sits
+between source text and reader.
+
+The rationale is failure-mode specific: contributor-prose summaries
+introduce fine drift (dropped qualifiers, synonym rephrases,
+word-level condensations) that mechanical checks catch poorly.
+Eliminating the prose layer eliminates the surface. Other nodes that
+cite facts from a document link to the document and reference the
+specific Key Passage — no intermediate paraphrase exists to drift.
+
+**Synthesis nodes** (person, organization, event, finding, news,
+book, location) CAN carry structured claim-like sections when the
+node's analytical purpose requires them:
+
+- `Claim Inventory` on whistleblower person nodes (claim → document → status)
+- `Key Testimony` + `What The Hearing Established` on hearing event nodes
+- `What The Article Established` on news nodes
+- `What The Book States` on book nodes
+- `What This Establishes` on finding nodes
+- `Corroboration` on eyewitness person / encounter event nodes
+
+In those contexts, claim entries are contributor-written synthesis and
+must be anchored to verbatim quotes via `sources[].quote_ref` with
+mechanical drift checks (`validate-research.py` claim-anchor + `review-coverage.py`
+token-drift). Document nodes are categorically excluded — the document
+is the synthesis target, not the subject.
+
+---
+
 ## Confirmed vs Flagged
 
 Any structured section that mixes primary-source-supported entries with
@@ -118,13 +154,17 @@ evidence on each side:
   the analytical finding.
 
 When an authoritative source formally contradicts a confirmed claim, the
-contradiction is documented in the context where it gains meaning:
+contradiction is documented on the **synthesis node where the
+disagreement gains analytical meaning** — not on the source document
+nodes themselves. Document nodes record each source's statement
+verbatim in Key Passages; cross-document contradictions are a synthesis
+finding, not a property of either document.
 
 | Situation | Where |
 |---|---|
-| Post-event denial | `Node Versioning` on the relevant node |
-| Institutional self-contradiction | `Credibility Notes` |
-| Official finding contradicts a claim | Status marker (`❌ Contradiction` or `⚠ Disputed — unknown`) on the claim row in `What This Establishes` on the relevant document node |
+| Post-event denial | `Node Versioning` on the relevant person / event / organization node |
+| Institutional self-contradiction | `Credibility Notes` on the person / organization node |
+| One document's statement contradicts another's | `Institutional Assessment` on the relevant organization node (when an agency finding contradicts a cited claim), or a finding node spanning the conflicting sources |
 | Written vs. oral testimony divergence | `Material Differences` on the transcript node |
 | Contested affiliation | `Flagged` subsection of `Affiliations` |
 
@@ -199,8 +239,10 @@ structural investigation pathways (cross-corpus audits, mechanism
 questions, diagnostic tests of hypotheses). Both belong in this section.
 
 Items use markdown checkboxes. Resolved items are removed; the
-resolution goes into the node body at its natural home
-(Description, Key Passages, What It Confirms, etc). Retain
+resolution goes into the node body at its natural home — Description,
+Key Passages on a document node, or the node-type-specific structured
+section on synthesis nodes (Claim Inventory, Program Involvement,
+Publication Record, Institutional Assessment, etc). Retain
 `- [x] DONE` only for null findings, provenance notes, or methodology
 outcomes where the closure itself is the useful record.
 
