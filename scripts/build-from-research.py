@@ -336,7 +336,10 @@ def render_open_questions(artifact):
 # =============================================================================
 
 def render_body(artifact, node_kind):
-    # H1 title stands alone — no `---` separator between H1 and first H2
+    # H1 title stands alone — no `---` separator between H1 and first H2.
+    # Document nodes have no What This Establishes / claims section: the
+    # document IS the fact record, and Key Passages carries the verbatim
+    # evidentiary content. See schema.yaml document.kinds commentary.
     title = render_title(artifact).rstrip("\n") + "\n"
     sections = [
         render_document_summary(artifact),
@@ -345,7 +348,6 @@ def render_body(artifact, node_kind):
     if node_kind == "gov-doc":
         sections.append(render_provenance(artifact))
     sections.extend([
-        render_what_establishes(artifact),
         render_key_passages(artifact),
         render_associated_nodes(),
         render_open_questions(artifact),

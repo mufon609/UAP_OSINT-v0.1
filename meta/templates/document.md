@@ -48,23 +48,17 @@ corpus: {{corpus}}
 ---
 <!-- /KIND -->
 
-## What This Establishes
-
-| Claim | Status | Source |
-|---|---|---|
-|  |  |  |
-
-<!-- Each claim row carries a status marker. For claims contradicted by
-     another primary source, use ❌ Contradiction or ⚠ Disputed — unknown
-     directly in the Status column; the claim stays, the disagreement is
-     recorded in place. -->
-
----
-
 <!-- Author info for document nodes lives in document_intrinsic.authors_per_document
      on the research artifact and renders as the Author row in Document Summary.
      No separate Authors section needed — the D.5 pilot confirmed the redundancy.
      For node types where Authors is load-bearing (news, book), see those templates. -->
+
+<!-- Document nodes have no "What This Establishes" / claims section by design.
+     The document IS the fact record. Evidentiary content is verbatim source
+     passages in Key Passages. Other nodes that reference facts from this
+     document link to the document and cite the specific passage — no
+     contributor-prose claim layer sits in between. Drift cannot occur where
+     contributor paraphrase cannot exist. -->
 
 <!-- CORPUS-ADDENDUM-INSERT: Additional sections required by the corpus
      addendum (e.g., Review Status for aawsap-dird) are inserted here by
@@ -72,10 +66,14 @@ corpus: {{corpus}}
 
 ## Key Passages
 
-<!-- Each direct quote is a block quote followed by a 3-field verification
-     table. Populate only for status values that support verified quotes
-     (primary-source-confirmed or declassified). Never populate for
-     `unverified-existence`. -->
+<!-- The evidentiary record for this document. Each entry is a block quote
+     (verbatim source text) followed by a 3-field verification table.
+     Populate comprehensively — if a fact from this document will be
+     referenced by another node, it needs a quote here. Contributor-
+     summarized "claims" were eliminated; the source's own words are the
+     fact layer. Populate only for status values that support verified
+     quotes (primary-source-confirmed or declassified). Never populate
+     for `unverified-existence`. -->
 
 ---
 

@@ -184,11 +184,16 @@ types:
     kinds:
       gov-doc:
         description: "Government-originated document"
+        # A document node IS the fact record — its evidentiary content is
+        # verbatim source passages (Key Passages), not contributor-summarized
+        # "claims". Other nodes that reference facts from a document link to
+        # the document and cite the specific passage. No contributor-prose
+        # synthesis layer sits between the source and the reader; drift
+        # surfaces cannot exist where contributor prose cannot rephrase.
         required_sections:
           - Document Summary
           - Description
           - Provenance
-          - What This Establishes
           - Key Passages
           - Associated Nodes
           - Open Questions / Research Gaps
@@ -197,7 +202,6 @@ types:
         required_sections:
           - Document Summary
           - Description
-          - What This Establishes
           - Key Passages
           - Associated Nodes
           - Open Questions / Research Gaps

@@ -172,55 +172,42 @@ mechanically. For now: hand-write with discipline.
 
 ### Step 7. Populate `claims` (bounded agent task T1)
 
-**Agent task T1:**
+**Scope note.** For **document-type** nodes, `claims` is not populated —
+leave the list empty (`claims: []`). The rationale: a document node IS
+the fact record, and its evidentiary content is verbatim source passages
+in `quotes`. A contributor-prose claim layer was eliminated because every
+"fine drift" class the mechanical checks couldn't catch (dropped
+qualifiers, synonym rephrases, word substitutions) originated in claim
+prose. With claims gone, nothing can drift: quotes are mechanically
+verified verbatim against the source, and other nodes that need to cite
+facts from this document link to the document and reference the specific
+passage. Populate `quotes` comprehensively instead — every load-bearing
+fact in the document should have a verbatim quote.
+
+For **non-document** node types (person/organization/event/etc.), claims
+may still be populated per the original discipline. The requirements
+below apply to those contexts:
+
+**Agent task T1 (non-document artifacts):**
 - **Input:** extracted plaintext + populated `quotes`
 - **Output:** YAML fragment of `claims:` entries, each with:
   - `id` (c1, c2, c3, …)
   - `statement` (one sentence; atomic factual claim the source establishes)
   - `sources` (list — paths + locations; **must include `quote_ref`** on
-    at least one source; see discipline)
-  - `evidentiary_type` — one of:
-    - `sworn-testimony` (the source is sworn/on-record; the claim-fact is
-      "the witness said X," not "X is true")
-    - `documented` (primary-source government/institutional document)
-    - `cited` (the source references another source; claim rests on the
-      cited one)
-    - `secondary` (news / book; use cautiously)
-  - `independently_verifiable` (optional: free-text note on corroboration
-    status)
+    at least one source)
+  - `evidentiary_type` — one of `sworn-testimony` | `documented` |
+    `cited` | `secondary`
+  - `independently_verifiable` (optional)
   - Standard lifecycle fields
 
-**Discipline:**
-- A claim is what the source *establishes*. For sworn testimony, the
-  claim is the fact of the testimony, not the truth of what's testified.
-  Use `sworn-testimony` evidentiary_type and phrase carefully.
-- One claim per sentence. Complex claims break into multiple atomic
-  entries.
-- **Every claim must be anchored by `quote_ref`.** At least one source
-  on each claim must point (`quote_ref: qN`) to an existing quote whose
-  verbatim text supports the claim. This is the mechanical hook that
-  ties contributor prose to mechanically-verified source passages.
-  Without it, the claim.statement is a free-floating paraphrase that
-  nothing mechanical can audit against the document. `validate-research.py`
-  errors on any unanchored claim.
-- **If no existing quote supports the claim, ADD the quote first.** The
-  common trap: writing a summary claim that spans material no single
-  quote captures. Fix: extract a verbatim passage from the source into
-  `quotes:` that carries the supporting text, then reference its id.
-  If a claim genuinely requires two or more source spans, give it
-  multiple sources each with its own `quote_ref`.
-- **Claim prose tokens must appear in the source.** `review-coverage.py`
-  extracts significant tokens (proper nouns, designators like `VFA-41`,
-  numbers, quoted strings) from each claim and requires every token to
-  appear somewhere in the source text. Fabricated entities, expanded
-  abbreviations (`November` when source says `Nov`), and added facts
-  become commit-blocking errors. Tokens in the source but not in the
-  referenced quote produce warnings — consider tightening the quote or
-  splitting the claim.
-- **Limits.** Mechanical drift-check catches additions and fabrications.
-  It does NOT catch dropped qualifiers ("and others" silently removed)
-  or semantically-equivalent rephrases ("one of my crews" → "from the
-  same squadron"). Those need semantic review in Phase III Step 2.
+**Discipline (non-document artifacts):**
+- Every claim must be anchored by `quote_ref`. If no existing quote
+  supports it, add the quote first.
+- Claim prose tokens must appear in the source (`review-coverage.py`
+  check B).
+- Limits: mechanical checks catch additions and fabrications; they do
+  NOT catch dropped qualifiers or synonym rephrases. Phase III Step 2
+  (semantic review) is required.
 
 ### Step 8. Populate `entities_referenced` (bounded agent task T3)
 
