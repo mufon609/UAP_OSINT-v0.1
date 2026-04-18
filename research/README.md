@@ -16,8 +16,13 @@ matches the target node's slug.
 Research artifacts are the machine-readable structured-fact layer
 behind each node. They capture:
 
-- Verbatim-quotable passages from primary sources
-- Atomic claims with per-claim source attribution
+- Verbatim-quotable passages from primary sources (`quotes`)
+- Atomic claims with per-claim source attribution (`claims`) — **on
+  synthesis artifacts only** (person, organization, event, finding,
+  news, book, location). Document artifacts carry no claims layer by
+  design; their evidentiary content lives entirely in `quotes`. See
+  `meta/conventions.md` "Document nodes vs synthesis nodes" for the
+  rationale.
 - Entities referenced (person, org, event, doc, location, finding)
 - Naming quirks in the sources (typos, alt spellings)
 - Research gaps — open investigation threads
@@ -25,8 +30,13 @@ behind each node. They capture:
   reported claims lacking primary-source support here
 - Iteration log — append-only audit trail of updates
 
-The narrative node at `{type}/{slug}.md` is a derived view of this
-artifact, regenerated via `scripts/build-from-research.py`.
+The narrative node at `{type}/{slug}.md` is a derived view of its
+artifact. For **document nodes**, `scripts/build-from-research.py`
+deterministically regenerates the narrative from the artifact
+(Phase II of the layered build process). For **other node types**,
+the narrative is currently hand-authored from the artifact per
+`meta/conventions.md` discipline; Phase II coverage extension to
+synthesis nodes is tracked in `BACKLOG.md`.
 
 ## Conventions
 
