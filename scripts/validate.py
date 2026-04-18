@@ -591,6 +591,187 @@ def validate_node(path, schema):
 
 
 # =============================================================================
+# Governance-file validation — frontmatter discipline for meta/ files
+# =============================================================================
+
+META_DIR = REPO_ROOT / "meta"
+TEMPLATES_DIR = META_DIR / "templates"
+
+# Type → content-directory mapping used to derive a template's expected
+# placeholder id (person.md → id: people/{{slug}}). Kept local to this
+# section; mirrors the longer mapping in new.py and validate-research.py
+# by design — flat-scripts pattern prefers duplication over a shared lib.
+_TEMPLATE_TYPE_DIRS = {
+    "person": "people", "organization": "organizations",
+    "document": "documents", "event": "events",
+    "transcript": "transcripts", "news": "news",
+    "book": "books", "location": "locations",
+    "finding": "findings",
+}
+
+_REQUIRED_META_FIELDS = ("id", "type", "schema_version", "created")
+
+
+def iter_governance_files():
+    """Yield every .md file under meta/, ordered by path for stable reports."""
+    if not META_DIR.is_dir():
+        return
+    for p in sorted(META_DIR.rglob("*.md")):
+        yield p
+
+
+def _check_template_frontmatter(path, rel, text, compatible_with, schema_block):
+    """Template-specific frontmatter check. YAML can't cleanly parse
+    template placeholders like `{{slug}}` and `{{today}}` — they
+    conflict with YAML's flow-mapping syntax (`{...}`). Use line-based
+    regex checks against the raw frontmatter block instead."""
+    issues = []
+
+    if not text.startswith("---"):
+        issues.append(Issue(rel, "error",
+            "Template missing frontmatter opener '---'"))
+        return issues
+    end = text.find("\n---", 3)
+    if end < 0:
+        issues.append(Issue(rel, "error",
+            "Template frontmatter not closed with '---'"))
+        return issues
+    block = text[3:end]
+    stem = path.stem
+
+    # id: must match the placeholder pattern "{content-dir}/{{slug}}"
+    id_match = re.search(r"^id:\s*(\S.*?)\s*$", block, re.MULTILINE)
+    if not id_match:
+        issues.append(Issue(rel, "error",
+            "Template missing required 'id:' line in frontmatter"))
+    else:
+        expected_dir = _TEMPLATE_TYPE_DIRS.get(stem, stem)
+        expected_id = f"{expected_dir}/{{{{slug}}}}"
+        if id_match.group(1) != expected_id:
+            issues.append(Issue(rel, "error",
+                f"Template id {id_match.group(1)!r} does not match "
+                f"expected placeholder pattern {expected_id!r} "
+                f"(derived from filename stem {stem!r})"))
+
+    # type: must match the filename stem
+    type_match = re.search(r"^type:\s*(\S.*?)\s*$", block, re.MULTILINE)
+    if not type_match:
+        issues.append(Issue(rel, "error",
+            "Template missing required 'type:' line in frontmatter"))
+    elif type_match.group(1) != stem:
+        issues.append(Issue(rel, "error",
+            f"Template type {type_match.group(1)!r} does not match "
+            f"filename stem {stem!r}"))
+
+    # schema_version: must be integer in compatible_with. Templates
+    # hard-code a version (not a placeholder) because scaffolded nodes
+    # inherit the value verbatim.
+    sv_match = re.search(r"^schema_version:\s*(\d+)\s*$", block, re.MULTILINE)
+    if not sv_match:
+        issues.append(Issue(rel, "error",
+            "Template missing required 'schema_version:' line "
+            "(must be an integer, not a placeholder)"))
+    else:
+        sv = int(sv_match.group(1))
+        if sv not in compatible_with:
+            current = schema_block.get("version", "?")
+            issues.append(Issue(rel, "error",
+                f"Template schema_version {sv} not in compatible_with "
+                f"{compatible_with} (current schema version is "
+                f"{current})"))
+
+    # created: required; value is always `{{today}}` placeholder, not
+    # validated as a date (the scaffolder substitutes).
+    if not re.search(r"^created:\s*\S", block, re.MULTILINE):
+        issues.append(Issue(rel, "error",
+            "Template missing required 'created:' line in frontmatter"))
+
+    return issues
+
+
+def _check_governance_doc_frontmatter(path, rel, text, compatible_with, schema_block):
+    """Standard governance-doc frontmatter check via YAML parse."""
+    issues = []
+    fm, _ = parse_frontmatter(text)
+
+    if fm is None:
+        issues.append(Issue(rel, "error",
+            "Missing or malformed YAML frontmatter (meta/ files require "
+            "id / type / schema_version / created)"))
+        return issues
+
+    # Required fields
+    for field in _REQUIRED_META_FIELDS:
+        if field not in fm:
+            issues.append(Issue(rel, "error",
+                f"Missing required frontmatter field {field!r} "
+                f"(meta/ files require "
+                f"{' / '.join(_REQUIRED_META_FIELDS)})"))
+
+    # schema_version value check
+    sv = fm.get("schema_version")
+    if sv is not None:
+        if not isinstance(sv, int) or isinstance(sv, bool):
+            issues.append(Issue(rel, "error",
+                f"schema_version must be an integer; got {sv!r} "
+                f"({type(sv).__name__})"))
+        elif sv not in compatible_with:
+            current = schema_block.get("version", "?")
+            issues.append(Issue(rel, "error",
+                f"schema_version {sv} not in compatible_with "
+                f"{compatible_with} (current schema version is "
+                f"{current}). Migrate per "
+                f"meta/toolkit-notes/schema-migrations/."))
+
+    # id matches path
+    if "id" in fm:
+        expected_id = str(rel).removesuffix(".md")
+        if fm["id"] != expected_id:
+            issues.append(Issue(rel, "error",
+                f"Frontmatter id {fm['id']!r} does not match path "
+                f"{expected_id!r}"))
+
+    return issues
+
+
+def check_governance_files(schema):
+    """Validate every .md under meta/ carries the required frontmatter
+    discipline: id / type / schema_version / created; schema_version in
+    compatible_with; id matches file path.
+
+    Routes templates (under meta/templates/) through a placeholder-aware
+    regex path because their `{{slug}}` / `{{today}}` values can't be
+    YAML-parsed cleanly. Governance docs (everything else under meta/)
+    use standard YAML frontmatter parsing.
+
+    Closes the BACKLOG gap: meta files carried schema_version but had no
+    validation pass. Template drift is the highest-blast-radius scenario
+    — a drifted schema_version in a template propagates to every node
+    scaffolded afterward, and was previously undetectable until someone
+    tried to validate one of those downstream nodes.
+    """
+    issues = []
+    schema_block = schema.get("schema", {}) or {}
+    compatible_with = schema_block.get("compatible_with", [1])
+
+    for path in iter_governance_files():
+        rel = path.relative_to(REPO_ROOT)
+        rel_str = str(rel)
+        is_template = rel_str.startswith("meta/templates/")
+
+        text = path.read_text(encoding="utf-8", errors="replace")
+
+        if is_template:
+            issues.extend(_check_template_frontmatter(
+                path, rel, text, compatible_with, schema_block))
+        else:
+            issues.extend(_check_governance_doc_frontmatter(
+                path, rel, text, compatible_with, schema_block))
+
+    return issues
+
+
+# =============================================================================
 # Node collection
 # =============================================================================
 
@@ -627,6 +808,14 @@ def main():
     # interpreting node content; a checksum mismatch means downstream quote
     # verifications may be validating against altered source material.
     all_issues.extend(check_manifest_checksums())
+
+    # Governance-file validation (check #13). Every .md under meta/ carries
+    # id / type / schema_version / created frontmatter; templates also have
+    # a placeholder-shape id. Runs regardless of --path argument because
+    # governance files apply to all nodes, not a specific target. Template
+    # drift is high-blast-radius (propagates to every node scaffolded
+    # afterward) — catching it here prevents silent downstream corruption.
+    all_issues.extend(check_governance_files(schema))
 
     # Required-instance-file check: every toolkit instance must declare its
     # topic scope in meta/topic/overview.md. Catches fork scenarios where
