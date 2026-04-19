@@ -676,19 +676,54 @@ caught a test-prose-token injection (1/1 unmatched = 100% = ERROR).
 Person Corroboration regeneration across the layout change was
 clean.
 
-#### F.2c — Nimitz encounter pilot  ⏸ AFTER F.2b
+#### F.2c — Nimitz encounter pilot  ✅ DONE (2026-04-19)
 
-First event node end-to-end. `/events/2004-nimitz-encounter` —
-encounter kind, multi-observer (Fravor, Dietrich, Princeton, FLIR1),
-with research artifact populated from the archived Fravor written-
-testimony source. Will register the remaining Nimitz-cluster broken-
-link stubs. Hard rule: one node per session.
+First end-to-end event node through Phase I → II → III under the F.2b
+encounter renderer. `/events/2004-nimitz-encounter` built at iteration
+i1 from a single archived primary source (Fravor's 2023 written
+testimony):
 
-### F.3 — transcript  ⏸ PENDING (design anchored 2026-04-19)
+- `event_intrinsic`: date, location, weather, 5 instruments (Aegis
+  SPY-1, AN/APG-73, FLIR pod, visual, pilot HUD)
+- `context_extrinsic`: display_title, primary_source_url
+- `description`: 3-paragraph prose grounded in source vocabulary
+- 7 participants (Fravor, Dietrich, Underwood, Princeton Aegis operator,
+  VFA-41, USS Princeton, USS Nimitz)
+- 9 timeline entries chronologically ordered
+- 3 corroboration items (Dietrich testimonial, USS Princeton
+  instrumented, FLIR1 video documentary)
+- 12 entities_referenced
+- 1 naming_quirk (Lue → Luis; alias-of-record, 2 source instances)
+- 5 research_gaps, 3 rumors (Underwood as FLIR1 pilot; "Southern
+  California" location; November 14 exact date)
+- `quotes: []`, `claims: []` — encounter renderer emits no Key Testimony
+  / What-This-Establishes section, so evidentiary content flows through
+  structured surfaces (description + timeline + participants +
+  corroboration) rather than verbatim quotes
+
+All pipeline stages green:
+  validate-research.py  0 errors / 2 warnings (both exempt timeline cells)
+  build-from-research.py  0 errors + post-build validate clean
+  review-coverage.py  0 / 0 (Coverage / Boundary / Stub-linking / OQ dedup)
+
+**Pilot finding absorbed (pre-F.3 hardening — memory + contributor
+policy).** User-driven scope revision on check #16 resolution policy.
+i0 shipped with 4 check #16 warnings initially rationalized as
+"legitimate synthesis vocabulary." Corrected to the durable contributor
+policy captured in `feedback_check16_warnings_must_resolve.md`:
+every warning on free-prose synthesis fields (`description`,
+`background`, `uap_relevance`, `credibility_notes`) needs real
+resolution — source-match rewrite or promotion to structured
+evidentiary data. Timeline-cell cosmetic voice-swap warnings exempt.
+i1 drove prose-field warnings to zero; 2 timeline-cell warnings
+remain under the scoped exemption. Pre-F.2c roadmap anchored at
+commit 305407d; policy propagation followed in the prompts/build.md
+Phase I Step 12 refresh (commit f9bad12).
+
+### F.3 — transcript  🟡 IN PROGRESS (F.3a done; F.3b/c pending)
 
 Two kinds after the post-Step-D revision (`hearing`, `other`). Design
-pass completed in the F.2c session post-commit (2026-04-19); next
-session picks up implementation with the two decisions below locked.
+pass completed in the F.2c session post-commit (2026-04-19).
 
 **Decision 1: `derived_from` pointer — auto-populate.**
 When the transcript frontmatter carries `derived_from` (path to the
@@ -732,20 +767,98 @@ only when a hearing aggregates 5+ witnesses' divergences.
 
 **F.3 sub-phase decomposition** (mirrors F.1a/b/c and F.2a/b/c):
 
-- **F.3a** — schema + template + validator + scaffolder. Schema delta
-  adds `material_differences` conditional key on hearing-kind transcript
-  artifacts; new `material_differences_entry` shape + divergence-class
-  vocabulary + cross-artifact quote-ref validation. `derived_from` /
-  `source_medium` already in schema — no changes needed there.
-- **F.3b** — Phase II renderer. Publication Record auto-populate from
-  frontmatter (both kinds); Speakers + Key Passages (both kinds);
-  Material Differences (hearing only) with cross-artifact quote
-  resolution.
-- **F.3c** — pilot. `/transcripts/2023-07-26-house-fravor` — companion
-  transcript to the already-built Fravor written-testimony document.
-  First test of cross-artifact Material Differences resolution;
-  stenographic PDF already archived at
-  `sources/government/congress-gov-house-hearing-transcript-20230726.pdf`.
+#### F.3a — schema + template + validator + scaffolder  ✅ DONE (2026-04-19)
+
+Schema, validator, scaffolder, template, and smoke-fixture
+groundwork for hearing-transcript `material_differences` plus a
+generic cross-artifact quote-ref resolver. Shipped in commit
+`9217693`:
+
+- `meta/schema.yaml` — `material_differences` conditional key
+  (`required_when_target_node_type_in: [transcript]` +
+  `required_when_target_node_kind_in: [hearing]`);
+  `material_differences_entry` shape with 5-value
+  `divergence_class` enum (elaboration / contradiction / omission /
+  clarification / qa-addition); cross-artifact `written_ref`
+  (`{artifact, quote_id}`) + intra-artifact `oral_ref` (quote-id
+  string); optional `note` (contributor synthesis). Invariants block
+  extended with three new entries.
+- `scripts/validate-research.py` — `TRANSCRIPT_KIND_REQUIRED_SECTION` +
+  `VALID_DIVERGENCE_CLASS` constants; target_kind read extended to
+  transcript target-type; transcript-kind dispatch block mirroring
+  the event-kind pattern. New generic
+  `resolve_cross_artifact_quote_ref()` helper + `_load_cross_artifact()`
+  cache (kept type-agnostic; reusable by Step E.3's deferred
+  cross-node propagation work). New `check_material_differences()`
+  helper. Check #16 extended via `_gather_material_diff_source_tokens()`
+  + special-case branch in `check_prose_drift` so
+  `material_differences[].note` scans against the UNION of the
+  written_ref's cross-artifact quote source + the oral_ref's
+  intra-artifact quote source (per the F.3 design).
+- `scripts/research-scaffold.py` — `KIND_SECTIONS_BY_TYPE` nested dict
+  replaces the former single-type `EVENT_KIND_SECTION`; `read_target_kind`
+  generalized to cover transcripts. transcript.hearing scaffolds
+  `material_differences: []`; transcript.other scaffolds no
+  kind-specific section.
+- `meta/templates/transcript.md` — Material Differences columns
+  aligned to the design shape (Topic / Class / Written Quote / Oral
+  Quote / Note) with per-column guidance.
+- `tests/smoke-fixtures/` — new subdirectory with pre-built YAML
+  fixtures (cross-artifact-doc.yaml, cross-artifact-trans.yaml,
+  source.txt). `tests/smoke.sh` extended: cleanup trap handles
+  manifest backup + fixture source-file; two new blocks exercise
+  (a) scaffolder transcript-kind dispatch for hearing + other,
+  (b) end-to-end cross-artifact resolver fixture standing up a
+  temporary archived manifest entry with real sha256. Smoke fixture
+  count 23 → 27.
+
+Negative-path verification (not in smoke; tested during audit):
+nonexistent referenced artifact, non-dict `written_ref`, unknown
+`oral_ref` quote_id, invalid `divergence_class`, and note drift each
+fire the expected error/warning with a clear message.
+
+**Scope deferral absorbed to BACKLOG.** Transcript top-level
+`description` field scanning by check #16 deliberately NOT added in
+F.3a — blocked on F.3b's renderer design settling whether
+`description` maps to `## Summary`, a new `## Description` section,
+or a new `summary` artifact field replacing it. BACKLOG entry
+"Transcript top-level description — check #16 prose scoping blocked
+on F.3b renderer" documents the decision. Until resolved,
+`material_differences[].note` is the only check #16 coverage on
+transcript artifacts.
+
+#### F.3b — Phase II renderer  ⏸ NEXT
+
+Extend `build-from-research.py` with transcript support. Per-kind
+dispatch:
+
+- Both kinds: Publication Record (auto-populated from `derived_from` +
+  `source_medium` frontmatter per F.3 Decision 1), Summary, Speakers,
+  Key Passages (verbatim block-quote + verification-block pairs from
+  `quotes[]`).
+- Hearing only: Material Differences table rendered from
+  `material_differences[]` — Topic / Class columns from entry fields;
+  Written Quote and Oral Quote cells show excerpted text + anchor
+  link to the source node's Key Passages section (not full verbatim,
+  which lives in each artifact's Key Passages); Note from entry.
+
+`review-coverage.py` extension: `SUPPORTED_TYPES` gains `transcript`;
+the four checks (Coverage / Boundary / Stub-linking / OQ dedup)
+generalize — Coverage needs a path for material_differences entries
+(both written_ref excerpt and oral_ref excerpt present in rendered
+body).
+
+Synthetic-fixture pilot to prove the renderer before F.3c.
+
+#### F.3c — Fravor hearing-transcript pilot  ⏸ AFTER F.3b
+
+`/transcripts/2023-07-26-house-fravor` — companion transcript to the
+already-built Fravor written-testimony document. First real test of
+cross-artifact Material Differences resolution against
+`documents/written-testimony-fravor-2023`'s existing quotes.
+Stenographic PDF already archived at
+`sources/government/congress-gov-house-hearing-transcript-20230726.pdf`.
+One node per session — hard rule.
 
 ### F.4 — media  ⏸ PENDING
 
