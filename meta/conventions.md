@@ -74,16 +74,20 @@ Eliminating the prose layer eliminates the surface. Other nodes that
 cite facts from a document link to the document and reference the
 specific Key Passage — no intermediate paraphrase exists to drift.
 
-**Synthesis nodes** (person, organization, event, finding, news,
-book, location) CAN carry structured claim-like sections when the
-node's analytical purpose requires them:
+**Synthesis nodes** (person, organization, event, finding, location)
+CAN carry structured claim-like sections when the node's analytical
+purpose requires them:
 
 - `Claim Inventory` on whistleblower person nodes (claim → document → status)
 - `Key Testimony` + `What The Hearing Established` on hearing event nodes
-- `What The Article Established` on news nodes
-- `What The Book States` on book nodes
 - `What This Establishes` on finding nodes
 - `Corroboration` on eyewitness person / encounter event nodes
+
+News articles and books are `document` nodes (kind `non-gov-doc`, doc_form
+`article` or `book`). They carry no claims layer — their evidentiary
+content is the verbatim Key Passages. Credibility analysis of the
+author/publisher lives on the author's person node or the publisher's
+organization node, not on the document.
 
 In those contexts, claim entries are contributor-written synthesis and
 must be anchored to verbatim quotes via `sources[].quote_ref` with

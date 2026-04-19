@@ -55,8 +55,8 @@ RESEARCH_DIR = REPO_ROOT / "research"
 RUMORS_TYPES = {"person", "organization", "event", "location"}
 TYPE_DIRS = {
     "person": "people", "organization": "organizations", "document": "documents",
-    "event": "events", "transcript": "transcripts", "news": "news",
-    "book": "books", "location": "locations", "finding": "findings",
+    "event": "events", "transcript": "transcripts", "media": "media",
+    "location": "locations", "finding": "findings",
 }
 
 REQUIRED_TOP_LEVEL_KEYS = [
@@ -79,7 +79,8 @@ VALID_RUMOR_STATUSES = {
     "primary-source-disputed"
 }
 VALID_ENTITY_TYPES = {
-    "person", "organization", "document", "event", "location", "finding"
+    "person", "organization", "document", "event", "transcript",
+    "media", "location", "finding"
 }
 VALID_STATUS = {"active", "archived"}
 VALID_ITERATION_TRIGGERS = {

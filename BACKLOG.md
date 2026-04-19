@@ -132,41 +132,30 @@ the split pattern — future check modules will follow the same approach.
 
 ---
 
-### Validator scope expansion to meta files
+### Validator scope expansion to meta files — ✅ RESOLVED 2026-04-17 (commit 30b7fc3)
 
-**Issue.** `validate.py` scans only `CONTENT_DIRS` (the 9 content node
-types). Meta files — `meta/conventions.md`, `meta/sources-access.md`,
-`meta/topic/research-queue.md`, `meta/topic/overview.md`,
-`meta/topic/addenda/*.md`, `meta/toolkit-notes/*.md`, and all 9
-`meta/templates/*.md` — carry `schema_version: 1` frontmatter but are
-never checked for it. The discipline is half-enforced: if someone
-creates a new meta file without `schema_version` (or with a drifted
-value), nothing catches it.
+Check #13 `check_governance_files()` in `scripts/validate.py` walks
+`meta/` recursively and enforces the governance-file frontmatter
+discipline exactly as proposed in the original entry:
 
-**Why it matters.** Meta files govern the entire repository's
-interpretation. Drift in a template silently propagates to every node
-scaffolded afterward. Drift in `conventions.md` frontmatter is low
-impact but inconsistent with the repo-wide discipline. The Step A/B/C
-work established `schema_version` as a universal required field; the
-validator should enforce that universally, not just on content nodes.
+- Every `.md` under `meta/` must carry `id / type / schema_version /
+  created`
+- `schema_version` must appear in `schema.compatible_with`
+- `id` must match the file path
+- Templates are routed through a placeholder-aware regex check because
+  their `{{slug}}` / `{{today}}` values aren't YAML-parseable cleanly
+- No `type`-specific section requirements for meta files
 
-**Proposed scope.** Add a "governance-file validation" pass to
-`validate.py` (or as a sibling `check-governance.py` if the monolithic
-validator is being split per the prior backlog item). The pass:
+Entry retained as audit trail through ~2026-07 (~3 months); then
+delete with a note in `meta/toolkit-notes/roadmap.md`'s history if
+useful or drop silently. The roadmap's Step A/B/C section already
+captures the high-level scope; this entry's resolution needs no
+further roadmap note.
 
-- Walks meta/ recursively for `.md` files with frontmatter
-- Requires `id`, `type`, `schema_version`, `created` fields
-- Validates `schema_version` value against `schema.compatible_with`
-  (same check as content nodes)
-- Validates `id` matches file path (same check)
-- Does NOT require `type`-specific sections (meta files have no schema
-  type entry; they're governance docs, not structured nodes)
-
-Could be scoped narrower if warranted — e.g., enforce only on
-`meta/templates/` which have the highest blast radius.
-
-**Surfaced.** Step A/B/C audit → follow-up assessment 2026-04-17
-(P3). Deferred at that time in favor of B-series bug fixes.
+**Original surface.** Step A/B/C audit → follow-up assessment
+2026-04-17 (P3). Deferred at that time in favor of B-series bug fixes.
+**Shipped.** commit 30b7fc3 ("Add check #13 — governance-file
+frontmatter validation"), 2026-04-17.
 
 ---
 
@@ -193,19 +182,26 @@ scripts), untested regressions compound.
 1. **Immediate**: `tests/help-check.sh` — calls `--help` on every
    script in `scripts/`; confirms exit 0 and no Python traceback.
    Catches argparse regressions, syntax errors, and import failures.
-   **Shipped 2026-04-17.** 12/12 scripts pass. Referenced from
+   **Shipped 2026-04-17.** 13/13 scripts pass. Referenced from
    `CLAUDE.md` §5.
 2. **Next**: fixture-based smoke tests — one scaffold per node type
    with known-good flags; validate.py exits clean on the scaffold;
    scaffold is deleted. A single `tests/smoke.sh` runs the whole
-   set.
+   set. **Shipped 2026-04-17** (commit f5760c0); updated 2026-04-18
+   with media/article/book/social-post/transcript-other fixtures
+   post-source-taxonomy-consolidation. 23/23 passing.
 3. **Eventually**: unit tests for specific check functions in
    `validate.py` (quote normalization, checksum computation,
-   verification-block parsing). These are the highest-leverage
-   unit tests because the check logic is where correctness matters
-   most.
+   verification-block parsing, `evaluate_condition` parser). These
+   are the highest-leverage unit tests because the check logic is
+   where correctness matters most.
 4. **Continuous**: a pre-commit hook (or CI equivalent) that runs
    help-check + smoke + validate.py before any commit lands.
+   **Shipped 2026-04-18** (`tests/pre-commit.sh`). Chains
+   help-check + smoke + validate.py + validate-research.py +
+   build-state.py --check + audit-schedule.py --overdue. Install
+   instructions in-file; not auto-installed (git-hook installation
+   is explicit opt-in).
 
 The first two are small, script-level, and low-risk. Unit tests and
 CI are bigger structural commitments.
@@ -214,7 +210,10 @@ CI are bigger structural commitments.
 after P1 smoke test caught a real latent bug, demonstrating that the
 lack of automated testing is not theoretical.
 
-**Progress.** Step 1 shipped 2026-04-17. Steps 2–4 remain open.
+**Progress.** Steps 1, 2, and 4 shipped. Step 3 (unit tests) remains
+open — deferred until a check function actually needs bug-hunting or
+the validator monolith refactor (separate BACKLOG item) makes
+function-level testing more natural.
 
 ---
 
@@ -261,11 +260,11 @@ built through the full Phase I → II pipeline.
 
 ---
 
-### Extend build-from-research.py to all 9 node types
+### Extend build-from-research.py to all 8 node types
 
 **Issue.** `scripts/build-from-research.py` ships in D.3 supporting
-**document** nodes only. Person, organization, event, transcript, news,
-book, location, and finding node regeneration is not yet implemented.
+**document** nodes only. Person, organization, event, transcript, media,
+location, and finding node regeneration is not yet implemented.
 Attempting to run the script on one of those types exits with
 "currently supports ['document'] only".
 
@@ -292,9 +291,12 @@ conventions:
 - **event** (hearing / encounter) — Participants split by
   evidentiary category, Timeline, Key Testimony, Corroboration.
 - **transcript** — Publication Record, Summary, Speakers, Key Passages,
-  Material Differences (hearing only).
-- **news / book** — Publication Record, Summary, What The Article/Book
-  Established, Authors, Key Passages, Credibility Notes.
+  Material Differences (hearing only). Kind `other` covers interview,
+  podcast, broadcast, documentary, press conference, conference talk.
+- **media** — Media Summary, Description, Provenance, Key Passages
+  (optional — verbatim speech / visible text), Media Versioning
+  (when derivation_of set). Four kinds: photo, video, audio,
+  imagery-other.
 - **location** — Ownership Timeline, UAP-Scope Activity, Relationships.
 - **finding** — Timeline, Primary Source Basis, What This Establishes,
   Entities Involved.
@@ -397,3 +399,93 @@ until enough data exists to tune.
 
 **Surfaced.** D.0 design review (2026-04-17). Deferred in favor of
 shipping Phase I tooling.
+
+---
+
+### Schema-descriptive keys not yet schema-driven in the validator
+
+**Issue.** Post-source-taxonomy-consolidation (2026-04-18) the schema
+grew three new descriptive keys. Initially none were read by
+`validate.py`; this entry tracks which have since been wired and which
+remain documentation-only.
+
+Status as of 2026-04-18 hardening pass:
+
+1. **`conditionally_required`** (document + media) — **✅ SHIPPED**
+   `validate.py` now reads `types.{T}.conditionally_required` via the
+   `check_conditionally_required()` dispatcher. Condition grammar:
+   `<field> == <literal>` and `<field> is set`. Keys route to a
+   frontmatter-field check (lowercase names) or a section-presence
+   check (Title Case names) by shape. Malformed expressions surface
+   as validator errors. Future conditionals land as schema edits
+   alone; the two live rules (archival_status when doc_form=book;
+   Media Versioning when derivation_of is set) are now schema-driven.
+2. **`optional_sections`** (media) — **still descriptive-only**
+   `media: [Media Versioning]`. Read by no script. The Media
+   Versioning section escapes `required_sections` enforcement because
+   it's not listed there; the `optional_sections` entry is
+   informational. Promoting it to enforced behavior means making
+   unknown H2 sections a warning unless they appear in
+   `required_sections`, `optional_sections`, or a corpus addendum.
+   Modest scope; useful mostly as a forcing function against drift
+   where contributors invent ad-hoc sections.
+3. **`may_be_empty: true`** on `media.section_rules.Key Passages` —
+   **still descriptive-only, likely redundant**
+   Read by no script. The existing `requires_quote_verification: true`
+   rule already permits zero-quote sections (it only errors when
+   quotes exist without verification blocks), so the flag mirrors
+   current default behavior. It becomes meaningful only if a future
+   variant of `requires_quote_verification` starts demanding
+   at-least-one quote — at which point the negation (`may_be_empty`
+   means "do not demand") would actually gate behavior. Until then,
+   safe to keep as documentation.
+
+**Proposed remaining scope.** Honor `optional_sections` as an
+allowlist for an unknown-section warning pass. Defer `may_be_empty`
+until there's a concrete case for it. The `conditionally_required`
+dispatcher's condition grammar can also grow (`in <list>`,
+`<field> != <value>`) on-demand when a new conditional needs it —
+no preemptive extension.
+
+**Surfaced.** Source-taxonomy consolidation double-check (2026-04-18).
+**Partial resolution.** `conditionally_required` dispatcher shipped
+(2026-04-18 hardening pass).
+
+---
+
+### Cross-node reference existence not validated (derivation_of / derived_from) — ✅ RESOLVED 2026-04-18
+
+**Issue (original).** The source-taxonomy consolidation added two
+optional cross-node pointers on frontmatter:
+
+- `media.derivation_of` — path to a parent media node when this media
+  is an edited / cropped / re-encoded / metadata-scrubbed derivative.
+- `transcript.derived_from` — path to the underlying media or document
+  node this transcript renders.
+
+Neither pointer was validated for existence. A media node with
+`derivation_of: /media/does-not-exist` or a transcript with
+`derived_from: /media/typo` passed validation cleanly.
+
+**Resolution.** `scripts/validate.py` grew a module-level constant
+`NODE_PATH_FRONTMATTER_FIELDS = {"media": ["derivation_of"],
+"transcript": ["derived_from"]}`. The internal-link-resolution pass
+now reads frontmatter values from the declared fields on each node
+type, normalizes them to leading-slash form, and feeds them into the
+same existence-check that body `[`/path`]` links already flow through.
+Missing targets register in the broken-link registry as backlog (not
+errors), matching body-link stub behavior.
+
+Smoke-test coverage: `tests/smoke.sh` transcript-other fixture now
+uses `--derived-from /documents/__smoke-doc-gov` to lock in the
+resolves-clean case. Broken-path case covered by manual test during
+implementation; a negative-case smoke fixture would require a cleanup-
+ordered broken-link that's tolerable during validation — deferred
+because the behavior is already exercised in the positive direction
+and the code path is straightforward.
+
+**Promote to schema-driven if.** The field list grows past ~5
+entries. Today: two entries, flat-scripts pattern applies.
+
+**Surfaced.** Source-taxonomy consolidation double-check (2026-04-18).
+**Shipped.** 2026-04-18 hardening pass (this commit).

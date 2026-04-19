@@ -33,7 +33,7 @@ SOURCES_DIR = REPO_ROOT / "sources"
 
 CONTENT_DIRS = [
     "people", "organizations", "documents", "events",
-    "transcripts", "news", "books", "locations", "findings",
+    "transcripts", "media", "locations", "findings",
 ]
 
 URL_PATTERN = re.compile(r"https?://[^\s\|\)>`\]]+")

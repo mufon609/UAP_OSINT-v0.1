@@ -71,13 +71,15 @@ scripts/
 sources/
   manifest.yaml             source-archival index (YAML; sha256-checksummed)
   government/               government primary sources (PDFs, HTML)
-  news/                     news article HTML snapshots
+  news/                     news article HTML snapshots (news articles
+                            are stored here as source material; content
+                            nodes live under /documents/)
   social/                   social media post snapshots
   transcripts/              downloaded YouTube / broadcast transcripts
   video/                    video-adjacent content
 
 people/ organizations/ documents/ events/ transcripts/
-news/ books/ locations/ findings/
+media/ locations/ findings/
                             content nodes (human-readable narrative)
 
 research/                   research artifacts (machine-readable atomic
@@ -88,7 +90,7 @@ prompts/                    paste-ready session prompts
 
 **Forking for a different topic.** Delete `meta/topic/` and everything
 under `/people/`, `/organizations/`, `/documents/`, `/events/`,
-`/transcripts/`, `/news/`, `/books/`, `/locations/`, `/findings/`,
+`/transcripts/`, `/media/`, `/locations/`, `/findings/`,
 `/research/`, and empty `sources/manifest.yaml`. Everything else is
 topic-neutral toolkit. See `AGENT.md` for fork procedure details.
 
@@ -99,14 +101,21 @@ topic-neutral toolkit. See `AGENT.md` for fork procedure details.
 - **person** — named individuals (4 archetypes: eyewitness,
   whistleblower, institutional-actor, reporter)
 - **organization** — institutions (3 kinds: gov, gov-contractor, private)
-- **document** — primary-source documents (2 kinds: gov-doc,
-  non-gov-doc; plus `doc_form` metadata)
+- **document** — text-native primary-source documents (2 kinds:
+  gov-doc, non-gov-doc; plus `doc_form` metadata — article, book,
+  testimony, memo, letter, contract, social-post, etc.). News
+  articles and books live here, distinguished by `doc_form`.
 - **event** — discrete events (2 kinds: hearing, encounter)
-- **transcript** — testimony or interview transcripts (2 kinds:
-  hearing, interview)
-- **news** — news articles as publication records
-- **book** — published books as publication records (never evidence
-  of claims)
+- **transcript** — verbatim text records of speech sources (2 kinds:
+  hearing, other — `other` covers interview, podcast, broadcast,
+  documentary, press conference, conference talk, deposition, etc.).
+  Each transcript optionally points to an underlying media or
+  document node via `derived_from`.
+- **media** — non-text-native primary sources (4 kinds: photo, video,
+  audio, imagery-other). Source files (UAP footage, photographs,
+  satellite imagery, document scans pre-OCR) with metadata,
+  provenance, and optional verbatim Key Passages for legible text or
+  audible speech.
 - **location** — non-institutional physical sites
 - **finding** — cross-entity patterns that span 3+ nodes
 

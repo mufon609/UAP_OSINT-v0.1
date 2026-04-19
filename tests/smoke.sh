@@ -80,21 +80,36 @@ test_scaffold "org gov"            organization --kind gov            --slug __s
 test_scaffold "org gov-contractor" organization --kind gov-contractor --slug __smoke-org-contractor
 test_scaffold "org private"        organization --kind private        --slug __smoke-org-private
 
-# --- document: both kinds ---
-test_scaffold "document gov-doc"     document --kind gov-doc     --form testimony --slug __smoke-doc-gov
-test_scaffold "document non-gov-doc" document --kind non-gov-doc --form article   --slug __smoke-doc-non-gov
+# --- document: both kinds + article + book doc_form (covers the post-news/book
+#     collapse paths: article is the former `news` case, book is the former
+#     `book` case with archival_status required) ---
+test_scaffold "document gov-doc"         document --kind gov-doc     --form testimony --slug __smoke-doc-gov
+test_scaffold "document non-gov-doc"     document --kind non-gov-doc --form article   --slug __smoke-doc-non-gov
+test_scaffold "document book"            document --kind non-gov-doc --form book      --archival-status excerpts-only --slug __smoke-doc-book
+test_scaffold "document social-post"     document --kind non-gov-doc --form social-post --slug __smoke-doc-social
 
 # --- event: both kinds ---
 test_scaffold "event hearing"   event --kind hearing   --slug __smoke-event-hearing
 test_scaffold "event encounter" event --kind encounter --slug __smoke-event-encounter
 
-# --- transcript: both kinds ---
-test_scaffold "transcript hearing"   transcript --kind hearing   --slug __smoke-trans-hearing
-test_scaffold "transcript interview" transcript --kind interview --slug __smoke-trans-interview
+# --- transcript: both kinds (hearing + other, where `other` covers the former
+#     `interview` case and broader speech sources). The `other` fixture
+#     exercises --derived-from pointing to the already-scaffolded doc-gov
+#     fixture so the frontmatter-pointer existence check has a resolves-clean
+#     case in the regression set. ---
+test_scaffold "transcript hearing" transcript --kind hearing --slug __smoke-trans-hearing
+test_scaffold "transcript other"   transcript --kind other   --source-medium podcast --derived-from /documents/__smoke-doc-gov --slug __smoke-trans-other
+
+# --- media: all 4 kinds + a derivative to exercise the DERIVATIVE
+#     conditional-block filter and the derivation_of → Media Versioning
+#     validator check ---
+test_scaffold "media photo"         media --kind photo         --slug __smoke-media-photo
+test_scaffold "media video"         media --kind video         --slug __smoke-media-video
+test_scaffold "media audio"         media --kind audio         --slug __smoke-media-audio
+test_scaffold "media imagery-other" media --kind imagery-other --slug __smoke-media-imagery
+test_scaffold "media derivative"    media --kind video --derivation-of /media/__smoke-media-video --slug __smoke-media-deriv
 
 # --- single-variant types ---
-test_scaffold "news"     news     --slug __smoke-news
-test_scaffold "book"     book     --slug __smoke-book
 test_scaffold "location" location --slug __smoke-location
 test_scaffold "finding"  finding  --slug __smoke-finding --entities "/people/a,/organizations/b,/events/c"
 

@@ -59,8 +59,7 @@ Every claim is either **confirmed from a linked primary source** or
 | `document` | Primary source documents |
 | `event` | Discrete events — hearings, encounters, disclosures |
 | `transcript` | Interview or testimony transcripts linked to source |
-| `news` | News articles documented as publication records |
-| `book` | Published books documented as publication records |
+| `media` | Photos, videos, audio, and other non-text-native primary sources |
 | `location` | Non-institutional physical sites |
 | `finding` | Cross-entity patterns spanning 3+ nodes (see `meta/conventions.md`) |
 

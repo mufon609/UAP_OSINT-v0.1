@@ -180,7 +180,17 @@ types:
       - unverified-existence
     frontmatter:
       required: [id, type, schema_version, status, kind, doc_form, created]
-      optional: [corpus]  # e.g., "aawsap-dird" — loads meta/addenda/{corpus}.md
+      optional: [corpus, archival_status]
+      # corpus: e.g., "aawsap-dird" — loads meta/addenda/{corpus}.md
+      # archival_status: applies to non-gov-doc doc_forms where the full
+      #   text may not be archived locally. Required when doc_form is
+      #   `book`; optional for `article` and other non-gov-doc forms.
+    archival_status_values:
+      - full-text-archived
+      - excerpts-only
+      - not-archived
+    conditionally_required:
+      archival_status: "doc_form == book"
     kinds:
       gov-doc:
         description: "Government-originated document"
@@ -198,7 +208,7 @@ types:
           - Associated Nodes
           - Open Questions / Research Gaps
       non-gov-doc:
-        description: "Non-government document — book excerpt, article, private filing"
+        description: "Non-government document — article, book, blog post, social-media post, private filing, personal correspondence"
         required_sections:
           - Document Summary
           - Description
@@ -207,6 +217,9 @@ types:
           - Open Questions / Research Gaps
     doc_form_values:
       # Extensible. Validator warns on unknown values but does not error.
+      # Document nodes are text-native only — video/photo/audio primary
+      # sources move to the `media` type. Transcriptions of speech from
+      # media sources live on transcript nodes.
       - technical-report
       - testimony
       - memo
@@ -216,10 +229,11 @@ types:
       - assessment
       - bio
       - complaint
-      - video
       - article
-      - book-excerpt
+      - book
+      - social-post
       - filing
+      - database-extract
       - other
     section_rules:
       Key Passages: {requires_quote_verification: true}
@@ -269,9 +283,18 @@ types:
     status_values: [primary-source-confirmed, partial]
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
+      optional: [source_medium, derived_from]
+      # source_medium: free-text metadata for the underlying source format
+      #   (e.g., stenographic-pdf, youtube, podcast, broadcast, documentary,
+      #   press-conference, conference-talk, deposition, radio, streaming).
+      #   Not a controlled vocabulary — extensible as new formats appear.
+      # derived_from: path to the underlying media or document node this
+      #   transcript renders (e.g., /media/gimbal-video). A transcript is a
+      #   text rendering of speech from a primary source; the source lives
+      #   on a separate media or document node.
     kinds:
       hearing:
-        description: "Verbatim hearing testimony (congressional, deposition)"
+        description: "Verbatim record of a formal proceeding — congressional hearing, deposition. Material-differences dimension applies (written-vs-oral)."
         required_sections:
           - Publication Record
           - Summary
@@ -280,8 +303,8 @@ types:
           - Material Differences
           - Associated Nodes
           - Open Questions / Research Gaps
-      interview:
-        description: "Broadcast, podcast, or print interview"
+      other:
+        description: "Verbatim record of any non-hearing speech source — interview, podcast, broadcast, documentary, film, conference talk, press conference, radio, streaming"
         required_sections:
           - Publication Record
           - Summary
@@ -293,46 +316,61 @@ types:
       Key Passages: {requires_quote_verification: true}
       Associated Nodes: {auto_generated: true}
 
-  # --- NEWS ---------------------------------------------------------------
-  news:
-    status_values: [published]
+  # --- MEDIA --------------------------------------------------------------
+  # Non-text-primary primary sources — photos, videos, audio, imagery.
+  # Media nodes hold file metadata + provenance + contributor-authored
+  # Description (synthesis, labeled). They MAY have verbatim Key Passages
+  # when the source contains extractable speech (audio/video) or visible
+  # text (legible text in a photo, on-screen text in a video frame).
+  # Heavy speech content (full interview, full cockpit audio) spins up a
+  # separate transcript node that points to the media via `derived_from`.
+  media:
+    status_values:
+      - primary-source-confirmed
+      - declassified-full
+      - declassified-partial
+      - classified
+      - unverified-existence
     frontmatter:
-      required: [id, type, schema_version, status, created]
+      required: [id, type, schema_version, status, kind, created]
+      optional: [corpus, derivation_of]
+      # derivation_of: path to a parent media node when this media is an
+      #   edited, cropped, re-encoded, or metadata-scrubbed derivative
+      #   (e.g., DoD's official Gimbal release vs. a longer leaked
+      #   version). When set, the Media Versioning section is required.
+    kinds:
+      photo:
+        description: "Still photograph"
+      video:
+        description: "Motion video — with or without audio"
+      audio:
+        description: "Audio-only recording"
+      imagery-other:
+        description: "Satellite imagery, radar returns, infrared, maps, diagrams, document scans pre-OCR, screenshots"
     required_sections:
-      - Publication Record
-      - Summary
-      - What The Article Established
-      - Authors
+      - Media Summary
+      - Description
+      - Provenance
       - Key Passages
-      - Credibility Notes
       - Associated Nodes
       - Open Questions / Research Gaps
-    section_rules:
-      Authors: {split: [Confirmed, Flagged]}
-      Key Passages: {requires_quote_verification: true}
-      Associated Nodes: {auto_generated: true}
-
-  # --- BOOK ---------------------------------------------------------------
-  book:
-    status_values: [published, announced-not-released, out-of-print]
-    frontmatter:
-      required: [id, type, schema_version, status, archival_status, created]
-    archival_status_values:
-      - full-text-archived
-      - excerpts-only
-      - not-archived
-    required_sections:
-      - Publication Record
-      - Summary
-      - What The Book States
-      - Authors
-      - Credibility Notes
-      - Associated Nodes
-      - Open Questions / Research Gaps
+    optional_sections:
+      - Media Versioning
+      # Required when derivation_of is set — explains what changed between
+      # the parent and this derivative. Omit when this is the canonical /
+      # original.
+    conditionally_required:
+      "Media Versioning": "derivation_of is set"
     section_rules:
       Key Passages:
-        # Optional section — populate only when archival_status supports it
         requires_quote_verification: true
+        may_be_empty: true
+        # Key Passages on media capture verbatim speech (audio/video) or
+        # verbatim visible text (text legible in photo or on-screen in
+        # video). The Location field in the verification block uses
+        # timestamp for audio/video and in-frame location (quadrant,
+        # coordinate, element) for imagery. May be empty when the source
+        # has no extractable text or speech.
       Associated Nodes: {auto_generated: true}
 
   # --- LOCATION -----------------------------------------------------------
@@ -555,7 +593,7 @@ types:
       - "resolution (naming_quirks) in [preserve-as-sic-in-quotes, use-canonical, disputed, unresolved]"
       - "audit_status in [verified, flagged, superseded, contradicted, needs-reaudit]"
       - "rumor status in [not-primary-source-established, primary-source-identified, primary-source-disputed]"
-      - "entity entity_type in [person, organization, document, event, location, finding]"
+      - "entity entity_type in [person, organization, document, event, transcript, media, location, finding]"
 
       # Iterations log
       - "iterations[].id values are sequential (i0, i1, i2, ...) with no gaps"

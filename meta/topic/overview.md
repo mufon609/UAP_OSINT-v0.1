@@ -40,7 +40,8 @@ whistleblower testimony, and the disclosure pipeline.*
 - Documented incidents (Nimitz 2004, Virginia Beach 2014–2015, etc.)
   with multi-source corroboration potential
 - Journalism and book publications that enter the public-record
-  discourse (as publication records, not as evidence of their claims)
+  discourse (stored as `document` nodes with `doc_form: article` or
+  `doc_form: book`; publication records, not evidence of their claims)
 
 ### Out of scope
 

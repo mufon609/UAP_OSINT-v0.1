@@ -92,8 +92,8 @@ RESEARCH_DIR = REPO_ROOT / "research"
 
 TYPE_DIRS = {
     "person": "people", "organization": "organizations", "document": "documents",
-    "event": "events", "transcript": "transcripts", "news": "news",
-    "book": "books", "location": "locations", "finding": "findings",
+    "event": "events", "transcript": "transcripts", "media": "media",
+    "location": "locations", "finding": "findings",
 }
 # Matches build-from-research.py SUPPORTED_TYPES. Expand in lockstep.
 SUPPORTED_TYPES = {"document"}

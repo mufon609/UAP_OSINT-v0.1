@@ -31,7 +31,7 @@ CLAUDE_MD = REPO_ROOT / "CLAUDE.md"
 
 # (dir, display, grouping mode)
 #  archetype-table  — person nodes (Status + Archetype columns)
-#  kind-table       — organization / document / event / transcript (Status + Kind columns)
+#  kind-table       — organization / document / event / transcript / media (Status + Kind columns)
 #  status-list      — simple list with status suffix
 NODE_DIRS = [
     ("people", "People", "archetype-table"),
@@ -39,8 +39,7 @@ NODE_DIRS = [
     ("events", "Events", "kind-table"),
     ("documents", "Documents", "kind-table"),
     ("transcripts", "Transcripts", "kind-table"),
-    ("news", "News", "status-list"),
-    ("books", "Books", "status-list"),
+    ("media", "Media", "kind-table"),
     ("locations", "Locations", "status-list"),
     ("findings", "Findings", "status-list"),
 ]

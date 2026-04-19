@@ -19,11 +19,12 @@ behind each node. They capture:
 - Verbatim-quotable passages from primary sources (`quotes`)
 - Atomic claims with per-claim source attribution (`claims`) — **on
   synthesis artifacts only** (person, organization, event, finding,
-  news, book, location). Document artifacts carry no claims layer by
-  design; their evidentiary content lives entirely in `quotes`. See
-  `meta/conventions.md` "Document nodes vs synthesis nodes" for the
-  rationale.
-- Entities referenced (person, org, event, doc, location, finding)
+  location). Document, transcript, and media artifacts carry no
+  claims layer by design; their evidentiary content lives entirely
+  in `quotes`. See `meta/conventions.md` "Document nodes vs synthesis
+  nodes" for the rationale.
+- Entities referenced (person, org, event, doc, transcript, media,
+  location, finding)
 - Naming quirks in the sources (typos, alt spellings)
 - Research gaps — open investigation threads
 - Rumors (on person / org / event / location artifacts) — widely-

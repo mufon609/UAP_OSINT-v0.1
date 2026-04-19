@@ -49,7 +49,7 @@ RUMORS_TYPES = {"person", "organization", "event", "location"}
 # All valid target-node types
 VALID_TARGET_TYPES = {
     "person", "organization", "document", "event",
-    "transcript", "news", "book", "location", "finding",
+    "transcript", "media", "location", "finding",
 }
 
 # Map target-node type → content directory
@@ -59,8 +59,7 @@ TYPE_DIRS = {
     "document": "documents",
     "event": "events",
     "transcript": "transcripts",
-    "news": "news",
-    "book": "books",
+    "media": "media",
     "location": "locations",
     "finding": "findings",
 }
@@ -184,7 +183,7 @@ def main():
                         help="Target node: type/slug (e.g., documents/written-testimony-fravor-2023)")
     parser.add_argument("--sources", default="",
                         help="Comma-separated list of primary-source paths relative to sources/ "
-                             "(e.g., government/file.pdf,news/article.html). Optional — can be "
+                             "(e.g., government/file.pdf,video/gimbal.mp4). Optional — can be "
                              "added during Phase I.")
     parser.add_argument("--force", action="store_true",
                         help="Overwrite existing research artifact")

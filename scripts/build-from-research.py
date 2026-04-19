@@ -56,8 +56,8 @@ ASSOCIATE = SCRIPTS_DIR / "associate.py"
 # Content-node type ↔ directory (mirrors research-scaffold.py / validate-research.py)
 TYPE_DIRS = {
     "person": "people", "organization": "organizations", "document": "documents",
-    "event": "events", "transcript": "transcripts", "news": "news",
-    "book": "books", "location": "locations", "finding": "findings",
+    "event": "events", "transcript": "transcripts", "media": "media",
+    "location": "locations", "finding": "findings",
 }
 
 # Types this script can regenerate (D.3 scope)

@@ -22,7 +22,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 CONTENT_DIRS = [
     "people", "organizations", "documents", "events",
-    "transcripts", "news", "books", "locations", "findings",
+    "transcripts", "media", "locations", "findings",
 ]
 
 # Display order of groups in the Associated Nodes section
@@ -32,8 +32,7 @@ GROUP_ORDER = [
     "Events",
     "Documents",
     "Transcripts",
-    "News",
-    "Books",
+    "Media",
     "Locations",
     "Findings",
 ]
@@ -44,8 +43,7 @@ DIR_TO_GROUP = {
     "events": "Events",
     "documents": "Documents",
     "transcripts": "Transcripts",
-    "news": "News",
-    "books": "Books",
+    "media": "Media",
     "locations": "Locations",
     "findings": "Findings",
 }

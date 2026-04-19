@@ -223,23 +223,306 @@ claims-layer-free architecture.
 
 ---
 
-## Step E — Iteration tooling, cross-node updates  ⏸ DEFERRED
+## Post-Step D — Source-taxonomy consolidation  ✅ DONE
 
-Append-only research artifacts demand iteration tooling:
+Design-level reconsideration of the node-type taxonomy under the
+statements-only (verbatim-only) discipline established by the
+prior claims-layer elimination. Driven by two observations:
 
-- Bumping `last_iteration` (i0 → i1 → …) and generating the
-  `iterations[]` entry
-- Cross-node updates: when a claim in one artifact changes the
-  evidentiary picture for another node, propagate the reference
-  (`corroborated_by`, `superseded_by`, `contradicted_by`)
-- Audit-cadence enforcement plumbing: `audit-schedule.py` is
-  operational (per-entry staleness detection shipped with D.1). What
-  remains is wiring `--overdue` into a pre-commit / CI hook so stale
-  artifacts block commits past the grace period
+- `news` and `book` node types carried contributor-synthesis sections
+  (`What The Article Established`, `What The Book States`) — the same
+  drift surface the claims-layer correction removed from document
+  nodes. Structurally, a news article and a book are just non-gov-doc
+  documents; their publication-event nature is metadata, not a
+  separate node shape.
+- Primary-source format coverage: the repository will archive FOIA
+  documents, written testimony, congressional transcripts, news
+  articles, books, photos, videos, podcasts, YouTube talks,
+  documentaries, press conferences, social-media posts, and imagery
+  (satellite, radar, infrared). The pre-consolidation schema handled
+  text-native sources cleanly and bolted non-text sources onto
+  `document` via `doc_form: video` — the wrong shape for photos
+  (no text to extract) and for videos with pilot audio (speech
+  belongs on a transcript).
 
-Deferred until after Step D stabilizes and the iteration pressure
-becomes real (likely after ~10 nodes have been through Phase I→II→III
-and some of them are ready for i1).
+Three evidentiary primitives drove the partition:
+
+| Primitive | Node type |
+|---|---|
+| Verbatim text from a text-native source | `document` |
+| Verbatim speech rendered as text from a speech-native source | `transcript` |
+| Metadata + provenance of a non-text artifact (plus optional verbatim speech / visible-text extracts) | `media` |
+
+Changes landed:
+- `meta/schema.yaml` — `news` and `book` types removed; `document`
+  absorbs both via `doc_form: article | book` + optional
+  `archival_status` frontmatter (required when `doc_form == book`).
+  Doc_form vocabulary: `video` removed (now `media`); `social-post`
+  and `database-extract` added; `book-excerpt` renamed to `book`.
+  `media` type added with four kinds (photo, video, audio,
+  imagery-other) and required sections (Media Summary, Description,
+  Provenance, Key Passages, Associated Nodes, Open Questions) plus
+  optional `Media Versioning` (required when `derivation_of` is set).
+  `transcript` revised: `interview` kind → `other`; optional
+  `source_medium` and `derived_from` frontmatter.
+- `meta/templates/` — `news.md` and `book.md` deleted; `media.md`
+  added; `document.md` and `transcript.md` updated.
+- Directory layout — `news/` and `books/` deleted (both empty);
+  `media/` created.
+- Scripts — `new.py`, `validate.py`, `build-state.py`, `manifest.py`,
+  `research-scaffold.py`, `validate-research.py`, `build-from-research.py`,
+  `review-coverage.py`, `associate.py` all updated for the new
+  type/directory set and the conditional frontmatter checks
+  (archival_status on book, Media Versioning on derivative media).
+- `tests/smoke.sh` — news/book fixtures replaced with document
+  article + document book + document social-post; media fixtures
+  added for all four kinds; transcript fixture switched to kind
+  `other`. 22/22 passing (up from 18/18).
+- Docs — `AGENT.md`, `README.md`, `meta/topic/overview.md` refreshed.
+
+Node-type count: 9 → 8 (news + book removed, media added). All
+pipeline stages green after the consolidation: validate.py,
+validate-research.py, review-coverage.py, build-state.py --check,
+help-check.sh, smoke.sh.
+
+Phase II renderers for non-document types (media, transcript, and the
+others listed in BACKLOG "Extend build-from-research.py to all 9 node
+types") will follow the new taxonomy when built — one type per
+increment, as that BACKLOG item specifies.
+
+---
+
+## Step E — Operational tooling (split)
+
+The original "Step E" block bundled three unrelated concerns with
+different blockers and different shovel-readiness. Split into three
+sub-steps so each can move independently.
+
+### E.1 — Pre-commit / CI hook + audit-schedule wiring  ✅ DONE (2026-04-18)
+
+Shipped in the 2026-04-18 hardening pass.
+
+- `tests/pre-commit.sh` — chains `help-check.sh` + `smoke.sh` +
+  `validate.py` + `validate-research.py` + `build-state.py --check`
+  + `audit-schedule.py --overdue` into a single gate; non-zero exit
+  on any failure. Install instructions in-file (contributor-driven
+  install; no auto-wire — git-hook installation rewrites local git
+  state and is explicit opt-in).
+- `audit-schedule.py --overdue` turned out to be already operational
+  (discovered during the hardening pass). Only the hook chain was
+  missing; pre-commit.sh closes that gap.
+- Side effect: closed the "Testing infrastructure" BACKLOG item's
+  step 4 (pre-commit chain) and the audit-cadence half of the
+  original Step E bundle.
+
+### E.2 — Iteration tooling (i0 → i1 mechanics)  ⏸ MID-TERM
+
+Blocked on: first content node reaching the i1 boundary. Today the
+two document nodes are at i5 (Fravor) and i1 (Graves); but each of
+those iterations was hand-authored in the research YAML with a
+matching hand-appended `iterations[]` entry. The hand path works at
+current volume; automation begins to pay off around ~5 artifacts at
+i1+.
+
+Scope when it ships:
+
+- A script (`scripts/iterate.py` — name provisional) that bumps
+  `last_iteration`, appends a structured `iterations[]` entry
+  (trigger, summary, entries_added, entries_modified), and optionally
+  re-runs build-from-research → review-coverage.
+- Prompt companion: `prompts/iterate.md` (a referenced-but-unshipped
+  prompt is already listed in `prompts/README.md`).
+
+### E.3 — Cross-node update propagation  ⏸ DEFERRED
+
+Blocked on: multiple artifacts with overlapping evidentiary claims.
+Can't build propagation tooling until there's a propagation case to
+build against. Likely after ~10 nodes through the full pipeline.
+
+Scope when it ships:
+
+- When a claim in artifact A changes the evidentiary picture for
+  artifact B (claim A supersedes, contradicts, or corroborates a
+  claim in B), propagate the reference bidirectionally
+  (`corroborated_by`, `superseded_by`, `contradicted_by` on both
+  sides, with pointers that resolve across artifacts).
+- Validator coverage: broken cross-artifact refs fail validation,
+  same shape as the existing intra-artifact `corroborated_by` /
+  `superseded_by` / `contradicted_by` resolution check in
+  `validate-research.py`.
+
+---
+
+## Step F — Phase II per-type renderers  ⏸ PENDING (one sub-phase at a time)
+
+Promoted from BACKLOG ("Extend build-from-research.py to all 8 node
+types"). Currently `build-from-research.py` supports `document` only;
+seven other types still require hand-authored nodes, reintroducing
+the fabrication surface the layered process exists to close.
+
+**Sub-phase template.** Each F sub-phase mirrors D.3 → D.5 shape:
+
+1. **Design pass** — resume the per-node-type analysis conversation
+   (paused after the news/book collapse). What sections survive
+   under the statements-only discipline? What archetype-specific
+   structure does the renderer need? What metadata does the artifact
+   gain?
+2. **Schema delta** — revise `meta/schema.yaml` per the design pass.
+   Update template, scaffolder, validator.
+3. **Renderer implementation** — add type-specific section renderers
+   to `build-from-research.py`. Pre-flight validates artifact;
+   post-build validates node; invokes `associate.py`.
+4. **Pilot** — build one node end-to-end through Phase I → II → III.
+   All validators green before the sub-phase is considered shipped.
+5. **Absorb pilot findings** — any doc / template / renderer
+   adjustments surfaced by the pilot (same pattern as D.5 → D.6).
+
+**One type per sub-phase. One pilot per type.** Same hard rule that
+produced the 2026-04-17 pilot failure postmortem.
+
+### F.1 — person  ⏸ NEXT after E.1
+
+Most content refers to people; this is the foundational type.
+
+Design pass recovers the paused conversation:
+- Under the statements-only discipline, do archetype-specific
+  sections (Corroboration / Claim Inventory / Program Involvement /
+  Publication Record) collapse into one `## Context` with archetype-
+  selected subsections, or stay as four structurally-distinct sections?
+- Non-experience assertions by eyewitnesses (Fravor on Elizondo /
+  AATIP) — do they get their own Claim Inventory section, or stay
+  in Key Statements?
+
+Pilot candidate: `/people/david-fravor` — eyewitness archetype; the
+Nimitz encounter is already scaffolded upstream; his written
+testimony is already a built document node.
+
+### F.2 — event  ⏸ PENDING
+
+Two kinds (hearing, encounter). Design pass addresses:
+- Hearings — can `What The Hearing Established` survive as a
+  synthesis section, or does it collapse into verbatim Key Testimony
+  + cross-references? (Parallel to the news/book `What The Article
+  Established` collapse.)
+- Encounters — Corroboration section maps cleanly to multi-eyewitness
+  observation; renderer needs to read cross-references to the people
+  who observed.
+
+Pilot candidate: `/events/2004-nimitz-encounter` — first-cluster
+anchor event; multi-eyewitness (Fravor, Dietrich, Underwood);
+primary sources across documents, transcripts, and media.
+
+### F.3 — transcript  ⏸ PENDING
+
+Two kinds after the post-Step-D revision (`hearing`, `other`).
+Design pass:
+- `derived_from` pointer — does the renderer auto-populate the
+  Publication Record's "Underlying Media Node" row from the
+  frontmatter, or leave it as a contributor-filled field?
+- Material Differences section on hearings — what's the artifact
+  shape for the written-vs-oral divergence entries?
+
+Pilot candidate: `/transcripts/2023-07-26-house-fravor` — companion
+transcript to the already-built Fravor written-testimony document.
+
+### F.4 — media  ⏸ PENDING
+
+Shipped in the source-taxonomy consolidation as a type but with no
+renderer. Design pass:
+- Key Passages on media has two extraction modes (audio/video speech
+  + visible text in imagery) — does the artifact distinguish them in
+  the `quote.source` shape, or merge?
+- Media Versioning (conditional on `derivation_of`) — artifact shape
+  for the parent/derivative comparison rows.
+
+Pilot candidate: `/media/flir1-video` or `/media/gimbal-declassified`
+— canonical DoD video releases with documented leaked/official
+derivation history.
+
+### F.5 — organization  ⏸ PENDING
+
+Under the statements-only discipline, organizations don't speak —
+officials speak for them. Design pass:
+- Key Personnel section is a cross-reference surface; What Is
+  Confirmed / Timeline rows need source attribution per row.
+- `gov-contractor` sub-kind has Primary Contracts section — artifact
+  shape for contract rows (number, value, period, counterparties).
+
+Pilot candidate: `/organizations/aaro` — current-state entity with
+extensive primary-source documentation.
+
+### F.6 — location  ⏸ PENDING
+
+Inanimate hub. Minimal synthesis; mostly navigational.
+
+Pilot candidate: `/locations/skinwalker-ranch` — only non-
+institutional location currently on the build queue.
+
+### F.7 — finding  ⏸ PENDING (last)
+
+Only node type where contributor analytical prose survives post-
+statements-only. Landed last so the discipline around the other
+seven types is fully stable before the one synthesis surface is
+ratified.
+
+Design pass: the synthesis-section hard-anchoring rules (every
+sentence in What This Establishes must be verbatim-quote-anchored to
+an entry in an artifact's quote list, enforced mechanically).
+
+No pilot candidate yet — will emerge from cross-entity patterns
+observed during G (content population).
+
+---
+
+## Step G — Content population  ⏸ INTERLEAVED WITH F
+
+The toolkit's purpose. Each F sub-phase's pilot is a G node; additional
+G nodes in the same cluster follow once the renderer is stable.
+
+**First cluster — 2004 Nimitz encounter.** Structurally the tightest
+target: one event, three pilots, one primary media artifact, companion
+transcripts, and one already-built document (Fravor written testimony).
+Cluster-scope first-pass targets:
+
+- `/events/2004-nimitz-encounter` (F.2 pilot)
+- `/people/david-fravor` (F.1 pilot)
+- `/people/alex-dietrich` (follow-on; same archetype)
+- `/people/chad-underwood` (follow-on)
+- `/transcripts/2023-07-26-house-fravor` (F.3 pilot)
+- `/media/flir1-video` (F.4 pilot)
+
+Cluster-close when the ring validates cleanly against schema,
+cross-references resolve in both directions, and the research-queue
+broken-link registry for the cluster has drained.
+
+**Second cluster — candidate.** Either: 2015 Virginia Beach encounters
+(parallel eyewitness cluster, Graves-anchored) OR a hearing cluster
+(2023-07-26 House Oversight, a known-complete primary-source cluster).
+Picked after Nimitz ships to keep the one-cluster-at-a-time discipline.
+
+G milestones are emergent, not pre-planned. The research queue
+(`meta/topic/research-queue.md`) drives additions after each cluster
+closes.
+
+---
+
+## Architectural threads still open
+
+Two design conversations paused mid-stride; belong under the next F
+sub-phase that touches them.
+
+- **Statements-only discipline across all synthesis nodes.**
+  Post-Step-D removed the claims layer from documents; open question
+  is whether the same discipline extends to the surviving
+  claim-like sections on synthesis nodes (Claim Inventory,
+  What The Hearing Established, What The Book States — the last
+  one already resolved by collapsing book into document). Each F
+  sub-phase's design pass reopens this for its type.
+- **Person archetype structural collapse.** Whether the four
+  archetype-specific sections (Corroboration / Vouching Chain /
+  Program Involvement / Publication Record) collapse into a single
+  `## Context` with archetype-selected subsections. Resolved inside
+  F.1's design pass.
 
 ---
 

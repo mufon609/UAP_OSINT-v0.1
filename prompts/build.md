@@ -9,10 +9,10 @@ This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
 
 Phase II scope (D.3): **document-type nodes only**. Regeneration of
-person, organization, event, transcript, news, book, location, and
-finding nodes from research artifacts is tracked in `BACKLOG.md`. Until
-those ship, build those node types by hand from their populated
-research artifact, following the conventions in `meta/conventions.md`.
+person, organization, event, transcript, media, location, and finding
+nodes from research artifacts is tracked in `BACKLOG.md`. Until those
+ship, build those node types by hand from their populated research
+artifact, following the conventions in `meta/conventions.md`.
 
 ---
 
@@ -289,8 +289,8 @@ below apply to those contexts:
 ### Step 11. Populate `rumors` (bounded agent task T6, conditional)
 
 **Only when target node type is `person`, `organization`, `event`, or
-`location`.** Document nodes, transcripts, news, books, and findings do
-not carry a rumors section.
+`location`.** Document nodes, transcripts, media, and findings do not
+carry a rumors section.
 
 **Agent task T6:**
 - **Input:** everything populated so far + knowledge of

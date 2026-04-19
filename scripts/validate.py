@@ -9,7 +9,10 @@ Checks:
   4. Confirmed / Flagged subsection splits (Flagged omitted when empty)
   5. Quote verification blocks in sections that require them
   6. Background prose-only (person nodes)
-  7. Internal link resolution (reports broken-link registry as backlog)
+  7. Internal link resolution — body `[`/path`]` links + frontmatter
+     node-path pointers (media.derivation_of, transcript.derived_from)
+     share one existence-check pass. Missing targets register in the
+     broken-link registry as backlog (not errors).
   8. Open Questions formatting (- [ ] and - [x] DONE YYYY-MM-DD: ...)
   9. Table cell word budget (soft warning)
  10. Finding cross-reference consistency (entities listed must link back)
@@ -26,6 +29,17 @@ Checks:
      Errors on: file missing on disk, missing sha256 field when required,
      checksum mismatch (silent corruption / substitution). Run once per
      validator invocation, before the per-node checks.
+ 13. Governance-file frontmatter — every .md file under meta/ must carry
+     id / type / schema_version / created; schema_version must be in
+     schema.compatible_with; id must match file path. Templates routed
+     through a placeholder-aware regex path because their `{{slug}}` /
+     `{{today}}` values can't be YAML-parsed cleanly.
+ 14. conditionally_required dispatcher — schema-driven enforcement of
+     `types.{T}.conditionally_required` entries. Condition grammar:
+     `<field> == <literal>`, `<field> is set`. Keys route to frontmatter-
+     field presence+vocabulary checks (lowercase names) or section-
+     presence checks (Title Case names). Replaces earlier hardcoded
+     archival_status / Media Versioning rules.
 
 Usage:
   validate.py                    # all nodes
@@ -55,10 +69,24 @@ MANIFEST_PATH = SOURCES_DIR / "manifest.yaml"
 
 CONTENT_DIRS = [
     "people", "organizations", "documents", "events",
-    "transcripts", "news", "books", "locations", "findings",
+    "transcripts", "media", "locations", "findings",
 ]
 
 LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
+
+# Frontmatter fields that carry node-path semantics. When set on a node
+# of the listed type, the value is checked for target existence the same
+# way body `[`/path`]` links are — missing targets register in the
+# broken-link registry (backlog), not as errors. Consistent with how
+# body-link stubs are tracked today.
+#
+# Kept as a module-level constant rather than reading a schema annotation
+# to match the flat-scripts pattern. Promote to schema-driven if the
+# list grows past ~5 fields.
+NODE_PATH_FRONTMATTER_FIELDS = {
+    "media":      ["derivation_of"],   # parent media node
+    "transcript": ["derived_from"],    # underlying media or document node
+}
 
 
 # =============================================================================
@@ -423,6 +451,113 @@ def compute_required_sections(fm, type_spec):
 
 
 # =============================================================================
+# conditionally_required dispatcher
+#
+# Reads `types.{T}.conditionally_required` from schema.yaml as a dict of
+# {key: condition-expression}. When the condition is true against the
+# node's frontmatter, the key is enforced. Key routing:
+#   - lowercase_with_underscores → frontmatter field (required presence;
+#     value validated against `{key}_values` on type_spec when present)
+#   - Title Case With Spaces     → H2 section name (required presence)
+#
+# Supported condition grammar (kept minimal on purpose; extend only when
+# a new conditional genuinely needs it):
+#   <field> == <literal>      equality check; literal is \w-separated token
+#   <field> is set            field is present and truthy in frontmatter
+#
+# The dispatcher replaces two earlier hardcoded checks (archival_status
+# when doc_form is book; Media Versioning section when derivation_of is
+# set) so future conditionals can land as schema edits alone. Malformed
+# condition strings surface as validator errors so schema drift is loud.
+# =============================================================================
+
+
+_CONDITION_IS_SET = re.compile(r"^\s*(\w+)\s+is\s+set\s*$")
+_CONDITION_EQ = re.compile(r"^\s*(\w+)\s*==\s*([\w-]+)\s*$")
+
+# Frontmatter field vs section name is disambiguated by shape: field names
+# are lowercase with underscores / hyphens (no spaces, no capitals);
+# section names are human-readable (any space or capital triggers section
+# routing). Matches the schema style already in use.
+_FIELD_KEY_RE = re.compile(r"^[a-z][a-z0-9_-]*$")
+
+
+def evaluate_condition(condition, fm):
+    """Evaluate a condition string from schema conditionally_required
+    against frontmatter `fm`. Returns True/False.
+
+    Raises ValueError if the expression doesn't match the supported
+    grammar — malformed conditions should surface loudly to the
+    validator, not silently pass.
+    """
+    if not isinstance(condition, str):
+        raise ValueError(f"condition must be a string; got {type(condition).__name__}")
+
+    m = _CONDITION_IS_SET.match(condition)
+    if m:
+        field = m.group(1)
+        return bool(fm.get(field))
+
+    m = _CONDITION_EQ.match(condition)
+    if m:
+        field, value = m.group(1), m.group(2)
+        return fm.get(field) == value
+
+    raise ValueError(
+        f"unsupported condition expression {condition!r} — "
+        f"grammar: '<field> == <literal>' | '<field> is set'"
+    )
+
+
+def check_conditionally_required(fm, type_spec, text, rel):
+    """Enforce `type_spec.conditionally_required`. Returns list of Issue.
+
+    For each (key, condition) pair:
+      1. Evaluate condition; if false, skip.
+      2. If key is a frontmatter-field name (lowercase): require the
+         field is set. If a `{key}_values` vocabulary exists on the
+         type_spec, additionally require the value is in that list.
+      3. If key is an H2 section name: require the section exists in the
+         node body.
+    """
+    issues = []
+    cr = type_spec.get("conditionally_required") or {}
+    h2_sections = None  # lazy — only extract when first section check fires
+
+    for key, condition in cr.items():
+        try:
+            active = evaluate_condition(condition, fm)
+        except ValueError as e:
+            issues.append(Issue(rel, "error",
+                f"schema conditionally_required[{key!r}]: {e}"))
+            continue
+        if not active:
+            continue
+
+        if _FIELD_KEY_RE.match(key):
+            # Frontmatter-field route: require presence, then vocabulary.
+            if not fm.get(key):
+                issues.append(Issue(rel, "error",
+                    f"Frontmatter missing {key!r} (required when {condition!r})"))
+                continue
+            values_key = f"{key}_values"
+            valid_values = type_spec.get(values_key) or []
+            if valid_values and fm[key] not in valid_values:
+                issues.append(Issue(rel, "error",
+                    f"Invalid {key} {fm[key]!r}. Valid: {valid_values}"))
+        else:
+            # Section-name route: require H2 presence.
+            if h2_sections is None:
+                h2_sections = extract_h2_sections(text)
+            if key not in h2_sections:
+                issues.append(Issue(rel, "error",
+                    f"Required section '## {key}' missing "
+                    f"(required when {condition!r})"))
+
+    return issues
+
+
+# =============================================================================
 # Per-node validation orchestration
 # =============================================================================
 
@@ -493,13 +628,32 @@ def validate_node(path, schema):
             issues.append(Issue(rel, "error",
                 f"Invalid kind '{fm['kind']}'. Valid: {valid}"))
 
-    # Document form
+    # Document form — value-vocabulary check (unconditional; orthogonal to
+    # the conditionally_required dispatch below which handles required-
+    # presence by condition).
     if node_type == "document":
         valid_forms = type_spec.get("doc_form_values", [])
         df = fm.get("doc_form")
         if df and valid_forms and df not in valid_forms:
             issues.append(Issue(rel, "warn",
                 f"Unknown doc_form '{df}' (not in schema list; add if established)"))
+        # archival_status value vocabulary — enforced whenever set, whether
+        # or not doc_form triggers the conditionally_required branch below.
+        # Covers the case where archival_status is set on a non-book
+        # doc_form (uncommon but not forbidden).
+        if fm.get("archival_status"):
+            archival = fm["archival_status"]
+            valid_archival = type_spec.get("archival_status_values", [])
+            if valid_archival and archival not in valid_archival:
+                issues.append(Issue(rel, "error",
+                    f"Invalid archival_status {archival!r}. "
+                    f"Valid: {valid_archival}"))
+
+    # conditionally_required dispatch — schema-driven; handles
+    # archival_status-when-book (document) and Media Versioning section-
+    # when-derivation_of-set (media) from schema.yaml. Future
+    # conditionals land as schema edits only.
+    issues.extend(check_conditionally_required(fm, type_spec, text, rel))
 
     # Required sections
     required_sections = compute_required_sections(fm, type_spec)
@@ -541,8 +695,18 @@ def validate_node(path, schema):
     # Verbatim quote verification — critical check (fix from 2026-04-17 pilot failure)
     issues.extend(check_verbatim_quotes(path, text, rel))
 
-    # Internal link resolution
+    # Internal link resolution — body links + frontmatter node-path
+    # pointers share one existence-check pass and one broken-link
+    # registry. Missing targets are backlog, not errors (matches existing
+    # body-link behavior for unbuilt stubs).
     links = extract_links(text)
+    for field in NODE_PATH_FRONTMATTER_FIELDS.get(node_type, []):
+        value = fm.get(field)
+        if value:
+            # Normalize to leading-slash form so the broken-link registry
+            # key shape matches body-link entries. Accept both "/type/slug"
+            # and "type/slug" on input.
+            links.add("/" + str(value).lstrip("/"))
     broken = set()
     for link in links:
         target = REPO_ROOT / link.lstrip("/")
@@ -604,9 +768,8 @@ TEMPLATES_DIR = META_DIR / "templates"
 _TEMPLATE_TYPE_DIRS = {
     "person": "people", "organization": "organizations",
     "document": "documents", "event": "events",
-    "transcript": "transcripts", "news": "news",
-    "book": "books", "location": "locations",
-    "finding": "findings",
+    "transcript": "transcripts", "media": "media",
+    "location": "locations", "finding": "findings",
 }
 
 _REQUIRED_META_FIELDS = ("id", "type", "schema_version", "created")

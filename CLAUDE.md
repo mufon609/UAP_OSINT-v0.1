@@ -66,11 +66,7 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 
 *No nodes yet.*
 
-### News (0)
-
-*No nodes yet.*
-
-### Books (0)
+### Media (0)
 
 *No nodes yet.*
 

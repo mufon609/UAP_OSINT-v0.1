@@ -10,6 +10,11 @@ created: {{today}}
      addendum (e.g., aawsap-dird). The addendum adds required sections.
 corpus: {{corpus}}
 -->
+<!-- ARCHIVAL_STATUS: REQUIRED when doc_form is `book`; optional for
+     `article` and other non-gov-doc forms. Valid values: full-text-archived,
+     excerpts-only, not-archived.
+archival_status: {{archival_status}}
+-->
 ---
 
 # {{display_name}}
@@ -51,7 +56,8 @@ corpus: {{corpus}}
 <!-- Author info for document nodes lives in document_intrinsic.authors_per_document
      on the research artifact and renders as the Author row in Document Summary.
      No separate Authors section needed — the D.5 pilot confirmed the redundancy.
-     For node types where Authors is load-bearing (news, book), see those templates. -->
+     Applies to all document kinds and doc_forms (gov-doc technical reports
+     and testimony; non-gov-doc article, book, social-post, filing, etc). -->
 
 <!-- Document nodes have no "What This Establishes" / claims section by design.
      The document IS the fact record. Evidentiary content is verbatim source
@@ -73,7 +79,9 @@ corpus: {{corpus}}
      summarized "claims" were eliminated; the source's own words are the
      fact layer. Populate only for status values that support verified
      quotes (primary-source-confirmed or declassified). Never populate
-     for `unverified-existence`. -->
+     for `unverified-existence`. For doc_form=book with archival_status of
+     `excerpts-only`, populate only the excerpts that have been publicly
+     archived. -->
 
 ---
 

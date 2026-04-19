@@ -5,6 +5,17 @@ schema_version: 1
 status: {{status}}
 kind: {{kind}}
 created: {{today}}
+<!-- SOURCE_MEDIUM: uncomment and set for non-hearing transcripts to record
+     the underlying source format. Free-text; extensible. Common values:
+     stenographic-pdf, youtube, podcast, broadcast, documentary, film,
+     press-conference, conference-talk, deposition, radio, streaming.
+source_medium: {{source_medium}}
+-->
+<!-- DERIVED_FROM: uncomment and set when this transcript is a text
+     rendering of a specific media or document primary source. Path to
+     the underlying node (e.g., /media/gimbal-video).
+derived_from: {{derived_from}}
+-->
 ---
 
 # {{display_name}}
@@ -27,13 +38,15 @@ created: {{today}}
 | Event Node |  |
 | Companion Written Testimony |  |
 <!-- /KIND -->
-<!-- KIND: interview -->
-| Outlet |  |
-| Program / Show |  |
+<!-- KIND: other -->
+| Outlet / Platform |  |
+| Program / Show / Venue |  |
 | Date |  |
-| Host(s) |  |
-| Interviewee |  |
+| Host(s) / Interviewer(s) |  |
+| Primary Speaker(s) |  |
 | Format |  |
+| Source Medium |  |
+| Underlying Media Node |  |
 | Source URL |  |
 | Transcript Verified |  |
 | Citation Style |  |
@@ -59,9 +72,10 @@ created: {{today}}
 ## Key Passages
 
 <!-- Block quotes with quote verification blocks. Hearing transcripts
-     typically cite by line number; interview transcripts cite by
-     timestamp or page number. Include a Location field in the
-     verification block. -->
+     typically cite by line number; other-kind transcripts cite by
+     timestamp (for audio/video sources) or page number (for printed
+     transcript sources). Include a Location field in the verification
+     block. -->
 
 ---
 

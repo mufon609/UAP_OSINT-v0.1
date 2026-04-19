@@ -13,7 +13,7 @@ layers:
 
 1. **Node layer** (human-readable narrative) — `/people/`,
    `/organizations/`, `/documents/`, `/events/`, `/transcripts/`,
-   `/news/`, `/books/`, `/locations/`, `/findings/`
+   `/media/`, `/locations/`, `/findings/`
 2. **Research-artifact layer** (machine-readable structured facts) —
    `/research/*.yaml`, one per node; the atomic-claim record backing
    each narrative node
