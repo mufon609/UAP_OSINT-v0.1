@@ -55,6 +55,12 @@ ARCHETYPE_SECTION = {
     "reporter":             "publication_record",
 }
 
+# event kind → kind-specific artifact section
+EVENT_KIND_SECTION = {
+    "hearing":   "witnesses_testimony",
+    "encounter": "corroboration_items",
+}
+
 # All valid target-node types
 VALID_TARGET_TYPES = {
     "person", "organization", "document", "event",
@@ -142,6 +148,28 @@ def infer_format(path):
     }.get(ext, "html")
 
 
+def _read_target_frontmatter(node_type, slug):
+    """Read the target node's frontmatter and return it as a dict (or
+    empty dict on failure). Shared helper used for archetype (person)
+    and kind (event) reads."""
+    path = target_node_file(node_type, slug)
+    if not path.exists():
+        return {}
+    try:
+        text = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return {}
+    if not text.startswith("---"):
+        return {}
+    end = text.find("\n---", 3)
+    if end < 0:
+        return {}
+    try:
+        return yaml.safe_load(text[3:end]) or {}
+    except yaml.YAMLError:
+        return {}
+
+
 def read_target_archetype(node_type, slug):
     """For person target-nodes, read the node's frontmatter to get its
     archetype. Returns None for non-person nodes or if unreadable. Used
@@ -149,23 +177,17 @@ def read_target_archetype(node_type, slug):
     """
     if node_type != "person":
         return None
-    path = target_node_file(node_type, slug)
-    if not path.exists():
+    return _read_target_frontmatter(node_type, slug).get("archetype")
+
+
+def read_target_kind(node_type, slug):
+    """For event target-nodes, read the node's frontmatter to get its
+    kind (hearing / encounter). Returns None for non-event nodes or if
+    unreadable.
+    """
+    if node_type != "event":
         return None
-    try:
-        text = path.read_text(encoding="utf-8", errors="replace")
-    except OSError:
-        return None
-    if not text.startswith("---"):
-        return None
-    end = text.find("\n---", 3)
-    if end < 0:
-        return None
-    try:
-        fm = yaml.safe_load(text[3:end]) or {}
-    except yaml.YAMLError:
-        return None
-    return fm.get("archetype")
+    return _read_target_frontmatter(node_type, slug).get("kind")
 
 
 def build_scaffold(node_type, slug, source_paths, manifest):
@@ -215,6 +237,13 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         artifact["affiliations"] = []
         artifact["relationships"] = []
         artifact["credibility_notes"] = ""
+    # Event-specific universal sections. event_intrinsic carries
+    # kind-conditional metadata (hearing_title / committee / date for
+    # hearings; location_path / date / duration / weather for
+    # encounters). participants is the structured participant list.
+    if node_type == "event":
+        artifact["event_intrinsic"] = {}
+        artifact["participants"] = []
     # Archetype-conditional section on person artifacts. Reads the target
     # node's frontmatter to get its archetype; scaffolds the corresponding
     # empty list. Only one of the four sections is ever scaffolded
@@ -222,6 +251,15 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     archetype = read_target_archetype(node_type, slug)
     if archetype:
         section = ARCHETYPE_SECTION.get(archetype)
+        if section:
+            artifact[section] = []
+    # Kind-conditional section on event artifacts. Reads the target
+    # node's frontmatter to get its kind; scaffolds witnesses_testimony
+    # for hearings or corroboration_items for encounters. Same 1-to-1
+    # pattern as archetype above.
+    kind = read_target_kind(node_type, slug)
+    if kind:
+        section = EVENT_KIND_SECTION.get(kind)
         if section:
             artifact[section] = []
     return artifact

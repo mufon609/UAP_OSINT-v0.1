@@ -95,19 +95,20 @@ created: {{today}}
 
 ---
 
-## What The Hearing Established
+## Witnesses & Testimony
 
-| Claim | Status | Source |
-|---|---|---|
-|  |  |  |
+| Witness | Oath Status | Transcript | Written Testimony |
+|---|---|---|---|
+|  |  |  |  |
 
----
-
-## What The Hearing Did Not Establish
-
-| Claim | Status |
-|---|---|
-|  |  |
+<!-- Cross-reference surface — one row per hearing witness pointing at
+     their transcript and written-testimony nodes. Replaces the prior
+     "What The Hearing Established" synthesis section, which was
+     collapsed in F.2a under the statements-only discipline (same
+     treatment as the news/book collapse in the source-taxonomy
+     consolidation). The evidentiary record of what a witness said is
+     now resolved by following the transcript / document links — no
+     contributor-prose summary layer. -->
 
 ---
 <!-- /KIND -->
@@ -115,11 +116,18 @@ created: {{today}}
 <!-- KIND: encounter -->
 ## Corroboration
 
-| Source | Type | What It Confirms | Node Link |
+| Observer | Type | What It Confirms | Attested In |
 |---|---|---|---|
 |  |  |  |  |
 
-<!-- Type: Instrumented / Testimonial / Government statement -->
+<!-- Observer: person / organization / media path that corroborates
+     (e.g., [`/people/alex-dietrich`], [`/organizations/uss-princeton`],
+     [`/media/flir1-video`]).
+     Type: testimonial / instrumented / government-statement /
+     documentary.
+     What It Confirms: short note describing the corroborating detail.
+     Attested In: the source where this corroboration is documented
+     (e.g., a sources/ path or a witness's testimony document). -->
 
 ---
 <!-- /KIND -->

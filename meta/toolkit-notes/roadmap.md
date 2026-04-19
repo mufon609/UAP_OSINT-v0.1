@@ -579,22 +579,77 @@ tokens → error fires correctly. Drift-restoration test (restoring
 the i0 drift vocabulary): unmatched-token warnings surface each
 drifted word.
 
-### F.2 — event  ⏸ PENDING
+### F.2 — event
 
-### F.2 — event  ⏸ PENDING
+Decomposed into three shippable units (F.2a → F.2c), mirroring the
+F.1 pattern.
 
-Two kinds (hearing, encounter). Design pass addresses:
-- Hearings — can `What The Hearing Established` survive as a
-  synthesis section, or does it collapse into verbatim Key Testimony
-  + cross-references? (Parallel to the news/book `What The Article
-  Established` collapse.)
-- Encounters — Corroboration section maps cleanly to multi-eyewitness
-  observation; renderer needs to read cross-references to the people
-  who observed.
+#### F.2a — schema delta + template + validator + scaffolder  ✅ DONE (2026-04-19)
 
-Pilot candidate: `/events/2004-nimitz-encounter` — first-cluster
-anchor event; multi-eyewitness (Fravor, Dietrich, Underwood);
-primary sources across documents, transcripts, and media.
+Design pass settled the hearing synthesis question via the statements-
+only lens established in the news/book collapse: `What The Hearing
+Established` was a contributor-prose synthesis section that belongs
+in the repository's navigational surface, not its evidentiary surface.
+Replaced with `Witnesses & Testimony` — a cross-reference table
+(witness / oath status / transcript node / written testimony node)
+that routes the investigator to the verbatim record without a
+paraphrase layer.
+
+Changes shipped:
+
+- `meta/schema.yaml`:
+  - hearing kind — `What The Hearing Established` replaced with
+    `Witnesses & Testimony` in required_sections
+  - research-artifact spec gains `event_intrinsic` + `participants`
+    on event artifacts; `witnesses_testimony` conditional on
+    hearing kind; `corroboration_items` extended to also apply to
+    encounter-kind event artifacts (shared entry shape with
+    eyewitness person artifacts)
+  - New entry shapes: `participant_entry`, `witnesses_testimony_entry`
+  - New vocabulary: `VALID_PARTICIPANT_CAPACITY` and
+    `VALID_OATH_STATUS`
+  - Invariants block updated for the new conditional rules
+- `meta/templates/event.md`:
+  - `What The Hearing Established` + `What The Hearing Did Not
+    Establish` sections removed; `Witnesses & Testimony` added
+  - Corroboration column layout fixed per the BACKLOG entry from the
+    F.1c audit: `Observer | Type | What It Confirms | Attested In`
+- `scripts/validate-research.py`:
+  - Target-frontmatter reader generalized (archetype + kind +
+    future expansion)
+  - `EVENT_REQUIRED_KEYS` required on every event artifact
+  - `EVENT_KIND_REQUIRED_SECTION` rule enforces exactly one of
+    witnesses_testimony (hearing) / corroboration_items (encounter)
+  - `check_participants()` and `check_witnesses_testimony()` helpers
+  - `corroboration_items` absent-on-other-archetypes check relaxed
+    to allow encounter events to carry the section
+  - Check #16 PROSE_FIELDS_BY_TYPE and PROSE_ENTRY_FIELDS_BY_TYPE
+    gain event entries
+- `scripts/research-scaffold.py`:
+  - Reads target kind from event node frontmatter
+  - Scaffolds `event_intrinsic = {}` + `participants = []` on every
+    event artifact; kind-conditional section scaffolded correctly
+
+All pre-commit gates green; Fravor person artifact unchanged (no
+regression). Both event kinds scaffold + validate cleanly.
+
+#### F.2b — event renderer in build-from-research.py  ⏸ NEXT
+
+Extends `build-from-research.py` to support `target_node` type
+`event`. Per-section renderers dispatched by kind (hearing vs
+encounter); reuses helpers from F.1b (`_wrap_path`, `sort_by_date`,
+`_render_verification_block`). Also updates the person-node
+Corroboration renderer to match the new column layout from F.2a's
+template change. Review-coverage.py SUPPORTED_TYPES extended to
+include event.
+
+#### F.2c — Nimitz encounter pilot  ⏸ AFTER F.2b
+
+First event node end-to-end. `/events/2004-nimitz-encounter` —
+encounter kind, multi-observer (Fravor, Dietrich, Princeton, FLIR1),
+with research artifact populated from the archived Fravor written-
+testimony source. Will register the remaining Nimitz-cluster broken-
+link stubs. Hard rule: one node per session.
 
 ### F.3 — transcript  ⏸ PENDING
 

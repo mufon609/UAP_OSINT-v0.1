@@ -276,6 +276,17 @@ types:
       Associated Nodes: {auto_generated: true}
 
   # --- EVENT --------------------------------------------------------------
+  # Events are venues / incidents — they don't speak. Witness statements
+  # live on transcript nodes + witness person nodes; documentary evidence
+  # lives on document + media nodes. An event node is a convergence
+  # point tying those nodes together.
+  #
+  # Hearings previously carried `What The Hearing Established` as a
+  # contributor-prose synthesis section. F.2a collapses that into
+  # `Witnesses & Testimony` — a cross-reference table (witness → oath
+  # status → transcript/document nodes) with no synthesis prose.
+  # Parallel to the news/book `What The Article Established` collapse
+  # that shipped in the post-Step-D source-taxonomy consolidation.
   event:
     status_values: [documented, in-progress]
     frontmatter:
@@ -289,7 +300,7 @@ types:
           - Participants
           - Timeline
           - Key Testimony
-          - What The Hearing Established
+          - Witnesses & Testimony
           - Associated Nodes
           - Open Questions / Research Gaps
         participants_structure:
@@ -525,8 +536,12 @@ types:
         # confirms the rendered Timeline table is earliest-first.
       corroboration_items:
         required_when_target_node_archetype_in: [eyewitness]
-        # Other observers of events this person witnessed. Cross-reference
-        # surface; NOT a statement surface. Renders as `## Corroboration`.
+        required_when_target_node_kind_in: [encounter]
+        # Other observers of events this person witnessed (on eyewitness
+        # person artifacts) OR observers of this encounter (on encounter
+        # event artifacts). Same entry shape in both contexts. Cross-
+        # reference surface; NOT a statement surface. Renders as
+        # `## Corroboration`.
       program_involvement:
         required_when_target_node_archetype_in: [institutional-actor]
         # Programs / roles / evidentiary basis. Metadata surface;
@@ -561,6 +576,31 @@ types:
         # `## Credibility Notes` section. For whistleblower archetypes,
         # the Vouching Chain subsection is rendered from `vouching_chain`
         # appended to this section's content.
+      event_intrinsic:
+        required_when_target_node_type_in: [event]
+        # Dict of event-specific metadata. Per-kind conventions:
+        #   hearing:   hearing_title, committee, session, congress_number,
+        #              date, location, chair
+        #   encounter: location_path, date, duration, weather,
+        #              instruments_involved
+        # Every entry is a fact the primary source(s) attest. Renders
+        # into the `## Event Summary` table.
+      participants:
+        required_when_target_node_type_in: [event]
+        # List of event participants. Each entry carries participant_path,
+        # role, capacity (witness-eyewitness / witness-whistleblower /
+        # witness-institutional / committee-member / observer / official /
+        # other), source. Renders as the `## Participants` section with
+        # hearing-kind sub-structure (Witnesses — Eyewitness Testimony /
+        # Whistleblower Testimony / Institutional Testimony / Committee
+        # Members) or flat Confirmed/Flagged table for encounters.
+      witnesses_testimony:
+        required_when_target_node_kind_in: [hearing]
+        # List of hearing witnesses with cross-references to their
+        # transcript and written-testimony nodes. Replaces the prior
+        # `What The Hearing Established` prose section — same evidentiary
+        # content via cross-reference. Renders as the `## Witnesses &
+        # Testimony` table.
 
     # Primary-source list entries
     primary_sources_entry:
@@ -733,6 +773,27 @@ types:
       # flagged: bool (default false); routes to `### Flagged` subsection
       # source: object with path + location
 
+    participant_entry:
+      required: [participant_path, capacity, source]
+      optional: [role, flagged, note]
+      # participant_path: /people/... or /organizations/... path
+      # capacity: one of [witness-eyewitness, witness-whistleblower,
+      #   witness-institutional, committee-member, observer, official,
+      #   other] — drives sub-section routing on hearing-kind events
+      # role: free-text role description at this specific event
+      # flagged: bool (default false); routes to `### Flagged`
+      # source: object with path + location
+
+    witnesses_testimony_entry:
+      required: [witness_path, oath_status, source]
+      optional: [transcript_node, written_testimony_node, note]
+      # witness_path: /people/... of the witness
+      # oath_status: sworn | unsworn | affirmation | unknown
+      # transcript_node: /transcripts/... cross-reference (if built)
+      # written_testimony_node: /documents/... cross-reference (if built)
+      # source: object with path + location — typically the hearing
+      #   transcript or witness record attesting the oath status
+
     naming_quirk_entry:
       required: [observed, canonical, location, source_path, resolution]
       optional: [note]
@@ -792,6 +853,8 @@ types:
       - "corroboration_items[].observation_type in [testimonial, instrumented, government-statement, documentary]"
       - "program_involvement[].evidentiary_basis in [primary-source, sworn-testimony, on-record, self-attested, secondary]"
       - "program_involvement[].confidence in [high, medium, low]"
+      - "participants[].capacity in [witness-eyewitness, witness-whistleblower, witness-institutional, committee-member, observer, official, other]"
+      - "witnesses_testimony[].oath_status in [sworn, unsworn, affirmation, unknown]"
 
       # Iterations log
       - "iterations[].id values are sequential (i0, i1, i2, ...) with no gaps"
@@ -805,6 +868,9 @@ types:
       - "publication_record section present iff target_node archetype == reporter"
       - "vouching_chain section present iff target_node archetype == whistleblower"
       - "background / uap_relevance / affiliations / relationships / credibility_notes sections present iff target_node type == person"
+      - "event_intrinsic and participants sections present iff target_node type == event"
+      - "witnesses_testimony section present iff target_node type == event AND kind == hearing"
+      - "corroboration_items section present iff target_node archetype == eyewitness OR (type == event AND kind == encounter)"
 
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema

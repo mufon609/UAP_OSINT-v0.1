@@ -104,6 +104,23 @@ PERSON_REQUIRED_KEYS = [
     "credibility_notes",  # prose; renders as `## Credibility Notes`
 ]
 
+# Event-artifact-specific required keys. Event structure differs
+# meaningfully by kind (hearing vs encounter); kind-conditional sections
+# are layered on top of these universal event requirements.
+EVENT_REQUIRED_KEYS = [
+    "event_intrinsic",    # dict of kind-conditional metadata; renders
+                          # as `## Event Summary` table
+    "participants",       # list of participant entries; renders as
+                          # `## Participants` (hearings sub-structure;
+                          # encounters flat Confirmed/Flagged)
+]
+
+# Kind → required artifact section (only on event artifacts).
+EVENT_KIND_REQUIRED_SECTION = {
+    "hearing":   "witnesses_testimony",
+    "encounter": "corroboration_items",
+}
+
 TYPE_DIRS = {
     "person": "people", "organization": "organizations", "document": "documents",
     "event": "events", "transcript": "transcripts", "media": "media",
@@ -146,6 +163,11 @@ VALID_EVIDENTIARY_BASIS = {
     "primary-source", "sworn-testimony", "on-record", "self-attested", "secondary"
 }
 VALID_CONFIDENCE = {"high", "medium", "low"}
+VALID_PARTICIPANT_CAPACITY = {
+    "witness-eyewitness", "witness-whistleblower", "witness-institutional",
+    "committee-member", "observer", "official", "other",
+}
+VALID_OATH_STATUS = {"sworn", "unsworn", "affirmation", "unknown"}
 
 
 # =============================================================================
@@ -250,18 +272,22 @@ def validate_artifact(path, schema, manifest_paths):
                 f"target_node {target_node!r} does not point to an existing file "
                 f"({target_path.relative_to(REPO_ROOT)})"))
 
-    # --- Determine target-node type + (for person) archetype ---
+    # --- Determine target-node type + (for person) archetype + (for event) kind ---
     target_type = None
     target_archetype = None
+    target_kind = None
     if target_node and "/" in target_node:
         content_dir_name = target_node.split("/", 1)[0]
         reverse_map = {v: k for k, v in TYPE_DIRS.items()}
         target_type = reverse_map.get(content_dir_name)
-        if target_type == "person" and target_node:
-            # Read the target person node's frontmatter for archetype
+        if target_node:
             target_path = REPO_ROOT / f"{target_node}.md"
             if target_path.exists():
-                target_archetype = _read_target_archetype(target_path)
+                fm_of_target = _read_target_frontmatter(target_path)
+                if target_type == "person":
+                    target_archetype = fm_of_target.get("archetype")
+                if target_type == "event":
+                    target_kind = fm_of_target.get("kind")
 
     # --- rumors section present iff target type in RUMORS_TYPES ---
     if target_type in RUMORS_TYPES:
@@ -293,8 +319,12 @@ def validate_artifact(path, schema, manifest_paths):
     # present; the other three must be absent. This enforces the 1-to-1
     # rule: each person node carries exactly one archetype-specific
     # artifact section, determined by its archetype.
+    #
+    # `corroboration_items` is shared between eyewitness person artifacts
+    # and encounter event artifacts — the absent-on-other-archetypes
+    # check is relaxed for that section specifically so encounter events
+    # can carry it without triggering a false positive.
     if target_type == "person" and target_archetype:
-        required_section = ARCHETYPE_REQUIRED_SECTION.get(target_archetype)
         for arch_name, section in ARCHETYPE_REQUIRED_SECTION.items():
             if arch_name == target_archetype:
                 if section not in data:
@@ -331,6 +361,45 @@ def validate_artifact(path, schema, manifest_paths):
                     f"{key!r} key should not be present "
                     f"(target_node type {target_type!r} is not person)"))
 
+    # --- Event-artifact universal sections (type-conditional) ---
+    # event_intrinsic + participants required on every event artifact
+    # regardless of kind. Kind-specific sections (witnesses_testimony
+    # for hearing; corroboration_items for encounter) layered below.
+    if target_type == "event":
+        for key in EVENT_REQUIRED_KEYS:
+            if key not in data:
+                issues.append(Issue(rel, "error",
+                    f"Required {key!r} key missing "
+                    f"(event artifacts require {', '.join(EVENT_REQUIRED_KEYS)})"))
+    elif target_type is not None:
+        for key in EVENT_REQUIRED_KEYS:
+            if key in data:
+                issues.append(Issue(rel, "error",
+                    f"{key!r} key should not be present "
+                    f"(target_node type {target_type!r} is not event)"))
+
+    # --- Event-kind-specific sections (kind-conditional on event) ---
+    # Exactly one of witnesses_testimony (hearing) / corroboration_items
+    # (encounter) on an event artifact. Note: corroboration_items is
+    # also valid on eyewitness person artifacts — its absence-check is
+    # only enforced between the two event kinds, not on person-scoped
+    # artifacts.
+    if target_type == "event" and target_kind:
+        required_kind_section = EVENT_KIND_REQUIRED_SECTION.get(target_kind)
+        for kind_name, section in EVENT_KIND_REQUIRED_SECTION.items():
+            if kind_name == target_kind:
+                if section not in data:
+                    issues.append(Issue(rel, "error",
+                        f"Required {section!r} section missing "
+                        f"(target event kind is {target_kind!r}, "
+                        f"which requires {section!r})"))
+            else:
+                if section in data:
+                    issues.append(Issue(rel, "error",
+                        f"{section!r} section should not be present "
+                        f"(target event kind {target_kind!r} does not carry it — "
+                        f"that section belongs to kind {kind_name!r})"))
+
     # --- primary_sources: path must exist in manifest ---
     issues.extend(check_primary_sources(rel, data, manifest_paths))
 
@@ -356,6 +425,10 @@ def validate_artifact(path, schema, manifest_paths):
         issues.extend(check_affiliations(rel, data, manifest_paths))
     if "relationships" in data:
         issues.extend(check_relationships(rel, data, manifest_paths))
+    if "participants" in data:
+        issues.extend(check_participants(rel, data, manifest_paths))
+    if "witnesses_testimony" in data:
+        issues.extend(check_witnesses_testimony(rel, data, manifest_paths))
 
     # --- Iteration log ---
     issues.extend(check_iterations(rel, data))
@@ -441,25 +514,31 @@ def check_primary_sources(rel, data, manifest_paths):
     return issues
 
 
-def _read_target_archetype(target_path):
-    """Read a person-node file's frontmatter and return its archetype,
-    or None if unreadable. Used to gate archetype-specific section
-    requirements in validate_artifact.
+def _read_target_frontmatter(target_path):
+    """Read a target-node file's frontmatter and return it as a dict
+    (archetype / kind / etc.), or {} on any failure. Used by
+    validate_artifact to route archetype-specific and kind-specific
+    section requirements.
     """
     try:
         text = target_path.read_text(encoding="utf-8", errors="replace")
     except OSError:
-        return None
+        return {}
     if not text.startswith("---"):
-        return None
+        return {}
     end = text.find("\n---", 3)
     if end < 0:
-        return None
+        return {}
     try:
-        fm = yaml.safe_load(text[3:end]) or {}
+        return yaml.safe_load(text[3:end]) or {}
     except yaml.YAMLError:
-        return None
-    return fm.get("archetype")
+        return {}
+
+
+# Preserved alias for the earlier F.1a-era signature. `target_archetype`
+# callers still get the same semantics.
+def _read_target_archetype(target_path):
+    return _read_target_frontmatter(target_path).get("archetype")
 
 
 def check_quotes(rel, data, manifest_paths, target_type=None):
@@ -887,6 +966,73 @@ def check_relationships(rel, data, manifest_paths):
     return issues
 
 
+def check_participants(rel, data, manifest_paths):
+    """participants[] — present on event artifacts. Each entry:
+    required {participant_path, capacity, source}, optional
+    {role, flagged, note}. capacity ∈ VALID_PARTICIPANT_CAPACITY.
+    """
+    issues = []
+    items = _entries(data, "participants")
+    issues.extend(_check_unique_ids(rel, items, "participants"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "participants", i))
+        for field in ["participant_path", "capacity"]:
+            if field not in e:
+                issues.append(Issue(rel, "error",
+                    f"participants[{i}] ({e.get('id')!r}): missing required {field!r}"))
+        pp = e.get("participant_path")
+        if pp and not pp.startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"participants[{i}] ({e.get('id')!r}): "
+                f"participant_path {pp!r} must start with '/'"))
+        cap = e.get("capacity")
+        if cap and cap not in VALID_PARTICIPANT_CAPACITY:
+            issues.append(Issue(rel, "error",
+                f"participants[{i}] ({e.get('id')!r}): "
+                f"capacity {cap!r} not in {sorted(VALID_PARTICIPANT_CAPACITY)}"))
+        issues.extend(_require_source_dict(rel, e, "participants", i, manifest_paths))
+    return issues
+
+
+def check_witnesses_testimony(rel, data, manifest_paths):
+    """witnesses_testimony[] — present on hearing-kind event artifacts.
+    Each entry: required {witness_path, oath_status, source}, optional
+    {transcript_node, written_testimony_node, note}.
+    """
+    issues = []
+    items = _entries(data, "witnesses_testimony")
+    issues.extend(_check_unique_ids(rel, items, "witnesses_testimony"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "witnesses_testimony", i))
+        for field in ["witness_path", "oath_status"]:
+            if field not in e:
+                issues.append(Issue(rel, "error",
+                    f"witnesses_testimony[{i}] ({e.get('id')!r}): missing required {field!r}"))
+        wp = e.get("witness_path")
+        if wp and not wp.startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"witnesses_testimony[{i}] ({e.get('id')!r}): "
+                f"witness_path {wp!r} must start with '/'"))
+        oath = e.get("oath_status")
+        if oath and oath not in VALID_OATH_STATUS:
+            issues.append(Issue(rel, "error",
+                f"witnesses_testimony[{i}] ({e.get('id')!r}): "
+                f"oath_status {oath!r} not in {sorted(VALID_OATH_STATUS)}"))
+        # Optional cross-references: check leading slash if set
+        for optional_path_field in ("transcript_node", "written_testimony_node"):
+            v = e.get(optional_path_field)
+            if v and not v.startswith("/"):
+                issues.append(Issue(rel, "error",
+                    f"witnesses_testimony[{i}] ({e.get('id')!r}): "
+                    f"{optional_path_field} {v!r} must start with '/'"))
+        issues.extend(_require_source_dict(rel, e, "witnesses_testimony", i, manifest_paths))
+    return issues
+
+
 def check_vouching_chain(rel, data, manifest_paths):
     """vouching_chain[] — present on whistleblower person artifacts.
     Each entry: required {voucher_path, attestation, source},
@@ -1004,9 +1150,15 @@ PROSE_FIELDS_BY_TYPE = {
         "uap_relevance",
         "credibility_notes",
     ],
-    # F.2+ extensions:
+    "event": [
+        # event-artifact top-level prose is `description` only (shared
+        # with the universal artifact schema). Event-specific synthesis
+        # fields like Event Summary derive from event_intrinsic dict,
+        # not a prose field.
+        "description",
+    ],
+    # F.3+ extensions:
     # "organization": ["overview", "description", ...],
-    # "event": ["description", ...],
     # "finding": ["what_this_establishes", ...],
 }
 
@@ -1021,6 +1173,12 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
         ("program_involvement",  "role"),
         ("publication_record",   "beat"),
         ("vouching_chain",       "attestation"),
+    ],
+    "event": [
+        ("timeline",             "event"),
+        ("participants",         "role"),
+        ("corroboration_items",  "note"),
+        ("witnesses_testimony",  "note"),
     ],
 }
 

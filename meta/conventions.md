@@ -89,6 +89,13 @@ content is the verbatim Key Passages. Credibility analysis of the
 author/publisher lives on the author's person node or the publisher's
 organization node, not on the document.
 
+Hearing events are structurally similar — an event is a venue, not a
+speaker. F.2a collapsed the prior `What The Hearing Established`
+synthesis section into `Witnesses & Testimony`, a cross-reference table
+pointing at each witness's transcript and written-testimony nodes.
+What a hearing "established" is the verbatim record those linked nodes
+carry; the event node navigates to them rather than paraphrasing.
+
 In those contexts, claim entries are contributor-written synthesis and
 must be anchored to verbatim quotes via `sources[].quote_ref` with
 mechanical drift checks (`validate-research.py` claim-anchor + `review-coverage.py`
