@@ -570,6 +570,59 @@ levels.
 
 ---
 
+### Transcript top-level description — check #16 prose scoping blocked on F.3b renderer
+
+**Issue.** Research artifacts carry `description` as a universal required
+top-level key (renders as the `## Description` section on document,
+person, and event nodes). Transcript artifacts inherit this requirement
+but the transcript template has no `## Description` H2 section — it has
+`## Summary`. `PROSE_FIELDS_BY_TYPE` in `scripts/validate-research.py`
+currently registers `"person"` and `"event"` for top-level description
+scanning; `"transcript"` is deliberately absent. A transcript artifact's
+`description` prose therefore goes unchecked by check #16 today.
+
+**Why it matters.** A populated `description` on a hearing-kind transcript
+artifact can silently introduce contributor-synthesis vocabulary not
+traceable to the referenced source. This is exactly the drift surface
+check #16 exists to close. At zero transcript artifacts built today the
+risk is bounded, but the F.3c pilot
+(`/transcripts/2023-07-26-house-fravor`) will populate a description
+that should be scanned.
+
+**Why not fix in F.3a.** Three possible renderer outcomes from F.3b:
+  1. Renderer maps `artifact.description` → `node.## Summary`
+     (field-rename at render time; prose stays in artifact.description).
+  2. Renderer adds a `## Description` section to the transcript template
+     alongside `## Summary`.
+  3. Artifact schema gains a new `summary` field, `description` becomes
+     unused on transcripts (or replaced).
+Adding `"transcript": ["description"]` to `PROSE_FIELDS_BY_TYPE`
+pre-F.3b would commit to outcome (1) or (2) without design support. If
+outcome (3) lands, the entry becomes stale coverage against a field
+nothing renders. Per the "NO FABRICATION" discipline, defer.
+
+**Proposed scope.** Revisit as part of F.3b (Phase II transcript
+renderer) design pass. Decisions the F.3b pass needs to land:
+  - Which artifact field(s) carry contributor-prose on transcripts —
+    `description`, a new `summary`, or both?
+  - Does the renderer emit both `## Summary` and `## Description`, or
+    collapse them?
+  - Once settled, register the correct field list in
+    `PROSE_FIELDS_BY_TYPE["transcript"]` and verify the F.3c pilot's
+    prose surfaces all pass check #16 at zero warnings (per the
+    durable check #16 contributor-policy memory).
+
+Until then, `material_differences[].note` scanning (shipped in F.3a) is
+the only check #16 coverage on transcript artifacts.
+
+**Trigger.** F.3b design pass. Open item; do not address in isolation.
+
+**Surfaced.** F.3a implementation (2026-04-19) — Decision A. The
+contributor asked whether to add transcript top-level scoping now;
+deferring was the non-bandaid answer given the F.3b design ambiguity.
+
+---
+
 ### ✅ RESOLVED Corroboration column layout (F.1c audit finding)
 
 Shipped 2026-04-19 (F.2a commit 13a2859 template + F.2b commit 5af2416

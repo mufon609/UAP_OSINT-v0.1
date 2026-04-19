@@ -31,6 +31,12 @@ Checks (per schema.yaml research-artifact.invariants):
       institutional-actor → program_involvement
       reporter            → publication_record
     Each archetype-specific section must be absent on other archetypes.
+  - Per-kind required section on transcript artifacts:
+      hearing → material_differences (cross-artifact written_ref +
+                intra-artifact oral_ref + divergence_class enum; check
+                #16 pools both referenced quotes' source texts for
+                prose-drift scan on the note field)
+      other   → no kind-specific section
   - `observation_type` required on every quote when target_node type is
     person; values ∈ {direct, relayed}. Warned when set on a non-person
     artifact (ignored by renderer).
@@ -121,6 +127,13 @@ EVENT_KIND_REQUIRED_SECTION = {
     "encounter": "corroboration_items",
 }
 
+# Kind → required artifact section (only on transcript artifacts).
+# `other`-kind transcripts carry no kind-specific section — only hearing
+# transcripts track Material Differences (written-vs-oral divergences).
+TRANSCRIPT_KIND_REQUIRED_SECTION = {
+    "hearing": "material_differences",
+}
+
 TYPE_DIRS = {
     "person": "people", "organization": "organizations", "document": "documents",
     "event": "events", "transcript": "transcripts", "media": "media",
@@ -168,6 +181,9 @@ VALID_PARTICIPANT_CAPACITY = {
     "committee-member", "observer", "official", "other",
 }
 VALID_OATH_STATUS = {"sworn", "unsworn", "affirmation", "unknown"}
+VALID_DIVERGENCE_CLASS = {
+    "elaboration", "contradiction", "omission", "clarification", "qa-addition",
+}
 
 
 # =============================================================================
@@ -286,7 +302,7 @@ def validate_artifact(path, schema, manifest_paths):
                 fm_of_target = _read_target_frontmatter(target_path)
                 if target_type == "person":
                     target_archetype = fm_of_target.get("archetype")
-                if target_type == "event":
+                if target_type in ("event", "transcript"):
                     target_kind = fm_of_target.get("kind")
 
     # --- rumors section present iff target type in RUMORS_TYPES ---
@@ -400,6 +416,29 @@ def validate_artifact(path, schema, manifest_paths):
                         f"(target event kind {target_kind!r} does not carry it — "
                         f"that section belongs to kind {kind_name!r})"))
 
+    # --- Transcript-kind-specific sections (kind-conditional on transcript) ---
+    # Only hearing-kind transcripts carry material_differences; `other`-kind
+    # transcripts (interview, podcast, broadcast, etc.) carry no
+    # kind-specific section. Parallel in shape to the event-kind block
+    # above; TRANSCRIPT_KIND_REQUIRED_SECTION has only one entry so the
+    # absent-on-other-kinds branch fires for kind=other when
+    # material_differences is set, and the missing-required branch fires
+    # for kind=hearing when material_differences is absent.
+    if target_type == "transcript" and target_kind:
+        for kind_name, section in TRANSCRIPT_KIND_REQUIRED_SECTION.items():
+            if kind_name == target_kind:
+                if section not in data:
+                    issues.append(Issue(rel, "error",
+                        f"Required {section!r} section missing "
+                        f"(target transcript kind is {target_kind!r}, "
+                        f"which requires {section!r})"))
+            else:
+                if section in data:
+                    issues.append(Issue(rel, "error",
+                        f"{section!r} section should not be present "
+                        f"(target transcript kind {target_kind!r} does not "
+                        f"carry it — that section belongs to kind {kind_name!r})"))
+
     # --- primary_sources: path must exist in manifest ---
     issues.extend(check_primary_sources(rel, data, manifest_paths))
 
@@ -429,6 +468,8 @@ def validate_artifact(path, schema, manifest_paths):
         issues.extend(check_participants(rel, data, manifest_paths))
     if "witnesses_testimony" in data:
         issues.extend(check_witnesses_testimony(rel, data, manifest_paths))
+    if "material_differences" in data:
+        issues.extend(check_material_differences(rel, data, manifest_paths))
 
     # --- Iteration log ---
     issues.extend(check_iterations(rel, data))
@@ -1033,6 +1074,157 @@ def check_witnesses_testimony(rel, data, manifest_paths):
     return issues
 
 
+# =============================================================================
+# Cross-artifact quote-ref resolution
+#
+# Generic helper: given a reference of shape
+#     {artifact: <type>/<slug>, quote_id: <qN>}
+# resolve it to research/<slug>.yaml and verify the named quote_id exists
+# in that artifact's quotes list. Returns a list of Issue — empty on
+# success, one Issue on any failure mode (malformed ref shape, target
+# research file missing, target artifact malformed, quote_id absent).
+#
+# Error strings mirror the intra-artifact quote_ref error shape used by
+# check_claims (the "quote_ref X does not match any quote.id" wording) so
+# a contributor reading the report doesn't have to parse different error
+# vocabularies for the two cases — the referenced artifact path appears
+# in the cross-artifact message to distinguish them.
+#
+# Kept type-agnostic (doesn't know about material_differences) so Step E.3
+# (cross-node update propagation, deferred) can reuse it when bidirectional
+# corroborated_by / superseded_by / contradicted_by refs need to resolve
+# across artifacts.
+# =============================================================================
+
+# Cache parsed cross-referenced artifacts per validator run. Keyed by
+# the research file's filename (e.g., "written-testimony-fravor-2023.yaml").
+_cross_artifact_cache = {}
+
+
+def _load_cross_artifact(slug):
+    """Load research/{slug}.yaml and return (data_dict, error_msg_or_None).
+    Cached per-run. data is None when error_msg is set.
+    """
+    if slug in _cross_artifact_cache:
+        return _cross_artifact_cache[slug]
+    ref_path = RESEARCH_DIR / f"{slug}.yaml"
+    if not ref_path.exists():
+        result = (None, f"research/{slug}.yaml does not exist")
+        _cross_artifact_cache[slug] = result
+        return result
+    try:
+        with open(ref_path) as f:
+            ref_data = yaml.safe_load(f)
+    except yaml.YAMLError as e:
+        result = (None, f"research/{slug}.yaml could not be parsed: {e}")
+        _cross_artifact_cache[slug] = result
+        return result
+    if not isinstance(ref_data, dict):
+        result = (None, f"research/{slug}.yaml is malformed (root must be a mapping)")
+        _cross_artifact_cache[slug] = result
+        return result
+    result = (ref_data, None)
+    _cross_artifact_cache[slug] = result
+    return result
+
+
+def resolve_cross_artifact_quote_ref(ref, rel, error_prefix):
+    """Verify ref={artifact: <type>/<slug>, quote_id: <qN>} points to an
+    existing quote in another research artifact. Returns [Issue].
+    Empty list on successful resolution. `error_prefix` is prepended to
+    any error message — callers set it to something like
+    'material_differences[0] (md1): written_ref'.
+    """
+    issues = []
+    if not isinstance(ref, dict):
+        issues.append(Issue(rel, "error",
+            f"{error_prefix}: must be a mapping with 'artifact' and 'quote_id' keys"))
+        return issues
+    artifact_ref = ref.get("artifact")
+    quote_id = ref.get("quote_id")
+    if not artifact_ref:
+        issues.append(Issue(rel, "error",
+            f"{error_prefix}: missing required 'artifact' "
+            f"(shape: {{artifact: <type>/<slug>, quote_id: <qN>}})"))
+        return issues
+    if not quote_id:
+        issues.append(Issue(rel, "error",
+            f"{error_prefix}: missing required 'quote_id' "
+            f"(shape: {{artifact: <type>/<slug>, quote_id: <qN>}})"))
+        return issues
+    if "/" not in artifact_ref:
+        issues.append(Issue(rel, "error",
+            f"{error_prefix}: artifact {artifact_ref!r} must be "
+            f"<type>/<slug> form (e.g., 'documents/written-testimony-fravor-2023')"))
+        return issues
+    _, slug = artifact_ref.split("/", 1)
+    ref_data, err = _load_cross_artifact(slug)
+    if err:
+        issues.append(Issue(rel, "error", f"{error_prefix}: {err}"))
+        return issues
+    ref_quote_ids = {
+        q.get("id") for q in ref_data.get("quotes", [])
+        if isinstance(q, dict)
+    }
+    if quote_id not in ref_quote_ids:
+        issues.append(Issue(rel, "error",
+            f"{error_prefix}: quote_id {quote_id!r} does not match any "
+            f"quote.id in research/{slug}.yaml"))
+    return issues
+
+
+def check_material_differences(rel, data, manifest_paths):
+    """material_differences[] — present on hearing-kind transcript
+    artifacts. Each entry: required {id, topic, divergence_class,
+    written_ref, oral_ref}, optional {note}. written_ref resolves
+    cross-artifact; oral_ref resolves intra-artifact.
+    """
+    issues = []
+    items = _entries(data, "material_differences")
+    issues.extend(_check_unique_ids(rel, items, "material_differences"))
+    # Build the intra-artifact quote_id set once for oral_ref resolution.
+    quote_ids = {
+        q.get("id") for q in _entries(data, "quotes") if isinstance(q, dict)
+    }
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "material_differences", i))
+        # Required fields
+        for field in ["topic", "divergence_class", "written_ref", "oral_ref"]:
+            if field not in e:
+                issues.append(Issue(rel, "error",
+                    f"material_differences[{i}] ({e.get('id')!r}): "
+                    f"missing required {field!r}"))
+        # divergence_class enum
+        dc = e.get("divergence_class")
+        if dc is not None and dc not in VALID_DIVERGENCE_CLASS:
+            issues.append(Issue(rel, "error",
+                f"material_differences[{i}] ({e.get('id')!r}): "
+                f"divergence_class {dc!r} not in "
+                f"{sorted(VALID_DIVERGENCE_CLASS)}"))
+        # written_ref — cross-artifact resolution
+        wref = e.get("written_ref")
+        if wref is not None:
+            issues.extend(resolve_cross_artifact_quote_ref(
+                wref, rel,
+                f"material_differences[{i}] ({e.get('id')!r}): written_ref",
+            ))
+        # oral_ref — intra-artifact resolution (quote_id string)
+        oref = e.get("oral_ref")
+        if oref is not None:
+            if not isinstance(oref, str):
+                issues.append(Issue(rel, "error",
+                    f"material_differences[{i}] ({e.get('id')!r}): "
+                    f"oral_ref must be a quote.id string (got {type(oref).__name__})"))
+            elif oref not in quote_ids:
+                issues.append(Issue(rel, "error",
+                    f"material_differences[{i}] ({e.get('id')!r}): "
+                    f"oral_ref {oref!r} does not match any quote.id "
+                    f"in this artifact"))
+    return issues
+
+
 def check_vouching_chain(rel, data, manifest_paths):
     """vouching_chain[] — present on whistleblower person artifacts.
     Each entry: required {voucher_path, attestation, source},
@@ -1180,6 +1372,15 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
         ("corroboration_items",  "note"),
         ("witnesses_testimony",  "note"),
     ],
+    "transcript": [
+        # material_differences[].note is special-cased in
+        # check_prose_drift: its source pool is the UNION of the
+        # written_ref's cross-artifact source and the oral_ref's
+        # intra-artifact source, not a single entry.source.path (which
+        # material_differences entries don't carry). See
+        # _gather_material_diff_source_tokens().
+        ("material_differences", "note"),
+    ],
 }
 
 # Single impartial rule — no field-class differentiation, no percentage
@@ -1273,6 +1474,55 @@ def load_source_tokens(source_rel_path):
     return tokens
 
 
+def _gather_material_diff_source_tokens(entry, this_artifact_data):
+    """Resolve a material_differences entry's written_ref + oral_ref to
+    their source files and return the pooled token set. Mirrors the F.3
+    design: check #16 verifies material_differences[].note against the
+    UNION of both referenced quotes' source texts (not a single
+    entry.source.path like other per-entry prose fields).
+
+    Returns (pool, failure_reason). pool is a set of tokens (possibly
+    empty); failure_reason is None on success or a short string on any
+    resolution failure (unresolvable ref, unextractable source). On
+    failure, the caller skips drift judgment for this entry — a
+    resolution error already fires from check_material_differences,
+    and a source-extraction failure is infrastructural, not drift.
+    """
+    pool = set()
+    # Written ref — cross-artifact
+    wref = entry.get("written_ref")
+    if isinstance(wref, dict):
+        artifact_ref = wref.get("artifact")
+        quote_id = wref.get("quote_id")
+        if artifact_ref and quote_id and "/" in artifact_ref:
+            _, slug = artifact_ref.split("/", 1)
+            ref_data, err = _load_cross_artifact(slug)
+            if err:
+                return pool, f"written_ref {artifact_ref}:{quote_id} unresolvable"
+            for q in ref_data.get("quotes", []):
+                if isinstance(q, dict) and q.get("id") == quote_id:
+                    src = q.get("source") or {}
+                    src_path = src.get("path")
+                    if src_path:
+                        tokens = load_source_tokens(src_path)
+                        if tokens is not None:
+                            pool |= tokens
+                    break
+    # Oral ref — intra-artifact quote_id
+    oref = entry.get("oral_ref")
+    if isinstance(oref, str):
+        for q in this_artifact_data.get("quotes", []):
+            if isinstance(q, dict) and q.get("id") == oref:
+                src = q.get("source") or {}
+                src_path = src.get("path")
+                if src_path:
+                    tokens = load_source_tokens(src_path)
+                    if tokens is not None:
+                        pool |= tokens
+                break
+    return pool, None
+
+
 def _judge_drift(rel, location, prose_tokens, unmatched):
     """Impartial drift reporter. Warns on every unmatched significant
     token; errors only when 100% of the field's significant tokens are
@@ -1345,6 +1595,29 @@ def check_prose_drift(rel, data, target_type):
             prose = entry.get(entry_field) or ""
             prose_tokens = extract_significant_tokens(prose)
             if not prose_tokens:
+                continue
+            # Source-pool resolution differs by section. Most per-entry
+            # prose fields use the entry's own `source.path` (timeline
+            # events, affiliation roles, witnesses_testimony notes, etc.).
+            # material_differences entries have no `source` — their token
+            # pool is the union of the written_ref's cross-artifact quote
+            # source and the oral_ref's intra-artifact quote source. See
+            # _gather_material_diff_source_tokens().
+            if list_key == "material_differences":
+                source_tokens, failure = _gather_material_diff_source_tokens(entry, data)
+                if failure:
+                    # Resolution error already fires from
+                    # check_material_differences; skip drift judgment to
+                    # avoid double-reporting the same root cause.
+                    continue
+                if not source_tokens:
+                    continue  # source-extraction failure already warned at top
+                unmatched = prose_tokens - source_tokens
+                issues.extend(_judge_drift(
+                    rel,
+                    f"{list_key}[{i}] ({entry.get('id', '?')!r}) {entry_field}",
+                    prose_tokens, unmatched,
+                ))
                 continue
             src = entry.get("source") or {}
             src_path = src.get("path")

@@ -55,10 +55,18 @@ ARCHETYPE_SECTION = {
     "reporter":             "publication_record",
 }
 
-# event kind → kind-specific artifact section
-EVENT_KIND_SECTION = {
-    "hearing":   "witnesses_testimony",
-    "encounter": "corroboration_items",
+# Per-node-type kind → kind-specific artifact section. Outer dict keyed
+# by node_type so event and transcript share a kind label ("hearing")
+# without clobbering each other. Transcript.other has no kind-specific
+# section (absent entry rather than mapping to a no-op value).
+KIND_SECTIONS_BY_TYPE = {
+    "event": {
+        "hearing":   "witnesses_testimony",
+        "encounter": "corroboration_items",
+    },
+    "transcript": {
+        "hearing": "material_differences",
+    },
 }
 
 # All valid target-node types
@@ -181,11 +189,13 @@ def read_target_archetype(node_type, slug):
 
 
 def read_target_kind(node_type, slug):
-    """For event target-nodes, read the node's frontmatter to get its
-    kind (hearing / encounter). Returns None for non-event nodes or if
+    """For kind-bearing target nodes (event, transcript), read the
+    node's frontmatter to get its kind. Returns None otherwise or if
     unreadable.
+      event      → hearing | encounter
+      transcript → hearing | other
     """
-    if node_type != "event":
+    if node_type not in ("event", "transcript"):
         return None
     return _read_target_frontmatter(node_type, slug).get("kind")
 
@@ -253,13 +263,13 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         section = ARCHETYPE_SECTION.get(archetype)
         if section:
             artifact[section] = []
-    # Kind-conditional section on event artifacts. Reads the target
-    # node's frontmatter to get its kind; scaffolds witnesses_testimony
-    # for hearings or corroboration_items for encounters. Same 1-to-1
-    # pattern as archetype above.
+    # Kind-conditional section on kind-bearing artifacts (event, transcript).
+    # Dispatched by KIND_SECTIONS_BY_TYPE — see constant definition for the
+    # full mapping. Absent inner entry (e.g., transcript.other) → no
+    # section scaffolded.
     kind = read_target_kind(node_type, slug)
     if kind:
-        section = EVENT_KIND_SECTION.get(kind)
+        section = KIND_SECTIONS_BY_TYPE.get(node_type, {}).get(kind)
         if section:
             artifact[section] = []
     return artifact

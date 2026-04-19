@@ -30,7 +30,21 @@ fail=0
 failures=()
 created_files=()
 
+# Smoke-fixture state that outlives a single file — manifest backup path
+# and fixture source-file path. Restored/removed in cleanup. Initialized
+# empty so `set -u` is satisfied if cleanup fires before these are set.
+MANIFEST_BACKUP=""
+FIXTURE_SRC_PATH=""
+
 cleanup() {
+    # Restore manifest if we staged a backup
+    if [ -n "$MANIFEST_BACKUP" ] && [ -f "$MANIFEST_BACKUP" ]; then
+        mv "$MANIFEST_BACKUP" sources/manifest.yaml
+    fi
+    # Remove the fixture source file if we placed one
+    if [ -n "$FIXTURE_SRC_PATH" ] && [ -f "$FIXTURE_SRC_PATH" ]; then
+        rm -f "$FIXTURE_SRC_PATH"
+    fi
     for f in "${created_files[@]}"; do
         [ -f "$f" ] && rm -f "$f"
     done
@@ -130,6 +144,105 @@ else
         pass=$((pass + 1))
     fi
 fi
+
+# --- research artifact: transcript-kind dispatch ---
+# Scaffolder must emit material_differences: [] for transcript.hearing
+# and NOT emit it for transcript.other. Enforced implicitly by validate-
+# research.py's kind-conditional rule: missing-required fires on hearing
+# if absent; absent-on-other-kind fires on other if present. So a clean
+# validate pass on an empty scaffold is a pass for the kind dispatch.
+for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-other"; do
+    artifact_out="$(python3 scripts/research-scaffold.py --target "$tk_target" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("research-scaffold $tk_target — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
+        fail=$((fail + 1))
+        continue
+    fi
+    tk_slug="${tk_target##*/}"
+    created_files+=("research/$tk_slug.yaml")
+    artifact_out="$(python3 scripts/validate-research.py "research/$tk_slug.yaml" --quiet 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("research-scaffold $tk_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+done
+
+# --- cross-artifact material_differences fixture ---
+# Exercises the F.3a cross-artifact quote_ref resolver end-to-end:
+#   - check_material_differences (structural + divergence_class enum)
+#   - resolve_cross_artifact_quote_ref (written_ref → documents/__smoke-xdoc:q1)
+#   - intra-artifact oral_ref resolution (within transcript artifact)
+#   - check #16 pooled-source drift scan on material_differences[].note
+#
+# Stands up temporary state:
+#   - sources/government/__smoke-xfixture.txt (fixture primary source)
+#   - matching archived manifest entry with real sha256
+#   - __smoke-xdoc document node (new.py scaffold)
+#   - __smoke-xtrans-hearing transcript node (new.py scaffold)
+#   - research/__smoke-xdoc.yaml (cp from tests/smoke-fixtures/)
+#   - research/__smoke-xtrans-hearing.yaml (cp from tests/smoke-fixtures/)
+# All state is restored/removed on trap cleanup.
+
+MANIFEST_BACKUP="/tmp/__smoke-manifest-backup-$$.yaml"
+FIXTURE_SRC_PATH="sources/government/__smoke-xfixture.txt"
+
+cp sources/manifest.yaml "$MANIFEST_BACKUP"
+cp tests/smoke-fixtures/source.txt "$FIXTURE_SRC_PATH"
+FIXTURE_SHA=$(sha256sum "$FIXTURE_SRC_PATH" | awk '{print $1}')
+
+cat >> sources/manifest.yaml <<EOF
+- url: https://example.invalid/__smoke-xfixture.txt
+  format: txt
+  status: archived
+  path: government/__smoke-xfixture.txt
+  sha256: $FIXTURE_SHA
+  note: smoke-fixture — auto-created/removed by tests/smoke.sh
+EOF
+
+# Scaffold the target nodes the fixture artifacts point at
+xdoc_out="$(python3 scripts/new.py document --kind gov-doc --form testimony --slug __smoke-xdoc 2>&1)"
+xdoc_rc=$?
+xdoc_path=$(printf '%s\n' "$xdoc_out" | awk '/^✓ Created/ {print $3; exit}')
+if [ "$xdoc_rc" -ne 0 ] || [ -z "$xdoc_path" ]; then
+    failures+=("cross-artifact doc node scaffold — failed: $(echo "$xdoc_out" | head -1)")
+    fail=$((fail + 1))
+else
+    created_files+=("$xdoc_path")
+fi
+
+xtrans_out="$(python3 scripts/new.py transcript --kind hearing --slug __smoke-xtrans-hearing 2>&1)"
+xtrans_rc=$?
+xtrans_path=$(printf '%s\n' "$xtrans_out" | awk '/^✓ Created/ {print $3; exit}')
+if [ "$xtrans_rc" -ne 0 ] || [ -z "$xtrans_path" ]; then
+    failures+=("cross-artifact trans node scaffold — failed: $(echo "$xtrans_out" | head -1)")
+    fail=$((fail + 1))
+else
+    created_files+=("$xtrans_path")
+fi
+
+# Install fixture research artifacts
+cp tests/smoke-fixtures/cross-artifact-doc.yaml research/__smoke-xdoc.yaml
+cp tests/smoke-fixtures/cross-artifact-trans.yaml research/__smoke-xtrans-hearing.yaml
+created_files+=("research/__smoke-xdoc.yaml")
+created_files+=("research/__smoke-xtrans-hearing.yaml")
+
+# Validate both — the transcript artifact's clean pass is the end-to-end
+# resolver check (written_ref resolves to a real quote in the doc artifact;
+# oral_ref resolves within self; note matches pooled source vocabulary).
+for xartifact in "research/__smoke-xdoc.yaml" "research/__smoke-xtrans-hearing.yaml"; do
+    cross_out="$(python3 scripts/validate-research.py "$xartifact" --quiet 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("cross-artifact $xartifact — validate-research.py failed: $(echo "$cross_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+done
 
 echo "======================================================================"
 echo " Fixture smoke tests"

@@ -83,13 +83,20 @@ derived_from: {{derived_from}}
 ## Material Differences
 
 <!-- Analytically significant divergences between the prepared written
-     statement and the live oral testimony. Expansions, corrections,
-     impromptu claims. Omit the section if written and oral are
-     substantively identical. -->
+     statement and the live oral testimony. Columns:
+       Topic         — short descriptor naming what the divergence concerns
+       Class         — elaboration | contradiction | omission |
+                       clarification | qa-addition
+       Written Quote — excerpt + link to the companion document node's
+                       Key Passages anchor
+       Oral Quote    — excerpt + link to this transcript's Key Passages
+                       anchor
+       Note          — contributor synthesis of the analytical significance
+     Omit the section if written and oral are substantively identical. -->
 
-| Passage | Written | Oral | Significance |
-|---|---|---|---|
-|  |  |  |  |
+| Topic | Class | Written Quote | Oral Quote | Note |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
 ---
 <!-- /KIND -->

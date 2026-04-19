@@ -1,0 +1,36 @@
+id: research/__smoke-xdoc
+type: research-artifact
+schema_version: 1
+target_node: documents/__smoke-xdoc
+status: active
+created: '2026-04-19'
+last_iteration: i0
+description: Smoke-fixture document artifact. Targets the __smoke-xdoc document node scaffolded by tests/smoke.sh. Not real content; deleted after each smoke run. Used as the cross-artifact target for the hearing-transcript fixture's material_differences.written_ref.
+primary_sources:
+- path: government/__smoke-xfixture.txt
+  format: txt
+document_intrinsic: {}
+context_extrinsic: {}
+quotes:
+- id: q1
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Witness testified under oath that aircraft equipment detail differs from written testimony.
+  source:
+    path: government/__smoke-xfixture.txt
+    location: ¶1
+  significance: fixture quote — referenced by smoke transcript artifact via written_ref
+  context: smoke fixture
+claims: []
+entities_referenced: []
+naming_quirks: []
+research_gaps: []
+iterations:
+- id: i0
+  date: '2026-04-19'
+  trigger: initial-build
+  summary: smoke fixture — populated doc artifact for cross-artifact resolver test
+  entries_added:
+  - q1
+  entries_modified: []
