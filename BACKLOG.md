@@ -531,6 +531,63 @@ F.1c hardening pass; items 3 and 4 remain open but reframed.
 
 ---
 
+### Check #16 v2 — n-gram adjacency, whitelist, lemmatization
+
+**Issue.** Check #16 (prose-field token drift) ships in v1 as a
+membership-only check: every significant word in a prose field must
+appear in the referenced source file. Three known limitations from
+the F.1c audit that v1 intentionally defers:
+
+1. **No phrase-adjacency check.** Word-membership alone misses drift
+   where all words exist in source but in different adjacency patterns
+   — the F.1c issue #1 ("ground operations" vs source's "operations
+   supporting the ground forces") exemplifies this. A Tier B 2-gram
+   check — verify every contiguous 2-word-significant-span in prose
+   appears as a contiguous span in source — would catch this
+   category. Tradeoff: adds noise from legitimate contributor
+   restructuring; useful as warn-level only.
+
+2. **No lemmatization / stemming.** Word-form drift generates routine
+   warnings: source "investigate" ↔ prose "investigation"; source
+   "publish" ↔ prose "published"; source "prepare" ↔ prose
+   "preparing". V1 strips possessive `'s` only. A Porter stemmer or
+   hand-rolled suffix-stripping pass on common English morphology
+   (-ing, -ed, -tion, -ive, -s as plural) would resolve most word-
+   form noise. Tradeoff: library dependency or hand-rolled rules;
+   risk of over-stemming ("business" → "busine" etc.).
+
+3. **No whitelist.** Repo-conventional vocabulary ("disclosure chain",
+   "co-observer", "corroboration", "testimony", "subcommittee",
+   "archived") warns every time. A module-level whitelist or
+   per-schema `prose_drift_whitelist` field would silence these.
+   Tradeoff: maintenance burden; risk of whitelisting words that
+   actually need checking in different contexts.
+
+**Why it matters (v1 limitations accepted).** The F.1c Fravor baseline
+produces 15 warnings — most legitimate synonyms / word-form drift /
+synthesis vocabulary. Contributor reviews each warning in ~30 seconds
+to ack/fix. Tolerable at current corpus scale (1 person node). Scales
+poorly past ~10 person nodes when warning review becomes routine
+noise the contributor starts ignoring — at which point the check
+loses signal.
+
+**Proposed scope when triggered.** After ~5 person nodes are built
+through the full pipeline, audit the aggregate warning-to-signal
+ratio. If >90% of warnings are routine legitimate categories (noise),
+ship:
+
+1. Porter stemmer integration (or hand-rolled suffix pass) — removes
+   word-form noise, probably the biggest share.
+2. Per-type whitelist field in schema — `prose_drift_whitelist` list
+   at the `types.person.section_rules.prose_drift` level.
+3. Tier B 2-gram adjacency as warn-only — catches phrase-
+   restructuring drift the v1 check misses.
+
+**Surfaced.** F.1c Fravor audit RCA (2026-04-19). V1 ships as pre-F.2
+hardening commit.
+
+---
+
 ### Corroboration table's `Source` column displays the attesting document, not the corroborator (F.1c finding)
 
 **Issue.** The Corroboration section on eyewitness person nodes

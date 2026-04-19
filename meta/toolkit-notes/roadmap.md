@@ -531,12 +531,50 @@ Pilot findings absorbed inline or no action needed:
   experience frictionless — quote population was straightforward,
   no renderer bugs surfaced
 
-First end-to-end person node through Phase I → II → III under the
-statements-only discipline. `/people/david-fravor` — eyewitness
-archetype; the Fravor written-testimony document is already built as
-a primary source, which means Phase I has extraction-ready material.
+Post-F.1c audit surfaced 4 contributor-prose drift issues (RCA in
+commit `f67f6e8` message) driving a pre-F.2 hardening pass —
+see next section.
 
-Hard rule: one node per session.
+#### F.1c-audit hardening (pre-F.2)  ✅ DONE (2026-04-19)
+
+RCA on the F.1c audit: the mechanical verification pipeline caught
+verbatim-quote drift (check #11) but had no check verifying
+contributor-authored prose fields against the source. All four drift
+issues I found in the Fravor audit were in prose surfaces
+(background, uap_relevance, timeline event descriptions,
+relationship descriptions).
+
+**Check #16 — prose-field token drift** shipped in
+`scripts/validate-research.py`:
+
+- For person artifacts, verify every significant word in contributor-
+  prose fields (`background`, `uap_relevance`, `credibility_notes`,
+  plus per-entry prose fields on timeline / affiliations /
+  relationships / corroboration_items / program_involvement /
+  publication_record / vouching_chain) appears in the referenced
+  primary-source text.
+- Significant words: lowercase tokens ≥3 chars, not in a ~110-entry
+  STOPWORDS list; backtick-bracket repo paths stripped; possessive
+  `'s` stripped.
+- Unmatched tokens → warn (expected on synonym pairs, word-form
+  drift, synthesis vocabulary, acronym expansion).
+- ≥80% unmatched → error (fabrication or heavy paraphrase bar).
+- Tier B (n-gram adjacency), lemmatization, and whitelists deferred
+  to v2 per BACKLOG after ~5 person nodes accrue signal.
+
+Docs updated: `prompts/build.md` Phase I Step 12 gains a prose-drift
+review step; `meta/conventions.md` adds a prose-drift discipline
+subsection under "Document nodes vs synthesis nodes". BACKLOG gains
+the v2 extensions entry.
+
+Fravor i1 baseline after shipping: 0 errors, 15 warnings (all
+legitimate contributor-synthesis vocabulary per the RCA categories).
+Fabrication test (injecting invented content): 100% unmatched
+tokens → error fires correctly. Drift-restoration test (restoring
+the i0 drift vocabulary): unmatched-token warnings surface each
+drifted word.
+
+### F.2 — event  ⏸ PENDING
 
 ### F.2 — event  ⏸ PENDING
 

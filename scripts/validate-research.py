@@ -37,6 +37,18 @@ Checks (per schema.yaml research-artifact.invariants):
   - Per-entry enum checks for corroboration_items.observation_type,
     program_involvement.evidentiary_basis / confidence, and
     vouching_chain.evidentiary_basis / confidence.
+  - Prose-field token drift (check #16) — for every contributor-authored
+    prose field on the artifact (background / uap_relevance /
+    credibility_notes at the top level; timeline[].event / affiliations[].role
+    / relationships[].relationship / corroboration_items[].note /
+    program_involvement[].role / publication_record[].beat /
+    vouching_chain[].attestation at the entry level), extract significant
+    tokens (≥3 chars, non-stopword) and verify each appears in the
+    referenced primary-source text. Unmatched tokens warn; high
+    unmatched rates error. Scoped to person artifacts in v1; extends to
+    other types as their F-sub-phase ships. Complements verbatim-quote
+    check #11 on the claims-layer-free prose surfaces identified in the
+    F.1c audit RCA.
 
 Usage:
   validate-research.py                  # validate all research/*.yaml
@@ -45,6 +57,7 @@ Usage:
 """
 
 import argparse
+import subprocess
 import re
 import sys
 from pathlib import Path
@@ -65,6 +78,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
 MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
 RESEARCH_DIR = REPO_ROOT / "research"
+SOURCES_DIR = REPO_ROOT / "sources"
 
 RUMORS_TYPES = {"person", "organization", "event", "location"}
 TIMELINE_TYPES = {"person", "organization", "event", "finding"}
@@ -349,6 +363,13 @@ def validate_artifact(path, schema, manifest_paths):
 
     # --- Cross-ref integrity (quote_ref, entity references, supersedes/etc) ---
     issues.extend(check_cross_refs(rel, data))
+
+    # --- Prose-field token drift (check #16) ---
+    # Contributor-prose surfaces that aren't covered by check #11's
+    # verbatim-quote verification. Scoped per-type; no-ops on types
+    # without registered prose fields (documents etc. — they carry no
+    # contributor-prose layer post claims-layer elimination).
+    issues.extend(check_prose_drift(rel, data, target_type))
 
     return issues
 
@@ -898,6 +919,283 @@ def check_vouching_chain(rel, data, manifest_paths):
                 f"vouching_chain[{i}] ({e.get('id')!r}): "
                 f"confidence {conf!r} not in {sorted(VALID_CONFIDENCE)}"))
         issues.extend(_require_source_dict(rel, e, "vouching_chain", i, manifest_paths))
+    return issues
+
+
+# =============================================================================
+# Check #16 — prose-field token drift (F.1c RCA follow-up)
+#
+# Every contributor-authored prose field on an artifact should draw its
+# vocabulary from the primary-source text it references. This check
+# tokenizes each prose field into significant words (lowercase, ≥3
+# chars, non-stopword) and verifies each token appears in the
+# referenced source file.
+#
+# Unmatched tokens warn (contributor reviews — synonyms / word-form
+# drift / legitimate synthesis vocabulary surface as expected false
+# positives). High unmatched rates error (likely fabrication or heavy
+# paraphrase).
+#
+# Known v1 limitations documented in BACKLOG:
+#   - Membership-only; doesn't catch phrase-restructuring where all
+#     words exist in source (e.g., "ground operations" when source has
+#     "operations supporting... ground forces" — F.1c drift #1).
+#   - No stemming / lemmatization; "prepare" / "preparing" counts as
+#     distinct tokens.
+#   - No whitelist; repo vocabulary ("disclosure chain", etc.) warns.
+#
+# Scoped to person artifacts in v1; extends to other node types as
+# their F-sub-phase ships (Step F on the roadmap).
+# =============================================================================
+
+# Common English stopwords dropped from token-comparison. About 110
+# entries; calibrated from the D-era token-drift check plus light
+# pruning based on the Fravor i1 audit signal.
+STOPWORDS = {
+    # Articles
+    "a", "an", "the",
+    # Pronouns
+    "he", "she", "it", "they", "we", "you", "his", "her", "their",
+    "its", "our", "my", "your", "this", "that", "these", "those", "who",
+    "whom", "whose", "which", "what",
+    # Auxiliaries
+    "is", "was", "are", "were", "be", "been", "being", "am",
+    "have", "has", "had", "do", "does", "did", "done",
+    "will", "would", "can", "could", "should", "may", "might", "must",
+    "shall",
+    # Prepositions
+    "of", "in", "on", "at", "to", "from", "for", "with", "by", "as",
+    "into", "onto", "upon", "off", "out", "over", "under", "above",
+    "below", "between", "among", "through", "during", "within",
+    "without", "against", "about", "across", "after", "before", "behind",
+    # Conjunctions
+    "and", "or", "but", "so", "if", "because", "since", "until",
+    "unless", "when", "where", "while", "although", "though", "than",
+    "yet", "whether",
+    # Negations / degree
+    "not", "no", "never", "also", "then", "now", "just", "only", "even",
+    "else", "still", "already", "yet", "ever", "again", "very", "too",
+    "quite", "rather", "much", "more", "most", "less", "least",
+    # Determiners / quantifiers
+    "some", "any", "all", "each", "every", "both", "either", "neither",
+    "one", "two", "three", "other", "another", "same", "such", "own",
+    "here", "there",
+    # Common verbs that carry little specific content
+    "says", "said", "say", "saying", "went", "goes", "gone", "come",
+    "came", "coming", "get", "got", "getting", "make", "made", "making",
+    "take", "took", "taking", "taken",
+}
+
+# Fields to check, keyed by target_node type. Top-level prose fields
+# are pooled against the union of all primary_sources. Per-entry prose
+# fields use each entry's own source.path.
+PROSE_FIELDS_BY_TYPE = {
+    "person": [
+        "background",
+        "uap_relevance",
+        "credibility_notes",
+    ],
+    # F.2+ extensions:
+    # "organization": ["overview", "description", ...],
+    # "event": ["description", ...],
+    # "finding": ["what_this_establishes", ...],
+}
+
+# Per-entry prose fields. Shape: (list_key, field_name_within_entry).
+# Each entry's source.path provides the token pool.
+PROSE_ENTRY_FIELDS_BY_TYPE = {
+    "person": [
+        ("timeline",             "event"),
+        ("affiliations",         "role"),
+        ("relationships",        "relationship"),
+        ("corroboration_items",  "note"),
+        ("program_involvement",  "role"),
+        ("publication_record",   "beat"),
+        ("vouching_chain",       "attestation"),
+    ],
+}
+
+# Thresholds (module-level so tuning is one-line after corpus accrual).
+# Error thresholds are intentionally conservative — they fire only on
+# near-total vocabulary divergence (likely fabrication or machine-
+# translated paraphrase). Warn-level catches legitimate paraphrase,
+# synonyms, word-form drift, and synthesis framing; contributor review
+# decides per-case. Calibrated from F.1c Fravor i1 baseline: synthesis-
+# heavy fields (uap_relevance, credibility_notes) run at 45–66%
+# contributor vocabulary against source and should warn, not error.
+PROSE_DRIFT_TOP_LEVEL_ERROR_PCT = 0.80    # error when ≥80% tokens unmatched
+PROSE_DRIFT_PER_ENTRY_ERROR_PCT = 0.80    # error when ≥80% tokens unmatched
+PROSE_DRIFT_WARN_MIN = 1                  # warn when ≥1 unmatched token
+
+# Cache source-file tokens per validator run so a multi-artifact or
+# multi-entry run doesn't re-extract the same file N times.
+_source_token_cache = {}
+
+
+def _extract_source_text(source_path_abs):
+    """Extract plaintext from a source file. Mirrors the pattern from
+    scripts/validate.py's extract_source_text() and scripts/extract-source.py's
+    extract() — flat-scripts-pattern duplication rather than a shared lib.
+    Returns None on failure (missing pdftotext; unsupported extension;
+    read error).
+    """
+    suffix = source_path_abs.suffix.lower()
+    if suffix == ".pdf":
+        try:
+            proc = subprocess.run(
+                ["pdftotext", "-layout", str(source_path_abs), "-"],
+                capture_output=True, text=True, timeout=60,
+            )
+            if proc.returncode == 0:
+                return proc.stdout
+        except (FileNotFoundError, subprocess.TimeoutExpired):
+            return None
+        return None
+    if suffix in (".html", ".htm", ".txt", ".md"):
+        try:
+            return source_path_abs.read_text(encoding="utf-8", errors="replace")
+        except OSError:
+            return None
+    return None
+
+
+def extract_significant_tokens(text):
+    """Return a set of significant tokens: lowercase words, ≥3 chars,
+    excluding STOPWORDS. Preserves intra-word hyphens (so `f/a-18f`,
+    `cvn-68`, `world-famous` survive). Strips possessive `'s` suffix
+    (so `fravor's` → `fravor`) — possessive forms are noise against
+    source text that typically uses first-person `my` / `I`. Strips
+    backtick-bracket repo-path wraps (they're identifiers, not
+    source-attested content) and markdown emphasis characters.
+    """
+    if not text:
+        return set()
+    text = re.sub(r"\[`/[^`]+`\]", "", str(text))
+    text = re.sub(r"[*_`]", "", text)
+    text = text.lower()
+    words = re.findall(r"[a-z0-9][a-z0-9\-']+", text)
+    # Strip trailing possessive `'s` to collapse "fravor" ↔ "fravor's".
+    # (Leaves intra-word apostrophes alone: "don't" stays "don't".)
+    words = [re.sub(r"'s$", "", w) for w in words]
+    return {w for w in words if len(w) >= 3 and w not in STOPWORDS}
+
+
+def load_source_tokens(source_rel_path):
+    """Load and tokenize a source file. source_rel_path is relative to
+    sources/ (matches the manifest.yaml and artifact source.path shape).
+    Cached per-run. Returns a set of significant tokens, or None if the
+    source is missing / unextractable.
+    """
+    if source_rel_path in _source_token_cache:
+        return _source_token_cache[source_rel_path]
+    source_abs = SOURCES_DIR / source_rel_path
+    if not source_abs.exists():
+        _source_token_cache[source_rel_path] = None
+        return None
+    text = _extract_source_text(source_abs)
+    if text is None:
+        _source_token_cache[source_rel_path] = None
+        return None
+    tokens = extract_significant_tokens(text)
+    _source_token_cache[source_rel_path] = tokens
+    return tokens
+
+
+def _judge_drift(rel, location, prose_tokens, unmatched, *,
+                 error_pct, warn_min):
+    """Classify an unmatched token set as warn / error / silent per
+    the configured thresholds. Returns a list of Issue (0 or 1 entry).
+    """
+    if not unmatched:
+        return []
+    rate = len(unmatched) / len(prose_tokens) if prose_tokens else 0.0
+    preview = ", ".join(sorted(unmatched)[:8])
+    if len(unmatched) > 8:
+        preview += f", … (+{len(unmatched) - 8} more)"
+    if rate >= error_pct:
+        return [Issue(rel, "error",
+            f"{location}: {rate:.0%} of significant tokens "
+            f"({len(unmatched)}/{len(prose_tokens)}) not in source — "
+            f"likely fabrication or heavy paraphrase. "
+            f"Unmatched: {preview}")]
+    if len(unmatched) >= warn_min:
+        return [Issue(rel, "warn",
+            f"{location}: {len(unmatched)} significant token(s) not in "
+            f"source (prose-drift check — contributor review): "
+            f"{preview}")]
+    return []
+
+
+def check_prose_drift(rel, data, target_type):
+    """Check #16 — prose-field token drift. Verifies contributor-prose
+    fields on the artifact source their vocabulary from the primary-
+    source text. Scoped to types in PROSE_FIELDS_BY_TYPE /
+    PROSE_ENTRY_FIELDS_BY_TYPE; no-ops on other types.
+    """
+    issues = []
+    if target_type not in PROSE_FIELDS_BY_TYPE \
+       and target_type not in PROSE_ENTRY_FIELDS_BY_TYPE:
+        return issues
+
+    # Pool top-level source tokens = ∪ primary_sources[].path
+    top_level_pool = set()
+    primary_sources = _entries(data, "primary_sources")
+    for src in primary_sources:
+        if not isinstance(src, dict):
+            continue
+        path = src.get("path")
+        if not path:
+            continue
+        tokens = load_source_tokens(path)
+        if tokens is not None:
+            top_level_pool |= tokens
+    # If we couldn't load any source, short-circuit with one warn (not
+    # error — source extraction failure is infrastructural, not content drift)
+    if not top_level_pool and primary_sources:
+        issues.append(Issue(rel, "warn",
+            "prose-drift check: no source text could be extracted from "
+            "primary_sources — check skipped (pdftotext missing? source "
+            "files present on disk?)"))
+        return issues
+
+    # --- Top-level prose fields ---
+    for field in PROSE_FIELDS_BY_TYPE.get(target_type, []):
+        prose = data.get(field) or ""
+        prose_tokens = extract_significant_tokens(prose)
+        if not prose_tokens:
+            continue
+        unmatched = prose_tokens - top_level_pool
+        issues.extend(_judge_drift(
+            rel, field, prose_tokens, unmatched,
+            error_pct=PROSE_DRIFT_TOP_LEVEL_ERROR_PCT,
+            warn_min=PROSE_DRIFT_WARN_MIN,
+        ))
+
+    # --- Per-entry prose fields ---
+    for list_key, entry_field in PROSE_ENTRY_FIELDS_BY_TYPE.get(target_type, []):
+        for i, entry in enumerate(_entries(data, list_key)):
+            if not isinstance(entry, dict):
+                continue
+            prose = entry.get(entry_field) or ""
+            prose_tokens = extract_significant_tokens(prose)
+            if not prose_tokens:
+                continue
+            src = entry.get("source") or {}
+            src_path = src.get("path")
+            if not src_path:
+                continue
+            source_tokens = load_source_tokens(src_path)
+            if source_tokens is None:
+                continue  # source-extraction failure already warned at top
+            unmatched = prose_tokens - source_tokens
+            issues.extend(_judge_drift(
+                rel,
+                f"{list_key}[{i}] ({entry.get('id', '?')!r}) {entry_field}",
+                prose_tokens, unmatched,
+                error_pct=PROSE_DRIFT_PER_ENTRY_ERROR_PCT,
+                warn_min=PROSE_DRIFT_WARN_MIN,
+            ))
+
     return issues
 
 

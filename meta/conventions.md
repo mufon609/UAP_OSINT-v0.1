@@ -95,6 +95,29 @@ mechanical drift checks (`validate-research.py` claim-anchor + `review-coverage.
 token-drift). Document nodes are categorically excluded — the document
 is the synthesis target, not the subject.
 
+### Prose-drift discipline on synthesis nodes
+
+Beyond the claim-inventory claim-anchor machinery described above,
+synthesis nodes carry contributor-prose surfaces that aren't quote-
+based: per-node `background` / `uap_relevance` / `credibility_notes`
+paragraphs, per-entry description fields (timeline events, affiliation
+roles, relationship descriptions, corroboration notes). These are
+labeled synthesis — they exist to frame the evidentiary content — but
+the F.1c Fravor audit (2026-04-19) surfaced a real failure mode where
+contributor prose introduces unstated premises, paraphrase drift, and
+content widening even when every referenced quote is verbatim-clean.
+
+`validate-research.py` check #16 (prose-field token drift) verifies
+that significant words in these prose fields appear in the referenced
+primary-source text. Unmatched tokens warn (expected noise: synonym
+pairs, word-form drift, repo-conventional vocabulary, acronym
+expansion); high unmatched rates error (≥80%, indicating likely
+fabrication). Contributor reviews each warning and asks: *does this
+unmatched token introduce a fact or premise the source doesn't
+attest?* The check is a mechanical floor; careful contributor review
+remains the quality gate. See `BACKLOG.md` entry for check #16 v2
+extensions (n-gram adjacency, lemmatization, whitelists).
+
 ---
 
 ## Confirmed vs Flagged

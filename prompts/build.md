@@ -325,6 +325,31 @@ python3 scripts/validate-research.py research/{slug}.yaml
 Must exit 0 before leaving Phase I. Any errors must be corrected by
 going back to the appropriate step above.
 
+**Prose-drift check #16 warnings — review before leaving Phase I.**
+On person artifacts, the validator runs a token-drift check across
+contributor-authored prose fields (`background`, `uap_relevance`,
+`credibility_notes`, and structured-entry descriptions). It flags
+every significant word in a prose field that doesn't appear in the
+referenced primary-source text. **Warnings are expected** on these
+categories and don't require changes:
+
+- Synonym pairs (source "onboard" vs prose "aboard"; source "took" vs prose "captured")
+- Word-form drift (source "investigate" vs prose "investigation"; source "publish" vs prose "published")
+- Repo-conventional vocabulary ("testimony", "subcommittee", "archived", "corroboration", "disclosure chain")
+- Acronym expansion / collapse (source "To The Stars Academy" vs prose "TTSA")
+- Hyphenated compounds (source "90 second" vs prose "90-second")
+
+But warnings are also how **real drift** surfaces. For each warning,
+ask: *does the unmatched token introduce a fact or premise the source
+doesn't attest?* If yes, the prose field needs tightening. The four
+drift issues found in the F.1c Fravor audit (F.1c RCA in commit
+message `f67f6e8`) all surfaced as unmatched-token warnings in prose
+fields — the check exists specifically to make that review discipline
+mechanical.
+
+If check #16 fires an **ERROR** (≥80% unmatched tokens), the field is
+near-certainly fabricated or machine-translated. Fix before proceeding.
+
 ### Phase I complete
 
 At this point you have a structurally-valid, content-populated
