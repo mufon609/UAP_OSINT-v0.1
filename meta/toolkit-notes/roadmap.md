@@ -684,18 +684,68 @@ with research artifact populated from the archived Fravor written-
 testimony source. Will register the remaining Nimitz-cluster broken-
 link stubs. Hard rule: one node per session.
 
-### F.3 — transcript  ⏸ PENDING
+### F.3 — transcript  ⏸ PENDING (design anchored 2026-04-19)
 
-Two kinds after the post-Step-D revision (`hearing`, `other`).
-Design pass:
-- `derived_from` pointer — does the renderer auto-populate the
-  Publication Record's "Underlying Media Node" row from the
-  frontmatter, or leave it as a contributor-filled field?
-- Material Differences section on hearings — what's the artifact
-  shape for the written-vs-oral divergence entries?
+Two kinds after the post-Step-D revision (`hearing`, `other`). Design
+pass completed in the F.2c session post-commit (2026-04-19); next
+session picks up implementation with the two decisions below locked.
 
-Pilot candidate: `/transcripts/2023-07-26-house-fravor` — companion
-transcript to the already-built Fravor written-testimony document.
+**Decision 1: `derived_from` pointer — auto-populate.**
+When the transcript frontmatter carries `derived_from` (path to the
+underlying media or document node), the renderer emits a Publication
+Record row from the frontmatter directly. Row label dispatched by path
+prefix — `Underlying Media Node` for `/media/...`, `Underlying
+Document` for `/documents/...`. When the field is absent, the row is
+omitted (absence is its own signal; no "N/A" placeholder). Parallel
+treatment for the optional `source_medium` frontmatter field —
+auto-populate a Source Medium row when set. Rationale: keeps
+frontmatter as the single source of truth, preserves Phase II
+deterministic-render discipline, matches review-coverage Boundary
+integrity, and surfaces provenance in the section where investigators
+already scan for it rather than in frontmatter that requires a view
+switch. No artifact field duplication needed.
+
+**Decision 2: Material Differences — per-divergence entries with
+cross-artifact quote refs.**
+Each entry carries: `id`, `topic` (short descriptor), `divergence_class`
+(enum: `elaboration` | `contradiction` | `omission` | `clarification` |
+`qa-addition`), `written_ref` (cross-artifact reference
+`{artifact: documents/<slug>, quote_id: qN}`), `oral_ref`
+(intra-artifact `quote_id`), `note` (contributor synthesis; check #16
+verified against the pooled source texts of both referenced quotes).
+Renderer emits a table with columns Topic / Class / Written Quote /
+Oral Quote / Note; quote cells show excerpted text + link to the source
+node anchor, not duplicated verbatim (the full passages live in each
+artifact's Key Passages section).
+
+This is the first case requiring cross-artifact quote-ref resolution.
+Validator extension scope: `validate-research.py` resolves
+`{artifact, quote_id}` pointers by loading the referenced artifact and
+verifying the quote_id exists in its `quotes` list; error shape
+matches existing intra-artifact `quote_ref` errors. Denormalization
+(copying written-quote text onto the transcript artifact) was
+considered and rejected — violates single-source-of-truth and goes
+stale when the document artifact's location refs are corrected.
+Moving Material Differences to the hearing event node was also
+considered and deferred to an architectural-threads note — justified
+only when a hearing aggregates 5+ witnesses' divergences.
+
+**F.3 sub-phase decomposition** (mirrors F.1a/b/c and F.2a/b/c):
+
+- **F.3a** — schema + template + validator + scaffolder. Schema delta
+  adds `material_differences` conditional key on hearing-kind transcript
+  artifacts; new `material_differences_entry` shape + divergence-class
+  vocabulary + cross-artifact quote-ref validation. `derived_from` /
+  `source_medium` already in schema — no changes needed there.
+- **F.3b** — Phase II renderer. Publication Record auto-populate from
+  frontmatter (both kinds); Speakers + Key Passages (both kinds);
+  Material Differences (hearing only) with cross-artifact quote
+  resolution.
+- **F.3c** — pilot. `/transcripts/2023-07-26-house-fravor` — companion
+  transcript to the already-built Fravor written-testimony document.
+  First test of cross-artifact Material Differences resolution;
+  stenographic PDF already archived at
+  `sources/government/congress-gov-house-hearing-transcript-20230726.pdf`.
 
 ### F.4 — media  ⏸ PENDING
 
