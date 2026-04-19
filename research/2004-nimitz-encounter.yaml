@@ -1,0 +1,408 @@
+id: research/2004-nimitz-encounter
+type: research-artifact
+schema_version: 1
+target_node: events/2004-nimitz-encounter
+status: active
+created: '2026-04-19'
+last_iteration: i1
+description: |
+  In November 2004, Commander [`/people/david-fravor`] — Commanding Officer of Strike Fighter Squadron Forty-One, the "Black Aces" ([`/organizations/vfa-41`]) — was scheduled to lead a 2 V 2 Air to Air training exercise from [`/organizations/uss-nimitz`] (CVN-68). His flight of 2 F/A-18Fs was the Blue Air, controlled by [`/organizations/uss-princeton`] (CG-59). The Red Air was flown by Marine squadron VMFA-232 ([`/organizations/vmfa-232`]). [`/organizations/vfa-41`] was at the beginning of a workup cycle that would prepare the squadron for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq; the squadron was attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) and stationed onboard [`/organizations/uss-nimitz`].
+
+  On launch, the air controller on the Princeton told the flight training was going to be suspended for real world tasking. The flight proceeded towards a contact to the west of their CAP point, roughly 40 miles South of the ship. The air controller on the ship had been observing these objects on their Aegis combat system for the previous 2 weeks — descending from above 80,000ft down to 20,000ft, would stay for hours, then going straight back up. At 20,000 ft the controller called Merge Plot. The weather on the day of the incident was clear skies, light winds, calm seas. All 4 looked down and saw a small white Tic Tac shaped object with the longitudinal axis pointing N/S and moving very abruptly over white water. There were no Rotors, no Rotor wash, and no visible flight control surfaces like wings. Fravor and his WSO decided to go down to get closer while the other aircraft stayed in High cover. The object suddenly shifted its longitudinal axis, aligned it with Fravor's aircraft, and began to climb in a clockwise climbing turn. As Fravor pulled nose onto the object at approximately ½ of a mile, it rapidly accelerated and disappeared right in front of the aircraft. Fravor's wingman [`/people/alex-dietrich`], roughly 8,000ft above, also lost visual; the white water was also gone.
+
+  As the flight turned back towards the CAP point, the air controller let them know the object had reappeared on the Princeton's Aegis SPY 1 radar — the Tic Tac Object had traveled 60 miles in a very short period of time (less than a minute). Fravor returned to Nimitz and mentioned what the flight had witnessed to one of his crews who were getting ready to launch. It was that crew that took the now famous approximately 90 second video that was released by the USG in 2017 ([`/media/flir1-video`]). Fravor's Statement for the House Oversight Committee ([`/documents/written-testimony-fravor-2023`]) says that the incident was never investigated, none of his crew were ever questioned, and tapes were never taken. Not until 2009 did [`/people/jay-stratton`] contact Fravor to investigate what was observed; Stratton was part of the ATIP (Anomalous Threat Identification Program) program led by Lue Elizondo ([`/people/luis-elizondo`]) out of the [`/organizations/dod`].
+primary_sources:
+- path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-2004-nimitz-encounter-0.txt
+  pdf_metadata:
+    author: DMF DMF
+    creator: Acrobat PDFMaker 23 for Word
+    producer: Adobe PDF Library 23.3.20
+    creation_date: Tue Jul 25 14:16:09 2023 EDT
+    mod_date: Tue Jul 25 14:16:10 2023 EDT
+    pages: 3
+document_intrinsic: {}
+context_extrinsic:
+  display_title: 2004 USS Nimitz Encounter
+  primary_source_url: https://oversight.house.gov/wp-content/uploads/2023/07/David-Fravor-Statement-for-House-Oversight-Committee.pdf
+event_intrinsic:
+  date: '2004-11'
+  location: At sea; CAP point roughly 40 miles South of USS Nimitz (CVN-68); initial visual acquisition to the west of the CAP point
+  weather: clear skies, light winds, calm seas (no whitecaps from the waves)
+  instruments_involved:
+  - Aegis combat system (USS Princeton)
+  - Aegis SPY 1 radar (USS Princeton)
+  - APG-73 radar (F/A-18F)
+  - Targeting pod (follow-on F/A-18F crew)
+  - Visual observation (4 aircrew, 2-plane flight)
+quotes: []
+claims: []
+participants:
+- id: p1
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  participant_path: /people/david-fravor
+  capacity: witness-eyewitness
+  role: Flight lead; F/A-18F pilot; Commanding Officer of Strike Fighter Squadron Forty-One
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 6-7, 15-55
+- id: p2
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  participant_path: /people/alex-dietrich
+  capacity: witness-eyewitness
+  role: F/A-18F pilot; Fravor's wingman
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 49, 71-74
+- id: p3
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  participant_path: /organizations/uss-princeton
+  capacity: observer
+  role: Aegis combat system radar control; CG-59
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 17, 28-31, 50-53
+- id: p4
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  participant_path: /organizations/uss-nimitz
+  capacity: other
+  role: Carrier from which Fravor's flight launched; CVN-68
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 8, 21, 57
+- id: p5
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  participant_path: /organizations/vfa-41
+  capacity: other
+  role: Fravor's squadron; Strike Fighter Squadron Forty-One, Black Aces
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 6-7
+- id: p6
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  participant_path: /organizations/vmfa-232
+  capacity: other
+  role: Marine F/A-18 squadron; Red Air was being flown by them
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 18-19
+- id: p7
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  participant_path: /organizations/carrier-airwing-eleven
+  capacity: other
+  role: Strike Fighter Squadron Forty-One was attached to this airwing
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: line 8
+timeline:
+- id: t1
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  date: '2004-11'
+  event: Strike Fighter Squadron Forty-One at the beginning of a workup cycle at sea that would prepare the squadron for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq
+  category: other
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 8-13
+- id: t2
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  date: '2004-11'
+  event: 2 V 2 Air to Air training exercise scheduled; Fravor's flight of 2 F/A-18Fs (Blue Air) controlled by USS Princeton; Marine squadron VMFA-232 flying Red Air
+  category: other
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 15-19
+- id: t3
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  date: '2004-11'
+  event: On launch, training suspended for real world tasking; flight proceeded towards a contact to the west of the CAP point, roughly 40 miles South of the ship
+  category: other
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 21-25
+- id: t4
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  date: '2004-11'
+  event: All 4 looked down and saw a small white Tic Tac shaped object over white water; as Fravor pulled nose onto it, the object rapidly accelerated and disappeared; wingman 8,000ft above also lost visual
+  category: observation
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 33-49
+- id: t5
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  date: '2004-11'
+  event: Object reappeared on the Princeton's Aegis SPY 1 radar at the flight's CAP point, roughly 60 miles east — traveled in less than a minute
+  category: observation
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 50-55
+- id: t6
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  date: '2004-11'
+  event: After Fravor returned to Nimitz, one of his crews getting ready to launch took the approximately 90 second targeting pod video
+  category: observation
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 57-62
+- id: t7
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  date: '2009'
+  event: Jay Stratton contacted Fravor to investigate what was observed; Stratton was part of the ATIP program led by Lue Elizondo out of the DOD
+  category: other
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 66-68
+  node_link: /people/jay-stratton
+- id: t8
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  date: '2016'
+  event: Alex Dietrich contacted Fravor; Luis Elizondo contacted Fravor shortly after
+  category: other
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 71-76
+  node_link: /people/alex-dietrich
+- id: t9
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  date: '2017'
+  event: USG released the approximately 90 second targeting pod video
+  category: publication
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 58-59
+  node_link: /media/flir1-video
+corroboration_items:
+- id: c1
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  observer_path: /people/alex-dietrich
+  observation_type: testimonial
+  note: Other F/A-18F pilot in Fravor's flight; also lost visual when the object rapidly accelerated and disappeared
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 49-50, 71-74
+- id: c2
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  observer_path: /organizations/uss-princeton
+  observation_type: instrumented
+  note: Aegis combat system had been observing these objects for the previous 2 weeks; object reappeared on the Aegis SPY 1 radar at the CAP point roughly 60 miles east
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 28-31, 50-53
+- id: c3
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  observer_path: /media/flir1-video
+  observation_type: documentary
+  note: Approximately 90 second targeting pod video; one of Fravor's crews getting ready to launch took it; released by the USG in 2017
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 57-62
+entities_referenced:
+- id: e1
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: person
+  name: David Fravor
+  wrap_path: /people/david-fravor
+- id: e2
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: person
+  name: Alex Dietrich
+  wrap_path: /people/alex-dietrich
+- id: e3
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: person
+  name: Jay Stratton
+  wrap_path: /people/jay-stratton
+- id: e4
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: person
+  name: Luis Elizondo
+  wrap_path: /people/luis-elizondo
+- id: e5
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Strike Fighter Squadron Forty-One (VFA-41, Black Aces)
+  wrap_path: /organizations/vfa-41
+- id: e6
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Carrier Airwing Eleven
+  wrap_path: /organizations/carrier-airwing-eleven
+- id: e7
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: organization
+  name: USS Nimitz (CVN-68)
+  wrap_path: /organizations/uss-nimitz
+- id: e8
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: organization
+  name: USS Princeton (CG-59)
+  wrap_path: /organizations/uss-princeton
+- id: e9
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Marine squadron VMFA-232
+  wrap_path: /organizations/vmfa-232
+- id: e10
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Department of Defense
+  wrap_path: /organizations/dod
+- id: e11
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: media
+  name: FLIR1 video
+  wrap_path: /media/flir1-video
+- id: e12
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  entity_type: document
+  name: Fravor written testimony (2023)
+  wrap_path: /documents/written-testimony-fravor-2023
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  observed: Lue
+  canonical: Luis
+  location: lines 68, 78
+  source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: |
+    Source renders Luis Elizondo's first name as "Lue" — TWO instances in sworn congressional testimony (lines 68 and 78), not one. The 2-instance pattern is evidentiary: "Lue" is Fravor's alias-of-record for Elizondo in this submission, not a typo. When the Elizondo person node is built, this should surface as a `document_intrinsic.aliases: ["Lue"]` entry on that node, attributed to the Fravor-testimony source.
+
+    Resolution handling on this artifact: source form preserved in prose ("Lue Elizondo" in the description and in the relevant timeline cell) rather than substituted with canonical "Luis". Wrap paths to `[`/people/luis-elizondo`]` use the canonical slug so cross-references still resolve; display text in prose uses source form. The schema resolution enum (`preserve-as-sic-in-quotes`) nominally assumes quote-block contexts — on this encounter-event artifact there are no quote blocks, so the spirit of the rule is extended: preserve source form wherever it is the evidentiary referent of record.
+
+    Fravor's person artifact (i1) does not track this quirk for the same source — an inconsistency to resolve when that artifact is next audited.
+research_gaps:
+- id: rg1
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  statement: The exact calendar date within November 2004 is not stated in this source (only "Nov 2004" and "at sea for roughly 2 weeks" into the November–December at-sea period)
+  methodology: Cross-reference with Fravor's 2017 ABC News Nightline interview, 2021 CBS 60 Minutes segment, or the 2023-07-26 House Oversight oral testimony once archived; or against Navy operational records
+  resolved: false
+- id: rg2
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  statement: Identity of Fravor's WSO on the November 2004 flight is not given in this source
+  methodology: Cross-reference with Navy flight logs or with the 2023-07-26 oral testimony ([`/transcripts/2023-07-26-house-fravor`]) when archived
+  resolved: false
+- id: rg3
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  statement: Identity of the follow-on Nimitz crew that took the approximately 90 second targeting pod video is not given in this source
+  methodology: Primary-source verification against other Nimitz-encounter accounts; Chad Underwood is widely reported as the FLIR1-video pilot in secondary coverage but not named in this source
+  resolved: false
+- id: rg4
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  statement: The "Unofficial Official Report" that Fravor mentions as "available on the internet" is not identified by title, author, or link in this source
+  methodology: Identify the referenced document; archive if accessible; assess provenance and scope
+  resolved: false
+- id: rg5
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  statement: Geographic theater of operations (ocean region) is not named in this source — source only says "at sea" with the CAP point roughly 40 miles South of the ship
+  methodology: Cross-reference with Navy operational records for the USS Nimitz Battle Group November–December 2004 at-sea period; or with Fravor's other on-record accounts
+  resolved: false
+rumors:
+- id: r1
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  claim: The pilot who took the approximately 90 second targeting pod video was Chad Underwood
+  status: not-primary-source-established
+  observed_sources:
+  - New York Magazine interview with Chad Underwood (2019)
+  - Multiple secondary-source accounts
+  primary_source_search:
+  - Underwood's own on-record statements (e.g., NYMag 2019 interview)
+  - Navy aircraft flight logs for the period
+  note: Fravor's 2023 written testimony says only "one of my crews who were getting ready to launch" — no name given. Widely reported in secondary coverage as Chad Underwood.
+- id: r2
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  claim: The encounter took place off the coast of Southern California
+  status: not-primary-source-established
+  observed_sources:
+  - Multiple secondary-source accounts
+  primary_source_search:
+  - Navy operational records for USS Nimitz Battle Group November–December 2004
+  - Fravor's other on-record statements
+  note: Fravor's 2023 written testimony places the encounter "at sea" with the CAP point "roughly 40 miles South of the ship" — no geographic region is named in this source.
+- id: r3
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  claim: The encounter occurred on November 14, 2004
+  status: not-primary-source-established
+  observed_sources:
+  - Multiple secondary-source accounts
+  primary_source_search:
+  - Navy flight logs
+  - Fravor's oral testimony at the 2023-07-26 House Oversight hearing
+  note: Fravor's 2023 written testimony gives only "Nov 2004" and "at sea for roughly 2 weeks" from the Early November start — consistent with mid-November but not specifying a date.
+iterations:
+- id: i0
+  date: '2026-04-19'
+  trigger: initial-build
+  summary: |
+    First end-to-end population of the 2004 USS Nimitz encounter event artifact under the F.2b encounter-event renderer pipeline (F.2c pilot). Single primary source — Fravor's 2023 written testimony to the House Oversight Committee — which is the only primary-source account of the encounter currently archived for this repository. Populated event_intrinsic (date, location, weather, instruments_involved), context_extrinsic (display_title, primary_source_url), description (3-paragraph prose summary drawing on source vocabulary), 7 participants, 9 timeline entries, 3 corroboration items (Dietrich testimonial, USS Princeton instrumented, FLIR1 video documentary), 12 entities_referenced, 1 naming_quirk (Lue→Luis), 5 research_gaps, and 3 rumors (Underwood as FLIR1 pilot; Southern California location; November 14 exact date) — each widely reported in secondary sources but not attested in this primary source. Quotes and claims intentionally empty: the encounter-event renderer emits no Key Testimony or What-This-Establishes section, so coverage-check compliance requires verbatim content flow through the structured surfaces (description, timeline events, participant roles, corroboration notes) rather than through a quotes list.
+  entries_added: []
+  entries_modified: []
+- id: i1
+  date: '2026-04-19'
+  trigger: audit-correction
+  summary: |
+    Audit driven by contributor feedback on the i0 check #16 warning set. The i0 baseline shipped with 4 check #16 warnings that I had rationalized as "legitimate synthesis vocabulary" (word-form drift, repo-conventional naming, and a tracked naming quirk). User feedback corrected this: every warning in EVIDENTIARY prose needs real resolution — either source-matched prose or promotion of the source-vs-prose variance to structured evidentiary data — not synthesis-acceptance. The "Lue" case in particular: source uses "Lue" twice in sworn congressional testimony, making it Fravor's alias-of-record for Elizondo, not a typo to paper over with canonical substitution.
+
+    Scope clarification from the same exchange: the zero-warnings standard applies to free-prose synthesis fields (description, uap_relevance, credibility_notes, background). It does NOT apply to timeline event cells, which are compact navigational labels — forcing source-form vocabulary there trades readability for no factual gain. Timeline events remain subject to check #16 reporting (the validator is impartial by design) but the contributor policy allows warnings to persist in timeline cells when the source-match edit reduces clarity without adding precision. See feedback_check16_warnings_must_resolve.md for the full policy.
+
+    Corrections applied in this iteration:
+
+      (1) description — "workup cycle preparing for a combat deployment" → "workup cycle that would prepare the squadron for a combat deployment". Source line 9 says "that would prepare us for a combat deployment"; the squadron-scoped referent matches source's "we" = VFA-41.
+
+      (2) description — "staying for hours" → "would stay for hours". Source line 31 exact phrase.
+
+      (3) description — "Fravor's written testimony ([`/documents/written-testimony-fravor-2023`]) states that..." → "Fravor's Statement for the House Oversight Committee ([`/documents/written-testimony-fravor-2023`]) says that...". Source line 1 titles the document "Statement for the House Oversight Committee"; repo-internal filename convention (`written-testimony-*.md`) does not license substituting that convention into content prose.
+
+      (4) description — "led by [`/people/luis-elizondo`]" → "led by Lue Elizondo ([`/people/luis-elizondo`])". Preserves Fravor's 2-instance alias-of-record while keeping the canonical wrap path for cross-reference resolution.
+
+      (5) timeline t1 — "preparing for a combat deployment" → "that would prepare the squadron for a combat deployment". Same fix as (1) in a different entry; this one corrects a subject-referent drift (Battle Group → squadron) and is the edit, not the word-form drift which is exempt.
+
+      (6) naming_quirks nq1 — note strengthened from "source spells the name as Lue; canonical is Luis; use canonical in prose" to "source uses 'Lue' twice in sworn testimony = alias-of-record for Elizondo; source form preserved in prose; schema resolution enum's 'preserve-as-sic-in-quotes' read as 'preserve source form wherever it is the evidentiary referent of record' since encounter events have no quote blocks". Also flagged the cross-artifact inconsistency with Fravor's i1 artifact (which does not yet track this quirk for the same source).
+
+    Intermediate edits reverted after scope clarification: timeline t2 (Red Air verb) and timeline t8 (Elizondo first name) were briefly rewritten to silence check #16 warnings but reverted — both were timeline cells where the source-match edit was active/passive voice or honorific-swap without factual gain, exactly the case the timeline-exempt scope carves out.
+
+    No entries added. No entries removed. No quote text changed (there are no quotes — encounter-event renderer emits none). Final warning count: 2 (timeline t2 "flying", timeline t8 "luis" — both exempt under the timeline-cell scope).
+  entries_added: []
+  entries_modified:
+  - t1
+  - nq1

@@ -53,9 +53,11 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 
 *No nodes yet.*
 
-### Events (0)
+### Events (1)
 
-*No nodes yet.*
+| Node | Status | Kind |
+|---|---|---|
+| `/events/2004-nimitz-encounter` | documented | encounter |
 
 ### Documents (2)
 
