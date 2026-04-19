@@ -464,6 +464,12 @@ def check_quotes(rel, data, manifest_paths, target_type=None):
                 f"quotes[{i}] ({q.get('id')!r}): source.path {src['path']!r} not in sources/manifest.yaml"))
         # observation_type — required on every quote when target_type is
         # person; ignored otherwise. Enum {direct, relayed}.
+        # context — required on every quote when target_type is person;
+        # optional on non-person artifacts (document / transcript / media
+        # carry context at the artifact level). The person renderer
+        # composes the Attributed-to row from `context` + `statement_date`;
+        # a quote missing context renders without an Attributed-to row,
+        # violating the schema's quote_verification_fields requirement.
         if target_type == "person":
             obs = q.get("observation_type")
             if not obs:
@@ -475,6 +481,14 @@ def check_quotes(rel, data, manifest_paths, target_type=None):
                 issues.append(Issue(rel, "error",
                     f"quotes[{i}] ({q.get('id')!r}): observation_type "
                     f"{obs!r} not in {sorted(VALID_OBSERVATION_TYPES)}"))
+            ctx = q.get("context")
+            if not ctx or not str(ctx).strip():
+                issues.append(Issue(rel, "error",
+                    f"quotes[{i}] ({q.get('id')!r}): missing required "
+                    f"'context' (required on person artifacts so the "
+                    f"renderer produces a complete Attributed-to row; "
+                    f"describes where / when / under what circumstances "
+                    f"the speaker made the statement)"))
         # observation_type on non-person artifacts: unused but tolerated;
         # warn if set since it signals possible confusion.
         elif target_type is not None and q.get("observation_type"):

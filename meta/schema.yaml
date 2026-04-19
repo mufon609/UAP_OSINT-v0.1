@@ -485,7 +485,16 @@ types:
       - last_iteration        # i0 | i1 | i2 ... (bumps with each iteration)
       - description           # 1-3 paragraphs of prose; renders as node's Description section
       - primary_sources       # list — sources this artifact draws on
-      - document_intrinsic    # dict — facts the primary source(s) state internally
+      - document_intrinsic    # dict — facts the primary source(s) state internally.
+      #   Per-type key conventions (read by the Phase II renderer):
+      #     document:  internal_title, internal_date, authors_per_document,
+      #                classification, classification_markings_on_document, pages
+      #     person:    full_name, aliases, nationality, profession
+      #                (renders as the `## Identity` table rows)
+      #     other types: extended as their renderers ship (F.2+ / BACKLOG #6)
+      #   Every key is a fact the primary source(s) attest to. Facts not
+      #   attested in a primary source don't belong here — they belong in
+      #   `description` (synthesis, labeled) or don't enter the record.
       - context_extrinsic     # dict — contextual metadata (hearing date, etc.)
       - quotes                # list — verbatim-quotable passages
       - claims                # list — atomic claims the sources establish
@@ -587,6 +596,13 @@ types:
       optional: [significance, context, observation_type, category, statement_date]
       # text: verbatim quote, YAML literal block (|) preserves multi-line
       # source: object with path + location (single source per quote)
+      # context: where / when / under what circumstances the speaker
+      #   made the statement. Composed into the Attributed-to line of
+      #   the rendered verification block. Required on person artifacts
+      #   (enforced by validate-research.py check_quotes) — every
+      #   person-statement needs to carry its venue. Optional on
+      #   document / transcript / media artifacts where the source
+      #   document itself carries the context.
       # observation_type: direct | relayed
       #   Required on every quote when target_node type is `person`.
       #   `direct`  — first-hand sensory observation by the person
@@ -772,6 +788,7 @@ types:
       - "rumor status in [not-primary-source-established, primary-source-identified, primary-source-disputed]"
       - "entity entity_type in [person, organization, document, event, transcript, media, location, finding]"
       - "observation_type (quotes, required on person artifacts) in [direct, relayed]"
+      - "context (quotes) required on person artifacts; optional on document / transcript / media"
       - "corroboration_items[].observation_type in [testimonial, instrumented, government-statement, documentary]"
       - "program_involvement[].evidentiary_basis in [primary-source, sworn-testimony, on-record, self-attested, secondary]"
       - "program_involvement[].confidence in [high, medium, low]"

@@ -463,37 +463,25 @@ validator checks is worth tracking so it doesn't accumulate.
 
 ### F.1b audit findings — descriptive-only and forward-looking
 
-Three F.1b observations worth tracking. Behavior is correct today;
-these are either documentation gaps or future enhancements.
+Four F.1b observations. Items 1 and 2 shipped in the 2026-04-19 pre-
+F.1c hardening pass; items 3 and 4 remain open but reframed.
 
-1. **`quote_verification_fields.required` (schema) is descriptive-only.**
-   Schema lists `[Attributed to, Source, Verified]` as required fields
-   in a verification block, but `validate.py`'s verification-block
-   check (called by `check_verbatim_quotes` and the
-   `requires_quote_verification` section rule) only scans for the
-   `Verified` row. If a contributor-written block omits `Attributed to`,
-   it passes. F.1b's renderer omits the `Attributed to` row entirely
-   when both `context` and `statement_date` are empty on a quote entry
-   — graceful degradation, but not ideal. Two fixes possible:
-   - Extend `validate.py` to enforce all three required rows.
-   - Make `context` required on person-artifact quotes so the
-     renderer always has something to put in the Attributed-to line.
-   My lean: the second, because it also improves the rendered node's
-   usefulness to the investigator (every statement carries its
-   context). Small schema tightening.
+1. **`quote_verification_fields.required` (schema) — ✅ RESOLVED
+   2026-04-19.** Schema listed `[Attributed to, Source, Verified]` as
+   required rows in a verification block, but `validate.py` only
+   enforced `Verified`. Fix path chosen: require `context` on person-
+   artifact quotes (input-side discipline) so the renderer always has
+   material for the Attributed-to row. Shipped via
+   `validate-research.py` check_quotes extension + schema comment on
+   `quote_entry.context`.
 
-2. **`document_intrinsic` convention for person artifacts is
-   implicit.** The dict was originally named for document-artifact
-   metadata (internal_title, authors, classification, pages). F.1b's
-   person renderer reads person-specific keys (`full_name`,
-   `aliases`, `nationality`, `profession`) from the same dict without
-   schema documentation of the convention. Two fixes possible:
-   - Add a schema comment under `document_intrinsic` explaining the
-     person-artifact convention (list expected keys).
-   - Rename to `subject_intrinsic` or introduce a separate
-     `person_intrinsic` dict.
-   My lean: schema comment for now. Rename is churn with no
-   functional benefit.
+2. **`document_intrinsic` convention for person artifacts — ✅
+   RESOLVED 2026-04-19.** Schema's required_keys comment now
+   enumerates per-type key conventions: `document` uses
+   internal_title / authors_per_document / classification / pages /
+   etc.; `person` uses full_name / aliases / nationality / profession.
+   Future renderers (F.2+) document their keys in the same comment as
+   they ship.
 
 3. **Name lookup for cross-reference cells.** F.1b emits cross-
    reference paths as backtick-bracket wraps (``[`/organizations/aaro`]``)
@@ -506,20 +494,40 @@ these are either documentation gaps or future enhancements.
    Renderer complexity bump; low urgency because backtick-bracket
    paths render as clickable links and the meaning is recoverable.
 
-4. **entities_referenced duplication with cross-reference lists.**
-   When contributors populate `affiliations`, `relationships`,
-   `corroboration_items`, `program_involvement`, `publication_record`,
-   or `vouching_chain` on a person artifact, they must separately
-   populate `entities_referenced` for review-coverage's stub-linking
-   check to recognize the paths. The paths appear in both places —
-   once as a cross-reference entry and once as an entity stub.
-   Derivation (auto-synthesize `entities_referenced` from the cross-
-   reference lists at validation / render time) would reduce the
-   redundancy and the drift risk (where the two lists disagree).
-   Not urgent — current behavior is correct if contributors follow
-   the convention, and the drift is loud (stub-linking fails).
+4. **entities_referenced vs cross-reference lists — reframed
+   2026-04-19 as separation-of-concerns, not duplication.** Initially
+   flagged as redundant (paths in affiliations / relationships /
+   corroboration_items / etc. must also appear in
+   entities_referenced for stub-linking to fire). On reflection the
+   two lists serve different purposes:
+
+   - `entities_referenced` — entities named in *quote text*. The
+     contributor curates this list from the verbatim passages they
+     registered. Stub-linking checks that every listed entity appears
+     somewhere in the rendered body (catches: contributor wrote a
+     quote mentioning "Kelleher" but forgot to wrap him as
+     `[`/people/colm-kelleher`]` anywhere).
+   - **Cross-reference lists** (affiliations / relationships /
+     corroboration_items / program_involvement / publication_record /
+     vouching_chain) — structural relationships with their own path
+     fields. The renderer emits them as backtick-bracket links
+     automatically. `associate.py` picks them up for the Associated
+     Nodes section. No contributor curation of entities_referenced
+     needed for these.
+
+   **Convention for contributors:** populate `entities_referenced`
+   with entities named in quote text only. Don't duplicate paths that
+   already appear in structured cross-reference lists. Stub-linking
+   will still fire correctly — it just won't check paths that aren't
+   in entities_referenced, and those paths don't need it (they're
+   already linked via the cross-reference table render).
+
+   No code action required. Documenting this note closes the "gap"
+   as a design-clarity win, not a bug.
 
 **Surfaced.** F.1b audit (2026-04-19).
+**Shipped items 1 and 2.** 2026-04-19 pre-F.1c hardening pass.
+**Reframed item 4.** 2026-04-19 (same pass).
 
 ---
 
