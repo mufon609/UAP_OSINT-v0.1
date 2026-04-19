@@ -485,7 +485,51 @@ All four archetypes verified end-to-end: scaffold → artifact →
 build-from-research → validate → review-coverage, all clean. Pre-
 commit chain 6/6 green.
 
-#### F.1c — Fravor pilot  ⏸ NEXT
+#### F.1c — Fravor pilot  ✅ DONE (2026-04-19)
+
+First end-to-end person node through Phase I → II → III under the
+statements-only discipline. `/people/david-fravor` built at iteration
+i0 from the Fravor written-testimony primary source:
+
+- 6 verbatim quotes (4 direct observations of the 2004 Nimitz
+  encounter; 2 relayed narratives about the post-encounter
+  disclosure chain) — all verified character-for-character against
+  the archived PDF by validate.py check #11
+- 2 affiliations (U.S. Navy retired Commander; VFA-41 Commanding
+  Officer 2004-11)
+- 3 relationships (Dietrich wingman; Stratton 2009 contact; Elizondo
+  2016 contact)
+- 3 corroboration items (Dietrich testimonial, USS Princeton Aegis
+  instrumented, FLIR1 video documentary)
+- 6 timeline entries chronologically ordered (2004-11 → 2023-07-26)
+- 16 entities_referenced (all rendered via backtick-bracket links
+  in prose; stub-linking clean)
+- 1 naming_quirk (Delonge → DeLonge, preserve-as-sic-in-quotes)
+- 3 research_gaps (Navy retirement date; VFA-41 command tenure;
+  full statement-set extension from oral testimony / NYT / CBS /
+  podcast sources — i1 scope)
+
+All three phases green:
+  validate-research.py      0 / 0
+  build-from-research.py    0 errors + post-build validate clean
+  review-coverage.py        0 / 0 (Coverage / Boundary / Stub-linking /
+                                   OQ dedup)
+
+Pre-commit chain 6/6 green. 15 broken-link stubs registered in the
+registry — all are Nimitz-cluster nodes not yet built (Dietrich,
+Underwood, Stratton, Elizondo, 2004-nimitz-encounter event, FLIR1
+video, TTSA, UCC Princeton, CVW-11, DOD, etc.). Those are Step G
+work.
+
+Pilot findings absorbed inline or no action needed:
+- Renderer handled all four archetypes (F.1b) plus the real-content
+  eyewitness case (Fravor) without schema or code change
+- `_wrap_path` helper correctly produced backtick-bracket links for
+  every cross-reference path in the rendered body
+- The pre-F.1c hardening (context required on person quotes;
+  document_intrinsic convention documented) made the contributor
+  experience frictionless — quote population was straightforward,
+  no renderer bugs surfaced
 
 First end-to-end person node through Phase I → II → III under the
 statements-only discipline. `/people/david-fravor` — eyewitness
@@ -581,16 +625,21 @@ target: one event, three pilots, one primary media artifact, companion
 transcripts, and one already-built document (Fravor written testimony).
 Cluster-scope first-pass targets:
 
-- `/events/2004-nimitz-encounter` (F.2 pilot)
-- `/people/david-fravor` (F.1 pilot)
-- `/people/alex-dietrich` (follow-on; same archetype)
-- `/people/chad-underwood` (follow-on)
-- `/transcripts/2023-07-26-house-fravor` (F.3 pilot)
-- `/media/flir1-video` (F.4 pilot)
+- `/events/2004-nimitz-encounter` (F.2 pilot) ⏸ pending
+- `/people/david-fravor` (F.1 pilot) ✅ DONE 2026-04-19
+- `/people/alex-dietrich` (follow-on; same archetype) ⏸ pending
+- `/people/chad-underwood` (follow-on) ⏸ pending
+- `/transcripts/2023-07-26-house-fravor` (F.3 pilot) ⏸ pending
+- `/media/flir1-video` (F.4 pilot) ⏸ pending
 
 Cluster-close when the ring validates cleanly against schema,
 cross-references resolve in both directions, and the research-queue
 broken-link registry for the cluster has drained.
+
+The Fravor person node registers 15 broken-link stubs (Nimitz cluster
+entities). Those are the build queue for the remainder of Step G's
+first cluster, interleaved with F.2 (event renderer + Nimitz
+encounter pilot) and F.3/F.4 as needed to unlock dependent content.
 
 **Second cluster — candidate.** Either: 2015 Virginia Beach encounters
 (parallel eyewitness cluster, Graves-anchored) OR a hearing cluster
