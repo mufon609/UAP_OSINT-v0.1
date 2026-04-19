@@ -22,13 +22,13 @@ created: 2026-04-19
 
 ## Background
 
-David Fravor is a retired [`/organizations/us-navy`] Commander. In November 2004 he was the Commanding Officer of Strike Fighter Squadron Forty-One — the "Black Aces" ([`/organizations/vfa-41`]) — attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) and stationed aboard [`/organizations/uss-nimitz`] (CVN-68). The squadron was at the beginning of a workup cycle preparing for a combat deployment to the Persian Gulf in support of ground operations in Iraq.
+David Fravor is a retired [`/organizations/us-navy`] Commander. In November 2004 he was the Commanding Officer of Strike Fighter Squadron Forty-One — the "Black Aces" ([`/organizations/vfa-41`]) — attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) and stationed aboard [`/organizations/uss-nimitz`] (CVN-68). The squadron was at the beginning of a workup cycle preparing for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq.
 
 ---
 
 ## UAP Relevance
 
-Fravor's UAP relevance rests on his first-hand observation of the November 2004 [`/events/2004-nimitz-encounter`] aboard [`/organizations/uss-nimitz`] and his subsequent engagement with the disclosure chain: contacted by [`/people/jay-stratton`] in 2009 for what Fravor identifies as the ATIP program within the [`/organizations/dod`]; contacted by [`/people/luis-elizondo`] in 2016 after reconnecting with his 2004 wingman [`/people/alex-dietrich`]; made aware of Elizondo's departure from the Pentagon and subsequent work with [`/people/tom-delonge`], [`/people/christopher-mellon`], [`/people/steve-justice`] and others to form [`/organizations/ttsa`]. His written testimony was submitted to the House Oversight Committee on July 26, 2023 and is archived as [`/documents/written-testimony-fravor-2023`].
+Fravor's UAP relevance rests on his first-hand observation of the November 2004 [`/events/2004-nimitz-encounter`] while operating from [`/organizations/uss-nimitz`] and his subsequent engagement with the disclosure chain: contacted by [`/people/jay-stratton`] in 2009 for what Fravor identifies as the ATIP program within the [`/organizations/dod`]; contacted by [`/people/luis-elizondo`] in 2016 shortly after being contacted by his 2004 wingman [`/people/alex-dietrich`]; made aware of Elizondo's departure from the Pentagon and subsequent work with [`/people/tom-delonge`], [`/people/christopher-mellon`], [`/people/steve-justice`] and others to form [`/organizations/ttsa`]. His written testimony was submitted to the House Oversight Committee on July 26, 2023 and is archived as [`/documents/written-testimony-fravor-2023`].
 
 ---
 
@@ -113,8 +113,8 @@ Fravor's UAP relevance rests on his first-hand observation of the November 2004 
 | 2004-11 | Commanding Officer, Strike Fighter Squadron 41 (VFA-41) at time of Nimitz encounter | role | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
 | 2004-11 | USS Nimitz Tic Tac encounter | observation | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/events/2004-nimitz-encounter`] |
 | 2009 | Contacted by Jay Stratton for investigation of the 2004 encounter | other | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/people/jay-stratton`] |
-| 2016 | Contacted by Luis Elizondo, following reconnection with Alex Dietrich | other | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/people/luis-elizondo`] |
-| 2017-12 | Fravor's account entered public record via NYT articles (via TTSA coordination) | publication | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| 2016 | Contacted by Luis Elizondo, shortly after Alex Dietrich's 2016 outreach to Fravor | other | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/people/luis-elizondo`] |
+| 2017-12 | TTSA coordination with NYT journalists (Kean, Blumenthal, Cooper) — articles published on USG UAP investigation | publication | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
 | 2023-07-26 | Written testimony submitted to House Oversight Subcommittee | testimony | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/documents/written-testimony-fravor-2023`] |
 
 ---
@@ -127,7 +127,7 @@ Fravor's UAP relevance rests on his first-hand observation of the November 2004 
 |---|---|---|
 | [`/people/alex-dietrich`] | Wingman and co-observer; other F/A-18F pilot in Fravor's 2-plane flight during the 2004 Nimitz encounter | [`/people/alex-dietrich`] |
 | [`/people/jay-stratton`] | Contacted Fravor in 2009 to investigate the 2004 encounter as part of the ATIP program | [`/people/jay-stratton`] |
-| [`/people/luis-elizondo`] | Contacted Fravor in 2016 following Fravor's reconnection with Dietrich | [`/people/luis-elizondo`] |
+| [`/people/luis-elizondo`] | Contacted Fravor in 2016 shortly after Fravor's 2016 conversation with Alex Dietrich | [`/people/luis-elizondo`] |
 
 ---
 

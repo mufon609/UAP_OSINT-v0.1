@@ -531,6 +531,61 @@ F.1c hardening pass; items 3 and 4 remain open but reframed.
 
 ---
 
+### Corroboration table's `Source` column displays the attesting document, not the corroborator (F.1c finding)
+
+**Issue.** The Corroboration section on eyewitness person nodes
+renders with a `Source | Type | What It Confirms | Node Link`
+template header. F.1b's renderer puts the artifact's
+`corroboration_items[i].source.path` (the PDF where the corroboration
+fact is attested) in the `Source` column, and the `observer_path`
+(who/what corroborates) in the `Node Link` column. Investigator
+scanning the table sees the attesting document first and the
+corroborator last — backwards from the natural "who corroborates?
+via what evidence?" reading order.
+
+F.1c Fravor pilot made this visible: the Corroboration table's first
+column reads `government/oversight-...fravor-...2023.pdf` three
+times in a row (all three corroboration items are attested by the
+same PDF), with the actual corroborators (Dietrich, USS Princeton,
+FLIR1 video) hidden in the rightmost column.
+
+**Why it matters.** Corroboration is a navigational surface — the
+investigator's first question is "who corroborates?" and the column
+layout should answer that question first. The attesting-document
+column, if kept, should be secondary. Not an evidentiary integrity
+issue (all facts are correct); purely a readability / template-
+renderer mismatch.
+
+**Proposed scope.** Two options:
+
+1. Rename columns + swap order. Template becomes
+   `| Observer | Type | What It Confirms | Attested In |`,
+   renderer emits observer_path (wrapped as backtick-bracket link)
+   in column 1 and source.path in column 4. Keeps all four cells;
+   fixes reading order. Investigator-friendly.
+
+2. Drop the attesting-document column entirely. Template becomes
+   `| Observer | Type | What It Confirms | Node Link |`. The
+   attestation source is implicit at the artifact level (every
+   corroboration_item carries its source, but that's artifact
+   metadata, not investigator-facing). Minimal column count; the
+   Node Link column becomes redundant with Observer if Observer is
+   already a backtick-bracket link.
+
+My lean: option 1. Attestation provenance is useful (tells reader
+which source attests a given corroboration); surfacing it in a
+secondary column keeps the table self-contained. The column rename
+also clarifies the table's role as a cross-reference surface, not a
+statement surface.
+
+**Surfaced.** F.1c Fravor pilot audit (2026-04-19). Not blocking;
+the Corroboration section renders correctly, just awkwardly. Fix
+naturally lands with F.2 (event renderer) since encounter event
+nodes have the same Corroboration shape on their own node-type
+template.
+
+---
+
 ### Schema-descriptive keys not yet schema-driven in the validator
 
 **Issue.** Post-source-taxonomy-consolidation (2026-04-18) the schema

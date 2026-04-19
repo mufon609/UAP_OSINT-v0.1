@@ -4,7 +4,7 @@ schema_version: 1
 target_node: people/david-fravor
 status: active
 created: '2026-04-19'
-last_iteration: i0
+last_iteration: i1
 description: |
   David Fravor is a retired U.S. Navy Commander and the flight lead of the November 2004 USS Nimitz "Tic Tac" encounter. This artifact draws on Fravor's written testimony submitted to the House Oversight Committee on July 26, 2023 — the only primary-source document archived for Fravor in this repository at i0. Later iterations can extend the quote set from Fravor's oral testimony at the same hearing, his 2017 ABC News interview, his 2021 CBS 60 Minutes appearance, and other on-record statements as those sources are archived and extracted. Scope at i0: one source, six verbatim quotes (four direct observations of the Nimitz encounter; two relayed narratives about the subsequent disclosure chain), the biographical and affiliation facts Fravor explicitly states about himself in the source, and the corroboration network the source names (Alex Dietrich, USS Princeton radar, FLIR1 video).
 primary_sources:
@@ -26,9 +26,9 @@ document_intrinsic:
 context_extrinsic:
   display_title: David Fravor
 background: |
-  David Fravor is a retired [`/organizations/us-navy`] Commander. In November 2004 he was the Commanding Officer of Strike Fighter Squadron Forty-One — the "Black Aces" ([`/organizations/vfa-41`]) — attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) and stationed aboard [`/organizations/uss-nimitz`] (CVN-68). The squadron was at the beginning of a workup cycle preparing for a combat deployment to the Persian Gulf in support of ground operations in Iraq.
+  David Fravor is a retired [`/organizations/us-navy`] Commander. In November 2004 he was the Commanding Officer of Strike Fighter Squadron Forty-One — the "Black Aces" ([`/organizations/vfa-41`]) — attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) and stationed aboard [`/organizations/uss-nimitz`] (CVN-68). The squadron was at the beginning of a workup cycle preparing for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq.
 uap_relevance: |
-  Fravor's UAP relevance rests on his first-hand observation of the November 2004 [`/events/2004-nimitz-encounter`] aboard [`/organizations/uss-nimitz`] and his subsequent engagement with the disclosure chain: contacted by [`/people/jay-stratton`] in 2009 for what Fravor identifies as the ATIP program within the [`/organizations/dod`]; contacted by [`/people/luis-elizondo`] in 2016 after reconnecting with his 2004 wingman [`/people/alex-dietrich`]; made aware of Elizondo's departure from the Pentagon and subsequent work with [`/people/tom-delonge`], [`/people/christopher-mellon`], [`/people/steve-justice`] and others to form [`/organizations/ttsa`]. His written testimony was submitted to the House Oversight Committee on July 26, 2023 and is archived as [`/documents/written-testimony-fravor-2023`].
+  Fravor's UAP relevance rests on his first-hand observation of the November 2004 [`/events/2004-nimitz-encounter`] while operating from [`/organizations/uss-nimitz`] and his subsequent engagement with the disclosure chain: contacted by [`/people/jay-stratton`] in 2009 for what Fravor identifies as the ATIP program within the [`/organizations/dod`]; contacted by [`/people/luis-elizondo`] in 2016 shortly after being contacted by his 2004 wingman [`/people/alex-dietrich`]; made aware of Elizondo's departure from the Pentagon and subsequent work with [`/people/tom-delonge`], [`/people/christopher-mellon`], [`/people/steve-justice`] and others to form [`/organizations/ttsa`]. His written testimony was submitted to the House Oversight Committee on July 26, 2023 and is archived as [`/documents/written-testimony-fravor-2023`].
 affiliations:
 - id: a1
   added_date: '2026-04-19'
@@ -150,7 +150,7 @@ timeline:
   added_date: '2026-04-19'
   added_by_iteration: i0
   date: '2016'
-  event: Contacted by Luis Elizondo, following reconnection with Alex Dietrich
+  event: Contacted by Luis Elizondo, shortly after Alex Dietrich's 2016 outreach to Fravor
   category: other
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -160,7 +160,7 @@ timeline:
   added_date: '2026-04-19'
   added_by_iteration: i0
   date: '2017-12'
-  event: Fravor's account entered public record via NYT articles (via TTSA coordination)
+  event: TTSA coordination with NYT journalists (Kean, Blumenthal, Cooper) — articles published on USG UAP investigation
   category: publication
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -196,7 +196,7 @@ relationships:
   added_date: '2026-04-19'
   added_by_iteration: i0
   person_path: /people/luis-elizondo
-  relationship: Contacted Fravor in 2016 following Fravor's reconnection with Dietrich
+  relationship: Contacted Fravor in 2016 shortly after Fravor's 2016 conversation with Alex Dietrich
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: lines 75-76
@@ -367,3 +367,27 @@ iterations:
   summary: First end-to-end population of the Fravor person artifact under the F.1b renderer pipeline (F.1c pilot). Six verbatim quotes (four direct observations of the 2004 Nimitz encounter; two relayed narratives about the post-encounter disclosure chain), two affiliations, three relationships, three corroboration items, six timeline entries, sixteen entities_referenced, one naming_quirk (Delonge→DeLonge), three research_gaps. All content sourced from the single archived primary source (Fravor written testimony, 2023-07-26). Serves as the first pilot of Step F's per-type renderer discipline for the person type.
   entries_added: []
   entries_modified: []
+- id: i1
+  date: '2026-04-19'
+  trigger: audit-correction
+  summary: |
+    Post-i0 audit identified four contributor-prose drift issues in the contributor-authored sections (background, uap_relevance, timeline, relationships). All six verbatim quotes remained clean (mechanical check #11 passed); the issues were in the prose scaffolding around the quotes. Corrections applied in this iteration:
+
+      (1) background — "in support of ground operations in Iraq" → "for operations supporting the ground forces in Iraq". Restores the source's referent direction (operations supporting *forces*, not operations supporting *operations*). Source line 10.
+
+      (2) uap_relevance — "first-hand observation of the November 2004 encounter aboard USS Nimitz" → "first-hand observation ... while operating from USS Nimitz". Corrects spatial drift — the observation was airborne from a Nimitz-launched aircraft, not "aboard" the ship itself. Source line 21.
+
+      (3) uap_relevance — "contacted by Elizondo in 2016 after reconnecting with his 2004 wingman Alex Dietrich" → "contacted by Elizondo in 2016 shortly after being contacted by his 2004 wingman Alex Dietrich". Source line 71 says Dietrich contacted Fravor; "reconnecting" implied prior disconnection the source doesn't establish.
+
+      (4) timeline t4 — "Contacted by Luis Elizondo, following reconnection with Alex Dietrich" → "Contacted by Luis Elizondo, shortly after Alex Dietrich's 2016 outreach to Fravor". Same reconnection-drift fix.
+
+      (5) relationships r3 — "Contacted Fravor in 2016 following Fravor's reconnection with Dietrich" → "Contacted Fravor in 2016 shortly after Fravor's 2016 conversation with Alex Dietrich". Same.
+
+      (6) timeline t5 — "Fravor's account entered public record via NYT articles (via TTSA coordination)" → "TTSA coordination with NYT journalists (Kean, Blumenthal, Cooper) — articles published on USG UAP investigation". Removes a contributor inference — the source says TTSA worked with those journalists to publish articles about the USG's UAP investigation; it doesn't specifically claim the articles featured Fravor's account. Tightened to what the source actually attests.
+
+    No quote texts changed. No new evidence added. No entries added or removed — only contributor-prose text edits to four fields + two entries.
+  entries_added: []
+  entries_modified:
+  - t4
+  - t5
+  - r3
