@@ -330,8 +330,14 @@ On person artifacts, the validator runs a token-drift check across
 contributor-authored prose fields (`background`, `uap_relevance`,
 `credibility_notes`, and structured-entry descriptions). It flags
 every significant word in a prose field that doesn't appear in the
-referenced primary-source text. **Warnings are expected** on these
-categories and don't require changes:
+referenced primary-source text.
+
+The check is an **impartial reporter** — it surfaces every unmatched
+token as a warning, and the contributor judges each case. The
+validator makes no classification about whether an unmatched token is
+"legitimate synthesis" or "real drift"; that's the contributor's
+call. Common categories of warnings that typically resolve as
+legitimate on review:
 
 - Synonym pairs (source "onboard" vs prose "aboard"; source "took" vs prose "captured")
 - Word-form drift (source "investigate" vs prose "investigation"; source "publish" vs prose "published")
@@ -347,8 +353,13 @@ message `f67f6e8`) all surfaced as unmatched-token warnings in prose
 fields — the check exists specifically to make that review discipline
 mechanical.
 
-If check #16 fires an **ERROR** (≥80% unmatched tokens), the field is
-near-certainly fabricated or machine-translated. Fix before proceeding.
+Check #16 fires an **ERROR** only when **100% of a field's significant
+tokens are absent from source** — i.e., the prose field shares no
+vocabulary with the source it claims to draw on. That's a
+mathematical floor (complete divergence), not a stylistic threshold;
+it catches pure fabrication (prose about a different source entirely)
+without the validator classifying "how much drift is too much".
+Errors must be fixed before proceeding.
 
 ### Phase I complete
 

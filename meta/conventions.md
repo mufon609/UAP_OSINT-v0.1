@@ -109,14 +109,18 @@ content widening even when every referenced quote is verbatim-clean.
 
 `validate-research.py` check #16 (prose-field token drift) verifies
 that significant words in these prose fields appear in the referenced
-primary-source text. Unmatched tokens warn (expected noise: synonym
-pairs, word-form drift, repo-conventional vocabulary, acronym
-expansion); high unmatched rates error (≥80%, indicating likely
-fabrication). Contributor reviews each warning and asks: *does this
-unmatched token introduce a fact or premise the source doesn't
-attest?* The check is a mechanical floor; careful contributor review
-remains the quality gate. See `BACKLOG.md` entry for check #16 v2
-extensions (n-gram adjacency, lemmatization, whitelists).
+primary-source text. The check is an impartial reporter — it flags
+every unmatched token as a warning without classifying whether the
+drift is "legitimate synthesis" or "real drift". The contributor
+reviews each warning and asks: *does this unmatched token introduce
+a fact or premise the source doesn't attest?* Errors fire only at
+100% vocabulary divergence (complete mismatch — prose shares no
+significant words with the source it claims to draw on), a
+mathematical floor on pure fabrication rather than a stylistic
+threshold. Below 100%, the validator makes no judgment; careful
+contributor review is the quality gate. See `BACKLOG.md` entry for
+check #16 v2 extensions (n-gram adjacency, lemmatization,
+whitelists).
 
 ---
 

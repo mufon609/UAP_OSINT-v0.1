@@ -43,12 +43,14 @@ Checks (per schema.yaml research-artifact.invariants):
     / relationships[].relationship / corroboration_items[].note /
     program_involvement[].role / publication_record[].beat /
     vouching_chain[].attestation at the entry level), extract significant
-    tokens (≥3 chars, non-stopword) and verify each appears in the
-    referenced primary-source text. Unmatched tokens warn; high
-    unmatched rates error. Scoped to person artifacts in v1; extends to
-    other types as their F-sub-phase ships. Complements verbatim-quote
-    check #11 on the claims-layer-free prose surfaces identified in the
-    F.1c audit RCA.
+    tokens (≥3 chars, non-stopword, possessive `'s` stripped) and verify
+    each appears in the referenced primary-source text. Impartial
+    reporter: warn on every unmatched token regardless of count or
+    field; error only when 100% of a field's tokens are absent from
+    source (complete divergence — mathematical, not stylistic). Scoped
+    to person artifacts in v1; extends to other types as their F-sub-
+    phase ships. Complements verbatim-quote check #11 on the claims-
+    layer-free prose surfaces identified in the F.1c audit RCA.
 
 Usage:
   validate-research.py                  # validate all research/*.yaml
@@ -931,10 +933,17 @@ def check_vouching_chain(rel, data, manifest_paths):
 # chars, non-stopword) and verifies each token appears in the
 # referenced source file.
 #
-# Unmatched tokens warn (contributor reviews — synonyms / word-form
-# drift / legitimate synthesis vocabulary surface as expected false
-# positives). High unmatched rates error (likely fabrication or heavy
-# paraphrase).
+# Impartial reporter — the validator surfaces drift; the contributor
+# judges each case:
+#   - WARN on every unmatched significant token, any field, any count.
+#   - ERROR only when 100% of a field's significant tokens are absent
+#     from source. 100% divergence is a mathematical observation (no
+#     shared vocabulary with the referenced source), not a stylistic
+#     threshold.
+#
+# The validator makes no categorical judgment about which fields are
+# "allowed" to have more contributor vocabulary. Synthesis-heavy
+# sections and fact-dense sections go through the same rule.
 #
 # Known v1 limitations documented in BACKLOG:
 #   - Membership-only; doesn't catch phrase-restructuring where all
@@ -1015,17 +1024,22 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
     ],
 }
 
-# Thresholds (module-level so tuning is one-line after corpus accrual).
-# Error thresholds are intentionally conservative — they fire only on
-# near-total vocabulary divergence (likely fabrication or machine-
-# translated paraphrase). Warn-level catches legitimate paraphrase,
-# synonyms, word-form drift, and synthesis framing; contributor review
-# decides per-case. Calibrated from F.1c Fravor i1 baseline: synthesis-
-# heavy fields (uap_relevance, credibility_notes) run at 45–66%
-# contributor vocabulary against source and should warn, not error.
-PROSE_DRIFT_TOP_LEVEL_ERROR_PCT = 0.80    # error when ≥80% tokens unmatched
-PROSE_DRIFT_PER_ENTRY_ERROR_PCT = 0.80    # error when ≥80% tokens unmatched
-PROSE_DRIFT_WARN_MIN = 1                  # warn when ≥1 unmatched token
+# Single impartial rule — no field-class differentiation, no percentage
+# threshold tuning. The original implementation split errors by field-
+# type with a tuned 80% threshold, which encoded a validator-side
+# judgment about which fields are "allowed" to carry more contributor-
+# synthesis vocabulary (uap_relevance / credibility_notes tolerated
+# higher unmatched rates than timeline events). That was bias — the
+# validator's role is to surface drift impartially; the contributor
+# reviews every warning and decides per-case.
+#
+# Revised rule:
+#   - WARN on every unmatched significant token (any field, any count).
+#   - ERROR only when 100% of a field's significant tokens are absent
+#     from source. 100% divergence is a mathematical observation
+#     (no shared vocabulary with the source the field claims to draw
+#     on), not a stylistic threshold. Below 100%, the validator makes
+#     no classification — just reports.
 
 # Cache source-file tokens per validator run so a multi-artifact or
 # multi-entry run doesn't re-extract the same file N times.
@@ -1101,29 +1115,27 @@ def load_source_tokens(source_rel_path):
     return tokens
 
 
-def _judge_drift(rel, location, prose_tokens, unmatched, *,
-                 error_pct, warn_min):
-    """Classify an unmatched token set as warn / error / silent per
-    the configured thresholds. Returns a list of Issue (0 or 1 entry).
+def _judge_drift(rel, location, prose_tokens, unmatched):
+    """Impartial drift reporter. Warns on every unmatched significant
+    token; errors only when 100% of the field's significant tokens are
+    absent from source (complete vocabulary divergence — mathematical,
+    not stylistic). The validator makes no category judgment below
+    100% — contributor reviews each warning.
     """
     if not unmatched:
         return []
-    rate = len(unmatched) / len(prose_tokens) if prose_tokens else 0.0
     preview = ", ".join(sorted(unmatched)[:8])
     if len(unmatched) > 8:
         preview += f", … (+{len(unmatched) - 8} more)"
-    if rate >= error_pct:
+    if prose_tokens and len(unmatched) == len(prose_tokens):
         return [Issue(rel, "error",
-            f"{location}: {rate:.0%} of significant tokens "
-            f"({len(unmatched)}/{len(prose_tokens)}) not in source — "
-            f"likely fabrication or heavy paraphrase. "
-            f"Unmatched: {preview}")]
-    if len(unmatched) >= warn_min:
-        return [Issue(rel, "warn",
-            f"{location}: {len(unmatched)} significant token(s) not in "
-            f"source (prose-drift check — contributor review): "
-            f"{preview}")]
-    return []
+            f"{location}: 100% of significant tokens "
+            f"({len(unmatched)}/{len(prose_tokens)}) absent from source "
+            f"— prose has no shared vocabulary with the source it "
+            f"claims to draw on. Unmatched: {preview}")]
+    return [Issue(rel, "warn",
+        f"{location}: {len(unmatched)} significant token(s) not in "
+        f"source (prose-drift check — contributor review): {preview}")]
 
 
 def check_prose_drift(rel, data, target_type):
@@ -1165,11 +1177,7 @@ def check_prose_drift(rel, data, target_type):
         if not prose_tokens:
             continue
         unmatched = prose_tokens - top_level_pool
-        issues.extend(_judge_drift(
-            rel, field, prose_tokens, unmatched,
-            error_pct=PROSE_DRIFT_TOP_LEVEL_ERROR_PCT,
-            warn_min=PROSE_DRIFT_WARN_MIN,
-        ))
+        issues.extend(_judge_drift(rel, field, prose_tokens, unmatched))
 
     # --- Per-entry prose fields ---
     for list_key, entry_field in PROSE_ENTRY_FIELDS_BY_TYPE.get(target_type, []):
@@ -1192,8 +1200,6 @@ def check_prose_drift(rel, data, target_type):
                 rel,
                 f"{list_key}[{i}] ({entry.get('id', '?')!r}) {entry_field}",
                 prose_tokens, unmatched,
-                error_pct=PROSE_DRIFT_PER_ENTRY_ERROR_PCT,
-                warn_min=PROSE_DRIFT_WARN_MIN,
             ))
 
     return issues

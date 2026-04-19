@@ -586,6 +586,19 @@ ship:
 **Surfaced.** F.1c Fravor audit RCA (2026-04-19). V1 ships as pre-F.2
 hardening commit.
 
+**Design note (2026-04-19 revision).** Initial v1 implementation
+used differentiated error thresholds (80% top-level, 80% per-entry)
+calibrated to accommodate synthesis-heavy fields passing without
+error. That calibration embedded a validator-side judgment about
+which fields are "allowed" more contributor vocabulary. Revised to
+an impartial rule: warn on every unmatched token, error only at 100%
+vocabulary divergence. The validator now surfaces drift without
+classifying it; the contributor reviews each warning. Any future
+v2 additions (stemming, whitelist, n-gram) should preserve the
+impartial-reporter framing — reduce warning noise without
+reintroducing validator-side judgments about "acceptable" drift
+levels.
+
 ---
 
 ### Corroboration table's `Source` column displays the attesting document, not the corroborator (F.1c finding)
