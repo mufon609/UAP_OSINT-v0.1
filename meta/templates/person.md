@@ -43,26 +43,75 @@ created: {{today}}
 |---|---|---|---|---|
 |  |  |  |  |  |
 
+<!-- Rows are listed in chronological order (earliest start-of-Period
+     first). Validator check #15 enforces this. -->
+
 ### Flagged
 
 <!-- Omit this subsection entirely if no flagged affiliations exist. -->
 
 ---
 
-## Key Statements
+## Statements
 
-<!-- Each direct quote is a block quote followed by a 3-field verification
-     table. Example:
+<!-- Universal statement surface. Every verbatim utterance by this
+     person goes here — first-hand testimony, relayed claims, on-record
+     statements in any venue. Each entry is a block quote followed by a
+     3-field verification table. No contributor-paraphrased claims; the
+     only text between source and reader is the contributor's
+     attribution line.
 
-> "Quoted text verbatim from primary source."
+     Split by `observation_type`:
+       - Direct Observations — first-hand sensory testimony (what the
+         person personally saw / heard / measured).
+       - Other Statements    — everything else (relayed, inferential,
+         interpretive, filed-as-claim, published).
 
-| Field | Value |
-|---|---|
-| Attributed to | Speaker, context, date |
-| Source | [`/transcripts/...`] or [`/documents/...`] |
-| Verified | ✅ Confirmed — verified verbatim against archived PDF |
+     Both subsections list entries in chronological order by the date in
+     each statement's verification block — earliest first. The Phase II
+     person renderer (F.1b) sorts mechanically at build time; hand-
+     authored nodes should manually order by date until the renderer
+     ships. Check #15 enforces table-row ordering universally but does
+     not yet cross-check block-quote statement order (tracked in
+     BACKLOG).
 
+     Entry shape: a markdown blockquote with the verbatim passage,
+     then a 3-row verification table with fields
+       Attributed to | Source | Verified.
+     Source field uses backtick-bracket node links, e.g.
+     `[`/transcripts/some-node`]` or `[`/documents/some-node`]`. See
+     CONTRIBUTING.md §"Quote verification blocks" and conventions.md
+     for the canonical shape. -->
 -->
+
+### Direct Observations
+
+<!-- First-hand sensory observations. May be empty (most common for
+     reporter / institutional-actor archetypes). Omit the subsection
+     header entirely when empty? NO — keep the header so the statement-
+     surface shape is uniform across archetypes. Contributor writes
+     "(None documented.)" under the header when empty. -->
+
+### Other Statements
+
+<!-- Relayed / inferential / interpretive / filed-claim / published.
+     Always populated on any person node worth building — if this is
+     empty the person has no on-record statements and the node probably
+     shouldn't exist yet. -->
+
+---
+
+## Timeline
+
+| Date | Event | Category | Source | Node Link |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+<!-- Aggregated chronological record of all dated facts about this
+     person. One row per dated event. Category column values:
+     affiliation / role / observation / testimony / publication /
+     clearance / incident / filing / other.
+     Rows listed earliest first; validator check #15 enforces. -->
 
 ---
 
@@ -87,7 +136,12 @@ created: {{today}}
 |---|---|---|---|
 |  |  |  |  |
 
-<!-- Type column values: Instrumented / Testimonial / Government statement -->
+<!-- Cross-reference surface — OTHER observers / instruments /
+     government statements that corroborate this person's direct
+     observations. NOT a statement surface; it doesn't contain this
+     person's utterances (those live in `## Statements`). Type column
+     values: testimonial / instrumented / government-statement /
+     documentary. -->
 
 ---
 <!-- /ARCHETYPE -->
@@ -99,7 +153,12 @@ created: {{today}}
 |---|---|---|---|
 |  |  |  |  |
 
-<!-- Status values:
+<!-- Derived view of this person's filed claims — each row maps to one
+     or more statements tagged `category: filed-claim` in the research
+     artifact. The statements are primary; this table is a render-time
+     index grouping them claim → supporting document → status.
+
+     Status values:
      - Document exists and supports
      - Document exists and contradicts
      - No document anchor identified -->
@@ -110,13 +169,15 @@ created: {{today}}
 <!-- ARCHETYPE: institutional-actor -->
 ## Program Involvement
 
-| Program | Role | Evidentiary Basis |
-|---|---|---|
-|  |  |  |
+| Program | Role | Period | Evidentiary Basis | Confidence | Source |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
 
-<!-- Evidentiary Basis cites the primary source that confirms the role.
-     If no primary source exists, the row belongs in Flagged or should
-     not be claimed. -->
+<!-- Metadata surface — programs this person had access to and the role
+     they held. Evidentiary Basis cites the primary source that confirms
+     the role (primary-source / sworn-testimony / on-record /
+     self-attested / secondary). Confidence: high / medium / low. Rows
+     listed earliest first by Period start date. -->
 
 ---
 <!-- /ARCHETYPE -->
@@ -124,9 +185,13 @@ created: {{today}}
 <!-- ARCHETYPE: reporter -->
 ## Publication Record
 
-| Outlet | Beat / Role | Period | Notable Coverage | Node Link |
-|---|---|---|---|---|
-|  |  |  |  |  |
+| Date | Publication | Outlet | Beat / Role | Source | Node Link |
+|---|---|---|---|---|---|
+|  |  |  |  |  |  |
+
+<!-- Cross-reference surface — indexed list of published works. Rows
+     listed earliest first by Date. When a publication is also a
+     document node in the repository, fill Node Link. -->
 
 ---
 <!-- /ARCHETYPE -->
@@ -147,7 +212,12 @@ created: {{today}}
 |---|---|---|---|---|
 |  |  |  |  |  |
 
-<!-- Only direct, on-record, attributed statements qualify. -->
+<!-- Cross-reference surface inside Credibility Notes' analytical
+     frame. Only direct, on-record, attributed statements qualify. The
+     Statement column is a verbatim excerpt from the voucher's
+     testimony; when a full verbatim passage is useful, register it as
+     a quote entry in the vouching person's own research artifact and
+     link to their person node via Node Link. -->
 
 ---
 <!-- /ARCHETYPE -->

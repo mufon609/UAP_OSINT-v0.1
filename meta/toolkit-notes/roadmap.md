@@ -380,22 +380,87 @@ the fabrication surface the layered process exists to close.
 **One type per sub-phase. One pilot per type.** Same hard rule that
 produced the 2026-04-17 pilot failure postmortem.
 
-### F.1 — person  ⏸ NEXT after E.1
+### F.1 — person
 
-Most content refers to people; this is the foundational type.
+Decomposed into three shippable units (F.1a → F.1c).
 
-Design pass recovers the paused conversation:
-- Under the statements-only discipline, do archetype-specific
-  sections (Corroboration / Claim Inventory / Program Involvement /
-  Publication Record) collapse into one `## Context` with archetype-
-  selected subsections, or stay as four structurally-distinct sections?
-- Non-experience assertions by eyewitnesses (Fravor on Elizondo /
-  AATIP) — do they get their own Claim Inventory section, or stay
-  in Key Statements?
+#### F.1a — schema + template + validator + research-artifact extensions  ✅ DONE (2026-04-19)
 
-Pilot candidate: `/people/david-fravor` — eyewitness archetype; the
-Nimitz encounter is already scaffolded upstream; his written
-testimony is already a built document node.
+Design pass settled the two paused threads via the "statement surface
+vs cross-reference surface" lens: archetype-specific sections are
+cross-reference/metadata surfaces (NOT statement surfaces), so they
+stay distinct; a universal `## Statements` section (verbatim-only,
+split into Direct Observations / Other Statements) is added for the
+statement-surface role. A universal `## Timeline` section is added on
+all person archetypes (aggregated chronological dated facts with
+Category column). Changes shipped:
+
+- `meta/schema.yaml` person type — `Key Statements` renamed to
+  `Statements` with `split: [Direct Observations, Other Statements]`
+  + `requires_quote_verification: true`; `Timeline` required on all
+  four archetypes; `timeline_category_values` vocabulary added;
+  `Timeline: {chronological: true}` section rule.
+- `meta/schema.yaml` research-artifact spec — `timeline` conditional
+  key on person/organization/event/finding artifacts; archetype-
+  conditional keys `corroboration_items` / `program_involvement` /
+  `publication_record` / `vouching_chain`; quote entry gains
+  `observation_type` (required on person artifacts; `direct|relayed`)
+  and optional `category`; five new entry shapes (timeline_entry,
+  corroboration_entry, program_involvement_entry,
+  publication_record_entry, vouching_chain_entry).
+- `meta/schema.yaml` — `chronological: true` section rule added to
+  `Timeline` / `Provenance` / `Ownership Timeline` on organization,
+  event, document, media, location. Upgrades the flag from
+  descriptive-only to enforced via check #15.
+- `meta/templates/person.md` — rewritten: renamed Key Statements to
+  Statements with Direct Observations / Other Statements subsections;
+  added Timeline section with Category column; archetype-specific
+  sections clarified as cross-reference/metadata surfaces.
+- `scripts/validate.py` — check #15 (chronological-ordering) added.
+  Scans every H2 section's markdown tables for date columns (Date /
+  Date / Time / Period / Start / Date Captured / Date Released /
+  Dates), parses dates (ISO prefix + leftmost-of-range), verifies
+  ascending order. Errors on disorder; warns on unparseable cells.
+  Universal across every node type.
+- `scripts/validate-research.py` — archetype reader + per-archetype
+  required-section check; timeline conditional; observation_type
+  enum check on person-artifact quotes; five new per-section check
+  helpers (check_timeline / check_corroboration_items /
+  check_program_involvement / check_publication_record /
+  check_vouching_chain) with enum vocabularies for
+  corroboration.observation_type / evidentiary_basis / confidence.
+- `scripts/research-scaffold.py` — reads target archetype from
+  person frontmatter; scaffolds the matching archetype-specific
+  section (corroboration_items / vouching_chain / program_involvement
+  / publication_record) as an empty list; scaffolds `timeline: []`
+  on timeline-bearing types.
+
+23/23 smoke fixtures still pass; pre-commit chain fully green.
+
+#### F.1b — Phase II renderer for person  ⏸ NEXT
+
+Extend `build-from-research.py` to support `target_node` type
+`person`. Per-section renderers drive from the artifact fields:
+
+- `Statements` renders from `quotes` filtered by `observation_type`
+  and sorted chronologically within each subsection.
+- `Timeline` renders from `timeline` entries, chronologically.
+- Archetype-specific section renders from the matching artifact
+  field (corroboration_items → Corroboration table, etc).
+- `Claim Inventory` on whistleblower archetype is a render-time view
+  of `quotes` tagged `category: filed-claim`.
+
+Pre-flight validates artifact; post-build validates node; invokes
+`associate.py` — same pattern as the document renderer shipped in D.3.
+
+#### F.1c — Fravor pilot  ⏸ AFTER F.1b
+
+First end-to-end person node through Phase I → II → III under the
+statements-only discipline. `/people/david-fravor` — eyewitness
+archetype; the Fravor written-testimony document is already built as
+a primary source, which means Phase I has extraction-ready material.
+
+Hard rule: one node per session.
 
 ### F.2 — event  ⏸ PENDING
 

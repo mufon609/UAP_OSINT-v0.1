@@ -45,6 +45,15 @@ MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
 
 # Target-node types that carry a `rumors` section on their research artifact
 RUMORS_TYPES = {"person", "organization", "event", "location"}
+TIMELINE_TYPES = {"person", "organization", "event", "finding"}
+
+# person archetype → archetype-specific artifact section
+ARCHETYPE_SECTION = {
+    "eyewitness":           "corroboration_items",
+    "whistleblower":        "vouching_chain",
+    "institutional-actor":  "program_involvement",
+    "reporter":             "publication_record",
+}
 
 # All valid target-node types
 VALID_TARGET_TYPES = {
@@ -133,6 +142,32 @@ def infer_format(path):
     }.get(ext, "html")
 
 
+def read_target_archetype(node_type, slug):
+    """For person target-nodes, read the node's frontmatter to get its
+    archetype. Returns None for non-person nodes or if unreadable. Used
+    by build_scaffold to add the archetype-specific artifact section.
+    """
+    if node_type != "person":
+        return None
+    path = target_node_file(node_type, slug)
+    if not path.exists():
+        return None
+    try:
+        text = path.read_text(encoding="utf-8", errors="replace")
+    except OSError:
+        return None
+    if not text.startswith("---"):
+        return None
+    end = text.find("\n---", 3)
+    if end < 0:
+        return None
+    try:
+        fm = yaml.safe_load(text[3:end]) or {}
+    except yaml.YAMLError:
+        return None
+    return fm.get("archetype")
+
+
 def build_scaffold(node_type, slug, source_paths, manifest):
     """Assemble the research-artifact YAML dict for the given target."""
     today = date.today().isoformat()
@@ -167,6 +202,19 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     # Type-conditional `rumors` section
     if node_type in RUMORS_TYPES:
         artifact["rumors"] = []
+    # Type-conditional `timeline` section — person / organization / event /
+    # finding artifacts carry an aggregated chronological dated-facts list.
+    if node_type in TIMELINE_TYPES:
+        artifact["timeline"] = []
+    # Archetype-conditional section on person artifacts. Reads the target
+    # node's frontmatter to get its archetype; scaffolds the corresponding
+    # empty list. Only one of the four sections is ever scaffolded
+    # per person artifact (the archetype decides which).
+    archetype = read_target_archetype(node_type, slug)
+    if archetype:
+        section = ARCHETYPE_SECTION.get(archetype)
+        if section:
+            artifact[section] = []
     return artifact
 
 

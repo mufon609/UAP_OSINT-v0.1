@@ -40,6 +40,14 @@ Checks:
      field presence+vocabulary checks (lowercase names) or section-
      presence checks (Title Case names). Replaces earlier hardcoded
      archival_status / Media Versioning rules.
+ 15. Chronological-ordering check — every markdown table with a date-
+     bearing column (Date / Date / Time / Period / Start / Date Captured /
+     Date Released / Dates) is ordered earliest-first. Range cells take
+     the leftmost date; missing month / day default to 0 so
+     '2004' < '2004-11' < '2004-11-14'. Rows in disorder error; cells
+     with unparseable date strings warn. Universal discipline across
+     every node type and section. Upgrades the schema's
+     `chronological: true` flag from descriptive-only to enforced.
 
 Usage:
   validate.py                    # all nodes
@@ -162,6 +170,138 @@ def count_quote_blocks_and_verifications(section_text):
     quotes = sum(1 for line in section_text.splitlines() if line.strip().startswith(">"))
     verifications = sum(1 for line in section_text.splitlines() if "| Verified |" in line)
     return quotes, verifications
+
+
+# =============================================================================
+# Chronological-ordering check (check #15)
+#
+# Universal discipline: any table with a date-bearing column is ordered
+# earliest-first. Applies across every node type and every section.
+# The check:
+#   1. Scans each H2 section for markdown tables (header + separator +
+#      data rows).
+#   2. For each table, identifies the date column by header name
+#      (case-insensitive match against DATE_HEADERS).
+#   3. Parses the date cell on each data row (ISO YYYY-MM-DD and
+#      prefix-truncated YYYY-MM / YYYY; range cells take the leftmost
+#      date; empty cells skip).
+#   4. Errors if rows are not in ascending date order.
+#   5. Warns on unparseable dates (natural-language dates, non-ISO
+#      formats — promoted to error-level later if warranted).
+#
+# Upgrades the `chronological: true` schema flag from descriptive-only
+# to enforced — closing part of BACKLOG #9.
+# =============================================================================
+
+DATE_HEADERS = {
+    "date", "date / time", "date/time",
+    "period", "start", "start date", "dates",
+    "date captured", "date released",
+}
+
+# Range separators between start and end dates in a single cell. Ordered
+# longest-first so "—" doesn't match inside " – ".
+_DATE_RANGE_SEPARATORS = (" – ", " — ", " to ", " - ", "–", "—", "-to-")
+
+
+def parse_date_token(s):
+    """Return (year, month, day) tuple suitable for sort comparison, or
+    None if unparseable. Range cells take the leftmost date. Missing
+    month / day default to 0, so '2004' < '2004-11' < '2004-11-14'
+    under tuple comparison.
+    """
+    if not s:
+        return None
+    s = s.strip()
+    # Strip typical non-date tokens
+    if s.lower() in {"—", "-", "n/a", "undated", "tbd", "present", "ongoing", ""}:
+        return None
+    # Range: take the left side
+    for sep in _DATE_RANGE_SEPARATORS:
+        if sep in s:
+            s = s.split(sep, 1)[0].strip()
+            break
+    m = re.match(r"^(\d{4})(?:-(\d{1,2})(?:-(\d{1,2}))?)?", s)
+    if m:
+        y = int(m.group(1))
+        mo = int(m.group(2)) if m.group(2) else 0
+        d = int(m.group(3)) if m.group(3) else 0
+        return (y, mo, d)
+    return None
+
+
+_TABLE_RE = re.compile(
+    r"(?P<header_line>^\|(?P<header>[^\n]+)\|\s*)\n"
+    r"(?P<sep_line>^\|(?P<sep>[\s:|-]+)\|\s*)\n"
+    r"(?P<rows>(?:^\|[^\n]+\|\s*\n?)+)",
+    re.MULTILINE,
+)
+
+
+def _parse_table_row(row_line):
+    """Split a `| a | b | c |` row into trimmed cell strings."""
+    inner = row_line.strip()
+    if inner.startswith("|"):
+        inner = inner[1:]
+    if inner.endswith("|"):
+        inner = inner[:-1]
+    return [c.strip() for c in inner.split("|")]
+
+
+def check_chronological_tables(text, rel):
+    """Enforce chronological (earliest-first) ordering on every date-
+    bearing table across all H2 sections. Returns a list of Issue.
+    """
+    issues = []
+    h2_sections = extract_h2_sections(text)
+    for section_name in h2_sections:
+        section_text = extract_section(text, section_name)
+        if section_text is None:
+            continue
+
+        for m in _TABLE_RE.finditer(section_text):
+            headers = [h.strip().lower() for h in m.group("header").split("|")]
+            date_col = None
+            for i, h in enumerate(headers):
+                if h in DATE_HEADERS:
+                    date_col = i
+                    break
+            if date_col is None:
+                continue
+
+            # Parse each data row's date cell (skip empty-placeholder rows)
+            rows = m.group("rows").strip().splitlines()
+            parsed_dates = []
+            for row_line in rows:
+                cells = _parse_table_row(row_line)
+                if date_col >= len(cells):
+                    continue
+                if all(c == "" for c in cells):
+                    continue  # template placeholder row
+                cell = cells[date_col]
+                d = parse_date_token(cell)
+                if d is None and cell:
+                    issues.append(Issue(rel, "warn",
+                        f"Section '{section_name}': unparseable date "
+                        f"{cell!r} in '{headers[date_col] or '?'}' column"))
+                parsed_dates.append((cell, d))
+
+            # Verify ascending order across parseable entries
+            previous_cell, previous = None, None
+            for cell, d in parsed_dates:
+                if d is None:
+                    continue
+                if previous is not None and d < previous:
+                    issues.append(Issue(rel, "error",
+                        f"Section '{section_name}': table rows not in "
+                        f"chronological order (saw {cell!r} after "
+                        f"{previous_cell!r} in "
+                        f"'{headers[date_col] or '?'}' column; "
+                        f"earliest first)"))
+                    break
+                previous, previous_cell = d, cell
+
+    return issues
 
 
 # =============================================================================
@@ -694,6 +834,9 @@ def validate_node(path, schema):
 
     # Verbatim quote verification — critical check (fix from 2026-04-17 pilot failure)
     issues.extend(check_verbatim_quotes(path, text, rel))
+
+    # Chronological ordering on date-bearing tables (check #15)
+    issues.extend(check_chronological_tables(text, rel))
 
     # Internal link resolution — body links + frontmatter node-path
     # pointers share one existence-check pass and one broken-link

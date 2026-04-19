@@ -402,6 +402,65 @@ shipping Phase I tooling.
 
 ---
 
+### F.1a descriptive-only gaps (follow-on to #9)
+
+**Issue.** Three F.1a schema additions are declarative but not yet
+mechanically enforced. Behavior is correct today (hand-authored
+content follows the convention; the F.1b renderer will enforce at
+build time), but the gap between what schema documents and what the
+validator checks is worth tracking so it doesn't accumulate.
+
+1. **`timeline_category_values`** (person type) — the Category column
+   vocabulary (affiliation / role / observation / testimony /
+   publication / clearance / incident / filing / other) appears in
+   schema but isn't checked. A person Timeline row with
+   `Category: banana` passes validation. Soft-enforcement (warn on
+   unknown) matches the schema's "extensible; validator warns on
+   unknown values" comment. Proposed: extend `check_chronological_tables`
+   (or a sibling check_person_timeline_categories) to warn when a
+   Category cell is set and not in `timeline_category_values`. Low
+   priority; no drift damage today because the category field is
+   advisory metadata, not evidentiary.
+
+2. **Statement-block chronological ordering** (person Statements
+   subsections) — check #15 enforces row-ordering within a single
+   markdown table, but a person's `## Statements` section is a
+   sequence of `> block quote` + verification-table pairs, not a
+   single table. Chronological order across those pairs is not
+   mechanically verified. F.1b renderer will sort at render time
+   (statements driven from artifact quotes with attached dates), so
+   rendered person nodes will always be ordered. Hand-authored
+   person nodes can drift.
+
+   Proposed: add a new check (or extend check #15) to parse each
+   block-quote + following verification-table pair in a statement
+   surface, extract a date from a dedicated Date field in the
+   verification block (requires a minor canonical-block shape
+   addition: `| Date | YYYY-MM-DD |` row), and verify ascending order.
+   Blocked on deciding whether the verification block grows the Date
+   row — happens naturally in F.1b design.
+
+3. **`chronological: true` section-rule flag is now descriptive.**
+   The flag appears on six section_rules in schema.yaml (person
+   Timeline, organization Timeline, event Timeline, finding Timeline,
+   document Provenance, media Provenance, location Ownership
+   Timeline). Check #15 actually runs universally on every
+   date-bearing table regardless of whether the flag is set — so
+   having the flag is strictly documentation of which sections the
+   rule applies to. Two paths:
+   - Leave as-is. Universal enforcement is simpler; the flag
+     signals intent to contributors reading schema.yaml.
+   - Make check #15 read the flag and scope only to flagged
+     sections. Stricter but risks false negatives (future
+     date-bearing tables that don't get the flag).
+
+   My lean: leave as-is. The flag is a contributor-facing
+   documentation aid; the enforcement is universal by design.
+
+**Surfaced.** F.1a audit (2026-04-19).
+
+---
+
 ### Schema-descriptive keys not yet schema-driven in the validator
 
 **Issue.** Post-source-taxonomy-consolidation (2026-04-18) the schema
@@ -447,9 +506,16 @@ dispatcher's condition grammar can also grow (`in <list>`,
 `<field> != <value>`) on-demand when a new conditional needs it —
 no preemptive extension.
 
+**Update 2026-04-19 (F.1a).** The schema flag `chronological: true`
+on section_rules (previously descriptive-only) is now enforced by
+`validate.py` check #15. Applied universally across all date-bearing
+tables on every node type. Closes one more descriptive-only gap from
+this entry's scope.
+
 **Surfaced.** Source-taxonomy consolidation double-check (2026-04-18).
 **Partial resolution.** `conditionally_required` dispatcher shipped
-(2026-04-18 hardening pass).
+(2026-04-18 hardening pass). `chronological: true` flag enforced via
+check #15 (2026-04-19 F.1a).
 
 ---
 

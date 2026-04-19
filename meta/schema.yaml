@@ -57,11 +57,27 @@ open_questions:
 types:
 
   # --- PERSON -------------------------------------------------------------
+  # Person is the only node type with a claiming agent. Under the
+  # statements-only discipline, every person node carries a universal
+  # `## Statements` surface — verbatim quotes, speaker-attributed, marker-
+  # flagged, split by `observation_type` into Direct Observations
+  # (first-hand sensory testimony) and Other Statements (anything else the
+  # person asserted, including relayed / inferential / published / filed-
+  # claim material). Archetype-specific sections (Corroboration /
+  # Claim Inventory / Program Involvement / Publication Record) remain
+  # distinct but are cross-reference or metadata surfaces, NOT statement
+  # surfaces — they point at other observers, list filed claims (rendered
+  # from statements tagged `category: filed-claim`), track institutional
+  # access, or index publications respectively. Timeline is required on
+  # every archetype: one aggregated chronological table of dated facts
+  # (role transitions, clearances, affiliations, observations, testimony,
+  # publications, incidents) with a Category column enabling scan-by-type
+  # without losing the chronological view.
   person:
     status_values: [active, in-progress]
     frontmatter:
       required: [id, type, schema_version, status, archetype, created]
-      optional: [authored_works]  # list of /books/... paths
+      optional: [authored_works]  # list of /documents/... paths (doc_form: book)
     archetypes:
       eyewitness:
         description: "Someone who personally observed a documented event"
@@ -70,7 +86,8 @@ types:
           - Background
           - UAP Relevance
           - Affiliations
-          - Key Statements
+          - Statements
+          - Timeline
           - Relationships
           - Corroboration
           - Credibility Notes
@@ -83,7 +100,8 @@ types:
           - Background
           - UAP Relevance
           - Affiliations
-          - Key Statements
+          - Statements
+          - Timeline
           - Relationships
           - Claim Inventory
           - Credibility Notes
@@ -97,7 +115,8 @@ types:
           - Background
           - UAP Relevance
           - Affiliations
-          - Key Statements
+          - Statements
+          - Timeline
           - Relationships
           - Program Involvement
           - Credibility Notes
@@ -110,17 +129,32 @@ types:
           - Background
           - UAP Relevance
           - Affiliations
-          - Key Statements
+          - Statements
+          - Timeline
           - Relationships
           - Publication Record
           - Credibility Notes
           - Associated Nodes
           - Open Questions / Research Gaps
+    timeline_category_values:
+      # Extensible; validator warns on unknown values but does not error.
+      - affiliation
+      - role
+      - observation
+      - testimony
+      - publication
+      - clearance
+      - incident
+      - filing
+      - other
     section_rules:
       Background: {prose_only: true}
       Affiliations: {split: [Confirmed, Flagged]}
       Relationships: {split: [Confirmed, Flagged]}
-      Key Statements: {requires_quote_verification: true}
+      Statements:
+        requires_quote_verification: true
+        split: [Direct Observations, Other Statements]
+      Timeline: {chronological: true}
       Associated Nodes: {auto_generated: true}
 
   # --- ORGANIZATION -------------------------------------------------------
@@ -168,6 +202,7 @@ types:
     section_rules:
       Relationships: {split: [Confirmed, Flagged]}
       Key Personnel: {split: [Confirmed, Flagged]}
+      Timeline: {chronological: true}
       Associated Nodes: {auto_generated: true}
 
   # --- DOCUMENT -----------------------------------------------------------
@@ -237,6 +272,7 @@ types:
       - other
     section_rules:
       Key Passages: {requires_quote_verification: true}
+      Provenance: {chronological: true}
       Associated Nodes: {auto_generated: true}
 
   # --- EVENT --------------------------------------------------------------
@@ -276,6 +312,7 @@ types:
     section_rules:
       Participants: {split: [Confirmed, Flagged]}
       Key Testimony: {requires_quote_verification: true}
+      Timeline: {chronological: true}
       Associated Nodes: {auto_generated: true}
 
   # --- TRANSCRIPT ---------------------------------------------------------
@@ -362,6 +399,7 @@ types:
     conditionally_required:
       "Media Versioning": "derivation_of is set"
     section_rules:
+      Provenance: {chronological: true}
       Key Passages:
         requires_quote_verification: true
         may_be_empty: true
@@ -388,6 +426,7 @@ types:
       - Open Questions / Research Gaps
     section_rules:
       Relationships: {split: [Confirmed, Flagged]}
+      Ownership Timeline: {chronological: true}
       Associated Nodes: {auto_generated: true}
 
   # --- FINDING ------------------------------------------------------------
@@ -455,13 +494,42 @@ types:
       - research_gaps         # list — investigation threads, resolved or open
       - iterations            # list — audit log of updates since initial build
 
-    # `rumors` is type-conditional — present only on research artifacts
-    # whose target_node is of one of these types. Captures widely-reported
-    # claims circulating in public discourse that lack primary-source
-    # support in this artifact (fabrication-prevention mechanism).
+    # Type-conditional keys — present only on research artifacts whose
+    # target_node type (or archetype, for person artifacts) matches the
+    # condition. `required_when_target_node_type_in` gates by node type;
+    # `required_when_target_node_archetype_in` gates by person archetype.
+    # Lists are empty-but-present when scaffolded; entries populate
+    # during Phase I investigation.
     conditional_keys:
       rumors:
         required_when_target_node_type_in: [person, organization, event, location]
+        # Captures widely-reported claims circulating in public discourse
+        # that lack primary-source support in this artifact
+        # (fabrication-prevention mechanism).
+      timeline:
+        required_when_target_node_type_in: [person, organization, event, finding]
+        # Aggregated chronological dated facts about the node's subject.
+        # Entries carry `date`, `event`, `source`, and on person artifacts
+        # `category` (affiliation / role / observation / testimony /
+        # publication / clearance / incident / filing / other). Node
+        # renderer emits in chronological order; validator check #15
+        # confirms the rendered Timeline table is earliest-first.
+      corroboration_items:
+        required_when_target_node_archetype_in: [eyewitness]
+        # Other observers of events this person witnessed. Cross-reference
+        # surface; NOT a statement surface. Renders as `## Corroboration`.
+      program_involvement:
+        required_when_target_node_archetype_in: [institutional-actor]
+        # Programs / roles / evidentiary basis. Metadata surface;
+        # NOT a statement surface. Renders as `## Program Involvement`.
+      publication_record:
+        required_when_target_node_archetype_in: [reporter]
+        # Published works by this person. Cross-reference surface.
+        # Renders as `## Publication Record`.
+      vouching_chain:
+        required_when_target_node_archetype_in: [whistleblower]
+        # Named attestations supporting the whistleblower's credibility.
+        # Cross-reference surface; renders inside `## Credibility Notes`.
 
     # Primary-source list entries
     primary_sources_entry:
@@ -494,9 +562,20 @@ types:
 
     quote_entry:
       required: [text, source]
-      optional: [significance, context]
+      optional: [significance, context, observation_type, category]
       # text: verbatim quote, YAML literal block (|) preserves multi-line
       # source: object with path + location (single source per quote)
+      # observation_type: direct | relayed
+      #   Required on every quote when target_node type is `person`.
+      #   `direct`  — first-hand sensory observation by the person
+      #               (Fravor's "I saw a Tic Tac-shaped object" — observed).
+      #   `relayed` — anything else the person asserted (things heard,
+      #               read, inferred, relayed from others, published).
+      #   Default: relayed. Enforced by validate-research.py check_quotes.
+      #   Ignored on non-person artifacts (documents, events, etc.).
+      # category: free-text metadata tag (e.g., `filed-claim` on
+      #   whistleblower artifacts so the Claim Inventory renderer can
+      #   filter). Optional on all artifacts.
 
     quote_source:
       required: [path, location]
@@ -539,6 +618,56 @@ types:
       # status: not-primary-source-established | primary-source-identified | primary-source-disputed
       # observed_sources: list of descriptions — where the rumor circulates
       # primary_source_search: list — where we've looked or where to look
+
+    timeline_entry:
+      required: [date, event, source]
+      optional: [category, node_link, end_date]
+      # date: YYYY-MM-DD; YYYY-MM and YYYY tolerated for imprecise events
+      # event: prose description of what happened on the date
+      # source: object with path + location (same shape as quote_source)
+      # category: on person artifacts, one of timeline_category_values
+      #   listed on person type; free-text on other types
+      # node_link: optional path to a related node (/people/..., etc.)
+      # end_date: if the entry describes a period rather than a point
+
+    corroboration_entry:
+      required: [observer_path, observation_type, source]
+      optional: [observed_event_ref, note]
+      # observer_path: /people/... or /organizations/... — the corroborator
+      # observation_type: testimonial | instrumented | government-statement |
+      #                   documentary
+      # source: object with path + location
+      # observed_event_ref: optional event node path the corroboration concerns
+
+    program_involvement_entry:
+      required: [program, role, evidentiary_basis, confidence, source]
+      optional: [start_date, end_date, note]
+      # program: program name (free-text or /organizations/... path)
+      # role: the person's role in the program
+      # evidentiary_basis: primary-source / sworn-testimony / on-record /
+      #                    self-attested / secondary
+      # confidence: high | medium | low
+      # source: object with path + location
+
+    publication_record_entry:
+      required: [publication, outlet, date, source]
+      optional: [node_link, beat, note]
+      # publication: title of the piece
+      # outlet: publishing organization (free-text or /organizations/... path)
+      # date: YYYY-MM-DD publication date
+      # source: object with path + location
+      # node_link: optional /documents/... path if the publication is
+      #   also a document node in this repository
+
+    vouching_chain_entry:
+      required: [voucher_path, attestation, source]
+      optional: [evidentiary_basis, confidence, note]
+      # voucher_path: /people/... or /organizations/... of the voucher
+      # attestation: verbatim or paraphrased statement of vouching
+      #   (when verbatim, contributor may additionally register a quote
+      #   entry and reference it via quote_ref)
+      # source: object with path + location
+      # evidentiary_basis / confidence: same vocabulary as program_involvement
 
     naming_quirk_entry:
       required: [observed, canonical, location, source_path, resolution]
@@ -594,6 +723,10 @@ types:
       - "audit_status in [verified, flagged, superseded, contradicted, needs-reaudit]"
       - "rumor status in [not-primary-source-established, primary-source-identified, primary-source-disputed]"
       - "entity entity_type in [person, organization, document, event, transcript, media, location, finding]"
+      - "observation_type (quotes, required on person artifacts) in [direct, relayed]"
+      - "corroboration_items[].observation_type in [testimonial, instrumented, government-statement, documentary]"
+      - "program_involvement[].evidentiary_basis in [primary-source, sworn-testimony, on-record, self-attested, secondary]"
+      - "program_involvement[].confidence in [high, medium, low]"
 
       # Iterations log
       - "iterations[].id values are sequential (i0, i1, i2, ...) with no gaps"
@@ -601,6 +734,11 @@ types:
 
       # Conditional sections
       - "rumors section present if target_node type in [person, organization, event, location]; absent otherwise"
+      - "timeline section present if target_node type in [person, organization, event, finding]; absent otherwise"
+      - "corroboration_items section present iff target_node archetype == eyewitness"
+      - "program_involvement section present iff target_node archetype == institutional-actor"
+      - "publication_record section present iff target_node archetype == reporter"
+      - "vouching_chain section present iff target_node archetype == whistleblower"
 
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema
