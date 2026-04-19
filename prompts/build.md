@@ -8,11 +8,13 @@ hard rule established after the 2026-04-17 pilot failure (see
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
 
-Phase II scope (D.3): **document-type nodes only**. Regeneration of
-person, organization, event, transcript, media, location, and finding
-nodes from research artifacts is tracked in `BACKLOG.md`. Until those
-ship, build those node types by hand from their populated research
-artifact, following the conventions in `meta/conventions.md`.
+**Phase II scope (as of F.2b, 2026-04-19):** `build-from-research.py`
+supports **document, person, and event** node types end-to-end.
+Transcript, media, organization, location, and finding nodes are still
+hand-authored from the research artifact pending their renderer
+sub-phases (F.3 → F.7; tracked in `meta/toolkit-notes/roadmap.md`).
+Until those ship, build unsupported types by hand following
+`meta/conventions.md`.
 
 ---
 
@@ -132,18 +134,25 @@ Fields used by `build-from-research.py` when rendering document nodes
   format (`YYYY-MM-DD`)** — the renderer passes them through verbatim;
   ISO keeps provenance sortable and unambiguous across documents.
 
-### Step 5. Populate `description`
+### Step 5. Populate `description` (and other free-prose fields)
 
 A 1-3 paragraph prose summary that renders as the node's `##
 Description` section. Every factual claim in the description should
 be traceable to a specific artifact entry (claim, quote, or
-document-intrinsic field). This is the only free-prose field in the
-artifact — treat it as a synthesis of the structured fields below,
-not as new evidentiary content.
+document-intrinsic field). Treat it as a synthesis of the structured
+fields below, not as new evidentiary content.
+
+**Person artifacts carry three additional free-prose fields** beyond
+`description`: `background`, `uap_relevance`, and `credibility_notes`.
+These render into the matching H2 sections on person nodes and are
+scanned by check #16 (prose-drift token check — see Step 12). All
+four person-artifact prose fields are held to the same source-vocabulary
+discipline.
 
 Future plan (tracked in `BACKLOG.md`): move to agent-generated
-description so the evidentiary-derivation invariant is enforced
-mechanically. For now: hand-write with discipline.
+descriptions so the evidentiary-derivation invariant is enforced
+mechanically. For now: hand-write with discipline — across every
+free-prose field, not just `description`.
 
 ### Step 6. Populate `quotes` (bounded agent task T2)
 
@@ -154,7 +163,23 @@ mechanically. For now: hand-write with discipline.
   - `text` (literal block `|` preserving exact line structure)
   - `source` (`path` + `location`, e.g., `location: "¶2"` or `"line 807"`)
   - `significance` (one-line note on why the quote matters)
-  - `context` (optional: "opening statement" vs "Q&A" vs "appendix")
+  - `context` — e.g., "opening statement" / "Q&A" / "appendix" /
+    "written testimony, House Oversight Committee". **Required on
+    person artifacts** (the renderer composes it into the Attributed-to
+    line of the verification block); optional on document / transcript
+    / media where the source document itself carries the context.
+  - `observation_type` (`direct` | `relayed`) — **required on person
+    artifacts**. `direct` = first-hand sensory observation by the person
+    (e.g., Fravor's "I saw a Tic Tac"). `relayed` = anything else the
+    person asserted — things heard, inferred, read, published,
+    relayed from others. Drives the Statements section split (Direct
+    Observations vs Other Statements). Ignored on non-person artifacts.
+  - `statement_date` (`YYYY-MM-DD`; `YYYY-MM` or `YYYY` tolerated) —
+    optional. On person artifacts, drives the Statements section's
+    chronological sort within each subsection (earliest first). On
+    hearing-event artifacts, drives Key Testimony sort.
+  - `category` (optional free-text tag) — e.g., `filed-claim` on
+    whistleblower artifacts so the Claim Inventory renderer can filter.
   - Standard lifecycle fields (id, added_date, added_by_iteration: i0,
     audit_cadence_days: 365)
 
@@ -172,21 +197,43 @@ mechanically. For now: hand-write with discipline.
 
 ### Step 7. Populate `claims` (bounded agent task T1)
 
-**Scope note.** For **document-type** nodes, `claims` is not populated —
-leave the list empty (`claims: []`). The rationale: a document node IS
-the fact record, and its evidentiary content is verbatim source passages
-in `quotes`. A contributor-prose claim layer was eliminated because every
-"fine drift" class the mechanical checks couldn't catch (dropped
-qualifiers, synonym rephrases, word substitutions) originated in claim
-prose. With claims gone, nothing can drift: quotes are mechanically
-verified verbatim against the source, and other nodes that need to cite
-facts from this document link to the document and reference the specific
-passage. Populate `quotes` comprehensively instead — every load-bearing
-fact in the document should have a verbatim quote.
+**Scope note.** `claims: []` under every current renderer. Rationale
+is type-specific but the outcome is uniform:
 
-For **non-document** node types (person/organization/event/etc.), claims
-may still be populated per the original discipline. The requirements
-below apply to those contexts:
+- **Document-type nodes** — the document IS the fact record, and its
+  evidentiary content is verbatim source passages in `quotes`. The
+  contributor-prose claim layer was eliminated post-Step-D because
+  every "fine drift" class the mechanical checks couldn't catch
+  (dropped qualifiers, synonym rephrases, word substitutions)
+  originated in claim prose. With claims gone, nothing can drift.
+- **Person-type nodes** — the F.1b renderer emits Identity, Background,
+  UAP Relevance, Affiliations, Statements (verbatim quotes), Timeline,
+  Relationships, archetype-specific sections, and Credibility Notes.
+  Evidentiary content flows through `quotes` (Statements section,
+  Claim Inventory for whistleblowers via category filter) and
+  structured list fields; `claims[]` is not rendered.
+- **Event-type nodes** — the F.2b renderer emits Event Summary,
+  Description, Participants, Timeline, Key Testimony (hearing only;
+  from `quotes`), Witnesses & Testimony (hearing only; from
+  `witnesses_testimony`), Corroboration (encounter only; from
+  `corroboration_items`). `claims[]` is not rendered for either kind.
+
+Since no current renderer emits `claims[]`, any claim populated in a
+renderer-supported artifact will fail the review-coverage Coverage
+check (the claim.statement won't appear in the node body). Leave
+`claims: []` on all artifacts until a future renderer consumes them.
+
+Populate `quotes` comprehensively instead — verbatim source passages
+carry the evidentiary load across all currently-supported types.
+
+For **unsupported types** (transcript, media, organization, location,
+finding) awaiting their renderer sub-phases, the hand-authored node
+body may still carry `## What This Establishes` or equivalent claim
+sections per `meta/conventions.md`. When the renderer sub-phase for
+that type ships, the claim layer's fate will be decided there (same
+shape as the post-Step-D elimination for documents, or preservation as
+synthesis cross-reference surfaces). The claim-requirements below
+apply only to hand-authored unsupported types:
 
 **Agent task T1 (non-document artifacts):**
 - **Input:** extracted plaintext + populated `quotes`
@@ -326,40 +373,74 @@ Must exit 0 before leaving Phase I. Any errors must be corrected by
 going back to the appropriate step above.
 
 **Prose-drift check #16 warnings — review before leaving Phase I.**
-On person artifacts, the validator runs a token-drift check across
-contributor-authored prose fields (`background`, `uap_relevance`,
-`credibility_notes`, and structured-entry descriptions). It flags
-every significant word in a prose field that doesn't appear in the
-referenced primary-source text.
+On person and event artifacts, the validator runs a token-drift check
+across contributor-authored prose fields (top-level: `description`,
+`background`, `uap_relevance`, `credibility_notes`; per-entry:
+`timeline[].event`, `affiliations[].role`, `relationships[].relationship`,
+`corroboration_items[].note`, `participants[].role`, and so on per
+`PROSE_FIELDS_BY_TYPE` / `PROSE_ENTRY_FIELDS_BY_TYPE` in
+`validate-research.py`). It flags every significant word in a prose
+field that doesn't appear in the referenced primary-source text.
 
-The check is an **impartial reporter** — it surfaces every unmatched
-token as a warning, and the contributor judges each case. The
-validator makes no classification about whether an unmatched token is
-"legitimate synthesis" or "real drift"; that's the contributor's
-call. Common categories of warnings that typically resolve as
-legitimate on review:
+**Validator behavior — impartial reporter.** The check surfaces every
+unmatched token as a warning. The validator makes no classification
+about whether an unmatched token is "legitimate synthesis" or "real
+drift" — that's the contributor's call per field. Errors fire only
+at 100% vocabulary divergence (complete mismatch — prose shares no
+significant words with the source it claims to draw on), a
+mathematical floor on pure fabrication. Below 100%, the validator
+reports without judgment.
 
-- Synonym pairs (source "onboard" vs prose "aboard"; source "took" vs prose "captured")
-- Word-form drift (source "investigate" vs prose "investigation"; source "publish" vs prose "published")
-- Repo-conventional vocabulary ("testimony", "subcommittee", "archived", "corroboration", "disclosure chain")
-- Acronym expansion / collapse (source "To The Stars Academy" vs prose "TTSA")
-- Hyphenated compounds (source "90 second" vs prose "90-second")
+**Contributor policy — resolve every warning structurally** (per
+durable memory `feedback_check16_warnings_must_resolve.md`). Each
+warning requires real resolution, not synthesis-acceptance:
 
-But warnings are also how **real drift** surfaces. For each warning,
-ask: *does the unmatched token introduce a fact or premise the source
-doesn't attest?* If yes, the prose field needs tightening. The four
-drift issues found in the F.1c Fravor audit (F.1c RCA in commit
-message `f67f6e8`) all surfaced as unmatched-token warnings in prose
-fields — the check exists specifically to make that review discipline
-mechanical.
+- **Free-prose synthesis fields** (`description`, `background`,
+  `uap_relevance`, `credibility_notes`) — zero warnings is the target.
+  Resolve each unmatched token by either (a) rewriting to use source
+  vocabulary exactly, or (b) capturing the source-vs-prose variance
+  as structured evidentiary data (naming_quirks, rumors, a
+  research_gap, a timeline entry, a claim). Rationalizing warnings as
+  "legitimate synthesis vocabulary" defeats the check.
+- **Timeline event cells** (`timeline[].event`) — exempt from cosmetic
+  source-morphology warnings (active/passive voice swaps, honorific
+  substitutions) when the source-match edit reduces readability
+  without adding precision. Real factual drift in a timeline cell
+  (premise shift, fabrication, mis-attribution) still requires
+  correction.
+- **Other per-entry label fields** — contextual; consult user when
+  unsure whether the timeline-style exemption applies.
 
-Check #16 fires an **ERROR** only when **100% of a field's significant
-tokens are absent from source** — i.e., the prose field shares no
-vocabulary with the source it claims to draw on. That's a
-mathematical floor (complete divergence), not a stylistic threshold;
-it catches pure fabrication (prose about a different source entirely)
-without the validator classifying "how much drift is too much".
-Errors must be fixed before proceeding.
+Common categories of warnings and how they resolve:
+
+- **Word-form variants** (source "prepare" vs prose "preparing";
+  source "flown" vs prose "flying") → rewrite to source morphology
+  on free-prose fields; exempt on timeline cells.
+- **Repo-conventional naming** (source "Statement" vs prose "written
+  testimony"; source "took" vs prose "captured") → rewrite to source
+  vocabulary on free-prose fields. Repo filename conventions
+  (`written-testimony-*.md`) do not license substituting those
+  conventions into content prose.
+- **Source-vs-canonical naming variance** (source "Lue Elizondo" vs
+  canonical "Luis Elizondo"; source "Keane" vs canonical "Kean") →
+  two-step: use source form in prose wrapped in the canonical link
+  path (`Lue Elizondo ([`/people/luis-elizondo`])`); log the variance
+  in `naming_quirks` with a note on what it means (alias-of-record
+  for 2+ instances; typo for isolated misspellings). Check #16
+  strips the wrap before tokenizing.
+- **Acronym expansion / collapse** (source "To The Stars Academy" vs
+  prose "TTSA") → use source form or introduce canonical alongside
+  first occurrence with explicit parenthesis.
+- **Hyphenated compounds** (source "90 second" vs prose "90-second")
+  → match source.
+
+For every warning, ask: *does this unmatched token introduce a fact
+or premise the source doesn't attest?* If yes, the prose field needs
+tightening. If no — the resolution is still to rewrite to source
+vocabulary on free-prose fields (or document the variance
+structurally). The F.1c Fravor audit (commit `f67f6e8`) and F.2c
+Nimitz audit (commit `305407d`) both demonstrated the
+iteration-correction pattern driven by this discipline.
 
 ### Phase I complete
 
@@ -375,9 +456,11 @@ Deterministic transformation from research artifact → populated node
 body. No creative writing in Phase II. Every line in the node body
 traces to a research-artifact entry.
 
-**Scope (D.3):** document-type nodes only. For other node types,
-Phase II is still manual — follow `meta/conventions.md`. Extension is
-tracked in `BACKLOG.md`.
+**Scope (as of F.2b):** document, person, and event node types.
+For transcript, media, organization, location, and finding, Phase II
+is still manual — follow `meta/conventions.md` and draw exclusively
+from the populated research artifact. Renderer extension is tracked
+per-type in `meta/toolkit-notes/roadmap.md` (F.3 → F.7).
 
 ### Step 1. Regenerate the node from its research artifact
 
@@ -389,18 +472,65 @@ This:
 
 1. Pre-flight: re-runs `validate-research.py` on the artifact and
    aborts if the artifact isn't structurally clean.
-2. Renders each required H2 section from artifact data:
+2. Renders each required H2 section from artifact data. Sections
+   differ by node type:
+
+   **Document nodes** (D.3):
    - `## Document Summary` — from `document_intrinsic` +
      `context_extrinsic` + `primary_sources[0]`
    - `## Description` — from `description`
-   - `## Provenance` (gov-doc only) — from
-     `context_extrinsic.provenance`
-   - `## Key Passages` — from `quotes` (with verification blocks). For
-     document nodes this is the sole evidentiary layer — there is no
-     `## What This Establishes` table. See `meta/conventions.md`
-     "Document nodes vs synthesis nodes".
-   - `## Associated Nodes` — placeholder (associate.py fills below)
-   - `## Open Questions / Research Gaps` — from `research_gaps`
+   - `## Provenance` (gov-doc only) — from `context_extrinsic.provenance`
+   - `## Key Passages` — from `quotes` (verification block per quote).
+     Document nodes' sole evidentiary layer — no `## What This
+     Establishes` table (see `meta/conventions.md` "Document nodes vs
+     synthesis nodes").
+
+   **Person nodes** (F.1b):
+   - `## Identity` — from `document_intrinsic` (full_name, aliases,
+     nationality, profession)
+   - `## Background` / `## UAP Relevance` / `## Credibility Notes` —
+     from respective free-prose fields
+   - `## Affiliations` (Confirmed/Flagged split) — from `affiliations[]`,
+     sorted by `period_start`
+   - `## Statements` (Direct Observations / Other Statements split) —
+     from `quotes[]` filtered by `observation_type` and sorted by
+     `statement_date`
+   - `## Timeline` — from `timeline[]` (chronological, Category column)
+   - `## Relationships` (Confirmed/Flagged split) — from `relationships[]`
+   - Archetype-specific section (dispatched by frontmatter `archetype`):
+     eyewitness → `## Corroboration` (from `corroboration_items[]`);
+     whistleblower → `## Claim Inventory` (render-time view of quotes
+     tagged `category: filed-claim`) + `## Vouching Chain` (from
+     `vouching_chain[]`); institutional-actor → `## Program Involvement`
+     (from `program_involvement[]`); reporter → `## Publication Record`
+     (from `publication_record[]`, sorted by date)
+
+   **Event nodes** (F.2b):
+   - `## Event Summary` — from `event_intrinsic`. Kind-specific fields:
+     hearing emits Full Title / Convening Body / Session / Congress /
+     Date / Location / Chair; encounter emits Date / Location (via
+     `location_path` or `location`) / Duration / Weather /
+     Instruments Involved.
+   - `## Description` — from `description`
+   - `## Participants` — from `participants[]`. Hearings: sub-sections
+     by `capacity` (Witnesses — Eyewitness Testimony / Whistleblower
+     Testimony / Institutional Testimony / Committee Members) +
+     Flagged rollup. Encounters: flat Confirmed/Flagged table.
+   - `## Timeline` — from `timeline[]`
+   - **Hearing-only:** `## Key Testimony` (verbatim `> blockquote` +
+     verification-block pairs from `quotes[]`, sorted by
+     `statement_date`) + `## Witnesses & Testimony` (cross-reference
+     table from `witnesses_testimony[]` — witness / oath status /
+     transcript / written testimony)
+   - **Encounter-only:** `## Corroboration` (from `corroboration_items[]` —
+     same shape as eyewitness person)
+
+   **All renderer-supported types** close with:
+   - `## Associated Nodes` — placeholder; filled by `associate.py`
+     (auto-generated from body `[`/path`]` links)
+   - `## Open Questions / Research Gaps` — from unresolved
+     `research_gaps[]` + `retain_as_done: true` resolved gaps
+
 3. Preserves the node's existing frontmatter verbatim.
 4. Writes the regenerated body to `{type}/{slug}.md`, overwriting the
    previous body.
@@ -483,26 +613,39 @@ node surfaces no semantic issues. Ready to commit.
 
 ---
 
-## End-of-session procedure (document nodes)
+## End-of-session procedure
+
+### Renderer-supported types (document, person, event)
 
 1. `python3 scripts/validate-research.py research/{slug}.yaml` — must pass
 2. `python3 scripts/build-from-research.py research/{slug}.yaml` — must
    complete cleanly (includes post-build `validate.py`)
 3. `python3 scripts/review-coverage.py research/{slug}.yaml` — must pass
+   (Coverage / Boundary / Stub-linking / OQ deduplication — all four checks)
 4. Read the regenerated node top-to-bottom; fix any issues in the
    **artifact** (not the node) and re-run steps 2–3
-5. Commit the research artifact + regenerated node + any manifest
+5. Run the full pre-commit chain before committing:
+   ```
+   bash tests/pre-commit.sh
+   ```
+   All six gates must pass (help-check, smoke, validate, validate-research,
+   build-state, audit-schedule).
+6. `python3 scripts/build-state.py --update` if the commit adds, removes,
+   or changes the status of a node (refreshes the CLAUDE.md build-state block)
+7. Commit the research artifact + regenerated node + any manifest
    changes in one focused commit (one node per session — hard rule)
 
-For non-document node types (Phase II renderer not yet implemented —
-tracked in `BACKLOG.md`):
+### Pending-renderer types (transcript, media, organization, location, finding)
 
-1. `validate-research.py` passes
+Until the per-type renderer sub-phase (F.3 → F.7) ships:
+
+1. `validate-research.py` passes on the populated artifact
 2. Hand-author the node body per `meta/conventions.md`, drawing
-   exclusively from artifact entries
-3. `validate.py` passes; commit when clean
+   exclusively from artifact entries (no training-knowledge claims)
+3. `validate.py` passes; run `associate.py` to regenerate Associated Nodes
+4. Run `bash tests/pre-commit.sh` — all six gates green before commit
 
-`review-coverage.py` currently skips non-document artifacts with a
+`review-coverage.py` currently skips unsupported artifacts with a
 notice; full coverage review unlocks for each type as its Phase II
 renderer lands.
 
@@ -514,7 +657,7 @@ Each task has clear I/O and can be run as a focused agent invocation:
 
 | Task | Input | Output |
 |---|---|---|
-| T1 — Extract claims | Plaintext + quotes | YAML `claims:` fragment |
+| T1 — Extract claims *(unsupported types only; see Step 7)* | Plaintext + quotes | YAML `claims:` fragment |
 | T2 — Extract quotes | Plaintext | YAML `quotes:` fragment |
 | T3 — Identify entities | Plaintext + quotes + claims | YAML `entities_referenced:` fragment |
 | T4 — Naming quirks | Plaintext + quotes | YAML `naming_quirks:` fragment |
