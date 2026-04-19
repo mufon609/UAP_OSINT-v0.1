@@ -133,11 +133,11 @@ Fravor's UAP relevance rests on his first-hand observation of the November 2004 
 
 ## Corroboration
 
-| Source | Type | What It Confirms | Node Link |
+| Observer | Type | What It Confirms | Attested In |
 |---|---|---|---|
-| government/oversight-house-gov-fravor-written-testimony-20230726.pdf | testimonial | Other F/A-18F pilot in Fravor's 2-plane flight; Fravor's testimony confirms the wingman also lost visual at intercept | [`/people/alex-dietrich`] |
-| government/oversight-house-gov-fravor-written-testimony-20230726.pdf | instrumented | Aegis SPY-1 radar observed the object for two weeks prior and tracked the reacquisition 60 miles east of the CAP point after the airborne encounter | [`/organizations/uss-princeton`] |
-| government/oversight-house-gov-fravor-written-testimony-20230726.pdf | documentary | Approximately 90-second targeting-pod video captured by a follow-on Nimitz crew immediately after Fravor's flight; publicly released by the USG in 2017 | [`/media/flir1-video`] |
+| [`/people/alex-dietrich`] | testimonial | Other F/A-18F pilot in Fravor's 2-plane flight; Fravor's testimony confirms the wingman also lost visual at intercept | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/uss-princeton`] | instrumented | Aegis SPY-1 radar observed the object for two weeks prior and tracked the reacquisition 60 miles east of the CAP point after the airborne encounter | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/media/flir1-video`] | documentary | Approximately 90-second targeting-pod video captured by a follow-on Nimitz crew immediately after Fravor's flight; publicly released by the USG in 2017 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 
 ---
 

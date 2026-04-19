@@ -6,11 +6,11 @@ Reads /research/{slug}.yaml and rewrites /{type}/{slug}.md. Frontmatter is
 preserved from the existing node; body sections (H1 title onward) are
 replaced entirely by content derived from the artifact.
 
-SCOPE: document (D.3) and person (F.1b). Extension to the remaining six
-node types (organization, event, transcript, media, location, finding)
-is tracked in BACKLOG.md — each requires per-type section renderers
-and type-specific artifact field conventions, per the Step F template
-on the roadmap.
+SCOPE: document (D.3), person (F.1b), event (F.2b). Extension to the
+remaining five node types (organization, transcript, media, location,
+finding) is tracked in BACKLOG.md — each requires per-type section
+renderers and type-specific artifact field conventions, per the Step F
+template on the roadmap.
 
 Person renderer (F.1b):
   - Universal sections: Identity, Background, UAP Relevance,
@@ -25,6 +25,21 @@ Person renderer (F.1b):
       institutional-actor → Program Involvement (from program_involvement)
       reporter            → Publication Record  (from publication_record, sorted)
   - Whistleblower-only: Vouching Chain section (from vouching_chain)
+
+Event renderer (F.2b):
+  - Universal sections: Event Summary (from event_intrinsic),
+    Description, Participants, Timeline, Associated Nodes, Open
+    Questions
+  - Hearing kind additionally: Key Testimony (verbatim quotes),
+    Witnesses & Testimony (cross-reference table — replaces the prior
+    What The Hearing Established synthesis section per F.2a)
+  - Encounter kind additionally: Corroboration (shares the
+    corroboration_items entry shape + renderer with eyewitness
+    person nodes; column layout revised in F.2a:
+    Observer | Type | What It Confirms | Attested In)
+  - Hearing Participants sub-structured by participant capacity
+    (witness-eyewitness / whistleblower / institutional / committee-
+    member); encounter Participants uses flat Confirmed/Flagged.
 
 DETERMINISM: given the same artifact + node frontmatter, output is
 byte-for-byte identical across runs. Entries are rendered in id-sorted
@@ -76,8 +91,9 @@ TYPE_DIRS = {
     "location": "locations", "finding": "findings",
 }
 
-# Types this script can regenerate (D.3 scope: document; F.1b adds person)
-SUPPORTED_TYPES = {"document", "person"}
+# Types this script can regenerate (D.3 scope: document;
+# F.1b adds person; F.2b adds event)
+SUPPORTED_TYPES = {"document", "person", "event"}
 
 # Archetype → archetype-specific artifact section name (person only)
 ARCHETYPE_SECTION = {
@@ -578,9 +594,16 @@ def render_relationships(artifact):
 
 
 def render_corroboration(artifact):
+    """Corroboration section — renders on eyewitness person artifacts AND
+    encounter event artifacts (same entry shape, same renderer). Column
+    layout revised in F.2a: Observer first (what the investigator is
+    looking for), Attested In last (the source documenting the
+    corroboration); was Source | ... | Node Link which inverted the
+    scan order.
+    """
     items = artifact.get("corroboration_items") or []
     lines = ["## Corroboration", "",
-             "| Source | Type | What It Confirms | Node Link |",
+             "| Observer | Type | What It Confirms | Attested In |",
              "|---|---|---|---|"]
     if not items:
         lines.append("|  |  |  |  |")
@@ -588,10 +611,10 @@ def render_corroboration(artifact):
         if not isinstance(e, dict):
             continue
         lines.append(
-            f"| {(e.get('source') or {}).get('path') or ''} | "
+            f"| {_wrap_path(e.get('observer_path'))} | "
             f"{e.get('observation_type') or ''} | "
             f"{e.get('note') or ''} | "
-            f"{_wrap_path(e.get('observer_path'))} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -722,6 +745,205 @@ def render_credibility_notes(artifact, archetype):
 
 
 # =============================================================================
+# Event-type section renderers (F.2b)
+# =============================================================================
+
+# Participant capacity → sub-section header used in hearing Participants.
+# Encounter Participants uses the flat Confirmed/Flagged table instead.
+_HEARING_CAPACITY_SUBSECTION = {
+    "witness-eyewitness":     "Witnesses — Eyewitness Testimony",
+    "witness-whistleblower":  "Witnesses — Whistleblower Testimony",
+    "witness-institutional":  "Witnesses — Institutional Testimony",
+    "committee-member":       "Committee Members",
+}
+
+# Order of sub-sections within hearing Participants (matches the schema's
+# participants_structure.confirmed_subsections list).
+_HEARING_CAPACITY_ORDER = [
+    "witness-eyewitness",
+    "witness-whistleblower",
+    "witness-institutional",
+    "committee-member",
+]
+
+
+def render_title_event(artifact):
+    """H1 title for event nodes. Prefers context_extrinsic.display_title,
+    then event_intrinsic.hearing_title (hearings) or a date+slug
+    composition (encounters)."""
+    slug = artifact["target_node"].split("/", 1)[1] if "/" in artifact["target_node"] else ""
+    ei = artifact.get("event_intrinsic") or {}
+    ctx = artifact.get("context_extrinsic") or {}
+    title = (
+        ctx.get("display_title")
+        or ei.get("hearing_title")
+        or ei.get("display_title")
+        or (slug and " ".join(w.capitalize() for w in slug.split("-")))
+        or ""
+    )
+    return f"# {title}\n"
+
+
+def render_event_summary(artifact, kind):
+    """Event Summary table — populated from event_intrinsic. Fields
+    differ by kind; renderer emits whichever keys are present.
+    """
+    ei = artifact.get("event_intrinsic") or {}
+    lines = ["## Event Summary", "", "| Field | Value |", "|---|---|"]
+
+    def row(label, value):
+        if value in (None, "", [], {}):
+            return
+        if isinstance(value, list):
+            value = "; ".join(str(v) for v in value)
+        lines.append(f"| {label} | {value} |")
+
+    if kind == "hearing":
+        row("Full Title",     ei.get("hearing_title"))
+        row("Convening Body", ei.get("committee"))
+        row("Session",        ei.get("session"))
+        row("Congress",       ei.get("congress_number"))
+        row("Date",           ei.get("date"))
+        row("Location",       ei.get("location"))
+        row("Chair",          ei.get("chair"))
+    else:  # encounter
+        row("Date",            ei.get("date"))
+        row("Location",        _wrap_path(ei.get("location_path")) or ei.get("location"))
+        row("Duration",        ei.get("duration"))
+        row("Weather",         ei.get("weather"))
+        row("Instruments Involved", ei.get("instruments_involved"))
+
+    # Placeholder row if no content
+    if len(lines) == 4:
+        lines.append("|  |  |")
+    return "\n".join(lines) + "\n"
+
+
+def render_event_description(artifact):
+    body = (artifact.get("description") or "").strip()
+    if not body:
+        body = "<!-- TODO: populate `description` in the research artifact -->"
+    return f"## Description\n\n{body}\n"
+
+
+def _participant_row(e):
+    """Render one participant row. Cells: participant (wrap_path), role,
+    source.path, node-link (wrap_path)."""
+    p = _wrap_path(e.get("participant_path"))
+    return (
+        f"| {p} | "
+        f"{e.get('role') or ''} | "
+        f"{(e.get('source') or {}).get('path') or ''} | "
+        f"{p} |"
+    )
+
+
+def render_participants_encounter(artifact):
+    """Flat Confirmed/Flagged split for encounter events."""
+    items = artifact.get("participants") or []
+    confirmed = [e for e in items if isinstance(e, dict) and not e.get("flagged")]
+    flagged   = [e for e in items if isinstance(e, dict) and e.get("flagged")]
+
+    lines = ["## Participants", "", "### Confirmed", "",
+             "| Participant | Role | Source | Node Link |",
+             "|---|---|---|---|"]
+    if confirmed:
+        for e in confirmed:
+            lines.append(_participant_row(e))
+    else:
+        lines.append("|  |  |  |  |")
+    if flagged:
+        lines += ["", "### Flagged", "",
+                  "| Participant | Role | Source | Node Link |",
+                  "|---|---|---|---|"]
+        for e in flagged:
+            lines.append(_participant_row(e))
+    return "\n".join(lines) + "\n"
+
+
+def render_participants_hearing(artifact):
+    """Hearing Participants — sub-sections by capacity. Flagged entries
+    (any capacity) roll up into a single `### Flagged` subsection at the
+    end, same as the Confirmed/Flagged pattern elsewhere."""
+    items = [e for e in (artifact.get("participants") or []) if isinstance(e, dict)]
+    confirmed = [e for e in items if not e.get("flagged")]
+    flagged   = [e for e in items if e.get("flagged")]
+
+    lines = ["## Participants", "", "### Confirmed"]
+    for capacity in _HEARING_CAPACITY_ORDER:
+        subsection_entries = [e for e in confirmed if e.get("capacity") == capacity]
+        subheader = _HEARING_CAPACITY_SUBSECTION[capacity]
+        lines.append("")
+        lines.append(f"#### {subheader}")
+        lines.append("")
+        lines.append("| Participant | Role | Source | Node Link |")
+        lines.append("|---|---|---|---|")
+        if subsection_entries:
+            for e in subsection_entries:
+                lines.append(_participant_row(e))
+        else:
+            lines.append("|  |  |  |  |")
+
+    # Catch entries with unknown capacity — they still need to render
+    known = set(_HEARING_CAPACITY_ORDER)
+    other_confirmed = [e for e in confirmed if e.get("capacity") not in known]
+    if other_confirmed:
+        lines += ["", "#### Other", "",
+                  "| Participant | Role | Source | Node Link |",
+                  "|---|---|---|---|"]
+        for e in other_confirmed:
+            lines.append(_participant_row(e))
+
+    if flagged:
+        lines += ["", "### Flagged", "",
+                  "| Participant | Role | Source | Node Link |",
+                  "|---|---|---|---|"]
+        for e in flagged:
+            lines.append(_participant_row(e))
+    return "\n".join(lines) + "\n"
+
+
+def render_key_testimony(artifact):
+    """Key Testimony (hearing only) — verbatim quote blocks with
+    verification tables. Reuses the person-node statement block shape:
+    > quote + | Field | Value | table with Attributed to / Source /
+    Verified rows. Sorted by statement_date when set. Empty-state
+    emits an instructive stub pointing at the artifact's `quotes`
+    list."""
+    quotes = [q for q in (artifact.get("quotes") or []) if isinstance(q, dict)]
+    quotes = sort_by_date(quotes, "statement_date")
+    lines = ["## Key Testimony", ""]
+    if not quotes:
+        lines.append("<!-- No key testimony quotes recorded in artifact. -->")
+        return "\n".join(lines) + "\n"
+    for q in quotes:
+        lines.append(_render_statement_block(q, artifact))
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_witnesses_testimony(artifact):
+    """Witnesses & Testimony (hearing only) — cross-reference table.
+    Replaces the prior `What The Hearing Established` synthesis section
+    per the F.2a collapse. One row per witness pointing at transcript
+    and written-testimony nodes."""
+    items = [e for e in (artifact.get("witnesses_testimony") or []) if isinstance(e, dict)]
+    lines = ["## Witnesses & Testimony", "",
+             "| Witness | Oath Status | Transcript | Written Testimony |",
+             "|---|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |  |")
+    for e in items:
+        lines.append(
+            f"| {_wrap_path(e.get('witness_path'))} | "
+            f"{e.get('oath_status') or ''} | "
+            f"{_wrap_path(e.get('transcript_node'))} | "
+            f"{_wrap_path(e.get('written_testimony_node'))} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+# =============================================================================
 # Composition
 # =============================================================================
 
@@ -775,6 +997,42 @@ def render_body_person(artifact, archetype):
     return title + "\n" + joined
 
 
+def render_body_event(artifact, kind):
+    """Event-type body composition. Section order matches the schema's
+    required_sections for the given kind. Hearing and encounter diverge
+    after the universal Event Summary / Description / Participants /
+    Timeline opener — hearings emit Key Testimony + Witnesses &
+    Testimony; encounters emit Corroboration.
+    """
+    title = render_title_event(artifact).rstrip("\n") + "\n"
+    sections = [
+        render_event_summary(artifact, kind),
+        render_event_description(artifact),
+    ]
+    if kind == "hearing":
+        sections.extend([
+            render_participants_hearing(artifact),
+            render_timeline(artifact),
+            render_key_testimony(artifact),
+            render_witnesses_testimony(artifact),
+        ])
+    elif kind == "encounter":
+        sections.extend([
+            render_participants_encounter(artifact),
+            render_timeline(artifact),
+            render_corroboration(artifact),
+        ])
+    else:
+        sys.exit(f"ERROR: render_body_event: unknown event kind {kind!r}")
+    sections.extend([
+        render_associated_nodes(),
+        render_open_questions(artifact),
+    ])
+    sections = [s for s in sections if s]
+    joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
+    return title + "\n" + joined
+
+
 def render_body(artifact, node_type, fm):
     """Dispatch by node_type. `fm` is the existing node frontmatter
     (needed for kind / archetype context the renderer can't derive from
@@ -783,6 +1041,8 @@ def render_body(artifact, node_type, fm):
         return render_body_document(artifact, fm.get("kind"))
     if node_type == "person":
         return render_body_person(artifact, fm.get("archetype"))
+    if node_type == "event":
+        return render_body_event(artifact, fm.get("kind"))
     sys.exit(f"ERROR: build-from-research.py does not yet support node_type {node_type!r}")
 
 

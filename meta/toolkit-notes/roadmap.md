@@ -633,15 +633,48 @@ Changes shipped:
 All pre-commit gates green; Fravor person artifact unchanged (no
 regression). Both event kinds scaffold + validate cleanly.
 
-#### F.2b — event renderer in build-from-research.py  ⏸ NEXT
+#### F.2b — event renderer in build-from-research.py  ✅ DONE (2026-04-19)
 
-Extends `build-from-research.py` to support `target_node` type
-`event`. Per-section renderers dispatched by kind (hearing vs
-encounter); reuses helpers from F.1b (`_wrap_path`, `sort_by_date`,
-`_render_verification_block`). Also updates the person-node
-Corroboration renderer to match the new column layout from F.2a's
-template change. Review-coverage.py SUPPORTED_TYPES extended to
-include event.
+Extended `build-from-research.py` with event-type support. Per-kind
+dispatch + 10 section renderers:
+
+- `render_title_event` — prefers context_extrinsic.display_title,
+  falls back to event_intrinsic.hearing_title or humanized slug
+- `render_event_summary(kind)` — populates from event_intrinsic
+  with per-kind field lists (hearings emit hearing_title / committee
+  / session / congress / date / location / chair; encounters emit
+  date / location / duration / weather / instruments_involved).
+  Skips rows with empty values.
+- `render_event_description` — from artifact.description
+- `render_participants_encounter` — flat Confirmed/Flagged table
+- `render_participants_hearing` — sub-sectioned by participant
+  capacity (Witnesses — Eyewitness / Whistleblower / Institutional
+  Testimony / Committee Members), plus Flagged rollup
+- `render_timeline` — reused from F.1b
+- `render_key_testimony` — hearing-only; verbatim block-quote +
+  verification-block pairs sorted by statement_date. Reuses
+  `_render_statement_block` from F.1b.
+- `render_witnesses_testimony` — hearing-only; cross-reference table
+  (witness / oath status / transcript / written testimony). Replaces
+  the prior What The Hearing Established synthesis section.
+- `render_corroboration` — shared between eyewitness person and
+  encounter event. Column layout revised to Observer | Type | What
+  It Confirms | Attested In (was Source | Type | What It Confirms |
+  Node Link — inverted the investigator scan order). F.1c finding
+  from BACKLOG closed by this revision.
+
+Supporting changes:
+- `scripts/build-from-research.py` SUPPORTED_TYPES gains `event`
+- `scripts/review-coverage.py` SUPPORTED_TYPES matches
+- Existing Fravor person node regenerated under the revised
+  Corroboration column layout (no regression; review-coverage
+  Boundary check passes against the re-rendered dry-run)
+
+End-to-end verification: synthetic encounter artifact scaffolds +
+validates + renders + passes review-coverage. Check #16 correctly
+caught a test-prose-token injection (1/1 unmatched = 100% = ERROR).
+Person Corroboration regeneration across the layout change was
+clean.
 
 #### F.2c — Nimitz encounter pilot  ⏸ AFTER F.2b
 

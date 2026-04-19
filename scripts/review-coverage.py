@@ -96,7 +96,7 @@ TYPE_DIRS = {
     "location": "locations", "finding": "findings",
 }
 # Matches build-from-research.py SUPPORTED_TYPES. Expand in lockstep.
-SUPPORTED_TYPES = {"document", "person"}
+SUPPORTED_TYPES = {"document", "person", "event"}
 
 LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
 
