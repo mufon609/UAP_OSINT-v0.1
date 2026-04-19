@@ -35,7 +35,8 @@ is for leads that don't fit in any existing node yet.
 
 ## Queue
 
-*Empty — Phase 2 pilots not started.*
+*Empty.* All current leads have `[/path]` references in built nodes and
+appear in the Priority Build Queue below.
 
 | Item | Source | Found In | Priority | Status |
 |---|---|---|---|---|
@@ -44,10 +45,74 @@ is for leads that don't fit in any existing node yet.
 
 ## Priority Build Queue
 
-*Empty — Phase 2 pilots not started.*
+33 unbuilt-stub targets referenced from the 3 built nodes (Fravor
+document + Graves document + Fravor person). Grouped by natural
+cluster so contributors can choose which ring to close first.
 
-| Path | Type / Kind | Rationale | Source Access |
-|---|---|---|---|
+### Cluster A — 2004 Nimitz encounter (anchor: F.2c pilot)
+
+The natural next build after F.2b ships. Fravor person node already
+registers most of these stubs; the encounter event unlocks corroborator
+people nodes (Dietrich, Underwood) and the FLIR1 media node.
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/events/2004-nimitz-encounter` | event / encounter | **High** | F.2c pilot target; cluster anchor; referenced by Fravor person + Fravor testimony doc | Fravor written testimony (already archived + extracted) |
+| `/people/alex-dietrich` | person / eyewitness | High | Co-observer (Fravor's wingman); named in Fravor testimony + multiple interview transcripts | Fravor testimony + CBS 60 Minutes 2021-05-16 transcript (archived) |
+| `/media/flir1-video` | media / video | High | Primary documentary corroboration (90-second targeting-pod video); released by USG in 2017 | Need to archive the DoD-released video file; transcript of cockpit audio |
+| `/organizations/uss-nimitz` | organization / gov (military-service) | High | Ship that launched the Fravor flight; referenced across multiple cluster members | Navy HR + public record |
+| `/organizations/uss-princeton` | organization / gov (military-service) | High | Aegis SPY-1 radar platform — instrumented corroboration source | Navy HR + surfpac.navy.mil (archived) |
+| `/organizations/vfa-41` | organization / gov (military-service) | High | Fravor's squadron (Black Aces) | Navy HR + public record |
+| `/organizations/carrier-airwing-eleven` | organization / gov (military-service) | Medium | Parent of VFA-41 | Navy HR |
+| `/organizations/vmfa-232` | organization / gov (military-service) | Low | Marine squadron flying Red Air (testimony mention only) | Marine Corps records |
+| `/organizations/us-navy` | organization / gov (military-service) | Medium | Fravor's service — useful hub | public record |
+| `/organizations/dod` | organization / gov | Medium | Referenced in Fravor testimony re ATIP | public record |
+| `/organizations/ttsa` | organization / private | Medium | Formation narrative in Fravor testimony | Corporate registrations + public record |
+| `/people/jay-stratton` | person / institutional-actor | Medium | Named in Fravor testimony as 2009 contact; AATIP / UAPTF relevance | Public record (Coulthart book; AARO HRR) |
+| `/people/luis-elizondo` | person / institutional-actor | Medium | Named in Fravor testimony; AATIP disclosure lead | Extensive public record (2023 House testimony + book) |
+| `/people/tom-delonge` | person / reporter (or private?) | Low | TTSA co-founder; named in Fravor testimony | Public record |
+| `/people/christopher-mellon` | person / institutional-actor | Low | Former Deputy Assistant SecDef for Intelligence; TTSA advisor | Public record |
+| `/people/steve-justice` | person / institutional-actor | Low | Former Lockheed Skunk Works director; TTSA | Public record |
+
+### Cluster B — 2023-07-26 House Oversight hearing
+
+Adjacent to the Nimitz cluster; Fravor's testimony submission is the
+crossover. Event + transcripts + witness persons.
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/events/2023-07-26-house-uap-hearing` | event / hearing | High | Hearing node ties together Fravor, Graves, Grusch testimonies | oversight.house.gov event page (archived) |
+| `/transcripts/2023-07-26-house-fravor` | transcript / hearing | High | Fravor's oral testimony at the hearing — complements the written testimony doc | congress.gov hearing transcript PDF (archived) |
+| `/transcripts/2023-07-26-house-graves` | transcript / hearing | High | Graves's oral testimony at the hearing | congress.gov hearing transcript PDF (archived) |
+| `/people/ryan-graves` | person / eyewitness | High | 2015 Virginia Beach encounters witness; written testimony already archived as document | Graves written testimony (archived + extracted) |
+| `/people/sean-kirkpatrick` | person / institutional-actor | Medium | AARO founding director; named in Graves testimony | 2023-04-19 SASC testimony (archived) |
+| `/people/tim-gallaudet` | person / institutional-actor | Medium | Former NOAA Chief Scientist and Deputy Administrator; UAP advocate | Public record |
+| `/documents/odni-preliminary-assessment-2021` | document / gov-doc | Medium | Referenced in Graves testimony; foundational UAP report | ODNI (public PDF; archived) |
+
+### Cluster C — NYT 2017 disclosure chain
+
+Secondary cluster surfaced through Fravor testimony narrative.
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/people/leslie-kean` | person / reporter | Low | NYT Dec 2017 co-author; named in Fravor testimony | Public record (byline history + book) |
+| `/people/ralph-blumenthal` | person / reporter | Low | NYT Dec 2017 co-author | Public record |
+| `/people/helene-cooper` | person / reporter | Low | NYT Dec 2017 co-author | Public record |
+
+### Cluster D — UAP oversight institutions
+
+Referenced in Graves testimony; lower priority until a specific
+investigation thread demands them.
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/organizations/aaro` | organization / gov | Medium | All-domain Anomaly Resolution Office; central to current UAP record | defense.gov press releases (archived) |
+| `/organizations/uaptf` | organization / gov | Medium | UAP Task Force; AARO predecessor | public record |
+| `/organizations/americans-for-safe-aerospace` | organization / private | Low | Ryan Graves's nonprofit | safeaerospace.com (archived) |
+| `/organizations/aiaa` | organization / private | Low | Aerospace engineering professional society — pilot-reporting context | Public record |
+| `/organizations/faa` | organization / gov | Low | Aviation authority — pilot-reporting context | Public record |
+| `/organizations/noaa` | organization / gov | Low | Referenced in Graves testimony re Tim Gallaudet | Public record |
+| `/organizations/vfa-11` | organization / gov (military-service) | Low | Graves's squadron (Red Rippers) | Navy HR |
 
 ---
 
@@ -58,6 +123,7 @@ table tracks audit history only.
 
 | Node | Audit date |
 |---|---|
+| `/people/david-fravor` (i0 → i1 audit-correction) | 2026-04-19 |
 
 ---
 
@@ -65,7 +131,8 @@ table tracks audit history only.
 
 Long-term structural improvements not blocked on primary sources.
 
-*No milestones yet — Phase 2 pilots not started.*
-
 | Milestone | Description | Target | Status |
 |---|---|---|---|
+| Close Cluster A (Nimitz) ring | Build Nimitz encounter + Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | After F.2c + F.3 (transcript renderer) + F.4 (media renderer) ship | Pending |
+| Close Cluster B (2023-07-26 hearing) ring | Build hearing event + both transcripts + Graves person | After F.2c / F.3 | Pending |
+| First finding node | Build a cross-entity finding spanning 3+ nodes (e.g., UAP video-release provenance chain) | After ≥3 cluster rings close | Pending |

@@ -132,30 +132,11 @@ the split pattern — future check modules will follow the same approach.
 
 ---
 
-### Validator scope expansion to meta files — ✅ RESOLVED 2026-04-17 (commit 30b7fc3)
+### ✅ RESOLVED Validator scope expansion to meta files
 
-Check #13 `check_governance_files()` in `scripts/validate.py` walks
-`meta/` recursively and enforces the governance-file frontmatter
-discipline exactly as proposed in the original entry:
-
-- Every `.md` under `meta/` must carry `id / type / schema_version /
-  created`
-- `schema_version` must appear in `schema.compatible_with`
-- `id` must match the file path
-- Templates are routed through a placeholder-aware regex check because
-  their `{{slug}}` / `{{today}}` values aren't YAML-parseable cleanly
-- No `type`-specific section requirements for meta files
-
-Entry retained as audit trail through ~2026-07 (~3 months); then
-delete with a note in `meta/toolkit-notes/roadmap.md`'s history if
-useful or drop silently. The roadmap's Step A/B/C section already
-captures the high-level scope; this entry's resolution needs no
-further roadmap note.
-
-**Original surface.** Step A/B/C audit → follow-up assessment
-2026-04-17 (P3). Deferred at that time in favor of B-series bug fixes.
-**Shipped.** commit 30b7fc3 ("Add check #13 — governance-file
-frontmatter validation"), 2026-04-17.
+Shipped 2026-04-17 (commit 30b7fc3) — `check_governance_files()` in
+`scripts/validate.py` (check #13) walks `meta/` and enforces the
+governance-file frontmatter discipline. Audit trail in git log.
 
 ---
 
@@ -262,33 +243,20 @@ built through the full Phase I → II pipeline.
 
 ### Extend build-from-research.py to all 8 node types
 
-**Issue.** `scripts/build-from-research.py` ships in D.3 supporting
-**document** nodes only. F.1b (2026-04-19) added **person** support.
-Organization, event, transcript, media, location, and finding node
-regeneration is not yet implemented.
+**Issue.** `scripts/build-from-research.py` supports 3 of 8 node types
+as of 2026-04-19: `document` (D.3), `person` (F.1b), `event` (F.2b).
+Five remain: organization, transcript, media, location, finding.
 
 **Why it matters.** Phase II of the layered build process is defined
 as "deterministic regeneration from research artifact." Until all node
 types are supported, the Phase II discipline is only partially
-enforceable — contributors building a person or organization node
-must still hand-author the body, which reintroduces the fabrication
-surface that the layered process exists to close.
+enforceable — contributors building unsupported types must still
+hand-author the body, which reintroduces the fabrication surface
+that the layered process exists to close.
 
-**Proposed scope.** Per-type section renderers. Each node type's
-required sections map to specific artifact fields or to type-specific
-conventions:
+**Per-type scope.** Sections remaining per type + artifact-field
+conventions that will need to ship with each:
 
-- **person** — Identity, Background, UAP Relevance, Affiliations, Key
-  Statements, Relationships, Corroboration / Claim Inventory /
-  Program Involvement / Publication Record (by archetype),
-  Credibility Notes, Associated Nodes, Open Questions. Requires new
-  artifact conventions for `biographical_data`, `corroboration_items`,
-  `claim_inventory`, `program_involvement`.
-- **organization** — Overview, Description, Key Personnel, What Is
-  Confirmed, Timeline, Relationships. Requires `key_personnel`,
-  `timeline`, `contracts` (gov-contractor) fields in artifact.
-- **event** (hearing / encounter) — Participants split by
-  evidentiary category, Timeline, Key Testimony, Corroboration.
 - **transcript** — Publication Record, Summary, Speakers, Key Passages,
   Material Differences (hearing only). Kind `other` covers interview,
   podcast, broadcast, documentary, press conference, conference talk.
@@ -296,19 +264,20 @@ conventions:
   (optional — verbatim speech / visible text), Media Versioning
   (when derivation_of set). Four kinds: photo, video, audio,
   imagery-other.
+- **organization** — Overview, Description, Key Personnel, What Is
+  Confirmed, Timeline, Relationships. Requires `key_personnel`,
+  `timeline`, `contracts` (gov-contractor) fields in artifact.
 - **location** — Ownership Timeline, UAP-Scope Activity, Relationships.
 - **finding** — Timeline, Primary Source Basis, What This Establishes,
   Entities Involved.
 
-Extending per-type will likely expand the artifact schema with
-type-specific required fields. Each extension should be landed as a
-separate, pilot-tested increment (one type per change), not as a big-bang
-multi-type rollout.
+Each extension lands as a separate, pilot-tested increment (one type
+per change), following the F.1a/b/c → F.2a/b/c pattern on the roadmap.
 
-**Surfaced.** D.3 design (2026-04-17 Q4). Deferred in favor of
-shipping document-type support first, piloting end-to-end on the
-Fravor node (D.5), and learning from observed failure modes before
-scaling.
+**Surfaced.** D.3 design (2026-04-17 Q4). **Progress:** F.1b (person,
+2026-04-19 commit 491e6f3), F.2b (event, 2026-04-19 commit 5af2416).
+Next per roadmap: F.3 (transcript) — natural pairing with the
+Nimitz-cluster transcript stubs surfaced after F.1c.
 
 ---
 
@@ -601,58 +570,15 @@ levels.
 
 ---
 
-### Corroboration table's `Source` column displays the attesting document, not the corroborator (F.1c finding)
+### ✅ RESOLVED Corroboration column layout (F.1c audit finding)
 
-**Issue.** The Corroboration section on eyewitness person nodes
-renders with a `Source | Type | What It Confirms | Node Link`
-template header. F.1b's renderer puts the artifact's
-`corroboration_items[i].source.path` (the PDF where the corroboration
-fact is attested) in the `Source` column, and the `observer_path`
-(who/what corroborates) in the `Node Link` column. Investigator
-scanning the table sees the attesting document first and the
-corroborator last — backwards from the natural "who corroborates?
-via what evidence?" reading order.
-
-F.1c Fravor pilot made this visible: the Corroboration table's first
-column reads `government/oversight-...fravor-...2023.pdf` three
-times in a row (all three corroboration items are attested by the
-same PDF), with the actual corroborators (Dietrich, USS Princeton,
-FLIR1 video) hidden in the rightmost column.
-
-**Why it matters.** Corroboration is a navigational surface — the
-investigator's first question is "who corroborates?" and the column
-layout should answer that question first. The attesting-document
-column, if kept, should be secondary. Not an evidentiary integrity
-issue (all facts are correct); purely a readability / template-
-renderer mismatch.
-
-**Proposed scope.** Two options:
-
-1. Rename columns + swap order. Template becomes
-   `| Observer | Type | What It Confirms | Attested In |`,
-   renderer emits observer_path (wrapped as backtick-bracket link)
-   in column 1 and source.path in column 4. Keeps all four cells;
-   fixes reading order. Investigator-friendly.
-
-2. Drop the attesting-document column entirely. Template becomes
-   `| Observer | Type | What It Confirms | Node Link |`. The
-   attestation source is implicit at the artifact level (every
-   corroboration_item carries its source, but that's artifact
-   metadata, not investigator-facing). Minimal column count; the
-   Node Link column becomes redundant with Observer if Observer is
-   already a backtick-bracket link.
-
-My lean: option 1. Attestation provenance is useful (tells reader
-which source attests a given corroboration); surfacing it in a
-secondary column keeps the table self-contained. The column rename
-also clarifies the table's role as a cross-reference surface, not a
-statement surface.
-
-**Surfaced.** F.1c Fravor pilot audit (2026-04-19). Not blocking;
-the Corroboration section renders correctly, just awkwardly. Fix
-naturally lands with F.2 (event renderer) since encounter event
-nodes have the same Corroboration shape on their own node-type
-template.
+Shipped 2026-04-19 (F.2a commit 13a2859 template + F.2b commit 5af2416
+renderer). Column layout revised from `Source | Type | What It
+Confirms | Node Link` (which put attesting-document path first and
+corroborator last) to `Observer | Type | What It Confirms | Attested
+In` (corroborator first, provenance last). Applied to both eyewitness
+person nodes and encounter event nodes. Existing Fravor node
+regenerated under new layout, review-coverage clean.
 
 ---
 
@@ -714,39 +640,12 @@ check #15 (2026-04-19 F.1a).
 
 ---
 
-### Cross-node reference existence not validated (derivation_of / derived_from) — ✅ RESOLVED 2026-04-18
+### ✅ RESOLVED Cross-node reference existence (derivation_of / derived_from)
 
-**Issue (original).** The source-taxonomy consolidation added two
-optional cross-node pointers on frontmatter:
+Shipped 2026-04-18 (commit 26969ba hardening pass) — `validate.py`
+gained `NODE_PATH_FRONTMATTER_FIELDS` constant; media.derivation_of
+and transcript.derived_from now flow through the broken-link registry
+same as body `[`/path`]` links. Audit trail in git log.
 
-- `media.derivation_of` — path to a parent media node when this media
-  is an edited / cropped / re-encoded / metadata-scrubbed derivative.
-- `transcript.derived_from` — path to the underlying media or document
-  node this transcript renders.
-
-Neither pointer was validated for existence. A media node with
-`derivation_of: /media/does-not-exist` or a transcript with
-`derived_from: /media/typo` passed validation cleanly.
-
-**Resolution.** `scripts/validate.py` grew a module-level constant
-`NODE_PATH_FRONTMATTER_FIELDS = {"media": ["derivation_of"],
-"transcript": ["derived_from"]}`. The internal-link-resolution pass
-now reads frontmatter values from the declared fields on each node
-type, normalizes them to leading-slash form, and feeds them into the
-same existence-check that body `[`/path`]` links already flow through.
-Missing targets register in the broken-link registry as backlog (not
-errors), matching body-link stub behavior.
-
-Smoke-test coverage: `tests/smoke.sh` transcript-other fixture now
-uses `--derived-from /documents/__smoke-doc-gov` to lock in the
-resolves-clean case. Broken-path case covered by manual test during
-implementation; a negative-case smoke fixture would require a cleanup-
-ordered broken-link that's tolerable during validation — deferred
-because the behavior is already exercised in the positive direction
-and the code path is straightforward.
-
-**Promote to schema-driven if.** The field list grows past ~5
-entries. Today: two entries, flat-scripts pattern applies.
-
-**Surfaced.** Source-taxonomy consolidation double-check (2026-04-18).
-**Shipped.** 2026-04-18 hardening pass (this commit).
+**Promote to schema-driven if** the field list grows past ~5 entries;
+today two entries, flat-scripts pattern applies.
