@@ -437,23 +437,55 @@ Category column). Changes shipped:
 
 23/23 smoke fixtures still pass; pre-commit chain fully green.
 
-#### F.1b — Phase II renderer for person  ⏸ NEXT
+#### F.1b — Phase II renderer for person  ✅ DONE (2026-04-19)
 
-Extend `build-from-research.py` to support `target_node` type
-`person`. Per-section renderers drive from the artifact fields:
+`build-from-research.py` now supports `target_node` type `person`
+alongside `document`. Ten per-section renderers driven from the
+artifact fields:
 
-- `Statements` renders from `quotes` filtered by `observation_type`
-  and sorted chronologically within each subsection.
-- `Timeline` renders from `timeline` entries, chronologically.
-- Archetype-specific section renders from the matching artifact
-  field (corroboration_items → Corroboration table, etc).
-- `Claim Inventory` on whistleblower archetype is a render-time view
-  of `quotes` tagged `category: filed-claim`.
+- `Identity` from `document_intrinsic` (full_name / aliases /
+  nationality / profession)
+- `Background` / `UAP Relevance` / `Credibility Notes` from
+  respective prose keys (new person-required artifact fields)
+- `Affiliations` from `affiliations` list (new), split into Confirmed
+  / Flagged subsections; sorted by `period_start`
+- `Statements` from `quotes` filtered by `observation_type` and
+  sorted ascending by `statement_date` (new optional quote field)
+  into Direct Observations / Other Statements subsections
+- `Timeline` from `timeline` entries, chronologically
+- `Relationships` from `relationships` list (new), Confirmed / Flagged
+- Archetype-specific section dispatched by frontmatter archetype:
+    eyewitness          → Corroboration       (from corroboration_items)
+    whistleblower       → Claim Inventory     (render-time view of
+                                               quotes w/ category:
+                                               filed-claim)
+    institutional-actor → Program Involvement (from program_involvement)
+    reporter            → Publication Record  (from publication_record,
+                                               sorted)
+- `Vouching Chain` — whistleblower-only; standalone H2 after
+  Credibility Notes (from `vouching_chain`)
 
-Pre-flight validates artifact; post-build validates node; invokes
-`associate.py` — same pattern as the document renderer shipped in D.3.
+New / extended schema surface:
+- `quote_entry.statement_date` (optional) — enables chronological
+  sort of Statements
+- Five new person-required conditional keys: `background`,
+  `uap_relevance`, `affiliations`, `relationships`,
+  `credibility_notes`
+- `affiliation_entry` + `relationship_entry` shape specs
+- Matching enforcement in `validate-research.py` (per-type and
+  per-entry checks; empty placeholders tolerated)
+- `research-scaffold.py` auto-populates all five on person artifacts
 
-#### F.1c — Fravor pilot  ⏸ AFTER F.1b
+`review-coverage.py` accepts person artifacts; existing four checks
+(Coverage / Boundary / Stub-linking / OQ dedup) generalize without
+modification — quotes carry the evidentiary load on person nodes the
+same way they do on documents.
+
+All four archetypes verified end-to-end: scaffold → artifact →
+build-from-research → validate → review-coverage, all clean. Pre-
+commit chain 6/6 green.
+
+#### F.1c — Fravor pilot  ⏸ NEXT
 
 First end-to-end person node through Phase I → II → III under the
 statements-only discipline. `/people/david-fravor` — eyewitness

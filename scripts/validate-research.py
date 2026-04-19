@@ -77,6 +77,17 @@ ARCHETYPE_REQUIRED_SECTION = {
     "whistleblower":        "vouching_chain",
 }
 
+# Person-artifact-specific required keys beyond the universal top-level
+# list. These carry the prose and structured data for the biographical
+# sections the person renderer emits.
+PERSON_REQUIRED_KEYS = [
+    "background",         # prose; renders as `## Background`
+    "uap_relevance",      # prose; renders as `## UAP Relevance`
+    "affiliations",       # list of affiliation entries
+    "relationships",      # list of relationship entries
+    "credibility_notes",  # prose; renders as `## Credibility Notes`
+]
+
 TYPE_DIRS = {
     "person": "people", "organization": "organizations", "document": "documents",
     "event": "events", "transcript": "transcripts", "media": "media",
@@ -282,6 +293,28 @@ def validate_artifact(path, schema, manifest_paths):
                         f"(target archetype {target_archetype!r} does not carry it — "
                         f"that section belongs to {arch_name!r})"))
 
+    # --- Person-artifact biographical sections (type-conditional) ---
+    # background / uap_relevance / affiliations / relationships /
+    # credibility_notes are required on every person artifact regardless
+    # of archetype. The renderer consumes these to populate the
+    # corresponding node sections; missing means the renderer emits
+    # TODO stubs. Enforced as required so artifacts are always
+    # renderer-ready.
+    if target_type == "person":
+        for key in PERSON_REQUIRED_KEYS:
+            if key not in data:
+                issues.append(Issue(rel, "error",
+                    f"Required {key!r} key missing "
+                    f"(person artifacts require {', '.join(PERSON_REQUIRED_KEYS)})"))
+    elif target_type is not None:
+        # On non-person artifacts, these keys shouldn't be set (the
+        # renderer won't know what to do with them)
+        for key in PERSON_REQUIRED_KEYS:
+            if key in data:
+                issues.append(Issue(rel, "error",
+                    f"{key!r} key should not be present "
+                    f"(target_node type {target_type!r} is not person)"))
+
     # --- primary_sources: path must exist in manifest ---
     issues.extend(check_primary_sources(rel, data, manifest_paths))
 
@@ -303,6 +336,10 @@ def validate_artifact(path, schema, manifest_paths):
         issues.extend(check_publication_record(rel, data, manifest_paths))
     if "vouching_chain" in data:
         issues.extend(check_vouching_chain(rel, data, manifest_paths))
+    if "affiliations" in data:
+        issues.extend(check_affiliations(rel, data, manifest_paths))
+    if "relationships" in data:
+        issues.extend(check_relationships(rel, data, manifest_paths))
 
     # --- Iteration log ---
     issues.extend(check_iterations(rel, data))
@@ -760,6 +797,56 @@ def check_publication_record(rel, data, manifest_paths):
                     f"publication_record[{i}] ({e.get('id')!r}): "
                     f"missing required {field!r}"))
         issues.extend(_require_source_dict(rel, e, "publication_record", i, manifest_paths))
+    return issues
+
+
+def check_affiliations(rel, data, manifest_paths):
+    """affiliations[] — present on person artifacts. Each entry:
+    required {organization_path, role, source}, optional
+    {period_start, period_end, flagged, note}.
+    """
+    issues = []
+    items = _entries(data, "affiliations")
+    issues.extend(_check_unique_ids(rel, items, "affiliations"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "affiliations", i))
+        for field in ["organization_path", "role"]:
+            if field not in e:
+                issues.append(Issue(rel, "error",
+                    f"affiliations[{i}] ({e.get('id')!r}): missing required {field!r}"))
+        op = e.get("organization_path")
+        if op and not op.startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"affiliations[{i}] ({e.get('id')!r}): "
+                f"organization_path {op!r} must start with '/'"))
+        issues.extend(_require_source_dict(rel, e, "affiliations", i, manifest_paths))
+    return issues
+
+
+def check_relationships(rel, data, manifest_paths):
+    """relationships[] — present on person artifacts. Each entry:
+    required {person_path, relationship, source}, optional
+    {flagged, note}.
+    """
+    issues = []
+    items = _entries(data, "relationships")
+    issues.extend(_check_unique_ids(rel, items, "relationships"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "relationships", i))
+        for field in ["person_path", "relationship"]:
+            if field not in e:
+                issues.append(Issue(rel, "error",
+                    f"relationships[{i}] ({e.get('id')!r}): missing required {field!r}"))
+        pp = e.get("person_path")
+        if pp and not pp.startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"relationships[{i}] ({e.get('id')!r}): "
+                f"person_path {pp!r} must start with '/'"))
+        issues.extend(_require_source_dict(rel, e, "relationships", i, manifest_paths))
     return issues
 
 

@@ -530,6 +530,28 @@ types:
         required_when_target_node_archetype_in: [whistleblower]
         # Named attestations supporting the whistleblower's credibility.
         # Cross-reference surface; renders inside `## Credibility Notes`.
+      background:
+        required_when_target_node_type_in: [person]
+        # Prose string (1–2 paragraphs) describing who the person is and
+        # their career. Renders as the `## Background` section.
+      uap_relevance:
+        required_when_target_node_type_in: [person]
+        # Prose string (one paragraph) describing why this person is in
+        # the repository. Renders as the `## UAP Relevance` section.
+      affiliations:
+        required_when_target_node_type_in: [person]
+        # List of organizational affiliations with role/period. Renders as
+        # the `## Affiliations` section (with Confirmed / Flagged subsections).
+      relationships:
+        required_when_target_node_type_in: [person]
+        # List of inter-person relationships. Renders as the
+        # `## Relationships` section (with Confirmed / Flagged subsections).
+      credibility_notes:
+        required_when_target_node_type_in: [person]
+        # Prose string (short analytical paragraphs). Renders as the
+        # `## Credibility Notes` section. For whistleblower archetypes,
+        # the Vouching Chain subsection is rendered from `vouching_chain`
+        # appended to this section's content.
 
     # Primary-source list entries
     primary_sources_entry:
@@ -562,7 +584,7 @@ types:
 
     quote_entry:
       required: [text, source]
-      optional: [significance, context, observation_type, category]
+      optional: [significance, context, observation_type, category, statement_date]
       # text: verbatim quote, YAML literal block (|) preserves multi-line
       # source: object with path + location (single source per quote)
       # observation_type: direct | relayed
@@ -576,6 +598,11 @@ types:
       # category: free-text metadata tag (e.g., `filed-claim` on
       #   whistleblower artifacts so the Claim Inventory renderer can
       #   filter). Optional on all artifacts.
+      # statement_date: YYYY-MM-DD; YYYY-MM or YYYY tolerated for imprecise
+      #   events. On person artifacts, used by the Phase II renderer to
+      #   sort Statements chronologically within each subsection
+      #   (earliest first). Required on person-artifact quotes when the
+      #   renderer needs to order them; optional otherwise.
 
     quote_source:
       required: [path, location]
@@ -669,6 +696,27 @@ types:
       # source: object with path + location
       # evidentiary_basis / confidence: same vocabulary as program_involvement
 
+    affiliation_entry:
+      required: [organization_path, role, source]
+      optional: [period_start, period_end, flagged, note]
+      # organization_path: /organizations/... path
+      # role: the person's role / title at the organization
+      # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY; used
+      #   by renderer to compose a Period cell and by check #15 to
+      #   sort rows chronologically
+      # flagged: bool (default false) — routes the entry to the
+      #   `### Flagged` subsection rather than `### Confirmed`
+      # source: object with path + location
+
+    relationship_entry:
+      required: [person_path, relationship, source]
+      optional: [flagged, note]
+      # person_path: /people/... path
+      # relationship: short description (flying partner, disclosure
+      #   collaborator, advisor, superior, colleague, source, etc.)
+      # flagged: bool (default false); routes to `### Flagged` subsection
+      # source: object with path + location
+
     naming_quirk_entry:
       required: [observed, canonical, location, source_path, resolution]
       optional: [note]
@@ -739,6 +787,7 @@ types:
       - "program_involvement section present iff target_node archetype == institutional-actor"
       - "publication_record section present iff target_node archetype == reporter"
       - "vouching_chain section present iff target_node archetype == whistleblower"
+      - "background / uap_relevance / affiliations / relationships / credibility_notes sections present iff target_node type == person"
 
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema

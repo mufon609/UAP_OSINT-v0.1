@@ -206,6 +206,15 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     # finding artifacts carry an aggregated chronological dated-facts list.
     if node_type in TIMELINE_TYPES:
         artifact["timeline"] = []
+    # Person-specific biographical sections — required by the renderer.
+    # Empty placeholders render as TODO stubs on the generated node body;
+    # contributors populate during Phase I investigation.
+    if node_type == "person":
+        artifact["background"] = ""
+        artifact["uap_relevance"] = ""
+        artifact["affiliations"] = []
+        artifact["relationships"] = []
+        artifact["credibility_notes"] = ""
     # Archetype-conditional section on person artifacts. Reads the target
     # node's frontmatter to get its archetype; scaffolds the corresponding
     # empty list. Only one of the four sections is ever scaffolded

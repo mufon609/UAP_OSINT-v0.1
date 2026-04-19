@@ -6,9 +6,25 @@ Reads /research/{slug}.yaml and rewrites /{type}/{slug}.md. Frontmatter is
 preserved from the existing node; body sections (H1 title onward) are
 replaced entirely by content derived from the artifact.
 
-SCOPE (D.3): document-type nodes only. Extension to the other eight node
-types is tracked in BACKLOG.md — supporting them requires per-type
-section renderers and type-specific artifact field conventions.
+SCOPE: document (D.3) and person (F.1b). Extension to the remaining six
+node types (organization, event, transcript, media, location, finding)
+is tracked in BACKLOG.md — each requires per-type section renderers
+and type-specific artifact field conventions, per the Step F template
+on the roadmap.
+
+Person renderer (F.1b):
+  - Universal sections: Identity, Background, UAP Relevance,
+    Affiliations, Statements, Timeline, Relationships, Credibility
+    Notes, Associated Nodes, Open Questions
+  - Statements split by `observation_type` into Direct Observations /
+    Other Statements; sorted ascending by `statement_date` within each
+  - Timeline sorted ascending by `date`
+  - Archetype-specific section dispatched by frontmatter archetype:
+      eyewitness          → Corroboration       (from corroboration_items)
+      whistleblower       → Claim Inventory     (from quotes w/ category: filed-claim)
+      institutional-actor → Program Involvement (from program_involvement)
+      reporter            → Publication Record  (from publication_record, sorted)
+  - Whistleblower-only: Vouching Chain section (from vouching_chain)
 
 DETERMINISM: given the same artifact + node frontmatter, output is
 byte-for-byte identical across runs. Entries are rendered in id-sorted
@@ -60,8 +76,23 @@ TYPE_DIRS = {
     "location": "locations", "finding": "findings",
 }
 
-# Types this script can regenerate (D.3 scope)
-SUPPORTED_TYPES = {"document"}
+# Types this script can regenerate (D.3 scope: document; F.1b adds person)
+SUPPORTED_TYPES = {"document", "person"}
+
+# Archetype → archetype-specific artifact section name (person only)
+ARCHETYPE_SECTION = {
+    "eyewitness":           "corroboration_items",
+    "institutional-actor":  "program_involvement",
+    "reporter":             "publication_record",
+    "whistleblower":        "vouching_chain",
+}
+# Archetype → H2 heading rendered for its archetype-specific section
+ARCHETYPE_H2 = {
+    "eyewitness":           "Corroboration",
+    "institutional-actor":  "Program Involvement",
+    "reporter":             "Publication Record",
+    "whistleblower":        "Claim Inventory",
+}
 
 # Separator between H2 sections in the rendered node body.
 # Matches repository convention: blank line, '---', blank line.
@@ -114,6 +145,41 @@ def sort_by_id(entries):
         if m:
             return (m.group(1), int(m.group(2)), eid)
         return ("zzz", 0, eid)
+    return sorted(entries, key=key)
+
+
+def parse_date_tuple(s):
+    """Return (year, month, day) tuple from a date string, or (9999, 0, 0)
+    for unparseable / missing dates so they sort LAST rather than first.
+    Range cells take the leftmost date. Mirror of validate.py's
+    parse_date_token but with an end-of-time sentinel for sort-stability.
+    """
+    if not s:
+        return (9999, 0, 0)
+    s = str(s).strip()
+    if not s:
+        return (9999, 0, 0)
+    # Range: take the left side
+    for sep in [" – ", " — ", " to ", " - ", "–", "—"]:
+        if sep in s:
+            s = s.split(sep, 1)[0].strip()
+            break
+    m = re.match(r"^(\d{4})(?:-(\d{1,2})(?:-(\d{1,2}))?)?", s)
+    if m:
+        y = int(m.group(1))
+        mo = int(m.group(2)) if m.group(2) else 0
+        d = int(m.group(3)) if m.group(3) else 0
+        return (y, mo, d)
+    return (9999, 0, 0)
+
+
+def sort_by_date(entries, date_key):
+    """Stable-sort entries ascending by the date at `date_key`. Undated /
+    unparseable entries land at the end (via the 9999 sentinel)."""
+    def key(e):
+        if not isinstance(e, dict):
+            return ((9999, 0, 0), "")
+        return (parse_date_tuple(e.get(date_key)), e.get("id") or "")
     return sorted(entries, key=key)
 
 
@@ -278,10 +344,388 @@ def render_open_questions(artifact):
 
 
 # =============================================================================
+# Person-type section renderers (F.1b)
+# =============================================================================
+
+def _wrap_path(path):
+    """Render a node path (`/people/foo`) as the canonical backtick-bracket
+    link form (``[`/people/foo`]``). Non-path values (empty, already-
+    wrapped, non-/-prefixed) pass through unchanged. The backtick-
+    bracket form is what validate.py's LINK_PATTERN, associate.py's
+    scanner, and review-coverage's stub-linking check all look for;
+    emitting raw paths silently breaks all three pipelines."""
+    if not path:
+        return ""
+    s = str(path).strip()
+    if not s:
+        return ""
+    if s.startswith("[`") and s.endswith("`]"):
+        return s
+    if s.startswith("/"):
+        return f"[`{s}`]"
+    return s
+
+
+def _person_display_name(artifact, slug_hint=None):
+    dm = artifact.get("document_intrinsic") or {}
+    ctx = artifact.get("context_extrinsic") or {}
+    return (
+        ctx.get("display_title")
+        or dm.get("full_name")
+        or dm.get("internal_title")
+        or (slug_hint and " ".join(w.capitalize() for w in slug_hint.split("-")))
+        or ""
+    )
+
+
+def render_title_person(artifact):
+    slug = artifact["target_node"].split("/", 1)[1] if "/" in artifact["target_node"] else ""
+    name = _person_display_name(artifact, slug_hint=slug)
+    return f"# {name}\n"
+
+
+def render_identity(artifact):
+    """Identity table — renders from document_intrinsic fields. Contributors
+    populate document_intrinsic with person-specific keys (full_name,
+    aliases, nationality, profession). Missing keys render as empty cells.
+    """
+    dm = artifact.get("document_intrinsic") or {}
+    rows = [
+        ("Full Name",   dm.get("full_name") or ""),
+        ("Aliases",     "; ".join(dm["aliases"]) if isinstance(dm.get("aliases"), list) else (dm.get("aliases") or "")),
+        ("Nationality", dm.get("nationality") or ""),
+        ("Profession",  dm.get("profession") or ""),
+    ]
+    lines = ["## Identity", "", "| Field | Value | Source |", "|---|---|---|"]
+    for k, v in rows:
+        lines.append(f"| {k} | {v} |  |")
+    return "\n".join(lines) + "\n"
+
+
+def render_background(artifact):
+    body = (artifact.get("background") or "").strip()
+    if not body:
+        body = "<!-- TODO: populate `background` in the research artifact -->"
+    return f"## Background\n\n{body}\n"
+
+
+def render_uap_relevance(artifact):
+    body = (artifact.get("uap_relevance") or "").strip()
+    if not body:
+        body = "<!-- TODO: populate `uap_relevance` in the research artifact -->"
+    return f"## UAP Relevance\n\n{body}\n"
+
+
+def _format_period(entry):
+    start = entry.get("period_start") or ""
+    end = entry.get("period_end") or ""
+    if start and end:
+        return f"{start} – {end}"
+    return start or end or ""
+
+
+def render_affiliations(artifact):
+    """Affiliations table split into Confirmed / Flagged subsections.
+    Sorted by period_start chronologically (check #15 enforces)."""
+    items = artifact.get("affiliations") or []
+    confirmed = sort_by_date([e for e in items if isinstance(e, dict) and not e.get("flagged")], "period_start")
+    flagged   = sort_by_date([e for e in items if isinstance(e, dict) and e.get("flagged")],     "period_start")
+
+    def render_row(e):
+        org = _wrap_path(e.get("organization_path"))
+        return (
+            f"| {org} | "
+            f"{e.get('role') or ''} | "
+            f"{_format_period(e)} | "
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{org} |"
+        )
+
+    lines = ["## Affiliations", "", "### Confirmed", "",
+             "| Organization | Role | Period | Source | Node Link |",
+             "|---|---|---|---|---|"]
+    if confirmed:
+        for e in confirmed:
+            lines.append(render_row(e))
+    else:
+        lines.append("|  |  |  |  |  |")
+    if flagged:
+        lines += ["", "### Flagged", "",
+                  "| Organization | Role | Period | Source | Node Link |",
+                  "|---|---|---|---|---|"]
+        for e in flagged:
+            lines.append(render_row(e))
+    return "\n".join(lines) + "\n"
+
+
+def _render_verification_block(quote, artifact):
+    """Render the 3-field verification table for a person statement quote.
+    Composes an Attributed-to line from quote.context (when set) + the
+    quote's statement_date (when set)."""
+    ctx = quote.get("context") or ""
+    date = quote.get("statement_date") or ""
+    attributed_to_parts = [p for p in [ctx, date] if p]
+    attributed_to = ", ".join(attributed_to_parts) if attributed_to_parts else ""
+    src = quote.get("source") or {}
+    src_path = src.get("path") or ""
+    src_link = f"[archived source](../sources/{src_path})" if src_path else ""
+    loc = src.get("location") or ""
+
+    rows = [
+        "| Field | Value |",
+        "|---|---|",
+    ]
+    if attributed_to:
+        rows.append(f"| Attributed to | {attributed_to} |")
+    if src_link:
+        rows.append(f"| Source | {src_link} |")
+    rows.append("| Verified | ✅ Confirmed — verified verbatim against archived source |")
+    if loc:
+        rows.append(f"| Location | {loc} |")
+    return "\n".join(rows)
+
+
+def _render_statement_block(quote, artifact):
+    """Render a single block-quote + verification block pair."""
+    text = (quote.get("text") or "").rstrip("\n")
+    lines = []
+    for qline in text.split("\n"):
+        lines.append(f"> {qline}" if qline else ">")
+    lines.append("")
+    lines.append(_render_verification_block(quote, artifact))
+    return "\n".join(lines)
+
+
+def render_statements(artifact):
+    """Statements section — split by observation_type into Direct
+    Observations and Other Statements; sorted chronologically by
+    statement_date within each subsection."""
+    quotes = [q for q in (artifact.get("quotes") or []) if isinstance(q, dict)]
+    direct = sort_by_date([q for q in quotes if q.get("observation_type") == "direct"], "statement_date")
+    other  = sort_by_date([q for q in quotes if q.get("observation_type") != "direct"], "statement_date")
+
+    lines = ["## Statements", "", "### Direct Observations"]
+    if direct:
+        lines.append("")
+        for q in direct:
+            lines.append(_render_statement_block(q, artifact))
+            lines.append("")
+    else:
+        lines += ["", "<!-- No direct observations documented. -->"]
+
+    lines += ["", "### Other Statements"]
+    if other:
+        lines.append("")
+        for q in other:
+            lines.append(_render_statement_block(q, artifact))
+            lines.append("")
+    else:
+        lines += ["", "<!-- No other statements documented. -->"]
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_timeline(artifact):
+    """Timeline section — aggregated chronological dated facts with
+    Category column. Sorted ascending by date."""
+    items = sort_by_date(
+        [e for e in (artifact.get("timeline") or []) if isinstance(e, dict)],
+        "date",
+    )
+    lines = ["## Timeline", "", "| Date | Event | Category | Source | Node Link |",
+             "|---|---|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |  |  |")
+    for e in items:
+        lines.append(
+            f"| {e.get('date') or ''} | "
+            f"{e.get('event') or ''} | "
+            f"{e.get('category') or ''} | "
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{_wrap_path(e.get('node_link'))} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+def render_relationships(artifact):
+    items = artifact.get("relationships") or []
+    confirmed = [e for e in items if isinstance(e, dict) and not e.get("flagged")]
+    flagged   = [e for e in items if isinstance(e, dict) and e.get("flagged")]
+
+    def row(e):
+        person = _wrap_path(e.get("person_path"))
+        return (
+            f"| {person} | "
+            f"{e.get('relationship') or ''} | "
+            f"{person} |"
+        )
+
+    lines = ["## Relationships", "", "### Confirmed", "",
+             "| Person | Relationship | Node Link |",
+             "|---|---|---|"]
+    if confirmed:
+        for e in confirmed:
+            lines.append(row(e))
+    else:
+        lines.append("|  |  |  |")
+    if flagged:
+        lines += ["", "### Flagged", "",
+                  "| Person | Relationship | Node Link |",
+                  "|---|---|---|"]
+        for e in flagged:
+            lines.append(row(e))
+    return "\n".join(lines) + "\n"
+
+
+def render_corroboration(artifact):
+    items = artifact.get("corroboration_items") or []
+    lines = ["## Corroboration", "",
+             "| Source | Type | What It Confirms | Node Link |",
+             "|---|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |  |")
+    for e in items:
+        if not isinstance(e, dict):
+            continue
+        lines.append(
+            f"| {(e.get('source') or {}).get('path') or ''} | "
+            f"{e.get('observation_type') or ''} | "
+            f"{e.get('note') or ''} | "
+            f"{_wrap_path(e.get('observer_path'))} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+def render_claim_inventory(artifact):
+    """Claim Inventory (whistleblower) — render-time view of quotes
+    tagged `category: filed-claim`. Document column references a
+    related document/transcript node when the quote carries a
+    `node_link` field; otherwise shows the sources/ path."""
+    quotes = [q for q in (artifact.get("quotes") or [])
+              if isinstance(q, dict) and q.get("category") == "filed-claim"]
+    quotes = sort_by_date(quotes, "statement_date")
+    lines = ["## Claim Inventory", "",
+             "| Claim | Document | Status | Node Link |",
+             "|---|---|---|---|"]
+    if not quotes:
+        lines.append("|  |  |  |  |")
+    for q in quotes:
+        text = (q.get("text") or "").strip().replace("\n", " ")
+        # Truncate long claim text for readability in table
+        if len(text) > 120:
+            text = text[:117] + "…"
+        src_path = (q.get("source") or {}).get("path") or ""
+        node_link = _wrap_path(q.get("node_link"))
+        lines.append(f"| {text} | {src_path} | ✅ Sworn / documented | {node_link} |")
+    return "\n".join(lines) + "\n"
+
+
+def render_program_involvement(artifact):
+    items = artifact.get("program_involvement") or []
+    lines = ["## Program Involvement", "",
+             "| Program | Role | Period | Evidentiary Basis | Confidence | Source |",
+             "|---|---|---|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |  |  |  |")
+    for e in items:
+        if not isinstance(e, dict):
+            continue
+        period = _format_period(e)
+        program = e.get("program") or ""
+        # Program may be either a free-text program name (AAWSAP, AATIP)
+        # or a `/organizations/...` path; wrap when it's a path.
+        program_cell = _wrap_path(program) if program.startswith("/") else program
+        lines.append(
+            f"| {program_cell} | "
+            f"{e.get('role') or ''} | "
+            f"{period} | "
+            f"{e.get('evidentiary_basis') or ''} | "
+            f"{e.get('confidence') or ''} | "
+            f"{(e.get('source') or {}).get('path') or ''} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+def render_publication_record(artifact):
+    items = sort_by_date(
+        [e for e in (artifact.get("publication_record") or []) if isinstance(e, dict)],
+        "date",
+    )
+    lines = ["## Publication Record", "",
+             "| Date | Publication | Outlet | Beat / Role | Source | Node Link |",
+             "|---|---|---|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |  |  |  |")
+    for e in items:
+        outlet = e.get("outlet") or ""
+        outlet_cell = _wrap_path(outlet) if outlet.startswith("/") else outlet
+        lines.append(
+            f"| {e.get('date') or ''} | "
+            f"{e.get('publication') or ''} | "
+            f"{outlet_cell} | "
+            f"{e.get('beat') or ''} | "
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{_wrap_path(e.get('node_link'))} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+_ARCHETYPE_RENDERER = {
+    "eyewitness":          render_corroboration,
+    "whistleblower":       render_claim_inventory,
+    "institutional-actor": render_program_involvement,
+    "reporter":            render_publication_record,
+}
+
+
+def render_archetype_section(artifact, archetype):
+    fn = _ARCHETYPE_RENDERER.get(archetype)
+    if fn is None:
+        return ""
+    return fn(artifact)
+
+
+def render_vouching_chain(artifact):
+    items = artifact.get("vouching_chain") or []
+    lines = ["## Vouching Chain", "",
+             "| Name | Credentials | Statement | Source | Node Link |",
+             "|---|---|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |  |  |")
+    for e in items:
+        if not isinstance(e, dict):
+            continue
+        attestation = (e.get("attestation") or "").strip().replace("\n", " ")
+        if len(attestation) > 100:
+            attestation = attestation[:97] + "…"
+        voucher = _wrap_path(e.get("voucher_path"))
+        lines.append(
+            f"| {voucher} | "
+            f"{e.get('evidentiary_basis') or ''} | "
+            f"{attestation} | "
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{voucher} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+def render_credibility_notes(artifact, archetype):
+    body = (artifact.get("credibility_notes") or "").strip()
+    if not body:
+        body = "<!-- TODO: populate `credibility_notes` in the research artifact -->"
+    out = f"## Credibility Notes\n\n{body}\n"
+    # Whistleblower archetype: Vouching Chain renders as a separate H2
+    # after Credibility Notes (per the schema's required_sections
+    # ordering). Keep it as a standalone section to preserve the
+    # document structure.
+    return out
+
+
+# =============================================================================
 # Composition
 # =============================================================================
 
-def render_body(artifact, node_kind):
+def render_body_document(artifact, node_kind):
     # H1 title stands alone — no `---` separator between H1 and first H2.
     # Document nodes have no What This Establishes / claims section: the
     # document IS the fact record, and Key Passages carries the verbatim
@@ -300,6 +744,46 @@ def render_body(artifact, node_kind):
     ])
     joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
     return title + "\n" + joined
+
+
+def render_body_person(artifact, archetype):
+    """Person-type body composition. Section order matches the schema's
+    required_sections for the given archetype. Whistleblower adds a
+    Vouching Chain section between Credibility Notes and Associated
+    Nodes; all other archetypes skip it."""
+    title = render_title_person(artifact).rstrip("\n") + "\n"
+    sections = [
+        render_identity(artifact),
+        render_background(artifact),
+        render_uap_relevance(artifact),
+        render_affiliations(artifact),
+        render_statements(artifact),
+        render_timeline(artifact),
+        render_relationships(artifact),
+        render_archetype_section(artifact, archetype),
+        render_credibility_notes(artifact, archetype),
+    ]
+    if archetype == "whistleblower":
+        sections.append(render_vouching_chain(artifact))
+    sections.extend([
+        render_associated_nodes(),
+        render_open_questions(artifact),
+    ])
+    # Drop empty section strings (archetype dispatcher returns "" on unknown)
+    sections = [s for s in sections if s]
+    joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
+    return title + "\n" + joined
+
+
+def render_body(artifact, node_type, fm):
+    """Dispatch by node_type. `fm` is the existing node frontmatter
+    (needed for kind / archetype context the renderer can't derive from
+    the artifact alone)."""
+    if node_type == "document":
+        return render_body_document(artifact, fm.get("kind"))
+    if node_type == "person":
+        return render_body_person(artifact, fm.get("archetype"))
+    sys.exit(f"ERROR: build-from-research.py does not yet support node_type {node_type!r}")
 
 
 def compose_node(raw_frontmatter, body):
@@ -386,8 +870,7 @@ def main():
     if fm is None or raw_fm is None:
         sys.exit(f"ERROR: cannot parse frontmatter of {node_path.relative_to(REPO_ROOT)}")
 
-    node_kind = fm.get("kind")
-    body = render_body(artifact, node_kind)
+    body = render_body(artifact, node_type, fm)
     new_text = compose_node(raw_fm, body)
 
     if args.dry_run:

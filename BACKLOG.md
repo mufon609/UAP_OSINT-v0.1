@@ -263,10 +263,9 @@ built through the full Phase I → II pipeline.
 ### Extend build-from-research.py to all 8 node types
 
 **Issue.** `scripts/build-from-research.py` ships in D.3 supporting
-**document** nodes only. Person, organization, event, transcript, media,
-location, and finding node regeneration is not yet implemented.
-Attempting to run the script on one of those types exits with
-"currently supports ['document'] only".
+**document** nodes only. F.1b (2026-04-19) added **person** support.
+Organization, event, transcript, media, location, and finding node
+regeneration is not yet implemented.
 
 **Why it matters.** Phase II of the layered build process is defined
 as "deterministic regeneration from research artifact." Until all node
@@ -427,18 +426,19 @@ validator checks is worth tracking so it doesn't accumulate.
    markdown table, but a person's `## Statements` section is a
    sequence of `> block quote` + verification-table pairs, not a
    single table. Chronological order across those pairs is not
-   mechanically verified. F.1b renderer will sort at render time
-   (statements driven from artifact quotes with attached dates), so
-   rendered person nodes will always be ordered. Hand-authored
-   person nodes can drift.
+   mechanically verified in an input-independent way.
 
-   Proposed: add a new check (or extend check #15) to parse each
-   block-quote + following verification-table pair in a statement
-   surface, extract a date from a dedicated Date field in the
-   verification block (requires a minor canonical-block shape
-   addition: `| Date | YYYY-MM-DD |` row), and verify ascending order.
-   Blocked on deciding whether the verification block grows the Date
-   row — happens naturally in F.1b design.
+   **F.1b resolution (partial).** The Phase II person renderer now
+   sorts statements at render time by `statement_date` (a new optional
+   field on `quote_entry`). Under Boundary-check discipline (review-
+   coverage.py check 2), renderer-driven nodes can't diverge — any
+   attempt to hand-reorder statements would fail Boundary when
+   review-coverage runs. So the renderer enforces order on the
+   happy path. Remaining gap: validate.py check #15 doesn't
+   independently verify block-quote ordering from the node body
+   alone, so a hand-authored person node built without the renderer
+   pipeline could drift silently. Accepted as a limitation until a
+   hand-authored person node is attempted (not on the roadmap).
 
 3. **`chronological: true` section-rule flag is now descriptive.**
    The flag appears on six section_rules in schema.yaml (person
@@ -458,6 +458,68 @@ validator checks is worth tracking so it doesn't accumulate.
    documentation aid; the enforcement is universal by design.
 
 **Surfaced.** F.1a audit (2026-04-19).
+
+---
+
+### F.1b audit findings — descriptive-only and forward-looking
+
+Three F.1b observations worth tracking. Behavior is correct today;
+these are either documentation gaps or future enhancements.
+
+1. **`quote_verification_fields.required` (schema) is descriptive-only.**
+   Schema lists `[Attributed to, Source, Verified]` as required fields
+   in a verification block, but `validate.py`'s verification-block
+   check (called by `check_verbatim_quotes` and the
+   `requires_quote_verification` section rule) only scans for the
+   `Verified` row. If a contributor-written block omits `Attributed to`,
+   it passes. F.1b's renderer omits the `Attributed to` row entirely
+   when both `context` and `statement_date` are empty on a quote entry
+   — graceful degradation, but not ideal. Two fixes possible:
+   - Extend `validate.py` to enforce all three required rows.
+   - Make `context` required on person-artifact quotes so the
+     renderer always has something to put in the Attributed-to line.
+   My lean: the second, because it also improves the rendered node's
+   usefulness to the investigator (every statement carries its
+   context). Small schema tightening.
+
+2. **`document_intrinsic` convention for person artifacts is
+   implicit.** The dict was originally named for document-artifact
+   metadata (internal_title, authors, classification, pages). F.1b's
+   person renderer reads person-specific keys (`full_name`,
+   `aliases`, `nationality`, `profession`) from the same dict without
+   schema documentation of the convention. Two fixes possible:
+   - Add a schema comment under `document_intrinsic` explaining the
+     person-artifact convention (list expected keys).
+   - Rename to `subject_intrinsic` or introduce a separate
+     `person_intrinsic` dict.
+   My lean: schema comment for now. Rename is churn with no
+   functional benefit.
+
+3. **Name lookup for cross-reference cells.** F.1b emits cross-
+   reference paths as backtick-bracket wraps (``[`/organizations/aaro`]``)
+   in table cells where the template expects a display name (e.g.,
+   Organization column of Affiliations). Today the rendered cell
+   shows the path; an investigator reads "us-navy" instead of
+   "U.S. Navy". Enhancement: look up the display name from
+   `entities_referenced.name` (where `wrap_path` matches the target
+   path) or from the target node's frontmatter if the node exists.
+   Renderer complexity bump; low urgency because backtick-bracket
+   paths render as clickable links and the meaning is recoverable.
+
+4. **entities_referenced duplication with cross-reference lists.**
+   When contributors populate `affiliations`, `relationships`,
+   `corroboration_items`, `program_involvement`, `publication_record`,
+   or `vouching_chain` on a person artifact, they must separately
+   populate `entities_referenced` for review-coverage's stub-linking
+   check to recognize the paths. The paths appear in both places —
+   once as a cross-reference entry and once as an entity stub.
+   Derivation (auto-synthesize `entities_referenced` from the cross-
+   reference lists at validation / render time) would reduce the
+   redundancy and the drift risk (where the two lists disagree).
+   Not urgent — current behavior is correct if contributors follow
+   the convention, and the drift is loud (stub-linking fails).
+
+**Surfaced.** F.1b audit (2026-04-19).
 
 ---
 
