@@ -11,46 +11,60 @@ created: {{today}}
 
 ## Overview
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name |  |  |
-| Also Known As |  |  |
-| Type |  |  |
-| Sector |  |  |
-<!-- KIND: gov -->
-| Established |  |  |
-| Statutory Authority |  |  |
-| Parent / Placement |  |  |
-<!-- /KIND -->
-<!-- KIND: gov-contractor -->
-| Founded |  |  |
-| Primary Customer |  |  |
-| Corporate Form |  |  |
-| CAGE Code / DUNS |  |  |
-<!-- /KIND -->
-<!-- KIND: private -->
-| Founded |  |  |
-| Founder |  |  |
-| Headquarters |  |  |
-<!-- /KIND -->
-| Website |  |  |
-| Status |  |  |
+<!-- Populated from organization_intrinsic in the research artifact.
+     Per-kind keys emit rows for whichever are populated; empty keys
+     skipped. See meta/schema.yaml for key conventions per kind:
+       gov (agency/office): internal_name, full_name, statutory_authority,
+                 established_date, terminated_date,
+                 parent_organization_path, current_director_path,
+                 office_type, jurisdiction
+       gov (military-unit): designator, unit_class, parent_unit_path,
+                 home_station, commissioned_date, decommissioned_date,
+                 mission
+       gov (military-service): full_name, branch_type, founded_date
+       gov-contractor: contracting_agency, period_of_performance,
+                 primary_counterparty_path, registered_status, cage_code
+       private: founded_date, org_type, headquarters,
+                current_leadership_path, public_status
+-->
+
+| Field | Value |
+|---|---|
+|  |  |
 
 ---
 
 ## Description
 
-<!-- Prose summary of the organization and why it is in this repository. -->
+<!-- Labeled contributor synthesis (1-3 paragraphs). Narrative about
+     what the organization is and why it is in this repository.
+     Source: free-text populated from `description` key in the research
+     artifact. Scanned by validate-research.py check #16 against the
+     union of primary_sources token pools. -->
 
 ---
 
 ## Key Personnel
 
+<!-- Populated from key_personnel[] in the research artifact. Renderer
+     sub-groups by leadership_class (Directors / Deputy Leadership /
+     Other Named Personnel) and applies Confirmed / Flagged split. -->
+
 ### Confirmed
+
+#### Directors
 
 | Name | Role | Period | Source | Node Link |
 |---|---|---|---|---|
 |  |  |  |  |  |
+
+#### Deputy Leadership
+
+<!-- Omit if empty. -->
+
+#### Other Named Personnel
+
+<!-- Omit if empty. -->
 
 ### Flagged
 
@@ -58,49 +72,52 @@ created: {{today}}
 
 ---
 
-<!-- KIND: gov -->
-## What Is Confirmed
+## Key Passages
 
-| Claim | Status | Source |
-|---|---|---|
-|  |  |  |
+<!-- Verbatim excerpts from primary sources ABOUT the organization
+     (establishment press releases, statutory authority, director
+     announcements, IG findings). Each passage carries a three-row
+     verification block. Parallels document Key Passages but
+     subject-about-org rather than doc-as-subject. -->
 
----
-
-## What Is Not Confirmed
-
-| Claim | Status |
-|---|---|
-|  |  |
+<!-- Populated from quotes[] in the research artifact. -->
 
 ---
-
-## Timeline
-
-| Date | Event | Source | Node Link |
-|---|---|---|---|
-|  |  |  |  |
-
----
-<!-- /KIND -->
 
 <!-- KIND: gov-contractor -->
 ## Primary Contracts
 
-| Contract | Contracting Agency | Period | Value | Source | Node Link |
-|---|---|---|---|---|---|
-|  |  |  |  |  |  |
+<!-- Populated from contracts[] in the research artifact.
+     Chronologically ordered by period_start. -->
+
+| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |
+|---|---|---|---|---|---|---|
+|  |  |  |  |  |  |  |
 
 ---
 <!-- /KIND -->
 
+## Timeline
+
+<!-- Populated from timeline[] in the research artifact.
+     Chronologically ordered (earliest first). -->
+
+| Date | Event | Category | Source | Node Link |
+|---|---|---|---|---|
+|  |  |  |  |  |
+
+---
+
 ## Relationships
+
+<!-- Populated from org_relationships[] in the research artifact.
+     Confirmed / Flagged split. -->
 
 ### Confirmed
 
-| Entity | Relationship | Node Link |
-|---|---|---|
-|  |  |  |
+| Organization | Relationship | Source | Node Link |
+|---|---|---|---|
+|  |  |  |  |
 
 ### Flagged
 

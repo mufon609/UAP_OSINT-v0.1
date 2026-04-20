@@ -66,6 +66,9 @@ KIND_SECTIONS_BY_TYPE = {
     "transcript": {
         "hearing": "material_differences",
     },
+    "organization": {
+        "gov-contractor": "contracts",
+    },
 }
 
 # All valid target-node types
@@ -202,13 +205,13 @@ def read_target_archetype(node_type, slug):
 
 
 def read_target_kind(node_type, slug):
-    """For kind-bearing target nodes (event, transcript), read the
-    node's frontmatter to get its kind. Returns None otherwise or if
-    unreadable.
-      event      → hearing | encounter
-      transcript → hearing | other
+    """For kind-bearing target nodes, read the node's frontmatter to
+    get its kind. Returns None otherwise or if unreadable.
+      event        → hearing | encounter
+      transcript   → hearing | other
+      organization → gov | gov-contractor | private
     """
-    if node_type not in ("event", "transcript"):
+    if node_type not in ("event", "transcript", "organization"):
         return None
     return _read_target_frontmatter(node_type, slug).get("kind")
 
@@ -281,6 +284,14 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     # (duration / encoding / metadata / content / provenance / other).
     if node_type == "media":
         artifact["media_versioning"] = []
+    # Organization-specific universal sections. key_personnel (people
+    # + sourced roles at this org) and org_relationships (org-to-org
+    # structured links) required on every organization artifact
+    # regardless of kind. Kind-conditional `contracts` scaffolded
+    # below via KIND_SECTIONS_BY_TYPE (gov-contractor only).
+    if node_type == "organization":
+        artifact["key_personnel"] = []
+        artifact["org_relationships"] = []
     # Archetype-conditional section on person artifacts. Reads the target
     # node's frontmatter to get its archetype; scaffolds the corresponding
     # empty list. Only one of the four sections is ever scaffolded

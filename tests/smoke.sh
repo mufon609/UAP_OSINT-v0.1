@@ -222,6 +222,35 @@ for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-
     fi
 done
 
+# --- research artifact: organization-kind dispatch (F.5a) ---
+# Scaffolder must emit key_personnel: [] and org_relationships: [] on
+# every organization artifact regardless of kind, and emit contracts: []
+# only when kind == gov-contractor. Validator enforces the kind-
+# conditional contracts presence: missing-required fires on gov-
+# contractor if absent; absent-on-other-kind fires on gov or private if
+# present. Clean validate pass on empty scaffolds confirms both (a) the
+# scaffolder adds the right sections and (b) the validator's conditional
+# rules dispatch correctly per kind.
+for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-contractor" "organizations/__smoke-org-private"; do
+    artifact_out="$(python3 scripts/research-scaffold.py --target "$ok_target" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("research-scaffold $ok_target — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
+        fail=$((fail + 1))
+        continue
+    fi
+    ok_slug="${ok_target##*/}"
+    created_files+=("research/$ok_slug.yaml")
+    artifact_out="$(python3 scripts/validate-research.py "research/$ok_slug.yaml" --quiet 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("research-scaffold $ok_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+done
+
 # --- cross-artifact material_differences fixture ---
 # Exercises the F.3a cross-artifact quote_ref resolver end-to-end:
 #   - check_material_differences (structural + divergence_class enum)

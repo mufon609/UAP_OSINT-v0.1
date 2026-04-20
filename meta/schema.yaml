@@ -157,6 +157,26 @@ types:
       Timeline: {chronological: true}
 
   # --- ORGANIZATION -------------------------------------------------------
+  # Under the statements-only discipline (post-Step-D document claims-layer
+  # elimination, extended through events / transcripts / media): orgs don't
+  # speak — officials speak for them. The previous `What Is Confirmed`
+  # section was contributor-prose synthesis anchored to sources, same shape
+  # as the document claims layer eliminated earlier. F.5 removes it across
+  # all three kinds. Factual content about the org flows through:
+  #   - Key Passages — verbatim excerpts from primary sources ABOUT the
+  #     org (establishment press releases, statutory authority, director
+  #     announcements, IG findings). Parallels document Key Passages but
+  #     subject-about-org rather than doc-as-subject.
+  #   - Timeline — dated events (founding, reorganization, leadership
+  #     transition, contract, incident) with per-row source attribution.
+  #   - Key Personnel — cross-reference surface (person_path + role +
+  #     period + source), sub-grouped by leadership_class (director /
+  #     deputy / staff / advisor / other) via renderer-side dispatch.
+  #   - Primary Contracts (gov-contractor kind only) — contract metadata
+  #     (number, period, value, counterparties, deliverables) with source
+  #     attribution per row.
+  #   - Description — labeled contributor synthesis (1-3 paragraphs);
+  #     subject to check #16 prose-drift scoping.
   organization:
     status_values: [active, in-progress]
     frontmatter:
@@ -168,7 +188,7 @@ types:
           - Overview
           - Description
           - Key Personnel
-          - What Is Confirmed
+          - Key Passages
           - Timeline
           - Relationships
           - Associated Nodes
@@ -179,29 +199,29 @@ types:
           - Overview
           - Description
           - Key Personnel
+          - Key Passages
           - Primary Contracts
+          - Timeline
           - Relationships
           - Associated Nodes
           - Open Questions / Research Gaps
-        optional_sections:
-          - What Is Confirmed
-          - Timeline
       private:
         description: "Private company, nonprofit, academic institution, media outlet"
         required_sections:
           - Overview
           - Description
           - Key Personnel
+          - Key Passages
+          - Timeline
           - Relationships
           - Associated Nodes
           - Open Questions / Research Gaps
-        optional_sections:
-          - What Is Confirmed
-          - Timeline
     section_rules:
       Relationships: {split: [Confirmed, Flagged]}
       Key Personnel: {split: [Confirmed, Flagged]}
       Timeline: {chronological: true}
+      Key Passages: {requires_quote_verification: true}
+      Primary Contracts: {chronological: true}
 
   # --- DOCUMENT -----------------------------------------------------------
   document:
@@ -513,7 +533,27 @@ types:
       #                respectively for their kind-specific metadata;
       #                document_intrinsic remains an optional metadata
       #                sidecar on these types but isn't rendered.
-      #     other types: extended as their renderers ship (F.5+).
+      #     organization: per-kind conventions (all key sets optional;
+      #                populate what the primary source(s) attest):
+      #       gov (agency/office): internal_name, full_name, statutory_authority,
+      #                    established_date, terminated_date,
+      #                    parent_organization_path, current_director_path,
+      #                    office_type (agency|office|program|lab|commission),
+      #                    jurisdiction
+      #       gov (military-unit): designator, unit_class
+      #                    (squadron|air-wing|ship-class|division), parent_unit_path,
+      #                    home_station, commissioned_date, decommissioned_date,
+      #                    mission
+      #       gov (military-service): full_name, branch_type, founded_date
+      #       gov-contractor: contracting_agency, period_of_performance,
+      #                    primary_counterparty_path, registered_status,
+      #                    cage_code
+      #       private: founded_date, org_type
+      #                    (501c3|LLC|Corp|academic|media|nonprofit),
+      #                    headquarters, current_leadership_path, public_status
+      #                (renders as `## Overview` fact table — rows emitted
+      #                for whichever keys are populated; empty keys skipped.
+      #                Labeled-synthesis narrative belongs in `description`.)
       #   Every key is a fact the primary source(s) attest to. Facts not
       #   attested in a primary source don't belong here — they belong in
       #   `description` (synthesis, labeled) or don't enter the record.
@@ -642,6 +682,33 @@ types:
         # only when entries exist; canonical / original media node
         # bodies omit the section entirely. Entry shape:
         # media_versioning_entry below.
+      key_personnel:
+        required_when_target_node_type_in: [organization]
+        # Named personnel at the organization with sourced role + period.
+        # Cross-reference surface (NOT a statement surface — personnel
+        # statements live on their own person nodes). Renderer sub-groups
+        # by leadership_class (director / deputy / staff / advisor /
+        # other) with Confirmed / Flagged split. Entry shape:
+        # key_personnel_entry below.
+      contracts:
+        required_when_target_node_kind_in: [gov-contractor]
+        # Structured contract records on gov-contractor organization
+        # artifacts. Each entry: contract_number, contracting_agency,
+        # period_start/end, counterparties, value, deliverables,
+        # source. Shape influenced by the AAWSAP / DIRD corpus
+        # (single large contract producing many technical deliverables
+        # as referenced docs). Renders as the `## Primary Contracts`
+        # table, chronologically ordered by period_start. Absent on
+        # gov and private kinds. Entry shape: contract_entry below.
+      org_relationships:
+        required_when_target_node_type_in: [organization]
+        # Organization-to-organization structured relationships
+        # (parent, subsidiary, predecessor, successor, contractor,
+        # contracting-agency, partner, other). Renders as the
+        # `## Relationships` section with Confirmed / Flagged split.
+        # Distinct from person `relationships` (person-to-person) and
+        # from `key_personnel` (org-to-person). Entry shape:
+        # org_relationship_entry below.
 
     # Primary-source list entries
     primary_sources_entry:
@@ -860,6 +927,84 @@ types:
       #   own source page where the speaker is named/identified (cover
       #   sheet, speaker roster, intro Q&A)
 
+    key_personnel_entry:
+      required: [person_path, role, source]
+      optional: [period_start, period_end, leadership_class, flagged, note]
+      # person_path: /people/... path of the individual
+      # role: free-text role title at this organization (e.g., "Director",
+      #   "Founding Director", "Acting Director", "Deputy Secretary",
+      #   "Commanding Officer"). Scanned by check #16 against the entry's
+      #   source.path token pool.
+      # leadership_class: optional enum
+      #   [director, deputy, staff, advisor, other]. Drives renderer sub-
+      #   grouping in the Key Personnel section (Directors / Deputy
+      #   Leadership / Other Named Personnel). Absent entries render in
+      #   the Other Named Personnel bucket.
+      # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY; used by
+      #   renderer to sort entries within each leadership_class subsection
+      #   and by check #15 to sort rows chronologically.
+      # flagged: bool (default false) — routes to `### Flagged` subsection
+      # source: object with path + location — primary source attesting the
+      #   person's role at this organization (appointment announcement,
+      #   press release, published bio, etc.)
+
+    contract_entry:
+      required: [contract_number, contracting_agency, period_start, source]
+      optional:
+        - period_end
+        - primary_counterparty_path
+        - subject
+        - value
+        - deliverables
+        - note
+      # contract_number: contract identifier as attested in the primary
+      #   source (e.g., "HHM402-08-C-0072" for AAWSAP). Preserved verbatim
+      #   from source.
+      # contracting_agency: free-text (e.g., "DIA", "DARPA", "Navy OPNAV").
+      #   Prefer the agency's /organizations/ wrap_path in contributor
+      #   prose elsewhere; this field carries the agency's short form as
+      #   it appears on the contract itself.
+      # primary_counterparty_path: optional /organizations/... path of the
+      #   contract recipient (typically the node this contract sits on, but
+      #   explicit for sub-contract or joint-venture cases).
+      # period_start / period_end: YYYY-MM-DD; period_end may be absent
+      #   for ongoing or open-ended contracts.
+      # subject: short descriptor of the contract's stated purpose (1-6
+      #   words; e.g., "Advanced Aerospace Weapon System Applications",
+      #   "Cockpit video system integration"). Scanned by check #16 against
+      #   source.path token pool.
+      # value: dollar amount attested in the primary source (string form
+      #   preserves source formatting — "$22 million", "$22M", "22,000,000").
+      # deliverables: optional list of document paths the contract produced
+      #   (e.g., DIRD technical reports on AAWSAP). Each entry a
+      #   /documents/... path; absent or empty list when deliverables are
+      #   not publicly enumerated.
+      # note: contributor synthesis (1-2 sentences; optional). Scanned by
+      #   check #16 against source.path token pool.
+
+    org_relationship_entry:
+      required: [organization_path, relationship_type, source]
+      optional: [flagged, note]
+      # organization_path: /organizations/... path of the other org
+      # relationship_type: enum — one of
+      #   [parent, subsidiary, predecessor, successor, contractor,
+      #    contracting-agency, partner, other]
+      #     parent               — the other org is this org's parent
+      #     subsidiary           — the other org is a subsidiary of this
+      #     predecessor          — the other org preceded this one
+      #                            (lineage / reorganization)
+      #     successor            — the other org succeeded this one
+      #     contractor           — the other org is a contractor to this
+      #                            (this is the contracting agency)
+      #     contracting-agency   — the other org is this org's contracting
+      #                            agency (this is the contractor)
+      #     partner              — joint venture / partnership
+      #     other                — doesn't fit above; explain in note
+      # flagged: bool (default false); routes to `### Flagged`
+      # source: object with path + location attesting the relationship
+      # note: contributor synthesis (1-2 sentences; optional). Scanned by
+      #   check #16 against source.path token pool.
+
     media_versioning_entry:
       required: [id, aspect, parent_form, this_form, source]
       optional: [note]
@@ -987,6 +1132,8 @@ types:
       - "material_differences[].written_ref resolves to an existing quote in the referenced research/{slug}.yaml artifact"
       - "material_differences[].oral_ref matches a quote.id within this transcript artifact"
       - "media_versioning[].aspect in [duration, encoding, metadata, content, provenance, other] (warn on unknown; `other` permitted)"
+      - "key_personnel[].leadership_class (when set) in [director, deputy, staff, advisor, other]"
+      - "org_relationships[].relationship_type in [parent, subsidiary, predecessor, successor, contractor, contracting-agency, partner, other]"
 
       # Iterations log
       - "iterations[].id values are sequential (i0, i1, i2, ...) with no gaps"
@@ -1006,6 +1153,8 @@ types:
       - "material_differences section present iff target_node type == transcript AND kind == hearing"
       - "speakers section present iff target_node type == transcript"
       - "media_versioning section present iff target_node type == media (empty list permitted when media is canonical / original; populated when derivation_of is set)"
+      - "key_personnel and org_relationships sections present iff target_node type == organization"
+      - "contracts section present iff target_node type == organization AND kind == gov-contractor"
 
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema

@@ -137,6 +137,23 @@ TRANSCRIPT_KIND_REQUIRED_SECTION = {
     "hearing": "material_differences",
 }
 
+# Organization-artifact-specific required keys (universal across the three
+# kinds — gov, gov-contractor, private). key_personnel is the cross-
+# reference surface (people + sourced roles); org_relationships carries
+# org-to-org structured links. Kind-specific sections (contracts for
+# gov-contractor) layered on top of these via ORG_KIND_REQUIRED_SECTION.
+ORGANIZATION_REQUIRED_KEYS = [
+    "key_personnel",
+    "org_relationships",
+]
+
+# Kind → required artifact section (only on organization artifacts).
+# Only gov-contractor carries the contracts list; gov and private have
+# no kind-specific sections beyond ORGANIZATION_REQUIRED_KEYS.
+ORGANIZATION_KIND_REQUIRED_SECTION = {
+    "gov-contractor": "contracts",
+}
+
 TYPE_DIRS = {
     "person": "people", "organization": "organizations", "document": "documents",
     "event": "events", "transcript": "transcripts", "media": "media",
@@ -189,6 +206,13 @@ VALID_DIVERGENCE_CLASS = {
 }
 VALID_MEDIA_VERSIONING_ASPECT = {
     "duration", "encoding", "metadata", "content", "provenance", "other",
+}
+VALID_LEADERSHIP_CLASS = {
+    "director", "deputy", "staff", "advisor", "other",
+}
+VALID_ORG_RELATIONSHIP_TYPE = {
+    "parent", "subsidiary", "predecessor", "successor",
+    "contractor", "contracting-agency", "partner", "other",
 }
 
 
@@ -379,7 +403,7 @@ def validate_artifact(path, schema, manifest_paths):
                 fm_of_target = _read_target_frontmatter(target_path)
                 if target_type == "person":
                     target_archetype = fm_of_target.get("archetype")
-                if target_type in ("event", "transcript"):
+                if target_type in ("event", "transcript", "organization"):
                     target_kind = fm_of_target.get("kind")
                 if target_type == "media":
                     target_derivation_of = fm_of_target.get("derivation_of")
@@ -569,6 +593,44 @@ def validate_artifact(path, schema, manifest_paths):
                 "'media_versioning' section should not be present "
                 f"(target_node type {target_type!r} is not media)"))
 
+    # --- Organization-universal sections (type-conditional on organization) ---
+    # key_personnel + org_relationships required on every organization
+    # artifact regardless of kind. Kind-specific section (contracts for
+    # gov-contractor) layered below via ORGANIZATION_KIND_REQUIRED_SECTION.
+    if target_type == "organization":
+        for key in ORGANIZATION_REQUIRED_KEYS:
+            if key not in data:
+                issues.append(Issue(rel, "error",
+                    f"Required {key!r} key missing "
+                    f"(organization artifacts require "
+                    f"{', '.join(ORGANIZATION_REQUIRED_KEYS)})"))
+    elif target_type is not None:
+        for key in ORGANIZATION_REQUIRED_KEYS:
+            if key in data:
+                issues.append(Issue(rel, "error",
+                    f"{key!r} key should not be present "
+                    f"(target_node type {target_type!r} is not organization)"))
+
+    # --- Organization-kind-specific sections (kind-conditional on organization) ---
+    # Only gov-contractor carries contracts. gov and private kinds must
+    # NOT carry it; gov-contractor MUST carry it (empty list permitted
+    # for contracts not yet archived).
+    if target_type == "organization" and target_kind:
+        for kind_name, section in ORGANIZATION_KIND_REQUIRED_SECTION.items():
+            if kind_name == target_kind:
+                if section not in data:
+                    issues.append(Issue(rel, "error",
+                        f"Required {section!r} section missing "
+                        f"(target organization kind is {target_kind!r}, "
+                        f"which requires {section!r})"))
+            else:
+                if section in data:
+                    issues.append(Issue(rel, "error",
+                        f"{section!r} section should not be present "
+                        f"(target organization kind {target_kind!r} does "
+                        f"not carry it — that section belongs to kind "
+                        f"{kind_name!r})"))
+
     # --- primary_sources: path must exist in manifest ---
     issues.extend(check_primary_sources(rel, data, manifest_paths))
 
@@ -604,6 +666,12 @@ def validate_artifact(path, schema, manifest_paths):
         issues.extend(check_speakers(rel, data, manifest_paths))
     if "media_versioning" in data:
         issues.extend(check_media_versioning(rel, data, manifest_paths))
+    if "key_personnel" in data:
+        issues.extend(check_key_personnel(rel, data, manifest_paths))
+    if "org_relationships" in data:
+        issues.extend(check_org_relationships(rel, data, manifest_paths))
+    if "contracts" in data:
+        issues.extend(check_contracts(rel, data, manifest_paths))
 
     # --- Iteration log ---
     issues.extend(check_iterations(rel, data))
@@ -1449,6 +1517,111 @@ def check_vouching_chain(rel, data, manifest_paths):
     return issues
 
 
+def check_key_personnel(rel, data, manifest_paths):
+    """key_personnel[] — present on organization artifacts. Each entry:
+    required {person_path, role, source}, optional
+    {period_start, period_end, leadership_class, flagged, note}.
+    leadership_class (when set) ∈ VALID_LEADERSHIP_CLASS.
+    """
+    issues = []
+    items = _entries(data, "key_personnel")
+    issues.extend(_check_unique_ids(rel, items, "key_personnel"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "key_personnel", i))
+        for field in ["person_path", "role"]:
+            if field not in e:
+                issues.append(Issue(rel, "error",
+                    f"key_personnel[{i}] ({e.get('id')!r}): "
+                    f"missing required {field!r}"))
+        pp = e.get("person_path")
+        if pp and not pp.startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"key_personnel[{i}] ({e.get('id')!r}): "
+                f"person_path {pp!r} must start with '/'"))
+        lc = e.get("leadership_class")
+        if lc is not None and lc not in VALID_LEADERSHIP_CLASS:
+            issues.append(Issue(rel, "error",
+                f"key_personnel[{i}] ({e.get('id')!r}): "
+                f"leadership_class {lc!r} not in "
+                f"{sorted(VALID_LEADERSHIP_CLASS)}"))
+        issues.extend(_require_source_dict(rel, e, "key_personnel", i, manifest_paths))
+    return issues
+
+
+def check_org_relationships(rel, data, manifest_paths):
+    """org_relationships[] — present on organization artifacts. Each entry:
+    required {organization_path, relationship_type, source}, optional
+    {flagged, note}. relationship_type ∈ VALID_ORG_RELATIONSHIP_TYPE.
+    """
+    issues = []
+    items = _entries(data, "org_relationships")
+    issues.extend(_check_unique_ids(rel, items, "org_relationships"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "org_relationships", i))
+        for field in ["organization_path", "relationship_type"]:
+            if field not in e:
+                issues.append(Issue(rel, "error",
+                    f"org_relationships[{i}] ({e.get('id')!r}): "
+                    f"missing required {field!r}"))
+        op = e.get("organization_path")
+        if op and not op.startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"org_relationships[{i}] ({e.get('id')!r}): "
+                f"organization_path {op!r} must start with '/'"))
+        rt = e.get("relationship_type")
+        if rt is not None and rt not in VALID_ORG_RELATIONSHIP_TYPE:
+            issues.append(Issue(rel, "error",
+                f"org_relationships[{i}] ({e.get('id')!r}): "
+                f"relationship_type {rt!r} not in "
+                f"{sorted(VALID_ORG_RELATIONSHIP_TYPE)}"))
+        issues.extend(_require_source_dict(rel, e, "org_relationships", i, manifest_paths))
+    return issues
+
+
+def check_contracts(rel, data, manifest_paths):
+    """contracts[] — present on gov-contractor organization artifacts.
+    Each entry: required {contract_number, contracting_agency,
+    period_start, source}, optional {period_end, primary_counterparty_path,
+    subject, value, deliverables, note}.
+    """
+    issues = []
+    items = _entries(data, "contracts")
+    issues.extend(_check_unique_ids(rel, items, "contracts"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "contracts", i))
+        for field in ["contract_number", "contracting_agency", "period_start"]:
+            if field not in e or not str(e.get(field) or "").strip():
+                issues.append(Issue(rel, "error",
+                    f"contracts[{i}] ({e.get('id')!r}): "
+                    f"missing required {field!r}"))
+        pcp = e.get("primary_counterparty_path")
+        if pcp and not pcp.startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"contracts[{i}] ({e.get('id')!r}): "
+                f"primary_counterparty_path {pcp!r} must start with '/'"))
+        # deliverables: optional list of /documents/... paths
+        deliverables = e.get("deliverables") or []
+        if deliverables and not isinstance(deliverables, list):
+            issues.append(Issue(rel, "error",
+                f"contracts[{i}] ({e.get('id')!r}): "
+                f"deliverables must be a list (got {type(deliverables).__name__})"))
+        elif isinstance(deliverables, list):
+            for j, d in enumerate(deliverables):
+                if not isinstance(d, str) or not d.startswith("/"):
+                    issues.append(Issue(rel, "error",
+                        f"contracts[{i}] ({e.get('id')!r}): "
+                        f"deliverables[{j}] must be a repo path starting with '/' "
+                        f"(got {d!r})"))
+        issues.extend(_require_source_dict(rel, e, "contracts", i, manifest_paths))
+    return issues
+
+
 # =============================================================================
 # Check #16 — prose-field token drift (F.1c RCA follow-up)
 #
@@ -1555,8 +1728,15 @@ PROSE_FIELDS_BY_TYPE = {
         # renderer" (entered in F.3a, resolved in F.3b).
         "description",
     ],
-    # F.4+ extensions:
-    # "organization": ["overview", "description", ...],
+    "organization": [
+        # Organization top-level prose: `description` renders as the
+        # `## Description` section — labeled contributor synthesis.
+        # Overview section renders from organization-kind keys in
+        # document_intrinsic (fact-table dispatch), not from prose, so
+        # only `description` is scanned as free-prose.
+        "description",
+    ],
+    # F.6+ extensions:
     # "finding": ["what_this_establishes", ...],
 }
 
@@ -1597,6 +1777,24 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
         # difference. Scanned against the entry's own source.path
         # token pool (the primary source attesting the difference).
         ("media_versioning", "note"),
+    ],
+    "organization": [
+        # timeline[].event — dated fact descriptions (founding, reorg,
+        # leadership transition, contract, incident).
+        ("timeline",          "event"),
+        # key_personnel[].role — free-text role at the org (e.g.,
+        # "Founding Director", "Acting Director", "Chief of Staff").
+        # Scanned against the entry's source.path.
+        ("key_personnel",     "role"),
+        # org_relationships[].note — contributor synthesis on the
+        # relationship. Scanned against source.path.
+        ("org_relationships", "note"),
+        # contracts[].subject — short descriptor of the contract's
+        # stated purpose. Scanned against source.path.
+        ("contracts",         "subject"),
+        # contracts[].note — contributor synthesis. Scanned against
+        # source.path.
+        ("contracts",         "note"),
     ],
 }
 
