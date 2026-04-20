@@ -1,0 +1,156 @@
+id: research/flir1-video
+type: research-artifact
+schema_version: 1
+target_node: media/flir1-video
+status: active
+created: '2026-04-20'
+last_iteration: i0
+description: |
+  One of three unclassified Navy ([`/organizations/us-navy`]) videos the Department of Defense ([`/organizations/dod`]) authorized for release on April 27, 2020. Taken in November 2004. Had been circulating in the public domain after unauthorized releases in 2007 and 2017. The aerial phenomena observed in the videos remain characterized as unidentified. Released at the Naval Air Systems Command FOIA Reading Room.
+
+  Related: [`/events/2004-nimitz-encounter`] [`/organizations/uss-nimitz`] [`/organizations/ttsa`] [`/people/david-fravor`] [`/people/alex-dietrich`] [`/documents/written-testimony-fravor-2023`] [`/transcripts/2023-07-26-house-fravor`]
+primary_sources:
+- path: video/1 - FLIR.mp4
+  format: video
+  sha256_at_extraction: eff0ffa55bcafee5dd7b0c4668c5bb21a9617feae8f0d01912a8c73a859dc170
+- path: government/defense-gov-dod-uap-video-release-20200427.html
+  format: html
+  extracted_text_path: /tmp/scratch-flir1-video-1.txt
+  sha256_at_extraction: fbbda4af8c5c79294a4303929f233afec5071dbf9e552ca249d1df67ef97e834
+document_intrinsic:
+  duration: 76.30 seconds
+  dimensions: 352x264
+  file_format: MP4 (ISO 14496-14)
+  file_size: 5,619,302 bytes (≈5.4 MB)
+  container_creation_time: '2007-09-18T10:18:36Z'
+  container_modification_time: '2007-09-18T10:18:36Z'
+  embedded_metadata: |
+    Minimal — no udta (user data) atom, no QuickTime metadata tags (©day / ©nam / ©cpy / ©too). mvhd version 0 with create_time == modify_time == 2007-09-18T10:18:36Z.
+context_extrinsic:
+  display_title: 1 - FLIR — Navy Targeting-Pod Video (November 2004)
+  capture_date: November 2004
+  release_date: April 27, 2020
+  primary_source_url: https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4
+  release_statement_url: https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/
+  release_venue: Naval Air Systems Command FOIA Reading Room (https://www.navair.navy.mil/foia/documents)
+  provenance:
+  - step: Captured by F/A-18F targeting pod during 2004 USS Nimitz UAP encounter
+    date: '2004-11'
+    entity: U.S. Navy (per David Fravor's 2023 written testimony ¶7; the crew that captured the video launched after Fravor's flight returned to the Nimitz)
+    verified: ⏳ Pending — capture attested by Fravor; specific crew member named orally as "Chad" (oral q34); see research_gap rg4
+  - step: MP4 container encoded; first unauthorized release into public domain (per DoD 2020 statement acknowledging "unauthorized releases in 2007")
+    date: '2007-09-18'
+    entity: Unknown — specific venue of 2007 circulation not identified in archived primary sources; see research_gap rg3
+    verified: ✅ Confirmed — mvhd version 0 creation_time parsed from sources/video/1 - FLIR.mp4 (sha256 eff0ffa55bcafee5dd7b0c4668c5bb21a9617feae8f0d01912a8c73a859dc170); DoD 2020 press release acknowledges 2007 unauthorized release
+  - step: Second unauthorized release — video circulated alongside To the Stars Academy ([`/organizations/ttsa`]) / New York Times December 2017 reporting
+    date: '2017-12'
+    entity: To the Stars Academy distribution chain per David Fravor's 2023 testimony
+    verified: ⏳ Pending — "unauthorized releases in 2017" acknowledged by DoD; TTSA's specific role in that release is attested by Fravor testimony but not by an independent primary source archived in this repository
+  - step: Authorized declassified release by Department of Defense via Naval Air Systems Command FOIA Reading Room
+    date: '2020-04-27'
+    entity: Department of Defense ([`/organizations/dod`])
+    verified: ✅ Confirmed — archived DoD press release (government/defense-gov-dod-uap-video-release-20200427.html); file retrieved from https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4
+  - step: Archived locally
+    date: '2026-04-20'
+    entity: UAP_OSINT-v0.1 repository
+    verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
+quotes: []
+claims: []
+entities_referenced:
+- id: e1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: U.S. Navy
+  wrap_path: /organizations/us-navy
+  context_summary: Source of the three "unclassified Navy videos" per the DoD 2020 press release; service branch of Fravor's squadron
+- id: e2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Department of Defense
+  wrap_path: /organizations/dod
+  context_summary: Authorizing body of the April 27, 2020 declassified release per the archived DoD press release
+- id: e3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: USS Nimitz
+  wrap_path: /organizations/uss-nimitz
+  context_summary: Carrier that launched the F/A-18F flight during the November 2004 encounter the video captures
+- id: e4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: To the Stars Academy (TTSA)
+  wrap_path: /organizations/ttsa
+  context_summary: Per Fravor's 2023 testimony, TTSA's disclosure chain corresponds to the 2017 unauthorized release DoD 2020 press release acknowledges
+- id: e5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: David Fravor
+  wrap_path: /people/david-fravor
+  context_summary: Retired U.S. Navy Commander whose 2023 sworn testimony attests the video's capture context, the follow-on crew, the targeting-pod path after APG-73 jamming, and the first-name identification of the crew member ("Chad")
+- id: e6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Alex Dietrich
+  wrap_path: /people/alex-dietrich
+  context_summary: Other pilot in Fravor's flight during the November 2004 encounter per Fravor's 2023 testimony; present at the close-approach portion of the encounter the video postdates
+- id: e7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: event
+  name: 2004 USS Nimitz UAP encounter
+  wrap_path: /events/2004-nimitz-encounter
+  context_summary: The November 2004 encounter the video documents
+- id: e8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: document
+  name: David Fravor — 2023 Written Testimony
+  wrap_path: /documents/written-testimony-fravor-2023
+  context_summary: Primary-source attestation of the video's capture context and the 90-second approximate duration characterization (q14)
+- id: e9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: transcript
+  name: David Fravor — 2023 Oral Testimony
+  wrap_path: /transcripts/2023-07-26-house-fravor
+  context_summary: Primary-source attestation of the follow-on crew member name "Chad" (q34), the APG-73 jamming mechanics (q24), and the passive targeting-pod path to the video
+naming_quirks: []
+research_gaps:
+- id: rg1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Extract verbatim visible HUD text (altitude, heading, range, targeting-pod mode indicators) at specific timestamps across the 76.30-second video
+  methodology: 'Frame-by-frame visual inspection of the archived MP4. HUD text is a contributor-verifiable verbatim extraction (validate.py check 11 returns warn on .mp4 since pdftotext does not handle video; contributor takes responsibility for verbatim correctness). Each timestamp quote entry carries a source.location of the form "timestamp MM:SS, position" per F.4 Decision 1 flexible-location shape.'
+  resolved: false
+- id: rg2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Transcribe cockpit audio if present across the 76.30-second video
+  methodology: Extract audio track from the archived MP4 via ffmpeg (install required) or manual playback. Navy-crew speech during targeting-pod operation typically includes call-sign checks, sensor-mode announcements, and tracking observations. Each speech quote entry carries source.location "timestamp MM:SS-MM:SS" per F.4 Decision 1.
+  resolved: false
+- id: rg3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Confirm whether the MP4's internal container creation timestamp (2007-09-18T10:18:36Z) corresponds to the first "unauthorized release" DoD 2020 statement acknowledges
+  methodology: The DoD 2020 press release acknowledges "unauthorized releases in 2007" without naming the venue. Search archived 2007-era forums and UFO-research mailing lists (rense.com, abovetopsecret.com, openminds.tv) for first-known circulation of FLIR1; compare any recovered 2007-era files to this MP4 (sha256 eff0ffa55bcafee5dd7b0c4668c5bb21a9617feae8f0d01912a8c73a859dc170) to test whether DoD's 2020 authorized release used the same file that leaked in 2007.
+  resolved: false
+- id: rg4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Confirm whether "Chad" (Fravor oral testimony q34) corresponds to Chad Underwood as the follow-on F/A-18F crew member who captured the video
+  methodology: Cross-reference this node's provenance chain with NAVAIR VFA-41 squadron records for November 2004 sortie rosters; check 2017-era New York Times / NYmag reporting on the video for contemporaneous crew identification. Parallel research_gap on /transcripts/2023-07-26-house-fravor (rg1) and /events/2004-nimitz-encounter rumor list.
+  resolved: false
+media_versioning: []
+iterations:
+- id: i0
+  date: '2026-04-20'
+  trigger: initial-build
+  summary: F.4c pilot — first end-to-end Phase I population of a media research artifact. Populated document_intrinsic from MP4 container metadata (duration 76.30s, 352x264 dimensions, mvhd creation_time 2007-09-18T10:18:36Z) and context_extrinsic provenance from the archived DoD April 27 2020 press release + Fravor cross-artifact testimony. No derivation_of set (canonical DoD-authorized release); media_versioning empty; quotes empty with research_gaps rg1/rg2 tracking HUD-text and cockpit-audio extraction as future iterations. 9 entities_referenced, 4 research_gaps.
+  entries_added: []
+  entries_modified: []

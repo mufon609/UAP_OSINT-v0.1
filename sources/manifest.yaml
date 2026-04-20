@@ -34,3 +34,17 @@
   path: government/congress-gov-house-hearing-transcript-20230726.pdf
   archived_date: '2026-04-17'
   sha256: e27169e8198c2a69e4a11612efef16891f33b86209a5d1721246fed69a6d8ec1
+- url: https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/
+  format: html
+  status: archived
+  path: government/defense-gov-dod-uap-video-release-20200427.html
+  archived_date: '2026-04-20'
+  sha256: fbbda4af8c5c79294a4303929f233afec5071dbf9e552ca249d1df67ef97e834
+  note: DoD statement announcing April 27, 2020 declassified release of three Navy UAP videos (FLIR1 2004, Gimbal + Go Fast 2015). File on disk is a 2025-08-10 Wayback snapshot of the defense.gov page.
+- url: https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4
+  format: html
+  status: archived
+  path: video/1 - FLIR.mp4
+  archived_date: '2026-04-20'
+  sha256: eff0ffa55bcafee5dd7b0c4668c5bb21a9617feae8f0d01912a8c73a859dc170
+  note: First of three UAP videos released by DoD April 27, 2020. Direct download from NAVAIR FOIA documents (https://www.navair.navy.mil/foia/documents). Filename '1 - FLIR.mp4' matches NAVAIR's sequential labeling. 76.30 seconds, 352x264, ISO 14496-14 MP4. Archived 2026-04-20.

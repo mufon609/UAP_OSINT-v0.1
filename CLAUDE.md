@@ -72,9 +72,11 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 |---|---|---|
 | `/transcripts/2023-07-26-house-fravor` | primary-source-confirmed | hearing |
 
-### Media (0)
+### Media (1)
 
-*No nodes yet.*
+| Node | Status | Kind |
+|---|---|---|
+| `/media/flir1-video` | primary-source-confirmed | video |
 
 ### Locations (0)
 

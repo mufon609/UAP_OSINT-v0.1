@@ -759,9 +759,30 @@ def review_artifact(artifact_path, quiet=False):
 
     issues = []
     for path in missing_sources:
-        issues.append(Issue(rel, "error",
-            f"Claim drift check: primary source {path!r} missing or "
-            f"unreadable — can't verify claim tokens against source."))
+        full = SOURCES_DIR / path
+        if not full.exists():
+            # File not on disk at all — legitimate error (source archival
+            # discipline broken). Manifest points at a path that isn't
+            # present.
+            issues.append(Issue(rel, "error",
+                f"Claim drift check: primary source {path!r} missing — "
+                f"file not present on disk under sources/. Source-archival "
+                f"integrity issue; verify the manifest entry and re-archive "
+                f"if needed."))
+        else:
+            # File exists but isn't text-extractable — typical for binary
+            # media (video/audio/image). The quote-verbatim check in
+            # validate.py treats this as warn (not error) via the same
+            # reasoning; the claim-token-drift check here follows suit.
+            # Contributor takes responsibility for any verbatim quotes
+            # from the media source (manual frame/audio inspection).
+            # Non-blocking.
+            issues.append(Issue(rel, "warn",
+                f"Claim drift check: primary source {path!r} not text-"
+                f"extractable (likely binary media — video/audio/image). "
+                f"Claim tokens skipped for this source; verbatim quote "
+                f"extraction from media sources requires manual "
+                f"contributor verification."))
 
     issues.extend(check_coverage(artifact, node_text, rel))
     issues.extend(check_boundary(artifact_path, node_path, rel))
