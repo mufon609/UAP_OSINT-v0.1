@@ -167,6 +167,51 @@ REQUIRED_TOP_LEVEL_KEYS = [
     "naming_quirks", "research_gaps", "iterations",
 ]
 
+# All entry-bearing typed sections that participate in the lifecycle-
+# fields and cross-ref checks (check_added_by_iteration,
+# check_cross_refs). A section listed here need not be present on every
+# artifact — presence is gated elsewhere by type / kind / archetype
+# conditional rules. The iteration checks use `_entries()` which returns
+# an empty list for absent sections, so enumerating all sections is safe
+# regardless of which ones any given artifact carries.
+#
+# Update this list when a new typed section is introduced (e.g., new F-
+# sub-phase sections). Single source of truth avoids the F.5a-era gap
+# where new typed sections (timeline / affiliations / key_personnel /
+# contracts / etc.) were structurally validated per-section but not
+# cross-validated for added_by_iteration / superseded_by /
+# contradicted_by / corroborated_by refs.
+ALL_ENTRY_SECTIONS = [
+    # Universal (top-level required on every artifact)
+    "quotes",
+    "claims",
+    "entities_referenced",
+    "naming_quirks",
+    "research_gaps",
+    # Type-conditional
+    "rumors",
+    "timeline",
+    # Person
+    "affiliations",
+    "relationships",
+    "corroboration_items",
+    "program_involvement",
+    "publication_record",
+    "vouching_chain",
+    # Event
+    "participants",
+    "witnesses_testimony",
+    # Transcript
+    "speakers",
+    "material_differences",
+    # Media
+    "media_versioning",
+    # Organization
+    "key_personnel",
+    "org_relationships",
+    "contracts",
+]
+
 # Per-entry enum values
 VALID_EVIDENTIARY_TYPES = {"sworn-testimony", "documented", "cited", "secondary"}
 VALID_NAMING_QUIRK_RESOLUTIONS = {
@@ -2085,13 +2130,18 @@ def check_iterations(rel, data):
 
 
 def check_added_by_iteration(rel, data):
+    """Every typed-section entry's `added_by_iteration` must point at
+    an existing `iteration.id`. Enumerates over ALL_ENTRY_SECTIONS so
+    newer typed sections (timeline / affiliations / key_personnel /
+    contracts / material_differences / etc.) are cross-validated, not
+    only the universal 6 the pre-F.5a version covered.
+    """
     issues = []
     iteration_ids = {
         it.get("id") for it in _entries(data, "iterations")
         if isinstance(it, dict)
     }
-    for section in ["quotes", "claims", "entities_referenced", "naming_quirks",
-                    "research_gaps", "rumors"]:
+    for section in ALL_ENTRY_SECTIONS:
         for i, entry in enumerate(_entries(data, section)):
             if not isinstance(entry, dict):
                 continue
@@ -2106,18 +2156,23 @@ def check_added_by_iteration(rel, data):
 
 
 def check_cross_refs(rel, data):
-    """Verify superseded_by / contradicted_by / corroborated_by refs point to
-    existing entry ids within this artifact (or are structured external refs)."""
+    """Verify superseded_by / contradicted_by / corroborated_by refs
+    point to existing entry ids within this artifact (or are structured
+    external refs).
+
+    Enumerates over ALL_ENTRY_SECTIONS so newer typed sections are
+    cross-validated. Refs that don't match any id in the artifact warn
+    (may be external refs — contributor verifies); no error so
+    legitimate cross-artifact refs aren't false-positive'd.
+    """
     issues = []
     all_ids = set()
-    for section in ["quotes", "claims", "entities_referenced", "naming_quirks",
-                    "research_gaps", "rumors"]:
+    for section in ALL_ENTRY_SECTIONS:
         for entry in _entries(data, section):
             if isinstance(entry, dict) and entry.get("id"):
                 all_ids.add(entry["id"])
 
-    for section in ["quotes", "claims", "entities_referenced", "naming_quirks",
-                    "research_gaps", "rumors"]:
+    for section in ALL_ENTRY_SECTIONS:
         for i, entry in enumerate(_entries(data, section)):
             if not isinstance(entry, dict):
                 continue
