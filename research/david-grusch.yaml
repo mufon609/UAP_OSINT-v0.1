@@ -5,12 +5,6 @@ target_node: people/david-grusch
 status: active
 created: '2026-04-20'
 last_iteration: i2
-description: 'David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. In his [`/organizations/nro`] reservist capacity he was a member of the [`/organizations/uaptf`] from 2019-2021; the UAPTF director in 2019 tasked him to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) needed to satisfy the task force''s congressionally mandated mission, and he was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`]. Under oath at [`/events/2023-07-26-house-uap-hearing`], Grusch''s Opening Statement framed his testimony explicitly as relayed: "as I stand here under oath now, I am speaking to the facts as I have been told them."
-
-
-  This artifact at i0 draws on two archived primary sources: his written testimony ([`/documents/written-testimony-grusch-2023`]) submitted to the House Oversight Committee on July 26, 2023, and his official biographical submission ([`/documents/grusch-bio-2023`]) to the same committee. Later iterations can extend from his oral testimony at the 2023-07-26 hearing, his NewsNation interview, his 2025 Burlison advisor notice, and the June 2023 Debrief article once those sources are extracted.
-
-  '
 primary_sources:
 - path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
   format: pdf
