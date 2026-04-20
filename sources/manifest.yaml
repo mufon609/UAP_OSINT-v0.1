@@ -4,6 +4,12 @@
   path: government/docs-house-gov-hearing-event-116282.html
   archived_date: '2026-04-17'
   sha256: 42e4072cd791ee121bc4c3af6634c4c85e845967df6f99ccbd5c4858c8929844
+- url: https://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Bio-GruschD-20230726.pdf
+  format: pdf
+  status: archived
+  path: government/docs-house-gov-grusch-bio-20230726.pdf
+  archived_date: '2026-04-20'
+  sha256: cce10ab6cfddd654b470c11b14adb8fdb091488103c511d4b3637f1e9856acf9
 - url: https://docs.house.gov/meetings/GO/GO06/20230726/116282/HHRG-118-GO06-Wstate-GravesR-20230726.pdf
   format: pdf
   status: archived

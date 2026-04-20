@@ -1146,8 +1146,12 @@ testimony PDFs, one published event page). Cluster-scope targets:
   hearing-transcript pilot)
 - `/transcripts/2023-07-26-house-graves` ⏸ pending (third F.3b
   hearing-transcript pilot)
-- `/people/david-grusch` ⏸ pending (whistleblower-archetype pilot
-  under F.1b — complements Fravor's eyewitness archetype)
+- `/people/david-grusch` ✅ DONE 2026-04-20 (F.1b whistleblower-archetype
+  pilot; two primary sources: written testimony + Congressional
+  biographical submission; 11 quotes, 9 affiliations, 15 timeline
+  entries, 3 filed-claim tagged quotes routing to Claim Inventory, 6
+  research gaps, 2 rumors — Vouching Chain empty at i0 pending
+  Debrief/NewsNation extraction)
 - `/people/ryan-graves` ⏸ pending (eyewitness-archetype follow-on)
 
 G milestones are emergent, not pre-planned. The research queue
