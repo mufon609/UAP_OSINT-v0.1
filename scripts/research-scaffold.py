@@ -260,6 +260,14 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     # below via KIND_SECTIONS_BY_TYPE.
     if node_type == "transcript":
         artifact["speakers"] = []
+    # Media-specific universal section. `media_versioning` required on
+    # every media artifact regardless of kind (photo / video / audio /
+    # imagery-other). Empty list when the media is canonical / original;
+    # populated when the node's frontmatter has derivation_of set and
+    # the derivative differs from its parent across one or more aspects
+    # (duration / encoding / metadata / content / provenance / other).
+    if node_type == "media":
+        artifact["media_versioning"] = []
     # Archetype-conditional section on person artifacts. Reads the target
     # node's frontmatter to get its archetype; scaffolds the corresponding
     # empty list. Only one of the four sections is ever scaffolded

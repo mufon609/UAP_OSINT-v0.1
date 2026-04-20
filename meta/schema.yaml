@@ -633,6 +633,16 @@ types:
         # surface — speakers' actual statements live in `quotes` and
         # render as `## Key Passages`). Required on every transcript
         # artifact regardless of kind; renders as `## Speakers`.
+      media_versioning:
+        required_when_target_node_type_in: [media]
+        # Per-aspect entries documenting how a derivative media node
+        # differs from its parent (per frontmatter `derivation_of`).
+        # Always present on media artifacts (empty list when media is
+        # canonical / original; populated when derivation_of is set on
+        # the node). Renderer emits the `## Media Versioning` section
+        # only when entries exist; canonical / original media node
+        # bodies omit the section entirely. Entry shape:
+        # media_versioning_entry below.
 
     # Primary-source list entries
     primary_sources_entry:
@@ -695,7 +705,16 @@ types:
     quote_source:
       required: [path, location]
       # path: appears in manifest.yaml
-      # location: paragraph ref (¶N), line number (line N), page (p. N), timestamp, etc.
+      # location: paragraph ref (¶N), line number (line N), page (p. N),
+      #   timestamp, etc. Media artifacts accept flexible location forms
+      #   on a SINGLE quote entry type — timestamp (e.g., "0:23-0:45" for
+      #   audio/video speech), timestamp + in-frame coordinate (e.g.,
+      #   "HUD bottom-right, 0:12" for visible text in a video frame),
+      #   or spatial-only (e.g., "upper-right corner" for photo-visible
+      #   text). Contributor chooses the shape that best anchors the
+      #   passage; the renderer passes the string through verbatim and
+      #   the quote-verbatim check substring-matches the extracted source
+      #   text regardless.
 
     claim_entry:
       required: [statement, sources, evidentiary_type]
@@ -842,6 +861,38 @@ types:
       #   own source page where the speaker is named/identified (cover
       #   sheet, speaker roster, intro Q&A)
 
+    media_versioning_entry:
+      required: [id, aspect, parent_form, this_form, source]
+      optional: [note]
+      # aspect: one of [duration, encoding, metadata, content, provenance,
+      #   other] — enum keeps the table's top-level structure scannable
+      #   and enables future cross-node queries (e.g., "show all media
+      #   with metadata scrubs"). `other` is an extensibility escape —
+      #   validator warns on unknown values but does not error.
+      #     duration   — clip length differences
+      #     encoding   — codec, resolution, bitrate, container format
+      #     metadata   — EXIF / container-level metadata (creation date,
+      #                  camera/platform info, author fields, etc.)
+      #     content    — visible/audible content differences — watermarks,
+      #                  overlays, cropping, frames added/removed, audio
+      #                  presence or absence
+      #     provenance — chain-of-custody differences (known upload or
+      #                  distribution paths, release venue, declassification
+      #                  authority)
+      #     other      — doesn't fit the above; explain in `note`
+      # parent_form: free-text observation of the parent (derivation_of)
+      #   media (1-2 lines). Accommodates per-aspect shape variance —
+      #   numerical for duration, list-like for metadata, prose for content.
+      # this_form: free-text observation of THIS derivative media (1-2
+      #   lines). Same free-text shape.
+      # source: object with path + location — the primary source attesting
+      #   the difference (e.g., DoD press release confirming the 2020
+      #   declassified cut; FOIA response with metadata inspection;
+      #   side-by-side visual comparison noted in an archived article).
+      # note: contributor synthesis of analytical significance (1-2
+      #   sentences; optional). Scanned by check #16 against the entry's
+      #   own source.path token pool.
+
     material_differences_entry:
       required: [id, topic, divergence_class, written_ref, oral_ref]
       optional: [note]
@@ -936,6 +987,7 @@ types:
       - "material_differences[].divergence_class in [elaboration, contradiction, omission, clarification, qa-addition]"
       - "material_differences[].written_ref resolves to an existing quote in the referenced research/{slug}.yaml artifact"
       - "material_differences[].oral_ref matches a quote.id within this transcript artifact"
+      - "media_versioning[].aspect in [duration, encoding, metadata, content, provenance, other] (warn on unknown; `other` permitted)"
 
       # Iterations log
       - "iterations[].id values are sequential (i0, i1, i2, ...) with no gaps"
@@ -954,6 +1006,7 @@ types:
       - "corroboration_items section present iff target_node archetype == eyewitness OR (type == event AND kind == encounter)"
       - "material_differences section present iff target_node type == transcript AND kind == hearing"
       - "speakers section present iff target_node type == transcript"
+      - "media_versioning section present iff target_node type == media (empty list permitted when media is canonical / original; populated when derivation_of is set)"
 
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema

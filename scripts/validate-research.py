@@ -187,6 +187,9 @@ VALID_OATH_STATUS = {"sworn", "unsworn", "affirmation", "unknown"}
 VALID_DIVERGENCE_CLASS = {
     "elaboration", "contradiction", "omission", "clarification", "qa-addition",
 }
+VALID_MEDIA_VERSIONING_ASPECT = {
+    "duration", "encoding", "metadata", "content", "provenance", "other",
+}
 
 
 # =============================================================================
@@ -456,6 +459,25 @@ def validate_artifact(path, schema, manifest_paths):
                         f"(target transcript kind {target_kind!r} does not "
                         f"carry it — that section belongs to kind {kind_name!r})"))
 
+    # --- Media-universal sections (type-conditional on media) ---
+    # `media_versioning` required on every media artifact regardless of
+    # kind. Empty list permitted (canonical / original media with no
+    # derivation); populated when the node's frontmatter has
+    # derivation_of set and the derivative differs from its parent
+    # across one or more aspects. Renderer emits the `## Media
+    # Versioning` section only when entries exist.
+    if target_type == "media":
+        if "media_versioning" not in data:
+            issues.append(Issue(rel, "error",
+                "Required 'media_versioning' section missing "
+                "(media artifacts require media_versioning — empty list "
+                "permitted for canonical / original media)"))
+    elif target_type is not None:
+        if "media_versioning" in data:
+            issues.append(Issue(rel, "error",
+                "'media_versioning' section should not be present "
+                f"(target_node type {target_type!r} is not media)"))
+
     # --- primary_sources: path must exist in manifest ---
     issues.extend(check_primary_sources(rel, data, manifest_paths))
 
@@ -489,6 +511,8 @@ def validate_artifact(path, schema, manifest_paths):
         issues.extend(check_material_differences(rel, data, manifest_paths))
     if "speakers" in data:
         issues.extend(check_speakers(rel, data, manifest_paths))
+    if "media_versioning" in data:
+        issues.extend(check_media_versioning(rel, data, manifest_paths))
 
     # --- Iteration log ---
     issues.extend(check_iterations(rel, data))
@@ -1267,6 +1291,42 @@ def check_material_differences(rel, data, manifest_paths):
     return issues
 
 
+def check_media_versioning(rel, data, manifest_paths):
+    """media_versioning[] — present on every media artifact. Empty list
+    permitted for canonical / original media; populated when the node's
+    frontmatter has derivation_of set and the derivative differs from
+    its parent across one or more aspects. Each entry: required
+    {id, aspect, parent_form, this_form, source}, optional {note}.
+    aspect ∈ VALID_MEDIA_VERSIONING_ASPECT (warn on unknown; `other`
+    permitted as an extensibility escape).
+    """
+    issues = []
+    items = _entries(data, "media_versioning")
+    issues.extend(_check_unique_ids(rel, items, "media_versioning"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "media_versioning", i))
+        # Required fields
+        for field in ["aspect", "parent_form", "this_form"]:
+            if field not in e or not str(e.get(field) or "").strip():
+                issues.append(Issue(rel, "error",
+                    f"media_versioning[{i}] ({e.get('id')!r}): "
+                    f"missing required {field!r}"))
+        # aspect enum — warn on unknown (parallels doc_form extensibility)
+        aspect = e.get("aspect")
+        if aspect is not None and aspect not in VALID_MEDIA_VERSIONING_ASPECT:
+            issues.append(Issue(rel, "warn",
+                f"media_versioning[{i}] ({e.get('id')!r}): "
+                f"aspect {aspect!r} not in "
+                f"{sorted(VALID_MEDIA_VERSIONING_ASPECT)} — "
+                f"extensible vocabulary, but unexpected values may indicate "
+                f"a missing enum entry worth schema discussion."))
+        # source required
+        issues.extend(_require_source_dict(rel, e, "media_versioning", i, manifest_paths))
+    return issues
+
+
 def check_vouching_chain(rel, data, manifest_paths):
     """vouching_chain[] — present on whistleblower person artifacts.
     Each entry: required {voucher_path, attestation, source},
@@ -1391,6 +1451,15 @@ PROSE_FIELDS_BY_TYPE = {
         # not a prose field.
         "description",
     ],
+    "media": [
+        # Media top-level prose: `description` renders as the
+        # `## Description` section — explicitly labeled contributor-
+        # authored synthesis per the media template (describe what the
+        # source depicts; verbatim extractable content lives in Key
+        # Passages). check #16 scans against the union of
+        # primary_sources[].path token pools.
+        "description",
+    ],
     "transcript": [
         # Transcript top-level prose: `description` renders as the
         # `## Summary` section via the F.3b render-time field→section
@@ -1436,6 +1505,13 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
         # (Witness / Chair / Committee Member / Host / etc.) — scanned
         # against the entry's own source.path.
         ("speakers", "role"),
+    ],
+    "media": [
+        # media_versioning[].note — contributor synthesis on the
+        # analytical significance of a parent/derivative aspect
+        # difference. Scanned against the entry's own source.path
+        # token pool (the primary source attesting the difference).
+        ("media_versioning", "note"),
     ],
 }
 

@@ -62,18 +62,29 @@ corpus: {{corpus}}
 ---
 
 <!-- MEDIA-VERSIONING: required when derivation_of is set in frontmatter.
-     Explains what changed between the parent media node and this
-     derivative (length trimmed, metadata scrubbed, resolution reduced,
-     timestamp removed, etc). Omit the section entirely when this is the
-     canonical / original version. Gated by a DERIVATIVE marker distinct
-     from KIND so kind-specific blocks (photo/video/audio/imagery-other)
-     remain independent of the derivative/original dimension. -->
+     Each row is one per-aspect difference between the parent media
+     node and this derivative. Omit the section entirely when this is
+     the canonical / original version (empty media_versioning list in
+     the research artifact renders no section).
+
+     Columns:
+       Aspect — one of [duration | encoding | metadata | content |
+                provenance | other]; see schema.yaml
+                media_versioning_entry for the per-aspect semantics
+       Parent — short observation of the parent (derivation_of) node
+                (1-2 lines)
+       This   — short observation of this derivative (1-2 lines)
+       Source — primary source attesting the difference (archived
+                press release, FOIA response, side-by-side inspection,
+                etc.)
+       Note   — optional contributor synthesis of analytical
+                significance (1-2 sentences) -->
 <!-- DERIVATIVE: yes -->
 ## Media Versioning
 
-| Dimension | Parent | This Derivative | Significance |
-|---|---|---|---|
-|  |  |  |  |
+| Aspect | Parent | This | Source | Note |
+|---|---|---|---|---|
+|  |  |  |  |  |
 
 ---
 <!-- /DERIVATIVE -->
