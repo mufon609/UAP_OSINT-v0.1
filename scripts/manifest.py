@@ -45,6 +45,20 @@ FORMAT_BY_EXT = {
     ".txt": "txt",
     ".md": "transcript",
     ".json": "json",
+    # Video extensions — schema format_values supports `video`
+    ".mp4": "video",
+    ".m4v": "video",
+    ".mov": "video",
+    ".webm": "video",
+    ".avi": "video",
+    ".mkv": "video",
+    # Audio and image extensions lack a matching schema format_value
+    # (format_values is [pdf, html, txt, post, video, transcript]).
+    # When audio/image sources are first archived, extend schema
+    # format_values to include "audio" / "image" and add the ext
+    # mappings here. Until then: contributor must pass --format
+    # manually to override the html fallback for audio/image files.
+    # BACKLOG: "Extend schema format_values for audio and image".
 }
 
 

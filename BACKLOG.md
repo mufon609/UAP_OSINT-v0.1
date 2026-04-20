@@ -709,3 +709,59 @@ Key Passages for full text.
 renderer's truncation logic was written without anticipating
 period-bearing acronyms in quote openings.
 
+---
+
+### Extend schema `format_values` for audio and image sources
+
+**Issue.** `meta/schema.yaml` manifest_entry.format_values is
+`[pdf, html, txt, post, video, transcript]`. The F.4c pilot
+surfaced that video sources (.mp4/.mov/.webm) cleanly map to the
+existing `video` value, but audio (.wav/.mp3/.flac) and image
+(.jpg/.png/.tiff) files have no matching format value. When the
+first audio-only or photo-only media node is built, the manifest
+entry for its primary source falls back to `html` (incorrect) or
+requires the contributor to pass `--format` manually to override.
+
+**Why it matters.** Media kinds `audio` and `photo` are first-class
+node-type kinds per `meta/schema.yaml` (media type has kinds
+[photo, video, audio, imagery-other]). The manifest.yaml vocabulary
+hasn't kept pace. As media nodes accumulate — photos from Skinwalker
+Ranch, cockpit audio releases, satellite imagery — the mismatch will
+force contributors into the `--format` escape hatch routinely,
+which is easy to forget and produces silent manifest-entry drift.
+
+**Proposed scope.** When the first audio or photo primary source is
+about to be archived:
+
+1. Extend `meta/schema.yaml` manifest_entry.format_values with
+   `audio` and `image` (covering photo + imagery-other media kinds
+   under a single format value).
+2. Update `FORMAT_BY_EXT` in `scripts/manifest.py` and `infer_format`
+   in `scripts/research-scaffold.py` to map common audio extensions
+   (.mp3 / .wav / .flac / .aac / .ogg / .m4a) → `audio` and common
+   image extensions (.jpg / .jpeg / .png / .gif / .tiff / .webp /
+   .bmp / .heic) → `image`.
+3. Extend `scripts/validate.py` `extract_source_text` with explicit
+   audio/image passthrough (returns None + warn, matching current
+   .mp4 behavior; ensures the quote-verbatim check and review-
+   coverage claim-drift check both treat audio/image as legitimately
+   unextractable per the F.4c tightening).
+
+**Trigger.** First audio-only or image-only primary-source archival.
+Likely candidate: `/media/skinwalker-ranch-photo-{slug}` during F.6
+location pilot, or a standalone audio release (press conference
+recording, cockpit audio) during Cluster A closeout.
+
+**Interim.** F.4c's manifest.py / research-scaffold.py additions
+explicitly route .mp4/.mov/.webm/.m4v/.avi/.mkv → `video` without
+touching audio or image. Contributors archiving audio or image files
+pass `--format` manually; manifest.py will not reject arbitrary
+format strings today (there's no enforcement against format_values
+in validate.py), but the manifest-entry's format field will then be
+a free-text value not listed in the schema vocabulary.
+
+**Surfaced.** F.4c FLIR1 pilot (2026-04-20). The MP4 case was
+addressed in-session because `video` was already in format_values;
+audio and image deferred because they'd require schema vocabulary
+extension.
+

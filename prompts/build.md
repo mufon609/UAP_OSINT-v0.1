@@ -372,6 +372,18 @@ python3 scripts/validate-research.py research/{slug}.yaml
 Must exit 0 before leaving Phase I. Any errors must be corrected by
 going back to the appropriate step above.
 
+**YAML `#` comment-truncation warnings.** If the validator emits a
+warn of the form `line N: value contains \` #\` followed by
+substantive content`, an unquoted scalar value in the artifact
+contains a `space #` sequence — YAML silently treats everything after
+`#` as a comment and truncates the scalar. Common triggers: prose
+referring to "check #11", "Issue #3", "channel #23", numeric ordinals
+like "serial #42". Fix: quote the entire value (single or double
+quotes), OR rewrite without the `#`, OR use a YAML literal block (`|`)
+if the content already spans multiple lines. F.4c surfaced this on
+a research_gap methodology field; the pre-parse check was added to
+prevent silent content loss.
+
 **Prose-drift check #16 warnings — review before leaving Phase I.**
 On person and event artifacts, the validator runs a token-drift check
 across contributor-authored prose fields (top-level: `description`,

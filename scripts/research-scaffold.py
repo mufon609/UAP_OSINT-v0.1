@@ -149,10 +149,29 @@ def build_primary_sources_list(source_paths, manifest):
 
 
 def infer_format(path):
+    """Map a source file path's extension to a manifest.yaml format value.
+    Covers the schema's format_values vocabulary (pdf / html / txt /
+    transcript / video) plus json passthrough. Unknown extensions fall
+    back to html — intentional for web scraping where the source's
+    extension is often absent or generic. Contributors archiving audio
+    or image files must pass --format manually to override (schema
+    format_values doesn't include audio/image yet; tracked in BACKLOG)."""
     ext = Path(path).suffix.lower()
     return {
-        ".pdf": "pdf", ".html": "html", ".htm": "html",
-        ".txt": "txt", ".md": "transcript", ".json": "json",
+        ".pdf": "pdf",
+        ".html": "html",
+        ".htm": "html",
+        ".txt": "txt",
+        ".md": "transcript",
+        ".json": "json",
+        # Video extensions — schema format_values supports `video`.
+        # Mirrors manifest.py FORMAT_BY_EXT.
+        ".mp4": "video",
+        ".m4v": "video",
+        ".mov": "video",
+        ".webm": "video",
+        ".avi": "video",
+        ".mkv": "video",
     }.get(ext, "html")
 
 
