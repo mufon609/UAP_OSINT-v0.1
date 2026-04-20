@@ -217,6 +217,56 @@ participants:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 162, 2453
+- id: p20
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  participant_path: /people/paul-gosar
+  capacity: committee-member
+  role: Representative (Arizona); Subcommittee member — Present for this hearing; did not speak on record
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: lines 80, 158-160
+  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
+- id: p21
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  participant_path: /people/pete-sessions
+  capacity: committee-member
+  role: Representative (Texas); Subcommittee member — Present for this hearing; did not speak on record
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: lines 83, 158-160
+  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
+- id: p22
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  participant_path: /people/jake-laturner
+  capacity: committee-member
+  role: Representative (Kansas); Subcommittee member — Present for this hearing; did not speak on record
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: lines 86, 158-160
+  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
+- id: p23
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  participant_path: /people/kelly-armstrong
+  capacity: committee-member
+  role: Representative (North Dakota); Subcommittee member — Present for this hearing; did not speak on record
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: lines 88, 158-160
+  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
+- id: p24
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  participant_path: /people/scott-perry
+  capacity: committee-member
+  role: Representative (Pennsylvania); Subcommittee member — Present for this hearing; did not speak on record
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: lines 89, 158-160
+  note: Listed in the "Present" roster; does not appear as a speaker in the stenographic record.
 witnesses_testimony:
 - id: wt1
   added_date: '2026-04-20'
@@ -272,10 +322,10 @@ timeline:
   added_date: '2026-04-20'
   added_by_iteration: i0
   date: '2023-07-26'
-  event: Documents entered into the record by Representative Burchett — statement by George Knapp, a report by Jeremy Corbell ("The UAP Puzzle"), a Defense Intelligence Reference Document on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering
+  event: 'Documents entered into the record — by Representative Burchett in opening remarks, a statement by George Knapp, a report by Jeremy Corbell ("The UAP Puzzle"), and a Defense Intelligence Reference Document on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering; by Representative Luna during additional questioning, a NewsNation article "We are not alone — The UFO whistleblower speaks"'
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 262-273
+    location: lines 125-136 (Index of Documents), 262-273 (Burchett submissions), 2572-2573 (Luna submission)
 - id: t4
   added_date: '2026-04-20'
   added_by_iteration: i0
@@ -565,12 +615,15 @@ research_gaps:
   added_by_iteration: i0
   statement: Identify the specific Members who attended the hearing but did not speak — the Subcommittee member list shows 12 Present on line 158-160 but only 16 total Members spoke across both Members-present and Members-waived-on categories
   methodology: Cross-reference line 158-160 (subcommittee Present) and line 162 (waived-on Also present) against the Members who actually questioned witnesses. Present-but-silent Members are attested by the "Present" roster but not by any Q&A speaker tag.
-  resolved: false
+  resolved: true
+  resolved_date: '2026-04-20'
+  resolving_source: government/congress-gov-house-hearing-transcript-20230726.pdf
+  resolution_summary: 'Identified the 5 attending-but-silent subcommittee Members by cross-referencing Present (12 Members) against speakers (16 total): Paul Gosar, Pete Sessions, Jake LaTurner, Kelly Armstrong, Scott Perry. All 5 added as participants p20-p24 with capacity committee-member.'
 rumors: []
 iterations:
 - id: i0
   date: '2026-04-20'
   trigger: initial-build
-  summary: Cluster B hearing-event pilot. Populated event_intrinsic from oversight.house.gov + docs.house.gov + congressional stenographic transcript; 19 participants (3 witnesses + 16 Members who spoke); 3 witnesses_testimony entries cross-referencing Fravor/Graves/Grusch written-testimony and oral-transcript nodes; 9 timeline entries from scheduling through adjournment; 8 event-level quotes (convening, oath administration, bipartisan framing, adjournment); 19 entities_referenced; 4 research_gaps.
+  summary: Cluster B hearing-event pilot. Populated event_intrinsic from oversight.house.gov + docs.house.gov + congressional stenographic transcript; 24 participants (3 witnesses + 16 Members who spoke + 5 attending-but-silent subcommittee Members resolved from rg4); 3 witnesses_testimony entries cross-referencing Fravor/Graves/Grusch written-testimony and oral-transcript nodes; 7 timeline entries from convene through adjournment (t3 captures all 4 documents entered into the record — 3 by Burchett in opening remarks, 1 by Luna during additional questioning); 8 event-level quotes (convening, oath administration, bipartisan framing, adjournment); 19 entities_referenced; 3 open research_gaps (rg4 resolved in-session by completing the Members-who-attended roster). Post-build tightening audit added Luna's NewsNation article submission to t3 and the 5 silent Members.
   entries_added: []
   entries_modified: []

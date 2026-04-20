@@ -74,6 +74,11 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 | [`/people/nancy-mace`] | Representative (South Carolina); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf | [`/people/nancy-mace`] |
 | [`/people/nick-langworthy`] | Representative (New York) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf | [`/people/nick-langworthy`] |
 | [`/people/andrew-ogles`] | Representative (Tennessee) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf | [`/people/andrew-ogles`] |
+| [`/people/paul-gosar`] | Representative (Arizona); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | [`/people/paul-gosar`] |
+| [`/people/pete-sessions`] | Representative (Texas); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | [`/people/pete-sessions`] |
+| [`/people/jake-laturner`] | Representative (Kansas); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | [`/people/jake-laturner`] |
+| [`/people/kelly-armstrong`] | Representative (North Dakota); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | [`/people/kelly-armstrong`] |
+| [`/people/scott-perry`] | Representative (Pennsylvania); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | [`/people/scott-perry`] |
 
 ---
 
@@ -83,7 +88,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|---|---|---|
 | 2023-07-26 | Subcommittee met at 10:06 a.m., Hon. Glenn Grothman presiding |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-07-26 | Members waived on to the Subcommittee for the purpose of participating — Burchett, Luna, Gaetz, Burlison, Ocasio-Cortez, Ogles; Langworthy waived on later |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
-| 2023-07-26 | Documents entered into the record by Representative Burchett — statement by George Knapp, a report by Jeremy Corbell ("The UAP Puzzle"), a Defense Intelligence Reference Document on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| 2023-07-26 | Documents entered into the record — by Representative Burchett in opening remarks, a statement by George Knapp, a report by Jeremy Corbell ("The UAP Puzzle"), and a Defense Intelligence Reference Document on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering; by Representative Luna during additional questioning, a NewsNation article "We are not alone — The UFO whistleblower speaks" |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-07-26 | Witnesses sworn — Fravor, Graves, Grusch |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-07-26 | Oral statements by Graves, Grusch, Fravor (in the order given) |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-07-26 | Q&A with 16 Members who spoke; additional second questioning for Burchett, Luna, Raskin |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
@@ -192,16 +197,21 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 - [`/people/eric-burlison`]
 - [`/people/george-knapp`]
 - [`/people/glenn-grothman`]
+- [`/people/jake-laturner`]
 - [`/people/james-comer`]
 - [`/people/jamie-raskin`]
 - [`/people/jared-moskowitz`]
 - [`/people/jeremy-corbell`]
+- [`/people/kelly-armstrong`]
 - [`/people/matt-gaetz`]
 - [`/people/maxwell-frost`]
 - [`/people/nancy-mace`]
 - [`/people/nick-langworthy`]
+- [`/people/paul-gosar`]
+- [`/people/pete-sessions`]
 - [`/people/robert-garcia`]
 - [`/people/ryan-graves`]
+- [`/people/scott-perry`]
 - [`/people/tim-burchett`]
 - [`/people/virginia-foxx`]
 
@@ -229,4 +239,3 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 - [ ] Identify the specific roll-call votes or formal motions that authorized the member waivers ("waived on to the Subcommittee") for Burchett, Luna, Gaetz, Burlison, Ocasio-Cortez, Ogles, and Langworthy — Cross-reference Subcommittee rules in effect for the 118th Congress with the waiver language at transcript lines 166-171 and 2050-2052. If a committee-level roll-call vote preceded the hearing, the roll call would be filed with the full Committee on Oversight and Accountability.
 - [ ] Archive the three documents Representative Burchett entered into the record — George Knapp's statement, Jeremy Corbell's report "The UAP Puzzle", and the DIRD on vacuum engineering — as primary-source documents in their own right — The Knapp statement and Corbell report were submitted physically; locate their text versions. The DIRD on vacuum engineering corresponds to an existing /documents/dird-puthoff-vacuum-metric-engineering-2010 slug and should cross-reference there.
 - [ ] Verify whether all three witnesses' sworn testimony at this hearing independently corroborates any atomic claim that would warrant a finding node — After /transcripts/2023-07-26-house-graves and /transcripts/2023-07-26-house-grusch are built, compare their content against /transcripts/2023-07-26-house-fravor for claims attested by 2 or more witnesses (for example government handling of UAP reporting, stigma against pilots reporting). A 3-node finding threshold is met if any cross-witness pattern emerges.
-- [ ] Identify the specific Members who attended the hearing but did not speak — the Subcommittee member list shows 12 Present on line 158-160 but only 16 total Members spoke across both Members-present and Members-waived-on categories — Cross-reference line 158-160 (subcommittee Present) and line 162 (waived-on Also present) against the Members who actually questioned witnesses. Present-but-silent Members are attested by the "Present" roster but not by any Q&A speaker tag.
