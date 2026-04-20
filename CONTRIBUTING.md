@@ -78,7 +78,7 @@ Every claim is either **confirmed from a linked primary source** or
 
 **Document kind** + `doc_form` (technical-report, testimony, memo, etc) are required.
 
-**Transcript kind** and **event kind**: `hearing` or `interview`/`encounter`.
+**Transcript kind**: `hearing` or `other`. **Event kind**: `hearing` or `encounter`.
 
 When in doubt, consult `meta/schema.yaml` for the authoritative list.
 
