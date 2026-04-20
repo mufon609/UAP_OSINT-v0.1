@@ -720,7 +720,7 @@ remain under the scoped exemption. Pre-F.2c roadmap anchored at
 commit 305407d; policy propagation followed in the prompts/build.md
 Phase I Step 12 refresh (commit f9bad12).
 
-### F.3 — transcript  🟡 IN PROGRESS (F.3a done; F.3b/c pending)
+### F.3 — transcript  🟡 IN PROGRESS (F.3a + F.3b done; F.3c pending)
 
 Two kinds after the post-Step-D revision (`hearing`, `other`). Design
 pass completed in the F.2c session post-commit (2026-04-19).
@@ -840,30 +840,54 @@ on F.3b renderer" documents the decision. Until resolved,
 `material_differences[].note` is the only check #16 coverage on
 transcript artifacts.
 
-#### F.3b — Phase II renderer  ⏸ NEXT
+#### F.3b — Phase II renderer  ✅ DONE (2026-04-19)
 
-Extend `build-from-research.py` with transcript support. Per-kind
-dispatch:
+Transcript support added to `build-from-research.py` in commit
+`6cb131a`. Per-kind dispatch:
 
 - Both kinds: Publication Record (auto-populated from `derived_from` +
-  `source_medium` frontmatter per F.3 Decision 1), Summary, Speakers,
-  Key Passages (verbatim block-quote + verification-block pairs from
-  `quotes[]`).
+  `source_medium` frontmatter per F.3 Decision 1), Summary (rendered
+  from `artifact.description` via F.3 Q1-A field→section rename),
+  Speakers (from new `speakers[]` artifact field), Key Passages
+  (verbatim block-quote + verification-block pairs from `quotes[]`,
+  sorted by `statement_date`, H3 per quote for navigability).
 - Hearing only: Material Differences table rendered from
-  `material_differences[]` — Topic / Class columns from entry fields;
-  Written Quote and Oral Quote cells show excerpted text + anchor
-  link to the source node's Key Passages section (not full verbatim,
-  which lives in each artifact's Key Passages); Note from entry.
+  `material_differences[]` — Topic / Class from entry fields; Written
+  Quote and Oral Quote cells show ~150-char excerpt + anchor link to
+  the source node's Key Passages section (full verbatim lives in each
+  artifact's Key Passages, not duplicated). Unresolvable refs emit a
+  placeholder comment cell (validator already fires the resolution
+  error; renderer makes the failure visible in the body).
 
-`review-coverage.py` extension: `SUPPORTED_TYPES` gains `transcript`;
-the four checks (Coverage / Boundary / Stub-linking / OQ dedup)
-generalize — Coverage needs a path for material_differences entries
-(both written_ref excerpt and oral_ref excerpt present in rendered
-body).
+Supporting changes:
+- `scripts/build-from-research.py` SUPPORTED_TYPES gains `transcript`;
+  10 new render helpers (`render_title_transcript`,
+  `render_transcript_publication_record` with kind dispatch,
+  `render_transcript_summary`, `render_transcript_speakers`,
+  `render_transcript_key_passages`, `render_transcript_material_differences`,
+  `render_body_transcript`, `_resolve_cross_artifact_quote`,
+  `_excerpt_for_table`).
+- `scripts/review-coverage.py` SUPPORTED_TYPES matches; Coverage check
+  handles material_differences excerpt pairs.
+- `scripts/validate-research.py` — `speakers[]` required on every
+  transcript artifact; `speaker_entry` shape (name req, source req,
+  role/node_link/note opt); `speakers[].role` added to
+  PROSE_ENTRY_FIELDS_BY_TYPE[transcript] for check #16; transcript
+  top-level `description` added to PROSE_FIELDS_BY_TYPE[transcript]
+  (closes the F.3a scope deferral).
+- `scripts/research-scaffold.py` — transcript artifacts scaffold
+  `speakers: []` on every kind.
+- `meta/templates/transcript.md` — Speakers section added; Publication
+  Record rows per kind; kind-conditional Material Differences.
+- `tests/smoke.sh` — transcript fixtures exercise both kinds plus the
+  speaker + material-differences paths. 31/31 passing.
 
-Synthetic-fixture pilot to prove the renderer before F.3c.
+End-to-end verification: synthetic transcript fixtures scaffold +
+validate + render + pass review-coverage for both `hearing` and
+`other` kinds. Check #16 transcript description scoping verified
+(token-injection test; fabrication errors fire correctly).
 
-#### F.3c — Fravor hearing-transcript pilot  ⏸ AFTER F.3b
+#### F.3c — Fravor hearing-transcript pilot  ⏸ NEXT
 
 `/transcripts/2023-07-26-house-fravor` — companion transcript to the
 already-built Fravor written-testimony document. First real test of

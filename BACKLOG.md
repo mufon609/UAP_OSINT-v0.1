@@ -132,14 +132,6 @@ the split pattern — future check modules will follow the same approach.
 
 ---
 
-### ✅ RESOLVED Validator scope expansion to meta files
-
-Shipped 2026-04-17 (commit 30b7fc3) — `check_governance_files()` in
-`scripts/validate.py` (check #13) walks `meta/` and enforces the
-governance-file frontmatter discipline. Audit trail in git log.
-
----
-
 ### Testing infrastructure
 
 **Issue.** No automated tests exist for any script. The only test
@@ -243,9 +235,9 @@ built through the full Phase I → II pipeline.
 
 ### Extend build-from-research.py to all 8 node types
 
-**Issue.** `scripts/build-from-research.py` supports 3 of 8 node types
-as of 2026-04-19: `document` (D.3), `person` (F.1b), `event` (F.2b).
-Five remain: organization, transcript, media, location, finding.
+**Issue.** `scripts/build-from-research.py` supports 4 of 8 node types
+as of 2026-04-19: `document` (D.3), `person` (F.1b), `event` (F.2b),
+`transcript` (F.3b). Four remain: organization, media, location, finding.
 
 **Why it matters.** Phase II of the layered build process is defined
 as "deterministic regeneration from research artifact." Until all node
@@ -257,9 +249,6 @@ that the layered process exists to close.
 **Per-type scope.** Sections remaining per type + artifact-field
 conventions that will need to ship with each:
 
-- **transcript** — Publication Record, Summary, Speakers, Key Passages,
-  Material Differences (hearing only). Kind `other` covers interview,
-  podcast, broadcast, documentary, press conference, conference talk.
 - **media** — Media Summary, Description, Provenance, Key Passages
   (optional — verbatim speech / visible text), Media Versioning
   (when derivation_of set). Four kinds: photo, video, audio,
@@ -275,9 +264,10 @@ Each extension lands as a separate, pilot-tested increment (one type
 per change), following the F.1a/b/c → F.2a/b/c pattern on the roadmap.
 
 **Surfaced.** D.3 design (2026-04-17 Q4). **Progress:** F.1b (person,
-2026-04-19 commit 491e6f3), F.2b (event, 2026-04-19 commit 5af2416).
-Next per roadmap: F.3 (transcript) — natural pairing with the
-Nimitz-cluster transcript stubs surfaced after F.1c.
+2026-04-19 commit 491e6f3), F.2b (event, 2026-04-19 commit 5af2416),
+F.3b (transcript, 2026-04-19 commit 6cb131a). Next per roadmap: F.4
+(media) — natural pairing with `/media/flir1-video` as the pilot
+candidate (Nimitz-cluster stub).
 
 ---
 
@@ -612,32 +602,6 @@ eventual cleanup so the fallback doesn't become permanent dead code.
 
 ---
 
-### ✅ RESOLVED Transcript top-level description — check #16 prose scoping (closed by F.3b)
-
-Resolved in F.3b implementation (2026-04-19). Outcome 1 from the
-original deferral list won the F.3b design pass: artifact-side
-`description` field stays as the universal top-level required prose
-field; transcript renderer maps it to `## Summary` at render time
-(field-rename, no schema migration). `"transcript": ["description"]`
-added to `PROSE_FIELDS_BY_TYPE` in `scripts/validate-research.py`;
-contributor description prose on transcripts now scanned by check #16
-the same way person and event descriptions are. Smoke fixture verifies
-zero-warnings on a clean transcript artifact's description.
-
----
-
-### ✅ RESOLVED Corroboration column layout (F.1c audit finding)
-
-Shipped 2026-04-19 (F.2a commit 13a2859 template + F.2b commit 5af2416
-renderer). Column layout revised from `Source | Type | What It
-Confirms | Node Link` (which put attesting-document path first and
-corroborator last) to `Observer | Type | What It Confirms | Attested
-In` (corroborator first, provenance last). Applied to both eyewitness
-person nodes and encounter event nodes. Existing Fravor node
-regenerated under new layout, review-coverage clean.
-
----
-
 ### Schema-descriptive keys not yet schema-driven in the validator
 
 **Issue.** Post-source-taxonomy-consolidation (2026-04-18) the schema
@@ -694,14 +658,3 @@ this entry's scope.
 (2026-04-18 hardening pass). `chronological: true` flag enforced via
 check #15 (2026-04-19 F.1a).
 
----
-
-### ✅ RESOLVED Cross-node reference existence (derivation_of / derived_from)
-
-Shipped 2026-04-18 (commit 26969ba hardening pass) — `validate.py`
-gained `NODE_PATH_FRONTMATTER_FIELDS` constant; media.derivation_of
-and transcript.derived_from now flow through the broken-link registry
-same as body `[`/path`]` links. Audit trail in git log.
-
-**Promote to schema-driven if** the field list grows past ~5 entries;
-today two entries, flat-scripts pattern applies.

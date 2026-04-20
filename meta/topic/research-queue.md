@@ -45,19 +45,19 @@ appear in the Priority Build Queue below.
 
 ## Priority Build Queue
 
-33 unbuilt-stub targets referenced from the 3 built nodes (Fravor
-document + Graves document + Fravor person). Grouped by natural
-cluster so contributors can choose which ring to close first.
+32 unbuilt-stub targets referenced from the 4 built nodes (Fravor
+document + Graves document + Fravor person + Nimitz encounter).
+Grouped by natural cluster so contributors can choose which ring to
+close first.
 
-### Cluster A — 2004 Nimitz encounter (anchor: F.2c pilot)
+### Cluster A — 2004 Nimitz encounter (F.2c pilot shipped 2026-04-19)
 
-The natural next build after F.2b ships. Fravor person node already
-registers most of these stubs; the encounter event unlocks corroborator
-people nodes (Dietrich, Underwood) and the FLIR1 media node.
+The encounter event is built; the cluster's remaining work is
+corroborator people nodes (Dietrich, Underwood), the FLIR1 media node,
+and the supporting organization nodes.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/events/2004-nimitz-encounter` | event / encounter | **High** | F.2c pilot target; cluster anchor; referenced by Fravor person + Fravor testimony doc | Fravor written testimony (already archived + extracted) |
 | `/people/alex-dietrich` | person / eyewitness | High | Co-observer (Fravor's wingman); named in Fravor testimony + multiple interview transcripts | Fravor testimony + CBS 60 Minutes 2021-05-16 transcript (archived) |
 | `/media/flir1-video` | media / video | High | Primary documentary corroboration (90-second targeting-pod video); released by USG in 2017 | Need to archive the DoD-released video file; transcript of cockpit audio |
 | `/organizations/uss-nimitz` | organization / gov (military-service) | High | Ship that launched the Fravor flight; referenced across multiple cluster members | Navy HR + public record |
