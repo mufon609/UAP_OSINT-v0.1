@@ -203,9 +203,6 @@ VALID_EVIDENTIARY_TYPES = {"sworn-testimony", "documented", "cited", "secondary"
 VALID_NAMING_QUIRK_RESOLUTIONS = {
     "preserve-as-sic-in-quotes", "use-canonical", "disputed", "unresolved"
 }
-VALID_AUDIT_STATUSES = {
-    "verified", "flagged", "superseded", "contradicted", "needs-reaudit"
-}
 VALID_RUMOR_STATUSES = {
     "not-primary-source-established", "primary-source-identified",
     "primary-source-disputed"
@@ -734,11 +731,6 @@ def _check_lifecycle_fields(rel, entry, section_name, i):
             issues.append(Issue(rel, "error",
                 f"{section_name}[{i}] ({entry.get('id', '?')!r}): "
                 f"missing required lifecycle field {field!r}"))
-    # audit_status enum (optional field)
-    if "audit_status" in entry and entry["audit_status"] not in VALID_AUDIT_STATUSES:
-        issues.append(Issue(rel, "error",
-            f"{section_name}[{i}] ({entry.get('id')!r}): "
-            f"audit_status {entry['audit_status']!r} not in {sorted(VALID_AUDIT_STATUSES)}"))
     return issues
 
 

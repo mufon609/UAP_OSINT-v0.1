@@ -11,15 +11,8 @@
 #                                       — research-artifact structural check
 #   5. python3 scripts/build-state.py --check
 #                                       — CLAUDE.md build-state block in sync
-#   6. python3 scripts/audit-schedule.py --overdue
-#                                       — research-artifact audit cadence
-#                                         (skipped silently if the flag is
-#                                         not supported by the shipped
-#                                         audit-schedule.py — wiring is
-#                                         forward-compatible)
 #
-# Covers: BACKLOG "Testing infrastructure" step 4 (pre-commit hook) +
-# the audit-cadence half of Step E.1 on the roadmap.
+# Covers: BACKLOG "Testing infrastructure" step 4 (pre-commit hook).
 #
 # ─── Installation (contributor-driven; not auto-wired) ──────────────────
 #
@@ -73,30 +66,11 @@ run_step() {
     echo
 }
 
-run_step "1/6  help-check"              bash tests/help-check.sh
-run_step "2/6  smoke"                   bash tests/smoke.sh
-run_step "3/6  validate.py"             python3 scripts/validate.py
-run_step "4/6  validate-research.py"    python3 scripts/validate-research.py
-run_step "5/6  build-state.py --check"  python3 scripts/build-state.py --check
-
-# audit-schedule.py --overdue: wired forward-compatibly. The --overdue
-# flag is expected; if the shipped audit-schedule.py doesn't support it
-# yet, treat as non-blocking so the pre-commit gate doesn't regress
-# before the flag lands (tracked in Step E.1 on the roadmap).
-step "6/6  audit-schedule.py --overdue"
-if python3 scripts/audit-schedule.py --help 2>&1 | grep -q -- "--overdue"; then
-    if python3 scripts/audit-schedule.py --overdue; then
-        step_results+=("  ✓ 6/6  audit-schedule.py --overdue")
-    else
-        step_results+=("  ✗ 6/6  audit-schedule.py --overdue  (stale artifacts)")
-        fail_count=$((fail_count + 1))
-    fi
-else
-    echo "  (skipped — --overdue flag not implemented yet; tracked in"
-    echo "   roadmap Step E.1. Will activate automatically once shipped.)"
-    step_results+=("  — 6/6  audit-schedule.py --overdue  (skipped)")
-fi
-echo
+run_step "1/5  help-check"              bash tests/help-check.sh
+run_step "2/5  smoke"                   bash tests/smoke.sh
+run_step "3/5  validate.py"             python3 scripts/validate.py
+run_step "4/5  validate-research.py"    python3 scripts/validate-research.py
+run_step "5/5  build-state.py --check"  python3 scripts/build-state.py --check
 
 # Summary
 echo "======================================================================"

@@ -66,7 +66,6 @@ scripts/
   transcribe.py             YouTube caption download
   associate.py              auto-generate Associated Nodes sections
   build-state.py            refresh CLAUDE.md build state
-  audit-schedule.py         staleness tracker for research artifacts (Phase D)
 
 sources/
   manifest.yaml             source-archival index (YAML; sha256-checksummed)

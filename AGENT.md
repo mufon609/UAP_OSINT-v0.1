@@ -85,7 +85,6 @@ steady-state query path.
    - the `target_node` (so the user can read narrative context)
    - the `source.path` (so the user can verify against primary source)
 5. **Surface uncertainty explicitly**:
-   - If a claim is marked `audit_status: flagged` — say so.
    - If `superseded_by` is set — use the successor and note supersession.
    - If `contradicted_by` is set — cite both sides per the `❌ Contradiction` convention.
    - If a claim rests on a single sworn-testimony source — use the "sworn testimony, claim not independently verified" framing.

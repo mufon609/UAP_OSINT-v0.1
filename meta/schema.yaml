@@ -713,20 +713,17 @@ types:
     entry_lifecycle_fields:
       required: [id, added_date, added_by_iteration]
       optional:
-        - last_audited_date
-        - last_audited_by
-        - audit_status            # verified | flagged | superseded | contradicted | needs-reaudit
-        - audit_cadence_days      # re-audit expected within this window; default 365
         - superseded_by           # entry id within this artifact, or external ref
         - contradicted_by         # same
         - corroborated_by         # list of entry ids or external refs
-      default_audit_cadence_days: 365
-      # Default cadence is uniform at 365 across all entry types.
-      # Contributors can override per-entry via the `audit_cadence_days`
-      # field above when a specific claim is volatile enough to warrant
-      # a shorter re-audit window (role changes, "current state" facts,
-      # etc.); the override mechanism handles the exception cases
-      # without requiring type-specific default machinery.
+      # Content-lifecycle fields above support the Node Versioning
+      # discipline (originals preserved; corrections added alongside
+      # via Superseded By / Contradicted By pointers). Per-entry audit
+      # tracking (last_audited_date / audit_cadence_days / audit_status)
+      # was removed 2026-04-20 along with scripts/audit-schedule.py —
+      # feature went unused across the corpus and its schema-declared
+      # default wasn't enforced by the script. Rebuild if real overdue-
+      # tracking requirements surface.
 
     # Per-section entry shapes (each inherits lifecycle fields above):
 
@@ -1079,7 +1076,6 @@ types:
       # Enum values
       - "evidentiary_type (claims) in [sworn-testimony, documented, cited, secondary]"
       - "resolution (naming_quirks) in [preserve-as-sic-in-quotes, use-canonical, disputed, unresolved]"
-      - "audit_status in [verified, flagged, superseded, contradicted, needs-reaudit]"
       - "rumor status in [not-primary-source-established, primary-source-identified, primary-source-disputed]"
       - "entity entity_type in [person, organization, document, event, transcript, media, location, finding]"
       - "observation_type (quotes, required on person artifacts) in [direct, relayed]"

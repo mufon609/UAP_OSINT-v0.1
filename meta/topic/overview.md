@@ -109,8 +109,7 @@ Common query patterns for this instance:
   related hearings, documents, and transcripts.
 - **"What are open investigation threads?"** — read
   `meta/topic/research-queue.md` (priority queue) and scan
-  `research/*.yaml` for entries with `audit_status: flagged` or
-  unresolved research gaps.
+  `research/*.yaml` for unresolved research gaps.
 
 When citing from this repo, reference the source (primary-source PDF
 path from manifest) alongside the node narrative. A user asking "is

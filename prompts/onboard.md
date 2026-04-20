@@ -37,13 +37,12 @@ Then run the health check:
 bash tests/pre-commit.sh
 ```
 
-All six gates must be green:
+All five gates must be green:
 - `help-check` — every `scripts/*.py --help` exits clean
 - `smoke` — fixture scaffolds validate cleanly
 - `validate.py` — structural + verbatim-quote checks
 - `validate-research.py` — research-artifact structural + check #16
 - `build-state.py --check` — CLAUDE.md build-state block in sync
-- `audit-schedule.py --overdue` — no overdue audit-cadence entries
 
 If errors exist, report them and stop.
 

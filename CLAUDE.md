@@ -139,7 +139,6 @@ Step 4–6 (extract → scratchpad → copy-paste).
 | `transcribe.py` | Download YouTube captions to `sources/transcripts/` |
 | `associate.py` | Regenerate `## Associated Nodes` sections from body links |
 | `build-state.py` | Refresh this file's build-state block |
-| `audit-schedule.py` | Report research-artifact entries past their audit cadence |
 
 Full walk-through in `CONTRIBUTING.md`.
 

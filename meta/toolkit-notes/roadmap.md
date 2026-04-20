@@ -36,8 +36,9 @@ Scope definition. Settled on:
 `meta/schema.yaml`, `meta/conventions.md`, templates under
 `meta/templates/`, AGENT.md, CLAUDE.md, CONTRIBUTING.md, README.md.
 Flat scripts (no shared `lib/`): `new.py`, `validate.py`, `manifest.py`,
-`archive.py`, `associate.py`, `audit-schedule.py`, `build-state.py`,
-`transcribe.py`.
+`archive.py`, `associate.py`, `build-state.py`, `transcribe.py`.
+(`audit-schedule.py` also shipped here; removed 2026-04-20 — see
+Step E.1 for the removal record.)
 
 ### B — Bug fixes
 - **B1** — manifest SHA256 integrity (checksum at archive-time;
@@ -298,22 +299,29 @@ The original "Step E" block bundled three unrelated concerns with
 different blockers and different shovel-readiness. Split into three
 sub-steps so each can move independently.
 
-### E.1 — Pre-commit / CI hook + audit-schedule wiring  ✅ DONE (2026-04-18)
+### E.1 — Pre-commit / CI hook  ✅ DONE (2026-04-18)
 
 Shipped in the 2026-04-18 hardening pass.
 
 - `tests/pre-commit.sh` — chains `help-check.sh` + `smoke.sh` +
   `validate.py` + `validate-research.py` + `build-state.py --check`
-  + `audit-schedule.py --overdue` into a single gate; non-zero exit
-  on any failure. Install instructions in-file (contributor-driven
-  install; no auto-wire — git-hook installation rewrites local git
-  state and is explicit opt-in).
-- `audit-schedule.py --overdue` turned out to be already operational
-  (discovered during the hardening pass). Only the hook chain was
-  missing; pre-commit.sh closes that gap.
-- Side effect: closed the "Testing infrastructure" BACKLOG item's
-  step 4 (pre-commit chain) and the audit-cadence half of the
-  original Step E bundle.
+  into a single gate; non-zero exit on any failure. Install
+  instructions in-file (contributor-driven install; no auto-wire —
+  git-hook installation rewrites local git state and is explicit
+  opt-in).
+- Closed the "Testing infrastructure" BACKLOG item's step 4
+  (pre-commit chain).
+
+**Audit-schedule removal (2026-04-20).** Initially shipped as gate
+6/6 (`audit-schedule.py --overdue`) to track per-entry re-audit
+cadence via `audit_cadence_days` + `last_audited_date` + `audit_status`
+lifecycle fields. Removed: zero entries across the corpus used the
+feature, the schema-declared default wasn't enforced by the script,
+and real re-audit in the repo is already happening through iteration
+log entries with `trigger: audit-correction`. Script deleted; schema
+lifecycle fields trimmed to content-versioning only (superseded_by /
+contradicted_by / corroborated_by); pre-commit chain is now 5 gates.
+Rebuild if real overdue-tracking requirements surface.
 
 ### E.2 — Iteration tooling (i0 → i1 mechanics)  ⏸ MID-TERM
 
