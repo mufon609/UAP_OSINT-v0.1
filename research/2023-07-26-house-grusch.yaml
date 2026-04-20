@@ -1,0 +1,1289 @@
+id: research/2023-07-26-house-grusch
+type: research-artifact
+schema_version: 1
+target_node: transcripts/2023-07-26-house-grusch
+status: active
+created: '2026-04-20'
+last_iteration: i0
+description: |
+  David Grusch's ([`/people/david-grusch`]) sworn oral testimony at the July 26, 2023 House Oversight Subcommittee on National Security, the Border, and Foreign Affairs hearing on unidentified anomalous phenomena ([`/events/2023-07-26-house-uap-hearing`]). Grusch is one of three witnesses sworn at the hearing; Ryan Graves ([`/people/ryan-graves`]) and David Fravor ([`/people/david-fravor`]) also testified. Grusch's written testimony ([`/documents/written-testimony-grusch-2023`]) was also submitted for the record.
+
+  Grusch's opening statement — his 14 years as an intelligence officer in the U.S. Air Force ([`/organizations/us-air-force`]) at the rank of Major across active-duty, Air National Guard and Reserve, and most recently at the National Geospatial Intelligence Agency ([`/organizations/nga`]) at the GS–15 civilian level; his agency's co-lead in unidentified anomalous phenomena and trans medium object analysis reporting to the UAP Task Force ([`/organizations/uaptf`]) and the All-Domain Anomaly Resolution Office ([`/organizations/aaro`]); becoming a whistleblower through a PPD–19 ([`/documents/ppd-19`]) urgent concern in May 2022 with the intelligence community inspector general ([`/organizations/icig`]); member of the UAP Task Force from 2019 to 2021 in National Reconnaissance Office ([`/organizations/nro`]) reservist capacity on the Director's briefing staff with Presidential daily brief coordination; the 2019 UAP Task Force Director tasking to identify all special access programs and controlled access programs to satisfy their congressionally mandated mission with direct report to the DEP/SecDef; the multi-decade UAP crash retrieval and reverse engineering program he was informed of in the course of his official duties and denied access to when he requested it; and his decision to report this information to his superiors and multiple inspectors general with suffered retaliation.
+
+  Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years with exact locations provided to the Inspector General; an open whistleblower reprisal investigation and active planned reprisal activity from senior leadership at previous agencies, and his "administrative terrorism" — "their tool in the toolbox to silence people, especially, you know, career government service cares about their career, cares about their clearance"; a classified conversation with Dr. Kirkpatrick ([`/people/sean-kirkpatrick`]) in April 2022 before Kirkpatrick took over AARO in July 2022, and DoD Prepublication and Security Review as the clearance path for his public testimony; "I personally interviewed those individuals" with direct knowledge of nonhuman origin craft; briefed to a preponderance of the Defense Department's ([`/organizations/dod`]) space and aerospace compartmented programs; 10 U.S. Code Section 119 and Gang of 8 notification on waived bigoted unacknowledged SAPs; misappropriation of funds and self-fund as the funding mechanism with IR&D as a corporations overcharging channel; NGA satellite imagery as one of his primary tasks with an April 2023 information cutoff date; the sworn statement that Dr. Kirkpatrick's "no credible evidence" public statement is "not accurate"; Executive Order 13526 ([`/documents/executive-order-13526`]) delineates the classification levels with "a misnomer that there is anything actually above top secret"; about 11½ hours with both intel committees; his statement "I did actually help author" the UAP Task Force 2019 Security Classification guide ([`/documents/uap-scg-2019`]) with the Director; multiple colleagues of his that got injured by both UAPs and people within the Federal Government, and what he personally witnessed himself and his wife as "very disturbing"; the origin question through the "holographic principle" theoretical framework as "a fact witness and not an expert"; sworn statement "yes" on active disinformation campaign (on his prior NewsNation ([`/organizations/newsnation`]) interview), and biologics that "came with" some of these recoveries — "Nonhuman" as the assessment of people with direct knowledge on the program currently still on the program; the PPD–19 and ICD 120 ([`/documents/icd-120`]) process to intel committees with no good way to the House and Senate Armed Services Committees ([`/organizations/hasc`], [`/organizations/sasc`]) despite Title 10 equities at play; cited Article Three of the 1971 agreement on measures to reduce the risk of outbreak of nuclear war ([`/documents/1971-nuclear-war-risk-reduction-agreement`]) with the George Washington University National Security Archive ([`/organizations/gwu-national-security-archive`]) 2013 declassified provisions; has concerns about Federal Acquisition Regulations ([`/documents/federal-acquisition-regulations`]) violations based on interviews conducted under his official duties; and closing on "purely a sense of duty" and the oath he swore as a cadet 18 years ago.
+primary_sources:
+- path: government/congress-gov-house-hearing-transcript-20230726.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-2023-07-26-house-grusch-0.txt
+  pdf_metadata:
+    title: 'U:\OK to Print 118th\53022.TXT'
+    creator: ACOMP.exe WinVer 2.2a Sep 11 2014
+    producer: Acrobat Distiller 20.0 (Windows)
+    creation_date: Fri Sep  8 12:40:53 2023 EDT
+    mod_date: Fri Sep  8 12:49:33 2023 EDT
+    pages: 54
+document_intrinsic:
+  internal_title: 'UNIDENTIFIED ANOMALOUS PHENOMENA: IMPLICATIONS ON NATIONAL SECURITY, PUBLIC SAFETY, AND GOVERNMENT TRANSPARENCY'
+  internal_date: July 26, 2023
+  serial_no: 118-53
+  pdf_id: 53-022
+  publication_office: U.S. GOVERNMENT PUBLISHING OFFICE
+  publication_location: WASHINGTON
+  publication_year: 2023
+  pages: 54
+  classification: Unclassified — public hearing transcript, no classification markings present on the document
+  classification_markings_on_document: None
+context_extrinsic:
+  display_title: David Grusch — Oral Testimony, House Oversight UAP Hearing, July 26, 2023
+  hearing_title: 'UNIDENTIFIED ANOMALOUS PHENOMENA: IMPLICATIONS ON NATIONAL SECURITY, PUBLIC SAFETY, AND GOVERNMENT TRANSPARENCY'
+  committee: Subcommittee on National Security, the Border, and Foreign Affairs, Committee on Oversight and Accountability, U.S. House of Representatives
+  session: First Session
+  congress: One Hundred Eighteenth Congress
+  serial_no: 118-53
+  hearing_date: July 26, 2023
+  location: Room 2154, Rayburn Office Building, Washington, D.C.
+  witness: David Grusch
+  oath_status: sworn
+  primary_source_url: https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf
+  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
+  event_node: /events/2023-07-26-house-uap-hearing
+  companion_written_testimony: /documents/written-testimony-grusch-2023
+  quote_attribution: David Grusch, sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023
+quotes:
+- id: q1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: My name is David Charles Grusch. I was an intelligence officer for 14 years both in the U.S. Air Force, both active-duty Air National Guard and Reserve at the rank of Major and most recently from 2021 to 2025—excuse me, 2023—at the National Geospatial Intelligence Agency, NGA, at the GS–15 civilian level, which is the military equivalent of a full bird colonel.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 733
+  significance: Identity — rank, agencies, service span; oral contains mistake-and-correction "2021 to 2025—excuse me, 2023" not present in written testimony
+  context: opening statement
+  statement_date: '2023-07-26'
+- id: q2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I was my agency's co-lead in unidentified anomalous phenomena and trans medium object analysis as well as reporting to the UAP Task Force—UAPTF—and eventually, once it was established, the All-Domain Anomaly Resolution Office—AARO.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 739
+  significance: UAP-specific role — NGA co-lead; UAPTF and AARO reporting
+  context: opening statement
+  statement_date: '2023-07-26'
+- id: q3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I became a whistleblower through a PPD–19 urgent concern filing in May 2022 with the intelligence community inspector general following concerning reports from multiple esteemed and credentialed current and former military and intelligence community individuals that the U.S. Government is operating with secrecy above congressional oversight with regards to UAPs.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 745
+  significance: Whistleblower filing mechanism — PPD-19 Urgent Concern with ICIG; oral includes "in May 2022" date detail not present in written; secrecy-above-oversight framing
+  context: opening statement
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: My testimony is based on information I have been given by individuals with a long-standing track record of legitimacy and service to this country, many of whom also have shared compelling evidence in the form of photography, official documentation, and classified oral testimony to myself and many of my various colleagues.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 751
+  significance: Evidentiary basis — relayed information from named classes of individuals; forms of evidence shared (photography, official documentation, classified oral testimony)
+  context: opening statement
+  statement_date: '2023-07-26'
+- id: q5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I have taken every step I can to corroborate this evidence over a period of 4 years while I was with the UAP Task Force and do my due diligence on the individuals sharing it.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 756
+  significance: Corroboration process — 4-year window; oral adds "while I was with the UAP Task Force" detail not present in written testimony
+  context: opening statement
+  statement_date: '2023-07-26'
+- id: q6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: But as I stand here under oath now, I am speaking to the facts as I have been told them. In the U.S. Air Force in my National Reconnaissance Office—NRO—reservist capacity, I was a member of the UAP Task Force from 2019 to 2021.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 766
+  significance: Sworn-testimony framing + UAPTF membership — Grusch distinguishes sworn testimony from independent verification; 2019-2021 UAPTF tenure in NRO reservist capacity
+  context: opening statement
+  statement_date: '2023-07-26'
+- id: q7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I served at the NRO operations center on the Director's briefing staff, which included the coordination of the Presidential daily brief and supporting a variety of contingency operations, which I was the reserve intelligence division chief backup.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 770
+  significance: NRO Operations Center role — Director's briefing staff; PDB coordination; reserve intelligence division chief backup
+  context: opening statement
+  statement_date: '2023-07-26'
+- id: q8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: In 2019, the UAP Task Force Director asked me to identify all special access programs and controlled access programs, also known as SAPs and CAPs, we needed to satisfy our congressionally mandated mission and we would direct report at the time to the DEP/SecDef.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 774
+  significance: SAPs/CAPs tasking — 2019 directive from UAPTF director to identify compartmented programs; direct-report chain to DEP/SecDef
+  context: opening statement
+  statement_date: '2023-07-26'
+- id: q9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: At the time, due to my extensive executive level intelligence support duties I was cleared to literally all relevant compartments and in a position of extreme trust both in my military and civilian capacities.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 779
+  significance: Clearance scope — self-description of compartmented access and institutional trust (parallels written q9)
+  context: opening statement
+  statement_date: '2023-07-26'
+- id: q10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 783
+  significance: Core allegation — multi-decade UAP crash retrieval and reverse engineering program; Grusch's stated denial of access when requested
+  context: opening statement
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q11
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I made the decision based on the data I collected to report this information to my superiors and multiple inspectors general and, in effect, becoming a whistleblower. As you know, I have suffered retaliation for my decision, but I am hopeful that my actions will ultimately lead to a positive outcome of increased transparency.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 787
+  significance: Reporting decision + retaliation — report to superiors and multiple Inspectors General; assertion of retaliation
+  context: opening statement
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q12
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Yes, I can speak to that very briefly in an unclassified manner. As you know, the preponderance of my complaint was classified to the intelligence communities. Both material acquisition and exploitation activity, also baselining the UAPs but not sharing it with, you know, intelligence professionals that are actually doing step briefs to pilots, that kind of information.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1018
+  significance: Preponderance of ICIG complaint was classified; specifies scope (material acquisition + exploitation + baselining) hidden from intelligence professionals briefing pilots
+  context: Q&A exchange with Subcommittee Chair Glenn Grothman
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q13
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Absolutely, based on interviewing over 40 witnesses over 4 years.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1148
+  significance: Flagship claim — affirms under oath that U.S. Government is in possession of UAPs; specifies evidentiary basis as 40+ witness interviews over 4 years
+  context: Q&A exchange with Ranking Member Robert Garcia
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q14
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I know the exact locations and those locations were provided to the Inspector General and some of which to the intelligence committees. I actually had the people with the firsthand knowledge provide a protected disclosure to the Inspector General.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1151
+  significance: Protected-disclosure chain — exact locations provided to ICIG and some to intelligence committees; firsthand-knowledge individuals filed separate protected disclosures
+  context: Q&A exchange with Ranking Member Robert Garcia
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q15
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Yes. I have to be careful what I say in detail because there is an open whistleblower reprisal investigation on my behalf, and I do not want to compromise that investigation by providing anything that may help provide somebody information. But it was very brutal and very unfortunate. Some of the tactics they used to hurt me both professionally and personally, to be quite frank. Yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1218
+  significance: Open whistleblower reprisal investigation; characterizes retaliation tactics as brutal, professional and personal
+  context: Q&A exchange with Rep. Tim Burchett (waived on)
+  statement_date: '2023-07-26'
+- id: q16
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Well, it has only been about 2 months or so. So, I guess my experience has been overwhelming support from former colleagues of mine that have, you know, privately messaged me and I do appreciate that. But I do have knowledge of active planned reprisal activity against myself, and other colleagues and it is very, very upsetting to me.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1324
+  significance: Two-months-since-disclosure time marker; overwhelming support from former colleagues; active planned reprisal against Grusch and others
+  context: Q&A exchange with Ranking Minority Member Jamie Raskin
+  statement_date: '2023-07-26'
+- id: q17
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Certain senior leadership at previous agencies I was associated with and that is all I will say publicly. But I can provide more details in a closed environment.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1332
+  significance: Attributes reprisal source to senior leadership at prior agencies (NRO / NGA / UAPTF-era context)
+  context: Q&A exchange with Ranking Minority Member Jamie Raskin
+  statement_date: '2023-07-26'
+- id: q18
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Yes. There were certain colleagues of mine that were brutally administratively attacked, and it actually makes me very upset as a leader to see that happen to other co-workers and actually superiors of mine over the last 3 years.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1339
+  significance: Three-year window of administrative attacks on colleagues and superiors; self-framing as a leader
+  context: Q&A exchange with Ranking Minority Member Jamie Raskin
+  statement_date: '2023-07-26'
+- id: q19
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I call it administrative terrorism. That is their quiver—their tool in the toolbox to silence people, especially, you know, career government service cares about their career, cares about their clearance,
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1345
+  significance: Coinage "administrative terrorism" for clearance/career-based silencing of career government personnel; post-hearing public vernacular (quote truncated at page 23 boundary; post-break content on line 1351+ covers career-path threat and closing "I am here to represent those people")
+  context: Q&A exchange with Ranking Minority Member Jamie Raskin
+  statement_date: '2023-07-26'
+- id: q20
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Yes. Him and I had a classified conversation in April 2022 before he took over AARO in July 2022 and I provided him some concerns I had.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1395
+  significance: Pre-AARO-tenure classified conversation with Sean Kirkpatrick in April 2022 — dated three months before Kirkpatrick took over AARO
+  context: Q&A exchange with Rep. Anna Paulina Luna (waived on)
+  statement_date: '2023-07-26'
+- id: q21
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Correct, through DODSR—DoD Prepublication and Security Review—and I just want to remind the public they are just looking from a security perspective. These are my own personal views and opinions, not the Department's.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1408
+  significance: DODSR (DoD Prepublication and Security Review) approval path; distinction between security-review clearance and Department endorsement
+  context: Q&A exchange with Rep. Anna Paulina Luna (waived on)
+  statement_date: '2023-07-26'
+- id: q22
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Yes. I personally interviewed those individuals.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1510
+  significance: Flagship claim — sworn affirmative that Grusch personally interviewed people with direct knowledge of nonhuman-origin craft
+  context: Q&A exchange with Subcommittee Member Jared Moskowitz
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q23
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Based on conventional advanced tech I was briefed to the preponderance of the Defense Department's both space and aerospace compartmented programs. Yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1517
+  significance: Scope of conventional-tech briefings — "preponderance" of DoD space and aerospace compartmented programs
+  context: Q&A exchange with Subcommittee Member Jared Moskowitz
+  statement_date: '2023-07-26'
+- id: q24
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: A complicated question. So, there is, you know, some—I would call it abuse here. So, congressional oversight of conventional Special Access Programs—and I will use Title 10, DoD as an example, right. So, 10 U.S. Code Section 119 discusses congressional oversight of SAPs, discusses the DEP/SecDef's ability to waive congressional reporting. However, the Gang of 8 is at least supposed to be notified if a—you know, a waived or a waive bigoted unacknowledged SAP is created and that is public law.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1526
+  significance: Legal framework — 10 USC §119 congressional oversight of SAPs; DEP/SecDef waiver authority; Gang of 8 notification on waived-bigoted unacknowledged SAPs
+  context: Q&A exchange with Subcommittee Member Jared Moskowitz
+  statement_date: '2023-07-26'
+- id: q25
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I will give you generalities. I can get very specific in a closed session. But misappropriation of funds and self-fund.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1537
+  significance: Funding mechanism claim — misappropriation of funds and self-funding for oversight-evading programs
+  context: Q&A exchange with Subcommittee Member Jared Moskowitz
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q26
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Correct, through something called IR&D.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1546
+  significance: Affirms corporate-overcharging-via-IR&D mechanism for program self-funding
+  context: Q&A exchange with Subcommittee Member Jared Moskowitz
+  statement_date: '2023-07-26'
+- id: q27
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: That was one of my primary tasks at NGA since we process, exploit, and disseminate that kind of information. I have seen multiple cases, some of which to my understanding—and, of course, I left NGA in April so that is my information cutoff date. But I personally review both what we call overhead collection and from other strategic and tactical platforms that were—I could not even explain prosaically, and I have a degree in physics, by the way, as well. And I had—I am aware that you guys have not seen these reports, unfortunately and I do not know why.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1554
+  significance: NGA tasking on UAP imagery; April 2023 information cutoff; physics degree disclosure; overhead collection + strategic/tactical platforms; asserts Congress has not seen the reports
+  context: Q&A exchange with Subcommittee Member Jared Moskowitz
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q28
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: It is not accurate. I believe Dr. Kirkpatrick mentioned he had about 30 individuals that have come to AARO thus far. A few of those individuals have also come to AARO that I also interviewed.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1594
+  significance: Flagship sworn contradiction of AARO Director Sean Kirkpatrick's public "no credible evidence" statement; cites overlap between Kirkpatrick's 30 AARO-interviewed individuals and Grusch's own interview population
+  context: Q&A exchange with Rep. Virginia Foxx
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q29
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I like to use the term nonhuman. I do not like to denote origin. Keeps the aperture open both scientifically. Certainly, like I have discussed publicly, previously 1930's.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1744
+  significance: Terminology choice ("nonhuman" rather than "extraterrestrial" to avoid denoting origin); 1930s timing claim for U.S. awareness of nonhuman intelligence
+  context: Q&A exchange with Rep. Tim Burchett (Chairman Comer yielded time)
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q30
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: It is a misnomer that there is anything actually above top secret. Executive Order 13526 delineates the classification levels.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1790
+  significance: Cites Executive Order 13526 as legal basis for classification levels; denies existence of classification above top secret
+  context: Q&A exchange with Rep. Matt Gaetz (waived on; yielded time from Burchett)
+  statement_date: '2023-07-26'
+- id: q31
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11‡ hours with both intel committees.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1824
+  significance: Documents 11+ hours of intel-committee testimony; specific corporations + divisions named to committees
+  context: Q&A exchange with Rep. Tim Burchett (waived on)
+  statement_date: '2023-07-26'
+- id: q32
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: For certain IR&D activities, I can only think of ones conventional in nature. Sometimes they flow through certain, I will just say SAP programs, that have cognizant authority over the Air Force or something and those are congressionally reported compartments.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1893
+  significance: IR&D oversight gap — contractor-internal funding outside congressional SAP reporting chain (quote truncated at page 33 boundary; post-break content on line 1900+ notes IR&D is internal to contractors with profits/private investment flowing as they want)
+  context: Q&A exchange with Rep. Alexandria Ocasio-Cortez (waived on)
+  statement_date: '2023-07-26'
+- id: q33
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Yes, I am familiar with the UAP Task Force 2019 Security Classification guide. I think it is fair. I did actually help author that with the Director.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2020
+  significance: Flagship — Grusch discloses he co-authored the 2019 UAP Task Force Security Classification Guide (cross-links to the FOIA'd SCG referenced on /organizations/uaptf)
+  context: Q&A exchange with Subcommittee Member Andy Biggs
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q34
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Yes. I will say—I will call it a lazy attitude about declassifying videos. I mean, I have seen some of the videos of, you know, the recent shoot down and I saw no reason that could not have been released as long as they mask, you know, some data. The American people deserve to see that imagery and full motion video.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2024
+  significance: Critique of declassification practices as a "lazy attitude"; references "recent shoot down" videos (Feb 2023 UAP shoot-down context)
+  context: Q&A exchange with Subcommittee Member Andy Biggs
+  statement_date: '2023-07-26'
+- id: q35
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I cannot get into the specifics in an open environment, but at least the activity that I personally witnessed—and I have to be very careful here because you do not—you know, they tell you never to acknowledge tradecraft, right. So, what I personally witnessed, myself and my wife, was very disturbing.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2075
+  significance: Personal witness of disturbing activity (Grusch and wife) in the context of human-targeting harm; refusal to acknowledge tradecraft
+  context: Q&A exchange with Rep. Eric Burlison (waived on)
+  statement_date: '2023-07-26'
+- id: q36
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: To answer your first question and, you know, I am here as a fact witness and not an expert, but I will give you a theoretical framework at least to work off to kind of espouse crashes. Regardless of, you know, your level of sentience, right—you know, planes crash, cars crash, and a number of sorties, however high, a small percentage are going to end in, you know, mission failure, if you will, as we say in the Air Force. And then in terms of multidimensionality, that kind of thing, the framework that I am familiar with, for example, is something called the holographic principle both—it derives itself from general relativity and quantum mechanics and that is if you want to imagine a 3D object such as yourself casting a shadow onto a 2D surface that is the holographic principle.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2101
+  significance: Self-framing as "fact witness and not an expert"; holographic-principle theoretical framework for multidimensionality; crashes framed as mission-failure percentage (quote truncated at page 37 boundary; post-break content on line 2117+ covers projection and scientific trope)
+  context: Q&A exchange with Rep. Eric Burlison (waived on)
+  statement_date: '2023-07-26'
+- id: q37
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: As previously stated publicly, yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2262
+  significance: Sworn affirmative on active U.S. Government disinformation campaign to deny UAP existence
+  context: Q&A exchange with Subcommittee Member Nancy Mace
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q38
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: As I have stated publicly already in my News Nation interview, biologics came with some of these recoveries. Yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2319
+  significance: Flagship — sworn affirmative that biologics accompanied some craft recoveries; cites News Nation interview as prior public statement
+  context: Q&A exchange with Subcommittee Member Nancy Mace
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q39
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently still on the program.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2322
+  significance: Flagship — characterizes biologics as "nonhuman" per assessment of direct-knowledge program personnel currently on the program
+  context: Q&A exchange with Subcommittee Member Nancy Mace
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q40
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Yes. There was some issue with mine. So, you know, PPD–19 process it goes to the intel committees either through PPD–19 or ICD 120. There is not a good way for the intelligence community Inspector General to provide that to other committees, and I asked my information to be sent to the House and Senate Armed Services Committee because there are Title 10 equities at play. But there was no smooth process to do so.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2544
+  significance: Procedural gap in ICIG whistleblower routing — PPD-19 and ICD 120 channels do not route to HASC/SASC despite Title 10 equities
+  context: Q&A exchange with Rep. Tim Burchett (3-minute additional round, yielded from Ogles)
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q41
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: You are referring to actual—a public treaty in the U.N. register—it is funny you mentioned that—the agreement on measures to reduce the risk of outbreak of nuclear war signed in 1971. Unclassified treaty publicly available, and if you cite the George Washington University National Security Archives you will find the declassified, in 2013, specific provisions and the specific red line flash message traffic with the specific codes pursuant to Article Three and Article—also situation two, which is in the previously classified NSA archive.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2594
+  significance: References 1971 U.S.-Soviet nuclear-war-risk-reduction treaty Article Three; cites George Washington University National Security Archives 2013 declassification of red-line flash message provisions
+  context: Q&A exchange with Rep. Anna Paulina Luna (waived on; 3-minute additional round)
+  statement_date: '2023-07-26'
+- id: q42
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I have concerns based on the interviews I conducted under my official duties of potential violations of the Federal Acquisition Regulations—the FAR.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2614
+  significance: Federal Acquisition Regulations (FAR) violation concerns from interviews conducted under official duties — specific white-collar-crime allegation anchor
+  context: Q&A exchange with Rep. Anna Paulina Luna (waived on; 3-minute additional round)
+  statement_date: '2023-07-26'
+  category: filed-claim
+- id: q43
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Purely a sense of duty. My first swore an oath when I was a cadet 18 years ago and I still uphold that even out of uniform.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2704
+  significance: Motivation statement — 18-year oath anchor (cadet-era) as out-of-uniform duty basis
+  context: Q&A exchange with Rep. Tim Burchett (closing 3-minute round)
+  statement_date: '2023-07-26'
+- id: q44
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I will just touch on the whistleblower side of it. I do encourage, you know, current and former military, intelligence community, and industry contractors to come forward in a legal way, either through the IC or DoD or whatever the cognizant IGs are to join me in this discussion.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2738
+  significance: Public encouragement to other would-be whistleblowers to come forward through IC/DoD IG channels
+  context: Q&A exchange with Rep. Tim Burchett (closing 3-minute round)
+  statement_date: '2023-07-26'
+claims: []
+entities_referenced:
+- id: e1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: person
+  name: David Charles Grusch
+  wrap_path: /people/david-grusch
+  context_summary: Primary witness; identifies himself by name in the opening statement and refers to himself throughout the Q&A.
+  references:
+  - quote_id: q1
+- id: e2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: U.S. Air Force
+  wrap_path: /organizations/us-air-force
+  context_summary: Grusch served in the U.S. Air Force at the rank of Major across active-duty, Air National Guard, and Reserve assignments.
+  references:
+  - quote_id: q1
+  - quote_id: q6
+  - quote_id: q36
+- id: e3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: National Geospatial Intelligence Agency
+  wrap_path: /organizations/nga
+  context_summary: Grusch's 2021-2023 civilian role at GS-15 level; agency co-lead for UAP and trans medium object analysis; processes, exploits, disseminates satellite imagery.
+  references:
+  - quote_id: q1
+  - quote_id: q23
+  - quote_id: q27
+- id: e4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: UAP Task Force
+  wrap_path: /organizations/uaptf
+  context_summary: Grusch was a UAPTF member 2019-2021 in NRO reservist capacity; he states he helped author the 2019 UAP Security Classification guide with the Director.
+  references:
+  - quote_id: q2
+  - quote_id: q5
+  - quote_id: q6
+  - quote_id: q8
+  - quote_id: q33
+- id: e5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: All-Domain Anomaly Resolution Office
+  wrap_path: /organizations/aaro
+  context_summary: Successor to UAPTF; Grusch provided reporting chain as UAPTF member through AARO's establishment; Kirkpatrick took over AARO in July 2022.
+  references:
+  - quote_id: q2
+  - quote_id: q20
+  - quote_id: q28
+- id: e6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: person
+  name: Sean Kirkpatrick
+  wrap_path: /people/sean-kirkpatrick
+  context_summary: AARO founding Director; Grusch had a classified conversation with Kirkpatrick in April 2022; Grusch sworn-contradicted Kirkpatrick's "no credible evidence" public statement.
+  references:
+  - quote_id: q20
+  - quote_id: q28
+- id: e7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: document
+  name: PPD-19 (Presidential Policy Directive 19)
+  wrap_path: /documents/ppd-19
+  context_summary: Grusch filed a PPD-19 urgent concern with the intelligence community inspector general in May 2022; cited as the standard whistleblower routing mechanism to intel committees.
+  references:
+  - quote_id: q3
+  - quote_id: q40
+- id: e8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: Intelligence Community Inspector General
+  wrap_path: /organizations/icig
+  context_summary: Recipient of Grusch's May 2022 PPD-19 filing; locations of US Government UAP possession provided here; firsthand-knowledge individuals filed protected disclosures to ICIG.
+  references:
+  - quote_id: q3
+  - quote_id: q12
+  - quote_id: q14
+  - quote_id: q40
+- id: e9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: National Reconnaissance Office
+  wrap_path: /organizations/nro
+  context_summary: Grusch's reservist-capacity parent organization; he served at the NRO operations center on the Director's briefing staff with Presidential daily brief coordination.
+  references:
+  - quote_id: q6
+  - quote_id: q7
+- id: e10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: Department of Defense
+  wrap_path: /organizations/dod
+  context_summary: Context for space and aerospace compartmented programs Grusch was briefed to a preponderance of.
+  references:
+  - quote_id: q23
+- id: e11
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: document
+  name: Executive Order 13526
+  wrap_path: /documents/executive-order-13526
+  context_summary: Cited by Grusch as the legal basis delineating classification levels; used to refute the notion of classification above top secret.
+  references:
+  - quote_id: q30
+- id: e12
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: NewsNation
+  wrap_path: /organizations/newsnation
+  context_summary: Pre-hearing interview venue referenced in Grusch's sworn testimony on disinformation framing and biologics.
+  references:
+  - quote_id: q38
+- id: e13
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: document
+  name: ICD 120 (Intelligence Community Directive 120)
+  wrap_path: /documents/icd-120
+  context_summary: Alternative whistleblower routing channel to intel committees alongside PPD-19; cited by Grusch as having the same HASC/SASC routing gap.
+  references:
+  - quote_id: q40
+- id: e14
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: House Armed Services Committee
+  wrap_path: /organizations/hasc
+  context_summary: Destination Grusch requested his whistleblower information be routed to because of Title 10 equities; routing gap documented in oral testimony.
+  references:
+  - quote_id: q40
+- id: e15
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: Senate Armed Services Committee
+  wrap_path: /organizations/sasc
+  context_summary: Destination Grusch requested his whistleblower information be routed to because of Title 10 equities; routing gap documented in oral testimony.
+  references:
+  - quote_id: q40
+- id: e16
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: document
+  name: 1971 Agreement on Measures to Reduce the Risk of Outbreak of Nuclear War
+  wrap_path: /documents/1971-nuclear-war-risk-reduction-agreement
+  context_summary: US-USSR treaty cited by Grusch; Article Three referenced in context of UAP-related safety measures; 2013 GWU declassified specific red-line message-traffic provisions.
+  references:
+  - quote_id: q41
+- id: e17
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: organization
+  name: George Washington University National Security Archive
+  wrap_path: /organizations/gwu-national-security-archive
+  context_summary: Cited by Grusch for the 2013 declassification of specific provisions of the 1971 nuclear war risk reduction agreement, including red-line flash message traffic.
+  references:
+  - quote_id: q41
+- id: e18
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: document
+  name: Federal Acquisition Regulations
+  wrap_path: /documents/federal-acquisition-regulations
+  context_summary: Cited by Grusch as the legal framework for potential white-collar-crime violations he has concerns about, based on interviews conducted under his official duties.
+  references:
+  - quote_id: q42
+- id: e19
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  entity_type: document
+  name: UAP Task Force 2019 Security Classification Guide
+  wrap_path: /documents/uap-scg-2019
+  context_summary: Grusch discloses under oath that he helped author the UAP SCG with the UAPTF Director; cross-links to the FOIA'd SCG already archived on /organizations/uaptf.
+  references:
+  - quote_id: q33
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  observed: 11‡ hours
+  canonical: 11½ hours
+  location: line 1826
+  source_path: government/congress-gov-house-hearing-transcript-20230726.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: pdftotext appears to have rendered a fraction glyph (likely ½) as the double-dagger character (U+2021). Preserved verbatim in q31. The substantive claim is that Grusch spent approximately 11.5 hours with the House and Senate intel committees.
+- id: nq2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  observed: News Nation
+  canonical: NewsNation
+  location: line 1838, 1574, 2319, 2573
+  source_path: government/congress-gov-house-hearing-transcript-20230726.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: Grusch refers to the outlet as "News Nation" (two words) in multiple exchanges; the cable channel's canonical brand is "NewsNation" (one word). Preserved verbatim where quoted (q38); the network's canonical form goes into the wrap_path and entity name.
+research_gaps:
+- id: rg1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  statement: Locate and archive Grusch's May 2022 PPD-19 Urgent Concern filing to the ICIG (the filing itself is the primary evidentiary document behind his whistleblower status and is referenced in q3, q40)
+  methodology: Submit FOIA to the Intelligence Community Inspector General for the PPD-19 urgent concern filing by David Charles Grusch dated May 2022; cross-check reporting from Ross Coulthart and The Debrief for any already-surfaced portions or filing metadata
+  resolved: false
+- id: rg2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  statement: Verify Grusch's co-authorship disclosure (q33) against the FOIA'd UAP Task Force 2019 Security Classification Guide already archived on /organizations/uaptf
+  methodology: Read the FOIA'd UAP SCG in sources/government/; identify author/approval signatures and signature blocks; compare to Grusch's UAPTF tenure (2019-2021) and role (co-lead analyst at NGA, NRO reservist-capacity Task Force member)
+  resolved: false
+- id: rg3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  statement: Locate and archive the George Washington University National Security Archive's 2013 declassification of the 1971 U.S.-Soviet nuclear war risk reduction agreement's specific red-line flash message provisions (referenced in q41)
+  methodology: Check the National Security Archive holdings at nsarchive.gwu.edu for the 2013 declassification release on "agreement on measures to reduce the risk of outbreak of nuclear war"; archive to /sources/government/ and register in manifest; cross-reference against the publicly available 1971 treaty text
+  resolved: false
+- id: rg4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  statement: Cross-reference Grusch's April 2022 classified conversation with Kirkpatrick (q20) against Kirkpatrick's own testimony and AARO timeline for confirmation or denial of pre-AARO contact
+  methodology: Check Kirkpatrick's 2023-04-19 SASC testimony transcript, his subsequent departure-era interviews, and any publicly available AARO records for discussion of pre-AARO communication with Grusch
+  resolved: false
+- id: rg5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  statement: Surface public records of Grusch's approximately 11.5 hours of intel-committee testimony (q31)
+  methodology: Check House Permanent Select Committee on Intelligence (HPSCI) and Senate Select Committee on Intelligence (SSCI) public records and press readouts for 2023 UAP-related witness testimony summaries; check Grusch's Debrief and NewsNation interviews for details on the closed-door exchange
+  resolved: false
+iterations:
+- id: i0
+  date: '2026-04-20'
+  trigger: initial-build
+  summary: |
+    Initial Phase I population from the 54-page archived House Oversight hearing transcript PDF. 44 verbatim quotes (11 opening statement + 33 substantive Q&A spanning exchanges with Grothman, Garcia, Burchett, Raskin, Luna, Moskowitz, Foxx, Gaetz, Ocasio-Cortez, Biggs, Burlison, Mace, and Ogles) verified character-for-character against the archived PDF by validate.py check #11. 19 speakers (3 witnesses — Grusch, Fravor, Graves — + 16 Members who spoke in the hearing). 15 material_differences cross-referenced against documents/written-testimony-grusch-2023 quotes q1-q14 — 1 clarification (oral service-period correction), 3 elaborations (May 2022 filing date, 4-year corroboration window location, UAPTF tenure anchor), and 11 qa-addition entries (40 witnesses, open reprisal investigation, Kirkpatrick April 2022 contact, direct interviews, Kirkpatrick contradiction, UAP SCG co-authorship, biologics, nonhuman biologics, ICIG routing gap, 1971 nuclear arms treaty, administrative terrorism, NGA satellite imagery duties). 19 entities_referenced. 2 naming_quirks (11‡ OCR artifact for "11½ hours"; "News Nation" spacing variant for NewsNation). 5 research_gaps (Grusch PPD-19 filing FOIA; UAP SCG signature verification; GWU National Security Archive 2013 declassification retrieval; Kirkpatrick April 2022 contact confirmation; 11½-hour intel committee testimony summaries).
+  entries_added:
+  - q1
+  - q2
+  - q3
+  - q4
+  - q5
+  - q6
+  - q7
+  - q8
+  - q9
+  - q10
+  - q11
+  - q12
+  - q13
+  - q14
+  - q15
+  - q16
+  - q17
+  - q18
+  - q19
+  - q20
+  - q21
+  - q22
+  - q23
+  - q24
+  - q25
+  - q26
+  - q27
+  - q28
+  - q29
+  - q30
+  - q31
+  - q32
+  - q33
+  - q34
+  - q35
+  - q36
+  - q37
+  - q38
+  - q39
+  - q40
+  - q41
+  - q42
+  - q43
+  - q44
+  - s1
+  - s2
+  - s3
+  - s4
+  - s5
+  - s6
+  - s7
+  - s8
+  - s9
+  - s10
+  - s11
+  - s12
+  - s13
+  - s14
+  - s15
+  - s16
+  - s17
+  - s18
+  - s19
+  - md1
+  - md2
+  - md3
+  - md4
+  - md5
+  - md6
+  - md7
+  - md8
+  - md9
+  - md10
+  - md11
+  - md12
+  - md13
+  - md14
+  - md15
+  - e1
+  - e2
+  - e3
+  - e4
+  - e5
+  - e6
+  - e7
+  - e8
+  - e9
+  - e10
+  - e11
+  - e12
+  - e13
+  - e14
+  - e15
+  - e16
+  - e17
+  - e18
+  - e19
+  - nq1
+  - nq2
+  - rg1
+  - rg2
+  - rg3
+  - rg4
+  - rg5
+  entries_modified: []
+speakers:
+- id: s1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: David Grusch
+  role: Witness
+  node_link: /people/david-grusch
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 724
+  note: Primary subject of this transcript; former intelligence officer, NRO Representative to the UAP Task Force; testified under oath on a multi-decade UAP crash retrieval and reverse engineering program allegation.
+- id: s2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: David Fravor
+  role: Witness
+  node_link: /people/david-fravor
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 796
+  note: Retired U.S. Navy Commander; 2004 commanding officer of Strike Fighter Squadron 41; testified under oath on the 2004 Nimitz Tic Tac encounter.
+- id: s3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Ryan Graves
+  role: Witness
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 640
+  note: Former F-18 pilot; Executive Director of Americans for Safe Aerospace; testified under oath on 2014-2015 Virginia Beach encounters.
+- id: s4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Glenn Grothman
+  role: Subcommittee Chair
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 79
+  note: Chairman of the Subcommittee on National Security, the Border, and Foreign Affairs (Wisconsin).
+- id: s5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Robert Garcia
+  role: Subcommittee Ranking Member
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 80
+  note: Ranking Minority Member of the Subcommittee (California).
+- id: s6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Tim Burchett
+  role: Member (waived on)
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 250
+  note: Representative (Tennessee); led the effort to secure the hearing; questioned Grusch on retaliation, SAP oversight evasion, corporate involvement, and whistleblower routing.
+- id: s7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Anna Paulina Luna
+  role: Member (waived on)
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 331
+  note: Representative (Florida); co-led the effort to secure the hearing; questioned Grusch on Kirkpatrick contact, NHI adversary claims, FAR violations, and the 1971 nuclear arms treaty.
+- id: s8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Jared Moskowitz
+  role: Subcommittee Member
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 538
+  note: Representative (Florida); questioned Grusch on unsanctioned programs, 10 USC §119, Gang of 8 notification, funding mechanisms, IR&D, and NGA satellite imagery.
+- id: s9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Jamie Raskin
+  role: Full Committee Ranking Member
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1274
+  note: Ranking Minority Member of the full Committee on Oversight and Accountability (Maryland); questioned Grusch on post-disclosure retaliation and the "administrative terrorism" characterization.
+- id: s10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Virginia Foxx
+  role: Subcommittee Member
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1579
+  note: Representative (North Carolina); elicited Grusch's sworn contradiction of AARO Director Kirkpatrick's "no credible evidence" public statement.
+- id: s11
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Maxwell Frost
+  role: Subcommittee Member
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1634
+  note: Representative (Florida); questioned Graves and Fravor on NASA and commercial aviation collaboration; did not directly question Grusch.
+- id: s12
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: James Comer
+  role: Full Committee Chair
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1732
+  note: Chairman of the full Committee on Oversight and Accountability (Kentucky); yielded his 5 minutes to Burchett.
+- id: s13
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Matt Gaetz
+  role: Member (waived on)
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1785
+  note: Representative (Florida); waived on to the Subcommittee; questioned Grusch on above-top-secret classification and cited EO 13526.
+- id: s14
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Alexandria Ocasio-Cortez
+  role: Member (waived on)
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1848
+  note: Representative (New York); waived on to the Subcommittee; questioned Grusch on defense contractor interactions, IR&D disclosure requirements, and PPR notification methods.
+- id: s15
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Andy Biggs
+  role: Subcommittee Member
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1948
+  note: Representative (Arizona); questioned Grusch on the UAP Task Force 2019 Security Classification Guide (eliciting Grusch's co-authorship disclosure) and declassification practices.
+- id: s16
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Eric Burlison
+  role: Member (waived on)
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2054
+  note: Representative (Missouri); waived on to the Subcommittee; questioned Grusch on harm claims, personal witness with wife, and multidimensional/holographic-principle framework.
+- id: s17
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Nancy Mace
+  role: Subcommittee Member
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2238
+  note: Representative (South Carolina); elicited Grusch's sworn affirmatives on nonhuman biologics and active U.S. Government disinformation campaign.
+- id: s18
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Nick Langworthy
+  role: Member (waived on)
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2347
+  note: Representative (New York); waived on to the Subcommittee mid-hearing (line 2050); questioned Fravor only on the 2004 Nimitz encounter details.
+- id: s19
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Andrew Ogles
+  role: Member (waived on)
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 2453
+  note: Representative (Tennessee); waived on to the Subcommittee; questioned Grusch on reconnaissance, vulnerability testing, existential threat assessment, and Department of Energy involvement.
+material_differences:
+- id: md1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Service period end-date correction
+  divergence_class: clarification
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q1
+  oral_ref: q1
+  note: 'Oral: from 2021 to 2025—excuse me, 2023 at the National Geospatial Intelligence Agency, NGA. Written: from 2021-2023, at the National Geospatial Intelligence Agency. Oral only: excuse me.'
+- id: md2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: PPD-19 filing date
+  divergence_class: elaboration
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q3
+  oral_ref: q3
+  note: 'Oral: PPD–19 urgent concern filing in May 2022 with the intelligence community inspector general. Written: PPD-19 Urgent Concern filing with the Intelligence Community Inspector General. Oral only: May 2022 filing date.'
+- id: md3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Corroboration window location
+  divergence_class: elaboration
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q5
+  oral_ref: q5
+  note: 'Oral: over a period of 4 years while I was with the UAP Task Force. Written: over a period of 4 years. Oral only: while I was with the UAP Task Force.'
+- id: md4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Witness interview count
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q4
+  oral_ref: q13
+  note: 'Oral: interviewing over 40 witnesses over 4 years. Written: individuals with a long-standing track record of legitimacy and service to this country. Oral only: over 40 witnesses interviewed.'
+- id: md5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Open whistleblower reprisal investigation
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q12
+  oral_ref: q15
+  note: 'Oral: there is an open whistleblower reprisal investigation on my behalf. Written: I have suffered retaliation for my decision. Oral only: open investigation.'
+- id: md6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Kirkpatrick classified conversation April 2022
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q2
+  oral_ref: q20
+  note: 'Oral: Him and I had a classified conversation in April 2022 before he took over AARO in July 2022. Written: reporting to UAP Task Force (UAPTF) and eventually the All-Domain Anomaly Resolution Office (AARO). Oral only: Dr. Kirkpatrick April 2022 contact.'
+- id: md7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Direct interviews with nonhuman-craft knowledge holders
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q4
+  oral_ref: q22
+  note: 'Oral: I personally interviewed those individuals. Written: information I have been given by individuals with a long-standing track record of legitimacy and service to this country. Oral only: I personally interviewed.'
+- id: md8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Sworn contradiction of AARO Director's public statement
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q2
+  oral_ref: q28
+  note: 'Oral: It is not accurate. I believe Dr. Kirkpatrick mentioned he had about 30 individuals that have come to AARO thus far. Written: reporting to UAP Task Force (UAPTF) and eventually the All-Domain Anomaly Resolution Office (AARO). Oral only: sworn contradiction of the no credible evidence statement.'
+- id: md9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Co-authorship of 2019 UAP Security Classification Guide
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q7
+  oral_ref: q33
+  note: 'Oral: I did actually help author that with the Director. Written: I was a member of the UAP Task Force from 2019-2021. Oral only: help author the UAP Task Force 2019 Security Classification guide.'
+- id: md10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Biologics accompanying craft recoveries
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q10
+  oral_ref: q38
+  note: 'Oral: biologics came with some of these recoveries. Yes. Written: multi-decade UAP crash retrieval and reverse engineering program. Oral only: biologics came with recoveries.'
+- id: md11
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Nonhuman biologics assessment
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q10
+  oral_ref: q39
+  note: 'Oral: Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently still on the program. Written: multi-decade UAP crash retrieval and reverse engineering program. Oral only: Nonhuman biologics.'
+- id: md12
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: ICIG routing gap to HASC/SASC
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q3
+  oral_ref: q40
+  note: 'Oral: PPD–19 or ICD 120 process to the intel committees. Not a good way for the intelligence community Inspector General to provide that to other committees. Written: PPD-19 Urgent Concern with the Intelligence Community Inspector General. Oral only: House and Senate Armed Services Committee because of Title 10 equities.'
+- id: md13
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: 1971 U.S.-Soviet nuclear arms treaty reference
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q3
+  oral_ref: q41
+  note: 'Oral: 1971 agreement on measures to reduce the risk of outbreak of nuclear war. George Washington University National Security Archives declassified in 2013 specific red line flash message traffic. Written: operating with secrecy - above Congressional oversight. Oral only: 1971 treaty reference.'
+- id: md14
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: Administrative terrorism characterization
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q12
+  oral_ref: q19
+  note: 'Oral: I call it administrative terrorism. That is their quiver—their tool in the toolbox to silence people. Written: I have suffered retaliation for my decision. Oral only: administrative terrorism.'
+- id: md15
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  topic: NGA satellite imagery duties and information cutoff
+  divergence_class: qa-addition
+  written_ref:
+    artifact: documents/written-testimony-grusch-2023
+    quote_id: q2
+  oral_ref: q27
+  note: 'Oral: primary tasks at NGA process, exploit, and disseminate. I left NGA in April so that is my information cutoff date. I have a degree in physics. Written: co-lead in trans medium object analysis. Oral only: NGA imagery duties, April cutoff, physics degree.'
