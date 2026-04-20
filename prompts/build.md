@@ -137,17 +137,23 @@ Fields used by `build-from-research.py` when rendering document nodes
 ### Step 5. Populate `description` (and other free-prose fields)
 
 A 1-3 paragraph prose summary that renders as the node's `##
-Description` section. Every factual claim in the description should
-be traceable to a specific artifact entry (claim, quote, or
-document-intrinsic field). Treat it as a synthesis of the structured
-fields below, not as new evidentiary content.
+Description` section on document / transcript / media / event /
+organization / finding / location nodes. Every factual claim in the
+description should be traceable to a specific artifact entry (claim,
+quote, or document-intrinsic field). Treat it as a synthesis of the
+structured fields below, not as new evidentiary content.
 
-**Person artifacts carry three additional free-prose fields** beyond
-`description`: `background`, `uap_relevance`, and `credibility_notes`.
-These render into the matching H2 sections on person nodes and are
-scanned by check #16 (prose-drift token check — see Step 12). All
-four person-artifact prose fields are held to the same source-vocabulary
-discipline.
+**Person artifacts — `description` is optional and not rendered.**
+The person body renderer (`render_body_person`) emits Background,
+UAP Relevance, and Credibility Notes from dedicated prose fields;
+it never calls `render_description`. Any content in a person
+artifact's `description` is unrendered. Either leave the field empty
+(or absent — validator is type-conditional) or use it as a brief
+index-level summary that never reaches the node body. Evidentiary
+prose for a person node belongs in `background` / `uap_relevance`
+/ `credibility_notes`. Each of those is scanned by check #16
+(prose-drift token check — see Step 12) against the pooled
+primary-source vocabulary.
 
 Future plan (tracked in `BACKLOG.md`): move to agent-generated
 descriptions so the evidentiary-derivation invariant is enforced
@@ -342,6 +348,15 @@ apply only to hand-authored unsupported types:
   with both references.
 - `wrap_path` uses canonical name form even if the source uses a typo
   (the typo goes into `naming_quirks`, not here).
+- **Do not include the artifact's own subject.** `entities_referenced`
+  lists entities OTHER than the node's subject. Person nodes don't
+  self-wrap; including the subject (e.g., David Fravor on
+  `/people/david-fravor`) creates a spurious Stub-linking check
+  failure. The subject's identity is carried by the node body itself
+  (Identity section on person; equivalent surfaces elsewhere). The
+  `review-coverage.py` Stub-linking check auto-filters self-references
+  post-2026-04-20, so a mistaken self-entry will not error out, but
+  the convention is to omit it.
 
 ### Step 9. Populate `naming_quirks` (bounded agent task T4)
 
@@ -508,6 +523,15 @@ Common categories of warnings and how they resolve:
   first occurrence with explicit parenthesis.
 - **Hyphenated compounds** (source "90 second" vs prose "90-second")
   → match source.
+- **Typographic dashes** (em-dash `—` and en-dash `–`) — no action
+  needed. Since 2026-04-20, `extract_significant_tokens` normalizes
+  U+2014 and U+2013 to ASCII hyphen before tokenization, matching
+  the conversion that `validate.py:normalize_for_compare` already
+  does for the verbatim-quote check. Prose written with ASCII hyphen
+  (`F-18`) now tokenizes identically to source rendered with en-dash
+  (`F–18`). Applies to check #16 only; verbatim-quote text still
+  needs to match the source character byte-for-byte (the verbatim
+  check has its own normalization path).
 
 For every warning, ask: *does this unmatched token introduce a fact
 or premise the source doesn't attest?* If yes, the prose field needs
