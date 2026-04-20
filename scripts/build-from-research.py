@@ -6,8 +6,8 @@ Reads /research/{slug}.yaml and rewrites /{type}/{slug}.md. Frontmatter is
 preserved from the existing node; body sections (H1 title onward) are
 replaced entirely by content derived from the artifact.
 
-SCOPE: document (D.3), person (F.1b), event (F.2b), transcript (F.3b).
-Extension to the remaining four node types (organization, media,
+SCOPE: document (D.3), person (F.1b), event (F.2b), transcript (F.3b),
+media (F.4b). Extension to the remaining three node types (organization,
 location, finding) is tracked in BACKLOG.md — each requires per-type
 section renderers and type-specific artifact field conventions, per
 the Step F template on the roadmap.
@@ -58,6 +58,27 @@ Transcript renderer (F.3b):
   - Key Passages uses H3 per quote (significance field) like document
     Key Passages, providing navigability for transcripts that may
     carry many quotes.
+
+Media renderer (F.4b):
+  - Universal sections across all kinds (photo / video / audio /
+    imagery-other): Media Summary, Description, Provenance, Key
+    Passages, Associated Nodes, Open Questions
+  - Conditional Media Versioning section — rendered only when the
+    artifact's `media_versioning` list has entries. Omitted entirely
+    for canonical / original media. Columns per F.4 Decision 2 (Shape D):
+    Aspect / Parent / This / Source / Note.
+  - Media Summary emits rows from the union of `document_intrinsic`
+    + `context_extrinsic` + manifest sha256 lookup per the F.4a
+    document_intrinsic media convention. Rows with empty values skip
+    (matches transcript Publication Record pattern) — Summary adapts
+    to what the source + contributor populated.
+  - Key Passages use the shared `_render_verification_block` helper;
+    `source.location` flows through flexibly (timestamp /
+    timestamp+coordinate / spatial-only) per F.4 Decision 1's single-
+    format-flexible-entry-type shape.
+  - May be empty when the source has no extractable speech or
+    visible text (heavy speech content spins up a separate transcript
+    node pointing to the media via `derived_from`).
 
 DETERMINISM: given the same artifact + node frontmatter, output is
 byte-for-byte identical across runs. Entries are rendered in id-sorted
@@ -110,8 +131,8 @@ TYPE_DIRS = {
 }
 
 # Types this script can regenerate (D.3 scope: document;
-# F.1b adds person; F.2b adds event; F.3b adds transcript)
-SUPPORTED_TYPES = {"document", "person", "event", "transcript"}
+# F.1b adds person; F.2b adds event; F.3b adds transcript; F.4b adds media)
+SUPPORTED_TYPES = {"document", "person", "event", "transcript", "media"}
 
 # Archetype → archetype-specific artifact section name (person only)
 ARCHETYPE_SECTION = {
@@ -1377,6 +1398,223 @@ def render_body_transcript(artifact, kind, fm):
     return title + "\n" + joined
 
 
+_manifest_sha256_cache = None
+
+
+def _manifest_sha256_for(path):
+    """Look up the sha256 for a given source path from sources/manifest.yaml.
+    Loaded once per build, cached. Returns empty string when the path is
+    missing from the manifest or has no sha256 field (e.g., pending /
+    blocked sources)."""
+    global _manifest_sha256_cache
+    if _manifest_sha256_cache is None:
+        manifest_path = REPO_ROOT / "sources" / "manifest.yaml"
+        if not manifest_path.exists():
+            _manifest_sha256_cache = {}
+        else:
+            try:
+                with open(manifest_path) as f:
+                    entries = yaml.safe_load(f) or []
+                _manifest_sha256_cache = {
+                    e.get("path"): e.get("sha256")
+                    for e in entries
+                    if isinstance(e, dict) and e.get("path") and e.get("sha256")
+                }
+            except (yaml.YAMLError, OSError):
+                _manifest_sha256_cache = {}
+    return _manifest_sha256_cache.get(path, "") or ""
+
+
+def render_title_media(artifact):
+    """H1 title for media nodes. Prefers context_extrinsic.display_title,
+    falls back to document_intrinsic.internal_title, then humanized slug."""
+    dm = artifact.get("document_intrinsic") or {}
+    ctx = artifact.get("context_extrinsic") or {}
+    slug = artifact["target_node"].split("/", 1)[1] if "/" in artifact["target_node"] else ""
+    title = (
+        ctx.get("display_title")
+        or dm.get("internal_title")
+        or (slug and " ".join(w.capitalize() for w in slug.split("-")))
+        or ""
+    )
+    return f"# {title}\n"
+
+
+def render_media_summary(artifact, kind):
+    """Media Summary table — kind-agnostic row emission from
+    document_intrinsic + context_extrinsic + primary_sources + manifest
+    sha256 lookup. Fields per the F.4a document_intrinsic media
+    convention (schema.yaml required_keys comment). Rows with empty
+    values are skipped — the Summary adapts to what the source and
+    contributor populated rather than showing "N/A" placeholders.
+    `kind` comes from the node frontmatter (photo / video / audio /
+    imagery-other) and renders as the Kind row."""
+    dm = artifact.get("document_intrinsic") or {}
+    ctx = artifact.get("context_extrinsic") or {}
+    path = _source_path(artifact)
+    sources = artifact.get("primary_sources") or []
+    fmt = None
+    if sources and isinstance(sources[0], dict):
+        fmt = sources[0].get("format")
+
+    lines = ["## Media Summary", "", "| Field | Value |", "|---|---|"]
+
+    def row(label, value):
+        if value in (None, "", [], {}):
+            return
+        if isinstance(value, list):
+            value = "; ".join(str(v) for v in value)
+        lines.append(f"| {label} | {_escape_table_cell(value)} |")
+
+    row("Title", ctx.get("display_title") or dm.get("internal_title"))
+    row("Kind", kind)
+    row("Date Captured", dm.get("capture_date") or dm.get("original_creation_date"))
+    row("Date Released", ctx.get("release_date"))
+    # Duration + Dimensions combine when both present (typical for video);
+    # either alone renders as its own value when only one applies.
+    dur_dim = []
+    if dm.get("duration"):
+        dur_dim.append(str(dm["duration"]))
+    if dm.get("dimensions"):
+        dur_dim.append(str(dm["dimensions"]))
+    if dur_dim:
+        row("Duration / Dimensions", " / ".join(dur_dim))
+    # Format: document_intrinsic.file_format takes precedence (precise),
+    # fall back to primary_sources[0].format (the manifest-registered
+    # container type).
+    row("Format", dm.get("file_format") or (fmt.upper() if fmt else None))
+    row("Codec", dm.get("codec"))
+    row("Color Mode", dm.get("color_mode"))
+    row("File Size", dm.get("file_size"))
+    row("Camera / Device", dm.get("camera_device"))
+    row("EXIF / Container Metadata", dm.get("embedded_metadata"))
+    if path:
+        sha = _manifest_sha256_for(path)
+        if sha:
+            row("SHA256", sha)
+    row("Primary Source URL", ctx.get("primary_source_url"))
+    if path:
+        row("Local Archive", f"[sources/{path}](../sources/{path})")
+
+    # Placeholder row when nothing is populated (Title through Local
+    # Archive all empty) — keeps the table well-formed for downstream
+    # markdown consumers.
+    if len(lines) == 4:
+        lines.append("|  |  |")
+    return "\n".join(lines) + "\n"
+
+
+def render_media_versioning(artifact, fm):
+    """Media Versioning table. Emission rules:
+      - When the node frontmatter has `derivation_of` set, the section
+        MUST emit (per schema.yaml media.conditionally_required) — even
+        if `media_versioning` is empty, render a placeholder row so the
+        node-body validator's required-section check passes. The
+        validate-research.py "empty media_versioning + derivation_of"
+        warn surfaces the missing content as a non-blocking signal.
+      - When `derivation_of` is absent, the section is omitted entirely
+        (empty string returned; caller drops it from the body) — canonical
+        / original media nodes have no derivation to document.
+    Columns per F.4 Decision 2 (Shape D): Aspect / Parent / This /
+    Source / Note.
+    """
+    items = sort_by_id([
+        e for e in (artifact.get("media_versioning") or []) if isinstance(e, dict)
+    ])
+    is_derivative = bool((fm or {}).get("derivation_of"))
+    if not items and not is_derivative:
+        return ""  # Canonical / original media — omit the section entirely
+
+    lines = ["## Media Versioning", "",
+             "<!-- Per-aspect differences between the parent (derivation_of) "
+             "media node and this derivative. Aspect enum: duration / "
+             "encoding / metadata / content / provenance / other. -->",
+             "",
+             "| Aspect | Parent | This | Source | Note |",
+             "|---|---|---|---|---|"]
+    if not items:
+        # Placeholder row when derivation_of is set but the artifact's
+        # media_versioning list is empty. Keeps the required-section
+        # contract satisfied; validate-research.py's warn on the empty
+        # list flags the missing content.
+        lines.append("|  |  |  |  |  |")
+        return "\n".join(lines) + "\n"
+    for e in items:
+        aspect = _escape_table_cell(e.get("aspect"))
+        parent = _escape_table_cell(e.get("parent_form"))
+        this_v = _escape_table_cell(e.get("this_form"))
+        src = e.get("source") or {}
+        src_path = src.get("path") if isinstance(src, dict) else ""
+        src_loc = src.get("location") if isinstance(src, dict) else ""
+        if src_path:
+            src_cell = f"[archived source](../sources/{src_path})"
+            if src_loc:
+                src_cell = f"{src_cell} — {src_loc}"
+        else:
+            src_cell = ""
+        src_cell = _escape_table_cell(src_cell)
+        note = _escape_table_cell(e.get("note"))
+        lines.append(f"| {aspect} | {parent} | {this_v} | {src_cell} | {note} |")
+    return "\n".join(lines) + "\n"
+
+
+def render_media_key_passages(artifact):
+    """Key Passages on media — verbatim speech or visible text. Uses
+    the shared `_render_verification_block` so the flexible source.location
+    (timestamp / timestamp+coordinate / spatial-only) flows through
+    per F.4 Decision 1. H3 per quote using `significance`. May be empty
+    when the source has no extractable speech or visible text."""
+    quotes = sort_by_id([
+        q for q in (artifact.get("quotes") or []) if isinstance(q, dict)
+    ])
+    head = "## Key Passages\n"
+    if not quotes:
+        return head + (
+            "\n<!-- May be empty when the source has no extractable speech "
+            "or visible text. Heavy speech content spins up a separate "
+            "transcript node pointing to this media via `derived_from`. -->\n"
+        )
+
+    blocks = []
+    for q in quotes:
+        h3 = q.get("significance") or "Passage"
+        text = (q.get("text") or "").rstrip("\n")
+        lines = [f"### {h3}", ""]
+        for qline in text.split("\n"):
+            lines.append(f"> {qline}" if qline else ">")
+        lines.append("")
+        lines.append(_render_verification_block(q, artifact))
+        blocks.append("\n".join(lines))
+    return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
+
+
+def render_body_media(artifact, kind, fm):
+    """Media-type body composition. All four kinds (photo / video /
+    audio / imagery-other) share the same section structure; per-kind
+    variation happens within Media Summary (field list adapts to what
+    document_intrinsic contains). Media Versioning is conditional on
+    the artifact having media_versioning entries — omitted entirely
+    for canonical / original media.
+    """
+    title = render_title_media(artifact).rstrip("\n") + "\n"
+    sections = [
+        render_media_summary(artifact, kind),
+        render_description(artifact),
+        render_provenance(artifact),
+    ]
+    mv_section = render_media_versioning(artifact, fm)
+    if mv_section:
+        sections.append(mv_section)
+    sections.extend([
+        render_media_key_passages(artifact),
+        render_associated_nodes(),
+        render_open_questions(artifact),
+    ])
+    sections = [s for s in sections if s]
+    joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
+    return title + "\n" + joined
+
+
 def render_body(artifact, node_type, fm):
     """Dispatch by node_type. `fm` is the existing node frontmatter
     (needed for kind / archetype context the renderer can't derive from
@@ -1389,6 +1627,8 @@ def render_body(artifact, node_type, fm):
         return render_body_event(artifact, fm.get("kind"))
     if node_type == "transcript":
         return render_body_transcript(artifact, fm.get("kind"), fm)
+    if node_type == "media":
+        return render_body_media(artifact, fm.get("kind"), fm)
     sys.exit(f"ERROR: build-from-research.py does not yet support node_type {node_type!r}")
 
 

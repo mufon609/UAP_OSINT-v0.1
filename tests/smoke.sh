@@ -153,7 +153,12 @@ fi
 # the section and (b) the validator's conditional block fires correctly.
 # Exercises both canonical and derivative node scaffolds — the
 # conditional-present rule doesn't gate on derivation_of, only on
-# target_node type.
+# target_node type. The F.4b renderer path is then exercised for each
+# artifact: build-from-research regenerates the node body, post-build
+# validate.py confirms structural integrity, review-coverage runs the
+# four checks (Coverage / Boundary / Stub-linking / OQ dedup). Derivative
+# artifact surfaces the validate-research warn for empty media_versioning
+# + derivation_of set (non-blocking — contributor review signal).
 for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/__smoke-media-audio" "media/__smoke-media-imagery" "media/__smoke-media-deriv"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$m_target" 2>&1)"
     rc=$?
@@ -168,6 +173,23 @@ for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/_
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $m_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+    # Exercise F.4b renderer path
+    artifact_out="$(python3 scripts/build-from-research.py "research/$m_slug.yaml" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("build-from-research $m_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+    artifact_out="$(python3 scripts/review-coverage.py "research/$m_slug.yaml" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("review-coverage $m_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
         fail=$((fail + 1))
     else
         pass=$((pass + 1))
