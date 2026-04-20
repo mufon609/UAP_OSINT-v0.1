@@ -4,13 +4,16 @@ schema_version: 1
 target_node: documents/written-testimony-graves-2023
 status: active
 created: '2026-04-17'
-last_iteration: i1
-description: |
-  Ryan Graves' ([`/people/ryan-graves`]) prepared written statement submitted for the record at the July 26, 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]). Graves identifies himself as a former F-18 pilot with over a decade of service in the U.S. Navy ([`/organizations/us-navy`]), including deployments in Operation Enduring Freedom and Operation Inherent Resolve; founder and executive director of Americans for Safe Aerospace ([`/organizations/americans-for-safe-aerospace`]); and Chair of the UAP Integration & Outreach Committee at the American Institute of Aeronautics and Astronautics ([`/organizations/aiaa`]).
+last_iteration: i2
+description: 'Ryan Graves'' ([`/people/ryan-graves`]) prepared written statement submitted for the record at the July 26, 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]). Graves identifies himself as a former F-18 pilot with over a decade of service in the U.S. Navy ([`/organizations/us-navy`]), including deployments in Operation Enduring Freedom and Operation Inherent Resolve; founder and executive director of Americans for Safe Aerospace ([`/organizations/americans-for-safe-aerospace`]); and Chair of the UAP Integration & Outreach Committee at the American Institute of Aeronautics and Astronautics ([`/organizations/aiaa`]).
+
 
   The statement frames advanced UAP as a simultaneous national security and aviation safety problem, organized around three claims: that UAP in U.S. airspace are grossly underreported; that stigma silences military and commercial witnesses; and that overclassification of UAP data since 2021 keeps critical information hidden. Graves narrates a 2014 experience near Virginia Beach while assigned to VFA-11 ([`/organizations/vfa-11`]), including a pivotal incident in Warning Area W-72 where two F/A-18F Super Hornets took evasive action against a stationary "dark gray cube inside of a clear sphere" at the airspace entry point. He relays an account from Rear Admiral Tim Gallaudet ([`/people/tim-gallaudet`]) — former head of NOAA ([`/organizations/noaa`]) and an ASA advisor — of a classified 2015 SIPRNET email forwarding the GO-FAST UAP video with "Urgent safety of flight" framing that was removed the next day without discussion. The closing sections summarize commercial-pilot reporting gaps, FAA ([`/organizations/faa`]) and UAP Task Force ([`/organizations/uaptf`]) data points, and statements attributed to AARO ([`/organizations/aaro`]) Director Dr. Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) on "metallic orbs" at Mach 2 and on Title 10 / Title 50 authorities.
 
-  The document is a primary source for what Ryan Graves stated in writing for submission to the July 26, 2023 hearing. It is not independent verification of the underlying encounter claims or the relayed Gallaudet and Kirkpatrick material — those rest on Graves's sworn account and, for the third-party material, on Graves's report of what those others said.
+
+  The document is a primary source for what Ryan Graves stated in writing for submission to the July 26, 2023 hearing. It is not independent verification of the underlying encounter claims or the relayed Gallaudet and Kirkpatrick material — those rest on Graves''s sworn account and, for the third-party material, on Graves''s report of what those others said.
+
+  '
 primary_sources:
 - path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   format: pdf
@@ -382,7 +385,11 @@ research_gaps:
   added_by_iteration: i0
   statement: Cross-reference Graves's written testimony against his oral testimony and Q&A at [`/transcripts/2023-07-26-house-graves`] for Material Differences
   methodology: When the hearing transcript node is built, compare biographical details, narrative ordering, and new factual claims that appear only in oral Q&A
-  resolved: false
+  resolved: true
+  resolved_date: '2026-04-20'
+  resolution_summary: Moot — Material Differences feature eliminated from hearing-transcript nodes (see roadmap.md "Post-F.3 — Material Differences elimination" section). Cross-entity written-vs-oral comparative analysis will be reshaped under the F.7 finding-node renderer when it ships.
+  retain_as_done: false
+  resolving_source: meta/toolkit-notes/roadmap.md (Post-F.3 — Material Differences elimination section, 2026-04-20)
 - id: rg2
   added_date: '2026-04-17'
   added_by_iteration: i0
@@ -500,3 +507,10 @@ iterations:
   - claims (emptied)
   - entities_referenced (references stripped)
   - description (Fravor only — entity-link expansion)
+- id: i2
+  date: '2026-04-20'
+  trigger: audit-correction
+  summary: research_gap rg1 marked resolved — Material Differences feature eliminated from transcript nodes (Post-F.3 architectural correction). Gap is structurally moot; resolution records the restructuring. retain_as_done=false so the entry is omitted from rendered Open Questions.
+  entries_added: []
+  entries_modified:
+  - rg1

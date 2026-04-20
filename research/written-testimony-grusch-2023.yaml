@@ -4,15 +4,19 @@ schema_version: 1
 target_node: documents/written-testimony-grusch-2023
 status: active
 created: '2026-04-20'
-last_iteration: i1
-description: |
-  Opening Statement and Closing Statement by David Charles Grusch ([`/people/david-grusch`]), submitted for the [`/events/2023-07-26-house-uap-hearing`] before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs. The Opening Statement identifies Grusch as an intelligence officer for 14 years — in the US Air Force ([`/organizations/us-air-force`]) at the rank of Major and from 2021-2023 at the National Geospatial-Intelligence Agency ([`/organizations/nga`]) at the GS-15 civilian level — and his agency's co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, reporting to the UAP Task Force ([`/organizations/uaptf`]) and the All-Domain Anomaly Resolution Office ([`/organizations/aaro`]).
+last_iteration: i2
+description: 'Opening Statement and Closing Statement by David Charles Grusch ([`/people/david-grusch`]), submitted for the [`/events/2023-07-26-house-uap-hearing`] before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs. The Opening Statement identifies Grusch as an intelligence officer for 14 years — in the US Air Force ([`/organizations/us-air-force`]) at the rank of Major and from 2021-2023 at the National Geospatial-Intelligence Agency ([`/organizations/nga`]) at the GS-15 civilian level — and his agency''s co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, reporting to the UAP Task Force ([`/organizations/uaptf`]) and the All-Domain Anomaly Resolution Office ([`/organizations/aaro`]).
+
 
   Grusch states he became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the Intelligence Community Inspector General ([`/organizations/icig`]), following concerning reports from multiple esteemed and credentialed current and former military and Intelligence Community individuals that the US Government is operating with secrecy — above Congressional oversight — with regards to UAPs. His testimony is based on information given to him by those individuals — many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony — corroborated over a period of 4 years. He states that as he stands under oath, he is speaking to the facts as he has been told them.
 
-  In his National Reconnaissance Office ([`/organizations/nro`]) reservist capacity, Grusch was a member of the UAPTF from 2019-2021 and served in the NRO Operations Center on the director's briefing staff, including coordination of the Presidential Daily Brief. In 2019 the UAPTF director tasked him to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) needed to satisfy the task force's congressionally mandated mission, and he was informed, in the course of his official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which he was denied access. He reports having suffered retaliation for his decision to report this information to his superiors and multiple Inspectors General. The Closing Statement frames his motivation as a conviction to expose what he viewed as a grave congressional oversight issue and a potential abuse of executive branch authorities, and states his hope that revelations unearthed through investigations of the Non-Human Reverse Engineering Programs he has reported will act as an ontological (earth-shattering) shock.
 
-  The document is a primary source for what Grusch stated in writing for submission to the hearing. It is not independent verification of the underlying program allegations — those rest on Grusch's sworn account and his stated reliance on information he has been told by other individuals.
+  In his National Reconnaissance Office ([`/organizations/nro`]) reservist capacity, Grusch was a member of the UAPTF from 2019-2021 and served in the NRO Operations Center on the director''s briefing staff, including coordination of the Presidential Daily Brief. In 2019 the UAPTF director tasked him to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) needed to satisfy the task force''s congressionally mandated mission, and he was informed, in the course of his official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which he was denied access. He reports having suffered retaliation for his decision to report this information to his superiors and multiple Inspectors General. The Closing Statement frames his motivation as a conviction to expose what he viewed as a grave congressional oversight issue and a potential abuse of executive branch authorities, and states his hope that revelations unearthed through investigations of the Non-Human Reverse Engineering Programs he has reported will act as an ontological (earth-shattering) shock.
+
+
+  The document is a primary source for what Grusch stated in writing for submission to the hearing. It is not independent verification of the underlying program allegations — those rest on Grusch''s sworn account and his stated reliance on information he has been told by other individuals.
+
+  '
 primary_sources:
 - path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
   format: pdf
@@ -273,7 +277,11 @@ research_gaps:
   added_by_iteration: i0
   statement: Cross-reference Grusch's written testimony against his oral testimony at /transcripts/2023-07-26-house-grusch to document Material Differences
   methodology: Once the hearing transcript node is built, review oral Q&A for substantive claims, named programs, named individuals, and biographical content not present in this written statement. The written statement is 104 lines across 3 pages; the oral record is the stenographic transcript of the 2023-07-26 House Oversight hearing and should be extracted and compared systematically rather than anchored against expected-content assumptions
-  resolved: false
+  resolved: true
+  resolved_date: '2026-04-20'
+  resolution_summary: Moot — Material Differences feature eliminated from hearing-transcript nodes (see roadmap.md "Post-F.3 — Material Differences elimination" section). Cross-entity written-vs-oral comparative analysis will be reshaped under the F.7 finding-node renderer when it ships.
+  retain_as_done: false
+  resolving_source: meta/toolkit-notes/roadmap.md (Post-F.3 — Material Differences elimination section, 2026-04-20)
 iterations:
 - id: i0
   date: '2026-04-20'
@@ -318,4 +326,11 @@ iterations:
   - q2
   - q7
   - q10
+  - rg5
+- id: i2
+  date: '2026-04-20'
+  trigger: audit-correction
+  summary: research_gap rg5 marked resolved — Material Differences feature eliminated from transcript nodes (Post-F.3 architectural correction). Gap is structurally moot; resolution records the restructuring. retain_as_done=false so the entry is omitted from rendered Open Questions.
+  entries_added: []
+  entries_modified:
   - rg5

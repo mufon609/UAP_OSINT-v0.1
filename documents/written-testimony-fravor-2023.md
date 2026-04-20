@@ -339,15 +339,10 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 - [`/events/2004-nimitz-encounter`]
 - [`/events/2023-07-26-house-uap-hearing`]
 
-### Transcripts
-
-- [`/transcripts/2023-07-26-house-fravor`]
-
 ---
 
 ## Open Questions / Research Gaps
 
-- [ ] Cross-reference Fravor's written testimony against his oral testimony at [`/transcripts/2023-07-26-house-fravor`] to document Material Differences — Once the hearing transcript node is built, review oral Q&A for biographical or narrative content not present in this written statement (service dates, flight hours, academic credentials, accident-investigator role — all mentioned in the oral Q&A transcript but not here)
 - [ ] Resolve whether "ATIP (Anomalous Threat Identification Program)" in Fravor's written testimony refers to AATIP or a distinct program — Examine other primary-source documents that name the program during the 2007–2012 window. Relevant archived sources include DIA memos and the Reid brief; cross-check program names and Elizondo's stated role
 - [ ] Confirm the identity of the crew member who captured the approximately 90-second video referenced at ¶7 — Written testimony refers to "one of my crews" without naming. Cross-reference against oral hearing testimony, NYT 2017 reporting, or Navy squadron records if obtainable
 - [ ] Locate and archive the "Unofficial Official Report" Fravor states is "available on the internet" (¶8) — Search public web archives (Wayback, FAS, Black Vault) for an "Unofficial Official Report" on the 2004 Nimitz encounter. Check whether this is the same report sometimes cited as the "Nimitz Executive Summary"

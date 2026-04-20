@@ -774,9 +774,14 @@ matches existing intra-artifact `quote_ref` errors. Denormalization
 (copying written-quote text onto the transcript artifact) was
 considered and rejected — violates single-source-of-truth and goes
 stale when the document artifact's location refs are corrected.
-Moving Material Differences to the hearing event node was also
-considered and deferred to an architectural-threads note — justified
-only when a hearing aggregates 5+ witnesses' divergences.
+
+**Superseded 2026-04-20.** Decision 2 was eliminated entirely — see
+"Post-F.3 — Material Differences elimination" section below. The
+cross-artifact quote-ref machinery (resolver + loader) was removed
+with it; nothing in the codebase calls the helpers once Material
+Differences is gone, and retaining them for speculative future use
+(F.7 finding renderer, Step E.3 propagation) contradicted the
+repo's no-dead-code discipline. Rebuild when actually needed.
 
 **F.3 sub-phase decomposition** (mirrors F.1a/b/c and F.2a/b/c):
 
@@ -834,11 +839,9 @@ fire the expected error/warning with a clear message.
 `description` field scanning by check #16 deliberately NOT added in
 F.3a — blocked on F.3b's renderer design settling whether
 `description` maps to `## Summary`, a new `## Description` section,
-or a new `summary` artifact field replacing it. BACKLOG entry
-"Transcript top-level description — check #16 prose scoping blocked
-on F.3b renderer" documents the decision. Until resolved,
-`material_differences[].note` is the only check #16 coverage on
-transcript artifacts.
+or a new `summary` artifact field replacing it. Closed in F.3b when
+`description` was wired to `## Summary` and scoped into check #16 via
+`PROSE_FIELDS_BY_TYPE[transcript]`.
 
 #### F.3b — Phase II renderer  ✅ DONE (2026-04-19)
 
@@ -964,8 +967,7 @@ top-level filtering for future cross-node queries ("show all media
 with metadata scrubs"); free-text observation cells accommodate
 per-aspect shape variance (numerical for duration, list-like for
 metadata, prose for content). `other` is an extensibility escape
-that warns on use — signaling schema-growth discussion. Mirrors
-`divergence_class` pattern from `material_differences`.
+that warns on use — signaling schema-growth discussion.
 
 **F.4 sub-phase decomposition** (mirrors F.1a/b/c, F.2a/b/c, F.3a/b/c):
 
@@ -1331,7 +1333,10 @@ Changes landed:
   `TRANSCRIPT_KIND_REQUIRED_SECTION`, `VALID_DIVERGENCE_CLASS`, and
   the material_differences branch in `check_prose_drift` removed.
   `resolve_cross_artifact_quote_ref()` + `_load_cross_artifact()`
-  retained as reusable infrastructure for F.7 and Step E.3.
+  also removed as dead code — no callers remained after MD went
+  away, and retaining them for speculative future use (F.7, Step
+  E.3) contradicted the repo's no-dead-code discipline. Rebuild
+  when actually needed.
 - `scripts/build-from-research.py` —
   `render_transcript_material_differences()`,
   `_resolve_cross_artifact_quote()`, `_excerpt_for_table()` removed;
@@ -1357,7 +1362,31 @@ revealed its structural misfit. Running the pipeline against real
 sources catches these; mechanical validation cannot.
 
 F.3 Decision 2 (Material Differences per-divergence entries with
-cross-artifact quote refs) is now superseded.
+cross-artifact quote refs) is now superseded. When F.7 (finding
+renderer) needs cross-artifact quote-ref resolution, the machinery
+will be rebuilt under the finding-node design discipline.
+
+Additional cleanup (same 2026-04-20 day):
+- `tests/smoke.sh` cross-artifact fixture block + `tests/smoke-fixtures/`
+  directory removed — fixtures tested a feature that no longer exists.
+  Smoke count 55 → 49.
+- `meta/conventions.md` Contradictions routing table: "Written vs. oral
+  testimony divergence" row now points at a finding node spanning the
+  two primary records instead of "`Material Differences` on the
+  transcript node". Q&A-vs-written passage updated to frame oral and
+  written as independent primary records with cross-entity comparison
+  as a synthesis finding.
+- Four research_gap entries referencing Material Differences marked
+  resolved with `resolution_summary` pointing at this section:
+  `research/david-grusch.yaml` g5, `written-testimony-fravor-2023.yaml`
+  rg1, `written-testimony-graves-2023.yaml` rg1,
+  `written-testimony-grusch-2023.yaml` rg5. Each artifact gained an
+  audit-correction iteration entry. `retain_as_done: false` so the
+  entries are omitted from rendered Open Questions.
+- BACKLOG `_excerpt_for_table` mid-acronym entry was already removed
+  in the Post-F.3 elimination commit; no standalone BACKLOG entry
+  exists for this architectural correction (it's tracked here in the
+  roadmap as a closed decision).
 
 ---
 

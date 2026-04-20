@@ -4,11 +4,13 @@ schema_version: 1
 target_node: people/david-grusch
 status: active
 created: '2026-04-20'
-last_iteration: i1
-description: |
-  David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. In his [`/organizations/nro`] reservist capacity he was a member of the [`/organizations/uaptf`] from 2019-2021; the UAPTF director in 2019 tasked him to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) needed to satisfy the task force's congressionally mandated mission, and he was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`]. Under oath at [`/events/2023-07-26-house-uap-hearing`], Grusch's Opening Statement framed his testimony explicitly as relayed: "as I stand here under oath now, I am speaking to the facts as I have been told them."
+last_iteration: i2
+description: 'David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. In his [`/organizations/nro`] reservist capacity he was a member of the [`/organizations/uaptf`] from 2019-2021; the UAPTF director in 2019 tasked him to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) needed to satisfy the task force''s congressionally mandated mission, and he was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`]. Under oath at [`/events/2023-07-26-house-uap-hearing`], Grusch''s Opening Statement framed his testimony explicitly as relayed: "as I stand here under oath now, I am speaking to the facts as I have been told them."
+
 
   This artifact at i0 draws on two archived primary sources: his written testimony ([`/documents/written-testimony-grusch-2023`]) submitted to the House Oversight Committee on July 26, 2023, and his official biographical submission ([`/documents/grusch-bio-2023`]) to the same committee. Later iterations can extend from his oral testimony at the 2023-07-26 hearing, his NewsNation interview, his 2025 Burlison advisor notice, and the June 2023 Debrief article once those sources are extracted.
+
+  '
 primary_sources:
 - path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
   format: pdf
@@ -38,19 +40,22 @@ document_intrinsic:
   profession: Senior intelligence and strategic engagement advisor; former USAF intelligence officer (Major) and NGA Senior Geospatial Intelligence Officer; Whistleblower
 context_extrinsic:
   display_title: David Grusch
-background: |
-  David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] (USAF) at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. USAF Active Duty: Officer in Charge, Space Control Intelligence Cell, 21st Operations Group, Peterson AFB (June 2009 – September 2011); Intelligence Flight Commander, 3d Space Experimentation Squadron, Schriever AFB (September 2011 – December 2013); Chief, Intelligence Integration Division, Space Security and Defense Program (SSDP), Reston, VA (December 2013 – March 2016). April 2016 – November 2021: Senior Intelligence Officer, [`/organizations/nro`] (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet); Corporate Security Officer (CSO) / [`/organizations/dod`]-Contracted Science and Engineering Technical Advisor (SETA) at Blue Sky Innovators Inc. November 2021 – April 2023: Senior GEOINT Capabilities Requirements Officer, NGA, Colorado Springs, CO. May 2023-Present: Chief Operating Officer (COO), The Sol Foundation. Education: Bachelor of Science Degree, Physics, Minor in German, University of Pittsburgh (2009); Master of Arts Degree with Honors, Intelligence Studies, American Military University (2012); Master of Public Administration (MPA) Degree, University of Colorado (In-Progress, 2023). Security Clearance: Active TOP SECRET//SCI with CI & LS Polygraph.
-uap_relevance: |
-  Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis (2021-2023), and a member of the [`/organizations/uaptf`] from 2019-2021 in his [`/organizations/nro`] reservist capacity, reporting to UAPTF and eventually the [`/organizations/aaro`]. In 2019 the UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) the task force needed to satisfy its congressionally mandated mission. He was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`], and he has suffered retaliation for that decision. At [`/events/2023-07-26-house-uap-hearing`], Grusch's testimony ([`/documents/written-testimony-grusch-2023`]) is based on information he has been given by individuals with a longstanding track record of legitimacy and service to this country.
-credibility_notes: |
-  Grusch: "as I stand here under oath now, I am speaking to the facts as I have been told them." His testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country – many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the "multi-decade UAP crash retrieval and reverse engineering program" are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`] and has "suffered retaliation" for his decision. [`/documents/grusch-bio-2023`] — SECURITY CLEARANCE: Active TOP SECRET//SCI with CI & LS Polygraph.
+background: 'David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] (USAF) at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. USAF Active Duty: Officer in Charge, Space Control Intelligence Cell, 21st Operations Group, Peterson AFB (June 2009 – September 2011); Intelligence Flight Commander, 3d Space Experimentation Squadron, Schriever AFB (September 2011 – December 2013); Chief, Intelligence Integration Division, Space Security and Defense Program (SSDP), Reston, VA (December 2013 – March 2016). April 2016 – November 2021: Senior Intelligence Officer, [`/organizations/nro`] (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet); Corporate Security Officer (CSO) / [`/organizations/dod`]-Contracted Science and Engineering Technical Advisor (SETA) at Blue Sky Innovators Inc. November 2021 – April 2023: Senior GEOINT Capabilities Requirements Officer, NGA, Colorado Springs, CO. May 2023-Present: Chief Operating Officer (COO), The Sol Foundation. Education: Bachelor of Science Degree, Physics, Minor in German, University of Pittsburgh (2009); Master of Arts Degree with Honors, Intelligence Studies, American Military University (2012); Master of Public Administration (MPA) Degree, University of Colorado (In-Progress, 2023). Security Clearance: Active TOP SECRET//SCI with CI & LS Polygraph.
+
+  '
+uap_relevance: 'Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis (2021-2023), and a member of the [`/organizations/uaptf`] from 2019-2021 in his [`/organizations/nro`] reservist capacity, reporting to UAPTF and eventually the [`/organizations/aaro`]. In 2019 the UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) the task force needed to satisfy its congressionally mandated mission. He was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`], and he has suffered retaliation for that decision. At [`/events/2023-07-26-house-uap-hearing`], Grusch''s testimony ([`/documents/written-testimony-grusch-2023`]) is based on information he has been given by individuals with a longstanding track record of legitimacy and service to this country.
+
+  '
+credibility_notes: 'Grusch: "as I stand here under oath now, I am speaking to the facts as I have been told them." His testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country – many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the "multi-decade UAP crash retrieval and reverse engineering program" are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`] and has "suffered retaliation" for his decision. [`/documents/grusch-bio-2023`] — SECURITY CLEARANCE: Active TOP SECRET//SCI with CI & LS Polygraph.
+
+  '
 affiliations:
 - id: a1
   added_date: '2026-04-20'
   added_by_iteration: i0
   organization_path: /organizations/us-air-force
   role: Intelligence officer for 14 years at the rank of Major
-  period_start: '2009-06'
+  period_start: 2009-06
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
     location: Opening ¶3
@@ -59,8 +64,8 @@ affiliations:
   added_by_iteration: i0
   organization_path: /organizations/nro
   role: Senior Intelligence Officer (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet)
-  period_start: '2016-04'
-  period_end: '2021-11'
+  period_start: 2016-04
+  period_end: 2021-11
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
     location: lines 103-111
@@ -69,8 +74,8 @@ affiliations:
   added_by_iteration: i0
   organization_path: /organizations/blue-sky-innovators
   role: Corporate Security Officer (CSO), DoD-Contracted Science and Engineering Technical Advisor (SETA)
-  period_start: '2016-03'
-  period_end: '2021-11'
+  period_start: 2016-03
+  period_end: 2021-11
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
     location: lines 113-123
@@ -79,8 +84,8 @@ affiliations:
   added_by_iteration: i0
   organization_path: /organizations/apus
   role: Adjunct Professor, School of Security and Global Studies
-  period_start: '2014-07'
-  period_end: '2016-12'
+  period_start: 2014-07
+  period_end: 2016-12
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
     location: lines 125-131
@@ -99,8 +104,8 @@ affiliations:
   added_by_iteration: i0
   organization_path: /organizations/nga
   role: Senior GEOINT Capabilities Requirements Officer (GS-15, Colonel Equiv.)
-  period_start: '2021-11'
-  period_end: '2023-04'
+  period_start: 2021-11
+  period_end: 2023-04
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
     location: lines 82-86
@@ -109,8 +114,8 @@ affiliations:
   added_by_iteration: i0
   organization_path: /organizations/us-air-force-academy
   role: Key Employee Augmentee (USAF Reserve, O-4/Maj)
-  period_start: '2022-04'
-  period_end: '2023-05'
+  period_start: 2022-04
+  period_end: 2023-05
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
     location: lines 88-93
@@ -119,8 +124,8 @@ affiliations:
   added_by_iteration: i0
   organization_path: /organizations/318-cyber-operations-group
   role: IMA to the Commander, Detachment 3, Nellis AFB (USAF Reserve O-4/Maj in O-5/Lt Col Billet)
-  period_start: '2021-11'
-  period_end: '2022-04'
+  period_start: 2021-11
+  period_end: 2022-04
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
     location: lines 95-100
@@ -129,7 +134,7 @@ affiliations:
   added_by_iteration: i0
   organization_path: /organizations/sol-foundation
   role: Chief Operating Officer (COO)
-  period_start: '2023-05'
+  period_start: 2023-05
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
     location: lines 75-80
@@ -147,7 +152,7 @@ timeline:
 - id: t2
   added_date: '2026-04-20'
   added_by_iteration: i0
-  date: '2009-06'
+  date: 2009-06
   event: Officer in Charge, Space Control Intelligence Cell, 21st Operations Group, Peterson AFB (USAF Active Duty)
   category: role
   source:
@@ -156,7 +161,7 @@ timeline:
 - id: t3
   added_date: '2026-04-20'
   added_by_iteration: i0
-  date: '2011-09'
+  date: 2011-09
   event: Intelligence Flight Commander, 3d Space Experimentation Squadron, Schriever AFB (USAF Active Duty)
   category: role
   source:
@@ -174,7 +179,7 @@ timeline:
 - id: t5
   added_date: '2026-04-20'
   added_by_iteration: i0
-  date: '2013-12'
+  date: 2013-12
   event: Chief, Intelligence Integration Division, Space Security and Defense Program (SSDP), Reston, VA (USAF Active Duty)
   category: role
   source:
@@ -192,7 +197,7 @@ timeline:
 - id: t7
   added_date: '2026-04-20'
   added_by_iteration: i0
-  date: '2016-04'
+  date: 2016-04
   event: Senior Intelligence Officer, National Reconnaissance Office (NRO), Chantilly, VA (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet)
   category: role
   source:
@@ -237,7 +242,7 @@ timeline:
 - id: t12
   added_date: '2026-04-20'
   added_by_iteration: i0
-  date: '2021-11'
+  date: 2021-11
   event: Senior GEOINT Capabilities Requirements Officer, National Geospatial-Intelligence Agency (NGA), Colorado Springs, CO (GS-15, Colonel Equiv.)
   category: role
   source:
@@ -255,7 +260,7 @@ timeline:
 - id: t14
   added_date: '2026-04-20'
   added_by_iteration: i0
-  date: '2023-05'
+  date: 2023-05
   event: Chief Operating Officer (COO), The Sol Foundation
   category: role
   source:
@@ -496,7 +501,11 @@ research_gaps:
   added_by_iteration: i0
   statement: Cross-reference Grusch's written testimony against his oral testimony at /transcripts/2023-07-26-house-grusch to document Material Differences
   methodology: Once the hearing transcript node is built, compare the oral Q&A against the written Opening and Closing Statements for substantive claims, named programs, named individuals, and biographical content not present in the written statement
-  resolved: false
+  resolved: true
+  resolved_date: '2026-04-20'
+  resolution_summary: Moot — Material Differences feature eliminated from hearing-transcript nodes (see roadmap.md "Post-F.3 — Material Differences elimination" section). Cross-entity written-vs-oral comparative analysis will be reshaped under the F.7 finding-node renderer when it ships.
+  retain_as_done: false
+  resolving_source: meta/toolkit-notes/roadmap.md (Post-F.3 — Material Differences elimination section, 2026-04-20)
 - id: g6
   added_date: '2026-04-20'
   added_by_iteration: i0
@@ -590,9 +599,16 @@ iterations:
 - id: i1
   date: '2026-04-20'
   trigger: audit-correction
-  summary: 'Post-i0 self-audit, two corrections. (1) Apostrophe fidelity in credibility_notes — the quoted phrase "read-on’s" from written-testimony Opening ¶11 had a straight apostrophe where source uses curly (U+2019). Source typography preserved. (2) Rumors r1 and r2 observed_sources phrasing — the i0 wording asserted the claims were "widely quoted" / "widely attributed" from specific sources (2023-07-26 oral transcript, June 2023 Debrief article, NewsNation interview) that have not been extracted in this session. That framing is a training-knowledge assertion about source content. Revised to "Circulating in public discourse attributed to Grusch; the specific primary-source instance is not locatable without extraction of [specific archived sources]" — keeps the rumor entries alive and points at the expected primary-source locations without asserting I have observed the claims there. No quote texts changed; no new entries added or removed.'
+  summary: Post-i0 self-audit, two corrections. (1) Apostrophe fidelity in credibility_notes — the quoted phrase "read-on’s" from written-testimony Opening ¶11 had a straight apostrophe where source uses curly (U+2019). Source typography preserved. (2) Rumors r1 and r2 observed_sources phrasing — the i0 wording asserted the claims were "widely quoted" / "widely attributed" from specific sources (2023-07-26 oral transcript, June 2023 Debrief article, NewsNation interview) that have not been extracted in this session. That framing is a training-knowledge assertion about source content. Revised to "Circulating in public discourse attributed to Grusch; the specific primary-source instance is not locatable without extraction of [specific archived sources]" — keeps the rumor entries alive and points at the expected primary-source locations without asserting I have observed the claims there. No quote texts changed; no new entries added or removed.
   entries_added: []
   entries_modified:
   - credibility_notes
   - r1
   - r2
+- id: i2
+  date: '2026-04-20'
+  trigger: audit-correction
+  summary: research_gap g5 marked resolved — Material Differences feature eliminated from transcript nodes (Post-F.3 architectural correction). Gap is structurally moot; resolution records the restructuring. retain_as_done=false so the entry is omitted from rendered Open Questions.
+  entries_added: []
+  entries_modified:
+  - g5

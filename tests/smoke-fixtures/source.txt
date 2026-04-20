@@ -1,1 +1,0 @@
-Smoke fixture primary source for testing. Witness testified under oath that aircraft equipment detail differs from written testimony. In oral testimony the witness clarified the aircraft equipment detail. Fixture content exercises the cross-artifact resolver.

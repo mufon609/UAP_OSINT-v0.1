@@ -165,9 +165,12 @@ logged as a separate dated entry. The sworn testimony row stays confirmed.
 Both facts coexist because both are true.
 
 Q&A testimony under oath carries the same evidentiary weight as prepared
-written testimony. The `Material Differences` section of a hearing
-transcript documents *where* a claim appears (written vs. oral vs. Q&A),
-not which placement carries more weight.
+written testimony. Oral and written versions of a witness's testimony are
+preserved as independent primary records — the hearing transcript node
+holds the oral record; the written testimony document node holds the
+written record. Cross-entity comparison between the two (where a claim
+appears and how the placements differ) is a synthesis finding and
+belongs on a finding node, not on either primary record.
 
 ---
 
@@ -203,7 +206,7 @@ finding, not a property of either document.
 | Post-event denial | `Node Versioning` on the relevant person / event / organization node |
 | Institutional self-contradiction | `Credibility Notes` on the person / organization node |
 | One document's statement contradicts another's | `Institutional Assessment` on the relevant organization node (when an agency finding contradicts a cited claim), or a finding node spanning the conflicting sources |
-| Written vs. oral testimony divergence | `Material Differences` on the transcript node |
+| Written vs. oral testimony divergence | Finding node spanning the two primary records (transcript + companion written testimony document) |
 | Contested affiliation | `Flagged` subsection of `Affiliations` |
 
 The Confirmed/Flagged binary is unchanged by contradictions —
