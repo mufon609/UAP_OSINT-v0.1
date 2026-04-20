@@ -353,14 +353,11 @@ types:
       #   appropriate for `other`-kind transcripts (podcast → audio file;
       #   interview → video file; press conference → recording).
       #
-      #   Do NOT use for hearing transcripts vs. their companion written
-      #   testimony — those are independent primary records of the same
-      #   event, not derivations. Use
-      #   context_extrinsic.companion_written_testimony for that
-      #   cross-reference instead (per F.3c D3, 2026-04-19). The renderer
-      #   keeps a `derived_from → /documents/...` fallback on hearing
-      #   transcripts for backward compatibility, but the convention is
-      #   companion_written_testimony.
+      #   Hearing transcripts use
+      #   context_extrinsic.companion_written_testimony for the
+      #   cross-reference to their companion written testimony (per F.3c
+      #   D3, 2026-04-19). Those are independent primary records of the
+      #   same event, not derivations.
     kinds:
       hearing:
         description: "Verbatim record of a formal proceeding — congressional hearing, deposition. Written-vs-oral divergence analysis (when it applies) belongs on a finding node, not on the transcript."

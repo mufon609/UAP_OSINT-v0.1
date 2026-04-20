@@ -750,16 +750,17 @@ switch. No artifact field duplication needed.
 
 **F.3c D3 refinement (2026-04-19).** Hearing transcripts vs. their
 companion written testimony are independent primary records of the
-same event — neither is "derived from" the other. So hearing
-transcripts use `context_extrinsic.companion_written_testimony` for
-the cross-reference (renders as the same "Companion Written Testimony"
-PR row), and `derived_from` is reserved for transcripts where the
-text record IS a rendering of an underlying media/document node
-(typical: `other`-kind transcripts of podcasts / video interviews /
-press conferences). The renderer keeps a `derived_from → /documents/...`
-fallback path on hearing transcripts for backward compatibility, but
-the convention is `companion_written_testimony`. See BACKLOG entry on
-the fallback removal trigger.
+same event — neither is "derived from" the other. Hearing transcripts
+use `context_extrinsic.companion_written_testimony` for the
+cross-reference (renders as the "Companion Written Testimony" PR row);
+`derived_from` is reserved for transcripts where the text record IS a
+rendering of an underlying media/document node (typical: `other`-kind
+transcripts of podcasts / video interviews / press conferences). The
+renderer shipped with a `derived_from → /documents/...` fallback path
+on hearing transcripts for backward compatibility; **fallback removed
+2026-04-20** after all three hearing-transcript pilots (Fravor,
+Grusch, Graves) used `companion_written_testimony` cleanly, satisfying
+the 3/3 BACKLOG trigger.
 
 **Decision 2 (superseded 2026-04-20).** A per-divergence "Material
 Differences" table on hearing transcripts was designed and shipped
