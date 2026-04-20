@@ -720,7 +720,7 @@ remain under the scoped exemption. Pre-F.2c roadmap anchored at
 commit 305407d; policy propagation followed in the prompts/build.md
 Phase I Step 12 refresh (commit f9bad12).
 
-### F.3 — transcript  🟡 IN PROGRESS (F.3a + F.3b done; F.3c pending)
+### F.3 — transcript  ✅ DONE (F.3a + F.3b + F.3c shipped 2026-04-19)
 
 Two kinds after the post-Step-D revision (`hearing`, `other`). Design
 pass completed in the F.2c session post-commit (2026-04-19).
@@ -887,15 +887,57 @@ validate + render + pass review-coverage for both `hearing` and
 `other` kinds. Check #16 transcript description scoping verified
 (token-injection test; fabrication errors fire correctly).
 
-#### F.3c — Fravor hearing-transcript pilot  ⏸ NEXT
+#### F.3c — Fravor hearing-transcript pilot  ✅ DONE (2026-04-19)
 
-`/transcripts/2023-07-26-house-fravor` — companion transcript to the
-already-built Fravor written-testimony document. First real test of
-cross-artifact Material Differences resolution against
-`documents/written-testimony-fravor-2023`'s existing quotes.
-Stenographic PDF already archived at
-`sources/government/congress-gov-house-hearing-transcript-20230726.pdf`.
-One node per session — hard rule.
+First end-to-end transcript node through Phase I → II → III under the
+F.3b renderer; first real-content exercise of the F.3a cross-artifact
+Material Differences resolver. `/transcripts/2023-07-26-house-fravor`
+built at iteration i0 from the archived 54-page stenographic PDF
+(`sources/government/congress-gov-house-hearing-transcript-20230726.pdf`).
+Shipped in commit `083c249`:
+
+- 39 quotes — 19 opening-statement + 20 substantive Q&A responses
+  spanning exchanges with Grothman, Burchett, Raskin, Moskowitz, Mace,
+  Langworthy, Gaetz, Ogles, Biggs, Frost, and Ocasio-Cortez. All
+  verified verbatim against source via validate.py check #11.
+- 19 speakers — 3 witnesses (Fravor/Graves/Grusch with node_link
+  wraps) + 16 Members who spoke. Role labels distinguish Subcommittee
+  Members (Moskowitz/Foxx/Frost/Biggs/Mace) from Members waived-on for
+  this hearing (Burchett/Luna/Gaetz/Ocasio-Cortez/Burlison/Langworthy/
+  Ogles) per transcript preamble lines 158-170.
+- 16 material_differences cross-referenced against
+  `documents/written-testimony-fravor-2023` quotes q1-q20 — ~11
+  qa-addition / ~5 elaboration. Oral-only content includes APG-73
+  jamming mechanics, "Chad" named as FLIR1 crew, multi-platform radar
+  tracking (Princeton + Nimitz + E2), biographical detail (enlisted
+  Marine / Naval Academy / UH Master's / accident investigator), "most
+  credible UFO sighting in history" framing, and motivation narrative
+  (pestered by a friend).
+- 19 entities_referenced, 3 naming_quirks (Leslie Keane typo preserved
+  in quotes parallel to written-testimony nq1; "Lue" alias-of-record
+  across 2 instances; ATIP program — disputed vs AATIP, parallel to
+  written-testimony rg2), 3 research_gaps.
+
+All three phases green:
+  validate-research.py      0 / 0 (check #16 clean on description +
+                                    all 16 per-entry MD notes)
+  build-from-research.py    0 errors + post-build validate clean
+  review-coverage.py        0 / 0 (Coverage / Boundary / Stub-linking /
+                                    OQ dedup)
+
+Pilot finding absorbed inline. `scripts/build-from-research.py`
+`sort_by_date()` used raw string id as tie-breaker, lex-sorting same-
+date entries (q1, q10, q11, …, q19, q2, q20, …) — Key Passages on
+this transcript surfaced the bug. Fix extracts `_id_natural_key()`
+from existing `sort_by_id()` and uses it as the sort_by_date tie-
+breaker. Fravor transcript Key Passages now flow in narrative order
+(q1 → q2 → q3 → … → q39). Fix benefits any future artifact with 10+
+same-date entries in any date-sorted context.
+
+Broken-link registry holds at 32 unbuilt-stub targets — this transcript
+adds one new stub (/people/david-grusch from Fravor's q15 "Mr. Grusch
+just covered that") and surfaces no new cluster-scoped priority queue
+additions.
 
 ### F.4 — media  ⏸ PENDING
 
@@ -956,11 +998,11 @@ target: one event, three pilots, one primary media artifact, companion
 transcripts, and one already-built document (Fravor written testimony).
 Cluster-scope first-pass targets:
 
-- `/events/2004-nimitz-encounter` (F.2 pilot) ⏸ pending
+- `/events/2004-nimitz-encounter` (F.2 pilot) ✅ DONE 2026-04-19
 - `/people/david-fravor` (F.1 pilot) ✅ DONE 2026-04-19
+- `/transcripts/2023-07-26-house-fravor` (F.3 pilot) ✅ DONE 2026-04-19
 - `/people/alex-dietrich` (follow-on; same archetype) ⏸ pending
 - `/people/chad-underwood` (follow-on) ⏸ pending
-- `/transcripts/2023-07-26-house-fravor` (F.3 pilot) ⏸ pending
 - `/media/flir1-video` (F.4 pilot) ⏸ pending
 
 Cluster-close when the ring validates cleanly against schema,

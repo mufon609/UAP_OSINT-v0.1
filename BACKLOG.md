@@ -595,6 +595,11 @@ keep working while the convention stabilizes.
 `context_extrinsic.companion_written_testimony` (none rely on
 `derived_from` for the companion cross-ref).
 
+**Progress.** 1 of 3 hearing transcripts shipped
+(`/transcripts/2023-07-26-house-fravor`, F.3c commit `083c249`,
+2026-04-19) — uses `context_extrinsic.companion_written_testimony`
+cleanly; no fallback triggered.
+
 **Surfaced.** F.3c pre-implementation Decision 3 (2026-04-19). The
 renderer kept the fallback as a leniency to avoid a hard convention
 break before any hearing transcripts existed; this entry tracks the
@@ -657,4 +662,50 @@ this entry's scope.
 **Partial resolution.** `conditionally_required` dispatcher shipped
 (2026-04-18 hardening pass). `chronological: true` flag enforced via
 check #15 (2026-04-19 F.1a).
+
+---
+
+### `_excerpt_for_table` truncates mid-acronym on first-sentence preference
+
+**Issue.** `build-from-research.py` `_excerpt_for_table()` prefers the
+first-sentence excerpt (period-terminated) up to ~150 chars, falling
+back to a word-boundary truncation with ellipsis only when no short
+first sentence exists. On Fravor's written-testimony q1 ("My name is
+David Fravor and I am a retired Commander in the U.S Navy.") the
+function treats the period after "U" in "U.S" as a sentence terminator
+and returns `"My name is David Fravor and I am a retired Commander in
+the U."` — truncated mid-acronym, losing "S Navy" content the reader
+needs to see in the Material Differences Written Quote cell.
+
+**Why it matters.** Material Differences cells are the primary surface
+where investigators compare oral and written testimony excerpts. A
+mid-acronym truncation makes the Written Quote cell confusing and
+requires a click-through to the companion node's Key Passages section
+to grasp what the excerpt actually contains. The Fravor F.3c pilot has
+this visible on 4+ rows (md4, md5, md9, md11 — all anchored to written
+q1). The regression affects readability, not evidentiary integrity —
+the full text is still one click away — but cell readability is part
+of what makes Material Differences an investigative surface rather than
+a reference index.
+
+**Proposed scope.** Tighten the first-sentence heuristic to reject
+"sentences" terminated by a period inside a known acronym pattern.
+Simplest approach: refuse first-sentence excerpts where the terminator
+period is preceded by a single uppercase letter and a period earlier
+in the sentence (signals an abbreviation like "U.S.", "D.C.",
+"Dr."). Fallback to word-boundary truncation with ellipsis. Could also
+extend to recognize other abbreviation patterns (Mr., Mrs., Rev.,
+initials, numbered items like "1." in lists).
+
+**Trigger.** When more hearing-transcript pilots ship and the pattern
+reproduces beyond Fravor's q1 — confirms the issue is not one-off.
+Currently 1 node affected; small blast radius.
+
+**Interim.** Leave as-is; flag in roadmap post-mortem. Contributors
+reviewing rendered Material Differences tables can click through to
+Key Passages for full text.
+
+**Surfaced.** F.3c Phase III semantic review (2026-04-19). The
+renderer's truncation logic was written without anticipating
+period-bearing acronyms in quote openings.
 

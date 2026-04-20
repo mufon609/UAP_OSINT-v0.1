@@ -8,11 +8,11 @@ hard rule established after the 2026-04-17 pilot failure (see
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
 
-**Phase II scope (as of F.2b, 2026-04-19):** `build-from-research.py`
-supports **document, person, and event** node types end-to-end.
-Transcript, media, organization, location, and finding nodes are still
+**Phase II scope (as of F.3b, 2026-04-19):** `build-from-research.py`
+supports **document, person, event, and transcript** node types end-
+to-end. Media, organization, location, and finding nodes are still
 hand-authored from the research artifact pending their renderer
-sub-phases (F.3 → F.7; tracked in `meta/toolkit-notes/roadmap.md`).
+sub-phases (F.4 → F.7; tracked in `meta/toolkit-notes/roadmap.md`).
 Until those ship, build unsupported types by hand following
 `meta/conventions.md`.
 
@@ -456,11 +456,11 @@ Deterministic transformation from research artifact → populated node
 body. No creative writing in Phase II. Every line in the node body
 traces to a research-artifact entry.
 
-**Scope (as of F.2b):** document, person, and event node types.
-For transcript, media, organization, location, and finding, Phase II
-is still manual — follow `meta/conventions.md` and draw exclusively
-from the populated research artifact. Renderer extension is tracked
-per-type in `meta/toolkit-notes/roadmap.md` (F.3 → F.7).
+**Scope (as of F.3b):** document, person, event, and transcript node
+types. For media, organization, location, and finding, Phase II is
+still manual — follow `meta/conventions.md` and draw exclusively from
+the populated research artifact. Renderer extension is tracked per-
+type in `meta/toolkit-notes/roadmap.md` (F.4 → F.7).
 
 ### Step 1. Regenerate the node from its research artifact
 
@@ -524,6 +524,28 @@ This:
      transcript / written testimony)
    - **Encounter-only:** `## Corroboration` (from `corroboration_items[]` —
      same shape as eyewitness person)
+
+   **Transcript nodes** (F.3b):
+   - `## Publication Record` — from `context_extrinsic`. Kind-specific
+     rows: hearing emits Full Hearing Title / Convening Body /
+     Session / Serial No. / Date / Location / Witness / Oath Status /
+     Transcript URL / Transcript Verified / Event Node / Companion
+     Written Testimony; `other` emits Outlet / Program / Date /
+     Host(s) / Primary Speaker(s) / Format / Source Medium /
+     Underlying Media Node / Source URL / Citation Style. Auto-
+     populates `Source Medium` and `Underlying X` rows from frontmatter
+     (`source_medium` / `derived_from`) per F.3 Decision 1.
+   - `## Summary` — from `description` (render-time field→section
+     rename per F.3 Q1-A).
+   - `## Speakers` — from `speakers[]` (Name / Role / Node Link
+     columns).
+   - `## Key Passages` — from `quotes[]`, sorted by `statement_date`
+     with natural-sort tie-break on id (q1 before q10); H3 per quote
+     using `significance` field.
+   - **Hearing-only:** `## Material Differences` — from
+     `material_differences[]` (Topic / Class / Written Quote / Oral
+     Quote / Note columns). Written and Oral cells show ~150-char
+     excerpts + anchor links to each artifact's Key Passages section.
 
    **All renderer-supported types** close with:
    - `## Associated Nodes` — placeholder; filled by `associate.py`
@@ -635,9 +657,9 @@ node surfaces no semantic issues. Ready to commit.
 7. Commit the research artifact + regenerated node + any manifest
    changes in one focused commit (one node per session — hard rule)
 
-### Pending-renderer types (transcript, media, organization, location, finding)
+### Pending-renderer types (media, organization, location, finding)
 
-Until the per-type renderer sub-phase (F.3 → F.7) ships:
+Until the per-type renderer sub-phase (F.4 → F.7) ships:
 
 1. `validate-research.py` passes on the populated artifact
 2. Hand-author the node body per `meta/conventions.md`, drawing

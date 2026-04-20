@@ -45,10 +45,10 @@ appear in the Priority Build Queue below.
 
 ## Priority Build Queue
 
-32 unbuilt-stub targets referenced from the 4 built nodes (Fravor
-document + Graves document + Fravor person + Nimitz encounter).
-Grouped by natural cluster so contributors can choose which ring to
-close first.
+32 unbuilt-stub targets referenced from the 5 built nodes (Fravor
+document + Graves document + Fravor person + Nimitz encounter + Fravor
+oral transcript). Grouped by natural cluster so contributors can
+choose which ring to close first.
 
 ### Cluster A — 2004 Nimitz encounter (F.2c pilot shipped 2026-04-19)
 
@@ -74,17 +74,18 @@ and the supporting organization nodes.
 | `/people/christopher-mellon` | person / institutional-actor | Low | Former Deputy Assistant SecDef for Intelligence; TTSA advisor | Public record |
 | `/people/steve-justice` | person / institutional-actor | Low | Former Lockheed Skunk Works director; TTSA | Public record |
 
-### Cluster B — 2023-07-26 House Oversight hearing
+### Cluster B — 2023-07-26 House Oversight hearing (F.3c pilot shipped 2026-04-19)
 
-Adjacent to the Nimitz cluster; Fravor's testimony submission is the
-crossover. Event + transcripts + witness persons.
+Fravor oral transcript is built; the cluster's remaining work is the
+hearing event node, the Graves oral transcript, the Graves person
+node, and supporting witness-orbit people.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
 | `/events/2023-07-26-house-uap-hearing` | event / hearing | High | Hearing node ties together Fravor, Graves, Grusch testimonies | oversight.house.gov event page (archived) |
-| `/transcripts/2023-07-26-house-fravor` | transcript / hearing | High | Fravor's oral testimony at the hearing — complements the written testimony doc | congress.gov hearing transcript PDF (archived) |
-| `/transcripts/2023-07-26-house-graves` | transcript / hearing | High | Graves's oral testimony at the hearing | congress.gov hearing transcript PDF (archived) |
+| `/transcripts/2023-07-26-house-graves` | transcript / hearing | High | Graves's oral testimony at the hearing — same stenographic PDF already archived | congress.gov hearing transcript PDF (archived) |
 | `/people/ryan-graves` | person / eyewitness | High | 2015 Virginia Beach encounters witness; written testimony already archived as document | Graves written testimony (archived + extracted) |
+| `/people/david-grusch` | person / whistleblower | High | Fellow witness at the 2023-07-26 hearing; referenced in Fravor's oral q15; PPD-19 urgent-concern filer | Grusch oral statement (in already-archived stenographic PDF) + NewsNation interview |
 | `/people/sean-kirkpatrick` | person / institutional-actor | Medium | AARO founding director; named in Graves testimony | 2023-04-19 SASC testimony (archived) |
 | `/people/tim-gallaudet` | person / institutional-actor | Medium | Former NOAA Chief Scientist and Deputy Administrator; UAP advocate | Public record |
 | `/documents/odni-preliminary-assessment-2021` | document / gov-doc | Medium | Referenced in Graves testimony; foundational UAP report | ODNI (public PDF; archived) |
@@ -133,6 +134,6 @@ Long-term structural improvements not blocked on primary sources.
 
 | Milestone | Description | Target | Status |
 |---|---|---|---|
-| Close Cluster A (Nimitz) ring | Build Nimitz encounter + Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | After F.2c + F.3 (transcript renderer) + F.4 (media renderer) ship | Pending |
-| Close Cluster B (2023-07-26 hearing) ring | Build hearing event + both transcripts + Graves person | After F.2c / F.3 | Pending |
+| Close Cluster A (Nimitz) ring | Build Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | F.2c + F.3 shipped; F.4 (media renderer) remains | Pending |
+| Close Cluster B (2023-07-26 hearing) ring | Build hearing event + Graves transcript + Graves person + Grusch person | F.2c + F.3 shipped; Fravor transcript built; content work only | Pending |
 | First finding node | Build a cross-entity finding spanning 3+ nodes (e.g., UAP video-release provenance chain) | After ≥3 cluster rings close | Pending |
