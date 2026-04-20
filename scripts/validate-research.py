@@ -31,12 +31,6 @@ Checks (per schema.yaml research-artifact.invariants):
       institutional-actor → program_involvement
       reporter            → publication_record
     Each archetype-specific section must be absent on other archetypes.
-  - Per-kind required section on transcript artifacts:
-      hearing → material_differences (cross-artifact written_ref +
-                intra-artifact oral_ref + divergence_class enum; check
-                #16 pools both referenced quotes' source texts for
-                prose-drift scan on the note field)
-      other   → no kind-specific section
   - `speakers` section required on every transcript artifact
     (both kinds) — cross-reference surface; entry requires name + source,
     optional role / node_link / note.
@@ -130,13 +124,6 @@ EVENT_KIND_REQUIRED_SECTION = {
     "encounter": "corroboration_items",
 }
 
-# Kind → required artifact section (only on transcript artifacts).
-# `other`-kind transcripts carry no kind-specific section — only hearing
-# transcripts track Material Differences (written-vs-oral divergences).
-TRANSCRIPT_KIND_REQUIRED_SECTION = {
-    "hearing": "material_differences",
-}
-
 # Organization-artifact-specific required keys (universal across the three
 # kinds — gov, gov-contractor, private). key_personnel is the cross-
 # reference surface (people + sourced roles); org_relationships carries
@@ -203,7 +190,6 @@ ALL_ENTRY_SECTIONS = [
     "witnesses_testimony",
     # Transcript
     "speakers",
-    "material_differences",
     # Media
     "media_versioning",
     # Organization
@@ -246,9 +232,6 @@ VALID_PARTICIPANT_CAPACITY = {
     "committee-member", "observer", "official", "other",
 }
 VALID_OATH_STATUS = {"sworn", "unsworn", "affirmation", "unknown"}
-VALID_DIVERGENCE_CLASS = {
-    "elaboration", "contradiction", "omission", "clarification", "qa-addition",
-}
 VALID_MEDIA_VERSIONING_ASPECT = {
     "duration", "encoding", "metadata", "content", "provenance", "other",
 }
@@ -578,29 +561,6 @@ def validate_artifact(path, schema, manifest_paths):
                 "'speakers' section should not be present "
                 f"(target_node type {target_type!r} is not transcript)"))
 
-    # --- Transcript-kind-specific sections (kind-conditional on transcript) ---
-    # Only hearing-kind transcripts carry material_differences; `other`-kind
-    # transcripts (interview, podcast, broadcast, etc.) carry no
-    # kind-specific section. Parallel in shape to the event-kind block
-    # above; TRANSCRIPT_KIND_REQUIRED_SECTION has only one entry so the
-    # absent-on-other-kinds branch fires for kind=other when
-    # material_differences is set, and the missing-required branch fires
-    # for kind=hearing when material_differences is absent.
-    if target_type == "transcript" and target_kind:
-        for kind_name, section in TRANSCRIPT_KIND_REQUIRED_SECTION.items():
-            if kind_name == target_kind:
-                if section not in data:
-                    issues.append(Issue(rel, "error",
-                        f"Required {section!r} section missing "
-                        f"(target transcript kind is {target_kind!r}, "
-                        f"which requires {section!r})"))
-            else:
-                if section in data:
-                    issues.append(Issue(rel, "error",
-                        f"{section!r} section should not be present "
-                        f"(target transcript kind {target_kind!r} does not "
-                        f"carry it — that section belongs to kind {kind_name!r})"))
-
     # --- Media-universal sections (type-conditional on media) ---
     # `media_versioning` required on every media artifact regardless of
     # kind. Empty list permitted (canonical / original media with no
@@ -705,8 +665,6 @@ def validate_artifact(path, schema, manifest_paths):
         issues.extend(check_participants(rel, data, manifest_paths))
     if "witnesses_testimony" in data:
         issues.extend(check_witnesses_testimony(rel, data, manifest_paths))
-    if "material_differences" in data:
-        issues.extend(check_material_differences(rel, data, manifest_paths))
     if "speakers" in data:
         issues.extend(check_speakers(rel, data, manifest_paths))
     if "media_versioning" in data:
@@ -1331,10 +1289,11 @@ def check_witnesses_testimony(rel, data, manifest_paths):
 # vocabularies for the two cases — the referenced artifact path appears
 # in the cross-artifact message to distinguish them.
 #
-# Kept type-agnostic (doesn't know about material_differences) so Step E.3
-# (cross-node update propagation, deferred) can reuse it when bidirectional
-# corroborated_by / superseded_by / contradicted_by refs need to resolve
-# across artifacts.
+# Kept type-agnostic so it can be reused by future cross-artifact
+# features — Step E.3 (cross-node update propagation, deferred) when
+# bidirectional corroborated_by / superseded_by / contradicted_by refs
+# need to resolve across artifacts, or F.7 (finding renderer) when
+# finding-node anchors cite quotes from the entities they concern.
 # =============================================================================
 
 # Cache parsed cross-referenced artifacts per validator run. Keyed by
@@ -1374,7 +1333,7 @@ def resolve_cross_artifact_quote_ref(ref, rel, error_prefix):
     existing quote in another research artifact. Returns [Issue].
     Empty list on successful resolution. `error_prefix` is prepended to
     any error message — callers set it to something like
-    'material_differences[0] (md1): written_ref'.
+    'claims[0] (c1): sources[0] quote_ref'.
     """
     issues = []
     if not isinstance(ref, dict):
@@ -1434,58 +1393,6 @@ def check_speakers(rel, data, manifest_paths):
                 f"speakers[{i}] ({e.get('id')!r}): "
                 f"node_link {nl!r} must start with '/'"))
         issues.extend(_require_source_dict(rel, e, "speakers", i, manifest_paths))
-    return issues
-
-
-def check_material_differences(rel, data, manifest_paths):
-    """material_differences[] — present on hearing-kind transcript
-    artifacts. Each entry: required {id, topic, divergence_class,
-    written_ref, oral_ref}, optional {note}. written_ref resolves
-    cross-artifact; oral_ref resolves intra-artifact.
-    """
-    issues = []
-    items = _entries(data, "material_differences")
-    issues.extend(_check_unique_ids(rel, items, "material_differences"))
-    # Build the intra-artifact quote_id set once for oral_ref resolution.
-    quote_ids = {
-        q.get("id") for q in _entries(data, "quotes") if isinstance(q, dict)
-    }
-    for i, e in enumerate(items):
-        if not isinstance(e, dict):
-            continue
-        issues.extend(_check_lifecycle_fields(rel, e, "material_differences", i))
-        # Required fields
-        for field in ["topic", "divergence_class", "written_ref", "oral_ref"]:
-            if field not in e:
-                issues.append(Issue(rel, "error",
-                    f"material_differences[{i}] ({e.get('id')!r}): "
-                    f"missing required {field!r}"))
-        # divergence_class enum
-        dc = e.get("divergence_class")
-        if dc is not None and dc not in VALID_DIVERGENCE_CLASS:
-            issues.append(Issue(rel, "error",
-                f"material_differences[{i}] ({e.get('id')!r}): "
-                f"divergence_class {dc!r} not in "
-                f"{sorted(VALID_DIVERGENCE_CLASS)}"))
-        # written_ref — cross-artifact resolution
-        wref = e.get("written_ref")
-        if wref is not None:
-            issues.extend(resolve_cross_artifact_quote_ref(
-                wref, rel,
-                f"material_differences[{i}] ({e.get('id')!r}): written_ref",
-            ))
-        # oral_ref — intra-artifact resolution (quote_id string)
-        oref = e.get("oral_ref")
-        if oref is not None:
-            if not isinstance(oref, str):
-                issues.append(Issue(rel, "error",
-                    f"material_differences[{i}] ({e.get('id')!r}): "
-                    f"oral_ref must be a quote.id string (got {type(oref).__name__})"))
-            elif oref not in quote_ids:
-                issues.append(Issue(rel, "error",
-                    f"material_differences[{i}] ({e.get('id')!r}): "
-                    f"oral_ref {oref!r} does not match any quote.id "
-                    f"in this artifact"))
     return issues
 
 
@@ -1804,13 +1711,6 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
         ("witnesses_testimony",  "note"),
     ],
     "transcript": [
-        # material_differences[].note is special-cased in
-        # check_prose_drift: its source pool is the UNION of the
-        # written_ref's cross-artifact source and the oral_ref's
-        # intra-artifact source, not a single entry.source.path (which
-        # material_differences entries don't carry). See
-        # _gather_material_diff_source_tokens().
-        ("material_differences", "note"),
         # speakers[].role is contributor-authored contextual vocabulary
         # (Witness / Chair / Committee Member / Host / etc.) — scanned
         # against the entry's own source.path.
@@ -1937,55 +1837,6 @@ def load_source_tokens(source_rel_path):
     return tokens
 
 
-def _gather_material_diff_source_tokens(entry, this_artifact_data):
-    """Resolve a material_differences entry's written_ref + oral_ref to
-    their source files and return the pooled token set. Mirrors the F.3
-    design: check #16 verifies material_differences[].note against the
-    UNION of both referenced quotes' source texts (not a single
-    entry.source.path like other per-entry prose fields).
-
-    Returns (pool, failure_reason). pool is a set of tokens (possibly
-    empty); failure_reason is None on success or a short string on any
-    resolution failure (unresolvable ref, unextractable source). On
-    failure, the caller skips drift judgment for this entry — a
-    resolution error already fires from check_material_differences,
-    and a source-extraction failure is infrastructural, not drift.
-    """
-    pool = set()
-    # Written ref — cross-artifact
-    wref = entry.get("written_ref")
-    if isinstance(wref, dict):
-        artifact_ref = wref.get("artifact")
-        quote_id = wref.get("quote_id")
-        if artifact_ref and quote_id and "/" in artifact_ref:
-            _, slug = artifact_ref.split("/", 1)
-            ref_data, err = _load_cross_artifact(slug)
-            if err:
-                return pool, f"written_ref {artifact_ref}:{quote_id} unresolvable"
-            for q in ref_data.get("quotes", []):
-                if isinstance(q, dict) and q.get("id") == quote_id:
-                    src = q.get("source") or {}
-                    src_path = src.get("path")
-                    if src_path:
-                        tokens = load_source_tokens(src_path)
-                        if tokens is not None:
-                            pool |= tokens
-                    break
-    # Oral ref — intra-artifact quote_id
-    oref = entry.get("oral_ref")
-    if isinstance(oref, str):
-        for q in this_artifact_data.get("quotes", []):
-            if isinstance(q, dict) and q.get("id") == oref:
-                src = q.get("source") or {}
-                src_path = src.get("path")
-                if src_path:
-                    tokens = load_source_tokens(src_path)
-                    if tokens is not None:
-                        pool |= tokens
-                break
-    return pool, None
-
-
 def _judge_drift(rel, location, prose_tokens, unmatched):
     """Impartial drift reporter. Warns on every unmatched significant
     token; errors only when 100% of the field's significant tokens are
@@ -2062,26 +1913,6 @@ def check_prose_drift(rel, data, target_type):
             # Source-pool resolution differs by section. Most per-entry
             # prose fields use the entry's own `source.path` (timeline
             # events, affiliation roles, witnesses_testimony notes, etc.).
-            # material_differences entries have no `source` — their token
-            # pool is the union of the written_ref's cross-artifact quote
-            # source and the oral_ref's intra-artifact quote source. See
-            # _gather_material_diff_source_tokens().
-            if list_key == "material_differences":
-                source_tokens, failure = _gather_material_diff_source_tokens(entry, data)
-                if failure:
-                    # Resolution error already fires from
-                    # check_material_differences; skip drift judgment to
-                    # avoid double-reporting the same root cause.
-                    continue
-                if not source_tokens:
-                    continue  # source-extraction failure already warned at top
-                unmatched = prose_tokens - source_tokens
-                issues.extend(_judge_drift(
-                    rel,
-                    f"{list_key}[{i}] ({entry.get('id', '?')!r}) {entry_field}",
-                    prose_tokens, unmatched,
-                ))
-                continue
             src = entry.get("source") or {}
             src_path = src.get("path")
             if not src_path:
@@ -2133,8 +1964,8 @@ def check_added_by_iteration(rel, data):
     """Every typed-section entry's `added_by_iteration` must point at
     an existing `iteration.id`. Enumerates over ALL_ENTRY_SECTIONS so
     newer typed sections (timeline / affiliations / key_personnel /
-    contracts / material_differences / etc.) are cross-validated, not
-    only the universal 6 the pre-F.5a version covered.
+    contracts / etc.) are cross-validated, not only the universal 6
+    the pre-F.5a version covered.
     """
     issues = []
     iteration_ids = {

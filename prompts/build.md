@@ -620,10 +620,6 @@ This:
    - `## Key Passages` — from `quotes[]`, sorted by `statement_date`
      with natural-sort tie-break on id (q1 before q10); H3 per quote
      using `significance` field.
-   - **Hearing-only:** `## Material Differences` — from
-     `material_differences[]` (Topic / Class / Written Quote / Oral
-     Quote / Note columns). Written and Oral cells show ~150-char
-     excerpts + anchor links to each artifact's Key Passages section.
 
    **Media nodes** (F.4b):
    - `## Media Summary` — from `document_intrinsic` + `context_extrinsic`

@@ -76,13 +76,12 @@ and the supporting organization nodes.
 
 ### Cluster B — 2023-07-26 House Oversight hearing (hearing event shipped 2026-04-20; Fravor transcript F.3c shipped 2026-04-19; Grusch written testimony + person shipped 2026-04-20)
 
-Hearing event node + Fravor oral transcript + Grusch written testimony +
-Grusch person node built. Cluster's remaining ring: Grusch and Graves
-oral transcripts and the Graves person node.
+Hearing event node + Fravor + Grusch oral transcripts + Grusch written
+testimony + Grusch person node built. Cluster's remaining ring: Graves
+oral transcript and the Graves person node.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/transcripts/2023-07-26-house-grusch` | transcript / hearing | High | Grusch's oral testimony at the hearing — same stenographic PDF already archived; second F.3b hearing-transcript pilot; now paired with the written testimony + person node to exercise Material Differences and extend the Grusch Claim Inventory | congress.gov hearing transcript PDF (archived) |
 | `/transcripts/2023-07-26-house-graves` | transcript / hearing | High | Graves's oral testimony at the hearing — same stenographic PDF already archived; third F.3b hearing-transcript pilot | congress.gov hearing transcript PDF (archived) |
 | `/people/ryan-graves` | person / eyewitness | High | 2015 Virginia Beach encounters witness; written testimony already archived as document | Graves written testimony (archived + extracted) |
 | `/people/sean-kirkpatrick` | person / institutional-actor | Medium | AARO founding director; named in Graves testimony | 2023-04-19 SASC testimony (archived) |

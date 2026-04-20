@@ -1298,6 +1298,69 @@ validate-research / build-from-research / review-coverage.
 
 ---
 
+## Post-F.3 — Material Differences elimination  ✅ DONE (2026-04-20)
+
+Architectural correction. Hearing-transcript Material Differences
+(F.3 Decision 2) shipped as a per-divergence table with cross-artifact
+`written_ref` + intra-artifact `oral_ref` + `divergence_class` enum +
+contributor-synthesis `note`. Shipped end-to-end through the F.3c
+Fravor pilot (16 MD entries) and the second hearing-transcript pilot
+on Grusch (15 MD entries). Review after the Grusch pilot surfaced
+that the section is architecturally misplaced on transcript nodes:
+
+- A transcript's role is the verbatim record of a proceeding — its
+  evidentiary content is `## Key Passages`. Cross-entity comparative
+  analysis (written vs. oral across two sibling artifacts) is
+  exactly the cross-entity pattern `meta/conventions.md` defines
+  `finding` nodes for.
+- Putting MD on the transcript pushes contributor-synthesis prose
+  (the `note` field) onto the evidentiary record, contradicting
+  the statements-only discipline established by the Post-Step-D
+  claims-layer elimination.
+- BACKLOG `_excerpt_for_table` mid-acronym fix was downstream of
+  MD-on-transcripts; removing MD closes that entry as moot.
+
+Changes landed:
+- `meta/schema.yaml` — `material_differences` conditional key +
+  `material_differences_entry` shape + 3 invariants removed;
+  `Material Differences` dropped from hearing-transcript
+  required_sections; hearing-kind description clarifies that
+  written-vs-oral analysis belongs on a finding node.
+- `scripts/validate-research.py` — `check_material_differences()`,
+  `_gather_material_diff_source_tokens()`,
+  `TRANSCRIPT_KIND_REQUIRED_SECTION`, `VALID_DIVERGENCE_CLASS`, and
+  the material_differences branch in `check_prose_drift` removed.
+  `resolve_cross_artifact_quote_ref()` + `_load_cross_artifact()`
+  retained as reusable infrastructure for F.7 and Step E.3.
+- `scripts/build-from-research.py` —
+  `render_transcript_material_differences()`,
+  `_resolve_cross_artifact_quote()`, `_excerpt_for_table()` removed;
+  hearing-kind MD dispatch dropped. Transcript renderer emits the
+  same section set for both hearing and other kinds.
+- `scripts/research-scaffold.py` — hearing-kind
+  `material_differences` scaffolding removed.
+- `meta/templates/transcript.md` — Material Differences block removed.
+- `prompts/build.md` + `prompts/verify-transcript.md` — MD references
+  removed.
+- `BACKLOG.md` — `_excerpt_for_table` mid-acronym entry deleted.
+- `research/2023-07-26-house-fravor.yaml` +
+  `research/2023-07-26-house-grusch.yaml` — `material_differences:`
+  blocks deleted (16 + 15 entries). Both transcript nodes
+  regenerated without the Material Differences section. No archive
+  — prior F.7 design will reshape comparative analysis when it ships.
+
+This is the **third architectural correction post-launch** (after the
+claims-layer elimination and the source-taxonomy consolidation). The
+pattern matches the prior two: a feature that looked sound at design
+time produced content that, once populated at real-source scale,
+revealed its structural misfit. Running the pipeline against real
+sources catches these; mechanical validation cannot.
+
+F.3 Decision 2 (Material Differences per-divergence entries with
+cross-artifact quote refs) is now superseded.
+
+---
+
 ## Architectural threads still open
 
 - **Statements-only discipline across all synthesis nodes.**

@@ -44,9 +44,6 @@ Event renderer (F.2b):
 Transcript renderer (F.3b):
   - Universal sections: Publication Record, Summary, Speakers,
     Key Passages, Associated Nodes, Open Questions
-  - Hearing kind additionally: Material Differences (cross-artifact
-    written_ref + intra-artifact oral_ref, excerpt + anchor link
-    cells per F.3 Q3-A)
   - `## Summary` is rendered from `artifact.description` per F.3 Q1-A
     (render-time field→section rename; keeps `description` as the
     universal top-level field while the rendered section name fits
@@ -1025,70 +1022,6 @@ def _escape_table_cell(value):
     return s
 
 
-def _excerpt_for_table(text, max_chars=150):
-    """Produce a short excerpt of a quote suitable for a Material
-    Differences table cell. Prefers the first sentence; caps at
-    max_chars with ellipsis on a word boundary. Wraps the excerpt in
-    double quotes to signal verbatim-source content. Empty/missing
-    text returns empty string.
-
-    Per F.3 design (Q3-A): first-sentence-preferred, ~150 char cap,
-    never truncates mid-word. The excerpt IS the fine-grained locator
-    — investigators can Ctrl+F for it within the linked Key Passages
-    section without needing anchor-level precision.
-    """
-    if not text:
-        return ""
-    s = re.sub(r"\s+", " ", str(text)).strip()
-    if not s:
-        return ""
-    # Try first sentence — stop at ., !, ? (followed by space, end, or
-    # closing quote). Must be ≤ max_chars to use.
-    m = re.search(r'^[^.!?]+[.!?]', s)
-    if m and len(m.group(0).strip()) <= max_chars:
-        return f'"{m.group(0).strip()}"'
-    # Fall back: cap at max_chars on a word boundary, add ellipsis
-    if len(s) <= max_chars:
-        return f'"{s}"'
-    trunc = s[:max_chars]
-    last_space = trunc.rfind(" ")
-    if last_space > max_chars // 2:
-        trunc = trunc[:last_space]
-    return f'"{trunc}…"'
-
-
-def _resolve_cross_artifact_quote(ref):
-    """Resolve a {artifact: <type>/<slug>, quote_id: qN} reference to
-    the actual quote entry in the referenced research artifact.
-    Returns (quote_dict, artifact_ref_string) on success, (None, None)
-    on any failure (malformed ref, missing file, missing quote id).
-    Resolver errors are separately surfaced by validate-research.py's
-    check_material_differences; this function stays silent and just
-    returns None so the renderer can emit a placeholder cell.
-    """
-    if not isinstance(ref, dict):
-        return None, None
-    artifact_ref = ref.get("artifact")
-    quote_id = ref.get("quote_id")
-    if not artifact_ref or not quote_id or "/" not in str(artifact_ref):
-        return None, None
-    _, slug = str(artifact_ref).split("/", 1)
-    ref_path = REPO_ROOT / "research" / f"{slug}.yaml"
-    if not ref_path.exists():
-        return None, None
-    try:
-        with open(ref_path) as f:
-            ref_data = yaml.safe_load(f)
-    except yaml.YAMLError:
-        return None, None
-    if not isinstance(ref_data, dict):
-        return None, None
-    for q in ref_data.get("quotes", []) or []:
-        if isinstance(q, dict) and q.get("id") == quote_id:
-            return q, artifact_ref
-    return None, None
-
-
 def render_title_transcript(artifact):
     """H1 title for transcript nodes. Prefers context_extrinsic.display_title,
     falls back to context_extrinsic.hearing_title, then humanized slug."""
@@ -1232,68 +1165,6 @@ def render_transcript_key_passages(artifact):
     return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
 
 
-def render_transcript_material_differences(artifact):
-    """Material Differences section (hearing only) — per-divergence table
-    with excerpted cross-references to the written and oral quote
-    sources. Written Quote cell: excerpt + link to the companion
-    document's `## Key Passages` anchor. Oral Quote cell: excerpt + link
-    to THIS transcript's `## Key Passages` anchor. Per F.3 Q3-A, cells
-    use first-sentence-preferred ~150-char excerpts; investigators Ctrl+F
-    the excerpt text within the linked Key Passages section to find the
-    full verbatim passage.
-
-    Unresolvable refs (artifact missing, quote_id absent) produce a
-    placeholder comment cell rather than silent rendering — the
-    validator-side resolver (check_material_differences) already fires
-    an error; this renderer should make the same failure visible in the
-    rendered body for contributor inspection.
-    """
-    items = sort_by_id([e for e in (artifact.get("material_differences") or []) if isinstance(e, dict)])
-    lines = ["## Material Differences", "",
-             "<!-- Analytically significant divergences between the prepared "
-             "written statement and the live oral testimony. Excerpts "
-             "per F.3 design; full verbatim text lives in each artifact's "
-             "## Key Passages section. -->",
-             "",
-             "| Topic | Class | Written Quote | Oral Quote | Note |",
-             "|---|---|---|---|---|"]
-    if not items:
-        lines.append("|  |  |  |  |  |")
-        return "\n".join(lines) + "\n"
-
-    # Intra-artifact quote index for oral_ref resolution
-    own_quotes = {q.get("id"): q for q in (artifact.get("quotes") or []) if isinstance(q, dict)}
-
-    for e in items:
-        topic = _escape_table_cell(e.get("topic"))
-        dclass = _escape_table_cell(e.get("divergence_class"))
-
-        # Written cell — cross-artifact resolution
-        wref = e.get("written_ref")
-        w_quote, w_artifact_ref = _resolve_cross_artifact_quote(wref)
-        if w_quote and w_artifact_ref:
-            w_excerpt = _excerpt_for_table(w_quote.get("text"))
-            w_link = f"../{w_artifact_ref}.md#key-passages"
-            w_cell = _escape_table_cell(f"{w_excerpt} [→ Key Passages]({w_link})")
-        else:
-            w_cell = "<!-- unresolvable written_ref -->"
-
-        # Oral cell — intra-artifact resolution
-        oref = e.get("oral_ref")
-        o_quote = own_quotes.get(oref) if isinstance(oref, str) else None
-        if o_quote:
-            o_excerpt = _excerpt_for_table(o_quote.get("text"))
-            o_cell = _escape_table_cell(f"{o_excerpt} [→ Key Passages](#key-passages)")
-        else:
-            o_cell = "<!-- unresolvable oral_ref -->"
-
-        note = _escape_table_cell(e.get("note"))
-
-        lines.append(f"| {topic} | {dclass} | {w_cell} | {o_cell} | {note} |")
-
-    return "\n".join(lines) + "\n"
-
-
 # =============================================================================
 # Composition
 # =============================================================================
@@ -1386,28 +1257,23 @@ def render_body_event(artifact, kind):
 
 def render_body_transcript(artifact, kind, fm):
     """Transcript-type body composition. Section order matches the
-    schema's required_sections for the given kind. Universal sections
-    (Publication Record, Summary, Speakers, Key Passages) emit for
-    both kinds; Material Differences is hearing-only. The renderer
-    threads `fm` through to Publication Record so it can read
-    `derived_from` + `source_medium` from the transcript node's
-    frontmatter per F.3 Decision 1.
+    schema's required_sections for the given kind. Both hearing and
+    other kinds emit the same section set (Publication Record, Summary,
+    Speakers, Key Passages). The renderer threads `fm` through to
+    Publication Record so it can read `derived_from` + `source_medium`
+    from the transcript node's frontmatter per F.3 Decision 1.
     """
+    if kind not in ("hearing", "other"):
+        sys.exit(f"ERROR: render_body_transcript: unknown transcript kind {kind!r}")
     title = render_title_transcript(artifact).rstrip("\n") + "\n"
     sections = [
         render_transcript_publication_record(artifact, kind, fm),
         render_transcript_summary(artifact),
         render_transcript_speakers(artifact),
         render_transcript_key_passages(artifact),
-    ]
-    if kind == "hearing":
-        sections.append(render_transcript_material_differences(artifact))
-    elif kind != "other":
-        sys.exit(f"ERROR: render_body_transcript: unknown transcript kind {kind!r}")
-    sections.extend([
         render_associated_nodes(),
         render_open_questions(artifact),
-    ])
+    ]
     sections = [s for s in sections if s]
     joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
     return title + "\n" + joined

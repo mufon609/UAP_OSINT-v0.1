@@ -363,13 +363,12 @@ types:
       #   companion_written_testimony.
     kinds:
       hearing:
-        description: "Verbatim record of a formal proceeding — congressional hearing, deposition. Material-differences dimension applies (written-vs-oral)."
+        description: "Verbatim record of a formal proceeding — congressional hearing, deposition. Written-vs-oral divergence analysis (when it applies) belongs on a finding node, not on the transcript."
         required_sections:
           - Publication Record
           - Summary
           - Speakers
           - Key Passages
-          - Material Differences
           - Associated Nodes
           - Open Questions / Research Gaps
       other:
@@ -653,18 +652,6 @@ types:
         # `What The Hearing Established` prose section — same evidentiary
         # content via cross-reference. Renders as the `## Witnesses &
         # Testimony` table.
-      material_differences:
-        required_when_target_node_type_in: [transcript]
-        required_when_target_node_kind_in: [hearing]
-        # Per-divergence entries documenting analytically significant
-        # differences between a witness's prepared written testimony and
-        # their live oral testimony at a hearing. Each entry carries a
-        # cross-artifact `written_ref` (pointing at a quote in the
-        # companion written-testimony document artifact) and an
-        # intra-artifact `oral_ref` (a quote_id within this transcript
-        # artifact). Present only on hearing-kind transcript artifacts;
-        # absent on `other`-kind transcripts and on all non-transcript
-        # artifacts. Renders as the `## Material Differences` table.
       speakers:
         required_when_target_node_type_in: [transcript]
         # List of speakers in this transcript (witness, chair, committee
@@ -1041,36 +1028,6 @@ types:
       #   sentences; optional). Scanned by check #16 against the entry's
       #   own source.path token pool.
 
-    material_differences_entry:
-      required: [id, topic, divergence_class, written_ref, oral_ref]
-      optional: [note]
-      # topic: short descriptor (1-6 words) naming what the divergence
-      #   concerns — e.g., "Flight hours", "Top Gun attendance",
-      #   "Post-encounter Navy investigation".
-      # divergence_class: one of [elaboration, contradiction, omission,
-      #   clarification, qa-addition]
-      #     elaboration    — oral expands on a written claim with
-      #                      additional detail
-      #     contradiction  — oral directly contradicts the written claim
-      #     omission       — written contains content not surfaced orally
-      #                      (or vice versa)
-      #     clarification  — oral refines ambiguous or imprecise written
-      #                      wording without changing substance
-      #     qa-addition    — material introduced only in Q&A that has no
-      #                      written counterpart
-      # written_ref: cross-artifact pointer, shape
-      #   {artifact: <type>/<slug>, quote_id: <qN>}. Resolves against
-      #   research/<slug>.yaml's quotes list. The contributor adds the
-      #   referenced quote to the document artifact first if it doesn't
-      #   already exist; don't duplicate the verbatim text onto this
-      #   transcript artifact.
-      # oral_ref: quote_id string (e.g., 'q7') resolving within THIS
-      #   transcript artifact's quotes list.
-      # note: contributor synthesis describing the analytical significance
-      #   of the divergence. Scanned by check #16 against the pooled
-      #   source texts of both referenced quotes (written_ref's artifact
-      #   source + oral_ref's local source).
-
     naming_quirk_entry:
       required: [observed, canonical, location, source_path, resolution]
       optional: [note]
@@ -1132,9 +1089,6 @@ types:
       - "program_involvement[].confidence in [high, medium, low]"
       - "participants[].capacity in [witness-eyewitness, witness-whistleblower, witness-institutional, committee-member, observer, official, other]"
       - "witnesses_testimony[].oath_status in [sworn, unsworn, affirmation, unknown]"
-      - "material_differences[].divergence_class in [elaboration, contradiction, omission, clarification, qa-addition]"
-      - "material_differences[].written_ref resolves to an existing quote in the referenced research/{slug}.yaml artifact"
-      - "material_differences[].oral_ref matches a quote.id within this transcript artifact"
       - "media_versioning[].aspect in [duration, encoding, metadata, content, provenance, other] (warn on unknown; `other` permitted)"
       - "key_personnel[].leadership_class (when set) in [director, deputy, staff, advisor, other]"
       - "org_relationships[].relationship_type in [parent, subsidiary, predecessor, successor, contractor, contracting-agency, partner, other]"
@@ -1154,7 +1108,6 @@ types:
       - "event_intrinsic and participants sections present iff target_node type == event"
       - "witnesses_testimony section present iff target_node type == event AND kind == hearing"
       - "corroboration_items section present iff target_node archetype == eyewitness OR (type == event AND kind == encounter)"
-      - "material_differences section present iff target_node type == transcript AND kind == hearing"
       - "speakers section present iff target_node type == transcript"
       - "media_versioning section present iff target_node type == media (empty list permitted when media is canonical / original; populated when derivation_of is set)"
       - "key_personnel and org_relationships sections present iff target_node type == organization"

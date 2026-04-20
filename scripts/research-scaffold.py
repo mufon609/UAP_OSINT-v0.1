@@ -63,9 +63,6 @@ KIND_SECTIONS_BY_TYPE = {
         "hearing":   "witnesses_testimony",
         "encounter": "corroboration_items",
     },
-    "transcript": {
-        "hearing": "material_differences",
-    },
     "organization": {
         "gov-contractor": "contracts",
     },
@@ -272,8 +269,7 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         artifact["participants"] = []
     # Transcript-specific universal sections. `speakers` required on
     # every transcript artifact regardless of kind (cross-reference
-    # surface). Kind-conditional `material_differences` is scaffolded
-    # below via KIND_SECTIONS_BY_TYPE.
+    # surface).
     if node_type == "transcript":
         artifact["speakers"] = []
     # Media-specific universal section. `media_versioning` required on

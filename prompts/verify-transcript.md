@@ -11,7 +11,7 @@ The target transcript node is: **{PATH}**  (ask the user if not specified)
 Steps:
 
 1. Open the node at `{PATH}`. Identify every `> blockquote` in
-   `## Key Passages` and `## Material Differences` (if present).
+   `## Key Passages`.
 2. Open the archived primary source file referenced in the node's
    `## Publication Record` table (field `Transcript URL` →
    `Transcript Verified` local path). Most hearing transcripts live in
