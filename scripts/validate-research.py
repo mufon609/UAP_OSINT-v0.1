@@ -37,6 +37,9 @@ Checks (per schema.yaml research-artifact.invariants):
                 #16 pools both referenced quotes' source texts for
                 prose-drift scan on the note field)
       other   → no kind-specific section
+  - `speakers` section required on every transcript artifact
+    (both kinds) — cross-reference surface; entry requires name + source,
+    optional role / node_link / note.
   - `observation_type` required on every quote when target_node type is
     person; values ∈ {direct, relayed}. Warned when set on a non-person
     artifact (ignored by renderer).
@@ -416,6 +419,20 @@ def validate_artifact(path, schema, manifest_paths):
                         f"(target event kind {target_kind!r} does not carry it — "
                         f"that section belongs to kind {kind_name!r})"))
 
+    # --- Transcript-universal sections (type-conditional on transcript) ---
+    # `speakers` required on every transcript artifact regardless of kind.
+    # Cross-reference surface; renders as `## Speakers` section.
+    if target_type == "transcript":
+        if "speakers" not in data:
+            issues.append(Issue(rel, "error",
+                "Required 'speakers' section missing "
+                "(transcript artifacts require speakers)"))
+    elif target_type is not None:
+        if "speakers" in data:
+            issues.append(Issue(rel, "error",
+                "'speakers' section should not be present "
+                f"(target_node type {target_type!r} is not transcript)"))
+
     # --- Transcript-kind-specific sections (kind-conditional on transcript) ---
     # Only hearing-kind transcripts carry material_differences; `other`-kind
     # transcripts (interview, podcast, broadcast, etc.) carry no
@@ -470,6 +487,8 @@ def validate_artifact(path, schema, manifest_paths):
         issues.extend(check_witnesses_testimony(rel, data, manifest_paths))
     if "material_differences" in data:
         issues.extend(check_material_differences(rel, data, manifest_paths))
+    if "speakers" in data:
+        issues.extend(check_speakers(rel, data, manifest_paths))
 
     # --- Iteration log ---
     issues.extend(check_iterations(rel, data))
@@ -1173,6 +1192,29 @@ def resolve_cross_artifact_quote_ref(ref, rel, error_prefix):
     return issues
 
 
+def check_speakers(rel, data, manifest_paths):
+    """speakers[] — present on every transcript artifact. Each entry:
+    required {name, source}, optional {role, node_link, note}.
+    """
+    issues = []
+    items = _entries(data, "speakers")
+    issues.extend(_check_unique_ids(rel, items, "speakers"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "speakers", i))
+        if "name" not in e or not str(e.get("name") or "").strip():
+            issues.append(Issue(rel, "error",
+                f"speakers[{i}] ({e.get('id')!r}): missing required 'name'"))
+        nl = e.get("node_link")
+        if nl and not str(nl).startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"speakers[{i}] ({e.get('id')!r}): "
+                f"node_link {nl!r} must start with '/'"))
+        issues.extend(_require_source_dict(rel, e, "speakers", i, manifest_paths))
+    return issues
+
+
 def check_material_differences(rel, data, manifest_paths):
     """material_differences[] — present on hearing-kind transcript
     artifacts. Each entry: required {id, topic, divergence_class,
@@ -1349,7 +1391,17 @@ PROSE_FIELDS_BY_TYPE = {
         # not a prose field.
         "description",
     ],
-    # F.3+ extensions:
+    "transcript": [
+        # Transcript top-level prose: `description` renders as the
+        # `## Summary` section via the F.3b render-time field→section
+        # rename (Q1-A decision). Keeps `description` as the universal
+        # top-level required field while the rendered section name fits
+        # transcript semantics. Closes BACKLOG entry "Transcript top-
+        # level description — check #16 prose scoping blocked on F.3b
+        # renderer" (entered in F.3a, resolved in F.3b).
+        "description",
+    ],
+    # F.4+ extensions:
     # "organization": ["overview", "description", ...],
     # "finding": ["what_this_establishes", ...],
 }
@@ -1380,6 +1432,10 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
         # material_differences entries don't carry). See
         # _gather_material_diff_source_tokens().
         ("material_differences", "note"),
+        # speakers[].role is contributor-authored contextual vocabulary
+        # (Witness / Chair / Committee Member / Host / etc.) — scanned
+        # against the entry's own source.path.
+        ("speakers", "role"),
     ],
 }
 

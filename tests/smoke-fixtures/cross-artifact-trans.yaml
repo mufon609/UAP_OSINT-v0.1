@@ -5,7 +5,9 @@ target_node: transcripts/__smoke-xtrans-hearing
 status: active
 created: '2026-04-19'
 last_iteration: i0
-description: Smoke-fixture hearing-transcript artifact. Targets the __smoke-xtrans-hearing transcript node scaffolded by tests/smoke.sh. Not real content; deleted after each smoke run. Exercises the F.3a cross-artifact quote_ref resolver and the check #16 pooled-source drift scan on material_differences[].note.
+description: |
+  Smoke fixture for testing the cross-artifact resolver. Witness
+  testified about aircraft equipment detail in oral testimony.
 primary_sources:
 - path: government/__smoke-xfixture.txt
   format: txt
@@ -16,16 +18,26 @@ quotes:
   added_date: '2026-04-19'
   added_by_iteration: i0
   audit_cadence_days: 365
-  text: Witness testified aircraft equipment detail differs.
+  text: In oral testimony the witness clarified the aircraft equipment detail.
   source:
     path: government/__smoke-xfixture.txt
     location: line 1
-  significance: fixture oral-testimony quote — referenced by material_differences.oral_ref
+  significance: Oral testimony passage
   context: smoke fixture
 claims: []
 entities_referenced: []
 naming_quirks: []
 research_gaps: []
+speakers:
+- id: sp1
+  added_date: '2026-04-19'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  name: Witness
+  role: Witness
+  source:
+    path: government/__smoke-xfixture.txt
+    location: ¶1
 material_differences:
 - id: md1
   added_date: '2026-04-19'
@@ -37,7 +49,7 @@ material_differences:
     artifact: documents/__smoke-xdoc
     quote_id: q1
   oral_ref: q1
-  note: Witness testified aircraft equipment detail differs.
+  note: The witness clarified the aircraft equipment detail in oral testimony.
 iterations:
 - id: i0
   date: '2026-04-19'
@@ -45,5 +57,6 @@ iterations:
   summary: smoke fixture — populated transcript artifact for cross-artifact resolver test
   entries_added:
   - q1
+  - sp1
   - md1
   entries_modified: []

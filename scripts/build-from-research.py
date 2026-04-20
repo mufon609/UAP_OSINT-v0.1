@@ -6,11 +6,11 @@ Reads /research/{slug}.yaml and rewrites /{type}/{slug}.md. Frontmatter is
 preserved from the existing node; body sections (H1 title onward) are
 replaced entirely by content derived from the artifact.
 
-SCOPE: document (D.3), person (F.1b), event (F.2b). Extension to the
-remaining five node types (organization, transcript, media, location,
-finding) is tracked in BACKLOG.md — each requires per-type section
-renderers and type-specific artifact field conventions, per the Step F
-template on the roadmap.
+SCOPE: document (D.3), person (F.1b), event (F.2b), transcript (F.3b).
+Extension to the remaining four node types (organization, media,
+location, finding) is tracked in BACKLOG.md — each requires per-type
+section renderers and type-specific artifact field conventions, per
+the Step F template on the roadmap.
 
 Person renderer (F.1b):
   - Universal sections: Identity, Background, UAP Relevance,
@@ -40,6 +40,24 @@ Event renderer (F.2b):
   - Hearing Participants sub-structured by participant capacity
     (witness-eyewitness / whistleblower / institutional / committee-
     member); encounter Participants uses flat Confirmed/Flagged.
+
+Transcript renderer (F.3b):
+  - Universal sections: Publication Record, Summary, Speakers,
+    Key Passages, Associated Nodes, Open Questions
+  - Hearing kind additionally: Material Differences (cross-artifact
+    written_ref + intra-artifact oral_ref, excerpt + anchor link
+    cells per F.3 Q3-A)
+  - `## Summary` is rendered from `artifact.description` per F.3 Q1-A
+    (render-time field→section rename; keeps `description` as the
+    universal top-level field while the rendered section name fits
+    transcript semantics).
+  - Publication Record auto-populates `Source Medium` and `Underlying
+    X Node` rows from frontmatter (`source_medium` / `derived_from`)
+    per F.3 Decision 1 — frontmatter stays the single source of
+    truth for those fields; no artifact-side duplication.
+  - Key Passages uses H3 per quote (significance field) like document
+    Key Passages, providing navigability for transcripts that may
+    carry many quotes.
 
 DETERMINISM: given the same artifact + node frontmatter, output is
 byte-for-byte identical across runs. Entries are rendered in id-sorted
@@ -92,8 +110,8 @@ TYPE_DIRS = {
 }
 
 # Types this script can regenerate (D.3 scope: document;
-# F.1b adds person; F.2b adds event)
-SUPPORTED_TYPES = {"document", "person", "event"}
+# F.1b adds person; F.2b adds event; F.3b adds transcript)
+SUPPORTED_TYPES = {"document", "person", "event", "transcript"}
 
 # Archetype → archetype-specific artifact section name (person only)
 ARCHETYPE_SECTION = {
@@ -944,6 +962,285 @@ def render_witnesses_testimony(artifact):
 
 
 # =============================================================================
+# Transcript-type section renderers (F.3b)
+# =============================================================================
+
+def _escape_table_cell(value):
+    """Escape a value for safe inclusion in a markdown table cell.
+    Collapses newlines to spaces and backslash-escapes pipe characters
+    (which would otherwise break column alignment). `None` → empty
+    string."""
+    if value is None:
+        return ""
+    s = str(value).replace("\n", " ")
+    s = s.replace("|", "\\|")
+    return s
+
+
+def _excerpt_for_table(text, max_chars=150):
+    """Produce a short excerpt of a quote suitable for a Material
+    Differences table cell. Prefers the first sentence; caps at
+    max_chars with ellipsis on a word boundary. Wraps the excerpt in
+    double quotes to signal verbatim-source content. Empty/missing
+    text returns empty string.
+
+    Per F.3 design (Q3-A): first-sentence-preferred, ~150 char cap,
+    never truncates mid-word. The excerpt IS the fine-grained locator
+    — investigators can Ctrl+F for it within the linked Key Passages
+    section without needing anchor-level precision.
+    """
+    if not text:
+        return ""
+    s = re.sub(r"\s+", " ", str(text)).strip()
+    if not s:
+        return ""
+    # Try first sentence — stop at ., !, ? (followed by space, end, or
+    # closing quote). Must be ≤ max_chars to use.
+    m = re.search(r'^[^.!?]+[.!?]', s)
+    if m and len(m.group(0).strip()) <= max_chars:
+        return f'"{m.group(0).strip()}"'
+    # Fall back: cap at max_chars on a word boundary, add ellipsis
+    if len(s) <= max_chars:
+        return f'"{s}"'
+    trunc = s[:max_chars]
+    last_space = trunc.rfind(" ")
+    if last_space > max_chars // 2:
+        trunc = trunc[:last_space]
+    return f'"{trunc}…"'
+
+
+def _resolve_cross_artifact_quote(ref):
+    """Resolve a {artifact: <type>/<slug>, quote_id: qN} reference to
+    the actual quote entry in the referenced research artifact.
+    Returns (quote_dict, artifact_ref_string) on success, (None, None)
+    on any failure (malformed ref, missing file, missing quote id).
+    Resolver errors are separately surfaced by validate-research.py's
+    check_material_differences; this function stays silent and just
+    returns None so the renderer can emit a placeholder cell.
+    """
+    if not isinstance(ref, dict):
+        return None, None
+    artifact_ref = ref.get("artifact")
+    quote_id = ref.get("quote_id")
+    if not artifact_ref or not quote_id or "/" not in str(artifact_ref):
+        return None, None
+    _, slug = str(artifact_ref).split("/", 1)
+    ref_path = REPO_ROOT / "research" / f"{slug}.yaml"
+    if not ref_path.exists():
+        return None, None
+    try:
+        with open(ref_path) as f:
+            ref_data = yaml.safe_load(f)
+    except yaml.YAMLError:
+        return None, None
+    if not isinstance(ref_data, dict):
+        return None, None
+    for q in ref_data.get("quotes", []) or []:
+        if isinstance(q, dict) and q.get("id") == quote_id:
+            return q, artifact_ref
+    return None, None
+
+
+def render_title_transcript(artifact):
+    """H1 title for transcript nodes. Prefers context_extrinsic.display_title,
+    falls back to context_extrinsic.hearing_title, then humanized slug."""
+    slug = artifact["target_node"].split("/", 1)[1] if "/" in artifact["target_node"] else ""
+    ctx = artifact.get("context_extrinsic") or {}
+    title = (
+        ctx.get("display_title")
+        or ctx.get("hearing_title")
+        or (slug and " ".join(w.capitalize() for w in slug.split("-")))
+        or ""
+    )
+    return f"# {title}\n"
+
+
+def render_transcript_publication_record(artifact, kind, fm):
+    """Publication Record table — kind-dispatched. Hearing emits full
+    hearing metadata + companion written-testimony cross-ref; `other`
+    emits outlet/host/source-medium metadata. Auto-populates
+    `Source Medium` and `Underlying X` rows from frontmatter
+    (`source_medium` / `derived_from`) per F.3 Decision 1 — keeps
+    frontmatter as the single source of truth for those fields rather
+    than duplicating into the artifact."""
+    ctx = artifact.get("context_extrinsic") or {}
+    lines = ["## Publication Record", "", "| Field | Value |", "|---|---|"]
+
+    def row(label, value):
+        if value in (None, "", [], {}):
+            return
+        if isinstance(value, list):
+            value = "; ".join(str(v) for v in value)
+        lines.append(f"| {label} | {_escape_table_cell(value)} |")
+
+    derived_from = (fm or {}).get("derived_from") or ctx.get("derived_from")
+    source_medium = (fm or {}).get("source_medium") or ctx.get("source_medium")
+
+    if kind == "hearing":
+        row("Full Hearing Title", ctx.get("hearing_title"))
+        row("Convening Body",     ctx.get("committee") or ctx.get("convening_body"))
+        row("Session",            ctx.get("session"))
+        row("Serial No.",         ctx.get("serial_no"))
+        row("Date",               ctx.get("hearing_date") or ctx.get("date"))
+        row("Location",           ctx.get("location"))
+        row("Witness",            ctx.get("witness"))
+        row("Oath Status",        ctx.get("oath_status"))
+        row("Transcript URL",     ctx.get("primary_source_url"))
+        row("Transcript Verified", ctx.get("transcript_verified"))
+        row("Event Node",         _wrap_path(ctx.get("event_node")))
+        # derived_from on a hearing transcript typically points at a
+        # /documents/... node (the companion written testimony). Emit
+        # as "Companion Written Testimony" row in that case.
+        if derived_from and str(derived_from).startswith("/documents/"):
+            row("Companion Written Testimony", _wrap_path(derived_from))
+        else:
+            row("Companion Written Testimony", _wrap_path(ctx.get("companion_written_testimony")))
+    else:  # other
+        row("Outlet / Platform",  ctx.get("outlet") or ctx.get("platform"))
+        row("Program / Show / Venue", ctx.get("program") or ctx.get("venue"))
+        row("Date",               ctx.get("air_date") or ctx.get("date"))
+        row("Host(s) / Interviewer(s)", ctx.get("hosts") or ctx.get("interviewers"))
+        row("Primary Speaker(s)", ctx.get("primary_speakers"))
+        row("Format",             ctx.get("format"))
+        row("Source Medium",      source_medium)
+        # derived_from on an `other` transcript typically points at a
+        # /media/... node (the underlying media the transcript renders).
+        if derived_from and str(derived_from).startswith("/media/"):
+            row("Underlying Media Node", _wrap_path(derived_from))
+        elif derived_from and str(derived_from).startswith("/documents/"):
+            row("Underlying Document", _wrap_path(derived_from))
+        row("Source URL",         ctx.get("primary_source_url"))
+        row("Transcript Verified", ctx.get("transcript_verified"))
+        row("Citation Style",     ctx.get("citation_style"))
+
+    # Placeholder row when no fields are populated
+    if len(lines) == 4:
+        lines.append("|  |  |")
+    return "\n".join(lines) + "\n"
+
+
+def render_transcript_summary(artifact):
+    """Summary section — renders `artifact.description` as `## Summary`
+    per F.3 Decision 1 (Q1-A). Transcripts semantically summarize speech
+    content; the render-time field→section rename keeps
+    `description` as the universal top-level required field while the
+    rendered section name fits transcript semantics."""
+    desc = (artifact.get("description") or "").strip()
+    body = desc if desc else "<!-- TODO: populate `description` in the research artifact -->"
+    return f"## Summary\n\n{body}\n"
+
+
+def render_transcript_speakers(artifact):
+    """Speakers section — cross-reference table for who spoke in this
+    transcript. Rendered from the `speakers` artifact field (Q2-A
+    decision). NOT a statement surface — actual statements live in
+    `quotes` and render as `## Key Passages`."""
+    items = sort_by_id([s for s in (artifact.get("speakers") or []) if isinstance(s, dict)])
+    lines = ["## Speakers", "",
+             "| Name | Role | Node Link |",
+             "|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |")
+        return "\n".join(lines) + "\n"
+    for s in items:
+        lines.append(
+            f"| {_escape_table_cell(s.get('name'))} | "
+            f"{_escape_table_cell(s.get('role'))} | "
+            f"{_wrap_path(s.get('node_link'))} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+def render_transcript_key_passages(artifact):
+    """Key Passages section — verbatim block-quote + verification-block
+    pairs, one per quote in the artifact. Uses H3 per quote (significance
+    field) like document Key Passages — transcripts typically carry many
+    quotes and H3 breaks provide navigability. Sorted by statement_date
+    when set; falls through to id-order for undated quotes.
+    """
+    quotes = [q for q in (artifact.get("quotes") or []) if isinstance(q, dict)]
+    quotes = sort_by_date(quotes, "statement_date")
+
+    head = "## Key Passages\n"
+    if not quotes:
+        return head + "\n<!-- TODO: populate `quotes` in the research artifact -->\n"
+
+    blocks = []
+    for q in quotes:
+        h3 = q.get("significance") or "Passage"
+        text = (q.get("text") or "").rstrip("\n")
+        lines = [f"### {h3}", ""]
+        for qline in text.split("\n"):
+            lines.append(f"> {qline}" if qline else ">")
+        lines.append("")
+        lines.append(_render_verification_block(q, artifact))
+        blocks.append("\n".join(lines))
+    return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
+
+
+def render_transcript_material_differences(artifact):
+    """Material Differences section (hearing only) — per-divergence table
+    with excerpted cross-references to the written and oral quote
+    sources. Written Quote cell: excerpt + link to the companion
+    document's `## Key Passages` anchor. Oral Quote cell: excerpt + link
+    to THIS transcript's `## Key Passages` anchor. Per F.3 Q3-A, cells
+    use first-sentence-preferred ~150-char excerpts; investigators Ctrl+F
+    the excerpt text within the linked Key Passages section to find the
+    full verbatim passage.
+
+    Unresolvable refs (artifact missing, quote_id absent) produce a
+    placeholder comment cell rather than silent rendering — the
+    validator-side resolver (check_material_differences) already fires
+    an error; this renderer should make the same failure visible in the
+    rendered body for contributor inspection.
+    """
+    items = sort_by_id([e for e in (artifact.get("material_differences") or []) if isinstance(e, dict)])
+    lines = ["## Material Differences", "",
+             "<!-- Analytically significant divergences between the prepared "
+             "written statement and the live oral testimony. Excerpts "
+             "per F.3 design; full verbatim text lives in each artifact's "
+             "## Key Passages section. -->",
+             "",
+             "| Topic | Class | Written Quote | Oral Quote | Note |",
+             "|---|---|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |  |  |")
+        return "\n".join(lines) + "\n"
+
+    # Intra-artifact quote index for oral_ref resolution
+    own_quotes = {q.get("id"): q for q in (artifact.get("quotes") or []) if isinstance(q, dict)}
+
+    for e in items:
+        topic = _escape_table_cell(e.get("topic"))
+        dclass = _escape_table_cell(e.get("divergence_class"))
+
+        # Written cell — cross-artifact resolution
+        wref = e.get("written_ref")
+        w_quote, w_artifact_ref = _resolve_cross_artifact_quote(wref)
+        if w_quote and w_artifact_ref:
+            w_excerpt = _excerpt_for_table(w_quote.get("text"))
+            w_link = f"../{w_artifact_ref}.md#key-passages"
+            w_cell = _escape_table_cell(f"{w_excerpt} [→ Key Passages]({w_link})")
+        else:
+            w_cell = "<!-- unresolvable written_ref -->"
+
+        # Oral cell — intra-artifact resolution
+        oref = e.get("oral_ref")
+        o_quote = own_quotes.get(oref) if isinstance(oref, str) else None
+        if o_quote:
+            o_excerpt = _excerpt_for_table(o_quote.get("text"))
+            o_cell = _escape_table_cell(f"{o_excerpt} [→ Key Passages](#key-passages)")
+        else:
+            o_cell = "<!-- unresolvable oral_ref -->"
+
+        note = _escape_table_cell(e.get("note"))
+
+        lines.append(f"| {topic} | {dclass} | {w_cell} | {o_cell} | {note} |")
+
+    return "\n".join(lines) + "\n"
+
+
+# =============================================================================
 # Composition
 # =============================================================================
 
@@ -1033,6 +1330,35 @@ def render_body_event(artifact, kind):
     return title + "\n" + joined
 
 
+def render_body_transcript(artifact, kind, fm):
+    """Transcript-type body composition. Section order matches the
+    schema's required_sections for the given kind. Universal sections
+    (Publication Record, Summary, Speakers, Key Passages) emit for
+    both kinds; Material Differences is hearing-only. The renderer
+    threads `fm` through to Publication Record so it can read
+    `derived_from` + `source_medium` from the transcript node's
+    frontmatter per F.3 Decision 1.
+    """
+    title = render_title_transcript(artifact).rstrip("\n") + "\n"
+    sections = [
+        render_transcript_publication_record(artifact, kind, fm),
+        render_transcript_summary(artifact),
+        render_transcript_speakers(artifact),
+        render_transcript_key_passages(artifact),
+    ]
+    if kind == "hearing":
+        sections.append(render_transcript_material_differences(artifact))
+    elif kind != "other":
+        sys.exit(f"ERROR: render_body_transcript: unknown transcript kind {kind!r}")
+    sections.extend([
+        render_associated_nodes(),
+        render_open_questions(artifact),
+    ])
+    sections = [s for s in sections if s]
+    joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
+    return title + "\n" + joined
+
+
 def render_body(artifact, node_type, fm):
     """Dispatch by node_type. `fm` is the existing node frontmatter
     (needed for kind / archetype context the renderer can't derive from
@@ -1043,6 +1369,8 @@ def render_body(artifact, node_type, fm):
         return render_body_person(artifact, fm.get("archetype"))
     if node_type == "event":
         return render_body_event(artifact, fm.get("kind"))
+    if node_type == "transcript":
+        return render_body_transcript(artifact, fm.get("kind"), fm)
     sys.exit(f"ERROR: build-from-research.py does not yet support node_type {node_type!r}")
 
 

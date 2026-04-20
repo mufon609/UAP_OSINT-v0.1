@@ -5,7 +5,9 @@ target_node: documents/__smoke-xdoc
 status: active
 created: '2026-04-19'
 last_iteration: i0
-description: Smoke-fixture document artifact. Targets the __smoke-xdoc document node scaffolded by tests/smoke.sh. Not real content; deleted after each smoke run. Used as the cross-artifact target for the hearing-transcript fixture's material_differences.written_ref.
+description: |
+  Smoke fixture primary source for testing. Witness testified about
+  aircraft equipment detail in written testimony.
 primary_sources:
 - path: government/__smoke-xfixture.txt
   format: txt
@@ -20,7 +22,7 @@ quotes:
   source:
     path: government/__smoke-xfixture.txt
     location: ¶1
-  significance: fixture quote — referenced by smoke transcript artifact via written_ref
+  significance: Written testimony passage
   context: smoke fixture
 claims: []
 entities_referenced: []

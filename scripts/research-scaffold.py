@@ -254,6 +254,12 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     if node_type == "event":
         artifact["event_intrinsic"] = {}
         artifact["participants"] = []
+    # Transcript-specific universal sections. `speakers` required on
+    # every transcript artifact regardless of kind (cross-reference
+    # surface). Kind-conditional `material_differences` is scaffolded
+    # below via KIND_SECTIONS_BY_TYPE.
+    if node_type == "transcript":
+        artifact["speakers"] = []
     # Archetype-conditional section on person artifacts. Reads the target
     # node's frontmatter to get its archetype; scaffolds the corresponding
     # empty list. Only one of the four sections is ever scaffolded

@@ -613,6 +613,14 @@ types:
         # artifact). Present only on hearing-kind transcript artifacts;
         # absent on `other`-kind transcripts and on all non-transcript
         # artifacts. Renders as the `## Material Differences` table.
+      speakers:
+        required_when_target_node_type_in: [transcript]
+        # List of speakers in this transcript (witness, chair, committee
+        # members, host, interviewer, etc.). Name + role + optional link
+        # to a person node. Cross-reference surface (NOT a statement
+        # surface — speakers' actual statements live in `quotes` and
+        # render as `## Key Passages`). Required on every transcript
+        # artifact regardless of kind; renders as `## Speakers`.
 
     # Primary-source list entries
     primary_sources_entry:
@@ -806,6 +814,20 @@ types:
       # source: object with path + location — typically the hearing
       #   transcript or witness record attesting the oath status
 
+    speaker_entry:
+      required: [name, source]
+      optional: [role, node_link, note]
+      # name: display name (e.g., "David Fravor", "Glenn Grothman")
+      # role: one of [Witness, Chair, Committee Member, Host, Interviewer,
+      #   Guest, Moderator, Presenter, Other] — free-text (scanned by
+      #   check #16 against primary_sources pool)
+      # node_link: optional /people/... path when the speaker has a
+      #   repository node. Renders as backtick-bracket link in the
+      #   Node Link column.
+      # source: object with path + location — typically the transcript's
+      #   own source page where the speaker is named/identified (cover
+      #   sheet, speaker roster, intro Q&A)
+
     material_differences_entry:
       required: [id, topic, divergence_class, written_ref, oral_ref]
       optional: [note]
@@ -917,6 +939,7 @@ types:
       - "witnesses_testimony section present iff target_node type == event AND kind == hearing"
       - "corroboration_items section present iff target_node archetype == eyewitness OR (type == event AND kind == encounter)"
       - "material_differences section present iff target_node type == transcript AND kind == hearing"
+      - "speakers section present iff target_node type == transcript"
 
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema

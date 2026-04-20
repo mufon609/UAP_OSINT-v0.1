@@ -244,6 +244,37 @@ for xartifact in "research/__smoke-xdoc.yaml" "research/__smoke-xtrans-hearing.y
     fi
 done
 
+# Render both via build-from-research.py — the transcript pass is the
+# F.3b renderer end-to-end check (Publication Record / Summary /
+# Speakers / Key Passages / Material Differences with cross-artifact
+# excerpt rendering all run; post-build validate.py confirms structural
+# + verbatim-quote integrity on the regenerated node).
+for xartifact in "research/__smoke-xdoc.yaml" "research/__smoke-xtrans-hearing.yaml"; do
+    cross_out="$(python3 scripts/build-from-research.py "$xartifact" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("cross-artifact $xartifact — build-from-research.py failed: $(echo "$cross_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+done
+
+# Review-coverage on both — Coverage / Boundary / Stub-linking / OQ
+# dedup. Boundary is the strongest check: re-runs build-from-research
+# dry-run and diffs against the just-rendered node; any non-determinism
+# in the renderer surfaces here.
+for xartifact in "research/__smoke-xdoc.yaml" "research/__smoke-xtrans-hearing.yaml"; do
+    cross_out="$(python3 scripts/review-coverage.py "$xartifact" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("cross-artifact $xartifact — review-coverage.py failed: $(echo "$cross_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+done
+
 echo "======================================================================"
 echo " Fixture smoke tests"
 echo "======================================================================"
