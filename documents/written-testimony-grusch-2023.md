@@ -63,7 +63,7 @@ The document is a primary source for what Grusch stated in writing for submissio
 
 ### UAP-specific role — NGA co-lead; UAPTF and AARO reporting
 
-> I was my agency's co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, as well as reporting to UAP Task Force (UAPTF) and eventually the All-Domain Anomaly Resolution Office (AARO).
+> I was my agency’s co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, as well as reporting to UAP Task Force (UAPTF) and eventually the All-Domain Anomaly Resolution Office (AARO).
 
 | Field | Value |
 |---|---|
@@ -128,7 +128,7 @@ The document is a primary source for what Grusch stated in writing for submissio
 
 ### NRO reservist role — UAPTF membership 2019-2021; NRO Operations Center director's briefing staff; PDB coordination
 
-> In the USAF, in my National Reconnaissance Office (NRO) reservist capacity, I was a member of the UAPTF from 2019-2021. I served in the NRO Operations Center on the director's briefing staff, which included the coordination of the Presidential Daily Brief (PDB) and supporting contingency operations.
+> In the USAF, in my National Reconnaissance Office (NRO) reservist capacity, I was a member of the UAPTF from 2019-2021. I served in the NRO Operations Center on the director’s briefing staff, which included the coordination of the Presidential Daily Brief (PDB) and supporting contingency operations.
 
 | Field | Value |
 |---|---|
@@ -167,7 +167,7 @@ The document is a primary source for what Grusch stated in writing for submissio
 
 ### Core allegation — multi-decade UAP crash retrieval and reverse engineering program; Grusch's stated denial of access to the program's read-on's
 
-> I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-on's.
+> I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-on’s.
 
 | Field | Value |
 |---|---|
@@ -263,4 +263,4 @@ The document is a primary source for what Grusch stated in writing for submissio
 - [ ] Locate the ICIG's determination on Grusch's PPD-19 Urgent Concern filing — ICIG unclassified correspondence or public statements; House Oversight committee materials submitted during the 2023-07-26 hearing cycle; FOIA the ICIG for a releasable version of the determination if no public record exists
 - [ ] Document the specific retaliation Grusch references (Opening ¶13) — the written statement asserts retaliation but provides no specifics — Cross-reference against his oral Q&A at the same hearing (/transcripts/2023-07-26-house-grusch — not yet built) and subsequent interviews (NewsNation) for enumerated retaliation incidents
 - [ ] Identify the person or office behind the PDF Author metadata field "gscie" on this document — Cross-reference against staff identifiers in House Oversight committee submissions from the same cycle; check other archived PDFs submitted by Grusch or his counsel for the same metadata signature. Minor provenance question — does not affect authorship of the document's content, which is unambiguously Grusch's first-person statement
-- [ ] Cross-reference Grusch's written testimony against his oral testimony at /transcripts/2023-07-26-house-grusch to document Material Differences — Once the hearing transcript node is built, review oral Q&A for substantive claims, named programs, named individuals, and biographical content not present in this written statement — e.g., the "biologics" framing, "Non-Human Intelligence" terminology, and specific named witnesses known to appear in the oral record
+- [ ] Cross-reference Grusch's written testimony against his oral testimony at /transcripts/2023-07-26-house-grusch to document Material Differences — Once the hearing transcript node is built, review oral Q&A for substantive claims, named programs, named individuals, and biographical content not present in this written statement. The written statement is 104 lines across 3 pages; the oral record is the stenographic transcript of the 2023-07-26 House Oversight hearing and should be extracted and compared systematically rather than anchored against expected-content assumptions

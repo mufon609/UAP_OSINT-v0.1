@@ -4,7 +4,7 @@ schema_version: 1
 target_node: documents/written-testimony-grusch-2023
 status: active
 created: '2026-04-20'
-last_iteration: i0
+last_iteration: i1
 description: |
   Opening Statement and Closing Statement by David Charles Grusch ([`/people/david-grusch`]), submitted for the [`/events/2023-07-26-house-uap-hearing`] before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs. The Opening Statement identifies Grusch as an intelligence officer for 14 years — in the US Air Force ([`/organizations/us-air-force`]) at the rank of Major and from 2021-2023 at the National Geospatial-Intelligence Agency ([`/organizations/nga`]) at the GS-15 civilian level — and his agency's co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, reporting to the UAP Task Force ([`/organizations/uaptf`]) and the All-Domain Anomaly Resolution Office ([`/organizations/aaro`]).
 
@@ -65,7 +65,7 @@ quotes:
   added_date: '2026-04-20'
   added_by_iteration: i0
   audit_cadence_days: 365
-  text: I was my agency's co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, as well as reporting to UAP Task Force (UAPTF) and eventually the All-Domain Anomaly Resolution Office (AARO).
+  text: I was my agency’s co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, as well as reporting to UAP Task Force (UAPTF) and eventually the All-Domain Anomaly Resolution Office (AARO).
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
     location: Opening ¶3
@@ -115,7 +115,7 @@ quotes:
   added_date: '2026-04-20'
   added_by_iteration: i0
   audit_cadence_days: 365
-  text: In the USAF, in my National Reconnaissance Office (NRO) reservist capacity, I was a member of the UAPTF from 2019-2021. I served in the NRO Operations Center on the director's briefing staff, which included the coordination of the Presidential Daily Brief (PDB) and supporting contingency operations.
+  text: In the USAF, in my National Reconnaissance Office (NRO) reservist capacity, I was a member of the UAPTF from 2019-2021. I served in the NRO Operations Center on the director’s briefing staff, which included the coordination of the Presidential Daily Brief (PDB) and supporting contingency operations.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
     location: Opening ¶8
@@ -145,7 +145,7 @@ quotes:
   added_date: '2026-04-20'
   added_by_iteration: i0
   audit_cadence_days: 365
-  text: I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-on's.
+  text: I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-on’s.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
     location: Opening ¶11
@@ -189,7 +189,7 @@ quotes:
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
     location: Closing ¶18
-  significance: "Closing terminology — \"Non-Human Reverse Engineering Programs\" naming; \"ontological (earth-shattering) shock\" framing"
+  significance: Closing terminology — "Non-Human Reverse Engineering Programs" naming; "ontological (earth-shattering) shock" framing
   context: closing statement
 claims: []
 entities_referenced:
@@ -286,7 +286,7 @@ research_gaps:
   added_date: '2026-04-20'
   added_by_iteration: i0
   statement: Cross-reference Grusch's written testimony against his oral testimony at /transcripts/2023-07-26-house-grusch to document Material Differences
-  methodology: Once the hearing transcript node is built, review oral Q&A for substantive claims, named programs, named individuals, and biographical content not present in this written statement — e.g., the "biologics" framing, "Non-Human Intelligence" terminology, and specific named witnesses known to appear in the oral record
+  methodology: Once the hearing transcript node is built, review oral Q&A for substantive claims, named programs, named individuals, and biographical content not present in this written statement. The written statement is 104 lines across 3 pages; the oral record is the stenographic transcript of the 2023-07-26 House Oversight hearing and should be extracted and compared systematically rather than anchored against expected-content assumptions
   resolved: false
 iterations:
 - id: i0
@@ -323,3 +323,13 @@ iterations:
   - rg4
   - rg5
   entries_modified: []
+- id: i1
+  date: '2026-04-20'
+  trigger: audit-correction
+  summary: 'Post-i0 self-audit, two corrections. (1) Apostrophe fidelity — source uses curly apostrophes (U+2019) consistently, including in the three quotes that contain possessives/contractions; q2 ("agency’s"), q7 ("director’s"), and q10 ("read-on’s") updated from straight to curly to preserve source typography. Validator check #11 passed on both forms via normalization, but source-read-first discipline favors preserving the exact source character. (2) rg5 methodology softened — the i0 methodology enumerated specific expected oral-record content ("biologics" framing, "Non-Human Intelligence" terminology, "specific named witnesses known to appear in the oral record"), which are training-knowledge assertions about a transcript that has not been extracted or examined in this session. Revised to general methodology that will anchor against the actual transcript when it is built, rather than against expected-content assumptions.'
+  entries_added: []
+  entries_modified:
+  - q2
+  - q7
+  - q10
+  - rg5
