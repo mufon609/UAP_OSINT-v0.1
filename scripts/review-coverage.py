@@ -520,12 +520,21 @@ def check_boundary(artifact_path, node_path, rel):
 def check_stub_linking(artifact, node_text, rel):
     issues = []
     links_in_node = set(LINK_PATTERN.findall(node_text))
+    # Self-reference filter: skip any entity whose wrap_path resolves to
+    # the artifact's own target_node. Person nodes (and others) don't
+    # self-wrap, so a subject-as-entity entry would cause a spurious
+    # Stub-linking error. The subject's identity is carried by the node
+    # itself (Identity section on person; equivalent surfaces elsewhere).
+    target_node = artifact.get("target_node") or ""
+    self_path = f"/{target_node}" if target_node and not target_node.startswith("/") else target_node
     for e in artifact.get("entities_referenced") or []:
         if not isinstance(e, dict):
             continue
         wp = e.get("wrap_path")
         if not wp:
             continue
+        if wp == self_path:
+            continue  # subject of the artifact is not listed as an "other" entity
         if wp not in links_in_node:
             issues.append(Issue(rel, "error",
                 f"Stub-linking: entity {e.get('id')!r} ({e.get('name')!r}) "

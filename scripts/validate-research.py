@@ -149,10 +149,22 @@ TYPE_DIRS = {
 
 REQUIRED_TOP_LEVEL_KEYS = [
     "id", "type", "schema_version", "target_node", "status", "created",
-    "last_iteration", "description", "primary_sources", "document_intrinsic",
+    "last_iteration", "primary_sources", "document_intrinsic",
     "context_extrinsic", "quotes", "claims", "entities_referenced",
     "naming_quirks", "research_gaps", "iterations",
 ]
+
+# `description` is required on all artifact types EXCEPT person. Person
+# body renderer (render_body_person) emits Background / UAP Relevance /
+# Credibility Notes from dedicated fields and never calls
+# render_description, so a populated description on a person artifact
+# is unrendered content. Enforced after target_type is read below so
+# the requirement is type-conditional; person artifacts may omit
+# description entirely.
+DESCRIPTION_REQUIRED_TYPES = {
+    "document", "transcript", "media", "event",
+    "organization", "finding", "location",
+}
 
 # All entry-bearing typed sections that participate in the lifecycle-
 # fields and cross-ref checks (check_added_by_iteration,
@@ -432,6 +444,15 @@ def validate_artifact(path, schema, manifest_paths):
                     target_kind = fm_of_target.get("kind")
                 if target_type == "media":
                     target_derivation_of = fm_of_target.get("derivation_of")
+
+    # --- description required on non-person artifacts ---
+    # Person body renderer doesn't emit ## Description; other types do.
+    # Check placed here so target_type is known.
+    if target_type in DESCRIPTION_REQUIRED_TYPES and "description" not in data:
+        issues.append(Issue(rel, "error",
+            f"Missing required top-level key: 'description' "
+            f"(target_node type {target_type!r} renders ## Description "
+            f"from this field)"))
 
     # --- rumors section present iff target type in RUMORS_TYPES ---
     if target_type in RUMORS_TYPES:
@@ -1700,6 +1721,12 @@ def extract_significant_tokens(text):
         return set()
     text = re.sub(r"\[`/[^`]+`\]", "", str(text))
     text = re.sub(r"[*_`]", "", text)
+    # Em-dash / en-dash → ASCII hyphen. Mirrors validate.py's
+    # normalize_for_compare (check #11), so "F–18" in source and "F-18"
+    # in prose tokenize identically. Without this, the two checks
+    # diverge on typographic-dash handling and prose-drift fires false
+    # positives on source-verbatim content.
+    text = text.replace("\u2014", "-").replace("\u2013", "-")
     text = text.lower()
     words = re.findall(r"[a-z0-9][a-z0-9\-']+", text)
     # Strip trailing possessive `'s` to collapse "fravor" ↔ "fravor's".
