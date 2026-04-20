@@ -48,12 +48,6 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|---|---|
 | [`/people/david-grusch`] | Witness — former National Reconnaissance Office Representative, Unidentified Anomalous Phenomena Task Force, Department of Defense | government/congress-gov-house-hearing-transcript-20230726.pdf | [`/people/david-grusch`] |
 
-#### Witnesses — Institutional Testimony
-
-| Participant | Role | Source | Node Link |
-|---|---|---|---|
-|  |  |  |  |
-
 #### Committee Members
 
 | Participant | Role | Source | Node Link |

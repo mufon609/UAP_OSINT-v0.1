@@ -190,49 +190,6 @@ function-level testing more natural.
 
 ---
 
-### Description field: move to agent-generated (currently human-authored)
-
-**Issue.** `research-artifact.description` is a free-text prose field the
-contributor writes by hand during Phase I. It renders directly as the
-node's `## Description` section. This is intentionally simple for D.3
-(Option A: the artifact stores the prose, the build just passes it
-through). The long-term goal (Option B) is to derive the description
-programmatically from the artifact's structured fields
-(`document_intrinsic`, `claims`, `entities_referenced`, etc.) so that
-the description can never drift from the artifact's evidentiary layer.
-
-**Why it matters.** Hand-written descriptions are a reintroduction of
-the Phase 2 v1 failure surface: prose that "feels true" but isn't
-strictly derivable from the artifact's claims/quotes. A programmatic
-derivation (or a tightly-bounded agent-task that reads only
-document_intrinsic + claims + quotes) would close that surface.
-
-**Proposed scope.** Two possible directions, to be evaluated once more
-artifacts have been built under Option A:
-
-1. **Deterministic template** — a per-node-type template that
-   interpolates artifact fields into a fixed-shape description. Works
-   when descriptions follow predictable patterns (e.g., for documents:
-   "{Internal title} — {author}'s {doc_form} submitted {date} for
-   {hearing/venue}. The document opens with {first claim statement}…").
-   May feel mechanical; sacrifices narrative flexibility.
-
-2. **Bounded agent task T7** — an agent reads
-   `document_intrinsic + claims + quotes + entities_referenced` and
-   produces a 1-3 paragraph description whose every factual statement
-   is traceable to a specific artifact entry. A coverage checker
-   confirms the generated description cites no claim not in the
-   artifact. This preserves narrative voice while enforcing
-   evidentiary bounds.
-
-**Interim decision.** Option A (human-authored `description` field in
-research artifact) for D.3. Re-evaluate after 10+ document nodes are
-built through the full Phase I → II pipeline.
-
-**Surfaced.** D.3 design (2026-04-17 Q2).
-
----
-
 ### Extend build-from-research.py to all 8 node types
 
 **Issue.** `scripts/build-from-research.py` supports 4 of 8 node types
@@ -309,54 +266,6 @@ contributors to apply sparingly. Re-evaluate after corpus accumulation.
 
 **Surfaced.** D.3 design (2026-04-17 Q5). Deferred in favor of shipping
 the layered Phase II.
-
----
-
-### Audit-cadence defaults may need type-specific tuning
-
-**Issue.** Research artifacts carry `audit_cadence_days` on every
-entry — how long until the entry should be re-verified against its
-source. D.0 design originally proposed type-specific defaults
-(180-day for claims, 365-day for quotes, on-demand for entities).
-Adopted a single 365-day default across all entry types for initial
-implementation to reduce complexity. This may turn out to be
-wrong in either direction:
-
-- **Too slack for volatile claims.** "Person X currently holds role
-  Y" can become stale within weeks, not a year.
-- **Too aggressive for stable quotes.** A verbatim passage from a
-  fixed-date hearing transcript doesn't change meaning over time;
-  365-day re-audit on hundreds of quote entries is busywork.
-
-**Why it matters.** Audit scheduling only works if the cadence
-reflects reality. A schedule that over-schedules stable content
-gets ignored; one that under-schedules volatile content misses
-staleness. Either failure mode erodes the audit system's
-credibility.
-
-**Proposed scope.** After research artifacts accumulate (say, 20+
-artifacts built through the full Phase I → II → III pipeline),
-analyze:
-
-- Which entry types actually go stale? (check by spot-auditing)
-- Are contributors overriding the 365 default frequently? If so, to
-  what values?
-- Do some entry types (institutional claims, "current role" claims)
-  exhibit faster drift than others?
-
-Based on observed patterns, either:
-
-- Keep the single 365-day default (simplicity wins)
-- Reintroduce type-specific defaults (180 claims / 365 quotes /
-  on-demand entities from D.0 design)
-- Introduce claim-subtype-specific defaults (e.g., claims tagged
-  as "current state" get shorter cadence than historical claims)
-
-**Interim decision.** Single 365-day default across all entry types
-until enough data exists to tune.
-
-**Surfaced.** D.0 design review (2026-04-17). Deferred in favor of
-shipping Phase I tooling.
 
 ---
 
@@ -530,10 +439,7 @@ poorly past ~10 person nodes when warning review becomes routine
 noise the contributor starts ignoring — at which point the check
 loses signal.
 
-**Proposed scope when triggered.** After ~5 person nodes are built
-through the full pipeline, audit the aggregate warning-to-signal
-ratio. If >90% of warnings are routine legitimate categories (noise),
-ship:
+**Proposed scope when triggered.** Ship one or more of:
 
 1. Porter stemmer integration (or hand-rolled suffix pass) — removes
    word-form noise, probably the biggest share.
@@ -541,6 +447,36 @@ ship:
    at the `types.person.section_rules.prose_drift` level.
 3. Tier B 2-gram adjacency as warn-only — catches phrase-
    restructuring drift the v1 check misses.
+
+**Trigger — evidence-based, NOT count-based.** The original trigger
+("after ~5 person nodes") was replaced (2026-04-20 BACKLOG audit)
+with evidence requirements because count-based triggers risk
+shipping v2 while the zero-warnings discipline is still working.
+V2 noise-reduction **silences** warnings; the
+`feedback_check16_warnings_must_resolve.md` memory policy depends on
+contributors **resolving** every warning. Shipping v2 prematurely
+converts "zero-warnings target" (discipline-enforced) into
+effectively "zero-errors target" (mechanical-only), losing the
+signal the policy relies on.
+
+Ship v2 only when ALL three apply:
+- **Signal-to-noise analysis**: >90% of warnings across the corpus
+  are provably legitimate word-form drift (`investigate` ↔
+  `investigation`), not substantive vocabulary drift worth
+  surfacing.
+- **Measured contributor cost**: per-artifact rewrite-to-zero
+  routinely takes >30 minutes, with that cost clearly going to
+  resolving word-form drift rather than substantive drift.
+- **Observed discipline breakdown**: documented evidence that
+  contributors are ignoring or ack-without-fixing warnings (not
+  just theoretical concern about scale).
+
+If any condition is missing, the v1 impartial-reporter + contributor
+zero-warnings discipline keeps producing better evidentiary hygiene
+than v2 would. The corpus as of 2026-04-20 (10 nodes including 2
+person + 2 organization + 3 document + 1 transcript + 1 event + 1
+media) clears free-prose fields to 0 warnings routinely — the
+discipline is intact.
 
 **Surfaced.** F.1c Fravor audit RCA (2026-04-19). V1 ships as pre-F.2
 hardening commit.
@@ -553,7 +489,7 @@ which fields are "allowed" more contributor vocabulary. Revised to
 an impartial rule: warn on every unmatched token, error only at 100%
 vocabulary divergence. The validator now surfaces drift without
 classifying it; the contributor reviews each warning. Any future
-v2 additions (stemming, whitelist, n-gram) should preserve the
+v2 additions (stemming, whitelist, n-gram) must preserve the
 impartial-reporter framing — reduce warning noise without
 reintroducing validator-side judgments about "acceptable" drift
 levels.
@@ -635,22 +571,21 @@ Status as of 2026-04-18 hardening pass:
    Modest scope; useful mostly as a forcing function against drift
    where contributors invent ad-hoc sections.
 3. **`may_be_empty: true`** on `media.section_rules.Key Passages` —
-   **still descriptive-only, likely redundant**
-   Read by no script. The existing `requires_quote_verification: true`
-   rule already permits zero-quote sections (it only errors when
-   quotes exist without verification blocks), so the flag mirrors
-   current default behavior. It becomes meaningful only if a future
-   variant of `requires_quote_verification` starts demanding
-   at-least-one quote — at which point the negation (`may_be_empty`
-   means "do not demand") would actually gate behavior. Until then,
-   safe to keep as documentation.
+   **✅ REMOVED 2026-04-20 (BACKLOG audit cleanup).**
+   The flag was descriptive-only and redundant: existing
+   `requires_quote_verification: true` already permits zero-quote
+   sections (it only errors when quotes exist without verification
+   blocks), so `may_be_empty` mirrored default behavior. Removed from
+   `meta/schema.yaml` to stop accumulating documentation-only keys that
+   read as if they gate behavior. If a future `requires_quote_verification`
+   variant starts demanding at-least-one quote, reintroduce the
+   negation flag at that time.
 
 **Proposed remaining scope.** Honor `optional_sections` as an
-allowlist for an unknown-section warning pass. Defer `may_be_empty`
-until there's a concrete case for it. The `conditionally_required`
-dispatcher's condition grammar can also grow (`in <list>`,
-`<field> != <value>`) on-demand when a new conditional needs it —
-no preemptive extension.
+allowlist for an unknown-section warning pass. The
+`conditionally_required` dispatcher's condition grammar can also grow
+(`in <list>`, `<field> != <value>`) on-demand when a new conditional
+needs it — no preemptive extension.
 
 **Update 2026-04-19 (F.1a).** The schema flag `chronological: true`
 on section_rules (previously descriptive-only) is now enforced by
@@ -804,40 +739,6 @@ encounters the same trap.
 
 **Interim.** Document in `prompts/build.md` alongside the `#` trap
 guidance; contributors hand-quote values with embedded `: ` patterns.
-
-**Surfaced.** Cluster B hearing-event pilot (2026-04-20).
-
----
-
-### Empty Witnesses subsection renders an empty table
-
-**Issue.** F.2b's hearing-event Participants renderer emits
-capacity-based subsections (`Eyewitness Testimony`, `Whistleblower
-Testimony`, `Institutional Testimony`, `Committee Members`). When a
-capacity has zero witnesses (e.g., the 2023-07-26 House Oversight
-hearing had no institutional-actor witnesses, only eyewitness and
-whistleblower testimony), the renderer still emits the H4 subheader
-and an empty table with just the header row. Surfaced during the
-Cluster B hearing-event pilot: `#### Witnesses — Institutional
-Testimony` rendered above an empty table.
-
-**Why it matters.** Empty tables read as "data missing" to an
-investigator rather than "category not applicable here." Contributors
-may also hand-edit the node to remove the empty section, which then
-fails the Boundary check because the artifact still drives the
-renderer to emit it.
-
-**Proposed scope.** Adjust `render_event_participants` in
-`scripts/build-from-research.py` — for hearing events, suppress the
-witness-capacity subsection entirely when no participants carry that
-capacity. Keep the Committee Members and Flagged subsections (their
-"empty" case is meaningful — the absence asserts no members attended
-or no participants are flagged). Alternative: emit a one-line note
-("No witnesses in this capacity.") in place of the empty table to
-preserve the schema's capacity vocabulary visibility.
-
-**Trigger.** Immediate — low-complexity renderer edit; the fix itself
-is < 10 lines.
 
 **Surfaced.** Cluster B hearing-event pilot (2026-04-20).
 

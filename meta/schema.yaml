@@ -433,13 +433,14 @@ types:
       Provenance: {chronological: true}
       Key Passages:
         requires_quote_verification: true
-        may_be_empty: true
         # Key Passages on media capture verbatim speech (audio/video) or
         # verbatim visible text (text legible in photo or on-screen in
         # video). The Location field in the verification block uses
         # timestamp for audio/video and in-frame location (quadrant,
-        # coordinate, element) for imagery. May be empty when the source
-        # has no extractable text or speech.
+        # coordinate, element) for imagery. Empty sections are permitted
+        # when the source has no extractable text or speech — the
+        # requires_quote_verification rule enforces the verification-block
+        # shape only when quotes are present, not existence of quotes.
 
   # --- LOCATION -----------------------------------------------------------
   location:
@@ -733,9 +734,12 @@ types:
         - contradicted_by         # same
         - corroborated_by         # list of entry ids or external refs
       default_audit_cadence_days: 365
-      # Default cadence is uniform at 365 across all entry types. See
-      # BACKLOG.md (audit-cadence defaults may need type-specific tuning)
-      # for re-examination after research-artifact corpus accumulates.
+      # Default cadence is uniform at 365 across all entry types.
+      # Contributors can override per-entry via the `audit_cadence_days`
+      # field above when a specific claim is volatile enough to warrant
+      # a shorter re-audit window (role changes, "current state" facts,
+      # etc.); the override mechanism handles the exception cases
+      # without requiring type-specific default machinery.
 
     # Per-section entry shapes (each inherits lifecycle fields above):
 

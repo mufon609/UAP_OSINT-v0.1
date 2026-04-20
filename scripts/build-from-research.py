@@ -817,6 +817,16 @@ _HEARING_CAPACITY_ORDER = [
     "committee-member",
 ]
 
+# Capacities whose empty case carries analytical meaning — always render
+# the sub-subsection even with zero entries. committee-member: absence
+# of committee members would be newsworthy (oversight failure), so the
+# empty state is a finding worth surfacing. Witness capacities are
+# suppressed when empty — different hearings naturally carry different
+# witness compositions (an oversight hearing may have no institutional
+# witnesses, a SASC hearing may have no whistleblowers), and empty
+# witness tables read as "data missing" rather than "category N/A here".
+_HEARING_CAPACITY_RENDER_WHEN_EMPTY = {"committee-member"}
+
 
 def render_title_event(artifact):
     """H1 title for event nodes. Prefers context_extrinsic.display_title,
@@ -923,6 +933,11 @@ def render_participants_hearing(artifact):
     lines = ["## Participants", "", "### Confirmed"]
     for capacity in _HEARING_CAPACITY_ORDER:
         subsection_entries = [e for e in confirmed if e.get("capacity") == capacity]
+        # Suppress empty witness sub-subsections — their empty case is
+        # per-hearing variance rather than an analytical finding. Committee
+        # Members always render (see _HEARING_CAPACITY_RENDER_WHEN_EMPTY).
+        if not subsection_entries and capacity not in _HEARING_CAPACITY_RENDER_WHEN_EMPTY:
+            continue
         subheader = _HEARING_CAPACITY_SUBSECTION[capacity]
         lines.append("")
         lines.append(f"#### {subheader}")
