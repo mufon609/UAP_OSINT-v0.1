@@ -106,7 +106,6 @@ investigation thread demands them.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/organizations/uaptf` | organization / gov | High | UAP Task Force; AARO predecessor; UAPTF establishment already archived. Referenced in 4+ built nodes (AARO, Fravor person, Grusch person, Grusch written testimony) — closing this stub yields maximum broken-link-registry reduction | public record + defense.gov press release (archived) |
 | `/organizations/americans-for-safe-aerospace` | organization / private | Low | Ryan Graves's nonprofit | safeaerospace.com (archived) |
 | `/organizations/aiaa` | organization / private | Low | Aerospace engineering professional society — pilot-reporting context | Public record |
 | `/organizations/faa` | organization / gov | Low | Aviation authority — pilot-reporting context | Public record |

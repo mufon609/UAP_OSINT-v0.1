@@ -1,0 +1,565 @@
+id: research/uaptf
+type: research-artifact
+schema_version: 1
+target_node: organizations/uaptf
+status: active
+created: '2026-04-20'
+last_iteration: i0
+description: |
+  The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force at the [`/organizations/oni`]. DoD press release, August 14, 2020: Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) "approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF."
+
+  The UAP Security Classification Guide (ID# 04-030, Naval Intelligence Activity ([`/organizations/nia`]), April 16, 2020) names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its subject — four months before the DoD press release of August 14, 2020. The UAPTF Charter, dated September 1, 2020, describes the Task Force as "Congressionally mandated, Deputy Secretary of Defense directed" and its Purpose as "to create a single entity tasked with working across the Department of Defense" with the Intelligence Community and the Interagency "to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data" on UAP.
+
+  UAPTF drafted the June 25, 2021 [`/documents/odni-preliminary-assessment-2021`] with "the ODNI National Intelligence Manager for Aviation" and "input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National". Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 ("Advanced Aerial Threats" section) directed the DNI to submit the UAP report within 180 days of enactment.
+
+  The Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established November 23, 2021 as the successor to the Task Force. The All-domain Anomaly Resolution Office ([`/organizations/aaro`]) was established July 20, 2022. The July 15, 2022 Deputy Secretary of Defense memorandum directed the Secretary of the Navy to disestablish UAPTF "no later than the date the AARO is established" and to "support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO".
+
+  DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "former Office of Naval Intelligence senior civilian John Stratton was leading the effort and informally referred to Dr. Taylor as his chief scientist". Stratton ([`/people/jay-stratton`]) is listed by Americans for Safe Aerospace as "Ex Director, UAP Task Force". Dr. Travis Taylor ([`/people/travis-taylor`]) — a U.S. Army Space and Missile Defense Command employee on time-limited assignment to UAPTF.
+primary_sources:
+- path: government/defense-gov-uaptf-establishment-20200814.html
+  format: html
+  extracted_text_path: /tmp/scratch-uaptf-0.txt
+- path: government/blackvault-uap-security-classification-guide-20200416.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-uaptf-1.txt
+  pdf_metadata:
+    title: UAP Security Classification Guide
+    issuing_office: Naval Intelligence Activity
+    id: 04-030
+    signed_date: '2020-04-16'
+    foia_case: DON-NAVY-2022-000883
+- path: government/blackvault-uaptf-charter-foia-20250422.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-uaptf-2.txt
+  pdf_metadata:
+    title: Charter for Unidentified Aerial Phenomenon Task Force
+    issuing_office: Naval Intelligence Activity
+    serial: Ser NW20S0068
+    signed_date: '2020-09-01'
+    foia_case: DON-NAVY-2021-003140
+    note: Heavily redacted; signed by Director, Naval Intelligence Activity
+- path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-uaptf-3.txt
+  pdf_metadata:
+    title: Preliminary Assessment, Unidentified Aerial Phenomena
+    issuing_office: Office of the Director of National Intelligence
+    date: '2021-06-25'
+- path: government/congress-gov-hpsci-uap-transcript-20220517.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-uaptf-4.txt
+- path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-uaptf-5.txt
+- path: government/defense-gov-aoimsg-establishment-20211123.html
+  format: html
+  extracted_text_path: /tmp/scratch-uaptf-6.txt
+- path: government/defense-gov-aaro-establishment-20220720.html
+  format: html
+  extracted_text_path: /tmp/scratch-uaptf-7.txt
+- path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-uaptf-8.txt
+  pdf_metadata:
+    title: 'Senate Report 116-233: Intelligence Authorization Act for Fiscal Year 2021'
+    committee: Senate Select Committee on Intelligence
+    pages: 10
+- path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+  format: html
+  extracted_text_path: /tmp/scratch-uaptf-9.txt
+- path: news/safeaerospace-home-20260420.html
+  format: html
+  extracted_text_path: /tmp/scratch-uaptf-10.txt
+document_intrinsic:
+  full_name: Unidentified Aerial Phenomena Task Force
+  internal_name: UAPTF
+  statutory_authority: Congressionally mandated (Intelligence Authorization Act for Fiscal Year 2021, Senate Report 116-233 "Advanced Aerial Threats" section) and Deputy Secretary of Defense directed (Norquist memorandum, August 4, 2020)
+  established_date: '2020-08-04'
+  terminated_date: '2022-07'
+  parent_organization_path: /organizations/oni
+  office_type: DoD task force
+  jurisdiction: Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security
+context_extrinsic:
+  display_title: UAPTF — Unidentified Aerial Phenomena Task Force
+quotes:
+- id: q1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: On Aug. 4, 2020, Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF). &nbsp;The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF.
+  source:
+    path: government/defense-gov-uaptf-establishment-20200814.html
+    location: article body ¶1
+  significance: Establishment — Norquist approval + Navy/USD(I&S) placement
+  context: DoD press release, August 14, 2020
+  statement_date: '2020-08-14'
+- id: q2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: The Department of Defense established the UAPTF to improve its understanding of, and gain insight into, the nature and origins of UAPs. &nbsp;The mission of the task force is to detect, analyze and catalog UAPs that could potentially pose a threat to U.S. national security.
+  source:
+    path: government/defense-gov-uaptf-establishment-20200814.html
+    location: article body ¶2
+  significance: Mission statement — detect, analyze, catalog UAPs
+  context: DoD press release, August 14, 2020
+  statement_date: '2020-08-14'
+- id: q3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: This classification guide is issued for the purpose of identifYing specific topics of information associated with the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force that meet the standards and criteria for classification and protection in accordance with Executive Order (E.O.) 13526, "Classified National Security Information," as amended, and its implementing directives.
+  source:
+    path: government/blackvault-uap-security-classification-guide-20200416.pdf
+    location: p.1, Purpose
+  significance: UAP Security Classification Guide identifies UAPTF at Office of Naval Intelligence — April 16, 2020 (four months before public establishment announcement)
+  context: UAP Security Classification Guide (ID# 04-030), Naval Intelligence Activity, April 16, 2020
+  statement_date: '2020-04-16'
+- id: q4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: This chaner establishes the Congressionally mandated, Deputy Secretary of Defense directed Unidentified Aerial Phenomenon Task Force.
+  source:
+    path: government/blackvault-uaptf-charter-foia-20250422.pdf
+    location: p.1, introductory paragraph
+  significance: UAPTF Charter attests Congressional mandate + DSD direction as joint authority
+  context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "chaner" for "charter")
+  statement_date: '2020-09-01'
+- id: q5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: The purpose of the Task Force is to create a single entity tasked with working across the Department of Defense, and with the Intelligence Community (IC) and the Interagency, to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data on unexplained Unidenlified Aerial Phenomenon (UAP). currently posing a threat to U.S. National Security.
+  source:
+    path: government/blackvault-uaptf-charter-foia-20250422.pdf
+    location: p.1, Purpose
+  significance: UAPTF Charter Purpose — single cross-DoD/IC/Interagency entity for UAP data
+  context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "Unidenlified" for "Unidentified")
+  statement_date: '2020-09-01'
+- id: q6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity.
+  source:
+    path: government/blackvault-uaptf-charter-foia-20250422.pdf
+    location: p.3, Roles and Responsibilities
+  significance: UAPTF Charter — Director of the Naval Intelligence Activity designates UAPTF leadership
+  context: UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020
+  statement_date: '2020-09-01'
+- id: q7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: The Director, UAPTF, is the accountable official for ensuring the timely collection and consolidation of data on UAP.
+  source:
+    path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+    location: p.3, SCOPE AND ASSUMPTIONS
+  significance: ODNI Preliminary Assessment — accountability framing for the Director of UAPTF
+  context: ODNI Preliminary Assessment, June 25, 2021
+  statement_date: '2021-06-25'
+- id: q8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: UAPTF and the ODNI National Intelligence Manager for Aviation drafted this report, with input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National
+  source:
+    path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+    location: p.3, SCOPE AND ASSUMPTIONS
+  significance: ODNI Preliminary Assessment — UAPTF as drafting body plus the cross-agency contributor list
+  context: ODNI Preliminary Assessment, June 25, 2021
+  statement_date: '2021-06-25'
+- id: q9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: The Committee supports the efforts of the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence to standardize collection and reporting on unidentified aerial phenomenon, any links they have to adversarial foreign governments, and the threat they pose to U.S. military assets and installations.
+  source:
+    path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
+    location: "Advanced Aerial Threats section"
+  significance: Senate Select Committee on Intelligence on-record acknowledgment of UAPTF at ONI
+  context: Senate Report 116-233 (Intelligence Authorization Act for Fiscal Year 2021)
+  statement_date: '2020-06-17'
+- id: q10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: At the time of Dr. Taylor’s initial work with the UAPTF, former Office of Naval Intelligence senior civilian John Stratton was leading the effort and informally referred to Dr. Taylor as his chief scientist as efforts to assemble a larger team were underway.
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: "A1 response from DoD spokesperson Susan Gough"
+  significance: DoD Public Affairs statement naming John (Jay) Stratton as UAPTF lead and Dr. Travis Taylor as informal Chief Scientist
+  context: "DoD Public Affairs statement via DoD spokesperson Susan Gough, released to The Black Vault, June 29, 2022"
+  statement_date: '2022-06-29'
+- id: q11
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: I also direct the Secretary of the Navy to disestablish the Unidentified Aerial Phenomena Task Force (UAPTF) no later than the date the AARO is established, and to support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO.
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.1
+  significance: UAPTF disestablishment directive — Secretary of the Navy to disestablish UAPTF and transfer data to AARO
+  context: Hicks AARO establishment memorandum, July 15, 2022
+  statement_date: '2022-07-15'
+claims: []
+key_personnel:
+- id: kp1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  person_path: /people/jay-stratton
+  role: Director (named as former Office of Naval Intelligence senior civilian "leading the effort" per DoD Public Affairs statement)
+  leadership_class: director
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: "A1 response from DoD spokesperson Susan Gough"
+  note: DoD PA attribution via Gough statement is the strongest on-record government attestation. Corroborated by Americans for Safe Aerospace advisors listing ("Ex Director, UAP Task Force"). Exact period dates not specified by primary source — see research_gap g2.
+- id: kp2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  person_path: /people/travis-taylor
+  role: Chief Scientist (informal designation, time-limited SMDC assignment)
+  leadership_class: advisor
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: "A1 response from DoD spokesperson Susan Gough"
+  note: Per Gough, Taylor remained a government employee of U.S. Army Space and Missile Defense Command (SMDC) and was provided to UAPTF on a time-limited basis; "chief scientist" designation was informal.
+- id: kp3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  person_path: /people/david-grusch
+  role: Member (in his National Reconnaissance Office reservist capacity)
+  period_start: '2019'
+  period_end: '2021'
+  leadership_class: staff
+  source:
+    path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
+    location: Opening ¶8
+  note: Grusch's sworn written testimony attests "I was a member of the UAPTF from 2019-2021" in his NRO reservist capacity
+org_relationships:
+- id: or1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  organization_path: /organizations/aoimsg
+  relationship_type: successor
+  source:
+    path: government/defense-gov-aoimsg-establishment-20211123.html
+    location: article body ¶1
+  note: AOIMSG established November 23, 2021 as the successor to the U.S. Navy's Unidentified Aerial Phenomena Task Force per DoD press release
+- id: or2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  organization_path: /organizations/aaro
+  relationship_type: successor
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.1
+  note: AARO established July 20, 2022 to carry out the duties that were to be fulfilled by the AOIMSG; Secretary of the Navy directed to disestablish UAPTF and transfer data, analysis, or other relevant material to the AARO
+- id: or3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  organization_path: /organizations/odni
+  relationship_type: partner
+  source:
+    path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+    location: p.3
+  note: ODNI National Intelligence Manager for Aviation co-drafted the June 2021 Preliminary Assessment with UAPTF
+timeline:
+- id: t1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2020-04-16'
+  event: "UAP Security Classification Guide issued by Naval Intelligence Activity (ID# 04-030) — identifies the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force as scope subject"
+  category: other
+  source:
+    path: government/blackvault-uap-security-classification-guide-20200416.pdf
+    location: p.1
+- id: t2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2020-08-04'
+  event: Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)
+  category: founding
+  source:
+    path: government/defense-gov-uaptf-establishment-20200814.html
+    location: article body ¶1
+- id: t3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2020-08-14'
+  event: DoD publicly announces establishment of the Unidentified Aerial Phenomena Task Force
+  category: founding
+  source:
+    path: government/defense-gov-uaptf-establishment-20200814.html
+    location: article body ¶1
+- id: t4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2020-09-01'
+  event: UAPTF Charter signed by the Director, Naval Intelligence Activity
+  category: other
+  source:
+    path: government/blackvault-uaptf-charter-foia-20250422.pdf
+    location: p.1
+- id: t5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2021-06-25'
+  event: ODNI Preliminary Assessment, Unidentified Aerial Phenomena published — drafted by UAPTF and the ODNI National Intelligence Manager for Aviation
+  category: other
+  source:
+    path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+    location: p.1
+  node_link: /documents/odni-preliminary-assessment-2021
+- id: t6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2021-11-23'
+  event: Airborne Object Identification and Management Synchronization Group (AOIMSG) established as the successor to the U.S. Navy's Unidentified Aerial Phenomena Task Force
+  category: leadership-transition
+  source:
+    path: government/defense-gov-aoimsg-establishment-20211123.html
+    location: article body ¶1
+  node_link: /organizations/aoimsg
+- id: t7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2022-06-29'
+  event: "DoD Public Affairs statement (via spokesperson Susan Gough) names former Office of Naval Intelligence senior civilian John Stratton as UAPTF lead; Dr. Travis Taylor identified as informal Chief Scientist"
+  category: other
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: A1 response from DoD spokesperson Susan Gough
+- id: t8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2022-07-15'
+  event: Deputy Secretary of Defense memorandum directs the Secretary of the Navy to disestablish UAPTF no later than the date the AARO is established, and to transfer data, analysis, or other relevant material to the AARO
+  category: leadership-transition
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.1
+- id: t9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2022-07-20'
+  event: All-domain Anomaly Resolution Office (AARO) establishment announced — UAPTF formally succeeded
+  category: leadership-transition
+  source:
+    path: government/defense-gov-aaro-establishment-20220720.html
+    location: article body ¶1
+  node_link: /organizations/aaro
+entities_referenced:
+- id: e1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Jay Stratton
+  wrap_path: /people/jay-stratton
+- id: e2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Travis Taylor
+  wrap_path: /people/travis-taylor
+- id: e3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: David Grusch
+  wrap_path: /people/david-grusch
+- id: e4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: David L. Norquist
+  wrap_path: /people/david-norquist
+- id: e5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Office of Naval Intelligence (ONI)
+  wrap_path: /organizations/oni
+- id: e6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Naval Intelligence Activity (NIA)
+  wrap_path: /organizations/nia
+- id: e7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: U.S. Navy
+  wrap_path: /organizations/us-navy
+- id: e8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Office of the Director of National Intelligence (ODNI)
+  wrap_path: /organizations/odni
+- id: e9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Airborne Object Identification and Management Synchronization Group (AOIMSG)
+  wrap_path: /organizations/aoimsg
+- id: e10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: All-domain Anomaly Resolution Office (AARO)
+  wrap_path: /organizations/aaro
+- id: e11
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: document
+  name: ODNI Preliminary Assessment, Unidentified Aerial Phenomena
+  wrap_path: /documents/odni-preliminary-assessment-2021
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  observed: John Stratton
+  canonical: Jay Stratton
+  location: Gough DoD PA statement (Q1 answer)
+  source_path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+  resolution: preserve-as-sic-in-quotes
+  note: The DoD Public Affairs statement uses Stratton's legal first name "John"; the canonical form used in secondary sources (memoir announcement, podcast appearances, Americans for Safe Aerospace advisor listing) is the nickname "Jay". Both forms are source-attested; quoted passages preserve the "John" form verbatim.
+- id: nq2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  observed: Unidentified Aerial Phenomena
+  canonical: Unidentified Aerial Phenomena
+  location: UAPTF name across all primary sources
+  source_path: government/defense-gov-uaptf-establishment-20200814.html
+  resolution: use-canonical
+  note: UAPTF era uses "Unidentified Aerial Phenomena" (plural); later AARO-era documents use "Unidentified Anomalous Phenomena". The terminology shift tracks with the AARO scope expansion to include space, submerged, and transmedium objects per the Hicks memorandum. UAPTF's own naming remains "Unidentified Aerial Phenomena Task Force" in all of its primary sources.
+research_gaps:
+- id: g1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Locate the full text of the Norquist memorandum approving UAPTF establishment (August 4, 2020)
+  methodology: The DoD press release of August 14, 2020 attests the memorandum's existence but the memorandum text itself has not been publicly released in the sources reviewed. FOIA the Department of the Navy or OUSD(I&S) for the memorandum; monitor Black Vault FOIA document archive for subsequent releases
+  resolved: false
+- id: g2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Establish Jay Stratton's exact UAPTF period start and end dates from primary source
+  methodology: The Gough DoD PA statement (June 2022) uses past tense ("was leading") and refers to Stratton as "former Office of Naval Intelligence senior civilian" — implying Stratton had departed ONI by June 2022 but does not specify period dates. Secondary sources place him as first Director from 2019. Cross-reference with his forthcoming memoir (William Morrow / HarperCollins) if published
+  resolved: false
+- id: g3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Determine UAPTF staffing, budget, and internal organizational structure
+  methodology: Not publicly documented in the 11 primary sources archived for i0. The UAPTF Charter (September 2020) is heavily redacted on focus areas, detailed responsibilities, and member-agency participation details. Cross-reference with DoD budget submissions, congressional appropriations language, and future FOIA releases
+  resolved: false
+- id: g4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Confirm Karl Nell's role as Army liaison / Army Director supporting UAPTF (2021-2022) from a primary source
+  methodology: Nell's role is attested in multiple secondary sources (Americans for Safe Aerospace advisor listing, Debrief article, SALT bio); no primary source archived in the REFACTOR corpus confirms it. Target FOIA releases from the U.S. Army, Nell's own retirement / service record, or on-record congressional testimony
+  resolved: false
+- id: g5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Document the contents of the UAPTF Executive Steering Committee (EXCOM) governance — membership, mandate, and reporting cadence
+  methodology: The UAPTF Charter references an EXCOM that the Director, UAP Task Force provides periodic updates to. EXCOM details are redacted in the charter FOIA release. Cross-reference with AARO Executive Council (AAROEXEC) establishment (which the Hicks memo renames from AOIMEXEC) for continuity of governance structure
+  resolved: false
+- id: g6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Establish exact UAPTF disestablishment date
+  methodology: Hicks memorandum (July 15, 2022) directs disestablishment "no later than the date the AARO is established" (AARO announced July 20, 2022). Exact UAPTF cessation date not specified in any primary source reviewed. Target Secretary of the Navy administrative record, UAPTF termination memorandum (if released), or UAPTF-to-AARO transition documentation
+  resolved: false
+rumors:
+- id: r1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  claim: Karl Nell served as Army Director / Army liaison supporting the UAPTF from 2021 to 2022
+  status: not-primary-source-established
+  observed_sources:
+  - Americans for Safe Aerospace advisor listing (non-.gov; Stratton is a listed advisor to the same organization)
+  - SALT speaker bio (salt.org); The Debrief Kean/Blumenthal coverage
+  primary_source_search:
+  - No primary source in the REFACTOR corpus attests Nell's UAPTF role
+  - Target FOIA releases from the U.S. Army or Nell's retirement record
+  note: Widely attested across secondary sources but not in primary sources archived here. Registering the claim structurally while the primary-source gap remains open (see research_gap g4)
+- id: r2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  claim: UAPTF was deliberately under-resourced and denied access to pre-existing compartmented UAP programs within the U.S. Government
+  status: not-primary-source-established
+  observed_sources:
+  - Grusch sworn testimony at 2023-07-26 House Oversight hearing (archived as /documents/written-testimony-grusch-2023) claims denial of access to a "multi-decade UAP crash retrieval and reverse engineering program"
+  - Widely circulating in UAP-related public discourse
+  primary_source_search:
+  - UAPTF's own primary sources (charter, SCG, ODNI Preliminary Assessment) do not attest scope constraints
+  - The counter-claim of denied access is attested in Grusch's testimony but as external allegation against the broader U.S. Government rather than a finding internal to UAPTF's own records
+  note: The allegation is a cross-node analytical finding rather than a UAPTF-internal record. UAPTF's own primary sources do not substantiate or refute the scope-constraint framing
+iterations:
+- id: i0
+  date: '2026-04-20'
+  trigger: initial-build
+  summary: |
+    First real-content gov-kind organization node post-F.5c/AARO; second organization node overall. 11 archived primary sources spanning the DoD establishment press release, the FOIA-released UAP Security Classification Guide (April 16, 2020, Naval Intelligence Activity) and UAPTF Charter (September 1, 2020, Naval Intelligence Activity), the ODNI Preliminary Assessment (UAPTF's flagship output), the 2022-05-17 HPSCI transcript (Bray/Moultrie testimony on UAPTF transition), the Hicks AARO memorandum (UAPTF disestablishment directive), the AOIMSG and AARO establishment press releases (successor-chain attestation), Senate Report 116-233 (IAA FY2021 "Advanced Aerial Threats" — Senate on-record UAPTF reference at ONI), a June 2022 Black Vault article carrying the DoD Public Affairs (Gough) statement naming John Stratton as UAPTF lead and Dr. Travis Taylor as informal Chief Scientist, and the Americans for Safe Aerospace home page corroborating Stratton as "Ex Director, UAP Task Force".
+
+    11 Key Passages — establishment (Norquist approval + Navy/USD(I&S) placement; mission statement), UAP SCG identifying UAPTF at Office of Naval Intelligence (April 2020, pre-public-announcement), UAPTF Charter Congressional mandate + DSD direction (Sept 2020), Charter Purpose and NIA-designates-leadership language, ODNI Preliminary Assessment Director accountability + UAPTF drafting body + cross-agency contributor list, Senate Report 116-233 Advanced Aerial Threats UAPTF@ONI, Gough Stratton/Taylor statement, Hicks memo UAPTF disestablishment directive.
+
+    3 key_personnel — Stratton (director, 2020-2022 approximate, DoD PA attribution via Gough), Travis Taylor (advisor / informal Chief Scientist, time-limited SMDC assignment), David Grusch (staff, 2019-2021, sworn written testimony primary source). Karl Nell logged as rumors r1 pending primary source.
+
+    3 org_relationships — AOIMSG successor, AARO successor, ODNI partner. Parent attested via parent_organization_path (/organizations/oni); Naval Intelligence Activity captured in description and entities_referenced.
+
+    9 timeline entries tracing UAP SCG issuance (pre-public-announcement April 2020) through UAPTF establishment → Charter signing → ODNI assessment → AOIMSG successor → Gough statement → Hicks memo disestablishment → AARO succession.
+
+    11 entities_referenced, 2 naming_quirks (John / Jay Stratton; Unidentified Aerial Phenomena vs Anomalous terminology shift), 6 research_gaps (Norquist memo full text, Stratton exact dates, UAPTF staffing/budget, Karl Nell primary source, EXCOM governance, exact disestablishment date), 2 rumors (Nell role; scope-constraint allegations).
+  entries_added:
+  - q1
+  - q2
+  - q3
+  - q4
+  - q5
+  - q6
+  - q7
+  - q8
+  - q9
+  - q10
+  - q11
+  - kp1
+  - kp2
+  - kp3
+  - or1
+  - or2
+  - or3
+  - t1
+  - t2
+  - t3
+  - t4
+  - t5
+  - t6
+  - t7
+  - t8
+  - t9
+  - e1
+  - e2
+  - e3
+  - e4
+  - e5
+  - e6
+  - e7
+  - e8
+  - e9
+  - e10
+  - e11
+  - nq1
+  - nq2
+  - g1
+  - g2
+  - g3
+  - g4
+  - g5
+  - g6
+  - r1
+  - r2
+  entries_modified: []
