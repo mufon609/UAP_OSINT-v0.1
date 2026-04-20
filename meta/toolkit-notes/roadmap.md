@@ -1300,9 +1300,6 @@ validate-research / build-from-research / review-coverage.
 
 ## Architectural threads still open
 
-Two design conversations paused mid-stride; belong under the next F
-sub-phase that touches them.
-
 - **Statements-only discipline across all synthesis nodes.**
   Post-Step-D removed the claims layer from documents; open question
   is whether the same discipline extends to the surviving
@@ -1310,11 +1307,6 @@ sub-phase that touches them.
   What The Hearing Established, What The Book States — the last
   one already resolved by collapsing book into document). Each F
   sub-phase's design pass reopens this for its type.
-- **Person archetype structural collapse.** Whether the four
-  archetype-specific sections (Corroboration / Vouching Chain /
-  Program Involvement / Publication Record) collapse into a single
-  `## Context` with archetype-selected subsections. Resolved inside
-  F.1's design pass.
 
 ---
 

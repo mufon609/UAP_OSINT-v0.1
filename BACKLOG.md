@@ -150,43 +150,18 @@ deliberate smoke test was run. Other scripts may have similar
 latent bugs. As the script surface grows (Step D adds several new
 scripts), untested regressions compound.
 
-**Proposed scope.** Start small, scale with need:
+**Proposed scope.** Unit tests for specific check functions in
+`validate.py` (quote normalization, checksum computation,
+verification-block parsing, `evaluate_condition` parser). The check
+logic is where correctness matters most, so it's the highest-leverage
+place for function-level tests.
 
-1. **Immediate**: `tests/help-check.sh` — calls `--help` on every
-   script in `scripts/`; confirms exit 0 and no Python traceback.
-   Catches argparse regressions, syntax errors, and import failures.
-   **Shipped 2026-04-17.** 13/13 scripts pass. Referenced from
-   `CLAUDE.md` §5.
-2. **Next**: fixture-based smoke tests — one scaffold per node type
-   with known-good flags; validate.py exits clean on the scaffold;
-   scaffold is deleted. A single `tests/smoke.sh` runs the whole
-   set. **Shipped 2026-04-17** (commit f5760c0); updated 2026-04-18
-   with media/article/book/social-post/transcript-other fixtures
-   post-source-taxonomy-consolidation. 23/23 passing.
-3. **Eventually**: unit tests for specific check functions in
-   `validate.py` (quote normalization, checksum computation,
-   verification-block parsing, `evaluate_condition` parser). These
-   are the highest-leverage unit tests because the check logic is
-   where correctness matters most.
-4. **Continuous**: a pre-commit hook (or CI equivalent) that runs
-   help-check + smoke + validate.py before any commit lands.
-   **Shipped 2026-04-18** (`tests/pre-commit.sh`). Chains
-   help-check + smoke + validate.py + validate-research.py +
-   build-state.py --check + audit-schedule.py --overdue. Install
-   instructions in-file; not auto-installed (git-hook installation
-   is explicit opt-in).
-
-The first two are small, script-level, and low-risk. Unit tests and
-CI are bigger structural commitments.
-
-**Surfaced.** Step A/B/C audit (W1, 2026-04-17). Upgraded to BACKLOG
-after P1 smoke test caught a real latent bug, demonstrating that the
-lack of automated testing is not theoretical.
-
-**Progress.** Steps 1, 2, and 4 shipped. Step 3 (unit tests) remains
-open — deferred until a check function actually needs bug-hunting or
-the validator monolith refactor (separate BACKLOG item) makes
-function-level testing more natural.
+**Surfaced.** Step A/B/C audit (W1, 2026-04-17). Help-check
+(`tests/help-check.sh`, 2026-04-17), smoke fixtures (`tests/smoke.sh`,
+2026-04-17), and the pre-commit chain (`tests/pre-commit.sh`,
+2026-04-18) shipped as end-to-end coverage. Unit tests remain open;
+deferred until a check function needs bug-hunting or the validator
+monolith refactor makes function-level testing more natural.
 
 ---
 
@@ -266,10 +241,10 @@ the layered Phase II.
 
 ### F.1a descriptive-only gaps (follow-on to #9)
 
-**Issue.** Three F.1a schema additions are declarative but not yet
+**Issue.** Two F.1a schema additions are declarative but not yet
 mechanically enforced. Behavior is correct today (hand-authored
-content follows the convention; the F.1b renderer will enforce at
-build time), but the gap between what schema documents and what the
+content follows the convention; the F.1b renderer enforces at build
+time), but the gap between what schema documents and what the
 validator checks is worth tracking so it doesn't accumulate.
 
 1. **`timeline_category_values`** (person type) — the Category column
@@ -291,106 +266,58 @@ validator checks is worth tracking so it doesn't accumulate.
    single table. Chronological order across those pairs is not
    mechanically verified in an input-independent way.
 
-   **F.1b resolution (partial).** The Phase II person renderer now
-   sorts statements at render time by `statement_date` (a new optional
-   field on `quote_entry`). Under Boundary-check discipline (review-
-   coverage.py check 2), renderer-driven nodes can't diverge — any
-   attempt to hand-reorder statements would fail Boundary when
-   review-coverage runs. So the renderer enforces order on the
-   happy path. Remaining gap: validate.py check #15 doesn't
+   **F.1b resolution (partial).** The Phase II person renderer sorts
+   statements at render time by `statement_date`. Under Boundary-check
+   discipline (review-coverage.py check 2), renderer-driven nodes
+   can't diverge. Remaining gap: validate.py check #15 doesn't
    independently verify block-quote ordering from the node body
    alone, so a hand-authored person node built without the renderer
    pipeline could drift silently. Accepted as a limitation until a
    hand-authored person node is attempted (not on the roadmap).
 
-3. **`chronological: true` section-rule flag is now descriptive.**
-   The flag appears on six section_rules in schema.yaml (person
-   Timeline, organization Timeline, event Timeline, finding Timeline,
-   document Provenance, media Provenance, location Ownership
-   Timeline). Check #15 actually runs universally on every
-   date-bearing table regardless of whether the flag is set — so
-   having the flag is strictly documentation of which sections the
-   rule applies to. Two paths:
-   - Leave as-is. Universal enforcement is simpler; the flag
-     signals intent to contributors reading schema.yaml.
-   - Make check #15 read the flag and scope only to flagged
-     sections. Stricter but risks false negatives (future
-     date-bearing tables that don't get the flag).
-
-   My lean: leave as-is. The flag is a contributor-facing
-   documentation aid; the enforcement is universal by design.
-
-**Surfaced.** F.1a audit (2026-04-19).
+**Surfaced.** F.1a audit (2026-04-19). A third item (the
+`chronological: true` section-rule flag being descriptive-only)
+resolved in-place — left as a contributor-facing documentation signal
+while check #15 enforces universally on every date-bearing table.
 
 ---
 
-### F.1b audit findings — descriptive-only and forward-looking
+### F.1b audit — name lookup for cross-reference cells
 
-Four F.1b observations. Items 1 and 2 shipped in the 2026-04-19 pre-
-F.1c hardening pass; items 3 and 4 remain open but reframed.
+**Issue.** F.1b emits cross-reference paths as backtick-bracket wraps
+(``[`/organizations/aaro`]``) in table cells where the template
+expects a display name (e.g., Organization column of Affiliations).
+Today the rendered cell shows the path; an investigator reads
+"us-navy" instead of "U.S. Navy".
 
-1. **`quote_verification_fields.required` (schema) — ✅ RESOLVED
-   2026-04-19.** Schema listed `[Attributed to, Source, Verified]` as
-   required rows in a verification block, but `validate.py` only
-   enforced `Verified`. Fix path chosen: require `context` on person-
-   artifact quotes (input-side discipline) so the renderer always has
-   material for the Attributed-to row. Shipped via
-   `validate-research.py` check_quotes extension + schema comment on
-   `quote_entry.context`.
+**Why it matters.** Path slugs are recoverable but not investigator-
+friendly. Display names lift readability at the cost of a small
+renderer complexity bump. Low urgency because backtick-bracket paths
+render as clickable links and the meaning stays one click away.
 
-2. **`document_intrinsic` convention for person artifacts — ✅
-   RESOLVED 2026-04-19.** Schema's required_keys comment now
-   enumerates per-type key conventions: `document` uses
-   internal_title / authors_per_document / classification / pages /
-   etc.; `person` uses full_name / aliases / nationality / profession.
-   Future renderers (F.2+) document their keys in the same comment as
-   they ship.
+**Proposed scope.** Look up the display name from
+`entities_referenced.name` (where `wrap_path` matches the target
+path) or from the target node's frontmatter if the node exists. Apply
+in the renderer's cross-reference cell emitters.
 
-3. **Name lookup for cross-reference cells.** F.1b emits cross-
-   reference paths as backtick-bracket wraps (``[`/organizations/aaro`]``)
-   in table cells where the template expects a display name (e.g.,
-   Organization column of Affiliations). Today the rendered cell
-   shows the path; an investigator reads "us-navy" instead of
-   "U.S. Navy". Enhancement: look up the display name from
-   `entities_referenced.name` (where `wrap_path` matches the target
-   path) or from the target node's frontmatter if the node exists.
-   Renderer complexity bump; low urgency because backtick-bracket
-   paths render as clickable links and the meaning is recoverable.
+**Surfaced.** F.1b audit (2026-04-19). Three sibling observations
+(quote_verification_fields, document_intrinsic convention,
+entities_referenced vs cross-reference lists) shipped or were
+reframed as design-clarity wins in the same pass — this entry carries
+only the remaining renderer-enhancement work.
 
-4. **entities_referenced vs cross-reference lists — reframed
-   2026-04-19 as separation-of-concerns, not duplication.** Initially
-   flagged as redundant (paths in affiliations / relationships /
-   corroboration_items / etc. must also appear in
-   entities_referenced for stub-linking to fire). On reflection the
-   two lists serve different purposes:
-
-   - `entities_referenced` — entities named in *quote text*. The
-     contributor curates this list from the verbatim passages they
-     registered. Stub-linking checks that every listed entity appears
-     somewhere in the rendered body (catches: contributor wrote a
-     quote mentioning "Kelleher" but forgot to wrap him as
-     `[`/people/colm-kelleher`]` anywhere).
-   - **Cross-reference lists** (affiliations / relationships /
-     corroboration_items / program_involvement / publication_record /
-     vouching_chain) — structural relationships with their own path
-     fields. The renderer emits them as backtick-bracket links
-     automatically. `associate.py` picks them up for the Associated
-     Nodes section. No contributor curation of entities_referenced
-     needed for these.
-
-   **Convention for contributors:** populate `entities_referenced`
-   with entities named in quote text only. Don't duplicate paths that
-   already appear in structured cross-reference lists. Stub-linking
-   will still fire correctly — it just won't check paths that aren't
-   in entities_referenced, and those paths don't need it (they're
-   already linked via the cross-reference table render).
-
-   No code action required. Documenting this note closes the "gap"
-   as a design-clarity win, not a bug.
-
-**Surfaced.** F.1b audit (2026-04-19).
-**Shipped items 1 and 2.** 2026-04-19 pre-F.1c hardening pass.
-**Reframed item 4.** 2026-04-19 (same pass).
+**Design clarity note (entities_referenced vs cross-reference
+lists).** `entities_referenced` tracks entities named in *quote
+text* — contributor-curated from registered verbatim passages;
+stub-linking checks that every listed entity appears in the rendered
+body. Cross-reference lists (affiliations / relationships /
+corroboration_items / program_involvement / publication_record /
+vouching_chain) are structural relationships with their own path
+fields; the renderer emits them as backtick-bracket links
+automatically and `associate.py` picks them up for Associated Nodes.
+Contributors populate `entities_referenced` from quote-text entities
+only — paths in structured cross-reference lists don't need
+duplication there.
 
 ---
 
@@ -474,20 +401,10 @@ media) clears free-prose fields to 0 warnings routinely — the
 discipline is intact.
 
 **Surfaced.** F.1c Fravor audit RCA (2026-04-19). V1 ships as pre-F.2
-hardening commit.
-
-**Design note (2026-04-19 revision).** Initial v1 implementation
-used differentiated error thresholds (80% top-level, 80% per-entry)
-calibrated to accommodate synthesis-heavy fields passing without
-error. That calibration embedded a validator-side judgment about
-which fields are "allowed" more contributor vocabulary. Revised to
-an impartial rule: warn on every unmatched token, error only at 100%
-vocabulary divergence. The validator now surfaces drift without
-classifying it; the contributor reviews each warning. Any future
-v2 additions (stemming, whitelist, n-gram) must preserve the
-impartial-reporter framing — reduce warning noise without
-reintroducing validator-side judgments about "acceptable" drift
-levels.
+hardening commit. Impartial-reporter framing (warn on unmatched
+tokens, error only at 100% divergence) is durable design discipline
+captured in memory `feedback_validator_impartiality.md` — any v2
+additions must preserve it.
 
 ---
 
@@ -538,60 +455,34 @@ eventual cleanup so the fallback doesn't become permanent dead code.
 
 ---
 
-### Schema-descriptive keys not yet schema-driven in the validator
+### Schema-descriptive keys — `optional_sections`
 
-**Issue.** Post-source-taxonomy-consolidation (2026-04-18) the schema
-grew three new descriptive keys. Initially none were read by
-`validate.py`; this entry tracks which have since been wired and which
-remain documentation-only.
+**Issue.** The `optional_sections` list on the media type
+(`optional_sections: [Media Versioning]`) is read by no script. The
+Media Versioning section escapes `required_sections` enforcement
+because it's not listed there; the `optional_sections` entry is
+informational.
 
-Status as of 2026-04-18 hardening pass:
+**Why it matters.** Documentation-only schema keys that read as if
+they gate behavior are a drift vector — contributors or automation
+may assume they do. Promoting it to enforced behavior would turn
+unknown H2 sections into a warning unless they appear in
+`required_sections`, `optional_sections`, or a corpus addendum.
+Useful mostly as a forcing function against drift where contributors
+invent ad-hoc sections.
 
-1. **`conditionally_required`** (document + media) — **✅ SHIPPED**
-   `validate.py` now reads `types.{T}.conditionally_required` via the
-   `check_conditionally_required()` dispatcher. Condition grammar:
-   `<field> == <literal>` and `<field> is set`. Keys route to a
-   frontmatter-field check (lowercase names) or a section-presence
-   check (Title Case names) by shape. Malformed expressions surface
-   as validator errors. Future conditionals land as schema edits
-   alone; the two live rules (archival_status when doc_form=book;
-   Media Versioning when derivation_of is set) are now schema-driven.
-2. **`optional_sections`** (media) — **still descriptive-only**
-   `media: [Media Versioning]`. Read by no script. The Media
-   Versioning section escapes `required_sections` enforcement because
-   it's not listed there; the `optional_sections` entry is
-   informational. Promoting it to enforced behavior means making
-   unknown H2 sections a warning unless they appear in
-   `required_sections`, `optional_sections`, or a corpus addendum.
-   Modest scope; useful mostly as a forcing function against drift
-   where contributors invent ad-hoc sections.
-3. **`may_be_empty: true`** on `media.section_rules.Key Passages` —
-   **✅ REMOVED 2026-04-20 (BACKLOG audit cleanup).**
-   The flag was descriptive-only and redundant: existing
-   `requires_quote_verification: true` already permits zero-quote
-   sections (it only errors when quotes exist without verification
-   blocks), so `may_be_empty` mirrored default behavior. Removed from
-   `meta/schema.yaml` to stop accumulating documentation-only keys that
-   read as if they gate behavior. If a future `requires_quote_verification`
-   variant starts demanding at-least-one quote, reintroduce the
-   negation flag at that time.
-
-**Proposed remaining scope.** Honor `optional_sections` as an
-allowlist for an unknown-section warning pass. The
-`conditionally_required` dispatcher's condition grammar can also grow
-(`in <list>`, `<field> != <value>`) on-demand when a new conditional
-needs it — no preemptive extension.
-
-**Update 2026-04-19 (F.1a).** The schema flag `chronological: true`
-on section_rules (previously descriptive-only) is now enforced by
-`validate.py` check #15. Applied universally across all date-bearing
-tables on every node type. Closes one more descriptive-only gap from
-this entry's scope.
+**Proposed scope.** Honor `optional_sections` as an allowlist for an
+unknown-section warning pass. The `conditionally_required`
+dispatcher's condition grammar can also grow (`in <list>`,
+`<field> != <value>`) on-demand when a new conditional needs it — no
+preemptive extension.
 
 **Surfaced.** Source-taxonomy consolidation double-check (2026-04-18).
-**Partial resolution.** `conditionally_required` dispatcher shipped
-(2026-04-18 hardening pass). `chronological: true` flag enforced via
-check #15 (2026-04-19 F.1a).
+Sibling descriptive-only items resolved in the same audit window:
+`conditionally_required` dispatcher shipped (2026-04-18),
+`chronological: true` flag enforced via check #15 (2026-04-19 F.1a),
+`may_be_empty: true` removed from schema (2026-04-20) as
+documentation-only noise.
 
 ---
 
