@@ -16,6 +16,20 @@
   path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   archived_date: '2026-04-17'
   sha256: aa6099b37a26b8d65ab97984133883d2b0b98b29b8cc344967eaa29a5239d9e7
+- url: https://documents2.theblackvault.com/documents/navy/DON-2021-003140.pdf
+  format: pdf
+  status: archived
+  path: government/blackvault-uaptf-charter-foia-20250422.pdf
+  archived_date: '2026-04-20'
+  sha256: 5bb89ffaa60e9771ddef168052c916b33ee99d4898dd0e0ff5e15af42ab7058a
+  note: 'UAPTF Charter, Naval Intelligence Activity, signed September 2020. Released via FOIA case DON-NAVY-2021-003140 on April 22, 2025 (Black Vault). 11 pages, heavily redacted. Charter language: ''Congressional mandated, Deputy Secretary of Defense directed''. Discloses an Executive Steering Committee (EXCOM) governance structure.'
+- url: https://documents2.theblackvault.com/documents/navy/DON-NAVY-2022-000883.pdf
+  format: pdf
+  status: archived
+  path: government/blackvault-uap-security-classification-guide-20200416.pdf
+  archived_date: '2026-04-20'
+  sha256: acd9aa102bd1677efe53ac7200c21a5b8ab93f7f2bd8402ea726577bde2934dc
+  note: 'UAP Security Classification Guide, ID #04-030, Naval Intelligence Activity, dated April 16, 2020 — 4 months before the public UAPTF establishment announcement. Released via FOIA case DON-NAVY-2022-000883 (Black Vault). Proves UAPTF was operational pre-public-announcement. 13 pages, 2MB.'
 - url: https://media.defense.gov/2022/Jul/20/2003039074/-1/-1/1/ESTABLISHMENT-OF-THE-ALL-DOMAIN-ANOMALY-RESOLUTION-OFFICE.PDF
   format: pdf
   status: archived
@@ -34,6 +48,12 @@
   path: government/media-defense-gov-moultrie-aaro-memo-20220720.pdf
   archived_date: '2026-04-20'
   sha256: cbfae973bda236bd7e0f5b79da496dfef26942674f0d2e9d0ae30292dd9e998d
+- url: https://media.defense.gov/2024/Jan/25/2003381266/-1/-1/1/UNCLASSIFIED_SUMMARY_UNIDENTIFIED_ANOMALOUS_PHENOMENA_SECURE.PDF
+  format: pdf
+  status: archived
+  path: government/media-defense-gov-dodig-2023-109-unclassified-summary.pdf
+  archived_date: '2026-04-20'
+  sha256: e0b2ceb193d4e10a4cd75e5131257c453d15b7b5999d8d5245de9ab897a0bdd3
 - url: https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/REPORT-ON-THE-HISTORICAL-RECORD-OF-US-GOVERNMENT-INVOLVEMENT-WITH-UNIDENTIFIED-ANOMALOUS-PHENOMENA-VOL-1.PDF
   format: pdf
   status: archived
@@ -58,12 +78,25 @@
   path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   archived_date: '2026-04-17'
   sha256: 7bf2c20d6c47ab3bf00c718edd0baaff3c925a72cead21aa5a62b9448520c64a
+- url: https://safeaerospace.org/
+  format: html
+  status: archived
+  path: news/safeaerospace-home-20260420.html
+  archived_date: '2026-04-20'
+  sha256: fcc4aefe3bf6f45dd9e96bfa22ffef2d37c964dde7295f160d9c3e082644f271
+  note: Americans for Safe Aerospace home page. Lists Jay Stratton in the Advisors section — direct on-record attestation by an organization of which Stratton is a listed advisor. Strongest non-.gov public-record attribution for Stratton's UAPTF role.
 - url: https://www.aaro.mil/Portals/136/PDFs/Phillips_Timothy_Bio-DEC%202023-(Acting_Director_Ver)_508.pdf
   format: pdf
   status: archived
   path: government/aaro-phillips-timothy-bio-dec2023.pdf
   archived_date: '2026-04-20'
   sha256: 82f3a6c4013bb5cba23f9e614c69aa44a635594dadff1aeb08b2961c491d0392
+- url: https://www.congress.gov/117/meeting/house/114761/documents/HHRG-117-IG05-Transcript-20220517.pdf
+  format: pdf
+  status: archived
+  path: government/congress-gov-hpsci-uap-transcript-20220517.pdf
+  archived_date: '2026-04-20'
+  sha256: 8a67f89eb11d33cd2e724ab12b53638b6602ecae396b5ca8f13c7bcdfc4fd2da
 - url: https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf
   format: pdf
   status: archived
@@ -113,6 +146,19 @@
   path: government/defense-gov-kosloski-appointment-20240826.html
   archived_date: '2026-04-20'
   sha256: 7fe95c9e5803e1be89fb12395f9fa45bb0ca0cbbd8d67f62a6e26dabb8d523f7
+- url: https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf
+  format: pdf
+  status: archived
+  path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+  archived_date: '2026-04-20'
+  sha256: 3b699a825c53aab7816b50ffe0c45d4f424ca43da5eaa421736e529f2ac00ac9
+- url: https://www.govinfo.gov/content/pkg/CRPT-116srpt233/pdf/CRPT-116srpt233.pdf
+  format: pdf
+  status: archived
+  path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
+  archived_date: '2026-04-20'
+  sha256: 34fa7305b793f92d18066929879894848f68e235c747bc2bf42de6b56bc83d3f
+  note: Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 (S. 3905). Senate Select Committee on Intelligence. Contains the 'Advanced Aerial Threats' section that directs the DNI/SecDef UAP report within 180 days (which became the June 2021 ODNI Preliminary Assessment). References 'the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence' — the Senate's on-record acknowledgment of UAPTF and its ONI home.
 - url: https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4
   format: html
   status: archived
@@ -120,3 +166,10 @@
   archived_date: '2026-04-20'
   sha256: eff0ffa55bcafee5dd7b0c4668c5bb21a9617feae8f0d01912a8c73a859dc170
   note: First of three UAP videos released by DoD April 27, 2020. Direct download from NAVAIR FOIA documents (https://www.navair.navy.mil/foia/documents). Filename '1 - FLIR.mp4' matches NAVAIR's sequential labeling. 76.30 seconds, 352x264, ISO 14496-14 MP4. Archived 2026-04-20.
+- url: https://www.theblackvault.com/documentarchive/pentagon-releases-details-about-dr-travis-taylors-uap-task-force-involvement/
+  format: html
+  status: archived
+  path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+  archived_date: '2026-04-20'
+  sha256: 331ea0da91a0e7921efdeb46882c4f5ee556c0d59e69953da0a915e515c82ec7
+  note: Black Vault June 29, 2022 article carrying Pentagon Public Affairs statement from DoD spokesperson Susan Gough. Gough names 'former Office of Naval Intelligence senior civilian John Stratton' as UAPTF lead and confirms Dr. Travis Taylor was informally designated UAPTF 'chief scientist' via SMDC assignment. Strongest on-record DoD attribution naming the UAPTF leader.
