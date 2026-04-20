@@ -168,17 +168,26 @@ def load_frontmatter(node_path):
     return fm, text[:block_end]
 
 
+def _id_natural_key(eid):
+    """Return a natural-sort key for an id string like 'q1', 'q10', 'md3'.
+    Splits alpha prefix + numeric suffix so q10 sorts AFTER q2 (not before).
+    Non-conforming ids fall to a 'zzz' bucket to sort last, preserving
+    sort stability for malformed entries."""
+    if not eid:
+        return ("zzz", 0, "")
+    m = re.match(r"^([a-zA-Z]+)(\d+)$", str(eid))
+    if m:
+        return (m.group(1), int(m.group(2)), str(eid))
+    return ("zzz", 0, str(eid))
+
+
 def sort_by_id(entries):
     """Natural-sort entries by id (q1, q2, …, q10) so output order is
     stable and human-expected (q10 doesn't land between q1 and q2)."""
     def key(e):
         if not isinstance(e, dict):
             return ("zzz", 0, "")
-        eid = e.get("id") or ""
-        m = re.match(r"^([a-zA-Z]+)(\d+)$", eid)
-        if m:
-            return (m.group(1), int(m.group(2)), eid)
-        return ("zzz", 0, eid)
+        return _id_natural_key(e.get("id") or "")
     return sorted(entries, key=key)
 
 
@@ -209,11 +218,14 @@ def parse_date_tuple(s):
 
 def sort_by_date(entries, date_key):
     """Stable-sort entries ascending by the date at `date_key`. Undated /
-    unparseable entries land at the end (via the 9999 sentinel)."""
+    unparseable entries land at the end (via the 9999 sentinel). Tie-break
+    by natural-sort on id — prevents lex-sort from placing q10 between
+    q1 and q2 when all entries share the same date (common on transcripts
+    where every quote carries the hearing date)."""
     def key(e):
         if not isinstance(e, dict):
-            return ((9999, 0, 0), "")
-        return (parse_date_tuple(e.get(date_key)), e.get("id") or "")
+            return ((9999, 0, 0), ("zzz", 0, ""))
+        return (parse_date_tuple(e.get(date_key)), _id_natural_key(e.get("id") or ""))
     return sorted(entries, key=key)
 
 
