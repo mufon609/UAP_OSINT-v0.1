@@ -939,7 +939,7 @@ adds one new stub (/people/david-grusch from Fravor's q15 "Mr. Grusch
 just covered that") and surfaces no new cluster-scoped priority queue
 additions.
 
-### F.4 — media  🟡 IN PROGRESS (F.4a done; F.4b/c pending)
+### F.4 — media  ✅ DONE (F.4a + F.4b + F.4c shipped 2026-04-20)
 
 Shipped in the source-taxonomy consolidation as a type but with no
 renderer. Design pass completed 2026-04-20.
@@ -1005,41 +1005,60 @@ End-to-end verification: all 5 media-kind scaffolds scaffold + validate
 clean. Derivative fixture surfaces the new "empty media_versioning
 when derivation_of set" warn (non-blocking; contributor review).
 
-#### F.4b — Phase II renderer  ⏸ NEXT
+#### F.4b — Phase II renderer  ✅ DONE (2026-04-20)
 
-Extend `build-from-research.py` with media support. Per-kind dispatch
-(photo / video / audio / imagery-other). Section renderers:
+Shipped in commit `f37ffd2` + cosmetic tightening in `dde4b51`. Media
+renderer added to `build-from-research.py` — per-kind section
+structure (Media Summary / Description / Provenance / conditional
+Media Versioning / Key Passages) with 5 new render helpers
+(`render_title_media`, `render_media_summary`, `render_media_versioning`,
+`render_media_key_passages`, `render_body_media`) + dispatch into
+`render_body`. Decision 1 (single format-flexible quote entry type)
+flows through via `_render_verification_block` reuse — timestamp /
+spatial / combined location strings pass through verbatim. Decision
+2 (Media Versioning Shape D) renders Aspect / Parent / This / Source /
+Note columns. Conditional rule: section emits when artifact has
+entries OR frontmatter has `derivation_of` set (schema
+conditionally_required compliance); placeholder row when derivation
+set + empty entries (validator warn surfaces the gap non-blockingly).
+`_manifest_sha256_for` helper looks up SHA256 per primary source.
+`review-coverage.py` SUPPORTED_TYPES extended; all 4 checks
+generalize. Smoke 36 → 46 (5 media kinds × 3 new pipeline phases each).
+Post-pilot cosmetic fix: Media Summary Duration/Dimensions label
+adapts to populated fields (video → combined; audio → Duration only;
+photo → Dimensions only).
 
-- `## Media Summary` — kind-sensitive table from `document_intrinsic`
-  + `context_extrinsic` + `primary_sources[0].path` + manifest sha256.
-  Fields per the document_intrinsic media convention (F.4a schema
-  comment).
-- `## Description` — from `description` prose.
-- `## Provenance` — from `context_extrinsic.provenance` list
-  (chronological custody chain).
-- `## Media Versioning` — conditional on `derivation_of` frontmatter
-  set. Rendered from `media_versioning[]`; columns per F.4a template.
-  Emitted only when the section has at least one entry; omitted
-  entirely for canonical / original media.
-- `## Key Passages` — from `quotes[]`, sorted by `statement_date` with
-  natural-sort tie-break; verification-block format flexible per the
-  `source.location` shape (timestamp / spatial / combined).
+#### F.4c — FLIR1 pilot  ✅ DONE (2026-04-20)
 
-`review-coverage.py` extension: `SUPPORTED_TYPES` gains `media`;
-existing four checks (Coverage / Boundary / Stub-linking / OQ dedup)
-generalize. Synthetic-fixture pilot to prove the renderer before F.4c.
-
-#### F.4c — FLIR1 pilot  ⏸ AFTER F.4b
-
-`/media/flir1-video` — the 90-second targeting-pod video from the
-2004 Nimitz encounter. DoD publicly released in 2020; earlier leaked
-versions circulated from 2017 via TTSA. Multi-version history makes
-it the cleanest real-world test of the Media Versioning path.
-Cockpit audio is minimal; visible on-screen HUD text is present
-throughout.
-
-Side effect: `/people/chad-underwood` identity attribution (F.3c
-research_gap rg1) may resolve if the provenance chain names him.
+First real media node end-to-end through the F.4b renderer. Shipped
+in commit `859ca42` + follow-up `c065e4a`. `/media/flir1-video` built
+at iteration i0 from the DoD 2020 authorized release of the 2004
+USS Nimitz targeting-pod video (downloaded from NAVAIR FOIA at
+https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/
+2020-04/1%20-%20FLIR.mp4). MP4 parsed: 76.30 seconds, 352x264,
+mvhd creation_time `2007-09-18T10:18:36Z` — consistent with DoD's
+"unauthorized releases in 2007" acknowledgment. Canonical framing
+(no derivation_of); media_versioning empty; Provenance chain
+captures the full distribution history (2004 capture → 2007 first
+unauthorized release per mvhd metadata + DoD statement → 2017-12
+TTSA/NYT second unauthorized release → 2020-04-27 DoD authorized
+release via NAVAIR FOIA → 2026-04-20 local archive). Key Passages
+empty (video unextractable by pdftotext; research_gap rg1 tracks
+HUD-text extraction; research_gap rg2 cockpit-audio transcription).
+Pilot findings absorbed in-session:
+- `review-coverage.py` binary-source handling — gather_source_text
+  previously errored on unextractable media; tightened to warn
+  (file exists but isn't text-extractable — binary media, follows
+  validate.py check #11's impartial framing). F.4c's MP4 passes
+  review-coverage with 1 warn.
+- `scripts/manifest.py` + `scripts/research-scaffold.py` — video
+  extensions (.mp4/.m4v/.mov/.webm/.avi/.mkv) now map to `video`
+  format rather than falling back to `html`. Audio/image mappings
+  deferred pending schema format_values extension (BACKLOG).
+- `scripts/validate-research.py` — new pre-parse check for YAML `#`
+  comment-truncation in unquoted scalars (surfaced during F.4c's
+  research_gap methodology had "validate.py check #11" silently
+  truncated). Warn-level; prose-quote-or-rewrite guidance in message.
 
 Pilot candidate: `/media/flir1-video` (primary); alternative
 `/media/gimbal-declassified` has similar structure.
@@ -1092,9 +1111,9 @@ Cluster-scope first-pass targets:
 - `/events/2004-nimitz-encounter` (F.2 pilot) ✅ DONE 2026-04-19
 - `/people/david-fravor` (F.1 pilot) ✅ DONE 2026-04-19
 - `/transcripts/2023-07-26-house-fravor` (F.3 pilot) ✅ DONE 2026-04-19
+- `/media/flir1-video` (F.4 pilot) ✅ DONE 2026-04-20
 - `/people/alex-dietrich` (follow-on; same archetype) ⏸ pending
 - `/people/chad-underwood` (follow-on) ⏸ pending
-- `/media/flir1-video` (F.4 pilot) ⏸ pending
 
 Cluster-close when the ring validates cleanly against schema,
 cross-references resolve in both directions, and the research-queue
@@ -1102,13 +1121,30 @@ broken-link registry for the cluster has drained.
 
 The Fravor person node registers 15 broken-link stubs (Nimitz cluster
 entities). Those are the build queue for the remainder of Step G's
-first cluster, interleaved with F.2 (event renderer + Nimitz
-encounter pilot) and F.3/F.4 as needed to unlock dependent content.
+first cluster, now that F.2 / F.3 / F.4 renderers + their pilots have
+all shipped — the remaining work is content population (Dietrich,
+Underwood, supporting orgs) under the F.5 (organization) sub-phase
+once it lands, plus eyewitness-person follow-ons under F.1b.
 
-**Second cluster — candidate.** Either: 2015 Virginia Beach encounters
-(parallel eyewitness cluster, Graves-anchored) OR a hearing cluster
-(2023-07-26 House Oversight, a known-complete primary-source cluster).
-Picked after Nimitz ships to keep the one-cluster-at-a-time discipline.
+**Second cluster — 2023-07-26 House Oversight hearing.** In flight as
+of 2026-04-20. A known-complete primary-source cluster (three
+witnesses, one stenographic transcript PDF, three companion written-
+testimony PDFs, one published event page). Cluster-scope targets:
+
+- `/transcripts/2023-07-26-house-fravor` ✅ DONE 2026-04-19 (F.3c pilot)
+- `/events/2023-07-26-house-uap-hearing` ✅ DONE 2026-04-20 (F.2b
+  hearing-kind stress test)
+- `/documents/written-testimony-fravor-2023` ✅ DONE (pre-refactor)
+- `/documents/written-testimony-graves-2023` ✅ DONE (pre-refactor)
+- `/documents/written-testimony-grusch-2023` ⏳ NEXT (next session —
+  D.3 document renderer; PDF archived, sha256 `9729f98d…`)
+- `/transcripts/2023-07-26-house-grusch` ⏸ pending (second F.3b
+  hearing-transcript pilot)
+- `/transcripts/2023-07-26-house-graves` ⏸ pending (third F.3b
+  hearing-transcript pilot)
+- `/people/david-grusch` ⏸ pending (whistleblower-archetype pilot
+  under F.1b — complements Fravor's eyewitness archetype)
+- `/people/ryan-graves` ⏸ pending (eyewitness-archetype follow-on)
 
 G milestones are emergent, not pre-planned. The research queue
 (`meta/topic/research-queue.md`) drives additions after each cluster

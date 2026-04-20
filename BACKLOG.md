@@ -765,3 +765,126 @@ addressed in-session because `video` was already in format_values;
 audio and image deferred because they'd require schema vocabulary
 extension.
 
+---
+
+### YAML unquoted-scalar colon trap
+
+**Issue.** YAML's block-mapping parser treats `: ` (colon-space) as the
+key/value separator anywhere in a value. An unquoted scalar containing
+an embedded colon followed by a space — common in titles and prose
+like `We are not alone: The UFO whistleblower speaks` — causes either a
+parse error or silent mis-parsing (the portion before the colon is
+treated as a key, the portion after as its value). Surfaced during the
+Cluster B hearing-event pilot (2026-04-20) when a Luna NewsNation
+submission title broke the `publication_record` entry; fixed by
+single-quoting the value AND replacing the inner `:` with an em-dash
+(`—`) for safety.
+
+**Why it matters.** Unlike the `#` comment-truncation trap (warn-level
+pre-parse check shipped F.4c), the colon-space trap typically surfaces
+as a hard parse error rather than silent truncation — so evidentiary
+data loss is less likely. But: contributors working with natural prose
+titles, quote-bearing fields, and research_gap methodologies routinely
+generate colon-bearing strings. Recurring friction is the cost; a
+preemptive validator check would surface the issue at write time with
+clear remediation guidance rather than via a cryptic YAML parser trace.
+
+**Proposed scope.** Extend `validate-research.py`'s pre-parse scan (same
+mechanism as `check_yaml_hash_truncation`) with a companion check that
+warns on unquoted scalars containing `: ` (colon-space) followed by 2+
+words. Remediation message: `quote the scalar value, OR replace the
+colon with an em-dash / semicolon if typographically appropriate`.
+Tradeoff: some colon-bearing unquoted scalars are valid (e.g., single-
+word `url: https://...`). The check should be narrow enough to catch
+prose but not URL/path strings — check if the colon is preceded by a
+known-URL-scheme word (http, https, ftp, mailto, ssh) and skip.
+
+**Trigger.** When a second hearing-event or media-artifact pilot
+encounters the same trap.
+
+**Interim.** Document in `prompts/build.md` alongside the `#` trap
+guidance; contributors hand-quote values with embedded `: ` patterns.
+
+**Surfaced.** Cluster B hearing-event pilot (2026-04-20).
+
+---
+
+### Empty Witnesses subsection renders an empty table
+
+**Issue.** F.2b's hearing-event Participants renderer emits
+capacity-based subsections (`Eyewitness Testimony`, `Whistleblower
+Testimony`, `Institutional Testimony`, `Committee Members`). When a
+capacity has zero witnesses (e.g., the 2023-07-26 House Oversight
+hearing had no institutional-actor witnesses, only eyewitness and
+whistleblower testimony), the renderer still emits the H4 subheader
+and an empty table with just the header row. Surfaced during the
+Cluster B hearing-event pilot: `#### Witnesses — Institutional
+Testimony` rendered above an empty table.
+
+**Why it matters.** Empty tables read as "data missing" to an
+investigator rather than "category not applicable here." Contributors
+may also hand-edit the node to remove the empty section, which then
+fails the Boundary check because the artifact still drives the
+renderer to emit it.
+
+**Proposed scope.** Adjust `render_event_participants` in
+`scripts/build-from-research.py` — for hearing events, suppress the
+witness-capacity subsection entirely when no participants carry that
+capacity. Keep the Committee Members and Flagged subsections (their
+"empty" case is meaningful — the absence asserts no members attended
+or no participants are flagged). Alternative: emit a one-line note
+("No witnesses in this capacity.") in place of the empty table to
+preserve the schema's capacity vocabulary visibility.
+
+**Trigger.** Immediate — low-complexity renderer edit; the fix itself
+is < 10 lines.
+
+**Surfaced.** Cluster B hearing-event pilot (2026-04-20).
+
+---
+
+### Committee Members subsection lacks Chair/Ranking sub-grouping
+
+**Issue.** F.2b hearing-event Participants renders Committee Members
+as a flat table with Name / Role / Affiliation / Status columns. The
+Cluster B pilot populated 21 Members — Chair (Grothman), Ranking
+(Garcia), Full Committee Chair (Comer), plus 18 sitting Members —
+with role text capturing their leadership status ("Subcommittee Chair
+(R-WI)", "Ranking Member (D-TX)", etc.). The flat table reads
+accurately but requires the reader to scan every row to identify
+leadership; a sub-grouped layout (Chair / Ranking / Members) would
+surface the structural hierarchy faster.
+
+**Why it matters.** Hearings have asymmetric member influence —
+Chair controls the gavel; Ranking controls minority time; ordinary
+Members ask questions in their allotted minutes. An investigator
+comparing hearings by leadership composition benefits from the
+hierarchy being visible at a glance rather than derivable from a
+string-match scan of role cells. Not urgent — the information is
+present, just flat.
+
+**Proposed scope.** Two options:
+
+1. **Render-time grouping via role-string parsing** — detect
+   "Subcommittee Chair", "Ranking Member", "Full Committee Chair" in
+   the `role` cell and emit H5 sub-subheads (Chair / Ranking /
+   Leadership / Members). Fragile — role cell phrasing varies across
+   hearings (Senate vs House; subcommittee vs full committee
+   hearings).
+2. **Schema-level role vocabulary** — add an optional
+   `leadership_role` field on `participant_entry` with enum values
+   (`subcommittee-chair`, `ranking-member`, `full-committee-chair`,
+   `member`, `observer`). F.2b reads it for sub-grouping; leave
+   `role` as the free-text display cell. Cleaner; retrofits require
+   a sweep of hearing-event artifacts (currently 1).
+
+**Trigger.** Second hearing-event artifact shipped (Cluster C or the
+next Senate/House hearing to land). The retrofit cost stays at 1
+artifact while the count is low.
+
+**Interim.** Flat table with role-embedded leadership text is
+acceptable; contributors reading the node can sort mentally or
+filter by text.
+
+**Surfaced.** Cluster B hearing-event pilot (2026-04-20).
+

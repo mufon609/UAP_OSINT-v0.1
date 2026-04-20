@@ -45,21 +45,21 @@ appear in the Priority Build Queue below.
 
 ## Priority Build Queue
 
-32 unbuilt-stub targets referenced from the 5 built nodes (Fravor
+Unbuilt-stub targets referenced from the 7 built nodes (Fravor
 document + Graves document + Fravor person + Nimitz encounter + Fravor
-oral transcript). Grouped by natural cluster so contributors can
-choose which ring to close first.
+oral transcript + FLIR1 video + 2023-07-26 House Oversight hearing
+event). Grouped by natural cluster so contributors can choose which
+ring to close first.
 
-### Cluster A — 2004 Nimitz encounter (F.2c pilot shipped 2026-04-19)
+### Cluster A — 2004 Nimitz encounter (F.2c pilot shipped 2026-04-19; FLIR1 F.4c pilot shipped 2026-04-20)
 
-The encounter event is built; the cluster's remaining work is
-corroborator people nodes (Dietrich, Underwood), the FLIR1 media node,
+The encounter event and FLIR1 media node are built; the cluster's
+remaining work is corroborator people nodes (Dietrich, Underwood)
 and the supporting organization nodes.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
 | `/people/alex-dietrich` | person / eyewitness | High | Co-observer (Fravor's wingman); named in Fravor testimony + multiple interview transcripts | Fravor testimony + CBS 60 Minutes 2021-05-16 transcript (archived) |
-| `/media/flir1-video` | media / video | High | Primary documentary corroboration (90-second targeting-pod video); released by USG in 2017 | Need to archive the DoD-released video file; transcript of cockpit audio |
 | `/organizations/uss-nimitz` | organization / gov (military-service) | High | Ship that launched the Fravor flight; referenced across multiple cluster members | Navy HR + public record |
 | `/organizations/uss-princeton` | organization / gov (military-service) | High | Aegis SPY-1 radar platform — instrumented corroboration source | Navy HR + surfpac.navy.mil (archived) |
 | `/organizations/vfa-41` | organization / gov (military-service) | High | Fravor's squadron (Black Aces) | Navy HR + public record |
@@ -74,18 +74,20 @@ and the supporting organization nodes.
 | `/people/christopher-mellon` | person / institutional-actor | Low | Former Deputy Assistant SecDef for Intelligence; TTSA advisor | Public record |
 | `/people/steve-justice` | person / institutional-actor | Low | Former Lockheed Skunk Works director; TTSA | Public record |
 
-### Cluster B — 2023-07-26 House Oversight hearing (F.3c pilot shipped 2026-04-19)
+### Cluster B — 2023-07-26 House Oversight hearing (hearing event shipped 2026-04-20; Fravor transcript F.3c shipped 2026-04-19)
 
-Fravor oral transcript is built; the cluster's remaining work is the
-hearing event node, the Graves oral transcript, the Graves person
-node, and supporting witness-orbit people.
+Hearing event node + Fravor oral transcript built. Cluster's remaining
+ring: Grusch and Graves companion document nodes (witness-specific
+primary sources already archived), their oral transcripts, and the
+two witness person nodes.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/events/2023-07-26-house-uap-hearing` | event / hearing | High | Hearing node ties together Fravor, Graves, Grusch testimonies | oversight.house.gov event page (archived) |
-| `/transcripts/2023-07-26-house-graves` | transcript / hearing | High | Graves's oral testimony at the hearing — same stenographic PDF already archived | congress.gov hearing transcript PDF (archived) |
+| `/documents/written-testimony-grusch-2023` | document / gov-doc | High | Grusch's prepared written statement; dense whistleblower primary source; next session target | oversight.house.gov PDF (archived — sha256 `9729f98d…`) |
+| `/transcripts/2023-07-26-house-grusch` | transcript / hearing | High | Grusch's oral testimony at the hearing — same stenographic PDF already archived; second F.3b hearing-transcript pilot | congress.gov hearing transcript PDF (archived) |
+| `/transcripts/2023-07-26-house-graves` | transcript / hearing | High | Graves's oral testimony at the hearing — same stenographic PDF already archived; third F.3b hearing-transcript pilot | congress.gov hearing transcript PDF (archived) |
+| `/people/david-grusch` | person / whistleblower | High | Cluster B anchor witness; PPD-19 urgent-concern filer; written + oral testimony both primary | Grusch written testimony + oral statement (both archived) + NewsNation interview |
 | `/people/ryan-graves` | person / eyewitness | High | 2015 Virginia Beach encounters witness; written testimony already archived as document | Graves written testimony (archived + extracted) |
-| `/people/david-grusch` | person / whistleblower | High | Fellow witness at the 2023-07-26 hearing; referenced in Fravor's oral q15; PPD-19 urgent-concern filer | Grusch oral statement (in already-archived stenographic PDF) + NewsNation interview |
 | `/people/sean-kirkpatrick` | person / institutional-actor | Medium | AARO founding director; named in Graves testimony | 2023-04-19 SASC testimony (archived) |
 | `/people/tim-gallaudet` | person / institutional-actor | Medium | Former NOAA Chief Scientist and Deputy Administrator; UAP advocate | Public record |
 | `/documents/odni-preliminary-assessment-2021` | document / gov-doc | Medium | Referenced in Graves testimony; foundational UAP report | ODNI (public PDF; archived) |
@@ -134,6 +136,6 @@ Long-term structural improvements not blocked on primary sources.
 
 | Milestone | Description | Target | Status |
 |---|---|---|---|
-| Close Cluster A (Nimitz) ring | Build Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | F.2c + F.3 shipped; F.4 (media renderer) remains | Pending |
-| Close Cluster B (2023-07-26 hearing) ring | Build hearing event + Graves transcript + Graves person + Grusch person | F.2c + F.3 shipped; Fravor transcript built; content work only | Pending |
+| Close Cluster A (Nimitz) ring | Build Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | F.2c + F.3 + F.4 shipped; FLIR1 built; Dietrich + orgs remain | In progress |
+| Close Cluster B (2023-07-26 hearing) ring | Build Grusch doc + Grusch/Graves transcripts + Grusch/Graves person | Hearing event + Fravor transcript built; Grusch doc is next-session target | In progress |
 | First finding node | Build a cross-entity finding spanning 3+ nodes (e.g., UAP video-release provenance chain) | After ≥3 cluster rings close | Pending |

@@ -195,6 +195,37 @@ free-prose field, not just `description`.
 - Quote text must match source exactly except for surrounding
   quotation marks (which are not part of the quoted content).
 
+**Key Testimony / Key Passages selection — substantive over
+procedural** (applies to event and transcript artifacts; lesson from
+Cluster B 2023-07-26 hearing-event pilot, 2026-04-20). The Key
+Testimony section of a hearing event (and the analogous Key Passages
+section of a hearing transcript) should highlight distinctive
+evidentiary moments — the claims that make this hearing worth
+archiving — not procedural scaffolding. Avoid selecting:
+- Convening / adjournment / gavel timings (already captured by
+  `event_intrinsic.start_time` / `end_time` and the Timeline section)
+- Oath administration ("Please raise your right hand…") and witness
+  affirmations ("I do") (already captured by
+  `witnesses_testimony[].oath_status: sworn`)
+- Routine procedural exchanges (recognizing a Member, yielding time,
+  submitting for the record) unless the procedural act itself is
+  evidentiarily novel (e.g., unanimous-consent to classify)
+
+Prefer quotes that surface: the specific factual claims witnesses
+assert, the strongest corroborations or contradictions between
+witnesses, the most-cited moments from post-hearing press coverage,
+the moments where a Member articulates a bipartisan frame or closing
+assessment that's quotable beyond the hearing itself. Procedural
+evidentiary weight lives in the structural fields; free the Key
+Testimony section to be the highlights reel.
+
+**Event-level Key Testimony may duplicate transcript/document Key
+Passages.** An event stands as a self-contained highlights reel —
+investigators landing on the event node expect to see what was said
+without clicking through. Quote overlap with the witness-specific
+transcript or document nodes is acceptable and expected; the
+renderer does not deduplicate across nodes.
+
 ### Step 7. Populate `claims` (bounded agent task T1)
 
 **Scope note.** `claims: []` under every current renderer. Rationale
