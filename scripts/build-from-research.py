@@ -1470,15 +1470,19 @@ def render_media_summary(artifact, kind):
     row("Kind", kind)
     row("Date Captured", dm.get("capture_date") or dm.get("original_creation_date"))
     row("Date Released", ctx.get("release_date"))
-    # Duration + Dimensions combine when both present (typical for video);
-    # either alone renders as its own value when only one applies.
-    dur_dim = []
-    if dm.get("duration"):
-        dur_dim.append(str(dm["duration"]))
-    if dm.get("dimensions"):
-        dur_dim.append(str(dm["dimensions"]))
-    if dur_dim:
-        row("Duration / Dimensions", " / ".join(dur_dim))
+    # Duration + Dimensions: label adapts to what's populated. Video
+    # typically has both → "Duration / Dimensions"; audio has only
+    # duration → "Duration"; photo / imagery-other has only dimensions
+    # → "Dimensions". Keeps the label honest about what the row covers
+    # rather than presenting a "half-populated combined field" look.
+    has_dur = bool(dm.get("duration"))
+    has_dim = bool(dm.get("dimensions"))
+    if has_dur and has_dim:
+        row("Duration / Dimensions", f"{dm['duration']} / {dm['dimensions']}")
+    elif has_dur:
+        row("Duration", dm.get("duration"))
+    elif has_dim:
+        row("Dimensions", dm.get("dimensions"))
     # Format: document_intrinsic.file_format takes precedence (precise),
     # fall back to primary_sources[0].format (the manifest-registered
     # container type).
