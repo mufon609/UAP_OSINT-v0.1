@@ -438,10 +438,16 @@ def extract_source_text(source_path):
 def normalize_for_compare(text):
     """Normalize text for substring comparison.
 
-    Handles common PDF-extraction artifacts:
+    Handles common PDF-extraction + Markdown-rendering artifacts:
       - smart quotes -> straight
       - em/en dashes -> hyphen
       - non-breaking spaces -> space
+      - Markdown block-quote line-prefix markers (`> ` at start of each
+        line) stripped — so a multi-line source quote rendered as a
+        multi-line block quote still substring-matches its single-string
+        quote text. Surfaced by the F.5 UAPTF pilot when multi-line YAML
+        literal-block quotes (SCG, Senate Report) rendered as multi-line
+        block quotes and failed the check despite content equivalence.
       - all hyphens removed (uniform handling of PDF line-wrap hyphenation,
         compound-word hyphens, and em-dashes — the tradeoff is we cannot
         distinguish "brand-new" from "brandnew", but we gain robustness
@@ -455,6 +461,9 @@ def normalize_for_compare(text):
     text = text.replace("\u2014", "-").replace("\u2013", "-")
     # Non-breaking space -> space
     text = text.replace("\u00a0", " ")
+    # Markdown block-quote markers at line start — strip `> ` / `>` prefix
+    # so multi-line block quotes normalize to their underlying content.
+    text = re.sub(r"(?m)^\s*>\s?", "", text)
     # Collapse hyphen+whitespace to just hyphen, so PDF line-wrap "brand-\nnew"
     # and hand-written "brand-new" normalize the same way after hyphen-strip
     text = re.sub(r"-\s+", "-", text)

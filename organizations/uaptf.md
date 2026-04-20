@@ -26,7 +26,7 @@ created: 2026-04-20
 
 ## Description
 
-The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force at the [`/organizations/oni`]. DoD press release, August 14, 2020: Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) "approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF."
+The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force at the [`/organizations/oni`]. DoD press release, August 14, 2020: "Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF."
 
 The UAP Security Classification Guide (ID# 04-030, Naval Intelligence Activity ([`/organizations/nia`]), April 16, 2020) names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its subject — four months before the DoD press release of August 14, 2020. The UAPTF Charter, dated September 1, 2020, describes the Task Force as "Congressionally mandated, Deputy Secretary of Defense directed" and its Purpose as "to create a single entity tasked with working across the Department of Defense" with the Intelligence Community and the Interagency "to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data" on UAP.
 
@@ -66,7 +66,11 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ### UAP Security Classification Guide identifies UAPTF at Office of Naval Intelligence — April 16, 2020 (four months before public establishment announcement)
 
-> This classification guide is issued for the purpose of identifYing specific topics of information associated with the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force that meet the standards and criteria for classification and protection in accordance with Executive Order (E.O.) 13526, "Classified National Security Information," as amended, and its implementing directives.
+> This classification guide is issued for the purpose of identifYing specific topics
+> of information associated with the Office of Naval Intelligence, Unidentified Aerial Phenomenon
+> (UAP) Task Force that meet the standards and criteria for classification and protection in
+> accordance with Executive Order (E.O.) 13526, "Classified National Security Information," as
+> amended, and its implementing directives.
 
 | Field | Value |
 |---|---|
@@ -79,7 +83,11 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ### Senate Select Committee on Intelligence on-record acknowledgment of UAPTF at ONI
 
-> The Committee supports the efforts of the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence to standardize collection and reporting on unidentified aerial phenomenon, any links they have to adversarial foreign governments, and the threat they pose to U.S. military assets and installations.
+> The Committee supports the efforts of the Unidentified Aerial
+> Phenomenon Task Force at the Office of Naval Intelligence to
+> standardize collection and reporting on unidentified aerial phe-
+> nomenon, any links they have to adversarial foreign governments,
+> and the threat they pose to U.S. military assets and installations.
 
 | Field | Value |
 |---|---|

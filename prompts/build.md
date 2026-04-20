@@ -194,6 +194,39 @@ free-prose field, not just `description`.
   authoritative anchor, not pre-existing prose.
 - Quote text must match source exactly except for surrounding
   quotation marks (which are not part of the quoted content).
+- **HTML entity preservation.** When quoting from HTML sources
+  (press releases, congressional committee pages, news articles),
+  pdftotext / the `.html` reader preserves HTML entities verbatim in
+  the scratch file — `&nbsp;` between sentences, `&#39;` for
+  apostrophes, `&amp;` for ampersands. The mechanical verbatim-quote
+  check compares byte-for-byte, so the quote text in the artifact
+  must include the literal entities. Either: (a) preserve the entity
+  in the `text` field, or (b) shorten the quote span to avoid the
+  entity. Do not silently convert entities to their decoded
+  characters. Surfaced by the F.5 UAPTF pilot on DoD press-release
+  and Black Vault article quotes.
+- **OCR artifact preservation.** FOIA'd PDFs often contain OCR damage
+  — dropped characters (`ovember` for `November`, `AGE CY` for
+  `AGENCY`), hyphen-split line breaks (`fulfi lled` for `fulfilled`),
+  unexpected capitalization (`identifYing`), transposed letters
+  (`Unidenlified` for `Unidentified`), and typos (`chaner` for
+  `charter`). The scratch file shows exactly what the validator sees;
+  quote text must match those artifacts byte-for-byte. Do not
+  "correct" the source in the quote; log the divergence as a
+  `naming_quirk` if the artifact is meaningful (name misspelling,
+  alternate form worth preserving). Surfaced by the F.5 UAPTF pilot
+  on the UAP Security Classification Guide and UAPTF Charter FOIA
+  releases.
+- **Wrap paths outside quoted spans.** When adding
+  `[`/path/to/entity`]` wraps alongside entities named inside a
+  double-quoted span in prose fields (description / background /
+  credibility_notes), place the wrap OUTSIDE the closing quote, not
+  inside. Inside-quote wraps get stripped by the description-drift
+  check, leaving orphan `()` that breaks the substring match. Ex:
+  `Name ([`/people/...`])  "quoted source text…"` (wrap before
+  the quote) — NOT — `"Name ([`/people/...`]) quoted source text…"`
+  (wrap inside). Surfaced by the F.5 UAPTF pilot on the Norquist
+  wrap inside a DoD press-release quote.
 
 **Key Testimony / Key Passages selection — substantive over
 procedural** (applies to event and transcript artifacts; lesson from

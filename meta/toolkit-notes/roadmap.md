@@ -1223,9 +1223,78 @@ testimony PDFs, one published event page). Cluster-scope targets:
   Debrief/NewsNation extraction)
 - `/people/ryan-graves` ⏸ pending (eyewitness-archetype follow-on)
 
+**Third cluster — UAP oversight institutions.** In flight as of
+2026-04-20. The central DoD UAP oversight organizations (UAPTF →
+AOIMSG → AARO lineage) plus their supporting stubs.
+
+- `/organizations/aaro` ✅ DONE 2026-04-20 (F.5c pilot)
+- `/organizations/uaptf` ✅ DONE 2026-04-20 (second gov-kind org; 11
+  primary sources including FOIA'd UAP SCG + UAPTF Charter; Gough
+  DoD PA statement naming Stratton; Senate Report 116-233 Advanced
+  Aerial Threats section; 11 Key Passages; 3 key_personnel with
+  leadership_class; 9 timeline entries)
+- `/organizations/oni` ⏸ pending (UAPTF parent; surfaced as stub)
+- `/organizations/nia` ⏸ pending (UAPTF Charter signing authority;
+  surfaced as stub)
+- `/people/david-norquist` ⏸ pending (DSD approver of UAPTF; stub)
+- `/people/travis-taylor` ⏸ pending (informal UAPTF Chief Scientist;
+  stub)
+- `/organizations/odni` ⏸ pending (partner; referenced in AARO +
+  UAPTF)
+- `/organizations/aoimsg` ⏸ pending (interim successor to UAPTF;
+  referenced in AARO + UAPTF; did not reach operational capability
+  per DODIG-2023-109)
+
+The UAPTF build surfaced three tooling improvements absorbed in a
+follow-on commit (see "Post-F.5 pilot-findings hardening" below).
+
 G milestones are emergent, not pre-planned. The research queue
 (`meta/topic/research-queue.md`) drives additions after each cluster
 closes.
+
+---
+
+## Post-F.5 pilot-findings hardening  ✅ DONE (2026-04-20)
+
+Three pipeline improvements absorbed from the F.5c AARO pilot + UAPTF
+second-node build rather than deferred to BACKLOG:
+
+1. **Markdown block-quote markers in `normalize_for_compare`.** Multi-
+   line YAML literal-block quotes (`|-`) render as multi-line Markdown
+   block quotes with `> ` on each line. The pre-fix normalizer didn't
+   strip those line-prefix markers, so a multi-line quote text's
+   normalized form didn't substring-match the normalized body.
+   Surfaced on UAPTF's q3 (UAP SCG Purpose) and q9 (Senate Report
+   Advanced Aerial Threats). Fix: extended `normalize_for_compare` in
+   both `validate.py` (check #11) and `review-coverage.py` (Coverage
+   + Boundary + description checks) to strip `(?m)^\s*>\s?` before
+   hyphen and whitespace normalization. Kept in lockstep across both
+   scripts.
+
+2. **Wrap-inside-parens orphan-parens in `strip_markdown_links`.**
+   When contributors wrote `Name ([`/path`])` inside a double-quoted
+   span in a description, the standard wrap-stripping left behind
+   `Name ()` — and the bare `()` leaked into the double-quoted-span
+   token that the description-drift check extracts, failing the
+   substring check against source. Surfaced on the Norquist wrap in
+   UAPTF description. Fix: added a pre-pass `WRAP_IN_PARENS_PATTERN`
+   in `review-coverage.py` that strips `(\s*[`/path`]\s*)` as a single
+   unit before the standard wrap-only strip.
+
+3. **HTML entity + OCR preservation discipline documented.**
+   `prompts/build.md` Step 6 Discipline gained three new bullet
+   points: (a) preserve HTML entities (`&nbsp;`, `&#39;`, `&amp;`)
+   verbatim from HTML source extractions; (b) preserve OCR artifacts
+   (`identifYing`, `chaner`, `Unidenlified`, dropped-N artifacts)
+   verbatim from FOIA'd PDF extractions; (c) place wrap paths OUTSIDE
+   the closing quote of double-quoted spans to avoid the orphan-parens
+   failure mode even with fix #2 in place. Surfaced across 4+ UAPTF
+   quotes (q1 + q2 + q3 + q5).
+
+All three fixes verified end-to-end: UAPTF's original multi-line
+YAML + wrap-inside-quote failure patterns were restored after the
+fixes shipped and the pipeline passed 0 errors / 0 warnings across
+validate-research / build-from-research / review-coverage.
 
 ---
 

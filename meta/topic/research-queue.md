@@ -99,14 +99,18 @@ Secondary cluster surfaced through Fravor testimony narrative.
 | `/people/ralph-blumenthal` | person / reporter | Low | NYT Dec 2017 co-author | Public record |
 | `/people/helene-cooper` | person / reporter | Low | NYT Dec 2017 co-author | Public record |
 
-### Cluster D — UAP oversight institutions
+### Cluster D — UAP oversight institutions (AARO + UAPTF shipped 2026-04-20)
 
-Referenced in Graves testimony; lower priority until a specific
-investigation thread demands them.
+AARO and UAPTF now built, closing the two central gov nodes in this
+cluster. Remaining stubs (surfaced by the AARO + UAPTF builds):
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/organizations/americans-for-safe-aerospace` | organization / private | Low | Ryan Graves's nonprofit | safeaerospace.com (archived) |
+| `/organizations/oni` | organization / gov | High | Office of Naval Intelligence — UAPTF's parent; referenced across AARO + UAPTF + multiple person/document nodes | Navy public record + ODNI Preliminary Assessment (archived) |
+| `/organizations/nia` | organization / gov | High | Naval Intelligence Activity — signed the September 2020 UAPTF Charter; issued the April 2020 UAP Security Classification Guide | UAPTF Charter + UAP SCG (both archived) |
+| `/people/david-norquist` | person / institutional-actor | Medium | Deputy Secretary of Defense who approved UAPTF establishment (August 4, 2020) | DoD press release (archived) + public record |
+| `/people/travis-taylor` | person / institutional-actor | Medium | Dr. Travis Taylor — informal UAPTF Chief Scientist; U.S. Army Space and Missile Defense Command employee on time-limited assignment | Black Vault Gough article (archived) + SMDC statement |
+| `/organizations/americans-for-safe-aerospace` | organization / private | Low | Ryan Graves's nonprofit; also lists Jay Stratton as Ex Director UAPTF | safeaerospace.org home page (archived) |
 | `/organizations/aiaa` | organization / private | Low | Aerospace engineering professional society — pilot-reporting context | Public record |
 | `/organizations/faa` | organization / gov | Low | Aviation authority — pilot-reporting context | Public record |
 | `/organizations/noaa` | organization / gov | Low | Referenced in Graves testimony re Tim Gallaudet | Public record |
@@ -133,4 +137,5 @@ Long-term structural improvements not blocked on primary sources.
 |---|---|---|---|
 | Close Cluster A (Nimitz) ring | Build Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | F.2c + F.3 + F.4 shipped; FLIR1 built; Dietrich + orgs remain | In progress |
 | Close Cluster B (2023-07-26 hearing) ring | Build Grusch doc + Grusch/Graves transcripts + Grusch/Graves person | Hearing event + Fravor transcript + Grusch doc + Grusch person built; Grusch/Graves transcripts + Graves person remain | In progress |
+| Close Cluster D (UAP oversight institutions) ring | Build AARO + UAPTF + their support stubs (ONI, NIA, Norquist, Travis Taylor, etc.) | AARO + UAPTF built; ONI, NIA, Norquist, Taylor stubs surfaced and queued | In progress |
 | First finding node | Build a cross-entity finding spanning 3+ nodes (e.g., UAP video-release provenance chain) | After ≥3 cluster rings close | Pending |

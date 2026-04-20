@@ -105,6 +105,13 @@ LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
 # before token extraction since wrap_paths are repo identifiers, not
 # content claims about the source.
 MARKDOWN_LINK_PATTERN = re.compile(r"\[`/[^`]+`\]")
+# Wrap-inside-parens pattern — strips the PARENS ALONG WITH the wrap when
+# the parens contain only the wrap path. Prevents orphan `()` in the
+# stripped output when contributors write `Name ([`/path`])` inside a
+# double-quoted span, which otherwise becomes `Name ()` and leaks into
+# the description-drift check as a bogus token. Surfaced by the F.5
+# UAPTF pilot (Norquist wrap inside a DoD press-release quote).
+WRAP_IN_PARENS_PATTERN = re.compile(r"\s*\(\s*\[`/[^`]+`\]\s*\)")
 
 # Designator patterns like VFA-41, CVN-68, F/A-18F, APG-73 — uppercase
 # tokens combining letters and digits around a hyphen or slash. These
@@ -159,12 +166,18 @@ def normalize_for_compare(text):
 
     Handles common rendering artifacts so a claim/quote from the artifact
     can be found as a substring in the rendered node body regardless of
-    table-cell punctuation, line wrap, smart quotes, etc.
+    table-cell punctuation, line wrap, smart quotes, Markdown block-quote
+    line-prefix markers, etc. Keep in lockstep with validate.py —
+    divergence between the two breaks the cross-check guarantees the
+    repository relies on.
     """
     text = text.replace("\u201c", '"').replace("\u201d", '"')
     text = text.replace("\u2018", "'").replace("\u2019", "'")
     text = text.replace("\u2014", "-").replace("\u2013", "-")
     text = text.replace("\u00a0", " ")
+    # Markdown block-quote markers at line start — strip `> ` / `>` prefix
+    # so multi-line block quotes normalize to their underlying content.
+    text = re.sub(r"(?m)^\s*>\s?", "", text)
     text = re.sub(r"-\s+", "-", text)
     text = text.replace("-", "")
     text = re.sub(r"\s+", " ", text)
@@ -264,7 +277,19 @@ def strip_markdown_links(text):
     document said "VFA-41"). Drift checks run on the bare prose left
     after stripping — the entity linkage is checked separately by the
     stub-linking pass.
+
+    Two-pass strip:
+      (1) Wraps inside empty parens `( [`/path`] )` are removed AS A
+          UNIT (parens + wrap + interior whitespace). This prevents
+          orphan `()` from leaking into the extracted text when
+          contributors write `Name ([`/path`])` inside a double-quoted
+          span. Without this pass, the bare `()` becomes part of any
+          double-quoted token extracted for drift analysis and fails
+          the description-drift substring check against source.
+      (2) Any remaining bare wraps (not surrounded by empty parens) are
+          stripped by the standard pattern.
     """
+    text = WRAP_IN_PARENS_PATTERN.sub("", text)
     return MARKDOWN_LINK_PATTERN.sub("", text)
 
 
