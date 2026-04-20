@@ -276,7 +276,6 @@ quotes:
 - id: q1
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: My name is David Charles Grusch. I was an intelligence officer for 14 years, both in the US Air Force (USAF) at the rank of Major and most recently, from 2021-2023, at the National Geospatial-Intelligence Agency at the GS-15 civilian level, which is the military equivalent of a full-bird Colonel.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
@@ -288,7 +287,6 @@ quotes:
 - id: q2
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: I was my agency’s co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, as well as reporting to UAP Task Force (UAPTF) and eventually the All-Domain Anomaly Resolution Office (AARO).
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
@@ -300,7 +298,6 @@ quotes:
 - id: q3
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: I became a Whistleblower, through a PPD-19 Urgent Concern filing with the Intelligence Community Inspector General (ICIG), following concerning reports from multiple esteemed and credentialed current and former military and Intelligence Community individuals that the US Government is operating with secrecy - above Congressional oversight - with regards to UAPs.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
@@ -313,7 +310,6 @@ quotes:
 - id: q4
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: But as I stand here under oath now, I am speaking to the facts as I have been told them.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
@@ -325,7 +321,6 @@ quotes:
 - id: q5
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: In the USAF, in my National Reconnaissance Office (NRO) reservist capacity, I was a member of the UAPTF from 2019-2021. I served in the NRO Operations Center on the director’s briefing staff, which included the coordination of the Presidential Daily Brief (PDB) and supporting contingency operations.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
@@ -337,7 +332,6 @@ quotes:
 - id: q6
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: In 2019, the UAPTF director tasked me to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) we needed to satisfy our congressionally mandated mission.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
@@ -349,7 +343,6 @@ quotes:
 - id: q7
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-on’s.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
@@ -362,7 +355,6 @@ quotes:
 - id: q8
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: As you know, I have suffered retaliation for my decision. But I am hopeful that my actions will ultimately lead to a positive outcome of increased transparency.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
@@ -375,7 +367,6 @@ quotes:
 - id: q9
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: It is my hope that the revelations we unearth through investigations of the Non-Human Reverse Engineering Programs I have reported will act as an ontological (earth-shattering) shock, a catalyst for a global reassessment of our priorities.
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
@@ -387,7 +378,6 @@ quotes:
 - id: q10
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: As a senior intelligence and strategic engagement advisor, I will provide subject matter expert-level support that utilizes my extensive time as a United States Air Force Intelligence Officer, DoD-contracted Science and Engineering Technical Advisor (SETA), and NGA Senior Geospatial Intelligence Officer.
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
@@ -399,7 +389,6 @@ quotes:
 - id: q11
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: NGA lead for Unidentified Anomalous Phenomena (UAP) and Trans-Medium Anomaly issues. Executed new program of record responsive to direct tasking by the Congressional Intelligence Committees.
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf

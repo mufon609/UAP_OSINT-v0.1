@@ -73,7 +73,6 @@ quotes:
 - id: q1
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: |
     The mission of the AARO will be to "synchronize efforts across the Department and with other Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated threats to safety of operations and national security."
   source:
@@ -85,7 +84,6 @@ quotes:
 - id: q2
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: This includes anomalous, unidentified space, airborne, submerged, and transmedium objects.
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
@@ -96,7 +94,6 @@ quotes:
 - id: q3
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: The AARO will serve as the authoritative office of the Unidentified Aerial Phenomena (UAP) and UAP-related activities for the DoD.
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
@@ -107,7 +104,6 @@ quotes:
 - id: q4
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: The AARO is the DoD focal point for all UAP and UAP-related activities and may represent the Department for such activities to the interagency, Congress, media, and public, in coordination with the Assistant Secretary of Defense for Legislative Affairs and Assistant to the Secretary of Defense for Public Affairs.
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
@@ -118,7 +114,6 @@ quotes:
 - id: q5
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: by renaming and expanding the scope of the Airborne Object Identification and Management Group (AOIMSG) to the All-domain Anomaly Resolution Office (AARO), due to the enactment of the National Defense Authorization Act for fiscal 2022, which included a provision to establish an office, in coordination with DNI, with responsibilities that were broader than those originally assigned to the AOIMSG.
   source:
     path: government/defense-gov-aaro-establishment-20220720.html
@@ -129,7 +124,6 @@ quotes:
 - id: q6
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: During his tenure, Dr. Kirkpatrick stood up the office and its operations, investigated more than 800 unidentified anomalous phenomena (UAP) cases, led an extensive search for U.S. Government and contractor programs associated with UAP, and established the department&#39;s first public-facing website
   source:
     path: government/defense-gov-kirkpatrick-departure-20231120.html
@@ -140,7 +134,6 @@ quotes:
 - id: q7
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: Today, Dr. Jon T. Kosloski arrived on detail from the National Security Agency to be appointed as the director of the All-domain Anomaly Resolution Office.
   source:
     path: government/defense-gov-kosloski-appointment-20240826.html
@@ -151,7 +144,6 @@ quotes:
 - id: q8
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: As the AARO director, Dr. Kosloski will head DoD&#39;s efforts, in coordination with the Intelligence Community, to minimize technical and intelligence surprise by synchronizing scientific, intelligence, and operational detection, identification, attribution, and mitigation of unidentified anomalous phenomena (UAP) in the vicinity of national security areas.
   source:
     path: government/defense-gov-kosloski-appointment-20240826.html
@@ -162,7 +154,6 @@ quotes:
 - id: q9
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: AARO found no evidence that any USG investigation, academic-sponsored research, or official review panel has confirmed that any sighting of a UAP represented extraterrestrial technology.
   source:
     path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
@@ -173,7 +164,6 @@ quotes:
 - id: q10
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology.
   source:
     path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf

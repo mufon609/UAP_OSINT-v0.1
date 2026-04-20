@@ -85,7 +85,6 @@ quotes:
 - id: q1
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: On Aug. 4, 2020, Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF). &nbsp;The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF.
   source:
     path: government/defense-gov-uaptf-establishment-20200814.html
@@ -96,7 +95,6 @@ quotes:
 - id: q2
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: The Department of Defense established the UAPTF to improve its understanding of, and gain insight into, the nature and origins of UAPs. &nbsp;The mission of the task force is to detect, analyze and catalog UAPs that could potentially pose a threat to U.S. national security.
   source:
     path: government/defense-gov-uaptf-establishment-20200814.html
@@ -107,7 +105,6 @@ quotes:
 - id: q3
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: |-
     This classification guide is issued for the purpose of identifYing specific topics
     of information associated with the Office of Naval Intelligence, Unidentified Aerial Phenomenon
@@ -123,7 +120,6 @@ quotes:
 - id: q4
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: This chaner establishes the Congressionally mandated, Deputy Secretary of Defense directed Unidentified Aerial Phenomenon Task Force.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
@@ -134,7 +130,6 @@ quotes:
 - id: q5
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: The purpose of the Task Force is to create a single entity tasked with working across the Department of Defense, and with the Intelligence Community (IC) and the Interagency, to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data on unexplained Unidenlified Aerial Phenomenon (UAP). currently posing a threat to U.S. National Security.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
@@ -145,7 +140,6 @@ quotes:
 - id: q6
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity.
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
@@ -156,7 +150,6 @@ quotes:
 - id: q7
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: The Director, UAPTF, is the accountable official for ensuring the timely collection and consolidation of data on UAP.
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
@@ -167,7 +160,6 @@ quotes:
 - id: q8
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: UAPTF and the ODNI National Intelligence Manager for Aviation drafted this report, with input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
@@ -178,7 +170,6 @@ quotes:
 - id: q9
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: |-
     The Committee supports the efforts of the Unidentified Aerial
     Phenomenon Task Force at the Office of Naval Intelligence to
@@ -194,7 +185,6 @@ quotes:
 - id: q10
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: At the time of Dr. Taylor’s initial work with the UAPTF, former Office of Naval Intelligence senior civilian John Stratton was leading the effort and informally referred to Dr. Taylor as his chief scientist as efforts to assemble a larger team were underway.
   source:
     path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
@@ -205,7 +195,6 @@ quotes:
 - id: q11
   added_date: '2026-04-20'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: I also direct the Secretary of the Navy to disestablish the Unidentified Aerial Phenomena Task Force (UAPTF) no later than the date the AARO is established, and to support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO.
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf

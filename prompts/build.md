@@ -180,8 +180,10 @@ free-prose field, not just `description`.
     hearing-event artifacts, drives Key Testimony sort.
   - `category` (optional free-text tag) — e.g., `filed-claim` on
     whistleblower artifacts so the Claim Inventory renderer can filter.
-  - Standard lifecycle fields (id, added_date, added_by_iteration: i0,
-    audit_cadence_days: 365)
+  - Standard lifecycle fields (id, added_date, added_by_iteration: i0).
+    `audit_cadence_days` is OMITTED when the default (365) applies —
+    set it only on entries whose re-audit window should differ from the
+    default (volatile claims, "current state" facts that decay fast).
 
 **Discipline:**
 - Every quote is copy-pasted from the extracted text — not typed, not

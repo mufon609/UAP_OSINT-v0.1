@@ -49,7 +49,6 @@ quotes:
 - id: q1
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: My name is Ryan "FOBS" Graves and I am a former F-18 pilot with over a decade of service in the U.S. Navy, including two deployments in Operation Enduring Freedom and Operation Inherent Resolve.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -59,7 +58,6 @@ quotes:
 - id: q2
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: I have witnessed advanced UAP on multiple sensor systems firsthand, and I'm here to voice the concerns of countless commercial aircrew and military veterans who have confided their similar encounters with me.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -69,7 +67,6 @@ quotes:
 - id: q3
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: I can tell you that advanced UAP are a national security and an aviation safety problem.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -79,7 +76,6 @@ quotes:
 - id: q4
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: It has been more than a decade since my squadron began witnessing advanced UAP demonstrating complex maneuvers on a regular basis, and we still don't have answers. I founded Americans for Safe Aerospace to create a center of support, research, and public education for aircrew impacted by UAP encounters. We now have nearly 5,000 members and are actively working with more than 30 UAP witnesses who have approached us.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -89,7 +85,6 @@ quotes:
 - id: q5
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: I am also the Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics, where we have assembled a volunteer team of almost 80 PhDs and aerospace engineers dedicated to tackling the science around this issue.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -99,7 +94,6 @@ quotes:
 - id: q6
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: As we convene here, UAP are in our airspace, but they are grossly underreported. These sightings are not rare or isolated; they are routine. Military aircrews and commercial pilots, trained observers whose lives depend on accurate identification, are frequently witnessing these phenomena.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -109,7 +103,6 @@ quotes:
 - id: q7
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: The stigma attached to UAP is real and powerful and challenges national security. It silences commercial pilots who fear professional repercussions, discourages witnesses, and is only compounded by recent government claims questioning the credibility of eyewitness testimony.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -119,7 +112,6 @@ quotes:
 - id: q8
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: The government knows more about UAP than shared publicly, and excessive classification practices keep crucial information hidden. There's a lack of transparency around UAP that's unsettling. Since 2021, all UAP videos are classified as secret or above. This level of secrecy not only impedes our understanding but fuels speculation and mistrust.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -129,7 +121,6 @@ quotes:
 - id: q9
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: I joined the U.S. Navy in 2009. As a pilot, I was trained to be an expert observer, tasked with identifying any aircraft within our operating area.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -139,7 +130,6 @@ quotes:
 - id: q10
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: In 2014, I was near Virginia Beach as part of VFA-11, a Navy Fighter/Attack Squadron made up of F/A-18F Super Hornets.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -149,7 +139,6 @@ quotes:
 - id: q11
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: Upon an upgrade to our radar system, we began to detect unknown objects in our airspace. Initially dismissed as software glitches, we soon corroborated these radar tracks with infrared sensors, confirming their physical presence.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -159,7 +148,6 @@ quotes:
 - id: q12
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: Over time, UAP sightings became an open secret among our aircrew. They were a common occurrence, seen by most of my colleagues on radar and occasionally up close. The sightings were so frequent that they became part of daily briefs.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -169,7 +157,6 @@ quotes:
 - id: q13
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: A pivotal incident occurred during an air combat training mission in Warning Area W-72, an exclusive block of airspace ten miles east of Virginia Beach. All traffic into the training area goes through a single GPS point at a set altitude. Just at the moment the two jets crossed the threshold, one of the pilots saw a dark gray cube inside of a clear sphere — motionless against the wind, fixed directly at the entry point. The jets, only 100 feet apart, were forced to take evasive action. They terminated the mission immediately and returned to base. Our squadron submitted a safety report, but there was no official acknowledgement of the incident and no further mechanism to report the sightings.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -179,7 +166,6 @@ quotes:
 - id: q14
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: The UAP we encountered and tracked on multiple sensors behaved in ways that surpassed our understanding and technology. The UAP could accelerate at speeds up to Mach 1, hold their position against hurricane-force winds, and outlast our fighter jets, operating continuously throughout the day. They did not have any visible means of lift, control surfaces or propulsion — nothing that resembled normal aircraft with wings, flaps or engines. I am a formally trained engineer and I have no explanation for this.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -189,7 +175,6 @@ quotes:
 - id: q15
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: Recently, I have received confirmation that these encounters were also a shock to the chain of command from one of our advisors at ASA, Rear Admiral Tim Gallaudet, former head of National Oceanic and Atmospheric Administration, and Oceanographer of the Navy.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -199,7 +184,6 @@ quotes:
 - id: q16
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: While serving as an Admiral with Fleet Forces Command, he received a classified email on SIPRNET in 2015 from his boss, the Operations Commander, to all 1- and 2-star Admiral subordinates. The title of the email was "Urgent safety of flight issue." He attached the now famous GO-FAST UAP video from a Navy F/A-18, asking if anyone knew their origin, and expressed safety of flight concerns about multiple near mid-air collisions with UAP in the early warning area off Virginia Beach where my encounters occurred, noting they might shut down the exercise for safety reasons.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -209,7 +193,6 @@ quotes:
 - id: q17
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: Admiral Gallaudet reviewed it with his deputy. The next day, the email was removed from his system and that of his deputy, and despite meeting with this group routinely in person, no one ever discussed it. He presumes the email was removed in connection with a classified special access program.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -219,7 +202,6 @@ quotes:
 - id: q18
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: He has stated publicly that after seeing the report, he didn't believe these UAP represent any known human technology.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -229,7 +211,6 @@ quotes:
 - id: q19
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: They describe UAP operating at altitudes that appear to be above them at 40,000 feet, potentially in low earth orbit or in the grey zone below the Karman line, making inexplicable maneuvers, like right hand turns and retrograde orbits, or j-hooks. Sometimes these reports are recurring, with numerous recent sightings north of Hawaii and the North Atlantic.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -239,7 +220,6 @@ quotes:
 - id: q20
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: The UAP Task Force reported in 2021 that there were 11 near misses with UAP and I understand that number has grown.1 In April 2022, the FAA issued an alert to its operation managers that a commercial aircraft over West Virginia experienced a double attitude and double autopilot failure while flying under a UAP.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -249,7 +229,6 @@ quotes:
 - id: q21
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: Director, Dr. Sean Kirkpatrick said in the recent NASA Independent Study Team meeting that "metallic orbs" traveling up to Mach 2 with no visible lifting surface or propulsion are being seen all over the world, but that AARO needs access to scientifically calibrated instruments to evaluate these UAP. Dr. Kirkpatrick has also indicated that eyewitness testimony isn't considered credible on its own.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -259,7 +238,6 @@ quotes:
 - id: q22
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: We also heard him say in testimony to Congress that he only operated under Title 10 authority, and that additional authorities related to Title 50 would help AARO execute its mission.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -269,7 +247,6 @@ quotes:
 - id: q23
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: However, last week, in his first public interview, he indicated he has what he needs. I am unsure why or if his statement has changed. He also indicates with respect to witnesses, that he "believes them now."
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -279,7 +256,6 @@ quotes:
 - id: q24
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: My understanding is that all UAP videos since 2021 are classified Secret or above, which prevents the American people and even some Members of Congress from seeing UAP videos like the full GIMBAL video and radar data recorded by my squadron.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -289,7 +265,6 @@ quotes:
 - id: q25
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: In the aftermath of the PRC spy balloon and the recalibration of NORAD radar filters, the American people still want to know why three UAP were shot down over several days as a threat to civilian air traffic.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf

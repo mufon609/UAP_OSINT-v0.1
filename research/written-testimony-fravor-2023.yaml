@@ -52,7 +52,6 @@ quotes:
 - id: q1
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: My name is David Fravor and I am a retired Commander in the U.S Navy.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -62,7 +61,6 @@ quotes:
 - id: q2
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: In Nov 2004, I was the Commanding Officer of Strike Fighter Squadron Forty-One, the World Famous Black Aces!
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -72,7 +70,6 @@ quotes:
 - id: q3
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: As we pulled nose onto the object at approximately ½ of a mile with the object just left of our nose, it rapidly accelerated and disappeared right in front of our aircraft.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -82,7 +79,6 @@ quotes:
 - id: q4
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: This Tic Tac Object had just traveled 60 miles in a very short period of time (less than a minute), was far superior in performance to my brand-new F/A-18F and did not operate with any of the known aerodynamic principles that we expect for objects that fly in our atmosphere.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -92,7 +88,6 @@ quotes:
 - id: q5
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: What is shocking is that the incident was never investigated, none of my crew were ever questioned, tapes were never taken, and after a couple of days, it turned into a great story to tell friends.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -102,7 +97,6 @@ quotes:
 - id: q6
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: Not until 2009 did Jay Stratton contact me to investigate what we observed. Unbeknownst to all of us, Jay was part of the ATIP (Anomalous Threat Identification Program) program led by Lue Elizondo out of the DOD.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -112,7 +106,6 @@ quotes:
 - id: q7
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: What concerns me is that there is no "Oversight" from our elected officials on anything associated with our government possessing or working on craft that we believe are not from this world.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -122,7 +115,6 @@ quotes:
 - id: q8
   added_date: '2026-04-17'
   added_by_iteration: i0
-  audit_cadence_days: 365
   text: In closing, I would like to say that the Tic Tac Object that we engaged in Nov 2004 was far superior to anything that we had at the time, have today, or are looking to develop in the next 10+ years.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -132,7 +124,6 @@ quotes:
 - id: q9
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: We were attached to Carrier Airwing Eleven and stationed onboard the USS Nimitz (CVN-68).
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -142,7 +133,6 @@ quotes:
 - id: q10
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: I was scheduled to lead a 2 V 2 Air to Air training exercise. My flight of 2 F/A-18Fs was the Blue Air, the good guys, and we were being controlled by the USS Princeton, CG-59.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -152,7 +142,6 @@ quotes:
 - id: q11
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: The Red Air was being flown by our Marine F/A-18 squadron VMFA-232.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -162,7 +151,6 @@ quotes:
 - id: q12
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: The air controller on the ship also had no idea but had been observing these objects on their Aegis combat system for the previous 2 weeks. They had been descending from above 80,000ft and coming rapidly down to 20,000ft would stay for hours and then go straight back up.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -172,7 +160,6 @@ quotes:
 - id: q13
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: As all 4 looked down we saw a small white Tic Tac shaped object with the longitudinal axis pointing N/S and moving very abruptly over the white water. There were no Rotors, No Rotor wash, or any visible flight control surfaces like wings.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -182,7 +169,6 @@ quotes:
 - id: q14
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: It was that crew that took the now famous approximately 90 second video that was released by the USG in 2017.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -192,7 +178,6 @@ quotes:
 - id: q15
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: Years later I was contacted by Alex Dietrich, the other pilot in my flight asking if I had ever been contacted about the incident after 2009.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -202,7 +187,6 @@ quotes:
 - id: q16
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: Alex stated that she had been invited to the Pentagon multiple times to discuss the event and view other videos of UAPs.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -212,7 +196,6 @@ quotes:
 - id: q17
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: I was contacted by Mr Elizondo shortly after talking with Alex in 2016.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -222,7 +205,6 @@ quotes:
 - id: q18
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: In the weeks that passed I was made aware that Lue had left the pentagon in protest and joined forces with Tom Delonge, Chris Mellon, Steve Justice and others to form To The Stars Academy.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -232,7 +214,6 @@ quotes:
 - id: q19
   added_date: '2026-04-17'
   added_by_iteration: i1
-  audit_cadence_days: 365
   text: It was this organization that pressed the issue with leading Industry experts and USG officials, worked with Leslie Keane, Ralph Blumenthal and Helene Cooper to publish the articles in the NYT in Dec 2017 admitting the USG was looking at UAPs and removed the Stigma of the UFO topic which led to us being here today.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -242,7 +223,6 @@ quotes:
 - id: q20
   added_date: '2026-04-17'
   added_by_iteration: i2
-  audit_cadence_days: 365
   text: As we launched off the USS Nimitz, we checked in with the air controller on the USS Princeton, we were told that training was going to be suspended for real world tasking.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
