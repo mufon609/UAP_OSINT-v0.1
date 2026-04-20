@@ -1136,8 +1136,12 @@ testimony PDFs, one published event page). Cluster-scope targets:
   hearing-kind stress test)
 - `/documents/written-testimony-fravor-2023` ✅ DONE (pre-refactor)
 - `/documents/written-testimony-graves-2023` ✅ DONE (pre-refactor)
-- `/documents/written-testimony-grusch-2023` ⏳ NEXT (next session —
-  D.3 document renderer; PDF archived, sha256 `9729f98d…`)
+- `/documents/written-testimony-grusch-2023` ✅ DONE 2026-04-20 (D.3
+  document renderer; dense whistleblower primary source — 14 Key
+  Passages covering identity/role, PPD-19/ICIG filing, sworn-but-
+  relayed framing, NRO/UAPTF institutional role, core multi-decade
+  program allegation, retaliation, and closing Non-Human Reverse
+  Engineering Programs framing)
 - `/transcripts/2023-07-26-house-grusch` ⏸ pending (second F.3b
   hearing-transcript pilot)
 - `/transcripts/2023-07-26-house-graves` ⏸ pending (third F.3b

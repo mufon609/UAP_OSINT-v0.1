@@ -74,17 +74,15 @@ and the supporting organization nodes.
 | `/people/christopher-mellon` | person / institutional-actor | Low | Former Deputy Assistant SecDef for Intelligence; TTSA advisor | Public record |
 | `/people/steve-justice` | person / institutional-actor | Low | Former Lockheed Skunk Works director; TTSA | Public record |
 
-### Cluster B — 2023-07-26 House Oversight hearing (hearing event shipped 2026-04-20; Fravor transcript F.3c shipped 2026-04-19)
+### Cluster B — 2023-07-26 House Oversight hearing (hearing event shipped 2026-04-20; Fravor transcript F.3c shipped 2026-04-19; Grusch written testimony shipped 2026-04-20)
 
-Hearing event node + Fravor oral transcript built. Cluster's remaining
-ring: Grusch and Graves companion document nodes (witness-specific
-primary sources already archived), their oral transcripts, and the
-two witness person nodes.
+Hearing event node + Fravor oral transcript + Grusch written testimony
+built. Cluster's remaining ring: Grusch and Graves oral transcripts
+and the two witness person nodes.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/documents/written-testimony-grusch-2023` | document / gov-doc | High | Grusch's prepared written statement; dense whistleblower primary source; next session target | oversight.house.gov PDF (archived — sha256 `9729f98d…`) |
-| `/transcripts/2023-07-26-house-grusch` | transcript / hearing | High | Grusch's oral testimony at the hearing — same stenographic PDF already archived; second F.3b hearing-transcript pilot | congress.gov hearing transcript PDF (archived) |
+| `/transcripts/2023-07-26-house-grusch` | transcript / hearing | High | Grusch's oral testimony at the hearing — same stenographic PDF already archived; second F.3b hearing-transcript pilot; now paired with the written testimony to exercise Material Differences | congress.gov hearing transcript PDF (archived) |
 | `/transcripts/2023-07-26-house-graves` | transcript / hearing | High | Graves's oral testimony at the hearing — same stenographic PDF already archived; third F.3b hearing-transcript pilot | congress.gov hearing transcript PDF (archived) |
 | `/people/david-grusch` | person / whistleblower | High | Cluster B anchor witness; PPD-19 urgent-concern filer; written + oral testimony both primary | Grusch written testimony + oral statement (both archived) + NewsNation interview |
 | `/people/ryan-graves` | person / eyewitness | High | 2015 Virginia Beach encounters witness; written testimony already archived as document | Graves written testimony (archived + extracted) |
@@ -137,5 +135,5 @@ Long-term structural improvements not blocked on primary sources.
 | Milestone | Description | Target | Status |
 |---|---|---|---|
 | Close Cluster A (Nimitz) ring | Build Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | F.2c + F.3 + F.4 shipped; FLIR1 built; Dietrich + orgs remain | In progress |
-| Close Cluster B (2023-07-26 hearing) ring | Build Grusch doc + Grusch/Graves transcripts + Grusch/Graves person | Hearing event + Fravor transcript built; Grusch doc is next-session target | In progress |
+| Close Cluster B (2023-07-26 hearing) ring | Build Grusch doc + Grusch/Graves transcripts + Grusch/Graves person | Hearing event + Fravor transcript + Grusch doc built; Grusch/Graves transcripts and person nodes remain | In progress |
 | First finding node | Build a cross-entity finding spanning 3+ nodes (e.g., UAP video-release provenance chain) | After ≥3 cluster rings close | Pending |
