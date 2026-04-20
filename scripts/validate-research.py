@@ -710,12 +710,6 @@ def _read_target_frontmatter(target_path):
         return {}
 
 
-# Preserved alias for the earlier F.1a-era signature. `target_archetype`
-# callers still get the same semantics.
-def _read_target_archetype(target_path):
-    return _read_target_frontmatter(target_path).get("archetype")
-
-
 def check_quotes(rel, data, manifest_paths, target_type=None):
     issues = []
     quotes = _entries(data, "quotes")

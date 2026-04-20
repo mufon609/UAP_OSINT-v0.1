@@ -39,7 +39,6 @@ except ImportError:
 # =============================================================================
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
 RESEARCH_DIR = REPO_ROOT / "research"
 MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
 
@@ -91,11 +90,6 @@ TYPE_DIRS = {
 # =============================================================================
 # Helpers
 # =============================================================================
-
-def load_schema():
-    with open(SCHEMA_PATH) as f:
-        return yaml.safe_load(f)
-
 
 def load_manifest():
     if not MANIFEST_PATH.exists():

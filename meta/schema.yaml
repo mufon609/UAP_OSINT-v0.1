@@ -155,7 +155,6 @@ types:
         requires_quote_verification: true
         split: [Direct Observations, Other Statements]
       Timeline: {chronological: true}
-      Associated Nodes: {auto_generated: true}
 
   # --- ORGANIZATION -------------------------------------------------------
   organization:
@@ -203,7 +202,6 @@ types:
       Relationships: {split: [Confirmed, Flagged]}
       Key Personnel: {split: [Confirmed, Flagged]}
       Timeline: {chronological: true}
-      Associated Nodes: {auto_generated: true}
 
   # --- DOCUMENT -----------------------------------------------------------
   document:
@@ -273,7 +271,6 @@ types:
     section_rules:
       Key Passages: {requires_quote_verification: true}
       Provenance: {chronological: true}
-      Associated Nodes: {auto_generated: true}
 
   # --- EVENT --------------------------------------------------------------
   # Events are venues / incidents — they don't speak. Witness statements
@@ -303,13 +300,6 @@ types:
           - Witnesses & Testimony
           - Associated Nodes
           - Open Questions / Research Gaps
-        participants_structure:
-          # Hearings nest participant types by evidentiary category
-          confirmed_subsections:
-            - "Witnesses — Eyewitness Testimony"
-            - "Witnesses — Whistleblower Testimony"
-            - "Witnesses — Institutional Testimony"
-            - "Committee Members"
       encounter:
         description: "Observed event — UAP sighting, incident"
         required_sections:
@@ -324,7 +314,6 @@ types:
       Participants: {split: [Confirmed, Flagged]}
       Key Testimony: {requires_quote_verification: true}
       Timeline: {chronological: true}
-      Associated Nodes: {auto_generated: true}
 
   # --- TRANSCRIPT ---------------------------------------------------------
   transcript:
@@ -374,7 +363,6 @@ types:
           - Open Questions / Research Gaps
     section_rules:
       Key Passages: {requires_quote_verification: true}
-      Associated Nodes: {auto_generated: true}
 
   # --- MEDIA --------------------------------------------------------------
   # Non-text-primary primary sources — photos, videos, audio, imagery.
@@ -432,7 +420,6 @@ types:
         # timestamp for audio/video and in-frame location (quadrant,
         # coordinate, element) for imagery. May be empty when the source
         # has no extractable text or speech.
-      Associated Nodes: {auto_generated: true}
 
   # --- LOCATION -----------------------------------------------------------
   location:
@@ -450,7 +437,6 @@ types:
     section_rules:
       Relationships: {split: [Confirmed, Flagged]}
       Ownership Timeline: {chronological: true}
-      Associated Nodes: {auto_generated: true}
 
   # --- FINDING ------------------------------------------------------------
   finding:

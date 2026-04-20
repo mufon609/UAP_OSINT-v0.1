@@ -23,7 +23,7 @@ Usage:
 import argparse
 import sys
 from pathlib import Path
-from datetime import date, timedelta
+from datetime import date
 
 try:
     import yaml
