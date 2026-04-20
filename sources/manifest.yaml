@@ -16,6 +16,30 @@
   path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   archived_date: '2026-04-17'
   sha256: aa6099b37a26b8d65ab97984133883d2b0b98b29b8cc344967eaa29a5239d9e7
+- url: https://media.defense.gov/2022/Jul/20/2003039074/-1/-1/1/ESTABLISHMENT-OF-THE-ALL-DOMAIN-ANOMALY-RESOLUTION-OFFICE.PDF
+  format: pdf
+  status: archived
+  path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+  archived_date: '2026-04-20'
+  sha256: cec9860f81b24f0f261a9ed005b42a48d9d44296703618adf682bea1fd22387c
+- url: https://media.defense.gov/2022/Jul/20/2003039076/-1/-1/1/DR-SEAN-M-KIRKPATRICK-BIOGRAPHY.PDF
+  format: pdf
+  status: archived
+  path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
+  archived_date: '2026-04-20'
+  sha256: 970e271f7e55f9b0e53eb05ff889a70cc5da38673cc48defe69d447bb2e26120
+- url: https://media.defense.gov/2022/Jul/20/2003039081/-1/-1/1/ESTABLISHMENT-RESOURCING-AND-LEADERSHIP-OF-THE-ALL-DOMAIN-ANOMALY-RESOLUTION-OFFICE.PDF
+  format: pdf
+  status: archived
+  path: government/media-defense-gov-moultrie-aaro-memo-20220720.pdf
+  archived_date: '2026-04-20'
+  sha256: cbfae973bda236bd7e0f5b79da496dfef26942674f0d2e9d0ae30292dd9e998d
+- url: https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/REPORT-ON-THE-HISTORICAL-RECORD-OF-US-GOVERNMENT-INVOLVEMENT-WITH-UNIDENTIFIED-ANOMALOUS-PHENOMENA-VOL-1.PDF
+  format: pdf
+  status: archived
+  path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+  archived_date: '2026-04-20'
+  sha256: 8c23519c62a5717427c2d09d5ade165284421f2e5facad76a565a94774067868
 - url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/
   format: html
   status: archived
@@ -34,6 +58,12 @@
   path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   archived_date: '2026-04-17'
   sha256: 7bf2c20d6c47ab3bf00c718edd0baaff3c925a72cead21aa5a62b9448520c64a
+- url: https://www.aaro.mil/Portals/136/PDFs/Phillips_Timothy_Bio-DEC%202023-(Acting_Director_Ver)_508.pdf
+  format: pdf
+  status: archived
+  path: government/aaro-phillips-timothy-bio-dec2023.pdf
+  archived_date: '2026-04-20'
+  sha256: 82f3a6c4013bb5cba23f9e614c69aa44a635594dadff1aeb08b2961c491d0392
 - url: https://www.congress.gov/118/meeting/house/116282/documents/HHRG-118-GO06-Transcript-20230726.pdf
   format: pdf
   status: archived
@@ -47,6 +77,42 @@
   archived_date: '2026-04-20'
   sha256: fbbda4af8c5c79294a4303929f233afec5071dbf9e552ca249d1df67ef97e834
   note: DoD statement announcing April 27, 2020 declassified release of three Navy UAP videos (FLIR1 2004, Gimbal + Go Fast 2015). File on disk is a 2025-08-10 Wayback snapshot of the defense.gov page.
+- url: https://www.defense.gov/News/Releases/Release/Article/2314065/establishment-of-unidentified-aerial-phenomena-task-force/
+  format: html
+  status: archived
+  path: government/defense-gov-uaptf-establishment-20200814.html
+  archived_date: '2026-04-20'
+  sha256: ad3701da4d7201fe794440223df6ee19f947b8a65db8abeb922e7926bff14018
+- url: https://www.defense.gov/News/Releases/Release/Article/2853121/dod-announces-the-establishment-of-the-airborne-object-identification-and-manag/
+  format: html
+  status: archived
+  path: government/defense-gov-aoimsg-establishment-20211123.html
+  archived_date: '2026-04-20'
+  sha256: 7d84ead0108d30a05237fa6f23a3c3a6e86ed108e3dd1993dc93cfcc1f8c2f42
+- url: https://www.defense.gov/News/Releases/Release/Article/3100053/dod-announces-the-establishment-of-the-all-domain-anomaly-resolution-office/
+  format: html
+  status: archived
+  path: government/defense-gov-aaro-establishment-20220720.html
+  archived_date: '2026-04-20'
+  sha256: c2a6d13497b63f044351ed3162fd5bb0eef02c6dfe0ac0f09cbdf25ec2b55501
+- url: https://www.defense.gov/News/Releases/Release/Article/3513171/the-department-of-defense-launches-the-all-domain-anomaly-resolution-office-web/
+  format: html
+  status: archived
+  path: government/defense-gov-aaro-website-launch-20230831.html
+  archived_date: '2026-04-20'
+  sha256: d70a6cefb67ee0e0c7c1a0b8564ce45915a305944f8632e83340076f43f05572
+- url: https://www.defense.gov/News/Releases/Release/Article/3583248/statement-by-deputy-secretary-of-defense-kathleen-hicks-on-the-upcoming-departu/
+  format: html
+  status: archived
+  path: government/defense-gov-kirkpatrick-departure-20231120.html
+  archived_date: '2026-04-20'
+  sha256: 72398f89a880efc5f3bd4f57d517c64ac3beb531002016810505675d6e17c1e2
+- url: https://www.defense.gov/News/Releases/Release/Article/3884318/department-of-defense-announces-the-new-director-all-domain-anomaly-resolution/
+  format: html
+  status: archived
+  path: government/defense-gov-kosloski-appointment-20240826.html
+  archived_date: '2026-04-20'
+  sha256: 7fe95c9e5803e1be89fb12395f9fa45bb0ca0cbbd8d67f62a6e26dabb8d523f7
 - url: https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4
   format: html
   status: archived

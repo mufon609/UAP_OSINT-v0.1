@@ -106,8 +106,7 @@ investigation thread demands them.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/organizations/aaro` | organization / gov | Medium | All-domain Anomaly Resolution Office; central to current UAP record | defense.gov press releases (archived) |
-| `/organizations/uaptf` | organization / gov | Medium | UAP Task Force; AARO predecessor | public record |
+| `/organizations/uaptf` | organization / gov | High | UAP Task Force; AARO predecessor; UAPTF establishment already archived. Referenced in 4+ built nodes (AARO, Fravor person, Grusch person, Grusch written testimony) — closing this stub yields maximum broken-link-registry reduction | public record + defense.gov press release (archived) |
 | `/organizations/americans-for-safe-aerospace` | organization / private | Low | Ryan Graves's nonprofit | safeaerospace.com (archived) |
 | `/organizations/aiaa` | organization / private | Low | Aerospace engineering professional society — pilot-reporting context | Public record |
 | `/organizations/faa` | organization / gov | Low | Aviation authority — pilot-reporting context | Public record |

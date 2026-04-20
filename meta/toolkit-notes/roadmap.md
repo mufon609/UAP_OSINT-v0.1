@@ -1063,17 +1063,86 @@ Pilot findings absorbed in-session:
 Pilot candidate: `/media/flir1-video` (primary); alternative
 `/media/gimbal-declassified` has similar structure.
 
-### F.5 — organization  ⏸ PENDING
+### F.5 — organization  ✅ DONE (F.5a + F.5b + F.5c shipped 2026-04-20)
 
 Under the statements-only discipline, organizations don't speak —
-officials speak for them. Design pass:
-- Key Personnel section is a cross-reference surface; What Is
-  Confirmed / Timeline rows need source attribution per row.
-- `gov-contractor` sub-kind has Primary Contracts section — artifact
-  shape for contract rows (number, value, period, counterparties).
+officials speak for them. "What Is Confirmed" (prose synthesis layer
+subject to fine drift) eliminated across all three kinds; facts about
+orgs flow through Key Passages (verbatim excerpts about the org),
+Timeline (dated events), Key Personnel (people with sourced roles +
+leadership_class sub-grouping), Primary Contracts (gov-contractor only;
+AAWSAP-shaped with deliverables sub-list), and Description (labeled
+synthesis).
 
-Pilot candidate: `/organizations/aaro` — current-state entity with
-extensive primary-source documentation.
+#### F.5a — schema + template + validator + scaffolder  ✅ DONE (2026-04-20)
+
+Six-question design pass settled: (1) eliminate What Is Confirmed;
+(2) skip Institutional Assessment; (3) Overview = fact table from
+document_intrinsic per-kind keys; (4) Key Personnel entry with
+leadership_class enum (director / deputy / staff / advisor / other);
+(5) Primary Contracts shape influenced by AAWSAP/DIRD corpus;
+(6) Timeline + Relationships standard shapes + new org_relationships
+entry with relationship_type enum (parent / subsidiary / predecessor /
+successor / contractor / contracting-agency / partner / other).
+
+Shipped: schema section rewrite (3 kinds, new section_rules for Key
+Passages and Primary Contracts, extended document_intrinsic per-kind
+conventions); meta/templates/organization.md rewritten; new entry
+shapes (key_personnel_entry, contract_entry, org_relationship_entry);
+new enums (VALID_LEADERSHIP_CLASS, VALID_ORG_RELATIONSHIP_TYPE); 3
+new validate-research.py check helpers (check_key_personnel,
+check_org_relationships, check_contracts); type + kind conditional
+enforcement; check #16 extended for organization (description +
+timeline.event + key_personnel.role/note + org_relationships.note +
+contracts.subject/note); research-scaffold.py extended; smoke tests
+49 → 55 (3 org-kind fixtures × full pipeline).
+
+#### F.5b — Phase II renderer  ✅ DONE (2026-04-20)
+
+Seven new render helpers (title, overview fact-table dispatch,
+key_personnel with leadership_class sub-grouping + empty-sub-
+subsection suppression, key_passages with per-quote verification
+blocks, primary_contracts with deliverables sub-list, org_relationships,
+body dispatcher). Timeline + Description + Associated Nodes + Open
+Questions reuse existing helpers. review-coverage.py SUPPORTED_TYPES
+extended; four checks generalize.
+
+#### F.5c — AARO pilot  ✅ DONE (2026-04-20)
+
+First real-content organization node end-to-end. `/organizations/aaro`
+built at iteration i0 from 11 archived primary sources spanning
+establishment (Hicks memo 2022-07-15, DoD press release 2022-07-20,
+Moultrie memo 2022-07-20), director lifecycle (Kirkpatrick bio +
+departure, Phillips bio, Kosloski appointment), key publications
+(AARO HRR Vol I 2024-03-08, AARO website launch 2023-08-31), and
+predecessor establishments (AOIMSG 2021-11-23, UAPTF 2020-08-04).
+
+10 Key Passages — mission statement + scope + authoritative-office
+designation + DoD focal-point role (Hicks memo), AOIMSG-rename press
+narrative (DoD release), Kirkpatrick tenure accomplishments (800+ UAP
+cases), Kosloski appointment and mission framing, and the two HRR
+Vol I Executive Summary top-line findings (no extraterrestrial
+sightings confirmed; no empirical evidence for USG reverse-engineering).
+
+3 key_personnel entries routing through leadership_class (Kirkpatrick
+director 2022-07 to 2023-12, Phillips deputy 2023-10 onward,
+Kosloski director 2024-08 onward). 4 org_relationships (DoD parent,
+AOIMSG and UAPTF predecessors, ODNI partner). 10 timeline entries.
+10 entities_referenced. 2 naming_quirks (All-domain vs All-Domain
+case inconsistency; AOIMSG vs full Synchronization Group name).
+5 research_gaps. 2 rumors.
+
+All three phases clean: validate-research 0/0, build-from-research
+0 errors + post-build validate clean, review-coverage 0/0 across
+Coverage / Boundary / Stub-linking / OQ dedup. 11-source corpus; 20
+archived files total in manifest. Pre-commit chain 6/6 green.
+
+Pilot findings absorbed inline: HTML source-extraction caveats
+documented — pdftotext preserves `&amp;` and `&#39;` entities literally
+and does not strip `<a href>` tags. Contributors quoting HTML sources
+must either preserve entities verbatim in quote text OR shorten the
+quote to avoid the entity / tag span. Applied on q5, q6, q8 during
+i0 population.
 
 ### F.6 — location  ⏸ PENDING
 

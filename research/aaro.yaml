@@ -1,0 +1,541 @@
+id: research/aaro
+type: research-artifact
+schema_version: 1
+target_node: organizations/aaro
+status: active
+created: '2026-04-20'
+last_iteration: i0
+description: |
+  The All-domain Anomaly Resolution Office ([`/organizations/aaro`]) is a [`/organizations/dod`] office established on July 15, 2022 by Deputy Secretary of Defense Kathleen Hicks, following the enactment of Section 1683 of the National Defense Authorization Act for Fiscal Year 2022. Per the Hicks memorandum, AARO was established "to carry out the duties that were to be fulfi lled by the AOIMSG"; upon AARO's establishment, the Secretary of the [`/organizations/us-navy`] was directed to disestablish the Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]).
+
+  The Hicks memorandum states AARO "will serve as the authoritative office of the Unidentified Aerial Phenomena (UAP) and UAP-related activities for the DoD" and "is the DoD focal point for all UAP and UAP-related activities". Its mission is to "synchronize efforts across the Department and with other Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated threats to safety of operations and national security." Scope includes "anomalous, unidentified space, airborne, submerged, and transmedium objects."
+
+  The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 by Deputy Secretary of Defense David L. Norquist; the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established on November 23, 2021 as the successor to the UAPTF and renamed to AARO in July 2022. AARO operates in coordination with the Office of the Director of National Intelligence ([`/organizations/odni`]).
+
+  Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024.
+primary_sources:
+- path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-aaro-0.txt
+  pdf_metadata:
+    author: OSDPA
+    pages: 2
+- path: government/defense-gov-aaro-establishment-20220720.html
+  format: html
+  extracted_text_path: /tmp/scratch-aaro-1.txt
+- path: government/media-defense-gov-moultrie-aaro-memo-20220720.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-aaro-2.txt
+- path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-aaro-3.txt
+  pdf_metadata:
+    author: OSDPA
+    pages: 1
+- path: government/defense-gov-kirkpatrick-departure-20231120.html
+  format: html
+  extracted_text_path: /tmp/scratch-aaro-4.txt
+- path: government/defense-gov-kosloski-appointment-20240826.html
+  format: html
+  extracted_text_path: /tmp/scratch-aaro-5.txt
+- path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-aaro-6.txt
+  pdf_metadata:
+    title: AARO Historical Record Report Volume 1
+    author: OSD
+    pages: 63
+- path: government/defense-gov-aaro-website-launch-20230831.html
+  format: html
+  extracted_text_path: /tmp/scratch-aaro-7.txt
+- path: government/aaro-phillips-timothy-bio-dec2023.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-aaro-8.txt
+  pdf_metadata:
+    title: Timothy Phillips Bio
+    pages: 1
+- path: government/defense-gov-aoimsg-establishment-20211123.html
+  format: html
+  extracted_text_path: /tmp/scratch-aaro-9.txt
+- path: government/defense-gov-uaptf-establishment-20200814.html
+  format: html
+  extracted_text_path: /tmp/scratch-aaro-10.txt
+document_intrinsic:
+  full_name: All-domain Anomaly Resolution Office
+  statutory_authority: Section 1683 of the National Defense Authorization Act for Fiscal Year 2022
+  established_date: '2022-07-15'
+  parent_organization_path: /organizations/dod
+  current_director_path: /people/jonathan-kosloski
+  office_type: DoD office
+context_extrinsic:
+  display_title: AARO — All-domain Anomaly Resolution Office
+quotes:
+- id: q1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: |
+    The mission of the AARO will be to "synchronize efforts across the Department and with other Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated threats to safety of operations and national security."
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.1
+  significance: Mission statement (Hicks establishment memo)
+  context: Hicks memo establishing AARO, July 15, 2022
+  statement_date: '2022-07-15'
+- id: q2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: This includes anomalous, unidentified space, airborne, submerged, and transmedium objects.
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.1
+  significance: Scope — domains covered (Hicks memo)
+  context: Hicks memo establishing AARO, July 15, 2022
+  statement_date: '2022-07-15'
+- id: q3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: The AARO will serve as the authoritative office of the Unidentified Aerial Phenomena (UAP) and UAP-related activities for the DoD.
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.2
+  significance: Authoritative office designation (Hicks memo)
+  context: Hicks memo establishing AARO, July 15, 2022
+  statement_date: '2022-07-15'
+- id: q4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: The AARO is the DoD focal point for all UAP and UAP-related activities and may represent the Department for such activities to the interagency, Congress, media, and public, in coordination with the Assistant Secretary of Defense for Legislative Affairs and Assistant to the Secretary of Defense for Public Affairs.
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.2
+  significance: DoD focal point role + external-representation authority (Hicks memo)
+  context: Hicks memo establishing AARO, July 15, 2022
+  statement_date: '2022-07-15'
+- id: q5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: by renaming and expanding the scope of the Airborne Object Identification and Management Group (AOIMSG) to the All-domain Anomaly Resolution Office (AARO), due to the enactment of the National Defense Authorization Act for fiscal 2022, which included a provision to establish an office, in coordination with DNI, with responsibilities that were broader than those originally assigned to the AOIMSG.
+  source:
+    path: government/defense-gov-aaro-establishment-20220720.html
+    location: article body ¶1
+  significance: Establishment context — AOIMSG renaming and scope expansion per NDAA FY2022
+  context: DoD press release announcing AARO establishment, July 20, 2022
+  statement_date: '2022-07-20'
+- id: q6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: During his tenure, Dr. Kirkpatrick stood up the office and its operations, investigated more than 800 unidentified anomalous phenomena (UAP) cases, led an extensive search for U.S. Government and contractor programs associated with UAP, and established the department&#39;s first public-facing website
+  source:
+    path: government/defense-gov-kirkpatrick-departure-20231120.html
+    location: article body ¶3
+  significance: Kirkpatrick tenure accomplishments — 800+ UAP cases investigated, aaro.mil launched
+  context: DoD statement on Kirkpatrick's upcoming departure, November 20, 2023
+  statement_date: '2023-11-20'
+- id: q7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: Today, Dr. Jon T. Kosloski arrived on detail from the National Security Agency to be appointed as the director of the All-domain Anomaly Resolution Office.
+  source:
+    path: government/defense-gov-kosloski-appointment-20240826.html
+    location: article body ¶1
+  significance: Kosloski director appointment — NSA detail
+  context: DoD announcement of Kosloski appointment, August 26, 2024
+  statement_date: '2024-08-26'
+- id: q8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: As the AARO director, Dr. Kosloski will head DoD&#39;s efforts, in coordination with the Intelligence Community, to minimize technical and intelligence surprise by synchronizing scientific, intelligence, and operational detection, identification, attribution, and mitigation of unidentified anomalous phenomena (UAP) in the vicinity of national security areas.
+  source:
+    path: government/defense-gov-kosloski-appointment-20240826.html
+    location: article body ¶3
+  significance: Director-level mission framing per Kosloski appointment
+  context: DoD announcement of Kosloski appointment, August 26, 2024
+  statement_date: '2024-08-26'
+- id: q9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: AARO found no evidence that any USG investigation, academic-sponsored research, or official review panel has confirmed that any sighting of a UAP represented extraterrestrial technology.
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: Executive Summary, p.7
+  significance: HRR Vol I top-line finding — no confirmed extraterrestrial UAP sightings in prior USG investigations
+  context: AARO Historical Record Report Volume I Executive Summary, March 2024
+  statement_date: '2024-03-08'
+- id: q10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  text: AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology.
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: Executive Summary, p.7
+  significance: HRR Vol I top-line finding — no empirical evidence for USG reverse-engineering claims
+  context: AARO Historical Record Report Volume I Executive Summary, March 2024
+  statement_date: '2024-03-08'
+claims: []
+key_personnel:
+- id: kp1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  person_path: /people/sean-kirkpatrick
+  role: Director
+  period_start: '2022-07'
+  period_end: '2023-12'
+  leadership_class: director
+  source:
+    path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
+    location: p.1
+- id: kp2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  person_path: /people/tim-phillips
+  role: Deputy Director (Acting Director)
+  period_start: '2023-10'
+  leadership_class: deputy
+  source:
+    path: government/aaro-phillips-timothy-bio-dec2023.pdf
+    location: p.1
+- id: kp3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  person_path: /people/jonathan-kosloski
+  role: Director (detail from National Security Agency)
+  period_start: '2024-08'
+  leadership_class: director
+  source:
+    path: government/defense-gov-kosloski-appointment-20240826.html
+    location: article body ¶1
+org_relationships:
+- id: or1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  organization_path: /organizations/dod
+  relationship_type: parent
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.1
+- id: or2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  organization_path: /organizations/aoimsg
+  relationship_type: predecessor
+  source:
+    path: government/defense-gov-aaro-establishment-20220720.html
+    location: article body ¶1
+  note: 'AARO: renaming and expanding the scope of the AOIMSG'
+- id: or3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  organization_path: /organizations/uaptf
+  relationship_type: predecessor
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.1
+  note: Memorandum directed the Secretary of the Navy to disestablish the UAPTF no later than the date the AARO is established, and to support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO
+- id: or4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  organization_path: /organizations/odni
+  relationship_type: partner
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.1
+  note: Memorandum direction — establishment in coordination with the Director of National Intelligence (DNI)
+timeline:
+- id: t1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2020-08-04'
+  event: Unidentified Aerial Phenomena Task Force (UAPTF) established by Deputy Secretary of Defense David L. Norquist
+  category: other
+  source:
+    path: government/defense-gov-uaptf-establishment-20200814.html
+    location: article body ¶1
+- id: t2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2021-11-23'
+  event: Airborne Object Identification and Management Synchronization Group (AOIMSG) establish directed by Deputy Secretary of Defense
+  category: other
+  source:
+    path: government/defense-gov-aoimsg-establishment-20211123.html
+    location: article body ¶1
+- id: t3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2022-07-15'
+  event: Establishment of the All-domain Anomaly Resolution Office by Deputy Secretary of Defense memorandum (Section 1683 NDAA FY 2022)
+  category: founding
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: p.1
+- id: t4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2022-07-20'
+  event: Dr. Sean M. Kirkpatrick Director, All-domain Anomaly Resolution Office (AARO)
+  category: leadership-transition
+  source:
+    path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
+    location: p.1
+- id: t5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2023-08-31'
+  event: Department launched a website on the All-domain Anomaly Resolution Office (www.aaro.mil)
+  category: other
+  source:
+    path: government/defense-gov-aaro-website-launch-20230831.html
+    location: article body ¶1
+- id: t6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2023-10'
+  event: Timothy A. Phillips assumed the duties of the Deputy Director All-domain Anomaly Resolution Office
+  category: leadership-transition
+  source:
+    path: government/aaro-phillips-timothy-bio-dec2023.pdf
+    location: p.1
+- id: t7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2023-11-20'
+  event: Statement by Deputy Secretary of Defense Kathleen Hicks on the Upcoming Departure of AARO Director Dr. Sean Kirkpatrick
+  category: leadership-transition
+  source:
+    path: government/defense-gov-kirkpatrick-departure-20231120.html
+    location: article body ¶1
+- id: t8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2023-12'
+  event: Dr. Kirkpatrick will retire from federal service in December
+  category: leadership-transition
+  source:
+    path: government/defense-gov-kirkpatrick-departure-20231120.html
+    location: article body ¶1
+- id: t9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2024-03-08'
+  event: AARO Historical Record Report Volume I released
+  category: other
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: Cleared for Open Publication, p.1
+  node_link: /documents/aaro-historical-record-report-vol-i
+- id: t10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  date: '2024-08-26'
+  event: Dr. Jon T. Kosloski appointed as the director of the All-domain Anomaly Resolution Office on detail from the National Security Agency
+  category: leadership-transition
+  source:
+    path: government/defense-gov-kosloski-appointment-20240826.html
+    location: article body ¶1
+entities_referenced:
+- id: e1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Sean Kirkpatrick
+  wrap_path: /people/sean-kirkpatrick
+- id: e2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Timothy Phillips
+  wrap_path: /people/tim-phillips
+- id: e3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Jon T. Kosloski
+  wrap_path: /people/jonathan-kosloski
+- id: e4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Department of Defense (DoD)
+  wrap_path: /organizations/dod
+- id: e5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Office of the Director of National Intelligence (ODNI)
+  wrap_path: /organizations/odni
+- id: e6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: National Security Agency (NSA)
+  wrap_path: /organizations/nsa
+- id: e7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: U.S. Navy
+  wrap_path: /organizations/us-navy
+- id: e8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Unidentified Aerial Phenomena Task Force (UAPTF)
+  wrap_path: /organizations/uaptf
+- id: e9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Airborne Object Identification and Management Synchronization Group (AOIMSG)
+  wrap_path: /organizations/aoimsg
+- id: e10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: document
+  name: AARO Historical Record Report Volume I
+  wrap_path: /documents/aaro-historical-record-report-vol-i
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  observed: All-domain
+  canonical: All-Domain
+  location: Hicks memo + early establishment docs
+  source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: The Hicks establishment memo and the first DoD press release use lowercase 'd' in "All-domain Anomaly Resolution Office". Subsequent DoD press releases (Kirkpatrick departure, Kosloski appointment) use capital 'D' — "All-Domain Anomaly Resolution Office". Both forms appear in source and are preserved verbatim in the quoted passages.
+- id: nq2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  observed: Airborne Object Identification and Management Group
+  canonical: Airborne Object Identification and Management Synchronization Group
+  location: Hicks memo p.1
+  source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: The Hicks memo uses "Airborne Object Identification and Management Group" (drops "Synchronization") when referring to the original November 2021 memorandum title. The AOIMSG press release and its own body use the full "Airborne Object Identification and Management Synchronization Group (AOIMSG)" form. Both are source-attested; quoted passages preserve verbatim.
+research_gaps:
+- id: rg1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Extract and cross-reference HRR Vol I substantive findings beyond the two top-line Executive Summary conclusions
+  methodology: The 63-page AARO Historical Record Report Volume I is archived and extracted; i0 surfaces only the two Executive Summary top-line findings. Future iterations should extract finding-level passages on specific programs (SAUCER, SIGN, GRUDGE, TWINKLE, etc.) and the response to named claims (named locations, technological tests, documents)
+  resolved: false
+- id: rg2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Locate the specific last day of Kirkpatrick's tenure
+  methodology: The Hicks November 20 2023 statement confirms Kirkpatrick will retire "in December" without specifying a date. Defensescoop's November 30 2023 article cites DoD PA spokesperson Sue Gough for the specific date ("Friday, Dec. 1, is Dr. Kirkpatrick's last day in the office") — that article is archived at sources/news/defensescoop-kirkpatrick-departure-20231130.html but not yet registered in sources/manifest.yaml or extracted
+  resolved: false
+- id: rg3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Document AARO's internal organizational structure — directorates, staffing, budget
+  methodology: Not publicly documented in the 11 primary sources archived for i0. Cross-reference against congressional testimony (2023-04-19 SASC Kirkpatrick, 2024-11-19 SASC Kosloski — both archived), NDAA provisions, and DoD budget submissions. Primary-source authority remains the DoD
+  resolved: false
+- id: rg4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Register AARO Historical Record Report Volume II when published
+  methodology: HRR Vol I's Executive Summary states "Additional claims will be addressed in Volume II" — Vol II has been publicly referenced but not yet archived as of this iteration. Monitor media.defense.gov for release, download, register in manifest, extract, and link in timeline
+  resolved: false
+- id: rg5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Document the Moultrie memo's specific resourcing and leadership provisions
+  methodology: The Ronald Moultrie "Establishment, Resourcing and Leadership of the All-domain Anomaly Resolution Office" memo (2022-07-20) is archived and extracted as source 2; the current i0 draws quotes from the Hicks memo, DoD press release, Kirkpatrick bio, Kirkpatrick departure, Kosloski appointment, HRR Vol I, and Phillips bio but not from the Moultrie memo. Future iteration should extract Moultrie-specific provisions on resourcing / leadership / reporting structure
+  resolved: false
+rumors:
+- id: r1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  claim: Kirkpatrick's December 2023 departure was driven by conflict with Congressional whistleblower investigators and/or political pressure rather than voluntary retirement
+  status: not-primary-source-established
+  observed_sources:
+  - Circulating in public discourse attributed to unnamed sources and to commentary accompanying the November 2023 departure announcement
+  primary_source_search:
+  - The Hicks November 20 2023 statement presents Kirkpatrick's retirement as voluntary without identifying pressure or conflict ("Dr. Sean Kirkpatrick announced that he will retire from federal service in December")
+  - No primary source archived in this artifact corroborates the pressure/conflict framing
+  note: The Hicks statement is the only primary-source account of the departure's framing surfaced in the 11-source corpus here; absent conflicting primary evidence, the announcement framing stands as the authoritative public record
+- id: r2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  claim: AARO's investigatory scope was narrowed or constrained by DoD leadership to exclude access to classified programs that would have contained evidence of UAP reverse-engineering activities
+  status: not-primary-source-established
+  observed_sources:
+  - Widely referenced in public UAP discourse and in commentary on the HRR Vol I findings
+  - Explicit claims attributed to witnesses at 2023-07-26 House Oversight hearing and subsequent testimony that is archived in this repository
+  primary_source_search:
+  - The HRR Vol I directly addresses this by asserting "AARO successfully located the USG and industry programs, officials, companies" and finding "no empirical evidence" for reverse-engineering claims (Executive Summary, p.7)
+  - Specific counter-claims against AARO's access/scope are attested in separate primary sources (Grusch testimony) and appear as contradictions on the witness-statement side rather than in AARO's own primary sources
+  note: AARO's own primary sources assert adequate investigatory access; counter-claims live in other archived primary sources. The disagreement is a cross-node analytical finding rather than a gap in AARO's primary record
+iterations:
+- id: i0
+  date: '2026-04-20'
+  trigger: initial-build
+  summary: |
+    F.5c pilot — first end-to-end organization node through the full Phase I → II → III layered pipeline under the F.5b gov-kind renderer. 11 primary sources registered and extracted covering AARO's establishment (Hicks memo, DoD press release, Moultrie memo), director lifecycle (Kirkpatrick bio + departure, Phillips bio, Kosloski appointment), key publications (AARO HRR Vol I, website launch), and predecessor establishments (AOIMSG, UAPTF).
+
+    10 verbatim Key Passages spanning establishment mission statement, scope, authoritative-office designation, DoD focal-point role, AOIMSG-rename press narrative, Kirkpatrick tenure accomplishments (800+ UAP cases + aaro.mil launch), Kosloski appointment and mission framing, and the two HRR Vol I Executive Summary top-line findings (no extraterrestrial sightings confirmed; no empirical evidence for USG reverse-engineering).
+
+    3 key_personnel entries with leadership_class routing: Kirkpatrick (director, 2022-07 to 2023-12), Phillips (deputy, 2023-10 to present), Kosloski (director, 2024-08 to present). 4 org_relationships capturing DoD parent, AOIMSG and UAPTF as predecessors, and ODNI as partner per the Hicks memo coordination language.
+
+    10 timeline entries tracing the predecessor lineage (UAPTF 2020-08 → AOIMSG 2021-11 → AARO 2022-07) and the director transitions + publications through 2024-08.
+
+    10 entities_referenced covering three director people, five partner/predecessor/parent orgs, the Navy (mentioned in Hicks memo's UAPTF-disestablishment clause), and the HRR Vol I document. 2 naming_quirks on "All-domain" vs "All-Domain" case inconsistency across DoD press releases and on "AOIMSG" vs "Airborne Object Identification and Management Group" (Synchronization word dropped in Hicks memo reference). 5 research_gaps on HRR Vol I deeper extraction, Kirkpatrick's exact last day, AARO internal structure, HRR Vol II monitoring, and Moultrie memo extraction. 2 rumors on Kirkpatrick departure framing and on AARO scope-constraint allegations.
+  entries_added:
+  - q1
+  - q2
+  - q3
+  - q4
+  - q5
+  - q6
+  - q7
+  - q8
+  - q9
+  - q10
+  - kp1
+  - kp2
+  - kp3
+  - or1
+  - or2
+  - or3
+  - or4
+  - t1
+  - t2
+  - t3
+  - t4
+  - t5
+  - t6
+  - t7
+  - t8
+  - t9
+  - t10
+  - e1
+  - e2
+  - e3
+  - e4
+  - e5
+  - e6
+  - e7
+  - e8
+  - e9
+  - e10
+  - nq1
+  - nq2
+  - rg1
+  - rg2
+  - rg3
+  - rg4
+  - rg5
+  - r1
+  - r2
+  entries_modified: []

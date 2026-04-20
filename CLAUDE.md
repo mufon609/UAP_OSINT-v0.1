@@ -50,9 +50,11 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/people/david-fravor` | active | eyewitness |
 | `/people/david-grusch` | active | whistleblower |
 
-### Organizations (0)
+### Organizations (1)
 
-*No nodes yet.*
+| Node | Status | Kind |
+|---|---|---|
+| `/organizations/aaro` | active | gov |
 
 ### Events (2)
 
