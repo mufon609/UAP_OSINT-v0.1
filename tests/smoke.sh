@@ -222,15 +222,21 @@ for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-
     fi
 done
 
-# --- research artifact: organization-kind dispatch (F.5a) ---
+# --- research artifact: organization-kind dispatch (F.5a + F.5b) ---
 # Scaffolder must emit key_personnel: [] and org_relationships: [] on
 # every organization artifact regardless of kind, and emit contracts: []
 # only when kind == gov-contractor. Validator enforces the kind-
 # conditional contracts presence: missing-required fires on gov-
 # contractor if absent; absent-on-other-kind fires on gov or private if
-# present. Clean validate pass on empty scaffolds confirms both (a) the
-# scaffolder adds the right sections and (b) the validator's conditional
-# rules dispatch correctly per kind.
+# present.
+#
+# F.5b extends this to the full renderer pipeline: build-from-research
+# regenerates the node body per-kind (Primary Contracts section emits
+# on gov-contractor only; all three kinds emit the Overview fact-table,
+# Key Personnel with leadership_class sub-grouping, Key Passages, and
+# org_relationships-sourced Relationships). Post-build validate.py
+# confirms structural integrity; review-coverage runs the four checks
+# (Coverage / Boundary / Stub-linking / OQ dedup).
 for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-contractor" "organizations/__smoke-org-private"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$ok_target" 2>&1)"
     rc=$?
@@ -245,6 +251,23 @@ for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-cont
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $ok_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+    # Exercise F.5b renderer path
+    artifact_out="$(python3 scripts/build-from-research.py "research/$ok_slug.yaml" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("build-from-research $ok_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+    artifact_out="$(python3 scripts/review-coverage.py "research/$ok_slug.yaml" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("review-coverage $ok_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
         fail=$((fail + 1))
     else
         pass=$((pass + 1))
