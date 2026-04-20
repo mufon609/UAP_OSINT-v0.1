@@ -4,7 +4,7 @@ schema_version: 1
 target_node: people/david-grusch
 status: active
 created: '2026-04-20'
-last_iteration: i0
+last_iteration: i1
 description: |
   David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. In his [`/organizations/nro`] reservist capacity he was a member of the [`/organizations/uaptf`] from 2019-2021; the UAPTF director in 2019 tasked him to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) needed to satisfy the task force's congressionally mandated mission, and he was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`]. Under oath at [`/events/2023-07-26-house-uap-hearing`], Grusch's Opening Statement framed his testimony explicitly as relayed: "as I stand here under oath now, I am speaking to the facts as I have been told them."
 
@@ -43,7 +43,7 @@ background: |
 uap_relevance: |
   Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis (2021-2023), and a member of the [`/organizations/uaptf`] from 2019-2021 in his [`/organizations/nro`] reservist capacity, reporting to UAPTF and eventually the [`/organizations/aaro`]. In 2019 the UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) the task force needed to satisfy its congressionally mandated mission. He was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`], and he has suffered retaliation for that decision. At [`/events/2023-07-26-house-uap-hearing`], Grusch's testimony ([`/documents/written-testimony-grusch-2023`]) is based on information he has been given by individuals with a longstanding track record of legitimacy and service to this country.
 credibility_notes: |
-  Grusch: "as I stand here under oath now, I am speaking to the facts as I have been told them." His testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country – many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the "multi-decade UAP crash retrieval and reverse engineering program" are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on's." Grusch became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`] and has "suffered retaliation" for his decision. [`/documents/grusch-bio-2023`] — SECURITY CLEARANCE: Active TOP SECRET//SCI with CI & LS Polygraph.
+  Grusch: "as I stand here under oath now, I am speaking to the facts as I have been told them." His testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country – many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the "multi-decade UAP crash retrieval and reverse engineering program" are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`] and has "suffered retaliation" for his decision. [`/documents/grusch-bio-2023`] — SECURITY CLEARANCE: Active TOP SECRET//SCI with CI & LS Polygraph.
 affiliations:
 - id: a1
   added_date: '2026-04-20'
@@ -521,10 +521,10 @@ rumors:
   claim: Grusch has asserted that the U.S. government has retrieved "non-human biologics" from UAP crash sites
   status: not-primary-source-established
   observed_sources:
-  - Widely quoted from Grusch's oral Q&A at the 2023-07-26 hearing and his June 2023 Debrief interview
+  - Circulating in public discourse attributed to Grusch; the specific primary-source instance is not locatable without extraction of the 2023-07-26 oral transcript and the June 2023 Debrief article
   primary_source_search:
   - The "biologics" statement does not appear in the written testimony archived at /documents/written-testimony-grusch-2023
-  - Pending extraction — the 2023-07-26 hearing oral transcript (not yet built) and the June 2023 Debrief article (archived HTML at sources/news/thedebrief-grusch-2023.html, not yet extracted)
+  - The 2023-07-26 hearing oral transcript (not yet built) and the June 2023 Debrief article (archived HTML at sources/news/thedebrief-grusch-2023.html, not yet extracted) are the expected primary-source locations to check
   note: Registering this rumor keeps the widely-circulated claim visible until the oral and Debrief sources are extracted and its primary-source status is resolved
 - id: r2
   added_date: '2026-04-20'
@@ -532,10 +532,10 @@ rumors:
   claim: Grusch has named specific "Non-Human Intelligence" terminology and identified a specific named program in oral testimony
   status: not-primary-source-established
   observed_sources:
-  - Widely attributed to Grusch's oral Q&A at the 2023-07-26 hearing and subsequent interviews
+  - Circulating in public discourse attributed to Grusch; the specific primary-source instance is not locatable without extraction of the 2023-07-26 oral transcript and subsequent interviews
   primary_source_search:
   - The written testimony uses "Non-Human Reverse Engineering Programs" (Closing ¶18) but does not name a specific program
-  - Pending extraction of the 2023-07-26 oral transcript and NewsNation interview
+  - The 2023-07-26 oral transcript and the NewsNation interview are the expected primary-source locations to check
   note: The written statement is the only Grusch primary source with extracted quotes in this artifact at i0; additional terminology attributable to Grusch via oral testimony or interviews remains unestablished from primary source here
 iterations:
 - id: i0
@@ -598,3 +598,12 @@ iterations:
   - r1
   - r2
   entries_modified: []
+- id: i1
+  date: '2026-04-20'
+  trigger: audit-correction
+  summary: 'Post-i0 self-audit, two corrections. (1) Apostrophe fidelity in credibility_notes — the quoted phrase "read-on’s" from written-testimony Opening ¶11 had a straight apostrophe where source uses curly (U+2019). Source typography preserved. (2) Rumors r1 and r2 observed_sources phrasing — the i0 wording asserted the claims were "widely quoted" / "widely attributed" from specific sources (2023-07-26 oral transcript, June 2023 Debrief article, NewsNation interview) that have not been extracted in this session. That framing is a training-knowledge assertion about source content. Revised to "Circulating in public discourse attributed to Grusch; the specific primary-source instance is not locatable without extraction of [specific archived sources]" — keeps the rumor entries alive and points at the expected primary-source locations without asserting I have observed the claims there. No quote texts changed; no new entries added or removed.'
+  entries_added: []
+  entries_modified:
+  - credibility_notes
+  - r1
+  - r2
