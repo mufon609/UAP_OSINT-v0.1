@@ -337,9 +337,21 @@ types:
       #   press-conference, conference-talk, deposition, radio, streaming).
       #   Not a controlled vocabulary — extensible as new formats appear.
       # derived_from: path to the underlying media or document node this
-      #   transcript renders (e.g., /media/gimbal-video). A transcript is a
-      #   text rendering of speech from a primary source; the source lives
-      #   on a separate media or document node.
+      #   transcript IS a text rendering OF (e.g., /media/gimbal-video for
+      #   a transcript of a video file). Use ONLY when the transcript
+      #   exists *because of* the linked source — i.e., the transcript is
+      #   a derivative rendering, not an independent record. Most
+      #   appropriate for `other`-kind transcripts (podcast → audio file;
+      #   interview → video file; press conference → recording).
+      #
+      #   Do NOT use for hearing transcripts vs. their companion written
+      #   testimony — those are independent primary records of the same
+      #   event, not derivations. Use
+      #   context_extrinsic.companion_written_testimony for that
+      #   cross-reference instead (per F.3c D3, 2026-04-19). The renderer
+      #   keeps a `derived_from → /documents/...` fallback on hearing
+      #   transcripts for backward compatibility, but the convention is
+      #   companion_written_testimony.
     kinds:
       hearing:
         description: "Verbatim record of a formal proceeding — congressional hearing, deposition. Material-differences dimension applies (written-vs-oral)."
@@ -818,9 +830,11 @@ types:
       required: [name, source]
       optional: [role, node_link, note]
       # name: display name (e.g., "David Fravor", "Glenn Grothman")
-      # role: one of [Witness, Chair, Committee Member, Host, Interviewer,
-      #   Guest, Moderator, Presenter, Other] — free-text (scanned by
-      #   check #16 against primary_sources pool)
+      # role: the speaker's role at this transcript event. Free-text;
+      #   common values: Witness, Chair, Committee Member, Host,
+      #   Interviewer, Guest, Moderator, Presenter. Scanned by
+      #   validate-research.py check #16 against the entry's
+      #   source.path token pool.
       # node_link: optional /people/... path when the speaker has a
       #   repository node. Renders as backtick-bracket link in the
       #   Node Link column.

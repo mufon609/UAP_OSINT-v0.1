@@ -740,6 +740,19 @@ integrity, and surfaces provenance in the section where investigators
 already scan for it rather than in frontmatter that requires a view
 switch. No artifact field duplication needed.
 
+**F.3c D3 refinement (2026-04-19).** Hearing transcripts vs. their
+companion written testimony are independent primary records of the
+same event — neither is "derived from" the other. So hearing
+transcripts use `context_extrinsic.companion_written_testimony` for
+the cross-reference (renders as the same "Companion Written Testimony"
+PR row), and `derived_from` is reserved for transcripts where the
+text record IS a rendering of an underlying media/document node
+(typical: `other`-kind transcripts of podcasts / video interviews /
+press conferences). The renderer keeps a `derived_from → /documents/...`
+fallback path on hearing transcripts for backward compatibility, but
+the convention is `companion_written_testimony`. See BACKLOG entry on
+the fallback removal trigger.
+
 **Decision 2: Material Differences — per-divergence entries with
 cross-artifact quote refs.**
 Each entry carries: `id`, `topic` (short descriptor), `divergence_class`

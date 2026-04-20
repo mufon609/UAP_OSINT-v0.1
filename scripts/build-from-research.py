@@ -1088,13 +1088,19 @@ def render_transcript_publication_record(artifact, kind, fm):
         row("Transcript URL",     ctx.get("primary_source_url"))
         row("Transcript Verified", ctx.get("transcript_verified"))
         row("Event Node",         _wrap_path(ctx.get("event_node")))
-        # derived_from on a hearing transcript typically points at a
-        # /documents/... node (the companion written testimony). Emit
-        # as "Companion Written Testimony" row in that case.
-        if derived_from and str(derived_from).startswith("/documents/"):
-            row("Companion Written Testimony", _wrap_path(derived_from))
-        else:
+        # Companion Written Testimony — preferred path is
+        # context_extrinsic.companion_written_testimony per F.3c D3
+        # (2026-04-19). Hearing transcripts and their companion written
+        # testimony are independent primary records of the same event;
+        # neither derives from the other, so derived_from's "this IS a
+        # rendering of that" semantic doesn't fit. The derived_from →
+        # /documents/... fallback below is kept for backward compat
+        # only — see BACKLOG entry on the removal trigger (3+ hearing
+        # transcript pilots all using companion_written_testimony).
+        if ctx.get("companion_written_testimony"):
             row("Companion Written Testimony", _wrap_path(ctx.get("companion_written_testimony")))
+        elif derived_from and str(derived_from).startswith("/documents/"):
+            row("Companion Written Testimony", _wrap_path(derived_from))
     else:  # other
         row("Outlet / Platform",  ctx.get("outlet") or ctx.get("platform"))
         row("Program / Show / Venue", ctx.get("program") or ctx.get("venue"))

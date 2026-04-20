@@ -570,6 +570,48 @@ levels.
 
 ---
 
+### `derived_from` fallback in transcript Publication Record renderer
+
+**Issue.** Hearing transcripts populate the "Companion Written
+Testimony" PR row from either `context_extrinsic.companion_written_testimony`
+(the preferred path per F.3c D3) or frontmatter `derived_from` (when
+it points at `/documents/...`, kept as a compatibility fallback in
+`render_transcript_publication_record`'s hearing branch). The fallback
+is dead code if the convention catches on cleanly across hearing-
+transcript builds.
+
+**Why it matters.** Two paths producing the same effect is mild
+duplication that compounds if the frontmatter form gets misused.
+Once the convention proves itself, removing the fallback simplifies
+the renderer surface and forces a single declarative source of truth.
+Schema's `derived_from` semantic ("this transcript IS a rendering of
+that source") doesn't fit hearing transcripts (independent primary
+records of the same event); the fallback lets that semantic mismatch
+keep working while the convention stabilizes.
+
+**Proposed scope.** When the trigger fires:
+- Remove the `elif derived_from and str(derived_from).startswith("/documents/")`
+  branch from `render_transcript_publication_record`'s hearing path
+  in `scripts/build-from-research.py`.
+- Update `meta/schema.yaml` `derived_from` comment to drop the
+  "do NOT use for hearings" guidance (no longer needed if no
+  fallback path exists).
+- Spot-check existing hearing transcript artifacts to confirm none
+  rely on the fallback (none should as of trigger date).
+- Update the F.3 Decision 1 D3 refinement note in
+  `meta/toolkit-notes/roadmap.md` to mark the fallback removed.
+
+**Trigger.** After 3+ hearing transcript pilots ship and all use
+`context_extrinsic.companion_written_testimony` (none rely on
+`derived_from` for the companion cross-ref).
+
+**Surfaced.** F.3c pre-implementation Decision 3 (2026-04-19). The
+renderer kept the fallback as a leniency to avoid a hard convention
+break before any hearing transcripts existed; this entry tracks the
+eventual cleanup so the fallback doesn't become permanent dead code.
+
+---
+
 ### ✅ RESOLVED Transcript top-level description — check #16 prose scoping (closed by F.3b)
 
 Resolved in F.3b implementation (2026-04-19). Outcome 1 from the
