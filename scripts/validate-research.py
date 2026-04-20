@@ -1786,6 +1786,9 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
         # "Founding Director", "Acting Director", "Chief of Staff").
         # Scanned against the entry's source.path.
         ("key_personnel",     "role"),
+        # key_personnel[].note — optional contributor synthesis on the
+        # personnel entry. Scanned against source.path.
+        ("key_personnel",     "note"),
         # org_relationships[].note — contributor synthesis on the
         # relationship. Scanned against source.path.
         ("org_relationships", "note"),
