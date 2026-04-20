@@ -98,50 +98,32 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 ## Key Testimony
 
-> The Subcommittee met, pursuant to notice, at 10:06 a.m., in room 2154, Rayburn Office Building, Hon. Glenn Grothman, [Chairman of the Subcommittee] presiding.
+> I have experienced advanced UAP firsthand and I am here to voice the concerns of more than 30 commercial aircrew and military veterans who have confided their similar encounters with me.
 
 | Field | Value |
 |---|---|
-| Attributed to | stenographic record opener, 2023-07-26 |
+| Attributed to | Graves oral statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | lines 155-157 |
+| Location | lines 652-654 |
 
-> Mr. GROTHMAN. The Subcommittee on unidentified anomalous phenomena, or UAPs, will come to order.
+> I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it.
 
 | Field | Value |
 |---|---|
-| Attributed to | opening, 2023-07-26 |
+| Attributed to | Grusch oral statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | lines 163-164 |
+| Location | lines 783-786 |
 
-> Pursuant to Committee Rule 9(g), the witnesses will please stand and raise their right hands.
+> Absolutely, based on interviewing over 40 witnesses over 4 years.
 
 | Field | Value |
 |---|---|
-| Attributed to | oath administration, 2023-07-26 |
+| Attributed to | Q&A with Ranking Member Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | lines 619-620 |
-
-> Do you solemnly swear to tell the truth, the whole truth, and nothing but the truth, so help you God?
-
-| Field | Value |
-|---|---|
-| Attributed to | oath administration, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | lines 621-622 |
-
-> Mr. GROTHMAN. Let the record show that all the witnesses answered in the affirmative.
-
-| Field | Value |
-|---|---|
-| Attributed to | oath administration, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | lines 624-625 |
+| Location | lines 1148-1149 |
 
 > I hope you understand that there would be bipartisan rejection of any attempt to vilify, demonize, or engage in other reprisals against our witnesses and people who are telling the truth from their perspective.
 
@@ -152,6 +134,42 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1335-1338 |
 
+> I call it administrative terrorism.
+
+| Field | Value |
+|---|---|
+| Attributed to | Q&A with Raskin (first round), 2023-07-26 |
+| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | line 1345 |
+
+> This is an approximation based off of my personal experience speaking with a number of pilots, but I would estimate we are somewhere near 5 percent reporting, perhaps.
+
+| Field | Value |
+|---|---|
+| Attributed to | Q&A with Representative Mace, 2023-07-26 |
+| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | lines 2268-2270 |
+
+> Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently still on the program.
+
+| Field | Value |
+|---|---|
+| Attributed to | Q&A with Representative Mace, 2023-07-26 |
+| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | lines 2322-2324 |
+
+> You know, it has been said it is probably the most credible UFO sighting in history, based on all the sensors that were tracking it and then for us to get visual.
+
+| Field | Value |
+|---|---|
+| Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
+| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | lines 2440-2442 |
+
 > I also want to note for our witnesses and for the public that I am a freshman Member of Congress and I have only been here for 7 months. But this is by far the most bipartisan conversation and discussion that I have seen happen in the Congress and I think that a topic of this significance as it relates to our national security, as it relates to information that we are trying to gather for the American public does bring people together and I think that has been really great to see.
 
 | Field | Value |
@@ -160,15 +178,6 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2781-2788 |
-
-> [Whereupon, at 12:22 p.m., the Subcommittee was adjourned.]
-
-| Field | Value |
-|---|---|
-| Attributed to | stenographic record close, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | line 2858 |
 
 ---
 

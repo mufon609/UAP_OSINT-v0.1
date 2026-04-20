@@ -365,61 +365,37 @@ quotes:
   audit_cadence_days: 365
   statement_date: '2023-07-26'
   text: |
-    The Subcommittee met, pursuant to notice, at 10:06 a.m., in room 2154, Rayburn Office Building, Hon. Glenn Grothman, [Chairman of the Subcommittee] presiding.
+    I have experienced advanced UAP firsthand and I am here to voice the concerns of more than 30 commercial aircrew and military veterans who have confided their similar encounters with me.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 155-157
-  significance: Hearing convened — time, location, presiding officer
-  context: stenographic record opener
+    location: lines 652-654
+  significance: Graves opens — claim of firsthand UAP experience and a documented group of 30+ commercial aircrew and military veterans reporting similar encounters
+  context: Graves oral statement
 - id: q2
   added_date: '2026-04-20'
   added_by_iteration: i0
   audit_cadence_days: 365
   statement_date: '2023-07-26'
   text: |
-    Mr. GROTHMAN. The Subcommittee on unidentified anomalous phenomena, or UAPs, will come to order.
+    I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 163-164
-  significance: Grothman calls the Subcommittee to order
-  context: opening
+    location: lines 783-786
+  significance: Grusch's core whistleblower claim in opening — awareness of and denied-access to a multi-decade UAP crash retrieval and reverse engineering program
+  context: Grusch oral statement
 - id: q3
   added_date: '2026-04-20'
   added_by_iteration: i0
   audit_cadence_days: 365
   statement_date: '2023-07-26'
   text: |
-    Pursuant to Committee Rule 9(g), the witnesses will please stand and raise their right hands.
+    Absolutely, based on interviewing over 40 witnesses over 4 years.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 619-620
-  significance: Oath introduction — Committee Rule 9(g)
-  context: oath administration
+    location: lines 1148-1149
+  significance: Grusch's quantitative basis for his claim that the U.S. Government is in possession of UAPs — 40+ witnesses interviewed over 4 years
+  context: Q&A with Ranking Member Garcia
 - id: q4
-  added_date: '2026-04-20'
-  added_by_iteration: i0
-  audit_cadence_days: 365
-  statement_date: '2023-07-26'
-  text: |
-    Do you solemnly swear to tell the truth, the whole truth, and nothing but the truth, so help you God?
-  source:
-    path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 621-622
-  significance: Oath administered to all three witnesses
-  context: oath administration
-- id: q5
-  added_date: '2026-04-20'
-  added_by_iteration: i0
-  audit_cadence_days: 365
-  statement_date: '2023-07-26'
-  text: |
-    Mr. GROTHMAN. Let the record show that all the witnesses answered in the affirmative.
-  source:
-    path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 624-625
-  significance: Confirmation of affirmative oath — all three witnesses sworn
-  context: oath administration
-- id: q6
   added_date: '2026-04-20'
   added_by_iteration: i0
   audit_cadence_days: 365
@@ -431,7 +407,55 @@ quotes:
     location: lines 1335-1338
   significance: Full Committee Ranking Member's bipartisan whistleblower-protection statement
   context: Q&A with Grusch (first round, Raskin)
+- id: q5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  statement_date: '2023-07-26'
+  text: |
+    I call it administrative terrorism.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: line 1345
+  significance: Grusch's framing of the reprisal pattern he describes against UAP-program whistleblowers
+  context: Q&A with Raskin (first round)
+- id: q6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  statement_date: '2023-07-26'
+  text: |
+    This is an approximation based off of my personal experience speaking with a number of pilots, but I would estimate we are somewhere near 5 percent reporting, perhaps.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: lines 2268-2270
+  significance: Graves's estimate that only approximately 5 percent of pilot UAP sightings get reported — quantifies the under-reporting problem central to his testimony
+  context: Q&A with Representative Mace
 - id: q7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  statement_date: '2023-07-26'
+  text: |
+    Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently still on the program.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: lines 2322-2324
+  significance: Grusch's "nonhuman biologics" assertion about recovered crash-retrieval biologics, attributed to direct-knowledge sources currently on the program
+  context: Q&A with Representative Mace
+- id: q8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  audit_cadence_days: 365
+  statement_date: '2023-07-26'
+  text: |
+    You know, it has been said it is probably the most credible UFO sighting in history, based on all the sensors that were tracking it and then for us to get visual.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: lines 2440-2442
+  significance: Fravor's framing of the 2004 USS Nimitz encounter as probably the most credible UFO sighting in history — based on multi-sensor tracking plus visual
+  context: Q&A with Representative Langworthy
+- id: q9
   added_date: '2026-04-20'
   added_by_iteration: i0
   audit_cadence_days: 365
@@ -443,18 +467,6 @@ quotes:
     location: lines 2781-2788
   significance: Ranking Minority Member Garcia's framing of the hearing as unusually bipartisan
   context: closing remarks
-- id: q8
-  added_date: '2026-04-20'
-  added_by_iteration: i0
-  audit_cadence_days: 365
-  statement_date: '2023-07-26'
-  text: |
-    [Whereupon, at 12:22 p.m., the Subcommittee was adjourned.]
-  source:
-    path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2858
-  significance: Adjournment
-  context: stenographic record close
 claims: []
 entities_referenced:
 - id: e1
@@ -624,6 +636,6 @@ iterations:
 - id: i0
   date: '2026-04-20'
   trigger: initial-build
-  summary: Cluster B hearing-event pilot. Populated event_intrinsic from oversight.house.gov + docs.house.gov + congressional stenographic transcript; 24 participants (3 witnesses + 16 Members who spoke + 5 attending-but-silent subcommittee Members resolved from rg4); 3 witnesses_testimony entries cross-referencing Fravor/Graves/Grusch written-testimony and oral-transcript nodes; 7 timeline entries from convene through adjournment (t3 captures all 4 documents entered into the record — 3 by Burchett in opening remarks, 1 by Luna during additional questioning); 8 event-level quotes (convening, oath administration, bipartisan framing, adjournment); 19 entities_referenced; 3 open research_gaps (rg4 resolved in-session by completing the Members-who-attended roster). Post-build tightening audit added Luna's NewsNation article submission to t3 and the 5 silent Members.
+  summary: Cluster B hearing-event pilot. Populated event_intrinsic from oversight.house.gov + docs.house.gov + congressional stenographic transcript; 24 participants (3 witnesses + 16 Members who spoke + 5 attending-but-silent subcommittee Members resolved from rg4); 3 witnesses_testimony entries cross-referencing Fravor/Graves/Grusch written-testimony and oral-transcript nodes; 7 timeline entries from convene through adjournment (t3 captures all 4 documents entered into the record — 3 by Burchett in opening remarks, 1 by Luna during additional questioning); 9 event-level quotes chosen as the hearing's most distinctive moments — Graves opening on 30+ commercial aircrew and military veterans, Grusch opening on the multi-decade crash retrieval and reverse engineering program, Grusch "over 40 witnesses over 4 years" quantitative basis, Raskin bipartisan whistleblower-protection, Grusch "I call it administrative terrorism" reprisal framing, Graves 5 percent pilot reporting estimate, Grusch "Nonhuman" biologics assertion, Fravor "most credible UFO sighting in history" framing, Garcia "most bipartisan conversation" closing — procedural moments (oath administration, convene/adjourn timestamps) deferred to event_intrinsic + witnesses_testimony oath_status where the structural evidence is already captured; 19 entities_referenced; 3 open research_gaps (rg4 resolved in-session by completing the Members-who-attended roster). Post-build tightening audit added Luna's NewsNation article submission to t3, the 5 silent Members, and rebuilt the Key Testimony quote set to prioritize substantive hearing moments over procedural ones per contributor feedback.
   entries_added: []
   entries_modified: []
