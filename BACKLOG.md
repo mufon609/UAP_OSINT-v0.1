@@ -447,13 +447,14 @@ keep working while the convention stabilizes.
 `context_extrinsic.companion_written_testimony` (none rely on
 `derived_from` for the companion cross-ref).
 
-**Progress.** 2 of 3 hearing transcripts shipped:
+**Progress — trigger satisfied (2026-04-20).** 3 of 3 hearing
+transcripts shipped:
 `/transcripts/2023-07-26-house-fravor` (F.3c commit `083c249`,
-2026-04-19) and `/transcripts/2023-07-26-house-grusch` (commit
-`a1b5609`, 2026-04-20). Both use
+2026-04-19), `/transcripts/2023-07-26-house-grusch` (commit
+`a1b5609`, 2026-04-20), and `/transcripts/2023-07-26-house-graves`
+(commit `159b2e7`, 2026-04-20). All three use
 `context_extrinsic.companion_written_testimony` cleanly; no fallback
-triggered on either. One more hearing transcript on the canonical
-path satisfies the 3/3 trigger.
+triggered on any. Removal is now actionable.
 
 **Surfaced.** F.3c pre-implementation Decision 3 (2026-04-19). The
 renderer kept the fallback as a leniency to avoid a hard convention

@@ -1127,15 +1127,18 @@ testimony PDFs, one published event page). Cluster-scope targets:
   entities_referenced / 2 naming_quirks / 5 research_gaps — commit
   a1b5609; iterated to i2 through subsequent Post-F.3 Material
   Differences elimination)
-- `/transcripts/2023-07-26-house-graves` ⏸ pending (third F.3b
-  hearing-transcript pilot)
+- `/transcripts/2023-07-26-house-graves` ✅ DONE 2026-04-20 (third
+  F.3b hearing-transcript pilot; 37 quotes / 19 speakers / 12
+  entities_referenced / 1 naming_quirk / 5 research_gaps — commit
+  159b2e7)
 - `/people/david-grusch` ✅ DONE 2026-04-20 (F.1b whistleblower-archetype
   pilot; two primary sources: written testimony + Congressional
   biographical submission; 11 quotes, 9 affiliations, 15 timeline
   entries, 3 filed-claim tagged quotes routing to Claim Inventory, 6
   research gaps, 2 rumors — Vouching Chain empty at i0 pending
   Debrief/NewsNation extraction)
-- `/people/ryan-graves` ⏸ pending (eyewitness-archetype follow-on)
+- `/people/ryan-graves` ⏸ pending (eyewitness-archetype follow-on —
+  final Cluster B stub)
 
 **Third cluster — UAP oversight institutions.** In flight as of
 2026-04-20. The central DoD UAP oversight organizations (UAPTF →

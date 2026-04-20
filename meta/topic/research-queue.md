@@ -76,14 +76,13 @@ and the supporting organization nodes.
 
 ### Cluster B — 2023-07-26 House Oversight hearing (hearing event shipped 2026-04-20; Fravor transcript F.3c shipped 2026-04-19; Grusch written testimony + person shipped 2026-04-20)
 
-Hearing event node + Fravor + Grusch oral transcripts + Grusch written
-testimony + Grusch person node built. Cluster's remaining ring: Graves
-oral transcript and the Graves person node.
+Hearing event node + all three oral transcripts (Fravor, Grusch,
+Graves) + all three written testimony documents + Grusch person node
+built. Cluster's remaining ring: the Graves person node.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/transcripts/2023-07-26-house-graves` | transcript / hearing | High | Graves's oral testimony at the hearing — same stenographic PDF already archived; third F.3b hearing-transcript pilot | congress.gov hearing transcript PDF (archived) |
-| `/people/ryan-graves` | person / eyewitness | High | 2015 Virginia Beach encounters witness; written testimony already archived as document | Graves written testimony (archived + extracted) |
+| `/people/ryan-graves` | person / eyewitness | High | 2014-2015 Virginia Beach encounters witness; written testimony + oral transcript both archived and built as document + transcript nodes | Graves written testimony + hearing transcript (both built) |
 | `/people/sean-kirkpatrick` | person / institutional-actor | Medium | AARO founding director; named in Graves testimony | 2023-04-19 SASC testimony (archived) |
 | `/people/tim-gallaudet` | person / institutional-actor | Medium | Former NOAA Chief Scientist and Deputy Administrator; UAP advocate | Public record |
 | `/documents/odni-preliminary-assessment-2021` | document / gov-doc | Medium | Referenced in Graves testimony; foundational UAP report | ODNI (public PDF; archived) |
