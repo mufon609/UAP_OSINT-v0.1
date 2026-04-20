@@ -53,11 +53,12 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 
 *No nodes yet.*
 
-### Events (1)
+### Events (2)
 
 | Node | Status | Kind |
 |---|---|---|
 | `/events/2004-nimitz-encounter` | documented | encounter |
+| `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
 ### Documents (2)
 

@@ -853,7 +853,7 @@ def render_event_summary(artifact, kind):
         row("Full Title",     ei.get("hearing_title"))
         row("Convening Body", ei.get("committee"))
         row("Session",        ei.get("session"))
-        row("Congress",       ei.get("congress_number"))
+        row("Congress",       ei.get("congress_number") or ei.get("congress"))
         row("Date",           ei.get("date"))
         row("Location",       ei.get("location"))
         row("Chair",          ei.get("chair"))
