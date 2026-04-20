@@ -24,10 +24,12 @@ doing anything:
    every file it references (stored in your Claude Code project memory
    directory — typically `~/.claude/projects/<sanitized-project-path>/memory/`).
    Apply the durable policies logged there: impartial validator
-   reporting; resolve every check #16 warning structurally on free-prose
-   synthesis fields (`description`, `background`, `uap_relevance`,
-   `credibility_notes`); timeline-cell exemption for cosmetic
-   source-morphology warnings.
+   reporting (no category-tuned thresholds); resolve every check #16
+   warning structurally on free-prose synthesis fields (`description`,
+   `background`, `uap_relevance`, `credibility_notes`) — zero-warnings
+   target with timeline-cell exemption for cosmetic source-morphology
+   warnings; never set count targets / ranges when scoping artifact
+   list population — let the source drive density.
 
 Then run the health check:
 
@@ -45,7 +47,8 @@ All six gates must be green:
 
 If errors exist, report them and stop.
 
-For renderer-supported types (document, person, event), also spot-check:
+For renderer-supported types (document, person, event, transcript),
+also spot-check:
 
 ```
 python3 scripts/review-coverage.py research/{slug}.yaml
