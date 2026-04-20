@@ -939,19 +939,110 @@ adds one new stub (/people/david-grusch from Fravor's q15 "Mr. Grusch
 just covered that") and surfaces no new cluster-scoped priority queue
 additions.
 
-### F.4 — media  ⏸ PENDING
+### F.4 — media  🟡 IN PROGRESS (F.4a done; F.4b/c pending)
 
 Shipped in the source-taxonomy consolidation as a type but with no
-renderer. Design pass:
-- Key Passages on media has two extraction modes (audio/video speech
-  + visible text in imagery) — does the artifact distinguish them in
-  the `quote.source` shape, or merge?
-- Media Versioning (conditional on `derivation_of`) — artifact shape
-  for the parent/derivative comparison rows.
+renderer. Design pass completed 2026-04-20.
 
-Pilot candidate: `/media/flir1-video` or `/media/gimbal-declassified`
-— canonical DoD video releases with documented leaked/official
-derivation history.
+**Decision 1: Key Passages extraction — one format-flexible entry type.**
+Media Key Passages cover two semantic shapes — verbatim speech (audio/
+video, timestamp-located) and verbatim visible text (photo/video
+legible text, spatial-coordinate-located). Rather than split the
+quote entry into two schemas, a single `quote_entry` accommodates both
+via a flexible `source.location` string: timestamp (`0:23-0:45`),
+timestamp + in-frame coordinate (`HUD bottom-right, 0:12`), or
+spatial-only (`upper-right corner`). Single entry type keeps the
+schema compact and lets the contributor choose the shape that best
+anchors the passage. Schema comment updated in F.4a.
+
+**Decision 2: Media Versioning — hybrid enum + free-text observations
+(Shape D).**
+Per-aspect entries with a 6-value `aspect` enum (duration / encoding /
+metadata / content / provenance / other) + free-text `parent_form` /
+`this_form` / `source` / optional `note`. The enum provides structured
+top-level filtering for future cross-node queries ("show all media
+with metadata scrubs"); free-text observation cells accommodate
+per-aspect shape variance (numerical for duration, list-like for
+metadata, prose for content). `other` is an extensibility escape
+that warns on use — signaling schema-growth discussion. Mirrors
+`divergence_class` pattern from `material_differences`.
+
+**F.4 sub-phase decomposition** (mirrors F.1a/b/c, F.2a/b/c, F.3a/b/c):
+
+#### F.4a — schema + template + validator + scaffolder  ✅ DONE (2026-04-20)
+
+Groundwork for the F.4b renderer. Shipped in commit `0bf04cd` +
+tightening in a follow-on commit:
+
+- `meta/schema.yaml` — `media_versioning` conditional key
+  (`required_when_target_node_type_in: [media]`); `media_versioning_entry`
+  shape with 6-value `aspect` enum; `quote_source.location` comment
+  extended with media flexibility note (Decision 1); `document_intrinsic`
+  per-type convention comment extended with media keys
+  (internal_title / capture_date / duration / dimensions / file_format
+  / camera_device / embedded_metadata / color_mode / codec) paired
+  with context_extrinsic fields (display_title / release_date /
+  primary_source_url) + primary_sources[0].path / manifest sha256
+  for Local Archive / SHA256. Invariants block extended.
+- `scripts/validate-research.py` — `VALID_MEDIA_VERSIONING_ASPECT`
+  constant (6 values); media-type conditional enforcement (parallels
+  speakers on transcript, corroboration_items on eyewitness);
+  `check_media_versioning()` helper (required fields, aspect enum,
+  source dict); check #16 scoping extended for media (PROSE_FIELDS
+  `description`; PROSE_ENTRY_FIELDS `media_versioning.note`); new warn
+  when target node has `derivation_of` set but `media_versioning` is
+  empty (contributor-forgot-to-populate signal; non-blocking).
+- `scripts/research-scaffold.py` — media artifacts scaffold
+  `media_versioning: []` on every kind regardless of derivation_of.
+- `meta/templates/media.md` — Media Versioning columns revised from
+  Dimension / Parent / This Derivative / Significance → Aspect /
+  Parent / This / Source / Note (Decision 2 shape) + per-column
+  guidance.
+- `tests/smoke.sh` — new media-type research-artifact dispatch block
+  (5 cases); smoke count 31 → 36.
+
+End-to-end verification: all 5 media-kind scaffolds scaffold + validate
+clean. Derivative fixture surfaces the new "empty media_versioning
+when derivation_of set" warn (non-blocking; contributor review).
+
+#### F.4b — Phase II renderer  ⏸ NEXT
+
+Extend `build-from-research.py` with media support. Per-kind dispatch
+(photo / video / audio / imagery-other). Section renderers:
+
+- `## Media Summary` — kind-sensitive table from `document_intrinsic`
+  + `context_extrinsic` + `primary_sources[0].path` + manifest sha256.
+  Fields per the document_intrinsic media convention (F.4a schema
+  comment).
+- `## Description` — from `description` prose.
+- `## Provenance` — from `context_extrinsic.provenance` list
+  (chronological custody chain).
+- `## Media Versioning` — conditional on `derivation_of` frontmatter
+  set. Rendered from `media_versioning[]`; columns per F.4a template.
+  Emitted only when the section has at least one entry; omitted
+  entirely for canonical / original media.
+- `## Key Passages` — from `quotes[]`, sorted by `statement_date` with
+  natural-sort tie-break; verification-block format flexible per the
+  `source.location` shape (timestamp / spatial / combined).
+
+`review-coverage.py` extension: `SUPPORTED_TYPES` gains `media`;
+existing four checks (Coverage / Boundary / Stub-linking / OQ dedup)
+generalize. Synthetic-fixture pilot to prove the renderer before F.4c.
+
+#### F.4c — FLIR1 pilot  ⏸ AFTER F.4b
+
+`/media/flir1-video` — the 90-second targeting-pod video from the
+2004 Nimitz encounter. DoD publicly released in 2020; earlier leaked
+versions circulated from 2017 via TTSA. Multi-version history makes
+it the cleanest real-world test of the Media Versioning path.
+Cockpit audio is minimal; visible on-screen HUD text is present
+throughout.
+
+Side effect: `/people/chad-underwood` identity attribution (F.3c
+research_gap rg1) may resolve if the provenance chain names him.
+
+Pilot candidate: `/media/flir1-video` (primary); alternative
+`/media/gimbal-declassified` has similar structure.
 
 ### F.5 — organization  ⏸ PENDING
 

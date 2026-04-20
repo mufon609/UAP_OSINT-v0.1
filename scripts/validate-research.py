@@ -298,6 +298,7 @@ def validate_artifact(path, schema, manifest_paths):
     target_type = None
     target_archetype = None
     target_kind = None
+    target_derivation_of = None
     if target_node and "/" in target_node:
         content_dir_name = target_node.split("/", 1)[0]
         reverse_map = {v: k for k, v in TYPE_DIRS.items()}
@@ -310,6 +311,8 @@ def validate_artifact(path, schema, manifest_paths):
                     target_archetype = fm_of_target.get("archetype")
                 if target_type in ("event", "transcript"):
                     target_kind = fm_of_target.get("kind")
+                if target_type == "media":
+                    target_derivation_of = fm_of_target.get("derivation_of")
 
     # --- rumors section present iff target type in RUMORS_TYPES ---
     if target_type in RUMORS_TYPES:
@@ -472,6 +475,24 @@ def validate_artifact(path, schema, manifest_paths):
                 "Required 'media_versioning' section missing "
                 "(media artifacts require media_versioning — empty list "
                 "permitted for canonical / original media)"))
+        else:
+            # Empty list is permitted, but if the target node frontmatter
+            # has derivation_of set, an empty media_versioning is likely
+            # a contributor-forgot-to-populate signal. Warn (not error)
+            # per the impartial-validator policy — contributor reviews
+            # and decides if the derivative has no material differences
+            # worth recording, or if the artifact needs population.
+            mv = data.get("media_versioning") or []
+            if target_derivation_of and not mv:
+                issues.append(Issue(rel, "warn",
+                    f"media_versioning is empty but target node has "
+                    f"derivation_of={target_derivation_of!r} set — "
+                    f"derivative media nodes typically document at least "
+                    f"one parent/derivative difference (duration, encoding, "
+                    f"metadata, content, provenance). Populate media_versioning "
+                    f"or confirm the derivative is byte-identical to the "
+                    f"parent (in which case derivation_of itself may not be "
+                    f"warranted)."))
     elif target_type is not None:
         if "media_versioning" in data:
             issues.append(Issue(rel, "error",

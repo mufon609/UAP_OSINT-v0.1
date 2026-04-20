@@ -514,7 +514,20 @@ types:
       #                classification, classification_markings_on_document, pages
       #     person:    full_name, aliases, nationality, profession
       #                (renders as the `## Identity` table rows)
-      #     other types: extended as their renderers ship (F.2+ / BACKLOG #6)
+      #     media:     internal_title, capture_date, duration, dimensions,
+      #                file_format, file_size, camera_device,
+      #                embedded_metadata (dict or prose summary),
+      #                color_mode, codec
+      #                (renders as `## Media Summary` table rows, paired
+      #                with context_extrinsic fields `display_title`,
+      #                `release_date`, `primary_source_url` and the
+      #                primary_sources[0].path / manifest sha256 for
+      #                Local Archive / SHA256)
+      #     event, transcript: use event_intrinsic / context_extrinsic
+      #                respectively for their kind-specific metadata;
+      #                document_intrinsic remains an optional metadata
+      #                sidecar on these types but isn't rendered.
+      #     other types: extended as their renderers ship (F.5+).
       #   Every key is a fact the primary source(s) attest to. Facts not
       #   attested in a primary source don't belong here — they belong in
       #   `description` (synthesis, labeled) or don't enter the record.
