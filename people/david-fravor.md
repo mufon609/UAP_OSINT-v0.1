@@ -22,13 +22,13 @@ created: 2026-04-19
 
 ## Background
 
-David Fravor is a retired [`/organizations/us-navy`] Commander. In November 2004 he was the Commanding Officer of Strike Fighter Squadron Forty-One — the "Black Aces" ([`/organizations/vfa-41`]) — attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) and stationed aboard [`/organizations/uss-nimitz`] (CVN-68). The squadron was at the beginning of a workup cycle preparing for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq.
+David Fravor is a retired [`/organizations/us-navy`] Commander. In November 2004 he was the Commanding Officer of Strike Fighter Squadron Forty-One — the "Black Aces" ([`/organizations/vfa-41`]) — attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) and stationed onboard [`/organizations/uss-nimitz`] (CVN-68). The squadron was at the beginning of a workup cycle that would prepare them for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq.
 
 ---
 
 ## UAP Relevance
 
-Fravor's UAP relevance rests on his first-hand observation of the November 2004 [`/events/2004-nimitz-encounter`] while operating from [`/organizations/uss-nimitz`] and his subsequent engagement with the disclosure chain: contacted by [`/people/jay-stratton`] in 2009 for what Fravor identifies as the ATIP program within the [`/organizations/dod`]; contacted by [`/people/luis-elizondo`] in 2016 shortly after being contacted by his 2004 wingman [`/people/alex-dietrich`]; made aware of Elizondo's departure from the Pentagon and subsequent work with [`/people/tom-delonge`], [`/people/christopher-mellon`], [`/people/steve-justice`] and others to form [`/organizations/ttsa`]. His written testimony was submitted to the House Oversight Committee on July 26, 2023 and is archived as [`/documents/written-testimony-fravor-2023`].
+Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] from [`/organizations/uss-nimitz`]. In 2009 [`/people/jay-stratton`] contacted Fravor: "Jay was part of the ATIP (Anomalous Threat Identification Program) program led by Lue Elizondo out of the DOD" ([`/organizations/dod`]). In 2016 [`/people/alex-dietrich`] (Fravor's wingman) contacted Fravor; shortly after, [`/people/luis-elizondo`] contacted Fravor. Fravor was made aware that Elizondo had left the pentagon in protest and joined forces with [`/people/tom-delonge`], [`/people/christopher-mellon`], [`/people/steve-justice`] and others to form [`/organizations/ttsa`]. The [`/documents/written-testimony-fravor-2023`] is Fravor's Statement for the House Oversight Committee on the UAP topic.
 
 ---
 
@@ -143,7 +143,7 @@ Fravor's UAP relevance rests on his first-hand observation of the November 2004 
 
 ## Credibility Notes
 
-Fravor's statements about the November 2004 [`/events/2004-nimitz-encounter`] are first-hand sensory observations by the flight lead; corroboration rests on co-observer [`/people/alex-dietrich`] (the other F/A-18F pilot), the [`/organizations/uss-princeton`] Aegis SPY-1 radar track, and the [`/media/flir1-video`] captured by a follow-on crew. Fravor's written testimony is sworn — the statement was submitted to a congressional committee — but sworn status applies to the act of testifying, not to the underlying observational claims, which rest on Fravor's account and its corroborators.
+Fravor observed the [`/events/2004-nimitz-encounter`] as flight lead of the 2 V 2 Air to Air exercise in November 2004. In his Statement for the House Oversight Committee: [`/people/alex-dietrich`] was "the other pilot in my flight" and "also lost visual"; the [`/organizations/uss-princeton`] "Aegis SPY 1 radar" showed the object had reappeared 60 miles east at the CAP point; "the now famous approximately 90 second video" ([`/media/flir1-video`]) was "taken" by a [`/organizations/uss-nimitz`] crew and "released by the USG in 2017".
 
 ---
 
