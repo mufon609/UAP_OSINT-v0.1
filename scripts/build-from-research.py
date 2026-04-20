@@ -1815,7 +1815,10 @@ def render_org_key_personnel(artifact):
     lines += render_subsections(bucket_by_class(confirmed))
 
     if flagged:
-        lines += ["", "### Flagged", ""]
+        # Each render_subsections block ends with a trailing blank line
+        # so we don't prepend one here — avoids a double-blank before
+        # ### Flagged.
+        lines += ["### Flagged", ""]
         lines += render_subsections(bucket_by_class(flagged))
 
     return "\n".join(lines).rstrip() + "\n"
