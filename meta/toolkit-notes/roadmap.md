@@ -1102,10 +1102,9 @@ broken-link registry for the cluster has drained.
 
 The Fravor person node registers 15 broken-link stubs (Nimitz cluster
 entities). Those are the build queue for the remainder of Step G's
-first cluster, now that F.2 / F.3 / F.4 renderers + their pilots have
-all shipped — the remaining work is content population (Dietrich,
-Underwood, supporting orgs) under the F.5 (organization) sub-phase
-once it lands, plus eyewitness-person follow-ons under F.1b.
+first cluster — F.1b through F.5b renderers + their pilots are all
+shipped, so the remaining work is pure content population (Dietrich,
+Underwood, supporting orgs) under the existing renderer surface.
 
 **Second cluster — 2023-07-26 House Oversight hearing.** In flight as
 of 2026-04-20. A known-complete primary-source cluster (three
@@ -1123,8 +1122,11 @@ testimony PDFs, one published event page). Cluster-scope targets:
   relayed framing, NRO/UAPTF institutional role, core multi-decade
   program allegation, retaliation, and closing Non-Human Reverse
   Engineering Programs framing)
-- `/transcripts/2023-07-26-house-grusch` ⏸ pending (second F.3b
-  hearing-transcript pilot)
+- `/transcripts/2023-07-26-house-grusch` ✅ DONE 2026-04-20 (second
+  F.3b hearing-transcript pilot; 44 quotes / 19 speakers / 19
+  entities_referenced / 2 naming_quirks / 5 research_gaps — commit
+  a1b5609; iterated to i2 through subsequent Post-F.3 Material
+  Differences elimination)
 - `/transcripts/2023-07-26-house-graves` ⏸ pending (third F.3b
   hearing-transcript pilot)
 - `/people/david-grusch` ✅ DONE 2026-04-20 (F.1b whistleblower-archetype

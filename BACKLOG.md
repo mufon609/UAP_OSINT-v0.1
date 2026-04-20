@@ -127,8 +127,12 @@ structural changes.
 **Design decision (D.4, 2026-04-17).** `review-coverage.py` shipped as
 a sibling script rather than bolted into `validate.py`. This confirms
 the split pattern — future check modules will follow the same approach.
-`validate.py` remains at ~693 lines; full refactor still gated on the
-~800-line trigger or contributor confusion.
+
+**Trigger fired (2026-04-20).** `validate.py` has grown to 1197 lines,
+past the 800-line trigger. Refactor is now actionable work, no longer
+gated. The sibling-script pattern is proven (review-coverage.py,
+validate-research.py, manifest.py verify-checksums all demonstrate it
+well). When scheduled, proceed with the extraction plan above.
 
 ---
 
@@ -443,10 +447,13 @@ keep working while the convention stabilizes.
 `context_extrinsic.companion_written_testimony` (none rely on
 `derived_from` for the companion cross-ref).
 
-**Progress.** 1 of 3 hearing transcripts shipped
-(`/transcripts/2023-07-26-house-fravor`, F.3c commit `083c249`,
-2026-04-19) — uses `context_extrinsic.companion_written_testimony`
-cleanly; no fallback triggered.
+**Progress.** 2 of 3 hearing transcripts shipped:
+`/transcripts/2023-07-26-house-fravor` (F.3c commit `083c249`,
+2026-04-19) and `/transcripts/2023-07-26-house-grusch` (commit
+`a1b5609`, 2026-04-20). Both use
+`context_extrinsic.companion_written_testimony` cleanly; no fallback
+triggered on either. One more hearing transcript on the canonical
+path satisfies the 3/3 trigger.
 
 **Surfaced.** F.3c pre-implementation Decision 3 (2026-04-19). The
 renderer kept the fallback as a leniency to avoid a hard convention
