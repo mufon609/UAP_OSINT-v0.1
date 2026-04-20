@@ -192,9 +192,10 @@ function-level testing more natural.
 
 ### Extend build-from-research.py to all 8 node types
 
-**Issue.** `scripts/build-from-research.py` supports 4 of 8 node types
-as of 2026-04-19: `document` (D.3), `person` (F.1b), `event` (F.2b),
-`transcript` (F.3b). Four remain: organization, media, location, finding.
+**Issue.** `scripts/build-from-research.py` supports 6 of 8 node types
+as of 2026-04-20: `document` (D.3), `person` (F.1b), `event` (F.2b),
+`transcript` (F.3b), `media` (F.4b), `organization` (F.5b). Two remain:
+location, finding.
 
 **Why it matters.** Phase II of the layered build process is defined
 as "deterministic regeneration from research artifact." Until all node
@@ -206,13 +207,6 @@ that the layered process exists to close.
 **Per-type scope.** Sections remaining per type + artifact-field
 conventions that will need to ship with each:
 
-- **media** — Media Summary, Description, Provenance, Key Passages
-  (optional — verbatim speech / visible text), Media Versioning
-  (when derivation_of set). Four kinds: photo, video, audio,
-  imagery-other.
-- **organization** — Overview, Description, Key Personnel, What Is
-  Confirmed, Timeline, Relationships. Requires `key_personnel`,
-  `timeline`, `contracts` (gov-contractor) fields in artifact.
 - **location** — Ownership Timeline, UAP-Scope Activity, Relationships.
 - **finding** — Timeline, Primary Source Basis, What This Establishes,
   Entities Involved.
@@ -222,9 +216,10 @@ per change), following the F.1a/b/c → F.2a/b/c pattern on the roadmap.
 
 **Surfaced.** D.3 design (2026-04-17 Q4). **Progress:** F.1b (person,
 2026-04-19 commit 491e6f3), F.2b (event, 2026-04-19 commit 5af2416),
-F.3b (transcript, 2026-04-19 commit 6cb131a). Next per roadmap: F.4
-(media) — natural pairing with `/media/flir1-video` as the pilot
-candidate (Nimitz-cluster stub).
+F.3b (transcript, 2026-04-19 commit 6cb131a), F.4b (media, 2026-04-20),
+F.5b (organization, 2026-04-20). Next per roadmap: F.6 (location) —
+natural pairing with `/locations/skinwalker-ranch` as the pilot
+candidate.
 
 ---
 

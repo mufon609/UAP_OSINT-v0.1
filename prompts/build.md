@@ -8,11 +8,11 @@ hard rule established after the 2026-04-17 pilot failure (see
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
 
-**Phase II scope (as of F.3b, 2026-04-19):** `build-from-research.py`
-supports **document, person, event, and transcript** node types end-
-to-end. Media, organization, location, and finding nodes are still
-hand-authored from the research artifact pending their renderer
-sub-phases (F.4 → F.7; tracked in `meta/toolkit-notes/roadmap.md`).
+**Phase II scope (as of F.5b, 2026-04-20):** `build-from-research.py`
+supports **document, person, event, transcript, media, and
+organization** node types end-to-end. Location and finding nodes are
+still hand-authored from the research artifact pending their renderer
+sub-phases (F.6 → F.7; tracked in `meta/toolkit-notes/roadmap.md`).
 Until those ship, build unsupported types by hand following
 `meta/conventions.md`.
 
@@ -532,11 +532,11 @@ Deterministic transformation from research artifact → populated node
 body. No creative writing in Phase II. Every line in the node body
 traces to a research-artifact entry.
 
-**Scope (as of F.3b):** document, person, event, and transcript node
-types. For media, organization, location, and finding, Phase II is
+**Scope (as of F.5b):** document, person, event, transcript, media,
+and organization node types. For location and finding, Phase II is
 still manual — follow `meta/conventions.md` and draw exclusively from
 the populated research artifact. Renderer extension is tracked per-
-type in `meta/toolkit-notes/roadmap.md` (F.4 → F.7).
+type in `meta/toolkit-notes/roadmap.md` (F.6 → F.7).
 
 ### Step 1. Regenerate the node from its research artifact
 
@@ -622,6 +622,48 @@ This:
      `material_differences[]` (Topic / Class / Written Quote / Oral
      Quote / Note columns). Written and Oral cells show ~150-char
      excerpts + anchor links to each artifact's Key Passages section.
+
+   **Media nodes** (F.4b):
+   - `## Media Summary` — from `document_intrinsic` + `context_extrinsic`
+     + `primary_sources[0]`. Kind-specific Duration/Dimensions label
+     (video → combined; audio → Duration only; photo → Dimensions
+     only). All kinds emit Format / Camera Device / Embedded Metadata
+     / Local Archive / SHA256 when populated.
+   - `## Description` — from `description`
+   - `## Provenance` — from `context_extrinsic.provenance`
+   - `## Media Versioning` — conditional; emits when artifact has
+     entries OR frontmatter has `derivation_of` set. From
+     `media_versioning[]` (Aspect / Parent / This / Source / Note).
+     Placeholder row when `derivation_of` is set + entries empty
+     (validator warns non-blockingly).
+   - `## Key Passages` — from `quotes[]`. Flexible `source.location`
+     strings: timestamp (`0:23-0:45`), timestamp + in-frame coordinate
+     (`HUD bottom-right, 0:12`), or spatial-only (`upper-right
+     corner`). Section is permitted empty when the source has no
+     extractable speech or visible text.
+
+   **Organization nodes** (F.5b):
+   - `## Overview` — fact table from `document_intrinsic` per-kind
+     keys. gov emits Full Name / Statutory Authority / Established /
+     Parent Organization / Current Director / Office Type /
+     Jurisdiction; gov-contractor emits Contracting Agency / Period
+     of Performance / Primary Counterparty / CAGE Code / Registered
+     Status; private emits Founded / Type / Headquarters / Current
+     Leadership / Public Status. Rows with empty values are skipped.
+   - `## Description` — from `description`
+   - `## Key Personnel` (Confirmed/Flagged split) — from
+     `key_personnel[]`, sub-grouped by `leadership_class` (Directors /
+     Deputy Leadership / Other Named Personnel); empty sub-subsections
+     suppressed; sorted by `period_start` within each sub-group.
+   - `## Key Passages` — from `quotes[]` (verbatim excerpts about the
+     org; parallels document Key Passages but subject-about-org
+     rather than doc-as-subject).
+   - **gov-contractor only:** `## Primary Contracts` — from
+     `contracts[]` chronologically by `period_start`, with
+     deliverables sub-list per entry.
+   - `## Timeline` — from `timeline[]` (chronological)
+   - `## Relationships` (Confirmed/Flagged split) — from
+     `org_relationships[]`
 
    **All renderer-supported types** close with:
    - `## Associated Nodes` — placeholder; filled by `associate.py`
@@ -713,7 +755,7 @@ node surfaces no semantic issues. Ready to commit.
 
 ## End-of-session procedure
 
-### Renderer-supported types (document, person, event)
+### Renderer-supported types (document, person, event, transcript, media, organization)
 
 1. `python3 scripts/validate-research.py research/{slug}.yaml` — must pass
 2. `python3 scripts/build-from-research.py research/{slug}.yaml` — must
@@ -733,9 +775,9 @@ node surfaces no semantic issues. Ready to commit.
 7. Commit the research artifact + regenerated node + any manifest
    changes in one focused commit (one node per session — hard rule)
 
-### Pending-renderer types (media, organization, location, finding)
+### Pending-renderer types (location, finding)
 
-Until the per-type renderer sub-phase (F.4 → F.7) ships:
+Until the per-type renderer sub-phase (F.6 → F.7) ships:
 
 1. `validate-research.py` passes on the populated artifact
 2. Hand-author the node body per `meta/conventions.md`, drawing
