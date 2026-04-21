@@ -523,11 +523,10 @@ This:
      Notes, not part of the archetype-dispatcher)
 
    **Event nodes:**
-   - `## Event Summary` — from `event_intrinsic`. Kind-specific fields:
-     hearing emits Full Title / Convening Body / Session / Congress /
-     Date / Location / Chair; encounter emits Date / Location (via
-     `location_path` or `location`) / Duration / Weather /
-     Instruments Involved.
+   - `## Event Summary` — fact table from `event_intrinsic`. Kind-
+     specific row lists are inline in `render_event_summary` (hearing
+     vs encounter) — see the function for exact labels and order.
+     Empty values skipped.
    - `## Description` — from `description`
    - `## Participants` — from `participants[]`. Hearings: sub-sections
      by `capacity` (Witnesses — Eyewitness Testimony / Whistleblower
@@ -543,18 +542,15 @@ This:
      same shape as eyewitness person)
 
    **Transcript nodes:**
-   - `## Publication Record` — from `context_extrinsic`. Kind-specific
-     rows: hearing emits Full Hearing Title / Convening Body /
-     Session / Serial No. / Date / Location / Witness / Oath Status /
-     Transcript URL / Transcript Verified / Event Node / Companion
-     Written Testimony. `other` emits Outlet / Platform / Program /
-     Show / Venue / Date / Host(s) / Interviewer(s) / Primary
-     Speaker(s) / Format / Source Medium / (either Underlying Media
-     Node or Underlying Document, depending on whether `derived_from`
-     points at `/media/` or `/documents/`) / Source URL / Transcript
-     Verified / Citation Style. Auto-populates Source Medium and the
-     Underlying row from frontmatter (`source_medium` /
-     `derived_from`).
+   - `## Publication Record` — fact table from `context_extrinsic`.
+     Kind-specific row lists are inline in
+     `render_transcript_publication_record` (hearing vs other) — see
+     the function for exact labels and order. The `Source Medium`
+     row and the `Underlying Media Node` / `Underlying Document` row
+     auto-populate from frontmatter (`source_medium` /
+     `derived_from`); the Underlying row label adapts based on
+     whether `derived_from` points at `/media/` or `/documents/`.
+     Empty values skipped.
    - `## Summary` — from `description` (render-time field→section
      rename: `description` stays the universal top-level field while
      the rendered section name fits transcript semantics).
@@ -566,15 +562,12 @@ This:
 
    **Media nodes:**
    - `## Media Summary` — fact table from `document_intrinsic` +
-     `context_extrinsic` + `primary_sources[0]` + manifest sha256 lookup.
-     Row labels (emitted when populated): `Title`, `Kind`,
-     `Date Captured`, `Date Released`, then a Duration/Dimensions
-     row whose label adapts to what's populated (`Duration /
-     Dimensions` when both, `Duration` alone or `Dimensions` alone
-     otherwise — typical for video / audio / photo respectively),
-     `Format`, `Codec`, `Color Mode`, `File Size`, `Camera / Device`,
-     `EXIF / Container Metadata`, `SHA256`, `Primary Source URL`,
-     `Local Archive`.
+     `context_extrinsic` + `primary_sources[0]` + manifest sha256
+     lookup. Row list is inline in `render_media_summary` — see the
+     function for exact labels and order. The Duration/Dimensions row
+     label adapts to what's populated (combined when both present,
+     either alone otherwise — typical for video / audio / photo
+     respectively). Empty values skipped.
    - `## Description` — from `description`
    - `## Provenance` — from `context_extrinsic.provenance`
    - `## Media Versioning` — conditional; emits when artifact has
@@ -590,17 +583,11 @@ This:
 
    **Organization nodes:**
    - `## Overview` — fact table from `document_intrinsic` per-kind
-     keys (order from `_ORG_OVERVIEW_ORDER_BY_KIND`). gov agency/office
-     fields: Full Name / Internal Name / Type (from `office_type`) /
-     Statutory Authority / Established / Terminated / Parent
-     Organization / Director / Jurisdiction. Military-unit and
-     military-service gov kinds layer additional fields (Designator /
-     Unit Class / Parent Unit / Home Station / Commissioned /
-     Decommissioned / Mission / Branch Type / Founded). gov-contractor
-     emits Full Name / Contracting Agency / Period of Performance /
-     Primary Counterparty / Registered Status / CAGE Code. private
-     emits Full Name / Type (from `org_type`) / Founded / Headquarters
-     / Current Leadership / Public Status. Rows with empty values are
+     keys. Per-kind row order from `_ORG_OVERVIEW_ORDER_BY_KIND`
+     (`gov` / `gov-contractor` / `private`); row labels from
+     `_ORG_OVERVIEW_LABELS`. The `gov` key set covers agency/office
+     fields plus military-unit and military-service sub-shape fields.
+     See `build-from-research.py` for exact field lists. Empty values
      skipped.
    - `## Description` — from `description`
    - `## Key Personnel` (Confirmed/Flagged split) — from
@@ -619,11 +606,10 @@ This:
 
    **Location nodes:**
    - `## Overview` — fact table from `document_intrinsic` location
-     keys: Full Name / Alternate Names / Location Type / Geographic
-     Location / Coordinates / Legal Description / Ownership History
-     Summary / Scope Significance. Status row sourced from
-     frontmatter, not `document_intrinsic`. Rows with empty values
-     are skipped.
+     keys. Row order from `_LOCATION_OVERVIEW_ORDER`; row labels from
+     `_LOCATION_OVERVIEW_LABELS`. Status row sourced from frontmatter
+     (not `document_intrinsic`) and rendered as the final row. Rows
+     with empty values skipped.
    - `## Description` — from `description`
    - `## Ownership Timeline` — from `ownership_timeline[]`,
      chronological by `period_start`. Columns: `Period | Owner |
