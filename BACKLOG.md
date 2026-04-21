@@ -68,8 +68,8 @@ enforced:
    Proposed: extend `check_chronological_tables` to warn on unknown
    values. Low priority (field is advisory metadata, not evidentiary).
 
-2. **Statement-block chronological ordering** — check #15 enforces
-   ordering inside a single markdown table, but `## Statements`
+2. **Statement-block chronological ordering** — the chronological-ordering
+   check enforces ordering inside a single markdown table, but `## Statements`
    renders as a sequence of `> block quote` + verification-table
    pairs. Chronological order across those pairs isn't verified from
    the node body alone. Renderer-driven pipelines can't drift (F.1b
@@ -173,24 +173,7 @@ deferred to a later session rather than bundled with the removal.
 
 ---
 
-### 10. Decision: check #8 position kept as "reserved" placeholder (not renumbered)
-
-Recorded as a decision note (not open work).
-
-During the 2026-04-21 staleness audit, the orphan "retired — was Open
-Questions formatting" line in `scripts/validate.py:16` was initially
-fixed by renumbering checks 9–15 down by 1. Reverted after the ripple
-cost surfaced: 25+ inline references across 13 files (`check #11`,
-`check #12`, `check #15` in validate-research.py, schema.yaml,
-templates, conventions.md, roadmap.md, BACKLOG.md, prompts). Kept the
-numbers stable and replaced the orphan line with a `— reserved —`
-placeholder plus a one-line explanation. Zero external ripple.
-
-Surfaced: 2026-04-21 staleness audit.
-
----
-
-### 11. CONTRIBUTING.md walkthrough describes pre-artifact-first workflow
+### 10. CONTRIBUTING.md walkthrough describes pre-artifact-first workflow
 
 `CONTRIBUTING.md` carries a Step 1–10 build walkthrough that assumes
 hand-authored node bodies (Step 4 "build a scratchpad of verbatim

@@ -8,28 +8,28 @@ validate.py (node structure + verbatim quotes) and validate-research.py
 other.
 
 Checks:
-  1. Coverage     — every artifact quote.text appears in the node body
-                    (whitespace/punctuation normalized per validate.py
-                    rules).
-  2. Boundary     — the node body (outside Associated Nodes) matches what
-                    `build-from-research.py --dry-run` would regenerate
-                    from the current artifact. Divergence means the
-                    artifact drifted from the node, the node was
-                    hand-edited, or the renderer changed.
-  3. Stub-linking — every entities_referenced.wrap_path appears as a
-                    [`/path`] link in the node body.
-  4. Description  — every significant token in the node's ## Description
-     drift         section appears in the artifact's grounding text:
-                    source text + context_extrinsic strings +
-                    document_intrinsic strings + naming_quirks canonical
-                    forms + entities_referenced names. Closes the drift
-                    surface on contributor-synthesis prose; fabricated
-                    entities, abbreviation expansions that don't match
-                    source, or numbers not in any grounding field become
-                    commit-blocking errors. Fine drift (dropped qualifiers,
-                    synonym rephrases at the lowercase level) is not
-                    caught — semantic review (Phase III Step 2) is
-                    still required for that class.
+
+  Coverage check — every artifact quote.text appears in the node body
+  (whitespace/punctuation normalized per validate.py rules).
+
+  Boundary check — the node body (outside Associated Nodes) matches
+  what `build-from-research.py --dry-run` would regenerate from the
+  current artifact. Divergence means the artifact drifted from the
+  node, the node was hand-edited, or the renderer changed.
+
+  Stub-linking check — every entities_referenced.wrap_path appears as
+  a [`/path`] link in the node body.
+
+  Description-drift check — every significant token in the node's
+  ## Description section appears in the artifact's grounding text:
+  source text + context_extrinsic strings + document_intrinsic strings
+  + naming_quirks canonical forms + entities_referenced names. Closes
+  the drift surface on contributor-synthesis prose; fabricated
+  entities, abbreviation expansions that don't match source, or numbers
+  not in any grounding field become commit-blocking errors. Fine drift
+  (dropped qualifiers, synonym rephrases at the lowercase level) is
+  not caught — semantic review (Phase III Step 2) is still required
+  for that class.
 
 Scope: renderer-supported types (document, person, event, transcript,
 media, organization, location). Finding is acknowledged and skipped —
@@ -83,7 +83,7 @@ SUPPORTED_TYPES = {"document", "person", "event", "transcript", "media", "organi
 
 LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
 
-# --- Token-drift patterns and vocab (Check 4 — Description drift) ----------
+# --- Token-drift patterns and vocab (description-drift check) --------------
 # Markdown link syntax used to wrap entity paths in prose. Stripped
 # before token extraction since wrap_paths are repo identifiers, not
 # content from the source.
@@ -361,7 +361,7 @@ def gather_source_text(artifact):
 
 def gather_grounding_text(artifact, source_text):
     """Build the text corpus against which Description prose tokens are
-    checked (Check 4).
+    checked (description-drift check).
 
     Grounding sources:
       - source_text                        (what the document actually says)
@@ -425,7 +425,7 @@ def extract_description_text(node_text):
 
 
 # =============================================================================
-# Check 1 — Coverage
+# Coverage check
 # =============================================================================
 
 def check_coverage(artifact, node_text, rel):
@@ -447,7 +447,7 @@ def check_coverage(artifact, node_text, rel):
 
 
 # =============================================================================
-# Check 2 — Boundary (re-render + diff, excluding Associated Nodes)
+# Boundary check (re-render + diff, excluding Associated Nodes)
 # =============================================================================
 
 def check_boundary(artifact_path, node_path, rel):
@@ -484,7 +484,7 @@ def check_boundary(artifact_path, node_path, rel):
 
 
 # =============================================================================
-# Check 3 — Stub-linking
+# Stub-linking check
 # =============================================================================
 
 def check_stub_linking(artifact, node_text, rel):
@@ -513,7 +513,7 @@ def check_stub_linking(artifact, node_text, rel):
 
 
 # =============================================================================
-# Check 4 — Description token drift (against artifact grounding)
+# Description-drift check (against artifact grounding)
 # =============================================================================
 
 def check_description_token_drift(artifact, node_text, source_text, rel):

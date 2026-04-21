@@ -61,7 +61,7 @@ incident), and documents (government vs. non-government).
 
 The evidentiary content of every node rests on `quotes[]` in the
 research artifact — verbatim passages from primary sources with
-per-quote mechanical verification (`validate.py` check #11 extracts
+per-quote mechanical verification (the verbatim-quote check extracts
 the cited source and substring-checks every passage marked
 `✅ Confirmed — verified verbatim`). No contributor-synthesized claim
 layer sits between source and reader, on any node type.
@@ -105,7 +105,7 @@ Contributor-synthesis prose is limited to labeled synthesis surfaces
 (`description`, `background`, `uap_relevance`, `credibility_notes`)
 and per-entry synthesis-content notes (`ownership_timeline.note`,
 `key_personnel.note`, `vouching_chain.attestation`, etc.).
-`validate-research.py` check #16 tokenizes each of these against the
+the prose-drift check tokenizes each of these against the
 primary-source text and warns on every unmatched significant token
 (errors at 100% vocabulary divergence).
 
@@ -129,7 +129,7 @@ the F.1c Fravor audit (2026-04-19) surfaced a real failure mode where
 contributor prose introduces unstated premises, paraphrase drift, and
 content widening even when every referenced quote is verbatim-clean.
 
-`validate-research.py` check #16 (prose-field token drift) verifies
+`validate-research.py`'s prose-drift check verifies
 that significant words in these prose fields appear in the referenced
 primary-source text. The check is an impartial reporter — it flags
 every unmatched token as a warning without classifying whether the
@@ -142,13 +142,39 @@ mathematical floor on pure fabrication rather than a stylistic
 threshold. Below 100%, the validator makes no judgment; careful
 contributor review is the quality gate.
 
-Check #16 is explicitly scoped to synthesis prose (free-prose fields
-and synthesis-content notes). Compact label cells (role titles, short
-relationship descriptors, `timeline[].event`) and cross-reference
-descriptor notes (`corroboration_items.note`, `witnesses_testimony.note`,
-`org_relationships.note`, `location_relationships.note`) are out of
-scope — token-match misfires on those surfaces; fabrication there is
-Phase III semantic-review territory.
+The prose-drift check is explicitly scoped to synthesis prose (free-
+prose fields and synthesis-content notes). Compact label cells (role
+titles, short relationship descriptors, `timeline[].event`) and cross-
+reference descriptor notes (`corroboration_items.note`,
+`witnesses_testimony.note`, `org_relationships.note`,
+`location_relationships.note`) are out of scope — token-match misfires
+on those surfaces; fabrication there is Phase III semantic-review
+territory.
+
+### Check naming
+
+Validator checks are referenced across the codebase by **topic name**,
+not by number. `the verbatim-quote check`, `the prose-drift check`,
+`the chronological-ordering check`, etc. Names are stable across check
+additions and retirements; numbered lists in module docstrings (if any)
+exist only as at-a-glance summaries and are not referenced externally.
+
+Rationale: positional numeric identifiers (`check #11`, `check #16`)
+couple every external reference to ordering. Retiring a check then
+forces either (a) a numbering gap with a placeholder, or (b) a mass
+rename across ~60 cross-refs. Topic names decouple references from
+position — retiring a check deletes the function and its refs; no
+placeholder needed, no renumber required.
+
+Discipline for check additions: give the new check a semantic topic
+name (`cross-entity-consistency check`, `finding-rollup check`,
+whatever fits) and use that name in any cross-doc reference. For
+check retirements: delete the function + all topic-named refs
+together; git log preserves the history.
+
+Topic names are stable interfaces — renames ripple the same way any
+API rename does (mass find-replace across refs). Pick names that
+describe what the check verifies, not how it's implemented.
 
 ---
 

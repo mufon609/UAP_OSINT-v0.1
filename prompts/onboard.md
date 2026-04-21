@@ -25,7 +25,7 @@ doing anything:
    every file it references (stored in your Claude Code project memory
    directory — typically `~/.claude/projects/<sanitized-project-path>/memory/`).
    Apply the durable policies logged there: impartial validator
-   reporting (no category-tuned thresholds); resolve every check #16
+   reporting (no category-tuned thresholds); resolve every prose-drift-check
    warning structurally on scoped fields (top-level free-prose:
    `description`, `background`, `uap_relevance`, `credibility_notes`;
    per-entry synthesis content notes: `ownership_timeline.note`,
@@ -48,7 +48,7 @@ All five gates must be green:
 - `help-check` — every `scripts/*.py --help` exits clean
 - `smoke` — fixture scaffolds validate cleanly
 - `validate.py` — structural + verbatim-quote checks
-- `validate-research.py` — research-artifact structural + check #16
+- `validate-research.py` — research-artifact structural + prose-drift check
 - `build-state.py --check` — CLAUDE.md build-state block in sync
 
 If errors exist, report them and stop.

@@ -44,7 +44,7 @@ created: {{today}}
 |  |  |  |  |  |
 
 <!-- Rows are listed in chronological order (earliest start-of-Period
-     first). Validator check #15 enforces this. -->
+     first). The chronological-ordering check enforces this. -->
 
 ### Flagged
 
@@ -110,7 +110,7 @@ created: {{today}}
      person. One row per dated event. Category column values:
      affiliation / role / observation / testimony / publication /
      clearance / incident / filing / other.
-     Rows listed earliest first; validator check #15 enforces. -->
+     Rows listed earliest first; the chronological-ordering check enforces. -->
 
 ---
 

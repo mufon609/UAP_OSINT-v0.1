@@ -157,7 +157,7 @@ types:
   #     (number, period, value, counterparties, deliverables) with source
   #     attribution per row.
   #   - Description — labeled contributor synthesis (1-3 paragraphs);
-  #     subject to check #16 prose-drift scoping.
+  #     subject to prose-drift check scoping.
   organization:
     status_values: [active, in-progress]
     frontmatter:
@@ -567,7 +567,7 @@ types:
         # Entries carry `date`, `event`, `source`, and on person artifacts
         # `category` (affiliation / role / observation / testimony /
         # publication / clearance / incident / filing / other). Node
-        # renderer emits in chronological order; validator check #15
+        # renderer emits in chronological order; the chronological-ordering check
         # confirms the rendered Timeline table is earliest-first.
       corroboration_items:
         required_when_target_node_archetype_in: [eyewitness]
@@ -689,7 +689,7 @@ types:
         # (optional wrap_path when the owner has a repo node), use_status
         # (what the property was used for during the period), source.
         # Renders as the `## Ownership Timeline` table with chronological
-        # ordering enforced via check #15. Entry shape:
+        # ordering enforced via the chronological-ordering check. Entry shape:
         # ownership_timeline_entry below.
       uap_scope_activity:
         required_when_target_node_type_in: [location]
@@ -878,7 +878,7 @@ types:
       # organization_path: /organizations/... path
       # role: the person's role / title at the organization
       # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY; used
-      #   by renderer to compose a Period cell and by check #15 to
+      #   by renderer to compose a Period cell and by the chronological-ordering check to
       #   sort rows chronologically
       # flagged: bool (default false) — routes the entry to the
       #   `### Flagged` subsection rather than `### Confirmed`
@@ -921,7 +921,7 @@ types:
       # role: the speaker's role at this transcript event. Free-text;
       #   common values: Witness, Chair, Committee Member, Host,
       #   Interviewer, Guest, Moderator, Presenter. Scanned by
-      #   validate-research.py check #16 against the entry's
+      #   the prose-drift check against the entry's
       #   source.path token pool.
       # node_link: optional /people/... path when the speaker has a
       #   repository node. Renders as backtick-bracket link in the
@@ -936,7 +936,7 @@ types:
       # person_path: /people/... path of the individual
       # role: free-text role title at this organization (e.g., "Director",
       #   "Founding Director", "Acting Director", "Deputy Secretary",
-      #   "Commanding Officer"). Scanned by check #16 against the entry's
+      #   "Commanding Officer"). Scanned by the prose-drift check against the entry's
       #   source.path token pool.
       # leadership_class: optional enum
       #   [director, deputy, staff, advisor, other]. Drives renderer sub-
@@ -945,7 +945,7 @@ types:
       #   the Other Named Personnel bucket.
       # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY; used by
       #   renderer to sort entries within each leadership_class subsection
-      #   and by check #15 to sort rows chronologically.
+      #   and by the chronological-ordering check to sort rows chronologically.
       # flagged: bool (default false) — routes to `### Flagged` subsection
       # source: object with path + location — primary source attesting the
       #   person's role at this organization (appointment announcement,
@@ -974,7 +974,7 @@ types:
       #   for ongoing or open-ended contracts.
       # subject: short descriptor of the contract's stated purpose (1-6
       #   words; e.g., "Advanced Aerospace Weapon System Applications",
-      #   "Cockpit video system integration"). Scanned by check #16 against
+      #   "Cockpit video system integration"). Scanned by the prose-drift check against
       #   source.path token pool.
       # value: dollar amount attested in the primary source (string form
       #   preserves source formatting — "$22 million", "$22M", "22,000,000").
@@ -983,7 +983,7 @@ types:
       #   /documents/... path; absent or empty list when deliverables are
       #   not publicly enumerated.
       # note: contributor synthesis (1-2 sentences; optional). Scanned by
-      #   check #16 against source.path token pool.
+      #   the prose-drift check against source.path token pool.
 
     org_relationship_entry:
       required: [organization_path, relationship_type, source]
@@ -1006,7 +1006,7 @@ types:
       # flagged: bool (default false); routes to `### Flagged`
       # source: object with path + location attesting the relationship
       # note: contributor synthesis (1-2 sentences; optional). Scanned by
-      #   check #16 against source.path token pool.
+      #   the prose-drift check against source.path token pool.
 
     ownership_timeline_entry:
       required: [period_start, owner, use_status, source]
@@ -1025,7 +1025,7 @@ types:
       #   transition (deed record, property registry, news article
       #   contemporaneous with the transfer, etc.).
       # note: optional contributor synthesis (1-2 sentences). Scanned by
-      #   check #16.
+      #   the prose-drift check.
 
     uap_scope_activity_entry:
       required: [period_start, activity, source]
@@ -1035,14 +1035,14 @@ types:
       # activity: one-line description of the UAP-scope institutional
       #   activity conducted at the location (e.g., "NIDS investigation",
       #   "BAASS/AAWSAP contract research", "Fugal-era on-site research
-      #   operations"). Scanned by check #16 against source.path token
+      #   operations"). Scanned by the prose-drift check against source.path token
       #   pool.
       # actor_paths: optional list of /people|/organizations wrap_paths
       #   for the entities conducting the activity. Renders as
       #   backtick-bracket links in an Actors cell when set.
       # source: object with path + location attesting the activity.
       # note: optional contributor synthesis (1-2 sentences). Scanned by
-      #   check #16.
+      #   the prose-drift check.
 
     location_relationship_entry:
       required: [entity_path, relationship, source]
@@ -1055,10 +1055,10 @@ types:
       #   documented incidents, adjacent properties, etc.).
       # relationship: short description of the connection (e.g., "Current
       #   owner", "Conducted 1996-2004 investigation", "Site of documented
-      #   incident"). Scanned by check #16 against source.path token pool.
+      #   incident"). Scanned by the prose-drift check against source.path token pool.
       # flagged: bool (default false); routes to `### Flagged`.
       # source: object with path + location attesting the relationship.
-      # note: optional contributor synthesis. Scanned by check #16.
+      # note: optional contributor synthesis. Scanned by the prose-drift check.
 
     media_versioning_entry:
       required: [id, aspect, parent_form, this_form, source]
@@ -1089,7 +1089,7 @@ types:
       #   declassified cut; FOIA response with metadata inspection;
       #   side-by-side visual comparison noted in an archived article).
       # note: contributor synthesis of analytical significance (1-2
-      #   sentences; optional). Scanned by check #16 against the entry's
+      #   sentences; optional). Scanned by the prose-drift check against the entry's
       #   own source.path token pool.
 
     naming_quirk_entry:

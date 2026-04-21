@@ -513,7 +513,7 @@ def _format_period(entry):
 
 def render_affiliations(artifact):
     """Affiliations table split into Confirmed / Flagged subsections.
-    Sorted by period_start chronologically (check #15 enforces)."""
+    Sorted by period_start chronologically (the chronological-ordering check enforces)."""
     items = artifact.get("affiliations") or []
     confirmed = sort_by_date([e for e in items if isinstance(e, dict) and not e.get("flagged")], "period_start")
     flagged   = sort_by_date([e for e in items if isinstance(e, dict) and e.get("flagged")],     "period_start")
@@ -1935,7 +1935,7 @@ def render_location_overview(artifact, fm):
 def render_ownership_timeline(artifact):
     """Ownership Timeline section — chronological table from
     ownership_timeline[]. Columns: Period | Owner | Use / Status |
-    Source. Sorted ascending by period_start; check #15 enforces
+    Source. Sorted ascending by period_start; the chronological-ordering check enforces
     chronological order on the rendered table."""
     items = sort_by_date(
         [e for e in (artifact.get("ownership_timeline") or []) if isinstance(e, dict)],
@@ -1970,7 +1970,7 @@ def render_uap_scope_activity(artifact):
     uap_scope_activity[]. Columns: Period | Activity | Source. When
     actor_paths is populated, wraps are appended inline to the Activity
     cell as `— [`/path1`]; [`/path2`]`. Sorted ascending by period_start;
-    check #15 enforces chronological order."""
+    the chronological-ordering check enforces chronological order."""
     items = sort_by_date(
         [e for e in (artifact.get("uap_scope_activity") or []) if isinstance(e, dict)],
         "period_start",

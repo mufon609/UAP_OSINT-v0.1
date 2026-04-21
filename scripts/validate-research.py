@@ -37,7 +37,7 @@ Checks (per schema.yaml research-artifact.invariants):
   - Per-entry enum checks for corroboration_items.observation_type,
     program_involvement.evidentiary_basis / confidence, and
     vouching_chain.evidentiary_basis / confidence.
-  - Prose-field token drift (check #16) — extract significant tokens
+  - Prose-drift check — extract significant tokens
     (≥3 chars, non-stopword, possessive `'s` stripped) from contributor
     synthesis prose and verify each appears in the referenced primary-
     source text. Impartial reporter: warn on every unmatched token
@@ -313,7 +313,7 @@ def load_artifact(path):
 # `#` is preceded by whitespace and followed by non-whitespace, inside an
 # UNQUOTED scalar value — which YAML silently treats as a comment,
 # truncating everything after `#`. Contributors hit this when they type
-# prose with embedded "#N" references (like "check #11", "Issue #3").
+# prose with embedded "#N" references (like "Issue #3", "channel #23").
 # Heuristic: the value portion starts with a non-quote, non-block-scalar
 # character, and contains `\s#\S` somewhere. Two common false-positives
 # (intentional comments) are explicitly permitted:
@@ -367,7 +367,7 @@ def check_yaml_hash_truncation(path, rel):
             f"line {lineno}: value contains ` #` followed by substantive content "
             f"— YAML will silently treat everything after `#` as a comment and "
             f"truncate the scalar. If the `#` is intentional content (e.g., "
-            f"\"check #11\", \"Issue #3\"), quote the entire value "
+            f"\"Issue #3\", \"channel #23\"), quote the entire value "
             f"(single or double quotes) or use a YAML literal block (`|`). "
             f"Post-`#` content that will be truncated: {post_hash[:80]!r}"))
     return issues
@@ -819,11 +819,11 @@ def validate_artifact(path, schema, manifest_paths):
     # --- Cross-ref integrity (entity references, supersedes/etc) ---
     issues.extend(check_cross_refs(rel, data))
 
-    # --- Prose-field token drift (check #16) ---
-    # Contributor-prose surfaces that aren't covered by check #11's
-    # verbatim-quote verification. Scoped per-type; no-ops on types
-    # without registered prose fields (documents carry no contributor-
-    # prose layer; their evidentiary content is verbatim Key Passages).
+    # --- Prose-drift check ---
+    # Contributor-prose surfaces that aren't covered by the verbatim-
+    # quote check. Scoped per-type; no-ops on types without registered
+    # prose fields (documents carry no contributor-prose layer; their
+    # evidentiary content is verbatim Key Passages).
     issues.extend(check_prose_drift(rel, data, target_type))
 
     return issues
@@ -1508,7 +1508,7 @@ def check_ownership_timeline(rel, data, manifest_paths):
     """ownership_timeline[] — present on location artifacts. Each entry:
     required {period_start, owner, use_status, source}, optional
     {period_end, owner_path, note}. Chronological ordering enforced at
-    node-render time by validate.py check #15 against the rendered
+    node-render time by validate.py's chronological-ordering check against the rendered
     `## Ownership Timeline` table.
     """
     issues = []
@@ -1676,7 +1676,7 @@ STOPWORDS = {
 
 # Fields to check, keyed by target_node type.
 #
-# Scoping principle: check #16 is built for CONTRIBUTOR SYNTHESIS PROSE —
+# Scoping principle: the prose-drift check is built for CONTRIBUTOR SYNTHESIS PROSE —
 # paragraph-length or sentence-length fields where a contributor is
 # narrating from one or more primary sources and can introduce drift
 # (dropped qualifiers, synonym rephrase, unstated premise, fabricated
@@ -1713,7 +1713,7 @@ PROSE_FIELDS_BY_TYPE = {
         # `## Description` section — explicitly labeled contributor-
         # authored synthesis per the media template (describe what the
         # source depicts; verbatim extractable content lives in Key
-        # Passages). check #16 scans against the union of
+        # Passages). The prose-drift check scans against the union of
         # primary_sources[].path token pools.
         "description",
     ],
@@ -1723,7 +1723,7 @@ PROSE_FIELDS_BY_TYPE = {
         # rename (Q1-A decision). Keeps `description` as the universal
         # top-level required field while the rendered section name fits
         # transcript semantics. Closes BACKLOG entry "Transcript top-
-        # level description — check #16 prose scoping blocked on F.3b
+        # level description — prose-drift scoping blocked on F.3b
         # renderer" (entered in F.3a, resolved in F.3b).
         "description",
     ],
@@ -1883,10 +1883,10 @@ def extract_significant_tokens(text):
         return set()
     text = re.sub(r"\[`/[^`]+`\]", "", str(text))
     text = re.sub(r"[*_`]", "", text)
-    # Typographic-dash handling diverges from validate.py check #11 by
-    # design. check #11 is substring-matching verbatim quote text —
-    # there, em-dash and en-dash both normalize to ASCII hyphen so
-    # source "F–18" and prose "F-18" substring-match. check #16 is
+    # Typographic-dash handling diverges from the verbatim-quote check
+    # by design. The verbatim-quote check is substring-matching quote
+    # text — there, em-dash and en-dash both normalize to ASCII hyphen
+    # so source "F–18" and prose "F-18" substring-match. The prose-drift check is
     # TOKENIZING — different use case. Em-dash (U+2014) is a sentence-
     # level word boundary in modern English typography ("NRO—reservist
     # capacity" is three words, not two), so we map it to a space

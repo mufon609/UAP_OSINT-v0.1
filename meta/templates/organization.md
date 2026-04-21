@@ -39,7 +39,7 @@ created: {{today}}
 <!-- Labeled contributor synthesis (1-3 paragraphs). Narrative about
      what the organization is and why it is in this repository.
      Source: free-text populated from `description` key in the research
-     artifact. Scanned by validate-research.py check #16 against the
+     artifact. Scanned by the prose-drift check against the
      union of primary_sources token pools. -->
 
 ---

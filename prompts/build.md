@@ -148,9 +148,8 @@ artifact's `description` is unrendered. Either leave the field empty
 (or absent — validator is type-conditional) or use it as a brief
 index-level summary that never reaches the node body. Evidentiary
 prose for a person node belongs in `background` / `uap_relevance`
-/ `credibility_notes`. Each of those is scanned by check #16
-(prose-drift token check — see Step 10) against the pooled
-primary-source vocabulary.
+/ `credibility_notes`. Each of those is scanned by the prose-drift
+check (see Step 10) against the pooled primary-source vocabulary.
 
 Future plan (tracked in `BACKLOG.md`): move to agent-generated
 descriptions so the evidentiary-derivation invariant is enforced
@@ -371,12 +370,12 @@ warn of the form `line N: value contains \` #\` followed by
 substantive content`, an unquoted scalar value in the artifact
 contains a `space #` sequence — YAML silently treats everything after
 `#` as a comment and truncates the scalar. Common triggers: prose
-referring to "check #11", "Issue #3", "channel #23", numeric ordinals
+referring to "Issue #3", "channel #23", numeric ordinals
 like "serial #42". Fix: quote the entire value (single or double
 quotes), OR rewrite without the `#`, OR use a YAML literal block (`|`)
 if the content already spans multiple lines.
 
-**Prose-drift check #16 warnings — review before leaving Phase I.**
+**Prose-drift check warnings — review before leaving Phase I.**
 The validator runs a token-drift check across contributor-synthesis
 prose fields on every renderer-supported type (top-level free prose:
 `description`, `background`, `uap_relevance`, `credibility_notes`;
@@ -415,14 +414,14 @@ warning requires real resolution, not synthesis-acceptance:
   transaction / role / derivation; zero warnings is the target, same
   resolution paths as free-prose fields.
 - **Structural labels + cross-reference descriptor notes** are NOT
-  scanned by check #16. This includes role titles, short relationship
+  scanned by the prose-drift check. This includes role titles, short relationship
   descriptors, `timeline[].event`, `use_status`, `activity`, and the
   `.note` fields on cross-reference entries (`corroboration_items`,
   `witnesses_testimony`, `org_relationships`,
   `location_relationships`) that describe *why/how a cross-reference
   exists*. Token-matching is a poor instrument for compact multi-
   source labels and meta-descriptors. Fabrication in these cells is
-  caught by Phase III semantic review, not check #16.
+  caught by Phase III semantic review, not the prose-drift check.
 
 Common categories of warnings and how they resolve:
 
@@ -452,7 +451,7 @@ Common categories of warnings and how they resolve:
   the conversion that `validate.py:normalize_for_compare` already
   does for the verbatim-quote check. Prose written with ASCII hyphen
   (`F-18`) now tokenizes identically to source rendered with en-dash
-  (`F–18`). Applies to check #16 only; verbatim-quote text still
+  (`F–18`). Applies to the prose-drift check only; verbatim-quote text still
   needs to match the source character byte-for-byte (the verbatim
   check has its own normalization path).
 

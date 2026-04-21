@@ -153,7 +153,7 @@ so a contributor can recognize what the phase produced.
 | Step 0 — Design consultation | ✅ | Scope definition: topic-neutral toolkit, ground-up refactor, minimum taxonomy, schema-driven validation |
 | Step A — Schema, conventions, scripts skeleton | ✅ | `schema.yaml`, `conventions.md`, templates, scaffolder, validator, manifest, archive, transcribe, associate, build-state |
 | Step B — Bug fixes | ✅ | B1 manifest SHA256; B2 `schema_version` value check |
-| Step C — Pilot failure postmortem | ✅ | Mechanical verbatim quote verification (validator check #11), source-read-first rule, one-node-per-session rule |
+| Step C — Pilot failure postmortem | ✅ | Mechanical verbatim-quote check, source-read-first rule, one-node-per-session rule |
 | Step D — Layered-process tooling | ✅ | Phase I/II/III split: `research-scaffold.py`, `extract-source.py`, `build-from-research.py`, `review-coverage.py`, `validate-research.py` |
 | Step E.1 — Pre-commit / CI hook | ✅ | `tests/pre-commit.sh` chains 5 gates (help-check / smoke / validate.py / validate-research.py / build-state.py --check) |
 | Step E.2 — Iteration tooling | ❌ REMOVED 2026-04-20 | `iterate.py` planned then removed pre-implementation — git handles iteration audit at current volume |

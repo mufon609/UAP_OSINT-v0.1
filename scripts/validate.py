@@ -3,57 +3,72 @@
 Validate nodes against meta/schema.yaml.
 
 Checks:
-  1. Frontmatter — required fields + valid type/kind/archetype/status
-  2. id frontmatter matches file path
-  3. Required sections per type + kind/archetype (+ corpus addendum)
-  4. Confirmed / Flagged subsection splits (Flagged omitted when empty)
-  5. Quote verification blocks in sections that require them
-  6. Background prose-only (person nodes)
-  7. Internal link resolution — body `[`/path`]` links + frontmatter
-     node-path pointers (media.derivation_of, transcript.derived_from)
-     share one existence-check pass. Missing targets register in the
-     broken-link registry as backlog (not errors).
-  8. — reserved — (position preserved so check-number references #9–#15
-     across docs and inline comments stay stable)
-  9. Table cell word budget (soft warning)
- 10. Finding cross-reference consistency (entities listed must link back)
- 11. Verbatim-quote verification — for every '> blockquote' followed by a
-     verification block claiming '✅ Confirmed — verified verbatim',
-     extract the cited source file to plaintext and confirm the quote
-     appears as a substring (with whitespace/dash/quote-style
-     normalization). Errors if the quote is not present.
 
-     Requires `pdftotext` for PDF sources (poppler-utils on Linux).
-     HTML/TXT sources are read directly.
- 12. Manifest checksum integrity — for every archived entry in
-     sources/manifest.yaml, recompute SHA256 and compare to stored value.
-     Errors on: file missing on disk, missing sha256 field when required,
-     checksum mismatch (silent corruption / substitution). Run once per
-     validator invocation, before the per-node checks.
- 13. Governance-file frontmatter — every .md file under meta/ must carry
-     id / type / schema_version / created; schema_version must be in
-     schema.compatible_with; id must match file path. Templates routed
-     through a placeholder-aware regex path because their `{{slug}}` /
-     `{{today}}` values can't be YAML-parsed cleanly.
- 14. conditionally_required dispatcher — schema-driven enforcement of
-     `types.{T}.conditionally_required` entries. Condition grammar:
-     `<field> == <literal>`, `<field> is set`. Keys route to frontmatter-
-     field presence+vocabulary checks (lowercase names) or section-
-     presence checks (Title Case names). Replaces earlier hardcoded
-     archival_status / Media Versioning rules.
- 15. Chronological-ordering check — every markdown table with a date-
-     bearing column (Date / Date / Time / Period / Start / Date Captured /
-     Date Released / Dates) is ordered earliest-first. Range cells take
-     the leftmost date; missing month / day default to 0 so
-     '2004' < '2004-11' < '2004-11-14'. Rows in disorder error; cells
-     with unparseable date strings warn. Universal discipline across
-     every node type and section. Upgrades the schema's
-     `chronological: true` flag from descriptive-only to enforced.
+  Frontmatter — required fields + valid type/kind/archetype/status
+
+  id-path-match — id frontmatter matches file path
+
+  Required sections — per type + kind/archetype (+ corpus addendum)
+
+  Confirmed/Flagged split — subsection splits (Flagged omitted when empty)
+
+  Quote-verification blocks — in sections that require them
+
+  Background prose-only — person nodes
+
+  Internal-link resolution — body `[`/path`]` links + frontmatter
+  node-path pointers (media.derivation_of, transcript.derived_from)
+  share one existence-check pass. Missing targets register in the
+  broken-link registry as backlog (not errors).
+
+  Table-cell word-budget — soft warning
+
+  Finding cross-ref consistency — entities listed must link back
+
+  Verbatim-quote check — for every '> blockquote' followed by a
+  verification block claiming '✅ Confirmed — verified verbatim',
+  extract the cited source file to plaintext and confirm the quote
+  appears as a substring (with whitespace/dash/quote-style
+  normalization). Errors if the quote is not present. Requires
+  `pdftotext` for PDF sources (poppler-utils on Linux); HTML/TXT
+  sources are read directly.
+
+  Manifest-checksum check — for every archived entry in
+  sources/manifest.yaml, recompute SHA256 and compare to stored value.
+  Errors on: file missing on disk, missing sha256 field when required,
+  checksum mismatch (silent corruption / substitution). Run once per
+  validator invocation, before the per-node checks.
+
+  Governance-frontmatter check — every .md file under meta/ must carry
+  id / type / schema_version / created; schema_version must be in
+  schema.compatible_with; id must match file path. Templates routed
+  through a placeholder-aware regex path because their `{{slug}}` /
+  `{{today}}` values can't be YAML-parsed cleanly.
+
+  Conditionally-required check — schema-driven enforcement of
+  `types.{T}.conditionally_required` entries. Condition grammar:
+  `<field> == <literal>`, `<field> is set`. Keys route to frontmatter-
+  field presence+vocabulary checks (lowercase names) or section-
+  presence checks (Title Case names). Replaces earlier hardcoded
+  archival_status / Media Versioning rules.
+
+  Chronological-ordering check — every markdown table with a date-
+  bearing column (Date / Date / Time / Period / Start / Date Captured /
+  Date Released / Dates) is ordered earliest-first. Range cells take
+  the leftmost date; missing month / day default to 0 so
+  '2004' < '2004-11' < '2004-11-14'. Rows in disorder error; cells
+  with unparseable date strings warn. Universal discipline across
+  every node type and section. Upgrades the schema's
+  `chronological: true` flag from descriptive-only to enforced.
 
 Usage:
   validate.py                    # all nodes
   validate.py PATH               # single node
   validate.py --quiet            # errors only
+
+Cross-referencing: other docs / scripts refer to these checks by topic
+name (e.g., `the verbatim-quote check`, `the prose-drift check` in
+validate-research.py). See meta/conventions.md "Check naming".
 """
 
 import argparse
@@ -174,7 +189,7 @@ def count_quote_blocks_and_verifications(section_text):
 
 
 # =============================================================================
-# Chronological-ordering check (check #15)
+# Chronological-ordering check
 #
 # Universal discipline: any table with a date-bearing column is ordered
 # earliest-first. Applies across every node type and every section.
@@ -306,7 +321,7 @@ def check_chronological_tables(text, rel):
 
 
 # =============================================================================
-# Source-integrity checks — manifest checksum verification (check #12)
+# Source-integrity checks — manifest-checksum check
 # =============================================================================
 
 def compute_sha256(file_path):
@@ -495,7 +510,7 @@ def check_manifest_archive_status():
 
 
 # =============================================================================
-# Verbatim quote verification (check #11) — against archived source files
+# Verbatim-quote check — against archived source files
 # =============================================================================
 
 _source_text_cache = {}  # Path -> extracted plain text (or None on failure)
@@ -941,7 +956,7 @@ def validate_node(path, schema):
     # Verbatim quote verification — critical check (fix from 2026-04-17 pilot failure)
     issues.extend(check_verbatim_quotes(path, text, rel))
 
-    # Chronological ordering on date-bearing tables (check #15)
+    # Chronological-ordering check on date-bearing tables
     issues.extend(check_chronological_tables(text, rel))
 
     # Internal link resolution — body links + frontmatter node-path
@@ -1201,14 +1216,14 @@ def main():
     all_issues = []
     broken_links = defaultdict(set)
 
-    # Source-integrity backstop (check #12). Runs once per invocation, before
+    # Source-integrity backstop (manifest-checksum check). Runs once per invocation, before
     # per-node checks. "Do I trust my sources?" is a precondition for
     # interpreting node content; a checksum mismatch means downstream quote
     # verifications may be validating against altered source material.
     all_issues.extend(check_manifest_checksums())
     all_issues.extend(check_manifest_archive_status())
 
-    # Governance-file validation (check #13). Every .md under meta/ carries
+    # Governance-file validation (governance-frontmatter check). Every .md under meta/ carries
     # id / type / schema_version / created frontmatter; templates also have
     # a placeholder-shape id. Runs regardless of --path argument because
     # governance files apply to all nodes, not a specific target. Template
