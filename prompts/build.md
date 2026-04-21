@@ -802,7 +802,7 @@ Until the per-type renderer sub-phase (F.6 → F.7) ships:
 2. Hand-author the node body per `meta/conventions.md`, drawing
    exclusively from artifact entries (no training-knowledge claims)
 3. `validate.py` passes; run `associate.py` to regenerate Associated Nodes
-4. Run `bash tests/pre-commit.sh` — all six gates green before commit
+4. Run `bash tests/pre-commit.sh` — all five gates green before commit
 
 `review-coverage.py` currently skips unsupported artifacts with a
 notice; full coverage review unlocks for each type as its Phase II

@@ -82,7 +82,6 @@ created: {{today}}
      `[`/transcripts/some-node`]` or `[`/documents/some-node`]`. See
      CONTRIBUTING.md §"Quote verification blocks" and conventions.md
      for the canonical shape. -->
--->
 
 ### Direct Observations
 

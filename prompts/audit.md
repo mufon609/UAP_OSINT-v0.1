@@ -79,7 +79,7 @@ Typical audit-driven iteration:
 4. Regenerate the node (renderer-supported types):
    `python3 scripts/build-from-research.py research/{slug}.yaml`
 5. Re-run `review-coverage.py` — must pass all four checks
-6. Run the full pre-commit chain — all six gates green
+6. Run the full pre-commit chain — all five gates green
 
 Reference examples:
 - Fravor person i0 → i1 audit (commit `f67f6e8`) — tightened four

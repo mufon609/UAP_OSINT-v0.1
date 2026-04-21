@@ -184,7 +184,7 @@ dry-run — regenerate instead of hand-editing the node.
 bash tests/pre-commit.sh
 ```
 
-All six gates green. Refresh build state if the iteration changed
+All five gates green. Refresh build state if the iteration changed
 node status:
 
 ```
