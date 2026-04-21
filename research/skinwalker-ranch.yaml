@@ -4,14 +4,32 @@ schema_version: 1
 target_node: locations/skinwalker-ranch
 status: active
 created: '2026-04-20'
-last_iteration: i0
+last_iteration: i1
 description: 'Skinwalker Ranch — also called Sherman Ranch — is a private cattle ranch in Uintah County, Utah, nestled beneath a red-rock ridge between Fort Duchesne and Randlett. Under four documented owners: the Myers family (Kenneth and Edith Myers, c. 1933 to 1994), Terry and Gwen Sherman (1994 to 1996), Robert Bigelow (1996 to 2016), and Brandon Fugal via Adamantium Real Estate LLC (2016 to present).
 
 
   The Shermans made national news in July 1996 by going public with bizarre tales of anomalous activity on their 480-acre ranch. Zack Van Eyck of the Deseret News reported the family witnessed UFOs, cattle mutilations, unusual soil impressions, and circles of flattened grass in a pasture. In September 1996, Bigelow bought the ranch for about $200,000 and the research was conducted by the National Institute for Discovery Science, which Bigelow formed last October. Terry Sherman was employed by Bigelow to maintain the ranch under a nondisclosure agreement.
 
 
-  Bigelow Aerospace Advanced Space Studies (BAASS) later held the Defense Intelligence Agency AAWSAP contract from 2008 to 2012, and the ranch served as a site of continued research through that program. In 2016, Utah real estate mogul Brandon Fugal bought the ranch; his identity as owner was revealed publicly in March 2020. Uintah County Real Property Owner Information records show Adamantium Real Estate LLC as current owner of seven parcels in Sections 4, 5, and 33 of T2S and T3S R1E USM — 480.19 ACRES combined.'
+  Bigelow Aerospace Advanced Space Studies (BAASS) later held the Defense Intelligence Agency AAWSAP contract from 2008 to 2012, and the ranch served as a site of continued research through that program. In 2016, Utah real estate mogul Brandon Fugal bought the ranch; his identity as owner was revealed publicly in March 2020.
+
+
+  Uintah County Real Property Owner Information records show Adamantium Real Estate LLC as current owner of seven parcels combined 480.19 ACRES, all with mailing address 6440 S MILLROCK DR STE 500, SALT LAKE CITY, UT 84121:
+
+
+  - Serial 150040001, Account 126868: 5998 E 3000 S INDEPENDENCE, 162.23 ACRES (homesite — E1/2 W1/2 SEC 4 T3S R1E USM; structures built 1928 and 1996)
+
+  - Serial 150050001, Account 126865: 5376 E 3000 S INDEPENDENCE, 42.68 ACRES (NE/4 NE/4 Lot 1 SEC 5 T3S R1E USM)
+
+  - Serial 150050002, Account 126863: 5134 E 3000 S INDEPENDENCE, 42.79 ACRES (NW 1/4 NE 1/4 Lot 2 SEC 5 T3S R1E USM)
+
+  - Serial 150050004, Account 126864: 3400 S 5500 E INDEPENDENCE, 40 ACRES (VACANT LAND — SE 1/4 NE 1/4 SEC 5 T3S R1E USM)
+
+  - Serial 150040002, Account 126866: 5624 E 3170 S INDEPENDENCE, 82.49 ACRES (W/2 NW/4 Lot 4 SW/4 NW/4 SEC 4 T3S R1E USM)
+
+  - Serial 150040003, Account 126867: 3610 S 6250 E INDEPENDENCE, 30 ACRES (N 1/2 NW 1/4 SE 1/4 N 1/2 S 1/2 NW 1/4 SE 1/4 SEC 4 T3S R1E USM)
+
+  - Serial 140340003, Account 126869: 6351 E 3000 S FT DUCHESNE, 80 ACRES (S1/2 SE1/4 SEC 33 T2S R1E USM)'
 primary_sources:
 - path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
   format: pdf
@@ -151,6 +169,62 @@ quotes:
     path: news/deseret-frequent-fliers-19960630.html
     location: Terry Sherman quote, Zack Van Eyck article
   significance: Terry Sherman's own contemporaneous framing of what he witnessed during 1994-1996 ownership — primary source (quote excerpted; full source sentence concludes with attribution to Terry Sherman by Zack Van Eyck)
+- id: q11
+  added_date: '2026-04-20'
+  added_by_iteration: i1
+  text: NE/4 NE/4 (LOT 1), SECTION 5, T3S, R1E, USM. CONT 42.68 ACRES
+  source:
+    path: government/uintah-parcel-150050001-20260420.pdf
+    location: Taxing Description
+  significance: Parcel 150050001 — 42.68-acre NE/4 NE/4 (Lot 1) Sec 5 T3S R1E USM at 5376 E 3000 S, Independence
+- id: q12
+  added_date: '2026-04-20'
+  added_by_iteration: i1
+  text: NW 1/4 NE 1/4; (LOT 2) SEC 5, T3S, R1E, USM, 42.79 ACRES
+  source:
+    path: government/uintah-parcel-150050002-20260420.pdf
+    location: Taxing Description
+  significance: Parcel 150050002 — 42.79-acre NW 1/4 NE 1/4 (Lot 2) Sec 5 T3S R1E USM at 5134 E 3000 S, Independence
+- id: q13
+  added_date: '2026-04-20'
+  added_by_iteration: i1
+  text: SE 1/4 NE 1/4; SEC 5, T3S, R1E, USM 40 ACRES
+  source:
+    path: government/uintah-parcel-150050004-20260420.pdf
+    location: Taxing Description
+  significance: Parcel 150050004 — 40-acre SE 1/4 NE 1/4 Sec 5 T3S R1E USM at 3400 S 5500 E, Independence (VACANT LAND)
+- id: q14
+  added_date: '2026-04-20'
+  added_by_iteration: i1
+  text: E1/2 W1/2; SEC. 4, T3S, R1E, USM. 162.23 ACRES
+  source:
+    path: government/uintah-parcel-150040001-20260420.pdf
+    location: Taxing Description
+  significance: Parcel 150040001 (homesite) — 162.23-acre E1/2 W1/2 Sec 4 T3S R1E USM at 5998 E 3000 S, Independence; structures built 1928 and 1996
+- id: q15
+  added_date: '2026-04-20'
+  added_by_iteration: i1
+  text: W/2 NW/4 (LOT 4; SW/4 NW/4) SECTION 4, T3S, R1E, USM. CONT 82.49 ACRES
+  source:
+    path: government/uintah-parcel-150040002-20260420.pdf
+    location: Taxing Description
+  significance: Parcel 150040002 — 82.49-acre W/2 NW/4 (Lot 4; SW/4 NW/4) Sec 4 T3S R1E USM at 5624 E 3170 S, Independence
+- id: q16
+  added_date: '2026-04-20'
+  added_by_iteration: i1
+  text: N 1/2 NW 1/4 SE 1/4, N 1/2 S 1/2 NW 1/4 SE 1/4, SEC 4, T3S, R1E, USM. ACRES 30
+  source:
+    path: government/uintah-parcel-150040003-20260420.pdf
+    location: Taxing Description
+  significance: Parcel 150040003 — 30-acre N 1/2 NW 1/4 SE 1/4 + N 1/2 S 1/2 NW 1/4 SE 1/4 Sec 4 T3S R1E USM at 3610 S 6250 E, Independence
+- id: q17
+  added_date: '2026-04-20'
+  added_by_iteration: i1
+  text: S1/2 SE1/4; SEC 33, T2S, R1E, USM 80 ACRES.
+  source:
+    path: government/uintah-parcel-140340003-20260420.pdf
+    location: Taxing Description
+  significance: Parcel 140340003 — 80-acre S1/2 SE1/4 Sec 33 T2S R1E USM at 6351 E 3000 S, Ft Duchesne (northernmost parcel; only one in T2S)
 claims: []
 entities_referenced:
 - id: e1
@@ -333,8 +407,8 @@ research_gaps:
 - id: rg2
   added_date: '2026-04-20'
   added_by_iteration: i0
-  statement: Exact Bigelow-to-Adamantium deed recording number and date (circa April 2016)
-  methodology: Query Uintah County Recorder's office for ADAMANTIUM REAL ESTATE 2016 deed recordings; archive the 7 parcel transfer documents
+  statement: Exact Uintah County Recorder deed recording number(s) and date(s) for the Bigelow-to-Adamantium transfer (circa April 2016) — the 7 assessor-level parcel records are archived (Serials 150040001-3, 150050001/2/4, 140340003) but the underlying recorded deed documents remain unarchived
+  methodology: Query Uintah County Recorder's office (separate from Assessor) for ADAMANTIUM REAL ESTATE 2016 grantee index entries; archive the recorded deed(s) by entry number
   resolved: false
 - id: rg3
   added_date: '2026-04-20'
@@ -636,3 +710,17 @@ iterations:
   summary: 'F.6c pilot — first end-to-end Phase I population of a location research artifact under the F.6b renderer pipeline. 15 archived primary sources span all four ownership eras: Myers 1933-1994 (Frank Warren 2020), Sherman 1994-1996 (Deseret News June 1996), Bigelow/NIDS 1996-2016 (aliendave October 1996 + NIDS wayback 2002 + Shellenberger 2024 + Fox40 2021), AAWSAP 2008-2012 (AAWSAP contract + Shellenberger), Fugal 2016-present (Vice 2020 + 7 Uintah County parcel records 2026). Populated document_intrinsic (7 location keys), description (3 paragraphs source-matched), 10 verbatim quotes (each verified against its scratch file), 19 entities_referenced, 4 naming_quirks (including the 480-vs-512 acre resolution), 8 research_gaps (including 2 deed-record-archive paths and the USPTO trademark archive path), 4 rumors (including 512-acre secondary-source-repeated figure contradicted by primary Uintah records), 4 ownership_timeline entries, 3 uap_scope_activity entries (NIDS + BAASS/AAWSAP + Fugal-era), 12 location_relationships. claims empty per current F.6 discipline.'
   entries_added: []
   entries_modified: []
+- id: i1
+  date: '2026-04-21'
+  trigger: audit-correction
+  summary: 'Audit correction surfaced by user review of the F.6c i0 pilot: per-parcel primary-source detail from the 7 archived Uintah County Real Property Owner Information records was only vaguely aggregated into description prose ("seven parcels ... Sections 4, 5, and 33") rather than explicitly listed. Only 1 of 7 parcel serials and 0 of 7 addresses appeared anywhere in the rendered node body at i0. This iteration surfaces all seven parcels by Serial, Account, property address, acreage, and Taxing Description — both as expanded description prose and as 7 new verbatim Key Passages quotes (q11-q17) each substring-verified against its parcel PDF scratch file. Also narrowed research_gap rg2 from "Bigelow-to-Adamantium deed recording number" to acknowledge the Uintah County Assessor records are now archived; the unresolved portion is the Recorder-office deed recording numbers (separate office).'
+  entries_added:
+  - q11
+  - q12
+  - q13
+  - q14
+  - q15
+  - q16
+  - q17
+  entries_modified:
+  - rg2

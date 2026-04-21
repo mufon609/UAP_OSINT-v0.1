@@ -29,7 +29,17 @@ Skinwalker Ranch — also called Sherman Ranch — is a private cattle ranch in 
 
 The Shermans made national news in July 1996 by going public with bizarre tales of anomalous activity on their 480-acre ranch. Zack Van Eyck of the Deseret News reported the family witnessed UFOs, cattle mutilations, unusual soil impressions, and circles of flattened grass in a pasture. In September 1996, Bigelow bought the ranch for about $200,000 and the research was conducted by the National Institute for Discovery Science, which Bigelow formed last October. Terry Sherman was employed by Bigelow to maintain the ranch under a nondisclosure agreement.
 
-Bigelow Aerospace Advanced Space Studies (BAASS) later held the Defense Intelligence Agency AAWSAP contract from 2008 to 2012, and the ranch served as a site of continued research through that program. In 2016, Utah real estate mogul Brandon Fugal bought the ranch; his identity as owner was revealed publicly in March 2020. Uintah County Real Property Owner Information records show Adamantium Real Estate LLC as current owner of seven parcels in Sections 4, 5, and 33 of T2S and T3S R1E USM — 480.19 ACRES combined.
+Bigelow Aerospace Advanced Space Studies (BAASS) later held the Defense Intelligence Agency AAWSAP contract from 2008 to 2012, and the ranch served as a site of continued research through that program. In 2016, Utah real estate mogul Brandon Fugal bought the ranch; his identity as owner was revealed publicly in March 2020.
+
+Uintah County Real Property Owner Information records show Adamantium Real Estate LLC as current owner of seven parcels combined 480.19 ACRES, all with mailing address 6440 S MILLROCK DR STE 500, SALT LAKE CITY, UT 84121:
+
+- Serial 150040001, Account 126868: 5998 E 3000 S INDEPENDENCE, 162.23 ACRES (homesite — E1/2 W1/2 SEC 4 T3S R1E USM; structures built 1928 and 1996)
+- Serial 150050001, Account 126865: 5376 E 3000 S INDEPENDENCE, 42.68 ACRES (NE/4 NE/4 Lot 1 SEC 5 T3S R1E USM)
+- Serial 150050002, Account 126863: 5134 E 3000 S INDEPENDENCE, 42.79 ACRES (NW 1/4 NE 1/4 Lot 2 SEC 5 T3S R1E USM)
+- Serial 150050004, Account 126864: 3400 S 5500 E INDEPENDENCE, 40 ACRES (VACANT LAND — SE 1/4 NE 1/4 SEC 5 T3S R1E USM)
+- Serial 150040002, Account 126866: 5624 E 3170 S INDEPENDENCE, 82.49 ACRES (W/2 NW/4 Lot 4 SW/4 NW/4 SEC 4 T3S R1E USM)
+- Serial 150040003, Account 126867: 3610 S 6250 E INDEPENDENCE, 30 ACRES (N 1/2 NW 1/4 SE 1/4 N 1/2 S 1/2 NW 1/4 SE 1/4 SEC 4 T3S R1E USM)
+- Serial 140340003, Account 126869: 6351 E 3000 S FT DUCHESNE, 80 ACRES (S1/2 SE1/4 SEC 33 T2S R1E USM)
 
 ---
 
@@ -176,6 +186,90 @@ Bigelow Aerospace Advanced Space Studies (BAASS) later held the Defense Intellig
 
 ---
 
+### Parcel 150050001 — 42.68-acre NE/4 NE/4 (Lot 1) Sec 5 T3S R1E USM at 5376 E 3000 S, Independence
+
+> NE/4 NE/4 (LOT 1), SECTION 5, T3S, R1E, USM. CONT 42.68 ACRES
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/uintah-parcel-150050001-20260420.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | Taxing Description |
+
+---
+
+### Parcel 150050002 — 42.79-acre NW 1/4 NE 1/4 (Lot 2) Sec 5 T3S R1E USM at 5134 E 3000 S, Independence
+
+> NW 1/4 NE 1/4; (LOT 2) SEC 5, T3S, R1E, USM, 42.79 ACRES
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/uintah-parcel-150050002-20260420.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | Taxing Description |
+
+---
+
+### Parcel 150050004 — 40-acre SE 1/4 NE 1/4 Sec 5 T3S R1E USM at 3400 S 5500 E, Independence (VACANT LAND)
+
+> SE 1/4 NE 1/4; SEC 5, T3S, R1E, USM 40 ACRES
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/uintah-parcel-150050004-20260420.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | Taxing Description |
+
+---
+
+### Parcel 150040001 (homesite) — 162.23-acre E1/2 W1/2 Sec 4 T3S R1E USM at 5998 E 3000 S, Independence; structures built 1928 and 1996
+
+> E1/2 W1/2; SEC. 4, T3S, R1E, USM. 162.23 ACRES
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/uintah-parcel-150040001-20260420.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | Taxing Description |
+
+---
+
+### Parcel 150040002 — 82.49-acre W/2 NW/4 (Lot 4; SW/4 NW/4) Sec 4 T3S R1E USM at 5624 E 3170 S, Independence
+
+> W/2 NW/4 (LOT 4; SW/4 NW/4) SECTION 4, T3S, R1E, USM. CONT 82.49 ACRES
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/uintah-parcel-150040002-20260420.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | Taxing Description |
+
+---
+
+### Parcel 150040003 — 30-acre N 1/2 NW 1/4 SE 1/4 + N 1/2 S 1/2 NW 1/4 SE 1/4 Sec 4 T3S R1E USM at 3610 S 6250 E, Independence
+
+> N 1/2 NW 1/4 SE 1/4, N 1/2 S 1/2 NW 1/4 SE 1/4, SEC 4, T3S, R1E, USM. ACRES 30
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/uintah-parcel-150040003-20260420.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | Taxing Description |
+
+---
+
+### Parcel 140340003 — 80-acre S1/2 SE1/4 Sec 33 T2S R1E USM at 6351 E 3000 S, Ft Duchesne (northernmost parcel; only one in T2S)
+
+> S1/2 SE1/4; SEC 33, T2S, R1E, USM 80 ACRES.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/uintah-parcel-140340003-20260420.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | Taxing Description |
+
+---
+
 ## Relationships
 
 ### Confirmed
@@ -238,7 +332,7 @@ Bigelow Aerospace Advanced Space Studies (BAASS) later held the Defense Intellig
 ## Open Questions / Research Gaps
 
 - [ ] Exact Uintah County deed recording number and date for the Bigelow-to-Sherman transfer (September 1996) — Query Uintah County Recorder's office for deed recording index 1996 ADAMANTIUM, BIGELOW, or SHERMAN; archive the original recorded deed document
-- [ ] Exact Bigelow-to-Adamantium deed recording number and date (circa April 2016) — Query Uintah County Recorder's office for ADAMANTIUM REAL ESTATE 2016 deed recordings; archive the 7 parcel transfer documents
+- [ ] Exact Uintah County Recorder deed recording number(s) and date(s) for the Bigelow-to-Adamantium transfer (circa April 2016) — the 7 assessor-level parcel records are archived (Serials 150040001-3, 150050001/2/4, 140340003) but the underlying recorded deed documents remain unarchived — Query Uintah County Recorder's office (separate from Assessor) for ADAMANTIUM REAL ESTATE 2016 grantee index entries; archive the recorded deed(s) by entry number
 - [ ] NIDS published research reports (1996-2004) — primary-source archival — Identify and archive NIDS reports published during the 1996-2004 research period; the 2002 NIDS wayback capture shows web publication was in scope but the reports themselves are not currently archived in this repository
 - [ ] Sherman family nondisclosure agreement full text — 1996 agreement with Bigelow — Unlikely to ever be public; Sherman-era primary research limited to pre-NDA sources (Deseret 1996 articles June-December)
 - [ ] BAASS internal Skinwalker investigation documents (2008-2012) — FOIA the DIA for AAWSAP deliverables involving the ranch; cross-reference Shellenberger 2024 testimony footnotes to Skinwalkers at the Pentagon (2021) for specific document references
