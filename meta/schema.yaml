@@ -828,7 +828,13 @@ types:
       #     the claim. Renders as a `## Primary-Source Contradictions`
       #     section on the node body — the contradiction itself is an
       #     evidentiary finding investigators should see.
-      # observed_sources: list of descriptions — where the rumor circulates
+      # observed_sources: list of descriptions — where the rumor
+      #   circulates. For disputed rumors, renders as the "Circulates
+      #   in" line in the contradictions section.
+      # note: for primary-source-disputed rumors this is the
+      #   primary-source refutation text (renders as "Primary-source
+      #   refutation:"). For not-primary-source-established rumors it's
+      #   contributor context — artifact-only, never renders.
 
     timeline_entry:
       required: [date, event, source]
