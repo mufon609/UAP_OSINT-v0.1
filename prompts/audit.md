@@ -28,14 +28,16 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    warning set. Under the durable policy
    (`feedback_check16_warnings_must_resolve.md`):
    - **Free-prose synthesis fields** (`description`, `background`,
-     `uap_relevance`, `credibility_notes`) — zero warnings is the
+     `uap_relevance`, `credibility_notes`) and **per-entry `.note`
+     fields** + `vouching_chain.attestation` — zero warnings is the
      target. Each unmatched token either resolves to source-matched
      prose OR gets captured as structured evidentiary data (naming
      quirk, rumor, research_gap).
-   - **Timeline event cells** — exempt from cosmetic source-morphology
-     warnings (active/passive voice, honorific swaps) when the
-     source-match edit reduces readability without adding precision.
-     Real factual drift in timeline cells still requires correction.
+   - **Structural label cells** (role titles, short relationship
+     descriptors, `timeline[].event`, `use_status`, `activity`) are
+     not scanned by check #16 — token-matching is a poor instrument
+     for compact multi-source labels. Fabrication in these cells is
+     Phase III semantic-review territory.
 4. **Contradiction markers** — `❌ Contradiction` used where positions
    contradict and at least one side has primary-source evidence;
    `⚠ Disputed — unknown` used only where neither side has

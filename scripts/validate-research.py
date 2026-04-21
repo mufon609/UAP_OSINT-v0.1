@@ -1776,9 +1776,27 @@ STOPWORDS = {
     "take", "took", "taking", "taken",
 }
 
-# Fields to check, keyed by target_node type. Top-level prose fields
-# are pooled against the union of all primary_sources. Per-entry prose
-# fields use each entry's own source.path.
+# Fields to check, keyed by target_node type.
+#
+# Scoping principle: check #16 is built for CONTRIBUTOR SYNTHESIS PROSE —
+# paragraph-length or sentence-length fields where a contributor is
+# narrating from one or more primary sources and can introduce drift
+# (dropped qualifiers, synonym rephrase, unstated premise, fabricated
+# fact). The check tokenizes the prose and warns on any significant
+# token not present in the cited source.
+#
+# The check is NOT built for STRUCTURAL LABEL CELLS — compact
+# navigational metadata like role titles, short relationship
+# descriptors, or timeline event cells that aggregate multi-source
+# repo understanding into 3–10-word labels. Those cells routinely
+# use repo-canonical naming, cross-reference tokens, and dates that
+# appear in no single cited source; the token-match premise fails
+# and warnings become noise. Fabrication in label cells is Phase III
+# semantic-review territory, not token-matching territory.
+#
+# Top-level prose fields are pooled against the union of all
+# primary_sources. Per-entry prose fields use each entry's own
+# source.path.
 PROSE_FIELDS_BY_TYPE = {
     "person": [
         "background",
@@ -1833,75 +1851,52 @@ PROSE_FIELDS_BY_TYPE = {
 
 # Per-entry prose fields. Shape: (list_key, field_name_within_entry).
 # Each entry's source.path provides the token pool.
+#
+# Scope limited to per-entry SYNTHESIS fields: `note` fields (contributor
+# analytical prose on a structured entry) and a few sentence-length
+# attestation/paraphrase fields (vouching_chain.attestation). Structural
+# label cells (role titles, short relationship descriptors, timeline
+# event labels, short factual descriptors like use_status / activity /
+# contract subject) are deliberately NOT in scope — see the scoping
+# principle in the PROSE_FIELDS_BY_TYPE header comment above.
 PROSE_ENTRY_FIELDS_BY_TYPE = {
     "person": [
-        ("timeline",             "event"),
-        ("affiliations",         "role"),
-        ("relationships",        "relationship"),
         ("corroboration_items",  "note"),
-        ("program_involvement",  "role"),
-        ("publication_record",   "beat"),
         ("vouching_chain",       "attestation"),
     ],
     "event": [
-        ("timeline",             "event"),
-        ("participants",         "role"),
         ("corroboration_items",  "note"),
         ("witnesses_testimony",  "note"),
     ],
     "transcript": [
-        # speakers[].role is contributor-authored contextual vocabulary
-        # (Witness / Chair / Committee Member / Host / etc.) — scanned
-        # against the entry's own source.path.
-        ("speakers", "role"),
+        # Transcript per-entry synthesis: no fields currently in scope.
+        # speakers[].role is a structural label (Witness / Chair / etc.)
+        # and excluded per the scoping principle.
     ],
     "media": [
         # media_versioning[].note — contributor synthesis on the
         # analytical significance of a parent/derivative aspect
-        # difference. Scanned against the entry's own source.path
-        # token pool (the primary source attesting the difference).
+        # difference. Scanned against the entry's own source.path.
         ("media_versioning", "note"),
     ],
     "organization": [
-        # timeline[].event — dated fact descriptions (founding, reorg,
-        # leadership transition, contract, incident).
-        ("timeline",          "event"),
-        # key_personnel[].role — free-text role at the org (e.g.,
-        # "Founding Director", "Acting Director", "Chief of Staff").
-        # Scanned against the entry's source.path.
-        ("key_personnel",     "role"),
         # key_personnel[].note — optional contributor synthesis on the
         # personnel entry. Scanned against source.path.
         ("key_personnel",     "note"),
         # org_relationships[].note — contributor synthesis on the
         # relationship. Scanned against source.path.
         ("org_relationships", "note"),
-        # contracts[].subject — short descriptor of the contract's
-        # stated purpose. Scanned against source.path.
-        ("contracts",         "subject"),
         # contracts[].note — contributor synthesis. Scanned against
         # source.path.
         ("contracts",         "note"),
     ],
     "location": [
-        # ownership_timeline[].use_status — one-line description of how
-        # the property was used during the ownership period. Scanned
-        # against the entry's source.path token pool.
-        ("ownership_timeline",     "use_status"),
         # ownership_timeline[].note — optional contributor synthesis on
         # the ownership transition. Scanned against source.path.
         ("ownership_timeline",     "note"),
-        # uap_scope_activity[].activity — one-line description of the
-        # institutional UAP-scope activity conducted at the location.
-        # Scanned against source.path.
-        ("uap_scope_activity",     "activity"),
         # uap_scope_activity[].note — optional contributor synthesis.
         # Scanned against source.path.
         ("uap_scope_activity",     "note"),
-        # location_relationships[].relationship — short description of
-        # the connection (e.g., "Current owner", "1996-2004 investigator").
-        # Scanned against source.path.
-        ("location_relationships", "relationship"),
         # location_relationships[].note — optional contributor synthesis.
         # Scanned against source.path.
         ("location_relationships", "note"),

@@ -25,11 +25,13 @@ doing anything:
    directory — typically `~/.claude/projects/<sanitized-project-path>/memory/`).
    Apply the durable policies logged there: impartial validator
    reporting (no category-tuned thresholds); resolve every check #16
-   warning structurally on free-prose synthesis fields (`description`,
-   `background`, `uap_relevance`, `credibility_notes`) — zero-warnings
-   target with timeline-cell exemption for cosmetic source-morphology
-   warnings; never set count targets / ranges when scoping artifact
-   list population — let the source drive density.
+   warning structurally on scoped fields (top-level free-prose:
+   `description`, `background`, `uap_relevance`, `credibility_notes`;
+   per-entry synthesis: `.note` fields + `vouching_chain.attestation`)
+   — zero-warnings target. Structural label cells (role titles,
+   timeline events, short relationship descriptors) are not scanned;
+   never set count targets / ranges when scoping artifact list
+   population — let the source drive density.
 
 Then run the health check:
 

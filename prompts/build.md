@@ -492,20 +492,21 @@ warning requires real resolution, not synthesis-acceptance:
   as structured evidentiary data (naming_quirks, rumors, a
   research_gap, a timeline entry, a claim). Rationalizing warnings as
   "legitimate synthesis vocabulary" defeats the check.
-- **Timeline event cells** (`timeline[].event`) — exempt from cosmetic
-  source-morphology warnings (active/passive voice swaps, honorific
-  substitutions) when the source-match edit reduces readability
-  without adding precision. Real factual drift in a timeline cell
-  (premise shift, fabrication, mis-attribution) still requires
-  correction.
-- **Other per-entry label fields** — contextual; consult user when
-  unsure whether the timeline-style exemption applies.
+- **Per-entry `.note` fields** + `vouching_chain.attestation` — zero
+  warnings is the target, same resolution paths as free-prose fields.
+  These are sentence-length contributor synthesis attached to a
+  structured entry; drift signal is real.
+- **Structural label cells** (role titles, short relationship
+  descriptors, `timeline[].event`, `use_status`, `activity`, etc.)
+  are NOT scanned by check #16. Token-matching is a poor instrument
+  for compact multi-source labels. Fabrication in these cells is
+  caught by Phase III semantic review, not check #16.
 
 Common categories of warnings and how they resolve:
 
 - **Word-form variants** (source "prepare" vs prose "preparing";
   source "flown" vs prose "flying") → rewrite to source morphology
-  on free-prose fields; exempt on timeline cells.
+  on in-scope fields (free-prose + `.note`).
 - **Repo-conventional naming** (source "Statement" vs prose "written
   testimony"; source "took" vs prose "captured") → rewrite to source
   vocabulary on free-prose fields. Repo filename conventions
