@@ -169,16 +169,16 @@ then paste `prompts/build.md` when you're ready to build a node.
 
 ### Returning contributor
 
-`CLAUDE.md` is the session-start checklist. Run the canonical health
-check, which chains all 5 gates:
+`CLAUDE.md` is the session-start checklist. Run the canonical all-gates
+health check:
 
 ```
 bash tests/pre-commit.sh
 ```
 
-(help-check / smoke / `validate.py` / `validate-research.py` /
-`build-state.py --check`). Then pick work from
-`meta/topic/research-queue.md`.
+This chains 5 gates: help-check / smoke / `validate.py` /
+`validate-research.py` / `build-state.py --check`. Then pick work
+from `meta/topic/research-queue.md`.
 
 ---
 
