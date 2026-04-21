@@ -208,15 +208,21 @@ for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-
     fi
 done
 
-# --- research artifact: location dispatch (F.6a) ---
+# --- research artifact: location dispatch (F.6a + F.6b) ---
 # Scaffolder must emit ownership_timeline: [], uap_scope_activity: [],
 # and location_relationships: [] on every location artifact. Validator
 # enforces the type-conditional presence: missing-required fires on
 # location artifacts if absent; absent-on-other-type fires on non-
 # location artifacts if present. No kind-conditional extensions (location
-# has no kinds). F.6b will extend this with build-from-research and
-# review-coverage; for now, a clean validate-research pass on an empty
-# scaffold is the pass criterion.
+# has no kinds).
+#
+# F.6b extends the fixture to exercise the full renderer pipeline:
+# build-from-research regenerates the node body (Overview fact-table
+# from document_intrinsic location keys + Description + Ownership
+# Timeline + UAP-Scope Activity + Relationships with Confirmed/Flagged
+# split). Post-build validate.py confirms structural integrity;
+# review-coverage runs the four checks (Coverage / Boundary /
+# Stub-linking / OQ dedup).
 for loc_target in "locations/__smoke-location"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$loc_target" 2>&1)"
     rc=$?
@@ -231,6 +237,23 @@ for loc_target in "locations/__smoke-location"; do
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $loc_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+    # Exercise F.6b renderer path
+    artifact_out="$(python3 scripts/build-from-research.py "research/$loc_slug.yaml" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("build-from-research $loc_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+    artifact_out="$(python3 scripts/review-coverage.py "research/$loc_slug.yaml" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("review-coverage $loc_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
         fail=$((fail + 1))
     else
         pass=$((pass + 1))

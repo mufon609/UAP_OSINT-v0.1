@@ -128,8 +128,9 @@ TYPE_DIRS = {
 }
 
 # Types this script can regenerate (D.3 scope: document;
-# F.1b adds person; F.2b adds event; F.3b adds transcript; F.4b adds media)
-SUPPORTED_TYPES = {"document", "person", "event", "transcript", "media", "organization"}
+# F.1b adds person; F.2b adds event; F.3b adds transcript; F.4b adds media;
+# F.5b adds organization; F.6b adds location)
+SUPPORTED_TYPES = {"document", "person", "event", "transcript", "media", "organization", "location"}
 
 # Archetype → archetype-specific artifact section name (person only)
 ARCHETYPE_SECTION = {
@@ -1833,6 +1834,209 @@ def render_body_organization(artifact, kind):
     return title + "\n" + joined
 
 
+# =============================================================================
+# Location renderer (F.6b)
+# =============================================================================
+
+# Row-label mapping for Overview fact-table rows. Keyed by
+# document_intrinsic field name; value is the display label. Locations
+# have no kinds (unlike organizations), so a single key set drives the
+# table. Rows emit only for populated fields — empty keys skipped.
+# Per-location convention lives in schema.yaml document_intrinsic comment.
+_LOCATION_OVERVIEW_LABELS = {
+    "full_name":                 "Full Name",
+    "alternate_names":           "Alternate Names",
+    "location_type":             "Location Type",
+    "geographic_location":       "Geographic Location",
+    "approximate_coordinates":   "Approximate Coordinates",
+    "ownership_history_summary": "Ownership History Summary",
+    "scope_significance":        "Scope Significance",
+}
+
+# Row render order. Matches meta/templates/location.md. `status` comes
+# from frontmatter (not document_intrinsic) and renders as the final row.
+_LOCATION_OVERVIEW_ORDER = [
+    "full_name",
+    "alternate_names",
+    "location_type",
+    "geographic_location",
+    "approximate_coordinates",
+    "ownership_history_summary",
+    "scope_significance",
+]
+
+
+def render_title_location(artifact):
+    """H1 title for location nodes. Prefers context_extrinsic.display_title,
+    falls back to document_intrinsic.full_name, then humanized slug."""
+    dm = artifact.get("document_intrinsic") or {}
+    ctx = artifact.get("context_extrinsic") or {}
+    slug = artifact["target_node"].split("/", 1)[1] if "/" in artifact["target_node"] else ""
+    title = (
+        ctx.get("display_title")
+        or dm.get("full_name")
+        or (slug and " ".join(w.capitalize() for w in slug.split("-")))
+        or ""
+    )
+    return f"# {title}\n"
+
+
+def render_location_overview(artifact, fm):
+    """Overview fact-table. 3-column layout (Field | Value | Source),
+    matching meta/templates/location.md. Source cell left empty —
+    document_intrinsic keys are attested by the union of primary_sources
+    on the artifact, not per-row. Status row comes from frontmatter."""
+    dm = artifact.get("document_intrinsic") or {}
+
+    rows = []
+    for key in _LOCATION_OVERVIEW_ORDER:
+        val = dm.get(key)
+        if val in (None, "", []):
+            continue
+        label = _LOCATION_OVERVIEW_LABELS.get(key, key)
+        if isinstance(val, list):
+            val = "; ".join(str(v) for v in val)
+        rows.append(f"| {label} | {val} |  |")
+
+    status = (fm or {}).get("status")
+    if status:
+        rows.append(f"| Status | {status} |  |")
+
+    lines = ["## Overview", "", "| Field | Value | Source |", "|---|---|---|"]
+    if rows:
+        lines.extend(rows)
+    else:
+        lines.append("|  |  |  |")
+    return "\n".join(lines) + "\n"
+
+
+def render_ownership_timeline(artifact):
+    """Ownership Timeline section — chronological table from
+    ownership_timeline[]. Columns: Period | Owner | Use / Status |
+    Source. Sorted ascending by period_start; check #15 enforces
+    chronological order on the rendered table."""
+    items = sort_by_date(
+        [e for e in (artifact.get("ownership_timeline") or []) if isinstance(e, dict)],
+        "period_start",
+    )
+    lines = ["## Ownership Timeline", "",
+             "| Period | Owner | Use / Status | Source |",
+             "|---|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |  |")
+        return "\n".join(lines) + "\n"
+    for e in items:
+        period = _format_period(e)
+        owner = e.get("owner") or ""
+        owner_path = e.get("owner_path")
+        if owner_path:
+            wrap = _wrap_path(owner_path)
+            owner_cell = f"{owner} {wrap}" if owner else wrap
+        else:
+            owner_cell = owner
+        lines.append(
+            f"| {period} | "
+            f"{owner_cell} | "
+            f"{e.get('use_status') or ''} | "
+            f"{(e.get('source') or {}).get('path') or ''} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+def render_uap_scope_activity(artifact):
+    """UAP-Scope Activity section — chronological table from
+    uap_scope_activity[]. Columns: Period | Activity | Source. When
+    actor_paths is populated, wraps are appended inline to the Activity
+    cell as `— [`/path1`]; [`/path2`]`. Sorted ascending by period_start;
+    check #15 enforces chronological order.
+
+    Section heading is topic-specific ("UAP-Scope"); for non-UAP
+    instances the template comment directs contributors to rename.
+    This renderer emits the UAP-specific heading since the toolkit's
+    current instance is UAP-focused per meta/topic/overview.md. Topic-
+    neutral renaming is a future toolkit-fork concern."""
+    items = sort_by_date(
+        [e for e in (artifact.get("uap_scope_activity") or []) if isinstance(e, dict)],
+        "period_start",
+    )
+    lines = ["## UAP-Scope Activity", "",
+             "| Period | Activity | Source |",
+             "|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |")
+        return "\n".join(lines) + "\n"
+    for e in items:
+        period = _format_period(e)
+        activity = e.get("activity") or ""
+        actors = e.get("actor_paths") or []
+        if actors:
+            actor_wraps = "; ".join(_wrap_path(p) for p in actors if p)
+            activity_cell = f"{activity} — {actor_wraps}" if activity else actor_wraps
+        else:
+            activity_cell = activity
+        lines.append(
+            f"| {period} | "
+            f"{activity_cell} | "
+            f"{(e.get('source') or {}).get('path') or ''} |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+def render_location_relationships(artifact):
+    """Relationships section — location_relationships[] with Confirmed /
+    Flagged split. Heterogeneous entity_path targets (any node type).
+    Distinct from person render_relationships (person-to-person) and
+    render_org_relationships (org-to-org) by allowing entity_path of
+    any type. Columns: Entity | Relationship | Node Link."""
+    items = [e for e in (artifact.get("location_relationships") or []) if isinstance(e, dict)]
+    confirmed = [e for e in items if not e.get("flagged")]
+    flagged   = [e for e in items if e.get("flagged")]
+
+    def row(e):
+        ep = _wrap_path(e.get("entity_path"))
+        return (
+            f"| {ep} | "
+            f"{e.get('relationship') or ''} | "
+            f"{ep} |"
+        )
+
+    lines = ["## Relationships", "", "### Confirmed", "",
+             "| Entity | Relationship | Node Link |",
+             "|---|---|---|"]
+    if confirmed:
+        for e in confirmed:
+            lines.append(row(e))
+    else:
+        lines.append("|  |  |  |")
+    if flagged:
+        lines += ["", "### Flagged", "",
+                  "| Entity | Relationship | Node Link |",
+                  "|---|---|---|"]
+        for e in flagged:
+            lines.append(row(e))
+    return "\n".join(lines) + "\n"
+
+
+def render_body_location(artifact, fm):
+    """Location-type body composition. Section order matches the
+    schema's required_sections: Overview → Description → Ownership
+    Timeline → UAP-Scope Activity → Relationships → Associated Nodes →
+    Open Questions. Location has no kinds, so no per-kind dispatch."""
+    title = render_title_location(artifact).rstrip("\n") + "\n"
+    sections = [
+        render_location_overview(artifact, fm),
+        render_description(artifact),
+        render_ownership_timeline(artifact),
+        render_uap_scope_activity(artifact),
+        render_location_relationships(artifact),
+        render_associated_nodes(),
+        render_open_questions(artifact),
+    ]
+    sections = [s for s in sections if s]
+    joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
+    return title + "\n" + joined
+
+
 def render_body(artifact, node_type, fm):
     """Dispatch by node_type. `fm` is the existing node frontmatter
     (needed for kind / archetype context the renderer can't derive from
@@ -1849,6 +2053,8 @@ def render_body(artifact, node_type, fm):
         return render_body_media(artifact, fm.get("kind"), fm)
     if node_type == "organization":
         return render_body_organization(artifact, fm.get("kind"))
+    if node_type == "location":
+        return render_body_location(artifact, fm)
     sys.exit(f"ERROR: build-from-research.py does not yet support node_type {node_type!r}")
 
 
