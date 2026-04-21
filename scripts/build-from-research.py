@@ -1948,13 +1948,7 @@ def render_uap_scope_activity(artifact):
     uap_scope_activity[]. Columns: Period | Activity | Source. When
     actor_paths is populated, wraps are appended inline to the Activity
     cell as `— [`/path1`]; [`/path2`]`. Sorted ascending by period_start;
-    check #15 enforces chronological order.
-
-    Section heading is topic-specific ("UAP-Scope"); for non-UAP
-    instances the template comment directs contributors to rename.
-    This renderer emits the UAP-specific heading since the toolkit's
-    current instance is UAP-focused per meta/topic/overview.md. Topic-
-    neutral renaming is a future toolkit-fork concern."""
+    check #15 enforces chronological order."""
     items = sort_by_date(
         [e for e in (artifact.get("uap_scope_activity") or []) if isinstance(e, dict)],
         "period_start",

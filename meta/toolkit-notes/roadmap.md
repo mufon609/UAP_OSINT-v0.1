@@ -572,9 +572,12 @@ relationship descriptions).
   after contributor feedback flagged the implicit synthesis-vs-
   fabrication bias in the thresholds — the validator surfaces drift
   without classifying it.
-- Tier B (n-gram adjacency), lemmatization, and whitelists deferred
-  to v2 per BACKLOG after ~5 person nodes accrue signal. Any v2
-  additions preserve the impartial-reporter framing.
+- The v1 impartial-reporter framing (warn on unmatched tokens,
+  error only at 100% divergence) is the durable design for this
+  check. Noise-reduction extensions (stemming, whitelisting, n-gram
+  adjacency) are out of scope — shipping any of them would silence
+  warnings the `feedback_check16_warnings_must_resolve.md` contributor
+  policy depends on being surfaced.
 
 Docs updated: `prompts/build.md` Phase I Step 12 gains a prose-drift
 review step; `meta/conventions.md` adds a prose-drift discipline

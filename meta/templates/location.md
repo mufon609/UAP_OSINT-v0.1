@@ -42,9 +42,12 @@ created: {{today}}
 
 ## UAP-Scope Activity
 
-<!-- Rename this section if the repository is being used for a non-UAP
-     investigation. For non-UAP use: "Scope Activity" or
-     "Documented Activity". -->
+<!-- Documented institutional UAP-scope activity at the location.
+     Populated from uap_scope_activity[] in the research artifact;
+     renderer sorts chronologically by period_start. Scope is
+     institutional primary-source-attested activity — popular
+     paranormal lore without primary-source backing belongs in the
+     artifact's rumors[] list, not here. -->
 
 | Period | Activity | Source |
 |---|---|---|

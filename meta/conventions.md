@@ -125,9 +125,7 @@ a fact or premise the source doesn't attest?* Errors fire only at
 significant words with the source it claims to draw on), a
 mathematical floor on pure fabrication rather than a stylistic
 threshold. Below 100%, the validator makes no judgment; careful
-contributor review is the quality gate. See `BACKLOG.md` entry for
-check #16 v2 extensions (n-gram adjacency, lemmatization,
-whitelists).
+contributor review is the quality gate.
 
 ---
 
