@@ -87,9 +87,9 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 |---|---|---|
 | `/media/flir1-video` | primary-source-confirmed | video |
 
-### Locations (0)
+### Locations (1)
 
-*No nodes yet.*
+- `/locations/skinwalker-ranch` — active
 
 ### Findings (0)
 

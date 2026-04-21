@@ -1,0 +1,638 @@
+id: research/skinwalker-ranch
+type: research-artifact
+schema_version: 1
+target_node: locations/skinwalker-ranch
+status: active
+created: '2026-04-20'
+last_iteration: i0
+description: 'Skinwalker Ranch — also called Sherman Ranch — is a private cattle ranch in Uintah County, Utah, nestled beneath a red-rock ridge between Fort Duchesne and Randlett. Under four documented owners: the Myers family (Kenneth and Edith Myers, c. 1933 to 1994), Terry and Gwen Sherman (1994 to 1996), Robert Bigelow (1996 to 2016), and Brandon Fugal via Adamantium Real Estate LLC (2016 to present).
+
+
+  The Shermans made national news in July 1996 by going public with bizarre tales of anomalous activity on their 480-acre ranch. Zack Van Eyck of the Deseret News reported the family witnessed UFOs, cattle mutilations, unusual soil impressions, and circles of flattened grass in a pasture. In September 1996, Bigelow bought the ranch for about $200,000 and the research was conducted by the National Institute for Discovery Science, which Bigelow formed last October. Terry Sherman was employed by Bigelow to maintain the ranch under a nondisclosure agreement.
+
+
+  Bigelow Aerospace Advanced Space Studies (BAASS) later held the Defense Intelligence Agency AAWSAP contract from 2008 to 2012, and the ranch served as a site of continued research through that program. In 2016, Utah real estate mogul Brandon Fugal bought the ranch; his identity as owner was revealed publicly in March 2020. Uintah County Real Property Owner Information records show Adamantium Real Estate LLC as current owner of seven parcels in Sections 4, 5, and 33 of T2S and T3S R1E USM — 480.19 ACRES combined.'
+primary_sources:
+- path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-0.txt
+- path: social/nidsci-org-wayback-20021128.html
+  format: html
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-1.txt
+- path: government/aawsap-contract-hhm402-08-c-0072-mod-p00001-20090902.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-2.txt
+- path: news/fox40-bigelow-mysterywire-20210528.html
+  format: html
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-3.txt
+- path: news/deseret-frequent-fliers-19960630.html
+  format: html
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-4.txt
+- path: news/aliendave-nids-ranch-mirror-19961020.html
+  format: html
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-5.txt
+- path: news/theufochronicles-myers-family-20200412.html
+  format: html
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-6.txt
+- path: news/vice-fugal-skinwalker-owner-20200310.html
+  format: html
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-7.txt
+- path: government/uintah-parcel-150050001-20260420.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-8.txt
+- path: government/uintah-parcel-150050002-20260420.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-9.txt
+- path: government/uintah-parcel-150050004-20260420.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-10.txt
+- path: government/uintah-parcel-150040001-20260420.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-11.txt
+- path: government/uintah-parcel-150040002-20260420.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-12.txt
+- path: government/uintah-parcel-150040003-20260420.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-13.txt
+- path: government/uintah-parcel-140340003-20260420.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-skinwalker-ranch-14.txt
+document_intrinsic:
+  full_name: Skinwalker Ranch
+  alternate_names:
+  - Sherman Ranch
+  - Sherman ranch
+  location_type: Private cattle ranch
+  geographic_location: Uintah County, Utah (between Fort Duchesne and Randlett)
+  approximate_coordinates: Sections 4, 5, and 33; Townships 2S and 3S; Range 1E; Uintah Special Meridian
+  ownership_history_summary: Myers family (c. 1933-1994); Terry and Gwen Sherman (1994-1996); Robert Bigelow (1996-2016); Brandon Fugal via Adamantium Real Estate LLC (2016-present)
+  scope_significance: 'Documented site of institutional UAP research programs: NIDS (1996-2004), BAASS/AAWSAP (2008-2012), and Fugal-era investigations (2016-present)'
+context_extrinsic:
+  display_title: Skinwalker Ranch
+quotes:
+- id: q1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: 480-acre ranch, nestled beneath a red-rock ridge between Fort Duchesne and Randlett
+  source:
+    path: news/aliendave-nids-ranch-mirror-19961020.html
+    location: article body ¶3
+  significance: Primary-source attestation of ranch's 480-acre size and geographic anchor (contradicts modern 512-acre secondary sources; see naming_quirks)
+- id: q2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: Bigelow hopped a jet to Vernal and met with the Shermans, offering to buy the ranch for about $200,000. The deal closed in September
+  source:
+    path: news/aliendave-nids-ranch-mirror-19961020.html
+    location: article body ¶4
+  significance: 'Primary-source attestation of Bigelow-to-Sherman transaction: $200,000 price, closed September 1996'
+- id: q3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: Officially, the research is being conducted by the National Institute for Discovery Science, which Bigelow formed last October
+  source:
+    path: news/aliendave-nids-ranch-mirror-19961020.html
+    location: article body ¶6
+  significance: Primary-source attestation of NIDS as the ranch research operator + NIDS formation date (October 1995)
+- id: q4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: Sherman, now employed by Bigelow to maintain the ranch, said he can no longer discuss the activity because of a nondisclosure agreement Bigelow had him sign
+  source:
+    path: news/aliendave-nids-ranch-mirror-19961020.html
+    location: article body ¶7
+  significance: Primary-source attestation of Sherman NDA and continued caretaker role post-sale
+- id: q5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: unequivocally that up to 1992 there had never been
+  source:
+    path: news/theufochronicles-myers-family-20200412.html
+    location: Garth Myers 2009 interview transcript
+  significance: Garth Myers categorical denial of any paranormal activity during the Myers-era ownership (1933-1994). Countervailing primary-source testimony against the Sherman-era claims.
+- id: q6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: NIDS is evolving into an expanding organization
+  source:
+    path: social/nidsci-org-wayback-20021128.html
+    location: whatsnew.html page heading
+  significance: NIDS self-representation of scope expansion into Bigelow Aerospace projects during the NIDS-era of ranch research
+- id: q7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: aerospace billionaire Robert Bigelow sold the ranch to Fugal
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: article body ¶3
+  significance: First public primary-source identification of Brandon Fugal as the 2016 buyer from Bigelow
+- id: q8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: Fugal’s journey to Skinwalker Ranch began in 2010
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: article body
+  significance: Attests Fugal's pre-2016 connection to the ranch via Bigelow-project scientists, six years before the purchase
+- id: q9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: Real estate billionaire and owner of Skinwalker Ranch
+  source:
+    path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+    location: line 8742, 27 October 2022 timeline entry
+  significance: Congressional-record on-record identification of Fugal as current ranch owner (Shellenberger's 2024 sworn testimony)
+- id: q10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  text: For a long time we wondered what we were seeing, if it was something to do with a top-secret project
+  source:
+    path: news/deseret-frequent-fliers-19960630.html
+    location: Terry Sherman quote, Zack Van Eyck article
+  significance: Terry Sherman's own contemporaneous framing of what he witnessed during 1994-1996 ownership — primary source (quote excerpted; full source sentence concludes with attribution to Terry Sherman by Zack Van Eyck)
+claims: []
+entities_referenced:
+- id: e1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Robert Bigelow
+  wrap_path: /people/robert-bigelow
+  context_summary: Las Vegas real estate magnate; 1996-2016 owner; founder of NIDS (1995), Bigelow Aerospace, and BAASS (the AAWSAP contractor)
+- id: e2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Brandon Fugal
+  wrap_path: /people/brandon-fugal
+  context_summary: Utah real estate mogul; current owner since 2016 via Adamantium Real Estate LLC
+- id: e3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Terry Sherman
+  wrap_path: /people/terry-sherman
+  context_summary: 1994-1996 owner; caretaker under Bigelow 1996-ongoing per Deseret News October 1996
+- id: e4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Gwen Sherman
+  wrap_path: /people/gwen-sherman
+  context_summary: 1994-1996 co-owner with husband Terry Sherman
+- id: e5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Garth Myers
+  wrap_path: /people/garth-myers
+  context_summary: Younger brother of Kenneth John Myers; Myers-era witness who denies any paranormal activity during family ownership 1933-1994
+- id: e6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Colm Kelleher
+  wrap_path: /people/colm-kelleher
+  context_summary: Co-author of Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021); principal manager of AAWSAP in Las Vegas per Knapp 2025 testimony
+- id: e7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: George Knapp
+  wrap_path: /people/george-knapp
+  context_summary: Investigative journalist; co-author of Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021)
+- id: e8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: James Lacatski
+  wrap_path: /people/james-lacatski
+  context_summary: AAWSAP program manager at DIA; co-author of Skinwalkers at the Pentagon (2021)
+- id: e9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: John B. Alexander
+  wrap_path: /people/john-alexander
+  context_summary: Former director of non-lethal weapons testing at Los Alamos; NIDS scientist per Deseret News October 1996
+- id: e10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: person
+  name: Michael Shellenberger
+  wrap_path: /people/michael-shellenberger
+  context_summary: Journalist-founder of Public; provided 2024 House Oversight sworn testimony that references Skinwalker Ranch extensively
+- id: e11
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: NIDS
+  wrap_path: /organizations/nids
+  context_summary: National Institute for Discovery Science; Bigelow-founded 1995, operated 1996-2004; conducted the first institutional research program at the ranch
+- id: e12
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: BAASS
+  wrap_path: /organizations/baass
+  context_summary: Bigelow Aerospace Advanced Space Studies; the DIA AAWSAP contractor (contract HHM402-08-C-0072)
+- id: e13
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: AAWSAP
+  wrap_path: /organizations/aawsap
+  context_summary: Advanced Aerospace Weapon System Applications Program; 2008-2012 DIA-funded program contracted to BAASS; included UAP research at Skinwalker Ranch
+- id: e14
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Bigelow Aerospace
+  wrap_path: /organizations/bigelow-aerospace
+  context_summary: Robert Bigelow's aerospace company; parent of BAASS per AAWSAP contract
+- id: e15
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Adamantium Real Estate LLC
+  wrap_path: /organizations/adamantium-real-estate
+  context_summary: Delaware LLC headquartered in Salt Lake City (6440 S Millrock Dr Ste 500); Fugal's shell entity holding all 7 Uintah County ranch parcels
+- id: e16
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  name: Defense Intelligence Agency
+  wrap_path: /organizations/dia
+  context_summary: Contracting agency for the 2008 AAWSAP contract awarded to BAASS
+- id: e17
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: document
+  name: Hunt for the Skinwalker (2005)
+  wrap_path: /documents/hunt-for-the-skinwalker-2005
+  context_summary: Kelleher and Knapp's 2005 book documenting NIDS-era investigation (1996-2004); pseudonyms 'Tom and Ellen Gorman' used for Terry and Gwen Sherman throughout
+- id: e18
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: document
+  name: Skinwalkers at the Pentagon (2021)
+  wrap_path: /documents/skinwalkers-at-the-pentagon-2021
+  context_summary: Lacatski/Kelleher/Knapp book documenting AAWSAP-era institutional UAP research including Skinwalker Ranch work
+- id: e19
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: document
+  name: Shellenberger 2024 written testimony
+  wrap_path: /documents/written-testimony-shellenberger-2024
+  context_summary: House Oversight 2024-11-13 hearing sworn testimony with detailed Skinwalker-era timeline citing BAASS/AAWSAP investigations and the Fugal purchase
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  observed: 480-acre ranch
+  canonical: 480.19-acre (7-parcel) ranch
+  location: Deseret News October 1996 article body
+  source_path: news/aliendave-nids-ranch-mirror-19961020.html
+  resolution: use-canonical
+  note: Primary-source Uintah County assessor records (2026) show 480.19 acres across 7 parcels totaling the ranch. Modern secondary sources (Wikipedia, history.co.uk, Vice 2020) repeat 512 acres — see rumor r1. The 1996 contemporaneous Deseret reporting of 480-acre is more accurate and matches the 2026 parcel-record sum.
+- id: nq2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  observed: Tom and Ellen Gorman
+  canonical: Terry and Gwen Sherman
+  location: Hunt for the Skinwalker (2005) book throughout
+  source_path: news/aliendave-nids-ranch-mirror-19961020.html
+  resolution: use-canonical
+  note: Kelleher and Knapp's 2005 book used pseudonyms 'Tom and Ellen Gorman' for the 1994-1996 owners. The actual names Terry and Gwen Sherman are documented in contemporaneous Deseret News reporting (1996). When quoting from Hunt for the Skinwalker directly in future node iterations, preserve the 'Gorman' form in-quote per preserve-as-sic-in-quotes pattern.
+- id: nq3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  observed: Sherman ranch
+  canonical: Skinwalker Ranch
+  location: Deseret News 1996-1997 articles throughout
+  source_path: news/aliendave-nids-ranch-mirror-19961020.html
+  resolution: preserve-as-sic-in-quotes
+  note: Pre-2005 primary sources (Deseret News 1996-1997) consistently call the property 'the Sherman ranch' or 'the former Sherman ranch'. The 'Skinwalker Ranch' naming entered public record via Kelleher and Knapp's 2005 book and became canonical post-2005. Both names apply to the same property; historical-primary-source quotes preserve the contemporaneous naming.
+- id: nq4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  observed: Kenneth Myers
+  canonical: Kenneth John Myers
+  location: Frank Warren 2020 article
+  source_path: news/theufochronicles-myers-family-20200412.html
+  resolution: use-canonical
+  note: Frank Warren's 2020 piece uses the full 'Kenneth John Myers' form while most sources use 'Kenneth Myers'. Preserve source form in quotes, use canonical elsewhere.
+research_gaps:
+- id: rg1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Exact Uintah County deed recording number and date for the Bigelow-to-Sherman transfer (September 1996)
+  methodology: Query Uintah County Recorder's office for deed recording index 1996 ADAMANTIUM, BIGELOW, or SHERMAN; archive the original recorded deed document
+  resolved: false
+- id: rg2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Exact Bigelow-to-Adamantium deed recording number and date (circa April 2016)
+  methodology: Query Uintah County Recorder's office for ADAMANTIUM REAL ESTATE 2016 deed recordings; archive the 7 parcel transfer documents
+  resolved: false
+- id: rg3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: NIDS published research reports (1996-2004) — primary-source archival
+  methodology: Identify and archive NIDS reports published during the 1996-2004 research period; the 2002 NIDS wayback capture shows web publication was in scope but the reports themselves are not currently archived in this repository
+  resolved: false
+- id: rg4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Sherman family nondisclosure agreement full text — 1996 agreement with Bigelow
+  methodology: Unlikely to ever be public; Sherman-era primary research limited to pre-NDA sources (Deseret 1996 articles June-December)
+  resolved: false
+- id: rg5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: BAASS internal Skinwalker investigation documents (2008-2012)
+  methodology: FOIA the DIA for AAWSAP deliverables involving the ranch; cross-reference Shellenberger 2024 testimony footnotes to Skinwalkers at the Pentagon (2021) for specific document references
+  resolved: false
+- id: rg6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Registration date and Delaware filing record for Adamantium Real Estate LLC
+  methodology: Query Delaware Division of Corporations for Adamantium Real Estate LLC registration; archive the entity formation record
+  resolved: false
+- id: rg7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: USPTO trademark record for SKINWALKER RANCH (Serial 87336178, Reg 6034085) — archive as primary-source legal document
+  methodology: Query USPTO TSDR for the full file wrapper; archive the registration certificate PDF
+  resolved: false
+- id: rg8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  statement: Is the 1996 Two-Section 24-foot Wide 1344-sqft structure on parcel 150040001 the observation building Bigelow erected per Deseret News October 1996?
+  methodology: Cross-reference the 1996 construction on parcel 150040001 (per Uintah County assessor records) with the Deseret News October 1996 article's statement that 'Bigelow has erected an observation building'. High-probability match based on construction year alignment; verification would require Bigelow-era building permits or NIDS internal documentation
+  resolved: false
+rumors:
+- id: r1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  claim: The ranch is approximately 512 acres
+  status: primary-source-disputed
+  observed_sources:
+  - Wikipedia
+  - history.co.uk
+  - Vice 2020
+  - most post-2005 news sources
+  note: Primary-source Uintah County assessor records (2026) show 480.19 acres across 7 parcels. The 1996 contemporaneous Deseret reporting of 480-acre is consistent with the 2026 parcel record. Modern 512-acre figure is repeated across secondary sources but contradicted by primary assessor data.
+- id: r2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  claim: A bulletproof wolf-like creature was shot on the ranch during the Sherman era
+  status: not-primary-source-established
+  observed_sources:
+  - Hunt for the Skinwalker (2005) popular lore
+  - various paranormal-genre retellings
+  note: Widely-circulated claim from the Sherman-era post-NDA period; not documented in the contemporaneous 1996 Deseret News reporting. Represents popular-lore content that Hunt for the Skinwalker (2005) introduced; primary-source backing unknown.
+- id: r3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  claim: The ranch is the site of interdimensional portals / gateways
+  status: not-primary-source-established
+  observed_sources:
+  - Gary Hart statements quoted in Deseret News October 1996
+  - NIDS-era and post-NIDS paranormal-genre coverage
+  note: The 1996 Deseret article quotes UFO researcher Gary Hart speculating about 'interdimensional doorway' — a researcher-speculation claim rather than a primary-source-established fact. The claim persists in popular discourse without direct primary-source backing.
+- id: r4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  claim: The Skinwalker cryptid creature has been observed on the property
+  status: not-primary-source-established
+  observed_sources:
+  - Hunt for the Skinwalker (2005)
+  - The Secret of Skinwalker Ranch (History Channel, 2020-)
+  note: The name 'Skinwalker Ranch' derives from Navajo/Ute skinwalker legends, but neither tribal affiliation has made on-record statements about the ranch. The cryptid observation claims are post-2005 lore without contemporaneous primary-source documentation.
+ownership_timeline:
+- id: ot1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  period_start: '1933'
+  period_end: '1994'
+  owner: Kenneth and Edith Myers
+  use_status: cattle ranch
+  source:
+    path: news/theufochronicles-myers-family-20200412.html
+    location: Frank Warren citing Salisbury 2010 book pp 218-222
+  note: Kenneth John Myers and wife Edith owned the ranch for approximately sixty years. Kenneth died April 1987; Edith lived there alone until 1992 and died March 3, 1994. Brother Garth Myers categorically denies any paranormal activity during this period.
+- id: ot2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  period_start: '1994'
+  period_end: 1996-09
+  owner: Terry and Gwen Sherman
+  use_status: cattle ranch
+  source:
+    path: news/deseret-frequent-fliers-19960630.html
+    location: Zack Van Eyck article June 30, 1996
+  note: Terry and Gwen Sherman purchased the 480-acre ranch approximately three months after Edith Myers died. Their accounts of anomalous activity between 1994 and 1996 became the foundation for the ranch's notoriety following the Sherman family going public with the Deseret News in July 1996.
+- id: ot3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  period_start: 1996-09
+  period_end: '2016'
+  owner: Robert Bigelow
+  use_status: ranch used as research site; National Institute for Discovery Science research
+  source:
+    path: news/aliendave-nids-ranch-mirror-19961020.html
+    location: Zack Van Eyck article October 20, 1996
+  note: Bigelow bought the ranch for approximately $200,000 in September 1996 and founded the research operation at the property. Terry Sherman was employed by Bigelow to maintain the ranch under a nondisclosure agreement. The National Institute for Discovery Science conducted research from 1996 to approximately 2004; BAASS conducted further AAWSAP-related research 2008-2012.
+- id: ot4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  period_start: 2016-04
+  owner: Brandon Fugal
+  owner_path: /people/brandon-fugal
+  use_status: Fugal-era research operations via Adamantium Real Estate LLC
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: article body
+  note: Fugal purchased the ranch from Bigelow in 2016 via Adamantium Real Estate LLC. Fugal's connection to the ranch began in 2010 through Bigelow's DIA-project scientists. Ownership was kept quiet until March 2020 when Fugal went public in the Vice article.
+uap_scope_activity:
+- id: us1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  period_start: '1996'
+  period_end: '2004'
+  activity: National Institute for Discovery Science research
+  actor_paths:
+  - /organizations/nids
+  - /people/robert-bigelow
+  - /people/john-alexander
+  source:
+    path: news/aliendave-nids-ranch-mirror-19961020.html
+    location: Zack Van Eyck article October 20, 1996
+  note: NIDS conducted the first institutional research program at the ranch. John B. Alexander (former director of non-lethal weapons testing at Los Alamos) named as NIDS scientist. Research conducted via on-site observation building with pair of scientists and a veterinarian.
+- id: us2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  period_start: '2008'
+  period_end: '2012'
+  activity: BAASS/AAWSAP Defense Intelligence Agency contract research
+  actor_paths:
+  - /organizations/baass
+  - /organizations/aawsap
+  - /organizations/dia
+  - /people/colm-kelleher
+  - /people/james-lacatski
+  source:
+    path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+    location: timeline entries 2007-2012
+  note: Bigelow Aerospace Advanced Space Studies (BAASS) received the Defense Intelligence Agency AAWSAP contract HHM402-08-C-0072; the ranch served as a site of AAWSAP-era institutional research. Lacatski and Kelleher's Skinwalkers at the Pentagon (2021) documents the AAWSAP-era ranch work.
+- id: us3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  period_start: '2016'
+  activity: Fugal-era research operations
+  actor_paths:
+  - /people/brandon-fugal
+  - /organizations/adamantium-real-estate
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: article body
+  note: Fugal has overhauled the ranch with new sensors and cameras. Fugal's identity was revealed publicly in March 2020 via Vice. Research activity continues on the ranch with History Channel documentation.
+location_relationships:
+- id: lr1
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /people/robert-bigelow
+  relationship: owner 1996-2016; founder of NIDS (1995); founder of Bigelow Aerospace and BAASS (2008 AAWSAP contractor)
+  source:
+    path: news/aliendave-nids-ranch-mirror-19961020.html
+    location: article body
+- id: lr2
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /people/brandon-fugal
+  relationship: current owner since 2016 via Adamantium Real Estate LLC
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: article body
+- id: lr3
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /people/terry-sherman
+  relationship: owner 1994-1996 with wife Gwen; caretaker under Bigelow employment post-1996 per nondisclosure agreement
+  source:
+    path: news/aliendave-nids-ranch-mirror-19961020.html
+    location: article body
+- id: lr4
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /people/garth-myers
+  relationship: brother of Kenneth John Myers; Myers-era witness who denies paranormal activity 1933-1994
+  source:
+    path: news/theufochronicles-myers-family-20200412.html
+    location: Frank Warren 2020 article
+- id: lr5
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_type: organization
+  entity_path: /organizations/nids
+  relationship: first institutional research operator 1996-2004; Bigelow-founded 1995
+  source:
+    path: news/aliendave-nids-ranch-mirror-19961020.html
+    location: article body
+- id: lr6
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /organizations/baass
+  relationship: AAWSAP contractor 2008-2012; conducted institutional research at the ranch as part of the DIA-contracted work
+  source:
+    path: government/aawsap-contract-hhm402-08-c-0072-mod-p00001-20090902.pdf
+    location: contract establishes BAASS as contractor
+- id: lr7
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /organizations/aawsap
+  relationship: program funding BAASS research at the ranch 2008-2012
+  source:
+    path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+    location: timeline 2007-2012 entries
+- id: lr8
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /organizations/bigelow-aerospace
+  relationship: parent company of BAASS; Robert Bigelow's aerospace firm
+  source:
+    path: government/aawsap-contract-hhm402-08-c-0072-mod-p00001-20090902.pdf
+    location: contract document
+- id: lr9
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /organizations/adamantium-real-estate
+  relationship: Fugal's Delaware LLC holding entity for all 7 Uintah County ranch parcels since 2016
+  source:
+    path: government/uintah-parcel-150040001-20260420.pdf
+    location: Uintah County assessor record 2026
+- id: lr10
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /organizations/dia
+  relationship: contracting agency for the 2008 AAWSAP contract that funded BAASS research at the ranch
+  source:
+    path: government/aawsap-contract-hhm402-08-c-0072-mod-p00001-20090902.pdf
+    location: contract document
+- id: lr11
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /documents/hunt-for-the-skinwalker-2005
+  relationship: Kelleher and Knapp book documenting NIDS-era investigation at the ranch; introduced the 'Skinwalker Ranch' naming to public record
+  source:
+    path: news/theufochronicles-myers-family-20200412.html
+    location: Frank Warren 2020 article references the book
+- id: lr12
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /documents/skinwalkers-at-the-pentagon-2021
+  relationship: Lacatski/Kelleher/Knapp book documenting AAWSAP-era institutional research at the ranch
+  source:
+    path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+    location: timeline entries reference the book throughout
+- id: lr13
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /people/gwen-sherman
+  relationship: co-owner 1994-1996 with husband Terry Sherman
+  source:
+    path: news/deseret-frequent-fliers-19960630.html
+    location: Zack Van Eyck article June 30 1996
+- id: lr14
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /people/george-knapp
+  relationship: co-author of Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021)
+  source:
+    path: news/theufochronicles-myers-family-20200412.html
+    location: Frank Warren 2020 article references the Hunt for the Skinwalker book
+- id: lr15
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /people/michael-shellenberger
+  relationship: author of 2024 House Oversight written testimony that cites the ranch
+  source:
+    path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+    location: testimony by Shellenberger
+- id: lr16
+  added_date: '2026-04-20'
+  added_by_iteration: i0
+  entity_path: /documents/written-testimony-shellenberger-2024
+  relationship: House Oversight 2024-11-13 sworn written testimony with detailed Skinwalker Ranch timeline
+  source:
+    path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+    location: testimony document
+iterations:
+- id: i0
+  date: '2026-04-20'
+  trigger: initial-build
+  summary: 'F.6c pilot — first end-to-end Phase I population of a location research artifact under the F.6b renderer pipeline. 15 archived primary sources span all four ownership eras: Myers 1933-1994 (Frank Warren 2020), Sherman 1994-1996 (Deseret News June 1996), Bigelow/NIDS 1996-2016 (aliendave October 1996 + NIDS wayback 2002 + Shellenberger 2024 + Fox40 2021), AAWSAP 2008-2012 (AAWSAP contract + Shellenberger), Fugal 2016-present (Vice 2020 + 7 Uintah County parcel records 2026). Populated document_intrinsic (7 location keys), description (3 paragraphs source-matched), 10 verbatim quotes (each verified against its scratch file), 19 entities_referenced, 4 naming_quirks (including the 480-vs-512 acre resolution), 8 research_gaps (including 2 deed-record-archive paths and the USPTO trademark archive path), 4 rumors (including 512-acre secondary-source-repeated figure contradicted by primary Uintah records), 4 ownership_timeline entries, 3 uap_scope_activity entries (NIDS + BAASS/AAWSAP + Fugal-era), 12 location_relationships. claims empty per current F.6 discipline.'
+  entries_added: []
+  entries_modified: []

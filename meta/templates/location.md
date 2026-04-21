@@ -52,6 +52,17 @@ created: {{today}}
 
 ---
 
+## Key Passages
+
+<!-- Verbatim excerpts from primary sources ABOUT the location. Each
+     passage is a block-quote + per-quote verification block (Attributed
+     to / Source / Verified). Parallels the document / organization Key
+     Passages pattern. Populated from quotes[] in the research artifact;
+     renderer sorts by statement_date and emits H3 per quote using the
+     `significance` field. -->
+
+---
+
 ## Relationships
 
 ### Confirmed

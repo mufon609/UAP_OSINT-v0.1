@@ -1982,6 +1982,33 @@ def render_uap_scope_activity(artifact):
     return "\n".join(lines) + "\n"
 
 
+def render_location_key_passages(artifact):
+    """Key Passages section — verbatim excerpts from primary sources
+    ABOUT the location. Mirrors render_org_key_passages pattern. H3
+    per quote using `significance` field; block-quote text + per-quote
+    verification block. Sorted by `statement_date` with natural-sort
+    tie-break on id. Supports evidentiary anchoring on location nodes
+    parallel to organization nodes."""
+    quotes = [q for q in (artifact.get("quotes") or []) if isinstance(q, dict)]
+    quotes = sort_by_date(quotes, "statement_date")
+
+    head = "## Key Passages\n"
+    if not quotes:
+        return head + "\n<!-- TODO: populate `quotes` in the research artifact -->\n"
+
+    blocks = []
+    for q in quotes:
+        h3 = q.get("significance") or "Passage"
+        text = (q.get("text") or "").rstrip("\n")
+        lines = [f"### {h3}", ""]
+        for qline in text.split("\n"):
+            lines.append(f"> {qline}" if qline else ">")
+        lines.append("")
+        lines.append(_render_verification_block(q, artifact))
+        blocks.append("\n".join(lines))
+    return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
+
+
 def render_location_relationships(artifact):
     """Relationships section — location_relationships[] with Confirmed /
     Flagged split. Heterogeneous entity_path targets (any node type).
@@ -2020,14 +2047,18 @@ def render_location_relationships(artifact):
 def render_body_location(artifact, fm):
     """Location-type body composition. Section order matches the
     schema's required_sections: Overview → Description → Ownership
-    Timeline → UAP-Scope Activity → Relationships → Associated Nodes →
-    Open Questions. Location has no kinds, so no per-kind dispatch."""
+    Timeline → UAP-Scope Activity → Key Passages → Relationships →
+    Associated Nodes → Open Questions. Location has no kinds, so no
+    per-kind dispatch. Key Passages added F.6c pilot to cover
+    evidentiary quotes about the location; parallels organization's
+    Key Passages pattern."""
     title = render_title_location(artifact).rstrip("\n") + "\n"
     sections = [
         render_location_overview(artifact, fm),
         render_description(artifact),
         render_ownership_timeline(artifact),
         render_uap_scope_activity(artifact),
+        render_location_key_passages(artifact),
         render_location_relationships(artifact),
         render_associated_nodes(),
         render_open_questions(artifact),

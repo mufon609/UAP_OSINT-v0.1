@@ -448,12 +448,14 @@ types:
       - Description
       - Ownership Timeline
       - UAP-Scope Activity
+      - Key Passages
       - Relationships
       - Associated Nodes
       - Open Questions / Research Gaps
     section_rules:
       Relationships: {split: [Confirmed, Flagged]}
       Ownership Timeline: {chronological: true}
+      Key Passages: {requires_quote_verification: true}
 
   # --- FINDING ------------------------------------------------------------
   finding:
