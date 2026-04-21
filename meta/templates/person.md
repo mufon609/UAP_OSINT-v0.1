@@ -71,7 +71,7 @@ created: {{today}}
      each statement's verification block — earliest first. The Phase II
      person renderer (F.1b) sorts mechanically at build time; hand-
      authored nodes should manually order by date until the renderer
-     ships. Check #15 enforces table-row ordering universally but does
+     ships. The chronological-ordering check enforces table-row ordering universally but does
      not yet cross-check block-quote statement order (tracked in
      BACKLOG).
 

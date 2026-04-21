@@ -1599,7 +1599,7 @@ def check_location_relationships(rel, data, manifest_paths):
 
 
 # =============================================================================
-# Check #16 — prose-field token drift (F.1c RCA follow-up)
+# Prose-drift check (F.1c RCA follow-up)
 #
 # Every contributor-authored prose field on an artifact should draw its
 # vocabulary from the primary-source text it references. This check
@@ -1949,10 +1949,10 @@ def _judge_drift(rel, location, prose_tokens, unmatched):
 
 
 def check_prose_drift(rel, data, target_type):
-    """Check #16 — prose-field token drift. Verifies contributor-prose
-    fields on the artifact source their vocabulary from the primary-
-    source text. Scoped to types in PROSE_FIELDS_BY_TYPE /
-    PROSE_ENTRY_FIELDS_BY_TYPE; no-ops on other types.
+    """Prose-drift check — verify contributor-prose fields on the
+    artifact source their vocabulary from the primary-source text.
+    Scoped to types in PROSE_FIELDS_BY_TYPE / PROSE_ENTRY_FIELDS_BY_TYPE;
+    no-ops on other types.
     """
     issues = []
     if target_type not in PROSE_FIELDS_BY_TYPE \

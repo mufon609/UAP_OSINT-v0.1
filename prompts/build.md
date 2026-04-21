@@ -438,8 +438,8 @@ Common categories of warnings and how they resolve:
   two-step: use source form in prose wrapped in the canonical link
   path (`Lue Elizondo ([`/people/luis-elizondo`])`); log the variance
   in `naming_quirks` with a note on what it means (alias-of-record
-  for 2+ instances; typo for isolated misspellings). Check #16
-  strips the wrap before tokenizing.
+  for 2+ instances; typo for isolated misspellings). The prose-drift
+  check strips the wrap before tokenizing.
 - **Acronym expansion / collapse** (source "To The Stars Academy" vs
   prose "TTSA") → use source form or introduce canonical alongside
   first occurrence with explicit parenthesis.
