@@ -60,6 +60,15 @@ def save_manifest(entries):
 
 
 def check_wayback(url):
+    """Query CDX for the most recent 200-status snapshot of `url`.
+
+    Returns (date_or_None, state):
+      state == "found"   → snapshot exists; date = "YYYY-MM-DD"
+      state == "absent"  → CDX returned cleanly with 0 rows
+      state == "unknown" → CDX errored or timed out after one retry
+                           (caller must NOT treat this as absent — no SPN
+                           submit, no bit-1 update; just skip for this run)
+    """
     params = urllib.parse.urlencode({
         "url": url,
         "output": "json",
@@ -67,19 +76,25 @@ def check_wayback(url):
         "sort": "reverse",
         "filter": "statuscode:200",
     })
-    try:
-        req = urllib.request.Request(
-            f"{CDX_API}?{params}",
-            headers={"User-Agent": USER_AGENT},
-        )
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            data = json.loads(resp.read().decode("utf-8"))
+    cdx_url = f"{CDX_API}?{params}"
+
+    for attempt in range(2):  # one retry on transient network error
+        try:
+            req = urllib.request.Request(cdx_url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
             if len(data) > 1:
                 ts = data[1][1]
-                return ts[:4] + "-" + ts[4:6] + "-" + ts[6:8]
-    except (urllib.error.URLError, json.JSONDecodeError, IndexError, TimeoutError):
-        pass
-    return None
+                return ts[:4] + "-" + ts[4:6] + "-" + ts[6:8], "found"
+            return None, "absent"
+        except (urllib.error.URLError, TimeoutError):
+            if attempt == 0:
+                time.sleep(5)
+                continue
+            return None, "unknown"
+        except (json.JSONDecodeError, IndexError):
+            # Malformed CDX response — treat as unknown, not absent
+            return None, "unknown"
 
 
 def submit_wayback(url):
@@ -147,20 +162,25 @@ def main():
     print(f"  To check:             {len(to_check)}")
     print(f"  Mode:                 {'check only' if args.check_only else 'check + submit'}\n")
 
-    found = submitted = errors = 0
+    found = submitted = errors = unknown = 0
 
     for i, e in enumerate(to_check):
         url = e["url"]
         short = url[:80] + "..." if len(url) > 80 else url
         print(f"  [{i+1}/{len(to_check)}] {short}")
 
-        ts = check_wayback(url)
-        if ts:
+        ts, state = check_wayback(url)
+        if state == "found":
             e["wayback_date"] = ts
             e["archive_status"] = e.get("archive_status", 0) | 2
             found += 1
             print(f"           FOUND snapshot {ts}")
-        else:
+        elif state == "unknown":
+            # CDX errored/timed out — do NOT submit to SPN, do NOT set bit 1.
+            # Leave the entry as-is so a later run can re-query.
+            unknown += 1
+            print(f"           CDX UNKNOWN — skipping this run")
+        else:  # state == "absent"
             print(f"           NOT IN WAYBACK")
             if not args.check_only:
                 time.sleep(15)  # rate limit
@@ -183,6 +203,7 @@ def main():
     print("\n" + "=" * 64)
     print(f"  Found:     {found}")
     print(f"  Submitted: {submitted}")
+    print(f"  Unknown:   {unknown}  (CDX errored; will retry next run)")
     print(f"  Errors:    {errors}")
     print("=" * 64)
 
