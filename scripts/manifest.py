@@ -38,6 +38,20 @@ CONTENT_DIRS = [
 
 URL_PATTERN = re.compile(r"https?://[^\s\|\)>`\]]+")
 
+# A cited URL may already BE a Wayback snapshot (e.g. dead primary source
+# whose only surviving copy is a Wayback capture). Auto-set archive_status
+# bit 1 and derive wayback_date from the 14-char timestamp.
+WAYBACK_URL_RE = re.compile(r"^https?://web\.archive\.org/web/(\d{8,14})/")
+
+
+def wayback_url_date(url):
+    """If URL is itself a Wayback snapshot, return its date (YYYY-MM-DD)."""
+    m = WAYBACK_URL_RE.match(url)
+    if not m:
+        return None
+    ts = m.group(1)[:8]
+    return f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
+
 FORMAT_BY_EXT = {
     ".pdf": "pdf",
     ".html": "html",
@@ -137,7 +151,14 @@ def cmd_add(args):
     # (status == archived AND path set); bit 1 is set later by archive.py
     # when a Wayback snapshot is found or a Save Page Now submission
     # succeeds. Contributors don't hand-maintain this field.
-    entry["archive_status"] = 1 if (entry.get("status") == "archived" and entry.get("path")) else 0
+    bit0 = 1 if (entry.get("status") == "archived" and entry.get("path")) else 0
+    # If the URL itself is a Wayback snapshot, bit 1 is already satisfied
+    # by the URL timestamp — no archive.py run needed.
+    wb_date = wayback_url_date(args.url)
+    bit1 = 2 if wb_date else 0
+    entry["archive_status"] = bit0 | bit1
+    if wb_date:
+        entry["wayback_date"] = wb_date
     if args.note:
         entry["note"] = args.note
     entries.append(entry)
@@ -146,6 +167,8 @@ def cmd_add(args):
     if entry.get("sha256"):
         print(f"  sha256: {entry['sha256']}")
     print(f"  archive_status: {entry['archive_status']}")
+    if wb_date:
+        print(f"  wayback_date:   {wb_date}  (derived from Wayback URL timestamp)")
 
 
 def cmd_status(args):

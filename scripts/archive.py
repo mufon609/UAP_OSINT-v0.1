@@ -21,6 +21,7 @@ Usage:
 
 import argparse
 import json
+import re
 import sys
 import time
 import urllib.request
@@ -43,6 +44,22 @@ SAVE_API = "https://web.archive.org/save/"
 WAYBACK_BASE = "https://web.archive.org/web/"
 
 USER_AGENT = "UAP-Research-Archiver/2.0"
+
+# A manifest URL may already BE a Wayback snapshot (e.g. cited primary
+# source is a dead site whose only surviving copy is a Wayback capture).
+# In that case the URL itself encodes the archival state — no CDX query,
+# no SPN submit. Timestamp (14 digits, YYYYMMDDhhmmss) → wayback_date.
+WAYBACK_URL_RE = re.compile(r"^https?://web\.archive\.org/web/(\d{8,14})/")
+
+
+def wayback_url_date(url):
+    """If URL is itself a Wayback snapshot, return its date (YYYY-MM-DD).
+    Otherwise return None."""
+    m = WAYBACK_URL_RE.match(url)
+    if not m:
+        return None
+    ts = m.group(1)[:8]  # first 8 chars = YYYYMMDD
+    return f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
 
 
 def load_manifest():
@@ -115,6 +132,11 @@ def submit_wayback(url):
 
 
 def cmd_submit_one(url):
+    if wayback_url_date(url):
+        print(f"Refusing: {url}")
+        print("  URL is already a Wayback snapshot — submitting it would archive")
+        print("  the Wayback viewer, not the original content.")
+        sys.exit(1)
     print(f"Submitting: {url}")
     ok, result = submit_wayback(url)
     if ok:
@@ -162,12 +184,26 @@ def main():
     print(f"  To check:             {len(to_check)}")
     print(f"  Mode:                 {'check only' if args.check_only else 'check + submit'}\n")
 
-    found = submitted = errors = unknown = 0
+    found = submitted = errors = unknown = native = 0
 
     for i, e in enumerate(to_check):
         url = e["url"]
         short = url[:80] + "..." if len(url) > 80 else url
         print(f"  [{i+1}/{len(to_check)}] {short}")
+
+        # Short-circuit: URL is itself a Wayback snapshot (dead source
+        # whose only surviving copy is the capture). Don't CDX-query a
+        # wayback URL — the timestamp IS the archival record.
+        wb_date = wayback_url_date(url)
+        if wb_date:
+            e["wayback_date"] = wb_date
+            e["archive_status"] = e.get("archive_status", 0) | 2
+            native += 1
+            print(f"           ARCHIVE-NATIVE (from URL timestamp {wb_date})")
+            save_manifest(entries)
+            if i < len(to_check) - 1:
+                time.sleep(1)
+            continue
 
         ts, state = check_wayback(url)
         if state == "found":
@@ -201,10 +237,11 @@ def main():
             time.sleep(1)
 
     print("\n" + "=" * 64)
-    print(f"  Found:     {found}")
-    print(f"  Submitted: {submitted}")
-    print(f"  Unknown:   {unknown}  (CDX errored; will retry next run)")
-    print(f"  Errors:    {errors}")
+    print(f"  Found:          {found}")
+    print(f"  Archive-native: {native}  (URL is already a Wayback snapshot)")
+    print(f"  Submitted:      {submitted}")
+    print(f"  Unknown:        {unknown}  (CDX errored; will retry next run)")
+    print(f"  Errors:         {errors}")
     print("=" * 64)
 
 
