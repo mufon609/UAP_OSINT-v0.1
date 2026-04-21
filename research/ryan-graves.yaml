@@ -4,7 +4,6 @@ schema_version: 1
 target_node: people/ryan-graves
 status: active
 created: '2026-04-20'
-last_iteration: i1
 primary_sources:
 - path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   format: pdf
@@ -23,7 +22,6 @@ context_extrinsic:
 quotes:
 - id: q1
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: I have witnessed advanced UAP on multiple sensor systems firsthand, and I'm here to voice the concerns of countless commercial aircrew and military veterans who have confided their similar encounters with me.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -34,7 +32,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q2
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: It has been more than a decade since my squadron began witnessing advanced UAP demonstrating complex maneuvers on a regular basis, and we still don't have answers.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -45,7 +42,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q3
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: I joined the U.S. Navy in 2009. As a pilot, I was trained to be an expert observer, tasked with identifying any aircraft within our operating area. In 2014, I was near Virginia Beach as part of VFA-11, a Navy Fighter/Attack Squadron made up of F/A-18F Super Hornets. Upon an upgrade to our radar system, we began to detect unknown objects in our airspace. Initially dismissed as software glitches, we soon corroborated these radar tracks with infrared sensors, confirming their physical presence.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -56,7 +52,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q4
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: Over time, UAP sightings became an open secret among our aircrew. They were a common occurrence, seen by most of my colleagues on radar and occasionally up close. The sightings were so frequent that they became part of daily briefs.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -67,7 +62,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q5
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: A pivotal incident occurred during an air combat training mission in Warning Area W-72, an exclusive block of airspace ten miles east of Virginia Beach. All traffic into the training area goes through a single GPS point at a set altitude. Just at the moment the two jets crossed the threshold, one of the pilots saw a dark gray cube inside of a clear sphere — motionless against the wind, fixed directly at the entry point. The jets, only 100 feet apart, were forced to take evasive action. They terminated the mission immediately and returned to base. Our squadron submitted a safety report, but there was no official acknowledgement of the incident and no further mechanism to report the sightings.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -78,7 +72,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q6
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: The UAP we encountered and tracked on multiple sensors behaved in ways that surpassed our understanding and technology. The UAP could accelerate at speeds up to Mach 1, hold their position against hurricane-force winds, and outlast our fighter jets, operating continuously throughout the day. They did not have any visible means of lift, control surfaces or propulsion — nothing that resembled normal aircraft with wings, flaps or engines. I am a formally trained engineer and I have no explanation for this.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -89,7 +82,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q7
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: I founded Americans for Safe Aerospace to create a center of support, research, and public education for aircrew impacted by UAP encounters. We now have nearly 5,000 members and are actively working with more than 30 UAP witnesses who have approached us. I am also the Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics, where we have assembled a volunteer team of almost 80 PhDs and aerospace engineers dedicated to tackling the science around this issue.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -100,7 +92,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q8
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: Recently, I have received confirmation that these encounters were also a shock to the chain of command from one of our advisors at ASA, Rear Admiral Tim Gallaudet, former head of National Oceanic and Atmospheric Administration, and Oceanographer of the Navy.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -111,7 +102,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q9
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: While serving as an Admiral with Fleet Forces Command, he received a classified email on SIPRNET in 2015 from his boss, the Operations Commander, to all 1- and 2-star Admiral subordinates. The title of the email was "Urgent safety of flight issue." He attached the now famous GO-FAST UAP video from a Navy F/A-18, asking if anyone knew their origin, and expressed safety of flight concerns about multiple near mid-air collisions with UAP in the early warning area off Virginia Beach where my encounters occurred, noting they might shut down the exercise for safety reasons.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
@@ -122,7 +112,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q10
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: I was not. I was there when the pilot landed. He canceled the mission after. I was there. He was in the ready room with all his gear on with his mouth open and I asked him what the problem was and he said he almost hit one of those darn things.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
@@ -133,7 +122,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q11
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: Some of the behaviors that we saw in our working area, we would see these objects being at 0.0 Mach —that is zero airspeed—over certain pieces of the ground. So, what that means just like a river if you throw a bobber in it is going to float downstream. These objects were staying completely stationary in category four hurricane winds. These same objects would then accelerate to supersonic speeds—1.1, 1.2 Mach—and they would do so in very erratic and quick behaviors that we do not—I do not have an explanation for.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
@@ -144,7 +132,6 @@ quotes:
   statement_date: '2023-07-26'
 - id: q12
   added_date: '2026-04-20'
-  added_by_iteration: i0
   text: Certainly. In the 2003 timeframe, a large group of Boeing contractors were operating near one of the launch facilities at Vandenberg Air Force Base when they observed a very large 100-yard sighted red square approach the base from the ocean and hover at low altitude over one of the launch facilities. This object remained for about 45 seconds or so before darting off over the mountains. There was a similar event within 24 hours, later in the evening. This was a morning event, I believe 8:45 in the morning. Later in the evening, post sunset, there were reports of other sightings on base including some aggressive behaviors. These objects were approaching some of the security guards at rapid speeds before darting off, and this is information that was received through one of the witnesses that have approached me at Americans for Safe Aerospace.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
@@ -157,7 +144,6 @@ claims: []
 entities_referenced:
 - id: e2
   added_date: '2026-04-20'
-  added_by_iteration: i0
   entity_type: organization
   name: U.S. Navy
   wrap_path: /organizations/us-navy
@@ -167,7 +153,6 @@ entities_referenced:
   - quote_id: q3
 - id: e3
   added_date: '2026-04-20'
-  added_by_iteration: i0
   entity_type: organization
   name: Navy Fighter/Attack Squadron 11
   wrap_path: /organizations/vfa-11
@@ -180,7 +165,6 @@ entities_referenced:
   - quote_id: q11
 - id: e4
   added_date: '2026-04-20'
-  added_by_iteration: i0
   entity_type: organization
   name: Americans for Safe Aerospace
   wrap_path: /organizations/americans-for-safe-aerospace
@@ -190,7 +174,6 @@ entities_referenced:
   - quote_id: q12
 - id: e5
   added_date: '2026-04-20'
-  added_by_iteration: i0
   entity_type: organization
   name: American Institute of Aeronautics and Astronautics
   wrap_path: /organizations/aiaa
@@ -199,7 +182,6 @@ entities_referenced:
   - quote_id: q7
 - id: e6
   added_date: '2026-04-20'
-  added_by_iteration: i0
   entity_type: person
   name: Tim Gallaudet
   wrap_path: /people/tim-gallaudet
@@ -209,7 +191,6 @@ entities_referenced:
   - quote_id: q9
 - id: e7
   added_date: '2026-04-20'
-  added_by_iteration: i0
   entity_type: organization
   name: National Oceanic and Atmospheric Administration
   wrap_path: /organizations/noaa
@@ -218,7 +199,6 @@ entities_referenced:
   - quote_id: q8
 - id: e8
   added_date: '2026-04-20'
-  added_by_iteration: i0
   entity_type: media
   name: GO-FAST UAP video
   wrap_path: /media/go-fast
@@ -228,7 +208,6 @@ entities_referenced:
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'
-  added_by_iteration: i0
   observed: ‘‘FOBS’’
   canonical: '"FOBS"'
   location: written testimony line 8; transcript line 648
@@ -238,137 +217,33 @@ naming_quirks:
 research_gaps:
 - id: rg1
   added_date: '2026-04-20'
-  added_by_iteration: i0
   statement: Establish Americans for Safe Aerospace's founding year and incorporation status — not specified in either primary source
   methodology: Check state nonprofit incorporation records; cross-reference with safeaerospace.org "about" page snapshots via Wayback Machine; check Graves's Debrief / NewsNation interviews for founding-date references
   resolved: false
 - id: rg2
   added_date: '2026-04-20'
-  added_by_iteration: i0
   statement: Verify the UAP Integration & Outreach Committee at the American Institute of Aeronautics and Astronautics (q7) — formation date, charter, and public-record outputs
   methodology: Check aiaa.org announcements and press releases; search AIAA aerospace technical forum proceedings for the committee's formal charter and its published outputs post-2023
   resolved: false
 - id: rg3
   added_date: '2026-04-20'
-  added_by_iteration: i0
   statement: Full VFA-11 tenure dates — Graves states 2014 posting (written q3) but end date not specified in either source
   methodology: Cross-reference Navy Officer Record Brief (ORB) release via FOIA if available; check Graves's LinkedIn public record snapshots via Wayback for service-date disclosure; cross-reference with Americans for Safe Aerospace bio page
   resolved: false
 - id: rg4
   added_date: '2026-04-20'
-  added_by_iteration: i0
   statement: Corroborate the 2015 Gallaudet SIPRNET email with the GO-FAST UAP video (q9) through Gallaudet's own on-record statements or testimony
   methodology: Check Gallaudet's public interviews and any congressional testimony / SASC/HPSCI transcripts for first-person accounts of the 2015 SIPRNET email; cross-reference with Ross Coulthart / NewsNation reporting archives for Gallaudet's own retelling
   resolved: false
 - id: rg5
   added_date: '2026-04-20'
-  added_by_iteration: i0
   statement: Identify the two F-18 pilots in the Warning Area W-72 GPS-threshold encounter (q5) — the pilot who observed the dark gray cube inside a clear sphere at the entry point
   methodology: Check Navy VFA-11 training-mission logs for 2014-2015 via FOIA; cross-reference with Americans for Safe Aerospace witness program for attributed pilot testimony; check post-hearing press coverage for any pilot coming forward publicly
   resolved: false
-iterations:
-- id: i0
-  date: '2026-04-20'
-  trigger: initial-build
-  summary: 'First end-to-end Phase I population of the Graves eyewitness-
-
-    archetype person artifact. Two archived primary sources — written
-
-    testimony (PDF) and oral hearing transcript (PDF) for the 2023-07-26
-
-    House Oversight UAP hearing. 12 quotes (8 direct observations of
-
-    VFA-11 sensor encounters and the fellow-pilot post-flight reaction;
-
-    4 relayed accounts covering the W-72 GPS-threshold incident,
-
-    Gallaudet''s 2015 SIPRNET email, the 2003 Vandenberg incident, and
-
-    Gimbal-related content). 6 timeline entries spanning 2009 Navy
-
-    joining through 2023-07-26 sworn testimony. 4 affiliations (U.S.
-
-    Navy, VFA-11 Red Rippers, Americans for Safe Aerospace, AIAA UAP
-
-    Integration & Outreach Committee). 3 relationships (Fravor, Grusch,
-
-    Gallaudet). 4 corroboration_items (VFA-11 aircrew testimonial, VFA-11
-
-    multi-sensor instrumented, Gallaudet SIPRNET documentary, ASA
-
-    witness-network testimonial). 10 entities_referenced. 1 naming_quirk
-
-    (FOBS callsign smart-quote rendering in both PDFs). 5 research_gaps
-
-    (ASA founding year; AIAA UAP Integration & Outreach Committee
-
-    documentation; full VFA-11 tenure dates; Gallaudet SIPRNET
-
-    corroboration from his own on-record statements; identity of the
-
-    two W-72 F-18 pilots). Cluster B closeout — this is the final
-
-    Cluster B node.
-
-    '
-  entries_added:
-  - q1
-  - q2
-  - q3
-  - q4
-  - q5
-  - q6
-  - q7
-  - q8
-  - q9
-  - q10
-  - q11
-  - q12
-  - t1
-  - t2
-  - t3
-  - t4
-  - t5
-  - t6
-  - a1
-  - a2
-  - a3
-  - a4
-  - r1
-  - r2
-  - r3
-  - c1
-  - c2
-  - c3
-  - c4
-  - e1
-  - e2
-  - e3
-  - e4
-  - e5
-  - e6
-  - e7
-  - e8
-  - e9
-  - e10
-  - nq1
-  - rg1
-  - rg2
-  - rg3
-  - rg4
-  - rg5
-  entries_modified: []
-- id: i1
-  date: '2026-04-21'
-  trigger: audit-correction
-  summary: 'Check #16 prose-drift audit: 6 warnings on this artifact that were present at the i0 ba33f0d build but shipped anyway (commit message falsely claimed "0/0"). Three paired corrections drive to zero. (a) Deleted the final sentence of uap_relevance ("His oral Q&A also relays an account from one of his Americans for Safe Aerospace witnesses of a 2003 Vandenberg Air Force Base incident ...") — duplicative of q12 which already captures the full Vandenberg account verbatim with observation_type: relayed. uap_relevance now focuses on Graves''s direct relevance (firsthand sensor observations + the ASA/AIAA channeling role); secondary Vandenberg-relay detail lives in the Statements section via q12. Clears the `relays` warning. (b) Removed e9 (Boeing) and e10 (Vandenberg Air Force Base) from entities_referenced — both entities were named only in q12''s verbatim quote text and in the deleted uap_relevance sentence; with the sentence removed, the synthesis-level cross-reference no longer exists. Evidentiary content preserved in q12. Associated Nodes no longer includes Boeing / Vandenberg cross-references, reflecting the actual structural relationship (quote-mention only, not synthesis cross-reference). (c) Rewrote the final sentence of credibility_notes (Gallaudet SIPRNET email) to use source vocabulary directly — dropped contributor framing words `recounting`, `pattern`, `chain-of-command`, `operating-area`, and noun-form `corroboration`, restating the same evidentiary point via source-verbatim facts (Fleet Forces Command 2015, classified SIPRNET email, Urgent safety of flight issue title, GO-FAST UAP video attached, multiple near mid-air collisions in the early warning area off Virginia Beach where my encounters occurred). The corroborative significance now flows from the structural facts (senior Navy officer + same airspace + same time period + email dropped from system) rather than from contributor analytical framing. Clears the 5 `credibility_notes` warnings. Warning count on this artifact: 6 -> 0.'
-  entries_added: []
-  entries_modified: []
 rumors: []
 timeline:
 - id: t1
   added_date: '2026-04-20'
-  added_by_iteration: i0
   date: '2009'
   event: Joined the U.S. Navy
   category: affiliation
@@ -378,7 +253,6 @@ timeline:
   node_link: /organizations/us-navy
 - id: t2
   added_date: '2026-04-20'
-  added_by_iteration: i0
   date: '2014'
   event: Near Virginia Beach as part of VFA-11, a Navy Fighter/Attack Squadron made up of F/A-18F Super Hornets
   category: affiliation
@@ -388,7 +262,6 @@ timeline:
   node_link: /organizations/vfa-11
 - id: t3
   added_date: '2026-04-20'
-  added_by_iteration: i0
   date: '2014'
   event: Upon an upgrade to VFA-11 radar system, the squadron began to detect unknown objects in airspace
   category: observation
@@ -397,7 +270,6 @@ timeline:
     location: line 45
 - id: t4
   added_date: '2026-04-20'
-  added_by_iteration: i0
   date: '2015'
   event: Rear Admiral Tim Gallaudet received a classified SIPRNET email — "Urgent safety of flight issue" — with the now famous GO-FAST UAP video from a Navy F/A-18 re near mid-air collisions off Virginia Beach
   category: incident
@@ -406,7 +278,6 @@ timeline:
     location: line 76
 - id: t5
   added_date: '2026-04-20'
-  added_by_iteration: i0
   date: '2017'
   event: Recognized voices and video from the New York Times article when it came out, having seen the video when it was taken and when it was debriefed
   category: observation
@@ -415,7 +286,6 @@ timeline:
     location: line 1288
 - id: t6
   added_date: '2026-04-20'
-  added_by_iteration: i0
   date: '2023-07-26'
   event: Sworn oral testimony before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs
   category: testimony
@@ -432,7 +302,6 @@ uap_relevance: 'Graves has witnessed advanced UAP on multiple sensor systems fir
 affiliations:
 - id: a1
   added_date: '2026-04-20'
-  added_by_iteration: i0
   organization_path: /organizations/us-navy
   role: Former F-18 pilot
   period_start: '2009'
@@ -441,7 +310,6 @@ affiliations:
     location: line 43
 - id: a2
   added_date: '2026-04-20'
-  added_by_iteration: i0
   organization_path: /organizations/vfa-11
   role: F–18 Foxtrot pilot in the Navy Fighter Attack Squadron 11, the Red Rippers
   period_start: '2014'
@@ -450,7 +318,6 @@ affiliations:
     location: line 671
 - id: a3
   added_date: '2026-04-20'
-  added_by_iteration: i0
   organization_path: /organizations/americans-for-safe-aerospace
   role: founded the organization
   source:
@@ -458,7 +325,6 @@ affiliations:
     location: line 18
 - id: a4
   added_date: '2026-04-20'
-  added_by_iteration: i0
   organization_path: /organizations/aiaa
   role: Chair of the UAP Integration & Outreach Committee
   source:
@@ -467,7 +333,6 @@ affiliations:
 relationships:
 - id: r1
   added_date: '2026-04-20'
-  added_by_iteration: i0
   person_path: /people/david-fravor
   relationship: fellow witness at the July 26, 2023 House Oversight UAP hearing
   source:
@@ -475,7 +340,6 @@ relationships:
     location: line 158
 - id: r2
   added_date: '2026-04-20'
-  added_by_iteration: i0
   person_path: /people/david-grusch
   relationship: fellow witness at the July 26, 2023 House Oversight UAP hearing
   source:
@@ -483,7 +347,6 @@ relationships:
     location: line 158
 - id: r3
   added_date: '2026-04-20'
-  added_by_iteration: i0
   person_path: /people/tim-gallaudet
   relationship: one of the advisors at Americans for Safe Aerospace; former head of National Oceanic and Atmospheric Administration and Oceanographer of the Navy; Gallaudet received a 2015 classified SIPRNET email about UAP near mid-air collisions in the operating area where Graves's encounters occurred
   source:
@@ -495,7 +358,6 @@ credibility_notes: 'Graves''s testimony is under oath before the House Oversight
 corroboration_items:
 - id: c1
   added_date: '2026-04-20'
-  added_by_iteration: i0
   observer_path: /organizations/vfa-11
   observation_type: testimonial
   source:
@@ -504,7 +366,6 @@ corroboration_items:
   note: Graves's VFA-11 squadron aircrew witnessed advanced UAP on a regular basis — open secret, common occurrence, part of daily briefs
 - id: c2
   added_date: '2026-04-20'
-  added_by_iteration: i0
   observer_path: /organizations/vfa-11
   observation_type: instrumented
   source:
@@ -513,7 +374,6 @@ corroboration_items:
   note: Upon an upgrade to VFA-11 radar system, the squadron began to detect unknown objects; radar tracks corroborated with infrared sensors, confirming their physical presence
 - id: c3
   added_date: '2026-04-20'
-  added_by_iteration: i0
   observer_path: /people/tim-gallaudet
   observation_type: documentary
   source:
@@ -522,7 +382,6 @@ corroboration_items:
   note: Rear Admiral Tim Gallaudet received a 2015 classified SIPRNET email — "Urgent safety of flight issue" — with the now famous GO-FAST UAP video from a Navy F/A-18; the email was later removed from his system and his deputy's
 - id: c4
   added_date: '2026-04-20'
-  added_by_iteration: i0
   observer_path: /organizations/americans-for-safe-aerospace
   observation_type: testimonial
   source:

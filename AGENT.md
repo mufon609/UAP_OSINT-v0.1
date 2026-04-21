@@ -97,7 +97,7 @@ steady-state query path.
 - Verbatim quotes must match source character-for-character; `validate.py` checks this mechanically.
 - Contradictions are preserved, not reconciled.
 - Sworn testimony is a distinct evidentiary fact from the truth of the claim testified to.
-- **One node per build session. One iteration per update session.** Batch construction violates the discipline; see `meta/toolkit-notes/pilot-failure-2026-04-17.md` for the case that established this rule.
+- **One node per build session.** Batch construction violates the discipline; see `meta/toolkit-notes/pilot-failure-2026-04-17.md` for the case that established this rule.
 - Source-read-first: every node's content traces to a primary source file extracted and read *in the session the content was written*. Not training knowledge.
 
 ---

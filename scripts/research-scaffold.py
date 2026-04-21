@@ -5,7 +5,6 @@ Scaffold an empty research artifact for a target node.
 Produces research/{slug}.yaml with:
   - required top-level keys populated with defaults
   - empty lists for each content section
-  - initial iteration entry (i0) logged
   - `rumors` section present only when target_node type ∈
     {person, organization, event, location} (per schema.yaml
     research-artifact.conditional_keys)
@@ -222,7 +221,6 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         "target_node": f"{TYPE_DIRS[node_type]}/{slug}",
         "status": "active",
         "created": today,
-        "last_iteration": "i0",
         "description": "",
         "primary_sources": build_primary_sources_list(source_paths, manifest),
         "document_intrinsic": {},
@@ -232,16 +230,6 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         "entities_referenced": [],
         "naming_quirks": [],
         "research_gaps": [],
-        "iterations": [
-            {
-                "id": "i0",
-                "date": today,
-                "trigger": "initial-build",
-                "summary": "Scaffolded empty research artifact — to be populated during Phase I",
-                "entries_added": [],
-                "entries_modified": [],
-            }
-        ],
     }
     # Type-conditional `rumors` section
     if node_type in RUMORS_TYPES:

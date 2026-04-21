@@ -509,7 +509,6 @@ types:
       - target_node           # {type}/{slug} of the node this artifact backs
       - status                # active | archived
       - created               # YYYY-MM-DD
-      - last_iteration        # i0 | i1 | i2 ... (bumps with each iteration)
       - description           # 1-3 paragraphs of prose; renders as node's Description section. Required on all artifact types EXCEPT person — person body renderer emits Background / UAP Relevance / Credibility Notes from dedicated fields and never calls render_description, so description on a person artifact is unrendered content.
       - primary_sources       # list — sources this artifact draws on
       - document_intrinsic    # dict — facts the primary source(s) state internally.
@@ -571,7 +570,10 @@ types:
       - entities_referenced   # list — every named person/org/event/doc/location
       - naming_quirks         # list — source-specific oddities (typos, alt spellings)
       - research_gaps         # list — investigation threads, resolved or open
-      - iterations            # list — audit log of updates since initial build
+    # Audit trail / history: git log and git diff on the artifact file
+    # are authoritative. No in-artifact iteration log. Entry lifecycle
+    # fields (superseded_by / contradicted_by / corroborated_by) provide
+    # content-versioning pointers that remain independent of edit history.
 
     # Type-conditional keys — present only on research artifacts whose
     # target_node type (or archetype, for person artifacts) matches the
@@ -749,19 +751,21 @@ types:
     # Every entry across claims, quotes, entities_referenced, rumors,
     # naming_quirks, research_gaps carries the lifecycle fields below.
     entry_lifecycle_fields:
-      required: [id, added_date, added_by_iteration]
+      required: [id, added_date]
       optional:
         - superseded_by           # entry id within this artifact, or external ref
         - contradicted_by         # same
         - corroborated_by         # list of entry ids or external refs
       # Content-lifecycle fields above support the Node Versioning
       # discipline (originals preserved; corrections added alongside
-      # via Superseded By / Contradicted By pointers). Per-entry audit
-      # tracking (last_audited_date / audit_cadence_days / audit_status)
-      # was removed 2026-04-20 along with scripts/audit-schedule.py —
-      # feature went unused across the corpus and its schema-declared
-      # default wasn't enforced by the script. Rebuild if real overdue-
-      # tracking requirements surface.
+      # via Superseded By / Contradicted By pointers). Iteration-log
+      # tracking (added_by_iteration / iterations[] / last_iteration)
+      # was removed 2026-04-21 — git log / git diff on the artifact
+      # file are authoritative for edit history; the in-artifact log
+      # was duplicative ceremony. Per-entry audit tracking
+      # (last_audited_date / audit_cadence_days / audit_status) was
+      # removed 2026-04-20 along with scripts/audit-schedule.py.
+      # Rebuild either if real tracking requirements surface.
 
     # Per-section entry shapes (each inherits lifecycle fields above):
 
@@ -1136,14 +1140,6 @@ types:
       #   true when the gap's closure is itself the primary record (null
       #   findings, methodology outcomes).
 
-    iteration_entry:
-      required: [id, date, trigger, summary]
-      optional: [entries_added, entries_modified]
-      # id: i0 (initial build), i1, i2, ... — sequential
-      # trigger: initial-build | new-source | oq-resolution | cross-node-update | audit-correction | other
-      # summary: short prose describing what changed
-      # entries_added / entries_modified: lists of entry ids
-
     # --- Validation invariants (enforced by scripts/validate-research.py) ---
 
     invariants:
@@ -1154,7 +1150,7 @@ types:
 
       # Entry-level
       - "every entry id is unique within its section"
-      - "every entry has required lifecycle fields (id, added_date, added_by_iteration)"
+      - "every entry has required lifecycle fields (id, added_date)"
 
       # Cross-reference
       - "every sources[].path exists in sources/manifest.yaml"
@@ -1178,10 +1174,6 @@ types:
       - "media_versioning[].aspect in [duration, encoding, metadata, content, provenance, other] (warn on unknown; `other` permitted)"
       - "key_personnel[].leadership_class (when set) in [director, deputy, staff, advisor, other]"
       - "org_relationships[].relationship_type in [parent, subsidiary, predecessor, successor, contractor, contracting-agency, partner, other]"
-
-      # Iterations log
-      - "iterations[].id values are sequential (i0, i1, i2, ...) with no gaps"
-      - "every entry's added_by_iteration refers to an existing iteration.id"
 
       # Conditional sections
       - "rumors section present if target_node type in [person, organization, event, location]; absent otherwise"

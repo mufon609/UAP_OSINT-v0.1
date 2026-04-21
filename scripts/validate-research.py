@@ -7,9 +7,9 @@ Structural checks only — does NOT compare against the target node
 
 Checks (per schema.yaml research-artifact.invariants):
   - Required top-level keys present (id, type, schema_version, target_node,
-    status, created, last_iteration, description, primary_sources,
-    document_intrinsic, context_extrinsic, quotes, claims,
-    entities_referenced, naming_quirks, research_gaps, iterations)
+    status, created, description, primary_sources, document_intrinsic,
+    context_extrinsic, quotes, claims, entities_referenced, naming_quirks,
+    research_gaps)
   - id matches file path
   - type == 'research-artifact'
   - schema_version ∈ schema.compatible_with
@@ -19,8 +19,6 @@ Checks (per schema.yaml research-artifact.invariants):
     enum values
   - primary_sources[].path and sources[].path appear in sources/manifest.yaml
   - quote_ref and entity references point to existing entry ids
-  - iterations log is sequential (i0, i1, i2, ...)
-  - Every added_by_iteration value refers to an existing iteration id
   - Conditional `rumors` section present if target_node type ∈
     {person, organization, event, location}; absent otherwise
   - Conditional `timeline` section present if target_node type ∈
@@ -160,9 +158,9 @@ TYPE_DIRS = {
 
 REQUIRED_TOP_LEVEL_KEYS = [
     "id", "type", "schema_version", "target_node", "status", "created",
-    "last_iteration", "primary_sources", "document_intrinsic",
+    "primary_sources", "document_intrinsic",
     "context_extrinsic", "quotes", "claims", "entities_referenced",
-    "naming_quirks", "research_gaps", "iterations",
+    "naming_quirks", "research_gaps",
 ]
 
 # `description` is required on all artifact types EXCEPT person. Person
@@ -177,20 +175,18 @@ DESCRIPTION_REQUIRED_TYPES = {
     "organization", "finding", "location",
 }
 
-# All entry-bearing typed sections that participate in the lifecycle-
-# fields and cross-ref checks (check_added_by_iteration,
-# check_cross_refs). A section listed here need not be present on every
-# artifact — presence is gated elsewhere by type / kind / archetype
-# conditional rules. The iteration checks use `_entries()` which returns
-# an empty list for absent sections, so enumerating all sections is safe
+# All entry-bearing typed sections that participate in lifecycle-field
+# and cross-ref checks (check_cross_refs). A section listed here need
+# not be present on every artifact — presence is gated elsewhere by
+# type / kind / archetype conditional rules. `_entries()` returns an
+# empty list for absent sections, so enumerating all sections is safe
 # regardless of which ones any given artifact carries.
 #
 # Update this list when a new typed section is introduced (e.g., new F-
-# sub-phase sections). Single source of truth avoids the F.5a-era gap
+# sub-phase sections). Single source of truth avoids cross-ref gaps
 # where new typed sections (timeline / affiliations / key_personnel /
-# contracts / etc.) were structurally validated per-section but not
-# cross-validated for added_by_iteration / superseded_by /
-# contradicted_by / corroborated_by refs.
+# contracts / etc.) get structurally validated per-section but miss
+# the superseded_by / contradicted_by / corroborated_by ref check.
 ALL_ENTRY_SECTIONS = [
     # Universal (top-level required on every artifact)
     "quotes",
@@ -239,10 +235,6 @@ VALID_ENTITY_TYPES = {
     "media", "location", "finding"
 }
 VALID_STATUS = {"active", "archived"}
-VALID_ITERATION_TRIGGERS = {
-    "initial-build", "new-source", "oq-resolution", "cross-node-update",
-    "audit-correction", "other",
-}
 VALID_OBSERVATION_TYPES = {"direct", "relayed"}
 VALID_CORROBORATION_OBS_TYPES = {
     "testimonial", "instrumented", "government-statement", "documentary"
@@ -818,12 +810,6 @@ def validate_artifact(path, schema, manifest_paths):
     if "location_relationships" in data:
         issues.extend(check_location_relationships(rel, data, manifest_paths))
 
-    # --- Iteration log ---
-    issues.extend(check_iterations(rel, data))
-
-    # --- added_by_iteration cross-ref ---
-    issues.extend(check_added_by_iteration(rel, data))
-
     # --- Cross-ref integrity (quote_ref, entity references, supersedes/etc) ---
     issues.extend(check_cross_refs(rel, data))
 
@@ -868,9 +854,9 @@ def _check_unique_ids(rel, entries, section_name):
 
 
 def _check_lifecycle_fields(rel, entry, section_name, i):
-    """Every entry requires id, added_date, added_by_iteration."""
+    """Every entry requires id, added_date."""
     issues = []
-    required = ["id", "added_date", "added_by_iteration"]
+    required = ["id", "added_date"]
     for field in required:
         if field not in entry:
             issues.append(Issue(rel, "error",
@@ -2117,62 +2103,6 @@ def check_prose_drift(rel, data, target_type):
                 prose_tokens, unmatched,
             ))
 
-    return issues
-
-
-def check_iterations(rel, data):
-    issues = []
-    its = _entries(data, "iterations")
-    if not its:
-        issues.append(Issue(rel, "error", "iterations list must contain at least i0 (initial build)"))
-        return issues
-    # IDs must be i0, i1, i2, ... sequential
-    seen = []
-    for i, it in enumerate(its):
-        if not isinstance(it, dict):
-            issues.append(Issue(rel, "error", f"iterations[{i}]: must be a dict"))
-            continue
-        iid = it.get("id")
-        expected = f"i{i}"
-        if iid != expected:
-            issues.append(Issue(rel, "error",
-                f"iterations[{i}]: id {iid!r} must be {expected!r} (sequential, no gaps)"))
-        for field in ["id", "date", "trigger", "summary"]:
-            if field not in it:
-                issues.append(Issue(rel, "error",
-                    f"iterations[{i}]: missing required {field!r}"))
-        trig = it.get("trigger")
-        if trig is not None and trig not in VALID_ITERATION_TRIGGERS:
-            issues.append(Issue(rel, "error",
-                f"iterations[{i}]: trigger {trig!r} not in {sorted(VALID_ITERATION_TRIGGERS)}"))
-        if iid:
-            seen.append(iid)
-    return issues
-
-
-def check_added_by_iteration(rel, data):
-    """Every typed-section entry's `added_by_iteration` must point at
-    an existing `iteration.id`. Enumerates over ALL_ENTRY_SECTIONS so
-    newer typed sections (timeline / affiliations / key_personnel /
-    contracts / etc.) are cross-validated, not only the universal 6
-    the pre-F.5a version covered.
-    """
-    issues = []
-    iteration_ids = {
-        it.get("id") for it in _entries(data, "iterations")
-        if isinstance(it, dict)
-    }
-    for section in ALL_ENTRY_SECTIONS:
-        for i, entry in enumerate(_entries(data, section)):
-            if not isinstance(entry, dict):
-                continue
-            abi = entry.get("added_by_iteration")
-            if abi is None:
-                continue  # caught by lifecycle check
-            if abi not in iteration_ids:
-                issues.append(Issue(rel, "error",
-                    f"{section}[{i}] ({entry.get('id')!r}): "
-                    f"added_by_iteration {abi!r} does not match any iteration.id"))
     return issues
 
 

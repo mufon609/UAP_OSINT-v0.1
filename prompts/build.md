@@ -34,10 +34,11 @@ Until those ship, build unsupported types by hand following
    Phase III reviews coverage. Do not write node body content during
    Phase I. Do not update the research artifact during Phase II.
 
-4. **Append-only research artifacts.** Never delete entries. Use
-   `superseded_by` / `contradicted_by` / `corroborated_by` to preserve
-   history. New material arrives via a new iteration entry, not by
-   overwriting old entries.
+4. **Content versioning, not edit ceremony.** When new material
+   contradicts or supersedes an existing entry, use `superseded_by` /
+   `contradicted_by` / `corroborated_by` pointers — preserve the
+   original entry and add the new one alongside. Edit history itself
+   lives in git log / git diff, not in the artifact.
 
 ---
 
@@ -70,10 +71,9 @@ python3 scripts/research-scaffold.py --target {type}/{slug} \
     --sources {comma-separated-source-paths-relative-to-sources/}
 ```
 
-This creates `research/{slug}.yaml` with empty content sections and an
-initial iteration entry (`i0`). A `rumors:` section is included only if
-the target node type is `person`, `organization`, `event`, or
-`location`.
+This creates `research/{slug}.yaml` with empty content sections.
+A `rumors:` section is included only if the target node type is
+`person`, `organization`, `event`, or `location`.
 
 Validate the scaffold passed its structural checks:
 ```
@@ -186,7 +186,7 @@ free-prose field, not just `description`.
     hearing-event artifacts, drives Key Testimony sort.
   - `category` (optional free-text tag) — e.g., `filed-claim` on
     whistleblower artifacts so the Claim Inventory renderer can filter.
-  - Standard lifecycle fields (id, added_date, added_by_iteration: i0).
+  - Standard lifecycle fields (id, added_date).
 
 **Discipline:**
 - Every quote is copy-pasted from the extracted text — not typed, not
@@ -545,8 +545,8 @@ or premise the source doesn't attest?* If yes, the prose field needs
 tightening. If no — the resolution is still to rewrite to source
 vocabulary on free-prose fields (or document the variance
 structurally). The F.1c Fravor audit (commit `f67f6e8`) and F.2c
-Nimitz audit (commit `305407d`) both demonstrated the
-iteration-correction pattern driven by this discipline.
+Nimitz audit (commit `305407d`) both demonstrated the audit-correction
+pattern driven by this discipline.
 
 ### Phase I complete
 

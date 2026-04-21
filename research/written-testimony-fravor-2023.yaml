@@ -4,7 +4,6 @@ schema_version: 1
 target_node: documents/written-testimony-fravor-2023
 status: active
 created: '2026-04-17'
-last_iteration: i6
 description: 'David Fravor''s ([`/people/david-fravor`]) prepared written statement submitted for the record at the July 26, 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]). The statement opens with Fravor''s identification as a retired U.S. Navy ([`/organizations/us-navy`]) Commander and his November 2004 role as Commanding Officer of Strike Fighter Squadron Forty-One ([`/organizations/vfa-41`]), attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) aboard USS Nimitz ([`/organizations/uss-nimitz`]). The bulk of the document is a first-person narrative of the November 2004 USS Nimitz UAP encounter ([`/events/2004-nimitz-encounter`]): the 2 V 2 Air to Air training exercise controlled by USS Princeton ([`/organizations/uss-princeton`]) with Marine squadron VMFA-232 ([`/organizations/vmfa-232`]) flying Red Air; the training suspended upon launch for real-world tasking; Princeton''s prior two weeks of Aegis tracking; the pilots'' approach at approximately 20,000 ft; the object''s disappearance at close range; and its reacquisition 60 miles east in less than a minute.
 
 
@@ -54,7 +53,6 @@ context_extrinsic:
 quotes:
 - id: q1
   added_date: '2026-04-17'
-  added_by_iteration: i0
   text: My name is David Fravor and I am a retired Commander in the U.S Navy.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -63,7 +61,6 @@ quotes:
   context: opening statement
 - id: q2
   added_date: '2026-04-17'
-  added_by_iteration: i0
   text: In Nov 2004, I was the Commanding Officer of Strike Fighter Squadron Forty-One, the World Famous Black Aces!
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -72,7 +69,6 @@ quotes:
   context: opening statement
 - id: q3
   added_date: '2026-04-17'
-  added_by_iteration: i0
   text: As we pulled nose onto the object at approximately ½ of a mile with the object just left of our nose, it rapidly accelerated and disappeared right in front of our aircraft.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -81,7 +77,6 @@ quotes:
   context: encounter narrative
 - id: q4
   added_date: '2026-04-17'
-  added_by_iteration: i0
   text: This Tic Tac Object had just traveled 60 miles in a very short period of time (less than a minute), was far superior in performance to my brand-new F/A-18F and did not operate with any of the known aerodynamic principles that we expect for objects that fly in our atmosphere.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -90,7 +85,6 @@ quotes:
   context: encounter narrative
 - id: q5
   added_date: '2026-04-17'
-  added_by_iteration: i0
   text: What is shocking is that the incident was never investigated, none of my crew were ever questioned, tapes were never taken, and after a couple of days, it turned into a great story to tell friends.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -99,7 +93,6 @@ quotes:
   context: post-encounter
 - id: q6
   added_date: '2026-04-17'
-  added_by_iteration: i0
   text: Not until 2009 did Jay Stratton contact me to investigate what we observed. Unbeknownst to all of us, Jay was part of the ATIP (Anomalous Threat Identification Program) program led by Lue Elizondo out of the DOD.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -108,7 +101,6 @@ quotes:
   context: post-encounter
 - id: q7
   added_date: '2026-04-17'
-  added_by_iteration: i0
   text: What concerns me is that there is no "Oversight" from our elected officials on anything associated with our government possessing or working on craft that we believe are not from this world.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -117,7 +109,6 @@ quotes:
   context: call for congressional oversight
 - id: q8
   added_date: '2026-04-17'
-  added_by_iteration: i0
   text: In closing, I would like to say that the Tic Tac Object that we engaged in Nov 2004 was far superior to anything that we had at the time, have today, or are looking to develop in the next 10+ years.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -126,7 +117,6 @@ quotes:
   context: closing statement
 - id: q9
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: We were attached to Carrier Airwing Eleven and stationed onboard the USS Nimitz (CVN-68).
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -135,7 +125,6 @@ quotes:
   context: opening statement
 - id: q10
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: I was scheduled to lead a 2 V 2 Air to Air training exercise. My flight of 2 F/A-18Fs was the Blue Air, the good guys, and we were being controlled by the USS Princeton, CG-59.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -144,7 +133,6 @@ quotes:
   context: training context
 - id: q11
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: The Red Air was being flown by our Marine F/A-18 squadron VMFA-232.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -153,7 +141,6 @@ quotes:
   context: training context
 - id: q12
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: The air controller on the ship also had no idea but had been observing these objects on their Aegis combat system for the previous 2 weeks. They had been descending from above 80,000ft and coming rapidly down to 20,000ft would stay for hours and then go straight back up.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -162,7 +149,6 @@ quotes:
   context: pre-intercept context
 - id: q13
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: As all 4 looked down we saw a small white Tic Tac shaped object with the longitudinal axis pointing N/S and moving very abruptly over the white water. There were no Rotors, No Rotor wash, or any visible flight control surfaces like wings.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -171,7 +157,6 @@ quotes:
   context: encounter narrative
 - id: q14
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: It was that crew that took the now famous approximately 90 second video that was released by the USG in 2017.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -180,7 +165,6 @@ quotes:
   context: post-encounter
 - id: q15
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: Years later I was contacted by Alex Dietrich, the other pilot in my flight asking if I had ever been contacted about the incident after 2009.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -189,7 +173,6 @@ quotes:
   context: post-encounter
 - id: q16
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: Alex stated that she had been invited to the Pentagon multiple times to discuss the event and view other videos of UAPs.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -198,7 +181,6 @@ quotes:
   context: post-encounter
 - id: q17
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: I was contacted by Mr Elizondo shortly after talking with Alex in 2016.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -207,7 +189,6 @@ quotes:
   context: post-encounter
 - id: q18
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: In the weeks that passed I was made aware that Lue had left the pentagon in protest and joined forces with Tom Delonge, Chris Mellon, Steve Justice and others to form To The Stars Academy.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -216,7 +197,6 @@ quotes:
   context: TTSA formation narrative
 - id: q19
   added_date: '2026-04-17'
-  added_by_iteration: i1
   text: It was this organization that pressed the issue with leading Industry experts and USG officials, worked with Leslie Keane, Ralph Blumenthal and Helene Cooper to publish the articles in the NYT in Dec 2017 admitting the USG was looking at UAPs and removed the Stigma of the UFO topic which led to us being here today.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -225,7 +205,6 @@ quotes:
   context: disclosure-pipeline narrative
 - id: q20
   added_date: '2026-04-17'
-  added_by_iteration: i2
   text: As we launched off the USS Nimitz, we checked in with the air controller on the USS Princeton, we were told that training was going to be suspended for real world tasking.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -236,140 +215,120 @@ claims: []
 entities_referenced:
 - id: e1
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: David Fravor
   wrap_path: /people/david-fravor
   context_summary: Author of this written testimony; retired U.S. Navy Commander; commanding officer of VFA-41 in November 2004
 - id: e2
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: organization
   name: U.S. Navy
   wrap_path: /organizations/us-navy
   context_summary: Fravor's service branch; parent organization of VFA-41, USS Nimitz, USS Princeton, Carrier Airwing Eleven
 - id: e3
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: organization
   name: Strike Fighter Squadron Forty-One (VFA-41)
   wrap_path: /organizations/vfa-41
   context_summary: '"World Famous Black Aces" — Navy F/A-18F squadron Fravor commanded in November 2004'
 - id: e4
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: organization
   name: Carrier Airwing Eleven
   wrap_path: /organizations/carrier-airwing-eleven
   context_summary: Carrier air wing to which VFA-41 was attached aboard USS Nimitz
 - id: e5
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: organization
   name: USS Nimitz (CVN-68)
   wrap_path: /organizations/uss-nimitz
   context_summary: Carrier hosting Fravor's squadron at the time of the 2004 encounter
 - id: e6
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: organization
   name: USS Princeton (CG-59)
   wrap_path: /organizations/uss-princeton
   context_summary: Ticonderoga-class guided-missile cruiser controlling the 2 V 2 training exercise and tracking the UAP on Aegis SPY 1 radar
 - id: e7
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: organization
   name: VMFA-232
   wrap_path: /organizations/vmfa-232
   context_summary: U.S. Marine F/A-18 squadron flying Red Air in the 2 V 2 training exercise
 - id: e8
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: Jay Stratton
   wrap_path: /people/jay-stratton
   context_summary: Contacted Fravor in 2009 to investigate the encounter; described as part of the program Fravor names "ATIP" led by Lue Elizondo
 - id: e9
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: Luis Elizondo
   wrap_path: /people/luis-elizondo
   context_summary: Named as leader of the program Fravor calls "ATIP"; contacted Fravor directly in 2016; left the Pentagon and co-founded TTSA
 - id: e10
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: organization
   name: Department of Defense (DOD)
   wrap_path: /organizations/dod
   context_summary: Organizational home of the program Fravor names "ATIP"
 - id: e11
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: Alex Dietrich
   wrap_path: /people/alex-dietrich
   context_summary: The other pilot in Fravor's flight; per Fravor, invited to the Pentagon multiple times to discuss the event and view other UAP videos
 - id: e12
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: Tom DeLonge
   wrap_path: /people/tom-delonge
   context_summary: Co-founder of To The Stars Academy, per Fravor's account
 - id: e13
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: Christopher Mellon
   wrap_path: /people/christopher-mellon
   context_summary: Co-founder of To The Stars Academy, per Fravor's account
 - id: e14
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: Steve Justice
   wrap_path: /people/steve-justice
   context_summary: Co-founder of To The Stars Academy, per Fravor's account
 - id: e15
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: organization
   name: To The Stars Academy (TTSA)
   wrap_path: /organizations/ttsa
   context_summary: Organization founded by Elizondo, DeLonge, Mellon, Justice and others; per Fravor, worked with NYT journalists on the December 2017 disclosure articles
 - id: e16
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: Leslie Kean
   wrap_path: /people/leslie-kean
   context_summary: Journalist; Fravor's statement spells her name "Leslie Keane" (see naming_quirks); co-author of 2017 NYT UAP reporting
 - id: e17
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: Ralph Blumenthal
   wrap_path: /people/ralph-blumenthal
   context_summary: Journalist; co-author of 2017 NYT UAP reporting
 - id: e18
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: person
   name: Helene Cooper
   wrap_path: /people/helene-cooper
   context_summary: NYT Pentagon correspondent; co-author of 2017 NYT UAP reporting
 - id: e19
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: event
   name: 2004 USS Nimitz UAP encounter
   wrap_path: /events/2004-nimitz-encounter
   context_summary: The November 2004 encounter this statement narrates
 - id: e20
   added_date: '2026-04-17'
-  added_by_iteration: i0
   entity_type: event
   name: July 26, 2023 House Oversight UAP hearing
   wrap_path: /events/2023-07-26-house-uap-hearing
@@ -377,7 +336,6 @@ entities_referenced:
 naming_quirks:
 - id: nq1
   added_date: '2026-04-17'
-  added_by_iteration: i0
   observed: Leslie Keane
   canonical: Leslie Kean
   location: ¶10
@@ -386,7 +344,6 @@ naming_quirks:
   note: Source consistently misspells the journalist's surname with a trailing 'e'. Use canonical form in prose outside quoted passages.
 - id: nq2
   added_date: '2026-04-17'
-  added_by_iteration: i0
   observed: Tom Delonge
   canonical: Tom DeLonge
   location: ¶10
@@ -395,7 +352,6 @@ naming_quirks:
   note: Source uses lowercase 'l' in DeLonge. Canonical form has internal capital.
 - id: nq3
   added_date: '2026-04-17'
-  added_by_iteration: i0
   observed: ATIP (Anomalous Threat Identification Program)
   canonical: AATIP (Advanced Aerospace Threat Identification Program)
   location: ¶8
@@ -404,7 +360,6 @@ naming_quirks:
   note: Source names the program "ATIP (Anomalous Threat Identification Program)" — inconsistent with the widely-cited "AATIP (Advanced Aerospace Threat Identification Program)". Whether this is Fravor's drafting choice, an alternate abbreviation, or a distinct entity is not resolved by this document. See research_gap rg2.
 - id: nq4
   added_date: '2026-04-17'
-  added_by_iteration: i0
   observed: U.S Navy
   canonical: U.S. Navy
   location: ¶2
@@ -414,7 +369,6 @@ naming_quirks:
 research_gaps:
 - id: rg1
   added_date: '2026-04-17'
-  added_by_iteration: i0
   statement: Cross-reference Fravor's written testimony against his oral testimony at [`/transcripts/2023-07-26-house-fravor`] to document Material Differences
   methodology: Once the hearing transcript node is built, review oral Q&A for biographical or narrative content not present in this written statement (service dates, flight hours, academic credentials, accident-investigator role — all mentioned in the oral Q&A transcript but not here)
   resolved: true
@@ -424,144 +378,16 @@ research_gaps:
   resolving_source: meta/toolkit-notes/roadmap.md (Post-F.3 — Material Differences elimination section, 2026-04-20)
 - id: rg2
   added_date: '2026-04-17'
-  added_by_iteration: i0
   statement: Resolve whether "ATIP (Anomalous Threat Identification Program)" in Fravor's written testimony refers to AATIP or a distinct program
   methodology: Examine other primary-source documents that name the program during the 2007–2012 window. Relevant archived sources include DIA memos and the Reid brief; cross-check program names and Elizondo's stated role
   resolved: false
 - id: rg3
   added_date: '2026-04-17'
-  added_by_iteration: i0
   statement: Confirm the identity of the crew member who captured the approximately 90-second video referenced at ¶7
   methodology: Written testimony refers to "one of my crews" without naming. Cross-reference against oral hearing testimony, NYT 2017 reporting, or Navy squadron records if obtainable
   resolved: false
 - id: rg4
   added_date: '2026-04-17'
-  added_by_iteration: i0
   statement: Locate and archive the "Unofficial Official Report" Fravor states is "available on the internet" (¶8)
   methodology: Search public web archives (Wayback, FAS, Black Vault) for an "Unofficial Official Report" on the 2004 Nimitz encounter. Check whether this is the same report sometimes cited as the "Nimitz Executive Summary"
   resolved: false
-iterations:
-- id: i0
-  date: '2026-04-17'
-  trigger: initial-build
-  summary: D.5 pilot rebuild — first end-to-end Phase I population of the Fravor written-testimony artifact from the archived source
-  entries_added:
-  - q1
-  - q2
-  - q3
-  - q4
-  - q5
-  - q6
-  - q7
-  - q8
-  - c1
-  - c2
-  - c3
-  - c4
-  - c5
-  - c6
-  - c7
-  - c8
-  - c9
-  - c10
-  - c11
-  - c12
-  - c13
-  - c14
-  - c15
-  - e1
-  - e2
-  - e3
-  - e4
-  - e5
-  - e6
-  - e7
-  - e8
-  - e9
-  - e10
-  - e11
-  - e12
-  - e13
-  - e14
-  - e15
-  - e16
-  - e17
-  - e18
-  - e19
-  - e20
-  - nq1
-  - nq2
-  - nq3
-  - nq4
-  - rg1
-  - rg2
-  - rg3
-  - rg4
-  entries_modified: []
-- id: i1
-  date: '2026-04-17'
-  trigger: audit-correction
-  summary: 'Applied claim-anchoring discipline (Check A quote_ref requirement + Check B token drift). Added 11 new quotes (q9–q19) to anchor previously-unanchored claims; expanded q6 to cover the ATIP sentence so c11 tokens fall within the cited quote; wired quote_refs on c3, c4, c5, c6, c9, c12, c13, c14. Fixed token drift by bringing claim prose closer to source wording: c2 and c15 "November" → "Nov"; c4 "Air-to-Air" → "Air to Air"; c5 reworded to drop redundant USS Princeton repetition; c6 "north-south" → "N/S" and "such as wings" → "like wings"; c9 dropped inference "from the same squadron" and the "U.S. Government"/"U.S." abbreviations, replaced with verbatim "USG"; c13 restored source qualifier "and others" after Steve Justice (D.5 audit finding); c14 reworded to "articles in the NYT in Dec 2017" matching source wording.'
-  entries_added:
-  - q9
-  - q10
-  - q11
-  - q12
-  - q13
-  - q14
-  - q15
-  - q16
-  - q17
-  - q18
-  - q19
-  entries_modified:
-  - q6
-  - c2
-  - c3
-  - c4
-  - c5
-  - c6
-  - c9
-  - c12
-  - c13
-  - c14
-  - c15
-- id: i2
-  date: '2026-04-17'
-  trigger: audit-correction
-  summary: 'Semantic review (post-i1 audit) caught a conflation in c4: the original statement "The intercept occurred during a 2 V 2 Air to Air training exercise" was inaccurate — per source ¶4, training was explicitly suspended for real-world tasking before the intercept, so the intercept did not occur during training. The mechanical token-drift check did not flag this (all proper nouns were in source; "intercept" and "during" are common words). Fix: narrowed c4 to describe only the scheduled training context ("Fravor was scheduled to lead..."); added c16 as a new atomic claim capturing the suspension fact ("Upon launch, Fravor''s flight was informed by the USS Princeton air controller that training was being suspended for real-world tasking") anchored to new quote q20 from ¶4. This preserves both source facts atomically rather than conflating them.'
-  entries_added:
-  - q20
-  - c16
-  entries_modified:
-  - c4
-- id: i3
-  date: '2026-04-17'
-  trigger: audit-correction
-  summary: 'Follow-on semantic polish: c6 dropped the contributor framing word "at intercept" (not in source anywhere) from its opening. Source ¶6 does not use "intercept" — it describes what the pilots saw when they "looked down" at the contact location. The rewrite drops the framing: "Per Fravor, the object was a small white Tic Tac shaped object with longitudinal axis pointing N/S...". No factual content changed; only the contributor-voice opener was aligned to source-neutral phrasing.'
-  entries_added: []
-  entries_modified:
-  - c6
-- id: i4
-  date: '2026-04-18'
-  trigger: audit-correction
-  summary: 'Architecture refactor: eliminated the claims layer for document nodes. Claims were contributor-prose summaries anchored to quotes but subject to fine-drift (dropped qualifiers, synonym rephrases, word substitutions) that mechanical checks could not catch. Document nodes are fact records whose evidentiary content is the source''s verbatim passages (quotes); other nodes that cite facts link to the document and reference the specific passage. No contributor synthesis layer between source and reader. Actions: claims: [] (preserved in iteration history but emptied); entities_referenced[].references removed (those pointed at claims that no longer exist); description expanded where entity wrap_paths previously lived only in claim prose (Fravor artifact only).'
-  entries_added: []
-  entries_modified:
-  - claims (emptied)
-  - entities_referenced (references stripped)
-  - description (Fravor only — entity-link expansion)
-- id: i5
-  date: '2026-04-18'
-  trigger: audit-correction
-  summary: Description drift fix surfaced by Check 6 (description token drift) shipping. The description contained "Congressional oversight" as contributor framing, but "Congressional" does not appear in the source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Source ¶12 uses "oversight" (lowercase, inside quoted "Oversight") and attributes the call to "our elected officials." Changed to "a call for oversight from elected officials of any U.S. government programs..." staying closer to source wording. Single-word fix; all other description tokens verified against grounding.
-  entries_added: []
-  entries_modified:
-  - description
-- id: i6
-  date: '2026-04-20'
-  trigger: audit-correction
-  summary: research_gap rg1 marked resolved — Material Differences feature eliminated from transcript nodes (Post-F.3 architectural correction). Gap is structurally moot; resolution records the restructuring. retain_as_done=false so the entry is omitted from rendered Open Questions.
-  entries_added: []
-  entries_modified:
-  - rg1

@@ -186,8 +186,8 @@ done
 # Both transcript kinds (hearing, other) scaffold the same sections
 # post-Material-Differences elimination: description / primary_sources /
 # document_intrinsic / context_extrinsic / quotes / claims / speakers /
-# entities_referenced / naming_quirks / research_gaps / iterations. A
-# clean validate pass on an empty scaffold is the pass criterion.
+# entities_referenced / naming_quirks / research_gaps. A clean validate
+# pass on an empty scaffold is the pass criterion.
 for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-other"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$tk_target" 2>&1)"
     rc=$?

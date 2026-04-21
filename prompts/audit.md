@@ -68,30 +68,24 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    verify the quirk is tracked consistently across all artifacts that
    cite the same source.
 
-## Applying corrections (iteration-correction pattern)
+## Applying corrections
 
-Audit findings that require changes should be applied as a new
-iteration on the node's research artifact, not as direct edits to
-the node body. Iteration mechanics follow the append-only discipline
-in `meta/conventions.md` Versioning; the step-by-step pattern is:
+Audit findings that require changes are edits to the research artifact,
+not direct edits to the node body. Pattern:
 
-1. Bump `last_iteration` to `i{N+1}` in the artifact
-2. Itemize each correction in an `iterations[]` entry with
-   `trigger: audit-correction`, listing `entries_modified` (and
-   `entries_added` when new material is introduced)
-3. Preserve originals via `superseded_by` pointers when substantively
-   replacing an entry (not for typo fixes)
-4. Regenerate the node (renderer-supported types):
+1. Make the change in the artifact (edit a field, add or remove an
+   entry, refine a note)
+2. When new material contradicts or supersedes an existing entry,
+   preserve the original and add the new one alongside via
+   `superseded_by` / `contradicted_by` / `corroborated_by` pointers
+   (see `meta/conventions.md` Versioning). Typo fixes and
+   clarifications edit in place; content that was substantively
+   different gets a new entry + pointer.
+3. Regenerate the node (renderer-supported types):
    `python3 scripts/build-from-research.py research/{slug}.yaml`
-5. Re-run `review-coverage.py` — must pass all four checks
-6. Run the full pre-commit chain — all five gates green
-
-Reference examples:
-- Fravor person i0 → i1 audit (commit `f67f6e8`) — tightened four
-  contributor-prose drift issues surfaced by check #16
-- Nimitz event i0 → i1 audit (commit `305407d`) — revised check #16
-  resolution policy; preserved "Lue" as alias-of-record in naming
-  quirks; drove prose-field warnings to zero
+4. Re-run `review-coverage.py` — must pass all four checks
+5. Run the full pre-commit chain — all five gates green
+6. Commit with a descriptive message; git log is the edit history.
 
 ## Audit output
 
@@ -99,8 +93,8 @@ Reference examples:
    corrections)
 2. Proposed changes (artifact diff preview + regenerated-node diff
    preview before applying)
-3. After user approval, apply changes via the iteration workflow and
-   commit as a focused audit-correction iteration
+3. After user approval, apply changes and commit as a focused
+   audit-correction commit
 
 ## Do not
 
