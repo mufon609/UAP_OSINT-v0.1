@@ -28,7 +28,7 @@ Ryan ‘‘FOBS’’ Graves is a former F-18 pilot with over a decade of servic
 
 ## UAP Relevance
 
-Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an upgrade to VFA-11 radar system in 2014, the squadron began to detect unknown objects operating in their airspace; initially dismissed as software glitches, the radar tracks were corroborated with infrared sensors and visual ID. A pivotal incident occurred during an air combat training mission in Warning Area W-72, an exclusive block of airspace ten miles east of Virginia Beach, where a dark gray cube inside of a clear sphere was fixed directly at the GPS entry point and two F-18 Super Hornets 100 feet apart were forced to take evasive action. Over time, UAP sightings became an open secret among the squadron aircrew. He is here to voice the concerns of countless commercial aircrew and military veterans who have confided their similar encounters with him. Through Americans for Safe Aerospace he now has nearly 5,000 members and is actively working with more than 30 UAP witnesses. He is also the Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics, where they have assembled a volunteer team of almost 80 PhDs and aerospace engineers dedicated to tackling the science around this issue. His oral Q&A also relays an account from one of his Americans for Safe Aerospace witnesses of a 2003 Vandenberg Air Force Base ([`/locations/vandenberg-afb`]) incident with a 100-yard sighted red square observed by Boeing ([`/organizations/boeing`]) contractors at a launch facility.
+Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an upgrade to VFA-11 radar system in 2014, the squadron began to detect unknown objects operating in their airspace; initially dismissed as software glitches, the radar tracks were corroborated with infrared sensors and visual ID. A pivotal incident occurred during an air combat training mission in Warning Area W-72, an exclusive block of airspace ten miles east of Virginia Beach, where a dark gray cube inside of a clear sphere was fixed directly at the GPS entry point and two F-18 Super Hornets 100 feet apart were forced to take evasive action. Over time, UAP sightings became an open secret among the squadron aircrew. He is here to voice the concerns of countless commercial aircrew and military veterans who have confided their similar encounters with him. Through Americans for Safe Aerospace he now has nearly 5,000 members and is actively working with more than 30 UAP witnesses. He is also the Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics, where they have assembled a volunteer team of almost 80 PhDs and aerospace engineers dedicated to tackling the science around this issue.
 
 ---
 
@@ -200,7 +200,7 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 
 ## Credibility Notes
 
-Graves's testimony is under oath before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs. He was trained as an aviation safety officer by the Navy and states he is a formally trained engineer. Over a decade of service in the U.S. Navy including two deployments in Operation Enduring Freedom and Operation Inherent Resolve. Firsthand multiple sensor observations at VFA-11 in 2014 corroborated radar tracks with infrared sensors and visual ID. The Warning Area W-72 encounter is a squadron witnessed incident he was not one of the two pilots on, but he was there when that pilot landed in the ready room. Through Americans for Safe Aerospace he has nearly 5,000 members and more than 30 UAP witnesses. Rear Admiral Tim Gallaudet is one of the advisors at ASA — former head of the National Oceanic and Atmospheric Administration ([`/organizations/noaa`]) and Oceanographer of the Navy — and his recounting of a 2015 classified SIPRNET email with the GO-FAST UAP video ([`/media/go-fast`]) from a Navy F/A-18 re near mid-air collisions off Virginia Beach provides chain-of-command corroboration for the operating-area UAP pattern.
+Graves's testimony is under oath before the House Oversight Subcommittee on National Security, the Border, and Foreign Affairs. He was trained as an aviation safety officer by the Navy and states he is a formally trained engineer. Over a decade of service in the U.S. Navy including two deployments in Operation Enduring Freedom and Operation Inherent Resolve. Firsthand multiple sensor observations at VFA-11 in 2014 corroborated radar tracks with infrared sensors and visual ID. The Warning Area W-72 encounter is a squadron witnessed incident he was not one of the two pilots on, but he was there when that pilot landed in the ready room. Through Americans for Safe Aerospace he has nearly 5,000 members and more than 30 UAP witnesses. Rear Admiral Tim Gallaudet — former head of the National Oceanic and Atmospheric Administration ([`/organizations/noaa`]) and Oceanographer of the Navy — is one of the advisors at ASA. As an Admiral with Fleet Forces Command in 2015, Gallaudet received a classified SIPRNET email with the title "Urgent safety of flight issue" and the GO-FAST UAP video ([`/media/go-fast`]) attached. The email expressed safety of flight concerns about multiple near mid-air collisions with UAP in the early warning area off Virginia Beach where Graves's encounters occurred.
 
 ---
 
@@ -218,7 +218,6 @@ Graves's testimony is under oath before the House Oversight Subcommittee on Nati
 
 - [`/organizations/aiaa`]
 - [`/organizations/americans-for-safe-aerospace`]
-- [`/organizations/boeing`]
 - [`/organizations/noaa`]
 - [`/organizations/us-navy`]
 - [`/organizations/vfa-11`]
@@ -230,10 +229,6 @@ Graves's testimony is under oath before the House Oversight Subcommittee on Nati
 ### Media
 
 - [`/media/go-fast`]
-
-### Locations
-
-- [`/locations/vandenberg-afb`]
 
 ---
 
