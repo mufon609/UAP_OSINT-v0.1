@@ -18,7 +18,7 @@ investigation grounded in primary sources.
 - Source data is never overwritten; updates are added alongside
   originals with `Superseded By` or `Contradicted By` pointers
 - Evidentiary categories (eyewitness, whistleblower, institutional-actor,
-  reporter; government, contractor, private; hearing, encounter;
+  reporter; gov, gov-contractor, private; hearing, encounter;
   gov-doc, non-gov-doc) are separated structurally so a reader sees the
   evidentiary distinction before reading the content
 
@@ -48,7 +48,7 @@ meta/
   schema.yaml               machine-readable spec (source of truth)
   conventions.md            evidentiary philosophy (why the rules exist)
   sources-access.md         site-specific archival workarounds
-  templates/                scaffolding templates (9 files)
+  templates/                scaffolding templates (8 files, one per node type)
   topic/                    THIS INSTANCE'S topic-specific content
     overview.md             topic statement, scope, corpora
     research-queue.md       priority investigation queue
@@ -59,12 +59,22 @@ meta/
 
 scripts/
   new.py                    scaffolder — produces empty node from template
-  validate.py               schema + structural + source-integrity validation
+  research-scaffold.py      scaffold the research artifact backing a node
+  extract-source.py         extract primary sources to plaintext (Phase I)
+  build-from-research.py    regenerate node body from its research artifact (Phase II)
+  review-coverage.py        Phase III coverage / boundary / stub-linking / description-drift review
+  validate.py               node structural + verbatim-quote + source-integrity validation
+  validate-research.py      research-artifact structural validation
   manifest.py               manifest CLI (add, verify-paths, verify-checksums, …)
   archive.py                Wayback Machine submission
   transcribe.py             YouTube caption download
   associate.py              auto-generate Associated Nodes sections
   build-state.py            refresh CLAUDE.md build state
+
+tests/
+  pre-commit.sh             canonical all-gates health check (chains the 5 gates below)
+  help-check.sh             confirms every scripts/*.py --help exits 0
+  smoke.sh                  fixture-based new.py + validator smoke tests
 
 sources/
   manifest.yaml             source-archival index (YAML; sha256-checksummed)
@@ -80,17 +90,24 @@ people/ organizations/ documents/ events/ transcripts/
 media/ locations/ findings/
                             content nodes (human-readable narrative)
 
-research/                   research artifacts (machine-readable atomic
-                            facts backing each node) — populated in Phase D
+research/                   YAML research artifacts backing each node
+                            (structured facts; one per content node)
 
-prompts/                    paste-ready session prompts
+prompts/
+  onboard.md                first-session orientation (reads governance docs + health check)
+  build.md                  build one node (Phase I populate → II regenerate → III review)
+  audit.md                  audit an existing node
+  archive-sweep.md          source-archival health pass
+  verify-transcript.md      transcript verbatim verification
 ```
 
-**Forking for a different topic.** Delete `meta/topic/` and everything
-under `/people/`, `/organizations/`, `/documents/`, `/events/`,
-`/transcripts/`, `/media/`, `/locations/`, `/findings/`,
-`/research/`, and empty `sources/manifest.yaml`. Everything else is
-topic-neutral toolkit. See `AGENT.md` for fork procedure details.
+**Forking for a different topic.** Delete `meta/topic/` and the
+contents of `/people/`, `/organizations/`, `/documents/`, `/events/`,
+`/transcripts/`, `/media/`, `/locations/`, `/findings/`, `/research/`,
+and `sources/{category}/` (keep the directories themselves); empty
+`sources/manifest.yaml`. Create your own `meta/topic/overview.md`.
+Everything else — schema, conventions, scripts, templates, prompts,
+validators, test suite — is topic-neutral toolkit.
 
 ---
 
@@ -123,7 +140,7 @@ Full specification in `meta/schema.yaml`.
 
 ## Status markers
 
-Four status markers document evidentiary state throughout the repository:
+Five status markers document evidentiary state throughout the repository:
 
 | Marker | Meaning |
 |---|---|
@@ -152,14 +169,16 @@ then paste `prompts/build.md` when you're ready to build a node.
 
 ### Returning contributor
 
-`CLAUDE.md` is the session-start checklist. Run the health check:
+`CLAUDE.md` is the session-start checklist. Run the canonical health
+check, which chains all 5 gates:
 
 ```
-python3 scripts/validate.py
-python3 scripts/build-state.py --check
+bash tests/pre-commit.sh
 ```
 
-Then pick work from `meta/topic/research-queue.md`.
+(help-check / smoke / `validate.py` / `validate-research.py` /
+`build-state.py --check`). Then pick work from
+`meta/topic/research-queue.md`.
 
 ---
 
