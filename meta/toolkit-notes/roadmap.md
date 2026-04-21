@@ -323,23 +323,22 @@ lifecycle fields trimmed to content-versioning only (superseded_by /
 contradicted_by / corroborated_by); pre-commit chain is now 5 gates.
 Rebuild if real overdue-tracking requirements surface.
 
-### E.2 — Iteration tooling (i0 → i1 mechanics)  ⏸ MID-TERM
+### E.2 — Iteration tooling  ❌ REMOVED (2026-04-20)
 
-Blocked on: first content node reaching the i1 boundary. Today the
-two document nodes are at i5 (Fravor) and i1 (Graves); but each of
-those iterations was hand-authored in the research YAML with a
-matching hand-appended `iterations[]` entry. The hand path works at
-current volume; automation begins to pay off around ~5 artifacts at
-i1+.
+Planned `scripts/iterate.py` would have automated `last_iteration`
+bumping + `iterations[]` entry appending + optional regenerate/review-
+coverage chaining. Removed before implementation. Rationale: git
+history tracks when artifacts change and who changed them; the hand-
+authored `iterations[]` list on each artifact captures what changed
+and why as first-class evidentiary record. Together these cover the
+iteration-audit need at current and foreseeable repo volume without
+additional tooling. Multiple artifacts have iterated cleanly through
+the hand path without friction worth automating away.
 
-Scope when it ships:
-
-- A script (`scripts/iterate.py` — name provisional) that bumps
-  `last_iteration`, appends a structured `iterations[]` entry
-  (trigger, summary, entries_added, entries_modified), and optionally
-  re-runs build-from-research → review-coverage.
-- Prompt companion: `prompts/iterate.md` (a referenced-but-unshipped
-  prompt is already listed in `prompts/README.md`).
+`prompts/iterate.md` (the hand-workflow companion prompt) remains
+shipped — procedure documentation is separate from automation. If
+real iteration-overhead pain surfaces at 20+ iterated artifacts,
+rebuild then.
 
 ### E.3 — Cross-node update propagation  ⏸ DEFERRED
 
