@@ -4,7 +4,7 @@ schema_version: 1
 target_node: locations/skinwalker-ranch
 status: active
 created: '2026-04-20'
-last_iteration: i1
+last_iteration: i2
 description: 'Skinwalker Ranch — also called Sherman Ranch — is a private cattle ranch in Uintah County, Utah, nestled beneath a red-rock ridge between Fort Duchesne and Randlett. Under four documented owners: the Myers family (Kenneth and Edith Myers, c. 1933 to 1994), Terry and Gwen Sherman (1994 to 1996), Robert Bigelow (1996 to 2016), and Brandon Fugal via Adamantium Real Estate LLC (2016 to present).
 
 
@@ -148,7 +148,7 @@ quotes:
 - id: q8
   added_date: '2026-04-20'
   added_by_iteration: i0
-  text: Fugal’s journey to Skinwalker Ranch began in 2010
+  text: Fugal's journey to Skinwalker Ranch began in 2010
   source:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: article body
@@ -360,6 +360,20 @@ entities_referenced:
   name: Shellenberger 2024 written testimony
   wrap_path: /documents/written-testimony-shellenberger-2024
   context_summary: House Oversight 2024-11-13 hearing sworn testimony with detailed Skinwalker-era timeline citing BAASS/AAWSAP investigations and the Fugal purchase
+- id: e20
+  added_date: '2026-04-21'
+  added_by_iteration: i2
+  entity_type: person
+  name: Kenneth Myers
+  wrap_path: /people/kenneth-myers
+  context_summary: Also known as Kenneth John Myers (per Frank Warren 2020). Bought the ranch in 1933 and owned it with wife Edith until his death in April 1987; the ranch stayed in the Myers family via Edith until 1994.
+- id: e21
+  added_date: '2026-04-21'
+  added_by_iteration: i2
+  entity_type: person
+  name: Edith Myers
+  wrap_path: /people/edith-myers
+  context_summary: Wife of Kenneth Myers; co-owner of the ranch from 1933 until her death on March 3, 1994 per Frank Warren 2020 article. The sale to Terry Sherman followed approximately three months after Edith's death.
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'
@@ -703,6 +717,22 @@ location_relationships:
   source:
     path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
     location: testimony document
+- id: lr17
+  added_date: '2026-04-21'
+  added_by_iteration: i2
+  entity_path: /people/kenneth-myers
+  relationship: owner from 1933 until death in April 1987; part of the Myers family ownership era 1933-1994
+  source:
+    path: news/theufochronicles-myers-family-20200412.html
+    location: Frank Warren 2020 citing Salisbury 2010 interviews
+- id: lr18
+  added_date: '2026-04-21'
+  added_by_iteration: i2
+  entity_path: /people/edith-myers
+  relationship: co-owner with husband Kenneth from 1933; held the ranch alone after Kenneth's death in 1987 until her own death on March 3, 1994
+  source:
+    path: news/theufochronicles-myers-family-20200412.html
+    location: Frank Warren 2020 citing Salisbury 2010 interviews
 iterations:
 - id: i0
   date: '2026-04-20'
@@ -724,3 +754,14 @@ iterations:
   - q17
   entries_modified:
   - rg2
+- id: i2
+  date: '2026-04-21'
+  trigger: audit-correction
+  summary: 'Small audit-correction pass following i1 review. Two fixes: (a) q8 Vice quote swapped its curly apostrophe (U+2019) for a straight apostrophe — normalize_for_compare in validate.py check #11 maps them equivalently so verbatim-quote substring matching continues to pass; the swap is for artifact-YAML readability only. (b) Kenneth Myers and Edith Myers added to entities_referenced (e20, e21) and location_relationships (lr17, lr18). They were named in i1 description prose as Myers-era owners (1933-1994) but had no entity registrations, leaving the Myers-era coverage to rest entirely on Garth Myers (brother). Paired entity + relationship entries parallel the existing Sherman / Fugal / Bigelow registrations.'
+  entries_added:
+  - e20
+  - e21
+  - lr17
+  - lr18
+  entries_modified:
+  - q8

@@ -152,7 +152,7 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 
 ### Attests Fugal's pre-2016 connection to the ranch via Bigelow-project scientists, six years before the purchase
 
-> Fugal’s journey to Skinwalker Ranch began in 2010
+> Fugal's journey to Skinwalker Ranch began in 2010
 
 | Field | Value |
 |---|---|
@@ -292,6 +292,8 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | [`/people/george-knapp`] | co-author of Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021) | [`/people/george-knapp`] |
 | [`/people/michael-shellenberger`] | author of 2024 House Oversight written testimony that cites the ranch | [`/people/michael-shellenberger`] |
 | [`/documents/written-testimony-shellenberger-2024`] | House Oversight 2024-11-13 sworn written testimony with detailed Skinwalker Ranch timeline | [`/documents/written-testimony-shellenberger-2024`] |
+| [`/people/kenneth-myers`] | owner from 1933 until death in April 1987; part of the Myers family ownership era 1933-1994 | [`/people/kenneth-myers`] |
+| [`/people/edith-myers`] | co-owner with husband Kenneth from 1933; held the ranch alone after Kenneth's death in 1987 until her own death on March 3, 1994 | [`/people/edith-myers`] |
 
 ---
 
@@ -303,11 +305,13 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 
 - [`/people/brandon-fugal`]
 - [`/people/colm-kelleher`]
+- [`/people/edith-myers`]
 - [`/people/garth-myers`]
 - [`/people/george-knapp`]
 - [`/people/gwen-sherman`]
 - [`/people/james-lacatski`]
 - [`/people/john-alexander`]
+- [`/people/kenneth-myers`]
 - [`/people/michael-shellenberger`]
 - [`/people/robert-bigelow`]
 - [`/people/terry-sherman`]
