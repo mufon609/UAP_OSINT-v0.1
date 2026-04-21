@@ -612,14 +612,16 @@ This:
      Use / Status | Source`.
    - `## UAP-Scope Activity` — from `uap_scope_activity[]`,
      chronological by `period_start`. Columns: `Period | Activity |
-     Source` (+ `Actors` column when any entry has `actor_paths`
-     populated).
+     Source`. When entries have `actor_paths` populated, the wraps
+     are appended inline to the Activity cell with an em-dash
+     separator (no separate column).
    - `## Key Passages` — from `quotes[]` (verbatim excerpts about the
      location; parallels document / organization Key Passages but
      subject-about-location). H3 per quote using `significance`.
    - `## Relationships` (Confirmed/Flagged split) — from
-     `location_relationships[]`. Heterogeneous `entity_path` (people /
-     organizations / events / media / adjacent locations / findings).
+     `location_relationships[]`. Columns: `Entity | Relationship |
+     Node Link`. Heterogeneous `entity_path` (people / organizations
+     / events / media / adjacent locations / findings).
 
    **All renderer-supported types** close with:
    - `## Associated Nodes` — placeholder; filled by `associate.py`
