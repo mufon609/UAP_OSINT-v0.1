@@ -141,6 +141,17 @@ ORGANIZATION_KIND_REQUIRED_SECTION = {
     "gov-contractor": "contracts",
 }
 
+# Location-artifact-specific required keys. ownership_timeline is the
+# chronological ownership-transition record; uap_scope_activity tracks
+# institutional UAP-scope activity at the location; location_relationships
+# is heterogeneous entity_path links to connected nodes. All three
+# required on every location artifact regardless of status.
+LOCATION_REQUIRED_KEYS = [
+    "ownership_timeline",
+    "uap_scope_activity",
+    "location_relationships",
+]
+
 TYPE_DIRS = {
     "person": "people", "organization": "organizations", "document": "documents",
     "event": "events", "transcript": "transcripts", "media": "media",
@@ -208,6 +219,10 @@ ALL_ENTRY_SECTIONS = [
     "key_personnel",
     "org_relationships",
     "contracts",
+    # Location
+    "ownership_timeline",
+    "uap_scope_activity",
+    "location_relationships",
 ]
 
 # Per-entry enum values
@@ -654,6 +669,25 @@ def validate_artifact(path, schema, manifest_paths):
                         f"not carry it — that section belongs to kind "
                         f"{kind_name!r})"))
 
+    # --- Location-universal sections (type-conditional on location) ---
+    # ownership_timeline + uap_scope_activity + location_relationships
+    # required on every location artifact. Empty lists permitted at
+    # scaffold time; populated during Phase I. Location has no kinds,
+    # so no kind-conditional sections layer on top.
+    if target_type == "location":
+        for key in LOCATION_REQUIRED_KEYS:
+            if key not in data:
+                issues.append(Issue(rel, "error",
+                    f"Required {key!r} key missing "
+                    f"(location artifacts require "
+                    f"{', '.join(LOCATION_REQUIRED_KEYS)})"))
+    elif target_type is not None:
+        for key in LOCATION_REQUIRED_KEYS:
+            if key in data:
+                issues.append(Issue(rel, "error",
+                    f"{key!r} key should not be present "
+                    f"(target_node type {target_type!r} is not location)"))
+
     # --- primary_sources: path must exist in manifest ---
     issues.extend(check_primary_sources(rel, data, manifest_paths))
 
@@ -693,6 +727,12 @@ def validate_artifact(path, schema, manifest_paths):
         issues.extend(check_org_relationships(rel, data, manifest_paths))
     if "contracts" in data:
         issues.extend(check_contracts(rel, data, manifest_paths))
+    if "ownership_timeline" in data:
+        issues.extend(check_ownership_timeline(rel, data, manifest_paths))
+    if "uap_scope_activity" in data:
+        issues.extend(check_uap_scope_activity(rel, data, manifest_paths))
+    if "location_relationships" in data:
+        issues.extend(check_location_relationships(rel, data, manifest_paths))
 
     # --- Iteration log ---
     issues.extend(check_iterations(rel, data))
@@ -1487,6 +1527,100 @@ def check_contracts(rel, data, manifest_paths):
     return issues
 
 
+def check_ownership_timeline(rel, data, manifest_paths):
+    """ownership_timeline[] — present on location artifacts. Each entry:
+    required {period_start, owner, use_status, source}, optional
+    {period_end, owner_path, note}. Chronological ordering enforced at
+    node-render time by validate.py check #15 against the rendered
+    `## Ownership Timeline` table.
+    """
+    issues = []
+    items = _entries(data, "ownership_timeline")
+    issues.extend(_check_unique_ids(rel, items, "ownership_timeline"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "ownership_timeline", i))
+        for field in ["period_start", "owner", "use_status"]:
+            if field not in e or not str(e.get(field) or "").strip():
+                issues.append(Issue(rel, "error",
+                    f"ownership_timeline[{i}] ({e.get('id')!r}): "
+                    f"missing required {field!r}"))
+        op = e.get("owner_path")
+        if op and not str(op).startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"ownership_timeline[{i}] ({e.get('id')!r}): "
+                f"owner_path {op!r} must start with '/'"))
+        issues.extend(_require_source_dict(rel, e, "ownership_timeline", i, manifest_paths))
+    return issues
+
+
+def check_uap_scope_activity(rel, data, manifest_paths):
+    """uap_scope_activity[] — present on location artifacts. Each entry:
+    required {period_start, activity, source}, optional
+    {period_end, actor_paths (list), note}. Tracks institutional UAP-
+    scope activity at the location; popular paranormal lore without
+    primary-source backing belongs in `rumors`, not here.
+    """
+    issues = []
+    items = _entries(data, "uap_scope_activity")
+    issues.extend(_check_unique_ids(rel, items, "uap_scope_activity"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "uap_scope_activity", i))
+        for field in ["period_start", "activity"]:
+            if field not in e or not str(e.get(field) or "").strip():
+                issues.append(Issue(rel, "error",
+                    f"uap_scope_activity[{i}] ({e.get('id')!r}): "
+                    f"missing required {field!r}"))
+        paths = e.get("actor_paths") or []
+        if paths and not isinstance(paths, list):
+            issues.append(Issue(rel, "error",
+                f"uap_scope_activity[{i}] ({e.get('id')!r}): "
+                f"actor_paths must be a list "
+                f"(got {type(paths).__name__})"))
+        elif isinstance(paths, list):
+            for j, p in enumerate(paths):
+                if not isinstance(p, str) or not p.startswith("/"):
+                    issues.append(Issue(rel, "error",
+                        f"uap_scope_activity[{i}] ({e.get('id')!r}): "
+                        f"actor_paths[{j}] must be a repo path starting "
+                        f"with '/' (got {p!r})"))
+        issues.extend(_require_source_dict(rel, e, "uap_scope_activity", i, manifest_paths))
+    return issues
+
+
+def check_location_relationships(rel, data, manifest_paths):
+    """location_relationships[] — present on location artifacts. Each
+    entry: required {entity_path, relationship, source}, optional
+    {flagged, note}. Unlike person.relationships (person-to-person) and
+    org_relationships (org-to-org), location_relationships accepts
+    heterogeneous entity_path targets — locations connect to anything
+    the primary source attests (owners, investigators, events, media,
+    adjacent locations, findings).
+    """
+    issues = []
+    items = _entries(data, "location_relationships")
+    issues.extend(_check_unique_ids(rel, items, "location_relationships"))
+    for i, e in enumerate(items):
+        if not isinstance(e, dict):
+            continue
+        issues.extend(_check_lifecycle_fields(rel, e, "location_relationships", i))
+        for field in ["entity_path", "relationship"]:
+            if field not in e:
+                issues.append(Issue(rel, "error",
+                    f"location_relationships[{i}] ({e.get('id')!r}): "
+                    f"missing required {field!r}"))
+        ep = e.get("entity_path")
+        if ep and not str(ep).startswith("/"):
+            issues.append(Issue(rel, "error",
+                f"location_relationships[{i}] ({e.get('id')!r}): "
+                f"entity_path {ep!r} must start with '/'"))
+        issues.extend(_require_source_dict(rel, e, "location_relationships", i, manifest_paths))
+    return issues
+
+
 # =============================================================================
 # Check #16 — prose-field token drift (F.1c RCA follow-up)
 #
@@ -1601,7 +1735,15 @@ PROSE_FIELDS_BY_TYPE = {
         # only `description` is scanned as free-prose.
         "description",
     ],
-    # F.6+ extensions:
+    "location": [
+        # Location top-level prose: `description` renders as the
+        # `## Description` section — labeled contributor synthesis.
+        # Overview section renders from document_intrinsic location
+        # keys (fact-table dispatch, parallel to organization); only
+        # `description` is scanned as free-prose.
+        "description",
+    ],
+    # F.7 extension:
     # "finding": ["what_this_establishes", ...],
 }
 
@@ -1656,6 +1798,29 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
         # contracts[].note — contributor synthesis. Scanned against
         # source.path.
         ("contracts",         "note"),
+    ],
+    "location": [
+        # ownership_timeline[].use_status — one-line description of how
+        # the property was used during the ownership period. Scanned
+        # against the entry's source.path token pool.
+        ("ownership_timeline",     "use_status"),
+        # ownership_timeline[].note — optional contributor synthesis on
+        # the ownership transition. Scanned against source.path.
+        ("ownership_timeline",     "note"),
+        # uap_scope_activity[].activity — one-line description of the
+        # institutional UAP-scope activity conducted at the location.
+        # Scanned against source.path.
+        ("uap_scope_activity",     "activity"),
+        # uap_scope_activity[].note — optional contributor synthesis.
+        # Scanned against source.path.
+        ("uap_scope_activity",     "note"),
+        # location_relationships[].relationship — short description of
+        # the connection (e.g., "Current owner", "1996-2004 investigator").
+        # Scanned against source.path.
+        ("location_relationships", "relationship"),
+        # location_relationships[].note — optional contributor synthesis.
+        # Scanned against source.path.
+        ("location_relationships", "note"),
     ],
 }
 

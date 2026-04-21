@@ -287,6 +287,17 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     if node_type == "organization":
         artifact["key_personnel"] = []
         artifact["org_relationships"] = []
+    # Location-specific universal sections (F.6a). ownership_timeline
+    # carries the chronological ownership-transition record;
+    # uap_scope_activity tracks institutional UAP-scope activity at the
+    # location; location_relationships is heterogeneous entity_path
+    # links to connected nodes (owners, investigators, events, media,
+    # adjacent locations, findings). Location has no kinds, so no
+    # kind-conditional extensions layer on top.
+    if node_type == "location":
+        artifact["ownership_timeline"] = []
+        artifact["uap_scope_activity"] = []
+        artifact["location_relationships"] = []
     # Archetype-conditional section on person artifacts. Reads the target
     # node's frontmatter to get its archetype; scaffolds the corresponding
     # empty list. Only one of the four sections is ever scaffolded

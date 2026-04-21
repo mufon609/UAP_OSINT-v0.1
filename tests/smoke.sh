@@ -208,6 +208,35 @@ for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-
     fi
 done
 
+# --- research artifact: location dispatch (F.6a) ---
+# Scaffolder must emit ownership_timeline: [], uap_scope_activity: [],
+# and location_relationships: [] on every location artifact. Validator
+# enforces the type-conditional presence: missing-required fires on
+# location artifacts if absent; absent-on-other-type fires on non-
+# location artifacts if present. No kind-conditional extensions (location
+# has no kinds). F.6b will extend this with build-from-research and
+# review-coverage; for now, a clean validate-research pass on an empty
+# scaffold is the pass criterion.
+for loc_target in "locations/__smoke-location"; do
+    artifact_out="$(python3 scripts/research-scaffold.py --target "$loc_target" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("research-scaffold $loc_target — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
+        fail=$((fail + 1))
+        continue
+    fi
+    loc_slug="${loc_target##*/}"
+    created_files+=("research/$loc_slug.yaml")
+    artifact_out="$(python3 scripts/validate-research.py "research/$loc_slug.yaml" --quiet 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("research-scaffold $loc_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+done
+
 # --- research artifact: organization-kind dispatch (F.5a + F.5b) ---
 # Scaffolder must emit key_personnel: [] and org_relationships: [] on
 # every organization artifact regardless of kind, and emit contracts: []

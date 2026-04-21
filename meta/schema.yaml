@@ -550,6 +550,13 @@ types:
       #                (renders as `## Overview` fact table — rows emitted
       #                for whichever keys are populated; empty keys skipped.
       #                Labeled-synthesis narrative belongs in `description`.)
+      #     location:  full_name, alternate_names (list), location_type,
+      #                geographic_location, approximate_coordinates,
+      #                ownership_history_summary, scope_significance
+      #                (renders as `## Overview` fact table; empty keys
+      #                skipped. Location has no kinds, so a single key set.
+      #                Status comes from frontmatter; contributors don't
+      #                duplicate it into document_intrinsic.)
       #   Every key is a fact the primary source(s) attest to. Facts not
       #   attested in a primary source don't belong here — they belong in
       #   `description` (synthesis, labeled) or don't enter the record.
@@ -693,6 +700,36 @@ types:
         # Distinct from person `relationships` (person-to-person) and
         # from `key_personnel` (org-to-person). Entry shape:
         # org_relationship_entry below.
+      ownership_timeline:
+        required_when_target_node_type_in: [location]
+        # Chronological ownership transitions for the location. Each entry
+        # carries period_start, period_end (absent for current ownership),
+        # owner (free-text family / individual / entity name), owner_path
+        # (optional wrap_path when the owner has a repo node), use_status
+        # (what the property was used for during the period), source.
+        # Renders as the `## Ownership Timeline` table with chronological
+        # ordering enforced via check #15. Entry shape:
+        # ownership_timeline_entry below.
+      uap_scope_activity:
+        required_when_target_node_type_in: [location]
+        # Documented institutional UAP-scope activity at this location
+        # (NIDS investigation, BAASS/AAWSAP contract work, Fugal-era
+        # research, etc.). Scope is institutional — popular paranormal
+        # lore without primary-source backing belongs in `rumors`, not
+        # here. Each entry: period_start, period_end (optional),
+        # activity, actor_paths (optional list of /people|/organizations),
+        # source. Renders as the `## UAP-Scope Activity` table. Entry
+        # shape: uap_scope_activity_entry below.
+      location_relationships:
+        required_when_target_node_type_in: [location]
+        # Location-to-any-entity structured relationships. Heterogeneous
+        # target types — locations connect to owners (/people,
+        # /organizations), investigators, documented events, media,
+        # adjacent locations, and findings. Distinct from person
+        # `relationships` (person-to-person) and org_relationships
+        # (org-to-org) by virtue of the heterogeneous entity_path field.
+        # Renders as the `## Relationships` section with Confirmed /
+        # Flagged split. Entry shape: location_relationship_entry below.
 
     # Primary-source list entries
     primary_sources_entry:
@@ -989,6 +1026,58 @@ types:
       # note: contributor synthesis (1-2 sentences; optional). Scanned by
       #   check #16 against source.path token pool.
 
+    ownership_timeline_entry:
+      required: [period_start, owner, use_status, source]
+      optional: [period_end, owner_path, note]
+      # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY. period_end
+      #   absent for current / ongoing ownership.
+      # owner: free-text name of the owner (family, individual, or entity).
+      # owner_path: optional /people|/organizations|/locations wrap_path
+      #   when the owner has a repo node. Renders as a backtick-bracket
+      #   link in the Owner cell when set.
+      # use_status: one-line description of how the property was used
+      #   during the period (e.g., "Cattle ranching", "Residential with
+      #   paranormal research operations", "Vacant"). Scanned by check
+      #   #16 against source.path token pool.
+      # source: object with path + location attesting the ownership
+      #   transition (deed record, property registry, news article
+      #   contemporaneous with the transfer, etc.).
+      # note: optional contributor synthesis (1-2 sentences). Scanned by
+      #   check #16.
+
+    uap_scope_activity_entry:
+      required: [period_start, activity, source]
+      optional: [period_end, actor_paths, note]
+      # period_start / period_end: same conventions as
+      #   ownership_timeline_entry.
+      # activity: one-line description of the UAP-scope institutional
+      #   activity conducted at the location (e.g., "NIDS investigation",
+      #   "BAASS/AAWSAP contract research", "Fugal-era on-site research
+      #   operations"). Scanned by check #16 against source.path token
+      #   pool.
+      # actor_paths: optional list of /people|/organizations wrap_paths
+      #   for the entities conducting the activity. Renders as
+      #   backtick-bracket links in an Actors cell when set.
+      # source: object with path + location attesting the activity.
+      # note: optional contributor synthesis (1-2 sentences). Scanned by
+      #   check #16.
+
+    location_relationship_entry:
+      required: [entity_path, relationship, source]
+      optional: [flagged, note]
+      # entity_path: any /type/slug wrap_path — person, organization,
+      #   document, event, transcript, media, location, or finding. This
+      #   is the only relationship_entry shape in the schema that allows
+      #   heterogeneous target types, because locations connect to
+      #   anything the primary source attests (owners, investigators,
+      #   documented incidents, adjacent properties, etc.).
+      # relationship: short description of the connection (e.g., "Current
+      #   owner", "Conducted 1996-2004 investigation", "Site of documented
+      #   incident"). Scanned by check #16 against source.path token pool.
+      # flagged: bool (default false); routes to `### Flagged`.
+      # source: object with path + location attesting the relationship.
+      # note: optional contributor synthesis. Scanned by check #16.
+
     media_versioning_entry:
       required: [id, aspect, parent_form, this_form, source]
       optional: [note]
@@ -1104,6 +1193,7 @@ types:
       - "media_versioning section present iff target_node type == media (empty list permitted when media is canonical / original; populated when derivation_of is set)"
       - "key_personnel and org_relationships sections present iff target_node type == organization"
       - "contracts section present iff target_node type == organization AND kind == gov-contractor"
+      - "ownership_timeline, uap_scope_activity, location_relationships sections present iff target_node type == location"
 
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema
