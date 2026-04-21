@@ -1066,14 +1066,18 @@ institutional location currently on the build queue.
 
 ### F.7 — finding  ⏸ PENDING (last)
 
-Only node type where contributor analytical prose survives post-
-statements-only. Landed last so the discipline around the other
-seven types is fully stable before the one synthesis surface is
-ratified.
+Landed last so the discipline around the other seven types is fully
+stable before finding's synthesis surface (if any) is ratified.
 
-Design pass: the synthesis-section hard-anchoring rules (every
-sentence in What This Establishes must be verbatim-quote-anchored to
-an entry in an artifact's quote list, enforced mechanically).
+Design pass: decide what synthesis section — if any — the finding
+type carries under statements-only. Options include a hard-anchored
+claim layer (every sentence verbatim-quote-anchored to an entry in
+an artifact's quote list, enforced mechanically), a quotes-only
+Key Passages layer parallel to documents, or a cross-reference
+surface parallel to the hearing Witnesses & Testimony table. The
+legacy `What This Establishes` / `What This Does Not Establish`
+sections were removed from the template and schema 2026-04-20 as
+pre-F.7 cleanup — F.7 starts from a clean slate.
 
 No pilot candidate yet — will emerge from cross-entity patterns
 observed during G (content population).

@@ -474,7 +474,6 @@ types:
       - Summary
       - Timeline
       - Primary Source Basis
-      - What This Establishes
       - Entities Involved
       - Open Questions / Research Gaps
     section_rules:
@@ -1117,7 +1116,7 @@ manifest_entry:
     path: "status == archived"       # must be set when the file is archived locally
     sha256: "status == archived"     # SHA256 of the archived file; integrity backstop
   status_values: [archived, 403-blocked, 402-blocked, pending]
-  format_values: [pdf, html, txt, post, video, transcript]
+  format_values: [pdf, html, txt, video, transcript]
   # `category` is derived from path prefix (government/, news/, etc.) unless overridden
   # `sha256` detects local file corruption, accidental overwrite, and silent
   # substitution. Computed at archive-time by manifest.py add; re-verified

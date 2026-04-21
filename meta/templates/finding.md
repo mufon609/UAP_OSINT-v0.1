@@ -70,25 +70,6 @@ created: {{today}}
 
 ---
 
-## What This Establishes
-
-| Claim | Status | Source |
-|---|---|---|
-|  |  |  |
-
----
-
-## What This Does Not Establish
-
-| Claim | Status |
-|---|---|
-|  |  |
-
-<!-- Be explicit about the limits of the finding. What does the pattern
-     NOT prove? What alternative interpretations remain open? -->
-
----
-
 ## Entities Involved
 
 <!-- For each entity listed in frontmatter, explain their role in the
