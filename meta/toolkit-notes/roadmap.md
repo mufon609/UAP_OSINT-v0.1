@@ -1061,12 +1061,68 @@ must either preserve entities verbatim in quote text OR shorten the
 quote to avoid the entity / tag span. Applied on q5, q6, q8 during
 i0 population.
 
-### F.6 — location  ⏸ PENDING
+### F.6 — location  ✅ DONE (F.6a + F.6b + F.6c shipped 2026-04-20)
 
-Inanimate hub. Minimal synthesis; mostly navigational.
+Inanimate hub. Minimal synthesis; mostly navigational. Three
+conditional list sections (ownership_timeline, uap_scope_activity,
+location_relationships) carry the evidentiary surface; Description
+is labeled synthesis; Key Passages carry verbatim excerpts; rumors
+absorb popular paranormal lore that lacks primary-source backing.
 
-Pilot candidate: `/locations/skinwalker-ranch` — only non-
-institutional location currently on the build queue.
+#### F.6a — schema + template + validator + scaffolder  ✅ DONE (2026-04-20)
+
+Shipped in commit `5a67ec1`. Core groundwork:
+- `meta/schema.yaml` — location document_intrinsic per-type keys
+  (full_name / alternate_names / location_type / geographic_location /
+  approximate_coordinates / ownership_history_summary /
+  scope_significance); three conditional keys (ownership_timeline,
+  uap_scope_activity, location_relationships) required on every
+  location artifact; three entry shapes (ownership_timeline_entry,
+  uap_scope_activity_entry, location_relationship_entry); invariants
+  block extended.
+- `scripts/validate-research.py` — location-type conditional
+  enforcement; three new per-section check helpers; check #16 scoped
+  to location (description + ownership_timeline.use_status/note +
+  uap_scope_activity.activity/note + location_relationships.relationship/note).
+- `scripts/research-scaffold.py` — location artifacts scaffold the
+  three conditional lists as empty.
+- `meta/templates/location.md` added.
+
+#### F.6b — Phase II renderer  ✅ DONE (2026-04-20)
+
+Shipped in commit `2ea204d`. Location support added to
+`build-from-research.py`: render helpers for title, Overview fact
+table (from document_intrinsic), Description, Ownership Timeline
+(chronologically sorted), UAP-Scope Activity, Key Passages (verbatim
+blocks), and Relationships (heterogeneous entity_path with Confirmed /
+Flagged split). `review-coverage.py` SUPPORTED_TYPES extended; four
+checks generalize.
+
+#### F.6c — Skinwalker Ranch pilot  ✅ DONE (2026-04-20)
+
+First location node end-to-end through Phase I → II → III. Shipped
+in commit `353b891`. `/locations/skinwalker-ranch` built at i0 from
+15 archived primary sources spanning all four ownership eras (Myers
+1933–1994, Sherman 1994–1996, Bigelow/NIDS 1996–2016, Fugal 2016–
+present) plus AAWSAP institutional research era (2008–2012).
+
+Populated: 7 document_intrinsic keys, 3-paragraph description, 10
+verbatim Key Passages (each verified against source), 19
+entities_referenced, 4 naming_quirks (including 480-vs-512-acre
+resolution), 8 research_gaps (deed-record archival paths), 4 rumors
+(including 512-acre secondary-source figure contradicted by primary
+Uintah records), 4 ownership_timeline entries, 3 uap_scope_activity
+entries (NIDS + BAASS/AAWSAP + Fugal-era), 12 location_relationships.
+
+Post-pilot iterations absorbed inline: i1 (commit `771c125`) surfaced
+all 7 Uintah County parcel records as Key Passages q11–q17 after user
+review noted parcel detail was only aggregated into prose; i2 (commit
+`51f0c1d`) registered Myers-era co-owners Kenneth + Edith as
+entities_referenced + location_relationships; i3 (commit `87bed33`)
+split document_intrinsic.approximate_coordinates into coordinates +
+legal_description after user audit flagged PLSS description mis-
+labeled as coordinates (schema key + renderer + template + artifact
+updated; single-node retrofit).
 
 ### F.7 — finding  ⏸ PENDING (last)
 
