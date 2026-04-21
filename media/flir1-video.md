@@ -79,6 +79,3 @@ Related: [`/events/2004-nimitz-encounter`] [`/organizations/uss-nimitz`] [`/orga
 ### Transcripts
 
 - [`/transcripts/2023-07-26-house-fravor`]
-
----
-

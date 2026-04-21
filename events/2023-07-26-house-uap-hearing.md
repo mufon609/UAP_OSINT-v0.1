@@ -234,6 +234,3 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 - [`/transcripts/2023-07-26-house-fravor`]
 - [`/transcripts/2023-07-26-house-graves`]
 - [`/transcripts/2023-07-26-house-grusch`]
-
----
-

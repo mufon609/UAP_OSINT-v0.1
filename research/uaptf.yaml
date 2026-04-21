@@ -414,9 +414,6 @@ rumors:
   observed_sources:
   - Americans for Safe Aerospace advisor listing (non-.gov; Stratton is a listed advisor to the same organization)
   - SALT speaker bio (salt.org); The Debrief Kean/Blumenthal coverage
-  primary_source_search:
-  - No primary source in the REFACTOR corpus attests Nell's UAPTF role
-  - Target FOIA releases from the U.S. Army or Nell's retirement record
   note: Widely attested across secondary sources but not in primary sources archived here. Registering the claim structurally while the primary-source gap remains open (see research_gap g4)
 - id: r2
   added_date: '2026-04-20'
@@ -425,7 +422,4 @@ rumors:
   observed_sources:
   - Grusch sworn testimony at 2023-07-26 House Oversight hearing (archived as /documents/written-testimony-grusch-2023) claims denial of access to a "multi-decade UAP crash retrieval and reverse engineering program"
   - Widely circulating in UAP-related public discourse
-  primary_source_search:
-  - UAPTF's own primary sources (charter, SCG, ODNI Preliminary Assessment) do not attest scope constraints
-  - The counter-claim of denied access is attested in Grusch's testimony but as external allegation against the broader U.S. Government rather than a finding internal to UAPTF's own records
   note: The allegation is a cross-node analytical finding rather than a UAPTF-internal record. UAPTF's own primary sources do not substantiate or refute the scope-constraint framing

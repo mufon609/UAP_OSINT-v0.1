@@ -96,10 +96,6 @@ As the flight turned back towards the CAP point, the air controller let them kno
 
 - [`/documents/written-testimony-fravor-2023`]
 
-### Transcripts
-
-- [`/transcripts/2023-07-26-house-fravor`]
-
 ### Media
 
 - [`/media/flir1-video`]

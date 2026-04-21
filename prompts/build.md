@@ -378,25 +378,31 @@ apply only to hand-authored unsupported types:
   resolution should be `preserve-as-sic-in-quotes` so rendered node
   prose knows to use canonical form outside the quote.
 
-### Step 10. Populate `rumors` (bounded agent task T6, conditional)
+### Step 10. Populate `rumors` (bounded agent task T5, conditional)
 
 **Only when target node type is `person`, `organization`, `event`, or
 `location`.** Document nodes, transcripts, media, and findings do not
 carry a rumors section.
 
-**Agent task T6:**
+**Agent task T5:**
 - **Input:** everything populated so far + knowledge of
   widely-circulating claims about the entity
 - **Output:** YAML fragment of `rumors:` — widely-reported claims that
-  circulate in public discourse but lack primary-source backing in this
-  artifact. Each entry:
+  circulate in public discourse but are either unconfirmed or refuted
+  by the artifact's primary sources. Each entry:
   - `id` (r1, r2, …)
   - `claim` (the circulating claim as prose)
-  - `status` (one of: `not-primary-source-established`,
-    `primary-source-identified`, `primary-source-disputed`)
-  - `observed_sources` (optional: where the rumor circulates)
-  - `primary_source_search` (optional: where we've looked, or where to look)
-  - `note` (optional)
+  - `status` — one of:
+    - `not-primary-source-established` — no primary source attests;
+      artifact-only fabrication-prevention record. Does not render.
+    - `primary-source-disputed` — primary sources actively refute the
+      claim. Renders into a `## Primary-Source Contradictions`
+      section on the node body; the `note` field is the primary-
+      source refutation text.
+  - `observed_sources` (optional: list of where the rumor circulates
+    — renders as the "Circulates in" line for disputed rumors)
+  - `note` (optional — for disputed rumors this is the refutation;
+    for not-established it's contributor context)
   - Standard lifecycle fields
 
 **Discipline:**
@@ -404,9 +410,13 @@ carry a rumors section.
   existed. Its presence here is a fabrication-prevention mechanism:
   "this is a widely-believed claim; don't re-fabricate it into the
   node without finding a source."
-- When a primary source eventually surfaces for a rumor, status
-  changes to `primary-source-identified`, a new claim entry is added,
-  and the rumor entry is kept as audit history.
+- When a primary source eventually confirms a `not-primary-source-
+  established` rumor, graduate the claim to a real quote/claim entry
+  and delete the rumor (git log preserves it). Don't keep stale
+  confirmed rumors.
+- When primary sources refute a rumor, set `status: primary-source-
+  disputed` and populate `note` with the refutation text — the
+  renderer surfaces it to investigators.
 
 ### Step 11. Validate the research artifact
 

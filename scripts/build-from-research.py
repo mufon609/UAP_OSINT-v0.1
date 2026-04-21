@@ -382,6 +382,55 @@ def render_associated_nodes():
     )
 
 
+def render_primary_source_contradictions(artifact):
+    """Emit a `## Primary-Source Contradictions` section listing rumors
+    whose status is `primary-source-disputed` — widely-circulated
+    secondary-source claims that primary-source evidence refutes.
+
+    Returns empty string when no disputed rumors exist. Disputed
+    rumors are analytical findings worth surfacing to readers; the
+    `not-primary-source-established` status stays artifact-only
+    (pure fabrication-prevention, never renders).
+
+    Applies to the 4 RUMORS_TYPES (person / organization / event /
+    location). Document / transcript / media artifacts don't carry
+    rumors and never emit this section.
+    """
+    rumors = artifact.get("rumors") or []
+    disputed = [
+        r for r in rumors
+        if isinstance(r, dict) and r.get("status") == "primary-source-disputed"
+    ]
+    if not disputed:
+        return ""
+
+    parts = [
+        "## Primary-Source Contradictions",
+        "",
+        "Widely-circulated secondary-source claims contradicted by primary-source evidence.",
+        "",
+    ]
+    for r in disputed:
+        claim = (r.get("claim") or "").strip()
+        if not claim:
+            continue
+        parts.append(f'### "{claim}"')
+        parts.append("")
+        obs = r.get("observed_sources")
+        if obs:
+            if isinstance(obs, list):
+                obs_str = "; ".join(str(o) for o in obs)
+            else:
+                obs_str = str(obs)
+            parts.append(f"**Circulates in:** {obs_str}")
+            parts.append("")
+        note = (r.get("note") or "").strip()
+        if note:
+            parts.append(f"**Primary-source refutation:** {note}")
+            parts.append("")
+    return "\n".join(parts).rstrip() + "\n"
+
+
 # =============================================================================
 # Person-type section renderers (F.1b)
 # =============================================================================
@@ -1178,6 +1227,7 @@ def render_body_person(artifact, archetype):
     if archetype == "whistleblower":
         sections.append(render_vouching_chain(artifact))
     sections.extend([
+        render_primary_source_contradictions(artifact),
         render_associated_nodes(),
     ])
     # Drop empty section strings (archetype dispatcher returns "" on unknown)
@@ -1214,6 +1264,7 @@ def render_body_event(artifact, kind):
     else:
         sys.exit(f"ERROR: render_body_event: unknown event kind {kind!r}")
     sections.extend([
+        render_primary_source_contradictions(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
@@ -1795,6 +1846,7 @@ def render_body_organization(artifact, kind):
     sections.extend([
         render_timeline(artifact),
         render_org_relationships(artifact),
+        render_primary_source_contradictions(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
@@ -2023,6 +2075,7 @@ def render_body_location(artifact, fm):
         render_uap_scope_activity(artifact),
         render_location_key_passages(artifact),
         render_location_relationships(artifact),
+        render_primary_source_contradictions(artifact),
         render_associated_nodes(),
     ]
     sections = [s for s in sections if s]

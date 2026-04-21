@@ -225,8 +225,8 @@ VALID_NAMING_QUIRK_RESOLUTIONS = {
     "preserve-as-sic-in-quotes", "use-canonical", "disputed", "unresolved"
 }
 VALID_RUMOR_STATUSES = {
-    "not-primary-source-established", "primary-source-identified",
-    "primary-source-disputed"
+    "not-primary-source-established",
+    "primary-source-disputed",
 }
 VALID_ENTITY_TYPES = {
     "person", "organization", "document", "event", "transcript",

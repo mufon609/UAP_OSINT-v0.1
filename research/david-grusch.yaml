@@ -425,9 +425,6 @@ rumors:
   status: not-primary-source-established
   observed_sources:
   - Circulating in public discourse attributed to Grusch; the specific primary-source instance is not locatable without extraction of the 2023-07-26 oral transcript and the June 2023 Debrief article
-  primary_source_search:
-  - The "biologics" statement does not appear in the written testimony archived at /documents/written-testimony-grusch-2023
-  - The 2023-07-26 hearing oral transcript (not yet built) and the June 2023 Debrief article (archived HTML at sources/news/thedebrief-grusch-2023.html, not yet extracted) are the expected primary-source locations to check
   note: Registering this rumor keeps the widely-circulated claim visible until the oral and Debrief sources are extracted and its primary-source status is resolved
 - id: r2
   added_date: '2026-04-20'
@@ -435,7 +432,4 @@ rumors:
   status: not-primary-source-established
   observed_sources:
   - Circulating in public discourse attributed to Grusch; the specific primary-source instance is not locatable without extraction of the 2023-07-26 oral transcript and subsequent interviews
-  primary_source_search:
-  - The written testimony uses "Non-Human Reverse Engineering Programs" (Closing ¶18) but does not name a specific program
-  - The 2023-07-26 oral transcript and the NewsNation interview are the expected primary-source locations to check
   note: The written statement is the only Grusch primary source with extracted quotes in this artifact at i0; additional terminology attributable to Grusch via oral testimony or interviews remains unestablished from primary source here

@@ -237,6 +237,3 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 ### Documents
 
 - [`/documents/aaro-historical-record-report-vol-i`]
-
----
-

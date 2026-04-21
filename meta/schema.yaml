@@ -813,11 +813,22 @@ types:
 
     rumor_entry:
       required: [claim, status]
-      optional: [observed_sources, primary_source_search, note]
+      optional: [observed_sources, note]
       # claim: the circulating claim as prose
-      # status: not-primary-source-established | primary-source-identified | primary-source-disputed
+      # status: not-primary-source-established | primary-source-disputed
+      #   Fabrication-prevention catalogue. Rumors are artifact-only
+      #   investigator memory: contributors record widely-circulated
+      #   claims lacking primary-source backing so a future session
+      #   doesn't unconsciously recirculate them into node prose.
+      #   - not-primary-source-established: no renderer surface. Pure
+      #     write-time discipline. When a rumor eventually gets
+      #     primary-source backing, graduate it to a quote or claim
+      #     and delete the rumor entry.
+      #   - primary-source-disputed: primary sources actively refute
+      #     the claim. Renders as a `## Primary-Source Contradictions`
+      #     section on the node body — the contradiction itself is an
+      #     evidentiary finding investigators should see.
       # observed_sources: list of descriptions — where the rumor circulates
-      # primary_source_search: list — where we've looked or where to look
 
     timeline_entry:
       required: [date, event, source]
@@ -1118,7 +1129,7 @@ types:
       # Enum values
       - "evidentiary_type (claims) in [sworn-testimony, documented, cited, secondary]"
       - "resolution (naming_quirks) in [preserve-as-sic-in-quotes, use-canonical, disputed, unresolved]"
-      - "rumor status in [not-primary-source-established, primary-source-identified, primary-source-disputed]"
+      - "rumor status in [not-primary-source-established, primary-source-disputed]"
       - "entity entity_type in [person, organization, document, event, transcript, media, location, finding]"
       - "observation_type (quotes, required on person artifacts) in [direct, relayed]"
       - "context (quotes) required on person artifacts; optional on document / transcript / media"

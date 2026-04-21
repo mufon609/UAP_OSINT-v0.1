@@ -395,7 +395,3 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 ### Events
 
 - [`/events/2023-07-26-house-uap-hearing`]
-
-### Documents
-
-- [`/documents/odni-preliminary-assessment-2021`]

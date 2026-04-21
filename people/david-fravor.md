@@ -181,6 +181,3 @@ Fravor observed the [`/events/2004-nimitz-encounter`] as flight lead of the 2 V 
 ### Media
 
 - [`/media/flir1-video`]
-
----
-

@@ -384,9 +384,6 @@ rumors:
   status: not-primary-source-established
   observed_sources:
   - Circulating in public discourse attributed to unnamed sources and to commentary accompanying the November 2023 departure announcement
-  primary_source_search:
-  - The Hicks November 20 2023 statement presents Kirkpatrick's retirement as voluntary without identifying pressure or conflict ("Dr. Sean Kirkpatrick announced that he will retire from federal service in December")
-  - No primary source archived in this artifact corroborates the pressure/conflict framing
   note: The Hicks statement is the only primary-source account of the departure's framing surfaced in the 11-source corpus here; absent conflicting primary evidence, the announcement framing stands as the authoritative public record
 - id: r2
   added_date: '2026-04-20'
@@ -395,7 +392,4 @@ rumors:
   observed_sources:
   - Widely referenced in public UAP discourse and in commentary on the HRR Vol I findings
   - Explicit claims attributed to witnesses at 2023-07-26 House Oversight hearing and subsequent testimony that is archived in this repository
-  primary_source_search:
-  - The HRR Vol I directly addresses this by asserting "AARO successfully located the USG and industry programs, officials, companies" and finding "no empirical evidence" for reverse-engineering claims (Executive Summary, p.7)
-  - Specific counter-claims against AARO's access/scope are attested in separate primary sources (Grusch testimony) and appear as contradictions on the witness-statement side rather than in AARO's own primary sources
   note: AARO's own primary sources assert adequate investigatory access; counter-claims live in other archived primary sources. The disagreement is a cross-node analytical finding rather than a gap in AARO's primary record

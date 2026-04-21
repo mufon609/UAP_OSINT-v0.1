@@ -284,9 +284,6 @@ rumors:
   observed_sources:
   - New York Magazine interview with Chad Underwood (2019)
   - Multiple secondary-source accounts
-  primary_source_search:
-  - Underwood's own on-record statements (e.g., NYMag 2019 interview)
-  - Navy aircraft flight logs for the period
   note: Fravor's 2023 written testimony says only "one of my crews who were getting ready to launch" — no name given. Widely reported in secondary coverage as Chad Underwood.
 - id: r2
   added_date: '2026-04-19'
@@ -294,9 +291,6 @@ rumors:
   status: not-primary-source-established
   observed_sources:
   - Multiple secondary-source accounts
-  primary_source_search:
-  - Navy operational records for USS Nimitz Battle Group November–December 2004
-  - Fravor's other on-record statements
   note: Fravor's 2023 written testimony places the encounter "at sea" with the CAP point "roughly 40 miles South of the ship" — no geographic region is named in this source.
 - id: r3
   added_date: '2026-04-19'
@@ -304,7 +298,4 @@ rumors:
   status: not-primary-source-established
   observed_sources:
   - Multiple secondary-source accounts
-  primary_source_search:
-  - Navy flight logs
-  - Fravor's oral testimony at the 2023-07-26 House Oversight hearing
   note: Fravor's 2023 written testimony gives only "Nov 2004" and "at sea for roughly 2 weeks" from the Early November start — consistent with mid-November but not specifying a date.
