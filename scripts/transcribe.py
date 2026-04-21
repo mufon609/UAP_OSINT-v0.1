@@ -35,7 +35,16 @@ def extract_video_id(url):
 
 
 def fetch_via_api(video_id):
-    """Try youtube-transcript-api. Returns list of {text, start, duration} segments."""
+    """Fetch transcript via youtube-transcript-api. Returns list of
+    {text, start, duration} dicts.
+
+    The library's API changed in a recent release: `YouTubeTranscriptApi`
+    no longer exposes a `.get_transcript()` classmethod. The current
+    interface is an instance method `.fetch(video_id)` that returns a
+    `FetchedTranscript` object. `.to_raw_data()` on that object returns
+    the legacy dict-list shape the rest of this script expects, keeping
+    downstream `render_markdown(segments, ...)` unchanged.
+    """
     try:
         from youtube_transcript_api import YouTubeTranscriptApi
     except ImportError:
@@ -43,7 +52,7 @@ def fetch_via_api(video_id):
         sys.exit(1)
 
     try:
-        return YouTubeTranscriptApi.get_transcript(video_id)
+        return YouTubeTranscriptApi().fetch(video_id).to_raw_data()
     except Exception as e:
         print(f"ERROR fetching transcript: {e}", file=sys.stderr)
         sys.exit(1)
