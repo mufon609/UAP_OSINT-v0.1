@@ -44,7 +44,6 @@ FORMAT_BY_EXT = {
     ".htm": "html",
     ".txt": "txt",
     ".md": "transcript",
-    ".json": "json",
     # Video extensions — schema format_values supports `video`
     ".mp4": "video",
     ".m4v": "video",

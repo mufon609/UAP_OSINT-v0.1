@@ -145,11 +145,11 @@ def build_primary_sources_list(source_paths, manifest):
 def infer_format(path):
     """Map a source file path's extension to a manifest.yaml format value.
     Covers the schema's format_values vocabulary (pdf / html / txt /
-    transcript / video) plus json passthrough. Unknown extensions fall
-    back to html — intentional for web scraping where the source's
-    extension is often absent or generic. Contributors archiving audio
-    or image files must pass --format manually to override (schema
-    format_values doesn't include audio/image yet; tracked in BACKLOG)."""
+    transcript / video). Unknown extensions fall back to html —
+    intentional for web scraping where the source's extension is often
+    absent or generic. Contributors archiving audio or image files must
+    pass --format manually to override (schema format_values doesn't
+    include audio/image yet; tracked in BACKLOG)."""
     ext = Path(path).suffix.lower()
     return {
         ".pdf": "pdf",
@@ -157,7 +157,6 @@ def infer_format(path):
         ".htm": "html",
         ".txt": "txt",
         ".md": "transcript",
-        ".json": "json",
         # Video extensions — schema format_values supports `video`.
         # Mirrors manifest.py FORMAT_BY_EXT.
         ".mp4": "video",
@@ -368,11 +367,11 @@ def main():
     print(f"  2. Fill in document_intrinsic and context_extrinsic from the extracted text")
     print(f"  3. Write `description` (1-3 paragraphs) — renders as the node's Description section")
     print(f"  4. Populate quotes (verbatim passages with location refs)")
-    print(f"  5. Populate claims (atomic claims with source attribution)")
-    print(f"  6. Populate entities_referenced, naming_quirks, research_gaps")
+    print(f"  5. Populate entities_referenced, naming_quirks, research_gaps")
     if node_type in RUMORS_TYPES:
-        print(f"  7. Populate rumors (widely-reported claims lacking primary-source backing)")
-    print(f"  8. Validate: python3 scripts/validate-research.py {rel}")
+        print(f"  6. Populate rumors (widely-reported claims lacking primary-source backing)")
+    print(f"  7. Validate: python3 scripts/validate-research.py {rel}")
+    print(f"     (see prompts/build.md Step 7 for claims-scope rule — `claims: []` on all renderer-supported types)")
 
 
 if __name__ == "__main__":
