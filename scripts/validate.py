@@ -398,6 +398,102 @@ def check_manifest_checksums():
 
 
 # =============================================================================
+# Manifest archive_status consistency check
+#
+# `archive_status` is a 2-bit presence indicator per sources/manifest.yaml:
+#   bit 0 (value 1) = locally archived (status == archived AND path set)
+#   bit 1 (value 2) = archived on the Internet Archive Wayback Machine
+#                     (wayback_date set)
+#
+# This check enforces that the declared archive_status bits match the
+# signals in the rest of the entry (status / path / wayback_date), so
+# drift between the composite indicator and the underlying facts fails
+# loudly. Auto-maintenance is done by manifest.py add (bit 0) and
+# archive.py (bit 1) — this check catches manual edits or bugs that
+# would leave the indicator stale.
+# =============================================================================
+
+
+def check_manifest_archive_status():
+    """Verify archive_status is present, in-range, and consistent with
+    the rest of each manifest entry's state. Runs after the checksum
+    check; shares the same parse-failure early-exit.
+    """
+    issues = []
+    if not MANIFEST_PATH.exists():
+        return issues
+
+    try:
+        with open(MANIFEST_PATH) as f:
+            entries = yaml.safe_load(f) or []
+    except yaml.YAMLError:
+        # Checksum check already reported the parse failure
+        return issues
+
+    if not isinstance(entries, list):
+        return issues
+
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        url = entry.get("url", "(no url)")
+        rel = "sources/manifest.yaml"
+
+        arch = entry.get("archive_status")
+        if arch is None:
+            issues.append(Issue(rel, "error",
+                f"archive_status missing on entry (URL: {url}) — "
+                f"required field per schema.yaml manifest_entry.required"))
+            continue
+        if not isinstance(arch, int) or arch not in (0, 1, 2, 3):
+            issues.append(Issue(rel, "error",
+                f"archive_status must be 0, 1, 2, or 3; got {arch!r} "
+                f"(URL: {url})"))
+            continue
+
+        locally_archived = entry.get("status") == "archived" and bool(entry.get("path"))
+        wayback_archived = bool(entry.get("wayback_date"))
+        expected = (1 if locally_archived else 0) | (2 if wayback_archived else 0)
+
+        if arch != expected:
+            # Compose a specific message by decomposing the mismatch
+            mismatches = []
+            if (arch & 1) != (expected & 1):
+                if expected & 1:
+                    mismatches.append(
+                        "bit 0 should be SET (status == archived AND path is set) "
+                        "but archive_status indicates not-locally-archived"
+                    )
+                else:
+                    mismatches.append(
+                        "bit 0 is SET but the entry is not locally archived "
+                        "(status != archived OR path missing)"
+                    )
+            if (arch & 2) != (expected & 2):
+                if expected & 2:
+                    mismatches.append(
+                        "bit 1 should be SET (wayback_date is set) but "
+                        "archive_status indicates not-in-Wayback"
+                    )
+                else:
+                    mismatches.append(
+                        "bit 1 is SET but wayback_date is not set"
+                    )
+            issues.append(Issue(rel, "error",
+                f"archive_status={arch} inconsistent (URL: {url}) — "
+                f"expected {expected}. " + "; ".join(mismatches)))
+
+        if entry.get("wayback_skip") and entry.get("wayback_date"):
+            issues.append(Issue(rel, "error",
+                f"entry has both wayback_skip: true and wayback_date set "
+                f"(URL: {url}) — these are contradictory. Either the URL "
+                f"is skippable (wayback_skip) or it has a Wayback snapshot "
+                f"(wayback_date); not both."))
+
+    return issues
+
+
+# =============================================================================
 # Verbatim quote verification (check #11) — against archived source files
 # =============================================================================
 
@@ -1123,6 +1219,7 @@ def main():
     # interpreting node content; a checksum mismatch means downstream quote
     # verifications may be validating against altered source material.
     all_issues.extend(check_manifest_checksums())
+    all_issues.extend(check_manifest_archive_status())
 
     # Governance-file validation (check #13). Every .md under meta/ carries
     # id / type / schema_version / created frontmatter; templates also have

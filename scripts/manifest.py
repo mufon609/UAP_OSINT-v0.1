@@ -132,6 +132,12 @@ def cmd_add(args):
                 print(f"WARNING: Could not compute sha256 for {full_path}", file=sys.stderr)
         else:
             print(f"WARNING: path does not exist (archival incomplete): sources/{args.path}", file=sys.stderr)
+    # archive_status: 2-bit presence indicator per schema.yaml manifest_entry.
+    # New entries start with bit 0 set iff local archival is complete
+    # (status == archived AND path set); bit 1 is set later by archive.py
+    # when a Wayback snapshot is found or a Save Page Now submission
+    # succeeds. Contributors don't hand-maintain this field.
+    entry["archive_status"] = 1 if (entry.get("status") == "archived" and entry.get("path")) else 0
     if args.note:
         entry["note"] = args.note
     entries.append(entry)
@@ -139,6 +145,7 @@ def cmd_add(args):
     print(f"✓ Added: {args.url}")
     if entry.get("sha256"):
         print(f"  sha256: {entry['sha256']}")
+    print(f"  archive_status: {entry['archive_status']}")
 
 
 def cmd_status(args):
