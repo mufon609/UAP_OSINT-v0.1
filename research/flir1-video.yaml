@@ -57,7 +57,6 @@ context_extrinsic:
     entity: UAP_OSINT-v0.1 repository
     verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
 quotes: []
-claims: []
 entities_referenced:
 - id: e1
   added_date: '2026-04-20'

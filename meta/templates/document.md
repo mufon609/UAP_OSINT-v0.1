@@ -59,12 +59,11 @@ archival_status: {{archival_status}}
      Applies to all document kinds and doc_forms (gov-doc technical reports
      and testimony; non-gov-doc article, book, social-post, filing, etc). -->
 
-<!-- Document nodes have no "What This Establishes" / claims section by design.
-     The document IS the fact record. Evidentiary content is verbatim source
-     passages in Key Passages. Other nodes that reference facts from this
-     document link to the document and cite the specific passage — no
-     contributor-prose claim layer sits in between. Drift cannot occur where
-     contributor paraphrase cannot exist. -->
+<!-- Document nodes have no "What This Establishes" synthesis section by
+     design. The document IS the fact record. Evidentiary content is
+     verbatim source passages in Key Passages. See meta/conventions.md
+     "Statements as the universal evidentiary primitive" for the
+     repo-wide statements-only discipline. -->
 
 <!-- CORPUS-ADDENDUM-INSERT: Additional sections required by the corpus
      addendum (e.g., Review Status for aawsap-dird) are inserted here by

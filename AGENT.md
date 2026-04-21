@@ -70,23 +70,17 @@ If you're doing anything related to this instance's topic, read
 
 ## Query protocol — answering a user's factual question
 
-**Note:** the `research/*.yaml` layer is populated during Phase D of the
-layered-build process. Until Phase D ships and research artifacts exist,
-skip step 3 below and query the node layer directly (`/people/`,
-`/documents/`, `/events/`, etc.). This section describes the intended
-steady-state query path.
-
 1. **Identify entities** in the question (people, events, documents, organizations by name).
 2. **Confirm scope**: read `meta/topic/overview.md` — is the question within this instance's coverage?
 3. **For each entity**, search `research/*.yaml` for the entity name. Research artifacts are the structured fact layer; prefer them over prose nodes.
-4. **Assemble answer** from research-artifact claims. For each claim you cite, include:
-   - the claim ID
+4. **Assemble answer** from research-artifact `quotes[]` (the universal evidentiary primitive). For each quote you cite, include:
+   - the quote ID
    - the `target_node` (so the user can read narrative context)
    - the `source.path` (so the user can verify against primary source)
 5. **Surface uncertainty explicitly**:
    - If `superseded_by` is set — use the successor and note supersession.
    - If `contradicted_by` is set — cite both sides per the `❌ Contradiction` convention.
-   - If a claim rests on a single sworn-testimony source — use the "sworn testimony, claim not independently verified" framing.
+   - If a quote rests on a single sworn-testimony source — use the "sworn testimony, claim not independently verified" framing.
 6. **If information is not in the repo** — say so. Do not guess. Suggest adding the investigation thread to `meta/topic/research-queue.md`.
 
 ---

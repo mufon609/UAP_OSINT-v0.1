@@ -142,7 +142,7 @@ fi
 # target_node type. The F.4b renderer path is then exercised for each
 # artifact: build-from-research regenerates the node body, post-build
 # validate.py confirms structural integrity, review-coverage runs the
-# four checks (Coverage / Boundary / Stub-linking / OQ dedup). Derivative
+# three checks (Coverage / Boundary / Stub-linking). Derivative
 # artifact surfaces the validate-research warn for empty media_versioning
 # + derivation_of set (non-blocking — contributor review signal).
 for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/__smoke-media-audio" "media/__smoke-media-imagery" "media/__smoke-media-deriv"; do
@@ -221,8 +221,8 @@ done
 # from document_intrinsic location keys + Description + Ownership
 # Timeline + UAP-Scope Activity + Relationships with Confirmed/Flagged
 # split). Post-build validate.py confirms structural integrity;
-# review-coverage runs the four checks (Coverage / Boundary /
-# Stub-linking / OQ dedup).
+# review-coverage runs the three checks (Coverage / Boundary /
+# Stub-linking).
 for loc_target in "locations/__smoke-location"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$loc_target" 2>&1)"
     rc=$?
@@ -273,8 +273,8 @@ done
 # on gov-contractor only; all three kinds emit the Overview fact-table,
 # Key Personnel with leadership_class sub-grouping, Key Passages, and
 # org_relationships-sourced Relationships). Post-build validate.py
-# confirms structural integrity; review-coverage runs the four checks
-# (Coverage / Boundary / Stub-linking / OQ dedup).
+# confirms structural integrity; review-coverage runs the three checks
+# (Coverage / Boundary / Stub-linking).
 for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-contractor" "organizations/__smoke-org-private"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$ok_target" 2>&1)"
     rc=$?

@@ -8,7 +8,7 @@ Structural checks only — does NOT compare against the target node
 Checks (per schema.yaml research-artifact.invariants):
   - Required top-level keys present (id, type, schema_version, target_node,
     status, created, description, primary_sources, document_intrinsic,
-    context_extrinsic, quotes, claims, entities_referenced, naming_quirks)
+    context_extrinsic, quotes, entities_referenced, naming_quirks)
   - id matches file path
   - type == 'research-artifact'
   - schema_version ∈ schema.compatible_with
@@ -17,7 +17,7 @@ Checks (per schema.yaml research-artifact.invariants):
   - Per-section entries: required lifecycle fields, unique ids, valid
     enum values
   - primary_sources[].path and sources[].path appear in sources/manifest.yaml
-  - quote_ref and entity references point to existing entry ids
+  - entity references[].quote_id points to an existing quote.id
   - Conditional `rumors` section present if target_node type ∈
     {person, organization, event, location}; absent otherwise
   - Conditional `timeline` section present if target_node type ∈
@@ -37,20 +37,32 @@ Checks (per schema.yaml research-artifact.invariants):
   - Per-entry enum checks for corroboration_items.observation_type,
     program_involvement.evidentiary_basis / confidence, and
     vouching_chain.evidentiary_basis / confidence.
-  - Prose-field token drift (check #16) — for every contributor-authored
-    prose field on the artifact (background / uap_relevance /
-    credibility_notes at the top level; timeline[].event / affiliations[].role
-    / relationships[].relationship / corroboration_items[].note /
-    program_involvement[].role / publication_record[].beat /
-    vouching_chain[].attestation at the entry level), extract significant
-    tokens (≥3 chars, non-stopword, possessive `'s` stripped) and verify
-    each appears in the referenced primary-source text. Impartial
-    reporter: warn on every unmatched token regardless of count or
-    field; error only when 100% of a field's tokens are absent from
-    source (complete divergence — mathematical, not stylistic). Scoped
-    to person artifacts in v1; extends to other types as their F-sub-
-    phase ships. Complements verbatim-quote check #11 on the claims-
-    layer-free prose surfaces identified in the F.1c audit RCA.
+  - Prose-field token drift (check #16) — extract significant tokens
+    (≥3 chars, non-stopword, possessive `'s` stripped) from contributor
+    synthesis prose and verify each appears in the referenced primary-
+    source text. Impartial reporter: warn on every unmatched token
+    regardless of count or field; error only when 100% of a field's
+    tokens are absent from source (complete divergence — mathematical,
+    not stylistic).
+
+    Scope is CONTRIBUTOR SYNTHESIS PROSE: top-level free-prose fields
+    (`description`, `background`, `uap_relevance`, `credibility_notes`)
+    and per-entry synthesis content notes (`ownership_timeline.note`,
+    `uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+    `media_versioning.note`, `vouching_chain.attestation`). Applied
+    across all renderer-supported types (person, event, transcript,
+    media, organization, location). See PROSE_FIELDS_BY_TYPE /
+    PROSE_ENTRY_FIELDS_BY_TYPE for exact per-type scope.
+
+    Explicitly OUT of scope: compact label cells (role titles, short
+    relationship descriptors, `timeline[].event`, `use_status`,
+    `activity`, `contracts.subject`, `publication_record.beat`) and
+    cross-reference descriptor notes (`corroboration_items.note`,
+    `witnesses_testimony.note`, `org_relationships.note`,
+    `location_relationships.note`). Token-match misfires on label
+    cells and meta-descriptors; fabrication in those cells is Phase
+    III semantic-review territory. Scope narrowed in two passes on
+    2026-04-21 (commits 8667590 + df743fe).
 
 Usage:
   validate-research.py                  # validate all research/*.yaml
@@ -158,7 +170,7 @@ TYPE_DIRS = {
 REQUIRED_TOP_LEVEL_KEYS = [
     "id", "type", "schema_version", "target_node", "status", "created",
     "primary_sources", "document_intrinsic",
-    "context_extrinsic", "quotes", "claims", "entities_referenced",
+    "context_extrinsic", "quotes", "entities_referenced",
     "naming_quirks",
 ]
 
@@ -189,7 +201,6 @@ DESCRIPTION_REQUIRED_TYPES = {
 ALL_ENTRY_SECTIONS = [
     # Universal (top-level required on every artifact)
     "quotes",
-    "claims",
     "entities_referenced",
     "naming_quirks",
     # Type-conditional
@@ -220,7 +231,6 @@ ALL_ENTRY_SECTIONS = [
 ]
 
 # Per-entry enum values
-VALID_EVIDENTIARY_TYPES = {"sworn-testimony", "documented", "cited", "secondary"}
 VALID_NAMING_QUIRK_RESOLUTIONS = {
     "preserve-as-sic-in-quotes", "use-canonical", "disputed", "unresolved"
 }
@@ -767,7 +777,6 @@ def validate_artifact(path, schema, manifest_paths):
 
     # --- Per-section entry checks ---
     issues.extend(check_quotes(rel, data, manifest_paths, target_type))
-    issues.extend(check_claims(rel, data, manifest_paths))
     issues.extend(check_entities(rel, data))
     issues.extend(check_naming_quirks(rel, data, manifest_paths))
     if "rumors" in data:
@@ -807,14 +816,14 @@ def validate_artifact(path, schema, manifest_paths):
     if "location_relationships" in data:
         issues.extend(check_location_relationships(rel, data, manifest_paths))
 
-    # --- Cross-ref integrity (quote_ref, entity references, supersedes/etc) ---
+    # --- Cross-ref integrity (entity references, supersedes/etc) ---
     issues.extend(check_cross_refs(rel, data))
 
     # --- Prose-field token drift (check #16) ---
     # Contributor-prose surfaces that aren't covered by check #11's
     # verbatim-quote verification. Scoped per-type; no-ops on types
-    # without registered prose fields (documents etc. — they carry no
-    # contributor-prose layer post claims-layer elimination).
+    # without registered prose fields (documents carry no contributor-
+    # prose layer; their evidentiary content is verbatim Key Passages).
     issues.extend(check_prose_drift(rel, data, target_type))
 
     return issues
@@ -961,78 +970,11 @@ def check_quotes(rel, data, manifest_paths, target_type=None):
     return issues
 
 
-def check_claims(rel, data, manifest_paths):
-    issues = []
-    claims = _entries(data, "claims")
-    issues.extend(_check_unique_ids(rel, claims, "claims"))
-    # Collect quote ids for quote_ref validation
-    quote_ids = {q.get("id") for q in _entries(data, "quotes") if isinstance(q, dict)}
-    for i, c in enumerate(claims):
-        if not isinstance(c, dict):
-            continue
-        issues.extend(_check_lifecycle_fields(rel, c, "claims", i))
-        # Required: statement, sources (list), evidentiary_type
-        if "statement" not in c:
-            issues.append(Issue(rel, "error",
-                f"claims[{i}] ({c.get('id')!r}): missing required 'statement'"))
-        sources = c.get("sources")
-        if not isinstance(sources, list) or not sources:
-            issues.append(Issue(rel, "error",
-                f"claims[{i}] ({c.get('id')!r}): 'sources' must be a non-empty list"))
-        else:
-            for si, src in enumerate(sources):
-                if not isinstance(src, dict):
-                    issues.append(Issue(rel, "error",
-                        f"claims[{i}] sources[{si}]: must be a dict"))
-                    continue
-                if "path" not in src or "location" not in src:
-                    issues.append(Issue(rel, "error",
-                        f"claims[{i}] ({c.get('id')!r}) sources[{si}]: must include path + location"))
-                if src.get("path") and src["path"] not in manifest_paths:
-                    issues.append(Issue(rel, "error",
-                        f"claims[{i}] ({c.get('id')!r}) sources[{si}]: "
-                        f"path {src['path']!r} not in sources/manifest.yaml"))
-                if "quote_ref" in src and src["quote_ref"] not in quote_ids:
-                    issues.append(Issue(rel, "error",
-                        f"claims[{i}] ({c.get('id')!r}) sources[{si}]: "
-                        f"quote_ref {src['quote_ref']!r} does not match any quote.id"))
-            # Check A — claim-anchor requirement. Every claim must tie to at
-            # least one verbatim quote via sources[].quote_ref. This is the
-            # mechanical hook that prevents unanchored claim-text drift
-            # (surfaced during the D.5 pilot audit: contributor prose can
-            # silently introduce facts, drop qualifiers, or reword beyond what
-            # any quoted source actually supports). If a claim genuinely
-            # synthesizes across multiple source spans, add quotes for each
-            # span and link them; do NOT leave the claim unanchored.
-            has_quote_ref = any(
-                isinstance(s, dict) and s.get("quote_ref")
-                for s in sources
-            )
-            if not has_quote_ref:
-                issues.append(Issue(rel, "error",
-                    f"claims[{i}] ({c.get('id')!r}): no quote_ref anchors this "
-                    f"claim. Every claim must tie to at least one verbatim "
-                    f"quote via sources[].quote_ref. If the needed quote "
-                    f"doesn't exist yet, add it to quotes: first, then "
-                    f"reference its id here."))
-        # evidentiary_type enum
-        et = c.get("evidentiary_type")
-        if et is None:
-            issues.append(Issue(rel, "error",
-                f"claims[{i}] ({c.get('id')!r}): missing required 'evidentiary_type'"))
-        elif et not in VALID_EVIDENTIARY_TYPES:
-            issues.append(Issue(rel, "error",
-                f"claims[{i}] ({c.get('id')!r}): evidentiary_type {et!r} "
-                f"not in {sorted(VALID_EVIDENTIARY_TYPES)}"))
-    return issues
-
-
 def check_entities(rel, data):
     issues = []
     entities = _entries(data, "entities_referenced")
     issues.extend(_check_unique_ids(rel, entities, "entities_referenced"))
     quote_ids = {q.get("id") for q in _entries(data, "quotes") if isinstance(q, dict)}
-    claim_ids = {c.get("id") for c in _entries(data, "claims") if isinstance(c, dict)}
     for i, e in enumerate(entities):
         if not isinstance(e, dict):
             continue
@@ -1067,10 +1009,6 @@ def check_entities(rel, data):
                     issues.append(Issue(rel, "error",
                         f"entities_referenced[{i}] ({e.get('id')!r}) references[{ri}]: "
                         f"quote_id {ref['quote_id']!r} does not match any quote.id"))
-                if "claim_id" in ref and ref["claim_id"] not in claim_ids:
-                    issues.append(Issue(rel, "error",
-                        f"entities_referenced[{i}] ({e.get('id')!r}) references[{ri}]: "
-                        f"claim_id {ref['claim_id']!r} does not match any claim.id"))
     return issues
 
 
@@ -1681,7 +1619,7 @@ def check_location_relationships(rel, data, manifest_paths):
 # "allowed" to have more contributor vocabulary. Synthesis-heavy
 # sections and fact-dense sections go through the same rule.
 #
-# Known v1 limitations documented in BACKLOG:
+# Known limitations:
 #   - Membership-only; doesn't catch phrase-restructuring where all
 #     words exist in source (e.g., "ground operations" when source has
 #     "operations supporting... ground forces" — F.1c drift #1).
@@ -1689,8 +1627,13 @@ def check_location_relationships(rel, data, manifest_paths):
 #     distinct tokens.
 #   - No whitelist; repo vocabulary ("disclosure chain", etc.) warns.
 #
-# Scoped to person artifacts in v1; extends to other node types as
-# their F-sub-phase ships (Step F on the roadmap).
+# Scope is set by PROSE_FIELDS_BY_TYPE and PROSE_ENTRY_FIELDS_BY_TYPE
+# below — free-prose synthesis fields and synthesis-content notes
+# across all renderer-supported types (person / event / transcript /
+# media / organization / location). Narrowed from the pre-2026-04-21
+# scope that also covered structural label cells and cross-reference
+# descriptor notes; those fire too many false positives for
+# token-match to be the right instrument.
 # =============================================================================
 
 # Common English stopwords dropped from token-comparison. About 110

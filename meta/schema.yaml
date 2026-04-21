@@ -140,12 +140,10 @@ types:
       Timeline: {chronological: true}
 
   # --- ORGANIZATION -------------------------------------------------------
-  # Under the statements-only discipline (post-Step-D document claims-layer
-  # elimination, extended through events / transcripts / media): orgs don't
-  # speak — officials speak for them. The previous `What Is Confirmed`
-  # section was contributor-prose synthesis anchored to sources, same shape
-  # as the document claims layer eliminated earlier. F.5 removes it across
-  # all three kinds. Factual content about the org flows through:
+  # Under the statements-only discipline, orgs don't speak — officials
+  # speak for them. The previous `What Is Confirmed` section was
+  # contributor-prose synthesis anchored to sources; F.5 removed it
+  # across all three kinds. Factual content about the org flows through:
   #   - Key Passages — verbatim excerpts from primary sources ABOUT the
   #     org (establishment press releases, statutory authority, director
   #     announcements, IG findings). Parallels document Key Passages but
@@ -536,8 +534,14 @@ types:
       #   attested in a primary source don't belong here — they belong in
       #   `description` (synthesis, labeled) or don't enter the record.
       - context_extrinsic     # dict — contextual metadata (hearing date, etc.)
-      - quotes                # list — verbatim-quotable passages
-      - claims                # list — atomic claims the sources establish
+      - quotes                # list — verbatim statements from primary sources.
+      #   The universal evidentiary primitive across all node types; filtered
+      #   at render time for type-specific section rendering (Statements on
+      #   person, Key Testimony on hearings, Key Passages elsewhere). No
+      #   separate `claims[]` layer — a contributor-synthesized claim layer
+      #   created a drift surface that mechanical checks couldn't catch;
+      #   eliminated repo-wide 2026-04-21. Cross-entity synthesis goes on
+      #   finding nodes (F.7).
       - entities_referenced   # list — every named person/org/event/doc/location
       - naming_quirks         # list — source-specific oddities (typos, alt spellings)
     # Audit trail / history: git log and git diff on the artifact file
@@ -718,7 +722,7 @@ types:
 
     # --- Entry shapes per top-level list section ---
 
-    # Every entry across claims, quotes, entities_referenced, rumors,
+    # Every entry across quotes, entities_referenced, rumors,
     # naming_quirks carries the lifecycle fields below.
     entry_lifecycle_fields:
       required: [id, added_date]
@@ -782,34 +786,14 @@ types:
       #   the quote-verbatim check substring-matches the extracted source
       #   text regardless.
 
-    claim_entry:
-      required: [statement, sources, evidentiary_type]
-      optional: [independently_verifiable]
-      # statement: prose sentence, one atomic claim
-      # sources: list — a claim may draw on multiple sources
-      # evidentiary_type: sworn-testimony | documented | cited | secondary
-      # independently_verifiable: free-text note on corroboration status
-
-    claim_source:
-      required: [path, location]
-      optional: [quote_ref]
-      # quote_ref: links the claim to a specific quote entry's id.
-      # Every claim must have quote_ref set on at least one of its sources
-      # (enforced by validate-research.py check_claims). This is the
-      # anchor that ties the contributor-written claim.statement text to
-      # a mechanically-verified verbatim source passage. Without it,
-      # claim-prose drift (fabricated facts, dropped qualifiers, rephrased
-      # inferences) is invisible to the validator. If no existing quote
-      # supports a claim, add the quote first, then reference its id here.
-
     entity_entry:
       required: [entity_type, name, wrap_path]
       optional: [context_summary, references]
       # entity_type: person | organization | document | event | location | finding
       # name: display name
       # wrap_path: canonical repo path (/people/..., /organizations/..., etc.)
-      # references: list of {quote_id: X} or {claim_id: Y} — auto-populated
-      #   by scaffolder/build-from-research.py; contributors don't hand-maintain
+      # references: list of {quote_id: X} — auto-populated by
+      #   scaffolder/build-from-research.py; contributors don't hand-maintain
 
     rumor_entry:
       required: [claim, status]
@@ -880,9 +864,11 @@ types:
       required: [voucher_path, attestation, source]
       optional: [evidentiary_basis, confidence, note]
       # voucher_path: /people/... or /organizations/... of the voucher
-      # attestation: verbatim or paraphrased statement of vouching
-      #   (when verbatim, contributor may additionally register a quote
-      #   entry and reference it via quote_ref)
+      # attestation: verbatim or paraphrased statement of vouching.
+      #   When the attestation is a verbatim quote, the contributor may
+      #   additionally register it as a quote entry on the vouching
+      #   person's own research artifact and link to that person node
+      #   here via voucher_path.
       # source: object with path + location
       # evidentiary_basis / confidence: same vocabulary as program_involvement
 
@@ -1127,13 +1113,10 @@ types:
 
       # Cross-reference
       - "every sources[].path exists in sources/manifest.yaml"
-      - "every quote_ref points to an existing quote.id"
-      - "every claim has at least one sources[] entry with quote_ref set (anchor requirement — prevents unanchored claim drift)"
-      - "every reference in entity.references points to an existing quote.id or claim.id"
+      - "every reference in entity.references points to an existing quote.id"
       - "every superseded_by / contradicted_by / corroborated_by ref points to an existing entry id (or is a structured external ref)"
 
       # Enum values
-      - "evidentiary_type (claims) in [sworn-testimony, documented, cited, secondary]"
       - "resolution (naming_quirks) in [preserve-as-sic-in-quotes, use-canonical, disputed, unresolved]"
       - "rumor status in [not-primary-source-established, primary-source-disputed]"
       - "entity entity_type in [person, organization, document, event, transcript, media, location, finding]"

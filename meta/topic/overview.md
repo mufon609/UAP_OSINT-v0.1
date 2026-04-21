@@ -108,8 +108,7 @@ Common query patterns for this instance:
   `/events/` for the event node; follow its Associated Nodes to
   related hearings, documents, and transcripts.
 - **"What are open investigation threads?"** — read
-  `meta/topic/research-queue.md` (priority queue) and scan
-  `research/*.yaml` for unresolved research gaps.
+  `meta/topic/research-queue.md` (priority queue).
 
 When citing from this repo, reference the source (primary-source PDF
 path from manifest) alongside the node narrative. A user asking "is

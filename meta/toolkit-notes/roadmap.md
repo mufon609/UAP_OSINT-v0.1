@@ -23,8 +23,7 @@ when.
 
 Finding is the last unbuilt node type. Design pass open: decide what
 synthesis section (if any) finding nodes carry under statements-only.
-Options: hard-anchored claim layer (every sentence verbatim-quote-
-anchored), quotes-only Key Passages parallel to documents, or a cross-
+Options: quotes-only Key Passages parallel to documents, or a cross-
 reference surface parallel to hearing Witnesses & Testimony.
 
 No pilot candidate yet — will emerge from cross-entity patterns
@@ -68,7 +67,7 @@ Four post-launch corrections shape the current design. Each came from
 running the pipeline against real sources and observing a gap between
 what mechanical checks catch and what the discipline requires.
 
-### Document nodes have no claims layer (Post-Step D, 2026-04)
+### Statements-only across all node types (2026-04-21)
 
 Audits kept finding fine drift in contributor-written `claim.statement`
 prose — dropped qualifiers, synonym rephrases, word-level
@@ -76,15 +75,19 @@ condensations — that the claim-anchor check couldn't catch. Root cause:
 the claims layer itself. A contributor-synthesis layer between source
 and reader is an unavoidable drift surface while the layer exists.
 
-Correction: document nodes ARE their fact record. Evidentiary content
-is verbatim source passages in Key Passages. Other nodes that cite
-facts from a document link to the document and reference the specific
-passage. No intermediate paraphrase can drift.
+Correction shipped in two waves:
+- **Wave 1 (Post-Step D, 2026-04):** document nodes lose their claims
+  layer; evidentiary content is verbatim Key Passages only.
+- **Wave 2 (2026-04-21):** the `claims[]` shape is eliminated repo-
+  wide. `quotes[]` becomes the universal evidentiary primitive
+  across all node types. Every rendered "claim-like" surface is a
+  filtered view of `quotes[]` (Claim Inventory on whistleblowers =
+  quotes tagged `filed-claim`; Key Testimony on hearings = quotes
+  sorted by date; Key Passages elsewhere = all quotes).
 
-**Synthesis nodes** (person, organization, event, finding, location)
-retain claim-like sections when analytical purpose requires them
-(Claim Inventory on whistleblowers, What The Hearing Established on
-hearings, etc.).
+Cross-entity synthesis (patterns spanning 3+ nodes) goes on finding
+nodes (F.7) — a node-level structure, not an artifact-level data
+layer.
 
 ### Source-taxonomy partition (Post-Step D, 2026-04)
 
@@ -132,11 +135,11 @@ those are orthogonal to edit history.
 
 ## Open architectural threads
 
-- **Statements-only across all synthesis nodes.** Post-Step-D removed
-  the claims layer from documents. Open: whether the same discipline
-  extends to surviving claim-like sections on synthesis nodes (Claim
-  Inventory, What The Hearing Established, etc.). Each F sub-phase's
-  design pass reopens this for its type.
+- ~~**Statements-only across all synthesis nodes.**~~ **Closed
+  2026-04-21.** The claims[] shape was eliminated repo-wide;
+  `quotes[]` is now the universal evidentiary primitive across every
+  node type. Claim Inventory survives as a render-time filter on
+  quotes tagged `filed-claim`, not a separate data structure.
 
 ---
 

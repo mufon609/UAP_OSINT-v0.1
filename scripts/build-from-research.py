@@ -7,10 +7,9 @@ preserved from the existing node; body sections (H1 title onward) are
 replaced entirely by content derived from the artifact.
 
 SCOPE: document (D.3), person (F.1b), event (F.2b), transcript (F.3b),
-media (F.4b). Extension to the remaining three node types (organization,
-location, finding) is tracked in BACKLOG.md — each requires per-type
-section renderers and type-specific artifact field conventions, per
-the Step F template on the roadmap.
+media (F.4b), organization (F.5b), location (F.6b). Finding is the
+last remaining type; F.7 design pass is open (see
+meta/toolkit-notes/roadmap.md).
 
 Person renderer (F.1b):
   - Universal sections: Identity, Background, UAP Relevance,
@@ -1189,9 +1188,10 @@ def render_transcript_key_passages(artifact):
 
 def render_body_document(artifact, node_kind):
     # H1 title stands alone — no `---` separator between H1 and first H2.
-    # Document nodes have no What This Establishes / claims section: the
+    # Document nodes have no What This Establishes synthesis section: the
     # document IS the fact record, and Key Passages carries the verbatim
-    # evidentiary content. See schema.yaml document.kinds commentary.
+    # evidentiary content. See meta/conventions.md "Statements as the
+    # universal evidentiary primitive" for the repo-wide discipline.
     title = render_title(artifact).rstrip("\n") + "\n"
     sections = [
         render_document_summary(artifact),
@@ -2177,7 +2177,8 @@ def main():
     if node_type not in SUPPORTED_TYPES:
         sys.exit(f"ERROR: build-from-research.py currently supports "
                  f"{sorted(SUPPORTED_TYPES)} only (got {node_type!r}). "
-                 f"Extension to other node types is tracked in BACKLOG.md.")
+                 f"Finding extension is tracked as F.7 in "
+                 f"meta/toolkit-notes/roadmap.md.")
 
     node_path = REPO_ROOT / dir_name / f"{slug}.md"
     if not node_path.exists():

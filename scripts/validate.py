@@ -13,7 +13,8 @@ Checks:
      node-path pointers (media.derivation_of, transcript.derived_from)
      share one existence-check pass. Missing targets register in the
      broken-link registry as backlog (not errors).
-  8. (retired — was Open Questions formatting; section removed 2026-04-21)
+  8. — reserved — (position preserved so check-number references #9–#15
+     across docs and inline comments stay stable)
   9. Table cell word budget (soft warning)
  10. Finding cross-reference consistency (entities listed must link back)
  11. Verbatim-quote verification — for every '> blockquote' followed by a
@@ -994,7 +995,6 @@ def validate_node(path, schema):
 # =============================================================================
 
 META_DIR = REPO_ROOT / "meta"
-TEMPLATES_DIR = META_DIR / "templates"
 
 # Type → content-directory mapping used to derive a template's expected
 # placeholder id (person.md → id: people/{{slug}}). Kept local to this

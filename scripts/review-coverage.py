@@ -8,9 +8,9 @@ validate.py (node structure + verbatim quotes) and validate-research.py
 other.
 
 Checks:
-  1. Coverage     — every artifact claim.statement and every quote.text
-                    appears in the node body (whitespace/punctuation
-                    normalized per validate.py rules).
+  1. Coverage     — every artifact quote.text appears in the node body
+                    (whitespace/punctuation normalized per validate.py
+                    rules).
   2. Boundary     — the node body (outside Associated Nodes) matches what
                     `build-from-research.py --dry-run` would regenerate
                     from the current artifact. Divergence means the
@@ -18,36 +18,22 @@ Checks:
                     hand-edited, or the renderer changed.
   3. Stub-linking — every entities_referenced.wrap_path appears as a
                     [`/path`] link in the node body.
-  4. Claim drift  — every significant token (proper noun, designator,
-                    number, quoted string) in a claim.statement appears
-                    in the source text. Catches coarse drift: fabricated
-                    facts, fabricated entities, contributor additions not
-                    anchored in the source. For claims with quote_ref,
-                    tokens present in source but NOT in the referenced
-                    quote emit a warning — the contributor drew beyond
-                    the cited anchor. Does NOT catch fine drift (dropped
-                    qualifiers, rephrased inferences, voice changes);
-                    those require semantic review (Phase III Step 2).
-                    Paired with validate-research.py's quote_ref-required
-                    check which ensures every claim has an anchor to
-                    check against.
-  6. Description  — every significant token in the node's ## Description
+  4. Description  — every significant token in the node's ## Description
      drift         section appears in the artifact's grounding text:
                     source text + context_extrinsic strings +
                     document_intrinsic strings + naming_quirks canonical
-                    forms + entities_referenced names. This closes the
-                    drift surface the claims-layer elimination opened
-                    wider: Description is the last contributor-prose
-                    layer on document nodes. Same error semantics as
-                    Check 5 — fabricated entities or abbreviation
-                    expansions that don't match source become commit-
-                    blocking errors. Fine drift (dropped qualifiers,
-                    synonym rephrases at the lowercase level) is still
-                    not caught — semantic review required.
+                    forms + entities_referenced names. Closes the drift
+                    surface on contributor-synthesis prose; fabricated
+                    entities, abbreviation expansions that don't match
+                    source, or numbers not in any grounding field become
+                    commit-blocking errors. Fine drift (dropped qualifiers,
+                    synonym rephrases at the lowercase level) is not
+                    caught — semantic review (Phase III Step 2) is
+                    still required for that class.
 
-Scope: document nodes only (matching build-from-research.py D.3). Other
-node types are acknowledged and skipped — extension is BACKLOG work
-alongside the per-type Phase II renderers.
+Scope: renderer-supported types (document, person, event, transcript,
+media, organization, location). Finding is acknowledged and skipped —
+F.7 will extend coverage when the renderer ships.
 
 This script handles mechanical rules only. Semantic / narrative-coherence
 review (agent-assisted) is a separate pass referenced in
@@ -97,10 +83,10 @@ SUPPORTED_TYPES = {"document", "person", "event", "transcript", "media", "organi
 
 LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
 
-# --- Check 5 (Claim drift) patterns and vocab -------------------------------
-# Markdown link syntax used to wrap entity paths in claim prose. Stripped
+# --- Token-drift patterns and vocab (Check 4 — Description drift) ----------
+# Markdown link syntax used to wrap entity paths in prose. Stripped
 # before token extraction since wrap_paths are repo identifiers, not
-# content claims about the source.
+# content from the source.
 MARKDOWN_LINK_PATTERN = re.compile(r"\[`/[^`]+`\]")
 # Wrap-inside-parens pattern — strips the PARENS ALONG WITH the wrap when
 # the parens contain only the wrap path. Prevents orphan `()` in the
@@ -112,7 +98,7 @@ WRAP_IN_PARENS_PATTERN = re.compile(r"\s*\(\s*\[`/[^`]+`\]\s*\)")
 
 # Designator patterns like VFA-41, CVN-68, F/A-18F, APG-73 — uppercase
 # tokens combining letters and digits around a hyphen or slash. These
-# should appear verbatim in the source when the claim cites them.
+# should appear verbatim in the source when prose cites them.
 DESIGNATOR_PATTERN = re.compile(r"\b[A-Z][A-Z0-9]*[-/][A-Z0-9/-]*[A-Z0-9]\b")
 
 # Digit sequences — years, altitudes, counts. Allows commas, periods,
@@ -161,7 +147,7 @@ class Issue:
 def normalize_for_compare(text):
     """Mirror validate.py.normalize_for_compare exactly.
 
-    Handles common rendering artifacts so a claim/quote from the artifact
+    Handles common rendering artifacts so a quote from the artifact
     can be found as a substring in the rendered node body regardless of
     table-cell punctuation, line wrap, smart quotes, Markdown block-quote
     line-prefix markers, etc. Keep in lockstep with validate.py —
@@ -226,7 +212,7 @@ def truncate(s, n=80):
     return s if len(s) <= n else s[:n] + "..."
 
 
-# --- Check 5 helpers: source extraction and claim-token analysis -----------
+# --- Token-drift helpers: source extraction and token analysis -------------
 
 _source_text_cache = {}  # Path -> extracted plaintext (or None on failure)
 
@@ -265,15 +251,14 @@ def extract_source_text(source_path):
 
 
 def strip_markdown_links(text):
-    """Remove [`/path/to/entity`] wrap-path link syntax from claim text.
+    """Remove [`/path/to/entity`] wrap-path link syntax from prose text.
 
     These are repository identifiers (navigational cross-references), not
-    content claims about the source document. A claim that wraps
-    `[`/organizations/vfa-41`]` around a squadron name is stating a repo
-    fact (the canonical entity lives here), not a source fact (the
-    document said "VFA-41"). Drift checks run on the bare prose left
-    after stripping — the entity linkage is checked separately by the
-    stub-linking pass.
+    source content. A wrap around a squadron name
+    (`[`/organizations/vfa-41`]`) asserts a repo fact (the canonical
+    entity lives here), not a source fact (the document said "VFA-41").
+    Drift checks run on the bare prose left after stripping — the entity
+    linkage is checked separately by the stub-linking pass.
 
     Two-pass strip:
       (1) Wraps inside empty parens `( [`/path`] )` are removed AS A
@@ -290,8 +275,8 @@ def strip_markdown_links(text):
     return MARKDOWN_LINK_PATTERN.sub("", text)
 
 
-def extract_significant_tokens(claim_text):
-    """Return set of tokens from a claim statement worth checking against
+def extract_significant_tokens(text):
+    """Return set of tokens from a prose text worth checking against
     the source. A "significant token" is one that, if fabricated, would
     represent real evidentiary drift:
 
@@ -300,14 +285,14 @@ def extract_significant_tokens(claim_text):
       - Capitalized non-stopword words (proper nouns: Fravor, Pentagon,
         Nimitz, etc. — also compound pieces like "Forty-One")
       - Quoted strings (content inside " " or ' ') — direct source-word
-        claims
+        references
 
     Grammatical / function words that happen to be capitalized (pronouns,
     articles, sentence-initial conjunctions) are filtered via the
     CAPITALIZED_STOPWORDS list. Single characters and empty strings are
     dropped.
     """
-    text = strip_markdown_links(claim_text)
+    text = strip_markdown_links(text)
     tokens = set()
 
     # 1. Hyphen/slash designators (caps + digit/letter mix)
@@ -330,8 +315,8 @@ def extract_significant_tokens(claim_text):
             continue
         tokens.add(word)
 
-    # 4. Double-quoted strings — content inside "..." is an explicit
-    #    claim about source wording and must match verbatim.
+    # 4. Double-quoted strings — content inside "..." must match verbatim
+    #    (the quotes signal an explicit source-word reference).
     for m in re.finditer(r'"([^"]+)"', text):
         q = m.group(1).strip()
         if q:
@@ -376,7 +361,7 @@ def gather_source_text(artifact):
 
 def gather_grounding_text(artifact, source_text):
     """Build the text corpus against which Description prose tokens are
-    checked (Check 6).
+    checked (Check 4).
 
     Grounding sources:
       - source_text                        (what the document actually says)
@@ -396,7 +381,6 @@ def gather_grounding_text(artifact, source_text):
 
     Explicitly NOT in grounding (would be circular — grounding contributor
     prose with other contributor prose):
-      - claims[].statement
       - entities_referenced[].context_summary
       - rumors[] text
     """
@@ -428,8 +412,9 @@ def gather_grounding_text(artifact, source_text):
 
 def extract_description_text(node_text):
     """Return the prose body of the node's `## Description` section, or
-    None if the section is absent (e.g., non-document node type during
-    the build-from-research per-type extension)."""
+    None if the section is absent (person nodes have no Description
+    section — their prose lives in background / uap_relevance /
+    credibility_notes instead)."""
     m = re.search(
         r"^## Description\s*$(.*?)(?=^## |\Z)",
         node_text, re.MULTILINE | re.DOTALL,
@@ -446,17 +431,6 @@ def extract_description_text(node_text):
 def check_coverage(artifact, node_text, rel):
     issues = []
     normalized_body = normalize_for_compare(node_text)
-
-    for c in artifact.get("claims") or []:
-        if not isinstance(c, dict):
-            continue
-        stmt = (c.get("statement") or "").strip()
-        if not stmt:
-            continue
-        if normalize_for_compare(stmt) not in normalized_body:
-            issues.append(Issue(rel, "error",
-                f"Coverage: claim {c.get('id')!r} statement not found in node "
-                f'body: "{truncate(stmt)}"'))
 
     for q in artifact.get("quotes") or []:
         if not isinstance(q, dict):
@@ -539,98 +513,7 @@ def check_stub_linking(artifact, node_text, rel):
 
 
 # =============================================================================
-# Check 5 — Claim token drift (against source and optional referenced quote)
-# =============================================================================
-
-def check_claim_token_drift(artifact, source_text, rel):
-    """Verify every significant token in each claim.statement appears in
-    the source text. For claims with a quote_ref, also emit a warning
-    when the token appears in the source but NOT in the referenced quote
-    — the contributor drew from outside the cited anchor.
-
-    Error (in source / not in source) vs warning (in source / not in
-    quote) is deliberate. Errors block commit because a token not in the
-    source is either a fabrication or a wording drift that breaks
-    grep-ability. Warnings don't block because the contributor may have
-    legitimate reasons to reference broader source context, but the
-    cited anchor should ideally be tight enough that no such expansion
-    is needed.
-
-    This check is paired with validate-research.py's claim-anchor
-    requirement (every claim must have at least one quote_ref), so
-    every claim reaches this check with an anchor to compare against.
-    """
-    issues = []
-    if not source_text:
-        # No source to check against (missing files already reported
-        # elsewhere). Skip silently rather than false-positive.
-        return issues
-
-    quotes_by_id = {
-        q.get("id"): q
-        for q in (artifact.get("quotes") or [])
-        if isinstance(q, dict) and q.get("id")
-    }
-
-    norm_source = normalize_for_compare(source_text).lower()
-
-    for c in (artifact.get("claims") or []):
-        if not isinstance(c, dict):
-            continue
-        statement = (c.get("statement") or "").strip()
-        if not statement:
-            continue
-        claim_id = c.get("id", "?")
-
-        tokens = extract_significant_tokens(statement)
-        if not tokens:
-            continue
-
-        # Identify the referenced quote text (first source with a
-        # quote_ref pointing to an existing quote wins). Concatenate
-        # multiple if several sources carry quote_refs.
-        quote_texts = []
-        for src in (c.get("sources") or []):
-            if not isinstance(src, dict):
-                continue
-            qref = src.get("quote_ref")
-            if qref and qref in quotes_by_id:
-                qt = quotes_by_id[qref].get("text")
-                if qt:
-                    quote_texts.append(qt)
-        norm_quote = (
-            normalize_for_compare("\n".join(quote_texts)).lower()
-            if quote_texts else None
-        )
-
-        for token in sorted(tokens):
-            norm_token = normalize_for_compare(token).lower()
-            if not norm_token:
-                continue
-
-            in_source = norm_token in norm_source
-            if not in_source:
-                issues.append(Issue(rel, "error",
-                    f"Drift: claim {claim_id!r} contains token {token!r} "
-                    f"not found anywhere in the source text. Either "
-                    f"correct the claim to match source wording, or add "
-                    f"the source passage that supports it."))
-                continue
-
-            if norm_quote is not None:
-                in_quote = norm_token in norm_quote
-                if not in_quote:
-                    issues.append(Issue(rel, "warn",
-                        f"Drift: claim {claim_id!r} token {token!r} is in "
-                        f"the source but not in the referenced quote "
-                        f"(quote_ref). Claim may be drawing from outside "
-                        f"the cited anchor — tighten the quote or split "
-                        f"the claim."))
-    return issues
-
-
-# =============================================================================
-# Check 6 — Description token drift (against artifact grounding)
+# Check 4 — Description token drift (against artifact grounding)
 # =============================================================================
 
 def check_description_token_drift(artifact, node_text, source_text, rel):
@@ -639,11 +522,10 @@ def check_description_token_drift(artifact, node_text, source_text, rel):
     document_intrinsic + naming_quirks canonical + entities_referenced
     names). See gather_grounding_text() docstring for the full rationale.
 
-    Closes the drift surface the claims-layer elimination opened wider:
-    Description is the last contributor-prose layer on document nodes.
-    Same error semantics as Check 5 — fabricated entities, abbreviation
-    expansions that don't match source, numbers not in any grounding
-    field become commit-blocking errors.
+    Description is the contributor-synthesis prose layer on document
+    nodes (and parallels exist on other node types' synthesis surfaces).
+    Fabricated entities, abbreviation expansions that don't match source,
+    numbers not in any grounding field all become commit-blocking errors.
 
     Limit: fine drift at the lowercase level (e.g., "warning area" vs
     source's "early warning area") is NOT caught — "early" is lowercase
@@ -685,7 +567,7 @@ def check_description_token_drift(artifact, node_text, source_text, rel):
 # Per-artifact orchestration
 # =============================================================================
 
-def review_artifact(artifact_path, quiet=False):
+def review_artifact(artifact_path):
     """Return (issues, skipped_reason_or_None)."""
     rel = artifact_path.relative_to(REPO_ROOT)
 
@@ -705,7 +587,7 @@ def review_artifact(artifact_path, quiet=False):
 
     node_text = node_path.read_text()
 
-    # Gather source plaintext for claim-drift check (cached across calls)
+    # Gather source plaintext for description-drift check (cached across calls)
     source_text, missing_sources = gather_source_text(artifact)
 
     issues = []
@@ -716,29 +598,27 @@ def review_artifact(artifact_path, quiet=False):
             # discipline broken). Manifest points at a path that isn't
             # present.
             issues.append(Issue(rel, "error",
-                f"Claim drift check: primary source {path!r} missing — "
-                f"file not present on disk under sources/. Source-archival "
+                f"Description drift check: primary source {path!r} missing "
+                f"— file not present on disk under sources/. Source-archival "
                 f"integrity issue; verify the manifest entry and re-archive "
                 f"if needed."))
         else:
             # File exists but isn't text-extractable — typical for binary
             # media (video/audio/image). The quote-verbatim check in
             # validate.py treats this as warn (not error) via the same
-            # reasoning; the claim-token-drift check here follows suit.
+            # reasoning; the description-drift check here follows suit.
             # Contributor takes responsibility for any verbatim quotes
             # from the media source (manual frame/audio inspection).
             # Non-blocking.
             issues.append(Issue(rel, "warn",
-                f"Claim drift check: primary source {path!r} not text-"
+                f"Description drift check: primary source {path!r} not text-"
                 f"extractable (likely binary media — video/audio/image). "
-                f"Claim tokens skipped for this source; verbatim quote "
-                f"extraction from media sources requires manual "
-                f"contributor verification."))
+                f"Tokens from this source skipped; verbatim quote extraction "
+                f"from media sources requires manual contributor verification."))
 
     issues.extend(check_coverage(artifact, node_text, rel))
     issues.extend(check_boundary(artifact_path, node_path, rel))
     issues.extend(check_stub_linking(artifact, node_text, rel))
-    issues.extend(check_claim_token_drift(artifact, source_text, rel))
     issues.extend(check_description_token_drift(artifact, node_text, source_text, rel))
     return issues, None
 
@@ -779,7 +659,7 @@ def main():
     skipped = []
 
     for p in artifacts:
-        issues, skip_reason = review_artifact(p, quiet=args.quiet)
+        issues, skip_reason = review_artifact(p)
         if skip_reason:
             skipped.append((p.relative_to(REPO_ROOT), skip_reason))
             continue

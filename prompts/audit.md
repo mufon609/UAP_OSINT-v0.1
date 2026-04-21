@@ -23,9 +23,9 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    refs can be right-but-imprecise; the mechanical check won't catch
    that).
 3. **Prose-field drift check (check #16)** — for artifacts of
-   renderer-supported types (document, person, event), re-run
-   `validate-research.py {artifact}` and work through the check #16
-   warning set. Under the durable policy
+   renderer-supported types (document, person, event, transcript,
+   media, organization, location), re-run `validate-research.py
+   {artifact}` and work through the check #16 warning set. Under the durable policy
    (`feedback_check16_warnings_must_resolve.md`):
    - **Free-prose synthesis fields** (`description`, `background`,
      `uap_relevance`, `credibility_notes`) and **per-entry synthesis
@@ -34,7 +34,7 @@ The audit target is: **{PATH}**  (ask the user if not specified)
      `media_versioning.note`, `vouching_chain.attestation`) — zero
      warnings is the target. Each unmatched token either resolves to
      source-matched prose OR gets captured as structured evidentiary
-     data (naming quirk, rumor, claim).
+     data (naming quirk, rumor, timeline entry, or a new quote).
    - **Structural labels + cross-reference descriptor notes** are not
      scanned by check #16. Role titles, short relationship
      descriptors, `timeline[].event`, `use_status`, `activity`, and
@@ -48,13 +48,12 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    primary-source evidence. Reclassify if wrong.
 5. **Section requirements** — run `python3 scripts/validate.py {path}`
    and fix any errors.
-6. **Coverage / Boundary / Stub-linking / OQ dedup** — for
-   renderer-supported types, run
-   `python3 scripts/review-coverage.py research/{slug}.yaml`. Any
-   Boundary failure means the node was hand-edited after regeneration
-   (or the artifact drifted). Fix in the **artifact**; regenerate via
-   `build-from-research.py`; never hand-patch the node to silence the
-   check.
+6. **Coverage / Boundary / Stub-linking** — for renderer-supported
+   types, run `python3 scripts/review-coverage.py research/{slug}.yaml`.
+   Any Boundary failure means the node was hand-edited after
+   regeneration (or the artifact drifted). Fix in the **artifact**;
+   regenerate via `build-from-research.py`; never hand-patch the node
+   to silence the check.
 7. **Associated Nodes freshness** — run
    `python3 scripts/associate.py {path}` to regenerate.
 8. **Cross-node consistency** — check that claims in this node agree
@@ -78,7 +77,7 @@ not direct edits to the node body. Pattern:
    different gets a new entry + pointer.
 3. Regenerate the node (renderer-supported types):
    `python3 scripts/build-from-research.py research/{slug}.yaml`
-4. Re-run `review-coverage.py` — must pass all four checks
+4. Re-run `review-coverage.py` — must pass all three checks
 5. Run the full pre-commit chain — all five gates green
 6. Commit with a descriptive message; git log is the edit history.
 

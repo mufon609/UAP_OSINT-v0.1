@@ -16,28 +16,27 @@ matches the target node's slug.
 Research artifacts are the machine-readable structured-fact layer
 behind each node. They capture:
 
-- Verbatim-quotable passages from primary sources (`quotes`)
-- Atomic claims with per-claim source attribution (`claims`) — **on
-  synthesis artifacts only** (person, organization, event, finding,
-  location). Document, transcript, and media artifacts carry no
-  claims layer by design; their evidentiary content lives entirely
-  in `quotes`. See `meta/conventions.md` "Document nodes vs synthesis
-  nodes" for the rationale.
+- Verbatim statements from primary sources (`quotes[]`) — the universal
+  evidentiary primitive across all node types, filtered at render time
+  for type-specific section rendering (`## Statements` on person,
+  `## Key Testimony` on hearings, `## Key Passages` elsewhere). See
+  `meta/conventions.md` "Statements as the universal evidentiary
+  primitive" for the rationale.
 - Entities referenced (person, org, event, doc, transcript, media,
   location, finding)
 - Naming quirks in the sources (typos, alt spellings)
-- Research gaps — open investigation threads
 - Rumors (on person / org / event / location artifacts) — widely-
   reported claims lacking primary-source support here
-- Iteration log — append-only audit trail of updates
+- Per-type structured sections (timeline, affiliations, relationships,
+  corroboration_items, program_involvement, vouching_chain, etc.)
 
 The narrative node at `{type}/{slug}.md` is a derived view of its
-artifact. For **document nodes**, `scripts/build-from-research.py`
-deterministically regenerates the narrative from the artifact
-(Phase II of the layered build process). For **other node types**,
-the narrative is currently hand-authored from the artifact per
-`meta/conventions.md` discipline; Phase II coverage extension to
-synthesis nodes is tracked in `BACKLOG.md`.
+artifact. For **renderer-supported types** (document, person, event,
+transcript, media, organization, location),
+`scripts/build-from-research.py` deterministically regenerates the
+narrative from the artifact (Phase II of the layered build process).
+Finding is the last remaining type; F.7 renderer design pass is open
+(see `meta/toolkit-notes/roadmap.md`).
 
 ## Conventions
 

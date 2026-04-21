@@ -226,7 +226,6 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         "document_intrinsic": {},
         "context_extrinsic": {},
         "quotes": [],
-        "claims": [],
         "entities_referenced": [],
         "naming_quirks": [],
     }
@@ -369,7 +368,6 @@ def main():
     if node_type in RUMORS_TYPES:
         print(f"  6. Populate rumors (widely-reported claims lacking primary-source backing)")
     print(f"  7. Validate: python3 scripts/validate-research.py {rel}")
-    print(f"     (see prompts/build.md Step 7 for claims-scope rule — `claims: []` on all renderer-supported types)")
 
 
 if __name__ == "__main__":

@@ -211,7 +211,6 @@ quotes:
     location: ¶4
   significance: Training-suspension fact — the intercept did not occur during training; training was suspended for real-world tasking upon launch check-in with Princeton
   context: post-launch context
-claims: []
 entities_referenced:
 - id: e1
   added_date: '2026-04-17'

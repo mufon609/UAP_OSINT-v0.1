@@ -136,9 +136,9 @@ Fields used by `build-from-research.py` when rendering document nodes
 A 1-3 paragraph prose summary that renders as the node's `##
 Description` section on document / transcript / media / event /
 organization / finding / location nodes. Every factual claim in the
-description should be traceable to a specific artifact entry (claim,
-quote, or document-intrinsic field). Treat it as a synthesis of the
-structured fields below, not as new evidentiary content.
+description should be traceable to a specific artifact entry (quote or
+document-intrinsic field). Treat it as a synthesis of the structured
+fields below, not as new evidentiary content.
 
 **Person artifacts — `description` is optional and not rendered.**
 The person body renderer (`render_body_person`) emits Background,
@@ -149,7 +149,7 @@ artifact's `description` is unrendered. Either leave the field empty
 index-level summary that never reaches the node body. Evidentiary
 prose for a person node belongs in `background` / `uap_relevance`
 / `credibility_notes`. Each of those is scanned by check #16
-(prose-drift token check — see Step 12) against the pooled
+(prose-drift token check — see Step 10) against the pooled
 primary-source vocabulary.
 
 Future plan (tracked in `BACKLOG.md`): move to agent-generated
@@ -261,82 +261,21 @@ without clicking through. Quote overlap with the witness-specific
 transcript or document nodes is acceptable and expected; the
 renderer does not deduplicate across nodes.
 
-### Step 7. Populate `claims` (bounded agent task T1)
-
-**Scope note.** `claims: []` under every current renderer. Rationale
-is type-specific but the outcome is uniform:
-
-- **Document-type nodes** — the document IS the fact record, and its
-  evidentiary content is verbatim source passages in `quotes`. The
-  contributor-prose claim layer was eliminated post-Step-D because
-  every "fine drift" class the mechanical checks couldn't catch
-  (dropped qualifiers, synonym rephrases, word substitutions)
-  originated in claim prose. With claims gone, nothing can drift.
-- **Person-type nodes** — the F.1b renderer emits Identity, Background,
-  UAP Relevance, Affiliations, Statements (verbatim quotes), Timeline,
-  Relationships, archetype-specific sections, and Credibility Notes.
-  Evidentiary content flows through `quotes` (Statements section,
-  Claim Inventory for whistleblowers via category filter) and
-  structured list fields; `claims[]` is not rendered.
-- **Event-type nodes** — the F.2b renderer emits Event Summary,
-  Description, Participants, Timeline, Key Testimony (hearing only;
-  from `quotes`), Witnesses & Testimony (hearing only; from
-  `witnesses_testimony`), Corroboration (encounter only; from
-  `corroboration_items`). `claims[]` is not rendered for either kind.
-
-Since no current renderer emits `claims[]`, any claim populated in a
-renderer-supported artifact will fail the review-coverage Coverage
-check (the claim.statement won't appear in the node body). Leave
-`claims: []` on all artifacts until a future renderer consumes them.
-
-Populate `quotes` comprehensively instead — verbatim source passages
-carry the evidentiary load across all currently-supported types.
-
-For **unsupported types** (transcript, media, organization, location,
-finding) awaiting their renderer sub-phases, the hand-authored node
-body may still carry `## What This Establishes` or equivalent claim
-sections per `meta/conventions.md`. When the renderer sub-phase for
-that type ships, the claim layer's fate will be decided there (same
-shape as the post-Step-D elimination for documents, or preservation as
-synthesis cross-reference surfaces). The claim-requirements below
-apply only to hand-authored unsupported types:
-
-**Agent task T1 (non-document artifacts):**
-- **Input:** extracted plaintext + populated `quotes`
-- **Output:** YAML fragment of `claims:` entries, each with:
-  - `id` (c1, c2, c3, …)
-  - `statement` (one sentence; atomic factual claim the source establishes)
-  - `sources` (list — paths + locations; **must include `quote_ref`** on
-    at least one source)
-  - `evidentiary_type` — one of `sworn-testimony` | `documented` |
-    `cited` | `secondary`
-  - `independently_verifiable` (optional)
-  - Standard lifecycle fields
-
-**Discipline (non-document artifacts):**
-- Every claim must be anchored by `quote_ref`. If no existing quote
-  supports it, add the quote first.
-- Claim prose tokens must appear in the source (`review-coverage.py`
-  check B).
-- Limits: mechanical checks catch additions and fabrications; they do
-  NOT catch dropped qualifiers or synonym rephrases. Phase III Step 2
-  (semantic review) is required.
-
-### Step 8. Populate `entities_referenced` (bounded agent task T3)
+### Step 7. Populate `entities_referenced` (bounded agent task T3)
 
 **Agent task T3:**
-- **Input:** extracted plaintext + populated `quotes` + `claims`
+- **Input:** extracted plaintext + populated `quotes`
 - **Output:** YAML fragment of `entities_referenced:` — one entry per
   unique named entity (person, organization, document, event, location,
-  finding) mentioned anywhere in the source or in the claims/quotes.
+  finding) mentioned anywhere in the source or in the quotes.
   Each entry:
   - `id` (e1, e2, …)
   - `entity_type` (person | organization | document | event | location | finding)
   - `name` (display name)
   - `wrap_path` (canonical repo path, e.g., `/people/jay-stratton`)
   - `context_summary` (one-line note on how this entity appears in the source)
-  - `references` (list of `{quote_id: qN}` or `{claim_id: cN}` — every
-    quote or claim that mentions this entity)
+  - `references` (list of `{quote_id: qN}` — every quote that mentions
+    this entity)
   - Standard lifecycle fields
 
 **Discipline:**
@@ -355,7 +294,7 @@ apply only to hand-authored unsupported types:
   post-2026-04-20, so a mistaken self-entry will not error out, but
   the convention is to omit it.
 
-### Step 9. Populate `naming_quirks` (bounded agent task T4)
+### Step 8. Populate `naming_quirks` (bounded agent task T4)
 
 **Agent task T4:**
 - **Input:** extracted plaintext + populated `quotes`
@@ -378,7 +317,7 @@ apply only to hand-authored unsupported types:
   resolution should be `preserve-as-sic-in-quotes` so rendered node
   prose knows to use canonical form outside the quote.
 
-### Step 10. Populate `rumors` (bounded agent task T5, conditional)
+### Step 9. Populate `rumors` (bounded agent task T5, conditional)
 
 **Only when target node type is `person`, `organization`, `event`, or
 `location`.** Document nodes, transcripts, media, and findings do not
@@ -396,7 +335,7 @@ carry a rumors section.
     - `not-primary-source-established` — no primary source attests;
       artifact-only fabrication-prevention record. Does not render.
     - `primary-source-disputed` — primary sources actively refute the
-      claim. Renders into a `## Primary-Source Contradictions`
+      rumor. Renders into a `## Primary-Source Contradictions`
       section on the node body; the `note` field is the primary-
       source refutation text.
   - `observed_sources` (optional: list of where the rumor circulates
@@ -406,19 +345,19 @@ carry a rumors section.
   - Standard lifecycle fields
 
 **Discipline:**
-- A rumor is a claim that WOULD go into `claims` if a primary source
-  existed. Its presence here is a fabrication-prevention mechanism:
-  "this is a widely-believed claim; don't re-fabricate it into the
-  node without finding a source."
+- A rumor is a widely-circulated claim without primary-source backing
+  in this artifact. Its presence here is a fabrication-prevention
+  mechanism: "this is a widely-believed claim; don't re-fabricate it
+  into the node without finding a source."
 - When a primary source eventually confirms a `not-primary-source-
-  established` rumor, graduate the claim to a real quote/claim entry
-  and delete the rumor (git log preserves it). Don't keep stale
-  confirmed rumors.
+  established` rumor, graduate it to a real `quotes[]` entry with the
+  source, and delete the rumor (git log preserves it). Don't keep
+  stale confirmed rumors.
 - When primary sources refute a rumor, set `status: primary-source-
   disputed` and populate `note` with the refutation text — the
   renderer surfaces it to investigators.
 
-### Step 11. Validate the research artifact
+### Step 10. Validate the research artifact
 
 ```
 python3 scripts/validate-research.py research/{slug}.yaml
@@ -438,14 +377,16 @@ quotes), OR rewrite without the `#`, OR use a YAML literal block (`|`)
 if the content already spans multiple lines.
 
 **Prose-drift check #16 warnings — review before leaving Phase I.**
-On person and event artifacts, the validator runs a token-drift check
-across contributor-authored prose fields (top-level: `description`,
-`background`, `uap_relevance`, `credibility_notes`; per-entry:
-`timeline[].event`, `affiliations[].role`, `relationships[].relationship`,
-`corroboration_items[].note`, `participants[].role`, and so on per
+The validator runs a token-drift check across contributor-synthesis
+prose fields on every renderer-supported type (top-level free prose:
+`description`, `background`, `uap_relevance`, `credibility_notes`;
+per-entry synthesis content notes: `ownership_timeline.note`,
+`uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+`media_versioning.note`, `vouching_chain.attestation`). See
 `PROSE_FIELDS_BY_TYPE` / `PROSE_ENTRY_FIELDS_BY_TYPE` in
-`validate-research.py`). It flags every significant word in a prose
-field that doesn't appear in the referenced primary-source text.
+`validate-research.py` for the per-type scope. It flags every
+significant word in a scoped prose field that doesn't appear in the
+referenced primary-source text.
 
 **Validator behavior — impartial reporter.** The check surfaces every
 unmatched token as a warning. The validator makes no classification
@@ -465,7 +406,7 @@ warning requires real resolution, not synthesis-acceptance:
   Resolve each unmatched token by either (a) rewriting to use source
   vocabulary exactly, or (b) capturing the source-vs-prose variance
   as structured evidentiary data (naming_quirks, rumors, a timeline
-  entry, a claim). Rationalizing warnings as "legitimate synthesis
+  entry, a new quote). Rationalizing warnings as "legitimate synthesis
   vocabulary" defeats the check.
 - **Per-entry synthesis content notes** — `ownership_timeline.note`,
   `uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
@@ -711,11 +652,10 @@ research artifact. Runs last — assumes Phase I and Phase II have passed.
 python3 scripts/review-coverage.py research/{slug}.yaml
 ```
 
-The script runs four mechanical checks:
+The script runs three mechanical checks:
 
-1. **Coverage** — every artifact `quotes[].text` (and
-   `claims[].statement`, on synthesis artifacts that carry claims)
-   appears in the node body (whitespace/punctuation normalized).
+1. **Coverage** — every artifact `quotes[].text` appears in the node
+   body (whitespace/punctuation normalized).
 2. **Boundary** — the node body (outside `## Associated Nodes`) matches
    what `build-from-research.py --dry-run` would regenerate from the
    current artifact. Divergence means the artifact drifted from the
@@ -724,9 +664,9 @@ The script runs four mechanical checks:
    as a `[`/path`]` link in the node body.
 
 Must exit 0. Fix failures by updating the **artifact** (add the missing
-quote / entity, or remove orphan node content; on synthesis artifacts,
-add the missing claim) and re-running `build-from-research.py` to
-resync. Never hand-edit the node to silence a coverage error.
+quote / entity, or remove orphan node content) and re-running
+`build-from-research.py` to resync. Never hand-edit the node to silence
+a coverage error.
 
 ### Step 2. Semantic review (agent-assisted)
 
@@ -743,20 +683,20 @@ task (T7) in a later increment.
 
 ### Phase III complete
 
-All four mechanical checks pass, and a human read of the regenerated
+All three mechanical checks pass, and a human read of the regenerated
 node surfaces no semantic issues. Ready to commit.
 
 ---
 
 ## End-of-session procedure
 
-### Renderer-supported types (document, person, event, transcript, media, organization)
+### Renderer-supported types (document, person, event, transcript, media, organization, location)
 
 1. `python3 scripts/validate-research.py research/{slug}.yaml` — must pass
 2. `python3 scripts/build-from-research.py research/{slug}.yaml` — must
    complete cleanly (includes post-build `validate.py`)
 3. `python3 scripts/review-coverage.py research/{slug}.yaml` — must pass
-   (Coverage / Boundary / Stub-linking / OQ deduplication — all four checks)
+   (Coverage / Boundary / Stub-linking — all three checks)
 4. Read the regenerated node top-to-bottom; fix any issues in the
    **artifact** (not the node) and re-run steps 2–3
 5. Run the full pre-commit chain before committing:
@@ -770,9 +710,9 @@ node surfaces no semantic issues. Ready to commit.
 7. Commit the research artifact + regenerated node + any manifest
    changes in one focused commit (one node per session — hard rule)
 
-### Pending-renderer types (location, finding)
+### Pending-renderer type (finding)
 
-Until the per-type renderer sub-phase (F.6 → F.7) ships:
+Until the F.7 renderer ships:
 
 1. `validate-research.py` passes on the populated artifact
 2. Hand-author the node body per `meta/conventions.md`, drawing
@@ -780,9 +720,8 @@ Until the per-type renderer sub-phase (F.6 → F.7) ships:
 3. `validate.py` passes; run `associate.py` to regenerate Associated Nodes
 4. Run `bash tests/pre-commit.sh` — all five gates green before commit
 
-`review-coverage.py` currently skips unsupported artifacts with a
-notice; full coverage review unlocks for each type as its Phase II
-renderer lands.
+`review-coverage.py` currently skips finding artifacts with a notice;
+full coverage review unlocks when the F.7 renderer lands.
 
 ---
 
@@ -792,13 +731,12 @@ Each task has clear I/O and can be run as a focused agent invocation:
 
 | Task | Input | Output |
 |---|---|---|
-| T1 — Extract claims *(unsupported types only; see Step 7)* | Plaintext + quotes | YAML `claims:` fragment |
 | T2 — Extract quotes | Plaintext | YAML `quotes:` fragment |
-| T3 — Identify entities | Plaintext + quotes + claims | YAML `entities_referenced:` fragment |
+| T3 — Identify entities | Plaintext + quotes | YAML `entities_referenced:` fragment |
 | T4 — Naming quirks | Plaintext + quotes | YAML `naming_quirks:` fragment |
 | T5 — Rumors (conditional) | Everything above + external context | YAML `rumors:` fragment |
 
-Tasks are **composable** (T3 can use T1 + T2's output). They are
+Tasks are **composable** (T3 can use T2's output). They are
 **validated by humans** before being merged into the research artifact.
 They are **bounded** — each task produces a specific YAML fragment, not
 free-form content.
@@ -813,7 +751,7 @@ free-form content.
   `significance` or `context_summary` fields).
 - Do not create a research artifact for a node that doesn't exist yet.
 - Do not hand-edit `entities_referenced[].references` after agents
-  populate — let the references field reflect what the quotes/claims
+  populate — let the references field reflect what the quotes
   actually contain.
 - Do not skip the validator. `validate-research.py` errors are
   commit-blocking.

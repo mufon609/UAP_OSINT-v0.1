@@ -197,7 +197,7 @@ def do_batch(artifact_path):
     print("Next (Phase I steps, per prompts/build.md):")
     print(f"  - Review each /tmp/scratch-{slug}-N.txt")
     print(f"  - Populate document_intrinsic / context_extrinsic in {artifact_path.relative_to(REPO_ROOT)}")
-    print(f"  - Extract quotes, claims, entities, naming_quirks")
+    print(f"  - Populate quotes, entities_referenced, naming_quirks")
     print(f"  - Validate: python3 scripts/validate-research.py {artifact_path.relative_to(REPO_ROOT)}")
 
 

@@ -57,58 +57,73 @@ incident), and documents (government vs. non-government).
 
 ---
 
-## Document nodes vs synthesis nodes
+## Statements as the universal evidentiary primitive
 
-A document node IS the fact record for its primary source. Evidentiary
-content lives in `Key Passages` — verbatim source text with per-quote
-mechanical verification (`validate.py` check #11 extracts the cited
-source and substring-checks every passage marked `✅ Confirmed —
-verified verbatim`). Document nodes have no contributor-authored claims
-layer. No prose paraphrase of what the document "establishes" sits
-between source text and reader.
+The evidentiary content of every node rests on `quotes[]` in the
+research artifact — verbatim passages from primary sources with
+per-quote mechanical verification (`validate.py` check #11 extracts
+the cited source and substring-checks every passage marked
+`✅ Confirmed — verified verbatim`). No contributor-synthesized claim
+layer sits between source and reader, on any node type.
 
 The rationale is failure-mode specific: contributor-prose summaries
 introduce fine drift (dropped qualifiers, synonym rephrases,
 word-level condensations) that mechanical checks catch poorly.
-Eliminating the prose layer eliminates the surface. Other nodes that
-cite facts from a document link to the document and reference the
-specific Key Passage — no intermediate paraphrase exists to drift.
+Eliminating the prose claim layer eliminates the drift surface. Other
+nodes that cite facts from a source link to the source-bearing node
+(document / transcript / media) and reference the specific passage —
+no intermediate paraphrase exists to drift.
 
-**Synthesis nodes** (person, organization, event, finding, location)
-CAN carry structured claim-like sections when the node's analytical
-purpose requires them:
+### Type-specialized views of `quotes[]`
 
-- `Claim Inventory` on whistleblower person nodes (claim → document → status)
-- `Key Testimony` + `What The Hearing Established` on hearing event nodes
-- `What This Establishes` on finding nodes
-- `Corroboration` on eyewitness person / encounter event nodes
+Each node type renders a filtered view of the same universal primitive:
 
-News articles and books are `document` nodes (kind `non-gov-doc`, doc_form
-`article` or `book`). They carry no claims layer — their evidentiary
-content is the verbatim Key Passages. Credibility analysis of the
-author/publisher lives on the author's person node or the publisher's
-organization node, not on the document.
+- **Person** → `## Statements`, split by `observation_type` (Direct
+  Observations / Other Statements) and sorted by `statement_date`.
+- **Person (whistleblower)** → additionally `## Claim Inventory`, a
+  render-time projection of quotes tagged `category: filed-claim`.
+  A filter, not a separate data structure — the filed claim IS the
+  quote.
+- **Event (hearing)** → `## Key Testimony`, verbatim passages sorted
+  by `statement_date`, surfacing evidentiarily-distinctive moments.
+- **Document / transcript / media / organization / location** →
+  `## Key Passages`, verbatim excerpts of what the source says about
+  its subject.
 
-Hearing events are structurally similar — an event is a venue, not a
-speaker. F.2a collapsed the prior `What The Hearing Established`
-synthesis section into `Witnesses & Testimony`, a cross-reference table
-pointing at each witness's transcript and written-testimony nodes.
-What a hearing "established" is the verbatim record those linked nodes
-carry; the event node navigates to them rather than paraphrasing.
+### Hearing events as venues
 
-In those contexts, claim entries are contributor-written synthesis and
-must be anchored to verbatim quotes via `sources[].quote_ref` with
-mechanical drift checks (`validate-research.py` claim-anchor + `review-coverage.py`
-token-drift). Document nodes are categorically excluded — the document
-is the synthesis target, not the subject.
+An event is a venue, not a speaker. F.2a collapsed the prior `What The
+Hearing Established` synthesis section into `Witnesses & Testimony`,
+a cross-reference table pointing at each witness's transcript and
+written-testimony nodes. What a hearing "established" is the verbatim
+record those linked nodes carry; the event node navigates to them
+rather than paraphrasing.
 
-### Prose-drift discipline on synthesis nodes
+### Synthesis prose is labeled and drift-checked
 
-Beyond the claim-inventory claim-anchor machinery described above,
-synthesis nodes carry contributor-prose surfaces that aren't quote-
-based: per-node `background` / `uap_relevance` / `credibility_notes`
-paragraphs, per-entry description fields (timeline events, affiliation
-roles, relationship descriptions, corroboration notes). These are
+Contributor-synthesis prose is limited to labeled synthesis surfaces
+(`description`, `background`, `uap_relevance`, `credibility_notes`)
+and per-entry synthesis-content notes (`ownership_timeline.note`,
+`key_personnel.note`, `vouching_chain.attestation`, etc.).
+`validate-research.py` check #16 tokenizes each of these against the
+primary-source text and warns on every unmatched significant token
+(errors at 100% vocabulary divergence).
+
+### News articles and books
+
+Stored as `document` nodes (kind `non-gov-doc`, doc_form `article` or
+`book`). Credibility analysis of the author/publisher lives on the
+author's person node or the publisher's organization node, not on the
+document.
+
+### Prose-drift discipline on synthesis surfaces
+
+Nodes carry contributor-prose surfaces that sit alongside the verbatim
+`quotes[]` content: per-node `description` / `background` /
+`uap_relevance` / `credibility_notes` paragraphs, and per-entry
+synthesis content notes (`ownership_timeline.note`,
+`uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+`media_versioning.note`, `vouching_chain.attestation`). These are
 labeled synthesis — they exist to frame the evidentiary content — but
 the F.1c Fravor audit (2026-04-19) surfaced a real failure mode where
 contributor prose introduces unstated premises, paraphrase drift, and
@@ -126,6 +141,14 @@ significant words with the source it claims to draw on), a
 mathematical floor on pure fabrication rather than a stylistic
 threshold. Below 100%, the validator makes no judgment; careful
 contributor review is the quality gate.
+
+Check #16 is explicitly scoped to synthesis prose (free-prose fields
+and synthesis-content notes). Compact label cells (role titles, short
+relationship descriptors, `timeline[].event`) and cross-reference
+descriptor notes (`corroboration_items.note`, `witnesses_testimony.note`,
+`org_relationships.note`, `location_relationships.note`) are out of
+scope — token-match misfires on those surfaces; fabrication there is
+Phase III semantic-review territory.
 
 ---
 

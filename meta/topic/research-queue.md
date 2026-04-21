@@ -18,10 +18,6 @@ Two backlogs live here, distinguished by origin:
   by built nodes (visible in `scripts/validate.py` broken-link
   registry), curated here with priority and rationale.
 
-Do not add here anything that already has a home in a node's Open
-Questions section. Open Questions are gaps *within* a node; this file
-is for leads that don't fit in any existing node yet.
-
 ---
 
 ## Formatting rules
