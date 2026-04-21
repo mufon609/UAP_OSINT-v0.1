@@ -8,10 +8,10 @@ hard rule established after the 2026-04-17 pilot failure (see
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
 
-**Phase II scope (as of F.6b, 2026-04-20):** `build-from-research.py`
-supports **document, person, event, transcript, media, organization,
-and location** node types end-to-end. Only `finding` remains
-hand-authored pending F.7 (tracked in `meta/toolkit-notes/roadmap.md`).
+**Phase II scope:** `build-from-research.py` supports **document,
+person, event, transcript, media, organization, and location** node
+types end-to-end. Only `finding` remains hand-authored pending F.7
+(tracked in `meta/toolkit-notes/roadmap.md`).
 
 ---
 
@@ -114,8 +114,8 @@ boilerplate — verify against document content when using.
 
 Contextual metadata **from outside the document** — e.g., hearing date,
 committee name, event node, submitted-to authority. Distinct from
-`document_intrinsic` per the Step-A/B/C Flag 1 fix (hearing-date ≠
-document-metadata).
+`document_intrinsic` (hearing-date ≠ document-metadata — the hearing
+date is external context, not a fact the document states about itself).
 
 Fields used by `build-from-research.py` when rendering document nodes
 (add the ones you have; omit the rest):
@@ -190,9 +190,8 @@ free-prose field, not just `description`.
 - Multi-line quotes use YAML literal block (`|`) so original line
   breaks are preserved character-for-character.
 - **Paragraph references are counted from the extracted scratch file,
-  not from memory.** The D.5 pilot corrected a ¶7/¶8 error in a
-  hand-authored node this way; an extraction-based count is the
-  authoritative anchor, not pre-existing prose.
+  not from memory.** An extraction-based count is the authoritative
+  anchor, not pre-existing prose.
 - Quote text must match source exactly except for surrounding
   quotation marks (which are not part of the quoted content).
 - **HTML entity preservation.** When quoting from HTML sources
@@ -204,8 +203,7 @@ free-prose field, not just `description`.
   must include the literal entities. Either: (a) preserve the entity
   in the `text` field, or (b) shorten the quote span to avoid the
   entity. Do not silently convert entities to their decoded
-  characters. Surfaced by the F.5 UAPTF pilot on DoD press-release
-  and Black Vault article quotes.
+  characters.
 - **OCR artifact preservation.** FOIA'd PDFs often contain OCR damage
   — dropped characters (`ovember` for `November`, `AGE CY` for
   `AGENCY`), hyphen-split line breaks (`fulfi lled` for `fulfilled`),
@@ -215,9 +213,7 @@ free-prose field, not just `description`.
   quote text must match those artifacts byte-for-byte. Do not
   "correct" the source in the quote; log the divergence as a
   `naming_quirk` if the artifact is meaningful (name misspelling,
-  alternate form worth preserving). Surfaced by the F.5 UAPTF pilot
-  on the UAP Security Classification Guide and UAPTF Charter FOIA
-  releases.
+  alternate form worth preserving).
 - **Wrap paths outside quoted spans.** When adding
   `[`/path/to/entity`]` wraps alongside entities named inside a
   double-quoted span in prose fields (description / background /
@@ -226,12 +222,10 @@ free-prose field, not just `description`.
   check, leaving orphan `()` that breaks the substring match. Ex:
   `Name ([`/people/...`])  "quoted source text…"` (wrap before
   the quote) — NOT — `"Name ([`/people/...`]) quoted source text…"`
-  (wrap inside). Surfaced by the F.5 UAPTF pilot on the Norquist
-  wrap inside a DoD press-release quote.
+  (wrap inside).
 
 **Key Testimony / Key Passages selection — substantive over
-procedural** (applies to event and transcript artifacts; lesson from
-Cluster B 2023-07-26 hearing-event pilot, 2026-04-20). The Key
+procedural** (applies to event and transcript artifacts). The Key
 Testimony section of a hearing event (and the analogous Key Passages
 section of a hearing transcript) should highlight distinctive
 evidentiary moments — the claims that make this hearing worth
@@ -289,9 +283,9 @@ renderer does not deduplicate across nodes.
   `/people/david-fravor`) creates a spurious Stub-linking check
   failure. The subject's identity is carried by the node body itself
   (Identity section on person; equivalent surfaces elsewhere). The
-  `review-coverage.py` Stub-linking check auto-filters self-references
-  post-2026-04-20, so a mistaken self-entry will not error out, but
-  the convention is to omit it.
+  `review-coverage.py` Stub-linking check auto-filters self-references,
+  so a mistaken self-entry will not error out, but the convention is
+  to omit it.
 
 ### Step 8. Populate `naming_quirks` (bounded agent task T4)
 
@@ -446,22 +440,20 @@ Common categories of warnings and how they resolve:
 - **Hyphenated compounds** (source "90 second" vs prose "90-second")
   → match source.
 - **Typographic dashes** (em-dash `—` and en-dash `–`) — no action
-  needed. Since 2026-04-20, `extract_significant_tokens` normalizes
-  U+2014 and U+2013 to ASCII hyphen before tokenization, matching
-  the conversion that `validate.py:normalize_for_compare` already
-  does for the verbatim-quote check. Prose written with ASCII hyphen
-  (`F-18`) now tokenizes identically to source rendered with en-dash
-  (`F–18`). Applies to the prose-drift check only; verbatim-quote text still
-  needs to match the source character byte-for-byte (the verbatim
-  check has its own normalization path).
+  needed. `extract_significant_tokens` normalizes U+2014 and U+2013
+  to ASCII hyphen before tokenization, matching the conversion that
+  `validate.py:normalize_for_compare` already does for the verbatim-
+  quote check. Prose written with ASCII hyphen (`F-18`) tokenizes
+  identically to source rendered with en-dash (`F–18`). Applies to
+  the prose-drift check only; verbatim-quote text still needs to
+  match the source character byte-for-byte (the verbatim-quote check
+  has its own normalization path).
 
 For every warning, ask: *does this unmatched token introduce a fact
 or premise the source doesn't attest?* If yes, the prose field needs
 tightening. If no — the resolution is still to rewrite to source
 vocabulary on free-prose fields (or document the variance
-structurally). The F.1c Fravor audit (commit `f67f6e8`) and F.2c
-Nimitz audit (commit `305407d`) both demonstrated the audit-correction
-pattern driven by this discipline.
+structurally).
 
 ### Phase I complete
 
@@ -477,10 +469,10 @@ Deterministic transformation from research artifact → populated node
 body. No creative writing in Phase II. Every line in the node body
 traces to a research-artifact entry.
 
-**Scope (as of F.6b):** document, person, event, transcript, media,
-organization, and location node types. Only `finding` remains hand-
-authored — follow `meta/conventions.md` and draw exclusively from the
-populated research artifact. Renderer extension tracked in
+**Scope:** document, person, event, transcript, media, organization,
+and location node types. Only `finding` remains hand-authored —
+follow `meta/conventions.md` and draw exclusively from the populated
+research artifact. Renderer extension tracked in
 `meta/toolkit-notes/roadmap.md` (F.7).
 
 ### Step 1. Regenerate the node from its research artifact
@@ -496,7 +488,7 @@ This:
 2. Renders each required H2 section from artifact data. Sections
    differ by node type:
 
-   **Document nodes** (D.3):
+   **Document nodes:**
    - `## Document Summary` — from `document_intrinsic` +
      `context_extrinsic` + `primary_sources[0]`
    - `## Description` — from `description`
@@ -506,7 +498,7 @@ This:
      Establishes` table (see `meta/conventions.md` "Document nodes vs
      synthesis nodes").
 
-   **Person nodes** (F.1b):
+   **Person nodes:**
    - `## Identity` — from `document_intrinsic` (full_name, aliases,
      nationality, profession)
    - `## Background` / `## UAP Relevance` / `## Credibility Notes` —
@@ -526,7 +518,7 @@ This:
      (from `program_involvement[]`); reporter → `## Publication Record`
      (from `publication_record[]`, sorted by date)
 
-   **Event nodes** (F.2b):
+   **Event nodes:**
    - `## Event Summary` — from `event_intrinsic`. Kind-specific fields:
      hearing emits Full Title / Convening Body / Session / Congress /
      Date / Location / Chair; encounter emits Date / Location (via
@@ -546,7 +538,7 @@ This:
    - **Encounter-only:** `## Corroboration` (from `corroboration_items[]` —
      same shape as eyewitness person)
 
-   **Transcript nodes** (F.3b):
+   **Transcript nodes:**
    - `## Publication Record` — from `context_extrinsic`. Kind-specific
      rows: hearing emits Full Hearing Title / Convening Body /
      Session / Serial No. / Date / Location / Witness / Oath Status /
@@ -555,16 +547,17 @@ This:
      Host(s) / Primary Speaker(s) / Format / Source Medium /
      Underlying Media Node / Source URL / Citation Style. Auto-
      populates `Source Medium` and `Underlying X` rows from frontmatter
-     (`source_medium` / `derived_from`) per F.3 Decision 1.
+     (`source_medium` / `derived_from`).
    - `## Summary` — from `description` (render-time field→section
-     rename per F.3 Q1-A).
+     rename: `description` stays the universal top-level field while
+     the rendered section name fits transcript semantics).
    - `## Speakers` — from `speakers[]` (Name / Role / Node Link
      columns).
    - `## Key Passages` — from `quotes[]`, sorted by `statement_date`
      with natural-sort tie-break on id (q1 before q10); H3 per quote
      using `significance` field.
 
-   **Media nodes** (F.4b):
+   **Media nodes:**
    - `## Media Summary` — from `document_intrinsic` + `context_extrinsic`
      + `primary_sources[0]`. Kind-specific Duration/Dimensions label
      (video → combined; audio → Duration only; photo → Dimensions
@@ -583,7 +576,7 @@ This:
      corner`). Section is permitted empty when the source has no
      extractable speech or visible text.
 
-   **Organization nodes** (F.5b):
+   **Organization nodes:**
    - `## Overview` — fact table from `document_intrinsic` per-kind
      keys. gov emits Full Name / Statutory Authority / Established /
      Parent Organization / Current Director / Office Type /
@@ -605,6 +598,28 @@ This:
    - `## Timeline` — from `timeline[]` (chronological)
    - `## Relationships` (Confirmed/Flagged split) — from
      `org_relationships[]`
+
+   **Location nodes:**
+   - `## Overview` — fact table from `document_intrinsic` location
+     keys: Full Name / Alternate Names / Location Type / Geographic
+     Location / Coordinates / Legal Description / Ownership History
+     Summary / Scope Significance. Status row sourced from
+     frontmatter, not `document_intrinsic`. Rows with empty values
+     are skipped.
+   - `## Description` — from `description`
+   - `## Ownership Timeline` — from `ownership_timeline[]`,
+     chronological by `period_start`. Columns: `Period | Owner |
+     Use / Status | Source`.
+   - `## UAP-Scope Activity` — from `uap_scope_activity[]`,
+     chronological by `period_start`. Columns: `Period | Activity |
+     Source` (+ `Actors` column when any entry has `actor_paths`
+     populated).
+   - `## Key Passages` — from `quotes[]` (verbatim excerpts about the
+     location; parallels document / organization Key Passages but
+     subject-about-location). H3 per quote using `significance`.
+   - `## Relationships` (Confirmed/Flagged split) — from
+     `location_relationships[]`. Heterogeneous `entity_path` (people /
+     organizations / events / media / adjacent locations / findings).
 
    **All renderer-supported types** close with:
    - `## Associated Nodes` — placeholder; filled by `associate.py`
@@ -651,21 +666,27 @@ research artifact. Runs last — assumes Phase I and Phase II have passed.
 python3 scripts/review-coverage.py research/{slug}.yaml
 ```
 
-The script runs three mechanical checks:
+The script runs four mechanical checks:
 
-1. **Coverage** — every artifact `quotes[].text` appears in the node
-   body (whitespace/punctuation normalized).
-2. **Boundary** — the node body (outside `## Associated Nodes`) matches
-   what `build-from-research.py --dry-run` would regenerate from the
-   current artifact. Divergence means the artifact drifted from the
-   node, or the node was hand-edited.
-3. **Stub-linking** — every `entities_referenced[].wrap_path` appears
-   as a `[`/path`]` link in the node body.
+1. **Coverage check** — every artifact `quotes[].text` appears in the
+   node body (whitespace/punctuation normalized).
+2. **Boundary check** — the node body (outside `## Associated Nodes`)
+   matches what `build-from-research.py --dry-run` would regenerate
+   from the current artifact. Divergence means the artifact drifted
+   from the node, or the node was hand-edited.
+3. **Stub-linking check** — every `entities_referenced[].wrap_path`
+   appears as a `[`/path`]` link in the node body.
+4. **Description-drift check** — every significant token in the node's
+   `## Description` section appears in the artifact's grounding text
+   (source + `context_extrinsic` + `document_intrinsic` +
+   `naming_quirks.canonical` + `entities_referenced.name`). Catches
+   fabricated entities and abbreviation expansions that don't trace
+   to grounding.
 
 Must exit 0. Fix failures by updating the **artifact** (add the missing
-quote / entity, or remove orphan node content) and re-running
-`build-from-research.py` to resync. Never hand-edit the node to silence
-a coverage error.
+quote / entity, correct description prose to match grounding) and
+re-running `build-from-research.py` to resync. Never hand-edit the
+node to silence a coverage error.
 
 ### Step 2. Semantic review (agent-assisted)
 
@@ -682,7 +703,7 @@ task (T7) in a later increment.
 
 ### Phase III complete
 
-All three mechanical checks pass, and a human read of the regenerated
+All four mechanical checks pass, and a human read of the regenerated
 node surfaces no semantic issues. Ready to commit.
 
 ---
@@ -695,7 +716,7 @@ node surfaces no semantic issues. Ready to commit.
 2. `python3 scripts/build-from-research.py research/{slug}.yaml` — must
    complete cleanly (includes post-build `validate.py`)
 3. `python3 scripts/review-coverage.py research/{slug}.yaml` — must pass
-   (Coverage / Boundary / Stub-linking — all three checks)
+   (Coverage / Boundary / Stub-linking / Description-drift — all four checks)
 4. Read the regenerated node top-to-bottom; fix any issues in the
    **artifact** (not the node) and re-run steps 2–3
 5. Run the full pre-commit chain before committing:
