@@ -16,6 +16,13 @@
   path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   archived_date: '2026-04-17'
   sha256: aa6099b37a26b8d65ab97984133883d2b0b98b29b8cc344967eaa29a5239d9e7
+- url: https://docs.house.gov/meetings/GO/GO12/20241113/117721/HHRG-118-GO12-Wstate-ShellenbergerM-20241113.pdf
+  format: pdf
+  status: archived
+  path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+  archived_date: '2026-04-20'
+  sha256: 55e8f9c921b0cae441e1575ce170150e4cf95481c39f9cc12859a0389feac9bf
+  note: 'Michael Shellenberger written testimony for 2024-11-13 House Oversight + Cybersecurity/IT hearing ''Unidentified Anomalous Phenomena: Exposing the Truth''. Contains detailed timeline referencing Skinwalker Ranch, BAASS/AAWSAP, Bigelow 2007 DIA letter, and Fugal 2022 purchase narrative. 214 pages.'
 - url: https://documents2.theblackvault.com/documents/navy/DON-2021-003140.pdf
   format: pdf
   status: archived
@@ -30,6 +37,13 @@
   archived_date: '2026-04-20'
   sha256: acd9aa102bd1677efe53ac7200c21a5b8ab93f7f2bd8402ea726577bde2934dc
   note: 'UAP Security Classification Guide, ID #04-030, Naval Intelligence Activity, dated April 16, 2020 — 4 months before the public UAPTF establishment announcement. Released via FOIA case DON-NAVY-2022-000883 (Black Vault). Proves UAPTF was operational pre-public-announcement. 13 pages, 2MB.'
+- url: https://fox40.com/news/mystery-wire/robert-bigelow-opens-up-about-aawsap-the-tic-tac-incident-weird-events-on-skinwalker-ranch-the-connection-to-consciousness/
+  format: html
+  status: archived
+  path: news/fox40-bigelow-mysterywire-20210528.html
+  archived_date: '2026-04-20'
+  sha256: 0e07081788b8f0c10486599d6fe204ce2953fc2dda77cabbeeeefb6bcec805d3
+  note: Fox40/Mystery Wire article + video, 2021-01-25 (archived via Wayback 2024-12-08 snapshot). George Knapp interview with Robert Bigelow discussing BAASS/AAWSAP, Tic Tac incident, and 'weird events on Skinwalker Ranch'. File on disk is the Wayback snapshot capture. Filename date (20210528) reflects file naming convention, not article date.
 - url: https://media.defense.gov/2022/Jul/20/2003039074/-1/-1/1/ESTABLISHMENT-OF-THE-ALL-DOMAIN-ANOMALY-RESOLUTION-OFFICE.PDF
   format: pdf
   status: archived
@@ -85,6 +99,13 @@
   archived_date: '2026-04-20'
   sha256: fcc4aefe3bf6f45dd9e96bfa22ffef2d37c964dde7295f160d9c3e082644f271
   note: Americans for Safe Aerospace home page. Lists Jay Stratton in the Advisors section — direct on-record attestation by an organization of which Stratton is a listed advisor. Strongest non-.gov public-record attribution for Stratton's UAPTF role.
+- url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
+  format: html
+  status: archived
+  path: social/nidsci-org-wayback-20021128.html
+  archived_date: '2026-04-20'
+  sha256: 0e1be6bf84d08e4aa3bc3dbac1ac80d3a8b6d75b2ce19d0c7c8e342b07504807
+  note: 'Wayback Machine capture (2002-11-28 16:29:45) of nidsci.org — National Institute for Discovery Science. Direct primary source for NIDS''s self-representation of scope: aerial-phenomena research, animal-mutilation research, ''expanding its horizons'' into Bigelow Aerospace-related projects. NIDS-era primary source that is otherwise difficult to obtain; NIDS ceased public operations in 2004.'
 - url: https://www.aaro.mil/Portals/136/PDFs/Phillips_Timothy_Bio-DEC%202023-(Acting_Director_Ver)_508.pdf
   format: pdf
   status: archived
@@ -146,6 +167,13 @@
   path: government/defense-gov-kosloski-appointment-20240826.html
   archived_date: '2026-04-20'
   sha256: 7fe95c9e5803e1be89fb12395f9fa45bb0ca0cbbd8d67f62a6e26dabb8d523f7
+- url: https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/170018/
+  format: pdf
+  status: archived
+  path: government/aawsap-contract-hhm402-08-c-0072-mod-p00001-20090902.pdf
+  archived_date: '2026-04-20'
+  sha256: 46b1bfac1271b1c03668d65edc5ce57f6089022c0045495f97b2d6c5059aa313
+  note: AAWSAP contract HHM402-08-C-0072 modification P00001 (dated 2009-09-02), released via DIA FOIA Electronic Reading Room. Establishes Bigelow Aerospace Advanced Space Studies (BAASS) as the DIA AAWSAP contractor. CAGE code 54JU7.
 - url: https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf
   format: pdf
   status: archived
