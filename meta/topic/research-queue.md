@@ -45,11 +45,10 @@ appear in the Priority Build Queue below.
 
 ## Priority Build Queue
 
-Unbuilt-stub targets referenced from the 7 built nodes (Fravor
-document + Graves document + Fravor person + Nimitz encounter + Fravor
-oral transcript + FLIR1 video + 2023-07-26 House Oversight hearing
-event). Grouped by natural cluster so contributors can choose which
-ring to close first.
+Unbuilt-stub targets referenced from the 14 built nodes (3 people +
+2 organizations + 2 events + 3 documents + 3 transcripts + 1 media).
+Grouped by natural cluster so contributors can choose which ring to
+close first.
 
 ### Cluster A — 2004 Nimitz encounter (F.2c pilot shipped 2026-04-19; FLIR1 F.4c pilot shipped 2026-04-20)
 
@@ -74,15 +73,18 @@ and the supporting organization nodes.
 | `/people/christopher-mellon` | person / institutional-actor | Low | Former Deputy Assistant SecDef for Intelligence; TTSA advisor | Public record |
 | `/people/steve-justice` | person / institutional-actor | Low | Former Lockheed Skunk Works director; TTSA | Public record |
 
-### Cluster B — 2023-07-26 House Oversight hearing (hearing event shipped 2026-04-20; Fravor transcript F.3c shipped 2026-04-19; Grusch written testimony + person shipped 2026-04-20)
+### Cluster B — 2023-07-26 House Oversight hearing (complete 2026-04-20)
 
-Hearing event node + all three oral transcripts (Fravor, Grusch,
-Graves) + all three written testimony documents + Grusch person node
-built. Cluster's remaining ring: the Graves person node.
+Ring complete — hearing event node, all three oral transcripts
+(Fravor, Grusch, Graves), all three written testimony documents, and
+all three witness person nodes (Fravor, Grusch, Graves) built.
+Remaining stubs below are cross-cluster dependencies surfaced by the
+Cluster B build (Kirkpatrick also appears in Cluster D AARO
+leadership; Gallaudet is cross-referenced from Graves's testimony;
+ODNI report is a foundational document referenced from Graves).
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/people/ryan-graves` | person / eyewitness | High | 2014-2015 Virginia Beach encounters witness; written testimony + oral transcript both archived and built as document + transcript nodes | Graves written testimony + hearing transcript (both built) |
 | `/people/sean-kirkpatrick` | person / institutional-actor | Medium | AARO founding director; named in Graves testimony | 2023-04-19 SASC testimony (archived) |
 | `/people/tim-gallaudet` | person / institutional-actor | Medium | Former NOAA Chief Scientist and Deputy Administrator; UAP advocate | Public record |
 | `/documents/odni-preliminary-assessment-2021` | document / gov-doc | Medium | Referenced in Graves testimony; foundational UAP report | ODNI (public PDF; archived) |
@@ -134,6 +136,6 @@ Long-term structural improvements not blocked on primary sources.
 | Milestone | Description | Target | Status |
 |---|---|---|---|
 | Close Cluster A (Nimitz) ring | Build Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | F.2c + F.3 + F.4 shipped; FLIR1 built; Dietrich + orgs remain | In progress |
-| Close Cluster B (2023-07-26 hearing) ring | Build Grusch doc + Grusch/Graves transcripts + Grusch/Graves person | Hearing event + Fravor transcript + Grusch doc + Grusch person built; Grusch/Graves transcripts + Graves person remain | In progress |
+| Close Cluster B (2023-07-26 hearing) ring | Build Grusch doc + Grusch/Graves transcripts + Grusch/Graves person | Hearing event + all three transcripts + all three written testimony docs + all three witness person nodes built | Done |
 | Close Cluster D (UAP oversight institutions) ring | Build AARO + UAPTF + their support stubs (ONI, NIA, Norquist, Travis Taylor, etc.) | AARO + UAPTF built; ONI, NIA, Norquist, Taylor stubs surfaced and queued | In progress |
 | First finding node | Build a cross-entity finding spanning 3+ nodes (e.g., UAP video-release provenance chain) | After ≥3 cluster rings close | Pending |
