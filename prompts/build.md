@@ -498,11 +498,11 @@ This:
      Establishes` table (see `meta/conventions.md` "Document nodes vs
      synthesis nodes").
 
-   **Person nodes:**
+   **Person nodes:** (order follows `render_body_person`)
    - `## Identity` — from `document_intrinsic` (full_name, aliases,
      nationality, profession)
-   - `## Background` / `## UAP Relevance` / `## Credibility Notes` —
-     from respective free-prose fields
+   - `## Background` — from `background` prose field
+   - `## UAP Relevance` — from `uap_relevance` prose field
    - `## Affiliations` (Confirmed/Flagged split) — from `affiliations[]`,
      sorted by `period_start`
    - `## Statements` (Direct Observations / Other Statements split) —
@@ -513,10 +513,14 @@ This:
    - Archetype-specific section (dispatched by frontmatter `archetype`):
      eyewitness → `## Corroboration` (from `corroboration_items[]`);
      whistleblower → `## Claim Inventory` (render-time view of quotes
-     tagged `category: filed-claim`) + `## Vouching Chain` (from
-     `vouching_chain[]`); institutional-actor → `## Program Involvement`
-     (from `program_involvement[]`); reporter → `## Publication Record`
-     (from `publication_record[]`, sorted by date)
+     tagged `category: filed-claim`); institutional-actor →
+     `## Program Involvement` (from `program_involvement[]`); reporter →
+     `## Publication Record` (from `publication_record[]`, sorted by
+     date)
+   - `## Credibility Notes` — from `credibility_notes` prose field
+   - **Whistleblower only:** `## Vouching Chain` — from
+     `vouching_chain[]` (standalone section rendered after Credibility
+     Notes, not part of the archetype-dispatcher)
 
    **Event nodes:**
    - `## Event Summary` — from `event_intrinsic`. Kind-specific fields:
@@ -543,11 +547,14 @@ This:
      rows: hearing emits Full Hearing Title / Convening Body /
      Session / Serial No. / Date / Location / Witness / Oath Status /
      Transcript URL / Transcript Verified / Event Node / Companion
-     Written Testimony; `other` emits Outlet / Program / Date /
-     Host(s) / Primary Speaker(s) / Format / Source Medium /
-     Underlying Media Node / Source URL / Citation Style. Auto-
-     populates `Source Medium` and `Underlying X` rows from frontmatter
-     (`source_medium` / `derived_from`).
+     Written Testimony. `other` emits Outlet / Platform / Program /
+     Show / Venue / Date / Host(s) / Interviewer(s) / Primary
+     Speaker(s) / Format / Source Medium / (either Underlying Media
+     Node or Underlying Document, depending on whether `derived_from`
+     points at `/media/` or `/documents/`) / Source URL / Transcript
+     Verified / Citation Style. Auto-populates Source Medium and the
+     Underlying row from frontmatter (`source_medium` /
+     `derived_from`).
    - `## Summary` — from `description` (render-time field→section
      rename: `description` stays the universal top-level field while
      the rendered section name fits transcript semantics).
@@ -558,11 +565,16 @@ This:
      using `significance` field.
 
    **Media nodes:**
-   - `## Media Summary` — from `document_intrinsic` + `context_extrinsic`
-     + `primary_sources[0]`. Kind-specific Duration/Dimensions label
-     (video → combined; audio → Duration only; photo → Dimensions
-     only). All kinds emit Format / Camera Device / Embedded Metadata
-     / Local Archive / SHA256 when populated.
+   - `## Media Summary` — fact table from `document_intrinsic` +
+     `context_extrinsic` + `primary_sources[0]` + manifest sha256 lookup.
+     Row labels (emitted when populated): `Title`, `Kind`,
+     `Date Captured`, `Date Released`, then a Duration/Dimensions
+     row whose label adapts to what's populated (`Duration /
+     Dimensions` when both, `Duration` alone or `Dimensions` alone
+     otherwise — typical for video / audio / photo respectively),
+     `Format`, `Codec`, `Color Mode`, `File Size`, `Camera / Device`,
+     `EXIF / Container Metadata`, `SHA256`, `Primary Source URL`,
+     `Local Archive`.
    - `## Description` — from `description`
    - `## Provenance` — from `context_extrinsic.provenance`
    - `## Media Versioning` — conditional; emits when artifact has
@@ -578,12 +590,18 @@ This:
 
    **Organization nodes:**
    - `## Overview` — fact table from `document_intrinsic` per-kind
-     keys. gov emits Full Name / Statutory Authority / Established /
-     Parent Organization / Current Director / Office Type /
-     Jurisdiction; gov-contractor emits Contracting Agency / Period
-     of Performance / Primary Counterparty / CAGE Code / Registered
-     Status; private emits Founded / Type / Headquarters / Current
-     Leadership / Public Status. Rows with empty values are skipped.
+     keys (order from `_ORG_OVERVIEW_ORDER_BY_KIND`). gov agency/office
+     fields: Full Name / Internal Name / Type (from `office_type`) /
+     Statutory Authority / Established / Terminated / Parent
+     Organization / Director / Jurisdiction. Military-unit and
+     military-service gov kinds layer additional fields (Designator /
+     Unit Class / Parent Unit / Home Station / Commissioned /
+     Decommissioned / Mission / Branch Type / Founded). gov-contractor
+     emits Full Name / Contracting Agency / Period of Performance /
+     Primary Counterparty / Registered Status / CAGE Code. private
+     emits Full Name / Type (from `org_type`) / Founded / Headquarters
+     / Current Leadership / Public Status. Rows with empty values are
+     skipped.
    - `## Description` — from `description`
    - `## Key Personnel` (Confirmed/Flagged split) — from
      `key_personnel[]`, sub-grouped by `leadership_class` (Directors /
@@ -624,6 +642,14 @@ This:
      / events / media / adjacent locations / findings).
 
    **All renderer-supported types** close with:
+   - `## Primary-Source Contradictions` — **conditional, person /
+     event / organization / location only.** Emits when the artifact
+     has any `rumors[]` entry with `status: primary-source-disputed`.
+     Each disputed rumor renders as an H3 with its `claim` text, a
+     `Circulates in:` line (from `observed_sources`), and a
+     `Primary-source refutation:` line (from `note`). Omitted when
+     no disputed rumors exist or the node type doesn't carry rumors
+     (document / transcript / media).
    - `## Associated Nodes` — placeholder; filled by `associate.py`
      (auto-generated from body `[`/path`]` links)
 
