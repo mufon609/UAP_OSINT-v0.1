@@ -13,7 +13,7 @@ Checks:
      node-path pointers (media.derivation_of, transcript.derived_from)
      share one existence-check pass. Missing targets register in the
      broken-link registry as backlog (not errors).
-  8. Open Questions formatting (- [ ] and - [x] DONE YYYY-MM-DD: ...)
+  8. (retired — was Open Questions formatting; section removed 2026-04-21)
   9. Table cell word budget (soft warning)
  10. Finding cross-reference consistency (entities listed must link back)
  11. Verbatim-quote verification — for every '> blockquote' followed by a
@@ -961,19 +961,6 @@ def validate_node(path, schema):
         target_md = target.with_suffix(".md") if not target.suffix else target
         if not target_md.exists() and not target.exists():
             broken.add(link)
-
-    # Open Questions formatting
-    oq_text = extract_section(text, "Open Questions / Research Gaps")
-    if oq_text:
-        for line in oq_text.splitlines():
-            s = line.strip()
-            if s.startswith("- [x]"):
-                if "— DONE " not in s:
-                    issues.append(Issue(rel, "warn",
-                        "Resolved OQ missing '— DONE' keyword"))
-                elif not re.search(r"— DONE \d{4}-\d{2}-\d{2}", s):
-                    issues.append(Issue(rel, "warn",
-                        "Resolved OQ missing 'DONE YYYY-MM-DD' date"))
 
     # Table cell word budget
     budget = schema.get("limits", {}).get("table_cell_words_soft", 50)

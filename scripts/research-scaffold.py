@@ -229,7 +229,6 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         "claims": [],
         "entities_referenced": [],
         "naming_quirks": [],
-        "research_gaps": [],
     }
     # Type-conditional `rumors` section
     if node_type in RUMORS_TYPES:
@@ -366,7 +365,7 @@ def main():
     print(f"  2. Fill in document_intrinsic and context_extrinsic from the extracted text")
     print(f"  3. Write `description` (1-3 paragraphs) — renders as the node's Description section")
     print(f"  4. Populate quotes (verbatim passages with location refs)")
-    print(f"  5. Populate entities_referenced, naming_quirks, research_gaps")
+    print(f"  5. Populate entities_referenced, naming_quirks")
     if node_type in RUMORS_TYPES:
         print(f"  6. Populate rumors (widely-reported claims lacking primary-source backing)")
     print(f"  7. Validate: python3 scripts/validate-research.py {rel}")

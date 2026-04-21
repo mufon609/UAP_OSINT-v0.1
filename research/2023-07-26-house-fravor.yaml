@@ -791,19 +791,3 @@ naming_quirks:
   source_path: government/congress-gov-house-hearing-transcript-20230726.pdf
   resolution: disputed
   note: Fravor's oral testimony uses "ATIP program" in the Pentagon led by Lue Elizondo (q9), paralleling the same program name in his written testimony (written-testimony-fravor-2023 nq3 — "ATIP (Anomalous Threat Identification Program)"). The oral form omits the expansion the written form provides. Whether ATIP refers to AATIP or a distinct program remains unresolved; see research_gap rg3.
-research_gaps:
-- id: rg1
-  added_date: '2026-04-19'
-  statement: Confirm whether "Chad" (named in Fravor's oral testimony at q34 as the follow-on crew member who captured the 90-second video) refers to Chad Underwood
-  methodology: When the /media/flir1-video node is built, cross-reference its provenance chain (DoD 2017 release metadata) with NYT 2017 reporting and Navy VFA-41 squadron records for the name of the F-18 crew that captured FLIR1. The rumor is tracked on the /events/2004-nimitz-encounter artifact; resolution here would upgrade it from rumor to attested fact.
-  resolved: false
-- id: rg2
-  added_date: '2026-04-19'
-  statement: Locate and archive the "unofficial official report" that Fravor (q10) states "came out that is now on the internet"
-  methodology: Search Wayback, FAS, and Black Vault for an "unofficial official report" on the 2004 Nimitz encounter. Cross-reference with the parallel research_gap rg4 on the written-testimony-fravor-2023 artifact (where the same report is mentioned at ¶8 of the written statement as "available on the internet").
-  resolved: false
-- id: rg3
-  added_date: '2026-04-19'
-  statement: Resolve whether "ATIP program" (Fravor oral q9) refers to AATIP or a distinct program
-  methodology: Cross-check against primary-source documentation naming the program during the 2007-2012 window (DIA memos, 2009 Reid brief, AARO Historical Record Report Volume I). Parallel to research_gap rg2 on the companion written-testimony-fravor-2023 artifact.
-  resolved: false

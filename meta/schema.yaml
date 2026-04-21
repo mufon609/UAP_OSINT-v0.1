@@ -38,19 +38,6 @@ quote_verification_fields:
   optional: [Location, Note]
 
 # ---------------------------------------------------------------------------
-# Open Questions formatting
-# ---------------------------------------------------------------------------
-
-open_questions:
-  unresolved: "- [ ] {imperative statement} — {context}"
-  resolved: "- [x] {original} — DONE YYYY-MM-DD: {resolution}"
-  rule: |
-    Remove resolved items and promote the resolution into the node body
-    (Description, Key Passages, What It Confirms, Credibility Notes, etc).
-    Retain `- [x] DONE` only for null findings, provenance-chain notes,
-    or methodology outcomes where the closure itself is the useful record.
-
-# ---------------------------------------------------------------------------
 # Node types
 # ---------------------------------------------------------------------------
 
@@ -92,7 +79,6 @@ types:
           - Corroboration
           - Credibility Notes
           - Associated Nodes
-          - Open Questions / Research Gaps
       whistleblower:
         description: "Someone who filed a formal complaint and makes structured claims"
         required_sections:
@@ -107,7 +93,6 @@ types:
           - Credibility Notes
           - Vouching Chain
           - Associated Nodes
-          - Open Questions / Research Gaps
       institutional-actor:
         description: "Significance rests on institutional access and role"
         required_sections:
@@ -121,7 +106,6 @@ types:
           - Program Involvement
           - Credibility Notes
           - Associated Nodes
-          - Open Questions / Research Gaps
       reporter:
         description: "Significance rests on published journalism"
         required_sections:
@@ -135,7 +119,6 @@ types:
           - Publication Record
           - Credibility Notes
           - Associated Nodes
-          - Open Questions / Research Gaps
     timeline_category_values:
       # Extensible; validator warns on unknown values but does not error.
       - affiliation
@@ -192,7 +175,6 @@ types:
           - Timeline
           - Relationships
           - Associated Nodes
-          - Open Questions / Research Gaps
       gov-contractor:
         description: "Organization whose existence is a government contract (e.g., BAASS, EarthTech)"
         required_sections:
@@ -204,7 +186,6 @@ types:
           - Timeline
           - Relationships
           - Associated Nodes
-          - Open Questions / Research Gaps
       private:
         description: "Private company, nonprofit, academic institution, media outlet"
         required_sections:
@@ -215,7 +196,6 @@ types:
           - Timeline
           - Relationships
           - Associated Nodes
-          - Open Questions / Research Gaps
     section_rules:
       Relationships: {split: [Confirmed, Flagged]}
       Key Personnel: {split: [Confirmed, Flagged]}
@@ -259,7 +239,6 @@ types:
           - Provenance
           - Key Passages
           - Associated Nodes
-          - Open Questions / Research Gaps
       non-gov-doc:
         description: "Non-government document — article, book, blog post, social-media post, private filing, personal correspondence"
         required_sections:
@@ -267,7 +246,6 @@ types:
           - Description
           - Key Passages
           - Associated Nodes
-          - Open Questions / Research Gaps
     doc_form_values:
       # Extensible. Validator warns on unknown values but does not error.
       # Document nodes are text-native only — video/photo/audio primary
@@ -319,7 +297,6 @@ types:
           - Key Testimony
           - Witnesses & Testimony
           - Associated Nodes
-          - Open Questions / Research Gaps
       encounter:
         description: "Observed event — UAP sighting, incident"
         required_sections:
@@ -329,7 +306,6 @@ types:
           - Timeline
           - Corroboration
           - Associated Nodes
-          - Open Questions / Research Gaps
     section_rules:
       Participants: {split: [Confirmed, Flagged]}
       Key Testimony: {requires_quote_verification: true}
@@ -367,7 +343,6 @@ types:
           - Speakers
           - Key Passages
           - Associated Nodes
-          - Open Questions / Research Gaps
       other:
         description: "Verbatim record of any non-hearing speech source — interview, podcast, broadcast, documentary, film, conference talk, press conference, radio, streaming"
         required_sections:
@@ -376,7 +351,6 @@ types:
           - Speakers
           - Key Passages
           - Associated Nodes
-          - Open Questions / Research Gaps
     section_rules:
       Key Passages: {requires_quote_verification: true}
 
@@ -417,7 +391,6 @@ types:
       - Provenance
       - Key Passages
       - Associated Nodes
-      - Open Questions / Research Gaps
     optional_sections:
       - Media Versioning
       # Required when derivation_of is set — explains what changed between
@@ -451,7 +424,6 @@ types:
       - Key Passages
       - Relationships
       - Associated Nodes
-      - Open Questions / Research Gaps
     section_rules:
       Relationships: {split: [Confirmed, Flagged]}
       Ownership Timeline: {chronological: true}
@@ -477,7 +449,6 @@ types:
       - Timeline
       - Primary Source Basis
       - Entities Involved
-      - Open Questions / Research Gaps
     section_rules:
       Timeline: {chronological: true}
 
@@ -569,7 +540,6 @@ types:
       - claims                # list — atomic claims the sources establish
       - entities_referenced   # list — every named person/org/event/doc/location
       - naming_quirks         # list — source-specific oddities (typos, alt spellings)
-      - research_gaps         # list — investigation threads, resolved or open
     # Audit trail / history: git log and git diff on the artifact file
     # are authoritative. No in-artifact iteration log. Entry lifecycle
     # fields (superseded_by / contradicted_by / corroborated_by) provide
@@ -749,7 +719,7 @@ types:
     # --- Entry shapes per top-level list section ---
 
     # Every entry across claims, quotes, entities_referenced, rumors,
-    # naming_quirks, research_gaps carries the lifecycle fields below.
+    # naming_quirks carries the lifecycle fields below.
     entry_lifecycle_fields:
       required: [id, added_date]
       optional:
@@ -1125,20 +1095,6 @@ types:
       # observed: as it appears in source (e.g., "Leslie Keane")
       # canonical: corrected form (e.g., "Leslie Kean")
       # resolution: preserve-as-sic-in-quotes | use-canonical | disputed | unresolved
-
-    research_gap_entry:
-      required: [statement, resolved]
-      optional: [methodology, resolved_date, resolving_source, resolution_summary, retain_as_done]
-      # statement: the question or gap
-      # methodology: how to resolve
-      # resolved: bool
-      # resolved_* fields: required when resolved == true
-      # retain_as_done: bool (default false) — when true, a resolved gap renders
-      #   in the node's Open Questions section as "- [x] DONE YYYY-MM-DD: ...".
-      #   When false (default), resolved gaps are omitted from node render —
-      #   their resolution lives in the node body (as a new claim). Only set to
-      #   true when the gap's closure is itself the primary record (null
-      #   findings, methodology outcomes).
 
     # --- Validation invariants (enforced by scripts/validate-research.py) ---
 

@@ -266,14 +266,3 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 ### Documents
 
 - [`/documents/odni-preliminary-assessment-2021`]
-
----
-
-## Open Questions / Research Gaps
-
-- [ ] Locate the full text of the Norquist memorandum approving UAPTF establishment (August 4, 2020) — The DoD press release of August 14, 2020 attests the memorandum's existence but the memorandum text itself has not been publicly released in the sources reviewed. FOIA the Department of the Navy or OUSD(I&S) for the memorandum; monitor Black Vault FOIA document archive for subsequent releases
-- [ ] Establish Jay Stratton's exact UAPTF period start and end dates from primary source — The Gough DoD PA statement (June 2022) uses past tense ("was leading") and refers to Stratton as "former Office of Naval Intelligence senior civilian" — implying Stratton had departed ONI by June 2022 but does not specify period dates. Secondary sources place him as first Director from 2019. Cross-reference with his forthcoming memoir (William Morrow / HarperCollins) if published
-- [ ] Determine UAPTF staffing, budget, and internal organizational structure — Not publicly documented in the 11 primary sources archived for i0. The UAPTF Charter (September 2020) is heavily redacted on focus areas, detailed responsibilities, and member-agency participation details. Cross-reference with DoD budget submissions, congressional appropriations language, and future FOIA releases
-- [ ] Confirm Karl Nell's role as Army liaison / Army Director supporting UAPTF (2021-2022) from a primary source — Nell's role is attested in multiple secondary sources (Americans for Safe Aerospace advisor listing, Debrief article, SALT bio); no primary source archived in the REFACTOR corpus confirms it. Target FOIA releases from the U.S. Army, Nell's own retirement / service record, or on-record congressional testimony
-- [ ] Document the contents of the UAPTF Executive Steering Committee (EXCOM) governance — membership, mandate, and reporting cadence — The UAPTF Charter references an EXCOM that the Director, UAP Task Force provides periodic updates to. EXCOM details are redacted in the charter FOIA release. Cross-reference with AARO Executive Council (AAROEXEC) establishment (which the Hicks memo renames from AOIMEXEC) for continuity of governance structure
-- [ ] Establish exact UAPTF disestablishment date — Hicks memorandum (July 15, 2022) directs disestablishment "no later than the date the AARO is established" (AARO announced July 20, 2022). Exact UAPTF cessation date not specified in any primary source reviewed. Target Secretary of the Navy administrative record, UAPTF termination memorandum (if released), or UAPTF-to-AARO transition documentation

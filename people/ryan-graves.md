@@ -229,13 +229,3 @@ Graves's testimony is under oath before the House Oversight Subcommittee on Nati
 ### Media
 
 - [`/media/go-fast`]
-
----
-
-## Open Questions / Research Gaps
-
-- [ ] Establish Americans for Safe Aerospace's founding year and incorporation status — not specified in either primary source — Check state nonprofit incorporation records; cross-reference with safeaerospace.org "about" page snapshots via Wayback Machine; check Graves's Debrief / NewsNation interviews for founding-date references
-- [ ] Verify the UAP Integration & Outreach Committee at the American Institute of Aeronautics and Astronautics (q7) — formation date, charter, and public-record outputs — Check aiaa.org announcements and press releases; search AIAA aerospace technical forum proceedings for the committee's formal charter and its published outputs post-2023
-- [ ] Full VFA-11 tenure dates — Graves states 2014 posting (written q3) but end date not specified in either source — Cross-reference Navy Officer Record Brief (ORB) release via FOIA if available; check Graves's LinkedIn public record snapshots via Wayback for service-date disclosure; cross-reference with Americans for Safe Aerospace bio page
-- [ ] Corroborate the 2015 Gallaudet SIPRNET email with the GO-FAST UAP video (q9) through Gallaudet's own on-record statements or testimony — Check Gallaudet's public interviews and any congressional testimony / SASC/HPSCI transcripts for first-person accounts of the 2015 SIPRNET email; cross-reference with Ross Coulthart / NewsNation reporting archives for Gallaudet's own retelling
-- [ ] Identify the two F-18 pilots in the Warning Area W-72 GPS-threshold encounter (q5) — the pilot who observed the dark gray cube inside a clear sphere at the entry point — Check Navy VFA-11 training-mission logs for 2014-2015 via FOIA; cross-reference with Americans for Safe Aerospace witness program for attributed pilot testimony; check post-hearing press coverage for any pilot coming forward publicly

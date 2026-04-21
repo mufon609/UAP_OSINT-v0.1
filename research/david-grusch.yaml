@@ -418,41 +418,6 @@ entities_referenced:
   name: July 26, 2023 House Oversight UAP hearing
   wrap_path: /events/2023-07-26-house-uap-hearing
 naming_quirks: []
-research_gaps:
-- id: g1
-  added_date: '2026-04-20'
-  statement: Locate the specific date of Grusch's PPD-19 Urgent Concern filing with the ICIG
-  methodology: The written testimony attests that the filing occurred but does not give a date. Cross-reference against ICIG correspondence, the June 2023 Debrief article by Kean and Blumenthal (archived locally but not yet extracted), and Grusch's NewsNation interview for the filing date
-  resolved: false
-- id: g2
-  added_date: '2026-04-20'
-  statement: Identify the individuals Grusch describes as sources of his testimony — "multiple esteemed and credentialed current and former military and Intelligence Community individuals" (written testimony Opening ¶4)
-  methodology: Cross-reference against the June 2023 Debrief article, Grusch's NewsNation interview, and his oral Q&A at the 2023-07-26 hearing — each of which is expected to name specific sources absent from the written statement
-  resolved: false
-- id: g3
-  added_date: '2026-04-20'
-  statement: Populate Vouching Chain once third-party on-record vouching statements are extracted
-  methodology: Extract the Debrief article (archived as sources/news/thedebrief-grusch-2023.html), the Burlison advisor notice (archived as sources/government/burlison-house-gov-grusch-advisor-20250327.html), and subsequent on-record vouching statements; register each voucher's quote as a verbatim passage; add vouching_chain entries with voucher_path + attestation + source
-  resolved: false
-- id: g4
-  added_date: '2026-04-20'
-  statement: Document the specific retaliation Grusch references (written testimony Opening ¶13 — "I have suffered retaliation for my decision")
-  methodology: Cross-reference against his oral Q&A at the 2023-07-26 hearing and subsequent interviews for enumerated retaliation incidents
-  resolved: false
-- id: g5
-  added_date: '2026-04-20'
-  statement: Cross-reference Grusch's written testimony against his oral testimony at /transcripts/2023-07-26-house-grusch to document Material Differences
-  methodology: Once the hearing transcript node is built, compare the oral Q&A against the written Opening and Closing Statements for substantive claims, named programs, named individuals, and biographical content not present in the written statement
-  resolved: true
-  resolved_date: '2026-04-20'
-  resolution_summary: Moot — Material Differences feature eliminated from hearing-transcript nodes (see roadmap.md "Post-F.3 — Material Differences elimination" section). Cross-entity written-vs-oral comparative analysis will be reshaped under the F.7 finding-node renderer when it ships.
-  retain_as_done: false
-  resolving_source: meta/toolkit-notes/roadmap.md (Post-F.3 — Material Differences elimination section, 2026-04-20)
-- id: g6
-  added_date: '2026-04-20'
-  statement: Register the Congressional biographical submission PDF as its own document node (/documents/grusch-bio-2023)
-  methodology: Future D.3 document build session; the bio is a distinct primary source from the written testimony and warrants its own node with Key Passages from the CV content (especially the NGA UAP-lead accomplishment line)
-  resolved: false
 rumors:
 - id: r1
   added_date: '2026-04-20'

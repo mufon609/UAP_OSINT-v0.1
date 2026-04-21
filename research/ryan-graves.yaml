@@ -214,32 +214,6 @@ naming_quirks:
   source_path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
   note: pdftotext rendered the original double quotes around the callsign "FOBS" as paired smart-single-quote marks (two left-single followed by two right-single) in both the written testimony PDF and the stenographic transcript PDF. The canonical display form for a Navy callsign is in straight double quotes. Preserved verbatim in q1 (written testimony) and in the transcript node's q1 (matching the same artifact on both sources).
-research_gaps:
-- id: rg1
-  added_date: '2026-04-20'
-  statement: Establish Americans for Safe Aerospace's founding year and incorporation status — not specified in either primary source
-  methodology: Check state nonprofit incorporation records; cross-reference with safeaerospace.org "about" page snapshots via Wayback Machine; check Graves's Debrief / NewsNation interviews for founding-date references
-  resolved: false
-- id: rg2
-  added_date: '2026-04-20'
-  statement: Verify the UAP Integration & Outreach Committee at the American Institute of Aeronautics and Astronautics (q7) — formation date, charter, and public-record outputs
-  methodology: Check aiaa.org announcements and press releases; search AIAA aerospace technical forum proceedings for the committee's formal charter and its published outputs post-2023
-  resolved: false
-- id: rg3
-  added_date: '2026-04-20'
-  statement: Full VFA-11 tenure dates — Graves states 2014 posting (written q3) but end date not specified in either source
-  methodology: Cross-reference Navy Officer Record Brief (ORB) release via FOIA if available; check Graves's LinkedIn public record snapshots via Wayback for service-date disclosure; cross-reference with Americans for Safe Aerospace bio page
-  resolved: false
-- id: rg4
-  added_date: '2026-04-20'
-  statement: Corroborate the 2015 Gallaudet SIPRNET email with the GO-FAST UAP video (q9) through Gallaudet's own on-record statements or testimony
-  methodology: Check Gallaudet's public interviews and any congressional testimony / SASC/HPSCI transcripts for first-person accounts of the 2015 SIPRNET email; cross-reference with Ross Coulthart / NewsNation reporting archives for Gallaudet's own retelling
-  resolved: false
-- id: rg5
-  added_date: '2026-04-20'
-  statement: Identify the two F-18 pilots in the Warning Area W-72 GPS-threshold encounter (q5) — the pilot who observed the dark gray cube inside a clear sphere at the entry point
-  methodology: Check Navy VFA-11 training-mission logs for 2014-2015 via FOIA; cross-reference with Americans for Safe Aerospace witness program for attributed pilot testimony; check post-hearing press coverage for any pilot coming forward publicly
-  resolved: false
 rumors: []
 timeline:
 - id: t1

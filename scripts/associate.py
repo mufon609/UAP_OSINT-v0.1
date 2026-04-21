@@ -90,7 +90,7 @@ def generate_section(groups):
 
 
 def replace_section(text, new_section):
-    """Replace existing Associated Nodes section, or insert before Open Questions.
+    """Replace existing Associated Nodes section, or append at end of body.
 
     `new_section` is expected to end with a trailing '---\\n\\n' separator.
     Any existing separator preceding the next H2 is consumed as part of the
@@ -106,14 +106,7 @@ def replace_section(text, new_section):
         suffix = text[end:]
         return prefix + new_section + suffix
 
-    # No existing section — insert before Open Questions
-    oq = re.search(r"^## Open Questions", text, re.MULTILINE)
-    if oq:
-        prefix = text[:oq.start()].rstrip() + "\n\n"
-        suffix = text[oq.start():]
-        return prefix + new_section + suffix
-
-    # Append at end
+    # No existing section — append at end
     return text.rstrip() + "\n\n" + new_section
 
 

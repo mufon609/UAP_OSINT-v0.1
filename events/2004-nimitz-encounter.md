@@ -103,13 +103,3 @@ As the flight turned back towards the CAP point, the air controller let them kno
 ### Media
 
 - [`/media/flir1-video`]
-
----
-
-## Open Questions / Research Gaps
-
-- [ ] The exact calendar date within November 2004 is not stated in this source (only "Nov 2004" and "at sea for roughly 2 weeks" into the November–December at-sea period) — Cross-reference with Fravor's 2017 ABC News Nightline interview, 2021 CBS 60 Minutes segment, or the 2023-07-26 House Oversight oral testimony once archived; or against Navy operational records
-- [ ] Identity of Fravor's WSO on the November 2004 flight is not given in this source — Cross-reference with Navy flight logs or with the 2023-07-26 oral testimony ([`/transcripts/2023-07-26-house-fravor`]) when archived
-- [ ] Identity of the follow-on Nimitz crew that took the approximately 90 second targeting pod video is not given in this source — Primary-source verification against other Nimitz-encounter accounts; Chad Underwood is widely reported as the FLIR1-video pilot in secondary coverage but not named in this source
-- [ ] The "Unofficial Official Report" that Fravor mentions as "available on the internet" is not identified by title, author, or link in this source — Identify the referenced document; archive if accessible; assess provenance and scope
-- [ ] Geographic theater of operations (ocean region) is not named in this source — source only says "at sea" with the CAP point roughly 40 miles South of the ship — Cross-reference with Navy operational records for the USS Nimitz Battle Group November–December 2004 at-sea period; or with Fravor's other on-record accounts

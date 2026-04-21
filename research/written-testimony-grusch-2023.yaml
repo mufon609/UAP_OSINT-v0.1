@@ -223,33 +223,3 @@ entities_referenced:
   wrap_path: /events/2023-07-26-house-uap-hearing
   context_summary: The hearing for which this written testimony was submitted
 naming_quirks: []
-research_gaps:
-- id: rg1
-  added_date: '2026-04-20'
-  statement: Identify whether the "multi-decade UAP crash retrieval and reverse engineering program" Grusch references (Opening ¶11) corresponds to any named program in other primary sources
-  methodology: Cross-reference against AARO Historical Record Report Vol I, DIRD memos, ICIG unclassified determinations, and Grusch's oral Q&A at the same hearing. Note that the written statement never names the program
-  resolved: false
-- id: rg2
-  added_date: '2026-04-20'
-  statement: Locate the ICIG's determination on Grusch's PPD-19 Urgent Concern filing
-  methodology: ICIG unclassified correspondence or public statements; House Oversight committee materials submitted during the 2023-07-26 hearing cycle; FOIA the ICIG for a releasable version of the determination if no public record exists
-  resolved: false
-- id: rg3
-  added_date: '2026-04-20'
-  statement: Document the specific retaliation Grusch references (Opening ¶13) — the written statement asserts retaliation but provides no specifics
-  methodology: Cross-reference against his oral Q&A at the same hearing (/transcripts/2023-07-26-house-grusch — not yet built) and subsequent interviews (NewsNation) for enumerated retaliation incidents
-  resolved: false
-- id: rg4
-  added_date: '2026-04-20'
-  statement: Identify the person or office behind the PDF Author metadata field "gscie" on this document
-  methodology: Cross-reference against staff identifiers in House Oversight committee submissions from the same cycle; check other archived PDFs submitted by Grusch or his counsel for the same metadata signature. Minor provenance question — does not affect authorship of the document's content, which is unambiguously Grusch's first-person statement
-  resolved: false
-- id: rg5
-  added_date: '2026-04-20'
-  statement: Cross-reference Grusch's written testimony against his oral testimony at /transcripts/2023-07-26-house-grusch to document Material Differences
-  methodology: Once the hearing transcript node is built, review oral Q&A for substantive claims, named programs, named individuals, and biographical content not present in this written statement. The written statement is 104 lines across 3 pages; the oral record is the stenographic transcript of the 2023-07-26 House Oversight hearing and should be extracted and compared systematically rather than anchored against expected-content assumptions
-  resolved: true
-  resolved_date: '2026-04-20'
-  resolution_summary: Moot — Material Differences feature eliminated from hearing-transcript nodes (see roadmap.md "Post-F.3 — Material Differences elimination" section). Cross-entity written-vs-oral comparative analysis will be reshaped under the F.7 finding-node renderer when it ships.
-  retain_as_done: false
-  resolving_source: meta/toolkit-notes/roadmap.md (Post-F.3 — Material Differences elimination section, 2026-04-20)

@@ -18,10 +18,7 @@ Checks:
                     hand-edited, or the renderer changed.
   3. Stub-linking — every entities_referenced.wrap_path appears as a
                     [`/path`] link in the node body.
-  4. OQ dedup     — the '## Open Questions / Research Gaps' items map 1:1
-                    to unresolved research_gaps (plus any retained-DONE
-                    resolved gaps).
-  5. Claim drift  — every significant token (proper noun, designator,
+  4. Claim drift  — every significant token (proper noun, designator,
                     number, quoted string) in a claim.statement appears
                     in the source text. Catches coarse drift: fabricated
                     facts, fabricated entities, contributor additions not
@@ -401,7 +398,6 @@ def gather_grounding_text(artifact, source_text):
     prose with other contributor prose):
       - claims[].statement
       - entities_referenced[].context_summary
-      - research_gaps[] text
       - rumors[] text
     """
     chunks = [source_text or ""]
@@ -539,85 +535,6 @@ def check_stub_linking(artifact, node_text, rel):
             issues.append(Issue(rel, "error",
                 f"Stub-linking: entity {e.get('id')!r} ({e.get('name')!r}) "
                 f"wrap_path {wp!r} does not appear as a [`{wp}`] link in the node"))
-    return issues
-
-
-# =============================================================================
-# Check 4 — OQ dedup (research_gaps ↔ Open Questions)
-# =============================================================================
-
-def extract_oq_items(node_text):
-    """Return (unresolved_lines, resolved_lines) from the Open Questions section.
-    Strips the leading '- [ ]' / '- [x]' marker."""
-    m = re.search(
-        r"^## Open Questions / Research Gaps\s*$(.*?)(?=^## |\Z)",
-        node_text, re.MULTILINE | re.DOTALL,
-    )
-    if not m:
-        return [], []
-    section = m.group(1)
-    unresolved, resolved = [], []
-    for line in section.splitlines():
-        s = line.strip()
-        if s.startswith("- [ ]"):
-            unresolved.append(s[5:].strip())
-        elif s.startswith("- [x]"):
-            resolved.append(s[5:].strip())
-    return unresolved, resolved
-
-
-def check_oq_dedup(artifact, node_text, rel):
-    issues = []
-    node_unresolved, node_resolved = extract_oq_items(node_text)
-
-    gaps = artifact.get("research_gaps") or []
-    artifact_unresolved = []
-    artifact_retained = []
-    for g in gaps:
-        if not isinstance(g, dict):
-            continue
-        stmt = (g.get("statement") or "").strip()
-        if not stmt:
-            continue
-        if g.get("resolved"):
-            if g.get("retain_as_done"):
-                artifact_retained.append(stmt)
-        else:
-            artifact_unresolved.append(stmt)
-
-    node_u_norm = [normalize_for_compare(s) for s in node_unresolved]
-    art_u_norm = [normalize_for_compare(s) for s in artifact_unresolved]
-    node_r_norm = [normalize_for_compare(s) for s in node_resolved]
-    art_r_norm = [normalize_for_compare(s) for s in artifact_retained]
-
-    # Every unresolved artifact gap must appear in node unresolved items
-    for stmt, nstmt in zip(artifact_unresolved, art_u_norm):
-        if not any(nstmt in u for u in node_u_norm):
-            issues.append(Issue(rel, "error",
-                f'OQ: unresolved research_gap missing from node Open Questions: '
-                f'"{truncate(stmt)}"'))
-
-    # Every node unresolved item must map to an unresolved artifact gap
-    for stmt, nstmt in zip(node_unresolved, node_u_norm):
-        if not any(a in nstmt for a in art_u_norm):
-            issues.append(Issue(rel, "error",
-                f'OQ: node unresolved item does not map to an unresolved '
-                f'research_gap: "{truncate(stmt)}"'))
-
-    # Every retained-DONE artifact gap must appear in node resolved items
-    for stmt, nstmt in zip(artifact_retained, art_r_norm):
-        if not any(nstmt in r for r in node_r_norm):
-            issues.append(Issue(rel, "error",
-                f'OQ: retained-DONE gap missing from node Open Questions: '
-                f'"{truncate(stmt)}"'))
-
-    # Every node resolved item must map to a retained-DONE gap
-    for stmt, nstmt in zip(node_resolved, node_r_norm):
-        if not any(a in nstmt for a in art_r_norm):
-            issues.append(Issue(rel, "error",
-                f'OQ: node resolved item does not map to a retain_as_done '
-                f'research_gap: "{truncate(stmt)}"'))
-
     return issues
 
 
@@ -821,7 +738,6 @@ def review_artifact(artifact_path, quiet=False):
     issues.extend(check_coverage(artifact, node_text, rel))
     issues.extend(check_boundary(artifact_path, node_path, rel))
     issues.extend(check_stub_linking(artifact, node_text, rel))
-    issues.extend(check_oq_dedup(artifact, node_text, rel))
     issues.extend(check_claim_token_drift(artifact, source_text, rel))
     issues.extend(check_description_token_drift(artifact, node_text, source_text, rel))
     return issues, None

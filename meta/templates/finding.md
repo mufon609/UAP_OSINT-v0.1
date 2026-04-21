@@ -87,9 +87,3 @@ created: {{today}}
 ### [`{{entity_path_3}}`]
 
 <!-- Role in the pattern. -->
-
----
-
-## Open Questions / Research Gaps
-
-- [ ] 

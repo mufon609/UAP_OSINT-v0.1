@@ -138,3 +138,36 @@ field to `participant_entry` (`subcommittee-chair`, `ranking-member`,
 it. Free-text `role` stays as the display cell.
 
 Surfaced: Cluster B hearing-event pilot (2026-04-20).
+
+---
+
+### 9. Rename `finding` → `investigation` + redesign type
+
+Mechanical rename plus a design pass. The `finding` type will be
+renamed to `investigation`; the redesign will decide what synthesis
+surface an investigation node carries (the Open Questions / Research
+Gaps section was removed 2026-04-21 — investigations are the intended
+home for that kind of material).
+
+**Rename surfaces** (mechanical):
+- `meta/schema.yaml` — `types.finding` block + ~6 enum-list references
+- Scripts — `DIRS` maps, `TIMELINE_TYPES`/`RUMORS_TYPES` sets,
+  `new.py` argparse, `validate.py` `node_type == "finding"` branch
+  (total: 8 scripts)
+- `meta/templates/finding.md` → `investigation.md`
+- `/findings/` directory (currently empty) → `/investigations/`
+- Top-level docs — README, AGENT, CONTRIBUTING, conventions, overview,
+  research-queue
+
+**Redesign pass** (design decision deferred):
+- What sections does an investigation node carry under the
+  statements-only discipline? Options: hard-anchored claim layer
+  (every sentence verbatim-quote-anchored), quotes-only Key Passages
+  parallel to documents, or cross-reference surface parallel to
+  hearing Witnesses & Testimony. See roadmap "F.7" section.
+- Incorporate the investigation-pathway material that used to live in
+  `research_gaps[]` (what readers expect from an active research
+  thread: concrete methodology, cross-node scope, resolution state).
+
+Surfaced: OQ removal (2026-04-21) — the rename was deliberately
+deferred to a later session rather than bundled with the removal.

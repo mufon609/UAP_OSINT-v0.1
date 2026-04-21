@@ -184,8 +184,3 @@ Fravor observed the [`/events/2004-nimitz-encounter`] as flight lead of the 2 V 
 
 ---
 
-## Open Questions / Research Gaps
-
-- [ ] Fravor's Navy retirement date is not stated in this source — Extract from Fravor's public biographical material or Navy HR records; verify via subsequent on-record statements (e.g., 2017-2023 interviews)
-- [ ] Period of Fravor's command tenure at VFA-41 (only November 2004 is attested in this source) — Navy command-tour records; cross-reference with VFA-41 historical lineage
-- [ ] Full statement set — this artifact draws on one primary source (the 2023 written testimony). Fravor has been on record in the 2017 NYT coverage, the 2017 ABC News Nightline interview, the 2021 CBS 60 Minutes segment, multiple podcast appearances, and the 2023-07-26 oral testimony — none yet extracted for this artifact — Extend the quote set in later iterations (i1+) as each source is archived and extracted. Oral testimony verification is next — archived transcript already exists as a referenced-but-unbuilt stub (/transcripts/2023-07-26-house-fravor)

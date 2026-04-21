@@ -237,8 +237,3 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 ---
 
-## Open Questions / Research Gaps
-
-- [ ] Identify the specific roll-call votes or formal motions that authorized the member waivers ("waived on to the Subcommittee") for Burchett, Luna, Gaetz, Burlison, Ocasio-Cortez, Ogles, and Langworthy — Cross-reference Subcommittee rules in effect for the 118th Congress with the waiver language at transcript lines 166-171 and 2050-2052. If a committee-level roll-call vote preceded the hearing, the roll call would be filed with the full Committee on Oversight and Accountability.
-- [ ] Archive the three documents Representative Burchett entered into the record — George Knapp's statement, Jeremy Corbell's report "The UAP Puzzle", and the DIRD on vacuum engineering — as primary-source documents in their own right — The Knapp statement and Corbell report were submitted physically; locate their text versions. The DIRD on vacuum engineering corresponds to an existing /documents/dird-puthoff-vacuum-metric-engineering-2010 slug and should cross-reference there.
-- [ ] Verify whether all three witnesses' sworn testimony at this hearing independently corroborates any atomic claim that would warrant a finding node — After /transcripts/2023-07-26-house-graves and /transcripts/2023-07-26-house-grusch are built, compare their content against /transcripts/2023-07-26-house-fravor for claims attested by 2 or more witnesses (for example government handling of UAP reporting, stigma against pilots reporting). A 3-node finding threshold is met if any cross-witness pattern emerges.

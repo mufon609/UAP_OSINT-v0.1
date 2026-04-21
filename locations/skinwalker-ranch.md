@@ -334,13 +334,3 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 
 ---
 
-## Open Questions / Research Gaps
-
-- [ ] Exact Uintah County deed recording number and date for the Bigelow-to-Sherman transfer (September 1996) — Query Uintah County Recorder's office for deed recording index 1996 ADAMANTIUM, BIGELOW, or SHERMAN; archive the original recorded deed document
-- [ ] Exact Uintah County Recorder deed recording number(s) and date(s) for the Bigelow-to-Adamantium transfer (circa April 2016) — the 7 assessor-level parcel records are archived (Serials 150040001-3, 150050001/2/4, 140340003) but the underlying recorded deed documents remain unarchived — Query Uintah County Recorder's office (separate from Assessor) for ADAMANTIUM REAL ESTATE 2016 grantee index entries; archive the recorded deed(s) by entry number
-- [ ] NIDS published research reports (1996-2004) — primary-source archival — Identify and archive NIDS reports published during the 1996-2004 research period; the 2002 NIDS wayback capture shows web publication was in scope but the reports themselves are not currently archived in this repository
-- [ ] Sherman family nondisclosure agreement full text — 1996 agreement with Bigelow — Unlikely to ever be public; Sherman-era primary research limited to pre-NDA sources (Deseret 1996 articles June-December)
-- [ ] BAASS internal Skinwalker investigation documents (2008-2012) — FOIA the DIA for AAWSAP deliverables involving the ranch; cross-reference Shellenberger 2024 testimony footnotes to Skinwalkers at the Pentagon (2021) for specific document references
-- [ ] Registration date and Delaware filing record for Adamantium Real Estate LLC — Query Delaware Division of Corporations for Adamantium Real Estate LLC registration; archive the entity formation record
-- [ ] USPTO trademark record for SKINWALKER RANCH (Serial 87336178, Reg 6034085) — archive as primary-source legal document — Query USPTO TSDR for the full file wrapper; archive the registration certificate PDF
-- [ ] Is the 1996 Two-Section 24-foot Wide 1344-sqft structure on parcel 150040001 the observation building Bigelow erected per Deseret News October 1996? — Cross-reference the 1996 construction on parcel 150040001 (per Uintah County assessor records) with the Deseret News October 1996 article's statement that 'Bigelow has erected an observation building'. High-probability match based on construction year alignment; verification would require Bigelow-era building permits or NIDS internal documentation

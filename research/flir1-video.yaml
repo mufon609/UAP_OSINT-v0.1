@@ -114,25 +114,4 @@ entities_referenced:
   wrap_path: /transcripts/2023-07-26-house-fravor
   context_summary: Primary-source attestation of the follow-on crew member name "Chad" (q34), the APG-73 jamming mechanics (q24), and the passive targeting-pod path to the video
 naming_quirks: []
-research_gaps:
-- id: rg1
-  added_date: '2026-04-20'
-  statement: Extract verbatim visible HUD text (altitude, heading, range, targeting-pod mode indicators) at specific timestamps across the 76.30-second video
-  methodology: Frame-by-frame visual inspection of the archived MP4. HUD text is a contributor-verifiable verbatim extraction (validate.py check 11 returns warn on .mp4 since pdftotext does not handle video; contributor takes responsibility for verbatim correctness). Each timestamp quote entry carries a source.location of the form "timestamp MM:SS, position" per F.4 Decision 1 flexible-location shape.
-  resolved: false
-- id: rg2
-  added_date: '2026-04-20'
-  statement: Transcribe cockpit audio if present across the 76.30-second video
-  methodology: Extract audio track from the archived MP4 via ffmpeg (install required) or manual playback. Navy-crew speech during targeting-pod operation typically includes call-sign checks, sensor-mode announcements, and tracking observations. Each speech quote entry carries source.location "timestamp MM:SS-MM:SS" per F.4 Decision 1.
-  resolved: false
-- id: rg3
-  added_date: '2026-04-20'
-  statement: Confirm whether the MP4's internal container creation timestamp (2007-09-18T10:18:36Z) corresponds to the first "unauthorized release" DoD 2020 statement acknowledges
-  methodology: The DoD 2020 press release acknowledges "unauthorized releases in 2007" without naming the venue. Search archived 2007-era forums and UFO-research mailing lists (rense.com, abovetopsecret.com, openminds.tv) for first-known circulation of FLIR1; compare any recovered 2007-era files to this MP4 (sha256 eff0ffa55bcafee5dd7b0c4668c5bb21a9617feae8f0d01912a8c73a859dc170) to test whether DoD's 2020 authorized release used the same file that leaked in 2007.
-  resolved: false
-- id: rg4
-  added_date: '2026-04-20'
-  statement: Confirm whether "Chad" (Fravor oral testimony q34) corresponds to Chad Underwood as the follow-on F/A-18F crew member who captured the video
-  methodology: Cross-reference this node's provenance chain with NAVAIR VFA-41 squadron records for November 2004 sortie rosters; check 2017-era New York Times / NYmag reporting on the video for contemporaneous crew identification. Parallel research_gap on /transcripts/2023-07-26-house-fravor (rg1) and /events/2004-nimitz-encounter rumor list.
-  resolved: false
 media_versioning: []

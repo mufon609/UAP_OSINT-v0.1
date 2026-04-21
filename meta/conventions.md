@@ -244,8 +244,7 @@ raises — without adjudicating intent or assigning responsibility.
 The repository documents observed facts from primary sources and does
 not adjudicate intent, motivation, or compliance with norms external to
 the documentary record. Analytical sections (Institutional Assessment,
-Credibility Notes, findings) frame observations in neutral terms and
-flag interpretive questions as Open Questions.
+Credibility Notes, findings) frame observations in neutral terms.
 
 This principle is repository-wide. Individual nodes and sections do not
 need to recite neutrality language per cell — the principle stated here
@@ -267,23 +266,6 @@ Nodes are never closed and source data is never overwritten.
 
 Git log is the edit-history record. In-document changelogs are not
 maintained — `git log --follow` on the node file is authoritative.
-
----
-
-## Open Questions
-
-The section heading is `## Open Questions / Research Gaps`. Both halves
-are load-bearing: open questions are immediate gaps; research gaps are
-structural investigation pathways (cross-corpus audits, mechanism
-questions, diagnostic tests of hypotheses). Both belong in this section.
-
-Items use markdown checkboxes. Resolved items are removed; the
-resolution goes into the node body at its natural home — Description,
-Key Passages on a document node, or the node-type-specific structured
-section on synthesis nodes (Claim Inventory, Program Involvement,
-Publication Record, Institutional Assessment, etc). Retain
-`- [x] DONE` only for null findings, provenance notes, or methodology
-outcomes where the closure itself is the useful record.
 
 ---
 

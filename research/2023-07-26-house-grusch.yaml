@@ -652,32 +652,6 @@ naming_quirks:
   source_path: government/congress-gov-house-hearing-transcript-20230726.pdf
   resolution: preserve-as-sic-in-quotes
   note: Grusch refers to the outlet as "News Nation" (two words) in multiple exchanges; the cable channel's canonical brand is "NewsNation" (one word). Preserved verbatim where quoted (q38); the network's canonical form goes into the wrap_path and entity name.
-research_gaps:
-- id: rg1
-  added_date: '2026-04-20'
-  statement: Locate and archive Grusch's May 2022 PPD-19 Urgent Concern filing to the ICIG (the filing itself is the primary evidentiary document behind his whistleblower status and is referenced in q3, q40)
-  methodology: Submit FOIA to the Intelligence Community Inspector General for the PPD-19 urgent concern filing by David Charles Grusch dated May 2022; cross-check reporting from Ross Coulthart and The Debrief for any already-surfaced portions or filing metadata
-  resolved: false
-- id: rg2
-  added_date: '2026-04-20'
-  statement: Verify Grusch's co-authorship disclosure (q33) against the FOIA'd UAP Task Force 2019 Security Classification Guide already archived on /organizations/uaptf
-  methodology: Read the FOIA'd UAP SCG in sources/government/; identify author/approval signatures and signature blocks; compare to Grusch's UAPTF tenure (2019-2021) and role (co-lead analyst at NGA, NRO reservist-capacity Task Force member)
-  resolved: false
-- id: rg3
-  added_date: '2026-04-20'
-  statement: Locate and archive the George Washington University National Security Archive's 2013 declassification of the 1971 U.S.-Soviet nuclear war risk reduction agreement's specific red-line flash message provisions (referenced in q41)
-  methodology: Check the National Security Archive holdings at nsarchive.gwu.edu for the 2013 declassification release on "agreement on measures to reduce the risk of outbreak of nuclear war"; archive to /sources/government/ and register in manifest; cross-reference against the publicly available 1971 treaty text
-  resolved: false
-- id: rg4
-  added_date: '2026-04-20'
-  statement: Cross-reference Grusch's April 2022 classified conversation with Kirkpatrick (q20) against Kirkpatrick's own testimony and AARO timeline for confirmation or denial of pre-AARO contact
-  methodology: Check Kirkpatrick's 2023-04-19 SASC testimony transcript, his subsequent departure-era interviews, and any publicly available AARO records for discussion of pre-AARO communication with Grusch
-  resolved: false
-- id: rg5
-  added_date: '2026-04-20'
-  statement: Surface public records of Grusch's approximately 11.5 hours of intel-committee testimony (q31)
-  methodology: Check House Permanent Select Committee on Intelligence (HPSCI) and Senate Select Committee on Intelligence (SSCI) public records and press readouts for 2023 UAP-related witness testimony summaries; check Grusch's Debrief and NewsNation interviews for details on the closed-door exchange
-  resolved: false
 speakers:
 - id: s1
   added_date: '2026-04-20'

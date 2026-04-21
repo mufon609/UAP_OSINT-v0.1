@@ -498,32 +498,6 @@ naming_quirks:
   source_path: government/congress-gov-house-hearing-transcript-20230726.pdf
   resolution: preserve-as-sic-in-quotes
   note: pdftotext rendered the document's straight double quotes around the callsign "FOBS" as paired smart-single-quote marks (two left-single followed by two right-single). The canonical display form for a Navy callsign is in straight double quotes. Preserved verbatim in q1.
-research_gaps:
-- id: rg1
-  added_date: '2026-04-20'
-  statement: Locate and archive the U.S. Navy Range Fouler Report form or procedural documentation (referenced in q28 as the existing UAP reporting procedure)
-  methodology: Submit FOIA to U.S. Navy OPNAV aviation safety program offices for the Range Fouler Report template, procedural guidance, and any post-2014 UAP-adapted revisions; cross-reference with congressional testimony archives for any prior public-record mentions
-  resolved: false
-- id: rg2
-  added_date: '2026-04-20'
-  statement: Corroborate the 2003 Vandenberg Air Force Base 100-yard red square incident (q22) with public-record primary sources beyond Americans for Safe Aerospace witness testimony
-  methodology: Check Vandenberg AFB historical incident reports via FOIA; search Boeing contractor archives for 2003-timeframe safety or anomalous-object reports at the launch facility; cross-reference with 2003 Santa Maria / Lompoc local press coverage for anomalous-object sightings
-  resolved: false
-- id: rg3
-  added_date: '2026-04-20'
-  statement: Surface public documentation of the American Institute of Aeronautics and Astronautics UAP integration committee (q26) — formation date, charter, membership, and published outputs
-  methodology: Check aiaa.org announcements and press releases for a UAP-focused integration committee; search AIAA aerospace technical papers and annual forum proceedings for UAP-related work post-2023
-  resolved: false
-- id: rg4
-  added_date: '2026-04-20'
-  statement: Identify public-record disclosures of commercial aviators receiving cease and desist orders re UAP (q24)
-  methodology: Check aviation-industry whistleblower forums and FAA administrative records for commercial pilot cease-and-desist incidents tied to UAP disclosure; cross-reference with Americans for Safe Aerospace testimony archive
-  resolved: false
-- id: rg5
-  added_date: '2026-04-20'
-  statement: Corroborate Graves's approximately 5 percent UAP reporting estimate (q31) with post-hearing survey data or AARO Historical Record Report annex data
-  methodology: Check AARO HRR Vol I annex reporting-rate data and any post-2023 commercial pilot surveys on UAP reporting propensity; cross-reference with Americans for Safe Aerospace witness intake data
-  resolved: false
 speakers:
 - id: s1
   added_date: '2026-04-20'

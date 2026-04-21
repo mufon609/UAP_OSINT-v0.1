@@ -8,8 +8,7 @@ Structural checks only — does NOT compare against the target node
 Checks (per schema.yaml research-artifact.invariants):
   - Required top-level keys present (id, type, schema_version, target_node,
     status, created, description, primary_sources, document_intrinsic,
-    context_extrinsic, quotes, claims, entities_referenced, naming_quirks,
-    research_gaps)
+    context_extrinsic, quotes, claims, entities_referenced, naming_quirks)
   - id matches file path
   - type == 'research-artifact'
   - schema_version ∈ schema.compatible_with
@@ -160,7 +159,7 @@ REQUIRED_TOP_LEVEL_KEYS = [
     "id", "type", "schema_version", "target_node", "status", "created",
     "primary_sources", "document_intrinsic",
     "context_extrinsic", "quotes", "claims", "entities_referenced",
-    "naming_quirks", "research_gaps",
+    "naming_quirks",
 ]
 
 # `description` is required on all artifact types EXCEPT person. Person
@@ -193,7 +192,6 @@ ALL_ENTRY_SECTIONS = [
     "claims",
     "entities_referenced",
     "naming_quirks",
-    "research_gaps",
     # Type-conditional
     "rumors",
     "timeline",
@@ -370,7 +368,7 @@ def check_yaml_hash_truncation(path, rel):
 # inner `: ` as a nested key/value separator, either parse-erroring or
 # silently mis-parsing the scalar. Contributors hit this with prose
 # titles that contain a colon ("We are not alone: The UFO whistleblower
-# speaks"), research_gap methodologies with sub-clauses, and anywhere
+# speaks"), descriptions / notes with sub-clauses, and anywhere
 # a natural-language subtitle appears in an unquoted scalar.
 #
 # Heuristic: match the structural shape; skip the two most common
@@ -772,7 +770,6 @@ def validate_artifact(path, schema, manifest_paths):
     issues.extend(check_claims(rel, data, manifest_paths))
     issues.extend(check_entities(rel, data))
     issues.extend(check_naming_quirks(rel, data, manifest_paths))
-    issues.extend(check_research_gaps(rel, data, manifest_paths))
     if "rumors" in data:
         issues.extend(check_rumors(rel, data))
     if "timeline" in data:
@@ -1099,34 +1096,6 @@ def check_naming_quirks(rel, data, manifest_paths):
             issues.append(Issue(rel, "error",
                 f"naming_quirks[{i}] ({nq.get('id')!r}): source_path {sp!r} "
                 f"not in sources/manifest.yaml"))
-    return issues
-
-
-def check_research_gaps(rel, data, manifest_paths):
-    issues = []
-    gaps = _entries(data, "research_gaps")
-    issues.extend(_check_unique_ids(rel, gaps, "research_gaps"))
-    for i, g in enumerate(gaps):
-        if not isinstance(g, dict):
-            continue
-        issues.extend(_check_lifecycle_fields(rel, g, "research_gaps", i))
-        if "statement" not in g:
-            issues.append(Issue(rel, "error",
-                f"research_gaps[{i}] ({g.get('id')!r}): missing required 'statement'"))
-        if "resolved" not in g:
-            issues.append(Issue(rel, "error",
-                f"research_gaps[{i}] ({g.get('id')!r}): missing required 'resolved' (bool)"))
-        # When resolved=True, require resolution fields
-        if g.get("resolved") is True:
-            for field in ["resolved_date", "resolving_source", "resolution_summary"]:
-                if not g.get(field):
-                    issues.append(Issue(rel, "error",
-                        f"research_gaps[{i}] ({g.get('id')!r}): resolved=true requires {field!r}"))
-            rs = g.get("resolving_source")
-            if isinstance(rs, dict) and rs.get("path") and rs["path"] not in manifest_paths:
-                issues.append(Issue(rel, "error",
-                    f"research_gaps[{i}] ({g.get('id')!r}): resolving_source.path "
-                    f"{rs['path']!r} not in sources/manifest.yaml"))
     return issues
 
 

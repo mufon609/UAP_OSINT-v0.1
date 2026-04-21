@@ -378,37 +378,7 @@ apply only to hand-authored unsupported types:
   resolution should be `preserve-as-sic-in-quotes` so rendered node
   prose knows to use canonical form outside the quote.
 
-### Step 10. Populate `research_gaps` (bounded agent task T5)
-
-**Agent task T5:**
-- **Input:** everything populated so far + any contextual knowledge
-  about what readers might expect vs what's in the source
-- **Output:** YAML fragment of `research_gaps:` — concrete
-  investigation pathways raised by this source (things it hints at but
-  doesn't resolve; references to other sources worth cross-checking;
-  unresolved naming questions; etc.)
-  Each entry:
-  - `id` (rg1, rg2, …)
-  - `statement` (the question/gap in one sentence)
-  - `methodology` (how to resolve — be specific, not "research more")
-  - `resolved: false` (on initial build)
-  - Standard lifecycle fields
-
-**Discipline:**
-- Every gap is actionable. "Archive the report Fravor mentions as
-  'available on the internet'" is actionable; "Investigate UAP further"
-  is not.
-- Naming quirks with unresolved resolution automatically imply a
-  research gap; record separately so the research_gap can be independently
-  tracked/closed.
-- Keep `methodology` concise (one or two sentences). The renderer
-  concatenates `statement — methodology` into a single Open-Questions
-  line; long multi-sentence methodologies produce unwieldy lines.
-  If the methodology truly needs a paragraph of explanation, capture
-  that in a linked finding node or in the target node's Description,
-  and leave the research_gap methodology as the actionable pointer.
-
-### Step 11. Populate `rumors` (bounded agent task T6, conditional)
+### Step 10. Populate `rumors` (bounded agent task T6, conditional)
 
 **Only when target node type is `person`, `organization`, `event`, or
 `location`.** Document nodes, transcripts, media, and findings do not
@@ -438,7 +408,7 @@ carry a rumors section.
   changes to `primary-source-identified`, a new claim entry is added,
   and the rumor entry is kept as audit history.
 
-### Step 12. Validate the research artifact
+### Step 11. Validate the research artifact
 
 ```
 python3 scripts/validate-research.py research/{slug}.yaml
@@ -455,9 +425,7 @@ contains a `space #` sequence — YAML silently treats everything after
 referring to "check #11", "Issue #3", "channel #23", numeric ordinals
 like "serial #42". Fix: quote the entire value (single or double
 quotes), OR rewrite without the `#`, OR use a YAML literal block (`|`)
-if the content already spans multiple lines. F.4c surfaced this on
-a research_gap methodology field; the pre-parse check was added to
-prevent silent content loss.
+if the content already spans multiple lines.
 
 **Prose-drift check #16 warnings — review before leaving Phase I.**
 On person and event artifacts, the validator runs a token-drift check
@@ -486,9 +454,9 @@ warning requires real resolution, not synthesis-acceptance:
   `uap_relevance`, `credibility_notes`) — zero warnings is the target.
   Resolve each unmatched token by either (a) rewriting to use source
   vocabulary exactly, or (b) capturing the source-vs-prose variance
-  as structured evidentiary data (naming_quirks, rumors, a
-  research_gap, a timeline entry, a claim). Rationalizing warnings as
-  "legitimate synthesis vocabulary" defeats the check.
+  as structured evidentiary data (naming_quirks, rumors, a timeline
+  entry, a claim). Rationalizing warnings as "legitimate synthesis
+  vocabulary" defeats the check.
 - **Per-entry synthesis content notes** — `ownership_timeline.note`,
   `uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
   `media_versioning.note`, and `vouching_chain.attestation`. These
@@ -691,8 +659,6 @@ This:
    **All renderer-supported types** close with:
    - `## Associated Nodes` — placeholder; filled by `associate.py`
      (auto-generated from body `[`/path`]` links)
-   - `## Open Questions / Research Gaps` — from unresolved
-     `research_gaps[]` + `retain_as_done: true` resolved gaps
 
 3. Preserves the node's existing frontmatter verbatim.
 4. Writes the regenerated body to `{type}/{slug}.md`, overwriting the
@@ -746,21 +712,17 @@ The script runs four mechanical checks:
    node, or the node was hand-edited.
 3. **Stub-linking** — every `entities_referenced[].wrap_path` appears
    as a `[`/path`]` link in the node body.
-4. **OQ deduplication** — items in `## Open Questions / Research Gaps`
-   map 1:1 to unresolved research_gaps (plus any `retain_as_done: true`
-   resolved gaps).
 
 Must exit 0. Fix failures by updating the **artifact** (add the missing
-quote / entity / gap, or remove orphan node content; on synthesis
-artifacts, add the missing claim) and re-running `build-from-research.py`
-to resync. Never hand-edit the node to silence a coverage error.
+quote / entity, or remove orphan node content; on synthesis artifacts,
+add the missing claim) and re-running `build-from-research.py` to
+resync. Never hand-edit the node to silence a coverage error.
 
 ### Step 2. Semantic review (agent-assisted)
 
 Mechanical checks catch structural drift but not narrative coherence —
 whether the Description reads cleanly, whether the Key Passages
-collectively tell a coherent evidentiary picture, whether Open
-Questions are genuinely actionable.
+collectively tell a coherent evidentiary picture.
 
 After `review-coverage.py` passes, read the regenerated node
 top-to-bottom. For any issue: fix the **artifact**, not the node.
@@ -824,8 +786,7 @@ Each task has clear I/O and can be run as a focused agent invocation:
 | T2 — Extract quotes | Plaintext | YAML `quotes:` fragment |
 | T3 — Identify entities | Plaintext + quotes + claims | YAML `entities_referenced:` fragment |
 | T4 — Naming quirks | Plaintext + quotes | YAML `naming_quirks:` fragment |
-| T5 — Research gaps | Everything above | YAML `research_gaps:` fragment |
-| T6 — Rumors (conditional) | Everything above + external context | YAML `rumors:` fragment |
+| T5 — Rumors (conditional) | Everything above + external context | YAML `rumors:` fragment |
 
 Tasks are **composable** (T3 can use T1 + T2's output). They are
 **validated by humans** before being merged into the research artifact.

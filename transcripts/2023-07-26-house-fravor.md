@@ -607,11 +607,3 @@ Fravor's opening statement — his service as retired Commander in the United St
 ### Documents
 
 - [`/documents/written-testimony-fravor-2023`]
-
----
-
-## Open Questions / Research Gaps
-
-- [ ] Confirm whether "Chad" (named in Fravor's oral testimony at q34 as the follow-on crew member who captured the 90-second video) refers to Chad Underwood — When the /media/flir1-video node is built, cross-reference its provenance chain (DoD 2017 release metadata) with NYT 2017 reporting and Navy VFA-41 squadron records for the name of the F-18 crew that captured FLIR1. The rumor is tracked on the /events/2004-nimitz-encounter artifact; resolution here would upgrade it from rumor to attested fact.
-- [ ] Locate and archive the "unofficial official report" that Fravor (q10) states "came out that is now on the internet" — Search Wayback, FAS, and Black Vault for an "unofficial official report" on the 2004 Nimitz encounter. Cross-reference with the parallel research_gap rg4 on the written-testimony-fravor-2023 artifact (where the same report is mentioned at ¶8 of the written statement as "available on the internet").
-- [ ] Resolve whether "ATIP program" (Fravor oral q9) refers to AATIP or a distinct program — Cross-check against primary-source documentation naming the program during the 2007-2012 window (DIA memos, 2009 Reid brief, AARO Historical Record Report Volume I). Parallel to research_gap rg2 on the companion written-testimony-fravor-2023 artifact.

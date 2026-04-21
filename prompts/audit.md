@@ -34,7 +34,7 @@ The audit target is: **{PATH}**  (ask the user if not specified)
      `media_versioning.note`, `vouching_chain.attestation`) — zero
      warnings is the target. Each unmatched token either resolves to
      source-matched prose OR gets captured as structured evidentiary
-     data (naming quirk, rumor, research_gap).
+     data (naming quirk, rumor, claim).
    - **Structural labels + cross-reference descriptor notes** are not
      scanned by check #16. Role titles, short relationship
      descriptors, `timeline[].event`, `use_status`, `activity`, and
@@ -57,12 +57,7 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    check.
 7. **Associated Nodes freshness** — run
    `python3 scripts/associate.py {path}` to regenerate.
-8. **Open Questions realism** — each item should have concrete
-   methodology. Remove items that are truly unresolvable-and-trivial;
-   keep anything that names an investigation pathway. Unresolved items
-   trace back to `research_gaps[].statement` in the artifact; fix
-   there, not in the node.
-9. **Cross-node consistency** — check that claims in this node agree
+8. **Cross-node consistency** — check that claims in this node agree
    with claims in nodes it references. Flag any unexplained divergence.
    For naming quirks (e.g., "Lue" alias-of-record for Elizondo),
    verify the quirk is tracked consistently across all artifacts that
@@ -98,8 +93,6 @@ not direct edits to the node body. Pattern:
 
 ## Do not
 
-- Bulk-delete Open Questions without spot-checking each against body
-  content and the corresponding `research_gaps[]` entry
 - Remove Flagged items without verifying them against a new primary
   source
 - Introduce new claims without new archived sources

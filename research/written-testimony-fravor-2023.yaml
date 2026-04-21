@@ -366,28 +366,3 @@ naming_quirks:
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
   note: Source drops the period after 'S'. Minor typographical quirk; use canonical form outside quoted passages.
-research_gaps:
-- id: rg1
-  added_date: '2026-04-17'
-  statement: Cross-reference Fravor's written testimony against his oral testimony at [`/transcripts/2023-07-26-house-fravor`] to document Material Differences
-  methodology: Once the hearing transcript node is built, review oral Q&A for biographical or narrative content not present in this written statement (service dates, flight hours, academic credentials, accident-investigator role — all mentioned in the oral Q&A transcript but not here)
-  resolved: true
-  resolved_date: '2026-04-20'
-  resolution_summary: Moot — Material Differences feature eliminated from hearing-transcript nodes (see roadmap.md "Post-F.3 — Material Differences elimination" section). Cross-entity written-vs-oral comparative analysis will be reshaped under the F.7 finding-node renderer when it ships.
-  retain_as_done: false
-  resolving_source: meta/toolkit-notes/roadmap.md (Post-F.3 — Material Differences elimination section, 2026-04-20)
-- id: rg2
-  added_date: '2026-04-17'
-  statement: Resolve whether "ATIP (Anomalous Threat Identification Program)" in Fravor's written testimony refers to AATIP or a distinct program
-  methodology: Examine other primary-source documents that name the program during the 2007–2012 window. Relevant archived sources include DIA memos and the Reid brief; cross-check program names and Elizondo's stated role
-  resolved: false
-- id: rg3
-  added_date: '2026-04-17'
-  statement: Confirm the identity of the crew member who captured the approximately 90-second video referenced at ¶7
-  methodology: Written testimony refers to "one of my crews" without naming. Cross-reference against oral hearing testimony, NYT 2017 reporting, or Navy squadron records if obtainable
-  resolved: false
-- id: rg4
-  added_date: '2026-04-17'
-  statement: Locate and archive the "Unofficial Official Report" Fravor states is "available on the internet" (¶8)
-  methodology: Search public web archives (Wayback, FAS, Black Vault) for an "Unofficial Official Report" on the 2004 Nimitz encounter. Check whether this is the same report sometimes cited as the "Nimitz Executive Summary"
-  resolved: false

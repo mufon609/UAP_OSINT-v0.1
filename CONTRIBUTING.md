@@ -237,7 +237,7 @@ See `meta/conventions.md` for full routing (which section of which node).
 ## What NOT to do
 
 - **Don't mark confirmed without a primary source.** "Everyone knows this" is not a source.
-- **Don't write speculative prose.** Put it in Open Questions or the research queue.
+- **Don't write speculative prose.** If it doesn't trace to a primary source, it belongs in the research queue, not the node.
 - **Don't overwrite existing content.** If new info contradicts, keep the original and add alongside with Superseded By or Contradicted By.
 - **Don't conflate sources.** A news article reporting a government statement is not the same as the government statement.
 - **Don't add secondary-source summaries as evidence.** Use them to identify leads (research queue), never to confirm.

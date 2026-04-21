@@ -254,12 +254,3 @@ The document is a primary source for what Grusch stated in writing for submissio
 ### Documents
 
 - [`/documents/ppd-19`]
-
----
-
-## Open Questions / Research Gaps
-
-- [ ] Identify whether the "multi-decade UAP crash retrieval and reverse engineering program" Grusch references (Opening ¶11) corresponds to any named program in other primary sources — Cross-reference against AARO Historical Record Report Vol I, DIRD memos, ICIG unclassified determinations, and Grusch's oral Q&A at the same hearing. Note that the written statement never names the program
-- [ ] Locate the ICIG's determination on Grusch's PPD-19 Urgent Concern filing — ICIG unclassified correspondence or public statements; House Oversight committee materials submitted during the 2023-07-26 hearing cycle; FOIA the ICIG for a releasable version of the determination if no public record exists
-- [ ] Document the specific retaliation Grusch references (Opening ¶13) — the written statement asserts retaliation but provides no specifics — Cross-reference against his oral Q&A at the same hearing (/transcripts/2023-07-26-house-grusch — not yet built) and subsequent interviews (NewsNation) for enumerated retaliation incidents
-- [ ] Identify the person or office behind the PDF Author metadata field "gscie" on this document — Cross-reference against staff identifiers in House Oversight committee submissions from the same cycle; check other archived PDFs submitted by Grusch or his counsel for the same metadata signature. Minor provenance question — does not affect authorship of the document's content, which is unambiguously Grusch's first-person statement

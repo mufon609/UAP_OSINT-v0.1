@@ -583,13 +583,3 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 ### Locations
 
 - [`/locations/vandenberg-afb`]
-
----
-
-## Open Questions / Research Gaps
-
-- [ ] Locate and archive the U.S. Navy Range Fouler Report form or procedural documentation (referenced in q28 as the existing UAP reporting procedure) — Submit FOIA to U.S. Navy OPNAV aviation safety program offices for the Range Fouler Report template, procedural guidance, and any post-2014 UAP-adapted revisions; cross-reference with congressional testimony archives for any prior public-record mentions
-- [ ] Corroborate the 2003 Vandenberg Air Force Base 100-yard red square incident (q22) with public-record primary sources beyond Americans for Safe Aerospace witness testimony — Check Vandenberg AFB historical incident reports via FOIA; search Boeing contractor archives for 2003-timeframe safety or anomalous-object reports at the launch facility; cross-reference with 2003 Santa Maria / Lompoc local press coverage for anomalous-object sightings
-- [ ] Surface public documentation of the American Institute of Aeronautics and Astronautics UAP integration committee (q26) — formation date, charter, membership, and published outputs — Check aiaa.org announcements and press releases for a UAP-focused integration committee; search AIAA aerospace technical papers and annual forum proceedings for UAP-related work post-2023
-- [ ] Identify public-record disclosures of commercial aviators receiving cease and desist orders re UAP (q24) — Check aviation-industry whistleblower forums and FAA administrative records for commercial pilot cease-and-desist incidents tied to UAP disclosure; cross-reference with Americans for Safe Aerospace testimony archive
-- [ ] Corroborate Graves's approximately 5 percent UAP reporting estimate (q31) with post-hearing survey data or AARO Historical Record Report annex data — Check AARO HRR Vol I annex reporting-rate data and any post-2023 commercial pilot surveys on UAP reporting propensity; cross-reference with Americans for Safe Aerospace witness intake data

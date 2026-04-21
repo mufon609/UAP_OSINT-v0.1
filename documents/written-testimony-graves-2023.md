@@ -399,13 +399,3 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 ### Documents
 
 - [`/documents/odni-preliminary-assessment-2021`]
-
----
-
-## Open Questions / Research Gaps
-
-- [ ] Cross-check the UAP Task Force 2021 "11 near misses" claim against the ODNI Preliminary Assessment of June 2021 — Retrieve the archived ODNI report at [`/documents/odni-preliminary-assessment-2021`] and confirm whether the "11 near misses" figure appears and in what framing. Footnote URL in source spells "Prelimary" [sic] — may be source typo
-- [ ] Locate and archive the April 2022 FAA alert about the West Virginia commercial-aircraft double attitude / autopilot failure — Search FAA public-records or FOIA channels for an April 2022 advisory to operation managers citing the West Virginia incident. Alert is referenced in Graves's testimony but not linked
-- [ ] Verify Kirkpatrick's statements about "metallic orbs" at Mach 2 against the actual NASA Independent Study Team public meeting transcript/video — Retrieve NASA IST public meeting records; confirm Kirkpatrick's quoted language in c22. Cross-reference Congressional testimony for Title 10/50 in c23
-- [ ] Identify Kirkpatrick's "first public interview" from the week before the July 26, 2023 hearing referenced in c24 — Week of approximately 2023-07-17 to 2023-07-24. Search press archives for Kirkpatrick interviews that quote "has what he needs" and "believes them now"
-- [ ] Identify the specific 2014 pivotal-incident flight crew, aircraft tail numbers, and date in Warning Area W-72 referenced at ¶9 — Graves does not name the pilots or date. Cross-reference against NAS Oceana operational records or Fravor/Dietrich/Graves oral testimony that may supply specifics

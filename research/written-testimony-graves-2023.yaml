@@ -339,38 +339,3 @@ naming_quirks:
   source_path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
   note: Source uses the shorter "F-18" in its identity paragraph (¶2) but the more precise "F/A-18F Super Hornets" in ¶7 when describing the airframe. Not a typo — shorthand in identity context.
-research_gaps:
-- id: rg1
-  added_date: '2026-04-17'
-  statement: Cross-reference Graves's written testimony against his oral testimony and Q&A at [`/transcripts/2023-07-26-house-graves`] for Material Differences
-  methodology: When the hearing transcript node is built, compare biographical details, narrative ordering, and new factual claims that appear only in oral Q&A
-  resolved: true
-  resolved_date: '2026-04-20'
-  resolution_summary: Moot — Material Differences feature eliminated from hearing-transcript nodes (see roadmap.md "Post-F.3 — Material Differences elimination" section). Cross-entity written-vs-oral comparative analysis will be reshaped under the F.7 finding-node renderer when it ships.
-  retain_as_done: false
-  resolving_source: meta/toolkit-notes/roadmap.md (Post-F.3 — Material Differences elimination section, 2026-04-20)
-- id: rg2
-  added_date: '2026-04-17'
-  statement: Cross-check the UAP Task Force 2021 "11 near misses" claim against the ODNI Preliminary Assessment of June 2021
-  methodology: Retrieve the archived ODNI report at [`/documents/odni-preliminary-assessment-2021`] and confirm whether the "11 near misses" figure appears and in what framing. Footnote URL in source spells "Prelimary" [sic] — may be source typo
-  resolved: false
-- id: rg3
-  added_date: '2026-04-17'
-  statement: Locate and archive the April 2022 FAA alert about the West Virginia commercial-aircraft double attitude / autopilot failure
-  methodology: Search FAA public-records or FOIA channels for an April 2022 advisory to operation managers citing the West Virginia incident. Alert is referenced in Graves's testimony but not linked
-  resolved: false
-- id: rg4
-  added_date: '2026-04-17'
-  statement: Verify Kirkpatrick's statements about "metallic orbs" at Mach 2 against the actual NASA Independent Study Team public meeting transcript/video
-  methodology: Retrieve NASA IST public meeting records; confirm Kirkpatrick's quoted language in c22. Cross-reference Congressional testimony for Title 10/50 in c23
-  resolved: false
-- id: rg5
-  added_date: '2026-04-17'
-  statement: Identify Kirkpatrick's "first public interview" from the week before the July 26, 2023 hearing referenced in c24
-  methodology: Week of approximately 2023-07-17 to 2023-07-24. Search press archives for Kirkpatrick interviews that quote "has what he needs" and "believes them now"
-  resolved: false
-- id: rg6
-  added_date: '2026-04-17'
-  statement: Identify the specific 2014 pivotal-incident flight crew, aircraft tail numbers, and date in Warning Area W-72 referenced at ¶9
-  methodology: Graves does not name the pilots or date. Cross-reference against NAS Oceana operational records or Fravor/Dietrich/Graves oral testimony that may supply specifics
-  resolved: false
