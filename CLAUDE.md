@@ -19,8 +19,7 @@ In order:
 1. `README.md` — what this repository is
 2. `meta/conventions.md` — evidentiary discipline and structural rationale
 3. `meta/schema.yaml` — machine-readable spec (types, kinds, archetypes, required sections, vocabularies)
-4. `CONTRIBUTING.md` — how to build a node, source archival workflow
-5. `meta/topic/research-queue.md` — current priority build queue
+4. `meta/topic/research-queue.md` — current priority build queue
 
 Don't skip. Governance docs change between sessions.
 
@@ -118,10 +117,11 @@ quote-verification), and is committed. Batch node construction caused the
 
 **Source-read-first — hard rule.** Every `✅ Confirmed — verified verbatim`
 quote must rest on text you extracted from the archived source file in
-this session (via `pdftotext` for PDFs, direct read for HTML/TXT). Not
-training knowledge. The validator now mechanically verifies this — but
-write the node correctly to begin with by following `prompts/build.md`
-Step 4–6 (extract → scratchpad → copy-paste).
+this session (via `extract-source.py` for PDFs / direct read for
+HTML/TXT). Not training knowledge. The verbatim-quote check in
+validate.py mechanically verifies this — but write the node correctly
+to begin with by following `prompts/build.md` Phase I Steps 2 and 6
+(extract sources → populate quotes verbatim from scratch files).
 
 ---
 
@@ -132,8 +132,8 @@ Step 4–6 (extract → scratchpad → copy-paste).
 | `new.py` | Scaffold a node from template |
 | `research-scaffold.py` | Scaffold an empty research artifact for a node |
 | `extract-source.py` | Extract a primary source to plaintext (Phase I) |
-| `build-from-research.py` | Regenerate a document node from its research artifact (Phase II) |
-| `review-coverage.py` | Coverage / boundary / stub-link / OQ review (Phase III) |
+| `build-from-research.py` | Regenerate a node from its research artifact (Phase II — document / person / event / transcript / media / organization / location) |
+| `review-coverage.py` | Coverage / boundary / stub-linking / description-drift review (Phase III) |
 | `validate.py` | Schema, structural, and verbatim-quote validation |
 | `validate-research.py` | Research-artifact structural validation |
 | `manifest.py` | Manage `sources/manifest.yaml` (add, verify-paths, verify-checksums, …) |
@@ -142,7 +142,8 @@ Step 4–6 (extract → scratchpad → copy-paste).
 | `associate.py` | Regenerate `## Associated Nodes` sections from body links |
 | `build-state.py` | Refresh this file's build-state block |
 
-Full walk-through in `CONTRIBUTING.md`.
+Full build walk-through: paste `prompts/onboard.md` into a fresh
+session, then `prompts/build.md` for the Phase I → II → III procedure.
 
 Smoke tests live in `tests/`. Before adding or modifying a script, run:
 

@@ -100,7 +100,7 @@ If you're doing anything related to this instance's topic, read
 
 | Path pattern | Type | Format |
 |---|---|---|
-| `AGENT.md`, `CLAUDE.md`, `CONTRIBUTING.md`, `README.md` | Governance / entry points | Markdown |
+| `AGENT.md`, `CLAUDE.md`, `README.md` | Governance / entry points | Markdown |
 | `meta/*.md`, `meta/topic/*.md`, `meta/toolkit-notes/*.md`, `meta/topic/addenda/*.md` | Governance / reference | Markdown with YAML frontmatter |
 | `meta/schema.yaml` | Machine-readable spec | YAML |
 | `meta/templates/*.md` | Node scaffolding templates | Markdown with placeholder tokens |

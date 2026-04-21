@@ -13,14 +13,13 @@ doing anything:
 3. Read `meta/conventions.md` — the evidentiary discipline.
 4. Read `meta/schema.yaml` — the machine-readable spec for node types,
    required sections, vocabularies, research-artifact shape.
-5. Read `CONTRIBUTING.md` — how to build a node.
-6. Read `meta/toolkit-notes/roadmap.md` — active work (F.7 finding
+5. Read `meta/toolkit-notes/roadmap.md` — active work (F.7 finding
    renderer pending; Step G content population in progress) +
    architectural corrections that shape the current codebase.
-7. Read `meta/topic/research-queue.md` — current priority queue.
-8. Read `BACKLOG.md` — deferred work items; note any active entries
+6. Read `meta/topic/research-queue.md` — current priority queue.
+7. Read `BACKLOG.md` — deferred work items; note any active entries
    relevant to the session's planned task.
-9. Review the persistent Claude Code memory for this project. `MEMORY.md`
+8. Review the persistent Claude Code memory for this project. `MEMORY.md`
    is auto-loaded into your conversation context by the harness; read
    every file it references (stored in your Claude Code project memory
    directory — typically `~/.claude/projects/<sanitized-project-path>/memory/`).

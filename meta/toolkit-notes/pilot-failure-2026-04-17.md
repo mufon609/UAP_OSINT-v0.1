@@ -167,7 +167,7 @@ passage from the same file verified silently.
 
 ### Fix 2 — Source-first build workflow
 
-`prompts/build.md` and `CONTRIBUTING.md` now mandate:
+`prompts/build.md` now mandates:
 
 1. Scaffold empty node
 2. For each cited source: extract to plaintext first
@@ -181,7 +181,7 @@ If a claim is not in the scratchpad, it is not in the node.
 
 ### Fix 3 — One-node hard limit
 
-`CLAUDE.md` and `CONTRIBUTING.md` now document:
+`CLAUDE.md` and `prompts/build.md` now document:
 
 > **One node per build session.** Do not scaffold a second node until
 > the first has been fully populated, passed `validate.py` (including

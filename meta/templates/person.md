@@ -80,8 +80,9 @@ created: {{today}}
        Attributed to | Source | Verified.
      Source field uses backtick-bracket node links, e.g.
      `[`/transcripts/some-node`]` or `[`/documents/some-node`]`. See
-     CONTRIBUTING.md §"Quote verification blocks" and conventions.md
-     for the canonical shape. -->
+     prompts/build.md (Step 6 — quotes discipline) for the canonical
+     shape. -->
+
 
 ### Direct Observations
 

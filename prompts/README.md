@@ -12,5 +12,5 @@ copy the relevant prompt into a fresh Claude Code session.
 | `archive-sweep.md` | Archival health check + Wayback submission pass |
 
 Prompts assume the agent has read `README.md`, `meta/conventions.md`,
-`meta/schema.yaml`, and `CONTRIBUTING.md` at session start (the
-`onboard.md` prompt handles this).
+and `meta/schema.yaml` at session start (the `onboard.md` prompt
+handles this).

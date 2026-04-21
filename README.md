@@ -42,7 +42,6 @@ See `meta/conventions.md` for the full philosophy.
 README.md                   this file — public-facing overview
 AGENT.md                    first-read for AI agents querying the repo
 CLAUDE.md                   session-start checklist for contributors
-CONTRIBUTING.md             how to build a node
 BACKLOG.md                  deferred work items (not on active roadmap)
 
 meta/
@@ -147,7 +146,9 @@ omitted when empty.
 Paste `prompts/onboard.md` into a fresh Claude Code session. It reads
 the governance docs, runs the validator, and shows current state.
 
-If you'd rather read directly, start with `CONTRIBUTING.md`.
+If you'd rather read directly, start with `meta/conventions.md` (the
+evidentiary standard) and `meta/schema.yaml` (the structural spec),
+then paste `prompts/build.md` when you're ready to build a node.
 
 ### Returning contributor
 
