@@ -2,11 +2,15 @@
 """
 Submit manifest URLs to the Internet Archive Wayback Machine.
 
-Reads sources/manifest.yaml. For each entry where `wayback_date` is not set:
-  1. Query the CDX API for existing snapshots
-  2. If found, record the date in the manifest entry
-  3. If not found, submit via the Save Page Now API (rate-limited)
-  4. Update the manifest with wayback_date on success
+Reads sources/manifest.yaml. For each entry:
+  - Skip if `wayback_skip: true` (structurally unarchivable URL)
+  - Skip if `archive_status & 2` (bit 1 already set — Wayback confirmed)
+  - Otherwise: query CDX, submit via Save Page Now if absent, and on
+    success record `wayback_date` AND OR bit 1 into `archive_status`
+    (so the next run skips it — no retry storms on confirmed entries)
+
+`--recheck-all` forces CDX re-query on all entries (still respects
+`wayback_skip` — those URLs cannot be archived, recheck is pointless).
 
 Usage:
   archive.py                     # check + submit missing
@@ -123,17 +127,23 @@ def main():
         return
 
     to_check = []
+    skipped_unarchivable = 0
+    skipped_confirmed = 0
     for e in entries:
-        if args.recheck_all:
-            to_check.append(e)
-        elif not e.get("wayback_date"):
-            to_check.append(e)
+        if e.get("wayback_skip"):
+            skipped_unarchivable += 1
+            continue
+        if not args.recheck_all and (e.get("archive_status", 0) & 2):
+            skipped_confirmed += 1
+            continue
+        to_check.append(e)
 
     print("=" * 64)
     print("  Wayback Machine Archival")
     print("=" * 64)
     print(f"\n  Total entries:        {len(entries)}")
-    print(f"  Already confirmed:    {len(entries) - len(to_check)}")
+    print(f"  Already confirmed:    {skipped_confirmed}")
+    print(f"  Unarchivable (skip):  {skipped_unarchivable}")
     print(f"  To check:             {len(to_check)}")
     print(f"  Mode:                 {'check only' if args.check_only else 'check + submit'}\n")
 
@@ -147,6 +157,7 @@ def main():
         ts = check_wayback(url)
         if ts:
             e["wayback_date"] = ts
+            e["archive_status"] = e.get("archive_status", 0) | 2
             found += 1
             print(f"           FOUND snapshot {ts}")
         else:
@@ -156,6 +167,7 @@ def main():
                 ok, result = submit_wayback(url)
                 if ok:
                     e["wayback_date"] = datetime.now().strftime("%Y-%m-%d")
+                    e["archive_status"] = e.get("archive_status", 0) | 2
                     submitted += 1
                     print(f"           SUBMITTED")
                 else:
