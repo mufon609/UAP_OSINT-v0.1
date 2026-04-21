@@ -373,6 +373,84 @@ def check_yaml_hash_truncation(path, rel):
     return issues
 
 
+# Pattern for unquoted YAML scalar values that contain an inner `: `
+# (colon-space) sequence. YAML's block-mapping parser may treat the
+# inner `: ` as a nested key/value separator, either parse-erroring or
+# silently mis-parsing the scalar. Contributors hit this with prose
+# titles that contain a colon ("We are not alone: The UFO whistleblower
+# speaks"), research_gap methodologies with sub-clauses, and anywhere
+# a natural-language subtitle appears in an unquoted scalar.
+#
+# Heuristic: match the structural shape; skip the two most common
+# legitimate cases — URL schemes (http://, https://, mailto:, etc.) and
+# digit-preceded colons (line numbers, timestamps) — by inspecting the
+# word that precedes the inner colon.
+_YAML_COLON_SPACE_PATTERN = re.compile(
+    r"^(\s*-?\s*[A-Za-z_][\w-]*:\s+)"      # group 1: outer key + colon + first whitespace
+    r"([^'\"|>#\s].*?)"                      # group 2: unquoted value start (non-quote opener)
+    r"(\w+):\s+"                             # group 3: word-preceding-inner-colon
+    r"(\S.+)$"                               # group 4: substantive post-colon content
+)
+
+_URL_SCHEMES_FOR_COLON_SKIP = frozenset({
+    "http", "https", "ftp", "ftps", "mailto", "ssh", "file", "git",
+    "svn", "ws", "wss", "sftp", "rsync",
+})
+
+
+def check_yaml_colon_space(path, rel):
+    """Pre-parse scan for unquoted scalar values containing an inner
+    `: ` (colon followed by space). YAML's block-mapping parser may
+    treat the inner `: ` as a nested key/value separator, either
+    parse-erroring or silently mis-parsing the scalar. Surfaces as
+    warn — contributor can quote the value OR replace the inner
+    colon with an em-dash `—` / semicolon `;` if typographically
+    appropriate.
+
+    Skips URL schemes (word preceding inner colon ∈ known scheme set
+    like http, https, mailto) and digit-preceded colons (line numbers,
+    timestamps, ordinals). Warns only when the post-colon content is
+    ≥2 words, reducing false positives on single-word sub-keys.
+
+    Surfaced during the 2026-04-20 Cluster B hearing-event pilot — a
+    NewsNation submission title broke the `publication_record` entry;
+    fixed by single-quoting + replacing the inner `:` with an em-dash.
+    Parallel pre-parse mechanism to check_yaml_hash_truncation above.
+    """
+    issues = []
+    try:
+        with open(path) as f:
+            raw_lines = f.readlines()
+    except OSError:
+        return issues
+    for lineno, line in enumerate(raw_lines, start=1):
+        m = _YAML_COLON_SPACE_PATTERN.match(line.rstrip("\n"))
+        if not m:
+            continue
+        preceding_word = m.group(3)
+        post = m.group(4)
+        # Skip URL schemes (http://, https://, mailto:, etc.)
+        if preceding_word.lower() in _URL_SCHEMES_FOR_COLON_SKIP:
+            continue
+        # Skip digit-preceded colons (line numbers, timestamps, ordinals)
+        if preceding_word.isdigit():
+            continue
+        # Require ≥2 post-colon words — single-word sub-keys are
+        # rarely prose
+        post_words = post.split()
+        if len(post_words) < 2:
+            continue
+        issues.append(Issue(rel, "warn",
+            f"line {lineno}: value contains `{preceding_word}: ` (word followed "
+            f"by colon + space) inside an unquoted scalar — YAML's block-mapping "
+            f"parser may treat the inner `: ` as a key/value separator, either "
+            f"causing a parse error or silently truncating the scalar. Fix: "
+            f"quote the entire value (single or double quotes), OR replace the "
+            f"inner colon with an em-dash `—` / semicolon `;` if typographically "
+            f"appropriate. Post-colon content: {post[:60]!r}"))
+    return issues
+
+
 # =============================================================================
 # Per-artifact validation
 # =============================================================================
@@ -386,6 +464,12 @@ def validate_artifact(path, schema, manifest_paths):
     # warning fires on contributor-written YAML even when the file
     # parses cleanly.
     issues.extend(check_yaml_hash_truncation(path, rel))
+
+    # Pre-parse check: scan for unquoted scalar values containing an
+    # inner `: ` (colon-space) sequence that YAML's block-mapping
+    # parser may treat as a nested key/value separator. Same pre-parse
+    # philosophy as the hash-truncation check above.
+    issues.extend(check_yaml_colon_space(path, rel))
 
     data, err = load_artifact(path)
     if err:
