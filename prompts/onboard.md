@@ -14,8 +14,9 @@ doing anything:
 4. Read `meta/schema.yaml` — the machine-readable spec for node types,
    required sections, vocabularies, research-artifact shape.
 5. Read `CONTRIBUTING.md` — how to build a node.
-6. Read `meta/toolkit-notes/roadmap.md` — phased plan; where the
-   active arc currently is (Step F — Phase II per-type renderers).
+6. Read `meta/toolkit-notes/roadmap.md` — active work (F.7 finding
+   renderer pending; Step G content population in progress) +
+   architectural corrections that shape the current codebase.
 7. Read `meta/topic/research-queue.md` — current priority queue.
 8. Read `BACKLOG.md` — deferred work items; note any active entries
    relevant to the session's planned task.

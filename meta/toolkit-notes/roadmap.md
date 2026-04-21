@@ -8,1320 +8,158 @@ created: 2026-04-17
 # Refactor roadmap
 
 Top-level plan for the ground-up refactor of the UAP research repository
-into a topic-neutral primary-source investigation toolkit. Preserved as
-durable context so conversation-summary compaction does not lose the
-outline of what's been done and what remains.
+into a topic-neutral primary-source investigation toolkit.
 
-Update this file as phases complete or scopes change. The file is the
-source of truth; conversation recall is not.
-
----
-
-## Step 0 — Design consultation  ✅ DONE
-
-Scope definition. Settled on:
-
-- Topic-neutral toolkit (UAP is the first instance)
-- Fresh ground-up build in `REFACTOR/`, original repo preserved
-- Minimum taxonomy (orgs: gov/gov-contractor/private;
-  documents: gov-doc/non-gov-doc + doc_form)
-- Schema-driven validation via `meta/schema.yaml`
-- Topic-specific material lives under `meta/topic/` (deleted cleanly on fork)
+This file tracks **active work** and **design decisions that shaped the
+current codebase** — not the detailed history of completed phases. Git
+log + the code itself is the authoritative record of what shipped and
+when.
 
 ---
 
-## Step A/B/C — Governance + infrastructure  ✅ DONE
+## Active work
 
-### A — Schema, conventions, scripts skeleton
-`meta/schema.yaml`, `meta/conventions.md`, templates under
-`meta/templates/`, AGENT.md, CLAUDE.md, CONTRIBUTING.md, README.md.
-Flat scripts (no shared `lib/`): `new.py`, `validate.py`, `manifest.py`,
-`archive.py`, `associate.py`, `build-state.py`, `transcribe.py`.
-(`audit-schedule.py` also shipped here; removed 2026-04-20 — see
-Step E.1 for the removal record.)
+### F.7 — finding renderer  ⏳ PENDING (last remaining type)
 
-### B — Bug fixes
-- **B1** — manifest SHA256 integrity (checksum at archive-time;
-  `manifest.py verify-checksums`; validator check #12)
-- **B2** — `schema_version` value check against `schema.compatible_with`
-  (prevents drifted-version content passing validation silently)
+Finding is the last unbuilt node type. Design pass open: decide what
+synthesis section (if any) finding nodes carry under statements-only.
+Options: hard-anchored claim layer (every sentence verbatim-quote-
+anchored), quotes-only Key Passages parallel to documents, or a cross-
+reference surface parallel to hearing Witnesses & Testimony.
 
-### C — Pilot failure postmortem
-First Phase 2 pilot (2026-04-17) produced fabricated quotes and
-mis-attributed claims in 10 nodes. Deleted all 10. Established four
-process fixes:
-- Mechanical verbatim quote verification (validator check #11)
-- Source-read-first hard rule
-- One-node-per-session hard rule
-- Postmortem captured at `meta/toolkit-notes/pilot-failure-2026-04-17.md`
+No pilot candidate yet — will emerge from cross-entity patterns
+observed during Step G content population.
 
----
+### Step G — Content population  🟡 IN PROGRESS
 
-## Step D — Layered-process tooling  ✅ DONE (D.0 through D.7; see post-Step-D section below for the subsequent claims-layer refactor)
+Interleaves with F sub-phases — each phase pilot is a G node;
+additional G nodes follow once the renderer is stable.
 
-Three-phase build process: **Investigation → Build → Review**. Each
-phase has dedicated tooling and a bounded discipline.
+**Current active clusters:**
 
-### D.0 — Research-artifact schema design  ✅ DONE
-`meta/schema.yaml` research-artifact spec: required keys, entry shapes
-per section (quotes, claims, entities_referenced, naming_quirks,
-research_gaps, rumors conditional), lifecycle fields, iteration log,
-validation invariants.
+- **Cluster A — 2004 Nimitz encounter.** Event, Fravor person, Fravor
+  transcript, FLIR1 media all built. Remaining: Dietrich (eyewitness),
+  Underwood (eyewitness), Nimitz / Princeton / VFA-41 (orgs).
+- **Cluster B — 2023-07-26 House Oversight hearing.** Complete.
+  Event + 3 transcripts + 3 written testimonies + 3 witness person
+  nodes all built.
+- **Cluster D — UAP oversight institutions.** AARO + UAPTF built.
+  Remaining: ONI (UAPTF parent), NIA (UAPTF Charter signer), Norquist
+  (DSD approver), Travis Taylor (informal Chief Scientist).
 
-### D.1 — Phase I scaffolding + validation  ✅ DONE
-- `scripts/research-scaffold.py` — scaffolds empty `research/{slug}.yaml`
-  with type-conditional `rumors` section
-- `scripts/validate-research.py` — 18 check helpers, structural
-  validation only (coverage checks live in D.4)
-
-### D.2 — Phase I source extraction + prompt  ✅ DONE
-- `scripts/extract-source.py` — wraps `pdftotext` + `pdfinfo`; writes
-  `/tmp/scratch-{slug}-N.txt`; batch + single modes
-- `prompts/build.md` — Phase I workflow with 11 steps + 6 bounded agent
-  tasks (T1–T6)
-
-### D.3 — Phase II build  ✅ DONE
-- `scripts/build-from-research.py` — deterministic regeneration from
-  research artifact → node body. **Document-only scope.** Pre-flight
-  validates artifact; per-section renderers; post-build validates node;
-  invokes `associate.py`.
-- Schema: added `description` required field, `retain_as_done` optional
-  on research-gap entries.
-- Existing Fravor node cleaned: removed "What This Does Not Establish"
-  section.
-- Prompt updated with Phase II workflow.
-
-### D.4 — Phase III review  ✅ DONE
-- `scripts/review-coverage.py` — four mechanical consistency checks
-  between the regenerated node and its research artifact: Coverage
-  (artifact claim/quote → node body), Boundary (node body matches
-  build-from-research.py dry-run, excluding Associated Nodes),
-  Stub-linking (every `entities_referenced.wrap_path` renders as a
-  `[\`/path\`]` link), and OQ deduplication (Open Questions items
-  map 1:1 to unresolved + retain_as_done research_gaps).
-- Shipped as a sibling script (not bolted onto validate.py), confirming
-  the split pattern for future check modules. Resolves BACKLOG item 2's
-  deferred design decision.
-- Document-type scope (matches build-from-research.py D.3); other
-  types emit a skip notice. Per-type extension lands with its Phase II
-  renderer (BACKLOG).
-- Agent-assisted semantic review is not a separate script — documented
-  in `prompts/build.md` Phase III Step 2 as a human-read pass. Bounded
-  agent task (T7) is a future increment.
-
-### D.5 — Fravor pilot rebuild  ✅ DONE
-First end-to-end run of Phase I → II → III on the Fravor
-written-testimony document. Populated 8 quotes / 15 claims / 20
-entities / 4 naming_quirks / 4 research_gaps. All validators green:
-validate-research.py, build-from-research.py (with post-build
-validate.py), and review-coverage.py (all four checks). Demonstrated
-that artifact-driven builds produce more accurate location refs than
-hand-authored nodes (corrected ¶7→¶8 on "What is shocking") and that
-the pilot-failure-era architectural guarantees hold in practice.
-
-### D.6 — Docs + prompt updates post-pilot  ✅ DONE
-Four pilot findings absorbed:
-- `meta/templates/document.md` — removed redundant `## Authors`
-  section. Author info lives in `document_intrinsic.authors_per_document`
-  and renders as the Document Summary "Author (per document)" row.
-  News and book templates keep their Authors sections (different
-  authorship semantics).
-- `prompts/build.md` Phase I Step 4 — `context_extrinsic.provenance[].date`
-  values standardized to ISO format (YYYY-MM-DD); renderer passthrough.
-- `prompts/build.md` Phase I Step 6 — quote `location` paragraph refs
-  must be counted from the extracted scratch file, not from memory
-  or prior prose. Pilot evidence: the ¶7/¶8 correction.
-- `prompts/build.md` Phase I Step 10 — research_gap `methodology`
-  should be concise; the renderer concatenates `statement — methodology`
-  into a single Open-Questions line.
-
-Two pilot observations required no action (document_intrinsic field
-design solid; one-node rule held under a realistic-scope artifact).
-
-### D.7 — Post-pilot cleanup  ✅ DONE
-- `scripts/build-from-research.py` `_claim_source_cell` — dedupe
-  identical location strings while preserving order (surfaced during
-  the D.5 audit). Note: this helper was subsequently removed as dead
-  code during the post-Step-D claims-layer refactor; dedupe is moot
-  when there are no claim rows.
-- Claim-anchoring discipline (Check A + Check B, shipped post-D.6)
-  was the load-bearing D-era defect-prevention mechanism for the
-  claims layer. It caught coarse drift reliably but not fine drift;
-  see the post-Step D section below for the architectural resolution.
-- Step D (D.0 through D.7) complete.
-
----
-
-## Post-Step D — Claims-layer elimination for document nodes  ✅ DONE
-
-Audit-driven architectural correction. Discovered through:
-- Fravor audits (iterations i1 → i4) that kept finding the same
-  shape of fine drift: c4 "intercept occurred during training" vs
-  source "training was suspended," c13 dropped "and others," c6
-  "at intercept" contributor framing
-- Graves audit (iteration i0 → i1) that surfaced c16 "warning area"
-  vs source "early warning area" and the possessive-apostrophe
-  false-positive in the token extractor
-
-Root cause: the claims layer itself. `claim.statement` was
-contributor-written prose anchored to a verbatim quote, but the
-prose was subject to fine drift that mechanical checks could not
-catch (dropped qualifiers, synonym rephrases, word-level
-condensations). A contributor-synthesis layer between source and
-reader is an unavoidable drift surface *while the layer exists*.
-
-Correction: **document nodes have no claims layer.** A document
-node IS the fact record; evidentiary content is verbatim source
-passages in Key Passages. Contributor prose exists only in the
-Description section (explicitly labeled as synthesis). Other nodes
-that cite facts from a document link to the document and reference
-the specific passage — no intermediate paraphrase exists to drift.
-
-Changes landed:
-- `meta/schema.yaml` — `What This Establishes` dropped from gov-doc /
-  non-gov-doc required_sections
-- `meta/templates/document.md` — section removed; Key Passages is
-  the sole evidentiary layer
-- `scripts/build-from-research.py` — `render_what_establishes()` and
-  its helpers removed as dead code (−55 lines)
-- `meta/conventions.md` — new "Document nodes vs synthesis nodes"
-  section; contradictions-routing table reframed (document nodes
-  don't own contradictions; synthesis nodes do)
-- `prompts/build.md` — Step 7 scope note (`claims: []` for documents);
-  Phase II/III wording aligned
-- `CLAUDE.md` / `CONTRIBUTING.md` — "`verified verbatim` claim" →
-  "quote" (marker attaches only to quote-verification blocks)
-- Fravor artifact → iteration i4: `claims: []`; description expanded
-  to wrap the entities previously reachable only through claim prose
-- Graves artifact → iteration i1: `claims: []`
-- Both nodes regenerated; 0 errors / 0 warnings across the pipeline
-
-**Synthesis nodes** (person, organization, event, finding, news,
-book, location) retain claim-like sections when their analytical
-purpose requires them (Claim Inventory on whistleblowers,
-What The Hearing Established on hearings, etc.). Check A
-(validate-research quote_ref requirement) and Check B
-(review-coverage token drift) still apply to those contexts.
-
-This is the **second architectural correction post-launch**. The
-first was the 2026-04-17 pilot-failure postmortem (fabricated
-verbatim quotes) which produced the validator's mechanical
-verbatim-quote check. This one is deeper — it eliminates the
-source-to-reader contributor-prose layer entirely for fact
-documents. Both corrections came from running the pipeline against
-real sources and observing the gap between what mechanical checks
-can catch and what the discipline requires.
-
-Graves written-testimony node was also built during this period
-(commits 517d273 / 4d0bf8a / e24a726) — second node through the
-full layered pipeline and the first built without a retrofit. The
-extractor fix (single-quote false-positive) landed mid-build,
-demonstrating dogfood catching a real extractor bug.
-
-Node count after this work: 2 document nodes (Fravor, Graves), both
-iterated through the full Phase I → II → III pipeline under the
-claims-layer-free architecture.
-
----
-
-## Post-Step D — Source-taxonomy consolidation  ✅ DONE
-
-Design-level reconsideration of the node-type taxonomy under the
-statements-only (verbatim-only) discipline established by the
-prior claims-layer elimination. Driven by two observations:
-
-- `news` and `book` node types carried contributor-synthesis sections
-  (`What The Article Established`, `What The Book States`) — the same
-  drift surface the claims-layer correction removed from document
-  nodes. Structurally, a news article and a book are just non-gov-doc
-  documents; their publication-event nature is metadata, not a
-  separate node shape.
-- Primary-source format coverage: the repository will archive FOIA
-  documents, written testimony, congressional transcripts, news
-  articles, books, photos, videos, podcasts, YouTube talks,
-  documentaries, press conferences, social-media posts, and imagery
-  (satellite, radar, infrared). The pre-consolidation schema handled
-  text-native sources cleanly and bolted non-text sources onto
-  `document` via `doc_form: video` — the wrong shape for photos
-  (no text to extract) and for videos with pilot audio (speech
-  belongs on a transcript).
-
-Three evidentiary primitives drove the partition:
-
-| Primitive | Node type |
-|---|---|
-| Verbatim text from a text-native source | `document` |
-| Verbatim speech rendered as text from a speech-native source | `transcript` |
-| Metadata + provenance of a non-text artifact (plus optional verbatim speech / visible-text extracts) | `media` |
-
-Changes landed:
-- `meta/schema.yaml` — `news` and `book` types removed; `document`
-  absorbs both via `doc_form: article | book` + optional
-  `archival_status` frontmatter (required when `doc_form == book`).
-  Doc_form vocabulary: `video` removed (now `media`); `social-post`
-  and `database-extract` added; `book-excerpt` renamed to `book`.
-  `media` type added with four kinds (photo, video, audio,
-  imagery-other) and required sections (Media Summary, Description,
-  Provenance, Key Passages, Associated Nodes, Open Questions) plus
-  optional `Media Versioning` (required when `derivation_of` is set).
-  `transcript` revised: `interview` kind → `other`; optional
-  `source_medium` and `derived_from` frontmatter.
-- `meta/templates/` — `news.md` and `book.md` deleted; `media.md`
-  added; `document.md` and `transcript.md` updated.
-- Directory layout — `news/` and `books/` deleted (both empty);
-  `media/` created.
-- Scripts — `new.py`, `validate.py`, `build-state.py`, `manifest.py`,
-  `research-scaffold.py`, `validate-research.py`, `build-from-research.py`,
-  `review-coverage.py`, `associate.py` all updated for the new
-  type/directory set and the conditional frontmatter checks
-  (archival_status on book, Media Versioning on derivative media).
-- `tests/smoke.sh` — news/book fixtures replaced with document
-  article + document book + document social-post; media fixtures
-  added for all four kinds; transcript fixture switched to kind
-  `other`. 22/22 passing (up from 18/18).
-- Docs — `AGENT.md`, `README.md`, `meta/topic/overview.md` refreshed.
-
-Node-type count: 9 → 8 (news + book removed, media added). All
-pipeline stages green after the consolidation: validate.py,
-validate-research.py, review-coverage.py, build-state.py --check,
-help-check.sh, smoke.sh.
-
-Phase II renderers for non-document types (media, transcript, and the
-others listed in BACKLOG "Extend build-from-research.py to all 9 node
-types") will follow the new taxonomy when built — one type per
-increment, as that BACKLOG item specifies.
-
----
-
-## Step E — Operational tooling (split)
-
-The original "Step E" block bundled three unrelated concerns with
-different blockers and different shovel-readiness. Split into three
-sub-steps so each can move independently.
-
-### E.1 — Pre-commit / CI hook  ✅ DONE (2026-04-18)
-
-Shipped in the 2026-04-18 hardening pass.
-
-- `tests/pre-commit.sh` — chains `help-check.sh` + `smoke.sh` +
-  `validate.py` + `validate-research.py` + `build-state.py --check`
-  into a single gate; non-zero exit on any failure. Install
-  instructions in-file (contributor-driven install; no auto-wire —
-  git-hook installation rewrites local git state and is explicit
-  opt-in).
-- Closed the "Testing infrastructure" BACKLOG item's step 4
-  (pre-commit chain).
-
-**Audit-schedule removal (2026-04-20).** Initially shipped as gate
-6/6 (`audit-schedule.py --overdue`) to track per-entry re-audit
-cadence via `audit_cadence_days` + `last_audited_date` + `audit_status`
-lifecycle fields. Removed: zero entries across the corpus used the
-feature, the schema-declared default wasn't enforced by the script,
-and real re-audit in the repo is already happening through iteration
-log entries with `trigger: audit-correction`. Script deleted; schema
-lifecycle fields trimmed to content-versioning only (superseded_by /
-contradicted_by / corroborated_by); pre-commit chain is now 5 gates.
-Rebuild if real overdue-tracking requirements surface.
-
-### E.2 — Iteration tooling  ❌ REMOVED (2026-04-20)
-
-Planned `scripts/iterate.py` would have automated `last_iteration`
-bumping + `iterations[]` entry appending + optional regenerate/review-
-coverage chaining. Removed before implementation. Rationale: git
-history tracks when artifacts change and who changed them; the hand-
-authored `iterations[]` list on each artifact captures what changed
-and why as first-class evidentiary record. Together these cover the
-iteration-audit need at current and foreseeable repo volume without
-additional tooling. Multiple artifacts have iterated cleanly through
-the hand path without friction worth automating away.
-
-`prompts/iterate.md` (the hand-workflow companion prompt) was also
-removed 2026-04-20 — ~90% overlap with `prompts/build.md`,
-`meta/conventions.md` Versioning, and the iteration-correction
-pattern in `prompts/audit.md`. If real iteration-overhead pain
-surfaces at 20+ iterated artifacts, rebuild both the script and a
-focused prompt then.
+G milestones are emergent, not pre-planned. `meta/topic/research-queue.md`
+drives additions after each cluster closes.
 
 ### E.3 — Cross-node update propagation  ⏸ DEFERRED
 
 Blocked on: multiple artifacts with overlapping evidentiary claims.
-Can't build propagation tooling until there's a propagation case to
-build against. Likely after ~10 nodes through the full pipeline.
+Can't build propagation tooling without a propagation case. Likely
+after ~10 nodes through the full pipeline.
 
-Scope when it ships:
-
-- When a claim in artifact A changes the evidentiary picture for
-  artifact B (claim A supersedes, contradicts, or corroborates a
-  claim in B), propagate the reference bidirectionally
-  (`corroborated_by`, `superseded_by`, `contradicted_by` on both
-  sides, with pointers that resolve across artifacts).
-- Validator coverage: broken cross-artifact refs fail validation,
-  same shape as the existing intra-artifact `corroborated_by` /
-  `superseded_by` / `contradicted_by` resolution check in
-  `validate-research.py`.
+When it ships: bidirectional `corroborated_by` / `superseded_by` /
+`contradicted_by` pointers resolving across artifacts; validator
+coverage for broken cross-artifact refs.
 
 ---
 
-## Step F — Phase II per-type renderers  ⏸ PENDING (one sub-phase at a time)
-
-Promoted from BACKLOG ("Extend build-from-research.py to all 8 node
-types"). Currently `build-from-research.py` supports `document` only;
-seven other types still require hand-authored nodes, reintroducing
-the fabrication surface the layered process exists to close.
-
-**Sub-phase template.** Each F sub-phase mirrors D.3 → D.5 shape:
-
-1. **Design pass** — resume the per-node-type analysis conversation
-   (paused after the news/book collapse). What sections survive
-   under the statements-only discipline? What archetype-specific
-   structure does the renderer need? What metadata does the artifact
-   gain?
-2. **Schema delta** — revise `meta/schema.yaml` per the design pass.
-   Update template, scaffolder, validator.
-3. **Renderer implementation** — add type-specific section renderers
-   to `build-from-research.py`. Pre-flight validates artifact;
-   post-build validates node; invokes `associate.py`.
-4. **Pilot** — build one node end-to-end through Phase I → II → III.
-   All validators green before the sub-phase is considered shipped.
-5. **Absorb pilot findings** — any doc / template / renderer
-   adjustments surfaced by the pilot (same pattern as D.5 → D.6).
-
-**One type per sub-phase. One pilot per type.** Same hard rule that
-produced the 2026-04-17 pilot failure postmortem.
-
-### F.1 — person
-
-Decomposed into three shippable units (F.1a → F.1c).
-
-#### F.1a — schema + template + validator + research-artifact extensions  ✅ DONE (2026-04-19)
-
-Design pass settled the two paused threads via the "statement surface
-vs cross-reference surface" lens: archetype-specific sections are
-cross-reference/metadata surfaces (NOT statement surfaces), so they
-stay distinct; a universal `## Statements` section (verbatim-only,
-split into Direct Observations / Other Statements) is added for the
-statement-surface role. A universal `## Timeline` section is added on
-all person archetypes (aggregated chronological dated facts with
-Category column). Changes shipped:
-
-- `meta/schema.yaml` person type — `Key Statements` renamed to
-  `Statements` with `split: [Direct Observations, Other Statements]`
-  + `requires_quote_verification: true`; `Timeline` required on all
-  four archetypes; `timeline_category_values` vocabulary added;
-  `Timeline: {chronological: true}` section rule.
-- `meta/schema.yaml` research-artifact spec — `timeline` conditional
-  key on person/organization/event/finding artifacts; archetype-
-  conditional keys `corroboration_items` / `program_involvement` /
-  `publication_record` / `vouching_chain`; quote entry gains
-  `observation_type` (required on person artifacts; `direct|relayed`)
-  and optional `category`; five new entry shapes (timeline_entry,
-  corroboration_entry, program_involvement_entry,
-  publication_record_entry, vouching_chain_entry).
-- `meta/schema.yaml` — `chronological: true` section rule added to
-  `Timeline` / `Provenance` / `Ownership Timeline` on organization,
-  event, document, media, location. Upgrades the flag from
-  descriptive-only to enforced via check #15.
-- `meta/templates/person.md` — rewritten: renamed Key Statements to
-  Statements with Direct Observations / Other Statements subsections;
-  added Timeline section with Category column; archetype-specific
-  sections clarified as cross-reference/metadata surfaces.
-- `scripts/validate.py` — check #15 (chronological-ordering) added.
-  Scans every H2 section's markdown tables for date columns (Date /
-  Date / Time / Period / Start / Date Captured / Date Released /
-  Dates), parses dates (ISO prefix + leftmost-of-range), verifies
-  ascending order. Errors on disorder; warns on unparseable cells.
-  Universal across every node type.
-- `scripts/validate-research.py` — archetype reader + per-archetype
-  required-section check; timeline conditional; observation_type
-  enum check on person-artifact quotes; five new per-section check
-  helpers (check_timeline / check_corroboration_items /
-  check_program_involvement / check_publication_record /
-  check_vouching_chain) with enum vocabularies for
-  corroboration.observation_type / evidentiary_basis / confidence.
-- `scripts/research-scaffold.py` — reads target archetype from
-  person frontmatter; scaffolds the matching archetype-specific
-  section (corroboration_items / vouching_chain / program_involvement
-  / publication_record) as an empty list; scaffolds `timeline: []`
-  on timeline-bearing types.
-
-23/23 smoke fixtures still pass; pre-commit chain fully green.
-
-#### F.1b — Phase II renderer for person  ✅ DONE (2026-04-19)
-
-`build-from-research.py` now supports `target_node` type `person`
-alongside `document`. Ten per-section renderers driven from the
-artifact fields:
-
-- `Identity` from `document_intrinsic` (full_name / aliases /
-  nationality / profession)
-- `Background` / `UAP Relevance` / `Credibility Notes` from
-  respective prose keys (new person-required artifact fields)
-- `Affiliations` from `affiliations` list (new), split into Confirmed
-  / Flagged subsections; sorted by `period_start`
-- `Statements` from `quotes` filtered by `observation_type` and
-  sorted ascending by `statement_date` (new optional quote field)
-  into Direct Observations / Other Statements subsections
-- `Timeline` from `timeline` entries, chronologically
-- `Relationships` from `relationships` list (new), Confirmed / Flagged
-- Archetype-specific section dispatched by frontmatter archetype:
-    eyewitness          → Corroboration       (from corroboration_items)
-    whistleblower       → Claim Inventory     (render-time view of
-                                               quotes w/ category:
-                                               filed-claim)
-    institutional-actor → Program Involvement (from program_involvement)
-    reporter            → Publication Record  (from publication_record,
-                                               sorted)
-- `Vouching Chain` — whistleblower-only; standalone H2 after
-  Credibility Notes (from `vouching_chain`)
-
-New / extended schema surface:
-- `quote_entry.statement_date` (optional) — enables chronological
-  sort of Statements
-- Five new person-required conditional keys: `background`,
-  `uap_relevance`, `affiliations`, `relationships`,
-  `credibility_notes`
-- `affiliation_entry` + `relationship_entry` shape specs
-- Matching enforcement in `validate-research.py` (per-type and
-  per-entry checks; empty placeholders tolerated)
-- `research-scaffold.py` auto-populates all five on person artifacts
-
-`review-coverage.py` accepts person artifacts; existing four checks
-(Coverage / Boundary / Stub-linking / OQ dedup) generalize without
-modification — quotes carry the evidentiary load on person nodes the
-same way they do on documents.
-
-All four archetypes verified end-to-end: scaffold → artifact →
-build-from-research → validate → review-coverage, all clean. Pre-
-commit chain 6/6 green.
-
-#### F.1c — Fravor pilot  ✅ DONE (2026-04-19)
-
-First end-to-end person node through Phase I → II → III under the
-statements-only discipline. `/people/david-fravor` built at iteration
-i0 from the Fravor written-testimony primary source:
-
-- 6 verbatim quotes (4 direct observations of the 2004 Nimitz
-  encounter; 2 relayed narratives about the post-encounter
-  disclosure chain) — all verified character-for-character against
-  the archived PDF by validate.py check #11
-- 2 affiliations (U.S. Navy retired Commander; VFA-41 Commanding
-  Officer 2004-11)
-- 3 relationships (Dietrich wingman; Stratton 2009 contact; Elizondo
-  2016 contact)
-- 3 corroboration items (Dietrich testimonial, USS Princeton Aegis
-  instrumented, FLIR1 video documentary)
-- 6 timeline entries chronologically ordered (2004-11 → 2023-07-26)
-- 16 entities_referenced (all rendered via backtick-bracket links
-  in prose; stub-linking clean)
-- 1 naming_quirk (Delonge → DeLonge, preserve-as-sic-in-quotes)
-- 3 research_gaps (Navy retirement date; VFA-41 command tenure;
-  full statement-set extension from oral testimony / NYT / CBS /
-  podcast sources — i1 scope)
-
-All three phases green:
-  validate-research.py      0 / 0
-  build-from-research.py    0 errors + post-build validate clean
-  review-coverage.py        0 / 0 (Coverage / Boundary / Stub-linking /
-                                   OQ dedup)
-
-Pre-commit chain 6/6 green. 15 broken-link stubs registered in the
-registry — all are Nimitz-cluster nodes not yet built (Dietrich,
-Underwood, Stratton, Elizondo, 2004-nimitz-encounter event, FLIR1
-video, TTSA, UCC Princeton, CVW-11, DOD, etc.). Those are Step G
-work.
-
-Pilot findings absorbed inline or no action needed:
-- Renderer handled all four archetypes (F.1b) plus the real-content
-  eyewitness case (Fravor) without schema or code change
-- `_wrap_path` helper correctly produced backtick-bracket links for
-  every cross-reference path in the rendered body
-- The pre-F.1c hardening (context required on person quotes;
-  document_intrinsic convention documented) made the contributor
-  experience frictionless — quote population was straightforward,
-  no renderer bugs surfaced
-
-Post-F.1c audit surfaced 4 contributor-prose drift issues (RCA in
-commit `f67f6e8` message) driving a pre-F.2 hardening pass —
-see next section.
-
-#### F.1c-audit hardening (pre-F.2)  ✅ DONE (2026-04-19)
-
-RCA on the F.1c audit: the mechanical verification pipeline caught
-verbatim-quote drift (check #11) but had no check verifying
-contributor-authored prose fields against the source. All four drift
-issues I found in the Fravor audit were in prose surfaces
-(background, uap_relevance, timeline event descriptions,
-relationship descriptions).
-
-**Check #16 — prose-field token drift** shipped in
-`scripts/validate-research.py`:
-
-- For person artifacts, verify every significant word in contributor-
-  prose fields (`background`, `uap_relevance`, `credibility_notes`,
-  plus per-entry prose fields on timeline / affiliations /
-  relationships / corroboration_items / program_involvement /
-  publication_record / vouching_chain) appears in the referenced
-  primary-source text.
-- Significant words: lowercase tokens ≥3 chars, not in a ~110-entry
-  STOPWORDS list; backtick-bracket repo paths stripped; possessive
-  `'s` stripped.
-- Impartial reporter: warn on every unmatched token (any field, any
-  count); error only at 100% vocabulary divergence (mathematical
-  floor, not stylistic threshold). Initial differentiated-threshold
-  calibration (80% error) was revised to the single impartial rule
-  after contributor feedback flagged the implicit synthesis-vs-
-  fabrication bias in the thresholds — the validator surfaces drift
-  without classifying it.
-- The v1 impartial-reporter framing (warn on unmatched tokens,
-  error only at 100% divergence) is the durable design for this
-  check. Noise-reduction extensions (stemming, whitelisting, n-gram
-  adjacency) are out of scope — shipping any of them would silence
-  warnings the `feedback_check16_warnings_must_resolve.md` contributor
-  policy depends on being surfaced.
-
-Docs updated: `prompts/build.md` Phase I Step 12 gains a prose-drift
-review step; `meta/conventions.md` adds a prose-drift discipline
-subsection under "Document nodes vs synthesis nodes". BACKLOG gains
-the v2 extensions entry.
-
-Fravor i1 baseline after shipping: 0 errors, 15 warnings (all
-legitimate contributor-synthesis vocabulary per the RCA categories).
-Fabrication test (injecting invented content): 100% unmatched
-tokens → error fires correctly. Drift-restoration test (restoring
-the i0 drift vocabulary): unmatched-token warnings surface each
-drifted word.
-
-### F.2 — event
-
-Decomposed into three shippable units (F.2a → F.2c), mirroring the
-F.1 pattern.
-
-#### F.2a — schema delta + template + validator + scaffolder  ✅ DONE (2026-04-19)
-
-Design pass settled the hearing synthesis question via the statements-
-only lens established in the news/book collapse: `What The Hearing
-Established` was a contributor-prose synthesis section that belongs
-in the repository's navigational surface, not its evidentiary surface.
-Replaced with `Witnesses & Testimony` — a cross-reference table
-(witness / oath status / transcript node / written testimony node)
-that routes the investigator to the verbatim record without a
-paraphrase layer.
-
-Changes shipped:
-
-- `meta/schema.yaml`:
-  - hearing kind — `What The Hearing Established` replaced with
-    `Witnesses & Testimony` in required_sections
-  - research-artifact spec gains `event_intrinsic` + `participants`
-    on event artifacts; `witnesses_testimony` conditional on
-    hearing kind; `corroboration_items` extended to also apply to
-    encounter-kind event artifacts (shared entry shape with
-    eyewitness person artifacts)
-  - New entry shapes: `participant_entry`, `witnesses_testimony_entry`
-  - New vocabulary: `VALID_PARTICIPANT_CAPACITY` and
-    `VALID_OATH_STATUS`
-  - Invariants block updated for the new conditional rules
-- `meta/templates/event.md`:
-  - `What The Hearing Established` + `What The Hearing Did Not
-    Establish` sections removed; `Witnesses & Testimony` added
-  - Corroboration column layout fixed per the BACKLOG entry from the
-    F.1c audit: `Observer | Type | What It Confirms | Attested In`
-- `scripts/validate-research.py`:
-  - Target-frontmatter reader generalized (archetype + kind +
-    future expansion)
-  - `EVENT_REQUIRED_KEYS` required on every event artifact
-  - `EVENT_KIND_REQUIRED_SECTION` rule enforces exactly one of
-    witnesses_testimony (hearing) / corroboration_items (encounter)
-  - `check_participants()` and `check_witnesses_testimony()` helpers
-  - `corroboration_items` absent-on-other-archetypes check relaxed
-    to allow encounter events to carry the section
-  - Check #16 PROSE_FIELDS_BY_TYPE and PROSE_ENTRY_FIELDS_BY_TYPE
-    gain event entries
-- `scripts/research-scaffold.py`:
-  - Reads target kind from event node frontmatter
-  - Scaffolds `event_intrinsic = {}` + `participants = []` on every
-    event artifact; kind-conditional section scaffolded correctly
-
-All pre-commit gates green; Fravor person artifact unchanged (no
-regression). Both event kinds scaffold + validate cleanly.
-
-#### F.2b — event renderer in build-from-research.py  ✅ DONE (2026-04-19)
-
-Extended `build-from-research.py` with event-type support. Per-kind
-dispatch + 10 section renderers:
-
-- `render_title_event` — prefers context_extrinsic.display_title,
-  falls back to event_intrinsic.hearing_title or humanized slug
-- `render_event_summary(kind)` — populates from event_intrinsic
-  with per-kind field lists (hearings emit hearing_title / committee
-  / session / congress / date / location / chair; encounters emit
-  date / location / duration / weather / instruments_involved).
-  Skips rows with empty values.
-- `render_event_description` — from artifact.description
-- `render_participants_encounter` — flat Confirmed/Flagged table
-- `render_participants_hearing` — sub-sectioned by participant
-  capacity (Witnesses — Eyewitness / Whistleblower / Institutional
-  Testimony / Committee Members), plus Flagged rollup
-- `render_timeline` — reused from F.1b
-- `render_key_testimony` — hearing-only; verbatim block-quote +
-  verification-block pairs sorted by statement_date. Reuses
-  `_render_statement_block` from F.1b.
-- `render_witnesses_testimony` — hearing-only; cross-reference table
-  (witness / oath status / transcript / written testimony). Replaces
-  the prior What The Hearing Established synthesis section.
-- `render_corroboration` — shared between eyewitness person and
-  encounter event. Column layout revised to Observer | Type | What
-  It Confirms | Attested In (was Source | Type | What It Confirms |
-  Node Link — inverted the investigator scan order). F.1c finding
-  from BACKLOG closed by this revision.
-
-Supporting changes:
-- `scripts/build-from-research.py` SUPPORTED_TYPES gains `event`
-- `scripts/review-coverage.py` SUPPORTED_TYPES matches
-- Existing Fravor person node regenerated under the revised
-  Corroboration column layout (no regression; review-coverage
-  Boundary check passes against the re-rendered dry-run)
-
-End-to-end verification: synthetic encounter artifact scaffolds +
-validates + renders + passes review-coverage. Check #16 correctly
-caught a test-prose-token injection (1/1 unmatched = 100% = ERROR).
-Person Corroboration regeneration across the layout change was
-clean.
-
-#### F.2c — Nimitz encounter pilot  ✅ DONE (2026-04-19)
-
-First end-to-end event node through Phase I → II → III under the F.2b
-encounter renderer. `/events/2004-nimitz-encounter` built at iteration
-i1 from a single archived primary source (Fravor's 2023 written
-testimony):
-
-- `event_intrinsic`: date, location, weather, 5 instruments (Aegis
-  SPY-1, AN/APG-73, FLIR pod, visual, pilot HUD)
-- `context_extrinsic`: display_title, primary_source_url
-- `description`: 3-paragraph prose grounded in source vocabulary
-- 7 participants (Fravor, Dietrich, Underwood, Princeton Aegis operator,
-  VFA-41, USS Princeton, USS Nimitz)
-- 9 timeline entries chronologically ordered
-- 3 corroboration items (Dietrich testimonial, USS Princeton
-  instrumented, FLIR1 video documentary)
-- 12 entities_referenced
-- 1 naming_quirk (Lue → Luis; alias-of-record, 2 source instances)
-- 5 research_gaps, 3 rumors (Underwood as FLIR1 pilot; "Southern
-  California" location; November 14 exact date)
-- `quotes: []`, `claims: []` — encounter renderer emits no Key Testimony
-  / What-This-Establishes section, so evidentiary content flows through
-  structured surfaces (description + timeline + participants +
-  corroboration) rather than verbatim quotes
-
-All pipeline stages green:
-  validate-research.py  0 errors / 2 warnings (both exempt timeline cells)
-  build-from-research.py  0 errors + post-build validate clean
-  review-coverage.py  0 / 0 (Coverage / Boundary / Stub-linking / OQ dedup)
-
-**Pilot finding absorbed (pre-F.3 hardening — memory + contributor
-policy).** User-driven scope revision on check #16 resolution policy.
-i0 shipped with 4 check #16 warnings initially rationalized as
-"legitimate synthesis vocabulary." Corrected to the durable contributor
-policy captured in `feedback_check16_warnings_must_resolve.md`:
-every warning on free-prose synthesis fields (`description`,
-`background`, `uap_relevance`, `credibility_notes`) needs real
-resolution — source-match rewrite or promotion to structured
-evidentiary data. Timeline-cell cosmetic voice-swap warnings exempt.
-i1 drove prose-field warnings to zero; 2 timeline-cell warnings
-remain under the scoped exemption. Pre-F.2c roadmap anchored at
-commit 305407d; policy propagation followed in the prompts/build.md
-Phase I Step 12 refresh (commit f9bad12).
-
-### F.3 — transcript  ✅ DONE (F.3a + F.3b + F.3c shipped 2026-04-19)
-
-Two kinds after the post-Step-D revision (`hearing`, `other`). Design
-pass completed in the F.2c session post-commit (2026-04-19).
-
-**Decision 1: `derived_from` pointer — auto-populate.**
-When the transcript frontmatter carries `derived_from` (path to the
-underlying media or document node), the renderer emits a Publication
-Record row from the frontmatter directly. Row label dispatched by path
-prefix — `Underlying Media Node` for `/media/...`, `Underlying
-Document` for `/documents/...`. When the field is absent, the row is
-omitted (absence is its own signal; no "N/A" placeholder). Parallel
-treatment for the optional `source_medium` frontmatter field —
-auto-populate a Source Medium row when set. Rationale: keeps
-frontmatter as the single source of truth, preserves Phase II
-deterministic-render discipline, matches review-coverage Boundary
-integrity, and surfaces provenance in the section where investigators
-already scan for it rather than in frontmatter that requires a view
-switch. No artifact field duplication needed.
-
-**F.3c D3 refinement (2026-04-19).** Hearing transcripts vs. their
-companion written testimony are independent primary records of the
-same event — neither is "derived from" the other. Hearing transcripts
-use `context_extrinsic.companion_written_testimony` for the
-cross-reference (renders as the "Companion Written Testimony" PR row);
-`derived_from` is reserved for transcripts where the text record IS a
-rendering of an underlying media/document node (typical: `other`-kind
-transcripts of podcasts / video interviews / press conferences). The
-renderer shipped with a `derived_from → /documents/...` fallback path
-on hearing transcripts for backward compatibility; **fallback removed
-2026-04-20** after all three hearing-transcript pilots (Fravor,
-Grusch, Graves) used `companion_written_testimony` cleanly, satisfying
-the 3/3 BACKLOG trigger.
-
-**Decision 2 (superseded 2026-04-20).** A per-divergence "Material
-Differences" table on hearing transcripts was designed and shipped
-across F.3a/b/c with cross-artifact quote-ref machinery. Eliminated
-after the second pilot — cross-entity comparison between a hearing
-transcript and its companion written testimony is synthesis that
-belongs on a finding node, not on the transcript's primary record.
-Full decision record in the "Post-F.3 — Material Differences
-elimination" section below.
-
-**F.3 sub-phase decomposition** (mirrors F.1a/b/c and F.2a/b/c):
-
-#### F.3a — schema + template + validator + scaffolder  ✅ DONE (2026-04-19)
-
-Shipped in commit `9217693`. Core transcript-type groundwork still in
-effect: `scripts/research-scaffold.py` `KIND_SECTIONS_BY_TYPE` nested
-dispatch dict (also covers organization-kind dispatch in F.5); target_kind
-read generalized to transcript. Decision-2 machinery (schema
-`material_differences` key + shape, `TRANSCRIPT_KIND_REQUIRED_SECTION`,
-`VALID_DIVERGENCE_CLASS`, cross-artifact resolver, smoke fixtures) also
-shipped here but removed 2026-04-20 per the Post-F.3 elimination.
-
-**Scope deferral absorbed to BACKLOG.** Transcript top-level
-`description` field scanning by check #16 deliberately NOT added in
-F.3a — blocked on F.3b's renderer design settling whether
-`description` maps to `## Summary`, a new `## Description` section,
-or a new `summary` artifact field replacing it. Closed in F.3b when
-`description` was wired to `## Summary` and scoped into check #16 via
-`PROSE_FIELDS_BY_TYPE[transcript]`.
-
-#### F.3b — Phase II renderer  ✅ DONE (2026-04-19)
-
-Transcript support added to `build-from-research.py` in commit
-`6cb131a`. Sections emitted (both kinds): Publication Record (auto-
-populated from `derived_from` + `source_medium` frontmatter per F.3
-Decision 1), Summary (rendered from `artifact.description` via F.3
-Q1-A field→section rename), Speakers (from the `speakers[]` artifact
-field), Key Passages (verbatim block-quote + verification-block pairs
-from `quotes[]`, sorted by `statement_date`, H3 per quote for
-navigability).
-
-Supporting changes:
-- `scripts/build-from-research.py` SUPPORTED_TYPES gains `transcript`;
-  render helpers for title / publication record / summary / speakers /
-  key passages / body composition.
-- `scripts/review-coverage.py` SUPPORTED_TYPES matches.
-- `scripts/validate-research.py` — `speakers[]` required on every
-  transcript artifact; `speaker_entry` shape (name req, source req,
-  role/node_link/note opt); `speakers[].role` added to
-  `PROSE_ENTRY_FIELDS_BY_TYPE[transcript]` for check #16; transcript
-  top-level `description` added to `PROSE_FIELDS_BY_TYPE[transcript]`
-  (closes the F.3a scope deferral).
-- `scripts/research-scaffold.py` — transcript artifacts scaffold
-  `speakers: []` on every kind.
-- `meta/templates/transcript.md` — Speakers section added; Publication
-  Record rows per kind.
-
-Hearing-only Material Differences rendering also shipped in F.3b but
-removed 2026-04-20 per the Post-F.3 elimination.
-
-#### F.3c — Fravor hearing-transcript pilot  ✅ DONE (2026-04-19)
-
-First end-to-end transcript node through Phase I → II → III under the
-F.3b renderer. `/transcripts/2023-07-26-house-fravor` built at i0
-from the archived 54-page stenographic PDF. Shipped in commit
-`083c249`:
-
-- 39 quotes — 19 opening-statement + 20 substantive Q&A responses
-  spanning exchanges with Grothman, Burchett, Raskin, Moskowitz, Mace,
-  Langworthy, Gaetz, Ogles, Biggs, Frost, and Ocasio-Cortez. All
-  verified verbatim against source via validate.py check #11.
-- 19 speakers — 3 witnesses (Fravor/Graves/Grusch with node_link
-  wraps) + 16 Members who spoke. Role labels distinguish Subcommittee
-  Members from Members waived-on for this hearing.
-- 19 entities_referenced, 3 naming_quirks, 3 research_gaps.
-
-All three phases green: validate-research.py 0/0, build-from-research.py
-0 errors + post-build validate clean, review-coverage.py 0/0.
-
-Pilot finding absorbed inline. `scripts/build-from-research.py`
-`sort_by_date()` used raw string id as tie-breaker, lex-sorting same-
-date entries (q1, q10, q11, …, q19, q2, q20, …). Fix extracts
-`_id_natural_key()` from existing `sort_by_id()` and uses it as the
-sort_by_date tie-breaker. Fravor transcript Key Passages now flow in
-narrative order (q1 → q2 → … → q39). Fix benefits any future artifact
-with 10+ same-date entries in any date-sorted context.
-
-Broken-link registry holds at 32 unbuilt-stub targets — this transcript
-adds one new stub (/people/david-grusch from Fravor's q15 "Mr. Grusch
-just covered that") and surfaces no new cluster-scoped priority queue
-additions.
-
-### F.4 — media  ✅ DONE (F.4a + F.4b + F.4c shipped 2026-04-20)
-
-Shipped in the source-taxonomy consolidation as a type but with no
-renderer. Design pass completed 2026-04-20.
-
-**Decision 1: Key Passages extraction — one format-flexible entry type.**
-Media Key Passages cover two semantic shapes — verbatim speech (audio/
-video, timestamp-located) and verbatim visible text (photo/video
-legible text, spatial-coordinate-located). Rather than split the
-quote entry into two schemas, a single `quote_entry` accommodates both
-via a flexible `source.location` string: timestamp (`0:23-0:45`),
-timestamp + in-frame coordinate (`HUD bottom-right, 0:12`), or
-spatial-only (`upper-right corner`). Single entry type keeps the
-schema compact and lets the contributor choose the shape that best
-anchors the passage. Schema comment updated in F.4a.
-
-**Decision 2: Media Versioning — hybrid enum + free-text observations
-(Shape D).**
-Per-aspect entries with a 6-value `aspect` enum (duration / encoding /
-metadata / content / provenance / other) + free-text `parent_form` /
-`this_form` / `source` / optional `note`. The enum provides structured
-top-level filtering for future cross-node queries ("show all media
-with metadata scrubs"); free-text observation cells accommodate
-per-aspect shape variance (numerical for duration, list-like for
-metadata, prose for content). `other` is an extensibility escape
-that warns on use — signaling schema-growth discussion.
-
-**F.4 sub-phase decomposition** (mirrors F.1a/b/c, F.2a/b/c, F.3a/b/c):
-
-#### F.4a — schema + template + validator + scaffolder  ✅ DONE (2026-04-20)
-
-Groundwork for the F.4b renderer. Shipped in commit `0bf04cd` +
-tightening in a follow-on commit:
-
-- `meta/schema.yaml` — `media_versioning` conditional key
-  (`required_when_target_node_type_in: [media]`); `media_versioning_entry`
-  shape with 6-value `aspect` enum; `quote_source.location` comment
-  extended with media flexibility note (Decision 1); `document_intrinsic`
-  per-type convention comment extended with media keys
-  (internal_title / capture_date / duration / dimensions / file_format
-  / camera_device / embedded_metadata / color_mode / codec) paired
-  with context_extrinsic fields (display_title / release_date /
-  primary_source_url) + primary_sources[0].path / manifest sha256
-  for Local Archive / SHA256. Invariants block extended.
-- `scripts/validate-research.py` — `VALID_MEDIA_VERSIONING_ASPECT`
-  constant (6 values); media-type conditional enforcement (parallels
-  speakers on transcript, corroboration_items on eyewitness);
-  `check_media_versioning()` helper (required fields, aspect enum,
-  source dict); check #16 scoping extended for media (PROSE_FIELDS
-  `description`; PROSE_ENTRY_FIELDS `media_versioning.note`); new warn
-  when target node has `derivation_of` set but `media_versioning` is
-  empty (contributor-forgot-to-populate signal; non-blocking).
-- `scripts/research-scaffold.py` — media artifacts scaffold
-  `media_versioning: []` on every kind regardless of derivation_of.
-- `meta/templates/media.md` — Media Versioning columns revised from
-  Dimension / Parent / This Derivative / Significance → Aspect /
-  Parent / This / Source / Note (Decision 2 shape) + per-column
-  guidance.
-- `tests/smoke.sh` — new media-type research-artifact dispatch block
-  (5 cases); smoke count 31 → 36.
-
-End-to-end verification: all 5 media-kind scaffolds scaffold + validate
-clean. Derivative fixture surfaces the new "empty media_versioning
-when derivation_of set" warn (non-blocking; contributor review).
-
-#### F.4b — Phase II renderer  ✅ DONE (2026-04-20)
-
-Shipped in commit `f37ffd2` + cosmetic tightening in `dde4b51`. Media
-renderer added to `build-from-research.py` — per-kind section
-structure (Media Summary / Description / Provenance / conditional
-Media Versioning / Key Passages) with 5 new render helpers
-(`render_title_media`, `render_media_summary`, `render_media_versioning`,
-`render_media_key_passages`, `render_body_media`) + dispatch into
-`render_body`. Decision 1 (single format-flexible quote entry type)
-flows through via `_render_verification_block` reuse — timestamp /
-spatial / combined location strings pass through verbatim. Decision
-2 (Media Versioning Shape D) renders Aspect / Parent / This / Source /
-Note columns. Conditional rule: section emits when artifact has
-entries OR frontmatter has `derivation_of` set (schema
-conditionally_required compliance); placeholder row when derivation
-set + empty entries (validator warn surfaces the gap non-blockingly).
-`_manifest_sha256_for` helper looks up SHA256 per primary source.
-`review-coverage.py` SUPPORTED_TYPES extended; all 4 checks
-generalize. Smoke 36 → 46 (5 media kinds × 3 new pipeline phases each).
-Post-pilot cosmetic fix: Media Summary Duration/Dimensions label
-adapts to populated fields (video → combined; audio → Duration only;
-photo → Dimensions only).
-
-#### F.4c — FLIR1 pilot  ✅ DONE (2026-04-20)
-
-First real media node end-to-end through the F.4b renderer. Shipped
-in commit `859ca42` + follow-up `c065e4a`. `/media/flir1-video` built
-at iteration i0 from the DoD 2020 authorized release of the 2004
-USS Nimitz targeting-pod video (downloaded from NAVAIR FOIA at
-https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/
-2020-04/1%20-%20FLIR.mp4). MP4 parsed: 76.30 seconds, 352x264,
-mvhd creation_time `2007-09-18T10:18:36Z` — consistent with DoD's
-"unauthorized releases in 2007" acknowledgment. Canonical framing
-(no derivation_of); media_versioning empty; Provenance chain
-captures the full distribution history (2004 capture → 2007 first
-unauthorized release per mvhd metadata + DoD statement → 2017-12
-TTSA/NYT second unauthorized release → 2020-04-27 DoD authorized
-release via NAVAIR FOIA → 2026-04-20 local archive). Key Passages
-empty (video unextractable by pdftotext; research_gap rg1 tracks
-HUD-text extraction; research_gap rg2 cockpit-audio transcription).
-Pilot findings absorbed in-session:
-- `review-coverage.py` binary-source handling — gather_source_text
-  previously errored on unextractable media; tightened to warn
-  (file exists but isn't text-extractable — binary media, follows
-  validate.py check #11's impartial framing). F.4c's MP4 passes
-  review-coverage with 1 warn.
-- `scripts/manifest.py` + `scripts/research-scaffold.py` — video
-  extensions (.mp4/.m4v/.mov/.webm/.avi/.mkv) now map to `video`
-  format rather than falling back to `html`. Audio/image mappings
-  deferred pending schema format_values extension (BACKLOG).
-- `scripts/validate-research.py` — new pre-parse check for YAML `#`
-  comment-truncation in unquoted scalars (surfaced during F.4c's
-  research_gap methodology had "validate.py check #11" silently
-  truncated). Warn-level; prose-quote-or-rewrite guidance in message.
-
-Pilot candidate: `/media/flir1-video` (primary); alternative
-`/media/gimbal-declassified` has similar structure.
-
-### F.5 — organization  ✅ DONE (F.5a + F.5b + F.5c shipped 2026-04-20)
-
-Under the statements-only discipline, organizations don't speak —
-officials speak for them. "What Is Confirmed" (prose synthesis layer
-subject to fine drift) eliminated across all three kinds; facts about
-orgs flow through Key Passages (verbatim excerpts about the org),
-Timeline (dated events), Key Personnel (people with sourced roles +
-leadership_class sub-grouping), Primary Contracts (gov-contractor only;
-AAWSAP-shaped with deliverables sub-list), and Description (labeled
-synthesis).
-
-#### F.5a — schema + template + validator + scaffolder  ✅ DONE (2026-04-20)
-
-Six-question design pass settled: (1) eliminate What Is Confirmed;
-(2) skip Institutional Assessment; (3) Overview = fact table from
-document_intrinsic per-kind keys; (4) Key Personnel entry with
-leadership_class enum (director / deputy / staff / advisor / other);
-(5) Primary Contracts shape influenced by AAWSAP/DIRD corpus;
-(6) Timeline + Relationships standard shapes + new org_relationships
-entry with relationship_type enum (parent / subsidiary / predecessor /
-successor / contractor / contracting-agency / partner / other).
-
-Shipped: schema section rewrite (3 kinds, new section_rules for Key
-Passages and Primary Contracts, extended document_intrinsic per-kind
-conventions); meta/templates/organization.md rewritten; new entry
-shapes (key_personnel_entry, contract_entry, org_relationship_entry);
-new enums (VALID_LEADERSHIP_CLASS, VALID_ORG_RELATIONSHIP_TYPE); 3
-new validate-research.py check helpers (check_key_personnel,
-check_org_relationships, check_contracts); type + kind conditional
-enforcement; check #16 extended for organization (description +
-timeline.event + key_personnel.role/note + org_relationships.note +
-contracts.subject/note); research-scaffold.py extended; smoke tests
-49 → 55 (3 org-kind fixtures × full pipeline).
-
-#### F.5b — Phase II renderer  ✅ DONE (2026-04-20)
-
-Seven new render helpers (title, overview fact-table dispatch,
-key_personnel with leadership_class sub-grouping + empty-sub-
-subsection suppression, key_passages with per-quote verification
-blocks, primary_contracts with deliverables sub-list, org_relationships,
-body dispatcher). Timeline + Description + Associated Nodes + Open
-Questions reuse existing helpers. review-coverage.py SUPPORTED_TYPES
-extended; four checks generalize.
-
-#### F.5c — AARO pilot  ✅ DONE (2026-04-20)
-
-First real-content organization node end-to-end. `/organizations/aaro`
-built at iteration i0 from 11 archived primary sources spanning
-establishment (Hicks memo 2022-07-15, DoD press release 2022-07-20,
-Moultrie memo 2022-07-20), director lifecycle (Kirkpatrick bio +
-departure, Phillips bio, Kosloski appointment), key publications
-(AARO HRR Vol I 2024-03-08, AARO website launch 2023-08-31), and
-predecessor establishments (AOIMSG 2021-11-23, UAPTF 2020-08-04).
-
-10 Key Passages — mission statement + scope + authoritative-office
-designation + DoD focal-point role (Hicks memo), AOIMSG-rename press
-narrative (DoD release), Kirkpatrick tenure accomplishments (800+ UAP
-cases), Kosloski appointment and mission framing, and the two HRR
-Vol I Executive Summary top-line findings (no extraterrestrial
-sightings confirmed; no empirical evidence for USG reverse-engineering).
-
-3 key_personnel entries routing through leadership_class (Kirkpatrick
-director 2022-07 to 2023-12, Phillips deputy 2023-10 onward,
-Kosloski director 2024-08 onward). 4 org_relationships (DoD parent,
-AOIMSG and UAPTF predecessors, ODNI partner). 10 timeline entries.
-10 entities_referenced. 2 naming_quirks (All-domain vs All-Domain
-case inconsistency; AOIMSG vs full Synchronization Group name).
-5 research_gaps. 2 rumors.
-
-All three phases clean: validate-research 0/0, build-from-research
-0 errors + post-build validate clean, review-coverage 0/0 across
-Coverage / Boundary / Stub-linking / OQ dedup. 11-source corpus; 20
-archived files total in manifest. Pre-commit chain 6/6 green.
-
-Pilot findings absorbed inline: HTML source-extraction caveats
-documented — pdftotext preserves `&amp;` and `&#39;` entities literally
-and does not strip `<a href>` tags. Contributors quoting HTML sources
-must either preserve entities verbatim in quote text OR shorten the
-quote to avoid the entity / tag span. Applied on q5, q6, q8 during
-i0 population.
-
-### F.6 — location  ✅ DONE (F.6a + F.6b + F.6c shipped 2026-04-20)
-
-Inanimate hub. Minimal synthesis; mostly navigational. Three
-conditional list sections (ownership_timeline, uap_scope_activity,
-location_relationships) carry the evidentiary surface; Description
-is labeled synthesis; Key Passages carry verbatim excerpts; rumors
-absorb popular paranormal lore that lacks primary-source backing.
-
-#### F.6a — schema + template + validator + scaffolder  ✅ DONE (2026-04-20)
-
-Shipped in commit `5a67ec1`. Core groundwork:
-- `meta/schema.yaml` — location document_intrinsic per-type keys
-  (full_name / alternate_names / location_type / geographic_location /
-  approximate_coordinates / ownership_history_summary /
-  scope_significance); three conditional keys (ownership_timeline,
-  uap_scope_activity, location_relationships) required on every
-  location artifact; three entry shapes (ownership_timeline_entry,
-  uap_scope_activity_entry, location_relationship_entry); invariants
-  block extended.
-- `scripts/validate-research.py` — location-type conditional
-  enforcement; three new per-section check helpers; check #16 scoped
-  to location (description + ownership_timeline.use_status/note +
-  uap_scope_activity.activity/note + location_relationships.relationship/note).
-- `scripts/research-scaffold.py` — location artifacts scaffold the
-  three conditional lists as empty.
-- `meta/templates/location.md` added.
-
-#### F.6b — Phase II renderer  ✅ DONE (2026-04-20)
-
-Shipped in commit `2ea204d`. Location support added to
-`build-from-research.py`: render helpers for title, Overview fact
-table (from document_intrinsic), Description, Ownership Timeline
-(chronologically sorted), UAP-Scope Activity, Key Passages (verbatim
-blocks), and Relationships (heterogeneous entity_path with Confirmed /
-Flagged split). `review-coverage.py` SUPPORTED_TYPES extended; four
-checks generalize.
-
-#### F.6c — Skinwalker Ranch pilot  ✅ DONE (2026-04-20)
-
-First location node end-to-end through Phase I → II → III. Shipped
-in commit `353b891`. `/locations/skinwalker-ranch` built at i0 from
-15 archived primary sources spanning all four ownership eras (Myers
-1933–1994, Sherman 1994–1996, Bigelow/NIDS 1996–2016, Fugal 2016–
-present) plus AAWSAP institutional research era (2008–2012).
-
-Populated: 7 document_intrinsic keys, 3-paragraph description, 10
-verbatim Key Passages (each verified against source), 19
-entities_referenced, 4 naming_quirks (including 480-vs-512-acre
-resolution), 8 research_gaps (deed-record archival paths), 4 rumors
-(including 512-acre secondary-source figure contradicted by primary
-Uintah records), 4 ownership_timeline entries, 3 uap_scope_activity
-entries (NIDS + BAASS/AAWSAP + Fugal-era), 12 location_relationships.
-
-Post-pilot iterations absorbed inline: i1 (commit `771c125`) surfaced
-all 7 Uintah County parcel records as Key Passages q11–q17 after user
-review noted parcel detail was only aggregated into prose; i2 (commit
-`51f0c1d`) registered Myers-era co-owners Kenneth + Edith as
-entities_referenced + location_relationships; i3 (commit `87bed33`)
-split document_intrinsic.approximate_coordinates into coordinates +
-legal_description after user audit flagged PLSS description mis-
-labeled as coordinates (schema key + renderer + template + artifact
-updated; single-node retrofit).
-
-### F.7 — finding  ⏸ PENDING (last)
-
-Landed last so the discipline around the other seven types is fully
-stable before finding's synthesis surface (if any) is ratified.
-
-Design pass: decide what synthesis section — if any — the finding
-type carries under statements-only. Options include a hard-anchored
-claim layer (every sentence verbatim-quote-anchored to an entry in
-an artifact's quote list, enforced mechanically), a quotes-only
-Key Passages layer parallel to documents, or a cross-reference
-surface parallel to the hearing Witnesses & Testimony table. The
-legacy `What This Establishes` / `What This Does Not Establish`
-sections were removed from the template and schema 2026-04-20 as
-pre-F.7 cleanup — F.7 starts from a clean slate.
-
-No pilot candidate yet — will emerge from cross-entity patterns
-observed during G (content population).
+## Architectural corrections
+
+Four post-launch corrections shape the current design. Each came from
+running the pipeline against real sources and observing a gap between
+what mechanical checks catch and what the discipline requires.
+
+### Document nodes have no claims layer (Post-Step D, 2026-04)
+
+Audits kept finding fine drift in contributor-written `claim.statement`
+prose — dropped qualifiers, synonym rephrases, word-level
+condensations — that the claim-anchor check couldn't catch. Root cause:
+the claims layer itself. A contributor-synthesis layer between source
+and reader is an unavoidable drift surface while the layer exists.
+
+Correction: document nodes ARE their fact record. Evidentiary content
+is verbatim source passages in Key Passages. Other nodes that cite
+facts from a document link to the document and reference the specific
+passage. No intermediate paraphrase can drift.
+
+**Synthesis nodes** (person, organization, event, finding, location)
+retain claim-like sections when analytical purpose requires them
+(Claim Inventory on whistleblowers, What The Hearing Established on
+hearings, etc.).
+
+### Source-taxonomy partition (Post-Step D, 2026-04)
+
+`news` and `book` were separate node types carrying their own
+contributor-synthesis sections (same drift surface as claims). Plus:
+the pre-consolidation schema bolted non-text primary sources onto
+`document` via `doc_form: video` — wrong shape for photos (no text)
+and for videos with pilot audio (speech belongs on a transcript).
+
+Partition by evidentiary primitive:
+
+| Primitive | Node type |
+|---|---|
+| Verbatim text from text-native source | `document` |
+| Verbatim speech rendered from speech-native source | `transcript` |
+| Metadata + provenance of non-text artifact | `media` |
+
+`news` and `book` absorbed into `document` via `doc_form: article | book`;
+new `media` type with four kinds (photo, video, audio, imagery-other);
+`transcript.kind: interview` → `other` to cover podcasts / press
+conferences / documentaries.
+
+### Material Differences eliminated from hearing transcripts (Post-F.3, 2026-04-20)
+
+Hearing transcripts initially carried a per-divergence Material
+Differences table comparing oral vs companion written testimony.
+Cross-entity comparison between a transcript and its companion
+document is synthesis — belongs on a finding node, not on either
+primary record. Feature removed after the second pilot; cross-artifact
+resolver machinery went with it. Rebuild when F.7 needs cross-artifact
+refs under finding-node design discipline.
+
+### Iteration log eliminated (2026-04-21)
+
+Research artifacts tracked edits via `last_iteration` + `iterations[]`
++ per-entry `added_by_iteration`. Git already provides when / who / why
+/ what-changed. The iteration log was ceremony duplicating git; summary
+fields drifted into commit-message-length essays embedded in artifacts.
+Removed: schema specs, validator checks, scaffolder initialization,
+794 per-entry refs across 15 artifacts. Content versioning
+(`superseded_by` / `contradicted_by` / `corroborated_by`) retained —
+those are orthogonal to edit history.
 
 ---
 
-## Step G — Content population  ⏸ INTERLEAVED WITH F
+## Open architectural threads
 
-The toolkit's purpose. Each F sub-phase's pilot is a G node; additional
-G nodes in the same cluster follow once the renderer is stable.
-
-**First cluster — 2004 Nimitz encounter.** Structurally the tightest
-target: one event, three pilots, one primary media artifact, companion
-transcripts, and one already-built document (Fravor written testimony).
-Cluster-scope first-pass targets:
-
-- `/events/2004-nimitz-encounter` (F.2 pilot) ✅ DONE 2026-04-19
-- `/people/david-fravor` (F.1 pilot) ✅ DONE 2026-04-19
-- `/transcripts/2023-07-26-house-fravor` (F.3 pilot) ✅ DONE 2026-04-19
-- `/media/flir1-video` (F.4 pilot) ✅ DONE 2026-04-20
-- `/people/alex-dietrich` (follow-on; same archetype) ⏸ pending
-- `/people/chad-underwood` (follow-on) ⏸ pending
-
-Cluster-close when the ring validates cleanly against schema,
-cross-references resolve in both directions, and the research-queue
-broken-link registry for the cluster has drained.
-
-The Fravor person node registers 15 broken-link stubs (Nimitz cluster
-entities). Those are the build queue for the remainder of Step G's
-first cluster — F.1b through F.5b renderers + their pilots are all
-shipped, so the remaining work is pure content population (Dietrich,
-Underwood, supporting orgs) under the existing renderer surface.
-
-**Second cluster — 2023-07-26 House Oversight hearing.** In flight as
-of 2026-04-20. A known-complete primary-source cluster (three
-witnesses, one stenographic transcript PDF, three companion written-
-testimony PDFs, one published event page). Cluster-scope targets:
-
-- `/transcripts/2023-07-26-house-fravor` ✅ DONE 2026-04-19 (F.3c pilot)
-- `/events/2023-07-26-house-uap-hearing` ✅ DONE 2026-04-20 (F.2b
-  hearing-kind stress test)
-- `/documents/written-testimony-fravor-2023` ✅ DONE (pre-refactor)
-- `/documents/written-testimony-graves-2023` ✅ DONE (pre-refactor)
-- `/documents/written-testimony-grusch-2023` ✅ DONE 2026-04-20 (D.3
-  document renderer; dense whistleblower primary source — 14 Key
-  Passages covering identity/role, PPD-19/ICIG filing, sworn-but-
-  relayed framing, NRO/UAPTF institutional role, core multi-decade
-  program allegation, retaliation, and closing Non-Human Reverse
-  Engineering Programs framing)
-- `/transcripts/2023-07-26-house-grusch` ✅ DONE 2026-04-20 (second
-  F.3b hearing-transcript pilot; 44 quotes / 19 speakers / 19
-  entities_referenced / 2 naming_quirks / 5 research_gaps — commit
-  a1b5609; iterated to i2 through subsequent Post-F.3 Material
-  Differences elimination)
-- `/transcripts/2023-07-26-house-graves` ✅ DONE 2026-04-20 (third
-  F.3b hearing-transcript pilot; 37 quotes / 19 speakers / 12
-  entities_referenced / 1 naming_quirk / 5 research_gaps — commit
-  159b2e7)
-- `/people/david-grusch` ✅ DONE 2026-04-20 (F.1b whistleblower-archetype
-  pilot; two primary sources: written testimony + Congressional
-  biographical submission; 11 quotes, 9 affiliations, 15 timeline
-  entries, 3 filed-claim tagged quotes routing to Claim Inventory, 6
-  research gaps, 2 rumors — Vouching Chain empty at i0 pending
-  Debrief/NewsNation extraction)
-- `/people/ryan-graves` ⏸ pending (eyewitness-archetype follow-on —
-  final Cluster B stub)
-
-**Third cluster — UAP oversight institutions.** In flight as of
-2026-04-20. The central DoD UAP oversight organizations (UAPTF →
-AOIMSG → AARO lineage) plus their supporting stubs.
-
-- `/organizations/aaro` ✅ DONE 2026-04-20 (F.5c pilot)
-- `/organizations/uaptf` ✅ DONE 2026-04-20 (second gov-kind org; 11
-  primary sources including FOIA'd UAP SCG + UAPTF Charter; Gough
-  DoD PA statement naming Stratton; Senate Report 116-233 Advanced
-  Aerial Threats section; 11 Key Passages; 3 key_personnel with
-  leadership_class; 9 timeline entries)
-- `/organizations/oni` ⏸ pending (UAPTF parent; surfaced as stub)
-- `/organizations/nia` ⏸ pending (UAPTF Charter signing authority;
-  surfaced as stub)
-- `/people/david-norquist` ⏸ pending (DSD approver of UAPTF; stub)
-- `/people/travis-taylor` ⏸ pending (informal UAPTF Chief Scientist;
-  stub)
-- `/organizations/odni` ⏸ pending (partner; referenced in AARO +
-  UAPTF)
-- `/organizations/aoimsg` ⏸ pending (interim successor to UAPTF;
-  referenced in AARO + UAPTF; did not reach operational capability
-  per DODIG-2023-109)
-
-The UAPTF build surfaced three tooling improvements absorbed in a
-follow-on commit (see "Post-F.5 pilot-findings hardening" below).
-
-G milestones are emergent, not pre-planned. The research queue
-(`meta/topic/research-queue.md`) drives additions after each cluster
-closes.
+- **Statements-only across all synthesis nodes.** Post-Step-D removed
+  the claims layer from documents. Open: whether the same discipline
+  extends to surviving claim-like sections on synthesis nodes (Claim
+  Inventory, What The Hearing Established, etc.). Each F sub-phase's
+  design pass reopens this for its type.
 
 ---
 
-## Post-F.5 pilot-findings hardening  ✅ DONE (2026-04-20)
+## Completed phases (index)
 
-Three pipeline improvements absorbed from the F.5c AARO pilot + UAPTF
-second-node build rather than deferred to BACKLOG:
+Detailed what-shipped bullets live in git commits; this index exists
+so a contributor can recognize what the phase produced.
 
-1. **Markdown block-quote markers in `normalize_for_compare`.** Multi-
-   line YAML literal-block quotes (`|-`) render as multi-line Markdown
-   block quotes with `> ` on each line. The pre-fix normalizer didn't
-   strip those line-prefix markers, so a multi-line quote text's
-   normalized form didn't substring-match the normalized body.
-   Surfaced on UAPTF's q3 (UAP SCG Purpose) and q9 (Senate Report
-   Advanced Aerial Threats). Fix: extended `normalize_for_compare` in
-   both `validate.py` (check #11) and `review-coverage.py` (Coverage
-   + Boundary + description checks) to strip `(?m)^\s*>\s?` before
-   hyphen and whitespace normalization. Kept in lockstep across both
-   scripts.
-
-2. **Wrap-inside-parens orphan-parens in `strip_markdown_links`.**
-   When contributors wrote `Name ([`/path`])` inside a double-quoted
-   span in a description, the standard wrap-stripping left behind
-   `Name ()` — and the bare `()` leaked into the double-quoted-span
-   token that the description-drift check extracts, failing the
-   substring check against source. Surfaced on the Norquist wrap in
-   UAPTF description. Fix: added a pre-pass `WRAP_IN_PARENS_PATTERN`
-   in `review-coverage.py` that strips `(\s*[`/path`]\s*)` as a single
-   unit before the standard wrap-only strip.
-
-3. **HTML entity + OCR preservation discipline documented.**
-   `prompts/build.md` Step 6 Discipline gained three new bullet
-   points: (a) preserve HTML entities (`&nbsp;`, `&#39;`, `&amp;`)
-   verbatim from HTML source extractions; (b) preserve OCR artifacts
-   (`identifYing`, `chaner`, `Unidenlified`, dropped-N artifacts)
-   verbatim from FOIA'd PDF extractions; (c) place wrap paths OUTSIDE
-   the closing quote of double-quoted spans to avoid the orphan-parens
-   failure mode even with fix #2 in place. Surfaced across 4+ UAPTF
-   quotes (q1 + q2 + q3 + q5).
-
-All three fixes verified end-to-end: UAPTF's original multi-line
-YAML + wrap-inside-quote failure patterns were restored after the
-fixes shipped and the pipeline passed 0 errors / 0 warnings across
-validate-research / build-from-research / review-coverage.
-
----
-
-## Post-F.3 — Material Differences elimination  ✅ DONE (2026-04-20)
-
-**Third architectural correction post-launch** (after the claims-layer
-elimination and the source-taxonomy consolidation). Pattern matches
-the prior two: a feature that looked sound at design time produced
-content that, once populated at real-source scale, revealed its
-structural misfit.
-
-Hearing-transcript Material Differences (F.3 Decision 2) shipped as a
-per-divergence table with cross-artifact `written_ref` + intra-artifact
-`oral_ref` + divergence-class enum + contributor-synthesis note.
-Exercised end-to-end through the Fravor pilot (16 entries) and the
-Grusch pilot (15 entries), then eliminated. Reasons:
-
-- A transcript's role is the verbatim record of a proceeding — its
-  evidentiary content is `## Key Passages`. Cross-entity comparative
-  analysis (written vs. oral across two sibling artifacts) is exactly
-  the cross-entity pattern `meta/conventions.md` defines `finding`
-  nodes for.
-- The note field pushed contributor-synthesis prose onto the
-  evidentiary record, contradicting the statements-only discipline
-  established by the Post-Step-D claims-layer elimination.
-
-Schema / code / template / prompt / node-body / artifact / smoke-
-fixture surfaces were removed across commits 52d9591, 37f70da, and
-0bda115. The cross-artifact quote-ref resolver machinery was removed
-with it (no callers remained after the feature went; retaining it for
-speculative future use contradicted the no-dead-code discipline). When
-F.7 (finding renderer) needs cross-artifact resolution, the machinery
-will be rebuilt under the finding-node design discipline.
-
----
-
-## Architectural threads still open
-
-- **Statements-only discipline across all synthesis nodes.**
-  Post-Step-D removed the claims layer from documents; open question
-  is whether the same discipline extends to the surviving
-  claim-like sections on synthesis nodes (Claim Inventory,
-  What The Hearing Established, What The Book States — the last
-  one already resolved by collapsing book into document). Each F
-  sub-phase's design pass reopens this for its type.
+| Phase | Status | Summary |
+|---|---|---|
+| Step 0 — Design consultation | ✅ | Scope definition: topic-neutral toolkit, ground-up refactor, minimum taxonomy, schema-driven validation |
+| Step A — Schema, conventions, scripts skeleton | ✅ | `schema.yaml`, `conventions.md`, templates, scaffolder, validator, manifest, archive, transcribe, associate, build-state |
+| Step B — Bug fixes | ✅ | B1 manifest SHA256; B2 `schema_version` value check |
+| Step C — Pilot failure postmortem | ✅ | Mechanical verbatim quote verification (validator check #11), source-read-first rule, one-node-per-session rule |
+| Step D — Layered-process tooling | ✅ | Phase I/II/III split: `research-scaffold.py`, `extract-source.py`, `build-from-research.py`, `review-coverage.py`, `validate-research.py` |
+| Step E.1 — Pre-commit / CI hook | ✅ | `tests/pre-commit.sh` chains 5 gates (help-check / smoke / validate.py / validate-research.py / build-state.py --check) |
+| Step E.2 — Iteration tooling | ❌ REMOVED 2026-04-20 | `iterate.py` planned then removed pre-implementation — git handles iteration audit at current volume |
+| F.1 — person renderer | ✅ 2026-04-19 | `build-from-research.py` supports person across all 4 archetypes; Fravor pilot |
+| F.2 — event renderer | ✅ 2026-04-19 | hearing + encounter kinds; Nimitz encounter pilot; Witnesses & Testimony table replaces What The Hearing Established |
+| F.3 — transcript renderer | ✅ 2026-04-19 | hearing + other kinds; Fravor transcript pilot; `derived_from` auto-populates Publication Record |
+| F.4 — media renderer | ✅ 2026-04-20 | photo/video/audio/imagery-other kinds; FLIR1 pilot; Media Versioning conditional on `derivation_of` |
+| F.5 — organization renderer | ✅ 2026-04-20 | gov/gov-contractor/private kinds; AARO pilot; Key Personnel with leadership_class sub-grouping; Primary Contracts (gov-contractor only) |
+| F.6 — location renderer | ✅ 2026-04-20 | non-institutional site type; Skinwalker Ranch pilot; ownership_timeline / uap_scope_activity / location_relationships conditional sections |
 
 ---
 
@@ -1331,8 +169,6 @@ will be rebuilt under the finding-node design discipline.
 - 🟡 = in progress
 - ⏳ = pending (next-up)
 - ⏸ = deferred (not next-up)
+- ❌ = removed / rejected
 - Phase completion = tooling ships + prompt/docs updated + smoke tests
   pass + relevant BACKLOG entries filed
-
-Keep this file ≤ one screen per step. Long-form design notes belong
-in `meta/toolkit-notes/{topic}.md` files, not here.

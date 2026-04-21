@@ -8,13 +8,10 @@ hard rule established after the 2026-04-17 pilot failure (see
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
 
-**Phase II scope (as of F.5b, 2026-04-20):** `build-from-research.py`
-supports **document, person, event, transcript, media, and
-organization** node types end-to-end. Location and finding nodes are
-still hand-authored from the research artifact pending their renderer
-sub-phases (F.6 → F.7; tracked in `meta/toolkit-notes/roadmap.md`).
-Until those ship, build unsupported types by hand following
-`meta/conventions.md`.
+**Phase II scope (as of F.6b, 2026-04-20):** `build-from-research.py`
+supports **document, person, event, transcript, media, organization,
+and location** node types end-to-end. Only `finding` remains
+hand-authored pending F.7 (tracked in `meta/toolkit-notes/roadmap.md`).
 
 ---
 
@@ -562,11 +559,11 @@ Deterministic transformation from research artifact → populated node
 body. No creative writing in Phase II. Every line in the node body
 traces to a research-artifact entry.
 
-**Scope (as of F.5b):** document, person, event, transcript, media,
-and organization node types. For location and finding, Phase II is
-still manual — follow `meta/conventions.md` and draw exclusively from
-the populated research artifact. Renderer extension is tracked per-
-type in `meta/toolkit-notes/roadmap.md` (F.6 → F.7).
+**Scope (as of F.6b):** document, person, event, transcript, media,
+organization, and location node types. Only `finding` remains hand-
+authored — follow `meta/conventions.md` and draw exclusively from the
+populated research artifact. Renderer extension tracked in
+`meta/toolkit-notes/roadmap.md` (F.7).
 
 ### Step 1. Regenerate the node from its research artifact
 
