@@ -4,7 +4,7 @@ schema_version: 1
 target_node: locations/skinwalker-ranch
 status: active
 created: '2026-04-20'
-last_iteration: i2
+last_iteration: i3
 description: 'Skinwalker Ranch — also called Sherman Ranch — is a private cattle ranch in Uintah County, Utah, nestled beneath a red-rock ridge between Fort Duchesne and Randlett. Under four documented owners: the Myers family (Kenneth and Edith Myers, c. 1933 to 1994), Terry and Gwen Sherman (1994 to 1996), Robert Bigelow (1996 to 2016), and Brandon Fugal via Adamantium Real Estate LLC (2016 to present).
 
 
@@ -83,7 +83,8 @@ document_intrinsic:
   - Sherman ranch
   location_type: Private cattle ranch
   geographic_location: Uintah County, Utah (between Fort Duchesne and Randlett)
-  approximate_coordinates: Sections 4, 5, and 33; Townships 2S and 3S; Range 1E; Uintah Special Meridian
+  coordinates: 40.2584, -109.8879
+  legal_description: Sections 4, 5, and 33; Townships 2S and 3S; Range 1E; Uintah Special Meridian
   ownership_history_summary: Myers family (c. 1933-1994); Terry and Gwen Sherman (1994-1996); Robert Bigelow (1996-2016); Brandon Fugal via Adamantium Real Estate LLC (2016-present)
   scope_significance: 'Documented site of institutional UAP research programs: NIDS (1996-2004), BAASS/AAWSAP (2008-2012), and Fugal-era investigations (2016-present)'
 context_extrinsic:
@@ -96,7 +97,7 @@ quotes:
   source:
     path: news/aliendave-nids-ranch-mirror-19961020.html
     location: article body ¶3
-  significance: Primary-source attestation of ranch's 480-acre size and geographic anchor (contradicts modern 512-acre secondary sources; see naming_quirks)
+  significance: Primary-source attestation of ranch's 480-acre size and geographic anchor (contradicts modern 512-acre secondary sources)
 - id: q2
   added_date: '2026-04-20'
   added_by_iteration: i0
@@ -765,3 +766,10 @@ iterations:
   - lr18
   entries_modified:
   - q8
+- id: i3
+  date: '2026-04-21'
+  trigger: audit-correction
+  summary: 'Two audit corrections from user review of i2. (a) Dropped "; see naming_quirks" forward-reference from q1.significance — naming_quirks is an artifact-only investigator field that does not render into location node bodies (per schema), so the pointer dangled. The 480-vs-512 acre discrepancy remains captured in nq1 + r1 + the inline "contradicts modern 512-acre secondary sources" clause. (b) Split document_intrinsic.approximate_coordinates into two fields: coordinates (lat/long — main trailer location next to heli pad, 40.2584, -109.8879) and legal_description (PLSS — Sections 4/5/33, T2S/3S R1E, Uintah Special Meridian). The original field was semantically mis-labeled — it carried a township-and-range legal description, not coordinates. Schema comment + build-from-research.py _LOCATION_OVERVIEW_LABELS/_ORDER + meta/templates/location.md updated in paired commits.'
+  entries_added: []
+  entries_modified:
+  - q1

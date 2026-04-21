@@ -553,7 +553,10 @@ types:
       #                for whichever keys are populated; empty keys skipped.
       #                Labeled-synthesis narrative belongs in `description`.)
       #     location:  full_name, alternate_names (list), location_type,
-      #                geographic_location, approximate_coordinates,
+      #                geographic_location, coordinates (lat/long —
+      #                decimal degrees string, e.g. "40.2584, -109.8879"),
+      #                legal_description (PLSS township/range or other
+      #                jurisdiction-appropriate legal anchor),
       #                ownership_history_summary, scope_significance
       #                (renders as `## Overview` fact table; empty keys
       #                skipped. Location has no kinds, so a single key set.

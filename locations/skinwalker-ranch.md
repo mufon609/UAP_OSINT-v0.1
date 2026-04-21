@@ -16,7 +16,8 @@ created: 2026-04-20
 | Alternate Names | Sherman Ranch; Sherman ranch |  |
 | Location Type | Private cattle ranch |  |
 | Geographic Location | Uintah County, Utah (between Fort Duchesne and Randlett) |  |
-| Approximate Coordinates | Sections 4, 5, and 33; Townships 2S and 3S; Range 1E; Uintah Special Meridian |  |
+| Coordinates | 40.2584, -109.8879 |  |
+| Legal Description | Sections 4, 5, and 33; Townships 2S and 3S; Range 1E; Uintah Special Meridian |  |
 | Ownership History Summary | Myers family (c. 1933-1994); Terry and Gwen Sherman (1994-1996); Robert Bigelow (1996-2016); Brandon Fugal via Adamantium Real Estate LLC (2016-present) |  |
 | Scope Significance | Documented site of institutional UAP research programs: NIDS (1996-2004), BAASS/AAWSAP (2008-2012), and Fugal-era investigations (2016-present) |  |
 | Status | active |  |
@@ -66,7 +67,7 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 
 ## Key Passages
 
-### Primary-source attestation of ranch's 480-acre size and geographic anchor (contradicts modern 512-acre secondary sources; see naming_quirks)
+### Primary-source attestation of ranch's 480-acre size and geographic anchor (contradicts modern 512-acre secondary sources)
 
 > 480-acre ranch, nestled beneath a red-rock ridge between Fort Duchesne and Randlett
 

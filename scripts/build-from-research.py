@@ -1848,7 +1848,8 @@ _LOCATION_OVERVIEW_LABELS = {
     "alternate_names":           "Alternate Names",
     "location_type":             "Location Type",
     "geographic_location":       "Geographic Location",
-    "approximate_coordinates":   "Approximate Coordinates",
+    "coordinates":               "Coordinates",
+    "legal_description":         "Legal Description",
     "ownership_history_summary": "Ownership History Summary",
     "scope_significance":        "Scope Significance",
 }
@@ -1860,7 +1861,8 @@ _LOCATION_OVERVIEW_ORDER = [
     "alternate_names",
     "location_type",
     "geographic_location",
-    "approximate_coordinates",
+    "coordinates",
+    "legal_description",
     "ownership_history_summary",
     "scope_significance",
 ]

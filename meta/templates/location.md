@@ -16,7 +16,8 @@ created: {{today}}
 | Alternate Names |  |  |
 | Location Type |  |  |
 | Geographic Location |  |  |
-| Approximate Coordinates |  |  |
+| Coordinates |  |  |
+| Legal Description |  |  |
 | Ownership History Summary |  |  |
 | Scope Significance |  |  |
 | Status |  |  |
