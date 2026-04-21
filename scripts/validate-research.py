@@ -1965,12 +1965,19 @@ def extract_significant_tokens(text):
         return set()
     text = re.sub(r"\[`/[^`]+`\]", "", str(text))
     text = re.sub(r"[*_`]", "", text)
-    # Em-dash / en-dash → ASCII hyphen. Mirrors validate.py's
-    # normalize_for_compare (check #11), so "F–18" in source and "F-18"
-    # in prose tokenize identically. Without this, the two checks
-    # diverge on typographic-dash handling and prose-drift fires false
-    # positives on source-verbatim content.
-    text = text.replace("\u2014", "-").replace("\u2013", "-")
+    # Typographic-dash handling diverges from validate.py check #11 by
+    # design. check #11 is substring-matching verbatim quote text —
+    # there, em-dash and en-dash both normalize to ASCII hyphen so
+    # source "F–18" and prose "F-18" substring-match. check #16 is
+    # TOKENIZING — different use case. Em-dash (U+2014) is a sentence-
+    # level word boundary in modern English typography ("NRO—reservist
+    # capacity" is three words, not two), so we map it to a space
+    # before tokenization; a greedy regex over hyphens would otherwise
+    # merge it into a single token "nro-reservist" that never matches
+    # the standalone prose token "reservist". En-dash (U+2013) stays
+    # mapped to ASCII hyphen because it legitimately joins compounds
+    # and ranges ("F–18", "2004–2023").
+    text = text.replace("\u2014", " ").replace("\u2013", "-")
     text = text.lower()
     words = re.findall(r"[a-z0-9][a-z0-9\-']+", text)
     # Strip trailing possessive `'s` to collapse "fravor" ↔ "fravor's".
