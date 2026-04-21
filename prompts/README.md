@@ -7,8 +7,7 @@ copy the relevant prompt into a fresh Claude Code session.
 |---|---|
 | `onboard.md` | First-time session or any fresh session start |
 | `build.md` | Build the next queued node (Phase I → II → III) |
-| `iterate.md` | Add new material to an already-built node via a new artifact iteration |
-| `audit.md` | Audit an existing node for evidentiary integrity |
+| `audit.md` | Audit an existing node for evidentiary integrity (includes the iteration-correction pattern for applying changes to an existing artifact) |
 | `verify-transcript.md` | Verify transcript quotes verbatim against archived source |
 | `archive-sweep.md` | Archival health check + Wayback submission pass |
 

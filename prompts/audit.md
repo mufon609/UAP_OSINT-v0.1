@@ -66,9 +66,8 @@ The audit target is: **{PATH}**  (ask the user if not specified)
 
 Audit findings that require changes should be applied as a new
 iteration on the node's research artifact, not as direct edits to
-the node body. See `prompts/iterate.md` for the full workflow.
-
-Typical audit-driven iteration:
+the node body. Iteration mechanics follow the append-only discipline
+in `meta/conventions.md` Versioning; the step-by-step pattern is:
 
 1. Bump `last_iteration` to `i{N+1}` in the artifact
 2. Itemize each correction in an `iterations[]` entry with

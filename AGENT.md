@@ -46,7 +46,6 @@ If you're doing anything related to this instance's topic, read
 | Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `meta/conventions.md` → `CLAUDE.md` → `prompts/build.md` |
 | Build a new node | `CLAUDE.md` → `prompts/build.md` (one node per session) |
 | Audit an existing node | `CLAUDE.md` → `prompts/audit.md` |
-| Iterate (add material to an existing node after initial build) | `CLAUDE.md` → `prompts/iterate.md` |
 | Verify a transcript verbatim | `prompts/verify-transcript.md` |
 | Run an archival sweep | `prompts/archive-sweep.md` |
 | Fork this toolkit for a different topic | delete `meta/topic/` → restart with your own `meta/topic/overview.md` |

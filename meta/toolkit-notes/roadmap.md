@@ -335,10 +335,12 @@ iteration-audit need at current and foreseeable repo volume without
 additional tooling. Multiple artifacts have iterated cleanly through
 the hand path without friction worth automating away.
 
-`prompts/iterate.md` (the hand-workflow companion prompt) remains
-shipped — procedure documentation is separate from automation. If
-real iteration-overhead pain surfaces at 20+ iterated artifacts,
-rebuild then.
+`prompts/iterate.md` (the hand-workflow companion prompt) was also
+removed 2026-04-20 — ~90% overlap with `prompts/build.md`,
+`meta/conventions.md` Versioning, and the iteration-correction
+pattern in `prompts/audit.md`. If real iteration-overhead pain
+surfaces at 20+ iterated artifacts, rebuild both the script and a
+focused prompt then.
 
 ### E.3 — Cross-node update propagation  ⏸ DEFERRED
 
