@@ -492,14 +492,20 @@ warning requires real resolution, not synthesis-acceptance:
   as structured evidentiary data (naming_quirks, rumors, a
   research_gap, a timeline entry, a claim). Rationalizing warnings as
   "legitimate synthesis vocabulary" defeats the check.
-- **Per-entry `.note` fields** + `vouching_chain.attestation` — zero
-  warnings is the target, same resolution paths as free-prose fields.
-  These are sentence-length contributor synthesis attached to a
-  structured entry; drift signal is real.
-- **Structural label cells** (role titles, short relationship
-  descriptors, `timeline[].event`, `use_status`, `activity`, etc.)
-  are NOT scanned by check #16. Token-matching is a poor instrument
-  for compact multi-source labels. Fabrication in these cells is
+- **Per-entry synthesis content notes** — `ownership_timeline.note`,
+  `uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+  `media_versioning.note`, and `vouching_chain.attestation`. These
+  are multi-sentence narrative / analytical prose about an event /
+  transaction / role / derivation; zero warnings is the target, same
+  resolution paths as free-prose fields.
+- **Structural labels + cross-reference descriptor notes** are NOT
+  scanned by check #16. This includes role titles, short relationship
+  descriptors, `timeline[].event`, `use_status`, `activity`, and the
+  `.note` fields on cross-reference entries (`corroboration_items`,
+  `witnesses_testimony`, `org_relationships`,
+  `location_relationships`) that describe *why/how a cross-reference
+  exists*. Token-matching is a poor instrument for compact multi-
+  source labels and meta-descriptors. Fabrication in these cells is
   caught by Phase III semantic review, not check #16.
 
 Common categories of warnings and how they resolve:

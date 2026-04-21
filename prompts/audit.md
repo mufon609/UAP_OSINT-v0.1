@@ -28,16 +28,20 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    warning set. Under the durable policy
    (`feedback_check16_warnings_must_resolve.md`):
    - **Free-prose synthesis fields** (`description`, `background`,
-     `uap_relevance`, `credibility_notes`) and **per-entry `.note`
-     fields** + `vouching_chain.attestation` — zero warnings is the
-     target. Each unmatched token either resolves to source-matched
-     prose OR gets captured as structured evidentiary data (naming
-     quirk, rumor, research_gap).
-   - **Structural label cells** (role titles, short relationship
-     descriptors, `timeline[].event`, `use_status`, `activity`) are
-     not scanned by check #16 — token-matching is a poor instrument
-     for compact multi-source labels. Fabrication in these cells is
-     Phase III semantic-review territory.
+     `uap_relevance`, `credibility_notes`) and **per-entry synthesis
+     content notes** (`ownership_timeline.note`,
+     `uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+     `media_versioning.note`, `vouching_chain.attestation`) — zero
+     warnings is the target. Each unmatched token either resolves to
+     source-matched prose OR gets captured as structured evidentiary
+     data (naming quirk, rumor, research_gap).
+   - **Structural labels + cross-reference descriptor notes** are not
+     scanned by check #16. Role titles, short relationship
+     descriptors, `timeline[].event`, `use_status`, `activity`, and
+     the `.note` fields on cross-reference entries
+     (`corroboration_items`, `witnesses_testimony`, `org_relationships`,
+     `location_relationships`) all fall outside scope. Fabrication
+     there is Phase III semantic-review territory.
 4. **Contradiction markers** — `❌ Contradiction` used where positions
    contradict and at least one side has primary-source evidence;
    `⚠ Disputed — unknown` used only where neither side has

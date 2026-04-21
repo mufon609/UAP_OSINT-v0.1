@@ -27,11 +27,15 @@ doing anything:
    reporting (no category-tuned thresholds); resolve every check #16
    warning structurally on scoped fields (top-level free-prose:
    `description`, `background`, `uap_relevance`, `credibility_notes`;
-   per-entry synthesis: `.note` fields + `vouching_chain.attestation`)
-   — zero-warnings target. Structural label cells (role titles,
-   timeline events, short relationship descriptors) are not scanned;
-   never set count targets / ranges when scoping artifact list
-   population — let the source drive density.
+   per-entry synthesis content notes: `ownership_timeline.note`,
+   `uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+   `media_versioning.note`, `vouching_chain.attestation`) —
+   zero-warnings target. Structural label cells + cross-reference
+   descriptor notes (`corroboration_items.note`,
+   `witnesses_testimony.note`, `org_relationships.note`,
+   `location_relationships.note`, role titles, `timeline[].event`)
+   are not scanned; never set count targets / ranges when scoping
+   artifact list population — let the source drive density.
 
 Then run the health check:
 

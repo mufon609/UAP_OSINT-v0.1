@@ -1852,54 +1852,74 @@ PROSE_FIELDS_BY_TYPE = {
 # Per-entry prose fields. Shape: (list_key, field_name_within_entry).
 # Each entry's source.path provides the token pool.
 #
-# Scope limited to per-entry SYNTHESIS fields: `note` fields (contributor
-# analytical prose on a structured entry) and a few sentence-length
-# attestation/paraphrase fields (vouching_chain.attestation). Structural
-# label cells (role titles, short relationship descriptors, timeline
-# event labels, short factual descriptors like use_status / activity /
-# contract subject) are deliberately NOT in scope — see the scoping
-# principle in the PROSE_FIELDS_BY_TYPE header comment above.
+# Scope limited to SYNTHESIS CONTENT notes — multi-sentence narrative
+# or analytical prose about an event / transaction / role / derivation
+# (ownership_timeline, uap_scope_activity, contracts, media_versioning,
+# key_personnel, vouching_chain.attestation). These describe what
+# happened and what it means; drift signal is real and catchable by
+# token-matching.
+#
+# Explicitly NOT in scope: STRUCTURAL DESCRIPTOR NOTES on cross-
+# reference entries — corroboration_items.note, witnesses_testimony.note,
+# org_relationships.note, location_relationships.note. Those describe
+# *why/how a cross-reference exists* (compact meta-descriptors of a
+# relationship) rather than narrative synthesis of content. Examples:
+#   corroboration_items.note → "Other F/A-18F pilot in Fravor's
+#     2-plane flight; testimony confirms wingman also lost visual at
+#     intercept" — explains why this observer corroborates (label-like)
+#   ownership_timeline.note → "Kenneth John Myers and wife Edith owned
+#     the ranch for approximately sixty years. Kenneth died April 1987;
+#     Edith lived there alone until 1992 and died March 3, 1994..."
+#     — narrates the ownership transition itself (synthesis prose)
+# Token-match fits synthesis prose; it routinely misfires on label
+# cells. Fabrication in cross-reference label notes is Phase III
+# semantic-review territory.
 PROSE_ENTRY_FIELDS_BY_TYPE = {
     "person": [
-        ("corroboration_items",  "note"),
-        ("vouching_chain",       "attestation"),
+        # vouching_chain[].attestation — paraphrased (or verbatim)
+        # statement of a voucher's attestation. Actual attestation
+        # content, scanned against source.path.
+        ("vouching_chain", "attestation"),
     ],
     "event": [
-        ("corroboration_items",  "note"),
-        ("witnesses_testimony",  "note"),
+        # No per-entry synthesis content fields currently in scope.
+        # corroboration_items[].note and witnesses_testimony[].note are
+        # structural descriptors on cross-reference entries — excluded.
     ],
     "transcript": [
-        # Transcript per-entry synthesis: no fields currently in scope.
-        # speakers[].role is a structural label (Witness / Chair / etc.)
-        # and excluded per the scoping principle.
+        # No per-entry synthesis content fields currently in scope.
+        # speakers[].role is a structural label.
     ],
     "media": [
         # media_versioning[].note — contributor synthesis on the
         # analytical significance of a parent/derivative aspect
-        # difference. Scanned against the entry's own source.path.
+        # difference. Multi-sentence content analysis; scanned against
+        # the entry's own source.path.
         ("media_versioning", "note"),
     ],
     "organization": [
-        # key_personnel[].note — optional contributor synthesis on the
-        # personnel entry. Scanned against source.path.
-        ("key_personnel",     "note"),
-        # org_relationships[].note — contributor synthesis on the
-        # relationship. Scanned against source.path.
-        ("org_relationships", "note"),
-        # contracts[].note — contributor synthesis. Scanned against
-        # source.path.
-        ("contracts",         "note"),
+        # key_personnel[].note — contributor synthesis assessing the
+        # evidentiary context of the personnel entry (attestation
+        # strength, corroboration, period-date sourcing). Scanned
+        # against source.path.
+        ("key_personnel", "note"),
+        # contracts[].note — contributor synthesis on the contract.
+        # Scanned against source.path.
+        ("contracts",     "note"),
+        # org_relationships[].note EXCLUDED — structural descriptor of
+        # the org-to-org relationship (e.g., "AOIMSG established Nov
+        # 23, 2021 as the successor to..."), not synthesis prose.
     ],
     "location": [
-        # ownership_timeline[].note — optional contributor synthesis on
+        # ownership_timeline[].note — multi-sentence narrative about
         # the ownership transition. Scanned against source.path.
-        ("ownership_timeline",     "note"),
-        # uap_scope_activity[].note — optional contributor synthesis.
-        # Scanned against source.path.
-        ("uap_scope_activity",     "note"),
-        # location_relationships[].note — optional contributor synthesis.
-        # Scanned against source.path.
-        ("location_relationships", "note"),
+        ("ownership_timeline", "note"),
+        # uap_scope_activity[].note — multi-sentence narrative about
+        # the institutional UAP-scope activity. Scanned against
+        # source.path.
+        ("uap_scope_activity", "note"),
+        # location_relationships[].note EXCLUDED — structural
+        # descriptor of the relationship, not synthesis prose.
     ],
 }
 
