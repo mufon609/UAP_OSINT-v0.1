@@ -1,3 +1,10 @@
+- url: http://www.aliendave.com/Article_NIDSRanch10201996.html
+  format: html
+  status: archived
+  path: news/aliendave-nids-ranch-mirror-19961020.html
+  archived_date: '2026-04-20'
+  sha256: 2836494590c5f4baf0a04cc68cb2d135d98036544d090b00f33e2062e74be201
+  note: Mirror copy (hosted at aliendave.com / UUFOH) of Deseret News 'Millionaire Leads Quest for UFO Data' by Zack Van Eyck, Staff Writer, published Sunday October 20, 1996. Announces Robert M. Bigelow's acquisition of the former Sherman ranch for approximately $200,000, closed September 1996. Confirms Sherman family NDA (Terry Sherman 'employed by Bigelow to maintain the ranch' and 'can no longer discuss the activity because of a nondisclosure agreement'). Names John B. Alexander (former director of non-lethal weapons testing at Los Alamos) as NIDS scientist. Confirms NIDS formed October 1995 ('which Bigelow formed last October'). Original Deseret News URL not presently recoverable; this aliendave.com mirror preserves the 1996 article text.
 - url: https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=116282
   format: html
   status: archived
@@ -167,6 +174,13 @@
   path: government/defense-gov-kosloski-appointment-20240826.html
   archived_date: '2026-04-20'
   sha256: 7fe95c9e5803e1be89fb12395f9fa45bb0ca0cbbd8d67f62a6e26dabb8d523f7
+- url: https://www.deseret.com/1996/6/30/19251541/frequent-fliers/
+  format: html
+  status: archived
+  path: news/deseret-frequent-fliers-19960630.html
+  archived_date: '2026-04-20'
+  sha256: 5c25dce3bb344a9bf7569197252a7c7740866cf33ebbcd8a83863757d3f1b8d3
+  note: Deseret News 'Frequent Flyers?' by Zack Van Eyck (Staff Writer), June 30, 1996. Contemporaneous primary source for the Sherman era of Skinwalker Ranch. Direct quotes from Terry and Gwen Sherman, 480-acre ranch description, Fort Duchesne/Randlett location, April 1995 first-sighting date, 7-cattle-affected count (4 disappeared, 3 mutilated). Names private investigators (Joseph 'Junior' Hicks, Ryan Layton, Bill Lyons). No mention of Bigelow or NIDS (predates the October 1996 acquisition).
 - url: https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/170018/
   format: pdf
   status: archived
@@ -201,3 +215,17 @@
   archived_date: '2026-04-20'
   sha256: 331ea0da91a0e7921efdeb46882c4f5ee556c0d59e69953da0a915e515c82ec7
   note: Black Vault June 29, 2022 article carrying Pentagon Public Affairs statement from DoD spokesperson Susan Gough. Gough names 'former Office of Naval Intelligence senior civilian John Stratton' as UAPTF lead and confirms Dr. Travis Taylor was informally designated UAPTF 'chief scientist' via SMDC assignment. Strongest on-record DoD attribution naming the UAPTF leader.
+- url: https://www.theufochronicles.com/2020/04/skinwalker-ranch-original-owner-family-member-speaks.html
+  format: html
+  status: archived
+  path: news/theufochronicles-myers-family-20200412.html
+  archived_date: '2026-04-20'
+  sha256: 8df6f88dd406d5d2e8926b455c2b86c90171ee7d01d7a3e5f5fe3071811755f7
+  note: 'TheUFOChronicles article by Frank Warren, published April 12, 2020: ''SKINWALKER RANCH: Original Owner/Family Member Sets The Record Straight''. Extended quotation from Garth Myers (younger brother of Kenneth John Myers) refuting any paranormal activity during the Myers-family ownership era (1933-1994). Direct Myers quote: ''Nothing, unequivocally, absolutely nothing that went on while she and my brother lived there.'' Sources cited: Frank B. Salisbury''s ''The Utah UFO Display'' (2010), pp. 218-222; interviews recorded September 3-5, 2009. Notes Edith Myers died March 3, 1994 and ranch sold to Terry Sherman ~3 months later. Primary source for the only extended Myers-era on-record testimony.'
+- url: https://www.vice.com/en/article/brandon-fugal-owner-of-skinwalker-ranch/
+  format: html
+  status: archived
+  path: news/vice-fugal-skinwalker-owner-20200310.html
+  archived_date: '2026-04-20'
+  sha256: 1537b0ad1fe04ebba9ec2752ed460ba516c0f9186fcfeea190855cdb206c86c4
+  note: Vice article 'This Is the Real Estate Magnate Who Bought Skinwalker Ranch, a UFO Hotspot', published March 10, 2020. First public identification of Brandon Fugal (Utah-based real estate mogul and tech investor, cofounder/owner of a firm later rolled into Colliers International) as the current owner of Skinwalker Ranch. Attests Bigelow-to-Fugal sale in 2016, Fugal's pre-existing connection to Bigelow's DIA-project scientists dating to 2010, and Fugal's ownership being kept quiet until this 2020 public identification. Does NOT mention Adamantium Real Estate by name (that shell-company identification appears in other secondary sources — see research_gap tracking). Load-bearing Fugal-era primary source.
