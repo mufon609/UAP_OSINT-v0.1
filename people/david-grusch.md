@@ -304,14 +304,14 @@ Submission") |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 350-353 |
 
-> it out to clear defense contractor to do
+> [24:28] uh overall you know the government has been the custodian of a lot of this right and they'll they'll hand receipt it out to clear defense contractor to do some analysis which I find highly unethical. you have a basically a sole source arrangement and you allow certain um private corporate elements uh to look at this develop a potential insight and then sell it back to the government for profit and I think that's totally unethical.
 
 | Field | Value |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | lines 558-566 |
+| Location | lines 561-572 |
 
 > [25:48] lie? Well, I know Dr. Sean Kurpatre. I've known him for about 8 years and you know, I expressed some concerns to Dr. Kurpatre about a year ago and told him what I was starting to uncover and he didn't follow up with me and he has my phone number. He could have called me.
 
@@ -1195,23 +1195,14 @@ Submission") |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 345-352 |
 
-> [44:41] As I've stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries. Yeah. Yeah. I mean, it's, it is a mind blowing side of it, right? It's a little easy to imagine, you know, an artifact or whatever, but when you start talking about, you know, the biological side of it, it really throws you for a loop psychologically.
+> [44:41] As I've stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries. Yeah. Yeah. I mean, it's, it is a mind blowing side of it, right? It's a little easy to imagine, you know, an artifact or whatever, but when you start talking about, you know, the biological side of it, it really throws you for a loop psychologically. It did for me. And, you know, I talked to the people that, you know, were on that aspect of, uh, the program, if you will.
 
 | Field | Value |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | lines 688-692 |
-
-> [44:56] talking about, you know, the biological side of it, it really throws you for a loop psychologically. It did for me. And, you know, I talked to the people that, you know, were on that aspect of, uh, the program, if you will.
-
-| Field | Value |
-|---|---|
-| Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
-| Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | lines 692-696 |
+| Location | lines 688-698 |
 
 > [48:04] So, the actual reprisal stuff and the access denial stuff actually enhanced my ability to operate. But I will tell you, I talked to these people in the program. They are just so afraid. Because the way it was enforced over the years, threatening nature of some of their indoctrinations where they're like, this is treason. You're going to Leavenworth. Have you ever tell anybody not in the program? And oh, by the way, what's the penalty for treason? Oh, right. Execution, right?
 
@@ -1620,7 +1611,7 @@ Contact Request") |
 | [7:04] confiding in me. They approached me. I have plenty of current former senior intelligence officers that came to… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [9:15] shut the door in my face. They denied me access to these programs. Soon after, he says he endured reprisals an… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [10:40] Well, naturally, um when you recover something that's either landed or crashed, um sometimes you encounter, u… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| it out to clear defense contractor to do | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
+| [24:28] uh overall you know the government has been the custodian of a lot of this right and they'll they'll hand rec… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [28:02] there have been attempts to bring down craft that we've acted offensively against non-human craft. There have… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [32:31] been committed? At the very least, I saw substantiative evidence that white collar crime was committed. Have … | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [37:37] credibility of your complaint. They found after interviewing myself in the subjects and other subjects that I… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
@@ -1656,7 +1647,6 @@ Contact Request") |
 | [9:50] Yeah. Did all the checks I could possibly do, you know, within my, you know, kind of official capacity, realiz… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
 | [10:12] They tried to claim all these things against me, conduct wise, mental health, all this other, uh, unfortunate… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
 | [44:41] As I've stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
-| [44:56] talking about, you know, the biological side of it, it really throws you for a loop psychologically. It did f… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
 | [48:04] So, the actual reprisal stuff and the access denial stuff actually enhanced my ability to operate. But I will… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
 | [46:57] But they have. The people that I interviewed have. And they were some of the people that were interviewed by … | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
 | [11:14] encounter with the information a very senior individual in the Intel Community came to me when uh I guess I w… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |

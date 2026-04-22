@@ -669,11 +669,11 @@ quotes:
   statement_date: '2023-06-11'
 - id: q24
   added_date: '2026-04-22'
-  text: it out to clear defense contractor to do
+  text: '[24:28] uh overall you know the government has been the custodian of a lot of this right and they''ll they''ll hand receipt it out to clear defense contractor to do some analysis which I find highly unethical. you have a basically a sole source arrangement and you allow certain um private corporate elements uh to look at this develop a potential insight and then sell it back to the government for profit and I think that''s totally unethical.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 558-566
-  significance: Private-contractor custody allegation — government hands material to cleared contractors via sole-source arrangements.
+    location: lines 561-572
+  significance: Private-contractor custody allegation — government as material custodian; sole-source arrangements with private corporate elements that study, develop insight from, then sell recovered material back to the government for profit, characterized as categorically unethical.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
   category: filed-claim
@@ -964,22 +964,11 @@ quotes:
   statement_date: '2023-10-15'
 - id: q52
   added_date: '2026-04-22'
-  text: '[44:41] As I''ve stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries. Yeah. Yeah. I mean, it''s, it is a mind blowing side of it, right? It''s a little easy to imagine, you know, an artifact or whatever, but when you start talking about, you know, the biological side of it, it really throws you for a loop psychologically.'
+  text: '[44:41] As I''ve stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries. Yeah. Yeah. I mean, it''s, it is a mind blowing side of it, right? It''s a little easy to imagine, you know, an artifact or whatever, but when you start talking about, you know, the biological side of it, it really throws you for a loop psychologically. It did for me. And, you know, I talked to the people that, you know, were on that aspect of, uh, the program, if you will.'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 688-692
-  significance: Post-hearing confirmation of biologics claim — Grusch reaffirms the Mace-exchange 'biologics' reply in documentary context.
-  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
-  observation_type: relayed
-  category: filed-claim
-  statement_date: '2023-10-15'
-- id: q53
-  added_date: '2026-04-22'
-  text: '[44:56] talking about, you know, the biological side of it, it really throws you for a loop psychologically. It did for me. And, you know, I talked to the people that, you know, were on that aspect of, uh, the program, if you will.'
-  source:
-    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 692-696
-  significance: Grusch states he talked to people on the biologics-aspect of the program — source chain for the biologics claim.
+    location: lines 688-698
+  significance: Post-hearing confirmation of biologics claim and source-chain attestation — Grusch reaffirms the Mace-exchange 'biologics' reply in documentary context and states he personally talked to people on the biologics-aspect of the program.
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
   category: filed-claim
