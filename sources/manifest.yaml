@@ -431,6 +431,24 @@
   archive_status: 3
   wayback_date: '2018-01-08'
   note: 'Wayback Machine snapshot (2018-01-08) of To The Stars Academy of Arts and Science homepage. Captures early-operational state: 2,548 investors / $2,337,382 raised via Reg A offering; minimum $200 / share price $5; sections include Overview, How We Work, Mission, Public Benefit, The Team, Investment Updates, Due Diligence, Offering Circular. Team roster includes DeLonge, Elizondo, Mellon, Puthoff, Semivan.'
+- url: https://web.archive.org/web/20180727114348/https://dpo.tothestarsacademy.com/blog/an-introduction-to-the-adam-research-project
+  format: html
+  status: archived
+  path: news/ttsa-blog-adam-research-project-intro-20180727.html
+  archived_date: '2026-04-22'
+  sha256: 65f8d2a29511b031b2fcebb315f3edb07962f6653e0a26cbbea7ff0a841f2723
+  archive_status: 3
+  wayback_date: '2018-07-27'
+  note: Wayback Machine snapshot (2018-07-27) of 'An Introduction to The ADAM Research Project', dated 2018-07-26, on TTSA's dpo.tothestarsacademy.com blog. Announces ADAM (Acquisition and Data Analysis of Materials) Research Project under Harold E. Puthoff's leadership. Identifies Puthoff as 'former Senior Advisor and Subcontractor to the Pentagon's AATIP program' — direct TTSA-on-record framing of ADAM's predecessor relationship to AATIP. Establishes ADAM's July 2018 operational start, 15 months before the Oct 2019 Army CCDC CRADA.
+- url: https://web.archive.org/web/20180929085609/http://dpo.tothestarsacademy.com/blog/material-of-interest-magnesium-zinc-bismuth
+  format: html
+  status: archived
+  path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
+  archived_date: '2026-04-22'
+  sha256: c2f60e8b2b1267cd670481670432b431de3fe2d38ec315cac9df2026e4378a32
+  archive_status: 3
+  wayback_date: '2018-09-29'
+  note: 'Wayback Machine snapshot (2018-09-29) of ''Material of Interest: Magnesium-Zinc-Bismuth'', dated 2018-09-27, on TTSA''s dpo.tothestarsacademy.com blog. TTSA publicly claims it has ''collected seven pieces of material, from multiple sources'' over the preceding three months (~July-September 2018) for ADAM study. Names Magnesium-Zinc-Bismuth specifically — same alloy composition AARO HRR Vol I (2024) later concluded is manufactured terrestrial material possibly of USAF origin. Directly links TTSA''s 2018 material claims to AARO''s 2024 characterization.'
 - url: https://web.archive.org/web/20200105215715/https://tothestarsacademy.com/
   format: html
   status: archived
@@ -440,6 +458,15 @@
   archive_status: 3
   wayback_date: '2020-01-05'
   note: 'Wayback Machine snapshot (2020-01-05) of To The Stars Academy of Arts and Science homepage. Captures evolved state post-launch: minimum investment raised to $350 / share price still $5; site structure changed (The VAULT section, News to The Future); Puthoff no longer appears in key personnel; useful for dating personnel evolution and offering-terms changes.'
+- url: https://web.archive.org/web/20220120162446/http://tothestarsacademy.com/
+  format: html
+  status: archived
+  path: news/tothestarsacademy-home-20220120.html
+  archived_date: '2026-04-22'
+  sha256: a4ec1496ce32258807370b47ffe4e9b0a3ca90f21b0e48d7c926d31805dd38de
+  archive_status: 3
+  wayback_date: '2022-01-20'
+  note: Wayback Machine snapshot (2022-01-20) of To The Stars Academy of Arts and Science homepage. Captures late-state operational site (~17K chars of content — pared-down vs. the ~49K-char 2020 snapshot). News section still references the Oct 2019 Army CCDC CRADA and the April 2020 Rapid Response Display System announcement. Co-Founder attribution to Hal Puthoff (who left ADAM leadership by 2020). Useful for dating post-2020 state transitions and the last-archived period before TTSA's late-2022-onward decline.
 - url: https://web.archive.org/web/20230602091111/https://www.safeaerospace.org/
   format: html
   status: archived
@@ -449,6 +476,15 @@
   archive_status: 3
   wayback_date: '2023-06-02'
   note: 'Wayback Machine snapshot (2023-06-02) of the Americans for Safe Aerospace home page — earliest known capture showing Alex Dietrich on the personnel grid. Original section heading was ''Aircrew Leadership Council'' (later renamed ''Advisors''). Original cohort: Dietrich, Fravor, Sam Fletcher, Lewis Harding, Mark Hulsey, Chris Van Voorhis. Coincides with ASA''s official launch (May→June 2023).'
+- url: https://web.archive.org/web/20240925053532/https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-%C2%ADCLEARED-508-COMPLIANT-%C2%ADHRRV1-08-MAR-2024-FINAL.PDF
+  format: pdf
+  status: archived
+  path: government/aaro-hrr-volume-1-20240308.pdf
+  archived_date: '2026-04-22'
+  sha256: 8c23519c62a5717427c2d09d5ade165284421f2e5facad76a565a94774067868
+  archive_status: 3
+  wayback_date: '2024-09-25'
+  note: 'Wayback Machine snapshot (2024-09-25) of AARO Historical Record Report Volume I, DOPSR-cleared 508-compliant version, released 2024-03-08. Official DoD/AARO report on the historical U.S. Government record of UAP. Directly confirms: (a) AARO acquired a sample ''from a private UAP investigating organization and the U.S. Army''; (b) the U.S. Army had conducted in-house analysis on the sample prior to AARO custody; (c) material composition is magnesium, zinc, and bismuth with trace lead; (d) AARO''s verdict: ''manufactured, terrestrial alloy'' with ''no exceptional qualities'', possibly of USAF origin; (e) testing done by AARO and ''a leading science laboratory'' (lab not named). Establishes the chain: TTSA (ADAM, 2018-2019) → U.S. Army CCDC CRADA (2019-10-17) → AARO custody + testing (post-July 2022).'
 - url: https://web.archive.org/web/20260220223643/https://www.safeaerospace.org/
   format: html
   status: archived
