@@ -17,7 +17,7 @@ created: 2026-04-22
 | Founded | 2017-02 |
 | Headquarters | 315 S. Coast Highway 101, Suite U38, Encinitas, CA 92024 |
 | Current Leadership | [`/people/tom-delonge`] |
-| Public Status | Delaware Public Benefit Corporation; CIK 1710274. Registered 2017 as "To The Stars Academy of Arts and Science Inc."; renamed "To The Stars Inc." by 2024 with both names maintained as trademarks. Regulation A+ offering (July 2017) terminated September 2021. 2024 1-K received going concern qualification. |
+| Public Status | Delaware Public Benefit Corporation (CIK 1710274); registered 2017 as "To The Stars Academy of Arts and Science Inc.", renamed "To The Stars Inc." by 2024 (both trademarked). Regulation A+ offering (File No. 024-11243) terminated effective September 18, 2021. 2024 1-K received going concern qualification. |
 
 ---
 
@@ -41,7 +41,7 @@ By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway
 
 | Name | Role | Period | Source |
 |---|---|---|---|
-| [`/people/hal-puthoff`] | Co-Founder and Vice President Science and Technology | 2017 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/hal-puthoff`] | Co-Founder and Vice President Science and Technology | 2017 – 2024 | government/sec-ttsa-1a-partii-20170710.html |
 | [`/people/jim-semivan`] | Co-Founder and Vice President Operations | 2017 | government/sec-ttsa-1a-partii-20170710.html |
 | [`/people/steve-justice`] | Aerospace Division Director (later COO) | 2017 | news/tothestarsacademy-home-20180108.html |
 | [`/people/tom-delonge`] | Founder, President, and interim Chief Executive Officer | 2017-02 | government/sec-ttsa-1a-partii-20170710.html |
@@ -50,8 +50,9 @@ By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway
 
 | Name | Role | Period | Source |
 |---|---|---|---|
-| [`/people/kari-delonge`] | Chief Marketing and Product Officer (TTS subsidiary) | 2011 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/kari-delonge`] | Chief Marketing and Product Officer (TTS subsidiary) | 2011 – 2024 | government/sec-ttsa-1a-partii-20170710.html |
 | [`/people/luis-elizondo`] | Director of Global Security and Special Programs | 2017-10 | news/tothestarsacademy-home-20180108.html |
+| [`/people/kari-delonge`] | Chief Content Officer for the Company and President of To The Stars Media Inc. | 2024 | government/sec-ttsa-1k-partii-20250417.html |
 
 #### Advisors
 
@@ -60,6 +61,7 @@ By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway
 | [`/people/christopher-mellon`] | National Security Affairs Advisor and Advisory Board member | 2017 | news/tothestarsacademy-home-20180108.html |
 | [`/people/garry-nolan`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |
 | [`/people/colm-kelleher`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/hal-puthoff`] | Advisory Board member (transitioned from Board of Directors) | 2024 | government/sec-ttsa-1k-partii-20250417.html |
 
 ---
 
@@ -440,6 +442,42 @@ By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway
 
 ---
 
+### Primary-source termination of TTSA's Regulation A+ offering effective September 18, 2021 — ends the $50M crowdfunding chapter of the company's 2017-2021 capital-raising history.
+
+> To The Stars Academy of Arts and Science Inc. (the "company") has determined to terminate the offering for shares of its Class A Common Stock. No further subscriptions will be accepted for the current offering after September 18, 2021. Subscriptions in the offering will be accepted up to and including that date and processed as promptly as possible.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-253g2-reg-a-termination-20210917.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC Form 253(g)(2) Supplement dated September 17, 2021, File No. 024-11243 |
+
+---
+
+### Primary-source confirmation of Kari DeLonge's current dual role (Chief Content Officer of the parent Company + President of the TTSM subsidiary) and the 2011-origin Chief Marketing and Product Officer role at the TTS subsidiary she held previously.
+
+> Kari DeLonge is the Chief Content Officer for the Company and the President of the Company's subsidiary To The Stars Media Inc. She served as Chief Marketing and Product Officer of company subsidiary TTS since its inception in 2011, overseeing worldwide media launches including Billboard Top 200 albums, critically acclaimed independent films and award-winning books.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2024, Directors/Officers section, Kari DeLonge bio |
+
+---
+
+### Primary-source documentation of Puthoff's 2024 transition from TTSA Board of Directors to Advisory Board, and confirmation that his EarthTech International (ETI) Presidency and Institute for Advanced Studies at Austin (IASA) directorship have continued unbroken since 1985 — establishes the founder-affiliated / shared-principal relationship between TTSA and EarthTech. Preserves the OCR duplication of "in" ("in in 2017").
+
+> Dr. Harold E. Puthoff is a co-founder of the Company, and recently left his position on the Company's board of directors to serve on our Advisory Board. Prior to joining us in in 2017, Dr. Puthoff was, and still is, President and CEO of EarthTech International, Inc. (ETI), and Director of the Institute for Advanced Studies at Austin (IASA), positions he has held since 1985.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2024, Advisory Board / Puthoff bio |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -458,6 +496,7 @@ By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway
 | 2018-09-27 | TTSA publishes 'Material of Interest: Magnesium-Zinc-Bismuth' blog post reporting seven material samples collected over the preceding three months for ADAM study. | publication | news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html |  |
 | 2019-10-01 | Cooperative Research and Development Agreement (CRADA) 19-15 'Novel & Emerging Technology Exploitation' becomes effective between TTSA and U.S. Army CCDC Ground Vehicle Systems Center. | contract | government/army-ttsa-crada-19-15-nete-20191001.pdf | [`/documents/army-ttsa-crada-19-15-nete-2019`] |
 | 2019-10-17 | TTSA publicly announces the CRADA with U.S. Army CCDC; press release attributes quotes to Dr. Joseph Cannon (Army Futures Command) and Steve Justice (TTSA COO and Aerospace Division Director). | contract | news/tothestarsacademy-home-20200105.html |  |
+| 2021-09-17 | TTSA files SEC Form 253(g)(2) Supplement (File No. 024-11243) terminating its Regulation A+ offering effective September 18, 2021. No further subscriptions accepted after that date. | filing | government/sec-ttsa-253g2-reg-a-termination-20210917.html | [`/documents/sec-ttsa-253g2-reg-a-termination-2021`] |
 | 2022-07 | AARO established by Deputy Secretary of Defense Hicks; in 2022 AARO contracts ORNL for independent materials testing on the TTSA-DEVCOM-CRADA specimen per AARO Supplement. | other | government/aaro-supplement-to-ornl-analysis-202407.pdf | [`/organizations/aaro`] |
 | 2023-02 | ORNL receives specimen access (parent sample plus three previously derived subsamples) from DEVCOM Ground Vehicle System Center per AARO/ORNL Synopsis. | other | government/aaro-ornl-synopsis-metallic-specimen-202404.pdf |  |
 | 2024 | CRADA 19-15 ended in 2024 per the TTSA Form 1-K. | other | government/sec-ttsa-1k-partii-20250417.html |  |
@@ -549,6 +588,7 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 - [`/documents/nyt-glowing-auras-pentagon-ufo-2017`]
 - [`/documents/sec-ttsa-1a-partii-2017`]
 - [`/documents/sec-ttsa-1k-2024`]
+- [`/documents/sec-ttsa-253g2-reg-a-termination-2021`]
 - [`/documents/ttsa-puthoff-davis-ornl-analysis-memo-2025`]
 - [`/documents/wikileaks-podesta-email-3099-2016`]
 

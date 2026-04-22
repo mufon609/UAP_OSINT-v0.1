@@ -800,6 +800,14 @@
   sha256: aeca7cfff1dbb2d8fe873b3261407cf0459c5707a4acfdbae52e48b655fb3b47
   archive_status: 1
   note: SEC Form 1-A Part II preliminary offering circular for To The Stars Academy of Arts and Science Inc. dated 2017-07-10. CIK 1710274, accession 000114420417036300. Establishes founding date (Feb 2017), principal investor Tom DeLonge, board members James Semivan and Harold Puthoff, headquarters at 1051 S. Coast Hwy 101 Suite B, Encinitas, CA.
+- url: https://www.sec.gov/Archives/edgar/data/1710274/000149315221023034/form253g2.htm
+  format: html
+  status: archived
+  path: government/sec-ttsa-253g2-reg-a-termination-20210917.html
+  archived_date: '2026-04-22'
+  sha256: 7bb84d45d4c40ded520cfed63cf532c2bd3c95ec59f6b25c67c3307cf927c92e
+  archive_status: 1
+  note: SEC Form 253(g)(2) Supplement to Offering Circular dated September 17, 2021, File No. 024-11243, for To The Stars Academy of Arts and Science Inc. (CIK 1710274). Primary-source confirmation of Regulation A+ offering termination — 'No further subscriptions will be accepted for the current offering after September 18, 2021.' Supersedes the September 18, 2020 offering circular. Fetched directly from SEC EDGAR with research User-Agent.
 - url: https://www.sec.gov/Archives/edgar/data/1710274/000164117225005183/partii.htm
   format: html
   status: archived

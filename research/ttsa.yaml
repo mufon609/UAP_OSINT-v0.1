@@ -59,12 +59,15 @@ primary_sources:
 - path: government/sec-ttsa-1k-partii-20250417.html
   format: html
   extracted_text_path: /tmp/scratch-sec-ttsa-1k-partii-20250417.txt
+- path: government/sec-ttsa-253g2-reg-a-termination-20210917.html
+  format: html
+  extracted_text_path: /tmp/scratch-sec-ttsa-253g2-reg-a-termination-20210917.txt
 document_intrinsic:
   founded_date: '2017-02'
   org_type: Corp
   headquarters: 315 S. Coast Highway 101, Suite U38, Encinitas, CA 92024
   current_leadership_path: /people/tom-delonge
-  public_status: Delaware Public Benefit Corporation; CIK 1710274. Registered 2017 as "To The Stars Academy of Arts and Science Inc."; renamed "To The Stars Inc." by 2024 with both names maintained as trademarks. Regulation A+ offering (July 2017) terminated September 2021. 2024 1-K received going concern qualification.
+  public_status: Delaware Public Benefit Corporation (CIK 1710274); registered 2017 as "To The Stars Academy of Arts and Science Inc.", renamed "To The Stars Inc." by 2024 (both trademarked). Regulation A+ offering (File No. 024-11243) terminated effective September 18, 2021. 2024 1-K received going concern qualification.
 context_extrinsic:
   display_title: TTSA — To The Stars Academy of Arts and Science
 quotes:
@@ -319,6 +322,30 @@ quotes:
     path: news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html
     location: TTSA 'TTS* Analysis on ORNL Report' blog post, 2025-02-28, body
   significance: TTSA's primary publication of the Puthoff/Davis counter-analysis conclusion — TTSA's scientists confirm the ORNL finding of no proof of exotic origin, while framing the finding as "did not absolutely rule it out." The on-record TTSA counter-position to AARO/ORNL's terrestrial-only conclusion.
+- id: q32
+  added_date: '2026-04-22'
+  text: |
+    To The Stars Academy of Arts and Science Inc. (the "company") has determined to terminate the offering for shares of its Class A Common Stock. No further subscriptions will be accepted for the current offering after September 18, 2021. Subscriptions in the offering will be accepted up to and including that date and processed as promptly as possible.
+  source:
+    path: government/sec-ttsa-253g2-reg-a-termination-20210917.html
+    location: SEC Form 253(g)(2) Supplement dated September 17, 2021, File No. 024-11243
+  significance: Primary-source termination of TTSA's Regulation A+ offering effective September 18, 2021 — ends the $50M crowdfunding chapter of the company's 2017-2021 capital-raising history.
+- id: q33
+  added_date: '2026-04-22'
+  text: |
+    Kari DeLonge is the Chief Content Officer for the Company and the President of the Company's subsidiary To The Stars Media Inc. She served as Chief Marketing and Product Officer of company subsidiary TTS since its inception in 2011, overseeing worldwide media launches including Billboard Top 200 albums, critically acclaimed independent films and award-winning books.
+  source:
+    path: government/sec-ttsa-1k-partii-20250417.html
+    location: SEC 1-K FY2024, Directors/Officers section, Kari DeLonge bio
+  significance: Primary-source confirmation of Kari DeLonge's current dual role (Chief Content Officer of the parent Company + President of the TTSM subsidiary) and the 2011-origin Chief Marketing and Product Officer role at the TTS subsidiary she held previously.
+- id: q34
+  added_date: '2026-04-22'
+  text: |
+    Dr. Harold E. Puthoff is a co-founder of the Company, and recently left his position on the Company's board of directors to serve on our Advisory Board. Prior to joining us in in 2017, Dr. Puthoff was, and still is, President and CEO of EarthTech International, Inc. (ETI), and Director of the Institute for Advanced Studies at Austin (IASA), positions he has held since 1985.
+  source:
+    path: government/sec-ttsa-1k-partii-20250417.html
+    location: SEC 1-K FY2024, Advisory Board / Puthoff bio
+  significance: Primary-source documentation of Puthoff's 2024 transition from TTSA Board of Directors to Advisory Board, and confirmation that his EarthTech International (ETI) Presidency and Institute for Advanced Studies at Austin (IASA) directorship have continued unbroken since 1985 — establishes the founder-affiliated / shared-principal relationship between TTSA and EarthTech. Preserves the OCR duplication of "in" ("in in 2017").
 entities_referenced:
 - id: e1
   added_date: '2026-04-22'
@@ -560,6 +587,12 @@ entities_referenced:
   name: TTS Analysis on ORNL Report (Puthoff/Davis memorandum publication)
   wrap_path: /documents/ttsa-puthoff-davis-ornl-analysis-memo-2025
   context_summary: TTSA blog post published 2025-02-28 containing the Puthoff/Davis counter-memorandum submitted to the TTSA Board of Directors on 2024-09-27 in response to ORNL's April 2024 terrestrial-origin finding.
+- id: e42
+  added_date: '2026-04-22'
+  entity_type: document
+  name: SEC Form 253(g)(2) Supplement — TTSA Regulation A termination
+  wrap_path: /documents/sec-ttsa-253g2-reg-a-termination-2021
+  context_summary: SEC Form 253(g)(2) Supplement to Offering Circular dated September 17, 2021, File No. 024-11243. Terminates TTSA's Regulation A+ offering effective September 18, 2021. Ends the 2017-2021 crowdfunding capital-raising chapter.
 naming_quirks:
 - id: nq1
   added_date: '2026-04-22'
@@ -790,6 +823,15 @@ timeline:
     path: government/aaro-ornl-synopsis-metallic-specimen-202404.pdf
     location: Document content date
   node_link: /documents/aaro-ornl-synopsis-metallic-specimen-2024
+- id: tl15b
+  added_date: '2026-04-22'
+  category: filing
+  date: '2021-09-17'
+  event: TTSA files SEC Form 253(g)(2) Supplement (File No. 024-11243) terminating its Regulation A+ offering effective September 18, 2021. No further subscriptions accepted after that date.
+  source:
+    path: government/sec-ttsa-253g2-reg-a-termination-20210917.html
+    location: Supplement body, dated September 17, 2021
+  node_link: /documents/sec-ttsa-253g2-reg-a-termination-2021
 - id: tl19
   category: publication
   added_date: '2026-04-22'
@@ -850,11 +892,22 @@ key_personnel:
   person_path: /people/hal-puthoff
   role: Co-Founder and Vice President Science and Technology
   period_start: '2017'
+  period_end: '2024'
   leadership_class: director
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 31
-  note: President and CEO of EarthTech International, Inc. (ETI), and Director of the Institute for Advanced Studies at Austin (IASA) since 1985.
+  note: President and CEO of EarthTech International, Inc. (ETI), and Director of the Institute for Advanced Studies at Austin (IASA) since 1985. Per the 2024 Form 1-K, Puthoff recently left his position on the Company's board of directors to serve on the Advisory Board.
+- id: kp2b
+  added_date: '2026-04-22'
+  person_path: /people/hal-puthoff
+  role: Advisory Board member (transitioned from Board of Directors)
+  period_start: '2024'
+  leadership_class: advisor
+  source:
+    path: government/sec-ttsa-1k-partii-20250417.html
+    location: SEC 1-K FY2024, Advisory Board / Puthoff bio
+  note: Puthoff transitioned from the Board of Directors to the Advisory Board in 2024 per the 2024 Form 1-K. His EarthTech International Presidency and Institute for Advanced Studies at Austin directorship continue unbroken since 1985.
 - id: kp3
   added_date: '2026-04-22'
   person_path: /people/jim-semivan
@@ -920,11 +973,22 @@ key_personnel:
   person_path: /people/kari-delonge
   role: Chief Marketing and Product Officer (TTS subsidiary)
   period_start: '2011'
+  period_end: '2024'
   leadership_class: staff
   source:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 32
-  note: Chief Marketing and Product Officer for company's subsidiary TTS; sister of Tom DeLonge; has served in this position since the company's inception in 2011.
+  note: Chief Marketing and Product Officer for company's subsidiary TTS; sister of Tom DeLonge; has served in this position since the company's inception in 2011. Per the 2024 Form 1-K, she transitioned to Chief Content Officer for the Company and President of To The Stars Media Inc. by the 2024 1-K filing date.
+- id: kp9b
+  added_date: '2026-04-22'
+  person_path: /people/kari-delonge
+  role: Chief Content Officer for the Company and President of To The Stars Media Inc.
+  period_start: '2024'
+  leadership_class: staff
+  source:
+    path: government/sec-ttsa-1k-partii-20250417.html
+    location: SEC 1-K FY2024, Directors/Officers section, Kari DeLonge bio
+  note: Current dual role per the 2024 Form 1-K — Chief Content Officer at the parent Company plus President of the TTSM subsidiary (To The Stars Media Inc.). Transitioned from the 2011-origin Chief Marketing and Product Officer role at the TTS subsidiary.
 org_relationships:
 - id: or1
   added_date: '2026-04-22'
