@@ -557,9 +557,9 @@ def normalize_for_compare(text):
       - Markdown block-quote line-prefix markers (`> ` at start of each
         line) stripped — so a multi-line source quote rendered as a
         multi-line block quote still substring-matches its single-string
-        quote text. Surfaced by the F.5 UAPTF pilot when multi-line YAML
-        literal-block quotes (SCG, Senate Report) rendered as multi-line
-        block quotes and failed the check despite content equivalence.
+        quote text. Covers the case where multi-line YAML literal-block
+        quotes render as multi-line block quotes and would otherwise
+        fail the check despite content equivalence.
       - all hyphens removed (uniform handling of PDF line-wrap hyphenation,
         compound-word hyphens, and em-dashes — the tradeoff is we cannot
         distinguish "brand-new" from "brandnew", but we gain robustness

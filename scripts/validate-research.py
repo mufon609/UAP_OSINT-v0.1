@@ -1632,8 +1632,8 @@ def check_location_relationships(rel, data, manifest_paths):
 # =============================================================================
 
 # Common English stopwords dropped from token-comparison. About 110
-# entries; calibrated from the D-era token-drift check plus light
-# pruning based on the Fravor i1 audit signal.
+# entries; calibrated from prior token-drift checks plus light
+# pruning based on contributor audit signals.
 STOPWORDS = {
     # Articles
     "a", "an", "the",

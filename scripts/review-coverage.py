@@ -92,8 +92,7 @@ MARKDOWN_LINK_PATTERN = re.compile(r"\[`/[^`]+`\]")
 # the parens contain only the wrap path. Prevents orphan `()` in the
 # stripped output when contributors write `Name ([`/path`])` inside a
 # double-quoted span, which otherwise becomes `Name ()` and leaks into
-# the description-drift check as a bogus token. Surfaced by the F.5
-# UAPTF pilot (Norquist wrap inside a DoD press-release quote).
+# the description-drift check as a bogus token.
 WRAP_IN_PARENS_PATTERN = re.compile(r"\s*\(\s*\[`/[^`]+`\]\s*\)")
 
 # Designator patterns like VFA-41, CVN-68, F/A-18F, APG-73 — uppercase
