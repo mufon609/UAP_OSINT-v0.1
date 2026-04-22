@@ -4,7 +4,7 @@ schema_version: 1
 target_node: organizations/uaptf
 status: active
 created: '2026-04-20'
-description: 'The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force at the [`/organizations/oni`]. Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) approved the establishment. DoD press release, August 14, 2020: "Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF."
+description: 'The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force chartered by the Naval Intelligence Activity ([`/organizations/nia`]) and operating at the [`/organizations/oni`]. Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) approved the establishment. DoD press release, August 14, 2020: "Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF." The Charter primary-source-attests that the Naval Intelligence Activity was directed to lead the UAP Task Force, and that Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity — establishing NIA as the chartering authority distinct from ONI as operating location.
 
 
   The UAP Security Classification Guide (ID# 04-030, Naval Intelligence Activity ([`/organizations/nia`]), April 16, 2020) names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its subject — four months before the DoD press release of August 14, 2020. The UAPTF Charter, dated September 1, 2020, describes the Task Force as "Congressionally mandated, Deputy Secretary of Defense directed" and its Purpose as "to create a single entity tasked with working across the Department of Defense" with the Intelligence Community and the Interagency "to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data" on UAP.
@@ -80,7 +80,7 @@ document_intrinsic:
   statutory_authority: Congressionally mandated (Intelligence Authorization Act for Fiscal Year 2021, Senate Report 116-233 "Advanced Aerial Threats" section) and Deputy Secretary of Defense directed (Norquist memorandum, August 4, 2020)
   established_date: '2020-08-04'
   terminated_date: 2022-07
-  parent_organization_path: /organizations/oni
+  parent_organization_path: /organizations/nia
   office_type: DoD task force
   jurisdiction: Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security
 context_extrinsic:
@@ -230,7 +230,7 @@ key_personnel:
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
     location: Opening ¶8
-  note: Grusch's sworn written testimony attests "I was a member of the UAPTF from 2019-2021" in his NRO reservist capacity
+  note: Grusch's sworn written testimony attests "I was a member of the UAPTF from 2019-2021" in his NRO reservist capacity. The 2019 start date predates UAPTF's formal August 4, 2020 establishment by approximately one year, indicating either an informal pre-2020 task force / ONI UAP cell that was retroactively formalized as UAPTF, or that Grusch testified to continuous Task-Force-equivalent membership spanning the informal-to-formal transition. The April 16, 2020 UAP Security Classification Guide also predates the public August 2020 establishment, corroborating a pre-2020 operational lineage.
 org_relationships:
 - id: or1
   added_date: '2026-04-20'
@@ -256,6 +256,38 @@ org_relationships:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
     location: p.3
   note: ODNI National Intelligence Manager for Aviation co-drafted the June 2021 Preliminary Assessment with UAPTF
+- id: or4
+  added_date: '2026-04-22'
+  organization_path: /organizations/nia
+  relationship_type: parent
+  source:
+    path: government/blackvault-uaptf-charter-foia-20250422.pdf
+    location: p.1 / p.3 Charter
+  note: Naval Intelligence Activity (NIA) chartered the UAPTF per the September 1, 2020 Charter and was directed by DoD to lead the Task Force; NIA designates Task Force leadership. Distinct from ONI, which served as operating location.
+- id: or5
+  added_date: '2026-04-22'
+  organization_path: /organizations/us-navy
+  relationship_type: other
+  source:
+    path: government/defense-gov-uaptf-establishment-20200814.html
+    location: article body ¶1
+  note: "Navy-led per DoD press release: 'The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF.' Navy sat above NIA in the chain of command."
+- id: or6
+  added_date: '2026-04-22'
+  organization_path: /organizations/osd
+  relationship_type: other
+  source:
+    path: government/defense-gov-uaptf-establishment-20200814.html
+    location: article body ¶1
+  note: The Office of the Under Secretary of Defense for Intelligence and Security (USD(I&S)) — an OSD component — was the cognizant OSD authority over UAPTF per the DoD press release. Also named in the ODNI Preliminary Assessment contributor list (June 25, 2021).
+- id: or7
+  added_date: '2026-04-22'
+  organization_path: /organizations/oni
+  relationship_type: other
+  source:
+    path: government/blackvault-uap-security-classification-guide-20200416.pdf
+    location: Purpose, p.1
+  note: UAPTF operated at the Office of Naval Intelligence (ONI) per the UAP Security Classification Guide, which identifies the Task Force as "at the Office of Naval Intelligence." ONI served as operating host; NIA served as chartering authority.
 timeline:
 - id: t1
   added_date: '2026-04-20'
@@ -301,7 +333,7 @@ timeline:
 - id: t6
   added_date: '2026-04-20'
   date: '2021-11-23'
-  event: Airborne Object Identification and Management Synchronization Group (AOIMSG) established as the successor to the U.S. Navy's Unidentified Aerial Phenomena Task Force
+  event: "Airborne Object Identification and Management Synchronization Group (AOIMSG) announced as the intended successor framework to the U.S. Navy's Unidentified Aerial Phenomena Task Force. AOIMSG establishment did not immediately disestablish UAPTF — UAPTF continued to operate in parallel until the July 15, 2022 Hicks memorandum directed the Secretary of the Navy to disestablish UAPTF no later than the date AARO is established."
   category: leadership-transition
   source:
     path: government/defense-gov-aoimsg-establishment-20211123.html
@@ -368,6 +400,12 @@ entities_referenced:
   entity_type: organization
   name: U.S. Navy
   wrap_path: /organizations/us-navy
+- id: e7b
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Office of the Under Secretary of Defense for Intelligence and Security (USD(I&S)) — Office of the Secretary of Defense
+  wrap_path: /organizations/osd
+  context_summary: The USD(I&S) was the cognizant OSD authority over UAPTF per the August 14, 2020 DoD press release. USD(I&S) sits within the Office of the Secretary of Defense. Also named in the ODNI Preliminary Assessment (June 25, 2021) contributor list.
 - id: e8
   added_date: '2026-04-20'
   entity_type: organization

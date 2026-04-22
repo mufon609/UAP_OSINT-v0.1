@@ -19,14 +19,14 @@ created: 2026-04-20
 | Statutory Authority | Congressionally mandated (Intelligence Authorization Act for Fiscal Year 2021, Senate Report 116-233 "Advanced Aerial Threats" section) and Deputy Secretary of Defense directed (Norquist memorandum, August 4, 2020) |
 | Established | 2020-08-04 |
 | Terminated | 2022-07 |
-| Parent Organization | [`/organizations/oni`] |
+| Parent Organization | [`/organizations/nia`] |
 | Jurisdiction | Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security |
 
 ---
 
 ## Description
 
-The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force at the [`/organizations/oni`]. Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) approved the establishment. DoD press release, August 14, 2020: "Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF."
+The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force chartered by the Naval Intelligence Activity ([`/organizations/nia`]) and operating at the [`/organizations/oni`]. Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) approved the establishment. DoD press release, August 14, 2020: "Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF." The Charter primary-source-attests that the Naval Intelligence Activity was directed to lead the UAP Task Force, and that Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity — establishing NIA as the chartering authority distinct from ONI as operating location.
 
 The UAP Security Classification Guide (ID# 04-030, Naval Intelligence Activity ([`/organizations/nia`]), April 16, 2020) names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its subject — four months before the DoD press release of August 14, 2020. The UAPTF Charter, dated September 1, 2020, describes the Task Force as "Congressionally mandated, Deputy Secretary of Defense directed" and its Purpose as "to create a single entity tasked with working across the Department of Defense" with the Intelligence Community and the Interagency "to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data" on UAP.
 
@@ -224,7 +224,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 | 2020-08-14 | DoD publicly announces establishment of the Unidentified Aerial Phenomena Task Force | founding | government/defense-gov-uaptf-establishment-20200814.html |  |
 | 2020-09-01 | UAPTF Charter signed by the Director, Naval Intelligence Activity | other | government/blackvault-uaptf-charter-foia-20250422.pdf |  |
 | 2021-06-25 | ODNI Preliminary Assessment, Unidentified Aerial Phenomena published — drafted by UAPTF and the ODNI National Intelligence Manager for Aviation | other | government/dni-gov-odni-preliminary-assessment-20210625.pdf | [`/documents/odni-preliminary-assessment-2021`] |
-| 2021-11-23 | Airborne Object Identification and Management Synchronization Group (AOIMSG) established as the successor to the U.S. Navy's Unidentified Aerial Phenomena Task Force | leadership-transition | government/defense-gov-aoimsg-establishment-20211123.html | [`/organizations/aoimsg`] |
+| 2021-11-23 | Airborne Object Identification and Management Synchronization Group (AOIMSG) announced as the intended successor framework to the U.S. Navy's Unidentified Aerial Phenomena Task Force. AOIMSG establishment did not immediately disestablish UAPTF — UAPTF continued to operate in parallel until the July 15, 2022 Hicks memorandum directed the Secretary of the Navy to disestablish UAPTF no later than the date AARO is established. | leadership-transition | government/defense-gov-aoimsg-establishment-20211123.html | [`/organizations/aoimsg`] |
 | 2022-06-29 | DoD Public Affairs statement (via spokesperson Susan Gough) names former Office of Naval Intelligence senior civilian John Stratton as UAPTF lead; Dr. Travis Taylor identified as informal Chief Scientist | other | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |  |
 | 2022-07-15 | Deputy Secretary of Defense memorandum directs the Secretary of the Navy to disestablish UAPTF no later than the date the AARO is established, and to transfer data, analysis, or other relevant material to the AARO | leadership-transition | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |  |
 | 2022-07-20 | All-domain Anomaly Resolution Office (AARO) establishment announced — UAPTF formally succeeded | leadership-transition | government/defense-gov-aaro-establishment-20220720.html | [`/organizations/aaro`] |
@@ -240,6 +240,10 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 | [`/organizations/aoimsg`] | successor | government/defense-gov-aoimsg-establishment-20211123.html |
 | [`/organizations/aaro`] | successor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | [`/organizations/odni`] | partner | government/dni-gov-odni-preliminary-assessment-20210625.pdf |
+| [`/organizations/nia`] | parent | government/blackvault-uaptf-charter-foia-20250422.pdf |
+| [`/organizations/us-navy`] | other | government/defense-gov-uaptf-establishment-20200814.html |
+| [`/organizations/osd`] | other | government/defense-gov-uaptf-establishment-20200814.html |
+| [`/organizations/oni`] | other | government/blackvault-uap-security-classification-guide-20200416.pdf |
 
 ---
 
@@ -261,6 +265,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 - [`/organizations/nia`]
 - [`/organizations/odni`]
 - [`/organizations/oni`]
+- [`/organizations/osd`]
 - [`/organizations/us-navy`]
 
 ### Documents
