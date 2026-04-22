@@ -416,11 +416,11 @@ quotes:
 - id: q43
   added_date: '2026-04-22'
   text: |
-    We have entered into a consulting agreement with Exchange Listing, LLC ("Exchange Listing"), under which Exchange Listing will provide advisory and capital market services with the goal of enabling the Company to list its securities on the Nasdaq or NYSE (the "Advisory Agreement"). The Advisory Agreement compensates Exchange Listing, in part, with the sale of the Company's Class A Common Stock in an amount equivalent to 255,654 shares, or 2% of the outstanding shares, for par value price of $0.001 per share, for a total purchase price of $256.00.
+    On February 27, 2022, the Company entered into a consulting agreement with Exchange Listing, LLC ("Exchange Listing"), under which Exchange Listing will provide advisory and capital market services with the goal of enabling the Company to list its securities on the Nasdaq or NYSE (the "Advisory Agreement"). The Advisory Agreement compensates Exchange Listing, in part, with the sale of the Company's Class A Common Stock in an amount equivalent to 255,654 shares, or 2% of the outstanding shares, for par value price of $0.001 per share, for a total purchase price of $256.
   source:
     path: government/sec-ttsa-1k-partii-20220502.html
-    location: SEC 1-K FY2021, Exchange Listing consulting agreement section
-  significance: Primary-source documentation of TTSA's attempted transition from Regulation A+ crowdfunding to Nasdaq or NYSE public listing via a February 2022 consulting agreement. Establishes corporate ambition toward a full public exchange listing that the subsequent FY2024 1-K (April 2025) does not update — indicating the listing deadline (January 19, 2024) was not met and the reversion clause returning shares to the Company activated.
+    location: SEC 1-K FY2021, Note 15 Related Party Transactions — Exchange Listing Advisory Agreement
+  significance: Primary-source signing date (February 27, 2022) and consideration terms of TTSA's attempted transition from Regulation A+ crowdfunding to Nasdaq or NYSE public listing. The subsequent FY2024 1-K (April 2025) does not update this agreement — indicating the listing deadline (January 19, 2024) was not met and the reversion clause returning shares to the Company activated.
 - id: q44
   added_date: '2026-04-22'
   text: |
@@ -993,10 +993,10 @@ timeline:
   added_date: '2026-04-22'
   category: filing
   date: '2021-11-30'
-  event: "Company amends its name from 'To The Stars Academy Of Arts and Science Inc.' to 'To The Stars Inc.' to better reflect the Company's focus on entertainment. Both names maintained as trademarks going forward."
+  event: "Company amends its name from 'To The Stars Academy Of Arts and Science Inc.' to 'To The Stars Inc.' to better reflect the Company's focus on entertainment. Both names maintained as registered trademarks. IRS EIN transitions from 82-0601064 (2017-2021 filings) to 84-3854992 (2022-onward filings) around this corporate-action period."
   source:
     path: government/sec-ttsa-1k-partii-20220502.html
-    location: SEC 1-K FY2021, Item 1 name amendment passage
+    location: SEC 1-K FY2021, Item 1 name amendment passage and cover-page EIN
 - id: tl15d
   added_date: '2026-04-22'
   category: filing
@@ -1184,6 +1184,26 @@ key_personnel:
     path: government/sec-ttsa-1k-partii-20220502.html
     location: SEC 1-K FY2021, Directors/Officers section, Kari DeLonge role listing
   note: Current dual role — Chief Content Officer at the parent Company plus President of the TTSM subsidiary (To The Stars Media Inc.). Role confirmed in both the FY2021 1-K (April 2022) and FY2024 1-K (April 2025) filings; period_start of 2022 reflects the earliest primary-source attestation of the new title in our archived corpus.
+- id: kp10
+  added_date: '2026-04-22'
+  person_path: /people/j-christopher-mizer
+  role: Director
+  period_start: '2019-05-14'
+  leadership_class: director
+  source:
+    path: government/sec-ttsa-1k-partii-20220502.html
+    location: SEC 1-K FY2021, Directors/Officers section, J. Christopher Mizer listing
+  note: Appointed to indefinite term of office on May 14, 2019 per the FY2021 1-K. Continuing director as of the FY2024 1-K (April 2025) filing. Affiliated with Vivaris Capital.
+- id: kp11
+  added_date: '2026-04-22'
+  person_path: /people/stan-spry
+  role: Director
+  period_start: '2021-06-14'
+  leadership_class: director
+  source:
+    path: government/sec-ttsa-1k-partii-20220502.html
+    location: SEC 1-K FY2021, Directors/Officers section, Stan Spry listing
+  note: Appointed to indefinite term of office on June 14, 2021 per the FY2021 1-K. Continuing director as of the FY2024 1-K (April 2025) filing. Founded Cartel Pictures (dissolved December 2024) and rebranded it as Evoke Entertainment LLC; the FY2021 1-K documents TTSA's March 24, 2021 co-production agreement with Cartel Pictures.
 org_relationships:
 - id: or1
   added_date: '2026-04-22'

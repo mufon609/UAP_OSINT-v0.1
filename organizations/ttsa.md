@@ -45,6 +45,8 @@ In late 2020 the Company's original science-and-aerospace principals — Elizond
 | [`/people/jim-semivan`] | Co-Founder and Vice President Operations | 2017 | government/sec-ttsa-1a-partii-20170710.html |
 | [`/people/steve-justice`] | Aerospace Division Director (later COO) | 2017 – 2021 | news/tothestarsacademy-home-20180108.html |
 | [`/people/tom-delonge`] | Founder, President, and interim Chief Executive Officer | 2017-02 – 2022 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/j-christopher-mizer`] | Director | 2019-05-14 | government/sec-ttsa-1k-partii-20220502.html |
+| [`/people/stan-spry`] | Director | 2021-06-14 | government/sec-ttsa-1k-partii-20220502.html |
 | [`/people/tom-delonge`] | Founder, Chairman of the Board, and interim Chief Executive Officer | 2022 | government/sec-ttsa-1k-partii-20220502.html |
 
 #### Staff
@@ -575,15 +577,15 @@ In late 2020 the Company's original science-and-aerospace principals — Elizond
 
 ---
 
-### Primary-source documentation of TTSA's attempted transition from Regulation A+ crowdfunding to Nasdaq or NYSE public listing via a February 2022 consulting agreement. Establishes corporate ambition toward a full public exchange listing that the subsequent FY2024 1-K (April 2025) does not update — indicating the listing deadline (January 19, 2024) was not met and the reversion clause returning shares to the Company activated.
+### Primary-source signing date (February 27, 2022) and consideration terms of TTSA's attempted transition from Regulation A+ crowdfunding to Nasdaq or NYSE public listing. The subsequent FY2024 1-K (April 2025) does not update this agreement — indicating the listing deadline (January 19, 2024) was not met and the reversion clause returning shares to the Company activated.
 
-> We have entered into a consulting agreement with Exchange Listing, LLC ("Exchange Listing"), under which Exchange Listing will provide advisory and capital market services with the goal of enabling the Company to list its securities on the Nasdaq or NYSE (the "Advisory Agreement"). The Advisory Agreement compensates Exchange Listing, in part, with the sale of the Company's Class A Common Stock in an amount equivalent to 255,654 shares, or 2% of the outstanding shares, for par value price of $0.001 per share, for a total purchase price of $256.00.
+> On February 27, 2022, the Company entered into a consulting agreement with Exchange Listing, LLC ("Exchange Listing"), under which Exchange Listing will provide advisory and capital market services with the goal of enabling the Company to list its securities on the Nasdaq or NYSE (the "Advisory Agreement"). The Advisory Agreement compensates Exchange Listing, in part, with the sale of the Company's Class A Common Stock in an amount equivalent to 255,654 shares, or 2% of the outstanding shares, for par value price of $0.001 per share, for a total purchase price of $256.
 
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | SEC 1-K FY2021, Exchange Listing consulting agreement section |
+| Location | SEC 1-K FY2021, Note 15 Related Party Transactions — Exchange Listing Advisory Agreement |
 
 ---
 
@@ -625,7 +627,7 @@ In late 2020 the Company's original science-and-aerospace principals — Elizond
 | 2021-04-01 | TTSA and landlord mutually terminate the Encinitas office and retail location lease. All subsequent official addresses on filings are mail-only. | other | government/sec-ttsa-1k-partii-20220502.html |  |
 | 2021-06-01 | Amendment to the Binding Term Sheet between TTSA and DeLonge — terminates prior services agreement; DeLonge contributes $941,964 of prior payments as capital and receives 784,970 shares of common stock at $1.20/share held by Gravity Holdings LLC. Consolidates ownership concentration. | other | government/sec-ttsa-1k-partii-20220502.html |  |
 | 2021-09-17 | TTSA files SEC Form 253(g)(2) Supplement (File No. 024-11243) terminating the Third Regulation A offering effective September 18, 2021. No further subscriptions accepted after that date. | filing | government/sec-ttsa-253g2-reg-a-termination-20210917.html | [`/documents/sec-ttsa-253g2-reg-a-termination-2021`] |
-| 2021-11-30 | Company amends its name from 'To The Stars Academy Of Arts and Science Inc.' to 'To The Stars Inc.' to better reflect the Company's focus on entertainment. Both names maintained as trademarks going forward. | filing | government/sec-ttsa-1k-partii-20220502.html |  |
+| 2021-11-30 | Company amends its name from 'To The Stars Academy Of Arts and Science Inc.' to 'To The Stars Inc.' to better reflect the Company's focus on entertainment. Both names maintained as registered trademarks. IRS EIN transitions from 82-0601064 (2017-2021 filings) to 84-3854992 (2022-onward filings) around this corporate-action period. | filing | government/sec-ttsa-1k-partii-20220502.html |  |
 | 2022-02-27 | TTSA enters a consulting agreement with Exchange Listing, LLC — Advisory Agreement compensating Exchange Listing with 255,654 Class A Common Stock shares (2% of outstanding) at par value plus warrants for 250,000 shares at $2.00 exercise price. Goal: listing TTSA securities on Nasdaq or NYSE. Reversion clause: if not listed on Nasdaq/NYSE by January 19, 2024, all Class A Common Stock returned to the Company. The FY2024 1-K (April 2025) makes no mention of this agreement, indicating the listing deadline was not met. | other | government/sec-ttsa-1k-partii-20220502.html |  |
 | 2022-03-31 | TTSA qualifies for a fourth Regulation A offering; per the FY2021 Form 1-K filed April 30 2022, no funds raised under this Fourth Offering as of the filing date. | filing | government/sec-ttsa-1k-partii-20220502.html |  |
 | 2022-07 | AARO established by Deputy Secretary of Defense Hicks; in 2022 AARO contracts ORNL for independent materials testing on the TTSA-DEVCOM-CRADA specimen per AARO Supplement. | other | government/aaro-supplement-to-ornl-analysis-202407.pdf | [`/organizations/aaro`] |
