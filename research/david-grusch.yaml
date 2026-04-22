@@ -7,7 +7,6 @@ created: '2026-04-20'
 primary_sources:
 - path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-david-grusch-0.txt
   pdf_metadata:
     author: gscie
     creator: PScript5.dll Version 5.2.2
@@ -17,7 +16,6 @@ primary_sources:
     pages: 3
 - path: government/docs-house-gov-grusch-bio-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-david-grusch-1.txt
   pdf_metadata:
     author: gscie
     creator: PScript5.dll Version 5.2.2
@@ -1103,7 +1101,7 @@ quotes:
   text: My name is David Charles Grusch. I was an intelligence officer for 14 years both in the U.S. Air Force, both active-duty Air National Guard and Reserve at the rank of Major and most recently from 2021 to 2025—excuse me, 2023—at the National Geospatial Intelligence Agency, NGA, at the GS–15 civilian level, which is the military equivalent of a full bird colonel.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11 (hearing pagination); scratch lines 733-738
+    location: oral opening statement, p. 11 (hearing pagination)
   significance: Grusch's sworn self-identification establishing career credential baseline before Congress.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1113,7 +1111,7 @@ quotes:
   text: I was my agency’s co-lead in unidentified anomalous phenomena and trans medium object analysis as well as reporting to the UAP Task Force—UAPTF—and eventually, once it was established, the All-Domain Anomaly Resolution Office—AARO.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11; scratch lines 739-742
+    location: oral opening statement, p. 11
   significance: Grusch's own description of his NGA UAP role and his reporting line to UAPTF and then AARO.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1123,7 +1121,7 @@ quotes:
   text: I became a whistleblower through a PPD–19 urgent concern filing in May 2022 with the intelligence community inspector general following concerning reports from multiple esteemed and credentialed current and former military and intelligence community individuals that the U.S. Government is operating with secrecy above congressional oversight with regards to UAPs.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11; scratch lines 745-750
+    location: oral opening statement, p. 11
   significance: Sworn formal articulation of the PPD-19 filing date, venue (ICIG), and substantive triggering claim — secrecy above congressional oversight.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1134,7 +1132,7 @@ quotes:
   text: My testimony is based on information I have been given by individuals with a long-standing track record of legitimacy and service to this country, many of whom also have shared compelling evidence in the form of photography, official documentation, and classified oral testimony to myself and many of my various colleagues.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11; scratch lines 751-755
+    location: oral opening statement, p. 11
   significance: Grusch's own framing of his evidentiary basis — he relays information from named witnesses who showed him photography, official documentation, and classified oral testimony.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1144,7 +1142,7 @@ quotes:
   text: I have taken every step I can to corroborate this evidence over a period of 4 years while I was with the UAP Task Force and do my due diligence on the individuals sharing it.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11; scratch lines 756-758
+    location: oral opening statement, p. 11
   significance: Grusch's claim that his investigation spanned 4 years during UAPTF tenure with corroboration and due-diligence steps.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1154,7 +1152,7 @@ quotes:
   text: But as I stand here under oath now, I am speaking to the facts as I have been told them.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11; scratch lines 766-767
+    location: oral opening statement, p. 11
   significance: Critical epistemic caveat — Grusch explicitly frames his sworn testimony as relayed from others, not firsthand.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1164,7 +1162,7 @@ quotes:
   text: In 2019, the UAP Task Force Director asked me to identify all special access programs and controlled access programs, also known as SAPs and CAPs, we needed to satisfy our congressionally mandated mission and we would direct report at the time to the DEP/SecDef.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 12; scratch lines 774-778
+    location: oral opening statement, p. 12
   significance: Specific tasking origin — UAPTF Director directed Grusch to identify relevant SAPs/CAPs; frames how Grusch says he came upon the crash-retrieval program.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1174,7 +1172,7 @@ quotes:
   text: At the time, due to my extensive executive level intelligence support duties I was cleared to literally all relevant compartments and in a position of extreme trust both in my military and civilian capacities.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 12; scratch lines 779-782
+    location: oral opening statement, p. 12
   significance: Sworn self-representation of his 2019-era clearance breadth ("literally all relevant compartments").
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1184,7 +1182,7 @@ quotes:
   text: I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 12; scratch lines 783-786
+    location: oral opening statement, p. 12
   significance: The headline filed claim — sworn allegation of a multi-decade crash-retrieval + reverse-engineering program with access denial.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1195,7 +1193,7 @@ quotes:
   text: I made the decision based on the data I collected to report this information to my superiors and multiple inspectors general and, in effect, becoming a whistleblower. As you know, I have suffered retaliation for my decision, but I am hopeful that my actions will ultimately lead to a positive outcome of increased transparency.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 12; scratch lines 787-791
+    location: oral opening statement, p. 12
   significance: Sworn retaliation claim, on the record before Congress — ties PPD-19 filing to asserted retaliation.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1206,7 +1204,7 @@ quotes:
   text: Yes, I can speak to that very briefly in an unclassified manner. As you know, the preponderance of my complaint was classified to the intelligence communities. Both material acquisition and exploitation activity, also baselining the UAPs but not sharing it with, you know, intelligence professionals that are actually doing step briefs to pilots, that kind of information.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Chairman Grothman, p. 16; scratch lines 1018-1023
+    location: Q&A with Chairman Grothman, p. 16
   significance: 'Unclassified description of the substance withheld from
 
     Congress: "material acquisition and exploitation activity"
@@ -1225,7 +1223,7 @@ quotes:
   text: Absolutely, based on interviewing over 40 witnesses over 4 years.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Garcia, p. 18; scratch line 1148
+    location: Q&A with Rep. Garcia, p. 18
   significance: First public numeric witness count — "over 40 witnesses over 4 years" underlying Grusch's claim the government possesses UAPs.
   context: Oral testimony Q&A (response to "do you believe that our government is in possession of UAPs?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1236,7 +1234,7 @@ quotes:
   text: I know the exact locations and those locations were provided to the Inspector General and some of which to the intelligence committees. I actually had the people with the firsthand knowledge provide a protected disclosure to the Inspector General.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Garcia, p. 18; scratch lines 1151-1154
+    location: Q&A with Rep. Garcia, p. 18
   significance: Sworn assertion that Grusch knows exact facility locations and facilitated firsthand-witness protected disclosures to the IG.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1247,7 +1245,7 @@ quotes:
   text: Yes. I have to be careful what I say in detail because there is an open whistleblower reprisal investigation on my behalf, and I do not want to compromise that investigation by providing anything that may help provide somebody information. But it was very brutal and very unfortunate. Some of the tactics they used to hurt me both professionally and personally, to be quite frank. Yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 20-21; scratch lines 1218-1224
+    location: Q&A with Rep. Burchett, p. 20-21
   significance: Sworn retaliation/reprisal claim with active PPD-19 investigation status — "brutal and very unfortunate" tactics used both professionally and personally.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1258,7 +1256,7 @@ quotes:
   text: Yes, personally.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 20; scratch line 1230
+    location: Q&A with Rep. Burchett, p. 20
   significance: Sworn affirmative to "Do you have any personal knowledge of people who have been harmed or injured in efforts to cover up or conceal these extraterrestrial technology?"
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1269,7 +1267,7 @@ quotes:
   text: I have to be careful asking that question. I directed people with that knowledge to the appropriate authorities.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 20; scratch lines 1233-1234
+    location: Q&A with Rep. Burchett, p. 20
   significance: Grusch's non-answer to Burchett's question about whether anyone had been murdered — he directed those with such knowledge to authorities rather than answering directly.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1279,7 +1277,7 @@ quotes:
   text: Well, it has only been about 2 months or so. So, I guess my experience has been overwhelming support from former colleagues of mine that have, you know, privately messaged me and I do appreciate that. But I do have knowledge of active planned reprisal activity against myself, and other colleagues and it is very, very upsetting to me.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Raskin, p. 22; scratch lines 1324-1330
+    location: Q&A with Rep. Raskin, p. 22
   significance: Sworn claim of "active planned reprisal activity" against Grusch and other whistleblowers.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1290,7 +1288,7 @@ quotes:
   text: Certain senior leadership at previous agencies I was associated with and that is all I will say publicly. But I can provide more details in a closed environment.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Raskin, p. 22; scratch lines 1332-1334
+    location: Q&A with Rep. Raskin, p. 22
   significance: Grusch identifies the source of reprisal activity as senior leadership at his former agencies.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1300,7 +1298,7 @@ quotes:
   text: Yes. There were certain colleagues of mine that were brutally administratively attacked, and it actually makes me very upset as a leader to see that happen to other co-workers and actually superiors of mine over the last 3 years.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Raskin, p. 22; scratch lines 1339-1342
+    location: Q&A with Rep. Raskin, p. 22
   significance: Sworn claim that colleagues and superiors were "brutally administratively attacked" over the last 3 years.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1311,7 +1309,7 @@ quotes:
   text: I call it administrative terrorism. That is their quiver—their tool in the toolbox to silence people, especially, you know, career government service cares about their career, cares about their clearance, their reputation to climb the ladder, and
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Raskin, p. 22-23; scratch lines 1345-1352
+    location: Q&A with Rep. Raskin, p. 22-23
   significance: Grusch's named framing ("administrative terrorism") for the retaliation pattern used against career IC personnel.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1321,7 +1319,7 @@ quotes:
   text: Yes, personally. Yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 23; scratch line 1377
+    location: Q&A with Rep. Luna, p. 23
   significance: Sworn affirmative to Luna's question "have you had incidences that have caused you to be in fear for your life for addressing these issues?"
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1332,7 +1330,7 @@ quotes:
   text: Yes. Him and I had a classified conversation in April 2022 before he took over AARO in July 2022 and I provided him some concerns I had.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 23; scratch lines 1395-1397
+    location: Q&A with Rep. Luna, p. 23
   significance: Sworn datum — Grusch had a classified conversation with Sean Kirkpatrick in April 2022, three months before Kirkpatrick took the AARO helm. Material to AARO-Grusch dispute.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1342,7 +1340,7 @@ quotes:
   text: Unfortunately, I cannot read his mind. I wish he did. I was happy to give sage counsel to him on where to look when he took the helm of AARO.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 23-24; scratch lines 1400-1402
+    location: Q&A with Rep. Luna, p. 23-24
   significance: Grusch's on-record characterization of the advice he offered Kirkpatrick and Kirkpatrick's non-follow-up.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1352,7 +1350,7 @@ quotes:
   text: Correct, through DODSR—DoD Prepublication and Security Review—and I just want to remind the public they are just looking from a security perspective. These are my own personal views and opinions, not the Department’s.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 24; scratch lines 1408-1411
+    location: Q&A with Rep. Luna, p. 24
   significance: Grusch confirms his disclosures cleared DOPSR but clarifies personal-not-department-position framing.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1362,7 +1360,7 @@ quotes:
   text: I am required by law to do that as a former intelligence officer, or I go to jail for revealing classified information.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 24; scratch lines 1415-1416
+    location: Q&A with Rep. Luna, p. 24
   significance: Grusch's own framing of the legal necessity of prepublication review for former IC officers.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1372,7 +1370,7 @@ quotes:
   text: Yes. I personally interviewed those individuals.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 25; scratch line 1510
+    location: Q&A with Rep. Moskowitz, p. 25
   significance: Sworn affirmative to Moskowitz asking whether Grusch met with people with direct knowledge of, or had direct knowledge of, nonhuman-origin craft — Grusch affirms he interviewed those individuals.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1383,7 +1381,7 @@ quotes:
   text: Based on conventional advanced tech I was briefed to the preponderance of the Defense Department’s both space and aerospace compartmented programs. Yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 25-26; scratch lines 1517-1519
+    location: Q&A with Rep. Moskowitz, p. 25-26
   significance: Grusch's representation of his conventional advanced tech access — "preponderance" of DoD space and aerospace compartmented programs.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1393,7 +1391,7 @@ quotes:
   text: A complicated question. So, there is, you know, some—I would call it abuse here. So, congressional oversight of conventional Special Access Programs—and I will use Title 10, DoD as an example, right. So, 10 U.S. Code Section 119 discusses congressional oversight of SAPs, discusses the DEP/SecDef’s ability to waive congressional reporting. However, the Gang of 8 is at least supposed to be notified if a—you know, a waived or a waive bigoted unacknowledged SAP is created and that is public law.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 26; scratch lines 1526-1534
+    location: Q&A with Rep. Moskowitz, p. 26
   significance: Grusch's public-law framing of how the alleged programs evade oversight — naming 10 U.S.C. § 119 and Gang of 8 notification requirements.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1403,7 +1401,7 @@ quotes:
   text: I will give you generalities. I can get very specific in a closed session. But misappropriation of funds and self-fund.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 26; scratch lines 1537-1538
+    location: Q&A with Rep. Moskowitz, p. 26
   significance: Sworn claim that alleged programs are funded via "misappropriation of funds and self-fund."
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1414,7 +1412,7 @@ quotes:
   text: Correct, through something called IR&D.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 26; scratch line 1546
+    location: Q&A with Rep. Moskowitz, p. 26
   significance: Sworn affirmative that U.S. corporations overcharge for tech sold to USG with the excess going to alleged programs, specifically via IR&D (Independent Research & Development) accounts.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1425,7 +1423,7 @@ quotes:
   text: That was one of my primary tasks at NGA since we process, exploit, and disseminate that kind of information. I have seen multiple cases, some of which to my understanding—and, of course, I left NGA in April so that is my information cutoff date. But I personally review both what we call overhead collection and from other strategic and tactical platforms that were—I could not even explain prosaically, and I have a degree in physics, by the way, as well. And I had—I am aware that you guys have not seen these reports, unfortunately and I do not know why.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 26; scratch lines 1554-1563
+    location: Q&A with Rep. Moskowitz, p. 26
   significance: Rare first-person observational claim — Grusch personally reviewed overhead/strategic/tactical platform imagery that he "could not even explain prosaically." Closest to firsthand in his oral testimony (though of imagery, not phenomena).
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1435,7 +1433,7 @@ quotes:
   text: I cannot discuss that in an open session.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 26-27; scratch line 1567
+    location: Q&A with Rep. Moskowitz, p. 26-27
   significance: Grusch declines to confirm/deny in open session whether the imagery he reviewed includes crash-site imagery.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1445,7 +1443,7 @@ quotes:
   text: I cannot go beyond what I have already stated publicly in my News Nation interview because it touches other sensitivities.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Moskowitz, p. 27; scratch lines 1573-1575
+    location: Q&A with Rep. Moskowitz, p. 27
   significance: Grusch declines to extend beyond his NewsNation interview on the question of whether USG runs a disinformation campaign denying UAP existence.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1455,7 +1453,7 @@ quotes:
   text: It is not accurate. I believe Dr. Kirkpatrick mentioned he had about 30 individuals that have come to AARO thus far. A few of those individuals have also come to AARO that I also interviewed.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Foxx, p. 27; scratch lines 1594-1597
+    location: Q&A with Rep. Foxx, p. 27
   significance: Grusch directly contradicts Kirkpatrick's sworn SASC testimony of "no credible evidence thus far of extraterrestrial activity" — material contradiction on the public record.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1466,7 +1464,7 @@ quotes:
   text: And I know what they provided Dr. Kirkpatrick and their team.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Foxx, p. 27; scratch line 1599
+    location: Q&A with Rep. Foxx, p. 27
   significance: Grusch asserts he knows what material a subset of AARO witnesses provided — claim of dual familiarity with source information.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1476,7 +1474,7 @@ quotes:
   text: I was able to evaluate that information.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Foxx, p. 27; scratch line 1602
+    location: Q&A with Rep. Foxx, p. 27
   significance: Grusch states he evaluated the information AARO witnesses provided — basis for his contradiction of Kirkpatrick.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1486,7 +1484,7 @@ quotes:
   text: I like to use the term nonhuman. I do not like to denote origin. Keeps the aperture open both scientifically. Certainly, like I have discussed publicly, previously 1930’s.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 30; scratch lines 1744-1746
+    location: Q&A with Rep. Burchett, p. 30
   significance: KEY — Grusch publicly under oath states his terminology preference ("nonhuman") and places USG awareness of nonhuman intelligence back to the 1930s. Primary-source attestation for rumor r2 (NHI terminology) and for the pre-Roswell start date.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1497,7 +1495,7 @@ quotes:
   text: I cannot discuss that publicly, but I did provide that information both to the intel committees and the Inspector General.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 30; scratch lines 1756-1758
+    location: Q&A with Rep. Burchett, p. 30
   significance: Grusch confirms he has provided names/titles/facilities to the intel committees and IG but declines to disclose publicly.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1507,7 +1505,7 @@ quotes:
   text: It is a misnomer that there is anything actually above top secret. Executive Order 13526 delineates the classification levels.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Gaetz / Rep. Burchett, p. 30-31; scratch lines 1790-1792
+    location: Q&A with Rep. Gaetz / Rep. Burchett, p. 30-31
   significance: Technical clarification under oath — Grusch cites EO 13526 as authoritative on classification levels, addressing public confusion about what is "above Top Secret."
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1517,7 +1515,7 @@ quotes:
   text: It is a group of career senior executive officials.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 31; scratch line 1802
+    location: Q&A with Rep. Burchett, p. 31
   significance: Grusch's named class of actors behind the alleged oversight-evading decisions — "career senior executive officials."
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1527,7 +1525,7 @@ quotes:
   text: Both in and out of government and that is about as far as I can go there.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 31; scratch lines 1806-1807
+    location: Q&A with Rep. Burchett, p. 31
   significance: Grusch places decision-makers behind the alleged oversight evasion "both in and out of government" — implicates contractor-side custodians.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1537,7 +1535,7 @@ quotes:
   text: Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11‡ hours with both intel committees.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 32; scratch lines 1824-1827
+    location: Q&A with Rep. Burchett, p. 32
   significance: Grusch attests to an 11+ hour testimony session with both intel committees (HPSCI + SSCI) and to providing specific corporations / divisions names. "11‡" likely OCR artifact for 11+.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1548,7 +1546,7 @@ quotes:
   text: If you reference my News Nation interview and I talked about a multi-decade, you know, campaign to disenfranchise public interest, basically.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 32; scratch lines 1838-1840
+    location: Q&A with Rep. Burchett, p. 32
   significance: Grusch's sworn characterization of USG disinformation — "multi-decade campaign to disenfranchise public interest."
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1559,7 +1557,7 @@ quotes:
   text: The kind of general unclassed wave tops. Certainly, the contractors, you know, or the metal benders, so to speak, the ones actually doing specific performance on government contracts.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Ocasio-Cortez, p. 32; scratch lines 1873-1875
+    location: Q&A with Rep. Ocasio-Cortez, p. 32
   significance: Grusch describes contractor involvement — "metal benders" doing specific performance on government contracts — in reference to UAP-related activities.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1569,7 +1567,7 @@ quotes:
   text: For certain IR&D activities, I can only think of ones conventional in nature. Sometimes they flow through certain, I will just say SAP programs, that have cognizant authority over the Air Force or something and those are congressionally reported compartments.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Ocasio-Cortez, p. 32-33; scratch lines 1893-1902
+    location: Q&A with Rep. Ocasio-Cortez, p. 32-33
   significance: Technical expansion — Grusch describes how contractor IR&D funds escape congressional oversight by being internal to contractors.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1579,7 +1577,7 @@ quotes:
   text: Yes, I am familiar with the UAP Task Force 2019 Security Classification guide. I think it is fair. I did actually help author that with the Director.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Biggs, p. 35; scratch lines 2020-2022
+    location: Q&A with Rep. Biggs, p. 35
   significance: Grusch confirms on the record that he co-authored the 2019 UAPTF Security Classification Guide — direct UAPTF institutional involvement beyond analytical contribution.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1589,7 +1587,7 @@ quotes:
   text: Yes. I will say—I will call it a lazy attitude about declassifying videos. I mean, I have seen some of the videos of, you know, the recent shoot down and I saw no reason that could not have been released as long as they mask, you know, some data. The American people deserve to see that imagery and full motion video.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Biggs, p. 35; scratch lines 2024-2029
+    location: Q&A with Rep. Biggs, p. 35
   significance: Grusch on over-classification practice — "lazy attitude about declassifying videos."
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1599,7 +1597,7 @@ quotes:
   text: I know of multiple colleagues of mine that got physically injured and the activity——
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 36; scratch lines 2067-2068
+    location: Q&A with Rep. Burlison, p. 36
   significance: Sworn claim of physical injury to colleagues. Em-dash suspension indicates Burlison interrupted.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1610,7 +1608,7 @@ quotes:
   text: Both.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 36; scratch line 2071
+    location: Q&A with Rep. Burlison, p. 36
   significance: Sworn affirmative — physical injury caused both by UAPs and by people within the federal government. Major under-oath claim establishing that Grusch ascribes physical harm to both categories.
   context: Oral testimony Q&A (response to "By UAPs or by people within the Federal Government?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1621,7 +1619,7 @@ quotes:
   text: I cannot get into the specifics in an open environment, but at least the activity that I personally witnessed—and I have to be very careful here because you do not—you know, they tell you never to acknowledge tradecraft, right. So, what I personally witnessed, myself and my wife, was very disturbing.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 36; scratch lines 2075-2080
+    location: Q&A with Rep. Burlison, p. 36
   significance: Rare explicit first-person observational claim ("personally witnessed, myself and my wife") — Grusch describes a personally-witnessed retaliation/tradecraft event involving his wife.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1632,7 +1630,7 @@ quotes:
   text: I have to be careful to describe what I have seen firsthand and not in this environment. But I could answer that question behind closed doors.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 36; scratch lines 2086-2088
+    location: Q&A with Rep. Burlison, p. 36
   significance: Grusch declines to answer in open session whether he personally saw the alleged spacecraft — defers to a closed session.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1642,7 +1640,7 @@ quotes:
   text: That is something I have not witnessed myself.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 36; scratch line 2090
+    location: Q&A with Rep. Burlison, p. 36
   significance: 'Sworn admission — Grusch has NOT personally seen any
 
     non-human biologics/bodies. Critical epistemic boundary for r1
@@ -1660,7 +1658,7 @@ quotes:
   text: To answer your first question and, you know, I am here as a fact witness and not an expert, but I will give you a theoretical framework at least to work off to kind of espouse crashes. Regardless of, you know, your level of sentience, right—you know, planes crash, cars crash, and a number of sorties, however high, a small percentage are going to end in, you know, mission failure, if you will, as we say in the Air Force.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 36-37; scratch lines 2101-2107
+    location: Q&A with Rep. Burlison, p. 36-37
   significance: Grusch's theoretical framework for why non-human craft would crash — also explicit statement "I am here as a fact witness and not an expert" bounding his epistemic role.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1670,7 +1668,7 @@ quotes:
   text: And then in terms of multidimensionality, that kind of thing, the framework that I am familiar with, for example, is something called the holographic principle both—it derives itself from general relativity and quantum mechanics and that is if you want to imagine a 3D object such as yourself casting a shadow onto a 2D surface that is the holographic principle. So, you can be projected—quasi projected from higher dimensional space to lower dimensional. It is a scientific trope that you can actually cross, literally, as far as I understand, but there is
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 37-38; scratch lines 2108-2120
+    location: Q&A with Rep. Burlison, p. 37-38
   significance: Grusch's own theoretical framing ("holographic principle") for interdimensional UAP possibility. Explicitly framed as theoretical, not evidenced.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1680,7 +1678,7 @@ quotes:
   text: Not to my knowledge. Plus, the recoveries predate a lot of our advanced programs that I previously am waiving off. So——
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 37; scratch lines 2128-2130
+    location: Q&A with Rep. Burlison, p. 37
   significance: Grusch's response to Occam's Razor alternative that recovered craft are domestic military contractor products — he replies recoveries predate current advanced programs.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1690,7 +1688,7 @@ quotes:
   text: I have actually never seen anything personally, believe it or not.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Mace, p. 39; scratch lines 2256-2257
+    location: Q&A with Rep. Mace, p. 39
   significance: Sworn statement — Grusch has never personally seen a UAP. Grounds his entire testimony as relayed, not observational.
   context: Oral testimony Q&A (response to "when you reported your experiences with a UAP did any of you face any repercussions with your superiors?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1700,7 +1698,7 @@ quotes:
   text: As previously stated publicly, yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Mace, p. 39; scratch line 2262
+    location: Q&A with Rep. Mace, p. 39
   significance: Sworn affirmative to "do you believe there is an active disinformation campaign within our government to deny the existence of UAPs?"
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1711,7 +1709,7 @@ quotes:
   text: I can only speak for my personal leadership over at NGA. I tried to look at every report that came through that I could triage.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Mace, p. 40; scratch lines 2301-2303
+    location: Q&A with Rep. Mace, p. 40
   significance: Grusch's own description of his NGA UAP-triage responsibility scope.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1721,7 +1719,7 @@ quotes:
   text: There are certain elected leaders that had more information that—I am not sure what they have shared with certain Gang of 8 members or et cetera. But, certainly, I would not be surprised.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Mace, p. 40; scratch lines 2307-2310
+    location: Q&A with Rep. Mace, p. 40
   significance: Grusch's measured answer to whether officials have unlawfully withheld information from Congress.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1731,7 +1729,7 @@ quotes:
   text: It is something I cannot discuss in a public setting.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Mace, p. 40; scratch line 2315
+    location: Q&A with Rep. Mace, p. 40
   significance: Grusch declines to answer in open session whether the government has made contact with intelligent extraterrestrials.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1741,7 +1739,7 @@ quotes:
   text: As I have stated publicly already in my News Nation interview, biologics came with some of these recoveries. Yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Mace, p. 40; scratch lines 2319-2320
+    location: Q&A with Rep. Mace, p. 40
   significance: LANDMARK — First sworn, under-oath, verbatim congressional statement from Grusch that "biologics came with some of these recoveries." Primary-source attestation for r1 rumor (non-human biologics claim).
   context: Oral testimony Q&A (response to "do we have the bodies of the pilots who piloted this craft?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1752,7 +1750,7 @@ quotes:
   text: Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently still on the program.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Mace, p. 40; scratch lines 2322-2324
+    location: Q&A with Rep. Mace, p. 40
   significance: LANDMARK — Sworn under-oath verbatim congressional statement that the biologics are "nonhuman" per assessment of active-program insiders. Primary-source attestation for r1 rumor (non-human biologics) AND r2 (NHI terminology). Note carefully relayed framing — "assessment of people with direct knowledge."
   context: Oral testimony Q&A (response to "were they human or nonhuman biologics?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1763,7 +1761,7 @@ quotes:
   text: The specific documentation I would have to talk to you in a SCIF about.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Mace, p. 40; scratch lines 2327-2328
+    location: Q&A with Rep. Mace, p. 40
   significance: Grusch defers documentation evidence for biologics to closed-session SCIF.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1773,7 +1771,7 @@ quotes:
   text: I can give you a specific cooperative and hostile witness list of specific individuals that were in those.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Mace, p. 41; scratch lines 2341-2342
+    location: Q&A with Rep. Mace, p. 41
   significance: Grusch offers a "cooperative and hostile witness list" — indicates he maintains a structured witness database.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1783,7 +1781,7 @@ quotes:
   text: Fair assessment.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Ogles, p. 43; scratch line 2470
+    location: Q&A with Rep. Ogles, p. 43
   significance: Sworn affirmative that UAPs could be collecting reconnaissance on U.S. capabilities.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1793,7 +1791,7 @@ quotes:
   text: Yes, sir, potentially.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Ogles, p. 43; scratch line 2491
+    location: Q&A with Rep. Ogles, p. 43
   significance: Sworn qualified affirmative that UAPs potentially constitute an existential national security threat.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1803,7 +1801,7 @@ quotes:
   text: By external observation, sure, that could be a fair assessment. Yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Ogles, p. 43-44; scratch lines 2506-2507
+    location: Q&A with Rep. Ogles, p. 43-44
   significance: Grusch's hedged affirmative that UAPs show interest in U.S. nuclear technology — framed as external-observation assessment.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1813,7 +1811,7 @@ quotes:
   text: Yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett (follow-up round), p. 44; scratch line 2534
+    location: Q&A with Rep. Burchett (follow-up round), p. 44
   significance: Sworn affirmative — Grusch has personal knowledge of someone injured working on legacy UAP reverse-engineering.
   context: Oral testimony Q&A (response to "Do you have any personal knowledge of someone who has possibly been injured working on legacy UAP reverse engineering?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1824,7 +1822,7 @@ quotes:
   text: I cannot get into specifics, but you can imagine assessing an unknown unknown there is a lot of potentialities you cannot fully prepare for.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 44; scratch lines 2539-2541
+    location: Q&A with Rep. Burchett, p. 44
   significance: Grusch's framing of injury causation via "unknown-unknown" assessment risk.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1834,7 +1832,7 @@ quotes:
   text: Yes. There was some issue with mine. So, you know, PPD–19 process it goes to the intel committees either through PPD–19 or ICD 120. There is not a good way for the intelligence community Inspector General to provide that to other committees, and I asked my information to be sent to the House and Senate Armed Services Committee because there are Title 10 equities at play. But there was no smooth process to do so.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 44; scratch lines 2544-2551
+    location: Q&A with Rep. Burchett, p. 44
   significance: Grusch's sworn account of procedural breakdown — his information couldn't cleanly reach HASC/SASC despite Title 10 equities. Specifically flags PPD-19/ICD-120 bottleneck.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1844,7 +1842,7 @@ quotes:
   text: Personally, yes.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 44; scratch line 2555
+    location: Q&A with Rep. Burchett, p. 44
   significance: Sworn affirmative — Grusch personally knows individuals participating in reverse-engineering programs for non-terrestrial craft.
   context: Oral testimony Q&A (response to "Are you aware of any individuals that are participating in reverse engineering programs for non-terrestrial craft?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1855,7 +1853,7 @@ quotes:
   text: Certainly, closed door and assurances that breaking their NDA they are not going to get administratively punished for so.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 44-45; scratch lines 2560-2562
+    location: Q&A with Rep. Burchett, p. 44-45
   significance: Grusch asserts other reverse-engineering program insiders would testify under closed-door, retaliation-proof protections.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1865,7 +1863,7 @@ quotes:
   text: I think the phenomenon is a very complex and I like to leave an open mind analytically to specific origin.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna (3-min follow-up), p. 45; scratch lines 2579-2580
+    location: Q&A with Rep. Luna (3-min follow-up), p. 45
   significance: Grusch on why he prefers "nonhuman intelligence" over "extraterrestrial life" — analytical agnosticism about origin.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1875,7 +1873,7 @@ quotes:
   text: If it is a traditional extraterrestrial origin or something else that we do not quite understand from an either biological or astrophysics perspective. I just like to keep an open mind on what it could be.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 45; scratch lines 2583-2586
+    location: Q&A with Rep. Luna, p. 45
   significance: Grusch elaborates origin agnosticism — extraterrestrial vs. biological/astrophysical unknowns.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1885,7 +1883,7 @@ quotes:
   text: You are referring to actual—a public treaty in the U.N. register—it is funny you mentioned that—the agreement on measures to reduce the risk of outbreak of nuclear war signed in 1971. Unclassified treaty publicly available, and if you cite the George Washington University National Security Archives you will find the declassified, in 2013, specific provisions and the specific red line flash message traffic with the specific codes pursuant to Article Three and Article—also situation two, which is in the previously classified NSA archive. What I would recommend—and I tried to get access but I got a wall of silence at the White House—was those specific incidents when those—message traffic was used. I think some scholarship on that would open the door to a further investigation using those publicly available information.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 45-46; scratch lines 2594-2607
+    location: Q&A with Rep. Luna, p. 45-46
   significance: Grusch points to the 1971 US-USSR nuclear-war-risk agreement, specifically Article 3 — claims it covers UAP incidents. Cites the George Washington University National Security Archive 2013 declassification. Also claims he sought specific-incident records but "got a wall of silence at the White House."
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1895,7 +1893,7 @@ quotes:
   text: I have concerns based on the interviews I conducted under my official duties of potential violations of the Federal Acquisition Regulations—the FAR.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Luna, p. 45-46; scratch lines 2614-2616
+    location: Q&A with Rep. Luna, p. 45-46
   significance: Grusch's sworn claim of potential FAR violations (federal contracting law) in connection with the alleged programs.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1906,7 +1904,7 @@ quotes:
   text: Based on my DODSR security review and what they have determined that is unclassified.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Raskin (follow-up), p. 46; scratch lines 2645-2646
+    location: Q&A with Rep. Raskin (follow-up), p. 46
   significance: Grusch's explicit rule defining the line of his testimony — bounded by DOPSR unclassified determination.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1916,7 +1914,7 @@ quotes:
   text: Purely a sense of duty. My first swore an oath when I was a cadet 18 years ago and I still uphold that even out of uniform.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A closing round with Rep. Burchett, p. 47; scratch lines 2704-2706
+    location: Q&A closing round with Rep. Burchett, p. 47
   significance: Grusch's stated motive for coming forward — sense of duty and oath upheld 18 years since cadet days.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1926,7 +1924,7 @@ quotes:
   text: I will just touch on the whistleblower side of it. I do encourage, you know, current and former military, intelligence community, and industry contractors to come forward in a legal way, either through the IC or DoD or whatever the cognizant IGs are to join me in this discussion.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A closing round with Rep. Burchett, p. 47; scratch lines 2738-2742
+    location: Q&A closing round with Rep. Burchett, p. 47
   significance: Grusch's explicit public call-to-action for other military/IC/contractor personnel to come forward through legal IG channels.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -2044,9 +2042,7 @@ quotes:
     path: government/blackvault-grusch-dopsr-23-F-0946.pdf
     location: 'Email dated 2023-03-07 1:00 PM to WHS Pentagon ESD Mailbox
 
-      SECREV (Subject: "Summary for Review"); scratch lines 180-196
-
-      '
+      SECREV (Subject: "Summary for Review")'
   significance: Grusch's signed email transmitting the "Speaker/Author Summary" (Case 23-S-1405) for DOPSR pre-publication review — establishes the paper-trail for his cleared statements published in The Debrief.
   context: DOPSR pre-publication review submission, 2023-03-07
   observation_type: relayed
@@ -2060,9 +2056,7 @@ quotes:
 
       Pentagon ESD Mailbox SECREV (Subject: "Interview Question
 
-      Submission"); scratch lines 637-653
-
-      '
+      Submission")'
   significance: Grusch's signed email transmittal for the Interview-Question Q&A document (Case 23-S-1707) — explicit attestation that the Q&A was created "on my own personal accord" and not part of his official government-civilian work.
   context: DOPSR pre-publication review submission, 2023-04-05
   observation_type: relayed
@@ -2072,7 +2066,7 @@ quotes:
   text: 'Please give me a call to discuss conditions and admin items:'
   source:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
-    location: Email dated 2023-11-10 11:05 AM from David Grusch, Subject "Contact Request"; scratch lines 962-999
+    location: Email dated 2023-11-10 11:05 AM from David Grusch, Subject "Contact Request"
   significance: Grusch's initial contact to AARO after sustained refusal — contradicts Kirkpatrick's public framing that Grusch "refused to speak." Documents that Grusch did reach out to discuss "conditions and admin items" for an interview.
   context: Grusch-AARO correspondence, 2023-11-10
   observation_type: relayed
@@ -2084,13 +2078,7 @@ quotes:
     Staff OUSD(I&S), or DOE SAPCO/SAPOC provided a memo similar to the DoD SAPCO memo you provided? v/r, DG'
   source:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
-    location: 'Email dated 2023-11-13 12:24 PM from David Grusch (Subject:
-
-      "Re: Contact Request"); scratch lines 1226-1262 (duplicates
-
-      at lines 854-917)
-
-      '
+    location: 'Email dated 2023-11-13 12:24 PM from David Grusch (Subject: "Re: Contact Request")'
   significance: KEY substantive Grusch signed letter — his detailed technical objections to AARO interview terms. Names specific security frameworks (DODI 5205.11, 10 USC 119, DNI CAPCO manual Sec. 4, HCS-Operations Restricted Handling) and asks whether AARO has secured memos from CIA OS/DO for oral-history subjects, from EOP NSC Security Director, OUSD(I&S), and DOE SAPCO/SAPOC. Implies he has testimony that reaches DOE and NSC-level SAPs.
   context: Grusch-AARO correspondence, 2023-11-13 — technical objection to AARO's SAPCO-only memo coverage
   observation_type: relayed
@@ -2102,9 +2090,7 @@ quotes:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
     location: 'Email dated 2023-11-14 4:35 PM from David Grusch (Subject:
 
-      "Re: Contact Request"); scratch lines 769-777
-
-      '
+      "Re: Contact Request")'
   significance: Grusch's brief acknowledgment of the no-show at AARO's Arlington facility on 2023-11-14 — does not elaborate on reason.
   context: Grusch-AARO correspondence, 2023-11-14
   observation_type: relayed
@@ -2116,9 +2102,7 @@ quotes:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
     location: 'Email dated 2023-11-14 10:36 AM from David Grusch (Subject:
 
-      "Re: Contact Request"); scratch lines 802-831
-
-      '
+      "Re: Contact Request")'
   significance: Grusch's signed statement of the structural objection that "the law may grant your office need-to-know, but does not establish policies and procedures with various data owners" — asserts he holds multiple DCSA security-professional certifications.
   context: Grusch-AARO correspondence, 2023-11-14 (morning of the no-show)
   observation_type: relayed
@@ -2130,9 +2114,7 @@ quotes:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
     location: 'Email dated 2023-11-19 6:03 PM from David Grusch (Subject:
 
-      "Re: Contact Request"); scratch lines 706-727
-
-      '
+      "Re: Contact Request")'
   significance: Grusch's signed response to AARO's renewed invitation — states his specific concerns (via email and counsel) remain unaddressed in writing.
   context: Grusch-AARO correspondence, 2023-11-19
   observation_type: relayed
@@ -2144,9 +2126,7 @@ quotes:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
     location: 'Email dated 2024-01-08 from David Grusch (Subject: "Re:
 
-      Contact Request"); scratch lines 653-665
-
-      '
+      Contact Request")'
   significance: Grusch's final-in-release signed response to AARO, continuing to defer interview pending written response to his 19 Nov 23 concerns. Establishes the impasse position through January 2024.
   context: Grusch-AARO correspondence, 2024-01-08
   observation_type: relayed
@@ -2156,7 +2136,7 @@ quotes:
   text: I have read the disclosure drafted by my attorneys, Irvin Charles McCullough, III, and Andrew P. Bakaj, and I hereby adopt the statements as if they were my own and do solemnly affirm under the penalties of perjury that the contents of the foregoing paper are true and correct to the best of my knowledge.
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
-    location: Sworn affirmation block at filing conclusion, dated 2022-05-25; scratch lines 131-134
+    location: Sworn affirmation block at filing conclusion, dated 2022-05-25
   significance: KEY — Grusch's under-penalty-of-perjury adoption of the entire PPD-19 disclosure body as his own statement. Legally binds every attorney-drafted claim in the filing to Grusch as his sworn statement. Foundational source document for all filed-claim categorization.
   context: Sworn affirmation, PPD-19 Disclosure of Urgent Concern(s) / Complaint of Reprisal, ICIG, dated 2022-05-25
   observation_type: relayed
@@ -2167,7 +2147,7 @@ quotes:
   text: Mr. Grusch previously served as a fully cleared member of the United States (US) Government’s UAP Task Force. He has direct knowledge that certain IC elements have purposely and intentionally withheld and/or concealed UAP-telated classified information from the US Congress. He has direct knowledge that this classified information has been withheld and/or concealed by the involved IC elements to purposely and intentionally thwart legitimate Congressional oversight of the UAP Program.
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
-    location: PPD-19 filing ¶3, adopted under oath by Grusch; scratch lines 44-53
+    location: PPD-19 filing ¶3, adopted under oath by Grusch
   significance: Core filed claim — Grusch (via his counsel-drafted and then sworn-adopted filing) asserts direct knowledge that IC elements purposely withheld UAP-related classified info from Congress to thwart oversight.
   context: PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25 (drafted by counsel, sworn-adopted by Grusch)
   observation_type: relayed
@@ -2179,7 +2159,7 @@ quotes:
   text: In July 2021, Mr. Grusch confidentially provided UAP-related classified information to the Department of Defense Inspector General (DoD IG). At that time, Mr. Grusch communicated classified information about the improper withholding and/or concealment of classified material from the US Congress by certain IC elements. Mr. Grusch believes that his identity and the fact of his UAP-telated communication(s) with the DoD IG have been disclosed to individuals and/or entities outside the DoD IG, and that he has suffered retaliation and reprisal(s) related thereto.
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
-    location: PPD-19 filing ¶4, adopted under oath by Grusch; scratch lines 55-65
+    location: PPD-19 filing ¶4, adopted under oath by Grusch
   significance: Sworn filed claim — establishes the July 2021 DoD IG disclosure, alleges outside-IG disclosure of his identity, and alleges retaliation causally tied.
   context: PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25
   observation_type: relayed
@@ -2191,7 +2171,7 @@ quotes:
   text: Since his protected disclosure(s) to the DoD IG, Mr. Grusch has been subjected to numerous adverse security clearance actions. These actions have unfairly and unjustifiably impugned his integrity, character, judgment, professionalism, and mental health. While he remains security-cleared by the NGA, his compatrtmented accesses at numerous other IC elements have been — mysteriously and appatently without plausible explanation — canceled, delayed, denied, and/or improperly obstructed.
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
-    location: PPD-19 filing ¶5, adopted under oath by Grusch; scratch lines 67-75
+    location: PPD-19 filing ¶5, adopted under oath by Grusch
   significance: Sworn filed claim documenting the specific retaliation pattern — "numerous adverse security clearance actions" impugning integrity/character/judgment/professionalism/mental health. Names compartmented-access cancellation/delay/denial at multiple IC elements.
   context: PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25
   observation_type: relayed

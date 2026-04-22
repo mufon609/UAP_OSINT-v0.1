@@ -250,3 +250,105 @@ Surfaced: Grusch vouching-chain rebuild (2026-04-22) — vc4, vc5, vc10
 attestations from NewsNation HTML initially failed prose-drift; fixed
 by rewriting with curly apostrophes.
 
+---
+
+### 13. Claim Inventory status vocabulary is undifferentiated
+
+`render_claim_inventory` on whistleblower nodes hard-codes every row's
+Status cell to `✅ Sworn / documented`, regardless of the actual
+attestation venue. That lumps at least four distinct evidentiary tiers
+into one label:
+
+1. **Sworn under oath** — congressional hearing testimony (e.g., Grusch
+   oral 2023-07-26 under oath before the House Oversight Subcommittee)
+2. **Sworn under penalty of perjury** — legal filing (Grusch's PPD-19
+   procedural complaint is adopted under 18 U.S.C. § 1001 attestation)
+3. **DOPSR-cleared public disclosure** — pre-publication-reviewed
+   statements (Grusch's Debrief quotes and written testimony carry
+   DOPSR case 23-F-0946; reviewed by DoD but not sworn)
+4. **On-record interview without oath** — JRE, American Alchemy,
+   NewsNation post-hearing appearances — Grusch-attributed but no
+   attestation ceremony
+
+These tiers carry meaningfully different evidentiary weight. A
+researcher scanning the Claim Inventory should see at a glance that a
+sworn-oath claim and a podcast claim aren't equivalent.
+
+**Fix sketch:** extend quote schema with an optional
+`attestation_tier` enum field — values like `sworn-oath`,
+`sworn-perjury`, `dopsr-cleared`, `on-record`, `self-attested`,
+`unknown`. Renderer maps tier to a differentiated status-cell label
+(e.g., `✅ Sworn (oath)`, `✅ Sworn (perjury)`, `✅ Public, DOPSR-cleared`,
+`◯ On-record`). Default `unknown` for legacy entries.
+
+Surfaced: Grusch Claim Inventory rebuild (2026-04-22) — 62 filed-claim
+quotes all render with identical Status, obscuring the Debrief-vs-oral
+distinction.
+
+---
+
+### 14. Q&A answer fragments inflate Statements as standalone quotes
+
+Oral-testimony Q&A produces one-word answers (`"Yes."`, `"Both."`,
+`"Personally, yes."`) that currently register as standalone quote
+entries with the question carried in the `context` field. Structurally
+valid — the verbatim-quote check passes because `"Yes."` appears in
+the source — but the rendered Statements section treats each as a
+blockquote row equal in weight to a full paragraph. Readers scanning
+the node see several `> Yes.` lines that only make sense after reading
+the `Attributed to` cell.
+
+**Fix sketches** (pick one at design time):
+- **Q&A pair schema**: optional `question` field on `quote_entry`.
+  Renderer emits question + answer as a paired block (e.g.,
+  `**Q (Burchett):** … **A:** Yes.`). Schema extension; validator
+  must re-anchor both Q and A against the source.
+- **Content-rewrite discipline**: merge tight Q&A exchanges into
+  single quote entries where Grusch's answer is a continuous-with-
+  question utterance. Keeps schema stable but requires source-read
+  authoring discipline; some answers genuinely stand alone.
+- **Render-time demotion**: quotes whose normalized text length is
+  below a threshold render as inline `> **Q:** … — **A:** …` rather
+  than standalone blockquote. No schema change; renderer-only.
+
+Surfaced: Grusch rebuild (2026-04-22) — 7 of 8 sub-30-char quotes in
+the 165-quote Grusch set are oral-Q&A answer fragments; the remaining
+1 (`"eighty-year arms race"`) is a legitimate terminology extract.
+
+---
+
+### 15. Vouching Chain cell truncation hides full-length attestations
+
+`render_vouching_chain` truncates the `Statement` cell at 100 chars:
+
+```python
+if len(attestation) > 100:
+    attestation = attestation[:97] + "…"
+```
+
+For short one-phrase vouchers ("beyond reproach") this is fine. For
+paragraph-length primary-source-anchored attestations — e.g., Karl
+Nell's 2023-06-05 Debrief statement (419 chars) — the rendered cell
+reads `"over the pa…"` and the reader has to click through to
+`/sources/...` to see what Nell actually said. Data is intact in the
+research artifact; only the rendered display is truncated.
+
+**Fix options:**
+- Raise the cap (e.g., 300 or 500 chars) — partial improvement
+- Shape change: render Vouching Chain like Statements — blockquote
+  with the full attestation + an attribution-metadata row below —
+  mirroring the person-statement rendering shape. Loses the scannable
+  table format but preserves full text.
+- Hybrid: keep the table scannable, but also emit a subsidiary
+  `### Voucher attestations (full text)` block below the table
+  repeating each entry's attestation verbatim.
+
+Shape-change option (full Statements parallel) is most consistent
+with the "verbatim text is the primary surface" discipline in
+`conventions.md`. Table-with-truncation treats the voucher statement
+as metadata, which is the wrong category.
+
+Surfaced: Grusch Vouching Chain (2026-04-22) — 2 Nell attestations
+and 1 Burchett "Dadgummit" quote all truncated mid-sentence; user
+flagged on review.
+

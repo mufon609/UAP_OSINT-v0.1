@@ -65,7 +65,7 @@ Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomen
 | Attributed to | Sworn affirmation, PPD-19 Disclosure of Urgent Concern(s) / Complaint of Reprisal, ICIG, dated 2022-05-25 |
 | Source | [archived source](../sources/government/grusch-ppd-19-procedural-filing.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Sworn affirmation block at filing conclusion, dated 2022-05-25; scratch lines 131-134 |
+| Location | Sworn affirmation block at filing conclusion, dated 2022-05-25 |
 
 > Mr. Grusch previously served as a fully cleared member of the United States (US) Government’s UAP Task Force. He has direct knowledge that certain IC elements have purposely and intentionally withheld and/or concealed UAP-telated classified information from the US Congress. He has direct knowledge that this classified information has been withheld and/or concealed by the involved IC elements to purposely and intentionally thwart legitimate Congressional oversight of the UAP Program.
 
@@ -74,7 +74,7 @@ Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomen
 | Attributed to | PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25 (drafted by counsel, sworn-adopted by Grusch) |
 | Source | [archived source](../sources/government/grusch-ppd-19-procedural-filing.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | PPD-19 filing ¶3, adopted under oath by Grusch; scratch lines 44-53 |
+| Location | PPD-19 filing ¶3, adopted under oath by Grusch |
 
 > In July 2021, Mr. Grusch confidentially provided UAP-related classified information to the Department of Defense Inspector General (DoD IG). At that time, Mr. Grusch communicated classified information about the improper withholding and/or concealment of classified material from the US Congress by certain IC elements. Mr. Grusch believes that his identity and the fact of his UAP-telated communication(s) with the DoD IG have been disclosed to individuals and/or entities outside the DoD IG, and that he has suffered retaliation and reprisal(s) related thereto.
 
@@ -83,7 +83,7 @@ Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomen
 | Attributed to | PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25 |
 | Source | [archived source](../sources/government/grusch-ppd-19-procedural-filing.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | PPD-19 filing ¶4, adopted under oath by Grusch; scratch lines 55-65 |
+| Location | PPD-19 filing ¶4, adopted under oath by Grusch |
 
 > Since his protected disclosure(s) to the DoD IG, Mr. Grusch has been subjected to numerous adverse security clearance actions. These actions have unfairly and unjustifiably impugned his integrity, character, judgment, professionalism, and mental health. While he remains security-cleared by the NGA, his compatrtmented accesses at numerous other IC elements have been — mysteriously and appatently without plausible explanation — canceled, delayed, denied, and/or improperly obstructed.
 
@@ -92,7 +92,7 @@ Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomen
 | Attributed to | PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25 |
 | Source | [archived source](../sources/government/grusch-ppd-19-procedural-filing.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | PPD-19 filing ¶5, adopted under oath by Grusch; scratch lines 67-75 |
+| Location | PPD-19 filing ¶5, adopted under oath by Grusch |
 
 > Good Afternoon, Please see attached for review for public release. v/r, David Grusch
 
@@ -102,8 +102,7 @@ Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomen
 | Source | [archived source](../sources/government/blackvault-grusch-dopsr-23-F-0946.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Email dated 2023-03-07 1:00 PM to WHS Pentagon ESD Mailbox
-SECREV (Subject: "Summary for Review"); scratch lines 180-196
- |
+SECREV (Subject: "Summary for Review") |
 
 > Good Afternoon, Here is a future Q&A for review. This was created on my own personal accord and was not a document that was part of my previous official work as a government civilian. -David Grusch
 
@@ -114,8 +113,7 @@ SECREV (Subject: "Summary for Review"); scratch lines 180-196
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Email dated 2023-04-05 12:56 PM to Whigham, Michelle / WHS
 Pentagon ESD Mailbox SECREV (Subject: "Interview Question
-Submission"); scratch lines 637-653
- |
+Submission") |
 
 > multiple agencies nesting UAP activities in conventional secret access programs without appropriate reporting to various oversight authorities
 
@@ -457,7 +455,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 11 (hearing pagination); scratch lines 733-738 |
+| Location | oral opening statement, p. 11 (hearing pagination) |
 
 > I was my agency’s co-lead in unidentified anomalous phenomena and trans medium object analysis as well as reporting to the UAP Task Force—UAPTF—and eventually, once it was established, the All-Domain Anomaly Resolution Office—AARO.
 
@@ -466,7 +464,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 11; scratch lines 739-742 |
+| Location | oral opening statement, p. 11 |
 
 > I became a whistleblower through a PPD–19 urgent concern filing in May 2022 with the intelligence community inspector general following concerning reports from multiple esteemed and credentialed current and former military and intelligence community individuals that the U.S. Government is operating with secrecy above congressional oversight with regards to UAPs.
 
@@ -475,7 +473,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 11; scratch lines 745-750 |
+| Location | oral opening statement, p. 11 |
 
 > My testimony is based on information I have been given by individuals with a long-standing track record of legitimacy and service to this country, many of whom also have shared compelling evidence in the form of photography, official documentation, and classified oral testimony to myself and many of my various colleagues.
 
@@ -484,7 +482,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 11; scratch lines 751-755 |
+| Location | oral opening statement, p. 11 |
 
 > I have taken every step I can to corroborate this evidence over a period of 4 years while I was with the UAP Task Force and do my due diligence on the individuals sharing it.
 
@@ -493,7 +491,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 11; scratch lines 756-758 |
+| Location | oral opening statement, p. 11 |
 
 > But as I stand here under oath now, I am speaking to the facts as I have been told them.
 
@@ -502,7 +500,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 11; scratch lines 766-767 |
+| Location | oral opening statement, p. 11 |
 
 > In 2019, the UAP Task Force Director asked me to identify all special access programs and controlled access programs, also known as SAPs and CAPs, we needed to satisfy our congressionally mandated mission and we would direct report at the time to the DEP/SecDef.
 
@@ -511,7 +509,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 12; scratch lines 774-778 |
+| Location | oral opening statement, p. 12 |
 
 > At the time, due to my extensive executive level intelligence support duties I was cleared to literally all relevant compartments and in a position of extreme trust both in my military and civilian capacities.
 
@@ -520,7 +518,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 12; scratch lines 779-782 |
+| Location | oral opening statement, p. 12 |
 
 > I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it.
 
@@ -529,7 +527,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 12; scratch lines 783-786 |
+| Location | oral opening statement, p. 12 |
 
 > I made the decision based on the data I collected to report this information to my superiors and multiple inspectors general and, in effect, becoming a whistleblower. As you know, I have suffered retaliation for my decision, but I am hopeful that my actions will ultimately lead to a positive outcome of increased transparency.
 
@@ -538,7 +536,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | oral opening statement, p. 12; scratch lines 787-791 |
+| Location | oral opening statement, p. 12 |
 
 > Yes, I can speak to that very briefly in an unclassified manner. As you know, the preponderance of my complaint was classified to the intelligence communities. Both material acquisition and exploitation activity, also baselining the UAPs but not sharing it with, you know, intelligence professionals that are actually doing step briefs to pilots, that kind of information.
 
@@ -547,7 +545,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Chairman Grothman, p. 16; scratch lines 1018-1023 |
+| Location | Q&A with Chairman Grothman, p. 16 |
 
 > Absolutely, based on interviewing over 40 witnesses over 4 years.
 
@@ -556,7 +554,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A (response to "do you believe that our government is in possession of UAPs?"), House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Garcia, p. 18; scratch line 1148 |
+| Location | Q&A with Rep. Garcia, p. 18 |
 
 > I know the exact locations and those locations were provided to the Inspector General and some of which to the intelligence committees. I actually had the people with the firsthand knowledge provide a protected disclosure to the Inspector General.
 
@@ -565,7 +563,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Garcia, p. 18; scratch lines 1151-1154 |
+| Location | Q&A with Rep. Garcia, p. 18 |
 
 > Yes. I have to be careful what I say in detail because there is an open whistleblower reprisal investigation on my behalf, and I do not want to compromise that investigation by providing anything that may help provide somebody information. But it was very brutal and very unfortunate. Some of the tactics they used to hurt me both professionally and personally, to be quite frank. Yes.
 
@@ -574,7 +572,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 20-21; scratch lines 1218-1224 |
+| Location | Q&A with Rep. Burchett, p. 20-21 |
 
 > Yes, personally.
 
@@ -583,7 +581,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 20; scratch line 1230 |
+| Location | Q&A with Rep. Burchett, p. 20 |
 
 > I have to be careful asking that question. I directed people with that knowledge to the appropriate authorities.
 
@@ -592,7 +590,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 20; scratch lines 1233-1234 |
+| Location | Q&A with Rep. Burchett, p. 20 |
 
 > Well, it has only been about 2 months or so. So, I guess my experience has been overwhelming support from former colleagues of mine that have, you know, privately messaged me and I do appreciate that. But I do have knowledge of active planned reprisal activity against myself, and other colleagues and it is very, very upsetting to me.
 
@@ -601,7 +599,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Raskin, p. 22; scratch lines 1324-1330 |
+| Location | Q&A with Rep. Raskin, p. 22 |
 
 > Certain senior leadership at previous agencies I was associated with and that is all I will say publicly. But I can provide more details in a closed environment.
 
@@ -610,7 +608,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Raskin, p. 22; scratch lines 1332-1334 |
+| Location | Q&A with Rep. Raskin, p. 22 |
 
 > Yes. There were certain colleagues of mine that were brutally administratively attacked, and it actually makes me very upset as a leader to see that happen to other co-workers and actually superiors of mine over the last 3 years.
 
@@ -619,7 +617,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Raskin, p. 22; scratch lines 1339-1342 |
+| Location | Q&A with Rep. Raskin, p. 22 |
 
 > I call it administrative terrorism. That is their quiver—their tool in the toolbox to silence people, especially, you know, career government service cares about their career, cares about their clearance, their reputation to climb the ladder, and
 
@@ -628,7 +626,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Raskin, p. 22-23; scratch lines 1345-1352 |
+| Location | Q&A with Rep. Raskin, p. 22-23 |
 
 > Yes, personally. Yes.
 
@@ -637,7 +635,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Luna, p. 23; scratch line 1377 |
+| Location | Q&A with Rep. Luna, p. 23 |
 
 > Yes. Him and I had a classified conversation in April 2022 before he took over AARO in July 2022 and I provided him some concerns I had.
 
@@ -646,7 +644,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Luna, p. 23; scratch lines 1395-1397 |
+| Location | Q&A with Rep. Luna, p. 23 |
 
 > Unfortunately, I cannot read his mind. I wish he did. I was happy to give sage counsel to him on where to look when he took the helm of AARO.
 
@@ -655,7 +653,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Luna, p. 23-24; scratch lines 1400-1402 |
+| Location | Q&A with Rep. Luna, p. 23-24 |
 
 > Correct, through DODSR—DoD Prepublication and Security Review—and I just want to remind the public they are just looking from a security perspective. These are my own personal views and opinions, not the Department’s.
 
@@ -664,7 +662,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Luna, p. 24; scratch lines 1408-1411 |
+| Location | Q&A with Rep. Luna, p. 24 |
 
 > I am required by law to do that as a former intelligence officer, or I go to jail for revealing classified information.
 
@@ -673,7 +671,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Luna, p. 24; scratch lines 1415-1416 |
+| Location | Q&A with Rep. Luna, p. 24 |
 
 > Yes. I personally interviewed those individuals.
 
@@ -682,7 +680,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Moskowitz, p. 25; scratch line 1510 |
+| Location | Q&A with Rep. Moskowitz, p. 25 |
 
 > Based on conventional advanced tech I was briefed to the preponderance of the Defense Department’s both space and aerospace compartmented programs. Yes.
 
@@ -691,7 +689,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Moskowitz, p. 25-26; scratch lines 1517-1519 |
+| Location | Q&A with Rep. Moskowitz, p. 25-26 |
 
 > A complicated question. So, there is, you know, some—I would call it abuse here. So, congressional oversight of conventional Special Access Programs—and I will use Title 10, DoD as an example, right. So, 10 U.S. Code Section 119 discusses congressional oversight of SAPs, discusses the DEP/SecDef’s ability to waive congressional reporting. However, the Gang of 8 is at least supposed to be notified if a—you know, a waived or a waive bigoted unacknowledged SAP is created and that is public law.
 
@@ -700,7 +698,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Moskowitz, p. 26; scratch lines 1526-1534 |
+| Location | Q&A with Rep. Moskowitz, p. 26 |
 
 > I will give you generalities. I can get very specific in a closed session. But misappropriation of funds and self-fund.
 
@@ -709,7 +707,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Moskowitz, p. 26; scratch lines 1537-1538 |
+| Location | Q&A with Rep. Moskowitz, p. 26 |
 
 > Correct, through something called IR&D.
 
@@ -718,7 +716,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Moskowitz, p. 26; scratch line 1546 |
+| Location | Q&A with Rep. Moskowitz, p. 26 |
 
 > That was one of my primary tasks at NGA since we process, exploit, and disseminate that kind of information. I have seen multiple cases, some of which to my understanding—and, of course, I left NGA in April so that is my information cutoff date. But I personally review both what we call overhead collection and from other strategic and tactical platforms that were—I could not even explain prosaically, and I have a degree in physics, by the way, as well. And I had—I am aware that you guys have not seen these reports, unfortunately and I do not know why.
 
@@ -727,7 +725,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Moskowitz, p. 26; scratch lines 1554-1563 |
+| Location | Q&A with Rep. Moskowitz, p. 26 |
 
 > I cannot discuss that in an open session.
 
@@ -736,7 +734,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Moskowitz, p. 26-27; scratch line 1567 |
+| Location | Q&A with Rep. Moskowitz, p. 26-27 |
 
 > I cannot go beyond what I have already stated publicly in my News Nation interview because it touches other sensitivities.
 
@@ -745,7 +743,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Moskowitz, p. 27; scratch lines 1573-1575 |
+| Location | Q&A with Rep. Moskowitz, p. 27 |
 
 > It is not accurate. I believe Dr. Kirkpatrick mentioned he had about 30 individuals that have come to AARO thus far. A few of those individuals have also come to AARO that I also interviewed.
 
@@ -754,7 +752,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Foxx, p. 27; scratch lines 1594-1597 |
+| Location | Q&A with Rep. Foxx, p. 27 |
 
 > And I know what they provided Dr. Kirkpatrick and their team.
 
@@ -763,7 +761,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Foxx, p. 27; scratch line 1599 |
+| Location | Q&A with Rep. Foxx, p. 27 |
 
 > I was able to evaluate that information.
 
@@ -772,7 +770,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Foxx, p. 27; scratch line 1602 |
+| Location | Q&A with Rep. Foxx, p. 27 |
 
 > I like to use the term nonhuman. I do not like to denote origin. Keeps the aperture open both scientifically. Certainly, like I have discussed publicly, previously 1930’s.
 
@@ -781,7 +779,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 30; scratch lines 1744-1746 |
+| Location | Q&A with Rep. Burchett, p. 30 |
 
 > I cannot discuss that publicly, but I did provide that information both to the intel committees and the Inspector General.
 
@@ -790,7 +788,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 30; scratch lines 1756-1758 |
+| Location | Q&A with Rep. Burchett, p. 30 |
 
 > It is a misnomer that there is anything actually above top secret. Executive Order 13526 delineates the classification levels.
 
@@ -799,7 +797,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Gaetz / Rep. Burchett, p. 30-31; scratch lines 1790-1792 |
+| Location | Q&A with Rep. Gaetz / Rep. Burchett, p. 30-31 |
 
 > It is a group of career senior executive officials.
 
@@ -808,7 +806,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 31; scratch line 1802 |
+| Location | Q&A with Rep. Burchett, p. 31 |
 
 > Both in and out of government and that is about as far as I can go there.
 
@@ -817,7 +815,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 31; scratch lines 1806-1807 |
+| Location | Q&A with Rep. Burchett, p. 31 |
 
 > Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11‡ hours with both intel committees.
 
@@ -826,7 +824,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 32; scratch lines 1824-1827 |
+| Location | Q&A with Rep. Burchett, p. 32 |
 
 > If you reference my News Nation interview and I talked about a multi-decade, you know, campaign to disenfranchise public interest, basically.
 
@@ -835,7 +833,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 32; scratch lines 1838-1840 |
+| Location | Q&A with Rep. Burchett, p. 32 |
 
 > The kind of general unclassed wave tops. Certainly, the contractors, you know, or the metal benders, so to speak, the ones actually doing specific performance on government contracts.
 
@@ -844,7 +842,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Ocasio-Cortez, p. 32; scratch lines 1873-1875 |
+| Location | Q&A with Rep. Ocasio-Cortez, p. 32 |
 
 > For certain IR&D activities, I can only think of ones conventional in nature. Sometimes they flow through certain, I will just say SAP programs, that have cognizant authority over the Air Force or something and those are congressionally reported compartments.
 
@@ -853,7 +851,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Ocasio-Cortez, p. 32-33; scratch lines 1893-1902 |
+| Location | Q&A with Rep. Ocasio-Cortez, p. 32-33 |
 
 > Yes, I am familiar with the UAP Task Force 2019 Security Classification guide. I think it is fair. I did actually help author that with the Director.
 
@@ -862,7 +860,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Biggs, p. 35; scratch lines 2020-2022 |
+| Location | Q&A with Rep. Biggs, p. 35 |
 
 > Yes. I will say—I will call it a lazy attitude about declassifying videos. I mean, I have seen some of the videos of, you know, the recent shoot down and I saw no reason that could not have been released as long as they mask, you know, some data. The American people deserve to see that imagery and full motion video.
 
@@ -871,7 +869,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Biggs, p. 35; scratch lines 2024-2029 |
+| Location | Q&A with Rep. Biggs, p. 35 |
 
 > I know of multiple colleagues of mine that got physically injured and the activity——
 
@@ -880,7 +878,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burlison, p. 36; scratch lines 2067-2068 |
+| Location | Q&A with Rep. Burlison, p. 36 |
 
 > Both.
 
@@ -889,7 +887,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A (response to "By UAPs or by people within the Federal Government?"), House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burlison, p. 36; scratch line 2071 |
+| Location | Q&A with Rep. Burlison, p. 36 |
 
 > I cannot get into the specifics in an open environment, but at least the activity that I personally witnessed—and I have to be very careful here because you do not—you know, they tell you never to acknowledge tradecraft, right. So, what I personally witnessed, myself and my wife, was very disturbing.
 
@@ -898,7 +896,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burlison, p. 36; scratch lines 2075-2080 |
+| Location | Q&A with Rep. Burlison, p. 36 |
 
 > I have to be careful to describe what I have seen firsthand and not in this environment. But I could answer that question behind closed doors.
 
@@ -907,7 +905,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burlison, p. 36; scratch lines 2086-2088 |
+| Location | Q&A with Rep. Burlison, p. 36 |
 
 > That is something I have not witnessed myself.
 
@@ -916,7 +914,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A (response to "Have you seen any of the bodies?"), House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burlison, p. 36; scratch line 2090 |
+| Location | Q&A with Rep. Burlison, p. 36 |
 
 > To answer your first question and, you know, I am here as a fact witness and not an expert, but I will give you a theoretical framework at least to work off to kind of espouse crashes. Regardless of, you know, your level of sentience, right—you know, planes crash, cars crash, and a number of sorties, however high, a small percentage are going to end in, you know, mission failure, if you will, as we say in the Air Force.
 
@@ -925,7 +923,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burlison, p. 36-37; scratch lines 2101-2107 |
+| Location | Q&A with Rep. Burlison, p. 36-37 |
 
 > And then in terms of multidimensionality, that kind of thing, the framework that I am familiar with, for example, is something called the holographic principle both—it derives itself from general relativity and quantum mechanics and that is if you want to imagine a 3D object such as yourself casting a shadow onto a 2D surface that is the holographic principle. So, you can be projected—quasi projected from higher dimensional space to lower dimensional. It is a scientific trope that you can actually cross, literally, as far as I understand, but there is
 
@@ -934,7 +932,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burlison, p. 37-38; scratch lines 2108-2120 |
+| Location | Q&A with Rep. Burlison, p. 37-38 |
 
 > Not to my knowledge. Plus, the recoveries predate a lot of our advanced programs that I previously am waiving off. So——
 
@@ -943,7 +941,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burlison, p. 37; scratch lines 2128-2130 |
+| Location | Q&A with Rep. Burlison, p. 37 |
 
 > I have actually never seen anything personally, believe it or not.
 
@@ -952,7 +950,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A (response to "when you reported your experiences with a UAP did any of you face any repercussions with your superiors?"), House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Mace, p. 39; scratch lines 2256-2257 |
+| Location | Q&A with Rep. Mace, p. 39 |
 
 > As previously stated publicly, yes.
 
@@ -961,7 +959,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Mace, p. 39; scratch line 2262 |
+| Location | Q&A with Rep. Mace, p. 39 |
 
 > I can only speak for my personal leadership over at NGA. I tried to look at every report that came through that I could triage.
 
@@ -970,7 +968,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Mace, p. 40; scratch lines 2301-2303 |
+| Location | Q&A with Rep. Mace, p. 40 |
 
 > There are certain elected leaders that had more information that—I am not sure what they have shared with certain Gang of 8 members or et cetera. But, certainly, I would not be surprised.
 
@@ -979,7 +977,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Mace, p. 40; scratch lines 2307-2310 |
+| Location | Q&A with Rep. Mace, p. 40 |
 
 > It is something I cannot discuss in a public setting.
 
@@ -988,7 +986,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Mace, p. 40; scratch line 2315 |
+| Location | Q&A with Rep. Mace, p. 40 |
 
 > As I have stated publicly already in my News Nation interview, biologics came with some of these recoveries. Yes.
 
@@ -997,7 +995,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A (response to "do we have the bodies of the pilots who piloted this craft?"), House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Mace, p. 40; scratch lines 2319-2320 |
+| Location | Q&A with Rep. Mace, p. 40 |
 
 > Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently still on the program.
 
@@ -1006,7 +1004,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A (response to "were they human or nonhuman biologics?"), House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Mace, p. 40; scratch lines 2322-2324 |
+| Location | Q&A with Rep. Mace, p. 40 |
 
 > The specific documentation I would have to talk to you in a SCIF about.
 
@@ -1015,7 +1013,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Mace, p. 40; scratch lines 2327-2328 |
+| Location | Q&A with Rep. Mace, p. 40 |
 
 > I can give you a specific cooperative and hostile witness list of specific individuals that were in those.
 
@@ -1024,7 +1022,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Mace, p. 41; scratch lines 2341-2342 |
+| Location | Q&A with Rep. Mace, p. 41 |
 
 > Fair assessment.
 
@@ -1033,7 +1031,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Ogles, p. 43; scratch line 2470 |
+| Location | Q&A with Rep. Ogles, p. 43 |
 
 > Yes, sir, potentially.
 
@@ -1042,7 +1040,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Ogles, p. 43; scratch line 2491 |
+| Location | Q&A with Rep. Ogles, p. 43 |
 
 > By external observation, sure, that could be a fair assessment. Yes.
 
@@ -1051,7 +1049,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Ogles, p. 43-44; scratch lines 2506-2507 |
+| Location | Q&A with Rep. Ogles, p. 43-44 |
 
 > Yes.
 
@@ -1060,7 +1058,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A (response to "Do you have any personal knowledge of someone who has possibly been injured working on legacy UAP reverse engineering?"), House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett (follow-up round), p. 44; scratch line 2534 |
+| Location | Q&A with Rep. Burchett (follow-up round), p. 44 |
 
 > I cannot get into specifics, but you can imagine assessing an unknown unknown there is a lot of potentialities you cannot fully prepare for.
 
@@ -1069,7 +1067,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 44; scratch lines 2539-2541 |
+| Location | Q&A with Rep. Burchett, p. 44 |
 
 > Yes. There was some issue with mine. So, you know, PPD–19 process it goes to the intel committees either through PPD–19 or ICD 120. There is not a good way for the intelligence community Inspector General to provide that to other committees, and I asked my information to be sent to the House and Senate Armed Services Committee because there are Title 10 equities at play. But there was no smooth process to do so.
 
@@ -1078,7 +1076,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 44; scratch lines 2544-2551 |
+| Location | Q&A with Rep. Burchett, p. 44 |
 
 > Personally, yes.
 
@@ -1087,7 +1085,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A (response to "Are you aware of any individuals that are participating in reverse engineering programs for non-terrestrial craft?"), House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 44; scratch line 2555 |
+| Location | Q&A with Rep. Burchett, p. 44 |
 
 > Certainly, closed door and assurances that breaking their NDA they are not going to get administratively punished for so.
 
@@ -1096,7 +1094,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Burchett, p. 44-45; scratch lines 2560-2562 |
+| Location | Q&A with Rep. Burchett, p. 44-45 |
 
 > I think the phenomenon is a very complex and I like to leave an open mind analytically to specific origin.
 
@@ -1105,7 +1103,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Luna (3-min follow-up), p. 45; scratch lines 2579-2580 |
+| Location | Q&A with Rep. Luna (3-min follow-up), p. 45 |
 
 > If it is a traditional extraterrestrial origin or something else that we do not quite understand from an either biological or astrophysics perspective. I just like to keep an open mind on what it could be.
 
@@ -1114,7 +1112,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Luna, p. 45; scratch lines 2583-2586 |
+| Location | Q&A with Rep. Luna, p. 45 |
 
 > You are referring to actual—a public treaty in the U.N. register—it is funny you mentioned that—the agreement on measures to reduce the risk of outbreak of nuclear war signed in 1971. Unclassified treaty publicly available, and if you cite the George Washington University National Security Archives you will find the declassified, in 2013, specific provisions and the specific red line flash message traffic with the specific codes pursuant to Article Three and Article—also situation two, which is in the previously classified NSA archive. What I would recommend—and I tried to get access but I got a wall of silence at the White House—was those specific incidents when those—message traffic was used. I think some scholarship on that would open the door to a further investigation using those publicly available information.
 
@@ -1123,7 +1121,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Luna, p. 45-46; scratch lines 2594-2607 |
+| Location | Q&A with Rep. Luna, p. 45-46 |
 
 > I have concerns based on the interviews I conducted under my official duties of potential violations of the Federal Acquisition Regulations—the FAR.
 
@@ -1132,7 +1130,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Luna, p. 45-46; scratch lines 2614-2616 |
+| Location | Q&A with Rep. Luna, p. 45-46 |
 
 > Based on my DODSR security review and what they have determined that is unclassified.
 
@@ -1141,7 +1139,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A with Rep. Raskin (follow-up), p. 46; scratch lines 2645-2646 |
+| Location | Q&A with Rep. Raskin (follow-up), p. 46 |
 
 > Purely a sense of duty. My first swore an oath when I was a cadet 18 years ago and I still uphold that even out of uniform.
 
@@ -1150,7 +1148,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A closing round with Rep. Burchett, p. 47; scratch lines 2704-2706 |
+| Location | Q&A closing round with Rep. Burchett, p. 47 |
 
 > I will just touch on the whistleblower side of it. I do encourage, you know, current and former military, intelligence community, and industry contractors to come forward in a legal way, either through the IC or DoD or whatever the cognizant IGs are to join me in this discussion.
 
@@ -1159,7 +1157,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Q&A closing round with Rep. Burchett, p. 47; scratch lines 2738-2742 |
+| Location | Q&A closing round with Rep. Burchett, p. 47 |
 
 > [9:50] Yeah. Did all the checks I could possibly do, you know, within my, you know, kind of official capacity, realized it was real. And then, uh, kind of during that investigation, you know, I had a lot of pushback that was very unfortunate, you know, reprisals against me and stuff. And that kind of was what led me to file the whistleblower complaint, you know, a for my own protection, but B was to kind of sound the alarm.
 
@@ -1267,7 +1265,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Grusch-AARO correspondence, 2023-11-10 |
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Email dated 2023-11-10 11:05 AM from David Grusch, Subject "Contact Request"; scratch lines 962-999 |
+| Location | Email dated 2023-11-10 11:05 AM from David Grusch, Subject "Contact Request" |
 
 > Thank you for sending these items. As a former agency-level SAPMO and CAPCO I take security policies very seriously. In the DoD SAPCO memo, the term "UAP-related" is not defined. FY23 NDAA Sec. 1673 Subsection B defines it as the following: "any activity or program by a department or agency of the Federal Government or a contractor of such a department or agency relating to unidentified anomalous phenomena, including with respect to material retrieval, material analysis, reverse engineering, research and development, detection and tracking, developmental or operational testing, and security protections and enforcement." The key issue here is that many of these activities have conventional classified and compartmented Security Classification Guides that also cover non-UAP activities as well. To discuss the UAP-related activities would also expose these conventional SAP mission areas. An oral history interview subject must also be absolved of this obligation to protect this information as well, some of it may be bigoted or WAIVED (lAW DODI 5205.11 and 10 USC Sec 119). Furthermore, as discussed Friday, I am seeking a ODNI CAPCO determination to absolve an oral history interview subject of any NDA's relating to UAP-related and adjacent (as stated above) IC CAP information. Additionally, in my particular case, in order to horizontally protect a portion of my oral history testimony previously provided to ICIG and the intelligence committees, we would need to conduct the interview at the HCS-Operations (0) Restricted Handling (RH) level (lAW DNI CAPCO manual Sec. 4). Has the CIA Office of Security (OS) or Directorate of Operations (DO) provided a memo in this regard for oral history interview subjects? Has the OS provided a memo to also cover managed-need-to-know (MNTK) projects not directly reported to ODNI CAPCO? Lastly, what signed policy does AARO have to receive non-title-10 SAPs (ie, DOE and NSC)? Has the EOP NSC Security Director, Director National Program Management Staff OUSD(I&S), or DOE SAPCO/SAPOC provided a memo similar to the DoD SAPCO memo you provided? v/r, DG
 
@@ -1276,10 +1274,7 @@ Submission"); scratch lines 637-653
 | Attributed to | Grusch-AARO correspondence, 2023-11-13 — technical objection to AARO's SAPCO-only memo coverage |
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | Email dated 2023-11-13 12:24 PM from David Grusch (Subject:
-"Re: Contact Request"); scratch lines 1226-1262 (duplicates
-at lines 854-917)
- |
+| Location | Email dated 2023-11-13 12:24 PM from David Grusch (Subject: "Re: Contact Request") |
 
 > Thank you. I apologize for the confusion this morning about my whereabouts. I should been more clear in my email on Monday. DG
 
@@ -1289,8 +1284,7 @@ at lines 854-917)
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Email dated 2023-11-14 4:35 PM from David Grusch (Subject:
-"Re: Contact Request"); scratch lines 769-777
- |
+"Re: Contact Request") |
 
 > AARO Staff, With due respect, I will need answers to my questions before I will be comfortable meeting. Please provide responses so that we can hopefully move forward and schedule a meeting. The law may grant your office need-to-know, but does not establish policies and procedures with various data owners. I have managed multi-compartmented activities throughout my entire career and have multiple DCSA security professional certifications. I did not ask these questions for mere curiosity. DG
 
@@ -1300,8 +1294,7 @@ at lines 854-917)
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Email dated 2023-11-14 10:36 AM from David Grusch (Subject:
-"Re: Contact Request"); scratch lines 802-831
- |
+"Re: Contact Request") |
 
 > [2:47] accountability the release of information on non-human intelligences has the potential to unite Humanity in a shared quest for understanding regardless of the ontological shock
 
@@ -1365,8 +1358,7 @@ at lines 854-917)
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Email dated 2023-11-19 6:03 PM from David Grusch (Subject:
-"Re: Contact Request"); scratch lines 706-727
- |
+"Re: Contact Request") |
 
 > so I was a Intel officer [0:36] in the Air Force for 14 years seven active seven Reserve uh then I kind of had like a parallel tract in the civilian Intel world when I became a reservist um uh and ultimately I got brought back in in Civil Service in a government way at the national GE spatial intelligence agency couple years ago um at a senior level uh so I was a major in the Air Force and a gs15 at NGA which is like a full bird colonel equivalent civilian employee
 
@@ -1547,8 +1539,7 @@ at lines 854-917)
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Email dated 2024-01-08 from David Grusch (Subject: "Re:
-Contact Request"); scratch lines 653-665
- |
+Contact Request") |
 
 > The public is rightfully demanding to know the truth and it is my true privilege for me to serve the people of this country once again. I will use all my expertise to support Rep. Burlison and help the US Congress restore full oversight while enabling the Legislative Branch’s ability to investigate and hold those accountable who have broken the law and lied not only to our Congress, but also to the Executive Office of the President, Director of National Intelligence, and Department of Justice
 
