@@ -1,0 +1,1044 @@
+id: research/alex-dietrich
+type: research-artifact
+schema_version: 1
+target_node: people/alex-dietrich
+status: active
+created: '2026-04-21'
+description: ''
+primary_sources:
+- path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+  format: pdf
+- path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+  format: html
+- path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
+  format: html
+- path: news/cbsnews-ufo-sighting-60min-2021-08-29.html
+  format: html
+- path: social/cbs-60min-video-page.html
+  format: html
+- path: news/debrief-dietrich-cooperation-uap-opinion.html
+  format: html
+- path: news/syracuse-chancellor-dietrich-bio.html
+  format: html
+- path: news/cu-boulder-emp-dietrich-bio.html
+  format: html
+- path: news/enigmalabs-dietrich-advisor-announcement.html
+  format: html
+- path: news/safeaerospace-home-20260420.html
+  format: html
+- path: government/safeaerospace-home-20260220.html
+  format: html
+- path: government/safeaerospace-home-20230602.html
+  format: html
+- path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  format: transcript
+- path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+  format: transcript
+- path: transcripts/calling-all-beings-104-dietrich-2024-downloaded.md
+  format: transcript
+- path: transcripts/merged-podcast-014-dietrich-2023-downloaded.md
+  format: transcript
+- path: transcripts/when-it-mattered-55-dietrich-2021-downloaded.md
+  format: transcript
+- path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+  format: pdf
+- path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
+  format: transcript
+document_intrinsic:
+  full_name: Alex Dietrich
+  profession: Strike fighter pilot, U.S. Navy (retired)
+context_extrinsic:
+  display_title: Alex Dietrich
+background: |
+  Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former
+  F/A-18F strike fighter pilot. She graduated and commissioned in May
+  of 2001 through the NROTC scholarship at George Washington University,
+  where she received a B.S. in Civil Engineering; she later earned an
+  MBA from the GW School of Business and graduated from the Defense
+  Language Institute speaking Dari (Afghan Farsi). During her squadron
+  tours she served two combat deployments in support of Operation
+  Iraqi Freedom and Operation Enduring Freedom; her last deployment
+  was a yearlong assignment boots-on-ground as an infrastructure
+  reconstruction engineer in Ghazni Afghanistan in 2010. She logged
+  more than 1,250 flight hours and 375 carrier-arrested landings, and
+  was awarded a Bronze Star and a Combat Air Medal for 206 combat
+  missions flown in support of OIF and OEF. After retirement she has
+  taught leadership, ethics, and critical thinking at the consortium
+  of schools in Washington DC (Georgetown, George Washington, Howard,
+  and Catholic Universities), the U.S. Naval Academy in Annapolis in
+  the department of Leadership, Ethics and Law, and now serves on the
+  faculty of the University of Colorado School of Engineering in
+  Boulder. She currently serves as Interim Chief Human Resources
+  Officer at Syracuse University. She is an alumna of the Illinois
+  Math & Science Academy.
+uap_relevance: |
+  Dietrich is one of four naval aviators on the November 14, 2004 USS
+  Nimitz Tic Tac encounter, and one of two who have spoken publicly
+  about it. She was on the wing of Cmdr. Dave Fravor (then-commanding
+  officer of VFA-41 Black Aces) in a flight of 2 F/A-18Fs; each F/A-18F
+  had a weapons system officer in the back seat. She has stated her
+  rank at the time of the encounter as Lieutenant Junior Grade. She
+  had been in contact with the Office of Naval Intelligence
+  ([`/organizations/oni`]) and Pentagon UAP investigators since about
+  2009 — a one-way flow in which they called her in to answer questions
+  about the encounter and shared material from other incidents — and
+  only spoke publicly for the first time on the May 16, 2021 CBS 60
+  Minutes broadcast. Dietrich joined Enigma Labs as their first advisor
+  (an unpaid role) in November 2022, and joined Americans for Safe
+  Aerospace as an Advisor at its launch in 2023. In her February 2023
+  opinion piece in The Debrief ([`/organizations/the-debrief`]) she
+  wrote that 'These events highlight a longstanding domain awareness
+  gap confronting our collective consciousness on three fronts:
+  military defense, aviation safety, and scientific inquiry.' She was
+  fortunate to attend the first meeting of the NASA UAP Independent
+  Study Team ([`/organizations/nasa`]) in late 2022.
+credibility_notes: |
+  Dietrich is one of two witnesses who have spoken publicly about
+  the November 14, 2004 USS Nimitz Tic Tac encounter (the other is
+  her flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the
+  other two members of their flight of 2 F/A-18Fs (the back-seater
+  in each F/A-18F) have not made public statements. She personally
+  observed and visually acquired the object during the encounter
+  from the second F/A-18F. Her account is also documented by Fravor
+  in the lead aircraft, by the USS Princeton Aegis combat system
+  (which reacquired the object 60 miles East at the CAP point
+  seconds after it disappeared), and by the FLIR video captured by
+  another single F/A-18F — Chad Underwood ([`/people/chad-underwood`])
+  was in the back seat of that aircraft per Dietrich's own account —
+  that launched after Dietrich and Fravor's flight returned. She
+  had been in one-way contact with Pentagon UAP investigators since
+  about 2009 — first contacted by the Office of Naval Intelligence,
+  with later contact from the first generation AATIP program
+  ([`/organizations/aatip`]) and AARO ([`/organizations/aaro`]) — and
+  only spoke publicly for the first time on the May 16, 2021 CBS 60
+  Minutes broadcast.
+affiliations:
+- id: a1
+  added_date: '2026-04-21'
+  organization_path: /organizations/us-navy
+  role: F/A-18F strike fighter pilot
+  period_start: '2001-05'
+  period_end: '2020'
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 66"
+  note: Self-attested in The Debrief op-ed byline as F/A-18 pilot from 2001-2020.
+- id: a2
+  added_date: '2026-04-21'
+  organization_path: /organizations/vfa-41
+  role: F/A-18F pilot
+  period_start: '2004-07'
+  period_end: '2007'
+  source:
+    path: news/enigmalabs-dietrich-advisor-announcement.html
+    location: "line 15"
+  note: Enigma Labs attests VFA-41 service 2001-2007; Dietrich self-attests squadron-join in July 2004 in the Merged Podcast interview. Discrepancy may reflect end of squadron service vs end of active duty.
+- id: a3
+  added_date: '2026-04-21'
+  organization_path: /organizations/uss-nimitz
+  role: Deployed aboard during 2004 workup cycle
+  period_start: '2004'
+  period_end: '2004'
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+- id: a4
+  added_date: '2026-04-21'
+  organization_path: /organizations/usna
+  role: Military Professor (Department of Leadership, Ethics and Law)
+  source:
+    path: news/cu-boulder-emp-dietrich-bio.html
+    location: "line 1"
+- id: a5
+  added_date: '2026-04-21'
+  organization_path: /organizations/gwu
+  role: Assistant Professor of Naval Science
+  source:
+    path: news/enigmalabs-dietrich-advisor-announcement.html
+    location: "line 15"
+  note: Post-Navy faculty role at her alma mater; consortium teaching included Georgetown, George Washington, Howard, and Catholic Universities per Syracuse and CU Boulder bios.
+- id: a6
+  added_date: '2026-04-21'
+  organization_path: /organizations/cu-boulder
+  role: Scholar in Residence (Engineering Management Program)
+  period_start: '2022'
+  source:
+    path: news/cu-boulder-emp-dietrich-bio.html
+    location: "line 1"
+  note: Joined CU Boulder College of Engineering faculty in 2022 as adjunct instructor in the Engineering Leadership Program; appointed Scholar in Residence to the Engineering Management Program in 2023.
+- id: a7
+  added_date: '2026-04-21'
+  organization_path: /organizations/syracuse-university
+  role: Interim Chief Human Resources Officer
+  source:
+    path: news/syracuse-chancellor-dietrich-bio.html
+    location: "line 192"
+- id: a8
+  added_date: '2026-04-21'
+  organization_path: /organizations/americans-for-safe-aerospace
+  role: Advisor
+  period_start: '2023-06'
+  source:
+    path: government/safeaerospace-home-20230602.html
+    location: "Advisors card grid"
+  note: Earliest known Wayback snapshot showing Dietrich on the safeaerospace.org personnel grid is 2023-06-02; she was originally listed under the heading 'Aircrew Leadership Council' which was later renamed 'Advisors'.
+- id: a9
+  added_date: '2026-04-21'
+  organization_path: /organizations/enigma-labs
+  role: First advisor (unpaid)
+  period_start: '2022-11-14'
+  source:
+    path: news/enigmalabs-dietrich-advisor-announcement.html
+    location: "line 15"
+  note: Self-attested as 'first advisor' in unpaid role on the Somewhere in the Skies podcast; Enigma Labs announcement dated 2022-11-14, the 19th anniversary of the Nimitz encounter.
+- id: a10
+  added_date: '2026-04-21'
+  organization_path: /organizations/legacy-flight-academy
+  role: Advocate
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 66"
+- id: a11
+  added_date: '2026-04-21'
+  organization_path: /organizations/wings-for-val
+  role: Advocate
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 66"
+relationships:
+- id: r1
+  added_date: '2026-04-21'
+  person_path: /people/david-fravor
+  relationship: Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing as the second pilot in the two-ship F/A-18F flight
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 71"
+quotes:
+- id: q1
+  added_date: '2026-04-21'
+  text: |-
+    I never wanted to be on national TV, no offense.
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+  context: "CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16"
+  observation_type: relayed
+  statement_date: '2021-05-16'
+  significance: "Dietrich's framing of her reluctance to speak publicly — establishes she was not seeking media attention."
+- id: q2
+  added_date: '2026-04-21'
+  text: |-
+    Because I was in a government aircraft, because I was on the clock. And so I feel a responsibility to s-- to share what I can. And it is unclassified.
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+  context: "CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16"
+  observation_type: relayed
+  statement_date: '2021-05-16'
+  significance: "Dietrich's stated rationale for going public: duty-based, on-the-clock observation, and the event was unclassified."
+- id: q3
+  added_date: '2026-04-21'
+  text: |-
+    So your mind tries to make sense of it. I'm gonna categorize this as maybe a helicopter or maybe a drone. And when it disappeared. I mean it was just&hellip;
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1098"
+  context: "CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 — Dietrich describing her in-cockpit thought process during the encounter"
+  observation_type: direct
+  statement_date: '2021-05-16'
+  significance: "First-hand account of Dietrich's real-time cognitive attempt to categorize the object as conventional before its disappearance defeated that framing."
+- id: q4
+  added_date: '2026-04-21'
+  text: |-
+    You know, I think that over beers, we've sort of said, "Hey man, if I saw this solo, I don't know that I would have come back and said anything," because it sounds so crazy when I say it.
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1104"
+  context: "CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16"
+  observation_type: relayed
+  statement_date: '2021-05-16'
+  significance: "Dietrich explicitly acknowledges she would not have reported the encounter solo due to its 'crazy' character — speaks to the stigma that suppresses UAP reporting."
+- id: q5
+  added_date: '2026-04-21'
+  text: |-
+    "It was unidentified. And that's why it was so unsettling to us. Because we weren't expecting it. We couldn't classify it,"
+  source:
+    path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
+    location: "line 967"
+  context: "CBS News 60 Minutes Overtime web article, 2021-05-16"
+  observation_type: direct
+  statement_date: '2021-05-16'
+  significance: "Dietrich's own framing of why the encounter was 'unsettling' — inability to classify the object against known categories."
+- id: q6
+  added_date: '2026-04-21'
+  text: |-
+    "No predictable movement, no predictable trajectory,"
+  source:
+    path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
+    location: "line 972"
+  context: "CBS News 60 Minutes Overtime web article, 2021-05-16"
+  observation_type: direct
+  statement_date: '2021-05-16'
+  significance: "Dietrich's direct observational characterization of the object's motion profile — lack of predictable kinematics."
+- id: q7
+  added_date: '2026-04-21'
+  text: |-
+    "I felt the vulnerability of not having anything to defend ourselves,"
+  source:
+    path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
+    location: "line 978"
+  context: "CBS News 60 Minutes Overtime web article, 2021-05-16"
+  observation_type: direct
+  statement_date: '2021-05-16'
+  significance: "Dietrich's direct account of her emotional response during the encounter: vulnerability from being unarmed."
+- id: q8
+  added_date: '2026-04-21'
+  text: |-
+    "And then I felt confused when it disappeared."
+  source:
+    path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
+    location: "line 978"
+  context: "CBS News 60 Minutes Overtime web article, 2021-05-16"
+  observation_type: direct
+  statement_date: '2021-05-16'
+  significance: "Dietrich's direct account of confusion at the object's disappearance."
+- id: q9
+  added_date: '2026-04-21'
+  text: |-
+    My colleagues and I encountered something we could not explain: an anomalous flying object in broad daylight against a clear blue sky and calm waters.
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 41"
+  context: "Self-authored op-ed in The Debrief, 2023-02-17"
+  observation_type: relayed
+  statement_date: '2023-02-17'
+  significance: "Dietrich's own first-person prose framing of the Nimitz encounter in her self-authored Debrief op-ed."
+- id: q10
+  added_date: '2026-04-21'
+  text: |-
+    We merged and visually acquired the object, a matte white oblong shape with no apparent flight control surfaces, visible means of propulsion, or smoke trail. Yet it outmaneuvered us with ease.
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 41"
+  context: "Self-authored op-ed in The Debrief, 2023-02-17"
+  observation_type: relayed
+  statement_date: '2023-02-17'
+  significance: "Dietrich's own written morphological description of the Tic Tac and statement that it outmaneuvered the F/A-18Fs with ease."
+- id: q11
+  added_date: '2026-04-21'
+  text: |-
+    Are UFOs real? Yes. Are they a foreign adversary? Maybe. Are they extraterrestrial in nature? It's possible. Should we keep investigating? Absolutely.
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 45"
+  context: "Self-authored op-ed in The Debrief, 2023-02-17"
+  observation_type: relayed
+  statement_date: '2023-02-17'
+  significance: "Dietrich's most distilled public position on UAP: affirms reality, hedges on adversary and extraterrestrial hypotheses, unequivocal on continued investigation."
+- id: q12
+  added_date: '2026-04-21'
+  text: |-
+    The partnership between multiple objective parties, systematic data collection, and careful analytical methods will move us toward reporting and listening, away from ridicule and stigma. We can move the needle away from the unknown and toward the known.
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 62"
+  context: "Self-authored op-ed in The Debrief, 2023-02-17"
+  observation_type: relayed
+  statement_date: '2023-02-17'
+  significance: "Dietrich's stated method: multi-party partnership + systematic data collection + analytical rigor as the antidote to ridicule and stigma around UAP reporting."
+- id: q13
+  added_date: '2026-04-21'
+  text: |-
+    Be vigilant. Stay curious. Look up. We have barely tasted the sky.
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 64"
+  context: "Self-authored op-ed in The Debrief, 2023-02-17"
+  observation_type: relayed
+  statement_date: '2023-02-17'
+  significance: "Closing aphorism Dietrich uses publicly across appearances; signature sign-off."
+- id: q14
+  added_date: '2026-04-21'
+  text: |-
+    appeared to respond in a way we didn't recognize
+  source:
+    path: news/enigmalabs-dietrich-advisor-announcement.html
+    location: "line 15"
+  context: "Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14"
+  observation_type: relayed
+  statement_date: '2022-11-14'
+  significance: "Dietrich's characterization of the Tic Tac's flight behavior as outside recognized categories."
+- id: q15
+  added_date: '2026-04-21'
+  text: |-
+    didn't appear to have any flight control surfaces or means of propulsion
+  source:
+    path: news/enigmalabs-dietrich-advisor-announcement.html
+    location: "line 15"
+  context: "Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14"
+  observation_type: relayed
+  statement_date: '2022-11-14'
+  significance: "Dietrich's morphological description of the Tic Tac — no flight-control surfaces, no visible propulsion."
+- id: q16
+  added_date: '2026-04-21'
+  text: |-
+    I was a lieutenant [10:03] Junior grade I wasn't even a full Lieutenant at the time uh that that happened
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "lines 91-93"
+  context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
+  observation_type: relayed
+  statement_date: '2023'
+  significance: "Self-attestation of her November 2004 rank as lieutenant junior grade (LTjg). First of three attestations in this source."
+- id: q17
+  added_date: '2026-04-21'
+  text: |-
+    again I was a lieutenant JG at the time yeah there's ensen and Lieutenant JG lieutenant [1:00:56] you know so I had had very little um uh rank or authority or anything
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "lines 491-494"
+  context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
+  observation_type: relayed
+  statement_date: '2023'
+  significance: "Second LTjg attestation in this source; explains why she did not pursue independent follow-up on the encounter."
+- id: q18
+  added_date: '2026-04-21'
+  text: |-
+    and I was a lieutenant JG it wasn't my place to [1:02:00] um investigate or follow up or follow through in that way
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "lines 499-501"
+  context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
+  observation_type: relayed
+  statement_date: '2023'
+  significance: "Third LTjg attestation in this source; institutional chain-of-custody framing."
+- id: q19
+  added_date: '2026-04-21'
+  text: |-
+    I really after after that uh you know the few days of [5:25] excitement uh that followed I forgot about it uh you know wasn't on my mind I certainly wasn't [5:32] uh trying to figure it out or anything until um you know several years later when uh the Office [5:40] of Naval intelligence folks contacted me and they were doing their investigation and their followup
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "lines 54-56"
+  context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
+  observation_type: relayed
+  statement_date: '2023'
+  significance: "Dietrich identifies the Office of Naval Intelligence as the entity that reopened contact with her several years after the encounter."
+- id: q20
+  added_date: '2026-04-21'
+  text: |-
+    that's actually how I got a visual on the Tic Tac is because somebody said hey look [59:18] in the water uh and we saw this turning water um I thought in the first moment that whatever we [59:25] had been in Vector to intercept had crashed uh and my heart sank
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "lines 478-481"
+  context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
+  observation_type: direct
+  statement_date: '2023'
+  significance: "First-person account of how Dietrich acquired visual on the Tic Tac via the disturbed water as anchor point. Auto-caption typo 'turning water' preserved."
+- id: q21
+  added_date: '2026-04-21'
+  text: |-
+    we all gathered around and we watched uh several [56:42] times this um black and white uh Fleer footage it's was much clearer uh the resolution uh than [56:52] what you see on now if you just Google Tic Tac video video um because it was the original tape
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "lines 458-461"
+  context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
+  observation_type: direct
+  statement_date: '2023'
+  significance: "Dietrich attests she personally viewed the original FLIR tape aboard Nimitz shortly after the encounter; resolution was 'much clearer' than the public release. Auto-caption 'Fleer' for FLIR preserved."
+- id: q22
+  added_date: '2026-04-21'
+  text: |-
+    they asked me to be their first advisor uh so it's a unpaid role
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "line 228"
+  context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
+  observation_type: relayed
+  statement_date: '2023'
+  significance: "Dietrich self-identifies as Enigma Labs' 'first advisor' in an unpaid role."
+- id: q23
+  added_date: '2026-04-21'
+  text: |-
+    I was fortunate to um attend the first meeting of the NASA independent study uh so it was hosted [19:37] by NASA
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "lines 166-167"
+  context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
+  observation_type: relayed
+  statement_date: '2023'
+  significance: "Dietrich confirms attendance at the first NASA UAP Independent Study Team meeting."
+- id: q24
+  added_date: '2026-04-21'
+  text: |-
+    I I [12:07] graduated and commissioned through the [12:08] ROC program in 2001. Went through flight [12:11] school, had my first flight on 911, [12:15] uh which was a paradigm shift for the [12:17] world and for me personally and [12:19] professionally. Uh and then I ended up [12:21] in the strike fighter pipeline. So I [12:22] flew F-18 Super Hornets for the Navy uh [12:26] off of the USS Nimttz aircraft carrier [12:29] uh from the squadron VFA41.
+  source:
+    path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+    location: "lines 311-321"
+  context: "Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20)"
+  observation_type: relayed
+  statement_date: '2025-02-20'
+  significance: "Dietrich's own biographical summary: ROTC commission in 2001, first flight on 9/11, strike fighter pipeline, F-18 Super Hornets off USS Nimitz, VFA-41. Auto-caption typos 'ROC' (for ROTC) and 'Nimttz' preserved."
+- id: q25
+  added_date: '2026-04-21'
+  text: |-
+    it was moving in a way [15:26] that we couldn't recognize. It didn't [15:28] follow our laws of physics. It didn't [15:31] have our turn radius or our [15:34] acceleration.
+  source:
+    path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+    location: "lines 391-395"
+  context: "Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20)"
+  observation_type: direct
+  statement_date: '2025-02-20'
+  significance: "Dietrich's direct first-person observation of the Tic Tac's kinematic behavior — 'didn't follow our laws of physics.'"
+- id: q26
+  added_date: '2026-04-21'
+  text: |-
+    I maintain an [18:07] aggressively neutral uh stance. [18:11] So, by definition for me, UFO or UAP is [18:17] unidentified. That's what the U stands
+  source:
+    path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+    location: "lines 449-454"
+  context: "Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20)"
+  observation_type: relayed
+  statement_date: '2025-02-20'
+  significance: "Dietrich's characterization of her epistemic stance — 'aggressively neutral' — and literal reading of the U in UFO/UAP."
+- id: q27
+  added_date: '2026-04-21'
+  text: |-
+    2017 [45:48] article came about and um there was a [45:51] Pentagon report that again wasn't [45:53] classified because we don't know what we [45:54] saw that day, but included our names and [45:57] information. And so, it was released, [46:00] posted on the internet somehow, and we
+  source:
+    path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+    location: "lines 1111-1117"
+  context: "Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20)"
+  observation_type: relayed
+  statement_date: '2025-02-20'
+  significance: "Dietrich describes the 2017 leak of the Pentagon report that named her flight crew — she uses the word 'doxed.'"
+- id: q28
+  added_date: '2026-04-21'
+  text: |-
+    Uh the visual uh for me again [58:44] as the most junior pilot uh was 10 12 [58:49] seconds. Uh but for the other more [58:51] senior uh aviators and the crew it was a [58:55] few minutes.
+  source:
+    path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+    location: "lines 1426-1432"
+  context: "Linda Hall Library UAP Scientific Context panel Q&A (recorded 2025-02-20)"
+  observation_type: direct
+  statement_date: '2025-02-20'
+  significance: "Dietrich's first-person time accounting: her own visual was 10-12 seconds while more senior aviators' visual was several minutes. Explains the duration discrepancy between her and Fravor's accounts."
+- id: q29
+  added_date: '2026-04-21'
+  text: |-
+    I I had a UAP [30:38] encounter and I was never told to be [30:39] quiet about it it was never classified [30:42] we were never required to sign an NDA um [30:45] there were never Men In Black that came [30:47] and took tapes or you know removed data [30:49] or anything like that so um I haven't [30:53] had that experience and I don't know of [30:54] anybody else who has
+  source:
+    path: transcripts/calling-all-beings-104-dietrich-2024-downloaded.md
+    location: "lines 714-722"
+  context: "Calling All Beings podcast Ep. 104 (published 2024-01-05)"
+  observation_type: relayed
+  statement_date: '2024-01-05'
+  significance: "Dietrich's explicit denial she experienced classification pressure, NDA requirements, or 'Men In Black' data confiscation after the Nimitz encounter."
+- id: q30
+  added_date: '2026-04-21'
+  text: |-
+    so I recently [2:17] retired and moved to Boulder [2:19] after serving 20 years in the Navy. [2:22] The first 10 years was [2:24] operational as a pilot [2:27] and then deploying as an engineer. [2:30] And then the last 10 years, I was [2:32] living the charmed life of an academic, [2:35] teaching at the Naval [2:36] Academy in Annapolis, [2:38] and then the consortium of schools in DC.
+  source:
+    path: transcripts/merged-podcast-014-dietrich-2023-downloaded.md
+    location: "lines 82-92"
+  context: "Merged podcast Ep. 014 with Ryan Graves (published 2023-08-31)"
+  observation_type: relayed
+  statement_date: '2023-08-31'
+  significance: "Dietrich's own summary of her 20-year Navy career structure: 10 years operational pilot/deployed engineer, 10 years academic. Post-retirement move to Boulder."
+- id: q31
+  added_date: '2026-04-21'
+  text: |-
+    I just joined the [11:00] squadron in July of 2004. [11:06] So having just come out of [11:07] flight school, just out of the-- [11:10] I had just done the [11:12] midair refueling syllabus. [11:14] I had just done my carrier qual in that [11:19] particular aircraft. [11:21] So I really felt and really was new. [11:26] I still had my FNG named Patch.
+  source:
+    path: transcripts/merged-podcast-014-dietrich-2023-downloaded.md
+    location: "lines 334-343"
+  context: "Merged podcast Ep. 014 with Ryan Graves (published 2023-08-31)"
+  observation_type: relayed
+  statement_date: '2023-08-31'
+  significance: "Dietrich dates her VFA-41 squadron join to July 2004 — four months before the Nov 14, 2004 encounter — and confirms she still had her FNG name patch."
+- id: q32
+  added_date: '2026-04-21'
+  text: |-
+    I thought, well maybe I could have an adventure, maybe I could do something fun first and then settle down later in life, and so that's why I decided to pursue Naval aviation, and I did that through the NROTC scholarship at George Washington University, so four years of going and having a normal college experience, but also doing some summer training with the Navy, and some Naval science courses throughout the year. And then I graduated and commissioned in May of 2001, into the Navy.
+  source:
+    path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+    location: "lines 47-53"
+  context: "When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16)"
+  observation_type: relayed
+  statement_date: '2021-06-16'
+  significance: "Dietrich's biographical self-attestation: NROTC scholarship at George Washington University, May 2001 commissioning."
+- id: q33
+  added_date: '2026-04-21'
+  text: |-
+    When we came back to the ship one of the first things I said was, "Does anybody have a copy of the FAR/AIM Manual? I need to find that page with that phone number to call to report a UFO." But the other aircraft in my flight, the lead aircraft, was my commanding officer, Commander Dave Fravor, and he was the skipper of the squadron, the most senior aviator in my chain of command, and so I didn't call a phone number or call the FAA directly, I deferred to him and his seniority in terms of reporting the incident up the chain of command, and taking any follow that would be appropriate.
+  source:
+    path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+    location: "lines 117-124"
+  context: "When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16)"
+  observation_type: direct
+  statement_date: '2021-06-16'
+  significance: "Dietrich's first-person account of her immediate post-flight reaction and her deference to Fravor as commanding officer."
+- id: q34
+  added_date: '2026-04-21'
+  text: |-
+    this was confirmed a few years later when I was contacted by members of the team in the Pentagon who were investigating UAP incidents. I assume that it was part of this ATIP being referred to in the media, the first generation being ATIP, and then the current-
+  source:
+    path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+    location: "lines 142-145"
+  context: "When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16)"
+  observation_type: relayed
+  statement_date: '2021-06-16'
+  significance: "Dietrich's self-attestation that a Pentagon UAP-investigation team contacted her — she assumes it was AATIP."
+- id: q35
+  added_date: '2026-04-21'
+  text: |-
+    So from about 2009 until this year, I've been in contact with, in a one-way flow. They call me in to answer questions about this particular incident, and maybe show or share something that they have from a different incident and say, "Is what you saw? Is this similar?" I'll say yes or no, but they're not giving me a download of everything else that they're looking at.
+  source:
+    path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+    location: "lines 154-158"
+  context: "When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16)"
+  observation_type: relayed
+  statement_date: '2021-06-16'
+  significance: "Dietrich dates the start of Pentagon contact to about 2009 and describes the 'one-way flow' pattern. Most evidentiarily distinctive passage on her institutional engagement chronology."
+- id: q36
+  added_date: '2026-04-21'
+  text: |-
+    But my great-grandfather, Roman Starzl, was one of the, I guess, pioneers of the science fiction genre. He was an author and publisher of a newspaper in a small town in Iowa, and so he wrote a lot, but he did write these science fiction stories that were gobbled up by folks when that genre was beginning in that era.
+  source:
+    path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+    location: "lines 178-181"
+  context: "When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16)"
+  observation_type: relayed
+  statement_date: '2021-06-16'
+  significance: "Dietrich attests Roman Starzl (science-fiction pioneer) as her great-grandfather."
+- id: q37
+  added_date: '2026-04-21'
+  text: |-
+    Yeah, so Roman's son, Thomas, who was my grandfather's brother, Thomas Starzl, he was the pioneer of human organ transplantation.
+  source:
+    path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+    location: "lines 192-193"
+  context: "When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16)"
+  observation_type: relayed
+  statement_date: '2021-06-16'
+  significance: "Dietrich attests Thomas Starzl (organ-transplantation pioneer) as her grandfather's brother."
+- id: q38
+  added_date: '2026-04-21'
+  text: |-
+    that so I was uh new to the Squadron I [9:24] was a lieutenant Junior grade and uh on [9:27] the wing of the commanding officer uh [9:30] Commander David fraver uh he had a [9:32] senior lieutenant in his back seat and I [9:35] had a department head a lieutenant [9:37] commander in my back seat
+  source:
+    path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
+    location: "lines 206-212"
+  context: "American Veterans Center interview (recorded 2024-11-09)"
+  observation_type: relayed
+  statement_date: '2024-11-09'
+  significance: "Dietrich's 2024 re-attestation of her Nov 2004 rank (LTjg) and flight crew composition: Fravor lead with senior lieutenant WSO; Dietrich wingman with lieutenant commander WSO (department head). Auto-caption 'fraver' preserved."
+- id: q39
+  added_date: '2026-04-21'
+  text: |-
+    we estimated that it's about the size of [11:22] our own [11:23] fuselage uh so about 30 to 40 feet long [11:27] and smooth just like a a Tic Tac uh [11:31] breath mint uh sort of a matte white [11:34] color with no windows no flight control [11:38] surfaces uh no visible forms of
+  source:
+    path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
+    location: "lines 247-254"
+  context: "American Veterans Center interview (recorded 2024-11-09)"
+  observation_type: direct
+  statement_date: '2024-11-09'
+  significance: "Dietrich's direct observation of Tic Tac physical characteristics: 30-40 feet long, smooth, matte white, no windows / flight control surfaces / visible propulsion."
+- id: q40
+  added_date: '2026-04-21'
+  text: |-
+    moving so it was changing air speed it [13:45] was changing direction it was changing [13:47] angles in a way that didn't make sense [13:50] um and didn't adhere to our [13:52] understanding of physics and gravity and [13:57] um all of the aerodynamics that we study
+  source:
+    path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
+    location: "lines 300-305"
+  context: "American Veterans Center interview (recorded 2024-11-09)"
+  observation_type: direct
+  statement_date: '2024-11-09'
+  significance: "Dietrich's first-person observation of Tic Tac kinematic behavior — 'didn't adhere to our understanding of physics and gravity.'"
+timeline:
+- id: t1
+  added_date: '2026-04-21'
+  date: '2001-05'
+  event: Graduated and commissioned into the U.S. Navy through the NROTC scholarship at George Washington University
+  category: role
+  source:
+    path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+    location: "lines 47-53"
+- id: t2
+  added_date: '2026-04-21'
+  date: '2004-07'
+  event: Joined Strike Fighter Squadron 41 (VFA-41 Black Aces) as a new pilot fresh out of flight school
+  category: role
+  source:
+    path: transcripts/merged-podcast-014-dietrich-2023-downloaded.md
+    location: "lines 334-343"
+  node_link: /organizations/vfa-41
+- id: t3
+  added_date: '2026-04-21'
+  date: '2004-11-14'
+  event: USS Nimitz Tic Tac UAP encounter — second pilot in the two-ship F/A-18F flight, on the wing of Cmdr. Dave Fravor
+  category: observation
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+  node_link: /events/2004-nimitz-encounter
+- id: t4
+  added_date: '2026-04-21'
+  date: '2009'
+  event: Office of Naval Intelligence and Pentagon UAP investigators began contacting her about the encounter (one-way flow); per her account on When It Mattered podcast
+  category: other
+  source:
+    path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+    location: "lines 154-158"
+- id: t5
+  added_date: '2026-04-21'
+  date: '2010'
+  event: Yearlong boots-on-ground deployment to Ghazni Afghanistan as an infrastructure reconstruction engineer
+  category: role
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 66"
+- id: t6
+  added_date: '2026-04-21'
+  date: '2016'
+  event: Contacted Cmdr. Dave Fravor and asked if he had been contacted about the incident after 2009; relayed that she had been invited to the Pentagon multiple times to discuss the event
+  category: other
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 71"
+  node_link: /people/david-fravor
+- id: t7
+  added_date: '2026-04-21'
+  date: '2017'
+  event: Pentagon report including her name was released and posted on the internet alongside the December 2017 New York Times article; she describes this event as being 'doxed'
+  category: incident
+  source:
+    path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+    location: "lines 1111-1117"
+- id: t8
+  added_date: '2026-04-21'
+  date: '2020'
+  event: Retired from the U.S. Navy after a 20-year career as a Naval officer and strike fighter pilot
+  category: role
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 66"
+- id: t9
+  added_date: '2026-04-21'
+  date: '2021-05-16'
+  event: First public statement on the Nimitz encounter — CBS 60 Minutes broadcast with Bill Whitaker
+  category: publication
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+- id: t10
+  added_date: '2026-04-21'
+  date: '2021-06-16'
+  event: When It Mattered podcast Episode 55 with Chitra Ragavan published — first dedicated long-form interview after the 60 Minutes broadcast
+  category: publication
+  source:
+    path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+    location: "lines 47-53"
+- id: t11
+  added_date: '2026-04-21'
+  date: '2022'
+  event: Joined the University of Colorado Boulder College of Engineering faculty as adjunct instructor in the Engineering Leadership Program
+  category: role
+  source:
+    path: news/cu-boulder-emp-dietrich-bio.html
+    location: "line 1"
+  node_link: /organizations/cu-boulder
+- id: t12
+  added_date: '2026-04-21'
+  date: '2022-11-14'
+  event: Joined Enigma Labs as their first advisor (unpaid) — announcement made on the 19th anniversary of the Nimitz encounter
+  category: role
+  source:
+    path: news/enigmalabs-dietrich-advisor-announcement.html
+    location: "line 15"
+  node_link: /organizations/enigma-labs
+- id: t13
+  added_date: '2026-04-21'
+  date: '2023-02-17'
+  event: Self-authored opinion piece 'The Power of Cooperation Can Help Us Solve the Mystery of Unidentified Aerial Phenomena' published in The Debrief
+  category: publication
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "line 27"
+- id: t14
+  added_date: '2026-04-21'
+  date: '2023'
+  event: Appointed Scholar in Residence to the CU Boulder Engineering Management Program
+  category: role
+  source:
+    path: news/cu-boulder-emp-dietrich-bio.html
+    location: "line 1"
+  node_link: /organizations/cu-boulder
+- id: t15
+  added_date: '2026-04-21'
+  date: '2023-06'
+  event: Joined Americans for Safe Aerospace at its official launch (window 2023-05-01 to 2023-06-02 per Wayback Machine snapshots) as a member of the Aircrew Leadership Council, later renamed Advisors
+  category: role
+  source:
+    path: government/safeaerospace-home-20230602.html
+    location: "Advisors card grid"
+  node_link: /organizations/americans-for-safe-aerospace
+- id: t16
+  added_date: '2026-04-21'
+  date: '2023-08-31'
+  event: Merged Podcast Episode 014 'Pilots & Witnesses; Systematic UAP Reporting' with Ryan Graves published
+  category: publication
+  source:
+    path: transcripts/merged-podcast-014-dietrich-2023-downloaded.md
+    location: "lines 82-92"
+- id: t17
+  added_date: '2026-04-21'
+  date: '2024-01-05'
+  event: Calling All Beings podcast Episode 104 published
+  category: publication
+  source:
+    path: transcripts/calling-all-beings-104-dietrich-2024-downloaded.md
+    location: "lines 167-175"
+- id: t18
+  added_date: '2026-04-21'
+  date: '2024-11-09'
+  event: "American Veterans Center interview 'UFOs and The Military: A Combat Pilot's Experience' with Tom Gibbs recorded"
+  category: publication
+  source:
+    path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
+    location: "lines 206-212"
+- id: t19
+  added_date: '2026-04-21'
+  date: '2025-02-20'
+  event: Linda Hall Library 'UAP in a Scientific Context' panel recorded — moderator Nadia Drake; panelists Dietrich, Greg Eghigian, and Joshua Semeter
+  category: publication
+  source:
+    path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+    location: "lines 311-321"
+corroboration_items:
+- id: c1
+  added_date: '2026-04-21'
+  observer_path: /people/david-fravor
+  observation_type: testimonial
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 71"
+  observed_event_ref: /events/2004-nimitz-encounter
+  note: Flight lead in the lead F/A-18F of the same two-ship flight; observed the same Tic Tac object and named Dietrich as 'the other pilot in my flight' in his House Oversight written testimony.
+- id: c2
+  added_date: '2026-04-21'
+  observer_path: /organizations/uss-princeton
+  observation_type: instrumented
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 51"
+  observed_event_ref: /events/2004-nimitz-encounter
+  note: Aegis SPY-1 radar on USS Princeton reacquired the object 60 miles East at the CAP point seconds after it disappeared from visual.
+- id: c3
+  added_date: '2026-04-21'
+  observer_path: /media/flir1-video
+  observation_type: documentary
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 57"
+  observed_event_ref: /events/2004-nimitz-encounter
+  note: Subsequent F/A-18F sortie launched after Dietrich and Fravor's flight returned captured targeting-pod video of an object Fravor and Dietrich believed was the same Tic Tac.
+entities_referenced:
+- id: e1
+  added_date: '2026-04-21'
+  entity_type: person
+  name: David Fravor
+  wrap_path: /people/david-fravor
+  context_summary: Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing.
+- id: e2
+  added_date: '2026-04-21'
+  entity_type: person
+  name: Chad Underwood
+  wrap_path: /people/chad-underwood
+  context_summary: Pilot of the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; Dietrich watched the original tape aboard Nimitz and identified him by name on the Sprague podcast.
+- id: e3
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: U.S. Navy
+  wrap_path: /organizations/us-navy
+  context_summary: Dietrich's branch of service; she was commissioned in May 2001 and retired in 2020.
+- id: e4
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: VFA-41 Black Aces
+  wrap_path: /organizations/vfa-41
+  context_summary: Strike Fighter Squadron 41; Dietrich joined in July 2004 fresh out of flight school and was on Fravor's wing during the November 2004 Nimitz encounter.
+- id: e5
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: USS Nimitz
+  wrap_path: /organizations/uss-nimitz
+  context_summary: Aircraft carrier from which Dietrich's F/A-18F launched on November 14, 2004.
+- id: e6
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: USS Princeton
+  wrap_path: /organizations/uss-princeton
+  context_summary: Aegis-equipped cruiser providing radar control during the encounter; reacquired the object after it disappeared from visual.
+- id: e7
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: Office of Naval Intelligence
+  wrap_path: /organizations/oni
+  context_summary: First Pentagon entity to contact Dietrich about the encounter (per her account on When It Mattered podcast); contact began about 2009.
+- id: e8
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: AATIP (Advanced Aerospace Threat Identification Program)
+  wrap_path: /organizations/aatip
+  context_summary: First-generation Pentagon UAP investigation program Dietrich attributes the post-2009 contact to (per her own attestation on When It Mattered podcast).
+- id: e9
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: AARO (All-domain Anomaly Resolution Office)
+  wrap_path: /organizations/aaro
+  context_summary: Current Pentagon UAP office; Dietrich references the AATIP-to-AARO transition as the institutional evolution of her Pentagon points of contact.
+- id: e10
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: NASA UAP Independent Study Team
+  wrap_path: /organizations/nasa
+  context_summary: Dietrich attended the first meeting of the NASA UAP Independent Study Team (per Sprague podcast).
+- id: e11
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: Americans for Safe Aerospace
+  wrap_path: /organizations/americans-for-safe-aerospace
+  context_summary: Ryan Graves's nonprofit; Dietrich joined as Advisor (originally listed under 'Aircrew Leadership Council') at ASA's official launch in May-June 2023.
+- id: e12
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: Enigma Labs
+  wrap_path: /organizations/enigma-labs
+  context_summary: NYC-based UAP-reporting platform startup; Dietrich is their first (unpaid) advisor since November 2022.
+- id: e13
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: Syracuse University
+  wrap_path: /organizations/syracuse-university
+  context_summary: Dietrich's current institutional affiliation as Interim Chief Human Resources Officer.
+- id: e14
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: University of Colorado Boulder
+  wrap_path: /organizations/cu-boulder
+  context_summary: Dietrich joined CU Boulder College of Engineering faculty in 2022 as adjunct, appointed Scholar in Residence in the Engineering Management Program in 2023.
+- id: e15
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: U.S. Naval Academy
+  wrap_path: /organizations/usna
+  context_summary: Dietrich served as Military Professor in the Department of Leadership, Ethics and Law as part of her post-Navy academic career.
+- id: e16
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: George Washington University
+  wrap_path: /organizations/gwu
+  context_summary: Dietrich's alma mater (NROTC scholarship; B.S. Civil Engineering; later MBA from GW School of Business); she also served as Assistant Professor of Naval Science there post-Navy.
+- id: e17
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: The Debrief
+  wrap_path: /organizations/the-debrief
+  context_summary: Outlet that published Dietrich's self-authored 2023-02-17 op-ed on UAP cooperation.
+- id: e18
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: Legacy Flight Academy
+  wrap_path: /organizations/legacy-flight-academy
+  context_summary: Aviation diversity foundation Dietrich advocates for (per Debrief op-ed byline and Enigma Labs announcement).
+- id: e19
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: Wings for Val
+  wrap_path: /organizations/wings-for-val
+  context_summary: Foundation supporting women in aviation; Dietrich advocates for it (per Debrief op-ed byline and Enigma Labs announcement).
+- id: e20
+  added_date: '2026-04-21'
+  entity_type: event
+  name: 2004 USS Nimitz Tic Tac UAP encounter
+  wrap_path: /events/2004-nimitz-encounter
+  context_summary: The November 14, 2004 encounter Dietrich personally observed from the second F/A-18F of the two-ship flight.
+- id: e21
+  added_date: '2026-04-21'
+  entity_type: media
+  name: FLIR1 video
+  wrap_path: /media/flir1-video
+  context_summary: Targeting-pod video captured by a subsequent F/A-18F sortie that day; Dietrich personally viewed the original tape aboard Nimitz.
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-21'
+  observed: Deitrich
+  canonical: Dietrich
+  location: "line 1092"
+  source_path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+  resolution: preserve-as-sic-in-quotes
+  note: Single instance in the CBS broadcast narrator text ('As Deitrich circled above'). Not Dietrich's own writing — a CBS transcription typo.
+- id: nq2
+  added_date: '2026-04-21'
+  observed: fraver
+  canonical: Fravor
+  location: "lines 351-352, 473"
+  source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption transcription error for 'Fravor' across multiple Sprague podcast lines; also appears in American Veterans Center transcript line 209. Preserve in quotes; use canonical Fravor in prose.
+- id: nq3
+  added_date: '2026-04-21'
+  observed: prinston
+  canonical: Princeton
+  location: "line 497"
+  source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption transcription error for 'Princeton' (the USS Princeton).
+- id: nq4
+  added_date: '2026-04-21'
+  observed: nits
+  canonical: Nimitz
+  location: "lines 41-42, 52"
+  source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption transcription error for 'Nimitz' across multiple Sprague podcast lines.
+- id: nq5
+  added_date: '2026-04-21'
+  observed: Nimttz
+  canonical: Nimitz
+  location: "line 320"
+  source_path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption transcription error for 'Nimitz' in Linda Hall panel.
+- id: nq6
+  added_date: '2026-04-21'
+  observed: Fleer
+  canonical: FLIR
+  location: "lines 459, 461"
+  source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption transcription error for 'FLIR' (Forward-Looking Infrared) in Sprague podcast.
+- id: nq7
+  added_date: '2026-04-21'
+  observed: ROC
+  canonical: NROTC
+  location: "line 312"
+  source_path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption transcription error for 'NROTC' (Naval Reserve Officers Training Corps) in Linda Hall panel.
+- id: nq8
+  added_date: '2026-04-21'
+  observed: turning water
+  canonical: roiling water / churning water
+  location: "line 479"
+  source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption transcription error for 'churning water' or 'roiling water' (the white water disturbance Dietrich saw); appears as 'turning water' (line 479) and 'roing water' (line 484) in the same passage.
+rumors:
+- id: rm1
+  added_date: '2026-04-21'
+  claim: Lt. Cmdr. Jim Slaight was Alex Dietrich's Weapons System Officer (WSO) in the back seat of her F/A-18F during the November 14, 2004 USS Nimitz Tic Tac encounter
+  status: not-primary-source-established
+  observed_sources:
+    - Multiple secondary UAP-community sources name Slaight as Dietrich's backseater; Slaight briefly co-appeared with Fravor on a Jesse Watters Fox segment in 2017-2018 but has been largely silent since.
+  note: Dietrich does NOT name her WSO in any of the 19 primary sources surveyed. In the American Veterans Center 2024 interview she refers to her backseater only by rank ('I had a department head a lieutenant commander in my back seat'). The Slaight identification is widely circulated but lacks Dietrich-direct or Slaight-direct primary-source attestation in the current source pool.
