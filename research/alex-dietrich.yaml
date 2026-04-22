@@ -744,7 +744,7 @@ timeline:
 - id: t9
   added_date: '2026-04-21'
   date: '2021-05-16'
-  event: First public statement on the Nimitz encounter — CBS 60 Minutes broadcast with Bill Whitaker
+  event: "First public statement on the Nimitz encounter — CBS News ([`/organizations/cbs-news`]) 60 Minutes broadcast with Bill Whitaker ([`/people/bill-whitaker`]); transcript [`/transcripts/cbs-60min-uap-2021`]"
   category: publication
   source:
     path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
@@ -752,7 +752,7 @@ timeline:
 - id: t10
   added_date: '2026-04-21'
   date: '2021-06-16'
-  event: When It Mattered podcast Episode 55 with Chitra Ragavan published — first dedicated long-form interview after the 60 Minutes broadcast
+  event: "When It Mattered ([`/organizations/when-it-mattered`]) podcast Ep 55 with Chitra Ragavan ([`/people/chitra-ragavan`]) published — first dedicated long-form interview after the 60 Minutes broadcast; transcript [`/transcripts/when-it-mattered-55-dietrich-2021`]"
   category: publication
   source:
     path: transcripts/when-it-mattered-55-dietrich-2021.pdf
@@ -801,10 +801,18 @@ timeline:
     path: government/safeaerospace-home-20230602.html
     location: "Advisors card grid"
   node_link: /organizations/americans-for-safe-aerospace
+- id: t15a
+  added_date: '2026-04-22'
+  date: '2023'
+  event: "Somewhere in the Skies ([`/organizations/somewhere-in-the-skies`]) podcast interview with Ryan Sprague ([`/people/ryan-sprague`]) recorded; transcript [`/transcripts/somewhere-in-the-skies-dietrich-2023`]"
+  category: publication
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "line 367"
 - id: t16
   added_date: '2026-04-21'
   date: '2023-08-31'
-  event: Merged Podcast Episode 014 'Pilots & Witnesses; Systematic UAP Reporting' with Ryan Graves published
+  event: "Merged Podcast ([`/organizations/merged-podcast`]) Ep 014 'Pilots & Witnesses; Systematic UAP Reporting' with Ryan Graves ([`/people/ryan-graves`]) published; transcript [`/transcripts/merged-podcast-014-dietrich-2023`]"
   category: publication
   source:
     path: transcripts/merged-podcast-014-dietrich-2023-downloaded.md
@@ -812,7 +820,7 @@ timeline:
 - id: t17
   added_date: '2026-04-21'
   date: '2024-01-05'
-  event: Calling All Beings podcast Episode 104 published
+  event: "Calling All Beings ([`/organizations/calling-all-beings`]) podcast Ep 104 published; transcript [`/transcripts/calling-all-beings-104-dietrich-2024`]"
   category: publication
   source:
     path: transcripts/calling-all-beings-104-dietrich-2024-downloaded.md
@@ -820,7 +828,7 @@ timeline:
 - id: t18
   added_date: '2026-04-21'
   date: '2024-11-09'
-  event: "American Veterans Center interview 'UFOs and The Military: A Combat Pilot's Experience' with Tom Gibbs recorded"
+  event: "American Veterans Center ([`/organizations/american-veterans-center`]) interview with Tom Gibbs ([`/people/tom-gibbs`]) recorded; transcript [`/transcripts/american-veterans-center-dietrich-2024`]"
   category: publication
   source:
     path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
@@ -828,7 +836,7 @@ timeline:
 - id: t19
   added_date: '2026-04-21'
   date: '2025-02-20'
-  event: Linda Hall Library 'UAP in a Scientific Context' panel recorded — moderator Nadia Drake; panelists Dietrich, Greg Eghigian, and Joshua Semeter
+  event: "Linda Hall Library ([`/organizations/linda-hall-library`]) 'UAP in a Scientific Context' panel — moderator Nadia Drake ([`/people/nadia-drake`]); transcript [`/transcripts/linda-hall-uap-2025`]"
   category: publication
   source:
     path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
@@ -994,6 +1002,126 @@ entities_referenced:
   name: Fravor's House Oversight written testimony (2023)
   wrap_path: /documents/written-testimony-fravor-2023
   context_summary: Primary source document attesting the additional first-hand witnesses to the Nimitz encounter (Chad Underwood's subsequent FLIR flight and the USS Princeton Aegis operators tracking the objects for the previous 2 weeks).
+- id: e23
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: CBS News
+  wrap_path: /organizations/cbs-news
+  context_summary: Network that produced the May 16, 2021 60 Minutes broadcast — Dietrich's first public statement venue — and the companion CBSNews.com articles.
+- id: e24
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Bill Whitaker
+  wrap_path: /people/bill-whitaker
+  context_summary: CBS 60 Minutes correspondent who interviewed Dietrich (and Fravor) for the May 16, 2021 broadcast.
+- id: e25
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: When It Mattered podcast
+  wrap_path: /organizations/when-it-mattered
+  context_summary: Podcast hosted by Chitra Ragavan; Episode 55 (published 2021-06-16) was Dietrich's first dedicated long-form interview after the 60 Minutes broadcast.
+- id: e26
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Chitra Ragavan
+  wrap_path: /people/chitra-ragavan
+  context_summary: Host of the When It Mattered podcast; interviewed Dietrich for Episode 55 in June 2021.
+- id: e27
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Somewhere in the Skies podcast
+  wrap_path: /organizations/somewhere-in-the-skies
+  context_summary: Podcast hosted by Ryan Sprague; Dietrich appeared for a long-form 2023 recording (published as a YouTube replay 2024-11-26).
+- id: e28
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Ryan Sprague
+  wrap_path: /people/ryan-sprague
+  context_summary: Host of the Somewhere in the Skies podcast; interviewed Dietrich in 2023.
+- id: e29
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Calling All Beings podcast
+  wrap_path: /organizations/calling-all-beings
+  context_summary: Podcast that interviewed Dietrich for Episode 104, published 2024-01-05.
+- id: e30
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Merged Podcast
+  wrap_path: /organizations/merged-podcast
+  context_summary: Podcast on pilot UAP reporting; Episode 014 (published 2023-08-31) was Dietrich's interview with Ryan Graves framed around systematic UAP reporting.
+- id: e31
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Ryan Graves
+  wrap_path: /people/ryan-graves
+  context_summary: Former U.S. Navy F/A-18F pilot who hosted Merged Podcast Episode 014 with Dietrich; also founder and Executive Director of Americans for Safe Aerospace where Dietrich is an Advisor.
+- id: e32
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: American Veterans Center
+  wrap_path: /organizations/american-veterans-center
+  context_summary: "Organization that recorded a 2024-11-09 interview with Dietrich titled 'UFOs and The Military: A Combat Pilot's Experience' (published 2025-03-18)."
+- id: e33
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Tom Gibbs
+  wrap_path: /people/tom-gibbs
+  context_summary: Interviewer for the American Veterans Center 2024 Dietrich interview.
+- id: e34
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Linda Hall Library
+  wrap_path: /organizations/linda-hall-library
+  context_summary: Research library that hosted the 'UAP in a Scientific Context' panel (recorded 2025-02-20) on which Dietrich sat as a panelist.
+- id: e35
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Nadia Drake
+  wrap_path: /people/nadia-drake
+  context_summary: Moderator of the 2025-02-20 Linda Hall Library 'UAP in a Scientific Context' panel where Dietrich was a panelist.
+- id: e36
+  added_date: '2026-04-22'
+  entity_type: transcript
+  name: CBS 60 Minutes broadcast transcript (2021-05-16)
+  wrap_path: /transcripts/cbs-60min-uap-2021
+  context_summary: Verbatim transcript node for the CBS 60 Minutes broadcast in which Dietrich first spoke publicly about the Nimitz encounter.
+- id: e37
+  added_date: '2026-04-22'
+  entity_type: transcript
+  name: When It Mattered Ep. 55 transcript (2021-06-16)
+  wrap_path: /transcripts/when-it-mattered-55-dietrich-2021
+  context_summary: Verbatim transcript node for Dietrich's first dedicated long-form interview after 60 Minutes (Chitra Ragavan's When It Mattered podcast).
+- id: e38
+  added_date: '2026-04-22'
+  entity_type: transcript
+  name: Somewhere in the Skies transcript (Dietrich, 2023)
+  wrap_path: /transcripts/somewhere-in-the-skies-dietrich-2023
+  context_summary: Verbatim transcript node for Ryan Sprague's Dietrich interview (recorded 2023, YouTube replay 2024-11-26). Longest single Dietrich interview surveyed and the source for her triple LTjg-rank self-attestation.
+- id: e39
+  added_date: '2026-04-22'
+  entity_type: transcript
+  name: Calling All Beings Ep. 104 transcript (2024-01-05)
+  wrap_path: /transcripts/calling-all-beings-104-dietrich-2024
+  context_summary: Verbatim transcript node for the Calling All Beings Dietrich interview.
+- id: e40
+  added_date: '2026-04-22'
+  entity_type: transcript
+  name: Merged Podcast EP014 transcript (2023-08-31)
+  wrap_path: /transcripts/merged-podcast-014-dietrich-2023
+  context_summary: Verbatim transcript node for the Merged Podcast Dietrich interview with Ryan Graves.
+- id: e41
+  added_date: '2026-04-22'
+  entity_type: transcript
+  name: American Veterans Center Dietrich interview transcript (2024-11-09)
+  wrap_path: /transcripts/american-veterans-center-dietrich-2024
+  context_summary: Verbatim transcript node for the American Veterans Center Dietrich interview with Tom Gibbs.
+- id: e42
+  added_date: '2026-04-22'
+  entity_type: transcript
+  name: Linda Hall Library UAP panel transcript (2025-02-20)
+  wrap_path: /transcripts/linda-hall-uap-2025
+  context_summary: Verbatim transcript node for the Linda Hall Library 'UAP in a Scientific Context' panel on which Dietrich sat as a panelist.
 naming_quirks:
 - id: nq1
   added_date: '2026-04-21'

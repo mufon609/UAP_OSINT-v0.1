@@ -451,17 +451,18 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | 2016 | Contacted Cmdr. Dave Fravor and asked if he had been contacted about the incident after 2009; relayed that she had been invited to the Pentagon multiple times to discuss the event | other | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/people/david-fravor`] |
 | 2017 | Pentagon report including her name was released and posted on the internet alongside the December 2017 New York Times article; she describes this event as being 'doxed' | incident | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md |  |
 | 2020 | Retired from the U.S. Navy after a 20-year career as a Naval officer and strike fighter pilot | role | news/debrief-dietrich-cooperation-uap-opinion.html |  |
-| 2021-05-16 | First public statement on the Nimitz encounter — CBS 60 Minutes broadcast with Bill Whitaker | publication | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |  |
-| 2021-06-16 | When It Mattered podcast Episode 55 with Chitra Ragavan published — first dedicated long-form interview after the 60 Minutes broadcast | publication | transcripts/when-it-mattered-55-dietrich-2021.pdf |  |
+| 2021-05-16 | First public statement on the Nimitz encounter — CBS News ([`/organizations/cbs-news`]) 60 Minutes broadcast with Bill Whitaker ([`/people/bill-whitaker`]); transcript [`/transcripts/cbs-60min-uap-2021`] | publication | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |  |
+| 2021-06-16 | When It Mattered ([`/organizations/when-it-mattered`]) podcast Ep 55 with Chitra Ragavan ([`/people/chitra-ragavan`]) published — first dedicated long-form interview after the 60 Minutes broadcast; transcript [`/transcripts/when-it-mattered-55-dietrich-2021`] | publication | transcripts/when-it-mattered-55-dietrich-2021.pdf |  |
 | 2022 | Joined the University of Colorado Boulder College of Engineering faculty as adjunct instructor in the Engineering Leadership Program | role | news/cu-boulder-emp-dietrich-bio.html | [`/organizations/cu-boulder`] |
 | 2022-11-14 | Joined Enigma Labs as their first advisor (unpaid) — announcement made on the 19th anniversary of the Nimitz encounter | role | news/enigmalabs-dietrich-advisor-announcement.html | [`/organizations/enigma-labs`] |
 | 2023 | Appointed Scholar in Residence to the CU Boulder Engineering Management Program | role | news/cu-boulder-emp-dietrich-bio.html | [`/organizations/cu-boulder`] |
+| 2023 | Somewhere in the Skies ([`/organizations/somewhere-in-the-skies`]) podcast interview with Ryan Sprague ([`/people/ryan-sprague`]) recorded; transcript [`/transcripts/somewhere-in-the-skies-dietrich-2023`] | publication | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |  |
 | 2023-02-17 | Self-authored opinion piece 'The Power of Cooperation Can Help Us Solve the Mystery of Unidentified Aerial Phenomena' published in The Debrief | publication | news/debrief-dietrich-cooperation-uap-opinion.html |  |
 | 2023-06 | Joined Americans for Safe Aerospace at its official launch (window 2023-05-01 to 2023-06-02 per Wayback Machine snapshots) as a member of the Aircrew Leadership Council, later renamed Advisors | role | government/safeaerospace-home-20230602.html | [`/organizations/americans-for-safe-aerospace`] |
-| 2023-08-31 | Merged Podcast Episode 014 'Pilots & Witnesses; Systematic UAP Reporting' with Ryan Graves published | publication | transcripts/merged-podcast-014-dietrich-2023-downloaded.md |  |
-| 2024-01-05 | Calling All Beings podcast Episode 104 published | publication | transcripts/calling-all-beings-104-dietrich-2024-downloaded.md |  |
-| 2024-11-09 | American Veterans Center interview 'UFOs and The Military: A Combat Pilot's Experience' with Tom Gibbs recorded | publication | transcripts/american-veterans-center-dietrich-2024-downloaded.md |  |
-| 2025-02-20 | Linda Hall Library 'UAP in a Scientific Context' panel recorded — moderator Nadia Drake; panelists Dietrich, Greg Eghigian, and Joshua Semeter | publication | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md |  |
+| 2023-08-31 | Merged Podcast ([`/organizations/merged-podcast`]) Ep 014 'Pilots & Witnesses; Systematic UAP Reporting' with Ryan Graves ([`/people/ryan-graves`]) published; transcript [`/transcripts/merged-podcast-014-dietrich-2023`] | publication | transcripts/merged-podcast-014-dietrich-2023-downloaded.md |  |
+| 2024-01-05 | Calling All Beings ([`/organizations/calling-all-beings`]) podcast Ep 104 published; transcript [`/transcripts/calling-all-beings-104-dietrich-2024`] | publication | transcripts/calling-all-beings-104-dietrich-2024-downloaded.md |  |
+| 2024-11-09 | American Veterans Center ([`/organizations/american-veterans-center`]) interview with Tom Gibbs ([`/people/tom-gibbs`]) recorded; transcript [`/transcripts/american-veterans-center-dietrich-2024`] | publication | transcripts/american-veterans-center-dietrich-2024-downloaded.md |  |
+| 2025-02-20 | Linda Hall Library ([`/organizations/linda-hall-library`]) 'UAP in a Scientific Context' panel — moderator Nadia Drake ([`/people/nadia-drake`]); transcript [`/transcripts/linda-hall-uap-2025`] | publication | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md |  |
 
 ---
 
@@ -497,20 +498,32 @@ Dietrich is one of two witnesses who have spoken publicly about the November 14,
 
 ### People
 
+- [`/people/bill-whitaker`]
 - [`/people/chad-underwood`]
+- [`/people/chitra-ragavan`]
 - [`/people/david-fravor`]
+- [`/people/nadia-drake`]
+- [`/people/ryan-graves`]
+- [`/people/ryan-sprague`]
+- [`/people/tom-gibbs`]
 
 ### Organizations
 
 - [`/organizations/aaro`]
 - [`/organizations/aatip`]
+- [`/organizations/american-veterans-center`]
 - [`/organizations/americans-for-safe-aerospace`]
+- [`/organizations/calling-all-beings`]
+- [`/organizations/cbs-news`]
 - [`/organizations/cu-boulder`]
 - [`/organizations/enigma-labs`]
 - [`/organizations/gwu`]
 - [`/organizations/legacy-flight-academy`]
+- [`/organizations/linda-hall-library`]
+- [`/organizations/merged-podcast`]
 - [`/organizations/nasa`]
 - [`/organizations/oni`]
+- [`/organizations/somewhere-in-the-skies`]
 - [`/organizations/syracuse-university`]
 - [`/organizations/the-debrief`]
 - [`/organizations/us-navy`]
@@ -518,6 +531,7 @@ Dietrich is one of two witnesses who have spoken publicly about the November 14,
 - [`/organizations/uss-nimitz`]
 - [`/organizations/uss-princeton`]
 - [`/organizations/vfa-41`]
+- [`/organizations/when-it-mattered`]
 - [`/organizations/wings-for-val`]
 
 ### Events
@@ -527,6 +541,16 @@ Dietrich is one of two witnesses who have spoken publicly about the November 14,
 ### Documents
 
 - [`/documents/written-testimony-fravor-2023`]
+
+### Transcripts
+
+- [`/transcripts/american-veterans-center-dietrich-2024`]
+- [`/transcripts/calling-all-beings-104-dietrich-2024`]
+- [`/transcripts/cbs-60min-uap-2021`]
+- [`/transcripts/linda-hall-uap-2025`]
+- [`/transcripts/merged-podcast-014-dietrich-2023`]
+- [`/transcripts/somewhere-in-the-skies-dietrich-2023`]
+- [`/transcripts/when-it-mattered-55-dietrich-2021`]
 
 ### Media
 
