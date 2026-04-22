@@ -220,15 +220,6 @@
   sha256: 82f3a6c4013bb5cba23f9e614c69aa44a635594dadff1aeb08b2961c491d0392
   archive_status: 3
   wayback_date: '2025-11-18'
-- url: https://www.cbsnews.com/news/ufo-military-intelligence-60-minutes-2021-05-16/
-  format: html
-  status: archived
-  path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
-  archived_date: '2026-04-21'
-  sha256: adc3826d40ad176a4ca99fba2a5738a48ca210f469c069b8ca2b9478fa430d66
-  archive_status: 3
-  note: 60 Minutes broadcast transcript (May 16, 2021), 'UFOs regularly spotted in restricted U.S. airspace.' Bill Whitaker reports. First public on-camera statements by Lt. Cmdr. Alex Dietrich about the November 2004 USS Nimitz Tic Tac encounter. Includes full Q&A transcript with both Dietrich and Cmdr. David Fravor; also covers Ryan Graves on 2014-15 East Coast encounters.
-  wayback_date: '2026-04-11'
 - url: https://www.congress.gov/117/meeting/house/114761/documents/HHRG-117-IG05-Transcript-20220517.pdf
   format: pdf
   status: archived
