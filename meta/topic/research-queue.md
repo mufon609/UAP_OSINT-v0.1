@@ -66,7 +66,6 @@ registry).
 | `/organizations/vmfa-232` | organization / gov (military-service) | Low | Marine squadron flying Red Air (testimony mention only) | Marine Corps records |
 | `/organizations/us-navy` | organization / gov (military-service) | Medium | Fravor's service — useful hub | public record |
 | `/organizations/dod` | organization / gov | Medium | Referenced in Fravor testimony re ATIP | public record |
-| `/organizations/ttsa` | organization / private | Medium | Formation narrative in Fravor testimony | Corporate registrations + public record |
 | `/people/jay-stratton` | person / institutional-actor | Medium | Named in Fravor testimony as 2009 contact; AATIP / UAPTF relevance | Public record (Coulthart book; AARO HRR) |
 | `/people/luis-elizondo` | person / institutional-actor | Medium | Named in Fravor testimony; AATIP disclosure lead | Extensive public record (2023 House testimony + book) |
 | `/people/tom-delonge` | person / reporter (or private?) | Low | TTSA co-founder; named in Fravor testimony | Public record |

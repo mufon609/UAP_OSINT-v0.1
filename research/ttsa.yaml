@@ -502,6 +502,7 @@ rumors:
     The sole primary-source attestation of McCasland's advisory-team role is DeLonge's own 2016 email to Podesta. McCasland has not publicly confirmed or denied the claim, and no independent primary-source documentation of his TTSA involvement is archived in this repository. The Podesta email itself is primary-source-authentic (SPF/DMARC/DKIM validated in the raw source), but it documents DeLonge's claim about McCasland, not McCasland's own statements.
 timeline:
 - id: tl1
+  category: founding
   added_date: '2026-04-22'
   date: '2002-10-28'
   event: To The Stars, Inc. established (originally as Resting Bird, Inc.) — pre-existing entity later acquired by TTSA as its Entertainment Division subsidiary.
@@ -509,6 +510,7 @@ timeline:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 23
 - id: tl2
+  category: other
   added_date: '2026-04-22'
   date: '2015-01-01'
   event: Archive West Investments acquires the shares of To The Stars, Inc.; DeLonge begins as President of TTS.
@@ -516,6 +518,7 @@ timeline:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 23
 - id: tl3
+  category: other
   added_date: '2026-04-22'
   date: '2016-01-25'
   event: Tom DeLonge emails John Podesta about Gen. McCasland, attributing advisory-team assembly to the retired USAF Lt. General.
@@ -524,6 +527,7 @@ timeline:
     location: Email header Date field
   node_link: /documents/wikileaks-podesta-email-3099-2016
 - id: tl4
+  category: founding
   added_date: '2026-04-22'
   date: '2017-02'
   event: To The Stars Academy of Arts and Science Inc. incorporated in Delaware as a Public Benefit Corporation.
@@ -531,6 +535,7 @@ timeline:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 7
 - id: tl5
+  category: other
   added_date: '2026-04-22'
   date: '2017-04-27'
   event: Archive West Investments contributes 100% of the shares of To The Stars, Inc. to Gravity Holdings, LLC (DeLonge Family Trust single-member LLC).
@@ -538,6 +543,7 @@ timeline:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 28
 - id: tl6
+  category: other
   added_date: '2026-04-22'
   date: '2017-06-01'
   event: TTSA enters Contribution Agreement with Gravity Holdings for TTS shares in exchange for 55,000,000 shares of Class A Common Stock — consolidates TTS as wholly-owned subsidiary.
@@ -545,6 +551,7 @@ timeline:
     path: government/sec-ttsa-1a-partii-20170710.html
     location: p. 28
 - id: tl7
+  category: filing
   added_date: '2026-04-22'
   date: '2017-07-10'
   event: TTSA files preliminary SEC Form 1-A Part II (Regulation A+ offering circular) for up to 10,000,000 shares at $5.00/share ($50 million maximum).
@@ -553,6 +560,7 @@ timeline:
     location: p. 1
   node_link: /documents/sec-ttsa-1a-partii-2017
 - id: tl8
+  category: other
   added_date: '2026-04-22'
   date: '2017-10-11'
   event: TTSA public launch event; Regulation A+ offering opens to investors; principals introduced publicly.
@@ -561,6 +569,7 @@ timeline:
     location: TTSA homepage, launch-reference press release
   node_link: /events/ttsa-launch-2017-10-11
 - id: tl9
+  category: publication
   added_date: '2026-04-22'
   date: '2017-12-16'
   event: "New York Times publishes 'Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program' by Cooper/Blumenthal/Kean, framing TTSA as Elizondo's post-Pentagon venture."
@@ -569,6 +578,7 @@ timeline:
     location: Article publication date
   node_link: /documents/nyt-glowing-auras-pentagon-ufo-2017
 - id: tl10
+  category: other
   added_date: '2026-04-22'
   date: '2018-01-08'
   event: Earliest archived TTSA homepage snapshot; TTSA reports 2,548 investors / $2,337,382 raised via the Reg A+ offering.
@@ -576,6 +586,7 @@ timeline:
     path: news/tothestarsacademy-home-20180108.html
     location: Homepage investor-stats block
 - id: tl11
+  category: publication
   added_date: '2026-04-22'
   date: '2018-07-26'
   event: TTSA publishes 'An Introduction to The ADAM Research Project' blog post, announcing the Acquisition and Data Analysis of Materials program under Puthoff's leadership.
@@ -583,6 +594,7 @@ timeline:
     path: news/ttsa-blog-adam-research-project-intro-20180727.html
     location: Blog post date line
 - id: tl12
+  category: publication
   added_date: '2026-04-22'
   date: '2018-09-27'
   event: "TTSA publishes 'Material of Interest: Magnesium-Zinc-Bismuth' blog post reporting seven material samples collected over the preceding three months for ADAM study."
@@ -590,6 +602,7 @@ timeline:
     path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
     location: Blog post date line
 - id: tl13
+  category: contract
   added_date: '2026-04-22'
   date: '2019-10-01'
   event: "Cooperative Research and Development Agreement (CRADA) 19-15 'Novel & Emerging Technology Exploitation' becomes effective between TTSA and U.S. Army CCDC Ground Vehicle Systems Center."
@@ -598,6 +611,7 @@ timeline:
     location: Effective date on document
   node_link: /documents/army-ttsa-crada-19-15-nete-2019
 - id: tl14
+  category: contract
   added_date: '2026-04-22'
   date: '2019-10-17'
   event: TTSA publicly announces the CRADA with U.S. Army CCDC; press release attributes quotes to Dr. Joseph Cannon (Army Futures Command) and Steve Justice (TTSA COO and Aerospace Division Director).
@@ -605,6 +619,7 @@ timeline:
     path: news/tothestarsacademy-home-20200105.html
     location: News item date line
 - id: tl15
+  category: other
   added_date: '2026-04-22'
   date: '2022-07'
   event: AARO established by Deputy Secretary of Defense Hicks; in 2022 AARO contracts ORNL for independent materials testing on the TTSA-DEVCOM-CRADA specimen per AARO Supplement.
@@ -613,6 +628,7 @@ timeline:
     location: Supplement Overview section
   node_link: /organizations/aaro
 - id: tl16
+  category: other
   added_date: '2026-04-22'
   date: '2023-02'
   event: ORNL receives specimen access (parent sample plus three previously derived subsamples) from DEVCOM Ground Vehicle System Center per AARO/ORNL Synopsis.
@@ -620,6 +636,7 @@ timeline:
     path: government/aaro-ornl-synopsis-metallic-specimen-202404.pdf
     location: Synopsis methodology section
 - id: tl17
+  category: publication
   added_date: '2026-04-22'
   date: '2024-03-08'
   event: AARO publishes Historical Record Report Volume I; document addresses the TTSA-originated material among its case-resolution findings.
@@ -628,6 +645,7 @@ timeline:
     location: Document cover publication date
   node_link: /documents/aaro-historical-record-report-vol-i
 - id: tl18
+  category: publication
   added_date: '2026-04-22'
   date: '2024-04'
   event: AARO/ORNL Synopsis of Analysis of a Metallic Specimen published; ORNL assessment finds the specimen terrestrial in origin.
@@ -636,6 +654,7 @@ timeline:
     location: Document content date
   node_link: /documents/aaro-ornl-synopsis-metallic-specimen-2024
 - id: tl19
+  category: publication
   added_date: '2026-04-22'
   date: '2024-07'
   event: AARO publishes Supplement to Oak Ridge National Laboratory's Analysis of a Metallic Specimen; concurs with ORNL terrestrial-origin finding and contextualizes the specimen as mid-20th-century Mg alloy R&D material.
