@@ -404,6 +404,33 @@
   note: 'Wayback Machine capture (2002-11-28 16:29:45) of nidsci.org — National Institute for Discovery Science. Direct primary source for NIDS''s self-representation of scope: aerial-phenomena research, animal-mutilation research, ''expanding its horizons'' into Bigelow Aerospace-related projects. NIDS-era primary source that is otherwise difficult to obtain; NIDS ceased public operations in 2004.'
   archive_status: 3
   wayback_date: '2002-11-28'
+- url: https://web.archive.org/web/20171216172629/https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html
+  format: html
+  status: archived
+  path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+  archived_date: '2026-04-22'
+  sha256: c9a95b5dcba3a7cbdfd97099c6621738a0fae7bd0c6068781b62dbfb41260760
+  archive_status: 3
+  wayback_date: '2017-12-16'
+  note: 'Wayback Machine snapshot (2017-12-16) of ''Glowing Auras and Black Money: The Pentagon''s Mysterious U.F.O. Program'' by Helene Cooper, Ralph Blumenthal, and Leslie Kean. Foundational disclosure article establishing AATIP public record; discusses Luis Elizondo''s Pentagon role, Harold Puthoff''s program work, and To the Stars Academy of Arts and Science as the commercial venture Elizondo joined after leaving the Pentagon. Central to TTSA''s public significance.'
+- url: https://web.archive.org/web/20180108005242/https://tothestarsacademy.com/
+  format: html
+  status: archived
+  path: news/tothestarsacademy-home-20180108.html
+  archived_date: '2026-04-22'
+  sha256: b74e65862c60f6653bc5ac53ca99bcbd5ceb695689b9ce463c9d5ab7ab2c910f
+  archive_status: 3
+  wayback_date: '2018-01-08'
+  note: 'Wayback Machine snapshot (2018-01-08) of To The Stars Academy of Arts and Science homepage. Captures early-operational state: 2,548 investors / $2,337,382 raised via Reg A offering; minimum $200 / share price $5; sections include Overview, How We Work, Mission, Public Benefit, The Team, Investment Updates, Due Diligence, Offering Circular. Team roster includes DeLonge, Elizondo, Mellon, Puthoff, Semivan.'
+- url: https://web.archive.org/web/20200105215715/https://tothestarsacademy.com/
+  format: html
+  status: archived
+  path: news/tothestarsacademy-home-20200105.html
+  archived_date: '2026-04-22'
+  sha256: 274f6654175fb55eba9cf32cd7c9c8744c7a7816e256ed7758cd94708c6a79cd
+  archive_status: 3
+  wayback_date: '2020-01-05'
+  note: 'Wayback Machine snapshot (2020-01-05) of To The Stars Academy of Arts and Science homepage. Captures evolved state post-launch: minimum investment raised to $350 / share price still $5; site structure changed (The VAULT section, News to The Future); Puthoff no longer appears in key personnel; useful for dating personnel evolution and offering-terms changes.'
 - url: https://web.archive.org/web/20230602091111/https://www.safeaerospace.org/
   format: html
   status: archived
@@ -685,6 +712,14 @@
   sha256: a5b2d533b9db83bec62c35e91d2278a730b053b1c43799f5c7add06bb4c268ea
   archive_status: 3
   wayback_date: '2026-04-16'
+- url: https://www.sec.gov/Archives/edgar/data/1710274/000114420417036300/filename2.htm
+  format: html
+  status: archived
+  path: government/sec-ttsa-1a-partii-20170710.html
+  archived_date: '2026-04-22'
+  sha256: aeca7cfff1dbb2d8fe873b3261407cf0459c5707a4acfdbae52e48b655fb3b47
+  archive_status: 1
+  note: SEC Form 1-A Part II preliminary offering circular for To The Stars Academy of Arts and Science Inc. dated 2017-07-10. CIK 1710274, accession 000114420417036300. Establishes founding date (Feb 2017), principal investor Tom DeLonge, board members James Semivan and Harold Puthoff, headquarters at 1051 S. Coast Hwy 101 Suite B, Encinitas, CA.
 - url: https://www.theblackvault.com/documentarchive/pentagon-releases-details-about-dr-travis-taylors-uap-task-force-involvement/
   format: html
   status: archived
