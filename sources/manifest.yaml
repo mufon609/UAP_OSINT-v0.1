@@ -808,6 +808,14 @@
   sha256: 7bb84d45d4c40ded520cfed63cf532c2bd3c95ec59f6b25c67c3307cf927c92e
   archive_status: 1
   note: SEC Form 253(g)(2) Supplement to Offering Circular dated September 17, 2021, File No. 024-11243, for To The Stars Academy of Arts and Science Inc. (CIK 1710274). Primary-source confirmation of Regulation A+ offering termination — 'No further subscriptions will be accepted for the current offering after September 18, 2021.' Supersedes the September 18, 2020 offering circular. Fetched directly from SEC EDGAR with research User-Agent.
+- url: https://www.sec.gov/Archives/edgar/data/1710274/000149315222011769/partii.htm
+  format: html
+  status: archived
+  path: government/sec-ttsa-1k-partii-20220502.html
+  archived_date: '2026-04-22'
+  sha256: 1daa79752cb43c85cba4bf04e85209ed3f948e962fe104a3a8e01f3e37dd44ec
+  archive_status: 1
+  note: 'SEC Form 1-K Part II Annual Report for fiscal year ended December 31, 2021, filed 2022-05-02 (accession 0001493152-22-011769). Registrant: ''To The Stars Inc.'' (rebranded from ''To The Stars Academy of Arts and Science Inc.'' on November 30, 2021), CIK 1710274, IRS EIN 84-3854992 (the post-rename EIN). Primary-source documentation of: (a) November 30, 2021 corporate name amendment; (b) February 2021 strategic reorganization scaling back science/tech and pivoting to entertainment; (c) the ''now retired'' science and technology division (Space-Time Metric Engineering, Beamed Energy Propulsion, SCOUT, VAULT, A.D.A.M.); (d) December 24, 2020 Binding Term Sheet selling Love Movie LLC to DeLonge for $525k ($125k cash + $400k debt forgiveness); (e) June 1, 2021 BTS Amendment converting DeLonge debt to 784,970 shares at $1.20 held by Gravity Holdings; (f) April 1, 2021 Encinitas office/retail lease mutual termination; (g) four Reg A offerings history (First $50M, Second $30M, Third $30M paused 2020-12-18 and terminated Sept 2021, Fourth qualified 2022-03-31); (h) Elizondo as ''former company employee''; (i) Mellon as ''former chairman of the scientific advisory board''. Fills primary-source gap for 2020-12 through 2022-04 corporate history.'
 - url: https://www.sec.gov/Archives/edgar/data/1710274/000164117225005183/partii.htm
   format: html
   status: archived

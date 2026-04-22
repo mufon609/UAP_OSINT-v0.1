@@ -15,9 +15,9 @@ created: 2026-04-22
 |---|---|
 | Type | Corp |
 | Founded | 2017-02 |
-| Headquarters | 315 S. Coast Highway 101, Suite U38, Encinitas, CA 92024 |
+| Headquarters | 315 S. Coast Highway 101, Suite U38, Encinitas, CA 92024 (mail-only address; Encinitas office and retail lease mutually terminated April 1, 2021) |
 | Current Leadership | [`/people/tom-delonge`] |
-| Public Status | Delaware Public Benefit Corporation (CIK 1710274); registered 2017 as "To The Stars Academy of Arts and Science Inc.", renamed "To The Stars Inc." by 2024 (both trademarked). Regulation A+ offering (File No. 024-11243) terminated effective September 18, 2021. 2024 1-K received going concern qualification. |
+| Public Status | Delaware Public Benefit Corporation (CIK 1710274). Registered March 2017 as "To The Stars Academy of Arts and Science Inc."; amended to "To The Stars Inc." November 30, 2021 (both names trademarked; EIN changed from 82-0601064 to 84-3854992). Four sequential Regulation A offerings 2017-2022. 2024 1-K received going concern qualification. |
 
 ---
 
@@ -29,7 +29,7 @@ The company launched publicly on October 11, 2017. On December 16, 2017 — two 
 
 TTSA's Aerospace Division announced The ADAM Research Project (Acquisition and Data Analysis of Materials) in July 2018 under Puthoff's leadership. By late September 2018, TTSA publicly reported it had collected seven pieces of material, from multiple sources, to study for The ADAM Research Project; the most widely discussed specimen — a layered metallic sample primarily composed of magnesium, zinc, and bismuth — was the subject of a TTSA blog post dated September 27, 2018. On October 1, 2019 (with public announcement October 17), TTSA and the U.S. Army ([`/organizations/us-army`]) Combat Capabilities Development Command Ground Vehicle Systems Center ([`/organizations/ccdc-ground-vehicle-systems-center`]) executed Cooperative Research and Development Agreement 19-15 titled Novel and Emerging Technology Exploitation, committing approximately $750,000 in estimated U.S. Government resources to assess TTSA's materiel and technology innovations across metamaterials, quantum physics, quantum communications, and beamed energy propulsion. The CRADA named Elizondo as TTSA's Principal Investigator and Dr. Joseph Cannon ([`/people/joseph-cannon`]) and Ben Soave as the Army's. Subsequent to the TTSA–DEVCOM CRADA, the All-domain Anomaly Resolution Office ([`/organizations/aaro`]), founded in 2022, contracted Oak Ridge National Laboratory ([`/organizations/ornl`]) to independently assess and perform thorough characterization studies on the specimen; ORNL's April 2024 Synopsis and AARO's July 2024 Supplement concluded the material is terrestrial in origin and "consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century." An earlier aerospace research company run by Robert Bigelow ([`/organizations/bigelow-aerospace`]) was the Pentagon program's principal funding recipient per the 2017 Times article.
 
-By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway 101, Suite U38, Encinitas, CA 92024, maintaining both "To The Stars" and "To The Stars Academy of Arts and Science" as registered trademarks. The CRADA ended in 2024. In September 2024, the Company sent Dr. Hal Puthoff and Dr. Eric Davis ([`/people/eric-davis`]), its own scientists, to meet with the laboratory to discuss the results in more detail; a memorandum by Puthoff and Davis to the Board of Directors was published on the Company website in February 2025. The Puthoff/Davis analysis (and the ORNL analysis) did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either. The 2024 Form 1-K received a going concern qualification from independent auditors. Gravity Holdings LLC (whose sole member is the DeLonge Family Trust) holds 52.16% of Class A Common Stock outstanding. Current board (as of the April 17, 2025 1-K filing) includes Tom DeLonge, Jim Semivan, Stan Spry ([`/people/stan-spry`]), and J. Christopher Mizer ([`/people/j-christopher-mizer`]); current Advisory Board includes Dr. Adele Gilpin, Dr. Norman Kahn, Joe Schurman, Dr. Paul Rapp, Chris Herndon, and Dr. Harold E. Puthoff (moved from board to Advisory Board in 2024).
+On December 20, 2020 the Company's original science-and-aerospace principals — Elizondo, Mellon, and Justice — announced their departures; three days later, on December 24, 2020, TTSA executed a Binding Term Sheet selling Love Movie LLC to DeLonge for $525,000 and terminating the AvA Licensing Agreement. In February 2021 the Company announced a strategic reorganization "scaling back initiatives in science and tech commercialization" and pivoting to film and television; the science and technology division — Space-Time Metric Engineering, Beamed Energy Propulsion Launch Systems, SCOUT, VAULT, and the A.D.A.M. Research Project — was described as "now retired" in the FY2021 Form 1-K. The Encinitas office and retail lease was mutually terminated April 1, 2021. On June 1, 2021 a Binding Term Sheet Amendment converted $941,964 of DeLonge payments into 784,970 shares held by Gravity Holdings LLC. On September 18, 2021 the Company's Third Regulation A offering terminated (a Fourth qualified March 31, 2022 but raised no funds). On November 30, 2021 the Company amended its name from "To The Stars Academy Of Arts and Science Inc." to "To The Stars Inc." to better reflect its focus on entertainment; both names are maintained as registered trademarks. The subsequent 315 S. Coast Highway 101 Suite U38 Encinitas address is a mail-only address. These events — Elizondo's departure, the Binding Term Sheet ([`/organizations/love-movie-llc`]), the June 2021 share issuance to Gravity Holdings LLC ([`/organizations/gravity-holdings-llc`]), the retirement of the science and technology division, and the November 2021 name amendment — are documented in the TTSA FY2021 Form 1-K ([`/documents/sec-ttsa-1k-2021`]) filed May 2, 2022. The CRADA ended in 2024. In September 2024, the Company sent Dr. Hal Puthoff and Dr. Eric Davis ([`/people/eric-davis`]), its own scientists, to meet with the laboratory to discuss the results in more detail; a memorandum by Puthoff and Davis to the Board of Directors was published on the Company website in February 2025. The Puthoff/Davis analysis (and the ORNL analysis) did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either. The 2024 Form 1-K received a going concern qualification from independent auditors. Gravity Holdings LLC (whose sole member is the DeLonge Family Trust) holds 52.16% of Class A Common Stock outstanding. Current board (as of the April 17, 2025 1-K filing) includes Tom DeLonge, Jim Semivan, Stan Spry ([`/people/stan-spry`]), and J. Christopher Mizer ([`/people/j-christopher-mizer`]); current Advisory Board includes Dr. Adele Gilpin, Dr. Norman Kahn, Joe Schurman, Dr. Paul Rapp, Chris Herndon, and Dr. Harold E. Puthoff (moved from board to Advisory Board in 2024).
 
 ---
 
@@ -41,27 +41,27 @@ By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway
 
 | Name | Role | Period | Source |
 |---|---|---|---|
-| [`/people/hal-puthoff`] | Co-Founder and Vice President Science and Technology | 2017 – 2024 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/hal-puthoff`] | Co-Founder and Vice President Science and Technology | 2017 – 2022 | government/sec-ttsa-1a-partii-20170710.html |
 | [`/people/jim-semivan`] | Co-Founder and Vice President Operations | 2017 | government/sec-ttsa-1a-partii-20170710.html |
-| [`/people/steve-justice`] | Aerospace Division Director (later COO) | 2017 | news/tothestarsacademy-home-20180108.html |
+| [`/people/steve-justice`] | Aerospace Division Director (later COO) | 2017 – 2021 | news/tothestarsacademy-home-20180108.html |
 | [`/people/tom-delonge`] | Founder, President, and interim Chief Executive Officer | 2017-02 | government/sec-ttsa-1a-partii-20170710.html |
 
 #### Staff
 
 | Name | Role | Period | Source |
 |---|---|---|---|
-| [`/people/kari-delonge`] | Chief Marketing and Product Officer (TTS subsidiary) | 2011 – 2024 | government/sec-ttsa-1a-partii-20170710.html |
-| [`/people/luis-elizondo`] | Director of Global Security and Special Programs | 2017-10 | news/tothestarsacademy-home-20180108.html |
-| [`/people/kari-delonge`] | Chief Content Officer for the Company and President of To The Stars Media Inc. | 2024 | government/sec-ttsa-1k-partii-20250417.html |
+| [`/people/kari-delonge`] | Chief Marketing and Product Officer (TTS subsidiary) | 2011 – 2022 | government/sec-ttsa-1a-partii-20170710.html |
+| [`/people/luis-elizondo`] | Director of Global Security and Special Programs | 2017-10 – 2020 | news/tothestarsacademy-home-20180108.html |
+| [`/people/kari-delonge`] | Chief Content Officer for the Company and President of To The Stars Media Inc. | 2022 | government/sec-ttsa-1k-partii-20220502.html |
 
 #### Advisors
 
 | Name | Role | Period | Source |
 |---|---|---|---|
-| [`/people/christopher-mellon`] | National Security Affairs Advisor and Advisory Board member | 2017 | news/tothestarsacademy-home-20180108.html |
+| [`/people/christopher-mellon`] | National Security Affairs Advisor; former chairman of the scientific advisory board | 2017 – 2021 | news/tothestarsacademy-home-20180108.html |
 | [`/people/garry-nolan`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |
 | [`/people/colm-kelleher`] | Advisory Board member | 2017 | government/sec-ttsa-1a-partii-20170710.html |
-| [`/people/hal-puthoff`] | Advisory Board member (transitioned from Board of Directors) | 2024 | government/sec-ttsa-1k-partii-20250417.html |
+| [`/people/hal-puthoff`] | Advisory Board member (transitioned from Board of Directors) | 2022 | government/sec-ttsa-1k-partii-20220502.html |
 
 ---
 
@@ -478,6 +478,102 @@ By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway
 
 ---
 
+### Primary-source corporate-action date of the name amendment — November 30, 2021 — and the company's own stated reason ("to better reflect the Company's focus on entertainment"). Replaces the imprecise "by 2024" framing used in prior versions of this artifact.
+
+> On November 30, 2021, the Company amended its name from "To The Stars Academy Of Arts and Science Inc.," to "To The Stars Inc." in order to better reflect the Company's focus on entertainment.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2021, Item 1 and Note 1 to Financial Statements |
+
+---
+
+### Primary-source corporate-filing statement of the February 2021 strategic reorganization — TTSA's explicit scaling-back of science-and-tech commercialization and pivot to film/TV production. Documents the pivot as predating the November 30, 2021 rename by nine months.
+
+> In February 2021, the Company announced a strategic reorganization that will allow it to build on the momentum of the businesses where we are seeing the highest success to accelerate growth in our entertainment initiatives. To achieve our goals, we have refocused our operations by scaling back initiatives in science and tech commercialization and are placing a greater emphasis on developing and producing content in film and TV.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2021, Item 1 Business strategic reorganization passage |
+
+---
+
+### TTSA's own corporate-filing statement that its science and technology division — including the flagship programs Space-Time Metric Engineering, Beamed Energy Propulsion Launch Systems, SCOUT, VAULT, and the A.D.A.M. Research Project — was retired. Primary-source refutation of ongoing-aerospace-research framing.
+
+> In 2020, after COVID-19 was declared a national emergency, we saw a significant standstill in the science and technology initiatives that were part of our now retired science and technology division. This includes Space-Time Metric Engineering, Beamed Energy Propulsion Launch Systems, SCOUT, VAULT and A.D.A.M., due to the U.S. Government shifting focus and priorities as well as laboratories being closed down.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2021, Operations overview |
+
+---
+
+### Primary-source corporate-filing confirmation that by the April 2022 1-K filing date, Luis Elizondo was "former company employee" (no longer with TTSA) and Chris Mellon was "former chairman of the scientific advisory board" (both status changes from 2020-2021 period).
+
+> The series featured an interview with former military intelligence official and former company employee, Luis Elizondo, who ran the program and former chairman of the scientific advisory board and Deputy Assistant Secretary of Defense for Intelligence, Chris Mellon.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2021, Item 1 Business, discussion of Unidentified series |
+
+---
+
+### Primary-source confirmation that TTSA's physical office/retail location in Encinitas was terminated April 1, 2021. The "315 S. Coast Highway 101, Suite U38" address that appears on subsequent filings is therefore a mail-only address, not a staffed office.
+
+> On April 1, 2021, the Company mutually terminated its lease to its Encinitas office and retail location with the landlord.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2021, Item 1 Business, operations passage |
+
+---
+
+### Primary-source transaction terms of the December 24, 2020 Binding Term Sheet — TTSA sells Love Movie LLC to DeLonge for $525,000 total consideration ($125k cash + $400k debt forgiveness) three days after the December 20, 2020 Elizondo/Mellon/Justice departure announcement. Marks the start of TTSA's ownership consolidation into DeLonge/Gravity Holdings.
+
+> The Company entered into the Binding Term Sheet, dated December 24, 2020, under which the Company sold Love Movie LLC and its intellectual property to Thomas DeLonge, for total consideration of $525,000 comprising $125,000 and forgiveness of debt amounting to $400,000 of unpaid Minimum Royalty Guarantees under the AvA Licensing Agreement (dated April 26, 2017, and amended in a side letter dated August 29, 2020).
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2021, Related Party Transactions — Binding Term Sheet |
+
+---
+
+### Primary-source terms of the June 1, 2021 Amendment to the Binding Term Sheet — DeLonge's $941,964 capital contribution converted to 784,970 shares at $1.20/share, held by Gravity Holdings LLC. Consolidates the mechanism by which Gravity Holdings achieved its subsequent 52.16% ownership stake reported in the 2024 1-K.
+
+> On June 1, 2021, the Company entered into an Amendment to the Binding Term Sheet with Mr. DeLonge, whereby, the Company agreed to terminate the previous services agreement with Mr. DeLonge and ceased to provide any services to Mr. DeLonge. Along with the termination of the services, Mr. DeLonge agreed to provide a capital contribution to the Company in exchange for common stock of the Company. The Company and Mr. DeLonge agreed that the total capital contribution was $941,964 for payments made on behalf of the Company through June 30, 2021. In exchange for the capital contribution the Company will issue Mr. DeLonge 784,970 shares of its common stock at a price per share of $1.20 to be held by Gravity Holdings, LLC.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2021, Related Party Transactions — BTS Amendment |
+
+---
+
+### Primary-source sequencing of TTSA's Reg A offerings — Third Offering paused 2020-12-18, terminated September 2021; Fourth Offering qualified 2022-03-31 but inactive as of April 2022 filing. Establishes that TTSA conducted four sequential Reg A offerings over 2017-2022, not a single campaign.
+
+> The Third Offering was paused on December 18, 2020 while the Company took time to review operations. The offering terminated in September 2021. The Company qualified for a fourth Regulation A offering on March 31, 2022 and has yet to raise funds as of the date of this filing.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2021, Regulation A Offerings history |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -496,7 +592,14 @@ By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway
 | 2018-09-27 | TTSA publishes 'Material of Interest: Magnesium-Zinc-Bismuth' blog post reporting seven material samples collected over the preceding three months for ADAM study. | publication | news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html |  |
 | 2019-10-01 | Cooperative Research and Development Agreement (CRADA) 19-15 'Novel & Emerging Technology Exploitation' becomes effective between TTSA and U.S. Army CCDC Ground Vehicle Systems Center. | contract | government/army-ttsa-crada-19-15-nete-20191001.pdf | [`/documents/army-ttsa-crada-19-15-nete-2019`] |
 | 2019-10-17 | TTSA publicly announces the CRADA with U.S. Army CCDC; press release attributes quotes to Dr. Joseph Cannon (Army Futures Command) and Steve Justice (TTSA COO and Aerospace Division Director). | contract | news/tothestarsacademy-home-20200105.html |  |
-| 2021-09-17 | TTSA files SEC Form 253(g)(2) Supplement (File No. 024-11243) terminating its Regulation A+ offering effective September 18, 2021. No further subscriptions accepted after that date. | filing | government/sec-ttsa-253g2-reg-a-termination-20210917.html | [`/documents/sec-ttsa-253g2-reg-a-termination-2021`] |
+| 2020-12-18 | TTSA pauses the Third Regulation A Offering while the Company takes time to review operations; eventual termination follows in September 2021. | other | government/sec-ttsa-1k-partii-20220502.html |  |
+| 2020-12-24 | Binding Term Sheet executed between TTSA and Tom DeLonge — Company sells Love Movie LLC to DeLonge for $525,000 ($125k cash + $400k debt forgiveness of AvA Licensing Agreement Minimum Royalty Guarantees); terminates AvA Licensing Agreement; begins DeLonge ownership-consolidation trajectory. | other | government/sec-ttsa-1k-partii-20220502.html |  |
+| 2021-02 | TTSA announces strategic reorganization scaling back science-and-tech commercialization and pivoting to film-and-TV content production. Science and technology division eventually described as "now retired" in FY2021 Form 1-K. | other | government/sec-ttsa-1k-partii-20220502.html |  |
+| 2021-04-01 | TTSA and landlord mutually terminate the Encinitas office and retail location lease. All subsequent official addresses on filings are mail-only. | other | government/sec-ttsa-1k-partii-20220502.html |  |
+| 2021-06-01 | Amendment to the Binding Term Sheet between TTSA and DeLonge — terminates prior services agreement; DeLonge contributes $941,964 of prior payments as capital and receives 784,970 shares of common stock at $1.20/share held by Gravity Holdings LLC. Consolidates ownership concentration. | other | government/sec-ttsa-1k-partii-20220502.html |  |
+| 2021-09-17 | TTSA files SEC Form 253(g)(2) Supplement (File No. 024-11243) terminating the Third Regulation A offering effective September 18, 2021. No further subscriptions accepted after that date. | filing | government/sec-ttsa-253g2-reg-a-termination-20210917.html | [`/documents/sec-ttsa-253g2-reg-a-termination-2021`] |
+| 2021-11-30 | Company amends its name from 'To The Stars Academy Of Arts and Science Inc.' to 'To The Stars Inc.' to better reflect the Company's focus on entertainment. Both names maintained as trademarks going forward. | filing | government/sec-ttsa-1k-partii-20220502.html |  |
+| 2022-03-31 | TTSA qualifies for a fourth Regulation A offering; per the FY2021 Form 1-K filed April 30 2022, no funds raised under this Fourth Offering as of the filing date. | filing | government/sec-ttsa-1k-partii-20220502.html |  |
 | 2022-07 | AARO established by Deputy Secretary of Defense Hicks; in 2022 AARO contracts ORNL for independent materials testing on the TTSA-DEVCOM-CRADA specimen per AARO Supplement. | other | government/aaro-supplement-to-ornl-analysis-202407.pdf | [`/organizations/aaro`] |
 | 2023-02 | ORNL receives specimen access (parent sample plus three previously derived subsamples) from DEVCOM Ground Vehicle System Center per AARO/ORNL Synopsis. | other | government/aaro-ornl-synopsis-metallic-specimen-202404.pdf |  |
 | 2024 | CRADA 19-15 ended in 2024 per the TTSA Form 1-K. | other | government/sec-ttsa-1k-partii-20250417.html |  |
@@ -531,7 +634,7 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 
 **Circulates in:** DeLonge's 2016-01-25 email to Podesta referencing Roswell and Wright-Patterson AFB (primary-source claim made by DeLonge himself, not independently verified); Public discourse around the ADAM Research Project specimen (widely reported in UAP-focused media 2018-2024); Public discourse around the TTSA-DEVCOM CRADA material
 
-**Primary-source refutation:** AARO HRR Volume I (March 2024) and the AARO/ORNL Synopsis (April 2024) and AARO Supplement (July 2024) together refute the extraterrestrial-origin claim for the specific magnesium-zinc-bismuth specimen that TTSA transferred through the DEVCOM CRADA to AARO. ORNL's characterization found the material is 'terrestrial in origin' and 'does not meet the theoretical requirements to function as a terahertz waveguide'. AARO's Supplement concludes the specimen 'is consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century'. The 1947-crash provenance claim is not primary-source-supported by any document archived in this repository. TTSA's own counter-analysis — the Puthoff/Davis memorandum submitted to the TTSA Board on September 27, 2024 and published February 28, 2025 — concurs that the analysis 'did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin' while qualifying that it 'did not absolutely rule it out either.' TTSA's published corporate position therefore does not endorse the 1947-extraterrestrial claim.
+**Primary-source refutation:** AARO HRR Volume I (March 2024) and the AARO/ORNL Synopsis (April 2024) and AARO Supplement (July 2024) together refute the extraterrestrial-origin claim for the specific magnesium-zinc-bismuth specimen that TTSA transferred through the DEVCOM CRADA to AARO. ORNL's characterization found the material is 'terrestrial in origin' and 'does not meet the theoretical requirements to function as a terahertz waveguide'. AARO's Supplement concludes the specimen 'is consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century'. The 1947-crash provenance claim is not primary-source-supported by any document archived in this repository. TTSA's own counter-analysis — the Puthoff/Davis memorandum submitted to the TTSA Board on September 27, 2024 and published February 28, 2025 — concurs that the analysis 'did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin' while qualifying that it 'did not absolutely rule it out either.' TTSA's published corporate position therefore does not endorse the 1947-extraterrestrial claim. The FY2021 Form 1-K (April 2022) additionally describes TTSA's science and technology division — including A.D.A.M. — as 'now retired', documenting the company's own disclosure that the material-analysis research framework ended with the February 2021 strategic reorganization.
 
 ---
 
@@ -568,7 +671,9 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 - [`/organizations/ccdc-ground-vehicle-systems-center`]
 - [`/organizations/cia`]
 - [`/organizations/earthtech-international`]
+- [`/organizations/gravity-holdings-llc`]
 - [`/organizations/lockheed-martin-skunk-works`]
+- [`/organizations/love-movie-llc`]
 - [`/organizations/ornl`]
 - [`/organizations/osd`]
 - [`/organizations/to-the-stars-inc`]
@@ -587,6 +692,7 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 - [`/documents/army-ttsa-crada-19-15-nete-2019`]
 - [`/documents/nyt-glowing-auras-pentagon-ufo-2017`]
 - [`/documents/sec-ttsa-1a-partii-2017`]
+- [`/documents/sec-ttsa-1k-2021`]
 - [`/documents/sec-ttsa-1k-2024`]
 - [`/documents/sec-ttsa-253g2-reg-a-termination-2021`]
 - [`/documents/ttsa-puthoff-davis-ornl-analysis-memo-2025`]
