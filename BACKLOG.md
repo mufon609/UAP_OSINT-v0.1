@@ -352,3 +352,73 @@ Surfaced: Grusch Vouching Chain (2026-04-22) — 2 Nell attestations
 and 1 Burchett "Dadgummit" quote all truncated mid-sentence; user
 flagged on review.
 
+---
+
+### 16. Cross-artifact quote ownership — duplication vs. person-node bulk
+
+Person-node Statements sections currently carry every statement the
+subject has made across all venues (Grusch: 164 quotes / 1770 lines).
+Verbatim source passages are ALSO stored on transcript / document
+artifacts, creating data-layer duplication.
+
+Empirical state (2026-04-22): **70 verbatim source passages are
+currently duplicated across 2–3 research artifacts each** (same bytes
+in different YAML files). Not theoretical — the duplication grows
+per node built.
+
+This is the E.3 question the roadmap defers: *"multiple artifacts with
+overlapping evidentiary claims. Can't build propagation tooling
+without a propagation case. Likely after ~10 nodes through the full
+pipeline."* The propagation case is now present at 16 artifacts.
+
+**Three paths:**
+
+1. **Polish on duplication** — ship items #13 (attestation tiers) and
+   #14 (Q&A pair schema); 70 dupes persist but Statements rendering
+   becomes scannable via tier labels + paired Q&A blocks.
+2. **Pull E.3 forward** — each verbatim passage lives in exactly ONE
+   artifact (the source-owning one: transcript for oral, document for
+   text-native); person / event artifacts carry `quote_refs: [qid@artifact]`
+   pointers; renderer resolves refs at build time. Claim Inventory
+   filter requires cross-artifact query (reverse index built at
+   validation time, or per-quote `speaker_path` + scan). Person nodes
+   collapse as a consequence.
+3. **Hybrid** — E.3 first; re-evaluate #13 / #14 on the reformed
+   model. Tier labels and Q&A pairs likely still useful; duplication
+   no longer drives their urgency.
+
+**F.7 dependency:** a finding node citing a quote needs a stable
+reference. On the current duplicated model, `q66@david-grusch` and
+`q53@2023-07-26-house-grusch` can point to the same source passage —
+the finding has to pick one arbitrarily. Finding-node design
+(roadmap F.7, next up) probably forces this question regardless of
+node-bulk considerations.
+
+**Claim Inventory constraint:** `schema.yaml` defines Claim Inventory
+as *"a render-time projection of quotes tagged `category: filed-claim`.
+A filter, not a separate data structure — the filed claim IS the
+quote."* Under path 2, if Grusch's filed-claim quotes live on the
+transcript artifact, the whistleblower Claim Inventory filter has to
+cross artifacts. Same for the Direct Observations / Other Statements
+split on eyewitnesses. Either the resolver walks all artifacts where
+`speaker_path == /people/{slug}`, or a reverse index is built at
+validation time.
+
+**Lighter alternative** (if E.3 scope is too big to pull forward):
+add a navigation affordance — TOC jump-links at the top of nodes
+≥500 lines, or collapsible per-venue Statements subsections in the
+renderer. Doesn't touch the data model; addresses the scannability
+symptom for investigators who want only Timeline / Relationships /
+Connections. Estimated ~2-hour job; strictly cosmetic.
+
+**Relationship to items 13 / 14:** under path 2, both pause pending
+the reformed data model. Under path 1, both ship as planned. The
+three items form a single design decision point, not independent
+fixes.
+
+Surfaced: Grusch post-rebuild architectural discussion (2026-04-22) —
+164-quote node at 1770 lines prompted user question about offloading
+quotes to hearing-event / transcript nodes so that investigators
+looking for just a subject's Timeline or Relationships aren't scrolling
+past a full testimony register.
+
