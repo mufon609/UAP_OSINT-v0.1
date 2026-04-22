@@ -511,6 +511,15 @@
   archive_status: 3
   wayback_date: '2024-09-25'
   note: 'Wayback Machine snapshot (2024-09-25) of AARO Historical Record Report Volume I, DOPSR-cleared 508-compliant version, released 2024-03-08. Official DoD/AARO report on the historical U.S. Government record of UAP. Directly confirms: (a) AARO acquired a sample ''from a private UAP investigating organization and the U.S. Army''; (b) the U.S. Army had conducted in-house analysis on the sample prior to AARO custody; (c) material composition is magnesium, zinc, and bismuth with trace lead; (d) AARO''s verdict: ''manufactured, terrestrial alloy'' with ''no exceptional qualities'', possibly of USAF origin; (e) testing done by AARO and ''a leading science laboratory'' (lab not named). Establishes the chain: TTSA (ADAM, 2018-2019) → U.S. Army CCDC CRADA (2019-10-17) → AARO custody + testing (post-July 2022).'
+- url: https://web.archive.org/web/20250228103426/https://tothestars.media/blogs/press-and-news/tts-analysis-on-ornl
+  format: html
+  status: archived
+  path: news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html
+  archived_date: '2026-04-22'
+  sha256: 61849e14c04ad1263ecfc80004ca9da29872c45562b125fbb3a8c458d787d42f
+  archive_status: 3
+  wayback_date: '2025-02-28'
+  note: 'Wayback Machine snapshot (2025-02-28) of TTSA''s ''TTS* Analysis on ORNL Report'' press-and-news blog post. Primary-source publication of the Puthoff/Davis internal memo submitted to TTSA''s Board of Directors on 2024-09-27 as a counter-analysis to ORNL''s April 2024 terrestrial-origin finding. Key verbatim: ''Puthoff/Davis analysis (and the ORNL analysis) did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either.'' Balances the AARO/ORNL terminal refutation with TTSA''s own on-record scientific counter-position.'
 - url: https://web.archive.org/web/20260220223643/https://www.safeaerospace.org/
   format: html
   status: archived
@@ -791,6 +800,14 @@
   sha256: aeca7cfff1dbb2d8fe873b3261407cf0459c5707a4acfdbae52e48b655fb3b47
   archive_status: 1
   note: SEC Form 1-A Part II preliminary offering circular for To The Stars Academy of Arts and Science Inc. dated 2017-07-10. CIK 1710274, accession 000114420417036300. Establishes founding date (Feb 2017), principal investor Tom DeLonge, board members James Semivan and Harold Puthoff, headquarters at 1051 S. Coast Hwy 101 Suite B, Encinitas, CA.
+- url: https://www.sec.gov/Archives/edgar/data/1710274/000164117225005183/partii.htm
+  format: html
+  status: archived
+  path: government/sec-ttsa-1k-partii-20250417.html
+  archived_date: '2026-04-22'
+  sha256: ad47c0b096491933d3bc0e60472b848dc1ceb9bb9214d1b6be127fc78eb6a111
+  archive_status: 1
+  note: 'SEC Form 1-K Part II Annual Report for fiscal year ended December 31, 2024, filed 2025-04-17. Registrant: TO THE STARS INC. (Delaware; EIN 84-3854992; CIK 1710274). Primary-source confirmation of: (a) 2022 rebrand from ''To The Stars Academy of Arts and Science Inc.'' to ''To The Stars Inc.'' (both names now registered trademarks); (b) current HQ 315 S. Coast Highway 101 Suite U38 Encinitas CA 92024; (c) going-concern audit finding; (d) Gravity Holdings LLC holds 52.16% of Class A Common Stock; (e) current board (DeLonge, Semivan, Stan Spry, J. Christopher Mizer); (f) current Advisory Board (Gilpin, Kahn, Schurman, Rapp, Herndon, Puthoff); (g) 2024-09-27 Puthoff/Davis memo submitted to Board as ORNL counter-analysis; (h) 2024 CRADA end; (i) TTSA→USACCDC→ORNL material-testing chain. Fetched directly from SEC EDGAR using research-identifying User-Agent.'
 - url: https://www.theblackvault.com/documentarchive/pentagon-releases-details-about-dr-travis-taylors-uap-task-force-involvement/
   format: html
   status: archived

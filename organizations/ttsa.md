@@ -15,9 +15,9 @@ created: 2026-04-22
 |---|---|
 | Type | Corp |
 | Founded | 2017-02 |
-| Headquarters | 1051 S. Coast Hwy 101 Suite B, Encinitas, CA 92024 |
+| Headquarters | 315 S. Coast Highway 101, Suite U38, Encinitas, CA 92024 |
 | Current Leadership | [`/people/tom-delonge`] |
-| Public Status | Delaware Public Benefit Corporation; Regulation A+ offering qualified by the U.S. Securities and Exchange Commission (CIK 1710274, July 2017) |
+| Public Status | Delaware Public Benefit Corporation; CIK 1710274. Registered 2017 as "To The Stars Academy of Arts and Science Inc."; renamed "To The Stars Inc." by 2024 with both names maintained as trademarks. Regulation A+ offering (July 2017) terminated September 2021. 2024 1-K received going concern qualification. |
 
 ---
 
@@ -25,9 +25,11 @@ created: 2026-04-22
 
 To The Stars Academy of Arts and Science Inc. ([`/organizations/ttsa`]) is a Public Benefit Corporation founded in 2017 by Tom DeLonge ([`/people/tom-delonge`]), Dr. Harold E. Puthoff ([`/people/hal-puthoff`]), and Jim Semivan ([`/people/jim-semivan`]), at 1051 S. Coast Hwy 101 Suite B, Encinitas, California ([`/locations/encinitas-california`]). The company launched a Regulation A offering qualified by the United States Securities and Exchange Commission on July 10, 2017, offering up to 10,000,000 shares of Class A Common Stock at $5.00 per share with a $50,000,000 maximum raise. TTSA acquired To The Stars, Inc. ([`/organizations/to-the-stars-inc`]), an existing business that now comprises the company's Entertainment Division, as a wholly-owned subsidiary during formation, and organized operations into three divisions — Entertainment, Aerospace, and Science.
 
-The company launched publicly in October 2017 alongside a New York Times article about the Pentagon's Advanced Aerospace Threat Identification Program ([`/organizations/aatip`]) by Helene Cooper ([`/people/helene-cooper`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Leslie Kean ([`/people/leslie-kean`]). Former Pentagon military intelligence official Luis Elizondo ([`/people/luis-elizondo`]) left his Pentagon post to join the company, describing his prior role as running "a sensitive aerospace threat identification program focusing on unidentified aerial technologies"; he served as Director of Global Security and Special Programs. Steve Justice ([`/people/steve-justice`]), a former Program Director for Advanced Systems at Lockheed Martin's Skunk Works ([`/organizations/lockheed-martin-skunk-works`]), directed the Aerospace Division; Chris Mellon ([`/people/christopher-mellon`]), a former Deputy Assistant Secretary of Defense for Intelligence, served as National Security Affairs Advisor. Jim Semivan is a retired Central Intelligence Agency ([`/organizations/cia`]) Senior Intelligence Service officer. The company's Advisory Board disclosed in the 2017 SEC filing included Chris Mellon, Adele Gilpin, Dr. Norman Kahn, Dr. Colm Kelleher ([`/people/colm-kelleher`]), Dr. Garry Nolan ([`/people/garry-nolan`]), and Dr. Paul Rapp. The company's 2016 correspondence via Tom DeLonge to John Podesta ([`/people/john-podesta`]) referenced retired USAF Lt. Gen. William N. McCasland ([`/people/william-mccasland`]) as having helped assemble the advisory team, with DeLonge describing McCasland as the former commander of the Air Force Research Laboratory at Wright-Patterson Air Force Base ([`/organizations/wright-patterson-afb`]).
+The company launched publicly on October 11, 2017. On December 16, 2017 — two months after the TTSA launch — the New York Times published an article about the Pentagon's Advanced Aerospace Threat Identification Program ([`/organizations/aatip`]) by Helene Cooper ([`/people/helene-cooper`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Leslie Kean ([`/people/leslie-kean`]). Former Pentagon military intelligence official Luis Elizondo ([`/people/luis-elizondo`]) left his Pentagon post to join the company, describing his prior role as running "a sensitive aerospace threat identification program focusing on unidentified aerial technologies"; he served as Director of Global Security and Special Programs. Steve Justice ([`/people/steve-justice`]), a former Program Director for Advanced Systems at Lockheed Martin's Skunk Works ([`/organizations/lockheed-martin-skunk-works`]), directed the Aerospace Division; Chris Mellon ([`/people/christopher-mellon`]), a former Deputy Assistant Secretary of Defense for Intelligence, served as National Security Affairs Advisor. Jim Semivan is a retired Central Intelligence Agency ([`/organizations/cia`]) Senior Intelligence Service officer. The company's Advisory Board disclosed in the 2017 SEC filing included Chris Mellon, Adele Gilpin, Dr. Norman Kahn, Dr. Colm Kelleher ([`/people/colm-kelleher`]), Dr. Garry Nolan ([`/people/garry-nolan`]), and Dr. Paul Rapp. In 2016, an email from Tom DeLonge to John Podesta ([`/people/john-podesta`]) referenced retired USAF Lt. General William N. McCasland ([`/people/william-mccasland`]) as having helped assemble the advisory team, with DeLonge describing McCasland as the former commander of the Air Force Research Laboratory at Wright-Patterson Air Force Base ([`/organizations/wright-patterson-afb`]).
 
 TTSA's Aerospace Division announced The ADAM Research Project (Acquisition and Data Analysis of Materials) in July 2018 under Puthoff's leadership. By late September 2018, TTSA publicly reported it had collected seven pieces of material, from multiple sources, to study for The ADAM Research Project; the most widely discussed specimen — a layered metallic sample primarily composed of magnesium, zinc, and bismuth — was the subject of a TTSA blog post dated September 27, 2018. On October 1, 2019 (with public announcement October 17), TTSA and the U.S. Army ([`/organizations/us-army`]) Combat Capabilities Development Command Ground Vehicle Systems Center ([`/organizations/ccdc-ground-vehicle-systems-center`]) executed Cooperative Research and Development Agreement 19-15 titled Novel and Emerging Technology Exploitation, committing approximately $750,000 in estimated U.S. Government resources to assess TTSA's materiel and technology innovations across metamaterials, quantum physics, quantum communications, and beamed energy propulsion. The CRADA named Elizondo as TTSA's Principal Investigator and Dr. Joseph Cannon ([`/people/joseph-cannon`]) and Ben Soave as the Army's. Subsequent to the TTSA–DEVCOM CRADA, the All-domain Anomaly Resolution Office ([`/organizations/aaro`]), founded in 2022, contracted Oak Ridge National Laboratory ([`/organizations/ornl`]) to independently assess and perform thorough characterization studies on the specimen; ORNL's April 2024 Synopsis and AARO's July 2024 Supplement concluded the material is terrestrial in origin and "consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century." An earlier aerospace research company run by Robert Bigelow ([`/organizations/bigelow-aerospace`]) was the Pentagon program's principal funding recipient per the 2017 Times article.
+
+By 2024 the company had rebranded as "To The Stars Inc." at 315 S. Coast Highway 101, Suite U38, Encinitas, CA 92024, maintaining both "To The Stars" and "To The Stars Academy of Arts and Science" as registered trademarks. The CRADA ended in 2024. In September 2024, the Company sent Dr. Hal Puthoff and Dr. Eric Davis ([`/people/eric-davis`]), its own scientists, to meet with the laboratory to discuss the results in more detail; a memorandum by Puthoff and Davis to the Board of Directors was published on the Company website in February 2025. The Puthoff/Davis analysis (and the ORNL analysis) did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either. The 2024 Form 1-K received a going concern qualification from independent auditors. Gravity Holdings LLC (whose sole member is the DeLonge Family Trust) holds 52.16% of Class A Common Stock outstanding. Current board (as of the April 17, 2025 1-K filing) includes Tom DeLonge, Jim Semivan, Stan Spry ([`/people/stan-spry`]), and J. Christopher Mizer ([`/people/j-christopher-mizer`]); current Advisory Board includes Dr. Adele Gilpin, Dr. Norman Kahn, Joe Schurman, Dr. Paul Rapp, Chris Herndon, and Dr. Harold E. Puthoff (moved from board to Advisory Board in 2024).
 
 ---
 
@@ -304,6 +306,140 @@ TTSA's Aerospace Division announced The ADAM Research Project (Acquisition and D
 
 ---
 
+### Primary-source dollar-value of U.S. Government contribution to the TTSA–Army CRADA — ~$750,000 in anticipated personnel, IP, facilities, equipment, and reporting. Preserves OCR artifact "provided." with period instead of comma.
+
+> The total value of anticipated USG resources, including personnel, services provided. Intellectual Property, facilities, equipment, and reporting through the course of this effort is estimated at $750k.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/army-ttsa-crada-19-15-nete-20191001.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | CRADA 19-15, Article D.1 (Government Activity), item 7 |
+
+---
+
+### Primary-source designation of Ben Soave as U.S. Government-side Principal Investigator on the TTSA CRADA, affiliated with Ground Vehicle Survivability and Protection at CCDC Ground Vehicle Systems Center.
+
+> PRINCIPAL INVESTIGATOR:
+>      Ben Soave
+>      Ground Vehicle Survivability and Protection (GVSP)
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/army-ttsa-crada-19-15-nete-20191001.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | CRADA 19-15, CRADA Administrators (Government) section |
+
+---
+
+### Primary-source corporate-filing confirmation of co-founder Jim Semivan's pre-TTSA career — 25 years in CIA Directorate of Operations as an operations officer, member of Senior Intelligence Service.
+
+> Mr. Semivan retired from the Central Intelligence Agency's Directorate of Operations after 25 years working as an operations officer both overseas and domestically. He was a member of the CIA's Senior Intelligence Service.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-A, Directors section, Jim Semivan bio |
+
+---
+
+### TTSA's own 1-K characterization of the CRADA scope (2019–2022 trajectory, pandemic delay, USACCDC's continued testing of the "anomalous materials") and the corporate-self-framing of the Materials as "anomalous."
+
+> In 2019, we entered into a Cooperative Research and Development Agreement ("CRADA") with the U.S. Army's Combat Capabilities Development Command ("USACCDC") to advance developments in material science, space-time metric engineering, quantum physics, beamed energy propulsion and active camouflage. After the pandemic halted research for most of 2020 and 2021, in 2022, the USACCDC continued to focus on testing the anomalous materials that we provided to them (the "Materials") in order to determine the possible uses in a military or civilian environment.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2024, CRADA subsection |
+
+---
+
+### TTSA's own 1-K corroboration of the TTSA → USACCDC CRADA → AARO oversight → ORNL Materials analysis chain — primary-source confirmation of the material-custody sequence from the TTSA side.
+
+> In 2022, The All-domain Anomaly Resolution Office (AARO), an office within the United States Office of the Secretary of Defense, was congressionally mandated to explore historical records of Unidentified Anomalous Phenomena ("UAP") incidents and publicly report its findings. As part of their oversight and through the CRADA, Oak Ridge National Laboratory (ORNL) was tasked with conducting the Materials analysis to assess whether the specimen is of terrestrial origin and the bismuth in the specimen could act as a terahertz waveguide.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2024, AARO / ORNL subsection |
+
+---
+
+### TTSA's on-record corporate-filing account of the Puthoff/Davis September 2024 visit to ORNL and the February 2025 publication of the counter-memorandum to the TTSA board — establishes TTSA's formal not-satisfied posture toward ORNL's terrestrial-origin finding.
+
+> In April 2024, ORNL produced a summary of findings that concluded the Materials to be terrestrial in origin and that it does not meet the theoretical requirements to function as a terahertz (THz) waveguide. The Company was pleased that the ORNL and AARO completed their analysis and while the report offers suggestions as to the possible provenance of the Mg-Bi material, it did not offer a firm conclusion as to the origin and purpose of the Materials along with other seeming anomalies.  Consequently, the Company had more questions, and in September 2024, we sent Dr. Hal Puthoff and Dr. Eric Davis, our own scientists, to meet with the laboratory to discuss the results in more detail. In February 2025, the Company published a memorandum by Dr. Hal Puthoff and Dr. Eric Davis to our board of directors on its website about their findings.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2024, AARO / ORNL subsection |
+
+---
+
+### TTSA's on-record corporate-filing summary of the Puthoff/Davis analysis result. Documents the company's official position — neither confirming exotic origin nor conceding fully to ORNL's terrestrial verdict.
+
+> In the end, both the report and memorandum did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2024, AARO / ORNL subsection |
+
+---
+
+### Primary-source confirmation that CRADA 19-15 ended in 2024, and TTSA's post-CRADA stated mission continuity.
+
+> The CRADA ended in 2024 and the Company is committed to continually seeking to have research and analysis conducted on all Material received by it in an effort to determine the differences between what is ordinary and what is extraordinary.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2024, AARO / ORNL subsection |
+
+---
+
+### Primary-source documentation of the dual naming — both the original "To The Stars Academy of Arts and Science" (TTSA) and the current "To The Stars" (the 2022-rebrand form) are maintained as registered trademarks. Resolves the question of whether the rebrand deprecated the Academy name.
+
+> 'To The Stars' and 'To The Stars Academy of Arts and Science' are registered trademarks of the Company.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | SEC 1-K FY2024, Intellectual Property section |
+
+---
+
+### TTSA's on-record blog-post acknowledgment that the Puthoff/Davis internal memo was submitted to the Board on September 27, 2024, with initial publication delayed pending input from another scientific contributor (never received).
+
+> Dr. Hal Puthoff and Dr. Eric Davis's analysis was completed and submitted to the Board of Directors on the 27th of September with a recommendation that we hold off publishing their report until a specified additional scientific contributor weighs in.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | TTSA 'TTS* Analysis on ORNL Report' blog post, 2025-02-28 |
+
+---
+
+### TTSA's primary publication of the Puthoff/Davis counter-analysis conclusion — TTSA's scientists confirm the ORNL finding of no proof of exotic origin, while framing the finding as "did not absolutely rule it out." The on-record TTSA counter-position to AARO/ORNL's terrestrial-only conclusion.
+
+> What is important about the Puthoff/Davis report, however, is that they were able to clarify aspects of the ORNL report that were not clear while also confirming that the material, natural as it may be, is still a bit of an unknown quantity.  In the end though, the Puthoff/Davis analysis (and the ORNL analysis) did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either.
+
+| Field | Value |
+|---|---|
+| Source | [archived source](../sources/news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | TTSA 'TTS* Analysis on ORNL Report' blog post, 2025-02-28, body |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -324,9 +460,13 @@ TTSA's Aerospace Division announced The ADAM Research Project (Acquisition and D
 | 2019-10-17 | TTSA publicly announces the CRADA with U.S. Army CCDC; press release attributes quotes to Dr. Joseph Cannon (Army Futures Command) and Steve Justice (TTSA COO and Aerospace Division Director). | contract | news/tothestarsacademy-home-20200105.html |  |
 | 2022-07 | AARO established by Deputy Secretary of Defense Hicks; in 2022 AARO contracts ORNL for independent materials testing on the TTSA-DEVCOM-CRADA specimen per AARO Supplement. | other | government/aaro-supplement-to-ornl-analysis-202407.pdf | [`/organizations/aaro`] |
 | 2023-02 | ORNL receives specimen access (parent sample plus three previously derived subsamples) from DEVCOM Ground Vehicle System Center per AARO/ORNL Synopsis. | other | government/aaro-ornl-synopsis-metallic-specimen-202404.pdf |  |
+| 2024 | CRADA 19-15 ended in 2024 per the TTSA Form 1-K. | other | government/sec-ttsa-1k-partii-20250417.html |  |
 | 2024-03-08 | AARO publishes Historical Record Report Volume I; document addresses the TTSA-originated material among its case-resolution findings. | publication | government/aaro-hrr-volume-1-20240308.pdf | [`/documents/aaro-historical-record-report-vol-i`] |
 | 2024-04 | AARO/ORNL Synopsis of Analysis of a Metallic Specimen published; ORNL assessment finds the specimen terrestrial in origin. | publication | government/aaro-ornl-synopsis-metallic-specimen-202404.pdf | [`/documents/aaro-ornl-synopsis-metallic-specimen-2024`] |
 | 2024-07 | AARO publishes Supplement to Oak Ridge National Laboratory's Analysis of a Metallic Specimen; concurs with ORNL terrestrial-origin finding and contextualizes the specimen as mid-20th-century Mg alloy R&D material. | publication | government/aaro-supplement-to-ornl-analysis-202407.pdf | [`/documents/aaro-supplement-to-ornl-analysis-2024`] |
+| 2024-09-27 | Puthoff/Davis analysis completed and submitted to the TTSA Board of Directors as a counter-memorandum to ORNL's April 2024 terrestrial-origin finding. | other | news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html | [`/documents/ttsa-puthoff-davis-ornl-analysis-memo-2025`] |
+| 2025-02-28 | TTSA publishes the Puthoff/Davis memorandum on its tothestars.media website; TTSA's on-record scientific counter-position to ORNL — analysis did not reveal proof of exotic origin but did not absolutely rule it out. | publication | news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html | [`/documents/ttsa-puthoff-davis-ornl-analysis-memo-2025`] |
+| 2025-04-17 | To The Stars Inc. files SEC Form 1-K Annual Report for fiscal year ended December 31, 2024; registrant rebranded from 'To The Stars Academy of Arts and Science Inc.'; auditors issue going concern qualification; HQ now 315 S. Coast Highway 101, Suite U38, Encinitas CA. | filing | government/sec-ttsa-1k-partii-20250417.html | [`/documents/sec-ttsa-1k-2024`] |
 
 ---
 
@@ -340,7 +480,7 @@ TTSA's Aerospace Division announced The ADAM Research Project (Acquisition and D
 | [`/organizations/ccdc-ground-vehicle-systems-center`] | contracting-agency | government/army-ttsa-crada-19-15-nete-20191001.pdf |
 | [`/organizations/osd`] | partner | government/army-ttsa-crada-19-15-nete-20191001.pdf |
 | [`/organizations/aaro`] | other | government/aaro-hrr-volume-1-20240308.pdf |
-| [`/organizations/earthtech-international`] | partner | government/sec-ttsa-1a-partii-20170710.html |
+| [`/organizations/earthtech-international`] | other | government/sec-ttsa-1a-partii-20170710.html |
 
 ---
 
@@ -352,7 +492,7 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 
 **Circulates in:** DeLonge's 2016-01-25 email to Podesta referencing Roswell and Wright-Patterson AFB (primary-source claim made by DeLonge himself, not independently verified); Public discourse around the ADAM Research Project specimen (widely reported in UAP-focused media 2018-2024); Public discourse around the TTSA-DEVCOM CRADA material
 
-**Primary-source refutation:** AARO HRR Volume I (March 2024) and the AARO/ORNL Synopsis (April 2024) and AARO Supplement (July 2024) together refute the extraterrestrial-origin claim for the specific magnesium-zinc-bismuth specimen that TTSA transferred through the DEVCOM CRADA to AARO. ORNL's characterization found the material is 'terrestrial in origin' and 'does not meet the theoretical requirements to function as a terahertz waveguide'. AARO's Supplement concludes the specimen 'is consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century'. The 1947-crash provenance claim is not primary-source-supported by any document archived in this repository.
+**Primary-source refutation:** AARO HRR Volume I (March 2024) and the AARO/ORNL Synopsis (April 2024) and AARO Supplement (July 2024) together refute the extraterrestrial-origin claim for the specific magnesium-zinc-bismuth specimen that TTSA transferred through the DEVCOM CRADA to AARO. ORNL's characterization found the material is 'terrestrial in origin' and 'does not meet the theoretical requirements to function as a terahertz waveguide'. AARO's Supplement concludes the specimen 'is consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century'. The 1947-crash provenance claim is not primary-source-supported by any document archived in this repository. TTSA's own counter-analysis — the Puthoff/Davis memorandum submitted to the TTSA Board on September 27, 2024 and published February 28, 2025 — concurs that the analysis 'did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin' while qualifying that it 'did not absolutely rule it out either.' TTSA's published corporate position therefore does not endorse the 1947-extraterrestrial claim.
 
 ---
 
@@ -364,9 +504,11 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 
 - [`/people/christopher-mellon`]
 - [`/people/colm-kelleher`]
+- [`/people/eric-davis`]
 - [`/people/garry-nolan`]
 - [`/people/hal-puthoff`]
 - [`/people/helene-cooper`]
+- [`/people/j-christopher-mizer`]
 - [`/people/jim-semivan`]
 - [`/people/john-podesta`]
 - [`/people/joseph-cannon`]
@@ -374,6 +516,7 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 - [`/people/leslie-kean`]
 - [`/people/luis-elizondo`]
 - [`/people/ralph-blumenthal`]
+- [`/people/stan-spry`]
 - [`/people/steve-justice`]
 - [`/people/tom-delonge`]
 - [`/people/william-mccasland`]
@@ -405,6 +548,8 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 - [`/documents/army-ttsa-crada-19-15-nete-2019`]
 - [`/documents/nyt-glowing-auras-pentagon-ufo-2017`]
 - [`/documents/sec-ttsa-1a-partii-2017`]
+- [`/documents/sec-ttsa-1k-2024`]
+- [`/documents/ttsa-puthoff-davis-ornl-analysis-memo-2025`]
 - [`/documents/wikileaks-podesta-email-3099-2016`]
 
 ### Locations
