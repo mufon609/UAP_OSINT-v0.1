@@ -70,6 +70,14 @@
   note: 'Uintah County Real Property Owner Information report (Year 2026), owner ADAMANTIUM REAL ESTATE LLC. Serial 150050004 / Account 126864. Address 3400 S 5500 E, Independence. Land Use: VACANT LAND. Acres: 40.00. Legal (SE 1/4 NE 1/4, Sec 5, T3S, R1E, USM). Tax Dist 16. Retrieved 2026-04-20 from apps.uintah.utah.gov ORDS portal via ''ADAMANTIUM'' owner search. Mailing address on all 7 Adamantium parcels: 6440 S Millrock Dr Ste 500, Salt Lake City, UT 84121.'
   archive_status: 1
   wayback_skip: true
+- url: https://chancellor.syr.edu/university-leadership-2/chancellors-executive-team/alex-dietrich/
+  format: html
+  status: archived
+  path: news/syracuse-chancellor-dietrich-bio.html
+  archived_date: '2026-04-21'
+  sha256: 7b474bf52e804c2636ece41ab3b84ce0558720832c3aa27c6c3d1c76fca8be63
+  archive_status: 1
+  note: Syracuse University Chancellor's Office bio page for Alex Dietrich, Interim Chief Human Resources Officer. Institutional primary source attesting her current professional role and prior career summary as of 2026.
 - url: https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=116282
   format: html
   status: archived
@@ -121,6 +129,14 @@
   note: 'UAP Security Classification Guide, ID #04-030, Naval Intelligence Activity, dated April 16, 2020 — 4 months before the public UAPTF establishment announcement. Released via FOIA case DON-NAVY-2022-000883 (Black Vault). Proves UAPTF was operational pre-public-announcement. 13 pages, 2MB.'
   archive_status: 3
   wayback_date: '2025-08-04'
+- url: https://enigmalabs.io/blog/a-fighter-pilots-perspective-alex-dietrich-to-join
+  format: html
+  status: archived
+  path: news/enigmalabs-dietrich-advisor-announcement.html
+  archived_date: '2026-04-21'
+  sha256: 27e98af81469860cf046e52697481258883e7f637ef2140befa67b5a9d983376
+  archive_status: 1
+  note: Enigma Labs blog post (2022-11-14) announcing Alex Dietrich as advisor. Attests her squadron assignment (VFA-41 'Black Aces' out of NAS Lemoore, 2001-2007), commissioning year (May 2001), service framing, and post-Navy advisor role at Enigma Labs.
 - url: https://fox40.com/news/mystery-wire/robert-bigelow-opens-up-about-aawsap-the-tic-tac-incident-weird-events-on-skinwalker-ranch-the-connection-to-consciousness/
   format: html
   status: archived
@@ -130,6 +146,14 @@
   note: Fox40/Mystery Wire article + video, 2021-01-25 (archived via Wayback 2024-12-08 snapshot). George Knapp interview with Robert Bigelow discussing BAASS/AAWSAP, Tic Tac incident, and 'weird events on Skinwalker Ranch'. File on disk is the Wayback snapshot capture. Filename date (20210528) reflects file naming convention, not article date.
   archive_status: 3
   wayback_date: '2024-12-08'
+- url: https://goodstory.io/wp-content/uploads/2021/06/WIM-55-PDF.pdf
+  format: pdf
+  status: archived
+  path: transcripts/when-it-mattered-55-dietrich-2021.pdf
+  archived_date: '2026-04-21'
+  sha256: 42aa5e6a94110ac67aae234776ea2097fdcc01484b8b00c1c921c222cfa7722b
+  archive_status: 1
+  note: Polished/manual PDF transcript of 'When It Mattered Ep. 55 — Great-granddaughter of a SciFi pioneer spots a UFO' (Chitra Ragavan, 2021-06-16). 11 pages. Published as a finished transcript by goodstory.io; companion to the YouTube auto-captions above.
 - url: https://media.defense.gov/2022/Jul/20/2003039074/-1/-1/1/ESTABLISHMENT-OF-THE-ALL-DOMAIN-ANOMALY-RESOLUTION-OFFICE.PDF
   format: pdf
   status: archived
@@ -203,6 +227,14 @@
   note: Americans for Safe Aerospace home page. Lists Jay Stratton in the Advisors section — direct on-record attestation by an organization of which Stratton is a listed advisor. Strongest non-.gov public-record attribution for Stratton's UAPTF role.
   archive_status: 3
   wayback_date: '2026-02-20'
+- url: https://thedebrief.org/opinion-the-power-of-cooperation-can-help-us-solve-the-mystery-of-unidentified-aerial-phenomena/
+  format: html
+  status: archived
+  path: news/debrief-dietrich-cooperation-uap-opinion.html
+  archived_date: '2026-04-21'
+  sha256: f383faca18ad9fef948f9eb3ca6b7e51c4a909d6e272d128c97f67600b95c84a
+  archive_status: 1
+  note: 'Self-authored opinion piece by Lt. Cmdr. Alex Dietrich (Ret.) published in The Debrief: ''The Power of Cooperation Can Help Us Solve the Mystery of Unidentified Aerial Phenomena.'' Highest-authority primary source for Dietrich''s own framing of UAP issues — her own first-person prose.'
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
@@ -212,6 +244,24 @@
   note: 'Wayback Machine capture (2002-11-28 16:29:45) of nidsci.org — National Institute for Discovery Science. Direct primary source for NIDS''s self-representation of scope: aerial-phenomena research, animal-mutilation research, ''expanding its horizons'' into Bigelow Aerospace-related projects. NIDS-era primary source that is otherwise difficult to obtain; NIDS ceased public operations in 2004.'
   archive_status: 3
   wayback_date: '2002-11-28'
+- url: https://web.archive.org/web/20230602091111/https://www.safeaerospace.org/
+  format: html
+  status: archived
+  path: government/safeaerospace-home-20230602.html
+  archived_date: '2026-04-21'
+  sha256: 9918424dda6a3b7efada3790c85c64011c469a7cca2081737de252f420e66254
+  archive_status: 3
+  wayback_date: '2023-06-02'
+  note: 'Wayback Machine snapshot (2023-06-02) of the Americans for Safe Aerospace home page — earliest known capture showing Alex Dietrich on the personnel grid. Original section heading was ''Aircrew Leadership Council'' (later renamed ''Advisors''). Original cohort: Dietrich, Fravor, Sam Fletcher, Lewis Harding, Mark Hulsey, Chris Van Voorhis. Coincides with ASA''s official launch (May→June 2023).'
+- url: https://web.archive.org/web/20260220223643/https://www.safeaerospace.org/
+  format: html
+  status: archived
+  path: government/safeaerospace-home-20260220.html
+  archived_date: '2026-04-21'
+  sha256: f26d3d99ba4367f3840668d7edb7603aa443d0b40418b3824580fe442627af95
+  archive_status: 3
+  wayback_date: '2026-02-20'
+  note: Wayback Machine snapshot (2026-02-20) of the Americans for Safe Aerospace home page. Earlier capture of the personnel/advisor card listing that includes Alex Dietrich; companion to the live snapshot at news/safeaerospace-home-20260420.html. Useful for dating the earliest archived appearance of Dietrich's affiliation.
 - url: https://www.aaro.mil/Portals/136/PDFs/Phillips_Timothy_Bio-DEC%202023-(Acting_Director_Ver)_508.pdf
   format: pdf
   status: archived
@@ -220,6 +270,46 @@
   sha256: 82f3a6c4013bb5cba23f9e614c69aa44a635594dadff1aeb08b2961c491d0392
   archive_status: 3
   wayback_date: '2025-11-18'
+- url: https://www.cbs.com/shows/video/kruYVj3_d8m6dkg95BRKzen50j8H29Mv/
+  format: html
+  status: archived
+  path: social/cbs-60min-video-page.html
+  archived_date: '2026-04-21'
+  sha256: 8a29a2d00f2c9ab16b293fda1fef6658a923f90c4140e8ff2c49d885cefee8ce
+  archive_status: 1
+  note: CBS.com video landing page for the 60 Minutes 'UFOs regularly spotted in restricted U.S. airspace' segment (May 16, 2021). The on-air broadcast that aired nationally on CBS — Dietrich's first on-camera public statements about the November 2004 USS Nimitz Tic Tac encounter were delivered through this nationwide televised segment, not solely through the companion CBSNews.com written articles.
+- url: https://www.cbsnews.com/news/navy-ufo-sighting-60-minutes-2021-05-16/
+  format: html
+  status: archived
+  path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
+  archived_date: '2026-04-21'
+  sha256: 618a3c9e1f4946c4b8a6200fc1d7b39fcb302753a6a0772b8ae129826f58aaca
+  archive_status: 1
+  note: 'CBS News companion article to the May 16, 2021 60 Minutes broadcast. Headline: ''Navy pilot recounts UFO sighting that left him "pretty weirded out."'' Includes Lt. Cmdr. Alex Dietrich''s first-public-statement quotes and Cmdr. Dave Fravor commentary.'
+- url: https://www.cbsnews.com/news/navy-ufo-sighting-60-minutes-2021-08-29/
+  format: html
+  status: archived
+  path: news/cbsnews-ufo-sighting-60min-2021-08-29.html
+  archived_date: '2026-04-21'
+  sha256: 66b41c446881cc4317d463bb1e1df3014c63d20c74e7b416598d1add7359083e
+  archive_status: 1
+  note: CBS News follow-up article to the May 16, 2021 60 Minutes Dietrich/Fravor broadcast, republished on the August 29, 2021 60 Minutes rebroadcast. Same Dietrich/Fravor source material in past tense ('had never before spoken publicly').
+- url: https://www.cbsnews.com/news/ufo-military-intelligence-60-minutes-2021-05-16/
+  format: html
+  status: archived
+  path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+  archived_date: '2026-04-21'
+  sha256: adc3826d40ad176a4ca99fba2a5738a48ca210f469c069b8ca2b9478fa430d66
+  archive_status: 1
+  note: 60 Minutes broadcast transcript (May 16, 2021), 'UFOs regularly spotted in restricted U.S. airspace.' Bill Whitaker reports. Includes on-camera interview with Lt. Cmdr. Alex Dietrich (her first public statements about the November 2004 USS Nimitz Tic Tac encounter) and Cmdr. David Fravor; also covers Ryan Graves on 2014-15 East Coast encounters.
+- url: https://www.colorado.edu/emp/people/alex-dietrich
+  format: html
+  status: archived
+  path: news/cu-boulder-emp-dietrich-bio.html
+  archived_date: '2026-04-21'
+  sha256: 5c279524c80a486860a24c661f51e5c8f1235865fbce24f89db037daf7c59a6d
+  archive_status: 1
+  note: University of Colorado Boulder Engineering Management Program (Lockheed Martin) bio page for Alex Dietrich, Scholar in Residence. Institutional primary source attesting her education (BS Civil Engineering GWU, MBA GWU School of Business 2014, Defense Language Institute), high school (Illinois Math & Science Academy class of 1997), and post-Navy academic appointments.
 - url: https://www.congress.gov/117/meeting/house/114761/documents/HHRG-117-IG05-Transcript-20220517.pdf
   format: pdf
   status: archived
@@ -364,3 +454,51 @@
   note: Vice article 'This Is the Real Estate Magnate Who Bought Skinwalker Ranch, a UFO Hotspot', published March 10, 2020. First public identification of Brandon Fugal (Utah-based real estate mogul and tech investor, cofounder/owner of a firm later rolled into Colliers International) as the current owner of Skinwalker Ranch. Attests Bigelow-to-Fugal sale in 2016, Fugal's pre-existing connection to Bigelow's DIA-project scientists dating to 2010, and Fugal's ownership being kept quiet until this 2020 public identification. Does NOT mention Adamantium Real Estate by name (that shell-company identification appears in other secondary sources — see research_gap tracking). Load-bearing Fugal-era primary source.
   archive_status: 3
   wayback_date: '2025-09-29'
+- url: https://www.youtube.com/watch?v=9DUmMdSQXHk
+  format: transcript
+  status: archived
+  path: transcripts/calling-all-beings-104-dietrich-2024-downloaded.md
+  archived_date: '2026-04-21'
+  sha256: f76d6b33ee44627d5f87f6a5323287b79f055c4ca3847e1d819b03bf10f90478
+  archive_status: 1
+  note: 'YouTube auto-captions for Calling All Beings #104 with Alex Dietrich (~1:11:38). Published 2024-01-05. Discusses UAP activism, Sol Foundation conference attendance, Inquiry into the Anomalous Experience Conference.'
+- url: https://www.youtube.com/watch?v=Nc9_ZP36-AI
+  format: transcript
+  status: archived
+  path: transcripts/merged-podcast-014-dietrich-2023-downloaded.md
+  archived_date: '2026-04-21'
+  sha256: 30b68663ad202f5f2859fbaca2f8709a7611d39ee76644d9a9e1b1c64c3e60d9
+  archive_status: 1
+  note: YouTube auto-captions for Merged Podcast EP0114 'Pilots & Witnesses; Systematic UAP Reporting' (~1:00:57). Published 2023-08-31. Framed around pilot reporting mechanisms — likely useful for Dietrich's institutional engagement history.
+- url: https://www.youtube.com/watch?v=SIbHsv1I8Ko
+  format: transcript
+  status: archived
+  path: transcripts/linda-hall-uap-scientific-context-2025-downloaded.md
+  archived_date: '2026-04-21'
+  sha256: 3d793d42e69dac82517f5588654c2888436a4c2af9e261ebe0a870106a81c27d
+  archive_status: 1
+  note: YouTube auto-captions for Linda Hall Library panel 'UAP in a Scientific Context' (~1:18:22). Recorded 2025-02-20, uploaded 2025-04-23. Moderator Nadia Drake; panelists Alex Dietrich, Greg Eghigian (PSU), Joshua Semeter (BU).
+- url: https://www.youtube.com/watch?v=ku9CYCKw4Aw
+  format: transcript
+  status: archived
+  path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
+  archived_date: '2026-04-21'
+  sha256: a7de7a2820534f692f95e1a10c4efb8f519f09a63572389e8b7ad8363b79a002
+  archive_status: 1
+  note: 'YouTube auto-captions for American Veterans Center ''UFOs and The Military: A Combat Pilot''s Experience'' interview with Tom Gibbs (~26:18). Recorded 2024-11-09, published 2025-03-18. Biographical: VFA-41, two combat deployments (OIF + OEF), Bronze Star, Air Combat Medal, ~1,250 hours, ~375 carrier traps.'
+- url: https://www.youtube.com/watch?v=ribyo1XCtRo
+  format: transcript
+  status: archived
+  path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  archived_date: '2026-04-21'
+  sha256: e8208c1ec58cab4545842973e5d9bff455bec9e7d940b3baa67d6d7610f464bd
+  archive_status: 1
+  note: YouTube auto-captions for 'Somewhere in the Skies — Chasing the Tic Tac UFO with Alex Dietrich' (host Ryan Sprague, ~1:16:48). Longest single Dietrich interview surveyed; published 2024-11-26 (YouTube replay).
+- url: https://www.youtube.com/watch?v=u6Z8OCKhxic
+  format: transcript
+  status: archived
+  path: transcripts/when-it-mattered-55-dietrich-2021-downloaded.md
+  archived_date: '2026-04-21'
+  sha256: e69de76e8a36c0dc233c039887a769241247a1339da6b2ef5b933ab1f47ae669
+  archive_status: 1
+  note: YouTube auto-captions for 'When It Mattered Ep. 55 — Great-granddaughter of a SciFi pioneer spots a UFO' with Chitra Ragavan (~37:10). Audio originally published 2021-06-16; YouTube re-upload 2022-02-24. Dietrich's first dedicated long-form interview post-60 Minutes; heavy biographical content.
