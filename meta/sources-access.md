@@ -150,6 +150,102 @@ archived as HTML.
 
 ---
 
+## DoD FOIA reading room (esd.whs.mil)
+
+**Problem:** Akamai edge-blocks automated retrieval of FOIA PDFs at
+`esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/` — 403 to curl
+with any user-agent.
+
+**What works:**
+
+- **The Black Vault mirror** — John Greenewald's archive at
+  `documents2.theblackvault.com/documents/osd/{case}.pdf` mirrors most
+  DoD FOIA releases. Path pattern is `/osd/{case-number}.pdf` (not
+  `/dod/`). Confirmed working for cases `23-F-0946` (Grusch DOPSR
+  materials) and `24-F-0266` (AARO invitations to Grusch).
+- Note `23-F-0946` appears in the canonical path as
+  `23-F-0946-0958-1317-David_Grusch_DOPSR_Request_09-15-23.pdf` on
+  esd.whs.mil but as simply `23-F-0946.pdf` on The Black Vault mirror.
+
+---
+
+## The Hill (thehill.com)
+
+**Problem:** Returns 403 for all direct automated requests; Cloudflare.
+
+**What works:**
+
+- **Wayback Machine** — articles are reliably archived. Prefer older
+  snapshots (2023-era) over newer (2024+) — newer snapshots sometimes
+  honor robots.txt exclusions at replay time:
+  ```
+  curl -sSL -A "Mozilla/5.0" "https://web.archive.org/web/2023id_/{original_url}"
+  ```
+
+---
+
+## NewsNation (newsnationnow.com)
+
+**Problem:** Returns 403 for all direct automated requests; Cloudflare.
+
+**What works:**
+
+- **Wayback Machine, 2023-era snapshot** — most Grusch/Coulthart-era
+  articles are archived with `statuscode:200` from June-August 2023.
+  Use `/web/2023id_/` prefix for raw HTML (strips Wayback chrome).
+
+**Gotcha:** Some articles (confirmed case: the "david-grusch-patriot-lue-elizondo"
+URL) have only a single Wayback snapshot that was captured as HTTP 403
+at origin. No retrievable form exists; register in the manifest as
+`pending` or skip.
+
+---
+
+## house.gov subdomains
+
+**Problem:** Mixed — some member subdomains 403 direct curl, others
+respond normally. Not predictable from the subdomain name alone.
+
+**What works:**
+
+- **Try direct curl with desktop UA first.** Confirmed working in 2026-04
+  for `burchett.house.gov`, `burlison.house.gov`, `carson.house.gov`,
+  `gaetz.house.gov`. Some return 403; fall through to Wayback.
+- **Wayback Machine fallback** — press releases are widely archived.
+
+---
+
+## Wayback Machine fetch — auto-decompress gzip
+
+**Gotcha:** `web.archive.org` responses are gzip-encoded when the client
+sets `Accept-Encoding: gzip`. `curl -sSL` WITHOUT `--compressed` saves
+the gzipped bytes to disk. On-disk gzipped HTML is unreadable to
+`validate.py`'s prose-drift check and token-tests produce cascading
+false errors.
+
+**What works:**
+
+- **Always add `--compressed` to curl** when fetching from
+  `web.archive.org`:
+  ```
+  curl -sSL --compressed -A "Mozilla/5.0" -o sources/news/foo.html \
+       "https://web.archive.org/web/2023id_/{original_url}"
+  ```
+- **If already saved gzipped**, decompress in place:
+  ```
+  for f in $(find sources -name '*.html' -newer <flag>); do
+    if file "$f" | grep -q gzip; then
+      gunzip -c "$f" > "$f.tmp" && mv "$f.tmp" "$f"
+    fi
+  done
+  ```
+  Then update SHA256 in manifest via `manifest.py` (or hand-edit).
+
+Surfaced: Grusch rebuild (2026-04-22) — 5 Wayback-fetched HTMLs arrived
+gzipped; decompressed post-hoc with checksum update.
+
+---
+
 ## Adding new entries
 
 When a new site blocks access, document it here with:

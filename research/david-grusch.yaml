@@ -25,6 +25,32 @@ primary_sources:
     creation_date: Mon Jul 17 17:41:23 2023 EDT
     mod_date: Tue Jul 25 13:18:13 2023 EDT
     pages: 4
+- path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
+  format: pdf
+- path: government/blackvault-grusch-dopsr-23-F-0946.pdf
+  format: pdf
+- path: government/burchett-house-gov-post-hearing-statement-20230726.html
+  format: html
+- path: government/burlison-house-gov-grusch-advisor-20250327.html
+  format: html
+- path: government/congress-gov-house-hearing-transcript-20230726.pdf
+  format: pdf
+- path: government/grusch-ppd-19-procedural-filing.pdf
+  format: pdf
+- path: news/newsnation-burchett-sickening-grusch-202308.html
+  format: html
+- path: news/newsnation-rubio-not-the-only-one-202306.html
+  format: html
+- path: news/thedebrief-grusch-2023.html
+  format: html
+- path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+  format: transcript
+- path: transcripts/grusch-sol-2023-closing-downloaded.md
+  format: transcript
+- path: transcripts/jre-2065-grusch-2023-downloaded.md
+  format: transcript
+- path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+  format: transcript
 document_intrinsic:
   full_name: David Charles Grusch
   aliases:
@@ -33,13 +59,29 @@ document_intrinsic:
   profession: Senior intelligence and strategic engagement advisor; former USAF intelligence officer (Major) and NGA Senior Geospatial Intelligence Officer; Whistleblower
 context_extrinsic:
   display_title: David Grusch
-background: 'David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] (USAF) at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. USAF Active Duty: Officer in Charge, Space Control Intelligence Cell, 21st Operations Group, Peterson AFB (June 2009 – September 2011); Intelligence Flight Commander, 3d Space Experimentation Squadron, Schriever AFB (September 2011 – December 2013); Chief, Intelligence Integration Division, Space Security and Defense Program (SSDP), Reston, VA (December 2013 – March 2016). April 2016 – November 2021: Senior Intelligence Officer, [`/organizations/nro`] (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet); Corporate Security Officer (CSO) / [`/organizations/dod`]-Contracted Science and Engineering Technical Advisor (SETA) at Blue Sky Innovators Inc. November 2021 – April 2023: Senior GEOINT Capabilities Requirements Officer, NGA, Colorado Springs, CO. May 2023-Present: Chief Operating Officer (COO), The Sol Foundation. Education: Bachelor of Science Degree, Physics, Minor in German, University of Pittsburgh (2009); Master of Arts Degree with Honors, Intelligence Studies, American Military University (2012); Master of Public Administration (MPA) Degree, University of Colorado (In-Progress, 2023). Security Clearance: Active TOP SECRET//SCI with CI & LS Polygraph.
+background: 'David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] (USAF) at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. USAF Active Duty: Officer in Charge, Space Control Intelligence Cell, 21st Operations Group, Peterson AFB (June 2009 – September 2011); Intelligence Flight Commander, 3d Space Experimentation Squadron, Schriever AFB (September 2011 – December 2013); Chief, Intelligence Integration Division, Space Security and Defense Program (SSDP), Reston, VA (December 2013 – March 2016). April 2016 – November 2021: Senior Intelligence Officer, [`/organizations/nro`] (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet); Corporate Security Officer (CSO) / [`/organizations/dod`]-Contracted Science and Engineering Technical Advisor (SETA) at Blue Sky Innovators Inc. November 2021 – April 2023: Senior GEOINT Capabilities Requirements Officer, NGA, Colorado Springs, CO. May 2023-Present: Chief Operating
+  Officer (COO), The Sol Foundation. Education: Bachelor of Science Degree, Physics, Minor in German, University of Pittsburgh (2009); Master of Arts Degree with Honors, Intelligence Studies, American Military University (2012); Master of Public Administration (MPA) Degree, University of Colorado (In-Progress, 2023). Security Clearance: Active TOP SECRET//SCI with CI & LS Polygraph.
 
   '
-uap_relevance: 'Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis (2021-2023), and a member of the [`/organizations/uaptf`] from 2019-2021 in his [`/organizations/nro`] reservist capacity, reporting to UAPTF and eventually the [`/organizations/aaro`]. In 2019 the UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) the task force needed to satisfy its congressionally mandated mission. He was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`], and he has suffered retaliation for that decision. At [`/events/2023-07-26-house-uap-hearing`], Grusch''s testimony ([`/documents/written-testimony-grusch-2023`]) is based on information he has been given by individuals with a longstanding track record of legitimacy and service to this country.
+uap_relevance: 'Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis (2021-2023), and a member of the [`/organizations/uaptf`] from 2019-2021 in his [`/organizations/nro`] reservist capacity, reporting to UAPTF and eventually the [`/organizations/aaro`]. In 2019 the UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) the task force needed to satisfy its congressionally mandated mission. He was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`], and he has suffered retaliation for that decision. At [`/events/2023-07-26-house-uap-hearing`], Grusch''s testimony ([`/documents/written-testimony-grusch-2023`]) is based on information he has been given
+  by individuals with a longstanding track record of legitimacy and service to this country.
 
   '
-credibility_notes: 'Grusch: "as I stand here under oath now, I am speaking to the facts as I have been told them." His testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country – many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the "multi-decade UAP crash retrieval and reverse engineering program" are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`] and has "suffered retaliation" for his decision. [`/documents/grusch-bio-2023`] — SECURITY CLEARANCE: Active TOP SECRET//SCI with CI & LS Polygraph.
+credibility_notes: 'Grusch testified under oath that he is "speaking to the facts as I have been told them," that his testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country — many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and that he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the multi-decade UAP crash retrieval and reverse engineering program — including that private defense contractors, named Lockheed Martin ([`/organizations/lockheed-martin`]) in oral testimony, hold physical material — are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a whistleblower through the PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the Intelligence Community Inspector General ([`/organizations/icig`]);
+  the formal procedural filing is archived as [`/documents/grusch-ppd-19-procedural-filing`]. The ICIG determined the complaint was "credible and urgent" per subsequent congressional correspondence. Grusch''s 2023-07-26 written testimony and biographical submission received Department of Defense pre-publication review under DOPSR case 23-F-0946 ([`/documents/grusch-dopsr-request-2023`]). Grusch has "suffered retaliation" for his decision and has named "administrative terrorism" as the pattern: career threats against himself and colleagues who corroborated the allegations.
+
+
+  Context: Grusch''s prior institutional footprint spans the House Permanent Select Committee on Intelligence ([`/organizations/hpsci`]) and the Senate Armed Services Committee ([`/organizations/sasc`]) as reporting venues during his NGA UAP co-lead tenure. His UAPTF work originated in fall 2019 under the UAPTF director (Jay Stratton [`/people/jay-stratton`]) and drew on earlier programmatic history — AAWSAP-era research involving James Lacatski ([`/people/james-lacatski`]), Luis Elizondo ([`/people/luis-elizondo`]) of the AATIP-era program office, and Robert Bigelow ([`/people/robert-bigelow`]) at Bigelow Aerospace ([`/organizations/bigelow-aerospace`]); Grusch reframed AAWSAP''s ~$21-22M funding as material-analysis equipment for contractor-held recovered material (JRE #2065 testimony).
+
+
+  Institutional contradictions. AARO ([`/organizations/aaro`]) under former director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) has publicly contested the multi-decade crash-retrieval allegation at a framing level; AARO''s Historical Record Report Vol I (March 2024) addresses the "Nexus of Proponents" and KONA BLUE without naming Grusch directly. AARO''s own correspondence with Grusch is documented via FOIA 24-F-0266 ([`/documents/aaro-invitations-to-grusch-2024`]) — Grusch declined AARO interview invitations citing procedural objections, preserving the sworn-testimony-to-Congress venue as his primary disclosure channel. Department of Defense Public Affairs (Sue Gough) issued on-record "no verifiable information" denials following the July 2023 hearing. Christopher Mellon ([`/people/christopher-mellon`]) observed in the Debrief piece that "a number of potential sources do not trust the leadership" of AARO, a context that informs Grusch''s own preference for the congressional channel
+  over AARO''s investigative process.
+
+
+  Discrediting context. In August 2023, Ken Klippenstein published elements of Grusch''s military-service mental-health records — a publication that Rep. Burchett publicly characterized as "sickening" and that Grusch himself has not denied, framing post-Afghanistan-deployment treatment as ordinary military-career context. See vouching chain below for voucher statements by Karl Nell ([`/people/karl-nell`]) as his direct institutional peer and House UAP Caucus members Burchett, Burlison, Luna, and Sen. Rubio.
+
+
+  [`/documents/grusch-bio-2023`] — SECURITY CLEARANCE: Active TOP SECRET//SCI with CI & LS Polygraph.
 
   '
 affiliations:
@@ -122,7 +164,63 @@ affiliations:
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
     location: lines 75-80
-relationships: []
+relationships:
+- id: r1
+  added_date: '2026-04-22'
+  person_path: /people/jay-stratton
+  relationship: Former UAP Task Force director who tasked Grusch (2019) to identify all Special Access Programs / Controlled Access Programs needed to satisfy the UAPTF congressionally mandated mission
+  source:
+    path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
+    location: Opening ¶9
+- id: r2
+  added_date: '2026-04-22'
+  person_path: /people/karl-nell
+  relationship: Sol Foundation co-founder peer and UAP Task Force colleague (2021-2022); Army liaison to UAPTF who worked alongside Grusch and publicly vouched for his credibility
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: paragraph beginning "Karl E. Nell, a recently retired Army Colonel"
+- id: r3
+  added_date: '2026-04-22'
+  person_path: /people/ross-coulthart
+  relationship: Investigative journalist who conducted Grusch's first on-camera disclosure interview (NewsNation Reality Check, 2023-06-11) and has remained his primary journalist channel since
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: full interview
+- id: r4
+  added_date: '2026-04-22'
+  person_path: /people/ralph-blumenthal
+  relationship: Co-author (with Leslie Kean) of the 2023-06-05 Debrief piece that broke Grusch's public disclosure
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: byline
+- id: r5
+  added_date: '2026-04-22'
+  person_path: /people/leslie-kean
+  relationship: Co-author (with Ralph Blumenthal) of the 2023-06-05 Debrief piece that broke Grusch's public disclosure
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: byline
+- id: r6
+  added_date: '2026-04-22'
+  person_path: /people/eric-burlison
+  relationship: U.S. Representative (R-MO) who hired Grusch as Special Advisor to the House Task Force on Declassification of Federal Secrets on 2025-03-27
+  source:
+    path: government/burlison-house-gov-grusch-advisor-20250327.html
+    location: press release full text
+- id: r7
+  added_date: '2026-04-22'
+  person_path: /people/tim-burchett
+  relationship: U.S. Representative (R-TN), House Oversight UAP Subcommittee member who presided over Grusch's 2023-07-26 sworn testimony and has publicly defended Grusch against discrediting attempts
+  source:
+    path: government/burchett-house-gov-post-hearing-statement-20230726.html
+    location: post-hearing statement full text
+- id: r8
+  added_date: '2026-04-22'
+  person_path: /people/jesse-michels
+  relationship: Long-form UAP journalist who produced the American Alchemy / Yes Theory "72 hrs With Grusch" documentary (~October 2023)
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: full documentary
 timeline:
 - id: t1
   added_date: '2026-04-20'
@@ -245,6 +343,94 @@ timeline:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
     location: Opening ¶1
   node_link: /events/2023-07-26-house-uap-hearing
+- id: t16
+  added_date: '2026-04-22'
+  date: '2019'
+  event: Fall 2019 first contact from a senior-credentialed official alleging a multi-decade UAP crash retrieval and reverse-engineering program, initiating the inquiry that became Grusch's PPD-19 filing
+  category: other
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 2500-2600
+- id: t17
+  added_date: '2026-04-22'
+  date: '2021'
+  event: Spring 2021 meeting in Las Vegas with former Sen. Harry Reid ([`/people/harry-reid`]) — Reid privately confirmed to Grusch that the U.S. had recovered UFO material but had been denied access for decades
+  category: other
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 2000-2100
+- id: t18
+  added_date: '2026-04-22'
+  date: '2023-06-05'
+  event: The Debrief ([`/organizations/the-debrief`]) publishes "Intelligence Officials Say U.S. Has Retrieved Craft of Non-Human Origin" — the Ralph Blumenthal ([`/people/ralph-blumenthal`]) and Leslie Kean ([`/people/leslie-kean`]) article that first brings Grusch's whistleblower disclosure to the public; published as document [`/documents/debrief-grusch-2023`]
+  category: publication
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: byline + publication date
+- id: t19
+  added_date: '2026-04-22'
+  date: '2023-06-11'
+  event: First on-camera disclosure interview — NewsNation ([`/organizations/newsnation`]) "Reality Check with Ross Coulthart" ([`/people/ross-coulthart`]); transcript [`/transcripts/newsnation-coulthart-grusch-2023`]
+  category: publication
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: full interview
+- id: t20
+  added_date: '2026-04-22'
+  date: '2023-06-27'
+  event: Sen. Marco Rubio ([`/people/marco-rubio`]), then Senate Select Committee on Intelligence Vice Chair, tells NewsNation there are "other" whistleblowers beyond Grusch with firsthand knowledge — public on-record vouching
+  category: other
+  source:
+    path: news/newsnation-rubio-not-the-only-one-202306.html
+    location: full article
+- id: t21
+  added_date: '2026-04-22'
+  date: '2023-07-14'
+  event: Sens. Chuck Schumer ([`/people/chuck-schumer`]) and Mike Rounds ([`/people/mike-rounds`]) introduce the UAP Disclosure Act (Senate Amendment 797) — legislative response drafted in the policy aftermath of Grusch's June disclosure; Sen. Kirsten Gillibrand ([`/people/kirsten-gillibrand`]) also speaks publicly in support
+  category: other
+  source:
+    path: government/senate-schumer-rounds-uapda-20230714.html
+    location: press release full text
+- id: t22
+  added_date: '2026-04-22'
+  date: '2023-07-26'
+  event: Sworn oral testimony before the House Oversight Subcommittee on National Security ([`/organizations/hasc`]) chaired by Rep. Glenn Grothman, with UAP Subcommittee questioners Rep. Tim Burchett ([`/people/tim-burchett`]) and Rep. Anna Paulina Luna ([`/people/anna-paulina-luna`]); oral transcript [`/transcripts/2023-07-26-house-grusch`]
+  category: testimony
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: opening p. 11
+- id: t23
+  added_date: '2026-04-22'
+  date: 2023-10
+  event: American Alchemy ([`/organizations/american-alchemy`]) / Jesse Michels ([`/people/jesse-michels`]) releases "72 hrs With UFO Whistleblower David Grusch Under Oath" documentary; transcript [`/transcripts/american-alchemy-grusch-72hrs-2023`]
+  category: publication
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: full documentary
+- id: t24
+  added_date: '2026-04-22'
+  date: '2023-11-17'
+  event: Delivers closing remarks at the Sol Foundation ([`/organizations/sol-foundation`]) Inaugural Symposium, Stanford University, alongside co-founders Garry Nolan ([`/people/garry-nolan`]) and Peter Skafish ([`/people/peter-skafish`]) and UAPTF colleague Karl Nell ([`/people/karl-nell`]); transcript [`/transcripts/grusch-sol-2023-closing`]
+  category: publication
+  source:
+    path: transcripts/grusch-sol-2023-closing-downloaded.md
+    location: full remarks
+- id: t25
+  added_date: '2026-04-22'
+  date: '2023-11-21'
+  event: 'Joe Rogan Experience ([`/organizations/joe-rogan-experience`]) episode #2065 with Joe Rogan ([`/people/joe-rogan`]) and Ross Coulthart ([`/people/ross-coulthart`]); transcript [`/transcripts/jre-2065-grusch-2023`]'
+  category: publication
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: full episode
+- id: t26
+  added_date: '2026-04-22'
+  date: '2025-03-27'
+  event: Rep. Eric Burlison ([`/people/eric-burlison`]) names Grusch Special Advisor to the House Task Force on the Declassification of Federal Secrets ([`/organizations/house-uap-caucus`]); announcement [`/documents/burlison-grusch-advisor-announcement-2025`]
+  category: role
+  source:
+    path: government/burlison-house-gov-grusch-advisor-20250327.html
+    location: press release full text
 quotes:
 - id: q1
   added_date: '2026-04-20'
@@ -359,7 +545,1780 @@ quotes:
   context: Congressional biographical submission, House Oversight Committee
   observation_type: relayed
   statement_date: '2023-07-26'
-vouching_chain: []
+- id: q12
+  added_date: '2026-04-22'
+  text: '[4:31] who you are. My name is uh David Grush. You know, I came from a bluecollar family in Pittsburgh. I didn''t have the money for college. Always admired people in uniform. And I''ve always wanted to be a part of something bigger than myself. You know, 18 years ago, you know, I got an Air Force scholarship for physics. Uh I originally commissioned on active duty in the Air Force. uh served 14 years in the Air Force.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 111-121
+  significance: Grusch's own opening self-identification — bluecollar Pittsburgh origin, Air Force physics scholarship, 14 years Air Force service.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  statement_date: '2023-06-11'
+- id: q13
+  added_date: '2026-04-22'
+  text: '[5:15] Washington. I was an intel officer for the US for 14 years. my last position which I left in April of 2023. Um I co-led the UAP portfolio for the National Geospatial Intelligence Agency and some of the highest officials within the department and of defense and intelligence community used to call on me to advise them on some of the hardest uh target sets that the country had.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 130-139
+  significance: Grusch's own description of final role — co-led UAP portfolio at NGA, departure April 2023.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  statement_date: '2023-06-11'
+- id: q14
+  added_date: '2026-04-22'
+  text: '[6:10] my formal security clearance and multiple polygraphs. I had the ability uh to be read into any program that I needed. At one point in time, I was extremely highly cleared.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 151-155
+  significance: Establishes clearance basis underlying access-denial allegation.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  statement_date: '2023-06-11'
+- id: q15
+  added_date: '2026-04-22'
+  text: '[6:28] UAP task force was refused access to um a broad crash retrieval program. When you say crash retrieval, what do you mean? Uh these are retrieving nonhuman origin uh technical vehicles. You know, call it spacecraft, if you will. Non-human exotic origin vehicles that have either landed or crashed.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 158-165
+  significance: Core filed allegation — multi-decade crash retrieval program withheld from UAPTF; nonhuman-origin vehicles, landed and crashed.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-11'
+- id: q16
+  added_date: '2026-04-22'
+  text: '[7:04] confiding in me. They approached me. I have plenty of current former senior intelligence officers that came to me, many of which I knew almost my whole career that convided to me they were a part of a program. They named the program. I''ve never heard of it. And they they told me based on their oral testimony um and they provided me documents and other other proof that there was in fact a program that the UAP task force was uh not read into.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 171-182
+  significance: Describes the evidentiary basis — firsthand whistleblowers named the program, provided documents and oral testimony.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-11'
+- id: q17
+  added_date: '2026-04-22'
+  text: '[7:42] I would couch it as non-human intelligence, you know, NHI, like we like to say in our our language. Why do you say that? Why do you say NHI? I don''t want to necessarily denote origin. I don''t think we have all the data to say, oh, they''re coming from a certain a certain location.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 186-193
+  significance: Grusch's reasoning for 'non-human intelligence' terminology — origin-neutral, avoiding premature extraterrestrial framing.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  statement_date: '2023-06-11'
+- id: q18
+  added_date: '2026-04-22'
+  text: '[8:46] non-believer. I came to the the problem as a hardcore physics guy, intel officer. So I have a you know, excuse my language, high factor. I was very methodical interviewing people who didn''t know each other, making sure this wasn''t some kind of cover up of some other program.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 214-221
+  significance: Grusch's methodology disclosure — started skeptical, interviewed separated witnesses, pre-empted cover-program confound.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  statement_date: '2023-06-11'
+- id: q19
+  added_date: '2026-04-22'
+  text: '[9:15] shut the door in my face. They denied me access to these programs. Soon after, he says he endured reprisals and retaliation from above. He then reported that information to the intelligence community inspector general. That''s why he''s filed this whistleblower complaint.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 226-232
+  significance: Access-denial and reprisal narrative — the retaliation triggers the PPD-19 filing.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-11'
+- id: q20
+  added_date: '2026-04-22'
+  text: '[10:40] Well, naturally, um when you recover something that''s either landed or crashed, um sometimes you encounter, um dead pilots. And believe it or not, as f as fantastical as that sounds, it''s true.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 258-263
+  significance: First public on-camera non-human-biologics claim ('dead pilots'); precedes the July 26, 2023 House hearing.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-11'
+- id: q21
+  added_date: '2026-04-22'
+  text: know, isotopic ratios that would have to [13:05] be engineered for it to be um at those levels, but also just extremely uh uh strange heavy atomic metal, you know, high up in the periodic table um arrangements that um we don't understand
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 310-318
+  significance: Material-properties claim — engineered isotopic ratios and strange heavy metals cited as non-prosaic signature.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  statement_date: '2023-06-11'
+- id: q22
+  added_date: '2026-04-22'
+  text: '[14:29] Yeah, there''s a sophisticated uh disinformation campaign targeting the US populace, which is extremely unethical and immoral.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 342-345
+  significance: Explicit disinformation-campaign framing — Grusch's public characterization of UAP secrecy apparatus.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  statement_date: '2023-06-11'
+- id: q23
+  added_date: '2026-04-22'
+  text: '[14:59] Just about. Yeah. 90 years. 1933 was the first recovery in Europe in uh Magenta, Italy. They recovered a a partially intact vehicle.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 350-353
+  significance: First public disclosure of the 1933 Magenta, Italy recovery — anchors the 90-year program timeline.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  statement_date: '2023-06-11'
+- id: q24
+  added_date: '2026-04-22'
+  text: it out to clear defense contractor to do
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 558-566
+  significance: Private-contractor custody allegation — government hands material to cleared contractors via sole-source arrangements.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-11'
+- id: q25
+  added_date: '2026-04-22'
+  text: '[25:48] lie? Well, I know Dr. Sean Kurpatre. I''ve known him for about 8 years and you know, I expressed some concerns to Dr. Kurpatre about a year ago and told him what I was starting to uncover and he didn''t follow up with me and he has my phone number. He could have called me.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 592-599
+  significance: Direct Grusch-Kirkpatrick history disclosure — 8-year acquaintance, prior substantive outreach, no AARO follow-up.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  statement_date: '2023-06-11'
+- id: q26
+  added_date: '2026-04-22'
+  text: '[28:02] there have been attempts to bring down craft that we''ve acted offensively against non-human craft. There have been instances and there are uh certain techniques. Have human beings been hurt or killed by a non-human intelligence? While I can''t get into the specifics because that would reveal uh certain US classified uh operations, uh I was briefed by a few individuals on the program that there were um malevolent events like that.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 640-651
+  significance: Malevolent-event framing — humans allegedly killed by NHI; US offensive actions against craft.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-11'
+- id: q27
+  added_date: '2026-04-22'
+  text: '[32:31] been committed? At the very least, I saw substantiative evidence that white collar crime was committed. Have people been killed to protect this secret? uh based on the people I talked to uh that was an ongoing uh concern. Yeah. Unfortunately, I''ve heard some really unamerican things I don''t want to repeat right now.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 741-749
+  significance: Crimes allegation — white collar crime confirmed, murder-to-protect-secrecy flagged as an ongoing concern from interview subjects.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-11'
+- id: q28
+  added_date: '2026-04-22'
+  text: '[37:37] credibility of your complaint. They found after interviewing myself in the subjects and other subjects that I''m not even uh cognizant on who they were, they found my complaint uh urgent and credible uh for the intelligence committees.'
+  source:
+    path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
+    location: lines 865-871
+  significance: ICIG 'urgent and credible' determination described in Grusch's own words — establishes the filing mechanism outcome.
+  context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-11'
+- id: q29
+  added_date: '2026-04-22'
+  text: so I was a Intel officer [0:36] in the Air Force for 14 years seven active seven Reserve uh then I kind of had like a parallel tract in the civilian Intel world when I became a reservist um uh and ultimately I got brought back in in Civil Service in a government way at the national GE spatial intelligence agency couple years ago um at a senior level uh so I was a major in the Air Force and a gs15 at NGA which is like a full bird colonel equivalent civilian employee
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 20-32
+  significance: Career structure self-description — 7 active/7 reserve Air Force, Major rank, NGA GS-15 equivalent full colonel civilian.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q30
+  added_date: '2026-04-22'
+  text: '[2:07] what''s with this UFO stuff I was uh briefing a senior person uh at the CIA into a couple hundred special access programs uh so I was at the headquarters at the agency and you know after the indoctrination I was giving to the senior person this person um who worked with Lou alzando uh previously was like yeah have Dave have you ever heard of this guy Lou alzando he''s running some UFO program at the Pentagon um we all think he''s crazy'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 57-69
+  significance: First mention of Elizondo in Grusch's career — CIA briefing encounter in early 2017 that prefigured his UAP interest.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q31
+  added_date: '2026-04-22'
+  text: '[11:14] encounter with the information a very senior individual in the Intel Community came to me when uh I guess I was asking a lot of questions because I''m a very inquisitive guy and it was like hey we I need to introduce you to somebody uh you know he listed that certain person''s academic credentials which were Beyond reproach you know PhD level education clearance resume was insane I''m like well okay sure I''ll I''ll talk to this person and and I ended up meeting that person in a you know uh a top secret facility and you know he started the discussing like hey there was a program I was on it and you know we were reverse engineering crash material that we''ve recovered over the decades'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 287-305
+  significance: Inflection-point account — the first senior-IC whistleblower contact in fall 2019 that opened Grusch's investigation.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-11-21'
+- id: q32
+  added_date: '2026-04-22'
+  text: '[12:50] myself and my trusted colleagues that had a lot of lot of special accesses like me you know we cultivated our Network and we ultimately interviewed about 40 people or so all the way up to multistar generals directors of agencies mid-level guys that literally touched it worked inside of it'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 325-333
+  significance: Quantifies the witness base — ~40 interviews spanning multi-star generals, agency directors, firsthand engineers.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-11-21'
+- id: q33
+  added_date: '2026-04-22'
+  text: '[15:41] and I eventually went to Congress in December of 2022 and it''s a crazy story why I took so long it''s [ __ ] nuts um but I provided total about 11 and a half to 12 hours of uh you know classified testimony to the Congressional staffers and their lawyers for both the house and the Senate'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 395-402
+  significance: Congressional-testimony quantification — 11.5-12 hours of classified testimony to both House and Senate staff in December 2022.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-11-21'
+- id: q34
+  added_date: '2026-04-22'
+  text: '[26:47] died two years ago so in Spring 2021 I actually flew with a couple colleagues of mine to Las Vegas and I met with Senator Harry Reid about N9 months before he died'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 668-672
+  significance: Grusch personally met Harry Reid in Spring 2021 in Las Vegas — direct witness to Reid's admissions about UAP material.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q35
+  added_date: '2026-04-22'
+  text: '[27:44] with me and he straight up says he''s like yeah I knew we had UFO material I was denied access for decades I tried to get access and then he explains some of his efforts during AET app'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 692-696
+  significance: Grusch's direct report of Harry Reid's private admission — Reid confirmed UAP material and decades-long access denial.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q36
+  added_date: '2026-04-22'
+  text: '[30:54] freak out but I''m telling the truth here um so lockie Martin wanted to divest itself from this material at a specific facility that''s known to me that I provided to the Inspector General'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 767-772
+  significance: Direct Lockheed Martin material-custody allegation — Grusch states specific facility known to him and provided to IG.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-11-21'
+- id: q37
+  added_date: '2026-04-22'
+  text: '[31:35] and um uh so they were going to Tech transfer it and the 21 or 22 million was actually for Bigalow Aerospace to build out you know facilities in Las Vegas and material analysis equipment and I''ve SE I have I saw the staff meeting slides I saw the paperwork like there''s a paperwork Trail I''ve seen on this'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 784-791
+  significance: AAWSAP purpose reframing — Grusch asserts the ~$22M was for Bigelow Aerospace to analyze Lockheed-held material, not paranormal research.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q38
+  added_date: '2026-04-22'
+  text: '[32:00] this program and you know even Jim laty who ran the program who retired Dia officer PhD in engineering even made this disclosure in his book skinwalkers at the Pentagon uh page 152 to 153'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 793-797
+  significance: Grusch vouches for Lacatski — cites Skinwalkers at the Pentagon pp. 152-153 as corroborating disclosure.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q39
+  added_date: '2026-04-22'
+  text: '[41:02] answers that question so uh there were sens of human derve foreign intelligence that I read um so I had access to kind of the atip assap uh classified archives and I was like thumbing through everything and there''s some other people were bringing me documents to evaluate and I''ll never forget I had um what it say stolen by the US in assessment from a certain foreign adversary discussing the US reverse engineering program'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 1023-1034
+  significance: Foreign-adversary document confirmation — Grusch claims he read an exfiltrated foreign-intelligence assessment discussing the US reverse-engineering program.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-11-21'
+- id: q40
+  added_date: '2026-04-22'
+  text: '[42:53] Congress and they debriefed me uh from all my accesses over in that other sister agency and made up some bogus excuse like I shouldn''t have been briefed to anything in the first place literally and basically gave me an administrative M middle finger like person non gra don''t ever [ __ ] ask us about that [ __ ] again'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 1066-1074
+  significance: Specific reprisal incident — the sister agency's debrief as an administrative rebuff after Grusch requested the foreign-intel document.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-11-21'
+- id: q41
+  added_date: '2026-04-22'
+  text: '[46:09] episode I remember correctly you know Chuck Schumer and I knew about the amendment a couple months before I went public and that''s kind of another reason why I did what I did I''m like [ __ ] I''m like the only guy that kind of has the opportunity to do this I know what''s in the shoot so to speak that Chuck Schumer and his staff had with the Schumer M'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 1140-1148
+  significance: Timing disclosure — Grusch knew about the Schumer UAP Disclosure Act months before going public, shaping the timing of his public step.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q42
+  added_date: '2026-04-22'
+  text: '[53:57] we alone well the answer is we''re not alone and I know that with 100% certainty which as an Intel officer you never say 100%'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 1334-1337
+  significance: Grusch's strongest personal conviction statement — '100% certainty' explicitly flagged as an atypical intelligence-officer claim.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q43
+  added_date: '2026-04-22'
+  text: '[54:44] so they specifically the people on the program that handled the material that were in executive level briefings with Intel Community leaders and other folks over the years last years or so they did use the term extraterrestrial ET or whatever okay that isn''t a possible origin but the Schumer Amendment if you read it it specifically uses non-human intelligence NH hii very deliberately'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 1355-1364
+  significance: Grusch acknowledges that program personnel used 'extraterrestrial' while the legislation deliberately used 'non-human intelligence' — an important terminology fact pattern.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q44
+  added_date: '2026-04-22'
+  text: '[1:06:56] looking into this I mean they came after me so hard to try to revoke my clearance um ruined my career kicked me out of my agency and they accused me of everything you could possibly think of with like no evidence'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 1660-1665
+  significance: Direct statement of the reprisal scope — clearance-revocation attempts, agency expulsion, unsubstantiated accusations.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-11-21'
+- id: q45
+  added_date: '2026-04-22'
+  text: '[1:09:27] is uh they showed my wife and I they can touch me at any time two times and it was very disturbing it was in conjunction with some other people getting a message like that that are to say publicly wellknown some that aren''t publicly wellknown'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 1723-1729
+  significance: Grusch's direct account of physical-intimidation events against him and his wife — 'they can touch me at any time' twice.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-11-21'
+- id: q46
+  added_date: '2026-04-22'
+  text: '[1:24:14] physiology yeah no I was in I was in the room when uh I got be careful I don''t want to uh I was in Washington DC with a very uh number of senior people that work for members of Congress put it that way um when I was still in government and I brought the people who worked on that stuff to the hill'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 2092-2101
+  significance: Establishes that Grusch personally facilitated firsthand-witness briefings to congressional staff on NHI physiology.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-11-21'
+- id: q47
+  added_date: '2026-04-22'
+  text: '[2:32:10] in parallel and that''s kind of why I helped found the soul foundation with Gary Nolan and Dr Peter skafish who''s an anthropologist uh as well is we wanted to figure out the stem Outreach we wanted to figure out the public policy National policy to advise the US and its allies on this issue'
+  source:
+    path: transcripts/jre-2065-grusch-2023-downloaded.md
+    location: lines 3818-3825
+  significance: Direct attribution — Grusch co-founded Sol Foundation with Garry Nolan and Peter Skafish for policy and STEM outreach.
+  context: Joe Rogan Experience
+  observation_type: relayed
+  statement_date: '2023-11-21'
+- id: q48
+  added_date: '2026-04-22'
+  text: '[9:50] Yeah. Did all the checks I could possibly do, you know, within my, you know, kind of official capacity, realized it was real. And then, uh, kind of during that investigation, you know, I had a lot of pushback that was very unfortunate, you know, reprisals against me and stuff. And that kind of was what led me to file the whistleblower complaint, you know, a for my own protection, but B was to kind of sound the alarm.'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 141-147
+  significance: Grusch frames the dual motivation for the PPD-19 complaint — self-protection plus public alarm-sounding.
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-10-15'
+- id: q49
+  added_date: '2026-04-22'
+  text: '[10:12] They tried to claim all these things against me, conduct wise, mental health, all this other, uh, unfortunate stuff. I was in combat in Afghanistan, 2013, you know, I was on a convoys outside the wire. I, you know, I had a friend die, got blown up and all this other stuff, you know, baggage that I had for two, three years after coming back. And, you know, I got diagnosed with post-traumatic stress disorder, you know, saw treatment and I got help good to go, but there was an agency that tried to dig that back up and say, Oh, Dave still has ongoing issues. Unmitigated, we need to pull his clearance.'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 148-156
+  significance: Specific reprisal mechanism — agency weaponized Grusch's 2013 Afghanistan combat PTSD treatment as a clearance-pull pretext.
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-10-15'
+- id: q50
+  added_date: '2026-04-22'
+  text: '[12:48] I was a little restless last night. I was told last night that they requested me to be cleared for a closed session after today, but the request was denied. I was blocked. So that''s like obvious obstruction.'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 189-193
+  significance: Grusch's night-before-testimony statement that the closed-session clearance was denied — characterized as 'obvious obstruction.'
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  statement_date: '2023-10-15'
+- id: q51
+  added_date: '2026-04-22'
+  text: '[23:42] And I be very general in this to protect this person''s identity. Cause they''re still on active duty. But like, I remember interviewing a guy and I have a background in psychological analysis and other stuff to assess people and for like three hours. And it was a certain very senior Navy individual that saw he was going to work at a certain facility in the morning, you know, not drunk, not high. And a 300 foot triangular craft hovered over his car for a couple minutes.'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 345-352
+  significance: Detailed 300-foot triangular-craft encounter — senior Navy witness with photographed radiation-damaged car, Grusch's 'inflection point.'
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  statement_date: '2023-10-15'
+- id: q52
+  added_date: '2026-04-22'
+  text: '[44:41] As I''ve stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries. Yeah. Yeah. I mean, it''s, it is a mind blowing side of it, right? It''s a little easy to imagine, you know, an artifact or whatever, but when you start talking about, you know, the biological side of it, it really throws you for a loop psychologically.'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 688-692
+  significance: Post-hearing confirmation of biologics claim — Grusch reaffirms the Mace-exchange 'biologics' reply in documentary context.
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-10-15'
+- id: q53
+  added_date: '2026-04-22'
+  text: '[44:56] talking about, you know, the biological side of it, it really throws you for a loop psychologically. It did for me. And, you know, I talked to the people that, you know, were on that aspect of, uh, the program, if you will.'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 692-696
+  significance: Grusch states he talked to people on the biologics-aspect of the program — source chain for the biologics claim.
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-10-15'
+- id: q54
+  added_date: '2026-04-22'
+  text: '[48:04] So, the actual reprisal stuff and the access denial stuff actually enhanced my ability to operate. But I will tell you, I talked to these people in the program. They are just so afraid. Because the way it was enforced over the years, threatening nature of some of their indoctrinations where they''re like, this is treason. You''re going to Leavenworth. Have you ever tell anybody not in the program? And oh, by the way, what''s the penalty for treason? Oh, right. Execution, right?'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 750-758
+  significance: Indoctrination-enforcement account — treason/Leavenworth/execution framing used on program personnel to suppress disclosure.
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-10-15'
+- id: q55
+  added_date: '2026-04-22'
+  text: '[48:49] So like, I also went out of my way to find people who don''t know each other either. That like, you know, through methods like making sure I''m not getting circular reporting, not part of some other kind of faction that might want to push a certain narrative out. Me and I had higher ranking colleagues of mine go, who were part of the same effort in their official capacity, go talk to other people that I didn''t even personally talk to, to keep that separation.'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 764-770
+  significance: Methodological-rigor disclosure — Grusch and colleagues built witness isolation to guard against circular reporting and faction narratives.
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  statement_date: '2023-10-15'
+- id: q56
+  added_date: '2026-04-22'
+  text: '[46:57] But they have. The people that I interviewed have. And they were some of the people that were interviewed by the inspector general. Because that was the thing is like, you know, people are like, oh, hearsay, whatever. Okay, I understand secondhand. I literally brought the people firsthand to the authorities.'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 728-733
+  significance: Grusch explicitly confirms that firsthand witnesses (who saw craft/biologics) were interviewed by the ICIG, rebutting 'hearsay' critique.
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-10-15'
+- id: q57
+  added_date: '2026-04-22'
+  text: '[30:02] I grew up Roman Catholic as a kid, the whole confirmation thing, CCD, and all that, you know, it was reasonably religious, but nothing like crazy kind of average studied physics. I became kind of agnostic. I was like, eh, I don''t know about this, all this kind of woo woo, you know, stuff that the church exposes and stuff. And then oddly enough, I''ve kind of come full circle.'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 459-465
+  significance: Theology trajectory — Roman Catholic childhood to physics agnosticism to 'full circle,' self-description of worldview evolution.
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  statement_date: '2023-10-15'
+- id: q58
+  added_date: '2026-04-22'
+  text: '[39:23] Yeah, I mean, I didn''t know that I was autistic until I was like in my early 30s. And, you know, I always wondered why in my personal life, if I get fixated on something and obsessed, you know, what was going on with that. I mean, it served me well in the government because I was super good at, you know, doing Intel and like, you know, Dave, we want you to target this facility. Okay, you have six months, figure out everything'
+  source:
+    path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
+    location: lines 590-595
+  significance: First-person autism-diagnosis disclosure — early-30s diagnosis; framed as asset for intel-target fixation work.
+  context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
+  observation_type: relayed
+  statement_date: '2023-10-15'
+- id: q59
+  added_date: '2026-04-22'
+  text: '[2:47] accountability the release of information on non-human intelligences has the potential to unite Humanity in a shared quest for understanding regardless of the ontological shock'
+  source:
+    path: transcripts/grusch-sol-2023-closing-downloaded.md
+    location: lines 62-67
+  significance: Public-policy framing — Grusch's core disclosure-advocacy thesis in one sentence at Sol Foundation inaugural symposium.
+  context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
+  observation_type: relayed
+  statement_date: '2023-11-18'
+- id: q60
+  added_date: '2026-04-22'
+  text: '[4:07] Sciences releasing this information in a controlled planned manner such as Carl Nell has discussed during the conference as with the Schumer amendment has profound implications on our philosoph philosophical and spiritual perspectives'
+  source:
+    path: transcripts/grusch-sol-2023-closing-downloaded.md
+    location: lines 92-98
+  significance: Direct Grusch endorsement of Karl Nell's controlled-disclosure framework and Schumer Amendment mechanism at Sol.
+  context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
+  observation_type: relayed
+  statement_date: '2023-11-18'
+- id: q61
+  added_date: '2026-04-22'
+  text: '[7:49] inspiring yeah I mean I did a lot of introspection and reflection to make the decision to come forward you know part of my uh looking into this subject and you know reporting my findings to the Inspector General you know I look back at my you know I Serv 14 years in the Air Force I looked at two my core value the Air Force exposes you know Integrity for service for steal and that been all we do'
+  source:
+    path: transcripts/grusch-sol-2023-closing-downloaded.md
+    location: lines 162-172
+  significance: Grusch's Sol-symposium self-framing — Air Force core values ('Integrity First, Service Before Self, Excellence in All We Do') as disclosure motivation.
+  context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
+  observation_type: relayed
+  statement_date: '2023-11-18'
+- id: q62
+  added_date: '2026-04-22'
+  text: '[10:40] certainly this phenomenon is is not a you know a singular type Source Etc I mean many of the people I talked to that you know were actively working on the program did use the term extraterrestrial when uh briefing myself and my my colleagues you know on their activity and kind of you know that''s the par they used within the the program but certainly I''m skeptical of that being the the only origin'
+  source:
+    path: transcripts/grusch-sol-2023-closing-downloaded.md
+    location: lines 228-238
+  significance: Sol-symposium reiteration — program personnel used 'extraterrestrial'; Grusch skeptical that is sole origin. Parallels JRE statement.
+  context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
+  observation_type: relayed
+  statement_date: '2023-11-18'
+- id: q63
+  added_date: '2026-04-22'
+  text: '[18:09] yourself yeah uh certainly I would love to go back to my private life that would be great not something that I ever thought I''d be doing in my life you know I was on a very good trajectory in my intell career so I''ve made an Abrupt dip to the right become a public figure'
+  source:
+    path: transcripts/grusch-sol-2023-closing-downloaded.md
+    location: lines 404-410
+  significance: Grusch's stated post-disclosure aspiration — wants to return to private life, not a career public figure.
+  context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
+  observation_type: relayed
+  statement_date: '2023-11-18'
+- id: q64
+  added_date: '2026-04-22'
+  text: '[18:38] 2030 I would love to work on that as a staff member not necessarily as a panelist I think there needs to be luminaries that are the the best scholars in the in the US to to f you know be on that panel but certainly if the current or you know succeeding administrations would like to bring me on to support the panel in any way I mean I''ll go get coffee just to sit in the room to listen to the discussions'
+  source:
+    path: transcripts/grusch-sol-2023-closing-downloaded.md
+    location: lines 417-427
+  significance: Grusch's explicit post-disclosure role aspiration — not disclosure-panel member, but staff supporter ('I'll go get coffee').
+  context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
+  observation_type: relayed
+  statement_date: '2023-11-18'
+- id: q65
+  added_date: '2026-04-22'
+  text: My name is David Charles Grusch. I was an intelligence officer for 14 years both in the U.S. Air Force, both active-duty Air National Guard and Reserve at the rank of Major and most recently from 2021 to 2025—excuse me, 2023—at the National Geospatial Intelligence Agency, NGA, at the GS–15 civilian level, which is the military equivalent of a full bird colonel.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 11 (hearing pagination); scratch lines 733-738
+  significance: Grusch's sworn self-identification establishing career credential baseline before Congress.
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q66
+  added_date: '2026-04-22'
+  text: I was my agency’s co-lead in unidentified anomalous phenomena and trans medium object analysis as well as reporting to the UAP Task Force—UAPTF—and eventually, once it was established, the All-Domain Anomaly Resolution Office—AARO.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 11; scratch lines 739-742
+  significance: Grusch's own description of his NGA UAP role and his reporting line to UAPTF and then AARO.
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q67
+  added_date: '2026-04-22'
+  text: I became a whistleblower through a PPD–19 urgent concern filing in May 2022 with the intelligence community inspector general following concerning reports from multiple esteemed and credentialed current and former military and intelligence community individuals that the U.S. Government is operating with secrecy above congressional oversight with regards to UAPs.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 11; scratch lines 745-750
+  significance: Sworn formal articulation of the PPD-19 filing date, venue (ICIG), and substantive triggering claim — secrecy above congressional oversight.
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q68
+  added_date: '2026-04-22'
+  text: My testimony is based on information I have been given by individuals with a long-standing track record of legitimacy and service to this country, many of whom also have shared compelling evidence in the form of photography, official documentation, and classified oral testimony to myself and many of my various colleagues.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 11; scratch lines 751-755
+  significance: Grusch's own framing of his evidentiary basis — he relays information from named witnesses who showed him photography, official documentation, and classified oral testimony.
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q69
+  added_date: '2026-04-22'
+  text: I have taken every step I can to corroborate this evidence over a period of 4 years while I was with the UAP Task Force and do my due diligence on the individuals sharing it.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 11; scratch lines 756-758
+  significance: Grusch's claim that his investigation spanned 4 years during UAPTF tenure with corroboration and due-diligence steps.
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q70
+  added_date: '2026-04-22'
+  text: But as I stand here under oath now, I am speaking to the facts as I have been told them.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 11; scratch lines 766-767
+  significance: Critical epistemic caveat — Grusch explicitly frames his sworn testimony as relayed from others, not firsthand.
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q71
+  added_date: '2026-04-22'
+  text: In 2019, the UAP Task Force Director asked me to identify all special access programs and controlled access programs, also known as SAPs and CAPs, we needed to satisfy our congressionally mandated mission and we would direct report at the time to the DEP/SecDef.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 12; scratch lines 774-778
+  significance: Specific tasking origin — UAPTF Director directed Grusch to identify relevant SAPs/CAPs; frames how Grusch says he came upon the crash-retrieval program.
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q72
+  added_date: '2026-04-22'
+  text: At the time, due to my extensive executive level intelligence support duties I was cleared to literally all relevant compartments and in a position of extreme trust both in my military and civilian capacities.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 12; scratch lines 779-782
+  significance: Sworn self-representation of his 2019-era clearance breadth ("literally all relevant compartments").
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q73
+  added_date: '2026-04-22'
+  text: I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 12; scratch lines 783-786
+  significance: The headline filed claim — sworn allegation of a multi-decade crash-retrieval + reverse-engineering program with access denial.
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q74
+  added_date: '2026-04-22'
+  text: I made the decision based on the data I collected to report this information to my superiors and multiple inspectors general and, in effect, becoming a whistleblower. As you know, I have suffered retaliation for my decision, but I am hopeful that my actions will ultimately lead to a positive outcome of increased transparency.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: oral opening statement, p. 12; scratch lines 787-791
+  significance: Sworn retaliation claim, on the record before Congress — ties PPD-19 filing to asserted retaliation.
+  context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q75
+  added_date: '2026-04-22'
+  text: Yes, I can speak to that very briefly in an unclassified manner. As you know, the preponderance of my complaint was classified to the intelligence communities. Both material acquisition and exploitation activity, also baselining the UAPs but not sharing it with, you know, intelligence professionals that are actually doing step briefs to pilots, that kind of information.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Chairman Grothman, p. 16; scratch lines 1018-1023
+  significance: 'Unclassified description of the substance withheld from
+
+    Congress: "material acquisition and exploitation activity"
+
+    plus withholding of UAP baseline data from intel professionals
+
+    briefing pilots.
+
+    '
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q76
+  added_date: '2026-04-22'
+  text: Absolutely, based on interviewing over 40 witnesses over 4 years.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Garcia, p. 18; scratch line 1148
+  significance: First public numeric witness count — "over 40 witnesses over 4 years" underlying Grusch's claim the government possesses UAPs.
+  context: Oral testimony Q&A (response to "do you believe that our government is in possession of UAPs?"), House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q77
+  added_date: '2026-04-22'
+  text: I know the exact locations and those locations were provided to the Inspector General and some of which to the intelligence committees. I actually had the people with the firsthand knowledge provide a protected disclosure to the Inspector General.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Garcia, p. 18; scratch lines 1151-1154
+  significance: Sworn assertion that Grusch knows exact facility locations and facilitated firsthand-witness protected disclosures to the IG.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q78
+  added_date: '2026-04-22'
+  text: Yes. I have to be careful what I say in detail because there is an open whistleblower reprisal investigation on my behalf, and I do not want to compromise that investigation by providing anything that may help provide somebody information. But it was very brutal and very unfortunate. Some of the tactics they used to hurt me both professionally and personally, to be quite frank. Yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 20-21; scratch lines 1218-1224
+  significance: Sworn retaliation/reprisal claim with active PPD-19 investigation status — "brutal and very unfortunate" tactics used both professionally and personally.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q79
+  added_date: '2026-04-22'
+  text: Yes, personally.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 20; scratch line 1230
+  significance: Sworn affirmative to "Do you have any personal knowledge of people who have been harmed or injured in efforts to cover up or conceal these extraterrestrial technology?"
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q80
+  added_date: '2026-04-22'
+  text: I have to be careful asking that question. I directed people with that knowledge to the appropriate authorities.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 20; scratch lines 1233-1234
+  significance: Grusch's non-answer to Burchett's question about whether anyone had been murdered — he directed those with such knowledge to authorities rather than answering directly.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q81
+  added_date: '2026-04-22'
+  text: Well, it has only been about 2 months or so. So, I guess my experience has been overwhelming support from former colleagues of mine that have, you know, privately messaged me and I do appreciate that. But I do have knowledge of active planned reprisal activity against myself, and other colleagues and it is very, very upsetting to me.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Raskin, p. 22; scratch lines 1324-1330
+  significance: Sworn claim of "active planned reprisal activity" against Grusch and other whistleblowers.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q82
+  added_date: '2026-04-22'
+  text: Certain senior leadership at previous agencies I was associated with and that is all I will say publicly. But I can provide more details in a closed environment.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Raskin, p. 22; scratch lines 1332-1334
+  significance: Grusch identifies the source of reprisal activity as senior leadership at his former agencies.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q83
+  added_date: '2026-04-22'
+  text: Yes. There were certain colleagues of mine that were brutally administratively attacked, and it actually makes me very upset as a leader to see that happen to other co-workers and actually superiors of mine over the last 3 years.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Raskin, p. 22; scratch lines 1339-1342
+  significance: Sworn claim that colleagues and superiors were "brutally administratively attacked" over the last 3 years.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q84
+  added_date: '2026-04-22'
+  text: I call it administrative terrorism. That is their quiver—their tool in the toolbox to silence people, especially, you know, career government service cares about their career, cares about their clearance, their reputation to climb the ladder, and
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Raskin, p. 22-23; scratch lines 1345-1352
+  significance: Grusch's named framing ("administrative terrorism") for the retaliation pattern used against career IC personnel.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q85
+  added_date: '2026-04-22'
+  text: Yes, personally. Yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Luna, p. 23; scratch line 1377
+  significance: Sworn affirmative to Luna's question "have you had incidences that have caused you to be in fear for your life for addressing these issues?"
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q86
+  added_date: '2026-04-22'
+  text: Yes. Him and I had a classified conversation in April 2022 before he took over AARO in July 2022 and I provided him some concerns I had.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Luna, p. 23; scratch lines 1395-1397
+  significance: Sworn datum — Grusch had a classified conversation with Sean Kirkpatrick in April 2022, three months before Kirkpatrick took the AARO helm. Material to AARO-Grusch dispute.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q87
+  added_date: '2026-04-22'
+  text: Unfortunately, I cannot read his mind. I wish he did. I was happy to give sage counsel to him on where to look when he took the helm of AARO.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Luna, p. 23-24; scratch lines 1400-1402
+  significance: Grusch's on-record characterization of the advice he offered Kirkpatrick and Kirkpatrick's non-follow-up.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q88
+  added_date: '2026-04-22'
+  text: Correct, through DODSR—DoD Prepublication and Security Review—and I just want to remind the public they are just looking from a security perspective. These are my own personal views and opinions, not the Department’s.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Luna, p. 24; scratch lines 1408-1411
+  significance: Grusch confirms his disclosures cleared DOPSR but clarifies personal-not-department-position framing.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q89
+  added_date: '2026-04-22'
+  text: I am required by law to do that as a former intelligence officer, or I go to jail for revealing classified information.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Luna, p. 24; scratch lines 1415-1416
+  significance: Grusch's own framing of the legal necessity of prepublication review for former IC officers.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q90
+  added_date: '2026-04-22'
+  text: Yes. I personally interviewed those individuals.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Moskowitz, p. 25; scratch line 1510
+  significance: Sworn affirmative to Moskowitz asking whether Grusch met with people with direct knowledge of, or had direct knowledge of, nonhuman-origin craft — Grusch affirms he interviewed those individuals.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q91
+  added_date: '2026-04-22'
+  text: Based on conventional advanced tech I was briefed to the preponderance of the Defense Department’s both space and aerospace compartmented programs. Yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Moskowitz, p. 25-26; scratch lines 1517-1519
+  significance: Grusch's representation of his conventional advanced tech access — "preponderance" of DoD space and aerospace compartmented programs.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q92
+  added_date: '2026-04-22'
+  text: A complicated question. So, there is, you know, some—I would call it abuse here. So, congressional oversight of conventional Special Access Programs—and I will use Title 10, DoD as an example, right. So, 10 U.S. Code Section 119 discusses congressional oversight of SAPs, discusses the DEP/SecDef’s ability to waive congressional reporting. However, the Gang of 8 is at least supposed to be notified if a—you know, a waived or a waive bigoted unacknowledged SAP is created and that is public law.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Moskowitz, p. 26; scratch lines 1526-1534
+  significance: Grusch's public-law framing of how the alleged programs evade oversight — naming 10 U.S.C. § 119 and Gang of 8 notification requirements.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q93
+  added_date: '2026-04-22'
+  text: I will give you generalities. I can get very specific in a closed session. But misappropriation of funds and self-fund.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Moskowitz, p. 26; scratch lines 1537-1538
+  significance: Sworn claim that alleged programs are funded via "misappropriation of funds and self-fund."
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q94
+  added_date: '2026-04-22'
+  text: Correct, through something called IR&D.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Moskowitz, p. 26; scratch line 1546
+  significance: Sworn affirmative that U.S. corporations overcharge for tech sold to USG with the excess going to alleged programs, specifically via IR&D (Independent Research & Development) accounts.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q95
+  added_date: '2026-04-22'
+  text: That was one of my primary tasks at NGA since we process, exploit, and disseminate that kind of information. I have seen multiple cases, some of which to my understanding—and, of course, I left NGA in April so that is my information cutoff date. But I personally review both what we call overhead collection and from other strategic and tactical platforms that were—I could not even explain prosaically, and I have a degree in physics, by the way, as well. And I had—I am aware that you guys have not seen these reports, unfortunately and I do not know why.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Moskowitz, p. 26; scratch lines 1554-1563
+  significance: Rare first-person observational claim — Grusch personally reviewed overhead/strategic/tactical platform imagery that he "could not even explain prosaically." Closest to firsthand in his oral testimony (though of imagery, not phenomena).
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q96
+  added_date: '2026-04-22'
+  text: I cannot discuss that in an open session.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Moskowitz, p. 26-27; scratch line 1567
+  significance: Grusch declines to confirm/deny in open session whether the imagery he reviewed includes crash-site imagery.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q97
+  added_date: '2026-04-22'
+  text: I cannot go beyond what I have already stated publicly in my News Nation interview because it touches other sensitivities.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Moskowitz, p. 27; scratch lines 1573-1575
+  significance: Grusch declines to extend beyond his NewsNation interview on the question of whether USG runs a disinformation campaign denying UAP existence.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q98
+  added_date: '2026-04-22'
+  text: It is not accurate. I believe Dr. Kirkpatrick mentioned he had about 30 individuals that have come to AARO thus far. A few of those individuals have also come to AARO that I also interviewed.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Foxx, p. 27; scratch lines 1594-1597
+  significance: Grusch directly contradicts Kirkpatrick's sworn SASC testimony of "no credible evidence thus far of extraterrestrial activity" — material contradiction on the public record.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q99
+  added_date: '2026-04-22'
+  text: And I know what they provided Dr. Kirkpatrick and their team.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Foxx, p. 27; scratch line 1599
+  significance: Grusch asserts he knows what material a subset of AARO witnesses provided — claim of dual familiarity with source information.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q100
+  added_date: '2026-04-22'
+  text: I was able to evaluate that information.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Foxx, p. 27; scratch line 1602
+  significance: Grusch states he evaluated the information AARO witnesses provided — basis for his contradiction of Kirkpatrick.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q101
+  added_date: '2026-04-22'
+  text: I like to use the term nonhuman. I do not like to denote origin. Keeps the aperture open both scientifically. Certainly, like I have discussed publicly, previously 1930’s.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 30; scratch lines 1744-1746
+  significance: KEY — Grusch publicly under oath states his terminology preference ("nonhuman") and places USG awareness of nonhuman intelligence back to the 1930s. Primary-source attestation for rumor r2 (NHI terminology) and for the pre-Roswell start date.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q102
+  added_date: '2026-04-22'
+  text: I cannot discuss that publicly, but I did provide that information both to the intel committees and the Inspector General.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 30; scratch lines 1756-1758
+  significance: Grusch confirms he has provided names/titles/facilities to the intel committees and IG but declines to disclose publicly.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q103
+  added_date: '2026-04-22'
+  text: It is a misnomer that there is anything actually above top secret. Executive Order 13526 delineates the classification levels.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Gaetz / Rep. Burchett, p. 30-31; scratch lines 1790-1792
+  significance: Technical clarification under oath — Grusch cites EO 13526 as authoritative on classification levels, addressing public confusion about what is "above Top Secret."
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q104
+  added_date: '2026-04-22'
+  text: It is a group of career senior executive officials.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 31; scratch line 1802
+  significance: Grusch's named class of actors behind the alleged oversight-evading decisions — "career senior executive officials."
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q105
+  added_date: '2026-04-22'
+  text: Both in and out of government and that is about as far as I can go there.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 31; scratch lines 1806-1807
+  significance: Grusch places decision-makers behind the alleged oversight evasion "both in and out of government" — implicates contractor-side custodians.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q106
+  added_date: '2026-04-22'
+  text: Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11‡ hours with both intel committees.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 32; scratch lines 1824-1827
+  significance: Grusch attests to an 11+ hour testimony session with both intel committees (HPSCI + SSCI) and to providing specific corporations / divisions names. "11‡" likely OCR artifact for 11+.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  naming_quirks: Scratch file renders "11+" as "11‡" (OCR artifact from the PDF). Original source likely reads "11+".
+  statement_date: '2023-07-26'
+- id: q107
+  added_date: '2026-04-22'
+  text: If you reference my News Nation interview and I talked about a multi-decade, you know, campaign to disenfranchise public interest, basically.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 32; scratch lines 1838-1840
+  significance: Grusch's sworn characterization of USG disinformation — "multi-decade campaign to disenfranchise public interest."
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q108
+  added_date: '2026-04-22'
+  text: The kind of general unclassed wave tops. Certainly, the contractors, you know, or the metal benders, so to speak, the ones actually doing specific performance on government contracts.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Ocasio-Cortez, p. 32; scratch lines 1873-1875
+  significance: Grusch describes contractor involvement — "metal benders" doing specific performance on government contracts — in reference to UAP-related activities.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q109
+  added_date: '2026-04-22'
+  text: For certain IR&D activities, I can only think of ones conventional in nature. Sometimes they flow through certain, I will just say SAP programs, that have cognizant authority over the Air Force or something and those are congressionally reported compartments.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Ocasio-Cortez, p. 32-33; scratch lines 1893-1902
+  significance: Technical expansion — Grusch describes how contractor IR&D funds escape congressional oversight by being internal to contractors.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q110
+  added_date: '2026-04-22'
+  text: Yes, I am familiar with the UAP Task Force 2019 Security Classification guide. I think it is fair. I did actually help author that with the Director.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Biggs, p. 35; scratch lines 2020-2022
+  significance: Grusch confirms on the record that he co-authored the 2019 UAPTF Security Classification Guide — direct UAPTF institutional involvement beyond analytical contribution.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q111
+  added_date: '2026-04-22'
+  text: Yes. I will say—I will call it a lazy attitude about declassifying videos. I mean, I have seen some of the videos of, you know, the recent shoot down and I saw no reason that could not have been released as long as they mask, you know, some data. The American people deserve to see that imagery and full motion video.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Biggs, p. 35; scratch lines 2024-2029
+  significance: Grusch on over-classification practice — "lazy attitude about declassifying videos."
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q112
+  added_date: '2026-04-22'
+  text: I know of multiple colleagues of mine that got physically injured and the activity——
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burlison, p. 36; scratch lines 2067-2068
+  significance: Sworn claim of physical injury to colleagues. Em-dash suspension indicates Burlison interrupted.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q113
+  added_date: '2026-04-22'
+  text: Both.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burlison, p. 36; scratch line 2071
+  significance: Sworn affirmative — physical injury caused both by UAPs and by people within the federal government. Major under-oath claim establishing that Grusch ascribes physical harm to both categories.
+  context: Oral testimony Q&A (response to "By UAPs or by people within the Federal Government?"), House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q114
+  added_date: '2026-04-22'
+  text: I cannot get into the specifics in an open environment, but at least the activity that I personally witnessed—and I have to be very careful here because you do not—you know, they tell you never to acknowledge tradecraft, right. So, what I personally witnessed, myself and my wife, was very disturbing.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burlison, p. 36; scratch lines 2075-2080
+  significance: Rare explicit first-person observational claim ("personally witnessed, myself and my wife") — Grusch describes a personally-witnessed retaliation/tradecraft event involving his wife.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q115
+  added_date: '2026-04-22'
+  text: I have to be careful to describe what I have seen firsthand and not in this environment. But I could answer that question behind closed doors.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burlison, p. 36; scratch lines 2086-2088
+  significance: Grusch declines to answer in open session whether he personally saw the alleged spacecraft — defers to a closed session.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q116
+  added_date: '2026-04-22'
+  text: That is something I have not witnessed myself.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burlison, p. 36; scratch line 2090
+  significance: 'Sworn admission — Grusch has NOT personally seen any
+
+    non-human biologics/bodies. Critical epistemic boundary for r1
+
+    rumor (non-human biologics): primary-source statement establishes
+
+    Grusch''s biologics claim is relayed, not firsthand.
+
+    '
+  context: Oral testimony Q&A (response to "Have you seen any of the bodies?"), House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q117
+  added_date: '2026-04-22'
+  text: To answer your first question and, you know, I am here as a fact witness and not an expert, but I will give you a theoretical framework at least to work off to kind of espouse crashes. Regardless of, you know, your level of sentience, right—you know, planes crash, cars crash, and a number of sorties, however high, a small percentage are going to end in, you know, mission failure, if you will, as we say in the Air Force.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burlison, p. 36-37; scratch lines 2101-2107
+  significance: Grusch's theoretical framework for why non-human craft would crash — also explicit statement "I am here as a fact witness and not an expert" bounding his epistemic role.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q118
+  added_date: '2026-04-22'
+  text: And then in terms of multidimensionality, that kind of thing, the framework that I am familiar with, for example, is something called the holographic principle both—it derives itself from general relativity and quantum mechanics and that is if you want to imagine a 3D object such as yourself casting a shadow onto a 2D surface that is the holographic principle. So, you can be projected—quasi projected from higher dimensional space to lower dimensional. It is a scientific trope that you can actually cross, literally, as far as I understand, but there is
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burlison, p. 37-38; scratch lines 2108-2120
+  significance: Grusch's own theoretical framing ("holographic principle") for interdimensional UAP possibility. Explicitly framed as theoretical, not evidenced.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q119
+  added_date: '2026-04-22'
+  text: Not to my knowledge. Plus, the recoveries predate a lot of our advanced programs that I previously am waiving off. So——
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burlison, p. 37; scratch lines 2128-2130
+  significance: Grusch's response to Occam's Razor alternative that recovered craft are domestic military contractor products — he replies recoveries predate current advanced programs.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q120
+  added_date: '2026-04-22'
+  text: I have actually never seen anything personally, believe it or not.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Mace, p. 39; scratch lines 2256-2257
+  significance: Sworn statement — Grusch has never personally seen a UAP. Grounds his entire testimony as relayed, not observational.
+  context: Oral testimony Q&A (response to "when you reported your experiences with a UAP did any of you face any repercussions with your superiors?"), House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q121
+  added_date: '2026-04-22'
+  text: As previously stated publicly, yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Mace, p. 39; scratch line 2262
+  significance: Sworn affirmative to "do you believe there is an active disinformation campaign within our government to deny the existence of UAPs?"
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q122
+  added_date: '2026-04-22'
+  text: I can only speak for my personal leadership over at NGA. I tried to look at every report that came through that I could triage.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Mace, p. 40; scratch lines 2301-2303
+  significance: Grusch's own description of his NGA UAP-triage responsibility scope.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q123
+  added_date: '2026-04-22'
+  text: There are certain elected leaders that had more information that—I am not sure what they have shared with certain Gang of 8 members or et cetera. But, certainly, I would not be surprised.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Mace, p. 40; scratch lines 2307-2310
+  significance: Grusch's measured answer to whether officials have unlawfully withheld information from Congress.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q124
+  added_date: '2026-04-22'
+  text: It is something I cannot discuss in a public setting.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Mace, p. 40; scratch line 2315
+  significance: Grusch declines to answer in open session whether the government has made contact with intelligent extraterrestrials.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q125
+  added_date: '2026-04-22'
+  text: As I have stated publicly already in my News Nation interview, biologics came with some of these recoveries. Yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Mace, p. 40; scratch lines 2319-2320
+  significance: LANDMARK — First sworn, under-oath, verbatim congressional statement from Grusch that "biologics came with some of these recoveries." Primary-source attestation for r1 rumor (non-human biologics claim).
+  context: Oral testimony Q&A (response to "do we have the bodies of the pilots who piloted this craft?"), House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q126
+  added_date: '2026-04-22'
+  text: Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently still on the program.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Mace, p. 40; scratch lines 2322-2324
+  significance: LANDMARK — Sworn under-oath verbatim congressional statement that the biologics are "nonhuman" per assessment of active-program insiders. Primary-source attestation for r1 rumor (non-human biologics) AND r2 (NHI terminology). Note carefully relayed framing — "assessment of people with direct knowledge."
+  context: Oral testimony Q&A (response to "were they human or nonhuman biologics?"), House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q127
+  added_date: '2026-04-22'
+  text: The specific documentation I would have to talk to you in a SCIF about.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Mace, p. 40; scratch lines 2327-2328
+  significance: Grusch defers documentation evidence for biologics to closed-session SCIF.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q128
+  added_date: '2026-04-22'
+  text: I can give you a specific cooperative and hostile witness list of specific individuals that were in those.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Mace, p. 41; scratch lines 2341-2342
+  significance: Grusch offers a "cooperative and hostile witness list" — indicates he maintains a structured witness database.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q129
+  added_date: '2026-04-22'
+  text: Fair assessment.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Ogles, p. 43; scratch line 2470
+  significance: Sworn affirmative that UAPs could be collecting reconnaissance on U.S. capabilities.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q130
+  added_date: '2026-04-22'
+  text: Yes, sir, potentially.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Ogles, p. 43; scratch line 2491
+  significance: Sworn qualified affirmative that UAPs potentially constitute an existential national security threat.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q131
+  added_date: '2026-04-22'
+  text: By external observation, sure, that could be a fair assessment. Yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Ogles, p. 43-44; scratch lines 2506-2507
+  significance: Grusch's hedged affirmative that UAPs show interest in U.S. nuclear technology — framed as external-observation assessment.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q132
+  added_date: '2026-04-22'
+  text: Yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett (follow-up round), p. 44; scratch line 2534
+  significance: Sworn affirmative — Grusch has personal knowledge of someone injured working on legacy UAP reverse-engineering.
+  context: Oral testimony Q&A (response to "Do you have any personal knowledge of someone who has possibly been injured working on legacy UAP reverse engineering?"), House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q133
+  added_date: '2026-04-22'
+  text: I cannot get into specifics, but you can imagine assessing an unknown unknown there is a lot of potentialities you cannot fully prepare for.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 44; scratch lines 2539-2541
+  significance: Grusch's framing of injury causation via "unknown-unknown" assessment risk.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q134
+  added_date: '2026-04-22'
+  text: Yes. There was some issue with mine. So, you know, PPD–19 process it goes to the intel committees either through PPD–19 or ICD 120. There is not a good way for the intelligence community Inspector General to provide that to other committees, and I asked my information to be sent to the House and Senate Armed Services Committee because there are Title 10 equities at play. But there was no smooth process to do so.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 44; scratch lines 2544-2551
+  significance: Grusch's sworn account of procedural breakdown — his information couldn't cleanly reach HASC/SASC despite Title 10 equities. Specifically flags PPD-19/ICD-120 bottleneck.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q135
+  added_date: '2026-04-22'
+  text: Personally, yes.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 44; scratch line 2555
+  significance: Sworn affirmative — Grusch personally knows individuals participating in reverse-engineering programs for non-terrestrial craft.
+  context: Oral testimony Q&A (response to "Are you aware of any individuals that are participating in reverse engineering programs for non-terrestrial craft?"), House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q136
+  added_date: '2026-04-22'
+  text: Certainly, closed door and assurances that breaking their NDA they are not going to get administratively punished for so.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Burchett, p. 44-45; scratch lines 2560-2562
+  significance: Grusch asserts other reverse-engineering program insiders would testify under closed-door, retaliation-proof protections.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q137
+  added_date: '2026-04-22'
+  text: I think the phenomenon is a very complex and I like to leave an open mind analytically to specific origin.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Luna (3-min follow-up), p. 45; scratch lines 2579-2580
+  significance: Grusch on why he prefers "nonhuman intelligence" over "extraterrestrial life" — analytical agnosticism about origin.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q138
+  added_date: '2026-04-22'
+  text: If it is a traditional extraterrestrial origin or something else that we do not quite understand from an either biological or astrophysics perspective. I just like to keep an open mind on what it could be.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Luna, p. 45; scratch lines 2583-2586
+  significance: Grusch elaborates origin agnosticism — extraterrestrial vs. biological/astrophysical unknowns.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q139
+  added_date: '2026-04-22'
+  text: You are referring to actual—a public treaty in the U.N. register—it is funny you mentioned that—the agreement on measures to reduce the risk of outbreak of nuclear war signed in 1971. Unclassified treaty publicly available, and if you cite the George Washington University National Security Archives you will find the declassified, in 2013, specific provisions and the specific red line flash message traffic with the specific codes pursuant to Article Three and Article—also situation two, which is in the previously classified NSA archive. What I would recommend—and I tried to get access but I got a wall of silence at the White House—was those specific incidents when those—message traffic was used. I think some scholarship on that would open the door to a further investigation using those publicly available information.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Luna, p. 45-46; scratch lines 2594-2607
+  significance: Grusch points to the 1971 US-USSR nuclear-war-risk agreement, specifically Article 3 — claims it covers UAP incidents. Cites the George Washington University National Security Archive 2013 declassification. Also claims he sought specific-incident records but "got a wall of silence at the White House."
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q140
+  added_date: '2026-04-22'
+  text: I have concerns based on the interviews I conducted under my official duties of potential violations of the Federal Acquisition Regulations—the FAR.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Luna, p. 45-46; scratch lines 2614-2616
+  significance: Grusch's sworn claim of potential FAR violations (federal contracting law) in connection with the alleged programs.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-07-26'
+- id: q141
+  added_date: '2026-04-22'
+  text: Based on my DODSR security review and what they have determined that is unclassified.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A with Rep. Raskin (follow-up), p. 46; scratch lines 2645-2646
+  significance: Grusch's explicit rule defining the line of his testimony — bounded by DOPSR unclassified determination.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q142
+  added_date: '2026-04-22'
+  text: Purely a sense of duty. My first swore an oath when I was a cadet 18 years ago and I still uphold that even out of uniform.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A closing round with Rep. Burchett, p. 47; scratch lines 2704-2706
+  significance: Grusch's stated motive for coming forward — sense of duty and oath upheld 18 years since cadet days.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q143
+  added_date: '2026-04-22'
+  text: I will just touch on the whistleblower side of it. I do encourage, you know, current and former military, intelligence community, and industry contractors to come forward in a legal way, either through the IC or DoD or whatever the cognizant IGs are to join me in this discussion.
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: Q&A closing round with Rep. Burchett, p. 47; scratch lines 2738-2742
+  significance: Grusch's explicit public call-to-action for other military/IC/contractor personnel to come forward through legal IG channels.
+  context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q144
+  added_date: '2026-04-22'
+  text: of exotic origin (non-human intelligence, whether extraterrestrial or unknown origin) based on the vehicle morphologies and material science testing and the possession of unique atomic arrangements and radiological signatures
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: ¶7 (Kean/Blumenthal quote attribution of Grusch)
+  significance: KEY — Grusch's published characterization of the retrieved material's origin as "non-human intelligence, whether extraterrestrial or unknown origin" with the evidentiary basis cited (vehicle morphologies, material science testing, atomic arrangements, radiological signatures). Primary-source attestation for r2 rumor (NHI terminology) — this is Grusch's published terminology preference predating his sworn testimony.
+  context: The Debrief article by Kean & Blumenthal, published 2023-06-05
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-05'
+- id: q145
+  added_date: '2026-04-22'
+  text: The material includes intact and partially intact vehicles.
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: ¶8 (direct quote block)
+  significance: Grusch's on-the-record published statement that the retrieved material includes intact and partially intact vehicles — not just fragments.
+  context: The Debrief article by Kean & Blumenthal, published 2023-06-05; statements cleared by DOPSR April 4 and 6, 2023
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-05'
+- id: q146
+  added_date: '2026-04-22'
+  text: multiple agencies nesting UAP activities in conventional secret access programs without appropriate reporting to various oversight authorities
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: ¶15 (Kean/Blumenthal quote attribution of Grusch's DOPSR-cleared statements from April 2023)
+  significance: Grusch's DOPSR-cleared characterization of how "legacy programs" are concealed — by nesting UAP activities inside conventional SAPs.
+  context: DOPSR-cleared Grusch statements (April 2023), published in The Debrief article, 2023-06-05
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-04-06'
+- id: q147
+  added_date: '2026-04-22'
+  text: – a competition with near-peer adversaries over the years to identify UAP crashes/landings and retrieve the material for exploitation/reverse engineering to garner asymmetric national defense advantages
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: ¶16 (Grusch's DOPSR-cleared description)
+  significance: Grusch's DOPSR-cleared framing of the alleged multi-decade recovery program as a "publicly unknown Cold War" competing with near-peer adversaries for UAP material retrieval.
+  context: DOPSR-cleared Grusch statements (April 2023), published in The Debrief article, 2023-06-05
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-04-06'
+- id: q148
+  added_date: '2026-04-22'
+  text: Individuals on these UAP programs approached me in my official capacity and disclosed their concerns regarding a multitude of wrongdoings, such as illegal contracting against the Federal Acquisition Regulations and other criminality and the suppression of information across a qualified industrial base and academia
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: ¶19 (direct Grusch quote, DOPSR-cleared)
+  significance: Grusch's DOPSR-cleared statement about how insiders approached him, naming the wrongdoings (FAR violations, other criminality, info suppression across industry and academia).
+  context: DOPSR-cleared Grusch statements (April 2023), published in The Debrief article, 2023-06-05
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-04-06'
+- id: q149
+  added_date: '2026-04-22'
+  text: When you have multiple agencies nesting UAP activities in conventional SAP/CAP programs, both as recipients of exploitation-related insights and for operational reasons, without appropriate reporting to various oversight authorities, you have a problem
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: ¶29 (direct Grusch quote)
+  significance: Expanded version of Grusch's structural-concealment framing — explicitly naming SAPs and CAPs as nesting vehicles.
+  context: The Debrief article by Kean & Blumenthal, published 2023-06-05
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2023-06-05'
+- id: q150
+  added_date: '2026-04-22'
+  text: eighty-year arms race
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: final ¶ (Grusch quoted fragment)
+  significance: Grusch's framing of the duration — "eighty-year arms race" places the origin of the alleged secrecy to the mid-1940s (roughly aligning with the 1930s claim he made under oath).
+  context: The Debrief article by Kean & Blumenthal, published 2023-06-05
+  observation_type: relayed
+  statement_date: '2023-06-05'
+- id: q151
+  added_date: '2026-04-22'
+  text: further inhibits the world populace to be prepared for an unexpected, non-human intelligence contact scenario
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: final ¶ (direct Grusch quote continuation)
+  significance: Grusch frames secrecy as preventing human readiness for "non-human intelligence contact" — another published deployment of "non-human intelligence" terminology.
+  context: The Debrief article by Kean & Blumenthal, published 2023-06-05
+  observation_type: relayed
+  statement_date: '2023-06-05'
+- id: q152
+  added_date: '2026-04-22'
+  text: I hope this revelation serves as an ontological shock sociologically and provides a generally uniting issue for nations of the world to re-assess their priorities
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: final ¶ (direct Grusch quote — closing statement)
+  significance: Grusch's personal closing framing — the "ontological shock" phrase, frequently cited in subsequent media.
+  context: The Debrief article by Kean & Blumenthal, published 2023-06-05
+  observation_type: relayed
+  statement_date: '2023-06-05'
+- id: q153
+  added_date: '2026-04-22'
+  text: The public is rightfully demanding to know the truth and it is my true privilege for me to serve the people of this country once again. I will use all my expertise to support Rep. Burlison and help the US Congress restore full oversight while enabling the Legislative Branch’s ability to investigate and hold those accountable who have broken the law and lied not only to our Congress, but also to the Executive Office of the President, Director of National Intelligence, and Department of Justice
+  source:
+    path: government/burlison-house-gov-grusch-advisor-20250327.html
+    location: Press release body, direct-attribution quote following "said Grusch"
+  significance: Grusch's direct quote on joining Rep. Burlison's office as Special Advisor to the Task Force on the Declassification of Federal Secrets — specifically names Executive Office, DNI, and DOJ as lied-to parties, widening his accusation beyond Congress alone.
+  context: Burlison press release, 2025-03-27 (House.gov)
+  observation_type: relayed
+  statement_date: '2025-03-27'
+- id: q154
+  added_date: '2026-04-22'
+  text: Good Afternoon, Please see attached for review for public release. v/r, David Grusch
+  source:
+    path: government/blackvault-grusch-dopsr-23-F-0946.pdf
+    location: 'Email dated 2023-03-07 1:00 PM to WHS Pentagon ESD Mailbox
+
+      SECREV (Subject: "Summary for Review"); scratch lines 180-196
+
+      '
+  significance: Grusch's signed email transmitting the "Speaker/Author Summary" (Case 23-S-1405) for DOPSR pre-publication review — establishes the paper-trail for his cleared statements published in The Debrief.
+  context: DOPSR pre-publication review submission, 2023-03-07
+  observation_type: relayed
+  statement_date: '2023-03-07'
+- id: q155
+  added_date: '2026-04-22'
+  text: Good Afternoon, Here is a future Q&A for review. This was created on my own personal accord and was not a document that was part of my previous official work as a government civilian. -David Grusch
+  source:
+    path: government/blackvault-grusch-dopsr-23-F-0946.pdf
+    location: 'Email dated 2023-04-05 12:56 PM to Whigham, Michelle / WHS
+
+      Pentagon ESD Mailbox SECREV (Subject: "Interview Question
+
+      Submission"); scratch lines 637-653
+
+      '
+  significance: Grusch's signed email transmittal for the Interview-Question Q&A document (Case 23-S-1707) — explicit attestation that the Q&A was created "on my own personal accord" and not part of his official government-civilian work.
+  context: DOPSR pre-publication review submission, 2023-04-05
+  observation_type: relayed
+  statement_date: '2023-04-05'
+- id: q156
+  added_date: '2026-04-22'
+  text: 'Please give me a call to discuss conditions and admin items:'
+  source:
+    path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
+    location: Email dated 2023-11-10 11:05 AM from David Grusch, Subject "Contact Request"; scratch lines 962-999
+  significance: Grusch's initial contact to AARO after sustained refusal — contradicts Kirkpatrick's public framing that Grusch "refused to speak." Documents that Grusch did reach out to discuss "conditions and admin items" for an interview.
+  context: Grusch-AARO correspondence, 2023-11-10
+  observation_type: relayed
+  statement_date: '2023-11-10'
+- id: q157
+  added_date: '2026-04-22'
+  text: 'Thank you for sending these items. As a former agency-level SAPMO and CAPCO I take security policies very seriously. In the DoD SAPCO memo, the term "UAP-related" is not defined. FY23 NDAA Sec. 1673 Subsection B defines it as the following: "any activity or program by a department or agency of the Federal Government or a contractor of such a department or agency relating to unidentified anomalous phenomena, including with respect to material retrieval, material analysis, reverse engineering, research and development, detection and tracking, developmental or operational testing, and security protections and enforcement." The key issue here is that many of these activities have conventional classified and compartmented Security Classification Guides that also cover non-UAP activities as well. To discuss the UAP-related activities would also expose these conventional SAP mission areas. An oral history interview subject must also be absolved of this obligation to protect this information
+    as well, some of it may be bigoted or WAIVED (lAW DODI 5205.11 and 10 USC Sec 119). Furthermore, as discussed Friday, I am seeking a ODNI CAPCO determination to absolve an oral history interview subject of any NDA''s relating to UAP-related and adjacent (as stated above) IC CAP information. Additionally, in my particular case, in order to horizontally protect a portion of my oral history testimony previously provided to ICIG and the intelligence committees, we would need to conduct the interview at the HCS-Operations (0) Restricted Handling (RH) level (lAW DNI CAPCO manual Sec. 4). Has the CIA Office of Security (OS) or Directorate of Operations (DO) provided a memo in this regard for oral history interview subjects? Has the OS provided a memo to also cover managed-need-to-know (MNTK) projects not directly reported to ODNI CAPCO? Lastly, what signed policy does AARO have to receive non-title-10 SAPs (ie, DOE and NSC)? Has the EOP NSC Security Director, Director National Program Management
+    Staff OUSD(I&S), or DOE SAPCO/SAPOC provided a memo similar to the DoD SAPCO memo you provided? v/r, DG'
+  source:
+    path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
+    location: 'Email dated 2023-11-13 12:24 PM from David Grusch (Subject:
+
+      "Re: Contact Request"); scratch lines 1226-1262 (duplicates
+
+      at lines 854-917)
+
+      '
+  significance: KEY substantive Grusch signed letter — his detailed technical objections to AARO interview terms. Names specific security frameworks (DODI 5205.11, 10 USC 119, DNI CAPCO manual Sec. 4, HCS-Operations Restricted Handling) and asks whether AARO has secured memos from CIA OS/DO for oral-history subjects, from EOP NSC Security Director, OUSD(I&S), and DOE SAPCO/SAPOC. Implies he has testimony that reaches DOE and NSC-level SAPs.
+  context: Grusch-AARO correspondence, 2023-11-13 — technical objection to AARO's SAPCO-only memo coverage
+  observation_type: relayed
+  statement_date: '2023-11-13'
+- id: q158
+  added_date: '2026-04-22'
+  text: Thank you. I apologize for the confusion this morning about my whereabouts. I should been more clear in my email on Monday. DG
+  source:
+    path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
+    location: 'Email dated 2023-11-14 4:35 PM from David Grusch (Subject:
+
+      "Re: Contact Request"); scratch lines 769-777
+
+      '
+  significance: Grusch's brief acknowledgment of the no-show at AARO's Arlington facility on 2023-11-14 — does not elaborate on reason.
+  context: Grusch-AARO correspondence, 2023-11-14
+  observation_type: relayed
+  statement_date: '2023-11-14'
+- id: q159
+  added_date: '2026-04-22'
+  text: AARO Staff, With due respect, I will need answers to my questions before I will be comfortable meeting. Please provide responses so that we can hopefully move forward and schedule a meeting. The law may grant your office need-to-know, but does not establish policies and procedures with various data owners. I have managed multi-compartmented activities throughout my entire career and have multiple DCSA security professional certifications. I did not ask these questions for mere curiosity. DG
+  source:
+    path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
+    location: 'Email dated 2023-11-14 10:36 AM from David Grusch (Subject:
+
+      "Re: Contact Request"); scratch lines 802-831
+
+      '
+  significance: Grusch's signed statement of the structural objection that "the law may grant your office need-to-know, but does not establish policies and procedures with various data owners" — asserts he holds multiple DCSA security-professional certifications.
+  context: Grusch-AARO correspondence, 2023-11-14 (morning of the no-show)
+  observation_type: relayed
+  statement_date: '2023-11-14'
+- id: q160
+  added_date: '2026-04-22'
+  text: Good Evening, Thank you for your email. I had expressed specific concerns, both directly via email and through counsel, and those specific concerns have not yet been addressed in writing. Please reference those emails in this chain. DG
+  source:
+    path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
+    location: 'Email dated 2023-11-19 6:03 PM from David Grusch (Subject:
+
+      "Re: Contact Request"); scratch lines 706-727
+
+      '
+  significance: Grusch's signed response to AARO's renewed invitation — states his specific concerns (via email and counsel) remain unaddressed in writing.
+  context: Grusch-AARO correspondence, 2023-11-19
+  observation_type: relayed
+  statement_date: '2023-11-19'
+- id: q161
+  added_date: '2026-04-22'
+  text: Good Afternoon, Thank you will review. Please address my specific concerns that I sent via email on 19 Nov 23. DG
+  source:
+    path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
+    location: 'Email dated 2024-01-08 from David Grusch (Subject: "Re:
+
+      Contact Request"); scratch lines 653-665
+
+      '
+  significance: Grusch's final-in-release signed response to AARO, continuing to defer interview pending written response to his 19 Nov 23 concerns. Establishes the impasse position through January 2024.
+  context: Grusch-AARO correspondence, 2024-01-08
+  observation_type: relayed
+  statement_date: '2024-01-08'
+- id: q162
+  added_date: '2026-04-22'
+  text: I have read the disclosure drafted by my attorneys, Irvin Charles McCullough, III, and Andrew P. Bakaj, and I hereby adopt the statements as if they were my own and do solemnly affirm under the penalties of perjury that the contents of the foregoing paper are true and correct to the best of my knowledge.
+  source:
+    path: government/grusch-ppd-19-procedural-filing.pdf
+    location: Sworn affirmation block at filing conclusion, dated 2022-05-25; scratch lines 131-134
+  significance: KEY — Grusch's under-penalty-of-perjury adoption of the entire PPD-19 disclosure body as his own statement. Legally binds every attorney-drafted claim in the filing to Grusch as his sworn statement. Foundational source document for all filed-claim categorization.
+  context: Sworn affirmation, PPD-19 Disclosure of Urgent Concern(s) / Complaint of Reprisal, ICIG, dated 2022-05-25
+  observation_type: relayed
+  category: filed-claim
+  statement_date: '2022-05-25'
+- id: q163
+  added_date: '2026-04-22'
+  text: Mr. Grusch previously served as a fully cleared member of the United States (US) Government’s UAP Task Force. He has direct knowledge that certain IC elements have purposely and intentionally withheld and/or concealed UAP-telated classified information from the US Congress. He has direct knowledge that this classified information has been withheld and/or concealed by the involved IC elements to purposely and intentionally thwart legitimate Congressional oversight of the UAP Program.
+  source:
+    path: government/grusch-ppd-19-procedural-filing.pdf
+    location: PPD-19 filing ¶3, adopted under oath by Grusch; scratch lines 44-53
+  significance: Core filed claim — Grusch (via his counsel-drafted and then sworn-adopted filing) asserts direct knowledge that IC elements purposely withheld UAP-related classified info from Congress to thwart oversight.
+  context: PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25 (drafted by counsel, sworn-adopted by Grusch)
+  observation_type: relayed
+  category: filed-claim
+  naming_quirks: Source has OCR artifact "UAP-telated" for "UAP-related" — preserved verbatim from filing.
+  statement_date: '2022-05-25'
+- id: q164
+  added_date: '2026-04-22'
+  text: In July 2021, Mr. Grusch confidentially provided UAP-related classified information to the Department of Defense Inspector General (DoD IG). At that time, Mr. Grusch communicated classified information about the improper withholding and/or concealment of classified material from the US Congress by certain IC elements. Mr. Grusch believes that his identity and the fact of his UAP-telated communication(s) with the DoD IG have been disclosed to individuals and/or entities outside the DoD IG, and that he has suffered retaliation and reprisal(s) related thereto.
+  source:
+    path: government/grusch-ppd-19-procedural-filing.pdf
+    location: PPD-19 filing ¶4, adopted under oath by Grusch; scratch lines 55-65
+  significance: Sworn filed claim — establishes the July 2021 DoD IG disclosure, alleges outside-IG disclosure of his identity, and alleges retaliation causally tied.
+  context: PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25
+  observation_type: relayed
+  category: filed-claim
+  naming_quirks: Source has OCR artifact "UAP-telated" for "UAP-related" — preserved verbatim.
+  statement_date: '2022-05-25'
+- id: q165
+  added_date: '2026-04-22'
+  text: Since his protected disclosure(s) to the DoD IG, Mr. Grusch has been subjected to numerous adverse security clearance actions. These actions have unfairly and unjustifiably impugned his integrity, character, judgment, professionalism, and mental health. While he remains security-cleared by the NGA, his compatrtmented accesses at numerous other IC elements have been — mysteriously and appatently without plausible explanation — canceled, delayed, denied, and/or improperly obstructed.
+  source:
+    path: government/grusch-ppd-19-procedural-filing.pdf
+    location: PPD-19 filing ¶5, adopted under oath by Grusch; scratch lines 67-75
+  significance: Sworn filed claim documenting the specific retaliation pattern — "numerous adverse security clearance actions" impugning integrity/character/judgment/professionalism/mental health. Names compartmented-access cancellation/delay/denial at multiple IC elements.
+  context: PPD-19 Disclosure of Urgent Concern(s), ICIG, dated 2022-05-25
+  observation_type: relayed
+  category: filed-claim
+  naming_quirks: Source has OCR artifacts "compatrtmented" (for "compartmented") and "appatently" (for "apparently") — preserved verbatim from the filing.
+  statement_date: '2022-05-25'
+vouching_chain:
+- id: vc1
+  added_date: '2026-04-22'
+  voucher_path: /people/karl-nell
+  attestation: 'Karl E. Nell, a recently retired Army Colonel and current aerospace executive who was the Army''s liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there, characterizes Grusch as "beyond reproach."
+
+    '
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: paragraph beginning "Karl E. Nell, a recently retired Army Colonel"
+  evidentiary_basis: primary-source
+  confidence: high
+  note: Nell is the direct institutional peer — Army liaison to the UAP Task Force 2021-2022, worked alongside Grusch on the Task Force. "Beyond reproach" is the canonical short-form attestation.
+- id: vc2
+  added_date: '2026-04-22'
+  voucher_path: /people/karl-nell
+  attestation: '"His assertion concerning the existence of a terrestrial arms race occurring sub-rosa over the past eighty years focused on reverse engineering technologies of unknown origin is fundamentally correct, as is the indisputable realization that at least some of these technologies of unknown origin derive from non-human intelligence," said Karl Nell, the retired Army Colonel who worked with Grusch on the UAP Task Force.
+
+    '
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: paragraph beginning '"His assertion concerning the existence of a terrestrial arms race"'
+  evidentiary_basis: primary-source
+  confidence: high
+  note: Nell's substantive attestation — goes beyond character vouching to affirm the core factual claim (reverse engineering program; non-human intelligence origin).
+- id: vc3
+  added_date: '2026-04-22'
+  voucher_path: /people/tim-burchett
+  attestation: '"I think it went really well," said Rep. Burchett. "We had great witnesses come in with real, credible information and I think we opened a floodgate on this issue. I think the genuine and honest testimonies given by these witnesses opened a lot of people''s eyes and I''m grateful for that. I also want to thank my colleagues and I look forward to continuing working on this issue so that we can bring more transparency to the American people about what our government does or doesn''t want us to know."
+
+    '
+  source:
+    path: government/burchett-house-gov-post-hearing-statement-20230726.html
+    location: body-content paragraph beginning '"I think it went really well"'
+  evidentiary_basis: on-record
+  confidence: high
+  note: Burchett co-chaired the hearing that received Grusch's sworn testimony. Quote addresses all three witnesses collectively (Grusch, Fravor, Graves) — "real, credible information" and "genuine and honest testimonies" apply to Grusch as a named panelist.
+- id: vc4
+  added_date: '2026-04-22'
+  voucher_path: /people/tim-burchett
+  attestation: '"It doesn’t matter," Rep. Tim Burchett, R-Tenn., said of the story. "What matters is the fact that this man served his country and is suffering for it. And now, we’re stigmatizing this further," Burchett said.
+
+    '
+  source:
+    path: news/newsnation-burchett-sickening-grusch-202308.html
+    location: paragraph beginning '"It doesn't matter," Rep. Tim Burchett'
+  evidentiary_basis: on-record
+  confidence: high
+  note: Burchett responding to Ken Klippenstein's publication of Grusch's mental-health records — defending Grusch's service and framing the leak as stigmatization rather than substantive rebuttal.
+- id: vc5
+  added_date: '2026-04-22'
+  voucher_path: /people/tim-burchett
+  attestation: '"This man served his country," Burchett said. "Dadgummit, we’ve got to do better than this. I’m so disgusted about this. When I knew about it last night, I woke up at 3 o’clock this morning. Hell, I couldn’t get back to sleep."
+
+    '
+  source:
+    path: news/newsnation-burchett-sickening-grusch-202308.html
+    location: paragraph beginning '"This man served his country"'
+  evidentiary_basis: on-record
+  confidence: high
+  note: Burchett on NewsNation's Cuomo program — described himself as "sickened" by the discrediting attempt against Grusch. Character-level attestation rather than claim-substantive.
+- id: vc6
+  added_date: '2026-04-22'
+  voucher_path: /people/eric-burlison
+  attestation: '"The American people deserve answers about UAPs," said Rep. Burlison. "David Grusch has risked his career to expose critical information. His expertise will be vital as we work to uncover the truth and hold the government accountable."
+
+    '
+  source:
+    path: government/burlison-house-gov-grusch-advisor-20250327.html
+    location: evo-press-release body paragraph beginning '"The American people deserve answers"'
+  evidentiary_basis: on-record
+  confidence: high
+  note: Issued at the moment of hiring Grusch as Special Advisor to the Task Force on the Declassification of Federal Secrets — institutional ratification from a sitting member of Congress. Frames Grusch's testimony as "critical information" and his expertise as "vital."
+- id: vc7
+  added_date: '2026-04-22'
+  voucher_path: /people/marco-rubio
+  attestation: 'Rubio told NewsNation on Monday that he has heard from firsthand witnesses in "high positions in our government" to some of the claims made by Grusch.
+
+    '
+  source:
+    path: news/newsnation-rubio-not-the-only-one-202306.html
+    location: paragraph beginning "Rubio told NewsNation on Monday"
+  evidentiary_basis: on-record
+  confidence: high
+  note: Rubio was SSCI Vice Chair at the time — institutional standing to speak to what the committee has received. Paraphrase by NewsNation reporter rather than direct Rubio quote; the quoted fragment "high positions in our government" is verbatim Rubio.
+- id: vc8
+  added_date: '2026-04-22'
+  voucher_path: /people/marco-rubio
+  attestation: '"There are people that have come forward to share information with our committee over the last couple of years. … I want to be very protective of these people. A lot of these people came to us even before protections were in the law for whistleblowers to come forward," Rubio told NewsNation''s Joe Khalil during an exclusive interview.
+
+    '
+  source:
+    path: news/newsnation-rubio-not-the-only-one-202306.html
+    location: paragraph beginning '"There are people that have come forward"'
+  evidentiary_basis: on-record
+  confidence: high
+  note: Rubio confirms multiple whistleblowers beyond Grusch have come to SSCI — corroborates the "not the only one" claim central to Grusch's public framing. Ellipsis is in the NewsNation source.
+- id: vc9
+  added_date: '2026-04-22'
+  voucher_path: /people/marco-rubio
+  attestation: 'Rubio said that some of the officials with similar claims to Grusch are public figures with "high clearances."
+
+    '
+  source:
+    path: news/newsnation-rubio-not-the-only-one-202306.html
+    location: paragraph beginning "Rubio said that some of the officials"
+  evidentiary_basis: on-record
+  confidence: high
+  note: Reporter paraphrase with the verbatim phrase "high clearances" in quotes. Attests that Grusch-parallel whistleblowers hold clearances, elevating the credibility of the broader corroboration pool.
+- id: vc10
+  added_date: '2026-04-22'
+  voucher_path: /people/marco-rubio
+  attestation: 'Rubio did not comment on if he thinks the claims are credible, but he said he doesn’t see a reason why those who have come forward would lie.
+
+    '
+  source:
+    path: news/newsnation-rubio-not-the-only-one-202306.html
+    location: paragraph beginning "Rubio did not comment"
+  evidentiary_basis: on-record
+  confidence: medium
+  note: Reporter paraphrase, no verbatim Rubio fragment. Rubio declined to endorse the substantive claims but affirmed no motive-to-lie — a narrower form of credibility attestation than Nell or Burlison's statements.
 entities_referenced:
 - id: e1
   added_date: '2026-04-20'
@@ -416,19 +2375,220 @@ entities_referenced:
   entity_type: event
   name: July 26, 2023 House Oversight UAP hearing
   wrap_path: /events/2023-07-26-house-uap-hearing
+- entity_type: person
+  name: Karl Nell
+  wrap_path: /people/karl-nell
+  id: e12
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Ross Coulthart
+  wrap_path: /people/ross-coulthart
+  id: e13
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Ralph Blumenthal
+  wrap_path: /people/ralph-blumenthal
+  id: e14
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Leslie Kean
+  wrap_path: /people/leslie-kean
+  id: e15
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Tim Burchett
+  wrap_path: /people/tim-burchett
+  id: e16
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Eric Burlison
+  wrap_path: /people/eric-burlison
+  id: e17
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Marco Rubio
+  wrap_path: /people/marco-rubio
+  id: e18
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Anna Paulina Luna
+  wrap_path: /people/anna-paulina-luna
+  id: e19
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Jay Stratton
+  wrap_path: /people/jay-stratton
+  id: e20
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Jesse Michels
+  wrap_path: /people/jesse-michels
+  id: e21
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Joe Rogan
+  wrap_path: /people/joe-rogan
+  id: e22
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Harry Reid
+  wrap_path: /people/harry-reid
+  id: e23
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Christopher Mellon
+  wrap_path: /people/christopher-mellon
+  id: e24
+  added_date: '2026-04-22'
+- entity_type: person
+  name: James Lacatski
+  wrap_path: /people/james-lacatski
+  id: e25
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Luis Elizondo
+  wrap_path: /people/luis-elizondo
+  id: e26
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Robert Bigelow
+  wrap_path: /people/robert-bigelow
+  id: e27
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Garry Nolan
+  wrap_path: /people/garry-nolan
+  id: e28
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Peter Skafish
+  wrap_path: /people/peter-skafish
+  id: e29
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Sean Kirkpatrick
+  wrap_path: /people/sean-kirkpatrick
+  id: e30
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Kirsten Gillibrand
+  wrap_path: /people/kirsten-gillibrand
+  id: e31
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Chuck Schumer
+  wrap_path: /people/chuck-schumer
+  id: e32
+  added_date: '2026-04-22'
+- entity_type: person
+  name: Mike Rounds
+  wrap_path: /people/mike-rounds
+  id: e33
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: The Sol Foundation
+  wrap_path: /organizations/sol-foundation
+  id: e34
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: NewsNation
+  wrap_path: /organizations/newsnation
+  id: e35
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: The Debrief
+  wrap_path: /organizations/the-debrief
+  id: e36
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: American Alchemy
+  wrap_path: /organizations/american-alchemy
+  id: e37
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: Bigelow Aerospace
+  wrap_path: /organizations/bigelow-aerospace
+  id: e38
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: Lockheed Martin
+  wrap_path: /organizations/lockheed-martin
+  id: e39
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: Joe Rogan Experience
+  wrap_path: /organizations/joe-rogan-experience
+  id: e40
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: House Permanent Select Committee on Intelligence
+  wrap_path: /organizations/hpsci
+  id: e41
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: House Armed Services Committee
+  wrap_path: /organizations/hasc
+  id: e42
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: Senate Armed Services Committee
+  wrap_path: /organizations/sasc
+  id: e43
+  added_date: '2026-04-22'
+- entity_type: organization
+  name: House UAP Caucus
+  wrap_path: /organizations/house-uap-caucus
+  id: e44
+  added_date: '2026-04-22'
+- entity_type: transcript
+  name: NewsNation Reality Check with Coulthart — Grusch 2023-06-11
+  wrap_path: /transcripts/newsnation-coulthart-grusch-2023
+  id: e45
+  added_date: '2026-04-22'
+- entity_type: transcript
+  name: 'Joe Rogan Experience #2065 — Grusch + Coulthart 2023-11-21'
+  wrap_path: /transcripts/jre-2065-grusch-2023
+  id: e46
+  added_date: '2026-04-22'
+- entity_type: transcript
+  name: American Alchemy / Jesse Michels "72 hrs With Grusch" ~October 2023
+  wrap_path: /transcripts/american-alchemy-grusch-72hrs-2023
+  id: e47
+  added_date: '2026-04-22'
+- entity_type: transcript
+  name: Grusch Sol Foundation 2023 Symposium Closing Remarks
+  wrap_path: /transcripts/grusch-sol-2023-closing
+  id: e48
+  added_date: '2026-04-22'
+- entity_type: transcript
+  name: 2023-07-26 House Oversight UAP Hearing — Grusch
+  wrap_path: /transcripts/2023-07-26-house-grusch
+  id: e49
+  added_date: '2026-04-22'
+- entity_type: document
+  name: Burlison press release naming Grusch Special Advisor (2025-03-27)
+  wrap_path: /documents/burlison-grusch-advisor-announcement-2025
+  id: e50
+  added_date: '2026-04-22'
+- entity_type: document
+  name: Grusch PPD-19 Procedural Filing (unclassified)
+  wrap_path: /documents/grusch-ppd-19-procedural-filing
+  id: e51
+  added_date: '2026-04-22'
+- entity_type: document
+  name: AARO invitations to interview Grusch (FOIA 24-F-0266)
+  wrap_path: /documents/aaro-invitations-to-grusch-2024
+  id: e52
+  added_date: '2026-04-22'
+- entity_type: document
+  name: Grusch DOPSR pre-publication review materials (FOIA 23-F-0946)
+  wrap_path: /documents/grusch-dopsr-request-2023
+  id: e53
+  added_date: '2026-04-22'
+- entity_type: document
+  name: Debrief article breaking Grusch disclosure (2023-06-05)
+  wrap_path: /documents/debrief-grusch-2023
+  id: e54
+  added_date: '2026-04-22'
 naming_quirks: []
-rumors:
-- id: r1
-  added_date: '2026-04-20'
-  claim: Grusch has asserted that the U.S. government has retrieved "non-human biologics" from UAP crash sites
-  status: not-primary-source-established
-  observed_sources:
-  - Circulating in public discourse attributed to Grusch; the specific primary-source instance is not locatable without extraction of the 2023-07-26 oral transcript and the June 2023 Debrief article
-  note: Registering this rumor keeps the widely-circulated claim visible until the oral and Debrief sources are extracted and its primary-source status is resolved
-- id: r2
-  added_date: '2026-04-20'
-  claim: Grusch has named specific "Non-Human Intelligence" terminology and identified a specific named program in oral testimony
-  status: not-primary-source-established
-  observed_sources:
-  - Circulating in public discourse attributed to Grusch; the specific primary-source instance is not locatable without extraction of the 2023-07-26 oral transcript and subsequent interviews
-  note: The written statement is the only Grusch primary source with extracted quotes in this artifact at i0; additional terminology attributable to Grusch via oral testimony or interviews remains unestablished from primary source here
+rumors: []

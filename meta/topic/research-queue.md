@@ -89,6 +89,107 @@ ODNI report is a foundational document referenced from Graves).
 | `/people/tim-gallaudet` | person / institutional-actor | Medium | Former NOAA Chief Scientist and Deputy Administrator; UAP advocate | Public record |
 | `/documents/odni-preliminary-assessment-2021` | document / gov-doc | Medium | Referenced in Graves testimony; foundational UAP report | ODNI (public PDF; archived) |
 
+### Cluster E — Grusch disclosure ecosystem (rebuild 2026-04-22 surfaced these)
+
+Grusch person-node rebuild expanded source coverage from 2 sources
+(written testimony + bio) to 15 (added oral hearing transcript,
+4 YouTube transcripts, 4 FOIA PDFs, Debrief piece, Burlison
+announcement, 3 Burchett press releases, Rubio interviews, UAPDA
+package). The rebuild surfaced new entities across four groups —
+vouchers, Sol Foundation peers, disclosure journalists, and
+documents/transcripts cited in Grusch's statements. All appear in
+the `scripts/validate.py` broken-link registry.
+
+**Vouchers (high priority — directly support Grusch credibility):**
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/people/karl-nell` | person / institutional-actor | High | UAPTF Army liaison 2021-2022; Sol Foundation co-founder; "beyond reproach" + "fundamentally correct" voucher in Debrief 2023-06-05 | Debrief piece + Sol Symposium video (archived) |
+| `/people/tim-burchett` | person / institutional-actor | High | House Oversight UAP Subcommittee member; 3 archived credibility-attestation press releases | burchett.house.gov press releases (archived) |
+| `/people/eric-burlison` | person / institutional-actor | High | Hired Grusch as House Task Force on Declassification advisor 2025-03-27; ongoing employer | Burlison press release + X post (archived) |
+| `/people/marco-rubio` | person / institutional-actor | Medium | Then-SSCI Vice Chair; public on-record multi-witness vouching June 2023 | NewsNation interview + The Hill op-ed (archived via Wayback) |
+| `/people/anna-paulina-luna` | person / institutional-actor | Medium | House Oversight UAP Subcommittee chair (later); presided over Grusch-related proceedings; `Florida Politics` quote archived | florida politics article (archived) |
+
+**Sol Foundation peers (institutional context for Grusch's post-disclosure work):**
+
+Jay Stratton and Christopher Mellon also appear in Cluster A with
+Nimitz-era rationale; Grusch-ecosystem priorities upgrade both — see
+the "Priority reconciliation" note at the end of this cluster.
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/organizations/sol-foundation` | organization / private | High | Grusch's post-2023 employer (COO / advisor); 2 Sol pages + Nell white paper + 2024 symposium page archived | thesolfoundation.org pages (archived) |
+| `/people/garry-nolan` | person / institutional-actor | Medium | Sol Foundation co-founder named by Grusch as Sol co-founder | Public record |
+| `/people/peter-skafish` | person / institutional-actor | Medium | Sol Foundation co-founder named by Grusch as Sol co-founder | Public record |
+| `/people/harry-reid` | person / institutional-actor | Low | Former Senate Majority Leader; Grusch recounted Spring 2021 Las Vegas meeting (JRE #2065 testimony) | Public record |
+
+**Disclosure journalists (primary media channels for Grusch's public statements):**
+
+Ralph Blumenthal and Leslie Kean also appear in Cluster C as NYT 2017
+co-authors; Debrief-2023 co-authorship is a separate rationale but
+the build targets are the same person nodes — see priority
+reconciliation below.
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/people/ross-coulthart` | person / reporter | High | NewsNation "Reality Check"; primary journalist channel since June 2023; JRE #2065 co-guest | NewsNation transcripts (archived) |
+| `/people/jesse-michels` | person / reporter | Medium | American Alchemy "72 hrs With Grusch" documentary ~Oct 2023 | YouTube transcript (archived) |
+| `/people/joe-rogan` | person / reporter | Low | JRE #2065 host 2023-11-21; long-form Grusch interview | YouTube transcript (archived) |
+| `/organizations/newsnation` | organization / private | Medium | Publisher of Coulthart-Grusch reporting; multiple articles archived | Public record |
+| `/organizations/the-debrief` | organization / private | Medium | Debrief article venue; already used as Dietrich source; now needed for Grusch disclosure provenance | Public record |
+| `/organizations/american-alchemy` | organization / private | Low | Jesse Michels's YouTube channel | Public record |
+| `/organizations/joe-rogan-experience` | organization / private | Low | JRE podcast org | Public record |
+
+**Transcripts to build (verbatim-verified pilots):**
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/transcripts/2023-07-26-house-grusch` | transcript / hearing | High | Oral sworn testimony; 79 Grusch quotes mined during rebuild; cross-references Fravor + Graves hearing | Already archived (PDF in sources) |
+| `/transcripts/newsnation-coulthart-grusch-2023` | transcript / other | Medium | First on-camera disclosure interview (2023-06-11) | transcribe.py output (archived) |
+| `/transcripts/jre-2065-grusch-2023` | transcript / other | Medium | Most-extensive long-form interview (2023-11-21) | transcribe.py output (archived) |
+| `/transcripts/american-alchemy-grusch-72hrs-2023` | transcript / other | Low | Jesse Michels documentary | transcribe.py output (archived) |
+| `/transcripts/grusch-sol-2023-closing` | transcript / other | Low | Grusch closing remarks at Sol Foundation Symposium | transcribe.py output (archived) |
+
+**Documents to build:**
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/documents/debrief-grusch-2023` | document / non-gov-doc (article) | High | Kean/Blumenthal June 5 2023 disclosure-breaking article | Already archived (HTML in sources) |
+| `/documents/burlison-grusch-advisor-announcement-2025` | document / gov-doc | Medium | House press release naming Grusch advisor (2025-03-27) | Already archived |
+| `/documents/grusch-ppd-19-procedural-filing` | document / gov-doc (complaint) | Medium | Unclassified PPD-19 reprisal complaint | Already archived (via Internet Archive) |
+| `/documents/aaro-invitations-to-grusch-2024` | document / gov-doc | Medium | AARO letters inviting Grusch to interview (Grusch declined); FOIA 24-F-0266 | Already archived (via BlackVault mirror) |
+| `/documents/grusch-dopsr-request-2023` | document / gov-doc | Low | DOPSR pre-publication review materials; FOIA 23-F-0946 | Already archived (via BlackVault mirror) |
+
+**Institutional stubs surfaced (Grusch-exclusive — cross-cluster cases handled separately below):**
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/organizations/hpsci` | organization / gov | Low | House Permanent Select Committee on Intelligence — Grusch's historical reporting venue | Public record |
+| `/organizations/hasc` | organization / gov | Low | House Armed Services Committee | Public record |
+| `/organizations/sasc` | organization / gov | Low | Senate Armed Services Committee | Public record |
+| `/organizations/house-uap-caucus` | organization / gov | Low | House Task Force on Declassification / UAP Caucus — Grusch's current advisor affiliation | Public record |
+| `/organizations/lockheed-martin` | organization / private | Low | Named by Grusch as recipient of UAP material under his allegations | Public record |
+| `/organizations/bigelow-aerospace` | organization / private | Medium | AAWSAP-era material custodian per Grusch's JRE testimony; already 2 cross-refs | Public record |
+| `/people/james-lacatski` | person / institutional-actor | Medium | AAWSAP-era program lead; 2 cross-refs (Grusch + Skinwalker) | Public record |
+| `/people/robert-bigelow` | person / institutional-actor | Medium | Bigelow Aerospace founder; AAWSAP-era material context | Public record (Skinwalker + Grusch cross-ref) |
+| `/people/kirsten-gillibrand` | person / institutional-actor | Low | UAPDA co-sponsor; legislative response to Grusch disclosure | senate.gov press release (archived) |
+| `/people/chuck-schumer` | person / institutional-actor | Low | UAPDA co-author; legislative response | senate.gov press release (archived) |
+| `/people/mike-rounds` | person / institutional-actor | Low | UAPDA co-author; legislative response | senate.gov press release (archived) |
+
+**Priority reconciliation — stubs already listed in earlier clusters:**
+
+These five person nodes appear in both Cluster A/C and here. Priority
+follows the highest-priority cluster in which the stub surfaces
+(build-candidate decisions are global to the stub, not per-cluster).
+
+| Path | Earlier cluster | Grusch-context rationale | Resolved priority |
+|---|---|---|---|
+| `/people/jay-stratton` | Cluster A (Medium — 2009 Fravor contact) | UAPTF director who tasked Grusch to identify SAPs/CAPs (2019); 6 cross-refs in built nodes | **High** |
+| `/people/christopher-mellon` | Cluster A (Low — TTSA advisor) | Former DASD(I); Sol Foundation peer; 4 cross-refs; Grusch contradiction-context (AARO-trust observation in Debrief) | **Medium** |
+| `/people/luis-elizondo` | Cluster A (Medium — AATIP lead) | AATIP-era program office; 4 cross-refs | Medium (unchanged) |
+| `/people/ralph-blumenthal` | Cluster C (Low — NYT 2017) | Co-author of Debrief 2023 piece that broke Grusch disclosure | **Medium** |
+| `/people/leslie-kean` | Cluster C (Low — NYT 2017) | Co-author of Debrief 2023 piece that broke Grusch disclosure | **Medium** |
+
 ### Cluster C — NYT 2017 disclosure chain
 
 Secondary cluster surfaced through Fravor testimony narrative.

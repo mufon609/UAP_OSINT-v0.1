@@ -573,6 +573,15 @@ def normalize_for_compare(text):
     text = text.replace("\u2014", "-").replace("\u2013", "-")
     # Non-breaking space -> space
     text = text.replace("\u00a0", " ")
+    # YouTube-caption timestamp markers — strip [MM:SS] and [H:MM:SS].
+    # transcribe.py prefixes every caption line with a timing marker
+    # (typically every 2-5 seconds); those are caption-file-format
+    # metadata, not content. Stripping at normalization lets contributors
+    # anchor a quote with a single leading [MM:SS] for reader navigation
+    # without preserving every intermediate caption tick inside the quote
+    # body. Both source and quote go through the same normalization so
+    # match integrity is preserved.
+    text = re.sub(r"\[\d+:\d+(?::\d+)?\]", "", text)
     # Markdown block-quote markers at line start — strip `> ` / `>` prefix
     # so multi-line block quotes normalize to their underlying content.
     text = re.sub(r"(?m)^\s*>\s?", "", text)
