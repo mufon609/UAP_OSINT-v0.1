@@ -40,16 +40,16 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 
 #### Directors
 
-| Name | Role | Period | Source | Node Link |
-|---|---|---|---|---|
-| [`/people/sean-kirkpatrick`] | Director | 2022-07 – 2023-12 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf | [`/people/sean-kirkpatrick`] |
-| [`/people/jonathan-kosloski`] | Director (detail from National Security Agency) | 2024-08 | government/defense-gov-kosloski-appointment-20240826.html | [`/people/jonathan-kosloski`] |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/sean-kirkpatrick`] | Director | 2022-07 – 2023-12 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/people/jonathan-kosloski`] | Director (detail from National Security Agency) | 2024-08 | government/defense-gov-kosloski-appointment-20240826.html |
 
 #### Deputy Leadership
 
-| Name | Role | Period | Source | Node Link |
-|---|---|---|---|---|
-| [`/people/tim-phillips`] | Deputy Director (Acting Director) | 2023-10 | government/aaro-phillips-timothy-bio-dec2023.pdf | [`/people/tim-phillips`] |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/tim-phillips`] | Deputy Director (Acting Director) | 2023-10 | government/aaro-phillips-timothy-bio-dec2023.pdf |
 
 ---
 
@@ -206,12 +206,12 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 
 ### Confirmed
 
-| Organization | Relationship | Source | Node Link |
-|---|---|---|---|
-| [`/organizations/dod`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | [`/organizations/dod`] |
-| [`/organizations/aoimsg`] | predecessor | government/defense-gov-aaro-establishment-20220720.html | [`/organizations/aoimsg`] |
-| [`/organizations/uaptf`] | predecessor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | [`/organizations/uaptf`] |
-| [`/organizations/odni`] | partner | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | [`/organizations/odni`] |
+| Organization | Relationship | Source |
+|---|---|---|
+| [`/organizations/dod`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/aoimsg`] | predecessor | government/defense-gov-aaro-establishment-20220720.html |
+| [`/organizations/uaptf`] | predecessor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/odni`] | partner | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 
 ---
 

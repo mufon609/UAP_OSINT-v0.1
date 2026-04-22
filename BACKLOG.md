@@ -171,3 +171,32 @@ home for that kind of material).
 Surfaced: OQ removal (2026-04-21) — the rename was deliberately
 deferred to a later session rather than bundled with the removal.
 
+---
+
+### 10. Auditing tables for redundant Node Link columns
+
+Surfaced 2026-04-22 during Dietrich node review. Several renderer
+tables had a trailing `Node Link` column that duplicated the first
+column's wrap path (same `[\`/organizations/x\`]` string in both the
+first and last cells). Pattern occurred on every table where the
+first column was itself a wrap path — the Node Link column added no
+navigation value.
+
+**Fixed in this commit for 8 renderers** (person Affiliations,
+person Relationships, Vouching Chain, encounter Participants,
+hearing Participants across all sub-subsections and Flagged rollup,
+organization Key Personnel sub-subsections, organization
+Relationships, location Relationships). All affected built nodes
+regenerated.
+
+**Pattern to watch for in new renderers.** When adding a table whose
+first column is a wrap-path link, DO NOT add a trailing Node Link
+column — the first cell already serves as the navigable link. Keep
+Node Link only when the first column is prose / date / free-text
+(Timeline, Publication Record, Claim Inventory, Speakers) where a
+separate navigable target adds genuine value.
+
+Surfaced: post-Dietrich-rebuild review (2026-04-22). Kept as a
+BACKLOG entry to document the pattern; addressed in the commit that
+logged this entry.
+

@@ -36,17 +36,17 @@ Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomen
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Node Link |
-|---|---|---|---|---|
-| [`/organizations/us-air-force`] | Intelligence officer for 14 years at the rank of Major | 2009-06 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf | [`/organizations/us-air-force`] |
-| [`/organizations/apus`] | Adjunct Professor, School of Security and Global Studies | 2014-07 – 2016-12 | government/docs-house-gov-grusch-bio-20230726.pdf | [`/organizations/apus`] |
-| [`/organizations/blue-sky-innovators`] | Corporate Security Officer (CSO), DoD-Contracted Science and Engineering Technical Advisor (SETA) | 2016-03 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf | [`/organizations/blue-sky-innovators`] |
-| [`/organizations/nro`] | Senior Intelligence Officer (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet) | 2016-04 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf | [`/organizations/nro`] |
-| [`/organizations/uaptf`] | Member (in his NRO reservist capacity) | 2019 – 2021 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf | [`/organizations/uaptf`] |
-| [`/organizations/nga`] | Senior GEOINT Capabilities Requirements Officer (GS-15, Colonel Equiv.) | 2021-11 – 2023-04 | government/docs-house-gov-grusch-bio-20230726.pdf | [`/organizations/nga`] |
-| [`/organizations/318-cyber-operations-group`] | IMA to the Commander, Detachment 3, Nellis AFB (USAF Reserve O-4/Maj in O-5/Lt Col Billet) | 2021-11 – 2022-04 | government/docs-house-gov-grusch-bio-20230726.pdf | [`/organizations/318-cyber-operations-group`] |
-| [`/organizations/us-air-force-academy`] | Key Employee Augmentee (USAF Reserve, O-4/Maj) | 2022-04 – 2023-05 | government/docs-house-gov-grusch-bio-20230726.pdf | [`/organizations/us-air-force-academy`] |
-| [`/organizations/sol-foundation`] | Chief Operating Officer (COO) | 2023-05 | government/docs-house-gov-grusch-bio-20230726.pdf | [`/organizations/sol-foundation`] |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/us-air-force`] | Intelligence officer for 14 years at the rank of Major | 2009-06 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |
+| [`/organizations/apus`] | Adjunct Professor, School of Security and Global Studies | 2014-07 – 2016-12 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/blue-sky-innovators`] | Corporate Security Officer (CSO), DoD-Contracted Science and Engineering Technical Advisor (SETA) | 2016-03 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/nro`] | Senior Intelligence Officer (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet) | 2016-04 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/uaptf`] | Member (in his NRO reservist capacity) | 2019 – 2021 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |
+| [`/organizations/nga`] | Senior GEOINT Capabilities Requirements Officer (GS-15, Colonel Equiv.) | 2021-11 – 2023-04 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/318-cyber-operations-group`] | IMA to the Commander, Detachment 3, Nellis AFB (USAF Reserve O-4/Maj in O-5/Lt Col Billet) | 2021-11 – 2022-04 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/us-air-force-academy`] | Key Employee Augmentee (USAF Reserve, O-4/Maj) | 2022-04 – 2023-05 | government/docs-house-gov-grusch-bio-20230726.pdf |
+| [`/organizations/sol-foundation`] | Chief Operating Officer (COO) | 2023-05 | government/docs-house-gov-grusch-bio-20230726.pdf |
 
 ---
 
@@ -185,9 +185,9 @@ Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomen
 
 ### Confirmed
 
-| Person | Relationship | Node Link |
-|---|---|---|
-|  |  |  |
+| Person | Relationship |
+|---|---|
+|  |  |
 
 ---
 
@@ -209,9 +209,9 @@ Grusch: "as I stand here under oath now, I am speaking to the facts as I have be
 
 ## Vouching Chain
 
-| Name | Credentials | Statement | Source | Node Link |
-|---|---|---|---|---|
-|  |  |  |  |  |
+| Name | Credentials | Statement | Source |
+|---|---|---|---|
+|  |  |  |  |
 
 ---
 

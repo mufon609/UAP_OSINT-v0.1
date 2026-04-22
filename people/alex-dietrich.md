@@ -36,19 +36,19 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Node Link |
-|---|---|---|---|---|
-| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html | [`/organizations/us-navy`] |
-| [`/organizations/uss-nimitz`] | Deployed aboard during 2004 workup cycle | 2004 – 2004 | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html | [`/organizations/uss-nimitz`] |
-| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 – 2007 | news/enigmalabs-dietrich-advisor-announcement.html | [`/organizations/vfa-41`] |
-| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html | [`/organizations/cu-boulder`] |
-| [`/organizations/enigma-labs`] | First advisor (unpaid) | 2022-11-14 | news/enigmalabs-dietrich-advisor-announcement.html | [`/organizations/enigma-labs`] |
-| [`/organizations/americans-for-safe-aerospace`] | Advisor | 2023-06 | government/safeaerospace-home-20230602.html | [`/organizations/americans-for-safe-aerospace`] |
-| [`/organizations/usna`] | Military Professor (Department of Leadership, Ethics and Law) |  | news/cu-boulder-emp-dietrich-bio.html | [`/organizations/usna`] |
-| [`/organizations/gwu`] | Assistant Professor of Naval Science |  | news/enigmalabs-dietrich-advisor-announcement.html | [`/organizations/gwu`] |
-| [`/organizations/syracuse-university`] | Interim Chief Human Resources Officer |  | news/syracuse-chancellor-dietrich-bio.html | [`/organizations/syracuse-university`] |
-| [`/organizations/legacy-flight-academy`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html | [`/organizations/legacy-flight-academy`] |
-| [`/organizations/wings-for-val`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html | [`/organizations/wings-for-val`] |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html |
+| [`/organizations/uss-nimitz`] | Deployed aboard during 2004 workup cycle | 2004 – 2004 | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |
+| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 – 2007 | news/enigmalabs-dietrich-advisor-announcement.html |
+| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html |
+| [`/organizations/enigma-labs`] | First advisor (unpaid) | 2022-11-14 | news/enigmalabs-dietrich-advisor-announcement.html |
+| [`/organizations/americans-for-safe-aerospace`] | Advisor | 2023-06 | government/safeaerospace-home-20230602.html |
+| [`/organizations/usna`] | Military Professor (Department of Leadership, Ethics and Law) |  | news/cu-boulder-emp-dietrich-bio.html |
+| [`/organizations/gwu`] | Assistant Professor of Naval Science |  | news/enigmalabs-dietrich-advisor-announcement.html |
+| [`/organizations/syracuse-university`] | Interim Chief Human Resources Officer |  | news/syracuse-chancellor-dietrich-bio.html |
+| [`/organizations/legacy-flight-academy`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |
+| [`/organizations/wings-for-val`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |
 
 ---
 
@@ -470,9 +470,9 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 
 ### Confirmed
 
-| Person | Relationship | Node Link |
-|---|---|---|
-| [`/people/david-fravor`] | Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing as the second pilot in the two-ship F/A-18F flight | [`/people/david-fravor`] |
+| Person | Relationship |
+|---|---|
+| [`/people/david-fravor`] | Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing as the second pilot in the two-ship F/A-18F flight |
 
 ---
 

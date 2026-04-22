@@ -275,26 +275,26 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 
 ### Confirmed
 
-| Entity | Relationship | Node Link |
-|---|---|---|
-| [`/people/robert-bigelow`] | owner 1996-2016; founder of NIDS (1995); founder of Bigelow Aerospace and BAASS (2008 AAWSAP contractor) | [`/people/robert-bigelow`] |
-| [`/people/brandon-fugal`] | current owner since 2016 via Adamantium Real Estate LLC | [`/people/brandon-fugal`] |
-| [`/people/terry-sherman`] | owner 1994-1996 with wife Gwen; caretaker under Bigelow employment post-1996 per nondisclosure agreement | [`/people/terry-sherman`] |
-| [`/people/garth-myers`] | brother of Kenneth John Myers; Myers-era witness who denies paranormal activity 1933-1994 | [`/people/garth-myers`] |
-| [`/organizations/nids`] | first institutional research operator 1996-2004; Bigelow-founded 1995 | [`/organizations/nids`] |
-| [`/organizations/baass`] | AAWSAP contractor 2008-2012; conducted institutional research at the ranch as part of the DIA-contracted work | [`/organizations/baass`] |
-| [`/organizations/aawsap`] | program funding BAASS research at the ranch 2008-2012 | [`/organizations/aawsap`] |
-| [`/organizations/bigelow-aerospace`] | parent company of BAASS; Robert Bigelow's aerospace firm | [`/organizations/bigelow-aerospace`] |
-| [`/organizations/adamantium-real-estate`] | Fugal's Delaware LLC holding entity for all 7 Uintah County ranch parcels since 2016 | [`/organizations/adamantium-real-estate`] |
-| [`/organizations/dia`] | contracting agency for the 2008 AAWSAP contract that funded BAASS research at the ranch | [`/organizations/dia`] |
-| [`/documents/hunt-for-the-skinwalker-2005`] | Kelleher and Knapp book documenting NIDS-era investigation at the ranch; introduced the 'Skinwalker Ranch' naming to public record | [`/documents/hunt-for-the-skinwalker-2005`] |
-| [`/documents/skinwalkers-at-the-pentagon-2021`] | Lacatski/Kelleher/Knapp book documenting AAWSAP-era institutional research at the ranch | [`/documents/skinwalkers-at-the-pentagon-2021`] |
-| [`/people/gwen-sherman`] | co-owner 1994-1996 with husband Terry Sherman | [`/people/gwen-sherman`] |
-| [`/people/george-knapp`] | co-author of Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021) | [`/people/george-knapp`] |
-| [`/people/michael-shellenberger`] | author of 2024 House Oversight written testimony that cites the ranch | [`/people/michael-shellenberger`] |
-| [`/documents/written-testimony-shellenberger-2024`] | House Oversight 2024-11-13 sworn written testimony with detailed Skinwalker Ranch timeline | [`/documents/written-testimony-shellenberger-2024`] |
-| [`/people/kenneth-myers`] | owner from 1933 until death in April 1987; part of the Myers family ownership era 1933-1994 | [`/people/kenneth-myers`] |
-| [`/people/edith-myers`] | co-owner with husband Kenneth from 1933; held the ranch alone after Kenneth's death in 1987 until her own death on March 3, 1994 | [`/people/edith-myers`] |
+| Entity | Relationship |
+|---|---|
+| [`/people/robert-bigelow`] | owner 1996-2016; founder of NIDS (1995); founder of Bigelow Aerospace and BAASS (2008 AAWSAP contractor) |
+| [`/people/brandon-fugal`] | current owner since 2016 via Adamantium Real Estate LLC |
+| [`/people/terry-sherman`] | owner 1994-1996 with wife Gwen; caretaker under Bigelow employment post-1996 per nondisclosure agreement |
+| [`/people/garth-myers`] | brother of Kenneth John Myers; Myers-era witness who denies paranormal activity 1933-1994 |
+| [`/organizations/nids`] | first institutional research operator 1996-2004; Bigelow-founded 1995 |
+| [`/organizations/baass`] | AAWSAP contractor 2008-2012; conducted institutional research at the ranch as part of the DIA-contracted work |
+| [`/organizations/aawsap`] | program funding BAASS research at the ranch 2008-2012 |
+| [`/organizations/bigelow-aerospace`] | parent company of BAASS; Robert Bigelow's aerospace firm |
+| [`/organizations/adamantium-real-estate`] | Fugal's Delaware LLC holding entity for all 7 Uintah County ranch parcels since 2016 |
+| [`/organizations/dia`] | contracting agency for the 2008 AAWSAP contract that funded BAASS research at the ranch |
+| [`/documents/hunt-for-the-skinwalker-2005`] | Kelleher and Knapp book documenting NIDS-era investigation at the ranch; introduced the 'Skinwalker Ranch' naming to public record |
+| [`/documents/skinwalkers-at-the-pentagon-2021`] | Lacatski/Kelleher/Knapp book documenting AAWSAP-era institutional research at the ranch |
+| [`/people/gwen-sherman`] | co-owner 1994-1996 with husband Terry Sherman |
+| [`/people/george-knapp`] | co-author of Hunt for the Skinwalker (2005) and Skinwalkers at the Pentagon (2021) |
+| [`/people/michael-shellenberger`] | author of 2024 House Oversight written testimony that cites the ranch |
+| [`/documents/written-testimony-shellenberger-2024`] | House Oversight 2024-11-13 sworn written testimony with detailed Skinwalker Ranch timeline |
+| [`/people/kenneth-myers`] | owner from 1933 until death in April 1987; part of the Myers family ownership era 1933-1994 |
+| [`/people/edith-myers`] | co-owner with husband Kenneth from 1933; held the ranch alone after Kenneth's death in 1987 until her own death on March 3, 1994 |
 
 ---
 

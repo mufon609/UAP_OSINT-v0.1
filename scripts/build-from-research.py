@@ -520,22 +520,21 @@ def render_affiliations(artifact):
             f"| {org} | "
             f"{e.get('role') or ''} | "
             f"{_format_period(e)} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{org} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
 
     lines = ["## Affiliations", "", "### Confirmed", "",
-             "| Organization | Role | Period | Source | Node Link |",
-             "|---|---|---|---|---|"]
+             "| Organization | Role | Period | Source |",
+             "|---|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(render_row(e))
     else:
-        lines.append("|  |  |  |  |  |")
+        lines.append("|  |  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Organization | Role | Period | Source | Node Link |",
-                  "|---|---|---|---|---|"]
+                  "| Organization | Role | Period | Source |",
+                  "|---|---|---|---|"]
         for e in flagged:
             lines.append(render_row(e))
     return "\n".join(lines) + "\n"
@@ -643,22 +642,21 @@ def render_relationships(artifact):
         person = _wrap_path(e.get("person_path"))
         return (
             f"| {person} | "
-            f"{e.get('relationship') or ''} | "
-            f"{person} |"
+            f"{e.get('relationship') or ''} |"
         )
 
     lines = ["## Relationships", "", "### Confirmed", "",
-             "| Person | Relationship | Node Link |",
-             "|---|---|---|"]
+             "| Person | Relationship |",
+             "|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(row(e))
     else:
-        lines.append("|  |  |  |")
+        lines.append("|  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Person | Relationship | Node Link |",
-                  "|---|---|---|"]
+                  "| Person | Relationship |",
+                  "|---|---|"]
         for e in flagged:
             lines.append(row(e))
     return "\n".join(lines) + "\n"
@@ -780,10 +778,10 @@ def render_archetype_section(artifact, archetype):
 def render_vouching_chain(artifact):
     items = artifact.get("vouching_chain") or []
     lines = ["## Vouching Chain", "",
-             "| Name | Credentials | Statement | Source | Node Link |",
-             "|---|---|---|---|---|"]
+             "| Name | Credentials | Statement | Source |",
+             "|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |")
+        lines.append("|  |  |  |  |")
     for e in items:
         if not isinstance(e, dict):
             continue
@@ -795,8 +793,7 @@ def render_vouching_chain(artifact):
             f"| {voucher} | "
             f"{e.get('evidentiary_basis') or ''} | "
             f"{attestation} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{voucher} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -907,13 +904,12 @@ def render_event_description(artifact):
 
 def _participant_row(e):
     """Render one participant row. Cells: participant (wrap_path), role,
-    source.path, node-link (wrap_path)."""
+    source.path."""
     p = _wrap_path(e.get("participant_path"))
     return (
         f"| {p} | "
         f"{e.get('role') or ''} | "
-        f"{(e.get('source') or {}).get('path') or ''} | "
-        f"{p} |"
+        f"{(e.get('source') or {}).get('path') or ''} |"
     )
 
 
@@ -924,17 +920,17 @@ def render_participants_encounter(artifact):
     flagged   = [e for e in items if isinstance(e, dict) and e.get("flagged")]
 
     lines = ["## Participants", "", "### Confirmed", "",
-             "| Participant | Role | Source | Node Link |",
-             "|---|---|---|---|"]
+             "| Participant | Role | Source |",
+             "|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(_participant_row(e))
     else:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Participant | Role | Source | Node Link |",
-                  "|---|---|---|---|"]
+                  "| Participant | Role | Source |",
+                  "|---|---|---|"]
         for e in flagged:
             lines.append(_participant_row(e))
     return "\n".join(lines) + "\n"
@@ -960,28 +956,28 @@ def render_participants_hearing(artifact):
         lines.append("")
         lines.append(f"#### {subheader}")
         lines.append("")
-        lines.append("| Participant | Role | Source | Node Link |")
-        lines.append("|---|---|---|---|")
+        lines.append("| Participant | Role | Source |")
+        lines.append("|---|---|---|")
         if subsection_entries:
             for e in subsection_entries:
                 lines.append(_participant_row(e))
         else:
-            lines.append("|  |  |  |  |")
+            lines.append("|  |  |  |")
 
     # Catch entries with unknown capacity — they still need to render
     known = set(_HEARING_CAPACITY_ORDER)
     other_confirmed = [e for e in confirmed if e.get("capacity") not in known]
     if other_confirmed:
         lines += ["", "#### Other", "",
-                  "| Participant | Role | Source | Node Link |",
-                  "|---|---|---|---|"]
+                  "| Participant | Role | Source |",
+                  "|---|---|---|"]
         for e in other_confirmed:
             lines.append(_participant_row(e))
 
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Participant | Role | Source | Node Link |",
-                  "|---|---|---|---|"]
+                  "| Participant | Role | Source |",
+                  "|---|---|---|"]
         for e in flagged:
             lines.append(_participant_row(e))
     return "\n".join(lines) + "\n"
@@ -1645,15 +1641,13 @@ def render_org_overview(artifact, kind):
 
 def _org_key_personnel_row(e):
     """Render a single Key Personnel row — person wrap + role + period
-    + source.path + same wrap in Node Link column (parallels the
-    person affiliations row shape)."""
+    + source.path (parallels the person affiliations row shape)."""
     person = _wrap_path(e.get("person_path"))
     return (
         f"| {person} | "
         f"{e.get('role') or ''} | "
         f"{_format_period(e)} | "
-        f"{(e.get('source') or {}).get('path') or ''} | "
-        f"{person} |"
+        f"{(e.get('source') or {}).get('path') or ''} |"
     )
 
 
@@ -1688,8 +1682,8 @@ def render_org_key_personnel(artifact):
             out += [
                 f"{h4_level} {_LEADERSHIP_CLASS_HEADING[cls]}",
                 "",
-                "| Name | Role | Period | Source | Node Link |",
-                "|---|---|---|---|---|",
+                "| Name | Role | Period | Source |",
+                "|---|---|---|---|",
             ]
             for e in buckets[cls]:
                 out.append(_org_key_personnel_row(e))
@@ -1698,9 +1692,9 @@ def render_org_key_personnel(artifact):
             # Empty confirmed-side fallback — emit a placeholder table
             # so the section has renderable content.
             out += [
-                "| Name | Role | Period | Source | Node Link |",
-                "|---|---|---|---|---|",
-                "|  |  |  |  |  |",
+                "| Name | Role | Period | Source |",
+                "|---|---|---|---|",
+                "|  |  |  |  |",
             ]
         return out
 
@@ -1803,22 +1797,21 @@ def render_org_relationships(artifact):
         return (
             f"| {org} | "
             f"{e.get('relationship_type') or ''} | "
-            f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{org} |"
+            f"{(e.get('source') or {}).get('path') or ''} |"
         )
 
     lines = ["## Relationships", "", "### Confirmed", "",
-             "| Organization | Relationship | Source | Node Link |",
-             "|---|---|---|---|"]
+             "| Organization | Relationship | Source |",
+             "|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(row(e))
     else:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Organization | Relationship | Source | Node Link |",
-                  "|---|---|---|---|"]
+                  "| Organization | Relationship | Source |",
+                  "|---|---|---|"]
         for e in flagged:
             lines.append(row(e))
     return "\n".join(lines) + "\n"
@@ -2036,22 +2029,21 @@ def render_location_relationships(artifact):
         ep = _wrap_path(e.get("entity_path"))
         return (
             f"| {ep} | "
-            f"{e.get('relationship') or ''} | "
-            f"{ep} |"
+            f"{e.get('relationship') or ''} |"
         )
 
     lines = ["## Relationships", "", "### Confirmed", "",
-             "| Entity | Relationship | Node Link |",
-             "|---|---|---|"]
+             "| Entity | Relationship |",
+             "|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(row(e))
     else:
-        lines.append("|  |  |  |")
+        lines.append("|  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Entity | Relationship | Node Link |",
-                  "|---|---|---|"]
+                  "| Entity | Relationship |",
+                  "|---|---|"]
         for e in flagged:
             lines.append(row(e))
     return "\n".join(lines) + "\n"

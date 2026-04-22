@@ -36,10 +36,10 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 
 ### Confirmed
 
-| Organization | Role | Period | Source | Node Link |
-|---|---|---|---|---|
-| [`/organizations/vfa-41`] | Commanding Officer | 2004-11 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/organizations/vfa-41`] |
-| [`/organizations/us-navy`] | Commander (retired) |  | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/organizations/us-navy`] |
+| Organization | Role | Period | Source |
+|---|---|---|---|
+| [`/organizations/vfa-41`] | Commanding Officer | 2004-11 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/organizations/us-navy`] | Commander (retired) |  | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 
 ---
 
@@ -123,11 +123,11 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 
 ### Confirmed
 
-| Person | Relationship | Node Link |
-|---|---|---|
-| [`/people/alex-dietrich`] | Wingman and co-observer; other F/A-18F pilot in Fravor's 2-plane flight during the 2004 Nimitz encounter | [`/people/alex-dietrich`] |
-| [`/people/jay-stratton`] | Contacted Fravor in 2009 to investigate the 2004 encounter as part of the ATIP program | [`/people/jay-stratton`] |
-| [`/people/luis-elizondo`] | Contacted Fravor in 2016 shortly after Fravor's 2016 conversation with Alex Dietrich | [`/people/luis-elizondo`] |
+| Person | Relationship |
+|---|---|
+| [`/people/alex-dietrich`] | Wingman and co-observer; other F/A-18F pilot in Fravor's 2-plane flight during the 2004 Nimitz encounter |
+| [`/people/jay-stratton`] | Contacted Fravor in 2009 to investigate the 2004 encounter as part of the ATIP program |
+| [`/people/luis-elizondo`] | Contacted Fravor in 2016 shortly after Fravor's 2016 conversation with Alex Dietrich |
 
 ---
 

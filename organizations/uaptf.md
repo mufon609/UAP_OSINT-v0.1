@@ -44,21 +44,21 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 #### Directors
 
-| Name | Role | Period | Source | Node Link |
-|---|---|---|---|---|
-| [`/people/jay-stratton`] | Director (named as former Office of Naval Intelligence senior civilian "leading the effort" per DoD Public Affairs statement) |  | news/blackvault-smdc-travis-taylor-uaptf-20220629.html | [`/people/jay-stratton`] |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/jay-stratton`] | Director (named as former Office of Naval Intelligence senior civilian "leading the effort" per DoD Public Affairs statement) |  | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |
 
 #### Staff
 
-| Name | Role | Period | Source | Node Link |
-|---|---|---|---|---|
-| [`/people/david-grusch`] | Member (in his National Reconnaissance Office reservist capacity) | 2019 – 2021 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf | [`/people/david-grusch`] |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/david-grusch`] | Member (in his National Reconnaissance Office reservist capacity) | 2019 – 2021 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |
 
 #### Advisors
 
-| Name | Role | Period | Source | Node Link |
-|---|---|---|---|---|
-| [`/people/travis-taylor`] | Chief Scientist (informal designation, time-limited SMDC assignment) |  | news/blackvault-smdc-travis-taylor-uaptf-20220629.html | [`/people/travis-taylor`] |
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/travis-taylor`] | Chief Scientist (informal designation, time-limited SMDC assignment) |  | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |
 
 ---
 
@@ -235,11 +235,11 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ### Confirmed
 
-| Organization | Relationship | Source | Node Link |
-|---|---|---|---|
-| [`/organizations/aoimsg`] | successor | government/defense-gov-aoimsg-establishment-20211123.html | [`/organizations/aoimsg`] |
-| [`/organizations/aaro`] | successor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | [`/organizations/aaro`] |
-| [`/organizations/odni`] | partner | government/dni-gov-odni-preliminary-assessment-20210625.pdf | [`/organizations/odni`] |
+| Organization | Relationship | Source |
+|---|---|---|
+| [`/organizations/aoimsg`] | successor | government/defense-gov-aoimsg-establishment-20211123.html |
+| [`/organizations/aaro`] | successor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/odni`] | partner | government/dni-gov-odni-preliminary-assessment-20210625.pdf |
 
 ---
 
