@@ -70,6 +70,14 @@
   note: 'Uintah County Real Property Owner Information report (Year 2026), owner ADAMANTIUM REAL ESTATE LLC. Serial 150050004 / Account 126864. Address 3400 S 5500 E, Independence. Land Use: VACANT LAND. Acres: 40.00. Legal (SE 1/4 NE 1/4, Sec 5, T3S, R1E, USM). Tax Dist 16. Retrieved 2026-04-20 from apps.uintah.utah.gov ORDS portal via ''ADAMANTIUM'' owner search. Mailing address on all 7 Adamantium parcels: 6440 S Millrock Dr Ste 500, Salt Lake City, UT 84121.'
   archive_status: 1
   wayback_skip: true
+- url: https://archive.org/download/army_ttsa_crada/ARMY_text.pdf
+  format: pdf
+  status: archived
+  path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+  archived_date: '2026-04-22'
+  sha256: 36133bf36e899a219ece349e590ffd6c3f7a1b9094ec6a14d61058e6e21dc53f
+  archive_status: 1
+  note: 'The actual Cooperative Research and Development Agreement (CRADA) #19-15 between To The Stars Academy of Arts and Science, Inc. and the U.S. Army Combat Capabilities Development Command (CCDC) Ground Vehicle Systems Center, Warren MI. CRADA title: ''Novel & Emerging Technology Exploitation (NETE)''. Effective date 2019-10-01 (TTSA announced publicly 2019-10-17). 8-page text-extractable OCR''d PDF distributed via Internet Archive (item: army_ttsa_crada). Names signatories — Army side: Ben Soave + Dr. Joseph Cannon (Principal Investigators, Ground Vehicle Survivability and Protection / GVSP); TTSA side: Luis Elizondo (Principal Investigator, Director of Global Security and Special Programs). Estimated USG resources value: $750k. Technology scope: ''inertial mass reduction mechanical/structural metamaterials, electromagnetic metamaterial wave guides, quantum physics, quantum communications, and beamed energy propulsion''. Other Participants clause: ''The Office of the Secretary of Defense (OSD) can share historical reports of findings and origin of materiel solutions in the possession of the Collaborator'' — establishes OSD connection to the material''s origin-history. Primary-source Army-side confirmation of the CRADA that AARO HRR Vol I (2024) later references as the TTSA-U.S. Army material-analysis relationship predating AARO custody.'
 - url: https://archive.org/download/grusch_icig/David-Grusch-PPD-19-Procedural-Filing_text.pdf
   format: pdf
   status: archived
