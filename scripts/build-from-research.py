@@ -6,12 +6,11 @@ Reads /research/{slug}.yaml and rewrites /{type}/{slug}.md. Frontmatter is
 preserved from the existing node; body sections (H1 title onward) are
 replaced entirely by content derived from the artifact.
 
-SCOPE: document (D.3), person (F.1b), event (F.2b), transcript (F.3b),
-media (F.4b), organization (F.5b), location (F.6b). Finding is the
-last remaining type; F.7 design pass is open (see
-meta/toolkit-notes/roadmap.md).
+SCOPE: document, person, event, transcript, media, organization,
+location. Finding is the last remaining type; F.7 design pass is open
+(see meta/toolkit-notes/roadmap.md).
 
-Person renderer (F.1b):
+Person renderer:
   - Universal sections: Identity, Background, UAP Relevance,
     Affiliations, Statements, Timeline, Relationships, Credibility
     Notes, Associated Nodes
@@ -25,52 +24,50 @@ Person renderer (F.1b):
       reporter            → Publication Record  (from publication_record, sorted)
   - Whistleblower-only: Vouching Chain section (from vouching_chain)
 
-Event renderer (F.2b):
+Event renderer:
   - Universal sections: Event Summary (from event_intrinsic),
     Description, Participants, Timeline, Associated Nodes
   - Hearing kind additionally: Key Testimony (verbatim quotes),
     Witnesses & Testimony (cross-reference table — replaces the prior
-    What The Hearing Established synthesis section per F.2a)
+    What The Hearing Established synthesis section)
   - Encounter kind additionally: Corroboration (shares the
     corroboration_items entry shape + renderer with eyewitness
-    person nodes; column layout revised in F.2a:
-    Observer | Type | What It Confirms | Attested In)
+    person nodes; column layout: Observer | Type | What It Confirms |
+    Attested In)
   - Hearing Participants sub-structured by participant capacity
     (witness-eyewitness / whistleblower / institutional / committee-
     member); encounter Participants uses flat Confirmed/Flagged.
 
-Transcript renderer (F.3b):
+Transcript renderer:
   - Universal sections: Publication Record, Summary, Speakers,
     Key Passages, Associated Nodes
-  - `## Summary` is rendered from `artifact.description` per F.3 Q1-A
-    (render-time field→section rename; keeps `description` as the
-    universal top-level field while the rendered section name fits
-    transcript semantics).
+  - `## Summary` is rendered from `artifact.description` (render-time
+    field→section rename; keeps `description` as the universal
+    top-level field while the rendered section name fits transcript
+    semantics).
   - Publication Record auto-populates `Source Medium` and `Underlying
     X Node` rows from frontmatter (`source_medium` / `derived_from`)
-    per F.3 Decision 1 — frontmatter stays the single source of
-    truth for those fields; no artifact-side duplication.
+    — frontmatter stays the single source of truth for those fields;
+    no artifact-side duplication.
   - Key Passages uses H3 per quote (significance field) like document
     Key Passages, providing navigability for transcripts that may
     carry many quotes.
 
-Media renderer (F.4b):
+Media renderer:
   - Universal sections across all kinds (photo / video / audio /
     imagery-other): Media Summary, Description, Provenance, Key
     Passages, Associated Nodes
   - Conditional Media Versioning section — rendered only when the
     artifact's `media_versioning` list has entries. Omitted entirely
-    for canonical / original media. Columns per F.4 Decision 2 (Shape D):
-    Aspect / Parent / This / Source / Note.
+    for canonical / original media. Columns: Aspect / Parent / This /
+    Source / Note.
   - Media Summary emits rows from the union of `document_intrinsic`
-    + `context_extrinsic` + manifest sha256 lookup per the F.4a
-    document_intrinsic media convention. Rows with empty values skip
-    (matches transcript Publication Record pattern) — Summary adapts
-    to what the source + contributor populated.
+    + `context_extrinsic` + manifest sha256 lookup. Rows with empty
+    values skip (matches transcript Publication Record pattern) —
+    Summary adapts to what the source + contributor populated.
   - Key Passages use the shared `_render_verification_block` helper;
     `source.location` flows through flexibly (timestamp /
-    timestamp+coordinate / spatial-only) per F.4 Decision 1's single-
-    format-flexible-entry-type shape.
+    timestamp+coordinate / spatial-only).
   - May be empty when the source has no extractable speech or
     visible text (heavy speech content spins up a separate transcript
     node pointing to the media via `derived_from`).
@@ -125,9 +122,8 @@ TYPE_DIRS = {
     "location": "locations", "finding": "findings",
 }
 
-# Types this script can regenerate (D.3 scope: document;
-# F.1b adds person; F.2b adds event; F.3b adds transcript; F.4b adds media;
-# F.5b adds organization; F.6b adds location)
+# Types this script can regenerate (document, person, event,
+# transcript, media, organization, location). Finding pending F.7.
 SUPPORTED_TYPES = {"document", "person", "event", "transcript", "media", "organization", "location"}
 
 # Archetype → archetype-specific artifact section name (person only)
@@ -431,7 +427,7 @@ def render_primary_source_contradictions(artifact):
 
 
 # =============================================================================
-# Person-type section renderers (F.1b)
+# Person-type section renderers
 # =============================================================================
 
 def _wrap_path(path):
@@ -667,10 +663,8 @@ def render_relationships(artifact):
 def render_corroboration(artifact):
     """Corroboration section — renders on eyewitness person artifacts AND
     encounter event artifacts (same entry shape, same renderer). Column
-    layout revised in F.2a: Observer first (what the investigator is
-    looking for), Attested In last (the source documenting the
-    corroboration); was Source | ... | Node Link which inverted the
-    scan order.
+    layout: Observer first (what the investigator is looking for),
+    Attested In last (the source documenting the corroboration).
     """
     items = artifact.get("corroboration_items") or []
     lines = ["## Corroboration", "",
@@ -816,7 +810,7 @@ def render_credibility_notes(artifact, archetype):
 
 
 # =============================================================================
-# Event-type section renderers (F.2b)
+# Event-type section renderers
 # =============================================================================
 
 # Participant capacity → sub-section header used in hearing Participants.
@@ -1010,9 +1004,9 @@ def render_key_testimony(artifact):
 
 def render_witnesses_testimony(artifact):
     """Witnesses & Testimony (hearing only) — cross-reference table.
-    Replaces the prior `What The Hearing Established` synthesis section
-    per the F.2a collapse. One row per witness pointing at transcript
-    and written-testimony nodes."""
+    Replaces the prior `What The Hearing Established` synthesis section.
+    One row per witness pointing at transcript and written-testimony
+    nodes."""
     items = [e for e in (artifact.get("witnesses_testimony") or []) if isinstance(e, dict)]
     lines = ["## Witnesses & Testimony", "",
              "| Witness | Oath Status | Transcript | Written Testimony |",
@@ -1030,7 +1024,7 @@ def render_witnesses_testimony(artifact):
 
 
 # =============================================================================
-# Transcript-type section renderers (F.3b)
+# Transcript-type section renderers
 # =============================================================================
 
 def _escape_table_cell(value):
@@ -1064,9 +1058,9 @@ def render_transcript_publication_record(artifact, kind, fm):
     hearing metadata + companion written-testimony cross-ref; `other`
     emits outlet/host/source-medium metadata. Auto-populates
     `Source Medium` and `Underlying X` rows from frontmatter
-    (`source_medium` / `derived_from`) per F.3 Decision 1 — keeps
-    frontmatter as the single source of truth for those fields rather
-    than duplicating into the artifact."""
+    (`source_medium` / `derived_from`) — frontmatter stays the single
+    source of truth for those fields rather than duplicating into the
+    artifact."""
     ctx = artifact.get("context_extrinsic") or {}
     lines = ["## Publication Record", "", "| Field | Value |", "|---|---|"]
 
@@ -1092,11 +1086,11 @@ def render_transcript_publication_record(artifact, kind, fm):
         row("Transcript URL",     ctx.get("primary_source_url"))
         row("Transcript Verified", ctx.get("transcript_verified"))
         row("Event Node",         _wrap_path(ctx.get("event_node")))
-        # Companion Written Testimony — canonical path per F.3c D3
-        # (2026-04-19). Hearing transcripts and their companion written
-        # testimony are independent primary records of the same event;
-        # neither derives from the other, so derived_from's "this IS a
-        # rendering of that" semantic doesn't fit.
+        # Companion Written Testimony. Hearing transcripts and their
+        # companion written testimony are independent primary records
+        # of the same event; neither derives from the other, so
+        # derived_from's "this IS a rendering of that" semantic doesn't
+        # fit.
         if ctx.get("companion_written_testimony"):
             row("Companion Written Testimony", _wrap_path(ctx.get("companion_written_testimony")))
     else:  # other
@@ -1124,11 +1118,11 @@ def render_transcript_publication_record(artifact, kind, fm):
 
 
 def render_transcript_summary(artifact):
-    """Summary section — renders `artifact.description` as `## Summary`
-    per F.3 Decision 1 (Q1-A). Transcripts semantically summarize speech
-    content; the render-time field→section rename keeps
-    `description` as the universal top-level required field while the
-    rendered section name fits transcript semantics."""
+    """Summary section — renders `artifact.description` as `## Summary`.
+    Transcripts semantically summarize speech content; the render-time
+    field→section rename keeps `description` as the universal top-level
+    required field while the rendered section name fits transcript
+    semantics."""
     desc = (artifact.get("description") or "").strip()
     body = desc if desc else "<!-- TODO: populate `description` in the research artifact -->"
     return f"## Summary\n\n{body}\n"
@@ -1136,9 +1130,9 @@ def render_transcript_summary(artifact):
 
 def render_transcript_speakers(artifact):
     """Speakers section — cross-reference table for who spoke in this
-    transcript. Rendered from the `speakers` artifact field (Q2-A
-    decision). NOT a statement surface — actual statements live in
-    `quotes` and render as `## Key Passages`."""
+    transcript. Rendered from the `speakers` artifact field. NOT a
+    statement surface — actual statements live in `quotes` and render
+    as `## Key Passages`."""
     items = sort_by_id([s for s in (artifact.get("speakers") or []) if isinstance(s, dict)])
     lines = ["## Speakers", "",
              "| Name | Role | Node Link |",
@@ -1278,7 +1272,7 @@ def render_body_transcript(artifact, kind, fm):
     other kinds emit the same section set (Publication Record, Summary,
     Speakers, Key Passages). The renderer threads `fm` through to
     Publication Record so it can read `derived_from` + `source_medium`
-    from the transcript node's frontmatter per F.3 Decision 1.
+    from the transcript node's frontmatter.
     """
     if kind not in ("hearing", "other"):
         sys.exit(f"ERROR: render_body_transcript: unknown transcript kind {kind!r}")
@@ -1340,12 +1334,12 @@ def render_title_media(artifact):
 def render_media_summary(artifact, kind):
     """Media Summary table — kind-agnostic row emission from
     document_intrinsic + context_extrinsic + primary_sources + manifest
-    sha256 lookup. Fields per the F.4a document_intrinsic media
-    convention (schema.yaml required_keys comment). Rows with empty
-    values are skipped — the Summary adapts to what the source and
-    contributor populated rather than showing "N/A" placeholders.
-    `kind` comes from the node frontmatter (photo / video / audio /
-    imagery-other) and renders as the Kind row."""
+    sha256 lookup. Field conventions documented in schema.yaml's
+    document_intrinsic comment for media. Rows with empty values are
+    skipped — the Summary adapts to what the source and contributor
+    populated rather than showing "N/A" placeholders. `kind` comes
+    from the node frontmatter (photo / video / audio / imagery-other)
+    and renders as the Kind row."""
     dm = artifact.get("document_intrinsic") or {}
     ctx = artifact.get("context_extrinsic") or {}
     path = _source_path(artifact)
@@ -1416,8 +1410,7 @@ def render_media_versioning(artifact, fm):
       - When `derivation_of` is absent, the section is omitted entirely
         (empty string returned; caller drops it from the body) — canonical
         / original media nodes have no derivation to document.
-    Columns per F.4 Decision 2 (Shape D): Aspect / Parent / This /
-    Source / Note.
+    Columns: Aspect / Parent / This / Source / Note.
     """
     items = sort_by_id([
         e for e in (artifact.get("media_versioning") or []) if isinstance(e, dict)
@@ -1462,9 +1455,9 @@ def render_media_versioning(artifact, fm):
 def render_media_key_passages(artifact):
     """Key Passages on media — verbatim speech or visible text. Uses
     the shared `_render_verification_block` so the flexible source.location
-    (timestamp / timestamp+coordinate / spatial-only) flows through
-    per F.4 Decision 1. H3 per quote using `significance`. May be empty
-    when the source has no extractable speech or visible text."""
+    (timestamp / timestamp+coordinate / spatial-only) flows through.
+    H3 per quote using `significance`. May be empty when the source has
+    no extractable speech or visible text."""
     quotes = sort_by_id([
         q for q in (artifact.get("quotes") or []) if isinstance(q, dict)
     ])
@@ -1516,7 +1509,7 @@ def render_body_media(artifact, kind, fm):
 
 
 # =============================================================================
-# Organization renderer (F.5b)
+# Organization renderer
 # =============================================================================
 
 # Row-label mapping for Overview fact-table rows. Keyed by
@@ -1855,7 +1848,7 @@ def render_body_organization(artifact, kind):
 
 
 # =============================================================================
-# Location renderer (F.6b)
+# Location renderer
 # =============================================================================
 
 # Row-label mapping for Overview fact-table rows. Keyed by
@@ -2065,8 +2058,8 @@ def render_body_location(artifact, fm):
     schema's required_sections: Overview → Description → Ownership
     Timeline → UAP-Scope Activity → Key Passages → Relationships →
     Associated Nodes. Location has no kinds, so no per-kind dispatch.
-    Key Passages added F.6c pilot to cover evidentiary quotes about
-    the location; parallels organization's Key Passages pattern."""
+    Key Passages covers evidentiary quotes about the location;
+    parallels organization's Key Passages pattern."""
     title = render_title_location(artifact).rstrip("\n") + "\n"
     sections = [
         render_location_overview(artifact, fm),

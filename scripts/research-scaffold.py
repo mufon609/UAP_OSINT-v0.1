@@ -146,9 +146,10 @@ def infer_format(path):
     Covers the schema's format_values vocabulary (pdf / html / txt /
     transcript / video). Unknown extensions fall back to html —
     intentional for web scraping where the source's extension is often
-    absent or generic. Contributors archiving audio or image files must
-    pass --format manually to override (schema format_values doesn't
-    include audio/image yet; tracked in BACKLOG)."""
+    absent or generic. Audio and image extensions aren't covered (schema
+    format_values doesn't include those yet; tracked in BACKLOG #7).
+    Contributors registering such sources should add the manifest entry
+    via `manifest.py add --format ...` and then re-scaffold the artifact."""
     ext = Path(path).suffix.lower()
     return {
         ".pdf": "pdf",
@@ -273,7 +274,7 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     if node_type == "organization":
         artifact["key_personnel"] = []
         artifact["org_relationships"] = []
-    # Location-specific universal sections (F.6a). ownership_timeline
+    # Location-specific universal sections. ownership_timeline
     # carries the chronological ownership-transition record;
     # uap_scope_activity tracks institutional UAP-scope activity at the
     # location; location_relationships is heterogeneous entity_path
@@ -357,8 +358,8 @@ def main():
     print("Next steps (Phase I):")
     print(f"  1. Extract primary sources to plaintext:")
     if source_paths:
-        for sp in source_paths:
-            print(f"     pdftotext -layout sources/{sp} /tmp/scratch-{slug}.txt")
+        print(f"     python3 scripts/extract-source.py --artifact {rel}")
+        print(f"     (writes /tmp/scratch-{slug}-N.txt — one per primary source)")
     else:
         print(f"     (add sources to primary_sources in {rel}, or re-scaffold with --sources)")
     print(f"  2. Fill in document_intrinsic and context_extrinsic from the extracted text")

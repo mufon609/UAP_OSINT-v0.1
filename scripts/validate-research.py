@@ -3,7 +3,7 @@
 Validate research artifacts against meta/schema.yaml.
 
 Structural checks only — does NOT compare against the target node
-(that's scripts/review-coverage.py in sub-phase D.4).
+(that's scripts/review-coverage.py).
 
 Checks (per schema.yaml research-artifact.invariants):
   - Required top-level keys present (id, type, schema_version, target_node,
@@ -61,8 +61,7 @@ Checks (per schema.yaml research-artifact.invariants):
     `witnesses_testimony.note`, `org_relationships.note`,
     `location_relationships.note`). Token-match misfires on label
     cells and meta-descriptors; fabrication in those cells is Phase
-    III semantic-review territory. Scope narrowed in two passes on
-    2026-04-21 (commits 8667590 + df743fe).
+    III semantic-review territory.
 
 Usage:
   validate-research.py                  # validate all research/*.yaml
@@ -412,9 +411,6 @@ def check_yaml_colon_space(path, rel):
     timestamps, ordinals). Warns only when the post-colon content is
     ≥2 words, reducing false positives on single-word sub-keys.
 
-    Surfaced during the 2026-04-20 Cluster B hearing-event pilot — a
-    NewsNation submission title broke the `publication_record` entry;
-    fixed by single-quoting + replacing the inner `:` with an em-dash.
     Parallel pre-parse mechanism to check_yaml_hash_truncation above.
     """
     issues = []
@@ -1599,7 +1595,7 @@ def check_location_relationships(rel, data, manifest_paths):
 
 
 # =============================================================================
-# Prose-drift check (F.1c RCA follow-up)
+# Prose-drift check
 #
 # Every contributor-authored prose field on an artifact should draw its
 # vocabulary from the primary-source text it references. This check
@@ -1622,7 +1618,7 @@ def check_location_relationships(rel, data, manifest_paths):
 # Known limitations:
 #   - Membership-only; doesn't catch phrase-restructuring where all
 #     words exist in source (e.g., "ground operations" when source has
-#     "operations supporting... ground forces" — F.1c drift #1).
+#     "operations supporting... ground forces").
 #   - No stemming / lemmatization; "prepare" / "preparing" counts as
 #     distinct tokens.
 #   - No whitelist; repo vocabulary ("disclosure chain", etc.) warns.
@@ -1630,10 +1626,9 @@ def check_location_relationships(rel, data, manifest_paths):
 # Scope is set by PROSE_FIELDS_BY_TYPE and PROSE_ENTRY_FIELDS_BY_TYPE
 # below — free-prose synthesis fields and synthesis-content notes
 # across all renderer-supported types (person / event / transcript /
-# media / organization / location). Narrowed from the pre-2026-04-21
-# scope that also covered structural label cells and cross-reference
-# descriptor notes; those fire too many false positives for
-# token-match to be the right instrument.
+# media / organization / location). Structural label cells and cross-
+# reference descriptor notes are explicitly excluded — the token-match
+# premise fires too many false positives on those surfaces.
 # =============================================================================
 
 # Common English stopwords dropped from token-comparison. About 110
@@ -1719,12 +1714,9 @@ PROSE_FIELDS_BY_TYPE = {
     ],
     "transcript": [
         # Transcript top-level prose: `description` renders as the
-        # `## Summary` section via the F.3b render-time field→section
-        # rename (Q1-A decision). Keeps `description` as the universal
-        # top-level required field while the rendered section name fits
-        # transcript semantics. Closes BACKLOG entry "Transcript top-
-        # level description — prose-drift scoping blocked on F.3b
-        # renderer" (entered in F.3a, resolved in F.3b).
+        # `## Summary` section via a render-time field→section rename.
+        # Keeps `description` as the universal top-level required field
+        # while the rendered section name fits transcript semantics.
         "description",
     ],
     "organization": [
