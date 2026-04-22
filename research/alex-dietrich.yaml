@@ -1,0 +1,220 @@
+id: research/alex-dietrich
+type: research-artifact
+schema_version: 1
+target_node: people/alex-dietrich
+status: active
+created: '2026-04-21'
+description: ''
+primary_sources:
+- path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+  format: html
+- path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+  format: pdf
+document_intrinsic:
+  full_name: Alex Dietrich
+  profession: F/A-18F pilot, U.S. Navy
+context_extrinsic:
+  display_title: Alex Dietrich
+background: |
+  Alex Dietrich is a former F/A-18F pilot in the [`/organizations/us-navy`].
+  She was flying at [`/people/david-fravor`]'s wing during the November 14,
+  2004 [`/events/2004-nimitz-encounter`] while training with the
+  [`/organizations/uss-nimitz`] Carrier Strike Group.
+uap_relevance: |
+  Dietrich is one of four naval aviators on the
+  [`/events/2004-nimitz-encounter`]. She had never spoken publicly about
+  the encounter until the CBS 60 Minutes broadcast on 2021-05-16 with
+  [`/people/bill-whitaker`]. In the [`/documents/written-testimony-fravor-2023`],
+  Fravor's Statement for the House Oversight Committee, Dietrich is "the
+  other pilot in my flight" who in 2016 contacted [`/people/david-fravor`]
+  and stated she had been "invited to the Pentagon multiple times to
+  discuss the event."
+credibility_notes: |
+  Dietrich was flying at Fravor's wing on November 14, 2004 — one of four
+  naval aviators on the CBS 60 Minutes broadcast. She had never spoken
+  publicly about the encounter before the CBS broadcast on 2021-05-16.
+affiliations:
+- id: a1
+  added_date: '2026-04-21'
+  organization_path: /organizations/us-navy
+  role: F/A-18F pilot
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+- id: a2
+  added_date: '2026-04-21'
+  organization_path: /organizations/vfa-41
+  role: F/A-18F pilot
+  note: Assigned to Strike Fighter Squadron 41 (Fravor's squadron) during the November 2004 Nimitz encounter per Fravor's written testimony.
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 22"
+relationships:
+- id: r1
+  added_date: '2026-04-21'
+  person_path: /people/david-fravor
+  relationship: Flight lead during November 14, 2004 Nimitz encounter; Dietrich was his wingman in the 2-F/A-18F flight
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 71"
+quotes:
+- id: q1
+  added_date: '2026-04-21'
+  text: |-
+    I never wanted to be on national TV, no offense.
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+  context: "CBS 60 Minutes broadcast, Bill Whitaker interview"
+  observation_type: relayed
+  statement_date: '2021-05-16'
+  significance: Opening framing for her first public statement
+- id: q2
+  added_date: '2026-04-21'
+  text: |-
+    Because I was in a government aircraft, because I was on the clock. And so I feel a responsibility to s-- to share what I can. And it is unclassified.
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+  context: "CBS 60 Minutes broadcast, Bill Whitaker interview"
+  observation_type: relayed
+  statement_date: '2021-05-16'
+  significance: Stated reason for going public
+- id: q3
+  added_date: '2026-04-21'
+  text: |-
+    So your mind tries to make sense of it. I'm gonna categorize this as maybe a helicopter or maybe a drone.
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1098"
+  context: "CBS 60 Minutes broadcast, Bill Whitaker interview"
+  observation_type: direct
+  statement_date: '2021-05-16'
+  significance: Cognitive frame during the encounter
+- id: q4
+  added_date: '2026-04-21'
+  text: |-
+    You know, I think that over beers, we've sort of said, "Hey man, if I saw this solo, I don't know that I would have come back and said anything," because it sounds so crazy when I say it.
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1104"
+  context: "CBS 60 Minutes broadcast, Bill Whitaker interview"
+  observation_type: relayed
+  statement_date: '2021-05-16'
+  significance: Retrospective framing — why multi-witness corroboration mattered
+timeline:
+- id: t1
+  added_date: '2026-04-21'
+  date: '2004-11-14'
+  event: USS Nimitz Tic Tac encounter — Dietrich flying at Fravor's wing
+  category: observation
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+  node_link: /events/2004-nimitz-encounter
+- id: t2
+  added_date: '2026-04-21'
+  date: '2016'
+  event: Dietrich contacted Fravor asking if he had been contacted about the incident after 2009
+  category: other
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 71"
+- id: t3
+  added_date: '2026-04-21'
+  date: '2021-05-16'
+  event: First public statement on the encounter — CBS 60 Minutes broadcast with Bill Whitaker
+  category: publication
+  source:
+    path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+    location: "line 1086"
+corroboration_items:
+- id: c1
+  added_date: '2026-04-21'
+  observer_path: /people/david-fravor
+  observation_type: testimonial
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 71"
+  note: Flight lead; identifies Dietrich as the other pilot in the 2-F/A-18F flight
+- id: c2
+  added_date: '2026-04-21'
+  observer_path: /organizations/uss-princeton
+  observation_type: instrumented
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 51"
+  note: Aegis SPY-1 radar on Princeton reacquired the object 60 miles east at the CAP point after it disappeared from visual
+- id: c3
+  added_date: '2026-04-21'
+  observer_path: /media/flir1-video
+  observation_type: documentary
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: "line 57"
+  note: Subsequent F/A-18F sortie captured targeting-pod video (FLIR1) of an object Fravor's crew believed was the same Tic Tac
+entities_referenced:
+- id: e1
+  added_date: '2026-04-21'
+  entity_type: person
+  name: David Fravor
+  wrap_path: /people/david-fravor
+  context_summary: Flight lead on November 14, 2004; Dietrich was his wingman
+- id: e2
+  added_date: '2026-04-21'
+  entity_type: person
+  name: Bill Whitaker
+  wrap_path: /people/bill-whitaker
+  context_summary: CBS 60 Minutes correspondent who interviewed Dietrich on 2021-05-16
+- id: e3
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: USS Nimitz
+  wrap_path: /organizations/uss-nimitz
+  context_summary: Aircraft carrier the flight launched from during the 2004 encounter
+- id: e4
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: USS Princeton
+  wrap_path: /organizations/uss-princeton
+  context_summary: Aegis-equipped cruiser providing radar corroboration
+- id: e5
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: VFA-41
+  wrap_path: /organizations/vfa-41
+  context_summary: Strike Fighter Squadron 41 — Fravor's squadron; Dietrich was one of his pilots
+- id: e6
+  added_date: '2026-04-21'
+  entity_type: organization
+  name: U.S. Navy
+  wrap_path: /organizations/us-navy
+  context_summary: Dietrich's service branch during the encounter
+- id: e7
+  added_date: '2026-04-21'
+  entity_type: event
+  name: 2004 Nimitz encounter
+  wrap_path: /events/2004-nimitz-encounter
+  context_summary: The November 14, 2004 Tic Tac encounter Dietrich witnessed
+- id: e8
+  added_date: '2026-04-21'
+  entity_type: media
+  name: FLIR1 video
+  wrap_path: /media/flir1-video
+  context_summary: Targeting-pod video captured by a subsequent F/A-18F sortie of what Fravor's crew identified as the same Tic Tac
+- id: e9
+  added_date: '2026-04-21'
+  entity_type: document
+  name: Fravor written testimony (2023)
+  wrap_path: /documents/written-testimony-fravor-2023
+  context_summary: Names Dietrich as "the other pilot in my flight" and describes her 2016 outreach and Pentagon meetings
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-21'
+  observed: Deitrich
+  canonical: Dietrich
+  location: "line 1086"
+  source_path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
+  resolution: preserve-as-sic-in-quotes
+  note: Single instance in the CBS broadcast narrator text ("As Deitrich circled above"). Not Dietrich's own writing — a CBS transcription typo. Preserve in any quote citing that narrator passage; use canonical "Dietrich" elsewhere.
+rumors: []
