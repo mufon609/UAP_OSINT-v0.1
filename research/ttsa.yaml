@@ -4,84 +4,15 @@ schema_version: 1
 target_node: organizations/ttsa
 status: active
 created: '2026-04-22'
-description: |
-  To The Stars Academy of Arts and Science Inc. ([`/organizations/ttsa`])
-  is a Public Benefit Corporation founded in 2017 by Tom DeLonge
-  ([`/people/tom-delonge`]), Dr. Harold E. Puthoff ([`/people/hal-puthoff`]),
-  and Jim Semivan ([`/people/jim-semivan`]), at 1051 S. Coast Hwy 101
-  Suite B, Encinitas, California ([`/locations/encinitas-california`]).
-  The company launched a Regulation A offering qualified by the United
-  States Securities and Exchange Commission on July 10, 2017, offering
-  up to 10,000,000 shares of Class A Common Stock at $5.00 per share
-  with a $50,000,000 maximum raise. TTSA acquired To The Stars, Inc.
-  ([`/organizations/to-the-stars-inc`]), an existing business that now
-  comprises the company's Entertainment Division, as a wholly-owned
-  subsidiary during formation, and organized operations into three
-  divisions — Entertainment, Aerospace, and Science.
+description: 'To The Stars Academy of Arts and Science Inc. ([`/organizations/ttsa`]) is a Public Benefit Corporation founded in 2017 by Tom DeLonge ([`/people/tom-delonge`]), Dr. Harold E. Puthoff ([`/people/hal-puthoff`]), and Jim Semivan ([`/people/jim-semivan`]), at 1051 S. Coast Hwy 101 Suite B, Encinitas, California ([`/locations/encinitas-california`]). The company launched a Regulation A offering qualified by the United States Securities and Exchange Commission on July 10, 2017, offering up to 10,000,000 shares of Class A Common Stock at $5.00 per share with a $50,000,000 maximum raise. TTSA acquired To The Stars, Inc. ([`/organizations/to-the-stars-inc`]), an existing business that now comprises the company''s Entertainment Division, as a wholly-owned subsidiary during formation, and organized operations into three divisions — Entertainment, Aerospace, and Science.
 
 
-  The company launched publicly in October 2017 alongside a New York
-  Times article about the Pentagon's Advanced Aerospace Threat
-  Identification Program ([`/organizations/aatip`]) by Helene Cooper
-  ([`/people/helene-cooper`]), Ralph Blumenthal
-  ([`/people/ralph-blumenthal`]), and Leslie Kean ([`/people/leslie-kean`]).
-  Former Pentagon military intelligence official Luis Elizondo
-  ([`/people/luis-elizondo`]) left his Pentagon post to join the
-  company, describing his prior role as running "a sensitive
-  aerospace threat identification program focusing on unidentified
-  aerial technologies"; he served as Director of Global Security and
-  Special Programs. Steve Justice ([`/people/steve-justice`]), a
-  former Program Director for Advanced Systems at Lockheed Martin's
-  Skunk Works ([`/organizations/lockheed-martin-skunk-works`]),
-  directed the Aerospace Division; Chris Mellon
-  ([`/people/christopher-mellon`]), a former Deputy Assistant
-  Secretary of Defense for Intelligence, served as National Security
-  Affairs Advisor. Jim Semivan is a retired Central Intelligence
-  Agency ([`/organizations/cia`]) Senior Intelligence Service officer.
-  The company's Advisory Board disclosed in the 2017 SEC filing
-  included Chris Mellon, Adele Gilpin, Dr. Norman Kahn, Dr. Colm
-  Kelleher ([`/people/colm-kelleher`]), Dr. Garry Nolan
-  ([`/people/garry-nolan`]), and Dr. Paul Rapp. The company's 2016
-  correspondence via Tom DeLonge to John Podesta
-  ([`/people/john-podesta`]) referenced retired USAF Lt. Gen.
-  William N. McCasland ([`/people/william-mccasland`]) as having
-  helped assemble the advisory team, with DeLonge describing
-  McCasland as the former commander of the Air Force Research
-  Laboratory at Wright-Patterson Air Force Base
-  ([`/organizations/wright-patterson-afb`]).
+  The company launched publicly in October 2017 alongside a New York Times article about the Pentagon''s Advanced Aerospace Threat Identification Program ([`/organizations/aatip`]) by Helene Cooper ([`/people/helene-cooper`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Leslie Kean ([`/people/leslie-kean`]). Former Pentagon military intelligence official Luis Elizondo ([`/people/luis-elizondo`]) left his Pentagon post to join the company, describing his prior role as running "a sensitive aerospace threat identification program focusing on unidentified aerial technologies"; he served as Director of Global Security and Special Programs. Steve Justice ([`/people/steve-justice`]), a former Program Director for Advanced Systems at Lockheed Martin''s Skunk Works ([`/organizations/lockheed-martin-skunk-works`]), directed the Aerospace Division; Chris Mellon ([`/people/christopher-mellon`]), a former Deputy Assistant Secretary of Defense for Intelligence, served as National Security Affairs Advisor. Jim Semivan is a retired Central Intelligence Agency ([`/organizations/cia`]) Senior Intelligence Service officer. The company''s Advisory Board disclosed in the 2017 SEC filing included Chris Mellon, Adele Gilpin, Dr. Norman Kahn, Dr. Colm Kelleher ([`/people/colm-kelleher`]), Dr. Garry Nolan ([`/people/garry-nolan`]), and Dr. Paul Rapp. The company''s 2016 correspondence via Tom DeLonge to John Podesta ([`/people/john-podesta`]) referenced retired USAF Lt. Gen. William N. McCasland ([`/people/william-mccasland`]) as having helped assemble the advisory team, with DeLonge describing McCasland as the former commander of the Air Force Research Laboratory at Wright-Patterson Air Force Base ([`/organizations/wright-patterson-afb`]).
 
 
-  TTSA's Aerospace Division announced The ADAM Research Project
-  (Acquisition and Data Analysis of Materials) in July 2018 under
-  Puthoff's leadership. By late September 2018, TTSA publicly
-  reported it had collected seven pieces of material, from multiple
-  sources, to study for The ADAM Research Project; the most widely
-  discussed specimen — a layered metallic sample primarily composed
-  of magnesium, zinc, and bismuth — was the subject of a TTSA blog
-  post dated September 27, 2018. On October 1, 2019 (with public
-  announcement October 17), TTSA and the U.S. Army
-  ([`/organizations/us-army`]) Combat Capabilities Development Command
-  Ground Vehicle Systems Center
-  ([`/organizations/ccdc-ground-vehicle-systems-center`]) executed
-  Cooperative Research and Development Agreement 19-15 titled Novel
-  and Emerging Technology Exploitation, committing approximately
-  $750,000 in estimated U.S. Government resources to assess TTSA's
-  materiel and technology innovations across metamaterials, quantum
-  physics, quantum communications, and beamed energy propulsion. The
-  CRADA named Elizondo as TTSA's Principal Investigator and Dr.
-  Joseph Cannon ([`/people/joseph-cannon`]) and Ben Soave as the
-  Army's. Subsequent to the TTSA–DEVCOM CRADA, the All-domain
-  Anomaly Resolution Office ([`/organizations/aaro`]), founded in
-  2022, contracted Oak Ridge National Laboratory
-  ([`/organizations/ornl`]) to independently assess and perform
-  thorough characterization studies on the specimen; ORNL's April
-  2024 Synopsis and AARO's July 2024 Supplement concluded the
-  material is terrestrial in origin and "consistent with Mg alloy
-  research and development projects and experimental manufacturing
-  methods in the mid-20th century." An earlier aerospace research
-  company run by Robert Bigelow ([`/organizations/bigelow-aerospace`])
-  was the Pentagon program's principal funding recipient per the
-  2017 Times article.
+  TTSA''s Aerospace Division announced The ADAM Research Project (Acquisition and Data Analysis of Materials) in July 2018 under Puthoff''s leadership. By late September 2018, TTSA publicly reported it had collected seven pieces of material, from multiple sources, to study for The ADAM Research Project; the most widely discussed specimen — a layered metallic sample primarily composed of magnesium, zinc, and bismuth — was the subject of a TTSA blog post dated September 27, 2018. On October 1, 2019 (with public announcement October 17), TTSA and the U.S. Army ([`/organizations/us-army`]) Combat Capabilities Development Command Ground Vehicle Systems Center ([`/organizations/ccdc-ground-vehicle-systems-center`]) executed Cooperative Research and Development Agreement 19-15 titled Novel and Emerging Technology Exploitation, committing approximately $750,000 in estimated U.S. Government resources to assess TTSA''s materiel and technology innovations across metamaterials, quantum physics, quantum communications, and beamed energy propulsion. The CRADA named Elizondo as TTSA''s Principal Investigator and Dr. Joseph Cannon ([`/people/joseph-cannon`]) and Ben Soave as the Army''s. Subsequent to the TTSA–DEVCOM CRADA, the All-domain Anomaly Resolution Office ([`/organizations/aaro`]), founded in 2022, contracted Oak Ridge National Laboratory ([`/organizations/ornl`]) to independently assess and perform thorough characterization studies on the specimen; ORNL''s April 2024 Synopsis and AARO''s July 2024 Supplement concluded the material is terrestrial in origin and "consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century." An earlier aerospace research company run by Robert Bigelow ([`/organizations/bigelow-aerospace`]) was the Pentagon program''s principal funding recipient per the 2017 Times article.
+
+  '
 primary_sources:
 - path: government/sec-ttsa-1a-partii-20170710.html
   format: html
