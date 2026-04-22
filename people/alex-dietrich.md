@@ -99,7 +99,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 — Dietrich describing her in-cockpit thought process during the encounter, 2021-05-16 |
+| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 — Dietrich describing her in-cockpit thought process during the encounter |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1098 |
@@ -108,7 +108,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16, 2021-05-16 |
+| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 967 |
@@ -117,7 +117,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16, 2021-05-16 |
+| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 972 |
@@ -126,7 +126,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16, 2021-05-16 |
+| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 978 |
@@ -135,7 +135,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16, 2021-05-16 |
+| Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 978 |
@@ -144,7 +144,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16), 2021-06-16 |
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 117-124 |
@@ -153,7 +153,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26), 2023 |
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 478-481 |
@@ -162,7 +162,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26), 2023 |
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 458-461 |
@@ -171,7 +171,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | American Veterans Center interview (recorded 2024-11-09), 2024-11-09 |
+| Attributed to | American Veterans Center interview (recorded 2024-11-09) |
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 247-254 |
@@ -180,7 +180,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | American Veterans Center interview (recorded 2024-11-09), 2024-11-09 |
+| Attributed to | American Veterans Center interview (recorded 2024-11-09) |
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 300-305 |
@@ -189,7 +189,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20), 2025-02-20 |
+| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 391-395 |
@@ -198,7 +198,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Linda Hall Library UAP Scientific Context panel Q&A (recorded 2025-02-20), 2025-02-20 |
+| Attributed to | Linda Hall Library UAP Scientific Context panel Q&A (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1426-1432 |
@@ -210,7 +210,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16, 2021-05-16 |
+| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1086 |
@@ -219,7 +219,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16, 2021-05-16 |
+| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1086 |
@@ -228,7 +228,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16, 2021-05-16 |
+| Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1104 |
@@ -237,7 +237,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16), 2021-06-16 |
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 47-53 |
@@ -246,7 +246,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16), 2021-06-16 |
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 142-145 |
@@ -255,7 +255,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16), 2021-06-16 |
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 154-158 |
@@ -264,7 +264,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16), 2021-06-16 |
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 178-181 |
@@ -273,7 +273,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16), 2021-06-16 |
+| Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 192-193 |
@@ -282,7 +282,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14, 2022-11-14 |
+| Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14 |
 | Source | [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 15 |
@@ -291,7 +291,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14, 2022-11-14 |
+| Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14 |
 | Source | [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 15 |
@@ -300,7 +300,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26), 2023 |
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 91-93 |
@@ -309,7 +309,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26), 2023 |
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 491-494 |
@@ -318,7 +318,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26), 2023 |
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 499-501 |
@@ -327,7 +327,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26), 2023 |
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 54-56 |
@@ -336,7 +336,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26), 2023 |
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 228 |
@@ -345,7 +345,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26), 2023 |
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 166-167 |
@@ -354,7 +354,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17, 2023-02-17 |
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 41 |
@@ -363,7 +363,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17, 2023-02-17 |
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 41 |
@@ -372,7 +372,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17, 2023-02-17 |
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 45 |
@@ -381,7 +381,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17, 2023-02-17 |
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 62 |
@@ -390,7 +390,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17, 2023-02-17 |
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 64 |
@@ -399,7 +399,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Merged podcast Ep. 014 with Ryan Graves (published 2023-08-31), 2023-08-31 |
+| Attributed to | Merged podcast Ep. 014 with Ryan Graves (published 2023-08-31) |
 | Source | [archived source](../sources/transcripts/merged-podcast-014-dietrich-2023-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 82-92 |
@@ -408,7 +408,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Merged podcast Ep. 014 with Ryan Graves (published 2023-08-31), 2023-08-31 |
+| Attributed to | Merged podcast Ep. 014 with Ryan Graves (published 2023-08-31) |
 | Source | [archived source](../sources/transcripts/merged-podcast-014-dietrich-2023-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 334-343 |
@@ -417,7 +417,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Calling All Beings podcast Ep. 104 (published 2024-01-05), 2024-01-05 |
+| Attributed to | Calling All Beings podcast Ep. 104 (published 2024-01-05) |
 | Source | [archived source](../sources/transcripts/calling-all-beings-104-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 714-722 |
@@ -426,7 +426,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | American Veterans Center interview (recorded 2024-11-09), 2024-11-09 |
+| Attributed to | American Veterans Center interview (recorded 2024-11-09) |
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 206-212 |
@@ -435,7 +435,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20), 2025-02-20 |
+| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 311-321 |
@@ -444,7 +444,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20), 2025-02-20 |
+| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 449-454 |
@@ -453,7 +453,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 | Field | Value |
 |---|---|
-| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20), 2025-02-20 |
+| Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1111-1117 |

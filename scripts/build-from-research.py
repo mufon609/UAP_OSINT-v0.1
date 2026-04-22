@@ -544,11 +544,15 @@ def render_affiliations(artifact):
 def _render_verification_block(quote, artifact):
     """Render the 3-field verification table for a person statement quote.
     Composes an Attributed-to line from quote.context (when set) + the
-    quote's statement_date (when set)."""
+    quote's statement_date (when set). If the date already appears in
+    the context string, skip the append to avoid a doubled-date render."""
     ctx = quote.get("context") or ""
     date = quote.get("statement_date") or ""
-    attributed_to_parts = [p for p in [ctx, date] if p]
-    attributed_to = ", ".join(attributed_to_parts) if attributed_to_parts else ""
+    if date and date in ctx:
+        attributed_to = ctx
+    else:
+        attributed_to_parts = [p for p in [ctx, date] if p]
+        attributed_to = ", ".join(attributed_to_parts) if attributed_to_parts else ""
     src = quote.get("source") or {}
     src_path = src.get("path") or ""
     src_link = f"[archived source](../sources/{src_path})" if src_path else ""
