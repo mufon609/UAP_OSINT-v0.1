@@ -51,26 +51,16 @@ context_extrinsic:
   display_title: Alex Dietrich
 background: >
   Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former
-  F/A-18F strike fighter pilot. She graduated and commissioned in May
-  of 2001 through the NROTC scholarship at George Washington University,
-  where she received a B.S. in Civil Engineering; she later earned an
-  MBA from the GW School of Business and graduated from the Defense
-  Language Institute speaking Dari (Afghan Farsi). During her squadron
-  tours she served two combat deployments in support of Operation
-  Iraqi Freedom and Operation Enduring Freedom; her last deployment
-  was a yearlong assignment boots-on-ground as an infrastructure
-  reconstruction engineer in Ghazni Afghanistan in 2010. She logged
-  more than 1,250 flight hours and 375 carrier-arrested landings, and
-  was awarded a Bronze Star and a Combat Air Medal for 206 combat
-  missions flown in support of OIF and OEF. After retirement she has
-  taught leadership, ethics, and critical thinking at the consortium
-  of schools in Washington DC (Georgetown, George Washington, Howard,
-  and Catholic Universities), the U.S. Naval Academy in Annapolis in
-  the department of Leadership, Ethics and Law, and now serves on the
-  faculty of the University of Colorado School of Engineering in
-  Boulder. She currently serves as Interim Chief Human Resources
-  Officer at Syracuse University. She is an alumna of the Illinois
-  Math & Science Academy.
+  F/A-18F strike fighter pilot. She commissioned through the NROTC
+  scholarship at George Washington University in May 2001 and served
+  20 years including two combat deployments in support of Operation
+  Iraqi Freedom and Operation Enduring Freedom. After retirement she
+  has held faculty appointments at the U.S. Naval Academy (Department
+  of Leadership, Ethics and Law), the consortium of schools in
+  Washington DC (Georgetown, George Washington, Howard, and Catholic
+  Universities), and the University of Colorado Boulder (School of
+  Engineering); she currently serves as Interim Chief Human Resources
+  Officer at Syracuse University.
 uap_relevance: >
   Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs
   vectored to intercept and who visually acquired the Tic Tac object
@@ -80,7 +70,8 @@ uap_relevance: >
   flight — Chad Underwood ([`/people/chad-underwood`]) and his pilot —
   that captured the FLIR targeting pod video shortly after, and the
   USS Princeton Aegis combat system operators who had been observing
-  these objects for the previous 2 weeks. She was on the wing of Cmdr.
+  these objects for the previous 2 weeks (both per Fravor's House
+  Oversight Statement, [`/documents/written-testimony-fravor-2023`]). She was on the wing of Cmdr.
   Dave Fravor (then-commanding officer of VFA-41 Black Aces); each
   F/A-18F had a weapons system officer in the back seat. She has
   stated her rank at the time of the encounter as Lieutenant Junior
@@ -128,7 +119,7 @@ affiliations:
   source:
     path: news/debrief-dietrich-cooperation-uap-opinion.html
     location: "line 66"
-  note: Self-attested in The Debrief op-ed byline as F/A-18 pilot from 2001-2020.
+  note: "Per her self-authored Debrief op-ed: F/A-18 pilot from 2001-2020; logged more than 1,250 flight hours and 375 carrier-arrested landings; awarded a Bronze Star and a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom and Operation Enduring Freedom."
 - id: a2
   added_date: '2026-04-21'
   organization_path: /organizations/vfa-41
@@ -660,6 +651,28 @@ quotes:
   observation_type: direct
   statement_date: '2024-11-09'
   significance: "Dietrich's first-person observation of Tic Tac kinematic behavior — 'didn't adhere to our understanding of physics and gravity.'"
+- id: q41
+  added_date: '2026-04-22'
+  text: |-
+    These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "paragraph near article start"
+  context: "Self-authored op-ed in The Debrief, 2023-02-17"
+  observation_type: relayed
+  statement_date: '2023-02-17'
+  significance: "Dietrich's framing of UAP as a longstanding domain awareness gap on three fronts — her core thesis frame used across subsequent interviews."
+- id: q42
+  added_date: '2026-04-22'
+  text: |-
+    She logged more than 1,250 flight hours, 375 carrier-arrested landings, and was awarded a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom (OIF) and Operation Enduring Freedom (OEF). She was also awarded a Bronze Star medal for a boots-on-ground deployment to Afghanistan in 2010.
+  source:
+    path: news/debrief-dietrich-cooperation-uap-opinion.html
+    location: "author byline"
+  context: "Self-authored op-ed byline in The Debrief, 2023-02-17"
+  observation_type: relayed
+  statement_date: '2023-02-17'
+  significance: "Dietrich's own bio summary in her self-authored Debrief op-ed byline — the primary source for her career totals (flight hours, carrier-arrested landings) and combat awards (Combat Air Medal for 206 missions across OIF and OEF; Bronze Star for the 2010 Afghanistan deployment)."
 timeline:
 - id: t1
   added_date: '2026-04-21'
@@ -975,6 +988,12 @@ entities_referenced:
   name: FLIR1 video
   wrap_path: /media/flir1-video
   context_summary: Targeting-pod video captured by a subsequent F/A-18F sortie that day; Dietrich personally viewed the original tape aboard Nimitz.
+- id: e22
+  added_date: '2026-04-22'
+  entity_type: document
+  name: Fravor's House Oversight written testimony (2023)
+  wrap_path: /documents/written-testimony-fravor-2023
+  context_summary: Primary source document attesting the additional first-hand witnesses to the Nimitz encounter (Chad Underwood's subsequent FLIR flight and the USS Princeton Aegis operators tracking the objects for the previous 2 weeks).
 naming_quirks:
 - id: nq1
   added_date: '2026-04-21'

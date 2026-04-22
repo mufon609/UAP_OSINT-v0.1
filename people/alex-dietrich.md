@@ -22,13 +22,13 @@ created: 2026-04-21
 
 ## Background
 
-Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former F/A-18F strike fighter pilot. She graduated and commissioned in May of 2001 through the NROTC scholarship at George Washington University, where she received a B.S. in Civil Engineering; she later earned an MBA from the GW School of Business and graduated from the Defense Language Institute speaking Dari (Afghan Farsi). During her squadron tours she served two combat deployments in support of Operation Iraqi Freedom and Operation Enduring Freedom; her last deployment was a yearlong assignment boots-on-ground as an infrastructure reconstruction engineer in Ghazni Afghanistan in 2010. She logged more than 1,250 flight hours and 375 carrier-arrested landings, and was awarded a Bronze Star and a Combat Air Medal for 206 combat missions flown in support of OIF and OEF. After retirement she has taught leadership, ethics, and critical thinking at the consortium of schools in Washington DC (Georgetown, George Washington, Howard, and Catholic Universities), the U.S. Naval Academy in Annapolis in the department of Leadership, Ethics and Law, and now serves on the faculty of the University of Colorado School of Engineering in Boulder. She currently serves as Interim Chief Human Resources Officer at Syracuse University. She is an alumna of the Illinois Math & Science Academy.
+Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former F/A-18F strike fighter pilot. She commissioned through the NROTC scholarship at George Washington University in May 2001 and served 20 years including two combat deployments in support of Operation Iraqi Freedom and Operation Enduring Freedom. After retirement she has held faculty appointments at the U.S. Naval Academy (Department of Leadership, Ethics and Law), the consortium of schools in Washington DC (Georgetown, George Washington, Howard, and Catholic Universities), and the University of Colorado Boulder (School of Engineering); she currently serves as Interim Chief Human Resources Officer at Syracuse University.
 
 ---
 
 ## UAP Relevance
 
-Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to intercept and who visually acquired the Tic Tac object on November 14, 2004 (the USS Nimitz Tic Tac UAP encounter); she is one of two members of that flight who have spoken publicly about it. Additional first-hand witnesses include the crew of the subsequent flight — Chad Underwood ([`/people/chad-underwood`]) and his pilot — that captured the FLIR targeting pod video shortly after, and the USS Princeton Aegis combat system operators who had been observing these objects for the previous 2 weeks. She was on the wing of Cmdr. Dave Fravor (then-commanding officer of VFA-41 Black Aces); each F/A-18F had a weapons system officer in the back seat. She has stated her rank at the time of the encounter as Lieutenant Junior Grade. She had been in contact with the Office of Naval Intelligence ([`/organizations/oni`]) and Pentagon UAP investigators since about 2009 — a one-way flow in which they called her in to answer questions about the encounter and shared material from other incidents — and only spoke publicly for the first time on the May 16, 2021 CBS 60 Minutes broadcast. Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 2022, and joined Americans for Safe Aerospace as an Advisor at its launch in 2023. In her February 2023 opinion piece in The Debrief ([`/organizations/the-debrief`]) she wrote that 'These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.' She was fortunate to attend the first meeting of the NASA UAP Independent Study Team ([`/organizations/nasa`]) in late 2022.
+Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to intercept and who visually acquired the Tic Tac object on November 14, 2004 (the USS Nimitz Tic Tac UAP encounter); she is one of two members of that flight who have spoken publicly about it. Additional first-hand witnesses include the crew of the subsequent flight — Chad Underwood ([`/people/chad-underwood`]) and his pilot — that captured the FLIR targeting pod video shortly after, and the USS Princeton Aegis combat system operators who had been observing these objects for the previous 2 weeks (both per Fravor's House Oversight Statement, [`/documents/written-testimony-fravor-2023`]). She was on the wing of Cmdr. Dave Fravor (then-commanding officer of VFA-41 Black Aces); each F/A-18F had a weapons system officer in the back seat. She has stated her rank at the time of the encounter as Lieutenant Junior Grade. She had been in contact with the Office of Naval Intelligence ([`/organizations/oni`]) and Pentagon UAP investigators since about 2009 — a one-way flow in which they called her in to answer questions about the encounter and shared material from other incidents — and only spoke publicly for the first time on the May 16, 2021 CBS 60 Minutes broadcast. Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 2022, and joined Americans for Safe Aerospace as an Advisor at its launch in 2023. In her February 2023 opinion piece in The Debrief ([`/organizations/the-debrief`]) she wrote that 'These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.' She was fortunate to attend the first meeting of the NASA UAP Independent Study Team ([`/organizations/nasa`]) in late 2022.
 
 ---
 
@@ -356,6 +356,24 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 64 |
 
+> These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
+| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | paragraph near article start |
+
+> She logged more than 1,250 flight hours, 375 carrier-arrested landings, and was awarded a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom (OIF) and Operation Enduring Freedom (OEF). She was also awarded a Bronze Star medal for a boots-on-ground deployment to Afghanistan in 2010.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-authored op-ed byline in The Debrief, 2023-02-17 |
+| Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | author byline |
+
 > so I recently [2:17] retired and moved to Boulder [2:19] after serving 20 years in the Navy. [2:22] The first 10 years was [2:24] operational as a pilot [2:27] and then deploying as an engineer. [2:30] And then the last 10 years, I was [2:32] living the charmed life of an academic, [2:35] teaching at the Naval [2:36] Academy in Annapolis, [2:38] and then the consortium of schools in DC.
 
 | Field | Value |
@@ -505,6 +523,10 @@ Dietrich is one of two witnesses who have spoken publicly about the November 14,
 ### Events
 
 - [`/events/2004-nimitz-encounter`]
+
+### Documents
+
+- [`/documents/written-testimony-fravor-2023`]
 
 ### Media
 
