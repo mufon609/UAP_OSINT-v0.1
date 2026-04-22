@@ -22,52 +22,13 @@ created: 2026-04-21
 
 ## Background
 
-Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former
-F/A-18F strike fighter pilot. She graduated and commissioned in May
-of 2001 through the NROTC scholarship at George Washington University,
-where she received a B.S. in Civil Engineering; she later earned an
-MBA from the GW School of Business and graduated from the Defense
-Language Institute speaking Dari (Afghan Farsi). During her squadron
-tours she served two combat deployments in support of Operation
-Iraqi Freedom and Operation Enduring Freedom; her last deployment
-was a yearlong assignment boots-on-ground as an infrastructure
-reconstruction engineer in Ghazni Afghanistan in 2010. She logged
-more than 1,250 flight hours and 375 carrier-arrested landings, and
-was awarded a Bronze Star and a Combat Air Medal for 206 combat
-missions flown in support of OIF and OEF. After retirement she has
-taught leadership, ethics, and critical thinking at the consortium
-of schools in Washington DC (Georgetown, George Washington, Howard,
-and Catholic Universities), the U.S. Naval Academy in Annapolis in
-the department of Leadership, Ethics and Law, and now serves on the
-faculty of the University of Colorado School of Engineering in
-Boulder. She currently serves as Interim Chief Human Resources
-Officer at Syracuse University. She is an alumna of the Illinois
-Math & Science Academy.
+Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former F/A-18F strike fighter pilot. She graduated and commissioned in May of 2001 through the NROTC scholarship at George Washington University, where she received a B.S. in Civil Engineering; she later earned an MBA from the GW School of Business and graduated from the Defense Language Institute speaking Dari (Afghan Farsi). During her squadron tours she served two combat deployments in support of Operation Iraqi Freedom and Operation Enduring Freedom; her last deployment was a yearlong assignment boots-on-ground as an infrastructure reconstruction engineer in Ghazni Afghanistan in 2010. She logged more than 1,250 flight hours and 375 carrier-arrested landings, and was awarded a Bronze Star and a Combat Air Medal for 206 combat missions flown in support of OIF and OEF. After retirement she has taught leadership, ethics, and critical thinking at the consortium of schools in Washington DC (Georgetown, George Washington, Howard, and Catholic Universities), the U.S. Naval Academy in Annapolis in the department of Leadership, Ethics and Law, and now serves on the faculty of the University of Colorado School of Engineering in Boulder. She currently serves as Interim Chief Human Resources Officer at Syracuse University. She is an alumna of the Illinois Math & Science Academy.
 
 ---
 
 ## UAP Relevance
 
-Dietrich is one of four naval aviators on the November 14, 2004 USS
-Nimitz Tic Tac encounter, and one of two who have spoken publicly
-about it. She was on the wing of Cmdr. Dave Fravor (then-commanding
-officer of VFA-41 Black Aces) in a flight of 2 F/A-18Fs; each F/A-18F
-had a weapons system officer in the back seat. She has stated her
-rank at the time of the encounter as Lieutenant Junior Grade. She
-had been in contact with the Office of Naval Intelligence
-([`/organizations/oni`]) and Pentagon UAP investigators since about
-2009 — a one-way flow in which they called her in to answer questions
-about the encounter and shared material from other incidents — and
-only spoke publicly for the first time on the May 16, 2021 CBS 60
-Minutes broadcast. Dietrich joined Enigma Labs as their first advisor
-(an unpaid role) in November 2022, and joined Americans for Safe
-Aerospace as an Advisor at its launch in 2023. In her February 2023
-opinion piece in The Debrief ([`/organizations/the-debrief`]) she
-wrote that 'These events highlight a longstanding domain awareness
-gap confronting our collective consciousness on three fronts:
-military defense, aviation safety, and scientific inquiry.' She was
-fortunate to attend the first meeting of the NASA UAP Independent
-Study Team ([`/organizations/nasa`]) in late 2022.
+Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to intercept and who visually acquired the Tic Tac object on November 14, 2004 (the USS Nimitz Tic Tac UAP encounter); she is one of two members of that flight who have spoken publicly about it. Additional first-hand witnesses include the crew of the subsequent flight — Chad Underwood ([`/people/chad-underwood`]) and his pilot — that captured the FLIR targeting pod video shortly after, and the USS Princeton Aegis combat system operators who had been observing these objects for the previous 2 weeks. She was on the wing of Cmdr. Dave Fravor (then-commanding officer of VFA-41 Black Aces); each F/A-18F had a weapons system officer in the back seat. She has stated her rank at the time of the encounter as Lieutenant Junior Grade. She had been in contact with the Office of Naval Intelligence ([`/organizations/oni`]) and Pentagon UAP investigators since about 2009 — a one-way flow in which they called her in to answer questions about the encounter and shared material from other incidents — and only spoke publicly for the first time on the May 16, 2021 CBS 60 Minutes broadcast. Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 2022, and joined Americans for Safe Aerospace as an Advisor at its launch in 2023. In her February 2023 opinion piece in The Debrief ([`/organizations/the-debrief`]) she wrote that 'These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.' She was fortunate to attend the first meeting of the NASA UAP Independent Study Team ([`/organizations/nasa`]) in late 2022.
 
 ---
 
@@ -508,25 +469,7 @@ Study Team ([`/organizations/nasa`]) in late 2022.
 
 ## Credibility Notes
 
-Dietrich is one of two witnesses who have spoken publicly about
-the November 14, 2004 USS Nimitz Tic Tac encounter (the other is
-her flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the
-other two members of their flight of 2 F/A-18Fs (the back-seater
-in each F/A-18F) have not made public statements. She personally
-observed and visually acquired the object during the encounter
-from the second F/A-18F. Her account is also documented by Fravor
-in the lead aircraft, by the USS Princeton Aegis combat system
-(which reacquired the object 60 miles East at the CAP point
-seconds after it disappeared), and by the FLIR video captured by
-another single F/A-18F — Chad Underwood ([`/people/chad-underwood`])
-was in the back seat of that aircraft per Dietrich's own account —
-that launched after Dietrich and Fravor's flight returned. She
-had been in one-way contact with Pentagon UAP investigators since
-about 2009 — first contacted by the Office of Naval Intelligence,
-with later contact from the first generation AATIP program
-([`/organizations/aatip`]) and AARO ([`/organizations/aaro`]) — and
-only spoke publicly for the first time on the May 16, 2021 CBS 60
-Minutes broadcast.
+Dietrich is one of two witnesses who have spoken publicly about the November 14, 2004 USS Nimitz Tic Tac encounter (the other is her flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the other two members of their flight of 2 F/A-18Fs (the back-seater in each F/A-18F) have not made public statements. She personally observed and visually acquired the object during the encounter from the second F/A-18F. Her account is also documented by Fravor in the lead aircraft, by the USS Princeton Aegis combat system (which reacquired the object 60 miles East at the CAP point seconds after it disappeared), and by the FLIR video captured by another single F/A-18F — Chad Underwood ([`/people/chad-underwood`]) was in the back seat of that aircraft per Dietrich's own account — that launched after Dietrich and Fravor's flight returned. She had been in one-way contact with Pentagon UAP investigators since about 2009 — first contacted by the Office of Naval Intelligence, with later contact from the first generation AATIP program ([`/organizations/aatip`]) and AARO ([`/organizations/aaro`]) — and only spoke publicly for the first time on the May 16, 2021 CBS 60 Minutes broadcast.
 
 ---
 

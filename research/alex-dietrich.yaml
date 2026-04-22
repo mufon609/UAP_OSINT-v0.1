@@ -49,7 +49,7 @@ document_intrinsic:
   profession: Strike fighter pilot, U.S. Navy (retired)
 context_extrinsic:
   display_title: Alex Dietrich
-background: |
+background: >
   Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former
   F/A-18F strike fighter pilot. She graduated and commissioned in May
   of 2001 through the NROTC scholarship at George Washington University,
@@ -71,14 +71,20 @@ background: |
   Boulder. She currently serves as Interim Chief Human Resources
   Officer at Syracuse University. She is an alumna of the Illinois
   Math & Science Academy.
-uap_relevance: |
-  Dietrich is one of four naval aviators on the November 14, 2004 USS
-  Nimitz Tic Tac encounter, and one of two who have spoken publicly
-  about it. She was on the wing of Cmdr. Dave Fravor (then-commanding
-  officer of VFA-41 Black Aces) in a flight of 2 F/A-18Fs; each F/A-18F
-  had a weapons system officer in the back seat. She has stated her
-  rank at the time of the encounter as Lieutenant Junior Grade. She
-  had been in contact with the Office of Naval Intelligence
+uap_relevance: >
+  Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs
+  vectored to intercept and who visually acquired the Tic Tac object
+  on November 14, 2004 (the USS Nimitz Tic Tac UAP encounter); she is
+  one of two members of that flight who have spoken publicly about it.
+  Additional first-hand witnesses include the crew of the subsequent
+  flight — Chad Underwood ([`/people/chad-underwood`]) and his pilot —
+  that captured the FLIR targeting pod video shortly after, and the
+  USS Princeton Aegis combat system operators who had been observing
+  these objects for the previous 2 weeks. She was on the wing of Cmdr.
+  Dave Fravor (then-commanding officer of VFA-41 Black Aces); each
+  F/A-18F had a weapons system officer in the back seat. She has
+  stated her rank at the time of the encounter as Lieutenant Junior
+  Grade. She had been in contact with the Office of Naval Intelligence
   ([`/organizations/oni`]) and Pentagon UAP investigators since about
   2009 — a one-way flow in which they called her in to answer questions
   about the encounter and shared material from other incidents — and
@@ -92,23 +98,23 @@ uap_relevance: |
   military defense, aviation safety, and scientific inquiry.' She was
   fortunate to attend the first meeting of the NASA UAP Independent
   Study Team ([`/organizations/nasa`]) in late 2022.
-credibility_notes: |
-  Dietrich is one of two witnesses who have spoken publicly about
-  the November 14, 2004 USS Nimitz Tic Tac encounter (the other is
-  her flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the
-  other two members of their flight of 2 F/A-18Fs (the back-seater
-  in each F/A-18F) have not made public statements. She personally
-  observed and visually acquired the object during the encounter
-  from the second F/A-18F. Her account is also documented by Fravor
-  in the lead aircraft, by the USS Princeton Aegis combat system
-  (which reacquired the object 60 miles East at the CAP point
-  seconds after it disappeared), and by the FLIR video captured by
-  another single F/A-18F — Chad Underwood ([`/people/chad-underwood`])
-  was in the back seat of that aircraft per Dietrich's own account —
-  that launched after Dietrich and Fravor's flight returned. She
-  had been in one-way contact with Pentagon UAP investigators since
-  about 2009 — first contacted by the Office of Naval Intelligence,
-  with later contact from the first generation AATIP program
+credibility_notes: >
+  Dietrich is one of two witnesses who have spoken publicly about the
+  November 14, 2004 USS Nimitz Tic Tac encounter (the other is her
+  flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the other
+  two members of their flight of 2 F/A-18Fs (the back-seater in each
+  F/A-18F) have not made public statements. She personally observed
+  and visually acquired the object during the encounter from the
+  second F/A-18F. Her account is also documented by Fravor in the
+  lead aircraft, by the USS Princeton Aegis combat system (which
+  reacquired the object 60 miles East at the CAP point seconds after
+  it disappeared), and by the FLIR video captured by another single
+  F/A-18F — Chad Underwood ([`/people/chad-underwood`]) was in the
+  back seat of that aircraft per Dietrich's own account — that
+  launched after Dietrich and Fravor's flight returned. She had been
+  in one-way contact with Pentagon UAP investigators since about 2009
+  — first contacted by the Office of Naval Intelligence, with later
+  contact from the first generation AATIP program
   ([`/organizations/aatip`]) and AARO ([`/organizations/aaro`]) — and
   only spoke publicly for the first time on the May 16, 2021 CBS 60
   Minutes broadcast.
