@@ -484,6 +484,24 @@
   archive_status: 3
   wayback_date: '2023-06-02'
   note: 'Wayback Machine snapshot (2023-06-02) of the Americans for Safe Aerospace home page — earliest known capture showing Alex Dietrich on the personnel grid. Original section heading was ''Aircrew Leadership Council'' (later renamed ''Advisors''). Original cohort: Dietrich, Fravor, Sam Fletcher, Lewis Harding, Mark Hulsey, Chris Van Voorhis. Coincides with ASA''s official launch (May→June 2023).'
+- url: https://web.archive.org/web/20240711150238/https://www.aaro.mil/Portals/136/PDFs/Information%20Papers/ORNL-Synopsis_Analysis_of_a_Metallic_Specimen.pdf
+  format: pdf
+  status: archived
+  path: government/aaro-ornl-synopsis-metallic-specimen-202404.pdf
+  archived_date: '2026-04-22'
+  sha256: 02f2c18c7427d47ab4e76b73b2515018d9fc9caf8fadefeb87e59ad02f2c7711
+  archive_status: 3
+  wayback_date: '2024-07-11'
+  note: 'Wayback Machine snapshot (2024-07-11) of ''Synopsis: Analysis of a Metallic Specimen'' by Oak Ridge National Laboratory. AARO/ORNL joint publication, content references ''April 2024'' publication; PDF file created 2024-07-10. Primary-source DEFINITIVELY naming ORNL as the lab AARO contracted to analyze the TTSA-DEVCOM CRADA material specimen. Key verbatim: ''Previously, US Army Combat Capabilities Development Command (DEVCOM) established a Cooperative Research and Development Agreement (CRADA) with To the Stars Academy (TTSA) to evaluate the feasibility of exploiting any potential disruptive technology associated with this widely discussed specimen. AARO, founded in 2022, is congressionally mandated to explore historical records of UAP incidents... Subsequent to the TTSA-DEVCOM CRADA, AARO secured science and technology partner Oak Ridge National Laboratory (ORNL), one of 17 US Department of Energy national laboratories, to independently assess and perform thorough characterization studies on the specimen.'' Specimen access began February 2023 via DEVCOM Ground Vehicle System Center. 10 MB PDF — includes images of the specimen.'
+- url: https://web.archive.org/web/20240711163800/https://www.aaro.mil/Portals/136/PDFs/Information%20Papers/AAROs_Supplement_to_ORNLs_Analysis_of_a_Metallic_Specimen.pdf
+  format: pdf
+  status: archived
+  path: government/aaro-supplement-to-ornl-analysis-202407.pdf
+  archived_date: '2026-04-22'
+  sha256: b51a197ba6259ad28412a337fab7e14d761a6e14ffc7951f8ce5de5d567af1b1
+  archive_status: 3
+  wayback_date: '2024-07-11'
+  note: 'Wayback Machine snapshot (2024-07-11) of ''Supplement to Oak Ridge National Laboratory''s Analysis of a Metallic Specimen'', July 2024, by AARO. Companion publication to the ORNL Synopsis. Key verbatim: ''In 2022, The All-domain Anomaly Resolution Office (AARO) contracted with Oak Ridge National Laboratory (ORNL) to conduct materials testing on a magnesium (Mg) alloy specimen. This specimen has been publicly alleged to be a component recovered from a crashed extraterrestrial vehicle in 1947, and purportedly exhibits extraordinary properties, such as functioning as a terahertz waveguide to generate antigravity capabilities... ORNL assessed this specimen to be terrestrial in origin and that it does not meet the theoretical requirements to function as a terahertz (THz) waveguide. AARO concurs with ORNL''s assessment.'' Definitively closes the chain: TTSA → DEVCOM CRADA (2019-10-01) → AARO contract with ORNL (2022) → ORNL analysis (Feb 2023-April 2024) → AARO Supplement (July 2024). AARO''s conclusion: material is ''consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century''.'
 - url: https://web.archive.org/web/20240925053532/https://media.defense.gov/2024/Mar/08/2003409233/-1/-1/0/DOPSR-%C2%ADCLEARED-508-COMPLIANT-%C2%ADHRRV1-08-MAR-2024-FINAL.PDF
   format: pdf
   status: archived
