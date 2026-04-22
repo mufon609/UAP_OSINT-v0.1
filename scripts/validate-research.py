@@ -70,6 +70,7 @@ Usage:
 """
 
 import argparse
+import html
 import subprocess
 import re
 import sys
@@ -1835,6 +1836,28 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
 _source_token_cache = {}
 
 
+# HTML tag / entity handling: same pattern as scripts/validate.py's
+# _clean_html_for_text. Flat-scripts-pattern duplication rather than a shared
+# lib. Inline tags stripped with empty replacement (mid-word interleave
+# collapses — e.g., `Army<span>’</span>s` → `Army’s`); block / unknown tags
+# stripped with whitespace (preserve word boundaries across paragraph breaks);
+# entities decoded last.
+_HTML_INLINE_TAGS = (
+    r"span|b|i|em|strong|u|a|small|code|sub|sup|cite|q|mark|del|ins|"
+    r"abbr|dfn|samp|kbd|var|bdi|bdo|s|wbr|ruby|rt|rp|time|data|meter|"
+    r"progress|output|picture|tt|font"
+)
+
+
+def _clean_html_for_text(raw):
+    raw = re.sub(r"<script[^>]*>.*?</script>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
+    raw = re.sub(r"<style[^>]*>.*?</style>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
+    raw = re.sub(rf"</?(?:{_HTML_INLINE_TAGS})(?:\s[^>]*)?>", "", raw, flags=re.IGNORECASE)
+    raw = re.sub(r"<[^>]+>", " ", raw)
+    raw = html.unescape(raw)
+    return raw
+
+
 def _extract_source_text(source_path_abs):
     """Extract plaintext from a source file. Mirrors the pattern from
     scripts/validate.py's extract_source_text() and scripts/extract-source.py's
@@ -1854,7 +1877,12 @@ def _extract_source_text(source_path_abs):
         except (FileNotFoundError, subprocess.TimeoutExpired):
             return None
         return None
-    if suffix in (".html", ".htm", ".txt", ".md"):
+    if suffix in (".html", ".htm"):
+        try:
+            return _clean_html_for_text(source_path_abs.read_text(encoding="utf-8", errors="replace"))
+        except OSError:
+            return None
+    if suffix in (".txt", ".md"):
         try:
             return source_path_abs.read_text(encoding="utf-8", errors="replace")
         except OSError:
@@ -1873,7 +1901,14 @@ def extract_significant_tokens(text):
     """
     if not text:
         return set()
-    text = re.sub(r"\[`/[^`]+`\]", "", str(text))
+    # HTML entities -> character equivalents. Symmetric with validate.py
+    # normalize_for_compare: pre-existing contributor pastes of raw HTML
+    # entity bytes in prose ("department&#39;s") tokenize the same way as
+    # the cleaned source ("department's") after both sides are decoded.
+    # No-op on source text, which has already been decoded upstream in
+    # _clean_html_for_text.
+    text = html.unescape(str(text))
+    text = re.sub(r"\[`/[^`]+`\]", "", text)
     text = re.sub(r"[*_`]", "", text)
     # Typographic-dash handling diverges from the verbatim-quote check
     # by design. The verbatim-quote check is substring-matching quote

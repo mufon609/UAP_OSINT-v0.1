@@ -2020,7 +2020,9 @@ def render_location_relationships(artifact):
     Flagged split. Heterogeneous entity_path targets (any node type).
     Distinct from person render_relationships (person-to-person) and
     render_org_relationships (org-to-org) by allowing entity_path of
-    any type. Columns: Entity | Relationship | Node Link."""
+    any type. Columns: Entity | Relationship. The entity_path wrap-link
+    in the first column serves as the navigation target (no redundant
+    Node Link column — matches the BACKLOG #10 pattern rule)."""
     items = [e for e in (artifact.get("location_relationships") or []) if isinstance(e, dict)]
     confirmed = [e for e in items if not e.get("flagged")]
     flagged   = [e for e in items if e.get("flagged")]

@@ -73,6 +73,7 @@ validate-research.py). See meta/conventions.md "Check naming".
 
 import argparse
 import hashlib
+import html
 import re
 import subprocess
 import sys
@@ -521,6 +522,35 @@ BLOCKQUOTE_BLOCK = re.compile(
 )
 
 
+# HTML inline tags — replaced with empty string during cleaning so mid-word
+# interleave (e.g., `Army<span dir="RTL">’</span>s liaison` from thedebrief-
+# grusch-2023.html) collapses back to the intended word (`Army’s liaison`).
+# Block-level and unknown tags are replaced with whitespace to preserve word
+# boundaries across paragraph / heading / list breaks.
+_HTML_INLINE_TAGS = (
+    r"span|b|i|em|strong|u|a|small|code|sub|sup|cite|q|mark|del|ins|"
+    r"abbr|dfn|samp|kbd|var|bdi|bdo|s|wbr|ruby|rt|rp|time|data|meter|"
+    r"progress|output|picture|tt|font"
+)
+
+
+def _clean_html_for_text(raw):
+    """Strip HTML tags and decode entities so the raw bytes of an archived
+    .html file can be substring-matched against a verbatim quote. Handles:
+      - script/style bodies removed (avoid dumping JS/CSS into the text pool)
+      - inline tags stripped with empty replacement (mid-word interleave)
+      - block / unknown tags stripped with whitespace (word-boundary preserve)
+      - HTML entities decoded last (so content `&lt;` that should render as
+        `<` is preserved as `<` after the tag-stripping pass is done)
+    """
+    raw = re.sub(r"<script[^>]*>.*?</script>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
+    raw = re.sub(r"<style[^>]*>.*?</style>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
+    raw = re.sub(rf"</?(?:{_HTML_INLINE_TAGS})(?:\s[^>]*)?>", "", raw, flags=re.IGNORECASE)
+    raw = re.sub(r"<[^>]+>", " ", raw)
+    raw = html.unescape(raw)
+    return raw
+
+
 def extract_source_text(source_path):
     """Extract plain text from a source file. Returns None if unavailable.
     Cached for the duration of one validator run."""
@@ -538,7 +568,12 @@ def extract_source_text(source_path):
                 result = proc.stdout
         except (FileNotFoundError, subprocess.TimeoutExpired):
             result = None
-    elif suffix in (".html", ".htm", ".txt", ".md"):
+    elif suffix in (".html", ".htm"):
+        try:
+            result = _clean_html_for_text(source_path.read_text(encoding="utf-8", errors="replace"))
+        except OSError:
+            result = None
+    elif suffix in (".txt", ".md"):
         try:
             result = source_path.read_text(encoding="utf-8", errors="replace")
         except OSError:
@@ -566,6 +601,11 @@ def normalize_for_compare(text):
         against pdftotext artifacts where "brand-\\nnew" appears in source)
       - whitespace collapsed to single space
     """
+    # HTML entities -> their character equivalents. Pre-existing contributor
+    # pastes of raw HTML bytes into quote text continue to match; source
+    # text has already been decoded in _clean_html_for_text so this is a
+    # no-op on that side.
+    text = html.unescape(text)
     # Smart quotes -> straight
     text = text.replace("\u201c", '"').replace("\u201d", '"')
     text = text.replace("\u2018", "'").replace("\u2019", "'")

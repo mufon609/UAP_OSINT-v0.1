@@ -28,6 +28,8 @@ manually (or via bounded agent tasks per prompts/build.md).
 """
 
 import argparse
+import html
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -90,12 +92,39 @@ def extract_pdf_metadata(source_file):
     return meta
 
 
+# HTML tag / entity handling: same pattern as scripts/validate.py's
+# _clean_html_for_text. Flat-scripts-pattern duplication rather than a shared
+# lib. Inline tags stripped with empty replacement (mid-word interleave
+# collapses — e.g., `Army<span>’</span>s` → `Army’s`); block / unknown tags
+# stripped with whitespace; entities decoded last.
+_HTML_INLINE_TAGS = (
+    r"span|b|i|em|strong|u|a|small|code|sub|sup|cite|q|mark|del|ins|"
+    r"abbr|dfn|samp|kbd|var|bdi|bdo|s|wbr|ruby|rt|rp|time|data|meter|"
+    r"progress|output|picture|tt|font"
+)
+
+
+def _clean_html_for_text(raw):
+    raw = re.sub(r"<script[^>]*>.*?</script>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
+    raw = re.sub(r"<style[^>]*>.*?</style>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
+    raw = re.sub(rf"</?(?:{_HTML_INLINE_TAGS})(?:\s[^>]*)?>", "", raw, flags=re.IGNORECASE)
+    raw = re.sub(r"<[^>]+>", " ", raw)
+    raw = html.unescape(raw)
+    return raw
+
+
 def extract_text_file(source_file):
-    """Read a text file (HTML, TXT, MD) directly."""
+    """Read a text file directly. For HTML / HTM, additionally strip tags
+    and decode entities so downstream Phase I scratch files contain the
+    rendered text rather than raw markup."""
     try:
-        return source_file.read_text(encoding="utf-8", errors="replace")
+        raw = source_file.read_text(encoding="utf-8", errors="replace")
     except OSError:
         return None
+    ext = source_file.suffix.lower()
+    if ext in (".html", ".htm"):
+        return _clean_html_for_text(raw)
+    return raw
 
 
 def extract(source_file):
