@@ -1,0 +1,846 @@
+id: research/ttsa
+type: research-artifact
+schema_version: 1
+target_node: organizations/ttsa
+status: active
+created: '2026-04-22'
+description: |
+  To The Stars Academy of Arts and Science Inc. ([`/organizations/ttsa`])
+  is a Public Benefit Corporation founded in 2017 by Tom DeLonge
+  ([`/people/tom-delonge`]), Dr. Harold E. Puthoff ([`/people/hal-puthoff`]),
+  and Jim Semivan ([`/people/jim-semivan`]), at 1051 S. Coast Hwy 101
+  Suite B, Encinitas, California ([`/locations/encinitas-california`]).
+  The company launched a Regulation A offering qualified by the United
+  States Securities and Exchange Commission on July 10, 2017, offering
+  up to 10,000,000 shares of Class A Common Stock at $5.00 per share
+  with a $50,000,000 maximum raise. TTSA acquired To The Stars, Inc.
+  ([`/organizations/to-the-stars-inc`]), an existing business that now
+  comprises the company's Entertainment Division, as a wholly-owned
+  subsidiary during formation, and organized operations into three
+  divisions — Entertainment, Aerospace, and Science.
+
+
+  The company launched publicly in October 2017 alongside a New York
+  Times article about the Pentagon's Advanced Aerospace Threat
+  Identification Program ([`/organizations/aatip`]) by Helene Cooper
+  ([`/people/helene-cooper`]), Ralph Blumenthal
+  ([`/people/ralph-blumenthal`]), and Leslie Kean ([`/people/leslie-kean`]).
+  Former Pentagon military intelligence official Luis Elizondo
+  ([`/people/luis-elizondo`]) left his Pentagon post to join the
+  company, describing his prior role as running "a sensitive
+  aerospace threat identification program focusing on unidentified
+  aerial technologies"; he served as Director of Global Security and
+  Special Programs. Steve Justice ([`/people/steve-justice`]), a
+  former Program Director for Advanced Systems at Lockheed Martin's
+  Skunk Works ([`/organizations/lockheed-martin-skunk-works`]),
+  directed the Aerospace Division; Chris Mellon
+  ([`/people/christopher-mellon`]), a former Deputy Assistant
+  Secretary of Defense for Intelligence, served as National Security
+  Affairs Advisor. Jim Semivan is a retired Central Intelligence
+  Agency ([`/organizations/cia`]) Senior Intelligence Service officer.
+  The company's Advisory Board disclosed in the 2017 SEC filing
+  included Chris Mellon, Adele Gilpin, Dr. Norman Kahn, Dr. Colm
+  Kelleher ([`/people/colm-kelleher`]), Dr. Garry Nolan
+  ([`/people/garry-nolan`]), and Dr. Paul Rapp. The company's 2016
+  correspondence via Tom DeLonge to John Podesta
+  ([`/people/john-podesta`]) referenced retired USAF Lt. Gen.
+  William N. McCasland ([`/people/william-mccasland`]) as having
+  helped assemble the advisory team, with DeLonge describing
+  McCasland as the former commander of the Air Force Research
+  Laboratory at Wright-Patterson Air Force Base
+  ([`/organizations/wright-patterson-afb`]).
+
+
+  TTSA's Aerospace Division announced The ADAM Research Project
+  (Acquisition and Data Analysis of Materials) in July 2018 under
+  Puthoff's leadership. By late September 2018, TTSA publicly
+  reported it had collected seven pieces of material, from multiple
+  sources, to study for The ADAM Research Project; the most widely
+  discussed specimen — a layered metallic sample primarily composed
+  of magnesium, zinc, and bismuth — was the subject of a TTSA blog
+  post dated September 27, 2018. On October 1, 2019 (with public
+  announcement October 17), TTSA and the U.S. Army
+  ([`/organizations/us-army`]) Combat Capabilities Development Command
+  Ground Vehicle Systems Center
+  ([`/organizations/ccdc-ground-vehicle-systems-center`]) executed
+  Cooperative Research and Development Agreement 19-15 titled Novel
+  and Emerging Technology Exploitation, committing approximately
+  $750,000 in estimated U.S. Government resources to assess TTSA's
+  materiel and technology innovations across metamaterials, quantum
+  physics, quantum communications, and beamed energy propulsion. The
+  CRADA named Elizondo as TTSA's Principal Investigator and Dr.
+  Joseph Cannon ([`/people/joseph-cannon`]) and Ben Soave as the
+  Army's. Subsequent to the TTSA–DEVCOM CRADA, the All-domain
+  Anomaly Resolution Office ([`/organizations/aaro`]), founded in
+  2022, contracted Oak Ridge National Laboratory
+  ([`/organizations/ornl`]) to independently assess and perform
+  thorough characterization studies on the specimen; ORNL's April
+  2024 Synopsis and AARO's July 2024 Supplement concluded the
+  material is terrestrial in origin and "consistent with Mg alloy
+  research and development projects and experimental manufacturing
+  methods in the mid-20th century." An earlier aerospace research
+  company run by Robert Bigelow ([`/organizations/bigelow-aerospace`])
+  was the Pentagon program's principal funding recipient per the
+  2017 Times article.
+primary_sources:
+- path: government/sec-ttsa-1a-partii-20170710.html
+  format: html
+  extracted_text_path: /tmp/scratch-ttsa-0.txt
+- path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-ttsa-1.txt
+- path: news/tothestarsacademy-home-20180108.html
+  format: html
+  extracted_text_path: /tmp/scratch-ttsa-2.txt
+- path: news/tothestarsacademy-home-20200105.html
+  format: html
+  extracted_text_path: /tmp/scratch-ttsa-3.txt
+- path: news/tothestarsacademy-home-20220120.html
+  format: html
+  extracted_text_path: /tmp/scratch-ttsa-4.txt
+- path: news/ttsa-blog-adam-research-project-intro-20180727.html
+  format: html
+  extracted_text_path: /tmp/scratch-ttsa-5.txt
+- path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
+  format: html
+  extracted_text_path: /tmp/scratch-ttsa-6.txt
+- path: news/wikileaks-podesta-email-3099-delonge-mccasland-20160125.html
+  format: html
+  extracted_text_path: /tmp/scratch-ttsa-7.txt
+- path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+  format: html
+  extracted_text_path: /tmp/scratch-ttsa-8.txt
+- path: government/aaro-hrr-volume-1-20240308.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-ttsa-9.txt
+- path: government/aaro-ornl-synopsis-metallic-specimen-202404.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-ttsa-10.txt
+- path: government/aaro-supplement-to-ornl-analysis-202407.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-ttsa-11.txt
+document_intrinsic:
+  founded_date: '2017-02'
+  org_type: Corp
+  headquarters: 1051 S. Coast Hwy 101 Suite B, Encinitas, CA 92024
+  current_leadership_path: /people/tom-delonge
+  public_status: Delaware Public Benefit Corporation; Regulation A+ offering qualified by the U.S. Securities and Exchange Commission (CIK 1710274, July 2017)
+context_extrinsic:
+  display_title: TTSA — To The Stars Academy of Arts and Science
+quotes:
+- id: q1
+  added_date: '2026-04-22'
+  text: |
+    The company is a Public Benefit Corporation founded in 2017 by a former senior Intelligence Officer with the CIA, a distinguished research scientist, and an award-winning artist with the goal of creating a dynamic consortium that can be a positive vehicle for change by supporting progressive thought through academic research, exotic engineering, and cinematic entertainment.
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: "Part II, ¶ 'Description of Business', p. 2"
+  significance: TTSA's self-description as a Delaware Public Benefit Corporation spanning academic research, exotic engineering, and cinematic entertainment.
+- id: q2
+  added_date: '2026-04-22'
+  text: |
+    TTS AAS was incorporated in February 2017, and although the Entertainment Division conducted through our subsidiary TTS has been conducted for several years, we are intending to expand into completely new businesses.
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 7, 'Risk Factors'
+  significance: Primary-source founding date — TTSA incorporated February 2017; Entertainment Division inherited from pre-existing To The Stars, Inc. (TTS) subsidiary.
+- id: q3
+  added_date: '2026-04-22'
+  text: |
+    Tom DeLonge is the founder, President, and interim CEO of the company.  He is also President of the company's subsidiary, TTS, and has been since 2015.
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 31, 'Directors, Executive Officers and Significant Employees'
+  significance: DeLonge's TTSA leadership role (Founder, President, interim CEO) and his prior TTS presidency since 2015.
+- id: q4
+  added_date: '2026-04-22'
+  text: |
+    The company's Advisory Board consists of accomplished scientists, researchers, inventors, and former intelligence and governmental officials with a proven track record of success in their respective fields. The Advisory Board is Chris Mellon, Adele Gilpin, Dr. Norman Kahn, Dr. Colm Kelleher, Dr. Garry Nolan, and Dr. Paul Rapp.
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 33, 'Advisory Board'
+  significance: Full Advisory Board roster as of the 2017 SEC filing — six named members.
+- id: q5
+  added_date: '2026-04-22'
+  text: |
+    General McCasland He mentioned he's a "skeptic", he's not. I've been working with him for four months. I just got done giving him a four hour presentation on the entire project a few weeks ago. Trust me, the advice is already been happening on how to do all this. He just has to say that out loud, but he is very, very aware- as he was in charge of all of the stuff. When Roswell crashed, they shipped it to the laboratory at Wright Patterson Air Force Base. General McCasland was in charge of that exact laboratory up to a couple years ago. He not only knows what I'm trying to achieve, he helped assemble my advisory team. He's a very important man.
+  source:
+    path: news/wikileaks-podesta-email-3099-delonge-mccasland-20160125.html
+    location: "Email body, Subject: 'General McCasland', 2016-01-25"
+  significance: DeLonge's on-record attribution to retired Lt. Gen. William N. McCasland of pre-TTSA advisory-team assembly; primary-source chain of custody claim regarding 1947 Roswell material and Wright-Patterson AFB laboratory.
+- id: q6
+  added_date: '2026-04-22'
+  text: |
+    Most of the money went to an aerospace research company run by a billionaire entrepreneur and longtime friend of Mr. Reid's, Robert Bigelow, who is currently working with NASA to produce expandable craft for humans to use in space.
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: NYT article, 2017-12-16
+  significance: NYT's framing of Bigelow Aerospace as the Pentagon program's contractor — context for TTSA's positioning as a successor commercial vehicle for former-program personnel.
+- id: q7
+  added_date: '2026-04-22'
+  text: |
+    Elizondo left his Pentagon post to join To The Stars Academy of Arts & Science, a consortium of scientists, aerospace engineers and creatives founded by company President and CEO Tom DeLonge, VP of Science and Technology Dr. Hal Puthoff (also quoted in the Times story) and = VP of Operations Jim Semivan. The principals include Aerospace Division Director Steve Justice and National Security Affairs Advisor Chris Mellon. The company launched this past October with a mission to explore exotic science and technologies to rapidly transition innovative ideas into world-changing products and services.
+  source:
+    path: news/tothestarsacademy-home-20180108.html
+    location: TTSA homepage news section, Dec 16 2017 press release
+  significance: TTSA's own framing of the Elizondo-joining event and the full principal/advisor roster as of late 2017.
+- id: q8
+  added_date: '2026-04-22'
+  text: |
+    To The Stars Academy of Arts & Science Announces The ADAM Research Project, an Academic Research Program Focused on Exotic Materials for Technology Innovation
+  source:
+    path: news/ttsa-blog-adam-research-project-intro-20180727.html
+    location: Blog post title, 2018-07-26
+  significance: Primary source for the ADAM Research Project announcement — exact program title and purpose as stated by TTSA at launch.
+- id: q9
+  added_date: '2026-04-22'
+  text: |
+    Over the last three months, To The Stars Academy has collected seven pieces of material, from multiple sources, to study for The ADAM Research Project.
+  source:
+    path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
+    location: Blog post body, 2018-09-27
+  significance: TTSA's on-record claim of seven material samples collected between approximately June and September 2018 — quantifies the ADAM material inventory at the specimen-announcement date.
+- id: q10
+  added_date: '2026-04-22'
+  text: |
+    To The Stars Academy of Arts & Science (TTSA) announced today a Cooperative Research and Development Agreement (CRADA) with the U.S. Army Combat Capabilities Development Command to advance TTSA's materiel and technology innovations in order to develop enhanced capabilities for Army ground vehicles.
+  source:
+    path: news/tothestarsacademy-home-20200105.html
+    location: TTSA homepage news, Oct 17 2019 press release
+  significance: TTSA's announcement of the U.S. Army CCDC CRADA — public-facing statement of the partnership.
+- id: q11
+  added_date: '2026-04-22'
+  text: |
+    TTSA's technology solutions, which leverage developments in material science, space-time metric engineering, quantum physics, beamed energy propulsion, and active camouflage, have the potential to enhance survivability and effectiveness of multiple Army systems.
+  source:
+    path: news/tothestarsacademy-home-20200105.html
+    location: TTSA homepage news, Oct 17 2019 press release
+  significance: TTSA-stated technology areas brought to the Army CRADA — matches the Government Activity scope in the actual CRADA document.
+- id: q12
+  added_date: '2026-04-22'
+  text: |
+    To the Stars Academy of Arts and Science is a company with materiel and technology Innovations that offer capability advancements for Army ground vehicles. These technology innovations have been acquired, designed, and produced by the Collaborator, leveraging advancements in metamateiiais and quantum physics to push performance gains. The Collaborator will share their Innovations with the Government, who will use its laboratories and resources to characterize the technologies and determine if they have appropriate applications on ground vehicles.
+  source:
+    path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+    location: CRADA 19-15, Section II, Article A - Project Description
+  significance: Primary-source Army-side description of TTSA's role as Collaborator and the scope of the CRADA. OCR artifact preserved verbatim ('metamateiiais').
+- id: q13
+  added_date: '2026-04-22'
+  text: |
+    The Government is interested in a variety of the Collaborator's technologies, such as, but not limited to inertial mass reduction mechanical/struefural metamateriais, electromagnetic metamaterial wave guides, quantum physics, quantum communications, and beamed energy propulsion,
+  source:
+    path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+    location: CRADA 19-15, Article D.1, Government Activity
+  significance: Primary-source enumeration of the specific TTSA technologies the U.S. Army committed to test and characterize. OCR artifacts preserved ('struefural metamateriais').
+- id: q14
+  added_date: '2026-04-22'
+  text: |
+    The other contributors for this effort are:
+       1) The Office of the Secretary of Defense (OSD) can share historical reports of findings and origin of materiel solutions in the possession of the Collaborator,
+  source:
+    path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+    location: CRADA 19-15, Article C.2, Other Participants
+  significance: Primary-source documentation of the Office of the Secretary of Defense's explicit contractual role — OSD can share historical reports on origin of TTSA's material. Evidentiary link to AATIP-era records.
+- id: q15
+  added_date: '2026-04-22'
+  text: |
+    Experimentation on Alleged Extraterrestrial Spacecraft Sample: AARO has concluded that a sample from an alleged crashed off-world spacecraft that AARO acquired from a private UAP investigating organization and the U.S. Army is a manufactured, terrestrial alloy and does not represent off-world technology or possess any exceptional qualities.
+  source:
+    path: government/aaro-hrr-volume-1-20240308.pdf
+    location: AARO HRR Vol I, Section V Executive Summary findings
+  significance: AARO's explicit acquisition-from-TTSA-plus-Army statement and its core conclusion on the material — terrestrial manufactured alloy, Mg-Zn-Bi composition.
+- id: q16
+  added_date: '2026-04-22'
+  text: |
+    The U.S. Army had also conducted in-house analysis on the sample, and while AARO generally agrees with its conclusions, AARO found that the structure was not purely layered magnesium alloy and bismuth.
+  source:
+    path: government/aaro-hrr-volume-1-20240308.pdf
+    location: AARO HRR Vol I, material-analysis subsection
+  significance: AARO HRR Vol I's explicit confirmation that the U.S. Army conducted in-house analysis on the sample before AARO — the CRADA-era work.
+- id: q17
+  added_date: '2026-04-22'
+  text: |
+    Previously, US Army Combat Capabilities Development Command (DEVCOM) established a Cooperative Research and Development Agreement (CRADA) with To the Stars Academy (TTSA) to evaluate the feasibility of exploiting any potential disruptive technology associated with this widely discussed specimen.
+  source:
+    path: government/aaro-ornl-synopsis-metallic-specimen-202404.pdf
+    location: Synopsis Introduction, p. 1
+  significance: AARO/ORNL's explicit statement that the TTSA-DEVCOM CRADA preceded AARO's involvement with the specimen.
+- id: q18
+  added_date: '2026-04-22'
+  text: |
+    Subsequent to the TTSA–DEVCOM CRADA, AARO secured science and technology partner Oak Ridge National Laboratory (ORNL), one of 17 US Department of Energy national laboratories, to independently assess and perform thorough characterization studies on the specimen
+  source:
+    path: government/aaro-ornl-synopsis-metallic-specimen-202404.pdf
+    location: Synopsis Introduction, p. 1
+  significance: Primary-source naming of ORNL as AARO's materials-testing partner, chronologically following the TTSA-DEVCOM CRADA.
+- id: q19
+  added_date: '2026-04-22'
+  text: |
+    In 2022, The All-domain Anomaly Resolution Office (AARO) contracted with Oak Ridge National Laboratory (ORNL) to conduct materials testing on a magnesium (Mg) alloy specimen. This specimen has been publicly alleged to be a component recovered from a crashed extraterrestrial vehicle in 1947, and purportedly exhibits extraordinary properties, such as functioning as a terahertz waveguide to generate antigravity capabilities.
+  source:
+    path: government/aaro-supplement-to-ornl-analysis-202407.pdf
+    location: Supplement, Overview section, p. 1
+  significance: AARO Supplement's explicit 2022 AARO-ORNL contract date and the public allegations (1947 crash recovery, terahertz waveguide / antigravity).
+- id: q20
+  added_date: '2026-04-22'
+  text: |
+    ORNL assessed this specimen to be terrestrial in origin and that it does not meet the theoretical requirements to function as a terahertz (THz) waveguide. AARO concurs with ORNL's assessment and provides this supplementary material to add historical context to account for its likely origin. The specimen's characteristics are consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century.
+  source:
+    path: government/aaro-supplement-to-ornl-analysis-202407.pdf
+    location: Supplement, Overview section, p. 1
+  significance: AARO's final concurrence with ORNL's terrestrial-origin finding and AARO's contextualization of the specimen as mid-20th-century Mg alloy R&D material.
+entities_referenced:
+- id: e1
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Tom DeLonge
+  wrap_path: /people/tom-delonge
+  context_summary: Founder, President, and interim CEO of TTSA; principal investor; author of the 2016 Podesta email about McCasland.
+- id: e2
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Harold E. Puthoff
+  wrap_path: /people/hal-puthoff
+  context_summary: Co-founder and VP Science and Technology of TTSA; President of EarthTech International; ADAM Research Project lead.
+- id: e3
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Jim Semivan
+  wrap_path: /people/jim-semivan
+  context_summary: Co-founder and VP Operations of TTSA; retired CIA Senior Intelligence Service officer (Directorate of Operations).
+- id: e4
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Luis Elizondo
+  wrap_path: /people/luis-elizondo
+  context_summary: Former Pentagon intelligence official who ran the Advanced Aerospace Threat Identification Program (AATIP); joined TTSA as Director of Global Security and Special Programs in October 2017; named as TTSA Principal Investigator on the 2019 Army CRADA.
+- id: e5
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Steve Justice
+  wrap_path: /people/steve-justice
+  context_summary: Aerospace Division Director of TTSA; former Program Director for Advanced Systems at Lockheed Martin Skunk Works.
+- id: e6
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Christopher Mellon
+  wrap_path: /people/christopher-mellon
+  context_summary: TTSA National Security Affairs Advisor and Advisory Board member; former Deputy Assistant Secretary of Defense for Intelligence; former Staff Director of Senate Select Committee on Intelligence.
+- id: e7
+  added_date: '2026-04-22'
+  entity_type: person
+  name: William N. McCasland
+  wrap_path: /people/william-mccasland
+  context_summary: Retired U.S. Air Force Lieutenant General; named in DeLonge's 2016 Podesta email as having "helped assemble my advisory team"; described as former commander of the Air Force Research Laboratory at Wright-Patterson AFB.
+- id: e8
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Joseph Cannon
+  wrap_path: /people/joseph-cannon
+  context_summary: Principal Investigator (Government side) on CRADA 19-15 between TTSA and the U.S. Army CCDC Ground Vehicle Systems Center; identified as "Dr. Joseph Cannon of U.S. Army Futures Command" in TTSA's 2019 press release.
+- id: e9
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Garry Nolan
+  wrap_path: /people/garry-nolan
+  context_summary: Advisory Board member per the 2017 SEC filing; professor in Microbiology and Immunology at Stanford University.
+- id: e10
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Colm Kelleher
+  wrap_path: /people/colm-kelleher
+  context_summary: Advisory Board member per the 2017 SEC filing.
+- id: e11
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Kari DeLonge
+  wrap_path: /people/kari-delonge
+  context_summary: Chief Marketing and Product Officer at TTSA subsidiary TTS; sister of Tom DeLonge.
+- id: e12
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Helene Cooper
+  wrap_path: /people/helene-cooper
+  context_summary: "New York Times reporter — co-author of the December 16, 2017 article \"Glowing Auras and 'Black Money': The Pentagon's Mysterious U.F.O. Program.\""
+- id: e13
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Ralph Blumenthal
+  wrap_path: /people/ralph-blumenthal
+  context_summary: New York Times co-author of the 2017-12-16 Pentagon UAP program article.
+- id: e14
+  added_date: '2026-04-22'
+  entity_type: person
+  name: Leslie Kean
+  wrap_path: /people/leslie-kean
+  context_summary: New York Times co-author of the 2017-12-16 Pentagon UAP program article.
+- id: e15
+  added_date: '2026-04-22'
+  entity_type: person
+  name: John Podesta
+  wrap_path: /people/john-podesta
+  context_summary: Hillary Clinton's 2016 campaign chair; recipient of the 2016-01-25 DeLonge email about McCasland (WikiLeaks Podesta emails #3099).
+- id: e16
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: To The Stars, Inc.
+  wrap_path: /organizations/to-the-stars-inc
+  context_summary: TTSA's wholly-owned subsidiary; pre-existing DeLonge-affiliated entertainment business acquired during TTSA's 2017 formation; operates TTSA's Entertainment Division.
+- id: e17
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: U.S. Army Combat Capabilities Development Command (CCDC) Ground Vehicle Systems Center
+  wrap_path: /organizations/ccdc-ground-vehicle-systems-center
+  context_summary: TTSA's counterparty on CRADA 19-15; located in Warren, Michigan; formerly TARDEC, renamed to DEVCOM Ground Vehicle Systems Center in 2019.
+- id: e18
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: U.S. Army
+  wrap_path: /organizations/us-army
+  context_summary: Parent service of CCDC / DEVCOM Ground Vehicle Systems Center; conducted in-house analysis of the TTSA specimen under the CRADA prior to AARO acquisition per AARO HRR Vol I.
+- id: e19
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: All-domain Anomaly Resolution Office (AARO)
+  wrap_path: /organizations/aaro
+  context_summary: DoD office established 2022; acquired the TTSA material specimen from a private UAP investigating organization and the U.S. Army; contracted ORNL in 2022 for independent characterization.
+- id: e20
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Oak Ridge National Laboratory (ORNL)
+  wrap_path: /organizations/ornl
+  context_summary: DOE national laboratory contracted by AARO in 2022 to assess the TTSA-origin material specimen; published the April 2024 Synopsis concluding the material is terrestrial in origin.
+- id: e21
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Office of the Secretary of Defense (OSD)
+  wrap_path: /organizations/osd
+  context_summary: Named in CRADA 19-15 Article C.2 as an Other Participant with the role of sharing historical reports of findings and origin of the TTSA-possessed materiel solutions.
+- id: e22
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Advanced Aerospace Threat Identification Program (AATIP)
+  wrap_path: /organizations/aatip
+  context_summary: Pentagon program Elizondo ran from 2009 to 2017; mentioned in the NYT 2017-12-16 disclosure as the program Elizondo left to join TTSA.
+- id: e23
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: EarthTech International, Inc.
+  wrap_path: /organizations/earthtech-international
+  context_summary: Austin-based R&D firm Puthoff has served as President and CEO since 1985; parallel affiliation during his TTSA tenure.
+- id: e24
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Bigelow Aerospace
+  wrap_path: /organizations/bigelow-aerospace
+  context_summary: Las Vegas-based aerospace company named in the 2017 NYT article as the Pentagon program's unofficial contractor — the AATIP/AAWSAP-era material custodian that preceded TTSA as the public face of the program's legacy.
+- id: e25
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Central Intelligence Agency (CIA)
+  wrap_path: /organizations/cia
+  context_summary: Semivan's pre-TTSA employer; he retired from the CIA's Directorate of Operations after 25 years as an operations officer.
+- id: e26
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Lockheed Martin Skunk Works
+  wrap_path: /organizations/lockheed-martin-skunk-works
+  context_summary: Justice's pre-TTSA employer; he served as Program Director for Advanced Systems.
+- id: e27
+  added_date: '2026-04-22'
+  entity_type: organization
+  name: Wright-Patterson Air Force Base
+  wrap_path: /organizations/wright-patterson-afb
+  context_summary: U.S. Air Force installation hosting the Air Force Research Laboratory; referenced in DeLonge's 2016 Podesta email as the destination of 1947 Roswell material and the laboratory McCasland commanded.
+- id: e28
+  added_date: '2026-04-22'
+  entity_type: document
+  name: NYT 'Glowing Auras and Black Money' 2017-12-16
+  wrap_path: /documents/nyt-glowing-auras-pentagon-ufo-2017
+  context_summary: The Cooper/Blumenthal/Kean New York Times article that publicly disclosed AATIP and framed TTSA as Elizondo's post-Pentagon venture.
+- id: e29
+  added_date: '2026-04-22'
+  entity_type: document
+  name: SEC Form 1-A Part II (TTSA 2017 Reg A+ offering)
+  wrap_path: /documents/sec-ttsa-1a-partii-2017
+  context_summary: TTSA's preliminary offering circular, CIK 1710274, dated July 10, 2017; primary corporate-registration document.
+- id: e30
+  added_date: '2026-04-22'
+  entity_type: document
+  name: CRADA 19-15 (Novel & Emerging Technology Exploitation)
+  wrap_path: /documents/army-ttsa-crada-19-15-nete-2019
+  context_summary: Cooperative Research and Development Agreement between TTSA and the U.S. Army CCDC Ground Vehicle Systems Center, effective 2019-10-01.
+- id: e31
+  added_date: '2026-04-22'
+  entity_type: document
+  name: AARO Historical Record Report Volume I
+  wrap_path: /documents/aaro-historical-record-report-vol-i
+  context_summary: DoD/AARO publication dated 2024-03-08; primary-source assessment of the TTSA-origin material as terrestrial Mg-Zn-Bi alloy.
+- id: e32
+  added_date: '2026-04-22'
+  entity_type: document
+  name: AARO/ORNL Synopsis of Analysis of a Metallic Specimen
+  wrap_path: /documents/aaro-ornl-synopsis-metallic-specimen-2024
+  context_summary: Joint AARO/ORNL publication dated April 2024 naming ORNL as AARO's materials testing partner on the TTSA-origin specimen.
+- id: e33
+  added_date: '2026-04-22'
+  entity_type: document
+  name: AARO Supplement to ORNL Analysis
+  wrap_path: /documents/aaro-supplement-to-ornl-analysis-2024
+  context_summary: AARO publication dated July 2024 concurring with ORNL's terrestrial-origin finding and contextualizing the specimen as mid-20th-century Mg alloy R&D material.
+- id: e34
+  added_date: '2026-04-22'
+  entity_type: location
+  name: Encinitas, California
+  wrap_path: /locations/encinitas-california
+  context_summary: City on the southern California coast; TTSA headquarters located at 1051 S. Coast Hwy 101 Suite B, Encinitas, CA 92024.
+- id: e35
+  added_date: '2026-04-22'
+  entity_type: event
+  name: TTSA public launch, October 11, 2017
+  wrap_path: /events/ttsa-launch-2017-10-11
+  context_summary: TTSA's public launch event, held October 11, 2017, accompanied the initial Regulation A+ offering qualification and introduced the principals publicly.
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-22'
+  observed: TTS AAS
+  canonical: To The Stars Academy of Arts and Science Inc.
+  location: throughout SEC 1-A filing as an internal abbreviation
+  source_path: government/sec-ttsa-1a-partii-20170710.html
+  resolution: preserve-as-sic-in-quotes
+  note: SEC filing uses 'TTS AAS' as an internal shorthand for the parent company to distinguish from the TTS subsidiary. Public-facing name is 'To The Stars Academy of Arts and Science Inc.' or 'TTSA'.
+- id: nq2
+  added_date: '2026-04-22'
+  observed: Lue Elizondo
+  canonical: Luis Elizondo
+  location: TTSA 2018 homepage and multiple TTSA self-published materials
+  source_path: news/tothestarsacademy-home-20180108.html
+  resolution: preserve-as-sic-in-quotes
+  note: TTSA routinely uses 'Lue Elizondo' as an informal form; canonical full name per his own public biography is 'Luis Elizondo'.
+- id: nq3
+  added_date: '2026-04-22'
+  observed: metamateiiais
+  canonical: metamaterials
+  location: CRADA 19-15, Section II Article A
+  source_path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: OCR artifact in the Internet Archive's text-extractable version of the CRADA PDF. Correct form 'metamaterials' appears elsewhere in the same document.
+- id: nq4
+  added_date: '2026-04-22'
+  observed: struefural metamateriais
+  canonical: structural metamaterials
+  location: CRADA 19-15, Article D.1
+  source_path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: OCR artifact in the Internet Archive's text-extractable version of the CRADA PDF.
+- id: nq5
+  added_date: '2026-04-22'
+  observed: = VP of Operations Jim Semivan
+  canonical: and VP of Operations Jim Semivan
+  location: TTSA 2018 homepage, Dec 16 2017 press release
+  source_path: news/tothestarsacademy-home-20180108.html
+  resolution: preserve-as-sic-in-quotes
+  note: Typographical artifact in TTSA's own press release text ('=' where conjunction 'and' was likely intended).
+- id: nq6
+  added_date: '2026-04-22'
+  observed: JimSem1, LLC
+  canonical: JimSem1, LLC
+  location: SEC 1-A filing, directors section
+  source_path: government/sec-ttsa-1a-partii-20170710.html
+  resolution: use-canonical
+  note: Semivan's consulting firm name; distinguished from 'JimSemI, LLC' which appears in the stock-issuance section of the same filing. Both forms occur in the same document.
+rumors:
+- id: r1
+  added_date: '2026-04-22'
+  claim: TTSA possesses or possessed physical debris from an off-world crashed spacecraft recovered in 1947 (widely attributed to the Roswell incident).
+  status: primary-source-disputed
+  observed_sources:
+  - DeLonge's 2016-01-25 email to Podesta referencing Roswell and Wright-Patterson AFB (primary-source claim made by DeLonge himself, not independently verified)
+  - Public discourse around the ADAM Research Project specimen (widely reported in UAP-focused media 2018-2024)
+  - Public discourse around the TTSA-DEVCOM CRADA material
+  note: |
+    AARO HRR Volume I (March 2024) and the AARO/ORNL Synopsis (April 2024) and AARO Supplement (July 2024) together refute the extraterrestrial-origin claim for the specific magnesium-zinc-bismuth specimen that TTSA transferred through the DEVCOM CRADA to AARO. ORNL's characterization found the material is 'terrestrial in origin' and 'does not meet the theoretical requirements to function as a terahertz waveguide'. AARO's Supplement concludes the specimen 'is consistent with Mg alloy research and development projects and experimental manufacturing methods in the mid-20th century'. The 1947-crash provenance claim is not primary-source-supported by any document archived in this repository.
+- id: r2
+  added_date: '2026-04-22'
+  claim: Retired Lt. Gen. William N. McCasland personally facilitated TTSA's founding-era advisory team and had insider knowledge of recovered UAP material at Wright-Patterson Air Force Base.
+  status: not-primary-source-established
+  observed_sources:
+  - DeLonge's 2016-01-25 email to Podesta (WikiLeaks Podesta emails #3099)
+  - Public discourse about the TTSA-McCasland relationship
+  note: |
+    The sole primary-source attestation of McCasland's advisory-team role is DeLonge's own 2016 email to Podesta. McCasland has not publicly confirmed or denied the claim, and no independent primary-source documentation of his TTSA involvement is archived in this repository. The Podesta email itself is primary-source-authentic (SPF/DMARC/DKIM validated in the raw source), but it documents DeLonge's claim about McCasland, not McCasland's own statements.
+timeline:
+- id: tl1
+  added_date: '2026-04-22'
+  date: '2002-10-28'
+  event: To The Stars, Inc. established (originally as Resting Bird, Inc.) — pre-existing entity later acquired by TTSA as its Entertainment Division subsidiary.
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 23
+- id: tl2
+  added_date: '2026-04-22'
+  date: '2015-01-01'
+  event: Archive West Investments acquires the shares of To The Stars, Inc.; DeLonge begins as President of TTS.
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 23
+- id: tl3
+  added_date: '2026-04-22'
+  date: '2016-01-25'
+  event: Tom DeLonge emails John Podesta about Gen. McCasland, attributing advisory-team assembly to the retired USAF Lt. General.
+  source:
+    path: news/wikileaks-podesta-email-3099-delonge-mccasland-20160125.html
+    location: Email header Date field
+  node_link: /documents/wikileaks-podesta-email-3099-2016
+- id: tl4
+  added_date: '2026-04-22'
+  date: '2017-02'
+  event: To The Stars Academy of Arts and Science Inc. incorporated in Delaware as a Public Benefit Corporation.
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 7
+- id: tl5
+  added_date: '2026-04-22'
+  date: '2017-04-27'
+  event: Archive West Investments contributes 100% of the shares of To The Stars, Inc. to Gravity Holdings, LLC (DeLonge Family Trust single-member LLC).
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 28
+- id: tl6
+  added_date: '2026-04-22'
+  date: '2017-06-01'
+  event: TTSA enters Contribution Agreement with Gravity Holdings for TTS shares in exchange for 55,000,000 shares of Class A Common Stock — consolidates TTS as wholly-owned subsidiary.
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 28
+- id: tl7
+  added_date: '2026-04-22'
+  date: '2017-07-10'
+  event: TTSA files preliminary SEC Form 1-A Part II (Regulation A+ offering circular) for up to 10,000,000 shares at $5.00/share ($50 million maximum).
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 1
+  node_link: /documents/sec-ttsa-1a-partii-2017
+- id: tl8
+  added_date: '2026-04-22'
+  date: '2017-10-11'
+  event: TTSA public launch event; Regulation A+ offering opens to investors; principals introduced publicly.
+  source:
+    path: news/tothestarsacademy-home-20180108.html
+    location: TTSA homepage, launch-reference press release
+  node_link: /events/ttsa-launch-2017-10-11
+- id: tl9
+  added_date: '2026-04-22'
+  date: '2017-12-16'
+  event: "New York Times publishes 'Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program' by Cooper/Blumenthal/Kean, framing TTSA as Elizondo's post-Pentagon venture."
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: Article publication date
+  node_link: /documents/nyt-glowing-auras-pentagon-ufo-2017
+- id: tl10
+  added_date: '2026-04-22'
+  date: '2018-01-08'
+  event: Earliest archived TTSA homepage snapshot; TTSA reports 2,548 investors / $2,337,382 raised via the Reg A+ offering.
+  source:
+    path: news/tothestarsacademy-home-20180108.html
+    location: Homepage investor-stats block
+- id: tl11
+  added_date: '2026-04-22'
+  date: '2018-07-26'
+  event: TTSA publishes 'An Introduction to The ADAM Research Project' blog post, announcing the Acquisition and Data Analysis of Materials program under Puthoff's leadership.
+  source:
+    path: news/ttsa-blog-adam-research-project-intro-20180727.html
+    location: Blog post date line
+- id: tl12
+  added_date: '2026-04-22'
+  date: '2018-09-27'
+  event: "TTSA publishes 'Material of Interest: Magnesium-Zinc-Bismuth' blog post reporting seven material samples collected over the preceding three months for ADAM study."
+  source:
+    path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
+    location: Blog post date line
+- id: tl13
+  added_date: '2026-04-22'
+  date: '2019-10-01'
+  event: "Cooperative Research and Development Agreement (CRADA) 19-15 'Novel & Emerging Technology Exploitation' becomes effective between TTSA and U.S. Army CCDC Ground Vehicle Systems Center."
+  source:
+    path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+    location: Effective date on document
+  node_link: /documents/army-ttsa-crada-19-15-nete-2019
+- id: tl14
+  added_date: '2026-04-22'
+  date: '2019-10-17'
+  event: TTSA publicly announces the CRADA with U.S. Army CCDC; press release attributes quotes to Dr. Joseph Cannon (Army Futures Command) and Steve Justice (TTSA COO and Aerospace Division Director).
+  source:
+    path: news/tothestarsacademy-home-20200105.html
+    location: News item date line
+- id: tl15
+  added_date: '2026-04-22'
+  date: '2022-07'
+  event: AARO established by Deputy Secretary of Defense Hicks; in 2022 AARO contracts ORNL for independent materials testing on the TTSA-DEVCOM-CRADA specimen per AARO Supplement.
+  source:
+    path: government/aaro-supplement-to-ornl-analysis-202407.pdf
+    location: Supplement Overview section
+  node_link: /organizations/aaro
+- id: tl16
+  added_date: '2026-04-22'
+  date: '2023-02'
+  event: ORNL receives specimen access (parent sample plus three previously derived subsamples) from DEVCOM Ground Vehicle System Center per AARO/ORNL Synopsis.
+  source:
+    path: government/aaro-ornl-synopsis-metallic-specimen-202404.pdf
+    location: Synopsis methodology section
+- id: tl17
+  added_date: '2026-04-22'
+  date: '2024-03-08'
+  event: AARO publishes Historical Record Report Volume I; document addresses the TTSA-originated material among its case-resolution findings.
+  source:
+    path: government/aaro-hrr-volume-1-20240308.pdf
+    location: Document cover publication date
+  node_link: /documents/aaro-historical-record-report-vol-i
+- id: tl18
+  added_date: '2026-04-22'
+  date: '2024-04'
+  event: AARO/ORNL Synopsis of Analysis of a Metallic Specimen published; ORNL assessment finds the specimen terrestrial in origin.
+  source:
+    path: government/aaro-ornl-synopsis-metallic-specimen-202404.pdf
+    location: Document content date
+  node_link: /documents/aaro-ornl-synopsis-metallic-specimen-2024
+- id: tl19
+  added_date: '2026-04-22'
+  date: '2024-07'
+  event: AARO publishes Supplement to Oak Ridge National Laboratory's Analysis of a Metallic Specimen; concurs with ORNL terrestrial-origin finding and contextualizes the specimen as mid-20th-century Mg alloy R&D material.
+  source:
+    path: government/aaro-supplement-to-ornl-analysis-202407.pdf
+    location: Document content date
+  node_link: /documents/aaro-supplement-to-ornl-analysis-2024
+key_personnel:
+- id: kp1
+  added_date: '2026-04-22'
+  person_path: /people/tom-delonge
+  role: Founder, President, and interim Chief Executive Officer
+  period_start: '2017-02'
+  leadership_class: director
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 31
+  note: Founder of the company and principal investor; President of TTS subsidiary since 2015.
+- id: kp2
+  added_date: '2026-04-22'
+  person_path: /people/hal-puthoff
+  role: Co-Founder and Vice President Science and Technology
+  period_start: '2017'
+  leadership_class: director
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 31
+  note: President and CEO of EarthTech International, Inc. (ETI), and Director of the Institute for Advanced Studies at Austin (IASA) since 1985.
+- id: kp3
+  added_date: '2026-04-22'
+  person_path: /people/jim-semivan
+  role: Co-Founder and Vice President Operations
+  period_start: '2017'
+  leadership_class: director
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 31
+  note: Retired from the Central Intelligence Agency's Directorate of Operations after 25 years as an operations officer; member of the Senior Intelligence Service.
+- id: kp4
+  added_date: '2026-04-22'
+  person_path: /people/luis-elizondo
+  role: Director of Global Security and Special Programs
+  period_start: '2017-10'
+  leadership_class: staff
+  source:
+    path: news/tothestarsacademy-home-20180108.html
+    location: TTSA 2018 homepage Team section
+  note: Career intelligence officer whose experience includes working with the U.S. Army, the Department of Defense, the National Counterintelligence Executive, and the Director of National Intelligence; ran a sensitive aerospace threat identification program focusing on unidentified aerial technologies.
+- id: kp5
+  added_date: '2026-04-22'
+  person_path: /people/steve-justice
+  role: Aerospace Division Director (later COO)
+  period_start: '2017'
+  leadership_class: director
+  source:
+    path: news/tothestarsacademy-home-20180108.html
+    location: TTSA 2018 homepage Team section
+  note: Former Lockheed Martin Skunk Works Program Director for Advanced Systems.
+- id: kp6
+  added_date: '2026-04-22'
+  person_path: /people/christopher-mellon
+  role: National Security Affairs Advisor and Advisory Board member
+  period_start: '2017'
+  leadership_class: advisor
+  source:
+    path: news/tothestarsacademy-home-20180108.html
+    location: TTSA 2018 homepage Team section
+  note: Former Deputy Assistant Secretary of Defense for Intelligence; former Staff Director of Senate Select Committee on Intelligence.
+- id: kp7
+  added_date: '2026-04-22'
+  person_path: /people/garry-nolan
+  role: Advisory Board member
+  period_start: '2017'
+  leadership_class: advisor
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 33
+  note: Listed as an Advisory Board member in the 2017 SEC Form 1-A filing.
+- id: kp8
+  added_date: '2026-04-22'
+  person_path: /people/colm-kelleher
+  role: Advisory Board member
+  period_start: '2017'
+  leadership_class: advisor
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 33
+  note: Advisory Board member per the 2017 SEC filing.
+- id: kp9
+  added_date: '2026-04-22'
+  person_path: /people/kari-delonge
+  role: Chief Marketing and Product Officer (TTS subsidiary)
+  period_start: '2011'
+  leadership_class: staff
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 32
+  note: Chief Marketing and Product Officer for company's subsidiary TTS; sister of Tom DeLonge; has served in this position since the company's inception in 2011.
+org_relationships:
+- id: or1
+  added_date: '2026-04-22'
+  organization_path: /organizations/to-the-stars-inc
+  relationship_type: subsidiary
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 7 and p. 28
+  note: To The Stars, Inc. became TTSA's wholly-owned subsidiary on June 1, 2017 via Contribution Agreement in exchange for 55,000,000 shares of Class A Common Stock.
+- id: or2
+  added_date: '2026-04-22'
+  organization_path: /organizations/ccdc-ground-vehicle-systems-center
+  relationship_type: contracting-agency
+  source:
+    path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+    location: Cover page
+  note: Contracting agency on CRADA 19-15 (Novel & Emerging Technology Exploitation), effective 2019-10-01; located at 6501 E. 11 Mile Road, Warren MI 48397-5000.
+- id: or3
+  added_date: '2026-04-22'
+  organization_path: /organizations/osd
+  relationship_type: partner
+  source:
+    path: government/army-ttsa-crada-19-15-nete-20191001.pdf
+    location: Article C.2, Other Participants
+  note: Office of the Secretary of Defense named in CRADA 19-15 as an Other Participant with the contractual role of sharing historical reports on origin of TTSA's materiel solutions.
+- id: or4
+  added_date: '2026-04-22'
+  organization_path: /organizations/aaro
+  relationship_type: other
+  source:
+    path: government/aaro-hrr-volume-1-20240308.pdf
+    location: Executive Summary findings section
+  note: AARO acquired the TTSA specimen from a private UAP investigating organization and the U.S. Army per AARO HRR Vol I; AARO subsequently contracted ORNL in 2022 for independent characterization.
+- id: or5
+  added_date: '2026-04-22'
+  organization_path: /organizations/earthtech-international
+  relationship_type: partner
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: p. 32
+  note: Parallel affiliation through co-founder Harold E. Puthoff, who has been President and CEO of EarthTech International since 1985 while serving as TTSA VP Science and Technology.

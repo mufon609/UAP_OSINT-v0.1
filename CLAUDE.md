@@ -51,11 +51,12 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/people/david-grusch` | active | whistleblower |
 | `/people/ryan-graves` | active | eyewitness |
 
-### Organizations (2)
+### Organizations (3)
 
 | Node | Status | Kind |
 |---|---|---|
 | `/organizations/aaro` | active | gov |
+| `/organizations/ttsa` | active | private |
 | `/organizations/uaptf` | active | gov |
 
 ### Events (2)
