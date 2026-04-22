@@ -404,6 +404,15 @@
   note: 'Wayback Machine capture (2002-11-28 16:29:45) of nidsci.org — National Institute for Discovery Science. Direct primary source for NIDS''s self-representation of scope: aerial-phenomena research, animal-mutilation research, ''expanding its horizons'' into Bigelow Aerospace-related projects. NIDS-era primary source that is otherwise difficult to obtain; NIDS ceased public operations in 2004.'
   archive_status: 3
   wayback_date: '2002-11-28'
+- url: https://web.archive.org/web/20161011060848/https://wikileaks.org/podesta-emails/emailid/3099
+  format: html
+  status: archived
+  path: news/wikileaks-podesta-email-3099-delonge-mccasland-20160125.html
+  archived_date: '2026-04-22'
+  sha256: ddbb946843f3cc646567d15f8cd6446fcfaaee7748bf95eb89d89b5549598188
+  archive_status: 3
+  wayback_date: '2016-10-11'
+  note: 'Wayback Machine snapshot (2016-10-11) of WikiLeaks Podesta email #3099: Tom DeLonge to John Podesta, dated 2016-01-25, subject ''General McCasland''. DeLonge writes that retired USAF Lt. Gen. William N. McCasland ''helped assemble my advisory team'' — 13 months before TTSA''s Feb 2017 incorporation. Email sent from DeLonge''s ''TO THE STARS MEDIA'' signature (1053 S Coast Hwy 101, Encinitas CA — same complex as TTSA''s later 1051 S Coast Hwy 101 Suite B corporate HQ). McCasland described as former commander of Air Force Research Laboratory at Wright-Patterson AFB. Primary-source evidence of TTSA pre-formation advisory network.'
 - url: https://web.archive.org/web/20171216172629/https://www.nytimes.com/2017/12/16/us/politics/pentagon-program-ufo-harry-reid.html
   format: html
   status: archived
