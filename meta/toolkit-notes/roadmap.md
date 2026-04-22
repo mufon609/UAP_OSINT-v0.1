@@ -37,8 +37,11 @@ additional G nodes follow once the renderer is stable.
 **Current active clusters:**
 
 - **Cluster A — 2004 Nimitz encounter.** Event, Fravor person, Fravor
-  transcript, FLIR1 media all built. Remaining: Dietrich (eyewitness),
-  Underwood (eyewitness), Nimitz / Princeton / VFA-41 (orgs).
+  transcript, FLIR1 media, Dietrich person all built. Remaining:
+  Underwood (FLIR1 pilot / corroborator), Nimitz / Princeton / VFA-41
+  (orgs), and 19 Dietrich-interview stubs (CBS News + Whitaker + five
+  podcast orgs and hosts + Linda Hall + AVC + seven interview
+  transcripts).
 - **Cluster B — 2023-07-26 House Oversight hearing.** Complete.
   Event + 3 transcripts + 3 written testimonies + 3 witness person
   nodes all built.

@@ -46,15 +46,19 @@ Unbuilt-stub targets referenced from the 14 built nodes (3 people +
 Grouped by natural cluster so contributors can choose which ring to
 close first.
 
-### Cluster A — 2004 Nimitz encounter (F.2c pilot shipped 2026-04-19; FLIR1 F.4c pilot shipped 2026-04-20)
+### Cluster A — 2004 Nimitz encounter (F.2c pilot shipped 2026-04-19; FLIR1 F.4c pilot shipped 2026-04-20; Dietrich shipped 2026-04-22)
 
-The encounter event and FLIR1 media node are built; the cluster's
-remaining work is corroborator people nodes (Dietrich, Underwood)
-and the supporting organization nodes.
+The encounter event, FLIR1 media node, and Dietrich eyewitness person
+node are built; the cluster's remaining work is Underwood (FLIR1
+pilot / corroborator), the supporting organization nodes, and the 19
+interview-venue stubs Dietrich's build surfaced (CBS News + Bill
+Whitaker; the five podcast organizations + hosts; Linda Hall Library
++ Nadia Drake; American Veterans Center + Tom Gibbs; seven interview
+transcript nodes — all visible in `scripts/validate.py` broken-link
+registry).
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/people/alex-dietrich` | person / eyewitness | High | Co-observer (Fravor's wingman); named in Fravor testimony + multiple interview transcripts | Fravor testimony + CBS 60 Minutes 2021-05-16 transcript (archived) |
 | `/organizations/uss-nimitz` | organization / gov (military-service) | High | Ship that launched the Fravor flight; referenced across multiple cluster members | Navy HR + public record |
 | `/organizations/uss-princeton` | organization / gov (military-service) | High | Aegis SPY-1 radar platform — instrumented corroboration source | Navy HR + surfpac.navy.mil (archived) |
 | `/organizations/vfa-41` | organization / gov (military-service) | High | Fravor's squadron (Black Aces) | Navy HR + public record |
@@ -131,7 +135,7 @@ Long-term structural improvements not blocked on primary sources.
 
 | Milestone | Description | Target | Status |
 |---|---|---|---|
-| Close Cluster A (Nimitz) ring | Build Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | F.2c + F.3 + F.4 shipped; FLIR1 built; Dietrich + orgs remain | In progress |
+| Close Cluster A (Nimitz) ring | Build Dietrich + FLIR1 + key orgs (Nimitz / Princeton / VFA-41) so Fravor's broken-link stubs resolve | F.2c + F.3 + F.4 shipped; FLIR1 built; Dietrich shipped 2026-04-22; orgs remain | In progress |
 | Close Cluster B (2023-07-26 hearing) ring | Build Grusch doc + Grusch/Graves transcripts + Grusch/Graves person | Hearing event + all three transcripts + all three written testimony docs + all three witness person nodes built | Done |
 | Close Cluster D (UAP oversight institutions) ring | Build AARO + UAPTF + their support stubs (ONI, NIA, Norquist, Travis Taylor, etc.) | AARO + UAPTF built; ONI, NIA, Norquist, Taylor stubs surfaced and queued | In progress |
 | First finding node | Build a cross-entity finding spanning 3+ nodes (e.g., UAP video-release provenance chain) | After ≥3 cluster rings close | Pending |
