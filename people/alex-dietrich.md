@@ -28,7 +28,13 @@ Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former F/A-18F str
 
 ## UAP Relevance
 
-Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to intercept and who visually acquired the Tic Tac object on November 14, 2004 (the USS Nimitz Tic Tac UAP encounter); she is one of two members of that flight who have spoken publicly about it. Additional first-hand witnesses include the crew of the subsequent flight — Chad Underwood ([`/people/chad-underwood`]) and his pilot — that captured the FLIR targeting pod video shortly after, and the USS Princeton Aegis combat system operators who had been observing these objects for the previous 2 weeks (both per Fravor's House Oversight Statement, [`/documents/written-testimony-fravor-2023`]). She was on the wing of Cmdr. Dave Fravor (then-commanding officer of VFA-41 Black Aces); each F/A-18F had a weapons system officer in the back seat. She has stated her rank at the time of the encounter as Lieutenant Junior Grade. She had been in contact with the Office of Naval Intelligence ([`/organizations/oni`]) and Pentagon UAP investigators since about 2009 — a one-way flow in which they called her in to answer questions about the encounter and shared material from other incidents — and only spoke publicly for the first time on the May 16, 2021 CBS 60 Minutes broadcast. Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 2022, and joined Americans for Safe Aerospace as an Advisor at its launch in 2023. In her February 2023 opinion piece in The Debrief ([`/organizations/the-debrief`]) she wrote that 'These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.' She was fortunate to attend the first meeting of the NASA UAP Independent Study Team ([`/organizations/nasa`]) in late 2022.
+Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to intercept and who visually acquired the Tic Tac object on November 14, 2004 (the USS Nimitz Tic Tac UAP encounter); she is one of two members of that flight who have spoken publicly about it. She was on the wing of Cmdr. Dave Fravor (then-commanding officer of VFA-41 Black Aces); each F/A-18F had a weapons system officer in the back seat. She has stated her rank at the time of the encounter as Lieutenant Junior Grade.
+
+Additional first-hand witnesses include the crew of the subsequent flight — Chad Underwood ([`/people/chad-underwood`]) and his pilot — that captured the FLIR targeting pod video shortly after, and the USS Princeton Aegis combat system operators who had been observing these objects for the previous 2 weeks (both per Fravor's House Oversight Statement, [`/documents/written-testimony-fravor-2023`]).
+
+She had been in contact with the Office of Naval Intelligence ([`/organizations/oni`]) and Pentagon UAP investigators since about 2009 — a one-way flow in which they called her in to answer questions about the encounter and shared material from other incidents — and only spoke publicly for the first time on the May 16, 2021 CBS 60 Minutes broadcast.
+
+Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 2022, and joined Americans for Safe Aerospace as an Advisor at its launch in 2023. In her February 2023 opinion piece in The Debrief ([`/organizations/the-debrief`]) she wrote that 'These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.' She was fortunate to attend the first meeting of the NASA UAP Independent Study Team ([`/organizations/nasa`]) in late 2022.
 
 ---
 
@@ -110,7 +116,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 117-124 |
 
-> that's actually how I got a visual on the Tic Tac is because somebody said hey look [59:18] in the water uh and we saw this turning water um I thought in the first moment that whatever we [59:25] had been in Vector to intercept had crashed uh and my heart sank
+> [59:18] that's actually how I got a visual on the Tic Tac is because somebody said hey look in the water uh and we saw this turning water um I thought in the first moment that whatever we had been in Vector to intercept had crashed uh and my heart sank
 
 | Field | Value |
 |---|---|
@@ -119,7 +125,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 478-481 |
 
-> we all gathered around and we watched uh several [56:42] times this um black and white uh Fleer footage it's was much clearer uh the resolution uh than [56:52] what you see on now if you just Google Tic Tac video video um because it was the original tape
+> [56:42] we all gathered around and we watched uh several times this um black and white uh Fleer footage it's was much clearer uh the resolution uh than what you see on now if you just Google Tic Tac video video um because it was the original tape
 
 | Field | Value |
 |---|---|
@@ -128,7 +134,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 458-461 |
 
-> we estimated that it's about the size of [11:22] our own [11:23] fuselage uh so about 30 to 40 feet long [11:27] and smooth just like a a Tic Tac uh [11:31] breath mint uh sort of a matte white [11:34] color with no windows no flight control [11:38] surfaces uh no visible forms of
+> [11:22] we estimated that it's about the size of our own fuselage uh so about 30 to 40 feet long and smooth just like a a Tic Tac uh breath mint uh sort of a matte white color with no windows no flight control surfaces uh no visible forms of
 
 | Field | Value |
 |---|---|
@@ -137,7 +143,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 247-254 |
 
-> moving so it was changing air speed it [13:45] was changing direction it was changing [13:47] angles in a way that didn't make sense [13:50] um and didn't adhere to our [13:52] understanding of physics and gravity and [13:57] um all of the aerodynamics that we study
+> [13:45] moving so it was changing air speed it was changing direction it was changing angles in a way that didn't make sense um and didn't adhere to our understanding of physics and gravity and um all of the aerodynamics that we study
 
 | Field | Value |
 |---|---|
@@ -146,7 +152,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 300-305 |
 
-> it was moving in a way [15:26] that we couldn't recognize. It didn't [15:28] follow our laws of physics. It didn't [15:31] have our turn radius or our [15:34] acceleration.
+> [15:26] it was moving in a way that we couldn't recognize. It didn't follow our laws of physics. It didn't have our turn radius or our acceleration.
 
 | Field | Value |
 |---|---|
@@ -155,7 +161,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 391-395 |
 
-> Uh the visual uh for me again [58:44] as the most junior pilot uh was 10 12 [58:49] seconds. Uh but for the other more [58:51] senior uh aviators and the crew it was a [58:55] few minutes.
+> [58:44] Uh the visual uh for me again as the most junior pilot uh was 10 12 seconds. Uh but for the other more senior uh aviators and the crew it was a few minutes.
 
 | Field | Value |
 |---|---|
@@ -257,7 +263,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 15 |
 
-> I was a lieutenant [10:03] Junior grade I wasn't even a full Lieutenant at the time uh that that happened
+> [10:03] I was a lieutenant Junior grade I wasn't even a full Lieutenant at the time uh that that happened
 
 | Field | Value |
 |---|---|
@@ -266,7 +272,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 91-93 |
 
-> again I was a lieutenant JG at the time yeah there's ensen and Lieutenant JG lieutenant [1:00:56] you know so I had had very little um uh rank or authority or anything
+> [1:00:56] again I was a lieutenant JG at the time yeah there's ensen and Lieutenant JG lieutenant you know so I had had very little um uh rank or authority or anything
 
 | Field | Value |
 |---|---|
@@ -275,7 +281,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 491-494 |
 
-> and I was a lieutenant JG it wasn't my place to [1:02:00] um investigate or follow up or follow through in that way
+> [1:02:00] and I was a lieutenant JG it wasn't my place to um investigate or follow up or follow through in that way
 
 | Field | Value |
 |---|---|
@@ -284,7 +290,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 499-501 |
 
-> I really after after that uh you know the few days of [5:25] excitement uh that followed I forgot about it uh you know wasn't on my mind I certainly wasn't [5:32] uh trying to figure it out or anything until um you know several years later when uh the Office [5:40] of Naval intelligence folks contacted me and they were doing their investigation and their followup
+> [5:25] I really after after that uh you know the few days of excitement uh that followed I forgot about it uh you know wasn't on my mind I certainly wasn't uh trying to figure it out or anything until um you know several years later when uh the Office of Naval intelligence folks contacted me and they were doing their investigation and their followup
 
 | Field | Value |
 |---|---|
@@ -302,7 +308,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 228 |
 
-> I was fortunate to um attend the first meeting of the NASA independent study uh so it was hosted [19:37] by NASA
+> [19:37] I was fortunate to um attend the first meeting of the NASA independent study uh so it was hosted by NASA
 
 | Field | Value |
 |---|---|
@@ -374,7 +380,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | author byline |
 
-> so I recently [2:17] retired and moved to Boulder [2:19] after serving 20 years in the Navy. [2:22] The first 10 years was [2:24] operational as a pilot [2:27] and then deploying as an engineer. [2:30] And then the last 10 years, I was [2:32] living the charmed life of an academic, [2:35] teaching at the Naval [2:36] Academy in Annapolis, [2:38] and then the consortium of schools in DC.
+> [2:17] so I recently retired and moved to Boulder after serving 20 years in the Navy. The first 10 years was operational as a pilot and then deploying as an engineer. And then the last 10 years, I was living the charmed life of an academic, teaching at the Naval Academy in Annapolis, and then the consortium of schools in DC.
 
 | Field | Value |
 |---|---|
@@ -383,7 +389,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 82-92 |
 
-> I just joined the [11:00] squadron in July of 2004. [11:06] So having just come out of [11:07] flight school, just out of the-- [11:10] I had just done the [11:12] midair refueling syllabus. [11:14] I had just done my carrier qual in that [11:19] particular aircraft. [11:21] So I really felt and really was new. [11:26] I still had my FNG named Patch.
+> [11:00] I just joined the squadron in July of 2004. So having just come out of flight school, just out of the-- I had just done the midair refueling syllabus. I had just done my carrier qual in that particular aircraft. So I really felt and really was new. I still had my FNG named Patch.
 
 | Field | Value |
 |---|---|
@@ -392,7 +398,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 334-343 |
 
-> I I had a UAP [30:38] encounter and I was never told to be [30:39] quiet about it it was never classified [30:42] we were never required to sign an NDA um [30:45] there were never Men In Black that came [30:47] and took tapes or you know removed data [30:49] or anything like that so um I haven't [30:53] had that experience and I don't know of [30:54] anybody else who has
+> [30:38] I I had a UAP encounter and I was never told to be quiet about it it was never classified we were never required to sign an NDA um there were never Men In Black that came and took tapes or you know removed data or anything like that so um I haven't had that experience and I don't know of anybody else who has
 
 | Field | Value |
 |---|---|
@@ -401,7 +407,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 714-722 |
 
-> that so I was uh new to the Squadron I [9:24] was a lieutenant Junior grade and uh on [9:27] the wing of the commanding officer uh [9:30] Commander David fraver uh he had a [9:32] senior lieutenant in his back seat and I [9:35] had a department head a lieutenant [9:37] commander in my back seat
+> [9:24] that so I was uh new to the Squadron I was a lieutenant Junior grade and uh on the wing of the commanding officer uh Commander David fraver uh he had a senior lieutenant in his back seat and I had a department head a lieutenant commander in my back seat
 
 | Field | Value |
 |---|---|
@@ -410,7 +416,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 206-212 |
 
-> I I [12:07] graduated and commissioned through the [12:08] ROC program in 2001. Went through flight [12:11] school, had my first flight on 911, [12:15] uh which was a paradigm shift for the [12:17] world and for me personally and [12:19] professionally. Uh and then I ended up [12:21] in the strike fighter pipeline. So I [12:22] flew F-18 Super Hornets for the Navy uh [12:26] off of the USS Nimttz aircraft carrier [12:29] uh from the squadron VFA41.
+> [12:07] I I graduated and commissioned through the ROC program in 2001. Went through flight school, had my first flight on 911, uh which was a paradigm shift for the world and for me personally and professionally. Uh and then I ended up in the strike fighter pipeline. So I flew F-18 Super Hornets for the Navy uh off of the USS Nimttz aircraft carrier uh from the squadron VFA41.
 
 | Field | Value |
 |---|---|
@@ -419,7 +425,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 311-321 |
 
-> I maintain an [18:07] aggressively neutral uh stance. [18:11] So, by definition for me, UFO or UAP is [18:17] unidentified. That's what the U stands
+> [18:07] I maintain an aggressively neutral uh stance. So, by definition for me, UFO or UAP is unidentified. That's what the U stands
 
 | Field | Value |
 |---|---|
@@ -428,7 +434,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 449-454 |
 
-> 2017 [45:48] article came about and um there was a [45:51] Pentagon report that again wasn't [45:53] classified because we don't know what we [45:54] saw that day, but included our names and [45:57] information. And so, it was released, [46:00] posted on the internet somehow, and we
+> [45:48] 2017 article came about and um there was a Pentagon report that again wasn't classified because we don't know what we saw that day, but included our names and information. And so, it was released, posted on the internet somehow, and we
 
 | Field | Value |
 |---|---|
@@ -473,6 +479,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | Person | Relationship |
 |---|---|
 | [`/people/david-fravor`] | Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing as the second pilot in the two-ship F/A-18F flight |
+| [`/people/chad-underwood`] | Back-seater on the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object; Dietrich identified him by name on the Somewhere in the Skies podcast and watched the original tape with her squadron aboard the USS Nimitz |
 
 ---
 
@@ -483,6 +490,7 @@ Dietrich was one of four naval aviators in the flight of 2 F/A-18Fs vectored to 
 | [`/people/david-fravor`] | testimonial | Flight lead in the lead F/A-18F of the same two-ship flight; observed the same Tic Tac object and named Dietrich as 'the other pilot in my flight' in his House Oversight written testimony. | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 | [`/organizations/uss-princeton`] | instrumented | Aegis SPY-1 radar on USS Princeton reacquired the object 60 miles East at the CAP point seconds after it disappeared from visual. | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 | [`/media/flir1-video`] | documentary | Subsequent F/A-18F sortie launched after Dietrich and Fravor's flight returned captured targeting-pod video of an object Fravor and Dietrich believed was the same Tic Tac. | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/people/chad-underwood`] | testimonial | Back-seater on the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object through the targeting pod. Named by Dietrich's own statements on the Somewhere in the Skies podcast and by Fravor's House Oversight written testimony as the pilot in that aircraft. | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 
 ---
 
