@@ -18,9 +18,9 @@ created: 2026-04-20
 | Type | DoD task force |
 | Statutory Authority | Congressionally mandated (Intelligence Authorization Act for Fiscal Year 2021, Senate Report 116-233 "Advanced Aerial Threats" section) and Deputy Secretary of Defense directed (Norquist approval of establishment, August 4, 2020) |
 | Established | 2020-08-04 |
-| Terminated | 2021-11-23 (functional transfer to AOIMSG via Hicks memorandum); 2022-07-15 (formal disestablishment directive via second Hicks memorandum) |
+| Terminated | 2021-11-23 (functional transfer to AOIMSG via Hicks AOIMSG-establishment memorandum); 2022-07-15 (formal disestablishment directive via Hicks AARO-establishment memorandum) |
 | Parent Organization | [`/organizations/nia`] |
-| Jurisdiction | Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security |
+| Jurisdiction | Three-way governance — chartered by the Naval Intelligence Activity (NIA); Department of the Navy lead department; under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security (USD(I&S)) |
 
 ---
 
@@ -166,7 +166,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
-### Primary-source documentation in the UAPTF Charter of the UAP Executive Steering Committee (EXCOM) as a senior oversight body positioned above the UAPTF in the command structure. The EXCOM had not appeared in prior publicly available descriptions of UAPTF governance before the April 2025 FOIA release.
+### UAPTF Charter — UAP Executive Steering Committee (EXCOM) as senior oversight body above UAPTF
 
 > Provide periodic updates, via the chain of command, to the UAP Executive Steering Committee (EXCOM), and to the committee's designated representatives. to support the EXCOMs oversight mission.
 
@@ -192,7 +192,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
-### ODNI Preliminary Assessment — UAPTF as drafting body plus the cross-agency contributor list
+### ODNI Preliminary Assessment — UAPTF as drafting body plus the cross-agency contributor list (source lists "NGA" twice; preserved as-attested)
 
 > UAPTF and the ODNI National Intelligence Manager for Aviation drafted this report, with input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council.
 
@@ -231,7 +231,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
-### Primary-source-adjacent reporting establishing Karl E. Nell as the U.S. Army's liaison to the UAP Task Force during 2021–2022. Nell's retired rank (Colonel) and the specific 2021-2022 period add a named UAPTF Army-side personnel entry distinct from the Navy-led directorship (Stratton, then reportedly McKernan).
+### The Debrief (Kean/Blumenthal) — Karl E. Nell as Army liaison to UAPTF, 2021-2022
 
 > Karl E. Nell, a recently retired Army Colonel and current aerospace executive who was the Army's liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there, characterizes Grusch as "beyond reproach."
 
@@ -244,7 +244,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
-### AARO's own official historical-record framing of the UAPTF lifecycle — August 2020 through November 2021 — where the November 2021 end-date corresponds to AOIMSG establishment (the functional successor transfer), distinct from the formal July 15, 2022 Hicks memorandum that directed disestablishment.
+### AARO HRR Volume I — UAPTF lifecycle August 2020 to November 2021 (section header)
 
 > Unidentified Aerial Phenomena Task Force (UAPTF) (August 2020-November 2021)
 
@@ -257,7 +257,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
-### AARO's own official characterization of UAPTF's operational results — including the primary-source-documented connection between UAPTF methods and the PRC high-altitude-balloon identification over CONUS.
+### AARO HRR — UAPTF results (standardize, destigmatize reporting; PRC high-altitude-balloon identification)
 
 > The UAPTF helped standardize, destigmatize, and increase the volume of UAP reporting. Its work also helped calibrate sensors to improve the quality of data collected. Its methods and processes directly led to the identification of the People's Republic of China's (PRC) high altitude balloons that traversed over the continental United States.
 
@@ -270,7 +270,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
-### AARO HRR's explicit primary-source attestation that AOIMSG was established to succeed UAPTF. Clarifies the November 2021 functional transfer (audit's correction — AOIMSG wasn't merely "intended successor," it was explicitly the successor entity per the DoD record).
+### AARO HRR — AOIMSG established to succeed UAPTF (direct successor, not intended-framework)
 
 > The Deputy Secretary of Defense, in consultation with the Director of National Intelligence (DNI), directed USD(I&S) to establish AOIMSG to succeed the USN's UAPTF.
 
@@ -283,7 +283,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
-### AARO HRR's own account of the short-lived AOIMSG — never achieved initial operating capability before FY2022 NDAA (December 2021) renamed it to AARO with expanded scope. Documents the administrative-only nature of AOIMSG as a bridge entity.
+### AARO HRR — AOIMSG never achieved initial operating capability before FY2022 NDAA rename to AARO
 
 > AOIMSG had not achieved initial operating capability before subsequent legislation in the FY2022 NDAA resulted in it being renamed to AARO and given an expanded mission set.
 
@@ -296,7 +296,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
-### AARO's own official establishment date — July 15, 2022 (matching the Hicks memorandum signature date), not July 20, 2022 (which is the AARO public-announcement date). Corrects v3 timeline entry that used the July 20 press-release date as the establishment date.
+### AARO HRR — AARO establishment date July 15, 2022 (matches Hicks memo signature, not July 20 announcement)
 
 > All-domain Anomaly Resolution Office (AARO) (Established July 15, 2022)
 
@@ -309,7 +309,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
-### Primary-source-adjacent reporting on the FOIA release documenting (1) Scott Bray as Director, Naval Intelligence Activity, and (2) two additional NIA memoranda dated September 23, 2020 directed to senior intelligence officials in the U.S. Army and U.S. Air Force — establishing the cross-service outreach structure of UAPTF beyond the Charter alone.
+### Black Vault FOIA release — Scott Bray (NIA Director) signed two additional September 23, 2020 cross-service NIA memoranda
 
 > Two additional memoranda included in the FOIA release, both dated September 23, 2020, offer additional insight into the early coordination efforts behind the establishment of the UAPTF. Though less revealing than the charter itself, these memos document formal outreach by the Director of the Naval Intelligence Activity (NIA), Scott Bray, to senior intelligence officials within the U.S. Army and Air Force, emphasizing the cross-service structure envisioned for the task force.
 
@@ -331,10 +331,10 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 | 2020-08-14 | DoD publicly announces establishment of the Unidentified Aerial Phenomena Task Force | founding | government/defense-gov-uaptf-establishment-20200814.html |  |
 | 2020-09-01 | UAPTF Charter signed by the Director, Naval Intelligence Activity | other | government/blackvault-uaptf-charter-foia-20250422.pdf |  |
 | 2021-06-25 | ODNI Preliminary Assessment, Unidentified Aerial Phenomena published — drafted by UAPTF and the ODNI National Intelligence Manager for Aviation | other | government/dni-gov-odni-preliminary-assessment-20210625.pdf | [`/documents/odni-preliminary-assessment-2021`] |
-| 2021-11-23 | Airborne Object Identification and Management Synchronization Group (AOIMSG) announced as the intended successor framework to the U.S. Navy's Unidentified Aerial Phenomena Task Force. AOIMSG establishment did not immediately disestablish UAPTF — UAPTF continued to operate in parallel until the July 15, 2022 Hicks memorandum directed the Secretary of the Navy to disestablish UAPTF no later than the date AARO is established. | leadership-transition | government/defense-gov-aoimsg-establishment-20211123.html | [`/organizations/aoimsg`] |
+| 2021-11-23 | Airborne Object Identification and Management Synchronization Group (AOIMSG) established by Hicks memorandum to succeed the U.S. Navy's Unidentified Aerial Phenomena Task Force. Per AARO HRR Volume I this is the functional end of UAPTF's lifecycle (August 2020 – November 2021); formal disestablishment directive followed in the second Hicks memorandum on July 15, 2022. | leadership-transition | government/defense-gov-aoimsg-establishment-20211123.html | [`/organizations/aoimsg`] |
 | 2022-06-29 | DoD Public Affairs statement (via spokesperson Susan Gough) names former Office of Naval Intelligence senior civilian John Stratton as UAPTF lead; Dr. Travis Taylor identified as informal Chief Scientist | other | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |  |
 | 2022-07-15 | Deputy Secretary of Defense memorandum directs the Secretary of the Navy to disestablish UAPTF no later than the date the AARO is established, and to transfer data, analysis, or other relevant material to the AARO | leadership-transition | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |  |
-| 2022-07-20 | DoD press release publicly announces AARO establishment; AARO HRR Volume I (March 2024) gives the formal establishment date as July 15, 2022 — the Hicks memorandum signature date — with July 20, 2022 as the announcement date. Same memo directed UAPTF disestablishment per t8. | leadership-transition | government/defense-gov-aaro-establishment-20220720.html | [`/organizations/aaro`] |
+| 2022-07-20 | DoD press release publicly announces AARO establishment. Per AARO HRR Volume I (March 2024) the formal AARO establishment date is July 15, 2022 (Hicks memorandum signature date); July 20, 2022 is the public-announcement date. | leadership-transition | government/defense-gov-aaro-establishment-20220720.html | [`/organizations/aaro`] |
 
 ---
 
@@ -345,7 +345,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 | Organization | Relationship | Source |
 |---|---|---|
 | [`/organizations/aoimsg`] | successor | government/defense-gov-aoimsg-establishment-20211123.html |
-| [`/organizations/aaro`] | successor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/aaro`] | other | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | [`/organizations/odni`] | partner | government/dni-gov-odni-preliminary-assessment-20210625.pdf |
 | [`/organizations/nia`] | parent | government/blackvault-uaptf-charter-foia-20250422.pdf |
 | [`/organizations/us-navy`] | other | government/defense-gov-uaptf-establishment-20200814.html |
