@@ -25,7 +25,7 @@ context_extrinsic:
 background: 'David Fravor is a retired [`/organizations/us-navy`] Commander. In November 2004 he was the Commanding Officer of Strike Fighter Squadron Forty-One — the "Black Aces" ([`/organizations/vfa-41`]) — attached to Carrier Airwing Eleven ([`/organizations/carrier-airwing-eleven`]) and stationed onboard [`/organizations/uss-nimitz`] (CVN-68). The squadron was at the beginning of a workup cycle that would prepare them for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq.
 
   '
-uap_relevance: 'Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] from [`/organizations/uss-nimitz`]. In 2009 [`/people/jay-stratton`] contacted Fravor: "Jay was part of the ATIP (Anomalous Threat Identification Program) program led by Lue Elizondo out of the DOD" ([`/organizations/dod`]). In 2016 [`/people/alex-dietrich`] (Fravor''s wingman) contacted Fravor; shortly after, [`/people/luis-elizondo`] contacted Fravor. Fravor was made aware that Elizondo had left the pentagon in protest and joined forces with [`/people/tom-delonge`], [`/people/christopher-mellon`], [`/people/steve-justice`] and others to form [`/organizations/ttsa`]. The [`/documents/written-testimony-fravor-2023`] is Fravor''s Statement for the House Oversight Committee on the UAP topic.
+uap_relevance: 'Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] from his F/A-18F after he launched off the [`/organizations/uss-nimitz`]. In 2009 [`/people/jay-stratton`] contacted Fravor to investigate what they observed; in his House Oversight Statement Fravor stated that Stratton was "part of the ATIP (Anomalous Threat Identification Program) program led by Lue Elizondo out of the DOD" ([`/organizations/dod`]). Years later [`/people/alex-dietrich`] (the other pilot in Fravor''s flight) contacted Fravor in 2016; shortly after, [`/people/luis-elizondo`] contacted Fravor. Fravor was made aware that Elizondo had left the Pentagon in protest and joined forces with [`/people/tom-delonge`], [`/people/christopher-mellon`], [`/people/steve-justice`] and others to form [`/organizations/ttsa`]. The [`/documents/written-testimony-fravor-2023`] is Fravor''s Statement for the House Oversight Committee on the UAP topic.
 
   '
 affiliations:
@@ -44,6 +44,22 @@ affiliations:
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: lines 6-7
+- id: a3
+  added_date: '2026-04-23'
+  organization_path: /organizations/carrier-airwing-eleven
+  role: VFA-41 squadron attached to CVW-11 at time of the 2004 Nimitz encounter
+  period_start: 2004-11
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 7-8
+- id: a4
+  added_date: '2026-04-23'
+  organization_path: /organizations/uss-nimitz
+  role: Stationed onboard as VFA-41 Commanding Officer during the 2004 Nimitz encounter
+  period_start: 2004-11
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 7-8
 quotes:
 - id: q1
   added_date: '2026-04-19'
@@ -105,6 +121,36 @@ quotes:
   context: Written testimony, House Oversight Committee
   observation_type: relayed
   statement_date: '2023-07-26'
+- id: q7
+  added_date: '2026-04-23'
+  text: I was contacted by Mr Elizondo shortly after talking with Alex in 2016. We briefly chatted and I was told that he would be in contact.
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 75-76
+  significance: Direct attestation of Elizondo's 2016 contact with Fravor — shortly after Dietrich's 2016 outreach
+  context: Written testimony, House Oversight Committee
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q8
+  added_date: '2026-04-23'
+  text: We were at the beginning of our workup cycle that would prepare us for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq.
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 9-10
+  significance: Operational context — VFA-41 / Carrier Airwing Eleven workup cycle toward Iraq-supporting Persian Gulf deployment at the time of the Nimitz encounter
+  context: Written testimony, House Oversight Committee
+  observation_type: relayed
+  statement_date: '2023-07-26'
+- id: q9
+  added_date: '2026-04-23'
+  text: I was scheduled to lead a 2 V 2 Air to Air training exercise. My flight of 2 F/A-18Fs was the Blue Air, the good guys, and we were being controlled by the USS Princeton, CG-59.
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 15-17
+  significance: Training exercise structure — 2 V 2 Air to Air; Fravor's flight of 2 F/A-18Fs as Blue Air controlled by USS Princeton CG-59 before the vector to intercept
+  context: Written testimony, House Oversight Committee
+  observation_type: direct
+  statement_date: '2023-07-26'
 timeline:
 - id: t1
   added_date: '2026-04-19'
@@ -144,7 +190,7 @@ timeline:
 - id: t5
   added_date: '2026-04-19'
   date: 2017-12
-  event: TTSA coordination with NYT journalists (Kean, Blumenthal, Cooper) — articles published on USG UAP investigation
+  event: NYT articles on USG UAP program published (Leslie Kean, Ralph Blumenthal, Helene Cooper) — Fravor's 2023 testimony recounts the TTSA-to-NYT coordination chain that led to these articles, not a direct Fravor action
   category: publication
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -208,7 +254,7 @@ corroboration_items:
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
     location: lines 57-62
-credibility_notes: 'Fravor observed the [`/events/2004-nimitz-encounter`] as flight lead of the 2 V 2 Air to Air exercise in November 2004. In his Statement for the House Oversight Committee: [`/people/alex-dietrich`] was "the other pilot in my flight" and "also lost visual"; the [`/organizations/uss-princeton`] "Aegis SPY 1 radar" showed the object had reappeared 60 miles east at the CAP point; "the now famous approximately 90 second video" ([`/media/flir1-video`]) was "taken" by a [`/organizations/uss-nimitz`] crew and "released by the USG in 2017".
+credibility_notes: 'Fravor observed the [`/events/2004-nimitz-encounter`] as flight lead of the 2 V 2 Air to Air training exercise in November 2004. In his House Oversight Statement: [`/people/alex-dietrich`] was the other pilot in his flight and also lost visual; the [`/organizations/uss-princeton`] Aegis SPY 1 radar showed the object had reappeared 60 miles east at the CAP point; the approximately 90 second targeting pod video ([`/media/flir1-video`]) was taken by a crew that launched after Fravor returned to the [`/organizations/uss-nimitz`], and was released by the USG in 2017.
 
   '
 entities_referenced:
