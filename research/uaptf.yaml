@@ -10,7 +10,10 @@ description: 'The Unidentified Aerial Phenomena Task Force ([`/organizations/uap
   The UAP Security Classification Guide (ID# 04-030, Naval Intelligence Activity ([`/organizations/nia`]), April 16, 2020) names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its subject — four months before the DoD press release of August 14, 2020. The UAPTF Charter, dated September 1, 2020, describes the Task Force as "Congressionally mandated, Deputy Secretary of Defense directed" and its Purpose as "to create a single entity tasked with working across the Department of Defense" with the Intelligence Community and the Interagency "to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data" on UAP.
 
 
-  UAPTF drafted the June 25, 2021 [`/documents/odni-preliminary-assessment-2021`] with "the ODNI National Intelligence Manager for Aviation" and "input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National". Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 ("Advanced Aerial Threats" section) directed the DNI to submit the UAP report within 180 days of enactment.
+  UAPTF drafted the June 25, 2021 [`/documents/odni-preliminary-assessment-2021`] with "the ODNI National Intelligence Manager for Aviation" and "input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council." The contributor list in the Preliminary Assessment as published contains a duplicated "NGA" entry (appearing before NSA and after NOAA) — preserved as source-attested rather than corrected. Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 ("Advanced Aerial Threats" section) directed the DNI to submit the UAP report within 180 days of enactment.
+
+
+  Timeline tension — Grusch''s sworn written testimony to the House Oversight Committee attests his UAPTF membership from 2019 to 2021 in his NRO reservist capacity, but UAPTF''s formal establishment per the Norquist approval is August 4, 2020; the April 16, 2020 UAP Security Classification Guide also predates the public August 2020 announcement. Both primary-source datapoints corroborate a pre-2020 informal task force or ONI UAP cell that was retroactively formalized as UAPTF in August 2020, rather than a stand-up from scratch.
 
 
   The Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established November 23, 2021 as the successor to the Task Force. The All-domain Anomaly Resolution Office ([`/organizations/aaro`]) was established July 20, 2022. The July 15, 2022 Deputy Secretary of Defense memorandum directed the Secretary of the Navy to disestablish UAPTF "no later than the date the AARO is established" and to "support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO".
@@ -77,7 +80,7 @@ primary_sources:
 document_intrinsic:
   full_name: Unidentified Aerial Phenomena Task Force
   internal_name: UAPTF
-  statutory_authority: Congressionally mandated (Intelligence Authorization Act for Fiscal Year 2021, Senate Report 116-233 "Advanced Aerial Threats" section) and Deputy Secretary of Defense directed (Norquist memorandum, August 4, 2020)
+  statutory_authority: Congressionally mandated (Intelligence Authorization Act for Fiscal Year 2021, Senate Report 116-233 "Advanced Aerial Threats" section) and Deputy Secretary of Defense directed (Norquist approval of establishment, August 4, 2020)
   established_date: '2020-08-04'
   terminated_date: 2022-07
   parent_organization_path: /organizations/nia
@@ -119,7 +122,7 @@ quotes:
     path: government/blackvault-uap-security-classification-guide-20200416.pdf
     location: p.1, Purpose
   significance: UAP Security Classification Guide identifies UAPTF at Office of Naval Intelligence — April 16, 2020 (four months before public establishment announcement)
-  context: UAP Security Classification Guide (ID# 04-030), Naval Intelligence Activity, April 16, 2020
+  context: UAP Security Classification Guide (ID# 04-030), Naval Intelligence Activity, April 16, 2020 (OCR preserves "identifYing" for "identifying")
   statement_date: '2020-04-16'
 - id: q4
   added_date: '2026-04-20'
@@ -159,7 +162,7 @@ quotes:
   statement_date: '2021-06-25'
 - id: q8
   added_date: '2026-04-20'
-  text: UAPTF and the ODNI National Intelligence Manager for Aviation drafted this report, with input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National
+  text: UAPTF and the ODNI National Intelligence Manager for Aviation drafted this report, with input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council.
   source:
     path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
     location: p.3, SCOPE AND ASSUMPTIONS
@@ -443,6 +446,22 @@ naming_quirks:
   source_path: government/defense-gov-uaptf-establishment-20200814.html
   resolution: use-canonical
   note: UAPTF era uses "Unidentified Aerial Phenomena" (plural); later AARO-era documents use "Unidentified Anomalous Phenomena". The terminology shift tracks with the AARO scope expansion to include space, submerged, and transmedium objects per the Hicks memorandum. UAPTF's own naming remains "Unidentified Aerial Phenomena Task Force" in all of its primary sources.
+- id: nq3
+  added_date: '2026-04-22'
+  observed: identifYing
+  canonical: identifying
+  location: UAP Security Classification Guide (ID# 04-030), p.1 Purpose statement
+  source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: OCR artifact in the FOIA-released text-extraction of the UAP Security Classification Guide — the "Y" is capitalized mid-word ("identifYing" instead of "identifying"). Parallels the "chaner" / "Unidenlified" OCR artifacts preserved in the UAPTF Charter quotes. Key Passage q3 preserves the as-scanned form.
+- id: nq4
+  added_date: '2026-04-22'
+  observed: NGA (duplicated in the contributor list)
+  canonical: NGA
+  location: ODNI Preliminary Assessment, p.3 SCOPE AND ASSUMPTIONS, contributor list
+  source_path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: The ODNI Preliminary Assessment's cross-agency contributor list as published contains a duplicate "NGA" entry (once between NRO and NSA, once between NOAA and ODNI/NIM-Emerging and Disruptive Technology). Preserved verbatim in Key Passage q8 as the primary source-attested form rather than deduplicated.
 rumors:
 - id: r1
   added_date: '2026-04-20'

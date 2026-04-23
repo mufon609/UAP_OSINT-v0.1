@@ -16,7 +16,7 @@ created: 2026-04-20
 | Full Name | Unidentified Aerial Phenomena Task Force |
 | Internal Name | UAPTF |
 | Type | DoD task force |
-| Statutory Authority | Congressionally mandated (Intelligence Authorization Act for Fiscal Year 2021, Senate Report 116-233 "Advanced Aerial Threats" section) and Deputy Secretary of Defense directed (Norquist memorandum, August 4, 2020) |
+| Statutory Authority | Congressionally mandated (Intelligence Authorization Act for Fiscal Year 2021, Senate Report 116-233 "Advanced Aerial Threats" section) and Deputy Secretary of Defense directed (Norquist approval of establishment, August 4, 2020) |
 | Established | 2020-08-04 |
 | Terminated | 2022-07 |
 | Parent Organization | [`/organizations/nia`] |
@@ -30,7 +30,9 @@ The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`
 
 The UAP Security Classification Guide (ID# 04-030, Naval Intelligence Activity ([`/organizations/nia`]), April 16, 2020) names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its subject — four months before the DoD press release of August 14, 2020. The UAPTF Charter, dated September 1, 2020, describes the Task Force as "Congressionally mandated, Deputy Secretary of Defense directed" and its Purpose as "to create a single entity tasked with working across the Department of Defense" with the Intelligence Community and the Interagency "to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data" on UAP.
 
-UAPTF drafted the June 25, 2021 [`/documents/odni-preliminary-assessment-2021`] with "the ODNI National Intelligence Manager for Aviation" and "input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National". Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 ("Advanced Aerial Threats" section) directed the DNI to submit the UAP report within 180 days of enactment.
+UAPTF drafted the June 25, 2021 [`/documents/odni-preliminary-assessment-2021`] with "the ODNI National Intelligence Manager for Aviation" and "input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council." The contributor list in the Preliminary Assessment as published contains a duplicated "NGA" entry (appearing before NSA and after NOAA) — preserved as source-attested rather than corrected. Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 ("Advanced Aerial Threats" section) directed the DNI to submit the UAP report within 180 days of enactment.
+
+Timeline tension — Grusch's sworn written testimony to the House Oversight Committee attests his UAPTF membership from 2019 to 2021 in his NRO reservist capacity, but UAPTF's formal establishment per the Norquist approval is August 4, 2020; the April 16, 2020 UAP Security Classification Guide also predates the public August 2020 announcement. Both primary-source datapoints corroborate a pre-2020 informal task force or ONI UAP cell that was retroactively formalized as UAPTF in August 2020, rather than a stand-up from scratch.
 
 The Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established November 23, 2021 as the successor to the Task Force. The All-domain Anomaly Resolution Office ([`/organizations/aaro`]) was established July 20, 2022. The July 15, 2022 Deputy Secretary of Defense memorandum directed the Secretary of the Navy to disestablish UAPTF "no later than the date the AARO is established" and to "support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO".
 
@@ -74,7 +76,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 | Field | Value |
 |---|---|
-| Attributed to | UAP Security Classification Guide (ID# 04-030), Naval Intelligence Activity, April 16, 2020, 2020-04-16 |
+| Attributed to | UAP Security Classification Guide (ID# 04-030), Naval Intelligence Activity, April 16, 2020 (OCR preserves "identifYing" for "identifying"), 2020-04-16 |
 | Source | [archived source](../sources/government/blackvault-uap-security-classification-guide-20200416.pdf) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.1, Purpose |
@@ -178,7 +180,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ### ODNI Preliminary Assessment — UAPTF as drafting body plus the cross-agency contributor list
 
-> UAPTF and the ODNI National Intelligence Manager for Aviation drafted this report, with input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National
+> UAPTF and the ODNI National Intelligence Manager for Aviation drafted this report, with input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council.
 
 | Field | Value |
 |---|---|
