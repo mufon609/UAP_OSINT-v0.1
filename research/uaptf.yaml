@@ -16,7 +16,7 @@ description: 'The Unidentified Aerial Phenomena Task Force ([`/organizations/uap
   Timeline tension — Grusch''s sworn written testimony to the House Oversight Committee attests his UAPTF membership from 2019 to 2021 in his NRO reservist capacity, but UAPTF''s formal establishment per the Norquist approval is August 4, 2020; the April 16, 2020 UAP Security Classification Guide also predates the public August 2020 announcement. Both primary-source datapoints corroborate a pre-2020 informal task force or ONI UAP cell that was retroactively formalized as UAPTF in August 2020, rather than a stand-up from scratch.
 
 
-  The Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established November 23, 2021 as the successor to the Task Force. The All-domain Anomaly Resolution Office ([`/organizations/aaro`]) was established July 20, 2022. The July 15, 2022 Deputy Secretary of Defense memorandum directed the Secretary of the Navy to disestablish UAPTF "no later than the date the AARO is established" and to "support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO".
+  UAPTF''s lifecycle ended in two stages. First, the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established November 23, 2021 to succeed UAPTF per the Hicks AOIMSG-establishment memorandum — the functional transfer point; AARO Historical Record Report Volume I (March 2024) puts the UAPTF lifecycle at August 2020 through November 2021. Second, on July 15, 2022, the Hicks AARO-establishment memorandum formally directed the Secretary of the Navy to disestablish UAPTF "no later than the date the AARO is established" and to "support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO"; the Historical Record Report gives the formal AARO establishment date as July 15, 2022, with July 20, 2022 as the public announcement date. AOIMSG had not achieved initial operating capability before the FY2022 NDAA legislation renamed it to AARO with an expanded mission set, making AARO ([`/organizations/aaro`]) the downstream successor in the UAPTF → AOIMSG → AARO succession chain; AATIP ([`/organizations/aatip`]) is the predecessor per the Historical Record Report''s predecessor-organization framing.
 
 
   DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "former Office of Naval Intelligence senior civilian John Stratton was leading the effort and informally referred to Dr. Taylor as his chief scientist". Stratton ([`/people/jay-stratton`]) is listed by Americans for Safe Aerospace as "Ex Director, UAP Task Force". Dr. Travis Taylor ([`/people/travis-taylor`]) — a U.S. Army Space and Missile Defense Command employee on time-limited assignment to UAPTF.
@@ -298,11 +298,12 @@ key_personnel:
   added_date: '2026-04-20'
   person_path: /people/jay-stratton
   role: Director (named as former Office of Naval Intelligence senior civilian "leading the effort" per DoD Public Affairs statement)
+  period_end: '2021'
   leadership_class: director
   source:
     path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
     location: A1 response from DoD spokesperson Susan Gough
-  note: DoD PA attribution via Gough statement is the strongest on-record government attestation. Corroborated by Americans for Safe Aerospace advisors listing ("Ex Director, UAP Task Force"). Exact period dates not specified by primary source — see research_gap g2.
+  note: DoD PA attribution via Gough statement is the strongest on-record government attestation. Corroborated by Americans for Safe Aerospace advisors listing ("Ex Director, UAP Task Force"). Exact start date not specified by primary sources archived here; period_end 2021 bracketed conservatively on the DoD PA statement's past-tense "was leading" language (June 29, 2022 statement describes Stratton as former Office of Naval Intelligence senior civilian who was leading the effort at an unspecified prior point).
 - id: kp2
   added_date: '2026-04-20'
   person_path: /people/travis-taylor
@@ -427,11 +428,19 @@ timeline:
 - id: t4
   added_date: '2026-04-20'
   date: '2020-09-01'
-  event: UAPTF Charter signed by the Director, Naval Intelligence Activity
+  event: UAPTF Charter signed by the Director, Naval Intelligence Activity (Scott Bray per Black Vault FOIA release, April 22, 2025)
   category: other
   source:
     path: government/blackvault-uaptf-charter-foia-20250422.pdf
     location: p.1
+- id: t4b
+  added_date: '2026-04-22'
+  date: '2020-09-23'
+  event: NIA Director Scott Bray issues two cross-service outreach memoranda to senior intelligence officials in the U.S. Army and U.S. Air Force, establishing UAPTF cross-service structure. Both memos included in the April 22, 2025 FOIA release package (DON-NAVY-2021-003140).
+  category: other
+  source:
+    path: news/blackvault-uaptf-charter-foia-release-20250422.html
+    location: The Black Vault article body
 - id: t5
   added_date: '2026-04-20'
   date: '2021-06-25'
