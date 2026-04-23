@@ -290,3 +290,83 @@ will ever be built; no per-node remediation required.
 Surfaced: UAPTF v7 audit (2026-04-23) — AARO and EXCOM rows flagged
 as displaying identically to `other`-typed edges despite the
 artifact carrying distinctive source-derived framing for both.
+
+---
+
+### 18. Codify Key Passages ordering convention in `conventions.md`
+
+The node-body renderer sorts Key Passages (and Key Testimony on
+hearing events) by `statement_date` when the field is present on
+entries. The ordering is currently an implicit behavior — it is
+explicit in `schema.yaml` only for hearing-kind Key Testimony
+("verbatim passages sorted by statement_date"); for document /
+transcript / media / organization / location Key Passages, the
+schema says "all quotes" without specifying ordering. Behavior is
+emergent: artifacts with `statement_date` populated render
+chronologically; artifacts without it render in artifact-entry
+order; partial population produces mixed ordering.
+
+**Concrete consequence** — TTSA v3 (2026-04-23). Phase 3 of the
+v2 cleanup populated `statement_date` on all 44 quotes. The
+renderer then sorted Key Passages chronologically, which promoted
+q5 (DeLonge email to Podesta, 2016-01-25) from mid-list to position
+1 — ahead of the 2017-07-10 SEC 1-A filings. The DeLonge email is
+the weakest-sourced entry in the set (self-attestation about
+Roswell material and Wright-Patterson AFB, not independently
+verified), and placing it at position 1 risks a chronological
+convention being read as an epistemic endorsement.
+
+The v2 cleanup had independently flagged this risk and tightened
+the q5 header to "DeLonge email to Podesta — claim-of-record
+regarding McCasland, Roswell material, and Wright-Patterson AFB
+(claim made by DeLonge; not independently verified)". That
+in-header framing means the weakest attestation carries its own
+epistemic hedge at the top of the passage, independent of list
+position.
+
+**Convention to codify:**
+
+1. **Chronological ordering is the corpus default** for Key
+   Passages across all node types that support `statement_date`.
+   Same rule as the explicit hearing Key Testimony rule — extend
+   the scope clause in `schema.yaml` to cover all Key-Passages
+   sections, and cross-reference the behavior in
+   `conventions.md`.
+2. **`statement_date` should be universally populated** on quotes
+   whenever the source attests a date. Partial population produces
+   mixed-order rendering that confuses readers; a fully-populated
+   artifact produces clean chronology. Consider promoting
+   `statement_date` from optional to required where the source
+   has a date (validate-research.py can warn when a quote has no
+   statement_date but the source has an attested date).
+3. **In-header epistemic flagging is the hedge for weak
+   attestations** that would otherwise claim position 1 purely on
+   chronology. The convention: when a quote's evidentiary weight
+   is meaningfully below the median for its artifact (claim-of-
+   record, self-attested, secondary-source, contested), the
+   `significance` header carries an explicit hedge phrase —
+   "claim made by X; not independently verified" /
+   "claim-of-record" / "self-attested, contested" — so readers
+   see the epistemic framing before they read the quote text.
+   No schema change; discipline at the contributor layer.
+
+**Scope note.** Rule 1 is a documentation change (schema.yaml
+comment clarification + a `conventions.md` section on Key Passages
+ordering). Rule 2 is a schema policy decision (whether to promote
+`statement_date` from optional to required-when-attested, and
+whether to add a validate-research.py warning). Rule 3 is a
+contributor-discipline convention — codifying the hedge-phrase
+pattern with examples in `conventions.md`. All three address the
+same emergent behavior and should land in a single convention
+pass.
+
+**Confirm pattern before codifying.** TTSA v3 surfaced the
+behavior; one more organization-node audit (with weak-attestation
+quotes and `statement_date` populated) would confirm the
+hedge-phrase convention holds generally before freezing it in
+`conventions.md`. If the next audit produces a different
+ordering concern, revisit.
+
+Surfaced: TTSA v3 (2026-04-23) — q5 DeLonge-Podesta email
+promoted from position 5 to position 1 after `statement_date`
+adoption; hedged in-header in the same commit.
