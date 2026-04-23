@@ -233,10 +233,17 @@ def parse_date_token(s):
     # Strip typical non-date tokens
     if s.lower() in {"—", "-", "n/a", "undated", "tbd", "present", "ongoing", ""}:
         return None
-    # Range: take the left side
+    # Range: take the left side. If the left side is empty (end-only
+    # period rendered as "– 2021" — signals bracketed end with unknown
+    # start, e.g., "former X" attestation without a specific start date),
+    # take the right side instead so the row still sorts by its attested
+    # end date.
     for sep in _DATE_RANGE_SEPARATORS:
         if sep in s:
-            s = s.split(sep, 1)[0].strip()
+            left, _, right = s.partition(sep)
+            left = left.strip()
+            right = right.strip()
+            s = left if left else right
             break
     m = re.match(r"^(\d{4})(?:-(\d{1,2})(?:-(\d{1,2}))?)?", s)
     if m:

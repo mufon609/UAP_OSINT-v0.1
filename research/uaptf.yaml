@@ -4,19 +4,19 @@ schema_version: 1
 target_node: organizations/uaptf
 status: active
 created: '2026-04-20'
-description: 'The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force chartered by the Naval Intelligence Activity ([`/organizations/nia`]) and operating at the [`/organizations/oni`]. Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) approved the establishment. DoD press release, August 14, 2020: "Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF." The Charter primary-source-attests that the Naval Intelligence Activity was directed to lead the UAP Task Force, and that Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity — establishing NIA as the chartering authority distinct from ONI as operating location.
+description: 'The Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]) was a [`/organizations/us-navy`]-led task force chartered by the Naval Intelligence Activity ([`/organizations/nia`]) and operating at the [`/organizations/oni`]. Deputy Secretary of Defense David L. Norquist ([`/people/david-norquist`]) approved the establishment. DoD press release, August 14, 2020: "Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF)" — "The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF." The Charter states that the Naval Intelligence Activity was directed to lead the UAP Task Force, and that Leadership of the Task Force will be designated by the Director of the Naval Intelligence Activity — establishing NIA as the chartering authority distinct from ONI as operating location.
 
 
   The UAP Security Classification Guide (ID# 04-030, Naval Intelligence Activity ([`/organizations/nia`]), April 16, 2020) names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as its subject — four months before the DoD press release of August 14, 2020. The UAPTF Charter, dated September 1, 2020, describes the Task Force as "Congressionally mandated, Deputy Secretary of Defense directed" and its Purpose as "to create a single entity tasked with working across the Department of Defense" with the Intelligence Community and the Interagency "to develop and execute plans to collect, exploit, and analyze operational and scientific and technical data" on UAP.
 
 
-  UAPTF drafted the June 25, 2021 [`/documents/odni-preliminary-assessment-2021`] with "the ODNI National Intelligence Manager for Aviation" and "input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council." The contributor list in the Preliminary Assessment as published contains a duplicated "NGA" entry (appearing before NSA and after NOAA) — preserved as source-attested rather than corrected. Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 ("Advanced Aerial Threats" section) directed the DNI to submit the UAP report within 180 days of enactment.
+  UAPTF drafted the June 25, 2021 [`/documents/odni-preliminary-assessment-2021`] with "the ODNI National Intelligence Manager for Aviation" and "input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council." The input list in the Preliminary Assessment as published names "NGA" two times (once before NSA and once after NOAA); shown here as it appears in the source. Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 ("Advanced Aerial Threats" section) directed the DNI to submit the UAP report within 180 days of enactment.
 
 
-  Timeline tension — Grusch''s sworn written testimony to the House Oversight Committee attests his UAPTF membership from 2019 to 2021 in his NRO reservist capacity, but UAPTF''s formal establishment per the Norquist approval is August 4, 2020; the April 16, 2020 UAP Security Classification Guide also predates the public August 2020 announcement. Both primary-source datapoints corroborate a pre-2020 informal task force or ONI UAP cell that was retroactively formalized as UAPTF in August 2020, rather than a stand-up from scratch.
+  Start date difference — Grusch''s written testimony to the House Oversight Committee states his UAPTF membership from 2019 to 2021 in his NRO reservist capacity, but UAPTF''s formal establishment per the Norquist approval is August 4, 2020; the April 16, 2020 UAP Security Classification Guide also comes before the public August 2020 establishment. Both source records point to an informal task force or ONI UAP cell operating before 2020 that was later formally named UAPTF in August 2020, rather than a stand-up from scratch.
 
 
-  UAPTF''s lifecycle ended in two stages. First, the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established November 23, 2021 to succeed UAPTF per the Hicks AOIMSG-establishment memorandum — the functional transfer point; AARO Historical Record Report Volume I (March 2024) puts the UAPTF lifecycle at August 2020 through November 2021. Second, on July 15, 2022, the Hicks AARO-establishment memorandum formally directed the Secretary of the Navy to disestablish UAPTF "no later than the date the AARO is established" and to "support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO"; the Historical Record Report gives the formal AARO establishment date as July 15, 2022, with July 20, 2022 as the public announcement date. AOIMSG had not achieved initial operating capability before the FY2022 NDAA legislation renamed it to AARO with an expanded mission set, making AARO ([`/organizations/aaro`]) the downstream successor in the UAPTF → AOIMSG → AARO succession chain; AATIP ([`/organizations/aatip`]) is the predecessor per the Historical Record Report''s predecessor-organization framing.
+  UAPTF ended in two stages. First, the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established November 23, 2021 to succeed UAPTF per the Hicks AOIMSG establishment memorandum; AARO Historical Record Report Volume I (March 2024) gives the UAPTF period as August 2020 through November 2021. Second, on July 15, 2022, the Hicks AARO establishment memorandum formally directed the Secretary of the Navy to disestablish UAPTF "no later than the date the AARO is established" and to "support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO"; the Historical Record Report gives the formal AARO establishment date as July 15, 2022, with July 20, 2022 as the public release date. AOIMSG had not achieved initial operating capability before the FY2022 NDAA legislation renamed it to AARO with an expanded mission set, making AARO ([`/organizations/aaro`]) the later successor in the UAPTF → AOIMSG → AARO chain; AATIP ([`/organizations/aatip`]) is the predecessor per the Historical Record Report.
 
 
   DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "former Office of Naval Intelligence senior civilian John Stratton was leading the effort and informally referred to Dr. Taylor as his chief scientist". Stratton ([`/people/jay-stratton`]) is listed by Americans for Safe Aerospace as "Ex Director, UAP Task Force". Dr. Travis Taylor ([`/people/travis-taylor`]) — a U.S. Army Space and Missile Defense Command employee on time-limited assignment to UAPTF.
@@ -74,6 +74,9 @@ primary_sources:
 - path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
   format: html
   extracted_text_path: /tmp/scratch-uaptf-9.txt
+- path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-uaptf-grusch-testimony.txt
 - path: news/safeaerospace-home-20260420.html
   format: html
   extracted_text_path: /tmp/scratch-uaptf-10.txt
@@ -303,7 +306,7 @@ key_personnel:
   source:
     path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
     location: A1 response from DoD spokesperson Susan Gough
-  note: DoD PA attribution via Gough statement is the strongest on-record government attestation. Corroborated by Americans for Safe Aerospace advisors listing ("Ex Director, UAP Task Force"). Exact start date not specified by primary sources archived here; period_end 2021 bracketed conservatively on the DoD PA statement's past-tense "was leading" language (June 29, 2022 statement describes Stratton as former Office of Naval Intelligence senior civilian who was leading the effort at an unspecified prior point).
+  note: DoD Public Affairs statement via Gough is the strongest government source for the role. Americans for Safe Aerospace advisors page supports it ("Ex Director, UAP Task Force"). Exact start date is not given in the sources this page has cited. The 2021 end reflects the "was leading" language in the Gough statement (June 29, 2022), which describes Stratton as former Office of Naval Intelligence senior civilian who was leading the effort at an earlier point.
 - id: kp2
   added_date: '2026-04-20'
   person_path: /people/travis-taylor
@@ -323,7 +326,7 @@ key_personnel:
   source:
     path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
     location: Opening ¶8
-  note: Grusch's sworn written testimony attests "I was a member of the UAPTF from 2019-2021" in his NRO reservist capacity. The 2019 start date predates UAPTF's formal August 4, 2020 establishment by approximately one year, indicating either an informal pre-2020 task force / ONI UAP cell that was retroactively formalized as UAPTF, or that Grusch testified to continuous Task-Force-equivalent membership spanning the informal-to-formal transition. The April 16, 2020 UAP Security Classification Guide also predates the public August 2020 establishment, corroborating a pre-2020 operational lineage.
+  note: Grusch's written testimony states "I was a member of the UAPTF from 2019-2021" in his NRO reservist capacity. The 2019 start date comes before UAPTF's formal August 4, 2020 establishment by approximately one year, which points to either an informal task force or ONI UAP cell operating before 2020 that was later formally named UAPTF, or that Grusch testified to equivalent membership over the change from informal to formal. The April 16, 2020 UAP Security Classification Guide also comes before the public August 2020 establishment, supporting an operational record that began before 2020.
 - id: kp4
   added_date: '2026-04-22'
   person_path: /people/karl-nell
@@ -334,7 +337,7 @@ key_personnel:
   source:
     path: news/thedebrief-grusch-2023.html
     location: The Debrief article, June 5, 2023, body
-  note: Retired Army Colonel and current aerospace executive. Per The Debrief's June 5, 2023 article by Leslie Kean and Ralph Blumenthal, Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there. The Army-side liaison role is distinct from the Navy-led directorship under Stratton.
+  note: Retired Army Colonel and current aerospace executive. Per The Debrief's June 5, 2023 article by Leslie Kean and Ralph Blumenthal, Nell served as the Army's liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there. The Army liaison role is separate from the director role under Stratton (Navy).
 org_relationships:
 - id: or1
   added_date: '2026-04-20'
@@ -400,6 +403,14 @@ org_relationships:
     path: government/aaro-hrr-volume-1-20240308.pdf
     location: AARO HRR Volume I, Section IV predecessor-succession chain
   note: AARO HRR Volume I (March 2024) officially catalogs the predecessor-succession chain as AAWSAP/AATIP (2009-2012) → UAPTF (August 2020 - November 2021) → AOIMSG/AOIMEXEC (November 2021 - June 2022) → AARO (Established July 15, 2022). AARO's published record refers to "AARO and its predecessor organizations" framing.
+- id: or9
+  added_date: '2026-04-22'
+  organization_path: /organizations/uap-excom
+  relationship_type: other
+  source:
+    path: government/blackvault-uaptf-charter-foia-20250422.pdf
+    location: UAPTF Charter, p.2, UAP Task Force Director responsibilities section
+  note: UAP Executive Steering Committee (EXCOM) — senior oversight body sitting above UAPTF in the reporting chain, primary-source-attested by the UAPTF Charter (see q18). The Charter specifies UAPTF provides periodic updates via chain-of-command to EXCOM to support the EXCOM's oversight mission. Distinct from the USD(I&S) cognizant-authority relationship (or6) and the Navy lead-department relationship (or5) — EXCOM sits at the UAP-specific governance layer.
 timeline:
 - id: t1
   added_date: '2026-04-20'
@@ -587,7 +598,7 @@ rumors:
   observed_sources:
   - Americans for Safe Aerospace advisor listing (non-.gov; Stratton is a listed advisor to the same organization)
   - SALT speaker bio (salt.org); The Debrief Kean/Blumenthal coverage
-  note: Widely attested across secondary sources but not in primary sources archived here. Registering the claim structurally while the primary-source gap remains open (see research_gap g4)
+  note: Widely attested across secondary sources but not in the primary sources this artifact has cited. Logged here while the primary-source gap remains open.
 - id: r2
   added_date: '2026-04-20'
   claim: UAPTF was deliberately under-resourced and denied access to pre-existing compartmented UAP programs within the U.S. Government

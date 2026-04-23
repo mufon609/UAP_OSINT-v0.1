@@ -204,3 +204,89 @@ Surfaced: Grusch post-rebuild architectural discussion (2026-04-22) —
 quotes to hearing-event / transcript nodes so that investigators
 looking for just a subject's Timeline or Relationships aren't scrolling
 past a full testimony register.
+
+---
+
+### 17. Table renderers drop the `note` field across structured sections
+
+Every relationship-bearing / synthesis-content-bearing list section in
+a research artifact carries a `note` field that captures source-derived
+nuance — oversight vs. parent-chartering relationships, direct vs.
+downstream succession, role-evolution context, ownership-transition
+rationale, contract-lifecycle framing. The node-body renderers emit
+the row's structured fields (e.g., Organization | Relationship |
+Source) as a table cell and drop the `note` content. The evidentiary
+nuance exists in the artifact; the rendered node hides it.
+
+**Affected sections** (non-exhaustive — every list section with a
+`note` entry field rendered as a table):
+
+- `org_relationships.note`
+- `key_personnel.note`
+- `contracts.note`
+- `ownership_timeline.note`
+- `uap_scope_activity.note`
+- `affiliations[].note` (person nodes)
+- `relationships[].note` (person-to-person)
+- `location_relationships[].note`
+
+**Concrete consequence** — UAPTF v7 audit (2026-04-23). The AARO
+relationship entry `or2` carries a note stating *"AARO is the
+downstream successor in the chain — UAPTF → AOIMSG (Nov 2021) → AARO.
+The primary-direct-successor relationship to UAPTF is or1 (AOIMSG);
+this entry captures the downstream succession chain terminus."* The
+EXCOM entry `or9` carries *"senior oversight body sitting above UAPTF
+in the reporting chain, primary-source-attested by the UAPTF Charter."*
+Both rows render as bare `other` relationship type with a source path;
+the rendered table gives readers no distinction between AARO (downstream
+successor via rename), EXCOM (oversight body per Charter), US Navy
+(lead department), and OSD (cognizant authority) — all four display
+identically. The audit summary: *"the prose tells a story the
+structured data doesn't."*
+
+**Design decisions for the redesign pass:**
+
+1. **Display convention.** Column-wise 4th-column "Notes" header vs.
+   inline-under-row prose (indented paragraph below each row). Notes
+   run 1–3 sentences in practice; cell treatment pushes long notes
+   into unreadable wrapping on narrow screens. Inline-below reads more
+   naturally for the prose shape `note` actually carries. Recommend
+   inline-below; confirm once implementation is prototyped.
+2. **Truncation policy.** Some notes (or2, or4, or6 in uaptf; kp1b /
+   kp9b in ttsa) run multi-sentence. Options: full render, soft
+   char cap with expand, first-sentence-only at render with link to
+   artifact. For an evidentiary repo full render is probably right —
+   codify the convention once rather than per-section.
+3. **Backlog-stub ghosting** (orthogonal but adjacent). If a
+   note-bearing row references an unbuilt stub (e.g., UAPTF's or9
+   → `/organizations/uap-excom`), the renderer could italicize /
+   ghost the row so click-through expectations are calibrated. Cheap
+   to include if the renderer is being touched anyway.
+4. **Enum-extension alternative considered and deferred.** The
+   narrower fix — extend `org_relationships.relationship_type`
+   with `downstream-successor`, `oversight`, `reporting-body`, etc. —
+   was rejected because (a) the enum grows indefinitely as each new
+   edge nuance surfaces, (b) each addition is a schema commitment
+   made in advance of usage evidence, and (c) rendering the existing
+   `note` field achieves the same reader-visible outcome without
+   schema prescription. Note rendering does NOT foreclose future
+   enum tightening — if notes begin recurring across many edges
+   (e.g., fifteen rows saying "oversight body per Charter"), that
+   becomes evidence-driven justification for an enum addition.
+5. **Parallel to end-only-period rendering** (`period: – 2021` for
+   bracketed end-with-unknown-start, landed 2026-04-22). Both are
+   renderer passes over artifact content the structured data already
+   contains. If the renderer is touched broadly, grouping related
+   polish (column alignment, sort stability, header formatting) into
+   one pass reduces churn.
+
+**Scope note.** This item is corpus-wide, not UAPTF-specific. The
+UAPTF v7 audit surfaced it as a concrete example but every
+organization, location, person, and gov-contractor node currently
+carries `note` fields invisible to readers. A single renderer pass
+closes the gap for every node built to date and every node that
+will ever be built; no per-node remediation required.
+
+Surfaced: UAPTF v7 audit (2026-04-23) — AARO and EXCOM rows flagged
+as displaying identically to `other`-typed edges despite the
+artifact carrying distinctive source-derived framing for both.

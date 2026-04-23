@@ -504,7 +504,12 @@ def _format_period(entry):
     end = entry.get("period_end") or ""
     if start and end:
         return f"{start} – {end}"
-    return start or end or ""
+    if end and not start:
+        # End-only: convention is "– {end}" to signal bracketed end with
+        # unknown start (primary source gives an upper bound via past-tense
+        # language like "former X" without a specific departure date).
+        return f"– {end}"
+    return start or ""
 
 
 def render_affiliations(artifact):

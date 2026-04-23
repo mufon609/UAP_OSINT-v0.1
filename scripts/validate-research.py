@@ -1909,7 +1909,12 @@ def extract_significant_tokens(text):
     # _clean_html_for_text.
     text = html.unescape(str(text))
     text = re.sub(r"\[`/[^`]+`\]", "", text)
-    text = re.sub(r"[*_`]", "", text)
+    # Strip markdown emphasis / code-fence chars; replace with space so
+    # underscore-separated identifiers (`period_start`, `FY_2021`) don't
+    # collapse into a single unmatchable token. Emphasis markers always
+    # sit at word boundaries, so replacing with space is semantically
+    # identical to stripping for the emphasis case.
+    text = re.sub(r"[*_`]", " ", text)
     # Typographic-dash handling diverges from the verbatim-quote check
     # by design. The verbatim-quote check is substring-matching quote
     # text — there, em-dash and en-dash both normalize to ASCII hyphen
@@ -2017,6 +2022,22 @@ def check_prose_drift(rel, data, target_type):
         issues.extend(_judge_drift(rel, field, prose_tokens, unmatched))
 
     # --- Per-entry prose fields ---
+    # Pooled against the union of primary_sources[] — same rule as top-
+    # level synthesis prose. Rationale: per-entry synthesis notes
+    # (key_personnel.note, contracts.note, ownership_timeline.note, etc.)
+    # legitimately narrate across multiple filings / sources the artifact
+    # cites, because role transitions, ownership chains, and contract
+    # lifecycles span multiple primary-source documents. Scoping to the
+    # entry's single cited source produced false positives on legitimate
+    # cross-source synthesis (e.g., a kp entry citing the 2017 filing
+    # for the original role, with a note describing the 2022 transition
+    # attested by a different 1-K already in primary_sources[]). Uniform
+    # union scoping across all synthesis prose — top-level and per-entry —
+    # aligns with the single-uniform-rule principle for validator checks.
+    # The per-entry source.path still anchors the row's STRUCTURED fact
+    # (role, period, flagged), which is what the entry asserts; the note
+    # is contributor synthesis about that row and may draw on any of the
+    # artifact's committed sources.
     for list_key, entry_field in PROSE_ENTRY_FIELDS_BY_TYPE.get(target_type, []):
         for i, entry in enumerate(_entries(data, list_key)):
             if not isinstance(entry, dict):
@@ -2025,17 +2046,7 @@ def check_prose_drift(rel, data, target_type):
             prose_tokens = extract_significant_tokens(prose)
             if not prose_tokens:
                 continue
-            # Source-pool resolution differs by section. Most per-entry
-            # prose fields use the entry's own `source.path` (timeline
-            # events, affiliation roles, witnesses_testimony notes, etc.).
-            src = entry.get("source") or {}
-            src_path = src.get("path")
-            if not src_path:
-                continue
-            source_tokens = load_source_tokens(src_path)
-            if source_tokens is None:
-                continue  # source-extraction failure already warned at top
-            unmatched = prose_tokens - source_tokens
+            unmatched = prose_tokens - top_level_pool
             issues.extend(_judge_drift(
                 rel,
                 f"{list_key}[{i}] ({entry.get('id', '?')!r}) {entry_field}",
