@@ -151,6 +151,16 @@ quotes:
   context: Written testimony, House Oversight Committee
   observation_type: direct
   statement_date: '2023-07-26'
+- id: q10
+  added_date: '2026-04-23'
+  text: It was this organization that pressed the issue with leading Industry experts and USG officials, worked with Leslie Keane, Ralph Blumenthal and Helene Cooper to publish the articles in the NYT in Dec 2017 admitting the USG was looking at UAPs and removed the Stigma of the UFO topic which led to us being here today.
+  source:
+    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+    location: lines 80-83
+  significance: TTSA-NYT coordination chain — TTSA worked with NYT journalists Leslie Kean (spelled "Keane" in source; see nq2), Ralph Blumenthal, and Helene Cooper to publish the December 2017 articles on the USG UAP program
+  context: Written testimony, House Oversight Committee
+  observation_type: relayed
+  statement_date: '2023-07-26'
 timeline:
 - id: t1
   added_date: '2026-04-19'
@@ -190,7 +200,7 @@ timeline:
 - id: t5
   added_date: '2026-04-19'
   date: 2017-12
-  event: NYT articles on USG UAP program published (Leslie Kean, Ralph Blumenthal, Helene Cooper) — Fravor's 2023 testimony recounts the TTSA-to-NYT coordination chain that led to these articles, not a direct Fravor action
+  event: TTSA worked with NYT journalists Leslie Kean, Ralph Blumenthal, and Helene Cooper on the December 2017 articles about the USG UAP program, per Fravor's 2023 House Oversight Statement
   category: publication
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
@@ -347,4 +357,12 @@ naming_quirks:
   source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   resolution: preserve-as-sic-in-quotes
   note: Source spells the TTSA co-founder's surname as "Delonge"; canonical form "DeLonge" is used elsewhere in the repository (prose sections + person node). Quote text preserves the source spelling verbatim.
+- id: nq2
+  added_date: '2026-04-23'
+  observed: Leslie Keane
+  canonical: Leslie Kean
+  location: line 81
+  source_path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: Source spells the NYT journalist's surname as "Keane"; canonical form is "Leslie Kean" (matches her own byline on the December 2017 NYT articles and on her Debrief-era work). Quote text (q10) preserves the source spelling verbatim.
 rumors: []

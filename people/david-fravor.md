@@ -133,6 +133,15 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 9-10 |
 
+> It was this organization that pressed the issue with leading Industry experts and USG officials, worked with Leslie Keane, Ralph Blumenthal and Helene Cooper to publish the articles in the NYT in Dec 2017 admitting the USG was looking at UAPs and removed the Stigma of the UFO topic which led to us being here today.
+
+| Field | Value |
+|---|---|
+| Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
+| Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | lines 80-83 |
+
 ---
 
 ## Timeline
@@ -143,7 +152,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 | 2004-11 | USS Nimitz Tic Tac encounter | observation | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/events/2004-nimitz-encounter`] |
 | 2009 | Contacted by Jay Stratton for investigation of the 2004 encounter | other | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/people/jay-stratton`] |
 | 2016 | Contacted by Luis Elizondo, shortly after Alex Dietrich's 2016 outreach to Fravor | other | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/people/luis-elizondo`] |
-| 2017-12 | NYT articles on USG UAP program published (Leslie Kean, Ralph Blumenthal, Helene Cooper) — Fravor's 2023 testimony recounts the TTSA-to-NYT coordination chain that led to these articles, not a direct Fravor action | publication | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| 2017-12 | TTSA worked with NYT journalists Leslie Kean, Ralph Blumenthal, and Helene Cooper on the December 2017 articles about the USG UAP program, per Fravor's 2023 House Oversight Statement | publication | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
 | 2023-07-26 | Written testimony submitted to House Oversight Subcommittee | testimony | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/documents/written-testimony-fravor-2023`] |
 
 ---
