@@ -22,7 +22,7 @@ created: 2026-04-21
 
 ## Background
 
-Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former F/A-18F strike fighter pilot. She commissioned through the NROTC scholarship at George Washington University in May 2001 and served 20 years including two combat deployments in support of Operation Iraqi Freedom and Operation Enduring Freedom. After retirement she has held faculty appointments at the U.S. Naval Academy (Department of Leadership, Ethics and Law), the consortium of schools in Washington DC (Georgetown, George Washington, Howard, and Catholic Universities), and the University of Colorado Boulder (School of Engineering); she currently serves as Interim Chief Human Resources Officer at Syracuse University.
+Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former F/A-18F strike fighter pilot. She commissioned through the NROTC scholarship at George Washington University in May 2001 and served 20 years including two combat deployments during her squadron tours in support of Operation Iraqi Freedom and Operation Enduring Freedom, and a 2010 yearlong boots-on-ground assignment as an infrastructure reconstruction engineer in Ghazni, Afghanistan. After retirement she has held faculty appointments at the U.S. Naval Academy (Department of Leadership, Ethics and Law), the consortium of schools in Washington DC (Georgetown, George Washington, Howard, and Catholic Universities), and the University of Colorado Boulder (School of Engineering); she currently serves as Interim Chief Human Resources Officer at Syracuse University.
 
 ---
 
@@ -34,7 +34,7 @@ Additional first-hand witnesses include the crew of the subsequent flight — Ch
 
 She had been in contact with the Office of Naval Intelligence ([`/organizations/oni`]) and Pentagon UAP investigators since about 2009 — a one-way flow in which they called her in to answer questions about the encounter and shared material from other incidents — and only spoke publicly for the first time on the May 16, 2021 CBS 60 Minutes broadcast.
 
-Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 2022, and joined Americans for Safe Aerospace as an Advisor at its launch in 2023. In her February 2023 opinion piece in The Debrief ([`/organizations/the-debrief`]) she wrote that 'These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.' She was fortunate to attend the first meeting of the NASA UAP Independent Study Team ([`/organizations/nasa`]) in late 2022.
+Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 2022, and joined Americans for Safe Aerospace as an Advisor at its launch in 2023. She published an opinion piece in The Debrief ([`/organizations/the-debrief`]) in February 2023. She was fortunate to attend the first meeting of the NASA UAP Independent Study Team ([`/organizations/nasa`]).
 
 ---
 
@@ -46,9 +46,10 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|---|---|
 | [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html |
 | [`/organizations/uss-nimitz`] | Deployed aboard during 2004 workup cycle | 2004 – 2004 | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |
-| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 – 2007 | news/enigmalabs-dietrich-advisor-announcement.html |
-| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html |
+| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 | news/enigmalabs-dietrich-advisor-announcement.html |
+| [`/organizations/cu-boulder`] | Adjunct Instructor (Engineering Leadership Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html |
 | [`/organizations/enigma-labs`] | First advisor (unpaid) | 2022-11-14 | news/enigmalabs-dietrich-advisor-announcement.html |
+| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2023 | news/cu-boulder-emp-dietrich-bio.html |
 | [`/organizations/americans-for-safe-aerospace`] | Advisor | 2023-06 | government/safeaerospace-home-20230602.html |
 | [`/organizations/usna`] | Military Professor (Department of Leadership, Ethics and Law) |  | news/cu-boulder-emp-dietrich-bio.html |
 | [`/organizations/gwu`] | Assistant Professor of Naval Science |  | news/enigmalabs-dietrich-advisor-announcement.html |
@@ -317,6 +318,15 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 166-167 |
 
+> [55:28] another single aircraft launched uh with Chad and the back seat and uh and his Pilot they looked for found and recorded the Fleer footage uh that we believe to be the same thing uh that the same Tic Tac that we encountered
+
+| Field | Value |
+|---|---|
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
+| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | lines 449-451 |
+
 > My colleagues and I encountered something we could not explain: an anomalous flying object in broad daylight against a clear blue sky and calm waters.
 
 | Field | Value |
@@ -369,7 +379,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | paragraph near article start |
+| Location | line 1247 |
 
 > She logged more than 1,250 flight hours, 375 carrier-arrested landings, and was awarded a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom (OIF) and Operation Enduring Freedom (OEF). She was also awarded a Bronze Star medal for a boots-on-ground deployment to Afghanistan in 2010.
 
@@ -453,7 +463,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | 2004-07 | Joined Strike Fighter Squadron 41 (VFA-41 Black Aces) as a new pilot fresh out of flight school | role | transcripts/merged-podcast-014-dietrich-2023-downloaded.md | [`/organizations/vfa-41`] |
 | 2004-11-14 | USS Nimitz Tic Tac UAP encounter — second pilot in the two-ship F/A-18F flight, on the wing of Cmdr. Dave Fravor | observation | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html | [`/events/2004-nimitz-encounter`] |
 | 2009 | Office of Naval Intelligence and Pentagon UAP investigators began contacting her about the encounter (one-way flow); per her account on When It Mattered podcast | other | transcripts/when-it-mattered-55-dietrich-2021.pdf |  |
-| 2010 | Yearlong boots-on-ground deployment to Ghazni Afghanistan as an infrastructure reconstruction engineer | role | news/debrief-dietrich-cooperation-uap-opinion.html |  |
+| 2010 | Yearlong boots-on-ground assignment as an infrastructure reconstruction engineer in Ghazni, Afghanistan (per CU Boulder faculty bio; Dietrich describes the role as "reconstruction team engineer in Ghazni" on the When It Mattered podcast) | role | news/cu-boulder-emp-dietrich-bio.html |  |
 | 2016 | Contacted Cmdr. Dave Fravor and asked if he had been contacted about the incident after 2009; relayed that she had been invited to the Pentagon multiple times to discuss the event | other | government/oversight-house-gov-fravor-written-testimony-20230726.pdf | [`/people/david-fravor`] |
 | 2017 | Pentagon report including her name was released and posted on the internet alongside the December 2017 New York Times article; she describes this event as being 'doxed' | incident | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md |  |
 | 2020 | Retired from the U.S. Navy after a 20-year career as a Naval officer and strike fighter pilot | role | news/debrief-dietrich-cooperation-uap-opinion.html |  |
@@ -479,7 +489,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Person | Relationship |
 |---|---|
 | [`/people/david-fravor`] | Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing as the second pilot in the two-ship F/A-18F flight |
-| [`/people/chad-underwood`] | Back-seater on the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object; Dietrich identified him by name on the Somewhere in the Skies podcast and watched the original tape with her squadron aboard the USS Nimitz |
+| [`/people/chad-underwood`] | Back-seater on the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object per Dietrich's Sprague-podcast attestation (see q43); NYMag 2019 frames Underwood as the pilot of that sortie — primary-source disagreement to be documented on the Underwood node when built |
 
 ---
 
@@ -490,13 +500,17 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | [`/people/david-fravor`] | testimonial | Flight lead in the lead F/A-18F of the same two-ship flight; observed the same Tic Tac object and named Dietrich as 'the other pilot in my flight' in his House Oversight written testimony. | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 | [`/organizations/uss-princeton`] | instrumented | Aegis SPY-1 radar on USS Princeton reacquired the object 60 miles East at the CAP point seconds after it disappeared from visual. | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
 | [`/media/flir1-video`] | documentary | Subsequent F/A-18F sortie launched after Dietrich and Fravor's flight returned captured targeting-pod video of an object Fravor and Dietrich believed was the same Tic Tac. | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
-| [`/people/chad-underwood`] | testimonial | Back-seater on the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object through the targeting pod. Named by Dietrich's own statements on the Somewhere in the Skies podcast and by Fravor's House Oversight written testimony as the pilot in that aircraft. | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| [`/people/chad-underwood`] | testimonial | On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object. Position on that aircraft is a primary-source disagreement — Dietrich attests in the Sprague podcast (q43) that Chad was in the back seat with an unnamed pilot; NYMag 2019 frames Underwood as the pilot of the sortie. Both attestations are primary; this entry cites Dietrich's attestation. | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md |
 
 ---
 
 ## Credibility Notes
 
-Dietrich is one of two witnesses who have spoken publicly about the November 14, 2004 USS Nimitz Tic Tac encounter (the other is her flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the other two members of their flight of 2 F/A-18Fs (the back-seater in each F/A-18F) have not made public statements. She personally observed and visually acquired the object during the encounter from the second F/A-18F. Her account is also documented by Fravor in the lead aircraft, by the USS Princeton Aegis combat system (which reacquired the object 60 miles East at the CAP point seconds after it disappeared), and by the FLIR video captured by another single F/A-18F — Chad Underwood ([`/people/chad-underwood`]) was in the back seat of that aircraft per Dietrich's own account — that launched after Dietrich and Fravor's flight returned. She had been in one-way contact with Pentagon UAP investigators since about 2009 — first contacted by the Office of Naval Intelligence, with later contact from the first generation AATIP program ([`/organizations/aatip`]) and AARO ([`/organizations/aaro`]) — and only spoke publicly for the first time on the May 16, 2021 CBS 60 Minutes broadcast.
+Dietrich is one of two witnesses who have spoken publicly about the November 14, 2004 USS Nimitz Tic Tac encounter (the other is her flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the other two members of their flight of 2 F/A-18Fs (the back-seater in each F/A-18F) have not made public statements. She personally observed and visually acquired the object during the encounter from the second F/A-18F.
+
+Her account is documented by Fravor in the lead aircraft, by the USS Princeton Aegis combat system (which reacquired the object 60 miles East at the CAP point seconds after it disappeared), and by the FLIR video captured by the subsequent F/A-18F that launched after Dietrich and Fravor's flight returned. Dietrich's own statement on the Somewhere in the Skies podcast places Chad Underwood ([`/people/chad-underwood`]) in the back seat of that aircraft with another pilot ("Chad and the back seat and uh and his Pilot"); the December 2019 New York Magazine interview with Underwood instead places him as the pilot of that flight.
+
+She had been in one-way contact with Pentagon UAP investigators since about 2009; the initial contact came from the Office of Naval Intelligence ([`/organizations/oni`]). Dietrich described the later contacts as her own assumption: "this ATIP being referred to in the media, the first generation being ATIP, and then the current—" (incomplete). The AATIP ([`/organizations/aatip`]) reference comes from Dietrich's own assumption; AARO ([`/organizations/aaro`]) contact does not appear in her public statements. She first spoke publicly on the May 16, 2021 CBS 60 Minutes broadcast.
 
 ---
 

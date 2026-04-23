@@ -44,6 +44,8 @@ primary_sources:
   format: pdf
 - path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
   format: transcript
+- path: news/nymag-underwood-2019.html
+  format: html
 document_intrinsic:
   full_name: Alex Dietrich
   profession: Strike fighter pilot, U.S. Navy (retired)
@@ -53,8 +55,10 @@ background: >
   Alex Dietrich is a retired U.S. Navy Lieutenant Commander and former
   F/A-18F strike fighter pilot. She commissioned through the NROTC
   scholarship at George Washington University in May 2001 and served
-  20 years including two combat deployments in support of Operation
-  Iraqi Freedom and Operation Enduring Freedom. After retirement she
+  20 years including two combat deployments during her squadron tours
+  in support of Operation Iraqi Freedom and Operation Enduring Freedom,
+  and a 2010 yearlong boots-on-ground assignment as an infrastructure
+  reconstruction engineer in Ghazni, Afghanistan. After retirement she
   has held faculty appointments at the U.S. Naval Academy (Department
   of Leadership, Ethics and Law), the consortium of schools in
   Washington DC (Georgetown, George Washington, Howard, and Catholic
@@ -70,29 +74,18 @@ uap_relevance: 'Dietrich was one of four naval aviators in the flight of 2 F/A-1
   She had been in contact with the Office of Naval Intelligence ([`/organizations/oni`]) and Pentagon UAP investigators since about 2009 — a one-way flow in which they called her in to answer questions about the encounter and shared material from other incidents — and only spoke publicly for the first time on the May 16, 2021 CBS 60 Minutes broadcast.
 
 
-  Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 2022, and joined Americans for Safe Aerospace as an Advisor at its launch in 2023. In her February 2023 opinion piece in The Debrief ([`/organizations/the-debrief`]) she wrote that ''These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.'' She was fortunate to attend the first meeting of the NASA UAP Independent Study Team ([`/organizations/nasa`]) in late 2022.
+  Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 2022, and joined Americans for Safe Aerospace as an Advisor at its launch in 2023. She published an opinion piece in The Debrief ([`/organizations/the-debrief`]) in February 2023. She was fortunate to attend the first meeting of the NASA UAP Independent Study Team ([`/organizations/nasa`]).
 
   '
-credibility_notes: >
-  Dietrich is one of two witnesses who have spoken publicly about the
-  November 14, 2004 USS Nimitz Tic Tac encounter (the other is her
-  flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the other
-  two members of their flight of 2 F/A-18Fs (the back-seater in each
-  F/A-18F) have not made public statements. She personally observed
-  and visually acquired the object during the encounter from the
-  second F/A-18F. Her account is also documented by Fravor in the
-  lead aircraft, by the USS Princeton Aegis combat system (which
-  reacquired the object 60 miles East at the CAP point seconds after
-  it disappeared), and by the FLIR video captured by another single
-  F/A-18F — Chad Underwood ([`/people/chad-underwood`]) was in the
-  back seat of that aircraft per Dietrich's own account — that
-  launched after Dietrich and Fravor's flight returned. She had been
-  in one-way contact with Pentagon UAP investigators since about 2009
-  — first contacted by the Office of Naval Intelligence, with later
-  contact from the first generation AATIP program
-  ([`/organizations/aatip`]) and AARO ([`/organizations/aaro`]) — and
-  only spoke publicly for the first time on the May 16, 2021 CBS 60
-  Minutes broadcast.
+credibility_notes: 'Dietrich is one of two witnesses who have spoken publicly about the November 14, 2004 USS Nimitz Tic Tac encounter (the other is her flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the other two members of their flight of 2 F/A-18Fs (the back-seater in each F/A-18F) have not made public statements. She personally observed and visually acquired the object during the encounter from the second F/A-18F.
+
+
+  Her account is documented by Fravor in the lead aircraft, by the USS Princeton Aegis combat system (which reacquired the object 60 miles East at the CAP point seconds after it disappeared), and by the FLIR video captured by the subsequent F/A-18F that launched after Dietrich and Fravor''s flight returned. Dietrich''s own statement on the Somewhere in the Skies podcast places Chad Underwood ([`/people/chad-underwood`]) in the back seat of that aircraft with another pilot ("Chad and the back seat and uh and his Pilot"); the December 2019 New York Magazine interview with Underwood instead places him as the pilot of that flight.
+
+
+  She had been in one-way contact with Pentagon UAP investigators since about 2009; the initial contact came from the Office of Naval Intelligence ([`/organizations/oni`]). Dietrich described the later contacts as her own assumption: "this ATIP being referred to in the media, the first generation being ATIP, and then the current—" (incomplete). The AATIP ([`/organizations/aatip`]) reference comes from Dietrich''s own assumption; AARO ([`/organizations/aaro`]) contact does not appear in her public statements. She first spoke publicly on the May 16, 2021 CBS 60 Minutes broadcast.
+
+  '
 affiliations:
 - id: a1
   added_date: '2026-04-21'
@@ -109,11 +102,10 @@ affiliations:
   organization_path: /organizations/vfa-41
   role: F/A-18F pilot
   period_start: '2004-07'
-  period_end: '2007'
   source:
     path: news/enigmalabs-dietrich-advisor-announcement.html
     location: "line 15"
-  note: Enigma Labs attests VFA-41 service 2001-2007; Dietrich self-attests squadron-join in July 2004 in the Merged Podcast interview. Discrepancy may reflect end of squadron service vs end of active duty.
+  note: Dietrich self-attests squadron-join in July 2004 on the Merged Podcast. The Enigma Labs announcement attests Navy service 2001 until 2014 and names VFA-41 as her squadron during the 2004 Nimitz encounter, but no archived primary source in this pool pins the VFA-41 end date specifically.
 - id: a3
   added_date: '2026-04-21'
   organization_path: /organizations/uss-nimitz
@@ -141,12 +133,21 @@ affiliations:
 - id: a6
   added_date: '2026-04-21'
   organization_path: /organizations/cu-boulder
-  role: Scholar in Residence (Engineering Management Program)
+  role: Adjunct Instructor (Engineering Leadership Program)
   period_start: '2022'
   source:
     path: news/cu-boulder-emp-dietrich-bio.html
     location: "line 1"
-  note: Joined CU Boulder College of Engineering faculty in 2022 as adjunct instructor in the Engineering Leadership Program; appointed Scholar in Residence to the Engineering Management Program in 2023.
+  note: Joined CU Boulder College of Engineering faculty in 2022 as an adjunct instructor in the Engineering Leadership Program.
+- id: a6b
+  added_date: '2026-04-23'
+  organization_path: /organizations/cu-boulder
+  role: Scholar in Residence (Engineering Management Program)
+  period_start: '2023'
+  source:
+    path: news/cu-boulder-emp-dietrich-bio.html
+    location: "line 1"
+  note: Appointed Scholar in Residence to the Engineering Management Program in 2023 — a separate appointment from the 2022 adjunct instructor role in the Engineering Leadership Program.
 - id: a7
   added_date: '2026-04-21'
   organization_path: /organizations/syracuse-university
@@ -197,10 +198,10 @@ relationships:
 - id: r2
   added_date: '2026-04-23'
   person_path: /people/chad-underwood
-  relationship: Back-seater on the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object; Dietrich identified him by name on the Somewhere in the Skies podcast and watched the original tape with her squadron aboard the USS Nimitz
+  relationship: Back-seater on the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object per Dietrich's Sprague-podcast attestation (see q43); NYMag 2019 frames Underwood as the pilot of that sortie — primary-source disagreement to be documented on the Underwood node when built
   source:
     path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
-    location: "lines 458-461"
+    location: "lines 449-451"
 quotes:
 - id: q1
   added_date: '2026-04-21'
@@ -648,7 +649,7 @@ quotes:
     These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.
   source:
     path: news/debrief-dietrich-cooperation-uap-opinion.html
-    location: "paragraph near article start"
+    location: "line 1247"
   context: "Self-authored op-ed in The Debrief, 2023-02-17"
   observation_type: relayed
   statement_date: '2023-02-17'
@@ -664,6 +665,17 @@ quotes:
   observation_type: relayed
   statement_date: '2023-02-17'
   significance: "Dietrich's own bio summary in her self-authored Debrief op-ed byline — the primary source for her career totals (flight hours, carrier-arrested landings) and combat awards (Combat Air Medal for 206 missions across OIF and OEF; Bronze Star for the 2010 Afghanistan deployment)."
+- id: q43
+  added_date: '2026-04-23'
+  text: |-
+    [55:28] another single aircraft launched uh with Chad and the back seat and uh and his Pilot they looked for found and recorded the Fleer footage uh that we believe to be the same thing uh that the same Tic Tac that we encountered
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "lines 449-451"
+  context: "Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)"
+  observation_type: relayed
+  statement_date: '2023'
+  significance: "Dietrich's own attestation of Chad Underwood's position on the subsequent F/A-18F sortie — Chad was in the back seat, with an unnamed pilot. She distinguishes 'Chad and the back seat' from 'his Pilot'; the framing contradicts NYMag 2019's headline framing of Underwood as 'Navy Pilot Who Filmed the Tic Tac UFO' — primary-source disagreement to be documented on the Underwood node when built."
 timeline:
 - id: t1
   added_date: '2026-04-21'
@@ -702,11 +714,11 @@ timeline:
 - id: t5
   added_date: '2026-04-21'
   date: '2010'
-  event: Yearlong boots-on-ground deployment to Ghazni Afghanistan as an infrastructure reconstruction engineer
+  event: Yearlong boots-on-ground assignment as an infrastructure reconstruction engineer in Ghazni, Afghanistan (per CU Boulder faculty bio; Dietrich describes the role as "reconstruction team engineer in Ghazni" on the When It Mattered podcast)
   category: role
   source:
-    path: news/debrief-dietrich-cooperation-uap-opinion.html
-    location: "line 66"
+    path: news/cu-boulder-emp-dietrich-bio.html
+    location: "meta description"
 - id: t6
   added_date: '2026-04-21'
   date: '2016'
@@ -865,10 +877,10 @@ corroboration_items:
   observer_path: /people/chad-underwood
   observation_type: testimonial
   source:
-    path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: "line 57"
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: "lines 449-451"
   observed_event_ref: /events/2004-nimitz-encounter
-  note: Back-seater on the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object through the targeting pod. Named by Dietrich's own statements on the Somewhere in the Skies podcast and by Fravor's House Oversight written testimony as the pilot in that aircraft.
+  note: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object. Position on that aircraft is a primary-source disagreement — Dietrich attests in the Sprague podcast (q43) that Chad was in the back seat with an unnamed pilot; NYMag 2019 frames Underwood as the pilot of the sortie. Both attestations are primary; this entry cites Dietrich's attestation.
 entities_referenced:
 - id: e1
   added_date: '2026-04-21'
@@ -881,7 +893,7 @@ entities_referenced:
   entity_type: person
   name: Chad Underwood
   wrap_path: /people/chad-underwood
-  context_summary: Pilot of the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; Dietrich watched the original tape aboard Nimitz and identified him by name on the Sprague podcast.
+  context_summary: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; Dietrich watched the original tape aboard Nimitz and identified him by name on the Sprague podcast (q43), placing him in the back seat with an unnamed pilot. NYMag 2019 frames Underwood as the pilot of that sortie — primary-source disagreement to be resolved on the Underwood node.
 - id: e3
   added_date: '2026-04-21'
   entity_type: organization
@@ -1187,6 +1199,14 @@ naming_quirks:
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
   note: YouTube auto-caption transcription error for 'churning water' or 'roiling water' (the white water disturbance Dietrich saw); appears as 'turning water' (line 479) and 'roing water' (line 484) in the same passage.
+- id: nq9
+  added_date: '2026-04-23'
+  observed: Chad and the back seat
+  canonical: Chad Underwood (primary-source disagreement — position unresolved)
+  location: "line 449"
+  source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  resolution: disputed
+  note: "Primary-source disagreement on Chad Underwood's position on the subsequent F/A-18F sortie that captured the FLIR1 video. Dietrich's own attestation on the Sprague podcast (q43) says 'Chad and the back seat... and his Pilot' — placing Chad as WSO with an unnamed pilot. NYMag 2019 (sources/news/nymag-underwood-2019.html) frames Underwood as 'Navy Pilot Who Filmed the Tic Tac UFO' in its headline and throughout its framing. Both are primary sources (Dietrich's own words vs Underwood's own interview). Not reconciled; document both on the future /people/chad-underwood node per the repo's contradictions-preserved convention."
 rumors:
 - id: rm1
   added_date: '2026-04-21'

@@ -304,6 +304,13 @@
   sha256: 8c23519c62a5717427c2d09d5ade165284421f2e5facad76a565a94774067868
   archive_status: 3
   wayback_date: '2026-03-27'
+- url: https://nymag.com/intelligencer/2019/12/tic-tac-ufo-video-q-and-a-with-navy-pilot-chad-underwood.html
+  format: html
+  status: archived
+  path: news/nymag-underwood-2019.html
+  archived_date: '2026-04-23'
+  archive_status: 1
+  sha256: c844db11711d10900747d20ef96369103dfe6d600f5f767d536fbb5e5ab9df01
 - url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/
   format: html
   status: archived
