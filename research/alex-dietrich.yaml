@@ -80,7 +80,7 @@ uap_relevance: 'Dietrich was one of four naval aviators in the flight of 2 F/A-1
 credibility_notes: 'Dietrich is one of two witnesses who have spoken publicly about the November 14, 2004 USS Nimitz Tic Tac encounter (the other is her flight lead Cmdr. Dave Fravor [`/people/david-fravor`]); the other two members of their flight of 2 F/A-18Fs (the back-seater in each F/A-18F) have not made public statements. She personally observed and visually acquired the object during the encounter from the second F/A-18F.
 
 
-  Her account is documented by Fravor in the lead aircraft, by the USS Princeton Aegis combat system (which reacquired the object 60 miles East at the CAP point seconds after it disappeared), and by the FLIR video captured by the subsequent F/A-18F that launched after Dietrich and Fravor''s flight returned. Dietrich''s own statement on the Somewhere in the Skies podcast places Chad Underwood ([`/people/chad-underwood`]) in the back seat of that aircraft with another pilot ("Chad and the back seat and uh and his Pilot"); the December 2019 New York Magazine interview with Underwood instead places him as the pilot of that flight.
+  Her account is documented by Fravor in the lead aircraft, by the USS Princeton Aegis combat system (which reacquired the object 60 miles East at the CAP point seconds after it disappeared), and by the FLIR video captured by the subsequent F/A-18F that launched after Dietrich and Fravor''s flight returned. Dietrich''s own statement on the Somewhere in the Skies podcast places Chad Underwood ([`/people/chad-underwood`]) in the back seat of that aircraft with another pilot; the December 2019 New York Magazine interview with Underwood instead places him as the pilot of that flight. Underwood''s own statement about his own role takes priority over Dietrich''s statement about another pilot''s position.
 
 
   She had been in one-way contact with Pentagon UAP investigators since about 2009; the initial contact came from the Office of Naval Intelligence ([`/organizations/oni`]). Dietrich described the later contacts as her own assumption: "this ATIP being referred to in the media, the first generation being ATIP, and then the current—" (incomplete). The AATIP ([`/organizations/aatip`]) reference comes from Dietrich''s own assumption; AARO ([`/organizations/aaro`]) contact does not appear in her public statements. She first spoke publicly on the May 16, 2021 CBS 60 Minutes broadcast.
@@ -198,7 +198,7 @@ relationships:
 - id: r2
   added_date: '2026-04-23'
   person_path: /people/chad-underwood
-  relationship: Back-seater on the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object per Dietrich's Sprague-podcast attestation (see q43); NYMag 2019 frames Underwood as the pilot of that sortie — primary-source disagreement to be documented on the Underwood node when built
+  relationship: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object — position on that aircraft has conflicting attestations (Dietrich's Sprague-podcast recollection places him as WSO; Underwood's own 2019 NYMag interview describes him as the pilot, which outranks Dietrich's recollection per the source-priority hierarchy)
   source:
     path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
     location: "lines 449-451"
@@ -714,7 +714,7 @@ timeline:
 - id: t5
   added_date: '2026-04-21'
   date: '2010'
-  event: Yearlong boots-on-ground assignment as an infrastructure reconstruction engineer in Ghazni, Afghanistan (per CU Boulder faculty bio; Dietrich describes the role as "reconstruction team engineer in Ghazni" on the When It Mattered podcast)
+  event: Yearlong boots-on-ground assignment as a provincial reconstruction team engineer in Ghazni, Afghanistan (per CU Boulder faculty bio; corroborated by the biographical intro to Dietrich's When It Mattered podcast appearance)
   category: role
   source:
     path: news/cu-boulder-emp-dietrich-bio.html
@@ -880,7 +880,7 @@ corroboration_items:
     path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
     location: "lines 449-451"
   observed_event_ref: /events/2004-nimitz-encounter
-  note: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object. Position on that aircraft is a primary-source disagreement — Dietrich attests in the Sprague podcast (q43) that Chad was in the back seat with an unnamed pilot; NYMag 2019 frames Underwood as the pilot of the sortie. Both attestations are primary; this entry cites Dietrich's attestation.
+  note: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object. Position on that aircraft has two conflicting attestations — Dietrich, on the Sprague podcast, says Chad was in the back seat with another pilot (witness recollection 19 years after the event); Underwood, in his December 2019 New York Magazine interview, describes himself as the pilot of the sortie (first-person about his own role). Per the source-priority hierarchy (subject's own words > witness recollection about that subject), Underwood's first-person account outranks Dietrich's recollection for this specific positional fact. This entry cites Dietrich's on-record statement for completeness; the future Underwood node build should resolve the position question in favor of Underwood's own account.
 entities_referenced:
 - id: e1
   added_date: '2026-04-21'
@@ -893,7 +893,7 @@ entities_referenced:
   entity_type: person
   name: Chad Underwood
   wrap_path: /people/chad-underwood
-  context_summary: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; Dietrich watched the original tape aboard Nimitz and identified him by name on the Sprague podcast (q43), placing him in the back seat with an unnamed pilot. NYMag 2019 frames Underwood as the pilot of that sortie — primary-source disagreement to be resolved on the Underwood node.
+  context_summary: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; Dietrich watched the original tape aboard Nimitz and identified him by name on the Sprague podcast, placing him in the back seat with another pilot. Underwood's own 2019 NYMag interview describes him as the pilot of the sortie; per source-priority hierarchy (first-person about own role > witness recollection), Underwood's account outranks Dietrich's. Full resolution belongs on the future Underwood node.
 - id: e3
   added_date: '2026-04-21'
   entity_type: organization
@@ -1206,7 +1206,7 @@ naming_quirks:
   location: "line 449"
   source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
   resolution: disputed
-  note: "Primary-source disagreement on Chad Underwood's position on the subsequent F/A-18F sortie that captured the FLIR1 video. Dietrich's own attestation on the Sprague podcast (q43) says 'Chad and the back seat... and his Pilot' — placing Chad as WSO with an unnamed pilot. NYMag 2019 (sources/news/nymag-underwood-2019.html) frames Underwood as 'Navy Pilot Who Filmed the Tic Tac UFO' in its headline and throughout its framing. Both are primary sources (Dietrich's own words vs Underwood's own interview). Not reconciled; document both on the future /people/chad-underwood node per the repo's contradictions-preserved convention."
+  note: "Primary-source disagreement on Chad Underwood's position on the subsequent F/A-18F sortie that captured the FLIR1 video. Dietrich's YouTube-caption transcript of the Sprague podcast reads 'with Chad and the back seat and uh and his Pilot' — the caption is noisy and the phrase may be a transcription artifact of 'Chad in the back seat'; either reading supports Dietrich's claim that Chad was the WSO with an unnamed pilot. NYMag 2019 (sources/news/nymag-underwood-2019.html) frames Underwood as 'Navy Pilot Who Filmed the Tic Tac UFO' in its headline and describes him as the pilot of that sortie throughout. Per the source-priority hierarchy (subject's own words > witness recollection about that subject), Underwood's own first-person NYMag account outranks Dietrich's recollection for this positional fact. Both attestations retained; the future /people/chad-underwood node build resolves in Underwood's favor."
 rumors:
 - id: rm1
   added_date: '2026-04-21'
