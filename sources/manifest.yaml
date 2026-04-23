@@ -520,6 +520,15 @@
   archive_status: 3
   wayback_date: '2025-02-28'
   note: 'Wayback Machine snapshot (2025-02-28) of TTSA''s ''TTS* Analysis on ORNL Report'' press-and-news blog post. Primary-source publication of the Puthoff/Davis internal memo submitted to TTSA''s Board of Directors on 2024-09-27 as a counter-analysis to ORNL''s April 2024 terrestrial-origin finding. Key verbatim: ''Puthoff/Davis analysis (and the ORNL analysis) did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either.'' Balances the AARO/ORNL terminal refutation with TTSA''s own on-record scientific counter-position.'
+- url: https://web.archive.org/web/20250424182225/https://www.theblackvault.com/documentarchive/foia-release-reveals-secret-charter-behind-creation-of-pentagons-uap-task-force/
+  format: html
+  status: archived
+  path: news/blackvault-uaptf-charter-foia-release-20250422.html
+  archived_date: '2026-04-22'
+  sha256: 0ad19f6d355f7bb70c3212b289b4f239ff8409e0f4f651d85a135387e14c4fe6
+  archive_status: 3
+  wayback_date: '2025-04-24'
+  note: Wayback Machine snapshot (2025-04-24) of The Black Vault article dated April 22, 2025 announcing the FOIA release of the UAPTF Charter (FOIA case DON-NAVY-2021-003140). Primary-source-adjacent reporting that names Scott Bray as Director, Naval Intelligence Activity and signatory of the September 2020 Charter plus two additional September 23, 2020 NIA memoranda directed to senior intelligence officials in the U.S. Army and U.S. Air Force. The memos document the cross-service structure envisioned for UAPTF and note 'both intelligence and operational directorates as preferred participants.' Companion reporting to the FOIA release package itself (charter PDF already archived at blackvault-uaptf-charter-foia-20250422.pdf).
 - url: https://web.archive.org/web/20260220223643/https://www.safeaerospace.org/
   format: html
   status: archived
