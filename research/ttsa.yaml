@@ -4,7 +4,7 @@ schema_version: 1
 target_node: organizations/ttsa
 status: active
 created: '2026-04-22'
-description: 'To The Stars Academy of Arts and Science Inc. ([`/organizations/ttsa`]) is a Public Benefit Corporation founded in 2017 by Tom DeLonge ([`/people/tom-delonge`]), Dr. Harold E. Puthoff ([`/people/hal-puthoff`]), and Jim Semivan ([`/people/jim-semivan`]), at 1051 S. Coast Hwy 101 Suite B, Encinitas, California ([`/locations/encinitas-california`]). The company launched a Regulation A offering qualified by the United States Securities and Exchange Commission on July 10, 2017, offering up to 10,000,000 shares of Class A Common Stock at $5.00 per share with a $50,000,000 maximum raise. TTSA acquired To The Stars, Inc. ([`/organizations/to-the-stars-inc`]), an existing business that now comprises the company''s Entertainment Division, as a wholly-owned subsidiary during formation, and organized operations into three divisions — Entertainment, Aerospace, and Science.
+description: 'To The Stars Academy of Arts and Science Inc. ([`/organizations/ttsa`]) is a Delaware Public Benefit Corporation founded in 2017 by Tom DeLonge ([`/people/tom-delonge`]), Dr. Harold E. Puthoff ([`/people/hal-puthoff`]), and Jim Semivan ([`/people/jim-semivan`]), at 1051 S. Coast Hwy 101 Suite B, Encinitas, California ([`/locations/encinitas-california`]). Its science and aerospace division was retired in the February 2021 reorganization; the Company amended its name to "To The Stars Inc." in November 2021 and now operates with a focus on entertainment. The company launched a Regulation A offering qualified by the United States Securities and Exchange Commission on July 10, 2017, offering up to 10,000,000 shares of Class A Common Stock at $5.00 per share with a $50,000,000 maximum raise. TTSA acquired To The Stars, Inc. ([`/organizations/to-the-stars-inc`]), an existing business that now comprises the company''s Entertainment Division, as a wholly-owned subsidiary during formation, and organized operations into three divisions — Entertainment, Aerospace, and Science.
 
 
   The company launched publicly on October 11, 2017. On December 16, 2017 — two months after the TTSA launch — the New York Times published an article about the Pentagon''s Advanced Aerospace Threat Identification Program ([`/organizations/aatip`]) by Helene Cooper ([`/people/helene-cooper`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Leslie Kean ([`/people/leslie-kean`]). Former Pentagon military intelligence official Luis Elizondo ([`/people/luis-elizondo`]) left his Pentagon post to join the company, describing his prior role as running "a sensitive aerospace threat identification program focusing on unidentified aerial technologies"; he served as Director of Global Security and Special Programs. Steve Justice ([`/people/steve-justice`]), a former Program Director for Advanced Systems at Lockheed Martin''s Skunk Works ([`/organizations/lockheed-martin-skunk-works`]), directed the Aerospace Division and later served as COO; Chris Mellon ([`/people/christopher-mellon`]), a former Deputy Assistant Secretary of Defense for Intelligence, served as National Security Affairs Advisor. Jim Semivan is a retired Central Intelligence Agency ([`/organizations/cia`]) Senior Intelligence Service officer. The company''s Advisory Board disclosed in the 2017 SEC filing included Chris Mellon, Adele Gilpin, Dr. Norman Kahn, Dr. Colm Kelleher ([`/people/colm-kelleher`]), Dr. Garry Nolan ([`/people/garry-nolan`]), and Dr. Paul Rapp. In 2016, an email from Tom DeLonge to John Podesta ([`/people/john-podesta`]) referenced retired USAF Lt. General William N. McCasland ([`/people/william-mccasland`]) as having helped assemble the advisory team, with DeLonge describing McCasland as the former commander of the Air Force Research Laboratory at Wright-Patterson Air Force Base ([`/organizations/wright-patterson-afb`]).
@@ -330,7 +330,7 @@ quotes:
   source:
     path: government/sec-ttsa-1k-partii-20250417.html
     location: SEC 1-K FY2024, AARO / ORNL subsection
-  significance: TTSA's own 1-K corroboration of the TTSA → USACCDC CRADA → AARO oversight → ORNL Materials analysis chain — primary-source confirmation of the material-custody sequence from the TTSA side.
+  significance: TTSA FY2024 1-K — material-custody chain from TTSA through USACCDC CRADA to AARO oversight and ORNL analysis
   context: 'SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025'
   statement_date: '2025-04-17'
 - id: q26
@@ -340,7 +340,7 @@ quotes:
   source:
     path: government/sec-ttsa-1k-partii-20250417.html
     location: SEC 1-K FY2024, AARO / ORNL subsection
-  significance: TTSA's on-record corporate-filing account of the Puthoff/Davis September 2024 visit to ORNL and the February 2025 publication of the counter-memorandum to the TTSA board — establishes TTSA's formal not-satisfied posture toward ORNL's terrestrial-origin finding.
+  significance: TTSA FY2024 1-K — Puthoff/Davis September 2024 ORNL visit and February 2025 counter-memorandum to the TTSA Board of Directors
   context: 'SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025'
   statement_date: '2025-04-17'
 - id: q27
@@ -370,7 +370,7 @@ quotes:
   source:
     path: government/sec-ttsa-1k-partii-20250417.html
     location: SEC 1-K FY2024, Intellectual Property section
-  significance: Primary-source documentation of the dual naming — both the original "To The Stars Academy of Arts and Science" (TTSA) and the current "To The Stars" (the 2022-rebrand form) are maintained as registered trademarks. Resolves the question of whether the rebrand deprecated the Academy name.
+  significance: TTSA FY2024 1-K — both "To The Stars" and "To The Stars Academy of Arts and Science" maintained as registered trademarks after the November 2021 name amendment
   context: 'SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025'
   statement_date: '2025-04-17'
 - id: q30
@@ -390,7 +390,7 @@ quotes:
   source:
     path: news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html
     location: TTSA 'TTS* Analysis on ORNL Report' blog post, 2025-02-28, body
-  significance: TTSA's primary publication of the Puthoff/Davis counter-analysis conclusion — TTSA's scientists confirm the ORNL finding of no proof of exotic origin, while framing the finding as "did not absolutely rule it out." The on-record TTSA counter-position to AARO/ORNL's terrestrial-only conclusion.
+  significance: Puthoff/Davis counter-analysis published by TTSA — confirms no proof of exotic origin while framing as "did not absolutely rule it out"
   context: 'TTSA website blog post, ''TTS* Analysis on ORNL Report'', February 28, 2025'
   statement_date: '2025-02-28'
 - id: q32

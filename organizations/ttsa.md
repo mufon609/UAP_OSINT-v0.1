@@ -23,7 +23,7 @@ created: 2026-04-22
 
 ## Description
 
-To The Stars Academy of Arts and Science Inc. ([`/organizations/ttsa`]) is a Public Benefit Corporation founded in 2017 by Tom DeLonge ([`/people/tom-delonge`]), Dr. Harold E. Puthoff ([`/people/hal-puthoff`]), and Jim Semivan ([`/people/jim-semivan`]), at 1051 S. Coast Hwy 101 Suite B, Encinitas, California ([`/locations/encinitas-california`]). The company launched a Regulation A offering qualified by the United States Securities and Exchange Commission on July 10, 2017, offering up to 10,000,000 shares of Class A Common Stock at $5.00 per share with a $50,000,000 maximum raise. TTSA acquired To The Stars, Inc. ([`/organizations/to-the-stars-inc`]), an existing business that now comprises the company's Entertainment Division, as a wholly-owned subsidiary during formation, and organized operations into three divisions — Entertainment, Aerospace, and Science.
+To The Stars Academy of Arts and Science Inc. ([`/organizations/ttsa`]) is a Delaware Public Benefit Corporation founded in 2017 by Tom DeLonge ([`/people/tom-delonge`]), Dr. Harold E. Puthoff ([`/people/hal-puthoff`]), and Jim Semivan ([`/people/jim-semivan`]), at 1051 S. Coast Hwy 101 Suite B, Encinitas, California ([`/locations/encinitas-california`]). Its science and aerospace division was retired in the February 2021 reorganization; the Company amended its name to "To The Stars Inc." in November 2021 and now operates with a focus on entertainment. The company launched a Regulation A offering qualified by the United States Securities and Exchange Commission on July 10, 2017, offering up to 10,000,000 shares of Class A Common Stock at $5.00 per share with a $50,000,000 maximum raise. TTSA acquired To The Stars, Inc. ([`/organizations/to-the-stars-inc`]), an existing business that now comprises the company's Entertainment Division, as a wholly-owned subsidiary during formation, and organized operations into three divisions — Entertainment, Aerospace, and Science.
 
 The company launched publicly on October 11, 2017. On December 16, 2017 — two months after the TTSA launch — the New York Times published an article about the Pentagon's Advanced Aerospace Threat Identification Program ([`/organizations/aatip`]) by Helene Cooper ([`/people/helene-cooper`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]), and Leslie Kean ([`/people/leslie-kean`]). Former Pentagon military intelligence official Luis Elizondo ([`/people/luis-elizondo`]) left his Pentagon post to join the company, describing his prior role as running "a sensitive aerospace threat identification program focusing on unidentified aerial technologies"; he served as Director of Global Security and Special Programs. Steve Justice ([`/people/steve-justice`]), a former Program Director for Advanced Systems at Lockheed Martin's Skunk Works ([`/organizations/lockheed-martin-skunk-works`]), directed the Aerospace Division and later served as COO; Chris Mellon ([`/people/christopher-mellon`]), a former Deputy Assistant Secretary of Defense for Intelligence, served as National Security Affairs Advisor. Jim Semivan is a retired Central Intelligence Agency ([`/organizations/cia`]) Senior Intelligence Service officer. The company's Advisory Board disclosed in the 2017 SEC filing included Chris Mellon, Adele Gilpin, Dr. Norman Kahn, Dr. Colm Kelleher ([`/people/colm-kelleher`]), Dr. Garry Nolan ([`/people/garry-nolan`]), and Dr. Paul Rapp. In 2016, an email from Tom DeLonge to John Podesta ([`/people/john-podesta`]) referenced retired USAF Lt. General William N. McCasland ([`/people/william-mccasland`]) as having helped assemble the advisory team, with DeLonge describing McCasland as the former commander of the Air Force Research Laboratory at Wright-Patterson Air Force Base ([`/organizations/wright-patterson-afb`]).
 
@@ -532,7 +532,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-### TTSA's primary publication of the Puthoff/Davis counter-analysis conclusion — TTSA's scientists confirm the ORNL finding of no proof of exotic origin, while framing the finding as "did not absolutely rule it out." The on-record TTSA counter-position to AARO/ORNL's terrestrial-only conclusion.
+### Puthoff/Davis counter-analysis published by TTSA — confirms no proof of exotic origin while framing as "did not absolutely rule it out"
 
 > What is important about the Puthoff/Davis report, however, is that they were able to clarify aspects of the ORNL report that were not clear while also confirming that the material, natural as it may be, is still a bit of an unknown quantity.  In the end though, the Puthoff/Davis analysis (and the ORNL analysis) did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either.
 
@@ -558,7 +558,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-### TTSA's own 1-K corroboration of the TTSA → USACCDC CRADA → AARO oversight → ORNL Materials analysis chain — primary-source confirmation of the material-custody sequence from the TTSA side.
+### TTSA FY2024 1-K — material-custody chain from TTSA through USACCDC CRADA to AARO oversight and ORNL analysis
 
 > In 2022, The All-domain Anomaly Resolution Office (AARO), an office within the United States Office of the Secretary of Defense, was congressionally mandated to explore historical records of Unidentified Anomalous Phenomena ("UAP") incidents and publicly report its findings. As part of their oversight and through the CRADA, Oak Ridge National Laboratory (ORNL) was tasked with conducting the Materials analysis to assess whether the specimen is of terrestrial origin and the bismuth in the specimen could act as a terahertz waveguide.
 
@@ -571,7 +571,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-### TTSA's on-record corporate-filing account of the Puthoff/Davis September 2024 visit to ORNL and the February 2025 publication of the counter-memorandum to the TTSA board — establishes TTSA's formal not-satisfied posture toward ORNL's terrestrial-origin finding.
+### TTSA FY2024 1-K — Puthoff/Davis September 2024 ORNL visit and February 2025 counter-memorandum to the TTSA Board of Directors
 
 > In April 2024, ORNL produced a summary of findings that concluded the Materials to be terrestrial in origin and that it does not meet the theoretical requirements to function as a terahertz (THz) waveguide. The Company was pleased that the ORNL and AARO completed their analysis and while the report offers suggestions as to the possible provenance of the Mg-Bi material, it did not offer a firm conclusion as to the origin and purpose of the Materials along with other seeming anomalies.  Consequently, the Company had more questions, and in September 2024, we sent Dr. Hal Puthoff and Dr. Eric Davis, our own scientists, to meet with the laboratory to discuss the results in more detail. In February 2025, the Company published a memorandum by Dr. Hal Puthoff and Dr. Eric Davis to our board of directors on its website about their findings.
 
@@ -610,7 +610,7 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 
 ---
 
-### Primary-source documentation of the dual naming — both the original "To The Stars Academy of Arts and Science" (TTSA) and the current "To The Stars" (the 2022-rebrand form) are maintained as registered trademarks. Resolves the question of whether the rebrand deprecated the Academy name.
+### TTSA FY2024 1-K — both "To The Stars" and "To The Stars Academy of Arts and Science" maintained as registered trademarks after the November 2021 name amendment
 
 > 'To The Stars' and 'To The Stars Academy of Arts and Science' are registered trademarks of the Company.
 
