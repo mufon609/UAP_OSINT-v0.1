@@ -67,7 +67,7 @@ uap_relevance: 'From 2019 to 2021, in his [`/organizations/nro`] reservist capac
   by individuals with a longstanding track record of legitimacy and service to this country.
 
   '
-credibility_notes: 'Grusch testified under oath that he is "speaking to the facts as I have been told them," that his testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country — many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and that he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the multi-decade UAP crash retrieval and reverse engineering program — including that private defense contractors hold physical material — are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a whistleblower through the PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the Intelligence Community Inspector General ([`/organizations/icig`]); the formal filing [`/documents/grusch-ppd-19-procedural-filing`]. The filing PDF is a scan and shows multiple optical character recognition artifacts — "UAP-telated", "compatrtmented", and "appatently" appear in quoted text in place of the clean forms; preserved as they appear in the extract. Per the Debrief ([`/documents/debrief-grusch-2023`]): "The Intelligence Community Inspector General found his complaint *credible and urgent* in July 2022"; per the same article, "a summary was immediately submitted to the Director of National Intelligence, Avril Haines; the Senate Select Committee on Intelligence; and the House Permanent Select Committee on Intelligence" ([`/organizations/hpsci`]). Grusch''s July 26, 2023 written testimony received Department of Defense pre-publication review under DOPSR case 23-F-0946 ([`/documents/grusch-dopsr-request-2023`]). Grusch has "suffered retaliation" for his decision and under oath described it: "I call it administrative terrorism" — career threats against himself and colleagues who corroborated the allegations.
+credibility_notes: 'Grusch testified under oath that he is "speaking to the facts as I have been told them," that his testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country — many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and that he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the multi-decade UAP crash retrieval and reverse engineering program — including that private defense contractors hold physical material — are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a whistleblower through the PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the Intelligence Community Inspector General ([`/organizations/icig`]); the formal filing [`/documents/grusch-ppd-19-procedural-filing`]. Per the Debrief ([`/documents/debrief-grusch-2023`]): "The Intelligence Community Inspector General found his complaint *credible and urgent* in July 2022"; per the same article, "a summary was immediately submitted to the Director of National Intelligence, Avril Haines; the Senate Select Committee on Intelligence; and the House Permanent Select Committee on Intelligence" ([`/organizations/hpsci`]). Grusch''s July 26, 2023 written testimony received Department of Defense pre-publication review under DOPSR case 23-F-0946 ([`/documents/grusch-dopsr-request-2023`]). Grusch has "suffered retaliation" for his decision and under oath described it: "I call it administrative terrorism" — career threats against himself and colleagues who corroborated the allegations.
 
 
   Context. Under oath on July 26, 2023, Grusch testified that he "asked my information to be sent to the House and Senate Armed Services Committee because there are Title 10 equities at play" — House Armed Services Committee ([`/organizations/hasc`]) and Senate Armed Services Committee ([`/organizations/sasc`]) — but that "there was no smooth process to do so," a separate reporting channel from the ICIG intelligence committee channel described above. His UAPTF role began in 2019 when the UAPTF director tasked him to "identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) we needed to satisfy our congressionally mandated mission." On the Joe Rogan Experience ([`/organizations/joe-rogan-experience`]) podcast ([`/transcripts/jre-2065-grusch-2023`]), Grusch described a Spring 2021 meeting in Las Vegas with former Senate Majority Leader Harry Reid ([`/people/harry-reid`]) in which Reid said "yeah I knew we had UFO material I was denied access for decades"; in the same conversation, Grusch described the "$21 million" Reid had given "to DIA and Bigalow Aerospace" [`/organizations/bigelow-aerospace`] as funding for the "assap" program referenced in his investigation. Also on the podcast, Grusch named a specific private defense contractor — "lockie Martin" [`/organizations/lockheed-martin`] — saying the company "wanted to divest itself from this material at a specific facility that''s known to me that I provided to the Inspector General." The contractor was not named in the sworn congressional testimony.
@@ -2178,7 +2178,7 @@ quotes:
   statement_date: '2022-05-25'
 - id: q163
   added_date: '2026-04-22'
-  text: Mr. Grusch previously served as a fully cleared member of the United States (US) Government’s UAP Task Force. He has direct knowledge that certain IC elements have purposely and intentionally withheld and/or concealed UAP-telated classified information from the US Congress. He has direct knowledge that this classified information has been withheld and/or concealed by the involved IC elements to purposely and intentionally thwart legitimate Congressional oversight of the UAP Program.
+  text: Mr. Grusch previously served as a fully cleared member of the United States (US) Government’s UAP Task Force. He has direct knowledge that certain IC elements have purposely and intentionally withheld and/or concealed UAP-related classified information from the US Congress. He has direct knowledge that this classified information has been withheld and/or concealed by the involved IC elements to purposely and intentionally thwart legitimate Congressional oversight of the UAP Program.
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
     location: PPD-19 filing ¶3, adopted under oath by Grusch
@@ -2189,7 +2189,7 @@ quotes:
   statement_date: '2022-05-25'
 - id: q164
   added_date: '2026-04-22'
-  text: In July 2021, Mr. Grusch confidentially provided UAP-related classified information to the Department of Defense Inspector General (DoD IG). At that time, Mr. Grusch communicated classified information about the improper withholding and/or concealment of classified material from the US Congress by certain IC elements. Mr. Grusch believes that his identity and the fact of his UAP-telated communication(s) with the DoD IG have been disclosed to individuals and/or entities outside the DoD IG, and that he has suffered retaliation and reprisal(s) related thereto.
+  text: In July 2021, Mr. Grusch confidentially provided UAP-related classified information to the Department of Defense Inspector General (DoD IG). At that time, Mr. Grusch communicated classified information about the improper withholding and/or concealment of classified material from the US Congress by certain IC elements. Mr. Grusch believes that his identity and the fact of his UAP-related communication(s) with the DoD IG have been disclosed to individuals and/or entities outside the DoD IG, and that he has suffered retaliation and reprisal(s) related thereto.
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
     location: PPD-19 filing ¶4, adopted under oath by Grusch
@@ -2200,7 +2200,7 @@ quotes:
   statement_date: '2022-05-25'
 - id: q165
   added_date: '2026-04-22'
-  text: Since his protected disclosure(s) to the DoD IG, Mr. Grusch has been subjected to numerous adverse security clearance actions. These actions have unfairly and unjustifiably impugned his integrity, character, judgment, professionalism, and mental health. While he remains security-cleared by the NGA, his compatrtmented accesses at numerous other IC elements have been — mysteriously and appatently without plausible explanation — canceled, delayed, denied, and/or improperly obstructed.
+  text: Since his protected disclosure(s) to the DoD IG, Mr. Grusch has been subjected to numerous adverse security clearance actions. These actions have unfairly and unjustifiably impugned his integrity, character, judgment, professionalism, and mental health. While he remains security-cleared by the NGA, his compartmented accesses at numerous other IC elements have been — mysteriously and apparently without plausible explanation — canceled, delayed, denied, and/or improperly obstructed.
   source:
     path: government/grusch-ppd-19-procedural-filing.pdf
     location: PPD-19 filing ¶5, adopted under oath by Grusch
@@ -2610,30 +2610,6 @@ naming_quirks:
   source_path: transcripts/jre-2065-grusch-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
   note: YouTube auto-caption typo of "Bigelow" as "Bigalow" on the Joe Rogan Experience transcript. Appears consistently throughout the JRE transcript whenever Grusch discusses the AAWSAP-era funding. Preserve the source form in quote.text; use canonical "Bigelow Aerospace" only via wrap_path linking.
-- id: nq2
-  added_date: '2026-04-24'
-  observed: UAP-telated
-  canonical: UAP-related
-  location: PPD-19 filing ¶3 and ¶4 (scratch lines 47, 63)
-  source_path: government/grusch-ppd-19-procedural-filing.pdf
-  resolution: preserve-as-sic-in-quotes
-  note: OCR artifact in the archived PDF — scanner misread "rel" as "tel" in two instances of "UAP-related". Clean occurrences of "UAP-related" also appear in the same document (paragraph 4, paragraph 6), so the OCR is intermittent rather than systematic. Appears in quotes q163 and q164. Preserved verbatim to pass the verbatim-quote check against the archived extract.
-- id: nq3
-  added_date: '2026-04-24'
-  observed: compatrtmented
-  canonical: compartmented
-  location: PPD-19 filing ¶5 (scratch line 73)
-  source_path: government/grusch-ppd-19-procedural-filing.pdf
-  resolution: preserve-as-sic-in-quotes
-  note: OCR artifact in the archived PDF — scanner transposed "rtm" character cluster in "compartmented". Appears in quote q165. Original attorney-drafted filing almost certainly reads "compartmented"; preserved verbatim as the archived-source text.
-- id: nq4
-  added_date: '2026-04-24'
-  observed: appatently
-  canonical: apparently
-  location: PPD-19 filing ¶5 (scratch line 75)
-  source_path: government/grusch-ppd-19-procedural-filing.pdf
-  resolution: preserve-as-sic-in-quotes
-  note: OCR artifact in the archived PDF — scanner misread "ar" as "at" in "apparently". Appears in quote q165.
 - id: nq5
   added_date: '2026-04-24'
   observed: lockie Martin

@@ -86,6 +86,15 @@
   sha256: 16100657d1ae91fbb6c0ad6b7e98113c40d32275c1e7acdb83a3fb09daa48a56
   archive_status: 1
   extraction_type: ocr-scan
+- url: https://archive.org/download/grusch_icig/David-Grusch-PPD-19-Procedural-Filing_text.pdf#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/grusch-ppd-19-procedural-filing.txt
+  archived_date: '2026-04-24'
+  sha256: be09443c672ef75af0faae4c1a77801acb2ac3ac84a7f008ea81eb9319c9d9fc
+  archive_status: 1
+  wayback_skip: true
+  note: 'Contributor-produced clean-text transcription of the OCR-scanned PPD-19 procedural filing PDF (paired entry above; same path stem). Visually verified against PDF page rendering 2026-04-24. The PDF''s mupdf-pipeline text layer carries OCR artifacts ("UAP-telated", "compatrtmented", "appatently" in ¶3–5; "ate", "cottelated" in ¶6); this transcription restores the clean original forms. Validator (validate.py extract_source_text) prefers a same-stem .txt sibling over pdftotext output for PDFs flagged extraction_type=ocr-scan. Real document oddities preserved as-is: typo "200236" for ZIP "20036" in Bakaj''s address (p. 3); missing closing paren in "(k)(5(D)(ii)" of section 7. Signature glyphs (which OCR garbles to artifacts like "ICG zx" / "Cele") rendered as "[signature]" placeholders since the cursive script is not extractable text.'
 - url: https://burchett.house.gov/media/press-releases/congressman-burchetts-statement-after-uap-hearing-held-house-oversight
   format: html
   status: archived
