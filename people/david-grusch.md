@@ -22,13 +22,13 @@ created: 2026-04-20
 
 ## Background
 
-David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] (USAF) at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. USAF Active Duty: Officer in Charge, Space Control Intelligence Cell, 21st Operations Group, Peterson AFB (June 2009 – September 2011); Intelligence Flight Commander, 3d Space Experimentation Squadron, Schriever AFB (September 2011 – December 2013); Chief, Intelligence Integration Division, Space Security and Defense Program (SSDP), Reston, VA (December 2013 – March 2016). April 2016 – November 2021: Senior Intelligence Officer, [`/organizations/nro`] (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet); Corporate Security Officer (CSO) / [`/organizations/dod`]-Contracted Science and Engineering Technical Advisor (SETA) at Blue Sky Innovators Inc. November 2021 – April 2023: Senior GEOINT Capabilities Requirements Officer, NGA, Colorado Springs, CO. May 2023-Present: Chief Operating Officer (COO), The Sol Foundation. Education: Bachelor of Science Degree, Physics, Minor in German, University of Pittsburgh (2009); Master of Arts Degree with Honors, Intelligence Studies, American Military University (2012); Master of Public Administration (MPA) Degree, University of Colorado (In-Progress, 2023). Security Clearance: Active TOP SECRET//SCI with CI & LS Polygraph.
+David Charles Grusch was an intelligence officer for 14 years, in the [`/organizations/us-air-force`] (USAF) at the rank of Major and, from 2021-2023, at the [`/organizations/nga`] at the GS-15 civilian level. USAF Active Duty: Officer in Charge, Space Control Intelligence Cell, 21st Operations Group, Peterson AFB (June 2009 – September 2011); Intelligence Flight Commander, 3d Space Experimentation Squadron, Schriever AFB (September 2011 – December 2013); Chief, Intelligence Integration Division, Space Security and Defense Program (SSDP), Reston, VA (December 2013 – March 2016). April 2016 – November 2021: Senior Intelligence Officer, [`/organizations/nro`] (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet). March 2016 – November 2021: Corporate Security Officer (CSO) / [`/organizations/dod`]-Contracted Science and Engineering Technical Advisor (SETA) at Blue Sky Innovators Inc. November 2021 – April 2023: Senior GEOINT Capabilities Requirements Officer, NGA, Colorado Springs, CO. May 2023-Present: Chief Operating Officer (COO), The Sol Foundation. Education: Bachelor of Science Degree, Physics, Minor in German, University of Pittsburgh (2009); Master of Arts Degree with Honors, Intelligence Studies, American Military University (2012); Master of Public Administration (MPA) Degree, University of Colorado (In-Progress, 2023). Security Clearance: Active TOP SECRET//SCI with CI & LS Polygraph.
 
 ---
 
 ## UAP Relevance
 
-Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis (2021-2023), and a member of the [`/organizations/uaptf`] from 2019-2021 in his [`/organizations/nro`] reservist capacity, reporting to UAPTF and eventually the [`/organizations/aaro`]. In 2019 the UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) the task force needed to satisfy its congressionally mandated mission. He was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`], and he has suffered retaliation for that decision. At [`/events/2023-07-26-house-uap-hearing`], Grusch's testimony ([`/documents/written-testimony-grusch-2023`]) is based on information he has been given by individuals with a longstanding track record of legitimacy and service to this country.
+From 2019 to 2021, in his [`/organizations/nro`] reservist capacity, Grusch was a member of the [`/organizations/uaptf`]. From 2021 to 2023, as [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, he reported to UAPTF and eventually the [`/organizations/aaro`]. In 2019 the UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) the task force needed to satisfy its congressionally mandated mission. He was informed, in the course of his official duties, of a "multi-decade UAP crash retrieval and reverse engineering program" to which he was denied access. He became a Whistleblower through a PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the [`/organizations/icig`], and he has suffered retaliation for that decision. At [`/events/2023-07-26-house-uap-hearing`], Grusch's testimony ([`/documents/written-testimony-grusch-2023`]) is based on information he has been given by individuals with a longstanding track record of legitimacy and service to this country.
 
 ---
 
@@ -38,7 +38,7 @@ Grusch was the [`/organizations/nga`] co-lead in Unidentified Anomalous Phenomen
 
 | Organization | Role | Period | Source |
 |---|---|---|---|
-| [`/organizations/us-air-force`] | Intelligence officer for 14 years at the rank of Major | 2009-06 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |
+| [`/organizations/us-air-force`] | Intelligence officer for 14 years at the rank of Major | 2009-06 – 2023-05 | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |
 | [`/organizations/apus`] | Adjunct Professor, School of Security and Global Studies | 2014-07 – 2016-12 | government/docs-house-gov-grusch-bio-20230726.pdf |
 | [`/organizations/blue-sky-innovators`] | Corporate Security Officer (CSO), DoD-Contracted Science and Engineering Technical Advisor (SETA) | 2016-03 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf |
 | [`/organizations/nro`] | Senior Intelligence Officer (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet) | 2016-04 – 2021-11 | government/docs-house-gov-grusch-bio-20230726.pdf |
@@ -119,7 +119,7 @@ Submission") |
 
 | Field | Value |
 |---|---|
-| Attributed to | DOPSR-cleared Grusch statements (April 2023), published in The Debrief article, 2023-06-05, 2023-04-06 |
+| Attributed to | DOPSR-cleared Grusch statements (April 2023), as paraphrased/shortened in The Debrief article, 2023-04-06 |
 | Source | [archived source](../sources/news/thedebrief-grusch-2023.html) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶15 (Kean/Blumenthal quote attribution of Grusch's DOPSR-cleared statements from April 2023) |
@@ -259,14 +259,14 @@ Submission") |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 214-221 |
 
-> [9:15] shut the door in my face. They denied me access to these programs. Soon after, he says he endured reprisals and retaliation from above. He then reported that information to the intelligence community inspector general. That's why he's filed this whistleblower complaint.
+> [9:15] shut the door in my face. They denied me access to these programs.
 
 | Field | Value |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
-| Location | lines 226-232 |
+| Location | lines 226-227 |
 
 > [10:40] Well, naturally, um when you recover something that's either landed or crashed, um sometimes you encounter, um dead pilots. And believe it or not, as f as fantastical as that sounds, it's true.
 
@@ -1522,6 +1522,15 @@ Submission") |
 | Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 3818-3825 |
 
+> [12:42] that spooked to me and that was like fall of 2019 and you know I don't take a guy's word for it
+
+| Field | Value |
+|---|---|
+| Attributed to | Joe Rogan Experience, 2023-11-21 |
+| Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
+| Verified | ✅ Confirmed — verified verbatim against archived source |
+| Location | lines 321-324 (around [12:42]-[12:45]) |
+
 > Good Afternoon, Thank you will review. Please address my specific concerns that I sent via email on 19 Nov 23. DG
 
 | Field | Value |
@@ -1555,12 +1564,16 @@ Contact Request") |
 | 2016 | Facility Security Officer (FSO), Center for Development & Security Excellence (CDSE) | clearance | government/docs-house-gov-grusch-bio-20230726.pdf |  |
 | 2016-04 | Senior Intelligence Officer, National Reconnaissance Office (NRO), Chantilly, VA (USAF Reserve, O-4/Maj in a O-5/Lt Col Billet) | role | government/docs-house-gov-grusch-bio-20230726.pdf |  |
 | 2019 | UAPTF director tasked Grusch to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) needed to satisfy the task force's congressionally mandated mission | role | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |  |
-| 2019 | Fall 2019 first contact from a senior-credentialed official alleging a multi-decade UAP crash retrieval and reverse-engineering program, initiating the inquiry that became Grusch's PPD-19 filing | other | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| 2019 | Fall 2019 first contact from a senior-credentialed official alleging a multi-decade UAP crash retrieval and reverse-engineering program, initiating the inquiry that became Grusch's PPD-19 filing (per Grusch's JRE account — "that was like fall of 2019", q31b) | other | transcripts/jre-2065-grusch-2023-downloaded.md |  |
 | 2020 | Intelligence Fundamentals Professional Certification (IFPC), USD(I&S) | clearance | government/docs-house-gov-grusch-bio-20230726.pdf |  |
 | 2021 | Security Fundamentals Professional Certification (SFPC), DCSA | clearance | government/docs-house-gov-grusch-bio-20230726.pdf |  |
 | 2021 | Special Access Program Professional Certification (SPSC), DCSA | clearance | government/docs-house-gov-grusch-bio-20230726.pdf |  |
 | 2021 | Spring 2021 meeting in Las Vegas with former Sen. Harry Reid ([`/people/harry-reid`]) — Reid privately confirmed to Grusch that the U.S. had recovered UFO material but had been denied access for decades | other | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| 2021-07 | Confidential disclosure of UAP-related classified information to the [`/organizations/dod`] Inspector General — Grusch's first formal protected communication, predating the PPD-19 Urgent Concern filing by ten months (per PPD-19 filing ¶4, q164) | filing | government/grusch-ppd-19-procedural-filing.pdf |  |
 | 2021-11 | Senior GEOINT Capabilities Requirements Officer, National Geospatial-Intelligence Agency (NGA), Colorado Springs, CO (GS-15, Colonel Equiv.) | role | government/docs-house-gov-grusch-bio-20230726.pdf |  |
+| 2022-05-25 | Formal PPD-19 Urgent Concern filing with the [`/organizations/icig`] — the canonical date Grusch became a whistleblower under federal law; filing drafted by attorneys Irvin Charles McCullough, III, and Andrew P. Bakaj and sworn-adopted by Grusch under penalty of perjury ([`/documents/grusch-ppd-19-procedural-filing`], q162/q163/q164/q165) | filing | government/grusch-ppd-19-procedural-filing.pdf |  |
+| 2022-07 | Intelligence Community Inspector General ([`/organizations/icig`]) determined the complaint "credible and urgent"; per the Debrief ([`/documents/debrief-grusch-2023`]), a summary was "immediately submitted to the Director of National Intelligence, Avril Haines; the Senate Select Committee on Intelligence; and the House Permanent Select Committee on Intelligence" ([`/organizations/hpsci`]) | filing | news/thedebrief-grusch-2023.html |  |
+| 2022-12 | First classified congressional testimony — per Grusch's JRE account, "11 and a half to 12 hours of uh you know classified testimony to the Congressional staffers and their lawyers for both the house and the Senate" ([`/transcripts/jre-2065-grusch-2023`], q47); predates the 2023-07-26 public hearing by seven months | testimony | transcripts/jre-2065-grusch-2023-downloaded.md |  |
 | 2023 | Master of Public Administration (MPA) Degree, University of Colorado (In-Progress) | other | government/docs-house-gov-grusch-bio-20230726.pdf |  |
 | 2023-05 | Chief Operating Officer (COO), The Sol Foundation | role | government/docs-house-gov-grusch-bio-20230726.pdf |  |
 | 2023-06-05 | The Debrief ([`/organizations/the-debrief`]) publishes "Intelligence Officials Say U.S. Has Retrieved Craft of Non-Human Origin" — the Ralph Blumenthal ([`/people/ralph-blumenthal`]) and Leslie Kean ([`/people/leslie-kean`]) article that first brings Grusch's whistleblower disclosure to the public; published as document [`/documents/debrief-grusch-2023`] | publication | news/thedebrief-grusch-2023.html |  |
@@ -1568,7 +1581,7 @@ Contact Request") |
 | 2023-06-27 | Sen. Marco Rubio ([`/people/marco-rubio`]), then Senate Select Committee on Intelligence Vice Chair, tells NewsNation there are "other" whistleblowers beyond Grusch with firsthand knowledge — public on-record vouching | other | news/newsnation-rubio-not-the-only-one-202306.html |  |
 | 2023-07-14 | Sens. Chuck Schumer ([`/people/chuck-schumer`]) and Mike Rounds ([`/people/mike-rounds`]) introduce the UAP Disclosure Act (Senate Amendment 797) — legislative response drafted in the policy aftermath of Grusch's June disclosure; Sen. Kirsten Gillibrand ([`/people/kirsten-gillibrand`]) also speaks publicly in support | other | government/senate-schumer-rounds-uapda-20230714.html |  |
 | 2023-07-26 | Opening Statement and Closing Statement to the committee | testimony | government/oversight-house-gov-grusch-written-testimony-20230726.pdf | [`/events/2023-07-26-house-uap-hearing`] |
-| 2023-07-26 | Sworn oral testimony before the House Oversight Subcommittee on National Security ([`/organizations/hasc`]) chaired by Rep. Glenn Grothman, with UAP Subcommittee questioners Rep. Tim Burchett ([`/people/tim-burchett`]) and Rep. Anna Paulina Luna ([`/people/anna-paulina-luna`]); oral transcript [`/transcripts/2023-07-26-house-grusch`] | testimony | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| 2023-07-26 | Sworn oral testimony before the Subcommittee on National Security, the Border, and Foreign Affairs, Committee on Oversight and Accountability, chaired by Rep. Glenn Grothman, with UAP Subcommittee questioners Rep. Tim Burchett ([`/people/tim-burchett`]) and Rep. Anna Paulina Luna ([`/people/anna-paulina-luna`]); oral transcript [`/transcripts/2023-07-26-house-grusch`] | testimony | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-10 | American Alchemy ([`/organizations/american-alchemy`]) / Jesse Michels ([`/people/jesse-michels`]) releases "72 hrs With UFO Whistleblower David Grusch Under Oath" documentary; transcript [`/transcripts/american-alchemy-grusch-72hrs-2023`] | publication | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md |  |
 | 2023-11-17 | Delivers closing remarks at the Sol Foundation ([`/organizations/sol-foundation`]) Inaugural Symposium, Stanford University, alongside co-founders Garry Nolan ([`/people/garry-nolan`]) and Peter Skafish ([`/people/peter-skafish`]) and UAPTF colleague Karl Nell ([`/people/karl-nell`]); transcript [`/transcripts/grusch-sol-2023-closing`] | publication | transcripts/grusch-sol-2023-closing-downloaded.md |  |
 | 2023-11-21 | Joe Rogan Experience ([`/organizations/joe-rogan-experience`]) episode #2065 with Joe Rogan ([`/people/joe-rogan`]) and Ross Coulthart ([`/people/ross-coulthart`]); transcript [`/transcripts/jre-2065-grusch-2023`] | publication | transcripts/jre-2065-grusch-2023-downloaded.md |  |
@@ -1609,7 +1622,7 @@ Contact Request") |
 | When you have multiple agencies nesting UAP activities in conventional SAP/CAP programs, both as recipients of exploi… | news/thedebrief-grusch-2023.html | ✅ Sworn / documented |  |
 | [6:28] UAP task force was refused access to um a broad crash retrieval program. When you say crash retrieval, what do… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [7:04] confiding in me. They approached me. I have plenty of current former senior intelligence officers that came to… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [9:15] shut the door in my face. They denied me access to these programs. Soon after, he says he endured reprisals an… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
+| [9:15] shut the door in my face. They denied me access to these programs. | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [10:40] Well, naturally, um when you recover something that's either landed or crashed, um sometimes you encounter, u… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [24:28] uh overall you know the government has been the custodian of a lot of this right and they'll they'll hand rec… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [28:02] there have been attempts to bring down craft that we've acted offensively against non-human craft. There have… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
@@ -1658,18 +1671,19 @@ Contact Request") |
 | [1:06:56] looking into this I mean they came after me so hard to try to revoke my clearance um ruined my career kicke… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [1:09:27] is uh they showed my wife and I they can touch me at any time two times and it was very disturbing it was i… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [1:24:14] physiology yeah no I was in I was in the room when uh I got be careful I don't want to uh I was in Washingt… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
+| [12:42] that spooked to me and that was like fall of 2019 and you know I don't take a guy's word for it | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 
 ---
 
 ## Credibility Notes
 
-Grusch testified under oath that he is "speaking to the facts as I have been told them," that his testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country — many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and that he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the multi-decade UAP crash retrieval and reverse engineering program — including that private defense contractors, named Lockheed Martin ([`/organizations/lockheed-martin`]) in oral testimony, hold physical material — are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a whistleblower through the PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the Intelligence Community Inspector General ([`/organizations/icig`]); the formal procedural filing is archived as [`/documents/grusch-ppd-19-procedural-filing`]. The ICIG determined the complaint was "credible and urgent" per subsequent congressional correspondence. Grusch's 2023-07-26 written testimony and biographical submission received Department of Defense pre-publication review under DOPSR case 23-F-0946 ([`/documents/grusch-dopsr-request-2023`]). Grusch has "suffered retaliation" for his decision and has named "administrative terrorism" as the pattern: career threats against himself and colleagues who corroborated the allegations.
+Grusch testified under oath that he is "speaking to the facts as I have been told them," that his testimony is "based on information I have been given by individuals with a longstanding track record of legitimacy and service to this country — many of whom also shared compelling evidence in the form of photography, official documentation, and classified oral testimony," and that he "has taken every step I can to corroborate this evidence over a period of 4 years." Claims about the multi-decade UAP crash retrieval and reverse engineering program — including that private defense contractors hold physical material — are information Grusch was "informed" of "in the course of my official duties"; he was "denied access to those additional read-on’s." Grusch became a whistleblower through the PPD-19 ([`/documents/ppd-19`]) Urgent Concern filing with the Intelligence Community Inspector General ([`/organizations/icig`]); the formal filing [`/documents/grusch-ppd-19-procedural-filing`]. The filing PDF is a scan and shows multiple optical character recognition artifacts — "UAP-telated", "compatrtmented", and "appatently" appear in quoted text in place of the clean forms; preserved as they appear in the extract. Per the Debrief ([`/documents/debrief-grusch-2023`]): "The Intelligence Community Inspector General found his complaint *credible and urgent* in July 2022"; per the same article, "a summary was immediately submitted to the Director of National Intelligence, Avril Haines; the Senate Select Committee on Intelligence; and the House Permanent Select Committee on Intelligence" ([`/organizations/hpsci`]). Grusch's July 26, 2023 written testimony received Department of Defense pre-publication review under DOPSR case 23-F-0946 ([`/documents/grusch-dopsr-request-2023`]). Grusch has "suffered retaliation" for his decision and under oath described it: "I call it administrative terrorism" — career threats against himself and colleagues who corroborated the allegations.
 
-Context: Grusch's prior institutional footprint spans the House Permanent Select Committee on Intelligence ([`/organizations/hpsci`]) and the Senate Armed Services Committee ([`/organizations/sasc`]) as reporting venues during his NGA UAP co-lead tenure. His UAPTF work originated in fall 2019 under the UAPTF director (Jay Stratton [`/people/jay-stratton`]) and drew on earlier programmatic history — AAWSAP-era research involving James Lacatski ([`/people/james-lacatski`]), Luis Elizondo ([`/people/luis-elizondo`]) of the AATIP-era program office, and Robert Bigelow ([`/people/robert-bigelow`]) at Bigelow Aerospace ([`/organizations/bigelow-aerospace`]); Grusch reframed AAWSAP's ~$21-22M funding as material-analysis equipment for contractor-held recovered material (JRE #2065 testimony).
+Context. Under oath on July 26, 2023, Grusch testified that he "asked my information to be sent to the House and Senate Armed Services Committee because there are Title 10 equities at play" — House Armed Services Committee ([`/organizations/hasc`]) and Senate Armed Services Committee ([`/organizations/sasc`]) — but that "there was no smooth process to do so," a separate reporting channel from the ICIG intelligence committee channel described above. His UAPTF role began in 2019 when the UAPTF director tasked him to "identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) we needed to satisfy our congressionally mandated mission." On the Joe Rogan Experience ([`/organizations/joe-rogan-experience`]) podcast ([`/transcripts/jre-2065-grusch-2023`]), Grusch described a Spring 2021 meeting in Las Vegas with former Senate Majority Leader Harry Reid ([`/people/harry-reid`]) in which Reid said "yeah I knew we had UFO material I was denied access for decades"; in the same conversation, Grusch described the "$21 million" Reid had given "to DIA and Bigalow Aerospace" [`/organizations/bigelow-aerospace`] as funding for the "assap" program referenced in his investigation. Also on the podcast, Grusch named a specific private defense contractor — "lockie Martin" [`/organizations/lockheed-martin`] — saying the company "wanted to divest itself from this material at a specific facility that's known to me that I provided to the Inspector General." The contractor was not named in the sworn congressional testimony.
 
-Institutional contradictions. AARO ([`/organizations/aaro`]) under former director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) has publicly contested the multi-decade crash-retrieval allegation at a framing level; AARO's Historical Record Report Vol I (March 2024) addresses the "Nexus of Proponents" and KONA BLUE without naming Grusch directly. AARO's own correspondence with Grusch is documented via FOIA 24-F-0266 ([`/documents/aaro-invitations-to-grusch-2024`]) — Grusch declined AARO interview invitations citing procedural objections, preserving the sworn-testimony-to-Congress venue as his primary disclosure channel. Department of Defense Public Affairs (Sue Gough) issued on-record "no verifiable information" denials following the July 2023 hearing. Christopher Mellon ([`/people/christopher-mellon`]) observed in the Debrief piece that "a number of potential sources do not trust the leadership" of AARO, a context that informs Grusch's own preference for the congressional channel over AARO's investigative process.
+AARO position. Under former director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]), AARO ([`/organizations/aaro`]) correspondence with Grusch is documented via FOIA 24-F-0266 ([`/documents/aaro-invitations-to-grusch-2024`]); Kirkpatrick wrote he was "not judging the claims" and was "not taking a position on ... the underlying claim of recovered materials," stating of Grusch that "he is sincere and credible and his and other claims, which I expressly called 'allegations,' warrant investigation." Grusch declined AARO interview invitations. Christopher Mellon ([`/people/christopher-mellon`]) described in the Debrief that "a number of potential sources do not trust the leadership of the All-Domain Anomaly Resolution Office established by Congress."
 
-Discrediting context. In August 2023, Ken Klippenstein published elements of Grusch's military-service mental-health records — a publication that Rep. Burchett publicly characterized as "sickening" and that Grusch himself has not denied, framing post-Afghanistan-deployment treatment as ordinary military-career context. See vouching chain below for voucher statements by Karl Nell ([`/people/karl-nell`]) as his direct institutional peer and House UAP Caucus members Burchett, Burlison, Luna, and Sen. Rubio.
+Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) reported on The Intercept's story on Grusch's military service mental health records; Rep. Tim Burchett ([`/people/tim-burchett`]) publicly called the story "sickening" and said "this man served his country." In the American Alchemy documentary ([`/transcripts/american-alchemy-grusch-72hrs-2023`]), Grusch described post-traumatic stress disorder diagnosis and treatment after combat in Afghanistan (2013): "saw treatment and I got help good to go." See vouching chain below for voucher statements by Karl Nell ([`/people/karl-nell`]) as the Army liaison who worked with Grusch on the UAP Task Force, plus House UAP Caucus members Burchett, Burlison ([`/people/eric-burlison`]), Luna ([`/people/anna-paulina-luna`]), and Sen. Rubio ([`/people/marco-rubio`]).
 
 [`/documents/grusch-bio-2023`] — SECURITY CLEARANCE: Active TOP SECRET//SCI with CI & LS Polygraph.
 
@@ -1704,19 +1718,16 @@ Discrediting context. In August 2023, Ken Klippenstein published elements of Gru
 - [`/people/eric-burlison`]
 - [`/people/garry-nolan`]
 - [`/people/harry-reid`]
-- [`/people/james-lacatski`]
 - [`/people/jay-stratton`]
 - [`/people/jesse-michels`]
 - [`/people/joe-rogan`]
 - [`/people/karl-nell`]
 - [`/people/kirsten-gillibrand`]
 - [`/people/leslie-kean`]
-- [`/people/luis-elizondo`]
 - [`/people/marco-rubio`]
 - [`/people/mike-rounds`]
 - [`/people/peter-skafish`]
 - [`/people/ralph-blumenthal`]
-- [`/people/robert-bigelow`]
 - [`/people/ross-coulthart`]
 - [`/people/sean-kirkpatrick`]
 - [`/people/tim-burchett`]
