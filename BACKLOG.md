@@ -370,3 +370,75 @@ ordering concern, revisit.
 Surfaced: TTSA v3 (2026-04-23) — q5 DeLonge-Podesta email
 promoted from position 5 to position 1 after `statement_date`
 adoption; hedged in-header in the same commit.
+
+---
+
+### 19. "Verified verbatim" does not distinguish text-native sources from OCR-scanned sources
+
+The verbatim-quote check compares quote text against the pdftotext /
+HTML extract of the cited source. When the source is a text-native
+PDF or HTML, the extract is a faithful rendering of the original,
+and "✅ Confirmed — verified verbatim" means exactly what it
+implies. When the source is a **scanned PDF** and the scan passed
+through OCR (inside the PDF or at extraction time), the extract is
+a lossy rendering of the original; "verified verbatim" then means
+only that the node's quote text matches the OCR extract, not that
+it matches what the original document actually says.
+
+**Concrete consequence** — Grusch v2 (2026-04-24). The archived
+PPD-19 procedural filing PDF contains multiple OCR artifacts:
+`UAP-telated` (for `UAP-related`, two instances), `compatrtmented`
+(for `compartmented`), `appatently` (for `apparently`),
+`cottelated` (for `correlated`). All three appear in quote entries
+on `/people/david-grusch` flagged "verified verbatim" — the flag is
+technically correct (bytes match extract), but reader-facing
+interpretation is misleading: the attorney-drafted filing almost
+certainly reads cleanly.
+
+Workaround applied (Grusch v2): `naming_quirks` entries
+(`preserve-as-sic-in-quotes` resolution) registered for each
+observed artifact, plus a one-sentence flag in Credibility Notes
+prose. This gets the reader-visibility done at the node level but
+doesn't solve the broader convention gap.
+
+**Convention fix to consider (not a node-level change):**
+
+1. **Distinguish extraction type at source level.** Add a manifest-
+   level or primary_sources-level field like
+   `extraction_type: text-native | ocr-scan`. Populated at archival
+   time (contributor inspects whether the PDF has a text layer and
+   whether that text layer is clean or re-OCR'd).
+2. **Differentiate the verification status marker.** Under
+   `ocr-scan` sources, render "✅ Verified verbatim against OCR
+   extract (original not re-verified)" instead of the unqualified
+   "Verified verbatim" label. This is analogous to the distinction
+   between "✅ Confirmed as sworn testimony — claim not
+   independently verified" and "Testified that X is true" in
+   conventions.md — same discipline of separating what a marker
+   actually confirms from what a reader might infer it confirms.
+3. **Add a `## Source Transcription Notes` rendered section.**
+   Surface `naming_quirks` entries with `preserve-as-sic-in-quotes`
+   resolution on the node body (currently they sit in the artifact
+   and never reach the reader). Optionally scoped to nodes where
+   at least one `ocr-scan` source is cited.
+4. **Validator coverage.** When a quote's source is `ocr-scan`,
+   `validate.py` could add an advisory warning suggesting a re-read
+   against the original (human-in-loop only; no mechanical fix
+   possible).
+
+**Scope note.** This is cross-cutting: schema (field addition),
+conventions (documentation of the distinction), renderer (new
+section + status-marker variant), validator (advisory warning).
+Touches every node that cites a scanned-PDF source, including
+future ones. Worth batching into a single convention pass rather
+than per-node workarounds repeated over time.
+
+**Affected now.** Every node that sources from a scanned
+government document — grusch (PPD-19 filing), plus any FOIA
+response PDFs (several archived in sources/government/) that
+went through scanner OCR rather than being text-native exports.
+
+Surfaced: Grusch v2 audit (2026-04-24) — external auditor noted
+that "verified verbatim" against a corrupted OCR extract is not
+the same as verified against the original and is "a real gap in
+the convention that will affect every scanned-document source."
