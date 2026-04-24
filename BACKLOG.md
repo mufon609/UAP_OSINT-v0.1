@@ -439,13 +439,24 @@ close #19. Spread depends primarily on the Tier 3 convention decision.
 (Tier 1: 6 corrections across 211 quotes, 2.8% error rate across
 all causes / 1.4% contributor-drift rate. Tier 2: 0 corrections
 across 87 quotes). **Aggregate contributor-drift rate across
-audited quotes: 0.67%**, well below the Tier 1 standalone rate.
-Tier 2's clean-pass outcome was expected — contributor-authored
-written testimonies submitted to House Oversight via standard
-word-processor pipelines extract faithfully. Projected remaining
-findings across Tiers 4+5 (~128 quotes): 0–2 contributor-drift
-corrections, likely concentrated in the PDF long-tail where
-extraction condition varies more.
+audited quotes: 0.67%**, roughly half the Tier 1 standalone rate.
+
+**Tier 1 was the worst-case segment of the corpus, not a
+representative sample.** It combined three compounding risk factors:
+high quote volume (211 across 6 artifacts), known extraction-layer
+issue (`11‡→11½`), and source complexity (54-page stenographic
+transcript with oral testimony + Q&A + submitted documents — more
+surface area for contributor drift than any single-witness written
+document). Tier 2's 0% finding rate in contributor-authored short
+written testimonies is evidence that Tier 1's 1.4% was the peak,
+not the baseline.
+
+**Projected remaining findings across Tiers 4+5** (~128 quotes):
+revised down from earlier 3–5 estimate to **1–2 corrections**
+based on Tier 2's outcome. HTML extraction is genuinely low-risk
+(tag-strip + entity-decode handles nearly all cases); PDF long-
+tail findings likely concentrate in one or two sources with
+extraction-condition surprises, not spread evenly across all 17.
 
 **Follow-up BACKLOG entries surfaced during the audit** (filed now
 for tracking visibility; fate confirmed at Tier 6 closeout):
@@ -454,6 +465,37 @@ for tracking visibility; fate confirmed at Tier 6 closeout):
 - #22 — Provenance-marker treatment (per-row custody checkmarks on document nodes; different shape from per-quote Verified)
 - #23 — BACKLOG #17 surfacing in Credibility Notes prose (verbatim caption forms read as misspellings)
 - #24 — Location reference normalization (stale `lines N-M` pdftotext refs; low-priority hygiene)
+
+**Recommended session sequence** (from post-Tier-2 planning):
+
+1. **Tier 4 next** (28 HTML sources, 78 quotes). Larger source
+   surface area than Tier 5 but extraction low-risk (tag-strip +
+   entity-decode). Batched spot-check pattern applies across the
+   whole set.
+2. **Tier 5 after Tier 4** (PDF long-tail, ~17 sources, ~50 quotes).
+   6 Uintah parcel PDFs are near-identical from the ORDS portal
+   pipeline — batch-verify once, apply across all 6. Remaining ~11
+   government / news PDFs are one-by-one spot-checks.
+3. **Plausibly Tiers 4 + 5 fit in one session** if findings stay
+   low (which Tier 2's outcome suggests they will).
+4. **Tier 3 convention decision** runs on its own track. Don't
+   collapse it into an audit-execution session — option 3 (hybrid
+   by `transcript_provenance`) requires a schema field that needs
+   the same care `extraction_type` got in Phase A. Dedicated
+   focused session.
+5. **Tier 6 closeout** after Tier 3 execution.
+
+BACKLOG #21 (alternate PDF extraction tool) stays deferred. Tier 2
+provided evidence that Distiller-produced PDFs are not automatically
+extraction-lossy (the Grusch written testimony uses the same Acrobat
+Distiller 23.0 as the Tier 1 hearing transcript but extracts
+cleanly). If the Unicode-mapping issue isn't consistent within a
+single producer, a wholesale tool change is solving the wrong
+problem — it's treating the tool as the variable when the actual
+variable is upstream (font embedding, encoding tables, something
+source-specific). Current approach — flag lossy sources, produce
+`.txt` siblings, move on — remains correct for the observed pattern.
+Revisit #21 only if Tier 5 surfaces a systemic pattern.
 
 ---
 
