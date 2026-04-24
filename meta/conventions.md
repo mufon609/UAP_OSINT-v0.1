@@ -60,11 +60,9 @@ incident), and documents (government vs. non-government).
 ## Statements as the universal evidentiary primitive
 
 The evidentiary content of every node rests on `quotes[]` in the
-research artifact — verbatim passages from primary sources with
-per-quote mechanical verification (the verbatim-quote check extracts
-the cited source and substring-checks every passage marked
-`✅ Confirmed — verified verbatim`). No contributor-synthesized claim
-layer sits between source and reader, on any node type.
+research artifact — verbatim passages from primary sources. No
+contributor-synthesized claim layer sits between source and reader,
+on any node type.
 
 The rationale is failure-mode specific: contributor-prose summaries
 introduce fine drift (dropped qualifiers, synonym rephrases,
@@ -73,6 +71,41 @@ Eliminating the prose claim layer eliminates the drift surface. Other
 nodes that cite facts from a source link to the source-bearing node
 (document / transcript / media) and reference the specific passage —
 no intermediate paraphrase exists to drift.
+
+### Confirmation is a precondition for inclusion
+
+Quotes appear in node bodies only after confirmation against the
+underlying primary source. Confirmation is a precondition for
+inclusion, not a rendered flag. The rendered output carries no
+verification marker — the source link is the evidence; a reader
+verifies a quote by following the link to the archived source, not
+by reading a checkbox.
+
+The principle is enforced mechanically by the build validator: the
+verbatim-quote check fails any commit where a quote's text does not
+appear in the extracted source. The enforcement is invisible to the
+reader by design. The validator catches silent drift (a quote edited
+in an artifact months later that no longer matches the source) and
+broken source references; it does not, and cannot, perform trust on
+the reader's behalf.
+
+Transcripts of speech sources — congressional hearings, podcasts,
+broadcasts, interviews, depositions, conference talks — are
+equivalent-footing sources once confirmed. The inclusion bar does
+not vary by medium: every quote, whether extracted from a PDF, an
+HTML page, a stenographic transcript, or a captioning file, must
+appear in the cited source. No marker variant, no different
+verification path, no renderer special-casing.
+
+OCR-scanned sources are a known blind spot: when both the quote text
+and the source extract carry the same OCR corruption, the
+verbatim-quote check passes despite the quote not matching the
+original document. The `extraction_type: ocr-scan` field on
+manifest entries flags such sources to ingestion-pipeline discipline
+(text-layer pull, modern OCR, VLM on page images, or visual
+verification against the original) before quotes are derived. The
+validator does not close the OCR-corruption gap; the ingestion
+pipeline does.
 
 ### Type-specialized views of `quotes[]`
 

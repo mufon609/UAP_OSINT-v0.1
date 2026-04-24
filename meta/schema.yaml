@@ -46,10 +46,10 @@ types:
   # --- PERSON -------------------------------------------------------------
   # Person is the only node type with a claiming agent. Under the
   # statements-only discipline, every person node carries a universal
-  # `## Statements` surface — verbatim quotes, speaker-attributed, marker-
-  # flagged, split by `observation_type` into Direct Observations
-  # (first-hand sensory testimony) and Other Statements (anything else the
-  # person asserted, including relayed / inferential / published / filed-
+  # `## Statements` surface — verbatim quotes, speaker-attributed,
+  # split by `observation_type` into Direct Observations (first-hand
+  # sensory testimony) and Other Statements (anything else the person
+  # asserted, including relayed / inferential / published / filed-
   # claim material). Archetype-specific sections (Corroboration /
   # Claim Inventory / Program Involvement / Publication Record) remain
   # distinct but are cross-reference or metadata surfaces, NOT statement
