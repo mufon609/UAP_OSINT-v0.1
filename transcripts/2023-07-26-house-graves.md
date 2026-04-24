@@ -200,7 +200,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 ### Closing framing — foreign-drones vs science dichotomy; flight-safety concern in either case; "American people deserve to know" call for transparency
 
-> If UAP are foreign drones, is an urgent national security problem. If it is something else, it is an issue for science. In either case, unidentified objects are a concern for flight safety. The American people deserve to know what is happening in our skies. It is long overdue.
+> If UAP are foreign drones, it is an urgent national security problem. If it is something else, it is an issue for science. In either case, unidentified objects are a concern for flight safety. The American people deserve to know what is happening in our skies. It is long overdue.
 
 | Field | Value |
 |---|---|

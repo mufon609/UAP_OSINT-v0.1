@@ -1173,17 +1173,38 @@ manifest_entry:
   # Validator enforces consistency against status / path / wayback_date.
   # Contributors don't hand-maintain this field; the scripts do.
   format_values: [pdf, html, txt, video, transcript]
-  extraction_type_values: [text-native, ocr-scan]
+  extraction_type_values: [text-native, ocr-scan, extraction-lossy]
   # `extraction_type` classifies how the archived file yields text. Optional;
-  # defaults to `text-native` when absent (legacy entries pre-field).
-  #   text-native — PDF with a clean text layer, HTML, plain text, or any
-  #                 source whose extracted bytes are a faithful rendering
-  #                 of the original.
-  #   ocr-scan    — scanned PDF whose text came from OCR. Extraction may
-  #                 carry character-level corruptions (e.g. `UAP-telated`
-  #                 for `UAP-related`, `compatrtmented` for `compartmented`)
-  #                 that the verbatim-quote check cannot detect — both the
-  #                 quote and the extract carry the same corrupted form.
+  # defaults to `text-native` when absent (legacy entries pre-field). The
+  # three values distinguish source conditions by WHERE the extraction can
+  # fail, not just by whether it can:
+  #   text-native      — clean text layer (PDF authored with native text),
+  #                      HTML, plain text, or any source whose extracted
+  #                      bytes are a faithful rendering of the original.
+  #                      pdftotext / direct read is sufficient.
+  #   ocr-scan         — text layer absent or unreliable because the source
+  #                      is a scanned image; OCR was needed to produce any
+  #                      text at all. Failure mode: character-level
+  #                      corruption introduced by the OCR process itself
+  #                      (e.g. `UAP-telated` for `UAP-related`,
+  #                      `compatrtmented` for `compartmented`). The PDF's
+  #                      text layer IS the OCR output.
+  #   extraction-lossy — text layer is present and was NOT produced by OCR
+  #                      (author native or Acrobat Distiller from `.txt`,
+  #                      etc.), but pdftotext extraction still produces
+  #                      artifacts — Unicode mapping errors, font encoding
+  #                      issues, character substitution at the PDF-
+  #                      generation or extraction layer. Example: the 2023
+  #                      House Oversight hearing transcript where
+  #                      `11½ hours` renders as `11‡ hours` in pdftotext
+  #                      output. Different root cause from ocr-scan (no
+  #                      scan step involved); same operational consequence
+  #                      (default extraction unreliable).
+  # Operational handling (both ocr-scan and extraction-lossy): the validator
+  # prefers a same-stem `.txt` sibling over pdftotext output when the field
+  # is set to any non-text-native value. The sibling is a contributor-
+  # produced clean transcription, visually verified against the source, with
+  # its own manifest entry + sha256 for integrity tracking.
   # The field is ingestion-pipeline metadata, not reader-visible. Its purpose
   # is to drive heavier extraction handling (text-layer pull, modern OCR,
   # VLM on page images, or visual verification against the original) before

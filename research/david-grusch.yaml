@@ -1566,7 +1566,7 @@ quotes:
   statement_date: '2023-07-26'
 - id: q106
   added_date: '2026-04-22'
-  text: Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11‡ hours with both intel committees.
+  text: Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11½ hours with both intel committees.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: Q&A with Rep. Burchett, p. 32
@@ -2618,12 +2618,4 @@ naming_quirks:
   source_path: transcripts/jre-2065-grusch-2023-downloaded.md
   resolution: preserve-as-sic-in-quotes
   note: YouTube auto-caption typo of "Lockheed" as "lockie" on the Joe Rogan Experience transcript. Appears throughout the JRE segment where Grusch discusses Lockheed Martin as a custodian of retrieved material.
-- id: nq6
-  added_date: '2026-04-24'
-  observed: 11‡
-  canonical: 11½
-  location: Q&A with Rep. Burchett, p. 32 (scratch line 1826)
-  source_path: government/congress-gov-house-hearing-transcript-20230726.pdf
-  resolution: preserve-as-sic-in-quotes
-  note: PDF-extraction artifact — U+2021 DOUBLE DAGGER ("‡") in place of U+00BD ONE HALF ("½") in Grusch's sworn attestation to an "11½ hours" classified-testimony session. Cross-verified against Grusch's own JRE account ("it's 11 and a half to 12 hours" of classified testimony, q47), confirming the intended fraction. Preserved verbatim in q106 text to pass the verbatim-quote check against the archived extract.
 rumors: []

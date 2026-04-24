@@ -733,7 +733,7 @@ Submission") |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | Q&A with Rep. Burchett, p. 31 |
 
-> Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11‡ hours with both intel committees.
+> Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11½ hours with both intel committees.
 
 | Field | Value |
 |---|---|

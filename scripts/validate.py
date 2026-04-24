@@ -548,7 +548,7 @@ def check_manifest_archive_status():
 # =============================================================================
 
 
-_EXTRACTION_TYPE_VALUES = ("text-native", "ocr-scan")
+_EXTRACTION_TYPE_VALUES = ("text-native", "ocr-scan", "extraction-lossy")
 
 
 def check_manifest_extraction_type():
@@ -672,12 +672,18 @@ def extract_source_text(source_path):
     result = None
     suffix = source_path.suffix.lower()
     if suffix == ".pdf":
-        # OCR-scan PDFs: try same-stem .txt sibling first
+        # For PDFs whose default extraction is unreliable (extraction_type is
+        # set to a non-text-native value: ocr-scan, extraction-lossy, or any
+        # future category), prefer a same-stem .txt sibling over pdftotext.
+        # The sibling is a contributor-produced clean transcription visually
+        # verified against the source; the PDF's text layer is unreliable
+        # (either OCR'd from scans or extraction-lossy at the generation layer).
         try:
             rel_path = str(source_path.relative_to(SOURCES_DIR))
         except ValueError:
             rel_path = None
-        if rel_path and _load_extraction_types().get(rel_path) == "ocr-scan":
+        et = _load_extraction_types().get(rel_path) if rel_path else None
+        if et and et != "text-native":
             sibling = source_path.with_suffix(".txt")
             if sibling.exists():
                 try:

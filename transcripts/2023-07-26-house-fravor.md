@@ -90,7 +90,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 ### Approach direction (west) + 2-week prior tracking history + altitude behavior pattern
 
-> As we proceeded to the west, the air controller was counting down the range to an object that we were going to, and we were unaware of what we were going to see when we arrived. There the controller told us that these objects had been observed for over 2 weeks coming down from over 80,000 feet, rapidly descending to 20,000 feet, hanging out for hours and then going straight back up. For those that do not realize, above 80,000 feet is space.
+> As we proceeded to the west, the air controller was counting down the range to an object that we were going to, and we were unaware of what we were going to see when we arrived. There the controller told us that these objects had been observed for 2 weeks coming down from over 80,000 feet, rapidly descending to 20,000 feet, hanging out for hours and then going straight back up. For those that do not realize, above 80,000 feet is space.
 
 | Field | Value |
 |---|---|
@@ -294,7 +294,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 ### Q&A — post-incident response detail (carrier intel debrief only, top 20 in battle group, captain and admiral aware)
 
-> None. We had a standard debrief where the backseaters went down to our carrier intel center and briefed would have happened and that was it. No one else talked to us and I was in the top 20 in the battle group. No one came. That captain was aware. The admiral was aware. Nothing was done.
+> None. We had a standard debrief where the backseaters went down to our carrier intel center and briefed would have happened and that was it. No one else talked to us and I was in the top 20 in the battle group. That captain was aware. The admiral was aware. Nothing was done.
 
 | Field | Value |
 |---|---|

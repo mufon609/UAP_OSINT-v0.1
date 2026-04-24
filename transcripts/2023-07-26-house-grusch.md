@@ -428,7 +428,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 
 ### Documents 11+ hours of intel-committee testimony; specific corporations + divisions named to committees
 
-> Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11‡ hours with both intel committees.
+> Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11½ hours with both intel committees.
 
 | Field | Value |
 |---|---|
