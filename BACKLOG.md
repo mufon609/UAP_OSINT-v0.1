@@ -400,17 +400,9 @@ until Tier 6 runs.**
 | F.1 | — | Diagnostic: 508 quotes across 64 sources; 70% PDF / 15% HTML / 14% transcript. Top 10 sources carry 77% of quotes. Hearing transcript alone is 42% of the corpus |
 | F.2 Tier 1 | `4b4d7fb` | Hearing transcript audit: `extraction-lossy` enum value added (third category after text-native/ocr-scan); sibling-lookup generalized to `!= "text-native"`; 54-page clean `.txt` transcription via VLM; 6 corrections across 3 categories; 1.4% contributor-drift rate measured |
 | F.3 stub | `ea64cf4` | Closeout document stubbed at `meta/toolkit-notes/corpus-audit-2026-04.md` with Tier 1 findings recorded |
+| F.2 Tier 2 | TBD | 3 written testimony PDFs audited (Fravor / Graves / Grusch). All three text-native with faithful pdftotext output per metadata + suspect-char scan + VLM visual verification. Zero corrections. 87 quotes already passing unconditional verbatim-quote check are now substantively verified. ~30 minutes across all 3 sources. Notable: Grusch testimony uses same Acrobat Distiller 23.0 as Tier 1 hearing transcript but extracts cleanly — Distiller not automatically extraction-lossy |
 
-**Remaining work — Phase F.2 Tiers 2–5 + F.3 Closeout:**
-
-*Tier 2 — 3 written testimony PDFs (87 quotes).*
-Fravor (30), Graves (34), Grusch (23) written testimonies. Contributor-
-authored PDFs submitted to House Oversight and published via standard
-committee pipeline. Expected text-native; low-risk extraction.
-Methodology: verify extraction condition per source; run verbatim-
-quote check against pdftotext output; surface any contributor drift.
-Projected 0–3 findings based on Tier 1's 1.4% rate × 87 quotes.
-**Estimated: 1 focused session.** Natural next tier.
+**Remaining work — Phase F.2 Tiers 3–5 + F.3 Closeout:**
 
 *Tier 3 — 9 transcript sources (73 quotes).*
 JRE 2065 (20), NewsNation Coulthart (17), American Alchemy (10),
@@ -440,14 +432,20 @@ findings across all tiers. Confirm follow-up BACKLOG entries #20–#24
 are filed (already queued below). Close BACKLOG #19.
 **Estimated: 1 session.**
 
-**Total remaining: 5–8 focused sessions** to complete Phase F and
+**Total remaining: 4–7 focused sessions** to complete Phase F and
 close #19. Spread depends primarily on the Tier 3 convention decision.
 
-**Projected aggregate findings across Tiers 2+4+5** (excluding Tier 3,
-different risk profile): ~3–5 additional contributor-drift corrections
-based on the 1.4% rate observed in Tier 1 applied to the remaining
-~215 quotes. New extraction-condition categories may surface; the
-`extraction_type` enum should be expected to grow further.
+**Findings to date** — 6 corrections across 298 quotes audited
+(Tier 1: 6 corrections across 211 quotes, 2.8% error rate across
+all causes / 1.4% contributor-drift rate. Tier 2: 0 corrections
+across 87 quotes). **Aggregate contributor-drift rate across
+audited quotes: 0.67%**, well below the Tier 1 standalone rate.
+Tier 2's clean-pass outcome was expected — contributor-authored
+written testimonies submitted to House Oversight via standard
+word-processor pipelines extract faithfully. Projected remaining
+findings across Tiers 4+5 (~128 quotes): 0–2 contributor-drift
+corrections, likely concentrated in the PDF long-tail where
+extraction condition varies more.
 
 **Follow-up BACKLOG entries surfaced during the audit** (filed now
 for tracking visibility; fate confirmed at Tier 6 closeout):

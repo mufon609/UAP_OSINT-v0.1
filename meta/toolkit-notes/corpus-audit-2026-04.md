@@ -61,7 +61,7 @@ transcript alone is 42% of the corpus.
 | Tier | Source class | Quotes | Status |
 |---|---|---:|---|
 | 1 | hearing transcript (known-imperfect from nq6) | 211 | complete 2026-04-24 |
-| 2 | 3 written testimony PDFs | 87 | pending |
+| 2 | 3 written testimony PDFs | 87 | complete 2026-04-24 (clean pass) |
 | 5 | PDF long-tail (~17 sources) | ~50 | pending |
 | 4 | HTML sources (28) | 78 | pending |
 | 3 | transcript sources (9) | 73 | pending — convention decision first |
@@ -231,19 +231,65 @@ didn't exist before this audit. It anchors three claims:
 
 ---
 
-## Tier 2 — written testimony PDFs (pending)
+## Tier 2 — written testimony PDFs
 
-Targets: `government/oversight-house-gov-fravor-written-testimony-20230726.pdf`
-(30 quotes), `government/docs-house-gov-graves-written-testimony-20230726.pdf`
-(34 quotes), `government/oversight-house-gov-grusch-written-testimony-20230726.pdf`
-(23 quotes). 87 quotes total.
+Complete 2026-04-24. Commit TBD.
 
-These are contributor-authored PDFs submitted to the committee via
-word processor. Expected clean text-native extraction. Methodology:
-spot-check extraction condition per source; run verbatim-quote check
-against pdftotext output; surface any findings. Likely small
-number (0–2 per projection, based on Tier 1's drift rate applied
-to a smaller sample).
+**Sources audited** (87 quotes total across 6 artifacts — 3 document
+nodes plus the 3 witness person nodes that duplicate a subset):
+
+| Source | Producer | Pages | Quotes |
+|---|---|---:|---:|
+| `government/oversight-house-gov-fravor-written-testimony-20230726.pdf` | Acrobat PDFMaker 23 (Word) → Adobe PDF Library 23.3.20 | 3 | 30 |
+| `government/docs-house-gov-graves-written-testimony-20230726.pdf` | Skia/PDF m117 (Google Docs Renderer) | 5 | 34 |
+| `government/oversight-house-gov-grusch-written-testimony-20230726.pdf` | PScript5.dll → Acrobat Distiller 23.0 (Word) | 3 | 23 |
+
+**Methodology.** Three-step verification per source, total ~10
+minutes per PDF:
+1. PDF metadata inspection (producer chain reveals the authoring
+   pipeline — tells us what to expect from extraction)
+2. pdftotext scan for suspect Unicode glyphs (daggers, unusual
+   substitutions, fraction / section-sign edge cases) — programmatic
+   check
+3. Visual verification via VLM page rendering — compare against
+   pdftotext output for faithfulness
+
+**Extraction condition.** All three sources: **text-native,
+pdftotext faithful.** No extraction artifacts found. No `.txt`
+siblings required.
+
+**Findings.** Zero. All 87 quotes currently pass the unconditional
+verbatim-quote check (confirmed via pre-commit gates at Tier 2 exit).
+Because pdftotext is faithful for each source, the validator's
+"pass" is substantively meaningful — these 87 quotes are genuinely
+verified against the original document content, not just against a
+possibly-corrupted extract. No contributor drift, no fabricated
+content, no quote-mark convention issues.
+
+**Notable observation — Distiller behavior varies by content.** The
+Grusch written testimony PDF uses the same Acrobat Distiller 23.0
+pipeline that produced the hearing transcript PDF (Tier 1's
+extraction-lossy case). But the Grusch testimony PDF extracts
+cleanly — no `‡` for `½`, no font-encoding artifacts, nothing.
+This suggests the hearing-transcript Unicode-mapping failure is
+specific to character combinations or document structure in that
+particular file, not a blanket property of the Distiller tool.
+Practical implication: Distiller-produced PDFs are not
+automatically extraction-lossy; individual inspection per source
+is what classifies them. The extraction_type enum captures source
+CONDITIONS, not production-tool identities.
+
+**Relevance to BACKLOG #21.** The "alternate PDF extraction tool"
+hypothesis (#21) was framed around the hearing transcript's
+Unicode-mapping issue. Tier 2 provides a useful data point: most
+Distiller PDFs don't need alternate tooling. If a second
+extraction-lossy case surfaces in Tier 5 (PDF long-tail), #21's
+evaluation becomes more valuable; if not, #21 stays deferred as a
+single-case fix no other corpus source would benefit from.
+
+**Audit time.** ~30 minutes across all three sources. Significantly
+faster than Tier 1 (which required a full 54-page transcription).
+Tier 2's speed is the baseline for text-native audits going forward.
 
 ---
 
@@ -353,7 +399,25 @@ executes:
   surface new conditions. Each addition is a small design decision,
   not a retrofit.
 
-**From Tier 2:** *(to be populated)*
+**From Tier 2:**
+- Text-native PDFs from standard word-processor pipelines (Word
+  + Adobe PDFMaker, Word + Acrobat Distiller for short docs,
+  Google Docs Skia) produce faithful pdftotext output. The
+  existing unconditional verbatim-quote check is substantively
+  meaningful when pdftotext is faithful — no `.txt` sibling
+  needed.
+- Producer-tool identity doesn't classify extraction condition on
+  its own. Grusch written testimony = same Acrobat Distiller 23.0
+  as the hearing-transcript extraction-lossy case, but extracts
+  cleanly. Per-source inspection is what classifies.
+- Three-step verification (metadata → pdftotext suspect-char scan →
+  visual VLM check) is the right lightweight methodology for text-
+  native PDFs. ~10 minutes per source. Scales to Tiers 4 and 5.
+- "Clean pass" audits have real value — they convert the validator's
+  "quote matches pdftotext" result from "possibly meaningful" to
+  "substantively meaningful" once pdftotext is verified faithful.
+  Recording the verification is what makes the audit state
+  durable.
 
 **From Tier 3:** *(to be populated)*
 
