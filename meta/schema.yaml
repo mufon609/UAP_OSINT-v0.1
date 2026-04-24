@@ -1154,7 +1154,7 @@ types:
 
 manifest_entry:
   required: [url, format, status, archive_status]
-  optional: [path, sha256, archived_date, wayback_date, wayback_skip, note, category]
+  optional: [path, sha256, archived_date, wayback_date, wayback_skip, note, category, extraction_type]
   conditionally_required:
     path: "status == archived"       # must be set when the file is archived locally
     sha256: "status == archived"     # SHA256 of the archived file; integrity backstop
@@ -1173,6 +1173,24 @@ manifest_entry:
   # Validator enforces consistency against status / path / wayback_date.
   # Contributors don't hand-maintain this field; the scripts do.
   format_values: [pdf, html, txt, video, transcript]
+  extraction_type_values: [text-native, ocr-scan]
+  # `extraction_type` classifies how the archived file yields text. Optional;
+  # defaults to `text-native` when absent (legacy entries pre-field).
+  #   text-native — PDF with a clean text layer, HTML, plain text, or any
+  #                 source whose extracted bytes are a faithful rendering
+  #                 of the original.
+  #   ocr-scan    — scanned PDF whose text came from OCR. Extraction may
+  #                 carry character-level corruptions (e.g. `UAP-telated`
+  #                 for `UAP-related`, `compatrtmented` for `compartmented`)
+  #                 that the verbatim-quote check cannot detect — both the
+  #                 quote and the extract carry the same corrupted form.
+  # The field is ingestion-pipeline metadata, not reader-visible. Its purpose
+  # is to drive heavier extraction handling (text-layer pull, modern OCR,
+  # VLM on page images, or visual verification against the original) before
+  # quotes derived from the source land in any node. Quotes in node bodies
+  # are not flagged with the source's extraction_type — confirmation against
+  # the underlying original is a precondition for inclusion, not a rendered
+  # claim. See meta/conventions.md for the principle.
   # `category` is derived from path prefix (government/, news/, etc.) unless overridden
   # `sha256` detects local file corruption, accidental overwrite, and silent
   # substitution. Computed at archive-time by manifest.py add; re-verified

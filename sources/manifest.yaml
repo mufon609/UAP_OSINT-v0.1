@@ -85,6 +85,7 @@
   archived_date: '2026-04-22'
   sha256: 16100657d1ae91fbb6c0ad6b7e98113c40d32275c1e7acdb83a3fb09daa48a56
   archive_status: 1
+  extraction_type: ocr-scan
 - url: https://burchett.house.gov/media/press-releases/congressman-burchetts-statement-after-uap-hearing-held-house-oversight
   format: html
   status: archived

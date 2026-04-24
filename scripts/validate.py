@@ -518,6 +518,53 @@ def check_manifest_archive_status():
 
 
 # =============================================================================
+# Manifest extraction_type enum check
+#
+# Optional field per schema.yaml manifest_entry.extraction_type_values:
+# [text-native, ocr-scan]. Drives ingestion-pipeline behavior, not
+# reader-visible rendering. Absence defaults to text-native (legacy
+# entries pre-field). When present, the value must be one of the
+# enum members; unknown values fail loudly so typos can't silently
+# disable downstream OCR-handling logic.
+# =============================================================================
+
+
+_EXTRACTION_TYPE_VALUES = ("text-native", "ocr-scan")
+
+
+def check_manifest_extraction_type():
+    """Verify extraction_type values against the schema enum when present."""
+    issues = []
+    if not MANIFEST_PATH.exists():
+        return issues
+
+    try:
+        with open(MANIFEST_PATH) as f:
+            entries = yaml.safe_load(f) or []
+    except yaml.YAMLError:
+        # Checksum check already reported the parse failure
+        return issues
+
+    if not isinstance(entries, list):
+        return issues
+
+    rel = "sources/manifest.yaml"
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        if "extraction_type" not in entry:
+            continue
+        et = entry.get("extraction_type")
+        if et not in _EXTRACTION_TYPE_VALUES:
+            url = entry.get("url", "(no url)")
+            issues.append(Issue(rel, "error",
+                f"extraction_type must be one of {list(_EXTRACTION_TYPE_VALUES)}; "
+                f"got {et!r} (URL: {url})"))
+
+    return issues
+
+
+# =============================================================================
 # Verbatim-quote check — against archived source files
 # =============================================================================
 
@@ -1278,6 +1325,7 @@ def main():
     # verifications may be validating against altered source material.
     all_issues.extend(check_manifest_checksums())
     all_issues.extend(check_manifest_archive_status())
+    all_issues.extend(check_manifest_extraction_type())
 
     # Governance-file validation (governance-frontmatter check). Every .md under meta/ carries
     # id / type / schema_version / created frontmatter; templates also have
