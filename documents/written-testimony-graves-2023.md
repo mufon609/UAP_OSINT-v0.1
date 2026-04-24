@@ -54,7 +54,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶2 |
 
 ---
@@ -67,7 +66,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶2 |
 
 ---
@@ -80,7 +78,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶3 |
 
 ---
@@ -93,7 +90,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶4 |
 
 ---
@@ -106,7 +102,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶4 |
 
 ---
@@ -119,7 +114,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶6 |
 
 ---
@@ -132,7 +126,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶6 |
 
 ---
@@ -145,7 +138,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶6 |
 
 ---
@@ -158,7 +150,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶7 |
 
 ---
@@ -171,7 +162,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶7 |
 
 ---
@@ -184,7 +174,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶7 |
 
 ---
@@ -197,7 +186,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶8 |
 
 ---
@@ -210,7 +198,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶9 |
 
 ---
@@ -223,7 +210,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶10 |
 
 ---
@@ -236,7 +222,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶11 |
 
 ---
@@ -249,7 +234,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶12 |
 
 ---
@@ -262,7 +246,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶13 |
 
 ---
@@ -275,7 +258,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶13 |
 
 ---
@@ -288,7 +270,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶16 |
 
 ---
@@ -301,7 +282,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶20 |
 
 ---
@@ -314,7 +294,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶25 |
 
 ---
@@ -327,7 +306,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶26 |
 
 ---
@@ -340,7 +318,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶27 |
 
 ---
@@ -353,7 +330,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶29 |
 
 ---
@@ -366,7 +342,6 @@ The document is a primary source for what Ryan Graves stated in writing for subm
 |---|---|
 | Attributed to | Ryan Graves, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶29 |
 
 ---

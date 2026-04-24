@@ -74,7 +74,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 648 |
 
 ---
@@ -87,7 +86,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 652 |
 
 ---
@@ -100,7 +98,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 656 |
 
 ---
@@ -113,7 +110,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 661 |
 
 ---
@@ -126,7 +122,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 666 |
 
 ---
@@ -139,7 +134,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 671 |
 
 ---
@@ -152,7 +146,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 676 |
 
 ---
@@ -165,7 +158,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 679 |
 
 ---
@@ -178,7 +170,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 684 |
 
 ---
@@ -191,7 +182,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 690 |
 
 ---
@@ -204,7 +194,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 699 |
 
 ---
@@ -217,7 +206,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 716 |
 
 ---
@@ -230,7 +218,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Chair Glenn Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 948 |
 
 ---
@@ -243,7 +230,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Chair Glenn Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 997 |
 
 ---
@@ -256,7 +242,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Chair Glenn Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1006 |
 
 ---
@@ -269,7 +254,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Robert Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1088 |
 
 ---
@@ -282,7 +266,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Robert Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1133 |
 
 ---
@@ -295,7 +278,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1169 |
 
 ---
@@ -308,7 +290,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1281 |
 
 ---
@@ -321,7 +302,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1288 |
 
 ---
@@ -334,7 +314,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1308 |
 
 ---
@@ -347,7 +326,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1421 |
 
 ---
@@ -360,7 +338,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1454 |
 
 ---
@@ -373,7 +350,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1468 |
 
 ---
@@ -386,7 +362,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1485 |
 
 ---
@@ -399,7 +374,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Maxwell Frost, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1708 |
 
 ---
@@ -412,7 +386,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Rep. Alexandria Ocasio-Cortez (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1922 |
 
 ---
@@ -425,7 +398,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Andy Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1990 |
 
 ---
@@ -438,7 +410,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Andy Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2045 |
 
 ---
@@ -451,7 +422,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Rep. Matt Gaetz (waived on; yielded time from Burchett), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2201 |
 
 ---
@@ -464,7 +434,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2268 |
 
 ---
@@ -477,7 +446,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2277 |
 
 ---
@@ -490,7 +458,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2657 |
 
 ---
@@ -503,7 +470,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2676 |
 
 ---
@@ -516,7 +482,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2689 |
 
 ---
@@ -529,7 +494,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (closing 3-minute round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2698 |
 
 ---
@@ -542,7 +506,6 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (closing 3-minute round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2729 |
 
 ---

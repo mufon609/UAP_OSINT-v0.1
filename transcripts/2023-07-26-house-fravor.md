@@ -72,7 +72,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 805-810 |
 
 ---
@@ -85,7 +84,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 811-815 |
 
 ---
@@ -98,7 +96,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 816-822 |
 
 ---
@@ -111,7 +108,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 823-830 |
 
 ---
@@ -124,7 +120,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 831-839 |
 
 ---
@@ -137,7 +132,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 840-848 |
 
 ---
@@ -150,7 +144,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 853-855 |
 
 ---
@@ -163,7 +156,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 856-863 |
 
 ---
@@ -176,7 +168,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 864-869 |
 
 ---
@@ -189,7 +180,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 870-872 |
 
 ---
@@ -202,7 +192,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 873-874 |
 
 ---
@@ -215,7 +204,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 875-879 |
 
 ---
@@ -228,7 +216,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 880-883 |
 
 ---
@@ -241,7 +228,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 884-888 |
 
 ---
@@ -254,7 +240,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 889-891 |
 
 ---
@@ -267,7 +252,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 892-897 |
 
 ---
@@ -280,7 +264,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 898-902 |
 
 ---
@@ -293,7 +276,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 903-905 |
 
 ---
@@ -306,7 +288,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 908-911 |
 
 ---
@@ -319,7 +300,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Chairman Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 974-978 |
 
 ---
@@ -332,7 +312,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Chairman Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 989-995 |
 
 ---
@@ -345,7 +324,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Burchett, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1207-1208 |
 
 ---
@@ -358,7 +336,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Burchett, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1243-1246 |
 
 ---
@@ -371,7 +348,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Burchett, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1257-1263 |
 
 ---
@@ -384,7 +360,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1356-1361 |
 
 ---
@@ -397,7 +372,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1365-1369 |
 
 ---
@@ -410,7 +384,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1500-1506 |
 
 ---
@@ -423,7 +396,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Frost, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1692-1699 |
 
 ---
@@ -436,7 +408,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2030-2040 |
 
 ---
@@ -449,7 +420,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2352-2355 |
 
 ---
@@ -462,7 +432,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2360-2368 |
 
 ---
@@ -475,7 +444,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2377-2378 |
 
 ---
@@ -488,7 +456,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2381-2383 |
 
 ---
@@ -501,7 +468,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2394-2397 |
 
 ---
@@ -514,7 +480,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2403-2406 |
 
 ---
@@ -527,7 +492,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2439-2448 |
 
 ---
@@ -540,7 +504,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Raskin (second round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2628-2630 |
 
 ---
@@ -553,7 +516,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Burchett (second round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2708-2711 |
 
 ---
@@ -566,7 +528,6 @@ Fravor's opening statement — his service as retired Commander in the United St
 |---|---|
 | Attributed to | Q&A with Representative Burchett (second round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 2754-2761 |
 
 ---

@@ -69,7 +69,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 — Dietrich describing her in-cockpit thought process during the encounter |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1098 |
 
 > "It was unidentified. And that's why it was so unsettling to us. Because we weren't expecting it. We couldn't classify it,"
@@ -78,7 +77,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 967 |
 
 > "No predictable movement, no predictable trajectory,"
@@ -87,7 +85,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 972 |
 
 > "I felt the vulnerability of not having anything to defend ourselves,"
@@ -96,7 +93,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 978 |
 
 > "And then I felt confused when it disappeared."
@@ -105,7 +101,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 978 |
 
 > When we came back to the ship one of the first things I said was, "Does anybody have a copy of the FAR/AIM Manual? I need to find that page with that phone number to call to report a UFO." But the other aircraft in my flight, the lead aircraft, was my commanding officer, Commander Dave Fravor, and he was the skipper of the squadron, the most senior aviator in my chain of command, and so I didn't call a phone number or call the FAA directly, I deferred to him and his seniority in terms of reporting the incident up the chain of command, and taking any follow that would be appropriate.
@@ -114,7 +109,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 117-124 |
 
 > [59:18] that's actually how I got a visual on the Tic Tac is because somebody said hey look in the water uh and we saw this turning water um I thought in the first moment that whatever we had been in Vector to intercept had crashed uh and my heart sank
@@ -123,7 +117,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 478-481 |
 
 > [56:42] we all gathered around and we watched uh several times this um black and white uh Fleer footage it's was much clearer uh the resolution uh than what you see on now if you just Google Tic Tac video video um because it was the original tape
@@ -132,7 +125,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 458-461 |
 
 > [11:22] we estimated that it's about the size of our own fuselage uh so about 30 to 40 feet long and smooth just like a a Tic Tac uh breath mint uh sort of a matte white color with no windows no flight control surfaces uh no visible forms of
@@ -141,7 +133,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | American Veterans Center interview (recorded 2024-11-09) |
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 247-254 |
 
 > [13:45] moving so it was changing air speed it was changing direction it was changing angles in a way that didn't make sense um and didn't adhere to our understanding of physics and gravity and um all of the aerodynamics that we study
@@ -150,7 +141,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | American Veterans Center interview (recorded 2024-11-09) |
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 300-305 |
 
 > [15:26] it was moving in a way that we couldn't recognize. It didn't follow our laws of physics. It didn't have our turn radius or our acceleration.
@@ -159,7 +149,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 391-395 |
 
 > [58:44] Uh the visual uh for me again as the most junior pilot uh was 10 12 seconds. Uh but for the other more senior uh aviators and the crew it was a few minutes.
@@ -168,7 +157,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Linda Hall Library UAP Scientific Context panel Q&A (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1426-1432 |
 
 
@@ -180,7 +168,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1086 |
 
 > Because I was in a government aircraft, because I was on the clock. And so I feel a responsibility to s-- to share what I can. And it is unclassified.
@@ -189,7 +176,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1086 |
 
 > You know, I think that over beers, we've sort of said, "Hey man, if I saw this solo, I don't know that I would have come back and said anything," because it sounds so crazy when I say it.
@@ -198,7 +184,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1104 |
 
 > I thought, well maybe I could have an adventure, maybe I could do something fun first and then settle down later in life, and so that's why I decided to pursue Naval aviation, and I did that through the NROTC scholarship at George Washington University, so four years of going and having a normal college experience, but also doing some summer training with the Navy, and some Naval science courses throughout the year. And then I graduated and commissioned in May of 2001, into the Navy.
@@ -207,7 +192,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 47-53 |
 
 > this was confirmed a few years later when I was contacted by members of the team in the Pentagon who were investigating UAP incidents. I assume that it was part of this ATIP being referred to in the media, the first generation being ATIP, and then the current-
@@ -216,7 +200,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 142-145 |
 
 > So from about 2009 until this year, I've been in contact with, in a one-way flow. They call me in to answer questions about this particular incident, and maybe show or share something that they have from a different incident and say, "Is what you saw? Is this similar?" I'll say yes or no, but they're not giving me a download of everything else that they're looking at.
@@ -225,7 +208,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 154-158 |
 
 > But my great-grandfather, Roman Starzl, was one of the, I guess, pioneers of the science fiction genre. He was an author and publisher of a newspaper in a small town in Iowa, and so he wrote a lot, but he did write these science fiction stories that were gobbled up by folks when that genre was beginning in that era.
@@ -234,7 +216,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 178-181 |
 
 > Yeah, so Roman's son, Thomas, who was my grandfather's brother, Thomas Starzl, he was the pioneer of human organ transplantation.
@@ -243,7 +224,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 192-193 |
 
 > appeared to respond in a way we didn't recognize
@@ -252,7 +232,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14 |
 | Source | [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 15 |
 
 > didn't appear to have any flight control surfaces or means of propulsion
@@ -261,7 +240,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14 |
 | Source | [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 15 |
 
 > [10:03] I was a lieutenant Junior grade I wasn't even a full Lieutenant at the time uh that that happened
@@ -270,7 +248,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 91-93 |
 
 > [1:00:56] again I was a lieutenant JG at the time yeah there's ensen and Lieutenant JG lieutenant you know so I had had very little um uh rank or authority or anything
@@ -279,7 +256,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 491-494 |
 
 > [1:02:00] and I was a lieutenant JG it wasn't my place to um investigate or follow up or follow through in that way
@@ -288,7 +264,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 499-501 |
 
 > [5:25] I really after after that uh you know the few days of excitement uh that followed I forgot about it uh you know wasn't on my mind I certainly wasn't uh trying to figure it out or anything until um you know several years later when uh the Office of Naval intelligence folks contacted me and they were doing their investigation and their followup
@@ -297,7 +272,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 54-56 |
 
 > they asked me to be their first advisor uh so it's a unpaid role
@@ -306,7 +280,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 228 |
 
 > [19:37] I was fortunate to um attend the first meeting of the NASA independent study uh so it was hosted by NASA
@@ -315,7 +288,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 166-167 |
 
 > [55:28] another single aircraft launched uh with Chad and the back seat and uh and his Pilot they looked for found and recorded the Fleer footage uh that we believe to be the same thing uh that the same Tic Tac that we encountered
@@ -324,7 +296,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 449-451 |
 
 > My colleagues and I encountered something we could not explain: an anomalous flying object in broad daylight against a clear blue sky and calm waters.
@@ -333,7 +304,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 41 |
 
 > We merged and visually acquired the object, a matte white oblong shape with no apparent flight control surfaces, visible means of propulsion, or smoke trail. Yet it outmaneuvered us with ease.
@@ -342,7 +312,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 41 |
 
 > Are UFOs real? Yes. Are they a foreign adversary? Maybe. Are they extraterrestrial in nature? It's possible. Should we keep investigating? Absolutely.
@@ -351,7 +320,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 45 |
 
 > The partnership between multiple objective parties, systematic data collection, and careful analytical methods will move us toward reporting and listening, away from ridicule and stigma. We can move the needle away from the unknown and toward the known.
@@ -360,7 +328,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 62 |
 
 > Be vigilant. Stay curious. Look up. We have barely tasted the sky.
@@ -369,7 +336,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 64 |
 
 > These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.
@@ -378,7 +344,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1247 |
 
 > She logged more than 1,250 flight hours, 375 carrier-arrested landings, and was awarded a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom (OIF) and Operation Enduring Freedom (OEF). She was also awarded a Bronze Star medal for a boots-on-ground deployment to Afghanistan in 2010.
@@ -387,7 +352,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed byline in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | author byline |
 
 > [2:17] so I recently retired and moved to Boulder after serving 20 years in the Navy. The first 10 years was operational as a pilot and then deploying as an engineer. And then the last 10 years, I was living the charmed life of an academic, teaching at the Naval Academy in Annapolis, and then the consortium of schools in DC.
@@ -396,7 +360,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Merged podcast Ep. 014 with Ryan Graves (published 2023-08-31) |
 | Source | [archived source](../sources/transcripts/merged-podcast-014-dietrich-2023-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 82-92 |
 
 > [11:00] I just joined the squadron in July of 2004. So having just come out of flight school, just out of the-- I had just done the midair refueling syllabus. I had just done my carrier qual in that particular aircraft. So I really felt and really was new. I still had my FNG named Patch.
@@ -405,7 +368,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Merged podcast Ep. 014 with Ryan Graves (published 2023-08-31) |
 | Source | [archived source](../sources/transcripts/merged-podcast-014-dietrich-2023-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 334-343 |
 
 > [30:38] I I had a UAP encounter and I was never told to be quiet about it it was never classified we were never required to sign an NDA um there were never Men In Black that came and took tapes or you know removed data or anything like that so um I haven't had that experience and I don't know of anybody else who has
@@ -414,7 +376,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Calling All Beings podcast Ep. 104 (published 2024-01-05) |
 | Source | [archived source](../sources/transcripts/calling-all-beings-104-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 714-722 |
 
 > [9:24] that so I was uh new to the Squadron I was a lieutenant Junior grade and uh on the wing of the commanding officer uh Commander David fraver uh he had a senior lieutenant in his back seat and I had a department head a lieutenant commander in my back seat
@@ -423,7 +384,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | American Veterans Center interview (recorded 2024-11-09) |
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 206-212 |
 
 > [12:07] I I graduated and commissioned through the ROC program in 2001. Went through flight school, had my first flight on 911, uh which was a paradigm shift for the world and for me personally and professionally. Uh and then I ended up in the strike fighter pipeline. So I flew F-18 Super Hornets for the Navy uh off of the USS Nimttz aircraft carrier uh from the squadron VFA41.
@@ -432,7 +392,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 311-321 |
 
 > [18:07] I maintain an aggressively neutral uh stance. So, by definition for me, UFO or UAP is unidentified. That's what the U stands
@@ -441,7 +400,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 449-454 |
 
 > [45:48] 2017 article came about and um there was a Pentagon report that again wasn't classified because we don't know what we saw that day, but included our names and information. And so, it was released, posted on the internet somehow, and we
@@ -450,7 +408,6 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | lines 1111-1117 |
 
 ---

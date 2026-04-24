@@ -65,7 +65,7 @@ Media renderer:
     + `context_extrinsic` + manifest sha256 lookup. Rows with empty
     values skip (matches transcript Publication Record pattern) —
     Summary adapts to what the source + contributor populated.
-  - Key Passages use the shared `_render_verification_block` helper;
+  - Key Passages use the shared `_render_attribution_block` helper;
     `source.location` flows through flexibly (timestamp /
     timestamp+coordinate / spatial-only).
   - May be empty when the source has no extractable speech or
@@ -359,7 +359,6 @@ def render_key_passages(artifact):
             lines.append(f"| Attributed to | {attribution} |")
         if src_link:
             lines.append(f"| Source | {src_link} |")
-        lines.append("| Verified | ✅ Confirmed — verified verbatim against archived source |")
         if loc:
             lines.append(f"| Location | {loc} |")
         blocks.append("\n".join(lines))
@@ -545,11 +544,14 @@ def render_affiliations(artifact):
     return "\n".join(lines) + "\n"
 
 
-def _render_verification_block(quote, artifact):
-    """Render the 3-field verification table for a person statement quote.
-    Composes an Attributed-to line from quote.context (when set) + the
-    quote's statement_date (when set). If the date already appears in
-    the context string, skip the append to avoid a doubled-date render."""
+def _render_attribution_block(quote, artifact):
+    """Render the attribution table for a quote — Attributed-to / Source /
+    Location. Composes an Attributed-to line from quote.context (when set)
+    and quote.statement_date (when set); skips the date append if it
+    already appears in the context string. The block carries no
+    verification marker — confirmation against the underlying source is
+    a precondition for inclusion (enforced by validate.py's verbatim-quote
+    check), not a rendered claim. See meta/conventions.md."""
     ctx = quote.get("context") or ""
     date = quote.get("statement_date") or ""
     if date and date in ctx:
@@ -570,7 +572,6 @@ def _render_verification_block(quote, artifact):
         rows.append(f"| Attributed to | {attributed_to} |")
     if src_link:
         rows.append(f"| Source | {src_link} |")
-    rows.append("| Verified | ✅ Confirmed — verified verbatim against archived source |")
     if loc:
         rows.append(f"| Location | {loc} |")
     return "\n".join(rows)
@@ -583,7 +584,7 @@ def _render_statement_block(quote, artifact):
     for qline in text.split("\n"):
         lines.append(f"> {qline}" if qline else ">")
     lines.append("")
-    lines.append(_render_verification_block(quote, artifact))
+    lines.append(_render_attribution_block(quote, artifact))
     return "\n".join(lines)
 
 
@@ -1176,7 +1177,7 @@ def render_transcript_key_passages(artifact):
         for qline in text.split("\n"):
             lines.append(f"> {qline}" if qline else ">")
         lines.append("")
-        lines.append(_render_verification_block(q, artifact))
+        lines.append(_render_attribution_block(q, artifact))
         blocks.append("\n".join(lines))
     return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
 
@@ -1459,7 +1460,7 @@ def render_media_versioning(artifact, fm):
 
 def render_media_key_passages(artifact):
     """Key Passages on media — verbatim speech or visible text. Uses
-    the shared `_render_verification_block` so the flexible source.location
+    the shared `_render_attribution_block` so the flexible source.location
     (timestamp / timestamp+coordinate / spatial-only) flows through.
     H3 per quote using `significance`. May be empty when the source has
     no extractable speech or visible text."""
@@ -1482,7 +1483,7 @@ def render_media_key_passages(artifact):
         for qline in text.split("\n"):
             lines.append(f"> {qline}" if qline else ">")
         lines.append("")
-        lines.append(_render_verification_block(q, artifact))
+        lines.append(_render_attribution_block(q, artifact))
         blocks.append("\n".join(lines))
     return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
 
@@ -1739,7 +1740,7 @@ def render_org_key_passages(artifact):
         for qline in text.split("\n"):
             lines.append(f"> {qline}" if qline else ">")
         lines.append("")
-        lines.append(_render_verification_block(q, artifact))
+        lines.append(_render_attribution_block(q, artifact))
         blocks.append("\n".join(lines))
     return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
 
@@ -2015,7 +2016,7 @@ def render_location_key_passages(artifact):
         for qline in text.split("\n"):
             lines.append(f"> {qline}" if qline else ">")
         lines.append("")
-        lines.append(_render_verification_block(q, artifact))
+        lines.append(_render_attribution_block(q, artifact))
         blocks.append("\n".join(lines))
     return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
 

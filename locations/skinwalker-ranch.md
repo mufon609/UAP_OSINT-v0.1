@@ -74,7 +74,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/news/aliendave-nids-ranch-mirror-19961020.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶3 |
 
 ---
@@ -86,7 +85,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/news/aliendave-nids-ranch-mirror-19961020.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶4 |
 
 ---
@@ -98,7 +96,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/news/aliendave-nids-ranch-mirror-19961020.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶6 |
 
 ---
@@ -110,7 +107,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/news/aliendave-nids-ranch-mirror-19961020.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶7 |
 
 ---
@@ -122,7 +118,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/news/theufochronicles-myers-family-20200412.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Garth Myers 2009 interview transcript |
 
 ---
@@ -134,7 +129,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/social/nidsci-org-wayback-20021128.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | whatsnew.html page heading |
 
 ---
@@ -146,7 +140,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/news/vice-fugal-skinwalker-owner-20200310.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶3 |
 
 ---
@@ -158,7 +151,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/news/vice-fugal-skinwalker-owner-20200310.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body |
 
 ---
@@ -170,7 +162,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 8742, 27 October 2022 timeline entry |
 
 ---
@@ -182,7 +173,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/news/deseret-frequent-fliers-19960630.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Terry Sherman quote, Zack Van Eyck article |
 
 ---
@@ -194,7 +184,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/uintah-parcel-150050001-20260420.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Taxing Description |
 
 ---
@@ -206,7 +195,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/uintah-parcel-150050002-20260420.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Taxing Description |
 
 ---
@@ -218,7 +206,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/uintah-parcel-150050004-20260420.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Taxing Description |
 
 ---
@@ -230,7 +217,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/uintah-parcel-150040001-20260420.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Taxing Description |
 
 ---
@@ -242,7 +228,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/uintah-parcel-150040002-20260420.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Taxing Description |
 
 ---
@@ -254,7 +239,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/uintah-parcel-150040003-20260420.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Taxing Description |
 
 ---
@@ -266,7 +250,6 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/uintah-parcel-140340003-20260420.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Taxing Description |
 
 ---

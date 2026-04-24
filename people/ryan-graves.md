@@ -55,7 +55,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | written testimony submitted for the July 26, 2023 House Oversight UAP hearing — opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 10 |
 
 > It has been more than a decade since my squadron began witnessing advanced UAP demonstrating complex maneuvers on a regular basis, and we still don't have answers.
@@ -64,7 +63,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | written testimony submitted for the July 26, 2023 House Oversight UAP hearing, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 16 |
 
 > I joined the U.S. Navy in 2009. As a pilot, I was trained to be an expert observer, tasked with identifying any aircraft within our operating area. In 2014, I was near Virginia Beach as part of VFA-11, a Navy Fighter/Attack Squadron made up of F/A-18F Super Hornets. Upon an upgrade to our radar system, we began to detect unknown objects in our airspace. Initially dismissed as software glitches, we soon corroborated these radar tracks with infrared sensors, confirming their physical presence.
@@ -73,7 +71,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | written testimony submitted for the July 26, 2023 House Oversight UAP hearing — the "My experience — UAP encounters in W-72" section, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 43 |
 
 > Over time, UAP sightings became an open secret among our aircrew. They were a common occurrence, seen by most of my colleagues on radar and occasionally up close. The sightings were so frequent that they became part of daily briefs.
@@ -82,7 +79,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | written testimony submitted for the July 26, 2023 House Oversight UAP hearing, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 50 |
 
 > The UAP we encountered and tracked on multiple sensors behaved in ways that surpassed our understanding and technology. The UAP could accelerate at speeds up to Mach 1, hold their position against hurricane-force winds, and outlast our fighter jets, operating continuously throughout the day. They did not have any visible means of lift, control surfaces or propulsion — nothing that resembled normal aircraft with wings, flaps or engines. I am a formally trained engineer and I have no explanation for this.
@@ -91,7 +87,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | written testimony submitted for the July 26, 2023 House Oversight UAP hearing — "Advanced UAP defy conventional explanation" section, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 65 |
 
 > I founded Americans for Safe Aerospace to create a center of support, research, and public education for aircrew impacted by UAP encounters. We now have nearly 5,000 members and are actively working with more than 30 UAP witnesses who have approached us. I am also the Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics, where we have assembled a volunteer team of almost 80 PhDs and aerospace engineers dedicated to tackling the science around this issue.
@@ -100,7 +95,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | written testimony submitted for the July 26, 2023 House Oversight UAP hearing — opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 18 |
 
 > I was not. I was there when the pilot landed. He canceled the mission after. I was there. He was in the ready room with all his gear on with his mouth open and I asked him what the problem was and he said he almost hit one of those darn things.
@@ -109,7 +103,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2676 |
 
 > Some of the behaviors that we saw in our working area, we would see these objects being at 0.0 Mach —that is zero airspeed—over certain pieces of the ground. So, what that means just like a river if you throw a bobber in it is going to float downstream. These objects were staying completely stationary in category four hurricane winds. These same objects would then accelerate to supersonic speeds—1.1, 1.2 Mach—and they would do so in very erratic and quick behaviors that we do not—I do not have an explanation for.
@@ -118,7 +111,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Rep. Tim Burchett, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1169 |
 
 
@@ -130,7 +122,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | written testimony submitted for the July 26, 2023 House Oversight UAP hearing — the "My experience — UAP encounters in W-72" section, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 54 |
 
 > Recently, I have received confirmation that these encounters were also a shock to the chain of command from one of our advisors at ASA, Rear Admiral Tim Gallaudet, former head of National Oceanic and Atmospheric Administration, and Oceanographer of the Navy.
@@ -139,7 +130,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | written testimony submitted for the July 26, 2023 House Oversight UAP hearing — "Advanced UAP defy conventional explanation" section, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 72 |
 
 > While serving as an Admiral with Fleet Forces Command, he received a classified email on SIPRNET in 2015 from his boss, the Operations Commander, to all 1- and 2-star Admiral subordinates. The title of the email was "Urgent safety of flight issue." He attached the now famous GO-FAST UAP video from a Navy F/A-18, asking if anyone knew their origin, and expressed safety of flight concerns about multiple near mid-air collisions with UAP in the early warning area off Virginia Beach where my encounters occurred, noting they might shut down the exercise for safety reasons.
@@ -148,7 +138,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | written testimony submitted for the July 26, 2023 House Oversight UAP hearing — "Advanced UAP defy conventional explanation" section, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-graves-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 76 |
 
 > Certainly. In the 2003 timeframe, a large group of Boeing contractors were operating near one of the launch facilities at Vandenberg Air Force Base when they observed a very large 100-yard sighted red square approach the base from the ocean and hover at low altitude over one of the launch facilities. This object remained for about 45 seconds or so before darting off over the mountains. There was a similar event within 24 hours, later in the evening. This was a morning event, I believe 8:45 in the morning. Later in the evening, post sunset, there were reports of other sightings on base including some aggressive behaviors. These objects were approaching some of the security guards at rapid speeds before darting off, and this is information that was received through one of the witnesses that have approached me at Americans for Safe Aerospace.
@@ -157,7 +146,6 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Rep. Anna Paulina Luna, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1421 |
 
 ---

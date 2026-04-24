@@ -54,7 +54,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶2 |
 
 ---
@@ -67,7 +66,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶2 |
 
 ---
@@ -80,7 +78,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶6 |
 
 ---
@@ -93,7 +90,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶6 |
 
 ---
@@ -106,7 +102,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶8 |
 
 ---
@@ -119,7 +114,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶8 |
 
 ---
@@ -132,7 +126,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶12 |
 
 ---
@@ -145,7 +138,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶13 |
 
 ---
@@ -158,7 +150,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶2 |
 
 ---
@@ -171,7 +162,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶3 |
 
 ---
@@ -184,7 +174,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶3 |
 
 ---
@@ -197,7 +186,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶5 |
 
 ---
@@ -210,7 +198,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶6 |
 
 ---
@@ -223,7 +210,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶7 |
 
 ---
@@ -236,7 +222,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶9 |
 
 ---
@@ -249,7 +234,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶9 |
 
 ---
@@ -262,7 +246,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶9 |
 
 ---
@@ -275,7 +258,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶10 |
 
 ---
@@ -288,7 +270,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶10 |
 
 ---
@@ -301,7 +282,6 @@ The document is a primary source for what Fravor stated in writing on July 25, 2
 |---|---|
 | Attributed to | David Fravor, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | ¶4 |
 
 ---

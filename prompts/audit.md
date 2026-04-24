@@ -14,14 +14,17 @@ The audit target is: **{PATH}**  (ask the user if not specified)
 1. **Evidentiary integrity** — every confirmed claim traces to a
    primary source archived in `sources/` and registered in
    `sources/manifest.yaml`. Flag any claim that does not.
-2. **Quote verbatim check** — every `> blockquote` has a verification
-   block. Re-verify a sample of quotes against the archived source
-   file. The verbatim-quote check mechanically verifies every
-   `✅ Confirmed — verified verbatim` marker as a substring match
-   against the cited source file, so a clean `validate.py` run covers
-   this — but spot-check a few for semantic reading (source location
-   refs can be right-but-imprecise; the mechanical check won't catch
-   that).
+2. **Quote verbatim check** — every `> blockquote` has an attribution
+   block (Attributed to / Source / Location). The verbatim-quote check
+   in `validate.py` runs unconditionally on every quote whose Source
+   row points at an archived file under `sources/`, substring-matching
+   the quote against the extracted source. A clean `validate.py` run
+   covers the mechanical case — but spot-check a few for semantic
+   reading (source location refs can be right-but-imprecise; the
+   substring check won't catch that). No rendered marker accompanies
+   confirmed quotes — confirmation is a precondition for inclusion,
+   enforced by the validator, not displayed to the reader. See
+   `meta/conventions.md`.
 3. **Prose-drift check** — for artifacts of
    renderer-supported types (document, person, event, transcript,
    media, organization, location), re-run `validate-research.py
@@ -99,6 +102,8 @@ not direct edits to the node body. Pattern:
 - Hand-edit the node body on renderer-supported types — fix the
   artifact and regenerate
 - Silence the verbatim-quote check or the prose-drift check by
-  downgrading markers or acknowledging warnings as "legitimate
-  synthesis" when they are actual drift. Either source-match the
-  prose or capture the variance structurally.
+  acknowledging warnings as "legitimate synthesis" when they are
+  actual drift. Either source-match the prose / quote, or capture
+  the variance structurally; or if a quote can't be confirmed
+  against its source, remove it from the artifact rather than
+  letting it ship.

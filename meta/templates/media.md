@@ -93,7 +93,7 @@ corpus: {{corpus}}
 
 <!-- Verbatim content extracted from the source. Two extraction modes:
 
-     (1) AUDIO / VIDEO SPEECH — block quote + verification block with
+     (1) AUDIO / VIDEO SPEECH — block quote + attribution block with
          speaker attribution and timestamp Location:
 
          > "Look at that thing, dude."
@@ -102,9 +102,9 @@ corpus: {{corpus}}
          |---|---|
          | Attributed to | Unidentified F/A-18 pilot, Gimbal video |
          | Source | [archived MP4](../sources/video/gimbal.mp4) @ 00:00:32 |
-         | Verified | ✅ Confirmed — verified verbatim against archived media at timestamp 00:00:32 |
+         | Location | 00:00:32 |
 
-     (2) VISIBLE TEXT in image or video frame — block quote + verification
+     (2) VISIBLE TEXT in image or video frame — block quote + attribution
          block with in-frame location:
 
          > "FOR OFFICIAL USE ONLY"
@@ -112,8 +112,8 @@ corpus: {{corpus}}
          | Field | Value |
          |---|---|
          | Attributed to | Cover page marking visible in photograph |
-         | Source | [archived JPG](../sources/government/dird-01-cover.jpg), upper-right corner |
-         | Verified | ✅ Confirmed — verified verbatim against archived image, upper-right marking |
+         | Source | [archived JPG](../sources/government/dird-01-cover.jpg) |
+         | Location | upper-right corner |
 
      May be empty when the source has no extractable speech or visible
      text. Heavy speech content (full interview, full cockpit audio) should

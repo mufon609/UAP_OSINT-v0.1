@@ -25,13 +25,26 @@ Checks:
 
   Finding cross-ref consistency — entities listed must link back
 
-  Verbatim-quote check — for every '> blockquote' followed by a
-  verification block claiming '✅ Confirmed — verified verbatim',
-  extract the cited source file to plaintext and confirm the quote
-  appears as a substring (with whitespace/dash/quote-style
-  normalization). Errors if the quote is not present. Requires
-  `pdftotext` for PDF sources (poppler-utils on Linux); HTML/TXT
-  sources are read directly.
+  Verbatim-quote check — for every '> blockquote' followed by an
+  attribution block whose Source row points at an archived file under
+  `sources/`, extract the cited source to plaintext and confirm the
+  quote appears as a substring (with whitespace/dash/quote-style
+  normalization). Errors if the quote is not present, with a failure
+  message naming the node, approximate line number of the block-quote,
+  the cited source file, and a preview of the unmatched text.
+
+  Runs unconditionally — confirmation against the underlying source
+  is a precondition for inclusion in node bodies, not a marker the
+  contributor opts into. The check has no rendered counterpart in node
+  output (no Verified row) by design; the source link IS the evidence
+  for readers, this check is the mechanical backstop against silent
+  drift between an artifact's quote text and the source it claims to
+  draw on. See meta/conventions.md.
+
+  Requires `pdftotext` for PDF sources (poppler-utils on Linux);
+  HTML/TXT sources read directly. PDFs flagged
+  `extraction_type: ocr-scan` in sources/manifest.yaml prefer a
+  same-stem `.txt` sibling (clean transcription) over pdftotext output.
 
   Manifest-checksum check — for every archived entry in
   sources/manifest.yaml, recompute SHA256 and compare to stored value.
@@ -183,10 +196,16 @@ def section_has_table(section_text):
     )
 
 
-def count_quote_blocks_and_verifications(section_text):
+def count_quote_blocks_and_attributions(section_text):
+    """Count `> blockquote` lines and `| Source | …` attribution rows in
+    a section. Used to enforce the structural rule that a section flagged
+    `requires_quote_attribution` either has no quotes (empty section is
+    fine) or has a Source row for each quote — the renderer always pairs
+    a block-quote with an attribution table whose Source row points at
+    the cited archived file."""
     quotes = sum(1 for line in section_text.splitlines() if line.strip().startswith(">"))
-    verifications = sum(1 for line in section_text.splitlines() if "| Verified |" in line)
-    return quotes, verifications
+    attributions = sum(1 for line in section_text.splitlines() if line.strip().startswith("| Source |"))
+    return quotes, attributions
 
 
 # =============================================================================
@@ -743,9 +762,14 @@ def normalize_for_compare(text):
     return text.strip()
 
 
-def find_quote_verification_pairs(text):
-    """Yield (quote_text, source_ref, verified_text) for each quote block
-    followed by a verification table."""
+def find_quote_source_pairs(text):
+    """Yield (quote_text, source_ref, line_no) for each block-quote followed
+    by an attribution table containing a Source row.
+
+    line_no is the 1-indexed line number of the block-quote's first line in
+    the original text \u2014 surfaced in failure messages so contributors can
+    locate the quote in the rendered node directly.
+    """
     for bq_match in BLOCKQUOTE_BLOCK.finditer(text):
         raw = bq_match.group(1)
         # Strip leading "> " from each line, join with spaces
@@ -757,32 +781,32 @@ def find_quote_verification_pairs(text):
         quote_text = quote_text.strip()
         if not quote_text:
             continue
-        # Look for verification table within ~2500 chars after the quote
+        # Look for Source row within ~2500 chars after the quote
         after = text[bq_match.end():bq_match.end() + 2500]
-        ver_match = re.search(
-            r"^\|\s*Verified\s*\|\s*([^|]+?)\s*\|",
-            after, re.MULTILINE,
-        )
-        if not ver_match:
-            continue
-        verified_text = ver_match.group(1).strip()
         src_match = re.search(
             r"^\|\s*Source\s*\|\s*([^|]+?)\s*\|",
-            after[:ver_match.start()], re.MULTILINE,
+            after, re.MULTILINE,
         )
         if not src_match:
             continue
         source_ref = src_match.group(1).strip()
-        yield quote_text, source_ref, verified_text
+        line_no = text.count("\n", 0, bq_match.start()) + 1
+        yield quote_text, source_ref, line_no
 
 
 def check_verbatim_quotes(node_path, text, rel_path):
-    """For every quote claimed '✅ Confirmed — verified verbatim', confirm the
-    quote appears in the cited source file."""
+    """For every block-quote with an attribution Source pointing at an archived
+    file under `sources/`, confirm the quote appears as a substring of the
+    extracted source text.
+
+    Runs unconditionally — no marker gate. Confirmation against the source
+    is a precondition for inclusion; this check enforces it mechanically.
+    Failure messages name the node, the line number of the block-quote,
+    the cited source file, and a preview of the unmatched text — enough
+    for a contributor to navigate and fix without further detective work.
+    """
     issues = []
-    for quote_text, source_ref, verified_text in find_quote_verification_pairs(text):
-        if "verified verbatim" not in verified_text.lower():
-            continue
+    for quote_text, source_ref, line_no in find_quote_source_pairs(text):
         # Extract local source path from markdown link (../sources/foo.pdf)
         path_match = re.search(r"\(\.\./sources/([^)]+)\)", source_ref)
         if not path_match:
@@ -793,19 +817,19 @@ def check_verbatim_quotes(node_path, text, rel_path):
         source_file = SOURCES_DIR / rel_source
         if not source_file.exists():
             issues.append(Issue(rel_path, "error",
-                f"Quote claimed verbatim cites missing source file: sources/{rel_source}"))
+                f"Quote at line {line_no} cites missing source file: sources/{rel_source}"))
             continue
         source_text = extract_source_text(source_file)
         if source_text is None:
             issues.append(Issue(rel_path, "warn",
-                f"Could not extract text from sources/{rel_source} (pdftotext missing or failed)"))
+                f"Quote at line {line_no} cites sources/{rel_source} but text extraction failed (pdftotext missing or failed)"))
             continue
         norm_quote = normalize_for_compare(quote_text)
         norm_source = normalize_for_compare(source_text)
         if norm_quote not in norm_source:
             preview = quote_text[:80] + ("..." if len(quote_text) > 80 else "")
             issues.append(Issue(rel_path, "error",
-                f'Quote claimed verbatim NOT FOUND in sources/{rel_source}: "{preview}"'))
+                f'Quote at line {line_no} NOT FOUND in sources/{rel_source}: "{preview}"'))
     return issues
 
 
@@ -1104,11 +1128,11 @@ def validate_node(path, schema):
                     issues.append(Issue(rel, "error",
                         f"Section '{section_name}' missing '### {sub}' subsection"))
 
-        if rules.get("requires_quote_verification"):
-            quotes, verifies = count_quote_blocks_and_verifications(section_text)
-            if quotes > 0 and verifies == 0:
+        if rules.get("requires_quote_attribution"):
+            quotes, attributions = count_quote_blocks_and_attributions(section_text)
+            if quotes > 0 and attributions == 0:
                 issues.append(Issue(rel, "error",
-                    f"Section '{section_name}' has quotes but no verification blocks"))
+                    f"Section '{section_name}' has quotes but no attribution blocks (each block-quote needs a `| Source | … |` row pointing at the cited archived file)"))
 
     # Verbatim quote verification — critical check (fix from 2026-04-17 pilot failure)
     issues.extend(check_verbatim_quotes(path, text, rel))

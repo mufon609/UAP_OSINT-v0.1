@@ -56,7 +56,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶3 |
 
 ---
@@ -69,7 +68,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶3 |
 
 ---
@@ -82,7 +80,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶4 |
 
 ---
@@ -95,7 +92,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶5 |
 
 ---
@@ -108,7 +104,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶6 |
 
 ---
@@ -121,7 +116,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶7 |
 
 ---
@@ -134,7 +128,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶8 |
 
 ---
@@ -147,7 +140,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶9 |
 
 ---
@@ -160,7 +152,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶10 |
 
 ---
@@ -173,7 +164,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶11 |
 
 ---
@@ -186,7 +176,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶12 |
 
 ---
@@ -199,7 +188,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Opening ¶13 |
 
 ---
@@ -212,7 +200,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Closing ¶15 |
 
 ---
@@ -225,7 +212,6 @@ The document is a primary source for what Grusch stated in writing for submissio
 |---|---|
 | Attributed to | David Grusch, written testimony, submitted July 26, 2023 |
 | Source | [archived source](../sources/government/oversight-house-gov-grusch-written-testimony-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Closing ¶18 |
 
 ---

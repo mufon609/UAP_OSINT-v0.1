@@ -79,7 +79,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAP Security Classification Guide (ID# 04-030), Naval Intelligence Activity, April 16, 2020 (OCR preserves "identifYing" for "identifying"), 2020-04-16 |
 | Source | [archived source](../sources/government/blackvault-uap-security-classification-guide-20200416.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.1, Purpose |
 
 ---
@@ -96,7 +95,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | Senate Report 116-233 (Intelligence Authorization Act for Fiscal Year 2021), 2020-06-17 |
 | Source | [archived source](../sources/government/govinfo-senate-report-116-233-iaa-fy2021.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Advanced Aerial Threats section |
 
 ---
@@ -109,7 +107,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | DoD press release, August 14, 2020, 2020-08-14 |
 | Source | [archived source](../sources/government/defense-gov-uaptf-establishment-20200814.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶1 |
 
 ---
@@ -122,7 +119,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | DoD press release, August 14, 2020, 2020-08-14 |
 | Source | [archived source](../sources/government/defense-gov-uaptf-establishment-20200814.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶2 |
 
 ---
@@ -135,7 +131,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "chaner" for "charter"), 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.1, introductory paragraph |
 
 ---
@@ -148,7 +143,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "Unidenlified" for "Unidentified"), 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.1, Purpose |
 
 ---
@@ -161,7 +155,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020, 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.3, Roles and Responsibilities |
 
 ---
@@ -174,7 +167,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | UAPTF Charter, Naval Intelligence Activity, signed September 1, 2020 (OCR preserves "EXCOMs" for "EXCOM's"), 2020-09-01 |
 | Source | [archived source](../sources/government/blackvault-uaptf-charter-foia-20250422.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | UAPTF Charter, p.2, UAP Task Force Director responsibilities section |
 
 ---
@@ -187,7 +179,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | ODNI Preliminary Assessment, June 25, 2021, 2021-06-25 |
 | Source | [archived source](../sources/government/dni-gov-odni-preliminary-assessment-20210625.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.3, SCOPE AND ASSUMPTIONS |
 
 ---
@@ -200,7 +191,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | ODNI Preliminary Assessment, June 25, 2021, 2021-06-25 |
 | Source | [archived source](../sources/government/dni-gov-odni-preliminary-assessment-20210625.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.3, SCOPE AND ASSUMPTIONS |
 
 ---
@@ -213,7 +203,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | DoD Public Affairs statement via DoD spokesperson Susan Gough, released to The Black Vault, June 29, 2022, 2022-06-29 |
 | Source | [archived source](../sources/news/blackvault-smdc-travis-taylor-uaptf-20220629.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | A1 response from DoD spokesperson Susan Gough |
 
 ---
@@ -226,7 +215,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | Hicks AARO establishment memorandum, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.1 |
 
 ---
@@ -239,7 +227,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | The Debrief, 'Intelligence Officials Say U.S. Has Retrieved Non-Human Craft' by Leslie Kean and Ralph Blumenthal, June 5, 2023, 2023-06-05 |
 | Source | [archived source](../sources/news/thedebrief-grusch-2023.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | The Debrief article, June 5, 2023, body |
 
 ---
@@ -252,7 +239,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I (March 8, 2024), 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | AARO HRR Volume I, Section IV header (p. 24) |
 
 ---
@@ -265,7 +251,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I (March 8, 2024), 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | AARO HRR Volume I, Section IV UAPTF Results |
 
 ---
@@ -278,7 +263,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I (March 8, 2024), 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | AARO HRR Volume I, Section IV AOIMSG / AOIMEXEC subsection |
 
 ---
@@ -291,7 +275,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I (March 8, 2024), 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | AARO HRR Volume I, Section IV AOIMSG / AOIMEXEC subsection |
 
 ---
@@ -304,7 +287,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I (March 8, 2024), 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | AARO HRR Volume I, Section IV AARO subsection header |
 
 ---
@@ -317,7 +299,6 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 |---|---|
 | Attributed to | The Black Vault article on FOIA case DON-NAVY-2021-003140, April 22, 2025, 2025-04-22 |
 | Source | [archived source](../sources/news/blackvault-uaptf-charter-foia-release-20250422.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | The Black Vault article, April 22, 2025, body |
 
 ---

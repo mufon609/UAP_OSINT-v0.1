@@ -74,7 +74,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 733 |
 
 ---
@@ -87,7 +86,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 739 |
 
 ---
@@ -100,7 +98,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 745 |
 
 ---
@@ -113,7 +110,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 751 |
 
 ---
@@ -126,7 +122,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 756 |
 
 ---
@@ -139,7 +134,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 766 |
 
 ---
@@ -152,7 +146,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 770 |
 
 ---
@@ -165,7 +158,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 774 |
 
 ---
@@ -178,7 +170,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 779 |
 
 ---
@@ -191,7 +182,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 783 |
 
 ---
@@ -204,7 +194,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 787 |
 
 ---
@@ -217,7 +206,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Chair Glenn Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1018 |
 
 ---
@@ -230,7 +218,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Member Robert Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1148 |
 
 ---
@@ -243,7 +230,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Member Robert Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1151 |
 
 ---
@@ -256,7 +242,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1218 |
 
 ---
@@ -269,7 +254,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1324 |
 
 ---
@@ -282,7 +266,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1332 |
 
 ---
@@ -295,7 +278,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1339 |
 
 ---
@@ -308,7 +290,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1345 |
 
 ---
@@ -321,7 +302,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1395 |
 
 ---
@@ -334,7 +314,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1408 |
 
 ---
@@ -347,7 +326,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1510 |
 
 ---
@@ -360,7 +338,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1517 |
 
 ---
@@ -373,7 +350,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1526 |
 
 ---
@@ -386,7 +362,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1537 |
 
 ---
@@ -399,7 +374,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1546 |
 
 ---
@@ -412,7 +386,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1554 |
 
 ---
@@ -425,7 +398,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Virginia Foxx, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1594 |
 
 ---
@@ -438,7 +410,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (Chairman Comer yielded time), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1744 |
 
 ---
@@ -451,7 +422,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Matt Gaetz (waived on; yielded time from Burchett), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1790 |
 
 ---
@@ -464,7 +434,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1824 |
 
 ---
@@ -477,7 +446,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Alexandria Ocasio-Cortez (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 1893 |
 
 ---
@@ -490,7 +458,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Andy Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2020 |
 
 ---
@@ -503,7 +470,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Andy Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2024 |
 
 ---
@@ -516,7 +482,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Eric Burlison (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2075 |
 
 ---
@@ -529,7 +494,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Eric Burlison (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2101 |
 
 ---
@@ -542,7 +506,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2262 |
 
 ---
@@ -555,7 +518,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2319 |
 
 ---
@@ -568,7 +530,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2322 |
 
 ---
@@ -581,7 +542,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (3-minute additional round, yielded from Ogles), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2544 |
 
 ---
@@ -594,7 +554,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on; 3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2594 |
 
 ---
@@ -607,7 +566,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on; 3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2614 |
 
 ---
@@ -620,7 +578,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (closing 3-minute round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2704 |
 
 ---
@@ -633,7 +590,6 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (closing 3-minute round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | line 2738 |
 
 ---

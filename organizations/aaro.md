@@ -63,7 +63,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | Hicks memo establishing AARO, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.1 |
 
 ---
@@ -76,7 +75,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | Hicks memo establishing AARO, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.1 |
 
 ---
@@ -89,7 +87,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | Hicks memo establishing AARO, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.2 |
 
 ---
@@ -102,7 +99,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | Hicks memo establishing AARO, July 15, 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p.2 |
 
 ---
@@ -115,7 +111,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | DoD press release announcing AARO establishment, July 20, 2022, 2022-07-20 |
 | Source | [archived source](../sources/government/defense-gov-aaro-establishment-20220720.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶1 |
 
 ---
@@ -128,7 +123,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | DoD statement on Kirkpatrick's upcoming departure, November 20, 2023, 2023-11-20 |
 | Source | [archived source](../sources/government/defense-gov-kirkpatrick-departure-20231120.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶3 |
 
 ---
@@ -141,7 +135,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I Executive Summary, March 2024, 2024-03-08 |
 | Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Executive Summary, p.7 |
 
 ---
@@ -154,7 +147,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I Executive Summary, March 2024, 2024-03-08 |
 | Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Executive Summary, p.7 |
 
 ---
@@ -167,7 +159,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | DoD announcement of Kosloski appointment, August 26, 2024, 2024-08-26 |
 | Source | [archived source](../sources/government/defense-gov-kosloski-appointment-20240826.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶1 |
 
 ---
@@ -180,7 +171,6 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 |---|---|
 | Attributed to | DoD announcement of Kosloski appointment, August 26, 2024, 2024-08-26 |
 | Source | [archived source](../sources/government/defense-gov-kosloski-appointment-20240826.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | article body ¶3 |
 
 ---

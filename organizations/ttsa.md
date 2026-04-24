@@ -82,7 +82,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | Tom DeLonge email to John Podesta, subject 'General McCasland', January 25, 2016, 2016-01-25 |
 | Source | [archived source](../sources/news/wikileaks-podesta-email-3099-delonge-mccasland-20160125.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Email body, Subject: 'General McCasland', 2016-01-25 |
 
 ---
@@ -95,7 +94,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Part II, ¶ 'Description of Business', p. 2 |
 
 ---
@@ -108,7 +106,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p. 7, 'Risk Factors' |
 
 ---
@@ -121,7 +118,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p. 31, 'Directors, Executive Officers and Significant Employees' |
 
 ---
@@ -134,7 +130,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | p. 33, 'Advisory Board' |
 
 ---
@@ -147,7 +142,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-A Part II (Regulation A+ offering circular), July 10, 2017, 2017-07-10 |
 | Source | [archived source](../sources/government/sec-ttsa-1a-partii-20170710.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-A, Directors section, Jim Semivan bio |
 
 ---
@@ -160,7 +154,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | New York Times, 'Glowing Auras and Black Money: The Pentagon's Mysterious U.F.O. Program' by Cooper/Blumenthal/Kean, December 16, 2017, 2017-12-16 |
 | Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | NYT article, 2017-12-16 |
 
 ---
@@ -173,7 +166,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | TTSA homepage snapshot, January 8, 2018 (carries December 16, 2017 press release on Elizondo joining), 2017-12-16 |
 | Source | [archived source](../sources/news/tothestarsacademy-home-20180108.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | TTSA homepage news section, Dec 16 2017 press release |
 
 ---
@@ -186,7 +178,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | TTSA blog post, 'An Introduction to The ADAM Research Project', July 26, 2018, 2018-07-26 |
 | Source | [archived source](../sources/news/ttsa-blog-adam-research-project-intro-20180727.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Blog post title, 2018-07-26 |
 
 ---
@@ -199,7 +190,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | TTSA blog post, 'Material of Interest: Magnesium-Zinc-Bismuth', September 27, 2018, 2018-09-27 |
 | Source | [archived source](../sources/news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Blog post body, 2018-09-27 |
 
 ---
@@ -212,7 +202,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | U.S. Army CCDC CRADA 19-15 'Novel and Emerging Technology Exploitation', effective October 1, 2019, 2019-10-01 |
 | Source | [archived source](../sources/government/army-ttsa-crada-19-15-nete-20191001.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | CRADA 19-15, Section II, Article A - Project Description |
 
 ---
@@ -225,7 +214,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | U.S. Army CCDC CRADA 19-15 'Novel and Emerging Technology Exploitation', effective October 1, 2019, 2019-10-01 |
 | Source | [archived source](../sources/government/army-ttsa-crada-19-15-nete-20191001.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | CRADA 19-15, Article D.1, Government Activity |
 
 ---
@@ -239,7 +227,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | U.S. Army CCDC CRADA 19-15 'Novel and Emerging Technology Exploitation', effective October 1, 2019, 2019-10-01 |
 | Source | [archived source](../sources/government/army-ttsa-crada-19-15-nete-20191001.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | CRADA 19-15, Article C.2, Other Participants |
 
 ---
@@ -252,7 +239,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | U.S. Army CCDC CRADA 19-15 'Novel and Emerging Technology Exploitation', effective October 1, 2019, 2019-10-01 |
 | Source | [archived source](../sources/government/army-ttsa-crada-19-15-nete-20191001.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | CRADA 19-15, Article D.1 (Government Activity), item 7 |
 
 ---
@@ -267,7 +253,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | U.S. Army CCDC CRADA 19-15 'Novel and Emerging Technology Exploitation', effective October 1, 2019, 2019-10-01 |
 | Source | [archived source](../sources/government/army-ttsa-crada-19-15-nete-20191001.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | CRADA 19-15, CRADA Administrators (Government) section |
 
 ---
@@ -280,7 +265,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | TTSA homepage snapshot, January 5, 2020 (carries October 17, 2019 press release on the U.S. Army CCDC CRADA), 2019-10-17 |
 | Source | [archived source](../sources/news/tothestarsacademy-home-20200105.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | TTSA homepage news, Oct 17 2019 press release |
 
 ---
@@ -293,7 +277,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | TTSA homepage snapshot, January 5, 2020 (carries October 17, 2019 press release on the U.S. Army CCDC CRADA), 2019-10-17 |
 | Source | [archived source](../sources/news/tothestarsacademy-home-20200105.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | TTSA homepage news, Oct 17 2019 press release |
 
 ---
@@ -306,7 +289,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 253(g)(2) Supplement (File No. 024-11243), September 17, 2021, 2021-09-17 |
 | Source | [archived source](../sources/government/sec-ttsa-253g2-reg-a-termination-20210917.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC Form 253(g)(2) Supplement dated September 17, 2021, File No. 024-11243 |
 
 ---
@@ -319,7 +301,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Item 1 and Note 1 to Financial Statements |
 
 ---
@@ -332,7 +313,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Item 1 Business strategic reorganization passage |
 
 ---
@@ -345,7 +325,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Operations overview |
 
 ---
@@ -358,7 +337,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Item 1 Business, discussion of Unidentified series |
 
 ---
@@ -371,7 +349,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Item 1 Business, operations passage |
 
 ---
@@ -384,7 +361,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Related Party Transactions — Binding Term Sheet |
 
 ---
@@ -397,7 +373,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Related Party Transactions — BTS Amendment |
 
 ---
@@ -410,7 +385,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Regulation A Offerings history |
 
 ---
@@ -423,7 +397,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Note 15 Related Party Transactions — Exchange Listing Advisory Agreement |
 
 ---
@@ -436,7 +409,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2021, filed May 2, 2022, 2022-05-02 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20220502.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2021, Exchange Listing Advisory Agreement reversion clause |
 
 ---
@@ -449,7 +421,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I, March 8, 2024, 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | AARO HRR Vol I, Section V Executive Summary findings |
 
 ---
@@ -462,7 +433,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I, March 8, 2024, 2024-03-08 |
 | Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | AARO HRR Vol I, material-analysis subsection |
 
 ---
@@ -475,7 +445,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | AARO/ORNL Synopsis of Analysis of a Metallic Specimen, April 2024, 2024-04 |
 | Source | [archived source](../sources/government/aaro-ornl-synopsis-metallic-specimen-202404.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Synopsis Introduction, p. 1 |
 
 ---
@@ -488,7 +457,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | AARO/ORNL Synopsis of Analysis of a Metallic Specimen, April 2024, 2024-04 |
 | Source | [archived source](../sources/government/aaro-ornl-synopsis-metallic-specimen-202404.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Synopsis Introduction, p. 1 |
 
 ---
@@ -501,7 +469,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | AARO Supplement to ORNL Analysis of a Metallic Specimen, July 2024, 2024-07 |
 | Source | [archived source](../sources/government/aaro-supplement-to-ornl-analysis-202407.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Supplement, Overview section, p. 1 |
 
 ---
@@ -514,7 +481,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | AARO Supplement to ORNL Analysis of a Metallic Specimen, July 2024, 2024-07 |
 | Source | [archived source](../sources/government/aaro-supplement-to-ornl-analysis-202407.pdf) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | Supplement, Overview section, p. 1 |
 
 ---
@@ -527,7 +493,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | TTSA website blog post, 'TTS* Analysis on ORNL Report', February 28, 2025, 2025-02-28 |
 | Source | [archived source](../sources/news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | TTSA 'TTS* Analysis on ORNL Report' blog post, 2025-02-28 |
 
 ---
@@ -540,7 +505,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | TTSA website blog post, 'TTS* Analysis on ORNL Report', February 28, 2025, 2025-02-28 |
 | Source | [archived source](../sources/news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | TTSA 'TTS* Analysis on ORNL Report' blog post, 2025-02-28, body |
 
 ---
@@ -553,7 +517,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025, 2025-04-17 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2024, CRADA subsection |
 
 ---
@@ -566,7 +529,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025, 2025-04-17 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2024, AARO / ORNL subsection |
 
 ---
@@ -579,7 +541,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025, 2025-04-17 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2024, AARO / ORNL subsection |
 
 ---
@@ -592,7 +553,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025, 2025-04-17 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2024, AARO / ORNL subsection |
 
 ---
@@ -605,7 +565,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025, 2025-04-17 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2024, AARO / ORNL subsection |
 
 ---
@@ -618,7 +577,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025, 2025-04-17 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2024, Intellectual Property section |
 
 ---
@@ -631,7 +589,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025, 2025-04-17 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2024, Directors/Officers section, Kari DeLonge bio |
 
 ---
@@ -644,7 +601,6 @@ The 2024 Form 1-K received a going concern qualification from independent audito
 |---|---|
 | Attributed to | SEC Form 1-K Annual Report for fiscal year ended December 31, 2024, filed April 17, 2025, 2025-04-17 |
 | Source | [archived source](../sources/government/sec-ttsa-1k-partii-20250417.html) |
-| Verified | ✅ Confirmed — verified verbatim against archived source |
 | Location | SEC 1-K FY2024, Advisory Board / Puthoff bio |
 
 ---

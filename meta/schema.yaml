@@ -135,7 +135,7 @@ types:
       Affiliations: {split: [Confirmed, Flagged]}
       Relationships: {split: [Confirmed, Flagged]}
       Statements:
-        requires_quote_verification: true
+        requires_quote_attribution: true
         split: [Direct Observations, Other Statements]
       Timeline: {chronological: true}
 
@@ -198,7 +198,7 @@ types:
       Relationships: {split: [Confirmed, Flagged]}
       Key Personnel: {split: [Confirmed, Flagged]}
       Timeline: {chronological: true}
-      Key Passages: {requires_quote_verification: true}
+      Key Passages: {requires_quote_attribution: true}
       Primary Contracts: {chronological: true}
 
   # --- DOCUMENT -----------------------------------------------------------
@@ -265,7 +265,7 @@ types:
       - database-extract
       - other
     section_rules:
-      Key Passages: {requires_quote_verification: true}
+      Key Passages: {requires_quote_attribution: true}
       Provenance: {chronological: true}
 
   # --- EVENT --------------------------------------------------------------
@@ -306,7 +306,7 @@ types:
           - Associated Nodes
     section_rules:
       Participants: {split: [Confirmed, Flagged]}
-      Key Testimony: {requires_quote_verification: true}
+      Key Testimony: {requires_quote_attribution: true}
       Timeline: {chronological: true}
 
   # --- TRANSCRIPT ---------------------------------------------------------
@@ -350,7 +350,7 @@ types:
           - Key Passages
           - Associated Nodes
     section_rules:
-      Key Passages: {requires_quote_verification: true}
+      Key Passages: {requires_quote_attribution: true}
 
   # --- MEDIA --------------------------------------------------------------
   # Non-text-primary primary sources — photos, videos, audio, imagery.
@@ -399,14 +399,14 @@ types:
     section_rules:
       Provenance: {chronological: true}
       Key Passages:
-        requires_quote_verification: true
+        requires_quote_attribution: true
         # Key Passages on media capture verbatim speech (audio/video) or
         # verbatim visible text (text legible in photo or on-screen in
         # video). The Location field in the verification block uses
         # timestamp for audio/video and in-frame location (quadrant,
         # coordinate, element) for imagery. Empty sections are permitted
         # when the source has no extractable text or speech — the
-        # requires_quote_verification rule enforces the verification-block
+        # requires_quote_attribution rule enforces the attribution-block
         # shape only when quotes are present, not existence of quotes.
 
   # --- LOCATION -----------------------------------------------------------
@@ -425,7 +425,7 @@ types:
     section_rules:
       Relationships: {split: [Confirmed, Flagged]}
       Ownership Timeline: {chronological: true}
-      Key Passages: {requires_quote_verification: true}
+      Key Passages: {requires_quote_attribution: true}
 
   # --- FINDING ------------------------------------------------------------
   finding:
