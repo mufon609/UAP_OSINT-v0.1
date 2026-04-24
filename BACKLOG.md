@@ -373,7 +373,95 @@ adoption; hedged in-header in the same commit.
 
 ---
 
-### 19. "Verified verbatim" does not distinguish text-native sources from OCR-scanned sources
+### 19. "Verified verbatim" marker — removed; full-corpus audit in progress
+
+**Status (2026-04-24).** The original marker-ambiguity problem has
+been solved by removing the marker entirely rather than qualifying
+it. Confirmation against the underlying primary source is now a
+precondition for inclusion in node bodies (enforced mechanically by
+`validate.py`'s unconditional verbatim-quote check), not a rendered
+claim (`meta/conventions.md` codifies the principle). Implementation
+surfaced a corpus-integrity question — were the 508 existing quotes
+actually confirmed against their sources, or only against whatever
+extraction the pipeline produced? — which restructured the closeout
+into a multi-tier per-source audit. **BACKLOG #19 does not close
+until Tier 6 runs.**
+
+**Shipped** (pushed to `origin/main` 2026-04-24):
+
+| Phase | Commit | What |
+|---|---|---|
+| A | `978221a` | `extraction_type` field on `manifest_entry` (text-native \| ocr-scan); validator enforces enum |
+| E | `997cc56` | `conventions.md` — "Confirmation is a precondition for inclusion" principle articulated; source-link-is-the-evidence framing; mechanical-backstop named explicitly; transcripts as equivalent-footing sources; OCR blind-spot called out |
+| Fix-up | `3e5b88c` | BACKLOG #19 entry itself committed separately for git-history hygiene |
+| v2 apply | `8a90d5c` | Grusch v2 audit applied as its own commit (predates implementation work) |
+| D | `304bf08` | Grusch PPD-19 re-extraction via VLM page reading; clean `.txt` sibling created; validator extended to prefer sibling on ocr-scan sources; q163/q164/q165 corrected; nq2/nq3/nq4 removed |
+| B | `31e03fa` | Verified marker removed from both renderer call sites; `_render_verification_block` → `_render_attribution_block`; `find_quote_verification_pairs` → `find_quote_source_pairs` + unconditional check + line-number failure messages; `requires_quote_verification` → `requires_quote_attribution` schema rename across 7 sites; all 17 nodes regenerated (464 mechanical deletions, 0 additions); prompts + templates updated |
+| F.1 | — | Diagnostic: 508 quotes across 64 sources; 70% PDF / 15% HTML / 14% transcript. Top 10 sources carry 77% of quotes. Hearing transcript alone is 42% of the corpus |
+| F.2 Tier 1 | `4b4d7fb` | Hearing transcript audit: `extraction-lossy` enum value added (third category after text-native/ocr-scan); sibling-lookup generalized to `!= "text-native"`; 54-page clean `.txt` transcription via VLM; 6 corrections across 3 categories; 1.4% contributor-drift rate measured |
+| F.3 stub | `ea64cf4` | Closeout document stubbed at `meta/toolkit-notes/corpus-audit-2026-04.md` with Tier 1 findings recorded |
+
+**Remaining work — Phase F.2 Tiers 2–5 + F.3 Closeout:**
+
+*Tier 2 — 3 written testimony PDFs (87 quotes).*
+Fravor (30), Graves (34), Grusch (23) written testimonies. Contributor-
+authored PDFs submitted to House Oversight and published via standard
+committee pipeline. Expected text-native; low-risk extraction.
+Methodology: verify extraction condition per source; run verbatim-
+quote check against pdftotext output; surface any contributor drift.
+Projected 0–3 findings based on Tier 1's 1.4% rate × 87 quotes.
+**Estimated: 1 focused session.** Natural next tier.
+
+*Tier 3 — 9 transcript sources (73 quotes).*
+JRE 2065 (20), NewsNation Coulthart (17), American Alchemy (10),
+Somewhere in the Skies (9), Grusch Sol closing (6), Linda Hall (5),
+American Veterans Center (3), Merged Podcast (2), Calling All
+Beings (1). Mostly YouTube-downloaded auto-captions.
+**BLOCKED** on BACKLOG #20 (auto-caption convention decision). Phase
+E principle doesn't specify audio-source handling. Three framings in
+the closeout doc; hybrid-by-transcript_provenance is most principled
+but requires schema work. **Estimated: 1 convention-decision session
++ 1–3 execution sessions depending on which option chosen.**
+
+*Tier 4 — 28 HTML sources (78 quotes).*
+HTML extraction low-risk (tag-strip + entity-decode). Batched spot-
+check per source. Projected 0–2 findings. **Estimated: 1 focused
+session.**
+
+*Tier 5 — PDF long-tail (~17 sources, ~50 quotes).*
+6 Uintah parcel PDFs (same ORDS portal pipeline — check once, apply
+conclusion to all); AARO HRR Vol I; ODNI preliminary assessment;
+various FOIA responses; SEC TTSA filings. One-by-one or batched
+where pipeline shared. **Estimated: 1 focused session.**
+
+*Tier 6 — Closeout.*
+Complete `meta/toolkit-notes/corpus-audit-2026-04.md` with aggregate
+findings across all tiers. Confirm follow-up BACKLOG entries #20–#24
+are filed (already queued below). Close BACKLOG #19.
+**Estimated: 1 session.**
+
+**Total remaining: 5–8 focused sessions** to complete Phase F and
+close #19. Spread depends primarily on the Tier 3 convention decision.
+
+**Projected aggregate findings across Tiers 2+4+5** (excluding Tier 3,
+different risk profile): ~3–5 additional contributor-drift corrections
+based on the 1.4% rate observed in Tier 1 applied to the remaining
+~215 quotes. New extraction-condition categories may surface; the
+`extraction_type` enum should be expected to grow further.
+
+**Follow-up BACKLOG entries surfaced during the audit** (filed now
+for tracking visibility; fate confirmed at Tier 6 closeout):
+- #20 — Auto-caption vs audio confirmation discipline (blocks Tier 3)
+- #21 — pdftotext Unicode-mapping quirks (extraction-tool-layer fix; narrower than extraction-lossy schema category)
+- #22 — Provenance-marker treatment (per-row custody checkmarks on document nodes; different shape from per-quote Verified)
+- #23 — BACKLOG #17 surfacing in Credibility Notes prose (verbatim caption forms read as misspellings)
+- #24 — Location reference normalization (stale `lines N-M` pdftotext refs; low-priority hygiene)
+
+---
+
+**Original problem statement** (preserved for historical context; the
+marker-removal decision superseded the four-option "convention fix"
+framing proposed below):
 
 The verbatim-quote check compares quote text against the pdftotext /
 HTML extract of the cited source. When the source is a text-native
@@ -442,3 +530,268 @@ Surfaced: Grusch v2 audit (2026-04-24) — external auditor noted
 that "verified verbatim" against a corrupted OCR extract is not
 the same as verified against the original and is "a real gap in
 the convention that will affect every scanned-document source."
+
+---
+
+### 20. Auto-caption-vs-audio confirmation discipline (Phase F Tier 3 blocker)
+
+Phase E's "Confirmation is a precondition for inclusion" principle
+(`meta/conventions.md`) names transcripts as equivalent-footing
+sources once confirmed, but does not specify what "confirmed" means
+for an auto-caption transcript. A YouTube-downloaded caption file
+is itself an extraction of audio by a machine-transcription service;
+caption typos (e.g., "Bigalow" for "Bigelow", "lockie Martin" for
+"Lockheed Martin" in Grusch's JRE episode) are structurally the
+same shape as OCR character-corruption on a scanned PDF — machine
+rendering of an underlying signal, with errors.
+
+Current established practice (per `feedback_transcript_timestamps_
+in_quotes.md` and Phase A work): preserve auto-caption typos
+verbatim via `naming_quirks` entries with resolution
+`preserve-as-sic-in-quotes`. This is a node-level workaround; it
+does not resolve the broader question of whether audio or the
+caption file is the authoritative source.
+
+**Three framings to decide between:**
+
+1. **Transcript-as-source** — what Phase E language literally says.
+   Tier 3 audit just confirms quotes match the transcript file,
+   which the validator already does. Cheap. Accepts caption errors
+   as authentic to the source of record.
+2. **Audio-as-source** — every transcript-derived quote needs
+   confirmation against audio. Download audio for all 9 transcript
+   sources; sample-verify passages; possibly automate via modern
+   speech-to-text diffed against the caption file, human-verify
+   disagreements. Expensive.
+3. **Hybrid by transcript provenance** — equivalent-footing when
+   human-produced (stenographic transcripts, published interview
+   transcripts — human has already done the confirmation-against-
+   audio work). Audio-confirmation required when auto-caption
+   (machine extraction of audio; same shape as OCR vs. page image).
+   Requires classifying each transcript source via a new field like
+   `transcript_provenance: stenographic | human-produced | service-
+   produced | auto-caption`.
+
+**Recommendation** (from the Phase F.3 closeout draft): option 3.
+Most principled; aligns auto-caption handling with the OCR pattern
+established in Phase A/D. Requires manifest schema field addition
++ classification pass + per-category audit methodology in
+`meta/conventions.md`.
+
+**Affected now.** 9 transcript sources, 73 quotes. Representative
+cases: JRE 2065 (20 quotes — auto-caption), NewsNation Coulthart
+(17 — auto-caption), American Alchemy (10 — auto-caption), plus
+`when-it-mattered-55-dietrich-2021.pdf` (6 quotes — provenance
+unclear, worth categorizing).
+
+**Scope.** Convention decision is ~1 session. Execution scope
+depends on option chosen: option 1 = 1 session; option 3 =
+classification pass + sampled audio verification = 2–3 sessions.
+
+**Blocks.** Phase F Tier 3. BACKLOG #19 cannot close until this
+decision resolves and Tier 3 executes under it.
+
+Surfaced: Phase F.1 diagnostic (2026-04-24) — 9 transcript sources
+concentrate 14% of the corpus; Phase E principle didn't anticipate
+the auto-caption-vs-audio axis when generalizing transcripts as
+equivalent-footing.
+
+---
+
+### 21. pdftotext Unicode-mapping quirks on text-native PDFs (extraction-tool-layer)
+
+The `extraction-lossy` enum category added in Phase F Tier 1 captures
+the high-level source-condition pattern: text layer present (not
+OCR'd) but pdftotext produces artifacts. The underlying root cause
+for the known case (hearing transcript PDF, `11½` rendering as
+`11‡` via pdftotext) is specifically a Unicode-mapping issue at the
+PDF-generation layer — Acrobat Distiller mapped U+00BD ONE HALF to
+U+2021 DOUBLE DAGGER in the text stream.
+
+**Possible narrower fix:** use a different PDF text extraction tool
+(e.g., `pdfplumber`, `pymupdf`, `mutool`) that handles this Unicode
+mapping correctly, rather than producing a clean-text sibling per-
+source. If the alternate tool gives clean output on the hearing
+transcript and all other corpus PDFs, the extraction-lossy category
+might dissolve for the Unicode-mapping subcase, leaving only
+genuinely OCR'd sources needing siblings.
+
+**Scope consideration.** This is a narrower question than the
+extraction-lossy schema category. The category stays regardless —
+OCR sources still need sibling handling. But if a tool change could
+eliminate the Unicode-mapping failure mode across the corpus, that
+reduces the sibling-production workload for future tiers of the audit
+(and for future contributors adding sources).
+
+**Methodology for evaluation** (deferred to a separate session):
+run alternate PDF extraction tools against the hearing transcript
+PDF; compare output to the known-correct visual content; check for
+`11½` rendering correctness; check other Unicode edge cases
+(fractions, typography, signature glyphs, section signs). If an
+alternate tool gives clean output uniformly, propose adopting it in
+`validate.py` as the PDF extraction path (with pdftotext retained
+as fallback for compatibility).
+
+**Affected now.** Hearing transcript PDF (only known case to date).
+Future corpus PDFs may exhibit similar conditions — evaluation cost
+is bounded.
+
+Surfaced: Phase F Tier 1 (2026-04-24) — `11‡` for `11½` caught
+during hearing-transcript audit; extraction-lossy enum added to
+handle the pattern generically, but the specific case might have a
+narrower solution at the tool layer.
+
+---
+
+### 22. Provenance-marker treatment on document node Provenance tables
+
+Document nodes render a `## Provenance` section that tracks the
+custody chain of the source file (authoring date, submission venue,
+local archival, etc.). Rows use a `✅ Confirmed —` marker pattern
+with evidence descriptions (e.g., `"✅ Confirmed — PDF metadata
+CreationDate: Sun Jul 23 14:41:22 2023 EDT"`, `"✅ Confirmed —
+hosted at oversight.house.gov"`, `"✅ Confirmed — SHA256 verified
+via sources/manifest.yaml"`).
+
+**Question surfaced during Phase B** (2026-04-24): with the per-
+quote `Verified` marker removed under Phase E's "no rendered trust
+claim" principle, should these per-row Provenance markers be
+removed too?
+
+**Analysis from the Phase B discussion** (user/model exchange):
+the two markers look similar but do different jobs. The per-quote
+Verified marker asserted "this quote matches the source" — a claim
+about the quote itself that the reader could theoretically verify
+but the marker was standing in for. That's the trust-performance
+pattern Phase E rejects. The Provenance markers assert "this custody
+event happened" — claims about the history of the artifact that
+reference specific checkable evidence (PDF metadata, hostname,
+SHA256). That's closer to the rendered-citation pattern (scholarly
+"(Smith 2019, p. 47)") than to trust-performance: the prose after
+the checkmark names the specific evidence the reader can follow.
+
+The strongest Provenance claim is the SHA256 one (reader can literally
+`sha256sum` against the archived file). Weaker is the PDF-metadata
+claim (requires pulling PDF + running exiftool). Weakest is the
+hostname claim (hostname may have changed since archival — the
+Wayback link is the actual evidence, not the hostname).
+
+**If revisited, the interesting move** is not removing the markers
+but tightening them so the evidence is always as checkable as the
+SHA256 case. That's different analysis from BACKLOG #19 and
+deserves its own design pass.
+
+**Recommendation.** Defer. Not a correctness issue (Provenance rows
+are factual metadata with evidence attached; the marker is a
+shorthand summary); not a readers-being-misled issue (prose names
+the evidence). The analysis is genuinely different from #19 — the
+removal pattern from #19 would be wrong if applied here.
+
+**Scope if taken up.** Per-provenance-row audit: categorize each
+marker's underlying evidence by checkability (SHA256-level / tool-
+required / external-attestation); tighten wording to surface the
+distinction where useful; or decide the current pattern is fine
+given Phase E's principle doesn't scope to Provenance tables.
+
+Surfaced: Phase F spot-check review of `✅ Confirmed —` patterns in
+rendered nodes (2026-04-24) — Provenance markers share the marker
+pattern with the per-quote Verified row but don't share the trust-
+performance shape.
+
+---
+
+### 23. BACKLOG #17 surfacing in Credibility Notes prose — verbatim source forms read as misspellings without reader signal
+
+Related to #17 (table renderers drop `.note` field across structured
+sections) but surfaces in a different shape: Credibility Notes
+contributor-synthesis prose can include verbatim source-form tokens
+that look like typos to a reader who has no signal they are
+preserved-as-sic.
+
+**Concrete case.** `people/david-grusch.md` Credibility Notes
+paragraph (Grusch v2 commit `8a90d5c`): *"Grusch described the
+'$21 million' Reid had given 'to DIA and Bigalow Aerospace' as
+funding for the 'assap' program… Grusch named a specific private
+defense contractor — 'lockie Martin' — saying the company 'wanted
+to divest itself…'"*
+
+Every single-quoted phrase here is a verbatim fragment from the
+JRE transcript (auto-caption typos preserved per established
+discipline, tracked in naming_quirks nq1, nq5). The reader sees
+"Bigalow", "lockie", "assap" and — without context about the
+source's auto-caption provenance — reads them as contributor-
+introduced misspellings.
+
+**Possible fixes** (conceptually; none prototyped):
+1. **Inline `[sic]`** after verbatim source-form tokens in prose.
+   Discipline at the contributor layer; no schema change.
+2. **Renderer surface for naming_quirks.** Section like
+   `## Source-Form Notes` that lists preserve-as-sic entries from
+   the artifact so the reader knows why source forms are preserved
+   (related to #19's earlier-proposed `## Source Transcription
+   Notes`, which was cut during implementation).
+3. **Convention-layer signal** — wrap verbatim tokens in
+   backtick-quoted spans with a trailing `[source form preserved]`
+   descriptor.
+
+**Relationship to #17.** #17 is the general case (note fields drop
+in rendered tables); this is the specific case of source-form
+tokens appearing unmarked in synthesis prose. Could be addressed
+independently or bundled with #17's renderer pass.
+
+**Priority.** Low. Not a correctness issue; reader inconvenience.
+But worth tracking because the pattern will recur as more auto-
+caption sources enter the corpus.
+
+**Affected now.** `people/david-grusch` (JRE auto-caption forms
+in Credibility Notes). Future: any node citing auto-caption
+transcripts where contributor prose quotes source-form tokens.
+
+Surfaced: Phase F diagnostic + Grusch v2 audit review (2026-04-24).
+
+---
+
+### 24. Location reference normalization — stale pdftotext line refs in quote Locations
+
+Several existing quotes in the corpus cite `Location: lines 805-810`
+or similar line-range references, which point at line numbers in
+pdftotext output of the cited source rather than government page
+numbers or other stable document anchors. These were keyed to the
+pdftotext extraction in use at the time the quote was authored.
+
+**Problem shape.** The validator's verbatim-quote check verifies
+quote text substring-matches the extract; it does NOT verify
+Location accuracy. So stale `lines N-M` refs don't cause validation
+failures, but they become increasingly imprecise as sources get
+re-extracted (e.g., Phase F Tier 1's clean-text sibling renumbers
+the hearing transcript).
+
+**Concrete affected quotes.** Several in `research/2023-07-26-house-
+fravor.yaml`, `research/2023-07-26-house-graves.yaml`, `research/
+2023-07-26-house-grusch.yaml`. Exact count deferred to the audit
+execution.
+
+**Fix shape.** Systematic conversion of `lines N-M` refs to:
+- `p. N, ¶M` for stenographic PDFs (hearing transcripts)
+- `p. N` for single-line citations
+- `¶N` for short documents without pagination
+- `[MM:SS]` ranges for transcript/caption sources
+- `lines N-M of the extract` explicitly when the extract is the
+  intended reference (rare)
+
+The conversion is mechanical once the rule is written down. Could
+be a one-session sweep across the whole corpus.
+
+**Priority.** Low. Not a correctness issue; navigational-precision
+improvement for readers. Validator doesn't care.
+
+**Scope.** ~1 session to write the rule + sweep + validate.
+Independent of the Phase F audit tiers; can run before, after, or
+between them.
+
+Surfaced: Phase F Tier 1 (2026-04-24) — the hearing-transcript
+`.txt` sibling used government page numbers as section markers,
+which rendered existing `lines N-M` quote Locations increasingly
+out-of-sync. Corrections deferred per explicit Phase F Tier 1 scope
+decision (Phase F is about extraction integrity, not navigation
+precision).
