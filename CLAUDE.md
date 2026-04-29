@@ -67,13 +67,14 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (3)
+### Documents (4)
 
 | Node | Status | Kind |
 |---|---|---|
 | `/documents/written-testimony-fravor-2023` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-graves-2023` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-grusch-2023` | primary-source-confirmed | gov-doc |
+| `/documents/written-testimony-kirkpatrick-2023` | primary-source-confirmed | gov-doc |
 
 ### Transcripts (4)
 
