@@ -77,6 +77,7 @@
   archived_date: '2026-04-22'
   sha256: 36133bf36e899a219ece349e590ffd6c3f7a1b9094ec6a14d61058e6e21dc53f
   archive_status: 1
+  wayback_skip: true
   note: 'The actual Cooperative Research and Development Agreement (CRADA) #19-15 between To The Stars Academy of Arts and Science, Inc. and the U.S. Army Combat Capabilities Development Command (CCDC) Ground Vehicle Systems Center, Warren MI. CRADA title: ''Novel & Emerging Technology Exploitation (NETE)''. Effective date 2019-10-01 (TTSA announced publicly 2019-10-17). 8-page text-extractable OCR''d PDF distributed via Internet Archive (item: army_ttsa_crada). Names signatories — Army side: Ben Soave + Dr. Joseph Cannon (Principal Investigators, Ground Vehicle Survivability and Protection / GVSP); TTSA side: Luis Elizondo (Principal Investigator, Director of Global Security and Special Programs). Estimated USG resources value: $750k. Technology scope: ''inertial mass reduction mechanical/structural metamaterials, electromagnetic metamaterial wave guides, quantum physics, quantum communications, and beamed energy propulsion''. Other Participants clause: ''The Office of the Secretary of Defense (OSD) can share historical reports of findings and origin of materiel solutions in the possession of the Collaborator'' — establishes OSD connection to the material''s origin-history. Primary-source Army-side confirmation of the CRADA that AARO HRR Vol I (2024) later references as the TTSA-U.S. Army material-analysis relationship predating AARO custody.'
 - url: https://archive.org/download/grusch_icig/David-Grusch-PPD-19-Procedural-Filing_text.pdf
   format: pdf
@@ -85,6 +86,7 @@
   archived_date: '2026-04-22'
   sha256: 16100657d1ae91fbb6c0ad6b7e98113c40d32275c1e7acdb83a3fb09daa48a56
   archive_status: 1
+  wayback_skip: true
   extraction_type: ocr-scan
 - url: https://archive.org/download/grusch_icig/David-Grusch-PPD-19-Procedural-Filing_text.pdf#clean-text-transcription
   format: txt
@@ -1046,7 +1048,8 @@
   path: news/csis-shaw-kirkpatrick-sda-20241031.html
   archived_date: '2026-04-28'
   sha256: dd9494ac7403bf2156a3cc6cb1685111dce1efafca936a2355ec0bb6cf540683
-  archive_status: 1
+  archive_status: 3
+  wayback_date: '2026-04-29'
   note: 'CSIS ''Space in Focus'' series commentary, October 31 2024: ''Future Space Domain Awareness Needs for National Security Space'' co-authored by Lt. Gen. (Ret.) John Shaw (former Deputy Commander, U.S. Space Command) and Sean Kirkpatrick. Author bio for Kirkpatrick: USSPACECOM tenure as deputy director of intelligence and DNI representative only — no mention of AARO, ORNL, Nonlinear Solutions, Elara Nova, WestExec, or NSSA (CV-omissions data point)'
 - url: https://www.defense.gov/News/Releases/Release/Article/2165713/statement-by-the-department-of-defense-on-the-release-of-historical-navy-videos/
   format: html
@@ -1311,7 +1314,8 @@
   path: news/uga-physast-newsletter-fall-2010.pdf
   archived_date: '2026-04-28'
   sha256: b4bf06f1939dca11751754ccf27e7fab9f6851b475389a5875d3309388542df4
-  archive_status: 1
+  archive_status: 3
+  wayback_date: '2023-05-10'
   note: UGA Department of Physics and Astronomy newsletter Volume 1 Fall 2010 — first cohort of recipients of the 'Sean M. Kirkpatrick Award for Outstanding Graduate Research' (the award was established naming Kirkpatrick while he was a serving senior intelligence officer). PDF extraction may require OCR for full text. Fetched via Wayback 2021-09-26 snapshot
 - url: https://www.politico.com/news/magazine/2023/11/12/sean-kirkpatrick-ufos-pentagon-00126214
   format: html
@@ -1319,7 +1323,8 @@
   path: news/politico-magazine-kirkpatrick-are-aliens-real-20231112.html
   archived_date: '2026-04-28'
   sha256: ec25a9def59f7547b6f5645990c7b74eab8a2ec82f82dafe233941ee03be3bda
-  archive_status: 1
+  archive_status: 3
+  wayback_date: '2025-07-03'
   note: 'Politico Magazine long-form interview by Lara Seligman, November 12 2023: ''Are Aliens Real? We Asked the Pentagon''s Outgoing UFO Chief.'' Long-form follow-up to the Nov 7 ''step down next month'' Politico piece. Fetched via Wayback Machine snapshot 2023-11-12 (politico.com 403-blocks current direct retrieval; Politico Pro is paywalled)'
 - url: https://www.rev.com/transcripts/nasa-holds-first-public-meeting-on-ufos-transcript
   format: html
@@ -1399,7 +1404,8 @@
   path: news/blackvault-aaro-establishment-release-20220720.html
   archived_date: '2026-04-28'
   sha256: 61dbedb9794335a32ac0dcb31aa11e2bd6505671e8c28fb1b2fa61f3f88fc599
-  archive_status: 1
+  archive_status: 3
+  wayback_date: '2025-09-14'
   note: Black Vault republication of the DoD July 20 2022 press release announcing AARO establishment + Kirkpatrick's appointment as inaugural director
 - url: https://www.theblackvault.com/documentarchive/foia-documents-reveal-aaros-authorized-and-repeated-attempts-to-engage-with-david-grusch/
   format: html
@@ -1407,7 +1413,8 @@
   path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
   archived_date: '2026-04-28'
   sha256: 6a88a2946de0464e8e5f8edad0fc1d61597f2bbd562ab6f684895cea4a606a46
-  archive_status: 1
+  archive_status: 3
+  wayback_date: '2026-02-16'
   note: 'Black Vault page for FOIA case 24-F-0266 release (April 26 2024): ''FOIA Documents Reveal AARO''s Authorized and Repeated Attempts to Engage with David Grusch''. Includes the June 11-13 2023 Signal text-message exchanges between Kirkpatrick and Christopher Mellon documenting Kirkpatrick''s contemporaneous self-description as ''defending and adjudicating'' AARO + the March 8 2023 SAPCO authority memorandum signed by Major General David W. Abba'
 - url: https://www.theblackvault.com/documentarchive/pentagon-releases-details-about-dr-travis-taylors-uap-task-force-involvement/
   format: html
@@ -1424,7 +1431,8 @@
   path: news/blackvault-oig-emails-20250401.html
   archived_date: '2026-04-28'
   sha256: eac487120906946caf1a3f97d2cf80a0dffbc816c0f4643974bda09cf2e39e13
-  archive_status: 1
+  archive_status: 3
+  wayback_date: '2025-06-01'
   note: 'Black Vault page for new DoD OIG email releases (April 1 2025): documents the September 12 2023 Kirkpatrick email to ''Stone'' at DoD OIG with body fully redacted under (b)(5) deliberative-process privilege; metadata visible. Black Vault has flagged the sender-imposed deliberative-process footer as legally insufficient and is appealing'
 - url: https://www.theufochronicles.com/2020/04/skinwalker-ranch-original-owner-family-member-speaks.html
   format: html
@@ -1450,7 +1458,8 @@
   path: news/westexec-kavandi-kirkpatrick-announcement-20240509.html
   archived_date: '2026-04-28'
   sha256: 73571a9c224e022b3f4c09fd1900a454a1adc058964f36b0f51c65b64b3232b5
-  archive_status: 1
+  archive_status: 3
+  wayback_date: '2026-04-29'
   note: 'WestExec Advisors May 9 2024 announcement: Janet Kavandi and Sean Kirkpatrick joining as Senior Advisors — paired hire oriented toward space-industry advisory'
 - url: https://www.young.senate.gov/newsroom/press-releases/young-colleagues-introduce-new-legislation-to-declassify-government-records-related-to-ufos-and-unidentified-anomalous-phenomena_modeled-after-jfk-assassination-records-collection-act--as-an-amendment-to-ndaa/
   format: html
