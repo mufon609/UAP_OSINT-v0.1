@@ -258,6 +258,15 @@
   archive_status: 3
   note: AARO invitations to interview Grusch (FOIA 24-F-0266); Grusch declined; esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror.
   wayback_date: '2025-11-18'
+- url: https://documents2.theblackvault.com/documents/osd/24-F-0894.pdf
+  format: pdf
+  status: archived
+  path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+  archived_date: '2026-04-29'
+  sha256: c38bb7c8f394a184dde16903364ba35dbd0b1f1212e2ee148a6b7deaac403266
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: Pentagon internal emails (Feb 1 - Mar 7 2024) about AARO Historical Record Report Vol 1 rollout under Acting Director Tim Phillips; FOIA 24-F-0894. Documents tightly-controlled press rollout (declined journalist requests, invite-only March 8 2024 briefing) and ODNI deliberately omitted from public framing despite statutory reporting requirement under FY2023 NDAA. Also captures sUAS portfolio dispute correspondence (Gough-Kozik exchange after Gillibrand pressed for AARO to take on counter-drone coordination). Source for the Vol 1 rollout-control note recommended by audit finding 3.2/4.5. esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror. PDF producer is OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan; verbatim quotes must be visually verified against the source page or a clean-text sibling.
 - url: https://douglasjohnson.ghost.io/uap-disclosure-act-pentagon-rewrite-nov-2023/
   format: html
   status: archived
@@ -449,6 +458,14 @@
   sha256: 8c23519c62a5717427c2d09d5ade165284421f2e5facad76a565a94774067868
   archive_status: 3
   wayback_date: '2026-03-27'
+- url: https://newparadigminstitute.org/learn/library/using-the-wall-street-journal-the-pentagon-is-gaslighting-the-public-on-ufos-again/
+  format: html
+  status: archived
+  path: news/newparadigminstitute-pentagon-gaslighting-public-on-ufos-20250606.html
+  archived_date: '2026-04-29'
+  sha256: f29c4655c63558ad8cb88c62740ec86620ee250bdc63ffe02f78198638e9e284
+  archive_status: 1
+  note: New Paradigm Institute response to the WSJ piece, framing it as Pentagon disinformation. Counter-narrative source for the WSJ Vol II preview, parallel to the Liberation Times rebuttal.
 - url: https://nssaspace.org/event/kirkpatrick-2024/
   format: html
   status: archived
@@ -571,6 +588,23 @@
   archive_status: 3
   note: USPTO Patent US 6,624,915 B1 — 'Holographic recording and micro/nanofabrication via ultrafast holographic two-photon induced photopolymerization (H-TPIP)'. Inventor Sean M. Kirkpatrick (and others). Original assignee SAIC; current assignee Leidos. Granted September 23, 2003. Filed during Kirkpatrick's 1997-2003 Air Force Research Laboratory tenure
   wayback_date: '2024-05-14'
+- url: https://pbs.twimg.com/media/GNLEvJqWgAABtvl.jpg
+  format: image
+  status: archived
+  path: social/fugal-skinwalker-ranch-senate-briefing-photo-20180419.jpg
+  archived_date: '2026-04-29'
+  sha256: 8c801adc4c0d7c3e9c091d7001c74cc8c8e6fc792afbcb94ceafe0186229a238
+  archive_status: 1
+  wayback_skip: true
+  note: Photo attached to Brandon Fugal's May 9 2024 X post (status/1788708348340187605) showing the April 19 2018 SSCI/SASC Skinwalker Ranch briefing room, with Sean Kirkpatrick visible at the head of the table while Fugal's team presented. 2048x1806 JPEG. Per Fugal's subsequent post, EXIF metadata anchors the capture to 1:31pm ET on April 19 2018 between 1:00-3:30pm ET. Twitter's pbs.twimg.com media CDN serves the original via ?name=orig. wayback_skip:true — Twitter media CDN URLs are not Wayback-friendly.
+- url: https://pjmedia.com/rick-moran/2025/06/07/the-disinformation-campaign-to-hide-secret-technology-led-to-the-creation-of-myths-about-ufos-n4940545
+  format: html
+  status: archived
+  path: news/pjmedia-disinformation-campaign-secret-technology-ufos-20250607.html
+  archived_date: '2026-04-29'
+  sha256: 69c9d80424a78448c7354f7e24911a5d026769aa814334b6841e4a5fabecdc0a
+  archive_status: 1
+  note: PJ Media coverage by Rick Moran of the WSJ Pentagon-disinformation piece (June 7 2025). Right-leaning mainstream pickup; cross-corroboration of the WSJ findings.
 - url: https://safeaerospace.org/
   format: html
   status: archived
@@ -580,6 +614,14 @@
   note: Americans for Safe Aerospace home page. Lists Jay Stratton in the Advisors section — direct on-record attestation by an organization of which Stratton is a listed advisor. Strongest non-.gov public-record attribution for Stratton's UAPTF role.
   archive_status: 3
   wayback_date: '2026-02-20'
+- url: https://spacenews.com/the-jicspoc-is-dead-long-live-the-national-space-defense-center/
+  format: html
+  status: archived
+  path: news/spacenews-jicspoc-nsdc-rename-20170404.html
+  archived_date: '2026-04-29'
+  sha256: 3355fe0d1cfbe0a544e138b19b278f94da66d94220e18cd3ae1f0b2c3740db92
+  archive_status: 1
+  note: SpaceNews coverage by Sandra Erwin (April 4, 2017) of the JICSpOC rename to National Space Defense Center, announced by Gen. John Hyten in Senate Armed Services Committee testimony. Establishes the JICSpOC → NSDC institutional continuity referenced in the DoD bio's 'special assignment to the Principal Deputy DNI' chronology.
 - url: https://spp.umd.edu/our-community/faculty-staff/ronald-moultrie
   format: html
   status: archived
@@ -682,6 +724,14 @@
   sha256: 1e2ee84c108c2feda17af38fd908de81faf58737fe453109c58b0e713ceda90a
   archive_status: 3
   wayback_date: '2026-04-11'
+- url: https://unknowncountry.com/headline-news/undisclosed-2018-meeting-by-former-aaro-head-sean-kirkpatrick-with-skinwalker-ranch-researchers-calls-government-transparency-into-question/
+  format: html
+  status: archived
+  path: news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html
+  archived_date: '2026-04-29'
+  sha256: c05123d848e7d78dd4d584680b17195669f8411f7639ef008b0703dd0f6bbdcc
+  archive_status: 1
+  note: Unknown Country article (June 2024) reporting on the Brandon Fugal-disclosed undisclosed 2018 meeting between Kirkpatrick (then DIO/S&TI at DIA) and the Skinwalker Ranch research team in Washington DC; cites Fugal's May 9 2024 X post photograph documenting Kirkpatrick at the head of the table during the April 19 2018 SSCI/SASC briefing, and the EXIF metadata anchoring the photograph to 1:31pm ET on April 19 2018 between 1:00-3:30pm ET. Documents the Greenstreet split-screen interview where Kirkpatrick denied any pre-AARO UAP duties and characterized himself as 'an independent outside reviewer'. Source for audit finding 3.4 (post-departure controversy).
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
@@ -1232,6 +1282,22 @@
   sha256: 0b5d380c1750d2d4fe01d17176eb1f36ce77efbc77e24a83ca3e8f8c12eaeadc
   archive_status: 1
   note: Inside Biden's Basement appointee tracker for Ronald Moultrie; Biden-administration appointment tracking with timeline of pre/post-government roles.
+- url: https://www.jpost.com/omg/article-856910
+  format: html
+  status: archived
+  path: news/jpost-pentagon-disinformation-ufo-mythology-20250606.html
+  archived_date: '2026-04-29'
+  sha256: ea7791e65b9bc62c0bc6c304a73dbedf9af642260bc51f5de7ad6fed46dac2d9
+  archive_status: 1
+  note: Jerusalem Post coverage of the WSJ Pentagon-disinformation piece, June 2025. Secondary mainstream outlet picked up the story; useful for cross-corroboration of the WSJ findings.
+- url: https://www.liberationtimes.com/home/from-moscow-to-malmstrom-russian-style-disinformation-tactics-target-us-ufo-transparency-efforts
+  format: html
+  status: archived
+  path: news/liberationtimes-russian-style-disinformation-tactics-20250606.html
+  archived_date: '2026-04-29'
+  sha256: 2ce43928ae877d71954e3f4b3701a51dfff656cede01e692278d762a501ef36d
+  archive_status: 1
+  note: Liberation Times rebuttal piece by Marik von Rennenkampff (June 2025) framing the WSJ Pentagon-disinformation article itself as a coordinated rollout to pre-frame HRR Vol II and discredit UAP whistleblowers. Counter-narrative source for the 3.4 finding.
 - url: https://www.loudountimes.com/0local-or-not/1local/ufo-whistleblower-sues-sheriffs-office-over-records-release/article_b24005c4-490e-11ef-97d5-4bc65ae077be.html
   format: html
   status: archived
@@ -1455,6 +1521,14 @@
   archive_status: 3
   wayback_date: '2026-02-16'
   note: 'Black Vault page for FOIA case 24-F-0266 release (April 26 2024): ''FOIA Documents Reveal AARO''s Authorized and Repeated Attempts to Engage with David Grusch''. Includes the June 11-13 2023 Signal text-message exchanges between Kirkpatrick and Christopher Mellon documenting Kirkpatrick''s contemporaneous self-description as ''defending and adjudicating'' AARO + the March 8 2023 SAPCO authority memorandum signed by Major General David W. Abba'
+- url: https://www.theblackvault.com/documentarchive/foia-emails-reveal-pentagons-tight-control-over-aaro-historical-record-report-rollout-and-messaging/
+  format: html
+  status: archived
+  path: news/blackvault-foia-24-f-0894-vol-1-rollout-emails-20250827.html
+  archived_date: '2026-04-29'
+  sha256: f1553f2c51abe185d330c9c524d8bf74088507151be317cbc1ab00db512deff8
+  archive_status: 1
+  note: 'Black Vault analysis page (August 27, 2025): ''FOIA Emails Reveal Pentagon''s Tight Control Over AARO Historical Record Report Rollout and Messaging''. Frames the FOIA 24-F-0894 release with John Greenewald''s analysis of the rollout-control emails, ODNI omission decision, and adjacent sUAS-portfolio Gough-Kozik exchange.'
 - url: https://www.theblackvault.com/documentarchive/pentagon-releases-details-about-dr-travis-taylors-uap-task-force-involvement/
   format: html
   status: archived
@@ -1482,6 +1556,22 @@
   note: 'TheUFOChronicles article by Frank Warren, published April 12, 2020: ''SKINWALKER RANCH: Original Owner/Family Member Sets The Record Straight''. Extended quotation from Garth Myers (younger brother of Kenneth John Myers) refuting any paranormal activity during the Myers-family ownership era (1933-1994). Direct Myers quote: ''Nothing, unequivocally, absolutely nothing that went on while she and my brother lived there.'' Sources cited: Frank B. Salisbury''s ''The Utah UFO Display'' (2010), pp. 218-222; interviews recorded September 3-5, 2009. Notes Edith Myers died March 3, 1994 and ranch sold to Terry Sherman ~3 months later. Primary source for the only extended Myers-era on-record testimony.'
   archive_status: 3
   wayback_date: '2025-12-09'
+- url: https://www.theufochronicles.com/2024/06/senate-briefing-on-skinwalker-ranch-and.html
+  format: html
+  status: archived
+  path: news/theufochronicles-senate-briefing-skinwalker-ranch-20240601.html
+  archived_date: '2026-04-29'
+  sha256: feddcf2f826535d02425620d972e1ed990da41e3a7b62fb0bb8a7d102f14e364
+  archive_status: 1
+  note: 'The UFO Chronicles blog post by journalist Billy Cox (June 2024): ''Senate Briefing on The Skinwalker Ranch and AARO''s Sean Kirkpatrick''. Reports on Brandon Fugal''s contradiction of Kirkpatrick''s Greenstreet-interview denial and the April 19 2018 SSCI/SASC Skinwalker Ranch briefing where Fugal alleges Kirkpatrick told attendees ''we already know''. Source for audit finding 3.4.'
+- url: https://www.tovima.com/wsj/the-pentagon-disinformation-that-fueled-americas-ufo-mythology/
+  format: html
+  status: archived
+  path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html
+  archived_date: '2026-04-29'
+  sha256: a2929ba62cd8e53c88a4f8166b070a2d088eba4d5921ddbfc037e37220e7accf
+  archive_status: 1
+  note: 'Tovima.com syndication of the Wall Street Journal investigation ''The Pentagon Disinformation That Fueled America''s UFO Mythology'' by Joel Schectman and Aruna Viswanatha, originally published June 6 2025 (tovima posted 2025-06-08). The WSJ original is paywalled; this mirror carries the full article text. Documents two AARO Vol II findings Kirkpatrick attributes to his investigation: (1) Cold War deception programs — F-117 stealth-fighter testing at Area 51 covered by fabricated flying-saucer photos given to a bar owner by an Air Force colonel, and Salas Montana 1967 missile-silo electromagnetic-pulse-test cover-up; (2) the ''Yankee Blue'' decades-long Air Force hazing ritual showing newly-assigned commanders fake antigravity-craft photos under threat of arrest, prison, or execution. DoD spokeswoman Sue Gough on-record confirms AARO uncovered fake classified program materials and expects to publish findings in HRR Vol II ''later this year'' (deadline since missed). Source for audit finding 3.4.'
 - url: https://www.vice.com/en/article/brandon-fugal-owner-of-skinwalker-ranch/
   format: html
   status: archived
@@ -1499,6 +1589,14 @@
   sha256: 4c65c37f31a9c3e46dbaeabf2b634191a890af11e5d287c116f074e9ecfef1ac
   archive_status: 1
   note: war.gov (formerly defense.gov before EO 14347) official Pentagon biography for Ronald S. Moultrie. Captures USD(I&S) tenure framing, dual-hat ODNI Director of Defense Intelligence role, and 36+ year DoD/NIC career retiring from NSA Director of Operations in 2015. Direct retrieval blocked (war.gov returns 403); fetched via Wayback Machine (capture 2026-02-01).
+- url: https://www.war.gov/News/Releases/Release/Article/616969/new-joint-interagency-combined-space-operations-center-to-be-established/
+  format: html
+  status: archived
+  path: government/war-gov-jicspoc-establishment-20150911.html
+  archived_date: '2026-04-29'
+  sha256: d7399c5efc5cc82cf8fb7c6f52944b214bcb34cabfc4b9bf7a23404897ad5b04
+  archive_status: 1
+  note: DoD press release dated September 11, 2015 announcing establishment of the Joint Interagency Combined Space Operations Center (JICSpOC) at Schriever Air Force Base in Colorado Springs in conjunction with USSTRATCOM, Air Force Space Command, and the intelligence community. Experimentation and testing scheduled to begin October 1, 2015. Captured via Wayback Machine September 7, 2025 snapshot of the war.gov mirror (post-2026 DoD domain rebrand). Source for the JICSpOC special-assignment chronology referenced in audit finding 1.3.
 - url: https://www.westexec.com/kavandi-kirkpatrick/
   format: html
   status: archived
@@ -1569,6 +1667,14 @@
   archive_status: 3
   note: YouTube auto-captions for Linda Hall Library panel 'UAP in a Scientific Context' (~1:18:22). Recorded 2025-02-20, uploaded 2025-04-23. Moderator Nadia Drake; panelists Alex Dietrich, Greg Eghigian (PSU), Joshua Semeter (BU).
   wayback_date: '2025-04-27'
+- url: https://www.youtube.com/watch?v=bi0H_mkwTW0
+  format: transcript
+  status: archived
+  path: transcripts/ncas-kirkpatrick-aaro-duality-20260409-downloaded.md
+  archived_date: '2026-04-29'
+  sha256: 2782a4a00850c25624d936426930652d6a7f3db0507815d1f22b41a4b98fb8da
+  archive_status: 1
+  note: 'YouTube auto-caption transcript of Kirkpatrick''s April 9 2026 first public reappearance after ~2 years of relative silence; National Capital Area Skeptics (NCAS) Arlington VA event titled ''All-domain Anomaly Resolution Office (AARO): a Duality in Mission Regarding UAPs'' hosted by NCAS president Scott Snell. Kirkpatrick restated the no-aliens / no-legacy-program conclusion. Source for audit finding 3.4. extraction_type: auto-caption; expect transcribe-pipeline typos (BACKLOG #20).'
 - url: https://www.youtube.com/watch?v=ku9CYCKw4Aw
   format: transcript
   status: archived
@@ -1622,6 +1728,24 @@
   archive_status: 3
   note: Grusch closing remarks at the Sol Foundation Inaugural Symposium, Stanford (2023-11-17/18); Sol Foundation YouTube upload 2024-02-12.
   wayback_date: '2025-11-18'
+- url: https://x.com/BrandonFugal/status/1788707062408421795
+  format: txt
+  status: archived
+  path: social/x-brandon-fugal-status-1788707062408421795-denial-20240509.json
+  archived_date: '2026-04-29'
+  sha256: ec51c01a9b2e044562a61ee9dc9928c57f5e1789573334f52630fc35484614fb
+  archive_status: 1
+  wayback_skip: true
+  note: 'Brandon Fugal X (Twitter) post 2024-05-09 23:06:10 UTC, replying to @MikeColangelo: "I am telling the truth. On April 19, 2018, my team from Skinwalker Ranch was asked to provide a confidential briefing in Washington D.C. to the U.S. Senate Select Committee on Intelligence & United States Armed Services Committee. Sean Kirkpatrick was at the head of the table." Audit finding 3.4 — Greenstreet-denial follow-up. x.com HTML page is 402-blocked; archived via the public cdn.syndication.twimg.com tweet-result endpoint (no auth required) which returns the canonical machine-readable Tweet payload. Wayback Machine has no usable captures (React-shell only). wayback_skip:true — synthetic syndication URL is not the original.'
+- url: https://x.com/BrandonFugal/status/1788708348340187605
+  format: txt
+  status: archived
+  path: social/x-brandon-fugal-status-1788708348340187605-photo-20240509.json
+  archived_date: '2026-04-29'
+  sha256: 5835adbba2e60dac13caf0b93f9dc88205906a8d0a5fa046cbb224ebfc958898
+  archive_status: 1
+  wayback_skip: true
+  note: 'Brandon Fugal X (Twitter) post 2024-05-09 23:11:17 UTC: "On April 19, 2018, my team from Skinwalker Ranch was asked to provide a confidential briefing in Washington D.C. to the U.S. Senate Select Committee on Intelligence & United States Armed Services Committee. Sean Kirkpatrick was at the head of the table. It lasted 2.5 hrs." Attached photo at sources/social/fugal-skinwalker-ranch-senate-briefing-photo-20180419.jpg (pbs.twimg.com/media/GNLEvJqWgAABtvl.jpg, 2048x1806). Audit finding 3.4 primary source documenting Kirkpatrick at the briefing. x.com HTML page is 402-blocked; archived via cdn.syndication.twimg.com public tweet-result endpoint. Wayback CDX has captures under twitter.com/BrandonFugal/status/{id} but they are React-shell only.'
 - url: https://x.com/ChrisUKSharp/status/1965182535358456276/photo/1
   format: image
   status: archived

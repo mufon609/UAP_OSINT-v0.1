@@ -90,22 +90,73 @@ the manifest if both appear in your source trail.
 
 ## X / Twitter (x.com)
 
-**Problem:** Returns 402 (payment required) for all automated requests.
-Save Page Now returns HTTP 523 (Cloudflare block).
+**Problem:** The HTML page returns 402 (payment required) for all
+automated requests. Save Page Now returns HTTP 523 (Cloudflare block).
+Wayback CDX captures often exist but contain only the React shell —
+the rendered post content never lands in the snapshot because Twitter
+requires client-side JS to fetch and render the Tweet payload.
 
 **What works:**
 
-- **Wayback Machine CDX check** — many posts ARE archived even though
-  new saves fail:
+- **`cdn.syndication.twimg.com` tweet-result endpoint** — public,
+  unauthenticated, returns canonical machine-readable Tweet JSON:
   ```
-  curl -s "http://web.archive.org/cdx/search/cdx?url=x.com/{handle}/status/{id}&output=json&limit=3&filter=statuscode:200"
+  curl -sSL -A "Mozilla/5.0" -o sources/social/{slug}.json \
+       "https://cdn.syndication.twimg.com/tweet-result?id={status_id}&token=a"
   ```
-  If a snapshot exists, download from the Wayback URL.
+  The `token` parameter is required (any non-empty value works). Payload
+  includes:
+  - `text` — full tweet text with HTML entities (`&amp;`, etc.)
+  - `created_at` — ISO 8601 UTC timestamp
+  - `user.{name, screen_name, id_str}` — author identity
+  - `mediaDetails[].media_url_https` — photo URL; append `?name=orig`
+    for full-resolution download
+  - `entities.urls[]` — expanded link cards
+  - `__typename` — `Tweet` for normal posts; other values may indicate
+    a deleted / protected / suspended account
+  Save the JSON itself as the canonical archive (it IS the source of
+  record for the post's content), then download attached photos
+  separately into the same `sources/social/` directory.
 
-- **Manual browser save** — last resort. Screenshot + text copy, save
-  to `sources/social/`.
+- **`publish.twitter.com/oembed`** — lighter-weight alternative when
+  you only need the embeddable HTML blockquote and not the full JSON
+  payload:
+  ```
+  curl -sSL -A "Mozilla/5.0" \
+       "https://publish.twitter.com/oembed?url=https://twitter.com/{handle}/status/{id}&omit_script=true"
+  ```
+  Returns ~1KB JSON with the post text inside an HTML `blockquote`.
 
-**What doesn't work:** direct `curl`/WebFetch (402), Save Page Now API (523).
+- **Wayback Machine CDX check** — fallback for cases where syndication
+  returns 404 (deleted / protected). Many older posts ARE captured at
+  the URL level even when the rendered content isn't:
+  ```
+  curl -s "http://web.archive.org/cdx/search/cdx?url=twitter.com/{handle}/status/{id}&output=json&limit=3&filter=statuscode:200"
+  ```
+  Note: the pre-rebrand `twitter.com` URL form has more captures than
+  the current `x.com` form. Even when CDX returns hits, expect
+  React-shell content unless the snapshot is from the brief 2012-2014
+  window when Twitter rendered server-side.
+
+- **Manual browser save** — last resort, only if the post is deleted
+  but visible in the user's own browser cache.
+
+**Manifest convention.** Register the original `x.com` URL as the
+primary; set `path` to the saved `.json` file in `sources/social/`;
+`format: txt` (the JSON is text-payload — `image` is reserved for the
+photos themselves); `wayback_skip: true` (the syndication URL is
+synthetic and Wayback can't meaningfully snapshot it). Add the photo
+file as a SEPARATE manifest entry keyed off the `pbs.twimg.com` media
+URL with `format: image`.
+
+**What doesn't work:** direct `curl`/WebFetch on `x.com` (402), Save
+Page Now API (523), Wayback CDX of the `x.com` HTML page (React-shell
+only).
+
+Surfaced: Kirkpatrick audit pass (2026-04-29) — Fugal X posts (status
+1788708348340187605, 1788707062408421795) needed for Skinwalker briefing
+attendance documentation; cdn.syndication endpoint returned full text +
+photo metadata in two unauthenticated calls.
 
 ---
 
