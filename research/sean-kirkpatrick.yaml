@@ -123,7 +123,6 @@ affiliations:
   added_date: '2026-04-29'
   organization_path: /organizations/uga
   role: B.S. Physics (1991); Ph.D. Physics (1995); currently Adjunct Assistant Professor of Physics
-  period_start: '1986'
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: lines 9-12
@@ -884,7 +883,7 @@ quotes:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: lines 4-7
   significance: AARO bio lead — establishes the 'asked by USD(I&S)' selection narrative + 'Dr. K' alias used by AARO staff
-  context: Official Department of Defense biography released at AARO establishment, July 20 2022
+  context: Official Department of Defense biography released at AARO establishment
 - id: q2
   added_date: '2026-04-29'
   observation_type: relayed
@@ -896,7 +895,7 @@ quotes:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: lines 34-35
   significance: First public articulation of the 'new-start organizations' career framing — five before AARO; AARO is the sixth
-  context: Official Department of Defense biography released at AARO establishment, July 20 2022
+  context: Official Department of Defense biography released at AARO establishment
 - id: q3
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1016,7 +1015,7 @@ quotes:
     path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
     location: ¶2
   significance: Kirkpatrick links his retirement decision to the public-discourse environment around UAP — a self-attributed motivation
-  context: Scientific American op-ed January 19 2024
+  context: Scientific American op-ed
 - id: q13
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1028,7 +1027,7 @@ quotes:
     path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
     location: ¶2
   significance: Kirkpatrick's framing of AARO's institutional environment and the legislative-battles context
-  context: Scientific American op-ed January 19 2024
+  context: Scientific American op-ed
 - id: q14
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1040,7 +1039,7 @@ quotes:
     path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
     location: ¶3
   significance: Kirkpatrick's most-quoted dismissive framing of the UAP-whistleblower public discourse — 'tall tales, fabrication and secondhand or thirdhand retellings'
-  context: Scientific American op-ed January 19 2024
+  context: Scientific American op-ed
 - id: q15
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1052,7 +1051,7 @@ quotes:
     path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
     location: ¶5
   significance: 'Kirkpatrick characterizes the UAP whistleblower community as ''a small group of interconnected believers and others with possibly less than honest intentions'' — recurring framing across his post-government voice'
-  context: Scientific American op-ed January 19 2024
+  context: Scientific American op-ed
 - id: q16
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1064,7 +1063,7 @@ quotes:
     path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
     location: ¶7
   significance: Kirkpatrick's institutional explanation of UAP-disclosure narratives as an AATIP/Bigelow outgrowth
-  context: Scientific American op-ed January 19 2024
+  context: Scientific American op-ed
 - id: q17
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1076,7 +1075,7 @@ quotes:
     path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
     location: ¶7
   significance: Kirkpatrick's characterization of DIA's institutional finding regarding AATIP-era Skinwalker Ranch research expenditures
-  context: Scientific American op-ed January 19 2024
+  context: Scientific American op-ed
 - id: q18
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1088,7 +1087,7 @@ quotes:
     path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
     location: ¶9
   significance: Kirkpatrick on his pre-retirement signing of HRR Volume 1; the report was publicly released March 8 2024 under his successor
-  context: Scientific American op-ed January 19 2024
+  context: Scientific American op-ed
 - id: q19
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1100,7 +1099,7 @@ quotes:
     path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
     location: ¶9
   significance: Kirkpatrick's framing of UAP cover-up allegations as inadvertent or unauthorized disclosures of legitimate U.S. programs
-  context: Scientific American op-ed January 19 2024
+  context: Scientific American op-ed
 - id: q20
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1112,7 +1111,7 @@ quotes:
     path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
     location: ¶12
   significance: Kirkpatrick's characterization of the AARO-whistleblower interface as failed-on-the-whistleblower-side
-  context: Scientific American op-ed January 19 2024
+  context: Scientific American op-ed
 - id: q21
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1196,7 +1195,7 @@ quotes:
     path: news/rev-nasa-uap-public-meeting-transcript-20230531.html
     location: ¶ Kirkpatrick remarks
   significance: Kirkpatrick acknowledged at NASA UAP IST public meeting that observations of similar UAP morphologies are recorded all over the world
-  context: NASA UAP Independent Study Team first public meeting opening remarks, May 31 2023
+  context: NASA UAP Independent Study Team first public meeting opening remarks
 - id: q28
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1208,7 +1207,7 @@ quotes:
     path: news/rev-nasa-uap-public-meeting-transcript-20230531.html
     location: ¶ Kirkpatrick remarks
   significance: Kirkpatrick references the Middle East MQ-9 spherical-object case as a public example
-  context: NASA UAP Independent Study Team first public meeting opening remarks, May 31 2023
+  context: NASA UAP Independent Study Team first public meeting opening remarks
 - id: q29
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1220,7 +1219,7 @@ quotes:
     path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
     location: ¶ AARO roundtable transcript
   significance: Kirkpatrick on AARO's 'holdings' as of December 2022 — establishing the rhetorical boundary that AARO's claims about its evidence base refer to documents and memos rather than physical artifacts
-  context: USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO, December 16 2022
+  context: USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO
 - id: q30
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1256,7 +1255,7 @@ quotes:
     path: government/defense-gov-kirkpatrick-departure-20231120.html
     location: ¶1-2
   significance: Deputy Secretary of Defense Hicks's formal departure-statement characterization of Kirkpatrick's AARO service
-  context: DoD departure statement issued November 8 2023 by Deputy Secretary Kathleen Hicks
+  context: DoD departure statement by Deputy Secretary Kathleen Hicks
 - id: q33
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1268,7 +1267,7 @@ quotes:
     path: news/loeb-kirkpatrick-physical-constraints-uap-20230307.pdf
     location: ¶ section 5
   significance: Co-authored manuscript with Loeb considering hypothetical extraterrestrial-probe-from-parent-craft scenarios — the framing notable for posture-shift vs Kirkpatrick's later 'no credible evidence' SASC testimony 6 weeks later
-  context: Co-authored draft manuscript with Avi Loeb 'Physical Constraints on Unidentified Aerial Phenomena' dated March 7 2023
+  context: Co-authored draft manuscript with Avi Loeb 'Physical Constraints on Unidentified Aerial Phenomena'
 - id: q34
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1280,7 +1279,7 @@ quotes:
     path: news/nssa-shelton-kirkpatrick-sda-20241105.pdf
     location: ¶1 bullet
   significance: Lead bullet of NSSA Moorman Center paper co-authored with Gen. (Ret.) William L. Shelton
-  context: NSSA Moorman Center Occasional Paper 'Space Domain Awareness as a Foundational National Security Issue' November 5 2024
+  context: NSSA Moorman Center Occasional Paper 'Space Domain Awareness as a Foundational National Security Issue'
 - id: q35
   added_date: '2026-04-29'
   observation_type: relayed
@@ -1292,7 +1291,7 @@ quotes:
     path: news/nssa-midnight-hammer-williams-kirkpatrick-20250626.pdf
     location: ¶3
   significance: NSSA Moorman Center paper opening framing — written four to five days after the U.S. military strike on Iranian nuclear facilities
-  context: NSSA Moorman Center Occasional Paper 'National Security Space Contributions to Operation Midnight Hammer' June 26 2025
+  context: NSSA Moorman Center Occasional Paper 'National Security Space Contributions to Operation Midnight Hammer'
 entities_referenced:
 - id: e1
   added_date: '2026-04-29'
@@ -1535,6 +1534,6 @@ credibility_notes: 'Kirkpatrick is significant to the UAP public record because 
   November 2023 OUSD(I&S) revisions to the UAP Disclosure Act. The 33-page line-by-line revisions to the Senate-passed UAP Disclosure Act of 2023 were reviewed by the Office of the Under Secretary of Defense for Intelligence and Security and submitted to congressional negotiators in November 2023. Per a July 2024 Marik von Rennenkampff interview cited in Douglas Johnson''s analysis (July 2024), Kirkpatrick said of these revisions that "we convinced Congress last year not to go down that road". He separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
 
 
-  Reveal Systems patent family. Kirkpatrick is a inventor with Erik T. Bogaard and Jason F. Fairchild on three Reveal Systems Inc. USPTO patent applications for a social media influence scoring system. The May 7 2019 provisional application was filed while he was Deputy Director of Intelligence at U.S. Space Command; continuation applications were filed through his AARO tenure (the February 28 2023 continuation filed while he was AARO Director).
+  Reveal Systems patent family. Kirkpatrick is named as an inventor with Erik T. Bogaard and Jason F. Fairchild on three Reveal Systems Inc. USPTO patent applications for a social media influence scoring system. The May 7 2019 provisional application was filed while he was Deputy Director of Intelligence at U.S. Space Command; continuation applications were filed through his AARO tenure (the February 28 2023 continuation filed while he was AARO Director).
 
   '

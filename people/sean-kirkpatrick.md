@@ -40,7 +40,6 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Organization | Role | Period | Source |
 |---|---|---|---|
-| [`/organizations/uga`] | B.S. Physics (1991); Ph.D. Physics (1995); currently Adjunct Assistant Professor of Physics | 1986 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | [`/organizations/us-navy`] | National Research Council Fellow at U.S. Naval Research Laboratory investigating novel solid-state lasers | 1996 – 1997 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | [`/organizations/us-air-force`] | Research physicist at Air Force Research Laboratory; built Ultrafast Laser Physics Lab | 1997 – 2003 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | [`/organizations/nro`] | Program manager (CIA-assigned) | 2003 – 2005 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
@@ -58,6 +57,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | [`/organizations/ornl`] | ORNL Chief Operating Officer for the National Security Sciences Directorate per UT-Battelle FOIA memorandum referenced in DOE FIA-24-0036; multiple public-facing title variants documented (see Credibility Notes) | 2023-12 | government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf |
 | [`/organizations/nssa-moorman-center`] | Member, Board of Advisors of the National Security Space Association | 2024 | news/nssa-shelton-kirkpatrick-sda-20241105.pdf |
 | [`/organizations/westexec-advisors`] | Senior Advisor | 2024-05-09 | news/westexec-kavandi-kirkpatrick-announcement-20240509.html |
+| [`/organizations/uga`] | B.S. Physics (1991); Ph.D. Physics (1995); currently Adjunct Assistant Professor of Physics |  | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 
 ---
 
@@ -73,7 +73,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Official Department of Defense biography released at AARO establishment, July 20 2022, 2022-07-20 |
+| Attributed to | Official Department of Defense biography released at AARO establishment, 2022-07-20 |
 | Source | [archived source](../sources/government/media-defense-gov-kirkpatrick-biography-20220720.pdf) |
 | Location | lines 4-7 |
 
@@ -81,7 +81,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Official Department of Defense biography released at AARO establishment, July 20 2022, 2022-07-20 |
+| Attributed to | Official Department of Defense biography released at AARO establishment, 2022-07-20 |
 | Source | [archived source](../sources/government/media-defense-gov-kirkpatrick-biography-20220720.pdf) |
 | Location | lines 34-35 |
 
@@ -89,7 +89,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO, December 16 2022, 2022-12-16 |
+| Attributed to | USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO, 2022-12-16 |
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
 | Location | ¶ AARO roundtable transcript |
 
@@ -97,7 +97,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Co-authored draft manuscript with Avi Loeb 'Physical Constraints on Unidentified Aerial Phenomena' dated March 7 2023, 2023-03-07 |
+| Attributed to | Co-authored draft manuscript with Avi Loeb 'Physical Constraints on Unidentified Aerial Phenomena', 2023-03-07 |
 | Source | [archived source](../sources/news/loeb-kirkpatrick-physical-constraints-uap-20230307.pdf) |
 | Location | ¶ section 5 |
 
@@ -161,7 +161,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | NASA UAP Independent Study Team first public meeting opening remarks, May 31 2023, 2023-05-31 |
+| Attributed to | NASA UAP Independent Study Team first public meeting opening remarks, 2023-05-31 |
 | Source | [archived source](../sources/news/rev-nasa-uap-public-meeting-transcript-20230531.html) |
 | Location | ¶ Kirkpatrick remarks |
 
@@ -169,7 +169,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | NASA UAP Independent Study Team first public meeting opening remarks, May 31 2023, 2023-05-31 |
+| Attributed to | NASA UAP Independent Study Team first public meeting opening remarks, 2023-05-31 |
 | Source | [archived source](../sources/news/rev-nasa-uap-public-meeting-transcript-20230531.html) |
 | Location | ¶ Kirkpatrick remarks |
 
@@ -177,7 +177,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | DoD departure statement issued November 8 2023 by Deputy Secretary Kathleen Hicks, 2023-11-08 |
+| Attributed to | DoD departure statement by Deputy Secretary Kathleen Hicks, 2023-11-08 |
 | Source | [archived source](../sources/government/defense-gov-kirkpatrick-departure-20231120.html) |
 | Location | ¶1-2 |
 
@@ -233,7 +233,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Scientific American op-ed January 19 2024, 2024-01-19 |
+| Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶2 |
 
@@ -241,7 +241,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Scientific American op-ed January 19 2024, 2024-01-19 |
+| Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶2 |
 
@@ -249,7 +249,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Scientific American op-ed January 19 2024, 2024-01-19 |
+| Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶3 |
 
@@ -257,7 +257,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Scientific American op-ed January 19 2024, 2024-01-19 |
+| Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶5 |
 
@@ -265,7 +265,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Scientific American op-ed January 19 2024, 2024-01-19 |
+| Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶7 |
 
@@ -273,7 +273,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Scientific American op-ed January 19 2024, 2024-01-19 |
+| Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶7 |
 
@@ -281,7 +281,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Scientific American op-ed January 19 2024, 2024-01-19 |
+| Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶9 |
 
@@ -289,7 +289,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Scientific American op-ed January 19 2024, 2024-01-19 |
+| Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶9 |
 
@@ -297,7 +297,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | Scientific American op-ed January 19 2024, 2024-01-19 |
+| Attributed to | Scientific American op-ed, 2024-01-19 |
 | Source | [archived source](../sources/news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html) |
 | Location | ¶12 |
 
@@ -329,7 +329,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | NSSA Moorman Center Occasional Paper 'Space Domain Awareness as a Foundational National Security Issue' November 5 2024, 2024-11-05 |
+| Attributed to | NSSA Moorman Center Occasional Paper 'Space Domain Awareness as a Foundational National Security Issue', 2024-11-05 |
 | Source | [archived source](../sources/news/nssa-shelton-kirkpatrick-sda-20241105.pdf) |
 | Location | ¶1 bullet |
 
@@ -345,7 +345,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 | Field | Value |
 |---|---|
-| Attributed to | NSSA Moorman Center Occasional Paper 'National Security Space Contributions to Operation Midnight Hammer' June 26 2025, 2025-06-26 |
+| Attributed to | NSSA Moorman Center Occasional Paper 'National Security Space Contributions to Operation Midnight Hammer', 2025-06-26 |
 | Source | [archived source](../sources/news/nssa-midnight-hammer-williams-kirkpatrick-20250626.pdf) |
 | Location | ¶3 |
 
@@ -459,7 +459,7 @@ Kirkpatrick's own framing of his AARO role. Per the Black Vault release of FOIA 
 
 November 2023 OUSD(I&S) revisions to the UAP Disclosure Act. The 33-page line-by-line revisions to the Senate-passed UAP Disclosure Act of 2023 were reviewed by the Office of the Under Secretary of Defense for Intelligence and Security and submitted to congressional negotiators in November 2023. Per a July 2024 Marik von Rennenkampff interview cited in Douglas Johnson's analysis (July 2024), Kirkpatrick said of these revisions that "we convinced Congress last year not to go down that road". He separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
 
-Reveal Systems patent family. Kirkpatrick is a inventor with Erik T. Bogaard and Jason F. Fairchild on three Reveal Systems Inc. USPTO patent applications for a social media influence scoring system. The May 7 2019 provisional application was filed while he was Deputy Director of Intelligence at U.S. Space Command; continuation applications were filed through his AARO tenure (the February 28 2023 continuation filed while he was AARO Director).
+Reveal Systems patent family. Kirkpatrick is named as an inventor with Erik T. Bogaard and Jason F. Fairchild on three Reveal Systems Inc. USPTO patent applications for a social media influence scoring system. The May 7 2019 provisional application was filed while he was Deputy Director of Intelligence at U.S. Space Command; continuation applications were filed through his AARO tenure (the February 28 2023 continuation filed while he was AARO Director).
 
 ---
 
