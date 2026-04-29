@@ -1,0 +1,444 @@
+id: research/2023-04-19-sasc-aaro-hearing
+type: research-artifact
+schema_version: 1
+target_node: events/2023-04-19-sasc-aaro-hearing
+status: active
+created: '2026-04-28'
+description: 'Subcommittee on Emerging Threats and Capabilities of the Senate Committee on Armed Services hearing to receive testimony on the mission, activities, oversight, and budget of the All-Domain Anomaly Resolution Office ([`/organizations/aaro`]). The Subcommittee met April 19, 2023 in Room SR-232A, Russell Senate Office Building, pursuant to notice, at 11:08 a.m. and adjourned at 12:08 p.m. Today''s earlier closed session was not part of the open transcript. Senator Kirsten E. Gillibrand ([`/people/kirsten-gillibrand`]), chairwoman of the subcommittee, presiding; Ranking Member Joni Ernst ([`/people/joni-ernst`]) and Senator Rosen ([`/people/jacky-rosen`]) were present. The witness was Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]), Director of AARO.
+
+
+  Senator Gillibrand''s opening described the specific issues she would probe: the President''s budget for fiscal years 2023 and 2024 requested only enough funding to defray the operating expenses of AARO, and it took a letter to Secretary Austin from Senator Rubio ([`/people/marco-rubio`]) and Gillibrand and 14 other senators to get the office temporary relief; the fiscal year 2023 National Defense and Intelligence Authorization Act established a direct reporting chain from the AARO director to the Deputy Secretary of Defense, with the role of the Office of the Under Secretary of Defense for Intelligence and Security limited to administrative support; whether Kirkpatrick could achieve the necessary control over sensor filters and the storage and access to raw surveillance data; and the publicly discoverable and accessible process for safe disclosure that Congress mandated for witnesses of UAP events or participants in government UAP-related activities. As former Deputy Secretary of Defense David Norquist ([`/people/david-norquist`]) observed, had any of these objects had the label made in China there would be an uproar in the government and media; Senator Gillibrand also looked at the recent incursion of the unidentified PRC high-altitude balloon and the recent incidents over North America, where Pentagon leadership did not turn to AARO to play a leading role in advising the combatant commander.
+
+
+  Kirkpatrick''s statement described AARO''s structure (a team of more than three dozen experts organized around four functional areas: operations, scientific research, integrated analysis, and strategic communications), its analytic process (a five-step process with an intelligence community team and an S&T team made up as a red team, blue team, or competitive analysis), and its case holdings (over 650 cases as of that week, up from about 366 reported in January). Kirkpatrick said clearly for the record that AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics. He said AARO''s mission is to turn UAP into SEP, somebody else''s problem — to quickly and efficiently hand off readily explainable objects to the intelligence, law enforcement, or operational safety communities. The hearing then surfaced specific issues: Kirkpatrick said he was currently reporting to USDINS until DOD and DNI come up with the plan for how they are going to implement legislation; the public-facing safe disclosure website had been submitted for approval before Christmas and was still under review with no estimate when his superiors will respond; and AARO did not play a role in DOD''s response to the recent UAP incidents over North America other than initial advice based on what was known at that time.
+
+
+  Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testimony-kirkpatrick-2023`] [`/organizations/aaro`] [`/organizations/uaptf`] [`/organizations/sasc`] [`/organizations/dod`] [`/organizations/odni`] [`/organizations/nasa`] [`/organizations/joint-staff`] [`/organizations/northcom`] [`/organizations/usspacecom`] [`/organizations/doe`] [`/organizations/ousd-is`] [`/people/sean-kirkpatrick`] [`/people/kirsten-gillibrand`] [`/people/joni-ernst`] [`/people/jacky-rosen`] [`/people/marco-rubio`] [`/people/lloyd-austin`] [`/people/david-norquist`] [`/people/harry-reid`] [`/people/david-spergel`] [`/people/glen-vanherck`]
+
+  '
+primary_sources:
+- path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-2023-04-19-sasc-aaro-hearing-0.txt
+- path: government/armed-services-senate-gov-sasc-aaro-event-20230419.html
+  format: html
+  extracted_text_path: /tmp/scratch-2023-04-19-sasc-aaro-hearing-1.txt
+- path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-2023-04-19-sasc-aaro-hearing-2.txt
+- path: government/senate-gillibrand-sasc-opening-20230419.html
+  format: html
+  extracted_text_path: /tmp/scratch-2023-04-19-sasc-aaro-hearing-3.txt
+document_intrinsic:
+  internal_title: 'HEARING TO RECEIVE TESTIMONY ON THE MISSION, ACTIVITIES, OVERSIGHT, AND BUDGET OF THE ALL-DOMAIN ANOMALY RESOLUTION OFFICE'
+  stenographic_provider: ALDERSON COURT REPORTING
+  publication_year: 2023
+  pages: 50
+  classification: 'Unclassified — open-session stenographic transcript; an earlier closed session of the same hearing is not in the open record'
+context_extrinsic:
+  display_title: April 19, 2023 SASC Subcommittee on Emerging Threats AARO Hearing
+event_intrinsic:
+  hearing_title: 'To receive testimony on the mission, activities, oversight, and budget of the All-Domain Anomaly Resolution Office'
+  committee: Subcommittee on Emerging Threats and Capabilities, Committee on Armed Services, U.S. Senate
+  session: First Session
+  congress: One Hundred Eighteenth Congress
+  date: '2023-04-19'
+  scheduled_time: 10:30 a.m.
+  convened_time: 11:08 a.m.
+  adjourned_time: 12:08 p.m.
+  location: Room SR-232A, Russell Senate Office Building, Washington, D.C.
+  status: 'Open/Closed (the open session was preceded by a closed session the same day)'
+  chair: Kirsten E. Gillibrand
+  ranking_member: Joni Ernst
+participants:
+- id: p1
+  added_date: '2026-04-28'
+  participant_path: /people/sean-kirkpatrick
+  capacity: witness-institutional
+  role: Witness — Director, All-domain Anomaly Resolution Office (sole witness in the open session)
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 99-110, 435-447 (witness intro and statement)
+  note: Kirkpatrick was the sole open-session witness; no swearing-in is recorded in the open-session transcript, so oath status is unknown — see witnesses_testimony entry wt1.
+- id: p2
+  added_date: '2026-04-28'
+  participant_path: /people/kirsten-gillibrand
+  capacity: committee-member
+  role: Chairwoman, Subcommittee on Emerging Threats and Capabilities (New York); presiding
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 64-66, 93-97 (presiding designation, opening statement)
+- id: p3
+  added_date: '2026-04-28'
+  participant_path: /people/joni-ernst
+  capacity: committee-member
+  role: Ranking Member, Subcommittee on Emerging Threats and Capabilities (Iowa)
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 68-70, 321-329 (members present, opening statement)
+- id: p4
+  added_date: '2026-04-28'
+  participant_path: /people/jacky-rosen
+  capacity: committee-member
+  role: Senator (Nevada); Subcommittee member
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 68-70, 1591-1597 (members present, Q&A)
+witnesses_testimony:
+- id: wt1
+  added_date: '2026-04-28'
+  witness_path: /people/sean-kirkpatrick
+  oath_status: unknown
+  transcript_node: /transcripts/2023-04-19-sasc-kirkpatrick
+  written_testimony_node: /documents/written-testimony-kirkpatrick-2023
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 99-110, 435-1170
+  note: 'The open-session stenographic transcript records no swearing-in moment; SASC oversight hearings vary in whether the chair administers an oath, and any swearing-in for the closed session that preceded the open session is not in the open record. Kirkpatrick''s pre-hearing Statement for the Record was filed as written testimony (PDF metadata creation 2023-04-18 18:28 EDT).'
+timeline:
+- id: t1
+  added_date: '2026-04-28'
+  date: '2023-04-18'
+  event: Kirkpatrick's pre-hearing Statement for the Record finalized (PDF created Microsoft Word for Microsoft 365, 2023-04-18 18:28 EDT)
+  source:
+    path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
+    location: PDF document metadata (CreationDate)
+- id: t2
+  added_date: '2026-04-28'
+  date: '2023-04-19'
+  event: Closed session of the hearing held earlier the same day (referenced in Gillibrand's opening; closed-session record not in the open transcript)
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 99-103
+- id: t3
+  added_date: '2026-04-28'
+  date: '2023-04-19'
+  event: 'Open session: subcommittee met at 11:08 a.m. in Room SR-232A, Russell Senate Office Building; Hon. Kirsten E. Gillibrand, chairwoman of the subcommittee, presiding'
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 60-66
+- id: t4
+  added_date: '2026-04-28'
+  date: '2023-04-19'
+  event: Opening statements by Senator Gillibrand and Senator Ernst
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 93-388
+- id: t5
+  added_date: '2026-04-28'
+  date: '2023-04-19'
+  event: Kirkpatrick oral statement and slide presentation (case trend chart and two declassified MQ-9 video case examples — Middle East spherical object, South Asia commuter aircraft sensor-artifact case)
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 435-1124
+- id: t6
+  added_date: '2026-04-28'
+  date: '2023-04-19'
+  event: Q&A with Gillibrand, Ernst, and Rosen (two rounds); Gillibrand offered to author legislative language for additional AARO collection-tasking and counter-intelligence authorities Kirkpatrick said the office needed
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 1176-2585
+- id: t7
+  added_date: '2026-04-28'
+  date: '2023-04-19'
+  event: Open-session closing exchange — two audience members presented evidence to Kirkpatrick; hearing adjourned at 12:08 p.m.
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 2586-2788
+- id: t8
+  added_date: '2026-04-28'
+  date: '2023-04-25'
+  event: Stenographic transcript finalized by Alderson Court Reporting (PDF CreationDate)
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: PDF document metadata (CreationDate)
+quotes:
+- id: q1
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'It took a letter to Secretary Austin from Senator Rubio and me and 14 other senators to get the office temporary relief for the current fiscal year.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 209-213
+  significance: Gillibrand documents the bipartisan funding-relief letter that supplied AARO temporary fiscal year relief after the President's Budget for fiscal years 2023 and 2024 requested only operating expenses
+  context: Gillibrand opening statement
+- id: q2
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'In the fiscal year 2023 National Defense and Intelligence Authorization Act Congress established a direct reporting chain from the AARO director to the Deputy Secretary of Defense.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 235-241
+  significance: Gillibrand restates the FY2023 NDAA reporting-chain change — AARO director reports directly to the Deputy Secretary of Defense, with USD(I&S) limited to administrative support
+  context: Gillibrand opening statement
+- id: q3
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'The AARO team of more than three dozen experts is organized around four functional areas: operations, scientific research, integrated analysis, and strategic communications.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 496-502
+  significance: Kirkpatrick describes AARO's organizational structure — four functional areas including a strategic communications function
+  context: Kirkpatrick oral statement
+- id: q4
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'I should also state clearly for the record that in our research AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 768-781
+  significance: Kirkpatrick's on-record statement that AARO has found no credible evidence of extraterrestrial activity, off-world technology, or objects defying the known laws of physics — the most-cited single line from this hearing in subsequent press and policy discussion
+  context: Kirkpatrick oral statement
+- id: q5
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'In other words, AARO''s mission is to turn UAP into SEP, somebody else''s problem.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 729-732
+  significance: Kirkpatrick's rhetorical framing of AARO's mission — handing off readily-explainable objects to the intelligence, law enforcement, or operational safety communities
+  context: Kirkpatrick oral statement
+- id: q6
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'So as of this week we are tracking over -- a total of 650 cases.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 1194-1196
+  significance: Kirkpatrick's case-load count at the time of the hearing — 650 total cases, up from 366 reported in January
+  context: Q&A with Gillibrand
+- id: q7
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'Over half, about 52 percent, of what has been reported to us are round or spheres.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 893-897
+  significance: Kirkpatrick's public characterization of UAP morphology — about 52 percent of reports are round or spheres
+  context: Kirkpatrick chart presentation following oral statement
+- id: q8
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'There are some authorities that we need. We currently are operating under Title 10 authorities but we have good relationships across the other agencies. But having additional authorities for collection tasking, counter-intelligence --
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 1784-1792
+  significance: 'Kirkpatrick states AARO needs additional collection-tasking and counter-intelligence authorities — Gillibrand immediately offered to author the language for the defense bill (line 1809-1817: "will you help us write that language so we can put it in the defense bill this year so that we know what authorities you need?")'
+  context: Q&A with Senator Rosen and Senator Gillibrand
+- id: q9
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'So USDINS and the -- I currently report to USDINS until they come up with the plan for how they are going to implement legislation.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 1982-1986
+  significance: Kirkpatrick reports the FY2023 NDAA reporting-chain change has not yet been implemented at the time of the hearing — he was still reporting to USD(I&S) pending DOD and DNI implementation guidance
+  context: Q&A with Gillibrand on AARO's logistics and reporting structure
+- id: q10
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'I have. We submitted the first version of that before Christmas.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 2041-2043
+  significance: Kirkpatrick confirms AARO submitted a first version of the publicly discoverable safe disclosure website for approval before Christmas 2022 — but as of the hearing it was still under review with no estimate from his superiors
+  context: Q&A with Gillibrand on the safe disclosure portal
+- id: q11
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'We did not play a role in what you would respond other than that initial advice on what we are seeing and how we are seeing it.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 2178-2183
+  significance: Kirkpatrick states AARO did not play a role in DOD's response to the PRC high-altitude balloon shoot-downs other than initial advice — confirming Gillibrand's framing that Pentagon leadership did not turn to AARO to play a leading role in advising the combatant commander
+  context: Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America
+- id: q12
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'In 1979 Carl Sagan said extraordinary claims require extraordinary evidence. I would go one step further and I would say extraordinary claims require not only extraordinary evidence but extraordinary science and so how do you do that?
+
+    '
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+    location: lines 2413-2421
+  significance: Kirkpatrick's scientific-method framing — extends the Sagan formulation to require not only extraordinary evidence but extraordinary science as the standard for AARO conclusions
+  context: Q&A with Gillibrand on academic community collaboration and the NASA UAP independent study
+entities_referenced:
+- id: e1
+  added_date: '2026-04-28'
+  entity_type: person
+  name: Sean M. Kirkpatrick
+  wrap_path: /people/sean-kirkpatrick
+  context_summary: Sole open-session witness; Director of AARO at the time of the hearing
+- id: e2
+  added_date: '2026-04-28'
+  entity_type: person
+  name: Kirsten E. Gillibrand
+  wrap_path: /people/kirsten-gillibrand
+  context_summary: Chairwoman of the Subcommittee on Emerging Threats and Capabilities; presiding officer
+- id: e3
+  added_date: '2026-04-28'
+  entity_type: person
+  name: Joni Ernst
+  wrap_path: /people/joni-ernst
+  context_summary: Ranking Member of the Subcommittee on Emerging Threats and Capabilities
+- id: e4
+  added_date: '2026-04-28'
+  entity_type: person
+  name: Jacky Rosen
+  wrap_path: /people/jacky-rosen
+  context_summary: Senator (Nevada); Subcommittee member who attended and questioned Kirkpatrick
+- id: e5
+  added_date: '2026-04-28'
+  entity_type: person
+  name: Marco Rubio
+  wrap_path: /people/marco-rubio
+  context_summary: Co-author with Gillibrand and 14 other senators of the funding-relief letter to Secretary Austin (referenced in Gillibrand's opening)
+- id: e6
+  added_date: '2026-04-28'
+  entity_type: person
+  name: Lloyd Austin
+  wrap_path: /people/lloyd-austin
+  context_summary: Secretary of Defense; recipient of the bipartisan funding-relief letter (referenced in Gillibrand's opening)
+- id: e7
+  added_date: '2026-04-28'
+  entity_type: person
+  name: David Norquist
+  wrap_path: /people/david-norquist
+  context_summary: Former Deputy Secretary of Defense; quoted by Gillibrand as having observed that an object labeled "made in China" would have produced an uproar — used to frame the UFO stigma critique
+- id: e8
+  added_date: '2026-04-28'
+  entity_type: person
+  name: Harry Reid
+  wrap_path: /people/harry-reid
+  context_summary: Late long-serving Majority Leader; cited in Gillibrand's opening as the senator who set in motion the activities reported in late 2017 media
+- id: e9
+  added_date: '2026-04-28'
+  entity_type: person
+  name: David Spergel
+  wrap_path: /people/david-spergel
+  context_summary: Chair of the NASA UAP independent study team; an audience member at the close of the hearing referenced presenting a book to Spergel
+- id: e10
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: All-Domain Anomaly Resolution Office (AARO)
+  wrap_path: /organizations/aaro
+  context_summary: The DOD office whose mission, activities, oversight, and budget the hearing was held to receive testimony on
+- id: e11
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: Unidentified Aerial Phenomena Task Force (UAPTF)
+  wrap_path: /organizations/uaptf
+  context_summary: Predecessor office to AARO; referenced in Senator Ernst's opening as the Navy-led task force that AARO evolved from
+- id: e12
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: Senate Committee on Armed Services
+  wrap_path: /organizations/sasc
+  context_summary: Parent committee of the Subcommittee on Emerging Threats and Capabilities; this hearing was held by that subcommittee
+- id: e13
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: Department of Defense
+  wrap_path: /organizations/dod
+  context_summary: AARO's parent department; the department whose efforts to address Unidentified Anomalous Phenomena Kirkpatrick was testifying on
+- id: e14
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: Office of the Director of National Intelligence
+  wrap_path: /organizations/odni
+  context_summary: Referenced in Senator Ernst's questioning regarding the ODNI annual threat assessment of Chinese and Russian space activities
+- id: e15
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: National Aeronautics and Space Administration
+  wrap_path: /organizations/nasa
+  context_summary: Referenced as AARO's interagency partner; NASA's independent study (chaired by David Spergel) was referenced in Kirkpatrick's closing answer on academic collaboration
+- id: e16
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: Office of the Under Secretary of Defense for Intelligence and Security
+  wrap_path: /organizations/ousd-is
+  context_summary: AARO's administrative parent at the time of the hearing; FY2023 NDAA limited the role of USD(I&S) to administrative support and established a direct reporting chain from the AARO director to the Deputy Secretary of Defense; Kirkpatrick at the time of the hearing was still reporting to USD(I&S) pending implementation guidance
+- id: e17
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: Joint Staff
+  wrap_path: /organizations/joint-staff
+  context_summary: Referenced multiple times by Kirkpatrick as the partner working with AARO on standardized reporting requirements and the plan ord for mitigation and response
+- id: e18
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: U.S. Northern Command
+  wrap_path: /organizations/northcom
+  context_summary: Referenced by Senator Rosen and Kirkpatrick as the combatant command AARO had recently engaged with (Kirkpatrick met with General VanHerck and the J staff at NORTHCOM weeks before the hearing)
+- id: e19
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: U.S. Space Command
+  wrap_path: /organizations/usspacecom
+  context_summary: Kirkpatrick's prior assignment (Deputy Director of Intelligence and DNI Representative); referenced by Kirkpatrick when discussing his "old hats" and adversary technical advancement
+- id: e20
+  added_date: '2026-04-28'
+  entity_type: organization
+  name: Department of Energy
+  wrap_path: /organizations/doe
+  context_summary: Referenced by Kirkpatrick as a partner agency providing personnel and resources to AARO
+- id: e21
+  added_date: '2026-04-28'
+  entity_type: transcript
+  name: Sean Kirkpatrick — Oral Testimony, 2023-04-19 SASC AARO Hearing
+  wrap_path: /transcripts/2023-04-19-sasc-kirkpatrick
+  context_summary: Verbatim record of Kirkpatrick's open-session testimony at this hearing (not yet built — see Cluster B/D follow-on queue)
+- id: e22
+  added_date: '2026-04-28'
+  entity_type: document
+  name: Sean Kirkpatrick — Statement for the Record, 2023-04-19 SASC AARO Hearing
+  wrap_path: /documents/written-testimony-kirkpatrick-2023
+  context_summary: Kirkpatrick's pre-hearing written statement filed for the record (not yet built — see Cluster B/D follow-on queue)
+- id: e23
+  added_date: '2026-04-28'
+  entity_type: person
+  name: Glen VanHerck
+  wrap_path: /people/glen-vanherck
+  context_summary: U.S. Air Force general; Commander of NORTHCOM/NORAD at the time of the hearing; named by Kirkpatrick in Q&A as the partner he had recently met with at NORTHCOM (with the J staff) about UAP coordination
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-28'
+  observed: USDINS
+  canonical: USD(I&S)
+  location: stenographic transcript lines 1982, 1985, 2113 (Kirkpatrick Q&A)
+  source_path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: Alderson Court Reporting stenographer rendered the spoken acronym "USD(I&S)" (Under Secretary of Defense for Intelligence and Security) phonetically as "USDINS" throughout the open-session transcript. Kirkpatrick's pre-hearing written Statement for the Record uses the canonical "USD(I&S)" form. Preserved as it appears in the stenographic transcript.
+- id: nq2
+  added_date: '2026-04-28'
+  observed: 'Mr. Kirkpatrick'
+  canonical: 'Dr. Kirkpatrick'
+  location: stenographic transcript throughout (e.g., lines 439, 1194, 1665)
+  source_path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: Senate stenographic convention applies "Mr." / "Ms." prefixes to civilian witness speakers regardless of academic title. Senators in the transcript address Kirkpatrick directly as "Dr. Kirkpatrick"; the speaker-tag prefix "Mr. Kirkpatrick:" is the stenographer's rendering convention.
+rumors: []

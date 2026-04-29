@@ -319,8 +319,9 @@
   status: archived
   path: news/nymag-underwood-2019.html
   archived_date: '2026-04-23'
-  archive_status: 1
+  archive_status: 3
   sha256: c844db11711d10900747d20ef96369103dfe6d600f5f767d536fbb5e5ab9df01
+  wayback_date: '2026-04-13'
 - url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/
   format: html
   status: archived
@@ -563,6 +564,43 @@
   sha256: 82f3a6c4013bb5cba23f9e614c69aa44a635594dadff1aeb08b2961c491d0392
   archive_status: 3
   wayback_date: '2025-11-18'
+- url: https://www.armed-services.senate.gov/download/kirkpatrick-statement
+  format: pdf
+  status: archived
+  path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
+  archived_date: '2026-04-28'
+  sha256: fcf53c2d6c97042e943302a6050486f43102de6fe235ae7f5d38da1bbbe7a7c7
+  archive_status: 3
+  note: Sean Kirkpatrick pre-hearing Statement for the Record submitted to SASC Subcommittee on Emerging Threats and Capabilities for the 2023-04-19 AARO hearing
+  wayback_date: '2025-03-08'
+- url: https://www.armed-services.senate.gov/download/transcript-4-19-2023
+  format: pdf
+  status: archived
+  path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
+  archived_date: '2026-04-28'
+  sha256: 97364f5e08a0c959261d4aa2c5599fa85565a7cee5b3eee2432d8618dfc8202f
+  archive_status: 3
+  note: Stenographic transcript (Alderson Court Reporting) of the 2023-04-19 SASC Subcommittee on Emerging Threats hearing on AARO mission, activities, oversight, and budget; sole witness Sean Kirkpatrick
+  wayback_date: '2025-03-20'
+  extraction_type: extraction-lossy
+- url: https://www.armed-services.senate.gov/download/transcript-4-19-2023#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.txt
+  archived_date: '2026-04-28'
+  sha256: 86b440bc56b4e91a70de3c3eda899c694992ed146e2291f1e9594e0fc3cd4d4a
+  archive_status: 1
+  wayback_skip: true
+  note: 'Contributor-produced clean-text transcription of the 2023-04-19 SASC AARO hearing transcript PDF (paired entry; same path stem). Stenographic transcript by Alderson Court Reporting in standard Senate format with 1-25 line numbers prefixed on every content line and footer/page-number boilerplate every 25 lines; pdftotext extracts those numbers inline, which breaks verbatim substring matching for any quote spanning a line boundary. This .txt restores plain prose by stripping the line-number prefixes and removing the Scheduling@TP.One / www.TP.One / page-number footer triplets. Validator (validate.py extract_source_text) prefers this same-stem .txt sibling over pdftotext output for the PDF entry flagged extraction_type=extraction-lossy. Page-marker sections (=== p. N ===) intentionally OMITTED — those inline tokens survive normalize_for_compare and would break verbatim matching for any quote spanning a page boundary; quote Location refs cite pdftotext line numbers in the original extract until BACKLOG #24 location-reference sweep.'
+- url: https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-mission-activities-oversight-and-budget-of-the-all-domain-anomaly-resolution-office
+  format: html
+  status: archived
+  path: government/armed-services-senate-gov-sasc-aaro-event-20230419.html
+  archived_date: '2026-04-28'
+  sha256: 5697440b67e8e697dd7af6cf98ed7a03f7c1a2d426e0b430a86330c9c9254a14
+  archive_status: 3
+  note: SASC Subcommittee on Emerging Threats hearing record page (witness list, transcript link, statement links) for the 2023-04-19 AARO hearing
+  wayback_date: '2026-03-10'
 - url: https://www.cbs.com/shows/video/kruYVj3_d8m6dkg95BRKzen50j8H29Mv/
   format: html
   status: archived
@@ -834,24 +872,27 @@
   path: government/sec-ttsa-1a-partii-20170710.html
   archived_date: '2026-04-22'
   sha256: aeca7cfff1dbb2d8fe873b3261407cf0459c5707a4acfdbae52e48b655fb3b47
-  archive_status: 1
+  archive_status: 3
   note: SEC Form 1-A Part II preliminary offering circular for To The Stars Academy of Arts and Science Inc. dated 2017-07-10. CIK 1710274, accession 000114420417036300. Establishes founding date (Feb 2017), principal investor Tom DeLonge, board members James Semivan and Harold Puthoff, headquarters at 1051 S. Coast Hwy 101 Suite B, Encinitas, CA.
+  wayback_date: '2025-05-01'
 - url: https://www.sec.gov/Archives/edgar/data/1710274/000149315221023034/form253g2.htm
   format: html
   status: archived
   path: government/sec-ttsa-253g2-reg-a-termination-20210917.html
   archived_date: '2026-04-22'
   sha256: 7bb84d45d4c40ded520cfed63cf532c2bd3c95ec59f6b25c67c3307cf927c92e
-  archive_status: 1
+  archive_status: 3
   note: SEC Form 253(g)(2) Supplement to Offering Circular dated September 17, 2021, File No. 024-11243, for To The Stars Academy of Arts and Science Inc. (CIK 1710274). Primary-source confirmation of Regulation A+ offering termination — 'No further subscriptions will be accepted for the current offering after September 18, 2021.' Supersedes the September 18, 2020 offering circular. Fetched directly from SEC EDGAR with research User-Agent.
+  wayback_date: '2025-02-08'
 - url: https://www.sec.gov/Archives/edgar/data/1710274/000149315222011769/partii.htm
   format: html
   status: archived
   path: government/sec-ttsa-1k-partii-20220502.html
   archived_date: '2026-04-22'
   sha256: 1daa79752cb43c85cba4bf04e85209ed3f948e962fe104a3a8e01f3e37dd44ec
-  archive_status: 1
+  archive_status: 3
   note: 'SEC Form 1-K Part II Annual Report for fiscal year ended December 31, 2021, filed 2022-05-02 (accession 0001493152-22-011769). Registrant: ''To The Stars Inc.'' (rebranded from ''To The Stars Academy of Arts and Science Inc.'' on November 30, 2021), CIK 1710274, IRS EIN 84-3854992 (the post-rename EIN). Primary-source documentation of: (a) November 30, 2021 corporate name amendment; (b) February 2021 strategic reorganization scaling back science/tech and pivoting to entertainment; (c) the ''now retired'' science and technology division (Space-Time Metric Engineering, Beamed Energy Propulsion, SCOUT, VAULT, A.D.A.M.); (d) December 24, 2020 Binding Term Sheet selling Love Movie LLC to DeLonge for $525k ($125k cash + $400k debt forgiveness); (e) June 1, 2021 BTS Amendment converting DeLonge debt to 784,970 shares at $1.20 held by Gravity Holdings; (f) April 1, 2021 Encinitas office/retail lease mutual termination; (g) four Reg A offerings history (First $50M, Second $30M, Third $30M paused 2020-12-18 and terminated Sept 2021, Fourth qualified 2022-03-31); (h) Elizondo as ''former company employee''; (i) Mellon as ''former chairman of the scientific advisory board''. Fills primary-source gap for 2020-12 through 2022-04 corporate history.'
+  wayback_date: '2025-07-03'
 - url: https://www.sec.gov/Archives/edgar/data/1710274/000164117225005183/partii.htm
   format: html
   status: archived

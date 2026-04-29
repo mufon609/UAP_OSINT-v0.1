@@ -59,11 +59,12 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/organizations/ttsa` | active | private |
 | `/organizations/uaptf` | active | gov |
 
-### Events (2)
+### Events (3)
 
 | Node | Status | Kind |
 |---|---|---|
 | `/events/2004-nimitz-encounter` | documented | encounter |
+| `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
 ### Documents (3)
