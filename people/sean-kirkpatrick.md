@@ -28,6 +28,8 @@ In 2003 he was offered a program manager position in the National Reconnaissance
 
 Awards include the Joint Meritorious Civilian Service Award, the National Intelligence Exceptional Achievement Medal, four National Intelligence Collaboration medallions, the NRO Innovation and Achievement Award, the Cleary Award for Scientific Excellence, and the DIA Director's Award for Excellence.
 
+Per the AFCEA biography, Kirkpatrick's wife Amy is a State Department officer and his daughter Maya was in college as of the AFCEA bio (~2019).
+
 ---
 
 ## UAP Relevance
