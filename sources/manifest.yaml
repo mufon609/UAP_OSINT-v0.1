@@ -1420,6 +1420,22 @@
   archive_status: 3
   note: ORNL National Security Sciences Directorate page — Kirkpatrick's hosting directorate at ORNL as Chief Technology Officer for Defense and Intelligence Programs
   wayback_date: '2026-04-27'
+- url: https://www.osti.gov/biblio/5527433
+  format: html
+  status: archived
+  path: government/osti-5527433-doe-honors-research-program-1986-impact-education.html
+  archived_date: '2026-04-29'
+  sha256: 1cf6d786671841585b02d34d49dbe45278eb444a0c9c5795cad1d86e3bc5cb97
+  archive_status: 1
+  note: 'DOE OSTI catalog entry for ORAU 1987 technical report ''Impact on education and career plans'' (Oak Ridge Associated Universities, December 1, 1987). Primary government catalog confirmation that the DOE High School Science Student Honors Program ran in summer 1986 at two laboratories: the High School Student Supercomputing Honors Program at Lawrence Livermore National Laboratory, and the High School Student Honors Research Program at Brookhaven National Laboratory. Documents who participated in the 1986 summer program. Full-text PDF not available through OSTI; the catalog metadata itself is the primary-source attestation that the program existed and ran at BNL in 1986. Per WorldCat the underlying report is held by libraries but not digitized; participant-level attribution for Kirkpatrick remains via Wikipedia citing AJC 1986 (audit 2.3 Open).'
+- url: https://www.osti.gov/biblio/6679837
+  format: html
+  status: archived
+  path: government/osti-6679837-doe-supercomputing-honors-program-1985-followup.html
+  archived_date: '2026-04-29'
+  sha256: 3913b0c55831551c05141b3bb39dc63092d0f6e7a672c72f6a460f835eddd510
+  archive_status: 1
+  note: 'DOE OSTI catalog entry for ORAU 1987 follow-up assessment ''US Department of Energy High School Student Supercomputing Honors Program: A follow-up assessment'' (DOI 10.2172/6679837). Primary government catalog attestation that the DOE Honors Program family was inaugurated at LLNL in August 1985 — making the 1986 Brookhaven HSRP the second site in the family rather than the absolute inaugural year of the DOE Honors Program initiative. Useful for tightening Wikipedia''s ''inaugural High School Honors Research Program'' framing on the Kirkpatrick node (audit 2.3 context).'
 - url: https://www.physast.uga.edu/academic_programs/grad/graduate-awards
   format: html
   status: archived
@@ -1428,6 +1444,14 @@
   sha256: 0be16ecb98feecc2e0d5ff7acfa607b4e9586609069bcb32555629f23f57c41e
   archive_status: 1
   note: 'University of Georgia Department of Physics and Astronomy graduate-awards page (Wayback Machine 2022-07-06 snapshot; current URL returns 404). Carries the ''Sean M. Kirkpatrick Award for Outstanding Achievement in Graduate Research'' description: ''recognize a graduate student who has demonstrated outstanding research abilities... encourage the development of creative problem solving, multiple technical and analytic skills, and/or theoretical insight.'' Source for audit finding 2.4 (UGA award framing tightening — establishment context, eligibility criteria, ,000 stipend not stated on this snapshot).'
+- url: https://www.physast.uga.edu/graduate-awards
+  format: html
+  status: archived
+  path: news/uga-physast-graduate-awards-kirkpatrick-live.html
+  archived_date: '2026-04-29'
+  sha256: eda22d2f8b1fc015ab06a234ccac2b91df8fef4f22804db6e39bac90df8e0526
+  archive_status: 1
+  note: University of Georgia Department of Physics & Astronomy active graduate-awards page (current URL — the older /academic_programs/grad/graduate-awards URL is now 404 and was previously archived only via Wayback). Carries the live 'Sean M. Kirkpatrick Award for Outstanding Achievement in Graduate Research' description. Source for audit finding 2.4 framing tightening; supersedes the Wayback 2022 snapshot for current node citations.
 - url: https://www.physast.uga.edu/people/sean-kirkpatrick
   format: html
   status: archived
