@@ -253,8 +253,9 @@
   path: news/fortune-kirkpatrick-linkedin-insulting-20230729.html
   archived_date: '2026-04-28'
   sha256: 4030badc2fdca04c723d333958fa7c477a7ae5d82a21be821898d4d8284d676b
-  archive_status: 1
+  archive_status: 3
   note: Fortune coverage of Kirkpatrick's 2023-07-28 LinkedIn post following the 2023-07-26 House Oversight UAP hearing; Kirkpatrick (in 'personal capacity') called the hearing 'insulting' to AARO officers and asserted Grusch 'refused to speak with AARO'. Secondary-source coverage that quotes the LinkedIn post verbatim — used in lieu of the LinkedIn post itself, which is not Wayback-archived
+  wayback_date: '2024-12-01'
 - url: https://fox40.com/news/mystery-wire/robert-bigelow-opens-up-about-aawsap-the-tic-tac-incident-weird-events-on-skinwalker-ranch-the-connection-to-consciousness/
   format: html
   status: archived
@@ -337,8 +338,9 @@
   path: news/nssa-midnight-hammer-williams-kirkpatrick-20250626.pdf
   archived_date: '2026-04-28'
   sha256: 3125570d6325d86b6fbbf27832b7f37e3693e1b60978c239bb50b0b76ce2d42a
-  archive_status: 1
+  archive_status: 3
   note: 'NSSA (National Security Space Association) Moorman Center for Space Studies Occasional Paper, 2025-06-26: ''National Security Space Contributions to Operation Midnight Hammer'' co-authored by Chris Williams (Moorman Center Chair) and Sean Kirkpatrick. Documents Kirkpatrick''s current academic-style writing activity in his post-government role'
+  wayback_date: '2026-02-11'
 - url: https://nymag.com/intelligencer/2019/12/tic-tac-ufo-video-q-and-a-with-navy-pilot-chad-underwood.html
   format: html
   status: archived
@@ -421,8 +423,9 @@
   path: news/thehill-kirkpatrick-departure-20231108.html
   archived_date: '2026-04-28'
   sha256: a1ad91439acc07ec86179faa0af192e7569cdce196a30d23cfc57762844c2336
-  archive_status: 1
+  archive_status: 3
   note: 'The Hill coverage 2023-11-08: ''Pentagon UFO chief to step down next month'' — covers Kirkpatrick''s announced December 2023 departure from AARO; substitute primary-source coverage for the Politico interview (politico.com 403-blocks; Politico Pro paywalled). Fetched via Wayback Machine 2023id_ replay per meta/sources-access.md The Hill workaround'
+  wayback_date: '2023-12-23'
 - url: https://thesolfoundation.org/
   format: html
   status: archived
@@ -713,8 +716,9 @@
   path: news/audible-bergen-kirkpatrick-episode38-2024.html
   archived_date: '2026-04-28'
   sha256: e71a602841f60439b1f543f017e0c928d8ee95041602b604ab20652dbbf8d8dc
-  archive_status: 1
+  archive_status: 3
   note: 'Audible podcast transcript: ''In the Room with Peter Bergen'' Episode 38 — Kirkpatrick interview (2024). Sources for Kirkpatrick''s ''self-licking ice cream cone'' framing and ''core group of people'' observation about Grusch'
+  wayback_date: '2025-11-22'
 - url: https://www.cbs.com/shows/video/kruYVj3_d8m6dkg95BRKzen50j8H29Mv/
   format: html
   status: archived
@@ -1021,8 +1025,9 @@
   path: news/rev-nasa-uap-public-meeting-transcript-20230531.html
   archived_date: '2026-04-28'
   sha256: 82a02c6d21db53022047f573a85ec799c13a832bcd8df3a3c63621c2183417f9
-  archive_status: 1
+  archive_status: 3
   note: Rev.com transcript of NASA UAP Independent Study Team's first public meeting, 2023-05-31. Includes Sean Kirkpatrick's opening remarks (he was invited speaker representing AARO). Used in lieu of the science.nasa.gov PDF Kirkpatrick remarks file (404 / Wayback returns no captures of the original PDF URL)
+  wayback_date: '2025-06-22'
 - url: https://www.scientificamerican.com/article/heres-what-i-learned-as-the-u-s-governments-ufo-hunter/
   format: html
   status: archived
