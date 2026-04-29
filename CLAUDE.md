@@ -75,10 +75,11 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/documents/written-testimony-graves-2023` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-grusch-2023` | primary-source-confirmed | gov-doc |
 
-### Transcripts (3)
+### Transcripts (4)
 
 | Node | Status | Kind |
 |---|---|---|
+| `/transcripts/2023-04-19-sasc-kirkpatrick` | primary-source-confirmed | hearing |
 | `/transcripts/2023-07-26-house-fravor` | primary-source-confirmed | hearing |
 | `/transcripts/2023-07-26-house-graves` | primary-source-confirmed | hearing |
 | `/transcripts/2023-07-26-house-grusch` | primary-source-confirmed | hearing |
