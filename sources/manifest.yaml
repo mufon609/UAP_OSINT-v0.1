@@ -255,6 +255,14 @@
   archive_status: 3
   note: Enigma Labs blog post (2022-11-14) announcing Alex Dietrich as advisor. Attests her squadron assignment (VFA-41 'Black Aces' out of NAS Lemoore, 2001-2007), commissioning year (May 2001), service framing, and post-Navy advisor role at Enigma Labs.
   wayback_date: '2025-06-14'
+- url: https://executivegov.com/2023/11/aaro-shakes-up-executive-team-with-2-new-leadership-changes-kathleen-hicks-quoted/
+  format: html
+  status: archived
+  path: news/executivegov-aaro-shakeup-20231108.html
+  archived_date: '2026-04-28'
+  sha256: 3d0128b9cecb0903b876b11bdc99fc64f86b734cac67579fbc08be491b4988a4
+  archive_status: 1
+  note: 'ExecutiveGov November 8 2023 coverage: ''AARO Shakes Up Executive Team With 2 New Leadership Changes'' — same-day reporting on Kirkpatrick''s announced departure and Tim Phillips appointment as Acting Director'
 - url: https://floridapolitics.com/archives/626664-theyre-giving-us-the-runaround-anna-paulina-luna-floats-defunding-pentagon-positions-if-ufo-information-isnt-released/
   format: html
   status: archived
@@ -299,6 +307,14 @@
   archive_status: 3
   note: Polished/manual PDF transcript of 'When It Mattered Ep. 55 — Great-granddaughter of a SciFi pioneer spots a UFO' (Chitra Ragavan, 2021-06-16). 11 pages. Published as a finished transcript by goodstory.io; companion to the YouTube auto-captions above.
   wayback_date: '2023-03-19'
+- url: https://leolabs.space/blog/ron-moultrie-leolabs-board-of-directors/
+  format: html
+  status: archived
+  path: news/leolabs-moultrie-board-20241203.html
+  archived_date: '2026-04-28'
+  sha256: 4c245db0bf8edac12ab5bc287a825267a14fc595c7c798eb259e727284ac5a1d
+  archive_status: 1
+  note: 'LeoLabs press release December 3 2024: ''Former U.S. Under Secretary of Defense for Intelligence & Security Ron Moultrie joins LeoLabs Board of Directors''. 26 days after the November 7 2024 NSSA SDA24 forum at MITRE where Kirkpatrick (then ORNL CTO/National Security Programs) was moderator and LeoLabs participated as panelist'
 - url: https://lweb.cfa.harvard.edu/~loeb/LK1.pdf
   format: pdf
   status: archived
@@ -356,6 +372,30 @@
   sha256: 8c23519c62a5717427c2d09d5ade165284421f2e5facad76a565a94774067868
   archive_status: 3
   wayback_date: '2026-03-27'
+- url: https://nssaspace.org/event/kirkpatrick-2024/
+  format: html
+  status: archived
+  path: news/nssa-spacetime-kirkpatrick-20240314.html
+  archived_date: '2026-04-28'
+  sha256: d7fc20636838cc7c325f33d1d5e29ff70de29819d69ae19dbdcf3e3dffa10a4f
+  archive_status: 1
+  note: NSSA SpaceTime declassified interview with Sean Kirkpatrick, March 14 2024 — moderated by Chris Williams; framed as 'Former Director of the DOD All-Domain Anomaly Resolution Office (AARO)' (CV-omissions data point — ORNL position omitted)
+- url: https://nssaspace.org/event/sda24/
+  format: html
+  status: archived
+  path: news/nssa-sda24-forum-agenda.html
+  archived_date: '2026-04-28'
+  sha256: fe66fc35db07e4c9bc685296f28033db1dc95f455a35cae3ebaa341339733c8b
+  archive_status: 1
+  note: NSSA Space Domain Awareness Forum (SDA24) event agenda, November 7 2024 at MITRE in McLean VA. Kirkpatrick listed as moderator under 'Chief Technology Officer, National Security Programs, Oak Ridge National Laboratory' framing — third documented ORNL title variant. LeoLabs (Dr. Darren McKnight, Senior Technical Fellow) participated as panelist; Moultrie joined LeoLabs board 26 days later
+- url: https://nssaspace.org/event/space-threats-and-acquisition-forum/
+  format: html
+  status: archived
+  path: news/nssa-space-threats-acquisition-forum.html
+  archived_date: '2026-04-28'
+  sha256: 71782f07966a563f43a4bf8dbd2e50ea7d01343470b812b7add2d6c46197ebdf
+  archive_status: 1
+  note: NSSA Space Threats and Acquisition Forum 2025 (TS/SI-TK//NOFORN classified sessions; agenda public). Kirkpatrick listed as moderator under 'CEO, Nonlinear Solutions, LLC' framing — fifth documented public framing of his post-government role
 - url: https://nssaspace.org/wp-content/uploads/2024/11/Space-Domain-Awareness-Kirkpatrick-Shelton.pdf
   format: pdf
   status: archived
@@ -405,6 +445,30 @@
   sha256: 7bf2c20d6c47ab3bf00c718edd0baaff3c925a72cead21aa5a62b9448520c64a
   archive_status: 3
   wayback_date: '2026-04-09'
+- url: https://patents.google.com/patent/US20200357080A1/en
+  format: html
+  status: archived
+  path: news/uspto-patent-us20200357080a1-reveal-systems.html
+  archived_date: '2026-04-28'
+  sha256: 185261fd63708f64908668f2808c2f5d76fe7624d92dda6cd9c7e4f7024a86ea
+  archive_status: 1
+  note: USPTO Patent Application US 2020/0357080 A1 — 'System and method for determining influence of channels in a social network'. Reveal Systems Inc. assignee; co-inventors Erik T. Bogaard, Jason F. Fairchild, Sean M. Kirkpatrick. Filed May 7, 2020 (with provisional 62/844,460 filed May 7, 2019 during Kirkpatrick's USSPACECOM Deputy Director of Intelligence tenure). Commercial social-media-influence-scoring outlier in Kirkpatrick's patent portfolio
+- url: https://patents.google.com/patent/US20220084137A1/en
+  format: html
+  status: archived
+  path: news/uspto-patent-us20220084137a1-reveal-systems.html
+  archived_date: '2026-04-28'
+  sha256: f689ca04a040bb5c0a5b1ae9abec1fab2bcbaafd7e33f256312fe6c8d2a421f7
+  archive_status: 1
+  note: USPTO Patent Application US 2022/0084137 A1 — Reveal Systems patent family continuation, filed November 30 2021 (during Kirkpatrick's DIA MSIC Chief Scientist tenure). Co-inventors Bogaard, Fairchild, Kirkpatrick
+- url: https://patents.google.com/patent/US20230206351A1/en
+  format: html
+  status: archived
+  path: news/uspto-patent-us20230206351a1-reveal-systems.html
+  archived_date: '2026-04-28'
+  sha256: 3aae682792f80e50e5746ce59b31d2923c432df991fa03be96d79815ead1a271
+  archive_status: 1
+  note: USPTO Patent Application US 2023/0206351 A1 — Reveal Systems patent family continuation, filed February 28 2023 (during Kirkpatrick's AARO Director tenure). Co-inventors Bogaard, Fairchild, Kirkpatrick
 - url: https://patents.google.com/patent/US6624915B1/en
   format: html
   status: archived
@@ -506,6 +570,14 @@
   sha256: 1e2ee84c108c2feda17af38fd908de81faf58737fe453109c58b0e713ceda90a
   archive_status: 3
   wayback_date: '2026-04-11'
+- url: https://unknowncountry.com/headline-news/controversial-uaptf-head-sean-kirkpatrick-rumored-to-be-stepping-down-as-aaro-director-by-years-end/
+  format: html
+  status: archived
+  path: news/strieber-unknowncountry-kirkpatrick-stepping-down-20231124.html
+  archived_date: '2026-04-28'
+  sha256: 83b90a188c4a7c84b2e7ce16b47c74d29caa0bc023d26beaa530176ddb5da163
+  archive_status: 1
+  note: 'Whitley Strieber''s Unknown Country November 24 2023 contemporaneous reporting: noted Kirkpatrick''s ORNL staff listing had ''briefly appeared on the ORNL website earlier this month'' — pre-Hicks-departure-announcement evidence (Hicks departure announcement was November 8 2023; Strieber capture is 16 days later but references the listing being live earlier in November)'
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
@@ -694,6 +766,14 @@
   sha256: 82f3a6c4013bb5cba23f9e614c69aa44a635594dadff1aeb08b2961c491d0392
   archive_status: 3
   wayback_date: '2025-11-18'
+- url: https://www.afcea.org/event/sites/default/files/files/Kirkpatrick_Sean%20DR%20Bio.pdf
+  format: pdf
+  status: archived
+  path: government/afcea-kirkpatrick-usspacecom-bio.pdf
+  archived_date: '2026-04-28'
+  sha256: 0022b1b9628241ef338fc36ddf934e75da43b04d8b2d4f9033709af584f3e39c
+  archive_status: 1
+  note: AFCEA conference biography for Dr. Sean M. Kirkpatrick as Deputy Director of Intelligence and DNI Representative, USSPACECOM (his pre-AARO role 2019-2021). Source for the six-new-start-organizations career framing and pre-AARO assignment chronology
 - url: https://www.armed-services.senate.gov/download/11-19-24_-sub---transcript
   format: pdf
   status: archived
@@ -969,6 +1049,14 @@
   sha256: b1c1e5c720a6f157318a634454fe3592fcd21fcc14ce856296cd825764ea8ff4
   archive_status: 1
   note: DOE Office of Hearings and Appeals decision FIA-24-0036 (Issued July 17, 2024) on Dustin M. Slaughter's appeal challenging Oak Ridge Office's 'no records responsive' determination on FOIA request ORO-2024-02087-F regarding Sean Kirkpatrick's transition from AARO Director to ORNL CTO; the document Coulthart's Nov 2023 reporting flagged was the basis for the underlying FOIA. OHA denied the appeal — see decision text.
+- url: https://www.executivebiz.com/articles/dod-intelligence-ronald-moultrie-leolabs-board-of-directors
+  format: html
+  status: archived
+  path: news/executivebiz-moultrie-leolabs-20241205.html
+  archived_date: '2026-04-28'
+  sha256: d4ca096ad5162e14a230b5daa4866d3f6f8164e3f70846d5e6d0956ab3ff03c1
+  archive_status: 1
+  note: ExecutiveBiz follow-up coverage of the LeoLabs Moultrie board appointment, December 5 2024
 - url: https://www.gillibrand.senate.gov/news/press/release/gillibrand-statement-on-uap-disclosure/
   format: html
   status: archived
@@ -1064,6 +1152,22 @@
   archive_status: 3
   note: ORNL home page — institutional context
   wayback_date: '2026-04-27'
+- url: https://www.ornl.gov/content/leadership-team
+  format: html
+  status: archived
+  path: government/ornl-gov-leadership-team.html
+  archived_date: '2026-04-28'
+  sha256: e2c9d77e8bd649096747eab197f38e2387a294d7946f821ad7c98c5bc794c843
+  archive_status: 1
+  note: ORNL Leadership Team page — institutional context for Kirkpatrick's post-AARO role. Khaleel as Associate Laboratory Director for National Security Sciences (Kirkpatrick's reporting principal at ORNL per FIA-24-0036)
+- url: https://www.ornl.gov/news/khaleel-named-associate-lab-director-national-security-sciences
+  format: html
+  status: archived
+  path: government/ornl-gov-khaleel-nssd-announcement-20211230.html
+  archived_date: '2026-04-28'
+  sha256: c84ff1657a1c18e8b1f504332156821d878e3d249ba45768f846be11da0bbfa9
+  archive_status: 1
+  note: 'ORNL announcement December 30 2021: Khaleel named Associate Laboratory Director for National Security Sciences. Khaleel came from Pacific Northwest National Laboratory; is Kirkpatrick''s reporting principal at ORNL per the FIA-24-0036 organizational documentation'
 - url: https://www.ornl.gov/news/stephen-k-streiffer-named-director-oak-ridge-national-laboratory
   format: html
   status: archived
@@ -1162,6 +1266,22 @@
   archive_status: 3
   note: 'SEC Form 1-K Part II Annual Report for fiscal year ended December 31, 2024, filed 2025-04-17. Registrant: TO THE STARS INC. (Delaware; EIN 84-3854992; CIK 1710274). Primary-source confirmation of: (a) 2022 rebrand from ''To The Stars Academy of Arts and Science Inc.'' to ''To The Stars Inc.'' (both names now registered trademarks); (b) current HQ 315 S. Coast Highway 101 Suite U38 Encinitas CA 92024; (c) going-concern audit finding; (d) Gravity Holdings LLC holds 52.16% of Class A Common Stock; (e) current board (DeLonge, Semivan, Stan Spry, J. Christopher Mizer); (f) current Advisory Board (Gilpin, Kahn, Schurman, Rapp, Herndon, Puthoff); (g) 2024-09-27 Puthoff/Davis memo submitted to Board as ORNL counter-analysis; (h) 2024 CRADA end; (i) TTSA→USACCDC→ORNL material-testing chain. Fetched directly from SEC EDGAR using research-identifying User-Agent.'
   wayback_date: '2026-04-28'
+- url: https://www.theblackvault.com/documentarchive/dod-announces-the-establishment-of-the-all-domain-anomaly-resolution-office-july-20-2022/
+  format: html
+  status: archived
+  path: news/blackvault-aaro-establishment-release-20220720.html
+  archived_date: '2026-04-28'
+  sha256: 61dbedb9794335a32ac0dcb31aa11e2bd6505671e8c28fb1b2fa61f3f88fc599
+  archive_status: 1
+  note: Black Vault republication of the DoD July 20 2022 press release announcing AARO establishment + Kirkpatrick's appointment as inaugural director
+- url: https://www.theblackvault.com/documentarchive/foia-documents-reveal-aaros-authorized-and-repeated-attempts-to-engage-with-david-grusch/
+  format: html
+  status: archived
+  path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
+  archived_date: '2026-04-28'
+  sha256: 6a88a2946de0464e8e5f8edad0fc1d61597f2bbd562ab6f684895cea4a606a46
+  archive_status: 1
+  note: 'Black Vault page for FOIA case 24-F-0266 release (April 26 2024): ''FOIA Documents Reveal AARO''s Authorized and Repeated Attempts to Engage with David Grusch''. Includes the June 11-13 2023 Signal text-message exchanges between Kirkpatrick and Christopher Mellon documenting Kirkpatrick''s contemporaneous self-description as ''defending and adjudicating'' AARO + the March 8 2023 SAPCO authority memorandum signed by Major General David W. Abba'
 - url: https://www.theblackvault.com/documentarchive/pentagon-releases-details-about-dr-travis-taylors-uap-task-force-involvement/
   format: html
   status: archived
@@ -1171,6 +1291,14 @@
   note: Black Vault June 29, 2022 article carrying Pentagon Public Affairs statement from DoD spokesperson Susan Gough. Gough names 'former Office of Naval Intelligence senior civilian John Stratton' as UAPTF lead and confirms Dr. Travis Taylor was informally designated UAPTF 'chief scientist' via SMDC assignment. Strongest on-record DoD attribution naming the UAPTF leader.
   archive_status: 3
   wayback_date: '2025-08-03'
+- url: https://www.theblackvault.com/documentarchive/the-ufo-whistleblower-congress-and-classified-briefings-new-dod-oig-emails-and-what-they-reveal/
+  format: html
+  status: archived
+  path: news/blackvault-oig-emails-20250401.html
+  archived_date: '2026-04-28'
+  sha256: eac487120906946caf1a3f97d2cf80a0dffbc816c0f4643974bda09cf2e39e13
+  archive_status: 1
+  note: 'Black Vault page for new DoD OIG email releases (April 1 2025): documents the September 12 2023 Kirkpatrick email to ''Stone'' at DoD OIG with body fully redacted under (b)(5) deliberative-process privilege; metadata visible. Black Vault has flagged the sender-imposed deliberative-process footer as legally insufficient and is appealing'
 - url: https://www.theufochronicles.com/2020/04/skinwalker-ranch-original-owner-family-member-speaks.html
   format: html
   status: archived
