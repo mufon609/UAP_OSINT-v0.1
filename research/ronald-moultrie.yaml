@@ -1,0 +1,1072 @@
+id: research/ronald-moultrie
+type: research-artifact
+schema_version: 1
+target_node: people/ronald-moultrie
+status: active
+created: '2026-04-29'
+description: ''
+primary_sources:
+- path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+  format: image
+- path: government/wargov-moultrie-biography.html
+  format: html
+- path: news/insa-moultrie-bio.html
+  format: html
+- path: news/umd-moultrie-faculty-bio.html
+  format: html
+- path: news/leolabs-moultrie-board-20241203.html
+  format: html
+- path: news/executivebiz-moultrie-leolabs-20241205.html
+  format: html
+- path: news/insidebidensbasement-moultrie.html
+  format: html
+- path: news/wikipedia-ronald-moultrie.html
+  format: html
+- path: government/battelle-990-fy2019.pdf
+  format: pdf
+- path: government/battelle-990-fy2021.pdf
+  format: pdf
+- path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+  format: pdf
+- path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+  format: html
+document_intrinsic:
+  full_name: Ronald S. Moultrie
+  aliases:
+  - Ron Moultrie
+  - Ron
+  nationality: American
+  profession: Intelligence official; consultant; corporate director
+context_extrinsic:
+  display_title: Ronald Moultrie
+  current_residence: Annapolis, Maryland
+  spouse_name: Darlene
+background: 'Ronald S. "Ron" Moultrie is an American intelligence official who served as the Under Secretary of Defense for Intelligence and Security (USD/I&S) from June 1, 2021 to February 29, 2024. Confirmed by the Senate on May 29, 2021, Moultrie was the principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters. He exercised authority, direction, and control on behalf of the Secretary of Defense over all intelligence and security organizations within the Department of Defense ([`/organizations/dod`]), including the National Security Agency, the Defense Intelligence Agency ([`/organizations/dia`]), the National Geospatial-Intelligence Agency ([`/organizations/nga`]), the National Reconnaissance Office ([`/organizations/nro`]), the Defense Counterintelligence and Security Agency ([`/organizations/dcsa`]), and the intelligence components of the combatant commands and military services. He was also dual-hatted as the Director of Defense Intelligence in the Office of the Director of National Intelligence and reported to the DNI in this capacity. He was preceded by Joseph D. Kernan and succeeded by Bradley Hansell.
+
+
+  Prior to becoming Under Secretary, Moultrie''s 36+ year career included serving in Senior Leadership positions throughout the DoD and the National Intelligence Community. He retired from the DoD in 2015 as NSA''s Director of Operations. His previous National Intelligence Community roles included service as a senior member of the Central Intelligence Agency Senior Intelligence Service responsible for a major office within the Directorate of Science & Technology, and as a Senior Executive Officer serving the DNI. He later rejoined NSA as a Senior Executive, where he remained until retirement. He was also a Senior Advisor to the Secretary of the Navy, playing an instrumental role in the Department of the Navy Comprehensive Cybersecurity Review and the crafting of a digital roadmap for cybersecurity, data analytics and infrastructure, and emerging technologies including AI/Machine Learning, 5 and 6G, and Quantum computing.
+
+
+  Moultrie served as a Russian linguist in the United States Air Force ([`/organizations/us-air-force`]). He earned a Bachelor of Arts degree magna cum laude in Business Management from the University of Maryland, College Park ([`/organizations/umd`]), a Master of Science degree in Strategic Intelligence from the National Intelligence University ([`/organizations/national-intelligence-university`]), and a Russian Language degree from the Defense Language Institute ([`/organizations/defense-language-institute`]) at Monterey. He completed Senior Executive studies at Harvard University''s Kennedy School of Government ([`/organizations/harvard-kennedy-school`]). He resides in Annapolis, Maryland with his wife Darlene.
+
+  '
+uap_relevance: 'As Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]), Moultrie was the principal advisor to the Secretary of Defense responsible for the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) at its establishment on July 20, 2022. He named Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) as the office''s first Director. On May 17, 2022, Moultrie appeared before Congress at the first open hearing on UAP in 50 years. On December 16, 2022, Moultrie appeared with Kirkpatrick at the AARO Media Roundtable, where he said he had ''not seen anything in those holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that.'' Moultrie remained USD(I&S) until February 29, 2024.
+
+  '
+affiliations:
+- id: a1
+  added_date: '2026-04-29'
+  organization_path: /organizations/us-air-force
+  role: Russian linguist (active duty); recipient of Defense Meritorious Service Medal and U.S. Air Force Meritorious Service Medal during active duty
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ Mr. Moultrie holds a Master of Science...
+- id: a2
+  added_date: '2026-04-29'
+  organization_path: /organizations/cia
+  role: Senior Intelligence Service (SIS) officer; senior member responsible for a major office within the Directorate of Science & Technology
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ Mr. Moultrie's previous NIC roles
+- id: a3
+  added_date: '2026-04-29'
+  organization_path: /organizations/odni
+  role: Senior Executive Officer serving the DNI
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ Mr. Moultrie's previous NIC roles
+- id: a4
+  added_date: '2026-04-29'
+  organization_path: /organizations/nsa
+  role: Senior Executive (later); retired in 2015 as NSA's Director of Operations
+  period_start: '2010'
+  period_end: '2015'
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ Prior to becoming Under Secretary of Defense
+- id: a5
+  added_date: '2026-04-29'
+  organization_path: /organizations/us-navy
+  role: Senior Advisor to the Secretary of the Navy; played an instrumental role in the Department of the Navy Comprehensive Cybersecurity Review
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ More recently, Mr. Moultrie was a Senior Advisor
+- id: a6
+  added_date: '2026-04-29'
+  organization_path: /organizations/oceanus-security-strategies
+  role: President & Founder
+  period_start: '2015-11'
+  period_end: '2021-05'
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e financial disclosure Schedule D row 1
+- id: a7
+  added_date: '2026-04-29'
+  organization_path: /organizations/battelle-memorial-institute
+  role: Advisory Board Member
+  period_start: '2016-07'
+  period_end: '2018-04'
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 2/5 Experience section
+  note: Battelle Advisory Board membership attested only by Moultrie's contemporaneous LinkedIn profile (printed June 27 2018, screenshot distributed by Christopher Sharp via X). Battelle is absent from all current public Moultrie biographies (war.gov, INSA, UMD, LeoLabs, Wikipedia, ExecutiveBiz, Inside Biden's Basement OGE 278e Schedule D); the omission pattern applies to all Moultrie's 2015-2018 advisory roles, not Battelle alone — OGE Form 278 Schedule D requires listing positions held in the two calendar years before filing, and the Battelle role ended approximately three years before Moultrie's June 2021 USD(I&S) appointment. The two Battelle Memorial Institute IRS Form 990 filings in this artifact's primary_sources (FY ending September 30 2019 and FY ending September 30 2021) confirm Moultrie was not a member of Battelle's Board of Directors during those fiscal years; Form 990 Part VII Section A does not require listing Advisory Board members.
+- id: a8
+  added_date: '2026-04-29'
+  organization_path: /organizations/itc-global-advisors
+  role: Senior Advisor
+  period_start: '2016-07'
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 2/5 Experience section
+- id: a9
+  added_date: '2026-04-29'
+  organization_path: /organizations/the-better-angels-society
+  role: Board Member
+  period_start: '2016-06'
+  period_end: '2021-05'
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e financial disclosure Schedule D row 2
+- id: a10
+  added_date: '2026-04-29'
+  organization_path: /organizations/riwi-corp
+  role: Senior Advisor
+  period_start: '2017-01'
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 2/5 Experience section
+- id: a11
+  added_date: '2026-04-29'
+  organization_path: /organizations/c5-capital
+  role: Strategic Partner
+  period_start: '2017-01'
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 1/5 Experience section
+- id: a12
+  added_date: '2026-04-29'
+  organization_path: /organizations/g2k-labs
+  role: Board Member (also recorded as G2X Labs Inc, Chairman of the Board, in 2018 LinkedIn profile)
+  period_start: '2016'
+  period_end: '2021-05'
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e financial disclosure Schedule D row 4
+- id: a13
+  added_date: '2026-04-29'
+  organization_path: /organizations/altamira-technologies-corporation
+  role: Board Member
+  period_start: '2020'
+  period_end: '2021-05'
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e financial disclosure Schedule D row 3
+- id: a14
+  added_date: '2026-04-29'
+  organization_path: /organizations/icapital-network
+  role: Board Member
+  period_start: '2020'
+  period_end: '2021-05'
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e financial disclosure Schedule D row 5
+- id: a15
+  added_date: '2026-04-29'
+  organization_path: /organizations/sequoia-inc
+  role: Board Member
+  period_start: '2020'
+  period_end: '2021-05'
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e financial disclosure Schedule D row 6
+- id: a16
+  added_date: '2026-04-29'
+  organization_path: /organizations/yahya-technologies-y-tech
+  role: Advisory Board Member
+  period_start: '2020'
+  period_end: '2021-05'
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e financial disclosure Schedule D row 7
+- id: a17
+  added_date: '2026-04-29'
+  organization_path: /organizations/auburn-seminary
+  role: Board Member
+  period_start: '2020'
+  period_end: '2021-05'
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e financial disclosure Schedule D row 8
+- id: a18
+  added_date: '2026-04-29'
+  organization_path: /organizations/vibrant-emotional-health
+  role: Board Member
+  period_start: '2020'
+  period_end: '2021-05'
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e financial disclosure Schedule D row 10
+- id: a19
+  added_date: '2026-04-29'
+  organization_path: /organizations/resolute-consulting
+  role: Cyber Security Advisory Board
+  period_start: '2018-05'
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 1/5 Experience section
+- id: a20
+  added_date: '2026-04-29'
+  organization_path: /organizations/ousd-is
+  role: Under Secretary of Defense for Intelligence and Security (Senate-confirmed presidential appointment); principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; managed a portfolio of over $30 billion and 225,000 global civilian and uniformed personnel
+  period_start: '2021-06-01'
+  period_end: '2024-02-29'
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ The Honorable Ronald S. Moultrie was sworn in
+- id: a21
+  added_date: '2026-04-29'
+  organization_path: /organizations/odni
+  role: Director of Defense Intelligence (dual-hatted with USD(I&S) role)
+  period_start: '2021-06-01'
+  period_end: '2024-02-29'
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ He also was dual-hatted
+- id: a22
+  added_date: '2026-04-29'
+  organization_path: /organizations/ron-moultrie-consulting
+  role: President/Owner
+  period_start: '2024'
+  source:
+    path: news/insa-moultrie-bio.html
+    location: ¶ Ronald (Ron) Moultrie is the President/Owner
+- id: a23
+  added_date: '2026-04-29'
+  organization_path: /organizations/leolabs
+  role: Outside Director (Board of Directors); independent corporate oversight of LeoLabs
+  period_start: '2024-12-03'
+  source:
+    path: news/leolabs-moultrie-board-20241203.html
+    location: ¶ MENLO PARK, CA, 3 December 2024
+- id: a24
+  added_date: '2026-04-29'
+  organization_path: /organizations/nightwing
+  role: Board Member
+  source:
+    path: news/umd-moultrie-faculty-bio.html
+    location: ¶ He is on the Board of Nightwing
+- id: a25
+  added_date: '2026-04-29'
+  organization_path: /organizations/national-cryptologic-foundation
+  role: Board Member
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ Current Title — Board Member - National Cryptologic Foundation
+- id: a26
+  added_date: '2026-04-29'
+  organization_path: /organizations/piab
+  role: Appointed Board Member; served until January 2025
+  period_end: '2025-01'
+  source:
+    path: news/umd-moultrie-faculty-bio.html
+    location: ¶ until January 2025
+- id: a27
+  added_date: '2026-04-29'
+  organization_path: /organizations/iob
+  role: Appointed Board Member; served until January 2025
+  period_end: '2025-01'
+  source:
+    path: news/umd-moultrie-faculty-bio.html
+    location: ¶ until January 2025
+- id: a28
+  added_date: '2026-04-29'
+  organization_path: /organizations/umd-school-of-public-policy
+  role: Distinguished Senior Fellow, Executive Programs (affiliations — International Policy and Science & Technology Policy)
+  source:
+    path: news/umd-moultrie-faculty-bio.html
+    location: ¶ Distinguished Senior Fellow
+program_involvement:
+- id: pi1
+  added_date: '2026-04-29'
+  program: All-domain Anomaly Resolution Office (AARO)
+  role: Cognizant senior advisor at AARO establishment (July 20 2022); selected Sean Kirkpatrick as inaugural Director; chaired AARO Executive Council across most of Kirkpatrick's directorship; reporting chain transitioned from OUSD(I&S) to Deputy Secretary of Defense in late July 2023
+  evidentiary_basis: primary-source
+  confidence: high
+  start_date: '2022-07-20'
+  end_date: '2024-02-29'
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: ¶ Under Secretary of Defense for Intelligence and Security
+- id: pi2
+  added_date: '2026-04-29'
+  program: Defense Intelligence and Security Enterprise oversight
+  role: Principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; exercised authority, direction, and control over NSA, DIA, NGA, NRO, DCSA and the intelligence components of the combatant commands and military services
+  evidentiary_basis: primary-source
+  confidence: high
+  start_date: '2021-06-01'
+  end_date: '2024-02-29'
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ Mr. Moultrie exercised authority
+- id: pi3
+  added_date: '2026-04-29'
+  program: Director of Defense Intelligence (dual-hat ODNI role)
+  role: Reported to the Director of National Intelligence in this capacity
+  evidentiary_basis: primary-source
+  confidence: high
+  start_date: '2021-06-01'
+  end_date: '2024-02-29'
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ He also was dual-hatted
+- id: pi4
+  added_date: '2026-04-29'
+  program: NSA Director of Operations
+  role: Final pre-retirement role at NSA; retired from the DoD in 2015 as NSA's Director of Operations
+  evidentiary_basis: primary-source
+  confidence: high
+  end_date: '2015'
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ He retired from the DoD in 2015
+- id: pi5
+  added_date: '2026-04-29'
+  program: CIA Senior Intelligence Service / Directorate of Science & Technology
+  role: Senior member of the CIA Senior Intelligence Service (SIS) responsible for a major office within the Directorate of Science & Technology
+  evidentiary_basis: primary-source
+  confidence: high
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ Mr. Moultrie's previous NIC roles
+- id: pi6
+  added_date: '2026-04-29'
+  program: Department of the Navy Comprehensive Cybersecurity Review
+  role: Senior Advisor to the Secretary of the Navy; led the crafting of a digital roadmap to better optimize the Department's focus on cybersecurity, data analytics and infrastructure, and emerging technologies such as AI/Machine Learning, 5 and 6G, and Quantum computing
+  evidentiary_basis: primary-source
+  confidence: high
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ More recently, Mr. Moultrie was a Senior Advisor
+- id: pi7
+  added_date: '2026-04-29'
+  program: President's Intelligence Advisory Board (PIAB) and President's Intelligence Oversight Board (IOB)
+  role: Appointed Board Member; served until January 2025
+  evidentiary_basis: primary-source
+  confidence: high
+  end_date: '2025-01'
+  source:
+    path: news/umd-moultrie-faculty-bio.html
+    location: ¶ until January 2025
+relationships:
+- id: r1
+  added_date: '2026-04-29'
+  person_path: /people/sean-kirkpatrick
+  relationship: Selected by Moultrie to stand up and lead AARO as the office's first Director (July 20 2022 — December 1 2023); joint media-roundtable counterpart at the December 16 2022 first AARO public update; AARO Executive Council reported to Moultrie until late July 2023 reporting-chain transition to Deputy Secretary of Defense
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: ¶ Under Secretary Moultrie for his leadership and support in establishing AARO
+- id: r2
+  added_date: '2026-04-29'
+  person_path: /people/kathleen-hicks
+  relationship: Deputy Secretary of Defense; took direct AARO oversight in late July 2023, repositioning Kirkpatrick to report directly to her rather than through Moultrie's office; issued November 8 2023 Kirkpatrick departure statement
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ context (Deputy Secretary chain reference)
+- id: r3
+  added_date: '2026-04-29'
+  person_path: /people/lloyd-austin
+  relationship: Secretary of Defense across most of Moultrie's USD(I&S) tenure; Moultrie was 'the principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters'
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ principal advisor to the Secretary of Defense
+- id: r4
+  added_date: '2026-04-29'
+  person_path: /people/joseph-kernan
+  relationship: Predecessor as Under Secretary of Defense for Intelligence and Security
+  source:
+    path: news/wikipedia-ronald-moultrie.html
+    location: infobox Preceded by
+- id: r5
+  added_date: '2026-04-29'
+  person_path: /people/bradley-hansell
+  relationship: Successor as Under Secretary of Defense for Intelligence and Security (sworn in after Moultrie's February 29, 2024 retirement)
+  source:
+    path: news/wikipedia-ronald-moultrie.html
+    location: infobox Succeeded by
+- id: r6
+  added_date: '2026-04-29'
+  person_path: /people/sue-gough
+  relationship: Department of Defense spokesperson; moderator of the December 16 2022 joint AARO media roundtable hosted by Moultrie and Kirkpatrick
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: ¶ STAFF Good afternoon I'm Sue Gough
+- id: r7
+  added_date: '2026-04-29'
+  person_path: /people/paul-nakasone
+  relationship: NSA Director / U.S. Cyber Command Commander; co-witness alongside Moultrie at the March 17 2022 House Armed Services Subcommittee on Intelligence and Special Operations posture hearing
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: lines 20-23
+- id: r8
+  added_date: '2026-04-29'
+  person_path: /people/scott-berrier
+  relationship: DIA Director; co-witness alongside Moultrie at the March 17 2022 House Armed Services Subcommittee on Intelligence and Special Operations posture hearing
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: lines 20-23
+- id: r9
+  added_date: '2026-04-29'
+  person_path: /people/ruben-gallego
+  relationship: Chairman of the House Armed Services Subcommittee on Intelligence and Special Operations at the March 17 2022 posture hearing where Moultrie testified
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: line 9
+- id: r10
+  added_date: '2026-04-29'
+  person_path: /people/trent-kelly
+  relationship: Ranking Member of the House Armed Services Subcommittee on Intelligence and Special Operations at the March 17 2022 posture hearing
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: line 9
+- id: r11
+  added_date: '2026-04-29'
+  person_path: /people/tony-frazier
+  relationship: LeoLabs CEO who welcomed Moultrie to the Board of Directors as Outside Director on December 3, 2024
+  source:
+    path: news/executivebiz-moultrie-leolabs-20241205.html
+    location: ¶ LeoLabs CEO Tony Frazier
+timeline:
+- id: t1
+  added_date: '2026-04-29'
+  date: '2015'
+  event: Retired from DoD as NSA's Director of Operations after 36+ years of federal service
+  category: role
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ Prior to becoming Under Secretary
+- id: t2
+  added_date: '2026-04-29'
+  date: '2015-11'
+  event: Founded Oceanus Security Strategies, LLC; served as President & Founder
+  category: affiliation
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e Schedule D row 1
+- id: t3
+  added_date: '2026-04-29'
+  date: '2016-06'
+  event: Joined the Better Angels Society as Board Member
+  category: affiliation
+  source:
+    path: news/insidebidensbasement-moultrie.html
+    location: ¶ OGE Form 278e Schedule D row 2
+- id: t4
+  added_date: '2026-04-29'
+  date: '2016-07'
+  event: Joined Battelle Memorial Institute as Advisory Board Member; tenure attested verbatim on his contemporaneous LinkedIn profile printed June 27 2018 (page 2 of 5; screenshot distributed by Christopher Sharp via X tweet 1965182535358456276)
+  category: affiliation
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 2/5 Experience section
+- id: t5
+  added_date: '2026-04-29'
+  date: '2016-07'
+  event: Joined ITC Global Advisors as Senior Advisor
+  category: affiliation
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 2/5 Experience section
+- id: t6
+  added_date: '2026-04-29'
+  date: '2017-01'
+  event: Became C5 Capital Strategic Partner and RIWI Corp Senior Advisor
+  category: affiliation
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: pages 1-2/5 Experience section
+- id: t7
+  added_date: '2026-04-29'
+  date: '2018-04'
+  event: Battelle Advisory Board membership ends after 1 year 10 months
+  category: affiliation
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 2/5 Experience section
+- id: t8
+  added_date: '2026-04-29'
+  date: '2018-05'
+  event: Joined Resolute Consulting LLC Cyber Security Advisory Board
+  category: affiliation
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 1/5 Experience section
+- id: t9
+  added_date: '2026-04-29'
+  date: '2018-06-27'
+  event: LinkedIn profile printout date stamped on screenshot distributed by Christopher Sharp; documents Moultrie's then-current affiliations including Battelle Advisory Board, Oceanus Security Strategies, Resolute Consulting, C5 Capital, RIWI Corp, ITC Global Advisors, plus 2010-2015 NSA Signals Intelligence leadership
+  category: other
+  source:
+    path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+    location: page 1/5 footer print date
+- id: t10
+  added_date: '2026-04-29'
+  date: '2021-05-29'
+  event: Confirmed by the U.S. Senate as Under Secretary of Defense for Intelligence and Security
+  category: role
+  source:
+    path: news/wikipedia-ronald-moultrie.html
+    location: ¶ He assumed office on June 1, 2021, after he was confirmed on May 29
+- id: t11
+  added_date: '2026-04-29'
+  date: '2021-06-01'
+  event: Sworn in as Under Secretary of Defense for Intelligence and Security; principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters
+  category: role
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: ¶ The Honorable Ronald S. Moultrie was sworn in
+- id: t12
+  added_date: '2026-04-29'
+  date: '2022-03-17'
+  event: Testified before the House Armed Services Committee Subcommittee on Intelligence and Special Operations (Chairman Gallego, Ranking Member Kelly) on the FY23 posture of the Defense Intelligence and Security Enterprise; co-witnesses Generals Nakasone and Berrier
+  category: testimony
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: lines 1-9
+- id: t13
+  added_date: '2026-04-29'
+  date: '2022-05-17'
+  event: Testified at the first open congressional hearing on UAP in 50 years (House Permanent Select Committee on Intelligence Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation)
+  category: testimony
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: ¶ In May of this year, I appeared before Congress for the first open hearing on UAP in 50 years
+- id: t14
+  added_date: '2026-04-29'
+  date: '2022-07-20'
+  event: AARO formally established by USD(I&S); Moultrie names Sean Kirkpatrick as inaugural Director
+  category: role
+  node_link: /events/2023-04-19-sasc-aaro-hearing
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: ¶ Let me start by thanking Under Secretary Moultrie for his leadership and support in establishing AARO
+- id: t15
+  added_date: '2026-04-29'
+  date: '2022-08-02'
+  event: Sat for official portrait at the Army portrait studio at the Pentagon
+  category: other
+  source:
+    path: news/leolabs-moultrie-board-20241203.html
+    location: ¶ poses for his official portrait
+- id: t16
+  added_date: '2026-04-29'
+  date: '2022-12-16'
+  event: Co-hosted joint AARO media roundtable with Kirkpatrick (Sue Gough moderating); established 'holdings' rhetorical framing limiting AARO claims to documents and memos; stated he had not seen anything in those holdings suggesting alien visitation or crash
+  category: testimony
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: ¶ Good afternoon, I'm Ronald Moultrie
+- id: t17
+  added_date: '2026-04-29'
+  date: '2024-02-29'
+  event: Retired as Under Secretary of Defense for Intelligence and Security
+  category: role
+  source:
+    path: news/wikipedia-ronald-moultrie.html
+    location: infobox In office June 1 2021 - February 29 2024
+- id: t18
+  added_date: '2026-04-29'
+  date: '2024-12-03'
+  event: Joined LeoLabs Board of Directors as Outside Director (announced via LeoLabs press release in Menlo Park CA); appointment provides 'independent corporate oversight of LeoLabs for the purposes of maintaining the highest level of trust and confidence of the U.S. Government'
+  category: affiliation
+  source:
+    path: news/leolabs-moultrie-board-20241203.html
+    location: ¶ MENLO PARK, CA, 3 December 2024
+- id: t19
+  added_date: '2026-04-29'
+  date: '2024-12-05'
+  event: ExecutiveBiz publishes follow-on coverage of LeoLabs board appointment ('Department of Defense Veteran Ronald Moultrie Joins LeoLabs' Board of Directors')
+  category: publication
+  source:
+    path: news/executivebiz-moultrie-leolabs-20241205.html
+    location: ¶ by Derrick Henry December 5, 2024
+- id: t20
+  added_date: '2026-04-29'
+  date: '2025-01'
+  event: Service on the President's Intelligence Advisory Board (PIAB) and the President's Intelligence Oversight Board (IOB) ends
+  category: role
+  source:
+    path: news/umd-moultrie-faculty-bio.html
+    location: ¶ until January 2025
+quotes:
+- id: q1
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-03-17'
+  text: |
+    Chairman Gallego, Ranking Member Kelly, and distinguished members of the
+    Subcommittee, it is a privilege to testify on the current posture of the Defense Intelligence and
+    Security Enterprise in addressing the threats facing the United States of America, its allies, and
+    partners.
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: lines 9-12
+  significance: HASC ISO opening — establishes the posture-hearing framing and addresses the subcommittee leadership directly
+  context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
+- id: q2
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-03-17'
+  text: |
+    As the Under Secretary of Defense for Intelligence and Security, I am committed to
+    strengthening and leveraging an integrated partnership between the Department of Defense and
+    the Intelligence Community for the defense of our nation.
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: lines 26-28
+  significance: HASC ISO mission statement — Moultrie's self-description of the USD(I&S) integration mandate
+  context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
+- id: q3
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-03-17'
+  text: |
+    Through our four "Big Plays," we will optimize our efforts, deliver meaningful outcomes,
+    and maintain our Nation's strategic advantage. These Big Plays are:
+             •   Providing an information and decision advantage to our leaders and warfighters;
+             •   Operationalizing our partnerships within the Department, the interagency, and our
+                 allies and partners;
+             •   Elevating security awareness and counterintelligence across the Department; and,
+             •   Identifying, recruiting, training, and retaining a workforce capable of supporting the
+                 Department's I&S requirements.
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: lines 60-67
+  significance: HASC ISO 'Big Plays' framework — Moultrie's stated four-priority structure for the OUSD(I&S) program of work
+  context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
+- id: q4
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-03-17'
+  text: |
+    Last year, the President's $715 billion-dollar defense budget request included $23.3 billion
+    for MIP. We believe that the resources requested in this year's budget will provide another
+    opportunity to ensure our nation's strategic advantage.
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: lines 84-86
+  significance: HASC ISO budget framing — Moultrie cites $23.3B MIP figure for Military Intelligence Program FY22 within $715B defense budget
+  context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
+- id: q5
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-03-17'
+  text: |
+    Consistent with the recommendations of the Government Accountability Office in its May
+    2021 report regarding OUSD(I&S) oversight, we are taking the following actions to clarify and
+    update our Enterprise governance and oversight frameworks:
+             •   Revising policy and strategic guidance to establish clear expectations for oversight;
+             •   Codifying management roles and responsibilities to enable effective governance at
+                 the component level;
+             •   Developing and incorporating a process to track and oversee enterprise performance
+                 and enhance accountability; and
+  source:
+    path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+    location: lines 123-130
+  significance: HASC ISO governance commitment — Moultrie cites GAO May 2021 report and outlines OUSD(I&S) oversight remediation steps
+  context: Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations
+- id: q6
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-12-16'
+  text: |
+    Thank you. Good afternoon. I'm Ronald Moultrie, the Under Secretary of Defense for Intelligence and Security. It's a pleasure to be here today to provide an update on the department's efforts to address unidentified anomalous phenomena, or UAP. In May of this year, I appeared before Congress for the first open hearing on UAP in 50 years. In my testimony, I underscored that the Department of Defense takes UAP reports seriously. You may have caught that I just said unidentified anomalous phenomena, whereas in the past the department has used the term unidentified aerial phenomena. This new terminology expands the scope of UAP to include submerged and trans-medium objects.  Unidentified phenomena in all domains, whether in the air, ground, sea or space, pose potential threats to personnel security and operations security, and they require our urgent attention.
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: line 956 ¶ Good afternoon I'm Ronald Moultrie
+  significance: AARO Media Roundtable opening — Moultrie introduces the 'unidentified anomalous phenomena' terminology shift expanding UAP scope to submerged and trans-medium objects, and references his May 17 2022 HPSCI testimony as the first open UAP hearing in 50 years
+  context: Joint USD(I&S)–AARO Director media roundtable
+- id: q7
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-12-16'
+  text: |
+    At this time, the answer's no, we have nothing. We're committed -- and I have to say this because I -- I talked with the Secretary and I talked with the Deputy Secretary about this, about openness and objectivity, and transparency that we have committed to -- to the Congress, the American people, to you in the press corps. We have not seen anything that would -- but we -- we're certainly very early on -- that would lead us to believe that any of the objects that we have seen are of alien origin, if you will.  If we are -- if we find something like that, we will look at it and analyze it and take the appropriate actions.
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: line 1018 ¶ At this time
+  significance: AARO Media Roundtable alien-origin denial — Moultrie's foundational on-record DoD denial of alien origin for UAP-observed objects, citing personal communications with the Secretary and Deputy Secretary about openness, objectivity, and transparency
+  context: Joint USD(I&S)–AARO Director media roundtable, Q&A
+- id: q8
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-12-16'
+  text: |
+    Let me answer. This is Ron Moultrie, Under Secretary of Defense for Intelligence and Security. Then I'll pass it to Dr. Kirkpatrick to give his -- his words on this. So, let me just characterize your question when you're talking about, we've been visited, is there a possibility of alien life? So, I'm gonna to discount meteorites and things like that, that might have microbes on it and those types of things, and just talk about things that may be intelligent life that may have crashed landed on our planet or that may have the -- in somehow visited our planet. In terms of holdings that I have seen and holdings, that that we have gone through -- and we are being very thorough about this, and we are going back and trying to understand all the compartmented programs that this department has had, understand all the relationships that we may have had with any other organizations and all the predecessor organizations that were established before we were officially a Department of Defense. We've looked at all that; I have not seen anything in those holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that.  Once again, with what Dr. Kirkpatrick is doing, we are still very early on in the work that we're doing. But that means we have to go back retrospectively and understand some of the holdings that we have. And Dr. Kirkpatrick and his team is still doing that. But I have not seen anything today that would suggest that we have anything of that nature.
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: line 1122 ¶ Let me answer
+  significance: AARO Media Roundtable 'holdings' boundary — Moultrie establishes the 'holdings I have seen' rhetorical boundary that limits AARO claims to documents and memos rather than physical artifacts; references compartmented programs, predecessor organizations, and pre-DoD legacy entities; this boundary persists as institutional posture across subsequent AARO leadership
+  context: Joint USD(I&S)–AARO Director media roundtable, Q&A on alien visitation
+- id: q9
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-12-16'
+  text: |
+    So, in my organization, which is the intelligence and security organization, we are responsible for the comprehensive security of all elements within the Department of Defense.  So that is our personnel, which is foremost in our minds, our platforms, our --our systems, our bases, our installations, and our -- our activities, whether they occur in any domain.  And we operate in all domains today. So, we operate under the surface of the water, we operate on land, we operate in the air, of course, we operate in space. Anything that appears within the proximity of our activities that is anomalous, something that we can't identify, we have the responsibility to resolve what that is, and to report that back to our commanders, to our operators, to ensure that they are safe.
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: line 1026 ¶ Sure, let me take that one
+  significance: AARO Media Roundtable scope statement — Moultrie's articulation of the 'all-domain' framing covering air, ground, sea, and space, anchoring AARO's mandate in the OUSD(I&S) institutional security mission
+  context: Joint USD(I&S)–AARO Director media roundtable, Q&A
+- id: q10
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2022-12-16'
+  text: |
+    Any unauthorized system in our airspace we deem as a threat to safety. So, that can be one of our systems or one of our relatives -- it's any system that is not authorized or platform not authorized to be in a domain that is restricted, we consider that to be a potential threat to the safety of our personnel or to our platforms.
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: line 1098 ¶ Any unauthorized system
+  significance: AARO Media Roundtable threat-framing — Moultrie's safety-of-personnel framing under which any unauthorized system in restricted airspace constitutes a potential threat regardless of origin or characterization
+  context: Joint USD(I&S)–AARO Director media roundtable, Q&A
+- id: q11
+  added_date: '2026-04-29'
+  observation_type: relayed
+  statement_date: '2024-12-03'
+  text: |
+    LeoLabs has already established itself as a trusted leader in the Space Domain Awareness field and is well positioned to support a wide array of U.S. defense, Allied, and commercial requirements
+  source:
+    path: news/leolabs-moultrie-board-20241203.html
+    location: line 311 ¶ I'm honored to join the company's Board
+  significance: LeoLabs Board appointment quote — Moultrie's public statement on accepting the Outside Director role nine months after his February 29 2024 USD(I&S) departure
+  context: LeoLabs press release announcing Moultrie's Board of Directors appointment
+- id: q12
+  added_date: '2026-04-29'
+  observation_type: relayed
+  text: |
+    Ronald (Ron) Moultrie is the President/Owner of Ron Moultrie Consulting, LLC. He is an Appointed Board Member to both the President's Intelligence Advisory Board (PIAB) and the President's Intelligence Oversight Board (IOB).  Ron brings unique leadership and advisory experience having served as the Under Secretary of Defense for Intelligence and Security. Presidentially appointed and Senate confirmed, he was the senior advisor to the Secretary of Defense on all intelligence and security matters and managed a portfolio of over $30 billion dollars and 225,000 global civilian and uniformed personnel.
+  source:
+    path: news/insa-moultrie-bio.html
+    location: line 249 ¶ Ronald (Ron) Moultrie is the President/Owner
+  significance: INSA bio summary — Moultrie's post-government public-bio framing of his USD(I&S) tenure ($30B portfolio + 225,000 personnel)
+  context: Intelligence and National Security Alliance public profile page (post-government)
+- id: q13
+  added_date: '2026-04-29'
+  observation_type: relayed
+  text: |
+    The Honorable Ronald (Ron) Moultrie is highly sought after for his insights and experience on national security policy and global intelligence issues, emerging technology application, organizational leadership and corporate culture evolution.  He is on the Board of Nightwing, LeoLabs, Inc, the National Cryptologic Foundation, and he served on the President's Intelligence Advisory Board (PIAB) and the President's Intelligence Oversight Board (IOB), until January 2025.
+  source:
+    path: news/umd-moultrie-faculty-bio.html
+    location: line 785 ¶ The Honorable Ronald (Ron) Moultrie
+  significance: UMD School of Public Policy bio — current public listing of post-government board affiliations (Nightwing, LeoLabs, National Cryptologic Foundation) and PIAB/IOB end-of-service date (January 2025)
+  context: University of Maryland School of Public Policy faculty profile page (post-government)
+entities_referenced:
+- id: e1
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Office of the Under Secretary of Defense for Intelligence and Security
+  wrap_path: /organizations/ousd-is
+  context_summary: The OUSD(I&S) office Moultrie led as Under Secretary June 1 2021 — February 29 2024
+- id: e2
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Department of Defense
+  wrap_path: /organizations/dod
+  context_summary: Cabinet department over which Moultrie's office had authority for intelligence and security matters
+- id: e3
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: National Security Agency
+  wrap_path: /organizations/nsa
+  context_summary: NSA — Moultrie's pre-USD(I&S) institutional home; retired as NSA's Director of Operations in 2015
+- id: e4
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Central Intelligence Agency
+  wrap_path: /organizations/cia
+  context_summary: CIA — earlier National Intelligence Community role; senior Senior Intelligence Service member at Directorate of Science & Technology
+- id: e5
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Defense Intelligence Agency
+  wrap_path: /organizations/dia
+  context_summary: One of the agencies under USD(I&S) authority
+- id: e6
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: National Reconnaissance Office
+  wrap_path: /organizations/nro
+  context_summary: One of the agencies under USD(I&S) authority
+- id: e7
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Office of the Director of National Intelligence
+  wrap_path: /organizations/odni
+  context_summary: ODNI — Moultrie was dual-hatted as Director of Defense Intelligence reporting to the DNI
+- id: e8
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: U.S. Air Force
+  wrap_path: /organizations/us-air-force
+  context_summary: Active-duty service branch — Moultrie served as a Russian linguist; received Defense Meritorious Service Medal and U.S. Air Force Meritorious Service Medal
+- id: e9
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: U.S. Navy
+  wrap_path: /organizations/us-navy
+  context_summary: Department of the Navy — Moultrie served as Senior Advisor to the Secretary of the Navy in the Comprehensive Cybersecurity Review
+- id: e10
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: All-domain Anomaly Resolution Office
+  wrap_path: /organizations/aaro
+  context_summary: Office Moultrie established under USD(I&S) authority on July 20 2022; selected Sean Kirkpatrick as inaugural Director
+- id: e11
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Battelle Memorial Institute
+  wrap_path: /organizations/battelle-memorial-institute
+  context_summary: Pre-government Advisory Board affiliation (Jul 2016 — Apr 2018) attested only by Moultrie's contemporaneous LinkedIn profile; absent from current public Moultrie biographies
+- id: e12
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Oceanus Security Strategies, LLC
+  wrap_path: /organizations/oceanus-security-strategies
+  context_summary: Pre-government President & Founder role (Nov 2015 — May 2021); listed in OGE Form 278e Schedule D row 1
+- id: e13
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: LeoLabs
+  wrap_path: /organizations/leolabs
+  context_summary: Post-government Board of Directors Outside Director role since December 3, 2024
+- id: e14
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Nightwing
+  wrap_path: /organizations/nightwing
+  context_summary: Post-government Board affiliation per UMD bio
+- id: e15
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: National Cryptologic Foundation
+  wrap_path: /organizations/national-cryptologic-foundation
+  context_summary: Post-government Board Member affiliation (current)
+- id: e16
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Ron Moultrie Consulting, LLC
+  wrap_path: /organizations/ron-moultrie-consulting
+  context_summary: Post-government consultancy where Moultrie is President/Owner
+- id: e17
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: President's Intelligence Advisory Board
+  wrap_path: /organizations/piab
+  context_summary: Appointed Board Member; service ended January 2025
+- id: e18
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: President's Intelligence Oversight Board
+  wrap_path: /organizations/iob
+  context_summary: Appointed Board Member; service ended January 2025
+- id: e19
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: UMD School of Public Policy
+  wrap_path: /organizations/umd-school-of-public-policy
+  context_summary: Distinguished Senior Fellow, Executive Programs (post-government)
+- id: e20
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: ITC Global Advisors
+  wrap_path: /organizations/itc-global-advisors
+  context_summary: Pre-government Senior Advisor (Jul 2016 — present per 2018 LinkedIn)
+- id: e21
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: The Better Angels Society
+  wrap_path: /organizations/the-better-angels-society
+  context_summary: Pre-government Board Member (Jun 2016 — May 2021)
+- id: e22
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: RIWI Corp
+  wrap_path: /organizations/riwi-corp
+  context_summary: Pre-government Senior Advisor (Jan 2017 — present per 2018 LinkedIn)
+- id: e23
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: C5 Capital
+  wrap_path: /organizations/c5-capital
+  context_summary: Pre-government Strategic Partner (Jan 2017 — present per 2018 LinkedIn)
+- id: e24
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: G2K Labs
+  wrap_path: /organizations/g2k-labs
+  context_summary: Pre-government Board Member; recorded as G2X Labs Inc Chairman of the Board on 2018 LinkedIn
+- id: e25
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Altamira Technologies Corporation
+  wrap_path: /organizations/altamira-technologies-corporation
+  context_summary: Pre-government Board Member ending May 2021 (per OGE Form 278e Schedule D)
+- id: e26
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Resolute Consulting LLC
+  wrap_path: /organizations/resolute-consulting
+  context_summary: Pre-government Cyber Security Advisory Board (May 2018 — present per 2018 LinkedIn)
+- id: e27
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Sean Kirkpatrick
+  wrap_path: /people/sean-kirkpatrick
+  context_summary: Selected by Moultrie as inaugural AARO Director; co-host of December 16 2022 AARO Media Roundtable
+- id: e28
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Kathleen Hicks
+  wrap_path: /people/kathleen-hicks
+  context_summary: Deputy Secretary of Defense; took direct AARO oversight in late July 2023, repositioning Kirkpatrick to report directly to her rather than through Moultrie's office
+- id: e29
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Lloyd Austin
+  wrap_path: /people/lloyd-austin
+  context_summary: Secretary of Defense across most of Moultrie's USD(I&S) tenure; Moultrie was the principal advisor to the Secretary on intelligence and security matters
+- id: e30
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Joseph D. Kernan
+  wrap_path: /people/joseph-kernan
+  context_summary: Predecessor as Under Secretary of Defense for Intelligence and Security
+- id: e31
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Bradley Hansell
+  wrap_path: /people/bradley-hansell
+  context_summary: Successor as Under Secretary of Defense for Intelligence and Security
+- id: e32
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Sue Gough
+  wrap_path: /people/sue-gough
+  context_summary: Department of Defense spokesperson; moderator of the December 16 2022 joint AARO media roundtable
+- id: e33
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Paul Nakasone
+  wrap_path: /people/paul-nakasone
+  context_summary: NSA Director / U.S. Cyber Command Commander; co-witness alongside Moultrie at the March 17 2022 HASC ISO posture hearing
+- id: e34
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Scott Berrier
+  wrap_path: /people/scott-berrier
+  context_summary: DIA Director; co-witness alongside Moultrie at the March 17 2022 HASC ISO posture hearing
+- id: e35
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Ruben Gallego
+  wrap_path: /people/ruben-gallego
+  context_summary: Chairman of the HASC Subcommittee on Intelligence and Special Operations at the March 17 2022 hearing
+- id: e36
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Trent Kelly
+  wrap_path: /people/trent-kelly
+  context_summary: Ranking Member of the HASC Subcommittee on Intelligence and Special Operations at the March 17 2022 hearing
+- id: e37
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Tony Frazier
+  wrap_path: /people/tony-frazier
+  context_summary: LeoLabs CEO who welcomed Moultrie to the LeoLabs Board on December 3, 2024
+- id: e38
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Defense Counterintelligence and Security Agency
+  wrap_path: /organizations/dcsa
+  context_summary: Agency under USD(I&S) authority
+- id: e39
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: National Geospatial-Intelligence Agency
+  wrap_path: /organizations/nga
+  context_summary: Agency under USD(I&S) authority
+- id: e40
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: University of Maryland College Park
+  wrap_path: /organizations/umd
+  context_summary: BA Magna Cum Laude in Business Management (undergraduate alma mater)
+- id: e41
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: National Intelligence University
+  wrap_path: /organizations/national-intelligence-university
+  context_summary: MS in Strategic Intelligence (graduate alma mater); previously known as Defense Intelligence College
+- id: e42
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Defense Language Institute
+  wrap_path: /organizations/defense-language-institute
+  context_summary: Russian Language degree (Monterey); inducted into the Defense Language Institute's Hall of Fame
+- id: e43
+  added_date: '2026-04-29'
+  entity_type: organization
+  name: Harvard Kennedy School
+  wrap_path: /organizations/harvard-kennedy-school
+  context_summary: Senior Executive studies (post-graduate)
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-29'
+  observed: Defense Intelligence College
+  canonical: National Intelligence University
+  location: Sharp tweet image page 1/5 bio summary section
+  source_path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+  resolution: use-canonical
+  note: The June 2018 LinkedIn bio refers to Moultrie's master's-degree institution as the 'Defense Intelligence College' — the institution's earlier name. War.gov and Wikipedia use the current canonical name 'National Intelligence University'. Defense Intelligence College was renamed Joint Military Intelligence College and ultimately National Defense Intelligence College / National Intelligence University.
+- id: nq2
+  added_date: '2026-04-29'
+  observed: NSA's Director of Operations
+  canonical: NSA's Director of Operations
+  location: war.gov bio ¶ Prior to becoming Under Secretary
+  source_path: government/wargov-moultrie-biography.html
+  resolution: use-canonical
+  note: War.gov bio says Moultrie 'retired from the DoD in 2015, as NSA's Director of Operations'. Wikipedia says he 'eventually served as the director of the National Security Operations Center'. The Sharp tweet (LinkedIn) records '2010 – 2015 · 5 yrs' as 'Director & Deputy Director of Signals Intelligence'. Three different titles for the same NSA tenure period in three different sources; war.gov is the post-government canonical. Treat all three as variant descriptions of senior NSA leadership 2010-2015 rather than separate roles.
+- id: nq3
+  added_date: '2026-04-29'
+  observed: G2X Labs Inc
+  canonical: G2K Labs
+  location: Sharp tweet image page 1/5 Experience section
+  source_path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+  resolution: use-canonical
+  note: The June 2018 LinkedIn lists 'G2X Labs Inc' (Chairman of the Board); the May 2022 OGE Form 278e Schedule D row 4 lists 'G2K Labs' (Board Member). Likely the same Chantilly, VA company with name evolution between 2018 and 2022. The OGE filing is the canonical post-government attestation; preserve the source-form 'G2X Labs Inc' on the LinkedIn-attested entry but use 'G2K Labs' as the canonical wrap.
+- id: nq4
+  added_date: '2026-04-29'
+  observed: Better Angel Society Inc (THE)
+  canonical: The Better Angels Society
+  location: Sharp tweet image page 2/5 Experience section
+  source_path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+  resolution: use-canonical
+  note: The 2018 LinkedIn lists 'Better Angel Society Inc (THE)' (singular 'Angel'); the May 2022 OGE 278e Schedule D row 2 lists 'The Better Angels Society' (plural). Same organization. Preserve the source form on the LinkedIn-attested entry.
+rumors:
+- id: rm1
+  added_date: '2026-04-29'
+  claim: Moultrie was 'removed' from his official biography after the Battelle Advisory Board affiliation became publicly known via the Sharp tweet (anonymous-attribution claim circulated in UAP-disclosure online discussion forums and the IBTimes UK 'Gerb' January 2026 piece)
+  status: not-primary-source-established
+  observed_sources:
+  - IBTimes UK "Gerb" piece (January 2026)
+  - X / Twitter UAP-disclosure discussion threads
+  note: Working notes (April 28-29 2026 architecture handoff) classify the 'removed from official biography' framing as factually accurate but lacking conspiratorial significance — Battelle is absent from war.gov, INSA, UMD, LeoLabs, Wikipedia, Inside Biden's Basement, and ExecutiveBiz biographical content, but the same omission applies systematically to all of Moultrie's 2015-2018 advisory roles, not Battelle alone. The Battelle Memorial Institute Form 990 filings for FY ending September 30 2019 and FY ending September 30 2021 confirm Moultrie was not on the Board of Directors during those years; Form 990 Part VII Section A does not require listing Advisory Board members per IRS instructions. OGE Form 278 Schedule D requires listing positions held in the two calendar years before filing — the Battelle Advisory Board role ended approximately three years before Moultrie's June 2021 USD(I&S) appointment and would not be required disclosure on his entry-level OGE filing. Preserve as fabrication-prevention record so future contributors don't recirculate the conspiratorial framing without examining the disclosure-window context.
+credibility_notes: 'Moultrie was the Under Secretary at AARO''s establishment, named Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) as first Director, and the AARO Executive Council reported to him through July 2023.
+
+
+  Per his biographies Moultrie''s awards include the Presidential Rank Award, the Department of Defense Medal for Distinguished Public Service, two Department of the Navy Distinguished Civilian Service Awards, two National Intelligence Distinguished Service Medals, the National Intelligence Superior Service Medal, the CIA National Clandestine Service''s Donovan Award, the National Reconnaissance Office''s Gold Medal, three NSA Exceptional Civilian Service Awards, the Defense Meritorious Service Medal, the Meritorious Service Medal, and was inducted into the Defense Language Institute''s Hall of Fame.
+
+
+  At the December 16, 2022 AARO Media Roundtable with Kirkpatrick, Moultrie said he had ''not seen anything in those holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that.''
+
+  '
