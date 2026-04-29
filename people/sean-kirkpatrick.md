@@ -32,7 +32,7 @@ Awards include the Joint Meritorious Civilian Service Award, the National Intell
 
 ## UAP Relevance
 
-Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie`]) of OUSD(I&S) ([`/organizations/ousd-is`]) to stand up and lead AARO ([`/organizations/aaro`]) — the successor to the Navy-led UAP Task Force ([`/organizations/uaptf`]) — in early 2022. He was the inaugural Director of AARO from July 20, 2022 through December 1, 2023. He was the witness at the April 19, 2023 Senate Armed Services Subcommittee on Emerging Threats and Capabilities oversight hearing on AARO ([`/events/2023-04-19-sasc-aaro-hearing`]), at which he said clearly for the record that AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics. The hearing record is preserved in his oral testimony transcript ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) and his pre-hearing Statement for the Record ([`/documents/written-testimony-kirkpatrick-2023`]). One of his last acts before retiring was to sign AARO's Historical Record Report Volume 1; AARO publicly released the report March 8, 2024 under his successor Tim Phillips ([`/people/tim-phillips`]). After his retirement Kirkpatrick has been a continuing public voice on UAP across three Scientific American articles, a Peter Bergen ([`/people/peter-bergen`]) podcast appearance, and several jointly written papers with NSSA Moorman Center colleagues and a CSIS commentary.
+Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie`]) of OUSD(I&S) ([`/organizations/ousd-is`]) to stand up and lead AARO ([`/organizations/aaro`]) — the successor to the Navy-led UAP Task Force ([`/organizations/uaptf`]) — in early 2022. He was the inaugural Director of AARO from July 20, 2022 through December 1, 2023. He was the witness at the April 19, 2023 Senate Armed Services Subcommittee on Emerging Threats and Capabilities oversight hearing on AARO ([`/events/2023-04-19-sasc-aaro-hearing`]), at which he said clearly for the record that AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics. The hearing record is preserved in his oral testimony transcript ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) and his Statement for the Record submitted before the hearing ([`/documents/written-testimony-kirkpatrick-2023`]). One of his last acts before retiring was to sign AARO's Historical Record Report Volume 1; AARO publicly released the report March 8, 2024 under his successor Tim Phillips ([`/people/tim-phillips`]). After his retirement Kirkpatrick has been a continuing public voice on UAP across three Scientific American articles, a Peter Bergen ([`/people/peter-bergen`]) podcast appearance, and several jointly written papers with NSSA Moorman Center colleagues and a CSIS commentary.
 
 ---
 
@@ -49,8 +49,10 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | [`/organizations/dia`] | Chief Technology Officer in joint CIA-DIA program office, later Division Chief as DIA officer | 2007 – 2010 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | [`/organizations/dod`] | Space Control Portfolio Manager, Office of the Deputy Assistant Secretary of Defense, Space and Intelligence (Office of the Secretary of Defense) | 2010 – 2012 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | [`/organizations/dia`] | Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI); appointed to Defense Intelligence Senior Executive Service in 2012 | 2012 – 2016 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/odni`] | Special assignment to the Principal Deputy Director of National Intelligence — IC lead supporting the JICSpOC at Schriever AFB; renamed NSDC April 2017. Concurrent with the DIO/S&TI role | 2014 – 2016 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | [`/organizations/usstratcom`] | Deputy Director of Intelligence | 2016 – 2017 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | [`/organizations/nsc`] | Director, National Security Strategy | 2017 – 2018 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
+| [`/organizations/usstratcom`] | Senior Intelligence Advisor to the Commander, Air Force Space Command and to the Commander, Joint Forces Space Component Command (USSTRATCOM) — double-hatted billet charged by the DNI and the CDR/JFSCC to design the intelligence enterprise that became the USSPACECOM Intelligence Enterprise upon USSPACECOM re-establishment August 29 2019 | 2018-08 – 2019-08 | government/afcea-kirkpatrick-usspacecom-bio.pdf |
 | [`/organizations/usspacecom`] | Deputy Director of Intelligence and DNI Representative; stood up the USSPACECOM Intelligence Enterprise (the fifth organization Kirkpatrick was IC lead for establishment) | 2019 – 2021 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | [`/organizations/dia`] | Chief Scientist, Missile and Space Intelligence Center (MSIC), Huntsville AL | 2021 – 2022 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
 | [`/organizations/aaro`] | Director (inaugural; sixth IC/DoD new-start organization Kirkpatrick led establishment of) | 2022-07-20 – 2023-12-01 | government/defense-gov-kirkpatrick-departure-20231120.html |
@@ -71,6 +73,14 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 ### Other Statements
 
+> Is that the real reason, Kirkpatrick countered, "or am I the only one stupid enough to say, 'yes?'"
+
+| Field | Value |
+|---|---|
+| Attributed to | WSJ Vol II preview interview, recounted in 'The Pentagon Disinformation That Fueled America''s UFO Mythology' (Joel Schectman + Aruna Viswanatha, 2025-06-06), 2022 |
+| Source | [archived source](../sources/news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html) |
+| Location | ¶ 'Stupid enough' section |
+
 > Dr. Kirkpatrick was asked by USD(I&S) to stand-up and lead AARO in early 2022. Known as Dr. K to his staff and team, he brings over two decades of experience and a significant depth of expertise in scientific and technical intelligence (S&TI), S&TI and space policy, research and development, acquisitions, and operations, specializing in space/counterspace mission areas.
 
 | Field | Value |
@@ -87,13 +97,13 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | Source | [archived source](../sources/government/media-defense-gov-kirkpatrick-biography-20220720.pdf) |
 | Location | lines 34-35 |
 
-> holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that
+> I have -- in the research I've been doing, I've not heard, seen or heard of anything at this time that would support that.
 
 | Field | Value |
 |---|---|
-| Attributed to | USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO, 2022-12-16 |
+| Attributed to | Kirkpatrick reply at the USD(I&S) Moultrie + Kirkpatrick joint media roundtable on AARO, 2022-12-16 |
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
-| Location | ¶ AARO roundtable transcript |
+| Location | ¶ Kirkpatrick reply to alien-visitation Q |
 
 > an artificial interstellar object could potentially be a parent craft that releases many small probes
 
@@ -175,6 +185,22 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | Source | [archived source](../sources/news/rev-nasa-uap-public-meeting-transcript-20230531.html) |
 | Location | ¶ Kirkpatrick remarks |
 
+> All of that is both absurd and false.
+
+| Field | Value |
+|---|---|
+| Attributed to | Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266 (April 18 2024 BlackVault analysis), 2023-06-13 |
+| Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
+| Location | lines 322-323 |
+
+> And yes, you are defending and adjudicating, and you're undermining the very organization you purported to help establish for this purpose.
+
+| Field | Value |
+|---|---|
+| Attributed to | Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266; Mellon attempting to mediate between Grusch and AARO, 2023-06-13 |
+| Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
+| Location | lines 378-379 |
+
 > served the American people with honesty and integrity, tackling an incredibly difficult mission to explain the unknown
 
 | Field | Value |
@@ -222,6 +248,14 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | Attributed to | Audible podcast In the Room with Peter Bergen Episode 38, 2024 |
 | Source | [archived source](../sources/news/audible-bergen-kirkpatrick-episode38-2024.html) |
 | Location | ¶ Bergen interview transcript |
+
+> no, I attended a briefing at the request of Senate Armed Services Committee on what was at that time associated with the AATIP/AAWSAP research that was going on as an independent outside reviewer, and I gave them my opinions at that time
+
+| Field | Value |
+|---|---|
+| Attributed to | Greenstreet split-screen interview, transcribed in Unknown Country article June 12 2024 |
+| Source | [archived source](../sources/news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html) |
+| Location | ¶ Greenstreet split-screen interview |
 
 > Carl Sagan popularized the maxim that "extraordinary claims require extraordinary evidence." This advice should not be optional for policy makers.
 
@@ -327,7 +361,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | Source | [archived source](../sources/news/douglas-johnson-uapda-pentagon-rewrite-20240724.html) |
 | Location | ¶ Kirkpatrick interview quotes |
 
-> The exponential growth of space capabilities across the commercial, national security, and
+> The exponential growth of space capabilities across the commercial, national security, and civil sectors is driving economic, military, intelligence, and scientific advances.
 
 | Field | Value |
 |---|---|
@@ -351,13 +385,21 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | Source | [archived source](../sources/news/nssa-midnight-hammer-williams-kirkpatrick-20250626.pdf) |
 | Location | ¶3 |
 
+> [11:34] I'll just cut to the chase, there is no alien technology.
+
+| Field | Value |
+|---|---|
+| Attributed to | National Capital Area Skeptics Arlington VA event 'AARO; a Duality in Mission Regarding UAPs', host NCAS president Scott Snell, 2026-04-09 |
+| Source | [archived source](../sources/transcripts/ncas-kirkpatrick-aaro-duality-20260409-downloaded.md) |
+| Location | [11:34] |
+
 ---
 
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
 |---|---|---|---|---|
-| 1986 | Selected as a member of the U.S. Department of Energy's High School Honors Research Program at Brookhaven National Laboratory (per Wikipedia citing Atlanta Journal July 11 1986) | other | news/wikipedia-sean-m-kirkpatrick.html |  |
+| 1986 | Selected as a member of the DOE High School Student Honors Research Program at Brookhaven — Brookhaven's first year hosting per OSTI biblio/5527433. Kirkpatrick's participation attested via Wikipedia citing Keith Dunnavant's Atlanta Journal article (July 11 1986); the primary AJC piece was not retrievable through open-access channels (audit 2.3 Open) | other | government/osti-5527433-doe-honors-research-program-1986-impact-education.html |  |
 | 1991 | B.S. Physics, University of Georgia | other | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
 | 1995 | Ph.D. Physics, University of Georgia (advisor William Dennis); doctoral work in nonlinear and nonequilibrium phonon dynamics of rare earth doped fluoride crystals | other | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
 | 1995 | Postdoctoral position at the University of Illinois Urbana-Champaign investigating laser-induced molecular vibrations of high explosives under an AFOSR program | affiliation | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
@@ -368,16 +410,23 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | 2005 | Converted to CIA; staff scientist in the Directorate of Science and Technology | affiliation | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
 | 2007 | Assigned as Chief Technology Officer in joint CIA-DIA program office; later became division chief as a DIA officer | affiliation | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
 | 2010 | Asked to serve as Space Control Portfolio Manager for the Deputy Assistant Secretary of Defense for Space and Intelligence (Office of the Secretary of Defense) | affiliation | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
-| 2010 | UGA Department of Physics and Astronomy establishes the Sean M. Kirkpatrick Award for Outstanding Graduate Research; first cohort of recipients reported in the department's Fall 2010 newsletter | other | news/uga-physast-newsletter-fall-2010.pdf |  |
+| 2010 | UGA Department of Physics and Astronomy establishes the 'Sean M. Kirkpatrick Award for Outstanding Achievement in Graduate Research' — named in his honor by the department; first recipients reported in the Fall 2010 newsletter. Per audit 2.4 the award's funding source is not in the public record | other | news/uga-physast-graduate-awards-kirkpatrick-live.html |  |
 | 2012 | Returned to DIA as Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI); appointed to Defense Intelligence Senior Executive Service | role | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
+| 2015-09-11 | DoD announces establishment of the Joint Interagency Combined Space Operations Center (JICSpOC) at Schriever Air Force Base — joint with USSTRATCOM, Air Force Space Command, and the intelligence community; experimentation begins October 1 2015. Kirkpatrick led IC support during the late phase of his DIO/S&TI tenure | other | government/war-gov-jicspoc-establishment-20150911.html |  |
 | 2016 | Deputy Director of Intelligence, U.S. Strategic Command | role | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
 | 2017 | Director, National Security Strategy, National Security Council | role | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
+| 2017-04 | General John Hyten announces in Senate Armed Services Committee testimony that the JICSpOC has been renamed the National Space Defense Center (NSDC); the JICSpOC effort Kirkpatrick led the IC support for is now operationally permanent | other | news/spacenews-jicspoc-nsdc-rename-20170404.html |  |
+| 2018-04-19 | Confidential 2.5-hour Skinwalker Ranch briefing to SSCI and SASC. Per Fugal's May 9 2024 X-post photograph and EXIF metadata, Kirkpatrick was at the head of the table; DoD confirmed his attendance to Liberation Times June 22 2024. Same calendar day as the 2023 SASC AARO hearing | other | news/liberationtimes-lack-of-transparency-kirkpatrick-skinwalker-20240622.html |  |
+| 2018-08 | Senior Intelligence Advisor to the Commander AFSPC and the Commander JFSCC (USSTRATCOM) — double-hatted billet charged by the DNI to design the intelligence enterprise that became the USSPACECOM Intelligence Enterprise upon USSPACECOM re-establishment August 29 2019. Closes the August 2018 - August 2019 gap | role | government/afcea-kirkpatrick-usspacecom-bio.pdf |  |
 | 2019 | Deputy Director of Intelligence and DNI Representative for U.S. Space Command; stood up the USSPACECOM Intelligence Enterprise (the fifth IC new-start organization Kirkpatrick led) | role | government/afcea-kirkpatrick-usspacecom-bio.pdf |  |
-| 2019-05-07 | U.S. Provisional Patent Application 62/844,460 filed (Reveal Systems social-media-influence-scoring system; co-inventors Erik T. Bogaard, Jason F. Fairchild, Sean M. Kirkpatrick); Kirkpatrick was at the time Deputy Director of Intelligence at U.S. Space Command | publication | news/uspto-patent-us20200357080a1-reveal-systems.html |  |
+| 2019-05-07 | Reveal Systems Inc. files U.S. Provisional Patent Application 62/844,460 — integrated influencer commerce platform (co-inventors Bogaard, Fairchild, Kirkpatrick); covers co-branded MasterCard card, biometric authentication, BLE location tracking, ML content analysis, tiered tracking, retailer point-of-sale integration. Kirkpatrick was Deputy Director of Intelligence at USSPACECOM | publication | news/uspto-patent-us20200357080a1-reveal-systems.html |  |
+| 2020-05-07 | Reveal Systems Inc. files US patent application 16/869,390 (published 2020-11-12 as US20200357080A1) — original from the 2019 provisional. Later abandoned. Consumer brand rendered "Reveel" in patent figures, distinct from the "Reveal Systems" corporate spelling | publication | news/uspto-patent-us20200357080a1-reveal-systems.html |  |
 | 2021 | Chief Scientist at DIA's Missile and Space Intelligence Center, Huntsville Alabama | role | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
+| 2021-11-30 | Reveal Systems Inc. files US patent application 17/537,730 (later published as US20220084137A1) — first continuation descending from 16/869,390 in the same patent family. Filed during the period Kirkpatrick was Chief Scientist at DIA's Missile and Space Intelligence Center | publication | news/uspto-patent-us20220084137a1-reveal-systems.html |  |
 | 2022 | Asked by USD(I&S) Ronald Moultrie to stand up and lead AARO | role | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
 | 2022-07-20 | AARO formally established; Kirkpatrick announced as inaugural Director | role | news/blackvault-aaro-establishment-release-20220720.html |  |
 | 2022-12-16 | First joint AARO media roundtable with USD(I&S) Moultrie; established the 'holdings' rhetorical boundary (documents/memos rather than physical artifacts) and DOE as a partnership channel from establishment forward | testimony | government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html |  |
+| 2023-02-28 | Reveal Systems Inc. files US patent application 18/175,950 (later published as US20230206351A1) — second continuation in the Reveal Systems patent family, filed seven months into Kirkpatrick's AARO directorship (he was sitting AARO Director on this date) | publication | news/uspto-patent-us20230206351a1-reveal-systems.html |  |
 | 2023-03-07 | Co-authored manuscript with Avi Loeb 'Physical Constraints on Unidentified Aerial Phenomena' dated March 7 2023, considering hypothetical extraterrestrial-probe-from-parent-craft scenarios | publication | news/loeb-kirkpatrick-physical-constraints-uap-20230307.pdf |  |
 | 2023-03-08 | Major General David W. Abba ([`/people/david-abba`]), Director of DoD Special Access Program Central Office (DoD SAPCO), signs memorandum confirming AARO's authority to receive and handle all UAP-related information regardless of classification, including from individuals bound by nondisclosure agreements (released April 2024 under FOIA 24-F-0266) | other | news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html |  |
 | 2023-04-19 | Sole open-session witness at SASC Subcommittee on Emerging Threats and Capabilities oversight hearing on AARO; testified that AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics | testimony | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf | [`/events/2023-04-19-sasc-aaro-hearing`] |
@@ -395,10 +444,13 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | 2023-12-01 | Kirkpatrick's official last day as AARO Director; succeeded by Tim Phillips as Acting Director | role | news/defensescoop-kirkpatrick-departure-20231130.html |  |
 | 2024 | Audible podcast In the Room with Peter Bergen Episode 38 — Kirkpatrick uses 'self-licking ice cream cone' framing for UAP-disclosure advocacy and characterizes the public UAP whistleblower community as a 'core group of people' whose claims Grusch may have 'misinterpreted' or 'fallen to the influence of' | testimony | news/audible-bergen-kirkpatrick-episode38-2024.html |  |
 | 2024-01-19 | Scientific American op-ed published 'Here's What I Learned as the U.S. Government's UFO Hunter'; first post-government published statement (~7 weeks after AARO departure) | publication | news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html |  |
+| 2024-03-05 | OUSD(I&S) press-rollout email chain on the AARO HRR Vol 1 (released August 2025 under FOIA 24-F-0894). Sue Gough asks whether ODNI should be referenced; the reply with sender redacted reads "Confirming that we're good without any ODNI mention". Vol 1 was the report Kirkpatrick signed before his departure | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 | 2024-03-06 | Scientific American op-ed published 'We Need to Investigate UFOs—But Without the Distraction of Conspiracy Theories'; published two days before AARO publicly released the Historical Record Report Volume 1 (March 8 2024) | publication | news/scientificamerican-kirkpatrick-we-need-to-investigate-ufos-20240306.html |  |
 | 2024-03-14 | NSSA SpaceTime Series declassified interview with Kirkpatrick discussing AARO Historical Record Report Volume 1; moderated by Chris Williams | testimony | news/nssa-spacetime-kirkpatrick-20240314.html |  |
 | 2024-04-23 | Progress, Potential, and Possibilities podcast appearance (host Ira Pastor); Kirkpatrick describes Nonlinear Solutions LLC as 'an advisory group that provides strategic scientific and intelligence consulting services, with a focus on emerging science and technology trends, to clients in both the defense and intelligence communities' | testimony | news/buzzsprout-pastor-kirkpatrick-nonlinear-solutions-20240423.html |  |
 | 2024-05-09 | WestExec Advisors announces Kirkpatrick and Janet Kavandi as Senior Advisors | affiliation | news/westexec-kavandi-kirkpatrick-announcement-20240509.html |  |
+| 2024-05-09 | Brandon Fugal posts on X a photograph from the April 19 2018 SSCI/SASC Skinwalker Ranch briefing showing Kirkpatrick at the head of the table while Fugal's team presented; a subsequent post shares EXIF metadata fixing the capture to 1:31 PM ET. Contradicts Kirkpatrick's Greenstreet-interview 'independent outside reviewer' framing | other | social/x-brandon-fugal-status-1788708348340187605-photo-20240509.json |  |
+| 2024-06-22 | Liberation Times publishes 'Lack of Transparency Surrounding U.S. Government's Former UAP Office Director Raises Concerns' reporting DoD confirmed in writing that Kirkpatrick attended the April 19 2018 Skinwalker briefing — DoD quoted as 'Dr. Kirkpatrick attended one meeting on it on the Hill in 2018, which he has publicly acknowledged' | other | news/liberationtimes-lack-of-transparency-kirkpatrick-skinwalker-20240622.html |  |
 | 2024-07-17 | U.S. DOE Office of Hearings and Appeals issues decision FIA-24-0036; UT-Battelle FOIA Coordinator memorandum identifies Kirkpatrick by the internal title 'Chief Operating Officer for the National Security Sciences Directorate'. Decision confirms classified DOE-IN network access plus OSD-files directories at ORNL. | other | government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf |  |
 | 2024-07-17 | Per Marik von Rennenkampff interview cited in Douglas Johnson analysis (July 24 2024), Kirkpatrick says of the November 2023 OUSD(I&S) UAPDA rewrite 'we convinced Congress last year not to go down that road' | testimony | news/douglas-johnson-uapda-pentagon-rewrite-20240724.html |  |
 | 2024-10-31 | CSIS 'Space in Focus' commentary published 'Future Space Domain Awareness Needs for National Security Space' co-authored with Lt. Gen. (Ret.) John Shaw, former Deputy Commander of U.S. Space Command | publication | news/csis-shaw-kirkpatrick-sda-20241031.html |  |
@@ -407,8 +459,10 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | 2024-12-08 | Last known Wayback capture of ORNL staff profile for Sean M. Kirkpatrick before takedown | affiliation | government/ornl-gov-kirkpatrick-staff-profile-wayback-20241208-last-live.html |  |
 | 2024-12-22 | First Wayback capture showing the ORNL staff profile URL redirecting to /page-not-found (takedown documented within a 14-day window from previous live capture) | affiliation | government/ornl-gov-kirkpatrick-staff-profile-wayback-20241222-first-404.html |  |
 | 2024-12-27 | Scientific American op-ed published 'The U.S. Drone Panic Mirrors UFO Overreactions' (third post-government op-ed) | publication | news/scientificamerican-kirkpatrick-drone-panic-mirrors-ufo-overreactions-20241227.html |  |
+| 2025-06-06 | Wall Street Journal publishes 'The Pentagon Disinformation That Fueled America's UFO Mythology' (Schectman + Viswanatha) drawing on extensive on-record interviews with Kirkpatrick; documents two AARO Vol II findings — Cold War Air Force deception programs around F-117 stealth testing at Area 51, and the 'Yankee Blue' induction hazing ritual | testimony | news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html |  |
 | 2025-06-26 | NSSA Moorman Center for Space Studies Occasional Paper published 'National Security Space Contributions to Operation Midnight Hammer' co-authored with Chris Williams (Chair of NSSA Moorman Center); subject is the June 21-22 2025 U.S. military strike on Iranian nuclear facilities | publication | news/nssa-midnight-hammer-williams-kirkpatrick-20250626.pdf |  |
 | 2025-08-04 | Wayback capture confirms ORNL staff profile remains 404 ~8 months after the December 2024 takedown | affiliation | government/ornl-gov-kirkpatrick-staff-profile-wayback-20250804.html |  |
+| 2026-04-09 | First public reappearance after roughly two years of relative silence — National Capital Area Skeptics (NCAS) Arlington VA event 'AARO; a Duality in Mission Regarding UAPs' hosted by NCAS president Scott Snell. Kirkpatrick restates the no-aliens / no-legacy-program conclusion ('I'll just cut to the chase, there is no alien technology') | testimony | transcripts/ncas-kirkpatrick-aaro-duality-20260409-downloaded.md |  |
 
 ---
 
@@ -456,17 +510,19 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 ## Credibility Notes
 
-Kirkpatrick is significant to the UAP public record because he served as the inaugural Director of AARO and because he has continued to speak publicly about UAP after retirement. Several patterns in the documentary record are worth noting; full detail is in the Affiliations, Program Involvement, Timeline, and Relationships sections.
+This section documents specific patterns in the public record concerning (a) affiliations after AARO with unusual documentation patterns, (b) conduct while in office, (c) the November 2023 UAPDA legislative revisions and Kirkpatrick's later characterization of them, and (d) statements about prior UAP involvement that are in tension with the documented record. Several events sit within a narrow window during the final months of his AARO tenure — the February 28 2023 Reveal Systems patent continuation, the October 16 2023 Nonlinear Solutions LLC registration, the November 2023 OUSD(I&S) UAPDA revisions, the November 8 2023 departure announcement, the December 1 2023 last day, and the December 2023 ORNL appointment — and are presented together below for chronological visibility. Full detail is in the Affiliations, Program Involvement, Timeline, and Relationships sections.
 
-Multiple title forms used for his ORNL role. Per DOE Office of Hearings and Appeals decision FIA-24-0036, the UT-Battelle FOIA Coordinator memorandum identifies Kirkpatrick by the internal title "Chief Operating Officer for the National Security Sciences Directorate". An archived 2023 capture of his ORNL staff profile used "Chief Technology Officer for Defense and Intelligence Programs". The November 7 2024 NSSA Space Domain Awareness Forum agenda used "Chief Technology Officer, National Security Programs". The October 31 2024 CSIS author bio described him only by his USSPACECOM tenure with no mention of AARO or ORNL, and the WestExec and Elara Nova bio pages do not mention ORNL.
+AARO new-start count. The DoD bio released at AARO establishment (July 20 2022) identifies the USSPACECOM Intelligence Enterprise as the fifth IC new-start organization Kirkpatrick led; the WestExec bio after his retirement identifies AARO as the sixth. The DoD, AFCEA, HandWiki, and Potomac Officers Club bio pages also identify the JICSpOC IC support assignment about 2014 to 2016 as a similar new-start effort, putting three of six explicitly named. The remaining three are not named in any retrieved bio. The count of six comes only from the WestExec bio, a curated source written after his retirement; the DoD bio's count at the time of writing in mid-2022 is five.
 
-ORNL staff profile retrieval pattern. The page at ornl.gov was live in early November 2023, six days before the Hicks departure announcement of November 8 2023; the page was live again on December 8 2024 but became 404 by December 22 2024 and was still 404 on August 4 2025. Other ORNL staff named Kirkpatrick still have a live profile.
+Group A — Affiliations after AARO with unusual documentation patterns. Multiple title forms are used for his ORNL role. Per DOE Office of Hearings and Appeals decision FIA-24-0036, the UT-Battelle FOIA Coordinator memorandum identifies Kirkpatrick by the internal title "Chief Operating Officer for the National Security Sciences Directorate". An archived 2023 capture of his ORNL staff profile used "Chief Technology Officer for Defense and Intelligence Programs". The November 7 2024 NSSA Space Domain Awareness Forum agenda used "Chief Technology Officer, National Security Programs". The October 31 2024 CSIS author bio described him only by his USSPACECOM tenure with no mention of AARO or ORNL, and the WestExec and Elara Nova bio pages do not mention ORNL. The ORNL staff profile page at ornl.gov was live in early November 2023, six days before the Hicks departure announcement of November 8 2023; the page was live again on December 8 2024 but became 404 by December 22 2024 and was still 404 on August 4 2025. Other ORNL staff named Kirkpatrick still have a live profile.
 
-Kirkpatrick's own framing of his AARO role. Per the Black Vault release of FOIA case 24-F-0266 in April 2024, Kirkpatrick told Christopher Mellon in June 2023 Signal messages that he was "defending and adjudicating" AARO and that Mellon was "undermining the very organization" Mellon "purported to help establish for this purpose".
+Group B — Conduct while in office. Three documentary records sit within the AARO tenure window. (i) Reveal Systems patent family — Kirkpatrick is named as an inventor with Erik T. Bogaard and Jason F. Fairchild on three Reveal Systems Inc. USPTO patent applications from a 2019 provisional. The applications cover an integrated influencer commerce platform — a co-branded MasterCard pre-paid payment card ("InCard"), biometric authentication of the influencer at login, posting, and purchase, Bluetooth Low Energy in-store location tracking, machine learning analysis of influencer content to identify purchase events, tiered influencer chain tracking across multiple users, and direct integration with retailer point-of-sale systems for card linked offers. Patent figures render the consumer brand as "Reveel"; the corporate assignee on all three applications is "Reveal Systems, Inc." The May 7 2019 provisional was filed while Kirkpatrick was Deputy Director of Intelligence at U.S. Space Command; the original was filed May 7 2020 (later abandoned), the first continuation November 30 2021 while he was Chief Scientist at DIA's Missile and Space Intelligence Center, and the second continuation February 28 2023, seven months into his AARO tenure. (ii) Nonlinear Solutions LLC was registered in North Carolina at a personal residence in Franklin NC on October 16 2023 while Kirkpatrick was sitting AARO Director. (iii) The encrypted Signal text exchange with Christopher Mellon dated June 11 to 13 2023 is registered in Statements — Kirkpatrick characterized Mellon's framing of the Grusch matter as "absurd and false" and told Mellon "you are defending and adjudicating, and you're undermining the very organization you purported to help establish for this purpose". The exchange was released April 18 2024 under FOIA 24-F-0266.
 
-November 2023 OUSD(I&S) revisions to the UAP Disclosure Act. The 33-page line-by-line revisions to the Senate-passed UAP Disclosure Act of 2023 were reviewed by the Office of the Under Secretary of Defense for Intelligence and Security and submitted to congressional negotiators in November 2023. Per a July 2024 Marik von Rennenkampff interview cited in Douglas Johnson's analysis (July 2024), Kirkpatrick said of these revisions that "we convinced Congress last year not to go down that road". He separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
+Group C — November 2023 OUSD(I&S) revisions to the UAP Disclosure Act. The 33-page line-by-line revisions to the Senate-passed UAP Disclosure Act of 2023 were reviewed by the Office of the Under Secretary of Defense for Intelligence and Security and submitted to congressional negotiators in November 2023, weakening the legislation's independent disclosure mechanisms. Per a July 2024 Marik von Rennenkampff interview cited in Douglas Johnson's analysis (July 2024), Kirkpatrick said of these revisions that "we convinced Congress last year not to go down that road". He separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
 
-Reveal Systems patent family. Kirkpatrick is named as an inventor with Erik T. Bogaard and Jason F. Fairchild on three Reveal Systems Inc. USPTO patent applications for a social media influence scoring system. The May 7 2019 provisional application was filed while he was Deputy Director of Intelligence at U.S. Space Command; continuation applications were filed through his AARO tenure (the February 28 2023 continuation filed while he was AARO Director).
+Group D — Statements about prior UAP involvement. In a 2024 split-screen interview with journalist Steven Greenstreet — transcript reporting in Unknown Country June 12 2024 and The UFO Chronicles June 2024 — Kirkpatrick characterized himself as "an independent outside reviewer" at the April 19 2018 SSCI/SASC Skinwalker Ranch briefing. Brandon Fugal's May 9 2024 X post documents a photograph from that briefing showing Kirkpatrick at the head of the table while Fugal's team presented; Fugal subsequently shared metadata that set the capture to 1:31 PM ET on April 19 2018, between 1:00 and 3:30 PM ET. On June 22 2024, Liberation Times reported that the Department of Defense had confirmed in writing to the publication that Kirkpatrick attended the briefing. The "outside reviewer" framing in the Greenstreet interview is in tension with imagery of Kirkpatrick at the head of the table in the photograph and with Fugal's account that Kirkpatrick told attendees they "already know" the reality of the UFO phenomenon.
+
+HRR Vol 1 rollout. Internal Pentagon emails released August 2025 under FOIA case 24-F-0894 (Black Vault analysis) document a tightly controlled press rollout for the AARO Historical Record Report Vol 1 — the report Kirkpatrick signed before his departure and which AARO publicly released March 8 2024 under Acting Director Tim Phillips. Multiple journalists from Scientific American, the Washington Examiner, and Finland's national broadcaster YLE requested inclusion in press briefings or interviews with Phillips; those requests were declined. Pentagon spokesperson Sue Gough wrote: "At this time, we are looking to keep any media engagement with AARO's acting director to a small group." A small invite-only briefing was held on March 8 2024. In an email chain dated March 5 2024 discussing the draft press release, Gough asked whether ODNI should be referenced because "the legislation calls for AARO producing the report — but Dir, AARO reports to PDDNI, too, so wanted to check"; the reply with the sender redacted was "Confirming that we're good without any ODNI mention." ODNI is part of AARO's reporting chain under the FY2023 NDAA — AARO reports to both the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence — yet the public Vol 1 rollout was framed as DoD only. The same release captures Gough writing "We do not want to see sUAS added to AARO's portfolio!" to David A. Kozik (Director of Congressional Activities, OUSD(I&S)) after Senator Gillibrand asked AARO to take on counter-drone coordination during a Senate briefing on drone incursions.
 
 ---
 
@@ -506,6 +562,7 @@ Reveal Systems patent family. Kirkpatrick is named as an inventor with Erik T. B
 - [`/organizations/nro`]
 - [`/organizations/nsc`]
 - [`/organizations/nssa-moorman-center`]
+- [`/organizations/odni`]
 - [`/organizations/ornl`]
 - [`/organizations/ousd-is`]
 - [`/organizations/uaptf`]
