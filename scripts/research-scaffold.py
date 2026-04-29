@@ -144,12 +144,9 @@ def build_primary_sources_list(source_paths, manifest):
 def infer_format(path):
     """Map a source file path's extension to a manifest.yaml format value.
     Covers the schema's format_values vocabulary (pdf / html / txt /
-    transcript / video). Unknown extensions fall back to html —
-    intentional for web scraping where the source's extension is often
-    absent or generic. Audio and image extensions aren't covered (schema
-    format_values doesn't include those yet; tracked in BACKLOG #7).
-    Contributors registering such sources should add the manifest entry
-    via `manifest.py add --format ...` and then re-scaffold the artifact."""
+    transcript / audio / image / video). Unknown extensions fall back to
+    html — intentional for web scraping where the source's extension is
+    often absent or generic. Mirrors manifest.py FORMAT_BY_EXT."""
     ext = Path(path).suffix.lower()
     return {
         ".pdf": "pdf",
@@ -158,13 +155,29 @@ def infer_format(path):
         ".txt": "txt",
         ".md": "transcript",
         # Video extensions — schema format_values supports `video`.
-        # Mirrors manifest.py FORMAT_BY_EXT.
         ".mp4": "video",
         ".m4v": "video",
         ".mov": "video",
         ".webm": "video",
         ".avi": "video",
         ".mkv": "video",
+        # Audio extensions — schema format_values supports `audio`.
+        ".mp3": "audio",
+        ".wav": "audio",
+        ".flac": "audio",
+        ".aac": "audio",
+        ".ogg": "audio",
+        ".m4a": "audio",
+        # Image extensions — schema format_values supports `image`.
+        ".jpg": "image",
+        ".jpeg": "image",
+        ".png": "image",
+        ".gif": "image",
+        ".tiff": "image",
+        ".tif": "image",
+        ".webp": "image",
+        ".bmp": "image",
+        ".heic": "image",
     }.get(ext, "html")
 
 

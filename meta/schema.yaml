@@ -1172,7 +1172,7 @@ manifest_entry:
   # and archive.py (sets bit 1 on Wayback find or successful SPN submit).
   # Validator enforces consistency against status / path / wayback_date.
   # Contributors don't hand-maintain this field; the scripts do.
-  format_values: [pdf, html, txt, video, transcript]
+  format_values: [pdf, html, txt, audio, image, video, transcript]
   extraction_type_values: [text-native, ocr-scan, extraction-lossy]
   # `extraction_type` classifies how the archived file yields text. Optional;
   # defaults to `text-native` when absent (legacy entries pre-field). The

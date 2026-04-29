@@ -65,13 +65,23 @@ FORMAT_BY_EXT = {
     ".webm": "video",
     ".avi": "video",
     ".mkv": "video",
-    # Audio and image extensions lack a matching schema format_value
-    # (format_values is [pdf, html, txt, post, video, transcript]).
-    # When audio/image sources are first archived, extend schema
-    # format_values to include "audio" / "image" and add the ext
-    # mappings here. Until then: contributor must pass --format
-    # manually to override the html fallback for audio/image files.
-    # BACKLOG: "Extend schema format_values for audio and image".
+    # Audio extensions — schema format_values supports `audio`
+    ".mp3": "audio",
+    ".wav": "audio",
+    ".flac": "audio",
+    ".aac": "audio",
+    ".ogg": "audio",
+    ".m4a": "audio",
+    # Image extensions — schema format_values supports `image`
+    ".jpg": "image",
+    ".jpeg": "image",
+    ".png": "image",
+    ".gif": "image",
+    ".tiff": "image",
+    ".tif": "image",
+    ".webp": "image",
+    ".bmp": "image",
+    ".heic": "image",
 }
 
 

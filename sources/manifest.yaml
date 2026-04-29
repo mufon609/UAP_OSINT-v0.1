@@ -97,6 +97,14 @@
   archive_status: 1
   wayback_skip: true
   note: 'Contributor-produced clean-text transcription of the OCR-scanned PPD-19 procedural filing PDF (paired entry above; same path stem). Visually verified against PDF page rendering 2026-04-24. The PDF''s mupdf-pipeline text layer carries OCR artifacts ("UAP-telated", "compatrtmented", "appatently" in ¶3–5; "ate", "cottelated" in ¶6); this transcription restores the clean original forms. Validator (validate.py extract_source_text) prefers a same-stem .txt sibling over pdftotext output for PDFs flagged extraction_type=ocr-scan. Real document oddities preserved as-is: typo "200236" for ZIP "20036" in Bakaj''s address (p. 3); missing closing paren in "(k)(5(D)(ii)" of section 7. Signature glyphs (which OCR garbles to artifacts like "ICG zx" / "Cele") rendered as "[signature]" placeholders since the cursive script is not extractable text.'
+- url: https://armedservices.house.gov/_cache/files/a/2/a284ee97-4a2d-495d-808a-4d76c6c0b5b8/09D1256E34E6463BD2CD0493DEAC756E.20220317-iso-witness-statement-moultrie.pdf
+  format: pdf
+  status: archived
+  path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
+  archived_date: '2026-04-29'
+  sha256: 8d11fb0782ee01be689bec2afb5c3f9030d35fc6e8ae23e8eab2747dbb9cee0c
+  archive_status: 1
+  note: 'Ronald S. Moultrie''s prepared remarks as USD(I&S) before the House Armed Services Committee Subcommittee on Intelligence and Special Operations, March 17, 2022. FY23 Defense Intelligence and Security Enterprise posture hearing. Chairman Gallego, Ranking Member Kelly. Co-witnesses: Gen. Nakasone and Gen. Berrier. Direct retrieval blocked (armedservices.house.gov returns 403); fetched via Wayback Machine capture 2022-09-22.'
 - url: https://burchett.house.gov/media/press-releases/congressman-burchetts-statement-after-uap-hearing-held-house-oversight
   format: html
   status: archived
@@ -286,6 +294,14 @@
   archive_status: 3
   note: Wikipedia entry for AARO — institutional history, AAROEXEC oversight structure, leadership succession, FY22 NDAA Section 1683 reference
   wayback_date: '2026-03-06'
+- url: https://en.wikipedia.org/wiki/Ronald_Moultrie
+  format: html
+  status: archived
+  path: news/wikipedia-ronald-moultrie.html
+  archived_date: '2026-04-29'
+  sha256: b063a5a23e16bf822fa07b147abd6718f8fe46751d0060b58166d57a979c9b4d
+  archive_status: 1
+  note: Wikipedia article on Ronald Moultrie (Under Secretary of Defense for Intelligence and Security 2021-2024). Public-record secondary source aggregating his career timeline, board affiliations, and post-government roles.
 - url: https://en.wikipedia.org/wiki/Sean_M._Kirkpatrick
   format: html
   status: archived
@@ -666,15 +682,6 @@
   sha256: 1e2ee84c108c2feda17af38fd908de81faf58737fe453109c58b0e713ceda90a
   archive_status: 3
   wayback_date: '2026-04-11'
-- url: https://unknowncountry.com/headline-news/controversial-uaptf-head-sean-kirkpatrick-rumored-to-be-stepping-down-as-aaro-director-by-years-end/
-  format: html
-  status: archived
-  path: news/strieber-unknowncountry-kirkpatrick-stepping-down-20231124.html
-  archived_date: '2026-04-28'
-  sha256: 83b90a188c4a7c84b2e7ce16b47c74d29caa0bc023d26beaa530176ddb5da163
-  archive_status: 3
-  note: 'Whitley Strieber''s Unknown Country November 24 2023 contemporaneous reporting: noted Kirkpatrick''s ORNL staff listing had ''briefly appeared on the ORNL website earlier this month'' — pre-Hicks-departure-announcement evidence (Hicks departure announcement was November 8 2023; Strieber capture is 16 days later but references the listing being live earlier in November)'
-  wayback_date: '2024-12-03'
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
@@ -945,6 +952,22 @@
   archive_status: 3
   note: 'Audible podcast transcript: ''In the Room with Peter Bergen'' Episode 38 — Kirkpatrick interview (2024). Sources for Kirkpatrick''s ''self-licking ice cream cone'' framing and ''core group of people'' observation about Grusch'
   wayback_date: '2025-11-22'
+- url: https://www.battelle.org/docs/default-source/privacy-policies-disclosures/2018-990-990t.pdf
+  format: pdf
+  status: archived
+  path: government/battelle-990-fy2019.pdf
+  archived_date: '2026-04-29'
+  sha256: 380e305997d6928a3767ba5283d30aa4fae2ee7aead30dcca083e3492c4aa5d4
+  archive_status: 1
+  note: Battelle Memorial Institute IRS Form 990 + 990-T for FY ending September 30, 2019. Public corporate-disclosure financial filing. Used per the April 2026 architecture investigation to rule out Moultrie's presence on Battelle Board of Directors during this fiscal year (Form 990 Part VII Section A does not require listing Advisory Board members per IRS instructions).
+- url: https://www.battelle.org/docs/default-source/privacy-policies-disclosures/bmi-2020-990-and-990t---fy21.pdf
+  format: pdf
+  status: archived
+  path: government/battelle-990-fy2021.pdf
+  archived_date: '2026-04-29'
+  sha256: dd60697ba762e44821b091e0cf45ff200de7e5647ffc227f998ef45b2d522ed5
+  archive_status: 1
+  note: Battelle Memorial Institute IRS Form 990 + 990-T for FY ending September 30, 2021. Public corporate-disclosure financial filing. Used per the April 2026 architecture investigation to rule out Moultrie's presence on Battelle Board of Directors during this fiscal year. URL contains triple hyphen (literal '---'), not em-dash.
 - url: https://www.buzzsprout.com/1531799/episodes/14943834-dr-sean-kirkpatrick-ph-d-nonlinear-solutions-llc-science-and-technology-for-emerging-national-security-threats
   format: html
   status: archived
@@ -1193,6 +1216,22 @@
   note: Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 (S. 3905). Senate Select Committee on Intelligence. Contains the 'Advanced Aerial Threats' section that directs the DNI/SecDef UAP report within 180 days (which became the June 2021 ODNI Preliminary Assessment). References 'the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence' — the Senate's on-record acknowledgment of UAPTF and its ONI home.
   archive_status: 3
   wayback_date: '2026-03-23'
+- url: https://www.insaonline.org/detail-pages/person/ron-moultrie
+  format: html
+  status: archived
+  path: news/insa-moultrie-bio.html
+  archived_date: '2026-04-29'
+  sha256: 78e2dc8ccba65d3db90f939dfa40892c7f7fc1f4cca705a93270ae05d893df0b
+  archive_status: 1
+  note: Intelligence and National Security Alliance (INSA) public profile page for Ron Moultrie. Listed as USD(I&S) framing. One of the public-facing post-government affiliation listings; per the April 2026 architecture investigation Battelle is absent from this bio.
+- url: https://www.insidebidensbasement.org/appointees/ronald-moultrie
+  format: html
+  status: archived
+  path: news/insidebidensbasement-moultrie.html
+  archived_date: '2026-04-29'
+  sha256: 0b5d380c1750d2d4fe01d17176eb1f36ce77efbc77e24a83ca3e8f8c12eaeadc
+  archive_status: 1
+  note: Inside Biden's Basement appointee tracker for Ronald Moultrie; Biden-administration appointment tracking with timeline of pre/post-government roles.
 - url: https://www.loudountimes.com/0local-or-not/1local/ufo-whistleblower-sues-sheriffs-office-over-records-release/article_b24005c4-490e-11ef-97d5-4bc65ae077be.html
   format: html
   status: archived
@@ -1452,6 +1491,14 @@
   note: Vice article 'This Is the Real Estate Magnate Who Bought Skinwalker Ranch, a UFO Hotspot', published March 10, 2020. First public identification of Brandon Fugal (Utah-based real estate mogul and tech investor, cofounder/owner of a firm later rolled into Colliers International) as the current owner of Skinwalker Ranch. Attests Bigelow-to-Fugal sale in 2016, Fugal's pre-existing connection to Bigelow's DIA-project scientists dating to 2010, and Fugal's ownership being kept quiet until this 2020 public identification. Does NOT mention Adamantium Real Estate by name (that shell-company identification appears in other secondary sources — see research_gap tracking). Load-bearing Fugal-era primary source.
   archive_status: 3
   wayback_date: '2025-09-29'
+- url: https://www.war.gov/About/Biographies/Biography/Article/2764848/ronald-s-moultrie/
+  format: html
+  status: archived
+  path: government/wargov-moultrie-biography.html
+  archived_date: '2026-04-29'
+  sha256: 4c65c37f31a9c3e46dbaeabf2b634191a890af11e5d287c116f074e9ecfef1ac
+  archive_status: 1
+  note: war.gov (formerly defense.gov before EO 14347) official Pentagon biography for Ronald S. Moultrie. Captures USD(I&S) tenure framing, dual-hat ODNI Director of Defense Intelligence role, and 36+ year DoD/NIC career retiring from NSA Director of Operations in 2015. Direct retrieval blocked (war.gov returns 403); fetched via Wayback Machine (capture 2026-02-01).
 - url: https://www.westexec.com/kavandi-kirkpatrick/
   format: html
   status: archived
@@ -1575,6 +1622,14 @@
   archive_status: 3
   note: Grusch closing remarks at the Sol Foundation Inaugural Symposium, Stanford (2023-11-17/18); Sol Foundation YouTube upload 2024-02-12.
   wayback_date: '2025-11-18'
+- url: https://x.com/ChrisUKSharp/status/1965182535358456276/photo/1
+  format: image
+  status: archived
+  path: social/sharp-x-moultrie-linkedin-printout-20180627.jpeg
+  archived_date: '2026-04-29'
+  sha256: 9f5665d0f743fee425b4e18e8bc82be3d22d73fab67a1688b317073ef87f5986
+  archive_status: 1
+  note: 'Christopher Sharp (@ChrisUKSharp) X post photo: 4K-resolution screenshot of Ronald Moultrie''s LinkedIn profile printout dated 6/27/2018 (URL https://www.linkedin.com/in/ronald-ron-moultrie-849b76112/), pages 1-2 of 5 visible. Page 2 attests Battelle — Advisory Board Member — Jul 2016 to Apr 2018 (1 yr 10 mos). Tweet ID 1965182535358456276.'
 - url: https://x.com/RepEricBurlison/status/1905254661847687610
   format: html
   status: archived

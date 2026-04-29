@@ -20,26 +20,6 @@ names.
 
 ## Open items
 
-### 7. Extend manifest `format_values` for audio and image sources
-
-`manifest_entry.format_values` is `[pdf, html, txt, post, video,
-transcript]`. Media kinds `audio` and `photo` are first-class per
-schema but the manifest vocabulary hasn't kept pace. First audio-only
-or image-only primary source will force the `--format` escape hatch
-(silent manifest-entry drift).
-
-**Fix on trigger** (first audio or image archival):
-1. Add `audio` + `image` to `manifest_entry.format_values`
-2. Update `FORMAT_BY_EXT` in `manifest.py` + `infer_format` in
-   `research-scaffold.py` (`.mp3/.wav/.flac/.aac/.ogg/.m4a` → `audio`;
-   `.jpg/.jpeg/.png/.gif/.tiff/.webp/.bmp/.heic` → `image`)
-3. Extend `extract_source_text` in `validate.py` with audio/image
-   passthrough (warn-on-unextractable, matches current .mp4 behavior)
-
-Surfaced: F.4c FLIR1 pilot (2026-04-20).
-
----
-
 ### 9. Rename `finding` → `investigation` + redesign type
 
 Mechanical rename plus a design pass. The `finding` type will be
