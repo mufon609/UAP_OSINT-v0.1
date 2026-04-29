@@ -912,3 +912,125 @@ Surfaced: 2023-04-19 SASC AARO hearing event build (2026-04-28) —
 audit pass identified that 5 populated `event_intrinsic` keys were
 not appearing in the rendered Event Summary table; facts duplicated
 into description prose as a node-level workaround.
+
+---
+
+### 26. Prose-drift check silently skips `document` type — coverage gap in validate-research.py
+
+**The gap.** `scripts/validate-research.py` defines two maps that
+gate the prose-drift check: `PROSE_FIELDS_BY_TYPE` (top-level
+free-prose fields per type) and `PROSE_ENTRY_FIELDS_BY_TYPE` (per-
+entry synthesis-content note fields per type). Both maps cover
+**person, event, transcript, media, organization, location** — six
+of the seven content types. **`document` is absent from both maps.**
+When `check_prose_drift` runs, the first guard returns immediately
+for any artifact whose `target_node` type isn't in either map.
+Result: every document artifact's prose-drift check is a no-op,
+regardless of how loosely the description tokenizes against source.
+
+**The fit with conventions.** `meta/conventions.md` scopes the
+prose-drift check to *"labeled synthesis surfaces (`description`,
+`background`, `uap_relevance`, `credibility_notes`) and per-entry
+synthesis-content notes"*. Document artifacts have a required
+`description` field per schema. Document `description` should be in
+scope by the convention; isn't in the implementation. The
+implementation and the convention are out of sync.
+
+**Inspection of the maps suggests this is an oversight, not an
+intentional exclusion** — every other content type has a
+`description` entry with rationale-bearing comments in
+`PROSE_FIELDS_BY_TYPE`; document just isn't there.
+
+**Current production impact.** Across the 4 built document
+artifacts, **173 unmatched description tokens are silently passing
+through with 0 warnings**:
+
+| Artifact | Unmatched / total |
+|---|---|
+| `written-testimony-fravor-2023` | 47 / 139 |
+| `written-testimony-graves-2023` | 40 / 157 |
+| `written-testimony-grusch-2023` | 33 / 178 |
+| `written-testimony-kirkpatrick-2023` | 53 / 135 |
+
+The 19–39% rates compare against contributor-targeted 0% on other
+types under the zero-warnings discipline. A meaningful gap.
+
+**Token analysis** — the unmatched content falls into two buckets:
+
+1. **Provenance/context vocabulary** — PDF-metadata-derived terms
+   ("Author", "Producer", "CreationDate"), filing-process language
+   ("submitted to the hearing", "open-session companion"), document-
+   physical-attribute terms ("4-page", "PDF"). These describe the
+   document, not the document's content; by definition they cannot
+   match source-body tokens. This bucket is a structural mismatch
+   between the description's role on document artifacts (synthesis
+   *about* the document) and the prose-drift check's source pool
+   (the document body itself).
+
+2. **Synthesis verbs and connectives** — "covers", "characterizes",
+   "includes", "describes", etc. The same shape of stylistic drift
+   the check catches on other types. This bucket is real bucket-2
+   drift that's currently unchecked.
+
+**Are other types similarly impacted?**
+
+- **`finding` type** — also absent from both maps, but no built
+  artifacts yet (F.7 design pass pending). No production impact;
+  will need to be added when F.7 ships.
+- **`meta` type** — also absent. Likely intentional (governing
+  docs are not user-content; conventions don't apply).
+- **No other content types are missing from the maps.**
+- **Per-entry coverage for document** — `quote_entry.significance`
+  and `quote_entry.context` are not in conventions.md scope (they're
+  per-quote metadata, not per-entry synthesis content), so the
+  per-entry-map gap doesn't have a separate functional effect for
+  documents. The top-level-map gap is the meaningful one.
+
+**Design choices for the fix.** Three paths, none mechanical:
+
+A. **Add `document` to `PROSE_FIELDS_BY_TYPE` with the same scoping
+   pool** (union of `primary_sources[].path` tokens). Cheap; matches
+   the convention literally; produces high false-positive rates as
+   bucket-1 above shows. Forces document descriptions to use almost
+   only source-body vocabulary, which damages legitimate contextual
+   framing (provenance, cross-node positioning, document-physical
+   attributes). Contributors face an unfixable warning surface.
+
+B. **Add `document` with an expanded source pool.** The pool would
+   include the document's own primary sources PLUS the source pools
+   of structurally-adjacent nodes (companion transcript on testimony
+   docs, hosting event, hosting organization). More machinery; more
+   graceful for legitimate contextual content; introduces
+   cross-artifact pool-resolution logic the validator doesn't have
+   today.
+
+C. **Document the exclusion explicitly** with a rationale comment
+   in `PROSE_FIELDS_BY_TYPE` ("document descriptions are *about* the
+   document, not from its body, so the token-match check produces
+   noise"). Aligns implementation with what's already happening;
+   surrenders bucket-2 drift checking on document descriptions.
+   Cheapest; loses the most.
+
+The choice depends on how much value bucket-2 drift detection has
+for document descriptions vs. how much false-positive cost option A
+imposes. Worth one focused session to decide and implement.
+
+**Affected now.** 4 written-testimony documents (Fravor, Graves,
+Grusch, Kirkpatrick). Affected on every future built document.
+
+**Priority.** Medium. Not a correctness issue (verbatim-quote check
+on document Key Passages is unaffected and runs unconditionally);
+discipline-uniformity issue (drift checking is enforced on six
+content types but silently skipped on the seventh).
+
+**Scope.** ~1 session: design decision + implementation +
+regression sweep across 4 existing document artifacts (which will
+require either rewriting their descriptions to match the chosen
+scope, or accepting the warnings they'll produce as a baseline).
+
+Surfaced: 2026-04-28 audit pass on
+`research/written-testimony-kirkpatrick-2023.yaml` build — direct
+recreation of `check_prose_drift` logic showed 53 unmatched tokens
+in description, but `validate-research.py` reported 0 warnings;
+investigation traced to the missing `document` key in both maps;
+confirmed across all 4 existing document artifacts.
