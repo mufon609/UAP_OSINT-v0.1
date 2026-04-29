@@ -1072,3 +1072,62 @@ access registry hunt established CA state of incorporation per patent
 record but blocked at SoS / OpenCorporates layer; name-collision
 discovery worth recording so future Reveal Systems node-build
 sessions don't conflate.
+
+---
+
+### 28. Mellon Signal exchange — redacted reply text awaiting Black Vault FOIA appeal
+
+The April 18 2024 BlackVault release of FOIA case 24-F-0266 includes
+the June 11–13 2023 Signal text-message exchange between Sean
+Kirkpatrick and Christopher Mellon. Kirkpatrick's responses
+("absurd and false"; "defending and adjudicating, and you're
+undermining the very organization you purported to help establish
+for this purpose") are visible verbatim in the released screenshots
+and are now registered as Statements quotes q36 and q37 on
+`/people/sean-kirkpatrick`.
+
+**Mellon's full reply on the same exchange is partially redacted in
+the released screenshot** — the visible portion documents Mellon
+responding that he never claimed Grusch's claims were "accurate" but
+felt Grusch was "sincere and credible," that he expressly called the
+allegations "warrant[ing] investigation," and that he would "seek to
+avoid further communication unless it is something that seems
+extraordinary or if [Kirkpatrick] initiate[s]." The remaining text
+is cut off in the released screenshot and Black Vault has filed a
+FOIA appeal under case 24-F-0266 for the redacted portion.
+
+**Status.** Pending external FOIA-appeal resolution. Out of repository
+control; cannot be advanced through technical or research action.
+
+**Path to closure** (passive, requires external event):
+- Black Vault FOIA appeal resolves and the redacted text is released.
+  At that point, Mellon's full reply becomes registerable on the
+  Mellon person node (when built — that node is unbuilt per audit § 6
+  Sol Foundation / disclosure-ecosystem build queue).
+- Until resolution, the documentary record on Kirkpatrick's side is
+  complete; the Mellon-side completion is downstream.
+
+**Check-back cadence.** ~6 months. Black Vault FOIA appeals typically
+resolve in 3–18 months; a 6-month check is the natural cadence to
+re-verify whether the redacted portion has surfaced. The check
+itself is cheap: re-fetch the FOIA 24-F-0266 release from Black
+Vault and re-extract; if the redacted portion is now visible, the
+follow-up work is to register Mellon's full reply as a quote on the
+Mellon node (when built) and update Credibility Notes Group B on
+the Kirkpatrick node accordingly.
+
+**Priority.** Low. Not a correctness issue for Kirkpatrick's node;
+adds nuance to the documentary record on the Mellon side. Sit-and-
+wait until either (a) the FOIA appeal resolves, or (b) the Mellon
+node is built (audit § 6 disclosure-ecosystem cluster) and the
+incomplete-reply note becomes load-bearing for the Mellon Statements
+section.
+
+**Scope.** Effectively zero ongoing work; one short check-and-update
+session when the redacted portion surfaces.
+
+Surfaced: Kirkpatrick audit-iteration follow-up (2026-04-29) —
+audit § 7 "Mellon Signal reply text (full)" Open item documented
+with concrete check-back cadence and closure path. Logged for
+visibility so a future session reviewing the Mellon node or the
+Kirkpatrick credibility notes knows the appeal is pending.
