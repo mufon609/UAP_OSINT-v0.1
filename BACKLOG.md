@@ -811,6 +811,20 @@ fravor.yaml`, `research/2023-07-26-house-graves.yaml`, `research/
 2023-07-26-house-grusch.yaml`. Exact count deferred to the audit
 execution.
 
+**Second imprecision shape — boundary inclusion (surfaced 2026-04-28
+during /events/2023-04-19-sasc-aaro-hearing build).** Beyond
+re-extraction staleness, contributor-authored Location refs can be
+imprecise from the start by including adjoining material in the
+range. Concrete cases on `research/2023-04-19-sasc-aaro-hearing.yaml`:
+q8 cites `lines 1784-1792` but Kirkpatrick's spoken portion ends at
+line 1788 (Sen. Rosen interrupts at 1789, page footer at 1791-1792).
+q11 cites `lines 2178-2183` but the quote content runs 2180-2182
+(prior speaker turn at 2178-2179, next speaker at 2183). Different
+root cause from staleness — caught during writing rather than during
+re-extraction — but same fix target: tighter ref discipline using
+the conventions in the Fix shape list above. The systematic sweep
+addresses both shapes.
+
 **Fix shape.** Systematic conversion of `lines N-M` refs to:
 - `p. N, ¶M` for stenographic PDFs (hearing transcripts)
 - `p. N` for single-line citations
@@ -835,3 +849,66 @@ which rendered existing `lines N-M` quote Locations increasingly
 out-of-sync. Corrections deferred per explicit Phase F Tier 1 scope
 decision (Phase F is about extraction integrity, not navigation
 precision).
+
+---
+
+### 25. Event-renderer Event Summary table emits a fixed field set; populated `event_intrinsic` keys outside that set are unrendered
+
+The event-renderer (`scripts/build-from-research.py` event branch)
+emits the `## Event Summary` table from a fixed set of `event_intrinsic`
+dict keys: `hearing_title` / `committee` / `session` / `congress` /
+`date` / `location` / `chair` for hearing-kind events. Other
+`event_intrinsic` keys populated by contributors are silently dropped
+from the rendered node body even though they validate cleanly and
+hold reader-relevant facts.
+
+**Concrete affected keys** observed on hearing-kind event artifacts:
+
+- `scheduled_time` (e.g., "10:30 a.m." — when the hearing was scheduled
+  to convene)
+- `convened_time` (e.g., "11:08 a.m." — when the gavel actually fell;
+  often differs from scheduled when chained behind a prior session)
+- `adjourned_time` (e.g., "12:08 p.m.")
+- `ranking_member` (e.g., "Joni Ernst" — the minority counterpart to
+  the chair, structurally significant for committee composition)
+- `status` (e.g., "Open/Closed" — capturing that an open session was
+  preceded by a closed session that day; relevant when there's a
+  dual-status transcript)
+
+All five fields appear on `research/2023-04-19-sasc-aaro-hearing.yaml`
+(2026-04-28 build), all populated, all unrendered. Workaround applied
+during that build: surface the same facts in the rendered `description`
+prose. That works for one node but the pattern of duplicating
+artifact-data into description prose to compensate for renderer gaps
+isn't sustainable.
+
+**Relationship to BACKLOG #17.** #17 covers `note` fields on list-entry
+relationship rows being dropped by table renderers. This is a
+different shape: top-level dict keys on `event_intrinsic` not in the
+renderer's emit set, rather than per-row notes. Both are renderer
+coverage gaps where validated artifact content doesn't reach the
+reader, but the fix shape differs — #17 needs a notes-rendering
+convention; this needs the Event Summary table to extend to whichever
+keys are populated (mirroring the organization renderer's pattern of
+emitting whichever overview keys are populated, skipping empty ones).
+
+**Fix shape.** Either (a) extend the Event Summary table to emit any
+populated `event_intrinsic` key not already in the explicit set
+(generic key-passthrough for hearing-kind events), or (b) add
+specifically-named additional rows for the keys above. Option (a)
+generalizes better but risks rendering keys with poor display names;
+option (b) requires per-key formatting decisions but produces
+consistent column labels.
+
+**Priority.** Low. Not a correctness issue; reader-visibility
+improvement. The workaround (surface in description prose) is
+acceptable single-node hygiene.
+
+**Scope.** Renderer-only change; no schema work needed (the keys are
+already optional on `event_intrinsic` per schema.yaml). One session
+to add the renderer logic + regenerate any affected event nodes.
+
+Surfaced: 2023-04-19 SASC AARO hearing event build (2026-04-28) —
+audit pass identified that 5 populated `event_intrinsic` keys were
+not appearing in the rendered Event Summary table; facts duplicated
+into description prose as a node-level workaround.
