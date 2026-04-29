@@ -152,6 +152,15 @@
   sha256: 36219e8683c1f2071d13494416a585c9b39557c9bf93cf49b3e31085a6be35e7
   archive_status: 3
   wayback_date: '2026-03-09'
+- url: https://defensescoop.com/2023/11/30/pentagons-uap-investigation-chief-to-depart-dec-1/
+  format: html
+  status: archived
+  path: news/defensescoop-kirkpatrick-departure-20231130.html
+  archived_date: '2026-04-28'
+  sha256: e0391076df06441b30a6a60ba0d0c59035f9daa1d680dd25ab29277f0a2caac0
+  archive_status: 3
+  note: 'DefenseScoop coverage 2023-11-30: ''Pentagon''s UAP investigation chief to depart Dec. 1'' — Kirkpatrick''s confirmed AARO departure, day-before-departure coverage with successor (Tim Phillips) detail'
+  wayback_date: '2026-03-25'
 - url: https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=116282
   format: html
   status: archived
@@ -238,6 +247,14 @@
   sha256: 0871cc3e7b24109aa4978ab9a534770e6d613ec83469e5a6f29adab4794abd2b
   archive_status: 3
   wayback_date: '2025-08-13'
+- url: https://fortune.com/2023/07/29/congress-ufos-hearing-uaps-aliens-insulting-pentagon-official-linkedin-page/
+  format: html
+  status: archived
+  path: news/fortune-kirkpatrick-linkedin-insulting-20230729.html
+  archived_date: '2026-04-28'
+  sha256: 4030badc2fdca04c723d333958fa7c477a7ae5d82a21be821898d4d8284d676b
+  archive_status: 1
+  note: Fortune coverage of Kirkpatrick's 2023-07-28 LinkedIn post following the 2023-07-26 House Oversight UAP hearing; Kirkpatrick (in 'personal capacity') called the hearing 'insulting' to AARO officers and asserted Grusch 'refused to speak with AARO'. Secondary-source coverage that quotes the LinkedIn post verbatim — used in lieu of the LinkedIn post itself, which is not Wayback-archived
 - url: https://fox40.com/news/mystery-wire/robert-bigelow-opens-up-about-aawsap-the-tic-tac-incident-weird-events-on-skinwalker-ranch-the-connection-to-consciousness/
   format: html
   status: archived
@@ -314,6 +331,14 @@
   sha256: 8c23519c62a5717427c2d09d5ade165284421f2e5facad76a565a94774067868
   archive_status: 3
   wayback_date: '2026-03-27'
+- url: https://nssaspace.org/wp-content/uploads/2025/06/midnight.hammer.pdf
+  format: pdf
+  status: archived
+  path: news/nssa-midnight-hammer-williams-kirkpatrick-20250626.pdf
+  archived_date: '2026-04-28'
+  sha256: 3125570d6325d86b6fbbf27832b7f37e3693e1b60978c239bb50b0b76ce2d42a
+  archive_status: 1
+  note: 'NSSA (National Security Space Association) Moorman Center for Space Studies Occasional Paper, 2025-06-26: ''National Security Space Contributions to Operation Midnight Hammer'' co-authored by Chris Williams (Moorman Center Chair) and Sean Kirkpatrick. Documents Kirkpatrick''s current academic-style writing activity in his post-government role'
 - url: https://nymag.com/intelligencer/2019/12/tic-tac-ufo-video-q-and-a-with-navy-pilot-chad-underwood.html
   format: html
   status: archived
@@ -346,6 +371,15 @@
   sha256: 7bf2c20d6c47ab3bf00c718edd0baaff3c925a72cead21aa5a62b9448520c64a
   archive_status: 3
   wayback_date: '2026-04-09'
+- url: https://patents.google.com/patent/US6624915B1/en
+  format: html
+  status: archived
+  path: government/uspto-patent-us6624915b1-htpip.html
+  archived_date: '2026-04-28'
+  sha256: d4ccd5c3f2e04a1b6bfb404990440e9af7d586830adf934220b2d815aca706fa
+  archive_status: 3
+  note: USPTO Patent US 6,624,915 B1 — 'Holographic recording and micro/nanofabrication via ultrafast holographic two-photon induced photopolymerization (H-TPIP)'. Inventor Sean M. Kirkpatrick (and others). Original assignee SAIC; current assignee Leidos. Granted September 23, 2003. Filed during Kirkpatrick's 1997-2003 Air Force Research Laboratory tenure
+  wayback_date: '2024-05-14'
 - url: https://safeaerospace.org/
   format: html
   status: archived
@@ -381,6 +415,14 @@
   archive_status: 3
   note: Fetched via Wayback Machine (2023 snapshot); thehill.com 403-blocks direct curl.
   wayback_date: '2025-08-19'
+- url: https://thehill.com/policy/defense/4300252-pentagon-ufo-chief-to-step-down-next-month/
+  format: html
+  status: archived
+  path: news/thehill-kirkpatrick-departure-20231108.html
+  archived_date: '2026-04-28'
+  sha256: a1ad91439acc07ec86179faa0af192e7569cdce196a30d23cfc57762844c2336
+  archive_status: 1
+  note: 'The Hill coverage 2023-11-08: ''Pentagon UFO chief to step down next month'' — covers Kirkpatrick''s announced December 2023 departure from AARO; substitute primary-source coverage for the Politico interview (politico.com 403-blocks; Politico Pro paywalled). Fetched via Wayback Machine 2023id_ replay per meta/sources-access.md The Hill workaround'
 - url: https://thesolfoundation.org/
   format: html
   status: archived
@@ -502,6 +544,16 @@
   archive_status: 3
   wayback_date: '2023-06-02'
   note: 'Wayback Machine snapshot (2023-06-02) of the Americans for Safe Aerospace home page — earliest known capture showing Alex Dietrich on the personnel grid. Original section heading was ''Aircrew Leadership Council'' (later renamed ''Advisors''). Original cohort: Dietrich, Fravor, Sam Fletcher, Lewis Harding, Mark Hulsey, Chris Van Voorhis. Coincides with ASA''s official launch (May→June 2023).'
+- url: https://web.archive.org/web/20231102022239/https://www.ornl.gov/staff-profile/sean-m-kirkpatrick
+  format: html
+  status: archived
+  path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20231102.html
+  archived_date: '2026-04-28'
+  sha256: d3f72b06ff7dba95768403207f570118803902497146cb161e0439ea14fedd26
+  archive_status: 2
+  wayback_date: '2023-11-02'
+  wayback_skip: true
+  note: Wayback Machine snapshot 2023-11-02 of ORNL staff profile for Sean M. Kirkpatrick — earliest known archived capture; predates the Nov 20, 2023 DoD Hicks departure announcement by ~18 days. Original URL https://www.ornl.gov/staff-profile/sean-m-kirkpatrick. Coulthart-cited evidence for the timeline-discrepancy narrative around Kirkpatrick's transition from AARO to ORNL.
 - url: https://web.archive.org/web/20240711150238/https://www.aaro.mil/Portals/136/PDFs/Information%20Papers/ORNL-Synopsis_Analysis_of_a_Metallic_Specimen.pdf
   format: pdf
   status: archived
@@ -529,6 +581,24 @@
   archive_status: 3
   wayback_date: '2024-09-25'
   note: 'Wayback Machine snapshot (2024-09-25) of AARO Historical Record Report Volume I, DOPSR-cleared 508-compliant version, released 2024-03-08. Official DoD/AARO report on the historical U.S. Government record of UAP. Directly confirms: (a) AARO acquired a sample ''from a private UAP investigating organization and the U.S. Army''; (b) the U.S. Army had conducted in-house analysis on the sample prior to AARO custody; (c) material composition is magnesium, zinc, and bismuth with trace lead; (d) AARO''s verdict: ''manufactured, terrestrial alloy'' with ''no exceptional qualities'', possibly of USAF origin; (e) testing done by AARO and ''a leading science laboratory'' (lab not named). Establishes the chain: TTSA (ADAM, 2018-2019) → U.S. Army CCDC CRADA (2019-10-17) → AARO custody + testing (post-July 2022).'
+- url: https://web.archive.org/web/20241208054256/https://www.ornl.gov/staff-profile/sean-m-kirkpatrick
+  format: html
+  status: archived
+  path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20241208-last-live.html
+  archived_date: '2026-04-28'
+  sha256: 8cc5ee6019bfe92a9d29ff036e3edc75bfd12f7006c1eb4e4dd89673656010bf
+  archive_status: 3
+  wayback_date: '2024-12-08'
+  note: Wayback Machine snapshot 2024-12-08 of ORNL staff profile for Sean M. Kirkpatrick — last known live capture before the page was taken down. Original URL https://www.ornl.gov/staff-profile/sean-m-kirkpatrick. Documents the page's existence ~12 months into Kirkpatrick's ORNL CTO tenure; the page was 404 by 2024-12-22.
+- url: https://web.archive.org/web/20241222193218/https://www.ornl.gov/staff-profile/sean-m-kirkpatrick
+  format: html
+  status: archived
+  path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20241222-first-404.html
+  archived_date: '2026-04-28'
+  sha256: 2076c64b494d66bdb60fed40344d16341fe0e4de6ee54d44d222596b58edef5b
+  archive_status: 3
+  wayback_date: '2024-12-22'
+  note: Wayback Machine snapshot 2024-12-22 of attempted access to ORNL staff profile for Sean M. Kirkpatrick — first known capture redirecting to /page-not-found. Documents the date the staff profile was taken down (between 2024-12-08 last-live and 2024-12-22 first-404; 14-day window).
 - url: https://web.archive.org/web/20250228103426/https://tothestars.media/blogs/press-and-news/tts-analysis-on-ornl
   format: html
   status: archived
@@ -547,6 +617,15 @@
   archive_status: 3
   wayback_date: '2025-04-24'
   note: Wayback Machine snapshot (2025-04-24) of The Black Vault article dated April 22, 2025 announcing the FOIA release of the UAPTF Charter (FOIA case DON-NAVY-2021-003140). Primary-source-adjacent reporting that names Scott Bray as Director, Naval Intelligence Activity and signatory of the September 2020 Charter plus two additional September 23, 2020 NIA memoranda directed to senior intelligence officials in the U.S. Army and U.S. Air Force. The memos document the cross-service structure envisioned for UAPTF and note 'both intelligence and operational directorates as preferred participants.' Companion reporting to the FOIA release package itself (charter PDF already archived at blackvault-uaptf-charter-foia-20250422.pdf).
+- url: https://web.archive.org/web/20250804213236/https://www.ornl.gov/staff-profile/sean-m-kirkpatrick
+  format: html
+  status: archived
+  path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20250804.html
+  archived_date: '2026-04-28'
+  sha256: 6d44602d5060fe8a092bc69f873569d3c3198a2f8dfdde13dbcc0809820bffdf
+  archive_status: 3
+  wayback_date: '2025-08-04'
+  note: Wayback Machine snapshot 2025-08-04 of attempted access to ORNL staff profile for Sean M. Kirkpatrick — confirms the page remained 404 ~8 months after the takedown captured at 2024-12-22.
 - url: https://web.archive.org/web/20260220223643/https://www.safeaerospace.org/
   format: html
   status: archived
@@ -556,6 +635,15 @@
   archive_status: 3
   wayback_date: '2026-02-20'
   note: Wayback Machine snapshot (2026-02-20) of the Americans for Safe Aerospace home page. Earlier capture of the personnel/advisor card listing that includes Alex Dietrich; companion to the live snapshot at news/safeaerospace-home-20260420.html. Useful for dating the earliest archived appearance of Dietrich's affiliation.
+- url: https://westexec.com/sean-kirkpatrick/
+  format: html
+  status: archived
+  path: news/westexec-kirkpatrick-bio.html
+  archived_date: '2026-04-28'
+  sha256: d896a3e25f30e9b76285247b4ed31ba3caf30b5347a0f019670eab7caaf26eb3
+  archive_status: 3
+  note: Sean Kirkpatrick's bio page on WestExec Advisors website — post-government affiliation as Senior Advisor following his December 2023 retirement from federal service
+  wayback_date: '2024-08-01'
 - url: https://www.aaro.mil/Portals/136/PDFs/Phillips_Timothy_Bio-DEC%202023-(Acting_Director_Ver)_508.pdf
   format: pdf
   status: archived
@@ -564,6 +652,15 @@
   sha256: 82f3a6c4013bb5cba23f9e614c69aa44a635594dadff1aeb08b2961c491d0392
   archive_status: 3
   wayback_date: '2025-11-18'
+- url: https://www.armed-services.senate.gov/download/11-19-24_-sub---transcript
+  format: pdf
+  status: archived
+  path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
+  archived_date: '2026-04-28'
+  sha256: 28cdd9290fc3680c9903bc25cfe701635d8fffde1e54110434f056ed69b69365
+  archive_status: 3
+  note: Stenographic transcript (Alderson Court Reporting) of the 2024-11-19 SASC Subcommittee on Emerging Threats AARO hearing under Director Kosloski; post-Kirkpatrick context
+  wayback_date: '2025-04-20'
 - url: https://www.armed-services.senate.gov/download/kirkpatrick-statement
   format: pdf
   status: archived
@@ -592,6 +689,15 @@
   archive_status: 1
   wayback_skip: true
   note: 'Contributor-produced clean-text transcription of the 2023-04-19 SASC AARO hearing transcript PDF (paired entry; same path stem). Stenographic transcript by Alderson Court Reporting in standard Senate format with 1-25 line numbers prefixed on every content line and footer/page-number boilerplate every 25 lines; pdftotext extracts those numbers inline, which breaks verbatim substring matching for any quote spanning a line boundary. This .txt restores plain prose by stripping the line-number prefixes and removing the Scheduling@TP.One / www.TP.One / page-number footer triplets. Validator (validate.py extract_source_text) prefers this same-stem .txt sibling over pdftotext output for the PDF entry flagged extraction_type=extraction-lossy. Page-marker sections (=== p. N ===) intentionally OMITTED — those inline tokens survive normalize_for_compare and would break verbatim matching for any quote spanning a page boundary; quote Location refs cite pdftotext line numbers in the original extract until BACKLOG #24 location-reference sweep.'
+- url: https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-activities-of-the-all-domain-anomaly-resolution-office
+  format: html
+  status: archived
+  path: government/armed-services-senate-gov-sasc-aaro-event-20241119.html
+  archived_date: '2026-04-28'
+  sha256: d8ae0717587ed7c86bdee34cf6743ea49fa1828fe52b0c436ccc801a03a92958
+  archive_status: 3
+  note: SASC Subcommittee on Emerging Threats hearing record page for the 2024-11-19 AARO hearing under Director Jon T. Kosloski; post-Kirkpatrick AARO context
+  wayback_date: '2026-03-08'
 - url: https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-mission-activities-oversight-and-budget-of-the-all-domain-anomaly-resolution-office
   format: html
   status: archived
@@ -601,6 +707,14 @@
   archive_status: 3
   note: SASC Subcommittee on Emerging Threats hearing record page (witness list, transcript link, statement links) for the 2023-04-19 AARO hearing
   wayback_date: '2026-03-10'
+- url: https://www.audible.com/blog/in-the-room-with-peter-bergen-transcript-episode-38
+  format: html
+  status: archived
+  path: news/audible-bergen-kirkpatrick-episode38-2024.html
+  archived_date: '2026-04-28'
+  sha256: e71a602841f60439b1f543f017e0c928d8ee95041602b604ab20652dbbf8d8dc
+  archive_status: 1
+  note: 'Audible podcast transcript: ''In the Room with Peter Bergen'' Episode 38 — Kirkpatrick interview (2024). Sources for Kirkpatrick''s ''self-licking ice cream cone'' framing and ''core group of people'' observation about Grusch'
 - url: https://www.cbs.com/shows/video/kruYVj3_d8m6dkg95BRKzen50j8H29Mv/
   format: html
   status: archived
@@ -780,6 +894,14 @@
   sha256: 3b699a825c53aab7816b50ffe0c45d4f424ca43da5eaa421736e529f2ac00ac9
   archive_status: 3
   wayback_date: '2026-04-12'
+- url: https://www.energy.gov/oha/articles/fia-24-0036
+  format: pdf
+  status: archived
+  path: government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf
+  archived_date: '2026-04-28'
+  sha256: b1c1e5c720a6f157318a634454fe3592fcd21fcc14ce856296cd825764ea8ff4
+  archive_status: 1
+  note: DOE Office of Hearings and Appeals decision FIA-24-0036 (Issued July 17, 2024) on Dustin M. Slaughter's appeal challenging Oak Ridge Office's 'no records responsive' determination on FOIA request ORO-2024-02087-F regarding Sean Kirkpatrick's transition from AARO Director to ORNL CTO; the document Coulthart's Nov 2023 reporting flagged was the basis for the underlying FOIA. OHA denied the appeal — see decision text.
 - url: https://www.gillibrand.senate.gov/news/press/release/gillibrand-statement-on-uap-disclosure/
   format: html
   status: archived
@@ -866,6 +988,68 @@
   sha256: a5b2d533b9db83bec62c35e91d2278a730b053b1c43799f5c7add06bb4c268ea
   archive_status: 3
   wayback_date: '2026-04-16'
+- url: https://www.ornl.gov/
+  format: html
+  status: archived
+  path: government/ornl-gov-home.html
+  archived_date: '2026-04-28'
+  sha256: bc5aa99d98889a30f04d9c1e8d2fc6728237d3ed1b330dce8e35f5c6a80a6da7
+  archive_status: 3
+  note: ORNL home page — institutional context
+  wayback_date: '2026-04-27'
+- url: https://www.ornl.gov/news/stephen-k-streiffer-named-director-oak-ridge-national-laboratory
+  format: html
+  status: archived
+  path: government/ornl-gov-streiffer-director-announcement.html
+  archived_date: '2026-04-28'
+  sha256: 63b6c32b092996416fa7a13e58c27110f36f1430ff8ffccf868e3b9a3e9952cb
+  archive_status: 3
+  note: ORNL announcement of Stephen K. Streiffer as Director — context for ORNL leadership during Kirkpatrick's CTO tenure
+  wayback_date: '2026-04-23'
+- url: https://www.ornl.gov/science-area/national-security
+  format: html
+  status: archived
+  path: government/ornl-gov-national-security-nssd.html
+  archived_date: '2026-04-28'
+  sha256: 54ff1faf25f18cf01218764183748ee3a379708a0368e81d9db1e24d007cdbcb
+  archive_status: 3
+  note: ORNL National Security Sciences Directorate page — Kirkpatrick's hosting directorate at ORNL as Chief Technology Officer for Defense and Intelligence Programs
+  wayback_date: '2026-04-27'
+- url: https://www.rev.com/transcripts/nasa-holds-first-public-meeting-on-ufos-transcript
+  format: html
+  status: archived
+  path: news/rev-nasa-uap-public-meeting-transcript-20230531.html
+  archived_date: '2026-04-28'
+  sha256: 82a02c6d21db53022047f573a85ec799c13a832bcd8df3a3c63621c2183417f9
+  archive_status: 1
+  note: Rev.com transcript of NASA UAP Independent Study Team's first public meeting, 2023-05-31. Includes Sean Kirkpatrick's opening remarks (he was invited speaker representing AARO). Used in lieu of the science.nasa.gov PDF Kirkpatrick remarks file (404 / Wayback returns no captures of the original PDF URL)
+- url: https://www.scientificamerican.com/article/heres-what-i-learned-as-the-u-s-governments-ufo-hunter/
+  format: html
+  status: archived
+  path: news/scientificamerican-kirkpatrick-heres-what-i-learned-20240119.html
+  archived_date: '2026-04-28'
+  sha256: 37923b5e303f61777a85d6b5a00a5737aa3cfef154c2c0c7c13074e9f391f8e0
+  archive_status: 3
+  note: Sean Kirkpatrick op-ed in Scientific American, published 2024-01-19 — first post-government op-ed (~7 weeks after Dec 1, 2023 AARO departure); bylined personal commentary on his AARO directorship
+  wayback_date: '2026-04-17'
+- url: https://www.scientificamerican.com/article/the-u-s-drone-panic-mirrors-ufo-overreactions/
+  format: html
+  status: archived
+  path: news/scientificamerican-kirkpatrick-drone-panic-mirrors-ufo-overreactions-20241227.html
+  archived_date: '2026-04-28'
+  sha256: 53b7d4f9f7124b945dff20d5fcf3159c21f68d6dbf93450145d2fbd1a5c6e18b
+  archive_status: 3
+  note: Sean Kirkpatrick op-ed in Scientific American, published 2024-12-27 — third post-government op-ed; commentary on the late-2024 East Coast drone panic in the context of UAP overreaction patterns
+  wayback_date: '2026-02-13'
+- url: https://www.scientificamerican.com/article/we-need-to-investigate-ufos-but-without-the-distraction-of-conspiracy/
+  format: html
+  status: archived
+  path: news/scientificamerican-kirkpatrick-we-need-to-investigate-ufos-20240306.html
+  archived_date: '2026-04-28'
+  sha256: e1dc4d5234a81af08e6005ad0825abeeed7c13687e58b37c80ad04c2d8adde3f
+  archive_status: 3
+  note: Sean Kirkpatrick op-ed in Scientific American, published 2024-03-06 — two days before AARO Historical Record Report Vol I public release (2024-03-08). Coincident timing flagged in research as potentially-coordinated narrative rollout
+  wayback_date: '2026-04-16'
 - url: https://www.sec.gov/Archives/edgar/data/1710274/000114420417036300/filename2.htm
   format: html
   status: archived
@@ -899,8 +1083,9 @@
   path: government/sec-ttsa-1k-partii-20250417.html
   archived_date: '2026-04-22'
   sha256: ad47c0b096491933d3bc0e60472b848dc1ceb9bb9214d1b6be127fc78eb6a111
-  archive_status: 1
+  archive_status: 3
   note: 'SEC Form 1-K Part II Annual Report for fiscal year ended December 31, 2024, filed 2025-04-17. Registrant: TO THE STARS INC. (Delaware; EIN 84-3854992; CIK 1710274). Primary-source confirmation of: (a) 2022 rebrand from ''To The Stars Academy of Arts and Science Inc.'' to ''To The Stars Inc.'' (both names now registered trademarks); (b) current HQ 315 S. Coast Highway 101 Suite U38 Encinitas CA 92024; (c) going-concern audit finding; (d) Gravity Holdings LLC holds 52.16% of Class A Common Stock; (e) current board (DeLonge, Semivan, Stan Spry, J. Christopher Mizer); (f) current Advisory Board (Gilpin, Kahn, Schurman, Rapp, Herndon, Puthoff); (g) 2024-09-27 Puthoff/Davis memo submitted to Board as ORNL counter-analysis; (h) 2024 CRADA end; (i) TTSA→USACCDC→ORNL material-testing chain. Fetched directly from SEC EDGAR using research-identifying User-Agent.'
+  wayback_date: '2026-04-28'
 - url: https://www.theblackvault.com/documentarchive/pentagon-releases-details-about-dr-travis-taylors-uap-task-force-involvement/
   format: html
   status: archived
