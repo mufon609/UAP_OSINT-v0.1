@@ -1014,3 +1014,61 @@ recreation of `check_prose_drift` logic showed 53 unmatched tokens
 in description, but `validate-research.py` reported 0 warnings;
 investigation traced to the missing `document` key in both maps;
 confirmed across all 4 existing document artifacts.
+
+---
+
+### 27. Reveal Systems Inc. corporate-registration deep dive — blocked on subscription registry access
+
+Per the 2026-04-29 Kirkpatrick audit § 7 ("Items still open"), specific
+state-of-incorporation entity number, filing date, current operating
+status, and principals-beyond-inventor list for the Kirkpatrick /
+Bogaard / Fairchild patent-assignee Reveal Systems Inc. were not
+retrievable through open-access channels. What we did establish during
+the 2026-04-29 archival pass:
+
+- **California is the state of incorporation** per the May 2020 USPTO
+  assignment record on US20200357080A1: the assignment-of-assignor's-
+  interest record on the original non-provisional names "REVEAL
+  SYSTEMS, INC., CALIFORNIA" as the assignee.
+- **California Secretary of State business search portal** is
+  Imperva-blocked at the API layer (HTTP 403 to all automated POSTs);
+  the bizfileonline.sos.ca.gov frontend returns an Incapsula JS
+  challenge page with `noindex,nofollow` headers. Wayback Machine
+  has no usable captures of registry-search result pages.
+- **OpenCorporates** is HAProxy CAPTCHA-blocked (hCaptcha challenge on
+  every request) and has no Wayback presence for Reveal-Systems-named
+  entities.
+
+**Name-collision warning** (load-bearing for any future Reveal Systems
+Inc. node build under audit § 6): a different "Reveal Systems Inc."
+exists with a Bloomberg company profile (ticker `0408205D:US`) — that
+entity produces real estate software (custom legal forms, contracts).
+It is **not** the patent-assignee Reveal Systems Inc. Future research
+must distinguish via patent-assignee chain (CA assignment record →
+USPTO file wrapper) rather than by name search alone.
+
+**Path to closure** when subscription / interactive access becomes
+available:
+1. CA SoS bizfileonline.sos.ca.gov direct interactive query (browser-
+   solved Imperva challenge) — yields entity number + filing date +
+   current status + agent for service of process.
+2. PACER / federal court records — would surface any litigation,
+   bankruptcy, dissolution.
+3. CrunchBase / PitchBook subscription — yields any institutional-
+   investor activity (audit § 3.1 noted "no documented public-facing
+   product launch, marketing presence, or commercial activity"; this
+   would confirm or correct that observation).
+
+**Priority.** Low. Not a correctness issue; depth-of-record question
+for the eventual `/organizations/reveal-systems-inc` node build (audit
+§ 6 recommendation). Patent-record evidence is sufficient for the
+existing Kirkpatrick-node Credibility Notes framing.
+
+**Scope.** ~30 minutes if registry access becomes available;
+otherwise indefinite-blocked.
+
+Surfaced: Kirkpatrick audit-iteration follow-up (2026-04-29) — open-
+access registry hunt established CA state of incorporation per patent
+record but blocked at SoS / OpenCorporates layer; name-collision
+discovery worth recording so future Reveal Systems node-build
+sessions don't conflate.
