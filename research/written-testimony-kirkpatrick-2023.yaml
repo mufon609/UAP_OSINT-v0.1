@@ -258,6 +258,28 @@ quotes:
     location: lines 129-131
   significance: Kirkpatrick's final closing — pride in AARO's progress, acknowledgment of remaining work, formal close to the written statement
   context: Statement for the Record final close
+- id: q19
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'We are grateful for sustained congressional engagement on this issue, which paved the way for DoD''s establishment of the All-domain Anomaly Resolution Office in July of last year. Though AARO is still a young office, the spotlight on UAP in recent months underscores the importance of its work and the need for UAP to be taken seriously as a matter of national security. All leadership that I''ve had the pleasure of working with, whether DoD, IC, DOE, Civil, Scientific or Industrial, view Congress as a critical partner in this endeavor.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
+    location: lines 17-23
+  significance: Kirkpatrick frames AARO''s national-security stakes — though still a young office, the spotlight on UAP underscores the importance of its work; characterizes Congress as a critical partner across DoD, IC, DOE, civil, scientific, and industrial leadership
+  context: Statement for the Record — early-document framing of congressional partnership and national-security stakes
+- id: q20
+  added_date: '2026-04-28'
+  statement_date: '2023-04-19'
+  text: 'After all, UAP encountered first by highly capable DoD and IC platforms, featuring the nation''s most advanced sensors, are those UAP most likely to be successfully resolved by my office assuming data can be collected. If AARO succeeds in first improving the ability of military personnel to quickly and confidently resolve UAP that they encounter, I believe that in time we will have greatly advanced the capability of the entire United States Government, including its civilian agencies, to resolve UAP.
+
+    '
+  source:
+    path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
+    location: lines 47-53
+  significance: Kirkpatrick projects AARO success forward to a whole-of-government capability — military personnel resolving UAP first, then the entire United States Government including civilian agencies; explicit civilian-agencies extension framing absent from oral version
+  context: Statement for the Record — forward projection of AARO success path
 entities_referenced:
 - id: e1
   added_date: '2026-04-28'
