@@ -22,9 +22,11 @@ created: 2026-04-29
 
 ## Background
 
-Dr. Sean M. Kirkpatrick was born in Columbus, Georgia to an Army family and grew up in the Atlanta area. He attended the University of Georgia ([`/organizations/uga`]) for both undergraduate and graduate work, receiving a B.S. in Physics in 1991 and a Ph.D. in Physics in 1995. His doctoral work was in nonlinear and nonequilibrium phonon dynamics of rare earth doped fluoride crystals. After receiving his Ph.D. he took a postdoctoral position at the University of Illinois Urbana-Champaign investigating laser-induced molecular vibrations of high explosives under an AFOSR program. In 1996 he was offered a National Research Council Fellowship at the U.S. Naval Research Laboratory in Washington D.C. investigating novel solid-state lasers for the Department of the Navy. In 1997 he was recruited by the Air Force Research Laboratory to build an Ultrafast Laser Physics Lab to investigate nonlinear optics, novel ultrafast spectroscopic methods, and nonlinear micro/nano-fabrication techniques for the Air Force.
+Dr. Sean M. Kirkpatrick was born in Columbus, Georgia to an Army family and grew up in the Atlanta area. He attended the University of Georgia ([`/organizations/uga`]) for both undergraduate and graduate work, receiving a B.S. in Physics in 1991 and a Ph.D. in Physics in 1995 under the supervision of William Dennis (Thesis: Experimental and Theoretical Investigation of Nonequilibrium Acoustic Phonon Dynamics in Praseodymium-Doped Fluorides). His doctoral work was in nonlinear and nonequilibrium phonon dynamics of rare earth doped fluoride crystals. After receiving his Ph.D. he took a postdoctoral position at the University of Illinois Urbana-Champaign investigating laser-induced molecular vibrations of high explosives under an AFOSR program. In 1996 he was offered a National Research Council Fellowship at the U.S. Naval Research Laboratory in Washington D.C. investigating novel solid-state lasers for the Department of the Navy. In 1997 he was recruited by the Air Force Research Laboratory to build an Ultrafast Laser Physics Lab to investigate nonlinear optics, novel ultrafast spectroscopic methods, and nonlinear micro/nano-fabrication techniques for the Air Force.
 
 In 2003 he was offered a program manager position in the National Reconnaissance Office ([`/organizations/nro`]), and converted to CIA in 2005. In 2007 he was assigned as Chief Technology Officer in a joint CIA-DIA program office, where he later became division chief as a DIA officer. In 2010 he was asked to serve as the space control portfolio manager for the Deputy Assistant Secretary of Defense, Space and Intelligence, Office of the Secretary of Defense. In 2012 he returned to DIA and served as the Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI), serving as the Department of Defense's counterpart to the National Intelligence Manager for Science and Technology until 2016. He was appointed to the Defense Intelligence Senior Executive Service in 2012. From 2016 to 2022 he served in a variety of senior intelligence roles including Deputy Director of Intelligence, U.S. Strategic Command ([`/organizations/usstratcom`]); Director, National Security Strategy, National Security Council ([`/organizations/nsc`]); Deputy Director of Intelligence and the DNI Representative for U.S. Space Command ([`/organizations/usspacecom`]); and Chief Scientist at DIA's Missile and Space Intelligence Center.
+
+Awards include the Joint Meritorious Civilian Service Award, the National Intelligence Exceptional Achievement Medal, four National Intelligence Collaboration medallions, the NRO Innovation and Achievement Award, the Cleary Award for Scientific Excellence, and the DIA Director's Award for Excellence.
 
 ---
 
@@ -377,8 +379,10 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | 2022-07-20 | AARO formally established; Kirkpatrick announced as inaugural Director | role | news/blackvault-aaro-establishment-release-20220720.html |  |
 | 2022-12-16 | First joint AARO media roundtable with USD(I&S) Moultrie; established the 'holdings' rhetorical boundary (documents/memos rather than physical artifacts) and DOE as a partnership channel from establishment forward | testimony | government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html |  |
 | 2023-03-07 | Co-authored manuscript with Avi Loeb 'Physical Constraints on Unidentified Aerial Phenomena' dated March 7 2023, considering hypothetical extraterrestrial-probe-from-parent-craft scenarios | publication | news/loeb-kirkpatrick-physical-constraints-uap-20230307.pdf |  |
+| 2023-03-08 | Major General David W. Abba ([`/people/david-abba`]), Director of DoD Special Access Program Central Office (DoD SAPCO), signs memorandum confirming AARO's authority to receive and handle all UAP-related information regardless of classification, including from individuals bound by nondisclosure agreements (released April 2024 under FOIA 24-F-0266) | other | news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html |  |
 | 2023-04-19 | Sole open-session witness at SASC Subcommittee on Emerging Threats and Capabilities oversight hearing on AARO; testified that AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics | testimony | government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf | [`/events/2023-04-19-sasc-aaro-hearing`] |
 | 2023-05-31 | Opening remarks at the first public meeting of NASA's UAP Independent Study Team | testimony | news/rev-nasa-uap-public-meeting-transcript-20230531.html |  |
+| 2023-06-11 | Encrypted Signal text-message exchanges with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266; Mellon attempting to mediate between Grusch and AARO; Kirkpatrick told Mellon he was 'defending and adjudicating, and [Mellon was] undermining the very organization [Mellon] purported to help establish for this purpose' | testimony | news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html |  |
 | 2023-07-26 | David Grusch testified before House Oversight Subcommittee on UAP; within days, Deputy Secretary Hicks took direct AARO oversight, repositioning Kirkpatrick to report directly to her | other | news/defensescoop-hicks-aaro-oversight-20230830.html |  |
 | 2023-07-28 | Kirkpatrick LinkedIn post (in personal capacity) called the Grusch hearing 'insulting' to AARO officers; covered same day in Politico ('Insulting' Pentagon's UFO boss torches claims of alien coverup) and on July 29 in Fortune | testimony | news/fortune-kirkpatrick-linkedin-insulting-20230729.html |  |
 | 2023-08-30 | AARO website launches; DefenseScoop confirms reporting-chain change (Kirkpatrick repositioned from USD(I&S) to DepSecDef Hicks); reports between Nov 2022 and Apr 2023 the website-launch package moved back-and-forth between OUSD(I&S) front office and AARO every other week | other | news/defensescoop-hicks-aaro-oversight-20230830.html |  |
@@ -429,6 +433,9 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | [`/people/peter-bergen`] | Bergen interviewed Kirkpatrick for In the Room with Peter Bergen Episode 38 (2024) — the conversation in which Kirkpatrick used the self-licking ice cream cone framing for UAP-disclosure advocacy |
 | [`/people/christopher-mellon`] | Former Deputy Assistant Secretary of Defense for Intelligence; Mellon and Kirkpatrick exchanged Signal messages in June 2023 (released under FOIA 24-F-0266) in which Kirkpatrick described his role as 'defending and adjudicating' AARO |
 | [`/people/david-grusch`] | UAP whistleblower whose July 26 2023 House Oversight testimony immediately preceded Hicks's late-July 2023 transition of AARO oversight to her direct supervision; Kirkpatrick's July 28 2023 LinkedIn post called the Grusch hearing 'insulting' to AARO officers |
+| [`/people/sue-gough`] | Department of Defense spokesperson; confirmed Kirkpatrick's December 1 2023 last day at AARO to DefenseScoop ('Friday, Dec. 1, is Dr. Kirkpatrick's last day in the office') |
+| [`/people/dustin-slaughter`] | Appellant in DOE Office of Hearings and Appeals decision FIA-24-0036 (July 17 2024); the decision documents Kirkpatrick's internal ORNL title (Chief Operating Officer for the National Security Sciences Directorate) and classified DOE-IN network access via UT-Battelle FOIA Coordinator memorandum |
+| [`/people/david-abba`] | Maj. Gen.; Director of DoD Special Access Program Central Office (DoD SAPCO); signed the March 8 2023 memorandum confirming AARO's authority to receive and handle UAP-related information across SAPs and notwithstanding nondisclosure agreements (FOIA 24-F-0266) |
 
 ---
 
@@ -472,7 +479,9 @@ Reveal Systems patent family. Kirkpatrick is named as an inventor with Erik T. B
 - [`/people/avi-loeb`]
 - [`/people/chris-williams`]
 - [`/people/christopher-mellon`]
+- [`/people/david-abba`]
 - [`/people/david-grusch`]
+- [`/people/dustin-slaughter`]
 - [`/people/glen-vanherck`]
 - [`/people/jacky-rosen`]
 - [`/people/john-shaw`]
@@ -482,6 +491,7 @@ Reveal Systems patent family. Kirkpatrick is named as an inventor with Erik T. B
 - [`/people/kirsten-gillibrand`]
 - [`/people/peter-bergen`]
 - [`/people/ronald-moultrie`]
+- [`/people/sue-gough`]
 - [`/people/tim-phillips`]
 - [`/people/willie-shelton`]
 

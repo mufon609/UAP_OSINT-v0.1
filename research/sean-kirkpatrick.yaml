@@ -96,8 +96,6 @@ primary_sources:
   format: html
 - path: news/wikipedia-sean-m-kirkpatrick.html
   format: html
-- path: news/strieber-unknowncountry-kirkpatrick-stepping-down-20231124.html
-  format: html
 document_intrinsic:
   full_name: Sean Michael Kirkpatrick
   aliases:
@@ -109,10 +107,13 @@ context_extrinsic:
   birth_year: 1967 or 1968 (per Wikipedia citing Atlanta Journal 1986 cohort)
   birthplace: Columbus, Georgia
   current_residence: Franklin, North Carolina (per Nonlinear Solutions LLC NC registration October 16 2023)
-background: 'Dr. Sean M. Kirkpatrick was born in Columbus, Georgia to an Army family and grew up in the Atlanta area. He attended the University of Georgia ([`/organizations/uga`]) for both undergraduate and graduate work, receiving a B.S. in Physics in 1991 and a Ph.D. in Physics in 1995. His doctoral work was in nonlinear and nonequilibrium phonon dynamics of rare earth doped fluoride crystals. After receiving his Ph.D. he took a postdoctoral position at the University of Illinois Urbana-Champaign investigating laser-induced molecular vibrations of high explosives under an AFOSR program. In 1996 he was offered a National Research Council Fellowship at the U.S. Naval Research Laboratory in Washington D.C. investigating novel solid-state lasers for the Department of the Navy. In 1997 he was recruited by the Air Force Research Laboratory to build an Ultrafast Laser Physics Lab to investigate nonlinear optics, novel ultrafast spectroscopic methods, and nonlinear micro/nano-fabrication techniques for the Air Force.
+background: 'Dr. Sean M. Kirkpatrick was born in Columbus, Georgia to an Army family and grew up in the Atlanta area. He attended the University of Georgia ([`/organizations/uga`]) for both undergraduate and graduate work, receiving a B.S. in Physics in 1991 and a Ph.D. in Physics in 1995 under the supervision of William Dennis (Thesis: Experimental and Theoretical Investigation of Nonequilibrium Acoustic Phonon Dynamics in Praseodymium-Doped Fluorides). His doctoral work was in nonlinear and nonequilibrium phonon dynamics of rare earth doped fluoride crystals. After receiving his Ph.D. he took a postdoctoral position at the University of Illinois Urbana-Champaign investigating laser-induced molecular vibrations of high explosives under an AFOSR program. In 1996 he was offered a National Research Council Fellowship at the U.S. Naval Research Laboratory in Washington D.C. investigating novel solid-state lasers for the Department of the Navy. In 1997 he was recruited by the Air Force Research Laboratory to build an Ultrafast Laser Physics Lab to investigate nonlinear optics, novel ultrafast spectroscopic methods, and nonlinear micro/nano-fabrication techniques for the Air Force.
 
 
   In 2003 he was offered a program manager position in the National Reconnaissance Office ([`/organizations/nro`]), and converted to CIA in 2005. In 2007 he was assigned as Chief Technology Officer in a joint CIA-DIA program office, where he later became division chief as a DIA officer. In 2010 he was asked to serve as the space control portfolio manager for the Deputy Assistant Secretary of Defense, Space and Intelligence, Office of the Secretary of Defense. In 2012 he returned to DIA and served as the Defense Intelligence Officer for Scientific and Technical Intelligence (DIO/S&TI), serving as the Department of Defense''s counterpart to the National Intelligence Manager for Science and Technology until 2016. He was appointed to the Defense Intelligence Senior Executive Service in 2012. From 2016 to 2022 he served in a variety of senior intelligence roles including Deputy Director of Intelligence, U.S. Strategic Command ([`/organizations/usstratcom`]); Director, National Security Strategy, National Security Council ([`/organizations/nsc`]); Deputy Director of Intelligence and the DNI Representative for U.S. Space Command ([`/organizations/usspacecom`]); and Chief Scientist at DIA''s Missile and Space Intelligence Center.
+
+
+  Awards include the Joint Meritorious Civilian Service Award, the National Intelligence Exceptional Achievement Medal, four National Intelligence Collaboration medallions, the NRO Innovation and Achievement Award, the Cleary Award for Scientific Excellence, and the DIA Director''s Award for Excellence.
 
   '
 uap_relevance: 'Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie`]) of OUSD(I&S) ([`/organizations/ousd-is`]) to stand up and lead AARO ([`/organizations/aaro`]) — the successor to the Navy-led UAP Task Force ([`/organizations/uaptf`]) — in early 2022. He was the inaugural Director of AARO from July 20, 2022 through December 1, 2023. He was the witness at the April 19, 2023 Senate Armed Services Subcommittee on Emerging Threats and Capabilities oversight hearing on AARO ([`/events/2023-04-19-sasc-aaro-hearing`]), at which he said clearly for the record that AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics. The hearing record is preserved in his oral testimony transcript ([`/transcripts/2023-04-19-sasc-kirkpatrick`]) and his pre-hearing Statement for the Record ([`/documents/written-testimony-kirkpatrick-2023`]). One of his last acts before retiring was to sign AARO''s Historical Record Report Volume 1; AARO publicly released the report March 8, 2024 under his successor Tim Phillips ([`/people/tim-phillips`]). After his retirement Kirkpatrick has been a continuing public voice on UAP across three Scientific American articles, a Peter Bergen ([`/people/peter-bergen`]) podcast appearance, and several jointly written papers with NSSA Moorman Center colleagues and a CSIS commentary.
@@ -469,6 +470,27 @@ relationships:
   source:
     path: news/fortune-kirkpatrick-linkedin-insulting-20230729.html
     location: article body
+- id: r16
+  added_date: '2026-04-29'
+  person_path: /people/sue-gough
+  relationship: Department of Defense spokesperson; confirmed Kirkpatrick's December 1 2023 last day at AARO to DefenseScoop ('Friday, Dec. 1, is Dr. Kirkpatrick's last day in the office')
+  source:
+    path: news/defensescoop-kirkpatrick-departure-20231130.html
+    location: ¶ Sue Gough quote
+- id: r17
+  added_date: '2026-04-29'
+  person_path: /people/dustin-slaughter
+  relationship: Appellant in DOE Office of Hearings and Appeals decision FIA-24-0036 (July 17 2024); the decision documents Kirkpatrick's internal ORNL title (Chief Operating Officer for the National Security Sciences Directorate) and classified DOE-IN network access via UT-Battelle FOIA Coordinator memorandum
+  source:
+    path: government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf
+    location: case caption + ¶ on Appellant
+- id: r18
+  added_date: '2026-04-29'
+  person_path: /people/david-abba
+  relationship: Maj. Gen.; Director of DoD Special Access Program Central Office (DoD SAPCO); signed the March 8 2023 memorandum confirming AARO's authority to receive and handle UAP-related information across SAPs and notwithstanding nondisclosure agreements (FOIA 24-F-0266)
+  source:
+    path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
+    location: ¶ memorandum + figure caption
 timeline:
 - id: t1
   added_date: '2026-04-29'
@@ -871,6 +893,23 @@ timeline:
   source:
     path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20250804.html
     location: page
+- id: t51
+  added_date: '2026-04-29'
+  date: '2023-03-08'
+  event: Major General David W. Abba ([`/people/david-abba`]), Director of DoD Special Access Program Central Office (DoD SAPCO), signs memorandum confirming AARO's authority to receive and handle all UAP-related information regardless of classification, including from individuals bound by nondisclosure agreements (released April 2024 under FOIA 24-F-0266)
+  category: other
+  source:
+    path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
+    location: ¶ memorandum + figure caption
+- id: t52
+  added_date: '2026-04-29'
+  date: '2023-06-11'
+  end_date: '2023-06-13'
+  event: Encrypted Signal text-message exchanges with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266; Mellon attempting to mediate between Grusch and AARO; Kirkpatrick told Mellon he was 'defending and adjudicating, and [Mellon was] undermining the very organization [Mellon] purported to help establish for this purpose'
+  category: testimony
+  source:
+    path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
+    location: ¶ Signal exchanges
 quotes:
 - id: q1
   added_date: '2026-04-29'
@@ -1509,6 +1548,24 @@ entities_referenced:
   name: Unidentified Aerial Phenomena Task Force
   wrap_path: /organizations/uaptf
   context_summary: AARO predecessor office (Navy-led)
+- id: e37
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Sue Gough
+  wrap_path: /people/sue-gough
+  context_summary: Department of Defense spokesperson; confirmed Kirkpatrick's December 1 2023 last-day date to DefenseScoop
+- id: e38
+  added_date: '2026-04-29'
+  entity_type: person
+  name: Dustin M. Slaughter
+  wrap_path: /people/dustin-slaughter
+  context_summary: The UAP Register publisher; appellant in DOE FIA-24-0036 decision that surfaced Kirkpatrick's COO/NSSD title and classified DOE-IN access at ORNL
+- id: e39
+  added_date: '2026-04-29'
+  entity_type: person
+  name: David W. Abba
+  wrap_path: /people/david-abba
+  context_summary: Maj. Gen.; Director of DoD SAPCO; signed the March 8 2023 memorandum confirming AARO's authority to receive UAP-related information across SAPs and notwithstanding NDAs (FOIA 24-F-0266)
 naming_quirks:
 - id: nq1
   added_date: '2026-04-29'
