@@ -391,6 +391,14 @@
   archive_status: 3
   note: Polished/manual PDF transcript of 'When It Mattered Ep. 55 — Great-granddaughter of a SciFi pioneer spots a UFO' (Chitra Ragavan, 2021-06-16). 11 pages. Published as a finished transcript by goodstory.io; companion to the YouTube auto-captions above.
   wayback_date: '2023-03-19'
+- url: https://handwiki.org/wiki/Biography:Sean_M._Kirkpatrick
+  format: html
+  status: archived
+  path: news/handwiki-biography-sean-m-kirkpatrick.html
+  archived_date: '2026-04-29'
+  sha256: 9f8b4a94f4a61e56e0c6240dc9ec2cb22c4a9a815e24331e627d3f13bc69ff3d
+  archive_status: 1
+  note: HandWiki encyclopedia biography entry for Sean M. Kirkpatrick — cross-reference index to multiple DoD / AFCEA / Symposium365 source citations confirming the 2003-2005 NRO, 2005-2007 CIA S&T, 2007-2010 joint CIA-DIA, 2010-2012 OSD Space Control chronology. Treat as secondary-source aggregate; primary anchor for any specific claim is the DoD bio, AFCEA bio, or Potomac Officers Club bio. Audit appendix cross-reference resource.
 - url: https://leolabs.space/blog/ron-moultrie-leolabs-board-of-directors/
   format: html
   status: archived
@@ -1298,6 +1306,14 @@
   sha256: 2ce43928ae877d71954e3f4b3701a51dfff656cede01e692278d762a501ef36d
   archive_status: 1
   note: Liberation Times rebuttal piece by Marik von Rennenkampff (June 2025) framing the WSJ Pentagon-disinformation article itself as a coordinated rollout to pre-frame HRR Vol II and discredit UAP whistleblowers. Counter-narrative source for the 3.4 finding.
+- url: https://www.liberationtimes.com/home/lack-of-transparency-surrounding-us-governments-former-uap-office-director-raises-concerns
+  format: html
+  status: archived
+  path: news/liberationtimes-lack-of-transparency-kirkpatrick-skinwalker-20240622.html
+  archived_date: '2026-04-29'
+  sha256: 9611e3377b62c77d8a9af840c9b6d0f91e59536c070735c6ab49dff82bc6d2e1
+  archive_status: 1
+  note: Liberation Times article (June 22, 2024) reporting that the Department of Defense confirmed in writing to the publication that Kirkpatrick attended an April 19, 2018 Skinwalker Ranch briefing on the Hill — directly contradicting Kirkpatrick's recorded denial to journalist Steven Greenstreet of any pre-AARO UAP duties. Audit finding 3.4 primary documentary source for the DoD attendance confirmation. Also documents Brandon Fugal's contradicting account ('Kirkpatrick was at the head of the table'), the photo Fugal posted on X with EXIF metadata anchoring it to 1:31pm ET on April 19 2018, and AARO's Airstar America test-balloon procurement.
 - url: https://www.loudountimes.com/0local-or-not/1local/ufo-whistleblower-sues-sheriffs-office-over-records-release/article_b24005c4-490e-11ef-97d5-4bc65ae077be.html
   format: html
   status: archived
@@ -1404,6 +1420,14 @@
   archive_status: 3
   note: ORNL National Security Sciences Directorate page — Kirkpatrick's hosting directorate at ORNL as Chief Technology Officer for Defense and Intelligence Programs
   wayback_date: '2026-04-27'
+- url: https://www.physast.uga.edu/academic_programs/grad/graduate-awards
+  format: html
+  status: archived
+  path: news/uga-physast-graduate-awards-kirkpatrick-wayback-20220706.html
+  archived_date: '2026-04-29'
+  sha256: 0be16ecb98feecc2e0d5ff7acfa607b4e9586609069bcb32555629f23f57c41e
+  archive_status: 1
+  note: 'University of Georgia Department of Physics and Astronomy graduate-awards page (Wayback Machine 2022-07-06 snapshot; current URL returns 404). Carries the ''Sean M. Kirkpatrick Award for Outstanding Achievement in Graduate Research'' description: ''recognize a graduate student who has demonstrated outstanding research abilities... encourage the development of creative problem solving, multiple technical and analytic skills, and/or theoretical insight.'' Source for audit finding 2.4 (UGA award framing tightening — establishment context, eligibility criteria, ,000 stipend not stated on this snapshot).'
 - url: https://www.physast.uga.edu/people/sean-kirkpatrick
   format: html
   status: archived
@@ -1431,6 +1455,14 @@
   archive_status: 3
   wayback_date: '2025-07-03'
   note: 'Politico Magazine long-form interview by Lara Seligman, November 12 2023: ''Are Aliens Real? We Asked the Pentagon''s Outgoing UFO Chief.'' Long-form follow-up to the Nov 7 ''step down next month'' Politico piece. Fetched via Wayback Machine snapshot 2023-11-12 (politico.com 403-blocks current direct retrieval; Politico Pro is paywalled)'
+- url: https://www.potomacofficersclub.com/speakers/dr-sean-kirkpatrick/
+  format: html
+  status: archived
+  path: news/potomacofficersclub-kirkpatrick-bio.html
+  archived_date: '2026-04-29'
+  sha256: 87b8e2f1a99e9e1466f275c913716c0412c09e2789b0f7fb75dc7d7075059013
+  archive_status: 1
+  note: 'Potomac Officers Club speaker bio for Dr. Sean Kirkpatrick. Carries career-history detail not in the DoD bio: the 2007 joint CIA-DIA program office assignment was ''within the Advanced Systems Division''; the 2003 NRO role was ''program manager of the Advanced Technologies program'' (richer than the DoD bio''s ''program manager position''). Source for audit finding 1.1 (2018 employment gap context) — though audit notes treat the Advanced Systems Division placement as secondary-source pending DoD-bio cross-check (audit 7 Open).'
 - url: https://www.rev.com/transcripts/nasa-holds-first-public-meeting-on-ufos-transcript
   format: html
   status: archived

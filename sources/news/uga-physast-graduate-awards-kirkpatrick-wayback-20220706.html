@@ -1,0 +1,463 @@
+<!doctype html>
+<!-- grads -->
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 9]><!--> <html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+			 More info: h5bp.com/b/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>UGA Physics and Astronomy &bull; Graduate Awards</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+
+	<!-- Mobile App settings/-->
+	<!-- iPhone SPLASHSCREEN-->
+	<link href="Default.png" media="(device-width: 320px)" rel="apple-touch-startup-image">
+	<!-- iPhone (Retina) SPLASHSCREEN-->
+	<link href="Default@2x.png" media="(device-width: 320px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPhone5 SPLASHSCREEN-->
+	<link href="Default-568h@2x.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPad (portrait) SPLASHSCREEN-->
+	<link href="physast-ipad-startup-portrait.png" media="(device-width: 768px) and (orientation: portrait)" rel="apple-touch-startup-image">
+	<!-- iPad (landscape) SPLASHSCREEN-->
+	<link href="physast-ipad-startup-landscape.png" media="(device-width: 768px) and (orientation: landscape)" rel="apple-touch-startup-image">
+	<!-- iPad (Retina, portrait) SPLASHSCREEN-->
+	<link href="physast-ipad-startup-portrait@2x.png" media="(device-width: 1536px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+	<!-- iPad (Retina, landscape) SPLASHSCREEN-->
+	<link href="physast-ipad-startup-landscape@2x.png" media="(device-width: 1536px)  and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+	<!-- <meta name="apple-mobile-web-app-capable" content="yes" /> /-->
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+	<!-- Facebook Metadata /-->
+	<meta property="fb:page_id" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:description" content=""/>
+	<meta property="og:title" content=""/>
+
+	<!-- Google+ Metadata /-->
+	<meta itemprop="name" content="">
+	<meta itemprop="description" content="">
+	<meta itemprop="image" content="">
+
+	<link href="/favicon.ico" type="image/x-icon" rel="icon"/><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon"/><meta name="description" content="The Department of Physics and Astronomy at the University of Georgia"/><meta name="keywords"/>
+	<link rel="stylesheet" type="text/css" href="/css/gumby.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/prism.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/flexslider.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/slick/slick-theme.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/plyr.css"/>
+	<!-- load modernizer and prism first -->
+	<script src="/js/libs/modernizr-2.6.2.min.js"></script>
+	<script src="/js/libs/prism.js"></script>
+
+	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
+	<!-- 2.0 for modern browsers, 1.10 for .oldie -->
+	<script>
+	var oldieCheck = Boolean(document.getElementsByTagName('html')[0].className.match(/\soldie\s/g));
+	if(!oldieCheck) {
+	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"><\/script>');
+	} else {
+	document.write('<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"><\/script>');
+	}
+	</script>
+	<script>
+	if(!window.jQuery) {
+	if(!oldieCheck) {
+	  document.write('<script src="/js/libs/jquery-2.0.2.min.js"><\/script>');
+	} else {
+	  document.write('<script src="/js/libs/jquery-1.10.1.min.js"><\/script>');
+	}
+	}
+	</script>
+	<script type="text/javascript">
+//<![CDATA[
+    var siteConfig = {
+        base: '',
+        controller: 'pages',
+        action: 'view',
+        prefix: '',
+        site_id: '1',
+        sitePath: '',
+        assetsURL: 'uploads/main',
+        cssURL: '/css/tinymce.css'
+    }
+//]]>
+</script>
+</head>
+
+<body>
+<div class="bodyflex">
+    <div>
+        <div class="container nopad">
+	<div class="drawer" id="login-status">
+		<a href="/admin">Admin Login</a>&nbsp;&bull;&nbsp;<a href="/instructor/courses/index">Instructor Login</a>&nbsp;&bull;&nbsp;<a href="/student">Student Login</a>	</div>
+</div>
+<div id="login-tab">
+	<a href="#login-info" class="toggle" gumby-trigger="#login-status"><i class="icon-users"></i></a>
+</div>
+        <div class="mastcontain">
+            <div class="row">
+                			<div class="twelve columns">
+				<div id="mast-header">
+					<h1 class="image"><a href="/"><img src="/img/Physast-short-XH-CW.png" gumby-retina="gumby-retina" alt="Physics and Astronomy" id="mast-logo"/></a></h1>
+				</div>
+				<div id="mast-right">
+					<div id="supportButton">
+						<a href="https://gail.uga.edu/give?id=26d02487-59ea-455e-aadf-5aa3ad84a195"><img src="/img/helpFundDepartment.png" gumby-retina="gumby-retina" alt="Your Support"/></a>					</div>
+				</div>
+			</div>            </div>
+        </div>
+        <!-- container to normalize fixed navigation behavior when scrolling -->
+        <div class="navcontain">
+            <form action="/search" id="SearchSearchForm" method="get" accept-charset="utf-8"><div class="pretty navbar" gumby-fixed="top" id="top-nav">
+	<div class="row">
+		<a class="toggle" gumby-trigger="#top-nav > .row > ul" href="#"><i class="icon-menu"></i></a>
+		<ul class="twelve columns">
+										<li>
+				<a href="/">News and Events</a>				<div class="dropdown">
+					<ul>
+										<li><a href="/blogs/news">News</a></li>
+										<li><a href="/events">Events</a></li>
+										<li><a href="/blogs/employment-opportunities">Employment Opportunities</a></li>
+										<li><a href="https://www.physast.uga.edu/observatory/schedule">Observatory Schedule</a></li>
+										<li><a href="/reservations">Event Reservations</a></li>
+										<li><a href="/department-newsletter">Newsletter</a></li>
+										</ul>
+				</div>
+								</li>
+							<li>
+				<a href="/people">People</a>				<div class="dropdown">
+					<ul>
+										<li><a href="/people">Faculty</a></li>
+										<li><a href="/people#!/adjunct">Adjunct/Courtesy Faculty</a></li>
+										<li><a href="/people#emeriti">Emeriti</a></li>
+										<li><a href="/pages/htt/people#research_professionals">Research Professionals/Postdocs</a></li>
+										<li><a href="/people#staff">Staff</a></li>
+										<li><a href="/people#visitors">Visitors</a></li>
+										<li><a href="/people#grads">Graduate Students</a></li>
+										</ul>
+				</div>
+								</li>
+							<li>
+				<a href="/research_areas">Research</a>				<div class="dropdown">
+					<ul>
+										<li><a href="/research_areas/observational-astronomy">Astronomy (Observational)</a></li>
+										<li><a href="/research_areas/theoretical-astrophysics">Astrophysics (Theoretical)</a></li>
+										<li><a href="/research_areas/atomic-molecular-physics">Atomic & Molecular Physics</a></li>
+										<li><a href="/research_areas/biophysics">Biophysics &amp; Biomedical Physics</a></li>
+										<li><a href="/research_areas/condensed-matter-physics">Condensed Matter Physics</a></li>
+										<li><a href="/research_areas/optics">Modern Optics</a></li>
+										<li><a href="/research_areas/nanotechnology">Nanoscience & Nanotechnology</a></li>
+										<li><a href="/research_areas/physics-education">Physics Education</a></li>
+										<li><a href="/research_areas/simulational-physics">Simulational Physics</a></li>
+										<li><a href="/research_areas/theoretical-physics">Theoretical Physics</a></li>
+										</ul>
+				</div>
+								</li>
+							<li>
+				<a href="/courses">Course Info</a>				<div class="dropdown">
+					<ul>
+										<li><a href="/courses">Current Courses</a></li>
+										<li><a href="/academic_calendar">Academic Calendar</a></li>
+										<li><a href="/daily-class-times">Daily Class Times</a></li>
+										<li><a href="https://www.physast.uga.edu/evaluations">Course Evaluations</a></li>
+										</ul>
+				</div>
+								</li>
+							<li>
+				<a href="/academic_programs/undergrad">Undergraduate</a>				<div class="dropdown">
+					<ul>
+										<li><a href="/academic_programs/undergrad/faqs">Undergraduate FAQs</a></li>
+										<li><a href="/academic_programs/undergrad/degree-requirements-1">Degree Requirements</a></li>
+										<li><a href="/academic_programs/undergrad/sample-4-year-plans">Sample 4-year Plans</a></li>
+										<li><a href="/academic_programs/undergrad/undergraduate-transfers">Transfer Policy</a></li>
+										<li><a href="/academic_programs/undergrad/undergraduate-awards">Awards</a></li>
+										</ul>
+				</div>
+								</li>
+							<li>
+				<a href="/academic_programs/grad">Graduate</a>				<div class="dropdown">
+					<ul>
+										<li><a href="/academic_programs/grad/information-for-prospective-applicants">Prospective Applicants</a></li>
+										<li><a href="/academic_programs/grad/apply">How to Apply</a></li>
+										<li><a href="/academic_programs/grad/admissions-requirements">Admissions Requirements</a></li>
+										<li><a href="/academic_programs/grad/handbook">Graduate Handbook</a></li>
+										<li><a href="/academic_programs/grad/degree-requirements">Degree Requirements</a></li>
+										<li><a href="/academic_programs/grad/graduate-courses">Graduate Courses</a></li>
+										<li><a href="/academic_programs/grad/graduate-awards">Graduate Awards</a></li>
+										<li><a href="/academic_programs/grad/prelims">Written Prelim</a></li>
+										<li><a href="/academic_programs/grad/oral-exam">Oral Exam</a></li>
+										<li><a href="/academic_programs/grad/thesis-submission">Thesis Submission</a></li>
+										<li><a href="/academic_programs/grad/teaching-assistantship">Teaching Assistantship Policy</a></li>
+										<li><a href="/academic_programs/grad/teaching-assignments">Academic Year Course Schedule</a></li>
+										<li><a href="/academic_programs/grad/careers">Careers</a></li>
+										<li><a href="/alumni">Graduate Alumni</a></li>
+										</ul>
+				</div>
+								</li>
+							<li>
+				<a href="#" class="ttip" alt="Login Options" title="Login Options" data-tooltip="Login Options"><i class="icon-users"></i></a>				<div class="dropdown">
+					<ul>
+										<li><a href="/instructor/courses/index">Instructor Login</a></li>
+										<li><a href="/student">Student Login</a></li>
+										</ul>
+				</div>
+								</li>
+						<li class="field"><input class="search input" type="search" name="q" placeholder="Search" /></li>
+		</ul>
+	</div>
+</div>
+</form>        </div>
+                
+        <div class="row" id="content-row">
+            <div class="nine columns" id="main-content-col">
+                                                <h2 class="lead">Graduate Awards</h2>
+<fieldset><legend>Anderson-Pioletti Award</legend>
+<p>The Anderson-Pioletti award was created in 2001, endowed by Robert Anderson and Lois Anderson in memory of their fathers Arthur L Anderson and Joseph E Pioletti. It recognizes annually a first or second year graduate student showing exceptional promise.</p>
+<p>The recipient shall be given a stipend of $200 and a framed certificate, and have his or her name inscribed on a plaque displayed in the lobby of the Physics Building. One may receive this award only once.</p>
+<p>The committee will make its selection based on the student's course work, preliminary exam scores, and prior records. The student shall also have demonstrated good citizenship in the department.</p>
+</fieldset>
+<p><a id="bill-cummings"></a>&nbsp;</p>
+<fieldset><legend>Bill Cummings Award</legend>
+<p>The Bill Cummings award was created in 1995 through the generous contributions of Bill's family to honor his memory. It is given annually to the graduate student who best exemplifies excellence as a student and as a teacher of undergraduates.</p>
+<p>The award carries a stipend of $1,000 and the recipient's name shall be inscribed on a plaque displayed in the building. One may receive this award only once.</p>
+<p>The committee will make its selection based on:</p>
+<ol>
+<li>The student conveys a sense of love and excitement about science.</li>
+<li>The student has served with distinction as a teaching assistant and has made extra efforts to assist other students.</li>
+<li>The student shows dedication to science by superior performance in his or her studies.</li>
+</ol>
+</fieldset>
+<p><a id="kirkpatrick-award"></a>&nbsp;</p>
+<fieldset><legend>Sean M. Kirkpatrick Award for Outstanding Achievement in Graduate Research</legend>
+<p>The goal of this award is to recognize a graduate student who has demonstrated outstanding research abilities in pursuit of his or her dissertation or thesis. It is to encourage the development of creative problem solving, multiple technical and analytic skills, and/or theoretical insight. It is also to encourage the development of communication skill. A student to be nominated should not be in his or her final year.</p>
+<h4>1. Award</h4>
+<p>There shall be one recipient annually at $1,000. The money may be spent for research related purposes. For example, it may be used for research related travel (to other labs), conference travel, small equipment, books, etc. To be eligible for the prize in a given year, a student must have presented a paper or given a conference talk on his/her research within the previous year.</p>
+<h4>2. Nomination</h4>
+<p>A nomination is to be made by the advisor of the student. A letter of support from the advisor and a brief statement (limited to 2 pages) from the student explaining the nature of his or her research and how the funds may be spent. The candidate may append other relevant materials e.g. previous conference presentations, publications, talks etc.</p>
+<h4>3. Eligibility</h4>
+<p>Any graduate student of the department who is in his or her second to penultimate year. A student may win this award more than once, if the student can demonstrate the criteria uniquely in a different year.</p>
+<h4>4. Criteria of selection</h4>
+<p>The selection will be made by the graduate awards committee primarily on the basis of research work and its promise. With particular emphasis on:</p>
+<ol style="list-style-type: lower-alpha;">
+<li>Creative problem solving: The student must demonstrate a unique or creative approach to solving experimental or theoretical problems associated with the work.</li>
+<li>Theoretical insight: The student must both demonstrate a thorough understanding of, and an ability to apply (or develop) relevant theoretical models.</li>
+<li>Multiple skills: The student must demonstrate an ability to apply multiple skills to solving an experimental or theoretical problem.</li>
+<li>Communication: The student must demonstrate the ability to effectively communicate his/her work to technical colleagues outside of his/her immediate area of specialty.</li>
+</ol>
+<h4>5. Presentation</h4>
+<p>The recipient will be given an opportunity to present a talk at the Department's seminar series.</p>
+</fieldset>                <section class="carousel">
+		<div>
+		<a href="/img/slideshows/10/wilson-and-whitney.png" class="fancybox" data-fancybox="carousel-group" title=""><img src="/img/slideshows/10/hset164_wilson-and-whitney.png" alt=""/></a>	</div>
+		<div>
+		<a href="/img/slideshows/10/GradGrub.jpg" class="fancybox" data-fancybox="carousel-group" title="2018 Annual Graduate Student Awards"><img src="/img/slideshows/10/hset164_GradGrub.jpg" alt=""/></a>	</div>
+		<div>
+		<a href="/img/slideshows/10/OpeningRemarksDrDennis.jpg" class="fancybox" data-fancybox="carousel-group" title="Dept. Head Bill Dennis Delivering Opening Remarks for the 2018 Graduate Student Awards Ceremony"><img src="/img/slideshows/10/hset164_OpeningRemarksDrDennis.jpg" alt=""/></a>	</div>
+	</section>
+<script>
+$(document).on('ready', function() {
+	// $(".fancybox").fancybox({
+	// 	wrapCSS    : 'fancybox-custom',
+	// 	closeClick : true,
+	//
+	// 	openEffect : 'none',
+	//
+	// 	helpers : {
+	// 		title : {
+	// 			type : 'inside'
+	// 		},
+	// 		overlay : {
+	// 			css : {
+	// 				'background' : 'rgba(238,238,238,0.85)'
+	// 			}
+	// 		}
+	// 	}
+	// });
+	
+	$('.carousel').slick({
+	  dots: true,
+	  infinite: true,
+	  speed: 300,
+	  // slidesToShow: 3,
+	  // slidesToScroll: 1,
+	  variableWidth: true,
+	  // variableHeigth: true,
+	  // responsive: [
+	  //   {
+	  //     breakpoint: 1024,
+	  //     settings: {
+	  //       slidesToShow: 3,
+	  //       slidesToScroll: 3,
+	  //       infinite: true,
+	  //       dots: true
+	  //     }
+	  //   },
+	  //   {
+	  //     breakpoint: 600,
+	  //     settings: {
+	  //       slidesToShow: 2,
+	  //       slidesToScroll: 2
+	  //     }
+	  //   },
+	  //   {
+	  //     breakpoint: 480,
+	  //     settings: {
+	  //       slidesToShow: 1,
+	  //       slidesToScroll: 1
+	  //     }
+	  //   }
+	  //   // You can unslick at a given breakpoint now by adding:
+	  //   // settings: "unslick"
+	  //   // instead of a settings object
+	  // ]
+	});
+});
+</script>            </div>
+            <div class="three columns">
+                <!-- <div class="scroll-box">
+							</div> -->
+                	<h2 class="lead">Grads</h2>
+		<ul class="sidebar_nav">
+				<li class="">
+			<a href="/academic_programs/grad/information-for-prospective-applicants"> Prospective Applicants</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/apply"> How to Apply</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/admissions-requirements"> Admissions Requirements</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/admission-faq"> Admission FAQ</a>		</li>
+				<li class="">
+			<a href="/research_areas/index"> Research Areas</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/handbook"> Graduate Handbook</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/degree-requirements"> Degree Requirements</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/graduate-courses"> Graduate Courses</a>		</li>
+				<li class="current">
+			<a href="/academic_programs/grad/graduate-awards"><i class="icon-left-open-big"></i> Graduate Awards</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/prelims"> Written Prelim</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/oral-exam"> Oral Exam</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/thesis-submission"> Thesis Submission</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/teaching-assistantship"> Teaching Assistantship Policy</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/teaching-assignments"> Academic Year Course Schedule</a>		</li>
+				<li class="">
+			<a href="/academic_programs/grad/careers"> Careers</a>		</li>
+				<li class="">
+			<a href="/alumni"> Graduate Alumni</a>		</li>
+			</ul>
+	            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container shaded">
+	<div class="row">
+		<div class="four columns">
+			<p>Department of Physics &amp; Astronomy<br/>
+			The University of Georgia<br/>
+			Athens, GA 30602-2451 U.S.A.</p>
+		</div>
+		<div class="four columns">
+			<p>Tel: (706) 542-2485<br/>
+			Fax: (706) 542-2492<br/>
+			Email: physast@uga.edu</p>
+		</div>
+		<div class="four columns">
+  			<p><a href="/info">Department and University Info</a><br/>
+            <a href="https://www.physast.uga.edu/blogs/employment-opportunities" title="Employment Opportunities">Employment Opportunities</a><br/>
+			<a href="https://eits.uga.edu/access_and_security/infosec/pols_regs/policies/privacy/" title="UGA Privacy Policy" target="_blank">UGA Privacy Policy</a></p>
+		</div>
+	</div>
+</div><div class="container" id="uga-footer">
+	<div class="row">
+		<a href="http://www.uga.edu" class="four columns logo">
+			<img src="/img/Screen-GEORGIA-FS-CW.png" gumby-retina id="uga-logo"/>
+		</a>
+		<a href="http://www.franklin.uga.edu" class="four columns logo">
+			<img src="/img/A&S-FS-W.svg" />
+		</a>
+        <div class="four columns">
+            <h2 class="footer-social"><a href="https://www.facebook.com/UGAPhysicsAndAstronomy/" title="UGA Physics and Astronomy on Facebook" target="_blank"><i class="icon-facebook-squared"></i></a></h2>
+        </div>
+	</div>
+</div>
+    </footer>
+</div>
+
+
+<!--
+Include gumby.js followed by UI modules followed by gumby.init.js
+Or concatenate and minify into a single file -->
+<script  gumby-touch="/js/libs" src="/js/libs/gumby.min.js"></script>
+
+<!--
+Google's recommended deferred loading of JS
+gumby.min.js contains gumby.js, all UI modules and gumby.init.js
+
+Note: If you opt to use this method of defered loading,
+ensure that any javascript essential to the initial
+display of the page is included separately in a normal
+script tag.
+
+<script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "js/libs/gumby.min.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script> -->
+
+<script src="/js/plugins.js"></script>
+<script src="/js/main.js"></script>
+<script type="text/javascript" src="/js/slick.min.js"></script><script type="text/javascript" src="/js/libs/jquery.mousewheel.pack.js"></script><script type="text/javascript" src="/js/plyr.polyfilled.min.js"></script><script type="text/javascript">
+	const players = Array.from(document.querySelectorAll('video')).map(player => new Plyr(player, {
+		debug: false,
+        quality: {
+            default: 1080,
+            options: [2160, 1080, 720, 540, 480]
+        },
+        captions: {
+            active: true, language: 'auto', update: true
+        },
+		iconUrl: "/img/plyr.svg"
+	}));
+</script>
+<!-- Change UA-XXXXX-X to be your site's ID -->
+<!--<script>
+window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+Modernizr.load({
+  load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+});
+</script>-->
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you want to support IE 6.
+   chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7 ]>
+<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+</body>
+
+</html>
