@@ -553,9 +553,8 @@
   path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20231102.html
   archived_date: '2026-04-28'
   sha256: d3f72b06ff7dba95768403207f570118803902497146cb161e0439ea14fedd26
-  archive_status: 2
+  archive_status: 3
   wayback_date: '2023-11-02'
-  wayback_skip: true
   note: Wayback Machine snapshot 2023-11-02 of ORNL staff profile for Sean M. Kirkpatrick — earliest known archived capture; predates the Nov 20, 2023 DoD Hicks departure announcement by ~18 days. Original URL https://www.ornl.gov/staff-profile/sean-m-kirkpatrick. Coulthart-cited evidence for the timeline-discrepancy narrative around Kirkpatrick's transition from AARO to ORNL.
 - url: https://web.archive.org/web/20240711150238/https://www.aaro.mil/Portals/136/PDFs/Information%20Papers/ORNL-Synopsis_Analysis_of_a_Metallic_Specimen.pdf
   format: pdf
