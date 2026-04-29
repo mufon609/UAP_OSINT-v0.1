@@ -229,6 +229,14 @@
   archive_status: 3
   note: DOPSR pre-publication review request materials, Grusch written testimony (FOIA 23-F-0946); esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror.
   wayback_date: '2024-05-29'
+- url: https://documents2.theblackvault.com/documents/osd/23-F-1114.pdf
+  format: pdf
+  status: archived
+  path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+  archived_date: '2026-04-28'
+  sha256: 47e416741d98e81ff046c22958b5b0a5c9ef6651effa7a6bb8ee262c33d36c91
+  archive_status: 1
+  note: 'DoD FOIA case 23-F-1114 release (Sancorp Consulting LLC AARO contract HQ003422C0094 Performance Work Statement) via Black Vault, 116 pages. Contract scope: Executive admin support, Strategy/plans/policy support, Congressional and Public Affairs support, FOIA support, Data architecture, PPBE support, Reporting support, Operations support. $1,915,834.08 obligated against ~$4.1M ceiling. Sancorp positioned to draft AARO''s response to FOIA requests about itself'
 - url: https://documents2.theblackvault.com/documents/osd/24-F-0266.pdf
   format: pdf
   status: archived
@@ -246,6 +254,46 @@
   sha256: ecce46045ec7c26864a5ad78a78bb375b9848bf32534876f987e06f0daf26fb7
   archive_status: 1
   note: 'Douglas Dean Johnson, ''The UAP Disclosure Act: The proposed Pentagon/AARO re-write of November 2023'' (Mirador, July 24, 2024). Detailed analysis of the OUSD(I&S) UAPDA rewrite; includes Kirkpatrick''s July 17 2024 von Rennenkampff interview (''we convinced Congress last year not to go down that road'') and July 23 2024 email to Johnson (''a compromise was proposed to allow for the exercising of eminent domain under AARO''s authority''); confirms institutional rather than political direction'
+- url: https://elaranova.com/264-2/
+  format: html
+  status: archived
+  path: news/elara-nova-launch-announcement.html
+  archived_date: '2026-04-28'
+  sha256: 4331f4f58be055c682cf419b2b98cd2f8bd6cb31128ab662b50a7d3914f45764
+  archive_status: 1
+  note: 'Elara Nova: The Space Consultancy launch announcement — institutional context. Founded 2023; HQ Littleton, Colorado; founding partners include Maj. Gen. (Ret.) Kim Crider, Mike Dickey, Eddie Papczun, Maj. Gen. (Ret.) Roger Teague'
+- url: https://elaranova.com/team-members/sean-kirkpatrick/
+  format: html
+  status: archived
+  path: news/elara-nova-kirkpatrick-bio.html
+  archived_date: '2026-04-28'
+  sha256: dd9d9d09c457c1f6293aa2ea9bb87b94b7eba70da7a7565d9f368cb66953ff62
+  archive_status: 1
+  note: 'Sean Kirkpatrick partner biography on Elara Nova: The Space Consultancy. Documents ''Partner'' role (ownership-implying); omits ORNL position (CV-omissions data point); the ''/2023/10/'' date in the Kirkpatrick photo URL path indicates October 2023 server upload during AARO directorship'
+- url: https://en.wikipedia.org/wiki/All-domain_Anomaly_Resolution_Office
+  format: html
+  status: archived
+  path: news/wikipedia-aaro.html
+  archived_date: '2026-04-28'
+  sha256: c228c5b65740e2cdfd5b30ebbfb7775e66b66d1c6b58b42605c32cdeba19819a
+  archive_status: 1
+  note: Wikipedia entry for AARO — institutional history, AAROEXEC oversight structure, leadership succession, FY22 NDAA Section 1683 reference
+- url: https://en.wikipedia.org/wiki/Sean_M._Kirkpatrick
+  format: html
+  status: archived
+  path: news/wikipedia-sean-m-kirkpatrick.html
+  archived_date: '2026-04-28'
+  sha256: c22bb25c3ed9f5c3342fb2e33b82f1219b9a8b4a20fa8d7b1e5dc6cd03dc2960
+  archive_status: 1
+  note: Wikipedia entry for Sean M. Kirkpatrick — secondary-source compendium with footnoted primary-source citations for career chronology, AARO tenure, ORNL move, and patent activity
+- url: https://en.wikipedia.org/wiki/WestExec_Advisors
+  format: html
+  status: archived
+  path: news/wikipedia-westexec-advisors.html
+  archived_date: '2026-04-28'
+  sha256: 6b7e17b33540a170b19993a9cb1076df5dfba03ba04a07ea24edb9a70c1bd0fa
+  archive_status: 1
+  note: Wikipedia entry for WestExec Advisors — founders, past employees including Lisa Monaco, Robert O. Work, Avril Haines (former DNI), David S. Cohen, Jen Psaki; client/foreign-agent disclosure policy
 - url: https://enigmalabs.io/blog/a-fighter-pilots-perspective-alex-dietrich-to-join
   format: html
   status: archived
@@ -421,6 +469,14 @@
   archive_status: 3
   sha256: c844db11711d10900747d20ef96369103dfe6d600f5f767d536fbb5e5ab9df01
   wayback_date: '2026-04-13'
+- url: https://omva.nd.edu/assets/474472/ipmo_nd_memo_cao_27may2022_cleared_1_.pdf
+  format: pdf
+  status: archived
+  path: government/notre-dame-ipmo-memo-20220527.pdf
+  archived_date: '2026-04-28'
+  sha256: 9ee5ccc24e4847c6ea5c0b810a80da729684706ed31ab547b123f01c7301367a
+  archive_status: 1
+  note: Influence and Perception Management Office (IPMO) memorandum to Notre Dame, May 27 2022 — primary-source documentation of IPMO's establishment within OUSD(I&S) and statutory mission including 'deliberate conceal and selective reveal of strategic defense capabilities'
 - url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/
   format: html
   status: archived
@@ -487,6 +543,14 @@
   note: Americans for Safe Aerospace home page. Lists Jay Stratton in the Advisors section — direct on-record attestation by an organization of which Stratton is a listed advisor. Strongest non-.gov public-record attribution for Stratton's UAPTF role.
   archive_status: 3
   wayback_date: '2026-02-20'
+- url: https://spp.umd.edu/our-community/faculty-staff/ronald-moultrie
+  format: html
+  status: archived
+  path: news/umd-moultrie-faculty-bio.html
+  archived_date: '2026-04-28'
+  sha256: e0e188bc48b167021901b4645a8a04f664132194c1668bcf1dbcf7c91e8ea3a8
+  archive_status: 1
+  note: University of Maryland School of Public Policy faculty/community profile for Ronald Moultrie — post-government bio listing affiliations (Nightwing, LeoLabs, National Cryptologic Foundation, PIAB/IOB until January 2025); does NOT list Battelle Memorial Institute (relevant to the Gerb-alleged Moultrie-Battelle claim)
 - url: https://storage.ghost.io/c/c0/be/c0be35e5-1c72-42e1-af60-00793bc5b49d/content/files/2024/07/Pentagon-Nov-2023-proposed-revisions-to-UAPDA.pdf
   format: pdf
   status: archived
@@ -530,6 +594,14 @@
   archive_status: 3
   note: 'The Hill coverage 2023-11-08: ''Pentagon UFO chief to step down next month'' — covers Kirkpatrick''s announced December 2023 departure from AARO; substitute primary-source coverage for the Politico interview (politico.com 403-blocks; Politico Pro paywalled). Fetched via Wayback Machine 2023id_ replay per meta/sources-access.md The Hill workaround'
   wayback_date: '2023-12-23'
+- url: https://theintercept.com/2023/05/17/pentagon-perception-management-office/
+  format: html
+  status: archived
+  path: news/intercept-pentagon-ipmo-20230517.html
+  archived_date: '2026-04-28'
+  sha256: c347ad6181d9191d453a6dfc9127d2221ab1e191bc9e1cf3defa8e242aba090f
+  archive_status: 1
+  note: Ken Klippenstein, 'Inside the Pentagon's New Perception Management Office', The Intercept, May 17 2023 — institutional context for IPMO's role within OUSD(I&S) (parent office of AARO during Kirkpatrick's directorship)
 - url: https://thesolfoundation.org/
   format: html
   status: archived
@@ -774,6 +846,14 @@
   sha256: 0022b1b9628241ef338fc36ddf934e75da43b04d8b2d4f9033709af584f3e39c
   archive_status: 1
   note: AFCEA conference biography for Dr. Sean M. Kirkpatrick as Deputy Director of Intelligence and DNI Representative, USSPACECOM (his pre-AARO role 2019-2021). Source for the six-new-start-organizations career framing and pre-AARO assignment chronology
+- url: https://www.archives.gov/records-mgmt/uap-guidance
+  format: html
+  status: archived
+  path: government/nara-uap-records-guidance.html
+  archived_date: '2026-04-28'
+  sha256: e1c92da1d9c5a7310aa13a9fb70ef8dee2c89a3dfaec9d21cb3e91bf9e30fc61
+  archive_status: 1
+  note: U.S. National Archives and Records Administration UAP Records Guidance page — institutional context for FY24 NDAA Subtitle C UAP records collection mandate
 - url: https://www.armed-services.senate.gov/download/11-19-24_-sub---transcript
   format: pdf
   status: archived
@@ -1186,6 +1266,22 @@
   archive_status: 3
   note: ORNL National Security Sciences Directorate page — Kirkpatrick's hosting directorate at ORNL as Chief Technology Officer for Defense and Intelligence Programs
   wayback_date: '2026-04-27'
+- url: https://www.physast.uga.edu/people/sean-kirkpatrick
+  format: html
+  status: archived
+  path: news/uga-physast-kirkpatrick-adjunct.html
+  archived_date: '2026-04-28'
+  sha256: 1334fd48e0e27d0e358346e253bfbd52cf3640f2746c4b0c44526f2ba4698fdd
+  archive_status: 1
+  note: University of Georgia Department of Physics and Astronomy faculty page for Sean Kirkpatrick as Adjunct Assistant Professor of Physics. Fetched via Wayback 2021-04-20 snapshot; live page now 404s
+- url: https://www.physast.uga.edu/uploads/main/652/Volume%201%20Fall%202010.pdf
+  format: pdf
+  status: archived
+  path: news/uga-physast-newsletter-fall-2010.pdf
+  archived_date: '2026-04-28'
+  sha256: b4bf06f1939dca11751754ccf27e7fab9f6851b475389a5875d3309388542df4
+  archive_status: 1
+  note: UGA Department of Physics and Astronomy newsletter Volume 1 Fall 2010 — first cohort of recipients of the 'Sean M. Kirkpatrick Award for Outstanding Graduate Research' (the award was established naming Kirkpatrick while he was a serving senior intelligence officer). PDF extraction may require OCR for full text. Fetched via Wayback 2021-09-26 snapshot
 - url: https://www.politico.com/news/magazine/2023/11/12/sean-kirkpatrick-ufos-pentagon-00126214
   format: html
   status: archived
@@ -1317,6 +1413,14 @@
   note: Vice article 'This Is the Real Estate Magnate Who Bought Skinwalker Ranch, a UFO Hotspot', published March 10, 2020. First public identification of Brandon Fugal (Utah-based real estate mogul and tech investor, cofounder/owner of a firm later rolled into Colliers International) as the current owner of Skinwalker Ranch. Attests Bigelow-to-Fugal sale in 2016, Fugal's pre-existing connection to Bigelow's DIA-project scientists dating to 2010, and Fugal's ownership being kept quiet until this 2020 public identification. Does NOT mention Adamantium Real Estate by name (that shell-company identification appears in other secondary sources — see research_gap tracking). Load-bearing Fugal-era primary source.
   archive_status: 3
   wayback_date: '2025-09-29'
+- url: https://www.westexec.com/kavandi-kirkpatrick/
+  format: html
+  status: archived
+  path: news/westexec-kavandi-kirkpatrick-announcement-20240509.html
+  archived_date: '2026-04-28'
+  sha256: 73571a9c224e022b3f4c09fd1900a454a1adc058964f36b0f51c65b64b3232b5
+  archive_status: 1
+  note: 'WestExec Advisors May 9 2024 announcement: Janet Kavandi and Sean Kirkpatrick joining as Senior Advisors — paired hire oriented toward space-industry advisory'
 - url: https://www.young.senate.gov/newsroom/press-releases/young-colleagues-introduce-new-legislation-to-declassify-government-records-related-to-ufos-and-unidentified-anomalous-phenomena_modeled-after-jfk-assassination-records-collection-act--as-an-amendment-to-ndaa/
   format: html
   status: archived
