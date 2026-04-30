@@ -305,6 +305,14 @@
   archive_status: 3
   note: 'DefenseScoop coverage 2023-11-30: ''Pentagon''s UAP investigation chief to depart Dec. 1'' — Kirkpatrick''s confirmed AARO departure, day-before-departure coverage with successor (Tim Phillips) detail'
   wayback_date: '2026-03-25'
+- url: https://defensescoop.com/2026/02/25/hegseth-ufo-disclosure-trump-aaro-uap-caseload/
+  format: html
+  status: archived
+  path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+  archived_date: '2026-04-30'
+  sha256: e497fe9c3a2441c22ae9239f4c65c6b1141f52c4126b6b585c5fc9b804a701f5
+  archive_status: 1
+  note: 'Brandi Vincent, DefenseScoop, Feb 25, 2026 — AARO publication blackout, Sue Gough caseload statement (>2,000 cases), Hegseth full-compliance quote re: forthcoming Trump UAP-disclosure executive order'
 - url: https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=116282
   format: html
   status: archived

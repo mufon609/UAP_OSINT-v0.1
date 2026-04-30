@@ -266,6 +266,44 @@ AARO is established under the Under Secretary of Defense for Intelligence and Se
 
 ---
 
+### DefenseScoop reporter observation (Brandi Vincent, Feb 25, 2026) — AARO communications posture characterized as "noticeably tight-lipped"; no 2025 annual report and no second volume of historical-record reports published as of publication date.
+
+> More recently, this latest resurgence in anticipation for government-led UAP disclosure comes at a time when AARO officials have been noticeably tight-lipped recently about their ongoing projects and existing investigations. The office has not published its 2025 annual report or second volume of reports on government involvement with UAP.
+
+| Field | Value |
+|---|---|
+| Attributed to | DefenseScoop, "Hegseth doubles-down on Trump's UAP disclosure promise as AARO's caseload exceeds 2,000," Feb 25, 2026, 2026-02-25 |
+| Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
+| Location | article body, ¶ following caseload-figure paragraph |
+
+---
+
+### Pentagon spokesperson Sue Gough caseload statement to DefenseScoop (Feb 25, 2026) — AARO examining over 2,000 UAP cases; ~1,000 reports retained in the AARO Active Archive pending sufficient data. Caseload grew by at least 400 since the late-2024 public update of more than 1,600 reports.
+
+> In response to questions from DefenseScoop Wednesday, Pentagon spokesperson Sue Gough said that "AARO has been examining over 2,000 UAP cases."
+>
+> "AARO has approximately 1,000 reports that lack sufficient data for analysis and are retained in AARO's Active Archive that may be reopened and resolved should additional information emerge to support analysis," she noted.
+
+| Field | Value |
+|---|---|
+| Attributed to | DefenseScoop Feb 25, 2026 article, Pentagon spokesperson reply to inquiry, 2026-02-25 |
+| Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
+| Location | article body, Sue Gough caseload paragraphs |
+
+---
+
+### Defense Secretary Pete Hegseth statement to DefenseScoop (Feb 25, 2026) — Pentagon will be "in full compliance" with a forthcoming Trump executive order directing disclosure of U.S. government records about UAP and aliens.
+
+> "We're going to be in full compliance with that executive order, [and we're] eager to provide that for the president. So, there'll be more coming on that, as far as the process of what we'll do," Hegseth said.
+
+| Field | Value |
+|---|---|
+| Attributed to | DefenseScoop Feb 25, 2026 article, Hegseth remarks during Arsenal of Freedom Tour, Louisville CO Feb 23, 2026, 2026-02-25 |
+| Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
+| Location | article body, Hegseth direct-quote paragraph |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -284,6 +322,7 @@ AARO is established under the Under Secretary of Defense for Intelligence and Se
 | 2024-08-23 | AARO follow-on support services contract HQ003424C0096 awarded to Sancorp Consulting (\$3,471,829.40, period of performance through January 31, 2026) — continuing the original AARO support PWS scope. | contract | government/usaspending-hq003424c0096.txt | [`/organizations/sancorp-consulting`] |
 | 2024-08-26 | Dr. Jon T. Kosloski appointed as the director of the All-domain Anomaly Resolution Office on detail from the National Security Agency | leadership-transition | government/defense-gov-kosloski-appointment-20240826.html |  |
 | 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO''s parent department naming. | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
+| 2026-02-25 | DefenseScoop article (Brandi Vincent) reports Pentagon spokesperson Sue Gough caseload statement — AARO examining over 2,000 UAP cases with ~1,000 retained in the Active Archive. Article notes AARO has not published a 2025 annual report or second volume. Defense Secretary Hegseth states "full compliance" with forthcoming Trump UAP-disclosure executive order. | other | news/defensescoop-aaro-hegseth-disclosure-20260225.html |  |
 
 ---
 

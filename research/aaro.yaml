@@ -80,6 +80,8 @@ primary_sources:
   format: pdf
 - path: government/eo-14347-restoring-department-of-war-20250910.txt
   format: txt
+- path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+  format: html
 document_intrinsic:
   full_name: All-domain Anomaly Resolution Office
   statutory_authority: Section 1683 of the National Defense Authorization Act for Fiscal Year 2022
@@ -259,6 +261,38 @@ quotes:
   significance: AARO contract HQ003422C0094 PWS Section G Routing Data Table — DoDAAC HQ0208 designated as Inspect By, Service Approver, and Service Acceptor.
   context: Sancorp AARO Support Services contract HQ003422C0094 PWS, Section G Routing Data Table
   statement_date: '2022-09-01'
+- id: q17
+  added_date: '2026-04-30'
+  text: |
+    More recently, this latest resurgence in anticipation for government-led UAP disclosure comes at a time when AARO officials have been noticeably tight-lipped recently about their ongoing projects and existing investigations. The office has not published its 2025 annual report or second volume of reports on government involvement with UAP.
+  source:
+    path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+    location: 'article body, ¶ following caseload-figure paragraph'
+  significance: DefenseScoop reporter observation (Brandi Vincent, Feb 25, 2026) — AARO communications posture characterized as "noticeably tight-lipped"; no 2025 annual report and no second volume of historical-record reports published as of publication date.
+  context: DefenseScoop, "Hegseth doubles-down on Trump's UAP disclosure promise as AARO's caseload exceeds 2,000," Feb 25, 2026
+  statement_date: '2026-02-25'
+- id: q18
+  added_date: '2026-04-30'
+  text: |
+    In response to questions from DefenseScoop Wednesday, Pentagon spokesperson Sue Gough said that "AARO has been examining over 2,000 UAP cases."
+
+    "AARO has approximately 1,000 reports that lack sufficient data for analysis and are retained in AARO's Active Archive that may be reopened and resolved should additional information emerge to support analysis," she noted.
+  source:
+    path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+    location: 'article body, Sue Gough caseload paragraphs'
+  significance: Pentagon spokesperson Sue Gough caseload statement to DefenseScoop (Feb 25, 2026) — AARO examining over 2,000 UAP cases; ~1,000 reports retained in the AARO Active Archive pending sufficient data. Caseload grew by at least 400 since the late-2024 public update of more than 1,600 reports.
+  context: DefenseScoop Feb 25, 2026 article, Pentagon spokesperson reply to inquiry
+  statement_date: '2026-02-25'
+- id: q19
+  added_date: '2026-04-30'
+  text: |
+    "We're going to be in full compliance with that executive order, [and we're] eager to provide that for the president. So, there'll be more coming on that, as far as the process of what we'll do," Hegseth said.
+  source:
+    path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+    location: 'article body, Hegseth direct-quote paragraph'
+  significance: Defense Secretary Pete Hegseth statement to DefenseScoop (Feb 25, 2026) — Pentagon will be "in full compliance" with a forthcoming Trump executive order directing disclosure of U.S. government records about UAP and aliens.
+  context: DefenseScoop Feb 25, 2026 article, Hegseth remarks during Arsenal of Freedom Tour, Louisville CO Feb 23, 2026
+  statement_date: '2026-02-25'
 key_personnel:
 - id: kp1
   added_date: '2026-04-20'
@@ -460,6 +494,14 @@ timeline:
   source:
     path: government/eo-14347-restoring-department-of-war-20250910.txt
     location: 'Federal Register Vol. 90 No. 173 (Sept 10, 2025), pp. 43893-43894, EO 14347'
+- id: t15
+  added_date: '2026-04-30'
+  date: '2026-02-25'
+  event: DefenseScoop article (Brandi Vincent) reports Pentagon spokesperson Sue Gough caseload statement — AARO examining over 2,000 UAP cases with ~1,000 retained in the Active Archive. Article notes AARO has not published a 2025 annual report or second volume. Defense Secretary Hegseth states "full compliance" with forthcoming Trump UAP-disclosure executive order.
+  category: other
+  source:
+    path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+    location: 'article body'
 entities_referenced:
 - id: e1
   added_date: '2026-04-20'
