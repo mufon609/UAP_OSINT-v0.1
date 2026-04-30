@@ -1453,6 +1453,14 @@
   archive_status: 3
   note: ExecutiveBiz follow-up coverage of the LeoLabs Moultrie board appointment, December 5 2024
   wayback_date: '2026-03-12'
+- url: https://www.federalregister.gov/documents/full_text/text/2025/09/10/2025-17508.txt
+  format: txt
+  status: archived
+  path: government/eo-14347-restoring-department-of-war-20250910.txt
+  archived_date: '2026-04-30'
+  sha256: ca7aff5304b746d247729772e83971311cbf362ca00d958307064cb413c030d6
+  archive_status: 1
+  note: 'Executive Order 14347 of September 5, 2025 — ''Restoring the United States Department of War'' — Federal Register Volume 90 Number 173, published September 10, 2025, pages 43893-43894 (FR Doc No: 2025-17508). Authorizes the secondary title ''Department of War'' for DoD and ''Secretary of War'' for SecDef; statutory references to Department of Defense remain controlling per Sec. 2(e). Primary-source attestation of the rebrand referenced in OUSW(I&S) terminology across Sancorp''s 2025+ contracts (HQ003425FE388 CL&S POABO, HQ003425FE405 Office of the Under Secretary of War for Policy).'
 - url: https://www.gao.gov/products/b-422985.4,b-422985.5
   format: html
   status: archived

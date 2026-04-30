@@ -23,11 +23,11 @@ created: 2026-04-30
 
 ## Description
 
-Sancorp Consulting, LLC is a Falls Church, Virginia federal contractor that provides intelligence, counterintelligence, insider threat, and operations support services to the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S); the office and its parent department appear in 2025 source records as Office of the Under Secretary of War for Intelligence and Security and Department of War). Sancorp was founded July 28, 2016. Its Unique Entity Identifier is GRYKNJ8BGFC8 and its CAGE Code is 7NZQ9. Per HigherGov registry data the company's SBA 8(a) Certification was Graduated August 26, 2017 to March 11, 2026; it also has Service-Disabled Veteran-Owned Small Business and Veteran-Owned Small Business certifications. GovCon in a Box lists Sancorp's federal awards (under awarding agencies including the Department of Defense ([`/organizations/dod`]), the General Services Administration ([`/organizations/gsa`]), the Department of the Army, the Department of Justice, the Department of the Navy, and the Missile Defense Agency ([`/organizations/mda`]), with the Office of the Secretary of Defense ([`/organizations/osd`]) as the parent organization for the contracts issued via Washington Headquarters Services) at \$61.47M across 185 awards (First Award April 21, 2022; Last Award December 2, 2025).
+Sancorp Consulting, LLC is a Falls Church, Virginia federal contractor that provides intelligence, counterintelligence, insider threat, and operations support services to the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S); the office and its parent department appear in 2025 source records as Office of the Under Secretary of War for Intelligence and Security and Department of War). Sancorp was founded July 28, 2016. Its Unique Entity Identifier is GRYKNJ8BGFC8 and its CAGE Code is 7NZQ9. Per HigherGov registry data the company's SBA 8(a) Certification was Graduated August 26, 2017 to March 11, 2026; it also has Service-Disabled Veteran-Owned Small Business and Veteran-Owned Small Business certifications. GovCon in a Box lists Sancorp's federal awards (under awarding agencies including the Department of Defense ([`/organizations/dod`]), the General Services Administration ([`/organizations/gsa`]), the Department of the Army ([`/organizations/department-of-the-army`]), the Department of Justice ([`/organizations/department-of-justice`]), the Department of the Navy ([`/organizations/department-of-the-navy`]), and the Missile Defense Agency ([`/organizations/mda`]), with the Office of the Secretary of Defense ([`/organizations/osd`]) as the parent organization for the contracts issued via Washington Headquarters Services) at $61.47M across 185 awards (First Award April 21, 2022; Last Award December 2, 2025).
 
-Sancorp's contract record with OUSD(I&S), awarded by Washington Headquarters Services, includes HQ003418C0123 ("CI Metrics Study Support", September 27, 2018) and HQ003419C0159 ("Strengthening Insider Threat Support Services", September 20, 2019). In 2022 Sancorp was awarded two contracts that placed the same vendor inside two related OUSD(I&S) offices: HQ003422C0064 ("IPMO Support Services", June 9, 2022) supports the Influence and Perception Management Office (established March 1, 2022 per a memorandum from James A. Holly ([`/people/james-holly`]), Acting Director — see [`/documents/ipmo-notre-dame-memo-2022`]), and HQ003422C0094 ("AARO Support Services", September 1, 2022) supports the All-domain Anomaly Resolution Office. The AARO contract's Performance Work Statement ([`/documents/blackvault-sancorp-23-f-1114-aaro-pws`]), released in full via FOIA case 23-F-1114, defines deliverables across Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support. The contract was issued by WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) on solicitation HQ003422R0192; signed by Contracting Officer Jacqueline Verrine ([`/people/jacqueline-verrine`]) (Team Lead, Technical Analysis Branch, Enterprise Office Secretary of Defense ([`/organizations/whs-eosd`]), WHS Acquisition Directorate) on September 1, 2022. Section 7 information contact: Contract Specialist Rainie Wells ([`/people/rainie-wells`]). The contract was awarded under DFARS 252.219-7009 SECTION 8(A) DIRECT AWARD with the Small Business Administration Richmond District Office ([`/organizations/sba-richmond-district-office`]) as the cognizant SBA office; Defense Contract Audit Agency ([`/organizations/dcaa`]) DODAAC HAA47 audits the LH and T&M CLINs. The IPMO contract is described in Sancorp's own Company News as "professional, administrative, and operational support services to the Influence and Perception Management Office (IPMO)" at OUSD(I&S).
+Sancorp's contract record with OUSD(I&S), awarded by Washington Headquarters Services, includes HQ003418C0123 ("CI Metrics Study Support", September 27, 2018) and HQ003419C0159 ("Strengthening Insider Threat Support Services", September 20, 2019). In 2022 Sancorp was awarded two contracts that placed the same vendor inside two related OUSD(I&S) offices: HQ003422C0064 ("IPMO Support Services", June 9, 2022) supports the Influence and Perception Management Office (established March 1, 2022 by direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security, per a memorandum signed by James A. Holly ([`/people/james-holly`]), Acting Director — see [`/documents/ipmo-notre-dame-memo-2022`]), and HQ003422C0094 ("AARO Support Services", September 1, 2022) supports the All-domain Anomaly Resolution Office. The AARO contract's Performance Work Statement ([`/documents/blackvault-sancorp-23-f-1114-aaro-pws`]), released in full via FOIA case 23-F-1114, defines deliverables across Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support. The contract was issued by WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) on solicitation HQ003422R0192; signed by Contracting Officer Jacqueline Verrine ([`/people/jacqueline-verrine`]) (Team Lead, Technical Analysis Branch, Enterprise Office Secretary of Defense ([`/organizations/whs-eosd`]), WHS Acquisition Directorate) on September 1, 2022. Section 7 information contact: Contract Specialist Rainie Wells ([`/people/rainie-wells`]). The contract was awarded under DFARS 252.219-7009 SECTION 8(A) DIRECT AWARD with the Small Business Administration Richmond District Office ([`/organizations/sba-richmond-district-office`]) as the cognizant SBA office; Defense Contract Audit Agency ([`/organizations/dcaa`]) DODAAC HAA47 audits the LH and T&M CLINs. The IPMO contract is described in Sancorp's own Company News as "professional, administrative, and operational support services to the Influence and Perception Management Office (IPMO)" at OUSD(I&S).
 
-Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Threat Subcommittee in March 2021 and contributed to INSA's October 2021 white paper "The Need for Transparency on Insider Threats: Improving Information Sharing Between Government and Industry" — published the same month. INSA's September 2022 Insider Threat Program Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states that "Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S)." Subsequent Sancorp prime contracts include HQ003423C0061 and HQ003424C0046 ("Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" — IPMO continuation), HQ003424C0096 ("Exec. Admin, Ops, Policy & PPBE Sppt Svc" — AARO follow-on), HQ003424F0411 ("LABOR" — \$11.2M task order supporting Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction), HQ003425FE388 (Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations support), HQ003425FE405 (Office of the Under Secretary of War for Policy office management and executive support), and W519TC23F0545 (Chief Digital and Artificial Intelligence Office Algorithmic Warfare and Public Affairs). After GAO ([`/organizations/gao`]) denied Sancorp's protest of two OUSD(I&S) call orders awarded to Premier Enterprise Solutions (Executive Directorate, EXDIR ([`/organizations/ousd-is-exdir`])) and Arlo Solutions (Sensitive Activities and Special Programs, SASP ([`/organizations/ousd-is-sasp`])) in B-422985.4, B-422985.5 (June 11, 2025), Sancorp also took on W912CL25CA005 (USSOUTHCOM Support to Special Technical Operations including Special Access Programs, Alternative and Compensatory Control Measures, Military Deception (MILDEC), and Intelligence Planning, June 30, 2025) and HQ085926FG471 (Missile Defense Agency Scalable Homeland Innovative Enterprise Layered Defense Initial Order, December 19, 2025). The August 2025 GSA OASIS+ 8(a) Contract award is described by Sancorp as covering "integrated solutions in Program Management, Engineering Services, Research & Development, and Intelligence Support to help federal agencies achieve mission success."
+Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Threat Subcommittee in March 2021 and contributed to INSA's October 2021 white paper "The Need for Transparency on Insider Threats: Improving Information Sharing Between Government and Industry" — published the same month. INSA's September 2022 Insider Threat Program Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states that "Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S)." Subsequent Sancorp prime contracts include HQ003423C0061 and HQ003424C0046 ("Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" — IPMO continuation), HQ003424C0096 ("Exec. Admin, Ops, Policy & PPBE Sppt Svc" — AARO follow-on), HQ003424F0411 ("LABOR" — $11.2M task order supporting Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction), HQ003425FE388 (Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations support), HQ003425FE405 (Office of the Under Secretary of War for Policy office management and executive support), and W519TC23F0545 (Chief Digital and Artificial Intelligence Office Algorithmic Warfare and Public Affairs). After GAO ([`/organizations/gao`]) denied Sancorp's protest of two OUSD(I&S) call orders awarded to Premier Enterprise Solutions (Executive Directorate, EXDIR ([`/organizations/ousd-is-exdir`])) and Arlo Solutions (Sensitive Activities and Special Programs, SASP ([`/organizations/ousd-is-sasp`])) in B-422985.4, B-422985.5 (June 11, 2025), Sancorp also took on W912CL25CA005 (USSOUTHCOM Support to Special Technical Operations including Special Access Programs, Alternative and Compensatory Control Measures, Military Deception (MILDEC), and Intelligence Planning, June 30, 2025) and HQ085926FG471 (Missile Defense Agency Scalable Homeland Innovative Enterprise Layered Defense Initial Order, December 19, 2025). The August 2025 GSA OASIS+ 8(a) Contract award is described by Sancorp as covering "integrated solutions in Program Management, Engineering Services, Research & Development, and Intelligence Support to help federal agencies achieve mission success."
 
 ---
 
@@ -43,7 +43,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ## Key Passages
 
-### Sancorp's self-attestation of INSA membership and Insider Threat Subcommittee participation, dated fourteen months before the IPMO contract award.
+### Sancorp Company News, March 2021 entry — INSA membership announcement and Insider Threat Subcommittee participation.
 
 > March 2021 - SANCORP Joins the Intelligence and National Security Alliance (INSA). INSA is a nonpartisan, nonprofit trade association for driving public-private partnerships to advance intelligence and national security priorities with more than 150 industry corporate partners and hundreds of individuals. Team SANCORP is participating in various groups including the Insider Threat Subcommittee.
 
@@ -55,7 +55,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Sancorp's self-attestation of contribution to INSA's October 2021 white paper on insider threat information sharing — establishes Sancorp as a participant in the doctrinal-framework production layer, not only an operational vendor.
+### Sancorp Company News, October 2021 entry — Sancorp contribution to the INSA white paper on insider threat information sharing.
 
 > October 2021 - SANCORP contributes to the insider threat community through research.  The Intelligence and National Security Alliance (INSA) published a white paper today entitled “The Need for Transparency on Insider Threats: Improving Information Sharing Between Government and Industry” to which SANCORP contributed its expertise.
 
@@ -67,7 +67,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### FY23 OSD OP-5 budget statement establishing IPMO as the OUSD(I&S) "reveal and conceal" senior advisor. Architecturally significant: identifies IPMO's "(reveal and conceal)" framing — the doctrinal mission Sancorp's IPMO contract HQ003422C0064 services through "professional, administrative, and operational support."
+### OSD OP-5 FY 2023 budget — IPMO program description: senior advisor to USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters.
 
 > The Influence and Perception Management Office will serve as the senior advisor to the USD(I&S) for strategic and operational influence and
 > perception management (reveal and conceal) matters. It will develop broad thematic influence guidance focused on key adversaries; promulgate
@@ -82,7 +82,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Primary-source attestation of IPMO's establishment date (March 1, 2022) and statutory mission. Establishes the chain of authority — SecDef and USD(I&S) — under which the IPMO operates and the relationship to the Sancorp IPMO contract HQ003422C0064 awarded three months later.
+### IPMO Notre Dame memo, signed by James A. Holly, Acting Director, May 27, 2022 — documents IPMO's March 1, 2022 establishment by direction from SecDef and USD(I&S), and IPMO's tasking with thematic messaging guidance and influence strategies.
 
 > On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under
 >            Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception
@@ -99,7 +99,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Sancorp's self-attestation of the IPMO contract award (HQ003422C0064 per USAspending). Verbatim scope language identifies the customer as IPMO at OUSD(I&S).
+### Sancorp Company News, June 2022 entry — IPMO contract award announcement, identifies the customer as the Influence and Perception Management Office at OUSD(I&S).
 
 > June 2022 - SANCORP was awarded a contract to provide professional, administrative, and operational support services to the Influence and Perception Management Office (IPMO) at the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S)).
 
@@ -111,7 +111,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Primary-source attestation of the AARO contract solicitation procurement details — RFP HQ003422R0192 issued July 7, 2022 by WHS Acquisition Directorate (DODAAC HQ0034) at 4800 Mark Center Drive, Alexandria VA — the same building referenced in the architecture handoff as the OUSD(I&S) contracting hub.
+### AARO contract SF 33 header — Contract HQ003422C0094, Solicitation HQ003422R0192, Type Negotiated RFP, Date Issued July 7, 2022. Issued by WHS Acquisition Directorate (DODAAC HQ0034), 4800 Mark Center Drive, Suite 09F09, Alexandria VA 22350-0002.
 
 > 2. CONTRACT NO.: HQ003422C0094
 > 3. SOLICITATION NO.: HQ003422R0192
@@ -131,7 +131,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### INSA trade-association attestation that the counter-insider-threat doctrinal framework is owned by OUSD(I&S) — the same parent office Sancorp's contracts (HQ003419C0159 Counter-Insider Threat, HQ003420C0167 Counterintelligence Analytical, HQ003422C0064 IPMO, HQ003422C0094 AARO) execute against.
+### INSA September 2022 Naming Convention paper, p. 4 Counter-Insider Threat section — credits OUSD(I&S) as the developer of counter-insider-threat doctrine.
 
 > Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and
 > Security (OUSDI&S). Like counterterrorism, “counter-insider threat” supports the philosophy that programs need
@@ -146,7 +146,79 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Section J attachment manifest — the AARO contract incorporates a 28-page Performance Work Statement (Attachment 1), a 5-page Non-Disclosure Agreement / Organizational Conflict of Interest document (Attachment 2), and an 11-page Form DD 254 Department of Defense Contract Security Classification Specification (Attachment 3). The DD 254 attachment confirms the contract handles classified national-security information.
+### AARO contract HQ003422C0094 Section 5.2 task header — Executive Administrative Support Services.
+
+> The contractor shall provide Executive Administrative Support Services in
+> accordance with Sect ion 5.2 of the Performance Work Statement (PWS). the
+> anached documents and all other requirements listed in this document.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-01 |
+| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
+| Location | AARO contract PWS, Section 5.2 task order header (OCR-damaged source preserves "Sect ion" / "anached") |
+
+---
+
+### AARO contract HQ003422C0094 Section 5.3 task header — Strategy, Plans, and Policy Support Services.
+
+> The contractor shall provide Strategy , Plans. and Policy Support Services in
+> accordance with Section 5.3 of the Performance Work Statement (PWS). the
+> attached documents and all other requirements listed in this document.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-01 |
+| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
+| Location | AARO contract PWS, Section 5.3 task order header |
+
+---
+
+### AARO contract HQ003422C0094 Section 5.4 task header — Congressional Affairs, Public Affairs, and FOIA Support Services.
+
+> The contractor shall provide Congressional Affairs, Public Affairs. and FOIA
+> SuppOI1 Services in accordance with Section 5.4 of the Performance Work
+> Statement (PWS), the attached documents and all other requirements listed in this
+> document.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-01 |
+| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
+| Location | AARO contract PWS, Section 5.4 task order header (OCR-damaged source preserves "SuppOI1") |
+
+---
+
+### AARO contract HQ003422C0094 Section 5.5 task header — Data Architecture Support Services.
+
+> The contractor shall provide Data Architecture Support Services in accordance
+> with Section 5.5 of the Performance Work Statement (PWS). the attached
+> documents and all other requirements listed in thi s document.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-01 |
+| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
+| Location | AARO contract PWS, Section 5.5 task order header (OCR-damaged source preserves "thi s") |
+
+---
+
+### AARO contract HQ003422C0094 Section 5.6 task header — Planning, Programming, Budgeting and Executive Support Services.
+
+> The contractor shall provide Plann ing, Programming, Budgeting and Executi ve
+> SuppOI1 Services in accordance with Section 5.6 of the Performance Work
+> Statement (PWS), the attached documents and all other requirements listed in this
+> document.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-01 |
+| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
+| Location | AARO contract PWS, Section 5.6 task order header (OCR-damaged source preserves "Plann ing", "Executi ve", "SuppOI1") |
+
+---
+
+### AARO contract Section J attachment list — 28-page Performance Work Statement (11-JUL-2022), 5-page NDA OCI (21-JUN-2022), and 11-page Form DD 254 Department of Defense Contract Security Classification Specification (21-JUN-2022).
 
 > Section J - List of Documents, Exhibits and Other Attachments
 >
@@ -165,7 +237,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Primary-source attestation of the contract's SBA Section 8(a) Direct Award procurement basis — confirms the SBA Richmond District Office as cognizant SBA office and that SBA is the technical prime contractor with WHS as the contracting office. Same procurement method as W912CL25CA005 USSOUTHCOM STO MILDEC contract per USAspending (8(A) Sole Source).
+### AARO contract Section I clause DFARS 252.219-7009 SECTION 8(A) DIRECT AWARD — names the Small Business Administration as the prime contractor under the SBA-DoD Partnership Agreement, with the Richmond District Office (400 N 8th Street, Suite 1150, Richmond VA 23219) as the cognizant SBA district office.
 
 > 252.219-7009     SECTION 8(A) DIRECT AWARD (OCT 2018)
 >
@@ -188,7 +260,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Primary-source attestation of the AARO contract's contracting officer's organizational chain: Technical Analysis Branch (TAB) within Enterprise Office Secretary of Defense (EOSD) within WHS Acquisition Directorate. Establishes the precise WHS sub-unit responsible for OUSD(I&S) Sancorp contracts.
+### AARO contract-award notification email signature block (September 1, 2022) — identifies Jacqueline Verrine as Team Lead/Contracting Officer in Technical Analysis Branch (TAB), Enterprise Office Secretary of Defense (EOSD), Washington Headquarters Services (WHS), Acquisition Directorate (AD).
 
 > Jacqueline Verrine
 > Team Lead/Contracting Officer
@@ -207,7 +279,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### AARO contract-award notification email metadata, September 1, 2022 5:16 PM. The CC line documents an OUSD(I&S) Chief of Staff Front-Office distribution list ("OSD Pentagon OUSD Intel - Sec List CoS FMA") as a recipient of the contract-award notification — directly attesting that the Sancorp AARO contract award flowed through the OUSD(I&S) front-office security distribution at the moment of execution.
+### AARO contract-award notification email header (September 1, 2022 5:16 PM) — From Verrine to (b)(6)-redacted recipient, CC Wells and the OSD Pentagon OUSD Intel - Sec List CoS FMA distribution list, Subject Award: HQ003422C0094_AARO.
 
 > From:        Verrine, Jacqueline G CIV WHS AD (USA)
 > Sent:        Thursday, September 1, 2022 5:16 PM
@@ -224,7 +296,26 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Primary-source attestation of FOIA case 23-F-1114 disposition for the Sancorp AARO contract — Washington Headquarters Services / OSD as the contracting authority; 125 responsive pages identified; partial release with deliberative-process and trade-secret exemptions cited.
+### AARO contract SF 33 Block 15A NAME AND ADDRESS OF OFFEROR — Code 7NZQ9, address 3235 Valley Ln, Falls Church VA 22044-1740. Block 15B telephone 404-840-9330. Block 15A second line is (b)(6)-redacted.
+
+> 15A. NAME AND ADDRESS OF OFFEROR:
+>    CODE: 7NZQ9
+>    SANCORP CONSULTING
+>    (b)(6)
+>    3235 VALLEY LN
+>    FALLS CHURCH VA 22044-1740
+>
+> 15B. TELEPHONE NO.: 404-840-9330
+
+| Field | Value |
+|---|---|
+| Attributed to | 2022-09-01 |
+| Source | [archived source](../sources/government/foia-23-f-0905-doc-1-released.pdf) |
+| Location | p. 1 of 34, SF 33 Block 15A NAME AND ADDRESS OF OFFEROR + Block 15B TELEPHONE NO. |
+
+---
+
+### FOIA 23-F-1114 cover letter, signed by Stephanie L. Carr, Chief, FOID, on September 11, 2023 — documents WHS Acquisition Directorate as the records-holder, identifies 125 responsive pages, and cites the (b)(5) deliberative-process exemption for 11 entirely-withheld pages.
 
 > The Washington Headquarters Services, Acquisition Directorate, a component of the
 > Office of the Secretary of Defense, conducted a search of their records systems and located 125
@@ -242,7 +333,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Primary-source attestation that Sancorp originally won Call Order 2 (SASP) in September 2024 — Sancorp lost SASP in the corrective-action reevaluation, with Arlo Solutions awarded the SASP call order in 2025. The architecture-handoff's framing of "Sancorp competitor cluster" understated this: Sancorp was inside the SASP customer chain for several months before being displaced by Arlo. Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions (Vienna VA per handoff §3) won the EXDIR call order initially before later losing it to Premier in the same corrective action.
+### GAO B-422985 decision procedural-history subsection — initial September 2024 awards: Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions to Call Order 1 (EXDIR), Sancorp to Call Order 2 (SASP). Arlo and Premier filed protests, agency took corrective action, terminated the BPAs and call orders, and reevaluated.
 
 > In September, WHS established a BPA with, and issued call order 1 (EXDIR) to, Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions. COS/MOL at 5. At the same time, WHS established a BPA with, and issued call order 2 (SASP) to, Sancorp. Id. Following notification of the awards, Arlo and Premier filed protests with our Office, challenging the agency’s evaluation and award decisions.
 
@@ -254,7 +345,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### FY26 OSD OP-5 budget continuity statement on IPMO post-EO 14347 DoD-to-DoW rebrand. Adds new clause "management of designated compartmented programs" relative to FY23. Architecturally significant: this is the L1 doctrinal anchor that the Sancorp IPMO contract chain (HQ003422C0064 → HQ003423C0061 → HQ003424C0046) services.
+### OSD OP-5 FY 2026 budget — IPMO program description: OUSD(I&S) center of gravity for influence activities; activities include thematic influence guidance, oversight of intelligence support to operations in the information environment, oversight and governance of deception activities, deliberate conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
 
 > The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately
 > influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO
@@ -271,7 +362,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### GAO bid-protest decision verbatim opening — primary-source attestation of the protest framing: Sancorp (Falls Church VA) vs. Premier Enterprise Solutions (Upper Marlboro MD) and Arlo Solutions (Washington DC) under RFQ HQ003424R0178 issued by WHS for technical, administrative, and professional support services.
+### GAO B-422985.4, B-422985.5 decision opening paragraph (June 11, 2025) — protest of Premier Enterprise Solutions and Arlo Solutions awards under RFQ HQ003424R0178 issued by WHS for technical, administrative, and professional support services.
 
 > Sancorp Consulting, LLC, a small business of Falls Church, Virginia, protests the issuance of orders to Premier Enterprise Solutions, LLC, a small business of Upper Marlboro, Maryland, and Arlo Solutions, LLC, a small business of Washington, D.C., under request for quotations (RFQ) No. HQ003424R0178, issued by the Department of Defense, Washington Headquarters Service (WHS), for technical, administrative, and professional support services.
 
@@ -283,7 +374,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Primary-source attestation of two named OUSD(I&S) sub-units — the I&S Executive Directorate (EXDIR) and the Sensitive Activities & Special Programs (SASP) Office — as the customers of the two RFQ HQ003424R0178 call orders. Architecturally significant as Layer 2 sub-unit attestation of the OUSD(I&S) operational structure that Sancorp services.
+### GAO B-422985 decision call-order subsection — names I&S Executive Directorate (EXDIR) as the Call Order 1 customer and Sensitive Activities & Special Programs (SASP) Office as the Call Order 2 customer.
 
 > The RFQ provided a performance work statement (PWS) for the BPA’s general requirements, and specific PWSs for the two initial call orders that would be awarded concurrently with the establishment of the BPAs. AR, Tab 2a, BPA PWS; AR, Tab 11a, Call Order 1 (EXDIR) PWS; AR, Tab 11b, Call Order 2 (SASP) PWS. Under call order 1, the awardee is to provide services to the I&S Executive Directorate (EXDIR). AR, Tab 11a, EXDIR Call Order PWS at 1. With call order 2, the awardee will provide services to the Sensitive Activities & Special Programs (SASP) Office.
 
@@ -295,7 +386,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Primary-source attestation that the USSOUTHCOM Support to Special Technical Operations contract (W912CL25CA005, signed June 30, 2025; \$271,848 obligated; 8(A) Sole Source) explicitly includes Military Deception (MILDEC) in its scope.
+### USAspending W912CL25CA005 description field — USSOUTHCOM Support to Special Technical Operations contract scope, including Special Access Programs, Alternative and Compensatory Control Measures, Military Deception, and Intelligence Planning. 8(A) Sole Source per latest_transaction_contract_data.
 
 > USSOUTHCOM SHALL PROVIDE SERVICES TO SPECIAL TECHNICAL OPERATIONS (STO) INCLUDING SUPPORT TO SPECIAL ACCESS PROGRAMS (SAP), ALTERNATIVE AND COMPENSATORY CONTROL MEASURES, MILITARY DECEPTION (MILDEC) AND INTELLIGENCE PLANNING AND ACTIVITIES.
 
@@ -307,7 +398,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Sancorp's self-attestation of the August 2025 GSA OASIS+ 8(a) contract award — corrects the architecture-handoff's "USSOUTHCOM STO July 2025" attribution: the August 2025 announcement is the GSA OASIS+ award, while USSOUTHCOM STO W912CL25CA005 was awarded June 30, 2025 separately.
+### Sancorp Featured News, August 2025 entry — GSA OASIS+ 8(a) Contract award announcement, listed deliverable scope: Program Management, Engineering Services, Research & Development, Intelligence Support.
 
 > SANCORP is proud to announce our award of the GSA OASIS+ 8(a) Contract. Through this vehicle, we deliver integrated solutions in Program Management, Engineering Services, Research & Development, and Intelligence Support to help federal agencies achieve mission success.
 
@@ -319,70 +410,42 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### AARO contract Section 5.2 task — Executive Administrative Support Services — first of eight PWS task areas under HQ003422C0094.
+### Federal Register Vol. 90 No. 173 — Executive Order 14347 of September 5, 2025, titled Restoring the United States Department of War.
 
-> The contractor shall provide Executive Administrative Support Services in
-> accordance with Sect ion 5.2 of the Performance Work Statement (PWS). the
-> anached documents and all other requirements listed in this document.
+> Executive Order 14347 of September 5, 2025
 
 | Field | Value |
 |---|---|
-| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
-| Location | AARO contract PWS, Section 5.2 task order header (OCR-damaged source preserves "Sect ion" / "anached") |
+| Attributed to | 2025-09-05 |
+| Source | [archived source](../sources/government/eo-14347-restoring-department-of-war-20250910.txt) |
+| Location | Federal Register Vol. 90 No. 173 (Sept 10, 2025), p. 43893, EO header |
 
 ---
 
-### AARO contract Section 5.3 task — Strategy, Plans, and Policy Support Services.
+### Sancorp Past Performance — HQ003425FE405 contract listing identifies the customer as Office of the Under Secretary of War for Policy.
 
-> The contractor shall provide Strategy , Plans. and Policy Support Services in
-> accordance with Section 5.3 of the Performance Work Statement (PWS). the
-> attached documents and all other requirements listed in this document.
+> Office of the Under Secretary of War for Policy, Office Management & Executive Support Services (Prime Contract) HQ003425FE405
 
 | Field | Value |
 |---|---|
-| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
-| Location | AARO contract PWS, Section 5.3 task order header |
+| Attributed to | 2026-04-30 |
+| Source | [archived source](../sources/news/sancorp-past-performance-20260430.html) |
+| Location | Past Performance page, contract listing |
 
 ---
 
-### AARO contract Section 5.4 task — Congressional Affairs, Public Affairs, and FOIA Support Services. Architecturally significant: places Sancorp inside the AARO public-facing communications and FOIA-response surface — the same vendor servicing the office responds to public inquiries about that office.
+### HigherGov Sancorp Consulting profile — Unique Entity Identifier GRYKNJ8BGFC8, CAGE Code 7NZQ9, Falls Church VA headquarters, primary registered NAICS 541990 (All Other Professional, Scientific, and Technical Services).
 
-> The contractor shall provide Congressional Affairs, Public Affairs. and FOIA
-> SuppOI1 Services in accordance with Section 5.4 of the Performance Work
-> Statement (PWS), the attached documents and all other requirements listed in this
-> document.
-
-| Field | Value |
-|---|---|
-| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
-| Location | AARO contract PWS, Section 5.4 task order header (OCR-damaged source preserves "SuppOI1") |
-
----
-
-### AARO contract Section 5.5 task — Data Architecture Support Services.
-
-> The contractor shall provide Data Architecture Support Services in accordance
-> with Section 5.5 of the Performance Work Statement (PWS). the attached
-> documents and all other requirements listed in thi s document.
+> (UEI GRYKNJ8BGFC8, CAGE 7NZQ9)
+>                  is headquartered in Falls Church VA.
+>
+>                  Its primary registered NAICS is 541990 All Other Professional, Scientific, and Technical Services.
 
 | Field | Value |
 |---|---|
-| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
-| Location | AARO contract PWS, Section 5.5 task order header (OCR-damaged source preserves "thi s") |
-
----
-
-### AARO contract Section 5.6 task — Planning, Programming, Budgeting and Executive Support Services (PPBE).
-
-> The contractor shall provide Plann ing, Programming, Budgeting and Executi ve
-> SuppOI1 Services in accordance with Section 5.6 of the Performance Work
-> Statement (PWS), the attached documents and all other requirements listed in this
-> document.
-
-| Field | Value |
-|---|---|
-| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
-| Location | AARO contract PWS, Section 5.6 task order header (OCR-damaged source preserves "Plann ing", "Executi ve", "SuppOI1") |
+| Attributed to | 2026-04-30 |
+| Source | [archived source](../sources/news/highergov-sancorp-profile-20260430.html) |
+| Location | HigherGov Sancorp Consulting profile, Federal Awardee summary panel |
 
 ---
 
@@ -439,7 +502,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 | 2025-06-11 | GAO B-422985.4, B-422985.5 decision DENIED Sancorp's protest — EXDIR Call Order 1 awarded to Premier Enterprise Solutions, SASP Call Order 2 awarded to Arlo Solutions. | protest | government/gao-b-422985-wayback-20250708.html |  |
 | 2025-06-30 | W912CL25CA005 awarded — USSOUTHCOM Support to Special Technical Operations including SAP, Alternative and Compensatory Control Measures, MILDEC, and Intelligence Planning, $271,848. | contract | government/usaspending-w912cl25ca005.txt |  |
 | 2025-08 | GSA OASIS+ 8(a) Contract awarded to Sancorp per Featured News announcement. | contract | news/sancorp-update-202508-wayback-20251208.html |  |
-| 2025-09-05 | Executive Order 14347 — Department of Defense renamed Department of War; OUSD(I&S) becomes OUSW(I&S). | government-action | government/osd-op5-fy26-wayback-20260201.pdf |  |
+| 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War — authorizes the secondary title Department of War for DoD; statutory references to Department of Defense remain controlling per Sec. 2(e). | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 | 2025-09-11 | HQ003425FE388 awarded — CL&S POABO Support Services task order (parent IDV HQ003425A0001), $3,746,273. | contract | government/usaspending-hq003425fe388.txt |  |
 | 2025-09-30 | HQ003425FE405 awarded — Office of the Under Secretary of War for Policy, Office Management & Executive Support Services task order (parent 47QRAA22D00C4), $8,410,283. | contract | government/usaspending-hq003425fe405.txt |  |
 | 2025-12-19 | HQ085926FG471 awarded — MDA Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order (parent IDV HQ085926DG304), $500. | contract | government/usaspending-hq085926fg471.txt |  |
@@ -485,6 +548,9 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 - [`/organizations/arlo-solutions`]
 - [`/organizations/cdao`]
 - [`/organizations/dcaa`]
+- [`/organizations/department-of-justice`]
+- [`/organizations/department-of-the-army`]
+- [`/organizations/department-of-the-navy`]
 - [`/organizations/dod`]
 - [`/organizations/gao`]
 - [`/organizations/gsa`]
