@@ -317,20 +317,18 @@ affiliations:
 - id: a30
   added_date: '2026-04-30'
   organization_path: /organizations/mitre
-  role: Senior Adviser
+  role: Senior Adviser — role active as of the June 2021 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested, end date no later than the June 1 2021 USD(I&S) confirmation
   period_start: '2021'
   period_end: '2021-06'
-  note: Per the June 2021 ExecutiveBiz BlueVoyant article — 'He is also a senior adviser to Mitre, Resolute Consulting and Pallas'. Audit § 5.5 source. Specific period_start unattested in retrieved sources; the role was active as of the article's June 2021 publication and would have ended no later than Moultrie's June 1 2021 USD(I&S) confirmation.
   source:
     path: news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html
     location: ¶ biographical paragraph
 - id: a31
   added_date: '2026-04-30'
   organization_path: /organizations/pallas
-  role: Senior Adviser
+  role: Senior Adviser — role active as of the June 2021 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested, end date no later than the June 1 2021 USD(I&S) confirmation
   period_start: '2021'
   period_end: '2021-06'
-  note: Per the June 2021 ExecutiveBiz BlueVoyant article — 'He is also a senior adviser to Mitre, Resolute Consulting and Pallas'. Audit § 5.5 source. Specific period_start unattested in retrieved sources; the role was active as of the article's June 2021 publication and would have ended no later than Moultrie's June 1 2021 USD(I&S) confirmation.
   source:
     path: news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html
     location: ¶ biographical paragraph
@@ -1108,6 +1106,24 @@ entities_referenced:
   name: Harvard Kennedy School
   wrap_path: /organizations/harvard-kennedy-school
   context_summary: Senior Executive studies (post-graduate)
+- id: e44
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: BlueVoyant
+  wrap_path: /organizations/bluevoyant
+  context_summary: Cybersecurity firm; Moultrie named Vice Chairman of the Advisory Board June 2021 (concurrent with USD/I&S confirmation)
+- id: e45
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Mitre
+  wrap_path: /organizations/mitre
+  context_summary: Federally-funded R&D corporation; Moultrie listed as Senior Adviser per June 2021 ExecutiveBiz BlueVoyant article
+- id: e46
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Pallas
+  wrap_path: /organizations/pallas
+  context_summary: Moultrie listed as Senior Adviser per June 2021 ExecutiveBiz BlueVoyant article
 naming_quirks:
 - id: nq1
   added_date: '2026-04-29'

@@ -516,7 +516,7 @@ relationships:
 - id: r14
   added_date: '2026-04-29'
   person_path: /people/christopher-mellon
-  relationship: Former Deputy Assistant Secretary of Defense for Intelligence; Mellon and Kirkpatrick exchanged Signal messages in June 2023 (released under FOIA 24-F-0266) in which Kirkpatrick described his role as 'defending and adjudicating' AARO
+  relationship: Former Deputy Assistant Secretary of Defense for Intelligence; Mellon and Kirkpatrick exchanged Signal messages in June 2023 (released April 18 2024 under FOIA 24-F-0266); see Statements q36 and q37 for verbatim Kirkpatrick lines from the exchange
   source:
     path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
     location: release page
@@ -962,7 +962,7 @@ timeline:
   added_date: '2026-04-29'
   date: '2023-06-11'
   end_date: '2023-06-13'
-  event: Encrypted Signal text-message exchanges with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266; Mellon attempting to mediate between Grusch and AARO; Kirkpatrick told Mellon he was 'defending and adjudicating, and [Mellon was] undermining the very organization [Mellon] purported to help establish for this purpose'
+  event: Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) on Mellon's effort to mediate between Grusch and AARO; the exchange was released April 18 2024 under FOIA 24-F-0266 (BlackVault). Verbatim Kirkpatrick lines from the exchange are registered as Statements q36 and q37
   category: testimony
   source:
     path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
