@@ -7,7 +7,7 @@ created: '2026-04-30'
 description: 'Sancorp Consulting, LLC is a Falls Church, Virginia federal contractor that provides intelligence, counterintelligence, insider threat, and operations support services to the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S); the office and its parent department appear in 2025 source records as Office of the Under Secretary of War for Intelligence and Security and Department of War). Sancorp was founded July 28, 2016. Its Unique Entity Identifier is GRYKNJ8BGFC8 and its CAGE Code is 7NZQ9. Per HigherGov registry data the company''s SBA 8(a) Certification was Graduated August 26, 2017 to March 11, 2026; it also has Service-Disabled Veteran-Owned Small Business and Veteran-Owned Small Business certifications. GovCon in a Box lists Sancorp''s federal awards (under awarding agencies including the Department of Defense ([`/organizations/dod`]), the General Services Administration ([`/organizations/gsa`]), the Department of the Army, the Department of Justice, the Department of the Navy, and the Missile Defense Agency ([`/organizations/mda`]), with the Office of the Secretary of Defense ([`/organizations/osd`]) as the parent organization for the contracts issued via Washington Headquarters Services) at \$61.47M across 185 awards (First Award April 21, 2022; Last Award December 2, 2025).
 
 
-  Sancorp''s contract record with OUSD(I&S), awarded by Washington Headquarters Services, include HQ003418C0123 ("CI Metrics Study Support", September 27, 2018) and HQ003419C0159 ("Strengthening Insider Threat Support Services", September 20, 2019). In 2022 Sancorp was awarded two contracts that placed the same vendor inside two related OUSD(I&S) offices: HQ003422C0064 ("IPMO Support Services", June 9, 2022) supports the Influence and Perception Management Office (established March 1, 2022 per a memorandum from James A. Holly ([`/people/james-holly`]), Acting Director — see [`/documents/ipmo-notre-dame-memo-2022`]), and HQ003422C0094 ("AARO Support Services", September 1, 2022) supports the All-domain Anomaly Resolution Office. The AARO contract''s Performance Work Statement, released in full via FOIA case 23-F-1114, defines deliverables across Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support. The IPMO contract is described in Sancorp''s own Company News as "professional, administrative, and operational support services to the Influence and Perception Management Office (IPMO)" at OUSD(I&S).
+  Sancorp''s contract record with OUSD(I&S), awarded by Washington Headquarters Services, includes HQ003418C0123 ("CI Metrics Study Support", September 27, 2018) and HQ003419C0159 ("Strengthening Insider Threat Support Services", September 20, 2019). In 2022 Sancorp was awarded two contracts that placed the same vendor inside two related OUSD(I&S) offices: HQ003422C0064 ("IPMO Support Services", June 9, 2022) supports the Influence and Perception Management Office (established March 1, 2022 per a memorandum from James A. Holly ([`/people/james-holly`]), Acting Director — see [`/documents/ipmo-notre-dame-memo-2022`]), and HQ003422C0094 ("AARO Support Services", September 1, 2022) supports the All-domain Anomaly Resolution Office. The AARO contract''s Performance Work Statement ([`/documents/blackvault-sancorp-23-f-1114-aaro-pws`]), released in full via FOIA case 23-F-1114, defines deliverables across Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support. The contract was issued by WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) on solicitation HQ003422R0192; signed by Contracting Officer Jacqueline Verrine ([`/people/jacqueline-verrine`]) (Team Lead, Technical Analysis Branch, Enterprise Office Secretary of Defense ([`/organizations/whs-eosd`]), WHS Acquisition Directorate) on September 1, 2022. Section 7 information contact: Contract Specialist Rainie Wells ([`/people/rainie-wells`]). The contract was awarded under DFARS 252.219-7009 SECTION 8(A) DIRECT AWARD with the Small Business Administration Richmond District Office ([`/organizations/sba-richmond-district-office`]) as the cognizant SBA office; Defense Contract Audit Agency ([`/organizations/dcaa`]) DODAAC HAA47 audits the LH and T&M CLINs. The IPMO contract is described in Sancorp''s own Company News as "professional, administrative, and operational support services to the Influence and Perception Management Office (IPMO)" at OUSD(I&S).
 
 
   Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Threat Subcommittee in March 2021 and contributed to INSA''s October 2021 white paper "The Need for Transparency on Insider Threats: Improving Information Sharing Between Government and Industry" — published the same month. INSA''s September 2022 Insider Threat Program Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states that "Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S)." Subsequent Sancorp prime contracts include HQ003423C0061 and HQ003424C0046 ("Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" — IPMO continuation), HQ003424C0096 ("Exec. Admin, Ops, Policy & PPBE Sppt Svc" — AARO follow-on), HQ003424F0411 ("LABOR" — \$11.2M task order supporting Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction), HQ003425FE388 (Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations support), HQ003425FE405 (Office of the Under Secretary of War for Policy office management and executive support), and W519TC23F0545 (Chief Digital and Artificial Intelligence Office Algorithmic Warfare and Public Affairs). After GAO ([`/organizations/gao`]) denied Sancorp''s protest of two OUSD(I&S) call orders awarded to Premier Enterprise Solutions (Executive Directorate, EXDIR ([`/organizations/ousd-is-exdir`])) and Arlo Solutions (Sensitive Activities and Special Programs, SASP ([`/organizations/ousd-is-sasp`])) in B-422985.4, B-422985.5 (June 11, 2025), Sancorp also took on W912CL25CA005 (USSOUTHCOM Support to Special Technical Operations including Special Access Programs, Alternative and Compensatory Control Measures, Military Deception (MILDEC), and Intelligence Planning, June 30, 2025) and HQ085926FG471 (Missile Defense Agency Scalable Homeland Innovative Enterprise Layered Defense Initial Order, December 19, 2025). The August 2025 GSA OASIS+ 8(a) Contract award is described by Sancorp as covering "integrated solutions in Program Management, Engineering Services, Research & Development, and Intelligence Support to help federal agencies achieve mission success."
@@ -88,6 +88,10 @@ primary_sources:
     format: pdf
   - path: news/muckrock-foia-23-f-0905-wayback-20260430.html
     format: html
+  - path: government/foia-23-f-0905-doc-1-released.pdf
+    format: pdf
+  - path: government/foia-23-f-0905-doc-2-released.pdf
+    format: pdf
 document_intrinsic:
   contracting_agency: 'Washington Headquarters Services'
   period_of_performance: '2018-09-27 — ongoing'
@@ -265,6 +269,116 @@ quotes:
       location: 'OSD OP-5 FY 2026 Operation and Maintenance Budget Estimates, IPMO program description'
     significance: 'FY26 OSD OP-5 budget continuity statement on IPMO post-EO 14347 DoD-to-DoW rebrand. Adds new clause "management of designated compartmented programs" relative to FY23. Architecturally significant: this is the L1 doctrinal anchor that the Sancorp IPMO contract chain (HQ003422C0064 → HQ003423C0061 → HQ003424C0046) services.'
     statement_date: '2025'
+  - id: q18
+    added_date: '2026-04-30'
+    text: |
+      2. CONTRACT NO.: HQ003422C0094
+      3. SOLICITATION NO.: HQ003422R0192
+      4. TYPE OF SOLICITATION: [X] NEGOTIATED (RFP)
+      5. DATE ISSUED: 07 Jul 2022
+      6. REQUISITION/PURCHASE NO.: HQ0642268484-0001
+
+      7. ISSUED BY: WHS - ACQUISITION DIRECTORATE, 4800 MARK CENTER DRIVE, SUITE 09F09,
+         ALEXANDRIA VA 22350-0002
+         CODE: HQ0034
+    source:
+      path: government/foia-23-f-0905-doc-1-released.pdf
+      location: 'p. 1 of 34, SF 33 Solicitation, Offer and Award form (header)'
+    significance: 'Primary-source attestation of the AARO contract solicitation procurement details — RFP HQ003422R0192 issued July 7, 2022 by WHS Acquisition Directorate (DODAAC HQ0034) at 4800 Mark Center Drive, Alexandria VA — the same building referenced in the architecture handoff as the OUSD(I&S) contracting hub.'
+    statement_date: '2022-07-07'
+  - id: q19
+    added_date: '2026-04-30'
+    text: |
+      Section J - List of Documents, Exhibits and Other Attachments
+
+      Exhibit/Attachment Table of Contents
+
+      DOCUMENT TYPE   DESCRIPTION                       PAGES   DATE
+      Attachment 1    Performance Work Statement        28      11-JUL-2022
+      Attachment 2    NDA OCI                           5       21-JUN-2022
+      Attachment 3    Form DD 254                       11      21-JUN-2022
+    source:
+      path: government/foia-23-f-0905-doc-1-released.pdf
+      location: 'p. 34 of 34, Section J Attachment Table of Contents'
+    significance: 'Section J attachment manifest — the AARO contract incorporates a 28-page Performance Work Statement (Attachment 1), a 5-page Non-Disclosure Agreement / Organizational Conflict of Interest document (Attachment 2), and an 11-page Form DD 254 Department of Defense Contract Security Classification Specification (Attachment 3). The DD 254 attachment confirms the contract handles classified national-security information.'
+    statement_date: '2022-09-01'
+  - id: q20
+    added_date: '2026-04-30'
+    text: |
+      252.219-7009     SECTION 8(A) DIRECT AWARD (OCT 2018)
+
+      (a)  This contract is issued as a direct award between the contracting office and the 8(a)
+      Contractor pursuant to the Partnership Agreement between the Small Business Administration (SBA)
+      and the Department of Defense.  Accordingly, the SBA, even if not identified in Section A of this contract,
+      is the prime contractor and retains responsibility for 8(a) certification, for 8(a) eligibility determinations
+      and related issues, and for providing counseling and assistance to the 8(a) Contractor under the 8(a) Program.
+      The cognizant SBA district office is:
+
+                            Richmond District Office
+                            400 N 8th Street, Suite 1150
+                            Richmond, VA 23219
+    source:
+      path: government/foia-23-f-0905-doc-1-released.pdf
+      location: 'p. 33 of 34, Section I Contract Clauses, DFARS 252.219-7009 Section 8(a) Direct Award full-text clause'
+    significance: 'Primary-source attestation of the contract''s SBA Section 8(a) Direct Award procurement basis — confirms the SBA Richmond District Office as cognizant SBA office and that SBA is the technical prime contractor with WHS as the contracting office. Same procurement method as W912CL25CA005 USSOUTHCOM STO MILDEC contract per USAspending (8(A) Sole Source).'
+    statement_date: '2022-09-01'
+  - id: q21
+    added_date: '2026-04-30'
+    text: |
+      Jacqueline Verrine
+      Team Lead/Contracting Officer
+      Technical Analysis Branch (TAB)
+      Enterprise Office Secretary of Defense (EOSD)
+      Washington Headquarters Services (WHS)
+      Acquisition Directorate (AD)
+      Phone: 571.344.2931
+      Email: jacqueline.g.verrine.civ@mail.mil
+    source:
+      path: government/foia-23-f-0905-doc-2-released.pdf
+      location: 'p. 1 of 1, contracting-officer email signature block (September 1, 2022 contract-award notification)'
+    significance: 'Primary-source attestation of the AARO contract''s contracting officer''s organizational chain: Technical Analysis Branch (TAB) within Enterprise Office Secretary of Defense (EOSD) within WHS Acquisition Directorate. Establishes the precise WHS sub-unit responsible for OUSD(I&S) Sancorp contracts.'
+    statement_date: '2022-09-01'
+  - id: q22
+    added_date: '2026-04-30'
+    text: |
+      From:        Verrine, Jacqueline G CIV WHS AD (USA)
+      Sent:        Thursday, September 1, 2022 5:16 PM
+      To:          (b)(6)
+      Cc:          Wells, Rainie CIV (USA); OSD Pentagon OUSD Intel - Sec List CoS FMA
+      Subject:     Award: HQ003422C0094_AARO
+      Attachments: B02 HQ003422C0094_AARO.pdf
+    source:
+      path: government/foia-23-f-0905-doc-2-released.pdf
+      location: 'p. 1 of 1, email header'
+    significance: 'AARO contract-award notification email metadata, September 1, 2022 5:16 PM. The CC line documents an OUSD(I&S) Chief of Staff Front-Office distribution list ("OSD Pentagon OUSD Intel - Sec List CoS FMA") as a recipient of the contract-award notification — directly attesting that the Sancorp AARO contract award flowed through the OUSD(I&S) front-office security distribution at the moment of execution.'
+    statement_date: '2022-09-01'
+  - id: q23
+    added_date: '2026-04-30'
+    text: |
+      Sancorp Consulting, LLC, a small business of Falls Church, Virginia, protests the issuance of orders to Premier Enterprise Solutions, LLC, a small business of Upper Marlboro, Maryland, and Arlo Solutions, LLC, a small business of Washington, D.C., under request for quotations (RFQ) No. HQ003424R0178, issued by the Department of Defense, Washington Headquarters Service (WHS), for technical, administrative, and professional support services.
+    source:
+      path: government/gao-b-422985-wayback-20250708.html
+      location: 'GAO B-422985.4, B-422985.5 decision opening paragraph'
+    significance: 'GAO bid-protest decision verbatim opening — primary-source attestation of the protest framing: Sancorp (Falls Church VA) vs. Premier Enterprise Solutions (Upper Marlboro MD) and Arlo Solutions (Washington DC) under RFQ HQ003424R0178 issued by WHS for technical, administrative, and professional support services.'
+    statement_date: '2025-06-11'
+  - id: q24
+    added_date: '2026-04-30'
+    text: |
+      The RFQ provided a performance work statement (PWS) for the BPA’s general requirements, and specific PWSs for the two initial call orders that would be awarded concurrently with the establishment of the BPAs. AR, Tab 2a, BPA PWS; AR, Tab 11a, Call Order 1 (EXDIR) PWS; AR, Tab 11b, Call Order 2 (SASP) PWS. Under call order 1, the awardee is to provide services to the I&S Executive Directorate (EXDIR). AR, Tab 11a, EXDIR Call Order PWS at 1. With call order 2, the awardee will provide services to the Sensitive Activities & Special Programs (SASP) Office.
+    source:
+      path: government/gao-b-422985-wayback-20250708.html
+      location: 'GAO B-422985.4, B-422985.5 decision call-order subsection'
+    significance: 'Primary-source attestation of two named OUSD(I&S) sub-units — the I&S Executive Directorate (EXDIR) and the Sensitive Activities & Special Programs (SASP) Office — as the customers of the two RFQ HQ003424R0178 call orders. Architecturally significant as Layer 2 sub-unit attestation of the OUSD(I&S) operational structure that Sancorp services.'
+    statement_date: '2025-06-11'
+  - id: q25
+    added_date: '2026-04-30'
+    text: |
+      In September, WHS established a BPA with, and issued call order 1 (EXDIR) to, Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions. COS/MOL at 5. At the same time, WHS established a BPA with, and issued call order 2 (SASP) to, Sancorp. Id. Following notification of the awards, Arlo and Premier filed protests with our Office, challenging the agency’s evaluation and award decisions.
+    source:
+      path: government/gao-b-422985-wayback-20250708.html
+      location: 'GAO B-422985.4, B-422985.5 decision procedural-history subsection'
+    significance: 'Primary-source attestation that Sancorp originally won Call Order 2 (SASP) in September 2024 — Sancorp lost SASP in the corrective-action reevaluation, with Arlo Solutions awarded the SASP call order in 2025. The architecture-handoff''s framing of "Sancorp competitor cluster" understated this: Sancorp was inside the SASP customer chain for several months before being displaced by Arlo. Comprehensive Approach LLC d/b/a Comprehensive Approach Solutions (Vienna VA per handoff §3) won the EXDIR call order initially before later losing it to Premier in the same corrective action.'
+    statement_date: '2024-09'
 entities_referenced:
   - id: e1
     added_date: '2026-04-30'
@@ -398,6 +512,42 @@ entities_referenced:
     name: 'INSA Insider Threat Program Naming Convention paper (September 2022)'
     wrap_path: /documents/insa-naming-convention-2022
     context_summary: 'Trade-association white paper credited to INSA''s Insider Threat Subcommittee. Source for the OUSD(I&S) attribution of counter-insider-threat doctrine.'
+  - id: e29
+    added_date: '2026-04-30'
+    entity_type: person
+    name: 'Jacqueline G. Verrine'
+    wrap_path: /people/jacqueline-verrine
+    context_summary: 'Contracting Officer for AARO contract HQ003422C0094 — signed the contract September 1, 2022. Team Lead/Contracting Officer in Technical Analysis Branch (TAB) of Enterprise Office Secretary of Defense (EOSD) within WHS Acquisition Directorate.'
+  - id: e30
+    added_date: '2026-04-30'
+    entity_type: person
+    name: 'Rainie Wells'
+    wrap_path: /people/rainie-wells
+    context_summary: 'Contract Specialist on AARO contract HQ003422C0094 — Phone 202-913-5746, email rainie.wells.civ@mail.mil. Listed as Section 7 information contact on the contract solicitation form.'
+  - id: e31
+    added_date: '2026-04-30'
+    entity_type: organization
+    name: 'WHS Acquisition Directorate'
+    wrap_path: /organizations/whs-acquisition-directorate
+    context_summary: 'Sub-unit of Washington Headquarters Services that issues OUSD(I&S) prime contracts. DODAAC HQ0034 (Issue By + Admin). Located at 4800 Mark Center Drive, Suite 09F09, Alexandria VA 22350-0002.'
+  - id: e32
+    added_date: '2026-04-30'
+    entity_type: organization
+    name: 'WHS Enterprise Office Secretary of Defense'
+    wrap_path: /organizations/whs-eosd
+    context_summary: 'WHS Acquisition Directorate sub-unit hosting the Technical Analysis Branch (TAB) responsible for the Sancorp AARO contracting work per Verrine signature block.'
+  - id: e33
+    added_date: '2026-04-30'
+    entity_type: organization
+    name: 'Defense Contract Audit Agency'
+    wrap_path: /organizations/dcaa
+    context_summary: 'DCAA Auditor DODAAC HAA47 — designated as Defense Contract Audit Agency entry for LH and T&M CLINs on the AARO contract.'
+  - id: e34
+    added_date: '2026-04-30'
+    entity_type: organization
+    name: 'Small Business Administration Richmond District Office'
+    wrap_path: /organizations/sba-richmond-district-office
+    context_summary: 'Cognizant SBA district office for the Sancorp AARO contract per Section 8(a) Direct Award clause (DFARS 252.219-7009). Address: 400 N 8th Street, Suite 1150, Richmond, VA 23219.'
 naming_quirks:
   - id: nq1
     added_date: '2026-04-30'
@@ -487,6 +637,22 @@ naming_quirks:
     source_path: news/sancorp-careers-20260430.html
     resolution: preserve-as-sic-in-quotes
     note: 'Typo in Sancorp''s site navigation — appears across multiple Sancorp pages.'
+  - id: nq12
+    added_date: '2026-04-30'
+    observed: '(b)(4)'
+    canonical: '(b)(4)'
+    location: 'AARO contract HQ003422C0094 (FOIA 23-F-0905 doc-1 release) — multiple Section B Labor Schedule rate / quantity / amount cells; Section G Accounting and Appropriation amounts; Section G allotment-schedule amounts'
+    source_path: government/foia-23-f-0905-doc-1-released.pdf
+    resolution: preserve-as-sic-in-quotes
+    note: 'FOIA exemption marker for trade-secrets / commercial-confidential withholdings under 5 U.S.C. § 552(b)(4). Preserved verbatim in transcribed quotes; the marker indicates a redaction box rather than visible content. The Final Response cover letter (foia-23-f-0905-final-grant-in-part.pdf) cites (b)(4) as one of the two partial-release exemption bases applied across the 114 partially-redacted pages.'
+  - id: nq13
+    added_date: '2026-04-30'
+    observed: '(b)(6)'
+    canonical: '(b)(6)'
+    location: 'AARO contract HQ003422C0094 (FOIA 23-F-0905 doc-1 release) — Section B Block 15A Sancorp office line beneath company name; Section F ship-to addresses; Section G Technical POC / COR field; doc_2 email To-line recipient'
+    source_path: government/foia-23-f-0905-doc-1-released.pdf
+    resolution: preserve-as-sic-in-quotes
+    note: 'FOIA exemption marker for personal-privacy withholdings under 5 U.S.C. § 552(b)(6). Preserved verbatim in transcribed quotes; the marker indicates a redaction box rather than visible content. Per the Final Response cover letter, (b)(6) was applied to portions of the 114 partially-redacted pages.'
 rumors: []
 timeline:
   - id: t1
@@ -805,8 +971,6 @@ contracts:
     primary_counterparty_path: /organizations/aaro
     subject: 'AARO Support Services'
     value: '$4,061,786.51'
-    deliverables:
-      - /documents/blackvault-sancorp-23-f-1114-aaro-pws
     source:
       path: government/usaspending-hq003422c0094.txt
       location: '"description" field; solicitation HQ003422R0192; 8(A) Sole Source per latest_transaction_contract_data'

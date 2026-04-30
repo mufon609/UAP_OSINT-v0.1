@@ -1,0 +1,525 @@
+FOIA 23-F-0905 — Document 1 (released 2023-09-11; partial release of 125-page responsive set)
+Sancorp Consulting LLC AARO Support Services Contract HQ003422C0094
+Pages 1-34. Visual transcription via VLM page read; redactions preserved verbatim as
+"(b)(4)" (trade secrets / commercial confidential) and "(b)(6)" (personal privacy).
+
+================================================================================
+PAGE 1 of 34 — STANDARD FORM 33: SOLICITATION, OFFER AND AWARD
+================================================================================
+
+THIS CONTRACT IS A RATED ORDER UNDER DPAS (15 CFR 700)
+RATING: [blank]
+PAGE 1 OF 34 PAGES
+
+2. CONTRACT NO.: HQ003422C0094
+3. SOLICITATION NO.: HQ003422R0192
+4. TYPE OF SOLICITATION: [X] NEGOTIATED (RFP)
+5. DATE ISSUED: 07 Jul 2022
+6. REQUISITION/PURCHASE NO.: HQ0642268484-0001
+
+7. ISSUED BY: WHS - ACQUISITION DIRECTORATE, 4800 MARK CENTER DRIVE, SUITE 09F09,
+   ALEXANDRIA VA 22350-0002
+   CODE: HQ0034
+
+8. ADDRESS OFFER TO: See Item 7
+
+10. FOR INFORMATION CALL:
+   A. NAME: RAINIE WELLS
+   B. TELEPHONE: 202-913-5746 (NO COLLECT CALLS)
+   C. E-MAIL ADDRESS: rainie.wells.civ@mail.mil
+
+11. TABLE OF CONTENTS
+
+PART I - THE SCHEDULE
+   [X] A — SOLICITATION/CONTRACT FORM — Page 1
+   [X] B — SUPPLIES OR SERVICES AND PRICES/COSTS — Pages 2-14
+       C — DESCRIPTION/SPECS/WORK STATEMENT
+       D — PACKAGING AND MARKING
+   [X] E — INSPECTION AND ACCEPTANCE — Page 15
+   [X] F — DELIVERIES OR PERFORMANCE — Pages 16-18
+   [X] G — CONTRACT ADMINISTRATION DATA — Pages 19-23
+       H — SPECIAL CONTRACT REQUIREMENTS
+
+PART II - CONTRACT CLAUSES
+   [X] I — CONTRACT CLAUSES — Pages 24-33
+
+PART III - LIST OF DOCUMENTS, EXHIBITS AND OTHER ATTACHMENTS
+   [X] J — LIST OF ATTACHMENTS — Page 34
+
+PART IV - REPRESENTATIONS AND INSTRUCTIONS
+       K — REPRESENTATIONS, CERTIFICATIONS AND OTHER STATEMENTS OF OFFERORS
+   [X] L — INSTRS, CONDS, AND NOTICES TO OFFERORS
+       M — EVALUATION FACTORS FOR AWARD
+
+15A. NAME AND ADDRESS OF OFFEROR:
+   CODE: 7NZQ9
+   SANCORP CONSULTING
+   (b)(6)
+   3235 VALLEY LN
+   FALLS CHURCH VA 22044-1740
+
+15B. TELEPHONE NO.: 404-840-9330
+
+19. ACCEPTED AS TO ITEMS NUMBERED: [blank]
+20. AMOUNT: $1,915,834.08
+21. ACCOUNTING AND APPROPRIATION: See Schedule
+22. AUTHORITY FOR USING OTHER THAN FULL AND OPEN COMPETITION:
+    [X] 41 U.S.C. 253(c)( ) — solicitation contains no checked sub-paragraph
+
+25. PAYMENT WILL BE MADE BY:
+    WHS FINANCIAL MANAGEMENT DIRECTORATE
+    1155 DEFENSE PENTAGON
+    WASHINGTON DC 20301-1155
+    CODE: HQ0768
+
+26. NAME OF CONTRACTING OFFICER: JACQUELINE G. VERRINE
+   E-MAIL: jacqueline.g.verrine.civ@mail.mil
+
+27. UNITED STATES OF AMERICA — Signature of Contracting Officer: Jacqueline Verrine
+28. AWARD DATE: 01-Sep-2022
+
+================================================================================
+PAGES 2-14 — SECTION B: SUPPLIES OR SERVICES AND PRICES
+================================================================================
+
+PAGE 2 — ITEM NO. 0001 — AARO Support Services LH
+The contractor shall provide Executive Administrative Support Services in
+accordance with Section 5.2 of the Performance Work Statement (PWS), the
+attached documents and all other requirements listed in this document.
+LABOR SCHEDULE
+Category: (b)(4)
+Rate Title: (b)(4)
+Rate: (b)(4)
+FOB: Destination
+PURCHASE REQUEST NUMBER: HQ0642268484-0001
+R499
+ESTIMATED QUANTITY: (b)(4) Hours
+UNIT PRICE: (b)(4)
+TOT ESTIMATED PRICE / CEILING PRICE: (b)(4)
+ITEM NO. 000101 — Funding CLIN 0001 FFP — Funding CLIN 0001 in the amount of (b)(4)
+ACRN AA  CIN: HQ06422684840001000101
+
+PAGE 3 — ITEM NO. 0002 — AARO Support Services LH
+The contractor shall provide Strategy, Plans, and Policy Support Services in
+accordance with Section 5.3 of the Performance Work Statement (PWS), the
+attached documents and all other requirements listed in this document.
+LABOR SCHEDULE
+Category: Sr. Operations Specialist/Contract Task Lead
+Rate Title: Sr. Operations Specialist/Contract Task Lead
+Rate: (b)(4)
+FOB: Destination
+PURCHASE REQUEST NUMBER: HQ0642268484-0001  R499
+ITEM NO. 000201 — Funding CLIN 0002 FFP — Funding CLIN 0002 in the amount of (b)(4)
+ACRN AA  CIN: HQ06422684840001000201
+
+PAGE 4 — ITEM NO. 0003 — AARO Support Services LH
+The contractor shall provide Congressional Affairs, Public Affairs, and FOIA
+Support Services in accordance with Section 5.4 of the Performance Work
+Statement (PWS), the attached documents and all other requirements listed in this
+document.
+LABOR SCHEDULE
+Category: Sr. Congressional & Public Affairs Specialist/Advisor
+Rate Title: Sr. Congressional & Public Affairs Specialist/Advisor
+Rate: (b)(4)
+FOB: Destination
+PURCHASE REQUEST NUMBER: HQ0642268484-0001  R499
+ITEM NO. 000301 — Funding CLIN 0003 FFP — Funding CLIN 0003 in the amount of (b)(4)
+ACRN AA  CIN: HQ06422684840001000301
+
+PAGE 5 — ITEM NO. 0004 — AARO Support Services LH
+The contractor shall provide Data Architecture Support Services in accordance
+with Section 5.5 of the Performance Work Statement (PWS), the attached
+documents and all other requirements listed in this document.
+LABOR SCHEDULE
+Category: Sr. Data Architecture Specialist/Advisor
+Rate Title: Sr. Data Architecture Specialist/Advisor
+Rate: (b)(4)
+FOB: Destination
+PURCHASE REQUEST NUMBER: HQ0642268484-0001  R499
+ITEM NO. 000401 — Funding CLIN 0004 FFP — Funding CLIN 0004 in the amount of (b)(4)
+ACRN AA  CIN: HQ06422684840001000401
+
+PAGE 6 — ITEM NO. 0005 — AARO Support Services LH
+The contractor shall provide Planning, Programming, Budgeting and Executive
+Support Services in accordance with Section 5.6 of the Performance Work
+Statement (PWS), the attached documents and all other requirements listed in this
+document.
+LABOR SCHEDULE
+Category: Sr. PPBE Specialist/Advisor
+Rate Title: Sr. PPBE Specialist/Advisor
+Rate: (b)(4)
+FOB: Destination
+PURCHASE REQUEST NUMBER: HQ0642268484-0001  R499
+ITEM NO. 000501 — Funding CLIN 0005 FFP — Funding CLIN 0005 in the amount of (b)(4)
+ACRN AA  CIN: HQ06422684840001000501
+
+PAGE 7 — ITEM NO. 0006 — AARO Support Services LH
+The contractor shall provide Reporting Support Services in accordance with
+Section 5.7 of the Performance Work Statement (PWS), the attached documents
+and all other requirements listed in this document.
+LABOR SCHEDULE
+Category: Sr. Reporting Manager
+Rate Title: Sr. Reporting Manager
+Rate: (b)(4)
+FOB: Destination
+PURCHASE REQUEST NUMBER: HQ0642268484-0001  R499
+ITEM NO. 000601 — Funding CLIN 0006 FFP — Funding CLIN 0006 in the amount of (b)(4)
+ACRN AA  CIN: HQ06422684840001000601
+
+PAGE 8 — ITEM NO. 0007 — AARO Support Services LH
+The contractor shall provide Operations Support Services in accordance with
+Section 5.8 of the Performance Work Statement (PWS), the attached documents
+and all other requirements listed in this document.
+LABOR SCHEDULE
+Category: Operations Specialist
+Rate Title: Operations Specialist
+Rate: (b)(4)
+FOB: Destination
+PURCHASE REQUEST NUMBER: HQ0642268484-0001  R499
+ITEM NO. 000701 — Funding CLIN 0007 FFP — Funding CLIN 0007 in the amount of (b)(4)
+ACRN AA  CIN: HQ06422684840001000701
+
+PAGE 9 — ITEM NO. 0008 OPTION — AARO Support Services (OPTIONAL) LH
+The contractor shall provide Operations Support Services in accordance with
+Section 5.9 of the Performance Work Statement (PWS), the attached documents
+and all other requirements listed in this document.
+LABOR SCHEDULE
+Category: Operations Specialist
+Rate Title: Operations Specialist
+Rate: (b)(4)
+FOB: Destination  R499
+
+ITEM NO. 0009 — Contractor Travel T&M
+In accordance with FAR 31.205-46, Travel Cost, the contractor shall provide
+travel support in accordance with Section 1.6.13 of the Performance Work
+Statement, attached documents, and all other requirements listed in this document.
+LABOR SCHEDULE
+Category: Travel
+Rate Title: Travel
+Rate: 1.00
+Sub-Category: Travel
+FOB: Destination
+PURCHASE REQUEST NUMBER: HQ0642268484-0001  R499
+
+PAGE 10 — ITEM NO. 000901 — Funding CLIN 0009 FFP — Incrementally funding CLIN 0009 in the amount of (b)(4)
+ACRN AA  CIN: HQ06422684840001000901
+
+ITEM NO. 1001 OPTION — AARO Support Services LH
+The contractor shall provide Executive Administrative Support Services in
+accordance with Section 5.2 of the Performance Work Statement (PWS), the
+attached documents and all other requirements listed in this document.
+LABOR SCHEDULE
+Category: Sr. Executive Administrator
+Rate Title: Sr. Executive Administrator
+Rate: (b)(4)
+FOB: Destination  R499
+
+PAGE 11 — ITEM NO. 1002 OPTION — AARO Support Services LH
+The contractor shall provide Strategy, Plans, and Policy Support Services in
+accordance with Section 5.3 PWS.
+Category: Sr. Operations Specialist/Contract Task Lead
+
+ITEM NO. 1003 OPTION — AARO Support Services LH
+The contractor shall provide Congressional Affairs, Public Affairs, and FOIA
+Support Services in accordance with Section 5.4 PWS.
+Category: Sr. Congressional & Public Affairs Specialist/Advisor
+
+PAGE 12 — ITEM NO. 1004 OPTION — AARO Support Services LH
+The contractor shall provide Data Architecture Support Services in accordance
+with Section 5.5 PWS.
+Category: Sr. Data Architecture Specialist/Advisor
+
+ITEM NO. 1005 OPTION — AARO Support Services LH
+The contractor shall provide Planning, Programming, Budgeting and Executive
+Support Services in accordance with Section 5.6 PWS.
+Category: Sr. PPBE Specialist/Advisor
+
+PAGE 13 — ITEM NO. 1006 OPTION — AARO Support Services LH
+The contractor shall provide Reporting Support Services in accordance with
+Section 5.7 PWS.
+Category: Sr. Reporting Manager
+
+ITEM NO. 1007 OPTION — AARO Support Services LH
+The contractor shall provide Operations Support Services in accordance with
+Section 5.8 PWS.
+Category: Operations Specialist
+
+PAGE 14 — ITEM NO. 1008 OPTION — AARO Support Services (OPTIONAL) LH
+The contractor shall provide Operations Support Services in accordance with
+Section 5.9 PWS.
+Category: Operations Specialist
+
+ITEM NO. 1009 OPTION — Contractor Travel T&M
+In accordance with FAR 31.205-46, Travel Cost, the contractor shall provide
+travel support in accordance with Section 1.6.13 of the Performance Work
+Statement, attached documents, and all other requirements listed in this document.
+Category: travel
+Rate: 1.00
+
+================================================================================
+PAGE 15 — SECTION E: INSPECTION AND ACCEPTANCE
+================================================================================
+
+INSPECTION AND ACCEPTANCE TERMS
+
+Supplies/services will be inspected/accepted at:
+CLIN     INSPECT AT    INSPECT BY    ACCEPT AT     ACCEPT BY
+0001     Destination   Government    Destination   Government
+000101   N/A           N/A           N/A           N/A
+0002     Destination   Government    Destination   Government
+000201   N/A           N/A           N/A           N/A
+0003     Destination   Government    Destination   Government
+000301   N/A           N/A           N/A           N/A
+0004     Destination   Government    Destination   Government
+000401   N/A           N/A           N/A           N/A
+0005     Destination   Government    Destination   Government
+000501   N/A           N/A           N/A           N/A
+0006     Destination   Government    Destination   Government
+000601   N/A           N/A           N/A           N/A
+0007     Destination   Government    Destination   Government
+000701   N/A           N/A           N/A           N/A
+0008     Destination   Government    Destination   Government
+0009     Destination   Government    Destination   Government
+000901   N/A           N/A           N/A           N/A
+1001     Destination   Government    Destination   Government
+1002     Destination   Government    Destination   Government
+1003     Destination   Government    Destination   Government
+1004     Destination   Government    Destination   Government
+1005     Destination   Government    Destination   Government
+1006     Destination   Government    Destination   Government
+1007     Destination   Government    Destination   Government
+1008     Destination   Government    Destination   Government
+1009     Destination   Government    Destination   Government
+
+CLAUSES INCORPORATED BY REFERENCE
+52.246-6  Inspection--Time-And-Material And Labor-Hour  MAY 2001
+
+================================================================================
+PAGES 16-18 — SECTION F: DELIVERIES OR PERFORMANCE
+================================================================================
+
+DELIVERY INFORMATION
+
+CLIN    DELIVERY DATE              QUANTITY  SHIP TO ADDRESS    DODAAC/CAGE
+0001    POP 01-SEP-2022 TO         N/A       (b)(6) FOB:        HQ0208
+        31-AUG-2023                          Destination
+000101  N/A                        N/A       N/A                N/A
+0002    POP 01-SEP-2022 TO         N/A       (b)(6) FOB:        HQ0208
+        31-AUG-2023                          Destination
+000201  N/A                        N/A       N/A                N/A
+0003    POP 01-SEP-2022 TO         N/A       (b)(6) FOB:        HQ0208
+        31-AUG-2023                          Destination
+000301  N/A                        N/A       N/A                N/A
+0004    POP 01-SEP-2022 TO         N/A       (b)(6) FOB:        HQ0208
+        31-AUG-2023                          Destination
+000401  N/A                        N/A       N/A                N/A
+0005    POP 01-SEP-2022 TO         N/A       (b)(6) FOB:        HQ0208
+        31-AUG-2023                          Destination
+000501  N/A                        N/A       N/A                N/A
+0006    POP 01-SEP-2022 TO         N/A       (b)(6) FOB:        HQ0208
+        31-AUG-2023                          Destination
+000601  N/A                        N/A       N/A                N/A
+0007    POP 01-SEP-2022 TO         N/A       (b)(6) FOB:        HQ0208
+        31-AUG-2023                          Destination
+000701  N/A                        N/A       N/A                N/A
+0008    POP 01-SEP-2022 TO         N/A       (b)(6) FOB:        HQ0208
+        31-AUG-2023                          Destination
+0009    POP 01-SEP-2022 TO         N/A       (SAME AS PREVIOUS  HQ0208
+        31-AUG-2023                          LOCATION) FOB:
+                                             Destination
+000901  N/A                        N/A       N/A                N/A
+1001    POP 01-SEP-2023 TO         N/A       (b)(6) FOB:        HQ0208
+        31-AUG-2024                          Destination
+1002    POP 01-SEP-2023 TO         N/A       (SAME AS PREVIOUS  HQ0208
+        31-AUG-2024                          LOCATION) FOB:
+                                             Destination
+1003    POP 01-SEP-2023 TO         N/A       (SAME AS PREVIOUS  HQ0208
+        31-AUG-2024                          LOCATION)
+1004    POP 01-SEP-2023 TO         N/A       (SAME AS PREVIOUS  HQ0208
+        31-AUG-2024                          LOCATION)
+1005    POP 01-SEP-2023 TO         N/A       (SAME AS PREVIOUS  HQ0208
+        31-AUG-2024                          LOCATION)
+1006    POP 01-SEP-2023 TO         N/A       (SAME AS PREVIOUS  HQ0208
+        31-AUG-2024                          LOCATION)
+1007    POP 01-SEP-2023 TO         N/A       (SAME AS PREVIOUS  HQ0208
+        31-AUG-2024                          LOCATION)
+1008    POP 01-SEP-2023 TO         N/A       (SAME AS PREVIOUS  HQ0208
+        31-AUG-2024                          LOCATION)
+1009    POP 01-SEP-2023 TO         N/A       (SAME AS PREVIOUS  HQ0208
+        31-AUG-2024                          LOCATION)
+
+================================================================================
+PAGES 19-23 — SECTION G: CONTRACT ADMINISTRATION DATA
+================================================================================
+
+ACCOUNTING AND APPROPRIATION DATA
+
+AA: ^^^097^2022^2023^^0400^000^^251^D^0305245D8Z^^^^^1100^00008522^012215^USDI^OSD -
+OUSD(INTEL^USDI_060305245D8Z245^22_0400D_0305245^251.10 Manageme^^^
+AMOUNT: (b)(4)
+
+ACRN  CLIN/SLIN  CIN
+AA    000101     HQ06422684840001000101
+      000201     HQ06422684840001000201
+      000301     HQ06422684840001000301
+      000401     HQ06422684840001000401
+      000501     HQ06422684840001000501
+      000601     HQ06422684840001000601
+      000701     HQ06422684840001000701
+      000901     HQ06422684840001000901
+AMOUNT: (b)(4)
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+252.232-7006 WIDE AREA WORKFLOW PAYMENT INSTRUCTIONS (DEC 2018)
+
+Routing Data Table:
+Pay Official DoDAAC: HQ0768
+Issue By DoDAAC: HQ0034
+Admin DoDAAC: HQ0034
+Inspect By DoDAAC: HQ0208
+Ship To Code: N/A
+Ship From Code: N/A
+Mark For Code: N/A
+Service Approver (DoDAAC): HQ0208
+Service Acceptor (DoDAAC): HQ0208
+Accept at Other DoDAAC: N/A
+LPO DoDAAC: N/A
+DCAA Auditor DoDAAC: HAA47 for LH and T&M CLINs
+Other DoDAAC(s): N/A
+
+WAWF Email Notifications. The Contractor shall enter the email addresses identified
+below in the "Send Additional Email Notifications" field of WAWF once a document is
+submitted in the system:
+Technical POC / Contracting Officer's Representative (COR): (b)(6)
+Contract Specialist: rainie.wells.civ@mail.mil
+Contracting Officer: jacqueline.g.verrine.civ@mail.mil
+
+(g) WAWF point of contact.
+(2) Contact the WAWF helpdesk at 866-618-5988, if assistance is needed.
+
+252.232-7007 LIMITATION OF GOVERNMENT'S OBLIGATION (APR 2014)
+
+(a) Contract line item 0009 is incrementally funded. For this item, the sum of (b)(4) of
+the total price is presently available for payment and allotted to this contract.
+
+(j) The parties contemplate that the Government will allot funds to this contract in
+accordance with the following schedule:
+On execution of contract, the sum of (b)(4) is presently available. The remaining
+balance of (b)(4) will be provided as needed.
+
+================================================================================
+PAGES 24-33 — SECTION I: CONTRACT CLAUSES
+================================================================================
+
+CLAUSES INCORPORATED BY REFERENCE (selected — full clause list in source):
+
+52.202-1  Definitions  JUN 2020
+52.203-3  Gratuities  APR 1984
+52.203-5  Covenant Against Contingent Fees  MAY 2014
+52.203-6  Restrictions On Subcontractor Sales To The Government  JUN 2020
+52.203-7  Anti-Kickback Procedures  JUN 2020
+52.203-8  Cancellation, Rescission, and Recovery of Funds for Illegal or Improper Activity  MAY 2014
+52.203-12 Limitation On Payments To Influence Certain Federal Transactions  JUN 2020
+52.203-15 Whistleblower Protections Under the American Recovery and Reinvestment Act of 2009  JUN 2010
+52.203-17 Contractor Employee Whistleblower Rights and Requirement To Inform Employees of Whistleblower Rights  JUN 2020
+52.203-19 Prohibition on Requiring Certain Internal Confidentiality Agreements or Statements  JAN 2017
+52.204-2  Security Requirements  MAR 2021
+52.204-9  Personal Identity Verification of Contractor Personnel  JAN 2011
+52.204-23 Prohibition on Contracting for Hardware, Software, and Services Developed or Provided by Kaspersky Lab and Other Covered Entities  NOV 2021
+52.204-25 Prohibition on Contracting for Certain Telecommunications and Video Surveillance Services or Equipment  NOV 2021
+52.219-8  Utilization of Small Business Concerns  OCT 2018
+52.219-9  Small Business Subcontracting Plan  NOV 2021
+52.222-50 Combating Trafficking in Persons  NOV 2021
+52.225-13 Restrictions on Certain Foreign Purchases  FEB 2021
+52.232-7  Payments Under Time-And-Materials And Labor-Hour Contracts  NOV 2021
+52.237-2  Protection Of Government Buildings, Equipment, And Vegetation  APR 1984
+52.243-3  Changes--Time-And-Material Or Labor-Hours  SEP 2000
+52.245-1  Government Property  SEP 2021
+52.246-6  Limitation Of Liability--Services  FEB 1997
+52.249-4  Termination For Convenience Of The Government (Services) (Short Form)  APR 1984
+52.249-9  Default (Fixed-Priced Research And Development)  APR 1984
+52.249-14 Excusable Delays  APR 1984
+252.203-7000  Requirements Relating to Compensation of Former DoD Officials  SEP 2011
+252.204-7012  Safeguarding Covered Defense Information and Cyber Incident Reporting  DEC 2019
+252.204-7020  NIST SP 800-171 DoD Assessment Requirements  MAR 2022
+252.204-7021  Contractor Compliance with the Cybersecurity Maturity Model Certification Level Requirement  NOV 2020
+252.204-7022  Expediting Contract Closeout  MAY 2021
+252.204-7023  Reporting Requirements for Contracted Services  JUL 2021
+252.225-7048  Export-Controlled Items  JUN 2013
+252.225-7053  Representation Regarding Prohibition on Use of Certain Energy Sourced from Inside the Russian Federation  AUG 2021
+252.225-7978 (Dev)  Restriction on Acquisition of Certain Magnets and Tungsten. (DEVIATION 2019-O0006)  JAN 2019
+252.225-7979 (Dev)  Additional Access to Contractor and Subcontractor Records in the United States Central Command Theater of Operations (DEVIATION 2018-O0008)  DEC 2017
+252.227-7013  Rights in Technical Data--Noncommercial Items  FEB 2014
+252.232-7003  Electronic Submission of Payment Requests and Receiving Reports  DEC 2018
+252.237-7010  Prohibition on Interrogation of Detainees by Contractor Personnel  JUN 2013
+252.239-7001  Information Assurance Contractor Training and Certification  JAN 2008
+252.245-7001  Tagging, Labeling, and Marking of Government-Furnished Property  APR 2012
+252.245-7002 (Dev)  Reporting Loss of Government Property (DEVIATION 2020-O0004)  JAN 2021
+252.245-7003  Contractor Property Management System Administration  APR 2012
+252.245-7004  Reporting, Reutilization, and Disposal  DEC 2017
+252.247-7023  Transportation of Supplies by Sea  FEB 2019
+
+CLAUSES INCORPORATED BY FULL TEXT
+
+52.217-9  OPTION TO EXTEND THE TERM OF THE CONTRACT (MAR 2000)
+(c) The total duration of this contract, including the exercise of any options under this
+clause, shall not exceed 24 months.
+
+52.219-14  LIMITATIONS ON SUBCONTRACTING (DEVIATION 2021-O0008) (SEP 2021)
+(f) The Contractor shall comply with the limitations on subcontracting as follows:
+[X] By the end of the base term of the contract and then by the end of each subsequent
+option period.
+
+52.219-28  POST-AWARD SMALL BUSINESS PROGRAM REREPRESENTATION (SEP 2021)
+
+(h) Contractor representation:
+(1) The Contractor represents that it [X] is, [ ] is not a small business concern under NAICS
+Code assigned to contract number.
+(2) The Contractor represents that it [X] is, [ ] is not, a small disadvantaged business as
+defined in 13 CFR 124.1002.
+(3) The Contractor represents that it [ ] is, [X] is not a women-owned small business concern.
+(6) The Contractor represents that it [X] is, [ ] is not a veteran-owned small business
+concern.
+(7) The Contractor represents that it [X] is, [ ] is not a service-disabled veteran-owned
+small business concern.
+(8) (i) The Contractor represents that it [ ] is, [X] is not a HUBZone small business concern.
+
+52.233-3  PROTEST AFTER AWARD (AUG 1996)
+
+52.252-2  CLAUSES INCORPORATED BY REFERENCE (FEB 1998)
+FAR: https://www.acquisition.gov/browse/index/far
+DFARS: https://www.acquisition.gov/dfars
+
+52.252-6  AUTHORIZED DEVIATIONS IN CLAUSES (NOV 2020)
+
+252.201-7000  CONTRACTING OFFICER'S REPRESENTATIVE (DEC 1991)
+
+252.219-7009  SECTION 8(A) DIRECT AWARD (OCT 2018)
+(a) This contract is issued as a direct award between the contracting office and the 8(a)
+Contractor pursuant to the Partnership Agreement between the Small Business
+Administration (SBA) and the Department of Defense. Accordingly, the SBA, even if
+not identified in Section A of this contract, is the prime contractor and retains
+responsibility for 8(a) certification, for 8(a) eligibility determinations and related issues,
+and for providing counseling and assistance to the 8(a) Contractor under the 8(a) Program.
+The cognizant SBA district office is:
+   Richmond District Office
+   400 N 8th Street, Suite 1150
+   Richmond, VA 23219
+
+================================================================================
+PAGE 34 of 34
+================================================================================
+
+Section J - List of Documents, Exhibits and Other Attachments
+
+Exhibit/Attachment Table of Contents
+
+DOCUMENT TYPE   DESCRIPTION                       PAGES   DATE
+Attachment 1    Performance Work Statement        28      11-JUL-2022
+Attachment 2    NDA OCI                           5       21-JUN-2022
+Attachment 3    Form DD 254                       11      21-JUN-2022
+
+================================================================================
+END OF DOCUMENT 1 (34 pages)
+================================================================================

@@ -187,7 +187,17 @@
   archived_date: '2026-04-30'
   sha256: aabc7b540bd23b48dd378cf1b598a546125dcec694b33b4955e2a221bdb49498
   archive_status: 1
+  extraction_type: ocr-scan
   note: FOIA 23-F-0905 partial release — doc_1.pdf (34 pages, scanned/OCR PDF, 7.5MB). Released by DoD FOID Sept 11, 2023 in partial response to Skvarla's request for Sancorp AARO contract HQ003422C0094 records. Per the Final Response cover letter, this represents the 114-page-with-redactions portion (or a subset thereof; pdftotext returns no text — text extraction requires VLM read or modern OCR pass).
+- url: https://cdn.muckrock.com/foia_files/2023/09/11/23-F-0905_doc_1.pdf#txt-sibling
+  format: txt
+  status: archived
+  wayback_skip: true
+  path: government/foia-23-f-0905-doc-1-released.txt
+  archived_date: '2026-04-30'
+  sha256: 9d6b7fdb187b3c9a5ce8c0bba84ef3d3e2aa0e767b8cb42afd32ff3b8ed006e7
+  archive_status: 1
+  note: 'Contributor-produced clean-text transcription (.txt sibling) of foia-23-f-0905-doc-1-released.pdf, produced 2026-04-30 via VLM page read. The PDF has no text layer (pdftotext returns empty); per BACKLOG #19 OCR-scan discipline the validator''s extract_source_text prefers this same-stem .txt sibling over pdftotext output. Visual transcription preserves redaction markers (b)(4) and (b)(6) as written. Companion to PDF entry with extraction_type: ocr-scan.'
 - url: https://cdn.muckrock.com/foia_files/2023/09/11/23-F-0905_doc_2.pdf
   format: pdf
   status: archived
@@ -195,7 +205,17 @@
   archived_date: '2026-04-30'
   sha256: c076c2ca945edf75ae02a311ee80e4129033eec605802345d7a401817d7acfe6
   archive_status: 1
+  extraction_type: ocr-scan
   note: FOIA 23-F-0905 partial release — doc_2.pdf (1 page). Released by DoD FOID Sept 11, 2023. Companion to doc_1.pdf in the AARO contract HQ003422C0094 partial release. pdftotext returns minimal content; likely a heavily-redacted page requiring VLM read.
+- url: https://cdn.muckrock.com/foia_files/2023/09/11/23-F-0905_doc_2.pdf#txt-sibling
+  format: txt
+  status: archived
+  wayback_skip: true
+  path: government/foia-23-f-0905-doc-2-released.txt
+  archived_date: '2026-04-30'
+  sha256: e5a9068c830f3a555c999fa27d7c535c7c18c56ebc675e007cfe072e2abb37ad
+  archive_status: 1
+  note: 'Contributor-produced clean-text transcription (.txt sibling) of foia-23-f-0905-doc-2-released.pdf, produced 2026-04-30 via VLM page read. The PDF has no text layer; per BACKLOG #19 OCR-scan discipline the validator''s extract_source_text prefers this same-stem .txt sibling over pdftotext output. Document content: contract-award notification email from Jacqueline Verrine (Contracting Officer, WHS AD) to Rainie Wells, Sept 1, 2022 5:16 PM, CC OSD Pentagon OUSD Intel - Sec List CoS FMA distribution list, Subject: Award: HQ003422C0094_AARO.'
 - url: https://cdn.muckrock.com/foia_files/2023/09/11/Final_Response_-_Grant_in_Part_23-F-0905.pdf
   format: pdf
   status: archived
