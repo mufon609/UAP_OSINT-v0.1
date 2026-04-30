@@ -103,16 +103,18 @@
   path: government/hasc-iso-moultrie-witness-statement-20220317.pdf
   archived_date: '2026-04-29'
   sha256: 8d11fb0782ee01be689bec2afb5c3f9030d35fc6e8ae23e8eab2747dbb9cee0c
-  archive_status: 1
+  archive_status: 3
   note: 'Ronald S. Moultrie''s prepared remarks as USD(I&S) before the House Armed Services Committee Subcommittee on Intelligence and Special Operations, March 17, 2022. FY23 Defense Intelligence and Security Enterprise posture hearing. Chairman Gallego, Ranking Member Kelly. Co-witnesses: Gen. Nakasone and Gen. Berrier. Direct retrieval blocked (armedservices.house.gov returns 403); fetched via Wayback Machine capture 2022-09-22.'
+  wayback_date: '2022-09-22'
 - url: https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2021/04/02/president-biden-announces-his-intent-to-nominate-key-members-for-the-department-of-defense/
   format: html
   status: archived
   path: government/biden-whitehouse-archives-moultrie-nomination-announcement-20210402.html
   archived_date: '2026-04-30'
   sha256: 219a853f569012ab0090df6461c4f42b2a03b561eae89f81743e6b52f96d0a79
-  archive_status: 1
+  archive_status: 3
   note: 'Biden White House nomination announcement (April 2 2021): ''President Biden Announces his Intent to Nominate Key Members for the Department of Defense'' — names Ronald Moultrie for Under Secretary of Defense for Intelligence and Security. Source for the formal nomination date in audit § 5.1 confirmation chronology.'
+  wayback_date: '2026-01-22'
 - url: https://burchett.house.gov/media/press-releases/congressman-burchetts-statement-after-uap-hearing-held-house-oversight
   format: html
   status: archived
@@ -153,6 +155,83 @@
   sha256: c2d8c9fc7d8e5c6ccbb8600ba70733c0ddaa284c81759c55a40f4f49d2d77bcc
   archive_status: 3
   wayback_date: '2025-10-18'
+- url: https://cdn.muckrock.com/foia_files/2023/05/23/23-F-0905_Interim_Response.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-f-0905-interim-response.pdf
+  archived_date: '2026-04-30'
+  sha256: a5074a9e65332829147dd93a24ca8e1a018213ab87fc017da107fd796868273f
+  archive_status: 3
+  note: FOIA 23-F-0905 interim response from DoD FOID, May 23, 2023, citing FOIA 'unusual circumstances' as basis for delay beyond statutory 20-day response window.
+  wayback_date: '2026-04-30'
+- url: https://cdn.muckrock.com/foia_files/2023/05/24/23-F-0906_Interim_Response.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-f-0906-interim-response.pdf
+  archived_date: '2026-04-30'
+  sha256: c9fc4e70a593d1c6613c2b63aacc44155997acfc6e66ef83328c2de793e9c158
+  archive_status: 1
+  note: 'FOIA 23-F-0906 interim response from DoD FOID, May 24, 2023, citing FOIA ''unusual circumstances'' as basis for delay. Specifically: ''we do not actually hold their records and our office is not geographically located with these organizations. As we do not hold the records, until the required record searches are complete, we are unable to estimate the potential volume of records or the number of consultations that will be needed.'' Status remained ''Awaiting Response'' as of April 2026.'
+- url: https://cdn.muckrock.com/foia_files/2023/05/24/23-F-0906_Request_Description.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-f-0906-request-description.pdf
+  archived_date: '2026-04-30'
+  sha256: 4ff7e9f3707a4fd0ecd5c965c03f716c07141c4fcb9f70057788b0e48152417d
+  archive_status: 1
+  note: FOIA 23-F-0906 request description (Skvarla's original filing reproduced as PDF by DoD FOID, May 24, 2023). Documents the IPMO contract HQ003422C0064 record request scope.
+- url: https://cdn.muckrock.com/foia_files/2023/09/11/23-F-0905_doc_1.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-f-0905-doc-1-released.pdf
+  archived_date: '2026-04-30'
+  sha256: aabc7b540bd23b48dd378cf1b598a546125dcec694b33b4955e2a221bdb49498
+  archive_status: 1
+  note: FOIA 23-F-0905 partial release — doc_1.pdf (34 pages, scanned/OCR PDF, 7.5MB). Released by DoD FOID Sept 11, 2023 in partial response to Skvarla's request for Sancorp AARO contract HQ003422C0094 records. Per the Final Response cover letter, this represents the 114-page-with-redactions portion (or a subset thereof; pdftotext returns no text — text extraction requires VLM read or modern OCR pass).
+- url: https://cdn.muckrock.com/foia_files/2023/09/11/23-F-0905_doc_2.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-f-0905-doc-2-released.pdf
+  archived_date: '2026-04-30'
+  sha256: c076c2ca945edf75ae02a311ee80e4129033eec605802345d7a401817d7acfe6
+  archive_status: 1
+  note: FOIA 23-F-0905 partial release — doc_2.pdf (1 page). Released by DoD FOID Sept 11, 2023. Companion to doc_1.pdf in the AARO contract HQ003422C0094 partial release. pdftotext returns minimal content; likely a heavily-redacted page requiring VLM read.
+- url: https://cdn.muckrock.com/foia_files/2023/09/11/Final_Response_-_Grant_in_Part_23-F-0905.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-f-0905-final-grant-in-part.pdf
+  archived_date: '2026-04-30'
+  sha256: 02e8bb3080e41a2d34b73874ac82e0428c689afa2cce39abbed792b513d48598
+  archive_status: 3
+  note: 'FOIA 23-F-0905 Final Response (Grant in Part) cover letter from DoD FOID, Sept 11, 2023. Signed by Stephanie L. Carr, Chief, Freedom of Information Division. Documents: 125 pages identified responsive; 11 pages withheld in entirety under 5 U.S.C. § 552(b)(5) deliberative-process; portions of remaining 114 pages exempt under (b)(4) trade secrets/commercial-confidential and (b)(6) personal privacy. Initial Denial Authority: Ms. Paulette Creighton, Division Director, Enterprise Acquisition Policy & Strategic Initiatives. Acquisition Directorate searched for and found no responsive records in the categories Correspondence, Requests for Information, Memorandums of Understanding, Letters of Interest, Task Letters, Privacy Impact Assessments, and Sancorp Presentations.'
+  wayback_date: '2026-04-30'
+- url: https://cdn.muckrock.com/foia_files/2024/08/22/23-A-0905-A1_Appellate_Response.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-a-0905-a1-appellate-response.pdf
+  archived_date: '2026-04-30'
+  sha256: a63478f810fab06e703991728f0532dd8370d3ad15e5e5b106b07eaa9ad00491
+  archive_status: 3
+  note: 'DoD/PCLT Appellate Response to FOIA 23-A-0905-A1, dated Aug 21, 2024. Joo Y. Chung (Assistant to the Secretary of Defense for Privacy, Civil Liberties, and Transparency) AFFIRMED FOID''s withholding decision: ''I am affirming FOID''s action on your request. By letter dated September 11, 2023, FOID released to you 114 pages in part and 11 pages were denied in full. I have determined that FOID''s response was correct and that it conducted an adequate, reasonable search for responsive records subject to the FOIA.'' Skvarla''s only remaining recourse: federal district court litigation per 5 U.S.C. § 552(a)(4)(B). The handoff §11 statement that ''MDR not filed'' was incorrect — appeal was filed and denied.'
+  wayback_date: '2026-04-30'
+- url: https://cdn.muckrock.com/outbound_request_attachments/rskva102/145992/Skvarla_-_23-F-0905_-_Appeal.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-f-0905-skvarla-appeal.pdf
+  archived_date: '2026-04-30'
+  sha256: 63d8dbc15f7a533921040db5fa60e7452da9bf75be8d89c2c337004c32d51ad4
+  archive_status: 3
+  note: Robert Skvarla's FOIA appeal (case 23-A-0905-A1), filed Sept 18, 2023 with PCLT (Joo Chung). Argues that DoD's Acquisition Directorate response improperly skipped 'Statements of Work' / 'Performance Work Statement' between Requests for Information and MOUs in their search categories. Cites the 2014 Clemens PWS Writing Tips presentation as evidence that SOW = PWS.
+  wayback_date: '2026-04-30'
+- url: https://cdn.muckrock.com/outbound_request_attachments/rskva102/145992/april-2015-clemens-pws-presentation-final-1523974380.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-f-0905-clemens-pws-2015-released.pdf
+  archived_date: '2026-04-30'
+  sha256: 84579fba09df05238c6028a00de6ca76f7143656e25736dc2aae8407140b4920
+  archive_status: 3
+  note: WHS Acquisition Directorate 'PWS Writing Tips' training presentation by Dave Clemens, dated April 16, 2014 (filename references 2015 distribution). 43-page slide deck. Cited by Skvarla in his 23-F-0905 appeal as evidence that DoD's own training material identifies Statement of Work (SOW) and Performance Work Statement (PWS) as synonymous. Hosted on hallways.cap.gsa.gov per Skvarla's appeal letter.
+  wayback_date: '2026-04-30'
 - url: https://chancellor.syr.edu/university-leadership-2/chancellors-executive-team/alex-dietrich/
   format: html
   status: archived
@@ -162,6 +241,24 @@
   archive_status: 3
   note: Syracuse University Chancellor's Office bio page for Alex Dietrich, Interim Chief Human Resources Officer. Institutional primary source attesting her current professional role and prior career summary as of 2026.
   wayback_date: '2026-03-05'
+- url: https://comptroller.defense.gov/Portals/45/Documents/defbudget/fy2023/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf
+  format: pdf
+  status: archived
+  path: government/osd-op5-fy23-wayback-20241116.pdf
+  archived_date: '2026-04-30'
+  sha256: 910a01a5cb3aaa99845e5524e9a2c89cafa83a0a9e8af94fb2b629310adf4868
+  archive_status: 3
+  note: 'FY 2023 Office of the Secretary of Defense Operation and Maintenance Budget Estimates (OSD OP-5). Direct comptroller.defense.gov fetch returns 403 (per sources-access.md DoD pattern); archived via Wayback Machine snapshot from 2024-11-16. Contains primary-source attestation of IPMO''s establishment and statutory mission: ''The Influence and Perception Management Office will serve as the senior advisor to the USD(I&S) for strategic and operational influence and perception management (reveal and conceal) matters'' — first appearance of IPMO in unclassified DoD budget documents per Klippenstein/Intercept reporting. The ''reveal and conceal'' phrase is the L1 doctrinal anchor for the architecture investigation.'
+  wayback_date: '2025-06-15'
+- url: https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2026/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf
+  format: pdf
+  status: archived
+  path: government/osd-op5-fy26-wayback-20260201.pdf
+  archived_date: '2026-04-30'
+  sha256: e361505305a35a1615437e876f0f8d06db090e5a38b5e7b8ad6bd598c406bb5e
+  archive_status: 3
+  note: 'FY 2026 Office of the Secretary of Defense Operation and Maintenance Budget Estimates (OSD OP-5). Hosted on comptroller.war.gov post-EO 14347 DoD→DoW rebrand. Direct fetch returns 403; archived via Wayback Machine snapshot from 2026-02-01. Contains: (1) IPMO continuity language with new ''management of designated compartmented programs'' clause and ''oversight and governance of deception activities, oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities''; (2) the Advanced Intelligence Capabilities (AIC) budget-line rename of AARO with mandate language preserved verbatim (''synchronizes efforts across the Department... to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks''); (3) Strategy Coordination Program Office (SCPO) reference (handoff §3 Layer 2). Primary-source confirmation of the April 29 2026 PDF finding that AARO branding persists publicly while AIC replaces AARO at budget-line level.'
+  wayback_date: '2026-02-01'
 - url: https://defensescoop.com/2023/07/31/uap-hearing-sparks-clash-between-pentagon-officials-witnesses/
   format: html
   status: archived
@@ -483,8 +580,9 @@
   path: news/mondovisione-c5-partners-moultrie-nsa-20170306.html
   archived_date: '2026-04-30'
   sha256: 15c0bd8c0442ab6f5212d98b41310acc4b2e726bb166aa8b23bf9fbfa46d0b40
-  archive_status: 1
+  archive_status: 3
   note: 'C5 Capital announcement (March 6, 2017): C5 Partners appoints former NSA Director of Operations Ron Moultrie. Source for audit § 5.2 — Moultrie joined C5 Capital as Strategic Partner in early 2017.'
+  wayback_date: '2018-05-17'
 - url: https://newparadigminstitute.org/learn/library/using-the-wall-street-journal-the-pentagon-is-gaslighting-the-public-on-ufos-again/
   format: html
   status: archived
@@ -992,16 +1090,18 @@
   path: government/armed-services-senate-gov-moultrie-advance-policy-questions-20210527.pdf
   archived_date: '2026-04-30'
   sha256: b1b362a632d13d3478e94f3913cef494ba5babd4852a3f1e20f371bd2c6cc3fe
-  archive_status: 1
+  archive_status: 3
   note: Moultrie's Advance Policy Questions (APQ) responses submitted to the Senate Armed Services Committee for the May 27 2021 nomination hearing. Per audit § 5.5, the APQ is the canonical document for what Moultrie disclosed to the committee about his private-sector portfolio at confirmation time.
+  wayback_date: '2025-03-02'
 - url: https://www.armed-services.senate.gov/download/statementmoultrie
   format: pdf
   status: archived
   path: government/armed-services-senate-gov-moultrie-pre-hearing-statement-20210527.pdf
   archived_date: '2026-04-30'
   sha256: 6bba09f923be3c21612404d4eff026e5046222b707cc0a4ea6ee4b95dd966ac7
-  archive_status: 1
+  archive_status: 3
   note: Moultrie pre-hearing Statement for the Record submitted to the Senate Armed Services Committee for the May 27 2021 nomination hearing (USD/I&S). Primary record of his pre-confirmation policy positions and pre-government affiliations.
+  wayback_date: '2025-05-02'
 - url: https://www.armed-services.senate.gov/download/transcript-4-19-2023
   format: pdf
   status: archived
@@ -1027,8 +1127,9 @@
   path: government/armed-services-senate-gov-nomination-mccord-and-moultrie.html
   archived_date: '2026-04-30'
   sha256: 6ada4c171332505722b072cf0dc085ff9f5593d8fa29e9fcd6390be1daa8b438
-  archive_status: 1
+  archive_status: 3
   note: Senate Armed Services Committee nomination hearing index page for Mike McCord (Comptroller) and Ronald Moultrie (USD/I&S) — May 27 2021 hearing. Page contains links to the candidate pre-hearing Statements and Advance Policy Questions (APQ); the Moultrie statement and APQ are archived separately at .../armed-services-senate-gov-moultrie-pre-hearing-statement-20210527.pdf and .../armed-services-senate-gov-moultrie-advance-policy-questions-20210527.pdf.
+  wayback_date: '2026-01-30'
 - url: https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-activities-of-the-all-domain-anomaly-resolution-office
   format: html
   status: archived
@@ -1080,8 +1181,9 @@
   path: news/businesswire-c5-iiss-manama-moultrie-chairman-c5-us-20171212.html
   archived_date: '2026-04-30'
   sha256: 3219200cc3fd26b87ff3c04f4e580ead1466a56873a028e22fb23a6e5029bf03
-  archive_status: 1
+  archive_status: 3
   note: Businesswire press release (December 12, 2017) covering the C5 Capital partnership with the International Institute for Strategic Studies. Lists Moultrie's role as 'Chairman, C5 US' on the IISS Manama Dialogue panel — primary attestation that Moultrie was elevated from Strategic Partner to Chairman C5 US by December 2017 (audit § 5.2). Direct businesswire URL is HTTP/2 reset blocked; archived via Wayback Machine.
+  wayback_date: '2019-07-09'
 - url: https://www.buzzsprout.com/1531799/episodes/14943834-dr-sean-kirkpatrick-ph-d-nonlinear-solutions-llc-science-and-technology-for-emerging-national-security-threats
   format: html
   status: archived
@@ -1268,8 +1370,9 @@
   path: news/defenseone-moultrie-cyber-background-confirmation-202105.html
   archived_date: '2026-04-30'
   sha256: 3497a812e1526b6120372bbbe456915a8cc3dd4d931d59fb6b0c331d4a1fbe43
-  archive_status: 1
+  archive_status: 3
   note: Defense One coverage (May 2021) of Moultrie's USD(I&S) confirmation path, focusing on his cyber background. Audit § 5 nomination-period source.
+  wayback_date: '2024-12-01'
 - url: https://www.democrats.senate.gov/newsroom/press-releases/schumer-rounds-introduce-new-legislation-to-declassify-government-records-related-to-unidentified-anomalous-phenomena-and-ufos_modeled-after-jfk-assassination-records-collection-act--as-an-amendment-to-ndaa
   format: html
   status: archived
@@ -1318,8 +1421,9 @@
   path: news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html
   archived_date: '2026-04-30'
   sha256: 25d066034bd6c7708d21139d5f3f34c40a4d4f1b759557401551d911b1c1653c
-  archive_status: 1
+  archive_status: 3
   note: 'ExecutiveBiz article (June 2021): ''BlueVoyant Names Debora Plunkett, Ariel Litvin to Board of Directors, Ronald Moultrie to Advisory Board''. Carries: BlueVoyant Vice Chairman of Advisory Board appointment AND the Mitre / Resolute Consulting / Pallas senior-advisor list (''He is also a senior adviser to Mitre, Resolute Consulting and Pallas''). Single primary source for audit § 5.5 missing affiliations BlueVoyant + Mitre + Pallas.'
+  wayback_date: '2026-04-30'
 - url: https://www.executivebiz.com/articles/dod-intelligence-ronald-moultrie-leolabs-board-of-directors
   format: html
   status: archived
@@ -1329,6 +1433,15 @@
   archive_status: 3
   note: ExecutiveBiz follow-up coverage of the LeoLabs Moultrie board appointment, December 5 2024
   wayback_date: '2026-03-12'
+- url: https://www.gao.gov/products/b-422985.4,b-422985.5
+  format: html
+  status: archived
+  path: government/gao-b-422985-wayback-20250708.html
+  archived_date: '2026-04-30'
+  sha256: 943fd3af9bb277add92544ee2a001ae1c2aa5a1fc61a3646ac874c9af113a812
+  archive_status: 3
+  note: 'GAO bid protest decision, Matter of Sancorp Consulting, LLC, File B-422985.4; B-422985.5, dated June 11, 2025. Direct gao.gov fetch returns 403 (per sources-access.md DoD pattern of blocking automated requests, GAO follows similar policy); archived via Wayback Machine snapshot from 2025-07-08. Solicitation RFQ No. HQ003424R0178 issued by DoD/Washington Headquarters Service. Two call orders under BPAs: Call Order 1 (EXDIR) — services to OUSD(I&S) Executive Directorate — went to Premier Enterprise Solutions; Call Order 2 (SASP) — services to OUSD(I&S) Sensitive Activities & Special Programs Directorate — went to Arlo Solutions. Sancorp''s protest of these awards was denied. Confirms architecture-handoff §3 Layer-2 SASP directorate as primary-source-attested entity and the Sancorp/Premier/Arlo vendor-cluster relationship.'
+  wayback_date: '2025-07-08'
 - url: https://www.gillibrand.senate.gov/news/press/release/gillibrand-statement-on-uap-disclosure/
   format: html
   status: archived
@@ -1345,6 +1458,15 @@
   sha256: 1ec000f32d90fa7fd669aa983a9ebff1f18d76b37ebebb9e71a51b1e37efff75
   archive_status: 3
   wayback_date: '2026-02-08'
+- url: https://www.govconinabox.com/explore/contractors/profile/GRYKNJ8BGFC8
+  format: html
+  status: archived
+  path: news/govconinabox-sancorp-profile-20260430.html
+  archived_date: '2026-04-30'
+  sha256: 9e2d8873238a60206f36c8d55883147d04d69bbe88e317e10843b7f36c05e425
+  archive_status: 3
+  note: 'GovConInABox federal contractor profile for Sancorp Consulting LLC (UEI GRYKNJ8BGFC8). Fetched 2026-04-30. Address: 3235 Valley Ln, Falls Church VA 22044-1740 (Congressional District VA-08). Total Contract Value: $61.47M across 185 awards. First Award: Apr 21, 2022 (likely first 8(a) sole-source award post-program-acceleration; pre-2022 contracts including HQ003419C0159 (Sept 2019) and HQ003420C0167 (Sept 2020) predate this). Last Award: Dec 2, 2025. Top NAICS: 541611 ($30.80M / 81 awards Administrative Management), 541690 ($14.21M / 25 Other Scientific & Technical Consulting), 541715 ($8.20M / 34 R&D in Physical/Engineering/Life Sciences).'
+  wayback_date: '2026-04-30'
 - url: https://www.govinfo.gov/content/pkg/CRPT-116srpt233/pdf/CRPT-116srpt233.pdf
   format: pdf
   status: archived
@@ -1354,6 +1476,15 @@
   note: Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 (S. 3905). Senate Select Committee on Intelligence. Contains the 'Advanced Aerial Threats' section that directs the DNI/SecDef UAP report within 180 days (which became the June 2021 ODNI Preliminary Assessment). References 'the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence' — the Senate's on-record acknowledgment of UAPTF and its ONI home.
   archive_status: 3
   wayback_date: '2026-03-23'
+- url: https://www.highergov.com/awardee/sancorp-consulting-llc-10004865/
+  format: html
+  status: archived
+  path: news/highergov-sancorp-profile-20260430.html
+  archived_date: '2026-04-30'
+  sha256: 11f2c342bca1e564adabb7ff2ec681624ee7f1a4925345032a6ef06da489e2f5
+  archive_status: 3
+  note: HigherGov public profile for Sancorp Consulting LLC. Fetched 2026-04-30. Confirms UEI GRYKNJ8BGFC8, CAGE 7NZQ9, SBA Certs SDVOSB+VOSB, Falls Church VA HQ. Date Founded July 28, 2016 (matches initial registration). 8(a) Certification Graduated August 26, 2017 → March 11, 2026 (the handoff §3 statement of 'August 26, 2026 8(a) exit date' was incorrect — actual graduation was March 11, 2026). Last Registration July 30, 2025; Registration Activation July 29, 2025; Most Recent Award December 29, 2025.
+  wayback_date: '2023-07-30'
 - url: https://www.insaonline.org/detail-pages/person/ron-moultrie
   format: html
   status: archived
@@ -1363,6 +1494,24 @@
   archive_status: 3
   note: Intelligence and National Security Alliance (INSA) public profile page for Ron Moultrie. Listed as USD(I&S) framing. One of the public-facing post-government affiliation listings; per the April 2026 architecture investigation Battelle is absent from this bio.
   wayback_date: '2025-01-25'
+- url: https://www.insaonline.org/docs/default-source/default-document-library/2022-white-papers/insa_wp_terminology.pdf
+  format: pdf
+  status: archived
+  path: news/insa-naming-convention-20220900.pdf
+  archived_date: '2026-04-30'
+  sha256: 6b6a282150e5e0950e44b50d66feb033c037cc4c45181437e7cfc66956e9f316
+  archive_status: 3
+  note: 'INSA Background Paper: Insider Threat Program Naming Convention, September 2022, presented by INSA''s Insider Threat Subcommittee. Credits OUSD(I&S) as developer of counter-insider-threat doctrine: ''Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S).'' Architecturally significant: trade-association publication explicitly attributes a doctrinal framework to the same parent office that hosts AARO and IPMO.'
+  wayback_date: '2026-04-30'
+- url: https://www.insaonline.org/home/councils/security-policy-reform/insider-threat
+  format: html
+  status: archived
+  path: news/insa-insider-threat-subcommittee-20260430.html
+  archived_date: '2026-04-30'
+  sha256: 0c19b5588589be38011995a16edd235bc0a9a588c698b47450cbad8ac3a64cd8
+  archive_status: 3
+  note: INSA Insider Threat Subcommittee public page. Fetched 2026-04-30. Subcommittee under INSA's Security Policy Reform Council. Sancorp Consulting LLC self-attests participation (per Sancorp Company News page, March 2021 join).
+  wayback_date: '2026-03-05'
 - url: https://www.insidebidensbasement.org/appointees/ronald-moultrie
   format: html
   status: archived
@@ -1407,6 +1556,24 @@
   sha256: b67ecb9a65c50b8814f3745e7bc613e322d32cbdecb5a0463de2d4b49e90676f
   archive_status: 3
   wayback_date: '2026-01-06'
+- url: https://www.muckrock.com/foi/united-states-of-america-10/ousdis-2-51923-146003/
+  format: html
+  status: archived
+  path: news/muckrock-foia-23-f-0906-wayback-20260430.html
+  archived_date: '2026-04-30'
+  sha256: f338ad2319c429718921743f96801103cf66f1be67de4e3ed65c74822b58f7cb
+  archive_status: 3
+  note: 'MuckRock FOIA request page for case 23-F-0906 (Robert Skvarla, Jr., filed May 19, 2023, with DoD/Office of the Under Secretary of Defense for Intelligence and Security). Direct fetch returns 403; archived via Wayback Machine snapshot from 2026-04-30. Request scope: Sancorp IPMO contract HQ003422C0064. Status as of 2026-04-30: ''Awaiting Response'' — only the May 24, 2023 interim response received (citing FOIA ''unusual circumstances'' for delay); no further communications since. Architecturally significant as the IPMO companion to 23-F-1114''s AARO release: agency released the AARO contract PWS in full (23-F-1114) but did not advance the IPMO contract PWS request (23-F-0906).'
+  wayback_date: '2023-05-20'
+- url: https://www.muckrock.com/foi/united-states-of-america-10/ousdis-51923-145992/
+  format: html
+  status: archived
+  path: news/muckrock-foia-23-f-0905-wayback-20260430.html
+  archived_date: '2026-04-30'
+  sha256: 03f8dd54b24f187c1994aebc659149829d7f621ef1257e179c1c8e11aad14b9e
+  archive_status: 3
+  note: 'MuckRock FOIA request page for case 23-F-0905 (Robert Skvarla, Jr., filed May 19, 2023, with DoD/Office of the Under Secretary of Defense for Intelligence and Security; tracking 23-A-0905-A1). Direct fetch returns 403; archived via Wayback Machine snapshot from 2026-04-30 (full post-disposition page with 15 communications and 12 attached files). Request scope: Sancorp AARO contract HQ003422C0094. Final disposition per the released response: 125 pages identified responsive; 11 pages withheld in entirety under 5 U.S.C. § 552(b)(5) deliberative-process exemption; portions of remaining 114 pages withheld under (b)(4) (trade secrets / commercial confidential) and (b)(6) (personal privacy). Initial Denial Authority: Ms. Paulette Creighton, Division Director, Enterprise Acquisition Policy & Strategic Initiatives. Acquisition Directorate also conducted exhaustive searches for Correspondence, Requests for Information, Memorandums of Understanding, Letters of Interest, Task Letters, Privacy Impact Assessments, and Presentations by Sancorp and located no responsive records in those categories. Skvarla appealed Sept 18, 2023 (case 23-A-0905-A1); Joo Y. Chung (Assistant to the Secretary of Defense for Privacy, Civil Liberties, and Transparency) AFFIRMED the withholding decision Aug 21, 2024. Companion archive: Black Vault FOIA 23-F-1114 (already at government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) covers the AARO PWS in full release form. Note: the handoff §11 figure of ''91 pages withheld'' was a paraphrase; the actual agency framing is 11-pages-entirely-withheld + 114-pages-with-redactions.'
+  wayback_date: '2026-04-30'
 - url: https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4
   format: html
   status: archived
@@ -1585,6 +1752,69 @@
   archive_status: 3
   note: Rev.com transcript of NASA UAP Independent Study Team's first public meeting, 2023-05-31. Includes Sean Kirkpatrick's opening remarks (he was invited speaker representing AARO). Used in lieu of the science.nasa.gov PDF Kirkpatrick remarks file (404 / Wayback returns no captures of the original PDF URL)
   wayback_date: '2025-06-22'
+- url: https://www.sancorpconsulting.com/
+  format: html
+  status: archived
+  path: news/sancorp-home-20260430.html
+  archived_date: '2026-04-30'
+  archive_status: 3
+  note: Sancorp Consulting LLC homepage. Fetched 2026-04-30. Carries January 2026 MDA SHIELD IDIQ announcement ($151B ceiling) as Featured News headline. Wix-built site.
+  sha256: 4c35b10f41651c92a1906edf9baea7ac78ab4b58cff9677333b8e1fbec6bf1fc
+  wayback_date: '2025-12-10'
+- url: https://www.sancorpconsulting.com/_files/ugd/7aeb19_0c37a59d213b4d68a043ef83b56edc9a.pdf
+  format: pdf
+  status: archived
+  path: news/sancorp-7aeb19-0c37a59d-foiacontext.pdf
+  archived_date: '2026-04-30'
+  sha256: 2e950e03c7862c55616abb6a07976de547adc6cfe119c1ba97caa510e29d7e04
+  archive_status: 3
+  note: 'Sancorp Consulting LLC capability statement PDF (downloadable from Sancorp''s Wix-hosted file store). Hash 7aeb19_0c37a59d... is Wix''s content-addressed file ID. Contents: ''Protecting Critical Assets Utilizing Trusted Methodologies and Experts'' marketing brochure. Lists service lines: Intelligence & Counterintelligence Solutions, Counter-Insider Threat Solutions, Artificial Intelligence & Machine Learning. Self-attests SBA 8(a) Certified, SDVOSB, GSA STARS III, SAM UEI GRYKNJ8BGFC8. Surfaced via the FOIA 23-F-0905 page (Skvarla appeal cited Sancorp''s own presentations as discoverable PWS material).'
+  wayback_date: '2024-12-06'
+- url: https://www.sancorpconsulting.com/copy-of-careers
+  format: html
+  status: archived
+  path: news/sancorp-careers-20260430.html
+  archived_date: '2026-04-30'
+  archive_status: 3
+  note: Sancorp Consulting Company News page (URL slug labeled copy-of-careers). Fetched 2026-04-30. Self-attestation source for INSA Insider Threat Subcommittee membership (March 2021 join), the October 2021 INSA Need for Transparency on Insider Threats white paper contribution, and historical contract awards including July 2022 GSA MAS.
+  sha256: d6bd2a6d0ded56dd38511db30a3cfe75e18dd7be787587cfd79ae54e6881eb40
+  wayback_date: '2026-01-15'
+- url: https://www.sancorpconsulting.com/copy-of-contract-vehicles-past-perf
+  format: html
+  status: archived
+  path: news/sancorp-past-performance-20260430.html
+  archived_date: '2026-04-30'
+  archive_status: 3
+  note: 'Sancorp Consulting Past Performance page (URL slug labeled copy-of-contract-vehicles-past-perf). Fetched 2026-04-30. Lists 13 active prime contracts by number including HQ003425FE388 (OUSW(I&S) Policy/Operations/Analytic and Business Operations Support Services), W912CL25CA005 (USSOUTHCOM Support to Special Technical Operations), HQ003422R0164 (OUSD(I&S) IPMO), HQ003419C0159 (CIT), HQ003420C0167 (CI Analytical), W519TC-23-G-0042 (CDAO Algorithmic Warfare/Public Affairs). Notable: HQ003422C0094 (AARO Sancorp contract per FOIA 23-F-1114) is NOT listed — confirms the handoff §11 ''asymmetric scrub'' observation that Sancorp removed AARO from Past Performance while keeping IPMO.'
+  sha256: 3673e82fcb36d96f3845fb862c4000522b7e850e080f4d66442c0c91ff23fc14
+  wayback_date: '2025-12-08'
+- url: https://www.sancorpconsulting.com/insider-threat
+  format: html
+  status: archived
+  path: news/sancorp-insider-threat-20260430.html
+  archived_date: '2026-04-30'
+  archive_status: 3
+  note: Sancorp Consulting Insider Threat capability page. Fetched 2026-04-30. Capability description for the perception-management-adjacent service line that anchors Sancorp's relationship with OUSD(I&S) Counter-Insider Threat Program Office.
+  sha256: 1dde6e8a8a8af18cf58d4ac6f32dbd1ef69dcee653b2b771a0bbe0d5ba7c13fd
+  wayback_date: '2026-03-14'
+- url: https://www.sancorpconsulting.com/items-1/august-2025---sancorp
+  format: html
+  status: archived
+  path: news/sancorp-update-202508-wayback-20251208.html
+  archived_date: '2026-04-30'
+  archive_status: 3
+  note: 'Sancorp Featured News August 2025 update. Direct fetch returns the Wix React shell only (body content is JS-rendered); archived via Wayback Machine snapshot from 2025-12-08 which captured the rendered content. Verbatim announcement: ''SANCORP is proud to announce our award of the GSA OASIS+ 8(a) Contract. Through this vehicle, we deliver integrated solutions in Program Management, Engineering Services, Research & Development, and Intelligence Support to help federal agencies achieve mission success.'' Architecturally significant: corrects April 29 PDF''s framing — the August 2025 Sancorp announcement is the GSA OASIS+ 8(a) award, NOT the USSOUTHCOM STO/MILDEC contract (which was signed June 30, 2025 per USAspending W912CL25CA005).'
+  sha256: 40fc1faa970a57b519d17580b19b1a6e83eb490f08b6fef7990d23fd05561d43
+  wayback_date: '2025-12-08'
+- url: https://www.sancorpconsulting.com/items-1/oasd-science-%26-technology%2C-ousd-r%26e
+  format: html
+  status: archived
+  path: news/sancorp-oasd-st-ousd-re-2025.html
+  archived_date: '2026-04-30'
+  archive_status: 3
+  note: Sancorp Featured News announcement of OASD Science & Technology / OUSD R&E contract award. Fetched 2026-04-30. Self-published announcement dated June 2025 ('SANCORP is proud to announce it has been awarded a contract to support the Office of the Assistant Secretary of Defense for Science and Technology'). Cross-references Past Performance entry HQ003425A0001.
+  sha256: c6ce1ec59b2774d2baeaf1a118f1ae20a5f3881b561626da539465746e22426c
+  wayback_date: '2026-02-07'
 - url: https://www.scientificamerican.com/article/heres-what-i-learned-as-the-u-s-governments-ufo-hunter/
   format: html
   status: archived
@@ -1720,6 +1950,153 @@
   archive_status: 3
   note: 'Tovima.com syndication of the Wall Street Journal investigation ''The Pentagon Disinformation That Fueled America''s UFO Mythology'' by Joel Schectman and Aruna Viswanatha, originally published June 6 2025 (tovima posted 2025-06-08). The WSJ original is paywalled; this mirror carries the full article text. Documents two AARO Vol II findings Kirkpatrick attributes to his investigation: (1) Cold War deception programs — F-117 stealth-fighter testing at Area 51 covered by fabricated flying-saucer photos given to a bar owner by an Air Force colonel, and Salas Montana 1967 missile-silo electromagnetic-pulse-test cover-up; (2) the ''Yankee Blue'' decades-long Air Force hazing ritual showing newly-assigned commanders fake antigravity-craft photos under threat of arrest, prison, or execution. DoD spokeswoman Sue Gough on-record confirms AARO uncovered fake classified program materials and expects to publish findings in HRR Vol II ''later this year'' (deadline since missed). Source for audit finding 3.4.'
   wayback_date: '2025-08-31'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003418C0123_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-hq003418c0123.txt
+  archived_date: '2026-04-30'
+  sha256: 6c8b74486ecb862debb71aaeed8a0f3122c35e3224a9fa52f2e7ce6a56ae1a31
+  archive_status: 1
+  note: 'USAspending JSON record for Sancorp CI Metrics Study Support contract HQ003418C0123. Total obligation: $2,399,395. Signed 2018-09-27 → end 2020-09-27. Awarded by DoD/Washington Headquarters Services. Earliest known Sancorp contract with OUSD(I&S) (predates the Insider Threat / IPMO / AARO contracts). Establishes Sancorp-OUSD(I&S) relationship from 2018.'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003419C0159_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-hq003419c0159.txt
+  archived_date: '2026-04-30'
+  sha256: 84c43ba6514cfb7ce24ec654ad52392d52654ad2bc3cec510d3c37b4998cb1c0
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp Consulting LLC OUSD(I&S) Counter-Insider Threat Program Office contract HQ003419C0159. Description: ''STRENGTHENING INSIDER THREAT SUPPORT SERVICES''. Total obligation: $4,127,203.20. Signed 2019-09-20 → end 2022-07-18. Awarded by DoD/Washington Headquarters Services. Establishes Sancorp''s pre-AARO/pre-IPMO embedded relationship with OUSD(I&S) starting in 2019.'
+  wayback_date: '2026-04-30'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003420C0066_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-hq003420c0066.txt
+  archived_date: '2026-04-30'
+  sha256: 7ecaa43ddf1e8c448eb6582d7fbd24bd66bdecec648bc82bf6da4ce760216487
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp Artificial Intelligence Engineering & Computer Support Services contract HQ003420C0066. Total obligation: $3,880,864. Signed 2020-03-31 → end 2021-03-31. Awarded by DoD/Washington Headquarters Services.'
+  wayback_date: '2026-04-30'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003420C0167_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-hq003420c0167.txt
+  archived_date: '2026-04-30'
+  sha256: 5895da15d0246425d6b0a5bd97d0bc8decde37dd536a3111482eb15eaaa6488b
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp Consulting LLC OUSD(I&S) Counterintelligence Analytical Support contract HQ003420C0167. Description: ''ANALYTIC STUDIES SUPPORT SERVICES''. Total obligation: $1,504,844.80. Signed 2020-09-25 → end 2021-11-27. Awarded by DoD/Washington Headquarters Services.'
+  wayback_date: '2026-04-30'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003422C0064_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-hq003422c0064.txt
+  archived_date: '2026-04-30'
+  sha256: 1fef0a87edf52697022bb5dc8122f1bdfd04e5a248e75d11e265db4010b11e73
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp Consulting LLC IPMO contract HQ003422C0064. Description: ''IPMO SUPPORT SERVICES''. Total obligation: $3,026,577.70. Signed 2022-06-09 → end 2023-06-09. Awarded by DoD/Washington Headquarters Services. Architecturally significant: same vendor (Sancorp) servicing both AARO (HQ003422C0094) and IPMO (this contract) under contracts from the same parent office (OUSD(I&S) via WHS), awarded 12 weeks apart in 2022.'
+  wayback_date: '2023-05-19'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003422C0094_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-hq003422c0094.txt
+  archived_date: '2026-04-30'
+  sha256: 3ddf0d362553581d9213b12ec588988fa82967fdc39aa6a4fd84a1654c61df5a
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp Consulting LLC AARO contract HQ003422C0094. Description: ''AARO SUPPORT SERVICES''. Total obligation: $4,061,786.51. Signed 2022-09-01 → end 2024-08-31. Awarded by DoD/Washington Headquarters Services. 8(A) SOLE SOURCE; 1 offer received; NAICS 541611. Solicitation: HQ003422R0192. Companion to FOIA 23-F-1114 PWS.'
+  wayback_date: '2025-07-04'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003423C0061_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-hq003423c0061.txt
+  archived_date: '2026-04-30'
+  sha256: 7c0d780f44e2d71fea5710d5145ac866a7cf0558b0746bb62c8fad6aa46116b3
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp ''Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services'' contract HQ003423C0061. Total obligation: $3,021,082. Signed 2023-05-25 → end 2024-06-09. Awarded by DoD/Washington Headquarters Services. Description matches IPMO follow-on scope; this is the contract that continued OUSD(I&S)/IPMO support after HQ003422C0064 expired June 2023. Past Performance page lists this scope as ''Influence and Perception Management Office'' but cites solicitation HQ003422R0164 — that solicitation appears to have produced this contract.'
+  wayback_date: '2026-04-30'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003424C0046_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-hq003424c0046.txt
+  archived_date: '2026-04-30'
+  sha256: cc9c72558701bf9e1f952da3a51b4704e6dbeab22d2af7cedb861d97d499d41c
+  archive_status: 1
+  note: 'USAspending JSON record for Sancorp ''Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services'' contract HQ003424C0046. Total obligation: $5,751,921. Signed 2024-05-31 → end 2026-05-27. Awarded by DoD/Washington Headquarters Services. Continuation of HQ003423C0061 (the IPMO-aligned contract chain). Spans the OUSD(I&S) → OUSW(I&S) EO 14347 transition (Sept 2025).'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-hq003424c0096.txt
+  archived_date: '2026-04-30'
+  sha256: 031b40d75d591c64bed7caebc2932c3eac63860e06f5705e3b9212d0ed15fae9
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp Consulting LLC AARO follow-on contract HQ003424C0096. Description: ''EXEC. ADMIN, OPS, POLICY & PPBE SPPT SVC'' (matches original AARO PWS scope per FOIA 23-F-1114). Total obligation: $3,471,829.40. Signed 2024-08-23 → end 2026-01-31. Awarded by DoD/Washington Headquarters Services. Per-handoff classification ''AARO follow-on'' confirmed.'
+  wayback_date: '2026-04-30'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003424F0411_9700_47QRAA22D00C4_4732
+  format: txt
+  status: archived
+  path: government/usaspending-hq003424f0411.txt
+  archived_date: '2026-04-30'
+  sha256: 38b3e7caa4f2d968c48a04808c558e4ba8fde890bc43ca93ce213f815fdbab31
+  archive_status: 1
+  note: 'USAspending JSON record for Sancorp ''LABOR'' task order HQ003424F0411 (parent vehicle 47QRAA22D00C4 — GSA OASIS-type IDV). Total obligation: $11,214,091 (largest single Sancorp award to date). Signed 2024-07-23 → end 2026-12-31. Per Sancorp Past Performance page this contract supports ''Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction.'''
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003425FE388_9700_HQ003425A0001_9700
+  format: txt
+  status: archived
+  path: government/usaspending-hq003425fe388.txt
+  archived_date: '2026-04-30'
+  sha256: b772593b362e0860f45d1965db5dd4f48613819e1aa248d94d175dd1321b4a27
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp Consulting LLC CL&S POABO Support Services contract HQ003425FE388 (task order under parent IDIQ HQ003425A0001 — the OASD S&T contract). Description: ''NON-PERSONAL SERVICES CONTRACT TO PROVIDE POLICY, OPERATIONS, ANALYTIC AND BUSINESS OPERATIONS (POABO) SUPPORT SERVICES TO THE COUNTERINTELLIGENCE, LAW ENFORCEMENT AND SECURITY (CLS).'' Total obligation: $3,746,273.44 (NOT $15M as handoff §3 estimated). Signed 2025-09-11 → end 2026-09-13. Note: Sancorp''s own Past Performance page mislabels this contract as OUSW(I&S) direct support; USAspending shows the actual scope is CL&S.'
+  wayback_date: '2026-04-30'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ003425FE405_9700_47QRAA22D00C4_4732
+  format: txt
+  status: archived
+  path: government/usaspending-hq003425fe405.txt
+  archived_date: '2026-04-30'
+  sha256: 640359cd8c4a922bdea97925e98b5ad0916b33531af472ed72113e0d74955efe
+  archive_status: 1
+  note: 'USAspending JSON record for Sancorp Office Management and Executive Support task order HQ003425FE405 (parent 47QRAA22D00C4). Total obligation: $8,410,283. Signed 2025-09-30 → end 2030-06-15. Awarded by DoD/Washington Headquarters Services. Per Sancorp Past Performance: ''Office of the Under Secretary of War for Policy, Office Management & Executive Support Services'' — the OUSW Policy contract (post-EO 14347 OUSD→OUSW rebrand reflected in scope title).'
+- url: https://www.usaspending.gov/award/CONT_AWD_HQ085926FG471_9700_HQ085926DG304_9700
+  format: txt
+  status: archived
+  path: government/usaspending-hq085926fg471.txt
+  archived_date: '2026-04-30'
+  sha256: e677b5af692c9c32b35ee94f05e682d475c02864128afc392553fcc2623b6248
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp MDA SHIELD initial task order HQ085926FG471 (parent IDIQ HQ085926DG304). Total obligation: $500 (initial minimum; actual SHIELD ceiling is multi-billion shared across all SHIELD awardees). Signed 2025-12-19 → end 2035-12-28 (10-year period). Awarded by DoD/Missile Defense Agency. Description: ''SCALABLE HOMELAND INNOVATIVE ENTERPRISE LAYERED DEFENSE (SHIELD) INITIAL ORDER.'' Source for the January 2026 Sancorp homepage announcement of MDA SHIELD IDIQ award. Note: handoff §3 / April 29 PDF cited ''$151B aggregate ceiling'' for SHIELD — that''s the program-wide ceiling across all awardees, NOT Sancorp''s allocation. Sancorp''s SHIELD obligation to date is $500.'
+  wayback_date: '2026-04-30'
+- url: https://www.usaspending.gov/award/CONT_AWD_W519TC23F0545_9700_W519TC23G0042_9700
+  format: txt
+  status: archived
+  path: government/usaspending-w519tc23f0545.txt
+  archived_date: '2026-04-30'
+  sha256: 6ce735665dd6ae412f9312cbcc10182f12a91a9939861a528c57f97c01ac3f44
+  archive_status: 1
+  note: 'USAspending JSON record for Sancorp CDAO Algorithmic Warfare and Public Affairs task order W519TC23F0545 (parent W519TC23G0042 — AI Talent 2.0 BOA). Total obligation: $1,592,695. Signed 2023-09-25 → end 2025-09-27. Awarded by Department of the Army. Description: ''THE PURPOSE OF THIS ACTION IS FULFILL CDAO''''S REQUIREMENT FOR ALGORITHMIC WARFARE AND PUBLI[c affairs]''. Per Sancorp Past Performance: ''Department of Defense, Chief Digital and Artificial Intelligence Office, Algorithmic Warfare/Public Affairs.'''
+- url: https://www.usaspending.gov/award/CONT_AWD_W912CL25CA005_9700_-NONE-_-NONE-
+  format: txt
+  status: archived
+  path: government/usaspending-w912cl25ca005.txt
+  archived_date: '2026-04-30'
+  sha256: ef225c3d13b461a5a7add27cc57fd23a6fc486e3c85f5514eed2ef0f82c94b00
+  archive_status: 3
+  note: 'USAspending JSON record for Sancorp Consulting LLC USSOUTHCOM Support to Special Technical Operations contract W912CL25CA005. Description verbatim: ''USSOUTHCOM SHALL PROVIDE SERVICES TO SPECIAL TECHNICAL OPERATIONS (STO) INCLUDING SUPPORT TO SPECIAL ACCESS PROGRAMS (SAP), ALTERNATIVE AND COMPENSATORY CONTROL MEASURES, MILITARY DECEPTION (MILDEC) AND INTELLIGENCE PLANNING AND ACTIVITIES.'' Total obligation: $271,848.00. Signed 2025-06-30 → end 2026-03-15. Awarded by Department of the Army (Office: 0410 AQ HQ CONTRACT) on behalf of USSOUTHCOM. 8(A) SOLE SOURCE; 1 offer; PSC R410, NAICS 541611. Primary source for the April 29 2026 PDF finding that Sancorp''s post-GAO diversification explicitly includes MILDEC scope.'
+  wayback_date: '2026-04-30'
+- url: https://www.usaspending.gov/award/CONT_IDV_HQ003424A0023_9700
+  format: txt
+  status: archived
+  path: government/usaspending-hq003424a0023.txt
+  archived_date: '2026-04-30'
+  sha256: 18d9af5c58ffd5f8bc7e4088c1d644f4907d88b1445c9eae96e6659259bd990c
+  archive_status: 1
+  note: 'USAspending JSON record for parent IDIQ HQ003424A0023 (Sancorp). Description: ''TECHNICAL, ADMINISTRATIVE AND PROFESSIONAL SUPPORT SERVICES TO OFFICE OF THE UNDER SECRETARY...'' Period: 2024-09-18 → 2029-09-18. Awarded by DoD/Washington Headquarters Services. Total obligation $0 (IDIQ vehicle; obligation goes through call orders).'
+- url: https://www.usaspending.gov/award/CONT_IDV_HQ003425A0001_9700
+  format: txt
+  status: archived
+  path: government/usaspending-hq003425a0001.txt
+  archived_date: '2026-04-30'
+  sha256: a90e901a4e9fb28f9d06d10379efcd069240b73ec57183ffe8fc2ea3e5ff162b
+  archive_status: 3
+  note: 'USAspending JSON record for parent IDIQ HQ003425A0001 (Sancorp). Description: ''TECHNICAL, ANALYTICAL, ADMINISTRATIVE, AND PROFESSIONAL PROGRAM SUPPORT SERVICES.'' Period: 2025-02-14 → 2030-02-14. Awarded by DoD/Washington Headquarters Services. Total obligation $0 (IDIQ vehicle; HQ003425FE388 CL&S POABO is a task order under this parent; HQ003426FE050 also references this parent).'
+  wayback_date: '2026-04-30'
 - url: https://www.vice.com/en/article/brandon-fugal-owner-of-skinwalker-ranch/
   format: html
   status: archived
