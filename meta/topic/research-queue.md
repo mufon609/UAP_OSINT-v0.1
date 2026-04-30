@@ -239,3 +239,69 @@ Long-term structural improvements not blocked on primary sources.
 | Close Cluster B (2023-07-26 hearing) ring | Build Grusch doc + Grusch/Graves transcripts + Grusch/Graves person | Hearing event + all three transcripts + all three written testimony docs + all three witness person nodes built | Done |
 | Close Cluster D (UAP oversight institutions) ring | Build AARO + UAPTF + their support stubs (ONI, NIA, Norquist, Travis Taylor, etc.) | AARO + UAPTF built; ONI, NIA, Norquist, Taylor stubs surfaced and queued | In progress |
 | First finding node | Build a cross-entity finding spanning 3+ nodes (e.g., UAP video-release provenance chain) | After ≥3 cluster rings close | Pending |
+
+---
+
+## Finding-node candidates
+
+Finding-node ideas surfaced during entity-node builds. Per `meta/schema.yaml`,
+a finding is justified when the pattern spans 3+ entity nodes, exceeds ~200
+words in any single entity cell, or is about to be duplicated across 3+
+nodes. Candidates here document scope + evidence chain so they can be built
+substantively rather than as thin shells.
+
+### F.X — DoD/DoW terminology asymmetry post-EO-14347
+
+**Scope.** Document the structural pattern that statutory references and
+federal-procurement systems retain "Department of Defense" while
+non-statutory branding (contractor marketing, press attributions,
+contractor-prepared documents) increasingly adopts "Department of War"
+following EO 14347 (Sept 5, 2025). Surfaces the asymmetry as a measurable
+phenomenon rather than a contributor observation embedded in any one entity
+node.
+
+**Evidence already in repo (built nodes).**
+
+| Surface | Terminology used | Source |
+|---|---|---|
+| AARO — FY 2026 OP-5 program description | "AIC" (Defense-statutory framing) | `government/osd-op5-fy26-wayback-20260201.pdf` |
+| AARO — public-facing aaro.mil | "AARO" (Defense-era branding retained) | aaro.mil |
+| Sancorp — USAspending HQ003425FE405 | "OUSD(P)" Defense | `government/usaspending-*.txt` |
+| Sancorp — Past Performance document (FOIA) | "OUSW(P)" War | FOIA release |
+| Sancorp — HigherGov public profile + sancorpcorp.com marketing | "Department of War" / "DoW" branding | HigherGov + corporate site |
+
+**Build dependencies (in priority order).** The finding is gated on these
+to launch with substantive density rather than as a 2-entity observation:
+
+1. `/organizations/arlo-solutions` — second contractor data point beyond
+   Sancorp; tests whether the marketing/procurement asymmetry generalizes
+   across the OUSD(I&S) contractor substrate
+2. `/organizations/ipmo` — third architectural layer (per
+   `meta/topic/working-notes/uap-disclosure-architecture-handoff.md`);
+   contracts with Arlo
+3. `/documents/eo-14347-restoring-department-of-war` — legal foundation
+   (Sec 2(a) authorization, Sec 2(b) non-statutory adoption, Sec 2(e)
+   statutory preservation); source already archived
+4. `/organizations/dod` — top-level institutional anchor; 13 refs from
+   built nodes (most-referenced unbuilt org in registry)
+5. `/organizations/ousd-is` — direct parent of AARO + IPMO; 6 refs;
+   cognizant entity where the cross-architectural-layer asymmetry plays
+   out at the supervisory level
+
+**Useful but not gating:** `/organizations/whs` (contracting office, 2 refs);
+`/documents/blackvault-sancorp-23-f-1114-aaro-pws` (Sancorp PWS, already
+archived).
+
+**Density at launch (when all 5 required pre-builds ship).** F.X spans
+7 entity nodes: AARO + Sancorp + Arlo + IPMO + OUSD(I&S) + DoD + EO 14347.
+With optional pre-builds: 9 entities. Comfortably exceeds the 3-entity
+schema threshold and supports multi-surface evidence (statutory,
+organizational, contractor-marketing, federal-procurement, press).
+
+**Status:** Pending — gated on the 5 required pre-builds.
+
+**Surfaced from:** AARO Phase 2 audit (Claude Web, 2026-04-30) — N6
+recommendation deferred cross-outlet attribution to the Finding-node
+queue; investigation traced two distinct candidate findings, of which
+this one (DoD/DoW asymmetry) met the 3-entity threshold while the
+other (April-2026 disclosure-coordination press cycle) did not.
