@@ -16,18 +16,18 @@ created: 2026-04-30
 | Contracting Agency | Washington Headquarters Services |
 | Period of Performance | 2018-09-27 — ongoing |
 | Primary Counterparty | [`/organizations/ousd-is`] |
-| Registered Status | SBA 8(a) Certification graduated 2017-08-26 → 2026-03-11; SDVOSB; VOSB |
+| Registered Status | SBA 8(a) Certification graduated 2017-08-26 → 2026-03-11; Service Disabled Veteran Owned Small Business; Veteran Owned Business |
 | CAGE Code | 7NZQ9 |
 
 ---
 
 ## Description
 
-Sancorp Consulting, LLC is a Falls Church, Virginia federal contractor that provides intelligence, counterintelligence, insider threat, and operations support services to the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S); the office and its parent department appear in 2025 source records as Office of the Under Secretary of War for Intelligence and Security and Department of War). Sancorp was founded July 28, 2016. Its Unique Entity Identifier is GRYKNJ8BGFC8 and its CAGE Code is 7NZQ9. Per HigherGov registry data the company's SBA 8(a) Certification was Graduated August 26, 2017 to March 11, 2026; it also has Service-Disabled Veteran-Owned Small Business and Veteran-Owned Small Business certifications. GovCon in a Box lists Sancorp's federal awards (under awarding agencies including the Department of Defense ([`/organizations/dod`]), the General Services Administration ([`/organizations/gsa`]), the Department of the Army ([`/organizations/department-of-the-army`]), the Department of Justice ([`/organizations/department-of-justice`]), the Department of the Navy ([`/organizations/department-of-the-navy`]), and the Missile Defense Agency ([`/organizations/mda`]), with the Office of the Secretary of Defense ([`/organizations/osd`]) as the parent organization for the contracts issued via Washington Headquarters Services) at $61.47M across 185 awards (First Award April 21, 2022; Last Award December 2, 2025).
+Sancorp Consulting, LLC is a Falls Church, Virginia federal contractor that provides intelligence, counterintelligence, insider threat, and operations support services to the Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S); Executive Order 14347 of September 5, 2025 authorizes the Department of Defense and the Office of the Secretary of Defense to be referred to as the Department of War and the Office of the Secretary of War in non-statutory contexts (Sec. 2(b)) and authorizes the Secretary of Defense to use the additional secondary title Secretary of War (Sec. 2(a)); statutory references to the Department of Defense remain controlling per Sec. 2(e); Sancorp Past Performance (2026 capture) lists the customer of HQ003425FE388 as Office of the Under Secretary of War for Intelligence and Security). Sancorp was founded July 28, 2016. Its Unique Entity Identifier is GRYKNJ8BGFC8 and its CAGE Code is 7NZQ9. Per HigherGov registry data the company's SBA 8(a) Certification was Graduated August 26, 2017 to March 11, 2026; it also has Service Disabled Veteran Owned Small Business and Veteran Owned Business certifications. GovCon in a Box lists Sancorp's federal awards (under awarding agencies including the Department of Defense ([`/organizations/dod`]), the General Services Administration ([`/organizations/gsa`]), the Department of the Army ([`/organizations/department-of-the-army`]), the Department of Justice ([`/organizations/department-of-justice`]), the Department of the Navy ([`/organizations/department-of-the-navy`]), and the Missile Defense Agency ([`/organizations/mda`]), with the Office of the Secretary of Defense ([`/organizations/osd`]) as the parent organization for the contracts issued via Washington Headquarters Services) at $61.47M across 185 awards (First Award April 21, 2022; Last Award December 2, 2025).
 
 Sancorp's contract record with OUSD(I&S), awarded by Washington Headquarters Services, includes HQ003418C0123 ("CI Metrics Study Support", September 27, 2018) and HQ003419C0159 ("Strengthening Insider Threat Support Services", September 20, 2019). In 2022 Sancorp was awarded two contracts that placed the same vendor inside two related OUSD(I&S) offices: HQ003422C0064 ("IPMO Support Services", June 9, 2022) supports the Influence and Perception Management Office (established March 1, 2022 by direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security, per a memorandum signed by James A. Holly ([`/people/james-holly`]), Acting Director — see [`/documents/ipmo-notre-dame-memo-2022`]), and HQ003422C0094 ("AARO Support Services", September 1, 2022) supports the All-domain Anomaly Resolution Office. The AARO contract's Performance Work Statement ([`/documents/blackvault-sancorp-23-f-1114-aaro-pws`]), released in full via FOIA case 23-F-1114, defines deliverables across Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support. The contract was issued by WHS Acquisition Directorate ([`/organizations/whs-acquisition-directorate`]) on solicitation HQ003422R0192; signed by Contracting Officer Jacqueline Verrine ([`/people/jacqueline-verrine`]) (Team Lead, Technical Analysis Branch, Enterprise Office Secretary of Defense ([`/organizations/whs-eosd`]), WHS Acquisition Directorate) on September 1, 2022. Section 7 information contact: Contract Specialist Rainie Wells ([`/people/rainie-wells`]). The contract was awarded under DFARS 252.219-7009 SECTION 8(A) DIRECT AWARD with the Small Business Administration Richmond District Office ([`/organizations/sba-richmond-district-office`]) as the cognizant SBA office; Defense Contract Audit Agency ([`/organizations/dcaa`]) DODAAC HAA47 audits the LH and T&M CLINs. The IPMO contract is described in Sancorp's own Company News as "professional, administrative, and operational support services to the Influence and Perception Management Office (IPMO)" at OUSD(I&S).
 
-Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Threat Subcommittee in March 2021 and contributed to INSA's October 2021 white paper "The Need for Transparency on Insider Threats: Improving Information Sharing Between Government and Industry" — published the same month. INSA's September 2022 Insider Threat Program Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states that "Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S)." Subsequent Sancorp prime contracts include HQ003423C0061 and HQ003424C0046 ("Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" — IPMO continuation), HQ003424C0096 ("Exec. Admin, Ops, Policy & PPBE Sppt Svc" — AARO follow-on), HQ003424F0411 ("LABOR" — $11.2M task order supporting Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction), HQ003425FE388 (Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations support), HQ003425FE405 (Office of the Under Secretary of War for Policy office management and executive support), and W519TC23F0545 (Chief Digital and Artificial Intelligence Office Algorithmic Warfare and Public Affairs). After GAO ([`/organizations/gao`]) denied Sancorp's protest of two OUSD(I&S) call orders awarded to Premier Enterprise Solutions (Executive Directorate, EXDIR ([`/organizations/ousd-is-exdir`])) and Arlo Solutions (Sensitive Activities and Special Programs, SASP ([`/organizations/ousd-is-sasp`])) in B-422985.4, B-422985.5 (June 11, 2025), Sancorp also took on W912CL25CA005 (USSOUTHCOM Support to Special Technical Operations including Special Access Programs, Alternative and Compensatory Control Measures, Military Deception (MILDEC), and Intelligence Planning, June 30, 2025) and HQ085926FG471 (Missile Defense Agency Scalable Homeland Innovative Enterprise Layered Defense Initial Order, December 19, 2025). The August 2025 GSA OASIS+ 8(a) Contract award is described by Sancorp as covering "integrated solutions in Program Management, Engineering Services, Research & Development, and Intelligence Support to help federal agencies achieve mission success."
+Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Threat Subcommittee in March 2021 and contributed to INSA's October 2021 white paper "The Need for Transparency on Insider Threats: Improving Information Sharing Between Government and Industry" — published the same month. INSA's September 2022 Insider Threat Program Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states that "Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S)." Subsequent Sancorp prime contracts include HQ003423C0061 and HQ003424C0046 ("Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" — IPMO continuation), HQ003424C0096 ("Exec. Admin, Ops, Policy & PPBE Sppt Svc" — AARO follow-on), HQ003424F0411 ("LABOR" — $11.2M task order supporting Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction), HQ003425FE388 (Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations support), HQ003425FE405 (Office of the Under Secretary of Defense for Policy office management and executive support — Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Policy), and W519TC23F0545 (Chief Digital and Artificial Intelligence Office Algorithmic Warfare and Public Affairs). After GAO ([`/organizations/gao`]) denied Sancorp's protest of two OUSD(I&S) call orders awarded to Premier Enterprise Solutions (Executive Directorate, EXDIR ([`/organizations/ousd-is-exdir`])) and Arlo Solutions (Sensitive Activities and Special Programs, SASP ([`/organizations/ousd-is-sasp`])) in B-422985.4, B-422985.5 (June 11, 2025), Sancorp also took on W912CL25CA005 (USSOUTHCOM Support to Special Technical Operations including Special Access Programs, Alternative and Compensatory Control Measures, Military Deception (MILDEC), and Intelligence Planning, June 30, 2025) and HQ085926FG471 (Missile Defense Agency Scalable Homeland Innovative Enterprise Layered Defense Initial Order, December 19, 2025). The August 2025 GSA OASIS+ 8(a) Contract award is described by Sancorp as covering "integrated solutions in Program Management, Engineering Services, Research & Development, and Intelligence Support to help federal agencies achieve mission success."
 
 ---
 
@@ -422,7 +422,7 @@ _No personnel attested in primary sources to date._
 
 ---
 
-### EO 14347 Section 2(e) — statutory references to Department of Defense, Secretary of Defense, and subordinate officers remain controlling until changed by law. The "Department of War" naming is a secondary title authorized for use in non-statutory contexts.
+### EO 14347 Section 2(e) — statutory references to Department of Defense, Secretary of Defense, and subordinate officers remain controlling until changed by law.
 
 > (e) Statutory references to the Department of
 > Defense, Secretary of Defense, and subordinate officers
@@ -434,6 +434,39 @@ _No personnel attested in primary sources to date._
 | Attributed to | 2025-09-05 |
 | Source | [archived source](../sources/government/eo-14347-restoring-department-of-war-20250910.txt) |
 | Location | Federal Register Vol. 90 No. 173, EO 14347 Section 2(e) |
+
+---
+
+### EO 14347 Section 2(a) — authorizes the Secretary of Defense to use the additional secondary title Secretary of War in official correspondence, public communications, ceremonial contexts, and non-statutory documents.
+
+> Sec. 2. Implementation. (a) The Secretary of Defense is
+>           authorized the use of this additional secondary title--
+>           the Secretary of War--and may be recognized by that
+>           title in official correspondence, public
+>           communications, ceremonial contexts, and non-statutory
+>           documents within the executive branch.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-09-05 |
+| Source | [archived source](../sources/government/eo-14347-restoring-department-of-war-20250910.txt) |
+| Location | Federal Register Vol. 90 No. 173, EO 14347 Section 2(a) |
+
+---
+
+### EO 14347 Section 2(b) — authorizes the Department of Defense and the Office of the Secretary of Defense to be referred to as the Department of War and the Office of the Secretary of War in the contexts described in Sec. 2(a) (official correspondence, public communications, ceremonial contexts, non-statutory documents).
+
+> (b) The Department of Defense and the Office of
+>           the Secretary of Defense may be referred to as the
+>           Department of War and the Office of the Secretary of
+>           War, respectively, in the contexts described in
+>           subsection (a) of this section.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-09-05 |
+| Source | [archived source](../sources/government/eo-14347-restoring-department-of-war-20250910.txt) |
+| Location | Federal Register Vol. 90 No. 173, EO 14347 Section 2(b) |
 
 ---
 
@@ -490,6 +523,18 @@ _No personnel attested in primary sources to date._
 
 ---
 
+### Sancorp Past Performance — HQ003425FE388 contract listing identifies the customer as Office of the Under Secretary of War for Intelligence and Security. The underlying USAspending record for HQ003425FE388 separately describes the work as supporting Counterintelligence, Law Enforcement and Security (CL&S); Sancorp's public-facing Past Performance page is the source attesting the OUSW(I&S) form.
+
+> Office of the Under Secretary of War for Intelligence and Security, Policy, Operations, Analytic and Business Operations Support Services (Prime Contract) HQ003425FE388
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-04-30 |
+| Source | [archived source](../sources/news/sancorp-past-performance-20260430.html) |
+| Location | Past Performance page, contract listing for HQ003425FE388 |
+
+---
+
 ## Primary Contracts
 
 | Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |
@@ -509,7 +554,7 @@ _No personnel attested in primary sources to date._
 | HQ003425A0001 | Washington Headquarters Services | 2025-02-14 – 2030-02-14 | $0 (IDIQ vehicle) | [`/organizations/oasd-st`] | Technical, Analytical, Administrative, and Professional Program Support Services (parent IDIQ) | government/usaspending-hq003425a0001.txt |
 | W912CL25CA005 | Department of the Army (on behalf of USSOUTHCOM) | 2025-06-30 – 2026-03-15 | $271,848 | [`/organizations/ussouthcom`] | USSOUTHCOM Support to Special Technical Operations (SAP, ACCM, MILDEC, Intelligence Planning) | government/usaspending-w912cl25ca005.txt |
 | HQ003425FE388 | Washington Headquarters Services | 2025-09-11 – 2026-09-13 | $3,746,273.44 | [`/organizations/ousd-is`] | CL&S POABO — Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations Support | government/usaspending-hq003425fe388.txt |
-| HQ003425FE405 | Washington Headquarters Services | 2025-09-30 – 2030-06-15 | $8,410,283 | [`/organizations/ousd-is`] | Office of the Under Secretary of War for Policy — Office Management and Executive Support Services | government/usaspending-hq003425fe405.txt |
+| HQ003425FE405 | Washington Headquarters Services | 2025-09-30 – 2030-06-15 | $8,410,283 | [`/organizations/ousd-is`] | Office of the Under Secretary of Defense for Policy (OUSD(P)) — Office Management and Executive Support Services (OMESS) | government/usaspending-hq003425fe405.txt |
 | HQ085926FG471 | Missile Defense Agency | 2025-12-19 – 2035-12-28 | $500 | [`/organizations/mda`] | Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order | government/usaspending-hq085926fg471.txt |
 
 ---
@@ -543,9 +588,9 @@ _No personnel attested in primary sources to date._
 | 2025-06-11 | GAO B-422985.4, B-422985.5 decision DENIED Sancorp's protest — EXDIR Call Order 1 awarded to Premier Enterprise Solutions, SASP Call Order 2 awarded to Arlo Solutions. | protest | government/gao-b-422985-wayback-20250708.html |  |
 | 2025-06-30 | W912CL25CA005 awarded — USSOUTHCOM Support to Special Technical Operations including SAP, Alternative and Compensatory Control Measures, MILDEC, and Intelligence Planning, $271,848. | contract | government/usaspending-w912cl25ca005.txt |  |
 | 2025-08 | GSA OASIS+ 8(a) Contract awarded to Sancorp per Featured News announcement. | contract | news/sancorp-update-202508-wayback-20251208.html |  |
-| 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War — authorizes the secondary title Department of War for DoD; statutory references to Department of Defense remain controlling per Sec. 2(e). | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
+| 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 | 2025-09-11 | HQ003425FE388 awarded — CL&S POABO Support Services task order (parent IDV HQ003425A0001), $3,746,273. | contract | government/usaspending-hq003425fe388.txt |  |
-| 2025-09-30 | HQ003425FE405 awarded — Office of the Under Secretary of War for Policy, Office Management & Executive Support Services task order (parent 47QRAA22D00C4), $8,410,283. | contract | government/usaspending-hq003425fe405.txt |  |
+| 2025-09-30 | HQ003425FE405 awarded — Office Management and Executive Support Services (OMESS) for the Office of the Under Secretary of Defense for Policy (OUSD(P)) task order (parent 47QRAA22D00C4), $8,410,283. Sancorp Past Performance separately lists the customer as Office of the Under Secretary of War for Policy in its 2026 capture. | contract | government/usaspending-hq003425fe405.txt |  |
 | 2025-12-19 | HQ085926FG471 awarded — MDA Scalable Homeland Innovative Enterprise Layered Defense (SHIELD) Initial Order (parent IDV HQ085926DG304), $500. | contract | government/usaspending-hq085926fg471.txt |  |
 | 2026-03-11 | SBA 8(a) Certification graduated. | certification | news/highergov-sancorp-profile-20260430.html |  |
 
