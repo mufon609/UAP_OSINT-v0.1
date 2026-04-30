@@ -13,7 +13,10 @@ description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`])
   The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 by Deputy Secretary of Defense David L. Norquist; the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established on November 23, 2021 as the successor to the UAPTF and renamed to AARO in July 2022. AARO operates in coordination with the Office of the Director of National Intelligence ([`/organizations/odni`]).
 
 
-  Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024.
+  Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024.
+
+
+  AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) provides AARO Support Services under prime contracts HQ003422C0094 (signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The contract Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the contract Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. The FY 2026 Office of the Secretary of Defense Budget Estimates list the program as Advanced Intelligence Capabilities (AIC); the public-facing aaro.mil website continues to use the AARO name.
 
   '
 primary_sources:
@@ -63,6 +66,20 @@ primary_sources:
 - path: government/defense-gov-uaptf-establishment-20200814.html
   format: html
   extracted_text_path: /tmp/scratch-aaro-10.txt
+- path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+  format: pdf
+- path: government/foia-23-f-0905-doc-1-released.pdf
+  format: pdf
+- path: government/foia-23-f-0905-doc-2-released.pdf
+  format: pdf
+- path: government/usaspending-hq003422c0094.txt
+  format: txt
+- path: government/usaspending-hq003424c0096.txt
+  format: txt
+- path: government/osd-op5-fy26-wayback-20260201.pdf
+  format: pdf
+- path: government/eo-14347-restoring-department-of-war-20250910.txt
+  format: txt
 document_intrinsic:
   full_name: All-domain Anomaly Resolution Office
   statutory_authority: Section 1683 of the National Defense Authorization Act for Fiscal Year 2022
@@ -165,6 +182,83 @@ quotes:
   significance: HRR Vol I top-line finding — no empirical evidence for USG reverse-engineering claims
   context: AARO Historical Record Report Volume I Executive Summary, March 2024
   statement_date: '2024-03-08'
+- id: q11
+  added_date: '2026-04-30'
+  text: |
+    I direct the USD(I&S) to establish the AARO, in coordination with the Director of
+    Administration and Management.
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: 'p. 1, ¶3 (third bullet of amendments)'
+  significance: Hicks AARO establishment memo (July 15, 2022) — directive to the USD(I&S) to establish AARO, in coordination with the Director of Administration and Management.
+  context: Hicks AARO establishment memo, July 15, 2022
+  statement_date: '2022-07-15'
+- id: q12
+  added_date: '2026-04-30'
+  text: |
+    The contractor shall provide Congressional Affairs, Public Affairs. and FOIA
+    SuppOI1 Services in accordance with Section 5.4 of the Performance Work
+    Statement (PWS), the attached documents and all other requirements listed in this
+    document.
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'AARO contract HQ003422C0094 PWS, Section 5.4 task order header (OCR-damaged source preserves "SuppOI1")'
+  significance: AARO contract HQ003422C0094 PWS Section 5.4 task header — Congressional Affairs, Public Affairs, and FOIA Support Services.
+  context: Sancorp AARO Support Services contract HQ003422C0094 PWS, signed September 1, 2022
+  statement_date: '2022-09-01'
+- id: q13
+  added_date: '2026-04-30'
+  text: |
+    AARO SUPPORT SERVICES
+  source:
+    path: government/usaspending-hq003422c0094.txt
+    location: 'USAspending description field, contract HQ003422C0094'
+  significance: USAspending HQ003422C0094 description field — AARO Support Services. \$4,061,786.51 obligated; signed 2022-09-01; awarded by DoD/Washington Headquarters Services; 8(A) Sole Source per latest_transaction_contract_data.
+  context: USAspending record for AARO Support Services contract
+  statement_date: '2022-09-01'
+- id: q14
+  added_date: '2026-04-30'
+  text: |
+    From:        Verrine, Jacqueline G CIV WHS AD (USA)
+    Sent:        Thursday, September 1, 2022 5:16 PM
+    To:          (b)(6)
+    Cc:          Wells, Rainie CIV (USA); OSD Pentagon OUSD Intel - Sec List CoS FMA
+    Subject:     Award: HQ003422C0094_AARO
+    Attachments: B02 HQ003422C0094_AARO.pdf
+  source:
+    path: government/foia-23-f-0905-doc-2-released.pdf
+    location: 'p. 1 of 1, email header'
+  significance: 'AARO contract-award notification email header (September 1, 2022 5:16 PM) — From Verrine to (b)(6)-redacted recipient, CC Wells and the OSD Pentagon OUSD Intel - Sec List CoS FMA distribution list, Subject "Award: HQ003422C0094_AARO".'
+  context: Sancorp AARO Support Services contract HQ003422C0094 award-notification email
+  statement_date: '2022-09-01'
+- id: q15
+  added_date: '2026-04-30'
+  text: |
+    Advanced Intelligence Capabilities (AIC), which reports directly to the DEPSECDEF and the Principal Deputy Director of National
+    Intelligence and synchronizes efforts across the Department and with other Federal departments and agencies to detect, identify, and
+    attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas
+    of interest, and, as necessary, to mitigate any associated risks to the safety of operations and national security.
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OSD OP-5 FY 2026 Operation and Maintenance Budget Estimates, OUSD(I&S) program section'
+  significance: FY 2026 Office of the Secretary of Defense Budget Estimates — program description for Advanced Intelligence Capabilities (AIC), reporting to the DEPSECDEF and the Principal Deputy Director of National Intelligence.
+  context: OSD OP-5 FY 2026 budget, OUSD(I&S) program section
+  statement_date: '2025'
+- id: q16
+  added_date: '2026-04-30'
+  text: |
+    Inspect By DoDAAC: HQ0208
+    Ship To Code: N/A
+    Ship From Code: N/A
+    Mark For Code: N/A
+    Service Approver (DoDAAC): HQ0208
+    Service Acceptor (DoDAAC): HQ0208
+  source:
+    path: government/foia-23-f-0905-doc-1-released.pdf
+    location: 'AARO contract HQ003422C0094 PWS (FOIA 23-F-0905 partial release), Section G Contract Administration Data, Routing Data Table'
+  significance: AARO contract HQ003422C0094 PWS Section G Routing Data Table — DoDAAC HQ0208 designated as Inspect By, Service Approver, and Service Acceptor.
+  context: Sancorp AARO Support Services contract HQ003422C0094 PWS, Section G Routing Data Table
+  statement_date: '2022-09-01'
 key_personnel:
 - id: kp1
   added_date: '2026-04-20'
@@ -226,6 +320,30 @@ org_relationships:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
     location: p.1
   note: Memorandum direction — establishment in coordination with the Director of National Intelligence (DNI)
+- id: or5
+  added_date: '2026-04-30'
+  organization_path: /organizations/ousd-is
+  relationship_type: parent
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: 'p. 1, ¶3'
+  note: Per the Hicks AARO establishment memo (July 15, 2022), the Deputy Secretary of Defense directed the Under Secretary of Defense for Intelligence and Security (USD(I&S)) to establish AARO. Administrative cognizance for AARO sits with OUSD(I&S); operational reporting transitioned to the Deputy Secretary of Defense in late July 2023 per architecture-investigation context.
+- id: or6
+  added_date: '2026-04-30'
+  organization_path: /organizations/sancorp-consulting
+  relationship_type: contractor
+  source:
+    path: government/usaspending-hq003422c0094.txt
+    location: 'USAspending record HQ003422C0094, recipient field'
+  note: Sancorp Consulting LLC provides AARO support services under prime contracts HQ003422C0094 (initial 2022, \$4,061,786.51) and HQ003424C0096 (follow-on 2024, \$3,471,829.40). Performance Work Statement defines eight task areas including Executive Administrative Support, Strategy/Plans/Policy Support, Congressional Affairs/Public Affairs/FOIA Support, Data Architecture, Planning/Programming/Budgeting/Executive Support, Reporting Support, and Operations Support.
+- id: or7
+  added_date: '2026-04-30'
+  organization_path: /organizations/whs
+  relationship_type: contracting-agency
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'AARO contract HQ003422C0094 SF 33 Block 7 issuing office, p. 1'
+  note: Washington Headquarters Services Acquisition Directorate (DODAAC HQ0034) is the contracting subtier agency that issues AARO''s support-services contracts on behalf of OUSD(I&S). Located at 4800 Mark Center Drive, Suite 09F09, Alexandria VA. Pay Official DODAAC HQ0768 (WHS Financial Management Directorate).
 timeline:
 - id: t1
   added_date: '2026-04-20'
@@ -308,6 +426,40 @@ timeline:
   source:
     path: government/defense-gov-kosloski-appointment-20240826.html
     location: article body ¶1
+- id: t11
+  added_date: '2026-04-30'
+  date: '2022-09-01'
+  event: Sancorp AARO Support Services contract HQ003422C0094 awarded by Washington Headquarters Services Acquisition Directorate (\$4,061,786.51 obligated; 8(A) Sole Source). Eight task areas include Executive Admin, Strategy/Plans/Policy, Congressional Affairs/Public Affairs/FOIA, Data Architecture, PPBE, Reporting, and Operations Support.
+  category: contract
+  source:
+    path: government/usaspending-hq003422c0094.txt
+    location: '"date_signed" field'
+  node_link: /organizations/sancorp-consulting
+- id: t12
+  added_date: '2026-04-30'
+  date: '2023-09-11'
+  event: DoD Freedom of Information Division released FOIA case 23-F-1114 to The Black Vault — full 116-page Performance Work Statement for the Sancorp AARO support contract HQ003422C0094.
+  category: foia
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'cover letter dated September 11, 2023'
+- id: t13
+  added_date: '2026-04-30'
+  date: '2024-08-23'
+  event: AARO follow-on support services contract HQ003424C0096 awarded to Sancorp Consulting (\$3,471,829.40, period of performance through January 31, 2026) — continuing the original AARO support PWS scope.
+  category: contract
+  source:
+    path: government/usaspending-hq003424c0096.txt
+    location: '"date_signed" field'
+  node_link: /organizations/sancorp-consulting
+- id: t14
+  added_date: '2026-04-30'
+  date: '2025-09-05'
+  event: Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO''s parent department naming.
+  category: government-action
+  source:
+    path: government/eo-14347-restoring-department-of-war-20250910.txt
+    location: 'Federal Register Vol. 90 No. 173 (Sept 10, 2025), pp. 43893-43894, EO 14347'
 entities_referenced:
 - id: e1
   added_date: '2026-04-20'
@@ -359,6 +511,26 @@ entities_referenced:
   entity_type: document
   name: AARO Historical Record Report Volume I
   wrap_path: /documents/aaro-historical-record-report-vol-i
+- id: e11
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Office of the Under Secretary of Defense for Intelligence and Security
+  wrap_path: /organizations/ousd-is
+- id: e12
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Sancorp Consulting, LLC
+  wrap_path: /organizations/sancorp-consulting
+- id: e13
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Washington Headquarters Services
+  wrap_path: /organizations/whs
+- id: e14
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Director of Administration and Management
+  wrap_path: /organizations/da-m
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'
@@ -368,6 +540,14 @@ naming_quirks:
   source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
   resolution: preserve-as-sic-in-quotes
   note: The Hicks establishment memo and the first DoD press release use lowercase 'd' in "All-domain Anomaly Resolution Office". Subsequent DoD press releases (Kirkpatrick departure, Kosloski appointment) use capital 'D' — "All-Domain Anomaly Resolution Office". Both forms appear in source and are preserved verbatim in the quoted passages.
+- id: nq3
+  added_date: '2026-04-30'
+  observed: stand-up
+  canonical: stand up
+  location: Kirkpatrick biography source — "Dr. Kirkpatrick was asked by USD(I&S) to stand-up and lead AARO in early 2022"
+  source_path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'Kirkpatrick biography uses hyphenated "stand-up" as a verb form. Description prose now matches source verbatim.'
 - id: nq2
   added_date: '2026-04-20'
   observed: Airborne Object Identification and Management Group

@@ -30,7 +30,9 @@ The Hicks memorandum states AARO "will serve as the authoritative office of the 
 
 The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 by Deputy Secretary of Defense David L. Norquist; the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established on November 23, 2021 as the successor to the UAPTF and renamed to AARO in July 2022. AARO operates in coordination with the Office of the Director of National Intelligence ([`/organizations/odni`]).
 
-Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024.
+Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024.
+
+AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) provides AARO Support Services under prime contracts HQ003422C0094 (signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The contract Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the contract Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. The FY 2026 Office of the Secretary of Defense Budget Estimates list the program as Advanced Intelligence Capabilities (AIC); the public-facing aaro.mil website continues to use the AARO name.
 
 ---
 
@@ -103,6 +105,19 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 
 ---
 
+### Hicks AARO establishment memo (July 15, 2022) — directive to the USD(I&S) to establish AARO, in coordination with the Director of Administration and Management.
+
+> I direct the USD(I&S) to establish the AARO, in coordination with the Director of
+> Administration and Management.
+
+| Field | Value |
+|---|---|
+| Attributed to | Hicks AARO establishment memo, July 15, 2022, 2022-07-15 |
+| Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
+| Location | p. 1, ¶3 (third bullet of amendments) |
+
+---
+
 ### Establishment context — AOIMSG renaming and scope expansion per NDAA FY2022
 
 > by renaming and expanding the scope of the Airborne Object Identification and Management Group (AOIMSG) to the All-domain Anomaly Resolution Office (AARO), due to the enactment of the National Defense Authorization Act for fiscal 2022, which included a provision to establish an office, in coordination with DNI, with responsibilities that were broader than those originally assigned to the AOIMSG.
@@ -112,6 +127,67 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 | Attributed to | DoD press release announcing AARO establishment, July 20, 2022, 2022-07-20 |
 | Source | [archived source](../sources/government/defense-gov-aaro-establishment-20220720.html) |
 | Location | article body ¶1 |
+
+---
+
+### AARO contract HQ003422C0094 PWS Section 5.4 task header — Congressional Affairs, Public Affairs, and FOIA Support Services.
+
+> The contractor shall provide Congressional Affairs, Public Affairs. and FOIA
+> SuppOI1 Services in accordance with Section 5.4 of the Performance Work
+> Statement (PWS), the attached documents and all other requirements listed in this
+> document.
+
+| Field | Value |
+|---|---|
+| Attributed to | Sancorp AARO Support Services contract HQ003422C0094 PWS, signed September 1, 2022, 2022-09-01 |
+| Source | [archived source](../sources/government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) |
+| Location | AARO contract HQ003422C0094 PWS, Section 5.4 task order header (OCR-damaged source preserves "SuppOI1") |
+
+---
+
+### USAspending HQ003422C0094 description field — AARO Support Services. \$4,061,786.51 obligated; signed 2022-09-01; awarded by DoD/Washington Headquarters Services; 8(A) Sole Source per latest_transaction_contract_data.
+
+> AARO SUPPORT SERVICES
+
+| Field | Value |
+|---|---|
+| Attributed to | USAspending record for AARO Support Services contract, 2022-09-01 |
+| Source | [archived source](../sources/government/usaspending-hq003422c0094.txt) |
+| Location | USAspending description field, contract HQ003422C0094 |
+
+---
+
+### AARO contract-award notification email header (September 1, 2022 5:16 PM) — From Verrine to (b)(6)-redacted recipient, CC Wells and the OSD Pentagon OUSD Intel - Sec List CoS FMA distribution list, Subject "Award: HQ003422C0094_AARO".
+
+> From:        Verrine, Jacqueline G CIV WHS AD (USA)
+> Sent:        Thursday, September 1, 2022 5:16 PM
+> To:          (b)(6)
+> Cc:          Wells, Rainie CIV (USA); OSD Pentagon OUSD Intel - Sec List CoS FMA
+> Subject:     Award: HQ003422C0094_AARO
+> Attachments: B02 HQ003422C0094_AARO.pdf
+
+| Field | Value |
+|---|---|
+| Attributed to | Sancorp AARO Support Services contract HQ003422C0094 award-notification email, 2022-09-01 |
+| Source | [archived source](../sources/government/foia-23-f-0905-doc-2-released.pdf) |
+| Location | p. 1 of 1, email header |
+
+---
+
+### AARO contract HQ003422C0094 PWS Section G Routing Data Table — DoDAAC HQ0208 designated as Inspect By, Service Approver, and Service Acceptor.
+
+> Inspect By DoDAAC: HQ0208
+> Ship To Code: N/A
+> Ship From Code: N/A
+> Mark For Code: N/A
+> Service Approver (DoDAAC): HQ0208
+> Service Acceptor (DoDAAC): HQ0208
+
+| Field | Value |
+|---|---|
+| Attributed to | Sancorp AARO Support Services contract HQ003422C0094 PWS, Section G Routing Data Table, 2022-09-01 |
+| Source | [archived source](../sources/government/foia-23-f-0905-doc-1-released.pdf) |
+| Location | AARO contract HQ003422C0094 PWS (FOIA 23-F-0905 partial release), Section G Contract Administration Data, Routing Data Table |
 
 ---
 
@@ -175,6 +251,21 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 
 ---
 
+### FY 2026 Office of the Secretary of Defense Budget Estimates — program description for Advanced Intelligence Capabilities (AIC), reporting to the DEPSECDEF and the Principal Deputy Director of National Intelligence.
+
+> Advanced Intelligence Capabilities (AIC), which reports directly to the DEPSECDEF and the Principal Deputy Director of National
+> Intelligence and synchronizes efforts across the Department and with other Federal departments and agencies to detect, identify, and
+> attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas
+> of interest, and, as necessary, to mitigate any associated risks to the safety of operations and national security.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2026 budget, OUSD(I&S) program section, 2025 |
+| Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
+| Location | OSD OP-5 FY 2026 Operation and Maintenance Budget Estimates, OUSD(I&S) program section |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -183,12 +274,16 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 | 2021-11-23 | Airborne Object Identification and Management Synchronization Group (AOIMSG) establish directed by Deputy Secretary of Defense | other | government/defense-gov-aoimsg-establishment-20211123.html |  |
 | 2022-07-15 | Establishment of the All-domain Anomaly Resolution Office by Deputy Secretary of Defense memorandum (Section 1683 NDAA FY 2022) | founding | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |  |
 | 2022-07-20 | Dr. Sean M. Kirkpatrick Director, All-domain Anomaly Resolution Office (AARO) | leadership-transition | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
+| 2022-09-01 | Sancorp AARO Support Services contract HQ003422C0094 awarded by Washington Headquarters Services Acquisition Directorate (\$4,061,786.51 obligated; 8(A) Sole Source). Eight task areas include Executive Admin, Strategy/Plans/Policy, Congressional Affairs/Public Affairs/FOIA, Data Architecture, PPBE, Reporting, and Operations Support. | contract | government/usaspending-hq003422c0094.txt | [`/organizations/sancorp-consulting`] |
 | 2023-08-31 | Department launched a website on the All-domain Anomaly Resolution Office (www.aaro.mil) | other | government/defense-gov-aaro-website-launch-20230831.html |  |
+| 2023-09-11 | DoD Freedom of Information Division released FOIA case 23-F-1114 to The Black Vault — full 116-page Performance Work Statement for the Sancorp AARO support contract HQ003422C0094. | foia | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |  |
 | 2023-10 | Timothy A. Phillips assumed the duties of the Deputy Director All-domain Anomaly Resolution Office | leadership-transition | government/aaro-phillips-timothy-bio-dec2023.pdf |  |
 | 2023-11-20 | Statement by Deputy Secretary of Defense Kathleen Hicks on the Upcoming Departure of AARO Director Dr. Sean Kirkpatrick | leadership-transition | government/defense-gov-kirkpatrick-departure-20231120.html |  |
 | 2023-12 | Dr. Kirkpatrick will retire from federal service in December | leadership-transition | government/defense-gov-kirkpatrick-departure-20231120.html |  |
 | 2024-03-08 | AARO Historical Record Report Volume I released | other | government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf | [`/documents/aaro-historical-record-report-vol-i`] |
+| 2024-08-23 | AARO follow-on support services contract HQ003424C0096 awarded to Sancorp Consulting (\$3,471,829.40, period of performance through January 31, 2026) — continuing the original AARO support PWS scope. | contract | government/usaspending-hq003424c0096.txt | [`/organizations/sancorp-consulting`] |
 | 2024-08-26 | Dr. Jon T. Kosloski appointed as the director of the All-domain Anomaly Resolution Office on detail from the National Security Agency | leadership-transition | government/defense-gov-kosloski-appointment-20240826.html |  |
+| 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO''s parent department naming. | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 
 ---
 
@@ -202,6 +297,9 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 | [`/organizations/aoimsg`] | predecessor | government/defense-gov-aaro-establishment-20220720.html |
 | [`/organizations/uaptf`] | predecessor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
 | [`/organizations/odni`] | partner | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/ousd-is`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0094.txt |
+| [`/organizations/whs`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
 
 ---
 
@@ -218,11 +316,15 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 ### Organizations
 
 - [`/organizations/aoimsg`]
+- [`/organizations/da-m`]
 - [`/organizations/dod`]
 - [`/organizations/nsa`]
 - [`/organizations/odni`]
+- [`/organizations/ousd-is`]
+- [`/organizations/sancorp-consulting`]
 - [`/organizations/uaptf`]
 - [`/organizations/us-navy`]
+- [`/organizations/whs`]
 
 ### Documents
 
