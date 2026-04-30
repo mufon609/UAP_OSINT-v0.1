@@ -82,6 +82,14 @@ primary_sources:
   format: txt
 - path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
   format: html
+- path: news/cnn-aliens-ufos-files-trump-20260307.html
+  format: html
+- path: news/liberationtimes-war-department-white-house-coordinating-20260414.html
+  format: html
+- path: news/ibtimes-uk-white-house-greenlights-ufo-evidence-20260416.html
+  format: html
+- path: news/nbcnews-trump-ufo-files-interesting-documents-20260418.html
+  format: html
 document_intrinsic:
   full_name: All-domain Anomaly Resolution Office
   statutory_authority: Section 1683 of the National Defense Authorization Act for Fiscal Year 2022
@@ -293,6 +301,18 @@ quotes:
   significance: Defense Secretary Pete Hegseth statement to DefenseScoop (Feb 25, 2026) — Pentagon will be "in full compliance" with a forthcoming Trump executive order directing disclosure of U.S. government records about UAP and aliens.
   context: DefenseScoop Feb 25, 2026 article, Hegseth remarks during Arsenal of Freedom Tour, Louisville CO Feb 23, 2026
   statement_date: '2026-02-25'
+- id: q20
+  added_date: '2026-04-30'
+  text: |
+    A spokesperson for the Defense Department said in a statement to NBC News Saturday that its All-domain Anomaly Resolution Office (AARO) is "working in close coordination with the White House and across federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information."
+
+    "AARO has made progress to make UAP information available and transfer those records to the National Archives in accordance with federal law," the statement continued. "We welcome the president's initiative to supercharge these efforts and make more UAP information available to the public as soon as possible."
+  source:
+    path: news/nbcnews-trump-ufo-files-interesting-documents-20260418.html
+    location: 'article body, AARO statement paragraphs'
+  significance: 'War Department / Defense Department official statement to NBC News (Apr 18, 2026) — AARO disclosure-coordination statement: working with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information; transferring records to the National Archives in accordance with federal law. The same verbatim statement first appeared in CNN reporting (Mar 7, 2026, Danya Gainor) and was re-shared with Liberation Times (Apr 14, 2026, Christopher Sharp) and IBTimes UK (Apr 16, 2026, Crisnel Longino, paraphrased) across the missed-Apr-14-video-deadline news cycle.'
+  context: NBC News article reporting Trump's Phoenix Turning Point USA remarks plus the formal Defense Department spokesperson statement to NBC News Saturday Apr 18, 2026
+  statement_date: '2026-04-18'
 key_personnel:
 - id: kp1
   added_date: '2026-04-20'
@@ -502,6 +522,14 @@ timeline:
   source:
     path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
     location: 'article body'
+- id: t16
+  added_date: '2026-04-30'
+  date: '2026-04-18'
+  event: War Department AARO disclosure-coordination statement re-shared across the missed-Apr-14-video-deadline news cycle — verbatim core appeared in CNN (Mar 7, Gainor), Liberation Times (Apr 14, Sharp), IBTimes UK (Apr 16, Longino, paraphrased), and NBC News (Apr 18, Guilfoil — formal "statement to NBC News Saturday").
+  category: other
+  source:
+    path: news/nbcnews-trump-ufo-files-interesting-documents-20260418.html
+    location: 'article body, AARO statement paragraphs'
 entities_referenced:
 - id: e1
   added_date: '2026-04-20'

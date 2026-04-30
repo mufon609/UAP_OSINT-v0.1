@@ -1265,6 +1265,14 @@
   archive_status: 3
   note: 60 Minutes broadcast transcript (May 16, 2021), 'UFOs regularly spotted in restricted U.S. airspace.' Bill Whitaker reports. Includes on-camera interview with Lt. Cmdr. Alex Dietrich (her first public statements about the November 2004 USS Nimitz Tic Tac encounter) and Cmdr. David Fravor; also covers Ryan Graves on 2014-15 East Coast encounters.
   wayback_date: '2026-04-13'
+- url: https://www.cnn.com/2026/03/07/us/aliens-ufos-files-release-trump
+  format: html
+  status: archived
+  path: news/cnn-aliens-ufos-files-trump-20260307.html
+  archived_date: '2026-04-30'
+  sha256: 23191400da8775b17c9742e14b6cccbae5cd07e206b7a34d2a6b9c0620926df4
+  archive_status: 1
+  note: Danya Gainor, CNN, Mar 7, 2026 — earliest documented appearance of DoD official AARO disclosure-coordination statement ("working in close coordination with the White House...expeditious release of never-before-seen UAP information")
 - url: https://www.colorado.edu/emp/people/alex-dietrich
   format: html
   status: archived
@@ -1521,6 +1529,14 @@
   archive_status: 3
   note: HigherGov public profile for Sancorp Consulting LLC. Fetched 2026-04-30. Confirms UEI GRYKNJ8BGFC8, CAGE 7NZQ9, SBA Certs SDVOSB+VOSB, Falls Church VA HQ. Date Founded July 28, 2016 (matches initial registration). 8(a) Certification Graduated August 26, 2017 → March 11, 2026 (the handoff §3 statement of 'August 26, 2026 8(a) exit date' was incorrect — actual graduation was March 11, 2026). Last Registration July 30, 2025; Registration Activation July 29, 2025; Most Recent Award December 29, 2025.
   wayback_date: '2023-07-30'
+- url: https://www.ibtimes.co.uk/white-house-pentagon-coordinate-ufo-evidence-release-1792050
+  format: html
+  status: archived
+  path: news/ibtimes-uk-white-house-greenlights-ufo-evidence-20260416.html
+  archived_date: '2026-04-30'
+  sha256: a50e203c76440c5057ebe6fd70dc0c20c4c503eb5c2ec1d75cb5b94a1cc08af7
+  archive_status: 1
+  note: Crisnel Longino, IBTimes UK, Apr 16, 2026 — paraphrased reporting of senior War Department official AARO disclosure-coordination statement (drops 'collections' and second 'UAP')
 - url: https://www.insaonline.org/detail-pages/person/ron-moultrie
   format: html
   status: archived
@@ -1584,6 +1600,14 @@
   archive_status: 3
   note: Liberation Times article (June 22, 2024) reporting that the Department of Defense confirmed in writing to the publication that Kirkpatrick attended an April 19, 2018 Skinwalker Ranch briefing on the Hill — directly contradicting Kirkpatrick's recorded denial to journalist Steven Greenstreet of any pre-AARO UAP duties. Audit finding 3.4 primary documentary source for the DoD attendance confirmation. Also documents Brandon Fugal's contradicting account ('Kirkpatrick was at the head of the table'), the photo Fugal posted on X with EXIF metadata anchoring it to 1:31pm ET on April 19 2018, and AARO's Airstar America test-balloon procurement.
   wayback_date: '2025-03-10'
+- url: https://www.liberationtimes.com/home/war-department-says-white-house-coordinating-release-of-never-before-seen-ufo-material
+  format: html
+  status: archived
+  path: news/liberationtimes-war-department-white-house-coordinating-20260414.html
+  archived_date: '2026-04-30'
+  sha256: 9d04259bf2a6b5ceb1c718f1b221533b2deeebf3a3c1860edb7e5915dc9571c4
+  archive_status: 1
+  note: Christopher Sharp, Liberation Times, Apr 14, 2026 — pre-deadline reporting of War Department official AARO disclosure-coordination statement (same verbatim core as CNN Mar 7)
 - url: https://www.loudountimes.com/0local-or-not/1local/ufo-whistleblower-sues-sheriffs-office-over-records-release/article_b24005c4-490e-11ef-97d5-4bc65ae077be.html
   format: html
   status: archived
@@ -1619,6 +1643,14 @@
   note: First of three UAP videos released by DoD April 27, 2020. Direct download from NAVAIR FOIA documents (https://www.navair.navy.mil/foia/documents). Filename '1 - FLIR.mp4' matches NAVAIR's sequential labeling. 76.30 seconds, 352x264, ISO 14496-14 MP4. Archived 2026-04-20.
   archive_status: 3
   wayback_date: '2025-10-04'
+- url: https://www.nbcnews.com/politics/donald-trump/trump-says-review-ufo-files-found-interesting-documents-rcna333389
+  format: html
+  status: archived
+  path: news/nbcnews-trump-ufo-files-interesting-documents-20260418.html
+  archived_date: '2026-04-30'
+  sha256: d5a2787e1ff386052123c892af8b8971d610b4956c6c9a6d40dc2e10aa833e7c
+  archive_status: 1
+  note: 'Kyla Guilfoil, NBC News, Apr 18, 2026 — formal War Department statement to NBC News Saturday: AARO disclosure-coordination statement with full verbatim text'
 - url: https://www.newsnationnow.com/politics/grusch-hired-burlison/
   format: html
   status: archived
