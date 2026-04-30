@@ -49,7 +49,7 @@ As Under Secretary of Defense for Intelligence and Security ([`/organizations/ou
 | [`/organizations/battelle-memorial-institute`] | Advisory Board Member | 2016-07 – 2018-04 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |
 | [`/organizations/itc-global-advisors`] | Senior Advisor | 2016-07 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |
 | [`/organizations/riwi-corp`] | Senior Advisor | 2017-01 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |
-| [`/organizations/c5-capital`] | Strategic Partner | 2017-01 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |
+| [`/organizations/c5-capital`] | Strategic Partner (March 2017 announcement) — elevated to Chairman, C5 US by December 2017 (per Businesswire IISS Manama Dialogue panel listing) | 2017-01 | news/businesswire-c5-iiss-manama-moultrie-chairman-c5-us-20171212.html |
 | [`/organizations/resolute-consulting`] | Cyber Security Advisory Board | 2018-05 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |
 | [`/organizations/altamira-technologies-corporation`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
 | [`/organizations/icapital-network`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
@@ -57,6 +57,9 @@ As Under Secretary of Defense for Intelligence and Security ([`/organizations/ou
 | [`/organizations/yahya-technologies-y-tech`] | Advisory Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
 | [`/organizations/auburn-seminary`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
 | [`/organizations/vibrant-emotional-health`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
+| [`/organizations/mitre`] | Senior Adviser | 2021 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
+| [`/organizations/pallas`] | Senior Adviser | 2021 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
+| [`/organizations/bluevoyant`] | Vice Chairman, Advisory Board — appointment announced June 2021 during the USD(I&S) nomination period (per the ExecutiveBiz article 'BlueVoyant Names Debora Plunkett, Ariel Litvin to Board of Directors, Ronald Moultrie to Advisory Board') | 2021-06 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
 | [`/organizations/ousd-is`] | Under Secretary of Defense for Intelligence and Security (Senate-confirmed presidential appointment); principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; managed a portfolio of over $30 billion and 225,000 global civilian and uniformed personnel | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |
 | [`/organizations/odni`] | Director of Defense Intelligence (dual-hatted with USD(I&S) role) | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |
 | [`/organizations/ron-moultrie-consulting`] | President/Owner | 2024 | news/insa-moultrie-bio.html |
@@ -218,10 +221,15 @@ As Under Secretary of Defense for Intelligence and Security ([`/organizations/ou
 | 2016-07 | Joined Battelle Memorial Institute as Advisory Board Member; tenure attested verbatim on his contemporaneous LinkedIn profile printed June 27 2018 (page 2 of 5; screenshot distributed by Christopher Sharp via X tweet 1965182535358456276) | affiliation | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
 | 2016-07 | Joined ITC Global Advisors as Senior Advisor | affiliation | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
 | 2017-01 | Became C5 Capital Strategic Partner and RIWI Corp Senior Advisor | affiliation | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
+| 2017-03-06 | C5 Partners (the Strategic Partner Program of C5 Capital) announces the appointment of former NSA Director of Operations Ron Moultrie as Strategic Partner; mondovisione press release covers the appointment | affiliation | news/mondovisione-c5-partners-moultrie-nsa-20170306.html |  |
+| 2017-12-12 | Businesswire press release on the C5 Capital partnership with the International Institute for Strategic Studies lists Moultrie's role as 'Chairman, C5 US' on the IISS Manama Dialogue panel — primary attestation of his elevation from Strategic Partner within nine months of joining C5 Capital | role | news/businesswire-c5-iiss-manama-moultrie-chairman-c5-us-20171212.html |  |
 | 2018-04 | Battelle Advisory Board membership ends after 1 year 10 months | affiliation | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
 | 2018-05 | Joined Resolute Consulting LLC Cyber Security Advisory Board | affiliation | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
 | 2018-06-27 | LinkedIn profile printout date stamped on screenshot distributed by Christopher Sharp; documents Moultrie's then-current affiliations including Battelle Advisory Board, Oceanus Security Strategies, Resolute Consulting, C5 Capital, RIWI Corp, ITC Global Advisors, plus 2010-2015 NSA Signals Intelligence leadership | other | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
+| 2021-04-02 | President Joe Biden announces his intent to nominate Ronald Moultrie for Under Secretary of Defense for Intelligence and Security; nomination announcement issued by the Biden White House Press Office | role | government/biden-whitehouse-archives-moultrie-nomination-announcement-20210402.html |  |
+| 2021-05-27 | Senate Armed Services Committee nomination hearing for Mike McCord (Comptroller) and Ronald Moultrie (USD/I&S); Moultrie's pre-hearing Statement and Advance Policy Questions are submitted as part of the record | testimony | government/armed-services-senate-gov-nomination-mccord-and-moultrie.html |  |
 | 2021-05-29 | Confirmed by the U.S. Senate as Under Secretary of Defense for Intelligence and Security | role | news/wikipedia-ronald-moultrie.html |  |
+| 2021-06 | ExecutiveBiz reports BlueVoyant has named Moultrie Vice Chairman of its Advisory Board, alongside Debora Plunkett and Ariel Litvin appointments to the Board of Directors. The article also describes Moultrie as a senior adviser to Mitre, Resolute Consulting, and Pallas | affiliation | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |  |
 | 2021-06-01 | Sworn in as Under Secretary of Defense for Intelligence and Security; principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters | role | government/wargov-moultrie-biography.html |  |
 | 2022-03-17 | Testified before the House Armed Services Committee Subcommittee on Intelligence and Special Operations (Chairman Gallego, Ranking Member Kelly) on the FY23 posture of the Defense Intelligence and Security Enterprise; co-witnesses Generals Nakasone and Berrier | testimony | government/hasc-iso-moultrie-witness-statement-20220317.pdf |  |
 | 2022-05-17 | Testified at the first open congressional hearing on UAP in 50 years (House Permanent Select Committee on Intelligence Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation) | testimony | government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html |  |
@@ -303,6 +311,7 @@ At the December 16, 2022 AARO Media Roundtable with Kirkpatrick, Moultrie said h
 - [`/organizations/altamira-technologies-corporation`]
 - [`/organizations/auburn-seminary`]
 - [`/organizations/battelle-memorial-institute`]
+- [`/organizations/bluevoyant`]
 - [`/organizations/c5-capital`]
 - [`/organizations/cia`]
 - [`/organizations/dcsa`]
@@ -315,6 +324,7 @@ At the December 16, 2022 AARO Media Roundtable with Kirkpatrick, Moultrie said h
 - [`/organizations/iob`]
 - [`/organizations/itc-global-advisors`]
 - [`/organizations/leolabs`]
+- [`/organizations/mitre`]
 - [`/organizations/national-cryptologic-foundation`]
 - [`/organizations/national-intelligence-university`]
 - [`/organizations/nga`]
@@ -324,6 +334,7 @@ At the December 16, 2022 AARO Media Roundtable with Kirkpatrick, Moultrie said h
 - [`/organizations/oceanus-security-strategies`]
 - [`/organizations/odni`]
 - [`/organizations/ousd-is`]
+- [`/organizations/pallas`]
 - [`/organizations/piab`]
 - [`/organizations/resolute-consulting`]
 - [`/organizations/riwi-corp`]

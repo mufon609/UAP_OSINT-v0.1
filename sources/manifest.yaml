@@ -105,6 +105,14 @@
   sha256: 8d11fb0782ee01be689bec2afb5c3f9030d35fc6e8ae23e8eab2747dbb9cee0c
   archive_status: 1
   note: 'Ronald S. Moultrie''s prepared remarks as USD(I&S) before the House Armed Services Committee Subcommittee on Intelligence and Special Operations, March 17, 2022. FY23 Defense Intelligence and Security Enterprise posture hearing. Chairman Gallego, Ranking Member Kelly. Co-witnesses: Gen. Nakasone and Gen. Berrier. Direct retrieval blocked (armedservices.house.gov returns 403); fetched via Wayback Machine capture 2022-09-22.'
+- url: https://bidenwhitehouse.archives.gov/briefing-room/statements-releases/2021/04/02/president-biden-announces-his-intent-to-nominate-key-members-for-the-department-of-defense/
+  format: html
+  status: archived
+  path: government/biden-whitehouse-archives-moultrie-nomination-announcement-20210402.html
+  archived_date: '2026-04-30'
+  sha256: 219a853f569012ab0090df6461c4f42b2a03b561eae89f81743e6b52f96d0a79
+  archive_status: 1
+  note: 'Biden White House nomination announcement (April 2 2021): ''President Biden Announces his Intent to Nominate Key Members for the Department of Defense'' — names Ronald Moultrie for Under Secretary of Defense for Intelligence and Security. Source for the formal nomination date in audit § 5.1 confirmation chronology.'
 - url: https://burchett.house.gov/media/press-releases/congressman-burchetts-statement-after-uap-hearing-held-house-oversight
   format: html
   status: archived
@@ -264,9 +272,10 @@
   path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
   archived_date: '2026-04-29'
   sha256: c38bb7c8f394a184dde16903364ba35dbd0b1f1212e2ee148a6b7deaac403266
-  archive_status: 1
+  archive_status: 3
   extraction_type: ocr-scan
   note: Pentagon internal emails (Feb 1 - Mar 7 2024) about AARO Historical Record Report Vol 1 rollout under Acting Director Tim Phillips; FOIA 24-F-0894. Documents tightly-controlled press rollout (declined journalist requests, invite-only March 8 2024 briefing) and ODNI deliberately omitted from public framing despite statutory reporting requirement under FY2023 NDAA. Also captures sUAS portfolio dispute correspondence (Gough-Kozik exchange after Gillibrand pressed for AARO to take on counter-drone coordination). Source for the Vol 1 rollout-control note recommended by audit finding 3.2/4.5. esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror. PDF producer is OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan; verbatim quotes must be visually verified against the source page or a clean-text sibling.
+  wayback_date: '2026-04-29'
 - url: https://douglasjohnson.ghost.io/uap-disclosure-act-pentagon-rewrite-nov-2023/
   format: html
   status: archived
@@ -309,8 +318,9 @@
   path: news/wikipedia-ronald-moultrie.html
   archived_date: '2026-04-29'
   sha256: b063a5a23e16bf822fa07b147abd6718f8fe46751d0060b58166d57a979c9b4d
-  archive_status: 1
+  archive_status: 3
   note: Wikipedia article on Ronald Moultrie (Under Secretary of Defense for Intelligence and Security 2021-2024). Public-record secondary source aggregating his career timeline, board affiliations, and post-government roles.
+  wayback_date: '2025-10-12'
 - url: https://en.wikipedia.org/wiki/Sean_M._Kirkpatrick
   format: html
   status: archived
@@ -397,8 +407,9 @@
   path: news/handwiki-biography-sean-m-kirkpatrick.html
   archived_date: '2026-04-29'
   sha256: 9f8b4a94f4a61e56e0c6240dc9ec2cb22c4a9a815e24331e627d3f13bc69ff3d
-  archive_status: 1
+  archive_status: 3
   note: HandWiki encyclopedia biography entry for Sean M. Kirkpatrick — cross-reference index to multiple DoD / AFCEA / Symposium365 source citations confirming the 2003-2005 NRO, 2005-2007 CIA S&T, 2007-2010 joint CIA-DIA, 2010-2012 OSD Space Control chronology. Treat as secondary-source aggregate; primary anchor for any specific claim is the DoD bio, AFCEA bio, or Potomac Officers Club bio. Audit appendix cross-reference resource.
+  wayback_date: '2026-04-29'
 - url: https://leolabs.space/blog/ron-moultrie-leolabs-board-of-directors/
   format: html
   status: archived
@@ -466,14 +477,23 @@
   sha256: 8c23519c62a5717427c2d09d5ade165284421f2e5facad76a565a94774067868
   archive_status: 3
   wayback_date: '2026-03-27'
+- url: https://mondovisione.com/media-and-resources/news/c5-partners-appoints-former-us-national-security-agency-director-of-operations/
+  format: html
+  status: archived
+  path: news/mondovisione-c5-partners-moultrie-nsa-20170306.html
+  archived_date: '2026-04-30'
+  sha256: 15c0bd8c0442ab6f5212d98b41310acc4b2e726bb166aa8b23bf9fbfa46d0b40
+  archive_status: 1
+  note: 'C5 Capital announcement (March 6, 2017): C5 Partners appoints former NSA Director of Operations Ron Moultrie. Source for audit § 5.2 — Moultrie joined C5 Capital as Strategic Partner in early 2017.'
 - url: https://newparadigminstitute.org/learn/library/using-the-wall-street-journal-the-pentagon-is-gaslighting-the-public-on-ufos-again/
   format: html
   status: archived
   path: news/newparadigminstitute-pentagon-gaslighting-public-on-ufos-20250606.html
   archived_date: '2026-04-29'
   sha256: f29c4655c63558ad8cb88c62740ec86620ee250bdc63ffe02f78198638e9e284
-  archive_status: 1
+  archive_status: 3
   note: New Paradigm Institute response to the WSJ piece, framing it as Pentagon disinformation. Counter-narrative source for the WSJ Vol II preview, parallel to the Liberation Times rebuttal.
+  wayback_date: '2026-02-21'
 - url: https://nssaspace.org/event/kirkpatrick-2024/
   format: html
   status: archived
@@ -611,8 +631,9 @@
   path: news/pjmedia-disinformation-campaign-secret-technology-ufos-20250607.html
   archived_date: '2026-04-29'
   sha256: 69c9d80424a78448c7354f7e24911a5d026769aa814334b6841e4a5fabecdc0a
-  archive_status: 1
+  archive_status: 3
   note: PJ Media coverage by Rick Moran of the WSJ Pentagon-disinformation piece (June 7 2025). Right-leaning mainstream pickup; cross-corroboration of the WSJ findings.
+  wayback_date: '2025-07-26'
 - url: https://safeaerospace.org/
   format: html
   status: archived
@@ -738,8 +759,9 @@
   path: news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html
   archived_date: '2026-04-29'
   sha256: c05123d848e7d78dd4d584680b17195669f8411f7639ef008b0703dd0f6bbdcc
-  archive_status: 1
+  archive_status: 3
   note: Unknown Country article (June 2024) reporting on the Brandon Fugal-disclosed undisclosed 2018 meeting between Kirkpatrick (then DIO/S&TI at DIA) and the Skinwalker Ranch research team in Washington DC; cites Fugal's May 9 2024 X post photograph documenting Kirkpatrick at the head of the table during the April 19 2018 SSCI/SASC briefing, and the EXIF metadata anchoring the photograph to 1:31pm ET on April 19 2018 between 1:00-3:30pm ET. Documents the Greenstreet split-screen interview where Kirkpatrick denied any pre-AARO UAP duties and characterized himself as 'an independent outside reviewer'. Source for audit finding 3.4 (post-departure controversy).
+  wayback_date: '2025-03-20'
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
@@ -964,6 +986,22 @@
   archive_status: 3
   note: Sean Kirkpatrick pre-hearing Statement for the Record submitted to SASC Subcommittee on Emerging Threats and Capabilities for the 2023-04-19 AARO hearing
   wayback_date: '2025-03-08'
+- url: https://www.armed-services.senate.gov/download/moultrieapq
+  format: pdf
+  status: archived
+  path: government/armed-services-senate-gov-moultrie-advance-policy-questions-20210527.pdf
+  archived_date: '2026-04-30'
+  sha256: b1b362a632d13d3478e94f3913cef494ba5babd4852a3f1e20f371bd2c6cc3fe
+  archive_status: 1
+  note: Moultrie's Advance Policy Questions (APQ) responses submitted to the Senate Armed Services Committee for the May 27 2021 nomination hearing. Per audit § 5.5, the APQ is the canonical document for what Moultrie disclosed to the committee about his private-sector portfolio at confirmation time.
+- url: https://www.armed-services.senate.gov/download/statementmoultrie
+  format: pdf
+  status: archived
+  path: government/armed-services-senate-gov-moultrie-pre-hearing-statement-20210527.pdf
+  archived_date: '2026-04-30'
+  sha256: 6bba09f923be3c21612404d4eff026e5046222b707cc0a4ea6ee4b95dd966ac7
+  archive_status: 1
+  note: Moultrie pre-hearing Statement for the Record submitted to the Senate Armed Services Committee for the May 27 2021 nomination hearing (USD/I&S). Primary record of his pre-confirmation policy positions and pre-government affiliations.
 - url: https://www.armed-services.senate.gov/download/transcript-4-19-2023
   format: pdf
   status: archived
@@ -983,6 +1021,14 @@
   archive_status: 1
   wayback_skip: true
   note: 'Contributor-produced clean-text transcription of the 2023-04-19 SASC AARO hearing transcript PDF (paired entry; same path stem). Stenographic transcript by Alderson Court Reporting in standard Senate format with 1-25 line numbers prefixed on every content line and footer/page-number boilerplate every 25 lines; pdftotext extracts those numbers inline, which breaks verbatim substring matching for any quote spanning a line boundary. This .txt restores plain prose by stripping the line-number prefixes and removing the Scheduling@TP.One / www.TP.One / page-number footer triplets. Validator (validate.py extract_source_text) prefers this same-stem .txt sibling over pdftotext output for the PDF entry flagged extraction_type=extraction-lossy. Page-marker sections (=== p. N ===) intentionally OMITTED — those inline tokens survive normalize_for_compare and would break verbatim matching for any quote spanning a page boundary; quote Location refs cite pdftotext line numbers in the original extract until BACKLOG #24 location-reference sweep.'
+- url: https://www.armed-services.senate.gov/hearings/nomination_mccord-and-moultrie
+  format: html
+  status: archived
+  path: government/armed-services-senate-gov-nomination-mccord-and-moultrie.html
+  archived_date: '2026-04-30'
+  sha256: 6ada4c171332505722b072cf0dc085ff9f5593d8fa29e9fcd6390be1daa8b438
+  archive_status: 1
+  note: Senate Armed Services Committee nomination hearing index page for Mike McCord (Comptroller) and Ronald Moultrie (USD/I&S) — May 27 2021 hearing. Page contains links to the candidate pre-hearing Statements and Advance Policy Questions (APQ); the Moultrie statement and APQ are archived separately at .../armed-services-senate-gov-moultrie-pre-hearing-statement-20210527.pdf and .../armed-services-senate-gov-moultrie-advance-policy-questions-20210527.pdf.
 - url: https://www.armed-services.senate.gov/hearings/to-receive-testimony-on-the-activities-of-the-all-domain-anomaly-resolution-office
   format: html
   status: archived
@@ -1016,16 +1062,26 @@
   path: government/battelle-990-fy2019.pdf
   archived_date: '2026-04-29'
   sha256: 380e305997d6928a3767ba5283d30aa4fae2ee7aead30dcca083e3492c4aa5d4
-  archive_status: 1
+  archive_status: 3
   note: Battelle Memorial Institute IRS Form 990 + 990-T for FY ending September 30, 2019. Public corporate-disclosure financial filing. Used per the April 2026 architecture investigation to rule out Moultrie's presence on Battelle Board of Directors during this fiscal year (Form 990 Part VII Section A does not require listing Advisory Board members per IRS instructions).
+  wayback_date: '2021-07-20'
 - url: https://www.battelle.org/docs/default-source/privacy-policies-disclosures/bmi-2020-990-and-990t---fy21.pdf
   format: pdf
   status: archived
   path: government/battelle-990-fy2021.pdf
   archived_date: '2026-04-29'
   sha256: dd60697ba762e44821b091e0cf45ff200de7e5647ffc227f998ef45b2d522ed5
-  archive_status: 1
+  archive_status: 3
   note: Battelle Memorial Institute IRS Form 990 + 990-T for FY ending September 30, 2021. Public corporate-disclosure financial filing. Used per the April 2026 architecture investigation to rule out Moultrie's presence on Battelle Board of Directors during this fiscal year. URL contains triple hyphen (literal '---'), not em-dash.
+  wayback_date: '2023-07-06'
+- url: https://www.businesswire.com/news/home/20171212005613/en/
+  format: html
+  status: archived
+  path: news/businesswire-c5-iiss-manama-moultrie-chairman-c5-us-20171212.html
+  archived_date: '2026-04-30'
+  sha256: 3219200cc3fd26b87ff3c04f4e580ead1466a56873a028e22fb23a6e5029bf03
+  archive_status: 1
+  note: Businesswire press release (December 12, 2017) covering the C5 Capital partnership with the International Institute for Strategic Studies. Lists Moultrie's role as 'Chairman, C5 US' on the IISS Manama Dialogue panel — primary attestation that Moultrie was elevated from Strategic Partner to Chairman C5 US by December 2017 (audit § 5.2). Direct businesswire URL is HTTP/2 reset blocked; archived via Wayback Machine.
 - url: https://www.buzzsprout.com/1531799/episodes/14943834-dr-sean-kirkpatrick-ph-d-nonlinear-solutions-llc-science-and-technology-for-emerging-national-security-threats
   format: html
   status: archived
@@ -1198,6 +1254,22 @@
   archive_status: 3
   note: USD(I&S) Ronald Moultrie and Dr. Sean Kirkpatrick Media Roundtable on AARO, December 16 2022 — Kirkpatrick's first major joint public statement as AARO Director. Established DOE as partnership channel from establishment forward (3+ mentions); established 'holdings' rhetorical boundary (documents/memos, not physical evidence); Moultrie publicly stated DoD has 'not seen anything that would lead us... to believe that any of the objects we have seen are of alien origin'. Fetched via Wayback Machine snapshot 2022-12-17 (defense.gov/war.gov 403-blocks current direct retrieval)
   wayback_date: '2025-08-05'
+- url: https://www.defensenews.com/congress/2021/05/28/senate-confirms-pentagon-finance-and-intel-chiefs/
+  format: html
+  status: archived
+  path: news/defensenews-senate-confirms-pentagon-finance-intel-chiefs-20210528.html
+  archived_date: '2026-04-30'
+  sha256: c5d79e98f0262200952835731abb7dad60ef79fe4d2293ff93802d6d691161e8
+  archive_status: 1
+  note: Defense News coverage (May 28 2021) of the Senate confirmation of Mike McCord (Comptroller) and Ronald Moultrie (USD/I&S). Primary confirmation-date source per audit § 5.1.
+- url: https://www.defenseone.com/defense-systems/2021/05/moultries-cyber-background-clears-confirmation-path/195126/
+  format: html
+  status: archived
+  path: news/defenseone-moultrie-cyber-background-confirmation-202105.html
+  archived_date: '2026-04-30'
+  sha256: 3497a812e1526b6120372bbbe456915a8cc3dd4d931d59fb6b0c331d4a1fbe43
+  archive_status: 1
+  note: Defense One coverage (May 2021) of Moultrie's USD(I&S) confirmation path, focusing on his cyber background. Audit § 5 nomination-period source.
 - url: https://www.democrats.senate.gov/newsroom/press-releases/schumer-rounds-introduce-new-legislation-to-declassify-government-records-related-to-unidentified-anomalous-phenomena-and-ufos_modeled-after-jfk-assassination-records-collection-act--as-an-amendment-to-ndaa
   format: html
   status: archived
@@ -1240,6 +1312,14 @@
   sha256: b1c1e5c720a6f157318a634454fe3592fcd21fcc14ce856296cd825764ea8ff4
   archive_status: 1
   note: DOE Office of Hearings and Appeals decision FIA-24-0036 (Issued July 17, 2024) on Dustin M. Slaughter's appeal challenging Oak Ridge Office's 'no records responsive' determination on FOIA request ORO-2024-02087-F regarding Sean Kirkpatrick's transition from AARO Director to ORNL CTO; the document Coulthart's Nov 2023 reporting flagged was the basis for the underlying FOIA. OHA denied the appeal — see decision text.
+- url: https://www.executivebiz.com/articles/bluevoyant-names-debora-plunkett-ariel-litvin-to-board-of-directors-ronald-moultrie-to-advisory-board
+  format: html
+  status: archived
+  path: news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html
+  archived_date: '2026-04-30'
+  sha256: 25d066034bd6c7708d21139d5f3f34c40a4d4f1b759557401551d911b1c1653c
+  archive_status: 1
+  note: 'ExecutiveBiz article (June 2021): ''BlueVoyant Names Debora Plunkett, Ariel Litvin to Board of Directors, Ronald Moultrie to Advisory Board''. Carries: BlueVoyant Vice Chairman of Advisory Board appointment AND the Mitre / Resolute Consulting / Pallas senior-advisor list (''He is also a senior adviser to Mitre, Resolute Consulting and Pallas''). Single primary source for audit § 5.5 missing affiliations BlueVoyant + Mitre + Pallas.'
 - url: https://www.executivebiz.com/articles/dod-intelligence-ronald-moultrie-leolabs-board-of-directors
   format: html
   status: archived
@@ -1280,40 +1360,45 @@
   path: news/insa-moultrie-bio.html
   archived_date: '2026-04-29'
   sha256: 78e2dc8ccba65d3db90f939dfa40892c7f7fc1f4cca705a93270ae05d893df0b
-  archive_status: 1
+  archive_status: 3
   note: Intelligence and National Security Alliance (INSA) public profile page for Ron Moultrie. Listed as USD(I&S) framing. One of the public-facing post-government affiliation listings; per the April 2026 architecture investigation Battelle is absent from this bio.
+  wayback_date: '2025-01-25'
 - url: https://www.insidebidensbasement.org/appointees/ronald-moultrie
   format: html
   status: archived
   path: news/insidebidensbasement-moultrie.html
   archived_date: '2026-04-29'
   sha256: 0b5d380c1750d2d4fe01d17176eb1f36ce77efbc77e24a83ca3e8f8c12eaeadc
-  archive_status: 1
+  archive_status: 3
   note: Inside Biden's Basement appointee tracker for Ronald Moultrie; Biden-administration appointment tracking with timeline of pre/post-government roles.
+  wayback_date: '2025-09-06'
 - url: https://www.jpost.com/omg/article-856910
   format: html
   status: archived
   path: news/jpost-pentagon-disinformation-ufo-mythology-20250606.html
   archived_date: '2026-04-29'
   sha256: ea7791e65b9bc62c0bc6c304a73dbedf9af642260bc51f5de7ad6fed46dac2d9
-  archive_status: 1
+  archive_status: 3
   note: Jerusalem Post coverage of the WSJ Pentagon-disinformation piece, June 2025. Secondary mainstream outlet picked up the story; useful for cross-corroboration of the WSJ findings.
+  wayback_date: '2025-06-21'
 - url: https://www.liberationtimes.com/home/from-moscow-to-malmstrom-russian-style-disinformation-tactics-target-us-ufo-transparency-efforts
   format: html
   status: archived
   path: news/liberationtimes-russian-style-disinformation-tactics-20250606.html
   archived_date: '2026-04-29'
   sha256: 2ce43928ae877d71954e3f4b3701a51dfff656cede01e692278d762a501ef36d
-  archive_status: 1
+  archive_status: 3
   note: Liberation Times rebuttal piece by Marik von Rennenkampff (June 2025) framing the WSJ Pentagon-disinformation article itself as a coordinated rollout to pre-frame HRR Vol II and discredit UAP whistleblowers. Counter-narrative source for the 3.4 finding.
+  wayback_date: '2025-07-10'
 - url: https://www.liberationtimes.com/home/lack-of-transparency-surrounding-us-governments-former-uap-office-director-raises-concerns
   format: html
   status: archived
   path: news/liberationtimes-lack-of-transparency-kirkpatrick-skinwalker-20240622.html
   archived_date: '2026-04-29'
   sha256: 9611e3377b62c77d8a9af840c9b6d0f91e59536c070735c6ab49dff82bc6d2e1
-  archive_status: 1
+  archive_status: 3
   note: Liberation Times article (June 22, 2024) reporting that the Department of Defense confirmed in writing to the publication that Kirkpatrick attended an April 19, 2018 Skinwalker Ranch briefing on the Hill — directly contradicting Kirkpatrick's recorded denial to journalist Steven Greenstreet of any pre-AARO UAP duties. Audit finding 3.4 primary documentary source for the DoD attendance confirmation. Also documents Brandon Fugal's contradicting account ('Kirkpatrick was at the head of the table'), the photo Fugal posted on X with EXIF metadata anchoring it to 1:31pm ET on April 19 2018, and AARO's Airstar America test-balloon procurement.
+  wayback_date: '2025-03-10'
 - url: https://www.loudountimes.com/0local-or-not/1local/ufo-whistleblower-sues-sheriffs-office-over-records-release/article_b24005c4-490e-11ef-97d5-4bc65ae077be.html
   format: html
   status: archived
@@ -1434,24 +1519,27 @@
   path: government/osti-6679837-doe-supercomputing-honors-program-1985-followup.html
   archived_date: '2026-04-29'
   sha256: 3913b0c55831551c05141b3bb39dc63092d0f6e7a672c72f6a460f835eddd510
-  archive_status: 1
+  archive_status: 3
   note: 'DOE OSTI catalog entry for ORAU 1987 follow-up assessment ''US Department of Energy High School Student Supercomputing Honors Program: A follow-up assessment'' (DOI 10.2172/6679837). Primary government catalog attestation that the DOE Honors Program family was inaugurated at LLNL in August 1985 — making the 1986 Brookhaven HSRP the second site in the family rather than the absolute inaugural year of the DOE Honors Program initiative. Useful for tightening Wikipedia''s ''inaugural High School Honors Research Program'' framing on the Kirkpatrick node (audit 2.3 context).'
+  wayback_date: '2018-07-26'
 - url: https://www.physast.uga.edu/academic_programs/grad/graduate-awards
   format: html
   status: archived
   path: news/uga-physast-graduate-awards-kirkpatrick-wayback-20220706.html
   archived_date: '2026-04-29'
   sha256: 0be16ecb98feecc2e0d5ff7acfa607b4e9586609069bcb32555629f23f57c41e
-  archive_status: 1
+  archive_status: 3
   note: 'University of Georgia Department of Physics and Astronomy graduate-awards page (Wayback Machine 2022-07-06 snapshot; current URL returns 404). Carries the ''Sean M. Kirkpatrick Award for Outstanding Achievement in Graduate Research'' description: ''recognize a graduate student who has demonstrated outstanding research abilities... encourage the development of creative problem solving, multiple technical and analytic skills, and/or theoretical insight.'' Source for audit finding 2.4 (UGA award framing tightening — establishment context, eligibility criteria, ,000 stipend not stated on this snapshot).'
+  wayback_date: '2023-07-27'
 - url: https://www.physast.uga.edu/graduate-awards
   format: html
   status: archived
   path: news/uga-physast-graduate-awards-kirkpatrick-live.html
   archived_date: '2026-04-29'
   sha256: eda22d2f8b1fc015ab06a234ccac2b91df8fef4f22804db6e39bac90df8e0526
-  archive_status: 1
+  archive_status: 3
   note: University of Georgia Department of Physics & Astronomy active graduate-awards page (current URL — the older /academic_programs/grad/graduate-awards URL is now 404 and was previously archived only via Wayback). Carries the live 'Sean M. Kirkpatrick Award for Outstanding Achievement in Graduate Research' description. Source for audit finding 2.4 framing tightening; supersedes the Wayback 2022 snapshot for current node citations.
+  wayback_date: '2026-03-02'
 - url: https://www.physast.uga.edu/people/sean-kirkpatrick
   format: html
   status: archived
@@ -1485,8 +1573,9 @@
   path: news/potomacofficersclub-kirkpatrick-bio.html
   archived_date: '2026-04-29'
   sha256: 87b8e2f1a99e9e1466f275c913716c0412c09e2789b0f7fb75dc7d7075059013
-  archive_status: 1
+  archive_status: 3
   note: 'Potomac Officers Club speaker bio for Dr. Sean Kirkpatrick. Carries career-history detail not in the DoD bio: the 2007 joint CIA-DIA program office assignment was ''within the Advanced Systems Division''; the 2003 NRO role was ''program manager of the Advanced Technologies program'' (richer than the DoD bio''s ''program manager position''). Source for audit finding 1.1 (2018 employment gap context) — though audit notes treat the Advanced Systems Division placement as secondary-source pending DoD-bio cross-check (audit 7 Open).'
+  wayback_date: '2025-12-11'
 - url: https://www.rev.com/transcripts/nasa-holds-first-public-meeting-on-ufos-transcript
   format: html
   status: archived
@@ -1583,8 +1672,9 @@
   path: news/blackvault-foia-24-f-0894-vol-1-rollout-emails-20250827.html
   archived_date: '2026-04-29'
   sha256: f1553f2c51abe185d330c9c524d8bf74088507151be317cbc1ab00db512deff8
-  archive_status: 1
+  archive_status: 3
   note: 'Black Vault analysis page (August 27, 2025): ''FOIA Emails Reveal Pentagon''s Tight Control Over AARO Historical Record Report Rollout and Messaging''. Frames the FOIA 24-F-0894 release with John Greenewald''s analysis of the rollout-control emails, ODNI omission decision, and adjacent sUAS-portfolio Gough-Kozik exchange.'
+  wayback_date: '2026-03-10'
 - url: https://www.theblackvault.com/documentarchive/pentagon-releases-details-about-dr-travis-taylors-uap-task-force-involvement/
   format: html
   status: archived
@@ -1618,16 +1708,18 @@
   path: news/theufochronicles-senate-briefing-skinwalker-ranch-20240601.html
   archived_date: '2026-04-29'
   sha256: feddcf2f826535d02425620d972e1ed990da41e3a7b62fb0bb8a7d102f14e364
-  archive_status: 1
+  archive_status: 3
   note: 'The UFO Chronicles blog post by journalist Billy Cox (June 2024): ''Senate Briefing on The Skinwalker Ranch and AARO''s Sean Kirkpatrick''. Reports on Brandon Fugal''s contradiction of Kirkpatrick''s Greenstreet-interview denial and the April 19 2018 SSCI/SASC Skinwalker Ranch briefing where Fugal alleges Kirkpatrick told attendees ''we already know''. Source for audit finding 3.4.'
+  wayback_date: '2026-03-10'
 - url: https://www.tovima.com/wsj/the-pentagon-disinformation-that-fueled-americas-ufo-mythology/
   format: html
   status: archived
   path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html
   archived_date: '2026-04-29'
   sha256: a2929ba62cd8e53c88a4f8166b070a2d088eba4d5921ddbfc037e37220e7accf
-  archive_status: 1
+  archive_status: 3
   note: 'Tovima.com syndication of the Wall Street Journal investigation ''The Pentagon Disinformation That Fueled America''s UFO Mythology'' by Joel Schectman and Aruna Viswanatha, originally published June 6 2025 (tovima posted 2025-06-08). The WSJ original is paywalled; this mirror carries the full article text. Documents two AARO Vol II findings Kirkpatrick attributes to his investigation: (1) Cold War deception programs — F-117 stealth-fighter testing at Area 51 covered by fabricated flying-saucer photos given to a bar owner by an Air Force colonel, and Salas Montana 1967 missile-silo electromagnetic-pulse-test cover-up; (2) the ''Yankee Blue'' decades-long Air Force hazing ritual showing newly-assigned commanders fake antigravity-craft photos under threat of arrest, prison, or execution. DoD spokeswoman Sue Gough on-record confirms AARO uncovered fake classified program materials and expects to publish findings in HRR Vol II ''later this year'' (deadline since missed). Source for audit finding 3.4.'
+  wayback_date: '2025-08-31'
 - url: https://www.vice.com/en/article/brandon-fugal-owner-of-skinwalker-ranch/
   format: html
   status: archived
@@ -1643,16 +1735,18 @@
   path: government/wargov-moultrie-biography.html
   archived_date: '2026-04-29'
   sha256: 4c65c37f31a9c3e46dbaeabf2b634191a890af11e5d287c116f074e9ecfef1ac
-  archive_status: 1
+  archive_status: 3
   note: war.gov (formerly defense.gov before EO 14347) official Pentagon biography for Ronald S. Moultrie. Captures USD(I&S) tenure framing, dual-hat ODNI Director of Defense Intelligence role, and 36+ year DoD/NIC career retiring from NSA Director of Operations in 2015. Direct retrieval blocked (war.gov returns 403); fetched via Wayback Machine (capture 2026-02-01).
+  wayback_date: '2026-02-01'
 - url: https://www.war.gov/News/Releases/Release/Article/616969/new-joint-interagency-combined-space-operations-center-to-be-established/
   format: html
   status: archived
   path: government/war-gov-jicspoc-establishment-20150911.html
   archived_date: '2026-04-29'
   sha256: d7399c5efc5cc82cf8fb7c6f52944b214bcb34cabfc4b9bf7a23404897ad5b04
-  archive_status: 1
+  archive_status: 3
   note: DoD press release dated September 11, 2015 announcing establishment of the Joint Interagency Combined Space Operations Center (JICSpOC) at Schriever Air Force Base in Colorado Springs in conjunction with USSTRATCOM, Air Force Space Command, and the intelligence community. Experimentation and testing scheduled to begin October 1, 2015. Captured via Wayback Machine September 7, 2025 snapshot of the war.gov mirror (post-2026 DoD domain rebrand). Source for the JICSpOC special-assignment chronology referenced in audit finding 1.3.
+  wayback_date: '2026-01-31'
 - url: https://www.westexec.com/kavandi-kirkpatrick/
   format: html
   status: archived
@@ -1729,8 +1823,9 @@
   path: transcripts/ncas-kirkpatrick-aaro-duality-20260409-downloaded.md
   archived_date: '2026-04-29'
   sha256: 2782a4a00850c25624d936426930652d6a7f3db0507815d1f22b41a4b98fb8da
-  archive_status: 1
+  archive_status: 3
   note: 'YouTube auto-caption transcript of Kirkpatrick''s April 9 2026 first public reappearance after ~2 years of relative silence; National Capital Area Skeptics (NCAS) Arlington VA event titled ''All-domain Anomaly Resolution Office (AARO): a Duality in Mission Regarding UAPs'' hosted by NCAS president Scott Snell. Kirkpatrick restated the no-aliens / no-legacy-program conclusion. Source for audit finding 3.4. extraction_type: auto-caption; expect transcribe-pipeline typos (BACKLOG #20).'
+  wayback_date: '2026-04-27'
 - url: https://www.youtube.com/watch?v=ku9CYCKw4Aw
   format: transcript
   status: archived
