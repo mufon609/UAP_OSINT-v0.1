@@ -266,7 +266,7 @@ AARO is established under the Under Secretary of Defense for Intelligence and Se
 
 ---
 
-### DefenseScoop reporter observation (Brandi Vincent, Feb 25, 2026) — AARO communications posture characterized as "noticeably tight-lipped"; no 2025 annual report and no second volume of historical-record reports published as of publication date.
+### DefenseScoop reporter observation (Brandi Vincent, Feb 25, 2026) — AARO communications posture characterized as "noticeably tight-lipped"; no 2025 annual report and no second volume of reports on government involvement with UAP published as of publication date.
 
 > More recently, this latest resurgence in anticipation for government-led UAP disclosure comes at a time when AARO officials have been noticeably tight-lipped recently about their ongoing projects and existing investigations. The office has not published its 2025 annual report or second volume of reports on government involvement with UAP.
 
@@ -304,7 +304,7 @@ AARO is established under the Under Secretary of Defense for Intelligence and Se
 
 ---
 
-### War Department / Defense Department official statement to NBC News (Apr 18, 2026) — AARO disclosure-coordination statement: working with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information; transferring records to the National Archives in accordance with federal law. The same verbatim statement first appeared in CNN reporting (Mar 7, 2026, Danya Gainor) and was re-shared with Liberation Times (Apr 14, 2026, Christopher Sharp) and IBTimes UK (Apr 16, 2026, Crisnel Longino, paraphrased) across the missed-Apr-14-video-deadline news cycle.
+### Defense Department spokesperson statement to NBC News (Apr 18, 2026) — AARO disclosure-coordination statement: working with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information; transferring records to the National Archives in accordance with federal law.
 
 > A spokesperson for the Defense Department said in a statement to NBC News Saturday that its All-domain Anomaly Resolution Office (AARO) is "working in close coordination with the White House and across federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information."
 >
@@ -337,7 +337,7 @@ AARO is established under the Under Secretary of Defense for Intelligence and Se
 | 2024-08-26 | Dr. Jon T. Kosloski appointed as the director of the All-domain Anomaly Resolution Office on detail from the National Security Agency | leadership-transition | government/defense-gov-kosloski-appointment-20240826.html |  |
 | 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO''s parent department naming. | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 | 2026-02-25 | DefenseScoop article (Brandi Vincent) reports Pentagon spokesperson Sue Gough caseload statement — AARO examining over 2,000 UAP cases with ~1,000 retained in the Active Archive. Article notes AARO has not published a 2025 annual report or second volume. Defense Secretary Hegseth states "full compliance" with forthcoming Trump UAP-disclosure executive order. | other | news/defensescoop-aaro-hegseth-disclosure-20260225.html |  |
-| 2026-04-18 | War Department AARO disclosure-coordination statement re-shared across the missed-Apr-14-video-deadline news cycle — verbatim core appeared in CNN (Mar 7, Gainor), Liberation Times (Apr 14, Sharp), IBTimes UK (Apr 16, Longino, paraphrased), and NBC News (Apr 18, Guilfoil — formal "statement to NBC News Saturday"). | other | news/nbcnews-trump-ufo-files-interesting-documents-20260418.html |  |
+| 2026-04-18 | Defense Department spokesperson statement to NBC News (Saturday) on AARO disclosure-coordination posture — AARO working in close coordination with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information. | other | news/nbcnews-trump-ufo-files-interesting-documents-20260418.html |  |
 
 ---
 
