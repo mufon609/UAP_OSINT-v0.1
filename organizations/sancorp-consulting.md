@@ -35,9 +35,7 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ### Confirmed
 
-| Name | Role | Period | Source |
-|---|---|---|---|
-|  |  |  |  |
+_No personnel attested in primary sources to date._
 
 ---
 
@@ -410,15 +408,32 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 
 ---
 
-### Federal Register Vol. 90 No. 173 — Executive Order 14347 of September 5, 2025, titled Restoring the United States Department of War.
+### Federal Register Vol. 90 No. 173 — Executive Order 14347 of September 5, 2025, titled "Restoring the United States Department of War".
 
 > Executive Order 14347 of September 5, 2025
+>
+> Restoring the United States Department of War
 
 | Field | Value |
 |---|---|
 | Attributed to | 2025-09-05 |
 | Source | [archived source](../sources/government/eo-14347-restoring-department-of-war-20250910.txt) |
-| Location | Federal Register Vol. 90 No. 173 (Sept 10, 2025), p. 43893, EO header |
+| Location | Federal Register Vol. 90 No. 173 (Sept 10, 2025), p. 43893, EO header and title |
+
+---
+
+### EO 14347 Section 2(e) — statutory references to Department of Defense, Secretary of Defense, and subordinate officers remain controlling until changed by law. The "Department of War" naming is a secondary title authorized for use in non-statutory contexts.
+
+> (e) Statutory references to the Department of
+> Defense, Secretary of Defense, and subordinate officers
+> and components shall remain controlling until changed
+> subsequently by the law.
+
+| Field | Value |
+|---|---|
+| Attributed to | 2025-09-05 |
+| Source | [archived source](../sources/government/eo-14347-restoring-department-of-war-20250910.txt) |
+| Location | Federal Register Vol. 90 No. 173, EO 14347 Section 2(e) |
 
 ---
 
@@ -446,6 +461,32 @@ Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Th
 | Attributed to | 2026-04-30 |
 | Source | [archived source](../sources/news/highergov-sancorp-profile-20260430.html) |
 | Location | HigherGov Sancorp Consulting profile, Federal Awardee summary panel |
+
+---
+
+### HigherGov certification panel — SBA 8(a) Certification status (Graduated, August 26, 2017 to March 11, 2026); Other SBA Certifications: Service Disabled Veteran Owned Small Business and Veteran Owned Business.
+
+> SBA 8(a) Certification
+>
+>
+>             Graduated (Aug. 26, 2017 - March 11, 2026)
+>
+>
+>
+>
+>               Other   SBA Certifications
+>
+>
+>
+>               Service Disabled Veteran Owned Small Business
+>
+>               Veteran Owned Business
+
+| Field | Value |
+|---|---|
+| Attributed to | 2026-04-30 |
+| Source | [archived source](../sources/news/highergov-sancorp-profile-20260430.html) |
+| Location | HigherGov Sancorp Consulting profile, Federal Registration and Certifications panel |
 
 ---
 

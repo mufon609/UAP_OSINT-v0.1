@@ -1695,12 +1695,13 @@ def render_org_key_personnel(artifact):
                 out.append(_org_key_personnel_row(e))
             out.append("")
         if not any_rendered:
-            # Empty confirmed-side fallback — emit a placeholder table
-            # so the section has renderable content.
+            # Empty confirmed-side fallback — emit a one-line placeholder
+            # rather than a malformed empty table row. Surfaced 2026-04-30
+            # by Sancorp audit R1; the empty `|  |  |  |  |` row was
+            # technically valid markdown but read as a placeholder bug.
             out += [
-                "| Name | Role | Period | Source |",
-                "|---|---|---|---|",
-                "|  |  |  |  |",
+                "_No personnel attested in primary sources to date._",
+                "",
             ]
         return out
 

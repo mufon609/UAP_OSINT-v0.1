@@ -399,11 +399,48 @@ quotes:
     added_date: '2026-04-30'
     text: |
       Executive Order 14347 of September 5, 2025
+
+      Restoring the United States Department of War
     source:
       path: government/eo-14347-restoring-department-of-war-20250910.txt
-      location: 'Federal Register Vol. 90 No. 173 (Sept 10, 2025), p. 43893, EO header'
-    significance: 'Federal Register Vol. 90 No. 173 — Executive Order 14347 of September 5, 2025, titled Restoring the United States Department of War.'
+      location: 'Federal Register Vol. 90 No. 173 (Sept 10, 2025), p. 43893, EO header and title'
+    significance: 'Federal Register Vol. 90 No. 173 — Executive Order 14347 of September 5, 2025, titled "Restoring the United States Department of War".'
     statement_date: '2025-09-05'
+  - id: q30
+    added_date: '2026-04-30'
+    text: |
+                            (e) Statutory references to the Department of
+                            Defense, Secretary of Defense, and subordinate officers
+                            and components shall remain controlling until changed
+                            subsequently by the law.
+    source:
+      path: government/eo-14347-restoring-department-of-war-20250910.txt
+      location: 'Federal Register Vol. 90 No. 173, EO 14347 Section 2(e)'
+    significance: 'EO 14347 Section 2(e) — statutory references to Department of Defense, Secretary of Defense, and subordinate officers remain controlling until changed by law. The "Department of War" naming is a secondary title authorized for use in non-statutory contexts.'
+    statement_date: '2025-09-05'
+  - id: q31
+    added_date: '2026-04-30'
+    text: |
+      SBA 8(a) Certification
+
+
+                  Graduated (Aug. 26, 2017 - March 11, 2026)
+
+
+
+
+                    Other   SBA Certifications
+
+
+
+                    Service Disabled Veteran Owned Small Business
+
+                    Veteran Owned Business
+    source:
+      path: news/highergov-sancorp-profile-20260430.html
+      location: 'HigherGov Sancorp Consulting profile, Federal Registration and Certifications panel'
+    significance: 'HigherGov certification panel — SBA 8(a) Certification status (Graduated, August 26, 2017 to March 11, 2026); Other SBA Certifications: Service Disabled Veteran Owned Small Business and Veteran Owned Business.'
+    statement_date: '2026-04-30'
   - id: q28
     added_date: '2026-04-30'
     text: |
