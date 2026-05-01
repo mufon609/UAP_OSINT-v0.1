@@ -210,8 +210,9 @@
   path: government/foia-23-f-0906-interim-response.pdf
   archived_date: '2026-04-30'
   sha256: c9fc4e70a593d1c6613c2b63aacc44155997acfc6e66ef83328c2de793e9c158
-  archive_status: 1
+  archive_status: 3
   note: 'FOIA 23-F-0906 interim response from DoD FOID, May 24, 2023, citing FOIA ''unusual circumstances'' as basis for delay. Specifically: ''we do not actually hold their records and our office is not geographically located with these organizations. As we do not hold the records, until the required record searches are complete, we are unable to estimate the potential volume of records or the number of consultations that will be needed.'' Status remained ''Awaiting Response'' as of April 2026.'
+  wayback_date: '2026-04-30'
 - url: https://cdn.muckrock.com/foia_files/2023/05/24/23-F-0906_Request_Description.pdf
   format: pdf
   status: archived
@@ -353,8 +354,9 @@
   path: news/defensescoop-aaro-foc-briefing-20241205.html
   archived_date: '2026-05-01'
   sha256: 3d1680d07d1cddc198542b743e4f23531fbe5bcf8f31a2de0ef10acfe288b1a6
-  archive_status: 1
+  archive_status: 3
   note: 'DefenseScoop article by Brandi Vincent, published December 5, 2024, headline ''AARO functioning at full operational capability as lawmakers prep for classified UAP briefing.'' Article is the original public attestation of AARO reaching FOC. DOD spokesperson Sue Gough provided the attribution quote: ''AARO reached full operational capability as of Oct. 1, 2024. In practical terms, this means AARO now has the requisite personnel, expertise, facilities and tools to carry out its core mission.'' DefenseScoop framed the news as ''exclusively confirmed on Thursday'' (Dec 5, 2024), preceding the Dec 6, 2024 closed-door briefing between Director Kosloski and the House Oversight and Accountability Committee that Subcommittee Chairman Glenn Grothman (R-Wis.) requested. Wayback capture timestamp 20241207054114.'
+  wayback_date: '2026-02-12'
 - url: https://defensescoop.com/2026/02/25/hegseth-ufo-disclosure-trump-aaro-uap-caseload/
   format: html
   status: archived
@@ -659,8 +661,9 @@
   path: government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf
   archived_date: '2026-05-01'
   sha256: 327c1dcb645a1a289a43886ec0b1d90469d87382df49520c600e0f9ddf4b4ab8
-  archive_status: 1
+  archive_status: 3
   note: 'AARO Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena, dated November 14, 2024 (Information Cut Off: June 1, 2024). Released by OSD/AARO. Statutory annual report covering the period May 1, 2023 to June 1, 2024. Documents 757 UAP reports during the reporting period (485 within-period, 272 from prior unreported 2021-2022); 49 case resolutions all to prosaic objects (balloons, birds, UAS); 243 additional cases recommended for closure pending peer review; 21 cases flagged as meriting further analysis based on reported anomalous characteristics and/or behaviors; 444 cases lacking sufficient data placed in Active Archive. Of 757 reports, 708 in air domain, 49 in space domain, none in maritime or transmedium. 392 reports came from the FAA. AARO 1,600+ cumulative holdings noted in companion Kosloski SFR. Documents the GREMLIN sensor architecture (Georgia Tech Research Institute) deployed for pattern-of-life analysis at a national-security site. Wayback capture from publication day 2024-11-14.'
+  wayback_date: '2026-04-25'
 - url: https://media.defense.gov/2026/Feb/04/2003870671/-1/-1/1/DODIG-2026-047_REDACTED%20SECURE.PDF
   format: pdf
   status: archived
