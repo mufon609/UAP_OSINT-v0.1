@@ -41,13 +41,14 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 
 | Name | Role | Period | Source |
 |---|---|---|---|
-| [`/people/james-clapper`] | Under Secretary of Defense for Intelligence | 2007-04-15 – 2010-06-05 | government/clapper-depsecdef-sap-packet-final-20091117.pdf |
+| [`/people/james-clapper`] | Under Secretary of Defense for Intelligence | 2007-04-13 – 2010-08-05 | government/wargov-clapper-sworn-in-photo-20070413.html |
 | [`/people/michael-vickers`] | Under Secretary of Defense for Intelligence | 2011 – 2015 | government/asc-vickers-usdi-confirmation-20110215.pdf |
 | [`/people/marcel-lettre`] | Under Secretary of Defense for Intelligence | 2015 – 2017 | government/asc-lettre-usdi-testimony-20160913.pdf |
-| [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence and Security | 2017-12-01 – 2020-11-10 | government/defense-gov-personnel-changes-pentagon-20201110.html |
-| [`/people/ezra-cohen-watnick`] | Acting Under Secretary of Defense for Intelligence and Security | 2020-11-10 – 2021-06-01 | government/defense-gov-personnel-changes-pentagon-20201110.html |
+| [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence | 2017-12-01 – 2019-12-19 | government/pl-116-92-ndaa-fy2020.pdf |
+| [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence and Security | 2019-12-20 – 2020-11-10 | government/defense-gov-personnel-changes-pentagon-20201110.html |
+| [`/people/ezra-cohen-watnick`] | Acting Under Secretary of Defense for Intelligence and Security | 2020-11-10 – 2021-01-20 | government/defense-gov-personnel-changes-pentagon-20201110.html |
 | [`/people/ronald-moultrie`] | Under Secretary of Defense for Intelligence and Security | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |
-| [`/people/bradley-hansell`] | Under Secretary of War for Intelligence and Security | 2024 | government/wargov-hansell-biography.html |
+| [`/people/bradley-hansell`] | Under Secretary of War for Intelligence and Security | 2025-07-25 | government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf |
 
 ---
 
@@ -458,9 +459,9 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 | Date | Event | Category | Source | Node Link |
 |---|---|---|---|---|
 | 2002-12-02 | Section 901 of the Bob Stump National Defense Authorization Act for Fiscal Year 2003 (P.L. 107-314) establishes the Under Secretary of Defense for Intelligence by inserting new 10 U.S.C. § 137; transfers prior § 137 to § 139a; conforming amendments place USD(I) in the Executive Schedule after USD(P&R) | founding | government/pl-107-314-ndaa-fy2003.pdf |  |
-| 2007-04-15 | James R. Clapper Jr. sworn in as Under Secretary of Defense for Intelligence | leadership-transition | government/clapper-depsecdef-sap-packet-final-20091117.pdf | [`/people/james-clapper`] |
+| 2007-04-13 | James R. Clapper Jr. sworn in as Under Secretary of Defense for Intelligence by Secretary of Defense Robert M. Gates during a private ceremony in the Pentagon | leadership-transition | government/wargov-clapper-sworn-in-photo-20070413.html | [`/people/james-clapper`] |
 | 2009-11-17 | USD(I) Clapper memorandum to Deputy Secretary of Defense recommending against establishing a Special Access Program for the Advanced Aerospace Weapon System Application Program (AAWSAP) / Advanced Aerospace Threat Identification Program based on DIA technical review of FY09 deliverables | decision | government/clapper-depsecdef-sap-packet-final-20091117.pdf |  |
-| 2010-06-05 | James R. Clapper Jr. departs Under Secretary of Defense for Intelligence | leadership-transition | government/clapper-depsecdef-sap-packet-final-20091117.pdf | [`/people/james-clapper`] |
+| 2010-08-05 | James R. Clapper Jr. departs Under Secretary of Defense for Intelligence on or about this date upon Senate confirmation and swearing-in as Director of National Intelligence | leadership-transition | government/clapper-depsecdef-sap-packet-final-20091117.pdf | [`/people/james-clapper`] |
 | 2011-02-15 | Michael Vickers Senate Armed Services Committee nomination hearing for Under Secretary of Defense for Intelligence; Advance Policy Questions submitted | testimony | government/asc-vickers-usdi-confirmation-20110215.pdf | [`/people/michael-vickers`] |
 | 2014-10-24 | DoD Directive 5143.01 originally issued; charters the USD(I&S) responsibilities, components, and dual-hat Director of Defense Intelligence role | charter | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |  |
 | 2016-09-13 | Marcel Lettre testifies as Under Secretary of Defense for Intelligence before Senate Armed Services Committee on encryption policy | testimony | government/asc-lettre-usdi-testimony-20160913.pdf | [`/people/marcel-lettre`] |
@@ -472,8 +473,8 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 | 2021-06-01 | Ronald S. Moultrie sworn in as Under Secretary of Defense for Intelligence and Security following Senate confirmation | leadership-transition | government/wargov-moultrie-biography.html | [`/people/ronald-moultrie`] |
 | 2022-03-01 | Influence and Perception Management Office (IPMO) established per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security; tasked with thematic messaging guidance and influence strategies | subordinate-establishment | government/notre-dame-ipmo-memo-20220527.pdf | [`/organizations/ipmo`] |
 | 2022-07-15 | Deputy Secretary of Defense Kathleen Hicks directs the USD(I&S) to establish the All-domain Anomaly Resolution Office (AARO) in coordination with the Director of Administration and Management | subordinate-establishment | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | [`/organizations/aaro`] |
-| 2024 | Bradley D. Hansell becomes Under Secretary of Defense for Intelligence and Security (specific sworn-in date not attested in archived primary sources) | leadership-transition | government/wargov-hansell-biography.html | [`/people/bradley-hansell`] |
 | 2024-02-29 | Ronald S. Moultrie retires as Under Secretary of Defense for Intelligence and Security | leadership-transition | government/wargov-moultrie-biography.html | [`/people/ronald-moultrie`] |
+| 2025-07-25 | Bradley D. Hansell sworn in as Under Secretary of War for Intelligence and Security per the official 2025 USDIS biography hosted on ousdi.defense.gov | leadership-transition | government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf | [`/people/bradley-hansell`] |
 | 2025-09-05 | Executive Order 14347 ("Restoring the United States Department of War") authorizes subordinate officials within the Department of Defense to use secondary titles such as Under Secretary of War in non-statutory contexts; statutory references to the Department of Defense and subordinate officers shall remain controlling until changed by law | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 | 2026-01-29 | DoD Inspector General Management Advisory DODIG-2026-047 issued for the Under Secretary of Defense for Intelligence and Security: DoD Policy and Training on Dissemination Controls for Controlled Unclassified Information (CUI). Five recommendations (two closed, three resolved-but-open). Confirms DoDI 5200.48 issued by OUSD(I&S) | oversight | government/dodig-2026-047-redacted-secure.pdf |  |
 

@@ -50,6 +50,12 @@ primary_sources:
   format: pdf
 - path: government/eo-14347-restoring-department-of-war-20250910.txt
   format: txt
+- path: government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf
+  format: pdf
+- path: government/ousdi-defense-gov-landing-20260307.html
+  format: html
+- path: government/wargov-clapper-sworn-in-photo-20070413.html
+  format: html
 document_intrinsic:
   full_name: Office of the Under Secretary of Defense for Intelligence and Security
   statutory_authority: 10 U.S.C. § 137 (originally enacted by Section 901 of P.L. 107-314, NDAA FY2003; redesignated by Section 1621 of P.L. 116-92, NDAA FY2020)
@@ -398,13 +404,13 @@ key_personnel:
   added_date: '2026-04-30'
   person_path: /people/james-clapper
   role: Under Secretary of Defense for Intelligence
-  period_start: '2007-04-15'
-  period_end: '2010-06-05'
+  period_start: '2007-04-13'
+  period_end: '2010-08-05'
   leadership_class: director
   source:
-    path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
-    location: 'p. 1, letterhead and signature'
-  note: Clapper signed the November 17, 2009 memorandum to the Deputy Secretary of Defense recommending against a Special Access Program for the Advanced Aerospace Threat and Identification Program managed by DIA.
+    path: government/wargov-clapper-sworn-in-photo-20070413.html
+    location: war.gov photo gallery caption for VIRIN 193973-E-CAZ91-588
+  note: Clapper was sworn in as Under Secretary of Defense for Intelligence by Secretary of Defense Robert M. Gates during a private ceremony in the Pentagon on April 13, 2007. His tenure ended on or about August 5, 2010 when he was sworn in as Director of National Intelligence following Senate confirmation the same day. Clapper signed the November 17, 2009 memorandum to the Deputy Secretary of Defense recommending against a Special Access Program for the Advanced Aerospace Threat and Identification Program managed by DIA.
 - id: kp2
   added_date: '2026-04-30'
   person_path: /people/michael-vickers
@@ -430,20 +436,31 @@ key_personnel:
 - id: kp4
   added_date: '2026-04-30'
   person_path: /people/joseph-kernan
-  role: Under Secretary of Defense for Intelligence and Security
+  role: Under Secretary of Defense for Intelligence
   period_start: '2017-12-01'
+  period_end: '2019-12-19'
+  leadership_class: director
+  source:
+    path: government/pl-116-92-ndaa-fy2020.pdf
+    location: 'Title XVI Subtitle B § 1621 — redesignation effective on enactment, December 20, 2019'
+  note: Kernan was sworn in as Under Secretary of Defense for Intelligence on December 1, 2017. His title remained USD(I) through the date the redesignation statute (P.L. 116-92 § 1621) took effect on enactment, December 20, 2019.
+- id: kp4a
+  added_date: '2026-04-30'
+  person_path: /people/joseph-kernan
+  role: Under Secretary of Defense for Intelligence and Security
+  period_start: '2019-12-20'
   period_end: '2020-11-10'
   leadership_class: director
   source:
     path: government/defense-gov-personnel-changes-pentagon-20201110.html
     location: 'DoD release, November 10, 2020'
-  note: Kernan submitted his letter of resignation effective November 10, 2020. Ezra Cohen-Watnick was named Acting Under Secretary the same day.
+  note: Following the December 20, 2019 redesignation per P.L. 116-92 § 1621, Kernan held the USD(I&S) title through his November 10, 2020 letter of resignation. Ezra Cohen-Watnick was named Acting Under Secretary the same day.
 - id: kp4b
   added_date: '2026-04-30'
   person_path: /people/ezra-cohen-watnick
   role: Acting Under Secretary of Defense for Intelligence and Security
   period_start: '2020-11-10'
-  period_end: '2021-06-01'
+  period_end: '2021-01-20'
   leadership_class: director
   source:
     path: government/defense-gov-personnel-changes-pentagon-20201110.html
@@ -464,12 +481,12 @@ key_personnel:
   added_date: '2026-04-30'
   person_path: /people/bradley-hansell
   role: Under Secretary of War for Intelligence and Security
-  period_start: '2024'
+  period_start: '2025-07-25'
   leadership_class: director
   source:
-    path: government/wargov-hansell-biography.html
-    location: 'Bradley D. Hansell biography on war.gov'
-  note: Per the war.gov biography, Hansell serves as the Under Secretary of War for Intelligence and Security and is the principal advisor to Secretary of War on intelligence, security, and law enforcement matters.
+    path: government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf
+    location: 'p. 1, ¶1 of biographical text'
+  note: Per the 2025 official biography hosted on ousdi.defense.gov, Mr. Hansell was sworn into the Under Secretary position on July 25, 2025. He serves as the principal advisor to the Secretary of War on intelligence, counterintelligence, and security matters and exercises authority, direction, and control over all intelligence and security organizations in the Department of War, including the nine DoW components that are members of the Intelligence Community. He also serves as Director of Defense Intelligence and the principal advisor to the Director of National Intelligence on Defense Intelligence matters.
 org_relationships:
 - id: or1
   added_date: '2026-04-30'
@@ -562,12 +579,12 @@ timeline:
     location: 'p. 116 STAT. 2618-2620, Title IX § 901'
 - id: t2
   added_date: '2026-04-30'
-  date: '2007-04-15'
-  event: James R. Clapper Jr. sworn in as Under Secretary of Defense for Intelligence
+  date: '2007-04-13'
+  event: James R. Clapper Jr. sworn in as Under Secretary of Defense for Intelligence by Secretary of Defense Robert M. Gates during a private ceremony in the Pentagon
   category: leadership-transition
   source:
-    path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
-    location: p. 1 letterhead
+    path: government/wargov-clapper-sworn-in-photo-20070413.html
+    location: war.gov photo gallery caption for VIRIN 193973-E-CAZ91-588
   node_link: /people/james-clapper
 - id: t3
   added_date: '2026-04-30'
@@ -579,13 +596,13 @@ timeline:
     location: 'p. 1, ¶5 (recommendation)'
 - id: t4
   added_date: '2026-04-30'
-  date: '2010-06-05'
-  event: James R. Clapper Jr. departs Under Secretary of Defense for Intelligence
+  date: '2010-08-05'
+  event: James R. Clapper Jr. departs Under Secretary of Defense for Intelligence on or about this date upon Senate confirmation and swearing-in as Director of National Intelligence
   category: leadership-transition
   node_link: /people/james-clapper
   source:
     path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
-    location: 'p. 1, letterhead (last attested USD(I) date)'
+    location: 'p. 1, letterhead (last attested USD(I) document)'
 - id: t5
   added_date: '2026-04-30'
   date: '2011-02-15'
@@ -692,13 +709,13 @@ timeline:
     location: Moultrie biography
 - id: t17
   added_date: '2026-04-30'
-  date: '2024'
-  event: Bradley D. Hansell becomes Under Secretary of Defense for Intelligence and Security (specific sworn-in date not attested in archived primary sources)
+  date: '2025-07-25'
+  event: Bradley D. Hansell sworn in as Under Secretary of War for Intelligence and Security per the official 2025 USDIS biography hosted on ousdi.defense.gov
   category: leadership-transition
   node_link: /people/bradley-hansell
   source:
-    path: government/wargov-hansell-biography.html
-    location: Hansell biography
+    path: government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf
+    location: 'p. 1, ¶1 of biographical text'
 - id: t18
   added_date: '2026-04-30'
   date: '2025-09-05'

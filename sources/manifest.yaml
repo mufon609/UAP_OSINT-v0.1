@@ -718,6 +718,22 @@
   archive_status: 3
   note: Influence and Perception Management Office (IPMO) memorandum to Notre Dame, May 27 2022 — primary-source documentation of IPMO's establishment within OUSD(I&S) and statutory mission including 'deliberate conceal and selective reveal of strategic defense capabilities'
   wayback_date: '2022-07-07'
+- url: https://ousdi.defense.gov/
+  format: html
+  status: archived
+  path: government/ousdi-defense-gov-landing-20260307.html
+  archived_date: '2026-04-30'
+  sha256: c4a357a4af118a2cf12ceb840c240ca7b836271ee09d7d9d991444065c5cfc5d
+  archive_status: 1
+  note: 'Office of the Under Secretary of War for Intelligence & Security institutional landing page on ousdi.defense.gov (the OUSD(I&S) subdomain). Documents Hansell as USW(I&S) and Justin Overbaugh as DUSW(I&S) Deputy. Lists Authority, Direction, and Control components (DCSA, DIA, NGA, NRO, NSA/CSS) and navigates to DDIs (Directors for Defense Intelligence) and DROs (Direct Report Offices). Mission statement: ''Principal Staff Assistant and Advisor to the Secretary of War and the Deputy Secretary of War on intelligence, counterintelligence, security, sensitive activities, and other intelligence-related matters.'' Wayback capture 2026-03-07. Resolves the Task #13 question — there IS a dedicated OUSD(I&S) public landing page on the ousdi.defense.gov subdomain (URL pattern not surfaced earlier because all my probes were on the war.gov / defense.gov / policy.defense.gov domains).'
+- url: https://ousdi.defense.gov/Portals/73/2025%20Official%20USDIS%20Bio%20Hansell_Bradley.pdf
+  format: pdf
+  status: archived
+  path: government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf
+  archived_date: '2026-04-30'
+  sha256: ad5bdfa79103e10b5d1d2954c708528165ef6227c0c8e73e4f36b1cb26fba35e
+  archive_status: 1
+  note: 'Official 2025 USDIS biography of Bradley D. Hansell, hosted on the OUSD(I&S) institutional subdomain ousdi.defense.gov/Portals/73/. Confirms: ''Mr. Hansell was sworn into the Under Secretary position on July 25, 2025.'' Title: ''Under Secretary of War for Intelligence & Security (USW(I&S))''. Substantive bio covering: principal advisor role to Secretary of War on intelligence/counterintelligence/security; authority/direction/control over nine DoW components in the Intelligence Community; Director of Defense Intelligence dual-hat; pre-government career (private equity Aerospace/Defense/Government Services; Boston Consulting Group; first-Trump-administration NSC Senior Director); retired US Army Special Forces officer (commanded SF teams in South America and Afghanistan); prior US Navy Surface Warfare Officer (Middle East / Asia-Pacific); Villanova BA + UVA Darden MBA (Pat Tillman scholar); Bronze Star, Purple Heart, Meritorious Service Medal awards. Wayback capture 2026-02-11. ousdi.defense.gov is the OUSD(I&S) institutional subdomain (resolves the Task #13 search question — there IS a dedicated subdomain).'
 - url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/
   format: html
   status: archived
@@ -2293,6 +2309,14 @@
   archive_status: 3
   note: 'Office of the Secretary of War (OSW) institutional page on war.gov. Lists all USW (Under Secretary of War) positions with establishment dates. Direct attestation: ''USW (Intelligence & Security) EST. 2002'' — confirming the USD(I) → USW(I&S) lineage and original 2002 establishment per NDAA FY2003. Other USWs listed: Research & Engineering (1977), Acquisition & Sustainment (1986), Comptroller (1990), Personnel & Readiness (1993), Policy (1977). Page describes OSW as ''responsible for policy development, planning, resource management and program evaluation'' with offices of top civilian decision-makers including ''intelligence''. Wayback capture 2025-12-25; war.gov direct returns 403.'
   wayback_date: '2026-04-28'
+- url: https://www.war.gov/Multimedia/Photos/igphoto/2001977116/
+  format: html
+  status: archived
+  path: government/wargov-clapper-sworn-in-photo-20070413.html
+  archived_date: '2026-04-30'
+  sha256: 25e4ac454c62f364fd4970f7b6d9ee55931082c5af057b55c2a24f8cffe05f69
+  archive_status: 1
+  note: 'war.gov photo gallery page for Clapper swearing-in. Caption: ''SWORN IN — Retired U.S. Air Force Lt. Gen. James R. Clapper (left) is sworn-in as under secretary of defense for intelligence by Secretary of Defense Robert M. Gates (right) during a private ceremony in the Pentagon on April 13, 2007. Clapper''s wife holds the Bible as the oath of office is administered.'' VIRIN 193973-E-CAZ91-588.jpg. Wayback capture 2026-01-28. Establishes Clapper''s USD(I) sworn-in date as April 13, 2007 (Senate confirmation was April 11, 2007).'
 - url: https://www.war.gov/News/Releases/Release/Article/616969/new-joint-interagency-combined-space-operations-center-to-be-established/
   format: html
   status: archived

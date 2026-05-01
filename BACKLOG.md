@@ -1131,3 +1131,108 @@ audit § 7 "Mellon Signal reply text (full)" Open item documented
 with concrete check-back cadence and closure path. Logged for
 visibility so a future session reviewing the Mellon node or the
 Kirkpatrick credibility notes knows the appeal is pending.
+
+---
+
+### 29. Organization Overview "Director" label is generic — add opt-in `head_title` field
+
+The organization-renderer's `## Overview` table emits a fixed `Director`
+label for the `current_director_path` field. The label is accurate for
+agency-kind heads (DIA, NGA, NSA, NRO, DCSA, AARO — all formally titled
+"Director"), but inaccurate for under-secretariat offices like
+OUSD(I&S) (head is "Under Secretary"), military services (head is
+"Secretary"), departments (head is "Secretary"), and combatant commands
+(head is "Commander"). On OUSD(I&S) the rendered Overview reads
+"Director: Bradley D. Hansell" while the Key Personnel table three
+sections below correctly shows "Under Secretary of War for Intelligence
+and Security." The mislabel is a low-grade ambiguity rather than a
+correctness blocker — readers who scroll see the actual title — but
+it propagates a slightly wrong mental model on the at-a-glance summary.
+
+**Concrete affected nodes** (built so far where the rendered "Director"
+label diverges from the true office-head title):
+
+- `/organizations/ousd-is` — head is "Under Secretary of War for
+  Intelligence and Security" per Hansell's war.gov bio
+- `/organizations/uaptf` — head was titled "Director, UAPTF" per the
+  UAPTF Charter; "Director" is correct here
+- `/organizations/aaro` — "Director, AARO" per Hicks memo; correct
+- `/organizations/sancorp-consulting` — gov-contractor; head is "Founder
+  & CEO" per company materials; "Director" is wrong but the field is
+  not currently populated on this artifact
+- `/organizations/ttsa` — private; head is "President" per SEC filings;
+  same as above
+
+Future built nodes affected: any military service node (`us-navy`,
+`us-air-force`), any department-level node (`dod`), any
+combatant-command node, any other under-secretariat node (`ousd-p`,
+`ousd-re`, etc.) — substantial blast radius.
+
+**Fix shape** (Option C from the 2026-04-30 audit-discussion split):
+add an optional `head_title` field to `document_intrinsic`. The
+organization renderer prefers the explicit `head_title` when set; falls
+back to the current "Director" label when absent (backward-compatible
+with all existing artifacts). Per-node author specifies what's actually
+true; opt-in adoption avoids any migration on existing nodes.
+
+```yaml
+document_intrinsic:
+  current_director_path: /people/bradley-hansell
+  head_title: Under Secretary
+```
+
+renders as:
+
+```
+| Under Secretary | [`/people/bradley-hansell`] |
+```
+
+instead of the current:
+
+```
+| Director | [`/people/bradley-hansell`] |
+```
+
+**Why opt-in (Option C) over auto-dispatch on `office_type` (Option D
+considered and rejected for now):** auto-dispatch via `office_type`
+would require constraining `office_type` to a controlled enum (currently
+free-text), then mapping each enum value to the appropriate label. That
+is a schema-vocabulary commitment that should be driven by a
+cross-corpus pattern, not by one Overview-label nuisance. Option C
+preserves flexibility — if many nodes end up setting `head_title` to
+the same value based on `office_type`, the migration to Option D
+becomes evidence-driven (and lossless: every populated `head_title`
+becomes the seed for the auto-dispatch mapping).
+
+**Why opt-in (Option C) over a corpus-wide rename (Option B,
+"Office Head"):** a generic neutral label loses the per-office accuracy
+("Under Secretary" reads as a real title; "Office Head" doesn't).
+Option B is the lightest backend change but the least informative for
+researchers.
+
+**Why not just accept the generic label (Option A):** the convention
+isn't documented; future contributors will not know that "Director" is
+shorthand for "office head" rather than the literal title. Documenting
+the convention solves the nuisance for current contributors but doesn't
+help readers who don't see the convention doc.
+
+**Scope.** ~30 minutes: schema field addition (`head_title:` optional
+string under `document_intrinsic` in `meta/schema.yaml`); renderer
+branch in `scripts/build-from-research.py` (single conditional in
+`render_org_overview` — fall back to current "Director" string when
+unset); per-node opt-in adoption (rebuild OUSD(I&S) artifact with
+`head_title: Under Secretary`; future org-node builds populate per
+true office title). No regression risk — opt-in design.
+
+**Priority.** Low. Not a correctness issue; reader-visibility
+improvement on the Overview at-a-glance summary. Workaround for any
+node where the mislabel is acutely misleading: add a one-line
+credibility/clarification note in description prose ("the office's
+principal head is the Under Secretary, titled USD(I&S) per
+10 U.S.C. § 137").
+
+Surfaced: Claude Web audit of /organizations/ousd-is (2026-04-30) —
+audit finding §9 flagged the Overview "Director" label diverging from
+the actual "Under Secretary" title. Discussion of researcher-vs-backend
+tradeoffs settled on opt-in `head_title` (Option C) as the right
+balance between accuracy and migration cost.
