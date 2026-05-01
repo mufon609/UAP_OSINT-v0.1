@@ -1051,8 +1051,9 @@
   path: government/uscode-title50-section3373-20260501.html
   archived_date: '2026-05-01'
   sha256: d284104afff9bf4d9a243b4829c0b55df47c1cf8c304140f110ef31f19746050
-  archive_status: 1
+  archive_status: 3
   note: '50 U.S.C. § 3373 — ''Establishment of All-domain Anomaly Resolution Office''. Codification of Section 1683 of the James M. Inhofe National Defense Authorization Act for Fiscal Year 2023 (P.L. 117-263, December 23, 2022; supersedes Section 1683 of NDAA FY2022 P.L. 117-81 which originally directed AARO''s establishment). Title 50, Chapter 45 (Miscellaneous Intelligence Community Authorities), Subchapter IV (Collection, Analysis, and Sharing of Intelligence). Specifies: (a) establishment within OSD or joint OSD-ODNI organization; (b) Director and Deputy Director appointment by SecDef in consultation with DNI; reporting line to Deputy Secretary of Defense and Principal Deputy Director of National Intelligence; classified-briefing obligations sunset December 31, 2026; GAO audit regime; line-organization designation authority; and the appropriate-congressional-committees list.'
+  wayback_date: '2025-09-15'
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
@@ -1239,8 +1240,9 @@
   path: government/aaro-kosloski-sfr-sasc-20241119.pdf
   archived_date: '2026-05-01'
   sha256: 8b66a6125103a12ff686d85ea2a69a883a717217fa6a15e0e7913c6f46dd6865
-  archive_status: 1
+  archive_status: 3
   note: AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024 — companion to the SASC stenographic transcript already archived. Hosted on aaro.mil/Portals/136. Documents AARO's >1,600 cumulative UAP holdings, framework for rigorous analysis, three flagship case resolutions (Puerto Rico, GOFAST, Mt. Etna) presented in conjunction with slide-deck visuals. Wayback capture from 2024-11-20 (one day after the hearing).
+  wayback_date: '2025-11-12'
 - url: https://www.aaro.mil/Portals/136/PDFs/Phillips_Timothy_Bio-DEC%202023-(Acting_Director_Ver)_508.pdf
   format: pdf
   status: archived
@@ -1364,8 +1366,9 @@
   path: government/armed-services-senate-gov-aaro-case-slides-20241119.pdf
   archived_date: '2026-05-01'
   sha256: f89ac4c5b5300bd2f37261bbd1739cdb67ca3c17670a618411754a3dda7a2ce2
-  archive_status: 1
+  archive_status: 3
   note: 'AARO unclassified slide deck for the November 19, 2024 Senate Armed Services Subcommittee on Emerging Threats and Capabilities open hearing. 7-page presentation by Director Dr. Jon Kosloski covering UAP REPORTING TRENDS (Jan 1, 1996 – Oct 10, 2024) and three case resolutions: THE PUERTO RICO OBJECT (April 26, 2013, USCBP IR video over Rafael Hernandez Airport — assessed ''high confidence'' as two distinct objects, illusion of splitting due to changing sensor angle, perception of high speed attributed to motion parallax, traveled at wind speed in a straight line at ~3.6 m/s, descending to ~200 meters); GO FAST (January 2016 — assessed at ~13,000 feet at ~45 mph / 39 knots, with 60-knot winds at altitude, parallax explanation); MT. ETNA OBJECT (2018 — assessed ''moderate confidence'' as a balloon drifting with the wind ''approximately 170 kilometers from the volcano''). PDF metadata Author: Halterman, Jessica L CTR OSD OUSD Intel; Title: ''Graphics Proposed AARO Branding Guide''. Pages: 7. Created Nov 18, 2024 — the day before the hearing. CONTRADICTION: slide deck states ''170 kilometers'' from volcano while the SASC stenographic transcript records Kosloski''s oral testimony as ''170 meters away from the plume''.'
+  wayback_date: '2025-10-12'
 - url: https://www.audible.com/blog/in-the-room-with-peter-bergen-transcript-episode-38
   format: html
   status: archived
@@ -1666,8 +1669,9 @@
   path: government/crs-if10523-defense-primer-usdis.html
   archived_date: '2026-04-30'
   sha256: f63238eb345bed824fbaaf5e7682012b0d87f02e5320a45a436664218a0cc4c5
-  archive_status: 1
+  archive_status: 3
   note: 'Congressional Research Service report IF10523, ''Defense Primer: Under Secretary of Defense for Intelligence and Security''. Comprehensive list of USD(I&S) holders including acting holders: Stephen A. Cambone (March 2003-December 2006); James R. Clapper (April 2007-August 2010); Michael G. Vickers (March 2011-April 2015); Marcel Lettre (December 2015-January 2017); Todd Lowery (acting) (January 2017-June 2017); Kari Bingen (acting) (June 2017-December 2017); Joseph D. Kernan (December 2017-November 2020); Ezra Cohen-Watnick (acting) (November 2020-January 2021); David M. Taylor (acting) (January 2021-June 2021); Ronald S. Moultrie (June 2021-February 2024); Milancy D. Harris (acting) (March 2024-January 2025); Dustin Gard-Weiss (acting) (January 2025-July 2025); Bradley H. Hansell (July 2025-present). Hosted on EveryCRSReport.com (mirror of CRS reports per CRS Reports Act of 2018). Note: report has typo ''Bradley H. Hansell'' — official USDIS bio confirms middle initial ''D''.'
+  wayback_date: '2026-02-18'
 - url: https://www.executivebiz.com/articles/bluevoyant-names-debora-plunkett-ariel-litvin-to-board-of-directors-ronald-moultrie-to-advisory-board
   format: html
   status: archived
@@ -2452,8 +2456,9 @@
   path: government/wargov-clapper-sworn-in-photo-20070413.html
   archived_date: '2026-04-30'
   sha256: 25e4ac454c62f364fd4970f7b6d9ee55931082c5af057b55c2a24f8cffe05f69
-  archive_status: 1
+  archive_status: 3
   note: 'war.gov photo gallery page for Clapper swearing-in. Caption: ''SWORN IN — Retired U.S. Air Force Lt. Gen. James R. Clapper (left) is sworn-in as under secretary of defense for intelligence by Secretary of Defense Robert M. Gates (right) during a private ceremony in the Pentagon on April 13, 2007. Clapper''s wife holds the Bible as the oath of office is administered.'' VIRIN 193973-E-CAZ91-588.jpg. Wayback capture 2026-01-28. Establishes Clapper''s USD(I) sworn-in date as April 13, 2007 (Senate confirmation was April 11, 2007).'
+  wayback_date: '2026-01-28'
 - url: https://www.war.gov/News/Releases/Release/Article/616969/new-joint-interagency-combined-space-operations-center-to-be-established/
   format: html
   status: archived
