@@ -71,11 +71,12 @@ Usage:
 
 import argparse
 import html
-import subprocess
 import re
 import sys
 from pathlib import Path
 from collections import defaultdict
+
+from lib._common import extract_source_text
 
 try:
     import yaml
@@ -1836,58 +1837,10 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
 _source_token_cache = {}
 
 
-# HTML tag / entity handling: same pattern as scripts/validate.py's
-# _clean_html_for_text. Flat-scripts-pattern duplication rather than a shared
-# lib. Inline tags stripped with empty replacement (mid-word interleave
-# collapses — e.g., `Army<span>’</span>s` → `Army’s`); block / unknown tags
-# stripped with whitespace (preserve word boundaries across paragraph breaks);
-# entities decoded last.
-_HTML_INLINE_TAGS = (
-    r"span|b|i|em|strong|u|a|small|code|sub|sup|cite|q|mark|del|ins|"
-    r"abbr|dfn|samp|kbd|var|bdi|bdo|s|wbr|ruby|rt|rp|time|data|meter|"
-    r"progress|output|picture|tt|font"
-)
-
-
-def _clean_html_for_text(raw):
-    raw = re.sub(r"<script[^>]*>.*?</script>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
-    raw = re.sub(r"<style[^>]*>.*?</style>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
-    raw = re.sub(rf"</?(?:{_HTML_INLINE_TAGS})(?:\s[^>]*)?>", "", raw, flags=re.IGNORECASE)
-    raw = re.sub(r"<[^>]+>", " ", raw)
-    raw = html.unescape(raw)
-    return raw
-
-
-def _extract_source_text(source_path_abs):
-    """Extract plaintext from a source file. Mirrors the pattern from
-    scripts/validate.py's extract_source_text() and scripts/extract-source.py's
-    extract() — flat-scripts-pattern duplication rather than a shared lib.
-    Returns None on failure (missing pdftotext; unsupported extension;
-    read error).
-    """
-    suffix = source_path_abs.suffix.lower()
-    if suffix == ".pdf":
-        try:
-            proc = subprocess.run(
-                ["pdftotext", "-layout", str(source_path_abs), "-"],
-                capture_output=True, text=True, timeout=60,
-            )
-            if proc.returncode == 0:
-                return proc.stdout
-        except (FileNotFoundError, subprocess.TimeoutExpired):
-            return None
-        return None
-    if suffix in (".html", ".htm"):
-        try:
-            return _clean_html_for_text(source_path_abs.read_text(encoding="utf-8", errors="replace"))
-        except OSError:
-            return None
-    if suffix in (".txt", ".md"):
-        try:
-            return source_path_abs.read_text(encoding="utf-8", errors="replace")
-        except OSError:
-            return None
-    return None
+# HTML cleaning + source extraction moved to scripts/lib/_common.py
+# (centralized 2026-05-01) to keep validate.py / validate-research.py /
+# review-coverage.py in mechanical lockstep on source extraction and quote
+# normalization. See _common.py for the full implementation and rationale.
 
 
 def extract_significant_tokens(text):
@@ -1948,7 +1901,7 @@ def load_source_tokens(source_rel_path):
     if not source_abs.exists():
         _source_token_cache[source_rel_path] = None
         return None
-    text = _extract_source_text(source_abs)
+    text = extract_source_text(source_abs)
     if text is None:
         _source_token_cache[source_rel_path] = None
         return None

@@ -56,6 +56,8 @@ import sys
 from pathlib import Path
 from collections import defaultdict
 
+from lib._common import extract_source_text, normalize_for_compare
+
 try:
     import yaml
 except ImportError:
@@ -143,29 +145,6 @@ class Issue:
 # Parsing helpers
 # =============================================================================
 
-def normalize_for_compare(text):
-    """Mirror validate.py.normalize_for_compare exactly.
-
-    Handles common rendering artifacts so a quote from the artifact
-    can be found as a substring in the rendered node body regardless of
-    table-cell punctuation, line wrap, smart quotes, Markdown block-quote
-    line-prefix markers, etc. Keep in lockstep with validate.py —
-    divergence between the two breaks the cross-check guarantees the
-    repository relies on.
-    """
-    text = text.replace("\u201c", '"').replace("\u201d", '"')
-    text = text.replace("\u2018", "'").replace("\u2019", "'")
-    text = text.replace("\u2014", "-").replace("\u2013", "-")
-    text = text.replace("\u00a0", " ")
-    # Markdown block-quote markers at line start — strip `> ` / `>` prefix
-    # so multi-line block quotes normalize to their underlying content.
-    text = re.sub(r"(?m)^\s*>\s?", "", text)
-    text = re.sub(r"-\s+", "-", text)
-    text = text.replace("-", "")
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
-
-
 def load_artifact(path):
     try:
         with open(path) as f:
@@ -211,42 +190,10 @@ def truncate(s, n=80):
     return s if len(s) <= n else s[:n] + "..."
 
 
-# --- Token-drift helpers: source extraction and token analysis -------------
-
-_source_text_cache = {}  # Path -> extracted plaintext (or None on failure)
-
-
-def extract_source_text(source_path):
-    """Extract plaintext from an archived source file. Returns None on
-    failure. Cached per validator run to avoid repeated subprocess calls
-    for multi-source artifacts.
-
-    Mirrors the extraction logic in validate.py (`extract_source_text`)
-    and extract-source.py by design — the token drift check must see
-    exactly what the verbatim-quote check sees to avoid normalization
-    skew between the two layers.
-    """
-    if source_path in _source_text_cache:
-        return _source_text_cache[source_path]
-    result = None
-    suffix = source_path.suffix.lower()
-    if suffix == ".pdf":
-        try:
-            proc = subprocess.run(
-                ["pdftotext", "-layout", str(source_path), "-"],
-                capture_output=True, text=True, timeout=60,
-            )
-            if proc.returncode == 0:
-                result = proc.stdout
-        except (FileNotFoundError, subprocess.TimeoutExpired):
-            result = None
-    elif suffix in (".html", ".htm", ".txt", ".md"):
-        try:
-            result = source_path.read_text(encoding="utf-8", errors="replace")
-        except OSError:
-            result = None
-    _source_text_cache[source_path] = result
-    return result
+# extract_source_text + normalize_for_compare moved to scripts/lib/_common.py
+# (centralized 2026-05-01) to keep validate.py / validate-research.py /
+# review-coverage.py in mechanical lockstep on source extraction and quote
+# normalization. See _common.py for the full implementation and rationale.
 
 
 def strip_markdown_links(text):
@@ -345,6 +292,13 @@ def gather_source_text(artifact):
             continue
         rel_path = ps.get("path")
         if not rel_path:
+            continue
+        # Binary primary sources (image/video/audio) are not text-extractable
+        # by design — silent skip rather than warn. The manifest-aligned format
+        # field on the artifact entry is the source of truth for whether a source
+        # has text content; binary-by-design sources don't belong in the
+        # description-drift token pool and don't merit a "missing source" warning.
+        if ps.get("format") in ("image", "video", "audio"):
             continue
         full = SOURCES_DIR / rel_path
         if not full.exists():

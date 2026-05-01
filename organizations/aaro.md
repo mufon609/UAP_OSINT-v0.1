@@ -52,7 +52,7 @@ AARO officially reached Full Operational Capability (FOC) as of October 1, 2024 
 
 On February 19, 2026, President Donald J. Trump posted to TRUTH Social directing the Secretary of War "and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs), and any and all other information connected to these highly complex, but extremely interesting and important, matters." DefenseScoop's February 25, 2026 coverage referenced this as Trump's "UAP disclosure promise" — the forthcoming executive order with which Secretary of War Pete Hegseth ([`/people/pete-hegseth`]) stated AARO would be in "full compliance".
 
-In the same DefenseScoop coverage, Jordan Flowers ([`/people/jordan-flowers`]), executive director of the Disclosure Foundation ([`/organizations/disclosure-foundation`]), said: "Trust is earned. And if AARO wants to earn the public's trust, then it should move expeditiously to release its trove of unclassified videos and photos. By failing to meet its statutory obligations, AARO has not helped its image." Pointing to AARO's "long-overdue" annual and historical reports, anticipated UAP classification guide, and vacant deputy director role, Flowers said "this isn’t a fact pattern that has earned the public’s trust."
+In the same DefenseScoop coverage, Jordan Flowers ([`/people/jordan-flowers`]), executive director of the Disclosure Foundation ([`/organizations/disclosure-foundation`]), encouraged the Pentagon to move quickly, pointing to AARO's "long-overdue" annual and historical reports, anticipated UAP classification guide, and vacant deputy director role.
 
 On March 31, 2026, the House Oversight and Government Reform Task Force on the Declassification of Federal Secrets ([`/organizations/oversight-task-force-declassification`]), Chairwoman Anna Paulina Luna ([`/people/anna-paulina-luna`]) (R-Fla.), wrote to Secretary of War Hegseth requesting delivery of 46 UAP video files "as soon as possible but no later than April 14, 2026". The letter states that "Whistleblowers informed the Task Force that AARO possesses additional video records of potential UAP sightings" and that "The Task Force has found responses from AARO, when questioned about UAP sightings and provided data, less than adequate." The list includes UAP clips referenced by callsign and date — spherical UAP, transmedium UAP, MQ-9 sightings, and the February 12, 2023 USAF ANG F-16C "shoots down UAP over Lake Huron". Cc: the Honorable Jasmine Crockett, Ranking Member of the Task Force.
 
@@ -596,6 +596,18 @@ On March 31, 2026, the House Oversight and Government Reform Task Force on the D
 
 ---
 
+### Kosloski Nov 19 2024 SASC SFR — load-bearing positional claim from the new Director: AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology. Parallels and reaffirms HRR Vol I findings under Kosloski tenure.
+
+> It is important to underscore that, to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024, 2024-11-19 |
+| Source | [archived source](../sources/government/aaro-kosloski-sfr-sasc-20241119.pdf) |
+| Location | p. 1, ¶5 of statement body |
+
+---
+
 ### AARO's official slide-deck attestation of the Mt. Etna 2018 case finding — "approximately 170 kilometers from the volcano" — at moderate confidence. CONTRADICTS Kosloski's oral testimony in the SASC stenographic transcript ("170 meters away from the plume"). Both are primary sources from the same hearing day; the slide deck was prepared the night before the hearing (created Nov 18, 2024 5:24 PM EST).
 
 > Findings: AARO, in coordination with IC and S&T partners, assesses with
@@ -637,18 +649,6 @@ On March 31, 2026, the House Oversight and Government Reform Task Force on the D
 | Attributed to | AARO slide deck for the November 19, 2024 SASC hearing — GO FAST case resolution, 2024-11-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-aaro-case-slides-20241119.pdf) |
 | Location | Slide 5 — GO FAST findings bullet |
-
----
-
-### Kosloski Nov 19 2024 SASC SFR — load-bearing positional claim from the new Director: AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology. Parallels and reaffirms HRR Vol I findings under Kosloski tenure.
-
-> It is important to underscore that, to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology.
-
-| Field | Value |
-|---|---|
-| Attributed to | AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024, 2024-11-19 |
-| Source | [archived source](../sources/government/aaro-kosloski-sfr-sasc-20241119.pdf) |
-| Location | p. 1, ¶5 of statement body |
 
 ---
 

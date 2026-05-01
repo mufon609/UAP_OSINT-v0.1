@@ -293,10 +293,10 @@ timeline:
 - id: t3
   added_date: '2026-04-20'
   date: '2023-07-26'
-  event: Documents entered into the record — by Representative Burchett in opening remarks, a statement by George Knapp, a report by Jeremy Corbell ("The UAP Puzzle"), and a Defense Intelligence Reference Document on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering; by Representative Luna during additional questioning, a NewsNation article "We are not alone — The UFO whistleblower speaks"
+  event: Documents entered into the record by Representative Burchett in opening remarks — a statement by George Knapp, a report by Jeremy Corbell ("The UAP Puzzle"), and a Defense Intelligence Reference Document on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 125-136 (Index of Documents), 262-273 (Burchett submissions), 2572-2573 (Luna submission)
+    location: lines 125-136 (Index of Documents), 262-273 (Burchett submissions)
 - id: t4
   added_date: '2026-04-20'
   date: '2023-07-26'
@@ -319,6 +319,13 @@ timeline:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: lines 913-2762
 - id: t7
+  added_date: '2026-05-01'
+  date: '2023-07-26'
+  event: Document entered into the record by Representative Luna during additional questioning — a NewsNation article "We are not alone — The UFO whistleblower speaks"
+  source:
+    path: government/congress-gov-house-hearing-transcript-20230726.pdf
+    location: lines 2572-2573 (Luna submission)
+- id: t8
   added_date: '2026-04-20'
   date: '2023-07-26'
   event: Subcommittee adjourned at 12:22 p.m.

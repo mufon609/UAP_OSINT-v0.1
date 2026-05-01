@@ -30,7 +30,7 @@ created: 2026-04-20
 
 One of three unclassified Navy ([`/organizations/us-navy`]) videos the Department of Defense ([`/organizations/dod`]) authorized for release on April 27, 2020. Taken in November 2004. Had been circulating in the public domain after unauthorized releases in 2007 and 2017. The aerial phenomena observed in the videos remain characterized as unidentified. Released at the Naval Air Systems Command FOIA Reading Room.
 
-Related: [`/events/2004-nimitz-encounter`] [`/organizations/uss-nimitz`] [`/organizations/ttsa`] [`/people/david-fravor`] [`/people/alex-dietrich`] [`/documents/written-testimony-fravor-2023`] [`/transcripts/2023-07-26-house-fravor`]
+[`/events/2004-nimitz-encounter`] [`/organizations/uss-nimitz`] [`/organizations/ttsa`] [`/people/david-fravor`] [`/people/alex-dietrich`] [`/documents/written-testimony-fravor-2023`] [`/transcripts/2023-07-26-house-fravor`]
 
 ---
 

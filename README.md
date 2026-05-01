@@ -70,6 +70,10 @@ scripts/
   transcribe.py             YouTube caption download
   associate.py              auto-generate Associated Nodes sections
   build-state.py            refresh CLAUDE.md build state
+  lib/                      shared cross-script helpers (source extraction,
+                            HTML cleanup, quote normalization) — keeps
+                            validate.py / validate-research.py /
+                            review-coverage.py mechanically in lockstep
 
 tests/
   pre-commit.sh             canonical all-gates health check (chains the 5 gates below)

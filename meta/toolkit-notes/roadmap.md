@@ -66,7 +66,7 @@ coverage for broken cross-artifact refs.
 
 ## Architectural corrections
 
-Four post-launch corrections shape the current design. Each came from
+Five post-launch corrections shape the current design. Each came from
 running the pipeline against real sources and observing a gap between
 what mechanical checks catch and what the discipline requires.
 
@@ -133,6 +133,34 @@ Removed: schema specs, validator checks, scaffolder initialization,
 794 per-entry refs across 15 artifacts. Content versioning
 (`superseded_by` / `contradicted_by` / `corroborated_by`) retained —
 those are orthogonal to edit history.
+
+### Cross-script lockstep helpers extracted to `scripts/lib/_common.py` (2026-05-01)
+
+`validate.py`, `validate-research.py`, and `review-coverage.py` share a
+load-bearing guarantee per `meta/conventions.md`: the verbatim-quote
+check, prose-drift check, and description-drift check must see the
+same source bytes under the same normalization. The guarantee was
+enforced by in-script `# Mirror validate.py exactly` comments plus
+contributor discipline. The discipline failed empirically — features
+shipped to `validate.py` without parallel updates (HTML entity decode;
+YouTube caption timestamp strip 2026-04-22; OCR-scan / extraction-
+lossy `.txt` sibling preference 2026-04-24 per BACKLOG #19 Phase F
+Tier 1; HTML tag cleanup) and the divergence was invisible to
+pre-commit gates.
+
+Correction: extracted `extract_source_text`, `normalize_for_compare`,
+`clean_html_for_text` (and `_load_extraction_types`, caches,
+`_HTML_INLINE_TAGS`) into `scripts/lib/_common.py`. The three scripts
+import; the lockstep is mechanical. Refactor surfaced one real
+contributor drift hidden by corrupted pdftotext output (Grusch
+transcript description "himself"), cleared 5 binary-source advisory
+warnings via format-aware silent-skip on `image | video | audio`,
+and added `.json` to the read-as-text extension list.
+
+The refactor also clarified the previously-implicit flatness rule:
+investigator-facing content layers stay flat; tooling layer follows
+engineering hygiene. See `meta/conventions.md` "Repository layout" for
+the codified rule.
 
 ---
 

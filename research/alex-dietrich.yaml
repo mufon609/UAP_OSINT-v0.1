@@ -883,7 +883,7 @@ corroboration_items:
     path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
     location: "lines 449-451"
   observed_event_ref: /events/2004-nimitz-encounter
-  note: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object. Position on that aircraft has two conflicting attestations — Dietrich, on the Sprague podcast, says Chad was in the back seat with another pilot (witness recollection 19 years after the event); Underwood, in his December 2019 New York Magazine interview, describes himself as the pilot of the sortie (first-person about his own role). Per the source-priority hierarchy (subject's own words > witness recollection about that subject), Underwood's first-person account outranks Dietrich's recollection for this specific positional fact. This entry cites Dietrich's on-record statement for completeness; the future Underwood node build should resolve the position question in favor of Underwood's own account.
+  note: On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video; visually observed the same Tic Tac object. Position on the aircraft has two conflicting attestations between Dietrich and Underwood; see Credibility Notes for the source-priority resolution.
 entities_referenced:
 - id: e1
   added_date: '2026-04-21'

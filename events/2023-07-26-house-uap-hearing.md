@@ -82,10 +82,11 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 |---|---|---|---|---|
 | 2023-07-26 | Subcommittee met at 10:06 a.m., Hon. Glenn Grothman presiding |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-07-26 | Members waived on to the Subcommittee for the purpose of participating — Burchett, Luna, Gaetz, Burlison, Ocasio-Cortez, Ogles; Langworthy waived on later |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
-| 2023-07-26 | Documents entered into the record — by Representative Burchett in opening remarks, a statement by George Knapp, a report by Jeremy Corbell ("The UAP Puzzle"), and a Defense Intelligence Reference Document on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering; by Representative Luna during additional questioning, a NewsNation article "We are not alone — The UFO whistleblower speaks" |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| 2023-07-26 | Documents entered into the record by Representative Burchett in opening remarks — a statement by George Knapp, a report by Jeremy Corbell ("The UAP Puzzle"), and a Defense Intelligence Reference Document on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-07-26 | Witnesses sworn — Fravor, Graves, Grusch |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-07-26 | Oral statements by Graves, Grusch, Fravor (in the order given) |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-07-26 | Q&A with 16 Members who spoke; additional second questioning for Burchett, Luna, Raskin |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| 2023-07-26 | Document entered into the record by Representative Luna during additional questioning — a NewsNation article "We are not alone — The UFO whistleblower speaks" |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 | 2023-07-26 | Subcommittee adjourned at 12:22 p.m. |  | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
 
 ---

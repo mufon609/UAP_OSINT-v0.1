@@ -30,7 +30,7 @@ status_markers:
   contradiction: "❌ Contradiction"     # positions directly contradict and at least one side is backed by primary-source evidence
 
 limits:
-  table_cell_words_soft: 50  # table cells exceeding this should promote to
+  table_cell_words_soft: 55  # table cells exceeding this should promote to
                               # a ### subsection or a finding node
 
 quote_verification_fields:

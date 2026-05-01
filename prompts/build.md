@@ -442,12 +442,13 @@ Common categories of warnings and how they resolve:
 - **Typographic dashes** (em-dash `—` and en-dash `–`) — no action
   needed. `extract_significant_tokens` normalizes U+2014 and U+2013
   to ASCII hyphen before tokenization, matching the conversion that
-  `validate.py:normalize_for_compare` already does for the verbatim-
-  quote check. Prose written with ASCII hyphen (`F-18`) tokenizes
+  the shared `normalize_for_compare` helper applies for the verbatim-
+  quote check (the helper lives in `scripts/lib/_common.py` and is
+  imported by validate.py / validate-research.py / review-coverage.py
+  in lockstep). Prose written with ASCII hyphen (`F-18`) tokenizes
   identically to source rendered with en-dash (`F–18`). Applies to
   the prose-drift check only; verbatim-quote text still needs to
-  match the source character byte-for-byte (the verbatim-quote check
-  has its own normalization path).
+  match the source character byte-for-byte.
 
 For every warning, ask: *does this unmatched token introduce a fact
 or premise the source doesn't attest?* If yes, the prose field needs

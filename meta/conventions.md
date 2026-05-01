@@ -387,3 +387,25 @@ material, but the schema and structure are topic-neutral. Any
 investigation grounded in primary sources — historical event, legal
 case, policy decision, scientific controversy — can use the same
 structure.
+
+---
+
+## Repository layout — content flat, tooling organized
+
+Investigator-facing content layers are flat by design:
+`/people/`, `/organizations/`, `/documents/`, `/events/`, `/transcripts/`,
+`/media/`, `/locations/`, `/findings/`, and `/research/` each hold
+single-level `slug.md` (or `slug.yaml`) files. `/sources/` is flat
+within each category subdirectory. A researcher looking for
+`/people/david-grusch.md` finds it one click in — no `/people/whistleblowers/intelligence-community/david-grusch.md` nesting.
+The frontmatter (archetype, kind, status) carries the categorization
+that hierarchy would otherwise impose.
+
+Backend tooling (`/scripts/`, `/meta/`, `/tests/`) is organized for
+engineering hygiene, not researcher browsing. `/scripts/lib/` holds
+genuinely shared cross-cutting helpers; `/meta/templates/`,
+`/meta/topic/`, `/meta/toolkit-notes/` group governance docs by role.
+The flatness rule is about content the investigator reads, not about
+files the toolkit maintainers edit. Don't extrapolate the
+content-layer rule onto the tooling layer — and don't extrapolate
+tooling-layer organization onto the content layer.

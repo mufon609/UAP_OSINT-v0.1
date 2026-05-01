@@ -1232,6 +1232,14 @@ Submission") |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
 | Location | lines 287-305 |
 
+> [12:42] that spooked to me and that was like fall of 2019 and you know I don't take a guy's word for it
+
+| Field | Value |
+|---|---|
+| Attributed to | Joe Rogan Experience, 2023-11-21 |
+| Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
+| Location | lines 321-324 (around [12:42]-[12:45]) |
+
 > [12:50] myself and my trusted colleagues that had a lot of lot of special accesses like me you know we cultivated our Network and we ultimately interviewed about 40 people or so all the way up to multistar generals directors of agencies mid-level guys that literally touched it worked inside of it
 
 | Field | Value |
@@ -1359,14 +1367,6 @@ Submission") |
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
 | Location | lines 3818-3825 |
-
-> [12:42] that spooked to me and that was like fall of 2019 and you know I don't take a guy's word for it
-
-| Field | Value |
-|---|---|
-| Attributed to | Joe Rogan Experience, 2023-11-21 |
-| Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 321-324 (around [12:42]-[12:45]) |
 
 > Good Afternoon, Thank you will review. Please address my specific concerns that I sent via email on 19 Nov 23. DG
 
@@ -1498,6 +1498,7 @@ Contact Request") |
 | [48:04] So, the actual reprisal stuff and the access denial stuff actually enhanced my ability to operate. But I will… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
 | [46:57] But they have. The people that I interviewed have. And they were some of the people that were interviewed by … | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
 | [11:14] encounter with the information a very senior individual in the Intel Community came to me when uh I guess I w… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
+| [12:42] that spooked to me and that was like fall of 2019 and you know I don't take a guy's word for it | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [12:50] myself and my trusted colleagues that had a lot of lot of special accesses like me you know we cultivated our… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [15:41] and I eventually went to Congress in December of 2022 and it's a crazy story why I took so long it's [ __ ] n… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [30:54] freak out but I'm telling the truth here um so lockie Martin wanted to divest itself from this material at a … | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
@@ -1506,7 +1507,6 @@ Contact Request") |
 | [1:06:56] looking into this I mean they came after me so hard to try to revoke my clearance um ruined my career kicke… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [1:09:27] is uh they showed my wife and I they can touch me at any time two times and it was very disturbing it was i… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 | [1:24:14] physiology yeah no I was in I was in the room when uh I got be careful I don't want to uh I was in Washingt… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [12:42] that spooked to me and that was like fall of 2019 and you know I don't take a guy's word for it | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
 
 ---
 

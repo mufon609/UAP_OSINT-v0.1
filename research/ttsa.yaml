@@ -1103,10 +1103,26 @@ timeline:
   added_date: '2026-04-22'
   category: other
   date: '2022-02-27'
-  event: "TTSA enters a consulting agreement with Exchange Listing, LLC — Advisory Agreement compensating Exchange Listing with 255,654 Class A Common Stock shares (2% of outstanding) at par value plus warrants for 250,000 shares at $2.00 exercise price. Goal: listing TTSA securities on Nasdaq or NYSE. Reversion clause: if not listed on Nasdaq/NYSE by January 19, 2024, all Class A Common Stock returned to the Company. The FY2024 1-K (April 2025) makes no mention of this agreement, indicating the listing deadline was not met."
+  event: "TTSA enters a consulting agreement with Exchange Listing, LLC — Advisory Agreement compensating Exchange Listing with 255,654 Class A Common Stock shares (2% of outstanding) at par value plus warrants for 250,000 shares at $2.00 exercise price. Goal: listing TTSA securities on Nasdaq or NYSE."
   source:
     path: government/sec-ttsa-1k-partii-20220502.html
     location: SEC 1-K FY2021, Exchange Listing consulting agreement section
+- id: tl15f
+  added_date: '2026-05-01'
+  category: other
+  date: '2024-01-19'
+  event: "Reversion deadline under the February 2022 Exchange Listing Advisory Agreement — if TTSA securities are not listed on Nasdaq or NYSE by this date, all 255,654 Class A Common Stock shares return to the Company."
+  source:
+    path: government/sec-ttsa-1k-partii-20220502.html
+    location: SEC 1-K FY2021, Exchange Listing consulting agreement section (reversion clause)
+- id: tl24
+  added_date: '2026-05-01'
+  category: other
+  date: '2025-04-17'
+  event: "TTSA's FY2024 1-K (filed April 17, 2025) makes no mention of the Exchange Listing Advisory Agreement, indicating the January 19, 2024 listing deadline was not met."
+  source:
+    path: government/sec-ttsa-1k-partii-20250417.html
+    location: SEC 1-K FY2024 — absence of Exchange Listing reference
 - id: tl19
   category: publication
   added_date: '2026-04-22'

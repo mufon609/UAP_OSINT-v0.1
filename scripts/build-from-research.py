@@ -182,15 +182,23 @@ def load_frontmatter(node_path):
 
 
 def _id_natural_key(eid):
-    """Return a natural-sort key for an id string like 'q1', 'q10', 'md3'.
-    Splits alpha prefix + numeric suffix so q10 sorts AFTER q2 (not before).
-    Non-conforming ids fall to a 'zzz' bucket to sort last, preserving
-    sort stability for malformed entries."""
+    """Return a natural-sort key for an id string like 'q1', 'q10', 'md3',
+    'tl15b'. Splits alpha prefix + numeric core + optional alpha suffix so
+    q10 sorts AFTER q2 (not before), and tl15b sorts AFTER tl15 but BEFORE
+    tl16. Non-conforming ids fall to a 'zzz' bucket to sort last, preserving
+    sort stability for malformed entries.
+
+    The trailing-alpha suffix supports the established repo convention where
+    `tl15b`, `t3b`, `kp4a` etc. denote sub-step entries derived from a
+    parent numeric ID. Without it, those IDs fall to the 'zzz' bucket and
+    render last among same-date siblings — masked today by accident when
+    dates happen to be unique, fragile when same-date siblings appear.
+    """
     if not eid:
         return ("zzz", 0, "")
-    m = re.match(r"^([a-zA-Z]+)(\d+)$", str(eid))
+    m = re.match(r"^([a-zA-Z]+)(\d+)([a-zA-Z]*)$", str(eid))
     if m:
-        return (m.group(1), int(m.group(2)), str(eid))
+        return (m.group(1), int(m.group(2)), m.group(3))
     return ("zzz", 0, str(eid))
 
 
