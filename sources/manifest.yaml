@@ -1194,8 +1194,9 @@
   archived_date: '2026-04-28'
   sha256: 28cdd9290fc3680c9903bc25cfe701635d8fffde1e54110434f056ed69b69365
   archive_status: 3
-  note: Stenographic transcript (Alderson Court Reporting) of the 2024-11-19 SASC Subcommittee on Emerging Threats AARO hearing under Director Kosloski; post-Kirkpatrick context
+  note: Stenographic transcript (Alderson Court Reporting) of the 2024-11-19 SASC Subcommittee on Emerging Threats AARO hearing under Director Kosloski; post-Kirkpatrick context. extraction_type=extraction-lossy — pdftotext -layout extracts the standard Senate stenographic line-number prefixes (1-25) inline and the Scheduling@TP.One footer triplets between pages, breaking verbatim substring match for any quote spanning a line boundary. Validator prefers the same-stem .txt sibling produced 2026-05-01.
   wayback_date: '2025-04-20'
+  extraction_type: extraction-lossy
 - url: https://www.armed-services.senate.gov/download/kirkpatrick-statement
   format: pdf
   status: archived
@@ -1223,6 +1224,14 @@
   archive_status: 3
   note: Moultrie pre-hearing Statement for the Record submitted to the Senate Armed Services Committee for the May 27 2021 nomination hearing (USD/I&S). Primary record of his pre-confirmation policy positions and pre-government affiliations.
   wayback_date: '2025-05-02'
+- url: https://www.armed-services.senate.gov/download/transcript-11-19-2024#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.txt
+  archived_date: '2026-05-01'
+  sha256: 23a79c03cbdb7f2393e0553a022222c42175bb064025c345fd1d96946b20e0d1
+  archive_status: 1
+  note: Contributor-produced clean-text transcription of the 2024-11-19 SASC AARO hearing transcript PDF (paired entry; same path stem). Stenographic transcript by Alderson Court Reporting in standard Senate format with 1-25 line numbers prefixed on every content line and Scheduling@TP.One / www.TP.One / page-number footer triplets every 25 lines; pdftotext extracts those numbers inline, which breaks verbatim substring matching for any quote spanning a line boundary. This .txt restores plain prose by stripping the line-number prefixes and removing the footer triplets. Validator (validate.py extract_source_text) prefers this same-stem .txt sibling over pdftotext output for the PDF entry flagged extraction_type=extraction-lossy. Page-marker sections intentionally OMITTED. Same convention as the 2023-04-19 SASC sibling.
 - url: https://www.armed-services.senate.gov/download/transcript-4-19-2023
   format: pdf
   status: archived

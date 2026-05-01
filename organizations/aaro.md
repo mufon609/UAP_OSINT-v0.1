@@ -321,29 +321,19 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 
 ### Kosloski Nov 19 2024 SASC testimony — frames the Puerto Rico case (2013 Customs and Border Patrol observation near airport)
 
-> as the Puerto Rico case.    It was data collected in 2013,
->
-> 12   when a Customs and Border Patrol aircraft observed an object
->
-> 13   flying near an airport in Puerto Rico.
+> A case that we thought would be a transmedium case as it was reported, is well-known on the outside, known as the Puerto Rico case. It was data collected in 2013, when a Customs and Border Patrol aircraft observed an object flying near an airport in Puerto Rico.
 
 | Field | Value |
 |---|---|
 | Attributed to | AARO Director Jonathan Kosloski first SASC Subcommittee on Emerging Threats and Capabilities hearing testimony, November 19, 2024, 2024-11-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf) |
-| Location | p. 14, lines 11-13 |
+| Location | p. 14, lines 9-13 |
 
 ---
 
 ### Kosloski case resolution — Puerto Rico 2013 transmedium case assessed as a pair of balloons or sky lanterns floating over the airport at 7 knots, descending to 200 meters; the apparent transmedium behavior was an infrared-imaging artifact when water temperature matched object temperature
 
-> So we assessed that
->
->  5   the object, likely a pair of balloons or sky lanterns, was
->
->  6   floating at about 7 knots over the airport and descending to
->
->  7   about 200 meters.
+> So we assessed that the object, likely a pair of balloons or sky lanterns, was floating at about 7 knots over the airport and descending to about 200 meters.
 
 | Field | Value |
 |---|---|
@@ -355,19 +345,7 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 
 ### Kosloski case resolution — GOFAST (2017 publicly released video) assessed with high confidence as an object at approximately 13,000 feet altitude rather than close to the water; apparent fast motion is parallax / a trick of the eye when a high-altitude object is imaged from a closer-altitude platform
 
-> The GOFAST captured the public attention and
->
-> 10   congressional attention when it was made public in 2017.    It
->
-> 11   looks like an object flying very fast over the water, very
->
-> 12   close to the water.    Through a very careful geospatial
->
-> 13   intelligence analysis, using trigonometry, we assessed with
->
-> 14   high confidence that the object is not actually close to the
->
-> 15   water but is rather closer to 13,000 feet.
+> The GOFAST captured the public attention and congressional attention when it was made public in 2017. It looks like an object flying very fast over the water, very close to the water. Through a very careful geospatial intelligence analysis, using trigonometry, we assessed with high confidence that the object is not actually close to the water but is rather closer to 13,000 feet.
 
 | Field | Value |
 |---|---|
@@ -379,13 +357,7 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 
 ### Kosloski introduces the 2018 Mt. Etna UAV case — AARO captured object that appeared to be flying through the plume of an erupting volcano in the Mediterranean
 
-> An interesting case, which I do not believe the public
->
-> 23   is familiar with, is captured in 2018 from a UAV flying in
->
-> 24   the Mediterranean, watching Mt. Etna as it was erupting.
->
-> 25   And it appears that that object is flying through the plume
+> An interesting case, which I do not believe the public is familiar with, is captured in 2018 from a UAV flying in the Mediterranean, watching Mt. Etna as it was erupting. And it appears that that object is flying through the plume of superheated gas and ash.
 
 | Field | Value |
 |---|---|
@@ -397,19 +369,7 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 
 ### Kosloski case resolution — Mt. Etna 2018 case resolved through 3D modeling and pixel-by-pixel analysis with IC, S&T, and volcanologist support; object was 170 meters away from the plume, not flying through it
 
-> This was a rather difficult case to resolve.    We had to
->
->  3   pull in support from a number of IC and S&T partners, and
->
->  4   even reach out to a volcanologist.       And through very
->
->  5   detailed 3D modeling and pixel-by-pixel analysis of the
->
->  6   object as it is traversing across the clouds, they assessed
->
->  7   that the object was actually 170 meters away from the plume
->
->  8   and not flying through it.
+> This was a rather difficult case to resolve. We had to pull in support from a number of IC and S&T partners, and even reach out to a volcanologist. And through very detailed 3D modeling and pixel-by-pixel analysis of the object as it is traversing across the clouds, they assessed that the object was actually 170 meters away from the plume and not flying through it.
 
 | Field | Value |
 |---|---|
@@ -421,11 +381,7 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 
 ### Kosloski clarifying that AARO acknowledges genuinely anomalous cases remain in the corpus — case resolutions reflect what AARO can presently resolve, not a categorical denial of unexplained phenomena
 
-> And to be clear, AARO does not believe every object is
->
-> 10   a bird, a balloon, or a UAV.    We do have some very anomalous
->
-> 11   objects.
+> And to be clear, AARO does not believe every object is a bird, a balloon, or a UAV. We do have some very anomalous objects.
 
 | Field | Value |
 |---|---|

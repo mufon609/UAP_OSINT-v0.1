@@ -1,0 +1,1319 @@
+                  Stenographic Transcript
+                        Before the
+
+     Subcommittee on Emerging Threats and Capabilities
+
+                    COMMITTEE ON
+                   ARMED SERVICES
+
+        UNITED STATES SENATE
+
+TO RECEIVE TESTIMONY ON THE ACTIVITIES OF THE ALL-
+       DOMAIN ANOMALY RESOLUTION OFFICE
+
+               Tuesday, November 19, 2024
+
+                     Washington, D.C.
+
+            ALDERSON COURT REPORTING
+              1029 VERMONT AVE, NW
+                     10TH FLOOR
+               WASHINGTON, DC 20005
+                    (202) 289-2260
+               www.aldersonreporting.com
+
+TO RECEIVE TESTIMONY ON THE ACTIVITIES OF THE ALL-DOMAIN
+
+ANOMALY RESOLUTION OFFICE
+
+Tuesday, November 19, 2024
+
+U.S. Senate
+
+Committee on Armed Services
+
+Subcommittee on Emerging
+
+Threats and Capabilities
+
+Washington, D.C.
+
+The committee met, pursuant to notice, at 4:30 p.m. in
+
+Room SD-G50, Dirksen Senate Office Building, Hon. Kirsten
+
+Gillibrand, chairman of the subcommittee, presiding.
+
+Committee Members Present:       Senators Gillibrand,
+
+Peters, and Ernst.
+
+OPENING STATEMENT OF HON. KRISTEN GILLIBRAND, U.S.
+
+SENATOR FROM NEW YORK
+
+Senator Gillibrand:   This hearing will come to order.
+
+I would like to first thank our witness, Dr. Jon Kosloski,
+
+for testifying.   He is our newly appointed Director of the
+
+All-domain Anomaly Resolution Office, or AARO, an office
+
+Congress established in the fiscal year 2022 NDAA, to
+
+investigate the very serious problem of unidentified
+
+anomalous phenomenon, or UAP.
+
+Dr. Kosloski comes to AARO from the Research
+
+Directorate of the National Security Agency, where he worked
+
+in areas of optics research and crypto mathematics.          He
+
+previously served at the DoD Special Communications
+
+Enterprise Office.   We look forward to regular engagements
+
+between you and the Committee.
+
+When unidentified anomalous phenomenon enters our
+
+airspace we need to know about it.          We need to identify it,
+
+but in order to do that we need to reduce the stigma and
+
+credibility challenges associated with these events.          Our
+
+servicemembers, scientists, foreign partners, and the
+
+general public need to know that their reporting, research,
+
+and analysis will be taken seriously and acted on in good
+
+faith.
+
+In the spirit of transparency, AARO recently released a
+
+consolidated annual report, just a few months after
+
+releasing the first volume of a historical record report in
+
+March of this year.   These public documents help highlight
+
+the challenges still facing this office, including the lack
+
+of timely and actionable sensor data, the need to revisit
+
+cases placed in the active archive, and the importance of
+
+improving reporting sources, both in the interagency and
+
+internationally.
+
+In this hearing I want to probe a series of specific
+
+issues.   First, as incidents at Langley and elsewhere have
+
+demonstrated, unmanned aerial systems, or UAS, continue to
+
+pose significant threats to our national security.    In
+
+addition to safety of flight issues these UAS create for our
+
+own pilots and air crew, the UAS present clear and
+
+undeniable counterintelligence concerns around some of the
+
+most sensitive airspace.   While standard UAS are not part of
+
+AARO's mission, your work on sensors at military
+
+installations across the country will be critical to making
+
+sure that we have the domain awareness necessary to
+
+accurately identify and track these objects.   I expect your
+
+office to also pay close attention to any anomalous
+
+characteristics that these systems could present in the
+
+future.
+
+Second, I look forward to your presentation of three
+
+case studies demonstrating cases that AARO has resolved,
+
+including the GOFAST, which is one of the most prominent UAP
+
+cases.   However, I believe it is important to acknowledge
+
+ongoing public interest in the Nimitz incident, the GIMBAL
+
+video, and other prominent UAP cases, and for AARO to share
+
+what it can about those cases, as well.
+
+It is also important that AARO speak to unresolved
+
+cases and what types of anomalous activity have merited
+
+further analysis.   And while I know AARO has gone through a
+
+period of transition over the past year, it is important to
+
+share these disclosures, both resolved and unresolved cases,
+
+with the public, even when a Senate hearing is not
+
+scheduled.
+
+Lastly, while some have been hesitant to come forward
+
+to AARO in the past, I hope that potential individuals with
+
+firsthand knowledge of unreported programs view your arrival
+
+in this position as an opportunity for a new start.    AARO
+
+was created by Congress to do this work.    Congress waives
+
+nondisclosure agreements for those who disclose information
+
+to AARO, and gave AARO the authority to go and turn over
+
+every rock.   I hope those with information to share use this
+
+opportunity so that we, as your Senators who represent you,
+
+can do our job.
+
+I look forward to hearing more on these issues from Dr.
+
+Kosloski, and for members to start a dialogue on this
+
+important topic.
+
+With that I would like to turn to Senator Ernst for her
+
+opening statement.
+
+OPENING STATEMENT OF HON. JONI ERNST, U.S. SENATOR
+
+FROM IOWA
+
+Senator Ernst:    Thank you, Madam Chair, and thank you,
+
+Dr. Kosloski.    Our hearing today is about identifying UAPs
+
+and understanding their potential implications, which could
+
+range from technological advancements to potential threats
+
+to our national security.     Are these phenomena tied to
+
+foreign adversaries such as China or Russia, leveraging
+
+advanced technologies beyond our current capabilities, or do
+
+they represent unknown scientific phenomena that challenge
+
+our current understanding?
+
+We must answer these critical questions to ensure that
+
+our national security is not compromised.     It is vital that
+
+all agencies work in tandem to aggregate data, identify
+
+patterns, and develop robust analytical frameworks.     Our
+
+ability to detect, track, and respond to UAPs requires the
+
+latest technology and full cooperation from all government
+
+branches.
+
+Thanks very much, Dr. Kosloski, for your attention to
+
+this matter, and I look forward to the valuable insights
+
+that you and AARO can provide to our Committee.     And I yield
+
+back.   Thank you.
+
+Senator Gillibrand:   Dr. Kosloski, please make your
+
+opening statement.
+
+STATEMENT OF JON T. KOSLOSKI, Ph.D., DIRECTOR, ALL-
+
+DOMAIN ANOMALY RESOLUTION OFFICE
+
+Dr. Kosloski:     Thank you, Chairwoman Gillibrand,
+
+Ranking Member Ernst, and distinguished members of the
+
+Subcommittee.    It is a pleasure to be here on behalf of the
+
+Department of Defense as the new Director of the All-domain
+
+Anomaly Resolution Office.     I appreciate the opportunity to
+
+provide a status update on AARO's work and respond to your
+
+questions about unidentified anomalous phenomena, or UAP.
+
+On behalf of the Department and the entire AARO team, I
+
+want to say how grateful we are to Congress for its
+
+continued support.    Unidentified objects in any domain pose
+
+potential threats to U.S. safety and security.       Reports of
+
+UAP activity, particularly near national security sites,
+
+must be treated seriously and investigated with scientific
+
+rigor by the U.S. government.
+
+By way of introduction, I am Jon Kosloski.        I am a
+
+researcher at my core, with an academic background in
+
+mathematics, physics, and engineering.       I have spent most of
+
+my career at the National Security Agency leading advanced
+
+research in the areas of optics, computing, and crypto
+
+mathematics.    By nature, I am drawn to tough scientific
+
+problems, which is what brought me to AARO and the UAP
+
+mission.
+
+Since I arrived at AARO in August, I have been
+
+impressed by the breadth and depth of my team's experience
+
+and the framework they have established to rigorously
+
+analyze UAP reports.   AARO has taken meaningful steps to
+
+improve data collection and retention, bolster sensor
+
+development, effectively triage UAP reports, and reduce the
+
+stigma of reporting UAP events.       Last year, AARO worked with
+
+DoD's Joint Staff to issue guidance to defense personnel
+
+worldwide on how to report UAP observations, and is working
+
+with the military services regarding implementation.       AARO
+
+has also launched a public website that features UAP
+
+imagery, case resolutions, material analysis, archival
+
+records, and more.   These are only a few examples of AARO's
+
+recent progress, and we are just getting started.
+
+To date, AARO has over 1,600 UAP reports in its
+
+holdings from across the U.S. government.       I will share a
+
+slide in just a few minutes with updated UAP analytic
+
+trends.   You will see that many reports resolve to
+
+commonplace objects like birds, balloons, and unmanned
+
+systems, while others lack sufficient data for comprehensive
+
+analysis.   Although only a very small percentage of reports
+
+received by AARO are potentially anomalous, these are the
+
+cases that require significant time, resources, and a
+
+focused scientific inquiry by AARO and its network of
+
+partners.   It is important to underscore that, to date, AARO
+
+has not discovered any verifiable evidence of
+
+extraterrestrial beings, activity, or technology.
+
+To accomplish AARO's national security mission, I have
+
+set three priorities for the office:         building strong
+
+partnerships, promoting transparency, and scaling up the
+
+work of the office.
+
+AARO cannot do its work alone.          Building partnerships
+
+across government, academia, industry, and with the public
+
+is essential to the success of the office.         Strong
+
+cooperation with the military services is particularly
+
+important.   We rely on their support to implement our
+
+reporting guidance and to amplify the message that there
+
+should be zero stigma associated with UAP reporting.
+
+We also rely on partnerships with the National Labs,
+
+the Office of the Director of National Intelligence, FBI,
+
+Department of Homeland Security, and NASA, all of which play
+
+a role in the whole-of-government effort to address UAP.
+
+Recognizing the talent and expertise that reside
+
+outside of government, AARO will continue to explore new
+
+ways to partner with the academic and scientific communities
+
+to investigate its most complex UAP cases.
+
+A related priority for AARO is transparency.            Our
+
+ability to collaborate with key partners, including the
+
+scientific community and the public, relies on information
+
+sharing, to include downgrading and declassifying UAP-
+
+related information.   In some cases, it may be unclear to
+
+the public why the DoD classified a piece of information in
+
+the first place.   Why are photos of seemingly benign objects
+
+such as balloons classified?       It is often the case that an
+
+object or phenomenon itself is not a security concern, but
+
+the location, source, or method used to capture it is still
+
+sensitive.   Many cases are difficult to quickly release to
+
+the public but are reported to the appropriate committees in
+
+Congress that are authorized by the law or House and Senate
+
+leadership to receive the information.
+
+It is important to note that AARO does not unilaterally
+
+declassify information.     Instead, we work with the
+
+originator of a classified record to ensure that
+
+declassifying that record does not inadvertently harm
+
+national security.   This can take time.      Nonetheless, the
+
+Department is committed to declassifying and publicly
+
+sharing more information on UAP, while protecting sensitive
+
+sources and methods.   I will be sharing some newly
+
+declassified imagery in just a few minutes.
+
+AARO is also working closely with the National Archives
+
+and Records Administration to make UAP-related documents
+
+publicly available in a digitized collection.       Meanwhile,
+
+AARO continues to review the U.S. historical record relating
+
+to UAP.   We welcome any former or current government
+
+civilian, contractor, or military servicemember with
+
+relevant information to reach out to us at www.aaro.mil.
+
+My final priority is scaling up AARO's work to match
+
+its mission.    AARO needs to bolster the quantity, quality,
+
+and diversity of data that it acquires and examines.           This
+
+means tapping into existing data sources within the
+
+interagency while deploying AARO's own organic sensor
+
+capabilities.    To the extent that UAP result from domain
+
+awareness gaps, more and better data will help us fill those
+
+gaps and help us understand what is being encountered.
+
+In closing, AARO is committed to the highest standards
+
+of scientific integrity.    We will not foreclose on any
+
+explanation for UAP prematurely.         We will continue to follow
+
+the science and data wherever they lead.           We will continue
+
+to have an open and frank dialogue with Congress in settings
+
+like these and in classified briefings.           We will continue to
+
+keep you fully and currently informed of all UAP
+
+information, active or historical.           And finally, we will
+
+share as much information as possible at the unclassified
+
+level to inform the public of AARO's activities and its
+
+findings.
+
+For now I would like to turn to a brief presentation of
+
+UAP trends and cases, and then I would be happy to take
+
+questions.
+
+This chart represents the UAP reporting since 1996, and
+
+as has previously been discussed by AARO, sensor placement
+
+seems to have caused a bias in our data, both geographic and
+
+at altitude.   And we are working to resolve that bias in
+
+2025, or reduce that bias, through broader engagements with
+
+the DoD as well as the IC and the rest of the government,
+
+also by incorporating broader sensors into our data and
+
+through a public reporting mechanism that we hope to have
+
+live in mid 2025.
+
+On the left side it shows the altitudes, and we will
+
+see -- it is a bit cut off -- we will see that most of the
+
+reporting occurs between 15,000 and 25,000 feet.       That
+
+happens to be where most of our sensors are.       And the
+
+reporting above and below that is also often coming from
+
+those same platforms.
+
+In the center we will see that the resolved cases have
+
+the vast majority being balloons and UAS.       We are seeing a
+
+great increase in satellites recently, particularly with the
+
+launch of mega satellite constellations such as Starlink,
+
+where the satellites are catching what is called satellite
+
+flares or glint off the sun, just after sunset or just
+
+before sunrise.
+
+And on the right-most we will see the morphology or the
+
+shapes that have been reported.       The majority have been
+
+lights or orbs.   We think that there is going to be an
+
+increase in the lights with the mega constellations.         But
+
+our most interesting cases, some of which I will discuss
+
+later, our actually the E-shape such as the triangles or the
+
+cylinders.
+
+And at the bottom we will see the geographic bias that
+
+I mentioned before, where most of the reports historically
+
+have been near the government sites.           This bias has been
+
+reduced recently by reporting from the FAA.           We now get
+
+weekly reports from them.     And a great thank-you to our
+
+aviators for making those reports.           It helps our analysis
+
+quite a bit.
+
+Okay.    A case that we thought would be a transmedium
+
+case as it was reported, is well-known on the outside, known
+
+as the Puerto Rico case.    It was data collected in 2013,
+
+when a Customs and Border Patrol aircraft observed an object
+
+flying near an airport in Puerto Rico.           The green line in
+
+this diagram is the track that the airplane was taking, and
+
+those many crossed lines are the directions that the camera
+
+was facing at the time that the airplane was flying around
+
+the airport.    And we will watch the video in just a moment.
+
+The orange arrow in the center is where we assessed
+
+that the UAP was actually flying, and transmedium means that
+
+it goes from one domain into another.           In this case, it
+
+looks like it goes from the air into the water and then back
+
+into the air.    We assessed that it was actually flying over
+
+the airport the entire time.
+
+And this video was taken with infrared, and what
+
+appears to be the transmedium part, where it goes into the
+
+water, is actually where the temperature of the water is
+
+equal to the temperature of the object, and the camera can
+
+no longer distinguish between the two.        It is not that the
+
+object actually goes into the water.        So we assessed that
+
+the object, likely a pair of balloons or sky lanterns, was
+
+floating at about 7 knots over the airport and descending to
+
+about 200 meters.   And this video will be released, and our
+
+report will be released later this year.
+
+The GOFAST captured the public attention and
+
+congressional attention when it was made public in 2017.          It
+
+looks like an object flying very fast over the water, very
+
+close to the water.   Through a very careful geospatial
+
+intelligence analysis, using trigonometry, we assessed with
+
+high confidence that the object is not actually close to the
+
+water but is rather closer to 13,000 feet.        The diagram here
+
+shows as the platform is flying and capturing the object, if
+
+it is closer to the platform at higher altitude a trick of
+
+the eye called parallax makes it look like the object is
+
+moving much faster.   And so we have written a detailed paper
+
+on parallax, released on our website, so that the public can
+
+literally check our math on this analysis.
+
+An interesting case, which I do not believe the public
+
+is familiar with, is captured in 2018 from a UAV flying in
+
+the Mediterranean, watching Mt. Etna as it was erupting.
+
+And it appears that that object is flying through the plume
+
+of superheated gas and ash.
+
+This was a rather difficult case to resolve.           We had to
+
+pull in support from a number of IC and S&T partners, and
+
+even reach out to a volcanologist.          And through very
+
+detailed 3D modeling and pixel-by-pixel analysis of the
+
+object as it is traversing across the clouds, they assessed
+
+that the object was actually 170 meters away from the plume
+
+and not flying through it.
+
+And to be clear, AARO does not believe every object is
+
+a bird, a balloon, or a UAV.     We do have some very anomalous
+
+objects.   It is just the nature of resolution.         We can only
+
+resolve things that we understand.          So we are now working on
+
+additional products where we can inform the public,
+
+Congress, and others of the objects as we are studying them,
+
+rather than once we have resolved them.
+
+With that I will take your questions.
+
+[The prepared statement of Dr. Kosloski follows:]
+
+Senator Gillibrand:   Thank you, Dr. Kosloski.       I
+
+appreciate your testimony.
+
+It has been widely reported that individuals claiming
+
+firsthand knowledge of unreported UAP programs have been
+
+reluctant to engage with AARO.       What message do you have for
+
+those individuals, and how will you work to gain their
+
+trust?
+
+Dr. Kosloski:   I would let them know that Congress has
+
+gone out of its way to create the organization AARO
+
+specifically to conduct these sorts of investigations and
+
+has uniquely empowered them to have access to all UAP-
+
+related information, whether that is historic or current.
+
+And we take that responsibility and those authorities very
+
+seriously.
+
+So we have been reaching out to a broader community,
+
+encouraging folks who had talked to AARO personnel in the
+
+past and maybe felt uncomfortable, to come back to us.         We
+
+have met with several of their interlocuters and a couple of
+
+firsthand witnesses, and we are making great progress in
+
+those firsthand witnesses that we have talked to do feel
+
+comfortable coming back to us.       And so we hope that more
+
+folks that do have information would go to www.aaro.mil,
+
+fill out the form, send it to us so we can bring them in for
+
+interviews, and add their information to our investigations.
+
+Senator Gillibrand:   Thank you.       I recently just read
+
+your report from March, your historic report, and I would
+
+encourage anyone who is interested in this topic to read the
+
+report.   Because when I was asked by a reporter about it
+
+they said, "Well, it doesn't show any evidence of secret
+
+programs that have aliens."
+
+That is not how I read the report.     What I read in the
+
+report is the U.S. government took sightings extremely
+
+seriously over the last 75 years, put some of the greatest
+
+mind ever to analyze these cases, because they assessed them
+
+as some deeply unknown phenomena that may or may not cause
+
+threats, that may or may not be related to adversaries, but
+
+are certainly something that the U.S. government needed to
+
+know about.
+
+And what I read from this report is that we resolved
+
+numbers of cases, but in almost every instance, whether it
+
+was in the '40s, the '50s, the '60s, the '70s, the '80s, the
+
+'90s, the '00s, half the cases were unresolved.     So I do not
+
+think this is an example of the government not taking these
+
+cases seriously.   I think this is an example of our
+
+government spending 75 years taking these cases very
+
+seriously.
+
+And interestingly, for the group that put together this
+
+report, they did not have access to any firsthand reporting.
+
+And so from my perspective, for whistleblowers and people
+
+who want to come in, please come in, because the purpose of
+
+AARO is so that the Senators can do our job to provide
+
+oversight, accountability, and transparency.            We find it
+
+very concerning that our pilots, that our Navy officers,
+
+that people who have sightings of UAPs are denigrated, are
+
+somehow dismissed or disregarded.            They need to be
+
+protected.
+
+This is a huge issue for national security because,
+
+number one, we do not have domain awareness, which is very
+
+problematic.    Number two, we do not have domain superiority
+
+if we do not understand how different UAPs are flying, what
+
+technology they are using, what their mission is, what their
+
+purpose is.    And at the base level, we have so many UAPs
+
+around our bases, around our military sites, around our
+
+nuclear sites, and it is a deeply disturbing that
+
+adversaries, at a minimum, could be using these
+
+opportunities to spy, to glean intelligence that will harm
+
+our long-term national security.
+
+So I am grateful that you are taking the whistleblowers
+
+very seriously.    I am grateful that AARO is trying its best
+
+to integrate the private sector, the public into their work.
+
+Interestingly, in this hearing, we heard that the FAA
+
+is now working hand-in-glove, which is very helpful.            We
+
+want this public-facing accessibility to be put in place by
+
+2025, so that people can upload their videos, their data,
+
+their reports.
+
+I have met with people who have followed this issue for
+
+decades, and they have thousands of examples, thousands of
+
+pieces of data, that ultimately I want uploaded into AARO so
+
+you can cross-reference historic information with current
+
+information.    Because this group at AARO are the best
+
+scientists that we can find anywhere, and they will do the
+
+work that is needed to be done.        So I just want to thank you
+
+for that.
+
+And then with my last 42 seconds, can you tell us about
+
+any of the cases that merit further analysis by your IC and
+
+science and technology partners?         What is it that makes
+
+these cases anomalous?    And a large number of reports are
+
+placed in the active archive because AARO does not have
+
+enough information.    What might prompt you to reopen a case
+
+like that, and do you have any examples?
+
+Dr. Kosloski:     Sure.   I will start with the active
+
+archive case.    That is just the place where we put cases
+
+where we do not have enough scientific information to
+
+resolve them at that time, but we are always looking for
+
+opportunities to correlate them to new cases that come in,
+
+as the new cases come in, as well as enrich those cases with
+
+additional data.
+
+We do have one example that I am aware of where we were
+
+able to correlate a number of observations of interesting
+
+lights in the sky, and eventually we concluded that it was
+
+multiple people observing Starlink flares, just as an
+
+example.
+
+Three cases that merit analysis that we are working on
+
+right now, one we might be in the process of resolving, but
+
+nonetheless, it is still interesting.
+
+The first one was brought to us by a law enforcement
+
+officer out West, where he observed a large orange orb
+
+floating several hundred feet above the ground, a couple of
+
+miles away.   He went to investigate what was going on with
+
+that orb, and as he was pulling up to the location where he
+
+thought would be below the orb, about 40 to 60 meters away
+
+from some object, the area was well lit, he saw a blacker
+
+than black object.   He said it was about the size of a
+
+Prius, 4 to 6 feet wide.   And as he got 40 to 60 meters away
+
+from the object it tilted up about 45 degrees, and then it
+
+shot up vertically, he says 10 to 100 times faster than
+
+anything drone he has ever seen before.     And it did that
+
+without making a sound, as far as he could tell from inside
+
+of his vehicle.   And just as it left his field of view
+
+through his windshield then it emitted very bright red and
+
+blue lights that illuminated the inside of his vehicle, as
+
+brightly as if someone had set off fireworks just outside
+
+his vehicle, or street flares.
+
+So that is anomalous because of the size of the vehicle
+
+with the great acceleration, and when he came back to
+
+investigate that area he found no disturbance of the ground
+
+beneath it.   So that is one interesting one.
+
+Another one comes to us from Southeast U.S.      There was
+
+a U.S. facility where two cars of government contractors
+
+were leaving the facility, around 9:00 in the morning.         They
+
+looked up in the sky and saw a large metallic cylinder,
+
+about the size of a commercial airplane, and it was
+
+stationary.   They observed that there was a very bright,
+
+white light behind or around the object.      The saw it
+
+stationary for 15 to 20 seconds, and then it disappeared.
+
+Obviously, an object that large, stationary unless it is a
+
+blimp, is unusual, but then disappearing, we cannot explain
+
+how that would happen.
+
+And then the last case was interesting.      We had an
+
+aircraft that was flying parallel to another aircraft and it
+
+was capturing imagery of it, and a small-looking object
+
+appeared to fly between the two of them, much faster than
+
+them.   Through very careful analysis we think that the
+
+object might have actually been further away than the object
+
+that it was videotaping, but it requires very careful
+
+analysis to come to those conclusions, and we do not have
+
+the metadata to support that yet.
+
+Senator Gillibrand:     Senator Ernst.
+
+Senator Ernst:   Yes.    Thank you, Madam Chair.   And Dr.
+
+Kosloski, you mentioned that you do work with the
+
+intelligence community.     You are working with the FAA.             Has
+
+AARO involved academia?     Have you gone to universities?              Do
+
+you have outside organizations that you are working with,
+
+and if so, can you walk us through some of that
+
+collaboration?
+
+Dr. Kosloski:    Sure.    Right now most of our
+
+collaborations that are veering towards academia are with
+
+your university affiliate and research centers associated
+
+with universities or with FFRDCs.             Our partnership with
+
+university, I would say, is lacking right now.             We have some
+
+one-off associations with university professors.             However,
+
+that is our fault, and it is largely because of the need to
+
+be classified data.    We need to give the professors
+
+something to work on before we can really engage them.
+
+So we are working significantly on the declassification
+
+effort.   We have hired a number of declassification experts,
+
+and we are going to be trying to get cases like the ones
+
+that I just discussed here declassified so that we can
+
+engage with the universities on a regular basis and provide
+
+them the data.   Talking to a scientist without data is going
+
+to be rather disappointing.       So hopefully in 2025, we will
+
+be increasing those efforts.
+
+Senator Ernst:    All right.       Well, I appreciate that.           I
+
+think there is a huge pool of talent out there that you
+
+should tap into.
+
+Given the public's growing concern and interest in
+
+UAPs, how do you balance the need for the transparency that
+
+our public is demanding with the potential risks of
+
+revealing classified defense information?
+
+Dr. Kosloski:    Yeah, that is always a concern that is
+
+on the front of our minds.     We want to make sure that we are
+
+deconflicting both on potential U.S. programs and what the
+
+IC might be tracking for adversarial programs, as we are
+
+aggregating that information and preparing to share it.
+
+However, oftentimes we can remove the discussion of the
+
+unidentified and anomalous activity from the sensitive
+
+information that our partners are concerned with.         And that
+
+is usually going to be the platforms that the information
+
+was collected with, if it is truly anomalous.         And so we
+
+have our partners working alongside in the declassification
+
+of that data.
+
+Senator Ernst:    Very good.      And then without having to
+
+explain the UAP, what do we need to begin really doing about
+
+them?   What precautions can we take?        What should we be
+
+doing about them?
+
+Dr. Kosloski:    I think that removing the stigma,
+
+reducing the stigma, is the first step.         We need to make
+
+sure that we are having honest and transparent conversations
+
+about them.   Because if we are hesitant to discuss them,
+
+then it opens the opportunity for an adversary, as you had
+
+mentioned earlier, Senator Gillibrand, to come in and
+
+conduct some activity.
+
+So we need to do that, and we need to have more
+
+persistent monitoring and understand that whether it is a
+
+UAP or a counter-UAS issue, that we need to have that
+
+complain domain awareness around our national security
+
+facilities.
+
+Senator Ernst:     Wonderful.      Thank you.    Thank you,
+
+Madam Chair.
+
+Senator Gillibrand:     Just a couple of follow-up
+
+questions.    We did not discuss in this setting the most
+
+recent UAP, or UAS, encounter with bases like Langley.             I
+
+know that the incursion by UASs that were publicly made
+
+available through the press that took over 2 weeks was
+
+fairly alarming to Senators, because there was a question
+
+about what technology they were using, there was a question
+
+about why it was so hard to detect.
+
+Can you speak to how AARO will be integrated into the
+
+review of these kinds of cases and how you can be helpful to
+
+both the intelligence community and the Department of
+
+Defense in analyzing or being able to more quickly analyze
+
+what is knowable and what is not knowable.          Because once you
+
+do identify it is a drone, for example, it then goes to the
+
+right department at DoD or the intelligence community to
+
+assess, deal with, or take down, as the incident might be.
+
+But talk to us a little bit about what role you can
+
+play, for both the DoD and the IC community in these kinds
+
+of incursions that are happening when we do not know what
+
+tech is being used and we do not understand a flight
+
+pattern, we do not understand how they arrive and depart in
+
+the way they do.
+
+Dr. Kosloski:   Yeah.    We are generally going to be
+
+supporting them through an advisory capacity.       As an
+
+organization that naturally needs to conduct baseline
+
+experiments of the environment to see what normal looks
+
+like, whether it is balloons, birds, anomalous activity, or
+
+drones flying through an environment, we are going to gather
+
+a lot of data that will allow us to characterize an
+
+environment very well and then detect and follow those
+
+tracks, hopefully rather efficiently.
+
+There is also a lot of overlap in the type of sensors
+
+that are going to be used for the counter-UAS mission and
+
+the UAP mission, whether that is active detection like
+
+radars, or passive like cameras.       So as AARO is trying to
+
+push the bounds on detectability for UAP, we are hopefully
+
+going to have best practices that we can also provide to the
+
+counter-UAS, and potentially we might have additional
+
+technologies that we can offer them to support.
+
+Senator Gillibrand:     I would like to just address a
+
+little bit of reporting and feedback.       As you know, AARO is
+
+required to develop a mechanism for the public to report UAP
+
+information.   Now that that mechanism for current and former
+
+military, civilian, and contractor personnel has been
+
+established, can you speak to AARO's plans for a public
+
+reporting mechanism, and how did AARO arrive at this
+
+approach, and were other options considered?
+
+And second, for pilots and operators who have reported
+
+a UAP, what feedback, if any, has AARO provided to these
+
+individuals related to what AARO is doing with their report
+
+and how the report has been resolved?       How does such
+
+feedback, or lack thereof, impact the frequency of UAP
+
+reporting?
+
+Dr. Kosloski:   Yeah.   The public reporting mechanism
+
+that we have decided to go with is going to look similar to
+
+the reporting mechanism that we currently have for
+
+historical events, where we are going to ask folks to go to
+
+our website, download a PDF form, put in the narrative for
+
+their account, and then email that to us with accompanying
+
+media.   Usually it will probably be imagery.
+
+We went with that option because we thought, one, we
+
+could do it rather quickly, we could do it efficiently, make
+
+it very cost effective for the taxpayer.       But also we think
+
+we can gather all the data that we are going to need to
+
+conduct our analysis.   And then we are going to have that
+
+feed into an automated processing system that will cross-
+
+correlate that against all the other public reported cases
+
+as well as the U.S. government cases.
+
+We did consider a number of other reporting mechanisms,
+
+to included automated online forms as well as cellphone
+
+apps, and we ultimately decided that this would be the
+
+safest, cheapest, and easiest to maintain in the future,
+
+while protecting the private information of the individuals
+
+who are reporting.
+
+Regarding the feedback from the result reports, right
+
+now we do not have a good feedback mechanism.     It is fairly
+
+informal.   We are working on building a case management
+
+system that AARO will use at all classification levels, and
+
+hopefully in that we will be able to provide feedback.      As
+
+the case is going through the resolution process -- we have
+
+multiple phases -- then the folks who report that, whether
+
+it is a pilot at the classified level or someone potentially
+
+reporting through another mechanism, they will get that
+
+automated feedback.
+
+And then it is not determined at this point yet how
+
+much information we will be able to include in that feedback
+
+where it is in the process.     It will depend on the
+
+classification of the resolution of the case.
+
+Senator Gillibrand:    My final question is, is there
+
+anything that you need to tell the Senate that you need from
+
+us, whether it is funding, whether it is support, whether it
+
+is legislation.    Is there any request that AARO has of us,
+
+or anything else you need to brief us on, for us to be able
+
+to do our job to protect our servicemembers as well as
+
+integrate public interest and public data and information
+
+into the future analysis efforts of AARO?
+
+Dr. Kosloski:    First of all, I want to say thank you
+
+again.    I think that the authorities that we have are
+
+remarkable, and I think that we are well-resourced as an
+
+office.    The only ask I would have is that you continue to
+
+champion us, particularly with witnesses, encourage them to
+
+come forward and report to us so that we can have a more
+
+fulsome investigation of the potential historic or ongoing
+
+legacy programs.
+
+Senator Gillibrand:    Thank you so much.   Hearing
+
+adjourned.
+
+[Whereupon, at 5:10 p.m., the subcommittee was
+
+adjourned.]
+
+
