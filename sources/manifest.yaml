@@ -31,6 +31,22 @@
   sha256: 4109b33398a6a3f44f475b87fd7105aeeadc66007d285ce24c488a55caa5100e
   archive_status: 1
   note: 'Senate Armed Services Committee — Advance Policy Questions for Michael G. Vickers, Nominee for the Position of Under Secretary of Defense for Intelligence (USD(I)). Hearing date February 15, 2011. 33 pages of substantive nomination responses including: USD(I) duties and functions (''primary responsibility is to support the Secretary of Defense in discharging his intelligence-related responsibilities and authorities under Title 10 and Title 50 U.S.C.; serving as the principal intelligence advisor to the Secretary of Defense''), Goldwater-Nichols framing, oversight relationships with NSA/DIA/NGA/NRO and other intelligence community elements. Vickers was confirmed and served as USD(I) ~March 2011 - April 2015, succeeding James Clapper. Wayback capture from 2011-03-10 (the original armed-services.senate.gov path returns the modern download wrapper, not the PDF directly).'
+- url: http://www.defenselink.mil/Releases/Release.aspx?ReleaseID=10242
+  format: html
+  status: archived
+  path: government/defense-gov-cambone-resignation-200612.html
+  archived_date: '2026-04-30'
+  sha256: 7281b52ce2510c9192e84bef28f15a902e8fc0b7fffb4ec60c7cdba0c60dbbed
+  archive_status: 1
+  note: 'Defense.gov (defenselink.mil) news release No. 1221-06, December 1, 2006: ''Stephen A. Cambone to Resign''. Confirms Cambone''s USD(I) departure: ''The Department of Defense announced today that Under Secretary of Defense (Intelligence) Stephen A. Cambone will resign from the Department on Dec. 31, 2006.'' Wayback capture from 2006-12-06.'
+- url: http://www.defenselink.mil/bios/cambone_bio.html
+  format: html
+  status: archived
+  path: government/defense-gov-cambone-usdi-bio-200709.html
+  archived_date: '2026-04-30'
+  sha256: 21e6b91317ba3c2996799fc99e9b35eaa48987b26f1ebace788ab93e9dab6d98
+  archive_status: 1
+  note: 'Defense.gov (defenselink.mil) biography of Dr. Stephen A. Cambone, the first Under Secretary of Defense for Intelligence. ''Stephen A. Cambone was confirmed by the U.S. Senate as the Under Secretary of Defense for Intelligence on March 7th, 2003.'' Prior roles: Director, Program Analysis and Evaluation, OSD (July 2002 - March 2003); Principal Deputy Under Secretary of Defense for Policy (July 2001 - July 2002); Special Assistant to the Secretary and Deputy Secretary of Defense (January 2001 - July 2001); Staff Director for the Commission to Assess United States National Security Space Management and Organization (July 2000 - January 2001); Director of Research at INSS/NDU (August 1998 - July 2000); Staff Director for Rumsfeld Commission on Ballistic Missile Threat (January 1998 - July 1998); CSIS Senior Fellow Political-Military Studies (1993 - 1998). Wayback capture from 2007-09-29 (defenselink.mil bio updated 2006-01-13).'
 - url: https://apps.uintah.utah.gov/ords/ucdev/r/public-searches/property-search?serial=140340003
   format: pdf
   status: archived
@@ -726,6 +742,14 @@
   sha256: c4a357a4af118a2cf12ceb840c240ca7b836271ee09d7d9d991444065c5cfc5d
   archive_status: 1
   note: 'Office of the Under Secretary of War for Intelligence & Security institutional landing page on ousdi.defense.gov (the OUSD(I&S) subdomain). Documents Hansell as USW(I&S) and Justin Overbaugh as DUSW(I&S) Deputy. Lists Authority, Direction, and Control components (DCSA, DIA, NGA, NRO, NSA/CSS) and navigates to DDIs (Directors for Defense Intelligence) and DROs (Direct Report Offices). Mission statement: ''Principal Staff Assistant and Advisor to the Secretary of War and the Deputy Secretary of War on intelligence, counterintelligence, security, sensitive activities, and other intelligence-related matters.'' Wayback capture 2026-03-07. Resolves the Task #13 question — there IS a dedicated OUSD(I&S) public landing page on the ousdi.defense.gov subdomain (URL pattern not surfaced earlier because all my probes were on the war.gov / defense.gov / policy.defense.gov domains).'
+- url: https://ousdi.defense.gov/Portals/73/2025%20Official%20DUSWIS%20Bio%20Overbaugh_Justin.pdf
+  format: pdf
+  status: archived
+  path: government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf
+  archived_date: '2026-04-30'
+  sha256: 664bb62e574b0ce8401168cef51accfdee93dc2ec29777e9a76e49bbb97f014b
+  archive_status: 1
+  note: 'Official 2025 DUSWIS biography of Justin P. Overbaugh, Deputy Under Secretary of War for Intelligence and Security, hosted on the OUSD(I&S) institutional subdomain ousdi.defense.gov/Portals/73/. Confirms Overbaugh''s Deputy USW(I&S) role: ''Honorable Justin Overbaugh serves as the Deputy Under Secretary of War for Intelligence and Security. In this role, he supports the Under Secretary across all matters related to intelligence, counterintelligence, and security. This includes overseeing defense intelligence and security agencies and shaping policy to advance national security and military operations.'' Pre-government: COO at Strategic Decision Solutions; former U.S. Army Officer (reconnaissance unit Afghanistan / Iraq, HUMINT collection, strategic counterintelligence operations U.S./Europe/Middle East, U.S. Army Recruiting Battalion command, Director of Intelligence for Special Operations Joint Task Force). Military training: Ranger, Airborne, Air Assault, Pathfinder, SERE, DIA Advanced Foreign Counterintelligence Operations. Education: Naval Postgraduate School M.S. Defense Analysis/Irregular Warfare; U.S. Naval War College M.A. National Security and Strategic Studies. Awards include Legion of Merit. Wayback capture 2026-02-11.'
 - url: https://ousdi.defense.gov/Portals/73/2025%20Official%20USDIS%20Bio%20Hansell_Bradley.pdf
   format: pdf
   status: archived
@@ -1531,6 +1555,14 @@
   archive_status: 3
   note: 'DoD Directive 5143.01 — ''Under Secretary of Defense for Intelligence and Security (USD(I&S))'', original publication October 24, 2014, incorporating Change 2 April 6, 2020. The directive is the office''s organizational charter: enumerates USD(I&S) authority, direction, and control over the Defense Intelligence Agency, National Geospatial-Intelligence Agency, National Security Agency/Central Security Service, National Reconnaissance Office, and Defense Counterintelligence and Security Agency. Issued under SecDef authority per 10 U.S.C. §§ 113, 137. USD(I&S) serves as Principal Staff Assistant for Defense Intelligence, Counterintelligence, Security, sensitive activities, and dual-hatted Director of Defense Intelligence to ODNI. Wayback capture from 2026-01-17; esd.whs.mil direct returns 403 (Akamai-blocked per sources-access.md).'
   wayback_date: '2026-01-17'
+- url: https://www.everycrsreport.com/reports/IF10523.html
+  format: html
+  status: archived
+  path: government/crs-if10523-defense-primer-usdis.html
+  archived_date: '2026-04-30'
+  sha256: f63238eb345bed824fbaaf5e7682012b0d87f02e5320a45a436664218a0cc4c5
+  archive_status: 1
+  note: 'Congressional Research Service report IF10523, ''Defense Primer: Under Secretary of Defense for Intelligence and Security''. Comprehensive list of USD(I&S) holders including acting holders: Stephen A. Cambone (March 2003-December 2006); James R. Clapper (April 2007-August 2010); Michael G. Vickers (March 2011-April 2015); Marcel Lettre (December 2015-January 2017); Todd Lowery (acting) (January 2017-June 2017); Kari Bingen (acting) (June 2017-December 2017); Joseph D. Kernan (December 2017-November 2020); Ezra Cohen-Watnick (acting) (November 2020-January 2021); David M. Taylor (acting) (January 2021-June 2021); Ronald S. Moultrie (June 2021-February 2024); Milancy D. Harris (acting) (March 2024-January 2025); Dustin Gard-Weiss (acting) (January 2025-July 2025); Bradley H. Hansell (July 2025-present). Hosted on EveryCRSReport.com (mirror of CRS reports per CRS Reports Act of 2018). Note: report has typo ''Bradley H. Hansell'' — official USDIS bio confirms middle initial ''D''.'
 - url: https://www.executivebiz.com/articles/bluevoyant-names-debora-plunkett-ariel-litvin-to-board-of-directors-ronald-moultrie-to-advisory-board
   format: html
   status: archived

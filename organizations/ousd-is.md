@@ -41,14 +41,26 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 
 | Name | Role | Period | Source |
 |---|---|---|---|
+| [`/people/stephen-cambone`] | Under Secretary of Defense for Intelligence | 2003-03-07 – 2006-12-31 | government/defense-gov-cambone-usdi-bio-200709.html |
 | [`/people/james-clapper`] | Under Secretary of Defense for Intelligence | 2007-04-13 – 2010-08-05 | government/wargov-clapper-sworn-in-photo-20070413.html |
-| [`/people/michael-vickers`] | Under Secretary of Defense for Intelligence | 2011 – 2015 | government/asc-vickers-usdi-confirmation-20110215.pdf |
+| [`/people/michael-vickers`] | Under Secretary of Defense for Intelligence | 2011-03 – 2015-04 | government/crs-if10523-defense-primer-usdis.html |
 | [`/people/marcel-lettre`] | Under Secretary of Defense for Intelligence | 2015 – 2017 | government/asc-lettre-usdi-testimony-20160913.pdf |
+| [`/people/todd-lowery`] | Acting Under Secretary of Defense for Intelligence | 2017-01 – 2017-06 | government/crs-if10523-defense-primer-usdis.html |
+| [`/people/kari-bingen`] | Acting Under Secretary of Defense for Intelligence | 2017-06 – 2017-12 | government/crs-if10523-defense-primer-usdis.html |
 | [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence | 2017-12-01 – 2019-12-19 | government/pl-116-92-ndaa-fy2020.pdf |
 | [`/people/joseph-kernan`] | Under Secretary of Defense for Intelligence and Security | 2019-12-20 – 2020-11-10 | government/defense-gov-personnel-changes-pentagon-20201110.html |
 | [`/people/ezra-cohen-watnick`] | Acting Under Secretary of Defense for Intelligence and Security | 2020-11-10 – 2021-01-20 | government/defense-gov-personnel-changes-pentagon-20201110.html |
+| [`/people/david-m-taylor`] | Acting Under Secretary of Defense for Intelligence and Security | 2021-01-20 – 2021-06-01 | government/crs-if10523-defense-primer-usdis.html |
 | [`/people/ronald-moultrie`] | Under Secretary of Defense for Intelligence and Security | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |
+| [`/people/milancy-harris`] | Acting Under Secretary of Defense for Intelligence and Security | 2024-03 – 2025-01 | government/crs-if10523-defense-primer-usdis.html |
+| [`/people/dustin-gard-weiss`] | Acting Under Secretary of Defense for Intelligence and Security | 2025-01 – 2025-07-25 | government/crs-if10523-defense-primer-usdis.html |
 | [`/people/bradley-hansell`] | Under Secretary of War for Intelligence and Security | 2025-07-25 | government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf |
+
+#### Deputy Leadership
+
+| Name | Role | Period | Source |
+|---|---|---|---|
+| [`/people/justin-overbaugh`] | Deputy Under Secretary of War for Intelligence and Security | 2025 | government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf |
 
 ---
 
@@ -506,14 +518,21 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 ### People
 
 - [`/people/bradley-hansell`]
+- [`/people/david-m-taylor`]
+- [`/people/dustin-gard-weiss`]
 - [`/people/ezra-cohen-watnick`]
 - [`/people/james-clapper`]
 - [`/people/james-holly`]
 - [`/people/joseph-kernan`]
+- [`/people/justin-overbaugh`]
+- [`/people/kari-bingen`]
 - [`/people/kathleen-hicks`]
 - [`/people/marcel-lettre`]
 - [`/people/michael-vickers`]
+- [`/people/milancy-harris`]
 - [`/people/ronald-moultrie`]
+- [`/people/stephen-cambone`]
+- [`/people/todd-lowery`]
 
 ### Organizations
 

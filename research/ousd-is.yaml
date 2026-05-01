@@ -56,6 +56,14 @@ primary_sources:
   format: html
 - path: government/wargov-clapper-sworn-in-photo-20070413.html
   format: html
+- path: government/defense-gov-cambone-usdi-bio-200709.html
+  format: html
+- path: government/defense-gov-cambone-resignation-200612.html
+  format: html
+- path: government/crs-if10523-defense-primer-usdis.html
+  format: html
+- path: government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf
+  format: pdf
 document_intrinsic:
   full_name: Office of the Under Secretary of Defense for Intelligence and Security
   statutory_authority: 10 U.S.C. § 137 (originally enacted by Section 901 of P.L. 107-314, NDAA FY2003; redesignated by Section 1621 of P.L. 116-92, NDAA FY2020)
@@ -400,6 +408,17 @@ quotes:
   context: DoD press release announcing simultaneous resignations
   statement_date: '2020-11-10'
 key_personnel:
+- id: kp0
+  added_date: '2026-04-30'
+  person_path: /people/stephen-cambone
+  role: Under Secretary of Defense for Intelligence
+  period_start: '2003-03-07'
+  period_end: '2006-12-31'
+  leadership_class: director
+  source:
+    path: government/defense-gov-cambone-usdi-bio-200709.html
+    location: defenselink.mil bio of Dr. Stephen A. Cambone, last updated January 13, 2006
+  note: First Under Secretary of Defense for Intelligence. Per the defenselink.mil biography, "Stephen A. Cambone was confirmed by the U.S. Senate as the Under Secretary of Defense for Intelligence on March 7th, 2003." Per the December 1, 2006 DoD news release No. 1221-06, Cambone will resign from the Department on December 31, 2006. Prior roles include Director, Program Analysis and Evaluation in the Office of the Secretary of Defense (July 2002 - March 2003); Principal Deputy Under Secretary of Defense for Policy (July 2001 - July 2002).
 - id: kp1
   added_date: '2026-04-30'
   person_path: /people/james-clapper
@@ -415,13 +434,13 @@ key_personnel:
   added_date: '2026-04-30'
   person_path: /people/michael-vickers
   role: Under Secretary of Defense for Intelligence
-  period_start: '2011'
-  period_end: '2015'
+  period_start: '2011-03'
+  period_end: '2015-04'
   leadership_class: director
   source:
-    path: government/asc-vickers-usdi-confirmation-20110215.pdf
-    location: 'Advance Policy Questions cover, p. 1'
-  note: Vickers responded to Senate Armed Services Committee Advance Policy Questions on February 15, 2011 as USD(I) nominee. Earlier roles included Assistant Secretary of Defense for Special Operations and Low Intensity Conflict.
+    path: government/crs-if10523-defense-primer-usdis.html
+    location: CRS report IF10523 successor list
+  note: Per CRS report IF10523, Vickers held the USD(I) office March 2011 - April 2015. Vickers responded to Senate Armed Services Committee Advance Policy Questions on February 15, 2011 as USD(I) nominee. Earlier roles included Assistant Secretary of Defense for Special Operations and Low Intensity Conflict.
 - id: kp3
   added_date: '2026-04-30'
   person_path: /people/marcel-lettre
@@ -433,6 +452,28 @@ key_personnel:
     path: government/asc-lettre-usdi-testimony-20160913.pdf
     location: 'Statement for the Record header, p. 1'
   note: Lettre attested as Under Secretary of Defense for Intelligence on September 13, 2016 in his Senate Armed Services Committee Statement for the Record on encryption policy.
+- id: kp3a
+  added_date: '2026-04-30'
+  person_path: /people/todd-lowery
+  role: Acting Under Secretary of Defense for Intelligence
+  period_start: '2017-01'
+  period_end: '2017-06'
+  leadership_class: director
+  source:
+    path: government/crs-if10523-defense-primer-usdis.html
+    location: CRS report IF10523 successor list
+  note: Per CRS report IF10523, Todd Lowery held the Acting USD(I) role January 2017 - June 2017, bridging Lettre's January 2017 departure to Bingen's June 2017 acting role.
+- id: kp3b
+  added_date: '2026-04-30'
+  person_path: /people/kari-bingen
+  role: Acting Under Secretary of Defense for Intelligence
+  period_start: '2017-06'
+  period_end: '2017-12'
+  leadership_class: director
+  source:
+    path: government/crs-if10523-defense-primer-usdis.html
+    location: CRS report IF10523 successor list
+  note: Per CRS report IF10523, Kari Bingen held the Acting USD(I) role June 2017 - December 2017, bridging Lowery's June 2017 acting role to Kernan's December 2017 confirmation.
 - id: kp4
   added_date: '2026-04-30'
   person_path: /people/joseph-kernan
@@ -466,6 +507,17 @@ key_personnel:
     path: government/defense-gov-personnel-changes-pentagon-20201110.html
     location: 'DoD release November 10 2020'
   note: Named the new Acting Under Secretary of Defense for Intelligence and Security on November 10, 2020 effective the date Kernan submitted his letter of resignation. Cohen-Watnick was concurrently the Acting Assistant Secretary of Defense for Special Operation and Low-Intensity Conflict.
+- id: kp4c
+  added_date: '2026-04-30'
+  person_path: /people/david-m-taylor
+  role: Acting Under Secretary of Defense for Intelligence and Security
+  period_start: '2021-01-20'
+  period_end: '2021-06-01'
+  leadership_class: director
+  source:
+    path: government/crs-if10523-defense-primer-usdis.html
+    location: CRS report IF10523 successor list
+  note: Per CRS report IF10523, David M. Taylor held the Acting USD(I&S) role January 2021 - June 2021, bridging Cohen-Watnick's January 2021 acting departure to Moultrie's June 2021 confirmation.
 - id: kp5
   added_date: '2026-04-30'
   person_path: /people/ronald-moultrie
@@ -477,6 +529,28 @@ key_personnel:
     path: government/wargov-moultrie-biography.html
     location: 'Ronald S. Moultrie biography on war.gov'
   note: Moultrie was sworn in June 1, 2021 and retired in February 2024. He served as the principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters and exercised authority, direction, and control on behalf of the Secretary of Defense over all intelligence and security organizations within the Department of Defense.
+- id: kp5a
+  added_date: '2026-04-30'
+  person_path: /people/milancy-harris
+  role: Acting Under Secretary of Defense for Intelligence and Security
+  period_start: '2024-03'
+  period_end: '2025-01'
+  leadership_class: director
+  source:
+    path: government/crs-if10523-defense-primer-usdis.html
+    location: CRS report IF10523 successor list
+  note: Per CRS report IF10523, Milancy D. Harris held the Acting USD(I&S) role March 2024 - January 2025, bridging Moultrie's February 2024 retirement to Gard-Weiss's January 2025 acting role.
+- id: kp5b
+  added_date: '2026-04-30'
+  person_path: /people/dustin-gard-weiss
+  role: Acting Under Secretary of Defense for Intelligence and Security
+  period_start: '2025-01'
+  period_end: '2025-07-25'
+  leadership_class: director
+  source:
+    path: government/crs-if10523-defense-primer-usdis.html
+    location: CRS report IF10523 successor list
+  note: Per CRS report IF10523, Dustin Gard-Weiss held the Acting USD(I&S) role January 2025 - July 2025, bridging Harris's acting tenure to Hansell's July 25, 2025 confirmation.
 - id: kp6
   added_date: '2026-04-30'
   person_path: /people/bradley-hansell
@@ -487,6 +561,16 @@ key_personnel:
     path: government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf
     location: 'p. 1, ¶1 of biographical text'
   note: Per the 2025 official biography hosted on ousdi.defense.gov, Mr. Hansell was sworn into the Under Secretary position on July 25, 2025. He serves as the principal advisor to the Secretary of War on intelligence, counterintelligence, and security matters and exercises authority, direction, and control over all intelligence and security organizations in the Department of War, including the nine DoW components that are members of the Intelligence Community. He also serves as Director of Defense Intelligence and the principal advisor to the Director of National Intelligence on Defense Intelligence matters.
+- id: kp7
+  added_date: '2026-04-30'
+  person_path: /people/justin-overbaugh
+  role: Deputy Under Secretary of War for Intelligence and Security
+  period_start: '2025'
+  leadership_class: deputy
+  source:
+    path: government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf
+    location: 'p. 1, ¶1 of biographical text'
+  note: Per the 2025 official biography hosted on ousdi.defense.gov, Justin Overbaugh serves as the Deputy Under Secretary of War for Intelligence and Security. In this role, he supports the Under Secretary across all matters related to intelligence, counterintelligence, and security, overseeing defense intelligence and security agencies and shaping policy to advance national security and military operations. Former U.S. Army Officer (reconnaissance unit Afghanistan and Iraq, HUMINT collection, strategic counterintelligence operations).
 org_relationships:
 - id: or1
   added_date: '2026-04-30'
@@ -846,7 +930,49 @@ entities_referenced:
   entity_type: person
   name: Ezra Cohen-Watnick
   wrap_path: /people/ezra-cohen-watnick
-  context_summary: Acting Under Secretary of Defense for Intelligence and Security from November 10, 2020 (Kernan resignation) through Moultrie's June 1, 2021 confirmation.
+  context_summary: Acting Under Secretary of Defense for Intelligence and Security from November 10, 2020 (Kernan resignation) through January 20, 2021 (administration transition).
+- id: e20
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Stephen A. Cambone
+  wrap_path: /people/stephen-cambone
+  context_summary: First Under Secretary of Defense for Intelligence; Senate-confirmed March 7, 2003; resigned December 31, 2006.
+- id: e21
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Todd Lowery
+  wrap_path: /people/todd-lowery
+  context_summary: Acting Under Secretary of Defense for Intelligence January 2017 - June 2017 per CRS report IF10523.
+- id: e22
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Kari Bingen
+  wrap_path: /people/kari-bingen
+  context_summary: Acting Under Secretary of Defense for Intelligence June 2017 - December 2017 per CRS report IF10523.
+- id: e23
+  added_date: '2026-04-30'
+  entity_type: person
+  name: David M. Taylor
+  wrap_path: /people/david-m-taylor
+  context_summary: Acting Under Secretary of Defense for Intelligence and Security January 2021 - June 2021 per CRS report IF10523.
+- id: e24
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Milancy D. Harris
+  wrap_path: /people/milancy-harris
+  context_summary: Acting Under Secretary of Defense for Intelligence and Security March 2024 - January 2025 per CRS report IF10523.
+- id: e25
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Dustin Gard-Weiss
+  wrap_path: /people/dustin-gard-weiss
+  context_summary: Acting Under Secretary of Defense for Intelligence and Security January 2025 - July 2025 per CRS report IF10523.
+- id: e26
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Justin P. Overbaugh
+  wrap_path: /people/justin-overbaugh
+  context_summary: Deputy Under Secretary of War for Intelligence and Security per the 2025 official DUSWIS biography on ousdi.defense.gov.
 naming_quirks:
 - id: nq1
   added_date: '2026-04-30'
