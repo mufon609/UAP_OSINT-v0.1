@@ -38,6 +38,10 @@ AARO is established under the Under Secretary of Defense for Intelligence and Se
 
 AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP recovery and reverse-engineering program brought to AARO's attention by interviewees who claimed it was a sensitive DHS compartment to cover up the retrieval and exploitation of "non-human biologics." Per the report, KONA BLUE traces its origins to the DIA-managed AAWSAP/AATIP program (cancelled by DIA in 2012); after cancellation, supporters proposed to DHS that they create and fund a new version under a Special Access Program covering UAP investigations, paranormal research and reverse-engineering of "any recovered off-world spacecraft that they hoped to acquire." A Prospective Special Access Program (PSAP) was officially requested but eventually rejected by DHS leadership for lacking merit. The report's finding: "no extraterrestrial craft or bodies were ever collected" and the SAP "was never approved or stood up, and no data or material was transferred to DHS."
 
+Historical Record Report Volume I states "AARO will publish Volume II in accordance with the date established in Section 6802 of the National Defense Authorization Act for Fiscal Year 2023" — Section 6802(j) of the Intelligence Authorization Act for Fiscal Year 2023 set the deadline at "Not later than 540 days after the date of the enactment". As of February 25, 2026 (per archived DefenseScoop coverage), AARO has not published Volume II.
+
+AARO's FY 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena, dated November 14, 2024, documents 757 UAP reports received during the May 1, 2023 – June 1, 2024 reporting period (485 occurred during the reporting period; 272 occurred outside of the reporting period between 2021 and 2022 and were not included in previous annual UAP reports). 49 cases were resolved during the reporting period (all to prosaic objects); 243 additional cases were recommended for closure pending peer review; 444 cases lacked sufficient data and were placed in the Active Archive. AARO determined 21 cases merit further analysis by its IC and S&T partners "based on reported anomalous characteristics and/or behaviors." Kosloski's November 19, 2024 Statement for the Record reported AARO has "over 1,600 UAP reports in its holdings from across the U.S. government" to date. The Annual Report documents the GREMLIN prototype sensor system, developed by Georgia Tech Research Institute (GTRI), for detecting, tracking, and characterizing UAP — first test event March 2024 with a 90-day pattern-of-life collection scheduled at a site of national security.
+
 ---
 
 ## Key Personnel
@@ -295,6 +299,36 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 
 ---
 
+### HRR Vol I — statutory commitment to publish Vol II per Section 6802 of NDAA FY2023 (codified in IAA FY 2023 with a 540-day deadline from December 23 2022 enactment, i.e., approximately mid-June 2024). As of February 25, 2026 DefenseScoop coverage attests Vol II remains unpublished.
+
+> AARO will publish Volume II in accordance with the date established in Section 6802 of the National Defense Authorization Act for Fiscal Year 2023 (FY23); Volume II will provide analysis of information acquired by AARO after the date of the publication of Volume I.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO Historical Record Report Volume I (March 8, 2024), Executive Summary statement on Volume II, 2024-03-08 |
+| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Location | HRR Vol I, p. 7, Executive Summary |
+
+---
+
+### HRR Vol I quotes Section 6802(j) of NDAA FY 2023 verbatim — 540-day statutory deadline for the Historical Record Report. The IAA FY 2023 was enacted as part of P.L. 117-263 (NDAA FY2023) on December 23, 2022, making the Section 6802(j) deadline approximately mid-June 2024.
+
+> This HR2 is provided by DoD in response to a requirement established in the National
+> Defense Authorization Act (NDAA) for FY 2023, Section 6802(j), which states: “Not later than
+> 540 days after the date of the enactment of the Intelligence Authorization Act for Fiscal Year
+> 2023, the Director of the Office shall submit to the congressional defense committees, the
+> congressional intelligence committees and the congressional leadership a written report detailing
+> the historical record of the United States Government relating to unidentified anomalous
+> phenomena.”
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO Historical Record Report Volume I (March 8, 2024), Scope section, 2024-03-08 |
+| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Location | HRR Vol I, Scope section |
+
+---
+
 ### Kosloski director appointment — NSA detail
 
 > Today, Dr. Jon T. Kosloski arrived on detail from the National Security Agency to be appointed as the director of the All-domain Anomaly Resolution Office.
@@ -316,6 +350,66 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 | Attributed to | DoD announcement of Kosloski appointment, August 26, 2024, 2024-08-26 |
 | Source | [archived source](../sources/government/defense-gov-kosloski-appointment-20240826.html) |
 | Location | article body ¶3 |
+
+---
+
+### AARO FY24 Annual Report — caseload during the reporting period: 757 UAP reports total (485 within-period, 272 from prior 2021-2022 unreported periods)
+
+> The All-domain Anomaly Resolution Office (AARO) received 757 UAP reports during this period; 485 of these reports featured UAP incidents that occurred during the reporting period. The remaining 272 reports featured UAP incidents that occurred between 2021 and 2022 but were not reported to AARO until this reporting period and consequently were not included in previous annual UAP reports.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO Fiscal Year 2024 Consolidated Annual Report on UAP, dated November 14, 2024, Information Cut Off: June 1, 2024, 2024-11-14 |
+| Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
+| Location | p. 2, Executive Summary |
+
+---
+
+### AARO FY24 finding — 21 cases flagged for further analysis based on reported anomalous characteristics and/or behaviors
+
+> AARO determined 21 cases merit further analysis by its IC and science and technology (S&T) partners.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO FY24 Consolidated Annual Report on UAP, November 14, 2024, 2024-11-14 |
+| Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
+| Location | p. 5, Overview of Reports |
+
+---
+
+### AARO FY24 — characterization of the 21 cases that merit further analysis based on reported anomalous characteristics and/or behaviors
+
+> AARO is working closely with its IC and S&T partners to understand and attribute the 21 cases received this reporting period that merit further analysis based on reported anomalous characteristics and/or behaviors.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO FY24 Consolidated Annual Report on UAP, November 14, 2024, 2024-11-14 |
+| Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
+| Location | p. 5, Overview of Reports |
+
+---
+
+### AARO FY24 — GREMLIN prototype sensor system disclosure: detecting / tracking / characterizing UAP, March 2024 test event, 90-day pattern-of-life collection scheduled at a site of national security
+
+> AARO has begun collections using a prototype sensor system, GREMLIN, for detecting, tracking, and characterizing UAP. GREMLIN demonstrated functionality and successfully collected data during a test event in March of 2024. The next step for GREMLIN is a 90-day pattern of life collection at a site of national security.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO FY24 Consolidated Annual Report on UAP, November 14, 2024, 2024-11-14 |
+| Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
+| Location | p. 13, Sensor Architecture |
+
+---
+
+### AARO FY24 — Georgia Tech Research Institute (GTRI) named as the GREMLIN sensor architecture developer; deployment scheduled 1Q FY 2025
+
+> Georgia Tech Research Institute (GTRI) developed the GREMLIN sensor architecture (described in additional detail on page 13) which will be deployed in 1Q FY 2025 to support pattern-of-life analysis.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO FY24 Consolidated Annual Report on UAP, November 14, 2024, 2024-11-14 |
+| Source | [archived source](../sources/government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf) |
+| Location | p. 5, Notable AARO Partnerships |
 
 ---
 
@@ -388,6 +482,18 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 | Attributed to | AARO Director Kosloski Nov 19 2024 SASC testimony, framing remarks following the Mt. Etna case-resolution, 2024-11-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf) |
 | Location | p. 16, lines 9-11 |
+
+---
+
+### Kosloski Nov 19 2024 SASC Statement for the Record — AARO's cumulative holdings exceed 1,600 UAP reports across the U.S. government
+
+> To date, AARO has over 1,600 UAP reports in its holdings from across the U.S. government.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024, 2024-11-19 |
+| Source | [archived source](../sources/government/aaro-kosloski-sfr-sasc-20241119.pdf) |
+| Location | p. 1, ¶5 of statement body |
 
 ---
 
@@ -473,8 +579,10 @@ AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP re
 | 2023-11-20 | Statement by Deputy Secretary of Defense Kathleen Hicks on the Upcoming Departure of AARO Director Dr. Sean Kirkpatrick | leadership-transition | government/defense-gov-kirkpatrick-departure-20231120.html |  |
 | 2023-12 | Dr. Kirkpatrick will retire from federal service in December | leadership-transition | government/defense-gov-kirkpatrick-departure-20231120.html |  |
 | 2024-03-08 | AARO Historical Record Report Volume I released | other | government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf | [`/documents/aaro-historical-record-report-vol-i`] |
+| 2024-06-15 | Approximate Section 6802(j) statutory deadline for the Historical Record Report (540 days after enactment of the Intelligence Authorization Act for Fiscal Year 2023, P.L. 117-263, December 23, 2022). HRR Vol I (March 8, 2024) was published before the deadline; HRR Vol II remained unpublished as of February 25, 2026. | statutory-deadline | government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf |  |
 | 2024-08-23 | AARO follow-on support services contract HQ003424C0096 awarded to Sancorp Consulting (\$3,471,829.40, period of performance through January 31, 2026) — continuing the original AARO support PWS scope. | contract | government/usaspending-hq003424c0096.txt | [`/organizations/sancorp-consulting`] |
 | 2024-08-26 | Dr. Jon T. Kosloski appointed as the director of the All-domain Anomaly Resolution Office on detail from the National Security Agency | leadership-transition | government/defense-gov-kosloski-appointment-20240826.html |  |
+| 2024-11-14 | AARO publishes Fiscal Year 2024 Consolidated Annual Report on UAP. 757 UAP reports for the May 1 2023 – June 1 2024 period; 49 case resolutions, 21 cases meriting further analysis based on anomalous characteristics. GREMLIN prototype sensor system (Georgia Tech Research Institute) disclosed. | report-publication | government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf |  |
 | 2024-11-19 | Kosloski's first hearing as AARO Director — Senate Armed Services Subcommittee on Emerging Threats and Capabilities. Three case resolutions presented — Puerto Rico 2013 (balloons or sky lanterns over an airport), GOFAST 2017 (parallax / object closer to 13,000 feet), Mt. Etna 2018 (object 170 meters from the erupting plume). | testimony | government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf |  |
 | 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO''s parent department naming. | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 | 2026-02-25 | DefenseScoop article (Brandi Vincent) reports Pentagon spokesperson Sue Gough caseload statement — AARO examining over 2,000 UAP cases with ~1,000 retained in the Active Archive. Article notes AARO has not published a 2025 annual report or second volume. Defense Secretary Hegseth states "full compliance" with forthcoming Trump UAP-disclosure executive order. | other | news/defensescoop-aaro-hegseth-disclosure-20260225.html |  |

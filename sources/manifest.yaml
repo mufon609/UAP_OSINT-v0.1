@@ -645,6 +645,14 @@
   sha256: 8c23519c62a5717427c2d09d5ade165284421f2e5facad76a565a94774067868
   archive_status: 3
   wayback_date: '2026-03-27'
+- url: https://media.defense.gov/2024/Nov/14/2003583603/-1/-1/0/FY24-CONSOLIDATED-ANNUAL-REPORT-ON-UAP-508.PDF
+  format: pdf
+  status: archived
+  path: government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf
+  archived_date: '2026-05-01'
+  sha256: 327c1dcb645a1a289a43886ec0b1d90469d87382df49520c600e0f9ddf4b4ab8
+  archive_status: 1
+  note: 'AARO Fiscal Year 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena, dated November 14, 2024 (Information Cut Off: June 1, 2024). Released by OSD/AARO. Statutory annual report covering the period May 1, 2023 to June 1, 2024. Documents 757 UAP reports during the reporting period (485 within-period, 272 from prior unreported 2021-2022); 49 case resolutions all to prosaic objects (balloons, birds, UAS); 243 additional cases recommended for closure pending peer review; 21 cases flagged as meriting further analysis based on reported anomalous characteristics and/or behaviors; 444 cases lacking sufficient data placed in Active Archive. Of 757 reports, 708 in air domain, 49 in space domain, none in maritime or transmedium. 392 reports came from the FAA. AARO 1,600+ cumulative holdings noted in companion Kosloski SFR. Documents the GREMLIN sensor architecture (Georgia Tech Research Institute) deployed for pattern-of-life analysis at a national-security site. Wayback capture from publication day 2024-11-14.'
 - url: https://media.defense.gov/2026/Feb/04/2003870671/-1/-1/1/DODIG-2026-047_REDACTED%20SECURE.PDF
   format: pdf
   status: archived
@@ -1161,6 +1169,14 @@
   archive_status: 3
   note: Sean Kirkpatrick's bio page on WestExec Advisors website — post-government affiliation as Senior Advisor following his December 2023 retirement from federal service
   wayback_date: '2024-08-01'
+- url: https://www.aaro.mil/Portals/136/PDFs/Dr_Jon_Kosloski_Statement_for_the_Record_SASC_Open_Hearing_Nov2024.pdf
+  format: pdf
+  status: archived
+  path: government/aaro-kosloski-sfr-sasc-20241119.pdf
+  archived_date: '2026-05-01'
+  sha256: 8b66a6125103a12ff686d85ea2a69a883a717217fa6a15e0e7913c6f46dd6865
+  archive_status: 1
+  note: AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024 — companion to the SASC stenographic transcript already archived. Hosted on aaro.mil/Portals/136. Documents AARO's >1,600 cumulative UAP holdings, framework for rigorous analysis, three flagship case resolutions (Puerto Rico, GOFAST, Mt. Etna) presented in conjunction with slide-deck visuals. Wayback capture from 2024-11-20 (one day after the hearing).
 - url: https://www.aaro.mil/Portals/136/PDFs/Phillips_Timothy_Bio-DEC%202023-(Acting_Director_Ver)_508.pdf
   format: pdf
   status: archived
