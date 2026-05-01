@@ -33,6 +33,9 @@ description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`])
 
   Kosloski''s November 19, 2024 Statement for the Record reported AARO has "over 1,600 UAP reports in its holdings from across the U.S. government" to date and stated, "to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology." The FY 2024 Annual Report documents the GREMLIN prototype sensor system, developed by Georgia Tech Research Institute ([`/organizations/gtri`]), for detecting, tracking, and characterizing UAP — first test event March 2024 with a 90-day pattern-of-life collection scheduled at a site of national security.
 
+
+  At the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth", witnesses submitted written testimony characterizing AARO''s analytic and historical work as flawed. Michael Shellenberger ([`/people/michael-shellenberger`]) wrote that "critics say that AARO''s 63-page history of the US government''s investigation into UAPs since the end of World War II was riddled with factual errors and poor referencing, including to Wikipedia." Shellenberger also wrote that Christopher Mellon ([`/people/christopher-mellon`]) (former Deputy Assistant Secretary of Defense) called the historical records report "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service." Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Rear Admiral) wrote that "AARO needs to explain the inaccuracies and incompleteness31 of AARO''s first historical records report32 so that the Congress can understand: (a) if AARO is failing to meet its Congressional mandate, and (b) under what authority AARO has conducted this and other examples of disinformation." Gallaudet also wrote that during a meeting with "the then acting AARO director and his senior staff" he "was the object of an hours-long influence operation" attempting to disparage well-known UAP reports including the USS Nimitz tic-tac encounter.
+
   '
 primary_sources:
 - path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
@@ -109,6 +112,12 @@ primary_sources:
   format: pdf
 - path: government/aaro-kosloski-sfr-sasc-20241119.pdf
   format: pdf
+- path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+  format: pdf
+- path: government/oversight-house-gov-gallaudet-written-testimony-20241113.pdf
+  format: pdf
+- path: government/oversight-house-gov-uap-hearing-page-20241113.html
+  format: html
 document_intrinsic:
   full_name: All-domain Anomaly Resolution Office
   statutory_authority: 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022)
@@ -530,6 +539,59 @@ quotes:
   significance: 'HRR Vol I quotes Section 6802(j) of NDAA FY 2023 verbatim — 540-day statutory deadline for the Historical Record Report. The IAA FY 2023 was enacted as part of P.L. 117-263 (NDAA FY2023) on December 23, 2022, making the Section 6802(j) deadline approximately mid-June 2024.'
   context: 'AARO Historical Record Report Volume I (March 8, 2024), Scope section'
   statement_date: '2024-03-08'
+- id: q39
+  added_date: '2026-05-01'
+  text: |-
+    But critics say that AARO’s 63-page history of the US government’s
+    investigation into UAPs since the end of World War II was riddled with factual errors
+    and poor referencing, including to Wikipedia.
+  source:
+    path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+    location: 'p. 3 of Shellenberger written testimony'
+  significance: 'Shellenberger written testimony — disclosure-side critique characterization of HRR Vol I as "riddled with factual errors and poor referencing, including to Wikipedia"; representative public-record critique posture opposing AARO''s historical analysis.'
+  context: 'Michael Shellenberger written testimony for the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth"'
+  statement_date: '2024-11-13'
+- id: q40
+  added_date: '2026-05-01'
+  text: |-
+    Christopher Mellon, a former Deputy Assistant Secretary of Defense, wrote a
+    lengthy rebuttal, concluding, “this is the most error-ridden and unsatisfactory
+    government report I can recall reading during or after decades of government
+    service.”
+  source:
+    path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
+    location: 'p. 3 of Shellenberger written testimony'
+  significance: 'Shellenberger written testimony — Christopher Mellon (former DASD(I)) rebuttal of HRR Vol I, "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service"; substantive disclosure-side critique attributed to a former DoD official.'
+  context: Shellenberger written testimony, November 13 2024 House Oversight hearing
+  statement_date: '2024-11-13'
+- id: q41
+  added_date: '2026-05-01'
+  text: |-
+    AARO needs to explain the inaccuracies and incompleteness31 of AARO’s first
+    historical records report32 so that the Congress can understand: (a) if AARO is failing to meet its
+    Congressional mandate, and (b) under what authority AARO has conducted this and other
+    examples of disinformation.
+  source:
+    path: government/oversight-house-gov-gallaudet-written-testimony-20241113.pdf
+    location: 'p. 9 of Gallaudet written testimony, recommended-action item 1'
+  significance: 'Gallaudet written testimony — calls for AARO to explain "inaccuracies and incompleteness" of HRR Vol I and questions whether AARO is failing its Congressional mandate or conducting "disinformation"; recommended Congressional action.'
+  context: 'Tim Gallaudet (former NOAA Administrator and Navy Rear Admiral) written testimony for the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing'
+  statement_date: '2024-11-13'
+- id: q42
+  added_date: '2026-05-01'
+  text: |-
+    I say this as a first-hand witness to such disinformation. During a meeting with the then
+    acting AARO director and his senior staff earlier this year, I was the object of an hours-long
+    influence operation which attempted to convince me of the validity of the severely flawed
+    historical records report, question well known UAP reports such as the U.S.S. Nimitz “tic tac”
+    encounter, and disparage several former government authorities who have published and
+    spoken publicly about their knowledge of U.S. government UAP programs.
+  source:
+    path: government/oversight-house-gov-gallaudet-written-testimony-20241113.pdf
+    location: 'p. 9 of Gallaudet written testimony'
+  significance: 'Gallaudet first-person account of an "hours-long influence operation" by then-acting AARO director and senior staff intended to convince him of the validity of HRR Vol I, question well-known UAP reports including the USS Nimitz tic-tac encounter, and disparage former government authorities. Most concrete public-record disclosure-side critique attestation against AARO institutional conduct.'
+  context: Gallaudet written testimony, November 13 2024 House Oversight hearing
+  statement_date: '2024-11-13'
 key_personnel:
 - id: kp1
   added_date: '2026-04-20'
@@ -738,6 +800,14 @@ timeline:
   source:
     path: government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf
     location: 'p. 1, cover and Executive Summary'
+- id: t11c
+  added_date: '2026-05-01'
+  date: '2024-11-13'
+  event: 'House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth". Disclosure-side written testimony submitted by Shellenberger, Gallaudet, Gold, and Elizondo characterizes AARO''s historical and analytic work critically — Gallaudet describes a first-person "hours-long influence operation" by the then-acting AARO director and senior staff.'
+  category: hearing
+  source:
+    path: government/oversight-house-gov-uap-hearing-page-20241113.html
+    location: oversight.house.gov hearing record page
 - id: t12a
   added_date: '2026-05-01'
   date: '2024-11-19'
@@ -862,6 +932,24 @@ entities_referenced:
   name: Georgia Tech Research Institute
   wrap_path: /organizations/gtri
   context_summary: 'Georgia Tech Research Institute (GTRI) — developer of the GREMLIN sensor architecture per AARO FY24 Consolidated Annual Report on UAP. GREMLIN deployed in 1Q FY 2025 to support pattern-of-life analysis at a site of national security.'
+- id: e17
+  added_date: '2026-05-01'
+  entity_type: person
+  name: Michael Shellenberger
+  wrap_path: /people/michael-shellenberger
+  context_summary: 'Public/Substack journalist and witness at the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing on UAP. Submitted 214-page written testimony critical of AARO''s analytic tradecraft and HRR Vol I.'
+- id: e18
+  added_date: '2026-05-01'
+  entity_type: person
+  name: Christopher Mellon
+  wrap_path: /people/christopher-mellon
+  context_summary: 'Former Deputy Assistant Secretary of Defense; quoted via Shellenberger''s November 13, 2024 written testimony characterizing AARO HRR Vol I as "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service".'
+- id: e19
+  added_date: '2026-05-01'
+  entity_type: person
+  name: Tim Gallaudet
+  wrap_path: /people/tim-gallaudet
+  context_summary: 'Former NOAA Administrator and Navy Rear Admiral; witness at the November 13, 2024 House Oversight hearing. Written testimony describes a first-person "hours-long influence operation" by the then-acting AARO director and senior staff.'
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'

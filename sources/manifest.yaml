@@ -766,6 +766,14 @@
   sha256: ad5bdfa79103e10b5d1d2954c708528165ef6227c0c8e73e4f36b1cb26fba35e
   archive_status: 1
   note: 'Official 2025 USDIS biography of Bradley D. Hansell, hosted on the OUSD(I&S) institutional subdomain ousdi.defense.gov/Portals/73/. Confirms: ''Mr. Hansell was sworn into the Under Secretary position on July 25, 2025.'' Title: ''Under Secretary of War for Intelligence & Security (USW(I&S))''. Substantive bio covering: principal advisor role to Secretary of War on intelligence/counterintelligence/security; authority/direction/control over nine DoW components in the Intelligence Community; Director of Defense Intelligence dual-hat; pre-government career (private equity Aerospace/Defense/Government Services; Boston Consulting Group; first-Trump-administration NSC Senior Director); retired US Army Special Forces officer (commanded SF teams in South America and Afghanistan); prior US Navy Surface Warfare Officer (Middle East / Asia-Pacific); Villanova BA + UVA Darden MBA (Pat Tillman scholar); Bronze Star, Purple Heart, Meritorious Service Medal awards. Wayback capture 2026-02-11. ousdi.defense.gov is the OUSD(I&S) institutional subdomain (resolves the Task #13 search question — there IS a dedicated subdomain).'
+- url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-exposing-the-truth/
+  format: html
+  status: archived
+  path: government/oversight-house-gov-uap-hearing-page-20241113.html
+  archived_date: '2026-05-01'
+  sha256: dea45ef407ed33f41e28b2e84906d4ded276d5f6b838f728cc444105abf6d8d3
+  archive_status: 1
+  note: 'House Oversight + Cybersecurity/IT subcommittee hearing record page for ''Unidentified Anomalous Phenomena: Exposing the Truth'', November 13, 2024 11:30 am, 2154 Rayburn House Office Building. Joint hearing of Cybersecurity, Information Technology, and Government Innovation Subcommittee + National Security, the Border, and Foreign Affairs Subcommittee. Wayback capture 2024-11-08.'
 - url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/
   format: html
   status: archived
@@ -790,6 +798,14 @@
   sha256: 7bf2c20d6c47ab3bf00c718edd0baaff3c925a72cead21aa5a62b9448520c64a
   archive_status: 3
   wayback_date: '2026-04-09'
+- url: https://oversight.house.gov/wp-content/uploads/2024/11/Gallaudet-Tim-Testimony-FINAL.pdf
+  format: pdf
+  status: archived
+  path: government/oversight-house-gov-gallaudet-written-testimony-20241113.pdf
+  archived_date: '2026-05-01'
+  sha256: 89127458a642a04a7bcfba2aad34b71f4b898bf064522c007d72bea78b351bb9
+  archive_status: 1
+  note: 'Tim Gallaudet (former NOAA Administrator and Navy Rear Admiral) written testimony for the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing ''Unidentified Anomalous Phenomena: Exposing the Truth''. Substantive disclosure-side critique of AARO. Notable claims: AARO needs to explain HRR Vol I ''inaccuracies and incompleteness'' so Congress can understand if AARO is failing its Congressional mandate or conducting ''disinformation''; first-person account of an ''hours-long influence operation'' by then-acting AARO director and senior staff that attempted to disparage well-known UAP reports including the USS Nimitz tic-tac encounter.'
 - url: https://patents.google.com/patent/US20200357080A1/en
   format: html
   status: archived
