@@ -32,7 +32,7 @@ The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 b
 
 Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director (Acting Director) in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024. The Hicks establishment memorandum also renamed the predecessor AOIMEXEC to the AARO Executive Council ([`/organizations/aaroexec`]) — its mission, per the memorandum, is "to provide oversight and direction to the AARO."
 
-On November 19, 2024 Kosloski appeared before the Senate Armed Services Subcommittee on Emerging Threats and Capabilities — his first hearing as AARO Director — presenting three case resolutions: the 2013 Puerto Rico transmedium case (assessed as a pair of balloons or sky lanterns floating at 7 knots over an airport, descending to 200 meters), the 2017 GOFAST video (assessed as an object closer to 13,000 feet rather than near the water, with apparent fast movement explained by parallax), and a 2018 Mt. Etna UAV case (assessed as an object 170 meters from the erupting plume rather than flying through it).
+On November 19, 2024 Kosloski appeared before the Senate Armed Services Subcommittee on Emerging Threats and Capabilities — his first hearing as AARO Director — presenting three case resolutions: the 2013 Puerto Rico transmedium case (assessed as a pair of balloons or sky lanterns floating at 7 knots over an airport, descending to 200 meters), the 2017 GOFAST video (assessed as an object closer to 13,000 feet rather than near the water, with apparent fast movement explained by parallax), and a 2018 Mt. Etna UAV case (a balloon drifting with the wind, with the slide deck stating "approximately 170 kilometers from the volcano" and the stenographic transcript of Kosloski's oral testimony stating "170 meters away from the plume"). All three case resolutions were presented at high or moderate confidence with the support of IC and S&T partners.
 
 AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) provides AARO Support Services under prime contracts HQ003422C0094 (signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The contract Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the contract Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. The FY 2026 Office of the Secretary of Defense Budget Estimates list the program as Advanced Intelligence Capabilities (AIC); the public-facing aaro.mil website continues to use the AARO name.
 
@@ -44,9 +44,15 @@ AARO's FY 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena, d
 
 Kosloski's November 19, 2024 Statement for the Record reported AARO has "over 1,600 UAP reports in its holdings from across the U.S. government" to date and stated, "to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology." The FY 2024 Annual Report documents the GREMLIN prototype sensor system, developed by Georgia Tech Research Institute ([`/organizations/gtri`]), for detecting, tracking, and characterizing UAP — first test event March 2024 with a 90-day pattern-of-life collection scheduled at a site of national security.
 
-At the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth", witnesses submitted written testimony characterizing AARO's analytic and historical work as flawed. Michael Shellenberger ([`/people/michael-shellenberger`]) wrote that "critics say that AARO's 63-page history of the US government's investigation into UAPs since the end of World War II was riddled with factual errors and poor referencing, including to Wikipedia." Shellenberger also wrote that Christopher Mellon ([`/people/christopher-mellon`]) (former Deputy Assistant Secretary of Defense) called the historical records report "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service."
+At the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth", Subcommittee Chairwoman Nancy Mace ([`/people/nancy-mace`]) (R-S.C.) and Subcommittee Chairman Glenn Grothman ([`/people/glenn-grothman`]) (R-Wis.) delivered opening statements at the joint subcommittee hearing. Mace stated, "We will also hear from the witnesses today allegations of UAP-related misinformation and disinformation by government officials of which they are personally aware and directly experienced." Witnesses submitted written testimony characterizing AARO's analytic and historical work as flawed. Michael Shellenberger ([`/people/michael-shellenberger`]) wrote that "critics say that AARO's 63-page history of the US government's investigation into UAPs since the end of World War II was riddled with factual errors and poor referencing, including to Wikipedia." Shellenberger also wrote that Christopher Mellon ([`/people/christopher-mellon`]) (former Deputy Assistant Secretary of Defense) called the historical records report "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service."
 
 Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Rear Admiral) wrote that "AARO needs to explain the inaccuracies and incompleteness31 of AARO's first historical records report32 so that the Congress can understand: (a) if AARO is failing to meet its Congressional mandate, and (b) under what authority AARO has conducted this and other examples of disinformation." Gallaudet also wrote that during a meeting with "the then acting AARO director and his senior staff" he "was the object of an hours-long influence operation" attempting to disparage well-known UAP reports including the USS Nimitz tic-tac encounter.
+
+AARO officially reached Full Operational Capability (FOC) as of October 1, 2024 — the start of Fiscal Year 2025. DefenseScoop exclusively confirmed the FOC status on Thursday, December 5, 2024; DOD spokesperson Sue Gough stated AARO "now has the requisite personnel, expertise, facilities and tools to carry out its core mission". The DefenseScoop article comes as Director Kosloski prepares to participate in a classified briefing with the House Oversight and Accountability Committee on Friday, December 6, 2024 — Subcommittee on National Security, the Border, and Foreign Affairs Chairman Glenn Grothman (R-Wis.) requested the briefing.
+
+On February 19, 2026, President Donald J. Trump posted to TRUTH Social directing the Secretary of War "and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs), and any and all other information connected to these highly complex, but extremely interesting and important, matters." DefenseScoop's February 25, 2026 coverage referenced this as Trump's "UAP disclosure promise" — the forthcoming executive order with which Secretary of War Pete Hegseth ([`/people/pete-hegseth`]) stated AARO would be in "full compliance". In the same DefenseScoop coverage, Jordan Flowers ([`/people/jordan-flowers`]), executive director of the Disclosure Foundation ([`/organizations/disclosure-foundation`]), said: "Trust is earned. And if AARO wants to earn the public's trust, then it should move expeditiously to release its trove of unclassified videos and photos. By failing to meet its statutory obligations, AARO has not helped its image." Pointing to AARO's "long-overdue" annual and historical reports, anticipated UAP classification guide, and vacant deputy director role, Flowers said "this isn’t a fact pattern that has earned the public’s trust."
+
+On March 31, 2026, the House Oversight and Government Reform Task Force on the Declassification of Federal Secrets ([`/organizations/oversight-task-force-declassification`]), Chairwoman Anna Paulina Luna ([`/people/anna-paulina-luna`]) (R-Fla.), wrote to Secretary of War Hegseth requesting delivery of 46 UAP video files "as soon as possible but no later than April 14, 2026". The letter states that "Whistleblowers informed the Task Force that AARO possesses additional video records of potential UAP sightings" and that "The Task Force has found responses from AARO, when questioned about UAP sightings and provided data, less than adequate." The list includes UAP clips referenced by callsign and date — spherical UAP, transmedium UAP, MQ-9 sightings, and the February 12, 2023 USAF ANG F-16C "shoots down UAP over Lake Huron". Cc: the Honorable Jasmine Crockett, Ranking Member of the Task Force.
 
 ---
 
@@ -420,6 +426,30 @@ Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Re
 
 ---
 
+### House Oversight Cybersecurity/IT Subcommittee Chairwoman Nancy Mace (R-S.C.) opening statement at the November 13, 2024 hearing — Congressional purpose statement framing the hearing's scope, including the public-funding-disclosure rationale and the "Pentagon embarrassment" critique applicable to AARO.
+
+> This hearing is intended to help Congress and the American people to learn the extent of the programs and activities our government has engaged in with respect to UAPs—and what knowledge it has yielded. That includes, of course, any knowledge of extraterrestrial life or technology of non-human origin. If government-funded research on UAPs has NOT yielded any useful knowledge, we need to know that, too. Taxpayers deserve to know how much has been invested. They shouldn't be kept in the dark to spare the Pentagon embarrassment.
+
+| Field | Value |
+|---|---|
+| Attributed to | Verbatim opening-statement excerpts published by the House Oversight committee press office on November 13, 2024, 2024-11-13 |
+| Source | [archived source](../sources/government/oversight-house-gov-mace-grothman-opening-press-release-20241113.html) |
+| Location | "Below are key excerpts from Subcommittee Chairwoman Mace's opening remarks" — first reproduced excerpt |
+
+---
+
+### Mace opening-statement excerpt explicitly framing the hearing as a forum for "allegations of UAP-related misinformation and disinformation by government officials" — the disclosure-side critique that Gallaudet, Shellenberger, Gold, and Elizondo subsequently developed in their written testimony.
+
+> We will also hear from the witnesses today allegations of UAP-related misinformation and disinformation by government officials of which they are personally aware and directly experienced. And we will hear testimony today concerning recent revelations about a purportedly secret UAP program whose existence and findings may have been improperly withheld from Congress.
+
+| Field | Value |
+|---|---|
+| Attributed to | Mace opening-statement excerpt, November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing, 2024-11-13 |
+| Source | [archived source](../sources/government/oversight-house-gov-mace-grothman-opening-press-release-20241113.html) |
+| Location | "Below are key excerpts from Subcommittee Chairwoman Mace's opening remarks" — second reproduced excerpt |
+
+---
+
 ### AARO FY24 Annual Report — caseload during the reporting period: 757 UAP reports total (485 within-period, 272 from prior 2021-2022 unreported periods)
 
 > The All-domain Anomaly Resolution Office (AARO) received 757 UAP reports during this period; 485 of these reports featured UAP incidents that occurred during the reporting period. The remaining 272 reports featured UAP incidents that occurred between 2021 and 2022 but were not reported to AARO until this reporting period and consequently were not included in previous annual UAP reports.
@@ -564,6 +594,50 @@ Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Re
 
 ---
 
+### AARO's official slide-deck attestation of the Mt. Etna 2018 case finding — "approximately 170 kilometers from the volcano" — at moderate confidence. CONTRADICTS Kosloski's oral testimony in the SASC stenographic transcript ("170 meters away from the plume"). Both are primary sources from the same hearing day; the slide deck was prepared the night before the hearing (created Nov 18, 2024 5:24 PM EST).
+
+> Findings: AARO, in coordination with IC and S&T partners, assesses with
+> moderate confidence that the object was a balloon drifting with the wind
+> approximately 170 kilometers from the volcano.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO unclassified slide deck submitted for the November 19, 2024 SASC Subcommittee on Emerging Threats and Capabilities open hearing, 2024-11-19 |
+| Source | [archived source](../sources/government/armed-services-senate-gov-aaro-case-slides-20241119.pdf) |
+| Location | Slide 6 — MT. ETNA OBJECT findings bullet |
+
+---
+
+### AARO Puerto Rico Object finding — "high confidence" assessment that the UAP did not demonstrate any anomalous speeds or flight characteristics; two distinct objects, motion-parallax explanation for high-speed perception, traveled at wind speed (3.6 m/s) over land in a straight line, descending to ~200 meters.
+
+> Findings: AARO, in coordination with Intelligence Community (IC) and
+> Science and Technology (S&T) partners assess with high confidence that
+> the UAP did not demonstrate any anomalous speeds or flight
+> characteristics.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO slide deck for the November 19, 2024 SASC hearing — Puerto Rico Object case resolution, 2024-11-19 |
+| Source | [archived source](../sources/government/armed-services-senate-gov-aaro-case-slides-20241119.pdf) |
+| Location | Slides 3–4 — THE PUERTO RICO OBJECT findings bullet |
+
+---
+
+### AARO GO FAST finding — "high confidence" assessment of UAP altitude (~13,000 feet ASL) and velocity (~45 mph / 39 knots) with 60-knot winds at altitude; UAP did not demonstrate anomalous speeds or flight characteristics.
+
+> Findings: Following in-depth computational analysis of Navy aircraft’s
+> flight characteristics and sensor readings, AARO, in coordination with
+> S&T partners, assesses with high confidence the UAP did not
+> demonstrate any anomalous speeds or flight characteristics.
+
+| Field | Value |
+|---|---|
+| Attributed to | AARO slide deck for the November 19, 2024 SASC hearing — GO FAST case resolution, 2024-11-19 |
+| Source | [archived source](../sources/government/armed-services-senate-gov-aaro-case-slides-20241119.pdf) |
+| Location | Slide 5 — GO FAST findings bullet |
+
+---
+
 ### Kosloski Nov 19 2024 SASC SFR — load-bearing positional claim from the new Director: AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology. Parallels and reaffirms HRR Vol I findings under Kosloski tenure.
 
 > It is important to underscore that, to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology.
@@ -573,6 +647,18 @@ Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Re
 | Attributed to | AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024, 2024-11-19 |
 | Source | [archived source](../sources/government/aaro-kosloski-sfr-sasc-20241119.pdf) |
 | Location | p. 1, ¶5 of statement body |
+
+---
+
+### DOD attestation of AARO's Full Operational Capability declaration, dated Oct. 1, 2024 — the start of FY 2025. Public disclosure made on December 5, 2024 by DefenseScoop ahead of Director Kosloski's December 6, 2024 closed-door briefing with the House Oversight and Accountability Committee.
+
+> “AARO reached full operational capability as of Oct. 1, 2024. In practical terms, this means AARO now has the requisite personnel, expertise, facilities and tools to carry out its core mission,” DOD spokesperson Sue Gough told DefenseScoop on Thursday.
+
+| Field | Value |
+|---|---|
+| Attributed to | DefenseScoop article ''AARO functioning at full operational capability as lawmakers prep for classified UAP briefing'' by Brandi Vincent, December 5, 2024. Quote attributed to DOD spokesperson Sue Gough., 2024-12-05 |
+| Source | [archived source](../sources/news/defensescoop-aaro-foc-briefing-20241205.html) |
+| Location | DefenseScoop article body |
 
 ---
 
@@ -588,6 +674,18 @@ Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Re
 | Attributed to | OSD OP-5 FY 2026 budget, OUSD(I&S) program section, 2025 |
 | Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
 | Location | OSD OP-5 FY 2026 Operation and Maintenance Budget Estimates, OUSD(I&S) program section |
+
+---
+
+### February 19, 2026 Truth Social post by President Donald J. Trump (@realDonaldTrump) directing the Secretary of War "and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs)". This is the underlying directive that DefenseScoop's February 25, 2026 coverage referenced as the "forthcoming" UAP-disclosure executive order Secretary of War Pete Hegseth committed to comply with.
+
+> Based on the tremendous interest shown, I will be directing the Secretary of War, and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs), and any and all other information connected to these highly complex, but extremely interesting and important, matters. GOD BLESS AMERICA!
+
+| Field | Value |
+|---|---|
+| Attributed to | Trump TRUTH Social post, posted February 19, 2026 8:13 PM EST. Status ID 116100300268316472. Original URL: truthsocial.com/@realDonaldTrump/116100300268316472. Archived via Trump's Truth (trumpstruth.org), an independent archive of Trump's TRUTH Social posts., 2026-02-19 |
+| Source | [archived source](../sources/social/trumpstruth-statuses-36826-uap-disclosure-20260219.html) |
+| Location | Original Post body, status ID 116100300268316472 |
 
 ---
 
@@ -629,6 +727,91 @@ Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Re
 
 ---
 
+### Disclosure Foundation Executive Director Jordan Flowers' direct AARO-institutional-conduct critique — "By failing to meet its statutory obligations, AARO has not helped its image." Most explicit civil-society critique from the disclosure-coalition organization whose board chair is former Deputy Assistant Secretary of Defense Christopher Mellon.
+
+> Trust is earned. And if AARO wants to earn the public’s trust, then it should move expeditiously to release its trove of unclassified videos and photos. By failing to meet its statutory obligations, AARO has not helped its image
+
+| Field | Value |
+|---|---|
+| Attributed to | Statement to DefenseScoop, published February 25, 2026, 2026-02-25 |
+| Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
+| Location | article body, Jordan Flowers / Disclosure Foundation paragraphs |
+
+---
+
+### Flowers itemization of AARO institutional shortfalls, summarized: AARO's "long-overdue" annual and historical reports, anticipated UAP classification guide, and vacant deputy director role.
+
+> this isn’t a fact pattern that has earned the public’s trust.
+
+| Field | Value |
+|---|---|
+| Attributed to | Flowers statement to DefenseScoop, February 25, 2026 — pointing to AARO's "long-overdue" annual and historical reports, anticipated UAP classification guide, and vacant deputy director role, 2026-02-25 |
+| Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
+| Location | article body, Jordan Flowers / Disclosure Foundation paragraphs |
+
+---
+
+### Disclosure Foundation institutional position on the Trump UAP-disclosure directive — cautious optimism plus warning about "misleadingly partial or incomplete disclosures" via classification-nuance constraints.
+
+> The Disclosure Foundation is cautiously optimistic about these steps, but we remain concerned about the potential for efforts by the administration to be stymied by classification nuances that may result in misleadingly partial or incomplete disclosures
+
+| Field | Value |
+|---|---|
+| Attributed to | Flowers statement to DefenseScoop, February 25, 2026, 2026-02-25 |
+| Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
+| Location | article body, Jordan Flowers / Disclosure Foundation paragraphs (sentence 1 of 2) |
+
+---
+
+### Disclosure Foundation Congressional-action recommendation for a "legislative framework that concretely structures, authorizes, and directs a comprehensive disclosure process" — completing the institutional position published in q52.
+
+> We encourage Congress to support the administration’s intent by enacting a legislative framework that concretely structures, authorizes, and directs a comprehensive disclosure process.
+
+| Field | Value |
+|---|---|
+| Attributed to | Flowers statement to DefenseScoop, February 25, 2026, 2026-02-25 |
+| Source | [archived source](../sources/news/defensescoop-aaro-hegseth-disclosure-20260225.html) |
+| Location | article body, Jordan Flowers / Disclosure Foundation paragraphs (sentence 2 of 2) |
+
+---
+
+### House Oversight Task Force on the Declassification of Federal Secrets formal Congressional attestation that whistleblowers told the Task Force that AARO possesses additional video records of potential UAP sightings — the predicate for the Task Force's March 31, 2026 request for 46 enumerated UAP video files.
+
+> Whistleblowers informed the Task Force that AARO possesses additional video records of potential UAP sightings. To continue its investigation, the Task Force requests certain video files related to UAP sightings.
+
+| Field | Value |
+|---|---|
+| Attributed to | Letter from Task Force Chairwoman Anna Paulina Luna (R-Fla.) to Secretary of War Pete Hegseth, dated March 31, 2026, 2026-03-31 |
+| Source | [archived source](../sources/government/oversight-house-gov-uap-request-letter-luna-20260331.pdf) |
+| Location | p. 1, opening paragraph |
+
+---
+
+### Direct Congressional finding that AARO responses on UAP sightings and data provision have been "less than adequate" — most explicit on-the-record AARO-responsiveness critique from the House Oversight Task Force chairwoman.
+
+> The lack of disclosure regarding the very real threat posed by UAPs in and around U.S. restricted airspace is concerning. The Task Force has found responses from AARO, when questioned about UAP sightings and provided data, less than adequate.
+
+| Field | Value |
+|---|---|
+| Attributed to | Luna letter to Hegseth, March 31, 2026; the Task Force's findings paragraph immediately preceding the enumerated 46-video request, 2026-03-31 |
+| Source | [archived source](../sources/government/oversight-house-gov-uap-request-letter-luna-20260331.pdf) |
+| Location | p. 1, second substantive paragraph |
+
+---
+
+### Specific request and enumerated April 14, 2026 deadline for delivery of 46 UAP video files held by the Department of War / AARO.
+
+> To assist the Task Force in its investigation of UAPs we request the following videos be
+> delivered as soon as possible but no later than April 14, 2026:
+
+| Field | Value |
+|---|---|
+| Attributed to | Luna letter to Hegseth, March 31, 2026, 2026-03-31 |
+| Source | [archived source](../sources/government/oversight-house-gov-uap-request-letter-luna-20260331.pdf) |
+| Location | p. 1, request paragraph immediately preceding the enumerated 46-item list |
+
+---
+
 ### Defense Department spokesperson statement to NBC News (Apr 18, 2026) — AARO disclosure-coordination statement: working with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information; transferring records to the National Archives in accordance with federal law.
 
 > A spokesperson for the Defense Department said in a statement to NBC News Saturday that its All-domain Anomaly Resolution Office (AARO) is "working in close coordination with the White House and across federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information."
@@ -664,8 +847,11 @@ Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Re
 | 2024-11-13 | House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth". Disclosure-side written testimony submitted by Shellenberger, Gallaudet, Gold, and Elizondo characterizes AARO's historical and analytic work critically — Gallaudet describes a first-person "hours-long influence operation" by the then-acting AARO director and senior staff. | hearing | government/oversight-house-gov-uap-hearing-page-20241113.html |  |
 | 2024-11-14 | AARO publishes Fiscal Year 2024 Consolidated Annual Report on UAP. 757 UAP reports for the May 1 2023 – June 1 2024 period; 49 case resolutions, 21 cases meriting further analysis based on anomalous characteristics. GREMLIN prototype sensor system (Georgia Tech Research Institute) disclosed. | report-publication | government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf |  |
 | 2024-11-19 | Kosloski's first hearing as AARO Director — Senate Armed Services Subcommittee on Emerging Threats and Capabilities. Three case resolutions presented — Puerto Rico 2013 (balloons or sky lanterns over an airport), GOFAST 2017 (parallax / object closer to 13,000 feet), Mt. Etna 2018 (object 170 meters from the erupting plume). | testimony | government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf |  |
+| 2024-12-05 | DefenseScoop (Brandi Vincent) reports AARO reached Full Operational Capability as of October 1, 2024 — start of FY 2025. DOD spokesperson Sue Gough: AARO "now has the requisite personnel, expertise, facilities and tools to carry out its core mission". Precedes Kosloski's December 6 closed-door House Oversight briefing. | announcement | news/defensescoop-aaro-foc-briefing-20241205.html |  |
 | 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO''s parent department naming. | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
+| 2026-02-19 | Trump TRUTH Social post (status ID 116100300268316472) directs the Secretary of War and other Departments and Agencies "to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs)". Underlies Hegseth's February 25, 2026 full-compliance commitment. | government-action | social/trumpstruth-statuses-36826-uap-disclosure-20260219.html |  |
 | 2026-02-25 | DefenseScoop article (Brandi Vincent) reports Pentagon spokesperson Sue Gough caseload statement — AARO examining over 2,000 UAP cases with ~1,000 retained in the Active Archive. Article notes AARO has not published a 2025 annual report or second volume. Defense Secretary Hegseth states "full compliance" with forthcoming Trump UAP-disclosure executive order. | other | news/defensescoop-aaro-hegseth-disclosure-20260225.html |  |
+| 2026-03-31 | Task Force on the Declassification of Federal Secrets — Chair Anna Paulina Luna (R-Fla.) — letter to Secretary of War Hegseth requesting 46 UAP video files (45 previously unreleased) by April 14, 2026. Letter finds AARO responses "less than adequate" and cites whistleblowers on "additional video records of potential UAP sightings". | government-action | government/oversight-house-gov-uap-request-letter-luna-20260331.pdf |  |
 | 2026-04-18 | Defense Department spokesperson statement to NBC News (Saturday) on AARO disclosure-coordination posture — AARO working in close coordination with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information. | other | news/nbcnews-trump-ufo-files-interesting-documents-20260418.html |  |
 
 ---
@@ -693,9 +879,14 @@ Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Re
 
 ### People
 
+- [`/people/anna-paulina-luna`]
 - [`/people/christopher-mellon`]
+- [`/people/glenn-grothman`]
 - [`/people/jonathan-kosloski`]
+- [`/people/jordan-flowers`]
 - [`/people/michael-shellenberger`]
+- [`/people/nancy-mace`]
+- [`/people/pete-hegseth`]
 - [`/people/sean-kirkpatrick`]
 - [`/people/tim-gallaudet`]
 - [`/people/tim-phillips`]
@@ -705,11 +896,13 @@ Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Re
 - [`/organizations/aaroexec`]
 - [`/organizations/aoimsg`]
 - [`/organizations/da-m`]
+- [`/organizations/disclosure-foundation`]
 - [`/organizations/dod`]
 - [`/organizations/gtri`]
 - [`/organizations/nsa`]
 - [`/organizations/odni`]
 - [`/organizations/ousd-is`]
+- [`/organizations/oversight-task-force-declassification`]
 - [`/organizations/sancorp-consulting`]
 - [`/organizations/uaptf`]
 - [`/organizations/us-navy`]

@@ -347,6 +347,14 @@
   archive_status: 3
   note: 'DefenseScoop coverage 2023-11-30: ''Pentagon''s UAP investigation chief to depart Dec. 1'' — Kirkpatrick''s confirmed AARO departure, day-before-departure coverage with successor (Tim Phillips) detail'
   wayback_date: '2026-03-25'
+- url: https://defensescoop.com/2024/12/05/aaro-full-operational-capability-lawmakers-prep-classified-uap-briefing/
+  format: html
+  status: archived
+  path: news/defensescoop-aaro-foc-briefing-20241205.html
+  archived_date: '2026-05-01'
+  sha256: 3d1680d07d1cddc198542b743e4f23531fbe5bcf8f31a2de0ef10acfe288b1a6
+  archive_status: 1
+  note: 'DefenseScoop article by Brandi Vincent, published December 5, 2024, headline ''AARO functioning at full operational capability as lawmakers prep for classified UAP briefing.'' Article is the original public attestation of AARO reaching FOC. DOD spokesperson Sue Gough provided the attribution quote: ''AARO reached full operational capability as of Oct. 1, 2024. In practical terms, this means AARO now has the requisite personnel, expertise, facilities and tools to carry out its core mission.'' DefenseScoop framed the news as ''exclusively confirmed on Thursday'' (Dec 5, 2024), preceding the Dec 6, 2024 closed-door briefing between Director Kosloski and the House Oversight and Accountability Committee that Subcommittee Chairman Glenn Grothman (R-Wis.) requested. Wayback capture timestamp 20241207054114.'
 - url: https://defensescoop.com/2026/02/25/hegseth-ufo-disclosure-trump-aaro-uap-caseload/
   format: html
   status: archived
@@ -782,6 +790,22 @@
   sha256: 56c0f927f58703949029ffecfeee576a6c3cc08d19ee9a168fcb2367e95e3e0e
   archive_status: 3
   wayback_date: '2026-04-04'
+- url: https://oversight.house.gov/release/luna-continues-transparency-investigation-into-uaps/
+  format: html
+  status: archived
+  path: government/oversight-house-gov-luna-uap-transparency-press-release-20260331.html
+  archived_date: '2026-05-01'
+  sha256: f065f5af8d231edf35160751463313d3e9761d92d88ee3aac12be428f3477039
+  archive_status: 1
+  note: House Oversight and Government Reform press release dated March 31, 2026, headlined 'Luna Continues Transparency Investigation into UAPs,' announcing Task Force on the Declassification of Federal Secrets letter to Secretary of War Pete Hegseth requesting 46 UAP video files (45 previously unreleased) with an April 14, 2026 deadline.
+- url: https://oversight.house.gov/release/mace-grothman-open-joint-hearing-on-unidentified-anomalous-phenomena/
+  format: html
+  status: archived
+  path: government/oversight-house-gov-mace-grothman-opening-press-release-20241113.html
+  archived_date: '2026-05-01'
+  sha256: 7415921734d043e0933f676234338d84f7ddb769891ab2d5c53d2d0984375333
+  archive_status: 1
+  note: 'House Oversight and Government Reform press release dated November 13, 2024, headlined ''Mace & Grothman Open Joint Hearing on Unidentified Anomalous Phenomena.'' Reproduces verbatim ''key excerpts'' from the opening statements of Subcommittee on Cybersecurity, Information Technology, and Government Innovation Chairwoman Nancy Mace (R-S.C.) and Subcommittee on National Security, the Border, and Foreign Affairs Chairman Glenn Grothman (R-Wis.) at the hearing ''Unidentified Anomalous Phenomena: Exposing the Truth.'''
 - url: https://oversight.house.gov/wp-content/uploads/2023/07/Dave_G_HOC_Speech_FINAL_For_Trans.pdf
   format: pdf
   status: archived
@@ -806,6 +830,14 @@
   sha256: 89127458a642a04a7bcfba2aad34b71f4b898bf064522c007d72bea78b351bb9
   archive_status: 1
   note: 'Tim Gallaudet (former NOAA Administrator and Navy Rear Admiral) written testimony for the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing ''Unidentified Anomalous Phenomena: Exposing the Truth''. Substantive disclosure-side critique of AARO. Notable claims: AARO needs to explain HRR Vol I ''inaccuracies and incompleteness'' so Congress can understand if AARO is failing its Congressional mandate or conducting ''disinformation''; first-person account of an ''hours-long influence operation'' by then-acting AARO director and senior staff that attempted to disparage well-known UAP reports including the USS Nimitz tic-tac encounter.'
+- url: https://oversight.house.gov/wp-content/uploads/2026/03/UAP-Request-Letter-FINAL.pdf
+  format: pdf
+  status: archived
+  path: government/oversight-house-gov-uap-request-letter-luna-20260331.pdf
+  archived_date: '2026-05-01'
+  sha256: 556f9b0567b16acfef66048b64b68df616d6e9f38710af17f8cc7cab89d4c0ec
+  archive_status: 1
+  note: 'House Oversight and Government Reform Task Force on the Declassification of Federal Secrets formal request letter from Chairwoman Anna Paulina Luna to Secretary of War Pete Hegseth, dated March 31, 2026. Letter requests delivery of 46 enumerated UAP video files (clips referenced by callsign and date) by no later than April 14, 2026. Letter cites the September 9, 2025 Task Force hearing and the November 13, 2024 House Oversight Cybersecurity/IT subcommittee hearing (footnote 2: ''Statement from Nancy Mace, Member, U.S. House of Representatives''). Cc: The Honorable Jasmine Crockett, Ranking Member. PDF metadata Author: Meunier, Sam (Oversight committee staff). Pages: 4.'
 - url: https://patents.google.com/patent/US20200357080A1/en
   format: html
   status: archived
@@ -979,6 +1011,14 @@
   sha256: 1e2ee84c108c2feda17af38fd908de81faf58737fe453109c58b0e713ceda90a
   archive_status: 3
   wayback_date: '2026-04-11'
+- url: https://trumpstruth.org/statuses/36826
+  format: html
+  status: archived
+  path: social/trumpstruth-statuses-36826-uap-disclosure-20260219.html
+  archived_date: '2026-05-01'
+  sha256: 1b5768cfd892a70bdf60d6a33c2dd50cb79183424cfd82b974d996fe53ae80b7
+  archive_status: 1
+  note: 'Donald J. Trump TRUTH Social post @realDonaldTrump status ID 116100300268316472, posted February 19, 2026 8:13 PM EST. Original URL: truthsocial.com/@realDonaldTrump/116100300268316472. The post directs ''the Secretary of War, and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs), and any and all other information connected to these highly complex, but extremely interesting and important, matters.'' Archived via Trump''s Truth (trumpstruth.org), an independent archive of Trump''s TRUTH Social posts. Wayback capture 2026-03-03. This is the underlying directive that DefenseScoop February 25, 2026 (already-archived) referenced as the ''forthcoming'' UAP-disclosure executive order Hegseth committed to comply with.'
 - url: https://unknowncountry.com/headline-news/undisclosed-2018-meeting-by-former-aaro-head-sean-kirkpatrick-with-skinwalker-ranch-researchers-calls-government-transparency-into-question/
   format: html
   status: archived
@@ -1310,6 +1350,14 @@
   archive_status: 3
   note: SASC Subcommittee on Emerging Threats hearing record page (witness list, transcript link, statement links) for the 2023-04-19 AARO hearing
   wayback_date: '2026-03-10'
+- url: https://www.armed-services.senate.gov/imo/media/doc/aaro_case_slides1.pdf
+  format: pdf
+  status: archived
+  path: government/armed-services-senate-gov-aaro-case-slides-20241119.pdf
+  archived_date: '2026-05-01'
+  sha256: f89ac4c5b5300bd2f37261bbd1739cdb67ca3c17670a618411754a3dda7a2ce2
+  archive_status: 1
+  note: 'AARO unclassified slide deck for the November 19, 2024 Senate Armed Services Subcommittee on Emerging Threats and Capabilities open hearing. 7-page presentation by Director Dr. Jon Kosloski covering UAP REPORTING TRENDS (Jan 1, 1996 – Oct 10, 2024) and three case resolutions: THE PUERTO RICO OBJECT (April 26, 2013, USCBP IR video over Rafael Hernandez Airport — assessed ''high confidence'' as two distinct objects, illusion of splitting due to changing sensor angle, perception of high speed attributed to motion parallax, traveled at wind speed in a straight line at ~3.6 m/s, descending to ~200 meters); GO FAST (January 2016 — assessed at ~13,000 feet at ~45 mph / 39 knots, with 60-knot winds at altitude, parallax explanation); MT. ETNA OBJECT (2018 — assessed ''moderate confidence'' as a balloon drifting with the wind ''approximately 170 kilometers from the volcano''). PDF metadata Author: Halterman, Jessica L CTR OSD OUSD Intel; Title: ''Graphics Proposed AARO Branding Guide''. Pages: 7. Created Nov 18, 2024 — the day before the hearing. CONTRADICTION: slide deck states ''170 kilometers'' from volcano while the SASC stenographic transcript records Kosloski''s oral testimony as ''170 meters away from the plume''.'
 - url: https://www.audible.com/blog/in-the-room-with-peter-bergen-transcript-episode-38
   format: html
   status: archived
