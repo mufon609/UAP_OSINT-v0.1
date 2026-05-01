@@ -1,0 +1,898 @@
+id: research/ousd-is
+type: research-artifact
+schema_version: 1
+target_node: organizations/ousd-is
+status: active
+created: '2026-04-30'
+description: 'The Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) is a [`/organizations/dod`] component established by Section 901 of the Bob Stump National Defense Authorization Act for Fiscal Year 2003 (Public Law 107-314, enacted December 2, 2002) as the Office of the Under Secretary of Defense for Intelligence. The position is codified at 10 U.S.C. § 137, which provides that "There is an Under Secretary of Defense for Intelligence and Security, appointed from civilian life by the President, by and with the advice and consent of the Senate." Section 1621 of the National Defense Authorization Act for Fiscal Year 2020 (Public Law 116-92, enacted December 20, 2019) redesignated the Under Secretary of Defense for Intelligence as the Under Secretary of Defense for Intelligence and Security and added a new subsection establishing the protection of privacy and civil liberties as a top priority for the office.
+
+
+  DoD Directive 5143.01, originally issued October 24, 2014 and incorporating Change 2 on April 6, 2020, is the office''s organizational charter. The directive states that the USD(I&S) "is the Principal Staff Assistant (PSA) and advisor to the SecDef and DepSecDef regarding Intelligence, Counterintelligence (CI), Security, sensitive activities, and other intelligence-related matters" and "exercises SecDef authority, direction, and control over, and oversees the activities of, the Defense Intelligence Agency (DIA), the National Geospatial-Intelligence Agency (NGA), the National Security Agency/Central Security Service (NSA/CSS), the National Reconnaissance Office (NRO), and the Defense Counterintelligence and Security Agency". The USD(I&S) also serves as Director of Defense Intelligence and as the primary SecDef representative to the Office of the Director of National Intelligence ([`/organizations/odni`]). The war.gov Office of the Secretary of War page lists USW (Intelligence & Security) with establishment date 2002.
+
+
+  GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that the office gained new responsibilities from 2017 through 2020 in the areas of artificial intelligence, law enforcement, personnel vetting, and identity intelligence and identified governance bodies not operating as intended and unclear roles and responsibilities. DoD Inspector General Management Advisory DODIG-2026-047 (January 29, 2026), addressed for the Under Secretary of Defense for Intelligence and Security, confirms that DoD Instruction 5200.48 "Controlled Unclassified Information (CUI)" is issued by OUSD(I&S) and establishes DoD program requirements for designating, marking, handling, and decontrolling CUI. The office directed establishment of the Influence and Perception Management Office ([`/organizations/ipmo`]) on March 1, 2022 per the Notre Dame memo signed by Acting Director James A. Holly ([`/people/james-holly`]), and the Deputy Secretary of Defense ([`/people/kathleen-hicks`]) directed the USD(I&S) to establish the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) on July 15, 2022 in coordination with the Director of Administration and Management. Executive Order 14347 of September 5, 2025 ("Restoring the United States Department of War") authorizes subordinate officials within the Department of Defense to use corresponding secondary titles such as Under Secretary of War in official correspondence, public communications, ceremonial contexts, and non-statutory documents; statutory references to the Department of Defense, Secretary of Defense, and subordinate officers and components shall remain controlling until changed subsequently by the law.
+
+  '
+primary_sources:
+- path: government/uscode-title10-section137-20260430.html
+  format: html
+- path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+  format: pdf
+- path: government/pl-107-314-ndaa-fy2003.pdf
+  format: pdf
+- path: government/pl-116-92-ndaa-fy2020.pdf
+  format: pdf
+- path: government/wargov-moultrie-biography.html
+  format: html
+- path: government/wargov-hansell-biography.html
+  format: html
+- path: government/defense-gov-personnel-changes-pentagon-20201110.html
+  format: html
+- path: government/wargov-leadership-20260109.html
+  format: html
+- path: government/wargov-office-of-secretary-of-war.html
+  format: html
+- path: government/gao-21-295-defense-intelligence-ousdis-oversight-202105.pdf
+  format: pdf
+- path: government/dodig-2026-047-redacted-secure.pdf
+  format: pdf
+- path: government/asc-vickers-usdi-confirmation-20110215.pdf
+  format: pdf
+- path: government/asc-lettre-usdi-testimony-20160913.pdf
+  format: pdf
+- path: government/asc-clapper-lettre-rogers-foreign-cyber-threats-20160105.pdf
+  format: pdf
+- path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+  format: pdf
+- path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+  format: pdf
+- path: government/notre-dame-ipmo-memo-20220527.pdf
+  format: pdf
+- path: government/eo-14347-restoring-department-of-war-20250910.txt
+  format: txt
+document_intrinsic:
+  full_name: Office of the Under Secretary of Defense for Intelligence and Security
+  statutory_authority: 10 U.S.C. § 137 (originally enacted by Section 901 of P.L. 107-314, NDAA FY2003; redesignated by Section 1621 of P.L. 116-92, NDAA FY2020)
+  established_date: '2002-12-02'
+  parent_organization_path: /organizations/dod
+  current_director_path: /people/bradley-hansell
+  office_type: office
+  jurisdiction: Department of Defense — Defense Intelligence and Security Enterprises
+context_extrinsic:
+  display_title: OUSD(I&S) — Office of the Under Secretary of Defense for Intelligence and Security
+quotes:
+- id: q1
+  added_date: '2026-04-30'
+  text: |
+    (a) There is an Under Secretary of Defense for Intelligence and Security, appointed from civilian life by the President, by and with the advice and consent of the Senate. A person may not be appointed as Under Secretary within seven years after relief from active duty as a commissioned officer of a regular component of an armed force.
+  source:
+    path: government/uscode-title10-section137-20260430.html
+    location: '10 U.S.C. § 137(a)'
+  significance: Statutory establishment — appointment by the President, advice and consent of the Senate, seven-year prior-active-duty restriction
+  context: 10 U.S.C. § 137(a) — current statutory codification
+  statement_date: '2019-12-20'
+- id: q2
+  added_date: '2026-04-30'
+  text: |
+    (b) Subject to the authority, direction, and control of the Secretary of Defense, the Under Secretary of Defense for Intelligence and Security shall-
+  source:
+    path: government/uscode-title10-section137-20260430.html
+    location: '10 U.S.C. § 137(b) opening clause'
+  significance: Statutory responsibility framing — subject to SecDef authority, direction, and control
+  context: 10 U.S.C. § 137(b)
+  statement_date: '2019-12-20'
+- id: q3
+  added_date: '2026-04-30'
+  text: |
+    (1) have responsibility for the overall direction and supervision for policy, program planning and execution, and use of resources, for the activities of the Department of Defense that are part of the Military Intelligence Program;
+  source:
+    path: government/uscode-title10-section137-20260430.html
+    location: '10 U.S.C. § 137(b)(1)'
+  significance: Statutory responsibility — Military Intelligence Program direction and supervision
+  context: 10 U.S.C. § 137(b)(1)
+  statement_date: '2019-12-20'
+- id: q4
+  added_date: '2026-04-30'
+  text: |
+    (2) execute the functions for the National Intelligence Program of the Department of Defense under section 105 of the National Security Act of 1947 (50 U.S.C. 3038), as delegated by the Secretary of Defense;
+  source:
+    path: government/uscode-title10-section137-20260430.html
+    location: '10 U.S.C. § 137(b)(2)'
+  significance: Statutory responsibility — National Intelligence Program execution as delegated by SecDef
+  context: 10 U.S.C. § 137(b)(2)
+  statement_date: '2019-12-20'
+- id: q5
+  added_date: '2026-04-30'
+  text: |
+    (3) have responsibility for the overall direction and supervision for policy, program planning and execution, and use of resources, for personnel security, physical security, industrial security, and the protection of classified information and controlled unclassified information, related activities of the Department of Defense; and
+  source:
+    path: government/uscode-title10-section137-20260430.html
+    location: '10 U.S.C. § 137(b)(3)'
+  significance: Statutory responsibility — personnel/physical/industrial security and classified/CUI protection
+  context: 10 U.S.C. § 137(b)(3)
+  statement_date: '2019-12-20'
+- id: q6
+  added_date: '2026-04-30'
+  text: |
+    (c) The protection of privacy and civil liberties in accordance with Federal law and the regulations and directives of the Department of Defense shall be a top priority for the Under Secretary of Defense for Intelligence and Security.
+  source:
+    path: government/uscode-title10-section137-20260430.html
+    location: '10 U.S.C. § 137(c)'
+  significance: Statutory priority — privacy and civil liberties protection (subsection added by NDAA FY2020 § 1621(d))
+  context: 10 U.S.C. § 137(c)
+  statement_date: '2019-12-20'
+- id: q7
+  added_date: '2026-04-30'
+  text: |
+    SEC. 901. UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE.
+  source:
+    path: government/pl-107-314-ndaa-fy2003.pdf
+    location: 'Title IX Subtitle A, Section 901 heading (p. 116 STAT. 2618)'
+  significance: NDAA FY2003 Section 901 establishment-statute heading
+  context: P.L. 107-314 Title IX Subtitle A
+  statement_date: '2002-12-02'
+- id: q8
+  added_date: '2026-04-30'
+  text: |
+    SEC. 1621. REDESIGNATION OF UNDER SECRETARY OF DEFENSE FOR
+    INTELLIGENCE AS UNDER SECRETARY OF DEFENSE FOR
+    INTELLIGENCE AND SECURITY.
+  source:
+    path: government/pl-116-92-ndaa-fy2020.pdf
+    location: 'Title XVI Subtitle B, Section 1621 heading'
+  significance: NDAA FY2020 Section 1621 rename-statute heading
+  context: P.L. 116-92 Title XVI Subtitle B
+  statement_date: '2019-12-20'
+- id: q9
+  added_date: '2026-04-30'
+  text: |
+    (1) IN GENERAL.—The Under Secretary of Defense for Intelligence is hereby redesignated as the Under Secretary of
+    Defense for Intelligence and Security.
+  source:
+    path: government/pl-116-92-ndaa-fy2020.pdf
+    location: 'Section 1621(a)(1)'
+  significance: Operative redesignation clause; rename effective on enactment date December 20, 2019
+  context: P.L. 116-92 Section 1621(a)(1)
+  statement_date: '2019-12-20'
+- id: q10
+  added_date: '2026-04-30'
+  text: |
+    3. RESPONSIBILITIES AND FUNCTIONS. The USD(I&S) is the Principal Staff Assistant
+    (PSA) and advisor to the SecDef and DepSecDef regarding Intelligence, Counterintelligence
+    (CI), Security, sensitive activities, and other intelligence-related matters (referred to in this
+    directive as “assigned responsibilities” or “Defense Intelligence, CI, and Security”).
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 3 RESPONSIBILITIES AND FUNCTIONS, opening paragraph'
+  significance: Charter language — Principal Staff Assistant role and assigned-responsibilities scope
+  context: DoD Directive 5143.01, originally October 24, 2014, incorporating Change 2 April 6, 2020
+  statement_date: '2020-04-06'
+- id: q11
+  added_date: '2026-04-30'
+  text: |
+    capacity, the USD(I&S) exercises SecDef authority, direction, and control over, and oversees the
+    activities of, the Defense Intelligence Agency (DIA), the National Geospatial-Intelligence
+    Agency (NGA), the National Security Agency/Central Security Service (NSA/CSS), the National
+    Reconnaissance Office (NRO), and the Defense Counterintelligence and Security Agency; and
+    exercises planning, policy, and strategic oversight for all associated policy, plans, and programs.
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 3, components paragraph'
+  significance: Components enumeration — DIA, NGA, NSA/CSS, NRO, DCSA under USD(I&S) authority/direction/control
+  context: DoD Directive 5143.01
+  statement_date: '2020-04-06'
+- id: q12
+  added_date: '2026-04-30'
+  text: |
+    Serves as Director of Defense Intelligence and principal advisor to the DNI on Defense
+    Intelligence matters, in accordance with the SecDef and DNI Memorandum of Agreement
+    (Reference (k)), and as the primary SecDef representative to the Office of the DNI (ODNI) and
+    all other Intelligence Community (IC) elements regarding the responsibilities and functions
+    prescribed in this directive.
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 3.c'
+  significance: Director of Defense Intelligence dual-hat role; primary SecDef representative to ODNI
+  context: DoD Directive 5143.01
+  statement_date: '2020-04-06'
+- id: q13
+  added_date: '2026-04-30'
+  text: |
+                       USW (Intelligence & Security)
+                       EST. 2002
+  source:
+    path: government/wargov-office-of-secretary-of-war.html
+    location: war.gov Office of the Secretary of War page, OSW Organizational Structure list
+  significance: Institutional attestation that the office now branded USW (Intelligence & Security) was established 2002
+  context: war.gov post-EO-14347 institutional listing
+  statement_date: '2025-12-25'
+- id: q14
+  added_date: '2026-04-30'
+  text: |
+    The USD(I)’s primary responsibility is to support the Secretary of Defense in discharging
+    his intelligence-related responsibilities and authorities under Title 10 and Title 50 U.S.C.
+    This includes: serving as the principal intelligence advisor to the Secretary of Defense;
+    exercising authority, direction, and control on behalf of the Secretary of Defense over all
+    intelligence organizations within the Department of Defense; ensuring that intelligence
+    organizations in the Department of Defense are manned, organized, trained, and equipped
+    to support the missions of the Department;
+  source:
+    path: government/asc-vickers-usdi-confirmation-20110215.pdf
+    location: 'Vickers Advance Policy Questions, Q.2.a, p. 1'
+  significance: Vickers nominee response — USD(I) duties as principal intelligence advisor exercising authority/direction/control over DoD intelligence organizations
+  context: Senate Armed Services Committee Advance Policy Questions for Michael Vickers, USD(I) nominee, February 15 2011
+  statement_date: '2011-02-15'
+- id: q15
+  added_date: '2026-04-30'
+  text: 'STATEMENT FOR THE RECORD OF THE HONORABLE MARCEL LETTRE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE OFFICE OF THE SECRETARY OF DEFENSE BEFORE THE SENATE ARMED SERVICES COMMITTEE 13 SEPTEMBER 2016'
+  source:
+    path: government/asc-lettre-usdi-testimony-20160913.pdf
+    location: 'Statement for the Record header, p. 1'
+  significance: Direct attestation that Marcel Lettre held the Under Secretary of Defense for Intelligence office as of September 13, 2016
+  context: Senate Armed Services Committee encryption-policy hearing, September 13 2016
+  statement_date: '2016-09-13'
+- id: q16
+  added_date: '2026-04-30'
+  text: 'UNDER SECRETARY OF DEFENSE 5000 DEfENSE PENTAGON WASHINGTON, DC 20301-5000 INTELLIGENCE'
+  source:
+    path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+    location: 'Letterhead, p. 1'
+  significance: Direct letterhead attestation that the office was the Under Secretary of Defense for Intelligence in November 2009 (during James R. Clapper Jr. tenure)
+  context: Memorandum from Under Secretary of Defense for Intelligence to Deputy Secretary of Defense, November 17, 2009
+  statement_date: '2009-11-17'
+- id: q17
+  added_date: '2026-04-30'
+  text: |-
+    Based on the recommendation from DIA and my staffs review of the technical
+    reports, I recommend against establishing a Special Access Program at this time.
+
+    James R. Clapper Jr.
+  source:
+    path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+    location: 'p. 1, signature block'
+  significance: USD(I) Clapper recommends against establishing a Special Access Program for AAWSAP/AATIP — primary-source attestation of Clapper-as-USD(I) decision authority
+  context: Memorandum from USD(I) Clapper to Deputy Secretary of Defense, subject Senator Reid AAITP SAP request
+  statement_date: '2009-11-17'
+- id: q18
+  added_date: '2026-04-30'
+  text: |
+           •   I direct the USD(I&S) to establish the AARO, in coordination with the Director of
+               Administration and Management.
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: 'Hicks AARO establishment memo, p. 1, ¶3 third bullet'
+  significance: Deputy Secretary of Defense Hicks directs USD(I&S) to establish AARO; OUSD(I&S) is the cognizant directing authority for AARO establishment
+  context: Hicks AARO establishment memo, July 15 2022
+  statement_date: '2022-07-15'
+- id: q19
+  added_date: '2026-04-30'
+  text: |
+              On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under
+               Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception
+               Management Office (IPMO) was established. Among other things, the IPMO is tasked with
+               the development of broad thematic messaging guidance and specific strategies for the
+               execution of DoD activities designed to influence foreign defense-related decision-makers to
+               behave in a manner beneficial to U.S. interests.
+  source:
+    path: government/notre-dame-ipmo-memo-20220527.pdf
+    location: 'p. 1, ¶1 (signed by James A. Holly, Acting Director, IPMO)'
+  significance: IPMO established March 1, 2022 by direction from SecDef and USD(I&S); attestation that OUSD(I&S) directs subordinate-office establishment
+  context: Notre Dame National Security Innovation Course memo, signed by IPMO Acting Director James A. Holly, May 27 2022
+  statement_date: '2022-05-27'
+- id: q20
+  added_date: '2026-04-30'
+  text: 'OUSD(I&S) gained new mission responsibilities every year from 2017 through 2020—including in the areas of artificial intelligence, law enforcement, personnel vetting, and identity intelligence'
+  source:
+    path: government/gao-21-295-defense-intelligence-ousdis-oversight-202105.pdf
+    location: 'GAO-21-295 body, p. 9 — New Mission Responsibilities subsection'
+  significance: GAO finding — OUSD(I&S) gained new mission responsibilities every year 2017-2020 including AI / law enforcement / personnel vetting / identity intelligence
+  context: 'GAO-21-295: Defense Intelligence and Security: DOD Needs to Establish Oversight Expectations and to Develop Tools That Enhance Accountability, May 6 2021'
+  statement_date: '2021-05-06'
+- id: q21
+  added_date: '2026-04-30'
+  text: 'we refer to non-permanent personnel—personnel who normally only work for a year or several years in an organization before rotating elsewhere or are employed by a contract.'
+  source:
+    path: government/gao-21-295-defense-intelligence-ousdis-oversight-202105.pdf
+    location: 'GAO-21-295 footnote 22, p. 14'
+  significance: GAO finding — 78 percent of OUSD(I&S) workforce non-permanent (contractors, joint duty assignees, military/reservists, liaison officers/detailees) as of July 2020
+  context: GAO-21-295 workforce-composition analysis
+  statement_date: '2021-05-06'
+- id: q22
+  added_date: '2026-04-30'
+  text: |-
+    We observed several oversight challenges within our case studies and
+                                interviews with OUSD(I&S) officials due in part to this lack of clarity
+                                around expectations, including: governance bodies not operating as
+                                intended; insufficient guidance; and unclear roles, responsibilities, and
+                                authorities.
+  source:
+    path: government/gao-21-295-defense-intelligence-ousdis-oversight-202105.pdf
+    location: 'GAO-21-295 body — oversight-challenges narrative paragraph'
+  significance: GAO finding — OUSD(I&S) governance bodies not operating as intended; unclear roles/responsibilities; one mission area body had not met for several years
+  context: GAO-21-295 oversight-challenges analysis
+  statement_date: '2021-05-06'
+- id: q23
+  added_date: '2026-04-30'
+  text: |
+    MEMOR ANDUM FOR UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY
+
+    SUBJECT: Management Advisory : DoD Policy and Training on Dissemination Controls for
+                  Controlled Unclassified Information (CUI) (Report No. DODIG-2026-047)
+  source:
+    path: government/dodig-2026-047-redacted-secure.pdf
+    location: 'DODIG-2026-047, p. 1, header'
+  significance: DoD IG management advisory addressed to USD(I&S) re CUI dissemination controls — 2026 institutional accountability surface
+  context: DoD Office of Inspector General Management Advisory, January 29, 2026
+  statement_date: '2026-01-29'
+- id: q24
+  added_date: '2026-04-30'
+  text: |
+    DoD Instruction (DoDI) 5200.48, "Controlled Unclassified Information (CUI)," issued by
+    the Office of the Under Secretary of Defense for Intelligence and Security (OUSD[I&S]),
+    establishes DoD program requirements for designating, marking, handling, and decontrolling
+    CUl.
+  source:
+    path: government/dodig-2026-047-redacted-secure.pdf
+    location: 'DODIG-2026-047, p. 1, ¶3'
+  significance: Direct attestation that DoDI 5200.48 (CUI program) is issued by OUSD(I&S) and establishes DoD-wide CUI program requirements
+  context: DODIG-2026-047 management advisory
+  statement_date: '2026-01-29'
+- id: q25
+  added_date: '2026-04-30'
+  text: '(b) The Department of Defense and the Office of the Secretary of Defense may be referred to as the Department of War and the Office of the Secretary of War, respectively, in the contexts described in subsection (a) of this section.'
+  source:
+    path: government/eo-14347-restoring-department-of-war-20250910.txt
+    location: 'EO 14347 Section 2(b)'
+  significance: EO 14347 authorizes Department of Defense and Office of the Secretary of Defense to be referred to as Department of War and Office of the Secretary of War in non-statutory contexts
+  context: Executive Order 14347 of September 5, 2025, "Restoring the United States Department of War"
+  statement_date: '2025-09-05'
+- id: q26
+  added_date: '2026-04-30'
+  text: '(c) The provisions of this section shall also apply, as appropriate, to subordinate officials within the Department of Defense, who may use corresponding secondary titles such as Deputy Secretary of War or Under Secretary of War in the contexts described in subsection (a) of this section.'
+  source:
+    path: government/eo-14347-restoring-department-of-war-20250910.txt
+    location: 'EO 14347 Section 2(c)'
+  significance: EO 14347 authorizes subordinate officials including Under Secretaries to use Under Secretary of War secondary title in non-statutory contexts
+  context: Executive Order 14347 of September 5, 2025
+  statement_date: '2025-09-05'
+- id: q27
+  added_date: '2026-04-30'
+  text: '(e) Statutory references to the Department of Defense, Secretary of Defense, and subordinate officers and components shall remain controlling until changed subsequently by the law.'
+  source:
+    path: government/eo-14347-restoring-department-of-war-20250910.txt
+    location: 'EO 14347 Section 2(e)'
+  significance: EO 14347 preserves Department of Defense statutory references — controlling until changed by law (the OUSD(I&S) statutory designation per 10 U.S.C. § 137 remains the codified form)
+  context: Executive Order 14347 of September 5, 2025
+  statement_date: '2025-09-05'
+- id: q30
+  added_date: '2026-04-30'
+  text: 'Bradley D. Hansell serves as the Under Secretary of War for Intelligence and Security. In this role, he is the principal advisor to Secretary of War on intelligence, security, and law enforcement matters.'
+  source:
+    path: government/wargov-hansell-biography.html
+    location: 'Bradley D. Hansell biography on war.gov'
+  significance: Direct attestation of Hansell's role and the post-EO-14347 institutional title "Under Secretary of War for Intelligence and Security" used on the war.gov biography page
+  context: war.gov post-EO-14347 institutional biography
+  statement_date: '2025-09-06'
+- id: q28
+  added_date: '2026-04-30'
+  text: |
+    Today, Acting Under Secretary of Defense for Policy Dr. James Anderson, Under Secretary of Defense for Intelligence and Security Mr. Joseph Kernan and Chief of Staff to the Secretary of Defense, Jen Stewart submitted letters of resignation.
+  source:
+    path: government/defense-gov-personnel-changes-pentagon-20201110.html
+    location: 'DoD release "Statement on Personnel Changes at the Pentagon," November 10, 2020'
+  significance: Confirms Joseph Kernan held the Under Secretary of Defense for Intelligence and Security position and resigned on November 10, 2020
+  context: DoD press release announcing simultaneous resignations including USD(I&S) Joseph Kernan
+  statement_date: '2020-11-10'
+- id: q29
+  added_date: '2026-04-30'
+  text: |
+    As planned for several months, Under Secretary Kernan submitted his letter of resignation, effective today. Current Acting Assistant Secretary of Defense for Special Operation and Low-Intensity Conflict Ezra Cohen-Watnick will be the new Acting Under Secretary of Defense for Intelligence and Security.
+  source:
+    path: government/defense-gov-personnel-changes-pentagon-20201110.html
+    location: 'DoD release "Statement on Personnel Changes at the Pentagon," November 10, 2020'
+  significance: Documents transition from Kernan to Acting Under Secretary Ezra Cohen-Watnick on November 10, 2020
+  context: DoD press release announcing simultaneous resignations
+  statement_date: '2020-11-10'
+key_personnel:
+- id: kp1
+  added_date: '2026-04-30'
+  person_path: /people/james-clapper
+  role: Under Secretary of Defense for Intelligence
+  period_start: '2007-04-15'
+  period_end: '2010-06-05'
+  leadership_class: director
+  source:
+    path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+    location: 'p. 1, letterhead and signature'
+  note: Clapper signed the November 17, 2009 memorandum to the Deputy Secretary of Defense recommending against a Special Access Program for the Advanced Aerospace Threat and Identification Program managed by DIA.
+- id: kp2
+  added_date: '2026-04-30'
+  person_path: /people/michael-vickers
+  role: Under Secretary of Defense for Intelligence
+  period_start: '2011'
+  period_end: '2015'
+  leadership_class: director
+  source:
+    path: government/asc-vickers-usdi-confirmation-20110215.pdf
+    location: 'Advance Policy Questions cover, p. 1'
+  note: Vickers responded to Senate Armed Services Committee Advance Policy Questions on February 15, 2011 as USD(I) nominee. Earlier roles included Assistant Secretary of Defense for Special Operations and Low Intensity Conflict.
+- id: kp3
+  added_date: '2026-04-30'
+  person_path: /people/marcel-lettre
+  role: Under Secretary of Defense for Intelligence
+  period_start: '2015'
+  period_end: '2017'
+  leadership_class: director
+  source:
+    path: government/asc-lettre-usdi-testimony-20160913.pdf
+    location: 'Statement for the Record header, p. 1'
+  note: Lettre attested as Under Secretary of Defense for Intelligence on September 13, 2016 in his Senate Armed Services Committee Statement for the Record on encryption policy.
+- id: kp4
+  added_date: '2026-04-30'
+  person_path: /people/joseph-kernan
+  role: Under Secretary of Defense for Intelligence and Security
+  period_start: '2017-12-01'
+  period_end: '2020-11-10'
+  leadership_class: director
+  source:
+    path: government/defense-gov-personnel-changes-pentagon-20201110.html
+    location: 'DoD release, November 10, 2020'
+  note: Kernan submitted his letter of resignation effective November 10, 2020. Ezra Cohen-Watnick was named Acting Under Secretary the same day.
+- id: kp4b
+  added_date: '2026-04-30'
+  person_path: /people/ezra-cohen-watnick
+  role: Acting Under Secretary of Defense for Intelligence and Security
+  period_start: '2020-11-10'
+  period_end: '2021-06-01'
+  leadership_class: director
+  source:
+    path: government/defense-gov-personnel-changes-pentagon-20201110.html
+    location: 'DoD release November 10 2020'
+  note: Named the new Acting Under Secretary of Defense for Intelligence and Security on November 10, 2020 effective the date Kernan submitted his letter of resignation. Cohen-Watnick was concurrently the Acting Assistant Secretary of Defense for Special Operation and Low-Intensity Conflict.
+- id: kp5
+  added_date: '2026-04-30'
+  person_path: /people/ronald-moultrie
+  role: Under Secretary of Defense for Intelligence and Security
+  period_start: '2021-06-01'
+  period_end: '2024-02-29'
+  leadership_class: director
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: 'Ronald S. Moultrie biography on war.gov'
+  note: Moultrie was sworn in June 1, 2021 and retired in February 2024. He served as the principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters and exercised authority, direction, and control on behalf of the Secretary of Defense over all intelligence and security organizations within the Department of Defense.
+- id: kp6
+  added_date: '2026-04-30'
+  person_path: /people/bradley-hansell
+  role: Under Secretary of War for Intelligence and Security
+  period_start: '2024'
+  leadership_class: director
+  source:
+    path: government/wargov-hansell-biography.html
+    location: 'Bradley D. Hansell biography on war.gov'
+  note: Per the war.gov biography, Hansell serves as the Under Secretary of War for Intelligence and Security and is the principal advisor to Secretary of War on intelligence, security, and law enforcement matters.
+org_relationships:
+- id: or1
+  added_date: '2026-04-30'
+  organization_path: /organizations/dod
+  relationship_type: parent
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 1 PURPOSE — issued under the authority vested in the Secretary of Defense'
+  note: Department of Defense is the parent department; DoDD 5143.01 is issued under SecDef authority pursuant to 10 U.S.C. §§ 113 and 137. Per EO 14347, the Department of Defense and the Office of the Secretary of Defense may also be referred to as the Department of War and the Office of the Secretary of War in non-statutory contexts; statutory references to the Department of Defense remain controlling.
+- id: or2
+  added_date: '2026-04-30'
+  organization_path: /organizations/dia
+  relationship_type: subsidiary
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 3 RESPONSIBILITIES AND FUNCTIONS, components paragraph'
+  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the Defense Intelligence Agency.
+- id: or3
+  added_date: '2026-04-30'
+  organization_path: /organizations/nga
+  relationship_type: subsidiary
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 3, components paragraph'
+  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the National Geospatial-Intelligence Agency.
+- id: or4
+  added_date: '2026-04-30'
+  organization_path: /organizations/nsa
+  relationship_type: subsidiary
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 3, components paragraph'
+  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the National Security Agency/Central Security Service.
+- id: or5
+  added_date: '2026-04-30'
+  organization_path: /organizations/nro
+  relationship_type: subsidiary
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 3, components paragraph'
+  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the National Reconnaissance Office.
+- id: or6
+  added_date: '2026-04-30'
+  organization_path: /organizations/dcsa
+  relationship_type: subsidiary
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 3, components paragraph'
+  note: Per DoDD 5143.01, USD(I&S) exercises SecDef authority, direction, and control over the Defense Counterintelligence and Security Agency.
+- id: or7
+  added_date: '2026-04-30'
+  organization_path: /organizations/aaro
+  relationship_type: subsidiary
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: 'Hicks AARO establishment memo, p. 1, ¶3 third bullet'
+  note: Deputy Secretary of Defense Hicks directed the USD(I&S) to establish the All-domain Anomaly Resolution Office on July 15, 2022 in coordination with the Director of Administration and Management. AARO was the cognizant subordinate office established under USD(I&S) direction.
+- id: or8
+  added_date: '2026-04-30'
+  organization_path: /organizations/ipmo
+  relationship_type: subsidiary
+  source:
+    path: government/notre-dame-ipmo-memo-20220527.pdf
+    location: 'p. 1, ¶1'
+  note: The Influence and Perception Management Office was established March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security.
+- id: or9
+  added_date: '2026-04-30'
+  organization_path: /organizations/odni
+  relationship_type: partner
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'DoDD 5143.01 § 3.c'
+  note: Per DoDD 5143.01, USD(I&S) serves as Director of Defense Intelligence and as the primary SecDef representative to the Office of the Director of National Intelligence and all other Intelligence Community elements.
+- id: or10
+  added_date: '2026-04-30'
+  organization_path: /organizations/sancorp-consulting
+  relationship_type: contractor
+  source:
+    path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
+    location: 'AARO contract HQ003422C0094 PWS Section 5'
+  note: Sancorp Consulting LLC is a prime contractor providing support services across multiple OUSD(I&S) subordinate offices including AARO and IPMO.
+timeline:
+- id: t1
+  added_date: '2026-04-30'
+  date: '2002-12-02'
+  event: Section 901 of the Bob Stump National Defense Authorization Act for Fiscal Year 2003 (P.L. 107-314) establishes the Under Secretary of Defense for Intelligence by inserting new 10 U.S.C. § 137; transfers prior § 137 to § 139a; conforming amendments place USD(I) in the Executive Schedule after USD(P&R)
+  category: founding
+  source:
+    path: government/pl-107-314-ndaa-fy2003.pdf
+    location: 'p. 116 STAT. 2618-2620, Title IX § 901'
+- id: t2
+  added_date: '2026-04-30'
+  date: '2007-04-15'
+  event: James R. Clapper Jr. sworn in as Under Secretary of Defense for Intelligence
+  category: leadership-transition
+  source:
+    path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+    location: p. 1 letterhead
+  node_link: /people/james-clapper
+- id: t3
+  added_date: '2026-04-30'
+  date: '2009-11-17'
+  event: USD(I) Clapper memorandum to Deputy Secretary of Defense recommending against establishing a Special Access Program for the Advanced Aerospace Weapon System Application Program (AAWSAP) / Advanced Aerospace Threat Identification Program based on DIA technical review of FY09 deliverables
+  category: decision
+  source:
+    path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+    location: 'p. 1, ¶5 (recommendation)'
+- id: t4
+  added_date: '2026-04-30'
+  date: '2010-06-05'
+  event: James R. Clapper Jr. departs Under Secretary of Defense for Intelligence
+  category: leadership-transition
+  node_link: /people/james-clapper
+  source:
+    path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+    location: 'p. 1, letterhead (last attested USD(I) date)'
+- id: t5
+  added_date: '2026-04-30'
+  date: '2011-02-15'
+  event: Michael Vickers Senate Armed Services Committee nomination hearing for Under Secretary of Defense for Intelligence; Advance Policy Questions submitted
+  category: testimony
+  node_link: /people/michael-vickers
+  source:
+    path: government/asc-vickers-usdi-confirmation-20110215.pdf
+    location: 'p. 1 cover'
+- id: t6
+  added_date: '2026-04-30'
+  date: '2014-10-24'
+  event: DoD Directive 5143.01 originally issued; charters the USD(I&S) responsibilities, components, and dual-hat Director of Defense Intelligence role
+  category: charter
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'p. 1 header'
+- id: t7
+  added_date: '2026-04-30'
+  date: '2016-09-13'
+  event: Marcel Lettre testifies as Under Secretary of Defense for Intelligence before Senate Armed Services Committee on encryption policy
+  category: testimony
+  node_link: /people/marcel-lettre
+  source:
+    path: government/asc-lettre-usdi-testimony-20160913.pdf
+    location: 'p. 1 header'
+- id: t8
+  added_date: '2026-04-30'
+  date: '2017-12-01'
+  event: Joseph Kernan sworn in as Under Secretary of Defense for Intelligence
+  category: leadership-transition
+  node_link: /people/joseph-kernan
+  source:
+    path: government/defense-gov-personnel-changes-pentagon-20201110.html
+    location: DoD release November 10 2020
+- id: t9
+  added_date: '2026-04-30'
+  date: '2019-12-20'
+  event: Section 1621 of P.L. 116-92 (NDAA FY2020) redesignates the Under Secretary of Defense for Intelligence as the Under Secretary of Defense for Intelligence and Security; new subsection (c) added to 10 U.S.C. § 137 establishing protection of privacy and civil liberties as a top priority
+  category: rename
+  source:
+    path: government/pl-116-92-ndaa-fy2020.pdf
+    location: '133 STAT. 1731-1733, Title XVI § 1621'
+- id: t10
+  added_date: '2026-04-30'
+  date: '2020-04-06'
+  event: DoD Directive 5143.01 Change 2 incorporated; updates responsibilities and functions, relationships, and authorities of the USD(I&S) consistent with the December 2019 statutory rename
+  category: charter
+  source:
+    path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+    location: 'p. 1 header'
+- id: t11
+  added_date: '2026-04-30'
+  date: '2020-11-10'
+  event: Joseph Kernan resigns Under Secretary of Defense for Intelligence and Security; Ezra Cohen-Watnick becomes Acting Under Secretary
+  category: leadership-transition
+  node_link: /people/joseph-kernan
+  source:
+    path: government/defense-gov-personnel-changes-pentagon-20201110.html
+    location: DoD release November 10 2020
+- id: t12
+  added_date: '2026-04-30'
+  date: '2021-05-06'
+  event: GAO-21-295 Defense Intelligence and Security report published, finding OUSD(I&S) gained new responsibilities 2017-2020 and identifying governance bodies not operating as intended and unclear roles and responsibilities
+  category: oversight
+  source:
+    path: government/gao-21-295-defense-intelligence-ousdis-oversight-202105.pdf
+    location: 'p. 1 cover'
+- id: t13
+  added_date: '2026-04-30'
+  date: '2021-06-01'
+  event: Ronald S. Moultrie sworn in as Under Secretary of Defense for Intelligence and Security following Senate confirmation
+  category: leadership-transition
+  node_link: /people/ronald-moultrie
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: Moultrie biography
+- id: t14
+  added_date: '2026-04-30'
+  date: '2022-03-01'
+  event: Influence and Perception Management Office (IPMO) established per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security; tasked with thematic messaging guidance and influence strategies
+  category: subordinate-establishment
+  node_link: /organizations/ipmo
+  source:
+    path: government/notre-dame-ipmo-memo-20220527.pdf
+    location: 'p. 1, ¶1'
+- id: t15
+  added_date: '2026-04-30'
+  date: '2022-07-15'
+  event: Deputy Secretary of Defense Kathleen Hicks directs the USD(I&S) to establish the All-domain Anomaly Resolution Office (AARO) in coordination with the Director of Administration and Management
+  category: subordinate-establishment
+  node_link: /organizations/aaro
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: 'p. 1, ¶3'
+- id: t16
+  added_date: '2026-04-30'
+  date: '2024-02-29'
+  event: Ronald S. Moultrie retires as Under Secretary of Defense for Intelligence and Security
+  category: leadership-transition
+  node_link: /people/ronald-moultrie
+  source:
+    path: government/wargov-moultrie-biography.html
+    location: Moultrie biography
+- id: t17
+  added_date: '2026-04-30'
+  date: '2024'
+  event: Bradley D. Hansell becomes Under Secretary of Defense for Intelligence and Security (specific sworn-in date not attested in archived primary sources)
+  category: leadership-transition
+  node_link: /people/bradley-hansell
+  source:
+    path: government/wargov-hansell-biography.html
+    location: Hansell biography
+- id: t18
+  added_date: '2026-04-30'
+  date: '2025-09-05'
+  event: Executive Order 14347 ("Restoring the United States Department of War") authorizes subordinate officials within the Department of Defense to use secondary titles such as Under Secretary of War in non-statutory contexts; statutory references to the Department of Defense and subordinate officers shall remain controlling until changed by law
+  category: government-action
+  source:
+    path: government/eo-14347-restoring-department-of-war-20250910.txt
+    location: 'EO 14347 Sections 2(c) and 2(e)'
+- id: t19
+  added_date: '2026-04-30'
+  date: '2026-01-29'
+  event: 'DoD Inspector General Management Advisory DODIG-2026-047 issued for the Under Secretary of Defense for Intelligence and Security: DoD Policy and Training on Dissemination Controls for Controlled Unclassified Information (CUI). Five recommendations (two closed, three resolved-but-open). Confirms DoDI 5200.48 issued by OUSD(I&S)'
+  category: oversight
+  source:
+    path: government/dodig-2026-047-redacted-secure.pdf
+    location: 'p. 1, header and ¶1'
+entities_referenced:
+- id: e1
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Department of Defense
+  wrap_path: /organizations/dod
+  context_summary: Parent department; OUSD(I&S) is a DoD component established by NDAA FY2003 § 901 and codified at 10 U.S.C. § 137.
+- id: e2
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Office of the Director of National Intelligence
+  wrap_path: /organizations/odni
+  context_summary: Per DoDD 5143.01 § 3.c, USD(I&S) serves as Director of Defense Intelligence and primary SecDef representative to ODNI.
+- id: e3
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Defense Intelligence Agency
+  wrap_path: /organizations/dia
+  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
+- id: e4
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: National Geospatial-Intelligence Agency
+  wrap_path: /organizations/nga
+  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
+- id: e5
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: National Security Agency / Central Security Service
+  wrap_path: /organizations/nsa
+  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
+- id: e6
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: National Reconnaissance Office
+  wrap_path: /organizations/nro
+  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
+- id: e7
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Defense Counterintelligence and Security Agency
+  wrap_path: /organizations/dcsa
+  context_summary: Component over which USD(I&S) exercises SecDef authority, direction, and control per DoDD 5143.01.
+- id: e8
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: All-domain Anomaly Resolution Office
+  wrap_path: /organizations/aaro
+  context_summary: Subordinate office established at USD(I&S) direction per Hicks memo July 15, 2022.
+- id: e9
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Influence and Perception Management Office
+  wrap_path: /organizations/ipmo
+  context_summary: Subordinate office established March 1, 2022 per direction from SecDef and USD(I&S).
+- id: e10
+  added_date: '2026-04-30'
+  entity_type: organization
+  name: Sancorp Consulting, LLC
+  wrap_path: /organizations/sancorp-consulting
+  context_summary: Prime contractor providing support services to OUSD(I&S) subordinate offices including AARO and IPMO.
+- id: e11
+  added_date: '2026-04-30'
+  entity_type: person
+  name: James R. Clapper Jr.
+  wrap_path: /people/james-clapper
+  context_summary: Under Secretary of Defense for Intelligence 2007-04-15 to 2010-06-05; signed November 17, 2009 SAP-rejection memorandum to Deputy Secretary of Defense.
+- id: e12
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Michael G. Vickers
+  wrap_path: /people/michael-vickers
+  context_summary: Under Secretary of Defense for Intelligence 2011-2015; submitted Advance Policy Questions to Senate Armed Services Committee February 15, 2011.
+- id: e13
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Marcel J. Lettre II
+  wrap_path: /people/marcel-lettre
+  context_summary: Under Secretary of Defense for Intelligence 2015-2017; testified at Senate Armed Services Committee encryption-policy hearing September 13, 2016.
+- id: e14
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Joseph D. Kernan
+  wrap_path: /people/joseph-kernan
+  context_summary: Under Secretary of Defense for Intelligence and Security 2017-12-01 to 2020-11-10.
+- id: e15
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Ronald S. Moultrie
+  wrap_path: /people/ronald-moultrie
+  context_summary: Under Secretary of Defense for Intelligence and Security 2021-06-01 to 2024-02-29; named Sean Kirkpatrick as inaugural director of AARO.
+- id: e16
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Bradley D. Hansell
+  wrap_path: /people/bradley-hansell
+  context_summary: Under Secretary of War for Intelligence and Security from 2024 (post-EO-14347 institutional bio uses Department of War branding).
+- id: e17
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Kathleen Hicks
+  wrap_path: /people/kathleen-hicks
+  context_summary: Deputy Secretary of Defense who issued the July 15, 2022 memorandum directing USD(I&S) to establish AARO.
+- id: e18
+  added_date: '2026-04-30'
+  entity_type: person
+  name: James A. Holly
+  wrap_path: /people/james-holly
+  context_summary: Acting Director of the Influence and Perception Management Office; signatory of the May 27, 2022 Notre Dame National Security Innovation Course memo attesting IPMO establishment.
+- id: e19
+  added_date: '2026-04-30'
+  entity_type: person
+  name: Ezra Cohen-Watnick
+  wrap_path: /people/ezra-cohen-watnick
+  context_summary: Acting Under Secretary of Defense for Intelligence and Security from November 10, 2020 (Kernan resignation) through Moultrie's June 1, 2021 confirmation.
+naming_quirks:
+- id: nq1
+  added_date: '2026-04-30'
+  observed: USD(I)
+  canonical: USD(I&S)
+  location: 'historical references prior to NDAA FY2020 § 1621 (December 20, 2019)'
+  source_path: government/pl-116-92-ndaa-fy2020.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: The position was formally titled "Under Secretary of Defense for Intelligence" (USD(I)) from establishment in 2002 through December 19, 2019. Section 1621 of P.L. 116-92 redesignated the position effective on enactment (December 20, 2019). Pre-rename primary sources (Clapper SAP packet, Vickers nomination, Lettre testimony) attest the USD(I) form. Use the contemporaneous form when quoting and the canonical USD(I&S) form for current references.
+- id: nq2
+  added_date: '2026-04-30'
+  observed: USW (Intelligence & Security)
+  canonical: USD(I&S)
+  location: war.gov Office of the Secretary of War organizational structure listing
+  source_path: government/wargov-office-of-secretary-of-war.html
+  resolution: preserve-as-sic-in-quotes
+  note: Per EO 14347 Section 2(c), subordinate officials may use corresponding secondary titles such as Under Secretary of War in non-statutory contexts. The war.gov institutional listing uses USW (Intelligence & Security); statutory references per 10 U.S.C. § 137 retain the USD(I&S) form per EO 14347 Section 2(e).
+- id: nq3
+  added_date: '2026-04-30'
+  observed: AAITP
+  canonical: AATIP
+  location: Clapper SAP packet, throughout
+  source_path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: The November 17, 2009 Clapper memorandum is an OCR-scan source (Acrobat 9.55 Paper Capture Plug-in) where "AATIP" extracted as "AAITP" — character-cluster transposition typical of OCR errors. The memorandum also writes the longer-form name "Advanced Aerospace Threat and Identification Program" — also "Identification" rather than "Identification" suggests the underlying name is correctly Advanced Aerospace Threat Identification Program. Preserved in verbatim quotes; canonical form used outside quotes.
+- id: nq4
+  added_date: '2026-04-30'
+  observed: AA WSAP
+  canonical: AAWSAP
+  location: Clapper SAP packet, throughout
+  source_path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: OCR-scan source has unintended whitespace inside the AAWSAP acronym (AA WSAP). Preserved in verbatim quotes.
+- id: nq5
+  added_date: '2026-04-30'
+  observed: 'DEfENSE PENTAGON'
+  canonical: DEFENSE PENTAGON
+  location: Clapper SAP packet letterhead
+  source_path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: OCR-scan letterhead extraction of "DEFENSE PENTAGON" produced the lowercase-f variant "DEfENSE". Preserved in verbatim letterhead quote.
+- id: nq6
+  added_date: '2026-04-30'
+  observed: ovember
+  canonical: November
+  location: Hicks AARO establishment memorandum, throughout
+  source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: OCR-scan dropped the leading "N" from "November" in multiple places (e.g., "ovember 23, 2021"). Preserved in verbatim quotes if the affected passage is excerpted.
+- id: nq7
+  added_date: '2026-04-30'
+  observed: fulfi lled
+  canonical: fulfilled
+  location: Hicks AARO establishment memorandum
+  source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: OCR-scan inserted whitespace inside "fulfilled" (rendered as "fulfi lled"). Preserved when excerpted in the AARO mission-statement quote.
+- id: nq8
+  added_date: '2026-04-30'
+  observed: CUl
+  canonical: CUI
+  location: DODIG-2026-047 management advisory body
+  source_path: government/dodig-2026-047-redacted-secure.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: OCR-extraction of CUI (Controlled Unclassified Information) acronym occasionally renders the trailing "I" as lowercase "l" (CUl). Preserved in verbatim quotes.
+rumors: []

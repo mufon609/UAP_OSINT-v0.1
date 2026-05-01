@@ -7,6 +7,30 @@
   note: Mirror copy (hosted at aliendave.com / UUFOH) of Deseret News 'Millionaire Leads Quest for UFO Data' by Zack Van Eyck, Staff Writer, published Sunday October 20, 1996. Announces Robert M. Bigelow's acquisition of the former Sherman ranch for approximately $200,000, closed September 1996. Confirms Sherman family NDA (Terry Sherman 'employed by Bigelow to maintain the ranch' and 'can no longer discuss the activity because of a nondisclosure agreement'). Names John B. Alexander (former director of non-lethal weapons testing at Los Alamos) as NIDS scientist. Confirms NIDS formed October 1995 ('which Bigelow formed last October'). Original Deseret News URL not presently recoverable; this aliendave.com mirror preserves the 1996 article text.
   archive_status: 3
   wayback_date: '2025-07-16'
+- url: http://www.armed-services.senate.gov/imo/media/doc/Clapper-Lettre-Rogers_01-05-16.pdf
+  format: pdf
+  status: archived
+  path: government/asc-clapper-lettre-rogers-foreign-cyber-threats-20160105.pdf
+  archived_date: '2026-04-30'
+  sha256: dc722c9c02455521ffa0f2dc5fd4a9e36eb61c56d75a88002345690b0091df6c
+  archive_status: 1
+  note: 'Senate Armed Services Committee — Joint testimony of James R. Clapper Jr. (Director of National Intelligence), Marcel J. Lettre II (Under Secretary of Defense for Intelligence), and ADM Michael S. Rogers (Commander, U.S. Cyber Command and Director, NSA), ''Foreign Cyber Threats to the United States'', January 5, 2016 (released January 5, 2017). 7-page PDF — image-only scan, no text layer (extraction_type ocr-scan; clean-text sibling required for verbatim-quote derivation per BACKLOG #19 discipline). Primary attestation that Lettre held the USD(I) office in early 2016 and that he gave joint Worldwide Threat Assessment testimony alongside the DNI. Wayback capture 2017-01-11.'
+- url: http://www.armed-services.senate.gov/imo/media/doc/Lettre_09-13-16.pdf
+  format: pdf
+  status: archived
+  path: government/asc-lettre-usdi-testimony-20160913.pdf
+  archived_date: '2026-04-30'
+  sha256: 102c66efa16e8e0d84b3e48e95564783205cd8758c6cff467fe62fe81aa4129e
+  archive_status: 1
+  note: Senate Armed Services Committee — Statement for the Record of the Honorable Marcel Lettre, Under Secretary of Defense for Intelligence, Office of the Secretary of Defense, September 13, 2016. Hearing on the importance of strong encryption to national defense. Direct primary-source attestation that Lettre held the USD(I) office on September 13, 2016. Substantive 4-page testimony on USD(I) responsibilities for encryption standards, NSA partnerships, and DoD network security. Wayback capture from 2016-11-08.
+- url: http://www.armed-services.senate.gov/statemnt/2011/02%20February/Vickers%2002-15-11.pdf
+  format: pdf
+  status: archived
+  path: government/asc-vickers-usdi-confirmation-20110215.pdf
+  archived_date: '2026-04-30'
+  sha256: 4109b33398a6a3f44f475b87fd7105aeeadc66007d285ce24c488a55caa5100e
+  archive_status: 1
+  note: 'Senate Armed Services Committee — Advance Policy Questions for Michael G. Vickers, Nominee for the Position of Under Secretary of Defense for Intelligence (USD(I)). Hearing date February 15, 2011. 33 pages of substantive nomination responses including: USD(I) duties and functions (''primary responsibility is to support the Secretary of Defense in discharging his intelligence-related responsibilities and authorities under Title 10 and Title 50 U.S.C.; serving as the principal intelligence advisor to the Secretary of Defense''), Goldwater-Nichols framing, oversight relationships with NSA/DIA/NGA/NRO and other intelligence community elements. Vickers was confirmed and served as USD(I) ~March 2011 - April 2015, succeeding James Clapper. Wayback capture from 2011-03-10 (the original armed-services.senate.gov path returns the modern download wrapper, not the PDF directly).'
 - url: https://apps.uintah.utah.gov/ords/ucdev/r/public-searches/property-search?serial=140340003
   format: pdf
   status: archived
@@ -178,17 +202,19 @@
   path: government/foia-23-f-0906-request-description.pdf
   archived_date: '2026-04-30'
   sha256: 4ff7e9f3707a4fd0ecd5c965c03f716c07141c4fcb9f70057788b0e48152417d
-  archive_status: 1
+  archive_status: 3
   note: FOIA 23-F-0906 request description (Skvarla's original filing reproduced as PDF by DoD FOID, May 24, 2023). Documents the IPMO contract HQ003422C0064 record request scope.
+  wayback_date: '2026-04-30'
 - url: https://cdn.muckrock.com/foia_files/2023/09/11/23-F-0905_doc_1.pdf
   format: pdf
   status: archived
   path: government/foia-23-f-0905-doc-1-released.pdf
   archived_date: '2026-04-30'
   sha256: aabc7b540bd23b48dd378cf1b598a546125dcec694b33b4955e2a221bdb49498
-  archive_status: 1
+  archive_status: 3
   extraction_type: ocr-scan
   note: FOIA 23-F-0905 partial release — doc_1.pdf (34 pages, scanned/OCR PDF, 7.5MB). Released by DoD FOID Sept 11, 2023 in partial response to Skvarla's request for Sancorp AARO contract HQ003422C0094 records. Per the Final Response cover letter, this represents the 114-page-with-redactions portion (or a subset thereof; pdftotext returns no text — text extraction requires VLM read or modern OCR pass).
+  wayback_date: '2026-04-30'
 - url: https://cdn.muckrock.com/foia_files/2023/09/11/23-F-0905_doc_1.pdf#txt-sibling
   format: txt
   status: archived
@@ -311,8 +337,9 @@
   path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
   archived_date: '2026-04-30'
   sha256: e497fe9c3a2441c22ae9239f4c65c6b1141f52c4126b6b585c5fc9b804a701f5
-  archive_status: 1
+  archive_status: 3
   note: 'Brandi Vincent, DefenseScoop, Feb 25, 2026 — AARO publication blackout, Sue Gough caseload statement (>2,000 cases), Hegseth full-compliance quote re: forthcoming Trump UAP-disclosure executive order'
+  wayback_date: '2026-04-14'
 - url: https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=116282
   format: html
   status: archived
@@ -602,6 +629,15 @@
   sha256: 8c23519c62a5717427c2d09d5ade165284421f2e5facad76a565a94774067868
   archive_status: 3
   wayback_date: '2026-03-27'
+- url: https://media.defense.gov/2026/Feb/04/2003870671/-1/-1/1/DODIG-2026-047_REDACTED%20SECURE.PDF
+  format: pdf
+  status: archived
+  path: government/dodig-2026-047-redacted-secure.pdf
+  archived_date: '2026-04-30'
+  sha256: 13f10cd5f6f1314d6c985471aa1852d7d7b0ec9e882958b7af54d0f9c5e9a7bc
+  archive_status: 3
+  note: DoD Inspector General Management Advisory DODIG-2026-047, 'DoD Policy and Training on Dissemination Controls for Controlled Unclassified Information (CUI)', dated January 29, 2026. Memorandum addressed FOR THE UNDER SECRETARY OF DEFENSE FOR INTELLIGENCE AND SECURITY. Confirms DoDI 5200.48 'Controlled Unclassified Information (CUI)' is issued by OUSD(I&S) and establishes DoD-wide program requirements for designating, marking, handling, and decontrolling CUI. Five recommendations (two closed; three open) following an evaluation conducted April–August 2025. Substantive 2026-era institutional attestation of OUSD(I&S) ownership of CUI program. Companion to DODIG-2026-022 (Dec 2, 2025) on non-DoD-controlled electronic messaging systems. Wayback capture 2026-02-04; media.defense.gov direct returns 403 per sources-access.md.
+  wayback_date: '2026-02-07'
 - url: https://mondovisione.com/media-and-resources/news/c5-partners-appoints-former-us-national-security-agency-director-of-operations/
   format: html
   status: archived
@@ -888,6 +924,15 @@
   archive_status: 3
   note: Unknown Country article (June 2024) reporting on the Brandon Fugal-disclosed undisclosed 2018 meeting between Kirkpatrick (then DIO/S&TI at DIA) and the Skinwalker Ranch research team in Washington DC; cites Fugal's May 9 2024 X post photograph documenting Kirkpatrick at the head of the table during the April 19 2018 SSCI/SASC briefing, and the EXIF metadata anchoring the photograph to 1:31pm ET on April 19 2018 between 1:00-3:30pm ET. Documents the Greenstreet split-screen interview where Kirkpatrick denied any pre-AARO UAP duties and characterized himself as 'an independent outside reviewer'. Source for audit finding 3.4 (post-departure controversy).
   wayback_date: '2025-03-20'
+- url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section137&num=0&edition=prelim
+  format: html
+  status: archived
+  path: government/uscode-title10-section137-20260430.html
+  archived_date: '2026-04-30'
+  sha256: ec655cace02c4bad675e1fb76ee602cac5bd60de43ebe9a187ffbdc97c099fbb
+  archive_status: 3
+  note: '10 U.S.C. § 137 — Under Secretary of Defense for Intelligence and Security. Current statutory codification of the office. Original enactment: Pub. L. 107-314, Dec. 2, 2002 (NDAA FY2003). Rename USD(I) → USD(I&S) effected by Pub. L. 116-92 § 1621(e)(1)(A)(ii), Dec. 20, 2019 (NDAA FY2020). Subsequent amendments: Pub. L. 115-91 (2017), Pub. L. 115-232 (2018), Pub. L. 117-81 (2021). Captures the section''s four subsections: (a) appointment; (b) responsibilities (MIP direction, NIP execution, security matters, prescribed duties); (c) privacy/civil-liberties priority; (d) precedence after USD(P&R).'
+  wayback_date: '2025-03-22'
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
@@ -1335,6 +1380,15 @@
   sha256: ad3701da4d7201fe794440223df6ee19f947b8a65db8abeb922e7926bff14018
   archive_status: 3
   wayback_date: '2025-09-02'
+- url: https://www.defense.gov/News/Releases/Release/Article/2411893/dod-statement-on-personnel-changes-at-the-pentagon/
+  format: html
+  status: archived
+  path: government/defense-gov-personnel-changes-pentagon-20201110.html
+  archived_date: '2026-04-30'
+  sha256: 4891bb58c296c3ac7d47f54bb13413a23a4741f426970b4e8005f0f03efd1f1b
+  archive_status: 3
+  note: DoD Statement on Personnel Changes at the Pentagon, November 10, 2020. Confirms Joseph Kernan's tenure as Under Secretary of Defense for Intelligence and Security ended November 10, 2020, his resignation 'as planned for several months', and the appointment of Ezra Cohen-Watnick as Acting USD(I&S). Refers to Kernan as 'Admiral Kernan' (rank acknowledgment). Also documents simultaneous resignations of Acting USD(P) James Anderson and SecDef Chief of Staff Jen Stewart, and Anthony Tata's elevation to Senior Official Performing the Duties of USD(P). Wayback capture from 2021-10-17 (defense.gov direct returns 403 per sources-access.md).
+  wayback_date: '2025-07-17'
 - url: https://www.defense.gov/News/Releases/Release/Article/2853121/dod-announces-the-establishment-of-the-airborne-object-identification-and-manag/
   format: html
   status: archived
@@ -1427,6 +1481,15 @@
   note: AAWSAP contract HHM402-08-C-0072 modification P00001 (dated 2009-09-02), released via DIA FOIA Electronic Reading Room. Establishes Bigelow Aerospace Advanced Space Studies (BAASS) as the DIA AAWSAP contractor. CAGE code 54JU7.
   archive_status: 3
   wayback_date: '2026-01-12'
+- url: https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/237660/
+  format: pdf
+  status: archived
+  path: government/clapper-depsecdef-sap-packet-final-20091117.pdf
+  archived_date: '2026-04-30'
+  sha256: faa672adea2a5329bca4369eddf6db291cac747afda9386d47bae12f7a382b15
+  archive_status: 3
+  note: 'Memorandum from Under Secretary of Defense for Intelligence (USD(I)) James R. Clapper Jr. for the Deputy Secretary of Defense, dated November 17, 2009. Subject: ''Senator Harry Reid''s Request to Put the Advanced Aerospace Threat and Identification Program (AAITP) under Special Access Protection''. Clapper recommends AGAINST establishing a Special Access Program for AAWSAP/AATIP based on DIA technical review of FY09 deliverables and anticipated FY10 work. Direct primary-source attestation that Clapper held USD(I) on his official letterhead (''UNDER SECRETARY OF DEFENSE / 5000 DEFENSE PENTAGON / WASHINGTON, DC 20301-5000 / INTELLIGENCE''). Released via DIA FOIA Electronic Reading Room (FileId 237660); also mirrored at documents2.theblackvault.com/documents/dia/AAWSAP/09117-Final_Packet_Presented_to_DepSecDef.pdf. OCR scan with extraction artifacts (AAITP for AATIP, etc.) — extraction_type ocr-scan applies; clean-text sibling required for verbatim-quote derivation per BACKLOG #19.'
+  wayback_date: '2026-03-13'
 - url: https://www.dni.gov/files/ODNI/documents/assessments/Prelimary-Assessment-UAP-20210625.pdf
   format: pdf
   status: archived
@@ -1443,6 +1506,15 @@
   sha256: b1c1e5c720a6f157318a634454fe3592fcd21fcc14ce856296cd825764ea8ff4
   archive_status: 1
   note: DOE Office of Hearings and Appeals decision FIA-24-0036 (Issued July 17, 2024) on Dustin M. Slaughter's appeal challenging Oak Ridge Office's 'no records responsive' determination on FOIA request ORO-2024-02087-F regarding Sean Kirkpatrick's transition from AARO Director to ORNL CTO; the document Coulthart's Nov 2023 reporting flagged was the basis for the underlying FOIA. OHA denied the appeal — see decision text.
+- url: https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodd/514301p.pdf
+  format: pdf
+  status: archived
+  path: government/dodd-5143-01-usdis-charter-wayback-20260117.pdf
+  archived_date: '2026-04-30'
+  sha256: fd30c130c9b6d7d5cd22e3b4cd659ff2631573fab7a302ff3b333e1335f1486e
+  archive_status: 3
+  note: 'DoD Directive 5143.01 — ''Under Secretary of Defense for Intelligence and Security (USD(I&S))'', original publication October 24, 2014, incorporating Change 2 April 6, 2020. The directive is the office''s organizational charter: enumerates USD(I&S) authority, direction, and control over the Defense Intelligence Agency, National Geospatial-Intelligence Agency, National Security Agency/Central Security Service, National Reconnaissance Office, and Defense Counterintelligence and Security Agency. Issued under SecDef authority per 10 U.S.C. §§ 113, 137. USD(I&S) serves as Principal Staff Assistant for Defense Intelligence, Counterintelligence, Security, sensitive activities, and dual-hatted Director of Defense Intelligence to ODNI. Wayback capture from 2026-01-17; esd.whs.mil direct returns 403 (Akamai-blocked per sources-access.md).'
+  wayback_date: '2026-01-17'
 - url: https://www.executivebiz.com/articles/bluevoyant-names-debora-plunkett-ariel-litvin-to-board-of-directors-ronald-moultrie-to-advisory-board
   format: html
   status: archived
@@ -1467,8 +1539,18 @@
   path: government/eo-14347-restoring-department-of-war-20250910.txt
   archived_date: '2026-04-30'
   sha256: ca7aff5304b746d247729772e83971311cbf362ca00d958307064cb413c030d6
-  archive_status: 1
+  archive_status: 3
   note: 'Executive Order 14347 of September 5, 2025 — ''Restoring the United States Department of War'' — Federal Register Volume 90 Number 173, published September 10, 2025, pages 43893-43894 (FR Doc No: 2025-17508). Authorizes the secondary title ''Department of War'' for DoD and ''Secretary of War'' for SecDef; statutory references to Department of Defense remain controlling per Sec. 2(e). Primary-source attestation of the rebrand referenced in OUSW(I&S) terminology across Sancorp''s 2025+ contracts (HQ003425FE388 CL&S POABO, HQ003425FE405 Office of the Under Secretary of War for Policy).'
+  wayback_date: '2026-04-30'
+- url: https://www.gao.gov/assets/gao-21-295.pdf
+  format: pdf
+  status: archived
+  path: government/gao-21-295-defense-intelligence-ousdis-oversight-202105.pdf
+  archived_date: '2026-04-30'
+  sha256: cc4c0f4fe8d0363cfee5cfa9c078ee851bb94c4f0cb0fe79edf9cdf6e95f5456
+  archive_status: 3
+  note: 'GAO-21-295, ''Defense Intelligence and Security: DOD Needs to Establish Oversight Expectations and to Develop Tools That Enhance Accountability'', published May 6, 2021. Report to Congressional Committees on OUSD(I&S) governance and oversight gaps. Findings: office hasn''t set clear expectations for its oversight mission; hasn''t clarified roles/responsibilities risking confusion or duplicative work; lacks tools to measure progress. Documents OUSD(I&S) organizational evolution 2017-2020 — gained responsibilities in artificial intelligence, law enforcement, personnel vetting, and identity intelligence; in 2018 assumed oversight of defense law enforcement authorities. The GAO recommendations are referenced verbatim in Moultrie''s HASC ISO Subcommittee testimony March 17, 2022 (lines 123-130). Wayback capture from 2021-05-06; gao.gov direct returns 403.'
+  wayback_date: '2026-03-04'
 - url: https://www.gao.gov/products/b-422985.4,b-422985.5
   format: html
   status: archived
@@ -1512,6 +1594,24 @@
   note: Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 (S. 3905). Senate Select Committee on Intelligence. Contains the 'Advanced Aerial Threats' section that directs the DNI/SecDef UAP report within 180 days (which became the June 2021 ODNI Preliminary Assessment). References 'the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence' — the Senate's on-record acknowledgment of UAPTF and its ONI home.
   archive_status: 3
   wayback_date: '2026-03-23'
+- url: https://www.govinfo.gov/content/pkg/PLAW-107publ314/pdf/PLAW-107publ314.pdf
+  format: pdf
+  status: archived
+  path: government/pl-107-314-ndaa-fy2003.pdf
+  archived_date: '2026-04-30'
+  sha256: 637d2d73cbda69511c16f2c83f1f433c8bad190d58bf9b30b2d7587e55a08964
+  archive_status: 3
+  note: Public Law 107-314 (Bob Stump National Defense Authorization Act for Fiscal Year 2003), enacted December 2, 2002. 306-page enrolled-bill text from GovInfo. Title IX § 901 'Under Secretary of Defense for Intelligence' establishes the position by inserting new 10 U.S.C. § 137; transfers prior § 137 to § 139a (Director of Defense Research and Engineering); amends § 131(b) Executive Schedule placement after Under Secretary of Defense for Personnel and Readiness. Subsection (d) preserves National Security Act of 1947 authorities; subsection (e) requires SecDef report to Congress within 90 days. Establishment-statute primary source.
+  wayback_date: '2026-04-24'
+- url: https://www.govinfo.gov/content/pkg/PLAW-116publ92/pdf/PLAW-116publ92.pdf
+  format: pdf
+  status: archived
+  path: government/pl-116-92-ndaa-fy2020.pdf
+  archived_date: '2026-04-30'
+  sha256: 1bdb080816ea7a0129121d2767bf124d9e5eb15c51bb95870669e9cf25e23cf1
+  archive_status: 3
+  note: 'Public Law 116-92 (National Defense Authorization Act for Fiscal Year 2020), enacted December 20, 2019. 1120-page enrolled-bill text from GovInfo. Title XVI Subtitle B § 1621 ''Redesignation of Under Secretary of Defense for Intelligence as Under Secretary of Defense for Intelligence and Security'' executes the rename effective on enactment date: (a) redesignates the Under Secretary; (b) redesignates the Deputy Under Secretary; (c) rule of construction (no expansion of authorities); (d) inserts new subsection (c) into 10 U.S.C. § 137 establishing privacy/civil-liberties protection as ''a top priority'' for USD(I&S); (e) conforming amendments across Titles 5 and 10. Rename-statute primary source.'
+  wayback_date: '2026-04-05'
 - url: https://www.highergov.com/awardee/sancorp-consulting-llc-10004865/
   format: html
   status: archived
@@ -1625,8 +1725,9 @@
   path: news/nbcnews-trump-ufo-files-interesting-documents-20260418.html
   archived_date: '2026-04-30'
   sha256: d5a2787e1ff386052123c892af8b8971d610b4956c6c9a6d40dc2e10aa833e7c
-  archive_status: 1
+  archive_status: 3
   note: 'Kyla Guilfoil, NBC News, Apr 18, 2026 — formal War Department statement to NBC News Saturday: AARO disclosure-coordination statement with full verbatim text'
+  wayback_date: '2026-04-22'
 - url: https://www.newsnationnow.com/politics/grusch-hired-burlison/
   format: html
   status: archived
@@ -2000,8 +2101,9 @@
   path: government/usaspending-hq003418c0123.txt
   archived_date: '2026-04-30'
   sha256: 6c8b74486ecb862debb71aaeed8a0f3122c35e3224a9fa52f2e7ce6a56ae1a31
-  archive_status: 1
+  archive_status: 3
   note: 'USAspending JSON record for Sancorp CI Metrics Study Support contract HQ003418C0123. Total obligation: $2,399,395. Signed 2018-09-27 → end 2020-09-27. Awarded by DoD/Washington Headquarters Services. Earliest known Sancorp contract with OUSD(I&S) (predates the Insider Threat / IPMO / AARO contracts). Establishes Sancorp-OUSD(I&S) relationship from 2018.'
+  wayback_date: '2026-04-30'
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ003419C0159_9700_-NONE-_-NONE-
   format: txt
   status: archived
@@ -2062,8 +2164,9 @@
   path: government/usaspending-hq003424c0046.txt
   archived_date: '2026-04-30'
   sha256: cc9c72558701bf9e1f952da3a51b4704e6dbeab22d2af7cedb861d97d499d41c
-  archive_status: 1
+  archive_status: 3
   note: 'USAspending JSON record for Sancorp ''Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services'' contract HQ003424C0046. Total obligation: $5,751,921. Signed 2024-05-31 → end 2026-05-27. Awarded by DoD/Washington Headquarters Services. Continuation of HQ003423C0061 (the IPMO-aligned contract chain). Spans the OUSD(I&S) → OUSW(I&S) EO 14347 transition (Sept 2025).'
+  wayback_date: '2026-04-30'
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ003424C0096_9700_-NONE-_-NONE-
   format: txt
   status: archived
@@ -2079,8 +2182,9 @@
   path: government/usaspending-hq003424f0411.txt
   archived_date: '2026-04-30'
   sha256: 38b3e7caa4f2d968c48a04808c558e4ba8fde890bc43ca93ce213f815fdbab31
-  archive_status: 1
+  archive_status: 3
   note: 'USAspending JSON record for Sancorp ''LABOR'' task order HQ003424F0411 (parent vehicle 47QRAA22D00C4 — GSA OASIS-type IDV). Total obligation: $11,214,091 (largest single Sancorp award to date). Signed 2024-07-23 → end 2026-12-31. Per Sancorp Past Performance page this contract supports ''Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and the Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction.'''
+  wayback_date: '2026-04-30'
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ003425FE388_9700_HQ003425A0001_9700
   format: txt
   status: archived
@@ -2096,8 +2200,9 @@
   path: government/usaspending-hq003425fe405.txt
   archived_date: '2026-04-30'
   sha256: 640359cd8c4a922bdea97925e98b5ad0916b33531af472ed72113e0d74955efe
-  archive_status: 1
+  archive_status: 3
   note: 'USAspending JSON record for Sancorp Office Management and Executive Support task order HQ003425FE405 (parent 47QRAA22D00C4). Total obligation: $8,410,283. Signed 2025-09-30 → end 2030-06-15. Awarded by DoD/Washington Headquarters Services. Per Sancorp Past Performance: ''Office of the Under Secretary of War for Policy, Office Management & Executive Support Services'' — the OUSW Policy contract (post-EO 14347 OUSD→OUSW rebrand reflected in scope title).'
+  wayback_date: '2026-04-30'
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ085926FG471_9700_HQ085926DG304_9700
   format: txt
   status: archived
@@ -2113,8 +2218,9 @@
   path: government/usaspending-w519tc23f0545.txt
   archived_date: '2026-04-30'
   sha256: 6ce735665dd6ae412f9312cbcc10182f12a91a9939861a528c57f97c01ac3f44
-  archive_status: 1
+  archive_status: 3
   note: 'USAspending JSON record for Sancorp CDAO Algorithmic Warfare and Public Affairs task order W519TC23F0545 (parent W519TC23G0042 — AI Talent 2.0 BOA). Total obligation: $1,592,695. Signed 2023-09-25 → end 2025-09-27. Awarded by Department of the Army. Description: ''THE PURPOSE OF THIS ACTION IS FULFILL CDAO''''S REQUIREMENT FOR ALGORITHMIC WARFARE AND PUBLI[c affairs]''. Per Sancorp Past Performance: ''Department of Defense, Chief Digital and Artificial Intelligence Office, Algorithmic Warfare/Public Affairs.'''
+  wayback_date: '2026-04-30'
 - url: https://www.usaspending.gov/award/CONT_AWD_W912CL25CA005_9700_-NONE-_-NONE-
   format: txt
   status: archived
@@ -2130,8 +2236,9 @@
   path: government/usaspending-hq003424a0023.txt
   archived_date: '2026-04-30'
   sha256: 18d9af5c58ffd5f8bc7e4088c1d644f4907d88b1445c9eae96e6659259bd990c
-  archive_status: 1
+  archive_status: 3
   note: 'USAspending JSON record for parent IDIQ HQ003424A0023 (Sancorp). Description: ''TECHNICAL, ADMINISTRATIVE AND PROFESSIONAL SUPPORT SERVICES TO OFFICE OF THE UNDER SECRETARY...'' Period: 2024-09-18 → 2029-09-18. Awarded by DoD/Washington Headquarters Services. Total obligation $0 (IDIQ vehicle; obligation goes through call orders).'
+  wayback_date: '2026-04-30'
 - url: https://www.usaspending.gov/award/CONT_IDV_HQ003425A0001_9700
   format: txt
   status: archived
@@ -2159,6 +2266,33 @@
   archive_status: 3
   note: war.gov (formerly defense.gov before EO 14347) official Pentagon biography for Ronald S. Moultrie. Captures USD(I&S) tenure framing, dual-hat ODNI Director of Defense Intelligence role, and 36+ year DoD/NIC career retiring from NSA Director of Operations in 2015. Direct retrieval blocked (war.gov returns 403); fetched via Wayback Machine (capture 2026-02-01).
   wayback_date: '2026-02-01'
+- url: https://www.war.gov/About/Biographies/Biography/Article/4276892/bradley-d-hansell/
+  format: html
+  status: archived
+  path: government/wargov-hansell-biography.html
+  archived_date: '2026-04-30'
+  sha256: 0929eb827e674c93ba983a3ab88899542471c1ab62596555905d9fde282ea740
+  archive_status: 3
+  note: Bradley D. Hansell biography page on war.gov. Post-EO-14347 (Sept 5, 2025) capture; bio text reads 'Bradley D. Hansell serves as the Under Secretary of War for Intelligence and Security. In this role, he is the principal advisor to Secretary of War on intelligence, security, and law enforcement matters.' Confirms (a) Hansell holds the position post-Moultrie, (b) the office is currently named 'Under Secretary of War for Intelligence and Security' on the institutional bio page, and (c) the role description includes 'law enforcement matters' (an articulation expansion vs. the Moultrie-era bio). Earliest Wayback capture is 2025-09-06, one day after EO 14347 was signed. defense.gov-form URL returns 301 redirect to war.gov. Wayback capture 2026-02-25.
+  wayback_date: '2026-02-25'
+- url: https://www.war.gov/About/Leadership/
+  format: html
+  status: archived
+  path: government/wargov-leadership-20260109.html
+  archived_date: '2026-04-30'
+  sha256: 12658a84fdff94d56bec98b0908bece23381b7d6cf7a6e970fd22c28d8018cd1
+  archive_status: 3
+  note: war.gov Leadership index page (post-EO-14347 rebrand). Lists Secretary of War, Deputy Secretary of War, Chairman/Vice Chairman of the Joint Chiefs as primary leadership; navigates to Office-of-the-Secretary-of-War for the under-secretariat structure. Wayback capture 2026-01-09. Useful for institutional context, not a primary source for OUSD(I&S) specifically.
+  wayback_date: '2026-04-28'
+- url: https://www.war.gov/About/Office-of-the-Secretary-of-War/
+  format: html
+  status: archived
+  path: government/wargov-office-of-secretary-of-war.html
+  archived_date: '2026-04-30'
+  sha256: 77ecbb6c8a9499cfb35f07532fd021b629a89a6fb1917fbf703f912b85be4882
+  archive_status: 3
+  note: 'Office of the Secretary of War (OSW) institutional page on war.gov. Lists all USW (Under Secretary of War) positions with establishment dates. Direct attestation: ''USW (Intelligence & Security) EST. 2002'' — confirming the USD(I) → USW(I&S) lineage and original 2002 establishment per NDAA FY2003. Other USWs listed: Research & Engineering (1977), Acquisition & Sustainment (1986), Comptroller (1990), Personnel & Readiness (1993), Policy (1977). Page describes OSW as ''responsible for policy development, planning, resource management and program evaluation'' with offices of top civilian decision-makers including ''intelligence''. Wayback capture 2025-12-25; war.gov direct returns 403.'
+  wayback_date: '2026-04-28'
 - url: https://www.war.gov/News/Releases/Release/Article/616969/new-joint-interagency-combined-space-operations-center-to-be-established/
   format: html
   status: archived
