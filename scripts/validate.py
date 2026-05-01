@@ -1057,12 +1057,26 @@ _TEMPLATE_TYPE_DIRS = {
 
 _REQUIRED_META_FIELDS = ("id", "type", "schema_version", "created")
 
+# meta/topic/working-notes/ is the holding pen for in-progress contributor
+# synthesis (handoff drafts, audit scratch, investigation notes). Per
+# meta/topic/working-notes/README.md, files there sit outside the validated
+# content layer and the schema-frontmatter contract — they're transient
+# scratch material, deleted on integration. Skip the directory entirely so
+# untracked drafts don't block the validator. The directory's own README.md
+# is also under this prefix; the README is hand-written with valid
+# frontmatter but doesn't need to be validated either.
+_WORKING_NOTES_PREFIX = "meta/topic/working-notes/"
+
 
 def iter_governance_files():
-    """Yield every .md file under meta/, ordered by path for stable reports."""
+    """Yield every .md file under meta/ except working-notes drafts,
+    ordered by path for stable reports."""
     if not META_DIR.is_dir():
         return
     for p in sorted(META_DIR.rglob("*.md")):
+        rel = p.relative_to(REPO_ROOT).as_posix()
+        if rel.startswith(_WORKING_NOTES_PREFIX):
+            continue
         yield p
 
 
