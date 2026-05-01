@@ -783,8 +783,9 @@
   path: government/oversight-house-gov-uap-hearing-page-20241113.html
   archived_date: '2026-05-01'
   sha256: dea45ef407ed33f41e28b2e84906d4ded276d5f6b838f728cc444105abf6d8d3
-  archive_status: 1
+  archive_status: 3
   note: 'House Oversight + Cybersecurity/IT subcommittee hearing record page for ''Unidentified Anomalous Phenomena: Exposing the Truth'', November 13, 2024 11:30 am, 2154 Rayburn House Office Building. Joint hearing of Cybersecurity, Information Technology, and Government Innovation Subcommittee + National Security, the Border, and Foreign Affairs Subcommittee. Wayback capture 2024-11-08.'
+  wayback_date: '2026-03-18'
 - url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-implications-on-national-security-public-safety-and-government-transparency/
   format: html
   status: archived
@@ -799,16 +800,18 @@
   path: government/oversight-house-gov-luna-uap-transparency-press-release-20260331.html
   archived_date: '2026-05-01'
   sha256: f065f5af8d231edf35160751463313d3e9761d92d88ee3aac12be428f3477039
-  archive_status: 1
+  archive_status: 3
   note: House Oversight and Government Reform press release dated March 31, 2026, headlined 'Luna Continues Transparency Investigation into UAPs,' announcing Task Force on the Declassification of Federal Secrets letter to Secretary of War Pete Hegseth requesting 46 UAP video files (45 previously unreleased) with an April 14, 2026 deadline.
+  wayback_date: '2026-04-22'
 - url: https://oversight.house.gov/release/mace-grothman-open-joint-hearing-on-unidentified-anomalous-phenomena/
   format: html
   status: archived
   path: government/oversight-house-gov-mace-grothman-opening-press-release-20241113.html
   archived_date: '2026-05-01'
   sha256: 7415921734d043e0933f676234338d84f7ddb769891ab2d5c53d2d0984375333
-  archive_status: 1
+  archive_status: 3
   note: 'House Oversight and Government Reform press release dated November 13, 2024, headlined ''Mace & Grothman Open Joint Hearing on Unidentified Anomalous Phenomena.'' Reproduces verbatim ''key excerpts'' from the opening statements of Subcommittee on Cybersecurity, Information Technology, and Government Innovation Chairwoman Nancy Mace (R-S.C.) and Subcommittee on National Security, the Border, and Foreign Affairs Chairman Glenn Grothman (R-Wis.) at the hearing ''Unidentified Anomalous Phenomena: Exposing the Truth.'''
+  wayback_date: '2026-02-13'
 - url: https://oversight.house.gov/wp-content/uploads/2023/07/Dave_G_HOC_Speech_FINAL_For_Trans.pdf
   format: pdf
   status: archived
@@ -839,8 +842,9 @@
   path: government/oversight-house-gov-uap-request-letter-luna-20260331.pdf
   archived_date: '2026-05-01'
   sha256: 556f9b0567b16acfef66048b64b68df616d6e9f38710af17f8cc7cab89d4c0ec
-  archive_status: 1
+  archive_status: 3
   note: 'House Oversight and Government Reform Task Force on the Declassification of Federal Secrets formal request letter from Chairwoman Anna Paulina Luna to Secretary of War Pete Hegseth, dated March 31, 2026. Letter requests delivery of 46 enumerated UAP video files (clips referenced by callsign and date) by no later than April 14, 2026. Letter cites the September 9, 2025 Task Force hearing and the November 13, 2024 House Oversight Cybersecurity/IT subcommittee hearing (footnote 2: ''Statement from Nancy Mace, Member, U.S. House of Representatives''). Cc: The Honorable Jasmine Crockett, Ranking Member. PDF metadata Author: Meunier, Sam (Oversight committee staff). Pages: 4.'
+  wayback_date: '2026-04-22'
 - url: https://patents.google.com/patent/US20200357080A1/en
   format: html
   status: archived
@@ -1020,8 +1024,9 @@
   path: social/trumpstruth-statuses-36826-uap-disclosure-20260219.html
   archived_date: '2026-05-01'
   sha256: 1b5768cfd892a70bdf60d6a33c2dd50cb79183424cfd82b974d996fe53ae80b7
-  archive_status: 1
+  archive_status: 3
   note: 'Donald J. Trump TRUTH Social post @realDonaldTrump status ID 116100300268316472, posted February 19, 2026 8:13 PM EST. Original URL: truthsocial.com/@realDonaldTrump/116100300268316472. The post directs ''the Secretary of War, and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs), and any and all other information connected to these highly complex, but extremely interesting and important, matters.'' Archived via Trump''s Truth (trumpstruth.org), an independent archive of Trump''s TRUTH Social posts. Wayback capture 2026-03-03. This is the underlying directive that DefenseScoop February 25, 2026 (already-archived) referenced as the ''forthcoming'' UAP-disclosure executive order Hegseth committed to comply with.'
+  wayback_date: '2026-03-03'
 - url: https://unknowncountry.com/headline-news/undisclosed-2018-meeting-by-former-aaro-head-sean-kirkpatrick-with-skinwalker-ranch-researchers-calls-government-transparency-into-question/
   format: html
   status: archived
