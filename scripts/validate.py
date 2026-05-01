@@ -97,7 +97,7 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-from lib._common import extract_source_text, normalize_for_compare
+from lib._common import extract_source_text, manifest_format, normalize_for_compare
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
@@ -658,8 +658,21 @@ def check_verbatim_quotes(node_path, text, rel_path):
             continue
         source_text = extract_source_text(source_file)
         if source_text is None:
-            issues.append(Issue(rel_path, "warn",
-                f"Quote at line {line_no} cites sources/{rel_source} but text extraction failed (pdftotext missing or failed)"))
+            # Distinguish binary-by-design (image/video/audio per manifest
+            # format) from extraction-infrastructure failure. pdftotext
+            # didn't fail on a .mp4; it was never going to run. Binary-
+            # source-citing quotes require manual contributor verification —
+            # the validator can't substring-match against bytes that aren't
+            # text. Frame the warning accordingly.
+            fmt = manifest_format(rel_source)
+            if fmt in ("image", "video", "audio"):
+                issues.append(Issue(rel_path, "warn",
+                    f"Quote at line {line_no} cites sources/{rel_source} "
+                    f"(format: {fmt}) — verbatim-quote check requires manual "
+                    f"contributor verification of binary source"))
+            else:
+                issues.append(Issue(rel_path, "warn",
+                    f"Quote at line {line_no} cites sources/{rel_source} but text extraction failed (pdftotext missing or failed)"))
             continue
         norm_quote = normalize_for_compare(quote_text)
         norm_source = normalize_for_compare(source_text)

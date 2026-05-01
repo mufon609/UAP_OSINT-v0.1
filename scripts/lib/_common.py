@@ -40,6 +40,7 @@ MANIFEST_PATH = SOURCES_DIR / "manifest.yaml"
 # Per-process caches.
 _source_text_cache = {}             # Path -> extracted plain text or None
 _extraction_type_cache = None       # rel-path str -> extraction_type str
+_manifest_format_cache = None       # rel-path str -> format str
 
 
 def _load_extraction_types():
@@ -69,6 +70,38 @@ def _load_extraction_types():
         if path and et:
             _extraction_type_cache[path] = et
     return _extraction_type_cache
+
+
+def manifest_format(rel_path):
+    """Return the manifest's `format` value for a source path (relative to
+    sources/), or None if the path or the field is absent. Lazy + cached.
+
+    Used to distinguish binary-by-design sources (image/video/audio) from
+    text-extractable formats when the verbatim-quote check needs to frame
+    its warning accurately — pdftotext didn't fail on a .mp4; it was
+    never going to run.
+    """
+    global _manifest_format_cache
+    if _manifest_format_cache is not None:
+        return _manifest_format_cache.get(rel_path)
+    _manifest_format_cache = {}
+    if not MANIFEST_PATH.exists():
+        return None
+    try:
+        with open(MANIFEST_PATH) as f:
+            entries = yaml.safe_load(f) or []
+    except yaml.YAMLError:
+        return None
+    if not isinstance(entries, list):
+        return None
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        path = entry.get("path")
+        fmt = entry.get("format")
+        if path and fmt:
+            _manifest_format_cache[path] = fmt
+    return _manifest_format_cache.get(rel_path)
 
 
 # HTML inline tags — replaced with empty string during cleaning so mid-word
