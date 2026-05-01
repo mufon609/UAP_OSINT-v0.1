@@ -28,7 +28,10 @@ description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`])
   Historical Record Report Volume I states "AARO will publish Volume II in accordance with the date established in Section 6802 of the National Defense Authorization Act for Fiscal Year 2023" — Section 6802(j) of the Intelligence Authorization Act for Fiscal Year 2023 set the deadline at "Not later than 540 days after the date of the enactment". As of February 25, 2026 (per archived DefenseScoop coverage), AARO has not published Volume II.
 
 
-  AARO''s FY 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena, dated November 14, 2024, documents 757 UAP reports received during the May 1, 2023 – June 1, 2024 reporting period (485 occurred during the reporting period; 272 occurred outside of the reporting period between 2021 and 2022 and were not included in previous annual UAP reports). 49 cases were resolved during the reporting period (all to prosaic objects); 243 additional cases were recommended for closure pending peer review; 444 cases lacked sufficient data and were placed in the Active Archive. AARO determined 21 cases merit further analysis by its IC and S&T partners "based on reported anomalous characteristics and/or behaviors." Kosloski''s November 19, 2024 Statement for the Record reported AARO has "over 1,600 UAP reports in its holdings from across the U.S. government" to date. The Annual Report documents the GREMLIN prototype sensor system, developed by Georgia Tech Research Institute (GTRI), for detecting, tracking, and characterizing UAP — first test event March 2024 with a 90-day pattern-of-life collection scheduled at a site of national security.
+  AARO''s FY 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena, dated November 14, 2024, documents 757 UAP reports received during the May 1, 2023 – June 1, 2024 reporting period (485 occurred during the reporting period; 272 occurred outside of the reporting period between 2021 and 2022 and were not included in previous annual UAP reports). 49 cases were resolved during the reporting period (all to prosaic objects); 243 additional cases were recommended for closure pending peer review; 444 cases lacked sufficient data and were placed in the Active Archive. AARO determined 21 cases merit further analysis by its IC and S&T partners "based on reported anomalous characteristics and/or behaviors."
+
+
+  Kosloski''s November 19, 2024 Statement for the Record reported AARO has "over 1,600 UAP reports in its holdings from across the U.S. government" to date and stated, "to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology." The FY 2024 Annual Report documents the GREMLIN prototype sensor system, developed by Georgia Tech Research Institute ([`/organizations/gtri`]), for detecting, tracking, and characterizing UAP — first test event March 2024 with a 90-day pattern-of-life collection scheduled at a site of national security.
 
   '
 primary_sources:
@@ -493,6 +496,15 @@ quotes:
   significance: Kosloski Nov 19 2024 SASC Statement for the Record — AARO's cumulative holdings exceed 1,600 UAP reports across the U.S. government
   context: 'AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024'
   statement_date: '2024-11-19'
+- id: q36a
+  added_date: '2026-05-01'
+  text: 'It is important to underscore that, to date, AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology.'
+  source:
+    path: government/aaro-kosloski-sfr-sasc-20241119.pdf
+    location: 'p. 1, ¶5 of statement body'
+  significance: 'Kosloski Nov 19 2024 SASC SFR — load-bearing positional claim from the new Director: AARO has discovered no verifiable evidence of extraterrestrial beings, activity, or technology. Parallels and reaffirms HRR Vol I findings under Kosloski tenure.'
+  context: 'AARO Director Dr. Jon Kosloski Statement for the Record, Senate Armed Services Subcommittee on Emerging Threats and Capabilities, November 19, 2024'
+  statement_date: '2024-11-19'
 - id: q37
   added_date: '2026-05-01'
   text: 'AARO will publish Volume II in accordance with the date established in Section 6802 of the National Defense Authorization Act for Fiscal Year 2023 (FY23); Volume II will provide analysis of information acquired by AARO after the date of the publication of Volume I.'
@@ -844,6 +856,12 @@ entities_referenced:
   name: AARO Executive Council
   wrap_path: /organizations/aaroexec
   context_summary: 'AAROEXEC — renamed from AOIMEXEC by the Hicks AARO establishment memorandum; provides oversight and direction to AARO per the memorandum.'
+- id: e16
+  added_date: '2026-05-01'
+  entity_type: organization
+  name: Georgia Tech Research Institute
+  wrap_path: /organizations/gtri
+  context_summary: 'Georgia Tech Research Institute (GTRI) — developer of the GREMLIN sensor architecture per AARO FY24 Consolidated Annual Report on UAP. GREMLIN deployed in 1Q FY 2025 to support pattern-of-life analysis at a site of national security.'
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'
