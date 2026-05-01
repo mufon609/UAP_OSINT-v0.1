@@ -973,6 +973,14 @@
   archive_status: 3
   note: '10 U.S.C. § 137 — Under Secretary of Defense for Intelligence and Security. Current statutory codification of the office. Original enactment: Pub. L. 107-314, Dec. 2, 2002 (NDAA FY2003). Rename USD(I) → USD(I&S) effected by Pub. L. 116-92 § 1621(e)(1)(A)(ii), Dec. 20, 2019 (NDAA FY2020). Subsequent amendments: Pub. L. 115-91 (2017), Pub. L. 115-232 (2018), Pub. L. 117-81 (2021). Captures the section''s four subsections: (a) appointment; (b) responsibilities (MIP direction, NIP execution, security matters, prescribed duties); (c) privacy/civil-liberties priority; (d) precedence after USD(P&R).'
   wayback_date: '2025-03-22'
+- url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title50-section3373&num=0&edition=prelim
+  format: html
+  status: archived
+  path: government/uscode-title50-section3373-20260501.html
+  archived_date: '2026-05-01'
+  sha256: d284104afff9bf4d9a243b4829c0b55df47c1cf8c304140f110ef31f19746050
+  archive_status: 1
+  note: '50 U.S.C. § 3373 — ''Establishment of All-domain Anomaly Resolution Office''. Codification of Section 1683 of the James M. Inhofe National Defense Authorization Act for Fiscal Year 2023 (P.L. 117-263, December 23, 2022; supersedes Section 1683 of NDAA FY2022 P.L. 117-81 which originally directed AARO''s establishment). Title 50, Chapter 45 (Miscellaneous Intelligence Community Authorities), Subchapter IV (Collection, Analysis, and Sharing of Intelligence). Specifies: (a) establishment within OSD or joint OSD-ODNI organization; (b) Director and Deputy Director appointment by SecDef in consultation with DNI; reporting line to Deputy Secretary of Defense and Principal Deputy Director of National Intelligence; classified-briefing obligations sunset December 31, 2026; GAO audit regime; line-organization designation authority; and the appropriate-congressional-committees list.'
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived

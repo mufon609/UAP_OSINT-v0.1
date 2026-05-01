@@ -13,7 +13,7 @@ description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`])
   The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 by Deputy Secretary of Defense David L. Norquist; the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established on November 23, 2021 as the successor to the UAPTF and renamed to AARO in July 2022. AARO operates in coordination with the Office of the Director of National Intelligence ([`/organizations/odni`]).
 
 
-  Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024.
+  Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director (Acting Director) in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024.
 
 
   AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) provides AARO Support Services under prime contracts HQ003422C0094 (signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The contract Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the contract Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. The FY 2026 Office of the Secretary of Defense Budget Estimates list the program as Advanced Intelligence Capabilities (AIC); the public-facing aaro.mil website continues to use the AARO name.
@@ -84,9 +84,11 @@ primary_sources:
   format: html
 - path: news/nbcnews-trump-ufo-files-interesting-documents-20260418.html
   format: html
+- path: government/uscode-title50-section3373-20260501.html
+  format: html
 document_intrinsic:
   full_name: All-domain Anomaly Resolution Office
-  statutory_authority: Section 1683 of the National Defense Authorization Act for Fiscal Year 2022
+  statutory_authority: 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022)
   established_date: '2022-07-15'
   parent_organization_path: /organizations/dod
   current_director_path: /people/jonathan-kosloski
@@ -486,7 +488,7 @@ timeline:
 - id: t12
   added_date: '2026-04-30'
   date: '2023-09-11'
-  event: DoD Freedom of Information Division released FOIA case 23-F-1114 to The Black Vault — full 116-page Performance Work Statement for the Sancorp AARO support contract HQ003422C0094.
+  event: DoD Freedom of Information Division released FOIA case 23-F-1114 to The Black Vault — 125 pages determined to be responsive, 11 pages withheld in their entirety per 5 U.S.C. § 552(b)(5), including the Performance Work Statement for the Sancorp AARO support contract HQ003422C0094.
   category: foia
   source:
     path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
