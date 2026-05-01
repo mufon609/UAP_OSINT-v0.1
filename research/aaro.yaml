@@ -13,10 +13,13 @@ description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`])
   The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 by Deputy Secretary of Defense David L. Norquist; the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established on November 23, 2021 as the successor to the UAPTF and renamed to AARO in July 2022. AARO operates in coordination with the Office of the Director of National Intelligence ([`/organizations/odni`]).
 
 
-  Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director (Acting Director) in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024.
+  Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director (Acting Director) in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024. The Hicks establishment memorandum also renamed the predecessor AOIMEXEC to the AARO Executive Council ([`/organizations/aaroexec`]) — its mission, per the memorandum, is "to provide oversight and direction to the AARO." On November 19, 2024 Kosloski appeared before the Senate Armed Services Subcommittee on Emerging Threats and Capabilities — his first hearing as AARO Director — presenting three case resolutions: the 2013 Puerto Rico transmedium case (assessed as a pair of balloons or sky lanterns floating at 7 knots over an airport, descending to 200 meters), the 2017 GOFAST video (assessed as an object closer to 13,000 feet rather than near the water, with apparent fast movement explained by parallax), and a 2018 Mt. Etna UAV case (assessed as an object 170 meters from the erupting plume rather than flying through it).
 
 
   AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) provides AARO Support Services under prime contracts HQ003422C0094 (signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The contract Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the contract Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. The FY 2026 Office of the Secretary of Defense Budget Estimates list the program as Advanced Intelligence Capabilities (AIC); the public-facing aaro.mil website continues to use the AARO name.
+
+
+  AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP recovery and reverse-engineering program brought to AARO''s attention by interviewees who claimed it was a sensitive DHS compartment to cover up the retrieval and exploitation of "non-human biologics." Per the report, KONA BLUE traces its origins to the DIA-managed AAWSAP/AATIP program (cancelled by DIA in 2012); after cancellation, supporters proposed to DHS that they create and fund a new version under a Special Access Program covering UAP investigations, paranormal research and reverse-engineering of "any recovered off-world spacecraft that they hoped to acquire." A Prospective Special Access Program (PSAP) was officially requested but eventually rejected by DHS leadership for lacking merit. The report''s finding: "no extraterrestrial craft or bodies were ever collected" and the SAP "was never approved or stood up, and no data or material was transferred to DHS."
 
   '
 primary_sources:
@@ -85,6 +88,10 @@ primary_sources:
 - path: news/nbcnews-trump-ufo-files-interesting-documents-20260418.html
   format: html
 - path: government/uscode-title50-section3373-20260501.html
+  format: html
+- path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
+  format: pdf
+- path: government/armed-services-senate-gov-sasc-aaro-event-20241119.html
   format: html
 document_intrinsic:
   full_name: All-domain Anomaly Resolution Office
@@ -309,6 +316,166 @@ quotes:
   significance: 'Defense Department spokesperson statement to NBC News (Apr 18, 2026) — AARO disclosure-coordination statement: working with the White House and federal agencies to consolidate existing UAP records collections and facilitate the expeditious release of never-before-seen UAP information; transferring records to the National Archives in accordance with federal law.'
   context: NBC News article reporting Trump's Phoenix Turning Point USA remarks plus the formal Defense Department spokesperson statement to NBC News Saturday Apr 18, 2026
   statement_date: '2026-04-18'
+- id: q21
+  added_date: '2026-05-01'
+  text: |-
+    as the Puerto Rico case.    It was data collected in 2013,
+
+    12   when a Customs and Border Patrol aircraft observed an object
+
+    13   flying near an airport in Puerto Rico.
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
+    location: 'p. 14, lines 11-13'
+  significance: Kosloski Nov 19 2024 SASC testimony — frames the Puerto Rico case (2013 Customs and Border Patrol observation near airport)
+  context: AARO Director Jonathan Kosloski first SASC Subcommittee on Emerging Threats and Capabilities hearing testimony, November 19, 2024
+  statement_date: '2024-11-19'
+- id: q22
+  added_date: '2026-05-01'
+  text: |-
+    So we assessed that
+
+     5   the object, likely a pair of balloons or sky lanterns, was
+
+     6   floating at about 7 knots over the airport and descending to
+
+     7   about 200 meters.
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
+    location: 'p. 15, lines 4-7'
+  significance: Kosloski case resolution — Puerto Rico 2013 transmedium case assessed as a pair of balloons or sky lanterns floating over the airport at 7 knots, descending to 200 meters; the apparent transmedium behavior was an infrared-imaging artifact when water temperature matched object temperature
+  context: AARO Director Kosloski Nov 19 2024 SASC testimony, Puerto Rico case-resolution explanation
+  statement_date: '2024-11-19'
+- id: q23
+  added_date: '2026-05-01'
+  text: |-
+    The GOFAST captured the public attention and
+
+    10   congressional attention when it was made public in 2017.    It
+
+    11   looks like an object flying very fast over the water, very
+
+    12   close to the water.    Through a very careful geospatial
+
+    13   intelligence analysis, using trigonometry, we assessed with
+
+    14   high confidence that the object is not actually close to the
+
+    15   water but is rather closer to 13,000 feet.
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
+    location: 'p. 15, lines 9-15'
+  significance: Kosloski case resolution — GOFAST (2017 publicly released video) assessed with high confidence as an object at approximately 13,000 feet altitude rather than close to the water; apparent fast motion is parallax / a trick of the eye when a high-altitude object is imaged from a closer-altitude platform
+  context: AARO Director Kosloski Nov 19 2024 SASC testimony, GOFAST case-resolution explanation
+  statement_date: '2024-11-19'
+- id: q24
+  added_date: '2026-05-01'
+  text: |-
+    An interesting case, which I do not believe the public
+
+    23   is familiar with, is captured in 2018 from a UAV flying in
+
+    24   the Mediterranean, watching Mt. Etna as it was erupting.
+
+    25   And it appears that that object is flying through the plume
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
+    location: 'p. 15, lines 22-25 to p. 16, line 1'
+  significance: Kosloski introduces the 2018 Mt. Etna UAV case — AARO captured object that appeared to be flying through the plume of an erupting volcano in the Mediterranean
+  context: AARO Director Kosloski Nov 19 2024 SASC testimony, Mt. Etna case-resolution introduction
+  statement_date: '2024-11-19'
+- id: q25
+  added_date: '2026-05-01'
+  text: |-
+    This was a rather difficult case to resolve.    We had to
+
+     3   pull in support from a number of IC and S&T partners, and
+
+     4   even reach out to a volcanologist.       And through very
+
+     5   detailed 3D modeling and pixel-by-pixel analysis of the
+
+     6   object as it is traversing across the clouds, they assessed
+
+     7   that the object was actually 170 meters away from the plume
+
+     8   and not flying through it.
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
+    location: 'p. 16, lines 2-8'
+  significance: Kosloski case resolution — Mt. Etna 2018 case resolved through 3D modeling and pixel-by-pixel analysis with IC, S&T, and volcanologist support; object was 170 meters away from the plume, not flying through it
+  context: AARO Director Kosloski Nov 19 2024 SASC testimony, Mt. Etna case-resolution
+  statement_date: '2024-11-19'
+- id: q26
+  added_date: '2026-05-01'
+  text: |-
+    And to be clear, AARO does not believe every object is
+
+    10   a bird, a balloon, or a UAV.    We do have some very anomalous
+
+    11   objects.
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
+    location: 'p. 16, lines 9-11'
+  significance: Kosloski clarifying that AARO acknowledges genuinely anomalous cases remain in the corpus — case resolutions reflect what AARO can presently resolve, not a categorical denial of unexplained phenomena
+  context: AARO Director Kosloski Nov 19 2024 SASC testimony, framing remarks following the Mt. Etna case-resolution
+  statement_date: '2024-11-19'
+- id: q27
+  added_date: '2026-05-01'
+  text: |-
+    KONA BLUE was brought to AARO’s attention by interviewees who claimed that it was
+    a sensitive DHS compartment to cover up the retrieval and exploitation of “non-human
+    biologics.”114 KONA BLUE traces its origins to the DIA-managed AAWSAP/AATIP program,
+    which was funded through a special appropriation and executed by its primary contractor, a
+    private sector organization.
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: 'HRR Vol I, p. 34, "KONA BLUE: A Proposed UAP Recovery and Reverse-Engineering Program" section opening'
+  significance: HRR Vol I documents Kona Blue — proposed DHS UAP recovery and reverse-engineering Special Access Program. AARO's framing identifies it as proposed by the AAWSAP/AATIP cohort after DIA cancelled their program in 2012; never approved by DHS
+  context: AARO Historical Record Report Volume I (March 2024), KONA BLUE section
+  statement_date: '2024-03-08'
+- id: q28
+  added_date: '2026-05-01'
+  text: |-
+    This proposal, codenamed KONA
+    BLUE, would restart UAP investigations, paranormal research (including alleged “human
+    consciousness anomalies”) and reverse-engineer any recovered off-world spacecraft that they
+    hoped to acquire. This proposal gained some initial traction at DHS to the point where a
+
+                                                     34
+    Prospective Special Access Program (PSAP) was officially requested to stand up this program,
+    but it was eventually rejected by DHS leadership for lacking merit.
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: 'HRR Vol I, p. 34'
+  significance: HRR Vol I — Kona Blue scope (UAP investigations + paranormal research + reverse-engineering of "any recovered off-world spacecraft they hoped to acquire") and DHS rejection ("eventually rejected by DHS leadership for lacking merit")
+  context: AARO Historical Record Report Volume I, KONA BLUE proposal scope and DHS rejection
+  statement_date: '2024-03-08'
+- id: q29
+  added_date: '2026-05-01'
+  text: |-
+    It is critical to note that no extraterrestrial craft or bodies were ever collected—this
+    material was only assumed to exist by KONA BLUE advocates and its anticipated contract
+    performers. This was the same assumption made by those same individuals involved with the
+    AAWSAP/AATIP program. The SAP was never approved or stood up, and no data or material
+    was transferred to DHS.
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: 'HRR Vol I, p. 34-35'
+  significance: HRR Vol I — AARO's load-bearing finding that the Kona Blue proposal rested on an unverified assumption (no extraterrestrial craft or bodies were ever collected); the SAP was never approved or stood up
+  context: AARO Historical Record Report Volume I, KONA BLUE finding
+  statement_date: '2024-03-08'
+- id: q30
+  added_date: '2026-05-01'
+  text: |-
+    The AOIMEXEC is renamed the AARO Executive Council (AAROEXEC). The
+    mission of the AAROEXEC will be to provide oversight and direction to the AARO.
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: 'Hicks AARO establishment memo, p. 1, ¶3 second bullet'
+  significance: Hicks memo establishes AAROEXEC (AARO Executive Council) as the renamed successor to AOIMEXEC, providing oversight and direction to AARO
+  context: Hicks AARO establishment memo, July 15, 2022
+  statement_date: '2022-07-15'
 key_personnel:
 - id: kp1
   added_date: '2026-04-20'
@@ -394,6 +561,14 @@ org_relationships:
     path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     location: 'AARO contract HQ003422C0094 SF 33 Block 7 issuing office, p. 1'
   note: Washington Headquarters Services Acquisition Directorate (DODAAC HQ0034) is the contracting subtier agency that issues AARO''s support-services contracts on behalf of OUSD(I&S). Located at 4800 Mark Center Drive, Suite 09F09, Alexandria VA. Pay Official DODAAC HQ0768 (WHS Financial Management Directorate).
+- id: or8
+  added_date: '2026-05-01'
+  organization_path: /organizations/aaroexec
+  relationship_type: other
+  source:
+    path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+    location: 'Hicks AARO establishment memo, p. 1, ¶3 second bullet'
+  note: AAROEXEC is the AARO Executive Council, renamed by the Hicks AARO establishment memo from the predecessor AOIMEXEC. Per the Hicks memo, the mission of the AAROEXEC is to provide oversight and direction to the AARO. Distinct from the parent USD(I&S) reporting line; AAROEXEC is the senior governance body that reviews AARO direction.
 timeline:
 - id: t1
   added_date: '2026-04-20'
@@ -493,6 +668,14 @@ timeline:
   source:
     path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     location: 'cover letter dated September 11, 2023'
+- id: t12a
+  added_date: '2026-05-01'
+  date: '2024-11-19'
+  event: Kosloski's first hearing as AARO Director — Senate Armed Services Subcommittee on Emerging Threats and Capabilities. Three case resolutions presented — Puerto Rico 2013 (balloons or sky lanterns over an airport), GOFAST 2017 (parallax / object closer to 13,000 feet), Mt. Etna 2018 (object 170 meters from the erupting plume).
+  category: testimony
+  source:
+    path: government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf
+    location: Stenographic transcript of the November 19, 2024 SASC hearing
 - id: t13
   added_date: '2026-04-30'
   date: '2024-08-23'
@@ -597,6 +780,12 @@ entities_referenced:
   entity_type: organization
   name: Director of Administration and Management
   wrap_path: /organizations/da-m
+- id: e15
+  added_date: '2026-05-01'
+  entity_type: organization
+  name: AARO Executive Council
+  wrap_path: /organizations/aaroexec
+  context_summary: 'AAROEXEC — renamed from AOIMEXEC by the Hicks AARO establishment memorandum; provides oversight and direction to AARO per the memorandum.'
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'
