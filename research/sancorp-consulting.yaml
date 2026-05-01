@@ -914,7 +914,7 @@ timeline:
   - id: t15
     added_date: '2026-04-30'
     date: '2023-09-11'
-    event: 'DoD FOID released FOIA 23-F-1114 (John Greenewald) — 125 pages responsive, 11 entirely withheld per (b)(5), 114 partially redacted per (b)(4) and (b)(6) — including the AARO contract Performance Work Statement; and 23-F-0905 (Skvarla) partial response.'
+    event: 'DoD FOID released FOIA 23-F-1114 (John Greenewald) — 125 pages responsive, 11 pages withheld in their entirety per (b)(5), portions of the remaining 114 pages exempt from release per (b)(4) and (b)(6) — including the AARO contract Performance Work Statement; and 23-F-0905 (Skvarla) partial response.'
     category: foia
     source:
       path: government/foia-23-f-0905-final-grant-in-part.pdf
