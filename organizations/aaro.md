@@ -548,6 +548,18 @@ On April 18, 2026, a Defense Department spokesperson stated to NBC News that AAR
 
 ---
 
+### Christopher Mellon's verbatim critique of HRR Vol I in his own ~16,500-word April 12, 2024 Debrief essay — the primary source for the "most error-ridden and unsatisfactory government report" rebuttal that Shellenberger's November 13, 2024 House Oversight written testimony quotes secondhand. Carries Mellon's full graduate-thesis-failing-grade framing of the report's research and interpretation quality. Mellon's authority rests on his prior service as Deputy Assistant Secretary of Defense for Intelligence.
+
+> Third, this is the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service. We all make mistakes, but this report is an outlier in terms of inaccuracies and errors. Were I reviewing this as a graduate student's thesis it would receive a failing grade for failing to understand the assignment, sloppy and inadequate research, and flawed interpretation of the data.
+
+| Field | Value |
+|---|---|
+| Attributed to | Christopher Mellon ([`/people/christopher-mellon`]) Debrief essay "The Pentagon's New UAP Report is Seriously Flawed", April 12, 2024 (modified April 15, 2024), 2024-04-12 |
+| Source | [archived source](../sources/news/thedebrief-mellon-aaro-report-flawed-20240412.html) |
+| Location | "The Pentagon's New UAP Report is Seriously Flawed", numbered-points section, point Third |
+
+---
+
 ### Kosloski director appointment — NSA detail
 
 > Today, Dr. Jon T. Kosloski arrived on detail from the National Security Agency to be appointed as the director of the All-domain Anomaly Resolution Office.

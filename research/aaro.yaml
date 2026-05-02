@@ -123,6 +123,8 @@ primary_sources:
   format: pdf
 - path: government/usaspending-hq003422c0064.txt
   format: txt
+- path: news/thedebrief-mellon-aaro-report-flawed-20240412.html
+  format: html
 - path: government/foia-23-f-0905-doc-1-released.pdf
   format: pdf
 - path: government/foia-23-f-0905-doc-2-released.pdf
@@ -984,6 +986,16 @@ quotes:
   significance: 'Statutory mandate (codifying NDAA FY23 § 6802 / IAA FY23 § 6802) directing AARO''s Historical Record Report to itemize "any efforts to obfuscate, manipulate public opinion, hide, or otherwise provide incorrect unclassified or classified information about unidentified anomalous phenomena or related activities." Establishes that the office statutorily charged with investigating UAP perception manipulation operates inside the same OUSD(I&S) administrative envelope as the Influence and Perception Management Office (IPMO) — whose stated mission is foreign-directed influence and perception management.'
   context: 'U.S. Code Title 50 § 3373(j)(2)(B)(ii)(III), Historical Record Report mandate provision — Other requirements subparagraph governing the scope of the historical record AARO must compile'
   statement_date: '2022-12-23'
+- id: q75
+  added_date: '2026-05-02'
+  text: |
+    Third, this is the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service. We all make mistakes, but this report is an outlier in terms of inaccuracies and errors. Were I reviewing this as a graduate student's thesis it would receive a failing grade for failing to understand the assignment, sloppy and inadequate research, and flawed interpretation of the data.
+  source:
+    path: news/thedebrief-mellon-aaro-report-flawed-20240412.html
+    location: '"The Pentagon''s New UAP Report is Seriously Flawed", numbered-points section, point Third'
+  significance: Christopher Mellon's verbatim critique of HRR Vol I in his own ~16,500-word April 12, 2024 Debrief essay — the primary source for the "most error-ridden and unsatisfactory government report" rebuttal that Shellenberger's November 13, 2024 House Oversight written testimony quotes secondhand. Carries Mellon's full graduate-thesis-failing-grade framing of the report's research and interpretation quality. Mellon's authority rests on his prior service as Deputy Assistant Secretary of Defense for Intelligence.
+  context: Christopher Mellon ([`/people/christopher-mellon`]) Debrief essay "The Pentagon's New UAP Report is Seriously Flawed", April 12, 2024 (modified April 15, 2024)
+  statement_date: '2024-04-12'
 key_personnel:
 - id: kp1
   added_date: '2026-04-20'
@@ -1447,7 +1459,7 @@ entities_referenced:
   entity_type: person
   name: Christopher Mellon
   wrap_path: /people/christopher-mellon
-  context_summary: 'Former Deputy Assistant Secretary of Defense; quoted via Shellenberger''s November 13, 2024 written testimony characterizing AARO HRR Vol I as "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service".'
+  context_summary: 'Former Deputy Assistant Secretary of Defense for Intelligence; author of the April 12, 2024 Debrief essay "The Pentagon''s New UAP Report is Seriously Flawed" — the primary-source rebuttal of AARO HRR Vol I (q75) — characterizing it as "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service". The same passage is also quoted secondhand in Shellenberger''s November 13, 2024 House Oversight written testimony.'
 - id: e19
   added_date: '2026-05-01'
   entity_type: person
