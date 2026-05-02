@@ -31,8 +31,9 @@
   path: government/asc-vickers-usdi-confirmation-20110215.pdf
   archived_date: '2026-04-30'
   sha256: 4109b33398a6a3f44f475b87fd7105aeeadc66007d285ce24c488a55caa5100e
-  archive_status: 1
+  archive_status: 3
   note: 'Senate Armed Services Committee — Advance Policy Questions for Michael G. Vickers, Nominee for the Position of Under Secretary of Defense for Intelligence (USD(I)). Hearing date February 15, 2011. 33 pages of substantive nomination responses including: USD(I) duties and functions (''primary responsibility is to support the Secretary of Defense in discharging his intelligence-related responsibilities and authorities under Title 10 and Title 50 U.S.C.; serving as the principal intelligence advisor to the Secretary of Defense''), Goldwater-Nichols framing, oversight relationships with NSA/DIA/NGA/NRO and other intelligence community elements. Vickers was confirmed and served as USD(I) ~March 2011 - April 2015, succeeding James Clapper. Wayback capture from 2011-03-10 (the original armed-services.senate.gov path returns the modern download wrapper, not the PDF directly).'
+  wayback_date: '2012-12-15'
 - url: http://www.defenselink.mil/Releases/Release.aspx?ReleaseID=10242
   format: html
   status: archived
@@ -746,16 +747,18 @@
   path: news/nsi-speaker-series-ipmo-holly-20250401.html
   archived_date: '2026-05-02'
   sha256: 0fb535bab4d19469baf67cc723730f93e4f4dc04bfbfb0f6b3346e5813be16ac
-  archive_status: 1
+  archive_status: 3
   note: NSI Speaker Series page for the October 3, 2023 talk by James Holly (Acting Director, IPMO, OUSD(I&S)) on the Influence and Perception Management Office. Carries the verbatim 'three Secretaries of Defense, under two administrations, signed off on its establishment' attestation that previously was secondary-only via Klippenstein. Documents IPMO's four-division structure (Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities) and links to the DOPSR-cleared 23-S-3438 IPMO 101 Slides PDF. Original URL nsiteam.com 404 as of 2026-04-30; archived via Wayback Machine snapshot 2025-04-01.
+  wayback_date: '2025-04-01'
 - url: https://nsiteam.com/social/wp-content/uploads/2023/10/23-S-3438-cleared-IPMO-101-Slides.pdf
   format: pdf
   status: archived
   path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
   archived_date: '2026-05-02'
   sha256: b2ff6abc1e3f80bc5191bede4ae16ae277b3e75282e8210a5db2ae0e90d0038b
-  archive_status: 1
+  archive_status: 3
   note: 'DOPSR-cleared OUSD(I&S) IPMO 101 presentation slides (DOPSR case 23-S-3438), authored by COL Deitra Trotter and HON Ronald S. Moultrie. PDF metadata: Title ''Blue Gold template'', Keywords ''OUSD(I&S)'', Author ''COL Deitra Trotter;HON Ronald S. Moultrie'', Acrobat PDFMaker 23 for PowerPoint. CreationDate Sep 20 2023; ModDate Sep 27 2023; CLEARED For Open Publication Sep 27 2023 by DoD Office of Prepublication and Security Review. Companion to the NSI Speaker Series page hosting October 2023 Holly talk. Original URL 404 as of 2026-04-30; archived via Wayback Machine.'
+  wayback_date: '2025-08-06'
 - url: https://nssaspace.org/event/kirkpatrick-2024/
   format: html
   status: archived
@@ -1017,6 +1020,15 @@
   archive_status: 3
   note: 'Self-authored opinion piece by Lt. Cmdr. Alex Dietrich (Ret.) published in The Debrief: ''The Power of Cooperation Can Help Us Solve the Mystery of Unidentified Aerial Phenomena.'' Highest-authority primary source for Dietrich''s own framing of UAP issues — her own first-person prose.'
   wayback_date: '2026-01-02'
+- url: https://thedebrief.org/the-pentagons-new-uap-report-is-seriously-flawed/
+  format: html
+  status: archived
+  path: news/thedebrief-mellon-aaro-report-flawed-20240412.html
+  archived_date: '2026-05-02'
+  sha256: 753a2c8bf24ae6518e7e34e9a2d870a010d3e70a70f5d88347e7112f15291345
+  archive_status: 3
+  note: Christopher Mellon essay (April 12, 2024) — 'The Pentagon's New UAP Report is Seriously Flawed'. ~16,500-word rebuttal of AARO's Historical Record Report Volume I (March 8, 2024). Cited indirectly via Shellenberger's Nov 13, 2024 House Oversight written testimony quote ('the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service'). Published date per article:published_time meta tag; modified 2024-04-15.
+  wayback_date: '2026-05-02'
 - url: https://thehill.com/opinion/technology/4083904-true-or-crazy-ufo-whistleblowers-come-out-of-the-woodwork-congress-cant-ignore-them/
   format: html
   status: archived
