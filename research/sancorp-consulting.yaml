@@ -1144,7 +1144,7 @@ contracts:
     added_date: '2026-04-30'
     contract_number: HQ003422C0094
     contracting_agency: 'Washington Headquarters Services'
-    period_start: '2022-09-01'
+    period_start: '2022-08-22'
     period_end: '2024-08-31'
     primary_counterparty_path: /organizations/aaro
     subject: 'AARO Support Services'
@@ -1152,7 +1152,7 @@ contracts:
     source:
       path: government/usaspending-hq003422c0094.txt
       location: '"description" field; solicitation HQ003422R0192; 8(A) Sole Source per latest_transaction_contract_data'
-    note: 'AARO Performance Work Statement released via FOIA case 23-F-1114 to The Black Vault: 125 pages determined to be responsive, 11 pages withheld in their entirety per (b)(5), and portions of the remaining 114 pages exempt from release under (b)(4) and (b)(6). Eight task areas covering Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support. Sancorp also won the IPMO Support Services contract HQ003422C0064 awarded three months earlier — both contracts placed inside two related OUSD(I&S) offices.'
+    note: 'Period of performance start date August 22, 2022; date signed September 1, 2022 per the FOIA 23-F-0905 SF 33 award notification email. AARO Performance Work Statement released via FOIA case 23-F-1114 to The Black Vault: 125 pages determined to be responsive, 11 pages withheld in their entirety per (b)(5), and portions of the remaining 114 pages exempt from release under (b)(4) and (b)(6). Eight task areas covering Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support. Sancorp also won the IPMO Support Services contract HQ003422C0064 awarded three months earlier — both contracts placed inside two related OUSD(I&S) offices.'
   - id: c7
     added_date: '2026-04-30'
     contract_number: HQ003423C0061

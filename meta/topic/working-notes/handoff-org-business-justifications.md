@@ -52,7 +52,7 @@ URL: https://media.defense.gov/2022/Jul/20/2003039081/-1/-1/1/ESTABLISHMENT-RESO
 - Reporting line: through OUSD(I&S) (Moultrie) from establishment until late July 2023. ✅ Per DefenseScoop (Brandi Vincent, August 30, 2023), Deputy Secretary of Defense Kathleen Hicks took direct AARO oversight in late July 2023, repositioning the AARO Director to report directly to her — within days of David Grusch's July 26, 2023 House Oversight testimony. AARO has operated under direct DepSecDef reporting since.
 - Operational milestone: ✅ AARO reached Full Operational Capability October 1, 2024 (start of FY 2025) — DOD spokesperson Sue Gough to DefenseScoop, December 5, 2024: AARO "now has the requisite personnel, expertise, facilities and tools to carry out its core mission."
 - Public name: AARO continues to operate publicly under that name as of May 1, 2026 (aaro.mil active, Kosloski named director, Vol I accessible, Congressional/Press Products page maintained, FOIA 25-F-1218 OUSD(I&S) consolidated organization chart still lists "ALL-DOMAIN ANOMALY RESOLUTION OFFICE (AARO)").
-- Budget-exhibit name: ⚠ FY 2026 OSD OP-5 (June 2025 release) names the OUSD(I&S) sub-office corresponding to AARO's mission "Advanced Intelligence Capabilities (AIC)." See AIC section below.
+- Budget-exhibit name: ⚠ FY 2026 OSD OP-5 (July 7, 2025 release per PDF CreationDate metadata) names the OUSD(I&S) sub-office corresponding to AARO's mission "Advanced Intelligence Capabilities (AIC)." See AIC section below.
 - Caseload: per Pentagon spokesperson Sue Gough to DefenseScoop February 25, 2026, AARO has been examining over 2,000 UAP cases (caseload grew by at least 400 since the late-2024 public update of more than 1,600 reports).
 - Statutory mandate execution: ⏳ HRR Vol II not yet published as of May 1, 2026. Statutory deadline per NDAA FY23 § 6802(j) was 540 days after enactment of the IAA FY 2023 (December 23, 2022) — approximately mid-June 2024. ~22 months overdue.
 
@@ -60,14 +60,14 @@ URL: https://media.defense.gov/2022/Jul/20/2003039081/-1/-1/1/ESTABLISHMENT-RESO
 
 ---
 
-### AIC — Advanced Intelligence Capabilities (apparent FY 2026 OSD OP-5 budget-document name for AARO)
+### AIC — Advanced Intelligence Capabilities (apparent FY 2025-onward OSD OP-5 budget-document name for AARO)
 
-**Establishment instrument:** ⏳ Not separately established at any retrievable primary-source level. Appears in OSD OP-5 FY 2026 budget submission (released June 2025) as an OUSD(I&S) sub-office.
+**Establishment instrument:** ⏳ Not separately established at any retrievable primary-source level. First appears in OSD OP-5 FY 2025 budget submission (released March 11, 2024 per PDF CreationDate metadata) as an OUSD(I&S) sub-office; retained in FY 2026 OP-5 (released July 7, 2025).
 URL: https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2026/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf
 
 **Stated mission per FY 2026 OSD OP-5 (✅ primary):** AIC reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence and synchronizes efforts across DoD and other Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas of interest, and as necessary to mitigate associated risks to safety of operations and national security. Includes anomalous, unidentified space, airborne, submerged, and transmedium objects.
 
-**Critical observation:** The AIC mission language is functionally identical to AARO's Hicks-memo mission language. The reporting line — direct to DEPSECDEF and PDDNI — is the NDAA FY23 § 1683 statutory carveout language unique to AARO. No other OSD office has that statutory reporting structure. The FY 2024 OSD OP-5 (June 2023 release) named the same office "All-domain Anomaly Resolution Office (AARO)" with substantively identical mission language. The FY 2026 budget-exhibit name change is therefore most plausibly a budget-document relabeling of AARO, not a separate program.
+**Critical observation:** The AIC mission language is functionally identical to AARO's Hicks-memo mission language. The reporting line — direct to DEPSECDEF and PDDNI — is the NDAA FY23 § 1683 statutory carveout language unique to AARO. No other OSD office has that statutory reporting structure. The FY 2024 OSD OP-5 (March 20, 2023 release per PDF CreationDate) named the same office "All-domain Anomaly Resolution Office (AARO)" with substantively identical mission language; the FY 2025 OSD OP-5 (March 11, 2024 release per PDF CreationDate) was the first to substitute "Advanced Intelligence Capabilities (AIC)". The budget-exhibit name change is therefore most plausibly a budget-document relabeling of AARO, not a separate program.
 
 **Three interpretations, none yet primary-source-confirmed beyond the budget submission itself:**
 
@@ -75,7 +75,7 @@ URL: https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2026/budget_ju
 2. **AIC is a quiet rebrand at the budget-document level** that has not yet been publicly announced. Consistent with the broader legal-scope-narrowing pattern documented in the structural-coupling finding.
 3. **AIC is a new program that absorbed AARO**, with the same statutory carveout reporting line because AARO's legal structure was retained as the umbrella's operational basis.
 
-**Inference flag.** Each interpretation has different policy implications. (1) is bureaucratically routine. (2) and (3) would be significant. The investigation does not currently confirm which interpretation is correct, but the budget-document-level fact — that AARO is described under a different name in the FY 2026 OSD OP-5 — is itself documented.
+**Inference flag.** Each interpretation has different policy implications. (1) is bureaucratically routine. (2) and (3) would be significant. The investigation does not currently confirm which interpretation is correct, but the budget-document-level fact — that AARO is described under a different name starting in the FY 2025 OSD OP-5 (March 11, 2024) and retained in FY 2026 OSD OP-5 (July 7, 2025) — is itself documented.
 
 **Gap status:** ⏳ Administrative basis for the AARO→AIC budget-document description not yet retrieved. No public DoD announcement of an AARO renaming.
 
@@ -140,7 +140,7 @@ Separately and earlier, Klippenstein (The Intercept, May 17, 2023) observed at p
 
 ### DMDPO — Defense Military Deception Program Office (sister office under OUSD(I&S))
 
-**Establishment instrument:** ⏳ Not yet retrieved at primary-source level. Appears in OSD OP-5 FY 2024 (June 2023) and FY 2026 (June 2025) budget submissions as an OUSD(I&S) sub-office. Klippenstein/The Intercept reporting (May 2023) cited DMDPO as having been established in 2022 alongside IPMO; that is ⚠ secondary-source-only.
+**Establishment instrument:** ⏳ Not yet retrieved at primary-source level. Appears in OSD OP-5 FY 2024 (March 20, 2023 release per PDF CreationDate) and FY 2026 (July 7, 2025 release per PDF CreationDate) budget submissions as an OUSD(I&S) sub-office. Klippenstein/The Intercept reporting (May 2023) cited DMDPO as having been established in 2022 alongside IPMO; that is ⚠ secondary-source-only.
 
 **Stated mission per FY 2026 OSD OP-5 (✅ primary):** DMDPO provides governance, oversight, and operational implementation of military deception planning and execution capabilities across DoD, including sensitive messaging, deception, influence, and other operations in the information environment.
 
@@ -231,9 +231,9 @@ This is the most consequential gap in the entire repository's organization-node 
 
 Klippenstein's reporting (May 2023) explicitly noted at primary-source level that there is no public paper trail for IPMO's establishment. As of May 1, 2026, that gap remains. AARO's establishment was announced, posted to defense.gov, and accompanied by congressional briefings, press release, and a USD(I&S) implementation memo. IPMO's establishment was not publicly announced; the office existed for over a year before journalistic discovery. The asymmetry in how the two offices were stood up is itself a documented institutional pattern.
 
-### Finding 3: AARO appears to be described as "Advanced Intelligence Capabilities" in the FY 2026 OSD OP-5 budget submission — three interpretations possible
+### Finding 3: AARO appears to be described as "Advanced Intelligence Capabilities" starting in the FY 2025 OSD OP-5 budget submission — three interpretations possible
 
-The FY 2024 OSD OP-5 (released June 2023) names the office "All-domain Anomaly Resolution Office (AARO)" in the OUSD(I&S) sub-office description. The FY 2026 OSD OP-5 (released June 2025) names the same OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" using mission language and reporting-line language essentially identical to AARO's NDAA FY23 § 1683 statutory carveout. No public DoD announcement of an AARO renaming has been issued. AARO continues to operate publicly under that name.
+The FY 2024 OSD OP-5 (released March 20, 2023 per PDF CreationDate) names the office "All-domain Anomaly Resolution Office (AARO)" in the OUSD(I&S) sub-office description. The FY 2026 OSD OP-5 (released July 7, 2025 per PDF CreationDate) names the same OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" using mission language and reporting-line language essentially identical to AARO's NDAA FY23 § 1683 statutory carveout. The FY 2025 OSD OP-5 (released March 11, 2024 per PDF CreationDate) was the first to name the AIC, narrowing the budget-document rename window to the FY24 → FY25 release cycle. No public DoD announcement of an AARO renaming has been issued. AARO continues to operate publicly under that name.
 
 Three interpretations, none yet primary-source-confirmed beyond the budget submission itself: (1) AIC is an umbrella budget category that includes AARO and possibly other intelligence-collection efforts under OUSD(I&S); bureaucratically routine; (2) AIC is a quiet rebrand at the budget-document level that has not yet been publicly announced; consistent with the broader legal-scope-narrowing pattern; (3) AIC is a new program that absorbed AARO. Each interpretation has different policy implications. Significant enough to warrant its own canonical node.
 
@@ -275,7 +275,7 @@ The structural-coupling finding (`/findings/ipmo-aaro-structural-coupling.md`) d
 2. ⏳ Norquist UAPTF establishment memo (August 4, 2020) — predecessor to AOIMSG.
 3. ⏳ IPMO establishment instrument — likely requires FOIA scoped to OUSD(I&S) Front Office for a SecDef or USD(I&S) memo dated on or about March 1, 2022. Highest-priority gap in the repository.
 4. ⏳ DMDPO, OSD Red Team, SCPO, CP/WMD establishment instruments — likely DoDD/DoDI series; some may be classified.
-5. ⏳ OSD OP-5 FY 2025 (June 2024) — to verify whether the AARO→AIC budget-exhibit name change happened FY24→FY25 or FY25→FY26.
+5. ✅ OSD OP-5 FY 2025 retrieved (PDF CreationDate March 11, 2024) — confirms the AARO → AIC budget-exhibit name change happened FY24 → FY25, not FY25 → FY26. Sub-office named "AARO" in FY24 OP-5 (released March 20, 2023) and "Advanced Intelligence Capabilities (AIC)" in FY25 OP-5 (released March 11, 2024) and FY26 OP-5 (released July 7, 2025). Source archived at `government/osd-op5-fy25-20260501.pdf`.
 6. ⏳ NSI 23-S-3438 IPMO 101 slides (Wayback retrieval) — to recover the slide content per Holly's October 2023 NSI Speaker Series talk, including the "three SecDefs across two administrations" claim currently ⚠ secondary-anchored.
 7. ⏳ Public DoD announcement of AARO renaming (if any) — searches to date have not surfaced one.
 8. ⏳ DepSecDef April 21, 2023 memo designating OUSD(I&S) as PSA for Law Enforcement — referenced in FY 2026 OSD OP-5 but not yet retrieved.
@@ -306,8 +306,9 @@ The structural-coupling finding (`/findings/ipmo-aaro-structural-coupling.md`) d
 
 ### Budget exhibits (primary)
 
-- **OSD OP-5 FY 2024 budget submission**, June 2023 — OUSD(C). URL: https://comptroller.war.gov/Portals/45/Documents/defbudget/fy2024/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf — names "All-domain Anomaly Resolution Office (AARO)" in OUSD(I&S) section.
-- **OSD OP-5 FY 2026 budget submission**, June 2025 — OUSD(C). URL: https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2026/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf — names "Advanced Intelligence Capabilities (AIC)" in OUSD(I&S) section.
+- **OSD OP-5 FY 2024 budget submission**, March 20, 2023 (per PDF CreationDate metadata) — OUSD(C). URL: https://comptroller.war.gov/Portals/45/Documents/defbudget/fy2024/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf — names "All-domain Anomaly Resolution Office (AARO)" in OUSD(I&S) section. Local archive: `government/osd-op5-fy24-20260501.pdf`.
+- **OSD OP-5 FY 2025 budget submission**, March 11, 2024 (per PDF CreationDate metadata) — OUSD(C). URL: https://comptroller.war.gov/Portals/45/Documents/defbudget/fy2025/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf — first OP-5 release to name "Advanced Intelligence Capabilities (AIC)" in OUSD(I&S) section. Local archive: `government/osd-op5-fy25-20260501.pdf`.
+- **OSD OP-5 FY 2026 budget submission**, July 7, 2025 (per PDF CreationDate metadata) — OUSD(C). URL: https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2026/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf — retains "Advanced Intelligence Capabilities (AIC)" in OUSD(I&S) section. Local archive: `government/osd-op5-fy26-wayback-20260201.pdf`.
 
 ### AARO outputs and operational status (primary)
 
