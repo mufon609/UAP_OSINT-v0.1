@@ -52,6 +52,8 @@ Heather King, of the Secretary of Defense office, separately emailed the OSD PA 
 
 Following Gillibrand's "animated response" earlier the same day, Sue Gough emailed David A. Kozik ([`/people/david-kozik`]) (OUSD(I&S) Director Congressional Activities) at 1:45 PM with subject "FW: Following up from Unders" and Importance: High flag: "Flagging for you in case you haven't heard. We do not want to see sUAS added to AARO's portfolio!" Kozik replied the next morning that AARO "absolutely should be involved in cUAS efforts in a *coordinating* role, but they should not/not be the lead", explaining the Gillibrand "lead role" characterization as "a prep failure on our part for ASD HD&HA".
 
+Christopher Mellon's ([`/people/christopher-mellon`]) April 12, 2024 Debrief article "The Pentagon's New UAP Report is Seriously Flawed" provides the most extensive critique of the Historical Record Report. Mellon — former Deputy Assistant Secretary of Defense for Intelligence — noted three institutional observations about the report: "submitted months before it was due"; the first AARO report submitted to Congress that the Director of National Intelligence (DNI) did not sign off on (Avril Haines and her Office "were quite right not to in this case, having spared themselves considerable embarrassment"); and DoD Public Affairs "sponsored a closed-door pre-brief on the report's findings for a select group of press outlets on an invitation-only basis. Outlets like The Debrief, which closely follow the UAP issue, were excluded." Mellon also noted that AARO "inexplicably and unbelievably chooses not to mention the Nimitz anywhere in its Historical Report" — the 2004 USS Nimitz UAP encounter ([`/events/2004-nimitz-encounter`]) being "the primary events that led to the current sea change in attitude to UFOs and UAP, leading to the establishment of AARO itself." On statistics, Mellon noted that AARO's August 2022 figures worked out to 62% unexplained (314 of 510 cases — 143 UAPTF cases plus 171 new AARO cases), and that Kirkpatrick had told CNN in October 2023 that 2–4% of cases are "truly anomalous and require further investigation" — figures absent from the report.
+
 At the November 13, 2024 House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth", Subcommittee Chairwoman Nancy Mace ([`/people/nancy-mace`]) (R-S.C.) and Subcommittee Chairman Glenn Grothman ([`/people/glenn-grothman`]) (R-Wis.) delivered opening statements at the joint subcommittee hearing. Mace stated, "We will also hear from the witnesses today allegations of UAP-related misinformation and disinformation by government officials of which they are personally aware and directly experienced." Witnesses submitted written testimony characterizing AARO's analytic and historical work as flawed. Michael Shellenberger ([`/people/michael-shellenberger`]) wrote that "critics say that AARO's 63-page history of the US government's investigation into UAPs since the end of World War II was riddled with factual errors and poor referencing, including to Wikipedia." Shellenberger also wrote that Christopher Mellon ([`/people/christopher-mellon`]) (former Deputy Assistant Secretary of Defense) called the historical records report "the most error-ridden and unsatisfactory government report I can recall reading during or after decades of government service." Tim Gallaudet ([`/people/tim-gallaudet`]) (former NOAA Administrator and Navy Rear Admiral) wrote that "AARO needs to explain the inaccuracies and incompleteness31 of AARO's first historical records report32 so that the Congress can understand: (a) if AARO is failing to meet its Congressional mandate, and (b) under what authority AARO has conducted this and other examples of disinformation." Gallaudet also wrote that during a meeting with "the then acting AARO director and his senior staff" he "was the object of an hours-long influence operation" attempting to disparage well-known UAP reports including the USS Nimitz tic-tac encounter.
 
 AARO's FY 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena, dated November 14, 2024, documents 757 UAP reports received during the May 1, 2023 – June 1, 2024 reporting period (485 occurred during the reporting period; 272 occurred outside of the reporting period between 2021 and 2022 and were not included in previous annual UAP reports). 49 cases were resolved during the reporting period (all to prosaic objects); 243 additional cases were recommended for closure pending peer review; 444 cases lacked sufficient data and were placed in the Active Archive. AARO determined 21 cases merit further analysis by its IC and S&T partners "based on reported anomalous characteristics and/or behaviors." The same report documents the GREMLIN prototype sensor system, developed by Georgia Tech Research Institute ([`/organizations/gtri`]), for detecting, tracking, and characterizing UAP — first test event March 2024 with a 90-day pattern-of-life collection scheduled at a site of national security.
@@ -557,6 +559,42 @@ On April 18, 2026, a Defense Department spokesperson stated to NBC News that AAR
 | Attributed to | Christopher Mellon ([`/people/christopher-mellon`]) Debrief essay "The Pentagon's New UAP Report is Seriously Flawed", April 12, 2024 (modified April 15, 2024), 2024-04-12 |
 | Source | [archived source](../sources/news/thedebrief-mellon-aaro-report-flawed-20240412.html) |
 | Location | "The Pentagon's New UAP Report is Seriously Flawed", numbered-points section, point Third |
+
+---
+
+### Mellon's most consequential single observation about HRR Vol I — that AARO's founding catalyst event (the 2004 USS Nimitz UAP encounter ([`/events/2004-nimitz-encounter`])) is omitted entirely from AARO's own historical record of US Government UAP involvement. The Nimitz incidents were the primary trigger for the legislative chain that led to AARO's establishment via NDAA FY22 § 1683; their absence from the HRR is structurally significant.
+
+> AARO certainly knows about the 2004 Nimitz UAP incidents, which were the primary events that led to the current sea change in attitude to UFOs and UAP, leading to the establishment of AARO itself. AARO just inexplicably and unbelievably chooses not to mention the Nimitz anywhere in its Historical Report.
+
+| Field | Value |
+|---|---|
+| Attributed to | Christopher Mellon ([`/people/christopher-mellon`]) Debrief essay critique of AARO HRR Vol I "40-year gap" claim, 2024-04-12 |
+| Source | [archived source](../sources/news/thedebrief-mellon-aaro-report-flawed-20240412.html) |
+| Location | "The Pentagon's New UAP Report is Seriously Flawed", section "Alleged '40-Year Gap' in Official Investigations of UAP is Due to AARO's Failure to Properly Document their History from 1969-2009 – Not Even a Mention of the Pivotal 2004 Nimitz Case" |
+
+---
+
+### Mellon's account of the HRR Vol I pre-brief mechanism — closed-door, invitation-only press outreach two days before public release on March 8, 2024, with disclosure-attentive outlets like The Debrief excluded. Pairs with FOIA 24-F-0894 evidence (q39 + Sue Gough's standardized "small group" reply to journalist requests) documenting the same invite-only press posture from inside the OSD Public Affairs chain.
+
+> Department of Defense (DoD) Public Affairs sponsored a closed-door pre-brief on the report's findings for a select group of press outlets on an invitation-only basis. Outlets like The Debrief, which closely follow the UAP issue, were excluded. Following the report's release, most of the news agencies that had participated in the pre-brief went on to publish articles that uncritically parroted the report's findings.
+
+| Field | Value |
+|---|---|
+| Attributed to | Christopher Mellon ([`/people/christopher-mellon`]) Debrief essay introductory critique of HRR Vol I rollout, 2024-04-12 |
+| Source | [archived source](../sources/news/thedebrief-mellon-aaro-report-flawed-20240412.html) |
+| Location | "The Pentagon's New UAP Report is Seriously Flawed", introductory section on "irregularities" of the report rollout |
+
+---
+
+### Mellon's institutional observation that HRR Vol I was the first AARO report to Congress without ODNI/DNI sign-off — Avril Haines's Office withheld signature. Pairs with FOIA 24-F-0894 documentation of the bilateral DoD/ODNI Public Affairs agreement to omit ODNI mention from the public rollout press release (q40 — "Confirming that we're good without any ODNI mention"). Two distinct ODNI-omission patterns at the formal-sign-off level and the public-framing level.
+
+> this appears to be the first AARO report submitted to Congress that the Director of National Intelligence (DNI) did not sign off on. I don't know why, but Avril Haines and her Office were quite right not to in this case, having spared themselves considerable embarrassment in the process.
+
+| Field | Value |
+|---|---|
+| Attributed to | Christopher Mellon ([`/people/christopher-mellon`]) Debrief essay numbered-points critique of HRR Vol I irregularities, 2024-04-12 |
+| Source | [archived source](../sources/news/thedebrief-mellon-aaro-report-flawed-20240412.html) |
+| Location | "The Pentagon's New UAP Report is Seriously Flawed", numbered-points section, point Second |
 
 ---
 
@@ -1188,6 +1226,10 @@ On April 18, 2026, a Defense Department spokesperson stated to NBC News that AAR
 - [`/organizations/uaptf`]
 - [`/organizations/us-navy`]
 - [`/organizations/whs`]
+
+### Events
+
+- [`/events/2004-nimitz-encounter`]
 
 ### Documents
 
