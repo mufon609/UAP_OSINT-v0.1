@@ -29,7 +29,9 @@ The Office of the Under Secretary of Defense for Intelligence and Security ([`/o
 
 DoD Directive 5143.01, originally issued October 24, 2014 and incorporating Change 2 on April 6, 2020, is the office's organizational charter. The directive states that the USD(I&S) "is the Principal Staff Assistant (PSA) and advisor to the SecDef and DepSecDef regarding Intelligence, Counterintelligence (CI), Security, sensitive activities, and other intelligence-related matters" and "exercises SecDef authority, direction, and control over, and oversees the activities of, the Defense Intelligence Agency (DIA), the National Geospatial-Intelligence Agency (NGA), the National Security Agency/Central Security Service (NSA/CSS), the National Reconnaissance Office (NRO), and the Defense Counterintelligence and Security Agency". The USD(I&S) also serves as Director of Defense Intelligence and as the primary SecDef representative to the Office of the Director of National Intelligence ([`/organizations/odni`]). The war.gov Office of the Secretary of War page lists USW (Intelligence & Security) with establishment date 2002.
 
-GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that the office gained new responsibilities from 2017 through 2020 in the areas of artificial intelligence, law enforcement, personnel vetting, and identity intelligence and identified governance bodies not operating as intended and unclear roles and responsibilities. DoD Inspector General Management Advisory DODIG-2026-047 (January 29, 2026), addressed for the Under Secretary of Defense for Intelligence and Security, confirms that DoD Instruction 5200.48 "Controlled Unclassified Information (CUI)" is issued by OUSD(I&S) and establishes DoD program requirements for designating, marking, handling, and decontrolling CUI. The office directed establishment of the Influence and Perception Management Office ([`/organizations/ipmo`]) on March 1, 2022 per the Notre Dame memo signed by Acting Director James A. Holly ([`/people/james-holly`]), and the Deputy Secretary of Defense ([`/people/kathleen-hicks`]) directed the USD(I&S) to establish the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) on July 15, 2022 in coordination with the Director of Administration and Management. Executive Order 14347 of September 5, 2025 ("Restoring the United States Department of War") authorizes subordinate officials within the Department of Defense to use corresponding secondary titles such as Under Secretary of War in official correspondence, public communications, ceremonial contexts, and non-statutory documents; statutory references to the Department of Defense, Secretary of Defense, and subordinate officers and components shall remain controlling until changed subsequently by the law.
+GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that the office gained new responsibilities from 2017 through 2020 in the areas of artificial intelligence, law enforcement, personnel vetting, and identity intelligence and identified governance bodies not operating as intended and unclear roles and responsibilities. Per the same report, 78 percent of the workforce across the four Defense Intelligence Directorates in OUSD(I&S) in July 2020 was non-permanent — consisting of contractors, joint duty assignees, military/reservists, and liaison officers or detailees — with the four directorates comprising around 80 percent of OUSD(I&S)'s workforce. DoD Inspector General Management Advisory DODIG-2026-047 (January 29, 2026), addressed for the Under Secretary of Defense for Intelligence and Security, confirms that DoD Instruction 5200.48 "Controlled Unclassified Information (CUI)" is issued by OUSD(I&S) and establishes DoD program requirements for designating, marking, handling, and decontrolling CUI. The office directed establishment of the Influence and Perception Management Office ([`/organizations/ipmo`]) on March 1, 2022 per the Notre Dame memo signed by Acting Director James A. Holly ([`/people/james-holly`]), and the Deputy Secretary of Defense ([`/people/kathleen-hicks`]) directed the USD(I&S) to establish the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) on July 15, 2022 in coordination with the Director of Administration and Management. Executive Order 14347 of September 5, 2025 ("Restoring the United States Department of War") authorizes subordinate officials within the Department of Defense to use corresponding secondary titles such as Under Secretary of War in official correspondence, public communications, ceremonial contexts, and non-statutory documents; statutory references to the Department of Defense, Secretary of Defense, and subordinate officers and components shall remain controlling until changed subsequently by the law.
+
+Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intelligence Program (MIP) Management and Activities of the OUSD(I&S) operating budget, funding is provided for the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Influence and Perception Management Office ([`/organizations/ipmo`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). The Counter-Adversary Defense Industry (C-ADI) program ([`/organizations/c-adi`]) is named in the FY 2025 OSD OP-5 (released March 2024) and again in the FY 2026 OSD OP-5 (released June 2025) under "Major Program Title: MIP Management and Activities of the OUSD(I&S)". Advanced Intelligence Capabilities is first named in the FY 2025 OSD OP-5; AARO ([`/organizations/aaro`]) is established by the Deputy Secretary of Defense memorandum dated July 15, 2022, and both AARO and AIC are documented on this repository as separate nodes. The line "Walkoff – Classified" appears under the OUSD(I&S) program section of the FY 2023 and FY 2024 OSD OP-5 and does not appear in the FY 2025 or FY 2026 OSD OP-5. The Law Enforcement Oversight and Compliance Directorate description states "will lead, coordinate, and integrate" in the FY 2025 OSD OP-5 and "leads, coordinates, and integrates" in the FY 2026 OSD OP-5. The FY 2026 OSD OP-5 references the Deputy Secretary of Defense memorandum dated 21 April 2023 designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, with an associated increase of +18 FTEs and \$4,334 thousand in OUSD(I&S) Compensation and Benefits funding.
 
 ---
 
@@ -345,6 +347,18 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 
 ---
 
+### GAO-21-295 body — 78 percent of OUSD(I&S) DDI workforce non-permanent (July 2020)
+
+> non-permanent—consisting of contractors, joint duty assignees, military/reservists, and liaison officer or detailees
+
+| Field | Value |
+|---|---|
+| Attributed to | GAO-21-295 oversight report on OUSD(I&S) workforce composition, 2021-05-06 |
+| Source | [archived source](../sources/government/gao-21-295-defense-intelligence-ousdis-oversight-202105.pdf) |
+| Location | GAO-21-295 body, p. 14 — OUSD(I&S) workforce-composition analysis (full sentence: "According to our analysis, 78 percent of the workforce across the four DDIs in OUSD(I&S) in July 2020 was non-permanent—consisting of contractors, joint duty assignees, military/reservists, and liaison officer or detailees.") |
+
+---
+
 ### IPMO established March 1, 2022 by direction from SecDef and USD(I&S); attestation that OUSD(I&S) directs subordinate-office establishment
 
 > On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under
@@ -372,6 +386,68 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 | Attributed to | Hicks AARO establishment memo, July 15 2022, 2022-07-15 |
 | Source | [archived source](../sources/government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf) |
 | Location | Hicks AARO establishment memo, p. 1, ¶3 third bullet |
+
+---
+
+### FY 2024 OSD OP-5 — "Walkoff – Classified" line under OUSD(I&S)
+
+> Walkoff – Classified.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2024 budget submission, OUSD(I&S) sub-office program section, 2023 |
+| Source | [archived source](../sources/government/osd-op5-fy24-20260501.pdf) |
+| Location | OSD OP-5 FY 2024, OUSD(I&S) sub-office program section, single-line classified-program entry |
+
+---
+
+### NSI Speaker Series — Holly attestation that three SecDefs across two administrations signed off on IPMO establishment
+
+> three Secretaries of Defense, under two administrations, signed off on its establishment
+
+| Field | Value |
+|---|---|
+| Attributed to | NSI Speaker Series page recovered April 1, 2025 via Wayback Machine; documenting James Holly October 3, 2023 IPMO 101 talk abstract, 2023-10-03 |
+| Source | [archived source](../sources/news/nsi-speaker-series-ipmo-holly-20250401.html) |
+| Location | NSI Speaker Series page abstract — Holly October 3, 2023 talk |
+
+---
+
+### FY 2025 OSD OP-5 — Counter-Adversary Defense Industry (C-ADI) program first appearance
+
+> The Counter-Adversary Defense Industry (C-ADI) program provides necessary support to and pursues strategic activities focused on adversary defense industries in support of the SECDEF's priority of defending the nation by campaigning to gain and sustain military advantages, counter acute forms of our competitors' coercion, and complicate our competitors' military preparations
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2025 budget submission, OUSD(I&S) program section, C-ADI bullet, 2024 |
+| Source | [archived source](../sources/government/osd-op5-fy25-20260501.pdf) |
+| Location | OSD OP-5 FY 2025, OUSD(I&S) sub-office program section, C-ADI bullet |
+
+---
+
+### FY 2026 OSD OP-5 — OUSD(I&S) sub-office cluster intro and DMDPO bullet
+
+> In addition to the Military Intelligence Program (MIP) Management and Activities of the OUSD(I&S) operating budget, funding is provided for: • The Defense Military Deception Program Office, which provides governance, oversight, and operational implementation of military deception planning and execution capabilities across the DoD, including sensitive messaging, deception, influence, and other operations in the information environment.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2026 budget submission, OUSD(I&S) program section, 2025 |
+| Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
+| Location | OSD OP-5 FY 2026 budget submission, OUSD(I&S) program section, sub-office cluster intro and DMDPO bullet |
+
+---
+
+### FY 2026 OSD OP-5 — April 21, 2023 LE PSA designation memo (+18 FTE OUSD(I&S) justification)
+
+> Increase of +18 FTEs and associated funding provides OUSD(I&S) support to implement direction contained
+> within the Deputy Secretary of Defense memo dated 21 April 2023, designating OUSD(I&S) as the Principal
+> Staff Assistant for Law Enforcement.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2026, OUSD(I&S) Compensation and Benefits FTE-increase justification narrative, 2025 |
+| Source | [archived source](../sources/government/osd-op5-fy26-wayback-20260201.pdf) |
+| Location | OSD OP-5 FY 2026, Compensation and Benefits — Principal Staff Assistants for Law Enforcement — OUSD(I&S) line item, +$4,334 thousand, +18 FTEs |
 
 ---
 
@@ -485,7 +561,10 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 | 2021-06-01 | Ronald S. Moultrie sworn in as Under Secretary of Defense for Intelligence and Security following Senate confirmation | leadership-transition | government/wargov-moultrie-biography.html | [`/people/ronald-moultrie`] |
 | 2022-03-01 | Influence and Perception Management Office (IPMO) established per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security; tasked with thematic messaging guidance and influence strategies | subordinate-establishment | government/notre-dame-ipmo-memo-20220527.pdf | [`/organizations/ipmo`] |
 | 2022-07-15 | Deputy Secretary of Defense Kathleen Hicks directs the USD(I&S) to establish the All-domain Anomaly Resolution Office (AARO) in coordination with the Director of Administration and Management | subordinate-establishment | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | [`/organizations/aaro`] |
+| 2023-04-21 | Deputy Secretary of Defense memo dated 21 April 2023 designates OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, supported by +18 FTEs and \$4,334 thousand per FY 2026 OSD OP-5. Underlying memo not retrieved at primary-source level (FOIA-able); the OSD OP-5 budget exhibit is the public-record reference. | government-action | government/osd-op5-fy26-wayback-20260201.pdf |  |
+| 2023-10-03 | James Holly (Acting Director, IPMO) delivers IPMO 101 talk at NSI Speaker Series. Abstract verbatim: "three Secretaries of Defense, under two administrations, signed off on its establishment". Companion DOPSR-cleared 23-S-3438 IPMO 101 slides (authored by COL [`/people/deitra-trotter`] and HON [`/people/ronald-moultrie`]) attest IPMO's four-division structure (Integrated Influence; Perception Management; Deception Activities; Intel Support). | testimony | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
 | 2024-02-29 | Ronald S. Moultrie retires as Under Secretary of Defense for Intelligence and Security | leadership-transition | government/wargov-moultrie-biography.html | [`/people/ronald-moultrie`] |
+| 2024-03 | OSD OP-5 FY 2025 budget submission first names Counter-Adversary Defense Industry (C-ADI) as an OUSD(I&S) sub-office (between SCPO and CP/WMD). Same release window as the AARO → AIC budget-document rebrand. Walkoff – Classified, present in FY 2023 OP-5 and FY 2024 OP-5, disappears from the FY 2025 OP-5 OUSD(I&S) program section in this same release. | other | government/osd-op5-fy25-20260501.pdf |  |
 | 2025-07-25 | Bradley D. Hansell sworn in as Under Secretary of War for Intelligence and Security per the official 2025 USDIS biography hosted on ousdi.defense.gov | leadership-transition | government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf | [`/people/bradley-hansell`] |
 | 2025-09-05 | Executive Order 14347 ("Restoring the United States Department of War") authorizes subordinate officials within the Department of Defense to use secondary titles such as Under Secretary of War in non-statutory contexts; statutory references to the Department of Defense and subordinate officers shall remain controlling until changed by law | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 | 2026-01-29 | DoD Inspector General Management Advisory DODIG-2026-047 issued for the Under Secretary of Defense for Intelligence and Security: DoD Policy and Training on Dissemination Controls for Controlled Unclassified Information (CUI). Five recommendations (two closed, three resolved-but-open). Confirms DoDI 5200.48 issued by OUSD(I&S) | oversight | government/dodig-2026-047-redacted-secure.pdf |  |
@@ -508,6 +587,13 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 | [`/organizations/ipmo`] | subsidiary | government/notre-dame-ipmo-memo-20220527.pdf |
 | [`/organizations/odni`] | partner | government/dodd-5143-01-usdis-charter-wayback-20260117.pdf |
 | [`/organizations/sancorp-consulting`] | contractor | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
+| [`/organizations/dmdpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/osd-red-team`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/scpo`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/cp-wmd`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/aic`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/le-oversight-compliance-directorate`] | subsidiary | government/osd-op5-fy26-wayback-20260201.pdf |
+| [`/organizations/c-adi`] | subsidiary | government/osd-op5-fy25-20260501.pdf |
 
 ---
 
@@ -519,6 +605,7 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 
 - [`/people/bradley-hansell`]
 - [`/people/david-m-taylor`]
+- [`/people/deitra-trotter`]
 - [`/people/dustin-gard-weiss`]
 - [`/people/ezra-cohen-watnick`]
 - [`/people/james-clapper`]
@@ -537,12 +624,19 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 ### Organizations
 
 - [`/organizations/aaro`]
+- [`/organizations/aic`]
+- [`/organizations/c-adi`]
+- [`/organizations/cp-wmd`]
 - [`/organizations/dcsa`]
 - [`/organizations/dia`]
+- [`/organizations/dmdpo`]
 - [`/organizations/dod`]
 - [`/organizations/ipmo`]
+- [`/organizations/le-oversight-compliance-directorate`]
 - [`/organizations/nga`]
 - [`/organizations/nro`]
 - [`/organizations/nsa`]
 - [`/organizations/odni`]
+- [`/organizations/osd-red-team`]
 - [`/organizations/sancorp-consulting`]
+- [`/organizations/scpo`]

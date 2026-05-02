@@ -78,13 +78,12 @@ Ring complete — hearing event node, all three oral transcripts
 (Fravor, Grusch, Graves), all three written testimony documents, and
 all three witness person nodes (Fravor, Grusch, Graves) built.
 Remaining stubs below are cross-cluster dependencies surfaced by the
-Cluster B build (Kirkpatrick also appears in Cluster D AARO
-leadership; Gallaudet is cross-referenced from Graves's testimony;
-ODNI report is a foundational document referenced from Graves).
+Cluster B build (Gallaudet is cross-referenced from Graves's
+testimony; ODNI report is a foundational document referenced from
+Graves).
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/people/sean-kirkpatrick` | person / institutional-actor | Medium | AARO founding director; named in Graves testimony | 2023-04-19 SASC testimony (archived) |
 | `/people/tim-gallaudet` | person / institutional-actor | Medium | Former NOAA Chief Scientist and Deputy Administrator; UAP advocate | Public record |
 | `/documents/odni-preliminary-assessment-2021` | document / gov-doc | Medium | Referenced in Graves testimony; foundational UAP report | ODNI (public PDF; archived) |
 
@@ -143,7 +142,6 @@ reconciliation below.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/transcripts/2023-07-26-house-grusch` | transcript / hearing | High | Oral sworn testimony; 79 Grusch quotes mined during rebuild; cross-references Fravor + Graves hearing | Already archived (PDF in sources) |
 | `/transcripts/newsnation-coulthart-grusch-2023` | transcript / other | Medium | First on-camera disclosure interview (2023-06-11) | transcribe.py output (archived) |
 | `/transcripts/jre-2065-grusch-2023` | transcript / other | Medium | Most-extensive long-form interview (2023-11-21) | transcribe.py output (archived) |
 | `/transcripts/american-alchemy-grusch-72hrs-2023` | transcript / other | Low | Jesse Michels documentary | transcribe.py output (archived) |

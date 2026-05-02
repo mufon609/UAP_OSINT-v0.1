@@ -29,6 +29,10 @@ Sancorp's contract record with OUSD(I&S), awarded by Washington Headquarters Ser
 
 Sancorp joined the Intelligence and National Security Alliance (INSA) Insider Threat Subcommittee in March 2021 and contributed to INSA's October 2021 white paper "The Need for Transparency on Insider Threats: Improving Information Sharing Between Government and Industry" — published the same month. INSA's September 2022 Insider Threat Program Naming Convention paper ([`/documents/insa-naming-convention-2022`]) states that "Counter-insider threat was developed by the Office of the Undersecretary of Defense for Intelligence and Security (OUSDI&S)." Subsequent Sancorp prime contracts include HQ003423C0061 and HQ003424C0046 ("Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" — IPMO continuation), HQ003424C0096 ("Exec. Admin, Ops, Policy & PPBE Sppt Svc" — AARO follow-on), HQ003424F0411 ("LABOR" — $11.2M task order supporting Office of the Assistant Secretary of Defense for Homeland Defense and Hemispheric Affairs and Office of the Deputy Assistant Secretary of Defense for Nuclear and Countering Weapons of Mass Destruction), HQ003425FE388 (Counterintelligence, Law Enforcement and Security Policy, Operations, Analytic and Business Operations support), HQ003425FE405 (Office of the Under Secretary of Defense for Policy office management and executive support — Sancorp Past Performance separately lists this customer as Office of the Under Secretary of War for Policy), and W519TC23F0545 (Chief Digital and Artificial Intelligence Office Algorithmic Warfare and Public Affairs). After GAO ([`/organizations/gao`]) denied Sancorp's protest of two OUSD(I&S) call orders awarded to Premier Enterprise Solutions (Executive Directorate, EXDIR ([`/organizations/ousd-is-exdir`])) and Arlo Solutions (Sensitive Activities and Special Programs, SASP ([`/organizations/ousd-is-sasp`])) in B-422985.4, B-422985.5 (June 11, 2025), Sancorp also took on W912CL25CA005 (USSOUTHCOM Support to Special Technical Operations including Special Access Programs, Alternative and Compensatory Control Measures, Military Deception (MILDEC), and Intelligence Planning, June 30, 2025) and HQ085926FG471 (Missile Defense Agency Scalable Homeland Innovative Enterprise Layered Defense Initial Order, December 19, 2025). The August 2025 GSA OASIS+ 8(a) Contract award is described by Sancorp as covering "integrated solutions in Program Management, Engineering Services, Research & Development, and Intelligence Support to help federal agencies achieve mission success."
 
+Both Sancorp PWSs are publicly available via DoD FOIA channels — the IPMO contract HQ003422C0064 PWS ([`/documents/foia-23-f-0906-sancorp-ipmo-pws`], dated April 25, 2022; FOIA case 23-F-0906, posted to esd.whs.mil/Portals/54/Documents/FOID/Reading Room/Contracts/) and the AARO contract HQ003422C0094 PWS ([`/documents/blackvault-sancorp-23-f-1114-aaro-pws`], dated July 7, 2022; FOIA case 23-F-1114, released to John Greenewald via The Black Vault) — both were issued by Washington Headquarters Services Acquisition Directorate as 8(a) sole-source procurements with Sancorp as the awardee, drafted three months apart in the same WHS contracting environment. The MuckRock-channel companion request for the IPMO PWS (23-F-0906 / Robert Skvarla, Jr., May 19 2023) status remains "Awaiting Response" as of April 2026; the WHS Reading Room posting (the same FOIA case number) is the public-record route by which the IPMO PWS itself became retrievable. The PWSs share overlapping task scope including Executive Administrative Support, Strategy/Plans/Policy Support, and Operations Support; the IPMO PWS §5.4 substantively tasks the contractor to "assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD influence, deception, and perception management related operations, activities, and investments." The IPMO PWS pdftotext extract preserves multiple inline "WNNCWA" reviewer-comment annotations attesting an internal-reviewer review pass during the contract's PWS development; the AARO PWS comparable annotation layer requires visual inspection of the source PDF (pdftotext does not extract PDF annotation layers).
+
+Sancorp's public-facing Past Performance page (sancorpconsulting.com, 2026-04-30 capture) lists 19 prime contracts including the IPMO solicitation HQ003422R0164 ("Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support Services"), the OUSD(I&S) Counter-Insider Threat Program Office contract HQ003419C0159, the OUSD(I&S) Counterintelligence Analytical Support contract HQ003420C0167, and follow-on prime contracts HQ003425FE388 (Office of the Under Secretary of War for Intelligence and Security) and HQ003425FE405 (Office of the Under Secretary of War for Policy). Notably absent from the public-facing Past Performance list are the Sancorp AARO Support Services prime contracts HQ003422C0094 (signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both established as primary-source-attested via FOIA 23-F-1114 and USAspending.gov contract records included in this artifact's primary_sources.
+
 ---
 
 ## Key Personnel
@@ -77,6 +81,30 @@ _No personnel attested in primary sources to date._
 | Attributed to | 2022 |
 | Source | [archived source](../sources/government/osd-op5-fy23-wayback-20241116.pdf) |
 | Location | OSD OP-5 FY 2023 Operation and Maintenance Budget Estimates, IPMO program description |
+
+---
+
+### IPMO Performance Work Statement title block. Establishes the IPMO PWS issue date of April 25, 2022 — three months before the AARO PWS issue date of July 7, 2022 (per the FOIA 23-F-1114 release for AARO contract HQ003422C0094). Both PWSs were drafted in the same Washington Headquarters Services Acquisition Directorate template environment as 8(a) sole-source procurements with Sancorp as the awardee. The IPMO PWS title preserves an OCR artifact in the date ("April 25,2022" missing space after comma); the IPMO PWS contract HQ003422C0064 was awarded June 9, 2022 (per the existing primary_sources timeline).
+
+> PERFORMANCE WORK STATEMENT (PWS) April 25,2022 Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support Services to the Influence and Perception Management Office (IPMO) Office of the Under Secretary of Defense for Intelligence and Security
+
+| Field | Value |
+|---|---|
+| Attributed to | IPMO Performance Work Statement title block, FOIA 23-F-0906 release, 2022-04-25 |
+| Source | [archived source](../sources/government/foia-23-f-0906-sancorp-ipmo-pws.pdf) |
+| Location | p. 1, PWS title block |
+
+---
+
+### IPMO PWS §5.4 contractor scope verbatim — Sancorp as prime contractor is contractually tasked to "assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD influence, deception, and perception management related operations, activities, and investments". This is substantive policy-development scope (not merely administrative support) inside the OUSD(I&S) Influence and Perception Management Office. The same PWS task description on the AARO contract (HQ003422C0094 §5.3 per FOIA 23-F-1114) tasks Sancorp on Strategy, Plans, and Policy Support for AARO. Same prime contractor with strategy/plans/policy contractual scope inside both the OUSD(I&S) influence-and-perception-management office and the OUSD(I&S) UAP-investigation office during the same spring/summer 2022 contracting window.
+
+> Assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD influence, deception, and perception management related operations, activities, and investments.
+
+| Field | Value |
+|---|---|
+| Attributed to | IPMO PWS Section 5.4 contractor task description, FOIA 23-F-0906 release, 2022-04-25 |
+| Source | [archived source](../sources/government/foia-23-f-0906-sancorp-ipmo-pws.pdf) |
+| Location | IPMO PWS §5.4 Policy, Operations, Analytic and Contract Task Lead Support — Senior Operations Specialist/Contract Task Lead bullet |
 
 ---
 
@@ -572,6 +600,7 @@ _No personnel attested in primary sources to date._
 | 2021-03 | Sancorp joined the Intelligence and National Security Alliance (INSA), Insider Threat Subcommittee participation announced. | affiliation | news/sancorp-careers-20260430.html |  |
 | 2021-10 | Sancorp contributed to INSA white paper "The Need for Transparency on Insider Threats: Improving Information Sharing Between Government and Industry" — published the same month. | publication | news/sancorp-careers-20260430.html |  |
 | 2022-03-01 | IPMO established by direction from SecDef and USD(I&S) per Notre Dame memo. | predecessor-establishment | government/notre-dame-ipmo-memo-20220527.pdf |  |
+| 2022-04-25 | IPMO PWS issued by WHS Acquisition Directorate as 8(a) sole-source procurement — "Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support Services to the Influence and Perception Management Office (IPMO)". Three months before the AARO PWS issued July 7, 2022. Released via FOIA 23-F-0906. | contract | government/foia-23-f-0906-sancorp-ipmo-pws.pdf |  |
 | 2022-06-09 | HQ003422C0064 awarded — IPMO Support Services, $3,026,578. | contract | government/usaspending-hq003422c0064.txt |  |
 | 2022-07 | GSA Multiple Award Schedule (GSA MAS) awarded to Sancorp per Company News announcement. | contract | news/sancorp-careers-20260430.html |  |
 | 2022-09-01 | HQ003422C0094 awarded — AARO Support Services, $4,061,787. | contract | government/usaspending-hq003422c0094.txt |  |
@@ -659,5 +688,6 @@ _No personnel attested in primary sources to date._
 ### Documents
 
 - [`/documents/blackvault-sancorp-23-f-1114-aaro-pws`]
+- [`/documents/foia-23-f-0906-sancorp-ipmo-pws`]
 - [`/documents/insa-naming-convention-2022`]
 - [`/documents/ipmo-notre-dame-memo-2022`]

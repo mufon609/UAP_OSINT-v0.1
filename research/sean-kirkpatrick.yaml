@@ -88,6 +88,8 @@ primary_sources:
   format: html
 - path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
   format: html
+- path: government/uscode-title50-section3373-20260501.html
+  format: html
 - path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20241208-last-live.html
   format: html
 - path: government/ornl-gov-kirkpatrick-staff-profile-wayback-20241222-first-404.html
@@ -1031,6 +1033,22 @@ timeline:
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
     location: lines 492-503
+- id: t65
+  added_date: '2026-05-01'
+  date: '2024-03-06'
+  event: 'Per Wirkkala read-out in FOIA 24-F-0894, Kirkpatrick co-presented at two classified Hill briefings on the AARO Historical Record Report (Compartmented Annex 1300-1400; TS//SCI 1400-1530) alongside Acting Director Phillips and a third (b)(6)-redacted presenter — three months after his December 1 2023 official AARO departure'
+  category: testimony
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: Wirkkala read-out summary, lines 770-833
+- id: t66
+  added_date: '2026-05-01'
+  date: '2024-05-08'
+  event: 'Greenstreet split-screen interview (per Unknown Country June 12 2024); Kirkpatrick states he had no pre-AARO interest in UFOs "not beyond the occasional movie" and did not "perform any duties regarding UFOs or paranormal phenomena" — denials in tension with his April 19 2018 Skinwalker Ranch briefing attendance as an "independent outside reviewer" of AATIP/AAWSAP research'
+  category: testimony
+  source:
+    path: news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html
+    location: ¶ "While being interviewed by New York Post reporter-turned-UFO-debunker"
 - id: t61
   added_date: '2026-04-29'
   date: '2024-05-09'
@@ -1535,7 +1553,7 @@ quotes:
 - id: q40
   added_date: '2026-04-29'
   observation_type: relayed
-  statement_date: '2024'
+  statement_date: '2024-05-08'
   text: 'no, I attended a briefing at the request of Senate Armed Services Committee on what was at that time associated with the AATIP/AAWSAP research that was going on as an independent outside reviewer, and I gave them my opinions at that time
 
     '
@@ -1543,7 +1561,29 @@ quotes:
     path: news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html
     location: ¶ Greenstreet split-screen interview
   significance: Kirkpatrick's verbatim response to journalist Steven Greenstreet's question about the April 19 2018 SSCI/SASC Skinwalker briefing — frames himself as 'an independent outside reviewer'. Brandon Fugal's May 9 2024 X post photograph and the DoD's June 22 2024 written confirmation to Liberation Times that Kirkpatrick attended the briefing both contradict the 'outside reviewer' framing (audit 3.4 — the photograph shows Kirkpatrick at the head of the table while Fugal's team presented; Fugal's account states Kirkpatrick told attendees they 'already know' the reality of the UFO phenomenon).
-  context: Greenstreet split-screen interview, transcribed in Unknown Country article June 12 2024
+  context: Greenstreet split-screen interview, transcribed in the June 12 2024 Unknown Country article
+- id: q41
+  added_date: '2026-05-01'
+  observation_type: relayed
+  statement_date: '2024-05-08'
+  text: 'perform any duties regarding UFOs or paranormal phenomena'
+  source:
+    path: news/unknowncountry-undisclosed-2018-meeting-kirkpatrick-skinwalker-20240612.html
+    location: '¶ "While being interviewed by New York Post reporter-turned-UFO-debunker Steven Greenstreet on May 8"'
+  significance: 'Kirkpatrick verbatim phrase from his May 8 2024 Greenstreet interview, in answer to whether he had any pre-AARO duties regarding UFOs or paranormal phenomena. Per the Unknown Country June 12 2024 article: "an evasive Kirkpatrick stated that he had no interest in UFOs, ''not beyond the occasional movie,'' and that he did not ''perform any duties regarding UFOs or paranormal phenomena'' prior to taking the helm of AARO." Directly contradicted by Kirkpatrick''s own admission (q40) that he attended the April 19 2018 SSCI/SASC Skinwalker Ranch briefing as ''an independent outside reviewer'' of AATIP/AAWSAP research, four years before AARO''s establishment — pre-AARO involvement that constitutes both ''interest'' and ''duties'' regarding UFOs/paranormal phenomena.'
+  context: Greenstreet interview May 8 2024, paraphrased with embedded verbatim phrases in Unknown Country article June 12 2024 — Kirkpatrick denying pre-AARO UAP duties
+- id: q42
+  added_date: '2026-05-01'
+  observation_type: relayed
+  statement_date: '2024-03-06'
+  text: |-
+    BLUF: Both briefs were well attended and went well. Dr. Kirkpatrick attended
+    the first brief and the majority of the second brief.
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Rheanne E. Wirkkala (HON OSD OASD/LA) read-out summary, March 6, 2024 11:51 AM'
+  significance: 'FOIA 24-F-0894 documents that Dr. Sean Kirkpatrick co-presented at TWO classified Hill briefings on the AARO Historical Record Report on March 6, 2024 — Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530) — alongside Acting Director Tim Phillips and a third (b)(6)-redacted presenter. Per the Wirkkala read-out, Phillips delivered prepared opening remarks at both sessions; Kirkpatrick attended both and fielded questions alongside Phillips during Q&A. The "outside reviewer" framing later applied around Kirkpatrick (per his Greenstreet interview answers in May 2024 and per his post-departure consultancy posture) is in tension with this primary-source documentation that he was actively presenting AARO findings as part of AARO leadership three months after his official December 1, 2023 departure date.'
+  context: 'Wirkkala read-out summary in FOIA 24-F-0894 documenting Kirkpatrick co-presenting two AARO Historical Record Report briefings on Capitol Hill three months after his December 1, 2023 official AARO departure'
 entities_referenced:
 - id: e1
   added_date: '2026-04-29'
@@ -1804,9 +1844,12 @@ credibility_notes: 'This section documents specific patterns in the public recor
   Group C — November 2023 OUSD(I&S) revisions to the UAP Disclosure Act. The 33-page line-by-line revisions to the Senate-passed UAP Disclosure Act of 2023 were reviewed by the Office of the Under Secretary of Defense for Intelligence and Security and submitted to congressional negotiators in November 2023, weakening the legislation''s independent disclosure mechanisms. Per a July 2024 Marik von Rennenkampff interview cited in Douglas Johnson''s analysis (July 2024), Kirkpatrick said of these revisions that "we convinced Congress last year not to go down that road". He separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
 
 
-  Group D — Statements about prior UAP involvement. In a 2024 split-screen interview with journalist Steven Greenstreet — transcript reporting in Unknown Country June 12 2024 and The UFO Chronicles June 2024 — Kirkpatrick characterized himself as "an independent outside reviewer" at the April 19 2018 SSCI/SASC Skinwalker Ranch briefing. Brandon Fugal''s May 9 2024 X post documents a photograph from that briefing showing Kirkpatrick at the head of the table while Fugal''s team presented; Fugal subsequently shared metadata that set the capture to 1:31 PM ET on April 19 2018, between 1:00 and 3:30 PM ET. On June 22 2024, Liberation Times reported that the Department of Defense had confirmed in writing to the publication that Kirkpatrick attended the briefing. The "outside reviewer" framing in the Greenstreet interview is in tension with imagery of Kirkpatrick at the head of the table in the photograph and with Fugal''s account that Kirkpatrick told attendees they "already know" the reality of the UFO phenomenon.
+  Group D — Statements about prior UAP involvement. In a May 8 2024 split-screen interview with journalist Steven Greenstreet — transcript reporting in Unknown Country June 12 2024 and The UFO Chronicles June 2024 — Kirkpatrick characterized himself as "an independent outside reviewer" at the April 19 2018 SSCI/SASC Skinwalker Ranch briefing. Brandon Fugal''s May 9 2024 X post documents a photograph from that briefing showing Kirkpatrick at the head of the table while Fugal''s team presented; Fugal subsequently shared metadata that set the capture to 1:31 PM ET on April 19 2018, between 1:00 and 3:30 PM ET. On June 22 2024, Liberation Times reported that the Department of Defense had confirmed in writing to the publication that Kirkpatrick attended the briefing. The "outside reviewer" framing in the Greenstreet interview is in tension with imagery of Kirkpatrick at the head of the table in the photograph and with Fugal''s account that Kirkpatrick told attendees they "already know" the reality of the UFO phenomenon.
 
 
-  HRR Vol 1 rollout. Internal Pentagon emails released August 2025 under FOIA case 24-F-0894 (Black Vault analysis) document a tightly controlled press rollout for the AARO Historical Record Report Vol 1 — the report Kirkpatrick signed before his departure and which AARO publicly released March 8 2024 under Acting Director Tim Phillips. Multiple journalists from Scientific American, the Washington Examiner, and Finland''s national broadcaster YLE requested inclusion in press briefings or interviews with Phillips; those requests were declined. Pentagon spokesperson Sue Gough wrote: "At this time, we are looking to keep any media engagement with AARO''s acting director to a small group." A small invite-only briefing was held on March 8 2024. In an email chain dated March 5 2024 discussing the draft press release, Gough asked whether ODNI should be referenced because "the legislation calls for AARO producing the report — but Dir, AARO reports to PDDNI, too, so wanted to check"; the reply with the sender redacted was "Confirming that we''re good without any ODNI mention." ODNI is part of AARO''s reporting chain under the FY2023 NDAA — AARO reports to both the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence — yet the public Vol 1 rollout was framed as DoD only. The same release captures Gough writing "We do not want to see sUAS added to AARO''s portfolio!" to David A. Kozik (Director of Congressional Activities, OUSD(I&S)) after Senator Gillibrand asked AARO to take on counter-drone coordination during a Senate briefing on drone incursions.
+  Per the same Greenstreet interview, paraphrased in the Unknown Country June 12 2024 article: "an evasive Kirkpatrick stated that he had no interest in UFOs, ''not beyond the occasional movie,'' and that he did not ''perform any duties regarding UFOs or paranormal phenomena'' prior to taking the helm of AARO." Both denials are in tension with Kirkpatrick''s own admission (q40) that he attended the April 19 2018 SSCI/SASC Skinwalker Ranch briefing as "an independent outside reviewer" of AATIP/AAWSAP research, four years before AARO''s establishment — pre-AARO involvement that constitutes both interest and duties regarding UFOs/paranormal phenomena. The "outside reviewer" framing is also in tension with FOIA 24-F-0894 documenting that Kirkpatrick was actively co-presenting two AARO Historical Record Report classified Hill briefings on March 6 2024 — Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530) — alongside Acting Director Phillips and a third (b)(6)-redacted presenter, three months after his December 1 2023 official AARO departure. Per the Wirkkala read-out summary: "BLUF: Both briefs were well attended and went well. Dr. Kirkpatrick attended the first brief and the majority of the second brief."
+
+
+  HRR Vol 1 rollout. Internal Pentagon emails released August 26 2025 under FOIA case 24-F-0894 (Black Vault analysis) document a tightly controlled press rollout for the AARO Historical Record Report Vol 1 — the report Kirkpatrick signed before his departure and which AARO publicly released March 8 2024 under Acting Director Tim Phillips. Multiple journalists from Scientific American, the Washington Examiner, and Finland''s national broadcaster YLE requested inclusion in press briefings or interviews with Phillips; those requests were declined. Pentagon spokesperson Sue Gough wrote: "At this time, we are looking to keep any media engagement with AARO''s acting director to a small group." A small invite-only briefing was held on March 8 2024. In an email chain dated March 5 2024 discussing the draft press release, Gough asked whether ODNI should be referenced because "the legislation calls for AARO producing the report — but Dir, AARO reports to PDDNI, too, so wanted to check"; the reply with the sender redacted was "Confirming that we''re good without any ODNI mention." AARO statutorily reports to both the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence per 50 U.S.C. § 3373 — yet the public Vol 1 rollout was framed as DoD only, with the omission agreed to bilaterally by ODNI''s public-affairs office. The same release captures Gough writing "We do not want to see sUAS added to AARO''s portfolio!" to David A. Kozik (Director of Congressional Activities, OUSD(I&S)) after Senator Gillibrand asked AARO to take on counter-drone coordination during a Senate briefing on drone incursions.
 
   '

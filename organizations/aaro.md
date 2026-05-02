@@ -34,11 +34,15 @@ Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to 
 
 On November 19, 2024 Kosloski appeared before the Senate Armed Services Subcommittee on Emerging Threats and Capabilities — his first hearing as AARO Director — presenting three case resolutions: the 2013 Puerto Rico transmedium case (assessed as a pair of balloons or sky lanterns floating at 7 knots over an airport, descending to 200 meters), the 2017 GOFAST video (assessed as an object closer to 13,000 feet rather than near the water, with apparent fast movement explained by parallax), and a 2018 Mt. Etna UAV case (a balloon drifting with the wind, with the slide deck stating "approximately 170 kilometers from the volcano" and the stenographic transcript of Kosloski's oral testimony stating "170 meters away from the plume"). All three case resolutions were presented at high or moderate confidence with the support of IC and S&T partners.
 
-AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) provides AARO Support Services under prime contracts HQ003422C0094 (signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The contract Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the contract Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. The FY 2026 Office of the Secretary of Defense Budget Estimates list the program as Advanced Intelligence Capabilities (AIC); the public-facing aaro.mil website continues to use the AARO name.
+AARO is established under the Under Secretary of Defense for Intelligence and Security (USD(I&S); see [`/organizations/ousd-is`]) per the Hicks establishment memorandum, which directs the USD(I&S) to establish the AARO in coordination with the Director of Administration and Management ([`/organizations/da-m`]). Sancorp Consulting, LLC ([`/organizations/sancorp-consulting`]) provides AARO Support Services under prime contracts HQ003422C0094 (signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both awarded by Washington Headquarters Services ([`/organizations/whs`]). The contract Performance Work Statement defines task areas including Executive Administrative Support, Strategy, Plans, and Policy Support, Congressional Affairs, Public Affairs, and FOIA Support, Data Architecture Support, Planning, Programming, Budgeting and Executive Support, Reporting Support, and Operations Support; the contract Routing Data Table identifies AARO as the Service Approver and Service Acceptor at DoDAAC HQ0208. The FY 2024 OSD OP-5 budget submission (released June 2023) named the OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)" with mission language matching the Hicks establishment memorandum; the FY 2025 OSD OP-5 (released March 2024) is the first budget submission to name the same sub-office "Advanced Intelligence Capabilities (AIC)" with substantively identical mission language and the same statutory reporting line to the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence per 50 U.S.C. § 3373. The FY 2026 OSD OP-5 (released June 2025) preserves the AIC name. The public-facing aaro.mil website and subsequent DoD press releases continue to use the AARO name; no public DoD announcement of an AARO renaming has been issued.
+
+In late July 2023, Deputy Secretary of Defense Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Director Kirkpatrick ([`/people/sean-kirkpatrick`]) to report directly to her — per DefenseScoop reporting (Brandi Vincent ([`/people/brandi-vincent`]), August 30, 2023). Hicks took action late that month, partly to help speed up AARO's launch of the congressionally mandated public website (subsequently launched on August 31, 2023). Per the same reporting, between November 2022 and April 2023, the AARO website-launch package had moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week under USD(I&S) Moultrie's ([`/people/ronald-moultrie`]) request, with AARO regularly re-coordinating the memo and Kirkpatrick attending several in-person meetings with the under secretary. Hicks's late-July reorganization placed AARO's operational reporting line in alignment with the 50 U.S.C. § 3373 statutory carveout — Director, AARO reports to the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence — and followed within days of the July 26, 2023 House Oversight UAP hearing.
 
 AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP recovery and reverse-engineering program brought to AARO's attention by interviewees who claimed it was a sensitive DHS compartment to cover up the retrieval and exploitation of "non-human biologics." Per the report, KONA BLUE traces its origins to the DIA-managed AAWSAP/AATIP program (cancelled by DIA in 2012); after cancellation, supporters proposed to DHS that they create and fund a new version under a Special Access Program covering UAP investigations, paranormal research and reverse-engineering of "any recovered off-world spacecraft that they hoped to acquire." A Prospective Special Access Program (PSAP) was officially requested but eventually rejected by DHS leadership for lacking merit. The report's finding: "no extraterrestrial craft or bodies were ever collected" and the SAP "was never approved or stood up, and no data or material was transferred to DHS."
 
 Historical Record Report Volume I states "AARO will publish Volume II in accordance with the date established in Section 6802 of the National Defense Authorization Act for Fiscal Year 2023" — Section 6802(j) of the Intelligence Authorization Act for Fiscal Year 2023 set the deadline at "Not later than 540 days after the date of the enactment". As of February 25, 2026 (per archived DefenseScoop coverage), AARO has not published Volume II.
+
+FOIA case 24-F-0894 (released August 26, 2025; 14 pages responsive across five Initial Denial Authorities — Plescow, Lane, Morrison, Rose, and Shockley, drawn from OSD/I&S, OASD/LA, ODNI, OSD/PA, and OUSD/Policy) documents Pentagon internal coordination on the March 8, 2024 AARO HRR Vol I rollout. On March 5, 2024, Pentagon spokesperson Sue Gough ([`/people/sue-gough`]) emailed her ODNI counterpart asking whether DNI/ODNI should be referenced in the press release given that "Dir, AARO reports to PDDNI, too" per 50 U.S.C. § 3373; the ODNI counterpart replied "Confirming that we're good without any ODNI mention" — the public rollout was framed as DoD-only with the omission agreed to bilaterally by ODNI's public-affairs office. On March 6, 2024, AARO Acting Director Phillips delivered two classified Hill briefings on the HRR (Compartmented Annex Brief 1300-1400; TS//SCI Brief 1400-1530), joined in both sessions by Dr. Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) — three months after his December 1, 2023 official AARO departure — and a third (b)(6)-redacted presenter; Hill staff at the Compartmented Annex session asked AARO leadership for "perspectives and recommendations for countering inaccurate or misleading narratives related to UAP based on the review". The same day, PTDO ASD Becky Zimmerman briefed 14 senators (Reed, Wicker, Shaheen, Gillibrand, Ernst, Cramer, Tuberville, Rounds, Schmitt, Cotton, Manchin, Peters, Kaine, and Kelly) on the December 2023 Joint Base Langley-Eustis drone incursions; per Lane Bodian's OASD/LA read-out, Sen. Gillibrand had an "animated response" arguing that sUAS should be catalogued by AARO. Sue Gough emailed David A. Kozik ([`/people/david-kozik`]) (OUSD(I&S) Director Congressional Activities) at 1:45 PM with subject "FW: Following up from Unders" and Importance: High flag: "Flagging for you in case you haven't heard. We do not want to see sUAS added to AARO's portfolio!" Kozik replied the next morning that AARO "absolutely should be involved in cUAS efforts in a *coordinating* role, but they should not/not be the lead", attributing the Gillibrand "lead role" framing to "a prep failure on our part for ASD HD&HA". Heather King, of the Secretary of Defense office, separately emailed the OSD/PA chain at 10:19 AM that "the Deputy asked us to flag for you that the Langley topic re: Breaking Defense may be connected to the AARO rollout that occurred this week" — the Deputy Secretary of Defense office connecting the JBLE drone story to the AARO HRR rollout in DoD's own internal correspondence three months before any external reporter drew the connection.
 
 AARO's FY 2024 Consolidated Annual Report on Unidentified Anomalous Phenomena, dated November 14, 2024, documents 757 UAP reports received during the May 1, 2023 – June 1, 2024 reporting period (485 occurred during the reporting period; 272 occurred outside of the reporting period between 2021 and 2022 and were not included in previous annual UAP reports). 49 cases were resolved during the reporting period (all to prosaic objects); 243 additional cases were recommended for closure pending peer review; 444 cases lacked sufficient data and were placed in the Active Archive. AARO determined 21 cases merit further analysis by its IC and S&T partners "based on reported anomalous characteristics and/or behaviors."
 
@@ -226,6 +230,54 @@ On March 31, 2026, the House Oversight and Government Reform Task Force on the D
 
 ---
 
+### FY 2024 OSD OP-5 budget submission (released June 2023) names the OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)" with mission language essentially identical to AARO's 50 U.S.C. § 3373 statutory carveout — same mission text that the FY 2025 and FY 2026 budget submissions later attribute to "Advanced Intelligence Capabilities (AIC)". Anchors the FY24-vs-FY25 budget-document name change.
+
+> All-domain Anomaly Resolution Office (AARO) - The AARO synchronizes efforts across the Department and with other U.S. Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks to safety of operations and national security. This includes anomalous, unidentified space, airborne, submerged and transmedium objects.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2024 budget, OUSD(I&S) program section, 2023 |
+| Source | [archived source](../sources/government/osd-op5-fy24-20260501.pdf) |
+| Location | OSD OP-5 FY 2024 Operation and Maintenance Budget Estimates, OUSD(I&S) program section |
+
+---
+
+### DefenseScoop exclusive (Brandi Vincent, August 30, 2023) reporting that AARO's operational reporting line transitioned from OUSD(I&S) (USD(I&S) Moultrie) to direct Deputy Secretary of Defense (Hicks) oversight in late July 2023 — within days of the July 26, 2023 House Oversight UAP hearing. Co-anchored with the website-launch announcement.
+
+> Deputy Defense Secretary Kathleen Hicks recently moved to personally oversee the Pentagon’s unidentified anomalous phenomena (UAP) investigation team formally known as the All-domain Anomaly Resolution Office, DefenseScoop has exclusively learned. And a new website will soon be launched where incidents can be reported.
+
+| Field | Value |
+|---|---|
+| Attributed to | DefenseScoop, "Hicks takes direct oversight of Pentagon's UAP office; new reporting website to be launched", August 30, 2023, 2023-08-30 |
+| Source | [archived source](../sources/news/defensescoop-hicks-aaro-oversight-20230830.html) |
+| Location | article body, ¶ following byline |
+
+---
+
+### Specific attestation that Kirkpatrick was repositioned to report directly to the Deputy Secretary of Defense — clarifying the operational reporting-chain change. Per 50 U.S.C. § 3373, AARO's statutory operational reporting line is to DEPSECDEF and PDDNI; the late-July 2023 transition gave that statutory structure operational effect.
+
+> Hicks now holds regular meetings with AARO’s inaugural director, Sean Kirkpatrick — who she’s also repositioned to report directly to her.
+
+| Field | Value |
+|---|---|
+| Attributed to | DefenseScoop August 30, 2023 reporting on Hicks's late-July 2023 reporting-chain change, 2023-08-30 |
+| Source | [archived source](../sources/news/defensescoop-hicks-aaro-oversight-20230830.html) |
+| Location | article body, ¶3 |
+
+---
+
+### Documents OUSD(I&S) Front Office / AARO operational friction during the November 2022 – April 2023 period — the AARO website-launch package was iterated bi-weekly between OUSD(I&S) Front Office and AARO under USD(I&S) Moultrie's direct review. Establishes the operational tension that preceded Hicks's late-July 2023 direct-oversight transition.
+
+> Between November 2022 and April 2023, that submitted package moved back and forth between the I&S front office and AARO at least every other week. At Moultrie’s request, AARO regularly responded to questions, made edits and re-coordinated the memo. And Kirkpatrick also had several in-person meetings with the undersecretary.
+
+| Field | Value |
+|---|---|
+| Attributed to | DefenseScoop August 30, 2023 reporting; Kirkpatrick attribution, 2023-08-30 |
+| Source | [archived source](../sources/news/defensescoop-hicks-aaro-oversight-20230830.html) |
+| Location | article body, AARO website-launch timeline section |
+
+---
+
 ### Kirkpatrick tenure accomplishments — 800+ UAP cases investigated, aaro.mil launched
 
 > During his tenure, Dr. Kirkpatrick stood up the office and its operations, investigated more than 800 unidentified anomalous phenomena (UAP) cases, led an extensive search for U.S. Government and contractor programs associated with UAP, and established the department&#39;s first public-facing website
@@ -235,6 +287,143 @@ On March 31, 2026, the House Oversight and Government Reform Task Force on the D
 | Attributed to | DoD statement on Kirkpatrick's upcoming departure, November 20, 2023, 2023-11-20 |
 | Source | [archived source](../sources/government/defense-gov-kirkpatrick-departure-20231120.html) |
 | Location | article body ¶3 |
+
+---
+
+### FY 2025 OSD OP-5 budget submission (released March 2024) is the first OSD OP-5 release to name the OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" rather than "All-domain Anomaly Resolution Office (AARO)" — narrows the budget-document rename window to between FY24 OP-5 (March 2023) and FY25 OP-5 (March 2024). Mission text is substantively identical to the FY24 AARO program description and to the Hicks AARO establishment memo. Same OUSD(I&S) sub-office under a different budget-document name.
+
+> Advanced Intelligence Capabilities (AIC) synchronizes efforts across the Department and with other U.S. Federal departments and agencies to detect,
+>             identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas of
+>             interest, and, as necessary, to mitigate any associated risks to the safety of operations and national security. This includes anomalous, unidentified
+>             space, airborne, submerged, and transmedium objects.
+
+| Field | Value |
+|---|---|
+| Attributed to | OSD OP-5 FY 2025 budget, OUSD(I&S) program section, Defense-Wide intelligence and security narrative, 2024 |
+| Source | [archived source](../sources/government/osd-op5-fy25-20260501.pdf) |
+| Location | OSD OP-5 FY 2025 Operation and Maintenance Budget Estimates, OUSD(I&S) program section |
+
+---
+
+### Pentagon spokesperson Sue Gough's standardized reply to multiple journalist requests (Scientific American, Washington Examiner, YLE Finland) for press-engagement access to Acting AARO Director Tim Phillips around the AARO HRR Vol I release. Documents the invite-only press-rollout posture; substantive media access was declined in favor of a single small invite-only briefing on March 8, 2024.
+
+> Thanks for reaching out. At this time, we are looking to keep any media engagement with AARO's acting director to a small group.
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894, Sue Gough reply email to journalist inquiry, repeated verbatim across multiple journalist exchanges in February-March 2024, 2024-02-14 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | Sue Gough reply to journalist inquiries about AARO HRR Vol I press engagement, February-March 2024 |
+
+---
+
+### Pentagon spokesperson Sue Gough (OSD/PA) to ODNI counterpart on March 5, 2024 — internal coordination on whether to mention DNI/ODNI in the AARO Historical Record Report Volume I rollout press release. Gough explicitly references AARO's statutory dual reporting line (Director, AARO reports to PDDNI per 50 U.S.C. § 3373) as the question warranting check.
+
+> Question 2 — I’m working on the press release today. Do you want DNI/ODNI mentioned? Unlike the annual UAP report, the legislation calls for AARO producing the report — but Dir, AARO reports to PDDNI, too, so wanted to check.
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894, Pentagon internal email Sue Gough (OSD/PA) to ODNI counterpart, March 5, 2024 12:51 PM, 2024-03-05 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | Pentagon spokesperson Sue Gough internal email to ODNI counterpart, March 5, 2024 12:51 PM |
+
+---
+
+### ODNI counterpart's confirmation reply to Gough — the public AARO HRR Vol I rollout was framed as DoD-only, with the omission of ODNI agreed to bilaterally by ODNI's own public-affairs office (sender redacted under (b)(3) 50 USC § 3024(i)/(m), the ODNI sources-and-methods exemption). Anchors the operational PA-coordination shape of the rollout, as distinct from a unilateral DoD framing decision.
+
+> Confirming that we're good without any ODNI mention
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894, ODNI internal-email reply to Gough, March 5, 2024 2:53 PM (sender (b)(3) 50 USC § 3024(i)/(m)-redacted), 2024-03-05 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | ODNI counterpart reply email to Sue Gough, March 5, 2024 2:53 PM |
+
+---
+
+### Pentagon spokesperson Sue Gough (OSD/PA) to David A. Kozik (Director Congressional Activities, OUSD(I&S)) on March 6, 2024 — explicit institutional position that AARO's portfolio should not be expanded to include small unmanned aircraft systems (sUAS) cataloging despite Sen. Gillibrand's same-day request at the SASC briefing on JBLE drone incursions. Sent at 1:45 PM with "Importance: High" flag.
+
+> Flagging for you in case you haven't heard. We do not want to see sUAS added to AARO's portfolio!
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894, Sue Gough to David Kozik email, March 6, 2024 1:45 PM, "Importance: High", 2024-03-06 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | Sue Gough email to David A. Kozik (OUSD(I&S) Director Congressional Activities), March 6, 2024 1:45 PM, Subject "FW: Following up from Unders", Importance: High |
+
+---
+
+### Lane A. Bodian (Senior Executive Service, Office of the Assistant Secretary of Defense for Legislative Affairs) summary of the SASC member briefing on the December 2023 JBLE drone incursions, given by PTDO ASD Becky Zimmerman (HD&HA), RADM Spedero (Joint Staff), and Maj Gen Sherman (USAF). Documents Sen. Gillibrand's on-the-record position — "sUAS should be catalogued by AARO" — that Gough and Kozik subsequently contested in their March 6-7 2024 internal exchange. The 14 senators in attendance included Reed, Wicker, Shaheen, Gillibrand, Ernst, Cramer, Tuberville, Rounds, Schmitt, Cotton, Manchin, Peters, Kaine, and Kelly.
+
+> There was an animated response by Sen. Gillibrand to a comment by Ms. Zimmerman regarding there not being
+>            a DoD-wide database for cataloging UAS incursions. Sen. Gillibrand believes sUAS should be catalogued by
+>            AARO. Ms. Zimmerman briefly mentioned stand-up of the SIG C-UXS during this exchange.
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894, Lane Bodian (SES, OASD/LA) email summary of March 6, 2024 SASC briefing on JBLE December 2023 drone incursions, 2024-03-06 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | Lane A. Bodian (SES, OASD/LA) email summary of SASC member briefing on JBLE drone incursions, March 6, 2024 1:28 PM |
+
+---
+
+### Heather King (SES, immediate Secretary of Defense office) email on March 6, 2024 — the Deputy Secretary of Defense (Hicks) office's direct staff connected the Joint Base Langley-Eustis December 2023 drone incursion story (Breaking Defense reporting) to the AARO Historical Record Report Vol I rollout in DoD's own internal correspondence. Most senior office in the building linked JBLE drones to the AARO HRR rollout three months before any external reporter drew the connection. King requested a readout of the AARO Hill engagements.
+
+> Following up from Unders a bit ago - the Deputy asked us to flag for you
+> that the Langley topic re: Breaking Defense may be connected to the AARO
+> rollout that occurred this week. Understand there were hill briefings on
+> UAP led by Tim Phillips (Acting Director of AARO). Now that those hill
+> briefings have occurred, there may be more individuals who are tracking
+> Langley. She asked that we flag for you all and that you get a readout of
+> those hill engagements.
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894, Heather King (SES, SD office) email to Meagher, Waibel, March 6, 2024 10:19 AM, 2024-03-06 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | Heather King (SES, Secretary of Defense office) email to Christopher Meagher (SES, OSD/PA), March 6, 2024 10:19 AM, Subject "Following up from Unders" |
+
+---
+
+### Rheanne E. Wirkkala (Assistant Secretary of Defense for Legislative Affairs) read-out documents that Acting Director Tim Phillips and a third (b)(6)-redacted presenter were joined by Dr. Sean Kirkpatrick in TWO classified Hill briefings on the AARO Historical Record Report on March 6, 2024 — three months after Kirkpatrick's December 1, 2023 official AARO departure. Briefings were Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530).
+
+> Mr. Tim Phillips, Acting Director AARO, and (b)(6)             were joined
+>  by Dr. Sean Kirkpatrick in a compartmented brief and a TS//SCI brief to
+>
+>                                                             3
+> staff on the findings of the Historical Record Report
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894, Rheanne Wirkkala (HON OSD OASD/LA) read-out summary, March 6, 2024 11:51 AM, 2024-03-06 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | Rheanne E. Wirkkala (HON OSD OASD/LA) read-out of two AARO Hill briefings on the AARO HRR, March 6, 2024 |
+
+---
+
+### Hill staff at the AARO HRR Compartmented Annex briefing (1300-1400, March 6, 2024) explicitly asked AARO leadership for "perspectives and recommendations for countering inaccurate or misleading narratives related to UAP based on the review" — committee-staff request to AARO at the SCI level for narrative-shaping work product, attested in DoD legislative-affairs correspondence.
+
+> At the end of the session, staff asked for
+>   perspectives and recommendations for countering inaccurate or misleading
+>   narratives related to UAP based on the review.
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894, Wirkkala read-out, March 6, 2024 Compartmented Annex Brief Q&A summary, 2024-03-06 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | Rheanne E. Wirkkala read-out, Compartmented Annex Brief Q&A summary, March 6, 2024 |
+
+---
+
+### David A. Kozik (Director Congressional Activities, OUSD(I&S)) reply to Gough on March 7, 2024 — establishes OUSD(I&S)'s institutional position that AARO has a coordinating but not lead role in counter-sUAS efforts, and attributes the Sen. Gillibrand "lead role" framing to a "prep failure on our part for ASD HD&HA" (Becky Zimmerman) at the prior-day SASC briefing. Confirms operational coordination between AARO Public Affairs (Gough) and OUSD(I&S) Congressional Activities (Kozik) on AARO's Hill-facing scope.
+
+> Thanks Sue—yeah, there's a bit of challenge here. AARO absolutely should be involved in cUAS efforts in a *coordinating* role, but they should not/not be the lead. The problem is, the rest of DoD doesn't always think to include them even in the coordinating role—or forgets to mention that they're part of the team when they're engaging certain members of Congress who are convinced they must be part of the team.
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894, David Kozik (OUSD(I&S) Director Congressional Activities) reply email to Sue Gough, March 7, 2024 9:23 AM, 2024-03-07 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | David A. Kozik reply email to Sue Gough, March 7, 2024 9:23 AM, Subject "RE: Following up from Unders" |
 
 ---
 
@@ -679,6 +868,19 @@ On March 31, 2026, the House Oversight and Government Reform Task Force on the D
 
 ---
 
+### FOIA 24-F-0894 cover letter (August 26, 2025) attesting five Initial Denial Authorities signed off on the 14-page release — Mr. Paul Plescow (Senior Intelligence Officer, Intelligence and Security), Ms. Ca-Asia Lane (Director of Operations, Legislative Affairs), Ms. Erin Morrison (Chief, Information Review and Release Group, Office of the Director of National Intelligence), Ms. Tanya Rose (Information Management Director, Public Affairs), and Ms. Debra Shockley (Deputy Director, Policy Executive Secretariat, Under Secretary of Defense for Policy). Cross-component IDA breadth (OSD/I&S, OASD/LA, ODNI, OSD/PA, OUSD/Policy) documents that AARO HRR rollout messaging implicated five OSD components plus ODNI on the redaction-authority side.
+
+> The personnel listed below, in their capacity as an Initial Denial Authority, have
+> determined that the pages contained information exempt from mandatory public release.
+
+| Field | Value |
+|---|---|
+| Attributed to | FOIA 24-F-0894 cover letter dated August 26, 2025, signed by Pamela Andrews, Chief, FOIA, OSD/JS Freedom of Information Division, 2025-08-26 |
+| Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
+| Location | FOIA 24-F-0894 cover letter dated August 26, 2025, Initial Denial Authority paragraph |
+
+---
+
 ### February 19, 2026 Truth Social post by President Donald J. Trump (@realDonaldTrump) directing the Secretary of War "and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs)". This is the underlying directive that DefenseScoop's February 25, 2026 coverage referenced as the "forthcoming" UAP-disclosure executive order Secretary of War Pete Hegseth committed to comply with.
 
 > Based on the tremendous interest shown, I will be directing the Secretary of War, and other relevant Departments and Agencies, to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs), and any and all other information connected to these highly complex, but extremely interesting and important, matters. GOD BLESS AMERICA!
@@ -837,11 +1039,19 @@ On March 31, 2026, the House Oversight and Government Reform Task Force on the D
 | 2022-07-15 | Establishment of the All-domain Anomaly Resolution Office by Deputy Secretary of Defense memorandum (Section 1683 NDAA FY 2022) | founding | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |  |
 | 2022-07-20 | Dr. Sean M. Kirkpatrick Director, All-domain Anomaly Resolution Office (AARO) | leadership-transition | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
 | 2022-09-01 | Sancorp AARO Support Services contract HQ003422C0094 awarded by Washington Headquarters Services Acquisition Directorate (\$4,061,786.51 obligated; 8(A) Sole Source). Eight task areas include Executive Admin, Strategy/Plans/Policy, Congressional Affairs/Public Affairs/FOIA, Data Architecture, PPBE, Reporting, and Operations Support. | contract | government/usaspending-hq003422c0094.txt | [`/organizations/sancorp-consulting`] |
+| 2023-07 | AARO operational reporting line decoupled from OUSD(I&S) to direct Deputy Secretary of Defense (Hicks) oversight, per DefenseScoop exclusive (August 30, 2023). Hicks repositioned Director Kirkpatrick to report directly to her. Coincided with the August 31, 2023 launch of aaro.mil and followed within days of the July 26, 2023 House Oversight UAP hearing. | leadership-transition | news/defensescoop-hicks-aaro-oversight-20230830.html |  |
 | 2023-08-31 | Department launched a website on the All-domain Anomaly Resolution Office (www.aaro.mil) | other | government/defense-gov-aaro-website-launch-20230831.html |  |
 | 2023-09-11 | DoD Freedom of Information Division released FOIA case 23-F-1114 to The Black Vault — 125 pages determined to be responsive, 11 pages withheld in their entirety per 5 U.S.C. § 552(b)(5), including the Performance Work Statement for the Sancorp AARO support contract HQ003422C0094. | foia | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |  |
 | 2023-10 | Timothy A. Phillips assumed the duties of the Deputy Director All-domain Anomaly Resolution Office | leadership-transition | government/aaro-phillips-timothy-bio-dec2023.pdf |  |
 | 2023-11-20 | Statement by Deputy Secretary of Defense Kathleen Hicks on the Upcoming Departure of AARO Director Dr. Sean Kirkpatrick | leadership-transition | government/defense-gov-kirkpatrick-departure-20231120.html |  |
 | 2023-12 | Dr. Kirkpatrick will retire from federal service in December | leadership-transition | government/defense-gov-kirkpatrick-departure-20231120.html |  |
+| 2024-03 | OSD OP-5 FY 2025 budget submission (released March 2024) names the OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" — first budget release to use AIC rather than "AARO". Mission language substantively identical to FY 2024 OP-5 AARO description. AARO public name preserved on aaro.mil and in DoD press releases; no DoD renaming announcement. | other | government/osd-op5-fy25-20260501.pdf |  |
+| 2024-03-05 | Pentagon internal coordination on AARO HRR Vol I press release (FOIA 24-F-0894): spokesperson Sue Gough and ODNI counterpart agree to omit DNI/ODNI from the public press release despite AARO's 50 U.S.C. § 3373 statutory dual reporting line. ODNI replies "Confirming that we're good without any ODNI mention". Public rollout framed as DoD-only. | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
+| 2024-03-06 | Two AARO classified Hill briefings on the HRR (Compartmented Annex 1300-1400; TS//SCI 1400-1530). Phillips and Dr. Kirkpatrick co-presented — three months after Kirkpatrick's December 2023 AARO departure. Hill staff asked AARO for "perspectives and recommendations for countering inaccurate or misleading narratives related to UAP based on the review" (FOIA 24-F-0894). | testimony | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
+| 2024-03-06 | SASC member briefing on December 2023 Joint Base Langley-Eustis drone incursions, given by PTDO ASD Becky Zimmerman, RADM Spedero, and Maj Gen Sherman; 14 senators attended. Per Lane Bodian's OASD/LA read-out (FOIA 24-F-0894), Sen. Gillibrand had an "animated response" arguing sUAS should be catalogued by AARO — triggering the same-day Gough/Kozik portfolio exchange. | hearing | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
+| 2024-03-06 | Heather King (SES, Secretary of Defense office) emails OSD/PA that the Deputy SecDef flagged the Langley/Breaking Defense story as connected to the AARO HRR rollout. Documents Deputy SecDef office linking JBLE December 2023 drone incursions to AARO HRR Vol I rollout in DoD internal correspondence three months before external reporting (FOIA 24-F-0894). | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
+| 2024-03-06 | Pentagon spokesperson Sue Gough emails David A. Kozik (OUSD(I&S) Director Congressional Activities) at 1:45 PM with "Importance: High": "We do not want to see sUAS added to AARO's portfolio!" Formal AARO PA position contesting Sen. Gillibrand's same-day request that AARO catalog sUAS incursions (FOIA 24-F-0894). | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
+| 2024-03-07 | David A. Kozik replies that AARO "absolutely should be involved in cUAS efforts in a *coordinating* role, but they should not/not be the lead", attributing the Gillibrand framing to "a prep failure on our part for ASD HD&HA". Documents direct operational coordination between AARO Public Affairs and OUSD(I&S) Congressional Activities at email-thread level (FOIA 24-F-0894). | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 | 2024-03-08 | AARO Historical Record Report Volume I released | other | government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf | [`/documents/aaro-historical-record-report-vol-i`] |
 | 2024-06-15 | Approximate Section 6802(j) statutory deadline for the Historical Record Report (540 days after enactment of the Intelligence Authorization Act for Fiscal Year 2023, P.L. 117-263, December 23, 2022). HRR Vol I (March 8, 2024) was published before the deadline; HRR Vol II remained unpublished as of February 25, 2026. | statutory-deadline | government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf |  |
 | 2024-08-23 | AARO follow-on support services contract HQ003424C0096 awarded to Sancorp Consulting (\$3,471,829.40, period of performance through January 31, 2026) — continuing the original AARO support PWS scope. | contract | government/usaspending-hq003424c0096.txt | [`/organizations/sancorp-consulting`] |
@@ -850,6 +1060,7 @@ On March 31, 2026, the House Oversight and Government Reform Task Force on the D
 | 2024-11-14 | AARO publishes Fiscal Year 2024 Consolidated Annual Report on UAP. 757 UAP reports for the May 1 2023 – June 1 2024 period; 49 case resolutions, 21 cases meriting further analysis based on anomalous characteristics. GREMLIN prototype sensor system (Georgia Tech Research Institute) disclosed. | report-publication | government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf |  |
 | 2024-11-19 | Kosloski's first hearing as AARO Director — Senate Armed Services Subcommittee on Emerging Threats and Capabilities. Three case resolutions presented — Puerto Rico 2013 (balloons or sky lanterns over an airport), GOFAST 2017 (parallax / object closer to 13,000 feet), Mt. Etna 2018 (object 170 meters from the erupting plume). | testimony | government/armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf |  |
 | 2024-12-05 | DefenseScoop (Brandi Vincent) reports AARO reached Full Operational Capability as of October 1, 2024 — start of FY 2025. DOD spokesperson Sue Gough: AARO "now has the requisite personnel, expertise, facilities and tools to carry out its core mission". Precedes Kosloski's December 6 closed-door House Oversight briefing. | announcement | news/defensescoop-aaro-foc-briefing-20241205.html |  |
+| 2025-08-26 | DoD FOID releases FOIA 24-F-0894 (14 pages) covering OASD/PA records on the AARO HRR Vol I rollout (Feb 1 – Mar 7, 2024 email range). Five Initial Denial Authorities — Plescow (OSD/I&S), Lane (OASD/LA), Morrison (ODNI), Rose (OSD/PA), Shockley (OUSD/Policy) — signed off; cover letter signed by Pamela Andrews, Chief, FOIA, OSD/JS. | foia | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 | 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO''s parent department naming. | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 | 2026-02-19 | Trump TRUTH Social post (status ID 116100300268316472) directs the Secretary of War and other Departments and Agencies "to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs)". Underlies Hegseth's February 25, 2026 full-compliance commitment. | government-action | social/trumpstruth-statuses-36826-uap-disclosure-20260219.html |  |
 | 2026-02-25 | DefenseScoop article (Brandi Vincent) reports Pentagon spokesperson Sue Gough caseload statement — AARO examining over 2,000 UAP cases with ~1,000 retained in the Active Archive. Article notes AARO has not published a 2025 annual report or second volume. Defense Secretary Hegseth states "full compliance" with forthcoming Trump UAP-disclosure executive order. | other | news/defensescoop-aaro-hegseth-disclosure-20260225.html |  |
@@ -882,14 +1093,19 @@ On March 31, 2026, the House Oversight and Government Reform Task Force on the D
 ### People
 
 - [`/people/anna-paulina-luna`]
+- [`/people/brandi-vincent`]
 - [`/people/christopher-mellon`]
+- [`/people/david-kozik`]
 - [`/people/glenn-grothman`]
 - [`/people/jonathan-kosloski`]
 - [`/people/jordan-flowers`]
+- [`/people/kathleen-hicks`]
 - [`/people/michael-shellenberger`]
 - [`/people/nancy-mace`]
 - [`/people/pete-hegseth`]
+- [`/people/ronald-moultrie`]
 - [`/people/sean-kirkpatrick`]
+- [`/people/sue-gough`]
 - [`/people/tim-gallaudet`]
 - [`/people/tim-phillips`]
 

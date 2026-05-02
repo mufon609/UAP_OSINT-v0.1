@@ -13,16 +13,18 @@
   path: government/asc-clapper-lettre-rogers-foreign-cyber-threats-20160105.pdf
   archived_date: '2026-04-30'
   sha256: dc722c9c02455521ffa0f2dc5fd4a9e36eb61c56d75a88002345690b0091df6c
-  archive_status: 1
+  archive_status: 3
   note: 'Senate Armed Services Committee — Joint testimony of James R. Clapper Jr. (Director of National Intelligence), Marcel J. Lettre II (Under Secretary of Defense for Intelligence), and ADM Michael S. Rogers (Commander, U.S. Cyber Command and Director, NSA), ''Foreign Cyber Threats to the United States'', January 5, 2016 (released January 5, 2017). 7-page PDF — image-only scan, no text layer (extraction_type ocr-scan; clean-text sibling required for verbatim-quote derivation per BACKLOG #19 discipline). Primary attestation that Lettre held the USD(I) office in early 2016 and that he gave joint Worldwide Threat Assessment testimony alongside the DNI. Wayback capture 2017-01-11.'
+  wayback_date: '2025-07-20'
 - url: http://www.armed-services.senate.gov/imo/media/doc/Lettre_09-13-16.pdf
   format: pdf
   status: archived
   path: government/asc-lettre-usdi-testimony-20160913.pdf
   archived_date: '2026-04-30'
   sha256: 102c66efa16e8e0d84b3e48e95564783205cd8758c6cff467fe62fe81aa4129e
-  archive_status: 1
+  archive_status: 3
   note: Senate Armed Services Committee — Statement for the Record of the Honorable Marcel Lettre, Under Secretary of Defense for Intelligence, Office of the Secretary of Defense, September 13, 2016. Hearing on the importance of strong encryption to national defense. Direct primary-source attestation that Lettre held the USD(I) office on September 13, 2016. Substantive 4-page testimony on USD(I) responsibilities for encryption standards, NSA partnerships, and DoD network security. Wayback capture from 2016-11-08.
+  wayback_date: '2025-07-06'
 - url: http://www.armed-services.senate.gov/statemnt/2011/02%20February/Vickers%2002-15-11.pdf
   format: pdf
   status: archived
@@ -37,16 +39,18 @@
   path: government/defense-gov-cambone-resignation-200612.html
   archived_date: '2026-04-30'
   sha256: 7281b52ce2510c9192e84bef28f15a902e8fc0b7fffb4ec60c7cdba0c60dbbed
-  archive_status: 1
+  archive_status: 3
   note: 'Defense.gov (defenselink.mil) news release No. 1221-06, December 1, 2006: ''Stephen A. Cambone to Resign''. Confirms Cambone''s USD(I) departure: ''The Department of Defense announced today that Under Secretary of Defense (Intelligence) Stephen A. Cambone will resign from the Department on Dec. 31, 2006.'' Wayback capture from 2006-12-06.'
+  wayback_date: '2009-11-30'
 - url: http://www.defenselink.mil/bios/cambone_bio.html
   format: html
   status: archived
   path: government/defense-gov-cambone-usdi-bio-200709.html
   archived_date: '2026-04-30'
   sha256: 21e6b91317ba3c2996799fc99e9b35eaa48987b26f1ebace788ab93e9dab6d98
-  archive_status: 1
+  archive_status: 3
   note: 'Defense.gov (defenselink.mil) biography of Dr. Stephen A. Cambone, the first Under Secretary of Defense for Intelligence. ''Stephen A. Cambone was confirmed by the U.S. Senate as the Under Secretary of Defense for Intelligence on March 7th, 2003.'' Prior roles: Director, Program Analysis and Evaluation, OSD (July 2002 - March 2003); Principal Deputy Under Secretary of Defense for Policy (July 2001 - July 2002); Special Assistant to the Secretary and Deputy Secretary of Defense (January 2001 - July 2001); Staff Director for the Commission to Assess United States National Security Space Management and Organization (July 2000 - January 2001); Director of Research at INSS/NDU (August 1998 - July 2000); Staff Director for Rumsfeld Commission on Ballistic Missile Threat (January 1998 - July 1998); CSIS Senior Fellow Political-Military Studies (1993 - 1998). Wayback capture from 2007-09-29 (defenselink.mil bio updated 2006-01-13).'
+  wayback_date: '2008-09-12'
 - url: https://apps.uintah.utah.gov/ords/ucdev/r/public-searches/property-search?serial=140340003
   format: pdf
   status: archived
@@ -211,7 +215,7 @@
   archived_date: '2026-04-30'
   sha256: c9fc4e70a593d1c6613c2b63aacc44155997acfc6e66ef83328c2de793e9c158
   archive_status: 3
-  note: 'FOIA 23-F-0906 interim response from DoD FOID, May 24, 2023, citing FOIA ''unusual circumstances'' as basis for delay. Specifically: ''we do not actually hold their records and our office is not geographically located with these organizations. As we do not hold the records, until the required record searches are complete, we are unable to estimate the potential volume of records or the number of consultations that will be needed.'' Status remained ''Awaiting Response'' as of April 2026.'
+  note: 'FOIA 23-F-0906 interim response from DoD FOID, May 24, 2023, citing FOIA ''unusual circumstances'' as basis for delay. Specifically: ''we do not actually hold their records and our office is not geographically located with these organizations. As we do not hold the records, until the required record searches are complete, we are unable to estimate the potential volume of records or the number of consultations that will be needed.'' Status of this MuckRock-channel request (Skvarla) remains ''Awaiting Response'' as of April 2026. Note: the IPMO PWS document for the SAME FOIA case number (23-F-0906) was separately posted to the WHS FOIA Reading Room at esd.whs.mil/Portals/54/Documents/FOID/Reading Room/Contracts/23-F-0906_Performance_Work_Statement.pdf — see manifest entry for that URL (path government/foia-23-f-0906-sancorp-ipmo-pws.pdf). The two retrieval channels (MuckRock filer-specific request vs. WHS Reading Room posting) are distinct DoD FOIA pathways for the same case.'
   wayback_date: '2026-04-30'
 - url: https://cdn.muckrock.com/foia_files/2023/05/24/23-F-0906_Request_Description.pdf
   format: pdf
@@ -322,6 +326,33 @@
   archive_status: 3
   note: 'FY 2026 Office of the Secretary of Defense Operation and Maintenance Budget Estimates (OSD OP-5). Hosted on comptroller.war.gov post-EO 14347 DoD→DoW rebrand. Direct fetch returns 403; archived via Wayback Machine snapshot from 2026-02-01. Contains: (1) IPMO continuity language with new ''management of designated compartmented programs'' clause and ''oversight and governance of deception activities, oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities''; (2) the Advanced Intelligence Capabilities (AIC) budget-line rename of AARO with mandate language preserved verbatim (''synchronizes efforts across the Department... to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special-use airspace, and other areas of interest, and, as necessary, to mitigate any associated risks''); (3) Strategy Coordination Program Office (SCPO) reference (handoff §3 Layer 2). Primary-source confirmation of the April 29 2026 PDF finding that AARO branding persists publicly while AIC replaces AARO at budget-line level.'
   wayback_date: '2026-02-01'
+- url: https://comptroller.war.gov/Portals/45/Documents/defbudget/fy2024/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf
+  format: pdf
+  status: archived
+  path: government/osd-op5-fy24-20260501.pdf
+  archived_date: '2026-05-01'
+  sha256: 6333b25a18aa69e21195ce21bd5b4dea3c51db7307361b47391e98338fa0a083
+  archive_status: 3
+  note: OSD OP-5 FY 2024 budget submission (June 2023 release), Operation and Maintenance Volume 1 Part 1. Comptroller publishes the OUSD(I&S) sub-office program descriptions (AARO, IPMO, DMDPO, OSD Red Team, SCPO, CP/WMD). Critical reference for the AARO→AIC budget-document rename question — this FY24 release names the OUSD(I&S) anomalous-objects sub-office 'All-domain Anomaly Resolution Office (AARO)'; FY26 (June 2025) renames it 'Advanced Intelligence Capabilities (AIC)' with substantively identical mission language. Direct fetch from comptroller.war.gov 2026-05-01 — works (sources-access.md notes the war.gov pattern, but this comptroller subdomain returned 200).
+  wayback_date: '2026-02-01'
+- url: https://comptroller.war.gov/Portals/45/Documents/defbudget/fy2025/budget_justification/pdfs/01_Operation_and_Maintenance/O_M_VOL_1_PART_1/OSD_OP-5.pdf
+  format: pdf
+  status: archived
+  path: government/osd-op5-fy25-20260501.pdf
+  archived_date: '2026-05-01'
+  sha256: 0397a14c489b5685f2de46d35973b4b0494786abbe91a76ecef1e77a048718ac
+  archive_status: 3
+  note: OSD OP-5 FY 2025 budget submission (June 2024 release), Operation and Maintenance Volume 1 Part 1. Bridge document between FY24 (names sub-office 'AARO') and FY26 (names sub-office 'AIC'). Confirms whether the AARO→AIC budget-document rename happened FY24→FY25 or FY25→FY26. Also documents the 'Walkoff – Classified' sub-office disposition between FY24 (where it appeared) and FY26 (where it does not). Direct fetch from comptroller.war.gov 2026-05-01.
+  wayback_date: '2026-02-01'
+- url: https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/1801/4064972/2000w_q95.jpg
+  format: image
+  status: archived
+  path: government/dvids-kozik-portrait-20260501.jpg
+  archived_date: '2026-05-01'
+  sha256: e7269d936bdee9ef1507e7c8f6dc885571a877f8b54fcea06140c721b421ca60
+  archive_status: 3
+  note: Full-resolution (2000x2500) JPG of David A. Kozik official portrait, served from DVIDS CloudFront CDN. Companion to the dvidshub.net image-record page; the page carries the metadata (date, role attribution, photographer William Pratt) and this file is the portrait itself. Direct fetch from CloudFront 2026-05-01 — the dvidshub.net /download/image/{id} endpoint returned 403 (auth required), but the CDN-served 2000w preview is publicly accessible.
+  wayback_date: '2025-03-05'
 - url: https://defensescoop.com/2023/07/31/uap-hearing-sparks-clash-between-pentagon-officials-witnesses/
   format: html
   status: archived
@@ -588,6 +619,15 @@
   archive_status: 3
   note: HandWiki encyclopedia biography entry for Sean M. Kirkpatrick — cross-reference index to multiple DoD / AFCEA / Symposium365 source citations confirming the 2003-2005 NRO, 2005-2007 CIA S&T, 2007-2010 joint CIA-DIA, 2010-2012 OSD Space Control chronology. Treat as secondary-source aggregate; primary anchor for any specific claim is the DoD bio, AFCEA bio, or Potomac Officers Club bio. Audit appendix cross-reference resource.
   wayback_date: '2026-04-29'
+- url: https://irp.fas.org/eprint/gough.pdf
+  format: pdf
+  status: archived
+  path: government/gough-usawc-perception-management-wayback-20260501.pdf
+  archived_date: '2026-05-01'
+  sha256: 206dd1a714623a8d3549b2e92b487b5e6f88f0ca7af2a92deb19e317a68ccd93
+  archive_status: 3
+  note: Susan I. Gough, 'The Evolution of Strategic Influence', U.S. Army War College Strategy Research Project, 7 April 2003. 3-page paper (truncated/abbreviated form on FAS mirror). Doctrinal background context for Gough's later role as DoD/AARO UAP spokesperson — the same Gough whose March 2024 emails appear in FOIA 24-F-0894 ('We do not want to see sUAS added to AARO's portfolio!'). Direct irp.fas.org returned HTTP 202 on 2026-05-01 (likely Cloudflare interstitial); fetched via Wayback Machine snapshot 20250817175726 with --compressed.
+  wayback_date: '2025-08-17'
 - url: https://leolabs.space/blog/ron-moultrie-leolabs-board-of-directors/
   format: html
   status: archived
@@ -691,6 +731,22 @@
   archive_status: 3
   note: New Paradigm Institute response to the WSJ piece, framing it as Pentagon disinformation. Counter-narrative source for the WSJ Vol II preview, parallel to the Liberation Times rebuttal.
   wayback_date: '2026-02-21'
+- url: https://nsiteam.com/social/smaspeakerseries_03october2023/
+  format: html
+  status: archived
+  path: news/nsi-speaker-series-ipmo-holly-20250401.html
+  archived_date: '2026-05-02'
+  sha256: 0fb535bab4d19469baf67cc723730f93e4f4dc04bfbfb0f6b3346e5813be16ac
+  archive_status: 1
+  note: NSI Speaker Series page for the October 3, 2023 talk by James Holly (Acting Director, IPMO, OUSD(I&S)) on the Influence and Perception Management Office. Carries the verbatim 'three Secretaries of Defense, under two administrations, signed off on its establishment' attestation that previously was secondary-only via Klippenstein. Documents IPMO's four-division structure (Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities) and links to the DOPSR-cleared 23-S-3438 IPMO 101 Slides PDF. Original URL nsiteam.com 404 as of 2026-04-30; archived via Wayback Machine snapshot 2025-04-01.
+- url: https://nsiteam.com/social/wp-content/uploads/2023/10/23-S-3438-cleared-IPMO-101-Slides.pdf
+  format: pdf
+  status: archived
+  path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
+  archived_date: '2026-05-02'
+  sha256: b2ff6abc1e3f80bc5191bede4ae16ae277b3e75282e8210a5db2ae0e90d0038b
+  archive_status: 1
+  note: 'DOPSR-cleared OUSD(I&S) IPMO 101 presentation slides (DOPSR case 23-S-3438), authored by COL Deitra Trotter and HON Ronald S. Moultrie. PDF metadata: Title ''Blue Gold template'', Keywords ''OUSD(I&S)'', Author ''COL Deitra Trotter;HON Ronald S. Moultrie'', Acrobat PDFMaker 23 for PowerPoint. CreationDate Sep 20 2023; ModDate Sep 27 2023; CLEARED For Open Publication Sep 27 2023 by DoD Office of Prepublication and Security Review. Companion to the NSI Speaker Series page hosting October 2023 Holly talk. Original URL 404 as of 2026-04-30; archived via Wayback Machine.'
 - url: https://nssaspace.org/event/kirkpatrick-2024/
   format: html
   status: archived
@@ -759,8 +815,9 @@
   path: government/ousdi-defense-gov-landing-20260307.html
   archived_date: '2026-04-30'
   sha256: c4a357a4af118a2cf12ceb840c240ca7b836271ee09d7d9d991444065c5cfc5d
-  archive_status: 1
+  archive_status: 3
   note: 'Office of the Under Secretary of War for Intelligence & Security institutional landing page on ousdi.defense.gov (the OUSD(I&S) subdomain). Documents Hansell as USW(I&S) and Justin Overbaugh as DUSW(I&S) Deputy. Lists Authority, Direction, and Control components (DCSA, DIA, NGA, NRO, NSA/CSS) and navigates to DDIs (Directors for Defense Intelligence) and DROs (Direct Report Offices). Mission statement: ''Principal Staff Assistant and Advisor to the Secretary of War and the Deputy Secretary of War on intelligence, counterintelligence, security, sensitive activities, and other intelligence-related matters.'' Wayback capture 2026-03-07. Resolves the Task #13 question — there IS a dedicated OUSD(I&S) public landing page on the ousdi.defense.gov subdomain (URL pattern not surfaced earlier because all my probes were on the war.gov / defense.gov / policy.defense.gov domains).'
+  wayback_date: '2026-03-23'
 - url: https://ousdi.defense.gov/Portals/73/2025%20Official%20DUSWIS%20Bio%20Overbaugh_Justin.pdf
   format: pdf
   status: archived
@@ -1646,6 +1703,14 @@
   sha256: 3b699a825c53aab7816b50ffe0c45d4f424ca43da5eaa421736e529f2ac00ac9
   archive_status: 3
   wayback_date: '2026-04-12'
+- url: https://www.dvidshub.net/image/4064972/mr-david-kozik
+  format: html
+  status: archived
+  path: government/dvids-kozik-portrait-page-20260501.html
+  archived_date: '2026-05-01'
+  sha256: 2be40c82c0d8c4787751b4f960d25b7481d840dea14b37167bcfc0128ab91acd
+  archive_status: 1
+  note: 'DVIDS image-record page for David A. Kozik official portrait. Caption: ''David A. Kozik, Director Congressional Activities, Office of the Under Secretary of Defense Intelligence, poses for his official portrait in the Army portrait studio at the Pentagon in Arlington, Virginia, Dec. 27, 2017. (U.S. Army photo by William Pratt).'' Primary attestation that Kozik held the Director Congressional Activities role at OUSD(I&S) by Dec 2017 (career SES — same role at issue in the Mar 6-7 2024 Gough/Kozik exchange in FOIA 24-F-0894 re: AARO sUAS portfolio). Direct fetch 2026-05-01.'
 - url: https://www.energy.gov/oha/articles/fia-24-0036
   format: pdf
   status: archived
@@ -1663,6 +1728,15 @@
   archive_status: 3
   note: 'DoD Directive 5143.01 — ''Under Secretary of Defense for Intelligence and Security (USD(I&S))'', original publication October 24, 2014, incorporating Change 2 April 6, 2020. The directive is the office''s organizational charter: enumerates USD(I&S) authority, direction, and control over the Defense Intelligence Agency, National Geospatial-Intelligence Agency, National Security Agency/Central Security Service, National Reconnaissance Office, and Defense Counterintelligence and Security Agency. Issued under SecDef authority per 10 U.S.C. §§ 113, 137. USD(I&S) serves as Principal Staff Assistant for Defense Intelligence, Counterintelligence, Security, sensitive activities, and dual-hatted Director of Defense Intelligence to ODNI. Wayback capture from 2026-01-17; esd.whs.mil direct returns 403 (Akamai-blocked per sources-access.md).'
   wayback_date: '2026-01-17'
+- url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/Contracts/23-F-0906_Performance_Work_Statement.pdf
+  format: pdf
+  status: archived
+  path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
+  archived_date: '2026-05-01'
+  sha256: 83e313222f4afc4c2072942c5067bfc36ad200e6cb80f1574281e613a832a3c6
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'FOIA 23-F-0906 release — Sancorp Consulting LLC IPMO contract HQ003422C0064 Performance Work Statement, posted to esd.whs.mil/Portals/54/Documents/FOID/Reading Room/Contracts/. Counterpart to FOIA 23-F-1114 AARO PWS (already archived at government/blackvault-sancorp-23-f-1114-aaro-pws.pdf). Both PWSs were issued in spring/summer 2022 by WHS Acquisition Directorate (IPMO PWS dated April 25, 2022; AARO PWS dated July 7, 2022). IPMO PWS contains visible "WNNCWA" reviewer-comment marginalia in pdftotext extract (e.g., "Commented [WNNCWA(3]: See previous comment"); AARO PWS comparable annotation layer requires visual inspection (pdftotext does not extract PDF annotation layer). PDF producer is OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan; verbatim quotes must be visually verified against the source page or a clean-text sibling. esd.whs.mil Akamai-blocks automated retrieval; archived via Wayback Machine snapshot 2024-09-30.'
 - url: https://www.everycrsreport.com/reports/IF10523.html
   format: html
   status: archived
@@ -1856,7 +1930,7 @@
   archived_date: '2026-04-30'
   sha256: f338ad2319c429718921743f96801103cf66f1be67de4e3ed65c74822b58f7cb
   archive_status: 3
-  note: 'MuckRock FOIA request page for case 23-F-0906 (Robert Skvarla, Jr., filed May 19, 2023, with DoD/Office of the Under Secretary of Defense for Intelligence and Security). Direct fetch returns 403; archived via Wayback Machine snapshot from 2026-04-30. Request scope: Sancorp IPMO contract HQ003422C0064. Status as of 2026-04-30: ''Awaiting Response'' — only the May 24, 2023 interim response received (citing FOIA ''unusual circumstances'' for delay); no further communications since. Architecturally significant as the IPMO companion to 23-F-1114''s AARO release: agency released the AARO contract PWS in full (23-F-1114) but did not advance the IPMO contract PWS request (23-F-0906).'
+  note: 'MuckRock FOIA request page for case 23-F-0906 (Robert Skvarla, Jr., filed May 19, 2023, with DoD/Office of the Under Secretary of Defense for Intelligence and Security). Direct fetch returns 403; archived via Wayback Machine snapshot from 2026-04-30. Request scope: Sancorp IPMO contract HQ003422C0064. Status of THIS MuckRock-channel request as of 2026-04-30: ''Awaiting Response'' — only the May 24, 2023 interim response received (citing FOIA ''unusual circumstances'' for delay); no further communications since. Note: the IPMO PWS document for the SAME FOIA case number (23-F-0906) was separately posted to the WHS FOIA Reading Room at esd.whs.mil/Portals/54/Documents/FOID/Reading Room/Contracts/23-F-0906_Performance_Work_Statement.pdf — see manifest entry for that URL (path government/foia-23-f-0906-sancorp-ipmo-pws.pdf). The two retrieval channels (MuckRock filer-specific request vs. WHS Reading Room posting) are distinct DoD FOIA pathways for the same case; the AARO contract PWS (23-F-1114, released to John Greenewald via The Black Vault) and the IPMO contract PWS (23-F-0906, posted to WHS Reading Room) are both publicly retrievable, just via different release paths.'
   wayback_date: '2023-05-20'
 - url: https://www.muckrock.com/foi/united-states-of-america-10/ousdis-51923-145992/
   format: html

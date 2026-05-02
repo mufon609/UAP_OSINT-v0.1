@@ -10,7 +10,10 @@ description: 'The Office of the Under Secretary of Defense for Intelligence and 
   DoD Directive 5143.01, originally issued October 24, 2014 and incorporating Change 2 on April 6, 2020, is the office''s organizational charter. The directive states that the USD(I&S) "is the Principal Staff Assistant (PSA) and advisor to the SecDef and DepSecDef regarding Intelligence, Counterintelligence (CI), Security, sensitive activities, and other intelligence-related matters" and "exercises SecDef authority, direction, and control over, and oversees the activities of, the Defense Intelligence Agency (DIA), the National Geospatial-Intelligence Agency (NGA), the National Security Agency/Central Security Service (NSA/CSS), the National Reconnaissance Office (NRO), and the Defense Counterintelligence and Security Agency". The USD(I&S) also serves as Director of Defense Intelligence and as the primary SecDef representative to the Office of the Director of National Intelligence ([`/organizations/odni`]). The war.gov Office of the Secretary of War page lists USW (Intelligence & Security) with establishment date 2002.
 
 
-  GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that the office gained new responsibilities from 2017 through 2020 in the areas of artificial intelligence, law enforcement, personnel vetting, and identity intelligence and identified governance bodies not operating as intended and unclear roles and responsibilities. DoD Inspector General Management Advisory DODIG-2026-047 (January 29, 2026), addressed for the Under Secretary of Defense for Intelligence and Security, confirms that DoD Instruction 5200.48 "Controlled Unclassified Information (CUI)" is issued by OUSD(I&S) and establishes DoD program requirements for designating, marking, handling, and decontrolling CUI. The office directed establishment of the Influence and Perception Management Office ([`/organizations/ipmo`]) on March 1, 2022 per the Notre Dame memo signed by Acting Director James A. Holly ([`/people/james-holly`]), and the Deputy Secretary of Defense ([`/people/kathleen-hicks`]) directed the USD(I&S) to establish the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) on July 15, 2022 in coordination with the Director of Administration and Management. Executive Order 14347 of September 5, 2025 ("Restoring the United States Department of War") authorizes subordinate officials within the Department of Defense to use corresponding secondary titles such as Under Secretary of War in official correspondence, public communications, ceremonial contexts, and non-statutory documents; statutory references to the Department of Defense, Secretary of Defense, and subordinate officers and components shall remain controlling until changed subsequently by the law.
+  GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that the office gained new responsibilities from 2017 through 2020 in the areas of artificial intelligence, law enforcement, personnel vetting, and identity intelligence and identified governance bodies not operating as intended and unclear roles and responsibilities. Per the same report, 78 percent of the workforce across the four Defense Intelligence Directorates in OUSD(I&S) in July 2020 was non-permanent — consisting of contractors, joint duty assignees, military/reservists, and liaison officers or detailees — with the four directorates comprising around 80 percent of OUSD(I&S)''s workforce. DoD Inspector General Management Advisory DODIG-2026-047 (January 29, 2026), addressed for the Under Secretary of Defense for Intelligence and Security, confirms that DoD Instruction 5200.48 "Controlled Unclassified Information (CUI)" is issued by OUSD(I&S) and establishes DoD program requirements for designating, marking, handling, and decontrolling CUI. The office directed establishment of the Influence and Perception Management Office ([`/organizations/ipmo`]) on March 1, 2022 per the Notre Dame memo signed by Acting Director James A. Holly ([`/people/james-holly`]), and the Deputy Secretary of Defense ([`/people/kathleen-hicks`]) directed the USD(I&S) to establish the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) on July 15, 2022 in coordination with the Director of Administration and Management. Executive Order 14347 of September 5, 2025 ("Restoring the United States Department of War") authorizes subordinate officials within the Department of Defense to use corresponding secondary titles such as Under Secretary of War in official correspondence, public communications, ceremonial contexts, and non-statutory documents; statutory references to the Department of Defense, Secretary of Defense, and subordinate officers and components shall remain controlling until changed subsequently by the law.
+
+
+  Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intelligence Program (MIP) Management and Activities of the OUSD(I&S) operating budget, funding is provided for the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Influence and Perception Management Office ([`/organizations/ipmo`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). The Counter-Adversary Defense Industry (C-ADI) program ([`/organizations/c-adi`]) is named in the FY 2025 OSD OP-5 (released March 2024) and again in the FY 2026 OSD OP-5 (released June 2025) under "Major Program Title: MIP Management and Activities of the OUSD(I&S)". Advanced Intelligence Capabilities is first named in the FY 2025 OSD OP-5; AARO ([`/organizations/aaro`]) is established by the Deputy Secretary of Defense memorandum dated July 15, 2022, and both AARO and AIC are documented on this repository as separate nodes. The line "Walkoff – Classified" appears under the OUSD(I&S) program section of the FY 2023 and FY 2024 OSD OP-5 and does not appear in the FY 2025 or FY 2026 OSD OP-5. The Law Enforcement Oversight and Compliance Directorate description states "will lead, coordinate, and integrate" in the FY 2025 OSD OP-5 and "leads, coordinates, and integrates" in the FY 2026 OSD OP-5. The FY 2026 OSD OP-5 references the Deputy Secretary of Defense memorandum dated 21 April 2023 designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, with an associated increase of +18 FTEs and \$4,334 thousand in OUSD(I&S) Compensation and Benefits funding.
 
   '
 primary_sources:
@@ -63,6 +66,14 @@ primary_sources:
 - path: government/crs-if10523-defense-primer-usdis.html
   format: html
 - path: government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf
+  format: pdf
+- path: government/osd-op5-fy26-wayback-20260201.pdf
+  format: pdf
+- path: government/osd-op5-fy24-20260501.pdf
+  format: pdf
+- path: government/osd-op5-fy25-20260501.pdf
+  format: pdf
+- path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
   format: pdf
 document_intrinsic:
   full_name: Office of the Under Secretary of Defense for Intelligence and Security
@@ -407,6 +418,63 @@ quotes:
   significance: Documents transition from Kernan to Acting Under Secretary Ezra Cohen-Watnick on November 10, 2020
   context: DoD press release announcing simultaneous resignations
   statement_date: '2020-11-10'
+- id: q31
+  added_date: '2026-05-01'
+  text: 'non-permanent—consisting of contractors, joint duty assignees, military/reservists, and liaison officer or detailees'
+  source:
+    path: government/gao-21-295-defense-intelligence-ousdis-oversight-202105.pdf
+    location: 'GAO-21-295 body, p. 14 — OUSD(I&S) workforce-composition analysis (full sentence: "According to our analysis, 78 percent of the workforce across the four DDIs in OUSD(I&S) in July 2020 was non-permanent—consisting of contractors, joint duty assignees, military/reservists, and liaison officer or detailees.")'
+  significance: GAO-21-295 body — 78 percent of OUSD(I&S) DDI workforce non-permanent (July 2020)
+  context: GAO-21-295 oversight report on OUSD(I&S) workforce composition
+  statement_date: '2021-05-06'
+- id: q32
+  added_date: '2026-05-01'
+  text: 'In addition to the Military Intelligence Program (MIP) Management and Activities of the OUSD(I&S) operating budget, funding is provided for: • The Defense Military Deception Program Office, which provides governance, oversight, and operational implementation of military deception planning and execution capabilities across the DoD, including sensitive messaging, deception, influence, and other operations in the information environment.'
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026 budget submission, OUSD(I&S) program section, sub-office cluster intro and DMDPO bullet
+  significance: FY 2026 OSD OP-5 — OUSD(I&S) sub-office cluster intro and DMDPO bullet
+  context: OSD OP-5 FY 2026 budget submission, OUSD(I&S) program section
+  statement_date: '2025'
+- id: q33
+  added_date: '2026-05-01'
+  text: |-
+    Increase of +18 FTEs and associated funding provides OUSD(I&S) support to implement direction contained
+    within the Deputy Secretary of Defense memo dated 21 April 2023, designating OUSD(I&S) as the Principal
+    Staff Assistant for Law Enforcement.
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OSD OP-5 FY 2026, Compensation and Benefits — Principal Staff Assistants for Law Enforcement — OUSD(I&S) line item, +$4,334 thousand, +18 FTEs'
+  significance: FY 2026 OSD OP-5 — April 21, 2023 LE PSA designation memo (+18 FTE OUSD(I&S) justification)
+  context: OSD OP-5 FY 2026, OUSD(I&S) Compensation and Benefits FTE-increase justification narrative
+  statement_date: '2025'
+- id: q34
+  added_date: '2026-05-02'
+  text: 'Walkoff – Classified.'
+  source:
+    path: government/osd-op5-fy24-20260501.pdf
+    location: 'OSD OP-5 FY 2024, OUSD(I&S) sub-office program section, single-line classified-program entry'
+  significance: FY 2024 OSD OP-5 — "Walkoff – Classified" line under OUSD(I&S)
+  context: 'OSD OP-5 FY 2024 budget submission, OUSD(I&S) sub-office program section'
+  statement_date: '2023'
+- id: q35
+  added_date: '2026-05-02'
+  text: 'The Counter-Adversary Defense Industry (C-ADI) program provides necessary support to and pursues strategic activities focused on adversary defense industries in support of the SECDEF''s priority of defending the nation by campaigning to gain and sustain military advantages, counter acute forms of our competitors'' coercion, and complicate our competitors'' military preparations'
+  source:
+    path: government/osd-op5-fy25-20260501.pdf
+    location: 'OSD OP-5 FY 2025, OUSD(I&S) sub-office program section, C-ADI bullet'
+  significance: FY 2025 OSD OP-5 — Counter-Adversary Defense Industry (C-ADI) program first appearance
+  context: 'OSD OP-5 FY 2025 budget submission, OUSD(I&S) program section, C-ADI bullet'
+  statement_date: '2024'
+- id: q36
+  added_date: '2026-05-02'
+  text: 'three Secretaries of Defense, under two administrations, signed off on its establishment'
+  source:
+    path: news/nsi-speaker-series-ipmo-holly-20250401.html
+    location: 'NSI Speaker Series page abstract — Holly October 3, 2023 talk'
+  significance: NSI Speaker Series — Holly attestation that three SecDefs across two administrations signed off on IPMO establishment
+  context: 'NSI Speaker Series page recovered April 1, 2025 via Wayback Machine; documenting James Holly October 3, 2023 IPMO 101 talk abstract'
+  statement_date: '2023-10-03'
 key_personnel:
 - id: kp0
   added_date: '2026-04-30'
@@ -652,6 +720,62 @@ org_relationships:
     path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
     location: 'AARO contract HQ003422C0094 PWS Section 5'
   note: Sancorp Consulting LLC is a prime contractor providing support services across multiple OUSD(I&S) subordinate offices including AARO and IPMO.
+- id: or11
+  added_date: '2026-05-01'
+  organization_path: /organizations/dmdpo
+  relationship_type: subsidiary
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026, OUSD(I&S) program section, DMDPO bullet
+  note: Defense Military Deception Program Office. Per FY 2026 OSD OP-5, DMDPO provides governance, oversight, and operational implementation of military deception planning and execution capabilities across DoD. Listed as a funded sub-office under the OUSD(I&S) operating budget alongside OSD Red Team, IPMO, SCPO, CP/WMD Office, AIC, and the Law Enforcement Oversight and Compliance Directorate.
+- id: or12
+  added_date: '2026-05-01'
+  organization_path: /organizations/osd-red-team
+  relationship_type: subsidiary
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026, OUSD(I&S) program section, OSD Red Team bullet
+  note: OSD Red Team. Per FY 2026 OSD OP-5, serves as the SECDEF's and DEPSECDEF's red team, providing adversary-centric insights to inform strategic-level DoD activities. Listed as a funded sub-office under the OUSD(I&S) operating budget.
+- id: or13
+  added_date: '2026-05-01'
+  organization_path: /organizations/scpo
+  relationship_type: subsidiary
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026, OUSD(I&S) program section, SCPO bullet
+  note: Strategy Coordination Program Office. Per FY 2026 OSD OP-5, performs critical analyses and assessments for military, technical, and scientific programs through strategy coordination cells. Listed as a funded sub-office under the OUSD(I&S) operating budget.
+- id: or14
+  added_date: '2026-05-01'
+  organization_path: /organizations/cp-wmd
+  relationship_type: subsidiary
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026, OUSD(I&S) program section, CP/WMD bullet
+  note: Counterproliferation of Weapons of Mass Destruction Office. Per FY 2026 OSD OP-5, serves as the senior advisor to the USD(I&S) for understanding threats from biothreat/biotechnology and WMD. Listed as a funded sub-office under the OUSD(I&S) operating budget.
+- id: or15
+  added_date: '2026-05-01'
+  organization_path: /organizations/aic
+  relationship_type: subsidiary
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026, OUSD(I&S) program section, AIC bullet
+  note: Advanced Intelligence Capabilities. Per FY 2026 OSD OP-5, AIC reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence. Pair with or7 (AARO, per Hicks establishment memorandum); the AARO/AIC distinction is documented in description prose.
+- id: or16
+  added_date: '2026-05-01'
+  organization_path: /organizations/le-oversight-compliance-directorate
+  relationship_type: subsidiary
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026, OUSD(I&S) program section, Law Enforcement Oversight and Compliance Directorate bullet
+  note: 'Law Enforcement Oversight and Compliance Directorate. Per FY 2026 OSD OP-5, the Directorate serves as the senior advisor to the USD(I&S) for law enforcement policy, supported by an additional 18 FTEs and \$4,334 thousand in associated OUSD(I&S) Compensation and Benefits funding to implement direction contained within the Deputy Secretary of Defense memo dated 21 April 2023, designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement. Stand-up tense shift between FY 2025 OSD OP-5 (March 2024, future tense) and FY 2026 OSD OP-5 (June 2025, present tense) attests operational status was achieved sometime between March 2024 and June 2025, well after the original 90-day deadline (~July 20, 2023).'
+- id: or17
+  added_date: '2026-05-02'
+  organization_path: /organizations/c-adi
+  relationship_type: subsidiary
+  source:
+    path: government/osd-op5-fy25-20260501.pdf
+    location: OSD OP-5 FY 2025, OUSD(I&S) program section, C-ADI bullet
+  note: 'Counter-Adversary Defense Industry (C-ADI) program. First publicly named in FY 2025 OSD OP-5 (released March 2024) as an OUSD(I&S) sub-office between SCPO and CP/WMD. In FY 2026 OSD OP-5 (released June 2025), C-ADI moved out of the sub-office bullet list and into a dedicated program-level funding section under "Major Program Title: MIP Management and Activities of the OUSD(I&S)" — administrative reorganization, not disestablishment. Establishment instrument not retrieved at primary-source level (FOIA-able to OUSD(I&S) Front Office for an establishment memo dated between March 2023 (FY24 OP-5 release) and March 2024 (FY25 OP-5 release)).'
 timeline:
 - id: t1
   added_date: '2026-04-30'
@@ -782,6 +906,30 @@ timeline:
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
     location: 'p. 1, ¶3'
+- id: t20
+  added_date: '2026-05-01'
+  date: '2023-04-21'
+  event: 'Deputy Secretary of Defense memo dated 21 April 2023 designates OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, supported by +18 FTEs and \$4,334 thousand per FY 2026 OSD OP-5. Underlying memo not retrieved at primary-source level (FOIA-able); the OSD OP-5 budget exhibit is the public-record reference.'
+  category: government-action
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026, Compensation and Benefits — Principal Staff Assistants for Law Enforcement — OUSD(I&S) line item
+- id: t21
+  added_date: '2026-05-02'
+  date: '2023-10-03'
+  event: 'James Holly (Acting Director, IPMO) delivers IPMO 101 talk at NSI Speaker Series. Abstract verbatim: "three Secretaries of Defense, under two administrations, signed off on its establishment". Companion DOPSR-cleared 23-S-3438 IPMO 101 slides (authored by COL [`/people/deitra-trotter`] and HON [`/people/ronald-moultrie`]) attest IPMO''s four-division structure (Integrated Influence; Perception Management; Deception Activities; Intel Support).'
+  category: testimony
+  source:
+    path: news/nsi-speaker-series-ipmo-holly-20250401.html
+    location: NSI Speaker Series abstract
+- id: t22
+  added_date: '2026-05-02'
+  date: '2024-03'
+  event: 'OSD OP-5 FY 2025 budget submission first names Counter-Adversary Defense Industry (C-ADI) as an OUSD(I&S) sub-office (between SCPO and CP/WMD). Same release window as the AARO → AIC budget-document rebrand. Walkoff – Classified, present in FY 2023 OP-5 and FY 2024 OP-5, disappears from the FY 2025 OP-5 OUSD(I&S) program section in this same release.'
+  category: other
+  source:
+    path: government/osd-op5-fy25-20260501.pdf
+    location: 'OSD OP-5 FY 2025, OUSD(I&S) program section'
 - id: t16
   added_date: '2026-04-30'
   date: '2024-02-29'
@@ -973,6 +1121,54 @@ entities_referenced:
   name: Justin P. Overbaugh
   wrap_path: /people/justin-overbaugh
   context_summary: Deputy Under Secretary of War for Intelligence and Security per the 2025 official DUSWIS biography on ousdi.defense.gov.
+- id: e27
+  added_date: '2026-05-01'
+  entity_type: organization
+  name: Defense Military Deception Program Office
+  wrap_path: /organizations/dmdpo
+  context_summary: 'OUSD(I&S) sub-office providing governance, oversight, and operational implementation of military deception planning and execution capabilities across DoD per FY 2026 OSD OP-5 budget submission.'
+- id: e28
+  added_date: '2026-05-01'
+  entity_type: organization
+  name: OSD Red Team
+  wrap_path: /organizations/osd-red-team
+  context_summary: 'OUSD(I&S) sub-office serving as the SECDEF''s and DEPSECDEF''s red team, providing adversary-centric insights to inform strategic-level DoD activities per FY 2026 OSD OP-5 budget submission.'
+- id: e29
+  added_date: '2026-05-01'
+  entity_type: organization
+  name: Strategy Coordination Program Office
+  wrap_path: /organizations/scpo
+  context_summary: 'OUSD(I&S) sub-office performing critical analyses and assessments for military, technical, and scientific programs through strategy coordination cells per FY 2026 OSD OP-5 budget submission.'
+- id: e30
+  added_date: '2026-05-01'
+  entity_type: organization
+  name: Counterproliferation of Weapons of Mass Destruction Office
+  wrap_path: /organizations/cp-wmd
+  context_summary: 'OUSD(I&S) sub-office serving as senior advisor to the USD(I&S) for understanding biothreat/biotechnology and WMD threats per FY 2026 OSD OP-5 budget submission.'
+- id: e31
+  added_date: '2026-05-01'
+  entity_type: organization
+  name: Advanced Intelligence Capabilities
+  wrap_path: /organizations/aic
+  context_summary: 'OUSD(I&S) sub-office name first used in the FY 2025 OSD OP-5 budget submission (released March 2024). AIC reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence and synchronizes efforts to detect, identify, and attribute objects of interest. Mission language is substantively identical to AARO''s mission language per the Hicks establishment memorandum and to AARO''s codified statutory carveout at 50 U.S.C. § 3373. The repository preserves both AARO and AIC as distinct primary-source attestations and does not adjudicate whether AIC is an umbrella budget category, a quiet rebrand, or a successor program.'
+- id: e32
+  added_date: '2026-05-01'
+  entity_type: organization
+  name: Law Enforcement Oversight and Compliance Directorate
+  wrap_path: /organizations/le-oversight-compliance-directorate
+  context_summary: 'OUSD(I&S) sub-office serving as the senior advisor to the USD(I&S) for law enforcement policy, established to implement direction in the Deputy Secretary of Defense memo dated April 21, 2023, designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement.'
+- id: e33
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Counter-Adversary Defense Industry
+  wrap_path: /organizations/c-adi
+  context_summary: 'OUSD(I&S) sub-office program first publicly named in FY 2025 OSD OP-5 (released March 2024). C-ADI pursues strategic activities focused on adversary defense industries — guidance, oversight, and prioritization of Department efforts including against NDS pacing threats. In FY 2026 OSD OP-5, C-ADI moved out of the OUSD(I&S) sub-office bullet list into a dedicated program-level funding section under "Major Program Title: MIP Management and Activities of the OUSD(I&S)".'
+- id: e34
+  added_date: '2026-05-02'
+  entity_type: person
+  name: Deitra Trotter
+  wrap_path: /people/deitra-trotter
+  context_summary: 'COL (US Army); co-author of the DOPSR-cleared 23-S-3438 OUSD(I&S) IPMO 101 presentation slides (cleared for open publication September 27, 2023). Listed in PDF metadata Author field alongside HON Ronald S. Moultrie.'
 naming_quirks:
 - id: nq1
   added_date: '2026-04-30'
