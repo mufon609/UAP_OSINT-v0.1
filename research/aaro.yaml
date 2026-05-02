@@ -817,7 +817,7 @@ quotes:
   source:
     path: government/osd-op5-fy24-20260501.pdf
     location: 'OSD OP-5 FY 2024 Operation and Maintenance Budget Estimates, OUSD(I&S) program section'
-  significance: 'FY 2024 OSD OP-5 budget submission (released June 2023) names the OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)" with mission language essentially identical to AARO''s 50 U.S.C. § 3373 statutory carveout — same mission text that the FY 2025 and FY 2026 budget submissions later attribute to "Advanced Intelligence Capabilities (AIC)". Anchors the FY24-vs-FY25 budget-document name change.'
+  significance: 'FY 2024 OSD OP-5 budget submission (released March 20, 2023) names the OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)" with mission language essentially identical to AARO''s 50 U.S.C. § 3373 statutory carveout — same mission text that the FY 2025 and FY 2026 budget submissions later attribute to "Advanced Intelligence Capabilities (AIC)". Anchors the FY24-vs-FY25 budget-document name change.'
   context: 'OSD OP-5 FY 2024 budget, OUSD(I&S) program section'
   statement_date: '2023'
 - id: q61
@@ -830,7 +830,7 @@ quotes:
   source:
     path: government/osd-op5-fy25-20260501.pdf
     location: 'OSD OP-5 FY 2025 Operation and Maintenance Budget Estimates, OUSD(I&S) program section'
-  significance: 'FY 2025 OSD OP-5 budget submission (released March 2024) is the first OSD OP-5 release to name the OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" rather than "All-domain Anomaly Resolution Office (AARO)" — narrows the budget-document rename window to between FY24 OP-5 (March 2023) and FY25 OP-5 (March 2024). Mission text is substantively identical to the FY24 AARO program description and to the Hicks AARO establishment memo. Same OUSD(I&S) sub-office under a different budget-document name.'
+  significance: 'FY 2025 OSD OP-5 budget submission (released March 11, 2024) is the first OSD OP-5 release to name the OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" rather than "All-domain Anomaly Resolution Office (AARO)" — narrows the budget-document rename window to between FY24 OP-5 (March 20, 2023) and FY25 OP-5 (March 11, 2024). Mission text is substantively identical to the FY24 AARO program description and to the Hicks AARO establishment memo. Same OUSD(I&S) sub-office under a different budget-document name.'
   context: 'OSD OP-5 FY 2025 budget, OUSD(I&S) program section, Defense-Wide intelligence and security narrative'
   statement_date: '2024'
 - id: q62
@@ -1304,7 +1304,7 @@ timeline:
 - id: t24
   added_date: '2026-05-01'
   date: '2024-03'
-  event: 'OSD OP-5 FY 2025 budget submission (released March 2024) names the OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" — first budget release to use AIC rather than "AARO". Mission language substantively identical to FY 2024 OP-5 AARO description. AARO public name preserved on aaro.mil and in DoD press releases; no DoD renaming announcement.'
+  event: 'OSD OP-5 FY 2025 budget submission (released March 11, 2024) names the OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" — first budget release to use AIC rather than "AARO". Mission language substantively identical to FY 2024 OP-5 AARO description. AARO public name preserved on aaro.mil and in DoD press releases; no DoD renaming announcement.'
   category: other
   source:
     path: government/osd-op5-fy25-20260501.pdf
