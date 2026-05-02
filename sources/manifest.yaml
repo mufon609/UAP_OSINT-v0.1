@@ -485,6 +485,15 @@
   extraction_type: ocr-scan
   note: Pentagon internal emails (Feb 1 - Mar 7 2024) about AARO Historical Record Report Vol 1 rollout under Acting Director Tim Phillips; FOIA 24-F-0894. Documents tightly-controlled press rollout (declined journalist requests, invite-only March 8 2024 briefing) and ODNI deliberately omitted from public framing despite statutory reporting requirement under FY2023 NDAA. Also captures sUAS portfolio dispute correspondence (Gough-Kozik exchange after Gillibrand pressed for AARO to take on counter-drone coordination). Source for the Vol 1 rollout-control note recommended by audit finding 3.2/4.5. esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror. PDF producer is OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan; verbatim quotes must be visually verified against the source page or a clean-text sibling.
   wayback_date: '2026-04-29'
+- url: https://documents2.theblackvault.com/documents/osd/24-F-0894.pdf#txt-sibling
+  format: txt
+  status: archived
+  path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.txt
+  archived_date: '2026-05-02'
+  sha256: 18271da4341dcadc99772aa14fdf64fdb7987212b5c7b26de04fe01e1bb3be35
+  archive_status: 1
+  wayback_skip: true
+  note: 'Contributor-produced clean-text transcription (.txt sibling) of blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf, produced 2026-05-02 via VLM page read of all 17 pages. The source PDF is OmniPage CSDK 20 / AINSLIB.OCR-produced (extraction_type: ocr-scan); per BACKLOG #19 OCR-scan discipline the validator''s extract_source_text prefers this same-stem .txt sibling over pdftotext output. Visual transcription preserves redaction markers (b)(6) / (b)(3) / (b)(5) verbatim, email-thread structure, foreign-language fragments (Finnish ''kirjoitti''), and timestamp ranges (1300-1400 / 1400-1530) without pdftotext line-wrap artifacts. Companion to PDF entry with extraction_type: ocr-scan above.'
 - url: https://douglasjohnson.ghost.io/uap-disclosure-act-pentagon-rewrite-nov-2023/
   format: html
   status: archived
