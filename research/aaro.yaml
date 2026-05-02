@@ -22,6 +22,9 @@ description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`])
   The FY 2024 OSD OP-5 budget submission (released March 20, 2023) named the OUSD(I&S) subordinate office "All-domain Anomaly Resolution Office (AARO)" with mission language drawn from the Hicks establishment memorandum; the FY 2025 OSD OP-5 (released March 11, 2024) is the first budget submission to name the same subordinate office "Advanced Intelligence Capabilities (AIC)" with mission language drawn from the same memorandum and the same statutory reporting line to the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence per 50 U.S.C. § 3373. The FY 2026 OSD OP-5 (released July 7, 2025) retains the AIC name. The public-facing aaro.mil website and subsequent DoD press releases continue to use the AARO name; no public DoD announcement of an AARO renaming has been issued.
 
 
+  Per the FY 2026 OSD OP-5 budget submission, in addition to AARO, the OUSD(I&S) operating budget provides funding for the Influence and Perception Management Office ([`/organizations/ipmo`]), the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). Sancorp Consulting ([`/organizations/sancorp-consulting`]) also holds a prime contract at IPMO (HQ003422C0064, PWS dated April 25, 2022), issued by Washington Headquarters Services Acquisition Directorate as an 8(a) sole-source procurement.
+
+
   In late July 2023, Deputy Secretary of Defense Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Director Kirkpatrick ([`/people/sean-kirkpatrick`]) to report directly to her — per DefenseScoop reporting (Brandi Vincent ([`/people/brandi-vincent`]), August 30, 2023). Hicks took action late that month, partly to help speed up AARO''s launch of the congressionally mandated public website (subsequently launched on August 31, 2023). Per the same reporting, between November 2022 and April 2023, the AARO website launch package had moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week under USD(I&S) Moultrie''s ([`/people/ronald-moultrie`]) request, with AARO regularly coordinating the memo and Kirkpatrick attending several in-person meetings with the under secretary. Hicks''s late-July reorganization placed AARO''s operational reporting line in alignment with 50 U.S.C. § 3373, under which Director, AARO reports to the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence — and followed within days of the July 26, 2023 House Oversight UAP hearing.
 
 
@@ -116,6 +119,10 @@ primary_sources:
   extracted_text_path: /tmp/scratch-aaro-10.txt
 - path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
   format: pdf
+- path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
+  format: pdf
+- path: government/usaspending-hq003422c0064.txt
+  format: txt
 - path: government/foia-23-f-0905-doc-1-released.pdf
   format: pdf
 - path: government/foia-23-f-0905-doc-2-released.pdf
@@ -967,6 +974,16 @@ quotes:
   significance: 'AARO Volume II preview reporting (Wall Street Journal, June 6, 2025) — verbatim description of the "Yankee Blue" induction briefings at Air Force classified programs, in which new commanders were handed a doctored "antigravity maneuvering vehicle" photo and told the program was reverse-engineering the craft. Per the WSJ, Kirkpatrick found the practice had begun decades before, prompting a defense-secretary''s-office memo across the service in spring 2023 ordering the practice to stop. Documents an AARO Volume II finding that connects historical Air Force disinformation practice to the public UFO mythology AARO is statutorily charged with investigating.'
   context: 'Wall Street Journal article "The Pentagon Disinformation That Fueled America''s UFO Mythology" by Joel Schectman and Aruna Viswanatha; previews AARO Volume II findings drawn from extensive interviews with Kirkpatrick — Yankee Blue / induction-briefing ritual section'
   statement_date: '2025-06-06'
+- id: q74
+  added_date: '2026-05-02'
+  text: |
+    (III) any efforts to obfuscate, manipulate public opinion, hide, or otherwise provide incorrect unclassified or classified information about unidentified anomalous phenomena or related activities.
+  source:
+    path: government/uscode-title50-section3373-20260501.html
+    location: '50 U.S.C. § 3373(j)(2)(B)(ii)(III) — Historical Record Report mandate, "Other requirements" subparagraph'
+  significance: 'Statutory mandate (codifying NDAA FY23 § 6802 / IAA FY23 § 6802) directing AARO''s Historical Record Report to itemize "any efforts to obfuscate, manipulate public opinion, hide, or otherwise provide incorrect unclassified or classified information about unidentified anomalous phenomena or related activities." Establishes that the office statutorily charged with investigating UAP perception manipulation operates inside the same OUSD(I&S) administrative envelope as the Influence and Perception Management Office (IPMO) — whose stated mission is foreign-directed influence and perception management.'
+  context: 'U.S. Code Title 50 § 3373(j)(2)(B)(ii)(III), Historical Record Report mandate provision — Other requirements subparagraph governing the scope of the historical record AARO must compile'
+  statement_date: '2022-12-23'
 key_personnel:
 - id: kp1
   added_date: '2026-04-20'
@@ -1060,6 +1077,14 @@ org_relationships:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
     location: 'Hicks AARO establishment memo, p. 1, ¶3 second bullet'
   note: AAROEXEC is the AARO Executive Council, renamed by the Hicks AARO establishment memo from the predecessor AOIMEXEC. Per the Hicks memo, the mission of the AAROEXEC is to provide oversight and direction to the AARO. Distinct from the parent USD(I&S) reporting line; AAROEXEC is the senior governance body that reviews AARO direction.
+- id: or9
+  added_date: '2026-05-02'
+  organization_path: /organizations/ipmo
+  relationship_type: partner
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026 OUSD(I&S) program section, sub-office cluster paragraph
+  note: Influence and Perception Management Office. Sister sub-office under the same OUSD(I&S) administrative parent per FY 2026 OSD OP-5 (which lists IPMO alongside DMDPO, OSD Red Team, SCPO, CP/WMD Office, AIC, and the Law Enforcement Oversight and Compliance Directorate as funded OUSD(I&S) sub-offices). Sancorp Consulting holds prime contracts at both AARO (HQ003422C0094, signed September 1, 2022) and IPMO (HQ003422C0064, PWS dated April 25, 2022) — both 8(a) sole-source procurements issued by the same Washington Headquarters Services Acquisition Directorate three months apart.
 timeline:
 - id: t1
   added_date: '2026-04-20'
@@ -1519,6 +1544,42 @@ entities_referenced:
   name: Aruna Viswanatha
   wrap_path: /people/aruna-viswanatha
   context_summary: 'Wall Street Journal staff reporter; co-author with Joel Schectman of the June 6, 2025 WSJ article "The Pentagon Disinformation That Fueled America''s UFO Mythology" previewing AARO Volume II findings drawn from extensive interviews with Kirkpatrick.'
+- id: e35
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Influence and Perception Management Office
+  wrap_path: /organizations/ipmo
+  context_summary: OUSD(I&S) sub-office established March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security. Sister office to AARO under the same OUSD(I&S) parent administrative authority; both offices hold prime contracts with Sancorp Consulting (HQ003422C0064 IPMO PWS dated April 25, 2022; HQ003422C0094 AARO contract signed September 1, 2022) issued by Washington Headquarters Services Acquisition Directorate as 8(a) sole-source procurements.
+- id: e36
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Defense Military Deception Program Office
+  wrap_path: /organizations/dmdpo
+  context_summary: OUSD(I&S) sub-office providing governance, oversight, and operational implementation of military deception planning and execution capabilities across the DoD. Listed as a funded sub-office under the OUSD(I&S) operating budget per FY 2026 OSD OP-5.
+- id: e37
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: OSD Red Team
+  wrap_path: /organizations/osd-red-team
+  context_summary: OUSD(I&S) sub-office serving as the SECDEF's and DEPSECDEF's red team. Listed as a funded sub-office under the OUSD(I&S) operating budget per FY 2026 OSD OP-5.
+- id: e38
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Strategy Coordination Program Office
+  wrap_path: /organizations/scpo
+  context_summary: OUSD(I&S) sub-office performing critical analyses and assessments for military, technical, and scientific programs. Listed as a funded sub-office under the OUSD(I&S) operating budget per FY 2026 OSD OP-5.
+- id: e39
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Counterproliferation of Weapons of Mass Destruction Office
+  wrap_path: /organizations/cp-wmd
+  context_summary: OUSD(I&S) sub-office serving as the senior advisor to the USD(I&S) for understanding threats from biothreat/biotechnology and WMD. Listed as a funded sub-office under the OUSD(I&S) operating budget per FY 2026 OSD OP-5.
+- id: e40
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Law Enforcement Oversight and Compliance Directorate
+  wrap_path: /organizations/le-oversight-compliance-directorate
+  context_summary: OUSD(I&S) sub-office serving as the senior advisor to the USD(I&S) for law enforcement policy, established to implement the Deputy Secretary of Defense memo dated April 21, 2023 designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement.
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'

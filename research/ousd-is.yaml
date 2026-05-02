@@ -16,6 +16,9 @@ description: 'The Office of the Under Secretary of Defense for Intelligence and 
   Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intelligence Program (MIP) Management and Activities of the OUSD(I&S) operating budget, funding is provided for the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Influence and Perception Management Office ([`/organizations/ipmo`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). The Counter-Adversary Defense Industry (C-ADI) program ([`/organizations/c-adi`]) is named in the FY 2025 OSD OP-5 (released March 2024) and again in the FY 2026 OSD OP-5 (released June 2025) under "Major Program Title: MIP Management and Activities of the OUSD(I&S)". Advanced Intelligence Capabilities is first named in the FY 2025 OSD OP-5; AARO ([`/organizations/aaro`]) is established by the Deputy Secretary of Defense memorandum dated July 15, 2022, and both AARO and AIC are documented on this repository as separate nodes. The line "Walkoff – Classified" appears under the OUSD(I&S) program section of the FY 2023 and FY 2024 OSD OP-5 and does not appear in the FY 2025 or FY 2026 OSD OP-5. The Law Enforcement Oversight and Compliance Directorate description states "will lead, coordinate, and integrate" in the FY 2025 OSD OP-5 and "leads, coordinates, and integrates" in the FY 2026 OSD OP-5. The FY 2026 OSD OP-5 references the Deputy Secretary of Defense memorandum dated 21 April 2023 designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, with an associated increase of +18 FTEs and \$4,334 thousand in OUSD(I&S) Compensation and Benefits funding.
 
 
+  Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2022 and April 2023 the AARO website launch package moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week at USD(I&S) Moultrie''s ([`/people/ronald-moultrie`]) request; AARO regularly responded to questions, made edits and re-coordinated the memo, and Kirkpatrick ([`/people/sean-kirkpatrick`]) had several in-person meetings with the undersecretary. In late July 2023, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Kirkpatrick to report directly to her.
+
+
   In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitted proposed revisions to Congress ([`/documents/pentagon-uapda-revisions-2023-11`]). Per the document, the Department strongly urges consideration of the revisions to the proposed legislation''s provisions for the preservation, centralization, declassification, and release of Federal Government records related to unidentified anomalous phenomena (UAP) and non-human intelligence, including those addressing the proposed UAP records collection at the National Archives and Records Administration (NARA), the proposed commission with declassification authority, and the proposed disclosure of recovered technologies of unknown origin and biological evidence on non-human intelligence. Per Douglas Johnson''s analysis (July 24, 2024) of a July 17, 2024 Marik von Rennenkampff interview, AARO ([`/organizations/aaro`]) Director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) said of the revisions, "we convinced Congress last year not to go down that road"; Kirkpatrick separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
 
   '
@@ -81,6 +84,10 @@ primary_sources:
 - path: government/pentagon-uapda-proposed-revisions-202311.pdf
   format: pdf
 - path: news/douglas-johnson-uapda-pentagon-rewrite-20240724.html
+  format: html
+- path: news/defensescoop-hicks-aaro-oversight-20230830.html
+  format: html
+- path: government/dvids-kozik-portrait-page-20260501.html
   format: html
 document_intrinsic:
   full_name: Office of the Under Secretary of Defense for Intelligence and Security
@@ -646,6 +653,16 @@ key_personnel:
     path: government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf
     location: 'p. 1, ¶1 of biographical text'
   note: Per the 2025 official biography hosted on ousdi.defense.gov, Justin Overbaugh serves as the Deputy Under Secretary of War for Intelligence and Security. In this role, he supports the Under Secretary across all matters related to intelligence, counterintelligence, and security, overseeing defense intelligence and security agencies and shaping policy to advance national security and military operations. Former U.S. Army Officer (reconnaissance unit Afghanistan and Iraq, HUMINT collection, strategic counterintelligence operations).
+- id: kp8
+  added_date: '2026-05-02'
+  person_path: /people/david-kozik
+  role: Director Congressional Activities, Office of the Under Secretary of Defense Intelligence
+  period_start: '2017-12-27'
+  leadership_class: staff
+  source:
+    path: government/dvids-kozik-portrait-page-20260501.html
+    location: DVIDS image-record page for portrait VIRIN 4064972 (December 27, 2017)
+  note: David A. Kozik, Director Congressional Activities, Office of the Under Secretary of Defense Intelligence; per the DVIDS official portrait, Army portrait studio at the Pentagon in Arlington, Virginia, Dec. 27, 2017.
 org_relationships:
 - id: or1
   added_date: '2026-04-30'
@@ -921,6 +938,23 @@ timeline:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: OSD OP-5 FY 2026, Compensation and Benefits — Principal Staff Assistants for Law Enforcement — OUSD(I&S) line item
+- id: t20a
+  added_date: '2026-05-02'
+  date: '2022-11'
+  end_date: '2023-04'
+  event: Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2022 and April 2023 the AARO website launch package moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week at Moultrie's request; Kirkpatrick had several in-person meetings with the undersecretary on the package
+  category: other
+  source:
+    path: news/defensescoop-hicks-aaro-oversight-20230830.html
+    location: article body, AARO website-launch timeline section
+- id: t20b
+  added_date: '2026-05-02'
+  date: '2023-07'
+  event: In late July 2023, Deputy Secretary of Defense Kathleen Hicks moved to personally oversee AARO and repositioned Kirkpatrick to report directly to her per 50 U.S.C. § 3373; ended OUSD(I&S) operational reporting line over AARO held since July 20, 2022 establishment under Moultrie. Per DefenseScoop August 30, 2023
+  category: government-action
+  source:
+    path: news/defensescoop-hicks-aaro-oversight-20230830.html
+    location: article body, ¶ following byline
 - id: t21
   added_date: '2026-05-02'
   date: '2023-10-03'
@@ -1196,6 +1230,12 @@ entities_referenced:
   name: Pentagon UAPDA proposed revisions, November 2023
   wrap_path: /documents/pentagon-uapda-revisions-2023-11
   context_summary: 33-page line-by-line OUSD(I&S) proposed revision of the Senate-passed UAP Disclosure Act of 2023, submitted to congressional negotiators in November 2023. Largely adopted as Public Law 118-31 / FY24 NDAA Subtitle C §§ 1841-1843.
+- id: e37
+  added_date: '2026-05-02'
+  entity_type: person
+  name: David A. Kozik
+  wrap_path: /people/david-kozik
+  context_summary: Director, Congressional Activities, Office of the Under Secretary of Defense Intelligence (career SES; in role at least since December 2017 per DVIDS official portrait caption). Counterpart to Pentagon spokesperson Sue Gough on AARO Hill-facing scope per the FOIA 24-F-0894 March 6-7, 2024 email exchange ("We do not want to see sUAS added to AARO's portfolio!").
 naming_quirks:
 - id: nq1
   added_date: '2026-04-30'

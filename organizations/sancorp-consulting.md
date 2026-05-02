@@ -33,6 +33,8 @@ Both Sancorp PWSs are publicly available via DoD FOIA channels — the IPMO cont
 
 Sancorp's public-facing Past Performance page (sancorpconsulting.com) lists 19 prime contracts including the IPMO solicitation HQ003422R0164 ("Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support Services"), the OUSD(I&S) Counter-Insider Threat Program Office contract HQ003419C0159, the OUSD(I&S) Counterintelligence Analytical Support contract HQ003420C0167, and follow-on prime contracts HQ003425FE388 (Office of the Under Secretary of War for Intelligence and Security) and HQ003425FE405 (Office of the Under Secretary of War for Policy). Absent from the public-facing Past Performance list are the Sancorp AARO Support Services prime contracts HQ003422C0094 (signed September 1, 2022) and HQ003424C0096 (signed August 23, 2024), both established via FOIA 23-F-1114 and USAspending.gov contract records cited in primary sources.
 
+On April 19, 2023, AARO ([`/organizations/aaro`]) director Dr. Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) told the Subcommittee on Emerging Threats and Capabilities that AARO would need additional authorization from Congress to begin counterintelligence work. Sancorp's AARO Support Services contract HQ003422C0094 had started in 2022, prior to that hearing; Sancorp's prior OUSD(I&S) prime contracts include CI Metrics Study Support (HQ003418C0123, September 27, 2018), Strengthening Insider Threat Support Services (HQ003419C0159, September 20, 2019), and Counterintelligence Analytic Studies Support Services (HQ003420C0167, September 25, 2020). Per the MuckRock fee waiver request from Robert Skvarla, Jr. (FOIA case 23-F-0905, filed May 19, 2023), Sancorp's contract with AARO "would help clarify this apparent contradiction."
+
 ---
 
 ## Key Personnel
@@ -656,6 +658,7 @@ _No personnel attested in primary sources to date._
 - [`/people/jacqueline-verrine`]
 - [`/people/james-holly`]
 - [`/people/rainie-wells`]
+- [`/people/sean-kirkpatrick`]
 
 ### Organizations
 

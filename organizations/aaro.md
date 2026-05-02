@@ -36,6 +36,8 @@ AARO is established under the Under Secretary of Defense for Intelligence and Se
 
 The FY 2024 OSD OP-5 budget submission (released March 20, 2023) named the OUSD(I&S) subordinate office "All-domain Anomaly Resolution Office (AARO)" with mission language drawn from the Hicks establishment memorandum; the FY 2025 OSD OP-5 (released March 11, 2024) is the first budget submission to name the same subordinate office "Advanced Intelligence Capabilities (AIC)" with mission language drawn from the same memorandum and the same statutory reporting line to the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence per 50 U.S.C. § 3373. The FY 2026 OSD OP-5 (released July 7, 2025) retains the AIC name. The public-facing aaro.mil website and subsequent DoD press releases continue to use the AARO name; no public DoD announcement of an AARO renaming has been issued.
 
+Per the FY 2026 OSD OP-5 budget submission, in addition to AARO, the OUSD(I&S) operating budget provides funding for the Influence and Perception Management Office ([`/organizations/ipmo`]), the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). Sancorp Consulting ([`/organizations/sancorp-consulting`]) also holds a prime contract at IPMO (HQ003422C0064, PWS dated April 25, 2022), issued by Washington Headquarters Services Acquisition Directorate as an 8(a) sole-source procurement.
+
 In late July 2023, Deputy Secretary of Defense Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Director Kirkpatrick ([`/people/sean-kirkpatrick`]) to report directly to her — per DefenseScoop reporting (Brandi Vincent ([`/people/brandi-vincent`]), August 30, 2023). Hicks took action late that month, partly to help speed up AARO's launch of the congressionally mandated public website (subsequently launched on August 31, 2023). Per the same reporting, between November 2022 and April 2023, the AARO website launch package had moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week under USD(I&S) Moultrie's ([`/people/ronald-moultrie`]) request, with AARO regularly coordinating the memo and Kirkpatrick attending several in-person meetings with the under secretary. Hicks's late-July reorganization placed AARO's operational reporting line in alignment with 50 U.S.C. § 3373, under which Director, AARO reports to the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence — and followed within days of the July 26, 2023 House Oversight UAP hearing.
 
 AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP recovery and reverse-engineering program brought to AARO's attention by interviewees who claimed it was a sensitive DHS compartment to cover up the retrieval and exploitation of "non-human biologics." Per the report, KONA BLUE traces its origins to the DIA-managed AAWSAP/AATIP program (cancelled by DIA in 2012); after cancellation, supporters proposed to DHS that they create and fund a new version under a Special Access Program covering UAP investigations, paranormal research and reverse-engineering of "any recovered off-world spacecraft that they hoped to acquire." A Prospective Special Access Program (PSAP) was officially requested but eventually rejected by DHS leadership for lacking merit. The report's finding: "no extraterrestrial craft or bodies were ever collected" and the SAP "was never approved or stood up, and no data or material was transferred to DHS."
@@ -233,6 +235,18 @@ On April 18, 2026, a Defense Department spokesperson stated to NBC News that AAR
 | Attributed to | Sancorp AARO Support Services contract HQ003422C0094 PWS, Section G Routing Data Table, 2022-09-01 |
 | Source | [archived source](../sources/government/foia-23-f-0905-doc-1-released.pdf) |
 | Location | AARO contract HQ003422C0094 PWS (FOIA 23-F-0905 partial release), Section G Contract Administration Data, Routing Data Table |
+
+---
+
+### Statutory mandate (codifying NDAA FY23 § 6802 / IAA FY23 § 6802) directing AARO's Historical Record Report to itemize "any efforts to obfuscate, manipulate public opinion, hide, or otherwise provide incorrect unclassified or classified information about unidentified anomalous phenomena or related activities." Establishes that the office statutorily charged with investigating UAP perception manipulation operates inside the same OUSD(I&S) administrative envelope as the Influence and Perception Management Office (IPMO) — whose stated mission is foreign-directed influence and perception management.
+
+> (III) any efforts to obfuscate, manipulate public opinion, hide, or otherwise provide incorrect unclassified or classified information about unidentified anomalous phenomena or related activities.
+
+| Field | Value |
+|---|---|
+| Attributed to | U.S. Code Title 50 § 3373(j)(2)(B)(ii)(III), Historical Record Report mandate provision — Other requirements subparagraph governing the scope of the historical record AARO must compile, 2022-12-23 |
+| Source | [archived source](../sources/government/uscode-title50-section3373-20260501.html) |
+| Location | 50 U.S.C. § 3373(j)(2)(B)(ii)(III) — Historical Record Report mandate, "Other requirements" subparagraph |
 
 ---
 
@@ -1110,6 +1124,7 @@ On April 18, 2026, a Defense Department spokesperson stated to NBC News that AAR
 | [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0094.txt |
 | [`/organizations/whs`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
 | [`/organizations/aaroexec`] | other | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
+| [`/organizations/ipmo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
 
 ---
 
@@ -1143,15 +1158,21 @@ On April 18, 2026, a Defense Department spokesperson stated to NBC News that AAR
 
 - [`/organizations/aaroexec`]
 - [`/organizations/aoimsg`]
+- [`/organizations/cp-wmd`]
 - [`/organizations/da-m`]
 - [`/organizations/disclosure-foundation`]
+- [`/organizations/dmdpo`]
 - [`/organizations/dod`]
 - [`/organizations/gtri`]
+- [`/organizations/ipmo`]
+- [`/organizations/le-oversight-compliance-directorate`]
 - [`/organizations/nsa`]
 - [`/organizations/odni`]
+- [`/organizations/osd-red-team`]
 - [`/organizations/ousd-is`]
 - [`/organizations/oversight-task-force-declassification`]
 - [`/organizations/sancorp-consulting`]
+- [`/organizations/scpo`]
 - [`/organizations/uaptf`]
 - [`/organizations/us-navy`]
 - [`/organizations/whs`]
