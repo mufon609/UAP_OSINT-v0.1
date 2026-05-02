@@ -50,6 +50,8 @@ primary_sources:
   format: html
 - path: news/defensescoop-hicks-aaro-oversight-20230830.html
   format: html
+- path: government/osd-op5-fy26-wayback-20260201.pdf
+  format: pdf
 document_intrinsic:
   full_name: Ronald S. Moultrie
   aliases:
@@ -628,12 +630,20 @@ timeline:
     location: article body, AARO website-launch timeline section
 - id: t16b
   added_date: '2026-05-02'
-  date: '2023-07'
+  date: '2023-07-28'
   event: Within days of David Grusch's ([`/people/david-grusch`]) July 26, 2023 House Oversight testimony, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) took direct AARO oversight and repositioned Kirkpatrick to report directly to her per 50 U.S.C. § 3373; ended Moultrie's OUSD(I&S) operational reporting line over AARO. Per DefenseScoop August 30, 2023
   category: role
   source:
     path: news/defensescoop-hicks-aaro-oversight-20230830.html
     location: article body, ¶ following byline
+- id: t16c
+  added_date: '2026-05-02'
+  date: '2023-04-21'
+  event: Deputy Secretary of Defense memo dated 21 April 2023 designates OUSD(I&S) as the Principal Staff Assistant for Law Enforcement during Moultrie's USD(I&S) tenure; per FY 2026 OSD OP-5, supported by +18 FTEs and \$4,334 thousand in OUSD(I&S) Compensation and Benefits funding
+  category: role
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: OSD OP-5 FY 2026, Compensation and Benefits — Principal Staff Assistants for Law Enforcement — OUSD(I&S) line item
 - id: t17
   added_date: '2026-04-29'
   date: '2024-02-29'

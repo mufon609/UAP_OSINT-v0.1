@@ -53,6 +53,12 @@ primary_sources:
   format: transcript
 - path: news/defensescoop-hicks-aaro-oversight-20230830.html
   format: html
+- path: government/pentagon-uapda-proposed-revisions-202311.pdf
+  format: pdf
+- path: news/douglas-johnson-uapda-pentagon-rewrite-20240724.html
+  format: html
+- path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
+  format: html
 document_intrinsic:
   full_name: David Charles Grusch
   aliases:
@@ -75,7 +81,7 @@ credibility_notes: 'Grusch testified under oath that he is "speaking to the fact
   Context. Under oath on July 26, 2023, Grusch testified that he "asked my information to be sent to the House and Senate Armed Services Committee because there are Title 10 equities at play" — House Armed Services Committee ([`/organizations/hasc`]) and Senate Armed Services Committee ([`/organizations/sasc`]) — but that "there was no smooth process to do so," a separate reporting channel from the ICIG intelligence committee channel described above. His UAPTF role began in 2019 when the UAPTF director tasked him to "identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) we needed to satisfy our congressionally mandated mission." On the Joe Rogan Experience ([`/organizations/joe-rogan-experience`]) podcast ([`/transcripts/jre-2065-grusch-2023`]), Grusch described a Spring 2021 meeting in Las Vegas with former Senate Majority Leader Harry Reid ([`/people/harry-reid`]) in which Reid said "yeah I knew we had UFO material I was denied access for decades"; in the same conversation, Grusch described the "$21 million" Reid had given "to DIA and Bigalow Aerospace" [`/organizations/bigelow-aerospace`] [`/people/robert-bigelow`] as funding for the "assap" program — said to be run by "Jim laty" [`/people/james-lacatski`], a retired DIA officer with a PhD in engineering, who "made this disclosure in his book skinwalkers at the Pentagon" (page 152 to 153). On the same podcast, Grusch described his first encounter with "Lou alzando" [`/people/luis-elizondo`] through a 2017 CIA briefing in which a "senior person" at the agency said the person was "running some UFO program at the Pentagon" — "we all think he''s crazy"; Grusch later realized this was the leader of the ATIP program named in the sworn hearing testimony as "Lue Elizondo." Also on the podcast, Grusch named a specific private defense contractor — "lockie Martin" [`/organizations/lockheed-martin`] — saying the company "wanted to divest itself from this material at a specific facility that''s known to me that I provided to the Inspector General." The contractor was not named in the sworn congressional testimony.
 
 
-  AARO position. Under former director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]), AARO ([`/organizations/aaro`]) correspondence with Grusch is documented via FOIA 24-F-0266 ([`/documents/aaro-invitations-to-grusch-2024`]); Kirkpatrick wrote he was "not judging the claims" and was "not taking a position on ... the underlying claim of recovered materials," stating of Grusch that "he is sincere and credible and his and other claims, which I expressly called ''allegations,'' warrant investigation." Grusch declined AARO interview invitations. Christopher Mellon ([`/people/christopher-mellon`]) described in the Debrief that "a number of potential sources do not trust the leadership of the All-Domain Anomaly Resolution Office established by Congress."
+  AARO position. Under former director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]), AARO ([`/organizations/aaro`]) correspondence with Grusch is documented via FOIA 24-F-0266 ([`/documents/aaro-invitations-to-grusch-2024`]); Kirkpatrick wrote he was "not judging the claims" and was "not taking a position on ... the underlying claim of recovered materials," stating of Grusch that "he is sincere and credible and his and other claims, which I expressly called ''allegations,'' warrant investigation." Grusch declined AARO interview invitations. Christopher Mellon ([`/people/christopher-mellon`]) described in the Debrief that "a number of potential sources do not trust the leadership of the All-Domain Anomaly Resolution Office established by Congress." In November 2023, OUSD(I&S) ([`/organizations/ousd-is`]) reviewed the UAP Disclosure Act of 2023 and submitted proposed revisions to Congress ([`/documents/pentagon-uapda-revisions-2023-11`]). Per Douglas Johnson''s analysis (July 24, 2024) of a July 17, 2024 Marik von Rennenkampff interview, Kirkpatrick said of the revisions, "we convinced Congress last year not to go down that road."
 
 
   Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) reported on The Intercept''s story on Grusch''s military service mental health records; Rep. Tim Burchett ([`/people/tim-burchett`]) publicly called the story "sickening" and said "this man served his country." In the American Alchemy documentary ([`/transcripts/american-alchemy-grusch-72hrs-2023`]), Grusch described post-traumatic stress disorder diagnosis and treatment after combat in Afghanistan (2013): "saw treatment and I got help good to go." See vouching chain below for voucher statements by Karl Nell ([`/people/karl-nell`]) as the Army liaison who worked with Grusch on the UAP Task Force, plus House UAP Caucus members Burchett, Burlison ([`/people/eric-burlison`]), Luna ([`/people/anna-paulina-luna`]), and Sen. Rubio ([`/people/marco-rubio`]).
@@ -361,6 +367,14 @@ timeline:
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
     location: lines 2000-2100
+- id: t17a
+  added_date: '2026-05-02'
+  date: '2023-03-08'
+  event: Major General David W. Abba ([`/people/david-abba`]), Director, DoD Special Access Program Central Office (DoD SAPCO), signs memorandum confirming AARO's authority to receive and handle all UAP-related information regardless of classification, including from individuals bound by nondisclosure agreements (released April 2024 under FOIA 24-F-0266). Legal basis for AARO's subsequent invitations to Grusch, which Grusch declined
+  category: other
+  source:
+    path: news/blackvault-foia-24-f-0266-aaro-grusch-engagement-20240426.html
+    location: BlackVault analysis page caption + body, "memorandum confirming AARO's authority" paragraph
 - id: t18
   added_date: '2026-04-22'
   date: '2023-06-05'
@@ -403,12 +417,20 @@ timeline:
     location: opening p. 11
 - id: t22a
   added_date: '2026-05-02'
-  date: '2023-07'
+  date: '2023-07-28'
   event: Within days of Grusch's July 26, 2023 testimony, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) took direct AARO ([`/organizations/aaro`]) oversight and repositioned Director Kirkpatrick ([`/people/sean-kirkpatrick`]) to report to her per 50 U.S.C. § 3373; ended OUSD(I&S) ([`/organizations/ousd-is`]) operational reporting line over AARO held under USD(I&S) Moultrie ([`/people/ronald-moultrie`]). Per DefenseScoop August 30, 2023 (Brandi Vincent)
   category: other
   source:
     path: news/defensescoop-hicks-aaro-oversight-20230830.html
     location: article body, ¶ following byline
+- id: t22b
+  added_date: '2026-05-02'
+  date: '2023-11'
+  event: OUSD(I&S) submits proposed revisions to the UAP Disclosure Act of 2023 ([`/documents/pentagon-uapda-revisions-2023-11`]) to congressional negotiators — institutional Pentagon response to the disclosure framework Grusch's July 26 testimony catalyzed. Per Kirkpatrick's July 17, 2024 von Rennenkampff interview, AARO "convinced Congress last year not to go down that road"
+  category: other
+  source:
+    path: government/pentagon-uapda-proposed-revisions-202311.pdf
+    location: 33-page line-by-line proposed revisions document, OUSD(I&S) authoring office
 - id: t23
   added_date: '2026-04-22'
   date: 2023-10
@@ -2628,6 +2650,12 @@ entities_referenced:
   wrap_path: /organizations/ousd-is
   context_summary: AARO's parent office during Grusch's UAPTF/AARO-reporting tenure; lost direct AARO operational reporting line in late July 2023 (administrative cognizance retained)
   id: e57
+  added_date: '2026-05-02'
+- entity_type: person
+  name: David W. Abba
+  wrap_path: /people/david-abba
+  context_summary: 'Major General; Director, DoD Special Access Program Central Office (DoD SAPCO). Signed the March 8, 2023 memorandum confirming AARO''s authority to receive and handle UAP-related information regardless of classification, including from individuals bound by nondisclosure agreements (released April 2024 under FOIA 24-F-0266) — the legal basis for AARO''s subsequent invitations to Grusch.'
+  id: e58
   added_date: '2026-05-02'
 naming_quirks:
 - id: nq1
