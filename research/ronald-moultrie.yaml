@@ -48,6 +48,8 @@ primary_sources:
   format: html
 - path: news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html
   format: html
+- path: news/defensescoop-hicks-aaro-oversight-20230830.html
+  format: html
 document_intrinsic:
   full_name: Ronald S. Moultrie
   aliases:
@@ -68,7 +70,10 @@ background: 'Ronald S. "Ron" Moultrie is an American intelligence official who s
   Moultrie served as a Russian linguist in the United States Air Force ([`/organizations/us-air-force`]). He earned a Bachelor of Arts degree magna cum laude in Business Management from the University of Maryland, College Park ([`/organizations/umd`]), a Master of Science degree in Strategic Intelligence from the National Intelligence University ([`/organizations/national-intelligence-university`]), and a Russian Language degree from the Defense Language Institute ([`/organizations/defense-language-institute`]) at Monterey. He completed Senior Executive studies at Harvard University''s Kennedy School of Government ([`/organizations/harvard-kennedy-school`]). He resides in Annapolis, Maryland with his wife Darlene.
 
   '
-uap_relevance: 'As Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]), Moultrie was the principal advisor to the Secretary of Defense responsible for the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) at its establishment on July 20, 2022. He named Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) as the office''s first Director. On May 17, 2022, Moultrie appeared before Congress at the first open hearing on UAP in 50 years. On December 16, 2022, Moultrie appeared with Kirkpatrick at the AARO Media Roundtable, where he said he had ''not seen anything in those holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that.'' Moultrie remained USD(I&S) until February 29, 2024.
+uap_relevance: 'As Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]), Moultrie was the principal advisor to the Secretary of Defense responsible for the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) at its establishment on July 20, 2022. He named Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) as the office''s first Director. On May 17, 2022, Moultrie appeared before Congress at the first open hearing on UAP in 50 years. On December 16, 2022, Moultrie appeared with Kirkpatrick at the AARO Media Roundtable, where he said he had ''not seen anything in those holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that.''
+
+
+  Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2022 and April 2023 the AARO website launch package moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week at Moultrie''s request; AARO regularly responded to questions, made edits and re-coordinated the memo, and Kirkpatrick had several in-person meetings with the undersecretary. In late July 2023 Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Kirkpatrick to report directly to her. Moultrie remained USD(I&S) until February 29, 2024.
 
   '
 affiliations:
@@ -612,6 +617,23 @@ timeline:
   source:
     path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
     location: ¶ Good afternoon, I'm Ronald Moultrie
+- id: t16a
+  added_date: '2026-05-02'
+  date: '2022-11'
+  end_date: '2023-04'
+  event: Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2022 and April 2023 the AARO website launch package moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week at Moultrie's request; Kirkpatrick had several in-person meetings with the undersecretary on the package
+  category: other
+  source:
+    path: news/defensescoop-hicks-aaro-oversight-20230830.html
+    location: article body, AARO website-launch timeline section
+- id: t16b
+  added_date: '2026-05-02'
+  date: '2023-07'
+  event: Within days of David Grusch's ([`/people/david-grusch`]) July 26, 2023 House Oversight testimony, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) took direct AARO oversight and repositioned Kirkpatrick to report directly to her per 50 U.S.C. § 3373; ended Moultrie's OUSD(I&S) operational reporting line over AARO. Per DefenseScoop August 30, 2023
+  category: role
+  source:
+    path: news/defensescoop-hicks-aaro-oversight-20230830.html
+    location: article body, ¶ following byline
 - id: t17
   added_date: '2026-04-29'
   date: '2024-02-29'
@@ -1124,6 +1146,12 @@ entities_referenced:
   name: Pallas
   wrap_path: /organizations/pallas
   context_summary: Moultrie listed as Senior Adviser per June 2021 ExecutiveBiz BlueVoyant article
+- id: e47
+  added_date: '2026-05-02'
+  entity_type: person
+  name: David Grusch
+  wrap_path: /people/david-grusch
+  context_summary: UAP whistleblower whose July 26, 2023 House Oversight testimony immediately preceded Hicks's late-July 2023 transition of AARO oversight from Moultrie's office to her direct supervision
 naming_quirks:
 - id: nq1
   added_date: '2026-04-29'

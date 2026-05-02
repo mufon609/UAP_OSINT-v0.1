@@ -33,6 +33,8 @@ GAO-21-295, the May 2021 report on Defense Intelligence and Security, found that
 
 Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intelligence Program (MIP) Management and Activities of the OUSD(I&S) operating budget, funding is provided for the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Influence and Perception Management Office ([`/organizations/ipmo`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). The Counter-Adversary Defense Industry (C-ADI) program ([`/organizations/c-adi`]) is named in the FY 2025 OSD OP-5 (released March 2024) and again in the FY 2026 OSD OP-5 (released June 2025) under "Major Program Title: MIP Management and Activities of the OUSD(I&S)". Advanced Intelligence Capabilities is first named in the FY 2025 OSD OP-5; AARO ([`/organizations/aaro`]) is established by the Deputy Secretary of Defense memorandum dated July 15, 2022, and both AARO and AIC are documented on this repository as separate nodes. The line "Walkoff – Classified" appears under the OUSD(I&S) program section of the FY 2023 and FY 2024 OSD OP-5 and does not appear in the FY 2025 or FY 2026 OSD OP-5. The Law Enforcement Oversight and Compliance Directorate description states "will lead, coordinate, and integrate" in the FY 2025 OSD OP-5 and "leads, coordinates, and integrates" in the FY 2026 OSD OP-5. The FY 2026 OSD OP-5 references the Deputy Secretary of Defense memorandum dated 21 April 2023 designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, with an associated increase of +18 FTEs and \$4,334 thousand in OUSD(I&S) Compensation and Benefits funding.
 
+In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitted proposed revisions to Congress ([`/documents/pentagon-uapda-revisions-2023-11`]). Per the document, the Department strongly urges consideration of the revisions to the proposed legislation's provisions for the preservation, centralization, declassification, and release of Federal Government records related to unidentified anomalous phenomena (UAP) and non-human intelligence, including those addressing the proposed UAP records collection at the National Archives and Records Administration (NARA), the proposed commission with declassification authority, and the proposed disclosure of recovered technologies of unknown origin and biological evidence on non-human intelligence. Per Douglas Johnson's analysis (July 24, 2024) of a July 17, 2024 Marik von Rennenkampff interview, AARO ([`/organizations/aaro`]) Director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) said of the revisions, "we convinced Congress last year not to go down that road"; Kirkpatrick separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
+
 ---
 
 ## Key Personnel
@@ -563,6 +565,7 @@ Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intellig
 | 2022-07-15 | Deputy Secretary of Defense Kathleen Hicks directs the USD(I&S) to establish the All-domain Anomaly Resolution Office (AARO) in coordination with the Director of Administration and Management | subordinate-establishment | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | [`/organizations/aaro`] |
 | 2023-04-21 | Deputy Secretary of Defense memo dated 21 April 2023 designates OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, supported by +18 FTEs and \$4,334 thousand per FY 2026 OSD OP-5. Underlying memo not retrieved at primary-source level (FOIA-able); the OSD OP-5 budget exhibit is the public-record reference. | government-action | government/osd-op5-fy26-wayback-20260201.pdf |  |
 | 2023-10-03 | James Holly (Acting Director, IPMO) delivers IPMO 101 talk at NSI Speaker Series. Abstract verbatim: "three Secretaries of Defense, under two administrations, signed off on its establishment". Companion DOPSR-cleared 23-S-3438 IPMO 101 slides (authored by COL [`/people/deitra-trotter`] and HON [`/people/ronald-moultrie`]) attest IPMO's four-division structure (Integrated Influence; Perception Management; Deception Activities; Intel Support). | testimony | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
+| 2023-11 | OUSD(I&S) submits proposed revisions to the UAP Disclosure Act of 2023 to congressional negotiators ([`/documents/pentagon-uapda-revisions-2023-11`]). Substantial portions largely adopted as Public Law 118-31 / FY24 NDAA Subtitle C §§ 1841-1843. Description carries the structural-change summary; the document node carries the line-by-line markup. | government-action | government/pentagon-uapda-proposed-revisions-202311.pdf |  |
 | 2024-02-29 | Ronald S. Moultrie retires as Under Secretary of Defense for Intelligence and Security | leadership-transition | government/wargov-moultrie-biography.html | [`/people/ronald-moultrie`] |
 | 2024-03 | OSD OP-5 FY 2025 budget submission first names Counter-Adversary Defense Industry (C-ADI) as an OUSD(I&S) sub-office (between SCPO and CP/WMD). Same release window as the AARO → AIC budget-document rebrand. Walkoff – Classified, present in FY 2023 OP-5 and FY 2024 OP-5, disappears from the FY 2025 OP-5 OUSD(I&S) program section in this same release. | other | government/osd-op5-fy25-20260501.pdf |  |
 | 2025-07-25 | Bradley D. Hansell sworn in as Under Secretary of War for Intelligence and Security per the official 2025 USDIS biography hosted on ousdi.defense.gov | leadership-transition | government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf | [`/people/bradley-hansell`] |
@@ -618,6 +621,7 @@ Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intellig
 - [`/people/michael-vickers`]
 - [`/people/milancy-harris`]
 - [`/people/ronald-moultrie`]
+- [`/people/sean-kirkpatrick`]
 - [`/people/stephen-cambone`]
 - [`/people/todd-lowery`]
 
@@ -640,3 +644,7 @@ Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intellig
 - [`/organizations/osd-red-team`]
 - [`/organizations/sancorp-consulting`]
 - [`/organizations/scpo`]
+
+### Documents
+
+- [`/documents/pentagon-uapda-revisions-2023-11`]

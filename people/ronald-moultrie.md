@@ -32,7 +32,9 @@ Moultrie served as a Russian linguist in the United States Air Force ([`/organiz
 
 ## UAP Relevance
 
-As Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]), Moultrie was the principal advisor to the Secretary of Defense responsible for the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) at its establishment on July 20, 2022. He named Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) as the office's first Director. On May 17, 2022, Moultrie appeared before Congress at the first open hearing on UAP in 50 years. On December 16, 2022, Moultrie appeared with Kirkpatrick at the AARO Media Roundtable, where he said he had 'not seen anything in those holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that.' Moultrie remained USD(I&S) until February 29, 2024.
+As Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]), Moultrie was the principal advisor to the Secretary of Defense responsible for the All-domain Anomaly Resolution Office ([`/organizations/aaro`]) at its establishment on July 20, 2022. He named Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) as the office's first Director. On May 17, 2022, Moultrie appeared before Congress at the first open hearing on UAP in 50 years. On December 16, 2022, Moultrie appeared with Kirkpatrick at the AARO Media Roundtable, where he said he had 'not seen anything in those holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that.'
+
+Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2022 and April 2023 the AARO website launch package moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week at Moultrie's request; AARO regularly responded to questions, made edits and re-coordinated the memo, and Kirkpatrick had several in-person meetings with the undersecretary. In late July 2023 Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Kirkpatrick to report directly to her. Moultrie remained USD(I&S) until February 29, 2024.
 
 ---
 
@@ -235,7 +237,9 @@ As Under Secretary of Defense for Intelligence and Security ([`/organizations/ou
 | 2022-05-17 | Testified at the first open congressional hearing on UAP in 50 years (House Permanent Select Committee on Intelligence Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation) | testimony | government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html |  |
 | 2022-07-20 | AARO formally established by USD(I&S); Moultrie names Sean Kirkpatrick as inaugural Director | role | government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html | [`/events/2023-04-19-sasc-aaro-hearing`] |
 | 2022-08-02 | Sat for official portrait at the Army portrait studio at the Pentagon | other | news/leolabs-moultrie-board-20241203.html |  |
+| 2022-11 | Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2022 and April 2023 the AARO website launch package moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week at Moultrie's request; Kirkpatrick had several in-person meetings with the undersecretary on the package | other | news/defensescoop-hicks-aaro-oversight-20230830.html |  |
 | 2022-12-16 | Co-hosted joint AARO media roundtable with Kirkpatrick (Sue Gough moderating); established 'holdings' rhetorical framing limiting AARO claims to documents and memos; stated he had not seen anything in those holdings suggesting alien visitation or crash | testimony | government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html |  |
+| 2023-07 | Within days of David Grusch's ([`/people/david-grusch`]) July 26, 2023 House Oversight testimony, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) took direct AARO oversight and repositioned Kirkpatrick to report directly to her per 50 U.S.C. § 3373; ended Moultrie's OUSD(I&S) operational reporting line over AARO. Per DefenseScoop August 30, 2023 | role | news/defensescoop-hicks-aaro-oversight-20230830.html |  |
 | 2024-02-29 | Retired as Under Secretary of Defense for Intelligence and Security | role | news/wikipedia-ronald-moultrie.html |  |
 | 2024-12-03 | Joined LeoLabs Board of Directors as Outside Director (announced via LeoLabs press release in Menlo Park CA); appointment provides 'independent corporate oversight of LeoLabs for the purposes of maintaining the highest level of trust and confidence of the U.S. Government' | affiliation | news/leolabs-moultrie-board-20241203.html |  |
 | 2024-12-05 | ExecutiveBiz publishes follow-on coverage of LeoLabs board appointment ('Department of Defense Veteran Ronald Moultrie Joins LeoLabs' Board of Directors') | publication | news/executivebiz-moultrie-leolabs-20241205.html |  |
@@ -294,6 +298,7 @@ At the December 16, 2022 AARO Media Roundtable with Kirkpatrick, Moultrie said h
 ### People
 
 - [`/people/bradley-hansell`]
+- [`/people/david-grusch`]
 - [`/people/joseph-kernan`]
 - [`/people/kathleen-hicks`]
 - [`/people/lloyd-austin`]

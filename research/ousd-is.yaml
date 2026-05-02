@@ -15,6 +15,9 @@ description: 'The Office of the Under Secretary of Defense for Intelligence and 
 
   Per the FY 2026 OSD OP-5 budget submission, in addition to the Military Intelligence Program (MIP) Management and Activities of the OUSD(I&S) operating budget, funding is provided for the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Influence and Perception Management Office ([`/organizations/ipmo`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). The Counter-Adversary Defense Industry (C-ADI) program ([`/organizations/c-adi`]) is named in the FY 2025 OSD OP-5 (released March 2024) and again in the FY 2026 OSD OP-5 (released June 2025) under "Major Program Title: MIP Management and Activities of the OUSD(I&S)". Advanced Intelligence Capabilities is first named in the FY 2025 OSD OP-5; AARO ([`/organizations/aaro`]) is established by the Deputy Secretary of Defense memorandum dated July 15, 2022, and both AARO and AIC are documented on this repository as separate nodes. The line "Walkoff – Classified" appears under the OUSD(I&S) program section of the FY 2023 and FY 2024 OSD OP-5 and does not appear in the FY 2025 or FY 2026 OSD OP-5. The Law Enforcement Oversight and Compliance Directorate description states "will lead, coordinate, and integrate" in the FY 2025 OSD OP-5 and "leads, coordinates, and integrates" in the FY 2026 OSD OP-5. The FY 2026 OSD OP-5 references the Deputy Secretary of Defense memorandum dated 21 April 2023 designating OUSD(I&S) as the Principal Staff Assistant for Law Enforcement, with an associated increase of +18 FTEs and \$4,334 thousand in OUSD(I&S) Compensation and Benefits funding.
 
+
+  In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitted proposed revisions to Congress ([`/documents/pentagon-uapda-revisions-2023-11`]). Per the document, the Department strongly urges consideration of the revisions to the proposed legislation''s provisions for the preservation, centralization, declassification, and release of Federal Government records related to unidentified anomalous phenomena (UAP) and non-human intelligence, including those addressing the proposed UAP records collection at the National Archives and Records Administration (NARA), the proposed commission with declassification authority, and the proposed disclosure of recovered technologies of unknown origin and biological evidence on non-human intelligence. Per Douglas Johnson''s analysis (July 24, 2024) of a July 17, 2024 Marik von Rennenkampff interview, AARO ([`/organizations/aaro`]) Director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) said of the revisions, "we convinced Congress last year not to go down that road"; Kirkpatrick separately confirmed by email to Johnson that no one from the White House, EOP, NSC, or any other higher authority called him or his boss to put pressure on him to soften his position.
+
   '
 primary_sources:
 - path: government/uscode-title10-section137-20260430.html
@@ -75,6 +78,10 @@ primary_sources:
   format: pdf
 - path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
   format: pdf
+- path: government/pentagon-uapda-proposed-revisions-202311.pdf
+  format: pdf
+- path: news/douglas-johnson-uapda-pentagon-rewrite-20240724.html
+  format: html
 document_intrinsic:
   full_name: Office of the Under Secretary of Defense for Intelligence and Security
   statutory_authority: 10 U.S.C. § 137 (originally enacted by Section 901 of P.L. 107-314, NDAA FY2003; redesignated by Section 1621 of P.L. 116-92, NDAA FY2020)
@@ -695,7 +702,7 @@ org_relationships:
   source:
     path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
     location: 'Hicks AARO establishment memo, p. 1, ¶3 third bullet'
-  note: Deputy Secretary of Defense Hicks directed the USD(I&S) to establish the All-domain Anomaly Resolution Office on July 15, 2022 in coordination with the Director of Administration and Management. AARO was the cognizant subordinate office established under USD(I&S) direction.
+  note: Deputy Secretary of Defense Hicks directed the USD(I&S) to establish the All-domain Anomaly Resolution Office on July 15, 2022 in coordination with the Director of Administration and Management. AARO was the cognizant subordinate office established under USD(I&S) direction. Two-track relationship since late July 2023 — OUSD(I&S) retains administrative cognizance (contracting, security, public-affairs clearance, FOIA review, Congressional Activities coordination); operational reporting transitioned to the Deputy Secretary of Defense per 50 U.S.C. § 3373. Pair with or15 (AIC); the FY 2025 and FY 2026 OSD OP-5 budget submissions name the same-mission OUSD(I&S) sub-office "Advanced Intelligence Capabilities (AIC)" while AARO continues to operate publicly under its own name (aaro.mil active, FOIA org chart still lists AARO). The structural relationship between AARO and AIC at primary-source level is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO); description prose carries the analysis.
 - id: or8
   added_date: '2026-04-30'
   organization_path: /organizations/ipmo
@@ -759,7 +766,7 @@ org_relationships:
   source:
     path: government/osd-op5-fy26-wayback-20260201.pdf
     location: OSD OP-5 FY 2026, OUSD(I&S) program section, AIC bullet
-  note: Advanced Intelligence Capabilities. Per FY 2026 OSD OP-5, AIC reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence. Pair with or7 (AARO, per Hicks establishment memorandum); the AARO/AIC distinction is documented in description prose.
+  note: Advanced Intelligence Capabilities. Per FY 2026 OSD OP-5, AIC reports directly to the DEPSECDEF and the Principal Deputy Director of National Intelligence — the literal NDAA FY23 § 1683 statutory carveout language unique to AARO. The FY 2024 OSD OP-5 (March 20, 2023 release per PDF CreationDate) named the same OUSD(I&S) sub-office "All-domain Anomaly Resolution Office (AARO)"; the FY 2025 OSD OP-5 (March 11, 2024 release) was the first to substitute "Advanced Intelligence Capabilities (AIC)" with substantively identical mission language; FY 2026 OSD OP-5 retains AIC. No public DoD announcement of an AARO renaming has been issued; aaro.mil website remains active under the AARO name. Pair with or7 (AARO, per Hicks establishment memorandum); structural relationship between the two is unresolved across three interpretations (umbrella budget category / quiet rebrand / new program absorbing AARO) and is currently described as separate subsidiaries until a primary-source resolution surfaces.
 - id: or16
   added_date: '2026-05-01'
   organization_path: /organizations/le-oversight-compliance-directorate
@@ -922,6 +929,14 @@ timeline:
   source:
     path: news/nsi-speaker-series-ipmo-holly-20250401.html
     location: NSI Speaker Series abstract
+- id: t21a
+  added_date: '2026-05-02'
+  date: '2023-11'
+  event: OUSD(I&S) submits proposed revisions to the UAP Disclosure Act of 2023 to congressional negotiators ([`/documents/pentagon-uapda-revisions-2023-11`]). Substantial portions largely adopted as Public Law 118-31 / FY24 NDAA Subtitle C §§ 1841-1843. Description carries the structural-change summary; the document node carries the line-by-line markup.
+  category: government-action
+  source:
+    path: government/pentagon-uapda-proposed-revisions-202311.pdf
+    location: 33-page line-by-line proposed revisions document, OUSD(I&S) authoring office
 - id: t22
   added_date: '2026-05-02'
   date: '2024-03'
@@ -1169,6 +1184,18 @@ entities_referenced:
   name: Deitra Trotter
   wrap_path: /people/deitra-trotter
   context_summary: 'COL (US Army); co-author of the DOPSR-cleared 23-S-3438 OUSD(I&S) IPMO 101 presentation slides (cleared for open publication September 27, 2023). Listed in PDF metadata Author field alongside HON Ronald S. Moultrie.'
+- id: e35
+  added_date: '2026-05-02'
+  entity_type: person
+  name: Sean Kirkpatrick
+  wrap_path: /people/sean-kirkpatrick
+  context_summary: 'Inaugural Director of AARO (July 20, 2022 – December 1, 2023). Per a July 17, 2024 Marik von Rennenkampff interview cited in Douglas Johnson''s analysis, Kirkpatrick said of the November 2023 OUSD(I&S) UAPDA revisions that "we convinced Congress last year not to go down that road"; he separately confirmed by email to Johnson that no White House / EOP / NSC pressure shaped the position.'
+- id: e36
+  added_date: '2026-05-02'
+  entity_type: document
+  name: Pentagon UAPDA proposed revisions, November 2023
+  wrap_path: /documents/pentagon-uapda-revisions-2023-11
+  context_summary: 33-page line-by-line OUSD(I&S) proposed revision of the Senate-passed UAP Disclosure Act of 2023, submitted to congressional negotiators in November 2023. Largely adopted as Public Law 118-31 / FY24 NDAA Subtitle C §§ 1841-1843.
 naming_quirks:
 - id: nq1
   added_date: '2026-04-30'

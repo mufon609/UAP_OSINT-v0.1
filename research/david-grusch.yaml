@@ -51,6 +51,8 @@ primary_sources:
   format: transcript
 - path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
   format: transcript
+- path: news/defensescoop-hicks-aaro-oversight-20230830.html
+  format: html
 document_intrinsic:
   full_name: David Charles Grusch
   aliases:
@@ -399,6 +401,14 @@ timeline:
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: opening p. 11
+- id: t22a
+  added_date: '2026-05-02'
+  date: '2023-07'
+  event: Within days of Grusch's July 26, 2023 testimony, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) took direct AARO ([`/organizations/aaro`]) oversight and repositioned Director Kirkpatrick ([`/people/sean-kirkpatrick`]) to report to her per 50 U.S.C. § 3373; ended OUSD(I&S) ([`/organizations/ousd-is`]) operational reporting line over AARO held under USD(I&S) Moultrie ([`/people/ronald-moultrie`]). Per DefenseScoop August 30, 2023 (Brandi Vincent)
+  category: other
+  source:
+    path: news/defensescoop-hicks-aaro-oversight-20230830.html
+    location: article body, ¶ following byline
 - id: t23
   added_date: '2026-04-22'
   date: 2023-10
@@ -2601,6 +2611,24 @@ entities_referenced:
   wrap_path: /documents/debrief-grusch-2023
   id: e54
   added_date: '2026-04-22'
+- entity_type: person
+  name: Kathleen Hicks
+  wrap_path: /people/kathleen-hicks
+  context_summary: Deputy Secretary of Defense; took direct AARO oversight in late July 2023 (within days of Grusch's July 26 testimony), repositioning AARO Director Kirkpatrick to report directly to her per 50 U.S.C. § 3373
+  id: e55
+  added_date: '2026-05-02'
+- entity_type: person
+  name: Ronald Moultrie
+  wrap_path: /people/ronald-moultrie
+  context_summary: Under Secretary of Defense for Intelligence and Security through February 29, 2024; cognizant USD(I&S) at AARO's establishment; OUSD(I&S) operational reporting relationship over AARO ended in late July 2023 with the Hicks transition
+  id: e56
+  added_date: '2026-05-02'
+- entity_type: organization
+  name: Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))
+  wrap_path: /organizations/ousd-is
+  context_summary: AARO's parent office during Grusch's UAPTF/AARO-reporting tenure; lost direct AARO operational reporting line in late July 2023 (administrative cognizance retained)
+  id: e57
+  added_date: '2026-05-02'
 naming_quirks:
 - id: nq1
   added_date: '2026-04-24'

@@ -1414,6 +1414,7 @@ Contact Request") |
 | 2023-06-05 | The Debrief ([`/organizations/the-debrief`]) publishes "Intelligence Officials Say U.S. Has Retrieved Craft of Non-Human Origin" — the Ralph Blumenthal ([`/people/ralph-blumenthal`]) and Leslie Kean ([`/people/leslie-kean`]) article that first brings Grusch's whistleblower disclosure to the public; published as document [`/documents/debrief-grusch-2023`] | publication | news/thedebrief-grusch-2023.html |  |
 | 2023-06-11 | First on-camera disclosure interview — NewsNation ([`/organizations/newsnation`]) "Reality Check with Ross Coulthart" ([`/people/ross-coulthart`]); transcript [`/transcripts/newsnation-coulthart-grusch-2023`] | publication | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |  |
 | 2023-06-27 | Sen. Marco Rubio ([`/people/marco-rubio`]), then Senate Select Committee on Intelligence Vice Chair, tells NewsNation there are "other" whistleblowers beyond Grusch with firsthand knowledge — public on-record vouching | other | news/newsnation-rubio-not-the-only-one-202306.html |  |
+| 2023-07 | Within days of Grusch's July 26, 2023 testimony, Deputy Secretary of Defense Kathleen Hicks ([`/people/kathleen-hicks`]) took direct AARO ([`/organizations/aaro`]) oversight and repositioned Director Kirkpatrick ([`/people/sean-kirkpatrick`]) to report to her per 50 U.S.C. § 3373; ended OUSD(I&S) ([`/organizations/ousd-is`]) operational reporting line over AARO held under USD(I&S) Moultrie ([`/people/ronald-moultrie`]). Per DefenseScoop August 30, 2023 (Brandi Vincent) | other | news/defensescoop-hicks-aaro-oversight-20230830.html |  |
 | 2023-07-14 | Sens. Chuck Schumer ([`/people/chuck-schumer`]) and Mike Rounds ([`/people/mike-rounds`]) introduce the UAP Disclosure Act (Senate Amendment 797) — legislative response drafted in the policy aftermath of Grusch's June disclosure; Sen. Kirsten Gillibrand ([`/people/kirsten-gillibrand`]) also speaks publicly in support | other | government/senate-schumer-rounds-uapda-20230714.html |  |
 | 2023-07-26 | Opening Statement and Closing Statement to the committee | testimony | government/oversight-house-gov-grusch-written-testimony-20230726.pdf | [`/events/2023-07-26-house-uap-hearing`] |
 | 2023-07-26 | Sworn oral testimony before the Subcommittee on National Security, the Border, and Foreign Affairs, Committee on Oversight and Accountability, chaired by Rep. Glenn Grothman, with UAP Subcommittee questioners Rep. Tim Burchett ([`/people/tim-burchett`]) and Rep. Anna Paulina Luna ([`/people/anna-paulina-luna`]); oral transcript [`/transcripts/2023-07-26-house-grusch`] | testimony | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
@@ -1558,6 +1559,7 @@ Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) re
 - [`/people/jesse-michels`]
 - [`/people/joe-rogan`]
 - [`/people/karl-nell`]
+- [`/people/kathleen-hicks`]
 - [`/people/kirsten-gillibrand`]
 - [`/people/leslie-kean`]
 - [`/people/luis-elizondo`]
@@ -1566,6 +1568,7 @@ Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) re
 - [`/people/peter-skafish`]
 - [`/people/ralph-blumenthal`]
 - [`/people/robert-bigelow`]
+- [`/people/ronald-moultrie`]
 - [`/people/ross-coulthart`]
 - [`/people/sean-kirkpatrick`]
 - [`/people/tim-burchett`]
@@ -1588,6 +1591,7 @@ Public reporting. On Aug 10, 2023, NewsNation ([`/organizations/newsnation`]) re
 - [`/organizations/newsnation`]
 - [`/organizations/nga`]
 - [`/organizations/nro`]
+- [`/organizations/ousd-is`]
 - [`/organizations/sasc`]
 - [`/organizations/sol-foundation`]
 - [`/organizations/the-debrief`]
