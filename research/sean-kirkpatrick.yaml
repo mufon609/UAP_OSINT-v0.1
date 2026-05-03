@@ -1592,6 +1592,16 @@ quotes:
     location: 'Rheanne E. Wirkkala (HON OSD OASD/LA) read-out summary, March 6, 2024 11:51 AM'
   significance: 'FOIA 24-F-0894 documents that Dr. Sean Kirkpatrick co-presented at TWO classified Hill briefings on the AARO Historical Record Report on March 6, 2024 — Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530) — alongside Acting Director Tim Phillips and a third (b)(6)-redacted presenter. Per the Wirkkala read-out, Phillips delivered prepared opening remarks at both sessions; Kirkpatrick attended both and fielded questions alongside Phillips during Q&A. The "outside reviewer" framing later applied around Kirkpatrick (per his Greenstreet interview answers in May 2024 and per his post-departure consultancy posture) is in tension with this primary-source documentation that he was actively presenting AARO findings as part of AARO leadership three months after his official December 1, 2023 departure date.'
   context: 'Wirkkala read-out summary in FOIA 24-F-0894 documenting Kirkpatrick co-presenting two AARO Historical Record Report briefings on Capitol Hill three months after his December 1, 2023 official AARO departure'
+- id: q43
+  added_date: '2026-05-02'
+  observation_type: relayed
+  statement_date: '2023-07-28'
+  text: 'AARO has yet to find any credible evidence to support the allegations of any reverse engineering program for non-human technology.'
+  source:
+    path: news/fortune-kirkpatrick-linkedin-insulting-20230729.html
+    location: 'Fortune coverage of Kirkpatrick LinkedIn post, July 29, 2023'
+  significance: 'Verbatim Kirkpatrick LinkedIn statement (July 28, 2023, in personal capacity) issued two days after David Grusch''s House Oversight testimony. The wording uses "non-human technology" — bounded to technology rather than the origin-agnostic "non-human intelligence" terminology Grusch invoked under oath. Captured in Fortune''s July 29, 2023 coverage and Politico''s same-day reporting. Statement-language pattern primary-source.'
+  context: 'Kirkpatrick LinkedIn post in personal capacity, July 28, 2023; archived via Fortune coverage'
 entities_referenced:
 - id: e1
   added_date: '2026-04-29'

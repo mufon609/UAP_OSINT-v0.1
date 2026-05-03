@@ -203,6 +203,14 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
 | Location | lines 378-379 |
 
+> AARO has yet to find any credible evidence to support the allegations of any reverse engineering program for non-human technology.
+
+| Field | Value |
+|---|---|
+| Attributed to | Kirkpatrick LinkedIn post in personal capacity, July 28, 2023; archived via Fortune coverage, 2023-07-28 |
+| Source | [archived source](../sources/news/fortune-kirkpatrick-linkedin-insulting-20230729.html) |
+| Location | Fortune coverage of Kirkpatrick LinkedIn post, July 29, 2023 |
+
 > served the American people with honesty and integrity, tackling an incredibly difficult mission to explain the unknown
 
 | Field | Value |
