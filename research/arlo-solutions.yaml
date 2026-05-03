@@ -14,7 +14,7 @@ description: 'Arlo Solutions, LLC is a small business of Washington, D.C. founde
   OUSD(I&S) since September 2019, including Personnel Security Policy Support (HQ003419C0172), Business Operations and Support Services (HQ003420C0104), Counterintelligence, Law Enforcement and Security
   Policy Support (HQ003421C0078, HQ003422F0271, HQ003423F0356), Cyberspace Oversight Support Services (HQ003422C0092), Admin Support Services (HQ003421C0090), Event Planning Support Services (HQ003423C0093),
   and Integrated Vetting Policy & Analytical Support (HQ003424F0190 — a $3.7 million contract with the OUSD(I&S) CL&S Integrated Vetting team on April 18, 2024). On February 14, 2025, WHS established
-  the OUSD(I&S) Enterprise BPA HQ003425A0004 under solicitation HQ003424R0178; the good faith estimate amount for all BPAs is $856 million across the four BPA vendors (Arlo, Sancorp, Premier, and Comprehensive Approach), not Arlo''s individual limit. On February 21, 2025, Arlo signed BPA Call Order HQ003425F0104 for SASP support.
+  the OUSD(I&S) Enterprise BPA HQ003425A0004 under solicitation HQ003424R0178; the good faith estimate amount for all BPAs is $856 million across the four BPA vendors, not Arlo''s individual limit. The public GAO B-422985.4 / B-422985.5 decision identified three of the four BPA vendors (Sancorp, Premier, Arlo); the remaining vendor is not identified in the public decision. On February 21, 2025, Arlo signed BPA Call Order HQ003425F0104 for SASP support.
 
 
   The HQ003425A0004 BPA and HQ003425F0104 SASP Call Order were awarded after a reevaluation of solicitation HQ003424R0178. According to the Government Accountability Office decision Matter of Sancorp Consulting
@@ -76,8 +76,8 @@ quotes:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: Decision opening paragraph (DECISION section, ¶1)
-  significance: GAO B-422985.4 / B-422985.5 decision opening paragraph (June 11, 2025) — names Arlo Solutions, LLC as a small business of Washington, D.C. and identifies it as one of two awardees under
-    WHS RFQ HQ003424R0178 for technical, administrative, and professional support services.
+  significance: GAO B-422985.4 / B-422985.5 decision opening paragraph (June 11, 2025) — names Arlo Solutions, LLC as a small business of Washington, D.C. and identifies it as one of two call
+    order awardees under WHS RFQ HQ003424R0178 for technical, administrative, and professional support services (Premier holds Call Order 1 EXDIR; Arlo holds Call Order 2 SASP). The parent BPA was awarded to four vendors total per the GAO public decision.
   statement_date: '2025-06-11'
 - id: q2
   added_date: '2026-05-03'
@@ -221,7 +221,7 @@ quotes:
   source:
     path: news/arlo-contract-vehicles-20260503.html
     location: Contract Vehicles & Schedules — OUSD(I&S) Enterprise BPA description block
-  significance: 'Arlo''s own description of the OUSD(I&S) Enterprise BPA HQ003425A0004 task areas — "specialized and sensitive Technical, Administrative, and Professional Services" across ten enumerated task categories. Arlo''s page heading for this contract is "VA T4NG2" but the description body and the contract number HQ003425A0004 confirm it is the OUSD(I&S) Enterprise BPA, not a VA contract. T4NG2 is a real, separate VA IT vehicle (Transformation Twenty-One Total Technology Next Generation 2 — 30 prime awardees announced October 2023). Arlo is NOT a T4NG2 prime — USAspending shows zero VA contracts under Arlo''s UEI JSRCFJVJM874, and Arlo does not appear in the published T4NG2 awardee list. The heading-vs-body mismatch on Arlo''s page is most likely a CMS template-reuse error — Arlo''s server retains a 2024-10-uploaded VA-T4NG2 logo asset (per Wayback capture), suggesting Arlo had earlier T4NG2 marketing intent (subcontractor positioning or aspirational bid material) before re-purposing the page entry for the OUSD(I&S) BPA win in February 2025.'
+  significance: 'Arlo''s own description of the OUSD(I&S) Enterprise BPA HQ003425A0004 task areas — "specialized and sensitive Technical, Administrative, and Professional Services" across ten enumerated task categories. Arlo''s page heading for this contract is "VA T4NG2" but the description body and the contract number HQ003425A0004 confirm it is the OUSD(I&S) Enterprise BPA, not a VA contract. T4NG2 is a separate VA IT vehicle (Transformation Twenty-One Total Technology Next Generation 2). Arlo is NOT a T4NG2 prime — USAspending shows zero VA contracts under Arlo''s UEI JSRCFJVJM874. The heading-vs-body mismatch on Arlo''s page is most likely a CMS template-reuse error — the same contract-vehicles HTML carries a `VA-T4NG2-Logo-300x300-2.png` image at URL path `/wp-content/uploads/2024/10/`, which under WordPress''s `YYYY/MM/` upload-folder convention places the asset upload in October 2024 — suggesting prior T4NG2 marketing intent (subcontractor positioning or aspirational bid material) before the page entry was re-purposed for the OUSD(I&S) BPA win in February 2025.'
   statement_date: '2025-02-14'
 - id: q13
   added_date: '2026-05-03'
@@ -274,8 +274,7 @@ quotes:
   source:
     path: news/arlo-company-overview-2021-08.pdf
     location: p. 4 — COMPANY OVERVIEW paragraph
-  significance: Earliest primary-source attestation in the corpus of Arlo's 2014 founding date and SBA 8(a) certified small-business framing. The "data-protectors / information-confidantes / cybersecurity-experts"
-    wording in the Arlo press releases derives from this same Company Overview narrative.
+  significance: Earliest primary-source attestation in the corpus of Arlo's 2014 founding date and SBA 8(a) certified small-business framing. The Company Overview's "trusted advisors of agency leaders" phrasing is the seed of the marketing voice that Arlo's later press releases and corporate web pages expand on (the "data protectors / information confidantes / cybersecurity experts" three-archetype framing appears in those later sources, not in this 2021 Overview).
   statement_date: '2021-08-30'
 - id: q17
   added_date: '2026-05-03'
@@ -415,7 +414,7 @@ naming_quirks:
   location: Contract Vehicles & Schedules page — heading above the HQ003425A0004 entry
   source_path: news/arlo-contract-vehicles-20260503.html
   resolution: use-canonical
-  note: 'Arlo''s own Contract Vehicles & Schedules page renders the heading "VA T4NG2" above the HQ003425A0004 contract entry, but the description body and contract number confirm the entry is the OUSD(I&S) Enterprise BPA, not a VA contract. Disposition (investigated 2026-05-03): Arlo is NOT a T4NG2 prime — USAspending shows zero VA contracts under UEI JSRCFJVJM874 (top 50 awards), and Arlo does not appear in the published 30-awardee T4NG2 list. Wayback capture (2025-12-15) shows Arlo''s server retains a /wp-content/uploads/2024/10/VA-T4NG2-Logo-300x300-2.png asset, indicating prior T4NG2 marketing intent (likely subcontractor-team positioning or aspirational bid material that did not result in a prime award). Most parsimonious explanation for the heading-vs-body mismatch: CMS template-reuse error after the OUSD(I&S) BPA HQ003425A0004 win in February 2025, where Arlo overwrote the body text but did not update the heading or replace the logo.'
+  note: 'Arlo''s own Contract Vehicles & Schedules page renders the heading "VA T4NG2" above the HQ003425A0004 contract entry, but the description body and contract number confirm the entry is the OUSD(I&S) Enterprise BPA, not a VA contract. Disposition (investigated 2026-05-03): Arlo is NOT a T4NG2 prime — USAspending shows zero VA contracts under UEI JSRCFJVJM874 (top 50 awards). The same contract-vehicles HTML carries a `/wp-content/uploads/2024/10/VA-T4NG2-Logo-300x300-2.png` asset URL (line 1090); under WordPress''s `YYYY/MM/` upload-folder convention this places the logo upload in October 2024, indicating prior T4NG2 marketing intent (likely subcontractor-team positioning or aspirational bid material that did not result in a prime award). Most parsimonious explanation for the heading-vs-body mismatch: CMS template-reuse error after the OUSD(I&S) BPA HQ003425A0004 win in February 2025, where Arlo overwrote the body text but did not update the heading or replace the logo.'
   added_date: '2026-05-03'
 - id: nq2
   observed: Intelligent & Security
@@ -845,11 +844,11 @@ contracts:
   primary_counterparty_path: /organizations/ousd-is
   period_start: '2025-02-14'
   subject: OUSD(I&S) Enterprise BPA — Technical, Administrative and Professional Support Services
-  value: '$856,000,000 good faith estimate amount for all BPAs (aggregate across four BPA vendors: Arlo, Sancorp, Premier, and Comprehensive Approach), not Arlo''s individual ceiling. USAspending records this $856,000,000 in the parent BPA base_and_all_options field; per the GAO B-422985 decision the figure is the aggregate good faith estimate for all BPAs awarded under HQ003424R0178.'
+  value: '$856,000,000 good faith estimate amount aggregate across all four post-reevaluation BPA vendors, not Arlo''s individual ceiling. The public GAO B-422985 decision identifies three (Sancorp, Premier, Arlo); the fourth is not identified. USAspending stores this aggregate in the parent BPA''s base_and_all_options field — a notable systemic conflation, since that field nominally denotes an individual ceiling.'
   source:
     path: government/usaspending-arlo-bpa-hq003425a0004.json
     location: USAspending API record — date_signed + base_and_all_options + description fields
-  note: Multiple award BPA established under HQ003424R0178 reevaluation; Arlo is one of four BPA vendors with Sancorp Premier and Comprehensive Approach according to GAO B-422985 SSDD. The good faith estimate amount of $856 million is for the BPAs; individual call orders pertain to specific OUSD(I&S) Offices.
+  note: Multiple award BPA established under HQ003424R0178 reevaluation; Arlo is one of four BPA vendors. The public GAO B-422985 decision identified three of the four BPA vendors (Sancorp, Premier, Arlo); the remaining BPA vendor is not identified in the public decision. The good faith estimate amount of $856 million is for all BPAs; individual call orders pertain to specific OUSD(I&S) Offices.
 - id: c11
   added_date: '2026-05-03'
   contract_number: HQ003425F0104
@@ -858,7 +857,7 @@ contracts:
   period_start: '2025-02-21'
   period_end: '2026-03-27'
   subject: SASP Call Order 2 — Administrative, Policy, Operations, and Analytic Support Services to the OUSD(I&S) Sensitive Activities & Special Programs Office
-  value: '$78,512,350.27 base-and-all-options per USAspending; $7,447,926.22 base exercised options per USAspending; "more than $85 million" per Arlo''s March 16, 2026 SASP press statement. The ~$6.5 million gap between Arlo''s announcement and the USAspending record is unreconciled in source.'
+  value: '$78,512,350.27 base-and-all-options per USAspending; $7,447,926.22 base exercised options per USAspending; "more than $85 million" per Arlo''s March 16, 2026 SASP press statement. The press release''s "more than $85 million" is a floor, so the gap between Arlo''s announcement and the USAspending base-and-all-options figure is at least $6.5 million; the exact figure is unreconciled in source.'
   source:
     path: government/usaspending-arlo-hq003425f0104.json
     location: USAspending API record — date_signed + base_and_all_options + base_exercised_options + description fields
