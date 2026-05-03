@@ -183,12 +183,21 @@ If a claim is not in the scratchpad, it is not in the node.
 
 `CLAUDE.md` and `prompts/build.md` now document:
 
-> **One node per build session.** Do not scaffold a second node until
-> the first has been fully populated, passed `validate.py` (including
-> quote verification), and been committed. Parallel node construction
-> is the condition under which evidentiary drift is most likely.
+> **One *new* node per build session.** Do not scaffold a second node
+> until the first has been fully populated, passed `validate.py`
+> (including quote verification), and been committed. Parallel
+> *construction* is the condition under which evidentiary drift is
+> most likely.
 
-Enforced by discipline, not tooling. Batch building caused this
+Scope: the rule limits **new-node scaffolding** only. Editing,
+auditing, fixing, or rebuilding nodes that already exist — including
+multi-node sweeps in a single session — is unrestricted; those tasks
+have their own prompts (`audit.md`, `verify-transcript.md`,
+`archive-sweep.md`). The pilot failure was caused by spinning up
+*fresh* nodes in parallel before any had been verified, not by
+working across already-built ones.
+
+Enforced by discipline, not tooling. Batch construction caused this
 failure; the rule prevents it.
 
 ### Fix 4 — This postmortem

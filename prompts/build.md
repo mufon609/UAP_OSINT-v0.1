@@ -1,9 +1,12 @@
 # Build prompt — layered three-phase process
 
-Paste into a Claude Code session to build **one node** under the layered
-Investigation → Build → Review process. **One node per session** is the
-hard rule established after the 2026-04-17 pilot failure (see
-`meta/toolkit-notes/pilot-failure-2026-04-17.md`).
+Paste into a Claude Code session to build **one new node** under the
+layered Investigation → Build → Review process. **One *new* node per
+session** is the hard rule established after the 2026-04-17 pilot
+failure (see `meta/toolkit-notes/pilot-failure-2026-04-17.md`). The
+rule limits *new node construction* — it does not restrict editing,
+auditing, or rebuilding existing nodes; for those tasks see
+`prompts/audit.md` and the per-task prompts in `prompts/`.
 
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
@@ -17,10 +20,14 @@ types end-to-end. Only `finding` remains hand-authored pending F.7
 
 ## Hard rules
 
-1. **One node per session.** Do not scaffold a second target while one
-   is in-flight. The session ends when the one node has validated,
+1. **One *new* node per session.** Do not scaffold a second target while
+   one is in-flight. The session ends when the one node has validated,
    been regenerated from its research artifact, passed coverage review,
-   and been committed.
+   and been committed. Scope: this rule applies to scaffolding *new*
+   nodes (`scripts/new.py` + `scripts/research-scaffold.py`). Editing,
+   auditing, fixing, or rebuilding existing nodes — including in
+   batches — is unrestricted and follows its own prompts (`audit.md`,
+   `verify-transcript.md`, `archive-sweep.md`).
 
 2. **Source-read-first.** Every claim and every quote must trace to
    text that was extracted from an archived source **in this session**.
@@ -743,7 +750,7 @@ node surfaces no semantic issues. Ready to commit.
 6. `python3 scripts/build-state.py --update` if the commit adds, removes,
    or changes the status of a node (refreshes the CLAUDE.md build-state block)
 7. Commit the research artifact + regenerated node + any manifest
-   changes in one focused commit (one node per session — hard rule)
+   changes in one focused commit (one *new* node per session — hard rule)
 
 ### Pending-renderer type (finding)
 

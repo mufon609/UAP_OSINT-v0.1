@@ -121,10 +121,13 @@ at `meta/topic/research-queue.md` is a suggestion, not a mandate. Confirm
 scope, archetype/kind selection, and primary-source availability before
 starting.
 
-**One node per build session — hard rule.** Do not scaffold a second node
-until the first is fully populated, passes `validate.py` (including
-quote-verification), and is committed. Batch node construction caused the
-2026-04-17 pilot failure; see `meta/toolkit-notes/pilot-failure-2026-04-17.md`.
+**One *new* node per build session — hard rule.** Do not scaffold a
+second node until the first is fully populated, passes `validate.py`
+(including quote-verification), and is committed. Batch node
+*construction* caused the 2026-04-17 pilot failure; see
+`meta/toolkit-notes/pilot-failure-2026-04-17.md`. This rule restricts
+scaffolding new nodes only — edits, audits, fixes, rebuilds, and
+multi-node sweeps across already-built nodes are not restricted.
 
 **Source-read-first — hard rule.** Every `✅ Confirmed — verified verbatim`
 quote must rest on text you extracted from the archived source file in

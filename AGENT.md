@@ -44,7 +44,7 @@ If you're doing anything related to this instance's topic, read
 |---|---|
 | Answer a factual question from the repo | `meta/topic/overview.md` → relevant `research/*.yaml` → follow `target_node` link for narrative context if needed |
 | Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `meta/conventions.md` → `CLAUDE.md` → `prompts/build.md` |
-| Build a new node | `CLAUDE.md` → `prompts/build.md` (one node per session) |
+| Build a new node | `CLAUDE.md` → `prompts/build.md` (one *new* node per session) |
 | Audit an existing node | `CLAUDE.md` → `prompts/audit.md` |
 | Verify a transcript verbatim | `prompts/verify-transcript.md` |
 | Run an archival sweep | `prompts/archive-sweep.md` |
@@ -91,7 +91,7 @@ If you're doing anything related to this instance's topic, read
 - Verbatim quotes must match source character-for-character; `validate.py` checks this mechanically.
 - Contradictions are preserved, not reconciled.
 - Sworn testimony is a distinct evidentiary fact from the truth of the claim testified to.
-- **One node per build session.** Batch construction violates the discipline; see `meta/toolkit-notes/pilot-failure-2026-04-17.md` for the case that established this rule.
+- **One *new* node per build session.** Batch *construction* violates the discipline; see `meta/toolkit-notes/pilot-failure-2026-04-17.md` for the case that established this rule. The rule limits new-node scaffolding only — editing, auditing, fixing, or rebuilding existing nodes is unrestricted.
 - Source-read-first: every node's content traces to a primary source file extracted and read *in the session the content was written*. Not training knowledge.
 
 ---
