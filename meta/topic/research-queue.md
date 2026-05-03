@@ -315,6 +315,24 @@ but not registered in `sources/manifest.yaml`. Not load-bearing for
 AARO (KONA BLUE-specific DHS facts attest via AARO HRR Vol I), so
 deferred to a future manifest hygiene pass.
 
+### Kirkpatrick April 19, 2023 SASC testimony — dangling source
+
+Body description references "Kirkpatrick's April 19, 2023 testimony to
+the Senate Armed Services Subcommittee on Emerging Threats and
+Capabilities described AARO as currently operating under Title 10
+authorities and requested additional authorities including
+counterintelligence" without primary-source attestation in the
+artifact. The source files exist locally
+(`government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf`,
+`government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf`,
+plus a `.txt` sibling) and the transcript node
+[`/transcripts/2023-04-19-sasc-kirkpatrick`] is built — but neither is
+in AARO `primary_sources[]` and the body sentence doesn't wrap the
+transcript node. Same shape as the Phase 1.5 Sept 9 hearing landing
+page gap (file present, claim made, source uncited): fix is a
+~5-minute desk job (add to `primary_sources[]`, optionally wrap the
+body sentence with the transcript node link).
+
 ---
 
 ## Cross-node caveats surfaced during AARO audits
