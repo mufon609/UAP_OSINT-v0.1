@@ -1881,6 +1881,14 @@
   sha256: 7869b6510d480f54b7cf7b75ca5a6657da67361193e9faba060275895df01055
   archive_status: 1
   note: SAMDaily / fbodaily.com archive of WHS contract award notice for HQ003423C0061 (Sancorp IPMO follow-on, signed 2023-05-25). Awardee field correctly names Sancorp Consulting LLC; description text incorrectly names Premier Enterprise Solutions LLC. Clerical error in the description prose; structured awardee field is canonical and matches USAspending HQ003423C0061 record (Sancorp UEI GRYKNJ8BGFC8). Captured 2026-05-03.
+- url: https://www.federalregister.gov/documents/2023/05/15/2023-10219/earth-science-advisory-committee-unidentified-aerial-phenomena-independent-study-team-meeting
+  format: html
+  status: archived
+  path: government/federalregister-uapist-esac-meeting-20230515.html
+  archived_date: '2026-05-03'
+  sha256: 59a148ff8fce2832b22fd02d1ca93112c96d97e99c6f679beb18fa7c2d89eb0d
+  archive_status: 1
+  note: Federal Register notice (May 15, 2023, doc 2023-10219; signed by Patricia Rausch, NASA Advisory Committee Management Officer; Designated Federal Officer Dr. Daniel Evans, Science Mission Directorate) announcing a meeting of the Unidentified Aerial Phenomena Independent Study Team (UAPIST) Subcommittee of the Earth Science Advisory Committee. NASA's own canonical attestation that UAPIST is a Subcommittee of ESAC — primary source for the structural relationship between UAPIST and ESAC. Cited on AARO node to anchor UAPIST's NASA-self-described structural form (subcommittee), distinct from the AARO HRR Vol I phrasing (subordinate group).
 - url: https://www.federalregister.gov/documents/full_text/text/2025/09/10/2025-17508.txt
   format: txt
   status: archived
@@ -2441,7 +2449,7 @@
   archived_date: '2026-04-29'
   sha256: a2929ba62cd8e53c88a4f8166b070a2d088eba4d5921ddbfc037e37220e7accf
   archive_status: 3
-  note: 'Tovima.com syndication of the Wall Street Journal investigation ''The Pentagon Disinformation That Fueled America''s UFO Mythology'' by Joel Schectman and Aruna Viswanatha, originally published June 6 2025 (tovima posted 2025-06-08). The WSJ original is paywalled; this mirror carries the full article text. Documents two AARO Vol II findings Kirkpatrick attributes to his investigation: (1) Cold War deception programs — F-117 stealth-fighter testing at Area 51 covered by fabricated flying-saucer photos given to a bar owner by an Air Force colonel, and Salas Montana 1967 missile-silo electromagnetic-pulse-test cover-up; (2) the ''Yankee Blue'' decades-long Air Force hazing ritual showing newly-assigned commanders fake antigravity-craft photos under threat of arrest, prison, or execution. DoD spokeswoman Sue Gough on-record confirms AARO uncovered fake classified program materials and expects to publish findings in HRR Vol II ''later this year'' (deadline since missed). Source for audit finding 3.4.'
+  note: 'Tovima.com syndication of the Wall Street Journal investigation ''The Pentagon Disinformation That Fueled America''s UFO Mythology'' by Joel Schectman and Aruna Viswanatha, originally published June 6 2025 (tovima posted 2025-06-08). The WSJ original is paywalled; this mirror carries the full article text. Documents two AARO Vol II findings Kirkpatrick attributes to his investigation: (1) Cold War deception programs — F-117 stealth-fighter testing at Area 51 covered by fabricated flying-saucer photos given to a bar owner by an Air Force colonel, and Salas Montana 1967 missile-silo electromagnetic-pulse-test cover-up; (2) the ''Yankee Blue'' decades-long Air Force hazing ritual showing newly-assigned commanders fake antigravity-craft photos under threat of arrest, prison, or execution. DoD spokeswoman Sue Gough on-record confirms AARO uncovered fake classified program materials and expects to publish findings in HRR Vol II ''later this year'' (deadline since missed). WSJ canonical URL registered separately as 402-blocked. Source for audit finding 3.4.'
   wayback_date: '2025-08-31'
 - url: https://www.usaspending.gov/award/CONT_AWD_HQ003418C0123_9700_-NONE-_-NONE-
   format: txt
@@ -2668,6 +2676,11 @@
   archive_status: 3
   wayback_date: '2026-04-29'
   note: 'WestExec Advisors May 9 2024 announcement: Janet Kavandi and Sean Kirkpatrick joining as Senior Advisors — paired hire oriented toward space-industry advisory'
+- url: https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e
+  format: html
+  status: 402-blocked
+  archive_status: 0
+  note: Canonical Wall Street Journal URL for 'The Pentagon Disinformation That Fueled America's UFO Mythology' by Joel Schectman and Aruna Viswanatha (June 6, 2025). Paywalled — Wayback Save Page Now submission attempted 2026-05-03 returned HTTP 520; no Wayback CDX captures available. Full article text is preserved via the tovima.com WSJ-syndication entry directly above (news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html); registered here so the canonical wsj.com URL is in the source-of-record index even though the byte-faithful local archive lives under the tovima syndication path.
 - url: https://www.young.senate.gov/newsroom/press-releases/young-colleagues-introduce-new-legislation-to-declassify-government-records-related-to-ufos-and-unidentified-anomalous-phenomena_modeled-after-jfk-assassination-records-collection-act--as-an-amendment-to-ndaa/
   format: html
   status: archived
