@@ -922,8 +922,9 @@
   path: government/ousdi-defense-gov-hansell-usdis-bio-2025.pdf
   archived_date: '2026-04-30'
   sha256: ad5bdfa79103e10b5d1d2954c708528165ef6227c0c8e73e4f36b1cb26fba35e
-  archive_status: 1
+  archive_status: 3
   note: 'Official 2025 USDIS biography of Bradley D. Hansell, hosted on the OUSD(I&S) institutional subdomain ousdi.defense.gov/Portals/73/. Confirms: ''Mr. Hansell was sworn into the Under Secretary position on July 25, 2025.'' Title: ''Under Secretary of War for Intelligence & Security (USW(I&S))''. Substantive bio covering: principal advisor role to Secretary of War on intelligence/counterintelligence/security; authority/direction/control over nine DoW components in the Intelligence Community; Director of Defense Intelligence dual-hat; pre-government career (private equity Aerospace/Defense/Government Services; Boston Consulting Group; first-Trump-administration NSC Senior Director); retired US Army Special Forces officer (commanded SF teams in South America and Afghanistan); prior US Navy Surface Warfare Officer (Middle East / Asia-Pacific); Villanova BA + UVA Darden MBA (Pat Tillman scholar); Bronze Star, Purple Heart, Meritorious Service Medal awards. Wayback capture 2026-02-11. ousdi.defense.gov is the OUSD(I&S) institutional subdomain (resolves the Task #13 search question — there IS a dedicated subdomain).'
+  wayback_date: '2026-05-03'
 - url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-exposing-the-truth/
   format: html
   status: archived
@@ -1833,9 +1834,10 @@
   path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
   archived_date: '2026-05-01'
   sha256: 83e313222f4afc4c2072942c5067bfc36ad200e6cb80f1574281e613a832a3c6
-  archive_status: 1
+  archive_status: 3
   extraction_type: ocr-scan
   note: 'FOIA 23-F-0906 release — Sancorp Consulting LLC IPMO contract HQ003422C0064 Performance Work Statement, posted to esd.whs.mil/Portals/54/Documents/FOID/Reading Room/Contracts/. Counterpart to FOIA 23-F-1114 AARO PWS (already archived at government/blackvault-sancorp-23-f-1114-aaro-pws.pdf). Both PWSs were issued in spring/summer 2022 by WHS Acquisition Directorate (IPMO PWS dated April 25, 2022; AARO PWS dated July 7, 2022). IPMO PWS contains visible "WNNCWA" reviewer-comment marginalia in pdftotext extract (e.g., "Commented [WNNCWA(3]: See previous comment"); AARO PWS comparable annotation layer requires visual inspection (pdftotext does not extract PDF annotation layer). PDF producer is OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan; verbatim quotes must be visually verified against the source page or a clean-text sibling. esd.whs.mil Akamai-blocks automated retrieval; archived via Wayback Machine snapshot 2024-09-30.'
+  wayback_date: '2026-02-01'
 - url: https://www.everycrsreport.com/reports/IF10523.html
   format: html
   status: archived
