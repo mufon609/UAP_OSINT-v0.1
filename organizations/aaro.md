@@ -15,7 +15,7 @@ created: 2026-04-20
 |---|---|
 | Full Name | All-domain Anomaly Resolution Office |
 | Type | DoD office |
-| Statutory Authority | 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022; substantially amended by Section 6802 of the Intelligence Authorization Act for Fiscal Year 2023, P.L. 117-263) |
+| Statutory Authority | 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022; substantially amended by Section 6802 of the Intelligence Authorization Act for Fiscal Year 2023, Division F of P.L. 117-263) |
 | Established | 2022-07-15 |
 | Parent Organization | [`/organizations/ousd-is`] |
 | Director | [`/people/jonathan-kosloski`] |
@@ -87,7 +87,8 @@ The April 14 deadline passed without delivery of the requested videos (per NBC N
 
 | Name | Role | Period | Source |
 |---|---|---|---|
-| [`/people/tim-phillips`] | Deputy Director (Acting Director) | 2023-10 – 2024-08-26 | government/aaro-phillips-timothy-bio-dec2023.pdf |
+| [`/people/tim-phillips`] | Deputy Director | 2023-10 – 2024-08-26 | government/aaro-phillips-timothy-bio-dec2023.pdf |
+| [`/people/tim-phillips`] | Acting Director | 2023-12 – 2024-08-26 | government/aaro-phillips-timothy-bio-dec2023.pdf |
 
 ---
 

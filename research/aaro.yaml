@@ -184,7 +184,7 @@ primary_sources:
   format: html
 document_intrinsic:
   full_name: All-domain Anomaly Resolution Office
-  statutory_authority: 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022; substantially amended by Section 6802 of the Intelligence Authorization Act for Fiscal Year 2023, P.L. 117-263)
+  statutory_authority: 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022; substantially amended by Section 6802 of the Intelligence Authorization Act for Fiscal Year 2023, Division F of P.L. 117-263)
   established_date: '2022-07-15'
   parent_organization_path: /organizations/ousd-is
   current_director_path: /people/jonathan-kosloski
@@ -1043,13 +1043,23 @@ key_personnel:
 - id: kp2
   added_date: '2026-04-20'
   person_path: /people/tim-phillips
-  role: Deputy Director (Acting Director)
+  role: Deputy Director
   period_start: 2023-10
   period_end: 2024-08-26
   leadership_class: deputy
   source:
     path: government/aaro-phillips-timothy-bio-dec2023.pdf
     location: p.1
+- id: kp2b
+  added_date: '2026-05-03'
+  person_path: /people/tim-phillips
+  role: Acting Director
+  period_start: '2023-12'
+  period_end: '2024-08-26'
+  leadership_class: deputy
+  source:
+    path: government/aaro-phillips-timothy-bio-dec2023.pdf
+    location: p.1 (title block)
 - id: kp3
   added_date: '2026-04-20'
   person_path: /people/jonathan-kosloski

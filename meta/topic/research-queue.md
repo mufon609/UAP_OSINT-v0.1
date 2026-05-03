@@ -315,6 +315,23 @@ node sessions.
   node without primary-source backing. **Re-evaluate when an archived
   primary source surfaces** (Wayback capture of a transcript, official
   WH transcript release, or NBC/NYT verbatim quote with source URL).
+- **Period convention for "ended at unknown date" (Phase 3 o)** —
+  Surfaced 2026-05-03 follow-up. Current corpus period-rendering
+  conventions (per the bare-start convention note above): bare
+  `period_start` → ongoing; `period_start – period_end` → closed
+  period; `– period_end` → unknown start, known end. **No convention
+  for "known start, unknown end (but not ongoing)".** This is the
+  Phillips Deputy Director case — Oct 2023 start documented, no
+  departure date documented, role attested vacant by Feb 25, 2026
+  (Flowers/DefenseScoop). Stop-gap on AARO: kp2 split into Deputy
+  Director (kp2) and Acting Director (kp2b), both with
+  `period_end: 2024-08-26` (the only documented role transition); the
+  prose at line 33 carries the Deputy-end ambiguity. Affects
+  `key_personnel`, `affiliations`, `ownership_timeline` — any role
+  with documented start, attested-vacant later state, undocumented
+  departure. **Worth a convention pass once a clear pattern emerges
+  across 3+ nodes** (per the Name-form audit pattern). Defer until
+  pattern recurs.
 
 ### Renderer convention confirmed during the AARO Phase 1 audit
 
