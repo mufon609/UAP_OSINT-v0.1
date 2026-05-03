@@ -1760,6 +1760,14 @@
   archive_status: 3
   note: Defense One coverage (May 2021) of Moultrie's USD(I&S) confirmation path, focusing on his cyber background. Audit § 5 nomination-period source.
   wayback_date: '2024-12-01'
+- url: https://www.defenseone.com/technology/2024/05/losing-hearts-and-minds-desperate-state-us-influence-operations/396889/
+  format: html
+  status: archived
+  path: news/defense-one-sof-week-oie-panel-20240524.html
+  archived_date: '2026-05-03'
+  sha256: 12bf6309c80b84b506488c8b5cffb6cfa51f3733b6e9ece9af592343aa664ed8
+  archive_status: 1
+  note: 'Defense One article (Patrick Tucker, May 24, 2024) reporting on the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. Panelists named: James Holly (IPMO / OUSD(I&S)); Daniel Kimmidge per article spelling — canonical Daniel Kimmage, Principal Deputy Coordinator of the State Department Global Engagement Center; Jason Schenker (Chairman, Futurist Institute); Alex Plitsas (former DoD chief of sensitive activities; Atlantic Council Scowcroft Middle East Security Initiative). Quotes Holly: ''I think the state of this enterprise is weak, quite frankly.'' SOF Week 2024 OIE Symposium page (sofweek.org/thursday-main-agenda/operations-information-environment-oie-symposium) returns HTTP 404 post-event; SOF Week Attendee Video Library does not currently surface this panel; primary-equivalent video/audio not publicly accessible. Captured 2026-05-03.'
 - url: https://www.democrats.senate.gov/newsroom/press-releases/schumer-rounds-introduce-new-legislation-to-declassify-government-records-related-to-unidentified-anomalous-phenomena-and-ufos_modeled-after-jfk-assassination-records-collection-act--as-an-amendment-to-ndaa
   format: html
   status: archived

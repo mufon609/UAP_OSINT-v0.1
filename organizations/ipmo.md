@@ -242,6 +242,18 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ---
 
+### Holly's self-assessment of the U.S. influence-operations enterprise as "weak, quite frankly" — delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO's interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official's surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see nq3).
+
+> "I think the state of this enterprise is weak, quite frankly," James Holly, who leads the defense secretary's year-old Influence and Perception Management Office, told the audience at the SOF Week conference here.
+
+| Field | Value |
+|---|---|
+| Attributed to | SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel, May 9, 2024, Tampa Convention Center, 2024-05-09 |
+| Source | [archived source](../sources/news/defense-one-sof-week-oie-panel-20240524.html) |
+| Location | Defense One article body, opening section (Patrick Tucker byline, May 24, 2024) |
+
+---
+
 ### Current (FY 2026 OSD OP-5, July 7, 2025) IPMO mission statement — characterizes IPMO as the OUSD(I&S) "center of gravity" for foreign-directed influence efforts. Mission scope expanded from FY 2023 OP-5 wording to include explicit oversight of intelligence support to operations in the information environment, deception activities, deliberate conceal and selective reveal, and management of designated compartmented programs.
 
 > The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately
@@ -285,6 +297,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 | 2023-05-25 | Sancorp Consulting ([`/organizations/sancorp-consulting`]) awarded follow-on contract HQ003423C0061 for "Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" ($3,021,082; period of performance June 10, 2023 — June 9, 2024). | contract | government/usaspending-hq003423c0061.txt | [`/organizations/sancorp-consulting`] |
 | 2023-09-27 | IPMO 101 slides (DOPSR case 23-S-3438) cleared for open publication by the DoD Office of Prepublication and Security Review; authored by COL Deitra Trotter ([`/people/deitra-trotter`]) and HON Ronald S. Moultrie ([`/people/ronald-moultrie`]). | publication | government/nsi-23-s-3438-ipmo-101-slides-202310.pdf |  |
 | 2023-10-03 | James Holly ([`/people/james-holly`]) delivers IPMO 101 talk at NSI Speaker Series (Boston). Per the NSI page: attests four-division IPMO structure (Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities) and that "three Secretaries of Defense, under two administrations, signed off on its establishment." | testimony | news/nsi-speaker-series-ipmo-holly-20250401.html |  |
+| 2024-05-09 | James Holly ([`/people/james-holly`]) co-paneled at the SOF Week 2024 OIE Symposium (Tampa Convention Center) with Daniel Kimmage ([`/people/daniel-kimmage`]) of the State Department Global Engagement Center ([`/organizations/state-dept-gec`]). Per Defense One (May 24, 2024); SOF Week panel video/audio not publicly accessible. | testimony | news/defense-one-sof-week-oie-panel-20240524.html |  |
 | 2024-05-31 | Sancorp Consulting ([`/organizations/sancorp-consulting`]) awarded follow-on contract HQ003424C0046 for "Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services" ($5,751,921; period of performance June 10, 2024 — May 27, 2026). | contract | government/usaspending-hq003424c0046.txt | [`/organizations/sancorp-consulting`] |
 
 ---
@@ -327,6 +340,7 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 
 ### People
 
+- [`/people/daniel-kimmage`]
 - [`/people/deitra-trotter`]
 - [`/people/james-holly`]
 - [`/people/ronald-moultrie`]
@@ -344,4 +358,5 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 - [`/organizations/premier-enterprise-solutions`]
 - [`/organizations/sancorp-consulting`]
 - [`/organizations/scpo`]
+- [`/organizations/state-dept-gec`]
 - [`/organizations/whs`]

@@ -44,6 +44,8 @@ primary_sources:
   format: txt
 - path: news/samdaily-fbo-06693814-hq003423c0061.html
   format: html
+- path: news/defense-one-sof-week-oie-panel-20240524.html
+  format: html
 document_intrinsic:
   internal_name: IPMO
   full_name: Influence and Perception Management Office
@@ -240,6 +242,16 @@ quotes:
   significance: 'FY 2024 OSD OP-5 sub-office cluster bullet for AARO — attests AARO''s presence as a sister sub-office under OUSD(I&S) alongside IPMO in the FY 2024 budget framing. By FY 2026 the AARO bullet is no longer in this sub-office cluster; near-identical operational language ("synchronizes efforts across the Department... detect, identify, and attribute objects of interest...") appears under "Advanced Intelligence Capabilities (AIC)" instead — corroborates entity e11''s AARO→AIC budget-document rebrand observation. Anchors the cluster-membership chronology relevant to the description''s "AARO ... established four months after IPMO under the same parent" framing.'
   context: 'OSD OP-5 FY 2024 budget submission, OUSD(I&S) program section, AARO sub-office bullet'
   statement_date: '2023'
+- id: q17
+  added_date: '2026-05-03'
+  text: |-
+    "I think the state of this enterprise is weak, quite frankly," James Holly, who leads the defense secretary's year-old Influence and Perception Management Office, told the audience at the SOF Week conference here.
+  source:
+    path: news/defense-one-sof-week-oie-panel-20240524.html
+    location: 'Defense One article body, opening section (Patrick Tucker byline, May 24, 2024)'
+  significance: 'Holly''s self-assessment of the U.S. influence-operations enterprise as "weak, quite frankly" — delivered at the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. The panel paired Holly (IPMO/OUSD(I&S)) with Daniel Kimmage ([`/people/daniel-kimmage`]) (Principal Deputy Coordinator, State Department Global Engagement Center ([`/organizations/state-dept-gec`])); Jason Schenker (Futurist Institute); and Alex Plitsas (former DoD Sensitive Activities; Atlantic Council Scowcroft Middle East Security Initiative). Documents IPMO''s interagency reach beyond DoD via co-paneling with State / GEC. Defense One reporting is the only publicly accessible attestation of the panel content; the SOF Week 2024 OIE Symposium page returned HTTP 404 post-event, and the SOF Week Attendee Video Library does not surface this panel. Defense One spells the GEC official''s surname "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources (see nq3).'
+  context: 'SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel, May 9, 2024, Tampa Convention Center'
+  statement_date: '2024-05-09'
 entities_referenced:
 - id: e1
   added_date: '2026-05-02'
@@ -331,6 +343,18 @@ entities_referenced:
   name: Premier Enterprise Solutions, LLC
   wrap_path: /organizations/premier-enterprise-solutions
   context_summary: 'Named in the SAMDaily / fbodaily.com archive of the WHS HQ003423C0061 award notice prose description as if Premier had been awarded an IPMO contract. Confirmed clerical error: USAspending HQ003423C0061 record (Sancorp UEI GRYKNJ8BGFC8) and the SAMDaily structured awardee field both attest Sancorp as the actual awardee. See r2.'
+- id: e16
+  added_date: '2026-05-03'
+  entity_type: person
+  name: Daniel Kimmage
+  wrap_path: /people/daniel-kimmage
+  context_summary: 'Principal Deputy Coordinator of the State Department Global Engagement Center (GEC) as of the May 9, 2024 SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel where Kimmage co-paneled with IPMO Acting Director James Holly. Defense One reporting (May 24, 2024) is the publicly accessible attestation of the panel content. Note Defense One uses the surname spelling "Kimmidge" — canonical "Kimmage" per State Department and Daniel K. Inouye Asia-Pacific Center sources; see nq3.'
+- id: e17
+  added_date: '2026-05-03'
+  entity_type: organization
+  name: State Department Global Engagement Center
+  wrap_path: /organizations/state-dept-gec
+  context_summary: 'State Department office that co-paneled with IPMO at the SOF Week 2024 OIE Symposium (May 9, 2024) — documents IPMO''s interagency reach beyond DoD. GEC''s authorization expired December 23, 2024 and the office closed; per public reporting, GEC was reorganized as the State Department Counter Foreign Information and Manipulation and Interference Office.'
 naming_quirks:
 - id: nq1
   added_date: '2026-05-02'
@@ -348,6 +372,14 @@ naming_quirks:
   source_path: government/notre-dame-ipmo-memo-20220527.pdf
   resolution: use-canonical
   note: 'PKI digital-signature block in Notre Dame memo reveals Holly''s full middle name "Anthony"; commonly attested short form "James A. Holly" appears in printed signature on same page. Person-node should record full name as "James Anthony Holly" per the digital signature; short form "James A. Holly" is commonly used in-source and across the corpus.'
+- id: nq3
+  added_date: '2026-05-03'
+  observed: 'Kimmidge'
+  canonical: 'Kimmage'
+  location: 'Defense One article (May 24, 2024) text — Kimmidge appears five times verbatim'
+  source_path: news/defense-one-sof-week-oie-panel-20240524.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'Defense One spells Daniel Kimmage''s surname "Kimmidge" verbatim throughout the article. Canonical spelling "Kimmage" attested by State Department official sources (state.gov/people/daniel-kimmage), Daniel K. Inouye Asia-Pacific Center for Security Studies, govexec.com, and Washington Institute. Quote q17 preserves Defense One''s "Kimmidge" spelling within its surrounding text where it appears. Cross-reference to /people/daniel-kimmage uses canonical form.'
 rumors:
 - id: r1
   added_date: '2026-05-02'
@@ -425,6 +457,14 @@ timeline:
   source:
     path: news/nsi-speaker-series-ipmo-holly-20250401.html
     location: 'Speaker Session Summary'
+- id: t7b
+  added_date: '2026-05-03'
+  date: '2024-05-09'
+  event: 'James Holly ([`/people/james-holly`]) co-paneled at the SOF Week 2024 OIE Symposium (Tampa Convention Center) with Daniel Kimmage ([`/people/daniel-kimmage`]) of the State Department Global Engagement Center ([`/organizations/state-dept-gec`]). Per Defense One (May 24, 2024); SOF Week panel video/audio not publicly accessible.'
+  category: testimony
+  source:
+    path: news/defense-one-sof-week-oie-panel-20240524.html
+    location: 'Defense One article body, opening section + panel-readout paragraphs'
 - id: t8
   added_date: '2026-05-02'
   date: '2024-05-31'
