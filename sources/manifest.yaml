@@ -218,8 +218,9 @@
   path: news/arlo-company-overview-2021-08.pdf
   archived_date: '2026-05-03'
   sha256: ae15333bf5296cd44bdcc3e838b82730359e647fd3febb6898814e09b0d6311b
-  archive_status: 1
+  archive_status: 3
   note: Arlo Company Overview slide deck (August 2021); founders, founding year, certifications, NAICS, CAGE, DUNS. Captured 2026-05-03.
+  wayback_date: '2024-05-11'
 - url: https://armedservices.house.gov/_cache/files/a/2/a284ee97-4a2d-495d-808a-4d76c6c0b5b8/09D1256E34E6463BD2CD0493DEAC756E.20220317-iso-witness-statement-moultrie.pdf
   format: pdf
   status: archived
@@ -925,6 +926,15 @@
   archive_status: 3
   note: 'Official 2025 USDIS biography of Bradley D. Hansell, hosted on the OUSD(I&S) institutional subdomain ousdi.defense.gov/Portals/73/. Confirms: ''Mr. Hansell was sworn into the Under Secretary position on July 25, 2025.'' Title: ''Under Secretary of War for Intelligence & Security (USW(I&S))''. Substantive bio covering: principal advisor role to Secretary of War on intelligence/counterintelligence/security; authority/direction/control over nine DoW components in the Intelligence Community; Director of Defense Intelligence dual-hat; pre-government career (private equity Aerospace/Defense/Government Services; Boston Consulting Group; first-Trump-administration NSC Senior Director); retired US Army Special Forces officer (commanded SF teams in South America and Afghanistan); prior US Navy Surface Warfare Officer (Middle East / Asia-Pacific); Villanova BA + UVA Darden MBA (Pat Tillman scholar); Bronze Star, Purple Heart, Meritorious Service Medal awards. Wayback capture 2026-02-11. ousdi.defense.gov is the OUSD(I&S) institutional subdomain (resolves the Task #13 search question — there IS a dedicated subdomain).'
   wayback_date: '2026-05-03'
+- url: https://oversight.house.gov/hearing/restoring-public-trust-through-uap-transparency-and-whistleblower-protection/
+  format: html
+  status: archived
+  path: government/oversight-house-gov-hearing-page-20250909.html
+  archived_date: '2026-05-03'
+  sha256: a67b5ffd4b97b38008b0c344069a5c9ae5da5951e79ebf4eb4a57a1e8b85347c
+  archive_status: 3
+  wayback_date: '2026-05-03'
+  note: House Oversight Task Force on the Declassification of Federal Secrets hearing landing page — 'Restoring Public Trust Through UAP Transparency and Whistleblower Protection' (Sept 9, 2025, HVC-210, 119th Congress). Snapshot dateModified 2025-09-08 attests the scheduled hearing (title, date, time, location, sponsoring task force); the hearing actually happening + whistleblower disclosure content is attested via the Luna March 31 2026 letter footnote 1.
 - url: https://oversight.house.gov/hearing/unidentified-anomalous-phenomena-exposing-the-truth/
   format: html
   status: archived
