@@ -226,6 +226,68 @@ table tracks audit history only.
 | `/people/david-fravor` (i0 → i1 audit-correction) | 2026-04-19 |
 | `/organizations/arlo-solutions` (web audit Round 3 — uncited T4NG2 claims, four-vendor inference, $6.5M floor, call-order awardees, trusted-advisors header) | 2026-05-03 |
 | `/organizations/aaro` (web audit — parent org corrected, AIC=AARO inference softened, § 3373 prong precision, IPMO juxtaposition removed, Luna deadline outcome added) | 2026-05-03 |
+| `/organizations/aaro` (web audit Phase 1 — AOIMSG/AARO chain factually corrected per Hicks memo verbatim, PDDNI reporting-line claim softened from inferential overreach to scoped "no public evidence" framing, Kosloski period granularity 2024-08 → 2024-08-26, two `&#39;` HTML entities normalized in quote.text, naming_quirks nq5 + reader-visible `[sic]` flag for "fulfi lled" pdftotext artifact in text-native Hicks memo PDF — same shape as BACKLOG #19 extraction-lossy category) | 2026-05-03 |
+| `/organizations/aaro` (web audit Phase 2 — 8 unwrapped people registered with wrap_paths and entities_referenced entries [Norquist, Gillibrand, Zimmerman, Bodian, King, Meagher, Wirkkala, Haines]; 6 load-bearing primary-source documents wrapped + registered as stubs [Hicks memo, FOIA 24-F-0894, AARO FY24 Annual Report, Mellon Debrief essay, WSJ Schectman/Viswanatha 2025, Luna March 2026 letter]; Volume II overdue framing added — pure arithmetic from two source-attested dates ["~20 months past Section 6802(j) statutory deadline"]; broken-link registry from AARO 34 → 48 stubs) | 2026-05-03 |
+
+### Phase 3 deferrals from the AARO Phase 1/2 audit (2026-05-03)
+
+Five Phase 3 items were identified during the AARO audit and deferred — all
+on principle, not arbitrary. Logged here so they remain visible in adjacent
+node sessions.
+
+- **Mt. Etna 170 m vs 170 km** — Claude Web recommended adjudicating toward
+  170 km on geographic plausibility grounds. Declined per
+  `meta/conventions.md` ("Does not adjudicate between conflicting primary
+  sources — documents both, flags the disagreement, lets the reader
+  judge"). Current handling correct: both verbatim quotes preserved on
+  AARO node; `naming_quirks.nq4` registers the dispute with
+  `resolution: disputed`. No action.
+- **Co-located OUSD(I&S) offices schema asymmetry (Phase 3 k)** —
+  AARO `org_relationships` lists IPMO as `partner` (justified by Sancorp
+  cross-contracting) but the other five OUSD(I&S) co-located offices
+  (DMDPO, OSD Red Team, SCPO, CP-WMD, LE Oversight Compliance Directorate)
+  share only co-location. Schema enum has no `sibling`/`co-located` value;
+  could use `other` + `note` but BACKLOG #17 still drops `note` from
+  rendered tables. **Concrete consequence of BACKLOG #17**, joining UAPTF
+  v7 as a second cross-node case. Defer until BACKLOG #17 ships.
+- **UAPTF as direct vs. indirect predecessor (Phase 3 l)** — The
+  `org_relationships.relationship_type` enum has only `predecessor`. AARO
+  lists both AOIMSG (immediate predecessor by Hicks memo amendment) and
+  UAPTF (indirect — UAPTF was disestablished by direction in the same
+  memo) under one enum value. Distinguishing direct from indirect would
+  use the `note` field. **Second concrete consequence of BACKLOG #17 on
+  the AARO node alone.** Defer until BACKLOG #17 ships.
+- **Name-form inconsistency systematic audit (Phase 3 m)** — "Dr. Jon T.
+  Kosloski" vs "Dr. Jon Kosloski"; "Sancorp Consulting, LLC" vs "Sancorp
+  Consulting"; analogous patterns likely recur across other multi-source
+  nodes. Per `feedback_prose_drift_warnings_must_resolve.md`, source
+  vocabulary takes precedence and each form may be source-attested in its
+  own context. Resolution requires per-instance source-form audit (which
+  source attests which form), not opportunistic harmonization. **Worth a
+  systematic pass once a clear pattern emerges across 3+ nodes.** Defer.
+- **Currency: Trump April 29, 2026 follow-up UAP-disclosure remarks
+  (Phase 3 n)** — Claude Web noted Trump made follow-up statements at
+  Phoenix Turning Point USA (~April 18, 2026) and to reporters on April
+  29, 2026 ("releasing as much as we can in the near future"). No
+  archived primary source for these remarks in `sources/`. Per
+  CLAUDE.md "Source-read-first — hard rule," remarks cannot enter the
+  node without primary-source backing. **Re-evaluate when an archived
+  primary source surfaces** (Wayback capture of a transcript, official
+  WH transcript release, or NBC/NYT verbatim quote with source URL).
+
+### Renderer convention confirmed during the AARO Phase 1 audit
+
+- **Bare-start period rendering is the corpus convention for ongoing
+  roles.** Surveyed across `/organizations/aaro` (Kosloski), `/organizations/arlo-solutions`
+  (Lonye Ford), `/organizations/ousd-is` (Hansell, Kozik), `/organizations/ttsa`
+  (Mizer, Spry), `/people/david-grusch` (Sol Foundation),
+  `/people/ronald-moultrie` (LeoLabs), `/people/sean-kirkpatrick`
+  (Elara Nova, Nonlinear Solutions). All current/ongoing role rows
+  render as bare `period_start`. The `– end` form is reserved for
+  bracketed-end-with-unknown-start (per `_format_period` line 514-518
+  comment in `scripts/build-from-research.py`). No `start – present`
+  convention exists or is needed; `period_end` absence is the signal
+  for ongoing.
 
 ---
 
