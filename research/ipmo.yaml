@@ -1,0 +1,448 @@
+id: research/ipmo
+type: research-artifact
+schema_version: 1
+target_node: organizations/ipmo
+status: active
+created: '2026-05-02'
+description: 'The Influence and Perception Management Office (IPMO) is a [`/organizations/dod`] office within the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]). Per a memorandum signed by Acting Director James A. Holly ([`/people/james-holly`]) on May 27, 2022, IPMO was established on March 1, 2022 per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security. The Performance Work Statement for Sancorp Consulting''s ([`/organizations/sancorp-consulting`]) IPMO Support Services contract HQ003422C0064 states at §1.2 that the USD(I&S) is supported by the Director for Defense Intelligence (Collection and Special Programs) (DDI(C&SP)), who is in turn supported by the Director of the IPMO for all influence and perception management related matters.
+
+
+  IPMO is tasked with the development of broad thematic influence guidance focused on key adversaries, the promulgation of competitive influence strategies focused on specific defense issues, and the conduct of oversight, governance, and integration related to influence and perception management matters across DoD components. Per the FY 2026 OSD OP-5 budget submission, IPMO is the OUSD(I&S) center of gravity for efforts to deliberately influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests; its activities include the development of thematic influence guidance and integrated influence strategies; oversight of intelligence support to operations in the information environment; oversight and governance of deception activities; oversight and governance of deliberate conceal and selective reveal of strategic defense capabilities; and management of designated compartmented programs.
+
+
+  IPMO is comprised of four divisions per the 23-S-3438 IPMO 101 slides (cleared for Open Publication September 27, 2023 by the DoD Office of Prepublication and Security Review) and per the NSI Speaker Series page for Holly''s October 3, 2023 IPMO 101 Speaker Session: 1) Integrated Influence Division, 2) Perception Management Division, 3) Deception Activities Division, and 4) Intel Support to Influence Activities Division. The Integrated Influence Division develops tailored influence guidance focused on specific adversaries and threats; the Perception Management Division develops and executes policy, oversight, and governance related to DoD perception management (reveal/conceal of defense capabilities) programs and activities; the Deception Activities Division develops and executes policy, oversight, and governance related to global DoD deception programs and activities; and the Intel Support to Influence Activities Division develops and executes policy, oversight, and governance related to DoD intelligence support to influence and information programs and activities.
+
+
+  The Holly Notre Dame memorandum of May 27, 2022 is the available primary source for IPMO''s establishment. Per the NSI Speaker Series page for Holly''s October 3, 2023 IPMO 101 Speaker Session, three Secretaries of Defense, under two administrations, signed off on its establishment. No statutory authority appears in the public record — no NDAA section, no codified provision in 10 or 50 U.S.C., and no DoD Directive or DoD Instruction publicly available. The FY 2023 OSD OP-5 budget submission documents "Develop DoD Issuance Charter for Influence and Perception Management Office" as a development measure with FY 2022 target 1 and FY 2023 target N/A.
+
+
+  Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) alongside the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), Advanced Intelligence Capabilities ([`/organizations/aic`]), the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]), and AARO ([`/organizations/aaro`]) — established four months after IPMO under the same parent. Sancorp Consulting ([`/organizations/sancorp-consulting`]) provides IPMO Support Services under three prime contracts (HQ003422C0064, HQ003423C0061, HQ003424C0046) awarded by Washington Headquarters Services ([`/organizations/whs`]) Acquisition Directorate as 8(A) Sole Source contracts.
+
+  '
+primary_sources:
+- path: government/notre-dame-ipmo-memo-20220527.pdf
+  format: pdf
+- path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
+  format: pdf
+- path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
+  format: pdf
+- path: news/nsi-speaker-series-ipmo-holly-20250401.html
+  format: html
+- path: government/osd-op5-fy23-wayback-20241116.pdf
+  format: pdf
+- path: government/osd-op5-fy24-20260501.pdf
+  format: pdf
+- path: government/osd-op5-fy25-20260501.pdf
+  format: pdf
+- path: government/osd-op5-fy26-wayback-20260201.pdf
+  format: pdf
+- path: government/usaspending-hq003422c0064.txt
+  format: txt
+- path: government/usaspending-hq003423c0061.txt
+  format: txt
+- path: government/usaspending-hq003424c0046.txt
+  format: txt
+document_intrinsic:
+  internal_name: IPMO
+  full_name: Influence and Perception Management Office
+  established_date: '2022-03-01'
+  parent_organization_path: /organizations/ousd-is
+  office_type: office
+  jurisdiction: 'Department of Defense — Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))'
+context_extrinsic: {}
+quotes:
+- id: q1
+  added_date: '2026-05-02'
+  text: |-
+    On 01 March 2022, per direction from the Secretary of Defense (SecDef) and Under
+    Secretary of Defense for Intelligence and Security (USD(I&S)), the Influence and Perception
+    Management Office (IPMO) was established. Among other things, the IPMO is tasked with
+    the development of broad thematic messaging guidance and specific strategies for the
+    execution of DoD activities designed to influence foreign defense-related decision-makers to
+    behave in a manner beneficial to U.S. interests.
+  source:
+    path: government/notre-dame-ipmo-memo-20220527.pdf
+    location: 'p. 1, ¶1 (Notre Dame memo establishment paragraph)'
+  significance: 'Holly Notre Dame memo establishment paragraph — primary public attestation of IPMO''s March 1, 2022 establishment by SecDef and USD(I&S) direction, signed by Acting Director James A. Holly on May 27, 2022. Closest available primary source for IPMO establishment; no underlying SecDef or USD(I&S) establishment memo has surfaced.'
+  context: 'Notre Dame National Security Innovation Course memorandum, signed by Acting Director James A. Holly, May 27, 2022'
+  statement_date: '2022-05-27'
+- id: q2
+  added_date: '2026-05-02'
+  text: 'During the years of IPMO''s creation, three Secretaries of Defense, under two administrations, signed off on its establishment, underscoring the need for this kind of office.'
+  source:
+    path: news/nsi-speaker-series-ipmo-holly-20250401.html
+    location: 'Speaker Session Summary, ¶1 (October 3, 2023 IPMO 101 talk by James Holly)'
+  significance: 'Primary attestation that three Secretaries of Defense, under two administrations, signed off on IPMO''s establishment, per Holly''s October 3, 2023 NSI Speaker Series IPMO 101 talk. Compensates for the absent establishment instrument by attesting senior-level approval, but does not name the three SecDefs or provide the underlying memoranda.'
+  context: 'NSI Speaker Series page documenting James Holly''s IPMO 101 talk on October 3, 2023; recovered April 1, 2025 via Wayback Machine'
+  statement_date: '2023-10-03'
+- id: q3
+  added_date: '2026-05-02'
+  text: 'The IPMO is comprised of four divisions focused on: 1) Integrated Influence, 2) Perception Management, 3) Deception Activities, and 4) Intel Support to Influence Activities.'
+  source:
+    path: news/nsi-speaker-series-ipmo-holly-20250401.html
+    location: 'Speaker Session Summary, ¶2'
+  significance: 'NSI Speaker Series attestation of IPMO''s four-division structure per Holly''s October 3, 2023 talk; corroborated by the DOPSR-cleared 23-S-3438 IPMO 101 slides.'
+  context: 'NSI Speaker Series page summary of Holly''s October 3, 2023 IPMO 101 talk'
+  statement_date: '2023-10-03'
+- id: q4
+  added_date: '2026-05-02'
+  text: |
+    • Integrated Influence: Develop and promulgate tailored thematic influence guidance focused on key adversaries and specific U.S. defense issues
+    • Perception Management: Develop and execute policy, oversight, and governance related to DoD perception management (reveal/conceal of defense capabilities) programs and activities
+    • Deception Activities: Develop and execute policy, oversight, and governance related to global DoD deception programs and activities
+    • Intel Support to Influence Activities: Develop and execute policy, oversight, and governance related to DoD intelligence support to influence and information programs and activities
+  source:
+    path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
+    location: 'Slide 3 — IPMO Core Efforts bullets'
+  significance: 'NSI 23-S-3438 IPMO 101 slide 3 — IPMO Core Efforts: direct primary-source attestation of the four-division mission scope. DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie. Same Key Passage also registered on /organizations/ousd-is for parent-organization context.'
+  context: 'OUSD(I&S) IPMO 101 presentation slides, DOPSR case 23-S-3438 cleared for open publication September 27, 2023'
+  statement_date: '2023-10'
+- id: q5
+  added_date: '2026-05-02'
+  text: 'Mr. James Holly is the first Acting Director of the Influence and Perception Management Office within the Office of the Secretary of Defense at the Pentagon. He leads a staff to oversee the development of strategy, policy, plans, and governance of influence, deception, perception management (reveal/conceal defense capabilities), and intel support to influence activities.'
+  source:
+    path: news/nsi-speaker-series-ipmo-holly-20250401.html
+    location: 'Biography paragraph'
+  significance: 'NSI Speaker Series identification of James Holly as "the first Acting Director" of IPMO; primary-source attestation of Holly''s role and the four mission areas (influence, deception, perception management, intel support to influence activities).'
+  context: 'NSI Speaker Series page biography for Holly''s October 3, 2023 IPMO 101 talk'
+  statement_date: '2023-10-03'
+- id: q6
+  added_date: '2026-05-02'
+  text: 'Among other organizations, the USD(I&S) is supported by the Director for Defense Intelligence (Collection and Special Programs) (DDI (C&SP)), who is supported by the Director of the IPMO for all influence and perception management related matters.'
+  source:
+    path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
+    location: 'PWS §1.2 Background, final sentence'
+  significance: 'IPMO PWS §1.2 chain-of-command attestation: USD(I&S) supported by DDI(C&SP), in turn supported by Director, IPMO. Primary-source documentation of IPMO''s reporting line within OUSD(I&S) — IPMO sits under DDI(C&SP) rather than reporting directly to USD(I&S).'
+  context: 'IPMO Performance Work Statement (FOIA case 23-F-0906), April 25, 2022, issued by Washington Headquarters Services Acquisition Directorate'
+  statement_date: '2022-04-25'
+- id: q7
+  added_date: '2026-05-02'
+  text: 'The IPMO will develop broad thematic influence guidance focused on key adversaries; promulgate competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related activities; and fill existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.'
+  source:
+    path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
+    location: 'PWS §1.3 Objectives'
+  significance: 'IPMO mission statement per the IPMO PWS §1.3 Objectives — three core mission elements: (1) thematic influence guidance, (2) competitive influence strategies, (3) gap-filling in policy/oversight/governance/integration. Same mission text recurs verbatim in the FY 2023 OSD OP-5 detailed program description.'
+  context: 'IPMO Performance Work Statement (FOIA case 23-F-0906), April 25, 2022, §1.3 Objectives subsection'
+  statement_date: '2022-04-25'
+- id: q8
+  added_date: '2026-05-02'
+  text: |
+    The Influence and Perception Management Office (IPMO), which is the OUSD(I&S) center of gravity for efforts to deliberately
+    influence foreign defense and intelligence entities to behave in ways that benefit U.S. defense-related strategic interests. The IPMO
+    integrates, matures, and operationalizes oversight, governance, and execution of cross-cutting influence activities. The IPMO's
+    activities include the development of thematic influence guidance and integrated influence strategies, oversight of intelligence support
+    to operations in the information environment, oversight and governance of deception activities, oversight and governance of deliberate
+    conceal and selective reveal of strategic defense capabilities, and management of designated compartmented programs.
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OUSD(I&S) program section, sub-office cluster, IPMO bullet'
+  significance: 'Current (FY 2026 OSD OP-5, July 7, 2025) IPMO mission statement — characterizes IPMO as the OUSD(I&S) "center of gravity" for foreign-directed influence efforts. Mission scope expanded from FY 2023 OP-5 wording to include explicit oversight of intelligence support to operations in the information environment, deception activities, deliberate conceal and selective reveal, and management of designated compartmented programs.'
+  context: 'OSD OP-5 FY 2026 Operation and Maintenance Budget Estimates, OUSD(I&S) program section'
+  statement_date: '2025'
+- id: q9
+  added_date: '2026-05-02'
+  text: |-
+    The Influence and Perception Management Office serves as the senior advisor to the USD(I&S) for strategic and operational influence and
+    perception management (reveal and conceal) matters. It develops broad thematic influence guidance focused on key adversaries; promulgates
+    competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related
+    activities; and fills existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OUSD(I&S) Major Program Title: Influence and Perception Management, detailed program description'
+  significance: 'FY 2026 OSD OP-5 detailed IPMO mission description — present-tense ("serves", "develops") update of the future-tense FY 2023 OP-5 framing ("will serve", "will develop"). Confirms IPMO operating posture has stabilized.'
+  context: 'OSD OP-5 FY 2026 budget submission, IPMO Major Program Title detailed description'
+  statement_date: '2025'
+- id: q10
+  added_date: '2026-05-02'
+  text: |-
+    The Influence and Perception Management Office will serve as the senior advisor to the USD(I&S) for strategic and operational influence and
+    perception management (reveal and conceal) matters. It will develop broad thematic influence guidance focused on key adversaries; promulgate
+    competitive influence strategies focused on specific defense issues, which direct subordinate planning efforts for the conduct of influence-related
+    activities; and fill existing gaps in policy, oversight, governance, and integration related to influence and perception management matters.
+  source:
+    path: government/osd-op5-fy23-wayback-20241116.pdf
+    location: 'OUSD(I&S) Influence and Perception Management Strategy, Policy, and Oversight detailed program description'
+  significance: 'Earliest OSD OP-5 IPMO mission statement (FY 2023 budget submission, future-tense framing) — establishes the original mission framing as IPMO came online in 2022. Same mission language as IPMO PWS §1.3 Objectives (q7).'
+  context: 'OSD OP-5 FY 2023 budget submission, OUSD(I&S) program section, IPMO detailed description'
+  statement_date: '2022'
+- id: q11
+  added_date: '2026-05-02'
+  text: 'Develop DoD Issuance Charter for Influence and Perception Management Office.'
+  source:
+    path: government/osd-op5-fy23-wayback-20241116.pdf
+    location: 'OUSD(I&S) Influence and Perception Management Strategy, Policy, and Oversight Measure Description table, charter row'
+  significance: 'FY 2023 OSD OP-5 documents that a "DoD Issuance Charter for IPMO" was a measurable development metric (FY 2022 = 1, FY 2023 = N/A). Establishes that IPMO Charter authoring was scheduled for FY 2022, even though no corresponding DoDD or DoDI is publicly retrievable as of May 2026.'
+  context: 'OSD OP-5 FY 2023 budget submission, OUSD(I&S) IPMO Strategy, Policy, and Oversight measures table'
+  statement_date: '2022'
+entities_referenced:
+- id: e1
+  added_date: '2026-05-02'
+  entity_type: person
+  name: James A. Holly
+  wrap_path: /people/james-holly
+  context_summary: 'First Acting Director of IPMO from establishment (March 1, 2022); signed Notre Dame memo May 27, 2022 as Acting Director; delivered NSI Speaker Series IPMO 101 talk October 3, 2023.'
+- id: e2
+  added_date: '2026-05-02'
+  entity_type: person
+  name: Ronald S. Moultrie
+  wrap_path: /people/ronald-moultrie
+  context_summary: 'Under Secretary of Defense for Intelligence and Security (June 1, 2021 – February 29, 2024) — IPMO''s parent-organization head during establishment and early operations. Co-author (with COL Deitra Trotter) of NSI 23-S-3438 IPMO 101 slides per PDF metadata.'
+- id: e3
+  added_date: '2026-05-02'
+  entity_type: person
+  name: Deitra Trotter
+  wrap_path: /people/deitra-trotter
+  context_summary: 'COL; co-author (with HON Ronald S. Moultrie) of NSI 23-S-3438 IPMO 101 slides per PDF metadata. Specific institutional role within IPMO or OUSD(I&S) not attested at primary-source level beyond the slide authorship.'
+- id: e4
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Office of the Under Secretary of Defense for Intelligence and Security
+  wrap_path: /organizations/ousd-is
+  context_summary: 'IPMO''s parent organization. Per IPMO PWS §1.2, USD(I&S) is supported by DDI(C&SP), who is supported by the Director of IPMO for influence and perception management matters.'
+- id: e5
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Department of Defense
+  wrap_path: /organizations/dod
+  context_summary: 'IPMO is a DoD office. Establishment per direction from the Secretary of Defense.'
+- id: e6
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: All-domain Anomaly Resolution Office
+  wrap_path: /organizations/aaro
+  context_summary: 'Sister office under OUSD(I&S), established four months after IPMO (July 15, 2022 vs March 1, 2022). Both share the same parent and the same prime contractor (Sancorp Consulting).'
+- id: e7
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Defense Military Deception Program Office
+  wrap_path: /organizations/dmdpo
+  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5; provides governance, oversight, and operational implementation of military deception planning and execution capabilities.'
+- id: e8
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: OSD Red Team
+  wrap_path: /organizations/osd-red-team
+  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5.'
+- id: e9
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Strategy Coordination Program Office
+  wrap_path: /organizations/scpo
+  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5.'
+- id: e10
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Counterproliferation of Weapons of Mass Destruction Office
+  wrap_path: /organizations/cp-wmd
+  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5.'
+- id: e11
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Advanced Intelligence Capabilities
+  wrap_path: /organizations/aic
+  context_summary: 'OUSD(I&S) sub-office first appearing in FY 2025 OSD OP-5 with mission language and statutory reporting line identical to AARO''s NDAA FY23 § 1683 carveout — apparent budget-document rebrand of AARO; documented as a separate node pending resolution.'
+- id: e12
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Law Enforcement Oversight and Compliance Directorate
+  wrap_path: /organizations/le-oversight-compliance-directorate
+  context_summary: 'Sister sub-office under OUSD(I&S) per FY 2026 OSD OP-5; established per the Deputy Secretary of Defense memo dated April 21, 2023 designating OUSD(I&S) as Principal Staff Assistant for Law Enforcement.'
+- id: e13
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Sancorp Consulting, LLC
+  wrap_path: /organizations/sancorp-consulting
+  context_summary: 'Prime contractor providing IPMO Support Services under three sequential 8(a) sole-source contracts (HQ003422C0064 from June 2022; HQ003423C0061 from May 2023; HQ003424C0046 from May 2024) awarded by Washington Headquarters Services Acquisition Directorate. Same vendor simultaneously holds AARO Support Services contracts.'
+- id: e14
+  added_date: '2026-05-02'
+  entity_type: organization
+  name: Washington Headquarters Services
+  wrap_path: /organizations/whs
+  context_summary: 'Acquisition Directorate at WHS issues IPMO''s prime contracts as 8(a) sole-source procurements.'
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-02'
+  observed: 'Obiectives'
+  canonical: 'Objectives'
+  location: 'IPMO PWS §1.3 section header'
+  source_path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR artifact in PWS section header (extraction_type: ocr-scan per manifest); body text of §1.3 reads cleanly. Quote q7 cites the body text only and is unaffected by this header artifact.'
+- id: nq2
+  added_date: '2026-05-02'
+  observed: 'HOLLY.JAMES.ANTHONY.1231235051598'
+  canonical: 'James Anthony Holly'
+  location: 'Notre Dame memo digital signature block'
+  source_path: government/notre-dame-ipmo-memo-20220527.pdf
+  resolution: use-canonical
+  note: 'PKI digital-signature block in Notre Dame memo reveals Holly''s full middle name "Anthony"; commonly attested short form "James A. Holly" appears in printed signature on same page. Person-node should record full name as "James Anthony Holly" per the digital signature; short form "James A. Holly" is commonly used in-source and across the corpus.'
+rumors:
+- id: r1
+  added_date: '2026-05-02'
+  claim: 'IPMO is an institutional successor or continuation of the Office of Strategic Influence (OSI), the short-lived 2001-2002 DoD office shut down by SecDef Rumsfeld after public scrutiny.'
+  status: not-primary-source-established
+  observed_sources:
+    - 'Klippenstein (The Intercept, May 17, 2023) — "Inside The Pentagon''s New Perception Management Office"'
+    - 'Webb (MintPress News, June 29, 2023)'
+    - 'Klarenberg (multiple outlets, 2023)'
+    - 'Wikipedia "Influence and Perception Management Office" article'
+  note: 'No primary source — including Holly''s Notre Dame memo, the IPMO PWS, the NSI 23-S-3438 IPMO 101 slides, the NSI Speaker Series page, and OSD OP-5 FY 2023 / FY 2024 / FY 2025 / FY 2026 — names a predecessor office. Holly''s NSI Speaker Series talk references a "two-decade institutional debate among military and civilian leaders" about consolidating influence-related governance, but does not name OSI or any other named predecessor at primary-source level. Per /meta/topic/working-notes/handoff-org-business-justifications.md (Claude Web, 2026-05-01): "claims that IPMO is a successor to OSI (Office of Strategic Influence, 2001-2002) or to subsequent Strategic Communication coordinator roles are journalistic/historiographic, not documented institutional succession." Recorded here per fabrication-prevention discipline so a future contributor does not unconsciously recirculate the lineage claim into node prose.'
+timeline:
+- id: t1
+  added_date: '2026-05-02'
+  date: '2022-03-01'
+  event: 'Influence and Perception Management Office (IPMO) established per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security, per the Notre Dame memo signed by Acting Director James A. Holly.'
+  category: founding
+  source:
+    path: government/notre-dame-ipmo-memo-20220527.pdf
+    location: 'p. 1, ¶1'
+- id: t2
+  added_date: '2026-05-02'
+  date: '2022-04-25'
+  event: 'IPMO Performance Work Statement issued by Washington Headquarters Services Acquisition Directorate as 8(a) sole-source procurement; released via FOIA case 23-F-0906 to the WHS FOIA Reading Room.'
+  category: contract
+  source:
+    path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
+    location: 'PWS title block, p. 1'
+- id: t3
+  added_date: '2026-05-02'
+  date: '2022-05-27'
+  event: 'Notre Dame National Security Innovation Course memorandum signed by Acting Director James A. Holly; subject "Challenge for 2022 University of Notre Dame National Security Innovation Course"; documents IPMO''s March 1, 2022 establishment and mission tasking.'
+  category: publication
+  source:
+    path: government/notre-dame-ipmo-memo-20220527.pdf
+    location: 'Memo signature block, p. 1'
+- id: t4
+  added_date: '2026-05-02'
+  date: '2022-06-09'
+  event: 'Sancorp Consulting awarded IPMO Support Services contract HQ003422C0064 ($3,026,577.70 obligated; period of performance June 10, 2022 — June 9, 2023).'
+  category: contract
+  source:
+    path: government/usaspending-hq003422c0064.txt
+    location: '"date_signed" and "period_of_performance" fields'
+  node_link: /organizations/sancorp-consulting
+- id: t5
+  added_date: '2026-05-02'
+  date: '2023-05-25'
+  event: 'Sancorp Consulting awarded follow-on contract HQ003423C0061 for "Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" ($3,021,082; period of performance June 10, 2023 — June 9, 2024).'
+  category: contract
+  source:
+    path: government/usaspending-hq003423c0061.txt
+    location: '"date_signed" and "period_of_performance" fields'
+  node_link: /organizations/sancorp-consulting
+- id: t6
+  added_date: '2026-05-02'
+  date: '2023-09-27'
+  event: 'IPMO 101 slides (DOPSR case 23-S-3438) cleared for open publication by the DoD Office of Prepublication and Security Review; authored by COL Deitra Trotter ([`/people/deitra-trotter`]) and HON Ronald S. Moultrie ([`/people/ronald-moultrie`]).'
+  category: publication
+  source:
+    path: government/nsi-23-s-3438-ipmo-101-slides-202310.pdf
+    location: 'CLEARED stamp, slide 1'
+- id: t7
+  added_date: '2026-05-02'
+  date: '2023-10-03'
+  event: 'James Holly delivers IPMO 101 talk at NSI Speaker Series (Boston). Per the NSI page: attests four-division IPMO structure (Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities) and that "three Secretaries of Defense, under two administrations, signed off on its establishment."'
+  category: testimony
+  source:
+    path: news/nsi-speaker-series-ipmo-holly-20250401.html
+    location: 'Speaker Session Summary'
+- id: t8
+  added_date: '2026-05-02'
+  date: '2024-05-31'
+  event: 'Sancorp Consulting awarded follow-on contract HQ003424C0046 for "Specialized and Sensitive Administrative, Policy Operations and Analytic Support Services" ($5,751,921; period of performance June 10, 2024 — May 27, 2026).'
+  category: contract
+  source:
+    path: government/usaspending-hq003424c0046.txt
+    location: '"date_signed" and "period_of_performance" fields'
+  node_link: /organizations/sancorp-consulting
+key_personnel:
+- id: kp1
+  added_date: '2026-05-02'
+  person_path: /people/james-holly
+  role: 'Acting Director (first)'
+  period_start: '2022-03'
+  leadership_class: director
+  source:
+    path: government/notre-dame-ipmo-memo-20220527.pdf
+    location: 'Memo signature block; signed by James A. Holly, Acting Director, May 27, 2022'
+  note: 'First Acting Director of IPMO from establishment per the Notre Dame memorandum signed by James A. Holly on May 27, 2022.'
+org_relationships:
+- id: or1
+  added_date: '2026-05-02'
+  organization_path: /organizations/ousd-is
+  relationship_type: parent
+  source:
+    path: government/notre-dame-ipmo-memo-20220527.pdf
+    location: 'p. 1, ¶1 (establishment per direction from SecDef and USD(I&S))'
+- id: or2
+  added_date: '2026-05-02'
+  organization_path: /organizations/dod
+  relationship_type: parent
+  source:
+    path: government/notre-dame-ipmo-memo-20220527.pdf
+    location: 'Memo letterhead, "Department of Defense"'
+- id: or3
+  added_date: '2026-05-02'
+  organization_path: /organizations/aaro
+  relationship_type: partner
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OUSD(I&S) program section, sub-office cluster'
+  note: 'Sister sub-office under OUSD(I&S); AARO established four months after IPMO (July 15, 2022 vs March 1, 2022). Both share Sancorp Consulting as prime contractor.'
+- id: or4
+  added_date: '2026-05-02'
+  organization_path: /organizations/dmdpo
+  relationship_type: partner
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OUSD(I&S) program section, sub-office cluster'
+- id: or5
+  added_date: '2026-05-02'
+  organization_path: /organizations/osd-red-team
+  relationship_type: partner
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OUSD(I&S) program section, sub-office cluster'
+- id: or6
+  added_date: '2026-05-02'
+  organization_path: /organizations/scpo
+  relationship_type: partner
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OUSD(I&S) program section, sub-office cluster'
+- id: or7
+  added_date: '2026-05-02'
+  organization_path: /organizations/cp-wmd
+  relationship_type: partner
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OUSD(I&S) program section, sub-office cluster'
+- id: or8
+  added_date: '2026-05-02'
+  organization_path: /organizations/aic
+  relationship_type: partner
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OUSD(I&S) program section, sub-office cluster'
+- id: or9
+  added_date: '2026-05-02'
+  organization_path: /organizations/le-oversight-compliance-directorate
+  relationship_type: partner
+  source:
+    path: government/osd-op5-fy26-wayback-20260201.pdf
+    location: 'OUSD(I&S) program section, sub-office cluster'
+- id: or10
+  added_date: '2026-05-02'
+  organization_path: /organizations/sancorp-consulting
+  relationship_type: contractor
+  source:
+    path: government/usaspending-hq003422c0064.txt
+    location: '"recipient_name" field — SANCORP CONSULTING, LLC'
+  note: 'Prime contractor across three sequential IPMO Support Services contracts (HQ003422C0064 / HQ003423C0061 / HQ003424C0046) via WHS Acquisition Directorate as 8(a) sole-source procurements. See Sancorp node for full contract detail.'
+- id: or11
+  added_date: '2026-05-02'
+  organization_path: /organizations/whs
+  relationship_type: contracting-agency
+  source:
+    path: government/usaspending-hq003422c0064.txt
+    location: '"awarding_agency" field — Washington Headquarters Services'
