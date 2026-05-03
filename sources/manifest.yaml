@@ -1865,6 +1865,14 @@
   archive_status: 3
   note: ExecutiveBiz follow-up coverage of the LeoLabs Moultrie board appointment, December 5 2024
   wayback_date: '2026-03-12'
+- url: https://www.fbodaily.com/archive/2023/05-May/27-May-2023/FBO-06693814.htm
+  format: html
+  status: archived
+  path: news/samdaily-fbo-06693814-hq003423c0061.html
+  archived_date: '2026-05-03'
+  sha256: 7869b6510d480f54b7cf7b75ca5a6657da67361193e9faba060275895df01055
+  archive_status: 1
+  note: SAMDaily / fbodaily.com archive of WHS contract award notice for HQ003423C0061 (Sancorp IPMO follow-on, signed 2023-05-25). Awardee field correctly names Sancorp Consulting LLC; description text incorrectly names Premier Enterprise Solutions LLC. Clerical error in the description prose; structured awardee field is canonical and matches USAspending HQ003423C0061 record (Sancorp UEI GRYKNJ8BGFC8). Captured 2026-05-03.
 - url: https://www.federalregister.gov/documents/full_text/text/2025/09/10/2025-17508.txt
   format: txt
   status: archived

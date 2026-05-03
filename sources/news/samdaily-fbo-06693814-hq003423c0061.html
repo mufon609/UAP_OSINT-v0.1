@@ -1,0 +1,420 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<HTML>
+<HEAD>
+<TITLE>SAMDaily.us | AWARD | R | Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services to the Influence and Perception Management Office (IPMO) | 27-May-23 - SAM#7851</TITLE>
+<META NAME='SAMNoticeType' CONTENT='AWARD'>
+<META NAME='SAMNoticeFSG' CONTENT='R'>
+<META NAME='SAMNoticePubDate' CONTENT='27-May-2023'>
+<META NAME='Keywords' CONTENT='Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services to the Influence and Perception Management Office (IPMO)'>
+<!-- header2.txt -->
+
+<SCRIPT LANGUAGE='JavaScript'>
+
+
+/*
+ * This is the function that actually highlights a text string by
+ * adding HTML tags before and after all occurrences of the search
+ * term. You can pass your own tags if you'd like, or if the
+ * highlightStartTag or highlightEndTag parameters are omitted or
+ * are empty strings then the default <font> tags will be used.
+ */
+function doHighlight(bodyText, searchTerm, highlightStartTag, highlightEndTag) 
+{
+  // the highlightStartTag and highlightEndTag parameters are optional
+  if ((!highlightStartTag) || (!highlightEndTag)) {
+    highlightStartTag = "<font style='color:black; background-color:yellow;'>";
+    highlightEndTag = "</font>";
+  }
+  
+  // find all occurences of the search term in the given text,
+  // and add some "highlight" tags to them (we're not using a
+  // regular expression search, because we want to filter out
+  // matches that occur within HTML tags and script blocks, so
+  // we have to do a little extra validation)
+  var newText = "";
+  var i = -1;
+  var lcSearchTerm = searchTerm.toLowerCase();
+  var lcBodyText = bodyText.toLowerCase();
+    
+  while (bodyText.length > 0) {
+    i = lcBodyText.indexOf(lcSearchTerm, i+1);
+    if (i < 0) {
+      newText += bodyText;
+      bodyText = "";
+    } else {
+      // skip anything inside an HTML tag
+      if (bodyText.lastIndexOf(">", i) >= bodyText.lastIndexOf("<", i)) {
+        // skip anything inside a <script> block
+        if (lcBodyText.lastIndexOf("/script>", i) >= lcBodyText.lastIndexOf("<script", i)) {
+          newText += bodyText.substring(0, i) + highlightStartTag + bodyText.substr(i, searchTerm.length) + highlightEndTag;
+          bodyText = bodyText.substr(i + searchTerm.length);
+          lcBodyText = bodyText.toLowerCase();
+          i = -1;
+        }
+      }
+    }
+  }
+  
+  return newText;
+}
+
+
+/*
+ * This is sort of a wrapper function to the doHighlight function.
+ * It takes the searchText that you pass, optionally splits it into
+ * separate words, and transforms the text on the current web page.
+ * Only the "searchText" parameter is required; all other parameters
+ * are optional and can be omitted.
+ */
+function highlightSearchTerms(searchText, treatAsPhrase, warnOnFailure, highlightStartTag, highlightEndTag)
+{
+  // if the treatAsPhrase parameter is true, then we should search for 
+  // the entire phrase that was entered; otherwise, we will split the
+  // search string so that each word is searched for and highlighted
+  // individually
+  if (treatAsPhrase) {
+    searchArray = [searchText];
+  } else {
+    searchArray = searchText.split(" ");
+  }
+  
+  if (!document.body || typeof(document.body.innerHTML) == "undefined") {
+    if (warnOnFailure) {
+      alert("Sorry, for some reason the text of this page is unavailable. Searching will not work.");
+    }
+    return false;
+  }
+  
+  var bodyText = document.body.innerHTML;
+  for (var i = 0; i < searchArray.length; i++) {
+    bodyText = doHighlight(bodyText, searchArray[i], highlightStartTag, highlightEndTag);
+  }
+  
+  document.body.innerHTML = bodyText;
+  return true;
+}
+
+
+/*
+ * This function takes a referer/referrer string and parses it
+ * to determine if it contains any search terms. If it does, the
+ * search terms are passed to the highlightSearchTerms function
+ * so they can be highlighted on the current page.
+ */
+function highlightFBOSearchTerms()
+{
+  // This function has only been very lightly tested against
+  // typical Google search URLs. If you wanted the Google search
+  // terms to be automatically highlighted on a page, you could
+  // call the function in the onload event of your <body> tag, 
+  // like this:
+  //   <body onload='highlightGoogleSearchTerms(document.referrer);'>
+  
+  var referrer = document.URL;
+  if (!referrer) {
+    return false;
+  }
+  
+  var queryPrefix = "q=";
+  var startPos = referrer.toLowerCase().indexOf(queryPrefix);
+  if ((startPos < 0) || (startPos + queryPrefix.length == referrer.length)) {
+    return false;
+  }
+  
+  var endPos = referrer.indexOf("&", startPos);
+  if (endPos < 0) {
+    endPos = referrer.length;
+  }
+  
+  var queryString = referrer.substring(startPos + queryPrefix.length, endPos);
+  // fix the space characters
+  queryString = queryString.replace(/%20/gi, " ");
+  queryString = queryString.replace(/\+/gi, " ");
+  // remove the quotes (if you're really creative, you could search for the
+  // terms within the quotes as phrases, and everything else as single terms)
+  queryString = queryString.replace(/%22/gi, "");
+  queryString = queryString.replace(/\"/gi, "");
+  
+  return highlightSearchTerms(queryString, false);
+}
+
+
+
+
+</SCRIPT>
+
+    <script data-ad-client="ca-pub-0072471496420888" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+    <link href="fbo.css" rel="stylesheet" type="text/css" />
+    <link href="/fbo.css" rel="stylesheet" type="text/css" />
+    <meta name="description" content="FedBizOpps the Way You Want It - Best listing of FedBizOpps notices, searches and subscriptions with free, on-line Archives back to 1995" />
+    <meta name="KEYWORDS" content="GOVERNMENT CONTRACTING, FEDERAL CONTRACTING, FEDBIZOPPS, FEDBIZOPS, Commerce Business Daily, cbd, facnet, procurement, bid, bids, bidding, contracting, solicitations, RFQ, RFQs, RFP, RFPs, GOVCON, GSA, SBA, Government Data Publications, CBDDISK" />
+    <style type="text/css">
+        .style1
+        {
+            color: #666666;
+        }
+        .style2
+        {
+            text-align: center;
+        }
+    </style>
+
+<script type="text/javascript">
+var docTitle = document.title;
+var searches = [
+		'government contracting',
+		'kindle',
+		'contract writing',
+		'small business administration'
+]
+		
+if (typeof fsg !== 'undefined') {
+    searches.push(fsg);
+}
+
+var searchTerm = searches[Math.floor(Math.random() * searches.length)];
+
+
+/*
+if (docTitle.includes("|")) {
+  var parts = docTitle.split("|");
+  if (parts.length == 5) {
+    searchTerm = parts[3].trim();
+  }
+}
+*/
+</script>
+
+
+</head>
+<body class="template" onload="highlightFBOSearchTerms();">
+    <div style="width:800px; margin: 0px auto; height:98%;">
+        <table width="800px" 
+            style="border-style:ridge; border-width:thin; background-color: #FFFFFF; height:100%; min-height:800px;">
+            <thead valign="top">
+                <tr><td>
+                <table width="100%" cellpadding="0px" cellspacing="0px" border="1">
+                <tr>
+                <th colspan="1" style="width:100%; vertical-align:top; text-align: left;  background-color: #F0F0E3;  padding-left: 3px; padding-right: 3px; border-width: 0px;">
+                    <h1 style="vertical-align:top; margin-left:20px;">Loren Data's SAM Daily&trade;</h1>
+                </th>
+
+                <td align="right" style="vertical-align:middle;  background-color: #F0F0E3; padding: 5px; margin-right: 5px; border-width: 5px;"><img src="/fbostamp.gif"  align="middle" alt="fbodaily.com" /> 
+                </td>
+                </tr>
+                </table>
+                </td></tr>
+                <tr valign="top"><td>
+                <table width="100%" cellpadding="0px" cellspacing="2px" border="0" style="background-color: #808080; table-layout: auto">
+                <tr>
+                <th><a href="https://samdaily.us">Home</a></th>
+                <th><a href="https://samdaily.us/today/">Today's SAM</a></th>
+                <th><a href="https://samdaily.us/fbo/fbosearch.html">Search</a></th>
+                <th><a href="https://samdaily.us/archive/">Archives</a></th>
+                <th><a href="https://samdaily.us/fbo/notes.html">Numbered Notes</a></th>
+                <th><a href="https://samdaily.us/cbd/archive/">CBD Archives</a></th>
+                <th><a href="https://samdaily.us/subscription/sub.html">Subscribe</a></th>
+                </tr>
+                </table> </td></tr>
+                <tr valign="top">
+                    <td align="center">
+
+<!-- Amazon Grid -->
+<!--
+<div id="amzn-assoc-ad-0f4eaa97-ec7e-4fe1-891d-89fadb02fe32"></div><script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=0f4eaa97-ec7e-4fe1-891d-89fadb02fe32"></script>
+-->
+<!-- end Amazon grid -->
+
+<!-- Google Topics -->
+<!-- old google
+<script type="text/javascript">
+    google_ad_client = "ca-pub-0072471496420888";
+    /* FBO Topics */
+    google_ad_slot = "5705365062";
+    google_ad_width = 728;
+    google_ad_height = 15;
+//
+</script>
+
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+-->
+
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+	<!-- FBO Topics -->
+	<ins class="adsbygoogle"
+	     style="display:inline-block;width:728px;height:15px"
+	     data-ad-client="ca-pub-0072471496420888"
+	     data-ad-slot="5705365062"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+
+<!-- end Google Topics -->
+
+                    </td>
+                </tr>
+            </thead>
+            <tbody style="height:100%">
+                <tr valign="top" style="height: 90px">
+                    <td width="100%" align="center">
+<!-- old google
+<script type="text/javascript">
+    google_ad_client = "ca-pub-0072471496420888";
+    /* FBO 2013 */
+    google_ad_slot = "7600900666";
+    google_ad_width = 728;
+    google_ad_height = 90;
+//
+</script>
+
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+
+</script>
+-->
+
+
+	<!-- FBO 2013 -->
+	<ins class="adsbygoogle"
+	     style="display:inline-block;width:728px;height:90px"
+	     data-ad-client="ca-pub-0072471496420888"
+	     data-ad-slot="7600900666"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+
+                    </td>
+                </tr>
+
+                <tr valign="top">
+                    <td width="100%" 
+                        style="padding: 3px; vertical-align: top; text-align: left;">
+                        <div id="content">
+<!-- end of header2 -->                        
+
+<B>SAMDAILY.US - ISSUE OF MAY 27, 2023 SAM #7851</B><BR>
+<B>AWARD</B><BR><BR>
+<H2>R -- Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services to the Influence and Perception Management Office (IPMO)</H2>
+<DL>
+<DT><B>Notice Date</B>
+<DD>5/25/2023 2:11:53 PM
+<BR>&nbsp;
+<DT><B>Notice Type</B>
+<DD>Award Notice<BR>&nbsp;
+<DT><B>NAICS</B>
+<DD>541611
+ &mdash; Administrative Management and General Management Consulting Services
+<BR>&nbsp;
+<DT><B>Contracting Office</B>
+<DD>WASHINGTON HEADQUARTERS SERVICES WASHINGTON DC 203011000 USA
+<BR>&nbsp;
+<DT><B>ZIP Code</B>
+<DD>203011000
+<BR>&nbsp;
+<DT><B>Solicitation Number</B>
+<DD>HQ003423R0148
+<BR>&nbsp;
+<DT><B>Archive Date</B>
+<DD>06/09/2023
+<BR>&nbsp;
+<DT><B>Point of Contact</B>
+<DD>Jacqueline Verrine, Shacasia King
+<BR>&nbsp;
+<DT><B>E-Mail Address</B>
+<DD><A HREF="mailto:jacqueline.g.verrine.civ@mail.mil, shacasia.t.king.civ@mail.mil">
+jacqueline.g.verrine.civ@mail.mil, shacasia.t.king.civ@mail.mil</A>
+<BR>(jacqueline.g.verrine.civ@mail.mil, shacasia.t.king.civ@mail.mil)
+<BR>&nbsp;
+<DT><B>Small Business Set-Aside</B>
+<DD>8AN 8(a) Sole Source (FAR 19.8)
+<BR>&nbsp;
+<DT><B>Award Number</B>
+<DD>HQ003423C0061
+<BR>&nbsp;
+<DT><B>Award Date</B>
+<DD>05/25/2023
+<BR>&nbsp;
+<DT><B>Awardee</B>
+<DD>Sancorp Consulting, LLC VA 22044-1740 USA
+<BR>&nbsp;
+<DT><B>Award Amount</B>
+<DD>4181853.92
+<BR>&nbsp;
+<DT><B>Description</B>
+<DD>Washington Headquarters Services/Acquisition Directorate (WHS/AD) awarded an 8(a) direct award contract to Premier Enterprise Solutions, LLC to provide Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services to the IPMO.� This award was issued as a sole source in accordance with the FAR 19.8 and DFARS 252.219-7009, Partnership agreements with Small Business Administration (SBA).
+<BR>&nbsp;
+<DT><B>Web Link</B>
+<DD><A TARGET="outside" HREF="https://sam.gov/opp/8d3306766ccd4599818fe18bbccd58db/view">
+SAM.gov Permalink</A>
+<BR>(https://sam.gov/opp/8d3306766ccd4599818fe18bbccd58db/view)
+<BR>&nbsp;
+<DT><B>Place of Performance</B>
+<DD><I>Address:</I> Washington, DC 20301, USA
+<DD><I>Zip Code:</I> 20301
+<DD><I>Country:</I> USA
+<BR>&nbsp;
+<DT><B>Record</B>
+<DD>SN06693814-F 20230527/230525230107 (samdaily.us)
+<BR>&nbsp;
+<DT><B>Source</B>
+<DD><A TARGET="fedbizopps" HREF="https://sam.gov/opp/8d3306766ccd4599818fe18bbccd58db/view">
+SAM.gov Link to This Notice</A><BR>(may not be valid after Archive Date)
+</DL>
+<HR>
+|&nbsp;<A HREF="r-awd.htm">FSG Index</A>&nbsp;
+|&nbsp;
+<A HREF="index.htm">This Issue's Index</A>
+&nbsp;|&nbsp;
+<A HREF="http://samdaily.us/today/">Today's SAM Daily Index Page</A>&nbsp;|
+<!-- begin footer -->                        
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot valign="bottom">
+            <tr style="height:25px;">
+                <td  style="vertical-align: bottom; text-align: left; background-color: #F0F0E3; padding: 3px; border-width: 0px;">
+                <table cellpadding="0" cellspacing="0" width="100%" style="border-width: 1px; border-style: solid">
+                <tr style="table-layout: auto; text-align:center; font-size:65%;">
+                    <td><a href="https://www.ld.com" style="color:#808080;">ECGrid: EDI VAN Interconnect</a></td>
+                    <td><a href="https://ecgridos.com" style="color:#808080;">ECGridOS: EDI Web Services Interconnect API</a></td>
+                    <td><a href="subscription/sub.html" style="color:#808080;">Government Data Publications CBDDisk Subscribers</a></td>
+                </tr>
+                <tr>
+                <td colspan="1" style="text-align:left; color: #808080; font-size:75%;">
+                    &nbsp;<a style="color:#336699;" href="/fbo/privacy.htm">Privacy Policy</a>&nbsp;
+                </td>
+		<td style="text-align:center; color:#f0f0e3; font-size:75%;">
+			<a style="color:#336699;;" href="https://jennyinwanderland.world" target="_blank">Jenny in Wanderland!</a>&nbsp;
+		</td>
+                <td style="text-align:right; color: #808080; font-size:75%;">
+                    &copy; 1994-2026, <a style="color:#336699;" href="https://www.LD.com" target="_blank">Loren Data Corp.</a>&nbsp;
+                </td>
+                </tr>
+                </table>
+                </td>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+<!-- Google Analytics -->
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    try {
+        var pageTracker = _gat._getTracker("UA-8246679-1");
+        pageTracker._trackPageview();
+    } catch (err) { }
+</script>
+</body>
+</html>
+<!-- end footer -->
+</HTML>
