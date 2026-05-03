@@ -411,6 +411,21 @@ In November 2023, OUSD(I&S) reviewed the UAP Disclosure Act of 2023 and submitte
 
 ---
 
+### NSI 23-S-3438 IPMO 101 slide 3 — IPMO Core Efforts: direct primary-source attestation of the four-division mission scope (Integrated Influence; Perception Management; Deception Activities; Intel Support to Influence Activities). DOPSR-cleared September 27, 2023; authored by COL Deitra Trotter and HON Ronald S. Moultrie.
+
+> • Integrated Influence: Develop and promulgate tailored thematic influence guidance focused on key adversaries and specific U.S. defense issues
+> • Perception Management: Develop and execute policy, oversight, and governance related to DoD perception management (reveal/conceal of defense capabilities) programs and activities
+> • Deception Activities: Develop and execute policy, oversight, and governance related to global DoD deception programs and activities
+> • Intel Support to Influence Activities: Develop and execute policy, oversight, and governance related to DoD intelligence support to influence and information programs and activities
+
+| Field | Value |
+|---|---|
+| Attributed to | OUSD(I&S) IPMO 101 presentation slides, DOPSR case 23-S-3438 cleared for open publication September 27, 2023, 2023-10 |
+| Source | [archived source](../sources/government/nsi-23-s-3438-ipmo-101-slides-202310.pdf) |
+| Location | Slide 3 — IPMO Core Efforts bullets |
+
+---
+
 ### NSI Speaker Series — Holly attestation that three SecDefs across two administrations signed off on IPMO establishment
 
 > three Secretaries of Defense, under two administrations, signed off on its establishment
