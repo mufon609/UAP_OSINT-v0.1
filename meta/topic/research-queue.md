@@ -224,6 +224,8 @@ table tracks audit history only.
 | Node | Audit date |
 |---|---|
 | `/people/david-fravor` (i0 → i1 audit-correction) | 2026-04-19 |
+| `/organizations/arlo-solutions` (web audit Round 3 — uncited T4NG2 claims, four-vendor inference, $6.5M floor, call-order awardees, trusted-advisors header) | 2026-05-03 |
+| `/organizations/aaro` (web audit — parent org corrected, AIC=AARO inference softened, § 3373 prong precision, IPMO juxtaposition removed, Luna deadline outcome added) | 2026-05-03 |
 
 ---
 
@@ -280,16 +282,17 @@ to launch with substantive density rather than as a 2-entity observation:
 2. `/organizations/ipmo` (built 2026-05-02) — third architectural layer
    under OUSD(I&S). Built; no Arlo-IPMO contract attested in either
    node's record.
-3. `/documents/eo-14347-restoring-department-of-war` — legal foundation
-   (Sec 2(a) authorization, Sec 2(b) non-statutory adoption, Sec 2(e)
-   statutory preservation); source already archived
-4. `/organizations/dod` — top-level institutional anchor; 13 refs from
-   built nodes (most-referenced unbuilt org in registry)
-5. `/organizations/ousd-is` — direct parent of AARO + IPMO; 6 refs;
-   cognizant entity where the cross-architectural-layer asymmetry plays
-   out at the supervisory level
+3. `/documents/eo-14347-restoring-department-of-war` (built 2026-05-03)
+   — legal foundation (Sec 2(a) authorization, Sec 2(b) non-statutory
+   adoption, Sec 2(e) statutory preservation).
+4. `/organizations/dod` — top-level institutional anchor; 17 refs from
+   built nodes (most-referenced unbuilt org in registry). **Last
+   unbuilt F.X gate.**
+5. `/organizations/ousd-is` (built 2026-04-30) — direct parent of AARO
+   + IPMO; cognizant entity where the cross-architectural-layer
+   asymmetry plays out at the supervisory level.
 
-**Useful but not gating:** `/organizations/whs` (contracting office, 2 refs);
+**Useful but not gating:** `/organizations/whs` (contracting office, 4 refs);
 `/documents/blackvault-sancorp-23-f-1114-aaro-pws` (Sancorp PWS, already
 archived).
 
@@ -299,7 +302,9 @@ With optional pre-builds: 9 entities. Comfortably exceeds the 3-entity
 schema threshold and supports multi-surface evidence (statutory,
 organizational, contractor-marketing, federal-procurement, press).
 
-**Status:** Pending — gated on the 5 required pre-builds.
+**Status:** Pending — 4 of 5 required pre-builds shipped (arlo-solutions,
+ipmo, eo-14347, ousd-is); gated on `/organizations/dod` (the last
+unbuilt anchor).
 
 **Surfaced from:** AARO Phase 2 audit (Claude Web, 2026-04-30) — N6
 recommendation deferred cross-outlet attribution to the Finding-node
