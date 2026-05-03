@@ -229,6 +229,8 @@ table tracks audit history only.
 | `/organizations/aaro` (web audit Phase 1 — AOIMSG/AARO chain factually corrected per Hicks memo verbatim, PDDNI reporting-line claim softened from inferential overreach to scoped "no public evidence" framing, Kosloski period granularity 2024-08 → 2024-08-26, two `&#39;` HTML entities normalized in quote.text, naming_quirks nq5 + reader-visible `[sic]` flag for "fulfi lled" pdftotext artifact in text-native Hicks memo PDF — same shape as BACKLOG #19 extraction-lossy category) | 2026-05-03 |
 | `/organizations/aaro` (web audit Phase 2 — 8 unwrapped people registered with wrap_paths and entities_referenced entries [Norquist, Gillibrand, Zimmerman, Bodian, King, Meagher, Wirkkala, Haines]; 6 load-bearing primary-source documents wrapped + registered as stubs [Hicks memo, FOIA 24-F-0894, AARO FY24 Annual Report, Mellon Debrief essay, WSJ Schectman/Viswanatha 2025, Luna March 2026 letter]; Volume II overdue framing added — pure arithmetic from two source-attested dates ["~20 months past Section 6802(j) statutory deadline"]; broken-link registry from AARO 34 → 48 stubs) | 2026-05-03 |
 | `/organizations/aaro` (web audit Phase 1+2 follow-up — t2 grammar break "establish directed by" → "establishment directed by"; t14 plain-scalar literal `AARO''s` → `AARO's` + EO 14347 wrap embedded; statutory_authority extended to cite IAA FY23 § 6802 amendment per OUSD-IS dual-citation pattern; Phillips Acting/Deputy distinction surfaced in description prose with Deputy Director departure date flagged as undocumented in archived sources) | 2026-05-03 |
+| `/organizations/aaro` (web audit Round 4 — Phillips kp2 period_end stop-gap dropped (table no longer asserts a date the prose calls undocumented); statutory_authority extended to all four source-attested § 3373 amendments per archived USC § 3373 file (P.L. 117-81 originating; P.L. 117-263 §§ 1673(c)+6802(a); P.L. 118-31 § 7341 subsec (k)(1) heading; P.L. 119-60 §§ 1671(a)/1672(b) subsec (f)(1)(A)+(l)); Crockett wrap added at line 71; Mike Gold + Luis Elizondo wraps added in the 2024-11-13 timeline event; entities_referenced e56/e57/e58 added with source-attested first names from Nov 13, 2024 hearing testimony PDFs (audit had Gold's first name wrong as "Robert"); NewsNation April 16 Luna subpoena-posture article archived (audit's "April 29" date wrong — article is April 16 per embedded JSON metadata; user-supplied browser-saved HTML resolved the SPN-blocked deferral); James Comer registered as e59; t15b timeline entry added for the April 16 escalation; BACKLOG #17 third concrete consequence logged for parent-org schema collapse; new BACKLOG #29 logged for `updated:` frontmatter convention question) | 2026-05-03 |
+| `/organizations/aaro` (web audit Round 5 Phase 1 — Vol II framing corrected per archived HRR Vol I §III source extraction: Section 6802(j) requires "a written report" (singular), satisfied by Vol I (March 8, 2024) before the June 15, 2024 deadline; Vol II is AARO's self-described two-volume schedule citing the same Section 6802 date, ~20 months overdue against AARO's own Vol I §III commitment, NOT against the statute itself (description, q37 significance, t11a timeline event corrected; t11a re-condensed to 53 words to clear the 55-word soft cap; "commits"→"states" and "HRR"→"Historical Record Report Volume I" / "Volume I" to clear prose-drift on revised description); "(45 previously unreleased)" parenthetical excised from t15a timeline event + e55 Luna-letter context_summary — phrase was contributor inference, not source-attested in Luna letter (verified zero hits for "previously unreleased / never seen / never-before"); Sept 9 2025 hearing paragraph reordered to precede Feb 19 2026 Trump TRUTH Social paragraph for chronological flow matching the timeline ordering; Round 5 audit also confirmed-NOT-issues — P.L. 119-60 §§ 1671(a)+1672(b) frontmatter vs §§ 1671(b)+1673(a) description distinction is structurally correct per archived USC § 3373 source (codified amendments vs standalone statutory notes — different provisions of same public law), P.L. 118-31 § 7341 frontmatter vs § 1687 audit suggestion is also correct per same source (§ 7341 IS the codified § 3373 amendment; § 1687 is a separate statutory note re Director appointment), Mt. Etna 170 m vs 170 km properly preserved as `naming_quirks.nq4` `disputed` per neutrality, Kosloski end-date is the bare-start corpus convention for ongoing roles, fulfi lled `[sic]` already correctly handled) | 2026-05-03 |
 
 ### Phase 2 open audit from the AARO Web audit Phase 1+2 follow-up (2026-05-03)
 
@@ -323,15 +325,41 @@ node sessions.
   for "known start, unknown end (but not ongoing)".** This is the
   Phillips Deputy Director case — Oct 2023 start documented, no
   departure date documented, role attested vacant by Feb 25, 2026
-  (Flowers/DefenseScoop). Stop-gap on AARO: kp2 split into Deputy
-  Director (kp2) and Acting Director (kp2b), both with
-  `period_end: 2024-08-26` (the only documented role transition); the
-  prose at line 33 carries the Deputy-end ambiguity. Affects
-  `key_personnel`, `affiliations`, `ownership_timeline` — any role
-  with documented start, attested-vacant later state, undocumented
-  departure. **Worth a convention pass once a clear pattern emerges
-  across 3+ nodes** (per the Name-form audit pattern). Defer until
-  pattern recurs.
+  (Flowers/DefenseScoop). Round 4 (2026-05-03) revised the stop-gap:
+  kp2 `period_end` removed entirely (table no longer asserts an
+  undocumented date); body prose at line 33 retains the explicit
+  hedge that "his Deputy Director departure date is not documented in
+  archived primary sources". Trade-off: bare `period_start` renders
+  per corpus convention as "ongoing", which is also misleading given
+  Flowers/DefenseScoop attests vacancy. Net judgment: a structural
+  hedge plus inline prose flag is less misleading than a fabricated
+  end-date. Affects `key_personnel`, `affiliations`,
+  `ownership_timeline` — any role with documented start, attested-
+  vacant later state, undocumented departure. **Worth a convention
+  pass once a clear pattern emerges across 3+ nodes** (per the
+  Name-form audit pattern). Defer until pattern recurs.
+- **~~Currency: Luna April 29, 2026 NewsNation subpoena escalation
+  (Phase 3 p)~~** — **Resolved 2026-05-03 same session via user-
+  supplied browser-saved HTML.** The audit's "April 29" date was
+  wrong — the actual NewsNation article (Robert Jones byline,
+  `newsnationnow.com/politics/pentagon-uap-video-deadline-luna/`)
+  has `publicationDate: 2026-04-16T13:08:34-05:00` per embedded JSON
+  metadata, with body text "told NewsNation Thursday" (April 16, 2026
+  was a Thursday — two days after the April 14 deadline). Site is
+  Cloudflare/Varnish 403-blocked to all automated retrieval and
+  Wayback SPN submission also failed (HTTP 520); deferral was
+  resolved by manual browser-save into the repo, archived as
+  `news/newsnation-luna-uap-video-deadline-subpoena-20260416.html`
+  + manifest registration with sha256. AARO node updated with the
+  source-attested April 16 escalation framing (institutional-
+  resistance subpoena posture coordinated with Chairman Comer;
+  call for removal of the unelected official who failed to route
+  the March 31 letter); James Comer registered as e59. **Lesson
+  learned:** for sites with hard automated blocking + no Wayback
+  presence, the manual-browser-save fallback is a viable
+  primary-source-archival route — preserves the source-read-first
+  bar through local archive + sha256, even where automated routes
+  fail.
 
 ### Renderer convention confirmed during the AARO Phase 1 audit
 

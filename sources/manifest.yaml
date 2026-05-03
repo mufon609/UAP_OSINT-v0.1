@@ -2093,6 +2093,13 @@
   archive_status: 3
   note: Fetched via Wayback Machine (20250423 snapshot); newsnationnow.com 403-blocks direct curl.
   wayback_date: '2025-04-23'
+- url: https://www.newsnationnow.com/politics/pentagon-uap-video-deadline-luna/
+  format: html
+  status: archived
+  path: news/newsnation-luna-uap-video-deadline-subpoena-20260416.html
+  archived_date: '2026-05-03'
+  sha256: 1d8e5ed944d743cb435aeb72a60a7244f37726e608d681873cf95630995685f4
+  archive_status: 1
 - url: https://www.newsnationnow.com/space/ufo/rubio-recent-ufo-whistleblower-isnt-the-only-one/
   format: html
   status: archived

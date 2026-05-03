@@ -271,6 +271,19 @@ Surfaced: UAPTF v7 audit (2026-04-23) — AARO and EXCOM rows flagged
 as displaying identically to `other`-typed edges despite the
 artifact carrying distinctive source-derived framing for both.
 
+**Third concrete consequence — AARO web audit follow-up (2026-05-03).**
+AARO's `org_relationships` table renders both [`/organizations/dod`]
+(top-level department) and [`/organizations/ousd-is`] (immediate
+supervisory office) under bare `parent` relationship_type, with no
+distinction visible to a reader scanning structured data alone. The
+late-July 2023 reporting-line shift to DEPSECDEF (sourced from
+DefenseScoop August 30, 2023) lives only in description prose — the
+relationship table cannot represent it. A note-rendering pass would
+let `or1.note`/`or5.note` carry the bureaucratic-vs-operational
+distinction; alternately, a `reports-to` enum value could distinguish
+operational reporting from organizational placement. Joins UAPTF v7
+and IPMO/co-located OUSD(I&S) cases as the third concrete trigger.
+
 ---
 
 ### 18. Codify Key Passages ordering convention in `conventions.md`
@@ -1131,3 +1144,65 @@ audit § 7 "Mellon Signal reply text (full)" Open item documented
 with concrete check-back cadence and closure path. Logged for
 visibility so a future session reviewing the Mellon node or the
 Kirkpatrick credibility notes knows the appeal is pending.
+
+---
+
+### 29. `updated` frontmatter field — corpus-wide currency anchoring
+
+**The gap.** Schema-required frontmatter is `[id, type, schema_version,
+status, kind, created]` across all content types. There is no `updated`
+or `last_modified` field. Body prose periodically carries time-anchored
+clauses — e.g., AARO description prose at body line 35: *"no Sancorp
+follow-on or successor AARO Support Services contract is documented in
+archived primary sources as of May 3, 2026"*. The "as of {date}" form
+freezes the contributor's knowledge state at edit time, but a reader
+arriving six months later cannot tell whether the clause reflects an
+actual review on that date or is forward-projected boilerplate. Git
+log on the file is the authoritative edit-history record per
+`meta/conventions.md`, but readers don't reach for git log to evaluate
+prose currency.
+
+**Affected surface.** Any node with rolling-currency clauses — most
+acutely on government-entity org nodes where statutory deadlines,
+caseload counts, contract terms, and personnel transitions accumulate
+inline date anchors. AARO is the surfacing case; UAPTF, IPMO,
+OUSD(I&S), Sancorp, Arlo, TTSA, and every person node with current
+affiliations carry equivalent risk.
+
+**Design choices.**
+
+A. **Add `updated:` (or `last_reviewed:`) to schema.yaml frontmatter
+   `optional` set across all content types.** Contributors stamp it
+   when a node receives a content-currency review. Renderer surfaces
+   it in the Overview row or as a node-foot annotation. Cheap; opt-in;
+   no enforcement of refresh cadence. Risk: contributors forget to
+   stamp.
+
+B. **Move "as of {date}" prose into a structured `currency_anchors`
+   list.** Each anchor: `clause` + `as_of_date` + `source.path`.
+   Renderer composes the prose at build time. Heavier; forces the
+   review discipline at the schema layer; surfaces the audit trail
+   structurally.
+
+C. **Convention-only.** Document in `meta/conventions.md` that
+   "as of {date}" prose must match the most recent commit date on the
+   node file, validated by a new check that reads `git log -1`. No
+   schema change.
+
+**Relationship to BACKLOG #17.** Adjacent but distinct. #17 is about
+`note` fields not rendering; this is about prose-clause currency
+without a structural anchor. Both are reader-visibility issues.
+
+**Priority.** Low. Not a correctness issue — the currency claim is
+already source-attested via the underlying primary sources; the
+question is whether the reader can tell when the contributor last
+reviewed. Worth a single corpus-wide pass once a clear pattern emerges
+across 3+ nodes.
+
+**Scope.** ~1 session for design + schema/renderer change + per-node
+sweep across affected nodes.
+
+Surfaced: AARO web audit (Claude Web, 2026-05-03) — auditor flagged
+the line-35 "as of May 3, 2026" clause as ambiguous between rolling-
+currency review and forward-projected boilerplate. Currently affects
+AARO; pattern likely recurs corpus-wide.
