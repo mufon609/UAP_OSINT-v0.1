@@ -184,7 +184,7 @@ primary_sources:
   format: html
 document_intrinsic:
   full_name: All-domain Anomaly Resolution Office
-  statutory_authority: 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022)
+  statutory_authority: 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022; substantially amended by Section 6802 of the Intelligence Authorization Act for Fiscal Year 2023, P.L. 117-263)
   established_date: '2022-07-15'
   parent_organization_path: /organizations/ousd-is
   current_director_path: /people/jonathan-kosloski
@@ -1143,7 +1143,7 @@ timeline:
 - id: t2
   added_date: '2026-04-20'
   date: '2021-11-23'
-  event: Airborne Object Identification and Management Synchronization Group (AOIMSG) establish directed by Deputy Secretary of Defense
+  event: Airborne Object Identification and Management Synchronization Group (AOIMSG) establishment directed by Deputy Secretary of Defense
   category: other
   source:
     path: government/defense-gov-aoimsg-establishment-20211123.html
@@ -1290,7 +1290,7 @@ timeline:
 - id: t14
   added_date: '2026-04-30'
   date: '2025-09-05'
-  event: Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO''s parent department naming.
+  event: Executive Order 14347 of September 5, 2025 ([`/documents/eo-14347-restoring-department-of-war`]) — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO's parent department naming.
   category: government-action
   source:
     path: government/eo-14347-restoring-department-of-war-20250910.txt

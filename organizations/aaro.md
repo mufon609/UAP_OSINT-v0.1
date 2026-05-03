@@ -15,7 +15,7 @@ created: 2026-04-20
 |---|---|
 | Full Name | All-domain Anomaly Resolution Office |
 | Type | DoD office |
-| Statutory Authority | 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022) |
+| Statutory Authority | 50 U.S.C. § 3373 (codifying Section 1683 of the National Defense Authorization Act for Fiscal Year 2022; substantially amended by Section 6802 of the Intelligence Authorization Act for Fiscal Year 2023, P.L. 117-263) |
 | Established | 2022-07-15 |
 | Parent Organization | [`/organizations/ousd-is`] |
 | Director | [`/people/jonathan-kosloski`] |
@@ -1125,7 +1125,7 @@ The April 14 deadline passed without delivery of the requested videos (per NBC N
 | Date | Event | Category | Source | Node Link |
 |---|---|---|---|---|
 | 2020-08-04 | Unidentified Aerial Phenomena Task Force (UAPTF) established by Deputy Secretary of Defense David L. Norquist | other | government/defense-gov-uaptf-establishment-20200814.html |  |
-| 2021-11-23 | Airborne Object Identification and Management Synchronization Group (AOIMSG) establish directed by Deputy Secretary of Defense | other | government/defense-gov-aoimsg-establishment-20211123.html |  |
+| 2021-11-23 | Airborne Object Identification and Management Synchronization Group (AOIMSG) establishment directed by Deputy Secretary of Defense | other | government/defense-gov-aoimsg-establishment-20211123.html |  |
 | 2022-07-15 | Establishment of the All-domain Anomaly Resolution Office by Deputy Secretary of Defense memorandum (Section 1683 NDAA FY 2022) | founding | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |  |
 | 2022-07-20 | Dr. Sean M. Kirkpatrick Director, All-domain Anomaly Resolution Office (AARO) | leadership-transition | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
 | 2022-09-01 | Sancorp AARO Support Services contract HQ003422C0094 awarded by Washington Headquarters Services Acquisition Directorate (\$4,061,786.51 obligated; 8(A) Sole Source). Eight task areas include Executive Admin, Strategy/Plans/Policy, Congressional Affairs/Public Affairs/FOIA, Data Architecture, PPBE, Reporting, and Operations Support. | contract | government/usaspending-hq003422c0094.txt | [`/organizations/sancorp-consulting`] |
@@ -1152,7 +1152,7 @@ The April 14 deadline passed without delivery of the requested videos (per NBC N
 | 2024-12-05 | DefenseScoop (Brandi Vincent) reports AARO reached Full Operational Capability as of October 1, 2024 — start of FY 2025. DOD spokesperson Sue Gough: AARO "now has the requisite personnel, expertise, facilities and tools to carry out its core mission". Precedes Kosloski's December 6 closed-door House Oversight briefing. | announcement | news/defensescoop-aaro-foc-briefing-20241205.html |  |
 | 2025-06-06 | Wall Street Journal (Schectman ([`/people/joel-schectman`]), Viswanatha ([`/people/aruna-viswanatha`])) publishes "The Pentagon Disinformation That Fueled America's UFO Mythology" — previews AARO Volume II findings: a 1980s F-117 cover via doctored Area 51 photos (Air Force colonel confessed to AARO investigators in 2023), and the long-running "Yankee Blue" induction-briefing ritual. | publication | news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html |  |
 | 2025-08-26 | DoD FOID releases FOIA 24-F-0894 (14 pages) covering OASD/PA records on the AARO HRR Vol I rollout (Feb 1 – Mar 7, 2024 email range). Five Initial Denial Authorities — Plescow (OSD/I&S), Lane (OASD/LA), Morrison (ODNI), Rose (OSD/PA), Shockley (OUSD/Policy) — signed off; cover letter signed by Pamela Andrews ([`/people/pamela-andrews`]), Chief, FOIA, OSD/JS. | foia | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
-| 2025-09-05 | Executive Order 14347 of September 5, 2025 — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO''s parent department naming. | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
+| 2025-09-05 | Executive Order 14347 of September 5, 2025 ([`/documents/eo-14347-restoring-department-of-war`]) — Restoring the United States Department of War. Authorizes Department of War / Secretary of War as additional secondary titles in non-statutory contexts (Sec. 2(a), Sec. 2(b)); statutory references to Department of Defense remain controlling (Sec. 2(e)). Affects AARO's parent department naming. | government-action | government/eo-14347-restoring-department-of-war-20250910.txt |  |
 | 2026-02-19 | Trump TRUTH Social post (status ID 116100300268316472) directs the Secretary of War and other Departments and Agencies "to begin the process of identifying and releasing Government files related to alien and extraterrestrial life, unidentified aerial phenomena (UAP), and unidentified flying objects (UFOs)". Underlies Hegseth's February 25, 2026 full-compliance commitment. | government-action | social/trumpstruth-statuses-36826-uap-disclosure-20260219.html |  |
 | 2026-02-25 | DefenseScoop article (Brandi Vincent) reports Pentagon spokesperson Sue Gough caseload statement — AARO examining over 2,000 UAP cases with ~1,000 retained in the Active Archive. Article notes AARO has not published a 2025 annual report or second volume. Defense Secretary Hegseth states "full compliance" with forthcoming Trump UAP-disclosure executive order. | other | news/defensescoop-aaro-hegseth-disclosure-20260225.html |  |
 | 2026-03-31 | Task Force on the Declassification of Federal Secrets — Chair Anna Paulina Luna (R-Fla.) — letter to Secretary of War Hegseth requesting 46 UAP video files (45 previously unreleased) by April 14, 2026. Letter finds AARO responses "less than adequate" and cites whistleblowers on "additional video records of potential UAP sightings". | government-action | government/oversight-house-gov-uap-request-letter-luna-20260331.pdf |  |
@@ -1244,6 +1244,7 @@ The April 14 deadline passed without delivery of the requested videos (per NBC N
 - [`/documents/aaro-fy24-consolidated-annual-report-uap-2024`]
 - [`/documents/aaro-historical-record-report-vol-i`]
 - [`/documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails`]
+- [`/documents/eo-14347-restoring-department-of-war`]
 - [`/documents/hicks-aaro-establishment-memo-2022`]
 - [`/documents/oversight-house-uap-request-letter-luna-2026`]
 - [`/documents/thedebrief-mellon-aaro-report-flawed-2024`]
