@@ -7,7 +7,7 @@ created: '2026-05-03'
 description: 'Arlo Solutions, LLC is a small business of Washington, D.C. founded in 2014 by Arlene Wube ([`/people/arlene-wube`]) and Lonye Ford ([`/people/lonye-ford`]). According to Arlo''s March 16,
   2026 SASP press statement, Arlo is a service-disabled veteran owned small business, woman owned small business, and 8(a) small business based in Washington, DC; Lonye Ford is named CEO. According to USAspending
   records (recipient UEI JSRCFJVJM874; CAGE Code 72UJ9), Arlo''s business categories include 8(a) Program Participant, Black American Owned Business, Economically Disadvantaged Women Owned Small Business,
-  Service Disabled Veteran Owned Business, Small Business, and Women Owned Small Business. The recipient address according to USAspending is 200 Massachusetts Ave NW Suite 700 Washington, DC 20001.
+  Service Disabled Veteran Owned Business, Small Business, and Women Owned Small Business. The recipient address according to USAspending is 200 Massachusetts Ave NW Suite 700 Washington, DC 20001. The March 16, 2026 SASP press statement named Lonye Ford as CEO; Arlene Wube and broader Arlo staff do not appear in the SASP press statement.
 
 
   Arlo''s principal federal customer is the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) — Arlo''s corporate marketing uses the form OUSW(I&S)
@@ -15,7 +15,7 @@ description: 'Arlo Solutions, LLC is a small business of Washington, D.C. founde
   OUSD(I&S) since September 2019, including Personnel Security Policy Support (HQ003419C0172), Business Operations and Support Services (HQ003420C0104), Counterintelligence, Law Enforcement and Security
   Policy Support (HQ003421C0078, HQ003422F0271, HQ003423F0356), Cyberspace Oversight Support Services (HQ003422C0092), Admin Support Services (HQ003421C0090), Event Planning Support Services (HQ003423C0093),
   and Integrated Vetting Policy & Analytical Support (HQ003424F0190 — a $3.7 million contract with the OUSD(I&S) CL&S Integrated Vetting team on April 18, 2024). On February 14, 2025, WHS established
-  the OUSD(I&S) Enterprise BPA HQ003425A0004 with a good faith estimate amount of $856 million; on February 21, 2025, Arlo signed BPA Call Order HQ003425F0104 for SASP support.
+  the OUSD(I&S) Enterprise BPA HQ003425A0004 under solicitation HQ003424R0178; the good faith estimate amount for all BPAs is $856 million across the four BPA vendors (Arlo, Sancorp, Premier, and Comprehensive Approach), not Arlo''s individual limit. On February 21, 2025, Arlo signed BPA Call Order HQ003425F0104 for SASP support.
 
 
   The HQ003425A0004 BPA and HQ003425F0104 SASP Call Order were awarded after a reevaluation of solicitation HQ003424R0178. According to the Government Accountability Office decision Matter of Sancorp Consulting
@@ -57,7 +57,7 @@ document_intrinsic:
   contracting_agency: Department of Defense / Washington Headquarters Services (WHS); also GSA for vehicles
   period_of_performance: 2014–present (founded 2014; first federal awards 2019)
   registered_status: 8(a) Program Participant; Service Disabled Veteran Owned Business; Woman Owned Small Business; Economically Disadvantaged Women Owned Small Business; Black American Owned Business;
-    LLC
+    LLC; UEI JSRCFJVJM874
   cage_code: 72UJ9
 context_extrinsic:
   display_title: Arlo Solutions
@@ -92,9 +92,7 @@ quotes:
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: BACKGROUND section, ¶1 (RFQ basics)
-  significance: 'RFQ HQ003424R0178 established multiple-award 8(a) BPAs to provide technical, administrative, and professional support services to the OUSD(I&S) enterprise — five-year ordering period (one
-    base + four option years), $856 million good faith estimate aggregate ceiling. Note source typo: "Intelligent & Security" appears in source where the standard form is "Intelligence & Security" (preserved
-    as sic; nq2).'
+  significance: 'RFQ HQ003424R0178 established multiple-award 8(a) BPAs to provide technical, administrative, and professional support services to the OUSD(I&S) enterprise — five-year ordering period (one base + four option years), $856 million good faith estimate amount for all BPAs (aggregate across four BPA vendors, not any single vendor''s individual ceiling). Note source typo: "Intelligent & Security" appears in source where the standard form is "Intelligence & Security" (preserved verbatim).'
   statement_date: '2025-06-11'
 - id: q3
   added_date: '2026-05-03'
@@ -224,9 +222,7 @@ quotes:
   source:
     path: news/arlo-contract-vehicles-20260503.html
     location: Contract Vehicles & Schedules — OUSD(I&S) Enterprise BPA description block
-  significance: Arlo's own description of the OUSD(I&S) Enterprise BPA HQ003425A0004 task areas — "specialized and sensitive Technical, Administrative, and Professional Services" across ten enumerated task
-    categories. Arlo's page heading for this contract is "VA T4NG2" (preserved verbatim; nq1) but the description body and the contract number HQ003425A0004 confirm it is the OUSD(I&S) Enterprise BPA, not
-    a VA contract.
+  significance: Arlo's own description of the OUSD(I&S) Enterprise BPA HQ003425A0004 task areas — "specialized and sensitive Technical, Administrative, and Professional Services" across ten enumerated task categories. Arlo's page heading for this contract is "VA T4NG2" but the description body and the contract number HQ003425A0004 confirm it is the OUSD(I&S) Enterprise BPA, not a VA contract; T4NG2 is a real, separate VA IT vehicle and the heading-vs-body mismatch on Arlo's page is unresolved (CMS template error or marketing conflation).
   statement_date: '2025-02-14'
 - id: q13
   added_date: '2026-05-03'
@@ -236,8 +232,7 @@ quotes:
   source:
     path: news/arlo-recruitment-20260503.html
     location: Recruitment page — Influence, Deception, and Perception Management Activities Staff Officer V listing
-  significance: Arlo's own recruitment page advertises Influence, Deception, and Perception Management Activities Staff Officer SME IV and V positions (verbatim mission language paralleling the IPMO charter).
-    The role description names OUSW(I&S) / OUSD(I&S) generally as the customer; no IPMO-direct contract is named on the recruitment page or elsewhere in Arlo's primary-source corpus. See r1 (rumors).
+  significance: Arlo's own recruitment page advertises Influence, Deception, and Perception Management Activities Staff Officer SME IV and V positions (verbatim mission language paralleling the IPMO charter). The role description names OUSW(I&S) / OUSD(I&S) generally as the customer; no IPMO-direct contract is named on the recruitment page or elsewhere in Arlo's primary-source record.
   statement_date: '2026-05-03'
 - id: q14
   added_date: '2026-05-03'
@@ -548,13 +543,20 @@ timeline:
   id: t10
   added_date: '2026-05-03'
 - date: '2024-05-23'
-  event: WHS issued RFQ HQ003424R0178 under the GSA Federal Supply Schedule Professional Services multiple award schedule contract — set aside for 8(a) small businesses, sought multiple-award BPAs to provide
-    technical, administrative, and professional support services to the OUSD(I&S) Enterprise. $856 million good faith estimate.
+  event: 'WHS issued RFQ HQ003424R0178 under the GSA Federal Supply Schedule — set aside for 8(a) small businesses, sought multiple-award BPAs for technical, administrative, and professional support services to the OUSD(I&S) Enterprise. $856 million good faith estimate amount for all BPAs (aggregate across vendors, not any single vendor''s limit).'
   category: contract
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: BACKGROUND section, ¶1 (RFQ basics)
   id: t11
+  added_date: '2026-05-03'
+- date: '2024-05-23'
+  event: 'Solicitation HQ003424R0178 scoped to SASP and EXDIR support services only. Sancorp''s separate prime contracts at AARO ([`/organizations/aaro`]) and IPMO ([`/organizations/ipmo`]) — both pre-existing to this solicitation — are not part of HQ003424R0178.'
+  category: contract
+  source:
+    path: government/gao-b-422985-wayback-20250708.html
+    location: BACKGROUND section, ¶2 (BPA + 2 call orders scope)
+  id: t11b
   added_date: '2026-05-03'
 - date: 2024-09
   event: WHS established initial BPAs and issued Call Order 1 (EXDIR) to Comprehensive Approach LLC and Call Order 2 (SASP) to Sancorp Consulting ([`/organizations/sancorp-consulting`]) under HQ003424R0178.
@@ -584,8 +586,7 @@ timeline:
   id: t14
   added_date: '2026-05-03'
 - date: '2025-02-14'
-  event: WHS established BPA HQ003425A0004 (Technical, Administrative, and Professional Support Services to the OUSD(I&S) Enterprise; $856,000,000 total ceiling) with Arlo as a multiple-award holder following
-    the reevaluation under HQ003424R0178.
+  event: WHS established BPA HQ003425A0004 (Technical, Administrative, and Professional Support Services to the OUSD(I&S) Enterprise) with Arlo as one of four BPA vendors following the reevaluation under HQ003424R0178; $856 million good faith estimate amount applies across all four BPAs aggregate, not Arlo's individual ceiling.
   category: contract
   source:
     path: government/usaspending-arlo-bpa-hq003425a0004.json
@@ -609,14 +610,6 @@ timeline:
     location: Decision header + DISCUSSION section + disposition
   id: t17a
   added_date: '2026-05-03'
-- date: '2025-06-11'
-  event: 'Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support services. Sancorp''s separate prime contracts at AARO ([`/organizations/aaro`]) and IPMO ([`/organizations/ipmo`]) are not part of HQ003424R0178 and continued under Sancorp ([`/organizations/sancorp-consulting`]) through the SASP reevaluation.'
-  category: contract
-  source:
-    path: government/gao-b-422985-wayback-20250708.html
-    location: Decision header + DISCUSSION section + disposition
-  id: t17
-  added_date: '2026-05-03'
 - date: '2026-03-16'
   event: Arlo Solutions publicly announces the SASP HQ003425F0104 contract (a year+ after signing) — "$85M+ multi-year contract" press release naming Lonye Ford ([`/people/lonye-ford`]) as CEO.
   category: publication
@@ -629,13 +622,23 @@ key_personnel:
 - id: kp1
   added_date: '2026-05-03'
   person_path: /people/lonye-ford
-  role: Co-Founder; CEO
+  role: Co-Founder
   period_start: '2014'
   leadership_class: director
   source:
     path: news/arlo-company-overview-2021-08.pdf
     location: p. 4 — Profile FOUNDERS line ("FOUNDERS ARLENE WUBE & LONYE FORD")
-  note: Lonye Ford named in the FOUNDERS line of the August 2021 Company Overview; named CEO of Arlo Solutions in the March 16, 2026 SASP press statement.
+  note: Lonye Ford named in the FOUNDERS line of the August 2021 Company Overview.
+- id: kp1b
+  added_date: '2026-05-03'
+  person_path: /people/lonye-ford
+  role: CEO
+  period_start: '2026-03-16'
+  leadership_class: director
+  source:
+    path: news/arlo-press-85m-sasp-20260503.html
+    location: Press release CEO quote ¶
+  note: Lonye Ford named CEO of Arlo Solutions in the March 16, 2026 SASP press statement.
 - id: kp2
   added_date: '2026-05-03'
   person_path: /people/arlene-wube
@@ -835,7 +838,7 @@ contracts:
   primary_counterparty_path: /organizations/ousd-is
   period_start: '2025-02-14'
   subject: OUSD(I&S) Enterprise BPA — Technical, Administrative and Professional Support Services
-  value: $856,000,000 base-and-all-options ceiling
+  value: '$856,000,000 good faith estimate amount for all BPAs (aggregate across four BPA vendors: Arlo, Sancorp, Premier, and Comprehensive Approach), not Arlo''s individual ceiling. USAspending records this $856,000,000 in the parent BPA base_and_all_options field; per the GAO B-422985 decision the figure is the aggregate good faith estimate for all BPAs awarded under HQ003424R0178.'
   source:
     path: government/usaspending-arlo-bpa-hq003425a0004.json
     location: USAspending API record — date_signed + base_and_all_options + description fields
@@ -848,8 +851,32 @@ contracts:
   period_start: '2025-02-21'
   period_end: '2026-03-27'
   subject: SASP Call Order 2 — Administrative, Policy, Operations, and Analytic Support Services to the OUSD(I&S) Sensitive Activities & Special Programs Office
-  value: $78,512,350.27 base-and-all-options; $7,447,926.22 base exercised options
+  value: '$78,512,350.27 base-and-all-options per USAspending; $7,447,926.22 base exercised options per USAspending; "more than $85 million" per Arlo''s March 16, 2026 SASP press statement. The ~$6.5 million gap between Arlo''s announcement and the USAspending record is unreconciled in source.'
   source:
     path: government/usaspending-arlo-hq003425f0104.json
     location: USAspending API record — date_signed + base_and_all_options + base_exercised_options + description fields
   note: SASP Call Order awarded to Arlo following the WHS reevaluation under HQ003424R0178; took the place of Sancorp's September 2024 initial SASP award. Sancorp filed a protest of the reevaluation; GAO B-422985.4 / B-422985.5 (June 11, 2025) dismissed Sancorp's challenges to the SASP call order on the basis that Sancorp's proposed staff officer key personnel had resigned prior to SASP call order issuance, rendering Sancorp's SASP quotation unacceptable.
+- id: c12
+  added_date: '2026-05-03'
+  contract_number: 47QTCA21D003B
+  contracting_agency: GSA
+  period_start: '2020-12-15'
+  period_end: '2025-12-14'
+  subject: GSA Multiple Award Schedule (MAS) — vehicle Arlo holds; parent IDV for HQ003422F0271, HQ003423F0356, and HQ003424F0190 OUSD(I&S) task orders
+  value: GWAC vehicle (per-task-order value)
+  source:
+    path: news/arlo-contract-vehicles-20260503.html
+    location: Contract Vehicles & Schedules — GSA Multiple Award Schedule block
+  note: 'GSA MAS GWAC contract held by Arlo as a prime; SIN 54151S (Information Technology Professional Services), SIN 541611 (Professional Management), SIN 561320SBSA (Temporary Staffing). Several OUSD(I&S) Arlo task orders pertain to this GSA MAS as parent IDV.'
+- id: c13
+  added_date: '2026-05-03'
+  contract_number: 47QTCB21D0051
+  contracting_agency: GSA
+  period_start: '2021-07-02'
+  period_end: '2026-07-01'
+  subject: GSA 8(a) STARS III GWAC — vehicle Arlo holds for IT solutions task orders
+  value: GWAC vehicle (fixed price, time and materials, labor-hour, hybrid; per-task-order value)
+  source:
+    path: news/arlo-contract-vehicles-20260503.html
+    location: Contract Vehicles & Schedules — GSA 8(a) Stars III block
+  note: 'GSA 8(a) Stars III GWAC contract held by Arlo; small business set-aside vehicle for customized IT solutions across federal agencies. Period of performance July 2, 2021 — July 1, 2026 with one 3-year option according to Arlo''s contract vehicles page.'
