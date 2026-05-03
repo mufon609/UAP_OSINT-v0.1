@@ -112,7 +112,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-### Section 2(c) — extends the secondary title authorization to subordinate officials (illustrative: Deputy / Under Secretary of War). Source for the OUSW(I&S) form used in Arlo Solutions ([`/organizations/arlo-solutions`]) and Sancorp Consulting ([`/organizations/sancorp-consulting`]) post-2025 marketing.
+### Section 2(c) — extends the secondary title authorization to subordinate officials, with "Deputy Secretary of War" and "Under Secretary of War" as illustrative corresponding titles. Authorizes the OUSW(I&S) form (Office of the Under Secretary of War for Intelligence and Security) used in Arlo Solutions ([`/organizations/arlo-solutions`]) and Sancorp Consulting ([`/organizations/sancorp-consulting`]) post-2025 corporate marketing.
 
 > (c) The provisions of this section shall also
 > apply, as appropriate, to subordinate officials within
@@ -129,7 +129,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-### Section 2(e) — statutory-controlling clause: statutory references remain "Department of Defense" / "Secretary of Defense" until changed by law. Anchors the OUSD-in-procurement / OUSW-in-marketing asymmetry observed in Arlo and Sancorp records.
+### Section 2(e) — statutory-controlling clause. Establishes that the secondary title authorization in 2(a)-(d) does not change the statutory name of the Department; statutory references remain "Department of Defense" / "Secretary of Defense" until changed by an act of Congress. Anchors the OUSD-in-procurement / OUSW-in-marketing asymmetry observed in Arlo and Sancorp records.
 
 > (e) Statutory references to the Department of
 > Defense, Secretary of Defense, and subordinate officers
@@ -144,7 +144,7 @@ Section 3 (General Provisions) states that nothing in this order shall be constr
 
 ---
 
-### Section 2(f) — 30-day notification requirement: the Secretary of War reports any office, executive department or agency, component, or command that begins using the secondary Department of War designation, for transmittal to Congress.
+### Section 2(f) — 30-day notification requirement. The Secretary of War (per 2(a)) submits a notification to the President, through the Assistant to the President for National Security Affairs, listing any office, executive department or agency, component, or command that begins using the secondary Department of War designation. Notification is for transmittal to Congress.
 
 > (f) Within 30 days of the date of this order, the
 > Secretary of War shall submit to the President, through

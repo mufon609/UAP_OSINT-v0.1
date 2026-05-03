@@ -120,7 +120,7 @@ quotes:
   source:
     path: government/eo-14347-restoring-department-of-war-20250910.txt
     location: 'Section 2 (Implementation) subsection (c) (lines 70-75 of the extracted source)'
-  significance: 'Section 2(c) — extends the secondary title authorization to subordinate officials (illustrative: Deputy / Under Secretary of War). Source for the OUSW(I&S) form used in Arlo Solutions ([`/organizations/arlo-solutions`]) and Sancorp Consulting ([`/organizations/sancorp-consulting`]) post-2025 marketing.'
+  significance: 'Section 2(c) — extends the secondary title authorization to subordinate officials, with "Deputy Secretary of War" and "Under Secretary of War" as illustrative corresponding titles. Authorizes the OUSW(I&S) form (Office of the Under Secretary of War for Intelligence and Security) used in Arlo Solutions ([`/organizations/arlo-solutions`]) and Sancorp Consulting ([`/organizations/sancorp-consulting`]) post-2025 corporate marketing.'
   statement_date: '2025-09-05'
 - id: q6
   added_date: '2026-05-03'
@@ -132,7 +132,7 @@ quotes:
   source:
     path: government/eo-14347-restoring-department-of-war-20250910.txt
     location: 'Section 2 (Implementation) subsection (e) (lines 82-85 of the extracted source)'
-  significance: 'Section 2(e) — statutory-controlling clause: statutory references remain "Department of Defense" / "Secretary of Defense" until changed by law. Anchors the OUSD-in-procurement / OUSW-in-marketing asymmetry observed in Arlo and Sancorp records.'
+  significance: 'Section 2(e) — statutory-controlling clause. Establishes that the secondary title authorization in 2(a)-(d) does not change the statutory name of the Department; statutory references remain "Department of Defense" / "Secretary of Defense" until changed by an act of Congress. Anchors the OUSD-in-procurement / OUSW-in-marketing asymmetry observed in Arlo and Sancorp records.'
   statement_date: '2025-09-05'
 - id: q7
   added_date: '2026-05-03'
@@ -147,7 +147,7 @@ quotes:
   source:
     path: government/eo-14347-restoring-department-of-war-20250910.txt
     location: 'Section 2 (Implementation) subsection (f) (lines 86-92 of the extracted source)'
-  significance: 'Section 2(f) — 30-day notification requirement: the Secretary of War reports any office, executive department or agency, component, or command that begins using the secondary Department of War designation, for transmittal to Congress.'
+  significance: 'Section 2(f) — 30-day notification requirement. The Secretary of War (per 2(a)) submits a notification to the President, through the Assistant to the President for National Security Affairs, listing any office, executive department or agency, component, or command that begins using the secondary Department of War designation. Notification is for transmittal to Congress.'
   statement_date: '2025-09-05'
 - id: q8
   added_date: '2026-05-03'
