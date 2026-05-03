@@ -10,8 +10,7 @@ description: 'Arlo Solutions, LLC is a small business of Washington, D.C. founde
   Service Disabled Veteran Owned Business, Small Business, and Women Owned Small Business. The recipient address according to USAspending is 200 Massachusetts Ave NW Suite 700 Washington, DC 20001. The March 16, 2026 SASP press statement named Lonye Ford as CEO; Arlene Wube and broader Arlo staff do not appear in the SASP press statement.
 
 
-  Arlo''s principal federal customer is the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) — Arlo''s corporate marketing uses the form OUSW(I&S)
-  (Office of the Under Secretary of War for Intelligence and Security). According to USAspending records, Arlo has held prime contracts issued by Washington Headquarters Services ([`/organizations/whs`]) to
+  Arlo''s principal federal customer is the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) — Arlo''s corporate marketing uses the form OUSW(I&S) (Office of the Under Secretary of War for Intelligence and Security), while the federal procurement record (USAspending, GAO B-422985) identified the customer using the OUSD(I&S) form. See Sancorp Consulting ([`/organizations/sancorp-consulting`]) for the Executive Order framework documenting this adoption. According to USAspending records, Arlo has held prime contracts issued by Washington Headquarters Services ([`/organizations/whs`]) to
   OUSD(I&S) since September 2019, including Personnel Security Policy Support (HQ003419C0172), Business Operations and Support Services (HQ003420C0104), Counterintelligence, Law Enforcement and Security
   Policy Support (HQ003421C0078, HQ003422F0271, HQ003423F0356), Cyberspace Oversight Support Services (HQ003422C0092), Admin Support Services (HQ003421C0090), Event Planning Support Services (HQ003423C0093),
   and Integrated Vetting Policy & Analytical Support (HQ003424F0190 — a $3.7 million contract with the OUSD(I&S) CL&S Integrated Vetting team on April 18, 2024). On February 14, 2025, WHS established
@@ -222,7 +221,7 @@ quotes:
   source:
     path: news/arlo-contract-vehicles-20260503.html
     location: Contract Vehicles & Schedules — OUSD(I&S) Enterprise BPA description block
-  significance: Arlo's own description of the OUSD(I&S) Enterprise BPA HQ003425A0004 task areas — "specialized and sensitive Technical, Administrative, and Professional Services" across ten enumerated task categories. Arlo's page heading for this contract is "VA T4NG2" but the description body and the contract number HQ003425A0004 confirm it is the OUSD(I&S) Enterprise BPA, not a VA contract; T4NG2 is a real, separate VA IT vehicle and the heading-vs-body mismatch on Arlo's page is unresolved (CMS template error or marketing conflation).
+  significance: 'Arlo''s own description of the OUSD(I&S) Enterprise BPA HQ003425A0004 task areas — "specialized and sensitive Technical, Administrative, and Professional Services" across ten enumerated task categories. Arlo''s page heading for this contract is "VA T4NG2" but the description body and the contract number HQ003425A0004 confirm it is the OUSD(I&S) Enterprise BPA, not a VA contract. T4NG2 is a real, separate VA IT vehicle (Transformation Twenty-One Total Technology Next Generation 2 — 30 prime awardees announced October 2023). Arlo is NOT a T4NG2 prime — USAspending shows zero VA contracts under Arlo''s UEI JSRCFJVJM874, and Arlo does not appear in the published T4NG2 awardee list. The heading-vs-body mismatch on Arlo''s page is most likely a CMS template-reuse error — Arlo''s server retains a 2024-10-uploaded VA-T4NG2 logo asset (per Wayback capture), suggesting Arlo had earlier T4NG2 marketing intent (subcontractor positioning or aspirational bid material) before re-purposing the page entry for the OUSD(I&S) BPA win in February 2025.'
   statement_date: '2025-02-14'
 - id: q13
   added_date: '2026-05-03'
@@ -416,8 +415,7 @@ naming_quirks:
   location: Contract Vehicles & Schedules page — heading above the HQ003425A0004 entry
   source_path: news/arlo-contract-vehicles-20260503.html
   resolution: use-canonical
-  note: Arlo's own Contract Vehicles & Schedules page renders the heading "VA T4NG2" above the HQ003425A0004 contract entry, but the description body and contract number confirm the entry is the OUSD(I&S)
-    Enterprise BPA, not a VA contract. Likely a stale heading from an earlier Arlo contract listing.
+  note: 'Arlo''s own Contract Vehicles & Schedules page renders the heading "VA T4NG2" above the HQ003425A0004 contract entry, but the description body and contract number confirm the entry is the OUSD(I&S) Enterprise BPA, not a VA contract. Disposition (investigated 2026-05-03): Arlo is NOT a T4NG2 prime — USAspending shows zero VA contracts under UEI JSRCFJVJM874 (top 50 awards), and Arlo does not appear in the published 30-awardee T4NG2 list. Wayback capture (2025-12-15) shows Arlo''s server retains a /wp-content/uploads/2024/10/VA-T4NG2-Logo-300x300-2.png asset, indicating prior T4NG2 marketing intent (likely subcontractor-team positioning or aspirational bid material that did not result in a prime award). Most parsimonious explanation for the heading-vs-body mismatch: CMS template-reuse error after the OUSD(I&S) BPA HQ003425A0004 win in February 2025, where Arlo overwrote the body text but did not update the heading or replace the logo.'
   added_date: '2026-05-03'
 - id: nq2
   observed: Intelligent & Security
@@ -458,6 +456,15 @@ rumors:
     and CL&S as customer offices but does not name IPMO. The Influence/Deception/Perception position descriptions on Arlo's recruitment page list OUSD(I&S) generally as the customer office; the work most
     likely bills under SASP scope under HQ003425F0104 (which has scope overlap with IPMO mission areas including "designated compartmented programs" management) but that is inference, not primary-source
     attestation. Graduate to a quote entry if a USAspending or FOIA-released contract record names IPMO as Arlo's customer office.
+- id: r2
+  added_date: '2026-05-03'
+  claim: Sancorp's resigned SASP staff officer key personnel ("X" in the GAO B-422985 decision) joined Arlo Solutions in February 2025 — i.e., Arlo poached the Sancorp incumbent who would have filled the SASP staff officer SME IV role, materially weakening Sancorp's protest position.
+  status: not-primary-source-established
+  observed_sources:
+  - GAO B-422985.4 / B-422985.5 decision (June 11, 2025) names Arlo as the intervenor whose request for dismissal cited X's resignation and new employment
+  - Arlo's recruitment page advertises Influence, Deception, and Perception Management Activities Staff Officer SME IV positions — same level/role X had at Sancorp
+  - Arlo's Greenhouse job board carries an "OUSW(I&S) SASP Incumbent" category placeholder, suggesting incumbent-staff-transfer mechanics
+  note: 'Investigated 2026-05-03. No primary source establishes an X→Arlo lateral move. Two converging structural signals point to a non-Arlo employer: (1) Arlo''s intervenor brief (per GAO source line 1559) names X''s new employer as "another company" — third-party phrasing; a self-referencing employer would normally be named directly. (2) X''s new role per Arlo''s brief is "Operations Officer/Research Analyst" — title does not match Arlo''s Greenhouse job-board taxonomy of Staff Officer SME I-IV roles tagged by mission area. The "Operations Officer/Research Analyst" hybrid title is more consistent with a specialized analytical firm or government direct-hire position. X is anonymized to a single letter in the GAO source by deliberate agency choice; identification via authenticated LinkedIn scraping was declined on Terms-of-Service / privacy / repository-discipline grounds. The protest narrative stands as documented regardless of X''s identity — the SASP-key-personnel-unavailability mechanic is the load-bearing fact, not X''s subsequent employer. Graduate to a quote entry if a primary source (FOIA-released GAO exhibit, federal-court filing, or named hire announcement) attests the X→Arlo claim.'
 timeline:
 - date: '2014'
   event: Arlo Solutions founded as a small business in Washington, DC by Arlene Wube ([`/people/arlene-wube`]) and Lonye Ford ([`/people/lonye-ford`]).
