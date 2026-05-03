@@ -4,13 +4,13 @@ schema_version: 1
 target_node: organizations/aaro
 status: active
 created: '2026-04-20'
-description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`]) is a [`/organizations/dod`] office established on July 15, 2022 by Deputy Secretary of Defense Kathleen Hicks, following the enactment of Section 1683 of the National Defense Authorization Act for Fiscal Year 2022. Per the Hicks memorandum, AARO was established "to carry out the duties that were to be fulfi lled by the AOIMSG"; upon AARO''s establishment, the Secretary of the [`/organizations/us-navy`] was directed to disestablish the Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]).
+description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`]) is a [`/organizations/dod`] office established on July 15, 2022 by Deputy Secretary of Defense Kathleen Hicks, following the enactment of Section 1683 of the National Defense Authorization Act for Fiscal Year 2022. Per the Hicks memorandum, AARO was established "to carry out the duties that were to be fulfi lled by the AOIMSG" [sic — source PDF text reads "fulfi lled"]; upon AARO''s establishment, the Secretary of the [`/organizations/us-navy`] was directed to disestablish the Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]).
 
 
   The Hicks memorandum states AARO "will serve as the authoritative office of the Unidentified Aerial Phenomena (UAP) and UAP-related activities for the DoD" and "is the DoD focal point for all UAP and UAP-related activities". Its mission is to "synchronize efforts across the Department and with other Federal departments and agencies to detect, identify, and attribute objects of interest in, on, or near military installations, operating areas, training areas, special use airspace, and other areas of interest, and, as necessary, to mitigate any associated threats to safety of operations and national security." Scope includes "anomalous, unidentified space, airborne, submerged, and transmedium objects."
 
 
-  The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 by Deputy Secretary of Defense David L. Norquist; the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was established on November 23, 2021 as the successor to the UAPTF and renamed to AARO in July 2022. AARO operates in coordination with the Office of the Director of National Intelligence ([`/organizations/odni`]).
+  The Unidentified Aerial Phenomena Task Force was established on August 4, 2020 by Deputy Secretary of Defense David L. Norquist; the Airborne Object Identification and Management Synchronization Group ([`/organizations/aoimsg`]) was directed by Hicks on November 23, 2021 as the successor to the U.S. Navy''s UAPTF. Following the enactment of Section 1683 of the NDAA for Fiscal Year 2022, Hicks''s July 15, 2022 memorandum issued amendments to her original November 23, 2021 direction: AARO would be established to carry out the duties originally assigned to the AOIMSG. AARO operates in coordination with the Office of the Director of National Intelligence ([`/organizations/odni`]).
 
 
   Dr. Sean M. Kirkpatrick ([`/people/sean-kirkpatrick`]) was asked by USD(I&S) to stand-up and lead AARO in early 2022; he led the office through December 2023. Timothy A. Phillips ([`/people/tim-phillips`]) assumed the duties of the Deputy Director (Acting Director) in October 2023. Dr. Jon T. Kosloski ([`/people/jonathan-kosloski`]) arrived on detail from the National Security Agency ([`/organizations/nsa`]) to be appointed the director in 2024. AARO published its [`/documents/aaro-historical-record-report-vol-i`] in March 2024. The Hicks establishment memorandum also renamed the predecessor AOIMEXEC to the AARO Executive Council ([`/organizations/aaroexec`]) — its mission, per the memorandum, is "to provide oversight and direction to the AARO."
@@ -25,7 +25,7 @@ description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`])
   Per the FY 2026 OSD OP-5 budget submission, in addition to AARO, the OUSD(I&S) operating budget provides funding for the Influence and Perception Management Office ([`/organizations/ipmo`]), the Defense Military Deception Program Office ([`/organizations/dmdpo`]), the OSD Red Team ([`/organizations/osd-red-team`]), the Strategy Coordination Program Office ([`/organizations/scpo`]), the Counterproliferation of Weapons of Mass Destruction Office ([`/organizations/cp-wmd`]), and the Law Enforcement Oversight and Compliance Directorate ([`/organizations/le-oversight-compliance-directorate`]). Sancorp Consulting ([`/organizations/sancorp-consulting`]) also holds a prime contract at IPMO (HQ003422C0064, PWS dated April 25, 2022), issued by Washington Headquarters Services Acquisition Directorate as an 8(a) sole-source procurement.
 
 
-  In late July 2023, Deputy Secretary of Defense Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Director Kirkpatrick ([`/people/sean-kirkpatrick`]) to report directly to her — per DefenseScoop reporting (Brandi Vincent ([`/people/brandi-vincent`]), August 30, 2023). Hicks took action late that month, partly to help speed up AARO''s launch of the congressionally mandated public website (subsequently launched on August 31, 2023). Per the same reporting, between November 2022 and April 2023, the AARO website launch package had moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week under USD(I&S) Moultrie''s ([`/people/ronald-moultrie`]) request, with AARO regularly coordinating the memo and Kirkpatrick attending several in-person meetings with the under secretary. Hicks''s late-July reorganization placed AARO''s operational reporting line under the Deputy Secretary of Defense — one of the two reporting lines required by 50 U.S.C. § 3373 (under which Director, AARO reports to both the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence) — and followed within days of the July 26, 2023 House Oversight UAP hearing. The PDDNI reporting line was not implemented in the same window; the FOIA 24-F-0894 Gough/ODNI exchange documented below shows ODNI explicitly omitted from the March 2024 Historical Record Report Volume I rollout despite Gough flagging the PDDNI reporting line.
+  In late July 2023, Deputy Secretary of Defense Hicks ([`/people/kathleen-hicks`]) moved to personally oversee AARO and repositioned Director Kirkpatrick ([`/people/sean-kirkpatrick`]) to report directly to her — per DefenseScoop reporting (Brandi Vincent ([`/people/brandi-vincent`]), August 30, 2023). Hicks took action late that month, partly to help speed up AARO''s launch of the congressionally mandated public website (subsequently launched on August 31, 2023). Per the same reporting, between November 2022 and April 2023, the AARO website launch package had moved back and forth between the OUSD(I&S) Front Office and AARO at least every other week under USD(I&S) Moultrie''s ([`/people/ronald-moultrie`]) request, with AARO regularly coordinating the memo and Kirkpatrick attending several in-person meetings with the under secretary. Hicks''s late-July reorganization placed AARO''s operational reporting line under the Deputy Secretary of Defense — one of the two reporting lines required by 50 U.S.C. § 3373 (under which Director, AARO reports to both the Deputy Secretary of Defense and the Principal Deputy Director of National Intelligence) — and followed within days of the July 26, 2023 House Oversight UAP hearing. There is no public evidence that the PDDNI reporting line was given operational effect in parallel with the DEPSECDEF line; the FOIA 24-F-0894 Gough/ODNI exchange documented below shows that ODNI Public Affairs and OSD PA agreed to omit any ODNI reference from the March 2024 Historical Record Report Volume I public rollout despite Gough flagging the PDDNI reporting line.
 
 
   AARO Historical Record Report Volume I documents KONA BLUE — a proposed UAP recovery and reverse-engineering program brought to AARO''s attention by interviewees who claimed it was a sensitive DHS compartment to cover up the retrieval and exploitation of "non-human biologics." Per the report, KONA BLUE traces its origins to the DIA-managed AAWSAP/AATIP program (cancelled by DIA in 2012); after cancellation, supporters proposed to DHS that they create and fund a new version under a Special Access Program covering UAP investigations, paranormal research and reverse-engineering of "any recovered off-world spacecraft that they hoped to acquire." A Prospective Special Access Program (PSAP) was officially requested but eventually rejected by DHS leadership for lacking merit. The report''s finding: "no extraterrestrial craft or bodies were ever collected" and the SAP "was never approved or stood up, and no data or material was transferred to DHS."
@@ -241,7 +241,7 @@ quotes:
   statement_date: '2022-07-20'
 - id: q6
   added_date: '2026-04-20'
-  text: During his tenure, Dr. Kirkpatrick stood up the office and its operations, investigated more than 800 unidentified anomalous phenomena (UAP) cases, led an extensive search for U.S. Government and contractor programs associated with UAP, and established the department&#39;s first public-facing website
+  text: During his tenure, Dr. Kirkpatrick stood up the office and its operations, investigated more than 800 unidentified anomalous phenomena (UAP) cases, led an extensive search for U.S. Government and contractor programs associated with UAP, and established the department's first public-facing website
   source:
     path: government/defense-gov-kirkpatrick-departure-20231120.html
     location: article body ¶3
@@ -259,7 +259,7 @@ quotes:
   statement_date: '2024-08-26'
 - id: q8
   added_date: '2026-04-20'
-  text: As the AARO director, Dr. Kosloski will head DoD&#39;s efforts, in coordination with the Intelligence Community, to minimize technical and intelligence surprise by synchronizing scientific, intelligence, and operational detection, identification, attribution, and mitigation of unidentified anomalous phenomena (UAP) in the vicinity of national security areas.
+  text: As the AARO director, Dr. Kosloski will head DoD's efforts, in coordination with the Intelligence Community, to minimize technical and intelligence surprise by synchronizing scientific, intelligence, and operational detection, identification, attribution, and mitigation of unidentified anomalous phenomena (UAP) in the vicinity of national security areas.
   source:
     path: government/defense-gov-kosloski-appointment-20240826.html
     location: article body ¶3
@@ -1054,7 +1054,7 @@ key_personnel:
   added_date: '2026-04-20'
   person_path: /people/jonathan-kosloski
   role: Director (detail from National Security Agency)
-  period_start: 2024-08
+  period_start: 2024-08-26
   leadership_class: director
   source:
     path: government/defense-gov-kosloski-appointment-20240826.html
@@ -1649,6 +1649,14 @@ naming_quirks:
   source_path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
   resolution: preserve-as-sic-in-quotes
   note: 'Kirkpatrick biography uses hyphenated "stand-up" as a verb form. Description prose now matches source verbatim.'
+- id: nq5
+  added_date: '2026-05-03'
+  observed: fulfi lled
+  canonical: fulfilled
+  location: Hicks establishment memo p.1 — "The All-domain Anomaly Resolution Office (AARO) will be established to carry out the duties that were to be fulfi lled by the AOIMSG"
+  source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'The Hicks memorandum is a text-native PDF, but the source text layer encodes "fulfilled" with an internal space — both `pdftotext` (default) and `pdftotext -layout` extract the literal token "fulfi lled". The visible memorandum reads "fulfilled". Same shape as the BACKLOG #19 `extraction-lossy` category (text layer present, not OCR''d, but pdftotext yields artifacts); the verbatim quote in description prose preserves the source extract as received. A clean `.txt` sibling per the BACKLOG #19 Phase F discipline could close this at the manifest layer.'
 - id: nq2
   added_date: '2026-04-20'
   observed: Airborne Object Identification and Management Group
