@@ -255,6 +255,7 @@ types:
       - letter
       - contract
       - press-release
+      - executive-order
       - assessment
       - bio
       - complaint
