@@ -504,6 +504,13 @@ types:
       #       gov (agency/office): internal_name, full_name, statutory_authority,
       #                    established_date, terminated_date,
       #                    parent_organization_path, current_director_path,
+      #                    head_title (optional opt-in label override for
+      #                    current_director_path — e.g., "Under Secretary",
+      #                    "Acting Director", "Secretary", "Commander"; when
+      #                    absent, the Overview row labels current_director_path
+      #                    as "Director" — accurate for agency-kind heads,
+      #                    less so for under-secretariats / departments /
+      #                    services / commands; backward-compatible),
       #                    office_type (agency|office|program|lab|commission),
       #                    jurisdiction
       #       gov (military-unit): designator, unit_class

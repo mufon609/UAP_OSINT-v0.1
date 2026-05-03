@@ -18,7 +18,7 @@ created: 2026-04-30
 | Statutory Authority | 10 U.S.C. § 137 (originally enacted by Section 901 of P.L. 107-314, NDAA FY2003; redesignated by Section 1621 of P.L. 116-92, NDAA FY2020) |
 | Established | 2002-12-02 |
 | Parent Organization | [`/organizations/dod`] |
-| Director | [`/people/bradley-hansell`] |
+| Under Secretary | [`/people/bradley-hansell`] |
 | Jurisdiction | Department of Defense — Defense Intelligence and Security Enterprises |
 
 ---

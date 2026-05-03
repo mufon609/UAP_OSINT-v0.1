@@ -1639,7 +1639,14 @@ def render_org_overview(artifact, kind):
         val = dm.get(key)
         if val in (None, "", []):
             continue
-        label = _ORG_OVERVIEW_LABELS.get(key, key)
+        # head_title overrides the generic "Director" label on
+        # current_director_path for under-secretariats / departments /
+        # services / commands where the head's true title isn't "Director".
+        # Opt-in; falls back to the generic label when unset.
+        if key == "current_director_path" and dm.get("head_title"):
+            label = dm["head_title"]
+        else:
+            label = _ORG_OVERVIEW_LABELS.get(key, key)
         if key.endswith("_path"):
             # Render path-valued fields as wrap links.
             val = _wrap_path(str(val))

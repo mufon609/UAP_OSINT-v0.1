@@ -95,6 +95,7 @@ document_intrinsic:
   established_date: '2002-12-02'
   parent_organization_path: /organizations/dod
   current_director_path: /people/bradley-hansell
+  head_title: Under Secretary
   office_type: office
   jurisdiction: Department of Defense — Defense Intelligence and Security Enterprises
 context_extrinsic:
