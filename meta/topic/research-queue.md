@@ -271,12 +271,15 @@ node.
 **Build dependencies (in priority order).** The finding is gated on these
 to launch with substantive density rather than as a 2-entity observation:
 
-1. `/organizations/arlo-solutions` — second contractor data point beyond
-   Sancorp; tests whether the marketing/procurement asymmetry generalizes
-   across the OUSD(I&S) contractor substrate
-2. `/organizations/ipmo` — third architectural layer (per
-   `meta/topic/working-notes/uap-disclosure-architecture-handoff.md`);
-   contracts with Arlo
+1. `/organizations/arlo-solutions` (built 2026-05-03) — second contractor
+   data point beyond Sancorp; tests whether the marketing/procurement
+   asymmetry generalizes across the OUSD(I&S) contractor substrate.
+   Arlo's built record attests SASP and CL&S as customer offices;
+   no IPMO-direct contract is attested in the Arlo primary-source corpus
+   (see Arlo node rumors r1).
+2. `/organizations/ipmo` (built 2026-05-02) — third architectural layer
+   under OUSD(I&S). Built; no Arlo-IPMO contract attested in either
+   node's record.
 3. `/documents/eo-14347-restoring-department-of-war` — legal foundation
    (Sec 2(a) authorization, Sec 2(b) non-statutory adoption, Sec 2(e)
    statutory preservation); source already archived

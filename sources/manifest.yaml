@@ -52,6 +52,31 @@
   archive_status: 3
   note: 'Defense.gov (defenselink.mil) biography of Dr. Stephen A. Cambone, the first Under Secretary of Defense for Intelligence. ''Stephen A. Cambone was confirmed by the U.S. Senate as the Under Secretary of Defense for Intelligence on March 7th, 2003.'' Prior roles: Director, Program Analysis and Evaluation, OSD (July 2002 - March 2003); Principal Deputy Under Secretary of Defense for Policy (July 2001 - July 2002); Special Assistant to the Secretary and Deputy Secretary of Defense (January 2001 - July 2001); Staff Director for the Commission to Assess United States National Security Space Management and Organization (July 2000 - January 2001); Director of Research at INSS/NDU (August 1998 - July 2000); Staff Director for Rumsfeld Commission on Ballistic Missile Threat (January 1998 - July 1998); CSIS Senior Fellow Political-Military Studies (1993 - 1998). Wayback capture from 2007-09-29 (defenselink.mil bio updated 2006-01-13).'
   wayback_date: '2008-09-12'
+- url: https://api.usaspending.gov/api/v2/awards/CONT_AWD_HQ003425F0104_9700_HQ003425A0004_9700/
+  format: txt
+  status: archived
+  path: government/usaspending-arlo-hq003425f0104.json
+  archived_date: '2026-05-03'
+  sha256: ac47eea1b3b3cf7cd6e42d0753d01041ecd1d61a7c9f26c5a1a9b4ab23a5bfed
+  archive_status: 1
+  note: USAspending API record for Arlo SASP BPA Call Order HQ003425F0104 ($78.5M base-and-all-options ceiling, signed 2025-02-21, parent BPA HQ003425A0004, awarded by WHS, funded by OSD OUSD(I)).
+- url: https://api.usaspending.gov/api/v2/awards/CONT_IDV_HQ003425A0004_9700/
+  format: txt
+  status: archived
+  path: government/usaspending-arlo-bpa-hq003425a0004.json
+  archived_date: '2026-05-03'
+  sha256: b496146e8fe8af405b1afa17e95477b81cbe1ecea17e2983dcd8a7f35114b51b
+  archive_status: 3
+  note: USAspending API record for Arlo parent BPA HQ003425A0004 (M total ceiling, signed 2025-02-14, awarded by WHS) - Technical Administrative and Professional Support Services to the OUSD(I&S) Enterprise.
+  wayback_date: '2026-05-03'
+- url: https://api.usaspending.gov/api/v2/search/spending_by_award/
+  format: txt
+  status: archived
+  path: government/usaspending-arlo-search.json
+  archived_date: '2026-05-03'
+  sha256: 652cedfae5e33ea09c4af154af6b63c664eeb47298f35f7435096f199a1d4d4e
+  archive_status: 1
+  note: USAspending API award search by recipient UEI JSRCFJVJM874 (Arlo Solutions LLC); top 50 awards by amount returned, captured 2026-05-03; documents Arlo's full federal contract record back to 2019.
 - url: https://apps.uintah.utah.gov/ords/ucdev/r/public-searches/property-search?serial=140340003
   format: pdf
   status: archived
@@ -142,6 +167,59 @@
   archive_status: 1
   wayback_skip: true
   note: 'Contributor-produced clean-text transcription of the OCR-scanned PPD-19 procedural filing PDF (paired entry above; same path stem). Visually verified against PDF page rendering 2026-04-24. The PDF''s mupdf-pipeline text layer carries OCR artifacts ("UAP-telated", "compatrtmented", "appatently" in ¶3–5; "ate", "cottelated" in ¶6); this transcription restores the clean original forms. Validator (validate.py extract_source_text) prefers a same-stem .txt sibling over pdftotext output for PDFs flagged extraction_type=ocr-scan. Real document oddities preserved as-is: typo "200236" for ZIP "20036" in Bakaj''s address (p. 3); missing closing paren in "(k)(5(D)(ii)" of section 7. Signature glyphs (which OCR garbles to artifacts like "ICG zx" / "Cele") rendered as "[signature]" placeholders since the cursive script is not extractable text.'
+- url: https://arlo-solutions.com/
+  format: html
+  status: archived
+  path: news/arlo-home-20260503.html
+  archived_date: '2026-05-03'
+  sha256: 614c6504cb5d70bbbc937e455fc654676a0cd0dd090c135efd005327a77275b0
+  archive_status: 3
+  note: Arlo Solutions corporate home page; captures company overview, founding (2014), DC HQ, leadership and certifications. Captured 2026-05-03.
+  wayback_date: '2026-01-30'
+- url: https://arlo-solutions.com/arlo-solutions-awarded-85m-multi-year-contract-for-sasp-ouswis/
+  format: html
+  status: archived
+  path: news/arlo-press-85m-sasp-20260503.html
+  archived_date: '2026-05-03'
+  sha256: 6467a45387963c6e7e2423855a2732332bced89d4331946945de642a96295be1
+  archive_status: 3
+  note: Arlo press release announcing M+ multi-year contract for SASP support to OUSW(I&S); captured 2026-05-03.
+  wayback_date: '2026-05-03'
+- url: https://arlo-solutions.com/arlo-solutions-awarded-ousd-is-contract/
+  format: html
+  status: archived
+  path: news/arlo-press-cls-vetting-20260503.html
+  archived_date: '2026-05-03'
+  sha256: cac22488e6af376d072b8168ab1144754319c7199559e18cff25341a8a87a622
+  archive_status: 3
+  note: Arlo press release announcing .7M OUSD(I&S) CL&S Integrated Vetting contract (HQ003424F0190); April 2024. Captured 2026-05-03.
+  wayback_date: '2025-12-15'
+- url: https://arlo-solutions.com/contract-vehicles-schedules/
+  format: html
+  status: archived
+  path: news/arlo-contract-vehicles-20260503.html
+  archived_date: '2026-05-03'
+  sha256: 7f47bda17c34264f4efb9c5b1ccb9cd6805bc1735e98e9e4ab7dee26940b03c6
+  archive_status: 3
+  note: Arlo Contract Vehicles & Schedules page; lists GSA MAS, OASIS+, 8(a) Stars III, and OUSD(I&S) BPA HQ003425A0004. Captured 2026-05-03.
+  wayback_date: '2026-01-19'
+- url: https://arlo-solutions.com/recruitment/
+  format: html
+  status: archived
+  path: news/arlo-recruitment-20260503.html
+  archived_date: '2026-05-03'
+  sha256: c5e84ce5556675cd0aefebd8968200d4c3e11835c93bf19eeef2381f800787f0
+  archive_status: 3
+  note: Arlo recruitment / careers page; advertises positions including Influence Deception and Perception Management Activities Staff Officer SME IV/V supporting OUSD(I&S). Used for IPMO-mission-language observation in rumors. Captured 2026-05-03.
+  wayback_date: '2026-01-19'
+- url: https://arlo-solutions.com/wp-content/uploads/2021/08/2021-AUGUST-Arlo-Company-Overview-COPY.pdf
+  format: pdf
+  status: archived
+  path: news/arlo-company-overview-2021-08.pdf
+  archived_date: '2026-05-03'
+  sha256: ae15333bf5296cd44bdcc3e838b82730359e647fd3febb6898814e09b0d6311b
+  archive_status: 1
+  note: Arlo Company Overview slide deck (August 2021); founders, founding year, certifications, NAICS, CAGE, DUNS. Captured 2026-05-03.
 - url: https://armedservices.house.gov/_cache/files/a/2/a284ee97-4a2d-495d-808a-4d76c6c0b5b8/09D1256E34E6463BD2CD0493DEAC756E.20220317-iso-witness-statement-moultrie.pdf
   format: pdf
   status: archived
