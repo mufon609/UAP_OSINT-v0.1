@@ -26,6 +26,12 @@ Two backlogs live here, distinguished by origin:
 - **Status values:** Pending, In-progress, Blocked
 - **Active items only.** When a queued item is built, remove its row —
   git log is the build-history record (`git log --diff-filter=A`).
+- **Completed audits table = node + most-recent audit date only.** No
+  round labels, no cycle annotations, no per-pass summaries. Fix history
+  lives in `git log` (`git log --grep "<node>"` shows the audit-related
+  commits). The table tells future contributors which nodes have been
+  audited and when; the per-node "Known caveats" sections below carry
+  forward the substantive caveats and open questions.
 
 ---
 
@@ -221,11 +227,11 @@ cluster. Remaining stubs (surfaced by the AARO + UAPTF builds):
 One row per node. Fix history lives in `git log`; substantive caveats and
 open questions live in the per-node sections below.
 
-| Node | Most recent audit | Cycle |
-|---|---|---|
-| `/people/david-fravor` | 2026-04-19 | i0 → i1 audit-correction |
-| `/organizations/arlo-solutions` | 2026-05-03 | Web audit Round 3 |
-| `/organizations/aaro` | 2026-05-03 | Web audit, multi-round (initial → Round 5 Phase 2) |
+| Node | Most recent audit |
+|---|---|
+| `/people/david-fravor` | 2026-04-19 |
+| `/organizations/arlo-solutions` | 2026-05-03 |
+| `/organizations/aaro` | 2026-05-03 |
 
 ---
 
