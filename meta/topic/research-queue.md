@@ -228,6 +228,47 @@ table tracks audit history only.
 | `/organizations/aaro` (web audit — parent org corrected, AIC=AARO inference softened, § 3373 prong precision, IPMO juxtaposition removed, Luna deadline outcome added) | 2026-05-03 |
 | `/organizations/aaro` (web audit Phase 1 — AOIMSG/AARO chain factually corrected per Hicks memo verbatim, PDDNI reporting-line claim softened from inferential overreach to scoped "no public evidence" framing, Kosloski period granularity 2024-08 → 2024-08-26, two `&#39;` HTML entities normalized in quote.text, naming_quirks nq5 + reader-visible `[sic]` flag for "fulfi lled" pdftotext artifact in text-native Hicks memo PDF — same shape as BACKLOG #19 extraction-lossy category) | 2026-05-03 |
 | `/organizations/aaro` (web audit Phase 2 — 8 unwrapped people registered with wrap_paths and entities_referenced entries [Norquist, Gillibrand, Zimmerman, Bodian, King, Meagher, Wirkkala, Haines]; 6 load-bearing primary-source documents wrapped + registered as stubs [Hicks memo, FOIA 24-F-0894, AARO FY24 Annual Report, Mellon Debrief essay, WSJ Schectman/Viswanatha 2025, Luna March 2026 letter]; Volume II overdue framing added — pure arithmetic from two source-attested dates ["~20 months past Section 6802(j) statutory deadline"]; broken-link registry from AARO 34 → 48 stubs) | 2026-05-03 |
+| `/organizations/aaro` (web audit Phase 1+2 follow-up — t2 grammar break "establish directed by" → "establishment directed by"; t14 plain-scalar literal `AARO''s` → `AARO's` + EO 14347 wrap embedded; statutory_authority extended to cite IAA FY23 § 6802 amendment per OUSD-IS dual-citation pattern; Phillips Acting/Deputy distinction surfaced in description prose with Deputy Director departure date flagged as undocumented in archived sources) | 2026-05-03 |
+
+### Phase 2 open audit from the AARO Web audit Phase 1+2 follow-up (2026-05-03)
+
+One Phase 2 completeness question surfaced during today's follow-up audit
+that cannot resolve from current sources — logged here so a future session
+sees the search audit trail.
+
+- **Phillips Deputy Director departure date** — The current Personnel
+  table entry `kp2` ends Phillips' "Deputy Director (Acting Director)"
+  tenure on 2024-08-26 (Kosloski's arrival as Director). What's
+  source-attested: (a) Phillips assumed Deputy Director duties in October
+  2023 per his Dec 2023 bio; (b) Acting Director duties ended on
+  Kosloski's arrival per the Aug 26, 2024 DoD announcement; (c) Phillips
+  is referred to as Kirkpatrick's "former deputy at AARO" in Liberation
+  Times' June 6, 2025 piece (past tense, ambiguous on cutoff date); (d)
+  Deputy Director role is reported vacant by Feb 25, 2026 per
+  Disclosure Foundation Executive Director Jordan Flowers in
+  DefenseScoop. What's NOT source-attested in archived primary sources:
+  Phillips' Deputy Director departure date itself. **Sources checked
+  during today's audit:** Kosloski appointment HTML
+  (`government/defense-gov-kosloski-appointment-20240826.html` — silent
+  on Phillips); AARO FY24 Annual Report
+  (`government/aaro-fy24-consolidated-annual-report-uap-20241114.pdf` —
+  no Phillips refs); Kosloski SFR for SASC
+  (`government/aaro-kosloski-sfr-sasc-20241119.pdf` — no Phillips refs);
+  WSJ June 2025 piece (`news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html`
+  — no Phillips refs); Liberation Times June 6, 2025
+  (`news/liberationtimes-russian-style-disinformation-tactics-20250606.html`
+  — characterizes as "former deputy", references a Mick West-hosted
+  Phillips appearance regarding Malmstrom that's not archived locally);
+  PJ Media June 7, 2025 (no relevant refs); BlackVault FOIA 24-F-0894
+  cover article (Aug 27, 2025 — references Phillips only in past
+  Acting-Director context). **What would resolve:** a war.gov / defense.gov
+  press release announcing Phillips' departure, an AARO leadership-update
+  bio change, or any post-Aug 2024 archived primary source attesting
+  Phillips holding a current Deputy Director role. **Stop-gap:** the
+  description-prose addition flags the gap so readers see the open
+  question; the `kp2` Personnel row is unchanged because 2024-08-26
+  remains the only documented role transition. Re-evaluate on next AARO
+  audit pass or when a Phillips-departure primary source surfaces.
 
 ### Phase 3 deferrals from the AARO Phase 1/2 audit (2026-05-03)
 
