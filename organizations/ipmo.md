@@ -44,7 +44,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 | Name | Role | Period | Source |
 |---|---|---|---|
-| [`/people/james-holly`] | Acting Director (first) | 2022-03 | government/notre-dame-ipmo-memo-20220527.pdf |
+| [`/people/james-holly`] | Acting Director | 2022-03 | government/notre-dame-ipmo-memo-20220527.pdf |
 
 ---
 
@@ -206,7 +206,7 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 | Date | Event | Category | Source | Node Link |
 |---|---|---|---|---|
 | 2022-03-01 | Influence and Perception Management Office (IPMO) established per direction from the Secretary of Defense and the Under Secretary of Defense for Intelligence and Security, per the Notre Dame memo signed by Acting Director James A. Holly. | founding | government/notre-dame-ipmo-memo-20220527.pdf |  |
-| 2022-04-25 | IPMO Performance Work Statement issued by Washington Headquarters Services Acquisition Directorate as 8(a) sole-source procurement; released via FOIA case 23-F-0906 to the WHS FOIA Reading Room. | contract | government/foia-23-f-0906-sancorp-ipmo-pws.pdf |  |
+| 2022-04-25 | IPMO Performance Work Statement issued by Washington Headquarters Services Acquisition Directorate as 8(A) Sole Source contract; released via FOIA case 23-F-0906 to the WHS FOIA Reading Room. | contract | government/foia-23-f-0906-sancorp-ipmo-pws.pdf |  |
 | 2022-05-27 | Notre Dame National Security Innovation Course memorandum signed by Acting Director James A. Holly; subject "Challenge for 2022 University of Notre Dame National Security Innovation Course"; documents IPMO's March 1, 2022 establishment and mission tasking. | publication | government/notre-dame-ipmo-memo-20220527.pdf |  |
 | 2022-06-09 | Sancorp Consulting awarded IPMO Support Services contract HQ003422C0064 ($3,026,577.70 obligated; period of performance June 10, 2022 — June 9, 2023). | contract | government/usaspending-hq003422c0064.txt | [`/organizations/sancorp-consulting`] |
 | 2023-05-25 | Sancorp Consulting awarded follow-on contract HQ003423C0061 for "Specialized and Sensitive Administrative, Policy, Operations, and Analytic Support Services" ($3,021,082; period of performance June 10, 2023 — June 9, 2024). | contract | government/usaspending-hq003423c0061.txt | [`/organizations/sancorp-consulting`] |

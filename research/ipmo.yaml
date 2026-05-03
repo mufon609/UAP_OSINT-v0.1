@@ -299,7 +299,7 @@ timeline:
 - id: t2
   added_date: '2026-05-02'
   date: '2022-04-25'
-  event: 'IPMO Performance Work Statement issued by Washington Headquarters Services Acquisition Directorate as 8(a) sole-source procurement; released via FOIA case 23-F-0906 to the WHS FOIA Reading Room.'
+  event: 'IPMO Performance Work Statement issued by Washington Headquarters Services Acquisition Directorate as 8(A) Sole Source contract; released via FOIA case 23-F-0906 to the WHS FOIA Reading Room.'
   category: contract
   source:
     path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf
@@ -359,7 +359,7 @@ key_personnel:
 - id: kp1
   added_date: '2026-05-02'
   person_path: /people/james-holly
-  role: 'Acting Director (first)'
+  role: 'Acting Director'
   period_start: '2022-03'
   leadership_class: director
   source:
