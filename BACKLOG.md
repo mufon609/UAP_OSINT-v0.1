@@ -207,22 +207,17 @@ audit-execution session.
   decision). Phase E's primary-source principle didn't specify
   audio-source handling; three framings are sketched in the
   closeout doc; option 3 (hybrid by `transcript_provenance`) is
-  the most principled and requires schema work. **Estimated: 1
-  convention-decision session + 1–3 execution sessions per chosen
-  option.**
+  the most principled and requires schema work.
 - **Tier 4 — HTML sources.** Extraction low-risk (tag-strip +
   entity-decode handles nearly all cases). Batched spot-check
-  pattern. **Estimated: 1 focused session.**
+  pattern across the source set.
 - **Tier 5 — PDF long-tail.** Government / news / FOIA / SEC
   PDFs. Some pipelines cluster (Uintah parcel PDFs share an ORDS
   portal pipeline — verify once, apply across); the rest are
-  one-by-one spot-checks. **Estimated: 1 focused session.**
+  one-by-one spot-checks.
 - **Tier 6 — Closeout.** Aggregate findings across all tiers into
   the closeout doc; confirm follow-up BACKLOG entries are still
-  appropriately scoped; close #19. **Estimated: 1 session.**
-
-**Total remaining: 4–7 focused sessions.** Spread depends primarily
-on the Tier 3 convention decision.
+  appropriately scoped; close #19.
 
 **Findings to date** (Tiers 1+2). Aggregate contributor-drift rate
 across the audited 298 quotes: **0.67%** (6 corrections in Tier 1's
@@ -235,7 +230,7 @@ authored short written testimonies is evidence that Tier 1's 1.4%
 standalone rate was the peak, not the baseline. **Projected
 remaining findings (Tiers 4+5):** 1–2 corrections.
 
-**Recommended session sequence.**
+**Recommended sequence.**
 
 1. **Tier 4 first** (HTML sources). Larger source surface area
    than Tier 5 but extraction is low-risk; batched spot-check
@@ -243,13 +238,11 @@ remaining findings (Tiers 4+5):** 1–2 corrections.
 2. **Tier 5 after Tier 4** (PDF long-tail). Cluster pipelines
    (Uintah parcel PDFs) verify once-and-apply; remaining PDFs are
    one-by-one.
-3. **Tiers 4+5 plausibly fit in one session** if findings stay
-   low.
-4. **Tier 3 convention decision** runs on its own track. Don't
-   collapse into an audit-execution session — option 3 (hybrid by
+3. **Tier 3 convention decision** runs on its own track. Don't
+   collapse into an audit-execution pass — option 3 (hybrid by
    `transcript_provenance`) requires a schema field that needs
-   the same care `extraction_type` got. Dedicated focused session.
-5. **Tier 6 closeout** after Tier 3 execution.
+   the same care `extraction_type` got.
+4. **Tier 6 closeout** after Tier 3 execution.
 
 **Follow-up BACKLOG entries surfaced during the audit.** All filed
 for tracking; fates confirmed at Tier 6 closeout:
@@ -333,9 +326,11 @@ unclear, worth categorizing) and `ncas-kirkpatrick-aaro-duality`
 Mix expected to grow as additional interview / podcast sources land
 in the corpus.
 
-**Scope.** Convention decision is ~1 session. Execution scope
-depends on option chosen: option 1 = 1 session; option 3 =
-classification pass + sampled audio verification = 2–3 sessions.
+**Scope.** Convention decision can land on its own. Execution
+scope depends on option chosen: option 1 is a single audit pass on
+the existing transcript set; option 3 is a classification pass
+across each transcript source plus sampled audio verification per
+category.
 
 **Blocks.** Phase F Tier 3. BACKLOG #19 cannot close until this
 decision resolves and Tier 3 executes under it.
@@ -468,10 +463,8 @@ transcript).
 line-range Locations of this shape. Affected artifacts include the
 three House Oversight 2023-07-26 hearing artifacts (fravor / graves /
 grusch), the SASC AARO hearing transcript, written-testimony
-documents, and AARO / Skinwalker Ranch / multiple person nodes. The
-"~1 session sweep" estimate the entry originally carried was based
-on a perceived "several quotes in three artifacts" scope; corpus-
-wide measurement shows the actual scope is multi-session.
+documents, and AARO / Skinwalker Ranch / multiple person nodes.
+Corpus-wide normalization, not a per-artifact spot fix.
 
 **Second imprecision shape — boundary inclusion** (surfaced during
 the 2023-04-19 SASC AARO hearing event build). Beyond re-extraction
@@ -504,18 +497,17 @@ cases.
 **Priority.** Low. Not a correctness issue; navigational-precision
 improvement for readers. Validator doesn't care.
 
-**Scope.** Multi-session corpus-wide normalization. Independent of
-the Phase F audit tiers; can run before, after, or between them.
-Tooling-pass + per-source review per quote; rough estimate 3–5
-sessions for the 356 quotes.
+**Scope.** Corpus-wide normalization across 356 quotes / 16
+artifacts. Independent of the Phase F audit tiers; can run before,
+after, or between them. Tooling-pass + per-source review per quote
+(no fully-mechanical fix because boundary-inclusion correction
+requires reading the quote against its source).
 
 Surfaced: Phase F Tier 1 — the hearing-transcript `.txt` sibling
 used government page numbers as section markers, which rendered
 existing `lines N-M` quote Locations increasingly out-of-sync.
 Corrections deferred per explicit Phase F Tier 1 scope decision
 (Phase F is about extraction integrity, not navigation precision).
-Corpus-wide measurement (356 quotes / 16 artifacts) revealed that
-the original "1 session" scope was a substantial undercount.
 
 ---
 
@@ -636,10 +628,10 @@ check on document Key Passages is unaffected and runs
 unconditionally); discipline-uniformity issue (drift checking is
 enforced on six content types but silently skipped on the seventh).
 
-**Scope.** ~1 session: design decision + implementation + regression
-sweep across 6 existing document artifacts (which will require
-rewriting their descriptions to match the chosen scope, or accepting
-the warnings they produce as a baseline).
+**Scope.** Design decision + implementation in `validate-research.py`
++ regression sweep across the 6 existing document artifacts (which
+will require rewriting their descriptions to match the chosen scope,
+or accepting the warnings they produce as a baseline).
 
 Surfaced: validator audit on a document artifact build — direct
 recreation of `check_prose_drift` logic showed 53 unmatched tokens
@@ -702,8 +694,9 @@ question is whether the reader can tell when the contributor last
 reviewed. Worth a single corpus-wide pass once a clear pattern emerges
 across 3+ nodes.
 
-**Scope.** ~1 session for design + schema/renderer change + per-node
-sweep across affected nodes.
+**Scope.** Design decision (which of the three options) + schema /
+renderer change + per-node sweep across nodes carrying rolling-
+currency clauses.
 
 Surfaced: AARO web audit — auditor flagged an "as of {date}" clause
 as ambiguous between rolling-currency review and forward-projected
@@ -798,7 +791,7 @@ F.7.
 **Lighter alternative if Path A wins.** Add a navigation affordance —
 TOC jump-links at the top of nodes ≥500 lines, or collapsible
 per-venue Statements subsections. Doesn't touch the data model;
-addresses the scannability symptom. ~2-hour job; strictly cosmetic.
+addresses the scannability symptom. Strictly cosmetic.
 
 **Constraint from `meta/conventions.md`.** Claim Inventory is
 defined as *"a render-time projection of quotes tagged
@@ -967,10 +960,10 @@ artifact metadata is the umbrella.
 
 Items waiting on an external event the repo can't drive — FOIA
 resolutions, subscription registry access, third-party publication.
-Each has a clear closure path and (where applicable) a check-back
-cadence. They aren't numbered because there's no in-repo work to
-schedule; they sit here for visibility so a future session reviewing
-the relevant node or context knows the trigger is pending.
+Each has a clear closure path. They aren't numbered because there's
+no in-repo work to schedule; they sit here for visibility so a
+future session reviewing the relevant node or context knows the
+trigger is pending.
 
 ### Reveal Systems Inc. — California SoS / OpenCorporates registry hunt
 
@@ -1019,8 +1012,8 @@ for the eventual `/organizations/reveal-systems-inc` node build (audit
 § 6 recommendation). Patent-record evidence is sufficient for the
 existing Kirkpatrick-node Credibility Notes framing.
 
-**Scope.** ~30 minutes if registry access becomes available;
-otherwise indefinite-blocked.
+**Scope.** Single registry-lookup pass once interactive access is
+available; otherwise indefinite-blocked.
 
 Surfaced: Kirkpatrick audit-iteration follow-up — open-access
 registry hunt established CA state of incorporation per patent
@@ -1062,27 +1055,19 @@ control; cannot be advanced through technical or research action.
 - Until resolution, the documentary record on Kirkpatrick's side is
   complete; the Mellon-side completion is downstream.
 
-**Check-back cadence.** ~6 months. Black Vault FOIA appeals typically
-resolve in 3–18 months; a 6-month check is the natural cadence to
-re-verify whether the redacted portion has surfaced. The check
-itself is cheap: re-fetch the FOIA 24-F-0266 release from Black
-Vault and re-extract; if the redacted portion is now visible, the
-follow-up work is to register Mellon's full reply as a quote on the
-Mellon node (when built) and update Credibility Notes Group B on
-the Kirkpatrick node accordingly.
-
 **Priority.** Low. Not a correctness issue for Kirkpatrick's node;
-adds nuance to the documentary record on the Mellon side. Sit-and-
-wait until either (a) the FOIA appeal resolves, or (b) the Mellon
-node is built (audit § 6 disclosure-ecosystem cluster) and the
+adds nuance to the documentary record on the Mellon side. Holds
+until either (a) the FOIA appeal resolves, or (b) the Mellon node
+is built (audit § 6 disclosure-ecosystem cluster) and the
 incomplete-reply note becomes load-bearing for the Mellon Statements
 section.
 
-**Scope.** Effectively zero ongoing work; one short check-and-update
-session when the redacted portion surfaces.
+**Scope.** When the appeal resolves: re-fetch the FOIA 24-F-0266
+release from Black Vault, re-extract, register Mellon's full reply
+as a quote on the Mellon node (when built), and update Credibility
+Notes Group B on the Kirkpatrick node accordingly.
 
 Surfaced: Kirkpatrick audit-iteration follow-up — audit § 7 "Mellon
-Signal reply text (full)" Open item documented with concrete
-check-back cadence and closure path. Logged for visibility so a
+Signal reply text (full)" Open item logged for visibility so a
 future session reviewing the Mellon node or the Kirkpatrick
 credibility notes knows the appeal is pending.
