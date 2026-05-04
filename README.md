@@ -53,9 +53,8 @@ meta/
     overview.md             topic statement, scope, corpora
     research-queue.md       priority investigation queue
     addenda/                corpus-specific rules (e.g., aawsap-dird)
+    working-notes/          in-progress synthesis docs awaiting integration into content nodes
   toolkit-notes/            toolkit lessons-learned (topic-neutral)
-    pilot-failure-*.md      postmortems
-    schema-migrations/      version-migration docs (populated as schema evolves)
 
 scripts/
   new.py                    scaffolder — produces empty node from template
@@ -97,12 +96,7 @@ media/ locations/ findings/
 research/                   YAML research artifacts backing each node
                             (structured facts; one per content node)
 
-prompts/
-  onboard.md                first-session orientation (reads governance docs + health check)
-  build.md                  build one node (Phase I populate → II regenerate → III review)
-  audit.md                  audit an existing node
-  archive-sweep.md          source-archival health pass
-  verify-transcript.md      transcript verbatim verification
+prompts/                    paste-ready session prompts — see prompts/README.md for the index
 ```
 
 **Forking for a different topic.** Delete `meta/topic/` and the
