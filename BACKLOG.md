@@ -25,8 +25,8 @@ names.
 Mechanical rename plus a design pass. The `finding` type will be
 renamed to `investigation`; the redesign will decide what synthesis
 surface an investigation node carries (the Open Questions / Research
-Gaps section was removed 2026-04-21 — investigations are the intended
-home for that kind of material).
+Gaps section was removed during the statements-only consolidation —
+investigations are the intended home for that kind of material).
 
 **Rename surfaces** (mechanical):
 - `meta/schema.yaml` — `types.finding` block + ~6 enum-list references
@@ -47,8 +47,9 @@ home for that kind of material).
   `research_gaps[]` (what readers expect from an active research
   thread: concrete methodology, cross-node scope, resolution state).
 
-Surfaced: OQ removal (2026-04-21) — the rename was deliberately
-deferred to a later session rather than bundled with the removal.
+Surfaced: Open-Questions section removal — the rename was
+deliberately deferred to a later session rather than bundled with
+the removal.
 
 ---
 
@@ -65,23 +66,22 @@ emergent: artifacts with `statement_date` populated render
 chronologically; artifacts without it render in artifact-entry
 order; partial population produces mixed ordering.
 
-**Concrete consequence** — TTSA v3 (2026-04-23). Phase 3 of the
-v2 cleanup populated `statement_date` on all 44 quotes. The
-renderer then sorted Key Passages chronologically, which promoted
+**Concrete consequence** — TTSA audit. Populating `statement_date`
+on all 44 quotes triggered chronological sort, which promoted
 q5 (DeLonge email to Podesta, 2016-01-25) from mid-list to position
 1 — ahead of the 2017-07-10 SEC 1-A filings. The DeLonge email is
 the weakest-sourced entry in the set (self-attestation about
 Roswell material and Wright-Patterson AFB, not independently
-verified), and placing it at position 1 risks a chronological
+verified), and placing it at position 1 risks the chronological
 convention being read as an epistemic endorsement.
 
-The v2 cleanup had independently flagged this risk and tightened
-the q5 header to "DeLonge email to Podesta — claim-of-record
-regarding McCasland, Roswell material, and Wright-Patterson AFB
-(claim made by DeLonge; not independently verified)". That
-in-header framing means the weakest attestation carries its own
-epistemic hedge at the top of the passage, independent of list
-position.
+Workaround applied at the time: tighten q5's `significance` header
+to "DeLonge email to Podesta — claim-of-record regarding McCasland,
+Roswell material, and Wright-Patterson AFB (claim made by DeLonge;
+not independently verified)". The in-header framing makes the
+weakest attestation carry its own epistemic hedge at the top of the
+passage, independent of list position. Pattern recommendation
+codified as Rule 3 below.
 
 **Convention to codify:**
 
@@ -119,16 +119,33 @@ pattern with examples in `conventions.md`. All three address the
 same emergent behavior and should land in a single convention
 pass.
 
-**Confirm pattern before codifying.** TTSA v3 surfaced the
-behavior; one more organization-node audit (with weak-attestation
-quotes and `statement_date` populated) would confirm the
-hedge-phrase convention holds generally before freezing it in
-`conventions.md`. If the next audit produces a different
-ordering concern, revisit.
+**Current `statement_date` population** (corpus-wide, 827 quotes
+across 28 artifacts):
 
-Surfaced: TTSA v3 (2026-04-23) — q5 DeLonge-Podesta email
-promoted from position 5 to position 1 after `statement_date`
-adoption; hedged in-header in the same commit.
+| Target type | Populated / total | % |
+|---|---|---|
+| events | 21 / 21 | 100% |
+| organizations | 247 / 247 | 100% |
+| transcripts | 157 / 157 | 100% |
+| people | 284 / 286 | 99.3% |
+| documents | 40 / 99 | 40.4% |
+| locations | 0 / 17 | 0% |
+| **TOTAL** | **749 / 827** | **90.6%** |
+
+Documents and locations are the gap. Documents have a partial-
+population pattern (some doc artifacts populated, others not);
+locations have zero coverage (suggesting the field was never
+prioritized for location Key Passages — worth confirming whether
+location source dates are even meaningful or whether the section
+is structurally orderless). Rule 2 should land alongside per-type
+guidance on what to do when no source date is attestable.
+
+**Pattern confirmation status.** Multiple organization-node audits
+have shipped since TTSA surfaced this (AARO, UAPTF, OUSD-IS, IPMO,
+Sancorp, Arlo) — all populated `statement_date` and rendered
+chronologically without ordering concerns surfacing. The hedge-
+phrase convention (Rule 3) appears to hold but hasn't been
+formally codified. Worth a single convention-pass session.
 
 ---
 
@@ -357,10 +374,10 @@ as fallback for compatibility).
 Future corpus PDFs may exhibit similar conditions — evaluation cost
 is bounded.
 
-Surfaced: Phase F Tier 1 (2026-04-24) — `11‡` for `11½` caught
-during hearing-transcript audit; extraction-lossy enum added to
-handle the pattern generically, but the specific case might have a
-narrower solution at the tool layer.
+Surfaced: Phase F Tier 1 — `11‡` for `11½` caught during hearing-
+transcript audit; extraction-lossy enum added to handle the pattern
+generically, but the specific case might have a narrower solution
+at the tool layer.
 
 ---
 
@@ -374,12 +391,12 @@ CreationDate: Sun Jul 23 14:41:22 2023 EDT"`, `"✅ Confirmed —
 hosted at oversight.house.gov"`, `"✅ Confirmed — SHA256 verified
 via sources/manifest.yaml"`).
 
-**Question surfaced during Phase B** (2026-04-24): with the per-
-quote `Verified` marker removed under Phase E's "no rendered trust
-claim" principle, should these per-row Provenance markers be
-removed too?
+**Question surfaced during Phase B** of #19's marker-removal work:
+with the per-quote `Verified` marker removed under Phase E's "no
+rendered trust claim" principle, should these per-row Provenance
+markers be removed too?
 
-**Analysis from the Phase B discussion** (user/model exchange):
+**Analysis from the Phase B discussion**:
 the two markers look similar but do different jobs. The per-quote
 Verified marker asserted "this quote matches the source" — a claim
 about the quote itself that the reader could theoretically verify
@@ -415,9 +432,9 @@ distinction where useful; or decide the current pattern is fine
 given Phase E's principle doesn't scope to Provenance tables.
 
 Surfaced: Phase F spot-check review of `✅ Confirmed —` patterns in
-rendered nodes (2026-04-24) — Provenance markers share the marker
-pattern with the per-quote Verified row but don't share the trust-
-performance shape.
+rendered nodes — Provenance markers share the marker pattern with
+the per-quote Verified row but don't share the trust-performance
+shape.
 
 ---
 
@@ -441,11 +458,10 @@ fravor.yaml`, `research/2023-07-26-house-graves.yaml`, `research/
 2023-07-26-house-grusch.yaml`. Exact count deferred to the audit
 execution.
 
-**Second imprecision shape — boundary inclusion (surfaced 2026-04-28
-during /events/2023-04-19-sasc-aaro-hearing build).** Beyond
-re-extraction staleness, contributor-authored Location refs can be
-imprecise from the start by including adjoining material in the
-range. Concrete cases on `research/2023-04-19-sasc-aaro-hearing.yaml`:
+**Second imprecision shape — boundary inclusion** (surfaced during
+the 2023-04-19 SASC AARO hearing event build). Beyond re-extraction
+staleness, contributor-authored Location refs can be imprecise from
+the start by including adjoining material in the range. Concrete cases on `research/2023-04-19-sasc-aaro-hearing.yaml`:
 q8 cites `lines 1784-1792` but Kirkpatrick's spoken portion ends at
 line 1788 (Sen. Rosen interrupts at 1789, page footer at 1791-1792).
 q11 cites `lines 2178-2183` but the quote content runs 2180-2182
@@ -473,12 +489,11 @@ improvement for readers. Validator doesn't care.
 Independent of the Phase F audit tiers; can run before, after, or
 between them.
 
-Surfaced: Phase F Tier 1 (2026-04-24) — the hearing-transcript
-`.txt` sibling used government page numbers as section markers,
-which rendered existing `lines N-M` quote Locations increasingly
-out-of-sync. Corrections deferred per explicit Phase F Tier 1 scope
-decision (Phase F is about extraction integrity, not navigation
-precision).
+Surfaced: Phase F Tier 1 — the hearing-transcript `.txt` sibling
+used government page numbers as section markers, which rendered
+existing `lines N-M` quote Locations increasingly out-of-sync.
+Corrections deferred per explicit Phase F Tier 1 scope decision
+(Phase F is about extraction integrity, not navigation precision).
 
 ---
 
@@ -505,12 +520,11 @@ hold reader-relevant facts.
   preceded by a closed session that day; relevant when there's a
   dual-status transcript)
 
-All five fields appear on `research/2023-04-19-sasc-aaro-hearing.yaml`
-(2026-04-28 build), all populated, all unrendered. Workaround applied
-during that build: surface the same facts in the rendered `description`
-prose. That works for one node but the pattern of duplicating
-artifact-data into description prose to compensate for renderer gaps
-isn't sustainable.
+All five fields appear on `research/2023-04-19-sasc-aaro-hearing.yaml`,
+all populated, all unrendered. Workaround applied during that build:
+surface the same facts in the rendered `description` prose. That
+works for one node but the pattern of duplicating artifact-data into
+description prose to compensate for renderer gaps isn't sustainable.
 
 **Relationship to BACKLOG #32.** #32 (M1) covers `note` fields on
 list-entry relationship rows being dropped by table renderers. This
@@ -539,9 +553,9 @@ acceptable single-node hygiene.
 already optional on `event_intrinsic` per schema.yaml). One session
 to add the renderer logic + regenerate any affected event nodes.
 
-Surfaced: 2023-04-19 SASC AARO hearing event build (2026-04-28) —
-audit pass identified that 5 populated `event_intrinsic` keys were
-not appearing in the rendered Event Summary table; facts duplicated
+Surfaced: 2023-04-19 SASC AARO hearing event build — audit pass
+identified that 5 populated `event_intrinsic` keys were not
+appearing in the rendered Event Summary table; facts duplicated
 into description prose as a node-level workaround.
 
 ---
@@ -679,12 +693,12 @@ existing document artifacts.
 
 ### 27. Reveal Systems Inc. corporate-registration deep dive — blocked on subscription registry access
 
-Per the 2026-04-29 Kirkpatrick audit § 7 ("Items still open"), specific
+Per the Kirkpatrick audit § 7 ("Items still open"), specific
 state-of-incorporation entity number, filing date, current operating
 status, and principals-beyond-inventor list for the Kirkpatrick /
 Bogaard / Fairchild patent-assignee Reveal Systems Inc. were not
-retrievable through open-access channels. What we did establish during
-the 2026-04-29 archival pass:
+retrievable through open-access channels. What was established during
+the archival pass:
 
 - **California is the state of incorporation** per the May 2020 USPTO
   assignment record on US20200357080A1: the assignment-of-assignor's-
@@ -727,8 +741,8 @@ existing Kirkpatrick-node Credibility Notes framing.
 **Scope.** ~30 minutes if registry access becomes available;
 otherwise indefinite-blocked.
 
-Surfaced: Kirkpatrick audit-iteration follow-up (2026-04-29) — open-
-access registry hunt established CA state of incorporation per patent
+Surfaced: Kirkpatrick audit-iteration follow-up — open-access
+registry hunt established CA state of incorporation per patent
 record but blocked at SoS / OpenCorporates layer; name-collision
 discovery worth recording so future Reveal Systems node-build
 sessions don't conflate.
@@ -786,11 +800,11 @@ section.
 **Scope.** Effectively zero ongoing work; one short check-and-update
 session when the redacted portion surfaces.
 
-Surfaced: Kirkpatrick audit-iteration follow-up (2026-04-29) —
-audit § 7 "Mellon Signal reply text (full)" Open item documented
-with concrete check-back cadence and closure path. Logged for
-visibility so a future session reviewing the Mellon node or the
-Kirkpatrick credibility notes knows the appeal is pending.
+Surfaced: Kirkpatrick audit-iteration follow-up — audit § 7 "Mellon
+Signal reply text (full)" Open item documented with concrete
+check-back cadence and closure path. Logged for visibility so a
+future session reviewing the Mellon node or the Kirkpatrick
+credibility notes knows the appeal is pending.
 
 ---
 
