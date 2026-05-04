@@ -132,203 +132,122 @@ adoption; hedged in-header in the same commit.
 
 ---
 
-### 19. "Verified verbatim" marker — removed; full-corpus audit in progress
+### 19. Verified-verbatim marker removed; full-corpus source-integrity audit (Phase F) in progress
 
-**Status (2026-04-24).** The original marker-ambiguity problem has
-been solved by removing the marker entirely rather than qualifying
-it. Confirmation against the underlying primary source is now a
-precondition for inclusion in node bodies (enforced mechanically by
-`validate.py`'s unconditional verbatim-quote check), not a rendered
-claim (`meta/conventions.md` codifies the principle). Implementation
-surfaced a corpus-integrity question — were the 508 existing quotes
-actually confirmed against their sources, or only against whatever
-extraction the pipeline produced? — which restructured the closeout
-into a multi-tier per-source audit. **BACKLOG #19 does not close
-until Tier 6 runs.**
+**The principle (settled, see `meta/conventions.md`).** Confirmation
+against the underlying primary source is a precondition for
+inclusion in node bodies, not a rendered claim. `validate.py`'s
+verbatim-quote check runs unconditionally on every block-quote with
+a Source row; nodes carry no per-quote verification marker. The
+discipline is enforced mechanically and is invisible to readers by
+design.
 
-**Shipped** (pushed to `origin/main` 2026-04-24):
+**Why this entry stays open.** The principle landed via a marker
+removal + validator refactor + node regeneration pass. That pass
+left a corpus-integrity question: existing quotes were verified
+under the old regime, which substring-matched quote text against
+`pdftotext` / HTML extract output. When the source's extraction
+layer is lossy (OCR-scanned PDFs, character-substituting PDF
+generators), bytes-match-extract is not bytes-match-original. A
+multi-tier source-integrity audit (Phase F) walks every cited
+source and re-verifies extraction quality. **#19 closes when Tier 6
+closeout runs.**
 
-| Phase | Commit | What |
-|---|---|---|
-| A | `978221a` | `extraction_type` field on `manifest_entry` (text-native \| ocr-scan); validator enforces enum |
-| E | `997cc56` | `conventions.md` — "Confirmation is a precondition for inclusion" principle articulated; source-link-is-the-evidence framing; mechanical-backstop named explicitly; transcripts as equivalent-footing sources; OCR blind-spot called out |
-| Fix-up | `3e5b88c` | BACKLOG #19 entry itself committed separately for git-history hygiene |
-| v2 apply | `8a90d5c` | Grusch v2 audit applied as its own commit (predates implementation work) |
-| D | `304bf08` | Grusch PPD-19 re-extraction via VLM page reading; clean `.txt` sibling created; validator extended to prefer sibling on ocr-scan sources; q163/q164/q165 corrected; nq2/nq3/nq4 removed |
-| B | `31e03fa` | Verified marker removed from both renderer call sites; `_render_verification_block` → `_render_attribution_block`; `find_quote_verification_pairs` → `find_quote_source_pairs` + unconditional check + line-number failure messages; `requires_quote_verification` → `requires_quote_attribution` schema rename across 7 sites; all 17 nodes regenerated (464 mechanical deletions, 0 additions); prompts + templates updated |
-| F.1 | — | Diagnostic: 508 quotes across 64 sources; 70% PDF / 15% HTML / 14% transcript. Top 10 sources carry 77% of quotes. Hearing transcript alone is 42% of the corpus |
-| F.2 Tier 1 | `4b4d7fb` | Hearing transcript audit: `extraction-lossy` enum value added (third category after text-native/ocr-scan); sibling-lookup generalized to `!= "text-native"`; 54-page clean `.txt` transcription via VLM; 6 corrections across 3 categories; 1.4% contributor-drift rate measured |
-| F.3 stub | `ea64cf4` | Closeout document stubbed at `meta/toolkit-notes/corpus-audit-2026-04.md` with Tier 1 findings recorded |
-| F.2 Tier 2 | TBD | 3 written testimony PDFs audited (Fravor / Graves / Grusch). All three text-native with faithful pdftotext output per metadata + suspect-char scan + VLM visual verification. Zero corrections. 87 quotes already passing unconditional verbatim-quote check are now substantively verified. ~30 minutes across all 3 sources. Notable: Grusch testimony uses same Acrobat Distiller 23.0 as Tier 1 hearing transcript but extracts cleanly — Distiller not automatically extraction-lossy |
+**Authoritative progress record.** Tier-by-tier methodology,
+findings, and aggregate measurements live in
+`meta/toolkit-notes/corpus-audit-2026-04.md`. This BACKLOG entry
+tracks the high-level work plan and remaining decisions; the
+closeout doc is the source of truth for audit detail.
 
-**Remaining work — Phase F.2 Tiers 3–5 + F.3 Closeout:**
+**Schema additions shipped during Phase F.** `extraction_type`
+field on `manifest_entry` with values `text-native | ocr-scan |
+extraction-lossy`. The validator prefers a same-stem `.txt` sibling
+over `pdftotext` output when extraction_type is non-text-native —
+the sibling is a contributor-produced clean transcription, visually
+verified against the source, with its own manifest entry + sha256.
 
-*Tier 3 — 9 transcript sources (73 quotes).*
-JRE 2065 (20), NewsNation Coulthart (17), American Alchemy (10),
-Somewhere in the Skies (9), Grusch Sol closing (6), Linda Hall (5),
-American Veterans Center (3), Merged Podcast (2), Calling All
-Beings (1). Mostly YouTube-downloaded auto-captions.
-**BLOCKED** on BACKLOG #20 (auto-caption convention decision). Phase
-E principle doesn't specify audio-source handling. Three framings in
-the closeout doc; hybrid-by-transcript_provenance is most principled
-but requires schema work. **Estimated: 1 convention-decision session
-+ 1–3 execution sessions depending on which option chosen.**
+**Current corpus state.** 827 quotes across 144 unique source paths
+across 28 research artifacts (up from 508 / 64 / 16 at Phase F.1
+diagnostic — corpus has grown ~60%). The per-tier source counts in
+the closeout doc were Phase F.1 snapshots; counts re-derive at each
+audit-execution session.
 
-*Tier 4 — 28 HTML sources (78 quotes).*
-HTML extraction low-risk (tag-strip + entity-decode). Batched spot-
-check per source. Projected 0–2 findings. **Estimated: 1 focused
-session.**
+**Remaining work.**
 
-*Tier 5 — PDF long-tail (~17 sources, ~50 quotes).*
-6 Uintah parcel PDFs (same ORDS portal pipeline — check once, apply
-conclusion to all); AARO HRR Vol I; ODNI preliminary assessment;
-various FOIA responses; SEC TTSA filings. One-by-one or batched
-where pipeline shared. **Estimated: 1 focused session.**
+- **Tier 3 — transcript sources (auto-caption majority).** Audit
+  blocked on BACKLOG #20 (auto-caption-vs-audio convention
+  decision). Phase E's primary-source principle didn't specify
+  audio-source handling; three framings are sketched in the
+  closeout doc; option 3 (hybrid by `transcript_provenance`) is
+  the most principled and requires schema work. **Estimated: 1
+  convention-decision session + 1–3 execution sessions per chosen
+  option.**
+- **Tier 4 — HTML sources.** Extraction low-risk (tag-strip +
+  entity-decode handles nearly all cases). Batched spot-check
+  pattern. **Estimated: 1 focused session.**
+- **Tier 5 — PDF long-tail.** Government / news / FOIA / SEC
+  PDFs. Some pipelines cluster (Uintah parcel PDFs share an ORDS
+  portal pipeline — verify once, apply across); the rest are
+  one-by-one spot-checks. **Estimated: 1 focused session.**
+- **Tier 6 — Closeout.** Aggregate findings across all tiers into
+  the closeout doc; confirm follow-up BACKLOG entries are still
+  appropriately scoped; close #19. **Estimated: 1 session.**
 
-*Tier 6 — Closeout.*
-Complete `meta/toolkit-notes/corpus-audit-2026-04.md` with aggregate
-findings across all tiers. Confirm follow-up BACKLOG entries #20–#24
-are filed (already queued below). Close BACKLOG #19.
-**Estimated: 1 session.**
+**Total remaining: 4–7 focused sessions.** Spread depends primarily
+on the Tier 3 convention decision.
 
-**Total remaining: 4–7 focused sessions** to complete Phase F and
-close #19. Spread depends primarily on the Tier 3 convention decision.
+**Findings to date** (Tiers 1+2). Aggregate contributor-drift rate
+across the audited 298 quotes: **0.67%** (6 corrections in Tier 1's
+211 quotes / 0 corrections in Tier 2's 87 quotes). Tier 1 was the
+worst-case segment of the corpus — high quote volume, known
+extraction-layer issue (`11‡→11½` Unicode mapping), and source
+complexity (54-page stenographic transcript with oral testimony +
+Q&A + submitted documents). Tier 2's 0% rate in contributor-
+authored short written testimonies is evidence that Tier 1's 1.4%
+standalone rate was the peak, not the baseline. **Projected
+remaining findings (Tiers 4+5):** 1–2 corrections.
 
-**Findings to date** — 6 corrections across 298 quotes audited
-(Tier 1: 6 corrections across 211 quotes, 2.8% error rate across
-all causes / 1.4% contributor-drift rate. Tier 2: 0 corrections
-across 87 quotes). **Aggregate contributor-drift rate across
-audited quotes: 0.67%**, roughly half the Tier 1 standalone rate.
+**Recommended session sequence.**
 
-**Tier 1 was the worst-case segment of the corpus, not a
-representative sample.** It combined three compounding risk factors:
-high quote volume (211 across 6 artifacts), known extraction-layer
-issue (`11‡→11½`), and source complexity (54-page stenographic
-transcript with oral testimony + Q&A + submitted documents — more
-surface area for contributor drift than any single-witness written
-document). Tier 2's 0% finding rate in contributor-authored short
-written testimonies is evidence that Tier 1's 1.4% was the peak,
-not the baseline.
-
-**Projected remaining findings across Tiers 4+5** (~128 quotes):
-revised down from earlier 3–5 estimate to **1–2 corrections**
-based on Tier 2's outcome. HTML extraction is genuinely low-risk
-(tag-strip + entity-decode handles nearly all cases); PDF long-
-tail findings likely concentrate in one or two sources with
-extraction-condition surprises, not spread evenly across all 17.
-
-**Follow-up BACKLOG entries surfaced during the audit** (filed now
-for tracking visibility; fate confirmed at Tier 6 closeout):
-- #20 — Auto-caption vs audio confirmation discipline (blocks Tier 3)
-- #21 — pdftotext Unicode-mapping quirks (extraction-tool-layer fix; narrower than extraction-lossy schema category)
-- #22 — Provenance-marker treatment (per-row custody checkmarks on document nodes; different shape from per-quote Verified)
-- #32 (M2) — naming_quirks preserve-as-sic forms unmarked in synthesis prose (folded into #32 with the table-renderer note gap)
-- #24 — Location reference normalization (stale `lines N-M` pdftotext refs; low-priority hygiene)
-
-**Recommended session sequence** (from post-Tier-2 planning):
-
-1. **Tier 4 next** (28 HTML sources, 78 quotes). Larger source
-   surface area than Tier 5 but extraction low-risk (tag-strip +
-   entity-decode). Batched spot-check pattern applies across the
-   whole set.
-2. **Tier 5 after Tier 4** (PDF long-tail, ~17 sources, ~50 quotes).
-   6 Uintah parcel PDFs are near-identical from the ORDS portal
-   pipeline — batch-verify once, apply across all 6. Remaining ~11
-   government / news PDFs are one-by-one spot-checks.
-3. **Plausibly Tiers 4 + 5 fit in one session** if findings stay
-   low (which Tier 2's outcome suggests they will).
+1. **Tier 4 first** (HTML sources). Larger source surface area
+   than Tier 5 but extraction is low-risk; batched spot-check
+   pattern applies across the whole set.
+2. **Tier 5 after Tier 4** (PDF long-tail). Cluster pipelines
+   (Uintah parcel PDFs) verify once-and-apply; remaining PDFs are
+   one-by-one.
+3. **Tiers 4+5 plausibly fit in one session** if findings stay
+   low.
 4. **Tier 3 convention decision** runs on its own track. Don't
-   collapse it into an audit-execution session — option 3 (hybrid
-   by `transcript_provenance`) requires a schema field that needs
-   the same care `extraction_type` got in Phase A. Dedicated
-   focused session.
+   collapse into an audit-execution session — option 3 (hybrid by
+   `transcript_provenance`) requires a schema field that needs
+   the same care `extraction_type` got. Dedicated focused session.
 5. **Tier 6 closeout** after Tier 3 execution.
 
-BACKLOG #21 (alternate PDF extraction tool) stays deferred. Tier 2
-provided evidence that Distiller-produced PDFs are not automatically
-extraction-lossy (the Grusch written testimony uses the same Acrobat
-Distiller 23.0 as the Tier 1 hearing transcript but extracts
-cleanly). If the Unicode-mapping issue isn't consistent within a
-single producer, a wholesale tool change is solving the wrong
-problem — it's treating the tool as the variable when the actual
-variable is upstream (font embedding, encoding tables, something
-source-specific). Current approach — flag lossy sources, produce
-`.txt` siblings, move on — remains correct for the observed pattern.
-Revisit #21 only if Tier 5 surfaces a systemic pattern.
+**Follow-up BACKLOG entries surfaced during the audit.** All filed
+for tracking; fates confirmed at Tier 6 closeout:
 
----
+- **#20** — auto-caption vs audio confirmation discipline (blocks
+  Tier 3)
+- **#21** — `pdftotext` Unicode-mapping quirks (extraction-tool-
+  layer fix; narrower than the `extraction-lossy` schema category)
+- **#22** — Provenance-marker treatment on document Provenance
+  tables (different shape from per-quote Verified)
+- **#24** — Location reference normalization (stale `lines N-M`
+  pdftotext refs; navigation-precision hygiene)
+- **#32 (M2)** — naming_quirks preserve-as-sic forms unmarked in
+  synthesis prose
 
-**Original problem statement** (preserved for historical context; the
-marker-removal decision superseded the four-option "convention fix"
-framing proposed below):
-
-The verbatim-quote check compares quote text against the pdftotext /
-HTML extract of the cited source. When the source is a text-native
-PDF or HTML, the extract is a faithful rendering of the original,
-and "✅ Confirmed — verified verbatim" means exactly what it
-implies. When the source is a **scanned PDF** and the scan passed
-through OCR (inside the PDF or at extraction time), the extract is
-a lossy rendering of the original; "verified verbatim" then means
-only that the node's quote text matches the OCR extract, not that
-it matches what the original document actually says.
-
-**Concrete consequence** — Grusch v2 (2026-04-24). The archived
-PPD-19 procedural filing PDF contains multiple OCR artifacts:
-`UAP-telated` (for `UAP-related`, two instances), `compatrtmented`
-(for `compartmented`), `appatently` (for `apparently`),
-`cottelated` (for `correlated`). All three appear in quote entries
-on `/people/david-grusch` flagged "verified verbatim" — the flag is
-technically correct (bytes match extract), but reader-facing
-interpretation is misleading: the attorney-drafted filing almost
-certainly reads cleanly.
-
-Workaround applied (Grusch v2): `naming_quirks` entries
-(`preserve-as-sic-in-quotes` resolution) registered for each
-observed artifact, plus a one-sentence flag in Credibility Notes
-prose. This gets the reader-visibility done at the node level but
-doesn't solve the broader convention gap.
-
-**Convention fix to consider (not a node-level change):**
-
-1. **Distinguish extraction type at source level.** Add a manifest-
-   level or primary_sources-level field like
-   `extraction_type: text-native | ocr-scan`. Populated at archival
-   time (contributor inspects whether the PDF has a text layer and
-   whether that text layer is clean or re-OCR'd).
-2. **Differentiate the verification status marker.** Under
-   `ocr-scan` sources, render "✅ Verified verbatim against OCR
-   extract (original not re-verified)" instead of the unqualified
-   "Verified verbatim" label. This is analogous to the distinction
-   between "✅ Confirmed as sworn testimony — claim not
-   independently verified" and "Testified that X is true" in
-   conventions.md — same discipline of separating what a marker
-   actually confirms from what a reader might infer it confirms.
-3. **Add a `## Source Transcription Notes` rendered section.**
-   Surface `naming_quirks` entries with `preserve-as-sic-in-quotes`
-   resolution on the node body (currently they sit in the artifact
-   and never reach the reader). Optionally scoped to nodes where
-   at least one `ocr-scan` source is cited.
-4. **Validator coverage.** When a quote's source is `ocr-scan`,
-   `validate.py` could add an advisory warning suggesting a re-read
-   against the original (human-in-loop only; no mechanical fix
-   possible).
-
-**Scope note.** This is cross-cutting: schema (field addition),
-conventions (documentation of the distinction), renderer (new
-section + status-marker variant), validator (advisory warning).
-Touches every node that cites a scanned-PDF source, including
-future ones. Worth batching into a single convention pass rather
-than per-node workarounds repeated over time.
-
-**Affected now.** Every node that sources from a scanned
-government document — grusch (PPD-19 filing), plus any FOIA
-response PDFs (several archived in sources/government/) that
-went through scanner OCR rather than being text-native exports.
-
-Surfaced: Grusch v2 audit (2026-04-24) — external auditor noted
-that "verified verbatim" against a corrupted OCR extract is not
-the same as verified against the original and is "a real gap in
-the convention that will affect every scanned-document source."
+**On #21's deferred status.** Tier 2 provided evidence that
+Distiller-produced PDFs are not automatically extraction-lossy —
+the Grusch written testimony uses the same Acrobat Distiller 23.0
+as the Tier 1 hearing transcript but extracts cleanly. The
+Unicode-mapping issue isn't consistent within a single producer, so
+a wholesale tool change would be solving the wrong problem
+(treating the tool as the variable when the actual variable is
+upstream — font embedding, encoding tables, source-specific). The
+current approach — flag lossy sources, produce `.txt` siblings,
+move on — remains correct for the observed pattern. **Revisit #21
+only if Tier 5 surfaces a systemic pattern.**
 
 ---
 
@@ -358,7 +277,7 @@ caption file is the authoritative source.
    which the validator already does. Cheap. Accepts caption errors
    as authentic to the source of record.
 2. **Audio-as-source** — every transcript-derived quote needs
-   confirmation against audio. Download audio for all 9 transcript
+   confirmation against audio. Download audio for all transcript
    sources; sample-verify passages; possibly automate via modern
    speech-to-text diffed against the caption file, human-verify
    disagreements. Expensive.
@@ -377,11 +296,14 @@ established in Phase A/D. Requires manifest schema field addition
 + classification pass + per-category audit methodology in
 `meta/conventions.md`.
 
-**Affected now.** 9 transcript sources, 73 quotes. Representative
+**Affected now.** 11 transcript sources, 80 quotes. Representative
 cases: JRE 2065 (20 quotes — auto-caption), NewsNation Coulthart
 (17 — auto-caption), American Alchemy (10 — auto-caption), plus
 `when-it-mattered-55-dietrich-2021.pdf` (6 quotes — provenance
-unclear, worth categorizing).
+unclear, worth categorizing) and `ncas-kirkpatrick-aaro-duality`
+(1 quote — auto-caption from a post-AARO Kirkpatrick presentation).
+Mix expected to grow as additional interview / podcast sources land
+in the corpus.
 
 **Scope.** Convention decision is ~1 session. Execution scope
 depends on option chosen: option 1 = 1 session; option 3 =
@@ -390,8 +312,8 @@ classification pass + sampled audio verification = 2–3 sessions.
 **Blocks.** Phase F Tier 3. BACKLOG #19 cannot close until this
 decision resolves and Tier 3 executes under it.
 
-Surfaced: Phase F.1 diagnostic (2026-04-24) — 9 transcript sources
-concentrate 14% of the corpus; Phase E principle didn't anticipate
+Surfaced: Phase F.1 diagnostic — transcript sources concentrate
+~10% of the corpus's quotes; Phase E principle didn't anticipate
 the auto-caption-vs-audio axis when generalizing transcripts as
 equivalent-footing.
 
@@ -645,41 +567,48 @@ synthesis-content notes"*. Document artifacts have a required
 scope by the convention; isn't in the implementation. The
 implementation and the convention are out of sync.
 
-**Inspection of the maps suggests this is an oversight, not an
-intentional exclusion** — every other content type has a
-`description` entry with rationale-bearing comments in
-`PROSE_FIELDS_BY_TYPE`; document just isn't there.
+The maps' structure suggests the omission is an oversight — every
+other content type has a `description` entry with rationale-bearing
+comments in `PROSE_FIELDS_BY_TYPE`; document just isn't there.
 
-**Current production impact.** Across the 4 built document
-artifacts, **173 unmatched description tokens are silently passing
+**Current production impact.** Across the 6 built document
+artifacts, **209 unmatched description tokens are silently passing
 through with 0 warnings**:
 
 | Artifact | Unmatched / total |
 |---|---|
+| `eo-14347-restoring-department-of-war` | 0 / 140 |
+| `pentagon-uapda-revisions-2023-11` | 36 / 188 |
 | `written-testimony-fravor-2023` | 47 / 139 |
 | `written-testimony-graves-2023` | 40 / 157 |
 | `written-testimony-grusch-2023` | 33 / 178 |
 | `written-testimony-kirkpatrick-2023` | 53 / 135 |
 
-The 19–39% rates compare against contributor-targeted 0% on other
-types under the zero-warnings discipline. A meaningful gap.
+The 0–39% range against contributor-targeted 0% on other types
+under the zero-warnings discipline is a meaningful gap. The
+eo-14347 row at zero unmatched is informative — for some document
+forms (executive orders here, plausibly press releases / FOIA
+letters too), the description can plausibly source its vocabulary
+entirely from the document body itself. For testimony documents,
+the description carries provenance / about-the-document vocabulary
+that inherently can't match source-body tokens. The two cases
+behave differently under any scoping rule.
 
 **Token analysis** — the unmatched content falls into two buckets:
 
-1. **Provenance/context vocabulary** — PDF-metadata-derived terms
+1. **Provenance / context vocabulary.** PDF-metadata-derived terms
    ("Author", "Producer", "CreationDate"), filing-process language
-   ("submitted to the hearing", "open-session companion"), document-
-   physical-attribute terms ("4-page", "PDF"). These describe the
-   document, not the document's content; by definition they cannot
-   match source-body tokens. This bucket is a structural mismatch
-   between the description's role on document artifacts (synthesis
-   *about* the document) and the prose-drift check's source pool
-   (the document body itself).
-
-2. **Synthesis verbs and connectives** — "covers", "characterizes",
-   "includes", "describes", etc. The same shape of stylistic drift
-   the check catches on other types. This bucket is real bucket-2
-   drift that's currently unchecked.
+   ("submitted to the hearing", "open-session companion"),
+   document-physical-attribute terms ("4-page", "PDF"). These
+   describe the document, not the document's content; by definition
+   they cannot match source-body tokens. Structural mismatch between
+   description's role on document artifacts (synthesis *about* the
+   document) and the prose-drift check's source pool (the document
+   body itself).
+2. **Synthesis verbs and connectives.** "covers", "characterizes",
+   "includes", "describes". The same shape of stylistic drift the
+   check catches on other types. This bucket is real bucket-2 drift
+   that's currently unchecked.
 
 **Are other types similarly impacted?**
 
@@ -699,50 +628,52 @@ types under the zero-warnings discipline. A meaningful gap.
 
 A. **Add `document` to `PROSE_FIELDS_BY_TYPE` with the same scoping
    pool** (union of `primary_sources[].path` tokens). Cheap; matches
-   the convention literally; produces high false-positive rates as
-   bucket-1 above shows. Forces document descriptions to use almost
-   only source-body vocabulary, which damages legitimate contextual
-   framing (provenance, cross-node positioning, document-physical
-   attributes). Contributors face an unfixable warning surface.
-
+   the convention literally; produces high false-positive rates on
+   testimony descriptions per bucket-1 above. Would force testimony
+   descriptions to use almost-only source-body vocabulary, damaging
+   legitimate contextual framing (provenance, cross-node positioning,
+   document-physical attributes). Contributors face an unfixable
+   warning surface on testimony nodes; the eo-14347 case at 0%
+   suggests other doc forms tolerate Path A cleanly.
 B. **Add `document` with an expanded source pool.** The pool would
    include the document's own primary sources PLUS the source pools
    of structurally-adjacent nodes (companion transcript on testimony
    docs, hosting event, hosting organization). More machinery; more
-   graceful for legitimate contextual content; introduces
-   cross-artifact pool-resolution logic the validator doesn't have
-   today.
+   graceful for legitimate contextual content; introduces cross-
+   artifact pool-resolution logic the validator doesn't have today.
+C. **Document the exclusion explicitly.** Add a rationale comment
+   in `PROSE_FIELDS_BY_TYPE` ("document descriptions are *about*
+   the document, not from its body, so the token-match check
+   produces noise"). Aligns implementation with what's already
+   happening; surrenders bucket-2 drift checking on document
+   descriptions. Cheapest; loses the most.
 
-C. **Document the exclusion explicitly** with a rationale comment
-   in `PROSE_FIELDS_BY_TYPE` ("document descriptions are *about* the
-   document, not from its body, so the token-match check produces
-   noise"). Aligns implementation with what's already happening;
-   surrenders bucket-2 drift checking on document descriptions.
-   Cheapest; loses the most.
+The eo-14347 case (0 / 140 unmatched) is evidence that doc-form
+heterogeneity matters — testimony descriptions and EO descriptions
+have different about-vs-from balance. A per-doc-form scoping rule
+(testimony → expanded pool; EO / press-release → source pool) would
+slot into Path B as a refinement; consider during the design pass.
 
-The choice depends on how much value bucket-2 drift detection has
-for document descriptions vs. how much false-positive cost option A
-imposes. Worth one focused session to decide and implement.
+**Affected now.** All 6 built document artifacts (2 EOs / press-
+release-form documents, 4 written testimonies). Affected on every
+future built document.
 
-**Affected now.** 4 written-testimony documents (Fravor, Graves,
-Grusch, Kirkpatrick). Affected on every future built document.
+**Priority.** Medium. Not a correctness issue (the verbatim-quote
+check on document Key Passages is unaffected and runs
+unconditionally); discipline-uniformity issue (drift checking is
+enforced on six content types but silently skipped on the seventh).
 
-**Priority.** Medium. Not a correctness issue (verbatim-quote check
-on document Key Passages is unaffected and runs unconditionally);
-discipline-uniformity issue (drift checking is enforced on six
-content types but silently skipped on the seventh).
+**Scope.** ~1 session: design decision + implementation + regression
+sweep across 6 existing document artifacts (which will require
+rewriting their descriptions to match the chosen scope, or accepting
+the warnings they produce as a baseline).
 
-**Scope.** ~1 session: design decision + implementation +
-regression sweep across 4 existing document artifacts (which will
-require either rewriting their descriptions to match the chosen
-scope, or accepting the warnings they'll produce as a baseline).
-
-Surfaced: 2026-04-28 audit pass on
-`research/written-testimony-kirkpatrick-2023.yaml` build — direct
+Surfaced: validator audit on a document artifact build — direct
 recreation of `check_prose_drift` logic showed 53 unmatched tokens
-in description, but `validate-research.py` reported 0 warnings;
-investigation traced to the missing `document` key in both maps;
-confirmed across all 4 existing document artifacts.
+on the Kirkpatrick written-testimony description, but
+`validate-research.py` reported 0 warnings. Investigation traced to
+the missing `document` key in both maps; confirmed across all
+existing document artifacts.
 
 ---
 
