@@ -139,11 +139,28 @@ def cmd_submit_one(url):
         sys.exit(1)
     print(f"Submitting: {url}")
     ok, result = submit_wayback(url)
-    if ok:
-        print(f"  OK: {result}")
-    else:
+    if not ok:
         print(f"  FAILED: {result}")
-    sys.exit(0 if ok else 1)
+        sys.exit(1)
+    print(f"  OK: {result}")
+
+    # Mirror the manifest update the no-args sweep does on a successful
+    # submit, so a contributor running --submit URL after registering a new
+    # source doesn't end up with archive_status: 1 (local only) and no
+    # wayback_date. See main()'s post-submit branch for the canonical pattern.
+    entries = load_manifest()
+    entry = next((e for e in entries if e.get("url") == url), None)
+    if entry is None:
+        print(f"  WARNING: URL not in manifest — submission succeeded but no")
+        print(f"  entry to update. Add via `manifest.py add` to track the")
+        print(f"  Wayback record.")
+        sys.exit(0)
+    wb_date = wayback_url_date(result) or datetime.now().strftime("%Y-%m-%d")
+    entry["wayback_date"] = wb_date
+    entry["archive_status"] = entry.get("archive_status", 0) | 2
+    save_manifest(entries)
+    print(f"  Manifest updated: wayback_date={wb_date}, archive_status |= 2")
+    sys.exit(0)
 
 
 def main():
