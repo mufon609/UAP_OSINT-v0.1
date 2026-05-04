@@ -11,10 +11,21 @@ Deferred work items — real, concrete, and would be lost otherwise. Not
 on the active roadmap. Items leave when (a) promoted to a roadmap phase,
 (b) addressed, or (c) superseded.
 
-Numbering is stable across removals — retired items leave a gap rather
-than shifting remaining IDs, so git-log and commit-message references
-stay valid. Same policy `meta/conventions.md` applies to validator check
-names.
+Open items are partitioned into three sections by dependency shape:
+**A — Priority sequence** (ordering / coupling constraints), **B —
+Parallel batch** (renderer-pass items that ship together), and **C —
+Anytime** (no upstream blockers). Item identifiers are A1, A2, ...,
+B1, B2, ..., C1, C2, ... — within each section, retired items leave
+a gap rather than shifting remaining IDs, so git-log and
+commit-message references stay valid. The same gap-stable policy in
+`meta/conventions.md` applies to validator check names.
+
+**Default focus: Section C.** C items have no upstream dependencies
+and can be picked up and finished in a single pass. A and B items
+carry ordering or coupling constraints — starting one without its
+dependencies risks half-baked implementations and leaves the BACKLOG
+cluttered with partial work. For ad-hoc sessions, prefer C work.
+Reserve A and B for sessions explicitly scoped to those tracks.
 
 Items waiting on an external event (FOIA resolution, registry access,
 etc.) the repo can't drive live in a separate section at the bottom
@@ -23,256 +34,15 @@ to schedule until the external trigger fires.
 
 ---
 
-## Open items
 
-### 9. Rename `finding` → `investigation` + redesign type
+## A. Priority sequence
 
-Mechanical rename plus a design pass. The `finding` type will be
-renamed to `investigation`; the redesign will decide what synthesis
-surface an investigation node carries (the Open Questions / Research
-Gaps section was removed during the statements-only consolidation —
-investigations are the intended home for that kind of material).
+Items with ordering or coupling constraints. A1 unblocks A2; A3 is
+coupled to roadmap F.7 (finding renderer); A4 pairs with F.7. Pick
+up in this order; do not skip ahead without the upstream piece in
+place.
 
-**Rename surfaces** (mechanical):
-- `meta/schema.yaml` — `types.finding` block + ~6 enum-list references
-- Scripts — `DIRS` maps, `TIMELINE_TYPES`/`RUMORS_TYPES` sets,
-  `new.py` argparse, `validate.py` `node_type == "finding"` branch
-  (total: 8 scripts)
-- `meta/templates/finding.md` → `investigation.md`
-- `/findings/` directory (currently empty) → `/investigations/`
-- Top-level docs — README, AGENT, CONTRIBUTING, conventions, overview,
-  research-queue
-
-**Redesign pass** (design decision deferred):
-- What sections does an investigation node carry under the
-  statements-only discipline? Options: quotes-only Key Passages
-  parallel to documents, or a cross-reference surface parallel to
-  hearing Witnesses & Testimony. See roadmap "F.7" section.
-- Incorporate the investigation-pathway material that used to live in
-  `research_gaps[]` (what readers expect from an active research
-  thread: concrete methodology, cross-node scope, resolution state).
-
-Surfaced: Open-Questions section removal — the rename was
-deliberately deferred to a later session rather than bundled with
-the removal.
-
----
-
-### 18. Codify Key Passages ordering convention in `conventions.md`
-
-The node-body renderer sorts Key Passages (and Key Testimony on
-hearing events) by `statement_date` when the field is present on
-entries. The ordering is currently an implicit behavior — it is
-documented in `meta/conventions.md` only for hearing-kind Key
-Testimony ("verbatim passages sorted by `statement_date`") and
-person Statements (sorted by `statement_date` within Direct
-Observations / Other Statements subsections); for document /
-transcript / media / organization / location Key Passages, neither
-schema.yaml nor conventions.md specifies ordering. Behavior is
-emergent: artifacts with `statement_date` populated render
-chronologically; artifacts without it render in artifact-entry
-order; partial population produces mixed ordering.
-
-**Concrete consequence** — TTSA audit. Populating `statement_date`
-on all 44 quotes triggered chronological sort, which promoted
-q5 (DeLonge email to Podesta, 2016-01-25) from mid-list to position
-1 — ahead of the 2017-07-10 SEC 1-A filings. The DeLonge email is
-the weakest-sourced entry in the set (self-attestation about
-Roswell material and Wright-Patterson AFB, not independently
-verified), and placing it at position 1 risks the chronological
-convention being read as an epistemic endorsement.
-
-Workaround applied at the time: tighten q5's `significance` header
-to "DeLonge email to Podesta — claim-of-record regarding McCasland,
-Roswell material, and Wright-Patterson AFB (claim made by DeLonge;
-not independently verified)". The in-header framing makes the
-weakest attestation carry its own epistemic hedge at the top of the
-passage, independent of list position. Pattern recommendation
-codified as Rule 3 below.
-
-**Convention to codify:**
-
-1. **Chronological ordering is the corpus default** for Key
-   Passages across all node types that support `statement_date`.
-   Same rule as the explicit hearing Key Testimony rule — extend
-   the scope clause in `schema.yaml` to cover all Key-Passages
-   sections, and cross-reference the behavior in
-   `conventions.md`.
-2. **`statement_date` should be universally populated** on quotes
-   whenever the source attests a date. Partial population produces
-   mixed-order rendering that confuses readers; a fully-populated
-   artifact produces clean chronology. Consider promoting
-   `statement_date` from optional to required where the source
-   has a date (validate-research.py can warn when a quote has no
-   statement_date but the source has an attested date).
-3. **In-header epistemic flagging is the hedge for weak
-   attestations** that would otherwise claim position 1 purely on
-   chronology. The convention: when a quote's evidentiary weight
-   is meaningfully below the median for its artifact (claim-of-
-   record, self-attested, secondary-source, contested), the
-   `significance` header carries an explicit hedge phrase —
-   "claim made by X; not independently verified" /
-   "claim-of-record" / "self-attested, contested" — so readers
-   see the epistemic framing before they read the quote text.
-   No schema change; discipline at the contributor layer.
-
-**Scope note.** Rule 1 is a documentation change (schema.yaml
-comment clarification + a `conventions.md` section on Key Passages
-ordering). Rule 2 is a schema policy decision (whether to promote
-`statement_date` from optional to required-when-attested, and
-whether to add a validate-research.py warning). Rule 3 is a
-contributor-discipline convention — codifying the hedge-phrase
-pattern with examples in `conventions.md`. All three address the
-same emergent behavior and should land in a single convention
-pass.
-
-**Current `statement_date` population** (corpus-wide, 827 quotes
-across 28 artifacts):
-
-| Target type | Populated / total | % |
-|---|---|---|
-| events | 21 / 21 | 100% |
-| organizations | 247 / 247 | 100% |
-| transcripts | 157 / 157 | 100% |
-| people | 284 / 286 | 99.3% |
-| documents | 40 / 99 | 40.4% |
-| locations | 0 / 17 | 0% |
-| **TOTAL** | **749 / 827** | **90.6%** |
-
-Documents and locations are the gap. Documents have a partial-
-population pattern (some doc artifacts populated, others not);
-locations have zero coverage (suggesting the field was never
-prioritized for location Key Passages — worth confirming whether
-location source dates are even meaningful or whether the section
-is structurally orderless). Rule 2 should land alongside per-type
-guidance on what to do when no source date is attestable.
-
-**Pattern confirmation status.** Multiple organization-node audits
-have shipped since TTSA surfaced this (AARO, UAPTF, OUSD-IS, IPMO,
-Sancorp, Arlo) — all populated `statement_date` and rendered
-chronologically without ordering concerns surfacing. The hedge-
-phrase convention (Rule 3) appears to hold but hasn't been
-formally codified. Worth a single convention-pass session.
-
-Surfaced: TTSA audit — q5 DeLonge-Podesta email promoted from
-position 5 to position 1 after `statement_date` adoption; hedged
-in-header in the same commit.
-
----
-
-### 19. Verified-verbatim marker removed; full-corpus source-integrity audit (Phase F) in progress
-
-**The principle (settled, see `meta/conventions.md`).** Confirmation
-against the underlying primary source is a precondition for
-inclusion in node bodies, not a rendered claim. `validate.py`'s
-verbatim-quote check runs unconditionally on every block-quote with
-a Source row; nodes carry no per-quote verification marker. The
-discipline is enforced mechanically and is invisible to readers by
-design.
-
-**Why this entry stays open.** The principle landed via a marker
-removal + validator refactor + node regeneration pass. That pass
-left a corpus-integrity question: existing quotes were verified
-under the old regime, which substring-matched quote text against
-`pdftotext` / HTML extract output. When the source's extraction
-layer is lossy (OCR-scanned PDFs, character-substituting PDF
-generators), bytes-match-extract is not bytes-match-original. A
-multi-tier source-integrity audit (Phase F) walks every cited
-source and re-verifies extraction quality. **#19 closes when Tier 6
-closeout runs.**
-
-**Authoritative progress record.** Tier-by-tier methodology,
-findings, and aggregate measurements live in
-`meta/toolkit-notes/corpus-audit-2026-04.md`. This BACKLOG entry
-tracks the high-level work plan and remaining decisions; the
-closeout doc is the source of truth for audit detail.
-
-**Schema additions shipped during Phase F.** `extraction_type`
-field on `manifest_entry` with values `text-native | ocr-scan |
-extraction-lossy`. The validator prefers a same-stem `.txt` sibling
-over `pdftotext` output when extraction_type is non-text-native —
-the sibling is a contributor-produced clean transcription, visually
-verified against the source, with its own manifest entry + sha256.
-
-**Current corpus state.** 827 quotes across 144 unique source paths
-across 28 research artifacts (up from 508 / 64 / 16 at Phase F.1
-diagnostic — corpus has grown ~60%). The per-tier source counts in
-the closeout doc were Phase F.1 snapshots; counts re-derive at each
-audit-execution session.
-
-**Remaining work.**
-
-- **Tier 3 — transcript sources (auto-caption majority).** Audit
-  blocked on BACKLOG #20 (auto-caption-vs-audio convention
-  decision). Phase E's primary-source principle didn't specify
-  audio-source handling; three framings are sketched in the
-  closeout doc; option 3 (hybrid by `transcript_provenance`) is
-  the most principled and requires schema work.
-- **Tier 4 — HTML sources.** Extraction low-risk (tag-strip +
-  entity-decode handles nearly all cases). Batched spot-check
-  pattern across the source set.
-- **Tier 5 — PDF long-tail.** Government / news / FOIA / SEC
-  PDFs. Some pipelines cluster (Uintah parcel PDFs share an ORDS
-  portal pipeline — verify once, apply across); the rest are
-  one-by-one spot-checks.
-- **Tier 6 — Closeout.** Aggregate findings across all tiers into
-  the closeout doc; confirm follow-up BACKLOG entries are still
-  appropriately scoped; close #19.
-
-**Findings to date** (Tiers 1+2). Aggregate contributor-drift rate
-across the audited 298 quotes: **0.67%** (6 corrections in Tier 1's
-211 quotes / 0 corrections in Tier 2's 87 quotes). Tier 1 was the
-worst-case segment of the corpus — high quote volume, known
-extraction-layer issue (`11‡→11½` Unicode mapping), and source
-complexity (54-page stenographic transcript with oral testimony +
-Q&A + submitted documents). Tier 2's 0% rate in contributor-
-authored short written testimonies is evidence that Tier 1's 1.4%
-standalone rate was the peak, not the baseline. **Projected
-remaining findings (Tiers 4+5):** 1–2 corrections.
-
-**Recommended sequence.**
-
-1. **Tier 4 first** (HTML sources). Larger source surface area
-   than Tier 5 but extraction is low-risk; batched spot-check
-   pattern applies across the whole set.
-2. **Tier 5 after Tier 4** (PDF long-tail). Cluster pipelines
-   (Uintah parcel PDFs) verify once-and-apply; remaining PDFs are
-   one-by-one.
-3. **Tier 3 convention decision** runs on its own track. Don't
-   collapse into an audit-execution pass — option 3 (hybrid by
-   `transcript_provenance`) requires a schema field that needs
-   the same care `extraction_type` got.
-4. **Tier 6 closeout** after Tier 3 execution.
-
-**Follow-up BACKLOG entries surfaced during the audit.** All filed
-for tracking; fates confirmed at Tier 6 closeout:
-
-- **#20** — auto-caption vs audio confirmation discipline (blocks
-  Tier 3)
-- **#21** — `pdftotext` Unicode-mapping quirks (extraction-tool-
-  layer fix; narrower than the `extraction-lossy` schema category)
-- **#22** — Provenance-marker treatment on document Provenance
-  tables (different shape from per-quote Verified)
-- **#24** — Location reference normalization (stale `lines N-M`
-  pdftotext refs; navigation-precision hygiene)
-- **#32 (M2)** — naming_quirks preserve-as-sic forms unmarked in
-  synthesis prose
-
-**On #21's deferred status.** Tier 2 provided evidence that
-Distiller-produced PDFs are not automatically extraction-lossy —
-the Grusch written testimony uses the same Acrobat Distiller 23.0
-as the Tier 1 hearing transcript but extracts cleanly. The
-Unicode-mapping issue isn't consistent within a single producer, so
-a wholesale tool change would be solving the wrong problem
-(treating the tool as the variable when the actual variable is
-upstream — font embedding, encoding tables, source-specific). The
-current approach — flag lossy sources, produce `.txt` siblings,
-move on — remains correct for the observed pattern. **Revisit #21
-only if Tier 5 surfaces a systemic pattern.**
-
----
-
-### 20. Auto-caption-vs-audio confirmation discipline (Phase F Tier 3 blocker)
+### A1. Auto-caption-vs-audio confirmation discipline (Phase F Tier 3 blocker)
 
 Phase E's "Confirmation is a precondition for inclusion" principle
 (`meta/conventions.md`) names transcripts as equivalent-footing
@@ -332,7 +102,7 @@ the existing transcript set; option 3 is a classification pass
 across each transcript source plus sampled audio verification per
 category.
 
-**Blocks.** Phase F Tier 3. BACKLOG #19 cannot close until this
+**Blocks.** Phase F Tier 3. BACKLOG A2 cannot close until this
 decision resolves and Tier 3 executes under it.
 
 Surfaced: Phase F.1 diagnostic — transcript sources concentrate
@@ -342,369 +112,119 @@ equivalent-footing.
 
 ---
 
-### 21. pdftotext Unicode-mapping quirks on text-native PDFs (extraction-tool-layer)
+### A2. Verified-verbatim marker removed; full-corpus source-integrity audit (Phase F) in progress
 
-The `extraction-lossy` enum category added in Phase F Tier 1 captures
-the high-level source-condition pattern: text layer present (not
-OCR'd) but pdftotext produces artifacts. The underlying root cause
-for the known case (hearing transcript PDF, `11½` rendering as
-`11‡` via pdftotext) is specifically a Unicode-mapping issue at the
-PDF-generation layer — Acrobat Distiller mapped U+00BD ONE HALF to
-U+2021 DOUBLE DAGGER in the text stream.
+**The principle (settled, see `meta/conventions.md`).** Confirmation
+against the underlying primary source is a precondition for
+inclusion in node bodies, not a rendered claim. `validate.py`'s
+verbatim-quote check runs unconditionally on every block-quote with
+a Source row; nodes carry no per-quote verification marker. The
+discipline is enforced mechanically and is invisible to readers by
+design.
 
-**Possible narrower fix:** use a different PDF text extraction tool
-(e.g., `pdfplumber`, `pymupdf`, `mutool`) that handles this Unicode
-mapping correctly, rather than producing a clean-text sibling per-
-source. If the alternate tool gives clean output on the hearing
-transcript and all other corpus PDFs, the extraction-lossy category
-might dissolve for the Unicode-mapping subcase, leaving only
-genuinely OCR'd sources needing siblings.
+**Why this entry stays open.** The principle landed via a marker
+removal + validator refactor + node regeneration pass. That pass
+left a corpus-integrity question: existing quotes were verified
+under the old regime, which substring-matched quote text against
+`pdftotext` / HTML extract output. When the source's extraction
+layer is lossy (OCR-scanned PDFs, character-substituting PDF
+generators), bytes-match-extract is not bytes-match-original. A
+multi-tier source-integrity audit (Phase F) walks every cited
+source and re-verifies extraction quality. **A2 closes when Tier 6
+closeout runs.**
 
-**Scope consideration.** This is a narrower question than the
-extraction-lossy schema category. The category stays regardless —
-OCR sources still need sibling handling. But if a tool change could
-eliminate the Unicode-mapping failure mode across the corpus, that
-reduces the sibling-production workload for future tiers of the audit
-(and for future contributors adding sources).
+**Authoritative progress record.** Tier-by-tier methodology,
+findings, and aggregate measurements live in
+`meta/toolkit-notes/corpus-audit-2026-04.md`. This BACKLOG entry
+tracks the high-level work plan and remaining decisions; the
+closeout doc is the source of truth for audit detail.
 
-**Methodology for evaluation** (deferred to a separate session):
-run alternate PDF extraction tools against the hearing transcript
-PDF; compare output to the known-correct visual content; check for
-`11½` rendering correctness; check other Unicode edge cases
-(fractions, typography, signature glyphs, section signs). If an
-alternate tool gives clean output uniformly, propose adopting it in
-`validate.py` as the PDF extraction path (with pdftotext retained
-as fallback for compatibility).
+**Schema additions shipped during Phase F.** `extraction_type`
+field on `manifest_entry` with values `text-native | ocr-scan |
+extraction-lossy`. The validator prefers a same-stem `.txt` sibling
+over `pdftotext` output when extraction_type is non-text-native —
+the sibling is a contributor-produced clean transcription, visually
+verified against the source, with its own manifest entry + sha256.
 
-**Affected now.** Hearing transcript PDF (only known case to date).
-Future corpus PDFs may exhibit similar conditions — evaluation cost
-is bounded.
+**Current corpus state.** 827 quotes across 144 unique source paths
+across 28 research artifacts (up from 508 / 64 / 16 at Phase F.1
+diagnostic — corpus has grown ~60%). The per-tier source counts in
+the closeout doc were Phase F.1 snapshots; counts re-derive at each
+audit-execution session.
 
-Surfaced: Phase F Tier 1 — `11‡` for `11½` caught during hearing-
-transcript audit; extraction-lossy enum added to handle the pattern
-generically, but the specific case might have a narrower solution
-at the tool layer.
+**Remaining work.**
 
----
+- **Tier 3 — transcript sources (auto-caption majority).** Audit
+  blocked on BACKLOG A1 (auto-caption-vs-audio convention
+  decision). Phase E's primary-source principle didn't specify
+  audio-source handling; three framings are sketched in the
+  closeout doc; option 3 (hybrid by `transcript_provenance`) is
+  the most principled and requires schema work.
+- **Tier 4 — HTML sources.** Extraction low-risk (tag-strip +
+  entity-decode handles nearly all cases). Batched spot-check
+  pattern across the source set.
+- **Tier 5 — PDF long-tail.** Government / news / FOIA / SEC
+  PDFs. Some pipelines cluster (Uintah parcel PDFs share an ORDS
+  portal pipeline — verify once, apply across); the rest are
+  one-by-one spot-checks.
+- **Tier 6 — Closeout.** Aggregate findings across all tiers into
+  the closeout doc; confirm follow-up BACKLOG entries are still
+  appropriately scoped; close A2.
 
-### 22. Provenance-marker treatment on document node Provenance tables
+**Findings to date** (Tiers 1+2). Aggregate contributor-drift rate
+across the audited 298 quotes: **0.67%** (6 corrections in Tier 1's
+211 quotes / 0 corrections in Tier 2's 87 quotes). Tier 1 was the
+worst-case segment of the corpus — high quote volume, known
+extraction-layer issue (`11‡→11½` Unicode mapping), and source
+complexity (54-page stenographic transcript with oral testimony +
+Q&A + submitted documents). Tier 2's 0% rate in contributor-
+authored short written testimonies is evidence that Tier 1's 1.4%
+standalone rate was the peak, not the baseline. **Projected
+remaining findings (Tiers 4+5):** 1–2 corrections.
 
-Document nodes render a `## Provenance` section that tracks the
-custody chain of the source file (authoring date, submission venue,
-local archival, etc.). Rows use a `✅ Confirmed —` marker pattern
-with evidence descriptions (e.g., `"✅ Confirmed — PDF metadata
-CreationDate: Sun Jul 23 14:41:22 2023 EDT"`, `"✅ Confirmed —
-hosted at oversight.house.gov"`, `"✅ Confirmed — SHA256 verified
-via sources/manifest.yaml"`).
+**Recommended sequence.**
 
-**Question surfaced during Phase B** of #19's marker-removal work:
-with the per-quote `Verified` marker removed under Phase E's "no
-rendered trust claim" principle, should these per-row Provenance
-markers be removed too?
+1. **Tier 4 first** (HTML sources). Larger source surface area
+   than Tier 5 but extraction is low-risk; batched spot-check
+   pattern applies across the whole set.
+2. **Tier 5 after Tier 4** (PDF long-tail). Cluster pipelines
+   (Uintah parcel PDFs) verify once-and-apply; remaining PDFs are
+   one-by-one.
+3. **Tier 3 convention decision** runs on its own track. Don't
+   collapse into an audit-execution pass — option 3 (hybrid by
+   `transcript_provenance`) requires a schema field that needs
+   the same care `extraction_type` got.
+4. **Tier 6 closeout** after Tier 3 execution.
 
-**Analysis from the Phase B discussion**:
-the two markers look similar but do different jobs. The per-quote
-Verified marker asserted "this quote matches the source" — a claim
-about the quote itself that the reader could theoretically verify
-but the marker was standing in for. That's the trust-performance
-pattern Phase E rejects. The Provenance markers assert "this custody
-event happened" — claims about the history of the artifact that
-reference specific checkable evidence (PDF metadata, hostname,
-SHA256). That's closer to the rendered-citation pattern (scholarly
-"(Smith 2019, p. 47)") than to trust-performance: the prose after
-the checkmark names the specific evidence the reader can follow.
+**Follow-up BACKLOG entries surfaced during the audit.** All filed
+for tracking; fates confirmed at Tier 6 closeout:
 
-The strongest Provenance claim is the SHA256 one (reader can literally
-`sha256sum` against the archived file). Weaker is the PDF-metadata
-claim (requires pulling PDF + running exiftool). Weakest is the
-hostname claim (hostname may have changed since archival — the
-Wayback link is the actual evidence, not the hostname).
+- **A1** — auto-caption vs audio confirmation discipline (blocks
+  Tier 3)
+- **C4** — `pdftotext` Unicode-mapping quirks (extraction-tool-
+  layer fix; narrower than the `extraction-lossy` schema category)
+- **C3** — Provenance-marker treatment on document Provenance
+  tables (different shape from per-quote Verified)
+- **C1** — Location reference normalization (stale `lines N-M`
+  pdftotext refs; navigation-precision hygiene)
+- **B1 (M2)** — naming_quirks preserve-as-sic forms unmarked in
+  synthesis prose
 
-**If revisited, the interesting move** is not removing the markers
-but tightening them so the evidence is always as checkable as the
-SHA256 case. That's different analysis from BACKLOG #19 and
-deserves its own design pass.
-
-**Recommendation.** Defer. Not a correctness issue (Provenance rows
-are factual metadata with evidence attached; the marker is a
-shorthand summary); not a readers-being-misled issue (prose names
-the evidence). The analysis is genuinely different from #19 — the
-removal pattern from #19 would be wrong if applied here.
-
-**Scope if taken up.** Per-provenance-row audit: categorize each
-marker's underlying evidence by checkability (SHA256-level / tool-
-required / external-attestation); tighten wording to surface the
-distinction where useful; or decide the current pattern is fine
-given Phase E's principle doesn't scope to Provenance tables.
-
-Surfaced: Phase F spot-check review of `✅ Confirmed —` patterns in
-rendered nodes — Provenance markers share the marker pattern with
-the per-quote Verified row but don't share the trust-performance
-shape.
-
----
-
-### 24. Location reference normalization — stale pdftotext line refs in quote Locations
-
-Quotes across the corpus cite `Location: lines 805-810` or similar
-line-range references that point at line numbers in pdftotext output
-of the cited source rather than government page numbers or other
-stable document anchors. These were keyed to the pdftotext extraction
-in use at the time the quote was authored.
-
-**Problem shape.** The validator's verbatim-quote check verifies
-quote text substring-matches the extract; it does NOT verify Location
-accuracy. So stale `lines N-M` refs don't cause validation failures,
-but they become increasingly imprecise as sources get re-extracted
-(e.g., Phase F Tier 1's clean-text sibling renumbers the hearing
-transcript).
-
-**Scope (current corpus).** **356 quotes across 16 artifacts** cite
-line-range Locations of this shape. Affected artifacts include the
-three House Oversight 2023-07-26 hearing artifacts (fravor / graves /
-grusch), the SASC AARO hearing transcript, written-testimony
-documents, and AARO / Skinwalker Ranch / multiple person nodes.
-Corpus-wide normalization, not a per-artifact spot fix.
-
-**Second imprecision shape — boundary inclusion** (surfaced during
-the 2023-04-19 SASC AARO hearing event build). Beyond re-extraction
-staleness, contributor-authored Location refs can be imprecise from
-the start by including adjoining material in the range. Concrete
-cases on `research/2023-04-19-sasc-aaro-hearing.yaml`: q8 cites
-`lines 1784-1792` but Kirkpatrick's spoken portion ends at line 1788
-(Sen. Rosen interrupts at 1789, page footer at 1791-1792). q11 cites
-`lines 2178-2183` but the quote content runs 2180-2182 (prior speaker
-turn at 2178-2179, next speaker at 2183). Different root cause from
-staleness — caught during writing rather than during re-extraction —
-but same fix target: tighter ref discipline using the conventions
-below. The systematic sweep addresses both shapes.
-
-**Fix shape.** Systematic conversion of `lines N-M` refs to:
-- `p. N, ¶M` for stenographic PDFs (hearing transcripts)
-- `p. N` for single-line citations
-- `¶N` for short documents without pagination
-- `[MM:SS]` ranges for transcript/caption sources
-- `lines N-M of the extract` explicitly when the extract is the
-  intended reference (rare)
-
-The conversion is mechanical per quote once the rule is written
-down, but each quote needs a per-source read to determine the
-correct replacement form. Tooling could help (a script that reads
-each quote's source and proposes a normalized Location) but
-human-in-loop verification is still needed for boundary-inclusion
-cases.
-
-**Priority.** Low. Not a correctness issue; navigational-precision
-improvement for readers. Validator doesn't care.
-
-**Scope.** Corpus-wide normalization across 356 quotes / 16
-artifacts. Independent of the Phase F audit tiers; can run before,
-after, or between them. Tooling-pass + per-source review per quote
-(no fully-mechanical fix because boundary-inclusion correction
-requires reading the quote against its source).
-
-Surfaced: Phase F Tier 1 — the hearing-transcript `.txt` sibling
-used government page numbers as section markers, which rendered
-existing `lines N-M` quote Locations increasingly out-of-sync.
-Corrections deferred per explicit Phase F Tier 1 scope decision
-(Phase F is about extraction integrity, not navigation precision).
+**On C4's deferred status.** Tier 2 provided evidence that
+Distiller-produced PDFs are not automatically extraction-lossy —
+the Grusch written testimony uses the same Acrobat Distiller 23.0
+as the Tier 1 hearing transcript but extracts cleanly. The
+Unicode-mapping issue isn't consistent within a single producer, so
+a wholesale tool change would be solving the wrong problem
+(treating the tool as the variable when the actual variable is
+upstream — font embedding, encoding tables, source-specific). The
+current approach — flag lossy sources, produce `.txt` siblings,
+move on — remains correct for the observed pattern. **Revisit C4
+only if Tier 5 surfaces a systemic pattern.**
 
 ---
 
-### 26. Prose-drift check silently skips `document` type — coverage gap in validate-research.py
-
-**The gap.** `scripts/validate-research.py` defines two maps that
-gate the prose-drift check: `PROSE_FIELDS_BY_TYPE` (top-level
-free-prose fields per type) and `PROSE_ENTRY_FIELDS_BY_TYPE` (per-
-entry synthesis-content note fields per type). Both maps cover
-**person, event, transcript, media, organization, location** — six
-of the seven content types. **`document` is absent from both maps.**
-When `check_prose_drift` runs, the first guard returns immediately
-for any artifact whose `target_node` type isn't in either map.
-Result: every document artifact's prose-drift check is a no-op,
-regardless of how loosely the description tokenizes against source.
-
-**The fit with conventions.** `meta/conventions.md` scopes the
-prose-drift check to *"labeled synthesis surfaces (`description`,
-`background`, `uap_relevance`, `credibility_notes`) and per-entry
-synthesis-content notes"*. Document artifacts have a required
-`description` field per schema. Document `description` should be in
-scope by the convention; isn't in the implementation. The
-implementation and the convention are out of sync.
-
-The maps' structure suggests the omission is an oversight — every
-other content type has a `description` entry with rationale-bearing
-comments in `PROSE_FIELDS_BY_TYPE`; document just isn't there.
-
-**Current production impact.** Across the 6 built document
-artifacts, **209 unmatched description tokens are silently passing
-through with 0 warnings**:
-
-| Artifact | Unmatched / total |
-|---|---|
-| `eo-14347-restoring-department-of-war` | 0 / 140 |
-| `pentagon-uapda-revisions-2023-11` | 36 / 188 |
-| `written-testimony-fravor-2023` | 47 / 139 |
-| `written-testimony-graves-2023` | 40 / 157 |
-| `written-testimony-grusch-2023` | 33 / 178 |
-| `written-testimony-kirkpatrick-2023` | 53 / 135 |
-
-The 0–39% range against contributor-targeted 0% on other types
-under the zero-warnings discipline is a meaningful gap. The
-eo-14347 row at zero unmatched is informative — for some document
-forms (executive orders here, plausibly press releases / FOIA
-letters too), the description can plausibly source its vocabulary
-entirely from the document body itself. For testimony documents,
-the description carries provenance / about-the-document vocabulary
-that inherently can't match source-body tokens. The two cases
-behave differently under any scoping rule.
-
-**Token analysis** — the unmatched content falls into two buckets:
-
-1. **Provenance / context vocabulary.** PDF-metadata-derived terms
-   ("Author", "Producer", "CreationDate"), filing-process language
-   ("submitted to the hearing", "open-session companion"),
-   document-physical-attribute terms ("4-page", "PDF"). These
-   describe the document, not the document's content; by definition
-   they cannot match source-body tokens. Structural mismatch between
-   description's role on document artifacts (synthesis *about* the
-   document) and the prose-drift check's source pool (the document
-   body itself).
-2. **Synthesis verbs and connectives.** "covers", "characterizes",
-   "includes", "describes". The same shape of stylistic drift the
-   check catches on other types. This bucket is real bucket-2 drift
-   that's currently unchecked.
-
-**Are other types similarly impacted?**
-
-- **`finding` type** — also absent from both maps, but no built
-  artifacts yet (F.7 design pass pending). No production impact;
-  will need to be added when F.7 ships.
-- **`meta` type** — also absent. Likely intentional (governing
-  docs are not user-content; conventions don't apply).
-- **No other content types are missing from the maps.**
-- **Per-entry coverage for document** — `quote_entry.significance`
-  and `quote_entry.context` are not in conventions.md scope (they're
-  per-quote metadata, not per-entry synthesis content), so the
-  per-entry-map gap doesn't have a separate functional effect for
-  documents. The top-level-map gap is the meaningful one.
-
-**Design choices for the fix.** Three paths, none mechanical:
-
-A. **Add `document` to `PROSE_FIELDS_BY_TYPE` with the same scoping
-   pool** (union of `primary_sources[].path` tokens). Cheap; matches
-   the convention literally; produces high false-positive rates on
-   testimony descriptions per bucket-1 above. Would force testimony
-   descriptions to use almost-only source-body vocabulary, damaging
-   legitimate contextual framing (provenance, cross-node positioning,
-   document-physical attributes). Contributors face an unfixable
-   warning surface on testimony nodes; the eo-14347 case at 0%
-   suggests other doc forms tolerate Path A cleanly.
-B. **Add `document` with an expanded source pool.** The pool would
-   include the document's own primary sources PLUS the source pools
-   of structurally-adjacent nodes (companion transcript on testimony
-   docs, hosting event, hosting organization). More machinery; more
-   graceful for legitimate contextual content; introduces cross-
-   artifact pool-resolution logic the validator doesn't have today.
-C. **Document the exclusion explicitly.** Add a rationale comment
-   in `PROSE_FIELDS_BY_TYPE` ("document descriptions are *about*
-   the document, not from its body, so the token-match check
-   produces noise"). Aligns implementation with what's already
-   happening; surrenders bucket-2 drift checking on document
-   descriptions. Cheapest; loses the most.
-
-The eo-14347 case (0 / 140 unmatched) is evidence that doc-form
-heterogeneity matters — testimony descriptions and EO descriptions
-have different about-vs-from balance. A per-doc-form scoping rule
-(testimony → expanded pool; EO / press-release → source pool) would
-slot into Path B as a refinement; consider during the design pass.
-
-**Affected now.** All 6 built document artifacts (2 EOs / press-
-release-form documents, 4 written testimonies). Affected on every
-future built document.
-
-**Priority.** Medium. Not a correctness issue (the verbatim-quote
-check on document Key Passages is unaffected and runs
-unconditionally); discipline-uniformity issue (drift checking is
-enforced on six content types but silently skipped on the seventh).
-
-**Scope.** Design decision + implementation in `validate-research.py`
-+ regression sweep across the 6 existing document artifacts (which
-will require rewriting their descriptions to match the chosen scope,
-or accepting the warnings they produce as a baseline).
-
-Surfaced: validator audit on a document artifact build — direct
-recreation of `check_prose_drift` logic showed 53 unmatched tokens
-on the Kirkpatrick written-testimony description, but
-`validate-research.py` reported 0 warnings. Investigation traced to
-the missing `document` key in both maps; confirmed across all
-existing document artifacts.
-
----
-
-### 29. `updated` frontmatter field — corpus-wide currency anchoring
-
-**The gap.** Schema-required frontmatter is `[id, type, schema_version,
-status, kind, created]` across all content types. There is no `updated`
-or `last_modified` field. Body prose periodically carries time-anchored
-clauses — e.g., AARO description prose carrying *"no Sancorp follow-on
-or successor AARO Support Services contract is documented in archived
-primary sources as of {date}"*. The "as of {date}" form freezes the
-contributor's knowledge state at edit time, but a reader arriving six
-months later cannot tell whether the clause reflects an actual review
-on that date or is forward-projected boilerplate. Git log on the file
-is the authoritative edit-history record per `meta/conventions.md`,
-but readers don't reach for git log to evaluate prose currency.
-
-**Affected surface.** Any node with rolling-currency clauses — most
-acutely on government-entity org nodes where statutory deadlines,
-caseload counts, contract terms, and personnel transitions accumulate
-inline date anchors. AARO is the surfacing case; UAPTF, IPMO,
-OUSD(I&S), Sancorp, Arlo, TTSA, and every person node with current
-affiliations carry equivalent risk.
-
-**Design choices.**
-
-A. **Add `updated:` (or `last_reviewed:`) to schema.yaml frontmatter
-   `optional` set across all content types.** Contributors stamp it
-   when a node receives a content-currency review. Renderer surfaces
-   it in the Overview row or as a node-foot annotation. Cheap; opt-in;
-   no enforcement of refresh cadence. Risk: contributors forget to
-   stamp.
-
-B. **Move "as of {date}" prose into a structured `currency_anchors`
-   list.** Each anchor: `clause` + `as_of_date` + `source.path`.
-   Renderer composes the prose at build time. Heavier; forces the
-   review discipline at the schema layer; surfaces the audit trail
-   structurally.
-
-C. **Convention-only.** Document in `meta/conventions.md` that
-   "as of {date}" prose must match the most recent commit date on the
-   node file, validated by a new check that reads `git log -1`. No
-   schema change.
-
-**Relationship to BACKLOG #32.** Adjacent but distinct. #32 is about
-artifact-attested nuance (`note` fields, preserve-as-sic forms) not
-reaching readers; this is about prose-clause currency without a
-structural anchor. Both are reader-visibility issues.
-
-**Priority.** Low. Not a correctness issue — the currency claim is
-already source-attested via the underlying primary sources; the
-question is whether the reader can tell when the contributor last
-reviewed. Worth a single corpus-wide pass once a clear pattern emerges
-across 3+ nodes.
-
-**Scope.** Design decision (which of the three options) + schema /
-renderer change + per-node sweep across nodes carrying rolling-
-currency clauses.
-
-Surfaced: AARO web audit — auditor flagged an "as of {date}" clause
-as ambiguous between rolling-currency review and forward-projected
-boilerplate. Currently affects AARO; pattern likely recurs corpus-wide.
-
----
-
-### 31. Person-node Statements section — three reader-visibility problems on one data-model decision
+### A3. Person-node Statements section — three reader-visibility problems on one data-model decision
 
 Replaces former #13, #14, #16. The Statements section on a person node
 renders every quote attributed to that person, sorted chronologically.
@@ -809,7 +329,46 @@ point.
 
 ---
 
-### 32. Artifact-attested nuance not reaching readers — `.note` fields dropped in tables; preserve-as-sic forms unmarked in prose
+### A4. Rename `finding` → `investigation` + redesign type
+
+Mechanical rename plus a design pass. The `finding` type will be
+renamed to `investigation`; the redesign will decide what synthesis
+surface an investigation node carries (the Open Questions / Research
+Gaps section was removed during the statements-only consolidation —
+investigations are the intended home for that kind of material).
+
+**Rename surfaces** (mechanical):
+- `meta/schema.yaml` — `types.finding` block + ~6 enum-list references
+- Scripts — `DIRS` maps, `TIMELINE_TYPES`/`RUMORS_TYPES` sets,
+  `new.py` argparse, `validate.py` `node_type == "finding"` branch
+  (total: 8 scripts)
+- `meta/templates/finding.md` → `investigation.md`
+- `/findings/` directory (currently empty) → `/investigations/`
+- Top-level docs — README, AGENT, CONTRIBUTING, conventions, overview,
+  research-queue
+
+**Redesign pass** (design decision deferred):
+- What sections does an investigation node carry under the
+  statements-only discipline? Options: quotes-only Key Passages
+  parallel to documents, or a cross-reference surface parallel to
+  hearing Witnesses & Testimony. See roadmap "F.7" section.
+- Incorporate the investigation-pathway material that used to live in
+  `research_gaps[]` (what readers expect from an active research
+  thread: concrete methodology, cross-node scope, resolution state).
+
+Surfaced: Open-Questions section removal — the rename was
+deliberately deferred to a later session rather than bundled with
+the removal.
+
+---
+
+## B. Parallel batch (renderer pass)
+
+Items that touch the renderer and naturally batch into a single
+polish pass. Per B1's own scope note, bundling reduces churn vs.
+shipping each as a separate touch.
+
+### B1. Artifact-attested nuance not reaching readers — `.note` fields dropped in tables; preserve-as-sic forms unmarked in prose
 
 Replaces former #17 and #23. Two manifestations of the same gap:
 research artifacts capture source-derived evidentiary nuance in
@@ -953,6 +512,476 @@ caption verbatim forms in Credibility Notes prose read as
 contributor misspellings without explicit signal). The same
 node-build-audit cycle surfaced both shapes; reader-visibility for
 artifact metadata is the umbrella.
+
+---
+
+### B2. `updated` frontmatter field — corpus-wide currency anchoring
+
+**The gap.** Schema-required frontmatter is `[id, type, schema_version,
+status, kind, created]` across all content types. There is no `updated`
+or `last_modified` field. Body prose periodically carries time-anchored
+clauses — e.g., AARO description prose carrying *"no Sancorp follow-on
+or successor AARO Support Services contract is documented in archived
+primary sources as of {date}"*. The "as of {date}" form freezes the
+contributor's knowledge state at edit time, but a reader arriving six
+months later cannot tell whether the clause reflects an actual review
+on that date or is forward-projected boilerplate. Git log on the file
+is the authoritative edit-history record per `meta/conventions.md`,
+but readers don't reach for git log to evaluate prose currency.
+
+**Affected surface.** Any node with rolling-currency clauses — most
+acutely on government-entity org nodes where statutory deadlines,
+caseload counts, contract terms, and personnel transitions accumulate
+inline date anchors. AARO is the surfacing case; UAPTF, IPMO,
+OUSD(I&S), Sancorp, Arlo, TTSA, and every person node with current
+affiliations carry equivalent risk.
+
+**Design choices.**
+
+A. **Add `updated:` (or `last_reviewed:`) to schema.yaml frontmatter
+   `optional` set across all content types.** Contributors stamp it
+   when a node receives a content-currency review. Renderer surfaces
+   it in the Overview row or as a node-foot annotation. Cheap; opt-in;
+   no enforcement of refresh cadence. Risk: contributors forget to
+   stamp.
+
+B. **Move "as of {date}" prose into a structured `currency_anchors`
+   list.** Each anchor: `clause` + `as_of_date` + `source.path`.
+   Renderer composes the prose at build time. Heavier; forces the
+   review discipline at the schema layer; surfaces the audit trail
+   structurally.
+
+C. **Convention-only.** Document in `meta/conventions.md` that
+   "as of {date}" prose must match the most recent commit date on the
+   node file, validated by a new check that reads `git log -1`. No
+   schema change.
+
+**Relationship to BACKLOG B1.** Adjacent but distinct. B1 is about
+artifact-attested nuance (`note` fields, preserve-as-sic forms) not
+reaching readers; this is about prose-clause currency without a
+structural anchor. Both are reader-visibility issues.
+
+**Priority.** Low. Not a correctness issue — the currency claim is
+already source-attested via the underlying primary sources; the
+question is whether the reader can tell when the contributor last
+reviewed. Worth a single corpus-wide pass once a clear pattern emerges
+across 3+ nodes.
+
+**Scope.** Design decision (which of the three options) + schema /
+renderer change + per-node sweep across nodes carrying rolling-
+currency clauses.
+
+Surfaced: AARO web audit — auditor flagged an "as of {date}" clause
+as ambiguous between rolling-currency review and forward-projected
+boilerplate. Currently affects AARO; pattern likely recurs corpus-wide.
+
+---
+
+### B3. Codify Key Passages ordering convention in `conventions.md`
+
+The node-body renderer sorts Key Passages (and Key Testimony on
+hearing events) by `statement_date` when the field is present on
+entries. The ordering is currently an implicit behavior — it is
+documented in `meta/conventions.md` only for hearing-kind Key
+Testimony ("verbatim passages sorted by `statement_date`") and
+person Statements (sorted by `statement_date` within Direct
+Observations / Other Statements subsections); for document /
+transcript / media / organization / location Key Passages, neither
+schema.yaml nor conventions.md specifies ordering. Behavior is
+emergent: artifacts with `statement_date` populated render
+chronologically; artifacts without it render in artifact-entry
+order; partial population produces mixed ordering.
+
+**Concrete consequence** — TTSA audit. Populating `statement_date`
+on all 44 quotes triggered chronological sort, which promoted
+q5 (DeLonge email to Podesta, 2016-01-25) from mid-list to position
+1 — ahead of the 2017-07-10 SEC 1-A filings. The DeLonge email is
+the weakest-sourced entry in the set (self-attestation about
+Roswell material and Wright-Patterson AFB, not independently
+verified), and placing it at position 1 risks the chronological
+convention being read as an epistemic endorsement.
+
+Workaround applied at the time: tighten q5's `significance` header
+to "DeLonge email to Podesta — claim-of-record regarding McCasland,
+Roswell material, and Wright-Patterson AFB (claim made by DeLonge;
+not independently verified)". The in-header framing makes the
+weakest attestation carry its own epistemic hedge at the top of the
+passage, independent of list position. Pattern recommendation
+codified as Rule 3 below.
+
+**Convention to codify:**
+
+1. **Chronological ordering is the corpus default** for Key
+   Passages across all node types that support `statement_date`.
+   Same rule as the explicit hearing Key Testimony rule — extend
+   the scope clause in `schema.yaml` to cover all Key-Passages
+   sections, and cross-reference the behavior in
+   `conventions.md`.
+2. **`statement_date` should be universally populated** on quotes
+   whenever the source attests a date. Partial population produces
+   mixed-order rendering that confuses readers; a fully-populated
+   artifact produces clean chronology. Consider promoting
+   `statement_date` from optional to required where the source
+   has a date (validate-research.py can warn when a quote has no
+   statement_date but the source has an attested date).
+3. **In-header epistemic flagging is the hedge for weak
+   attestations** that would otherwise claim position 1 purely on
+   chronology. The convention: when a quote's evidentiary weight
+   is meaningfully below the median for its artifact (claim-of-
+   record, self-attested, secondary-source, contested), the
+   `significance` header carries an explicit hedge phrase —
+   "claim made by X; not independently verified" /
+   "claim-of-record" / "self-attested, contested" — so readers
+   see the epistemic framing before they read the quote text.
+   No schema change; discipline at the contributor layer.
+
+**Scope note.** Rule 1 is a documentation change (schema.yaml
+comment clarification + a `conventions.md` section on Key Passages
+ordering). Rule 2 is a schema policy decision (whether to promote
+`statement_date` from optional to required-when-attested, and
+whether to add a validate-research.py warning). Rule 3 is a
+contributor-discipline convention — codifying the hedge-phrase
+pattern with examples in `conventions.md`. All three address the
+same emergent behavior and should land in a single convention
+pass.
+
+**Current `statement_date` population** (corpus-wide, 827 quotes
+across 28 artifacts):
+
+| Target type | Populated / total | % |
+|---|---|---|
+| events | 21 / 21 | 100% |
+| organizations | 247 / 247 | 100% |
+| transcripts | 157 / 157 | 100% |
+| people | 284 / 286 | 99.3% |
+| documents | 40 / 99 | 40.4% |
+| locations | 0 / 17 | 0% |
+| **TOTAL** | **749 / 827** | **90.6%** |
+
+Documents and locations are the gap. Documents have a partial-
+population pattern (some doc artifacts populated, others not);
+locations have zero coverage (suggesting the field was never
+prioritized for location Key Passages — worth confirming whether
+location source dates are even meaningful or whether the section
+is structurally orderless). Rule 2 should land alongside per-type
+guidance on what to do when no source date is attestable.
+
+**Pattern confirmation status.** Multiple organization-node audits
+have shipped since TTSA surfaced this (AARO, UAPTF, OUSD-IS, IPMO,
+Sancorp, Arlo) — all populated `statement_date` and rendered
+chronologically without ordering concerns surfacing. The hedge-
+phrase convention (Rule 3) appears to hold but hasn't been
+formally codified. Worth a single convention-pass session.
+
+Surfaced: TTSA audit — q5 DeLonge-Podesta email promoted from
+position 5 to position 1 after `statement_date` adoption; hedged
+in-header in the same commit.
+
+---
+
+## C. Anytime (no dependencies)
+
+Items with no upstream blockers; safe to pick up at any point in
+any session. Per the preamble, this is the default-focus tier:
+C work doesn't risk half-baked implementations.
+
+### C1. Location reference normalization — stale pdftotext line refs in quote Locations
+
+Quotes across the corpus cite `Location: lines 805-810` or similar
+line-range references that point at line numbers in pdftotext output
+of the cited source rather than government page numbers or other
+stable document anchors. These were keyed to the pdftotext extraction
+in use at the time the quote was authored.
+
+**Problem shape.** The validator's verbatim-quote check verifies
+quote text substring-matches the extract; it does NOT verify Location
+accuracy. So stale `lines N-M` refs don't cause validation failures,
+but they become increasingly imprecise as sources get re-extracted
+(e.g., Phase F Tier 1's clean-text sibling renumbers the hearing
+transcript).
+
+**Scope (current corpus).** **356 quotes across 16 artifacts** cite
+line-range Locations of this shape. Affected artifacts include the
+three House Oversight 2023-07-26 hearing artifacts (fravor / graves /
+grusch), the SASC AARO hearing transcript, written-testimony
+documents, and AARO / Skinwalker Ranch / multiple person nodes.
+Corpus-wide normalization, not a per-artifact spot fix.
+
+**Second imprecision shape — boundary inclusion** (surfaced during
+the 2023-04-19 SASC AARO hearing event build). Beyond re-extraction
+staleness, contributor-authored Location refs can be imprecise from
+the start by including adjoining material in the range. Concrete
+cases on `research/2023-04-19-sasc-aaro-hearing.yaml`: q8 cites
+`lines 1784-1792` but Kirkpatrick's spoken portion ends at line 1788
+(Sen. Rosen interrupts at 1789, page footer at 1791-1792). q11 cites
+`lines 2178-2183` but the quote content runs 2180-2182 (prior speaker
+turn at 2178-2179, next speaker at 2183). Different root cause from
+staleness — caught during writing rather than during re-extraction —
+but same fix target: tighter ref discipline using the conventions
+below. The systematic sweep addresses both shapes.
+
+**Fix shape.** Systematic conversion of `lines N-M` refs to:
+- `p. N, ¶M` for stenographic PDFs (hearing transcripts)
+- `p. N` for single-line citations
+- `¶N` for short documents without pagination
+- `[MM:SS]` ranges for transcript/caption sources
+- `lines N-M of the extract` explicitly when the extract is the
+  intended reference (rare)
+
+The conversion is mechanical per quote once the rule is written
+down, but each quote needs a per-source read to determine the
+correct replacement form. Tooling could help (a script that reads
+each quote's source and proposes a normalized Location) but
+human-in-loop verification is still needed for boundary-inclusion
+cases.
+
+**Priority.** Low. Not a correctness issue; navigational-precision
+improvement for readers. Validator doesn't care.
+
+**Scope.** Corpus-wide normalization across 356 quotes / 16
+artifacts. Independent of the Phase F audit tiers; can run before,
+after, or between them. Tooling-pass + per-source review per quote
+(no fully-mechanical fix because boundary-inclusion correction
+requires reading the quote against its source).
+
+Surfaced: Phase F Tier 1 — the hearing-transcript `.txt` sibling
+used government page numbers as section markers, which rendered
+existing `lines N-M` quote Locations increasingly out-of-sync.
+Corrections deferred per explicit Phase F Tier 1 scope decision
+(Phase F is about extraction integrity, not navigation precision).
+
+---
+
+### C2. Prose-drift check silently skips `document` type — coverage gap in validate-research.py
+
+**The gap.** `scripts/validate-research.py` defines two maps that
+gate the prose-drift check: `PROSE_FIELDS_BY_TYPE` (top-level
+free-prose fields per type) and `PROSE_ENTRY_FIELDS_BY_TYPE` (per-
+entry synthesis-content note fields per type). Both maps cover
+**person, event, transcript, media, organization, location** — six
+of the seven content types. **`document` is absent from both maps.**
+When `check_prose_drift` runs, the first guard returns immediately
+for any artifact whose `target_node` type isn't in either map.
+Result: every document artifact's prose-drift check is a no-op,
+regardless of how loosely the description tokenizes against source.
+
+**The fit with conventions.** `meta/conventions.md` scopes the
+prose-drift check to *"labeled synthesis surfaces (`description`,
+`background`, `uap_relevance`, `credibility_notes`) and per-entry
+synthesis-content notes"*. Document artifacts have a required
+`description` field per schema. Document `description` should be in
+scope by the convention; isn't in the implementation. The
+implementation and the convention are out of sync.
+
+The maps' structure suggests the omission is an oversight — every
+other content type has a `description` entry with rationale-bearing
+comments in `PROSE_FIELDS_BY_TYPE`; document just isn't there.
+
+**Current production impact.** Across the 6 built document
+artifacts, **209 unmatched description tokens are silently passing
+through with 0 warnings**:
+
+| Artifact | Unmatched / total |
+|---|---|
+| `eo-14347-restoring-department-of-war` | 0 / 140 |
+| `pentagon-uapda-revisions-2023-11` | 36 / 188 |
+| `written-testimony-fravor-2023` | 47 / 139 |
+| `written-testimony-graves-2023` | 40 / 157 |
+| `written-testimony-grusch-2023` | 33 / 178 |
+| `written-testimony-kirkpatrick-2023` | 53 / 135 |
+
+The 0–39% range against contributor-targeted 0% on other types
+under the zero-warnings discipline is a meaningful gap. The
+eo-14347 row at zero unmatched is informative — for some document
+forms (executive orders here, plausibly press releases / FOIA
+letters too), the description can plausibly source its vocabulary
+entirely from the document body itself. For testimony documents,
+the description carries provenance / about-the-document vocabulary
+that inherently can't match source-body tokens. The two cases
+behave differently under any scoping rule.
+
+**Token analysis** — the unmatched content falls into two buckets:
+
+1. **Provenance / context vocabulary.** PDF-metadata-derived terms
+   ("Author", "Producer", "CreationDate"), filing-process language
+   ("submitted to the hearing", "open-session companion"),
+   document-physical-attribute terms ("4-page", "PDF"). These
+   describe the document, not the document's content; by definition
+   they cannot match source-body tokens. Structural mismatch between
+   description's role on document artifacts (synthesis *about* the
+   document) and the prose-drift check's source pool (the document
+   body itself).
+2. **Synthesis verbs and connectives.** "covers", "characterizes",
+   "includes", "describes". The same shape of stylistic drift the
+   check catches on other types. This bucket is real bucket-2 drift
+   that's currently unchecked.
+
+**Are other types similarly impacted?**
+
+- **`finding` type** — also absent from both maps, but no built
+  artifacts yet (F.7 design pass pending). No production impact;
+  will need to be added when F.7 ships.
+- **`meta` type** — also absent. Likely intentional (governing
+  docs are not user-content; conventions don't apply).
+- **No other content types are missing from the maps.**
+- **Per-entry coverage for document** — `quote_entry.significance`
+  and `quote_entry.context` are not in conventions.md scope (they're
+  per-quote metadata, not per-entry synthesis content), so the
+  per-entry-map gap doesn't have a separate functional effect for
+  documents. The top-level-map gap is the meaningful one.
+
+**Design choices for the fix.** Three paths, none mechanical:
+
+A. **Add `document` to `PROSE_FIELDS_BY_TYPE` with the same scoping
+   pool** (union of `primary_sources[].path` tokens). Cheap; matches
+   the convention literally; produces high false-positive rates on
+   testimony descriptions per bucket-1 above. Would force testimony
+   descriptions to use almost-only source-body vocabulary, damaging
+   legitimate contextual framing (provenance, cross-node positioning,
+   document-physical attributes). Contributors face an unfixable
+   warning surface on testimony nodes; the eo-14347 case at 0%
+   suggests other doc forms tolerate Path A cleanly.
+B. **Add `document` with an expanded source pool.** The pool would
+   include the document's own primary sources PLUS the source pools
+   of structurally-adjacent nodes (companion transcript on testimony
+   docs, hosting event, hosting organization). More machinery; more
+   graceful for legitimate contextual content; introduces cross-
+   artifact pool-resolution logic the validator doesn't have today.
+C. **Document the exclusion explicitly.** Add a rationale comment
+   in `PROSE_FIELDS_BY_TYPE` ("document descriptions are *about*
+   the document, not from its body, so the token-match check
+   produces noise"). Aligns implementation with what's already
+   happening; surrenders bucket-2 drift checking on document
+   descriptions. Cheapest; loses the most.
+
+The eo-14347 case (0 / 140 unmatched) is evidence that doc-form
+heterogeneity matters — testimony descriptions and EO descriptions
+have different about-vs-from balance. A per-doc-form scoping rule
+(testimony → expanded pool; EO / press-release → source pool) would
+slot into Path B as a refinement; consider during the design pass.
+
+**Affected now.** All 6 built document artifacts (2 EOs / press-
+release-form documents, 4 written testimonies). Affected on every
+future built document.
+
+**Priority.** Medium. Not a correctness issue (the verbatim-quote
+check on document Key Passages is unaffected and runs
+unconditionally); discipline-uniformity issue (drift checking is
+enforced on six content types but silently skipped on the seventh).
+
+**Scope.** Design decision + implementation in `validate-research.py`
++ regression sweep across the 6 existing document artifacts (which
+will require rewriting their descriptions to match the chosen scope,
+or accepting the warnings they produce as a baseline).
+
+Surfaced: validator audit on a document artifact build — direct
+recreation of `check_prose_drift` logic showed 53 unmatched tokens
+on the Kirkpatrick written-testimony description, but
+`validate-research.py` reported 0 warnings. Investigation traced to
+the missing `document` key in both maps; confirmed across all
+existing document artifacts.
+
+---
+
+### C3. Provenance-marker treatment on document node Provenance tables
+
+Document nodes render a `## Provenance` section that tracks the
+custody chain of the source file (authoring date, submission venue,
+local archival, etc.). Rows use a `✅ Confirmed —` marker pattern
+with evidence descriptions (e.g., `"✅ Confirmed — PDF metadata
+CreationDate: Sun Jul 23 14:41:22 2023 EDT"`, `"✅ Confirmed —
+hosted at oversight.house.gov"`, `"✅ Confirmed — SHA256 verified
+via sources/manifest.yaml"`).
+
+**Question surfaced during Phase B** of A2's marker-removal work:
+with the per-quote `Verified` marker removed under Phase E's "no
+rendered trust claim" principle, should these per-row Provenance
+markers be removed too?
+
+**Analysis from the Phase B discussion**:
+the two markers look similar but do different jobs. The per-quote
+Verified marker asserted "this quote matches the source" — a claim
+about the quote itself that the reader could theoretically verify
+but the marker was standing in for. That's the trust-performance
+pattern Phase E rejects. The Provenance markers assert "this custody
+event happened" — claims about the history of the artifact that
+reference specific checkable evidence (PDF metadata, hostname,
+SHA256). That's closer to the rendered-citation pattern (scholarly
+"(Smith 2019, p. 47)") than to trust-performance: the prose after
+the checkmark names the specific evidence the reader can follow.
+
+The strongest Provenance claim is the SHA256 one (reader can literally
+`sha256sum` against the archived file). Weaker is the PDF-metadata
+claim (requires pulling PDF + running exiftool). Weakest is the
+hostname claim (hostname may have changed since archival — the
+Wayback link is the actual evidence, not the hostname).
+
+**If revisited, the interesting move** is not removing the markers
+but tightening them so the evidence is always as checkable as the
+SHA256 case. That's different analysis from BACKLOG A2 and
+deserves its own design pass.
+
+**Recommendation.** Defer. Not a correctness issue (Provenance rows
+are factual metadata with evidence attached; the marker is a
+shorthand summary); not a readers-being-misled issue (prose names
+the evidence). The analysis is genuinely different from A2 — the
+removal pattern from A2 would be wrong if applied here.
+
+**Scope if taken up.** Per-provenance-row audit: categorize each
+marker's underlying evidence by checkability (SHA256-level / tool-
+required / external-attestation); tighten wording to surface the
+distinction where useful; or decide the current pattern is fine
+given Phase E's principle doesn't scope to Provenance tables.
+
+Surfaced: Phase F spot-check review of `✅ Confirmed —` patterns in
+rendered nodes — Provenance markers share the marker pattern with
+the per-quote Verified row but don't share the trust-performance
+shape.
+
+---
+
+### C4. pdftotext Unicode-mapping quirks on text-native PDFs (extraction-tool-layer)
+
+The `extraction-lossy` enum category added in Phase F Tier 1 captures
+the high-level source-condition pattern: text layer present (not
+OCR'd) but pdftotext produces artifacts. The underlying root cause
+for the known case (hearing transcript PDF, `11½` rendering as
+`11‡` via pdftotext) is specifically a Unicode-mapping issue at the
+PDF-generation layer — Acrobat Distiller mapped U+00BD ONE HALF to
+U+2021 DOUBLE DAGGER in the text stream.
+
+**Possible narrower fix:** use a different PDF text extraction tool
+(e.g., `pdfplumber`, `pymupdf`, `mutool`) that handles this Unicode
+mapping correctly, rather than producing a clean-text sibling per-
+source. If the alternate tool gives clean output on the hearing
+transcript and all other corpus PDFs, the extraction-lossy category
+might dissolve for the Unicode-mapping subcase, leaving only
+genuinely OCR'd sources needing siblings.
+
+**Scope consideration.** This is a narrower question than the
+extraction-lossy schema category. The category stays regardless —
+OCR sources still need sibling handling. But if a tool change could
+eliminate the Unicode-mapping failure mode across the corpus, that
+reduces the sibling-production workload for future tiers of the audit
+(and for future contributors adding sources).
+
+**Methodology for evaluation** (deferred to a separate session):
+run alternate PDF extraction tools against the hearing transcript
+PDF; compare output to the known-correct visual content; check for
+`11½` rendering correctness; check other Unicode edge cases
+(fractions, typography, signature glyphs, section signs). If an
+alternate tool gives clean output uniformly, propose adopting it in
+`validate.py` as the PDF extraction path (with pdftotext retained
+as fallback for compatibility).
+
+**Affected now.** Hearing transcript PDF (only known case to date).
+Future corpus PDFs may exhibit similar conditions — evaluation cost
+is bounded.
+
+Surfaced: Phase F Tier 1 — `11‡` for `11½` caught during hearing-
+transcript audit; extraction-lossy enum added to handle the pattern
+generically, but the specific case might have a narrower solution
+at the tool layer.
 
 ---
 

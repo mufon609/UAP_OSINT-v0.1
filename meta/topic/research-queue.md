@@ -270,11 +270,11 @@ judge"), do not move toward a single canonical figure on plausibility
 grounds. If a future primary source actually resolves the disagreement,
 update `naming_quirks` and the relevant quote/timeline entries.
 
-### Note-rendering gap manifestations (BACKLOG #32)
+### Note-rendering gap manifestations (BACKLOG B1)
 
 Three concrete cases where AARO's evidentiary nuance lives only in
 artifact `.note` fields the renderer drops — all resolve when BACKLOG
-#32 ships:
+B1 ships:
 
 1. **DoD vs OUSD(I&S) parent disambiguation** — both render under bare
    `parent` relationship_type with no visible distinction between the
