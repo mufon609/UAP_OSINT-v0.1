@@ -13,8 +13,8 @@ description: 'Arlo Solutions, LLC is a small business of Washington, D.C. founde
   Arlo''s principal federal customer is the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) — Arlo''s corporate marketing uses the form OUSW(I&S) (Office of the Under Secretary of War for Intelligence and Security), while the federal procurement record (USAspending, GAO B-422985) identified the customer using the OUSD(I&S) form. See Sancorp Consulting ([`/organizations/sancorp-consulting`]) for the Executive Order framework documenting this adoption. According to USAspending records, Arlo has held prime contracts issued by Washington Headquarters Services ([`/organizations/whs`]) to
   OUSD(I&S) since September 2019, including Personnel Security Policy Support (HQ003419C0172), Business Operations and Support Services (HQ003420C0104), Counterintelligence, Law Enforcement and Security
   Policy Support (HQ003421C0078, HQ003422F0271, HQ003423F0356), Cyberspace Oversight Support Services (HQ003422C0092), Admin Support Services (HQ003421C0090), Event Planning Support Services (HQ003423C0093),
-  and Integrated Vetting Policy & Analytical Support (HQ003424F0190 — a $3.7 million contract with the OUSD(I&S) CL&S Integrated Vetting team on April 18, 2024). On February 14, 2025, WHS established
-  the OUSD(I&S) Enterprise BPA HQ003425A0004 under solicitation HQ003424R0178; the good faith estimate amount for all BPAs is $856 million across the four BPA vendors, not Arlo''s individual limit. The public GAO B-422985.4 / B-422985.5 decision identified three of the four BPA vendors (Sancorp, Premier, Arlo); the remaining vendor is not identified in the public decision. On February 21, 2025, Arlo signed BPA Call Order HQ003425F0104 for SASP support.
+  and Integrated Vetting Policy & Analytical Support (HQ003424F0190 — a $3.7 million contract with the OUSD(I&S) CL&S Integrated Vetting team announced by Arlo on April 18, 2024). On February 14, 2025, WHS established
+  the OUSD(I&S) Enterprise BPA HQ003425A0004 under solicitation HQ003424R0178; the good faith estimate amount for all BPAs is $856 million across the four BPA vendors, not Arlo''s individual limit. The public GAO B-422985.4 / B-422985.5 decision named three of the four BPA vendors established after the reevaluation (Sancorp, Premier, Arlo); the remaining vendor is not named in the public decision. Comprehensive Approach LLC ([`/organizations/comprehensive-approach-solutions`]) held the September 2024 EXDIR Call Order 1 award before the corrective action; whether Comprehensive Approach is among the four BPA vendors established after the reevaluation is not stated in the public GAO decision. On February 21, 2025, Arlo signed BPA Call Order HQ003425F0104 for SASP support.
 
 
   The HQ003425A0004 BPA and HQ003425F0104 SASP Call Order were awarded after a reevaluation of solicitation HQ003424R0178. According to the Government Accountability Office decision Matter of Sancorp Consulting
@@ -22,7 +22,7 @@ description: 'Arlo Solutions, LLC is a small business of Washington, D.C. founde
   nine vendors submitted quotations; in September 2024, WHS established BPAs with, and issued Call Order 1 (EXDIR) to, Comprehensive Approach LLC and Call Order 2 (SASP) to Sancorp Consulting ([`/organizations/sancorp-consulting`]).
   Following protests by Arlo and Premier Enterprise Solutions ([`/organizations/premier-enterprise-solutions`]), the agency took corrective action: stating it would terminate the BPAs and call orders, reevaluate
   quotations, and make new award decisions. The reevaluation awarded Call Order 1 (EXDIR) to Premier and Call Order 2 (SASP) to Arlo. Sancorp filed a protest of the reevaluation. The GAO dismissed Sancorp''s
-  challenges to the SASP call order on the basis that Sancorp''s proposed staff officer key personnel had resigned from Sancorp on February 14, 2025 — before WHS issued the SASP call order — and that Sancorp
+  challenges to the SASP call order on the basis that Sancorp''s proposed staff officer key personnel had submitted a letter of resignation dated February 7, 2025 with a last official day of February 14, 2025 — before WHS issued the SASP call order — and that Sancorp
   had failed to advise the agency of the unavailability of the quoted key person, making Sancorp''s SASP quotation unacceptable and Sancorp ineligible to challenge the SASP call order. The GAO denied Sancorp''s
   challenges to the EXDIR call order.
 
@@ -231,7 +231,7 @@ quotes:
   source:
     path: news/arlo-recruitment-20260503.html
     location: Recruitment page — Influence, Deception, and Perception Management Activities Staff Officer V listing
-  significance: Arlo's own recruitment page advertises Influence, Deception, and Perception Management Activities Staff Officer SME IV and V positions (verbatim mission language paralleling the IPMO charter). The role description names OUSW(I&S) / OUSD(I&S) generally as the customer; no IPMO-direct contract is named on the recruitment page or elsewhere in Arlo's primary-source record.
+  significance: Arlo's own recruitment page advertises Influence, Deception, and Perception Management Activities Staff Officer SME IV and V positions (verbatim mission language paralleling the IPMO charter). The role description pairs the long form "Office of the Under Secretary of War for Intelligence and Security" with the abbreviation "OUSD(I&S)" — a hybrid mismatch within Arlo's own page in which the spelled-out form uses War while the parenthetical abbreviation retains the D for Defense. No IPMO-direct contract is named on the recruitment page or elsewhere in Arlo's primary-source record.
   statement_date: '2026-05-03'
 - id: q14
   added_date: '2026-05-03'
@@ -600,7 +600,7 @@ timeline:
   id: t15
   added_date: '2026-05-03'
 - date: '2025-02-21'
-  event: WHS signed BPA Call Order HQ003425F0104 with Arlo for SASP Call Order 2 ($78,512,350.27 base-and-all-options ceiling; $7,447,926.22 base exercised options). Replaced Sancorp's September 2024 SASP
+  event: WHS signed BPA Call Order HQ003425F0104 with Arlo for SASP Call Order 2 ($78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 to-date per USAspending field "base_exercised_options"). Replaced Sancorp's September 2024 SASP
     award following the reevaluation.
   category: contract
   source:
@@ -659,11 +659,12 @@ key_personnel:
   added_date: '2026-05-03'
   person_path: /people/christina-pryka
   role: Media Contact
+  period_start: '2024-04-18'
   source:
-    path: news/arlo-press-85m-sasp-20260503.html
-    location: Press release Media Contact line
+    path: news/arlo-press-cls-vetting-20260503.html
+    location: 'Press release Media Contact line ("For more information or media requests, contact: Christina Pryka")'
   leadership_class: staff
-  note: Christina Pryka identified as Arlo's media contact in the March 16, 2026 SASP press statement and the April 18, 2024 CL&S press statement.
+  note: Christina Pryka listed as Arlo's media contact for media requests.
 org_relationships:
 - id: or1
   added_date: '2026-05-03'
@@ -703,12 +704,12 @@ org_relationships:
 - id: or5
   added_date: '2026-05-03'
   organization_path: /organizations/premier-enterprise-solutions
-  relationship_type: partner
+  relationship_type: other
   source:
     path: government/gao-b-422985-wayback-20250708.html
     location: Decision opening paragraph + BACKGROUND section
   note: Co-vendor in the OUSD(I&S) contractor cluster; co-protester with Arlo of the September 2024 initial awards. Premier won EXDIR Call Order 1 in the reevaluation while Arlo won SASP Call Order 2. Both
-    are Arlo's peer awardees under the HQ003425A0004 BPA.
+    are Arlo's peer awardees under the HQ003425A0004 BPA. Schema enum "partner" denotes a joint-venture or teaming partnership; no such contracting relationship between Arlo and Premier is attested in the primary-source corpus, so this relationship is recorded as "other" with the co-protester / co-awardee structure described here.
 - id: or6
   added_date: '2026-05-03'
   organization_path: /organizations/comprehensive-approach-solutions
@@ -857,7 +858,7 @@ contracts:
   period_start: '2025-02-21'
   period_end: '2026-03-27'
   subject: SASP Call Order 2 — Administrative, Policy, Operations, and Analytic Support Services to the OUSD(I&S) Sensitive Activities & Special Programs Office
-  value: '$78,512,350.27 base-and-all-options per USAspending; $7,447,926.22 base exercised options per USAspending; "more than $85 million" per Arlo''s March 16, 2026 SASP press statement. The press release''s "more than $85 million" is a floor, so the gap between Arlo''s announcement and the USAspending base-and-all-options figure is at least $6.5 million; the exact figure is unreconciled in source.'
+  value: '$78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 to-date per USAspending field "base_exercised_options" (value of base period plus exercised option years to date); "more than $85 million" per Arlo''s March 16, 2026 SASP press statement. The press release''s "more than $85 million" is a floor, so the gap between Arlo''s announcement and the USAspending ceiling figure is at least $6.5 million; the exact figure is unreconciled in source.'
   source:
     path: government/usaspending-arlo-hq003425f0104.json
     location: USAspending API record — date_signed + base_and_all_options + base_exercised_options + description fields
