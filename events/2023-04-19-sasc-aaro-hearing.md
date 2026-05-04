@@ -17,9 +17,14 @@ created: 2026-04-28
 | Convening Body | Subcommittee on Emerging Threats and Capabilities, Committee on Armed Services, U.S. Senate |
 | Session | First Session |
 | Congress | One Hundred Eighteenth Congress |
+| Status | Open/Closed (the open session was preceded by a closed session the same day) |
 | Date | 2023-04-19 |
+| Scheduled Time | 10:30 a.m. |
+| Convened Time | 11:08 a.m. |
+| Adjourned Time | 12:08 p.m. |
 | Location | Room SR-232A, Russell Senate Office Building, Washington, D.C. |
 | Chair | Kirsten E. Gillibrand |
+| Ranking Member | Joni Ernst |
 
 ---
 

@@ -18,8 +18,12 @@ created: 2026-04-20
 | Session | First Session |
 | Congress | One Hundred Eighteenth Congress |
 | Date | 2023-07-26 |
+| Scheduled Time | 10:00 a.m. |
+| Convened Time | 10:06 a.m. |
+| Adjourned Time | 12:22 p.m. |
 | Location | Room 2154, Rayburn House Office Building, Washington, D.C. |
 | Chair | Glenn Grothman |
+| Ranking Member | Robert Garcia |
 
 ---
 
