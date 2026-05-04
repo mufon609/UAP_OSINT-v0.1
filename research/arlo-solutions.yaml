@@ -7,14 +7,14 @@ created: '2026-05-03'
 description: 'Arlo Solutions, LLC is a small business of Washington, D.C. founded in 2014 by Arlene Wube ([`/people/arlene-wube`]) and Lonye Ford ([`/people/lonye-ford`]). According to Arlo''s March 16,
   2026 SASP press statement, Arlo is a service-disabled veteran owned small business, woman owned small business, and 8(a) small business based in Washington, DC; Lonye Ford is named CEO. According to USAspending
   records (recipient UEI JSRCFJVJM874; CAGE Code 72UJ9), Arlo''s business categories include 8(a) Program Participant, Black American Owned Business, Economically Disadvantaged Women Owned Small Business,
-  Service Disabled Veteran Owned Business, Small Business, and Women Owned Small Business. The recipient address according to USAspending is 200 Massachusetts Ave NW Suite 700 Washington, DC 20001. The March 16, 2026 SASP press statement named Lonye Ford as CEO; Arlene Wube and broader Arlo staff do not appear in the SASP press statement.
+  Service Disabled Veteran Owned Business, Small Business, and Women Owned Small Business. The recipient address according to USAspending is 200 Massachusetts Ave NW Suite 700 Washington, DC 20001. The March 16, 2026 SASP press statement named Lonye Ford as CEO; Arlene Wube and broader Arlo staff do not appear in the SASP press statement. Arlo''s 2021 Company Overview also shows Arlo as Subcontractor on CDM Analytical & Technical Services, SITE III Solutions for IT Enterprise, and VECTOR Transformation & Operational Readiness.
 
 
   Arlo''s principal federal customer is the Office of the Under Secretary of Defense for Intelligence and Security ([`/organizations/ousd-is`]) — Arlo''s corporate marketing uses the form OUSW(I&S) (Office of the Under Secretary of War for Intelligence and Security), while the federal procurement record (USAspending, GAO B-422985) identified the customer using the OUSD(I&S) form. See Sancorp Consulting ([`/organizations/sancorp-consulting`]) for the Executive Order framework documenting this adoption. According to USAspending records, Arlo has held prime contracts issued by Washington Headquarters Services ([`/organizations/whs`]) to
   OUSD(I&S) since September 2019, including Personnel Security Policy Support (HQ003419C0172), Business Operations and Support Services (HQ003420C0104), Counterintelligence, Law Enforcement and Security
   Policy Support (HQ003421C0078, HQ003422F0271, HQ003423F0356), Cyberspace Oversight Support Services (HQ003422C0092), Admin Support Services (HQ003421C0090), Event Planning Support Services (HQ003423C0093),
   and Integrated Vetting Policy & Analytical Support (HQ003424F0190 — a $3.7 million contract with the OUSD(I&S) CL&S Integrated Vetting team announced by Arlo on April 18, 2024). On February 14, 2025, WHS established
-  the OUSD(I&S) Enterprise BPA HQ003425A0004 under solicitation HQ003424R0178; the good faith estimate amount for all BPAs is $856 million across the four BPA vendors, not Arlo''s individual limit. The public GAO B-422985.4 / B-422985.5 decision named three of the four BPA vendors established after the reevaluation (Sancorp, Premier, Arlo); the remaining vendor is not named in the public decision. Comprehensive Approach LLC ([`/organizations/comprehensive-approach-solutions`]) held the September 2024 EXDIR Call Order 1 award before the corrective action; whether Comprehensive Approach is among the four BPA vendors established after the reevaluation is not stated in the public GAO decision. On February 21, 2025, Arlo signed BPA Call Order HQ003425F0104 for SASP support.
+  the OUSD(I&S) Enterprise BPA HQ003425A0004 under solicitation HQ003424R0178; the good faith estimate amount for all BPAs is $856 million across the four BPA vendors, not Arlo''s individual limit. The public GAO B-422985.4 / B-422985.5 decision named three of the four BPA vendors established after the reevaluation (Sancorp, Premier, Arlo); the remaining vendor is not named in the public decision. Comprehensive Approach LLC ([`/organizations/comprehensive-approach-solutions`]) held the September 2024 EXDIR Call Order 1 award before the corrective action; whether Comprehensive Approach is among the four BPA vendors established after the reevaluation is not stated in the public GAO decision. On February 21, 2025, WHS signed BPA Call Order HQ003425F0104 with Arlo for SASP support.
 
 
   The HQ003425A0004 BPA and HQ003425F0104 SASP Call Order were awarded after a reevaluation of solicitation HQ003424R0178. According to the Government Accountability Office decision Matter of Sancorp Consulting
@@ -24,7 +24,7 @@ description: 'Arlo Solutions, LLC is a small business of Washington, D.C. founde
   quotations, and make new award decisions. The reevaluation awarded Call Order 1 (EXDIR) to Premier and Call Order 2 (SASP) to Arlo. Sancorp filed a protest of the reevaluation. The GAO dismissed Sancorp''s
   challenges to the SASP call order on the basis that Sancorp''s proposed staff officer key personnel had submitted a letter of resignation dated February 7, 2025 with a last official day of February 14, 2025 — before WHS issued the SASP call order — and that Sancorp
   had failed to advise the agency of the unavailability of the quoted key person, making Sancorp''s SASP quotation unacceptable and Sancorp ineligible to challenge the SASP call order. The GAO denied Sancorp''s
-  challenges to the EXDIR call order.
+  challenges to the EXDIR call order. As of the public GAO record, only the EXDIR (Premier) and SASP (Arlo) call orders had been awarded under the four BPAs; additional call orders under those BPAs are not reflected in the decision.
 
 
   Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support services. Sancorp''s separate prime contracts at other OUSD(I&S) Offices ([`/organizations/aaro`]; [`/organizations/ipmo`]) were
@@ -592,7 +592,7 @@ timeline:
   id: t14
   added_date: '2026-05-03'
 - date: '2025-02-14'
-  event: WHS established BPA HQ003425A0004 (Technical, Administrative, and Professional Support Services to the OUSD(I&S) Enterprise) with Arlo as one of four BPA vendors following the reevaluation under HQ003424R0178; $856 million good faith estimate amount applies across all four BPAs aggregate, not Arlo's individual ceiling.
+  event: WHS established BPA HQ003425A0004 (Technical, Administrative, and Professional Support Services to the OUSD(I&S) Enterprise) with Arlo as one of four BPA vendors following the reevaluation under HQ003424R0178; $856 million good faith estimate amount applies across all four BPAs aggregate, not Arlo's individual ceiling; the remaining vendor is not named in the public decision.
   category: contract
   source:
     path: government/usaspending-arlo-bpa-hq003425a0004.json
@@ -858,7 +858,7 @@ contracts:
   period_start: '2025-02-21'
   period_end: '2026-03-27'
   subject: SASP Call Order 2 — Administrative, Policy, Operations, and Analytic Support Services to the OUSD(I&S) Sensitive Activities & Special Programs Office
-  value: '$78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 to-date per USAspending field "base_exercised_options" (value of base period plus exercised option years to date); "more than $85 million" per Arlo''s March 16, 2026 SASP press statement. The press release''s "more than $85 million" is a floor, so the gap between Arlo''s announcement and the USAspending ceiling figure is at least $6.5 million; the exact figure is unreconciled in source.'
+  value: '$78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 to-date per USAspending field "base_exercised_options" (base period plus exercised options); "more than $85 million" per Arlo''s March 16, 2026 SASP press statement. The press release figure is a floor; announcement-vs-ceiling gap is at least $6.5 million; exact figure unreconciled in source.'
   source:
     path: government/usaspending-arlo-hq003425f0104.json
     location: USAspending API record — date_signed + base_and_all_options + base_exercised_options + description fields
