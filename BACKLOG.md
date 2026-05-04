@@ -58,10 +58,12 @@ the removal.
 The node-body renderer sorts Key Passages (and Key Testimony on
 hearing events) by `statement_date` when the field is present on
 entries. The ordering is currently an implicit behavior — it is
-explicit in `schema.yaml` only for hearing-kind Key Testimony
-("verbatim passages sorted by statement_date"); for document /
-transcript / media / organization / location Key Passages, the
-schema says "all quotes" without specifying ordering. Behavior is
+documented in `meta/conventions.md` only for hearing-kind Key
+Testimony ("verbatim passages sorted by `statement_date`") and
+person Statements (sorted by `statement_date` within Direct
+Observations / Other Statements subsections); for document /
+transcript / media / organization / location Key Passages, neither
+schema.yaml nor conventions.md specifies ordering. Behavior is
 emergent: artifacts with `statement_date` populated render
 chronologically; artifacts without it render in artifact-entry
 order; partial population produces mixed ordering.
@@ -146,6 +148,10 @@ Sancorp, Arlo) — all populated `statement_date` and rendered
 chronologically without ordering concerns surfacing. The hedge-
 phrase convention (Rule 3) appears to hold but hasn't been
 formally codified. Worth a single convention-pass session.
+
+Surfaced: TTSA audit — q5 DeLonge-Podesta email promoted from
+position 5 to position 1 after `statement_date` adoption; hedged
+in-header in the same commit.
 
 ---
 
@@ -1019,12 +1025,12 @@ TOC jump-links at the top of nodes ≥500 lines, or collapsible
 per-venue Statements subsections. Doesn't touch the data model;
 addresses the scannability symptom. ~2-hour job; strictly cosmetic.
 
-**Constraint from `meta/schema.yaml`.** Claim Inventory is defined as
-*"a render-time projection of quotes tagged `category: filed-claim`.
-A filter, not a separate data structure — the filed claim IS the
-quote."* Path B must preserve this filter semantics across artifacts;
-the filter logic moves out of the renderer's local-quote iteration
-into a cross-artifact walk.
+**Constraint from `meta/conventions.md`.** Claim Inventory is
+defined as *"a render-time projection of quotes tagged
+`category: filed-claim`. A filter, not a separate data structure —
+the filed claim IS the quote."* Path B must preserve this filter
+semantics across artifacts; the filter logic moves out of the
+renderer's local-quote iteration into a cross-artifact walk.
 
 Surfaced: Grusch rebuild — three observations converged from the
 same node-build session (Problem 1 from a Claim Inventory rendering
@@ -1088,7 +1094,7 @@ appear unmarked.**
 When a primary source uses a non-canonical form (auto-caption typos,
 OCR artifacts, alias-of-record), contributors register the variance
 as a `naming_quirks` entry with `resolution: preserve-as-sic-in-quotes`.
-Currently 74 such entries across 17 research artifacts. The verbatim
+Currently 74 such entries across 22 research artifacts. The verbatim
 form is preserved in `quote.text` (correct per source-read-first
 discipline). When the same form appears in synthesis prose
 (`description`, `credibility_notes`), the reader has no explicit
@@ -1101,11 +1107,11 @@ followed by a canonical wrap link, e.g. `'Bigalow Aerospace'
 the source-vs-canonical pairing from the bracket-link, but the
 convention isn't documented anywhere reader-visible and other nodes
 don't apply it consistently. Heaviest affected nodes:
-alex-dietrich (9 entries — fraver, prinston, nits, Nimttz, Fleer,
-ROC), sancorp-consulting (11 — pdftotext OCR artifacts: SuppOI1,
-anached, thi s, etc.), ttsa (6 — metamateiiais, struefural),
-aaro (4 — fulfi lled, etc.), david-grusch (4 — Bigalow, lockie,
-Jim laty, Lou alzando).
+sancorp-consulting (13 entries — pdftotext OCR artifacts: SuppOI1,
+anached, thi s, etc.), alex-dietrich (8 — fraver, prinston, nits,
+Nimttz, Fleer, ROC), ousd-is (8 — pdftotext extraction artifacts),
+ttsa (6 — metamateiiais, struefural), aaro (5 — fulfi lled, etc.),
+david-grusch (4 — Bigalow, lockie, Jim laty, Lou alzando).
 
 **Why these are one gap.** Both surface artifact-attested
 evidentiary nuance that the rendered output drops or under-signals.
@@ -1170,7 +1176,7 @@ reduces churn.
 
 **Scope.** Corpus-wide. M1 affects every relationship/list row in
 every node built and every node that will ever be built. M2 affects
-74 naming_quirks entries across 17 artifacts today and grows as
+74 naming_quirks entries across 22 artifacts today and grows as
 auto-caption / OCR sources land in the corpus.
 
 Surfaced: UAPTF audit (M1 — AARO and EXCOM rows displaying
