@@ -845,7 +845,7 @@ contracts:
   primary_counterparty_path: /organizations/ousd-is
   period_start: '2025-02-14'
   subject: OUSD(I&S) Enterprise BPA — Technical, Administrative and Professional Support Services
-  value: '$856,000,000 good faith estimate amount aggregate across all four post-reevaluation BPA vendors, not Arlo''s individual ceiling. The public GAO B-422985 decision identifies three (Sancorp, Premier, Arlo); the fourth is not identified. USAspending stores this aggregate in the parent BPA''s base_and_all_options field — a notable systemic conflation, since that field nominally denotes an individual ceiling.'
+  value: '$856,000,000 — good faith estimate amount, aggregate across four BPA vendors. USAspending stores this aggregate in the BPA''s "base_and_all_options" field, which nominally denotes an individual ceiling — a systemic conflation.'
   source:
     path: government/usaspending-arlo-bpa-hq003425a0004.json
     location: USAspending API record — date_signed + base_and_all_options + description fields

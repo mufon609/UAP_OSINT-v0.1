@@ -1076,6 +1076,78 @@ carry period-of-performance precision.
 
 ---
 
+### C6. Migrate residual `contracts[].value` analytical prose to `.note` once BACKLOG B1 ships
+
+**The gap.** Schema spec for `contract_entry.value` is a label-shaped
+dollar string — *"$22 million" / "$22M" / "22,000,000"* per
+`meta/schema.yaml:986-988`. Two contract entries on
+`/organizations/arlo-solutions` carry multi-sentence analytical prose
+in `value`: c10's USAspending base_and_all_options systemic-conflation
+observation, and c11's three-source value reconciliation with the
+≥$6.5M unreconciled-gap observation. Schema-correct home for that
+prose is `.note` (in prose-drift scope, drift-checked, in-scope per
+`feedback_prose_drift_warnings_must_resolve.md`). But `.note` does
+not render in the Primary Contracts table today — that's the BACKLOG
+B1 (table renderers drop `.note` field) gap.
+
+**Why this entry is B1-tied, not standalone.** Migrating the prose
+from `value` to `.note` *today* would lose two reader-visible
+analytical observations until B1 ships. Per
+`feedback_reader_visibility_discipline.md`, fixes must surface in
+rendered output; trading visibility for schema-conformance is a
+regression. So the migration waits on B1.
+
+**Pre-staged work that already shipped (Arlo audit, this session,
+Option B).** The duplicated content in c10.value (3-of-4 vendor
+attribution, "not Arlo's individual ceiling" explicit framing) was
+trimmed because the same facts already render in description ¶2 +
+Timeline rows; the unique systemic-conflation observation stays in
+`value` until B1 enables clean migration. c11.value left as-is —
+its content (multi-source figure reconciliation with W5 field-name
+disambiguation, ≥$6.5M unreconciled-gap observation) is all unique
+to that surface. So the residual misuse is precisely two analytical
+observations across two entries on one node.
+
+**Post-B1 cleanup scope (when this entry fires).**
+
+1. Move c10 systemic-conflation observation from `value` to `.note`.
+   c10.value reduces to `"$856,000,000 — good faith estimate amount,
+   aggregate across four BPA vendors."` — clean schema-conformant
+   dollar string with source-attested gloss.
+2. Move c11's reconciliation-gap observation (the ≥$6.5M
+   unreconciled gap analytical claim) from `value` to `.note`.
+   c11.value retains the multi-source canonical figures with
+   W5 field-name disambiguation.
+3. **Verify duplication doesn't reintroduce when migrating** —
+   c10 and c11 already have populated `.note` fields with their
+   own content. The migration target is "extend the existing
+   note with the analytical observation," not "replace the note."
+   Confirm migrated content doesn't duplicate what's already in
+   note, in description, or in Timeline.
+4. Validate prose-drift on the extended notes — the analytical
+   observations use vocabulary like "systemic conflation",
+   "unreconciled", "floor", "ceiling" that may need source-
+   vocabulary alignment to clear the drift check.
+
+**Corpus impact.** Confirmed Arlo-only. `sancorp-consulting`
+(the only other artifact carrying `contracts[]`) has 17 entries,
+all with 1-3 word `value` strings — schema-conformant and not
+affected. No other gov-contractor org artifacts exist today.
+
+**Priority.** Low. Bounded scope (2 entries, 1 artifact); cleanup
+fires automatically when B1 ships.
+
+**Scope.** ~10 minutes after B1 ships: migrate two analytical
+observations from `value` to `.note`, regenerate, validate, verify
+rendered Primary Contracts table shows the migrated content via
+B1's note-rendering surface.
+
+Surfaced: Arlo Solutions audit Phase 3 close-out review (Claude Web
+greenlit Option B trim of duplicated `value` prose; B1-dependent
+residual cleanup deferred to this entry).
+
+---
+
 ## Externally blocked
 
 Items waiting on an external event the repo can't drive — FOIA
