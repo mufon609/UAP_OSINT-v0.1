@@ -1721,6 +1721,18 @@ PROSE_FIELDS_BY_TYPE = {
         # while the rendered section name fits transcript semantics.
         "description",
     ],
+    "document": [
+        # Document top-level prose: `description` renders as the
+        # `## Description` section — labeled contributor synthesis
+        # summarizing what the document says. Provenance / custody /
+        # PDF-metadata content belongs structurally in the `## Provenance`
+        # section (gov-doc) or `document_intrinsic` (e.g. authors,
+        # classification, pages); description is reserved for
+        # source-content summary and scoped against the union of
+        # `primary_sources[].path` token pools, parallel to every other
+        # source-bearing node type.
+        "description",
+    ],
     "organization": [
         # Organization top-level prose: `description` renders as the
         # `## Description` section — labeled contributor synthesis.

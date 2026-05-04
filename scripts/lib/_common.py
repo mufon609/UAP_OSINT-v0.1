@@ -144,6 +144,22 @@ def extract_source_text(source_path):
     restores the document's actual content as visually verified against
     the PDF. Falls back to pdftotext if no sibling exists.
 
+    Post-extraction normalization (applied uniformly across formats):
+    line-break hyphens are merged so PDF line-wrap of hyphenated
+    compounds — `Geospatial-\\nIntelligence`, `All-\\nDomain`,
+    `trans-\\nmedium` — collapses back to one token before any
+    consumer tokenizes or substring-matches the bytes. Without this,
+    `validate.py`'s verbatim-quote check (which re-runs the same merge
+    in `normalize_for_compare`) and `validate-research.py`'s
+    prose-drift tokenizer would diverge: substring-match would resolve
+    the compound; tokenization would split it into a trailing-hyphen
+    fragment plus an orphan word that never matches a contributor's
+    canonical-form prose token. Centralizing the merge here keeps the
+    three lockstep helpers (verbatim-quote, prose-drift, description-
+    drift) seeing the same bytes per `meta/conventions.md`'s lockstep
+    principle. Idempotent for `normalize_for_compare`, which still
+    applies its own merge as defense-in-depth on quote text.
+
     Supported extensions:
       - .pdf            pdftotext (or .txt sibling for non-text-native)
       - .html / .htm    read + clean_html_for_text (tag strip + entity decode)
@@ -165,24 +181,25 @@ def extract_source_text(source_path):
         except ValueError:
             rel_path = None
         et = _load_extraction_types().get(rel_path) if rel_path else None
+        used_sibling = False
         if et and et != "text-native":
             sibling = source_path.with_suffix(".txt")
             if sibling.exists():
                 try:
                     result = sibling.read_text(encoding="utf-8", errors="replace")
-                    _source_text_cache[source_path] = result
-                    return result
+                    used_sibling = True
                 except OSError:
                     pass  # fall through to pdftotext
-        try:
-            proc = subprocess.run(
-                ["pdftotext", "-layout", str(source_path), "-"],
-                capture_output=True, text=True, timeout=60,
-            )
-            if proc.returncode == 0:
-                result = proc.stdout
-        except (FileNotFoundError, subprocess.TimeoutExpired):
-            result = None
+        if not used_sibling:
+            try:
+                proc = subprocess.run(
+                    ["pdftotext", "-layout", str(source_path), "-"],
+                    capture_output=True, text=True, timeout=60,
+                )
+                if proc.returncode == 0:
+                    result = proc.stdout
+            except (FileNotFoundError, subprocess.TimeoutExpired):
+                result = None
     elif suffix in (".html", ".htm"):
         try:
             result = clean_html_for_text(source_path.read_text(encoding="utf-8", errors="replace"))
@@ -193,6 +210,8 @@ def extract_source_text(source_path):
             result = source_path.read_text(encoding="utf-8", errors="replace")
         except OSError:
             result = None
+    if result is not None:
+        result = re.sub(r"-\s+", "-", result)
     _source_text_cache[source_path] = result
     return result
 
