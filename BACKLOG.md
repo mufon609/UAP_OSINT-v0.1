@@ -446,36 +446,40 @@ shape.
 
 ### 24. Location reference normalization — stale pdftotext line refs in quote Locations
 
-Several existing quotes in the corpus cite `Location: lines 805-810`
-or similar line-range references, which point at line numbers in
-pdftotext output of the cited source rather than government page
-numbers or other stable document anchors. These were keyed to the
-pdftotext extraction in use at the time the quote was authored.
+Quotes across the corpus cite `Location: lines 805-810` or similar
+line-range references that point at line numbers in pdftotext output
+of the cited source rather than government page numbers or other
+stable document anchors. These were keyed to the pdftotext extraction
+in use at the time the quote was authored.
 
 **Problem shape.** The validator's verbatim-quote check verifies
-quote text substring-matches the extract; it does NOT verify
-Location accuracy. So stale `lines N-M` refs don't cause validation
-failures, but they become increasingly imprecise as sources get
-re-extracted (e.g., Phase F Tier 1's clean-text sibling renumbers
-the hearing transcript).
+quote text substring-matches the extract; it does NOT verify Location
+accuracy. So stale `lines N-M` refs don't cause validation failures,
+but they become increasingly imprecise as sources get re-extracted
+(e.g., Phase F Tier 1's clean-text sibling renumbers the hearing
+transcript).
 
-**Concrete affected quotes.** Several in `research/2023-07-26-house-
-fravor.yaml`, `research/2023-07-26-house-graves.yaml`, `research/
-2023-07-26-house-grusch.yaml`. Exact count deferred to the audit
-execution.
+**Scope (current corpus).** **356 quotes across 16 artifacts** cite
+line-range Locations of this shape. Affected artifacts include the
+three House Oversight 2023-07-26 hearing artifacts (fravor / graves /
+grusch), the SASC AARO hearing transcript, written-testimony
+documents, and AARO / Skinwalker Ranch / multiple person nodes. The
+"~1 session sweep" estimate the entry originally carried was based
+on a perceived "several quotes in three artifacts" scope; corpus-
+wide measurement shows the actual scope is multi-session.
 
 **Second imprecision shape — boundary inclusion** (surfaced during
 the 2023-04-19 SASC AARO hearing event build). Beyond re-extraction
 staleness, contributor-authored Location refs can be imprecise from
-the start by including adjoining material in the range. Concrete cases on `research/2023-04-19-sasc-aaro-hearing.yaml`:
-q8 cites `lines 1784-1792` but Kirkpatrick's spoken portion ends at
-line 1788 (Sen. Rosen interrupts at 1789, page footer at 1791-1792).
-q11 cites `lines 2178-2183` but the quote content runs 2180-2182
-(prior speaker turn at 2178-2179, next speaker at 2183). Different
-root cause from staleness — caught during writing rather than during
-re-extraction — but same fix target: tighter ref discipline using
-the conventions in the Fix shape list above. The systematic sweep
-addresses both shapes.
+the start by including adjoining material in the range. Concrete
+cases on `research/2023-04-19-sasc-aaro-hearing.yaml`: q8 cites
+`lines 1784-1792` but Kirkpatrick's spoken portion ends at line 1788
+(Sen. Rosen interrupts at 1789, page footer at 1791-1792). q11 cites
+`lines 2178-2183` but the quote content runs 2180-2182 (prior speaker
+turn at 2178-2179, next speaker at 2183). Different root cause from
+staleness — caught during writing rather than during re-extraction —
+but same fix target: tighter ref discipline using the conventions
+below. The systematic sweep addresses both shapes.
 
 **Fix shape.** Systematic conversion of `lines N-M` refs to:
 - `p. N, ¶M` for stenographic PDFs (hearing transcripts)
@@ -485,21 +489,28 @@ addresses both shapes.
 - `lines N-M of the extract` explicitly when the extract is the
   intended reference (rare)
 
-The conversion is mechanical once the rule is written down. Could
-be a one-session sweep across the whole corpus.
+The conversion is mechanical per quote once the rule is written
+down, but each quote needs a per-source read to determine the
+correct replacement form. Tooling could help (a script that reads
+each quote's source and proposes a normalized Location) but
+human-in-loop verification is still needed for boundary-inclusion
+cases.
 
 **Priority.** Low. Not a correctness issue; navigational-precision
 improvement for readers. Validator doesn't care.
 
-**Scope.** ~1 session to write the rule + sweep + validate.
-Independent of the Phase F audit tiers; can run before, after, or
-between them.
+**Scope.** Multi-session corpus-wide normalization. Independent of
+the Phase F audit tiers; can run before, after, or between them.
+Tooling-pass + per-source review per quote; rough estimate 3–5
+sessions for the 356 quotes.
 
 Surfaced: Phase F Tier 1 — the hearing-transcript `.txt` sibling
 used government page numbers as section markers, which rendered
 existing `lines N-M` quote Locations increasingly out-of-sync.
 Corrections deferred per explicit Phase F Tier 1 scope decision
 (Phase F is about extraction integrity, not navigation precision).
+Corpus-wide measurement (356 quotes / 16 artifacts) revealed that
+the original "1 session" scope was a substantial undercount.
 
 ---
 
