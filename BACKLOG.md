@@ -12,13 +12,14 @@ on the active roadmap. Items leave when (a) promoted to a roadmap phase,
 (b) addressed, or (c) superseded.
 
 Open items are partitioned into three sections by dependency shape:
-**A — Priority sequence** (ordering / coupling constraints), **B —
-Parallel batch** (renderer-pass items that ship together), and **C —
-Anytime** (no upstream blockers). Item identifiers are A1, A2, ...,
-B1, B2, ..., C1, C2, ... — within each section, retired items leave
-a gap rather than shifting remaining IDs, so git-log and
-commit-message references stay valid. The same gap-stable policy in
-`meta/conventions.md` applies to validator check names.
+**A — Priority sequence** (ordering / coupling constraints),
+**B — Parallel batch** (renderer-pass items that ship together),
+and **C — Anytime** (no upstream blockers). Item identifiers are
+A1, A2, ..., B1, B2, ..., C1, C2, ... — within each section,
+retired items leave a gap rather than shifting remaining IDs, so
+git-log and commit-message references stay valid. The same
+gap-stable policy in `meta/conventions.md` applies to validator
+check names.
 
 **Default focus: Section C.** C items have no upstream dependencies
 and can be picked up and finished in a single pass. A and B items
@@ -54,12 +55,12 @@ caption typos (e.g., "Bigalow" for "Bigelow", "lockie Martin" for
 same shape as OCR character-corruption on a scanned PDF — machine
 rendering of an underlying signal, with errors.
 
-Current established practice (per `feedback_transcript_timestamps_
-in_quotes.md` and Phase A work): preserve auto-caption typos
-verbatim via `naming_quirks` entries with resolution
-`preserve-as-sic-in-quotes`. This is a node-level workaround; it
-does not resolve the broader question of whether audio or the
-caption file is the authoritative source.
+Current established practice (per
+`feedback_transcript_timestamps_in_quotes.md` and Phase A work):
+preserve auto-caption typos verbatim via `naming_quirks` entries
+with resolution `preserve-as-sic-in-quotes`. This is a node-level
+workaround; it does not resolve the broader question of whether
+audio or the caption file is the authoritative source.
 
 **Three framings to decide between:**
 
@@ -77,9 +78,9 @@ caption file is the authoritative source.
    transcripts — human has already done the confirmation-against-
    audio work). Audio-confirmation required when auto-caption
    (machine extraction of audio; same shape as OCR vs. page image).
-   Requires classifying each transcript source via a new field like
-   `transcript_provenance: stenographic | human-produced | service-
-   produced | auto-caption`.
+   Requires classifying each transcript source via a new field
+   `transcript_provenance` with values like `stenographic`,
+   `human-produced`, `service-produced`, or `auto-caption`.
 
 **Recommendation** (from the Phase F.3 closeout draft): option 3.
 Most principled; aligns auto-caption handling with the OCR pattern
@@ -140,11 +141,12 @@ tracks the high-level work plan and remaining decisions; the
 closeout doc is the source of truth for audit detail.
 
 **Schema additions shipped during Phase F.** `extraction_type`
-field on `manifest_entry` with values `text-native | ocr-scan |
-extraction-lossy`. The validator prefers a same-stem `.txt` sibling
-over `pdftotext` output when extraction_type is non-text-native —
-the sibling is a contributor-produced clean transcription, visually
-verified against the source, with its own manifest entry + sha256.
+field on `manifest_entry`, with values `text-native`, `ocr-scan`,
+or `extraction-lossy`. The validator prefers a same-stem `.txt`
+sibling over `pdftotext` output when extraction_type is
+non-text-native — the sibling is a contributor-produced clean
+transcription, visually verified against the source, with its own
+manifest entry + sha256.
 
 **Current corpus state.** 827 quotes across 144 unique source paths
 across 28 research artifacts (up from 508 / 64 / 16 at Phase F.1
@@ -179,8 +181,8 @@ extraction-layer issue (`11‡→11½` Unicode mapping), and source
 complexity (54-page stenographic transcript with oral testimony +
 Q&A + submitted documents). Tier 2's 0% rate in contributor-
 authored short written testimonies is evidence that Tier 1's 1.4%
-standalone rate was the peak, not the baseline. **Projected
-remaining findings (Tiers 4+5):** 1–2 corrections.
+standalone rate was the peak, not the baseline.
+**Projected remaining findings (Tiers 4+5):** 1–2 corrections.
 
 **Recommended sequence.**
 
@@ -257,8 +259,9 @@ Oral testimony produces one-word answers (`"Yes."`, `"Both."`,
 appears in source) but that render as full blockquote rows whose
 meaning is opaque without reading the `Attributed to` cell. Corpus
 state: 9 person-node quotes are sub-30 chars; 7 are Q&A answer
-fragments; 2 are legitimate terminology extracts (`"self-licking
-ice cream cone"`, `"eighty-year arms race"`). Fix sketches:
+fragments; 2 are legitimate terminology extracts
+(`"self-licking ice cream cone"`, `"eighty-year arms race"`).
+Fix sketches:
 
 - **Q&A pair schema** — optional `question` field on `quote_entry`;
   renderer emits Q + A as a paired block. Schema extension; verbatim
@@ -375,8 +378,7 @@ research artifacts capture source-derived evidentiary nuance in
 fields that the rendered node body silently drops or under-signals,
 leaving the reader with the structured surface but not the nuance.
 
-**Manifestation 1 — table renderers drop the `.note` field across
-relationship-bearing list sections.**
+**Manifestation 1 — table renderers drop `.note` across relationship-bearing list sections.**
 
 Eight list-section entry shapes carry an optional `note` field that
 no current renderer emits:
@@ -415,8 +417,7 @@ manifestations" under AARO open notes in
 same pattern earlier with AARO-as-downstream-successor and
 EXCOM-as-oversight collapsing into bare `other` relationship type.
 
-**Manifestation 2 — verbatim source-form tokens in synthesis prose
-appear unmarked.**
+**Manifestation 2 — verbatim source-form tokens appear unmarked in synthesis prose.**
 
 When a primary source uses a non-canonical form (auto-caption typos,
 OCR artifacts, alias-of-record), contributors register the variance
@@ -429,11 +430,11 @@ signal that "Bigalow Aerospace" is the source's auto-caption output
 rather than a contributor misspelling.
 
 The Grusch node uses an implicit signal — single-quoted source form
-followed by a canonical wrap link, e.g. `'Bigalow Aerospace'
-[`/organizations/bigelow-aerospace`]`. A discerning reader infers
-the source-vs-canonical pairing from the bracket-link, but the
-convention isn't documented anywhere reader-visible and other nodes
-don't apply it consistently. Heaviest affected nodes:
+followed by a canonical wrap link (e.g., `'Bigalow Aerospace'`
+followed by [`/organizations/bigelow-aerospace`]). A discerning
+reader infers the source-vs-canonical pairing from the bracket-link,
+but the convention isn't documented anywhere reader-visible and
+other nodes don't apply it consistently. Heaviest affected nodes:
 sancorp-consulting (13 entries — pdftotext OCR artifacts: SuppOI1,
 anached, thi s, etc.), alex-dietrich (8 — fraver, prinston, nits,
 Nimttz, Fleer, ROC), ousd-is (8 — pdftotext extraction artifacts),
@@ -517,9 +518,9 @@ artifact metadata is the umbrella.
 
 ### B2. `updated` frontmatter field — corpus-wide currency anchoring
 
-**The gap.** Schema-required frontmatter is `[id, type, schema_version,
-status, kind, created]` across all content types. There is no `updated`
-or `last_modified` field. Body prose periodically carries time-anchored
+**The gap.** Schema-required frontmatter across all content types
+is `[id, type, schema_version, status, kind, created]`. There is no
+`updated` or `last_modified` field. Body prose periodically carries time-anchored
 clauses — e.g., AARO description prose carrying *"no Sancorp follow-on
 or successor AARO Support Services contract is documented in archived
 primary sources as of {date}"*. The "as of {date}" form freezes the
@@ -883,10 +884,9 @@ existing document artifacts.
 Document nodes render a `## Provenance` section that tracks the
 custody chain of the source file (authoring date, submission venue,
 local archival, etc.). Rows use a `✅ Confirmed —` marker pattern
-with evidence descriptions (e.g., `"✅ Confirmed — PDF metadata
-CreationDate: Sun Jul 23 14:41:22 2023 EDT"`, `"✅ Confirmed —
-hosted at oversight.house.gov"`, `"✅ Confirmed — SHA256 verified
-via sources/manifest.yaml"`).
+with evidence descriptions — for example, "PDF metadata CreationDate:
+Sun Jul 23 14:41:22 2023 EDT" / "hosted at oversight.house.gov" /
+"SHA256 verified via sources/manifest.yaml".
 
 **Question surfaced during Phase B** of A2's marker-removal work:
 with the per-quote `Verified` marker removed under Phase E's "no
