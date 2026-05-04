@@ -4,19 +4,19 @@ schema_version: 1
 target_node: documents/written-testimony-graves-2023
 status: active
 created: '2026-04-17'
-description: 'Ryan Graves / Americans for Safe Aerospace ([`/organizations/americans-for-safe-aerospace`]) Written Testimony, by Ryan Graves ([`/people/ryan-graves`]). First, thank you to the committee for holding the first public hearing on UAP ([`/events/2023-07-26-house-uap-hearing`]) to hear from military pilots and whistleblowers. Graves: a former F-18 pilot with over a decade of service in the U.S. Navy ([`/organizations/us-navy`]), including two deployments in Operation Enduring Freedom and Operation Inherent Resolve. Founded Americans for Safe Aerospace, with nearly 5,000 members. Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics ([`/organizations/aiaa`]).
+description: 'Ryan Graves / Americans for Safe Aerospace ([`/organizations/americans-for-safe-aerospace`]) Written Testimony, by Ryan Graves ([`/people/ryan-graves`]). Graves: "thank you for holding the first public hearing on UAP ([`/events/2023-07-26-house-uap-hearing`]) to hear from military pilots and whistleblowers." Graves: a former F-18 pilot with over a decade of service in the U.S. Navy ([`/organizations/us-navy`]), including two deployments in Operation Enduring Freedom and Operation Inherent Resolve. Founded Americans for Safe Aerospace, with nearly 5,000 members. Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics ([`/organizations/aiaa`]).
 
 
-  Three critical issues: (1) UAP in U.S. airspace grossly underreported — sightings routine, not rare or isolated; (2) the stigma is real and powerful and challenges national security — silences commercial pilots, discourages witnesses, only compounded by recent government claims questioning the credibility of eyewitness testimony; (3) excessive classification practices keep crucial information hidden — since 2021, all UAP videos are classified as secret or above.
+  In Graves''s testimony, three critical issues that demand our immediate attention and concerted action — (1) UAP in U.S. airspace grossly underreported — sightings routine, not rare or isolated; (2) the stigma is real and powerful and challenges national security — silences commercial pilots, discourages witnesses, only compounded by recent government claims questioning the credibility of eyewitness testimony; (3) excessive classification practices keep crucial information hidden — since 2021, all UAP videos are classified as secret or above.
 
 
   Experience — UAP encounters in W-72. Joined the U.S. Navy in 2009. In 2014, near Virginia Beach as part of VFA-11 ([`/organizations/vfa-11`]), a Navy Fighter/Attack Squadron made up of F/A-18F Super Hornets. Upon a radar system upgrade, the squadron began to detect unknown objects, initially dismissed as software glitches; UAP sightings became an open secret among the aircrew, common occurrence on radar and occasionally up close, part of daily briefs. A pivotal incident in Warning Area W-72, an exclusive block of airspace ten miles east of Virginia Beach: at the airspace entry point one of the pilots saw a dark gray cube inside of a clear sphere — motionless against the wind, fixed directly at the entry point; the jets, only 100 feet apart, took evasive action, terminated the mission immediately and returned to base. The squadron submitted a safety report; no official acknowledgement of the incident.
 
 
-  Advanced UAP defy conventional explanation: accelerate at speeds up to Mach 1, hold position against hurricane-force winds, outlast fighter jets, no visible means of lift, control surfaces or propulsion. Rear Admiral Tim Gallaudet ([`/people/tim-gallaudet`]), former head of National Oceanic and Atmospheric Administration ([`/organizations/noaa`]) and Oceanographer of the Navy, one of the advisors at ASA: a classified email on SIPRNET in 2015 from his boss, the Operations Commander, to all 1- and 2-star Admiral subordinates; the title of the email was "Urgent safety of flight issue", and he attached the now famous GO-FAST UAP video from a Navy F/A-18.
+  Graves claims advanced UAP defy conventional explanation — accelerate at speeds up to Mach 1, hold position against hurricane-force winds, outlast fighter jets, no visible means of lift, control surfaces or propulsion. Rear Admiral Tim Gallaudet ([`/people/tim-gallaudet`]), former head of National Oceanic and Atmospheric Administration ([`/organizations/noaa`]) and Oceanographer of the Navy, one of the advisors at ASA: a classified email on SIPRNET in 2015 from his boss, the Operations Commander, to all 1- and 2-star Admiral subordinates; the title of the email was "Urgent safety of flight issue", and he attached the now famous GO-FAST UAP video from a Navy F/A-18.
 
 
-  Conclusion: credible reports from both military and commercial aircrew of unidentified objects in U.S. airspace occurring with regularity. The UAP Task Force ([`/organizations/uaptf`]) reported in 2021 that there were 11 near misses with UAP; in April 2022, the FAA ([`/organizations/faa`]) issued an alert that a commercial aircraft over West Virginia experienced a double attitude and double autopilot failure while flying under a UAP. AARO ([`/organizations/aaro`]) Director Dr. Sean Kirkpatrick ([`/people/sean-kirkpatrick`]): "metallic orbs" at Mach 2; Title 10 authority and additional authorities related to Title 50.
+  Graves''s conclusion: credible reports from both military and commercial aircrew of unidentified objects in U.S. airspace occurring with regularity. The UAP Task Force ([`/organizations/uaptf`]) reported in 2021 that there were 11 near misses with UAP; in April 2022, the FAA ([`/organizations/faa`]) issued an alert that a commercial aircraft over West Virginia experienced a double attitude and double autopilot failure while flying under a UAP. AARO ([`/organizations/aaro`]) Director Dr. Sean Kirkpatrick ([`/people/sean-kirkpatrick`]): "metallic orbs" at Mach 2; Title 10 authority and additional authorities related to Title 50.
 
   '
 primary_sources:
@@ -244,7 +244,7 @@ quotes:
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
     location: ¶29
-  significance: Classification since 2021 — full GIMBAL video and Graves's squadron radar data withheld
+  significance: Classification since 2021 — full GIMBAL video and Graves''s squadron radar data withheld
   context: declassification argument
 - id: q25
   added_date: '2026-04-17'
@@ -266,7 +266,7 @@ entities_referenced:
   entity_type: organization
   name: U.S. Navy
   wrap_path: /organizations/us-navy
-  context_summary: Graves's service branch (joined 2009); parent of VFA-11; operational context for his Virginia Beach / W-72 encounters
+  context_summary: Graves''s service branch (joined 2009); parent of VFA-11; operational context for his Virginia Beach / W-72 encounters
 - id: e3
   added_date: '2026-04-17'
   entity_type: organization
@@ -284,7 +284,7 @@ entities_referenced:
   entity_type: organization
   name: VFA-11
   wrap_path: /organizations/vfa-11
-  context_summary: Navy Fighter/Attack Squadron of F/A-18F Super Hornets; Graves's 2014 assignment near Virginia Beach
+  context_summary: Navy Fighter/Attack Squadron of F/A-18F Super Hornets; Graves''s 2014 assignment near Virginia Beach
 - id: e6
   added_date: '2026-04-17'
   entity_type: person
