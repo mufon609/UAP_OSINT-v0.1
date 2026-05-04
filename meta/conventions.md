@@ -184,6 +184,36 @@ reference descriptor notes (`corroboration_items.note`,
 on those surfaces; fabrication there is Phase III semantic-review
 territory.
 
+### Date precision: orientation-grade in prose, field-precise in tables
+
+Description prose carries orientation-grade dates anchored to semantic
+events ("announced", "issued", "filed", "took office", "established").
+Field-precise contract / period dates live in their structured surface
+(Primary Contracts, Timeline, Key Personnel, Ownership Timeline) where
+they are source-attested per row. Description should not duplicate
+field-precise dates from a structured surface; if a date is in the
+table, the description can refer to the event without re-stating the
+field.
+
+The two layers serve different roles. Description orients the reader
+to the document or entity at narrative grade; the structured table is
+the authoritative surface for field-level data. Eliminating duplication
+removes a drift surface between the two and lets the layered-precision
+principle work — three layers, three roles: description for landscape,
+structured table for field-precise data, Key Passages for verbatim
+source.
+
+**Inverse case — multi-year contract `period_end`.** The "table is
+authoritative" rule only works when the table actually carries the
+field. Multi-year contract rows with explicit ordering-period end
+dates in the source — typical of BPA, IDV, GSA-FSS, and other
+indefinite-delivery vehicles — populate `period_end` from
+`period_of_performance.end_date` when the source attests it, even
+when the prose layer doesn't explicitly call out the end. Otherwise
+the description's reference to the contract's establishment has no
+structured-surface counterpart for the contract's closure, and the
+layered-precision principle breaks for that class of contracts.
+
 ### Check naming
 
 Validator checks are referenced across the codebase by **topic name**,

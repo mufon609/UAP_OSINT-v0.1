@@ -844,11 +844,12 @@ contracts:
   contracting_agency: WHS
   primary_counterparty_path: /organizations/ousd-is
   period_start: '2025-02-14'
+  period_end: '2030-02-14'
   subject: OUSD(I&S) Enterprise BPA — Technical, Administrative and Professional Support Services
   value: '$856,000,000 — good faith estimate amount, aggregate across four BPA vendors. USAspending stores this aggregate in the BPA''s "base_and_all_options" field, which nominally denotes an individual ceiling — a systemic conflation.'
   source:
     path: government/usaspending-arlo-bpa-hq003425a0004.json
-    location: USAspending API record — date_signed + base_and_all_options + description fields
+    location: USAspending API record — date_signed + period_of_performance.end_date + base_and_all_options + description fields
   note: Multiple award BPA established under HQ003424R0178 reevaluation; Arlo is one of four BPA vendors. The public GAO B-422985 decision identified three of the four BPA vendors (Sancorp, Premier, Arlo); the remaining BPA vendor is not identified in the public decision. The good faith estimate amount of $856 million is for all BPAs; individual call orders pertain to specific OUSD(I&S) Offices.
 - id: c11
   added_date: '2026-05-03'
