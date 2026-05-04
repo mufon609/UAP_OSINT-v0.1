@@ -184,19 +184,13 @@ authored short written testimonies is evidence that Tier 1's 1.4%
 standalone rate was the peak, not the baseline.
 **Projected remaining findings (Tiers 4+5):** 1–2 corrections.
 
-**Recommended sequence.**
-
-1. **Tier 4 first** (HTML sources). Larger source surface area
-   than Tier 5 but extraction is low-risk; batched spot-check
-   pattern applies across the whole set.
-2. **Tier 5 after Tier 4** (PDF long-tail). Cluster pipelines
-   (Uintah parcel PDFs) verify once-and-apply; remaining PDFs are
-   one-by-one.
-3. **Tier 3 convention decision** runs on its own track. Don't
-   collapse into an audit-execution pass — option 3 (hybrid by
-   `transcript_provenance`) requires a schema field that needs
-   the same care `extraction_type` got.
-4. **Tier 6 closeout** after Tier 3 execution.
+**Recommended sequence.** Tiers 4 + 5 first (HTML and PDF long-tail
+— extraction-track work, no convention decisions blocking). Tier 3
+convention decision runs on its own track and should not be
+collapsed into an audit-execution pass — option 3 (hybrid by
+`transcript_provenance`) requires a schema field that needs the
+same care `extraction_type` got. Tier 6 closeout follows once Tier
+3 has executed.
 
 **Follow-up BACKLOG entries surfaced during the audit.** All filed
 for tracking; fates confirmed at Tier 6 closeout:
@@ -336,9 +330,8 @@ point.
 
 Mechanical rename plus a design pass. The `finding` type will be
 renamed to `investigation`; the redesign will decide what synthesis
-surface an investigation node carries (the Open Questions / Research
-Gaps section was removed during the statements-only consolidation —
-investigations are the intended home for that kind of material).
+surface an investigation node carries. See **Redesign pass** below
+for the open design questions.
 
 **Rename surfaces** (mechanical):
 - `meta/schema.yaml` — `types.finding` block + ~6 enum-list references
