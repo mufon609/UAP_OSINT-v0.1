@@ -1026,6 +1026,27 @@ description and table; reduces prose-drift-check friction;
 matches what the layered build process already does in
 practice.
 
+**Inverse case — structured surface must carry the dates the
+prose defers to.** The convention assumes description prose CAN
+defer to a structured-surface counterpart. When a structured
+row is missing a source-attested date the prose names, the
+convention has a gap: "table is authoritative for field-precise
+dates" only works if the table carries those dates. Concrete
+example on `/organizations/arlo-solutions`: contract row c10
+(HQ003425A0004 BPA) populates `period_start: '2025-02-14'` only;
+no `period_end`. USAspending's API record actually attests
+`period_of_performance.end_date: '2030-02-14'` (5-year ordering
+period — base + four 1-year options per the RFQ). With c10
+missing period_end, description prose's "On February 14, 2025,
+WHS established the BPA" has no structured-surface counterpart
+for the BPA's ordering-period closure. Convention codification
+should pair with a discipline rule: BPA / IDV / multi-year
+contract rows populate period_end from USAspending
+period_of_performance when source-attested, even when the
+prose layer doesn't explicitly call out the end date. Otherwise
+the layered-precision principle has a class of contracts where
+it can't be applied.
+
 **Affected now.** Corpus-wide pattern. AARO, UAPTF, IPMO,
 OUSD-IS, Sancorp, Arlo, TTSA all carry description prose with
 embedded field-precise dates that also live in their respective
