@@ -1021,6 +1021,107 @@ residual cleanup deferred to this entry).
 
 ---
 
+### C7. Audit synthesis prose for argumentative framing imported from source
+
+**The pattern.** When a description (or background / credibility_notes /
+synthesis-content note) lifts a source's section headers, rhetorical
+claims, or persuasive structure into synthesis prose, the prose can
+read as the repository asserting those frames rather than describing
+them. Token-level prose-drift (BACKLOG C2, closed) catches vocabulary;
+this is one layer up — the *structure* the source-attested words
+organize into can still be the source's argument restated as the
+repo's narrative.
+
+**Concrete instances surfaced during the C2 close-out.** On
+`research/written-testimony-graves-2023.yaml` description:
+
+- "Three critical issues:" — Graves's section heading repeated
+  un-attributed. Reader sees the repo presenting "three critical
+  issues" as established categorization.
+- "Advanced UAP defy conventional explanation:" — Graves's
+  argumentative claim repeated as a structural label.
+- "Conclusion:" — Graves's persuasive close lifted into description
+  prose; "Conclusion: credible reports from both military and
+  commercial aircrew..." reads as the repo concluding.
+
+Each token is source-attested, so the prose-drift check passes;
+neutrality is the gap.
+
+**Why this is distinct from C2 (closed).** C2 closed vocabulary
+drift — every significant token now source-attested. But
+source-attested tokens can still import the source's
+argumentative *structure*. The drift check operates at token
+level; framing operates at sentence / paragraph level. Both
+matter; the second isn't catchable by token-matching.
+
+**Three buckets to triage per instance:**
+
+1. **Reframe with explicit attribution.** "Conclusion: credible
+   reports..." → "Graves's conclusion section: credible reports..."
+   Voice becomes explicit. Cheap; preserves all content.
+2. **Move to `quotes[]` (or other structural surface).** When the
+   content is the testifier's argumentative claim and the
+   description's job is structural summary, the claim belongs in a
+   quote entry where attribution renders structurally
+   (Attributed-to / Source / Verified rows). Description summarizes
+   what the document covers, not what the testifier asserts.
+3. **Drop entirely.** Rare on testimony but possible — speculation,
+   advocacy, or framing that doesn't belong in the repo at all
+   (per `meta/conventions.md` "Neutrality" / "What this is not").
+
+**Inherent tension on testimony documents.** A testimony document
+IS one person speaking; summarizing it neutrally without echoing
+them is genuinely hard. Description's job is "what the document
+says" — but if the document IS rhetoric, the summary risks
+becoming rhetoric-by-proxy. Worth a per-doc-form discipline note
+in `meta/conventions.md`: testimony / op-ed / advocacy descriptions
+need explicit attribution discipline that mechanical / structural
+descriptions (EO, press release, contract) don't.
+
+**Initial corpus survey** (descriptions only; other prose surfaces
+not yet surveyed):
+
+| Artifact | Status |
+|---|---|
+| `written-testimony-graves-2023` | heavy — 3 instances above |
+| `written-testimony-fravor-2023` | mild — "First, thank you to the committee..." transcribes Fravor's opening; less argumentative but still source-voice |
+| `written-testimony-grusch-2023` | borderline — uses "Opening Statement:" / "Closing Statement:" (Grusch's literal section labels, structural not argumentative) |
+| `written-testimony-kirkpatrick-2023` | clean (post-C2 rewrite dropped the section labels) |
+| `pentagon-uapda-revisions-2023-11` | clean — mechanical / structural |
+| `eo-14347-restoring-department-of-war` | clean — structural |
+| Person artifact `background` / `uap_relevance` / `credibility_notes` | not surveyed |
+| Organization / event / location `description` | not surveyed |
+| Per-entry synthesis-content notes (`ownership_timeline.note`, `contracts.note`, etc.) | not surveyed |
+
+**Affected scope.** Description fields across 28 artifacts; per-
+archetype prose fields on 6 person artifacts; per-entry synthesis
+content notes on whatever artifacts carry them. Triage required
+artifact-by-artifact since the pattern is contextual, not
+regex-detectable.
+
+**Priority.** Medium. Not a correctness issue (every cited fact
+remains source-attested), but a neutrality / reader-clarity issue
+under `meta/conventions.md` "Neutrality". Reader inference of repo
+voice is real, especially on testimony documents where source
+voice is rhetorical.
+
+**Scope.** Corpus-wide audit pass. Per artifact:
+1. Read description / background / credibility_notes / synthesis-content notes.
+2. Flag rhetorical structures imported from source (section
+   labels, claim verbs, lists framed as "Three Xs:" / "Critical
+   issues:" / "Conclusion:" / etc.).
+3. Decide bucket per instance (reframe / move / drop).
+4. Apply fix; regenerate; re-validate (validate-research.py
+   prose-drift, review-coverage description-drift, verbatim-quote).
+5. Consider conventions.md note on testimony / advocacy
+   description discipline if pattern recurs across 3+ doc_forms.
+
+Surfaced: C2 close-out — Graves description rewrite landed
+source-attested vocabulary cleanly but preserved Graves's
+section-header structure, importing his argumentative voice.
+
+---
+
 ## Externally blocked
 
 Items waiting on an external event the repo can't drive — FOIA
