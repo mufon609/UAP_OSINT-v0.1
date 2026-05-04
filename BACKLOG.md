@@ -52,240 +52,6 @@ deferred to a later session rather than bundled with the removal.
 
 ---
 
-### 13. Claim Inventory status vocabulary is undifferentiated
-
-`render_claim_inventory` on whistleblower nodes hard-codes every row's
-Status cell to `✅ Sworn / documented`, regardless of the actual
-attestation venue. That lumps at least four distinct evidentiary tiers
-into one label:
-
-1. **Sworn under oath** — congressional hearing testimony (e.g., Grusch
-   oral 2023-07-26 under oath before the House Oversight Subcommittee)
-2. **Sworn under penalty of perjury** — legal filing (Grusch's PPD-19
-   procedural complaint is adopted under 18 U.S.C. § 1001 attestation)
-3. **DOPSR-cleared public disclosure** — pre-publication-reviewed
-   statements (Grusch's Debrief quotes and written testimony carry
-   DOPSR case 23-F-0946; reviewed by DoD but not sworn)
-4. **On-record interview without oath** — JRE, American Alchemy,
-   NewsNation post-hearing appearances — Grusch-attributed but no
-   attestation ceremony
-
-These tiers carry meaningfully different evidentiary weight. A
-researcher scanning the Claim Inventory should see at a glance that a
-sworn-oath claim and a podcast claim aren't equivalent.
-
-**Fix sketch:** extend quote schema with an optional
-`attestation_tier` enum field — values like `sworn-oath`,
-`sworn-perjury`, `dopsr-cleared`, `on-record`, `self-attested`,
-`unknown`. Renderer maps tier to a differentiated status-cell label
-(e.g., `✅ Sworn (oath)`, `✅ Sworn (perjury)`, `✅ Public, DOPSR-cleared`,
-`◯ On-record`). Default `unknown` for legacy entries.
-
-Surfaced: Grusch Claim Inventory rebuild (2026-04-22) — 62 filed-claim
-quotes all render with identical Status, obscuring the Debrief-vs-oral
-distinction.
-
----
-
-### 14. Q&A answer fragments inflate Statements as standalone quotes
-
-Oral-testimony Q&A produces one-word answers (`"Yes."`, `"Both."`,
-`"Personally, yes."`) that currently register as standalone quote
-entries with the question carried in the `context` field. Structurally
-valid — the verbatim-quote check passes because `"Yes."` appears in
-the source — but the rendered Statements section treats each as a
-blockquote row equal in weight to a full paragraph. Readers scanning
-the node see several `> Yes.` lines that only make sense after reading
-the `Attributed to` cell.
-
-**Fix sketches** (pick one at design time):
-- **Q&A pair schema**: optional `question` field on `quote_entry`.
-  Renderer emits question + answer as a paired block (e.g.,
-  `**Q (Burchett):** … **A:** Yes.`). Schema extension; validator
-  must re-anchor both Q and A against the source.
-- **Content-rewrite discipline**: merge tight Q&A exchanges into
-  single quote entries where Grusch's answer is a continuous-with-
-  question utterance. Keeps schema stable but requires source-read
-  authoring discipline; some answers genuinely stand alone.
-- **Render-time demotion**: quotes whose normalized text length is
-  below a threshold render as inline `> **Q:** … — **A:** …` rather
-  than standalone blockquote. No schema change; renderer-only.
-
-Surfaced: Grusch rebuild (2026-04-22) — 7 of 8 sub-30-char quotes in
-the 165-quote Grusch set are oral-Q&A answer fragments; the remaining
-1 (`"eighty-year arms race"`) is a legitimate terminology extract.
-
----
-
-### 16. Cross-artifact quote ownership — duplication vs. person-node bulk
-
-Person-node Statements sections currently carry every statement the
-subject has made across all venues (Grusch: 164 quotes / 1770 lines).
-Verbatim source passages are ALSO stored on transcript / document
-artifacts, creating data-layer duplication.
-
-Empirical state (2026-04-22): **70 verbatim source passages are
-currently duplicated across 2–3 research artifacts each** (same bytes
-in different YAML files). Not theoretical — the duplication grows
-per node built.
-
-This is the E.3 question the roadmap defers: *"multiple artifacts with
-overlapping evidentiary claims. Can't build propagation tooling
-without a propagation case. Likely after ~10 nodes through the full
-pipeline."* The propagation case is now present at 16 artifacts.
-
-**Three paths:**
-
-1. **Polish on duplication** — ship items #13 (attestation tiers) and
-   #14 (Q&A pair schema); 70 dupes persist but Statements rendering
-   becomes scannable via tier labels + paired Q&A blocks.
-2. **Pull E.3 forward** — each verbatim passage lives in exactly ONE
-   artifact (the source-owning one: transcript for oral, document for
-   text-native); person / event artifacts carry `quote_refs: [qid@artifact]`
-   pointers; renderer resolves refs at build time. Claim Inventory
-   filter requires cross-artifact query (reverse index built at
-   validation time, or per-quote `speaker_path` + scan). Person nodes
-   collapse as a consequence.
-3. **Hybrid** — E.3 first; re-evaluate #13 / #14 on the reformed
-   model. Tier labels and Q&A pairs likely still useful; duplication
-   no longer drives their urgency.
-
-**F.7 dependency:** a finding node citing a quote needs a stable
-reference. On the current duplicated model, `q66@david-grusch` and
-`q53@2023-07-26-house-grusch` can point to the same source passage —
-the finding has to pick one arbitrarily. Finding-node design
-(roadmap F.7, next up) probably forces this question regardless of
-node-bulk considerations.
-
-**Claim Inventory constraint:** `schema.yaml` defines Claim Inventory
-as *"a render-time projection of quotes tagged `category: filed-claim`.
-A filter, not a separate data structure — the filed claim IS the
-quote."* Under path 2, if Grusch's filed-claim quotes live on the
-transcript artifact, the whistleblower Claim Inventory filter has to
-cross artifacts. Same for the Direct Observations / Other Statements
-split on eyewitnesses. Either the resolver walks all artifacts where
-`speaker_path == /people/{slug}`, or a reverse index is built at
-validation time.
-
-**Lighter alternative** (if E.3 scope is too big to pull forward):
-add a navigation affordance — TOC jump-links at the top of nodes
-≥500 lines, or collapsible per-venue Statements subsections in the
-renderer. Doesn't touch the data model; addresses the scannability
-symptom for investigators who want only Timeline / Relationships /
-Connections. Estimated ~2-hour job; strictly cosmetic.
-
-**Relationship to items 13 / 14:** under path 2, both pause pending
-the reformed data model. Under path 1, both ship as planned. The
-three items form a single design decision point, not independent
-fixes.
-
-Surfaced: Grusch post-rebuild architectural discussion (2026-04-22) —
-164-quote node at 1770 lines prompted user question about offloading
-quotes to hearing-event / transcript nodes so that investigators
-looking for just a subject's Timeline or Relationships aren't scrolling
-past a full testimony register.
-
----
-
-### 17. Table renderers drop the `note` field across structured sections
-
-Every relationship-bearing / synthesis-content-bearing list section in
-a research artifact carries a `note` field that captures source-derived
-nuance — oversight vs. parent-chartering relationships, direct vs.
-downstream succession, role-evolution context, ownership-transition
-rationale, contract-lifecycle framing. The node-body renderers emit
-the row's structured fields (e.g., Organization | Relationship |
-Source) as a table cell and drop the `note` content. The evidentiary
-nuance exists in the artifact; the rendered node hides it.
-
-**Affected sections** (non-exhaustive — every list section with a
-`note` entry field rendered as a table):
-
-- `org_relationships.note`
-- `key_personnel.note`
-- `contracts.note`
-- `ownership_timeline.note`
-- `uap_scope_activity.note`
-- `affiliations[].note` (person nodes)
-- `relationships[].note` (person-to-person)
-- `location_relationships[].note`
-
-**Concrete consequence** — UAPTF v7 audit (2026-04-23). The AARO
-relationship entry `or2` carries a note stating *"AARO is the
-downstream successor in the chain — UAPTF → AOIMSG (Nov 2021) → AARO.
-The primary-direct-successor relationship to UAPTF is or1 (AOIMSG);
-this entry captures the downstream succession chain terminus."* The
-EXCOM entry `or9` carries *"senior oversight body sitting above UAPTF
-in the reporting chain, primary-source-attested by the UAPTF Charter."*
-Both rows render as bare `other` relationship type with a source path;
-the rendered table gives readers no distinction between AARO (downstream
-successor via rename), EXCOM (oversight body per Charter), US Navy
-(lead department), and OSD (cognizant authority) — all four display
-identically. The audit summary: *"the prose tells a story the
-structured data doesn't."*
-
-**Design decisions for the redesign pass:**
-
-1. **Display convention.** Column-wise 4th-column "Notes" header vs.
-   inline-under-row prose (indented paragraph below each row). Notes
-   run 1–3 sentences in practice; cell treatment pushes long notes
-   into unreadable wrapping on narrow screens. Inline-below reads more
-   naturally for the prose shape `note` actually carries. Recommend
-   inline-below; confirm once implementation is prototyped.
-2. **Truncation policy.** Some notes (or2, or4, or6 in uaptf; kp1b /
-   kp9b in ttsa) run multi-sentence. Options: full render, soft
-   char cap with expand, first-sentence-only at render with link to
-   artifact. For an evidentiary repo full render is probably right —
-   codify the convention once rather than per-section.
-3. **Backlog-stub ghosting** (orthogonal but adjacent). If a
-   note-bearing row references an unbuilt stub (e.g., UAPTF's or9
-   → `/organizations/uap-excom`), the renderer could italicize /
-   ghost the row so click-through expectations are calibrated. Cheap
-   to include if the renderer is being touched anyway.
-4. **Enum-extension alternative considered and deferred.** The
-   narrower fix — extend `org_relationships.relationship_type`
-   with `downstream-successor`, `oversight`, `reporting-body`, etc. —
-   was rejected because (a) the enum grows indefinitely as each new
-   edge nuance surfaces, (b) each addition is a schema commitment
-   made in advance of usage evidence, and (c) rendering the existing
-   `note` field achieves the same reader-visible outcome without
-   schema prescription. Note rendering does NOT foreclose future
-   enum tightening — if notes begin recurring across many edges
-   (e.g., fifteen rows saying "oversight body per Charter"), that
-   becomes evidence-driven justification for an enum addition.
-5. **Parallel to end-only-period rendering** (`period: – 2021` for
-   bracketed end-with-unknown-start, landed 2026-04-22). Both are
-   renderer passes over artifact content the structured data already
-   contains. If the renderer is touched broadly, grouping related
-   polish (column alignment, sort stability, header formatting) into
-   one pass reduces churn.
-
-**Scope note.** This item is corpus-wide, not UAPTF-specific. The
-UAPTF v7 audit surfaced it as a concrete example but every
-organization, location, person, and gov-contractor node currently
-carries `note` fields invisible to readers. A single renderer pass
-closes the gap for every node built to date and every node that
-will ever be built; no per-node remediation required.
-
-Surfaced: UAPTF v7 audit (2026-04-23) — AARO and EXCOM rows flagged
-as displaying identically to `other`-typed edges despite the
-artifact carrying distinctive source-derived framing for both.
-
-**Third concrete consequence — AARO web audit follow-up (2026-05-03).**
-AARO's `org_relationships` table renders both [`/organizations/dod`]
-(top-level department) and [`/organizations/ousd-is`] (immediate
-supervisory office) under bare `parent` relationship_type, with no
-distinction visible to a reader scanning structured data alone. The
-late-July 2023 reporting-line shift to DEPSECDEF (sourced from
-DefenseScoop August 30, 2023) lives only in description prose — the
-relationship table cannot represent it. A note-rendering pass would
-let `or1.note`/`or5.note` carry the bureaucratic-vs-operational
-distinction; alternately, a `reports-to` enum value could distinguish
-operational reporting from organizational placement. Joins UAPTF v7
-and IPMO/co-located OUSD(I&S) cases as the third concrete trigger.
-
----
-
 ### 18. Codify Key Passages ordering convention in `conventions.md`
 
 The node-body renderer sorts Key Passages (and Key Testimony on
@@ -456,7 +222,7 @@ for tracking visibility; fate confirmed at Tier 6 closeout):
 - #20 — Auto-caption vs audio confirmation discipline (blocks Tier 3)
 - #21 — pdftotext Unicode-mapping quirks (extraction-tool-layer fix; narrower than extraction-lossy schema category)
 - #22 — Provenance-marker treatment (per-row custody checkmarks on document nodes; different shape from per-quote Verified)
-- #23 — BACKLOG #17 surfacing in Credibility Notes prose (verbatim caption forms read as misspellings)
+- #32 (M2) — naming_quirks preserve-as-sic forms unmarked in synthesis prose (folded into #32 with the table-renderer note gap)
 - #24 — Location reference normalization (stale `lines N-M` pdftotext refs; low-priority hygiene)
 
 **Recommended session sequence** (from post-Tier-2 planning):
@@ -733,57 +499,6 @@ performance shape.
 
 ---
 
-### 23. BACKLOG #17 surfacing in Credibility Notes prose — verbatim source forms read as misspellings without reader signal
-
-Related to #17 (table renderers drop `.note` field across structured
-sections) but surfaces in a different shape: Credibility Notes
-contributor-synthesis prose can include verbatim source-form tokens
-that look like typos to a reader who has no signal they are
-preserved-as-sic.
-
-**Concrete case.** `people/david-grusch.md` Credibility Notes
-paragraph (Grusch v2 commit `8a90d5c`): *"Grusch described the
-'$21 million' Reid had given 'to DIA and Bigalow Aerospace' as
-funding for the 'assap' program… Grusch named a specific private
-defense contractor — 'lockie Martin' — saying the company 'wanted
-to divest itself…'"*
-
-Every single-quoted phrase here is a verbatim fragment from the
-JRE transcript (auto-caption typos preserved per established
-discipline, tracked in naming_quirks nq1, nq5). The reader sees
-"Bigalow", "lockie", "assap" and — without context about the
-source's auto-caption provenance — reads them as contributor-
-introduced misspellings.
-
-**Possible fixes** (conceptually; none prototyped):
-1. **Inline `[sic]`** after verbatim source-form tokens in prose.
-   Discipline at the contributor layer; no schema change.
-2. **Renderer surface for naming_quirks.** Section like
-   `## Source-Form Notes` that lists preserve-as-sic entries from
-   the artifact so the reader knows why source forms are preserved
-   (related to #19's earlier-proposed `## Source Transcription
-   Notes`, which was cut during implementation).
-3. **Convention-layer signal** — wrap verbatim tokens in
-   backtick-quoted spans with a trailing `[source form preserved]`
-   descriptor.
-
-**Relationship to #17.** #17 is the general case (note fields drop
-in rendered tables); this is the specific case of source-form
-tokens appearing unmarked in synthesis prose. Could be addressed
-independently or bundled with #17's renderer pass.
-
-**Priority.** Low. Not a correctness issue; reader inconvenience.
-But worth tracking because the pattern will recur as more auto-
-caption sources enter the corpus.
-
-**Affected now.** `people/david-grusch` (JRE auto-caption forms
-in Credibility Notes). Future: any node citing auto-caption
-transcripts where contributor prose quotes source-form tokens.
-
-Surfaced: Phase F diagnostic + Grusch v2 audit review (2026-04-24).
-
----
-
 ### 24. Location reference normalization — stale pdftotext line refs in quote Locations
 
 Several existing quotes in the corpus cite `Location: lines 805-810`
@@ -875,15 +590,16 @@ prose. That works for one node but the pattern of duplicating
 artifact-data into description prose to compensate for renderer gaps
 isn't sustainable.
 
-**Relationship to BACKLOG #17.** #17 covers `note` fields on list-entry
-relationship rows being dropped by table renderers. This is a
-different shape: top-level dict keys on `event_intrinsic` not in the
-renderer's emit set, rather than per-row notes. Both are renderer
-coverage gaps where validated artifact content doesn't reach the
-reader, but the fix shape differs — #17 needs a notes-rendering
-convention; this needs the Event Summary table to extend to whichever
-keys are populated (mirroring the organization renderer's pattern of
-emitting whichever overview keys are populated, skipping empty ones).
+**Relationship to BACKLOG #32.** #32 (M1) covers `note` fields on
+list-entry relationship rows being dropped by table renderers. This
+is a different shape: top-level dict keys on `event_intrinsic` not
+in the renderer's emit set, rather than per-row notes. Both are
+renderer coverage gaps where validated artifact content doesn't
+reach the reader, but the fix shape differs — #32 needs a notes-
+rendering convention; this needs the Event Summary table to extend
+to whichever keys are populated (mirroring the organization
+renderer's pattern of emitting whichever overview keys are
+populated, skipping empty ones).
 
 **Fix shape.** Either (a) extend the Event Summary table to emit any
 populated `event_intrinsic` key not already in the explicit set
@@ -1152,15 +868,14 @@ Kirkpatrick credibility notes knows the appeal is pending.
 **The gap.** Schema-required frontmatter is `[id, type, schema_version,
 status, kind, created]` across all content types. There is no `updated`
 or `last_modified` field. Body prose periodically carries time-anchored
-clauses — e.g., AARO description prose at body line 35: *"no Sancorp
-follow-on or successor AARO Support Services contract is documented in
-archived primary sources as of May 3, 2026"*. The "as of {date}" form
-freezes the contributor's knowledge state at edit time, but a reader
-arriving six months later cannot tell whether the clause reflects an
-actual review on that date or is forward-projected boilerplate. Git
-log on the file is the authoritative edit-history record per
-`meta/conventions.md`, but readers don't reach for git log to evaluate
-prose currency.
+clauses — e.g., AARO description prose carrying *"no Sancorp follow-on
+or successor AARO Support Services contract is documented in archived
+primary sources as of {date}"*. The "as of {date}" form freezes the
+contributor's knowledge state at edit time, but a reader arriving six
+months later cannot tell whether the clause reflects an actual review
+on that date or is forward-projected boilerplate. Git log on the file
+is the authoritative edit-history record per `meta/conventions.md`,
+but readers don't reach for git log to evaluate prose currency.
 
 **Affected surface.** Any node with rolling-currency clauses — most
 acutely on government-entity org nodes where statutory deadlines,
@@ -1189,9 +904,10 @@ C. **Convention-only.** Document in `meta/conventions.md` that
    node file, validated by a new check that reads `git log -1`. No
    schema change.
 
-**Relationship to BACKLOG #17.** Adjacent but distinct. #17 is about
-`note` fields not rendering; this is about prose-clause currency
-without a structural anchor. Both are reader-visibility issues.
+**Relationship to BACKLOG #32.** Adjacent but distinct. #32 is about
+artifact-attested nuance (`note` fields, preserve-as-sic forms) not
+reaching readers; this is about prose-clause currency without a
+structural anchor. Both are reader-visibility issues.
 
 **Priority.** Low. Not a correctness issue — the currency claim is
 already source-attested via the underlying primary sources; the
@@ -1202,10 +918,9 @@ across 3+ nodes.
 **Scope.** ~1 session for design + schema/renderer change + per-node
 sweep across affected nodes.
 
-Surfaced: AARO web audit (Claude Web, 2026-05-03) — auditor flagged
-the line-35 "as of May 3, 2026" clause as ambiguous between rolling-
-currency review and forward-projected boilerplate. Currently affects
-AARO; pattern likely recurs corpus-wide.
+Surfaced: AARO web audit — auditor flagged an "as of {date}" clause
+as ambiguous between rolling-currency review and forward-projected
+boilerplate. Currently affects AARO; pattern likely recurs corpus-wide.
 
 ---
 
@@ -1233,12 +948,12 @@ manifest entry showing `archive_status: 1` (local only) and no
 Neither is a great workflow. The contributor's mental model is "I just
 submitted; the manifest should reflect it."
 
-**Concrete consequence — Phase 1.5 of AARO Round 5 (2026-05-03).**
-Registered the Sept 9 2025 hearing landing page with `manifest.py add`
-(set `archive_status: 1`); ran `archive.py --submit URL` which
-succeeded and returned `https://web.archive.org/web/20260503223335/...`;
-manifest entry remained at `archive_status: 1` with no `wayback_date`.
-Resolved by manual edit. Five-minute delay; minor friction.
+**Concrete consequence — AARO node build.** Registered a hearing
+landing page with `manifest.py add` (set `archive_status: 1`); ran
+`archive.py --submit URL` which succeeded and returned a Wayback
+snapshot; manifest entry remained at `archive_status: 1` with no
+`wayback_date`. Resolved by manual edit. Five-minute delay; minor
+friction.
 
 **Fix sketch (renderer-only, no schema change):**
 
@@ -1264,6 +979,258 @@ no-args sweep). Worth fixing because the cmd-line ergonomic gap is
 load-bearing — contributors will hit this every time a new
 single-URL source is registered + archived in one session.
 
-Surfaced: AARO Round 5 Phase 1.5 (2026-05-03) — Sept 9 2025 hearing
-landing page Wayback submission succeeded but manifest entry stayed at
-`archive_status: 1`; manually patched to `3` + `wayback_date: '2026-05-03'`.
+Surfaced: AARO node build — single-URL Wayback submission succeeded
+but manifest entry stayed at `archive_status: 1`; manually patched
+to `3` + `wayback_date`.
+
+---
+
+### 31. Person-node Statements section — three reader-visibility problems on one data-model decision
+
+Replaces former #13, #14, #16. The Statements section on a person node
+renders every quote attributed to that person, sorted chronologically.
+Three problems surface here; they're tied together because the
+data-model decision in Problem 3 shapes how Problems 1 and 2 should
+be fixed.
+
+**Problem 1 — Claim Inventory status column is undifferentiated.** On
+whistleblower nodes, every filed-claim row renders with a hard-coded
+`✅ Sworn / documented` label (`scripts/build-from-research.py:723`).
+Real attestation tiers vary materially:
+
+- **sworn under oath** — congressional hearing testimony
+- **sworn under penalty of perjury** — formal legal filing under
+  18 U.S.C. § 1001
+- **DOPSR-cleared public disclosure** — pre-publication-reviewed,
+  reviewed but not sworn
+- **on-record interview** — podcast / broadcast / streaming with no
+  attestation ceremony
+
+A reader scanning the inventory cannot distinguish a sworn-oath claim
+from a podcast claim. Fix sketch: add an optional `attestation_tier`
+enum to `quote_entry` (values `sworn-oath` / `sworn-perjury` /
+`dopsr-cleared` / `on-record` / `self-attested` / `unknown`); renderer
+maps tier to a differentiated status label.
+
+**Problem 2 — Q&A answer fragments render as standalone blockquotes.**
+Oral testimony produces one-word answers (`"Yes."`, `"Both."`,
+`"Personally, yes."`) that the verbatim-quote check passes (the byte
+appears in source) but that render as full blockquote rows whose
+meaning is opaque without reading the `Attributed to` cell. Corpus
+state: **9 person-node quotes are sub-30 chars; 7 are Q&A answer
+fragments**, 2 are legitimate terminology extracts (`"self-licking
+ice cream cone"`, `"eighty-year arms race"`). Fix sketches:
+
+- **Q&A pair schema** — optional `question` field on `quote_entry`;
+  renderer emits Q + A as a paired block. Schema extension; verbatim
+  check anchors both halves against source.
+- **Content-rewrite discipline** — merge tight Q&A exchanges into
+  single quote entries where the answer is continuous with the
+  question. Schema-stable; relies on author discipline.
+- **Render-time demotion** — quotes below a length threshold render
+  inline (`> **Q:** … — **A:** Yes.`) rather than as standalone
+  blockquotes. No schema change; renderer-only.
+
+**Problem 3 — cross-artifact quote duplication.** A statement made by
+person X at hearing Y currently lives as identical bytes in three
+places: `quotes` on the person artifact, on the hearing-event
+artifact, and on the hearing-transcript artifact. Corpus state: **82
+verbatim passages are duplicated across 2+ artifacts** and growing
+per node built. Person nodes inflate as a consequence (whistleblower
+nodes can run 1000+ lines).
+
+This is the E.3 cross-artifact-resolver question the roadmap deferred
+until ~10 nodes were through the pipeline. Threshold reached. Three
+paths:
+
+- **Path A — keep duplication, polish renders.** Each artifact owns
+  its own quotes. Ship Problems 1 and 2 as render-time / schema
+  additions on the existing model. Duplicates persist but Statements
+  becomes scannable via tier labels and Q&A handling.
+- **Path B — pull E.3 forward.** Each verbatim passage lives in
+  exactly one artifact (the source-owning one — transcript for oral,
+  document for text-native). Person and event artifacts carry
+  `quote_refs: [qid@artifact]` pointers; the renderer resolves at
+  build time. Person nodes shrink as a consequence. Whistleblower
+  Claim Inventory and eyewitness Direct/Other-Statements filters
+  need a cross-artifact resolver — either walk every artifact where
+  `speaker_path == /people/{slug}`, or build a reverse index at
+  validation time.
+- **Path C — hybrid.** Ship E.3 first; re-evaluate Problems 1 and 2
+  on the reformed model. Tier labels and Q&A handling likely still
+  useful but their shape may shift (Q&A handling moves to the source
+  artifact, not the person view of it).
+
+**F.7 dependency.** A finding node citing a quote needs a stable
+reference. On the duplicated model, `q66@david-grusch` and
+`q53@2023-07-26-house-grusch` resolve to the same source passage — a
+finding has to pick one arbitrarily. F.7 (finding renderer, pending
+in roadmap) forces this question regardless of person-node bulk
+considerations. The data-model decision should land before or with
+F.7.
+
+**Lighter alternative if Path A wins.** Add a navigation affordance —
+TOC jump-links at the top of nodes ≥500 lines, or collapsible
+per-venue Statements subsections. Doesn't touch the data model;
+addresses the scannability symptom. ~2-hour job; strictly cosmetic.
+
+**Constraint from `meta/schema.yaml`.** Claim Inventory is defined as
+*"a render-time projection of quotes tagged `category: filed-claim`.
+A filter, not a separate data structure — the filed claim IS the
+quote."* Path B must preserve this filter semantics across artifacts;
+the filter logic moves out of the renderer's local-quote iteration
+into a cross-artifact walk.
+
+Surfaced: Grusch rebuild — three observations converged from the
+same node-build session (Problem 1 from a Claim Inventory rendering
+identically across all rows; Problem 2 from oral-testimony Q&A
+extraction; Problem 3 from an over-long person node prompting "can
+quotes be offloaded?"). One person-node session, one design decision
+point.
+
+---
+
+### 32. Artifact-attested nuance not reaching readers — `.note` fields dropped in tables; preserve-as-sic forms unmarked in prose
+
+Replaces former #17 and #23. Two manifestations of the same gap:
+research artifacts capture source-derived evidentiary nuance in
+fields that the rendered node body silently drops or under-signals,
+leaving the reader with the structured surface but not the nuance.
+
+**Manifestation 1 — table renderers drop the `.note` field across
+relationship-bearing list sections.**
+
+Eight list-section entry shapes carry an optional `note` field that
+no current renderer emits:
+
+- `org_relationships.note` — direct vs. downstream succession,
+  oversight vs. parent-chartering, etc.
+- `key_personnel.note`
+- `contracts.note`
+- `affiliations[].note` (person nodes)
+- `relationships[].note` (person-to-person)
+- `ownership_timeline.note`
+- `uap_scope_activity.note`
+- `location_relationships[].note`
+
+The corresponding renderers in `scripts/build-from-research.py`
+(`render_org_relationships`, `render_affiliations`,
+`render_relationships`, `render_org_key_personnel`,
+`render_org_primary_contracts`, `render_ownership_timeline`,
+`render_uap_scope_activity`, `render_location_relationships`) emit
+only the structured cells (e.g., Organization | Relationship |
+Source) and drop `note` content. The `note` field IS rendered in
+three other places — `rumors.note` (Primary-source refutation),
+`corroboration_items.note` (What It Confirms column),
+`media_versioning.note` (notes column) — so the gap is specifically
+the eight relationship/list sections.
+
+Concrete consequence on the AARO node: `or1` (DoD parent) and
+`or5` (OUSD(I&S) supervisory) both render as bare `parent`
+relationship type with no visible distinction; the late-July 2023
+DEPSECDEF reporting-line shift documented in description prose has
+no structural counterpart in the relationship table. Same shape
+hits AARO with AOIMSG-vs-UAPTF predecessor disambiguation and the
+IPMO co-location-vs-partner case — see "Note-rendering gap
+manifestations" under AARO open notes in
+`meta/topic/research-queue.md`. The UAPTF audit had flagged the
+same pattern earlier with AARO-as-downstream-successor and
+EXCOM-as-oversight collapsing into bare `other` relationship type.
+
+**Manifestation 2 — verbatim source-form tokens in synthesis prose
+appear unmarked.**
+
+When a primary source uses a non-canonical form (auto-caption typos,
+OCR artifacts, alias-of-record), contributors register the variance
+as a `naming_quirks` entry with `resolution: preserve-as-sic-in-quotes`.
+Currently 74 such entries across 17 research artifacts. The verbatim
+form is preserved in `quote.text` (correct per source-read-first
+discipline). When the same form appears in synthesis prose
+(`description`, `credibility_notes`), the reader has no explicit
+signal that "Bigalow Aerospace" is the source's auto-caption output
+rather than a contributor misspelling.
+
+The Grusch node uses an implicit signal — single-quoted source form
+followed by a canonical wrap link, e.g. `'Bigalow Aerospace'
+[`/organizations/bigelow-aerospace`]`. A discerning reader infers
+the source-vs-canonical pairing from the bracket-link, but the
+convention isn't documented anywhere reader-visible and other nodes
+don't apply it consistently. Heaviest affected nodes:
+alex-dietrich (9 entries — fraver, prinston, nits, Nimttz, Fleer,
+ROC), sancorp-consulting (11 — pdftotext OCR artifacts: SuppOI1,
+anached, thi s, etc.), ttsa (6 — metamateiiais, struefural),
+aaro (4 — fulfi lled, etc.), david-grusch (4 — Bigalow, lockie,
+Jim laty, Lou alzando).
+
+**Why these are one gap.** Both surface artifact-attested
+evidentiary nuance that the rendered output drops or under-signals.
+M1 lives in the structured table-render path; M2 lives in the
+prose-render / convention path. The fix shapes differ but the
+diagnosis is shared: artifact metadata not reaching readers. Both
+are renderer / convention layer; neither requires schema changes.
+A single coordinated pass closes both gaps for past and future
+nodes; per-node remediation is not required.
+
+**Fix sketches.**
+
+*M1 — render the `.note` field.*
+
+1. **Display convention.** Inline-below row prose (indented
+   paragraph below each row) reads more naturally for the 1–3
+   sentences `note` actually carries; column-wise 4th-column
+   "Notes" cell pushes long notes into unreadable wrapping on
+   narrow screens. Recommend inline-below; confirm at prototype.
+2. **Truncation policy.** Full render is probably right for an
+   evidentiary repo — codify the convention once rather than
+   per-section.
+3. **Backlog-stub ghosting** (orthogonal but adjacent). If a
+   note-bearing row references an unbuilt stub (e.g., UAPTF's `or9`
+   → `/organizations/uap-excom`), the renderer could italicize /
+   ghost the row to calibrate click-through expectations. Cheap to
+   include if the renderer is being touched anyway.
+4. **Enum-extension alternative considered and deferred.** Adding
+   `downstream-successor` / `oversight` / `reporting-body` to
+   `org_relationships.relationship_type` was rejected because the
+   enum grows indefinitely as edge nuances surface, each addition
+   is a schema commitment in advance of usage evidence, and
+   rendering the existing `note` field achieves the same reader-
+   visible outcome without schema prescription. Note rendering
+   does NOT foreclose future enum tightening — if notes recur
+   across many edges (e.g., 15+ rows saying "oversight body per
+   Charter"), that becomes evidence-driven justification for an
+   enum addition.
+
+*M2 — signal source-form preservation to readers.*
+
+1. **Inline `[sic]`** after verbatim source-form tokens in prose.
+   Contributor discipline; no schema or renderer change.
+2. **Renderer surface for `naming_quirks`** — emit a
+   `## Source-Form Notes` section listing preserve-as-sic entries
+   with their canonical forms. Surfaces 74 entries across 17
+   nodes today; auto-applies to future entries.
+3. **Backtick-quoted spans with trailing descriptor** —
+   `` `Bigalow` [source form preserved] ``. More verbose than
+   single-quote-plus-wrap; less ambiguous.
+
+Documenting the single-quote-plus-wrap convention in
+`meta/conventions.md` would also help, even without renderer change.
+
+**Parallel renderer polish.** The note-render pass and the
+end-only-period rendering (`period: – 2021` for bracketed-end-with-
+unknown-start) are both passes over artifact content the structured
+data already contains. If the renderer is touched broadly, grouping
+related polish — column alignment, sort stability, header
+formatting, note rendering, source-form notes — into one pass
+reduces churn.
+
+**Scope.** Corpus-wide. M1 affects every relationship/list row in
+every node built and every node that will ever be built. M2 affects
+74 naming_quirks entries across 17 artifacts today and grows as
+auto-caption / OCR sources land in the corpus.
+
+Surfaced: UAPTF audit (M1 — AARO and EXCOM rows displaying
+identically to `other`-typed edges); Grusch v2 audit (M2 — auto-
+caption verbatim forms in Credibility Notes prose read as
+contributor misspellings without explicit signal). The same
+node-build-audit cycle surfaced both shapes; reader-visibility for
+artifact metadata is the umbrella.

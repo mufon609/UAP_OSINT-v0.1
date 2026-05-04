@@ -235,18 +235,17 @@ open questions live in the per-node sections below.
 
 ---
 
-## Known caveats — `/organizations/aaro`
+## AARO — open notes
 
-Substantive notes from the AARO audit cycle that future contributors
-and auditors should carry forward.
+AARO-specific items still pending resolution.
 
-### Open: Phillips Deputy Director departure date
+### Phillips Deputy Director departure date (open)
 
 Personnel `kp2` documents Phillips' Deputy Director / Acting Director
 tenure with `period_start: 2023-10` and no `period_end` — bare-start
-renders per corpus convention as "ongoing". Description prose at body
-line 33 carries an explicit hedge that "his Deputy Director departure
-date is not documented in archived primary sources".
+renders per corpus convention as "ongoing". Description prose carries
+an explicit hedge that "his Deputy Director departure date is not
+documented in archived primary sources".
 
 **Source-attested:** (a) Phillips assumed Deputy Director duties in
 October 2023 per his Dec 2023 bio; (b) Acting Director duties ended on
@@ -257,17 +256,12 @@ reported vacant by Feb 25, 2026 (Jordan Flowers / Disclosure Foundation
 in DefenseScoop). **Not source-attested in any archived primary source:**
 the departure date itself.
 
-**Sources already checked (don't re-search):** Kosloski appointment HTML;
-AARO FY24 Annual Report; Kosloski SFR for SASC; WSJ June 2025; Liberation
-Times June 6, 2025; PJ Media June 7, 2025; BlackVault FOIA 24-F-0894 cover
-article (all silent or past-tense only on Phillips).
-
 **What would resolve:** a war.gov / defense.gov press release announcing
 Phillips' departure, an AARO leadership-update bio change, or any
 post-Aug 2024 archived primary source attesting Phillips holding a
 current Deputy Director role.
 
-### Mt. Etna 170 m vs 170 km — do not adjudicate
+### Mt. Etna 170 m vs 170 km — preserved disagreement
 
 Both verbatim quotes preserved on the AARO node; `naming_quirks.nq4`
 registers the dispute with `resolution: disputed`. Per
@@ -277,11 +271,11 @@ judge"), do not move toward a single canonical figure on plausibility
 grounds. If a future primary source actually resolves the disagreement,
 update `naming_quirks` and the relevant quote/timeline entries.
 
-### BACKLOG #17 manifestations on the AARO node
+### Note-rendering gap manifestations (BACKLOG #32)
 
-The note-rendering gap (`org_relationships.note` and other `.note`
-fields not surfacing in rendered tables) hits this node in three
-concrete places — all resolve when BACKLOG #17 ships:
+Three concrete cases where AARO's evidentiary nuance lives only in
+artifact `.note` fields the renderer drops — all resolve when BACKLOG
+#32 ships:
 
 1. **DoD vs OUSD(I&S) parent disambiguation** — both render under bare
    `parent` relationship_type with no visible distinction between the
@@ -298,7 +292,7 @@ concrete places — all resolve when BACKLOG #17 ships:
    relationship_type. Could use `other` + `note` but the note doesn't
    render.
 
-### Currency lead pending source — Trump April 29, 2026 UAP remarks
+### Trump April 29, 2026 UAP remarks — pending source
 
 Trump made UAP-disclosure follow-up statements at Phoenix Turning Point
 USA (~April 18, 2026) and to reporters on April 29, 2026 ("releasing as
@@ -317,10 +311,10 @@ deferred to a future manifest hygiene pass.
 
 ---
 
-## Cross-node caveats surfaced during AARO audits
+## Pending corpus-wide convention questions
 
-Conventions and patterns that affect multiple nodes; AARO surfaced them
-but they apply corpus-wide.
+Patterns surfaced across the corpus that aren't yet ready for a
+convention pass — all awaiting a 3+ node pattern before codifying.
 
 ### Period convention for "known start, unknown end (but not ongoing)"
 
@@ -344,29 +338,6 @@ source vocabulary takes precedence and each form may be source-attested
 in its own context. Resolution requires per-instance source-form audit
 (which source attests which form), not opportunistic harmonization.
 Worth a systematic pass once a clear pattern emerges across 3+ nodes.
-
-### Bare-start period rendering = ongoing role (corpus convention)
-
-Surveyed during the AARO audit across `/organizations/aaro` (Kosloski),
-`/organizations/arlo-solutions` (Lonye Ford), `/organizations/ousd-is`
-(Hansell, Kozik), `/organizations/ttsa` (Mizer, Spry),
-`/people/david-grusch` (Sol Foundation), `/people/ronald-moultrie`
-(LeoLabs), `/people/sean-kirkpatrick` (Elara Nova, Nonlinear Solutions).
-All current/ongoing role rows render as bare `period_start`. The
-`– end` form is reserved for bracketed-end-with-unknown-start (per
-`_format_period` in `scripts/build-from-research.py`). No
-`start – present` convention exists or is needed; `period_end` absence
-is the signal for ongoing.
-
-### Manual-browser-save fallback for hard-blocked sources
-
-For sites with hard automated blocking (Cloudflare/Varnish 403,
-hCaptcha, Imperva) AND no Wayback presence, the manual-browser-save
-fallback is a viable primary-source archival route — preserves the
-source-read-first bar through local archive + sha256 even where
-automated routes fail. Demonstrated for the NewsNation Luna April 16,
-2026 article (`newsnationnow.com` is Cloudflare-blocked + Wayback SPN
-returned HTTP 520).
 
 ---
 
@@ -414,22 +385,22 @@ node.
 **Build dependencies (in priority order).** The finding is gated on these
 to launch with substantive density rather than as a 2-entity observation:
 
-1. `/organizations/arlo-solutions` (built 2026-05-03) — second contractor
+1. `/organizations/arlo-solutions` (built) — second contractor
    data point beyond Sancorp; tests whether the marketing/procurement
    asymmetry generalizes across the OUSD(I&S) contractor substrate.
    Arlo's built record attests SASP and CL&S as customer offices;
    no IPMO-direct contract is attested in the Arlo primary-source corpus
    (see Arlo node rumors r1).
-2. `/organizations/ipmo` (built 2026-05-02) — third architectural layer
-   under OUSD(I&S). Built; no Arlo-IPMO contract attested in either
+2. `/organizations/ipmo` (built) — third architectural layer
+   under OUSD(I&S). No Arlo-IPMO contract attested in either
    node's record.
-3. `/documents/eo-14347-restoring-department-of-war` (built 2026-05-03)
-   — legal foundation (Sec 2(a) authorization, Sec 2(b) non-statutory
+3. `/documents/eo-14347-restoring-department-of-war` (built) — legal
+   foundation (Sec 2(a) authorization, Sec 2(b) non-statutory
    adoption, Sec 2(e) statutory preservation).
 4. `/organizations/dod` — top-level institutional anchor; 17 refs from
    built nodes (most-referenced unbuilt org in registry). **Last
    unbuilt F.X gate.**
-5. `/organizations/ousd-is` (built 2026-04-30) — direct parent of AARO
+5. `/organizations/ousd-is` (built) — direct parent of AARO
    + IPMO; cognizant entity where the cross-architectural-layer
    asymmetry plays out at the supervisory level.
 
@@ -447,8 +418,8 @@ organizational, contractor-marketing, federal-procurement, press).
 ipmo, eo-14347, ousd-is); gated on `/organizations/dod` (the last
 unbuilt anchor).
 
-**Surfaced from:** AARO Phase 2 audit (Claude Web, 2026-04-30) — N6
-recommendation deferred cross-outlet attribution to the Finding-node
-queue; investigation traced two distinct candidate findings, of which
-this one (DoD/DoW asymmetry) met the 3-entity threshold while the
-other (April-2026 disclosure-coordination press cycle) did not.
+**Surfaced from:** AARO Phase 2 audit — N6 recommendation deferred
+cross-outlet attribution to the Finding-node queue; investigation
+traced two distinct candidate findings, of which this one (DoD/DoW
+asymmetry) met the 3-entity threshold while the other (April-2026
+disclosure-coordination press cycle) did not.

@@ -16,6 +16,14 @@ When a source is blocked and no workaround exists, register it in the
 manifest with status `403-blocked`, `402-blocked`, or `pending` and add
 to the Manual Archival Queue at the bottom of this file.
 
+When all automated retrieval routes fail (direct curl 403/402/523,
+Wayback SPN failure, no useful CDX coverage), **manual browser save**
+preserves the source-read-first bar: open the URL in a browser, save
+the rendered page, register in `sources/manifest.yaml` via
+`manifest.py add` (sets sha256 + archive_status). Local archive +
+sha256 carry the integrity guarantee even when Wayback insurance is
+unavailable.
+
 ---
 
 ## SEC EDGAR (sec.gov)
