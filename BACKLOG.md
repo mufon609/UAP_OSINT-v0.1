@@ -130,8 +130,8 @@ under the old regime, which substring-matched quote text against
 layer is lossy (OCR-scanned PDFs, character-substituting PDF
 generators), bytes-match-extract is not bytes-match-original. A
 multi-tier source-integrity audit (Phase F) walks every cited
-source and re-verifies extraction quality. **A2 closes when Tier 6
-closeout runs.**
+source and re-verifies extraction quality. A2 closes when Tier 6
+closeout runs.
 
 **Authoritative progress record.** Tier-by-tier methodology,
 findings, and aggregate measurements live in
@@ -219,8 +219,8 @@ a wholesale tool change would be solving the wrong problem
 (treating the tool as the variable when the actual variable is
 upstream — font embedding, encoding tables, source-specific). The
 current approach — flag lossy sources, produce `.txt` siblings,
-move on — remains correct for the observed pattern. **Revisit C4
-only if Tier 5 surfaces a systemic pattern.**
+move on — remains correct for the observed pattern. Revisit C4
+only if Tier 5 surfaces a systemic pattern.
 
 ---
 
@@ -256,8 +256,8 @@ Oral testimony produces one-word answers (`"Yes."`, `"Both."`,
 `"Personally, yes."`) that the verbatim-quote check passes (the byte
 appears in source) but that render as full blockquote rows whose
 meaning is opaque without reading the `Attributed to` cell. Corpus
-state: **9 person-node quotes are sub-30 chars; 7 are Q&A answer
-fragments**, 2 are legitimate terminology extracts (`"self-licking
+state: 9 person-node quotes are sub-30 chars; 7 are Q&A answer
+fragments; 2 are legitimate terminology extracts (`"self-licking
 ice cream cone"`, `"eighty-year arms race"`). Fix sketches:
 
 - **Q&A pair schema** — optional `question` field on `quote_entry`;
@@ -273,10 +273,10 @@ ice cream cone"`, `"eighty-year arms race"`). Fix sketches:
 **Problem 3 — cross-artifact quote duplication.** A statement made by
 person X at hearing Y currently lives as identical bytes in three
 places: `quotes` on the person artifact, on the hearing-event
-artifact, and on the hearing-transcript artifact. Corpus state: **82
-verbatim passages are duplicated across 2+ artifacts** and growing
-per node built. Person nodes inflate as a consequence (whistleblower
-nodes can run 1000+ lines).
+artifact, and on the hearing-transcript artifact. Corpus state: 82
+verbatim passages are duplicated across 2+ artifacts, and the
+duplication grows per node built. Person nodes inflate as a
+consequence (whistleblower nodes can run 1000+ lines).
 
 This is the E.3 cross-artifact-resolver question the roadmap deferred
 until ~10 nodes were through the pipeline. Threshold reached. Three
@@ -538,23 +538,23 @@ affiliations carry equivalent risk.
 
 **Design choices.**
 
-A. **Add `updated:` (or `last_reviewed:`) to schema.yaml frontmatter
-   `optional` set across all content types.** Contributors stamp it
+A. Add `updated:` (or `last_reviewed:`) to schema.yaml frontmatter
+   `optional` set across all content types. Contributors stamp it
    when a node receives a content-currency review. Renderer surfaces
-   it in the Overview row or as a node-foot annotation. Cheap; opt-in;
-   no enforcement of refresh cadence. Risk: contributors forget to
-   stamp.
+   it in the Overview row or as a node-foot annotation. Cheap;
+   opt-in; no enforcement of refresh cadence. Risk: contributors
+   forget to stamp.
 
-B. **Move "as of {date}" prose into a structured `currency_anchors`
-   list.** Each anchor: `clause` + `as_of_date` + `source.path`.
+B. Move "as of {date}" prose into a structured `currency_anchors`
+   list. Each anchor: `clause` + `as_of_date` + `source.path`.
    Renderer composes the prose at build time. Heavier; forces the
    review discipline at the schema layer; surfaces the audit trail
    structurally.
 
-C. **Convention-only.** Document in `meta/conventions.md` that
-   "as of {date}" prose must match the most recent commit date on the
-   node file, validated by a new check that reads `git log -1`. No
-   schema change.
+C. Convention-only. Document in `meta/conventions.md` that "as of
+   {date}" prose must match the most recent commit date on the node
+   file, validated by a new check that reads `git log -1`. No schema
+   change.
 
 **Relationship to BACKLOG B1.** Adjacent but distinct. B1 is about
 artifact-attested nuance (`note` fields, preserve-as-sic forms) not
@@ -611,29 +611,28 @@ codified as Rule 3 below.
 
 **Convention to codify:**
 
-1. **Chronological ordering is the corpus default** for Key
-   Passages across all node types that support `statement_date`.
-   Same rule as the explicit hearing Key Testimony rule — extend
-   the scope clause in `schema.yaml` to cover all Key-Passages
-   sections, and cross-reference the behavior in
-   `conventions.md`.
-2. **`statement_date` should be universally populated** on quotes
+1. Chronological ordering is the corpus default for Key Passages
+   across all node types that support `statement_date`. Same rule
+   as the explicit hearing Key Testimony rule — extend the scope
+   clause in `schema.yaml` to cover all Key-Passages sections, and
+   cross-reference the behavior in `conventions.md`.
+2. `statement_date` should be universally populated on quotes
    whenever the source attests a date. Partial population produces
    mixed-order rendering that confuses readers; a fully-populated
    artifact produces clean chronology. Consider promoting
-   `statement_date` from optional to required where the source
-   has a date (validate-research.py can warn when a quote has no
+   `statement_date` from optional to required where the source has
+   a date (validate-research.py can warn when a quote has no
    statement_date but the source has an attested date).
-3. **In-header epistemic flagging is the hedge for weak
-   attestations** that would otherwise claim position 1 purely on
-   chronology. The convention: when a quote's evidentiary weight
-   is meaningfully below the median for its artifact (claim-of-
-   record, self-attested, secondary-source, contested), the
-   `significance` header carries an explicit hedge phrase —
-   "claim made by X; not independently verified" /
-   "claim-of-record" / "self-attested, contested" — so readers
-   see the epistemic framing before they read the quote text.
-   No schema change; discipline at the contributor layer.
+3. In-header epistemic flagging is the hedge for weak attestations
+   that would otherwise claim position 1 purely on chronology. The
+   convention: when a quote's evidentiary weight is meaningfully
+   below the median for its artifact (claim-of-record, self-
+   attested, secondary-source, contested), the `significance`
+   header carries an explicit hedge phrase — "claim made by X; not
+   independently verified" / "claim-of-record" / "self-attested,
+   contested" — so readers see the epistemic framing before they
+   read the quote text. No schema change; discipline at the
+   contributor layer.
 
 **Scope note.** Rule 1 is a documentation change (schema.yaml
 comment clarification + a `conventions.md` section on Key Passages
@@ -700,7 +699,7 @@ but they become increasingly imprecise as sources get re-extracted
 (e.g., Phase F Tier 1's clean-text sibling renumbers the hearing
 transcript).
 
-**Scope (current corpus).** **356 quotes across 16 artifacts** cite
+**Scope (current corpus).** 356 quotes across 16 artifacts cite
 line-range Locations of this shape. Affected artifacts include the
 three House Oversight 2023-07-26 hearing artifacts (fravor / graves /
 grusch), the SASC AARO hearing transcript, written-testimony
@@ -758,8 +757,8 @@ Corrections deferred per explicit Phase F Tier 1 scope decision
 gate the prose-drift check: `PROSE_FIELDS_BY_TYPE` (top-level
 free-prose fields per type) and `PROSE_ENTRY_FIELDS_BY_TYPE` (per-
 entry synthesis-content note fields per type). Both maps cover
-**person, event, transcript, media, organization, location** — six
-of the seven content types. **`document` is absent from both maps.**
+person, event, transcript, media, organization, and location — six
+of the seven content types. `document` is absent from both maps.
 When `check_prose_drift` runs, the first guard returns immediately
 for any artifact whose `target_node` type isn't in either map.
 Result: every document artifact's prose-drift check is a no-op,
@@ -778,8 +777,8 @@ other content type has a `description` entry with rationale-bearing
 comments in `PROSE_FIELDS_BY_TYPE`; document just isn't there.
 
 **Current production impact.** Across the 6 built document
-artifacts, **209 unmatched description tokens are silently passing
-through with 0 warnings**:
+artifacts, 209 unmatched description tokens are silently passing
+through with 0 warnings:
 
 | Artifact | Unmatched / total |
 |---|---|
@@ -816,24 +815,20 @@ behave differently under any scoping rule.
    check catches on other types. This bucket is real bucket-2 drift
    that's currently unchecked.
 
-**Are other types similarly impacted?**
-
-- **`finding` type** — also absent from both maps, but no built
-  artifacts yet (F.7 design pass pending). No production impact;
-  will need to be added when F.7 ships.
-- **`meta` type** — also absent. Likely intentional (governing
-  docs are not user-content; conventions don't apply).
-- **No other content types are missing from the maps.**
-- **Per-entry coverage for document** — `quote_entry.significance`
-  and `quote_entry.context` are not in conventions.md scope (they're
-  per-quote metadata, not per-entry synthesis content), so the
-  per-entry-map gap doesn't have a separate functional effect for
-  documents. The top-level-map gap is the meaningful one.
+**Other types.** `finding` is also absent from both maps but has no
+built artifacts yet (F.7 design pass pending) — no production
+impact; add when F.7 ships. `meta` is also absent, likely
+intentional (governing docs aren't user-content; conventions don't
+apply). No other content types are missing from the maps. For
+document, the per-entry coverage gap has no separate functional
+effect — `quote_entry.significance` and `quote_entry.context` are
+per-quote metadata, not per-entry synthesis content; the
+top-level-map gap is the meaningful one.
 
 **Design choices for the fix.** Three paths, none mechanical:
 
-A. **Add `document` to `PROSE_FIELDS_BY_TYPE` with the same scoping
-   pool** (union of `primary_sources[].path` tokens). Cheap; matches
+A. Add `document` to `PROSE_FIELDS_BY_TYPE` with the same scoping
+   pool (union of `primary_sources[].path` tokens). Cheap; matches
    the convention literally; produces high false-positive rates on
    testimony descriptions per bucket-1 above. Would force testimony
    descriptions to use almost-only source-body vocabulary, damaging
@@ -841,18 +836,18 @@ A. **Add `document` to `PROSE_FIELDS_BY_TYPE` with the same scoping
    document-physical attributes). Contributors face an unfixable
    warning surface on testimony nodes; the eo-14347 case at 0%
    suggests other doc forms tolerate Path A cleanly.
-B. **Add `document` with an expanded source pool.** The pool would
-   include the document's own primary sources PLUS the source pools
-   of structurally-adjacent nodes (companion transcript on testimony
-   docs, hosting event, hosting organization). More machinery; more
-   graceful for legitimate contextual content; introduces cross-
-   artifact pool-resolution logic the validator doesn't have today.
-C. **Document the exclusion explicitly.** Add a rationale comment
-   in `PROSE_FIELDS_BY_TYPE` ("document descriptions are *about*
-   the document, not from its body, so the token-match check
-   produces noise"). Aligns implementation with what's already
-   happening; surrenders bucket-2 drift checking on document
-   descriptions. Cheapest; loses the most.
+B. Add `document` with an expanded source pool — the document's
+   own primary sources plus the source pools of structurally-
+   adjacent nodes (companion transcript on testimony docs, hosting
+   event, hosting organization). More machinery; more graceful for
+   legitimate contextual content; introduces cross-artifact pool-
+   resolution logic the validator doesn't have today.
+C. Document the exclusion explicitly. Add a rationale comment in
+   `PROSE_FIELDS_BY_TYPE` ("document descriptions are *about* the
+   document, not from its body, so the token-match check produces
+   noise"). Aligns implementation with what's already happening;
+   surrenders bucket-2 drift checking on document descriptions.
+   Cheapest; loses the most.
 
 The eo-14347 case (0 / 140 unmatched) is evidence that doc-form
 heterogeneity matters — testimony descriptions and EO descriptions
@@ -1003,16 +998,16 @@ Bogaard / Fairchild patent-assignee Reveal Systems Inc. were not
 retrievable through open-access channels. What was established during
 the archival pass:
 
-- **California is the state of incorporation** per the May 2020 USPTO
+- California is the state of incorporation per the May 2020 USPTO
   assignment record on US20200357080A1: the assignment-of-assignor's-
   interest record on the original non-provisional names "REVEAL
   SYSTEMS, INC., CALIFORNIA" as the assignee.
-- **California Secretary of State business search portal** is
+- The California Secretary of State business search portal is
   Imperva-blocked at the API layer (HTTP 403 to all automated POSTs);
   the bizfileonline.sos.ca.gov frontend returns an Incapsula JS
   challenge page with `noindex,nofollow` headers. Wayback Machine
   has no usable captures of registry-search result pages.
-- **OpenCorporates** is HAProxy CAPTCHA-blocked (hCaptcha challenge on
+- OpenCorporates is HAProxy CAPTCHA-blocked (hCaptcha challenge on
   every request) and has no Wayback presence for Reveal-Systems-named
   entities.
 
@@ -1063,8 +1058,8 @@ for this purpose") are visible verbatim in the released screenshots
 and are now registered as Statements quotes q36 and q37 on
 `/people/sean-kirkpatrick`.
 
-**Mellon's full reply on the same exchange is partially redacted in
-the released screenshot** — the visible portion documents Mellon
+Mellon's full reply on the same exchange is partially redacted in
+the released screenshot — the visible portion documents Mellon
 responding that he never claimed Grusch's claims were "accurate" but
 felt Grusch was "sincere and credible," that he expressly called the
 allegations "warrant[ing] investigation," and that he would "seek to
