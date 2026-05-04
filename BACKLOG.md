@@ -16,6 +16,11 @@ than shifting remaining IDs, so git-log and commit-message references
 stay valid. Same policy `meta/conventions.md` applies to validator check
 names.
 
+Items waiting on an external event (FOIA resolution, registry access,
+etc.) the repo can't drive live in a separate section at the bottom
+("Externally blocked"). They aren't numbered — there's no in-repo work
+to schedule until the external trigger fires.
+
 ---
 
 ## Open items
@@ -645,123 +650,6 @@ existing document artifacts.
 
 ---
 
-### 27. Reveal Systems Inc. corporate-registration deep dive — blocked on subscription registry access
-
-Per the Kirkpatrick audit § 7 ("Items still open"), specific
-state-of-incorporation entity number, filing date, current operating
-status, and principals-beyond-inventor list for the Kirkpatrick /
-Bogaard / Fairchild patent-assignee Reveal Systems Inc. were not
-retrievable through open-access channels. What was established during
-the archival pass:
-
-- **California is the state of incorporation** per the May 2020 USPTO
-  assignment record on US20200357080A1: the assignment-of-assignor's-
-  interest record on the original non-provisional names "REVEAL
-  SYSTEMS, INC., CALIFORNIA" as the assignee.
-- **California Secretary of State business search portal** is
-  Imperva-blocked at the API layer (HTTP 403 to all automated POSTs);
-  the bizfileonline.sos.ca.gov frontend returns an Incapsula JS
-  challenge page with `noindex,nofollow` headers. Wayback Machine
-  has no usable captures of registry-search result pages.
-- **OpenCorporates** is HAProxy CAPTCHA-blocked (hCaptcha challenge on
-  every request) and has no Wayback presence for Reveal-Systems-named
-  entities.
-
-**Name-collision warning** (load-bearing for any future Reveal Systems
-Inc. node build under audit § 6): a different "Reveal Systems Inc."
-exists with a Bloomberg company profile (ticker `0408205D:US`) — that
-entity produces real estate software (custom legal forms, contracts).
-It is **not** the patent-assignee Reveal Systems Inc. Future research
-must distinguish via patent-assignee chain (CA assignment record →
-USPTO file wrapper) rather than by name search alone.
-
-**Path to closure** when subscription / interactive access becomes
-available:
-1. CA SoS bizfileonline.sos.ca.gov direct interactive query (browser-
-   solved Imperva challenge) — yields entity number + filing date +
-   current status + agent for service of process.
-2. PACER / federal court records — would surface any litigation,
-   bankruptcy, dissolution.
-3. CrunchBase / PitchBook subscription — yields any institutional-
-   investor activity (audit § 3.1 noted "no documented public-facing
-   product launch, marketing presence, or commercial activity"; this
-   would confirm or correct that observation).
-
-**Priority.** Low. Not a correctness issue; depth-of-record question
-for the eventual `/organizations/reveal-systems-inc` node build (audit
-§ 6 recommendation). Patent-record evidence is sufficient for the
-existing Kirkpatrick-node Credibility Notes framing.
-
-**Scope.** ~30 minutes if registry access becomes available;
-otherwise indefinite-blocked.
-
-Surfaced: Kirkpatrick audit-iteration follow-up — open-access
-registry hunt established CA state of incorporation per patent
-record but blocked at SoS / OpenCorporates layer; name-collision
-discovery worth recording so future Reveal Systems node-build
-sessions don't conflate.
-
----
-
-### 28. Mellon Signal exchange — redacted reply text awaiting Black Vault FOIA appeal
-
-The April 18 2024 BlackVault release of FOIA case 24-F-0266 includes
-the June 11–13 2023 Signal text-message exchange between Sean
-Kirkpatrick and Christopher Mellon. Kirkpatrick's responses
-("absurd and false"; "defending and adjudicating, and you're
-undermining the very organization you purported to help establish
-for this purpose") are visible verbatim in the released screenshots
-and are now registered as Statements quotes q36 and q37 on
-`/people/sean-kirkpatrick`.
-
-**Mellon's full reply on the same exchange is partially redacted in
-the released screenshot** — the visible portion documents Mellon
-responding that he never claimed Grusch's claims were "accurate" but
-felt Grusch was "sincere and credible," that he expressly called the
-allegations "warrant[ing] investigation," and that he would "seek to
-avoid further communication unless it is something that seems
-extraordinary or if [Kirkpatrick] initiate[s]." The remaining text
-is cut off in the released screenshot and Black Vault has filed a
-FOIA appeal under case 24-F-0266 for the redacted portion.
-
-**Status.** Pending external FOIA-appeal resolution. Out of repository
-control; cannot be advanced through technical or research action.
-
-**Path to closure** (passive, requires external event):
-- Black Vault FOIA appeal resolves and the redacted text is released.
-  At that point, Mellon's full reply becomes registerable on the
-  Mellon person node (when built — that node is unbuilt per audit § 6
-  Sol Foundation / disclosure-ecosystem build queue).
-- Until resolution, the documentary record on Kirkpatrick's side is
-  complete; the Mellon-side completion is downstream.
-
-**Check-back cadence.** ~6 months. Black Vault FOIA appeals typically
-resolve in 3–18 months; a 6-month check is the natural cadence to
-re-verify whether the redacted portion has surfaced. The check
-itself is cheap: re-fetch the FOIA 24-F-0266 release from Black
-Vault and re-extract; if the redacted portion is now visible, the
-follow-up work is to register Mellon's full reply as a quote on the
-Mellon node (when built) and update Credibility Notes Group B on
-the Kirkpatrick node accordingly.
-
-**Priority.** Low. Not a correctness issue for Kirkpatrick's node;
-adds nuance to the documentary record on the Mellon side. Sit-and-
-wait until either (a) the FOIA appeal resolves, or (b) the Mellon
-node is built (audit § 6 disclosure-ecosystem cluster) and the
-incomplete-reply note becomes load-bearing for the Mellon Statements
-section.
-
-**Scope.** Effectively zero ongoing work; one short check-and-update
-session when the redacted portion surfaces.
-
-Surfaced: Kirkpatrick audit-iteration follow-up — audit § 7 "Mellon
-Signal reply text (full)" Open item documented with concrete
-check-back cadence and closure path. Logged for visibility so a
-future session reviewing the Mellon node or the Kirkpatrick
-credibility notes knows the appeal is pending.
-
----
-
 ### 29. `updated` frontmatter field — corpus-wide currency anchoring
 
 **The gap.** Schema-required frontmatter is `[id, type, schema_version,
@@ -1072,3 +960,129 @@ caption verbatim forms in Credibility Notes prose read as
 contributor misspellings without explicit signal). The same
 node-build-audit cycle surfaced both shapes; reader-visibility for
 artifact metadata is the umbrella.
+
+---
+
+## Externally blocked
+
+Items waiting on an external event the repo can't drive — FOIA
+resolutions, subscription registry access, third-party publication.
+Each has a clear closure path and (where applicable) a check-back
+cadence. They aren't numbered because there's no in-repo work to
+schedule; they sit here for visibility so a future session reviewing
+the relevant node or context knows the trigger is pending.
+
+### Reveal Systems Inc. — California SoS / OpenCorporates registry hunt
+
+Per the Kirkpatrick audit § 7 ("Items still open"), specific
+state-of-incorporation entity number, filing date, current operating
+status, and principals-beyond-inventor list for the Kirkpatrick /
+Bogaard / Fairchild patent-assignee Reveal Systems Inc. were not
+retrievable through open-access channels. What was established during
+the archival pass:
+
+- **California is the state of incorporation** per the May 2020 USPTO
+  assignment record on US20200357080A1: the assignment-of-assignor's-
+  interest record on the original non-provisional names "REVEAL
+  SYSTEMS, INC., CALIFORNIA" as the assignee.
+- **California Secretary of State business search portal** is
+  Imperva-blocked at the API layer (HTTP 403 to all automated POSTs);
+  the bizfileonline.sos.ca.gov frontend returns an Incapsula JS
+  challenge page with `noindex,nofollow` headers. Wayback Machine
+  has no usable captures of registry-search result pages.
+- **OpenCorporates** is HAProxy CAPTCHA-blocked (hCaptcha challenge on
+  every request) and has no Wayback presence for Reveal-Systems-named
+  entities.
+
+**Name-collision warning** (load-bearing for any future Reveal Systems
+Inc. node build under audit § 6): a different "Reveal Systems Inc."
+exists with a Bloomberg company profile (ticker `0408205D:US`) — that
+entity produces real estate software (custom legal forms, contracts).
+It is **not** the patent-assignee Reveal Systems Inc. Future research
+must distinguish via patent-assignee chain (CA assignment record →
+USPTO file wrapper) rather than by name search alone.
+
+**Path to closure** when subscription / interactive access becomes
+available:
+1. CA SoS bizfileonline.sos.ca.gov direct interactive query (browser-
+   solved Imperva challenge) — yields entity number + filing date +
+   current status + agent for service of process.
+2. PACER / federal court records — would surface any litigation,
+   bankruptcy, dissolution.
+3. CrunchBase / PitchBook subscription — yields any institutional-
+   investor activity (audit § 3.1 noted "no documented public-facing
+   product launch, marketing presence, or commercial activity"; this
+   would confirm or correct that observation).
+
+**Priority.** Low. Not a correctness issue; depth-of-record question
+for the eventual `/organizations/reveal-systems-inc` node build (audit
+§ 6 recommendation). Patent-record evidence is sufficient for the
+existing Kirkpatrick-node Credibility Notes framing.
+
+**Scope.** ~30 minutes if registry access becomes available;
+otherwise indefinite-blocked.
+
+Surfaced: Kirkpatrick audit-iteration follow-up — open-access
+registry hunt established CA state of incorporation per patent
+record but blocked at SoS / OpenCorporates layer; name-collision
+discovery worth recording so future Reveal Systems node-build
+sessions don't conflate.
+
+---
+
+### Mellon–Kirkpatrick Signal exchange — Black Vault FOIA appeal pending
+
+The April 18 2024 BlackVault release of FOIA case 24-F-0266 includes
+the June 11–13 2023 Signal text-message exchange between Sean
+Kirkpatrick and Christopher Mellon. Kirkpatrick's responses
+("absurd and false"; "defending and adjudicating, and you're
+undermining the very organization you purported to help establish
+for this purpose") are visible verbatim in the released screenshots
+and are now registered as Statements quotes q36 and q37 on
+`/people/sean-kirkpatrick`.
+
+**Mellon's full reply on the same exchange is partially redacted in
+the released screenshot** — the visible portion documents Mellon
+responding that he never claimed Grusch's claims were "accurate" but
+felt Grusch was "sincere and credible," that he expressly called the
+allegations "warrant[ing] investigation," and that he would "seek to
+avoid further communication unless it is something that seems
+extraordinary or if [Kirkpatrick] initiate[s]." The remaining text
+is cut off in the released screenshot and Black Vault has filed a
+FOIA appeal under case 24-F-0266 for the redacted portion.
+
+**Status.** Pending external FOIA-appeal resolution. Out of repository
+control; cannot be advanced through technical or research action.
+
+**Path to closure** (passive, requires external event):
+- Black Vault FOIA appeal resolves and the redacted text is released.
+  At that point, Mellon's full reply becomes registerable on the
+  Mellon person node (when built — that node is unbuilt per audit § 6
+  Sol Foundation / disclosure-ecosystem build queue).
+- Until resolution, the documentary record on Kirkpatrick's side is
+  complete; the Mellon-side completion is downstream.
+
+**Check-back cadence.** ~6 months. Black Vault FOIA appeals typically
+resolve in 3–18 months; a 6-month check is the natural cadence to
+re-verify whether the redacted portion has surfaced. The check
+itself is cheap: re-fetch the FOIA 24-F-0266 release from Black
+Vault and re-extract; if the redacted portion is now visible, the
+follow-up work is to register Mellon's full reply as a quote on the
+Mellon node (when built) and update Credibility Notes Group B on
+the Kirkpatrick node accordingly.
+
+**Priority.** Low. Not a correctness issue for Kirkpatrick's node;
+adds nuance to the documentary record on the Mellon side. Sit-and-
+wait until either (a) the FOIA appeal resolves, or (b) the Mellon
+node is built (audit § 6 disclosure-ecosystem cluster) and the
+incomplete-reply note becomes load-bearing for the Mellon Statements
+section.
+
+**Scope.** Effectively zero ongoing work; one short check-and-update
+session when the redacted portion surfaces.
+
+Surfaced: Kirkpatrick audit-iteration follow-up — audit § 7 "Mellon
+Signal reply text (full)" Open item documented with concrete
+check-back cadence and closure path. Logged for visibility so a
+future session reviewing the Mellon node or the Kirkpatrick
+credibility notes knows the appeal is pending.
