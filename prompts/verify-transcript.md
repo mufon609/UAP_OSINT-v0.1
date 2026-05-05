@@ -34,7 +34,7 @@ Steps:
    - **Verbatim match** — quote is exact. No action needed.
    - **Punctuation / hyphenation drift** — substantive text matches
      but punctuation or hyphenation differs. Update the quote in the
-     research artifact (`research/{slug}.yaml`) to match the source's
+     research artifact (`meta/research/{slug}.yaml`) to match the source's
      form; regenerate the node.
    - **Paraphrase or composite** — quote is not verbatim. Two options:
      replace with the closest verbatim passage from the source (edit

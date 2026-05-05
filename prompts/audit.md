@@ -53,7 +53,7 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    and fix any errors.
 6. **Coverage / Boundary / Stub-linking / Description-drift** — for
    renderer-supported types, run `python3 scripts/review-coverage.py
-   research/{slug}.yaml`. Any Boundary failure means the node was
+   meta/research/{slug}.yaml`. Any Boundary failure means the node was
    hand-edited after regeneration (or the artifact drifted). Fix in
    the **artifact**; regenerate via `build-from-research.py`; never
    hand-patch the node to silence the check.
@@ -79,7 +79,7 @@ not direct edits to the node body. Pattern:
    clarifications edit in place; content that was substantively
    different gets a new entry + pointer.
 3. Regenerate the node (renderer-supported types):
-   `python3 scripts/build-from-research.py research/{slug}.yaml`
+   `python3 scripts/build-from-research.py meta/research/{slug}.yaml`
 4. Re-run `review-coverage.py` — must pass all four checks
 5. Run the full pre-commit chain — all five gates green
 6. Commit with a descriptive message; git log is the edit history.

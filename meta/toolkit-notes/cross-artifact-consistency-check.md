@@ -41,9 +41,9 @@ refs in 8 hearing-transcript and related artifacts to canonical `p. N` form
 via PDF form-feed counting. The systematic re-review included a cross-
 artifact consistency check:
 
-- `/research/2023-07-26-house-grusch.yaml` (transcript artifact, 44 quotes
+- `/meta/research/2023-07-26-house-grusch.yaml` (transcript artifact, 44 quotes
   freshly converted in cluster 4)
-- `/research/david-grusch.yaml` (person artifact, 78 pre-existing canonical
+- `/meta/research/david-grusch.yaml` (person artifact, 78 pre-existing canonical
   refs to the same House Oversight PDF, using the form `<context>, p. N`)
 
 Pairing quotes by `normalize_for_compare(text)` first ~80 chars surfaced 17

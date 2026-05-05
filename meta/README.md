@@ -7,10 +7,10 @@ created: 2026-05-05
 
 # /meta/
 
-Governance, specs, templates, and toolkit-internal records. Everything
-that isn't investigator-facing content (`/people/`, `/organizations/`,
-..., `/research/`), source archive (`/sources/`), or scripts
-(`/scripts/`).
+Governance, specs, templates, structured-fact backing, and toolkit-
+internal records. Everything that isn't investigator-facing content
+(`/people/`, `/organizations/`, ...), source archive (`/sources/`),
+or scripts (`/scripts/`).
 
 ## Layout
 
@@ -22,6 +22,7 @@ that isn't investigator-facing content (`/people/`, `/organizations/`,
 | `schema.yaml` | Machine-readable spec — node types, archetypes, kinds, required sections, vocabularies |
 | `sources-access.md` | Site-specific archival workarounds (SEC, defense.gov, Twitter/X, etc.) |
 | `templates/` | Scaffolding templates per node type — consumed by `scripts/new.py` |
+| `research/` | YAML research artifacts backing each content node — Phase I working surface; consumed by `scripts/build-from-research.py`; fork-deletes |
 | `toolkit-notes/` | Retrospectives, postmortems, technique docs, design records |
 | `topic/` | Topic-specific governance — priority research queue, topic overview, corpus addenda, in-progress working notes; fork-deletes when toolkit is forked to a different investigation |
 
@@ -35,8 +36,10 @@ vs subdirs"). Briefly:
   (rules + active agenda).
 - **`toolkit-notes/`** holds backward-looking lessons (why a rule
   exists; what was tried before).
-- **`topic/`** is the only subdir that fork-deletes. Everything else
-  is topic-neutral toolkit and survives a fork.
+- **`topic/`** and **`research/`** are the subdirs that fork-delete
+  (`topic/` carries topic-specific governance; `research/` carries
+  topic-specific structured facts). Everything else is topic-neutral
+  toolkit and survives a fork.
 
 New governance items should land at the right tier on first author.
 When in doubt, consult `conventions.md` for the principle and

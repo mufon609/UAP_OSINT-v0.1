@@ -15,7 +15,7 @@ layers:
    `/organizations/`, `/documents/`, `/events/`, `/transcripts/`,
    `/media/`, `/locations/`, `/findings/`
 2. **Research-artifact layer** (machine-readable structured facts) —
-   `/research/*.yaml`, one per node; the atomic-claim record backing
+   `/meta/research/*.yaml`, one per node; the atomic-claim record backing
    each narrative node
 
 The toolkit itself is topic-neutral. The current instance investigates
@@ -42,7 +42,7 @@ If you're doing anything related to this instance's topic, read
 
 | Your task | Read these, in order |
 |---|---|
-| Answer a factual question from the repo | `meta/topic/overview.md` → relevant `research/*.yaml` → follow `target_node` link for narrative context if needed |
+| Answer a factual question from the repo | `meta/topic/overview.md` → relevant `meta/research/*.yaml` → follow `target_node` link for narrative context if needed |
 | Investigate a thread not yet in the repo | `meta/topic/research-queue.md` → `meta/conventions.md` → `CLAUDE.md` → `prompts/build.md` |
 | Build a new node | `CLAUDE.md` → `prompts/build.md` (one *new* node per session) |
 | Audit an existing node | `CLAUDE.md` → `prompts/audit.md` |
@@ -72,7 +72,7 @@ If you're doing anything related to this instance's topic, read
 
 1. **Identify entities** in the question (people, events, documents, organizations by name).
 2. **Confirm scope**: read `meta/topic/overview.md` — is the question within this instance's coverage?
-3. **For each entity**, search `research/*.yaml` for the entity name. Research artifacts are the structured fact layer; prefer them over prose nodes.
+3. **For each entity**, search `meta/research/*.yaml` for the entity name. Research artifacts are the structured fact layer; prefer them over prose nodes.
 4. **Assemble answer** from research-artifact `quotes[]` (the universal evidentiary primitive). For each quote you cite, include:
    - the quote ID
    - the `target_node` (so the user can read narrative context)
@@ -105,7 +105,7 @@ If you're doing anything related to this instance's topic, read
 | `meta/schema.yaml` | Machine-readable spec | YAML |
 | `meta/templates/*.md` | Node scaffolding templates | Markdown with placeholder tokens |
 | `{type}/*.md` (people, organizations, ...) | Content nodes | Markdown with YAML frontmatter |
-| `research/*.yaml` | Research artifacts | YAML |
+| `meta/research/*.yaml` | Research artifacts | YAML |
 | `sources/manifest.yaml` | Source archival index | YAML |
 | `sources/{category}/*` | Archived primary sources | PDF / HTML / TXT / other |
 | `scripts/*.py` | Toolkit scripts | Python |

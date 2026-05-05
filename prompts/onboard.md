@@ -56,7 +56,7 @@ For renderer-supported types (document, person, event, transcript),
 also spot-check:
 
 ```
-python3 scripts/review-coverage.py research/{slug}.yaml
+python3 scripts/review-coverage.py meta/research/{slug}.yaml
 ```
 
 on each existing research artifact — all should pass 0/0.

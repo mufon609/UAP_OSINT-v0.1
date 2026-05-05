@@ -75,13 +75,13 @@ python3 scripts/research-scaffold.py --target {type}/{slug} \
     --sources {comma-separated-source-paths-relative-to-sources/}
 ```
 
-This creates `research/{slug}.yaml` with empty content sections.
+This creates `meta/research/{slug}.yaml` with empty content sections.
 A `rumors:` section is included only if the target node type is
 `person`, `organization`, `event`, or `location`.
 
 Validate the scaffold passed its structural checks:
 ```
-python3 scripts/validate-research.py research/{slug}.yaml
+python3 scripts/validate-research.py meta/research/{slug}.yaml
 ```
 
 Should exit 0 (passes, zero content but structurally valid).
@@ -89,7 +89,7 @@ Should exit 0 (passes, zero content but structurally valid).
 ### Step 2. Extract every primary source to plaintext
 
 ```
-python3 scripts/extract-source.py --artifact research/{slug}.yaml
+python3 scripts/extract-source.py --artifact meta/research/{slug}.yaml
 ```
 
 This writes `/tmp/scratch-{slug}-0.txt`, `/tmp/scratch-{slug}-1.txt`,
@@ -360,7 +360,7 @@ carry a rumors section.
 ### Step 10. Validate the research artifact
 
 ```
-python3 scripts/validate-research.py research/{slug}.yaml
+python3 scripts/validate-research.py meta/research/{slug}.yaml
 ```
 
 Must exit 0 before leaving Phase I. Any errors must be corrected by
@@ -486,7 +486,7 @@ research artifact. Renderer extension tracked in
 ### Step 1. Regenerate the node from its research artifact
 
 ```
-python3 scripts/build-from-research.py research/{slug}.yaml
+python3 scripts/build-from-research.py meta/research/{slug}.yaml
 ```
 
 This:
@@ -685,7 +685,7 @@ research artifact. Runs last — assumes Phase I and Phase II have passed.
 ### Step 1. Run the coverage checker
 
 ```
-python3 scripts/review-coverage.py research/{slug}.yaml
+python3 scripts/review-coverage.py meta/research/{slug}.yaml
 ```
 
 The script runs four mechanical checks:
@@ -734,10 +734,10 @@ node surfaces no semantic issues. Ready to commit.
 
 ### Renderer-supported types (document, person, event, transcript, media, organization, location)
 
-1. `python3 scripts/validate-research.py research/{slug}.yaml` — must pass
-2. `python3 scripts/build-from-research.py research/{slug}.yaml` — must
+1. `python3 scripts/validate-research.py meta/research/{slug}.yaml` — must pass
+2. `python3 scripts/build-from-research.py meta/research/{slug}.yaml` — must
    complete cleanly (includes post-build `validate.py`)
-3. `python3 scripts/review-coverage.py research/{slug}.yaml` — must pass
+3. `python3 scripts/review-coverage.py meta/research/{slug}.yaml` — must pass
    (Coverage / Boundary / Stub-linking / Description-drift — all four checks)
 4. Read the regenerated node top-to-bottom; fix any issues in the
    **artifact** (not the node) and re-run steps 2–3

@@ -82,7 +82,8 @@ integration_targets:
   under `meta/` except those in this `working-notes/` directory is
   validated by the governance-files walk and must satisfy the meta-
   required-fields check. `scripts/validate-research.py` operates on
-  `research/*.yaml` only and never touches `meta/`.
+  `meta/research/*.yaml` artifacts only — a structurally separate
+  scope from the governance-doc / content-node walk in `validate.py`.
 - **Don't archive in `sources/manifest.yaml`.** These are not
   primary sources; they're contributor synthesis.
 - **Do cite primary sources** within the working-notes prose when

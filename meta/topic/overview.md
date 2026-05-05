@@ -99,7 +99,7 @@ The principal primary-source collections this instance draws from:
 Common query patterns for this instance:
 
 - **"What did [person] say about [topic]?"** — search
-  `research/*.yaml` for the person's entries; filter by topic keyword;
+  `meta/research/*.yaml` for the person's entries; filter by topic keyword;
   return claims with source citations.
 - **"Is [claim] supported by primary sources?"** — locate the claim in
   research artifacts; report the source, audit status, and any
