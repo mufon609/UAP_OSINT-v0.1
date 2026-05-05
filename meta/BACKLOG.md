@@ -1079,6 +1079,71 @@ review-coverage as gate 7 — surveyed `scripts/validate.py`,
 architectural (don't merge) but per-check decomposition is the
 genuine ad-hoc shape worth refactoring.
 
+**Session 1 progress (2026-05-05).** Design pass shipped to
+`meta/toolkit-notes/c11-validator-decomposition-design.md` (commit
+`6a6726d`) — locks in seven decisions: Issue dataclass shape, one-arg
+`check(ctx)` signature, two-layer Context (Base / Node / Research),
+flat `scripts/checks/{name}.py` modules, explicit step lists with
+pre-parse phasing, lift inline pieces (keep section_rules walker
+together), CLI surface unchanged. Two pilot checks migrated against
+the contract (commit `472e547`):
+- `scripts/checks/yaml_hash_truncation.py` — pre-parse research-artifact
+  pilot consuming `ResearchContext.raw_lines`.
+- `scripts/checks/manifest_checksums.py` — global pilot consuming
+  `BaseContext.manifest_entries` (closes manifest-load-3x for the
+  migrated check; legacy two still reload).
+
+`scripts/checks/__init__.py` carries the Issue + BaseContext +
+NodeContext + ResearchContext contract types. Pre-commit passes 0/0
+across all 7 gates.
+
+**Remaining for sessions 2 and 3.** Concrete migration list:
+
+*validate.py per-check migrations:*
+- `manifest_archive_status`, `manifest_extraction_type` (global,
+  BaseContext) — couples with C14 below
+- `governance_files` (global, walks `meta/`)
+- `chronological_tables` (per-node, NodeContext) — blocked on moving
+  `extract_h2_sections` + `extract_section` to `lib/_common.py`
+- `verbatim_quotes` (per-node, NodeContext) — load-bearing
+- `conditionally_required` (per-node, NodeContext)
+- Inline-in-`validate_node` to lift as named modules:
+  `frontmatter_required`, `schema_version_compat`, `id_path_match`,
+  `status_archetype_kind`, `doc_form_archival_status`,
+  `required_sections`, `section_rules`, `table_cell_word_budget`,
+  `link_resolution` (writes to `ctx.broken_links`, returns no Issues),
+  `finding_cross_ref`
+
+*validate-research.py per-check migrations:*
+- `yaml_colon_space` (pre-parse, ResearchContext.raw_lines)
+- 22 per-section entry checks: `primary_sources`, `quotes`, `entities`,
+  `naming_quirks`, `rumors`, `timeline`, `corroboration_items`,
+  `program_involvement`, `publication_record`, `vouching_chain`,
+  `affiliations`, `relationships`, `participants`,
+  `witnesses_testimony`, `speakers`, `media_versioning`,
+  `key_personnel`, `org_relationships`, `contracts`,
+  `ownership_timeline`, `uap_scope_activity`, `location_relationships`
+- `cross_refs` (whole-artifact)
+- `prose_drift` (whole-artifact)
+- Inline iff-section walkers in `validate_artifact` (much of this may
+  collapse via C15 schema-driven consolidation — sequence depends on
+  whether C15 ships before or alongside this batch)
+
+*review-coverage.py per-check migrations:*
+- `coverage`, `boundary`, `stub_linking`, `description_token_drift`
+  (all per-artifact, ResearchContext)
+- Replace local `Issue` class with `checks.Issue`
+
+*Orchestrator rewrite (final session of cluster):*
+- Replace inline orchestration in `validate_node` / `validate_artifact`
+  / `main()` with explicit step lists per design doc §5
+- Consolidate `schema_version` compat helper into `lib/_common.py`
+  (issue #8 dedup falls out)
+- Move `extract_h2_sections` + `extract_section` to `lib/_common.py`
+  (unblocks `chronological_tables` and 4 other consumers)
+- Delete legacy `Issue` classes in the three validators
+- Confirm CLI surface unchanged; pre-commit 0/0
+
 ---
 
 ### C13. Shared `Issue` / `Report` contract across validators
@@ -1117,6 +1182,28 @@ substantively identical reporting shapes implemented three different
 ways; consolidating reduces maintenance surface and unlocks
 machine-parseable output.
 
+**Session 1 progress (2026-05-05).** Issue dataclass-shape class
+shipped in `scripts/checks/__init__.py` (commit `472e547`) with
+`path`, `level`, `message`, `check_name` (filled by orchestrator at
+yield time; powers a future `--check NAME` filter), and `fatal`
+(orchestrator stops further checks on the file when set —
+frontmatter parse failure is the canonical use case). String-typed
+`level` (`"error" | "warn"`); no `line` field (checks embed line
+numbers in `message` when known — defer the structured field until a
+`--format json` consumer needs it). BaseContext / NodeContext /
+ResearchContext shipped alongside; the two pilot checks adopt the
+full contract.
+
+**Remaining.** As each check migrates per the C11 list above, it
+adopts `checks.Issue`. Once the full migration ships:
+- delete the legacy `Issue` classes in `validate.py`,
+  `validate-research.py`, `review-coverage.py`
+- audit the print formatters: today they read only
+  `.path` / `.level` / `.message`; the migration enables a future
+  `--format json` mode but doesn't ship one (parks until a consumer
+  surfaces). Keep the human-readable output byte-identical so
+  pre-commit logs stay stable across the migration window.
+
 ---
 
 ### C14. Lift manifest checks into their own module
@@ -1150,4 +1237,113 @@ by the node validators too, which is the lockstep guarantee.
 Surfaced: 2026-05-05 check-script audit — manifest checks were
 flagged as architecturally misplaced (third data layer in the node
 validator); the move couples to the broader decomposition.
+
+**Session 1 progress (2026-05-05).** First of three manifest checks
+migrated: `scripts/checks/manifest_checksums.py` (commit `472e547`).
+The check consumes `BaseContext.manifest_entries`; `validate.py main()`
+loads the manifest once at orchestrator entry and shares the parsed
+entries via Context, addressing the load-3x duplication for the
+migrated check. Manifest parse-failure handling moved from the
+per-check function to the orchestrator (one less defensive branch
+per check).
+
+**Remaining.** `manifest_archive_status` and `manifest_extraction_type`
+migrate to `scripts/checks/manifest_archive_status.py` and
+`scripts/checks/manifest_extraction_type.py`. Each adopts
+`BaseContext.manifest_entries` from the same shared load — fully
+closes the load-3x duplication. Mechanical work; ships in session 2
+alongside the rest of validate.py's globals (per C11 remaining list).
+
+---
+
+### C15. Consolidate iff-section presence rules into a schema-driven check
+
+`validate-research.py::validate_artifact` carries ~12 inline walkers
+that all enforce the same shape: "section X required when target
+type/archetype/kind is in set Y; absent otherwise."
+
+```
+target_type in RUMORS_TYPES → rumors required (else absent)
+target_type in TIMELINE_TYPES → timeline required (else absent)
+target_archetype == eyewitness → corroboration_items required
+target_archetype == institutional-actor → program_involvement required
+target_archetype == reporter → publication_record required
+target_archetype == whistleblower → vouching_chain required
+target_type == person → background, uap_relevance, affiliations,
+  relationships, credibility_notes required
+target_type == event → event_intrinsic, participants required
+target_type == event AND kind == hearing → witnesses_testimony required
+target_type == event AND kind == encounter → corroboration_items required
+target_type == transcript → speakers required
+target_type == media → media_versioning required
+target_type == organization → key_personnel, org_relationships required
+target_type == organization AND kind == gov-contractor → contracts required
+target_type == location → ownership_timeline, uap_scope_activity,
+  location_relationships required
+```
+
+`meta/schema.yaml::research-artifact.conditional_keys` already declares
+the same rules in YAML. The validator doesn't read from it — every
+inline walker hand-codes the rule. Drift between the schema declaration
+and the validator is one rename away.
+
+**Refactor.** Single check `iff_section` reads `conditional_keys` from
+`schema.yaml` and walks the conditions schema-driven. Mirrors the
+`conditionally_required` dispatcher in `validate.py` (which already
+solved the equivalent problem for content nodes). One condition
+grammar (`<field> in <set>`, `<field> == <literal>`,
+`<field> is set`, `<combinator> AND <combinator>`); evaluated against
+target frontmatter; section presence enforced.
+
+**Coupling.** Orthogonal to C11/C13/C14. The iff-walkers eat ~12
+inline blocks in `validate_artifact` regardless of whether they migrate
+to a check module first or get consolidated first. Cleanest sequence:
+ship C15 (consolidate the walkers) BEFORE the C11 batch migrates
+`validate_artifact`'s inline logic — fewer modules to lift, simpler
+final orchestrator.
+
+**Scope.** Schema condition grammar may need extension (current
+`validate.py::evaluate_condition` handles `==` and `is set`; this
+case needs `in <set>` and AND-combination). Then a single
+`scripts/checks/iff_section.py` replaces the ~12 walkers. Deletes ~150
+lines of `validate_artifact` body.
+
+**Priority.** Low. The current shape works; consolidation is professional-
+shape work. Worth doing in the C11 cluster window when a contributor
+session is touching `validate_artifact` anyway.
+
+Surfaced: 2026-05-05 C11/C13/C14 investigation — issue #9 in the audit.
+Logged as separate entry per design-doc out-of-scope discipline; the
+schema-driven pattern is its own refactor.
+
+---
+
+### C16. Memoize `build-from-research.py` dry-run output across cross-layer checks
+
+`scripts/review-coverage.py::check_boundary` spawns
+`subprocess.run(['python3', 'build-from-research.py', '--dry-run',
+'--no-validate'])` per artifact — interpreter-startup overhead per
+review. Acceptable today: only one cross-layer check needs the
+regenerated body.
+
+**Trigger to revisit.** When a second cross-layer check needs the
+regenerated body (most likely candidate: a future "round-trip
+fidelity" check that compares re-rendered output across the YAML
+artifact and the markdown body, or a quote-source-coverage check
+that needs to know which quotes the renderer emitted into which
+section). Adding a second consumer doubles the subprocess spawn cost
+unless the body is memoized once per artifact.
+
+**Refactor when triggered.** Add a cached property on
+`ResearchContext`: `regenerated_body` — first access spawns the
+subprocess; subsequent accesses return the cached string. Per-artifact
+scope (cleared on next ResearchContext); orchestrator passes the same
+context to both checks.
+
+**Priority.** Low. Speculative; do nothing until a second consumer
+exists.
+
+Surfaced: 2026-05-05 C11/C13/C14 investigation — issue #5 in the audit.
+Logged so the optimization-trigger doesn't get lost when the second
+consumer eventually surfaces.
 
