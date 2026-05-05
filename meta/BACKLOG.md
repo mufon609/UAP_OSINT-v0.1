@@ -988,6 +988,151 @@ as a sixth borderline candidate to weigh during the migration.
 
 ---
 
+### C10. Subdivide `meta/toolkit-notes/` when retrospective files accumulate
+
+`meta/toolkit-notes/` currently holds three long-form retrospective /
+design files: `corpus-audit-2026-04.md` (closeout for BACKLOG A2),
+`cross-artifact-consistency-check.md` (technique doc surfaced from
+BACKLOG C1), `pilot-failure-2026-04-17.md` (Step C postmortem). At
+n=3 a flat directory reads fine. As the toolkit accumulates more
+closeouts and design records, the directory will get noisier than
+scannable.
+
+**Trigger to revisit.** When `meta/toolkit-notes/` reaches ≥5
+long-form retrospective files, propose a subdivision convention.
+Likely shape: `closeouts/` for retired-audit closeouts (corpus-audit-
+2026-04 as the canonical example), root for forward-looking
+design / technique notes (cross-artifact-consistency-check as the
+canonical example). Sort-by-year and sort-by-topic are alternative
+shapes; decision lands when n≥5 makes the comparison concrete.
+
+**Why deferred.** Three files don't justify subdivision — *"don't
+design for hypothetical future requirements"* per CLAUDE.md. Trigger-
+on-accumulation lets the structure emerge from real data rather
+than imposing it speculatively.
+
+**Priority.** Low. Pure tidiness; no correctness implications.
+
+**Scope.** When triggered: 30-min design pass + N file moves +
+cross-reference updates (no current refs traverse to specific
+files within `toolkit-notes/`).
+
+Surfaced: 2026-05-05 governance-doc reorganization — original
+investigation flagged `corpus-audit-2026-04.md` as a candidate for
+"some reorganization" but determined three files don't justify
+forcing shape; codified the trigger condition here.
+
+---
+
+### C11. Add `meta/README.md` — directory orientation index
+
+`meta/` now holds 5 governance files at root (`BACKLOG.md`,
+`conventions.md`, `roadmap.md`, `schema.yaml`, `sources-access.md`)
+plus 3 subdirs (`templates/`, `toolkit-notes/`, `topic/`). No top-
+level guide explains what lives at root vs. nested or what each file
+governs.
+
+**Pattern is established.** Other directories that hold many files
+each carry a README — `prompts/README.md`, `research/README.md`,
+`meta/topic/working-notes/README.md`. `meta/` should join. A
+contributor opening `meta/` should see an index, not just a flat
+listing they have to interpret.
+
+**Pairs with C12.** The README is the friendly-face surface for the
+rule; C12 codifies the rule itself in `conventions.md`. Land both
+together.
+
+**Scope.** ~30-line README modeled on `research/README.md` and
+`prompts/README.md`: brief intro + table of (file/subdir → role).
+Frontmatter follows the meta-required-fields convention (`id: meta/README`,
+`type: meta`, `schema_version: 1`, `created: YYYY-MM-DD`).
+
+**Priority.** Medium. Doesn't block work but every new contributor
+session pays the cost of the orientation gap.
+
+Surfaced: 2026-05-05 governance-doc reorganization — moving BACKLOG
+and roadmap into `meta/` root broadened the tier and made the absence
+of a directory README visible.
+
+---
+
+### C12. Codify `meta/` directory organization rule in `conventions.md`
+
+The current `meta/` layout follows an implicit rule:
+
+- **Root**: stable governance specs and live work registers
+  (`conventions.md`, `schema.yaml`, `sources-access.md`, `BACKLOG.md`,
+  `roadmap.md`)
+- **`toolkit-notes/`**: retrospectives, postmortems, design notes,
+  technique docs
+- **`templates/`**: scaffolding templates per node type
+- **`topic/`**: topic-specific governance; fork-deletes when toolkit
+  is forked to a different investigation
+
+The rule isn't documented anywhere — contributors infer it from the
+existing layout. Future moves risk drifting the rule by accident.
+
+**Where to land.** `meta/conventions.md` "Repository layout" section
+already documents the content-flat-vs-tooling-organized split. Extend
+that section with the meta/ sub-rule above.
+
+**Pairs with C11.** Lands as part of the same governance-tightening
+pass.
+
+**Priority.** Medium. Next contributor (or future-self) shouldn't
+have to reverse-engineer the rule from the directory listing.
+
+**Scope.** ~15-line addition to `meta/conventions.md` "Repository
+layout" section + cross-reference from the new `meta/README.md`.
+
+Surfaced: 2026-05-05 governance-doc reorganization — investigation
+flagged that no rule documents the meta/-direct vs. subdir split,
+and that growing meta/-direct without codification risks layout
+drift.
+
+---
+
+### C13. Move topic-specific "Externally blocked" entries from `meta/BACKLOG.md` to `meta/topic/research-queue.md`
+
+`meta/BACKLOG.md` currently holds two "Externally blocked" entries
+that are topic-specific to the UAP investigation: the Reveal Systems
+Inc. CA SoS / OpenCorporates registry hunt (linked to Kirkpatrick
+audit § 7), and the Mellon Signal-exchange Black Vault FOIA appeal
+(linked to Kirkpatrick Statements q36/q37). Both sit in a toolkit-
+neutral file.
+
+**The fork-boundary issue.** Per `README.md`, forking the toolkit to
+a different topic deletes `meta/topic/` and content directories;
+`meta/BACKLOG.md` survives the fork. The two UAP-specific entries
+would carry over as dead context. Cleanest fix: relocate them to
+`meta/topic/research-queue.md` "Externally blocked" section where
+they fork-delete correctly.
+
+**Scope.**
+1. Add an "Externally blocked" section to
+   `meta/topic/research-queue.md` (the section does not currently
+   exist — both entries were filed in BACKLOG when both files
+   sat at the same fork-boundary).
+2. Move both entries verbatim from `meta/BACKLOG.md` "Externally
+   blocked" to the new section.
+3. If `meta/BACKLOG.md`'s "Externally blocked" section is empty after
+   the move, retire the heading. If genuinely toolkit-neutral
+   external-block items land later (rare), reinstate the heading.
+
+**Priority.** Low. Topic-fork hygiene; no correctness implications
+for either file's current readability.
+
+**Why deferred.** 2026-05-05 governance-doc session focused on
+structural moves. Content-classification pass is coherent on its
+own and benefits from a settled meta/ layout before relocating
+entries within it.
+
+Surfaced: 2026-05-05 governance-doc reorganization — characterizing
+BACKLOG's contents identified the two externally-blocked entries
+as topic-specific fork-boundary violations.
+
+---
+
 ## Externally blocked
 
 Items waiting on an external event the repo can't drive — FOIA
