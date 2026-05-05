@@ -2,10 +2,10 @@
 """Pre-flight vocabulary check for prose-drift discipline.
 
 Reports whether each provided token appears in the pooled
-significant-token set of an artifact's primary sources, mirroring the
-tokenization used by `validate-research.py`'s prose-drift check. Output
-reflects what the validator would see — there is no parallel
-implementation that can drift.
+significant-token set of an artifact's primary sources. Imports the
+canonical tokenizer + extraction layer from `scripts/lib/_common.py`
+— same code path validate-research.py's prose-drift check uses, so
+script output reflects what the validator would see byte-for-byte.
 
 Use case: drafting `description` / `background` / `uap_relevance` /
 `credibility_notes` prose (or per-entry synthesis content notes:
@@ -49,31 +49,12 @@ Exit codes:
 """
 
 import argparse
-import importlib.util
 import sys
 from pathlib import Path
 
 import yaml
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-SCRIPTS_DIR = REPO_ROOT / "scripts"
-
-
-def _load_validate_research():
-    """Import scripts/validate-research.py via importlib so this script
-    tracks the canonical tokenizer + extraction layer used by the
-    validator. No duplicate implementation that can drift. The hyphen
-    in the filename precludes a normal `import` statement.
-    """
-    spec = importlib.util.spec_from_file_location(
-        "validate_research",
-        SCRIPTS_DIR / "validate-research.py",
-    )
-    if spec is None or spec.loader is None:
-        sys.exit("Could not locate scripts/validate-research.py")
-    module = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(module)
-    return module
+from lib._common import extract_significant_tokens, load_source_tokens
 
 
 def main():
@@ -114,8 +95,6 @@ def main():
     if not primary_sources:
         sys.exit(f"Artifact has no primary_sources: {artifact_path}")
 
-    vr = _load_validate_research()
-
     pool = set()
     extracted_count = 0
     missing_sources = []
@@ -123,7 +102,7 @@ def main():
         path = src.get("path") if isinstance(src, dict) else None
         if not path:
             continue
-        tokens = vr.load_source_tokens(path)
+        tokens = load_source_tokens(path)
         if tokens is None:
             missing_sources.append(path)
             continue
@@ -154,7 +133,7 @@ def main():
     width = max(max(len(t) for t in args.tokens), 12)
 
     for raw in args.tokens:
-        sub_tokens = vr.extract_significant_tokens(raw)
+        sub_tokens = extract_significant_tokens(raw)
         if not sub_tokens:
             print(f"  {raw:<{width}}  (skipped — no significant tokens)")
             continue

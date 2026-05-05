@@ -221,10 +221,11 @@ def strip_markdown_links(text):
     return MARKDOWN_LINK_PATTERN.sub("", text)
 
 
-def extract_significant_tokens(text):
-    """Return set of tokens from a prose text worth checking against
-    the source. A "significant token" is one that, if fabricated, would
-    represent real evidentiary drift:
+def extract_description_drift_tokens(text):
+    """Return set of tokens from a node-body Description worth checking
+    against the artifact's grounding. A "drift token" is one that, if
+    fabricated, would represent real evidentiary drift in the rendered
+    Description section:
 
       - Hyphen/slash designators (VFA-41, F/A-18F, CVN-68, APG-73)
       - Digit sequences (2004, 20,000, 10+)
@@ -237,6 +238,14 @@ def extract_significant_tokens(text):
     articles, sentence-initial conjunctions) are filtered via the
     CAPITALIZED_STOPWORDS list. Single characters and empty strings are
     dropped.
+
+    NOT the same algorithm as `lib/_common.extract_significant_tokens`,
+    which is the prose-drift tokenizer (lowercase words ≥3 chars,
+    STOPWORDS-filtered, used by validate-research.py and check-vocab.py).
+    The two functions solve different validation problems and were
+    deliberately given distinct names (2026-05-05) to prevent future
+    "let's deduplicate" mistakes that would silently break one or both
+    drift checks.
     """
     text = strip_markdown_links(text)
     tokens = set()
@@ -490,7 +499,7 @@ def check_description_token_drift(artifact, node_text, source_text, rel):
     if desc is None:
         return issues
 
-    tokens = extract_significant_tokens(desc)
+    tokens = extract_description_drift_tokens(desc)
     if not tokens:
         return issues
 

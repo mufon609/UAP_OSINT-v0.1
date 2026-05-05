@@ -76,7 +76,11 @@ import sys
 from pathlib import Path
 from collections import defaultdict
 
-from lib._common import extract_source_text
+from lib._common import (
+    extract_significant_tokens,
+    extract_source_text,
+    load_source_tokens,
+)
 
 try:
     import yaml
@@ -1633,43 +1637,12 @@ def check_location_relationships(rel, data, manifest_paths):
 # premise fires too many false positives on those surfaces.
 # =============================================================================
 
-# Common English stopwords dropped from token-comparison. About 110
-# entries; calibrated from prior token-drift checks plus light
-# pruning based on contributor audit signals.
-STOPWORDS = {
-    # Articles
-    "a", "an", "the",
-    # Pronouns
-    "he", "she", "it", "they", "we", "you", "his", "her", "their",
-    "its", "our", "my", "your", "this", "that", "these", "those", "who",
-    "whom", "whose", "which", "what",
-    # Auxiliaries
-    "is", "was", "are", "were", "be", "been", "being", "am",
-    "have", "has", "had", "do", "does", "did", "done",
-    "will", "would", "can", "could", "should", "may", "might", "must",
-    "shall",
-    # Prepositions
-    "of", "in", "on", "at", "to", "from", "for", "with", "by", "as",
-    "into", "onto", "upon", "off", "out", "over", "under", "above",
-    "below", "between", "among", "through", "during", "within",
-    "without", "against", "about", "across", "after", "before", "behind",
-    # Conjunctions
-    "and", "or", "but", "so", "if", "because", "since", "until",
-    "unless", "when", "where", "while", "although", "though", "than",
-    "yet", "whether",
-    # Negations / degree
-    "not", "no", "never", "also", "then", "now", "just", "only", "even",
-    "else", "still", "already", "yet", "ever", "again", "very", "too",
-    "quite", "rather", "much", "more", "most", "less", "least",
-    # Determiners / quantifiers
-    "some", "any", "all", "each", "every", "both", "either", "neither",
-    "one", "two", "three", "other", "another", "same", "such", "own",
-    "here", "there",
-    # Common verbs that carry little specific content
-    "says", "said", "say", "saying", "went", "goes", "gone", "come",
-    "came", "coming", "get", "got", "getting", "make", "made", "making",
-    "take", "took", "taking", "taken",
-}
+# STOPWORDS, extract_significant_tokens, load_source_tokens, and the
+# per-process source-token cache moved to scripts/lib/_common.py
+# (centralized 2026-05-05) so check-vocab.py and any future drift-aware
+# tooling track the same tokenizer the prose-drift check uses. Same
+# lockstep rationale that moved extract_source_text / normalize_for_compare
+# to lib on 2026-05-01. See _common.py for the implementations.
 
 # Fields to check, keyed by target_node type.
 #
@@ -1844,82 +1817,12 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
 #     on), not a stylistic threshold. Below 100%, the validator makes
 #     no classification — just reports.
 
-# Cache source-file tokens per validator run so a multi-artifact or
-# multi-entry run doesn't re-extract the same file N times.
-_source_token_cache = {}
+# HTML cleaning, source extraction, prose-drift tokenizer, STOPWORDS, and
+# the per-process source-token cache all moved to scripts/lib/_common.py
+# — see the import block at the top of this file. Centralized so
+# validate-research.py, check-vocab.py, and any future drift-aware tooling
+# track the same tokenizer the prose-drift check uses.
 
-
-# HTML cleaning + source extraction moved to scripts/lib/_common.py
-# (centralized 2026-05-01) to keep validate.py / validate-research.py /
-# review-coverage.py in mechanical lockstep on source extraction and quote
-# normalization. See _common.py for the full implementation and rationale.
-
-
-def extract_significant_tokens(text):
-    """Return a set of significant tokens: lowercase words, ≥3 chars,
-    excluding STOPWORDS. Preserves intra-word hyphens (so `f/a-18f`,
-    `cvn-68`, `world-famous` survive). Strips possessive `'s` suffix
-    (so `fravor's` → `fravor`) — possessive forms are noise against
-    source text that typically uses first-person `my` / `I`. Strips
-    backtick-bracket repo-path wraps (they're identifiers, not
-    source-attested content) and markdown emphasis characters.
-    """
-    if not text:
-        return set()
-    # HTML entities -> character equivalents. Symmetric with validate.py
-    # normalize_for_compare: pre-existing contributor pastes of raw HTML
-    # entity bytes in prose ("department&#39;s") tokenize the same way as
-    # the cleaned source ("department's") after both sides are decoded.
-    # No-op on source text, which has already been decoded upstream in
-    # _clean_html_for_text.
-    text = html.unescape(str(text))
-    text = re.sub(r"\[`/[^`]+`\]", "", text)
-    # Strip markdown emphasis / code-fence chars; replace with space so
-    # underscore-separated identifiers (`period_start`, `FY_2021`) don't
-    # collapse into a single unmatchable token. Emphasis markers always
-    # sit at word boundaries, so replacing with space is semantically
-    # identical to stripping for the emphasis case.
-    text = re.sub(r"[*_`]", " ", text)
-    # Typographic-dash handling diverges from the verbatim-quote check
-    # by design. The verbatim-quote check is substring-matching quote
-    # text — there, em-dash and en-dash both normalize to ASCII hyphen
-    # so source "F–18" and prose "F-18" substring-match. The prose-drift check is
-    # TOKENIZING — different use case. Em-dash (U+2014) is a sentence-
-    # level word boundary in modern English typography ("NRO—reservist
-    # capacity" is three words, not two), so we map it to a space
-    # before tokenization; a greedy regex over hyphens would otherwise
-    # merge it into a single token "nro-reservist" that never matches
-    # the standalone prose token "reservist". En-dash (U+2013) stays
-    # mapped to ASCII hyphen because it legitimately joins compounds
-    # and ranges ("F–18", "2004–2023").
-    text = text.replace("\u2014", " ").replace("\u2013", "-")
-    text = text.lower()
-    words = re.findall(r"[a-z0-9][a-z0-9\-']+", text)
-    # Strip trailing possessive `'s` to collapse "fravor" ↔ "fravor's".
-    # (Leaves intra-word apostrophes alone: "don't" stays "don't".)
-    words = [re.sub(r"'s$", "", w) for w in words]
-    return {w for w in words if len(w) >= 3 and w not in STOPWORDS}
-
-
-def load_source_tokens(source_rel_path):
-    """Load and tokenize a source file. source_rel_path is relative to
-    sources/ (matches the manifest.yaml and artifact source.path shape).
-    Cached per-run. Returns a set of significant tokens, or None if the
-    source is missing / unextractable.
-    """
-    if source_rel_path in _source_token_cache:
-        return _source_token_cache[source_rel_path]
-    source_abs = SOURCES_DIR / source_rel_path
-    if not source_abs.exists():
-        _source_token_cache[source_rel_path] = None
-        return None
-    text = extract_source_text(source_abs)
-    if text is None:
-        _source_token_cache[source_rel_path] = None
-        return None
-    tokens = extract_significant_tokens(text)
-    _source_token_cache[source_rel_path] = tokens
-    return tokens
 
 
 def _judge_drift(rel, location, prose_tokens, unmatched):
