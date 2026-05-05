@@ -118,6 +118,40 @@ _HTML_INLINE_TAGS = (
 )
 
 
+# ---------------------------------------------------------------------------
+# Markdown section extraction — used by node-body validators / checks for
+# walking H2 sections and pulling their text. Pure functions: text in,
+# structure out. Lifted to lib/_common.py during C11 session-2 migration
+# (2026-05-05) so per-check modules in scripts/checks/ can consume them
+# directly without importing from validate.py (which would invert the
+# layering — checks shouldn't import from the orchestrator).
+# ---------------------------------------------------------------------------
+
+
+def extract_h2_sections(text):
+    """Return the list of H2 heading titles (the text after ``## ``) in
+    document order. Trailing whitespace stripped per heading. Used as
+    the index into ``extract_section`` and for required-section walks.
+    """
+    return re.findall(r"^## (.+?)\s*$", text, re.MULTILINE)
+
+
+def extract_section(text, title):
+    """Return the body text of the named H2 section (everything between
+    ``## {title}`` and the next ``## `` heading or end of document).
+    None if the section is absent. Title match is exact (case-sensitive,
+    no normalization).
+    """
+    pattern = re.compile(rf"^## {re.escape(title)}\s*$", re.MULTILINE)
+    match = pattern.search(text)
+    if not match:
+        return None
+    start = match.end()
+    next_h2 = re.search(r"^## ", text[start:], re.MULTILINE)
+    end = start + next_h2.start() if next_h2 else len(text)
+    return text[start:end]
+
+
 def clean_html_for_text(raw):
     """Strip HTML tags and decode entities so the raw bytes of an archived
     .html file can be substring-matched against a verbatim quote. Handles:

@@ -96,7 +96,13 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-from lib._common import extract_source_text, manifest_format, normalize_for_compare
+from lib._common import (
+    extract_h2_sections,
+    extract_section,
+    extract_source_text,
+    manifest_format,
+    normalize_for_compare,
+)
 
 # Per-check modules (C11 / C13 / C14 — pilot wiring; sessions 2 and 3
 # migrate the remaining checks against the same contract).
@@ -171,19 +177,11 @@ def parse_frontmatter(text):
         return None, None
 
 
-def extract_h2_sections(text):
-    return re.findall(r"^## (.+?)\s*$", text, re.MULTILINE)
-
-
-def extract_section(text, title):
-    pattern = re.compile(rf"^## {re.escape(title)}\s*$", re.MULTILINE)
-    match = pattern.search(text)
-    if not match:
-        return None
-    start = match.end()
-    next_h2 = re.search(r"^## ", text[start:], re.MULTILINE)
-    end = start + next_h2.start() if next_h2 else len(text)
-    return text[start:end]
+# extract_h2_sections + extract_section moved to scripts/lib/_common.py
+# in the C11 session-2 migration (2026-05-05) so per-check modules in
+# scripts/checks/ can import them directly without the layering inversion
+# that would result from importing from the orchestrator (validate.py).
+# Both functions are pure (text in, structure out); no shared state.
 
 
 def extract_h3_subsections(section_text):
