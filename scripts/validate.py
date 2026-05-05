@@ -202,55 +202,14 @@ def count_quote_blocks_and_attributions(section_text):
     return quotes, attributions
 
 
-# =============================================================================
-# Chronological-ordering check
-#
-# Universal discipline: any table with a date-bearing column is ordered
-# earliest-first. Applies across every node type and every section.
-# The check:
-#   1. Scans each H2 section for markdown tables (header + separator +
-#      data rows).
-#   2. For each table, identifies the date column by header name
-#      (case-insensitive match against DATE_HEADERS).
-#   3. Parses the date cell on each data row (ISO YYYY-MM-DD and
-#      prefix-truncated YYYY-MM / YYYY; range cells take the leftmost
-#      date; empty cells skip).
-#   4. Errors if rows are not in ascending date order.
-#   5. Warns on unparseable dates (natural-language dates, non-ISO
-#      formats — promoted to error-level later if warranted).
-#
-# Upgrades the `chronological: true` schema flag from descriptive-only
-# to enforced — closing part of BACKLOG #9.
-# =============================================================================
-
-# chronological_tables check moved to scripts/checks/chronological_tables.py
-# during the C11 session-2 migration (2026-05-05). First NodeContext
-# check migrated to the new contract — exercises ctx.text / ctx.rel
-# end-to-end and consumes extract_h2_sections / extract_section from
-# lib/_common.py (which were lifted earlier this session for exactly
-# this migration).
-
-
-# =============================================================================
-# Source-integrity checks — manifest-checksum check
-# =============================================================================
-
-# manifest_checksums check moved to scripts/checks/manifest_checksums.py
-# as part of the C11 / C13 / C14 pilot migration (2026-05-05). It consumes
-# BaseContext.manifest_entries instead of re-loading the manifest itself,
-# so the orchestrator's single load can serve all manifest checks once
-# they migrate (sessions 2 and 3).
-#
-# Manifest parse-failure handling moved to the orchestrator (load_manifest
-# in main()) so the migrated check can assume a clean entry list.
-
-
-# manifest_archive_status + manifest_extraction_type checks moved to
-# scripts/checks/manifest_archive_status.py and
-# scripts/checks/manifest_extraction_type.py during the C11 session-2
-# migration (2026-05-05). Both consume BaseContext.manifest_entries from
-# the orchestrator's single manifest load; the load-3x duplication that
-# affected the legacy manifest checks is now fully closed (C14 retires).
+# chronological_tables, manifest_checksums, manifest_archive_status, and
+# manifest_extraction_type checks all moved to scripts/checks/ during the
+# C11 / C13 / C14 migration (2026-05-05, sessions 1 and 2). They consume
+# Context (BaseContext / NodeContext) and adopt the unified Issue contract;
+# manifest parse-failure handling moved to the orchestrator (main()) so
+# migrated checks assume clean inputs. The validate.py orchestrator imports
+# them at the top and dispatches by Context type. Banner blocks for the
+# migrated checks removed; per-check docstrings live in scripts/checks/.
 
 
 # =============================================================================
