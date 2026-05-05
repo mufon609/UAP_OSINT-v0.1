@@ -614,7 +614,7 @@ quotes:
   text: '[4:31] who you are. My name is uh David Grush. You know, I came from a bluecollar family in Pittsburgh. I didn''t have the money for college. Always admired people in uniform. And I''ve always wanted to be a part of something bigger than myself. You know, 18 years ago, you know, I got an Air Force scholarship for physics. Uh I originally commissioned on active duty in the Air Force. uh served 14 years in the Air Force.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 111-121
+    location: "[4:31]"
   significance: Grusch's own opening self-identification — bluecollar Pittsburgh origin, Air Force physics scholarship, 14 years Air Force service.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -624,7 +624,7 @@ quotes:
   text: '[5:15] Washington. I was an intel officer for the US for 14 years. my last position which I left in April of 2023. Um I co-led the UAP portfolio for the National Geospatial Intelligence Agency and some of the highest officials within the department and of defense and intelligence community used to call on me to advise them on some of the hardest uh target sets that the country had.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 130-139
+    location: "[5:15]"
   significance: Grusch's own description of final role — co-led UAP portfolio at NGA, departure April 2023.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -634,7 +634,7 @@ quotes:
   text: '[6:10] my formal security clearance and multiple polygraphs. I had the ability uh to be read into any program that I needed. At one point in time, I was extremely highly cleared.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 151-155
+    location: "[6:10]"
   significance: Establishes clearance basis underlying access-denial allegation.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -644,7 +644,7 @@ quotes:
   text: '[6:28] UAP task force was refused access to um a broad crash retrieval program. When you say crash retrieval, what do you mean? Uh these are retrieving nonhuman origin uh technical vehicles. You know, call it spacecraft, if you will. Non-human exotic origin vehicles that have either landed or crashed.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 158-165
+    location: "[6:28]"
   significance: Core filed allegation — multi-decade crash retrieval program withheld from UAPTF; nonhuman-origin vehicles, landed and crashed.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -655,7 +655,7 @@ quotes:
   text: '[7:04] confiding in me. They approached me. I have plenty of current former senior intelligence officers that came to me, many of which I knew almost my whole career that convided to me they were a part of a program. They named the program. I''ve never heard of it. And they they told me based on their oral testimony um and they provided me documents and other other proof that there was in fact a program that the UAP task force was uh not read into.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 171-182
+    location: "[7:04]"
   significance: Describes the evidentiary basis — firsthand whistleblowers named the program, provided documents and oral testimony.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -666,7 +666,7 @@ quotes:
   text: '[7:42] I would couch it as non-human intelligence, you know, NHI, like we like to say in our our language. Why do you say that? Why do you say NHI? I don''t want to necessarily denote origin. I don''t think we have all the data to say, oh, they''re coming from a certain a certain location.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 186-193
+    location: "[7:42]"
   significance: Grusch's reasoning for 'non-human intelligence' terminology — origin-neutral, avoiding premature extraterrestrial framing.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -676,7 +676,7 @@ quotes:
   text: '[8:46] non-believer. I came to the the problem as a hardcore physics guy, intel officer. So I have a you know, excuse my language, high factor. I was very methodical interviewing people who didn''t know each other, making sure this wasn''t some kind of cover up of some other program.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 214-221
+    location: "[8:46]"
   significance: Grusch's methodology disclosure — started skeptical, interviewed separated witnesses, pre-empted cover-program confound.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -686,7 +686,7 @@ quotes:
   text: '[9:15] shut the door in my face. They denied me access to these programs.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 226-227
+    location: "[9:15]"
   significance: Grusch's direct first-person account of access denial. The subsequent reprisal-and-ICIG narration in the same NewsNation segment (lines 228-232) is Coulthart journalistic voice-over, not a Grusch quote, and is excluded here.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -697,7 +697,7 @@ quotes:
   text: '[10:40] Well, naturally, um when you recover something that''s either landed or crashed, um sometimes you encounter, um dead pilots. And believe it or not, as f as fantastical as that sounds, it''s true.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 258-263
+    location: "[10:40]"
   significance: First public on-camera non-human-biologics claim ('dead pilots'); precedes the July 26, 2023 House hearing.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -708,7 +708,7 @@ quotes:
   text: know, isotopic ratios that would have to [13:05] be engineered for it to be um at those levels, but also just extremely uh uh strange heavy atomic metal, you know, high up in the periodic table um arrangements that um we don't understand
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 310-318
+    location: "[13:03]"
   significance: Material-properties claim — engineered isotopic ratios and strange heavy metals cited as non-prosaic signature.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -718,7 +718,7 @@ quotes:
   text: '[14:29] Yeah, there''s a sophisticated uh disinformation campaign targeting the US populace, which is extremely unethical and immoral.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 342-345
+    location: "[14:29]"
   significance: Explicit disinformation-campaign framing — Grusch's public characterization of UAP secrecy apparatus.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -728,7 +728,7 @@ quotes:
   text: '[14:59] Just about. Yeah. 90 years. 1933 was the first recovery in Europe in uh Magenta, Italy. They recovered a a partially intact vehicle.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 350-353
+    location: "[14:59]"
   significance: First public disclosure of the 1933 Magenta, Italy recovery — anchors the 90-year program timeline.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -738,7 +738,7 @@ quotes:
   text: '[24:28] uh overall you know the government has been the custodian of a lot of this right and they''ll they''ll hand receipt it out to clear defense contractor to do some analysis which I find highly unethical. you have a basically a sole source arrangement and you allow certain um private corporate elements uh to look at this develop a potential insight and then sell it back to the government for profit and I think that''s totally unethical.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 561-572
+    location: "[24:28]"
   significance: Private-contractor custody allegation — government as material custodian; sole-source arrangements with private corporate elements that study, develop insight from, then sell recovered material back to the government for profit, characterized as categorically unethical.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -749,7 +749,7 @@ quotes:
   text: '[25:48] lie? Well, I know Dr. Sean Kurpatre. I''ve known him for about 8 years and you know, I expressed some concerns to Dr. Kurpatre about a year ago and told him what I was starting to uncover and he didn''t follow up with me and he has my phone number. He could have called me.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 592-599
+    location: "[25:48]"
   significance: Direct Grusch-Kirkpatrick history disclosure — 8-year acquaintance, prior substantive outreach, no AARO follow-up.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -759,7 +759,7 @@ quotes:
   text: '[28:02] there have been attempts to bring down craft that we''ve acted offensively against non-human craft. There have been instances and there are uh certain techniques. Have human beings been hurt or killed by a non-human intelligence? While I can''t get into the specifics because that would reveal uh certain US classified uh operations, uh I was briefed by a few individuals on the program that there were um malevolent events like that.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 640-651
+    location: "[28:02]"
   significance: Malevolent-event framing — humans allegedly killed by NHI; US offensive actions against craft.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -770,7 +770,7 @@ quotes:
   text: '[32:31] been committed? At the very least, I saw substantiative evidence that white collar crime was committed. Have people been killed to protect this secret? uh based on the people I talked to uh that was an ongoing uh concern. Yeah. Unfortunately, I''ve heard some really unamerican things I don''t want to repeat right now.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 741-749
+    location: "[32:31]"
   significance: Crimes allegation — white collar crime confirmed, murder-to-protect-secrecy flagged as an ongoing concern from interview subjects.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -781,7 +781,7 @@ quotes:
   text: '[37:37] credibility of your complaint. They found after interviewing myself in the subjects and other subjects that I''m not even uh cognizant on who they were, they found my complaint uh urgent and credible uh for the intelligence committees.'
   source:
     path: transcripts/newsnation-coulthart-grusch-2023-downloaded.md
-    location: lines 865-871
+    location: "[37:37]"
   significance: ICIG 'urgent and credible' determination described in Grusch's own words — establishes the filing mechanism outcome.
   context: NewsNation Reality Check with Ross Coulthart, 2023-06-11
   observation_type: relayed
@@ -792,7 +792,7 @@ quotes:
   text: so I was a Intel officer [0:36] in the Air Force for 14 years seven active seven Reserve uh then I kind of had like a parallel tract in the civilian Intel world when I became a reservist um uh and ultimately I got brought back in in Civil Service in a government way at the national GE spatial intelligence agency couple years ago um at a senior level uh so I was a major in the Air Force and a gs15 at NGA which is like a full bird colonel equivalent civilian employee
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 20-32
+    location: "[0:33]"
   significance: Career structure self-description — 7 active/7 reserve Air Force, Major rank, NGA GS-15 equivalent full colonel civilian.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -802,7 +802,7 @@ quotes:
   text: '[2:07] what''s with this UFO stuff I was uh briefing a senior person uh at the CIA into a couple hundred special access programs uh so I was at the headquarters at the agency and you know after the indoctrination I was giving to the senior person this person um who worked with Lou alzando uh previously was like yeah have Dave have you ever heard of this guy Lou alzando he''s running some UFO program at the Pentagon um we all think he''s crazy'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 57-69
+    location: "[2:07]"
   significance: First mention of Elizondo in Grusch's career — CIA briefing encounter in early 2017 that prefigured his UAP interest.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -812,7 +812,7 @@ quotes:
   text: '[11:14] encounter with the information a very senior individual in the Intel Community came to me when uh I guess I was asking a lot of questions because I''m a very inquisitive guy and it was like hey we I need to introduce you to somebody uh you know he listed that certain person''s academic credentials which were Beyond reproach you know PhD level education clearance resume was insane I''m like well okay sure I''ll I''ll talk to this person and and I ended up meeting that person in a you know uh a top secret facility and you know he started the discussing like hey there was a program I was on it and you know we were reverse engineering crash material that we''ve recovered over the decades'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 287-305
+    location: "[11:14]"
   significance: Inflection-point account — the first senior-IC whistleblower contact in fall 2019 that opened Grusch's investigation.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -823,7 +823,7 @@ quotes:
   text: '[12:42] that spooked to me and that was like fall of 2019 and you know I don''t take a guy''s word for it'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 321-324 (around [12:42]-[12:45])
+    location: "[12:42]"
   significance: Verbatim source anchor for the "fall of 2019" date attached to the first senior-IC whistleblower contact. Grusch''s own framing of the date in his JRE account. Supports timeline entry t16.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -834,7 +834,7 @@ quotes:
   text: '[12:50] myself and my trusted colleagues that had a lot of lot of special accesses like me you know we cultivated our Network and we ultimately interviewed about 40 people or so all the way up to multistar generals directors of agencies mid-level guys that literally touched it worked inside of it'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 325-333
+    location: "[12:50]"
   significance: Quantifies the witness base — ~40 interviews spanning multi-star generals, agency directors, firsthand engineers.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -845,7 +845,7 @@ quotes:
   text: '[15:41] and I eventually went to Congress in December of 2022 and it''s a crazy story why I took so long it''s [ __ ] nuts um but I provided total about 11 and a half to 12 hours of uh you know classified testimony to the Congressional staffers and their lawyers for both the house and the Senate'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 395-402
+    location: "[15:41]"
   significance: Congressional-testimony quantification — 11.5-12 hours of classified testimony to both House and Senate staff in December 2022.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -856,7 +856,7 @@ quotes:
   text: '[26:47] died two years ago so in Spring 2021 I actually flew with a couple colleagues of mine to Las Vegas and I met with Senator Harry Reid about N9 months before he died'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 668-672
+    location: "[26:47]"
   significance: Grusch personally met Harry Reid in Spring 2021 in Las Vegas — direct witness to Reid's admissions about UAP material.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -866,7 +866,7 @@ quotes:
   text: '[27:44] with me and he straight up says he''s like yeah I knew we had UFO material I was denied access for decades I tried to get access and then he explains some of his efforts during AET app'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 692-696
+    location: "[27:44]"
   significance: Grusch's direct report of Harry Reid's private admission — Reid confirmed UAP material and decades-long access denial.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -876,7 +876,7 @@ quotes:
   text: '[30:54] freak out but I''m telling the truth here um so lockie Martin wanted to divest itself from this material at a specific facility that''s known to me that I provided to the Inspector General'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 767-772
+    location: "[30:54]"
   significance: Direct Lockheed Martin material-custody allegation — Grusch states specific facility known to him and provided to IG.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -887,7 +887,7 @@ quotes:
   text: '[31:35] and um uh so they were going to Tech transfer it and the 21 or 22 million was actually for Bigalow Aerospace to build out you know facilities in Las Vegas and material analysis equipment and I''ve SE I have I saw the staff meeting slides I saw the paperwork like there''s a paperwork Trail I''ve seen on this'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 784-791
+    location: "[31:35]"
   significance: AAWSAP purpose reframing — Grusch asserts the ~$22M was for Bigelow Aerospace to analyze Lockheed-held material, not paranormal research.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -897,7 +897,7 @@ quotes:
   text: '[32:00] this program and you know even Jim laty who ran the program who retired Dia officer PhD in engineering even made this disclosure in his book skinwalkers at the Pentagon uh page 152 to 153'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 793-797
+    location: "[32:00]"
   significance: Grusch vouches for Lacatski — cites Skinwalkers at the Pentagon pp. 152-153 as corroborating disclosure.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -907,7 +907,7 @@ quotes:
   text: '[41:02] answers that question so uh there were sens of human derve foreign intelligence that I read um so I had access to kind of the atip assap uh classified archives and I was like thumbing through everything and there''s some other people were bringing me documents to evaluate and I''ll never forget I had um what it say stolen by the US in assessment from a certain foreign adversary discussing the US reverse engineering program'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 1023-1034
+    location: "[41:02]"
   significance: Foreign-adversary document confirmation — Grusch claims he read an exfiltrated foreign-intelligence assessment discussing the US reverse-engineering program.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -918,7 +918,7 @@ quotes:
   text: '[42:53] Congress and they debriefed me uh from all my accesses over in that other sister agency and made up some bogus excuse like I shouldn''t have been briefed to anything in the first place literally and basically gave me an administrative M middle finger like person non gra don''t ever [ __ ] ask us about that [ __ ] again'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 1066-1074
+    location: "[42:53]"
   significance: Specific reprisal incident — the sister agency's debrief as an administrative rebuff after Grusch requested the foreign-intel document.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -929,7 +929,7 @@ quotes:
   text: '[46:09] episode I remember correctly you know Chuck Schumer and I knew about the amendment a couple months before I went public and that''s kind of another reason why I did what I did I''m like [ __ ] I''m like the only guy that kind of has the opportunity to do this I know what''s in the shoot so to speak that Chuck Schumer and his staff had with the Schumer M'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 1140-1148
+    location: "[46:09]"
   significance: Timing disclosure — Grusch knew about the Schumer UAP Disclosure Act months before going public, shaping the timing of his public step.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -939,7 +939,7 @@ quotes:
   text: '[53:57] we alone well the answer is we''re not alone and I know that with 100% certainty which as an Intel officer you never say 100%'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 1334-1337
+    location: "[53:57]"
   significance: Grusch's strongest personal conviction statement — '100% certainty' explicitly flagged as an atypical intelligence-officer claim.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -949,7 +949,7 @@ quotes:
   text: '[54:44] so they specifically the people on the program that handled the material that were in executive level briefings with Intel Community leaders and other folks over the years last years or so they did use the term extraterrestrial ET or whatever okay that isn''t a possible origin but the Schumer Amendment if you read it it specifically uses non-human intelligence NH hii very deliberately'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 1355-1364
+    location: "[54:44]"
   significance: Grusch acknowledges that program personnel used 'extraterrestrial' while the legislation deliberately used 'non-human intelligence' — an important terminology fact pattern.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -959,7 +959,7 @@ quotes:
   text: '[1:06:56] looking into this I mean they came after me so hard to try to revoke my clearance um ruined my career kicked me out of my agency and they accused me of everything you could possibly think of with like no evidence'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 1660-1665
+    location: "[1:06:56]"
   significance: Direct statement of the reprisal scope — clearance-revocation attempts, agency expulsion, unsubstantiated accusations.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -970,7 +970,7 @@ quotes:
   text: '[1:09:27] is uh they showed my wife and I they can touch me at any time two times and it was very disturbing it was in conjunction with some other people getting a message like that that are to say publicly wellknown some that aren''t publicly wellknown'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 1723-1729
+    location: "[1:09:27]"
   significance: Grusch's direct account of physical-intimidation events against him and his wife — 'they can touch me at any time' twice.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -981,7 +981,7 @@ quotes:
   text: '[1:24:14] physiology yeah no I was in I was in the room when uh I got be careful I don''t want to uh I was in Washington DC with a very uh number of senior people that work for members of Congress put it that way um when I was still in government and I brought the people who worked on that stuff to the hill'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 2092-2101
+    location: "[1:24:14]"
   significance: Establishes that Grusch personally facilitated firsthand-witness briefings to congressional staff on NHI physiology.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -992,7 +992,7 @@ quotes:
   text: '[2:32:10] in parallel and that''s kind of why I helped found the soul foundation with Gary Nolan and Dr Peter skafish who''s an anthropologist uh as well is we wanted to figure out the stem Outreach we wanted to figure out the public policy National policy to advise the US and its allies on this issue'
   source:
     path: transcripts/jre-2065-grusch-2023-downloaded.md
-    location: lines 3818-3825
+    location: "[2:32:10]"
   significance: Direct attribution — Grusch co-founded Sol Foundation with Garry Nolan and Peter Skafish for policy and STEM outreach.
   context: Joe Rogan Experience
   observation_type: relayed
@@ -1002,7 +1002,7 @@ quotes:
   text: '[9:50] Yeah. Did all the checks I could possibly do, you know, within my, you know, kind of official capacity, realized it was real. And then, uh, kind of during that investigation, you know, I had a lot of pushback that was very unfortunate, you know, reprisals against me and stuff. And that kind of was what led me to file the whistleblower complaint, you know, a for my own protection, but B was to kind of sound the alarm.'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 141-147
+    location: "[9:50]"
   significance: Grusch frames the dual motivation for the PPD-19 complaint — self-protection plus public alarm-sounding.
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1013,7 +1013,7 @@ quotes:
   text: '[10:12] They tried to claim all these things against me, conduct wise, mental health, all this other, uh, unfortunate stuff. I was in combat in Afghanistan, 2013, you know, I was on a convoys outside the wire. I, you know, I had a friend die, got blown up and all this other stuff, you know, baggage that I had for two, three years after coming back. And, you know, I got diagnosed with post-traumatic stress disorder, you know, saw treatment and I got help good to go, but there was an agency that tried to dig that back up and say, Oh, Dave still has ongoing issues. Unmitigated, we need to pull his clearance.'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 148-156
+    location: "[10:12]"
   significance: Specific reprisal mechanism — agency weaponized Grusch's 2013 Afghanistan combat PTSD treatment as a clearance-pull pretext.
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1024,7 +1024,7 @@ quotes:
   text: '[12:48] I was a little restless last night. I was told last night that they requested me to be cleared for a closed session after today, but the request was denied. I was blocked. So that''s like obvious obstruction.'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 189-193
+    location: "[12:48]"
   significance: Grusch's night-before-testimony statement that the closed-session clearance was denied — characterized as 'obvious obstruction.'
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1034,7 +1034,7 @@ quotes:
   text: '[23:42] And I be very general in this to protect this person''s identity. Cause they''re still on active duty. But like, I remember interviewing a guy and I have a background in psychological analysis and other stuff to assess people and for like three hours. And it was a certain very senior Navy individual that saw he was going to work at a certain facility in the morning, you know, not drunk, not high. And a 300 foot triangular craft hovered over his car for a couple minutes.'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 345-352
+    location: "[23:42]"
   significance: Detailed 300-foot triangular-craft encounter — senior Navy witness with photographed radiation-damaged car, Grusch's 'inflection point.'
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1044,7 +1044,7 @@ quotes:
   text: '[44:41] As I''ve stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries. Yeah. Yeah. I mean, it''s, it is a mind blowing side of it, right? It''s a little easy to imagine, you know, an artifact or whatever, but when you start talking about, you know, the biological side of it, it really throws you for a loop psychologically. It did for me. And, you know, I talked to the people that, you know, were on that aspect of, uh, the program, if you will.'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 688-698
+    location: "[44:41]"
   significance: Post-hearing confirmation of biologics claim and source-chain attestation — Grusch reaffirms the Mace-exchange 'biologics' reply in documentary context and states he personally talked to people on the biologics-aspect of the program.
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1055,7 +1055,7 @@ quotes:
   text: '[48:04] So, the actual reprisal stuff and the access denial stuff actually enhanced my ability to operate. But I will tell you, I talked to these people in the program. They are just so afraid. Because the way it was enforced over the years, threatening nature of some of their indoctrinations where they''re like, this is treason. You''re going to Leavenworth. Have you ever tell anybody not in the program? And oh, by the way, what''s the penalty for treason? Oh, right. Execution, right?'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 750-758
+    location: "[48:04]"
   significance: Indoctrination-enforcement account — treason/Leavenworth/execution framing used on program personnel to suppress disclosure.
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1066,7 +1066,7 @@ quotes:
   text: '[48:49] So like, I also went out of my way to find people who don''t know each other either. That like, you know, through methods like making sure I''m not getting circular reporting, not part of some other kind of faction that might want to push a certain narrative out. Me and I had higher ranking colleagues of mine go, who were part of the same effort in their official capacity, go talk to other people that I didn''t even personally talk to, to keep that separation.'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 764-770
+    location: "[48:49]"
   significance: Methodological-rigor disclosure — Grusch and colleagues built witness isolation to guard against circular reporting and faction narratives.
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1076,7 +1076,7 @@ quotes:
   text: '[46:57] But they have. The people that I interviewed have. And they were some of the people that were interviewed by the inspector general. Because that was the thing is like, you know, people are like, oh, hearsay, whatever. Okay, I understand secondhand. I literally brought the people firsthand to the authorities.'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 728-733
+    location: "[46:57]"
   significance: Grusch explicitly confirms that firsthand witnesses (who saw craft/biologics) were interviewed by the ICIG, rebutting 'hearsay' critique.
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1087,7 +1087,7 @@ quotes:
   text: '[30:02] I grew up Roman Catholic as a kid, the whole confirmation thing, CCD, and all that, you know, it was reasonably religious, but nothing like crazy kind of average studied physics. I became kind of agnostic. I was like, eh, I don''t know about this, all this kind of woo woo, you know, stuff that the church exposes and stuff. And then oddly enough, I''ve kind of come full circle.'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 459-465
+    location: "[30:02]"
   significance: Theology trajectory — Roman Catholic childhood to physics agnosticism to 'full circle,' self-description of worldview evolution.
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1097,7 +1097,7 @@ quotes:
   text: '[39:23] Yeah, I mean, I didn''t know that I was autistic until I was like in my early 30s. And, you know, I always wondered why in my personal life, if I get fixated on something and obsessed, you know, what was going on with that. I mean, it served me well in the government because I was super good at, you know, doing Intel and like, you know, Dave, we want you to target this facility. Okay, you have six months, figure out everything'
   source:
     path: transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md
-    location: lines 590-595
+    location: "[39:23]"
   significance: First-person autism-diagnosis disclosure — early-30s diagnosis; framed as asset for intel-target fixation work.
   context: Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10
   observation_type: relayed
@@ -1107,7 +1107,7 @@ quotes:
   text: '[2:47] accountability the release of information on non-human intelligences has the potential to unite Humanity in a shared quest for understanding regardless of the ontological shock'
   source:
     path: transcripts/grusch-sol-2023-closing-downloaded.md
-    location: lines 62-67
+    location: "[2:47]"
   significance: Public-policy framing — Grusch's core disclosure-advocacy thesis in one sentence at Sol Foundation inaugural symposium.
   context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
   observation_type: relayed
@@ -1117,7 +1117,7 @@ quotes:
   text: '[4:07] Sciences releasing this information in a controlled planned manner such as Carl Nell has discussed during the conference as with the Schumer amendment has profound implications on our philosoph philosophical and spiritual perspectives'
   source:
     path: transcripts/grusch-sol-2023-closing-downloaded.md
-    location: lines 92-98
+    location: "[4:07]"
   significance: Direct Grusch endorsement of Karl Nell's controlled-disclosure framework and Schumer Amendment mechanism at Sol.
   context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
   observation_type: relayed
@@ -1127,7 +1127,7 @@ quotes:
   text: '[7:49] inspiring yeah I mean I did a lot of introspection and reflection to make the decision to come forward you know part of my uh looking into this subject and you know reporting my findings to the Inspector General you know I look back at my you know I Serv 14 years in the Air Force I looked at two my core value the Air Force exposes you know Integrity for service for steal and that been all we do'
   source:
     path: transcripts/grusch-sol-2023-closing-downloaded.md
-    location: lines 162-172
+    location: "[7:49]"
   significance: Grusch's Sol-symposium self-framing — Air Force core values ('Integrity First, Service Before Self, Excellence in All We Do') as disclosure motivation.
   context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
   observation_type: relayed
@@ -1137,7 +1137,7 @@ quotes:
   text: '[10:40] certainly this phenomenon is is not a you know a singular type Source Etc I mean many of the people I talked to that you know were actively working on the program did use the term extraterrestrial when uh briefing myself and my my colleagues you know on their activity and kind of you know that''s the par they used within the the program but certainly I''m skeptical of that being the the only origin'
   source:
     path: transcripts/grusch-sol-2023-closing-downloaded.md
-    location: lines 228-238
+    location: "[10:40]"
   significance: Sol-symposium reiteration — program personnel used 'extraterrestrial'; Grusch skeptical that is sole origin. Parallels JRE statement.
   context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
   observation_type: relayed
@@ -1147,7 +1147,7 @@ quotes:
   text: '[18:09] yourself yeah uh certainly I would love to go back to my private life that would be great not something that I ever thought I''d be doing in my life you know I was on a very good trajectory in my intell career so I''ve made an Abrupt dip to the right become a public figure'
   source:
     path: transcripts/grusch-sol-2023-closing-downloaded.md
-    location: lines 404-410
+    location: "[18:09]"
   significance: Grusch's stated post-disclosure aspiration — wants to return to private life, not a career public figure.
   context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
   observation_type: relayed
@@ -1157,7 +1157,7 @@ quotes:
   text: '[18:38] 2030 I would love to work on that as a staff member not necessarily as a panelist I think there needs to be luminaries that are the the best scholars in the in the US to to f you know be on that panel but certainly if the current or you know succeeding administrations would like to bring me on to support the panel in any way I mean I''ll go get coffee just to sit in the room to listen to the discussions'
   source:
     path: transcripts/grusch-sol-2023-closing-downloaded.md
-    location: lines 417-427
+    location: "[18:38]"
   significance: Grusch's explicit post-disclosure role aspiration — not disclosure-panel member, but staff supporter ('I'll go get coffee').
   context: Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18
   observation_type: relayed

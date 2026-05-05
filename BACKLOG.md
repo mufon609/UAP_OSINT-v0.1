@@ -904,6 +904,100 @@ residual cleanup deferred to this entry).
 
 ---
 
+### C8. Quote.text leading-timestamp discipline — drift between in-text marker and actual quote-start
+
+The existing convention in
+`feedback_transcript_timestamps_in_quotes.md` codifies that quote.text
+on caption-source quotes carries at most ONE leading `[MM:SS]` marker
+as the navigation anchor, with intermediate markers stripped. Two
+failure modes the memory doesn't address have surfaced in the corpus.
+
+**1. Drift between leading marker and quote-start.** The in-text
+leading `[MM:SS]` is sometimes 4-9 seconds AFTER the source line where
+the quote's first content word appears. The marker still lands on
+quote content (not adjoining material) but doesn't anchor the actual
+start. Reader clicking through to navigate lands mid-quote, missing
+the start. Concrete cases (alex-dietrich, surfaced in 2026-05-04
+cluster-1 re-review):
+
+| qid | in-text marker | actual start in source | drift |
+|---|---|---|---|
+| q17 | `[1:00:56]` | `[1:00:48]` | +8s |
+| q18 | `[1:02:00]` | `[1:01:51]` | +9s |
+| q19 | `[5:25]`    | `[5:19]`    | +6s |
+| q21 | `[56:42]`   | `[56:34]`   | +8s |
+| q23 | `[19:37]`   | `[19:30]`   | +7s |
+| q25 | `[15:26]`   | `[15:24]`   | +2s |
+| q28 | `[58:44]`   | `[58:40]`   | +4s |
+| q38 | `[9:24]`    | `[9:20]`    | +4s |
+| q40 | `[13:45]`   | `[13:41]`   | +4s |
+
+None observed in david-grusch caption-source quotes — pattern appears
+contributor-specific (alex-dietrich and david-grusch were authored in
+different sessions).
+
+**2. Intermediate markers retained in quote.text.** Two david-grusch
+quotes carry interior `[MM:SS]` markers explicitly forbidden by the
+existing memory:
+
+| qid | text snippet | extra marker(s) |
+|---|---|---|
+| q21 | `know, isotopic ratios that would have to [13:05] be engineered…` | `[13:05]` |
+| q29 | `so I was a Intel officer [0:36] in the Air Force for 14 years…` | `[0:36]` |
+
+**Why this is its own item.** Both failure modes are quote.text
+content issues, distinct from the location-ref form addressed by C1.
+C1 closes the location-ref dimension; this item closes the in-text
+marker dimension. Combined, the two close out the timestamps-memory
+convention end-to-end.
+
+**Why deferred from C1.** Phase C of C1 is location-ref-only by
+design — touching quote.text during a location-ref conversion would
+mix two discipline axes and risk drift. Cluster 1 of C1 (2026-05-04)
+preserved the contributor's leading markers verbatim to keep the
+rendered blockquote anchor consistent with the Location row;
+tightening the in-text marker requires its own pass that updates
+both quote.text AND source.location together so they stay aligned.
+
+**Fix sketch.**
+
+1. **Detection.** Either extend `scripts/normalize-locations.py` with
+   a `--text-markers` mode or write a small sibling script. Per
+   caption-source quote:
+   - Extract leading `[MM:SS]` from quote.text (when present).
+   - Find the source line where the quote's first 4-6 content words
+     appear.
+   - Compare timestamps; flag drift >5 seconds.
+   - Detect intermediate `[MM:SS]` markers in the quote.text body.
+
+2. **Per-quote correction.** For each flagged quote:
+   - Replace the leading `[MM:SS]` with the actual-start timestamp.
+   - Strip intermediate markers.
+   - Update `source.location` to match the new leading marker
+     (preserves blockquote/Location-row consistency).
+   - Regenerate the rendered node body via `build-from-research.py`.
+
+3. **Memory update.** Add a sentence to
+   `feedback_transcript_timestamps_in_quotes.md`: leading `[MM:SS]`
+   matches the timestamp on the source line where the quote's first
+   content word appears, not a later caption tick the contributor
+   encountered while reading. Include one drift case as a concrete
+   example.
+
+**Scope.** 11 currently flagged quotes (9 drift + 2 intermediate-
+markers), all in alex-dietrich and david-grusch. Bounded — only
+caption-source quotes are at risk. Future caption-source quote
+authoring uses the updated memory.
+
+**Priority.** Low. Not a correctness issue; navigation-precision
+improvement. Validator doesn't care.
+
+Surfaced: Cluster 1 conversion re-review (2026-05-04) — spot-check
+of converted location refs against source content surfaced both
+failure modes.
+
+---
+
 ## Externally blocked
 
 Items waiting on an external event the repo can't drive — FOIA

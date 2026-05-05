@@ -187,7 +187,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 111-121 |
+| Location | [4:31] |
 
 > [5:15] Washington. I was an intel officer for the US for 14 years. my last position which I left in April of 2023. Um I co-led the UAP portfolio for the National Geospatial Intelligence Agency and some of the highest officials within the department and of defense and intelligence community used to call on me to advise them on some of the hardest uh target sets that the country had.
 
@@ -195,7 +195,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 130-139 |
+| Location | [5:15] |
 
 > [6:10] my formal security clearance and multiple polygraphs. I had the ability uh to be read into any program that I needed. At one point in time, I was extremely highly cleared.
 
@@ -203,7 +203,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 151-155 |
+| Location | [6:10] |
 
 > [6:28] UAP task force was refused access to um a broad crash retrieval program. When you say crash retrieval, what do you mean? Uh these are retrieving nonhuman origin uh technical vehicles. You know, call it spacecraft, if you will. Non-human exotic origin vehicles that have either landed or crashed.
 
@@ -211,7 +211,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 158-165 |
+| Location | [6:28] |
 
 > [7:04] confiding in me. They approached me. I have plenty of current former senior intelligence officers that came to me, many of which I knew almost my whole career that convided to me they were a part of a program. They named the program. I've never heard of it. And they they told me based on their oral testimony um and they provided me documents and other other proof that there was in fact a program that the UAP task force was uh not read into.
 
@@ -219,7 +219,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 171-182 |
+| Location | [7:04] |
 
 > [7:42] I would couch it as non-human intelligence, you know, NHI, like we like to say in our our language. Why do you say that? Why do you say NHI? I don't want to necessarily denote origin. I don't think we have all the data to say, oh, they're coming from a certain a certain location.
 
@@ -227,7 +227,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 186-193 |
+| Location | [7:42] |
 
 > [8:46] non-believer. I came to the the problem as a hardcore physics guy, intel officer. So I have a you know, excuse my language, high factor. I was very methodical interviewing people who didn't know each other, making sure this wasn't some kind of cover up of some other program.
 
@@ -235,7 +235,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 214-221 |
+| Location | [8:46] |
 
 > [9:15] shut the door in my face. They denied me access to these programs.
 
@@ -243,7 +243,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 226-227 |
+| Location | [9:15] |
 
 > [10:40] Well, naturally, um when you recover something that's either landed or crashed, um sometimes you encounter, um dead pilots. And believe it or not, as f as fantastical as that sounds, it's true.
 
@@ -251,7 +251,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 258-263 |
+| Location | [10:40] |
 
 > know, isotopic ratios that would have to [13:05] be engineered for it to be um at those levels, but also just extremely uh uh strange heavy atomic metal, you know, high up in the periodic table um arrangements that um we don't understand
 
@@ -259,7 +259,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 310-318 |
+| Location | [13:03] |
 
 > [14:29] Yeah, there's a sophisticated uh disinformation campaign targeting the US populace, which is extremely unethical and immoral.
 
@@ -267,7 +267,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 342-345 |
+| Location | [14:29] |
 
 > [14:59] Just about. Yeah. 90 years. 1933 was the first recovery in Europe in uh Magenta, Italy. They recovered a a partially intact vehicle.
 
@@ -275,7 +275,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 350-353 |
+| Location | [14:59] |
 
 > [24:28] uh overall you know the government has been the custodian of a lot of this right and they'll they'll hand receipt it out to clear defense contractor to do some analysis which I find highly unethical. you have a basically a sole source arrangement and you allow certain um private corporate elements uh to look at this develop a potential insight and then sell it back to the government for profit and I think that's totally unethical.
 
@@ -283,7 +283,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 561-572 |
+| Location | [24:28] |
 
 > [25:48] lie? Well, I know Dr. Sean Kurpatre. I've known him for about 8 years and you know, I expressed some concerns to Dr. Kurpatre about a year ago and told him what I was starting to uncover and he didn't follow up with me and he has my phone number. He could have called me.
 
@@ -291,7 +291,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 592-599 |
+| Location | [25:48] |
 
 > [28:02] there have been attempts to bring down craft that we've acted offensively against non-human craft. There have been instances and there are uh certain techniques. Have human beings been hurt or killed by a non-human intelligence? While I can't get into the specifics because that would reveal uh certain US classified uh operations, uh I was briefed by a few individuals on the program that there were um malevolent events like that.
 
@@ -299,7 +299,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 640-651 |
+| Location | [28:02] |
 
 > [32:31] been committed? At the very least, I saw substantiative evidence that white collar crime was committed. Have people been killed to protect this secret? uh based on the people I talked to uh that was an ongoing uh concern. Yeah. Unfortunately, I've heard some really unamerican things I don't want to repeat right now.
 
@@ -307,7 +307,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 741-749 |
+| Location | [32:31] |
 
 > [37:37] credibility of your complaint. They found after interviewing myself in the subjects and other subjects that I'm not even uh cognizant on who they were, they found my complaint uh urgent and credible uh for the intelligence committees.
 
@@ -315,7 +315,7 @@ Submission") |
 |---|---|
 | Attributed to | NewsNation Reality Check with Ross Coulthart, 2023-06-11 |
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
-| Location | lines 865-871 |
+| Location | [37:37] |
 
 > My name is David Charles Grusch. I was an intelligence officer for 14 years, both in the US Air Force (USAF) at the rank of Major and most recently, from 2021-2023, at the National Geospatial-Intelligence Agency at the GS-15 civilian level, which is the military equivalent of a full-bird Colonel.
 
@@ -1043,7 +1043,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 141-147 |
+| Location | [9:50] |
 
 > [10:12] They tried to claim all these things against me, conduct wise, mental health, all this other, uh, unfortunate stuff. I was in combat in Afghanistan, 2013, you know, I was on a convoys outside the wire. I, you know, I had a friend die, got blown up and all this other stuff, you know, baggage that I had for two, three years after coming back. And, you know, I got diagnosed with post-traumatic stress disorder, you know, saw treatment and I got help good to go, but there was an agency that tried to dig that back up and say, Oh, Dave still has ongoing issues. Unmitigated, we need to pull his clearance.
 
@@ -1051,7 +1051,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 148-156 |
+| Location | [10:12] |
 
 > [12:48] I was a little restless last night. I was told last night that they requested me to be cleared for a closed session after today, but the request was denied. I was blocked. So that's like obvious obstruction.
 
@@ -1059,7 +1059,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 189-193 |
+| Location | [12:48] |
 
 > [23:42] And I be very general in this to protect this person's identity. Cause they're still on active duty. But like, I remember interviewing a guy and I have a background in psychological analysis and other stuff to assess people and for like three hours. And it was a certain very senior Navy individual that saw he was going to work at a certain facility in the morning, you know, not drunk, not high. And a 300 foot triangular craft hovered over his car for a couple minutes.
 
@@ -1067,7 +1067,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 345-352 |
+| Location | [23:42] |
 
 > [44:41] As I've stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries. Yeah. Yeah. I mean, it's, it is a mind blowing side of it, right? It's a little easy to imagine, you know, an artifact or whatever, but when you start talking about, you know, the biological side of it, it really throws you for a loop psychologically. It did for me. And, you know, I talked to the people that, you know, were on that aspect of, uh, the program, if you will.
 
@@ -1075,7 +1075,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 688-698 |
+| Location | [44:41] |
 
 > [48:04] So, the actual reprisal stuff and the access denial stuff actually enhanced my ability to operate. But I will tell you, I talked to these people in the program. They are just so afraid. Because the way it was enforced over the years, threatening nature of some of their indoctrinations where they're like, this is treason. You're going to Leavenworth. Have you ever tell anybody not in the program? And oh, by the way, what's the penalty for treason? Oh, right. Execution, right?
 
@@ -1083,7 +1083,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 750-758 |
+| Location | [48:04] |
 
 > [48:49] So like, I also went out of my way to find people who don't know each other either. That like, you know, through methods like making sure I'm not getting circular reporting, not part of some other kind of faction that might want to push a certain narrative out. Me and I had higher ranking colleagues of mine go, who were part of the same effort in their official capacity, go talk to other people that I didn't even personally talk to, to keep that separation.
 
@@ -1091,7 +1091,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 764-770 |
+| Location | [48:49] |
 
 > [46:57] But they have. The people that I interviewed have. And they were some of the people that were interviewed by the inspector general. Because that was the thing is like, you know, people are like, oh, hearsay, whatever. Okay, I understand secondhand. I literally brought the people firsthand to the authorities.
 
@@ -1099,7 +1099,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 728-733 |
+| Location | [46:57] |
 
 > [30:02] I grew up Roman Catholic as a kid, the whole confirmation thing, CCD, and all that, you know, it was reasonably religious, but nothing like crazy kind of average studied physics. I became kind of agnostic. I was like, eh, I don't know about this, all this kind of woo woo, you know, stuff that the church exposes and stuff. And then oddly enough, I've kind of come full circle.
 
@@ -1107,7 +1107,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 459-465 |
+| Location | [30:02] |
 
 > [39:23] Yeah, I mean, I didn't know that I was autistic until I was like in my early 30s. And, you know, I always wondered why in my personal life, if I get fixated on something and obsessed, you know, what was going on with that. I mean, it served me well in the government because I was super good at, you know, doing Intel and like, you know, Dave, we want you to target this facility. Okay, you have six months, figure out everything
 
@@ -1115,7 +1115,7 @@ Submission") |
 |---|---|
 | Attributed to | Jesse Michels 'A Human Experience' / Yes Theory / American Alchemy '72hrs With Grusch' documentary, 2023-10, 2023-10-15 |
 | Source | [archived source](../sources/transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md) |
-| Location | lines 590-595 |
+| Location | [39:23] |
 
 > Please give me a call to discuss conditions and admin items:
 
@@ -1157,7 +1157,7 @@ Submission") |
 |---|---|
 | Attributed to | Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18, 2023-11-18 |
 | Source | [archived source](../sources/transcripts/grusch-sol-2023-closing-downloaded.md) |
-| Location | lines 62-67 |
+| Location | [2:47] |
 
 > [4:07] Sciences releasing this information in a controlled planned manner such as Carl Nell has discussed during the conference as with the Schumer amendment has profound implications on our philosoph philosophical and spiritual perspectives
 
@@ -1165,7 +1165,7 @@ Submission") |
 |---|---|
 | Attributed to | Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18, 2023-11-18 |
 | Source | [archived source](../sources/transcripts/grusch-sol-2023-closing-downloaded.md) |
-| Location | lines 92-98 |
+| Location | [4:07] |
 
 > [7:49] inspiring yeah I mean I did a lot of introspection and reflection to make the decision to come forward you know part of my uh looking into this subject and you know reporting my findings to the Inspector General you know I look back at my you know I Serv 14 years in the Air Force I looked at two my core value the Air Force exposes you know Integrity for service for steal and that been all we do
 
@@ -1173,7 +1173,7 @@ Submission") |
 |---|---|
 | Attributed to | Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18, 2023-11-18 |
 | Source | [archived source](../sources/transcripts/grusch-sol-2023-closing-downloaded.md) |
-| Location | lines 162-172 |
+| Location | [7:49] |
 
 > [10:40] certainly this phenomenon is is not a you know a singular type Source Etc I mean many of the people I talked to that you know were actively working on the program did use the term extraterrestrial when uh briefing myself and my my colleagues you know on their activity and kind of you know that's the par they used within the the program but certainly I'm skeptical of that being the the only origin
 
@@ -1181,7 +1181,7 @@ Submission") |
 |---|---|
 | Attributed to | Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18, 2023-11-18 |
 | Source | [archived source](../sources/transcripts/grusch-sol-2023-closing-downloaded.md) |
-| Location | lines 228-238 |
+| Location | [10:40] |
 
 > [18:09] yourself yeah uh certainly I would love to go back to my private life that would be great not something that I ever thought I'd be doing in my life you know I was on a very good trajectory in my intell career so I've made an Abrupt dip to the right become a public figure
 
@@ -1189,7 +1189,7 @@ Submission") |
 |---|---|
 | Attributed to | Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18, 2023-11-18 |
 | Source | [archived source](../sources/transcripts/grusch-sol-2023-closing-downloaded.md) |
-| Location | lines 404-410 |
+| Location | [18:09] |
 
 > [18:38] 2030 I would love to work on that as a staff member not necessarily as a panelist I think there needs to be luminaries that are the the best scholars in the in the US to to f you know be on that panel but certainly if the current or you know succeeding administrations would like to bring me on to support the panel in any way I mean I'll go get coffee just to sit in the room to listen to the discussions
 
@@ -1197,7 +1197,7 @@ Submission") |
 |---|---|
 | Attributed to | Sol Foundation Inaugural Symposium closing remarks, Stanford, 2023-11-17/18, 2023-11-18 |
 | Source | [archived source](../sources/transcripts/grusch-sol-2023-closing-downloaded.md) |
-| Location | lines 417-427 |
+| Location | [18:38] |
 
 > Good Evening, Thank you for your email. I had expressed specific concerns, both directly via email and through counsel, and those specific concerns have not yet been addressed in writing. Please reference those emails in this chain. DG
 
@@ -1214,7 +1214,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 20-32 |
+| Location | [0:33] |
 
 > [2:07] what's with this UFO stuff I was uh briefing a senior person uh at the CIA into a couple hundred special access programs uh so I was at the headquarters at the agency and you know after the indoctrination I was giving to the senior person this person um who worked with Lou alzando uh previously was like yeah have Dave have you ever heard of this guy Lou alzando he's running some UFO program at the Pentagon um we all think he's crazy
 
@@ -1222,7 +1222,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 57-69 |
+| Location | [2:07] |
 
 > [11:14] encounter with the information a very senior individual in the Intel Community came to me when uh I guess I was asking a lot of questions because I'm a very inquisitive guy and it was like hey we I need to introduce you to somebody uh you know he listed that certain person's academic credentials which were Beyond reproach you know PhD level education clearance resume was insane I'm like well okay sure I'll I'll talk to this person and and I ended up meeting that person in a you know uh a top secret facility and you know he started the discussing like hey there was a program I was on it and you know we were reverse engineering crash material that we've recovered over the decades
 
@@ -1230,7 +1230,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 287-305 |
+| Location | [11:14] |
 
 > [12:42] that spooked to me and that was like fall of 2019 and you know I don't take a guy's word for it
 
@@ -1238,7 +1238,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 321-324 (around [12:42]-[12:45]) |
+| Location | [12:42] |
 
 > [12:50] myself and my trusted colleagues that had a lot of lot of special accesses like me you know we cultivated our Network and we ultimately interviewed about 40 people or so all the way up to multistar generals directors of agencies mid-level guys that literally touched it worked inside of it
 
@@ -1246,7 +1246,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 325-333 |
+| Location | [12:50] |
 
 > [15:41] and I eventually went to Congress in December of 2022 and it's a crazy story why I took so long it's [ __ ] nuts um but I provided total about 11 and a half to 12 hours of uh you know classified testimony to the Congressional staffers and their lawyers for both the house and the Senate
 
@@ -1254,7 +1254,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 395-402 |
+| Location | [15:41] |
 
 > [26:47] died two years ago so in Spring 2021 I actually flew with a couple colleagues of mine to Las Vegas and I met with Senator Harry Reid about N9 months before he died
 
@@ -1262,7 +1262,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 668-672 |
+| Location | [26:47] |
 
 > [27:44] with me and he straight up says he's like yeah I knew we had UFO material I was denied access for decades I tried to get access and then he explains some of his efforts during AET app
 
@@ -1270,7 +1270,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 692-696 |
+| Location | [27:44] |
 
 > [30:54] freak out but I'm telling the truth here um so lockie Martin wanted to divest itself from this material at a specific facility that's known to me that I provided to the Inspector General
 
@@ -1278,7 +1278,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 767-772 |
+| Location | [30:54] |
 
 > [31:35] and um uh so they were going to Tech transfer it and the 21 or 22 million was actually for Bigalow Aerospace to build out you know facilities in Las Vegas and material analysis equipment and I've SE I have I saw the staff meeting slides I saw the paperwork like there's a paperwork Trail I've seen on this
 
@@ -1286,7 +1286,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 784-791 |
+| Location | [31:35] |
 
 > [32:00] this program and you know even Jim laty who ran the program who retired Dia officer PhD in engineering even made this disclosure in his book skinwalkers at the Pentagon uh page 152 to 153
 
@@ -1294,7 +1294,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 793-797 |
+| Location | [32:00] |
 
 > [41:02] answers that question so uh there were sens of human derve foreign intelligence that I read um so I had access to kind of the atip assap uh classified archives and I was like thumbing through everything and there's some other people were bringing me documents to evaluate and I'll never forget I had um what it say stolen by the US in assessment from a certain foreign adversary discussing the US reverse engineering program
 
@@ -1302,7 +1302,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 1023-1034 |
+| Location | [41:02] |
 
 > [42:53] Congress and they debriefed me uh from all my accesses over in that other sister agency and made up some bogus excuse like I shouldn't have been briefed to anything in the first place literally and basically gave me an administrative M middle finger like person non gra don't ever [ __ ] ask us about that [ __ ] again
 
@@ -1310,7 +1310,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 1066-1074 |
+| Location | [42:53] |
 
 > [46:09] episode I remember correctly you know Chuck Schumer and I knew about the amendment a couple months before I went public and that's kind of another reason why I did what I did I'm like [ __ ] I'm like the only guy that kind of has the opportunity to do this I know what's in the shoot so to speak that Chuck Schumer and his staff had with the Schumer M
 
@@ -1318,7 +1318,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 1140-1148 |
+| Location | [46:09] |
 
 > [53:57] we alone well the answer is we're not alone and I know that with 100% certainty which as an Intel officer you never say 100%
 
@@ -1326,7 +1326,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 1334-1337 |
+| Location | [53:57] |
 
 > [54:44] so they specifically the people on the program that handled the material that were in executive level briefings with Intel Community leaders and other folks over the years last years or so they did use the term extraterrestrial ET or whatever okay that isn't a possible origin but the Schumer Amendment if you read it it specifically uses non-human intelligence NH hii very deliberately
 
@@ -1334,7 +1334,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 1355-1364 |
+| Location | [54:44] |
 
 > [1:06:56] looking into this I mean they came after me so hard to try to revoke my clearance um ruined my career kicked me out of my agency and they accused me of everything you could possibly think of with like no evidence
 
@@ -1342,7 +1342,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 1660-1665 |
+| Location | [1:06:56] |
 
 > [1:09:27] is uh they showed my wife and I they can touch me at any time two times and it was very disturbing it was in conjunction with some other people getting a message like that that are to say publicly wellknown some that aren't publicly wellknown
 
@@ -1350,7 +1350,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 1723-1729 |
+| Location | [1:09:27] |
 
 > [1:24:14] physiology yeah no I was in I was in the room when uh I got be careful I don't want to uh I was in Washington DC with a very uh number of senior people that work for members of Congress put it that way um when I was still in government and I brought the people who worked on that stuff to the hill
 
@@ -1358,7 +1358,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 2092-2101 |
+| Location | [1:24:14] |
 
 > [2:32:10] in parallel and that's kind of why I helped found the soul foundation with Gary Nolan and Dr Peter skafish who's an anthropologist uh as well is we wanted to figure out the stem Outreach we wanted to figure out the public policy National policy to advise the US and its allies on this issue
 
@@ -1366,7 +1366,7 @@ Submission") |
 |---|---|
 | Attributed to | Joe Rogan Experience, 2023-11-21 |
 | Source | [archived source](../sources/transcripts/jre-2065-grusch-2023-downloaded.md) |
-| Location | lines 3818-3825 |
+| Location | [2:32:10] |
 
 > Good Afternoon, Thank you will review. Please address my specific concerns that I sent via email on 19 Nov 23. DG
 
