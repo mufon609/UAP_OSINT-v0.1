@@ -1097,14 +1097,27 @@ the contract (commit `472e547`):
 NodeContext + ResearchContext contract types. Pre-commit passes 0/0
 across all 7 gates.
 
-**Remaining for sessions 2 and 3.** Concrete migration list:
+**Session 2 progress (2026-05-05).** Helper lifts + 4 check
+migrations. Commits in order:
+
+- `979207f` — moved `extract_h2_sections` + `extract_section` from
+  validate.py to `lib/_common.py` (unblocks per-node check migrations
+  without inverting layering).
+- `1c34081` — migrated `manifest_archive_status` and
+  `manifest_extraction_type` to `scripts/checks/`. All three manifest
+  checks now consume `BaseContext.manifest_entries` from validate.py
+  main()'s single load. **C14 retired** (see entry below).
+- `7f5f86f` — migrated `governance_files` to `scripts/checks/`;
+  lifted `parse_frontmatter` to `lib/_common.py` to support it.
+- `d65451b` — migrated `chronological_tables` (first NodeContext check;
+  exercises ctx.text / ctx.rel end-to-end). All three Context layers
+  now exercised in the corpus pass.
+
+7 checks migrated total (2 from session 1 + 5 here). Pre-commit 0/0.
+
+**Remaining for session 3:**
 
 *validate.py per-check migrations:*
-- `manifest_archive_status`, `manifest_extraction_type` (global,
-  BaseContext) — couples with C14 below
-- `governance_files` (global, walks `meta/`)
-- `chronological_tables` (per-node, NodeContext) — blocked on moving
-  `extract_h2_sections` + `extract_section` to `lib/_common.py`
 - `verbatim_quotes` (per-node, NodeContext) — load-bearing
 - `conditionally_required` (per-node, NodeContext)
 - Inline-in-`validate_node` to lift as named modules:
@@ -1138,9 +1151,7 @@ across all 7 gates.
 - Replace inline orchestration in `validate_node` / `validate_artifact`
   / `main()` with explicit step lists per design doc §5
 - Consolidate `schema_version` compat helper into `lib/_common.py`
-  (issue #8 dedup falls out)
-- Move `extract_h2_sections` + `extract_section` to `lib/_common.py`
-  (unblocks `chronological_tables` and 4 other consumers)
+  (issue #8 dedup falls out — 4-site duplication still pending)
 - Delete legacy `Issue` classes in the three validators
 - Confirm CLI surface unchanged; pre-commit 0/0
 
@@ -1204,55 +1215,18 @@ adopts `checks.Issue`. Once the full migration ships:
   surfaces). Keep the human-readable output byte-identical so
   pre-commit logs stay stable across the migration window.
 
+**Session 2 progress (2026-05-05).** Five additional checks adopted
+the contract this session (commits `979207f` helper lift,
+`1c34081` two manifest checks, `7f5f86f` governance_files,
+`d65451b` chronological_tables). All three Context layers
+(BaseContext, NodeContext, ResearchContext) now exercised end-to-end
+in the corpus pass. 7/29 named checks migrated total. C13 closes
+when the remaining migrations land + the legacy Issue classes get
+deleted (session 3).
+
 ---
 
-### C14. Lift manifest checks into their own module
-
-`check_manifest_checksums`, `check_manifest_archive_status`, and
-`check_manifest_extraction_type` currently live in
-`scripts/validate.py` but operate on `sources/manifest.yaml`, not on
-any node. They're a third data layer (manifest) tucked into the node
-validator — concerns are well-named but the module assignment is
-arbitrary.
-
-**Refactor.** Move to `scripts/checks/manifest_*.py` so the layer
-separation is architectural, not a partitioning artifact. The
-manifest forms a coherent third layer alongside content nodes (`.md`)
-and research artifacts (`.yaml`); the check modules should reflect
-that.
-
-**Coupling.** Ships together with C11 (the move target —
-`scripts/checks/` per-check modules — only exists once C11 lands)
-and C13 (manifest checks adopt the same Issue contract as the rest).
-A single design pass lands all three.
-
-**Scope.** Mechanical move during C11's migration phase. Three check
-functions plus their helpers; no behavioral change. Manifest's
-helper functions in `lib/_common.py` (`_load_extraction_types`,
-`manifest_format`, related caches) stay in `lib/` — they're imported
-by the node validators too, which is the lockstep guarantee.
-
-**Priority.** Low. Couples to C11; same readiness signals.
-
-Surfaced: 2026-05-05 check-script audit — manifest checks were
-flagged as architecturally misplaced (third data layer in the node
-validator); the move couples to the broader decomposition.
-
-**Session 1 progress (2026-05-05).** First of three manifest checks
-migrated: `scripts/checks/manifest_checksums.py` (commit `472e547`).
-The check consumes `BaseContext.manifest_entries`; `validate.py main()`
-loads the manifest once at orchestrator entry and shares the parsed
-entries via Context, addressing the load-3x duplication for the
-migrated check. Manifest parse-failure handling moved from the
-per-check function to the orchestrator (one less defensive branch
-per check).
-
-**Remaining.** `manifest_archive_status` and `manifest_extraction_type`
-migrate to `scripts/checks/manifest_archive_status.py` and
-`scripts/checks/manifest_extraction_type.py`. Each adopts
-`BaseContext.manifest_entries` from the same shared load — fully
-closes the load-3x duplication. Mechanical work; ships in session 2
-alongside the rest of validate.py's globals (per C11 remaining list).
+### C14. *(retired 2026-05-05 — see commit `1c34081`; manifest checks fully migrated, load-3x duplication closed.)*
 
 ---
 
