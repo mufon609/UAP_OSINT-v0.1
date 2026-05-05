@@ -16,7 +16,7 @@ that isn't investigator-facing content (`/people/`, `/organizations/`,
 
 | Path | Role |
 |---|---|
-| `BACKLOG.md` | Deferred work register — items partitioned A (priority sequence) / B (parallel batch) / C (anytime) / Externally blocked |
+| `BACKLOG.md` | Deferred work register — items partitioned A (priority sequence) / B (parallel batch) / C (anytime) |
 | `conventions.md` | Evidentiary discipline + structural rationale (the *why* behind every rule) |
 | `roadmap.md` | Active toolkit-development work + completed phases |
 | `schema.yaml` | Machine-readable spec — node types, archetypes, kinds, required sections, vocabularies |
