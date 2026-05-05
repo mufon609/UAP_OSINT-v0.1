@@ -24,11 +24,11 @@ batch checking is genuinely useful (long source corpora, heavy
 synthesis fields, drafting from cold context).
 
 Usage:
-    check-vocab.py --artifact research/{slug}.yaml token [token ...]
+    check-vocab.py --artifact meta/research/{slug}.yaml token [token ...]
 
 Examples:
-    check-vocab.py --artifact research/oni.yaml affairs archived tenure
-    check-vocab.py --artifact research/oni.yaml "senior civilian" "Public Affairs"
+    check-vocab.py --artifact meta/research/oni.yaml affairs archived tenure
+    check-vocab.py --artifact meta/research/oni.yaml "senior civilian" "Public Affairs"
 
 Output (per token):
     ✓ present  — every significant sub-token is in the source pool
@@ -67,14 +67,14 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog=(
             "Examples:\n"
-            "  check-vocab.py --artifact research/oni.yaml affairs archived tenure\n"
-            "  check-vocab.py --artifact research/oni.yaml \"senior civilian\" \"Public Affairs\"\n"
+            "  check-vocab.py --artifact meta/research/oni.yaml affairs archived tenure\n"
+            "  check-vocab.py --artifact meta/research/oni.yaml \"senior civilian\" \"Public Affairs\"\n"
         ),
     )
     ap.add_argument(
         "--artifact",
         required=True,
-        help="Path to research/{slug}.yaml — sources are pooled from its primary_sources list",
+        help="Path to meta/research/{slug}.yaml — sources are pooled from its primary_sources list",
     )
     ap.add_argument(
         "tokens",

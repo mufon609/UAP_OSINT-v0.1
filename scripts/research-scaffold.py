@@ -2,7 +2,7 @@
 """
 Scaffold an empty research artifact for a target node.
 
-Produces research/{slug}.yaml with:
+Produces meta/research/{slug}.yaml with:
   - required top-level keys populated with defaults
   - empty lists for each content section
   - `rumors` section present only when target_node type ∈
@@ -38,7 +38,7 @@ except ImportError:
 # =============================================================================
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-RESEARCH_DIR = REPO_ROOT / "research"
+RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
 
 # Target-node types that carry a `rumors` section on their research artifact
@@ -229,7 +229,7 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     """Assemble the research-artifact YAML dict for the given target."""
     today = date.today().isoformat()
     artifact = {
-        "id": f"research/{slug}",
+        "id": f"meta/research/{slug}",
         "type": "research-artifact",
         "schema_version": 1,
         "target_node": f"{TYPE_DIRS[node_type]}/{slug}",

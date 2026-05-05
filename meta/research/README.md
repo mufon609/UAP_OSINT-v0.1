@@ -1,15 +1,15 @@
 ---
-id: research/README
+id: meta/research/README
 type: meta
 schema_version: 1
 created: 2026-04-17
 ---
 
-# /research/
+# /meta/research/
 
 Structured investigation records (research artifacts), one per content
-node. Each file is pure YAML at `research/{slug}.yaml` where `{slug}`
-matches the target node's slug.
+node. Each file is pure YAML at `meta/research/{slug}.yaml` where
+`{slug}` matches the target node's slug.
 
 ## What these are
 
@@ -56,5 +56,5 @@ populates the sections per `prompts/build.md`. Phase II
 artifact. Phase III (`review-coverage.py`) verifies the two layers are
 in coverage alignment.
 
-Current inventory lives on disk under `research/`. Use
+Current inventory lives on disk under `meta/research/`. Use
 `validate-research.py` to audit artifact integrity.

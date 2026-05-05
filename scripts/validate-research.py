@@ -64,7 +64,7 @@ Checks (per schema.yaml research-artifact.invariants):
     III semantic-review territory.
 
 Usage:
-  validate-research.py                  # validate all research/*.yaml
+  validate-research.py                  # validate all meta/research/*.yaml
   validate-research.py PATH             # validate one file
   validate-research.py --quiet          # errors only
 """
@@ -96,7 +96,7 @@ except ImportError:
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
 MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
-RESEARCH_DIR = REPO_ROOT / "research"
+RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 SOURCES_DIR = REPO_ROOT / "sources"
 
 RUMORS_TYPES = {"person", "organization", "event", "location"}
@@ -488,7 +488,7 @@ def validate_artifact(path, schema, manifest_paths):
         return issues
 
     # --- id matches file path ---
-    expected_id = f"research/{path.stem}"
+    expected_id = f"meta/research/{path.stem}"
     if data.get("id") != expected_id:
         issues.append(Issue(rel, "error",
             f"id {data.get('id')!r} does not match file path ({expected_id!r})"))

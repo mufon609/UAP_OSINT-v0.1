@@ -73,7 +73,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 SCRIPTS_DIR = REPO_ROOT / "scripts"
 SOURCES_DIR = REPO_ROOT / "sources"
 BUILD_FROM_RESEARCH = SCRIPTS_DIR / "build-from-research.py"
-RESEARCH_DIR = REPO_ROOT / "research"
+RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 
 TYPE_DIRS = {
     "person": "people", "organization": "organizations", "document": "documents",
@@ -601,9 +601,9 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument("path", nargs="?",
-                        help="Research artifact path (research/{slug}.yaml)")
+                        help="Research artifact path (meta/research/{slug}.yaml)")
     parser.add_argument("--all", action="store_true",
-                        help="Review every artifact under research/")
+                        help="Review every artifact under meta/research/")
     parser.add_argument("--quiet", action="store_true",
                         help="Errors only; suppress info/skip notices")
     args = parser.parse_args()

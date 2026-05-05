@@ -459,21 +459,21 @@ types:
 
   # --- RESEARCH-ARTIFACT --------------------------------------------------
   # Structured investigation record backing each node. Stored at
-  # /research/{slug}.yaml as pure YAML (not markdown). One artifact per
-  # content node; target_node declares the pointer.
+  # /meta/research/{slug}.yaml as pure YAML (not markdown). One artifact
+  # per content node; target_node declares the pointer.
   #
   # The research artifact is the canonical record of what the repository
   # knows about a node's subject. Nodes are regeneratable from research
   # artifacts via scripts/build-from-research.py (Phase II of the layered
   # build process).
   research-artifact:
-    path_prefix: research/
+    path_prefix: meta/research/
     format: yaml
 
     # Top-level required keys — the research artifact is a flat YAML dict
     # (no markdown frontmatter / body distinction since it's pure YAML).
     required_keys:
-      - id                    # research/{slug}; must match file path
+      - id                    # meta/research/{slug}; must match file path
       - type                  # literal: research-artifact
       - schema_version        # validated against schema.compatible_with
       - target_node           # {type}/{slug} of the node this artifact backs

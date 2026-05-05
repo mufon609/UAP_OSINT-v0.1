@@ -2,7 +2,7 @@
 """
 Regenerate a node body from its research artifact (Phase II of layered build).
 
-Reads /research/{slug}.yaml and rewrites /{type}/{slug}.md. Frontmatter is
+Reads /meta/research/{slug}.yaml and rewrites /{type}/{slug}.md. Frontmatter is
 preserved from the existing node; body sections (H1 title onward) are
 replaced entirely by content derived from the artifact.
 
@@ -77,9 +77,9 @@ byte-for-byte identical across runs. Entries are rendered in id-sorted
 order (q1, q2, …); no date-of-build or wall-clock state is embedded.
 
 USAGE:
-  build-from-research.py research/{slug}.yaml
-  build-from-research.py research/{slug}.yaml --dry-run
-  build-from-research.py research/{slug}.yaml --no-validate
+  build-from-research.py meta/research/{slug}.yaml
+  build-from-research.py meta/research/{slug}.yaml --dry-run
+  build-from-research.py meta/research/{slug}.yaml --no-validate
 
   --dry-run        : render to stdout only — do not write or invoke associate/validate
   --no-validate    : skip pre-flight research-artifact validation and
@@ -2169,7 +2169,7 @@ def main():
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("artifact", help="Path to research artifact (research/{slug}.yaml)")
+    parser.add_argument("artifact", help="Path to research artifact (meta/research/{slug}.yaml)")
     parser.add_argument("--dry-run", action="store_true",
                         help="Render to stdout, do not write node or invoke associate/validate")
     parser.add_argument("--no-validate", action="store_true",

@@ -18,8 +18,10 @@ here makes lockstep mechanical instead of comment-discipline-based.
 
 Investigator-facing content layers (`/people/`, `/organizations/`,
 `/documents/`, `/events/`, `/transcripts/`, `/media/`, `/locations/`,
-`/findings/`, `/research/`, `/sources/`) remain flat — the flatness
-rule is about investigator UX on browseable content, not tooling.
+`/findings/`, `/sources/`) remain flat — the flatness rule is about
+investigator UX on browseable content, not tooling. Research artifacts
+live under `/meta/research/` (governance / structured-data backing
+tier per `meta/conventions.md`), not the content tier.
 """
 
 import html

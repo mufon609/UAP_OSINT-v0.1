@@ -44,7 +44,7 @@ from scripts.lib._common import (  # noqa: E402
     manifest_format,
 )
 
-RESEARCH_DIR = LIB_REPO_ROOT / "research"
+RESEARCH_DIR = LIB_REPO_ROOT / "meta" / "research"
 
 
 # --- Location-form classification -------------------------------------------
@@ -377,7 +377,7 @@ def main(argv=None):
         description="Diagnostic for quote source.location refs (BACKLOG C1 Phase B)",
     )
     p.add_argument("path", nargs="?", default=None,
-                   help="research artifact YAML or directory (default: all of research/)")
+                   help="research artifact YAML or directory (default: all of meta/research/)")
     p.add_argument("--all", action="store_true",
                    help="include canonical-form quotes in output (default: only deprecated/other)")
     p.add_argument("--csv", action="store_true",

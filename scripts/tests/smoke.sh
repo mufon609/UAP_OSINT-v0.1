@@ -120,8 +120,8 @@ if [ "$rc" -ne 0 ]; then
     failures+=("research-scaffold — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
     fail=$((fail + 1))
 else
-    created_files+=("research/__smoke-doc-gov.yaml")
-    artifact_out="$(python3 scripts/validate-research.py research/__smoke-doc-gov.yaml --quiet 2>&1)"
+    created_files+=("meta/research/__smoke-doc-gov.yaml")
+    artifact_out="$(python3 scripts/validate-research.py meta/research/__smoke-doc-gov.yaml --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research artifact — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -155,8 +155,8 @@ for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/_
         continue
     fi
     m_slug="${m_target##*/}"
-    created_files+=("research/$m_slug.yaml")
-    artifact_out="$(python3 scripts/validate-research.py "research/$m_slug.yaml" --quiet 2>&1)"
+    created_files+=("meta/research/$m_slug.yaml")
+    artifact_out="$(python3 scripts/validate-research.py "meta/research/$m_slug.yaml" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $m_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -165,7 +165,7 @@ for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/_
         pass=$((pass + 1))
     fi
     # Exercise F.4b renderer path
-    artifact_out="$(python3 scripts/build-from-research.py "research/$m_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build-from-research.py "meta/research/$m_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("build-from-research $m_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -173,7 +173,7 @@ for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/_
     else
         pass=$((pass + 1))
     fi
-    artifact_out="$(python3 scripts/review-coverage.py "research/$m_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/review-coverage.py "meta/research/$m_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("review-coverage $m_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -198,8 +198,8 @@ for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-
         continue
     fi
     tk_slug="${tk_target##*/}"
-    created_files+=("research/$tk_slug.yaml")
-    artifact_out="$(python3 scripts/validate-research.py "research/$tk_slug.yaml" --quiet 2>&1)"
+    created_files+=("meta/research/$tk_slug.yaml")
+    artifact_out="$(python3 scripts/validate-research.py "meta/research/$tk_slug.yaml" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $tk_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -233,8 +233,8 @@ for loc_target in "locations/__smoke-location"; do
         continue
     fi
     loc_slug="${loc_target##*/}"
-    created_files+=("research/$loc_slug.yaml")
-    artifact_out="$(python3 scripts/validate-research.py "research/$loc_slug.yaml" --quiet 2>&1)"
+    created_files+=("meta/research/$loc_slug.yaml")
+    artifact_out="$(python3 scripts/validate-research.py "meta/research/$loc_slug.yaml" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $loc_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -243,7 +243,7 @@ for loc_target in "locations/__smoke-location"; do
         pass=$((pass + 1))
     fi
     # Exercise F.6b renderer path
-    artifact_out="$(python3 scripts/build-from-research.py "research/$loc_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build-from-research.py "meta/research/$loc_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("build-from-research $loc_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -251,7 +251,7 @@ for loc_target in "locations/__smoke-location"; do
     else
         pass=$((pass + 1))
     fi
-    artifact_out="$(python3 scripts/review-coverage.py "research/$loc_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/review-coverage.py "meta/research/$loc_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("review-coverage $loc_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -285,8 +285,8 @@ for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-cont
         continue
     fi
     ok_slug="${ok_target##*/}"
-    created_files+=("research/$ok_slug.yaml")
-    artifact_out="$(python3 scripts/validate-research.py "research/$ok_slug.yaml" --quiet 2>&1)"
+    created_files+=("meta/research/$ok_slug.yaml")
+    artifact_out="$(python3 scripts/validate-research.py "meta/research/$ok_slug.yaml" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $ok_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -295,7 +295,7 @@ for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-cont
         pass=$((pass + 1))
     fi
     # Exercise F.5b renderer path
-    artifact_out="$(python3 scripts/build-from-research.py "research/$ok_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build-from-research.py "meta/research/$ok_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("build-from-research $ok_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -303,7 +303,7 @@ for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-cont
     else
         pass=$((pass + 1))
     fi
-    artifact_out="$(python3 scripts/review-coverage.py "research/$ok_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/review-coverage.py "meta/research/$ok_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("review-coverage $ok_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")

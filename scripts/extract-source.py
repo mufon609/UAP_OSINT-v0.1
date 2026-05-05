@@ -10,7 +10,7 @@ locations.
 Two modes:
 
   Batch mode — extract every primary source in a research artifact:
-    extract-source.py --artifact research/{slug}.yaml
+    extract-source.py --artifact meta/research/{slug}.yaml
 
   Single-source mode — extract one source file:
     extract-source.py --source government/file.pdf
@@ -186,7 +186,7 @@ def do_batch(artifact_path):
         return
 
     slug = artifact_path.stem
-    print(f"Extracting {len(sources)} source(s) for research/{slug}.yaml:\n")
+    print(f"Extracting {len(sources)} source(s) for meta/research/{slug}.yaml:\n")
 
     failures = 0
     for i, src in enumerate(sources):
