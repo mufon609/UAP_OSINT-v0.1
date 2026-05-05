@@ -1027,68 +1027,45 @@ forcing shape; codified the trigger condition here.
 
 ---
 
-### C11. Decompose validators into per-check modules with shared `Issue` contract
+### C11. Decompose validators into per-check modules
 
-`scripts/validate.py` (1344 LOC, 9 named checks) and
-`scripts/validate-research.py` (2031 LOC, 26 named checks) are
+`scripts/validate.py` (1344 LOC, 9 named checks),
+`scripts/validate-research.py` (2031 LOC, 26 named checks), and
+`scripts/review-coverage.py` (674 LOC, 4 cross-layer checks) are
 megafiles. Each check is internally coherent but the file-level
 grouping forces every contributor reading "where does the
 verbatim-quote check live" to scan a thousand-plus lines.
-`scripts/review-coverage.py` (674 LOC, 4 cross-layer checks) carries
-the same shape at a smaller scale. Each script also reimplements its
-own error/warning reporting with cosmetic differences —
-`validate.py` and `validate-research.py` use `errors`/`warnings`
-lists; `review-coverage.py` has its own `Issue` class.
 
-**Refactor scope (cohesive, single design pass).**
+**Refactor.** Each named check moves to
+`scripts/checks/{check_name}.py`, exporting a callable with a stable
+signature. The current validators become orchestrators that import +
+sequence the checks. Naming is already stable per
+`meta/conventions.md` "Check naming"; the rename to topic names
+already shipped, so module names follow.
 
-1. **Per-check module decomposition.** Each named check moves to
-   `scripts/checks/{check_name}.py`, exporting a callable with a
-   stable signature. The current validators become orchestrators
-   that import + sequence the checks. Naming is already stable per
-   `meta/conventions.md` "Check naming"; the rename to topic names
-   already shipped, so the module names follow.
+**Coupling.** Ships together with C13 (shared Issue / Report
+contract — the Check callable signature couples to the dataclass's
+shape) and C14 (manifest checks lift, which adopts the same
+contract during the same migration). A single design pass lands all
+three. Shipping C11 without C13 leaves three reporting shapes
+scattered across many files (worse than today); shipping C11
+without C14 leaves the manifest checks orphaned in the otherwise-
+emptied `validate.py`.
 
-2. **Shared `Issue` / `Report` contract.** Single dataclass
-   (path, line, severity, check_name, message); every check yields
-   it; the orchestrator aggregates. Replaces the three reporting
-   shapes in flight today. Makes pre-commit output uniform and
-   machine-parseable; enables a future `--format json` mode.
+**Scope.** Multi-session refactor. Design pass first (Check interface
++ Issue dataclass + orchestrator shape) shared with C13/C14; then
+mechanical move of ~39 check functions; then orchestrator rewrite;
+then end-to-end verification that pre-commit output and behavior are
+unchanged. Test isolation pays off incidentally — each check becomes
+individually testable in a way the megafile shape doesn't support.
 
-3. **Manifest checks lift out.** `check_manifest_checksums`,
-   `check_manifest_archive_status`, `check_manifest_extraction_type`
-   currently live in `validate.py` but operate on
-   `sources/manifest.yaml`, not on any node. They're a third data
-   layer (manifest) tucked into the node validator. Move to
-   `scripts/checks/manifest_*.py` so the layer separation is
-   architectural, not a partitioning artifact.
-
-**Why one entry, not three.** The three sub-items couple at the
-interface design layer — the `Check` callable signature, the
-`Issue` dataclass shape, and the orchestrator's aggregation logic
-all need to land together for the decomposition to be coherent.
-Shipping (1) without (2) leaves three reporting shapes scattered
-across many files (worse than today). Shipping (2) without (1)
-adds a new contract no caller uses. Shipping (3) without (1) splits
-the manifest layer into a one-off module while leaving the node
-validators monolithic. Single design pass; single ship.
-
-**Scope.** Multi-session refactor. Design pass first (Check
-interface + Issue dataclass + orchestrator shape); then mechanical
-move of ~39 check functions across three validators; then
-orchestrator rewrite; then end-to-end verification that pre-commit
-output and behavior are unchanged. Test isolation pays off
-incidentally — each check becomes individually testable in a way
-the megafile shape doesn't support.
-
-**Priority.** Low. The current shape works (corpus passes 0/0;
-gates run in ~50s; lockstep is mechanical via `lib/_common.py`).
-The refactor is professional-shape work, not a correctness fix.
-Worth doing when (a) a contributor session has appetite for
-multi-file refactoring, (b) a new validator is about to be added
-(decomposition makes the shape obvious), or (c) a check needs
-unit-test coverage in isolation (current shape forces fixture-based
-tests).
+**Priority.** Low. The current shape works (corpus passes 0/0; gates
+run in ~50s; lockstep is mechanical via `lib/_common.py`). The
+refactor is professional-shape work, not a correctness fix. Worth
+doing when (a) a contributor session has appetite for multi-file
+refactoring, (b) a new validator is about to be added (decomposition
+makes the shape obvious), or (c) a check needs unit-test coverage in
+isolation (current shape forces fixture-based tests).
 
 **Out of scope.** Auto-discovering checks from filesystem walks —
 explicit step lists in the orchestrator make ordering and
@@ -1099,7 +1076,78 @@ Surfaced: 2026-05-05 check-script audit prompted by adding
 review-coverage as gate 7 — surveyed `scripts/validate.py`,
 `scripts/validate-research.py`, `scripts/review-coverage.py`, and
 `scripts/lib/_common.py`; confirmed the layer separation is
-architectural (don't merge) but the per-check decomposition + shared
-`Issue` contract + manifest module split are the genuine ad-hoc
-shape worth refactoring.
+architectural (don't merge) but per-check decomposition is the
+genuine ad-hoc shape worth refactoring.
+
+---
+
+### C13. Shared `Issue` / `Report` contract across validators
+
+Each Python validator reimplements its own error/warning reporting
+with cosmetic differences — `scripts/validate.py` and
+`scripts/validate-research.py` use `errors` / `warnings` lists;
+`scripts/review-coverage.py` has its own `Issue` class. Three
+substantively identical shapes, three implementations.
+
+**Refactor.** Single dataclass (path, line, severity, check_name,
+message); every check yields it; the orchestrator aggregates.
+Replaces the three reporting shapes in flight today. Makes pre-commit
+output uniform and machine-parseable; enables a future `--format
+json` mode for editor / CI integrations.
+
+**Coupling.** Ships together with C11 (per-check module
+decomposition — without callers, the new contract has nothing to
+adopt) and C14 (manifest checks lift — adopts the same contract
+during the same migration). The Check callable signature, the Issue
+dataclass shape, and the orchestrator's aggregation logic must land
+together for the decomposition to be coherent. Shipping C13 without
+C11 adds a contract no caller uses.
+
+**Scope.** Design pass shared with C11/C14: define the dataclass,
+the Check callable signature that yields it, and the orchestrator's
+aggregation logic. Then mechanical replacement of the three
+reporting shapes during C11's module migration. No behavioral change
+visible to contributors — pre-commit output stays the same shape;
+the dataclass enables future format flags but doesn't ship them.
+
+**Priority.** Low. Couples to C11; same readiness signals.
+
+Surfaced: 2026-05-05 check-script audit — three validators with
+substantively identical reporting shapes implemented three different
+ways; consolidating reduces maintenance surface and unlocks
+machine-parseable output.
+
+---
+
+### C14. Lift manifest checks into their own module
+
+`check_manifest_checksums`, `check_manifest_archive_status`, and
+`check_manifest_extraction_type` currently live in
+`scripts/validate.py` but operate on `sources/manifest.yaml`, not on
+any node. They're a third data layer (manifest) tucked into the node
+validator — concerns are well-named but the module assignment is
+arbitrary.
+
+**Refactor.** Move to `scripts/checks/manifest_*.py` so the layer
+separation is architectural, not a partitioning artifact. The
+manifest forms a coherent third layer alongside content nodes (`.md`)
+and research artifacts (`.yaml`); the check modules should reflect
+that.
+
+**Coupling.** Ships together with C11 (the move target —
+`scripts/checks/` per-check modules — only exists once C11 lands)
+and C13 (manifest checks adopt the same Issue contract as the rest).
+A single design pass lands all three.
+
+**Scope.** Mechanical move during C11's migration phase. Three check
+functions plus their helpers; no behavioral change. Manifest's
+helper functions in `lib/_common.py` (`_load_extraction_types`,
+`manifest_format`, related caches) stay in `lib/` — they're imported
+by the node validators too, which is the lockstep guarantee.
+
+**Priority.** Low. Couples to C11; same readiness signals.
+
+Surfaced: 2026-05-05 check-script audit — manifest checks were
+flagged as architecturally misplaced (third data layer in the node
+validator); the move couples to the broader decomposition.
 
