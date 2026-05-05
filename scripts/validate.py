@@ -107,7 +107,9 @@ from lib._common import (
 # Per-check modules (C11 / C13 / C14 — pilot wiring; sessions 2 and 3
 # migrate the remaining checks against the same contract).
 from checks import BaseContext
+from checks import manifest_archive_status as ck_manifest_archive_status
 from checks import manifest_checksums as ck_manifest_checksums
+from checks import manifest_extraction_type as ck_manifest_extraction_type
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
@@ -363,147 +365,12 @@ def check_chronological_tables(text, rel):
 # in main()) so the migrated check can assume a clean entry list.
 
 
-# =============================================================================
-# Manifest archive_status consistency check
-#
-# `archive_status` is a 2-bit presence indicator per sources/manifest.yaml:
-#   bit 0 (value 1) = locally archived (status == archived AND path set)
-#   bit 1 (value 2) = archived on the Internet Archive Wayback Machine
-#                     (wayback_date set)
-#
-# This check enforces that the declared archive_status bits match the
-# signals in the rest of the entry (status / path / wayback_date), so
-# drift between the composite indicator and the underlying facts fails
-# loudly. Auto-maintenance is done by manifest.py add (bit 0) and
-# archive.py (bit 1) — this check catches manual edits or bugs that
-# would leave the indicator stale.
-# =============================================================================
-
-
-def check_manifest_archive_status():
-    """Verify archive_status is present, in-range, and consistent with
-    the rest of each manifest entry's state. Runs after the checksum
-    check; shares the same parse-failure early-exit.
-    """
-    issues = []
-    if not MANIFEST_PATH.exists():
-        return issues
-
-    try:
-        with open(MANIFEST_PATH) as f:
-            entries = yaml.safe_load(f) or []
-    except yaml.YAMLError:
-        # Checksum check already reported the parse failure
-        return issues
-
-    if not isinstance(entries, list):
-        return issues
-
-    for entry in entries:
-        if not isinstance(entry, dict):
-            continue
-        url = entry.get("url", "(no url)")
-        rel = "sources/manifest.yaml"
-
-        arch = entry.get("archive_status")
-        if arch is None:
-            issues.append(Issue(rel, "error",
-                f"archive_status missing on entry (URL: {url}) — "
-                f"required field per schema.yaml manifest_entry.required"))
-            continue
-        if not isinstance(arch, int) or arch not in (0, 1, 2, 3):
-            issues.append(Issue(rel, "error",
-                f"archive_status must be 0, 1, 2, or 3; got {arch!r} "
-                f"(URL: {url})"))
-            continue
-
-        locally_archived = entry.get("status") == "archived" and bool(entry.get("path"))
-        wayback_archived = bool(entry.get("wayback_date"))
-        expected = (1 if locally_archived else 0) | (2 if wayback_archived else 0)
-
-        if arch != expected:
-            # Compose a specific message by decomposing the mismatch
-            mismatches = []
-            if (arch & 1) != (expected & 1):
-                if expected & 1:
-                    mismatches.append(
-                        "bit 0 should be SET (status == archived AND path is set) "
-                        "but archive_status indicates not-locally-archived"
-                    )
-                else:
-                    mismatches.append(
-                        "bit 0 is SET but the entry is not locally archived "
-                        "(status != archived OR path missing)"
-                    )
-            if (arch & 2) != (expected & 2):
-                if expected & 2:
-                    mismatches.append(
-                        "bit 1 should be SET (wayback_date is set) but "
-                        "archive_status indicates not-in-Wayback"
-                    )
-                else:
-                    mismatches.append(
-                        "bit 1 is SET but wayback_date is not set"
-                    )
-            issues.append(Issue(rel, "error",
-                f"archive_status={arch} inconsistent (URL: {url}) — "
-                f"expected {expected}. " + "; ".join(mismatches)))
-
-        if entry.get("wayback_skip") and entry.get("wayback_date"):
-            issues.append(Issue(rel, "error",
-                f"entry has both wayback_skip: true and wayback_date set "
-                f"(URL: {url}) — these are contradictory. Either the URL "
-                f"is skippable (wayback_skip) or it has a Wayback snapshot "
-                f"(wayback_date); not both."))
-
-    return issues
-
-
-# =============================================================================
-# Manifest extraction_type enum check
-#
-# Optional field per schema.yaml manifest_entry.extraction_type_values:
-# [text-native, ocr-scan]. Drives ingestion-pipeline behavior, not
-# reader-visible rendering. Absence defaults to text-native (legacy
-# entries pre-field). When present, the value must be one of the
-# enum members; unknown values fail loudly so typos can't silently
-# disable downstream OCR-handling logic.
-# =============================================================================
-
-
-_EXTRACTION_TYPE_VALUES = ("text-native", "ocr-scan", "extraction-lossy")
-
-
-def check_manifest_extraction_type():
-    """Verify extraction_type values against the schema enum when present."""
-    issues = []
-    if not MANIFEST_PATH.exists():
-        return issues
-
-    try:
-        with open(MANIFEST_PATH) as f:
-            entries = yaml.safe_load(f) or []
-    except yaml.YAMLError:
-        # Checksum check already reported the parse failure
-        return issues
-
-    if not isinstance(entries, list):
-        return issues
-
-    rel = "sources/manifest.yaml"
-    for entry in entries:
-        if not isinstance(entry, dict):
-            continue
-        if "extraction_type" not in entry:
-            continue
-        et = entry.get("extraction_type")
-        if et not in _EXTRACTION_TYPE_VALUES:
-            url = entry.get("url", "(no url)")
-            issues.append(Issue(rel, "error",
-                f"extraction_type must be one of {list(_EXTRACTION_TYPE_VALUES)}; "
-                f"got {et!r} (URL: {url})"))
-
-    return issues
+# manifest_archive_status + manifest_extraction_type checks moved to
+# scripts/checks/manifest_archive_status.py and
+# scripts/checks/manifest_extraction_type.py during the C11 session-2
+# migration (2026-05-05). Both consume BaseContext.manifest_entries from
+# the orchestrator's single manifest load; the load-3x duplication that
+# affected the legacy manifest checks is now fully closed (C14 retires).
 
 
 # =============================================================================
@@ -1208,14 +1075,17 @@ def main():
 
     base_ctx = BaseContext(schema=schema, manifest_entries=manifest_entries)
 
-    # Source-integrity backstop (manifest-checksum check). Runs once per invocation, before
-    # per-node checks. "Do I trust my sources?" is a precondition for
-    # interpreting node content; a checksum mismatch means downstream quote
-    # verifications may be validating against altered source material.
-    # Migrated to scripts/checks/manifest_checksums.py (C11 pilot).
+    # Source-integrity backstop. Runs once per invocation, before per-node
+    # checks. "Do I trust my sources?" is a precondition for interpreting
+    # node content; a checksum mismatch means downstream quote verifications
+    # may be validating against altered source material.
+    #
+    # All three manifest checks consume BaseContext.manifest_entries — the
+    # orchestrator loads the manifest once (above) and shares. C14 retired
+    # at session-2 close (2026-05-05).
     all_issues.extend(ck_manifest_checksums.check(base_ctx))
-    all_issues.extend(check_manifest_archive_status())
-    all_issues.extend(check_manifest_extraction_type())
+    all_issues.extend(ck_manifest_archive_status.check(base_ctx))
+    all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
 
     # Governance-file validation (governance-frontmatter check). Every .md under meta/ carries
     # id / type / schema_version / created frontmatter; templates also have

@@ -1,0 +1,102 @@
+"""manifest-archive-status check — global BaseContext check.
+
+``archive_status`` is a 2-bit presence indicator on every manifest entry:
+
+  - bit 0 (value 1) = locally archived (status == archived AND path set)
+  - bit 1 (value 2) = archived on the Internet Archive Wayback Machine
+                      (wayback_date set)
+
+Combined values 0..3 record presence in {none, local-only, wayback-only,
+both}. Auto-maintained by ``manifest.py add`` (sets bit 0 on local
+archival) and ``archive.py`` (sets bit 1 on Wayback find or successful
+SPN submit). This check enforces the declared bits match the rest of
+each entry's state — drift between the composite indicator and the
+underlying facts (status / path / wayback_date) fails loudly.
+
+Catches manual edits or bugs that would leave the indicator stale.
+Also catches contradictory ``wayback_skip: true`` + ``wayback_date``
+combinations (a URL is either skippable from Wayback OR has a
+snapshot, not both).
+
+Consumes ``BaseContext.manifest_entries`` from the orchestrator's
+single manifest load (closes manifest-load-3x duplication along with
+the other manifest checks).
+"""
+
+from checks import Issue
+
+
+CHECK_NAME = "manifest_archive_status"
+MANIFEST_REL = "sources/manifest.yaml"
+
+
+def check(ctx):
+    """Yield error-level Issue for any entry whose archive_status is
+    missing, out-of-range, inconsistent with status / path / wayback_date,
+    or contradicted by wayback_skip + wayback_date both being set."""
+    for entry in ctx.manifest_entries:
+        if not isinstance(entry, dict):
+            continue
+        url = entry.get("url", "(no url)")
+
+        arch = entry.get("archive_status")
+        if arch is None:
+            yield Issue(
+                MANIFEST_REL, "error",
+                f"archive_status missing on entry (URL: {url}) — "
+                f"required field per schema.yaml manifest_entry.required",
+                check_name=CHECK_NAME,
+            )
+            continue
+        if not isinstance(arch, int) or arch not in (0, 1, 2, 3):
+            yield Issue(
+                MANIFEST_REL, "error",
+                f"archive_status must be 0, 1, 2, or 3; got {arch!r} "
+                f"(URL: {url})",
+                check_name=CHECK_NAME,
+            )
+            continue
+
+        locally_archived = entry.get("status") == "archived" and bool(entry.get("path"))
+        wayback_archived = bool(entry.get("wayback_date"))
+        expected = (1 if locally_archived else 0) | (2 if wayback_archived else 0)
+
+        if arch != expected:
+            mismatches = []
+            if (arch & 1) != (expected & 1):
+                if expected & 1:
+                    mismatches.append(
+                        "bit 0 should be SET (status == archived AND path is set) "
+                        "but archive_status indicates not-locally-archived"
+                    )
+                else:
+                    mismatches.append(
+                        "bit 0 is SET but the entry is not locally archived "
+                        "(status != archived OR path missing)"
+                    )
+            if (arch & 2) != (expected & 2):
+                if expected & 2:
+                    mismatches.append(
+                        "bit 1 should be SET (wayback_date is set) but "
+                        "archive_status indicates not-in-Wayback"
+                    )
+                else:
+                    mismatches.append(
+                        "bit 1 is SET but wayback_date is not set"
+                    )
+            yield Issue(
+                MANIFEST_REL, "error",
+                f"archive_status={arch} inconsistent (URL: {url}) — "
+                f"expected {expected}. " + "; ".join(mismatches),
+                check_name=CHECK_NAME,
+            )
+
+        if entry.get("wayback_skip") and entry.get("wayback_date"):
+            yield Issue(
+                MANIFEST_REL, "error",
+                f"entry has both wayback_skip: true and wayback_date set "
+                f"(URL: {url}) — these are contradictory. Either the URL "
+                f"is skippable (wayback_skip) or it has a Wayback snapshot "
+                f"(wayback_date); not both.",
+                check_name=CHECK_NAME,
+            )
