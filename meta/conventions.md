@@ -598,6 +598,44 @@ extrapolate the content-layer rule onto the tooling or governance
 layer — and don't extrapolate organized-by-role onto the content
 layer.
 
+### Inside `/scripts/` — contributor-facing root vs gate-only `tests/`
+
+`/scripts/` follows a three-tier sub-rule organized by caller, not by
+content type. New scripts land at the tier that matches who invokes
+them:
+
+- **`/scripts/` root**: contributor-facing tools that contributors run
+  directly during a build session. Includes the build pipeline
+  (`new.py`, `extract-source.py`, `research-scaffold.py`,
+  `build-from-research.py`, `associate.py`, `manifest.py`,
+  `archive.py`, `transcribe.py`), validators that contributors run
+  after edits (`validate.py`, `validate-research.py`,
+  `review-coverage.py`), refresh utilities (`build-state.py`), and
+  diagnostics (`check-vocab.py`, `normalize-locations.py`). A
+  contributor's `ls scripts/` shows everything they might invoke.
+- **`/scripts/tests/`**: gate-internal infrastructure that exists ONLY
+  to support the pre-commit chain — the orchestrator (`pre-commit.sh`)
+  plus its internal regression tests (`help-check.sh`, `smoke.sh`,
+  `test_stopwords.py`). No contributor invokes these directly; the
+  directory is the gate chain's private toolkit.
+- **`/scripts/lib/`**: shared cross-cutting helpers (`_common.py`)
+  imported by multiple scripts in both tiers above. Kept separate so
+  the cross-script lockstep guarantee — `validate.py`'s verbatim-quote
+  check, `validate-research.py`'s prose-drift check, and
+  `review-coverage.py`'s description-drift check all extracting source
+  bytes through the same `extract_source_text` and tokenizing through
+  the same `STOPWORDS` set — is mechanical rather than
+  comment-discipline-based.
+
+The split is by caller, not by whether the pre-commit chain runs the
+script. Most root-tier validators ARE gate-invoked — contributors
+also run them frequently after edits. Diagnostics like
+`check-vocab.py` and `normalize-locations.py` are NEVER gate-invoked
+(they exit 0 on informational findings by design and so can't be
+gates) but still live at root because contributors invoke them. New
+scripts follow the rule: contributor invocation → root; gate-only
+support code → `tests/`; shared helper code → `lib/`.
+
 ### Inside `/meta/` — root vs subdirs
 
 `/meta/` itself follows a sub-rule that grew implicitly and is
