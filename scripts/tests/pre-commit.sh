@@ -11,10 +11,17 @@
 #                                         governance-file + conditionally_required
 #   5. python3 scripts/validate-research.py
 #                                       — research-artifact structural check
-#   6. python3 scripts/build-state.py --check
+#   6. python3 scripts/review-coverage.py --all
+#                                       — cross-layer check (artifact ↔ rendered
+#                                         node): coverage / boundary /
+#                                         stub-linking / description-drift
+#   7. python3 scripts/build-state.py --check
 #                                       — CLAUDE.md build-state block in sync
 #
 # Covers: BACKLOG "Testing infrastructure" step 4 (pre-commit hook).
+#
+# Adding or removing a gate: edit the `steps` array below. Step
+# numbering ("N/total") regenerates automatically from the array length.
 #
 # ─── Installation (contributor-driven; not auto-wired) ──────────────────
 #
@@ -68,12 +75,32 @@ run_step() {
     echo
 }
 
-run_step "1/6  help-check"              bash scripts/tests/help-check.sh
-run_step "2/6  test_stopwords"          python3 scripts/tests/test_stopwords.py
-run_step "3/6  smoke"                   bash scripts/tests/smoke.sh
-run_step "4/6  validate.py"             python3 scripts/validate.py
-run_step "5/6  validate-research.py"    python3 scripts/validate-research.py
-run_step "6/6  build-state.py --check"  python3 scripts/build-state.py --check
+# Each entry pairs a step label with a tab-delimited command. Step
+# numbering ("N/total") is generated below from this list — adding or
+# removing an entry renumbers the rest.
+#
+# Constraint: command tokens are split on whitespace at iteration time
+# (unquoted $cmd word-splits via IFS). Safe for the current command
+# shapes (no embedded spaces in args). If a future gate needs an arg
+# with spaces, switch to a different command-storage idiom.
+steps=(
+    $'help-check\tbash scripts/tests/help-check.sh'
+    $'test_stopwords\tpython3 scripts/tests/test_stopwords.py'
+    $'smoke\tbash scripts/tests/smoke.sh'
+    $'validate.py\tpython3 scripts/validate.py'
+    $'validate-research.py\tpython3 scripts/validate-research.py'
+    $'review-coverage.py\tpython3 scripts/review-coverage.py --all'
+    $'build-state.py --check\tpython3 scripts/build-state.py --check'
+)
+
+total=${#steps[@]}
+n=0
+for entry in "${steps[@]}"; do
+    n=$((n + 1))
+    label="${entry%%$'\t'*}"
+    cmd="${entry#*$'\t'}"
+    run_step "$n/$total  $label" $cmd
+done
 
 # Summary
 echo "======================================================================"

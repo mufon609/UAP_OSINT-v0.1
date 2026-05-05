@@ -1024,3 +1024,119 @@ Surfaced: 2026-05-05 governance-doc reorganization — original
 investigation flagged `corpus-audit-2026-04.md` as a candidate for
 "some reorganization" but determined three files don't justify
 forcing shape; codified the trigger condition here.
+
+---
+
+### C11. Decompose validators into per-check modules with shared `Issue` contract
+
+`scripts/validate.py` (1344 LOC, 9 named checks) and
+`scripts/validate-research.py` (2031 LOC, 26 named checks) are
+megafiles. Each check is internally coherent but the file-level
+grouping forces every contributor reading "where does the
+verbatim-quote check live" to scan a thousand-plus lines.
+`scripts/review-coverage.py` (674 LOC, 4 cross-layer checks) carries
+the same shape at a smaller scale. Each script also reimplements its
+own error/warning reporting with cosmetic differences —
+`validate.py` and `validate-research.py` use `errors`/`warnings`
+lists; `review-coverage.py` has its own `Issue` class.
+
+**Refactor scope (cohesive, single design pass).**
+
+1. **Per-check module decomposition.** Each named check moves to
+   `scripts/checks/{check_name}.py`, exporting a callable with a
+   stable signature. The current validators become orchestrators
+   that import + sequence the checks. Naming is already stable per
+   `meta/conventions.md` "Check naming"; the rename to topic names
+   already shipped, so the module names follow.
+
+2. **Shared `Issue` / `Report` contract.** Single dataclass
+   (path, line, severity, check_name, message); every check yields
+   it; the orchestrator aggregates. Replaces the three reporting
+   shapes in flight today. Makes pre-commit output uniform and
+   machine-parseable; enables a future `--format json` mode.
+
+3. **Manifest checks lift out.** `check_manifest_checksums`,
+   `check_manifest_archive_status`, `check_manifest_extraction_type`
+   currently live in `validate.py` but operate on
+   `sources/manifest.yaml`, not on any node. They're a third data
+   layer (manifest) tucked into the node validator. Move to
+   `scripts/checks/manifest_*.py` so the layer separation is
+   architectural, not a partitioning artifact.
+
+**Why one entry, not three.** The three sub-items couple at the
+interface design layer — the `Check` callable signature, the
+`Issue` dataclass shape, and the orchestrator's aggregation logic
+all need to land together for the decomposition to be coherent.
+Shipping (1) without (2) leaves three reporting shapes scattered
+across many files (worse than today). Shipping (2) without (1)
+adds a new contract no caller uses. Shipping (3) without (1) splits
+the manifest layer into a one-off module while leaving the node
+validators monolithic. Single design pass; single ship.
+
+**Scope.** Multi-session refactor. Design pass first (Check
+interface + Issue dataclass + orchestrator shape); then mechanical
+move of ~39 check functions across three validators; then
+orchestrator rewrite; then end-to-end verification that pre-commit
+output and behavior are unchanged. Test isolation pays off
+incidentally — each check becomes individually testable in a way
+the megafile shape doesn't support.
+
+**Priority.** Low. The current shape works (corpus passes 0/0;
+gates run in ~50s; lockstep is mechanical via `lib/_common.py`).
+The refactor is professional-shape work, not a correctness fix.
+Worth doing when (a) a contributor session has appetite for
+multi-file refactoring, (b) a new validator is about to be added
+(decomposition makes the shape obvious), or (c) a check needs
+unit-test coverage in isolation (current shape forces fixture-based
+tests).
+
+**Out of scope.** Auto-discovering checks from filesystem walks —
+explicit step lists in the orchestrator make ordering and
+dependencies readable; auto-discovery would obscure both. The
+explicit `steps` array in `pre-commit.sh` is the model.
+
+Surfaced: 2026-05-05 check-script audit prompted by adding
+review-coverage as gate 7 — surveyed `scripts/validate.py`,
+`scripts/validate-research.py`, `scripts/review-coverage.py`, and
+`scripts/lib/_common.py`; confirmed the layer separation is
+architectural (don't merge) but the per-check decomposition + shared
+`Issue` contract + manifest module split are the genuine ad-hoc
+shape worth refactoring.
+
+---
+
+### C12. Document `scripts/tests/` vs `scripts/` partition in `meta/conventions.md`
+
+`scripts/tests/` holds `pre-commit.sh` (orchestrator),
+`help-check.sh` (smoke test on `scripts/*.py --help`), `smoke.sh`
+(fixture-based scaffolder + validator regression test), and
+`test_stopwords.py` (unit test on `lib/_common.STOPWORDS`).
+`scripts/` root holds `validate.py`, `validate-research.py`,
+`review-coverage.py`, and `build-state.py --check` — also tests in
+spirit.
+
+The split is "things only the gate chain runs" (`scripts/tests/`)
+vs. "things contributors and the gate chain both run" (`scripts/`
+root). Defensible and consistent across all current scripts, but
+nowhere documented. A future contributor adding a check must guess
+which side to file it on.
+
+**Fix.** One short paragraph in `meta/conventions.md`'s "Repository
+layout" section, between the "Backend tooling" and "Governance"
+sub-sections. Articulate the rule explicitly so the partition stops
+being tribal knowledge. While editing, also clarify why diagnostic
+scripts (`check-vocab.py`, `normalize-locations.py`) sit in
+`scripts/` root despite never being gate-invoked — they're
+contributor-only tools, exit 0 on findings by design, and are NOT
+gates.
+
+**Scope.** ~30 minutes — one paragraph in conventions.md, no code
+changes. No upstream blockers; safe to land any time.
+
+**Priority.** Low. No correctness implications; documentation
+hygiene only. Worth bundling into any session that touches
+`meta/conventions.md` for another reason.
+
+Surfaced: 2026-05-05 check-script audit — confirmed the split is
+principled but not documented; partition rule should be
+articulated where future contributors will look for it.
