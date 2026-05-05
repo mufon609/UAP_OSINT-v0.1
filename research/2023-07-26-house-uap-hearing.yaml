@@ -341,7 +341,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 652-654
+    location: "p. 10"
   significance: Graves opens — claim of firsthand UAP experience and a documented group of 30+ commercial aircrew and military veterans reporting similar encounters
   context: Graves oral statement
 - id: q2
@@ -352,7 +352,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 783-786
+    location: "p. 12"
   significance: Grusch's core whistleblower claim in opening — awareness of and denied-access to a multi-decade UAP crash retrieval and reverse engineering program
   context: Grusch oral statement
 - id: q3
@@ -363,7 +363,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 1148-1149
+    location: "p. 19"
   significance: Grusch's quantitative basis for his claim that the U.S. Government is in possession of UAPs — 40+ witnesses interviewed over 4 years
   context: Q&A with Ranking Member Garcia
 - id: q4
@@ -374,7 +374,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 1335-1338
+    location: "p. 22"
   significance: Full Committee Ranking Member's bipartisan whistleblower-protection statement
   context: Q&A with Grusch (first round, Raskin)
 - id: q5
@@ -385,7 +385,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1345
+    location: "p. 22"
   significance: Grusch's framing of the reprisal pattern he describes against UAP-program whistleblowers
   context: Q&A with Raskin (first round)
 - id: q6
@@ -396,7 +396,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2268-2270
+    location: "p. 39"
   significance: Graves's estimate that only approximately 5 percent of pilot UAP sightings get reported — quantifies the under-reporting problem central to his testimony
   context: Q&A with Representative Mace
 - id: q7
@@ -407,7 +407,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2322-2324
+    location: "p. 40"
   significance: Grusch's "nonhuman biologics" assertion about recovered crash-retrieval biologics, attributed to direct-knowledge sources currently on the program
   context: Q&A with Representative Mace
 - id: q8
@@ -418,7 +418,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2440-2442
+    location: "p. 42"
   significance: Fravor's framing of the 2004 USS Nimitz encounter as probably the most credible UFO sighting in history — based on multi-sensor tracking plus visual
   context: Q&A with Representative Langworthy
 - id: q9
@@ -429,7 +429,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2781-2788
+    location: "p. 49"
   significance: Ranking Minority Member Garcia's framing of the hearing as unusually bipartisan
   context: closing remarks
 entities_referenced:

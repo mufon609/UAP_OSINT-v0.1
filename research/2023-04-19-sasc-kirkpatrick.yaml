@@ -121,7 +121,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 439-447
+    location: "p. 8"
   significance: Kirkpatrick's opening statement begins; the transcript stenographer captured his self-correction "the Defense -- Defense's efforts" verbatim
   context: Kirkpatrick oral statement opening
 - id: q2
@@ -132,7 +132,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 493-502
+    location: "p. 9-37"
   significance: Kirkpatrick describes AARO's organizational structure — four functional areas including a strategic communications function
   context: Kirkpatrick oral statement
 - id: q3
@@ -143,7 +143,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 504-514
+    location: "p. 9"
   significance: Kirkpatrick summarizes AARO's first-nine-months work program — data collection, internal reporting standardization, framework for analysis
   context: Kirkpatrick oral statement
 - id: q4
@@ -154,7 +154,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 538-553
+    location: "p. 9-10"
   significance: Kirkpatrick situates AARO in lineage of decades of DOD/IC/congressionally-directed UAP resolution work; specifies Navy and Air Force pilots as primary witness population
   context: Kirkpatrick oral statement
 - id: q5
@@ -165,7 +165,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 589-597
+    location: "p. 10"
   significance: Kirkpatrick acknowledges DOD/IC alone are insufficient; flags continental-U.S. monitoring authorities as a needed extension
   context: Kirkpatrick oral statement
 - id: q6
@@ -176,7 +176,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 636-648
+    location: "p. 11"
   significance: Kirkpatrick characterizes the AARO case-resolution distribution — only a very small percentage anomalous; majority resolve to balloons, drones, clutter, natural phenomena
   context: Kirkpatrick oral statement
 - id: q7
@@ -187,7 +187,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 654-667
+    location: "p. 12"
   significance: Kirkpatrick's evidentiary discipline — will not close cases without defendable conclusions; sets the data-quality threshold for case resolution
   context: Kirkpatrick oral statement
 - id: q8
@@ -198,7 +198,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 729-732
+    location: "p. 13"
   significance: Kirkpatrick's rhetorical framing of AARO's hand-off mission — readily explainable objects go to intelligence, law enforcement, or operational safety communities
   context: Kirkpatrick oral statement
 - id: q9
@@ -209,7 +209,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 754-766
+    location: "p. 13"
   significance: Kirkpatrick describes AARO's analytic-rigor protocol — physical testing, modeling, simulation, peer review across government, industry, cleared academia
   context: Kirkpatrick oral statement
 - id: q10
@@ -220,7 +220,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 768-781
+    location: "p. 13-14"
   significance: Kirkpatrick's on-record statement — AARO has found no credible evidence of extraterrestrial activity, off-world technology, or objects defying the known laws of physics; the most-cited single line from this hearing in subsequent press and policy discussion
   context: Kirkpatrick oral statement
 - id: q11
@@ -231,7 +231,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 793-805
+    location: "p. 14"
   significance: Kirkpatrick's framing of the public-discourse standard — peer-reviewed journals, not blog or social media; commits AARO to the same standard
   context: Kirkpatrick oral statement
 - id: q12
@@ -242,7 +242,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 825-841
+    location: "p. 14-15"
   significance: Kirkpatrick's closing standards commitment — scientific method, research integrity, methodical and scrupulous, withholding judgment in favor of evidence
   context: Kirkpatrick oral statement closing
 - id: q13
@@ -253,7 +253,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 893-899
+    location: "p. 16"
   significance: Kirkpatrick's public morphology breakdown — about 52 percent of UAP reports are round or spheres
   context: Kirkpatrick chart presentation following oral statement
 - id: q14
@@ -264,7 +264,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 924-931
+    location: "p. 16"
   significance: Kirkpatrick's typical-UAP-signature summary from the trend chart — round, 1–4 meters, white/silver/translucent/metallic, 10K–30K feet, stationary to Mach 2
   context: Kirkpatrick chart presentation
 - id: q15
@@ -275,7 +275,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1194-1196
+    location: "p. 21"
   significance: Kirkpatrick's case-load count at the time of the hearing — 650 total cases, up from 366 reported in January
   context: Q&A with Gillibrand on case totals
 - id: q16
@@ -286,7 +286,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1257-1271
+    location: "p. 22"
   significance: Kirkpatrick's red-team / blue-team description — IC analysts as one team, scientists/engineers/physicists as the other; physicists deliberately not embedded in the intel community
   context: Q&A with Gillibrand on the analytic process
 - id: q17
@@ -297,7 +297,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1322-1328
+    location: "p. 23"
   significance: Kirkpatrick describes the closure-decision step in the five-step process — the director personally signs off on each case determination after senior technical advisory group peer review
   context: Q&A with Gillibrand on the analytic process
 - id: q18
@@ -308,7 +308,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1471-1483
+    location: "p. 26"
   significance: Kirkpatrick characterizes the foreign-nexus signal — single-digit percentage of cases show advanced technical signatures and he has indicators some are related to foreign capabilities
   context: Q&A with Senator Ernst on China and Russia advanced technology
 - id: q19
@@ -319,7 +319,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1551-1561
+    location: "p. 27"
   significance: Kirkpatrick's adversary-pace characterization — less risk averse, willing to try things; framed via his prior intel-officer assignments
   context: Q&A with Senator Ernst
 - id: q20
@@ -330,7 +330,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1564-1570
+    location: "p. 27"
   significance: Kirkpatrick's conclusion of the foreign-nexus discussion — concerning indicators short of evidence; ISR and weapons capability framings
   context: Q&A with Senator Ernst
 - id: q21
@@ -341,7 +341,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1664-1676
+    location: "p. 29"
   significance: Kirkpatrick references recent NORTHCOM coordination with General VanHerck and the J staff — describes the working relationship with the geographic combatant command responsible for North American airspace
   context: Q&A with Senator Rosen on NORTHCOM, NORAD, and SPACECOM coordination
 - id: q22
@@ -352,7 +352,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1717-1727
+    location: "p. 30"
   significance: Kirkpatrick previews imminent Joint Staff guidance to commands and services — timelines, requirements, data retention rules for UAP reporting
   context: Q&A with Senator Rosen
 - id: q23
@@ -363,7 +363,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1784-1788
+    location: "p. 31"
   significance: Kirkpatrick states AARO needs additional collection-tasking and counter-intelligence authorities — Gillibrand immediately offered to author legislative language
   context: Q&A with Senator Rosen and Senator Gillibrand on authorities
 - id: q24
@@ -374,7 +374,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1982-1986
+    location: "p. 35"
   significance: Kirkpatrick reports the FY2023 NDAA reporting-chain change has not yet been implemented — he is still reporting to USD(I&S) pending DOD and DNI implementation guidance
   context: Q&A with Gillibrand on AARO's logistics and reporting structure
 - id: q25
@@ -385,7 +385,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2041-2043
+    location: "p. 36"
   significance: Kirkpatrick confirms AARO submitted a first version of the publicly discoverable safe disclosure website for approval before Christmas 2022 — but as of the hearing it was still under review with no estimate from his superiors
   context: Q&A with Gillibrand on the safe disclosure portal
 - id: q26
@@ -396,7 +396,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2063-2069
+    location: "p. 36"
   significance: Kirkpatrick reports AARO has brought in nearly two dozen witnesses referred by Congress as of the hearing — quantifies the congressional referral pipeline
   context: Q&A with Gillibrand on witness referrals and the safe disclosure portal
 - id: q27
@@ -407,7 +407,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2153-2161
+    location: "p. 38"
   significance: Kirkpatrick describes his role in the early-2023 PRC balloon shoot-downs — called in late at night by Joint Staff leadership for an assessment
   context: Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America
 - id: q28
@@ -418,7 +418,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2174-2183
+    location: "p. 38"
   significance: Kirkpatrick states AARO did not play a role in DOD's response to the recent UAP incidents over North America other than initial advice — confirms Gillibrand's framing that Pentagon leadership did not turn to AARO to play a leading role in advising the combatant commander; refers further questions back to the White House
   context: Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America
 - id: q29
@@ -429,7 +429,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2222-2236
+    location: "p. 39"
   significance: Kirkpatrick's stated vision — at some point in the future you should not need an AARO; the office should normalize its work into existing processes, functions, agencies, and organizations
   context: Q&A with Senator Ernst on avoiding redundancy with existing agencies
 - id: q30
@@ -440,7 +440,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2261-2270
+    location: "p. 40"
   significance: Kirkpatrick describes AARO's interagency liaison structure — NASA, FBI, OSI, services, DOE; staff split half-IC / half-S&T
   context: Q&A with Senator Ernst on interagency coordination
 - id: q31
@@ -451,7 +451,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2334-2342
+    location: "p. 41"
   significance: Kirkpatrick describes the AARO sensor-data approach — pre-filter raw radar data to find UAP signatures hidden by weapon-system filters
   context: Q&A with Gillibrand on sensor filters and raw surveillance data
 - id: q32
@@ -462,7 +462,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2413-2421
+    location: "p. 42"
   significance: Kirkpatrick's scientific-method framing — extends the Sagan formulation to require not only extraordinary evidence but extraordinary science as the standard for AARO conclusions
   context: Q&A with Gillibrand on academic community collaboration and the NASA UAP independent study
 - id: q33
@@ -473,7 +473,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2477-2495
+    location: "p. 43-44"
   significance: Kirkpatrick describes NASA UAP independent study scope — unclassified data sources to augment AARO's classified data; Kirkpatrick says he is supporting it
   context: Q&A with Gillibrand on academic community collaboration
 - id: q34
@@ -484,7 +484,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2566-2578
+    location: "p. 45"
   significance: Kirkpatrick's closing remarks — frames forward public-engagement cadence; flags work-load against communications availability
   context: Kirkpatrick closing remarks
 - id: q35
@@ -495,7 +495,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2587-2591
+    location: "p. 45"
   significance: First audience-member speaker (Marine veteran) opens the post-hearing exchange; references David Spergel, the chair of the NASA UAP independent study
   context: Audience member exchange following adjournment of formal Q&A; this audience speaker is anonymized in the transcript
 - id: q36
@@ -506,7 +506,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2670-2676
+    location: "p. 47"
   significance: Second audience-member speaker (Albuquerque resident) describes UAP loitering over Sandia Labs and Kirtland Air Force Base; transcript renders "Kirtland" phonetically as "Kirkland"
   context: Audience member exchange following adjournment of formal Q&A; this audience speaker is anonymized in the transcript
 - id: q37
@@ -517,7 +517,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2723-2725
+    location: "p. 48"
   significance: Senator Gillibrand offers her office as a clearinghouse for the audience-member-presented material; structurally significant for the safe disclosure portal discussion (Kirkpatrick's submitted website was still under review at the time)
   context: Senator Gillibrand response to audience members
 entities_referenced:

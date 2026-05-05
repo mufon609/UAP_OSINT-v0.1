@@ -74,7 +74,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 733 |
+| Location | p. 11 |
 
 ---
 
@@ -86,7 +86,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 739 |
+| Location | p. 11 |
 
 ---
 
@@ -98,7 +98,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 745 |
+| Location | p. 12 |
 
 ---
 
@@ -110,7 +110,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 751 |
+| Location | p. 12 |
 
 ---
 
@@ -122,7 +122,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 756 |
+| Location | p. 12 |
 
 ---
 
@@ -134,7 +134,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 766 |
+| Location | p. 12 |
 
 ---
 
@@ -146,7 +146,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 770 |
+| Location | p. 12 |
 
 ---
 
@@ -158,7 +158,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 774 |
+| Location | p. 12 |
 
 ---
 
@@ -170,7 +170,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 779 |
+| Location | p. 12 |
 
 ---
 
@@ -182,7 +182,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 783 |
+| Location | p. 12 |
 
 ---
 
@@ -194,7 +194,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 787 |
+| Location | p. 12 |
 
 ---
 
@@ -206,7 +206,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Chair Glenn Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1018 |
+| Location | p. 17 |
 
 ---
 
@@ -218,7 +218,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Member Robert Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1148 |
+| Location | p. 19 |
 
 ---
 
@@ -230,7 +230,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Member Robert Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1151 |
+| Location | p. 19 |
 
 ---
 
@@ -242,7 +242,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1218 |
+| Location | p. 20 |
 
 ---
 
@@ -254,7 +254,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1324 |
+| Location | p. 22 |
 
 ---
 
@@ -266,7 +266,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1332 |
+| Location | p. 22 |
 
 ---
 
@@ -278,7 +278,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1339 |
+| Location | p. 22 |
 
 ---
 
@@ -290,7 +290,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1345 |
+| Location | p. 22 |
 
 ---
 
@@ -302,7 +302,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1395 |
+| Location | p. 23 |
 
 ---
 
@@ -314,7 +314,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1408 |
+| Location | p. 24 |
 
 ---
 
@@ -326,7 +326,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1510 |
+| Location | p. 25 |
 
 ---
 
@@ -338,7 +338,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1517 |
+| Location | p. 26 |
 
 ---
 
@@ -350,7 +350,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1526 |
+| Location | p. 26 |
 
 ---
 
@@ -362,7 +362,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1537 |
+| Location | p. 26 |
 
 ---
 
@@ -374,7 +374,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1546 |
+| Location | p. 26 |
 
 ---
 
@@ -386,7 +386,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1554 |
+| Location | p. 26 |
 
 ---
 
@@ -398,7 +398,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Virginia Foxx, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1594 |
+| Location | p. 27 |
 
 ---
 
@@ -410,7 +410,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (Chairman Comer yielded time), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1744 |
+| Location | p. 30 |
 
 ---
 
@@ -422,7 +422,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Matt Gaetz (waived on; yielded time from Burchett), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1790 |
+| Location | p. 31 |
 
 ---
 
@@ -434,7 +434,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1824 |
+| Location | p. 31 |
 
 ---
 
@@ -446,7 +446,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Alexandria Ocasio-Cortez (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1893 |
+| Location | p. 32 |
 
 ---
 
@@ -458,7 +458,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Andy Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2020 |
+| Location | p. 35 |
 
 ---
 
@@ -470,7 +470,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Andy Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2024 |
+| Location | p. 35 |
 
 ---
 
@@ -482,7 +482,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Eric Burlison (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2075 |
+| Location | p. 36 |
 
 ---
 
@@ -494,7 +494,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Eric Burlison (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2101 |
+| Location | p. 36 |
 
 ---
 
@@ -506,7 +506,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2262 |
+| Location | p. 39 |
 
 ---
 
@@ -518,7 +518,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2319 |
+| Location | p. 40 |
 
 ---
 
@@ -530,7 +530,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2322 |
+| Location | p. 40 |
 
 ---
 
@@ -542,7 +542,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (3-minute additional round, yielded from Ogles), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2544 |
+| Location | p. 44 |
 
 ---
 
@@ -554,7 +554,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on; 3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2594 |
+| Location | p. 45 |
 
 ---
 
@@ -566,7 +566,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on; 3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2614 |
+| Location | p. 46 |
 
 ---
 
@@ -578,7 +578,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (closing 3-minute round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2704 |
+| Location | p. 47 |
 
 ---
 
@@ -590,7 +590,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|
 | Attributed to | Q&A exchange with Rep. Tim Burchett (closing 3-minute round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2738 |
+| Location | p. 48 |
 
 ---
 

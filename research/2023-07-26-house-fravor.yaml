@@ -229,7 +229,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 805-810
+    location: "p. 13"
   significance: Opening — identity, 2004 VFA-41 command role, 2-month workup cycle off California coast
   context: opening statement
 - id: q2
@@ -240,7 +240,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 811-815
+    location: "p. 13"
   significance: Training context, launch, training suspension for real-world tasking on check-in with Princeton
   context: opening statement
 - id: q3
@@ -251,7 +251,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 816-822
+    location: "p. 13"
   significance: Approach direction (west) + 2-week prior tracking history + altitude behavior pattern
   context: opening statement
 - id: q4
@@ -262,7 +262,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 823-830
+    location: "p. 13"
   significance: Merge plot explanation, San Diego weather conditions, whitewater first observation
   context: opening statement
 - id: q5
@@ -273,7 +273,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 831-839
+    location: "p. 13"
   significance: Tic Tac visual description — 4 observers, white, north-south axis, ping-pong-ball movement, no rotors/wash/control surfaces; WSO/clockwise/high-cover tactical setup
   context: opening statement
 - id: q6
@@ -284,7 +284,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 840-848
+    location: "p. 13"
   significance: Descent geometry — 90°/270° descent, Tic Tac axis-shift toward Fravor's aircraft, altitudes 15,000/12,000 ft, wingman at 8,000 ft, half-mile disappearance
   context: opening statement
 - id: q7
@@ -295,7 +295,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 853-855
+    location: "p. 14"
   significance: CAP point reacquisition with direct controller quote — 60 miles in less than a minute
   context: opening statement
 - id: q8
@@ -306,7 +306,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 856-863
+    location: "p. 14"
   significance: Follow-on crew captured 90-second video + radar tape never released + APG-73 jamming claim
   context: opening statement
 - id: q9
@@ -317,7 +317,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 864-869
+    location: "p. 14"
   significance: Non-investigation + 2009 Stratton contact + ATIP program in Pentagon led by Elizondo
   context: opening statement
 - id: q10
@@ -328,7 +328,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 870-872
+    location: "p. 14"
   significance: Unofficial official report on the internet + Dietrich contact + Fravor's response
   context: opening statement
 - id: q11
@@ -339,7 +339,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 873-874
+    location: "p. 14"
   significance: Elizondo direct contact with Fravor — conversation was brief
   context: opening statement
 - id: q12
@@ -350,7 +350,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 875-879
+    location: "p. 14"
   significance: TTSA formation — Elizondo left Pentagon in protest; co-founders DeLonge, Mellon, Justice; organization pressed industry experts and USG officials
   context: opening statement
 - id: q13
@@ -361,7 +361,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 880-883
+    location: "p. 14"
   significance: NYT 2017 articles — Kean (spelled Keane), Blumenthal, Cooper; Kean identified as present at the hearing
   context: opening statement
 - id: q14
@@ -372,7 +372,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 884-888
+    location: "p. 14"
   significance: Disclosure impact — elected officials focused on craft origin and technology rather than "little green men"
   context: opening statement
 - id: q15
@@ -383,7 +383,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 889-891
+    location: "p. 14"
   significance: Whistleblower Protection Act in NDAA + Grusch cross-reference
   context: opening statement
 - id: q16
@@ -394,7 +394,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 892-897
+    location: "p. 14"
   significance: Oversight concern + checks-and-balances framing; explicit clarification that the ask is not full public disclosure
   context: opening statement
 - id: q17
@@ -405,7 +405,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 898-902
+    location: "p. 14"
   significance: Waived-program oversight precedent — oral-only program-classification framing
   context: opening statement
 - id: q18
@@ -416,7 +416,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 903-905
+    location: "p. 14"
   significance: Closing Tic Tac performance assessment
   context: opening statement
 - id: q19
@@ -427,7 +427,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 908-911
+    location: "p. 15"
   significance: Closing oversight call — elected officials represent citizens
   context: opening statement
 - id: q20
@@ -438,7 +438,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 974-978
+    location: "p. 16"
   significance: Q&A — post-incident response detail (carrier intel debrief only, top 20 in battle group, captain and admiral aware)
   context: Q&A with Chairman Grothman
 - id: q21
@@ -449,7 +449,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 989-995
+    location: "p. 16"
   significance: Q&A — national security threat framing via reverse-engineering hypothetical
   context: Q&A with Chairman Grothman
 - id: q22
@@ -460,7 +460,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 1207-1208
+    location: "p. 20"
   significance: Q&A — Tic Tac performance beyond current material science
   context: Q&A with Representative Burchett
 - id: q23
@@ -471,7 +471,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 1243-1246
+    location: "p. 21"
   significance: Q&A — whitewater source not visually identified; movement inferred from disappearance
   context: Q&A with Representative Burchett
 - id: q24
@@ -482,7 +482,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 1257-1263
+    location: "p. 21"
   significance: Q&A — APG-73 jamming mechanics (range/velocity/aspect; split lock; passive targeting pod as path to the video)
   context: Q&A with Representative Burchett
 - id: q25
@@ -493,7 +493,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 1356-1361
+    location: "p. 23"
   significance: Q&A — career treatment; six people involved retiring as 05s/06s; three- and four-star officers privately agree
   context: Q&A with Representative Raskin
 - id: q26
@@ -504,7 +504,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 1365-1369
+    location: "p. 23"
   significance: Q&A — 5-minute encounter duration, 4 witnesses; Fravor's pre-encounter disposition
   context: Q&A with Representative Raskin
 - id: q27
@@ -515,7 +515,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 1500-1506
+    location: "p. 25"
   significance: Q&A — surface features at half-mile (white, smooth, no windows/seams); two small objects exiting bottom seen on FLIR1 big-screen
   context: Q&A with Representative Moskowitz
 - id: q28
@@ -526,7 +526,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 1692-1699
+    location: "p. 29"
   significance: Q&A — Senators' pre-2017 stigma framing ("laughed off the Hill")
   context: Q&A with Representative Frost
 - id: q29
@@ -537,7 +537,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2030-2040
+    location: "p. 35"
   significance: Q&A — over-classification example (East Coast iPhone footage classified TS/SCI); specific 2020 report reference
   context: Q&A with Representative Biggs
 - id: q30
@@ -548,7 +548,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2352-2355
+    location: "p. 41"
   significance: Q&A — biographical summary (enlisted Marine, Naval Academy graduate, 18 years Navy, University of Houston Master's, 16-17 years private-sector defense work) — not in companion written testimony
   context: Q&A with Representative Langworthy
 - id: q31
@@ -559,7 +559,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2360-2368
+    location: "p. 41"
   significance: Q&A — battle-group workup context; first day of manned flight during Princeton's 2-week tracking
   context: Q&A with Representative Langworthy
 - id: q32
@@ -570,7 +570,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2377-2378
+    location: "p. 41"
   significance: Q&A — Tic Tac size analogy ("giant flying propane tank")
   context: Q&A with Representative Langworthy
 - id: q33
@@ -581,7 +581,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2381-2383
+    location: "p. 41"
   significance: Q&A — multi-platform radar tracking (Princeton + Nimitz + E2) vs Fravor's own fire-control radars not picking up the contact
   context: Q&A with Representative Langworthy
 - id: q34
@@ -592,7 +592,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2394-2397
+    location: "p. 42"
   significance: Q&A — follow-on crew member first name "Chad" + EO/IR modes propulsion check; no IR plume, no visual propulsion signs
   context: Q&A with Representative Langworthy
 - id: q35
@@ -603,7 +603,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2403-2406
+    location: "p. 42"
   significance: Q&A — Tic Tac maneuvering characterized as aware and intentional ("knew exactly what it was doing", "aware of our presence")
   context: Q&A with Representative Langworthy
 - id: q36
@@ -614,7 +614,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2439-2448
+    location: "p. 42"
   significance: Q&A — "most credible UFO sighting in history" characterization; 6 involved personnel with 20+ year military careers
   context: Q&A with Representative Langworthy
 - id: q37
@@ -625,7 +625,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2628-2630
+    location: "p. 46"
   significance: Q&A — pre-encounter personal UFO disposition (not a UFO person before 2004)
   context: Q&A with Representative Raskin (second round)
 - id: q38
@@ -636,7 +636,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2708-2711
+    location: "p. 47"
   significance: Q&A — motivation for coming forward (friend's six-time ask; credibility argument for the NYT article)
   context: Q&A with Representative Burchett (second round)
 - id: q39
@@ -647,7 +647,7 @@ quotes:
     '
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: lines 2754-2761
+    location: "p. 48"
   significance: Q&A — Fravor's self-identification as a former accident investigator; witness-discipline advice
   context: Q&A with Representative Burchett (second round)
 entities_referenced:

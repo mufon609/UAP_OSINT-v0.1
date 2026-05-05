@@ -1135,7 +1135,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 768-781
+    location: "p. 13-14"
   significance: The most-cited single line from Kirkpatrick's tenure. The institutional NHI-avoidance script preserved nearly verbatim by his successor Jon Kosloski
   context: Sworn-style oral testimony, Senate Armed Services Subcommittee on Emerging Threats and Capabilities AARO oversight hearing
 - id: q5
@@ -1147,7 +1147,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 729-732
+    location: "p. 13"
   significance: Kirkpatrick's rhetorical framing of AARO's mission as a hand-off operation
   context: SASC oversight hearing, Kirkpatrick oral statement
 - id: q6
@@ -1159,7 +1159,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 496-502
+    location: "p. 9-37"
   significance: Kirkpatrick's description of AARO's structure including a strategic communications function as one of four functional areas
   context: SASC oversight hearing, Kirkpatrick oral statement
 - id: q7
@@ -1171,7 +1171,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1194-1196
+    location: "p. 21"
   significance: AARO case-load count at the time of the April 19 2023 hearing
   context: SASC Q&A with Senator Gillibrand
 - id: q8
@@ -1183,7 +1183,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 893-897
+    location: "p. 16"
   significance: Kirkpatrick's public morphology breakdown — about 52 percent of UAP reports are round or spheres
   context: SASC chart presentation following oral statement
 - id: q9
@@ -1195,7 +1195,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1784-1788
+    location: "p. 31"
   significance: Kirkpatrick states AARO needs additional collection-tasking and counter-intelligence authorities
   context: SASC Q&A with Senators Rosen and Gillibrand
 - id: q10
@@ -1207,7 +1207,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2413-2421
+    location: "p. 42"
   significance: Kirkpatrick's scientific-method framing — extends the Sagan formulation from extraordinary evidence to extraordinary science
   context: SASC Q&A on academic community collaboration and the NASA UAP independent study
 - id: q11

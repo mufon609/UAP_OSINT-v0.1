@@ -57,7 +57,7 @@ quotes:
   text: My name is Ryan ‘‘FOBS’’ Graves and I am a former F–18 pilot with a decade of service in the U.S. Navy including two deployments in Operation Enduring Freedom and Operation Inherent Resolve.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 648
+    location: "p. 10"
   significance: Identity + service span — former F-18 pilot, decade in U.S. Navy, OEF + Inherent Resolve deployments; "FOBS" callsign
   context: opening statement
   statement_date: '2023-07-26'
@@ -66,7 +66,7 @@ quotes:
   text: I have experienced advanced UAP firsthand and I am here to voice the concerns of more than 30 commercial aircrew and military veterans who have confided their similar encounters with me.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 652
+    location: "p. 10"
   significance: Firsthand UAP experience claim; representing 30+ commercial aircrew and military veterans with similar encounters
   context: opening statement
   statement_date: '2023-07-26'
@@ -75,7 +75,7 @@ quotes:
   text: As we convene here, UAP are in our airspace but they are grossly under reported. These sightings are not rare or isolated. They are routine. Military aircrew and commercial pilots, trained observers whose lives depend on accurate identification, are frequently witnessing these phenomena.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 656
+    location: "p. 10"
   significance: UAP airspace presence framed as routine, not rare; trained-observer framing for military and commercial pilots
   context: opening statement
   statement_date: '2023-07-26'
@@ -84,7 +84,7 @@ quotes:
   text: The stigma attached to UAP is real and powerful and challenges national security. It silences commercial pilots who fear professional repercussions, discourages witnesses, and is only compounded by recent government claims questioning the credibility of eyewitness testimony.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 661
+    location: "p. 10"
   significance: Stigma as national-security challenge; references "recent government claims questioning the credibility of eyewitness testimony"
   context: opening statement
   statement_date: '2023-07-26'
@@ -93,7 +93,7 @@ quotes:
   text: Parts of our government are aware more about UAP than they let on, but excessive classification practices keep crucial information hidden. Since 2021 all UAP videos are classified as secret or above. This level of secrecy not only impedes our understanding but fuels speculation and mistrust.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 666
+    location: "p. 10"
   significance: Over-classification claim — all UAP videos classified secret-or-above since 2021; government aware more than publicly disclosed
   context: opening statement
   statement_date: '2023-07-26'
@@ -102,7 +102,7 @@ quotes:
   text: In 2014, I was an F–18 Foxtrot pilot in the Navy Fighter Attack Squadron 11, the Red Rippers, and I was stationed at NAS Oceana in Virginia Beach. After upgrades were made to our jet’s radar systems, we began detecting unknown objects operating in our airspace.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 671
+    location: "p. 10"
   significance: 2014 institutional anchor — Navy Fighter Attack Squadron 11 (Red Rippers), NAS Oceana, Virginia Beach; radar-upgrade detection start
   context: opening statement
   statement_date: '2023-07-26'
@@ -111,7 +111,7 @@ quotes:
   text: At first, we assumed they were radar errors but soon we began to correlate the radar tracks with multiple onboard sensors, including infrared systems, eventually through visual ID.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 676
+    location: "p. 10"
   significance: Multi-sensor correlation — radar + infrared + visual ID; rules out radar-error explanation
   context: opening statement
   statement_date: '2023-07-26'
@@ -120,7 +120,7 @@ quotes:
   text: During a training mission in Warning Area W–72, 10 miles off the coast of Virginia Beach, two F–18 Super Hornets were split by a UAP. The object, described as a dark gray or a black cube inside of a clear sphere, came within 50 feet of the lead aircraft and was estimated to be five to 15 feet in diameter.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 679
+    location: "p. 10"
   significance: Warning Area W-72 near-miss — dark gray/black cube inside clear sphere, within 50 feet of lead aircraft, 5-15 feet diameter
   context: opening statement
   statement_date: '2023-07-26'
@@ -129,7 +129,7 @@ quotes:
   text: The mission commander terminated the flight immediately and returned to base.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 684
+    location: "p. 10"
   significance: Flight-termination response to the W-72 encounter (quote truncated at page 10/11 boundary; post-break covers "Our squadron submitted a safety report but there was no official acknowledgement of the incident and no further mechanism to report the sightings")
   context: opening statement
   statement_date: '2023-07-26'
@@ -138,7 +138,7 @@ quotes:
   text: Soon these encounters became so frequent that aircrew would discuss the risk of UAP as part of their regular preflight briefs. Recognizing the need for action and answers, I founded Americans for Safe Aerospace. The organization has since become a haven for UAP witnesses who were previously unspoken due to the absence of a safe intake process. More than thirty witnesses have come forward and almost 5,000 Americans have joined us in the fight for transparency at safeaerospace.org.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 690
+    location: "p. 11"
   significance: Americans for Safe Aerospace founding and scope — more than 30 witnesses, almost 5,000 Americans, safeaerospace.org; preflight-brief normalization of UAP risk
   context: opening statement
   statement_date: '2023-07-26'
@@ -147,7 +147,7 @@ quotes:
   text: The majority of witnesses are commercial pilots at major airlines. Often, they are veterans with decades of flying experience. Pilots are reporting UAP at altitudes that appear above them at 40,000 feet, potentially in low Earth orbit or in the gray zone below the common line, making unexplainable maneuvers like right hand turns and retrograde orbits, or J hooks. Sometimes these reports are reoccurring with numerous recent sightings north of Hawaii and in the North Atlantic. Other veterans are also coming forward to us regarding UAP encounters in our airspace and oceans. The most compelling involve observations of UAP by multiple witnesses and sensor systems.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 699
+    location: "p. 11"
   significance: Commercial-pilot witness profile — major-airline pilots with decades experience; altitude 40,000 feet / low Earth orbit / gray zone; unexplainable maneuvers (right-hand turns, retrograde orbits, J hooks); recurring sightings north of Hawaii and North Atlantic; multi-witness multi-sensor framing
   context: opening statement
   statement_date: '2023-07-26'
@@ -156,7 +156,7 @@ quotes:
   text: If UAP are foreign drones, it is an urgent national security problem. If it is something else, it is an issue for science. In either case, unidentified objects are a concern for flight safety. The American people deserve to know what is happening in our skies. It is long overdue.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 716
+    location: "p. 11"
   significance: Closing framing — foreign-drones vs science dichotomy; flight-safety concern in either case; "American people deserve to know" call for transparency
   context: opening statement
   statement_date: '2023-07-26'
@@ -165,7 +165,7 @@ quotes:
   text: There is certainly some national security concerns when we use our advanced sensors in our tactical jets to be able to identify these objects. However, there is no reason that the objects themselves would be classified. I would be curious to see how the security classification guideline actually spells out the different nuances of how this topic is classified from the perspective of UAP, not national security.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 948
+    location: "p. 15"
   significance: Sensors-vs-objects distinction on classification — sensor capabilities warrant secrecy, object existence does not
   context: Q&A exchange with Subcommittee Chair Glenn Grothman
   statement_date: '2023-07-26'
@@ -174,7 +174,7 @@ quotes:
   text: I would also like to add from a commercial aviation and military aviation perspective, we deal with uncertainty in our operating space as a matter of our professional actions. Identifying friend from foe is very important to us, and so when we have unidentified targets, and we continue to ignore those due to a stigma or fear of what it could be that is an opening that our adversaries can take advantage of.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 997
+    location: "p. 16"
   significance: National-security framing — stigma-driven ignoring of unidentified targets creates adversary opening
   context: Q&A exchange with Subcommittee Chair Glenn Grothman
   statement_date: '2023-07-26'
@@ -183,7 +183,7 @@ quotes:
   text: There needs to be a location where this information is centralized for processing and there needs to be a two-way communication loop so the operators on the front end have a feedback and can get best practices on how to process information, what to do, and to ensure that their reporting is being listened to. Right now, there is not a lot of back and forth.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1006
+    location: "p. 16"
   significance: Proposed centralized-processing architecture with two-way feedback loop for UAP reporting
   context: Q&A exchange with Subcommittee Chair Glenn Grothman
   statement_date: '2023-07-26'
@@ -192,7 +192,7 @@ quotes:
   text: I will concur with everything Mr. Fravor said. I will continue to say that the commercial pilots that have reached out to me through Americans for Safe Aerospace are doing so because they do not feel there is another way for them to report this safety issue.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1088
+    location: "p. 18"
   significance: Commercial pilots lack formal reporting channels — Americans for Safe Aerospace as de facto intake mechanism
   context: Q&A exchange with Ranking Minority Member Robert Garcia
   statement_date: '2023-07-26'
@@ -201,7 +201,7 @@ quotes:
   text: Yes. The objects that are being seen by commercial pilots are performing maneuvers that are unexplainable due to our current understanding of our technology and our capabilities as a country, and that applies for the military as well.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1133
+    location: "p. 19"
   significance: Objects perform maneuvers unexplainable within current U.S. technology and capabilities — applies to both commercial and military observations
   context: Q&A exchange with Ranking Minority Member Robert Garcia
   statement_date: '2023-07-26'
@@ -210,7 +210,7 @@ quotes:
   text: Some of the behaviors that we saw in our working area, we would see these objects being at 0.0 Mach —that is zero airspeed—over certain pieces of the ground. So, what that means just like a river if you throw a bobber in it is going to float downstream. These objects were staying completely stationary in category four hurricane winds. These same objects would then accelerate to supersonic speeds—1.1, 1.2 Mach—and they would do so in very erratic and quick behaviors that we do not—I do not have an explanation for.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1169
+    location: "p. 19"
   significance: Flagship kinematics description — 0.0 Mach stationary in category-4 hurricane winds then supersonic 1.1-1.2 Mach erratic acceleration; bobber-in-river analogy for ground-relative positioning
   context: Q&A exchange with Rep. Tim Burchett (waived on)
   statement_date: '2023-07-26'
@@ -219,7 +219,7 @@ quotes:
   text: No. Since the events initially occurred, I have learned that the objects have been detected, essentially, where all operations—our Navy operations are being conducted across the world and that is from the All-Domain Anomaly Resolutions Office reporting.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1281
+    location: "p. 21"
   significance: Global scope — UAP observations not just East-Coast-limited; worldwide Navy operations; attributed to AARO reporting
   context: Q&A exchange with Ranking Minority Member Jamie Raskin
   statement_date: '2023-07-26'
@@ -228,7 +228,7 @@ quotes:
   text: Certainly. Like many others in 2017, I saw the New York Times article come out as well and for me it was special because I recognized the voices on the video. I recognize the video itself. I had seen it when it was taken. I had seen it when it was debriefed.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1288
+    location: "p. 21"
   significance: Personal recognition of the 2017 New York Times article's video — recognized voices and video from prior debrief
   context: Q&A exchange with Ranking Minority Member Jamie Raskin
   statement_date: '2023-07-26'
@@ -237,7 +237,7 @@ quotes:
   text: Yes, inside of a clear sphere where the apex or tips of the cube were touching the inside of that sphere, and that was primarily what was being reported when we were able to gain a visual tally of these objects. That occurred over almost 8 years and as far as I know is still occurring.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1308
+    location: "p. 22"
   significance: Detailed shape description — cube apex touching inside of clear sphere; consistent reporting over almost 8 years and still ongoing
   context: Q&A exchange with Ranking Minority Member Jamie Raskin
   statement_date: '2023-07-26'
@@ -246,7 +246,7 @@ quotes:
   text: Certainly. In the 2003 timeframe, a large group of Boeing contractors were operating near one of the launch facilities at Vandenberg Air Force Base when they observed a very large 100-yard sighted red square approach the base from the ocean and hover at low altitude over one of the launch facilities. This object remained for about 45 seconds or so before darting off over the mountains. There was a similar event within 24 hours, later in the evening. This was a morning event, I believe 8:45 in the morning. Later in the evening, post sunset, there were reports of other sightings on base including some aggressive behaviors. These objects were approaching some of the security guards at rapid speeds before darting off, and this is information that was received through one of the witnesses that have approached me at Americans for Safe Aerospace.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1421
+    location: "p. 9-24"
   significance: Flagship 2003 Vandenberg AFB incident — Boeing contractors observe 100-yard red square at launch facility; hover 45 seconds then dart off over mountains; follow-on evening sightings with aggressive behaviors at security guards
   context: Q&A exchange with Rep. Anna Paulina Luna (waived on)
   statement_date: '2023-07-26'
@@ -255,7 +255,7 @@ quotes:
   text: Certainly. There was some uncertainty or, you know, instability with the object. It seemed to rock a bit, and that is the last I had seen of the video.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1454
+    location: "p. 24"
   significance: Gimbal-video end-point — rocking/instability, cut-off observation (quote truncated at page 24/25 boundary; post-break covers radar-data recommendation + fleet of objects nearby)
   context: Q&A exchange with Rep. Anna Paulina Luna (waived on)
   statement_date: '2023-07-26'
@@ -264,7 +264,7 @@ quotes:
   text: I have been made privy to conversations with commercial aviators who have received cease and desist orders.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1468
+    location: "p. 25"
   significance: Commercial aviators report receiving cease-and-desist orders from corporations re UAP disclosures
   context: Q&A exchange with Rep. Anna Paulina Luna (waived on)
   statement_date: '2023-07-26'
@@ -273,7 +273,7 @@ quotes:
   text: Yes. You are not able to actually personally tell within the vehicle. I will say the objects that we were seeing they were spherical, and they were observed up to Mach 2, which is a very nonaerodynamic shape.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1485
+    location: "p. 25"
   significance: Spherical outer profile (clear-sphere outline of the cube-in-sphere shape) observed up to Mach 2; nonaerodynamic shape at supersonic speed
   context: Q&A exchange with Subcommittee Member Jared Moskowitz
   statement_date: '2023-07-26'
@@ -282,7 +282,7 @@ quotes:
   text: Absolutely. I think, ultimately, this is going to be a scientific problem, and not only that, it is also an engineering problem. I have been working with the American Institute of Aeronautics and Astronautics to help them stand up a UAP integration committee to help integrate their engineering prowess into this problem.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1708
+    location: "p. 29"
   significance: Problem-framing — scientific + engineering + national security; discloses collaboration with American Institute of Aeronautics and Astronautics on a UAP integration committee
   context: Q&A exchange with Subcommittee Member Maxwell Frost
   statement_date: '2023-07-26'
@@ -291,7 +291,7 @@ quotes:
   text: Certainly. I think that there is two categories that would be important. One would be kinematics and understanding the specifics of how the vehicle or objects are moving, and the second would be a more zoomed out approach of being able to look at origin and destination after or before the incident as well as getting a better contextual understanding of how these objects are interacting with each other.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1922
+    location: "p. 33"
   significance: Proposed AARO data-collection priorities — kinematics (specifics of motion) + origin/destination contextual understanding + inter-object interaction
   context: Q&A exchange with Rep. Alexandria Ocasio-Cortez (waived on)
   statement_date: '2023-07-26'
@@ -300,7 +300,7 @@ quotes:
   text: Some of the initial procedures have been implemented such as within the United States Navy that have a Range Fouler Report that gathers information from pilots. I understand that a service-wide reporting mechanism is still pending. However, that would be a great next step not only for gathering information but for showing the troops that is an acceptable topic and reducing the stigma.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 1990
+    location: "p. 34"
   significance: U.S. Navy Range Fouler Report exists as initial procedure; service-wide UAP reporting mechanism still pending at testimony date
   context: Q&A exchange with Subcommittee Member Andy Biggs
   statement_date: '2023-07-26'
@@ -309,7 +309,7 @@ quotes:
   text: I think part of that has been not encouraging reporting, if the problem is not something that can be measured, if it is not something that is going to be fixed.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2045
+    location: "p. 35"
   significance: DoD / intelligence agencies keeping information from public via not-encouraging-reporting — "if not measured, not fixed" discouragement pattern
   context: Q&A exchange with Subcommittee Member Andy Biggs
   statement_date: '2023-07-26'
@@ -318,7 +318,7 @@ quotes:
   text: I have one particular case and that was during the Gimbal incident. The recording on the AT FLIR system shows a single object that rotates. You hear the pilots refer to a fleet of objects that is not visible on the FLIR system and that was something that I witnessed during the debrief as part of the radar data on the situational awareness page.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2201
+    location: "p. 38"
   significance: Gimbal-incident multi-craft formation — single rotating object on FLIR + fleet of objects on radar (not visible on FLIR); Graves witnessed the radar data during debrief
   context: Q&A exchange with Rep. Matt Gaetz (waived on; yielded time from Burchett)
   statement_date: '2023-07-26'
@@ -327,7 +327,7 @@ quotes:
   text: This is an approximation based off of my personal experience speaking with a number of pilots, but I would estimate we are somewhere near 5 percent reporting, perhaps.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2268
+    location: "p. 39"
   significance: Estimate — approximately 5% of UAP sightings get reported by pilots; based on personal experience speaking with a number of pilots
   context: Q&A exchange with Subcommittee Member Nancy Mace
   statement_date: '2023-07-26'
@@ -336,7 +336,7 @@ quotes:
   text: Absolutely.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2277
+    location: "p. 29-39"
   significance: Sworn affirmative that U.S. Navy took the 2014-2015 Virginia Beach UAP danger seriously after it was reported
   context: Q&A exchange with Subcommittee Member Nancy Mace
   statement_date: '2023-07-26'
@@ -345,7 +345,7 @@ quotes:
   text: They are similar. Pilots—commercial pilots have less range and less sensors to be able to reach out and look for objects over wide swaths of airspace. And so pilots are seeing them. Commercial pilots are seeing them and they are typically closer and the range of what they are seeing is pretty large.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2657
+    location: "p. 46"
   significance: Commercial pilot sightings similar to military — closer-range observations with less-capable sensors (compared to military sensor range)
   context: Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round)
   statement_date: '2023-07-26'
@@ -354,7 +354,7 @@ quotes:
   text: I was not. I was there when the pilot landed. He canceled the mission after. I was there. He was in the ready room with all his gear on with his mouth open and I asked him what the problem was and he said he almost hit one of those darn things.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2676
+    location: "p. 47"
   significance: Direct eyewitness account from pilot who nearly hit the dark-gray-cube-in-clear-sphere object — post-flight encounter recounted to Graves in ready room
   context: Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round)
   statement_date: '2023-07-26'
@@ -363,7 +363,7 @@ quotes:
   text: No wings. No IR energy coming off of the vehicle. Nothing tethering it to the ground, and that was primarily what we were experiencing out there.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2689
+    location: "p. 47"
   significance: Object physical characteristics — no wings, no infrared energy signature, no tethering to ground; representative of repeated observations
   context: Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round)
   statement_date: '2023-07-26'
@@ -372,7 +372,7 @@ quotes:
   text: I came forward because I felt that my colleagues did not have a way to mitigate the safety threat and I wanted to help them. I was trained as an aviation safety officer by the Navy and this seemed—it just felt right. I felt like I had to help the folks that were still flying and dealing with this.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2698
+    location: "p. 47"
   significance: Motivation statement — trained as aviation safety officer by the Navy; came forward to help colleagues who lacked safety-threat mitigation
   context: Q&A exchange with Rep. Tim Burchett (closing 3-minute round)
   statement_date: '2023-07-26'
@@ -381,7 +381,7 @@ quotes:
   text: Right now I do not think there is a lot of public options for the everyman to be able to report on this. I think even for professionals that have sensor data that are seeing these on a regular basis they are still hesitant to come forward. And so, for the general public I think encouraging the conversations that we are having today, looking for technology solutions that can be distributed so that objective data can be gathered is the first place to go.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: line 2729
+    location: "p. 48"
   significance: Public reporting mechanism gap — no widespread public options; recommendation for distributable technology solutions to gather objective data
   context: Q&A exchange with Rep. Tim Burchett (closing 3-minute round)
   statement_date: '2023-07-26'

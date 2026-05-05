@@ -161,7 +161,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 209-213
+    location: "p. 4"
   significance: Gillibrand documents the bipartisan funding-relief letter that supplied AARO temporary fiscal year relief after the President's Budget for fiscal years 2023 and 2024 requested only operating expenses
   context: Gillibrand opening statement
 - id: q2
@@ -172,7 +172,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 235-241
+    location: "p. 4"
   significance: Gillibrand restates the FY2023 NDAA reporting-chain change — AARO director reports directly to the Deputy Secretary of Defense, with USD(I&S) limited to administrative support
   context: Gillibrand opening statement
 - id: q3
@@ -183,7 +183,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 496-502
+    location: "p. 9-37"
   significance: Kirkpatrick describes AARO's organizational structure — four functional areas including a strategic communications function
   context: Kirkpatrick oral statement
 - id: q4
@@ -194,7 +194,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 768-781
+    location: "p. 13-14"
   significance: Kirkpatrick's on-record statement that AARO has found no credible evidence of extraterrestrial activity, off-world technology, or objects defying the known laws of physics — the most-cited single line from this hearing in subsequent press and policy discussion
   context: Kirkpatrick oral statement
 - id: q5
@@ -205,7 +205,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 729-732
+    location: "p. 13"
   significance: Kirkpatrick's rhetorical framing of AARO's mission — handing off readily-explainable objects to the intelligence, law enforcement, or operational safety communities
   context: Kirkpatrick oral statement
 - id: q6
@@ -216,7 +216,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1194-1196
+    location: "p. 21"
   significance: Kirkpatrick's case-load count at the time of the hearing — 650 total cases, up from 366 reported in January
   context: Q&A with Gillibrand
 - id: q7
@@ -227,7 +227,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 893-897
+    location: "p. 16"
   significance: Kirkpatrick's public characterization of UAP morphology — about 52 percent of reports are round or spheres
   context: Kirkpatrick chart presentation following oral statement
 - id: q8
@@ -238,7 +238,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1784-1792
+    location: "p. 31"
   significance: 'Kirkpatrick states AARO needs additional collection-tasking and counter-intelligence authorities — Gillibrand immediately offered to author the language for the defense bill (line 1809-1817: "will you help us write that language so we can put it in the defense bill this year so that we know what authorities you need?")'
   context: Q&A with Senator Rosen and Senator Gillibrand
 - id: q9
@@ -249,7 +249,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 1982-1986
+    location: "p. 35"
   significance: Kirkpatrick reports the FY2023 NDAA reporting-chain change has not yet been implemented at the time of the hearing — he was still reporting to USD(I&S) pending DOD and DNI implementation guidance
   context: Q&A with Gillibrand on AARO's logistics and reporting structure
 - id: q10
@@ -260,7 +260,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2041-2043
+    location: "p. 36"
   significance: Kirkpatrick confirms AARO submitted a first version of the publicly discoverable safe disclosure website for approval before Christmas 2022 — but as of the hearing it was still under review with no estimate from his superiors
   context: Q&A with Gillibrand on the safe disclosure portal
 - id: q11
@@ -271,7 +271,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2178-2183
+    location: "p. 38"
   significance: Kirkpatrick states AARO did not play a role in DOD's response to the PRC high-altitude balloon shoot-downs other than initial advice — confirming Gillibrand's framing that Pentagon leadership did not turn to AARO to play a leading role in advising the combatant commander
   context: Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America
 - id: q12
@@ -282,7 +282,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
-    location: lines 2413-2421
+    location: "p. 42"
   significance: Kirkpatrick's scientific-method framing — extends the Sagan formulation to require not only extraordinary evidence but extraordinary science as the standard for AARO conclusions
   context: Q&A with Gillibrand on academic community collaboration and the NASA UAP independent study
 entities_referenced:

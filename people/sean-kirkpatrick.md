@@ -121,7 +121,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | Sworn-style oral testimony, Senate Armed Services Subcommittee on Emerging Threats and Capabilities AARO oversight hearing, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 768-781 |
+| Location | p. 13-14 |
 
 > In other words, AARO's mission is to turn UAP into SEP, somebody else's problem.
 
@@ -129,7 +129,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC oversight hearing, Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 729-732 |
+| Location | p. 13 |
 
 > The AARO team of more than three dozen experts is organized around four functional areas: operations, scientific research, integrated analysis, and strategic communications.
 
@@ -137,7 +137,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC oversight hearing, Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 496-502 |
+| Location | p. 9-37 |
 
 > So as of this week we are tracking over -- a total of 650 cases.
 
@@ -145,7 +145,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC Q&A with Senator Gillibrand, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 1194-1196 |
+| Location | p. 21 |
 
 > Over half, about 52 percent, of what has been reported to us are round or spheres.
 
@@ -153,7 +153,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC chart presentation following oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 893-897 |
+| Location | p. 16 |
 
 > There are some authorities that we need. We currently are operating under Title 10 authorities but we have good relationships across the other agencies. But having additional authorities for collection tasking, counter-intelligence --
 
@@ -161,7 +161,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC Q&A with Senators Rosen and Gillibrand, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 1784-1788 |
+| Location | p. 31 |
 
 > In 1979 Carl Sagan said extraordinary claims require extraordinary evidence. I would go one step further and I would say extraordinary claims require not only extraordinary evidence but extraordinary science and so how do you do that?
 
@@ -169,7 +169,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | SASC Q&A on academic community collaboration and the NASA UAP independent study, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 2413-2421 |
+| Location | p. 42 |
 
 > all over the world and we see these in making very interesting apparent maneuvers
 

@@ -83,7 +83,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Gillibrand opening statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 209-213 |
+| Location | p. 4 |
 
 > In the fiscal year 2023 National Defense and Intelligence Authorization Act Congress established a direct reporting chain from the AARO director to the Deputy Secretary of Defense.
 
@@ -91,7 +91,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Gillibrand opening statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 235-241 |
+| Location | p. 4 |
 
 > The AARO team of more than three dozen experts is organized around four functional areas: operations, scientific research, integrated analysis, and strategic communications.
 
@@ -99,7 +99,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 496-502 |
+| Location | p. 9-37 |
 
 > I should also state clearly for the record that in our research AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics.
 
@@ -107,7 +107,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 768-781 |
+| Location | p. 13-14 |
 
 > In other words, AARO's mission is to turn UAP into SEP, somebody else's problem.
 
@@ -115,7 +115,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 729-732 |
+| Location | p. 13 |
 
 > So as of this week we are tracking over -- a total of 650 cases.
 
@@ -123,7 +123,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Q&A with Gillibrand, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 1194-1196 |
+| Location | p. 21 |
 
 > Over half, about 52 percent, of what has been reported to us are round or spheres.
 
@@ -131,7 +131,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Kirkpatrick chart presentation following oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 893-897 |
+| Location | p. 16 |
 
 > There are some authorities that we need. We currently are operating under Title 10 authorities but we have good relationships across the other agencies. But having additional authorities for collection tasking, counter-intelligence --
 
@@ -139,7 +139,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Q&A with Senator Rosen and Senator Gillibrand, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 1784-1792 |
+| Location | p. 31 |
 
 > So USDINS and the -- I currently report to USDINS until they come up with the plan for how they are going to implement legislation.
 
@@ -147,7 +147,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Q&A with Gillibrand on AARO's logistics and reporting structure, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 1982-1986 |
+| Location | p. 35 |
 
 > I have. We submitted the first version of that before Christmas.
 
@@ -155,7 +155,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Q&A with Gillibrand on the safe disclosure portal, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 2041-2043 |
+| Location | p. 36 |
 
 > We did not play a role in what you would respond other than that initial advice on what we are seeing and how we are seeing it.
 
@@ -163,7 +163,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 2178-2183 |
+| Location | p. 38 |
 
 > In 1979 Carl Sagan said extraordinary claims require extraordinary evidence. I would go one step further and I would say extraordinary claims require not only extraordinary evidence but extraordinary science and so how do you do that?
 
@@ -171,7 +171,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 |---|---|
 | Attributed to | Q&A with Gillibrand on academic community collaboration and the NASA UAP independent study, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
-| Location | lines 2413-2421 |
+| Location | p. 42 |
 
 ---
 

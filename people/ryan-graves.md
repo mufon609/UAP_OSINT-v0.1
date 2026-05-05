@@ -103,7 +103,7 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 2676 |
+| Location | p. 47 |
 
 > Some of the behaviors that we saw in our working area, we would see these objects being at 0.0 Mach —that is zero airspeed—over certain pieces of the ground. So, what that means just like a river if you throw a bobber in it is going to float downstream. These objects were staying completely stationary in category four hurricane winds. These same objects would then accelerate to supersonic speeds—1.1, 1.2 Mach—and they would do so in very erratic and quick behaviors that we do not—I do not have an explanation for.
 
@@ -111,7 +111,7 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Rep. Tim Burchett, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1169 |
+| Location | p. 19 |
 
 
 ### Other Statements
@@ -146,7 +146,7 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 |---|---|
 | Attributed to | sworn oral testimony, House Oversight Subcommittee UAP hearing, July 26, 2023 — Q&A exchange with Rep. Anna Paulina Luna, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | line 1421 |
+| Location | p. 9-24 |
 
 ---
 
