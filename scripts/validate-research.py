@@ -82,6 +82,11 @@ from lib._common import (
     load_source_tokens,
 )
 
+# Per-check modules (C11 / C13 / C14 — pilot wiring; sessions 2 and 3
+# migrate the remaining checks against the same contract).
+from checks import BaseContext, ResearchContext
+from checks import yaml_hash_truncation as ck_yaml_hash_truncation
+
 try:
     import yaml
 except ImportError:
@@ -314,68 +319,10 @@ def load_artifact(path):
     return data, None
 
 
-# Pattern for lines that look like `key: value # more content` where the
-# `#` is preceded by whitespace and followed by non-whitespace, inside an
-# UNQUOTED scalar value — which YAML silently treats as a comment,
-# truncating everything after `#`. Contributors hit this when they type
-# prose with embedded "#N" references (like "Issue #3", "channel #23").
-# Heuristic: the value portion starts with a non-quote, non-block-scalar
-# character, and contains `\s#\S` somewhere. Two common false-positives
-# (intentional comments) are explicitly permitted:
-#   - Lines where everything before the `#` is a YAML list marker /
-#     whitespace only (pure comment line)
-#   - Lines where the `#` appears at the very start of the value
-#     (e.g., `foo: # just a comment on empty value`) — those don't
-#     truncate meaningful content.
-_YAML_HASH_COMMENT_PATTERN = re.compile(
-    r"^(\s*-?\s*[A-Za-z_][\w-]*:\s+)"      # group 1: key + colon + first whitespace
-    r"([^'\"|>#\s].+?)"                      # group 2: unquoted value (non-trivial)
-    r"(\s+#\S.*)$"                           # group 3: whitespace + # + non-ws + rest
-)
-
-
-def check_yaml_hash_truncation(path, rel):
-    """Pre-parse scan for unquoted scalar values that contain `space+#`
-    and get silently truncated by YAML's comment handling. Surfaces as
-    warn (not error) — the YAML is technically valid; the validator is
-    flagging what's likely a contributor mistake. Zero false-positives
-    on deliberate trailing comments is impossible to guarantee with a
-    regex alone; the check tolerates one-line comments where the post-`#`
-    content is plausibly a contributor note (few characters) and warns
-    only when the post-`#` content looks substantive (>= 3 words or
-    ends mid-sentence).
-    """
-    issues = []
-    try:
-        with open(path) as f:
-            raw_lines = f.readlines()
-    except OSError:
-        return issues
-    for lineno, line in enumerate(raw_lines, start=1):
-        # Skip block-scalar content (inside | or > blocks we don't track
-        # perfectly here, but the regex's value-start-character guard
-        # also excludes those). Also skip lines where the key looks like
-        # a date field that might legitimately carry a # annotation.
-        m = _YAML_HASH_COMMENT_PATTERN.match(line.rstrip("\n"))
-        if not m:
-            continue
-        comment_part = m.group(3).strip()
-        # comment_part starts with the `#`; drop it
-        post_hash = comment_part[1:].strip()
-        # Heuristic: post-# content >= 3 words suggests accidental
-        # truncation of prose. Fewer words = plausibly a deliberate
-        # terse annotation; don't warn.
-        word_count = len(post_hash.split())
-        if word_count < 3:
-            continue
-        issues.append(Issue(rel, "warn",
-            f"line {lineno}: value contains ` #` followed by substantive content "
-            f"— YAML will silently treat everything after `#` as a comment and "
-            f"truncate the scalar. If the `#` is intentional content (e.g., "
-            f"\"Issue #3\", \"channel #23\"), quote the entire value "
-            f"(single or double quotes) or use a YAML literal block (`|`). "
-            f"Post-`#` content that will be truncated: {post_hash[:80]!r}"))
-    return issues
+# yaml_hash_truncation check moved to scripts/checks/yaml_hash_truncation.py
+# as part of the C11 / C13 / C14 pilot migration (2026-05-05). It reads
+# ResearchContext.raw_lines instead of opening the file itself; the
+# orchestrator builds the context once and passes it in.
 
 
 # Pattern for unquoted YAML scalar values that contain an inner `: `
@@ -461,11 +408,27 @@ def validate_artifact(path, schema, manifest_paths):
     issues = []
     rel = path.relative_to(REPO_ROOT)
 
-    # Pre-parse check: scan for unquoted scalar values truncated by
-    # YAML's # comment handling. Runs before yaml.safe_load so the
-    # warning fires on contributor-written YAML even when the file
-    # parses cleanly.
-    issues.extend(check_yaml_hash_truncation(path, rel))
+    # Read raw lines once for pre-parse checks. The new-shape check
+    # modules consume ctx.raw_lines so we don't open the file per check.
+    try:
+        with open(path) as f:
+            raw_lines = f.readlines()
+    except OSError:
+        raw_lines = []
+
+    # Pilot Context construction (hybrid orchestrator: legacy checks
+    # below still take separate args; new-shape checks consume the
+    # context). Sessions 2 and 3 migrate the rest against the same
+    # contract.
+    base_ctx = BaseContext(schema=schema, manifest_paths=manifest_paths)
+    research_ctx = ResearchContext(
+        base_ctx, path=path, rel=rel, raw_lines=raw_lines,
+    )
+
+    # Pre-parse check: yaml_hash_truncation — scans for unquoted scalar
+    # values silently truncated by YAML's # comment handling. Migrated
+    # to scripts/checks/yaml_hash_truncation.py (C11 pilot).
+    issues.extend(ck_yaml_hash_truncation.check(research_ctx))
 
     # Pre-parse check: scan for unquoted scalar values containing an
     # inner `: ` (colon-space) sequence that YAML's block-mapping

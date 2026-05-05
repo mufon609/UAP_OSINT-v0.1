@@ -85,7 +85,6 @@ validate-research.py). See meta/conventions.md "Check naming".
 """
 
 import argparse
-import hashlib
 import re
 import sys
 from pathlib import Path
@@ -98,6 +97,11 @@ except ImportError:
     sys.exit(1)
 
 from lib._common import extract_source_text, manifest_format, normalize_for_compare
+
+# Per-check modules (C11 / C13 / C14 — pilot wiring; sessions 2 and 3
+# migrate the remaining checks against the same contract).
+from checks import BaseContext
+from checks import manifest_checksums as ck_manifest_checksums
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
@@ -351,93 +355,14 @@ def check_chronological_tables(text, rel):
 # Source-integrity checks — manifest-checksum check
 # =============================================================================
 
-def compute_sha256(file_path):
-    """Compute SHA256 of a file in streaming chunks. Returns hex digest or
-    None on read error. Duplicates the implementation in manifest.py
-    (by design — keeping scripts flat and self-contained per our layout)."""
-    try:
-        h = hashlib.sha256()
-        with open(file_path, "rb") as f:
-            for chunk in iter(lambda: f.read(65536), b""):
-                h.update(chunk)
-        return h.hexdigest()
-    except OSError:
-        return None
-
-
-def check_manifest_checksums():
-    """For every archived entry in sources/manifest.yaml, recompute SHA256
-    and compare against the stored value.
-
-    Emits:
-      - ERROR if manifest.yaml is malformed (parse failure)
-      - ERROR if an archived entry's file is missing on disk
-      - ERROR if an archived entry has no sha256 (schema requires it
-        when status == archived; manifest.py backfills on demand)
-      - ERROR if recomputed SHA256 differs from stored value
-        (silent corruption / substitution)
-      - No output for entries that verify cleanly
-
-    Skips entries whose status is not 'archived' (nothing to verify).
-    Returns [] if the manifest file doesn't exist (an empty repo state).
-    """
-    issues = []
-    if not MANIFEST_PATH.exists():
-        return issues
-
-    try:
-        with open(MANIFEST_PATH) as f:
-            entries = yaml.safe_load(f) or []
-    except yaml.YAMLError as e:
-        issues.append(Issue("sources/manifest.yaml", "error",
-            f"Manifest parse failure: {e}"))
-        return issues
-
-    if not isinstance(entries, list):
-        issues.append(Issue("sources/manifest.yaml", "error",
-            "Manifest root must be a list of entries"))
-        return issues
-
-    for entry in entries:
-        if not isinstance(entry, dict):
-            continue
-        if entry.get("status") != "archived":
-            continue
-        path = entry.get("path")
-        if not path:
-            continue
-        url = entry.get("url", "(no url)")
-        full = SOURCES_DIR / path
-
-        if not full.exists():
-            issues.append(Issue(f"sources/{path}", "error",
-                f"Archived source file missing on disk (cited URL: {url})"))
-            continue
-
-        stored = entry.get("sha256")
-        if not stored:
-            # Schema marks sha256 as conditionally_required for status=archived.
-            # manifest.py verify-checksums backfills on first run; if we reach
-            # here with status=archived and no sha256, something is structurally
-            # wrong — fail loudly.
-            issues.append(Issue(f"sources/{path}", "error",
-                f"Archived manifest entry has no sha256 — run: "
-                f"python3 scripts/manifest.py verify-checksums  "
-                f"(cited URL: {url})"))
-            continue
-
-        current = compute_sha256(full)
-        if current is None:
-            issues.append(Issue(f"sources/{path}", "error",
-                f"Could not compute sha256 (file read error) — URL: {url}"))
-            continue
-
-        if current != stored:
-            issues.append(Issue(f"sources/{path}", "error",
-                f"Checksum MISMATCH — stored:{stored[:16]}... vs current:{current[:16]}... "
-                f"(URL: {url}) — possible corruption, overwrite, or substitution"))
-
-    return issues
+# manifest_checksums check moved to scripts/checks/manifest_checksums.py
+# as part of the C11 / C13 / C14 pilot migration (2026-05-05). It consumes
+# BaseContext.manifest_entries instead of re-loading the manifest itself,
+# so the orchestrator's single load can serve all manifest checks once
+# they migrate (sessions 2 and 3).
+#
+# Manifest parse-failure handling moved to the orchestrator (load_manifest
+# in main()) so the migrated check can assume a clean entry list.
 
 
 # =============================================================================
@@ -1263,11 +1188,34 @@ def main():
     all_issues = []
     broken_links = defaultdict(set)
 
+    # Load the manifest once for shared global state. The migrated
+    # manifest-checksum check consumes BaseContext.manifest_entries;
+    # legacy manifest checks below still reload independently until
+    # they migrate (sessions 2 and 3). Parse-failure handling moved
+    # here from the per-check function so the migrated check can
+    # assume a clean entry list.
+    manifest_entries = []
+    if MANIFEST_PATH.exists():
+        try:
+            with open(MANIFEST_PATH) as f:
+                manifest_entries = yaml.safe_load(f) or []
+        except yaml.YAMLError as e:
+            all_issues.append(Issue("sources/manifest.yaml", "error",
+                f"Manifest parse failure: {e}"))
+            manifest_entries = []
+        if not isinstance(manifest_entries, list):
+            all_issues.append(Issue("sources/manifest.yaml", "error",
+                "Manifest root must be a list of entries"))
+            manifest_entries = []
+
+    base_ctx = BaseContext(schema=schema, manifest_entries=manifest_entries)
+
     # Source-integrity backstop (manifest-checksum check). Runs once per invocation, before
     # per-node checks. "Do I trust my sources?" is a precondition for
     # interpreting node content; a checksum mismatch means downstream quote
     # verifications may be validating against altered source material.
-    all_issues.extend(check_manifest_checksums())
+    # Migrated to scripts/checks/manifest_checksums.py (C11 pilot).
+    all_issues.extend(ck_manifest_checksums.check(base_ctx))
     all_issues.extend(check_manifest_archive_status())
     all_issues.extend(check_manifest_extraction_type())
 
