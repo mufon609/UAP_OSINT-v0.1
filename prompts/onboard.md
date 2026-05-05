@@ -17,7 +17,7 @@ doing anything:
    renderer pending; Step G content population in progress) +
    architectural corrections that shape the current codebase.
 6. Read `meta/topic/research-queue.md` — current priority queue.
-7. Read `BACKLOG.md` — deferred work items; note any active entries
+7. Read `meta/BACKLOG.md` — deferred work items; note any active entries
    relevant to the session's planned task.
 8. Review the persistent Claude Code memory for this project. `MEMORY.md`
    is auto-loaded into your conversation context by the harness; read

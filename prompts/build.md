@@ -158,7 +158,7 @@ prose for a person node belongs in `background` / `uap_relevance`
 / `credibility_notes`. Each of those is scanned by the prose-drift
 check (see Step 10) against the pooled primary-source vocabulary.
 
-Future plan (tracked in `BACKLOG.md`): move to agent-generated
+Future plan (tracked in `meta/BACKLOG.md`): move to agent-generated
 descriptions so the evidentiary-derivation invariant is enforced
 mechanically. For now: hand-write with discipline — across every
 free-prose field, not just `description`.

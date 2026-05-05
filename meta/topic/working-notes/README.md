@@ -79,9 +79,9 @@ integration_targets:
   working-notes frontmatter for human-reader consistency with other
   governance docs, but do not rely on `type: meta` alone to confer skip
   status — the skip is path-based, not type-based. Meta-type files
-  outside this directory (BACKLOG.md, meta/conventions.md, meta/topic/
-  research-queue.md, meta/toolkit-notes/*.md) are validated by the
-  governance-files walk and must satisfy the meta-required-fields
+  outside this directory (meta/BACKLOG.md, meta/conventions.md,
+  meta/topic/research-queue.md, meta/toolkit-notes/*.md) are validated by
+  the governance-files walk and must satisfy the meta-required-fields
   check. `scripts/validate-research.py` operates on `research/*.yaml`
   only and never touches `meta/`.
 - **Don't archive in `sources/manifest.yaml`.** These are not

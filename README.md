@@ -42,9 +42,9 @@ See `meta/conventions.md` for the full philosophy.
 README.md                   this file — public-facing overview
 AGENT.md                    first-read for AI agents querying the repo
 CLAUDE.md                   session-start checklist for contributors
-BACKLOG.md                  deferred work items (not on active roadmap)
 
 meta/
+  BACKLOG.md                deferred work items (not on active roadmap)
   schema.yaml               machine-readable spec (source of truth)
   conventions.md            evidentiary philosophy (why the rules exist)
   sources-access.md         site-specific archival workarounds
