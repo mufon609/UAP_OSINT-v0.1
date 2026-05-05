@@ -162,6 +162,24 @@ investigator-facing content layers stay flat; tooling layer follows
 engineering hygiene. See `meta/conventions.md` "Repository layout" for
 the codified rule.
 
+**Completed 2026-05-05 — prose-drift tokenizer move.** The 2026-05-01
+extraction lockstep solved "same source bytes" but left the prose-drift
+tokenizer (`STOPWORDS` + `extract_significant_tokens` + `load_source_tokens`
++ `_source_token_cache`) duplicated in `validate-research.py`. The
+duplication mattered once `check-vocab.py` (contributor pre-flight tool)
+shipped 2026-05-05 needing to mirror the validator's tokenization
+byte-for-byte; initial implementation reached for an `importlib`-based
+hack to stay in lockstep, which signalled the underlying lib gap. The
+prose-drift tokenizer + STOPWORDS + cache moved to `lib/_common.py`;
+both `validate-research.py` and `check-vocab.py` now import from
+there. Separately, `review-coverage.py`'s LOCAL `extract_significant_tokens`
+(a different algorithm — proper-noun + designator + quoted-string
+extraction for the description-drift check, not the prose-drift
+tokenizer) was renamed to `extract_description_drift_tokens` with a
+docstring note explaining the distinction, preventing future
+"deduplicate two functions that look the same" mistakes that would
+silently break one or both drift checks.
+
 ---
 
 ## Open architectural threads
