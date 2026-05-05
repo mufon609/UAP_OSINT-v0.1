@@ -4,12 +4,14 @@
 #
 # Runs, in order:
 #   1. scripts/tests/help-check.sh      — scripts/*.py --help doesn't crash
-#   2. scripts/tests/smoke.sh           — fixture scaffold + validate per type
-#   3. python3 scripts/validate.py      — structural + verbatim-quote +
+#   2. scripts/tests/test_stopwords.py  — STOPWORDS shape + no content-word
+#                                         contamination (lib/_common.py)
+#   3. scripts/tests/smoke.sh           — fixture scaffold + validate per type
+#   4. python3 scripts/validate.py      — structural + verbatim-quote +
 #                                         governance-file + conditionally_required
-#   4. python3 scripts/validate-research.py
+#   5. python3 scripts/validate-research.py
 #                                       — research-artifact structural check
-#   5. python3 scripts/build-state.py --check
+#   6. python3 scripts/build-state.py --check
 #                                       — CLAUDE.md build-state block in sync
 #
 # Covers: BACKLOG "Testing infrastructure" step 4 (pre-commit hook).
@@ -66,11 +68,12 @@ run_step() {
     echo
 }
 
-run_step "1/5  help-check"              bash scripts/tests/help-check.sh
-run_step "2/5  smoke"                   bash scripts/tests/smoke.sh
-run_step "3/5  validate.py"             python3 scripts/validate.py
-run_step "4/5  validate-research.py"    python3 scripts/validate-research.py
-run_step "5/5  build-state.py --check"  python3 scripts/build-state.py --check
+run_step "1/6  help-check"              bash scripts/tests/help-check.sh
+run_step "2/6  test_stopwords"          python3 scripts/tests/test_stopwords.py
+run_step "3/6  smoke"                   bash scripts/tests/smoke.sh
+run_step "4/6  validate.py"             python3 scripts/validate.py
+run_step "5/6  validate-research.py"    python3 scripts/validate-research.py
+run_step "6/6  build-state.py --check"  python3 scripts/build-state.py --check
 
 # Summary
 echo "======================================================================"

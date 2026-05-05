@@ -280,9 +280,66 @@ def normalize_for_compare(text):
 # ---------------------------------------------------------------------------
 
 
-# Common English stopwords dropped from token-comparison. About 110
-# entries; calibrated from prior token-drift checks plus light
-# pruning based on contributor audit signals.
+# ---------------------------------------------------------------------------
+# Stopwords for the prose-drift check — function words filtered before
+# tokens compare across prose ↔ source. Regression-guarded by
+# scripts/tests/test_stopwords.py (gate 2/6 in pre-commit).
+#
+# WHY THIS EXISTS. The prose-drift check pools significant tokens from
+# source and warns on prose tokens not in the pool. Function words
+# ("the", "of", "is") appear in essentially every English document — they
+# carry no signal because they're never the variable. Including them
+# produces noise that drowns out real drift warnings. Filtering them out
+# raises the signal-to-noise ratio so each remaining warning is meaningful
+# enough for a contributor to review per-case.
+#
+# WHAT'S IN. Function words only — articles, pronouns, auxiliaries,
+# prepositions, conjunctions, negations / degree intensifiers,
+# determiners / quantifiers, and a small set of generic verbs that carry
+# little specific content (says/get/make/take/come/go and their
+# inflections). Every entry is content-blind by design.
+#
+# WHAT'S DELIBERATELY OUT. Any word that carries evidentiary weight, even
+# common ones — investigative verbs (investigate, confirm, attest,
+# established), reporting verbs (report, submit, publish, issue, signed),
+# institutional / role nouns (intelligence, agency, office, director,
+# civilian), testimony language (testify, sworn, witness, hearing),
+# provenance / archival vocabulary (document, archive, primary, source).
+# Filtering any of these would silently weaken drift detection for whole
+# classes of evidentiary claims. The CONTENT_WORDS set in
+# scripts/tests/test_stopwords.py codifies this prohibition so it
+# survives contributor turnover.
+#
+# KNOWN LIMITATIONS — architectural, not bandaid-able by tuning STOPWORDS.
+# These are real classes of drift that the prose-drift check cannot catch
+# regardless of how the stopword list is configured:
+#   - Negation flipping ("did not investigate" ↔ "did investigate") —
+#     "not" / "no" / "never" are filtered, so polarity reversal passes
+#     trivially.
+#   - Modal flipping ("might investigate" ↔ "will investigate") —
+#     modals are filtered, so certainty changes pass too.
+#   - Paraphrase preserving vocabulary — same tokens rearranged into a
+#     different claim.
+#   - Generic-verb collapse — paraphrasing source's "stated" / "wrote" /
+#     "declared" all to "said" doesn't trigger a warning.
+# All four are caught only by Phase III semantic review, not by the
+# prose-drift check. The trade-off is deliberate: a vocabulary-comparison
+# check is deterministic and dependency-free; semantic comparison would
+# need NLP machinery and produce nondeterministic results.
+#
+# ADDITION DISCIPLINE. A new STOPWORDS entry must be:
+#   (a) a function word, not a content word — test_stopwords.py enforces
+#       this against CONTENT_WORDS and will fail the pre-commit gate if
+#       a content word is added; AND
+#   (b) justified in the commit message with the specific contributor
+#       pattern that motivated the addition (e.g., "audit found `however`
+#       triggering as drift across N artifacts").
+# Adding a content word here to silence false-positive warnings is the
+# wrong fix — rewrite the prose to use source vocabulary instead, or
+# capture the variance as evidentiary data (naming_quirks / rumors /
+# a new quote).
+# ---------------------------------------------------------------------------
+
 STOPWORDS = {
     # Articles
     "a", "an", "the",
