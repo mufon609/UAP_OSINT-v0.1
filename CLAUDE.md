@@ -53,13 +53,14 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/people/ryan-graves` | active | eyewitness |
 | `/people/sean-kirkpatrick` | active | institutional-actor |
 
-### Organizations (7)
+### Organizations (8)
 
 | Node | Status | Kind |
 |---|---|---|
 | `/organizations/aaro` | active | gov |
 | `/organizations/arlo-solutions` | active | gov-contractor |
 | `/organizations/ipmo` | active | gov |
+| `/organizations/oni` | active | gov |
 | `/organizations/ousd-is` | active | gov |
 | `/organizations/sancorp-consulting` | active | gov-contractor |
 | `/organizations/ttsa` | active | private |

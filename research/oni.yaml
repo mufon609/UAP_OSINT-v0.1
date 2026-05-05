@@ -1,0 +1,281 @@
+id: research/oni
+type: research-artifact
+schema_version: 1
+target_node: organizations/oni
+status: active
+created: '2026-05-05'
+description: 'The Office of Naval Intelligence (ONI) appears in the UAP record primarily through its role with the Unidentified Aerial Phenomena Task Force ([`/organizations/uaptf`]). The Naval Intelligence Activity ([`/organizations/nia`]) UAP Security Classification Guide, issued 16 April 2020 under the signature of NIA Director Mr. Scott Bray ([`/people/scott-bray`]), names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as the subject of its classification authority. Senate Report 116-233 (June 17, 2020), accompanying the Intelligence Authorization Act for Fiscal Year 2021, supports "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence" and directs the Director of National Intelligence ([`/organizations/odni`]) to submit an intelligence assessment of the threat posed by UAP, including "a detailed analysis of UAP data and intelligence reporting collected or held by the Office of Naval Intelligence". The 25 June 2021 ODNI Preliminary Assessment ([`/documents/odni-preliminary-assessment-2021`]) was submitted in response to that direction; ONI is listed as "Navy/ONI" among the agencies that provided input to the report, with USD(I&S) ([`/organizations/ousd-is`]), DIA, FBI, NRO, NGA, NSA, and other Intelligence Community input.
+
+
+  Department of Defense Spokesperson Susan Gough ([`/people/sue-gough`]), in a written statement to The Black Vault dated June 29, 2022, confirmed that "former Office of Naval Intelligence senior civilian John Stratton was leading the effort" — UAPTF — at the time of Dr. Travis Taylor''s initial work with the Task Force; Stratton ([`/people/jay-stratton`]) and Taylor ([`/people/travis-taylor`]) are named in the same Gough statement. ONI is named as Stratton''s prior senior civilian role; his subsequent role leading UAPTF was under the direction of the Director of NIA.
+
+
+  Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/people/alex-dietrich`]) as the entity that contacted her several years after the 2004 encounter ([`/events/2004-nimitz-encounter`]). On the Somewhere in the Skies podcast ([`/transcripts/somewhere-in-the-skies-dietrich-2023`], recorded 2023), Dietrich described "the Office of Naval intelligence folks contacted me and they were doing their investigation and their followup".
+
+  '
+primary_sources:
+- path: government/blackvault-uap-security-classification-guide-20200416.pdf
+  format: pdf
+- path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+  format: pdf
+- path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
+  format: pdf
+- path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+  format: html
+- path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  format: txt
+document_intrinsic:
+  internal_name: Office of Naval Intelligence (ONI)
+  full_name: Office of Naval Intelligence
+  office_type: office
+  parent_organization_path: /organizations/us-navy
+context_extrinsic:
+  display_title: ONI — Office of Naval Intelligence
+quotes:
+- id: q1
+  added_date: '2026-05-05'
+  text: |-
+    1. (U) Purpose: This classification guide is issued for the purpose of identifYing specific topics
+    of information associated with the Office of Naval Intelligence, Unidentified Aerial Phenomenon
+    (UAP) Task Force that meet the standards and criteria for classification and protection in
+    accordance with Executive Order (E.O.) 13526, "Classified National Security Information," as
+    amended, and its implementing directives.
+  source:
+    path: government/blackvault-uap-security-classification-guide-20200416.pdf
+    location: p. 2, ¶1 (Purpose)
+  significance: NIA's UAP Security Classification Guide names the Office of Naval Intelligence, UAP Task Force as the subject of its classification authority — four months before the Department of Defense's public announcement of UAPTF's establishment
+  context: Naval Intelligence Activity, UAP Security Classification Guide ID# 04-030, signed by Director NIA Scott Bray
+  statement_date: '2020-04-16'
+- id: q2
+  added_date: '2026-05-05'
+  text: |-
+    UAPTF and the ODNI National Intelligence Manager for Aviation drafted this report, with input from USD(I&S), DIA, FBI, NRO, NGA, NSA, Air Force, Army, Navy, Navy/ONI, DARPA, FAA, NOAA, NGA, ODNI/NIM-Emerging and Disruptive Technology, ODNI/National Counterintelligence and Security Center, and ODNI/National Intelligence Council.
+  source:
+    path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+    location: p. 2, Scope and Assumptions
+  significance: ODNI Preliminary Assessment lists "Navy/ONI" among the agencies that provided input to the report — distinct from the "Navy" entry preceding it
+  context: ODNI Preliminary Assessment, Scope and Assumptions
+  statement_date: '2021-06-25'
+- id: q3
+  added_date: '2026-05-05'
+  text: |-
+    The Senate Report specifically requested that the report include:
+           1. A detailed analysis of UAP data and intelligence reporting collected or held by the
+              Office of Naval Intelligence, including data and intelligence reporting held by the
+              UAPTF;
+  source:
+    path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+    location: Appendix B (Senate Report Accompanying the Intelligence Authorization Act for Fiscal Year 2021)
+  significance: ODNI's Preliminary Assessment cites the Senate's directive that its analysis include data and intelligence reporting held by ONI — naming ONI as a UAP-data holder distinct from UAPTF
+  context: ODNI Preliminary Assessment, Appendix B
+  statement_date: '2021-06-25'
+- id: q4
+  added_date: '2026-05-05'
+  text: |-
+    The Committee supports the efforts of the Unidentified Aerial
+    Phenomenon Task Force at the Office of Naval Intelligence to
+    standardize collection and reporting on unidentified aerial phe-
+    nomenon, any links they have to adversarial foreign governments,
+    and the threat they pose to U.S. military assets and installations.
+  source:
+    path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
+    location: p. 12, Advanced Aerial Threats
+  significance: Senate Select Committee on Intelligence on-record acknowledgment of "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence" in the FY2021 Intelligence Authorization Act accompanying report
+  context: Senate Report 116-233, Advanced Aerial Threats section
+  statement_date: '2020-06-17'
+- id: q5
+  added_date: '2026-05-05'
+  text: |-
+    At the time of Dr. Taylor's initial work with the UAPTF, former Office of Naval Intelligence senior civilian John Stratton was leading the effort and informally referred to Dr. Taylor as his chief scientist as efforts to assemble a larger team were underway.
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: A1 response from DoD Spokesperson Susan Gough
+  significance: Department of Defense Public Affairs statement names Stratton as "former Office of Naval Intelligence senior civilian" who was leading UAPTF — the strongest archived government source attesting ONI in the lineage of UAPTF leadership
+  context: DoD Public Affairs written statement to The Black Vault, via Spokesperson Susan Gough
+  statement_date: '2022-06-29'
+- id: q6
+  added_date: '2026-05-05'
+  text: |-
+    [5:32] uh trying to figure it out or anything until um you know several years later when uh the Office of Naval intelligence folks contacted me and they  were doing their investigation and their followup
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: '[5:32]'
+  significance: Dietrich names the Office of Naval Intelligence as the entity that contacted her about the 2004 Nimitz encounter several years after the event; auto-caption transcript renders "Naval intelligence" with lower-case "intelligence"
+  context: Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26)
+  statement_date: '2023'
+entities_referenced:
+- id: e1
+  added_date: '2026-05-05'
+  entity_type: person
+  name: Scott Bray
+  wrap_path: /people/scott-bray
+  context_summary: Director, Naval Intelligence Activity; signed the April 16, 2020 UAP Security Classification Guide; OCA effective 17 June 2019
+- id: e2
+  added_date: '2026-05-05'
+  entity_type: person
+  name: John (Jay) Stratton
+  wrap_path: /people/jay-stratton
+  context_summary: Named in the June 29, 2022 Department of Defense Public Affairs statement as "former Office of Naval Intelligence senior civilian" who was leading UAPTF
+- id: e3
+  added_date: '2026-05-05'
+  entity_type: person
+  name: Susan Gough
+  wrap_path: /people/sue-gough
+  context_summary: Department of Defense Spokesperson; provided the written statement to The Black Vault (June 29, 2022) confirming Stratton's UAPTF role and ONI lineage
+- id: e4
+  added_date: '2026-05-05'
+  entity_type: person
+  name: Travis Taylor
+  wrap_path: /people/travis-taylor
+  context_summary: Subject of the June 29, 2022 DoD Public Affairs statement; informally referred to as UAPTF chief scientist by Stratton
+- id: e5
+  added_date: '2026-05-05'
+  entity_type: person
+  name: Alex Dietrich
+  wrap_path: /people/alex-dietrich
+  context_summary: F/A-18F pilot from the 2004 Nimitz encounter; on the Somewhere in the Skies podcast names ONI as the entity that contacted her after the encounter
+- id: e6
+  added_date: '2026-05-05'
+  entity_type: organization
+  name: Naval Intelligence Activity (NIA)
+  wrap_path: /organizations/nia
+  context_summary: Issued the April 16, 2020 UAP Security Classification Guide that names ONI as the UAP Task Force operating subject; NIA Director Bray signed
+- id: e7
+  added_date: '2026-05-05'
+  entity_type: organization
+  name: Unidentified Aerial Phenomena Task Force (UAPTF)
+  wrap_path: /organizations/uaptf
+  context_summary: Operated at the Office of Naval Intelligence per the UAP SCG and Senate Report 116-233; led by former ONI senior civilian Stratton
+- id: e8
+  added_date: '2026-05-05'
+  entity_type: organization
+  name: Office of the Director of National Intelligence (ODNI)
+  wrap_path: /organizations/odni
+  context_summary: Drafted the June 25, 2021 Preliminary Assessment in response to the Senate Report 116-233 directive; lists Navy/ONI among the contributing agencies
+- id: e9
+  added_date: '2026-05-05'
+  entity_type: organization
+  name: U.S. Navy
+  wrap_path: /organizations/us-navy
+  context_summary: ONI is a Department of the Navy office; ODNI Preliminary Assessment lists Navy and Navy/ONI among the IC agencies that provided input
+- id: e10
+  added_date: '2026-05-05'
+  entity_type: organization
+  name: Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))
+  wrap_path: /organizations/ousd-is
+  context_summary: Listed in the ODNI Preliminary Assessment among the agencies that provided input to the report
+- id: e11
+  added_date: '2026-05-05'
+  entity_type: event
+  name: 2004 USS Nimitz UAP encounter
+  wrap_path: /events/2004-nimitz-encounter
+  context_summary: The encounter that ONI followed up with Dietrich about, per her Somewhere in the Skies account
+- id: e12
+  added_date: '2026-05-05'
+  entity_type: document
+  name: ODNI Preliminary Assessment (June 25, 2021)
+  wrap_path: /documents/odni-preliminary-assessment-2021
+  context_summary: ODNI's June 25, 2021 Preliminary Assessment of UAP, with input from Navy/ONI and submitted in response to Senate Report 116-233
+- id: e13
+  added_date: '2026-05-05'
+  entity_type: transcript
+  name: Somewhere in the Skies — Alex Dietrich (recorded 2023)
+  wrap_path: /transcripts/somewhere-in-the-skies-dietrich-2023
+  context_summary: Source of Dietrich's quote naming ONI as the entity that contacted her after the 2004 encounter
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-05'
+  observed: identifYing
+  canonical: identifying
+  location: p. 2, ¶1 (Purpose)
+  source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: Optical character extraction artifact in the BlackVault FOIA-released SCG PDF (Adobe Acrobat Paper Capture extraction); preserved in q1 verbatim as it appears in the extract
+- id: nq2
+  added_date: '2026-05-05'
+  observed: ONn
+  canonical: ONI)
+  location: p. 2, Section 1 Identifying Data, PR field
+  source_path: government/blackvault-uap-security-classification-guide-20200416.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: Optical character extraction artifact in the SCG PDF — closing parenthesis after "ONI" rendered as "n" in the text layer; not registered in any quote (the PR-field line is not used as a verbatim quote)
+- id: nq3
+  added_date: '2026-05-05'
+  observed: Naval intelligence
+  canonical: Naval Intelligence
+  location: '[5:32]'
+  source_path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption transcription lower-cases "intelligence" in Dietrich's spoken phrase "Office of Naval Intelligence"; preserved in q6 verbatim
+rumors: []
+timeline:
+- id: t1
+  added_date: '2026-05-05'
+  date: '2020-04-16'
+  event: Naval Intelligence Activity issues UAP Security Classification Guide (ID# 04-030); names "the Office of Naval Intelligence, Unidentified Aerial Phenomenon (UAP) Task Force" as the subject of its classification authority
+  source:
+    path: government/blackvault-uap-security-classification-guide-20200416.pdf
+    location: p. 2, ¶1 (Purpose)
+- id: t2
+  added_date: '2026-05-05'
+  date: '2020-06-17'
+  event: Senate Report 116-233 accompanying the Intelligence Authorization Act for Fiscal Year 2021 supports "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence"
+  source:
+    path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
+    location: p. 12, Advanced Aerial Threats
+- id: t3
+  added_date: '2026-05-05'
+  date: '2021-06-25'
+  event: ODNI Preliminary Assessment lists "Navy/ONI" among the agencies that provided input to the report; cites Senate Report 116-233 directive on data and intelligence reporting collected or held by ONI
+  source:
+    path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+    location: p. 2, Scope and Assumptions
+- id: t4
+  added_date: '2026-05-05'
+  date: '2022-06-29'
+  event: Department of Defense Public Affairs written statement (Spokesperson Susan Gough, to The Black Vault) confirms "former Office of Naval Intelligence senior civilian John Stratton was leading the effort" UAPTF
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: A1 response from DoD Spokesperson Susan Gough
+- id: t5
+  added_date: '2026-05-05'
+  date: '2023'
+  event: F/A-18F pilot Alex Dietrich, on the Somewhere in the Skies podcast, names "the Office of Naval intelligence folks" as the entity that contacted her several years after the 2004 Nimitz encounter
+  source:
+    path: transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md
+    location: '[5:32]'
+key_personnel:
+- id: kp1
+  added_date: '2026-05-05'
+  person_path: /people/jay-stratton
+  role: Senior civilian
+  leadership_class: other
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: A1 response from DoD Spokesperson Susan Gough
+  note: Per the Department of Defense Spokesperson Susan Gough written statement to The Black Vault dated June 29, 2022, Stratton was "former Office of Naval Intelligence senior civilian" at the time he was leading UAPTF; the date of his ONI role is not directly stated in the primary sources cited for this organization
+org_relationships:
+- id: or1
+  added_date: '2026-05-05'
+  organization_path: /organizations/uaptf
+  relationship_type: other
+  source:
+    path: government/blackvault-uap-security-classification-guide-20200416.pdf
+    location: p. 2, ¶1 (Purpose)
+  note: UAP Task Force operating subject per the Naval Intelligence Activity UAP Security Classification Guide (16 April 2020); the Senate Select Committee on Intelligence subsequently names "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence" in Senate Report 116-233 (June 17, 2020)
+- id: or2
+  added_date: '2026-05-05'
+  organization_path: /organizations/us-navy
+  relationship_type: parent
+  source:
+    path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+    location: p. 2, Scope and Assumptions
+  note: ODNI Preliminary Assessment lists "Navy/ONI" among the contributing agencies, attesting ONI as a Navy component
+- id: or3
+  added_date: '2026-05-05'
+  organization_path: /organizations/odni
+  relationship_type: other
+  source:
+    path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
+    location: p. 2, Scope and Assumptions
+  note: Director of National Intelligence drafted the June 25, 2021 Preliminary Assessment with input from Navy/ONI; ODNI was directed by Senate Report 116-233 to include in its analysis the data and intelligence reporting collected or held by the Office of Naval Intelligence

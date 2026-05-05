@@ -202,14 +202,13 @@ Secondary cluster surfaced through Fravor testimony narrative.
 | `/people/ralph-blumenthal` | person / reporter | Low | NYT Dec 2017 co-author | Public record |
 | `/people/helene-cooper` | person / reporter | Low | NYT Dec 2017 co-author | Public record |
 
-### Cluster D — UAP oversight institutions (AARO + UAPTF shipped)
+### Cluster D — UAP oversight institutions (AARO + UAPTF + ONI shipped)
 
-AARO and UAPTF now built, closing the two central gov nodes in this
-cluster. Remaining stubs (surfaced by the AARO + UAPTF builds):
+AARO, UAPTF, and ONI now built. Remaining stubs (surfaced by the AARO +
+UAPTF + ONI builds):
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/organizations/oni` | organization / gov | High | Office of Naval Intelligence — UAPTF's parent; referenced across AARO + UAPTF + multiple person/document nodes | Navy public record + ODNI Preliminary Assessment (archived) |
 | `/organizations/nia` | organization / gov | High | Naval Intelligence Activity — signed the September 2020 UAPTF Charter; issued the April 2020 UAP Security Classification Guide | UAPTF Charter + UAP SCG (both archived) |
 | `/people/david-norquist` | person / institutional-actor | Medium | Deputy Secretary of Defense who approved UAPTF establishment (August 4, 2020) | DoD press release (archived) + public record |
 | `/people/travis-taylor` | person / institutional-actor | Medium | Dr. Travis Taylor — informal UAPTF Chief Scientist; U.S. Army Space and Missile Defense Command employee on time-limited assignment | Black Vault Gough article (archived) + SMDC statement |
