@@ -40,6 +40,12 @@ Multi-word inputs are tokenized using the same logic as prose: each
 significant sub-token is checked individually. "Public Affairs"
 tokenizes to {public, affairs}; both must be present for the input to
 register as ✓ present.
+
+Exit codes:
+    0 — diagnostic ran successfully (regardless of how many ✗ vs ✓);
+        ✗ absent rows are informational findings, not errors
+    1 — real error: artifact missing, artifact has no primary_sources,
+        or every primary source failed extraction (pool would be empty)
 """
 
 import argparse
@@ -133,11 +139,20 @@ def main():
         print(f"⚠ {len(missing_sources)} source(s) failed extraction:")
         for p in missing_sources:
             print(f"  - {p}")
+
+    if not pool:
+        # Mirror validate-research.py's "no source text could be extracted"
+        # short-circuit — diagnostic can't function with an empty pool.
+        sys.exit(
+            "\nError: pool is empty (no source text extracted). "
+            "Check that primary_sources paths exist on disk and that "
+            "pdftotext is available."
+        )
+
     print()
 
     width = max(max(len(t) for t in args.tokens), 12)
 
-    exit_code = 0
     for raw in args.tokens:
         sub_tokens = vr.extract_significant_tokens(raw)
         if not sub_tokens:
@@ -147,11 +162,13 @@ def main():
         if absent:
             detail = ", ".join(absent)
             print(f"  {raw:<{width}}  ✗ absent  [{detail}]")
-            exit_code = 1
         else:
             print(f"  {raw:<{width}}  ✓ present")
 
-    return exit_code
+    # ✗ absent findings are informational — diagnostic ran successfully.
+    # Reserve non-zero exit for real errors (missing artifact / no
+    # sources / pool empty), handled via sys.exit() above.
+    return 0
 
 
 if __name__ == "__main__":
