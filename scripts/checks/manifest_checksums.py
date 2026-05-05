@@ -19,6 +19,7 @@ entries (nothing to verify).
 import hashlib
 
 from checks import Issue
+from lib._common import SOURCES_DIR
 
 
 CHECK_NAME = "manifest_checksums"
@@ -42,9 +43,6 @@ def _compute_sha256(file_path):
 def check(ctx):
     """Yield error-level Issue for every archived entry whose stored
     sha256 doesn't match the file on disk (or whose file is missing)."""
-    # SOURCES_DIR derived from lib paths to avoid a duplicate constant.
-    from lib._common import SOURCES_DIR
-
     for entry in ctx.manifest_entries:
         if not isinstance(entry, dict):
             continue

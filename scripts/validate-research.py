@@ -364,7 +364,9 @@ def check_yaml_colon_space(path, rel):
     timestamps, ordinals). Warns only when the post-colon content is
     ≥2 words, reducing false positives on single-word sub-keys.
 
-    Parallel pre-parse mechanism to check_yaml_hash_truncation above.
+    Parallel pre-parse mechanism to scripts/checks/yaml_hash_truncation.py
+    (the sibling pre-parse check; migrated to scripts/checks/ in the C11
+    pilot — yaml_colon_space migrates in session 2 and joins it).
     """
     issues = []
     try:

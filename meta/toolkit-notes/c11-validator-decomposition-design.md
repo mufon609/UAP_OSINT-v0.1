@@ -20,9 +20,18 @@ class Issue:
     path: str           # repo-relative path of the file the issue concerns
     level: str          # "error" | "warn" — string; review-coverage's "info" added if needed
     message: str        # human-readable; may embed line numbers when checks know them
-    check_name: str | None = None   # filled by orchestrator at yield time; powers future --check filter
-    fatal: bool = False             # True → orchestrator stops further checks on this file
+    check_name: Optional[str] = None  # filled by each check via module-level CHECK_NAME
+    fatal: bool = False               # True → orchestrator stops further checks on this file
+
+    def __post_init__(self):
+        self.path = str(self.path)    # coerce Path inputs; matches legacy Issue
 ```
+
+`check_name` is set by each check itself (`check_name=CHECK_NAME`
+convention) rather than decorated by the orchestrator at yield time.
+Self-population keeps Issue provenance carried even when checks are
+called standalone (tests, single-check debugging) without an
+orchestrator decorating the stream.
 
 `line` deliberately omitted — verbatim-quote etc. embed line numbers in
 the message string today; lifting to a structured field forces every

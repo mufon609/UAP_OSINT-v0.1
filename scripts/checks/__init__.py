@@ -21,8 +21,11 @@ this contract.
 """
 
 from collections import defaultdict
+from dataclasses import dataclass
+from typing import Optional
 
 
+@dataclass
 class Issue:
     """A single violation, warning, or report from a check.
 
@@ -30,9 +33,12 @@ class Issue:
     checks against this file (e.g., frontmatter parse failure makes
     every downstream check trip noisily on missing data).
 
-    ``check_name`` is filled by the orchestrator at yield time so checks
-    don't repeat their own name on every Issue. Powers a future
-    ``--check NAME`` filter.
+    ``check_name`` is filled by each check itself via a module-level
+    ``CHECK_NAME`` constant — convention is ``check_name=CHECK_NAME``
+    on every yielded Issue. Powers a future ``--check NAME`` filter
+    and keeps Issue provenance carried even when checks are called
+    standalone (tests, single-check debugging) without an orchestrator
+    decorating the stream.
 
     ``line`` is deliberately not a structured field — checks that know
     the line embed it in ``message`` (e.g., the verbatim-quote check
@@ -40,12 +46,18 @@ class Issue:
     consumer (``--format json``, IDE integration) needs it.
     """
 
-    def __init__(self, path, level, message, check_name=None, fatal=False):
-        self.path = str(path)
-        self.level = level                    # "error" | "warn"
-        self.message = message
-        self.check_name = check_name
-        self.fatal = fatal
+    path: str
+    level: str                                # "error" | "warn"
+    message: str
+    check_name: Optional[str] = None
+    fatal: bool = False
+
+    def __post_init__(self):
+        # Coerce Path / PosixPath inputs to str so call sites can pass
+        # ``rel`` (a Path) directly. Matches the legacy Issue classes'
+        # behavior (validate.py / validate-research.py / review-coverage.py)
+        # so the migration window doesn't change call-site semantics.
+        self.path = str(self.path)
 
 
 class BaseContext:
