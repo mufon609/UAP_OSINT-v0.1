@@ -900,6 +900,79 @@ failure modes.
 
 ---
 
+### C9. Migrate remaining repo-discipline memories to `meta/`
+
+**Status (2026-05-05):** Two of seven candidate memories already
+migrated (cross-artifact consistency check → `meta/toolkit-notes/`;
+OCR-scan three-step discipline → `meta/conventions.md`). Five more
+remain in the user's Claude memory store that should live in the
+repo for visibility to humans, future contributors, and fork targets.
+
+**The principle.** Memory should host user-interaction preferences
+(how Claude should converse, when to pause, what to skip). Repo-wide
+methodology and discipline should live in `meta/conventions.md`
+(evidentiary discipline) or `meta/toolkit-notes/` (lessons-learned).
+The current memory store mixes both; the migration shifts the
+methodology side into the repo where it survives memory wipes /
+harness reinstalls / fork to a different topic.
+
+**Audit table.** Five memories whose substance is repo-wide
+discipline:
+
+| Memory | Likely destination |
+|---|---|
+| `feedback_prose_drift_warnings_must_resolve.md` | `meta/conventions.md` — extends the existing prose-drift discipline section with the per-warning resolution decision tree (word-form variant, paraphrase, source-form vs canonical, hyphenated compound, date tokens, genuinely-necessary contributor vocabulary) and the zero-warnings target on scoped fields |
+| `feedback_reader_visibility_discipline.md` | `meta/conventions.md` — new section "rendered fields vs metadata fields" enumerating which artifact fields don't render on node bodies (`note` across relationship/list sections, `naming_quirks`, `quote.significance`) and the contributor discipline of verifying rendered output before marking audit-flagged fixes resolved |
+| `feedback_source_priority_hierarchy.md` | `meta/conventions.md` — extends the "Contradictions" section with the source-ranking convention when sources disagree (subject's own words > primary witness > media narrator/outlet framing) |
+| `feedback_interview_node_entities.md` | `meta/conventions.md` person-node section, OR `meta/templates/person.md` — the per-interview venue/host/transcript registration rule for interview-heavy person nodes |
+| `feedback_transcript_timestamps_in_quotes.md` | `meta/conventions.md` — quote.text discipline section (single leading `[MM:SS]` for navigation; intermediate ticks dropped). Cross-reference to the location-ref convention's `[MM:SS]` form so the two stay aligned |
+
+**Why deferred.** Each migration is real translation work, not
+copy-paste. Memory voice ("personal reminder") differs from
+conventions voice ("principle + rationale"); some memories carry
+detailed decision trees that need careful integration with
+existing convention sections. Rushing the work risks degrading
+`meta/conventions.md` — a load-bearing document — through fatigue.
+A focused session can do the rewrite carefully.
+
+**Sequencing within the migration.**
+- Start with `feedback_transcript_timestamps_in_quotes.md` (smallest
+  scope, naturally cross-references the location-ref convention I
+  just added) and `feedback_source_priority_hierarchy.md` (slot-fits
+  into the existing "Contradictions" section).
+- Then `feedback_reader_visibility_discipline.md` (worth a new
+  conventions section since the field-level enumeration doesn't fit
+  any existing one).
+- Then the heavier two (`feedback_prose_drift_warnings_must_resolve.md`,
+  `feedback_interview_node_entities.md`) which integrate with longer
+  existing sections.
+- Each migration: rewrite into conventions voice, delete the memory
+  file, update `MEMORY.md` index, run pre-commit.
+
+**End-state target.** Memory drops from 11 entries (post-cluster-5)
+to ~6, all squarely user-interaction style: validator design
+preference, audit phasing, no count targets, YAML scalar style,
+post-compaction discipline, investigate-before-queueing. Repo gains
+five documented disciplines visible to all contributors and fork
+targets.
+
+**Out of scope** (worth noting so the migration session doesn't
+scope-creep): the remaining six memories are NOT migrated. They are
+genuinely user-interaction-style and belong in memory. Don't shift
+their location during this work.
+
+**Priority.** Low. Methodology is currently functional via
+auto-loaded MEMORY.md; migration improves shareability for humans
+and fork targets but doesn't unblock any work.
+
+Surfaced: 2026-05-05 review of memory store after BACKLOG C1
+retirement — audit found ~7 of 13 memories were repo-wide discipline
+mis-located in user-private memory storage. Two clearly-correct
+migrations completed inline; five borderline ones deferred for a
+focused session.
+
+---
+
 ## Externally blocked
 
 Items waiting on an external event the repo can't drive — FOIA

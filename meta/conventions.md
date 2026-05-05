@@ -124,6 +124,50 @@ sources. Do not re-open this question without new evidence (e.g.,
 a substantively different failure mode that doesn't reduce to
 "PDF content stream encodes the wrong glyph").
 
+**Per-quote contributor discipline when an OCR-scan source's `.txt`
+sibling hasn't been produced yet.** A new OCR-scan source may enter
+the corpus before a contributor produces its clean-text sibling — the
+validator falls back to `pdftotext` output of the OCR'd PDF in that
+case, and OCR character-corruptions (`telated` for `related`,
+`compatrtmented` for `compartmented`, `bigalow` for `bigelow`) pass the
+verbatim-quote check because both the quote text and the source extract
+carry the same corruption. The check is mechanically correct but reader-
+misleading — confirmation against the OCR-corrupted extract is not
+confirmation against the original document. Three steps, all required,
+when authoring a quote from such a source:
+
+1. **Log each artifact as a `naming_quirks` entry** with resolution
+   `preserve-as-sic-in-quotes` — observed form, canonical form, source
+   path, and a note explaining the variance (`OCR artifact`, `auto-
+   caption typo`, etc.). Multiple artifacts from one source produce
+   multiple entries (one per observed→canonical mapping).
+2. **Preserve the source form verbatim in `quote.text`.** Silent
+   substitution of the canonical form would make the verbatim-quote
+   check fail AND erase the source-form-as-archived discipline. When
+   the canonical form needs to appear in prose elsewhere, wrap a
+   backtick-bracket path on the canonical target — e.g., `"lockie
+   Martin" [`/organizations/lockheed-martin`]` — the prose-drift check
+   strips the bracket wrap before tokenizing, so the source-verbatim
+   token matches against source while the canonical wrap provides
+   navigability.
+3. **Add a reader-visible prose flag** in the appropriate free-prose
+   field (person: `credibility_notes`; document / organization /
+   location: `description`). `naming_quirks` entries don't render on
+   node bodies — without a prose flag, the reader sees the source-form
+   tokens in quoted text without the contextual signal that they're
+   preserved OCR artifacts. One sentence enumerating the OCR artifacts
+   from a given source is sufficient; use source-attested vocabulary
+   (`optical`, `character`, `recognition`, `artifacts`, `scan`,
+   `extract`, `preserved`) so the prose-drift check passes cleanly.
+
+The discipline is a per-quote workaround, not a substitute for
+producing the `.txt` sibling. Once the sibling exists and the manifest
+entry's `extraction_type` is set to `ocr-scan`, the validator extracts
+from the sibling rather than the corrupted PDF text layer; the
+naming_quirks entries continue to record the original artifacts as
+provenance. The prose flag may be tightened or removed at that point
+depending on whether the sibling fully resolves the artifacts.
+
 ### Type-specialized views of `quotes[]`
 
 Each node type renders a filtered view of the same universal primitive:
