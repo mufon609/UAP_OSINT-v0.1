@@ -36,7 +36,7 @@ transcript, media, organization, location),
 `scripts/build-from-research.py` deterministically regenerates the
 narrative from the artifact (Phase II of the layered build process).
 Finding is the last remaining type; F.7 renderer design pass is open
-(see `meta/toolkit-notes/roadmap.md`).
+(see `meta/roadmap.md`).
 
 ## Conventions
 

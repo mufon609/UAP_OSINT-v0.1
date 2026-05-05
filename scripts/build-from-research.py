@@ -8,7 +8,7 @@ replaced entirely by content derived from the artifact.
 
 SCOPE: document, person, event, transcript, media, organization,
 location. Finding is the last remaining type; F.7 design pass is open
-(see meta/toolkit-notes/roadmap.md).
+(see meta/roadmap.md).
 
 Person renderer:
   - Universal sections: Identity, Background, UAP Relevance,
@@ -2197,7 +2197,7 @@ def main():
         sys.exit(f"ERROR: build-from-research.py currently supports "
                  f"{sorted(SUPPORTED_TYPES)} only (got {node_type!r}). "
                  f"Finding extension is tracked as F.7 in "
-                 f"meta/toolkit-notes/roadmap.md.")
+                 f"meta/roadmap.md.")
 
     node_path = REPO_ROOT / dir_name / f"{slug}.md"
     if not node_path.exists():

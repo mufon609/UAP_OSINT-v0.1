@@ -14,7 +14,7 @@ This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II scope:** `build-from-research.py` supports **document,
 person, event, transcript, media, organization, and location** node
 types end-to-end. Only `finding` remains hand-authored pending F.7
-(tracked in `meta/toolkit-notes/roadmap.md`).
+(tracked in `meta/roadmap.md`).
 
 ---
 
@@ -481,7 +481,7 @@ traces to a research-artifact entry.
 and location node types. Only `finding` remains hand-authored —
 follow `meta/conventions.md` and draw exclusively from the populated
 research artifact. Renderer extension tracked in
-`meta/toolkit-notes/roadmap.md` (F.7).
+`meta/roadmap.md` (F.7).
 
 ### Step 1. Regenerate the node from its research artifact
 

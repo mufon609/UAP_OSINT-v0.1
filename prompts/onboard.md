@@ -13,7 +13,7 @@ doing anything:
 3. Read `meta/conventions.md` — the evidentiary discipline.
 4. Read `meta/schema.yaml` — the machine-readable spec for node types,
    required sections, vocabularies, research-artifact shape.
-5. Read `meta/toolkit-notes/roadmap.md` — active work (F.7 finding
+5. Read `meta/roadmap.md` — active work (F.7 finding
    renderer pending; Step G content population in progress) +
    architectural corrections that shape the current codebase.
 6. Read `meta/topic/research-queue.md` — current priority queue.
@@ -68,7 +68,7 @@ Then:
 2. Summarize the top 3 items in `meta/topic/research-queue.md` Priority
    Build Queue with rationale.
 3. Report the active roadmap sub-phase and what's queued next (from
-   `meta/toolkit-notes/roadmap.md`).
+   `meta/roadmap.md`).
 4. Ask the user what to build or what task to run.
 
 Do not begin scaffolding nodes without explicit direction from the user.
