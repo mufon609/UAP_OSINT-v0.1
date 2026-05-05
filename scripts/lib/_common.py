@@ -119,13 +119,30 @@ _HTML_INLINE_TAGS = (
 
 
 # ---------------------------------------------------------------------------
-# Markdown section extraction — used by node-body validators / checks for
-# walking H2 sections and pulling their text. Pure functions: text in,
-# structure out. Lifted to lib/_common.py during C11 session-2 migration
+# Markdown helpers — pure functions for parsing node frontmatter and walking
+# H2 sections. Lifted to lib/_common.py during C11 session-2 migration
 # (2026-05-05) so per-check modules in scripts/checks/ can consume them
 # directly without importing from validate.py (which would invert the
 # layering — checks shouldn't import from the orchestrator).
 # ---------------------------------------------------------------------------
+
+
+def parse_frontmatter(text):
+    """Parse YAML frontmatter from a markdown document. Returns
+    ``(frontmatter_dict, body)`` or ``(None, None)`` on absent or
+    malformed frontmatter. Body is the text after the closing ``---``
+    delimiter.
+    """
+    if not text.startswith("---"):
+        return None, None
+    end = text.find("\n---", 3)
+    if end < 0:
+        return None, None
+    try:
+        fm = yaml.safe_load(text[3:end])
+        return fm, text[end + 4:]
+    except yaml.YAMLError:
+        return None, None
 
 
 def extract_h2_sections(text):
