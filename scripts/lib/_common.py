@@ -294,10 +294,13 @@ def normalize_for_compare(text):
 # enough for a contributor to review per-case.
 #
 # WHAT'S IN. Function words only — articles, pronouns, auxiliaries,
-# prepositions, conjunctions, negations / degree intensifiers,
-# determiners / quantifiers, and a small set of generic verbs that carry
-# little specific content (says/get/make/take/come/go and their
-# inflections). Every entry is content-blind by design.
+# modals, prepositions, conjunctions, negations / degree intensifiers,
+# determiners / quantifiers. Every entry is content-blind by design.
+# Entries shorter than 3 characters are NOT listed — the tokenizer's
+# regex+length filter (`r"[a-z0-9][a-z0-9\-']+"` + `len >= 3`) already
+# excludes them, so listing "a" / "of" / "is" / "be" here would be
+# belt-and-suspenders. STOPWORDS contains only 3+ char entries that
+# would otherwise pass the length filter and need explicit filtering.
 #
 # WHAT'S DELIBERATELY OUT. Any word that carries evidentiary weight, even
 # common ones — investigative verbs (investigate, confirm, attest,
@@ -305,6 +308,19 @@ def normalize_for_compare(text):
 # institutional / role nouns (intelligence, agency, office, director,
 # civilian), testimony language (testify, sworn, witness, hearing),
 # provenance / archival vocabulary (document, archive, primary, source).
+# Plus three deliberate exclusions tightened during the 2026-05-05 audit:
+#   - Cardinal numbers ("one", "two", "three") — counting drift is
+#     evidentiary drift even when the word is grammatically a determiner
+#     ("investigated three cases" vs "investigated one case").
+#   - "may" — collides with the month "May" after lowercasing; filtering
+#     would mask month-attestation drift.
+#   - Generic verbs ("said", "took", "made", "went", "got", "came", "go",
+#     and their inflections) — were previously a category here. Empirical
+#     audit surfaced 6 real word-form drift cases when removed (took/take
+#     tense substitutions, said/stated paraphrases). Filtering them
+#     enabled the very paraphrase drift class the check is designed to
+#     catch. Now: prose using a generic verb warns when source uses a
+#     different verb. Standard prose-drift discipline applies.
 # Filtering any of these would silently weaken drift detection for whole
 # classes of evidentiary claims. The CONTENT_WORDS set in
 # scripts/tests/test_stopwords.py codifies this prohibition so it
@@ -312,20 +328,22 @@ def normalize_for_compare(text):
 #
 # KNOWN LIMITATIONS — architectural, not bandaid-able by tuning STOPWORDS.
 # These are real classes of drift that the prose-drift check cannot catch
-# regardless of how the stopword list is configured:
+# regardless of how the stopword list is configured (each filtered token
+# is a function word that genuinely carries no content; a contributor
+# substitution within the category produces no token-level signal):
 #   - Negation flipping ("did not investigate" ↔ "did investigate") —
-#     "not" / "no" / "never" are filtered, so polarity reversal passes
+#     "not" / "never" are filtered, so polarity reversal passes
 #     trivially.
 #   - Modal flipping ("might investigate" ↔ "will investigate") —
 #     modals are filtered, so certainty changes pass too.
+#   - Quantifier flipping ("all cases" ↔ "some cases") — "all" / "some" /
+#     "every" filtered.
 #   - Paraphrase preserving vocabulary — same tokens rearranged into a
 #     different claim.
-#   - Generic-verb collapse — paraphrasing source's "stated" / "wrote" /
-#     "declared" all to "said" doesn't trigger a warning.
-# All four are caught only by Phase III semantic review, not by the
-# prose-drift check. The trade-off is deliberate: a vocabulary-comparison
-# check is deterministic and dependency-free; semantic comparison would
-# need NLP machinery and produce nondeterministic results.
+# All caught only by Phase III semantic review, not by the prose-drift
+# check. The trade-off is deliberate: a vocabulary-comparison check is
+# deterministic and dependency-free; semantic comparison would need NLP
+# machinery and produce nondeterministic results.
 #
 # ADDITION DISCIPLINE. A new STOPWORDS entry must be:
 #   (a) a function word, not a content word — test_stopwords.py enforces
@@ -341,38 +359,53 @@ def normalize_for_compare(text):
 # ---------------------------------------------------------------------------
 
 STOPWORDS = {
-    # Articles
-    "a", "an", "the",
-    # Pronouns
-    "he", "she", "it", "they", "we", "you", "his", "her", "their",
-    "its", "our", "my", "your", "this", "that", "these", "those", "who",
+    # Articles (1–2 char articles "a", "an" are filtered by the
+    # tokenizer's len>=3 floor, so only "the" needs explicit listing).
+    "the",
+    # Pronouns (3+ chars only — "he", "it", "we", "my" filtered by length).
+    "she", "they", "you", "his", "her", "their",
+    "its", "our", "your", "this", "that", "these", "those", "who",
     "whom", "whose", "which", "what",
-    # Auxiliaries
-    "is", "was", "are", "were", "be", "been", "being", "am",
-    "have", "has", "had", "do", "does", "did", "done",
-    "will", "would", "can", "could", "should", "may", "might", "must",
-    "shall",
-    # Prepositions
-    "of", "in", "on", "at", "to", "from", "for", "with", "by", "as",
+    # Auxiliaries (3+ chars — "is", "be", "am", "do" filtered by length).
+    "was", "are", "were", "been", "being",
+    "have", "has", "had", "does", "did", "done",
+    # Modals — known limitation: certainty / possibility flips ("may"
+    # vs "will" vs "must") pass the check trivially. Caught by Phase III.
+    # NOTE: "may" deliberately excluded — collides with month "May" after
+    # lowercasing, which IS content.
+    "will", "would", "can", "could", "should", "might", "must", "shall",
+    # Prepositions (3+ chars only — "of", "in", "on", "at", "to", "by",
+    # "as" filtered by length).
+    "from", "for", "with",
     "into", "onto", "upon", "off", "out", "over", "under", "above",
     "below", "between", "among", "through", "during", "within",
     "without", "against", "about", "across", "after", "before", "behind",
-    # Conjunctions
-    "and", "or", "but", "so", "if", "because", "since", "until",
+    # Conjunctions (3+ chars — "or", "if", "so" filtered by length).
+    "and", "but", "because", "since", "until",
     "unless", "when", "where", "while", "although", "though", "than",
     "yet", "whether",
-    # Negations / degree
-    "not", "no", "never", "also", "then", "now", "just", "only", "even",
-    "else", "still", "already", "yet", "ever", "again", "very", "too",
+    # Negations / degree — known limitation: polarity / degree flips
+    # pass the check trivially. Caught by Phase III.
+    "not", "never", "also", "then", "now", "just", "only", "even",
+    "else", "still", "already", "ever", "again", "very", "too",
     "quite", "rather", "much", "more", "most", "less", "least",
-    # Determiners / quantifiers
+    # Determiners / quantifiers. Cardinal numbers ("one", "two", "three")
+    # deliberately excluded — they carry counting content (1-vs-3-cases
+    # drift is real evidentiary drift), even when grammatically used as
+    # determiners. Universal/existential quantifiers ("all", "every",
+    # "any") known-limitation class with negation flipping.
     "some", "any", "all", "each", "every", "both", "either", "neither",
-    "one", "two", "three", "other", "another", "same", "such", "own",
+    "other", "another", "same", "such", "own",
     "here", "there",
-    # Common verbs that carry little specific content
-    "says", "said", "say", "saying", "went", "goes", "gone", "come",
-    "came", "coming", "get", "got", "getting", "make", "made", "making",
-    "take", "took", "taking", "taken",
+    # Generic verbs deliberately NOT filtered (was previously a category
+    # here; removed 2026-05-05 after empirical audit). Filtering "said"
+    # / "took" / "made" / "went" / "got" / "came" enabled paraphrase
+    # drift the check is designed to catch — "Stratton said" paraphrasing
+    # source's "Stratton stated" passed silently because both verbs
+    # collapsed to filtered tokens. Now: prose using a generic verb
+    # warns when source uses a different verb. Standard prose-drift
+    # discipline applies (rewrite to source morphology, or document the
+    # variance).
 }
 
 

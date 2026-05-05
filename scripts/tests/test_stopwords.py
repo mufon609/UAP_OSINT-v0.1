@@ -89,6 +89,28 @@ CONTENT_WORDS = {
     "direct", "directed",
     "approve", "approved",
     "create", "created",
+    # Generic verbs — previously filtered as "carry little specific
+    # content," now treated as content. Empirical 2026-05-05 audit
+    # surfaced 6 real word-form drift cases (took/take, took/taken,
+    # said/stated paraphrases) when these were removed from STOPWORDS.
+    # Re-adding them as function words would re-open the paraphrase /
+    # word-form drift class.
+    "said", "says", "say", "saying",
+    "took", "take", "taking", "taken",
+    "made", "make", "making",
+    "got", "get", "getting",
+    "went", "goes", "gone",
+    "came", "come", "coming",
+    # Cardinal numbers — counting drift ("one case" vs "three cases"
+    # is real evidentiary drift even when the word is grammatically a
+    # determiner). Was previously filtered under "determiners /
+    # quantifiers"; corrected 2026-05-05.
+    "one", "two", "three",
+    # Month name "May" lowercases to "may" and collides with the modal.
+    # Filtering masks month-attestation drift. Modal "may" filtering
+    # was a 2026-05-05 audit removal; the cost is rare modal-may false-
+    # positives on prose, accepted to preserve month-name detection.
+    "may",
 }
 
 

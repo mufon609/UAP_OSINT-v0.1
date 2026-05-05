@@ -20,7 +20,7 @@ description: 'Arlo Solutions, LLC is a small business of Washington, D.C. founde
   The HQ003425A0004 BPA and HQ003425F0104 SASP Call Order were awarded after a reevaluation of solicitation HQ003424R0178. According to the Government Accountability Office decision Matter of Sancorp Consulting
   LLC, B-422985.4 / B-422985.5 (June 11, 2025), WHS issued the RFQ on May 23, 2024 under the General Services Administration Federal Supply Schedule Professional Services multiple award schedule contract;
   nine vendors submitted quotations; in September 2024, WHS established BPAs with, and issued Call Order 1 (EXDIR) to, Comprehensive Approach LLC and Call Order 2 (SASP) to Sancorp Consulting ([`/organizations/sancorp-consulting`]).
-  Following protests by Arlo and Premier Enterprise Solutions ([`/organizations/premier-enterprise-solutions`]), the agency took corrective action: stating it would terminate the BPAs and call orders, reevaluate
+  Following protests by Arlo and Premier Enterprise Solutions ([`/organizations/premier-enterprise-solutions`]), the agency announced corrective action: stating it would terminate the BPAs and call orders, reevaluate
   quotations, and make new award decisions. The reevaluation awarded Call Order 1 (EXDIR) to Premier and Call Order 2 (SASP) to Arlo. Sancorp filed a protest of the reevaluation. The GAO dismissed Sancorp''s
   challenges to the SASP call order on the basis that Sancorp''s proposed staff officer key personnel had submitted a letter of resignation dated February 7, 2025 with a last official day of February 14, 2025 — before WHS issued the SASP call order — and that Sancorp
   had failed to advise the agency of the unavailability of the quoted key person, making Sancorp''s SASP quotation unacceptable and Sancorp ineligible to challenge the SASP call order. The GAO denied Sancorp''s
@@ -863,7 +863,7 @@ contracts:
   source:
     path: government/usaspending-arlo-hq003425f0104.json
     location: USAspending API record — date_signed + base_and_all_options + base_exercised_options + description fields
-  note: SASP Call Order awarded to Arlo following the WHS reevaluation under HQ003424R0178; took the place of Sancorp's September 2024 initial SASP award. Sancorp filed a protest of the reevaluation; GAO B-422985.4 / B-422985.5 (June 11, 2025) dismissed Sancorp's challenges to the SASP call order on the basis that Sancorp's proposed staff officer key personnel had resigned prior to SASP call order issuance, rendering Sancorp's SASP quotation unacceptable.
+  note: SASP Call Order awarded to Arlo following the WHS reevaluation under HQ003424R0178; issued in place of Sancorp's September 2024 initial SASP award. Sancorp filed a protest of the reevaluation; GAO B-422985.4 / B-422985.5 (June 11, 2025) dismissed Sancorp's challenges to the SASP call order on the basis that Sancorp's proposed staff officer key personnel had resigned prior to SASP call order issuance, rendering Sancorp's SASP quotation unacceptable.
 - id: c12
   added_date: '2026-05-03'
   contract_number: 47QTCA21D003B
