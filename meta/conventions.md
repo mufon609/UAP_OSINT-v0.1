@@ -124,6 +124,41 @@ sources. Do not re-open this question without new evidence (e.g.,
 a substantively different failure mode that doesn't reduce to
 "PDF content stream encodes the wrong glyph").
 
+**Detecting a new OCR-scan source.** A PDF whose Producer / Creator
+metadata names an OCR engine (OmniPage, AINSLIB.OCR, ABBYY,
+Tesseract) or whose text layer was demonstrably reconstructed from
+page images needs the `ocr-scan` flag even when its `pdftotext`
+output looks clean on a casual read. The signals to check:
+
+- **Visual diff.** Compare `pdftotext` output of any page against
+  the rendered PDF page. Clean text-native extractions don't show
+  character-level divergences from visible content; OCR sources do.
+- **Character-cluster transpositions.** Common OCR misreads cluster
+  in predictable pairs — `rt`↔`tr`, `ar`↔`at`, `re`↔`te`, `ll`↔`11`,
+  `cl`↔`d`, `rn`↔`m`. Grep for words containing these in positions
+  where they don't make English sense (`telated`, `compatrtmented`,
+  `appatently`) as a fast first-pass screen.
+- **Unicode-mapping artifacts.** Substitution at the PDF-generation
+  layer can produce nonsense glyphs (`‡` for `½`, `®` for `©`) that
+  the extractor reproduces faithfully. These look correct on text-
+  navigation tools but wrong against visible content.
+- **Producer-string heuristic.** Run `pdfinfo` on the PDF and check
+  the Producer / Creator fields. OmniPage CSDK, AINSLIB.OCR, ABBYY
+  FineReader, and Tesseract producers all warrant inspection even
+  when the extract looks clean. (One PDF in the BACKLOG A2 audit had
+  a clean extract despite OCR producer metadata; that's the
+  exception case — flagged `ocr-scan` with a verification note
+  instead of producing a `.txt` sibling. Most OCR-produced PDFs need
+  the sibling.)
+
+When detection confirms `ocr-scan`, set the manifest entry's
+`extraction_type` accordingly. If the extracted text is clean enough
+to use, the validator falls back to `pdftotext` (per
+`extract_source_text` in `scripts/lib/_common.py`); otherwise produce
+a contributor-verified `.txt` sibling. The three-step contributor
+discipline below handles the per-quote case during the window before
+the sibling exists.
+
 **Per-quote contributor discipline when an OCR-scan source's `.txt`
 sibling hasn't been produced yet.** A new OCR-scan source may enter
 the corpus before a contributor produces its clean-text sibling — the
@@ -159,6 +194,10 @@ when authoring a quote from such a source:
    from a given source is sufficient; use source-attested vocabulary
    (`optical`, `character`, `recognition`, `artifacts`, `scan`,
    `extract`, `preserved`) so the prose-drift check passes cleanly.
+
+After applying step 3, re-grep the source extract for additional
+artifact patterns matching those already logged — drafting the prose
+flag often surfaces artifacts not caught in the initial scan.
 
 The discipline is a per-quote workaround, not a substitute for
 producing the `.txt` sibling. Once the sibling exists and the manifest
