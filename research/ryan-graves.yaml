@@ -25,7 +25,7 @@ quotes:
   text: I have witnessed advanced UAP on multiple sensor systems firsthand, and I'm here to voice the concerns of countless commercial aircrew and military veterans who have confided their similar encounters with me.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
-    location: line 10
+    location: "p. 1, ¶3"
   significance: Firsthand multi-sensor UAP observation claim framing; representative-of-network framing for confided encounters from commercial aircrew and military veterans
   context: written testimony submitted for the July 26, 2023 House Oversight UAP hearing — opening statement
   observation_type: direct
@@ -35,7 +35,7 @@ quotes:
   text: It has been more than a decade since my squadron began witnessing advanced UAP demonstrating complex maneuvers on a regular basis, and we still don't have answers.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
-    location: line 16
+    location: "p. 1, ¶5"
   significance: Decade-long squadron observation timeline; "still don't have answers" framing
   context: written testimony submitted for the July 26, 2023 House Oversight UAP hearing
   observation_type: direct
@@ -45,7 +45,7 @@ quotes:
   text: I joined the U.S. Navy in 2009. As a pilot, I was trained to be an expert observer, tasked with identifying any aircraft within our operating area. In 2014, I was near Virginia Beach as part of VFA-11, a Navy Fighter/Attack Squadron made up of F/A-18F Super Hornets. Upon an upgrade to our radar system, we began to detect unknown objects in our airspace. Initially dismissed as software glitches, we soon corroborated these radar tracks with infrared sensors, confirming their physical presence.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
-    location: line 43
+    location: "p. 2, ¶1"
   significance: 2009 Navy joining; 2014 VFA-11 assignment near Virginia Beach with F/A-18F Super Hornets; radar upgrade detection + infrared corroboration; expert-observer training framing
   context: written testimony submitted for the July 26, 2023 House Oversight UAP hearing — the "My experience — UAP encounters in W-72" section
   observation_type: direct
@@ -55,7 +55,7 @@ quotes:
   text: Over time, UAP sightings became an open secret among our aircrew. They were a common occurrence, seen by most of my colleagues on radar and occasionally up close. The sightings were so frequent that they became part of daily briefs.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
-    location: line 50
+    location: "p. 2, ¶2"
   significance: Squadron-culture framing — UAP sightings as "open secret" and common occurrence; normalized into daily briefs
   context: written testimony submitted for the July 26, 2023 House Oversight UAP hearing
   observation_type: direct
@@ -65,7 +65,7 @@ quotes:
   text: A pivotal incident occurred during an air combat training mission in Warning Area W-72, an exclusive block of airspace ten miles east of Virginia Beach. All traffic into the training area goes through a single GPS point at a set altitude. Just at the moment the two jets crossed the threshold, one of the pilots saw a dark gray cube inside of a clear sphere — motionless against the wind, fixed directly at the entry point. The jets, only 100 feet apart, were forced to take evasive action. They terminated the mission immediately and returned to base. Our squadron submitted a safety report, but there was no official acknowledgement of the incident and no further mechanism to report the sightings.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
-    location: line 54
+    location: "p. 2, ¶3"
   significance: Flagship W-72 encounter — two jets 100 feet apart at GPS entry point, dark gray cube inside clear sphere motionless at the threshold, evasive action, safety-report institutional non-response
   context: written testimony submitted for the July 26, 2023 House Oversight UAP hearing — the "My experience — UAP encounters in W-72" section
   observation_type: relayed
@@ -75,7 +75,7 @@ quotes:
   text: The UAP we encountered and tracked on multiple sensors behaved in ways that surpassed our understanding and technology. The UAP could accelerate at speeds up to Mach 1, hold their position against hurricane-force winds, and outlast our fighter jets, operating continuously throughout the day. They did not have any visible means of lift, control surfaces or propulsion — nothing that resembled normal aircraft with wings, flaps or engines. I am a formally trained engineer and I have no explanation for this.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
-    location: line 65
+    location: "p. 2, ¶5"
   significance: UAP kinematic + observable-characteristics summary — Mach 1 acceleration, hurricane-wind stationary, no visible propulsion / lift / control surfaces; "formally trained engineer, no explanation" framing
   context: written testimony submitted for the July 26, 2023 House Oversight UAP hearing — "Advanced UAP defy conventional explanation" section
   observation_type: direct
@@ -85,7 +85,7 @@ quotes:
   text: I founded Americans for Safe Aerospace to create a center of support, research, and public education for aircrew impacted by UAP encounters. We now have nearly 5,000 members and are actively working with more than 30 UAP witnesses who have approached us. I am also the Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics, where we have assembled a volunteer team of almost 80 PhDs and aerospace engineers dedicated to tackling the science around this issue.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
-    location: line 18
+    location: "p. 1, ¶5"
   significance: ASA + AIAA founding/role scope — nearly 5,000 members, 30+ UAP witnesses; Chair of AIAA UAP Integration & Outreach Committee with almost 80 PhDs and aerospace engineers
   context: written testimony submitted for the July 26, 2023 House Oversight UAP hearing — opening statement
   observation_type: direct
@@ -95,7 +95,7 @@ quotes:
   text: Recently, I have received confirmation that these encounters were also a shock to the chain of command from one of our advisors at ASA, Rear Admiral Tim Gallaudet, former head of National Oceanic and Atmospheric Administration, and Oceanographer of the Navy.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
-    location: line 72
+    location: "p. 2, ¶6"
   significance: Tim Gallaudet named as ASA advisor — former NOAA head and Oceanographer of the Navy; chain-of-command confirmation framing
   context: written testimony submitted for the July 26, 2023 House Oversight UAP hearing — "Advanced UAP defy conventional explanation" section
   observation_type: relayed
@@ -105,7 +105,7 @@ quotes:
   text: While serving as an Admiral with Fleet Forces Command, he received a classified email on SIPRNET in 2015 from his boss, the Operations Commander, to all 1- and 2-star Admiral subordinates. The title of the email was "Urgent safety of flight issue." He attached the now famous GO-FAST UAP video from a Navy F/A-18, asking if anyone knew their origin, and expressed safety of flight concerns about multiple near mid-air collisions with UAP in the early warning area off Virginia Beach where my encounters occurred, noting they might shut down the exercise for safety reasons.
   source:
     path: government/docs-house-gov-graves-written-testimony-20230726.pdf
-    location: line 76
+    location: "p. 2, ¶7"
   significance: Gallaudet's 2015 SIPRNET "Urgent safety of flight issue" email — Fleet Forces Command Operations Commander with GO-FAST video to all 1- and 2-star Admirals; location corroboration with Graves's own encounter area
   context: written testimony submitted for the July 26, 2023 House Oversight UAP hearing — "Advanced UAP defy conventional explanation" section
   observation_type: relayed

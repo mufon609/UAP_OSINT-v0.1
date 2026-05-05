@@ -395,7 +395,7 @@ Submission") |
 |---|---|
 | Attributed to | Congressional biographical submission, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-grusch-bio-20230726.pdf) |
-| Location | lines 10-13 |
+| Location | p. 1, ¶4 |
 
 > NGA lead for Unidentified Anomalous Phenomena (UAP) and Trans-Medium Anomaly issues. Executed new program of record responsive to direct tasking by the Congressional Intelligence Committees.
 
@@ -403,7 +403,7 @@ Submission") |
 |---|---|
 | Attributed to | Congressional biographical submission, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/docs-house-gov-grusch-bio-20230726.pdf) |
-| Location | lines 22-24 |
+| Location | p. 1, ¶8 |
 
 > My name is David Charles Grusch. I was an intelligence officer for 14 years both in the U.S. Air Force, both active-duty Air National Guard and Reserve at the rank of Major and most recently from 2021 to 2025—excuse me, 2023—at the National Geospatial Intelligence Agency, NGA, at the GS–15 civilian level, which is the military equivalent of a full bird colonel.
 

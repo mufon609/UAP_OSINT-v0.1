@@ -257,7 +257,7 @@ itself:
 | Paginated PDF (hearing transcript, government report, written testimony) | `p. N, ¶M` |
 | Unpaginated short document (HTML article, single-page memo) | `¶N` |
 | Caption / audio / video transcript | `[MM:SS]` (or `[MM:SS]–[MM:SS]` for long quotes) |
-| Multi-page document with no paragraph anchor | `p. N` |
+| Multi-page document where paragraph anchors aren't available — either the document lacks paragraph structure, or `pdftotext -layout` collapses visually-distinct paragraphs on a page into a single block (in which case ¶1 would overstate the precision the extract can deliver) | `p. N` |
 | The extract itself IS the intended reference (rare; e.g., extract carries content the source PDF lacks) | `lines N-M of the extract` (the `of the extract` qualifier is required) |
 
 Plain `lines N-M` is not a valid permanent ref. Three layers serve

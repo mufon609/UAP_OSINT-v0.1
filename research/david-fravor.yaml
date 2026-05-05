@@ -66,7 +66,7 @@ quotes:
   text: As all 4 looked down we saw a small white Tic Tac shaped object with the longitudinal axis pointing N/S and moving very abruptly over the white water.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 37-39
+    location: "p. 1, ¶7"
   significance: Initial Tic Tac visual acquisition
   context: Written testimony, House Oversight Committee
   observation_type: direct
@@ -76,7 +76,7 @@ quotes:
   text: As we pulled nose onto the object at approximately ½ of a mile with the object just left of our nose, it rapidly accelerated and disappeared right in front of our aircraft.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 47-48
+    location: "p. 2, ¶1"
   significance: Intercept — object behavior at closest approach
   context: Written testimony, House Oversight Committee
   observation_type: direct
@@ -86,7 +86,7 @@ quotes:
   text: This Tic Tac Object had just traveled 60 miles in a very short period of time (less than a minute), was far superior in performance to my brand-new F/A-18F and did not operate with any of the known aerodynamic principles that we expect for objects that fly in our atmosphere.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 52-55
+    location: "p. 2, ¶1"
   significance: Post-intercept — Princeton radar reacquisition and performance assessment
   context: Written testimony, House Oversight Committee
   observation_type: direct
@@ -96,7 +96,7 @@ quotes:
   text: What is shocking is that the incident was never investigated, none of my crew were ever questioned, tapes were never taken, and after a couple of days, it turned into a great story to tell friends.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 64-66
+    location: "p. 2, ¶3"
   significance: Lack of post-incident investigation
   context: Written testimony, House Oversight Committee
   observation_type: direct
@@ -106,7 +106,7 @@ quotes:
   text: Not until 2009 did Jay Stratton contact me to investigate what we observed. Unbeknownst to all of us, Jay was part of the ATIP (Anomalous Threat Identification Program) program led by Lue Elizondo out of the DOD.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 66-68
+    location: "p. 2, ¶3"
   significance: Disclosure chain — Stratton contact in 2009 and ATIP attribution to Elizondo
   context: Written testimony, House Oversight Committee
   observation_type: relayed
@@ -116,7 +116,7 @@ quotes:
   text: In the weeks that passed I was made aware that Lue had left the pentagon in protest and joined forces with Tom Delonge, Chris Mellon, Steve Justice and others to form To The Stars Academy.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 78-79
+    location: "p. 2, ¶5"
   significance: TTSA formation — Elizondo / DeLonge / Mellon / Justice, per Fravor's relayed awareness
   context: Written testimony, House Oversight Committee
   observation_type: relayed
@@ -126,7 +126,7 @@ quotes:
   text: I was contacted by Mr Elizondo shortly after talking with Alex in 2016. We briefly chatted and I was told that he would be in contact.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 75-76
+    location: "p. 2, ¶4"
   significance: Direct attestation of Elizondo's 2016 contact with Fravor — shortly after Dietrich's 2016 outreach
   context: Written testimony, House Oversight Committee
   observation_type: relayed
@@ -136,7 +136,7 @@ quotes:
   text: We were at the beginning of our workup cycle that would prepare us for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 9-10
+    location: "p. 1, ¶3"
   significance: Operational context — VFA-41 / Carrier Airwing Eleven workup cycle toward Iraq-supporting Persian Gulf deployment at the time of the Nimitz encounter
   context: Written testimony, House Oversight Committee
   observation_type: relayed
@@ -146,7 +146,7 @@ quotes:
   text: I was scheduled to lead a 2 V 2 Air to Air training exercise. My flight of 2 F/A-18Fs was the Blue Air, the good guys, and we were being controlled by the USS Princeton, CG-59.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 15-17
+    location: "p. 1, ¶4"
   significance: Training exercise structure — 2 V 2 Air to Air; Fravor's flight of 2 F/A-18Fs as Blue Air controlled by USS Princeton CG-59 before the vector to intercept
   context: Written testimony, House Oversight Committee
   observation_type: direct
@@ -156,7 +156,7 @@ quotes:
   text: It was this organization that pressed the issue with leading Industry experts and USG officials, worked with Leslie Keane, Ralph Blumenthal and Helene Cooper to publish the articles in the NYT in Dec 2017 admitting the USG was looking at UAPs and removed the Stigma of the UFO topic which led to us being here today.
   source:
     path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
-    location: lines 80-83
+    location: "p. 2, ¶5"
   significance: TTSA-NYT coordination chain — TTSA worked with NYT journalists Leslie Kean (spelled "Keane" in source; see nq2), Ralph Blumenthal, and Helene Cooper to publish the December 2017 articles on the USG UAP program
   context: Written testimony, House Oversight Committee
   observation_type: relayed

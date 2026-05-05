@@ -89,7 +89,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | Official Department of Defense biography released at AARO establishment, 2022-07-20 |
 | Source | [archived source](../sources/government/media-defense-gov-kirkpatrick-biography-20220720.pdf) |
-| Location | lines 4-7 |
+| Location | p. 1, ¶2 |
 
 > The USSPACECOM Intelligence Enterprise was the fifth organization he has been the IC lead for establishment.
 
@@ -97,7 +97,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | Official Department of Defense biography released at AARO establishment, 2022-07-20 |
 | Source | [archived source](../sources/government/media-defense-gov-kirkpatrick-biography-20220720.pdf) |
-| Location | lines 34-35 |
+| Location | p. 1, ¶6 |
 
 > I have -- in the research I've been doing, I've not heard, seen or heard of anything at this time that would support that.
 
@@ -193,7 +193,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266 (April 18 2024 BlackVault analysis), 2023-06-13 |
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
-| Location | lines 322-323 |
+| Location | p. 8, ¶8 |
 
 > And yes, you are defending and adjudicating, and you're undermining the very organization you purported to help establish for this purpose.
 
@@ -201,7 +201,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 |---|---|
 | Attributed to | Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266; Mellon attempting to mediate between Grusch and AARO, 2023-06-13 |
 | Source | [archived source](../sources/government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf) |
-| Location | lines 378-379 |
+| Location | p. 9, ¶14 |
 
 > AARO has yet to find any credible evidence to support the allegations of any reverse engineering program for non-human technology.
 

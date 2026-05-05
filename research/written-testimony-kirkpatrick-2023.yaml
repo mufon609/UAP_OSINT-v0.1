@@ -71,7 +71,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 7-10
+    location: "p. 1, ¶2"
   significance: Opening cordiality and statement of testimony purpose; differs from the oral version in which Kirkpatrick added a self-correction "the Defense -- Defense's efforts"
   context: Statement for the Record opening
 - id: q2
@@ -82,7 +82,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 24-27
+    location: "p. 1, ¶2"
   significance: Kirkpatrick describes AARO's organizational structure — four functional areas including a strategic communications function; written-statement formulation, slightly different wording from the oral version ("9 months" vs "last nine months")
   context: Statement for the Record
 - id: q3
@@ -93,7 +93,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 27-31
+    location: "p. 1, ¶2"
   significance: Summary of AARO's first-nine-months work program — data collection, internal reporting standardization, framework for analysis
   context: Statement for the Record
 - id: q4
@@ -104,7 +104,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 31-35
+    location: "p. 1, ¶2"
   significance: Kirkpatrick frames AARO's historical-record review as legislative direction — the work that resulted in AARO Historical Record Report Vol I (released March 2024)
   context: Statement for the Record
 - id: q5
@@ -115,7 +115,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 38-41
+    location: "p. 2"
   significance: Kirkpatrick situates AARO in lineage of decades of DOD/IC/congressionally-directed UAP resolution work; specifies Navy and Air Force pilots as primary witness population
   context: Statement for the Record
 - id: q6
@@ -126,7 +126,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 42-46
+    location: "p. 2"
   significance: Kirkpatrick asks for patience and frames the priority order — military personnel and installations first; commits to following scientific evidence wherever it leads
   context: Statement for the Record
 - id: q7
@@ -137,7 +137,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 53-58
+    location: "p. 2"
   significance: Kirkpatrick acknowledges DOD/IC alone are insufficient; flags continental-U.S. monitoring authorities and partnerships as needed extensions
   context: Statement for the Record
 - id: q8
@@ -148,7 +148,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 59-61
+    location: "p. 2"
   significance: Kirkpatrick reframes UAP from intelligence problem to operational and scientific problem; lists Services / IC / DOE as core partners
   context: Statement for the Record
 - id: q9
@@ -159,7 +159,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 66-70
+    location: "p. 2"
   significance: Kirkpatrick characterizes the AARO case-resolution distribution — only a very small percentage anomalous; majority resolve to mundane sources; written version puts 'anomalous' in single quotes
   context: Statement for the Record
 - id: q10
@@ -170,7 +170,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 72-74
+    location: "p. 3"
   significance: Kirkpatrick's evidentiary discipline — will not close cases without defendable conclusions; written version uses "we cannot defend" plural; oral version uses "I cannot defend" singular
   context: Statement for the Record
 - id: q11
@@ -181,7 +181,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 77-82
+    location: "p. 3"
   significance: Kirkpatrick frames the data-quality and observer-error problem — humans subject to deception and illusions, sensors to malfunctions and intentional interference
   context: Statement for the Record
 - id: q12
@@ -192,7 +192,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 88-93
+    location: "p. 3"
   significance: Kirkpatrick references the Administration's Tiger Team effort for stratospheric objects (post-PRC High Altitude Balloon event); frames AARO's hand-off role to Intelligence and Law Enforcement Communities
   context: Statement for the Record
 - id: q13
@@ -203,7 +203,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 98-105
+    location: "p. 3"
   significance: Kirkpatrick describes AARO's analytic-rigor protocol — physical testing, modeling, simulation, peer review across government, industry, cleared academia
   context: Statement for the Record
 - id: q14
@@ -214,7 +214,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 106-108
+    location: "p. 4"
   significance: Kirkpatrick's on-record statement — AARO has found no credible evidence of extraterrestrial activity, off-world technology, or objects defying the known laws of physics; the canonical line of the hearing
   context: Statement for the Record
 - id: q15
@@ -225,7 +225,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 108-111
+    location: "p. 4"
   significance: Kirkpatrick describes the conditional commitment for any future extraterrestrial-origin finding — interagency partnership with NASA to inform U.S. Government leadership
   context: Statement for the Record
 - id: q16
@@ -236,7 +236,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 112-116
+    location: "p. 4"
   significance: Kirkpatrick's framing of the public-discourse standard — peer-reviewed journals, not blog or social media; commits AARO to the same standard
   context: Statement for the Record
 - id: q17
@@ -247,7 +247,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 122-128
+    location: "p. 4"
   significance: Kirkpatrick's closing standards commitment — scientific method, research integrity, methodical and scrupulous, withholding judgment in favor of evidence
   context: Statement for the Record closing
 - id: q18
@@ -258,7 +258,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 129-131
+    location: "p. 4"
   significance: Kirkpatrick's final closing — pride in AARO's progress, acknowledgment of remaining work, formal close to the written statement
   context: Statement for the Record final close
 - id: q19
@@ -269,7 +269,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 17-23
+    location: "p. 1, ¶2"
   significance: Kirkpatrick frames AARO''s national-security stakes — though still a young office, the spotlight on UAP underscores the importance of its work; characterizes Congress as a critical partner across DoD, IC, DOE, civil, scientific, and industrial leadership
   context: Statement for the Record — early-document framing of congressional partnership and national-security stakes
 - id: q20
@@ -280,7 +280,7 @@ quotes:
     '
   source:
     path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
-    location: lines 47-53
+    location: "p. 2"
   significance: Kirkpatrick projects AARO success forward to a whole-of-government capability — military personnel resolving UAP first, then the entire United States Government including civilian agencies; explicit civilian-agencies extension framing absent from oral version
   context: Statement for the Record — forward projection of AARO success path
 entities_referenced:

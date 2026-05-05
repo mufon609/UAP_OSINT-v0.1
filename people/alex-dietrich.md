@@ -109,7 +109,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | lines 117-124 |
+| Location | p. 3, ¶4 |
 
 > [59:18] that's actually how I got a visual on the Tic Tac is because somebody said hey look in the water uh and we saw this turning water um I thought in the first moment that whatever we had been in Vector to intercept had crashed uh and my heart sank
 
@@ -192,7 +192,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | lines 47-53 |
+| Location | p. 2, ¶1 |
 
 > this was confirmed a few years later when I was contacted by members of the team in the Pentagon who were investigating UAP incidents. I assume that it was part of this ATIP being referred to in the media, the first generation being ATIP, and then the current-
 
@@ -200,7 +200,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | lines 142-145 |
+| Location | p. 4, ¶2 |
 
 > So from about 2009 until this year, I've been in contact with, in a one-way flow. They call me in to answer questions about this particular incident, and maybe show or share something that they have from a different incident and say, "Is what you saw? Is this similar?" I'll say yes or no, but they're not giving me a download of everything else that they're looking at.
 
@@ -208,7 +208,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | lines 154-158 |
+| Location | p. 4, ¶3 |
 
 > But my great-grandfather, Roman Starzl, was one of the, I guess, pioneers of the science fiction genre. He was an author and publisher of a newspaper in a small town in Iowa, and so he wrote a lot, but he did write these science fiction stories that were gobbled up by folks when that genre was beginning in that era.
 
@@ -216,7 +216,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | lines 178-181 |
+| Location | p. 5, ¶1 |
 
 > Yeah, so Roman's son, Thomas, who was my grandfather's brother, Thomas Starzl, he was the pioneer of human organ transplantation.
 
@@ -224,7 +224,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | When It Mattered podcast Ep. 55 with Chitra Ragavan (audio published 2021-06-16) |
 | Source | [archived source](../sources/transcripts/when-it-mattered-55-dietrich-2021.pdf) |
-| Location | lines 192-193 |
+| Location | p. 5, ¶3 |
 
 > appeared to respond in a way we didn't recognize
 

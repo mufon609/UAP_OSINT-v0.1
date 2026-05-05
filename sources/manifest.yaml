@@ -553,7 +553,8 @@
   archived_date: '2026-04-22'
   sha256: 113bf4ff1de5d21acecc2afbf97cd0adfb664aeabf15105ffa097a47005265c7
   archive_status: 3
-  note: AARO invitations to interview Grusch (FOIA 24-F-0266); Grusch declined; esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror.
+  extraction_type: ocr-scan
+  note: AARO invitations to interview Grusch (FOIA 24-F-0266); Grusch declined; esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror. PDF Producer is OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan per BACKLOG A2 discipline. Extraction verified clean 2026-05-04 (no character-level OCR artifacts in pdftotext output; the 2 currently-cited quotes verified verbatim on pages 8 and 9 of the rendered PDF), so no `.txt` sibling produced. Future contributors adding quotes from this PDF should visually verify against the rendered source page since OCR artifacts can surface on previously-unread regions.
   wayback_date: '2025-11-18'
 - url: https://documents2.theblackvault.com/documents/osd/24-F-0894.pdf
   format: pdf

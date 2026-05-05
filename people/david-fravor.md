@@ -55,7 +55,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 37-39 |
+| Location | p. 1, ¶7 |
 
 > As we pulled nose onto the object at approximately ½ of a mile with the object just left of our nose, it rapidly accelerated and disappeared right in front of our aircraft.
 
@@ -63,7 +63,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 47-48 |
+| Location | p. 2, ¶1 |
 
 > This Tic Tac Object had just traveled 60 miles in a very short period of time (less than a minute), was far superior in performance to my brand-new F/A-18F and did not operate with any of the known aerodynamic principles that we expect for objects that fly in our atmosphere.
 
@@ -71,7 +71,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 52-55 |
+| Location | p. 2, ¶1 |
 
 > What is shocking is that the incident was never investigated, none of my crew were ever questioned, tapes were never taken, and after a couple of days, it turned into a great story to tell friends.
 
@@ -79,7 +79,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 64-66 |
+| Location | p. 2, ¶3 |
 
 > I was scheduled to lead a 2 V 2 Air to Air training exercise. My flight of 2 F/A-18Fs was the Blue Air, the good guys, and we were being controlled by the USS Princeton, CG-59.
 
@@ -87,7 +87,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 15-17 |
+| Location | p. 1, ¶4 |
 
 
 ### Other Statements
@@ -98,7 +98,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 66-68 |
+| Location | p. 2, ¶3 |
 
 > In the weeks that passed I was made aware that Lue had left the pentagon in protest and joined forces with Tom Delonge, Chris Mellon, Steve Justice and others to form To The Stars Academy.
 
@@ -106,7 +106,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 78-79 |
+| Location | p. 2, ¶5 |
 
 > I was contacted by Mr Elizondo shortly after talking with Alex in 2016. We briefly chatted and I was told that he would be in contact.
 
@@ -114,7 +114,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 75-76 |
+| Location | p. 2, ¶4 |
 
 > We were at the beginning of our workup cycle that would prepare us for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq.
 
@@ -122,7 +122,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 9-10 |
+| Location | p. 1, ¶3 |
 
 > It was this organization that pressed the issue with leading Industry experts and USG officials, worked with Leslie Keane, Ralph Blumenthal and Helene Cooper to publish the articles in the NYT in Dec 2017 admitting the USG was looking at UAPs and removed the Stigma of the UFO topic which led to us being here today.
 
@@ -130,7 +130,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | lines 80-83 |
+| Location | p. 2, ¶5 |
 
 ---
 

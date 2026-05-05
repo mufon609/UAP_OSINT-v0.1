@@ -95,7 +95,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations, 2022-03-17 |
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
-| Location | lines 9-12 |
+| Location | p. 1, ¶3 |
 
 > As the Under Secretary of Defense for Intelligence and Security, I am committed to
 > strengthening and leveraging an integrated partnership between the Department of Defense and
@@ -105,7 +105,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations, 2022-03-17 |
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
-| Location | lines 26-28 |
+| Location | p. 1, ¶6 |
 
 > Through our four "Big Plays," we will optimize our efforts, deliver meaningful outcomes,
 > and maintain our Nation's strategic advantage. These Big Plays are:
@@ -120,7 +120,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations, 2022-03-17 |
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
-| Location | lines 60-67 |
+| Location | p. 2, ¶3 |
 
 > Last year, the President's $715 billion-dollar defense budget request included $23.3 billion
 > for MIP. We believe that the resources requested in this year's budget will provide another
@@ -130,7 +130,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations, 2022-03-17 |
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
-| Location | lines 84-86 |
+| Location | p. 2, ¶7 |
 
 > Consistent with the recommendations of the Government Accountability Office in its May
 > 2021 report regarding OUSD(I&S) oversight, we are taking the following actions to clarify and
@@ -145,7 +145,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Prepared remarks, House Armed Services Committee Subcommittee on Intelligence and Special Operations, 2022-03-17 |
 | Source | [archived source](../sources/government/hasc-iso-moultrie-witness-statement-20220317.pdf) |
-| Location | lines 123-130 |
+| Location | p. 3, ¶6 |
 
 > Thank you. Good afternoon. I'm Ronald Moultrie, the Under Secretary of Defense for Intelligence and Security. It's a pleasure to be here today to provide an update on the department's efforts to address unidentified anomalous phenomena, or UAP. In May of this year, I appeared before Congress for the first open hearing on UAP in 50 years. In my testimony, I underscored that the Department of Defense takes UAP reports seriously. You may have caught that I just said unidentified anomalous phenomena, whereas in the past the department has used the term unidentified aerial phenomena. This new terminology expands the scope of UAP to include submerged and trans-medium objects.  Unidentified phenomena in all domains, whether in the air, ground, sea or space, pose potential threats to personnel security and operations security, and they require our urgent attention.
 

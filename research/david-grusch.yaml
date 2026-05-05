@@ -594,7 +594,7 @@ quotes:
   text: As a senior intelligence and strategic engagement advisor, I will provide subject matter expert-level support that utilizes my extensive time as a United States Air Force Intelligence Officer, DoD-contracted Science and Engineering Technical Advisor (SETA), and NGA Senior Geospatial Intelligence Officer.
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
-    location: lines 10-13
+    location: "p. 1, ¶4"
   significance: Professional identity per Grusch's 2023 biographical submission
   context: Congressional biographical submission, House Oversight Committee
   observation_type: relayed
@@ -604,7 +604,7 @@ quotes:
   text: NGA lead for Unidentified Anomalous Phenomena (UAP) and Trans-Medium Anomaly issues. Executed new program of record responsive to direct tasking by the Congressional Intelligence Committees.
   source:
     path: government/docs-house-gov-grusch-bio-20230726.pdf
-    location: lines 22-24
+    location: "p. 1, ¶8"
   significance: NGA UAP-lead accomplishment — program of record responsive to Congressional tasking
   context: Congressional biographical submission, House Oversight Committee
   observation_type: relayed

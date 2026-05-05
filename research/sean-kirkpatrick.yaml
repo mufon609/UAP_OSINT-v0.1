@@ -1099,7 +1099,7 @@ quotes:
     '
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
-    location: lines 4-7
+    location: "p. 1, ¶2"
   significance: AARO bio lead — establishes the 'asked by USD(I&S)' selection narrative + 'Dr. K' alias used by AARO staff
   context: Official Department of Defense biography released at AARO establishment
 - id: q2
@@ -1111,7 +1111,7 @@ quotes:
     '
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
-    location: lines 34-35
+    location: "p. 1, ¶6"
   significance: First public articulation of the 'new-start organizations' career framing — five before AARO; AARO is the sixth
   context: Official Department of Defense biography released at AARO establishment
 - id: q3
@@ -1519,7 +1519,7 @@ quotes:
     '
   source:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
-    location: lines 322-323
+    location: "p. 8, ¶8"
   significance: Kirkpatrick's verbatim characterization of Mellon's framing of the Grusch matter during the June 11-13 2023 Signal exchange released under FOIA 24-F-0266 — first surfaces Kirkpatrick's contemporaneous private posture toward both Mellon and the Grusch claims, complementing his post-July-2023 LinkedIn-and-Politico public characterization of the Grusch hearing as 'insulting'
   context: Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266 (April 18 2024 BlackVault analysis)
 - id: q37
@@ -1531,7 +1531,7 @@ quotes:
     '
   source:
     path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf
-    location: lines 378-379
+    location: "p. 9, ¶14"
   significance: Kirkpatrick's self-described AARO role as 'defending and adjudicating' — his own contemporaneous framing of the AARO posture, surfaced via the FOIA 24-F-0266 release; previously paraphrased on this node only in Credibility Notes prose, restored here to Statements per the statements-only convention
   context: Encrypted Signal text-message exchange with Christopher Mellon ([`/people/christopher-mellon`]) released under FOIA 24-F-0266; Mellon attempting to mediate between Grusch and AARO
 - id: q38

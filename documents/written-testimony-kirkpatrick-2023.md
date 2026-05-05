@@ -60,7 +60,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 7-10 |
+| Location | p. 1, ¶2 |
 
 ---
 
@@ -72,7 +72,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 24-27 |
+| Location | p. 1, ¶2 |
 
 ---
 
@@ -84,7 +84,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 27-31 |
+| Location | p. 1, ¶2 |
 
 ---
 
@@ -96,7 +96,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 31-35 |
+| Location | p. 1, ¶2 |
 
 ---
 
@@ -108,7 +108,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 38-41 |
+| Location | p. 2 |
 
 ---
 
@@ -120,7 +120,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 42-46 |
+| Location | p. 2 |
 
 ---
 
@@ -132,7 +132,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 53-58 |
+| Location | p. 2 |
 
 ---
 
@@ -144,7 +144,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 59-61 |
+| Location | p. 2 |
 
 ---
 
@@ -156,7 +156,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 66-70 |
+| Location | p. 2 |
 
 ---
 
@@ -168,7 +168,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 72-74 |
+| Location | p. 3 |
 
 ---
 
@@ -180,7 +180,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 77-82 |
+| Location | p. 3 |
 
 ---
 
@@ -192,7 +192,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 88-93 |
+| Location | p. 3 |
 
 ---
 
@@ -204,7 +204,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 98-105 |
+| Location | p. 3 |
 
 ---
 
@@ -216,7 +216,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 106-108 |
+| Location | p. 4 |
 
 ---
 
@@ -228,7 +228,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 108-111 |
+| Location | p. 4 |
 
 ---
 
@@ -240,7 +240,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 112-116 |
+| Location | p. 4 |
 
 ---
 
@@ -252,7 +252,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 122-128 |
+| Location | p. 4 |
 
 ---
 
@@ -264,7 +264,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 129-131 |
+| Location | p. 4 |
 
 ---
 
@@ -276,7 +276,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 17-23 |
+| Location | p. 1, ¶2 |
 
 ---
 
@@ -288,7 +288,7 @@ AARO is partnering with the Services, Intelligence Community, DOE ([`/organizati
 |---|---|
 | Attributed to | Sean Kirkpatrick, written testimony, submitted April 19, 2023 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf) |
-| Location | lines 47-53 |
+| Location | p. 2 |
 
 ---
 
