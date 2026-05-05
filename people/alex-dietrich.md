@@ -69,7 +69,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 — Dietrich describing her in-cockpit thought process during the encounter |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
-| Location | line 1098 |
+| Location | ¶53 |
 
 > "It was unidentified. And that's why it was so unsettling to us. Because we weren't expecting it. We couldn't classify it,"
 
@@ -77,7 +77,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Location | line 967 |
+| Location | ¶5 |
 
 > "No predictable movement, no predictable trajectory,"
 
@@ -85,7 +85,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Location | line 972 |
+| Location | ¶9 |
 
 > "I felt the vulnerability of not having anything to defend ourselves,"
 
@@ -93,7 +93,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Location | line 978 |
+| Location | ¶13 |
 
 > "And then I felt confused when it disappeared."
 
@@ -101,7 +101,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS News 60 Minutes Overtime web article, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-sighting-60min-2021-05-16.html) |
-| Location | line 978 |
+| Location | ¶13 |
 
 > When we came back to the ship one of the first things I said was, "Does anybody have a copy of the FAR/AIM Manual? I need to find that page with that phone number to call to report a UFO." But the other aircraft in my flight, the lead aircraft, was my commanding officer, Commander Dave Fravor, and he was the skipper of the squadron, the most senior aviator in my chain of command, and so I didn't call a phone number or call the FAA directly, I deferred to him and his seniority in terms of reporting the incident up the chain of command, and taking any follow that would be appropriate.
 
@@ -168,7 +168,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
-| Location | line 1086 |
+| Location | ¶37 |
 
 > Because I was in a government aircraft, because I was on the clock. And so I feel a responsibility to s-- to share what I can. And it is unclassified.
 
@@ -176,7 +176,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
-| Location | line 1086 |
+| Location | ¶39 |
 
 > You know, I think that over beers, we've sort of said, "Hey man, if I saw this solo, I don't know that I would have come back and said anything," because it sounds so crazy when I say it.
 
@@ -184,7 +184,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 |
 | Source | [archived source](../sources/news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html) |
-| Location | line 1104 |
+| Location | ¶58 |
 
 > I thought, well maybe I could have an adventure, maybe I could do something fun first and then settle down later in life, and so that's why I decided to pursue Naval aviation, and I did that through the NROTC scholarship at George Washington University, so four years of going and having a normal college experience, but also doing some summer training with the Navy, and some Naval science courses throughout the year. And then I graduated and commissioned in May of 2001, into the Navy.
 
@@ -232,7 +232,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14 |
 | Source | [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html) |
-| Location | line 15 |
+| Location | ¶4 |
 
 > didn't appear to have any flight control surfaces or means of propulsion
 
@@ -240,7 +240,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14 |
 | Source | [archived source](../sources/news/enigmalabs-dietrich-advisor-announcement.html) |
-| Location | line 15 |
+| Location | ¶4 |
 
 > [10:03] I was a lieutenant Junior grade I wasn't even a full Lieutenant at the time uh that that happened
 
@@ -304,7 +304,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | line 41 |
+| Location | ¶7 |
 
 > We merged and visually acquired the object, a matte white oblong shape with no apparent flight control surfaces, visible means of propulsion, or smoke trail. Yet it outmaneuvered us with ease.
 
@@ -312,7 +312,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | line 41 |
+| Location | ¶7 |
 
 > Are UFOs real? Yes. Are they a foreign adversary? Maybe. Are they extraterrestrial in nature? It's possible. Should we keep investigating? Absolutely.
 
@@ -320,7 +320,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | line 45 |
+| Location | ¶9 |
 
 > The partnership between multiple objective parties, systematic data collection, and careful analytical methods will move us toward reporting and listening, away from ridicule and stigma. We can move the needle away from the unknown and toward the known.
 
@@ -328,7 +328,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | line 62 |
+| Location | ¶16 |
 
 > Be vigilant. Stay curious. Look up. We have barely tasted the sky.
 
@@ -336,7 +336,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | line 64 |
+| Location | ¶17 |
 
 > These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.
 
@@ -344,7 +344,7 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 |---|---|
 | Attributed to | Self-authored op-ed in The Debrief, 2023-02-17 |
 | Source | [archived source](../sources/news/debrief-dietrich-cooperation-uap-opinion.html) |
-| Location | line 1247 |
+| Location | ¶3 |
 
 > She logged more than 1,250 flight hours, 375 carrier-arrested landings, and was awarded a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom (OIF) and Operation Enduring Freedom (OEF). She was also awarded a Bronze Star medal for a boots-on-ground deployment to Afghanistan in 2010.
 

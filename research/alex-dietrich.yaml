@@ -212,7 +212,7 @@ quotes:
     I never wanted to be on national TV, no offense.
   source:
     path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
-    location: "line 1086"
+    location: "¶37"
   context: "CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16"
   observation_type: relayed
   statement_date: '2021-05-16'
@@ -223,7 +223,7 @@ quotes:
     Because I was in a government aircraft, because I was on the clock. And so I feel a responsibility to s-- to share what I can. And it is unclassified.
   source:
     path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
-    location: "line 1086"
+    location: "¶39"
   context: "CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16"
   observation_type: relayed
   statement_date: '2021-05-16'
@@ -234,7 +234,7 @@ quotes:
     So your mind tries to make sense of it. I'm gonna categorize this as maybe a helicopter or maybe a drone. And when it disappeared. I mean it was just&hellip;
   source:
     path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
-    location: "line 1098"
+    location: "¶53"
   context: "CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16 — Dietrich describing her in-cockpit thought process during the encounter"
   observation_type: direct
   statement_date: '2021-05-16'
@@ -245,7 +245,7 @@ quotes:
     You know, I think that over beers, we've sort of said, "Hey man, if I saw this solo, I don't know that I would have come back and said anything," because it sounds so crazy when I say it.
   source:
     path: news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html
-    location: "line 1104"
+    location: "¶58"
   context: "CBS 60 Minutes broadcast, Bill Whitaker interview, 2021-05-16"
   observation_type: relayed
   statement_date: '2021-05-16'
@@ -256,7 +256,7 @@ quotes:
     "It was unidentified. And that's why it was so unsettling to us. Because we weren't expecting it. We couldn't classify it,"
   source:
     path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
-    location: "line 967"
+    location: "¶5"
   context: "CBS News 60 Minutes Overtime web article, 2021-05-16"
   observation_type: direct
   statement_date: '2021-05-16'
@@ -267,7 +267,7 @@ quotes:
     "No predictable movement, no predictable trajectory,"
   source:
     path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
-    location: "line 972"
+    location: "¶9"
   context: "CBS News 60 Minutes Overtime web article, 2021-05-16"
   observation_type: direct
   statement_date: '2021-05-16'
@@ -278,7 +278,7 @@ quotes:
     "I felt the vulnerability of not having anything to defend ourselves,"
   source:
     path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
-    location: "line 978"
+    location: "¶13"
   context: "CBS News 60 Minutes Overtime web article, 2021-05-16"
   observation_type: direct
   statement_date: '2021-05-16'
@@ -289,7 +289,7 @@ quotes:
     "And then I felt confused when it disappeared."
   source:
     path: news/cbsnews-ufo-sighting-60min-2021-05-16.html
-    location: "line 978"
+    location: "¶13"
   context: "CBS News 60 Minutes Overtime web article, 2021-05-16"
   observation_type: direct
   statement_date: '2021-05-16'
@@ -300,7 +300,7 @@ quotes:
     My colleagues and I encountered something we could not explain: an anomalous flying object in broad daylight against a clear blue sky and calm waters.
   source:
     path: news/debrief-dietrich-cooperation-uap-opinion.html
-    location: "line 41"
+    location: "¶7"
   context: "Self-authored op-ed in The Debrief, 2023-02-17"
   observation_type: relayed
   statement_date: '2023-02-17'
@@ -311,7 +311,7 @@ quotes:
     We merged and visually acquired the object, a matte white oblong shape with no apparent flight control surfaces, visible means of propulsion, or smoke trail. Yet it outmaneuvered us with ease.
   source:
     path: news/debrief-dietrich-cooperation-uap-opinion.html
-    location: "line 41"
+    location: "¶7"
   context: "Self-authored op-ed in The Debrief, 2023-02-17"
   observation_type: relayed
   statement_date: '2023-02-17'
@@ -322,7 +322,7 @@ quotes:
     Are UFOs real? Yes. Are they a foreign adversary? Maybe. Are they extraterrestrial in nature? It's possible. Should we keep investigating? Absolutely.
   source:
     path: news/debrief-dietrich-cooperation-uap-opinion.html
-    location: "line 45"
+    location: "¶9"
   context: "Self-authored op-ed in The Debrief, 2023-02-17"
   observation_type: relayed
   statement_date: '2023-02-17'
@@ -333,7 +333,7 @@ quotes:
     The partnership between multiple objective parties, systematic data collection, and careful analytical methods will move us toward reporting and listening, away from ridicule and stigma. We can move the needle away from the unknown and toward the known.
   source:
     path: news/debrief-dietrich-cooperation-uap-opinion.html
-    location: "line 62"
+    location: "¶16"
   context: "Self-authored op-ed in The Debrief, 2023-02-17"
   observation_type: relayed
   statement_date: '2023-02-17'
@@ -344,7 +344,7 @@ quotes:
     Be vigilant. Stay curious. Look up. We have barely tasted the sky.
   source:
     path: news/debrief-dietrich-cooperation-uap-opinion.html
-    location: "line 64"
+    location: "¶17"
   context: "Self-authored op-ed in The Debrief, 2023-02-17"
   observation_type: relayed
   statement_date: '2023-02-17'
@@ -355,7 +355,7 @@ quotes:
     appeared to respond in a way we didn't recognize
   source:
     path: news/enigmalabs-dietrich-advisor-announcement.html
-    location: "line 15"
+    location: "¶4"
   context: "Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14"
   observation_type: relayed
   statement_date: '2022-11-14'
@@ -366,7 +366,7 @@ quotes:
     didn't appear to have any flight control surfaces or means of propulsion
   source:
     path: news/enigmalabs-dietrich-advisor-announcement.html
-    location: "line 15"
+    location: "¶4"
   context: "Dietrich quoted in Enigma Labs advisor-announcement blog post, 2022-11-14"
   observation_type: relayed
   statement_date: '2022-11-14'
@@ -652,7 +652,7 @@ quotes:
     These events highlight a longstanding domain awareness gap confronting our collective consciousness on three fronts: military defense, aviation safety, and scientific inquiry.
   source:
     path: news/debrief-dietrich-cooperation-uap-opinion.html
-    location: "line 1247"
+    location: "¶3"
   context: "Self-authored op-ed in The Debrief, 2023-02-17"
   observation_type: relayed
   statement_date: '2023-02-17'
