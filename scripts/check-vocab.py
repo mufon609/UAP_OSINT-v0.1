@@ -11,12 +11,11 @@ Use case: drafting `description` / `background` / `uap_relevance` /
 `credibility_notes` prose (or per-entry synthesis content notes:
 `ownership_timeline.note`, `key_personnel.note`, `contracts.note`,
 `media_versioning.note`, `vouching_chain.attestation`). Per
-`meta/conventions.md` "Prose-drift discipline on synthesis surfaces"
-and the durable contributor policy in
-`feedback_prose_drift_warnings_must_resolve.md`, every significant
-token in those fields should be source-attested. This script lets a
-contributor pre-flight a draft's vocabulary against the source pool
-in a single tool call rather than iterating draft → validate → fix.
+`meta/conventions.md` "Prose-drift discipline on synthesis surfaces",
+every significant token in those fields should be source-attested.
+This script lets a contributor pre-flight a draft's vocabulary
+against the source pool in a single tool call rather than iterating
+draft → validate → fix.
 
 The canonical workflow is still iterative — draft prose, run
 `validate-research.py`, fix surfaced warnings — and remains correct.
