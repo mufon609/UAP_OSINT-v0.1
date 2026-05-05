@@ -107,7 +107,8 @@ from lib._common import (
 
 # Per-check modules (C11 / C13 / C14 — pilot wiring; sessions 2 and 3
 # migrate the remaining checks against the same contract).
-from checks import BaseContext
+from checks import BaseContext, NodeContext
+from checks import chronological_tables as ck_chronological_tables
 from checks import governance_files as ck_governance_files
 from checks import manifest_archive_status as ck_manifest_archive_status
 from checks import manifest_checksums as ck_manifest_checksums
@@ -222,122 +223,12 @@ def count_quote_blocks_and_attributions(section_text):
 # to enforced — closing part of BACKLOG #9.
 # =============================================================================
 
-DATE_HEADERS = {
-    "date", "date / time", "date/time",
-    "period", "start", "start date", "dates",
-    "date captured", "date released",
-}
-
-# Range separators between start and end dates in a single cell. Ordered
-# longest-first so "—" doesn't match inside " – ".
-_DATE_RANGE_SEPARATORS = (" – ", " — ", " to ", " - ", "–", "—", "-to-")
-
-
-def parse_date_token(s):
-    """Return (year, month, day) tuple suitable for sort comparison, or
-    None if unparseable. Range cells take the leftmost date. Missing
-    month / day default to 0, so '2004' < '2004-11' < '2004-11-14'
-    under tuple comparison.
-    """
-    if not s:
-        return None
-    s = s.strip()
-    # Strip typical non-date tokens
-    if s.lower() in {"—", "-", "n/a", "undated", "tbd", "present", "ongoing", ""}:
-        return None
-    # Range: take the left side. If the left side is empty (end-only
-    # period rendered as "– 2021" — signals bracketed end with unknown
-    # start, e.g., "former X" attestation without a specific start date),
-    # take the right side instead so the row still sorts by its attested
-    # end date.
-    for sep in _DATE_RANGE_SEPARATORS:
-        if sep in s:
-            left, _, right = s.partition(sep)
-            left = left.strip()
-            right = right.strip()
-            s = left if left else right
-            break
-    m = re.match(r"^(\d{4})(?:-(\d{1,2})(?:-(\d{1,2}))?)?", s)
-    if m:
-        y = int(m.group(1))
-        mo = int(m.group(2)) if m.group(2) else 0
-        d = int(m.group(3)) if m.group(3) else 0
-        return (y, mo, d)
-    return None
-
-
-_TABLE_RE = re.compile(
-    r"(?P<header_line>^\|(?P<header>[^\n]+)\|\s*)\n"
-    r"(?P<sep_line>^\|(?P<sep>[\s:|-]+)\|\s*)\n"
-    r"(?P<rows>(?:^\|[^\n]+\|\s*\n?)+)",
-    re.MULTILINE,
-)
-
-
-def _parse_table_row(row_line):
-    """Split a `| a | b | c |` row into trimmed cell strings."""
-    inner = row_line.strip()
-    if inner.startswith("|"):
-        inner = inner[1:]
-    if inner.endswith("|"):
-        inner = inner[:-1]
-    return [c.strip() for c in inner.split("|")]
-
-
-def check_chronological_tables(text, rel):
-    """Enforce chronological (earliest-first) ordering on every date-
-    bearing table across all H2 sections. Returns a list of Issue.
-    """
-    issues = []
-    h2_sections = extract_h2_sections(text)
-    for section_name in h2_sections:
-        section_text = extract_section(text, section_name)
-        if section_text is None:
-            continue
-
-        for m in _TABLE_RE.finditer(section_text):
-            headers = [h.strip().lower() for h in m.group("header").split("|")]
-            date_col = None
-            for i, h in enumerate(headers):
-                if h in DATE_HEADERS:
-                    date_col = i
-                    break
-            if date_col is None:
-                continue
-
-            # Parse each data row's date cell (skip empty-placeholder rows)
-            rows = m.group("rows").strip().splitlines()
-            parsed_dates = []
-            for row_line in rows:
-                cells = _parse_table_row(row_line)
-                if date_col >= len(cells):
-                    continue
-                if all(c == "" for c in cells):
-                    continue  # template placeholder row
-                cell = cells[date_col]
-                d = parse_date_token(cell)
-                if d is None and cell:
-                    issues.append(Issue(rel, "warn",
-                        f"Section '{section_name}': unparseable date "
-                        f"{cell!r} in '{headers[date_col] or '?'}' column"))
-                parsed_dates.append((cell, d))
-
-            # Verify ascending order across parseable entries
-            previous_cell, previous = None, None
-            for cell, d in parsed_dates:
-                if d is None:
-                    continue
-                if previous is not None and d < previous:
-                    issues.append(Issue(rel, "error",
-                        f"Section '{section_name}': table rows not in "
-                        f"chronological order (saw {cell!r} after "
-                        f"{previous_cell!r} in "
-                        f"'{headers[date_col] or '?'}' column; "
-                        f"earliest first)"))
-                    break
-                previous, previous_cell = d, cell
-
-    return issues
+# chronological_tables check moved to scripts/checks/chronological_tables.py
+# during the C11 session-2 migration (2026-05-05). First NodeContext
+# check migrated to the new contract — exercises ctx.text / ctx.rel
+# end-to-end and consumes extract_h2_sections / extract_section from
+# lib/_common.py (which were lifted earlier this session for exactly
+# this migration).
 
 
 # =============================================================================
@@ -766,8 +657,17 @@ def validate_node(path, schema):
     # Verbatim quote verification — critical check (fix from 2026-04-17 pilot failure)
     issues.extend(check_verbatim_quotes(path, text, rel))
 
-    # Chronological-ordering check on date-bearing tables
-    issues.extend(check_chronological_tables(text, rel))
+    # Chronological-ordering check on date-bearing tables.
+    # Migrated to scripts/checks/chronological_tables.py in C11 session-2;
+    # consumes NodeContext (first NodeContext check). BaseContext / NodeContext
+    # constructed locally for the hybrid window — when session 3 lifts the
+    # rest of validate_node's inline logic into proper checks, base_ctx will
+    # flow through from main() instead of being reconstructed per node.
+    node_ctx = NodeContext(
+        BaseContext(schema=schema),
+        path=path, rel=rel, text=text,
+    )
+    issues.extend(ck_chronological_tables.check(node_ctx))
 
     # Internal link resolution — body links + frontmatter node-path
     # pointers share one existence-check pass and one broken-link
