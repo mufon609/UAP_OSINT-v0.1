@@ -186,7 +186,7 @@ so a contributor can recognize what the phase produced.
 | Step B — Bug fixes | ✅ | B1 manifest SHA256; B2 `schema_version` value check |
 | Step C — Pilot failure postmortem | ✅ | Mechanical verbatim-quote check, source-read-first rule, one-node-per-session rule |
 | Step D — Layered-process tooling | ✅ | Phase I/II/III split: `research-scaffold.py`, `extract-source.py`, `build-from-research.py`, `review-coverage.py`, `validate-research.py` |
-| Step E.1 — Pre-commit / CI hook | ✅ | `tests/pre-commit.sh` chains 5 gates (help-check / smoke / validate.py / validate-research.py / build-state.py --check) |
+| Step E.1 — Pre-commit / CI hook | ✅ | `scripts/tests/pre-commit.sh` chains 5 gates (help-check / smoke / validate.py / validate-research.py / build-state.py --check) |
 | Step E.2 — Iteration tooling | ❌ REMOVED 2026-04-20 | `iterate.py` planned then removed pre-implementation — git handles iteration audit at current volume |
 | F.1 — person renderer | ✅ 2026-04-19 | `build-from-research.py` supports person across all 4 archetypes; Fravor pilot |
 | F.2 — event renderer | ✅ 2026-04-19 | hearing + encounter kinds; Nimitz encounter pilot; Witnesses & Testimony table replaces What The Hearing Established |

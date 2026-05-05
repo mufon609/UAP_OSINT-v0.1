@@ -743,7 +743,7 @@ node surfaces no semantic issues. Ready to commit.
    **artifact** (not the node) and re-run steps 2–3
 5. Run the full pre-commit chain before committing:
    ```
-   bash tests/pre-commit.sh
+   bash scripts/tests/pre-commit.sh
    ```
    All five gates must pass (help-check, smoke, validate, validate-research,
    build-state).
@@ -760,7 +760,7 @@ Until the F.7 renderer ships:
 2. Hand-author the node body per `meta/conventions.md`, drawing
    exclusively from artifact entries (no training-knowledge claims)
 3. `validate.py` passes; run `associate.py` to regenerate Associated Nodes
-4. Run `bash tests/pre-commit.sh` — all five gates green before commit
+4. Run `bash scripts/tests/pre-commit.sh` — all five gates green before commit
 
 `review-coverage.py` currently skips finding artifacts with a notice;
 full coverage review unlocks when the F.7 renderer lands.

@@ -74,7 +74,7 @@ scripts/
                             validate.py / validate-research.py /
                             review-coverage.py mechanically in lockstep
 
-tests/
+scripts/tests/
   pre-commit.sh             canonical all-gates health check (chains the 5 gates below)
   help-check.sh             confirms every scripts/*.py --help exits 0
   smoke.sh                  fixture-based new.py + validator smoke tests
@@ -171,7 +171,7 @@ then paste `prompts/build.md` when you're ready to build a node.
 health check:
 
 ```
-bash tests/pre-commit.sh
+bash scripts/tests/pre-commit.sh
 ```
 
 This chains 5 gates: help-check / smoke / `validate.py` /

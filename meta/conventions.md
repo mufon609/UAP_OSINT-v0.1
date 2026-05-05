@@ -576,7 +576,7 @@ within each category subdirectory. A researcher looking for
 The frontmatter (archetype, kind, status) carries the categorization
 that hierarchy would otherwise impose.
 
-Backend tooling (`/scripts/`, `/meta/`, `/tests/`) is organized for
+Backend tooling (`/scripts/`, `/meta/`) is organized for
 engineering hygiene, not researcher browsing. `/scripts/lib/` holds
 genuinely shared cross-cutting helpers; `/meta/templates/`,
 `/meta/topic/`, `/meta/toolkit-notes/` group governance docs by role.

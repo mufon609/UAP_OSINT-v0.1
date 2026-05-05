@@ -20,7 +20,7 @@
 
 set -u
 
-REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+REPO_ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 SCRIPTS_DIR="$REPO_ROOT/scripts"
 
 if [ ! -d "$SCRIPTS_DIR" ]; then

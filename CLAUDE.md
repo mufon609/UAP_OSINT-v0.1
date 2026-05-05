@@ -162,10 +162,10 @@ to begin with by following `prompts/build.md` Phase I Steps 2 and 6
 Full build walk-through: paste `prompts/onboard.md` into a fresh
 session, then `prompts/build.md` for the Phase I → II → III procedure.
 
-Smoke tests live in `tests/`. Before adding or modifying a script, run:
+Smoke tests live in `scripts/tests/`. Before adding or modifying a script, run:
 
 ```
-bash tests/help-check.sh
+bash scripts/tests/help-check.sh
 ```
 
 Confirms every `scripts/*.py --help` exits 0 with no traceback — catches

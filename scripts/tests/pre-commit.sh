@@ -3,8 +3,8 @@
 # code gate. Non-zero exit on any failure blocks the commit.
 #
 # Runs, in order:
-#   1. tests/help-check.sh              — scripts/*.py --help doesn't crash
-#   2. tests/smoke.sh                   — fixture scaffold + validate per type
+#   1. scripts/tests/help-check.sh      — scripts/*.py --help doesn't crash
+#   2. scripts/tests/smoke.sh           — fixture scaffold + validate per type
 #   3. python3 scripts/validate.py      — structural + verbatim-quote +
 #                                         governance-file + conditionally_required
 #   4. python3 scripts/validate-research.py
@@ -18,14 +18,14 @@
 #
 # From the repository root (REFACTOR/):
 #
-#     ln -sf "$(pwd)/tests/pre-commit.sh" .git/hooks/pre-commit
+#     ln -sf "$(pwd)/scripts/tests/pre-commit.sh" .git/hooks/pre-commit
 #     chmod +x .git/hooks/pre-commit
 #
 # Or, if your working tree is a worktree / the hooks path is elsewhere:
 #
-#     git config core.hooksPath tests
-#     mv tests/pre-commit.sh tests/pre-commit     # git looks for `pre-commit`, no extension
-#     chmod +x tests/pre-commit
+#     git config core.hooksPath scripts/tests
+#     mv scripts/tests/pre-commit.sh scripts/tests/pre-commit     # git looks for `pre-commit`, no extension
+#     chmod +x scripts/tests/pre-commit
 #
 # To skip the hook on a single commit (e.g., WIP) — only when you're
 # certain the commit isn't production-ready:
@@ -42,7 +42,7 @@
 
 set -u
 
-REPO_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+REPO_ROOT="$(cd "$(dirname "$0")/../.." && pwd)"
 cd "$REPO_ROOT"
 
 step() {
@@ -66,8 +66,8 @@ run_step() {
     echo
 }
 
-run_step "1/5  help-check"              bash tests/help-check.sh
-run_step "2/5  smoke"                   bash tests/smoke.sh
+run_step "1/5  help-check"              bash scripts/tests/help-check.sh
+run_step "2/5  smoke"                   bash scripts/tests/smoke.sh
 run_step "3/5  validate.py"             python3 scripts/validate.py
 run_step "4/5  validate-research.py"    python3 scripts/validate-research.py
 run_step "5/5  build-state.py --check"  python3 scripts/build-state.py --check

@@ -40,7 +40,7 @@ doing anything:
 Then run the health check:
 
 ```
-bash tests/pre-commit.sh
+bash scripts/tests/pre-commit.sh
 ```
 
 All five gates must be green:
