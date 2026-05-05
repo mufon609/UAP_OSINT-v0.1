@@ -801,7 +801,7 @@ quotes:
     Thank you. Good afternoon. I'm Ronald Moultrie, the Under Secretary of Defense for Intelligence and Security. It's a pleasure to be here today to provide an update on the department's efforts to address unidentified anomalous phenomena, or UAP. In May of this year, I appeared before Congress for the first open hearing on UAP in 50 years. In my testimony, I underscored that the Department of Defense takes UAP reports seriously. You may have caught that I just said unidentified anomalous phenomena, whereas in the past the department has used the term unidentified aerial phenomena. This new terminology expands the scope of UAP to include submerged and trans-medium objects.  Unidentified phenomena in all domains, whether in the air, ground, sea or space, pose potential threats to personnel security and operations security, and they require our urgent attention.
   source:
     path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
-    location: line 956 ¶ Good afternoon I'm Ronald Moultrie
+    location: "¶2"
   significance: AARO Media Roundtable opening — Moultrie introduces the 'unidentified anomalous phenomena' terminology shift expanding UAP scope to submerged and trans-medium objects, and references his May 17 2022 HPSCI testimony as the first open UAP hearing in 50 years
   context: Joint USD(I&S)–AARO Director media roundtable
 - id: q7
@@ -812,7 +812,7 @@ quotes:
     At this time, the answer's no, we have nothing. We're committed -- and I have to say this because I -- I talked with the Secretary and I talked with the Deputy Secretary about this, about openness and objectivity, and transparency that we have committed to -- to the Congress, the American people, to you in the press corps. We have not seen anything that would -- but we -- we're certainly very early on -- that would lead us to believe that any of the objects that we have seen are of alien origin, if you will.  If we are -- if we find something like that, we will look at it and analyze it and take the appropriate actions.
   source:
     path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
-    location: line 1018 ¶ At this time
+    location: "¶33"
   significance: AARO Media Roundtable alien-origin denial — Moultrie's foundational on-record DoD denial of alien origin for UAP-observed objects, citing personal communications with the Secretary and Deputy Secretary about openness, objectivity, and transparency
   context: Joint USD(I&S)–AARO Director media roundtable, Q&A
 - id: q8
@@ -823,7 +823,7 @@ quotes:
     Let me answer. This is Ron Moultrie, Under Secretary of Defense for Intelligence and Security. Then I'll pass it to Dr. Kirkpatrick to give his -- his words on this. So, let me just characterize your question when you're talking about, we've been visited, is there a possibility of alien life? So, I'm gonna to discount meteorites and things like that, that might have microbes on it and those types of things, and just talk about things that may be intelligent life that may have crashed landed on our planet or that may have the -- in somehow visited our planet. In terms of holdings that I have seen and holdings, that that we have gone through -- and we are being very thorough about this, and we are going back and trying to understand all the compartmented programs that this department has had, understand all the relationships that we may have had with any other organizations and all the predecessor organizations that were established before we were officially a Department of Defense. We've looked at all that; I have not seen anything in those holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that.  Once again, with what Dr. Kirkpatrick is doing, we are still very early on in the work that we're doing. But that means we have to go back retrospectively and understand some of the holdings that we have. And Dr. Kirkpatrick and his team is still doing that. But I have not seen anything today that would suggest that we have anything of that nature.
   source:
     path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
-    location: line 1122 ¶ Let me answer
+    location: "¶85"
   significance: AARO Media Roundtable 'holdings' boundary — Moultrie establishes the 'holdings I have seen' rhetorical boundary that limits AARO claims to documents and memos rather than physical artifacts; references compartmented programs, predecessor organizations, and pre-DoD legacy entities; this boundary persists as institutional posture across subsequent AARO leadership
   context: Joint USD(I&S)–AARO Director media roundtable, Q&A on alien visitation
 - id: q9
@@ -834,7 +834,7 @@ quotes:
     So, in my organization, which is the intelligence and security organization, we are responsible for the comprehensive security of all elements within the Department of Defense.  So that is our personnel, which is foremost in our minds, our platforms, our --our systems, our bases, our installations, and our -- our activities, whether they occur in any domain.  And we operate in all domains today. So, we operate under the surface of the water, we operate on land, we operate in the air, of course, we operate in space. Anything that appears within the proximity of our activities that is anomalous, something that we can't identify, we have the responsibility to resolve what that is, and to report that back to our commanders, to our operators, to ensure that they are safe.
   source:
     path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
-    location: line 1026 ¶ Sure, let me take that one
+    location: "¶37"
   significance: AARO Media Roundtable scope statement — Moultrie's articulation of the 'all-domain' framing covering air, ground, sea, and space, anchoring AARO's mandate in the OUSD(I&S) institutional security mission
   context: Joint USD(I&S)–AARO Director media roundtable, Q&A
 - id: q10
@@ -845,7 +845,7 @@ quotes:
     Any unauthorized system in our airspace we deem as a threat to safety. So, that can be one of our systems or one of our relatives -- it's any system that is not authorized or platform not authorized to be in a domain that is restricted, we consider that to be a potential threat to the safety of our personnel or to our platforms.
   source:
     path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
-    location: line 1098 ¶ Any unauthorized system
+    location: "¶73"
   significance: AARO Media Roundtable threat-framing — Moultrie's safety-of-personnel framing under which any unauthorized system in restricted airspace constitutes a potential threat regardless of origin or characterization
   context: Joint USD(I&S)–AARO Director media roundtable, Q&A
 - id: q11
@@ -856,7 +856,7 @@ quotes:
     LeoLabs has already established itself as a trusted leader in the Space Domain Awareness field and is well positioned to support a wide array of U.S. defense, Allied, and commercial requirements
   source:
     path: news/leolabs-moultrie-board-20241203.html
-    location: line 311 ¶ I'm honored to join the company's Board
+    location: "¶7"
   significance: LeoLabs Board appointment quote — Moultrie's public statement on accepting the Outside Director role nine months after his February 29 2024 USD(I&S) departure
   context: LeoLabs press release announcing Moultrie's Board of Directors appointment
 - id: q12
@@ -866,7 +866,7 @@ quotes:
     Ronald (Ron) Moultrie is the President/Owner of Ron Moultrie Consulting, LLC. He is an Appointed Board Member to both the President's Intelligence Advisory Board (PIAB) and the President's Intelligence Oversight Board (IOB).  Ron brings unique leadership and advisory experience having served as the Under Secretary of Defense for Intelligence and Security. Presidentially appointed and Senate confirmed, he was the senior advisor to the Secretary of Defense on all intelligence and security matters and managed a portfolio of over $30 billion dollars and 225,000 global civilian and uniformed personnel.
   source:
     path: news/insa-moultrie-bio.html
-    location: line 249 ¶ Ronald (Ron) Moultrie is the President/Owner
+    location: "¶3"
   significance: INSA bio summary — Moultrie's post-government public-bio framing of his USD(I&S) tenure ($30B portfolio + 225,000 personnel)
   context: Intelligence and National Security Alliance public profile page (post-government)
 - id: q13
@@ -876,7 +876,7 @@ quotes:
     The Honorable Ronald (Ron) Moultrie is highly sought after for his insights and experience on national security policy and global intelligence issues, emerging technology application, organizational leadership and corporate culture evolution.  He is on the Board of Nightwing, LeoLabs, Inc, the National Cryptologic Foundation, and he served on the President's Intelligence Advisory Board (PIAB) and the President's Intelligence Oversight Board (IOB), until January 2025.
   source:
     path: news/umd-moultrie-faculty-bio.html
-    location: line 785 ¶ The Honorable Ronald (Ron) Moultrie
+    location: "¶2"
   significance: UMD School of Public Policy bio — current public listing of post-government board affiliations (Nightwing, LeoLabs, National Cryptologic Foundation) and PIAB/IOB end-of-service date (January 2025)
   context: University of Maryland School of Public Policy faculty profile page (post-government)
 entities_referenced:

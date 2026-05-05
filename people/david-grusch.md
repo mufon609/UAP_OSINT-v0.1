@@ -427,7 +427,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | oral opening statement, p. 11 |
+| Location | oral opening statement, p. 12 |
 
 > My testimony is based on information I have been given by individuals with a long-standing track record of legitimacy and service to this country, many of whom also have shared compelling evidence in the form of photography, official documentation, and classified oral testimony to myself and many of my various colleagues.
 
@@ -435,7 +435,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | oral opening statement, p. 11 |
+| Location | oral opening statement, p. 12 |
 
 > I have taken every step I can to corroborate this evidence over a period of 4 years while I was with the UAP Task Force and do my due diligence on the individuals sharing it.
 
@@ -443,7 +443,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | oral opening statement, p. 11 |
+| Location | oral opening statement, p. 12 |
 
 > But as I stand here under oath now, I am speaking to the facts as I have been told them.
 
@@ -451,7 +451,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | oral opening statement, p. 11 |
+| Location | oral opening statement, p. 12 |
 
 > In 2019, the UAP Task Force Director asked me to identify all special access programs and controlled access programs, also known as SAPs and CAPs, we needed to satisfy our congressionally mandated mission and we would direct report at the time to the DEP/SecDef.
 
@@ -491,7 +491,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Chairman Grothman, p. 16 |
+| Location | Q&A with Chairman Grothman, p. 17 |
 
 > Absolutely, based on interviewing over 40 witnesses over 4 years.
 
@@ -499,7 +499,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony Q&A (response to "do you believe that our government is in possession of UAPs?"), House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Garcia, p. 18 |
+| Location | Q&A with Rep. Garcia, p. 19 |
 
 > I know the exact locations and those locations were provided to the Inspector General and some of which to the intelligence committees. I actually had the people with the firsthand knowledge provide a protected disclosure to the Inspector General.
 
@@ -507,7 +507,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Garcia, p. 18 |
+| Location | Q&A with Rep. Garcia, p. 19 |
 
 > Yes. I have to be careful what I say in detail because there is an open whistleblower reprisal investigation on my behalf, and I do not want to compromise that investigation by providing anything that may help provide somebody information. But it was very brutal and very unfortunate. Some of the tactics they used to hurt me both professionally and personally, to be quite frank. Yes.
 
@@ -739,7 +739,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Burchett, p. 32 |
+| Location | Q&A with Rep. Burchett, p. 31 |
 
 > If you reference my News Nation interview and I talked about a multi-decade, you know, campaign to disenfranchise public interest, basically.
 
@@ -747,7 +747,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Burchett, p. 32 |
+| Location | Q&A with Rep. Burchett, p. 31 |
 
 > The kind of general unclassed wave tops. Certainly, the contractors, you know, or the metal benders, so to speak, the ones actually doing specific performance on government contracts.
 
@@ -835,7 +835,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Burlison, p. 37-38 |
+| Location | Q&A with Rep. Burlison, p. 36 |
 
 > Not to my knowledge. Plus, the recoveries predate a lot of our advanced programs that I previously am waiving off. So——
 
@@ -1035,7 +1035,7 @@ Submission") |
 |---|---|
 | Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A closing round with Rep. Burchett, p. 47 |
+| Location | Q&A closing round with Rep. Burchett, p. 48 |
 
 > [9:50] Yeah. Did all the checks I could possibly do, you know, within my, you know, kind of official capacity, realized it was real. And then, uh, kind of during that investigation, you know, I had a lot of pushback that was very unfortunate, you know, reprisals against me and stuff. And that kind of was what led me to file the whistleblower complaint, you know, a for my own protection, but B was to kind of sound the alarm.
 

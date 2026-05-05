@@ -1187,7 +1187,7 @@ quotes:
   text: I became a whistleblower through a PPD–19 urgent concern filing in May 2022 with the intelligence community inspector general following concerning reports from multiple esteemed and credentialed current and former military and intelligence community individuals that the U.S. Government is operating with secrecy above congressional oversight with regards to UAPs.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11
+    location: "oral opening statement, p. 12"
   significance: Sworn formal articulation of the PPD-19 filing date, venue (ICIG), and substantive triggering claim — secrecy above congressional oversight.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1198,7 +1198,7 @@ quotes:
   text: My testimony is based on information I have been given by individuals with a long-standing track record of legitimacy and service to this country, many of whom also have shared compelling evidence in the form of photography, official documentation, and classified oral testimony to myself and many of my various colleagues.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11
+    location: "oral opening statement, p. 12"
   significance: Grusch's own framing of his evidentiary basis — he relays information from named witnesses who showed him photography, official documentation, and classified oral testimony.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1208,7 +1208,7 @@ quotes:
   text: I have taken every step I can to corroborate this evidence over a period of 4 years while I was with the UAP Task Force and do my due diligence on the individuals sharing it.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11
+    location: "oral opening statement, p. 12"
   significance: Grusch's claim that his investigation spanned 4 years during UAPTF tenure with corroboration and due-diligence steps.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1218,7 +1218,7 @@ quotes:
   text: But as I stand here under oath now, I am speaking to the facts as I have been told them.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: oral opening statement, p. 11
+    location: "oral opening statement, p. 12"
   significance: Critical epistemic caveat — Grusch explicitly frames his sworn testimony as relayed from others, not firsthand.
   context: Oral testimony, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1270,7 +1270,7 @@ quotes:
   text: Yes, I can speak to that very briefly in an unclassified manner. As you know, the preponderance of my complaint was classified to the intelligence communities. Both material acquisition and exploitation activity, also baselining the UAPs but not sharing it with, you know, intelligence professionals that are actually doing step briefs to pilots, that kind of information.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Chairman Grothman, p. 16
+    location: "Q&A with Chairman Grothman, p. 17"
   significance: 'Unclassified description of the substance withheld from
 
     Congress: "material acquisition and exploitation activity"
@@ -1289,7 +1289,7 @@ quotes:
   text: Absolutely, based on interviewing over 40 witnesses over 4 years.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Garcia, p. 18
+    location: "Q&A with Rep. Garcia, p. 19"
   significance: First public numeric witness count — "over 40 witnesses over 4 years" underlying Grusch's claim the government possesses UAPs.
   context: Oral testimony Q&A (response to "do you believe that our government is in possession of UAPs?"), House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1300,7 +1300,7 @@ quotes:
   text: I know the exact locations and those locations were provided to the Inspector General and some of which to the intelligence committees. I actually had the people with the firsthand knowledge provide a protected disclosure to the Inspector General.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Garcia, p. 18
+    location: "Q&A with Rep. Garcia, p. 19"
   significance: Sworn assertion that Grusch knows exact facility locations and facilitated firsthand-witness protected disclosures to the IG.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1601,7 +1601,7 @@ quotes:
   text: Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11½ hours with both intel committees.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 32
+    location: "Q&A with Rep. Burchett, p. 31"
   significance: Grusch attests to an 11½-hour classified testimony session with both intel committees (HPSCI + SSCI) and to providing specific corporations / divisions names. Cross-references with his JRE account ("it's 11 and a half to 12 hours" of classified testimony, q47).
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1611,7 +1611,7 @@ quotes:
   text: If you reference my News Nation interview and I talked about a multi-decade, you know, campaign to disenfranchise public interest, basically.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burchett, p. 32
+    location: "Q&A with Rep. Burchett, p. 31"
   significance: Grusch's sworn characterization of USG disinformation — "multi-decade campaign to disenfranchise public interest."
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1733,7 +1733,7 @@ quotes:
   text: And then in terms of multidimensionality, that kind of thing, the framework that I am familiar with, for example, is something called the holographic principle both—it derives itself from general relativity and quantum mechanics and that is if you want to imagine a 3D object such as yourself casting a shadow onto a 2D surface that is the holographic principle. So, you can be projected—quasi projected from higher dimensional space to lower dimensional. It is a scientific trope that you can actually cross, literally, as far as I understand, but there is
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A with Rep. Burlison, p. 37-38
+    location: "Q&A with Rep. Burlison, p. 36"
   significance: Grusch's own theoretical framing ("holographic principle") for interdimensional UAP possibility. Explicitly framed as theoretical, not evidenced.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed
@@ -1989,7 +1989,7 @@ quotes:
   text: I will just touch on the whistleblower side of it. I do encourage, you know, current and former military, intelligence community, and industry contractors to come forward in a legal way, either through the IC or DoD or whatever the cognizant IGs are to join me in this discussion.
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
-    location: Q&A closing round with Rep. Burchett, p. 47
+    location: "Q&A closing round with Rep. Burchett, p. 48"
   significance: Grusch's explicit public call-to-action for other military/IC/contractor personnel to come forward through legal IG channels.
   context: Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26
   observation_type: relayed

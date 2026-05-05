@@ -153,7 +153,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Joint USD(I&S)–AARO Director media roundtable, 2022-12-16 |
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
-| Location | line 956 ¶ Good afternoon I'm Ronald Moultrie |
+| Location | ¶2 |
 
 > At this time, the answer's no, we have nothing. We're committed -- and I have to say this because I -- I talked with the Secretary and I talked with the Deputy Secretary about this, about openness and objectivity, and transparency that we have committed to -- to the Congress, the American people, to you in the press corps. We have not seen anything that would -- but we -- we're certainly very early on -- that would lead us to believe that any of the objects that we have seen are of alien origin, if you will.  If we are -- if we find something like that, we will look at it and analyze it and take the appropriate actions.
 
@@ -161,7 +161,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Joint USD(I&S)–AARO Director media roundtable, Q&A, 2022-12-16 |
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
-| Location | line 1018 ¶ At this time |
+| Location | ¶33 |
 
 > Let me answer. This is Ron Moultrie, Under Secretary of Defense for Intelligence and Security. Then I'll pass it to Dr. Kirkpatrick to give his -- his words on this. So, let me just characterize your question when you're talking about, we've been visited, is there a possibility of alien life? So, I'm gonna to discount meteorites and things like that, that might have microbes on it and those types of things, and just talk about things that may be intelligent life that may have crashed landed on our planet or that may have the -- in somehow visited our planet. In terms of holdings that I have seen and holdings, that that we have gone through -- and we are being very thorough about this, and we are going back and trying to understand all the compartmented programs that this department has had, understand all the relationships that we may have had with any other organizations and all the predecessor organizations that were established before we were officially a Department of Defense. We've looked at all that; I have not seen anything in those holdings to date that would suggest that there has been an alien visitation, an alien crash, or anything like that.  Once again, with what Dr. Kirkpatrick is doing, we are still very early on in the work that we're doing. But that means we have to go back retrospectively and understand some of the holdings that we have. And Dr. Kirkpatrick and his team is still doing that. But I have not seen anything today that would suggest that we have anything of that nature.
 
@@ -169,7 +169,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Joint USD(I&S)–AARO Director media roundtable, Q&A on alien visitation, 2022-12-16 |
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
-| Location | line 1122 ¶ Let me answer |
+| Location | ¶85 |
 
 > So, in my organization, which is the intelligence and security organization, we are responsible for the comprehensive security of all elements within the Department of Defense.  So that is our personnel, which is foremost in our minds, our platforms, our --our systems, our bases, our installations, and our -- our activities, whether they occur in any domain.  And we operate in all domains today. So, we operate under the surface of the water, we operate on land, we operate in the air, of course, we operate in space. Anything that appears within the proximity of our activities that is anomalous, something that we can't identify, we have the responsibility to resolve what that is, and to report that back to our commanders, to our operators, to ensure that they are safe.
 
@@ -177,7 +177,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Joint USD(I&S)–AARO Director media roundtable, Q&A, 2022-12-16 |
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
-| Location | line 1026 ¶ Sure, let me take that one |
+| Location | ¶37 |
 
 > Any unauthorized system in our airspace we deem as a threat to safety. So, that can be one of our systems or one of our relatives -- it's any system that is not authorized or platform not authorized to be in a domain that is restricted, we consider that to be a potential threat to the safety of our personnel or to our platforms.
 
@@ -185,7 +185,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Joint USD(I&S)–AARO Director media roundtable, Q&A, 2022-12-16 |
 | Source | [archived source](../sources/government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html) |
-| Location | line 1098 ¶ Any unauthorized system |
+| Location | ¶73 |
 
 > LeoLabs has already established itself as a trusted leader in the Space Domain Awareness field and is well positioned to support a wide array of U.S. defense, Allied, and commercial requirements
 
@@ -193,7 +193,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | LeoLabs press release announcing Moultrie's Board of Directors appointment, 2024-12-03 |
 | Source | [archived source](../sources/news/leolabs-moultrie-board-20241203.html) |
-| Location | line 311 ¶ I'm honored to join the company's Board |
+| Location | ¶7 |
 
 > Ronald (Ron) Moultrie is the President/Owner of Ron Moultrie Consulting, LLC. He is an Appointed Board Member to both the President's Intelligence Advisory Board (PIAB) and the President's Intelligence Oversight Board (IOB).  Ron brings unique leadership and advisory experience having served as the Under Secretary of Defense for Intelligence and Security. Presidentially appointed and Senate confirmed, he was the senior advisor to the Secretary of Defense on all intelligence and security matters and managed a portfolio of over $30 billion dollars and 225,000 global civilian and uniformed personnel.
 
@@ -201,7 +201,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | Intelligence and National Security Alliance public profile page (post-government) |
 | Source | [archived source](../sources/news/insa-moultrie-bio.html) |
-| Location | line 249 ¶ Ronald (Ron) Moultrie is the President/Owner |
+| Location | ¶3 |
 
 > The Honorable Ronald (Ron) Moultrie is highly sought after for his insights and experience on national security policy and global intelligence issues, emerging technology application, organizational leadership and corporate culture evolution.  He is on the Board of Nightwing, LeoLabs, Inc, the National Cryptologic Foundation, and he served on the President's Intelligence Advisory Board (PIAB) and the President's Intelligence Oversight Board (IOB), until January 2025.
 
@@ -209,7 +209,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 |---|---|
 | Attributed to | University of Maryland School of Public Policy faculty profile page (post-government) |
 | Source | [archived source](../sources/news/umd-moultrie-faculty-bio.html) |
-| Location | line 785 ¶ The Honorable Ronald (Ron) Moultrie |
+| Location | ¶2 |
 
 ---
 

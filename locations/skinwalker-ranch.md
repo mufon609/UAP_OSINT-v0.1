@@ -162,7 +162,7 @@ Uintah County Real Property Owner Information records show Adamantium Real Estat
 | Field | Value |
 |---|---|
 | Source | [archived source](../sources/government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf) |
-| Location | line 8742, 27 October 2022 timeline entry |
+| Location | 27 October 2022 timeline entry, p. 212 |
 
 ---
 
