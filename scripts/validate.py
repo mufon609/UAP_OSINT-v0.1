@@ -113,6 +113,7 @@ from checks import governance_files as ck_governance_files
 from checks import manifest_archive_status as ck_manifest_archive_status
 from checks import manifest_checksums as ck_manifest_checksums
 from checks import manifest_extraction_type as ck_manifest_extraction_type
+from checks import verbatim_quotes as ck_verbatim_quotes
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
@@ -202,114 +203,17 @@ def count_quote_blocks_and_attributions(section_text):
     return quotes, attributions
 
 
-# chronological_tables, manifest_checksums, manifest_archive_status, and
-# manifest_extraction_type checks all moved to scripts/checks/ during the
-# C11 / C13 / C14 migration (2026-05-05, sessions 1 and 2). They consume
-# Context (BaseContext / NodeContext) and adopt the unified Issue contract;
-# manifest parse-failure handling moved to the orchestrator (main()) so
-# migrated checks assume clean inputs. The validate.py orchestrator imports
-# them at the top and dispatches by Context type. Banner blocks for the
-# migrated checks removed; per-check docstrings live in scripts/checks/.
+# chronological_tables, manifest_checksums, manifest_archive_status,
+# manifest_extraction_type, and verbatim_quotes checks all moved to
+# scripts/checks/ during the C11 / C13 / C14 migration (2026-05-05,
+# sessions 1-3). They consume Context (BaseContext / NodeContext) and
+# adopt the unified Issue contract; manifest parse-failure handling
+# moved to the orchestrator (main()) so migrated checks assume clean
+# inputs. The validate.py orchestrator imports them at the top and
+# dispatches by Context type. Banner blocks for the migrated checks
+# removed; per-check docstrings live in scripts/checks/.
 
 
-# =============================================================================
-# Verbatim-quote check — against archived source files
-# =============================================================================
-
-BLOCKQUOTE_BLOCK = re.compile(
-    r"(^>[ \t].+(?:\n>[ \t].*)*)",
-    re.MULTILINE,
-)
-
-
-# extract_source_text + normalize_for_compare moved to scripts/lib/_common.py
-# (centralized 2026-05-01) to keep validate.py / validate-research.py /
-# review-coverage.py in mechanical lockstep on source extraction and quote
-# normalization. See _common.py for the full implementation and rationale.
-
-
-def find_quote_source_pairs(text):
-    """Yield (quote_text, source_ref, line_no) for each block-quote followed
-    by an attribution table containing a Source row.
-
-    line_no is the 1-indexed line number of the block-quote's first line in
-    the original text \u2014 surfaced in failure messages so contributors can
-    locate the quote in the rendered node directly.
-    """
-    for bq_match in BLOCKQUOTE_BLOCK.finditer(text):
-        raw = bq_match.group(1)
-        # Strip leading "> " from each line, join with spaces
-        quote_lines = [re.sub(r"^>[ \t]?", "", line) for line in raw.splitlines()]
-        quote_text = " ".join(line for line in quote_lines if line.strip())
-        # Strip surrounding quote marks
-        quote_text = re.sub(r'^["\u201c\u201d\u2018\u2019]+', "", quote_text)
-        quote_text = re.sub(r'["\u201c\u201d\u2018\u2019]+$', "", quote_text)
-        quote_text = quote_text.strip()
-        if not quote_text:
-            continue
-        # Look for Source row within ~2500 chars after the quote
-        after = text[bq_match.end():bq_match.end() + 2500]
-        src_match = re.search(
-            r"^\|\s*Source\s*\|\s*([^|]+?)\s*\|",
-            after, re.MULTILINE,
-        )
-        if not src_match:
-            continue
-        source_ref = src_match.group(1).strip()
-        line_no = text.count("\n", 0, bq_match.start()) + 1
-        yield quote_text, source_ref, line_no
-
-
-def check_verbatim_quotes(node_path, text, rel_path):
-    """For every block-quote with an attribution Source pointing at an archived
-    file under `sources/`, confirm the quote appears as a substring of the
-    extracted source text.
-
-    Runs unconditionally — no marker gate. Confirmation against the source
-    is a precondition for inclusion; this check enforces it mechanically.
-    Failure messages name the node, the line number of the block-quote,
-    the cited source file, and a preview of the unmatched text — enough
-    for a contributor to navigate and fix without further detective work.
-    """
-    issues = []
-    for quote_text, source_ref, line_no in find_quote_source_pairs(text):
-        # Extract local source path from markdown link (../sources/foo.pdf)
-        path_match = re.search(r"\(\.\./sources/([^)]+)\)", source_ref)
-        if not path_match:
-            # Source refers to a node link (e.g. [`/transcripts/...`]) rather
-            # than a file. Can't mechanically verify — skip (soft case).
-            continue
-        rel_source = path_match.group(1)
-        source_file = SOURCES_DIR / rel_source
-        if not source_file.exists():
-            issues.append(Issue(rel_path, "error",
-                f"Quote at line {line_no} cites missing source file: sources/{rel_source}"))
-            continue
-        source_text = extract_source_text(source_file)
-        if source_text is None:
-            # Distinguish binary-by-design (image/video/audio per manifest
-            # format) from extraction-infrastructure failure. pdftotext
-            # didn't fail on a .mp4; it was never going to run. Binary-
-            # source-citing quotes require manual contributor verification —
-            # the validator can't substring-match against bytes that aren't
-            # text. Frame the warning accordingly.
-            fmt = manifest_format(rel_source)
-            if fmt in ("image", "video", "audio"):
-                issues.append(Issue(rel_path, "warn",
-                    f"Quote at line {line_no} cites sources/{rel_source} "
-                    f"(format: {fmt}) — verbatim-quote check requires manual "
-                    f"contributor verification of binary source"))
-            else:
-                issues.append(Issue(rel_path, "warn",
-                    f"Quote at line {line_no} cites sources/{rel_source} but text extraction failed (pdftotext missing or failed)"))
-            continue
-        norm_quote = normalize_for_compare(quote_text)
-        norm_source = normalize_for_compare(source_text)
-        if norm_quote not in norm_source:
-            preview = quote_text[:80] + ("..." if len(quote_text) > 80 else "")
-            issues.append(Issue(rel_path, "error",
-                f'Quote at line {line_no} NOT FOUND in sources/{rel_source}: "{preview}"'))
-    return issues
 
 
 # =============================================================================
@@ -613,19 +517,22 @@ def validate_node(path, schema):
                 issues.append(Issue(rel, "error",
                     f"Section '{section_name}' has quotes but no attribution blocks (each block-quote needs a `| Source | … |` row pointing at the cited archived file)"))
 
-    # Verbatim quote verification — critical check (fix from 2026-04-17 pilot failure)
-    issues.extend(check_verbatim_quotes(path, text, rel))
-
-    # Chronological-ordering check on date-bearing tables.
-    # Migrated to scripts/checks/chronological_tables.py in C11 session-2;
-    # consumes NodeContext (first NodeContext check). BaseContext / NodeContext
-    # constructed locally for the hybrid window — when session 3 lifts the
-    # rest of validate_node's inline logic into proper checks, base_ctx will
-    # flow through from main() instead of being reconstructed per node.
+    # NodeContext for the migrated per-node checks. Constructed locally
+    # for the hybrid window; the final orchestrator rewrite (Phase D)
+    # threads base_ctx through from main() and lifts the remaining inline
+    # logic into proper checks.
     node_ctx = NodeContext(
         BaseContext(schema=schema),
         path=path, rel=rel, text=text,
     )
+
+    # Verbatim quote verification — critical check (fix from 2026-04-17
+    # pilot failure). Migrated to scripts/checks/verbatim_quotes.py in
+    # C11 session-3.
+    issues.extend(ck_verbatim_quotes.check(node_ctx))
+
+    # Chronological-ordering check on date-bearing tables. Migrated to
+    # scripts/checks/chronological_tables.py in C11 session-2.
     issues.extend(ck_chronological_tables.check(node_ctx))
 
     # Internal link resolution — body links + frontmatter node-path
