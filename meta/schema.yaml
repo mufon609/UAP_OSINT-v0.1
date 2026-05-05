@@ -783,9 +783,21 @@ types:
     quote_source:
       required: [path, location]
       # path: appears in manifest.yaml
-      # location: paragraph ref (¶N), line number (line N), page (p. N),
-      #   timestamp, etc. Media artifacts accept flexible location forms
-      #   on a SINGLE quote entry type — timestamp (e.g., "0:23-0:45" for
+      # location: anchors the quote within the source. Form depends on
+      #   the source's structural shape — government page + paragraph
+      #   (`p. N, ¶M`) for paginated PDFs, paragraph-only (`¶N`) for
+      #   unpaginated short documents, timestamp (`[MM:SS]` or
+      #   `[MM:SS]–[MM:SS]`) for caption/audio/video, page-only
+      #   (`p. N`) when no paragraph anchor is available. `lines N-M
+      #   of the extract` is permitted only when the pdftotext extract
+      #   IS the intended reference (rare; the `of the extract`
+      #   qualifier is required). Plain `lines N-M` (without `of the
+      #   extract`) refers to extraction-version-dependent line numbers
+      #   and is not a valid permanent ref — see `meta/conventions.md`
+      #   "Quote location refs: source-anchored, not extraction-
+      #   anchored".
+      #   Media artifacts accept flexible location forms on a SINGLE
+      #   quote entry type — timestamp (e.g., "0:23-0:45" for
       #   audio/video speech), timestamp + in-frame coordinate (e.g.,
       #   "HUD bottom-right, 0:12" for visible text in a video frame),
       #   or spatial-only (e.g., "upper-right corner" for photo-visible

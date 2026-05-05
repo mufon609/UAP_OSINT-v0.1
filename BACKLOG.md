@@ -680,6 +680,37 @@ C work doesn't risk half-baked implementations.
 
 ### C1. Location reference normalization — stale pdftotext line refs in quote Locations
 
+**Status (2026-05-04):** Phase A and Phase B shipped; Phase C
+(per-artifact conversion) remains.
+
+- **Phase A (convention codification, 2026-05-04).** New section in
+  `meta/conventions.md` — "Quote location refs: source-anchored, not
+  extraction-anchored" — defines canonical forms per source shape
+  (`p. N, ¶M`, `¶N`, `[MM:SS]`, `p. N`, `lines N-M of the extract`)
+  and the tightness rule. `meta/schema.yaml`'s `quote_source.location`
+  comment cross-references the convention; plain `lines N-M` is now
+  explicitly flagged as not a valid permanent ref.
+- **Phase B (diagnostic tool, 2026-05-04).** `scripts/normalize-locations.py`
+  ships. Read-only. Surveys all artifacts; per quote with deprecated
+  `lines N-M` / `line N` form, reports current ref, actual line range
+  in the current extract (using validator-equivalent extraction path),
+  boundary delta (stated vs actual), and canonical-form proposal when
+  computable (mechanical for caption transcripts; extract-derived
+  `p. N*` for text-native PDFs with form-feeds; prose note otherwise).
+  Current corpus state: 332 deprecated quotes across 13 artifacts;
+  319 successfully located by the tool, 13 unlocated (per-quote
+  manual handling in Phase C).
+- **Phase C (per-artifact conversion, pending).** Walk the 13
+  affected artifacts, applying canonical-form refs per quote with
+  per-source verification against the rendered original. Cluster by
+  source-shape (caption transcripts → PDFs → HTML) so each canonical
+  form gets validated end-to-end before extending to the next.
+
+The remainder of this entry (problem shape, scope, fix shape) is
+preserved below as the original problem statement; treat it as
+historical narrative now that Phase A's convention supersedes the
+"Fix shape" sketch.
+
 Quotes across the corpus cite `Location: lines 805-810` or similar
 line-range references that point at line numbers in pdftotext output
 of the cited source rather than government page numbers or other
@@ -798,51 +829,6 @@ Surfaced: Phase F spot-check review of `✅ Confirmed —` patterns in
 rendered nodes — Provenance markers share the marker pattern with
 the per-quote Verified row but don't share the trust-performance
 shape.
-
----
-
-### C4. pdftotext Unicode-mapping quirks on text-native PDFs (extraction-tool-layer)
-
-The `extraction-lossy` enum category added in Phase F Tier 1 captures
-the high-level source-condition pattern: text layer present (not
-OCR'd) but pdftotext produces artifacts. The underlying root cause
-for the known case (hearing transcript PDF, `11½` rendering as
-`11‡` via pdftotext) is specifically a Unicode-mapping issue at the
-PDF-generation layer — Acrobat Distiller mapped U+00BD ONE HALF to
-U+2021 DOUBLE DAGGER in the text stream.
-
-**Possible narrower fix:** use a different PDF text extraction tool
-(e.g., `pdfplumber`, `pymupdf`, `mutool`) that handles this Unicode
-mapping correctly, rather than producing a clean-text sibling per-
-source. If the alternate tool gives clean output on the hearing
-transcript and all other corpus PDFs, the extraction-lossy category
-might dissolve for the Unicode-mapping subcase, leaving only
-genuinely OCR'd sources needing siblings.
-
-**Scope consideration.** This is a narrower question than the
-extraction-lossy schema category. The category stays regardless —
-OCR sources still need sibling handling. But if a tool change could
-eliminate the Unicode-mapping failure mode across the corpus, that
-reduces the sibling-production workload for future tiers of the audit
-(and for future contributors adding sources).
-
-**Methodology for evaluation** (deferred to a separate session):
-run alternate PDF extraction tools against the hearing transcript
-PDF; compare output to the known-correct visual content; check for
-`11½` rendering correctness; check other Unicode edge cases
-(fractions, typography, signature glyphs, section signs). If an
-alternate tool gives clean output uniformly, propose adopting it in
-`validate.py` as the PDF extraction path (with pdftotext retained
-as fallback for compatibility).
-
-**Affected now.** Hearing transcript PDF (only known case to date).
-Future corpus PDFs may exhibit similar conditions — evaluation cost
-is bounded.
-
-Surfaced: Phase F Tier 1 — `11‡` for `11½` caught during hearing-
-transcript audit; extraction-lossy enum added to handle the pattern
-generically, but the specific case might have a narrower solution
-at the tool layer.
 
 ---
 

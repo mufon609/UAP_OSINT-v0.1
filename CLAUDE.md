@@ -150,6 +150,7 @@ to begin with by following `prompts/build.md` Phase I Steps 2 and 6
 | `extract-source.py` | Extract a primary source to plaintext (Phase I) |
 | `build-from-research.py` | Regenerate a node from its research artifact (Phase II — document / person / event / transcript / media / organization / location) |
 | `review-coverage.py` | Coverage / boundary / stub-linking / description-drift review (Phase III) |
+| `normalize-locations.py` | Diagnostic for quote `source.location` refs — surfaces deprecated `lines N-M` forms with actual line ranges and canonical-form proposals (read-only; BACKLOG C1) |
 | `validate.py` | Schema, structural, and verbatim-quote validation |
 | `validate-research.py` | Research-artifact structural validation |
 | `manifest.py` | Manage `sources/manifest.yaml` (add, verify-paths, verify-checksums, …) |

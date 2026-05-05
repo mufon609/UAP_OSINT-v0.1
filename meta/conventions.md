@@ -107,6 +107,23 @@ verification against the original) before quotes are derived. The
 validator does not close the OCR-corruption gap; the ingestion
 pipeline does.
 
+The same `.txt`-sibling preference handles `extraction_type:
+extraction-lossy` sources — text-native PDFs whose extracted text
+is unreliable for non-OCR reasons (Unicode-mapping artifacts at
+PDF-generation time, stenographic-format noise like inline line-
+number prefixes and page-footer triplets). A 2026-05-04 evaluation
+of the known Unicode-mapping case (`11½` encoded as byte `\x87` →
+U+2021 in the embedded font's CMap) confirmed the corruption lives
+in the source PDF's content stream itself: `pdftotext`, `mutool`,
+and `pypdf` all faithfully reproduce the same bytes because the
+PDF tells every compliant reader that the glyph is `‡`. Switching
+extraction tools is not a path forward — the contributor-produced
+clean transcription, visually verified against the source page, is
+the canonical recovery for both ocr-scan and extraction-lossy
+sources. Do not re-open this question without new evidence (e.g.,
+a substantively different failure mode that doesn't reduce to
+"PDF content stream encodes the wrong glyph").
+
 ### Type-specialized views of `quotes[]`
 
 Each node type renders a filtered view of the same universal primitive:
@@ -213,6 +230,51 @@ when the prose layer doesn't explicitly call out the end. Otherwise
 the description's reference to the contract's establishment has no
 structured-surface counterpart for the contract's closure, and the
 layered-precision principle breaks for that class of contracts.
+
+### Quote location refs: source-anchored, not extraction-anchored
+
+Each quote in a research artifact carries a `source.location` field —
+the navigation handle from the quote to its precise place in the cited
+source. The handle is useful only if it remains correct across
+re-extractions of the source and tight enough that following it lands
+on the quote, not on the adjoining material.
+
+`lines N-M` refs (where N and M are line numbers in a particular
+pdftotext output of the source) violate both constraints. Line
+numbers are properties of one extraction, not properties of the
+source document — when the source is re-extracted (clean-text sibling
+production for `ocr-scan` / `extraction-lossy` PDFs, tool change,
+format conversion), the line numbers shift and the ref silently
+misnavigates. The verbatim-quote check still passes because the
+quote's bytes still appear *somewhere* in the source, but the
+location ref no longer points at where they appear.
+
+The canonical form anchors to properties of the source document
+itself:
+
+| Source shape | Canonical location form |
+|---|---|
+| Paginated PDF (hearing transcript, government report, written testimony) | `p. N, ¶M` |
+| Unpaginated short document (HTML article, single-page memo) | `¶N` |
+| Caption / audio / video transcript | `[MM:SS]` (or `[MM:SS]–[MM:SS]` for long quotes) |
+| Multi-page document with no paragraph anchor | `p. N` |
+| The extract itself IS the intended reference (rare; e.g., extract carries content the source PDF lacks) | `lines N-M of the extract` (the `of the extract` qualifier is required) |
+
+Plain `lines N-M` is not a valid permanent ref. Three layers serve
+distinct roles: `source.path` names the archived file (the ground
+truth); `source.location` navigates within that file using anchors
+the file itself provides; line numbers in any one extraction are a
+fourth, transient layer that depends on which extractor ran and when
+— useful for debugging, never the right anchor for a permanent ref.
+
+A location ref also has a tightness constraint: the range covers
+the quote's bounds, no more, no less. Including adjoining material
+(an interrupting speaker turn following the quote, a page footer
+ending the page) makes the ref land on a region that mixes quote
+with not-quote and defeats the navigation purpose. When converting
+`lines N-M` to a canonical form, the contributor verifies the new
+ref's range against the source page itself, not just against the
+extract.
 
 ### Check naming
 
