@@ -584,3 +584,37 @@ The flatness rule is about content the investigator reads, not about
 files the toolkit maintainers edit. Don't extrapolate the
 content-layer rule onto the tooling layer — and don't extrapolate
 tooling-layer organization onto the content layer.
+
+### Inside `/meta/` — root vs subdirs
+
+`/meta/` itself follows a sub-rule that grew implicitly and is
+codified here. New governance items land at the tier that matches
+their character:
+
+- **Root** (`meta/conventions.md`, `meta/schema.yaml`,
+  `meta/sources-access.md`, `meta/BACKLOG.md`, `meta/roadmap.md`):
+  stable governance specs and forward-looking work registers — the
+  rules and the active agenda. A contributor consults these at
+  session start or when something on the work queue applies.
+- **`meta/toolkit-notes/`**: retrospectives, postmortems, technique
+  docs, design records. Backward-looking lessons explaining *why* a
+  current rule exists or *what was tried before*. A contributor
+  consults these when understanding the history behind a current
+  convention.
+- **`meta/templates/`**: scaffolding templates, one per node type.
+  Consumed mechanically by `scripts/new.py`; rarely read directly
+  by contributors except when a new node type is being added.
+- **`meta/topic/`**: topic-specific governance — the priority
+  research queue, topic overview, corpus-specific addenda, in-
+  progress contributor working notes.
+
+The fork-boundary distinction is load-bearing: a contributor forking
+the toolkit to a different investigation deletes `/meta/topic/` and
+the content directories; everything else under `/meta/` survives
+because everything else is topic-neutral toolkit. Items therefore
+land at the right tier on first author — topic-specific items in
+`/meta/topic/`, toolkit-neutral items at `meta/`-direct or in
+`meta/toolkit-notes/` per the rules-vs-lessons distinction above.
+
+`meta/README.md` is a friendly-face index of the directory's
+contents; this section is the rule of record.
