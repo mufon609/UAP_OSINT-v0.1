@@ -49,6 +49,8 @@ meta/
   conventions.md            evidentiary philosophy (why the rules exist)
   sources-access.md         site-specific archival workarounds
   templates/                scaffolding templates (8 files, one per node type)
+  research/                 YAML research artifacts backing each node
+                            (structured facts; one per content node)
   topic/                    THIS INSTANCE'S topic-specific content
     overview.md             topic statement, scope, corpora
     research-queue.md       priority investigation queue
@@ -93,17 +95,15 @@ people/ organizations/ documents/ events/ transcripts/
 media/ locations/ findings/
                             content nodes (human-readable narrative)
 
-research/                   YAML research artifacts backing each node
-                            (structured facts; one per content node)
-
 prompts/                    paste-ready session prompts — see prompts/README.md for the index
 ```
 
-**Forking for a different topic.** Delete `meta/topic/` and the
-contents of `/people/`, `/organizations/`, `/documents/`, `/events/`,
-`/transcripts/`, `/media/`, `/locations/`, `/findings/`, `/research/`,
-and `sources/{category}/` (keep the directories themselves); empty
-`sources/manifest.yaml`. Create your own `meta/topic/overview.md`.
+**Forking for a different topic.** Delete `meta/topic/`,
+`meta/research/`, and the contents of `/people/`, `/organizations/`,
+`/documents/`, `/events/`, `/transcripts/`, `/media/`, `/locations/`,
+`/findings/`, and `sources/{category}/` (keep the directories
+themselves); empty `sources/manifest.yaml`. Create your own
+`meta/topic/overview.md`.
 Everything else — schema, conventions, scripts, templates, prompts,
 validators, test suite — is topic-neutral toolkit.
 

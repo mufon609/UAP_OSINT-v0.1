@@ -567,23 +567,36 @@ structure.
 
 ## Repository layout — content flat, tooling organized
 
-Investigator-facing content layers are flat by design:
-`/people/`, `/organizations/`, `/documents/`, `/events/`, `/transcripts/`,
-`/media/`, `/locations/`, `/findings/`, and `/research/` each hold
-single-level `slug.md` (or `slug.yaml`) files. `/sources/` is flat
-within each category subdirectory. A researcher looking for
-`/people/david-grusch.md` finds it one click in — no `/people/whistleblowers/intelligence-community/david-grusch.md` nesting.
-The frontmatter (archetype, kind, status) carries the categorization
-that hierarchy would otherwise impose.
+Three tiers, each with a different organizing principle:
 
-Backend tooling (`/scripts/`, `/meta/`) is organized for
-engineering hygiene, not researcher browsing. `/scripts/lib/` holds
-genuinely shared cross-cutting helpers; `/meta/templates/`,
-`/meta/topic/`, `/meta/toolkit-notes/` group governance docs by role.
+**Investigator-facing content** (flat by design):
+`/people/`, `/organizations/`, `/documents/`, `/events/`, `/transcripts/`,
+`/media/`, `/locations/`, `/findings/` each hold single-level `slug.md`
+files. `/sources/` is flat within each category subdirectory. A
+researcher looking for `/people/david-grusch.md` finds it one click in
+— no `/people/whistleblowers/intelligence-community/david-grusch.md`
+nesting. The frontmatter (archetype, kind, status) carries the
+categorization that hierarchy would otherwise impose.
+
+**Backend tooling** (`/scripts/`) is organized for engineering hygiene,
+not researcher browsing. `/scripts/lib/` holds genuinely shared
+cross-cutting helpers.
+
+**Governance and structured-data backing** (`/meta/`) is organized
+by role: `/meta/templates/`, `/meta/topic/`, `/meta/toolkit-notes/`,
+`/meta/research/`. Research artifacts live under `/meta/research/`
+because they are the contributor-edited Phase I working surface and
+the agent-readable structured fact layer (per `AGENT.md`) — not
+investigator-read narrative. Putting them with templates (mechanical
+scaffolding) and schema (the spec they conform to) reflects what they
+actually are: structured data backing the rendered nodes, not content
+in their own right.
+
 The flatness rule is about content the investigator reads, not about
-files the toolkit maintainers edit. Don't extrapolate the
-content-layer rule onto the tooling layer — and don't extrapolate
-tooling-layer organization onto the content layer.
+files the toolkit maintainers and pipeline scripts edit. Don't
+extrapolate the content-layer rule onto the tooling or governance
+layer — and don't extrapolate organized-by-role onto the content
+layer.
 
 ### Inside `/meta/` — root vs subdirs
 
@@ -607,14 +620,24 @@ their character:
 - **`meta/topic/`**: topic-specific governance — the priority
   research queue, topic overview, corpus-specific addenda, in-
   progress contributor working notes.
+- **`meta/research/`**: YAML research artifacts backing each content
+  node — the structured fact layer. One artifact per content node
+  (`meta/research/{slug}.yaml`); `target_node` declares the pointer
+  to `/{type}/{slug}.md`. Edited by contributors during Phase I,
+  consumed mechanically by `scripts/build-from-research.py` (Phase
+  II) and validated by `scripts/validate-research.py`. Topic-
+  specific in content but governance-neutral in shape — the schema
+  governs the shape; the topic determines the entries.
 
 The fork-boundary distinction is load-bearing: a contributor forking
-the toolkit to a different investigation deletes `/meta/topic/` and
-the content directories; everything else under `/meta/` survives
-because everything else is topic-neutral toolkit. Items therefore
-land at the right tier on first author — topic-specific items in
-`/meta/topic/`, toolkit-neutral items at `meta/`-direct or in
-`meta/toolkit-notes/` per the rules-vs-lessons distinction above.
+the toolkit to a different investigation deletes `/meta/topic/`,
+`/meta/research/`, and the content directories; everything else
+under `/meta/` survives because everything else is topic-neutral
+toolkit. Items therefore land at the right tier on first author —
+topic-specific items in `/meta/topic/` (governance) or
+`/meta/research/` (structured facts), toolkit-neutral items at
+`meta/`-direct or in `meta/toolkit-notes/` per the rules-vs-lessons
+distinction above.
 
 `meta/README.md` is a friendly-face index of the directory's
 contents; this section is the rule of record.
