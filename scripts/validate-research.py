@@ -55,9 +55,9 @@ except ImportError:
     sys.exit(1)
 
 from lib._common import (
-    MANIFEST_PATH,
     REPO_ROOT,
     content_type_dirs,
+    load_manifest_paths,
     load_schema,
 )
 
@@ -103,9 +103,9 @@ from checks import witnesses_testimony as ck_witnesses_testimony
 # Constants
 # =============================================================================
 #
-# REPO_ROOT, MANIFEST_PATH, load_schema, content_type_dirs() come from
-# lib._common — shared with every other script that walks the content
-# layer.
+# REPO_ROOT, load_schema, load_manifest_paths, content_type_dirs() come
+# from lib._common — shared with every other script that walks the
+# content layer.
 
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 
@@ -113,15 +113,6 @@ RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 # =============================================================================
 # Loading
 # =============================================================================
-
-def load_manifest_paths():
-    """Return set of path strings registered in sources/manifest.yaml."""
-    if not MANIFEST_PATH.exists():
-        return set()
-    with open(MANIFEST_PATH) as f:
-        entries = yaml.safe_load(f) or []
-    return {e.get("path") for e in entries if e.get("path")}
-
 
 def _read_target_frontmatter(target_path):
     """Read a target-node file's frontmatter and return it as a dict

@@ -288,6 +288,14 @@ def save_manifest(entries):
                   allow_unicode=True, width=9999)
 
 
+def load_manifest_paths():
+    """Return the set of ``path`` strings registered in
+    ``sources/manifest.yaml``. Convenience wrapper around
+    ``load_manifest()`` for callers that only need path-existence checks
+    (validate-research.py + review-coverage.py both use this shape)."""
+    return {e.get("path") for e in load_manifest() if e.get("path")}
+
+
 # ---------------------------------------------------------------------------
 # Date parsing — single source for the validator (chronological-ordering
 # check) and the renderer (Phase II sort_by_date). Earlier the two carried

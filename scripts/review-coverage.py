@@ -39,12 +39,12 @@ except ImportError:
     sys.exit(1)
 
 from lib._common import (
-    MANIFEST_PATH,
     REPO_ROOT,
     SOURCES_DIR,
     SUPPORTED_TYPES,
     content_type_dirs,
     extract_source_text,
+    load_manifest_paths,
     load_schema,
 )
 
@@ -61,9 +61,9 @@ from checks import stub_linking as ck_stub_linking
 # Constants
 # =============================================================================
 #
-# REPO_ROOT, SOURCES_DIR, MANIFEST_PATH, load_schema, SUPPORTED_TYPES,
-# content_type_dirs() come from lib._common — shared single sources of
-# truth across the toolkit.
+# REPO_ROOT, SOURCES_DIR, load_schema, load_manifest_paths,
+# SUPPORTED_TYPES, content_type_dirs() come from lib._common — shared
+# single sources of truth across the toolkit.
 
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 
@@ -86,14 +86,6 @@ _REVIEW_CHECKS = [
 # =============================================================================
 # Helpers
 # =============================================================================
-
-def load_manifest_paths():
-    if not MANIFEST_PATH.exists():
-        return set()
-    with open(MANIFEST_PATH) as f:
-        entries = yaml.safe_load(f) or []
-    return {e.get("path") for e in entries if e.get("path")}
-
 
 def load_artifact(path):
     """Open + parse the artifact YAML. Returns the parsed dict, or None

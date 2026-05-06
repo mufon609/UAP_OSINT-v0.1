@@ -38,11 +38,11 @@ except ImportError:
 # =============================================================================
 
 from lib._common import (
-    MANIFEST_PATH,
     REPO_ROOT,
     content_node_types,
     content_type_dirs,
     format_from_path,
+    load_manifest,
     load_schema,
 )
 
@@ -88,12 +88,9 @@ TYPE_DIRS = content_type_dirs()
 # =============================================================================
 # Helpers
 # =============================================================================
-
-def load_manifest():
-    if not MANIFEST_PATH.exists():
-        return []
-    with open(MANIFEST_PATH) as f:
-        return yaml.safe_load(f) or []
+#
+# load_manifest comes from lib._common — single source shared with
+# archive.py + manifest.py CLI.
 
 
 def parse_target(target):

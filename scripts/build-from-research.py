@@ -107,20 +107,19 @@ except ImportError:
     sys.exit(1)
 
 
-# Make scripts/lib/ importable so the renderer can read topic config
-# via the shared load_topic() helper.
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib._common import load_topic  # noqa: E402
-
-
 # =============================================================================
 # Constants
 # =============================================================================
+#
+# Python auto-adds the script's directory to sys.path on invocation, so
+# ``from lib._common import ...`` resolves without an explicit
+# ``sys.path.insert``.
 
-from lib._common import (  # noqa: E402
+from lib._common import (
     REPO_ROOT,
     SUPPORTED_TYPES,
     content_type_dirs,
+    load_topic,
     parse_date_tuple,
 )
 
