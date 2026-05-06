@@ -1083,6 +1083,16 @@ schema, then wire the warn). Path 2 is the lower-effort honest-
 documentation alternative if vocabulary canonicalization isn't
 worth the schema churn.
 
+**Reference pattern.** ``scripts/checks/media_versioning.py`` is
+the canonical extensible-enum-warn-on-unknown implementation in
+the validator: ``aspect`` field is enum {duration, encoding,
+metadata, content, provenance, other} with ``other`` as escape
+hatch; unknown values WARN with a message inviting "schema
+discussion". Timeline's path 1c resolution would model after
+that — same enum shape, same warn-on-unknown logic, with an
+``other`` escape value added to the timeline_category_values
+canonical list.
+
 **Priority.** Low. Not a correctness issue (corpus passes; the
 schema's "extensible" intent is honored in practice). Documentation-
 level discrepancy worth resolving but not blocking.

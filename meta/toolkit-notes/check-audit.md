@@ -86,7 +86,7 @@ Remaining 42 should land at ✅.
 | iff_section | ✅ | Anchored to BACKLOG C15 (`dc95d39`). Forcing case for the schema-driven dispatcher + grammar upgrade was `witnesses_testimony` (event-hearings only, not transcript-hearings; `hearing` is shared across both kinds → flat OR-keys couldn't express the AND-conjunction). |
 | key_personnel | ☐ | leadership_class sub-grouping |
 | location_relationships | ☐ | Heterogeneous entity_path |
-| media_versioning | ☐ | derivation_of conditional |
+| media_versioning | ✅ | F.4a media schema introduction. Two distinctive features beyond the standard renderer-coupled-defensive pattern: (1) cross-frontmatter awareness via ctx.target_derivation_of — warns on empty entries when derivative media is declared (unique among entry-list checks); (2) CANONICAL extensible-enum warn-on-unknown for `aspect` field — the implementation pattern that BACKLOG C20 path 1c would model timeline's category resolution after. |
 | naming_quirks | ✅ | Foundational from initial commit (`af5f789`) — schema + check + resolution enum complete from day one ("Leslie Keane → Leslie Kean" example was even in the original schema comment). New anchor pattern: STABLE CHECK / EVOLVING DISCIPLINE. The check's entry shape didn't change, but the contributor practices around `preserve-as-sic-in-quotes` evolved through F.1c (Lue/Luis), Cluster B (Bigalow, lockie Martin), and `13f9e91` codification of three-step OCR-scan discipline in conventions.md. |
 | org_relationships | ☐ | relationship_type enum |
 | ownership_timeline | ☐ | Period + use_status |
