@@ -1002,11 +1002,21 @@ remains: a refactor that breaks a check's error path is detected only
 when a contributor encounters a real broken input. Documented here so
 the question doesn't get re-litigated each session.
 
-**Status.** 7 checks docstring-audited in the pilot session
-(frontmatter_required, id_path_match, conditionally_required,
-manifest_archive_status, iff_section, affiliations,
-yaml_hash_truncation). Production-issue anchoring is loose on these
-seven and tightens on the remaining 42.
+**Status.** Pilot 7 fully ✅ (frontmatter_required, id_path_match,
+conditionally_required, manifest_archive_status, iff_section,
+affiliations, yaml_hash_truncation): module-file introductions traced
+via ``git log --diff-filter=A``, production-issue anchors recorded in
+each module's docstring + the audit-tracking file's notes column,
+paired-check layering observations documented where relevant. 42
+checks remain to investigate.
+
+Pattern observation across the seven: investigations cluster into four
+anchor shapes — reactive incident, defensive feature-pairing,
+renderer-coupled entry-list, foundational schema discipline. The
+remaining 41 should fit roughly into these. The entry-list family
+(17 siblings of affiliations sharing ``_research_utils`` helpers) is
+the largest single batch and should investigate fast off the
+F.{N}-renderer template.
 
 Surfaced: C11/C13/C14 closeout audit — verification pass spot-checked
 individual check error paths but didn't commit a per-check review.

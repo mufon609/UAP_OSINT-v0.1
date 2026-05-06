@@ -57,7 +57,7 @@ Remaining 42 should land at ✅.
 | doc_form_archival_status | ☐ | Likely subsumed by conditionally_required pattern |
 | finding_cross_ref | ☐ | Cross-references entities[] from finding |
 | frontmatter_required | ✅ | Foundational schema discipline; present in initial commit (`af5f789`). No specific incident — class of failure protected against is dispatcher-correctness (downstream archetype/kind dispatch fails if required fields are absent). Presence-only by design; downstream enum checks (`status_archetype_kind`) catch nullified values. |
-| id_path_match | 🟡 | rel ↔ fm.id consistency |
+| id_path_match | ✅ | Foundational schema discipline; present in initial commit (`af5f789`). Class of failure protected against: cross-reference correctness (broken-link registry, associate.py auto-generator, inter-node links all key off the slug). Paired with frontmatter_required; together they have an accepted layering gap on nullified id (no downstream enum defense for id; defensive coverage not justified absent a real incident). |
 | link_resolution | ☐ | Writes to `ctx.broken_links` (out-of-band) |
 | required_sections | ☐ | H2 presence per type_spec |
 | schema_version_compat | ☐ | Light; uses `lib._common` helper |
