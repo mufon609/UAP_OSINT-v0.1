@@ -7,6 +7,60 @@ additionally require ``observation_type`` (direct | relayed) and
 
 Universal — runs on every research artifact. ``observation_type``
 enforcement varies by target_type.
+
+Origin: foundational from the initial commit (``af5f789``); the
+basic shape (text + source + manifest membership + id uniqueness +
+lifecycle) was the original check_quotes in the first
+validate-research.py. The check accumulated rules across three
+later commits as the schema tightened:
+
+  - ``8007ef1`` (F.1a — person schema under statements-only
+    discipline) added ``observation_type`` required on person
+    artifacts with enum {direct, relayed}; warn when set on non-
+    person. The direct/relayed distinction enables the person
+    renderer to split Statements into Direct Observations vs Other
+    Statements subsections.
+
+  - ``83b19c6`` ("Pre-F.1c hardening: require ``context`` on person
+    quotes") was a reactive fix: the F.1b audit found that the
+    renderer's verification-block Attributed-to row is composed
+    from ``context + statement_date``, and if both are empty the
+    row is omitted entirely — violating
+    ``schema.yaml::quote_verification_fields.required``. Rather
+    than enforce the output shape in validate.py (which would
+    catch missing rows post-render), the fix enforced the input
+    on the artifact: every person-artifact quote must carry
+    ``context``. The renderer can then rely on producing a
+    complete Attributed-to row.
+
+  - ``cde69cf`` (claims[] layer elimination, 2026-04-21) didn't
+    change check_quotes itself but elevated quotes[] to the
+    universal evidentiary primitive across all node types. Every
+    "claim-like" rendered surface (Statements, Key Testimony, Key
+    Passages, Claim Inventory) is now a filtered view of quotes[];
+    the check correspondingly bears the load for every artifact's
+    primary evidentiary content.
+
+Layered enforcement around quote integrity:
+
+  - This check (``quotes``): entry-shape (text + source + person-
+    archetype-conditional observation_type / context).
+  - ``verbatim_quotes`` (NodeContext): the quote text actually
+    appears verbatim in the cited source file (the load-bearing
+    backstop from the pilot-failure-2026-04-17 postmortem).
+  - ``coverage`` (Phase III): the artifact's quote text appears in
+    the rendered node body (artifact↔node consistency).
+  - ``prose_drift`` / ``description_token_drift`` (per-prose-field
+    surfaces): different axes; not quote-shape concerns.
+
+Render-time ordering / Attributed-to composition uses
+``statement_date`` which is optional at the entry layer per schema
+(conditional on renderer's ordering needs). Each layer enforces
+what it can verify; layered design avoids double-firing on the
+same defect.
+
+Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
+C18 confirmed byte-identity through the lift.
 """
 
 from checks import Issue

@@ -95,7 +95,7 @@ Remaining 42 should land at ✅.
 | program_involvement | ☐ | institutional-actor archetype |
 | prose_drift | ✅ | Anchored to F.1c Fravor pilot audit (introducing commit `d9bc684`) — RCA found contributor-prose drift unchecked despite verbatim quotes being source-verified. Threshold-tuning history at `836f96a` (revised from differentiated 80% to impartial single-rule) established the "validator surfaces drift, doesn't classify it" principle — reference before proposing any threshold change. Per-entry fields pool against top-level union, not per-entry source. |
 | publication_record | ☐ | reporter archetype |
-| quotes | ☐ | Universal evidentiary primitive; observation_type |
+| quotes | ✅ | Multi-anchor history: foundational at `af5f789` (text + source + manifest) → F.1a `8007ef1` (observation_type for person artifacts) → `83b19c6` REACTIVE F.1b-audit fix (context required on person — Attributed-to row was being silently omitted) → `cde69cf` (claims-elimination wave elevated quotes[] to universal evidentiary primitive). Layered enforcement: this check verifies entry-shape; verbatim_quotes verifies source text; coverage verifies artifact↔node. |
 | relationships | ☐ | person↔person edges |
 | rumors | ☐ | rumor status enum |
 | speakers | ☐ | transcript-only |
