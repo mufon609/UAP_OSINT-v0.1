@@ -1095,3 +1095,81 @@ commit clean.
 Surfaced: C17 timeline-check investigation — qualitative review of
 corpus categories revealed the schema-validator gap.
 
+---
+
+### C21. Remove silent ``ctx.schema.get(..., default)`` fallbacks across checks
+
+The C17 ``table_cell_word_budget`` investigation surfaced a class of
+issue: several checks read schema config via ``.get(..., default)``
+patterns that silently degrade if the schema is missing the value.
+This masks schema drift — the af5f789 schema's initial
+``table_cell_words_soft: 50`` stayed as the hardcoded fallback
+even after the schema bumped to 55 at commit ``44272af``;
+drift unnoticed for ~3 weeks because the operational schema-lookup
+path always won (the schema HAS the value), and the fallback never
+fired in normal operation.
+
+**Sites identified** (grep for ``ctx.schema.get`` and
+``schema.get(`` across scripts/checks/ + lib/):
+
+  - ``checks/table_cell_word_budget.py`` — fixed in C17 sweep
+    (commit pending; direct dict access, KeyError surfaces).
+  - ``checks/governance_files.py:221``: ``ctx.schema.get("schema",
+    {}) or {}`` — top-level schema block + nested ``compatible_with``
+    + ``version``.
+  - ``checks/schema_version_compat.py:46``: same pattern as
+    governance_files.
+  - ``checks/artifact_top_level.py:143``: same pattern.
+  - ``checks/iff_section.py:76``: ``schema.get("types") or {}`` —
+    top-level types block.
+  - ``checks/_research_utils.py:45``: ``schema.get("types") or {}`` —
+    same as iff_section (both consume the types block).
+
+**Two patterns to address:**
+
+  1. ``ctx.schema.get("schema", {}) or {}`` followed by
+     ``.get("compatible_with", [1])`` and ``.get("version", "?")``.
+     Three sites (governance_files, schema_version_compat,
+     artifact_top_level). Defaults: ``[1]`` for compatible_with,
+     ``"?"`` for version. Both default values would be wrong if the
+     schema is broken — version "?" would render in error messages;
+     compatible_with [1] would silently accept schema_version 1 when
+     the actual constraint is unknown.
+  2. ``schema.get("types") or {}`` — two sites (iff_section,
+     _research_utils.section_in_scope). Default: ``{}``. If the
+     schema's types block is missing, the iff-section dispatcher
+     silently treats every section as out-of-scope (no
+     conditional_keys to walk); ``section_in_scope`` returns False
+     for every section. Mass over-firing of "should not be present"
+     errors AND under-firing of "required missing" errors. Worse
+     failure mode than the budget case.
+
+**Recommendation: replace with direct dict access; let KeyError
+surface as a fatal validator failure.** Schema is foundational
+toolkit contract — if a required schema key is missing, the validator
+shouldn't try to limp along with broken config. KeyError with a
+clear traceback showing exactly which key is missing is more
+useful than silent degradation.
+
+**Scope.** Per-site review + replacement. ~6 sites; ~15 LOC change
+total. Pre-commit will catch any inadvertent breakage. The risky
+case is the iff_section / _research_utils.section_in_scope pair —
+their behavior on schema-types-missing is structural, so the test
+of "does removing the fallback break anything in normal
+operation?" needs careful confirmation against the corpus
+(currently 0/0).
+
+**Trigger to do this.** The C17 sweep already handles the broader
+investigation; this BACKLOG entry tracks the systematic remediation
+that didn't fit cleanly into a single per-check investigation.
+
+**Priority.** Low. Not a correctness issue today (corpus is clean;
+schema is well-formed; fallbacks aren't firing). The risk is
+masked-future-drift if schema ever gets edited badly. Worth a
+single focused session for the remediation pass.
+
+Surfaced: C17 ``table_cell_word_budget`` investigation — user
+critique of the silent fallback as a "bandaid that masks drift";
+investigation traced the af5f789 → 55 schema bump that demonstrated
+the masking risk concretely.
+
