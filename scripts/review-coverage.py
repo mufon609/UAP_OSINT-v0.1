@@ -81,20 +81,6 @@ _REVIEW_CHECKS = [
 # Helpers
 # =============================================================================
 
-def load_artifact(path):
-    """Open + parse the artifact YAML. Returns the parsed dict, or None
-    on any failure (file missing, YAML parse error, non-dict root). The
-    ``artifact_parse`` preflight check yields the user-facing diagnostic;
-    this loader stays exception-tolerant so per-artifact parse failures
-    don't halt the iteration when called from ``--all``."""
-    try:
-        with open(path) as f:
-            data = yaml.safe_load(f)
-    except (OSError, yaml.YAMLError):
-        return None
-    return data if isinstance(data, dict) else None
-
-
 def target_node_path(artifact):
     target = artifact.get("target_node") or ""
     if "/" not in target:
@@ -161,12 +147,23 @@ def review_artifact(artifact_path, base_ctx):
     rel = artifact_path.relative_to(REPO_ROOT)
     issues = []
 
-    # Build a minimal ResearchContext for the parse preflight. data may
-    # be None if the file is missing or the YAML is malformed; the
-    # artifact_parse check yields a fatal Issue in that case.
-    artifact = load_artifact(artifact_path) if artifact_path.exists() else None
+    # Single load + parse. YAMLError captured into parse_error; missing
+    # file leaves both data and parse_error None (artifact_parse catches
+    # the missing-file case via ctx.path.exists()).
+    artifact = None
+    parse_error = None
+    if artifact_path.exists():
+        try:
+            with open(artifact_path) as f:
+                artifact = yaml.safe_load(f)
+        except yaml.YAMLError as e:
+            parse_error = str(e)
+        except OSError:
+            pass
+
     pre_ctx = ResearchContext(
-        base_ctx, path=artifact_path, rel=rel, raw_lines=[], data=artifact,
+        base_ctx, path=artifact_path, rel=rel, raw_lines=[],
+        data=artifact, parse_error=parse_error,
     )
 
     parse_issues = list(ck_artifact_parse.check(pre_ctx))
@@ -174,7 +171,7 @@ def review_artifact(artifact_path, base_ctx):
     if any(i.fatal for i in parse_issues):
         return issues, None
 
-    # Parse preflight passed; downstream Context needs the parsed dict.
+    # Parse preflight passed; downstream Context reuses the parsed dict.
     node_type = target_node_type(artifact)
     if node_type not in SUPPORTED_TYPES:
         return issues, f"node type {node_type!r} has no renderer; review checks skipped"
@@ -187,6 +184,7 @@ def review_artifact(artifact_path, base_ctx):
         base_ctx, path=artifact_path, rel=rel,
         raw_lines=[],  # not needed by review-coverage checks
         data=artifact,
+        parse_error=parse_error,
         node_path=node_path,
         node_text=node_text,
         source_text=source_text,

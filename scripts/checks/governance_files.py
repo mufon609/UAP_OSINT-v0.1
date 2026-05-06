@@ -123,7 +123,7 @@ def _check_template_frontmatter(path, rel, text, compatible_with, schema_block):
             check_name=CHECK_NAME)
     else:
         sv = int(sv_match.group(1))
-        current = schema_block.get("version", "?")
+        current = schema_block["version"]
         for level, msg in schema_version_compat_messages(
             sv, compatible_with, current, prefix="Template ",
         ):
@@ -158,7 +158,7 @@ def _check_governance_doc_frontmatter(path, rel, text, compatible_with, schema_b
                 check_name=CHECK_NAME)
 
     # schema_version value check
-    current = schema_block.get("version", "?")
+    current = schema_block["version"]
     for level, msg in schema_version_compat_messages(
         fm.get("schema_version"), compatible_with, current,
     ):

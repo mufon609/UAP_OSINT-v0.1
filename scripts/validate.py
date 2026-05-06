@@ -155,11 +155,14 @@ _NODE_CHECKS = [
 def validate_node(path, base_ctx):
     """Run the per-node check chain against a single content node.
 
-    Preflight (frontmatter_parse) runs first against a minimal
-    NodeContext carrying only ``text``; on any fatal Issue (parse
-    failure, missing 'type', unknown type) the main chain is skipped.
-    Otherwise the orchestrator builds the full NodeContext (fm /
-    node_type / type_spec populated) and dispatches ``_NODE_CHECKS``.
+    Phase 1 — read text + parse frontmatter once. ``parse_frontmatter``
+    is total (returns None on absent delimiters or YAMLError), so no
+    try/except is needed; None signals failure.
+    Phase 2 — preflight (``frontmatter_parse``) inspects ctx.fm and
+    yields fatal Issues for missing FM, missing 'type', or unknown
+    type. Fatal short-circuits the main chain.
+    Phase 3 — full NodeContext reuses the parsed frontmatter; main
+    ``_NODE_CHECKS`` chain dispatches.
 
     ``broken_links`` accumulate in ``base_ctx.broken_links``
     (out-of-band metadata channel); main() reads the registry after
@@ -169,20 +172,25 @@ def validate_node(path, base_ctx):
     text = path.read_text()
     rel = path.relative_to(REPO_ROOT)
 
-    # Preflight against a minimal NodeContext (text + base only). The
-    # frontmatter_parse check yields fatal Issues for malformed FM,
-    # missing 'type', or unknown type — all preconditions for the main
-    # chain's NodeContext shape.
-    preflight_ctx = NodeContext(base_ctx, path=path, rel=rel, text=text)
+    # Single frontmatter parse. None signals any failure mode (absent
+    # delimiters, YAMLError) per parse_frontmatter's contract.
+    fm, _ = parse_frontmatter(text)
+
+    # Preflight against a minimal NodeContext (text + fm + base only).
+    # The frontmatter_parse check inspects ctx.fm and yields fatal
+    # Issues for malformed FM, missing 'type', or unknown type — all
+    # preconditions for the main chain's NodeContext shape.
+    preflight_ctx = NodeContext(base_ctx, path=path, rel=rel, text=text, fm=fm)
     preflight_issues = list(ck_frontmatter_parse.check(preflight_ctx))
     issues.extend(preflight_issues)
     if any(i.fatal for i in preflight_issues):
         return issues
 
-    fm, _ = parse_frontmatter(text)
     node_type = fm["type"]
     type_spec = base_ctx.schema["types"][node_type]
 
+    # Full NodeContext for the main check chain. Reuses the parsed
+    # frontmatter from above — single parse per node.
     node_ctx = NodeContext(
         base_ctx, path=path, rel=rel, text=text,
         fm=fm, node_type=node_type, type_spec=type_spec,

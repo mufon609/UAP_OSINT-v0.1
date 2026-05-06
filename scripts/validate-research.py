@@ -223,26 +223,45 @@ _ARTIFACT_CHECKS = [
 def validate_artifact(path, base_ctx):
     """Run the per-artifact check chain against a single research artifact.
 
-    Phase 1 — pre-parse checks on raw lines (yaml_hash_truncation,
+    Phase 1 — read raw_lines + parse YAML once. YAMLError captured into
+    ``parse_error``; OSError yields empty raw_lines (artifact_parse
+    preflight catches the missing-file case via ctx.path.exists()).
+    Phase 2 — pre-parse checks on raw lines (yaml_hash_truncation,
     yaml_colon_space).
-    Phase 2 — parse preflight (``artifact_parse`` check): file exists,
-    YAML parses, root is dict. Fatal short-circuits the chain.
-    Phase 3 — target type/archetype/kind discovery from the target
-    node's frontmatter; ResearchContext construction.
-    Phase 4 — each per-artifact check runs against the context. Each
+    Phase 3 — parse preflight (``artifact_parse`` check) inspects
+    ctx.path / ctx.parse_error / ctx.data and yields fatal Issues for
+    missing file, parse error, or non-dict root. Fatal short-circuits.
+    Phase 4 — target type/archetype/kind discovery from the target
+    node's frontmatter; full ResearchContext reuses the parsed data.
+    Phase 5 — each per-artifact check runs against the context. Each
     check self-gates on target_type/kind/archetype.
     """
     issues = []
     rel = path.relative_to(REPO_ROOT)
 
-    try:
-        with open(path) as f:
-            raw_lines = f.readlines()
-    except OSError:
-        raw_lines = []
+    # Single load + parse. raw_lines and data come from the same read
+    # window so the orchestrator never opens the file twice.
+    raw_lines = []
+    data = None
+    parse_error = None
+    if path.exists():
+        try:
+            with open(path) as f:
+                text = f.read()
+            raw_lines = text.splitlines(keepends=True)
+            try:
+                data = yaml.safe_load(text)
+            except yaml.YAMLError as e:
+                parse_error = str(e)
+        except OSError:
+            pass  # raw_lines stays []; artifact_parse catches missing file
 
-    # Pre-parse: ResearchContext minimal (raw_lines only)
-    pre_ctx = ResearchContext(base_ctx, path=path, rel=rel, raw_lines=raw_lines)
+    # Pre-parse: ResearchContext minimal (raw_lines only; data + parse_error
+    # carried for the artifact_parse preflight that follows).
+    pre_ctx = ResearchContext(
+        base_ctx, path=path, rel=rel, raw_lines=raw_lines,
+        data=data, parse_error=parse_error,
+    )
     for check_module in _PRE_PARSE_CHECKS:
         issues.extend(check_module.check(pre_ctx))
 
@@ -254,18 +273,16 @@ def validate_artifact(path, base_ctx):
     if any(i.fatal for i in parse_issues):
         return issues
 
-    # Parse preflight passed; load data for the full Context.
-    with open(path) as f:
-        data = yaml.safe_load(f)
-
     # Target discovery (reads target node's frontmatter)
     target_type, target_archetype, target_kind, target_derivation_of = (
         _discover_target(data)
     )
 
-    # Full ResearchContext for per-artifact checks
+    # Full ResearchContext for per-artifact checks. Reuses the parsed
+    # data from above — single parse per artifact.
     ctx = ResearchContext(
         base_ctx, path=path, rel=rel, raw_lines=raw_lines, data=data,
+        parse_error=parse_error,
         target_type=target_type, target_archetype=target_archetype,
         target_kind=target_kind, target_derivation_of=target_derivation_of,
     )

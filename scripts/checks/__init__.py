@@ -162,8 +162,12 @@ class ResearchContext(BaseContext):
 
     ``raw_lines`` is the file content split into lines for pre-parse
     checks (yaml_hash_truncation, yaml_colon_space) that scan before
-    yaml.safe_load runs. ``data`` is the parsed YAML, populated by the
-    orchestrator after pre-parse checks succeed.
+    yaml.safe_load runs. ``data`` is the parsed YAML; the orchestrator
+    is responsible for the load + parse and populates ``data`` on
+    success or ``parse_error`` (string from yaml.YAMLError) on failure.
+    The ``artifact_parse`` preflight check inspects this state and
+    yields fatal Issues for missing file / parse error / non-dict root —
+    no second file read.
 
     target_* fields are discovered by reading the target node's
     frontmatter; routes archetype-specific and kind-specific section
@@ -171,6 +175,7 @@ class ResearchContext(BaseContext):
     """
 
     def __init__(self, base, path, rel, raw_lines, data=None,
+                 parse_error=None,
                  target_type=None, target_archetype=None,
                  target_kind=None, target_derivation_of=None,
                  node_path=None, node_text=None, source_text=None):
@@ -184,6 +189,7 @@ class ResearchContext(BaseContext):
         self.rel = rel
         self.raw_lines = raw_lines
         self.data = data
+        self.parse_error = parse_error
         self.target_type = target_type
         self.target_archetype = target_archetype
         self.target_kind = target_kind
