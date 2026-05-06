@@ -83,7 +83,7 @@ Remaining 42 should land at ✅.
 | corroboration_items | ☐ | eyewitness archetype + encounter kind |
 | cross_refs | ☐ | Cross-entity link consistency |
 | entities | ☐ | entity_entry shape |
-| iff_section | 🟡 | Schema-driven placement (anchored to C15) |
+| iff_section | ✅ | Anchored to BACKLOG C15 (`dc95d39`). Forcing case for the schema-driven dispatcher + grammar upgrade was `witnesses_testimony` (event-hearings only, not transcript-hearings; `hearing` is shared across both kinds → flat OR-keys couldn't express the AND-conjunction). |
 | key_personnel | ☐ | leadership_class sub-grouping |
 | location_relationships | ☐ | Heterogeneous entity_path |
 | media_versioning | ☐ | derivation_of conditional |

@@ -20,6 +20,21 @@ N per-entry errors on top of the placement error would be noise
 about contents that shouldn't exist. ``iff_section`` carries the
 single placement error; per-section checks carry the entry-level
 diagnostics.
+
+Origin: BACKLOG C15 (commit ``dc95d39``). Pre-cluster, each of 18
+per-section checks carried its own inline target_type / archetype /
+kind gate (~20 LOC duplicated per check). Forcing case for both the
+dispatcher AND the grammar upgrade was ``witnesses_testimony``: the
+section belongs on event-hearings but NOT transcript-hearings, since
+``hearing`` is shared between event and transcript kinds. The earlier
+flat OR-keys grammar (separate ``required_when_target_node_type_in``
+and ``required_when_target_node_kind_in`` lines) couldn't express the
+required ``type=event AND kind=hearing`` conjunction without over-
+firing on transcript-hearings. The new
+``required_when_any_of: [list of AND-rules]`` grammar handles both
+shapes uniformly: AND within a rule, OR across rules. The same
+grammar covers ``corroboration_items``'s "eyewitness-person OR
+encounter-event" disjunction without special-casing.
 """
 
 from checks import Issue
