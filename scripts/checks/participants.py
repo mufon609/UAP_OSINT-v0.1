@@ -6,6 +6,39 @@ Present on event artifacts (both kinds). Each entry: required
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``.
+
+Origin: introduced at commit ``13a2859`` (F.2a — event schema
+work); shipped alongside ``witnesses_testimony`` in the same F.2a
+landing. Different scope from witnesses_testimony though:
+``participants`` runs on both event kinds (encounter + hearing),
+while witnesses_testimony is hearing-only. Co-introduced but serve
+different audiences — participants tracks every named participant
+in any documented event; witnesses_testimony tracks the witness-
+to-transcript / witness-to-written-testimony cross-reference
+specific to formal proceedings.
+
+Capacity enum is CLOSED, not extensible. Distinct from
+``media_versioning``'s aspect enum (extensible-with-warn-on-
+unknown). The design choice is driven by renderer requirements:
+``capacity`` drives mechanical sub-grouping in the F.2 hearing
+renderer's Participants section — ``witness-eyewitness`` →
+"Eyewitness Testimony" subsection, ``witness-whistleblower`` →
+"Whistleblower Testimony" subsection, ``witness-institutional``
+→ "Institutional Testimony" subsection, ``committee-member`` →
+"Committee Members" subsection, etc. Unknown capacity values
+can't be mechanically routed; closed enum + ERROR on unknown
+fits the routing-mandate.
+
+The ``other`` value IS in the enum as the documented
+miscellaneous bucket for cases that don't fit the witness /
+committee / observer / official categorization. Unlike
+media_versioning's ``other`` (which is paired with warn-on-
+unknown for extensibility), capacity's ``other`` is a fixed final
+category — adding new capacity values requires schema +
+renderer updates, not contributor extensibility.
+
+Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
+C18 confirmed byte-identity through the C11 migration.
 """
 
 from checks import Issue
