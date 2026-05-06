@@ -45,7 +45,7 @@ Remaining 42 should land at ✅.
 |---|---|---|
 | governance_files | ✅ | Anchored to `30b7fc3` (BACKLOG #3 close — "Add check #13 — governance-file frontmatter validation"). Defensive design against template-drift blast-radius (drifted schema_version in template → propagates to every scaffolded node). Two-route design: templates regex (placeholders break YAML), governance docs YAML parse. Migration consolidated `parse_frontmatter` (`7f5f86f`) and `schema_version_compat_messages` (`2f3effb` / BACKLOG #8) into `lib/_common.py`. |
 | manifest_archive_status | ✅ | Anchored to `7a01d8b` (field + check introduced together — defensive, paired with the `archive.py` recheck-skip optimization). Concrete adjacent failure class: BACKLOG #30 (`d6732e1`, archive.py fire-and-forget) — check catches any regression of that shape. |
-| manifest_checksums | ☐ | File-IO + sha256 |
+| manifest_checksums | ✅ | Foundational from initial commit (`af5f789` — "SHA256 integrity on every archived file" called out as toolkit core feature). Source-integrity backstop that downstream source-using checks rely on (verbatim_quotes / prose_drift / description_token_drift / coverage all extract via lib._common). Pairs with manifest_archive_status: content-byte integrity vs state-bit consistency. Notable: was the C11 cluster PILOT module (`472e547`), chosen for stand-alone shape + few helpers. |
 | manifest_extraction_type | ☐ | Light; pairs with manifest_archive_status |
 
 ## NodeContext (per-content-node) — 13 checks
