@@ -119,17 +119,6 @@ types:
           - Publication Record
           - Credibility Notes
           - Associated Nodes
-    timeline_category_values:
-      # Extensible; validator warns on unknown values but does not error.
-      - affiliation
-      - role
-      - observation
-      - testimony
-      - publication
-      - clearance
-      - incident
-      - filing
-      - other
     section_rules:
       Background: {prose_only: true}
       Affiliations: {split: [Confirmed, Flagged]}
@@ -902,8 +891,12 @@ types:
       # date: YYYY-MM-DD; YYYY-MM and YYYY tolerated for imprecise events
       # event: prose description of what happened on the date
       # source: object with path + location (same shape as quote_source)
-      # category: on person artifacts, one of timeline_category_values
-      #   listed on person type; free-text on other types
+      # category: free-text label rendered in the Timeline table's
+      #   Category column. No canonical vocabulary or enum check —
+      #   contributors use whatever label fits the entry. Common
+      #   values include affiliation, role, observation, testimony,
+      #   publication, clearance, incident, filing, contract, foia,
+      #   founding (descriptive guidance, not enforced).
       # node_link: optional path to a related node (/people/..., etc.)
       # end_date: if the entry describes a period rather than a point
 
