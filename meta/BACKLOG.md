@@ -1026,3 +1026,72 @@ Logged so the gap doesn't drift out of awareness.
 
 ### C19. *(retired 2026-05-05 — scripts/research-scaffold.py now reads schema.yaml::types.research-artifact.conditional_keys via the same evaluate_required_when helper the validators use; commit `73fbae2`. Removed RUMORS_TYPES, TIMELINE_TYPES, ARCHETYPE_SECTION, KIND_SECTIONS_BY_TYPE constants + 6 inline `if node_type == "X":` blocks. Replaced with single loop over conditional_keys + small EMPTY_SECTION_SHAPES map (4 entries for prose fields and event_intrinsic dict; everything else defaults to []). evaluate_required_when refactored to take positional args (target_type, target_archetype, target_kind) so the scaffolder can dispatch without faking a Context. build-from-research.py renderer dispatch — type-intrinsic rendering logic, gated by validator before render runs — remains as-is per scope note.)*
 
+---
+
+### C20. timeline check — unimplemented `timeline_category_values` warn-on-unknown
+
+The schema declares ``timeline_category_values`` (9 values:
+``affiliation``, ``role``, ``observation``, ``testimony``,
+``publication``, ``clearance``, ``incident``, ``filing``, ``other``)
+with the comment "Extensible; validator warns on unknown values but
+does not error." That warn behavior was never implemented in
+``check_timeline`` — neither at F.1a introduction (commit
+``8007ef1``) nor since. The check enforces shape (date, event,
+source dict, manifest membership) but not category vocabulary.
+
+**Corpus state.** Surfaced during the C17 investigation of
+``scripts/checks/timeline.py`` (commit `6dacf17`-era audit). The
+current corpus has timeline.category values that aren't in the
+schema's 9-value list:
+
+  - ``contract`` — ~20 instances (gov-contractor org artifacts'
+    period transitions on contracts)
+  - ``foia`` — ~3 instances (FOIA-release events)
+  - ``certification`` — ~2 instances
+  - ``protest``, ``government-action``, ``founding``,
+    ``predecessor-establishment`` — 1 instance each
+
+Total: ~7 unknown values across ~30 entries (qualitative count;
+exact figure depends on awk parsing).
+
+**What this means.** Contributors organically extended the timeline
+vocabulary as new node types shipped (gov-contractor brought
+contracts; organization founding events brought ``founding``; etc.).
+The schema's "extensible" claim was honored in practice; the warn-
+on-unknown signal that would surface the extensions for canonical
+adoption never fired.
+
+**Two fix paths.**
+
+1. **Implement the warn** as documented. Adds ~10 LOC to
+   check_timeline. ALL ~30 unknown-category instances would warn
+   on next pre-commit; existing 0/0 baseline breaks. Either:
+   (a) suppress with --quiet during transition;
+   (b) per-entry contributor triage (rename to schema canonical
+       where possible; add new schema enum values for the genuine
+       new categories);
+   (c) batch-update schema to absorb the popular extensions
+       (``contract``, ``foia``, others) before implementing the
+       warn so the gate stays clean.
+2. **Update the schema comment** to drop the "validator warns"
+   intent. Honest about what the validator actually does (shape
+   enforcement only); contributor discipline carries the
+   vocabulary-canonical behavior.
+
+Path 1c is probably right (canonicalize the popular extensions in
+schema, then wire the warn). Path 2 is the lower-effort honest-
+documentation alternative if vocabulary canonicalization isn't
+worth the schema churn.
+
+**Priority.** Low. Not a correctness issue (corpus passes; the
+schema's "extensible" intent is honored in practice). Documentation-
+level discrepancy worth resolving but not blocking.
+
+**Scope.** ~30-min audit pass: pick path; if path 1, decide which
+new categories to canonicalize (small contributor poll? grep
+counts? observed semantics?); update schema + check; verify pre-
+commit clean.
+
+Surfaced: C17 timeline-check investigation — qualitative review of
+corpus categories revealed the schema-validator gap.
+

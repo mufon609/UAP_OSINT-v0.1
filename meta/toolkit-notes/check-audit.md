@@ -99,7 +99,7 @@ Remaining 42 should land at ✅.
 | relationships | ☐ | person↔person edges |
 | rumors | ✅ | Foundational at `af5f789` — fabrication-prevention catalogue load-bearing from day one. Refined at `e44a8e2` (2026-04-21 architectural-correction wave): status enum trimmed 3→2 (dropped unused `primary-source-identified`), dropped `primary_source_search` optional (pre-OQ orphan), added renderer surface for disputed rumors (`## Primary-Source Contradictions` section). New sub-shape: stable-check / refinement-and-renderer-surface. |
 | speakers | ☐ | transcript-only |
-| timeline | ☐ | Person/org/event/finding shapes |
+| timeline | ✅ | Anchored to F.1a (`8007ef1`) — one of six entry-list checks landed together. Foundational shape; stable since. Surfaces a real schema-validator gap (logged as BACKLOG C20): schema declares `timeline_category_values` "extensible; validator warns on unknown" but warn was never implemented. Corpus has ~7 unknown values (contract, foia, certification, etc.) honoring the "extensible" intent without surfacing for canonicalization. NEW sub-shape: stable check / unimplemented schema-declared behavior. |
 | uap_scope_activity | ☐ | Location-only |
 | vouching_chain | ☐ | whistleblower archetype |
 | witnesses_testimony | ☐ | event-hearing only |
