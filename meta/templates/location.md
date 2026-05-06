@@ -41,9 +41,9 @@ created: {{today}}
 
 ---
 
-## UAP-Scope Activity
+## {{topic_display_name}}-Scope Activity
 
-<!-- Documented institutional UAP-scope activity at the location.
+<!-- Documented institutional {{topic_display_name}}-scope activity at the location.
      Populated from top_scope_activity[] in the research artifact;
      renderer sorts chronologically by period_start. Scope is
      institutional primary-source-attested activity — popular

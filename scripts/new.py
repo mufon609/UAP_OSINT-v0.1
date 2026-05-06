@@ -33,7 +33,7 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-from lib._common import REPO_ROOT, content_type_dirs, load_schema
+from lib._common import REPO_ROOT, content_type_dirs, load_schema, load_topic
 
 TEMPLATES_DIR = REPO_ROOT / "meta" / "templates"
 ADDENDA_DIR = REPO_ROOT / "meta" / "topic" / "addenda"
@@ -202,9 +202,19 @@ def main():
     # Substitutions
     display_name = args.name or humanize(args.slug)
     status = args.status or DEFAULT_STATUS.get(args.type, "active")
+    # ``topic_display_name`` is the toolkit-instance topic's display name
+    # (e.g. "UAP" on this fork) — distinct from ``display_name`` which
+    # is THIS NODE's title (e.g. "David Fravor"). Templates that
+    # reference the topic in section headers / comments use
+    # ``{{topic_display_name}}`` so the scaffolded body matches what the
+    # renderer would emit (the renderer composes the same headers from
+    # ``meta/topic/overview.md::display_name``). Keeps fork targets from
+    # seeing hardcoded UAP literals during the gap between scaffold and
+    # first build.
     subs = {
         "slug": args.slug,
         "display_name": display_name,
+        "topic_display_name": load_topic()["display_name"],
         "today": date.today().isoformat(),
         "archetype": args.archetype or "",
         "kind": args.kind or "",

@@ -28,7 +28,7 @@ created: {{today}}
 
 ---
 
-## UAP Relevance
+## {{topic_display_name}} Relevance
 
 <!-- One paragraph. Why is this person in this repository? What makes
      their role/testimony/reporting/observation load-bearing? -->
