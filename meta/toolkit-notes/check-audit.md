@@ -97,7 +97,7 @@ Remaining 42 should land at ✅.
 | publication_record | ☐ | reporter archetype |
 | quotes | ✅ | Multi-anchor history: foundational at `af5f789` (text + source + manifest) → F.1a `8007ef1` (observation_type for person artifacts) → `83b19c6` REACTIVE F.1b-audit fix (context required on person — Attributed-to row was being silently omitted) → `cde69cf` (claims-elimination wave elevated quotes[] to universal evidentiary primitive). Layered enforcement: this check verifies entry-shape; verbatim_quotes verifies source text; coverage verifies artifact↔node. |
 | relationships | ☐ | person↔person edges |
-| rumors | ☐ | rumor status enum |
+| rumors | ✅ | Foundational at `af5f789` — fabrication-prevention catalogue load-bearing from day one. Refined at `e44a8e2` (2026-04-21 architectural-correction wave): status enum trimmed 3→2 (dropped unused `primary-source-identified`), dropped `primary_source_search` optional (pre-OQ orphan), added renderer surface for disputed rumors (`## Primary-Source Contradictions` section). New sub-shape: stable-check / refinement-and-renderer-surface. |
 | speakers | ☐ | transcript-only |
 | timeline | ☐ | Person/org/event/finding shapes |
 | uap_scope_activity | ☐ | Location-only |
