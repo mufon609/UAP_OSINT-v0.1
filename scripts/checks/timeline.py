@@ -3,6 +3,9 @@
 Required on person / organization / event / finding artifacts. Each
 entry: required {date, event, source}, optional {category, node_link,
 end_date}. Absent on other types.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -11,34 +14,17 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
 CHECK_NAME = "timeline"
 
-TIMELINE_TYPES = {"person", "organization", "event", "finding"}
-
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    in_scope = ctx.target_type in TIMELINE_TYPES
-    if not in_scope:
-        if "timeline" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'timeline' section should not be present "
-                f"(target_node type {ctx.target_type!r} does not carry timeline)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "timeline"):
         return
     if "timeline" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'timeline' section missing "
-            f"(target_node type is {ctx.target_type!r}, which requires timeline)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "timeline")

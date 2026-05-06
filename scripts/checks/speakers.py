@@ -2,6 +2,9 @@
 
 Present on every transcript artifact (both kinds). Each entry:
 required {name, source}, optional {role, node_link, note}.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -10,6 +13,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -17,24 +21,9 @@ CHECK_NAME = "speakers"
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    if ctx.target_type != "transcript":
-        if "speakers" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'speakers' section should not be present "
-                f"(target_node type {ctx.target_type!r} is not transcript)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "speakers"):
         return
     if "speakers" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'speakers' section missing "
-            f"(transcript artifacts require it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "speakers")

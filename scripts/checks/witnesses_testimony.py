@@ -4,6 +4,9 @@ Present on hearing-kind event artifacts. Cross-reference table mapping
 witnesses to their oath status + transcript / written testimony nodes.
 Each entry: required {witness_path, oath_status, source}, optional
 {transcript_node, written_testimony_node, note}.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -12,6 +15,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -21,25 +25,9 @@ VALID_OATH_STATUS = {"sworn", "unsworn", "affirmation", "unknown"}
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    expected = ctx.target_type == "event" and ctx.target_kind == "hearing"
-    if not expected:
-        if "witnesses_testimony" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'witnesses_testimony' section should not be present "
-                f"(belongs only on hearing-kind event artifacts)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "witnesses_testimony"):
         return
     if "witnesses_testimony" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'witnesses_testimony' section missing "
-            f"(target event kind is 'hearing', which requires it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "witnesses_testimony")

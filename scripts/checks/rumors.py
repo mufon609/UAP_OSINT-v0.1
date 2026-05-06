@@ -3,6 +3,11 @@
 Required on person / organization / event / location artifacts (the
 fabrication-prevention catalogue of widely-circulated claims lacking
 primary-source backing). Absent on other types.
+
+Gating delegated to ``section_in_scope`` (schema-driven, reads
+``conditional_keys`` from ``schema.yaml``); placement errors come
+from ``iff_section``. This check focuses on per-entry validation
+when the section is in scope and present.
 """
 
 from checks import Issue
@@ -10,36 +15,20 @@ from checks._research_utils import (
     check_lifecycle_fields,
     check_unique_ids,
     entries,
+    section_in_scope,
 )
 
 
 CHECK_NAME = "rumors"
 
-RUMORS_TYPES = {"person", "organization", "event", "location"}
 VALID_STATUSES = {"not-primary-source-established", "primary-source-disputed"}
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    in_scope = ctx.target_type in RUMORS_TYPES
-    if not in_scope:
-        if "rumors" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'rumors' section should not be present "
-                f"(target_node type {ctx.target_type!r} does not carry rumors)",
-                check_name=CHECK_NAME,
-            )
-        return
+    if not section_in_scope(ctx, "rumors"):
+        return  # iff_section handled placement; skip per-entry validation
     if "rumors" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'rumors' section missing "
-            f"(target_node type is {ctx.target_type!r}, which requires rumors)",
-            check_name=CHECK_NAME,
-        )
-        return
+        return  # iff_section emitted "required missing"; nothing to validate
 
     items = entries(ctx.data, "rumors")
     yield from check_unique_ids(ctx.rel, items, "rumors", CHECK_NAME)

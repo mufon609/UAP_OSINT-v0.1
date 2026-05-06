@@ -11,6 +11,9 @@ unknown values warn (don't error).
 
 Empty list with ``derivation_of`` set on the target media node warns
 (likely contributor-forgot-to-populate).
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -19,6 +22,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -30,25 +34,9 @@ VALID_ASPECT = {
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    if ctx.target_type != "media":
-        if "media_versioning" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'media_versioning' section should not be present "
-                f"(target_node type {ctx.target_type!r} is not media)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "media_versioning"):
         return
     if "media_versioning" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'media_versioning' section missing "
-            f"(media artifacts require it — empty list permitted for "
-            f"canonical / original media)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "media_versioning")

@@ -3,6 +3,9 @@
 Org-to-org structured relationships. Present on organization artifacts.
 Each entry: required {organization_path, relationship_type, source},
 optional {flagged, note}.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -11,6 +14,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -23,24 +27,9 @@ VALID_RELATIONSHIP_TYPE = {
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    if ctx.target_type != "organization":
-        if "org_relationships" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'org_relationships' key should not be present "
-                f"(target_node type {ctx.target_type!r} is not organization)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "org_relationships"):
         return
     if "org_relationships" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'org_relationships' key missing "
-            f"(organization artifacts require it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "org_relationships")

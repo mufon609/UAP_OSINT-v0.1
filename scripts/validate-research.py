@@ -67,6 +67,7 @@ from checks import contracts as ck_contracts
 from checks import corroboration_items as ck_corroboration_items
 from checks import cross_refs as ck_cross_refs
 from checks import entities as ck_entities
+from checks import iff_section as ck_iff_section
 from checks import key_personnel as ck_key_personnel
 from checks import location_relationships as ck_location_relationships
 from checks import media_versioning as ck_media_versioning
@@ -184,8 +185,14 @@ _PRE_PARSE_CHECKS = [
 ]
 
 _ARTIFACT_CHECKS = [
-    # Universal top-level metadata + person/event key requirements
+    # Universal top-level metadata
     ck_artifact_top_level,
+    # Schema-driven iff-section dispatch (placement errors based on
+    # schema.yaml::conditional_keys). Per-section checks below gate
+    # on section_in_scope and skip per-entry validation when the
+    # section is wrongly placed; iff_section carries the placement
+    # error so each placement issue produces one diagnostic, not many.
+    ck_iff_section,
     # Universal entry-list checks
     ck_primary_sources,
     ck_quotes,

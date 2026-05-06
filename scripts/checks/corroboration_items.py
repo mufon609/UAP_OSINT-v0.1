@@ -2,11 +2,14 @@
 
 Present on eyewitness person artifacts (other observers of events the
 person witnessed) OR encounter event artifacts (observers of this
-encounter). Absent on other archetypes / kinds — emit error if present
-elsewhere unless the artifact is shared between the two valid contexts.
+encounter).
 
 Each entry: required {observer_path, observation_type, source},
 optional {observed_event_ref, note}.
+
+Gating delegated to ``section_in_scope`` (schema-driven; OR-combines
+the archetype + kind rules from ``conditional_keys``); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -15,6 +18,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -25,38 +29,10 @@ VALID_OBSERVATION_TYPES = {
 }
 
 
-def _expected(ctx):
-    """corroboration_items required iff:
-      - person artifact with archetype eyewitness, OR
-      - event artifact with kind encounter."""
-    if ctx.target_type == "person" and ctx.target_archetype == "eyewitness":
-        return True
-    if ctx.target_type == "event" and ctx.target_kind == "encounter":
-        return True
-    return False
-
-
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    expected = _expected(ctx)
-    if not expected:
-        if "corroboration_items" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'corroboration_items' section should not be present "
-                f"(present only on eyewitness person artifacts and "
-                f"encounter event artifacts)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "corroboration_items"):
         return
     if "corroboration_items" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'corroboration_items' section missing "
-            f"(target context requires it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "corroboration_items")

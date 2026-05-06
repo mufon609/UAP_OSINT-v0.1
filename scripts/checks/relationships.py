@@ -3,6 +3,9 @@
 Person-to-person relationships. Present on person artifacts. Each
 entry: required {person_path, relationship, source}, optional
 {flagged, note}.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -11,6 +14,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -18,24 +22,9 @@ CHECK_NAME = "relationships"
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    if ctx.target_type != "person":
-        if "relationships" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'relationships' key should not be present "
-                f"(target_node type {ctx.target_type!r} is not person)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "relationships"):
         return
     if "relationships" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'relationships' key missing "
-            f"(person artifacts require it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "relationships")

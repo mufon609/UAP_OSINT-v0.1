@@ -3,6 +3,9 @@
 Present on whistleblower person artifacts. Each entry: required
 {voucher_path, attestation, source}, optional {evidentiary_basis,
 confidence, note}.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -11,6 +14,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -23,25 +27,9 @@ VALID_CONFIDENCE = {"high", "medium", "low"}
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    expected = ctx.target_type == "person" and ctx.target_archetype == "whistleblower"
-    if not expected:
-        if "vouching_chain" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'vouching_chain' section should not be present "
-                f"(belongs only on whistleblower person artifacts)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "vouching_chain"):
         return
     if "vouching_chain" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'vouching_chain' section missing "
-            f"(target archetype is 'whistleblower', which requires it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "vouching_chain")

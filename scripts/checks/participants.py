@@ -3,6 +3,9 @@
 Present on event artifacts (both kinds). Each entry: required
 {participant_path, capacity, source}, optional {role, flagged, note}.
 ``capacity`` drives sub-section routing on hearing-kind events.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -11,6 +14,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -23,24 +27,9 @@ VALID_CAPACITY = {
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    if ctx.target_type != "event":
-        if "participants" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'participants' key should not be present "
-                f"(target_node type {ctx.target_type!r} is not event)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "participants"):
         return
     if "participants" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'participants' key missing "
-            f"(event artifacts require it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "participants")

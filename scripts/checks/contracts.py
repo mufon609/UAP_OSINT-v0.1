@@ -6,6 +6,9 @@ existence IS a government contract). Each entry: required
 optional {period_end, primary_counterparty_path, subject, value,
 deliverables, note}. ``deliverables`` (when set) is a list of
 ``/documents/...`` paths the contract produced.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -14,6 +17,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -21,28 +25,9 @@ CHECK_NAME = "contracts"
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    expected = (
-        ctx.target_type == "organization"
-        and ctx.target_kind == "gov-contractor"
-    )
-    if not expected:
-        if "contracts" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'contracts' section should not be present "
-                f"(belongs only on gov-contractor organization artifacts)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "contracts"):
         return
     if "contracts" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'contracts' section missing "
-            f"(target organization kind is 'gov-contractor', which requires it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "contracts")

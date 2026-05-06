@@ -13,18 +13,19 @@ research artifact:
   - target_node points to an existing content-node .md file
   - description required on non-person target types (the person body
     renderer doesn't emit ``## Description``; other types do)
-  - person artifacts require ``background`` / ``uap_relevance`` /
-    ``credibility_notes`` prose fields (renderer reads them; absent
-    → renderer emits TODO stubs)
-  - event artifacts require ``event_intrinsic`` dict + ``participants``
-    list
+
+Type-conditional sections / fields (background, uap_relevance,
+credibility_notes, event_intrinsic, participants, etc.) are gated by
+``iff_section`` (schema-driven dispatch over
+``schema.yaml::conditional_keys``); the per-section checks rely on
+``section_in_scope``. artifact_top_level keeps only the universal
+metadata + the description-required-on-non-person rule that isn't
+expressed in conditional_keys today.
 
 Shape: bundles small heterogeneous metadata checks into one module
 because the per-check granularity isn't useful — these checks are
 all "this top-level shape" enforcement, share the artifact's
 top-level dict access, and don't benefit from individual isolation.
-Per-section entry checks (quotes, rumors, timeline, etc.) live in
-their own modules and gate themselves by target type.
 """
 
 from pathlib import Path
@@ -51,13 +52,6 @@ DESCRIPTION_REQUIRED_TYPES = {
     "document", "transcript", "media", "event",
     "organization", "finding", "location",
 }
-
-# Person-artifact prose fields the renderer reads to populate
-# Background / UAP Relevance / Credibility Notes sections.
-PERSON_PROSE_KEYS = ("background", "uap_relevance", "credibility_notes")
-
-# Event-artifact universal keys.
-EVENT_REQUIRED_KEYS = ("event_intrinsic", "participants")
 
 VALID_STATUS = {"active", "archived"}
 
@@ -121,7 +115,10 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
 
-    # description required on non-person target types
+    # description required on non-person target types. Not expressed in
+    # conditional_keys today (would need a schema extension to declare
+    # "required when target_type NOT in [person]"); kept as a small inline
+    # rule until that extension lands.
     if (ctx.target_type in DESCRIPTION_REQUIRED_TYPES
             and "description" not in data):
         yield Issue(
@@ -131,45 +128,3 @@ def check(ctx):
             f"## Description from this field)",
             check_name=CHECK_NAME,
         )
-
-    # Person-artifact prose keys
-    if ctx.target_type == "person":
-        for key in PERSON_PROSE_KEYS:
-            if key not in data:
-                yield Issue(
-                    ctx.rel, "error",
-                    f"Required {key!r} key missing "
-                    f"(person artifacts require "
-                    f"{', '.join(PERSON_PROSE_KEYS)})",
-                    check_name=CHECK_NAME,
-                )
-    elif ctx.target_type is not None:
-        for key in PERSON_PROSE_KEYS:
-            if key in data:
-                yield Issue(
-                    ctx.rel, "error",
-                    f"{key!r} key should not be present "
-                    f"(target_node type {ctx.target_type!r} is not person)",
-                    check_name=CHECK_NAME,
-                )
-
-    # Event-artifact universal keys
-    if ctx.target_type == "event":
-        for key in EVENT_REQUIRED_KEYS:
-            if key not in data:
-                yield Issue(
-                    ctx.rel, "error",
-                    f"Required {key!r} key missing "
-                    f"(event artifacts require "
-                    f"{', '.join(EVENT_REQUIRED_KEYS)})",
-                    check_name=CHECK_NAME,
-                )
-    elif ctx.target_type is not None:
-        for key in EVENT_REQUIRED_KEYS:
-            if key in data:
-                yield Issue(
-                    ctx.rel, "error",
-                    f"{key!r} key should not be present "
-                    f"(target_node type {ctx.target_type!r} is not event)",
-                    check_name=CHECK_NAME,
-                )

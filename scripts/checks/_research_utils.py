@@ -7,12 +7,91 @@ path must appear in ``sources/manifest.yaml``. The four helpers below
 factor that shape so each per-check module isn't a ~50-line copy of
 the same scaffolding.
 
+``section_in_scope`` (added 2026-05-05 with C15) reads
+``schema.yaml::types.research-artifact.conditional_keys`` and answers
+"should this section be present on this artifact?" — schema-driven
+gate consumed by every per-section check that previously hard-coded
+its target_type / archetype / kind constants. Single source of truth;
+schema edits land without touching per-check Python.
+
 Module name carries a leading underscore to signal "private to the
 checks/ package — internal scaffolding, not contract surface."
 ``checks.Issue`` and the Context types are the public contract.
 """
 
 from checks import Issue
+
+
+def section_in_scope(ctx, section_name):
+    """Return True if ``section_name`` should be present on this
+    research artifact per ``schema.yaml`` conditional_keys rules.
+
+    Reads ``ctx.schema.types.research-artifact.conditional_keys`` and
+    evaluates the section's ``required_when_any_of`` list against
+    ``ctx.target_type`` / ``target_archetype`` / ``target_kind``. The
+    list is OR-combined; each rule's fields are AND-combined.
+
+    Return values:
+      - ``True``  — section is in scope; check should run per-entry validation
+      - ``False`` — section is out of scope; check should skip (placement
+                    enforced by iff_section)
+      - ``None``  — section is not declared in conditional_keys (universal:
+                    section is always in scope; caller skips the gate)
+
+    Returns ``False`` when ``ctx.target_type is None`` (target_node
+    couldn't be discovered) — downstream checks short-circuit cleanly.
+    """
+    schema = ctx.schema or {}
+    types = schema.get("types") or {}
+    research_artifact = types.get("research-artifact") or {}
+    conditional_keys = research_artifact.get("conditional_keys") or {}
+    rules = conditional_keys.get(section_name)
+    if rules is None:
+        return None  # not gated by conditional_keys; universal section
+
+    if ctx.target_type is None:
+        return False
+
+    return _evaluate_required_when(rules, ctx)
+
+
+def _evaluate_required_when(rules, ctx):
+    """Evaluate a section's ``required_when_any_of`` list against the
+    artifact's target context. Returns True if any rule matches; False
+    otherwise. Each rule's fields are AND-combined.
+
+    Rule field grammar:
+      - ``target_node_type_in: [list]``      — target_type ∈ list
+      - ``target_node_archetype_in: [list]`` — target_archetype ∈ list
+      - ``target_node_kind_in: [list]``      — target_kind ∈ list
+    Absent fields don't constrain (act as wildcard).
+
+    A rule with NO fields would match unconditionally; treated as not-
+    matching to avoid silent over-firing on schema typos.
+    """
+    rule_list = rules.get("required_when_any_of") or []
+    if not isinstance(rule_list, list):
+        return False
+    for rule in rule_list:
+        if not isinstance(rule, dict) or not rule:
+            continue
+        if _rule_matches(rule, ctx):
+            return True
+    return False
+
+
+def _rule_matches(rule, ctx):
+    """AND-combine the rule's fields against the target context."""
+    type_in = rule.get("target_node_type_in")
+    if type_in is not None and ctx.target_type not in type_in:
+        return False
+    archetype_in = rule.get("target_node_archetype_in")
+    if archetype_in is not None and ctx.target_archetype not in archetype_in:
+        return False
+    kind_in = rule.get("target_node_kind_in")
+    if kind_in is not None and ctx.target_kind not in kind_in:
+        return False
+    return True
 
 
 def entries(data, section):

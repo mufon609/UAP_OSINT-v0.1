@@ -2,7 +2,9 @@
 
 Present on reporter person artifacts. Each entry: required
 {publication, outlet, date, source}, optional {node_link, beat, note}.
-Absent on other archetypes.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -11,6 +13,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -18,25 +21,9 @@ CHECK_NAME = "publication_record"
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    expected = ctx.target_type == "person" and ctx.target_archetype == "reporter"
-    if not expected:
-        if "publication_record" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'publication_record' section should not be present "
-                f"(belongs only on reporter person artifacts)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "publication_record"):
         return
     if "publication_record" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'publication_record' section missing "
-            f"(target archetype is 'reporter', which requires it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "publication_record")

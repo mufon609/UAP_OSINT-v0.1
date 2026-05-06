@@ -3,6 +3,9 @@
 Present on organization artifacts. Each entry: required {person_path,
 role, source}, optional {period_start, period_end, leadership_class,
 flagged, note}.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -11,6 +14,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -20,24 +24,9 @@ VALID_LEADERSHIP_CLASS = {"director", "deputy", "staff", "advisor", "other"}
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    if ctx.target_type != "organization":
-        if "key_personnel" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'key_personnel' key should not be present "
-                f"(target_node type {ctx.target_type!r} is not organization)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "key_personnel"):
         return
     if "key_personnel" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'key_personnel' key missing "
-            f"(organization artifacts require it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "key_personnel")

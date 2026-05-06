@@ -2,7 +2,10 @@
 
 Present on institutional-actor person artifacts. Each entry: required
 {program, role, evidentiary_basis, confidence, source}, optional
-{start_date, end_date, note}. Absent on other archetypes.
+{start_date, end_date, note}.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -11,6 +14,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -23,28 +27,9 @@ VALID_CONFIDENCE = {"high", "medium", "low"}
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    expected = (
-        ctx.target_type == "person"
-        and ctx.target_archetype == "institutional-actor"
-    )
-    if not expected:
-        if "program_involvement" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'program_involvement' section should not be present "
-                f"(belongs only on institutional-actor person artifacts)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "program_involvement"):
         return
     if "program_involvement" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'program_involvement' section missing "
-            f"(target archetype is 'institutional-actor', which requires it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "program_involvement")

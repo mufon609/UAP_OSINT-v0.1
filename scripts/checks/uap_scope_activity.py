@@ -7,6 +7,9 @@ without primary-source backing belongs in ``rumors``, not here.
 
 Each entry: required {period_start, activity, source}, optional
 {period_end, actor_paths (list), note}.
+
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -15,6 +18,7 @@ from checks._research_utils import (
     check_unique_ids,
     entries,
     require_source_dict,
+    section_in_scope,
 )
 
 
@@ -22,24 +26,9 @@ CHECK_NAME = "uap_scope_activity"
 
 
 def check(ctx):
-    if ctx.target_type is None:
-        return
-    if ctx.target_type != "location":
-        if "uap_scope_activity" in ctx.data:
-            yield Issue(
-                ctx.rel, "error",
-                f"'uap_scope_activity' key should not be present "
-                f"(target_node type {ctx.target_type!r} is not location)",
-                check_name=CHECK_NAME,
-            )
+    if not section_in_scope(ctx, "uap_scope_activity"):
         return
     if "uap_scope_activity" not in ctx.data:
-        yield Issue(
-            ctx.rel, "error",
-            f"Required 'uap_scope_activity' key missing "
-            f"(location artifacts require it)",
-            check_name=CHECK_NAME,
-        )
         return
 
     items = entries(ctx.data, "uap_scope_activity")
