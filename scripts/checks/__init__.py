@@ -1,9 +1,33 @@
-"""Per-check module package + shared contract types (C11 / C13 / C14).
+"""Per-check module package + shared contract types.
 
 Each named validator check lives at scripts/checks/{check_name}.py and
 exports a single ``check(ctx) -> Iterable[Issue]`` callable. Contributors
 asking "where does the verbatim-quote check live" should ``ls
 scripts/checks/`` rather than grep a thousand-line megafile.
+
+Routing — three orchestrators dispatch the checks via explicit step
+lists. The lists themselves are the routing-map source of truth; this
+package intentionally does not enumerate them inline, since duplication
+would create a drift surface:
+
+  - scripts/validate.py — direct dispatch in main() for global manifest
+    + governance checks (BaseContext); ``_NODE_CHECKS`` for per-content-
+    node checks (NodeContext).
+  - scripts/validate-research.py — ``_PRE_PARSE_CHECKS`` for raw-line
+    checks before YAML parse (minimal ResearchContext);
+    ``_ARTIFACT_CHECKS`` for per-research-artifact checks (full
+    ResearchContext).
+  - scripts/review-coverage.py — ``_REVIEW_CHECKS`` for Phase III cross-
+    layer review (ResearchContext extended with target node body and
+    source text).
+
+Layer separation is mechanical via Context type rather than directory
+hierarchy. The decomposition design rejected
+scripts/checks/{node,research,coverage}/ subdivision because the Context
+type already encodes the layer in every check's signature; subdirectories
+would repeat information already carried by the dispatch step lists. See
+meta/toolkit-notes/c11-validator-decomposition-design.md §4 for the
+reasoning of record and the post-cluster Phase 0 reaffirmation.
 
 Two contracts shared across every check:
 
@@ -14,10 +38,6 @@ Two contracts shared across every check:
   - Context: shared state passed to each check. BaseContext carries
     repo-global state (schema, manifest, broken-link registry); NodeContext
     and ResearchContext carry per-file state for the two iteration shapes.
-
-See meta/toolkit-notes/c11-validator-decomposition-design.md for the full
-design rationale. Sessions 2 and 3 migrate the remaining checks against
-this contract.
 """
 
 from collections import defaultdict

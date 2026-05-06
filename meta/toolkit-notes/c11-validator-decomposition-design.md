@@ -145,3 +145,35 @@ pre-commit reports stable; format refactor can ship separately.
 - **Issue #12** — `extract_description_drift_tokens` (review-coverage description-drift) and `extract_significant_tokens` (lib prose-drift tokenizer) are different algorithms by design (commit-comment 2026-05-05). Carry the distinction-comment forward when checks move modules. Do not collapse.
 - **Issue #8** — `schema_version` compat duplication (4 sites today) consolidates into a `lib/_common.py` helper *during* migration, not as a separate pre-step. Falls out naturally as the modules split.
 - **Pre-commit must pass 0/0 after every migration commit.** Hybrid orchestrator (some checks lifted, some still inline) is acceptable mid-migration; broken pre-commit is not.
+
+## Post-cluster Phase 0 reaffirmation
+
+A Phase 0 audit reviewed a proposal to subdivide `scripts/checks/` into
+`node/`, `research/`, `coverage/` directories on contributor-browsability
+grounds. The proposal was declined against §4 above. The Context type
+already encodes the dispatch layer in every check's signature
+(`NodeContext` / `ResearchContext` / `BaseContext`), and the orchestrator
+step lists (`_NODE_CHECKS` / `_PRE_PARSE_CHECKS` + `_ARTIFACT_CHECKS` /
+`_REVIEW_CHECKS`) are the routing-map source of truth. Subdirectory
+grouping would duplicate that information into the path. The flat-content
+rule in `meta/conventions.md` "Inside `/scripts/`" governs the layout;
+no new evidence overrode the original reasoning.
+
+The contributor-browsability concern was instead addressed via a
+routing-map orientation block in `scripts/checks/__init__.py`: it points
+at each orchestrator's step list by name without enumerating its
+contents inline, so the lists remain the single source of truth and
+don't drift against a duplicated copy in the package docstring.
+
+The same audit verified placement of every contributor-facing script at
+`scripts/` root (`new.py`, `extract-source.py`, `research-scaffold.py`,
+`build-from-research.py`, `associate.py`, `manifest.py`, `archive.py`,
+`transcribe.py`, `build-state.py`, `normalize-locations.py`,
+`check-vocab.py`) against the three-tier rule in `meta/conventions.md`
+"Inside `/scripts/`" — contributor-invoked at root, gate-only support
+under `tests/`, shared helpers under `lib/`. `check-vocab.py` imports
+the prose-drift tokenizer from `lib/_common.py`, the same import path
+`validate-research.py`'s prose-drift check uses — the lockstep is
+mechanical, not comment-discipline-based, per the helper-extraction
+work codified in commits `979207f` and the 2026-05-05 prose-drift
+tokenizer move noted in `meta/roadmap.md`.
