@@ -17,6 +17,55 @@ only to enforced.
 
 First NodeContext-consuming check migrated to the C11 contract;
 exercises the per-node iteration shape end-to-end.
+
+Origin: introduced at commit ``8007ef1`` (F.1a — person schema under
+statements-only discipline + check #15 chronological), as a paired
+landing with the schema's ``section_rule: {chronological: true}``
+flag on Timeline / Provenance / Ownership Timeline across organization
+/ event / document / media / location node types. Defensive design
+shape — created with the schema flag rather than in response to a
+specific ordering bug. F.1a's commit message explicitly framed the
+check as the "now enforced by validator check #15" companion to the
+schema declaration.
+
+Severity model split: unparseable date cells warn (format discipline
+is contributor judgment territory; some legitimate date forms might
+pre-date a strictly-ISO requirement, e.g. inherited "2003 – 2004
+USAF Master Sergeant" range cells); out-of-order pairs error
+(ordering is mechanical). The split matches the impartial-validator
+discipline established by prose_drift (see
+``feedback_validator_impartiality.md``) — the check enforces
+mechanical invariants and reports format issues without classifying.
+
+Range-cell handling: ``_DATE_RANGE_SEPARATORS`` ordered longest-
+spaced-first so " – " (em-dash with surrounding spaces) consumes the
+spaces before bare "–" matches inside it. Empty-left fallback to
+right handles the "– 2021" rendered shape for bracketed-end-with-
+unknown-start (per the AARO Phillips Deputy Director research-queue
+note about period conventions); the row sorts by its attested end
+date when the start is null. Placeholder strings ("—", "tbd",
+"present", "ongoing", "n/a", "undated") parse as None and skip the
+ordering pair check — the check can't sort what doesn't have a
+date, but doesn't fail the table either.
+
+DATE_HEADERS is an explicit allowlist rather than a regex pattern —
+prevents false positives on accidentally-date-shaped content
+("Section 12", "Year 1") at the cost of needing manual addition for
+new date column header names. New table-emitting renderers should
+either reuse a recognized header or add to the set; preserves
+mechanical reliability over inferential cleverness.
+
+Migration: ``8007ef1`` (F.1a introduction) → ``4d626a4`` (rename of
+check #15 → "chronological-ordering" in cross-references) →
+``d65451b`` (C11 session 2 — first NodeContext check migrated to
+per-module shape) → ``ecabd52`` (post-cluster retrofit: NodeContext
+gained ``h2_sections`` + ``section_text`` lazy caches in C11 session
+3 / commit 60bb88d, but this module had migrated in session 2 and
+missed the cache pickup; ecabd52 retrofits to read the cache
+properties so this check shares H2 extraction with required_sections
+/ section_rules / table_cell_word_budget / conditionally_required
+on the same NodeContext). C18 confirmed byte-identity through the
+per-module migration despite the cache-utilization shift.
 """
 
 import re

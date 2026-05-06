@@ -52,7 +52,7 @@ Remaining 42 should land at ✅.
 
 | Check | Status | Notes |
 |---|---|---|
-| chronological_tables | ☐ | H2 table parsing + chronology ordering |
+| chronological_tables | ✅ | Anchored to F.1a (`8007ef1` — paired with the schema's `chronological: true` flag). Defensive design (created with the schema rule, not reactive to a bug). Severity model split: warn on unparseable dates, error on out-of-order pairs. Migration nuance: shipped to per-module shape at `d65451b` BEFORE NodeContext lazy caches landed at `60bb88d`; retrofitted at `ecabd52` to use `h2_sections` + `section_text` shared with 4 sibling section-walkers. |
 | conditionally_required | ✅ | Anchored to `26969ba` (source-taxonomy consolidation surfaced two simultaneous conditionals — archival_status when doc_form==book, Media Versioning when derivation_of). Dispatcher pattern chosen over two hardcoded `if` blocks to keep schema as the single source of truth. Both routes (field-key + section-name) currently exercised. |
 | doc_form_archival_status | ☐ | Likely subsumed by conditionally_required pattern |
 | finding_cross_ref | ☐ | Cross-references entities[] from finding |
