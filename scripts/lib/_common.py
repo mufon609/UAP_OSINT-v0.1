@@ -48,9 +48,7 @@ def load_schema():
 def content_type_dirs():
     """Return ``{type: dirname}`` mapping for content-node types,
     derived from each type's ``path`` field in the schema. Excludes
-    ``meta`` and ``research-artifact`` (which have no ``path``).
-    Single source of truth for the type→directory relationship that
-    was previously duplicated across 10 contributor-script sites."""
+    ``meta`` and ``research-artifact`` (which have no ``path``)."""
     schema = load_schema()
     return {
         t: spec["path"]
