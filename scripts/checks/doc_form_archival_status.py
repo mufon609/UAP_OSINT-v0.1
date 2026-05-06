@@ -15,7 +15,38 @@ condition; this gates value validity whenever the field is set).
 
 No-ops when node_type is not ``document``.
 
-Lift from validate.py validate_node (C11 session-3 migration).
+Origin: foundational from the initial commit (``af5f789``) — value-
+vocabulary enforcement on ``doc_form`` and ``archival_status`` was
+inline in validate.py from day one.
+
+Anchor pattern: foundational orthogonal guard. Despite surface
+similarity to ``conditionally_required``, the two checks cover
+distinct cases:
+
+  - ``conditionally_required``: gates REQUIRED-PRESENCE under a
+    condition (e.g., archival_status MUST be present when
+    doc_form == book). When the condition fires, errors on missing
+    OR on invalid value — covers both presence and vocabulary
+    on the conditional path.
+  - ``doc_form_archival_status`` (this check): gates VALUE-VALIDITY
+    whenever the field is set, IRRESPECTIVE of any conditional
+    gate. Two distinct fields:
+      • doc_form's extensible vocabulary (WARN-on-unknown so new
+        values land without schema friction; no other check covers
+        this — conditionally_required doesn't apply because doc_form
+        isn't a conditional field)
+      • archival_status's closed enum (ERROR whenever an invalid
+        value is set, even when the conditional gate doesn't fire —
+        e.g., ``doc_form: article + archival_status: bogus-value``
+        would be silently accepted by conditionally_required since
+        the article-doc_form doesn't trigger the archival_status-
+        required gate; this check catches the bogus value).
+
+The orthogonal-concern coexistence is the design point; not a
+subsumption candidate.
+
+Migration: ``60bb88d`` (C11 session 3 lift to per-module shape).
+C18 confirmed byte-identity through the migration.
 """
 
 from checks import Issue
