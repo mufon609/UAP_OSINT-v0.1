@@ -2,54 +2,25 @@
 
 Verifies the rendered node body (outside ``## Associated Nodes``)
 matches what ``build-from-research.py --dry-run`` would regenerate
-from the current artifact. Divergence means the artifact drifted from
-the node, the node was hand-edited, or the renderer changed.
-
-Reads ``ctx.regenerated_body`` (a lazy ResearchContext property added
-by C16). The first cross-layer check to access the property spawns
-``python3 build-from-research.py --dry-run --no-validate``; the
-result is cached for the lifetime of the context so a second cross-
-layer consumer (when one surfaces) doesn't respawn.
-
-Consumes ``ctx.node_path`` (set by the review-coverage orchestrator
-after target-node resolution) for reading the current rendered body.
-
-Origin: shipped at commit ``0a56989`` (D.4 — introduction of Phase III
-review-coverage.py) as one of four mechanical checks
-(Coverage / Boundary / Stub-linking / OQ dedup). The D.4 launch
-itself dogfooded the design — running the new tool against the
-existing Fravor artifact reported 5 errors (boundary divergence +
-4 orphan OQ items), which the D.4 commit message described as
-"exactly the D.5 pilot-rebuild gap the tool is designed to
-surface." Same self-validating dogfood pattern as
-description_token_drift, which caught Fravor's "Congressional"
-drift on first run.
-
-Three drift classes the check protects against:
+from the current artifact. Divergence means one of:
 
   1. Artifact-to-node desync — artifact was edited and re-rendered;
-     committer forgot to commit the regenerated node, or the inverse
-     (node hand-edit lost on next regen).
+     committer forgot to commit the regenerated node (or the inverse,
+     node hand-edit lost on next regen).
   2. Hand-edits to the rendered node body — contributor edited the
      node directly rather than the artifact, breaking the artifact-
      as-source-of-truth invariant.
   3. Renderer changes — build-from-research.py logic changed and the
      committed node bodies haven't been regenerated to match.
 
-Comparison is byte-equal after the Associated Nodes section is
-excised from both sides. Strict byte-equality is load-bearing: the
-renderer is deterministic per design (same artifact + same renderer
-produces identical output), and this check enforces that determinism
-across the corpus.
+Reads ``ctx.regenerated_body`` (lazy ResearchContext property that
+spawns the renderer once and caches the output for the lifetime of
+the context). Consumes ``ctx.node_path`` for the current rendered
+body.
 
-Migration: ``0a56989`` (introduction; inline subprocess machinery in
-review-coverage.py) → ``4b1cfd3`` (BACKLOG C16; subprocess + caching
-moved to ``ResearchContext.regenerated_body`` lazy property — closed
-the cluster's deferred Issue #5 even though no second consumer exists
-today, on the judgment that a future cross-layer check addition
-shouldn't have to re-implement subprocess + caching machinery) →
-``363212d`` (C11 session 3 lift to per-module shape). C18 confirmed
-byte-identity through both moves.
+Comparison is byte-equal after the Associated Nodes section is
+excised from both sides. Strict byte-equality is load-bearing — the
+renderer is deterministic per design.
 """
 
 import re

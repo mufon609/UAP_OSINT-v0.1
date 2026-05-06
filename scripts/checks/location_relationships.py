@@ -1,56 +1,29 @@
 """location-relationships check — type-conditional research-artifact check.
 
-Present on location artifacts. Heterogeneous entity_path target
+Present on location artifacts. Each entry: required {entity_path,
+relationship, source}, optional {flagged, note}.
+
+Heterogeneous target types — this is the only ``relationship_entry``
+shape in the schema that allows ANY entity type as the target
 (person / organization / document / event / transcript / media /
-location / finding) — locations connect to anything the primary
-source attests. Each entry: required {entity_path, relationship,
-source}, optional {flagged, note}.
-
-Gating delegated to ``section_in_scope`` (schema-driven); placement
-errors come from ``iff_section``.
-
-Origin: introduced at commit ``5a67ec1`` (F.6a — "schema +
-validator + scaffolder for location-type research artifacts").
-Same renderer-coupled-defensive shape as the F.1a / F.1b / F.2 /
-F.5 entry-list family; F.6 added location-specific structured
-fields (ownership_timeline, top_scope_activity,
-location_relationships) when locations gained Phase II rendering.
-
-UNIQUE design choice: heterogeneous target types. This is the ONLY
-``relationship_entry`` shape in the schema that allows ANY entity
-type as the target. Other relationship-style checks constrain
-their target to a specific type:
+location / finding). Locations connect to owners, investigators,
+documented events, on-site media, adjacent locations, findings —
+constraining the target type would distort the data shape. The
+sibling relationship checks each pin a specific type:
 
   - ``relationships`` (person artifact): person → person
   - ``org_relationships`` (organization artifact): org → org
   - ``affiliations`` (person artifact): person → organization
   - ``location_relationships`` (this check): location → anything
 
-Locations are inherently heterogeneous in their cross-references —
-they connect to owners (person / organization), investigators,
-documented events, on-site media, adjacent locations, and
-findings. Per the schema entry comment: "because locations
-connect to anything the primary source attests."
+``relationship`` is free-text, not an enum — heterogeneous targets
+create combinatorial complexity that no closed enum captures
+cleanly. Path-target validity is enforced by ``link_resolution``
+via the broken-link registry; this check validates only the
+``entity_path`` leading-slash shape.
 
-Free-text ``relationship`` field (NOT an enum). Unlike
-``participants.capacity`` (closed enum, drives renderer sub-
-grouping) or ``org_relationships.relationship_type`` (closed enum,
-8 values + ``other``), ``location_relationships.relationship`` is
-contributor prose — typical values include "Current owner",
-"Conducted 1996-2004 investigation", "Site of documented
-incident". The heterogeneous target types create combinatorial
-complexity that a closed enum can't capture cleanly; free text
-fits the cross-reference role at the cost of mechanical sub-
-grouping.
-
-The check accordingly validates only the entity_path shape (must
-start with "/"); it does NOT validate the entity TYPE because
-heterogeneous types are by design. Path-target validity is
-implicitly enforced via ``link_resolution``'s broken-link
-registry (which catches paths that don't resolve to a real node).
-
-Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
-C18 confirmed byte-identity through the lift.
+Gating delegated to ``section_in_scope`` (schema-driven); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue

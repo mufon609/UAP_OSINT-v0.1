@@ -7,8 +7,8 @@ preserved from the existing node; body sections (H1 title onward) are
 replaced entirely by content derived from the artifact.
 
 SCOPE: document, person, event, transcript, media, organization,
-location. Finding is the last remaining type; F.7 design pass is open
-(see meta/roadmap.md).
+location. The finding renderer is unimplemented; see
+``meta/roadmap.md``.
 
 Person renderer:
   - Universal sections: Identity, Background, {Topic} Relevance,
@@ -1659,8 +1659,7 @@ def _org_key_personnel_row(e):
 
 def render_org_key_personnel(artifact):
     """Key Personnel section — sub-grouped by leadership_class within
-    Confirmed / Flagged split. Empty sub-subsections are suppressed
-    (addresses the empty-witnesses BACKLOG pattern for new code).
+    Confirmed / Flagged split. Empty sub-subsections are suppressed.
     Contributor-unset leadership_class routes to the 'other' bucket.
     Each subsection sorts by period_start ascending."""
     items = [e for e in (artifact.get("key_personnel") or []) if isinstance(e, dict)]
@@ -1695,10 +1694,10 @@ def render_org_key_personnel(artifact):
                 out.append(_org_key_personnel_row(e))
             out.append("")
         if not any_rendered:
-            # Empty confirmed-side fallback — emit a one-line placeholder
-            # rather than a malformed empty table row. Surfaced 2026-04-30
-            # by Sancorp audit R1; the empty `|  |  |  |  |` row was
-            # technically valid markdown but read as a placeholder bug.
+            # Empty bucket fallback — emit a prose placeholder rather
+            # than a malformed empty table row (an empty
+            # ``|  |  |  |  |`` row is technically valid markdown but
+            # reads as a placeholder bug).
             out += [
                 "_No personnel attested in primary sources to date._",
                 "",
@@ -2179,8 +2178,8 @@ def main():
     if node_type not in SUPPORTED_TYPES:
         sys.exit(f"ERROR: build-from-research.py currently supports "
                  f"{sorted(SUPPORTED_TYPES)} only (got {node_type!r}). "
-                 f"Finding extension is tracked as F.7 in "
-                 f"meta/roadmap.md.")
+                 f"See meta/roadmap.md for the renderer status of the "
+                 f"finding type.")
 
     node_path = REPO_ROOT / dir_name / f"{slug}.md"
     if not node_path.exists():

@@ -26,9 +26,8 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-# Shared single sources of truth — same helpers archive.py CLI uses, so
-# the two scripts can never drift on Wayback-URL detection / manifest
-# I/O semantics.
+# Wayback-URL detection + manifest I/O share helpers with archive.py
+# via lib._common.
 from lib._common import (  # noqa: E402
     MANIFEST_PATH,
     REPO_ROOT,

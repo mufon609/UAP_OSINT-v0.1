@@ -1,56 +1,28 @@
 """top-scope-activity check — type-conditional research-artifact check.
 
 Present on location artifacts. Tracks documented institutional
-activity within the topic's scope at the location (on this UAP
-fork: NIDS investigations, AAWSAP / BAASS contract work, Fugal-
-era research, etc.); popular lore without primary-source backing
-belongs in ``rumors``, not here.
+activity within the topic's scope at the location. The
+institutional-vs-popular distinction is load-bearing: only
+documented institutional activity belongs here; popular lore without
+primary-source backing goes in ``rumors``. The check itself enforces
+shape only; the distinction is contributor judgment at authoring
+time.
 
 Each entry: required {period_start, activity, source}, optional
-{period_end, actor_paths (list), note}.
+{period_end, actor_paths (list), note}. ``actor_paths`` (when set)
+is a list of repo "/" paths — same shape as ``contracts.deliverables``.
+
+Topic-neutral by design: the schema field key is ``top_scope_activity``,
+not ``uap_scope_activity``. The rendered section header (``## UAP-Scope
+Activity`` on this fork) is composed at render time from
+``meta/topic/overview.md::display_name`` via ``load_topic()`` — see
+``scripts/build-from-research.py::render_top_scope_activity``. A fork
+sets a different ``display_name`` and the renderer substitutes
+without touching this check, the schema field key, or any artifact
+data.
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``.
-
-Origin: introduced at commit ``5a67ec1`` (F.6a — "schema +
-validator + scaffolder for location-type research artifacts").
-Same anchor as ``ownership_timeline`` and
-``location_relationships``; F.6a added all three location-specific
-structured fields together.
-
-Topic-specific scope filter. The section's load-bearing
-distinction is institutional-vs-popular: only documented
-institutional activity within the topic's scope belongs here;
-popular lore goes in ``rumors``. Unique among entry-list checks
-in carrying this contributor-discipline distinction explicitly
-in the schema + docstring. The check itself enforces shape only;
-the institutional-vs-popular distinction is contributor judgment
-at authoring time.
-
-Topic-neutralized at C22 (commit ``ffad3ed``). Field name was
-formerly ``uap_scope_activity``; the rename to
-``top_scope_activity`` (and its sibling ``top_relevance`` on
-person artifacts) decoupled the field key from the UAP-specific
-display name. The rendered section header
-(``## UAP-Scope Activity`` on this fork) is now composed at
-render time from ``meta/topic/overview.md::display_name`` via
-``load_topic()`` — see ``scripts/build-from-research.py``
-``render_top_scope_activity``. A fork sets a different
-``display_name`` and the renderer substitutes accordingly without
-touching this check, the schema field key, or any artifact data.
-
-Period-bearing pattern. Same period_start / period_end shape as
-``ownership_timeline`` (F.6a sibling), ``key_personnel`` (F.5a),
-``contracts`` (F.5a), and ``affiliations`` (F.1b). All five
-share the pending "known start, unknown end (but not ongoing)"
-research-queue thread.
-
-actor_paths multi-path validation. Optional list of "/" paths.
-Same shape as ``contracts.deliverables``. Each list element
-validated as a string starting with "/".
-
-Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
-C18 confirmed byte-identity through the lift.
 """
 
 from checks import Issue

@@ -8,45 +8,25 @@ it claims to draw on.
 
 Runs unconditionally. Confirmation against the source is a precondition
 for inclusion in node bodies, not a marker the contributor opts into;
-the check has no rendered counterpart in node output (no Verified
-row) by design — the source link IS the evidence for readers, this
-check is the integrity guarantee. See ``meta/conventions.md``.
+the check has no rendered counterpart (no "Verified" row) by design —
+the source link IS the evidence for readers. See ``meta/conventions.md``
+"Confirmation is a precondition for inclusion" and the
+``meta/toolkit-notes/pilot-failure-2026-04-17.md`` postmortem; this
+check is the rationale-of-record fix for the failure modes documented
+there. Reference the postmortem before proposing to weaken or remove.
 
 Failure messages name the node, the line number of the block-quote,
 the cited source file, and a preview of the unmatched text — enough
 for a contributor to navigate and fix without further detective work.
 
 Requires ``pdftotext`` for PDF sources (poppler-utils on Linux);
-HTML/TXT sources read directly via ``lib._common.extract_source_text``.
+HTML / TXT sources read directly via ``lib._common.extract_source_text``.
 PDFs flagged ``extraction_type: ocr-scan`` / ``extraction-lossy`` in
 ``sources/manifest.yaml`` prefer a same-stem ``.txt`` sibling (clean
 transcription) over ``pdftotext`` output. Binary-by-design sources
-(``image``/``video``/``audio`` per manifest format) warn rather than
-error — the validator can't substring-match against bytes that
+(``image`` / ``video`` / ``audio`` per manifest format) warn rather
+than error — the check can't substring-match against bytes that
 aren't text.
-
-Origin: created in direct response to
-``meta/toolkit-notes/pilot-failure-2026-04-17.md``. A pilot session
-built 10 nodes that all passed validate.py with 0 errors / 0 warnings;
-post-build fact-check then found significant fabrication — composite
-quotes (two non-adjacent source passages joined as one), widely-
-reported paraphrases marked as sworn testimony, mis-attributed
-claims. The structural validator caught zero of these: every
-fabrication was a syntactically valid block-quote with a structural
-verification block. The fix was a same-day mechanical backstop —
-extract every cited source to plaintext, normalize, substring-match
-the quote against the source. All three postmortem F1/F2/F3
-fabrication shapes fail this check. Shipped in the toolkit's initial
-commit (``af5f789``); migrated to per-module shape at commit
-``251c099``; ``extract_source_text`` and ``normalize_for_compare``
-later consolidated into ``lib._common.py`` (commit ``979207f`` and
-the 2026-05-01 lockstep refactor) for cross-script lockstep with
-prose_drift and description_token_drift. C18 confirmed byte-identity
-through both moves.
-
-The ``meta/conventions.md`` "Confirmation is a precondition for
-inclusion" principle rests on this check. Reference the postmortem
-before proposing to weaken or remove it.
 """
 
 import re

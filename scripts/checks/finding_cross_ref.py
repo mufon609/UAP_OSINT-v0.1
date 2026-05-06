@@ -2,48 +2,14 @@
 
 Verifies that every entity listed in a finding node's ``entities``
 frontmatter list links back to the finding from its own body. Warns
-on missing back-links (not an error — broken back-links are a
-finding-author hygiene issue, not a structural validation failure;
-if a back-link is genuinely needed, the contributor adds a wrap to
-the finding's path).
+on missing back-links: bidirectional links are encouraged by
+``meta/conventions.md`` "Finding nodes" but not strictly required.
+
+Currently dormant — the finding type has zero corpus instances per
+``meta/roadmap.md``. The check activates when the first finding node
+lands.
 
 No-ops on non-finding node types.
-
-Origin: foundational from the initial commit (``af5f789``); listed
-as check #10 in the original validate.py docstring ("Finding cross-
-reference consistency (entities listed must link back)"). The check
-was designed alongside the schema's ``finding`` type and codified
-the bidirectional-link convention from day one — every finding's
-entities[] list is matched by a wrap-link from each cited entity
-back to the finding.
-
-Currently dormant. The finding type has zero corpus instances
-(F.7 finding renderer is the last unbuilt phase per
-``meta/roadmap.md``); the check no-ops on every node currently in
-the build state. When F.7 ships and the first finding node lands,
-this check activates with the convention pre-established.
-
-Anchor pattern: forward-defensive foundational ("designed but
-dormant"). Distinct from stable/stable foundationals
-(frontmatter_required, id_path_match) because the discipline
-around the check hasn't been exercised yet — there's no
-contributor-practice evolution yet; the convention exists pre-
-corpus.
-
-Severity is WARN, not error, because bidirectional links are
-encouraged by ``meta/conventions.md`` "Finding nodes" but not
-strictly required by the convention. Finding-author judgment
-applies; the check surfaces missing links without blocking.
-
-Pending rename per BACKLOG A4: the ``finding`` type will be
-renamed to ``investigation`` in a future session. This check's
-``if ctx.node_type != "finding"`` guard is among the 8 scripts
-listed in A4 that need updating when the rename ships. Mechanical
-rename; behavior unchanged.
-
-Migration: ``60bb88d`` (C11 session 3 lift to per-module shape).
-C18 confirmed byte-identity through the migration despite zero
-corpus exercise.
 """
 
 from pathlib import Path

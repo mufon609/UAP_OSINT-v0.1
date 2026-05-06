@@ -8,19 +8,13 @@ and has a dict root. Three fatal cases:
   - Root value is not a mapping (dict).
 
 Runs as a preflight in both ``validate-research.py`` (after the
-pre-parse text checks; before the main ``_ARTIFACT_CHECKS`` chain) and
-``review-coverage.py`` (before the ``_REVIEW_CHECKS`` chain). Downstream
-checks rely on ``ctx.data`` being a dict.
+pre-parse text checks; before the main ``_ARTIFACT_CHECKS`` chain)
+and ``review-coverage.py`` (before the ``_REVIEW_CHECKS`` chain).
+Downstream checks rely on ``ctx.data`` being a dict.
 
-Origin: lifted from inline orchestrator parse logic. Both
-``validate-research.py`` and ``review-coverage.py`` were hand-emitting
-Issues with ``check_name='parse'`` / ``'review_coverage_load'`` that
-pointed to no module. ``review-coverage.py``'s prior ``load_artifact``
-also called ``sys.exit`` on parse failure — halting an ``--all`` run on
-the first bad artifact rather than letting the per-artifact iteration
-continue. Lifting into a real check fixes both: the contract becomes
-honest, and per-artifact failures yield Issues without short-circuiting
-the iteration over the rest of the corpus.
+Per-artifact parse failures yield fatal Issues without short-
+circuiting the iteration, so an ``--all`` run continues over the
+rest of the corpus.
 """
 
 import yaml

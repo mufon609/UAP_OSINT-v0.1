@@ -28,10 +28,8 @@ import urllib.error
 import urllib.parse
 from datetime import datetime
 
-# Shared single sources of truth — same helpers manifest.py CLI uses, so
-# the two scripts can never drift on Wayback-URL detection / manifest
-# I/O semantics. ``yaml`` no longer imported directly here (load_manifest
-# / save_manifest both live behind lib).
+# Wayback-URL detection + manifest I/O share helpers with manifest.py
+# via lib._common.
 from lib._common import (  # noqa: E402
     MANIFEST_PATH,
     WAYBACK_URL_RE,
@@ -116,10 +114,10 @@ def cmd_submit_one(url):
         sys.exit(1)
     print(f"  OK: {result}")
 
-    # Mirror the manifest update the no-args sweep does on a successful
-    # submit, so a contributor running --submit URL after registering a new
-    # source doesn't end up with archive_status: 1 (local only) and no
-    # wayback_date. See main()'s post-submit branch for the canonical pattern.
+    # On a successful single-URL submit, update the manifest entry
+    # the same way the no-args sweep does — without this, a contributor
+    # running --submit URL after registering a new source would be
+    # left with archive_status: 1 (local only) and no wayback_date.
     entries = load_manifest()
     entry = next((e for e in entries if e.get("url") == url), None)
     if entry is None:

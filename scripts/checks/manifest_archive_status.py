@@ -1,6 +1,7 @@
 """manifest-archive-status check — global BaseContext check.
 
-``archive_status`` is a 2-bit presence indicator on every manifest entry:
+``archive_status`` is a 2-bit presence indicator on every manifest
+entry:
 
   - bit 0 (value 1) = locally archived (status == archived AND path set)
   - bit 1 (value 2) = archived on the Internet Archive Wayback Machine
@@ -22,21 +23,6 @@ Consumes ``BaseContext.manifest_entries`` — the orchestrator loads
 ``sources/manifest.yaml`` once per invocation and shares it across
 the three manifest checks (manifest_checksums, manifest_archive_status,
 manifest_extraction_type) so the file isn't re-parsed per check.
-
-Origin: commit ``7a01d8b`` introduced the ``archive_status`` field and
-this integrity check together (Phase 1 of a 2-bit-indicator landing
-that lets ``archive.py`` skip URLs already confirmed in Wayback rather
-than re-checking the entire manifest every run). The check was
-defensive from day one — created *with* the optimization, not in
-reaction to a bug — to guarantee the composite indicator never
-silently lies when underlying state drifts. The concrete adjacent
-failure class is BACKLOG #30 (commit ``d6732e1``): at the time of
-7a01d8b, ``archive.py`` was fire-and-forget — not updating the
-manifest on successful Wayback submit, so bit 1 would have stayed 0
-even after a snapshot existed. The #30 fix made ``archive.py`` update
-the manifest; if that regressed, this check catches it. The migration
-to per-module shape happened later (commit ``1c34081``, BACKLOG C14
-session 2) without behavior changes; C18 confirmed byte-identity.
 """
 
 from checks import Issue
@@ -50,9 +36,8 @@ def check(ctx):
     """Yield error-level Issue for any entry whose archive_status is
     missing, out-of-range, inconsistent with status / path / wayback_date,
     or contradicted by wayback_skip + wayback_date both being set."""
-    # Schema-driven enum: ``archive_status_values`` declared on
-    # ``manifest_entry`` per schema.yaml. Direct subscript per the C21
-    # no-silent-fallbacks principle.
+    # Schema-driven enum: ``archive_status_values`` on ``manifest_entry``.
+    # Direct subscript so schema malformation surfaces loudly.
     valid_archive_status = ctx.schema["manifest_entry"]["archive_status_values"]
 
     for entry in ctx.manifest_entries:

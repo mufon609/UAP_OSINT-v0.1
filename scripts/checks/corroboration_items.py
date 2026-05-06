@@ -1,47 +1,24 @@
 """corroboration-items check — archetype/kind-conditional research-artifact check.
 
-Present on eyewitness person artifacts (other observers of events the
-person witnessed) OR encounter event artifacts (observers of this
-encounter).
+Present on eyewitness person artifacts (other observers of events
+the person witnessed) OR encounter event artifacts (observers of
+this encounter).
 
 Each entry: required {observer_path, observation_type, source},
 optional {observed_event_ref, note}.
 
-Gating delegated to ``section_in_scope`` (schema-driven; OR-combines
-the archetype + kind rules from ``conditional_keys``); placement
-errors come from ``iff_section``.
-
-Origin: introduced at commit ``8007ef1`` (F.1a — person schema under
-statements-only discipline + check #15 chronological) as one of six
-original entry-list-pattern checks for the F.1a person redesign:
-check_timeline, check_corroboration_items, check_program_involvement,
-check_publication_record, check_vouching_chain (five archetype-
-conditional surfaces) + check_chronological_tables (universal). All
-six landed together to make the new structured-data person
-artifacts mechanically validatable. Same renderer-coupled-defensive
-pattern as ``affiliations`` (anchored at F.1b) — entry-shape
-enforcement so the renderer can rely on the structured data.
-
 Cross-reference surface, NOT a statement surface — per
 ``meta/conventions.md``, archetype-specific sections (Corroboration
 / Claim Inventory / Program Involvement / Publication Record) are
-cross-reference / metadata surfaces. The ``.note`` field on each
-entry describes *why* the cross-reference exists (e.g., "Other
-F/A-18F pilot in Fravor's 2-plane flight; testimony confirms
-wingman also lost visual at intercept") and is out of prose-drift
-scope per the 2026-04-21 second scope cut — the note's descriptor
-pool isn't anchored to a single source.
+cross-reference / metadata surfaces. The ``.note`` field describes
+*why* the cross-reference exists (e.g., "Other F/A-18F pilot in
+Fravor's 2-plane flight; testimony confirms wingman also lost
+visual at intercept") and is out of prose-drift scope — the
+descriptor isn't anchored to a single source.
 
-Schema scope expansion at C15: originally scoped to eyewitness
-archetype only (F.1a). Commit ``dc95d39`` (C15) added the OR-
-combine to cover encounter event kind as well — the OR-disjunction
-case that was one of the canonical motivations for the
-``required_when_any_of`` grammar upgrade (witnesses_testimony was
-the AND-conjunction case anchored in iff_section's investigation).
-
-Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
-C18 confirmed byte-identity through both the C15 scope expansion
-and the per-module migration.
+Gating delegated to ``section_in_scope`` (schema-driven; OR-combines
+the archetype + kind rules from ``conditional_keys``); placement
+errors come from ``iff_section``.
 """
 
 from checks import Issue
@@ -63,11 +40,10 @@ def check(ctx):
     if "corroboration_items" not in ctx.data:
         return
 
-    # Schema-driven enum: ``observation_type`` values come from
-    # ``corroboration_entry.observation_type_values`` (different value
-    # set than ``quote_entry.observation_type_values`` despite the
-    # shared field name — corroboration is testimonial/instrumented/
-    # government-statement/documentary; quote is direct/relayed).
+    # ``observation_type`` here is corroboration_entry's own enum
+    # (testimonial / instrumented / government-statement / documentary) —
+    # distinct from ``quote_entry.observation_type_values`` (direct /
+    # relayed) despite the shared field name.
     valid_observation_types = ctx.schema["types"]["research-artifact"][
         "corroboration_entry"]["observation_type_values"]
 

@@ -22,8 +22,7 @@ Warn-not-error severity is intentional. The schema's
 within this artifact, or external ref``). Refs that don't resolve
 locally MIGHT be cross-artifact pointers — the validator surfaces
 the unresolved ref for contributor judgment without false-
-positive'ing on legitimate external pointers. The cross-artifact
-resolver work for these pointers is BACKLOG A3 / E.3 (deferred).
+positive'ing on legitimate external pointers.
 """
 
 from checks import Issue

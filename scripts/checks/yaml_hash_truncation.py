@@ -1,30 +1,21 @@
 """yaml-hash-truncation check — pre-parse research-artifact ResearchContext check.
 
-Scans raw lines for unquoted scalar values that contain ``space + #``
-and get silently truncated by YAML's comment handling. Surfaces as
-warn — the YAML is technically valid; the check flags a likely
-contributor mistake where prose with an embedded ``#N`` reference
-loses everything after the ``#`` to YAML's trailing-comment handling.
+Scans raw lines for unquoted scalar values containing ``space + #``
+where YAML's comment handling will silently truncate substantive
+content (e.g., prose with an embedded ``#N`` reference loses
+everything after the ``#``). Warns rather than errors — the YAML is
+technically valid; the check flags a likely contributor mistake.
 
-Pre-parse: runs against the file's raw line text BEFORE
-``yaml.safe_load``. The orchestrator opens the file once and exposes
-the lines via ``ctx.raw_lines``; this check only reads.
+Pre-parse: runs against the file's raw line text via ``ctx.raw_lines``
+BEFORE ``yaml.safe_load``.
 
-Heuristic tolerates one-line trailing comments (post-`#` content under
-3 words plausibly a deliberate contributor note). Only warns when the
-post-`#` content looks substantive (≥ 3 words) — that's the shape that
-indicates accidental truncation of prose. Known accepted false-
-negative: short ``#N`` references trailing prose (``key: see Issue #3``)
-truncate but don't warn since the post-`#` token count is below the
-threshold; the introducing commit treated that as the cost of keeping
-``# WIP``-style annotations from drowning the warn channel.
-
-Origin: surfaced during the F.4c FLIR1 media pilot (commit ``c065e4a``).
-The pilot's research artifact carried a methodology field whose
-unquoted scalar contained ``validate.py check #11 returns warn...`` —
-YAML's space-`#` rule truncated the value at ``check`` and the post-`#`
-clause was silently lost from the rendered Open Questions section. The
-3-word threshold was calibrated against that specific shape.
+Heuristic tolerates one-line trailing comments (post-``#`` content
+under 3 words is plausibly a deliberate contributor note). Only warns
+when the post-``#`` content looks substantive (≥ 3 words) — accidental
+truncation of prose. Accepted false-negative: short ``#N`` references
+trailing prose (``key: see Issue #3``) truncate but don't warn, on
+the trade-off that ``# WIP``-style annotations don't drown the warn
+channel.
 """
 
 import re

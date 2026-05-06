@@ -1,15 +1,16 @@
 """prose-drift check — whole-artifact research-artifact check.
 
 Verifies contributor-prose surfaces source their vocabulary from
-primary-source text. Tokenizes each prose field into significant words
-(lowercase, ≥3 chars, non-stopword) and verifies each token appears
-in the referenced source(s).
+primary-source text. Tokenizes each prose field into significant
+words (lowercase, ≥3 chars, non-stopword) and verifies each token
+appears in the referenced source(s).
 
-Impartial reporter — surface drift; the contributor judges each case:
+Impartial reporter — surfaces drift; the contributor judges each
+case:
   - WARN on every unmatched significant token (any field, any count).
   - ERROR only when 100% of a field's significant tokens are absent
-    from source. 100% divergence is a mathematical observation
-    (no shared vocabulary with the source the field claims to draw on),
+    from source. 100% divergence is a mathematical observation (no
+    shared vocabulary with the source the field claims to draw on),
     not a stylistic threshold. Below 100%, no classification — just
     report.
 
@@ -18,7 +19,9 @@ Scope is CONTRIBUTOR SYNTHESIS PROSE: top-level free-prose fields
 and per-entry synthesis content notes (``ownership_timeline.note``,
 ``top_scope_activity.note``, ``key_personnel.note``, ``contracts.note``,
 ``media_versioning.note``, ``vouching_chain.attestation``). Applied
-across all renderer-supported types.
+across all renderer-supported types. See ``meta/conventions.md``
+"Prose-drift discipline on synthesis surfaces" for the principle of
+record before proposing any field-specific threshold tuning.
 
 OUT of scope: compact label cells (role titles, short relationship
 descriptors, ``timeline[].event``, ``use_status``, ``activity``,
@@ -26,32 +29,8 @@ descriptors, ``timeline[].event``, ``use_status``, ``activity``,
 descriptor notes (``corroboration_items.note``,
 ``witnesses_testimony.note``, ``org_relationships.note``,
 ``location_relationships.note``). Token-match misfires on label cells
-and meta-descriptors; fabrication in those cells is Phase III
-semantic-review territory.
-
-Origin: created in response to the F.1c Fravor pilot audit
-(introducing commit ``d9bc684``). The pilot built the first person
-node end-to-end under statements-only discipline and committed at i0;
-the audit found four contributor-prose drift issues despite all
-mechanical gates passing clean. RCA isolated the gap — existing
-checks operated on the artifact-to-node axis; the source-to-artifact
-axis was unchecked for prose, only for verbatim quotes (the
-verbatim_quotes check). The new check (then numbered #16, later
-renamed prose-drift per the topic-name migration) closed that gap.
-
-Threshold-tuning history: the initial shape used differentiated 80%
-error thresholds calibrated to let synthesis-heavy fields (e.g.
-``top_relevance``, ``credibility_notes``) pass without error.
-Contributor feedback flagged that as bias — the validator was
-encoding a category judgment about which fields "deserve" more
-contributor vocabulary headroom. Revised at commit ``836f96a`` to
-the impartial single-rule design above (warn on every unmatched
-token, error only at 100% mathematical divergence). That revision
-established the broader "validator surfaces drift, doesn't classify
-it" principle documented in
-``meta/conventions.md`` "Prose-drift discipline on synthesis
-surfaces"; reference it before proposing any threshold extension or
-field-specific tuning.
+and meta-descriptors; fabrication in those cells is semantic-review
+territory.
 
 Per-entry fields pool against the top-level union (∪ primary_sources)
 rather than each entry's own ``source.path``. Synthesis-content notes
@@ -61,15 +40,6 @@ described from both the contract itself and external reporting);
 per-entry pooling would over-fire on that legitimate case. The union
 pool still surfaces fabrication — vocabulary attested by NO cited
 source still produces unmatched tokens.
-
-Migration: ``00a985d`` (C11 session 3 lift to per-module shape);
-``a572f77`` (2026-05-05 lockstep refactor — ``extract_significant_tokens``,
-``load_source_tokens``, ``STOPWORDS`` moved to ``lib._common.py`` for
-cross-script lockstep with check-vocab.py and the validator
-orchestrators; the description-drift tokenizer at
-``review-coverage.py`` uses a different algorithm and is
-deliberately NOT consolidated with this one — see commit ``a572f77``
-docstring note). C18 confirmed byte-identity through both moves.
 """
 
 from checks import Issue

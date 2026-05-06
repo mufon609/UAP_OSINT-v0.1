@@ -1,10 +1,10 @@
 """yaml-colon-space check — pre-parse research-artifact ResearchContext check.
 
-Parallel pre-parse mechanism to ``yaml_hash_truncation``. Scans for
-unquoted scalar values containing an inner ``: `` (colon followed by
-space). YAML's block-mapping parser may treat the inner ``: `` as a
-nested key/value separator, either parse-erroring or silently
-mis-parsing the scalar.
+Scans for unquoted scalar values containing an inner ``: `` (colon
+followed by space). YAML's block-mapping parser may treat the inner
+``: `` as a nested key/value separator, either parse-erroring or
+silently mis-parsing the scalar (e.g., a publication_record entry
+title that contains a colon).
 
 Heuristic skips:
 
@@ -15,31 +15,9 @@ Heuristic skips:
 Warns only when the post-colon content is ≥2 words, reducing false
 positives on single-word sub-keys.
 
-Runs against ``ctx.raw_lines`` before yaml.safe_load.
-
-Origin: introduced at commit ``d9a63a1`` ("validate-research: add
-YAML colon-space pre-parse check (BACKLOG #11)") in response to a
-real artifact incident — the 2026-04-20 Cluster B hearing-event
-pilot. A NewsNation submission title in a publication_record entry
-contained an inner ``: `` sequence, which YAML's block-mapping
-parser interpreted as a nested key/value separator and broke the
-artifact. Fix at the time: single-quote the title + replace the
-inner colon with an em-dash. Same shape as ``yaml_hash_truncation``
-(real artifact incident → preventive pre-parse check); the two are
-structural parallels with different inner-punctuation triggers.
-
-The threshold difference between the two pre-parse checks
-(yaml_hash_truncation uses ≥3-word post-`#`; this check uses
-≥2-word post-colon) is calibrated to different false-positive
-shapes. After ``#``, terse annotations like ``# WIP`` (1 word) are
-common contributor practice and shouldn't fire — only ≥3 words
-indicates accidental prose truncation. After an inner ``: ``,
-legitimate single-word ``key: ` sub-keys are rarer; the lower
-threshold catches more real cases without producing the noise that
-``# WIP``-style annotations would after ``#``.
-
-Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
-C18 confirmed byte-identity through the lift.
+Runs against ``ctx.raw_lines`` before yaml.safe_load. Parallel to
+``yaml_hash_truncation`` — both are pre-parse heuristics for
+common YAML-mis-parse shapes.
 """
 
 import re

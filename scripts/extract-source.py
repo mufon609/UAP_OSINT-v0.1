@@ -38,14 +38,12 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-# Shared single sources of truth — same extraction layer the validators
-# use, so the Phase I scratch files contributors read match what the
-# verbatim-quote / prose-drift / description-drift checks see byte-for-
-# byte. The lib version handles PDF (with .txt-sibling fallback for
-# ocr-scan / extraction-lossy sources), HTML (with tag strip + entity
-# decode), TXT / MD / JSON. ``extract_pdf_metadata`` below stays local
-# because pdfinfo metadata capture has no lib equivalent — different
-# concern from text extraction.
+# Use the shared extraction layer so contributor scratch files match
+# what the verbatim-quote / prose-drift / description-drift checks see
+# byte-for-byte. The lib helper handles PDF (with .txt-sibling fallback
+# for ocr-scan / extraction-lossy sources), HTML (with tag strip + entity
+# decode), and TXT / MD / JSON. ``extract_pdf_metadata`` below stays
+# local because pdfinfo metadata capture has no lib equivalent.
 from lib._common import REPO_ROOT, SOURCES_DIR, extract_source_text  # noqa: E402
 
 SCRATCH_DIR = Path("/tmp")

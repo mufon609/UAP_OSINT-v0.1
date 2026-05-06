@@ -4,54 +4,21 @@ Validates every ``.md`` file under ``meta/`` carries the required
 frontmatter discipline: id / type / schema_version / created;
 schema_version in ``schema.compatible_with``; id matches file path.
 
-Routes templates (under ``meta/templates/``) through a placeholder-
-aware regex path because their ``{{slug}}`` / ``{{today}}`` values
-can't be YAML-parsed cleanly (``{...}`` conflicts with YAML's flow-
-mapping syntax). Governance docs (everything else under ``meta/``)
-use standard YAML frontmatter parsing.
+Templates (under ``meta/templates/``) route through a placeholder-aware
+regex path because their ``{{slug}}`` / ``{{today}}`` values conflict
+with YAML's flow-mapping syntax and can't be YAML-parsed cleanly.
+Other governance docs use standard YAML frontmatter parsing.
 
-Skips ``meta/topic/working-notes/`` per the working-notes README:
-those files sit outside the validated content layer (transient
-contributor scratch, deleted on integration).
+Template drift is the high-blast-radius case the check guards: a
+drifted schema_version in ``meta/templates/{type}.md`` propagates to
+every node scaffolded by ``new.py`` afterward, and would otherwise be
+undetectable until one of those downstream nodes was validated.
+
+Skips ``meta/topic/working-notes/`` per the working-notes README —
+those files are transient contributor scratch, deleted on integration.
 
 Consumes ``BaseContext.schema``; performs its own filesystem walk
 (governance walk is global, not driven by content-node iteration).
-
-Origin: introduced at commit ``30b7fc3`` ("Add check #13 —
-governance-file frontmatter validation"). Closes BACKLOG #3.
-Pre-30b7fc3, every .md file under meta/ carried schema_version
-frontmatter but no validation pass enforced the discipline.
-Template drift was the highest-blast-radius scenario: a drifted
-schema_version in ``meta/templates/{type}.md`` propagates to every
-node scaffolded afterward via ``new.py``, and was previously
-undetectable until someone tried to validate one of those
-downstream nodes. Defensive design — the check guards an invariant
-to prevent a known failure class rather than responding to a
-specific incident.
-
-Migration trail:
-
-  - ``30b7fc3`` (introduction; inline in validate.py)
-  - ``7f5f86f`` (C11 session 2 — "checks: migrate governance_files;
-    lift parse_frontmatter to lib/_common"): moved
-    ``parse_frontmatter`` into ``lib/_common.py`` alongside the
-    governance check lift, so both this check and the node
-    frontmatter checks share one parse implementation
-  - ``2f3effb`` (BACKLOG #8 close): consolidated the schema_version
-    compat-check messaging into ``schema_version_compat_messages``,
-    a shared helper used here on both routes (template + governance-
-    doc) plus the node frontmatter check and the research-artifact
-    top-level check — single point of truth for the version-compat
-    error / migration-pointer wording
-
-C18 confirmed byte-identity through both the per-module migration
-and the helper consolidation.
-
-Type → content-directory mapping comes from ``lib._common
-.content_type_dirs()`` — single source of truth shared with
-``new.py``, ``research-scaffold.py``, ``build-from-research.py``,
-the validator orchestrators, and every other script that walks the
-content layer.
 """
 
 import re
@@ -147,8 +114,7 @@ def _check_template_frontmatter(path, rel, text, compatible_with, schema_block):
 
     # schema_version: must be integer in compatible_with. Templates
     # hard-code a version (not a placeholder) because scaffolded nodes
-    # inherit the value verbatim. Shared lib helper drives the
-    # compat-check messaging (Issue #8 dedup).
+    # inherit the value verbatim.
     sv_match = re.search(r"^schema_version:\s*(\d+)\s*$", block, re.MULTILINE)
     if not sv_match:
         yield Issue(rel, "error",
@@ -191,7 +157,7 @@ def _check_governance_doc_frontmatter(path, rel, text, compatible_with, schema_b
                 f"{' / '.join(_REQUIRED_META_FIELDS)})",
                 check_name=CHECK_NAME)
 
-    # schema_version value check (shared lib helper — Issue #8 dedup)
+    # schema_version value check
     current = schema_block.get("version", "?")
     for level, msg in schema_version_compat_messages(
         fm.get("schema_version"), compatible_with, current,
@@ -207,11 +173,11 @@ def _check_governance_doc_frontmatter(path, rel, text, compatible_with, schema_b
                 f"{expected_id!r}",
                 check_name=CHECK_NAME)
 
-    # Per BACKLOG C22: meta/topic/overview.md is the canonical topic-
-    # config record; frontmatter must carry topic + display_name so
-    # lib._common.load_topic() and the renderer can substitute the
-    # display name into section headers. Other governance docs
-    # don't need these fields.
+    # meta/topic/overview.md is the canonical topic-config record;
+    # frontmatter must carry topic + display_name so lib._common
+    # .load_topic() and the renderer can substitute the display name
+    # into section headers. Other governance docs don't need these
+    # fields.
     if str(rel) == "meta/topic/overview.md":
         for field in ("topic", "display_name"):
             if field not in fm:
@@ -219,7 +185,7 @@ def _check_governance_doc_frontmatter(path, rel, text, compatible_with, schema_b
                     f"meta/topic/overview.md frontmatter missing "
                     f"required topic-config field {field!r} (topic + "
                     f"display_name drive schema-field-rename + renderer "
-                    f"section-header substitution; see BACKLOG C22 + "
+                    f"section-header substitution; see "
                     f"prompts/fork-init.md)",
                     check_name=CHECK_NAME)
 
@@ -229,7 +195,7 @@ def check(ctx):
     the frontmatter discipline. Templates routed through a placeholder-
     aware regex path; everything else uses standard YAML parsing.
     Also verifies meta/topic/overview.md exists — every toolkit
-    instance must declare its topic scope there (see BACKLOG C22 +
+    instance must declare its topic scope there (see
     prompts/fork-init.md)."""
     # Direct schema-config access; KeyError surfaces if the schema's
     # `schema:` block or its required nested keys are missing. Schema

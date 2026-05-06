@@ -48,12 +48,11 @@ from lib._common import (
 
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 
-# Schema-driven scaffolding (BACKLOG C19). Type-set constants previously
-# duplicated here (RUMORS_TYPES, TIMELINE_TYPES, ARCHETYPE_SECTION,
-# KIND_SECTIONS_BY_TYPE) are now read from schema.yaml::types.research-
-# artifact.conditional_keys via the same evaluate_required_when helper
-# the validators use. One source of truth — schema edits propagate to
-# scaffolder + validators automatically.
+# Type-set conditionals (which sections to scaffold for which target
+# type / archetype / kind) come from
+# schema.yaml::types.research-artifact.conditional_keys via the same
+# ``evaluate_required_when`` helper the validators use, so schema edits
+# propagate to the scaffolder automatically.
 
 from checks._research_utils import evaluate_required_when
 
@@ -78,9 +77,9 @@ def empty_for(section_name):
     return EMPTY_SECTION_SHAPES.get(section_name, [])
 
 
-# Schema-derived single sources of truth — bound at import time from the
-# cached schema. ``content_node_types()`` returns the set of types that
-# accept artifacts; ``content_type_dirs()`` is the {type: dirname} map.
+# Schema-derived constants — bound at import time from the cached
+# schema. ``content_node_types()`` returns the set of types that accept
+# artifacts; ``content_type_dirs()`` is the {type: dirname} map.
 VALID_TARGET_TYPES = content_node_types()
 TYPE_DIRS = content_type_dirs()
 
@@ -88,9 +87,6 @@ TYPE_DIRS = content_type_dirs()
 # =============================================================================
 # Helpers
 # =============================================================================
-#
-# load_manifest comes from lib._common — single source shared with
-# archive.py + manifest.py CLI.
 
 
 def parse_target(target):
@@ -191,7 +187,7 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     Universal top-level keys are populated unconditionally. Type /
     archetype / kind-conditional sections are dispatched schema-driven
     from ``schema.yaml::conditional_keys`` via ``evaluate_required_when``
-    — same logic the validators use, single source of truth.
+    (the same helper the validators use).
     """
     today = date.today().isoformat()
     artifact = {
@@ -216,10 +212,8 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     # match this target.
     archetype = read_target_archetype(node_type, slug)
     kind = read_target_kind(node_type, slug)
-    # Direct subscript via ``load_schema`` — no silent fallback per the
-    # C21 no-silent-fallbacks principle. Schema malformation surfaces
-    # loudly rather than silently scaffolding artifacts with no
-    # conditional sections.
+    # Direct subscript: schema malformation surfaces loudly rather than
+    # silently scaffolding artifacts with no conditional sections.
     conditional_keys = load_schema()["types"]["research-artifact"]["conditional_keys"]
     for section_name, rules in conditional_keys.items():
         if evaluate_required_when(rules, node_type, archetype, kind):

@@ -119,8 +119,8 @@ def main():
             print(f"  - {p}")
 
     if not pool:
-        # Mirror validate-research.py's "no source text could be extracted"
-        # short-circuit — diagnostic can't function with an empty pool.
+        # Diagnostic can't function with an empty pool; same short-
+        # circuit shape as validate-research.py's prose-drift check.
         sys.exit(
             "\nError: pool is empty (no source text extracted). "
             "Check that primary_sources paths exist on disk and that "

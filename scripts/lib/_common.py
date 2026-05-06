@@ -1,27 +1,10 @@
-"""Cross-script shared helpers for source extraction and quote normalization.
+"""Cross-script shared helpers.
 
-Three scripts share a load-bearing cross-check guarantee per
-`meta/conventions.md`: the verbatim-quote check (validate.py) fails any
-commit where a quote's text does not appear in the extracted source.
-For that guarantee to hold, the prose-drift check (validate-research.py)
-and description-drift check (review-coverage.py) must tokenize against
-the SAME extracted text under the SAME normalization. Drift between
-the three breaks the guarantee silently — pre-commit gates pass while
-the checks operate on different bytes.
-
-Earlier versions duplicated these helpers inline across the three
-scripts with `# Mirror validate.py exactly` comments. The duplication
-drifted in practice as features shipped to validate.py without
-parallel updates (HTML entity decode; YouTube caption timestamp
-strip; OCR-scan / extraction-lossy `.txt` sibling logic). Centralizing
-here makes lockstep mechanical instead of comment-discipline-based.
-
-Investigator-facing content layers (`/people/`, `/organizations/`,
-`/documents/`, `/events/`, `/transcripts/`, `/media/`, `/locations/`,
-`/findings/`, `/sources/`) remain flat — the flatness rule is about
-investigator UX on browseable content, not tooling. Research artifacts
-live under `/meta/research/` (governance / structured-data backing
-tier per `meta/conventions.md`), not the content tier.
+The verbatim-quote check (validate.py), prose-drift check
+(validate-research.py), and description-drift check (review-coverage.py)
+must see identical source bytes under identical normalization or the
+"confirmation against source" guarantee in `meta/conventions.md` breaks
+silently. This module is the single implementation the three import.
 """
 
 import hashlib
@@ -164,10 +147,9 @@ _HTML_INLINE_TAGS = (
 
 # ---------------------------------------------------------------------------
 # Markdown helpers — pure functions for parsing node frontmatter and walking
-# H2 sections. Lifted to lib/_common.py during C11 session-2 migration
-# (2026-05-05) so per-check modules in scripts/checks/ can consume them
-# directly without importing from validate.py (which would invert the
-# layering — checks shouldn't import from the orchestrator).
+# H2 sections. Imported by both the orchestrators and per-check modules
+# under scripts/checks/, so checks don't have to import from validate.py
+# (which would invert the layering).
 # ---------------------------------------------------------------------------
 
 
@@ -189,25 +171,19 @@ def parse_frontmatter(text):
         return None, None
 
 
-# Topic-config — read from meta/topic/overview.md frontmatter.
-# Per BACKLOG C22: overview.md is the canonical topic-config record;
-# frontmatter carries `topic` (lowercase identifier) + `display_name`
-# (rendered text in section headers + agent prose). Cached per-process.
+# Topic-config — meta/topic/overview.md frontmatter declares the
+# instance's `topic` (lowercase identifier) and `display_name` (rendered
+# text used in section headers + agent prose). Cached per-process.
 _topic_config_cache = None
 _OVERVIEW_PATH = REPO_ROOT / "meta" / "topic" / "overview.md"
 
 
 def load_topic():
     """Read meta/topic/overview.md frontmatter and return
-    ``{topic, display_name}``. Cached per-process.
-
-    Errors loudly on missing file or required fields per the
-    schema-config no-silent-fallbacks principle (cf. C21 sweep).
-    Fork-target bootstrap is handled by ``prompts/fork-init.md``,
-    which generates overview.md with the required frontmatter
-    fields. Existing-instance contributors should never hit the
-    error path — overview.md is required + validated by
-    governance_files.
+    ``{topic, display_name}``. Cached per-process. Errors loudly on
+    missing file or required fields — overview.md is required and
+    validated by ``governance_files``; fork bootstrap goes through
+    ``prompts/fork-init.md``.
     """
     global _topic_config_cache
     if _topic_config_cache is not None:
@@ -244,11 +220,8 @@ def load_topic():
 
 
 # ---------------------------------------------------------------------------
-# Manifest helpers — Wayback URL detection + manifest I/O. Centralized so
-# manifest.py CLI and archive.py share one implementation rather than
-# carrying parallel copies of WAYBACK_URL_RE / wayback_url_date /
-# load_manifest / save_manifest. Schema's manifest_entry shape is the
-# contract; both consumers wrote and re-wrote the same logic before this.
+# Manifest helpers — Wayback URL detection + manifest I/O.
+# Schema's ``manifest_entry`` shape is the contract.
 # ---------------------------------------------------------------------------
 
 # A cited URL may already BE a Wayback snapshot (e.g. dead primary source
@@ -323,17 +296,12 @@ def resolve_cli_path(arg_path):
 
 
 # ---------------------------------------------------------------------------
-# Date parsing — single source for the validator (chronological-ordering
-# check) and the renderer (Phase II sort_by_date). Earlier the two carried
-# parallel implementations with subtle drift: the renderer's copy missed
-# the placeholder-string set (``"n/a"`` / ``"undated"`` / ``"tbd"`` /
-# ``"present"`` / ``"ongoing"``), the ``"-to-"`` range separator, and the
-# empty-left-range fallback (``"– 2021"`` should sort by 2021, not at the
-# end-of-time sentinel). Centralizing here closes the drift surface and
-# fixes the renderer's empty-left-range handling as a byproduct.
+# Date parsing — shared by the chronological-ordering check
+# (checks/chronological_tables.py) and the renderer's sort_by_date
+# (build-from-research.py).
 #
 # Returns ``Optional[(year, month, day)]`` — None for unparseable /
-# missing / placeholder inputs. The two consumers wrap differently:
+# missing / placeholder inputs. Each consumer wraps differently:
 #
 #   - ``checks/chronological_tables.py`` treats None as "skip ordering
 #     check + warn on unparseable cells".
@@ -387,14 +355,11 @@ def parse_date_tuple(s):
     return None
 
 
-# Extension → manifest ``format`` value. Centralized here so contributor
-# scripts (manifest.py CLI, research-scaffold.py building primary_sources
-# entries) share one mapping rather than duplicating the dict with a
-# "Mirrors manifest.py FORMAT_BY_EXT" comment. Coverage matches the
-# schema's ``manifest_entry.format_values`` vocabulary
-# (pdf / html / txt / transcript / audio / image / video). Unknown
-# extensions fall back to ``html`` — intentional for web scraping where
-# the source's extension is often absent or generic.
+# Extension → manifest ``format`` value. Coverage matches the schema's
+# ``manifest_entry.format_values`` vocabulary (pdf / html / txt /
+# transcript / audio / image / video). Unknown extensions fall back to
+# ``html`` — intentional for web scraping where the source's extension
+# is often absent or generic.
 FORMAT_BY_EXT = {
     ".pdf": "pdf",
     ".html": "html",
@@ -440,9 +405,8 @@ def format_from_path(path):
 
 def compute_sha256(file_path):
     """Stream-compute SHA256 of a file. Returns hex digest or None on
-    read error. Shared between manifest.py (CLI) and the
-    manifest_checksums validator check so the integrity-check algorithm
-    is mechanical lockstep, not duplication."""
+    read error. Shared between manifest.py (CLI archival) and the
+    manifest_checksums validator check."""
     try:
         h = hashlib.sha256()
         with open(file_path, "rb") as f:
@@ -453,13 +417,9 @@ def compute_sha256(file_path):
         return None
 
 
-# Content-node types the Phase II renderer (build-from-research.py) and
-# the Phase III reviewer (review-coverage.py) both support. Centralized
-# here so the two stay in lockstep mechanically rather than via
-# comment-discipline (the prior "Matches build-from-research.py
-# SUPPORTED_TYPES. Expand in lockstep." pattern). Excludes ``finding`` —
-# F.7 finding renderer is the last unbuilt phase per ``meta/roadmap.md``;
-# add when F.7 ships.
+# Content-node types the renderer (build-from-research.py) and the
+# coverage reviewer (review-coverage.py) both support. Excludes
+# ``finding`` until the finding renderer ships (see ``meta/roadmap.md``).
 SUPPORTED_TYPES = frozenset({
     "document", "person", "event", "transcript",
     "media", "organization", "location",
@@ -468,15 +428,9 @@ SUPPORTED_TYPES = frozenset({
 
 def schema_version_compat_messages(sv, compatible_with, current_version, *, prefix=""):
     """Return list of ``(level, message)`` tuples for schema_version
-    compatibility violations. Caller wraps each tuple with its Issue
-    class. Empty list when the value is valid (or absent — None
-    silently passes; absence is handled by the caller's required-field
-    check).
-
-    Centralized here per BACKLOG #8 — the same logic was previously
-    duplicated across four sites (validate_node, _check_template_frontmatter,
-    _check_governance_doc_frontmatter, validate_artifact). One helper,
-    one place to update when schema migration discipline shifts.
+    compatibility violations. Caller wraps each tuple in its Issue
+    class. Empty list when the value is valid, or when it's None
+    (absence is the caller's required-field check, not this one).
 
     ``prefix`` lets template-shaped check sites prepend context (e.g.,
     "Template ") to error messages without forking the helper.
@@ -672,18 +626,14 @@ def normalize_for_compare(text):
 
 
 # ---------------------------------------------------------------------------
-# Prose-drift tokenizer — used by validate-research.py's prose-drift check
-# and by check-vocab.py (the contributor pre-flight tool). Centralized here
-# (2026-05-05) for the same lockstep reason `extract_source_text` and
-# `normalize_for_compare` were centralized 2026-05-01: multiple scripts
-# must agree on tokenization byte-for-byte, and prior duplication was
-# contributor-discipline-based with a real drift surface.
+# Prose-drift tokenizer — used by validate-research.py's prose-drift
+# check and by check-vocab.py (contributor pre-flight tool). Both must
+# tokenize byte-for-byte the same way.
 #
 # Scope: ONLY the prose-drift tokenizer. review-coverage.py's
-# `extract_description_drift_tokens` is a DIFFERENT algorithm
+# ``extract_description_drift_tokens`` is a different algorithm
 # (proper-noun + designator + quoted-string extraction for the
-# description-drift check) and lives there; the naming was deliberately
-# distinguished to prevent future "let's deduplicate" mistakes.
+# description-drift check) and stays there.
 # ---------------------------------------------------------------------------
 
 
@@ -709,29 +659,24 @@ def normalize_for_compare(text):
 # belt-and-suspenders. STOPWORDS contains only 3+ char entries that
 # would otherwise pass the length filter and need explicit filtering.
 #
-# WHAT'S DELIBERATELY OUT. Any word that carries evidentiary weight, even
-# common ones — investigative verbs (investigate, confirm, attest,
+# WHAT'S DELIBERATELY OUT. Any word that carries evidentiary weight,
+# even common ones — investigative verbs (investigate, confirm, attest,
 # established), reporting verbs (report, submit, publish, issue, signed),
 # institutional / role nouns (intelligence, agency, office, director,
 # civilian), testimony language (testify, sworn, witness, hearing),
 # provenance / archival vocabulary (document, archive, primary, source).
-# Plus three deliberate exclusions tightened during the 2026-05-05 audit:
+# Three categories that look stoppable but stay content:
 #   - Cardinal numbers ("one", "two", "three") — counting drift is
 #     evidentiary drift even when the word is grammatically a determiner
 #     ("investigated three cases" vs "investigated one case").
 #   - "may" — collides with the month "May" after lowercasing; filtering
 #     would mask month-attestation drift.
-#   - Generic verbs ("said", "took", "made", "went", "got", "came", "go",
-#     and their inflections) — were previously a category here. Empirical
-#     audit surfaced 6 real word-form drift cases when removed (took/take
-#     tense substitutions, said/stated paraphrases). Filtering them
-#     enabled the very paraphrase drift class the check is designed to
-#     catch. Now: prose using a generic verb warns when source uses a
-#     different verb. Standard prose-drift discipline applies.
+#   - Generic verbs ("said", "took", "made", "went", "got", "came" and
+#     inflections) — paraphrase drift like "Stratton said" for source's
+#     "Stratton stated" would pass silently if these were filtered.
 # Filtering any of these would silently weaken drift detection for whole
 # classes of evidentiary claims. The CONTENT_WORDS set in
-# scripts/tests/test_stopwords.py codifies this prohibition so it
-# survives contributor turnover.
+# scripts/tests/test_stopwords.py codifies the prohibition.
 #
 # KNOWN LIMITATIONS — architectural, not bandaid-able by tuning STOPWORDS.
 # These are real classes of drift that the prose-drift check cannot catch
@@ -804,15 +749,10 @@ STOPWORDS = {
     "some", "any", "all", "each", "every", "both", "either", "neither",
     "other", "another", "same", "such", "own",
     "here", "there",
-    # Generic verbs deliberately NOT filtered (was previously a category
-    # here; removed 2026-05-05 after empirical audit). Filtering "said"
-    # / "took" / "made" / "went" / "got" / "came" enabled paraphrase
-    # drift the check is designed to catch — "Stratton said" paraphrasing
-    # source's "Stratton stated" passed silently because both verbs
-    # collapsed to filtered tokens. Now: prose using a generic verb
-    # warns when source uses a different verb. Standard prose-drift
-    # discipline applies (rewrite to source morphology, or document the
-    # variance).
+    # Generic verbs ("said", "took", "made", "went", "got", "came" and
+    # inflections) are deliberately NOT listed — see the WHAT'S
+    # DELIBERATELY OUT block above. Listing them would mask paraphrase
+    # drift across reporting-verb substitutions.
 }
 
 

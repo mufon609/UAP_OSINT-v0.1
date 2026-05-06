@@ -38,10 +38,8 @@ from lib._common import REPO_ROOT, content_type_dirs, load_schema, load_topic
 TEMPLATES_DIR = REPO_ROOT / "meta" / "templates"
 ADDENDA_DIR = REPO_ROOT / "meta" / "topic" / "addenda"
 
-# TYPE_DIRS is the schema-derived ``{type: dirname}`` mapping shared
-# across every contributor script. The constant is bound at import
-# time from the cached schema; mutating it after import is unsupported
-# (treat as a frozen view into schema state).
+# Schema-derived ``{type: dirname}`` mapping. Bound at import time
+# from the cached schema; treat as a frozen view (do not mutate).
 TYPE_DIRS = content_type_dirs()
 
 DEFAULT_STATUS = {
@@ -174,10 +172,10 @@ def main():
             "ERROR: --archival-status required when doc_form=book. "
             "Valid values: full-text-archived, excerpts-only, not-archived"
         )
-    # Validate archival-status value when supplied. Direct subscript
-    # per the C21 no-silent-fallbacks principle — archival_status is
-    # only set on document type, where ``archival_status_values`` is
-    # always declared in schema.
+    # Validate archival-status value when supplied. Direct subscript:
+    # archival_status is only set on document type, where
+    # ``archival_status_values`` is declared, so schema malformation
+    # surfaces loudly.
     if args.archival_status:
         valid_archival = type_spec["archival_status_values"]
         if args.archival_status not in valid_archival:

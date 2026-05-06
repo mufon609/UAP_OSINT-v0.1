@@ -21,20 +21,13 @@ about contents that shouldn't exist. ``iff_section`` carries the
 single placement error; per-section checks carry the entry-level
 diagnostics.
 
-Origin: BACKLOG C15 (commit ``dc95d39``). Pre-cluster, each of 18
-per-section checks carried its own inline target_type / archetype /
-kind gate (~20 LOC duplicated per check). Forcing case for both the
-dispatcher AND the grammar upgrade was ``witnesses_testimony``: the
-section belongs on event-hearings but NOT transcript-hearings, since
-``hearing`` is shared between event and transcript kinds. The earlier
-flat OR-keys grammar (separate ``required_when_target_node_type_in``
-and ``required_when_target_node_kind_in`` lines) couldn't express the
-required ``type=event AND kind=hearing`` conjunction without over-
-firing on transcript-hearings. The new
-``required_when_any_of: [list of AND-rules]`` grammar handles both
-shapes uniformly: AND within a rule, OR across rules. The same
-grammar covers ``corroboration_items``'s "eyewitness-person OR
-encounter-event" disjunction without special-casing.
+Schema rule grammar: each section's ``required_when_any_of`` is a
+list of rules, each rule a dict whose fields are AND-combined; the
+list is OR-combined. AND within a rule, OR across rules — handles
+both ``witnesses_testimony``'s ``type=event AND kind=hearing``
+conjunction (since ``hearing`` is shared between event and transcript
+kinds) and ``corroboration_items``'s "eyewitness-person OR
+encounter-event" disjunction.
 """
 
 from checks import Issue
@@ -72,11 +65,9 @@ def check(ctx):
     if ctx.target_type is None:
         return
 
-    # Direct schema-config access; KeyError surfaces if the schema is
-    # missing the types / research-artifact / conditional_keys nested
-    # path. Silent fallback to {} would mass over-fire "should not be
-    # present" errors and under-fire "required missing" errors; loud
-    # crash is the right failure mode for schema breakage at this depth.
+    # Direct schema-config access; loud KeyError on schema breakage
+    # rather than silent {} fallback (which would mass over-fire and
+    # under-fire on wrong sides of the placement check).
     conditional_keys = ctx.schema["types"]["research-artifact"]["conditional_keys"]
 
     for section_name, rules in conditional_keys.items():

@@ -10,8 +10,8 @@ other.
 Per-check modules live in scripts/checks/. This file is the orchestrator:
 loads schema + manifest, iterates artifacts, dispatches the four cross-
 layer checks (coverage, boundary, stub_linking, description_token_drift)
-via an explicit step list. Skipped on unsupported types (finding pending
-F.7 renderer).
+via an explicit step list. Skips on unsupported types (only runs against
+types whose renderer ships in build-from-research.py).
 
 This script handles mechanical rules only. Semantic / narrative-coherence
 review (agent-assisted) is a separate pass referenced in
@@ -61,15 +61,8 @@ from checks import stub_linking as ck_stub_linking
 # =============================================================================
 # Constants
 # =============================================================================
-#
-# REPO_ROOT, SOURCES_DIR, load_schema, load_manifest_paths,
-# SUPPORTED_TYPES, content_type_dirs() come from lib._common — shared
-# single sources of truth across the toolkit.
 
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
-
-# SUPPORTED_TYPES imported from lib._common — single source shared with
-# build-from-research.py (mechanical lockstep, not comment-discipline).
 
 
 # =============================================================================
@@ -184,7 +177,7 @@ def review_artifact(artifact_path, base_ctx):
     # Parse preflight passed; downstream Context needs the parsed dict.
     node_type = target_node_type(artifact)
     if node_type not in SUPPORTED_TYPES:
-        return issues, f"node type {node_type!r} not yet supported in Phase III (BACKLOG)"
+        return issues, f"node type {node_type!r} has no renderer; review checks skipped"
 
     node_path = target_node_path(artifact)
     node_text = node_path.read_text() if (node_path and node_path.exists()) else None

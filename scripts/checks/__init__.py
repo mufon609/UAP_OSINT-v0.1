@@ -1,14 +1,10 @@
 """Per-check module package + shared contract types.
 
 Each named validator check lives at scripts/checks/{check_name}.py and
-exports a single ``check(ctx) -> Iterable[Issue]`` callable. Contributors
-asking "where does the verbatim-quote check live" should ``ls
-scripts/checks/`` rather than grep a thousand-line megafile.
+exports a single ``check(ctx) -> Iterable[Issue]`` callable.
 
 Routing — three orchestrators dispatch the checks via explicit step
-lists. The lists themselves are the routing-map source of truth; this
-package intentionally does not enumerate them inline, since duplication
-would create a drift surface:
+lists in their own files (the lists are the routing source of truth):
 
   - scripts/validate.py — direct dispatch in main() for global manifest
     + governance checks (BaseContext); ``_NODE_CHECKS`` for per-content-
@@ -17,36 +13,29 @@ would create a drift surface:
     checks before YAML parse (minimal ResearchContext);
     ``_ARTIFACT_CHECKS`` for per-research-artifact checks (full
     ResearchContext).
-  - scripts/review-coverage.py — ``_REVIEW_CHECKS`` for Phase III cross-
-    layer review (ResearchContext extended with target node body and
-    source text).
+  - scripts/review-coverage.py — ``_REVIEW_CHECKS`` for cross-layer
+    review (ResearchContext extended with target node body and source
+    text).
 
 Layer separation is mechanical via Context type rather than directory
-hierarchy. The decomposition design rejected
-scripts/checks/{node,research,coverage}/ subdivision because the Context
-type already encodes the layer in every check's signature; subdirectories
-would repeat information already carried by the dispatch step lists. See
-meta/toolkit-notes/c11-validator-decomposition-design.md §4 for the
-reasoning of record and the post-cluster Phase 0 reaffirmation.
+hierarchy — the Context type already encodes the layer in every check's
+signature, so per-layer subdirectories would repeat information already
+carried by the dispatch step lists.
 
 Two contracts shared across every check:
 
   - Issue: a per-violation report. Adopted by every check so pre-commit
-    output is uniform regardless of which validator orchestrator dispatched
-    the check.
+    output is uniform regardless of which orchestrator dispatched it.
 
   - Context: shared state passed to each check. BaseContext carries
-    repo-global state (schema, manifest, broken-link registry); NodeContext
-    and ResearchContext carry per-file state for the two iteration shapes.
+    repo-global state (schema, manifest, broken-link registry);
+    NodeContext and ResearchContext carry per-file state for the two
+    iteration shapes.
 
-Preflight checks. Parse / load validity diagnostics (frontmatter parse,
-YAML root-shape, target_node resolution, source extraction health) live
-in dedicated check modules — ``frontmatter_parse``, ``artifact_parse``,
-``phase_iii_inputs``. Orchestrators dispatch them against a
-minimal-shape Context before the main step list, and short-circuit the
-chain on any fatal Issue. Every Issue's ``check_name`` therefore points
-to a real ``scripts/checks/{name}.py`` module — no orchestrator-emitted
-``check_name`` strings claiming a non-existent backing module.
+Preflight checks (``frontmatter_parse``, ``artifact_parse``,
+``phase_iii_inputs``) handle parse / load diagnostics. Orchestrators
+dispatch them against a minimal-shape Context before the main step list
+and short-circuit the chain on any fatal Issue.
 """
 
 from collections import defaultdict
@@ -83,9 +72,7 @@ class Issue:
 
     def __post_init__(self):
         # Coerce Path / PosixPath inputs to str so call sites can pass
-        # ``rel`` (a Path) directly. Matches the legacy Issue classes'
-        # behavior (validate.py / validate-research.py / review-coverage.py)
-        # so the migration window doesn't change call-site semantics.
+        # ``rel`` (a Path) directly without stringifying.
         self.path = str(self.path)
 
 
@@ -97,8 +84,7 @@ class BaseContext:
     cited in artifacts; primary use case is path-existence checks) and
     ``manifest_entries`` (the full list of entries; needed by the
     manifest-integrity checks that examine sha256, status, archive
-    bits, extraction_type). Loading once here resolves the manifest-
-    loaded-3x duplication in the legacy validators.
+    bits, extraction_type).
 
     ``broken_links`` is the out-of-band metadata channel. Link-resolution
     writes to it; orchestrator reads it for the registry print. NOT an
@@ -209,11 +195,9 @@ class ResearchContext(BaseContext):
         self.node_path = node_path
         self.node_text = node_text
         self.source_text = source_text
-        # Lazy regenerated-body cache (BACKLOG C16). First access spawns
+        # Lazy regenerated-body cache. First access spawns
         # build-from-research.py --dry-run --no-validate and stores the
-        # result; subsequent accesses return the cached tuple. Closes the
-        # subprocess-per-cross-layer-check question — multiple consumers
-        # of the regenerated body now share one spawn.
+        # result so multiple cross-layer consumers share one spawn.
         self._regenerated = None  # populated lazily as (body, error)
 
     @property

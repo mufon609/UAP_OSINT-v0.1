@@ -1,74 +1,26 @@
 """required-sections check — per-node NodeContext check.
 
-Verifies every section listed in ``type_spec`` (after archetype/kind
+Verifies every section listed in the type_spec (after archetype/kind
 routing and corpus-addendum merge) appears as an H2 heading in the
 node body. Match is exact title or title prefix followed by ``" ("``
-or ``" —"`` (so section names with parenthesized qualifiers or em-dash
-clarifications still satisfy the requirement — e.g., a required
-``Overview`` matches ``## Overview (deprecated)``).
+or ``" —"`` so qualified renames satisfy the requirement (a required
+``Overview`` matches ``## Overview (deprecated)``,
+``## Identity — Aliases``). The over-permissive shape doesn't open a
+loophole: the boundary check catches structural divergence between
+artifact and rendered node.
 
-Corpus addenda (per ``meta/topic/addenda/{name}.md``) declare
-additional required sections; merged into the per-type list when the
-node's frontmatter sets ``corpus``.
+Corpus addenda (``meta/topic/addenda/{name}.md``) contribute additional
+required sections via their "Additional required sections" block when
+a node's frontmatter sets ``corpus``.
 
-Origin: foundational from the initial commit (``af5f789``). Both the
-schema-driven dispatcher (archetype/kind routing + type-default
-fallback) and the corpus-addendum extension mechanism shipped in
-af5f789. Migration: ``60bb88d`` (C11 session 3 lift to per-module
-shape). Carries ``_compute_required_sections`` and
-``_load_addendum_sections`` (both only used by this check).
-
-Anchor pattern: foundational schema-driven dispatcher. The check
-code has been stable since af5f789; the schema's per-type /
-per-archetype / per-kind required_sections lists evolved
-substantially across F.1a–F.6 renderer landings (every new node
-type or archetype shipped its own required_sections list), but the
-check just walks whatever the schema declares. Same "schema as
-single source of truth" pattern as ``iff_section`` (which formalized
-the pattern for conditional_keys); required_sections is the earlier
-instance.
-
-Forward-defensive corpus-addendum extension. The addendum mechanism
-allows corpus-specific structural requirements via
-``meta/topic/addenda/{corpus}.md`` — affected nodes set
-``corpus: {name}`` in frontmatter; the addendum's "Additional
-required sections" block contributes additional H2 requirements.
-The mechanism is in place + documented (the existing
-``aawsap-dird.md`` file documents itself as the canonical template
-for future corpus-specific addenda); currently no node in this
-toolkit instance carries a ``corpus:`` frontmatter, so the
-extension is dormant in practice. Forward-defensive — fork targets
-on different topic instances can drop in their own corpus addenda
-without modifying the check code.
-
-Match semantics intentionally permissive: exact-title OR
-title-prefix-followed-by-space-and-( OR title-prefix-followed-by-
-space-and-em-dash. Allows section-rename-with-qualifier
-(``## Overview (deprecated)``, ``## Identity — Aliases``) without
-forcing schema updates for cosmetic header changes. The
-boundary check (Phase III) catches structural divergence between
-artifact and rendered node, so over-permissive matching here
-doesn't open a real loophole.
-
-Truthy archetype/kind routing is intentional and distinct from the
-status_archetype_kind layering bug fixed during the C17 sweep:
-required_sections falls through to top-level required_sections when
-archetype/kind is null/absent, on the basis that archetype-validity
-is delegated to ``status_archetype_kind``. By the time this check
-runs with a null archetype, status_archetype_kind has already
-errored on the missing/null enum value. The fall-through behavior
-is correct, not a layering gap.
-
-Per-branch lookups separate two distinct cases: (1) invalid
-contributor data (archetype/kind set but not in the schema's enum) —
-``status_archetype_kind`` already errors on this, so this check
-returns an empty section list to avoid double-firing on the same
-defect; (2) schema drift (a per-archetype/kind block missing
-``required_sections``, or a top-level type missing it) — direct
-subscript surfaces a loud KeyError per the C21 no-silent-fallbacks
-principle. The earlier ``.get(arch, {}).get("required_sections", [])``
-chain conflated the two; the explicit guard + direct subscript shape
-keeps each case visible.
+Layering: when archetype or kind is null or absent, this check falls
+through to the top-level required_sections — ``status_archetype_kind``
+is responsible for erroring on missing/null enum values, so the
+fall-through is correct rather than a layering gap. Invalid
+contributor data (archetype/kind set but not in the enum) returns an
+empty list here to avoid double-firing on the same defect; schema
+drift (a per-archetype/kind block missing ``required_sections``)
+surfaces as a loud KeyError.
 """
 
 import re
@@ -119,8 +71,7 @@ def _compute_required_sections(fm, type_spec):
     Invalid archetype/kind values are reported by ``status_archetype_kind``
     — this check returns ``[]`` cleanly rather than double-firing or
     crashing. Schema drift (a missing per-archetype, per-kind, or
-    top-level ``required_sections``) surfaces as a loud KeyError per
-    the C21 no-silent-fallbacks principle.
+    top-level ``required_sections``) surfaces as a loud KeyError.
     """
     sections = []
     arch = fm.get("archetype")

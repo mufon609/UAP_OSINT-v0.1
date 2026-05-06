@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Pre-commit gate — chain all repository validators into a single exit-
-# code gate. Non-zero exit on any failure blocks the commit.
+# Pre-commit gate — chain all repository validators into a single
+# exit-code gate. Non-zero exit on any failure blocks the commit.
 #
 # Runs, in order:
 #   1. scripts/tests/help-check.sh      — scripts/*.py --help doesn't crash
@@ -17,8 +17,6 @@
 #                                         stub-linking / description-drift
 #   7. python3 scripts/build-state.py --check
 #                                       — CLAUDE.md build-state block in sync
-#
-# Covers: BACKLOG "Testing infrastructure" step 4 (pre-commit hook).
 #
 # Adding or removing a gate: edit the `steps` array below. Step
 # numbering ("N/total") regenerates automatically from the array length.

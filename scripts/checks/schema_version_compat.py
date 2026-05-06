@@ -3,36 +3,14 @@
 Verifies the node's ``schema_version`` is an integer in
 ``schema.compatible_with``. Errors on type mismatch or version
 outside the compatible window (with a pointer to the migration
-docs). Absent schema_version is handled by frontmatter_required;
-this check no-ops on None.
+docs). Absent ``schema_version`` is handled by
+``frontmatter_required``; this check no-ops on None.
 
-Origin: foundational from the initial commit (``af5f789``); the
-schema_version compat check was inline in validate.py from day one
-as part of the basic frontmatter discipline. Migration trail:
-
-  - ``60bb88d`` (C11 session 3 lift to per-module shape)
-  - ``2f3effb`` (BACKLOG #8 close — "lib: consolidate schema_version
-    compat helper") consolidated the version-compat logic into
-    ``lib._common.schema_version_compat_messages``. Same helper now
-    serves four sites: this per-node check, ``artifact_top_level``
-    (research-artifact top-level), ``governance_files`` template
-    route, ``governance_files`` governance-doc route. Single source
-    of truth for the version-compat error wording + migration-
-    pointer message.
-
-Anchor pattern: foundational thin-wrapper on shared helper. Stable
-check shape since af5f789; the check delegates the operative
-logic to ``lib._common``. Same shape as the helper-using paths in
-``artifact_top_level`` and ``governance_files``. The four consumer
-sites converged on a single helper rather than maintaining four
-parallel implementations of the version-compat-message logic —
-consistent with the broader lockstep pattern for source-extraction
-helpers (BACKLOG-tracked refactors that pulled extract_source_text,
-normalize_for_compare, parse_frontmatter, the prose-drift tokenizer
-into lib).
-
-C18 confirmed byte-identity through both the C11 lift and the
-helper consolidation.
+Thin wrapper on ``lib._common.schema_version_compat_messages``,
+which is shared with ``artifact_top_level`` (research-artifact
+top-level) and the two ``governance_files`` routes (template +
+governance-doc). One source of truth for the version-compat error
+wording and migration-pointer message.
 """
 
 from checks import Issue
@@ -43,9 +21,8 @@ CHECK_NAME = "schema_version_compat"
 
 
 def check(ctx):
-    # Direct schema-config access; KeyError on missing `schema:` block
-    # or required nested keys (schema is foundational toolkit contract;
-    # silent fallbacks would mask schema drift).
+    # Direct subscript on the ``schema:`` block — schema malformation
+    # surfaces loudly rather than masking drift.
     schema_block = ctx.schema["schema"]
     compatible_with = schema_block["compatible_with"]
     current = schema_block["version"]

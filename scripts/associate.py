@@ -20,8 +20,6 @@ from collections import defaultdict
 
 from lib._common import REPO_ROOT, content_dirs
 
-# CONTENT_DIRS sourced from schema via lib helper — single source of
-# truth across the toolkit.
 CONTENT_DIRS = content_dirs()
 
 # Display order of groups in the Associated Nodes section

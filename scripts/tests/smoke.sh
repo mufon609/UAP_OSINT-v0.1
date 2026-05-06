@@ -1,21 +1,23 @@
 #!/usr/bin/env bash
 # Fixture-based smoke tests.
 #
-# For every node-type + archetype/kind combination, scaffold via new.py,
-# validate via validate.py, delete. Also scaffold a research artifact
-# for the document fixture and validate it via validate-research.py.
+# For every node-type + archetype / kind combination, scaffold via
+# new.py, validate via validate.py, then delete. Also scaffold a
+# research artifact for each fixture and exercise
+# validate-research.py + build-from-research.py + review-coverage.py
+# where the renderer ships.
 #
 # Catches regressions in:
 #   - new.py scaffolding (template rendering, conditional-block
 #     filtering by --archetype / --kind, placeholder substitution)
-#   - meta/templates/*.md content (if a required section is removed
-#     from a template, the scaffolded node fails validation here — the
-#     check_governance_files() pass catches template frontmatter drift,
-#     but only THIS test catches body-section drift)
+#   - meta/templates/*.md body content (the governance-files check
+#     catches template frontmatter drift; only this test catches
+#     body-section drift)
 #   - validate.py's required-section / archetype-conditional /
 #     kind-conditional enforcement
-#   - research-scaffold.py and validate-research.py on an empty-
-#     content artifact
+#   - research-scaffold.py + validate-research.py on empty-content
+#     artifacts; build-from-research.py + review-coverage.py for the
+#     types whose renderer ships
 #
 # Runtime: seconds. Intended for pre-commit / CI.
 # Exits 0 if every case passes; 1 if any fail.
@@ -80,9 +82,9 @@ test_scaffold "org gov"            organization --kind gov            --slug __s
 test_scaffold "org gov-contractor" organization --kind gov-contractor --slug __smoke-org-contractor
 test_scaffold "org private"        organization --kind private        --slug __smoke-org-private
 
-# --- document: both kinds + article + book doc_form (covers the post-news/book
-#     collapse paths: article is the former `news` case, book is the former
-#     `book` case with archival_status required) ---
+# --- document: both kinds, several doc_forms (article + book +
+#     social-post exercise the non-gov-doc paths; book exercises the
+#     archival_status-required conditional) ---
 test_scaffold "document gov-doc"         document --kind gov-doc     --form testimony --slug __smoke-doc-gov
 test_scaffold "document non-gov-doc"     document --kind non-gov-doc --form article   --slug __smoke-doc-non-gov
 test_scaffold "document book"            document --kind non-gov-doc --form book      --archival-status excerpts-only --slug __smoke-doc-book
@@ -92,11 +94,10 @@ test_scaffold "document social-post"     document --kind non-gov-doc --form soci
 test_scaffold "event hearing"   event --kind hearing   --slug __smoke-event-hearing
 test_scaffold "event encounter" event --kind encounter --slug __smoke-event-encounter
 
-# --- transcript: both kinds (hearing + other, where `other` covers the former
-#     `interview` case and broader speech sources). The `other` fixture
-#     exercises --derived-from pointing to the already-scaffolded doc-gov
-#     fixture so the frontmatter-pointer existence check has a resolves-clean
-#     case in the regression set. ---
+# --- transcript: both kinds. The `other` fixture exercises
+#     --derived-from pointing to the already-scaffolded doc-gov fixture
+#     so the frontmatter-pointer existence check has a resolves-clean
+#     case. ---
 test_scaffold "transcript hearing" transcript --kind hearing --slug __smoke-trans-hearing
 test_scaffold "transcript other"   transcript --kind other   --source-medium podcast --derived-from /documents/__smoke-doc-gov --slug __smoke-trans-other
 
@@ -133,19 +134,14 @@ fi
 
 # --- research artifact: media-type dispatch ---
 # Scaffolder must emit media_versioning: [] on every media artifact
-# regardless of kind (photo / video / audio / imagery-other). The
-# validator's media-type conditional requires the key present; a clean
-# validate pass on an empty scaffold confirms (a) the scaffolder adds
-# the section and (b) the validator's conditional block fires correctly.
-# Exercises both canonical and derivative node scaffolds — the
-# conditional-present rule doesn't gate on derivation_of, only on
-# target_node type. The F.4b renderer path is then exercised for each
-# artifact: build-from-research regenerates the node body, post-build
-# validate.py confirms structural integrity, review-coverage runs the
-# four checks (Coverage / Boundary / Stub-linking / Description-drift).
-# Derivative artifact surfaces the validate-research warn for empty
-# media_versioning + derivation_of set (non-blocking — contributor
-# review signal).
+# regardless of kind. The validator's media-type conditional requires
+# the key present; a clean validate pass on an empty scaffold confirms
+# both the scaffolder and the conditional dispatch. Each fixture then
+# exercises the renderer pipeline: build-from-research regenerates the
+# node body, validate.py confirms structural integrity, review-coverage
+# runs Coverage / Boundary / Stub-linking / Description-drift. The
+# derivative fixture surfaces the validate-research warn for empty
+# media_versioning + derivation_of set (non-blocking signal).
 for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/__smoke-media-audio" "media/__smoke-media-imagery" "media/__smoke-media-deriv"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$m_target" 2>&1)"
     rc=$?
@@ -164,7 +160,7 @@ for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/_
     else
         pass=$((pass + 1))
     fi
-    # Exercise F.4b renderer path
+    # Exercise the renderer pipeline
     artifact_out="$(python3 scripts/build-from-research.py "meta/research/$m_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
@@ -184,11 +180,10 @@ for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/_
 done
 
 # --- research artifact: transcript scaffold ---
-# Both transcript kinds (hearing, other) scaffold the same sections
-# post-Material-Differences elimination: description / primary_sources /
-# document_intrinsic / context_extrinsic / quotes / claims / speakers /
-# entities_referenced / naming_quirks. A clean validate
-# pass on an empty scaffold is the pass criterion.
+# Both transcript kinds (hearing, other) scaffold the same sections:
+# description / primary_sources / document_intrinsic / context_extrinsic
+# / quotes / speakers / entities_referenced / naming_quirks. A clean
+# validate pass on an empty scaffold is the pass criterion.
 for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-other"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$tk_target" 2>&1)"
     rc=$?
@@ -209,21 +204,14 @@ for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-
     fi
 done
 
-# --- research artifact: location dispatch (F.6a + F.6b) ---
-# Scaffolder must emit ownership_timeline: [], top_scope_activity: [],
-# and location_relationships: [] on every location artifact. Validator
-# enforces the type-conditional presence: missing-required fires on
-# location artifacts if absent; absent-on-other-type fires on non-
-# location artifacts if present. No kind-conditional extensions (location
-# has no kinds).
-#
-# F.6b extends the fixture to exercise the full renderer pipeline:
-# build-from-research regenerates the node body (Overview fact-table
-# from document_intrinsic location keys + Description + Ownership
-# Timeline + UAP-Scope Activity + Relationships with Confirmed/Flagged
-# split). Post-build validate.py confirms structural integrity;
-# review-coverage runs the four checks (Coverage / Boundary /
-# Stub-linking / Description-drift).
+# --- research artifact: location dispatch ---
+# Scaffolder emits ownership_timeline: [], top_scope_activity: [],
+# location_relationships: [] on every location artifact. Validator
+# enforces type-conditional presence (locations have no kinds).
+# Renderer pipeline is exercised end-to-end: build-from-research
+# emits the Overview fact-table + Description + Ownership Timeline +
+# {display_name}-Scope Activity + Relationships with Confirmed /
+# Flagged split.
 for loc_target in "locations/__smoke-location"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$loc_target" 2>&1)"
     rc=$?
@@ -242,7 +230,7 @@ for loc_target in "locations/__smoke-location"; do
     else
         pass=$((pass + 1))
     fi
-    # Exercise F.6b renderer path
+    # Exercise the renderer pipeline
     artifact_out="$(python3 scripts/build-from-research.py "meta/research/$loc_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
@@ -261,21 +249,15 @@ for loc_target in "locations/__smoke-location"; do
     fi
 done
 
-# --- research artifact: organization-kind dispatch (F.5a + F.5b) ---
-# Scaffolder must emit key_personnel: [] and org_relationships: [] on
-# every organization artifact regardless of kind, and emit contracts: []
-# only when kind == gov-contractor. Validator enforces the kind-
-# conditional contracts presence: missing-required fires on gov-
-# contractor if absent; absent-on-other-kind fires on gov or private if
-# present.
-#
-# F.5b extends this to the full renderer pipeline: build-from-research
-# regenerates the node body per-kind (Primary Contracts section emits
-# on gov-contractor only; all three kinds emit the Overview fact-table,
-# Key Personnel with leadership_class sub-grouping, Key Passages, and
-# org_relationships-sourced Relationships). Post-build validate.py
-# confirms structural integrity; review-coverage runs the four checks
-# (Coverage / Boundary / Stub-linking / Description-drift).
+# --- research artifact: organization-kind dispatch ---
+# Scaffolder emits key_personnel: [] and org_relationships: [] on
+# every organization artifact, and contracts: [] only when
+# kind == gov-contractor. Validator enforces the kind-conditional
+# contracts presence (missing on gov-contractor errors;
+# present-on-other-kind errors). Renderer pipeline is exercised
+# per-kind: Primary Contracts emits on gov-contractor only; all three
+# kinds emit Overview / Key Personnel (with leadership_class
+# sub-grouping) / Key Passages / Relationships.
 for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-contractor" "organizations/__smoke-org-private"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$ok_target" 2>&1)"
     rc=$?
@@ -294,7 +276,7 @@ for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-cont
     else
         pass=$((pass + 1))
     fi
-    # Exercise F.5b renderer path
+    # Exercise the renderer pipeline
     artifact_out="$(python3 scripts/build-from-research.py "meta/research/$ok_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then

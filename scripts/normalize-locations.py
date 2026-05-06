@@ -1,20 +1,18 @@
 #!/usr/bin/env python3
 """normalize-locations.py — diagnostic for quote source.location refs.
 
-Phase B of BACKLOG C1. Surveys the corpus for location refs that depend
-on extraction-version line numbers (`lines N-M` and `line N` forms),
-and for each such quote reports where the quote text actually lives in
-the current source extract — so contributors can convert refs to
-canonical forms (`p. N, ¶M`, `¶N`, `[MM:SS]`, `p. N`) per the convention
-in `meta/conventions.md` "Quote location refs: source-anchored, not
-extraction-anchored".
+Surveys the corpus for location refs that depend on extraction-version
+line numbers (``lines N-M`` and ``line N`` forms), and for each such
+quote reports where the quote text actually lives in the current source
+extract. Contributors use the report to convert refs to canonical forms
+(``p. N, ¶M``, ``¶N``, ``[MM:SS]``, ``p. N``) per ``meta/conventions.md``
+"Quote location refs: source-anchored, not extraction-anchored".
 
-Read-only. Reports only; does not modify any artifact. The boundary-
-inclusion class (contributor-authored ranges that include adjoining
-material from the start) cannot be auto-corrected — the canonical ref
-requires a per-source read against the underlying document. The tool's
-job is to make that per-source verification fast by surfacing the
-actual line range where the quote text lives in the current extract.
+Read-only — does not modify any artifact. The boundary-inclusion class
+(contributor-authored ranges that include adjoining material) requires a
+per-source read against the underlying document; this tool surfaces the
+actual line range where the quote text lives in the current extract so
+that verification is fast.
 
 Usage:
   scripts/normalize-locations.py                # corpus-wide survey
@@ -369,7 +367,7 @@ def render_csv(rows):
 
 def main(argv=None):
     p = argparse.ArgumentParser(
-        description="Diagnostic for quote source.location refs (BACKLOG C1 Phase B)",
+        description="Diagnostic for extraction-version-dependent quote source.location refs",
     )
     p.add_argument("path", nargs="?", default=None,
                    help="research artifact YAML or directory (default: all of meta/research/)")

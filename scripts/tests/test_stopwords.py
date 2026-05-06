@@ -45,11 +45,9 @@ from lib._common import STOPWORDS
 # prose-drift check exists to surface. Spans multiple semantic categories
 # so any single accidental STOPWORDS addition trips at least one entry.
 #
-# DELIBERATELY topic-neutral — corpus-specific terminology (UAP, AARO,
-# Pentagon, etc.) is OUT so this test continues to hold for forks of the
-# toolkit on different investigation topics. The entries below are
-# load-bearing for any primary-source investigation, not just the current
-# UAP instance.
+# Topic-neutral — corpus-specific terminology stays out so the test
+# continues to hold across topic forks. The entries below are
+# load-bearing for any primary-source investigation.
 # ---------------------------------------------------------------------------
 
 CONTENT_WORDS = {
@@ -89,27 +87,21 @@ CONTENT_WORDS = {
     "direct", "directed",
     "approve", "approved",
     "create", "created",
-    # Generic verbs — previously filtered as "carry little specific
-    # content," now treated as content. Empirical 2026-05-05 audit
-    # surfaced 6 real word-form drift cases (took/take, took/taken,
-    # said/stated paraphrases) when these were removed from STOPWORDS.
-    # Re-adding them as function words would re-open the paraphrase /
-    # word-form drift class.
+    # Generic verbs — content, not function words. Filtering them
+    # would mask paraphrase / word-form drift (took/take, took/taken,
+    # said/stated reporting-verb substitutions).
     "said", "says", "say", "saying",
     "took", "take", "taking", "taken",
     "made", "make", "making",
     "got", "get", "getting",
     "went", "goes", "gone",
     "came", "come", "coming",
-    # Cardinal numbers — counting drift ("one case" vs "three cases"
-    # is real evidentiary drift even when the word is grammatically a
-    # determiner). Was previously filtered under "determiners /
-    # quantifiers"; corrected 2026-05-05.
+    # Cardinal numbers — counting drift ("one case" vs "three cases")
+    # is evidentiary drift even when grammatically a determiner.
     "one", "two", "three",
     # Month name "May" lowercases to "may" and collides with the modal.
-    # Filtering masks month-attestation drift. Modal "may" filtering
-    # was a 2026-05-05 audit removal; the cost is rare modal-may false-
-    # positives on prose, accepted to preserve month-name detection.
+    # Filtering would mask month-attestation drift; the cost is rare
+    # modal-may false positives on prose.
     "may",
 }
 

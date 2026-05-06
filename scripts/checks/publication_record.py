@@ -3,27 +3,12 @@
 Present on reporter person artifacts. Each entry: required
 {publication, outlet, date, source}, optional {node_link, beat, note}.
 
+Shape-only: no enums. publication / outlet / date are all free-text
+source-attested fields — the entry defers vocabulary to the
+publishing record itself rather than imposing a closed enum.
+
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``.
-
-Origin: introduced at commit ``8007ef1`` (F.1a — person schema under
-statements-only discipline) as one of the four archetype-conditional
-checks landed together (alongside corroboration_items,
-program_involvement, vouching_chain). Same renderer-coupled-
-defensive shape; same F.1a anchor.
-
-No enums. Distinct from the three sibling F.1a archetype-conditional
-checks — corroboration_items has ``observation_type`` enum,
-program_involvement and vouching_chain share ``evidentiary_basis`` +
-``confidence`` enums. publication_record is shape-only:
-publication / outlet / date are all free-text source-attested
-fields. The simplification fits the reporter archetype's role —
-publications are themselves source-attested records (with their own
-``date`` field carrying the publication date), so the entry shape
-defers vocabulary to the publishing record itself.
-
-Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
-C18 confirmed byte-identity through the lift.
 """
 
 from checks import Issue

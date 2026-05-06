@@ -1,51 +1,28 @@
 """status-archetype-kind check — per-node NodeContext check.
 
-Three small enum-vocabulary checks bundled together because they share
-the same per-type-spec lookup pattern: read a list of valid values from
-``type_spec``, error if the frontmatter field's value isn't in the
-list. Absent fields are handled by frontmatter_required (when required)
-or skipped silently (when optional per type — e.g., archetype is
-person-only; document / event / transcript / media / location nodes
-have no archetype enum to validate against).
+Three enum-vocabulary checks bundled because they share the same
+per-type-spec lookup pattern: read valid values from ``type_spec``,
+error if the frontmatter field's value isn't in the list.
 
   - status     → ``type_spec.status_values``
   - archetype  → ``type_spec.archetypes`` keys
   - kind       → ``type_spec.kinds`` keys
 
-Origin: foundational from the initial commit (``af5f789``) — the
-status / archetype / kind enum-validation logic was inline in
-validate.py from day one. Migration: ``60bb88d`` (C11 session 3
-lift to per-module shape). Bundled per the C11 design doc §6
-("Inline validate_node logic disposition"): the three sub-checks
-are substantively independent but mechanically identical (same
-type_spec lookup pattern + same Issue shape). Splitting fragments
-shared structure without buying isolation.
+Absent required fields are handled by ``frontmatter_required``;
+fields that are optional per type are skipped silently (archetype
+is person-only; orgs / docs / events / transcripts / media nodes
+have no archetype enum; locations / findings have neither archetype
+nor kind).
 
-Presence-guard semantics (NOT truthy). The check fires whenever the
-field key is present in frontmatter, INCLUDING when the value is
-nullified (``archetype:`` with no value → ``None``) — None isn't
-in the valid list, so it errors. Distinct from a truthy-guard
-that would skip null values, which would create a layering gap with
-``frontmatter_required`` (presence-only check; key-present-with-null
-passes there). Together the two checks cover:
+PRESENCE-GUARD SEMANTICS (not truthy). The check fires whenever the
+field key is present, INCLUDING when nullified (``archetype:`` with
+no value → None) — None isn't in the valid list, so it errors.
+Truthy-guard semantics would skip null values and open a layering
+gap with ``frontmatter_required`` (presence-only check; null passes
+there). Together:
 
-  - missing field: frontmatter_required errors
-  - field present with null/empty/wrong value: this check errors
-
-C17 investigation history: an earlier docstring iteration of this
-check, plus the frontmatter_required + id_path_match docstrings,
-described the layering as if this check used truthy-guard semantics.
-That was wrong on closer read — the original code did use truthy
-guards (``if fm.get("archetype"):``), creating the very layering
-gap the docstrings claimed didn't exist. The C17 audit corrected
-the guards to presence-based + corrected the cross-referenced
-claims in the frontmatter_required and id_path_match docstrings.
-The corpus had no null fields when the fix landed, so the
-correction was zero-impact; the layering invariant now holds.
-
-C18 confirmed byte-identity through the C11 migration; the C17
-truthy → presence guard correction is a deliberate behavior
-change documented here and in the corresponding commit message.
+  - missing field: ``frontmatter_required`` errors
+  - field present with null / empty / wrong value: this check errors
 """
 
 from checks import Issue
@@ -58,19 +35,12 @@ def check(ctx):
     fm = ctx.fm
     type_spec = ctx.type_spec
 
-    # Presence-guard, not truthy: a field key with a null value
-    # (e.g., ``archetype:`` with no value → ``None``) reaches the
-    # enum check and errors because None is not a valid enum value.
-    # Truthy-guard semantics here would skip null values and create
-    # a layering gap with frontmatter_required's presence-only check.
-    #
-    # ``status_values`` is universal (every type declares one per
-    # schema.yaml); direct subscript surfaces a loud KeyError on
-    # schema drift per the C21 no-silent-fallbacks principle.
-    # ``archetypes`` / ``kinds`` are polymorphic (person has archetypes
-    # but no kinds; orgs/docs/events/transcripts/media have kinds but
-    # no archetypes; locations / findings have neither) — the .get
-    # fallbacks are meaningful absences, not drift masks.
+    # ``status_values`` is universal (every type declares one); direct
+    # subscript surfaces a loud KeyError on schema drift. ``archetypes``
+    # / ``kinds`` are polymorphic (person has archetypes but no kinds;
+    # orgs / docs / events / transcripts / media have kinds but no
+    # archetypes; locations / findings have neither) — the .get
+    # fallbacks below are meaningful absences, not drift masks.
     status_values = type_spec["status_values"]
     if "status" in fm and fm["status"] not in status_values:
         yield Issue(

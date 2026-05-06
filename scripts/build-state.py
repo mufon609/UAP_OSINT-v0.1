@@ -34,15 +34,14 @@ from lib._common import (
 
 CLAUDE_MD = REPO_ROOT / "CLAUDE.md"
 
-# (dir, display, grouping mode)
-#   archetype-table  — person nodes (Status + Archetype columns)
-#   kind-table       — orgs / docs / events / transcripts / media (Status + Kind columns)
-#   status-list      — simple list with status suffix
-#
-# The ``dir`` column is sourced from ``lib._common.content_dirs()`` —
-# single source of truth across the toolkit. ``display`` and ``mode``
-# are presentation concerns specific to build-state (CLAUDE.md table
-# rendering); kept here as a small static map keyed by dir name.
+# Per-directory display name + grouping mode for the build-state
+# block. Three modes:
+#   archetype-table — person nodes (Status + Archetype columns)
+#   kind-table      — orgs / docs / events / transcripts / media
+#                     (Status + Kind columns)
+#   status-list     — simple list with status suffix
+# ``display`` and ``mode`` are presentation-only; ``dir`` comes from
+# ``lib._common.content_dirs()``.
 _DISPLAY_AND_MODE = {
     "people":         ("People",        "archetype-table"),
     "organizations":  ("Organizations", "kind-table"),

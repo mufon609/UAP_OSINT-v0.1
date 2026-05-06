@@ -16,10 +16,6 @@ Runs as a preflight in ``validate.py`` before the manifest-integrity
 checks. On fatal Issue, the orchestrator skips the family (the three
 checks would silently no-op on the empty fallback anyway, but the
 explicit gate keeps the dependency obvious).
-
-Origin: lifted from inline ``validate.py`` ``main()`` orchestrator
-emissions. Those emitted ``Issue`` directly with no ``check_name``,
-leaving manifest-parse diagnostics outside the check-provenance trail.
 """
 
 import yaml

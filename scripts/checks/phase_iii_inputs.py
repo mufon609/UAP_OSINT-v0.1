@@ -1,32 +1,22 @@
 """phase-iii-inputs check — preflight for review-coverage.py.
 
-Validates the cross-layer inputs the four Phase III review checks
-(boundary, coverage, stub_linking, description_token_drift) require:
+Validates the cross-layer inputs the four review checks (boundary,
+coverage, stub_linking, description_token_drift) require:
 
   - ``target_node`` frontmatter points to a real ``/{type}/{slug}.md``
     file (FATAL — boundary / coverage / stub_linking all read
     ``ctx.node_text``; without a target file the chain can't run).
   - Every ``primary_sources[].path`` is locally available + text-
-    extractable. Missing files error; binary-by-design (image / video
-    / audio per manifest format) silently skip per the manifest
+    extractable. Missing files error; binary-by-design (image /
+    video / audio per manifest format) silently skip per the
     extraction contract.
 
-Runs after ``artifact_parse`` cleared the artifact-file / YAML-shape
-preflight. Source-extraction warnings are non-fatal — only
+Runs after ``artifact_parse`` cleared the file / YAML-shape preflight.
+Source-extraction warnings are non-fatal — only
 ``description_token_drift`` consumes ``ctx.source_text``, and it
 short-circuits internally on empty / missing source. Errors here are
 about source-archival integrity (a registered manifest path that's
-gone missing on disk), not Phase III review pipeline blockers.
-
-Origin: lifted from inline ``review-coverage.py`` orchestrator load
-logic. The orchestrator was hand-emitting Issues with
-``check_name='review_coverage_load'`` that pointed to no module; this
-module makes the contract honest. The "Description drift check:"
-prefix on the per-source Issue messages was a vestige of the time
-when ``description_token_drift`` was the only Phase III consumer of
-source_text and the warnings looked like its diagnostics; the
-generalized message reads more accurately now that the integrity
-concern is independent of any one check.
+gone missing on disk), not pipeline blockers.
 """
 
 from checks import Issue

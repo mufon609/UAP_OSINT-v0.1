@@ -24,22 +24,12 @@ no-op'ing.
 Reads ``ctx.h2_sections`` for the section-name route — the lazy
 property memoizes H2 extraction so this check shares the work with
 required_sections / section_rules / table_cell_word_budget on the
-same NodeContext (one extraction, multiple consumers).
+same NodeContext.
 
-Origin: commit ``26969ba`` (source-taxonomy consolidation that
-absorbed news + book into ``document`` via ``doc_form`` and added the
-``media`` type) introduced the dispatcher together with two
-simultaneous conditionals: ``archival_status`` required when
-``doc_form == book``, and the Media Versioning section required when
-``derivation_of`` is set. Both could have been two hardcoded ``if``
-blocks in validate.py; the dispatcher landed alongside the schema
-entries so future conditionals stay schema edits rather than
-accreting more hardcoded enforcers. Both routes are currently
-exercised — the field-key route by ``archival_status`` (with its
-``archival_status_values`` enum), the section-name route by Media
-Versioning. Migration to per-module shape happened later at commit
-``60bb88d`` (C11 session 3); C18 confirmed byte-identity through
-that move.
+Both routes are exercised today: the field-key route by
+``archival_status`` (with its ``archival_status_values`` enum) when
+``doc_form == book``, and the section-name route by Media Versioning
+when ``derivation_of`` is set on a media node.
 """
 
 import re

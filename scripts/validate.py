@@ -62,8 +62,7 @@ Checks:
   `types.{T}.conditionally_required` entries. Condition grammar:
   `<field> == <literal>`, `<field> is set`. Keys route to frontmatter-
   field presence+vocabulary checks (lowercase names) or section-
-  presence checks (Title Case names). Replaces earlier hardcoded
-  archival_status / Media Versioning rules.
+  presence checks (Title Case names).
 
   Chronological-ordering check — every markdown table with a date-
   bearing column (Date / Date / Time / Period / Start / Date Captured /
@@ -127,11 +126,6 @@ from checks import section_rules as ck_section_rules
 from checks import status_archetype_kind as ck_status_archetype_kind
 from checks import table_cell_word_budget as ck_table_cell_word_budget
 from checks import verbatim_quotes as ck_verbatim_quotes
-
-# REPO_ROOT, MANIFEST_PATH, load_schema, content_dirs all come from
-# lib._common — single source of truth shared with every other script
-# that walks the content layer.
-
 
 # =============================================================================
 # Per-node validation orchestration
@@ -231,13 +225,10 @@ def main():
 
     all_issues = []
 
-    # Load the manifest once for shared global state. The three manifest-
-    # integrity checks consume BaseContext.manifest_entries; the
-    # orchestrator's single load (here) replaces the legacy load-3x
-    # per-check duplication. Parse-failure handling delegates to the
-    # ``manifest_parse`` preflight check below — this loader stays
-    # exception-tolerant so the preflight check produces the
-    # contributor-facing diagnostic with proper provenance.
+    # Single manifest load shared across the manifest-integrity checks
+    # via BaseContext.manifest_entries. Parse failures fall through to
+    # the ``manifest_parse`` preflight check, which produces the
+    # contributor-facing diagnostic.
     manifest_entries = []
     if MANIFEST_PATH.exists():
         try:
@@ -250,37 +241,32 @@ def main():
 
     base_ctx = BaseContext(schema=schema, manifest_entries=manifest_entries)
 
-    # Manifest-integrity preflight. On fatal Issue (parse failure /
-    # non-list root) the three manifest-integrity checks below would
-    # no-op on the empty fallback anyway — explicit gate makes the
-    # dependency obvious + suppresses noise in the failure path.
+    # Manifest-integrity preflight. Skip downstream manifest checks on a
+    # fatal Issue (parse failure / non-list root) — they would no-op on
+    # the empty fallback and pollute the report.
     manifest_parse_issues = list(ck_manifest_parse.check(base_ctx))
     all_issues.extend(manifest_parse_issues)
     if not any(i.fatal for i in manifest_parse_issues):
-        # Source-integrity backstop. A checksum mismatch means downstream
-        # quote verifications may be validating against altered source
-        # material. The four manifest checks share BaseContext.manifest_entries
-        # from the single load above; together they cover the manifest's
-        # four closed enums (status / format / extraction_type /
-        # archive_status) plus content-byte integrity (sha256) and
-        # composite-indicator state consistency.
+        # Manifest-integrity family — content-byte integrity (sha256)
+        # plus the manifest's closed enums (status / format /
+        # extraction_type / archive_status). A checksum mismatch means
+        # downstream quote verifications may be validating against
+        # altered source material.
         all_issues.extend(ck_manifest_checksums.check(base_ctx))
         all_issues.extend(ck_manifest_archive_status.check(base_ctx))
         all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
         all_issues.extend(ck_manifest_value_enums.check(base_ctx))
 
-    # Governance-file validation. Every .md under meta/ carries id / type
-    # / schema_version / created frontmatter; templates also have a
-    # placeholder-shape id. Runs regardless of --path argument since
-    # template drift propagates to every node scaffolded afterward.
+    # Governance-file validation. Runs regardless of --path argument
+    # since template drift propagates to every node scaffolded afterward.
     all_issues.extend(ck_governance_files.check(base_ctx))
 
     for node in nodes:
         all_issues.extend(validate_node(node, base_ctx))
 
-    # broken_links accumulated by ck_link_resolution into base_ctx.broken_links
-    # — out-of-band metadata channel per design doc Q2 (broken stubs are
-    # backlog signal, not violations; never appear as Issues).
+    # broken_links accumulate into base_ctx.broken_links via
+    # ck_link_resolution — out-of-band metadata channel; broken stubs
+    # are backlog signal, not violations, so they never appear as Issues.
     broken_links = base_ctx.broken_links
 
     errors = [i for i in all_issues if i.level == "error"]

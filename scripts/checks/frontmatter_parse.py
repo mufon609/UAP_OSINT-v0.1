@@ -8,17 +8,11 @@ a known node type. Three fatal cases:
   - 'type' field absent or empty.
   - 'type' value not a key in ``schema.types``.
 
-Runs as a preflight in ``validate.py``'s per-node iteration: orchestrator
-constructs a minimal NodeContext (text + base context only), dispatches
-this check, and short-circuits the main ``_NODE_CHECKS`` chain on any
-fatal Issue. Downstream checks rely on ``ctx.fm`` / ``ctx.node_type`` /
-``ctx.type_spec`` being populated, so a clean parse + valid type is a
-precondition for the chain.
-
-Origin: lifted from inline ``validate.py`` parse/type-lookup logic. The
-orchestrator was hand-emitting Issues with ``check_name='frontmatter_parse'``
-that pointed to no module, breaking the "every named check lives at
-``scripts/checks/{name}.py``" rule. This module makes the contract honest.
+Runs as a preflight in ``validate.py``'s per-node iteration: the
+orchestrator constructs a minimal NodeContext (text + base context
+only), dispatches this check, and short-circuits the main
+``_NODE_CHECKS`` chain on any fatal Issue. Downstream checks rely on
+``ctx.fm`` / ``ctx.node_type`` / ``ctx.type_spec`` being populated.
 """
 
 from checks import Issue
