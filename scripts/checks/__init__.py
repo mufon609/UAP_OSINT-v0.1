@@ -157,7 +157,8 @@ class ResearchContext(BaseContext):
 
     def __init__(self, base, path, rel, raw_lines, data=None,
                  target_type=None, target_archetype=None,
-                 target_kind=None, target_derivation_of=None):
+                 target_kind=None, target_derivation_of=None,
+                 node_path=None, node_text=None, source_text=None):
         super().__init__(
             schema=base.schema,
             manifest_paths=base.manifest_paths,
@@ -172,3 +173,10 @@ class ResearchContext(BaseContext):
         self.target_archetype = target_archetype
         self.target_kind = target_kind
         self.target_derivation_of = target_derivation_of
+        # Cross-layer fields used by review-coverage.py checks (Phase III).
+        # Populated by the review-coverage orchestrator after target-node
+        # resolution + source extraction; left None for validate-research.py
+        # checks (which don't access them).
+        self.node_path = node_path
+        self.node_text = node_text
+        self.source_text = source_text

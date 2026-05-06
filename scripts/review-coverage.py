@@ -7,37 +7,15 @@ validate.py (node structure + verbatim quotes) and validate-research.py
 (artifact structure); this script compares the two layers against each
 other.
 
-Checks:
-
-  Coverage check — every artifact quote.text appears in the node body
-  (whitespace/punctuation normalized per validate.py rules).
-
-  Boundary check — the node body (outside Associated Nodes) matches
-  what `build-from-research.py --dry-run` would regenerate from the
-  current artifact. Divergence means the artifact drifted from the
-  node, the node was hand-edited, or the renderer changed.
-
-  Stub-linking check — every entities_referenced.wrap_path appears as
-  a [`/path`] link in the node body.
-
-  Description-drift check — every significant token in the node's
-  ## Description section appears in the artifact's grounding text:
-  source text + context_extrinsic strings + document_intrinsic strings
-  + naming_quirks canonical forms + entities_referenced names. Closes
-  the drift surface on contributor-synthesis prose; fabricated
-  entities, abbreviation expansions that don't match source, or numbers
-  not in any grounding field become commit-blocking errors. Fine drift
-  (dropped qualifiers, synonym rephrases at the lowercase level) is
-  not caught — semantic review (Phase III Step 2) is still required
-  for that class.
-
-Scope: renderer-supported types (document, person, event, transcript,
-media, organization, location). Finding is acknowledged and skipped —
-F.7 will extend coverage when the renderer ships.
+Per-check modules live in scripts/checks/. This file is the orchestrator:
+loads schema + manifest, iterates artifacts, dispatches the four cross-
+layer checks (coverage, boundary, stub_linking, description_token_drift)
+via an explicit step list. Skipped on unsupported types (finding pending
+F.7 renderer).
 
 This script handles mechanical rules only. Semantic / narrative-coherence
 review (agent-assisted) is a separate pass referenced in
-`prompts/build.md`.
+``prompts/build.md``.
 
 Usage:
   review-coverage.py {artifact_path}
@@ -50,13 +28,9 @@ Expected execution order per prompts/build.md:
 """
 
 import argparse
-import re
-import subprocess
 import sys
 from pathlib import Path
 from collections import defaultdict
-
-from lib._common import extract_source_text, normalize_for_compare
 
 try:
     import yaml
@@ -64,15 +38,22 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+from checks import BaseContext, Issue, ResearchContext
+from checks import boundary as ck_boundary
+from checks import coverage as ck_coverage
+from checks import description_token_drift as ck_description_token_drift
+from checks import stub_linking as ck_stub_linking
+from lib._common import extract_source_text
+
 
 # =============================================================================
 # Constants
 # =============================================================================
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-SCRIPTS_DIR = REPO_ROOT / "scripts"
+SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
 SOURCES_DIR = REPO_ROOT / "sources"
-BUILD_FROM_RESEARCH = SCRIPTS_DIR / "build-from-research.py"
+MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 
 TYPE_DIRS = {
@@ -80,70 +61,41 @@ TYPE_DIRS = {
     "event": "events", "transcript": "transcripts", "media": "media",
     "location": "locations", "finding": "findings",
 }
+
 # Matches build-from-research.py SUPPORTED_TYPES. Expand in lockstep.
-SUPPORTED_TYPES = {"document", "person", "event", "transcript", "media", "organization", "location"}
-
-LINK_PATTERN = re.compile(r"\[`(/[^`]+)`\]")
-
-# --- Token-drift patterns and vocab (description-drift check) --------------
-# Markdown link syntax used to wrap entity paths in prose. Stripped
-# before token extraction since wrap_paths are repo identifiers, not
-# content from the source.
-MARKDOWN_LINK_PATTERN = re.compile(r"\[`/[^`]+`\]")
-# Wrap-inside-parens pattern — strips the PARENS ALONG WITH the wrap when
-# the parens contain only the wrap path. Prevents orphan `()` in the
-# stripped output when contributors write `Name ([`/path`])` inside a
-# double-quoted span, which otherwise becomes `Name ()` and leaks into
-# the description-drift check as a bogus token.
-WRAP_IN_PARENS_PATTERN = re.compile(r"\s*\(\s*\[`/[^`]+`\]\s*\)")
-
-# Designator patterns like VFA-41, CVN-68, F/A-18F, APG-73 — uppercase
-# tokens combining letters and digits around a hyphen or slash. These
-# should appear verbatim in the source when prose cites them.
-DESIGNATOR_PATTERN = re.compile(r"\b[A-Z][A-Z0-9]*[-/][A-Z0-9/-]*[A-Z0-9]\b")
-
-# Digit sequences — years, altitudes, counts. Allows commas, periods,
-# and trailing + ("10+").
-NUMBER_PATTERN = re.compile(r"\b\d[\d,.]*\+?\b")
-
-# Capitalized word pattern — proper-noun candidates. Matches hyphenated
-# words like "Forty-One" as a single token.
-CAPWORD_PATTERN = re.compile(r"\b[A-Z][A-Za-z0-9-]*\b")
-
-# Capitalized words that are grammatical (pronouns, articles, prepositions,
-# conjunctions, adverbs). Excluded from drift-check token collection so
-# "Per Fravor," doesn't flag "Per" as a missing proper noun.
-CAPITALIZED_STOPWORDS = frozenset({
-    "I", "He", "She", "They", "We", "You", "It", "Me", "Us", "Them",
-    "The", "A", "An",
-    "Per", "This", "That", "These", "Those",
-    "Here", "There", "When", "Where", "Why", "How",
-    "But", "And", "Or", "So", "Yet", "For", "Nor",
-    "In", "On", "At", "By", "To", "From", "With", "Of", "About",
-    "After", "Before", "During", "Since", "Until", "Throughout",
-    "As", "If", "While", "Though", "Although", "Because",
-    "My", "Your", "His", "Her", "Their", "Our", "Its",
-    "All", "Any", "Each", "Every", "Some", "Most", "Few", "Many",
-    "No", "Not", "None", "Nothing",
-    "Yes", "Now", "Then", "Also",
-    "Both", "Either", "Neither",
-})
+SUPPORTED_TYPES = {
+    "document", "person", "event", "transcript", "media", "organization", "location",
+}
 
 
 # =============================================================================
-# Types and reporting
+# Step list
 # =============================================================================
 
-class Issue:
-    def __init__(self, path, level, message):
-        self.path = str(path)
-        self.level = level  # "error" | "warn" | "info"
-        self.message = message
+_REVIEW_CHECKS = [
+    ck_coverage,
+    ck_boundary,
+    ck_stub_linking,
+    ck_description_token_drift,
+]
 
 
 # =============================================================================
-# Parsing helpers
+# Helpers
 # =============================================================================
+
+def load_schema():
+    with open(SCHEMA_PATH) as f:
+        return yaml.safe_load(f)
+
+
+def load_manifest_paths():
+    if not MANIFEST_PATH.exists():
+        return set()
+    with open(MANIFEST_PATH) as f:
+        entries = yaml.safe_load(f) or []
+    return {e.get("path") for e in entries if e.get("path")}
+
 
 def load_artifact(path):
     try:
@@ -172,128 +124,10 @@ def target_node_type(artifact):
     return reverse.get(dir_name)
 
 
-def excise_associated_nodes(text):
-    """Strip the '## Associated Nodes' section (up to the next H2) so the
-    boundary diff can focus on the Phase II-rendered body. The Associated
-    Nodes section is regenerated by associate.py post-build and is not part
-    of build-from-research.py's deterministic output (it emits a placeholder).
-    """
-    pattern = re.compile(
-        r"^## Associated Nodes\s*$.*?(?=^## |\Z)",
-        re.MULTILINE | re.DOTALL,
-    )
-    return pattern.sub("", text).rstrip() + "\n"
-
-
-def truncate(s, n=80):
-    s = s.replace("\n", " ").strip()
-    return s if len(s) <= n else s[:n] + "..."
-
-
-# extract_source_text + normalize_for_compare moved to scripts/lib/_common.py
-# (centralized 2026-05-01) to keep validate.py / validate-research.py /
-# review-coverage.py in mechanical lockstep on source extraction and quote
-# normalization. See _common.py for the full implementation and rationale.
-
-
-def strip_markdown_links(text):
-    """Remove [`/path/to/entity`] wrap-path link syntax from prose text.
-
-    These are repository identifiers (navigational cross-references), not
-    source content. A wrap around a squadron name
-    (`[`/organizations/vfa-41`]`) asserts a repo fact (the canonical
-    entity lives here), not a source fact (the document said "VFA-41").
-    Drift checks run on the bare prose left after stripping — the entity
-    linkage is checked separately by the stub-linking pass.
-
-    Two-pass strip:
-      (1) Wraps inside empty parens `( [`/path`] )` are removed AS A
-          UNIT (parens + wrap + interior whitespace). This prevents
-          orphan `()` from leaking into the extracted text when
-          contributors write `Name ([`/path`])` inside a double-quoted
-          span. Without this pass, the bare `()` becomes part of any
-          double-quoted token extracted for drift analysis and fails
-          the description-drift substring check against source.
-      (2) Any remaining bare wraps (not surrounded by empty parens) are
-          stripped by the standard pattern.
-    """
-    text = WRAP_IN_PARENS_PATTERN.sub("", text)
-    return MARKDOWN_LINK_PATTERN.sub("", text)
-
-
-def extract_description_drift_tokens(text):
-    """Return set of tokens from a node-body Description worth checking
-    against the artifact's grounding. A "drift token" is one that, if
-    fabricated, would represent real evidentiary drift in the rendered
-    Description section:
-
-      - Hyphen/slash designators (VFA-41, F/A-18F, CVN-68, APG-73)
-      - Digit sequences (2004, 20,000, 10+)
-      - Capitalized non-stopword words (proper nouns: Fravor, Pentagon,
-        Nimitz, etc. — also compound pieces like "Forty-One")
-      - Quoted strings (content inside " " or ' ') — direct source-word
-        references
-
-    Grammatical / function words that happen to be capitalized (pronouns,
-    articles, sentence-initial conjunctions) are filtered via the
-    CAPITALIZED_STOPWORDS list. Single characters and empty strings are
-    dropped.
-
-    NOT the same algorithm as `lib/_common.extract_significant_tokens`,
-    which is the prose-drift tokenizer (lowercase words ≥3 chars,
-    STOPWORDS-filtered, used by validate-research.py and check-vocab.py).
-    The two functions solve different validation problems and were
-    deliberately given distinct names (2026-05-05) to prevent future
-    "let's deduplicate" mistakes that would silently break one or both
-    drift checks.
-    """
-    text = strip_markdown_links(text)
-    tokens = set()
-
-    # 1. Hyphen/slash designators (caps + digit/letter mix)
-    for m in DESIGNATOR_PATTERN.finditer(text):
-        tokens.add(m.group())
-
-    # 2. Digit sequences
-    for m in NUMBER_PATTERN.finditer(text):
-        tokens.add(m.group())
-
-    # 3. Capitalized words (proper-noun candidates). Remove designators
-    #    and numbers first so they don't double-match.
-    clean = DESIGNATOR_PATTERN.sub(" ", text)
-    clean = NUMBER_PATTERN.sub(" ", clean)
-    for m in CAPWORD_PATTERN.finditer(clean):
-        word = m.group()
-        if len(word) < 2:
-            continue
-        if word in CAPITALIZED_STOPWORDS:
-            continue
-        tokens.add(word)
-
-    # 4. Double-quoted strings — content inside "..." must match verbatim
-    #    (the quotes signal an explicit source-word reference).
-    for m in re.finditer(r'"([^"]+)"', text):
-        q = m.group(1).strip()
-        if q:
-            tokens.add(q)
-
-    # Single-quoted strings are NOT extracted. In English prose, a naked
-    # apostrophe is overwhelmingly a possessive or contraction (e.g.,
-    # "Gallaudet's system and his deputy's"), not a quote delimiter.
-    # Matching `'([^']+)'` over prose produces false positives like
-    # "s system and his deputy" that flag as bogus drift. Any legitimate
-    # single-quoted passage worth checking already gets caught by the
-    # capitalized-word and designator extractors, or can be written with
-    # double quotes if it must be matched as a phrase.
-
-    return tokens
-
-
-def gather_source_text(artifact):
+def _gather_source_text(artifact):
     """Concatenate plaintext of every archived primary source on the
-    artifact. Returns (combined_text, missing_paths) where
-    missing_paths is any primary_sources[].path that could not be
-    extracted."""
+    artifact. Returns (combined_text, missing_paths) where missing_paths
+    is any primary_sources[].path that could not be extracted."""
     chunks = []
     missing = []
     for ps in (artifact.get("primary_sources") or []):
@@ -302,11 +136,8 @@ def gather_source_text(artifact):
         rel_path = ps.get("path")
         if not rel_path:
             continue
-        # Binary primary sources (image/video/audio) are not text-extractable
-        # by design — silent skip rather than warn. The manifest-aligned format
-        # field on the artifact entry is the source of truth for whether a source
-        # has text content; binary-by-design sources don't belong in the
-        # description-drift token pool and don't merit a "missing source" warning.
+        # Binary primary sources (image/video/audio) are not text-
+        # extractable by design — silent skip rather than warn.
         if ps.get("format") in ("image", "video", "audio"):
             continue
         full = SOURCES_DIR / rel_path
@@ -318,270 +149,75 @@ def gather_source_text(artifact):
             missing.append(rel_path)
             continue
         chunks.append(text)
-    return ("\n".join(chunks), missing)
-
-
-def gather_grounding_text(artifact, source_text):
-    """Build the text corpus against which Description prose tokens are
-    checked (description-drift check).
-
-    Grounding sources:
-      - source_text                        (what the document actually says)
-      - context_extrinsic string values    (contextual metadata — hearing
-                                            date, display title, provenance
-                                            entries; facts the artifact
-                                            declares from outside the doc)
-      - document_intrinsic string values   (facts from inside the document —
-                                            internal title, classification,
-                                            authors_per_document)
-      - naming_quirks[].canonical          (approved canonical forms to use
-                                            in prose, even when source uses
-                                            a different spelling — e.g.,
-                                            "Leslie Kean" canonical vs
-                                            source's "Leslie Keane")
-      - entities_referenced[].name         (approved entity display names)
-
-    Explicitly NOT in grounding (would be circular — grounding contributor
-    prose with other contributor prose):
-      - entities_referenced[].context_summary
-      - rumors[] text
-    """
-    chunks = [source_text or ""]
-
-    def collect_strings(obj):
-        if isinstance(obj, str):
-            chunks.append(obj)
-        elif isinstance(obj, list):
-            for item in obj:
-                collect_strings(item)
-        elif isinstance(obj, dict):
-            for v in obj.values():
-                collect_strings(v)
-
-    collect_strings(artifact.get("context_extrinsic") or {})
-    collect_strings(artifact.get("document_intrinsic") or {})
-
-    for nq in (artifact.get("naming_quirks") or []):
-        if isinstance(nq, dict) and nq.get("canonical"):
-            chunks.append(nq["canonical"])
-
-    for e in (artifact.get("entities_referenced") or []):
-        if isinstance(e, dict) and e.get("name"):
-            chunks.append(e["name"])
-
-    return "\n".join(chunks)
-
-
-def extract_description_text(node_text):
-    """Return the prose body of the node's `## Description` section, or
-    None if the section is absent (person nodes have no Description
-    section — their prose lives in background / uap_relevance /
-    credibility_notes instead)."""
-    m = re.search(
-        r"^## Description\s*$(.*?)(?=^## |\Z)",
-        node_text, re.MULTILINE | re.DOTALL,
-    )
-    if not m:
-        return None
-    return m.group(1).strip()
-
-
-# =============================================================================
-# Coverage check
-# =============================================================================
-
-def check_coverage(artifact, node_text, rel):
-    issues = []
-    normalized_body = normalize_for_compare(node_text)
-
-    for q in artifact.get("quotes") or []:
-        if not isinstance(q, dict):
-            continue
-        text = (q.get("text") or "").strip()
-        if not text:
-            continue
-        if normalize_for_compare(text) not in normalized_body:
-            issues.append(Issue(rel, "error",
-                f"Coverage: quote {q.get('id')!r} text not found in node "
-                f'body: "{truncate(text)}"'))
-
-    return issues
-
-
-# =============================================================================
-# Boundary check (re-render + diff, excluding Associated Nodes)
-# =============================================================================
-
-def check_boundary(artifact_path, node_path, rel):
-    issues = []
-    try:
-        proc = subprocess.run(
-            ["python3", str(BUILD_FROM_RESEARCH),
-             str(artifact_path), "--dry-run", "--no-validate"],
-            capture_output=True, text=True, timeout=60,
-        )
-    except subprocess.TimeoutExpired:
-        issues.append(Issue(rel, "error",
-            "Boundary: build-from-research.py timed out during dry-run"))
-        return issues
-
-    if proc.returncode != 0:
-        detail = (proc.stderr.strip() or proc.stdout.strip())[:200]
-        issues.append(Issue(rel, "error",
-            f"Boundary: build-from-research.py exited {proc.returncode}: {detail}"))
-        return issues
-
-    regenerated = proc.stdout
-    current = node_path.read_text()
-
-    regen_excised = excise_associated_nodes(regenerated).strip()
-    current_excised = excise_associated_nodes(current).strip()
-
-    if regen_excised != current_excised:
-        issues.append(Issue(rel, "error",
-            "Boundary: node body diverges from build-from-research.py output. "
-            "Either the artifact drifted from the node, or the node was "
-            "hand-edited. Re-run build-from-research.py to resync."))
-    return issues
-
-
-# =============================================================================
-# Stub-linking check
-# =============================================================================
-
-def check_stub_linking(artifact, node_text, rel):
-    issues = []
-    links_in_node = set(LINK_PATTERN.findall(node_text))
-    # Self-reference filter: skip any entity whose wrap_path resolves to
-    # the artifact's own target_node. Person nodes (and others) don't
-    # self-wrap, so a subject-as-entity entry would cause a spurious
-    # Stub-linking error. The subject's identity is carried by the node
-    # itself (Identity section on person; equivalent surfaces elsewhere).
-    target_node = artifact.get("target_node") or ""
-    self_path = f"/{target_node}" if target_node and not target_node.startswith("/") else target_node
-    for e in artifact.get("entities_referenced") or []:
-        if not isinstance(e, dict):
-            continue
-        wp = e.get("wrap_path")
-        if not wp:
-            continue
-        if wp == self_path:
-            continue  # subject of the artifact is not listed as an "other" entity
-        if wp not in links_in_node:
-            issues.append(Issue(rel, "error",
-                f"Stub-linking: entity {e.get('id')!r} ({e.get('name')!r}) "
-                f"wrap_path {wp!r} does not appear as a [`{wp}`] link in the node"))
-    return issues
-
-
-# =============================================================================
-# Description-drift check (against artifact grounding)
-# =============================================================================
-
-def check_description_token_drift(artifact, node_text, source_text, rel):
-    """Verify every significant token in the node's ## Description section
-    appears in the artifact's grounding text (source + context_extrinsic +
-    document_intrinsic + naming_quirks canonical + entities_referenced
-    names). See gather_grounding_text() docstring for the full rationale.
-
-    Description is the contributor-synthesis prose layer on document
-    nodes (and parallels exist on other node types' synthesis surfaces).
-    Fabricated entities, abbreviation expansions that don't match source,
-    numbers not in any grounding field all become commit-blocking errors.
-
-    Limit: fine drift at the lowercase level (e.g., "warning area" vs
-    source's "early warning area") is NOT caught — "early" is lowercase
-    and not extracted as a significant token. Semantic review (Phase III
-    Step 2) remains required for that class of drift.
-    """
-    issues = []
-    desc = extract_description_text(node_text)
-    if desc is None:
-        return issues
-
-    tokens = extract_description_drift_tokens(desc)
-    if not tokens:
-        return issues
-
-    if not source_text:
-        # Missing-source error already reported by gather_source_text
-        # caller; skip here to avoid duplicate noise
-        return issues
-
-    grounding = gather_grounding_text(artifact, source_text)
-    norm_grounding = normalize_for_compare(grounding).lower()
-
-    for token in sorted(tokens):
-        norm_token = normalize_for_compare(token).lower()
-        if not norm_token:
-            continue
-        if norm_token not in norm_grounding:
-            issues.append(Issue(rel, "error",
-                f"Description drift: token {token!r} not found in source, "
-                f"context_extrinsic, document_intrinsic, naming_quirks "
-                f"canonical, or entities_referenced names. Either correct "
-                f"the description to match available grounding, or add "
-                f"the supporting data to the artifact."))
-    return issues
+    return "\n".join(chunks), missing
 
 
 # =============================================================================
 # Per-artifact orchestration
 # =============================================================================
 
-def review_artifact(artifact_path):
+def review_artifact(artifact_path, base_ctx):
     """Return (issues, skipped_reason_or_None)."""
     rel = artifact_path.relative_to(REPO_ROOT)
 
     if not artifact_path.exists():
-        return [Issue(rel, "error", "Artifact file does not exist")], None
+        return [Issue(rel, "error", "Artifact file does not exist",
+                      check_name="review_coverage_load")], None
 
     artifact = load_artifact(artifact_path)
 
     node_path = target_node_path(artifact)
     if node_path is None or not node_path.exists():
-        return [Issue(rel, "error",
-            f"target_node {artifact.get('target_node')!r} does not point to an existing file")], None
+        return [Issue(
+            rel, "error",
+            f"target_node {artifact.get('target_node')!r} does not point "
+            f"to an existing file",
+            check_name="review_coverage_load",
+        )], None
 
     node_type = target_node_type(artifact)
     if node_type not in SUPPORTED_TYPES:
         return [], f"node type {node_type!r} not yet supported in Phase III (BACKLOG)"
 
     node_text = node_path.read_text()
-
-    # Gather source plaintext for description-drift check (cached across calls)
-    source_text, missing_sources = gather_source_text(artifact)
+    source_text, missing_sources = _gather_source_text(artifact)
 
     issues = []
     for path in missing_sources:
         full = SOURCES_DIR / path
         if not full.exists():
-            # File not on disk at all — legitimate error (source archival
-            # discipline broken). Manifest points at a path that isn't
-            # present.
-            issues.append(Issue(rel, "error",
+            issues.append(Issue(
+                rel, "error",
                 f"Description drift check: primary source {path!r} missing "
                 f"— file not present on disk under sources/. Source-archival "
                 f"integrity issue; verify the manifest entry and re-archive "
-                f"if needed."))
+                f"if needed.",
+                check_name="review_coverage_load",
+            ))
         else:
             # File exists but isn't text-extractable — typical for binary
-            # media (video/audio/image). The quote-verbatim check in
-            # validate.py treats this as warn (not error) via the same
-            # reasoning; the description-drift check here follows suit.
-            # Contributor takes responsibility for any verbatim quotes
-            # from the media source (manual frame/audio inspection).
-            # Non-blocking.
-            issues.append(Issue(rel, "warn",
+            # media. Non-blocking warn (matches verbatim-quote check
+            # semantics in validate.py).
+            issues.append(Issue(
+                rel, "warn",
                 f"Description drift check: primary source {path!r} not text-"
                 f"extractable (likely binary media — video/audio/image). "
                 f"Tokens from this source skipped; verbatim quote extraction "
-                f"from media sources requires manual contributor verification."))
+                f"from media sources requires manual contributor verification.",
+                check_name="review_coverage_load",
+            ))
 
-    issues.extend(check_coverage(artifact, node_text, rel))
-    issues.extend(check_boundary(artifact_path, node_path, rel))
-    issues.extend(check_stub_linking(artifact, node_text, rel))
-    issues.extend(check_description_token_drift(artifact, node_text, source_text, rel))
+    ctx = ResearchContext(
+        base_ctx, path=artifact_path, rel=rel,
+        raw_lines=[],  # not needed by review-coverage checks
+        data=artifact,
+        node_path=node_path,
+        node_text=node_text,
+        source_text=source_text,
+    )
+
+    for check_module in _REVIEW_CHECKS:
+        issues.extend(check_module.check(ctx))
     return issues, None
 
 
@@ -616,12 +252,16 @@ def main():
         parser.print_help()
         sys.exit(0)
 
+    schema = load_schema()
+    manifest_paths = load_manifest_paths()
+    base_ctx = BaseContext(schema=schema, manifest_paths=manifest_paths)
+
     all_issues = []
     reviewed = 0
     skipped = []
 
     for p in artifacts:
-        issues, skip_reason = review_artifact(p)
+        issues, skip_reason = review_artifact(p, base_ctx)
         if skip_reason:
             skipped.append((p.relative_to(REPO_ROOT), skip_reason))
             continue
