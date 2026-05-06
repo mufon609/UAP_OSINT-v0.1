@@ -56,7 +56,7 @@ Remaining 42 should land at ✅.
 | conditionally_required | ✅ | Anchored to `26969ba` (source-taxonomy consolidation surfaced two simultaneous conditionals — archival_status when doc_form==book, Media Versioning when derivation_of). Dispatcher pattern chosen over two hardcoded `if` blocks to keep schema as the single source of truth. Both routes (field-key + section-name) currently exercised. |
 | doc_form_archival_status | ☐ | Likely subsumed by conditionally_required pattern |
 | finding_cross_ref | ☐ | Cross-references entities[] from finding |
-| frontmatter_required | 🟡 | Required-field walk |
+| frontmatter_required | ✅ | Foundational schema discipline; present in initial commit (`af5f789`). No specific incident — class of failure protected against is dispatcher-correctness (downstream archetype/kind dispatch fails if required fields are absent). Presence-only by design; downstream enum checks (`status_archetype_kind`) catch nullified values. |
 | id_path_match | 🟡 | rel ↔ fm.id consistency |
 | link_resolution | ☐ | Writes to `ctx.broken_links` (out-of-band) |
 | required_sections | ☐ | H2 presence per type_spec |
