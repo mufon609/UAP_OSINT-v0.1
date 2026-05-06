@@ -27,6 +27,42 @@ noun + designator + quoted-string drift candidates; that one
 tokenizes lowercase content words. Deliberate naming distinction
 (2026-05-05 lib refactor) prevents future "let's deduplicate" mistakes
 that would silently break either drift check.
+
+Origin: introduced at commit ``5b1ea03`` ("Ship Check 6 (Description
+token drift); Fravor i5 fixes the drift it caught"). Created to
+extend Phase III review's token-drift discipline to the rendered node
+body's ``## Description`` section — the contributor-synthesis prose
+surface that survived the claims-layer elimination. Same evidentiary
+axis as prose_drift (source-to-artifact prose grounding) but at the
+rendered-output layer rather than the artifact field layer.
+
+Validated itself on first run: the introducing commit dogfooded
+against existing artifacts. Graves passed clean; Fravor surfaced one
+real drift — ``Congressional oversight`` where ``Congressional`` was
+contributor framing absent from all grounding sources (source ¶12
+used ``oversight`` lowercase, attributed to "our elected officials").
+Fravor iteration i5 replaced the phrase with "a call for oversight
+from elected officials of any U.S. government programs..." — source-
+closer wording; all description tokens grounded. The check validated
+its own purpose on first run.
+
+Severity model differs from prose_drift: this one errors per
+unmatched token rather than prose_drift's warn-then-error-at-100%.
+The rendered description is a published artifact surface; unmatched
+tokens are by design either fabrication or naming-quirks gaps that
+should be filed structurally (add the canonical form to
+naming_quirks, the entity to entities_referenced, or the metadata to
+context_extrinsic / document_intrinsic), not contributor-judgment
+cases as on artifact synthesis fields.
+
+Migration trail: ``5b1ea03`` (introduction) → ``4d0bf8a`` (possessive-
+apostrophe extraction-fix) → ``26969ba`` (source-taxonomy
+consolidation; check now applies across more types) → ``a572f77``
+(2026-05-05 lockstep refactor — local tokenizer renamed
+``extract_significant_tokens`` → ``extract_description_drift_tokens``
+to lock in the algorithmic distinction noted above) → ``363212d``
+(C11 session 3 lift to per-module shape). C18 confirmed byte-identity
+through both code-shape moves.
 """
 
 import re

@@ -110,7 +110,7 @@ Remaining 42 should land at ✅.
 |---|---|---|
 | boundary | ☐ | Uses `ctx.regenerated_body` lazy cache |
 | coverage | ☐ | Target-node body inspection |
-| description_token_drift | ☐ | Different tokenizer than prose_drift; preserve distinction |
+| description_token_drift | ✅ | Anchored to `5b1ea03` (Check #6 introduction; dogfooded on first run — caught Fravor's "Congressional" drift, fixed in i5). Same evidentiary axis as prose_drift but rendered-output layer; algorithmically distinct (proper-nouns + designators + numbers + quoted strings vs lowercase content words) — distinction locked in by 2026-05-05 lockstep refactor renaming the tokenizer. Severity model: error per unmatched token (rendered surface, not artifact field). |
 | stub_linking | ☐ | Cross-layer link resolution |
 
 ---
