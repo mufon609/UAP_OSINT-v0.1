@@ -11,9 +11,11 @@ location. Finding is the last remaining type; F.7 design pass is open
 (see meta/roadmap.md).
 
 Person renderer:
-  - Universal sections: Identity, Background, UAP Relevance,
+  - Universal sections: Identity, Background, {Topic} Relevance,
     Affiliations, Statements, Timeline, Relationships, Credibility
     Notes, Associated Nodes
+    ({Topic} = display_name from meta/topic/overview.md frontmatter;
+    "UAP" on this fork)
   - Statements split by `observation_type` into Direct Observations /
     Other Statements; sorted ascending by `statement_date` within each
   - Timeline sorted ascending by `date`
@@ -2077,10 +2079,11 @@ def render_location_relationships(artifact):
 def render_body_location(artifact, fm):
     """Location-type body composition. Section order matches the
     schema's required_sections: Overview → Description → Ownership
-    Timeline → UAP-Scope Activity → Key Passages → Relationships →
-    Associated Nodes. Location has no kinds, so no per-kind dispatch.
-    Key Passages covers evidentiary quotes about the location;
-    parallels organization's Key Passages pattern."""
+    Timeline → {Topic}-Scope Activity → Key Passages → Relationships →
+    Associated Nodes ({Topic} = display_name from
+    meta/topic/overview.md). Location has no kinds, so no per-kind
+    dispatch. Key Passages covers evidentiary quotes about the
+    location; parallels organization's Key Passages pattern."""
     title = render_title_location(artifact).rstrip("\n") + "\n"
     sections = [
         render_location_overview(artifact, fm),

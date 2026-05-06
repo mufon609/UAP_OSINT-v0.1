@@ -113,9 +113,13 @@ prompts/                    paste-ready session prompts — see prompts/README.m
 `/documents/`, `/events/`, `/transcripts/`, `/media/`, `/locations/`,
 `/findings/`, and `sources/{category}/` (keep the directories
 themselves); empty `sources/manifest.yaml`. Create your own
-`meta/topic/overview.md`.
-Everything else — schema, conventions, scripts, templates, prompts,
-validators, test suite — is topic-neutral toolkit.
+`meta/topic/overview.md` — its frontmatter `topic` and `display_name`
+fields drive every UI surface that names the subject (rendered
+section headers like `## {display_name} Relevance`, archiver
+User-Agent, etc.); the toolkit reads them via
+`load_topic()`. See `prompts/fork-init.md` for the bootstrap walk-
+through. Everything else — schema, conventions, scripts, templates,
+prompts, validators, test suite — is topic-neutral toolkit.
 
 ---
 

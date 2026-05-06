@@ -36,10 +36,11 @@ surrounding-system simplifications landed:
   - ``description`` made type-conditional at ``efd4588`` ("Fix
     three pilot findings surfaced during the Graves person pilot").
     Person body renderer doesn't emit ## Description (it emits
-    Background / UAP Relevance / Credibility Notes from dedicated
-    fields), so description is required on non-person target types
-    only — kept here as the inline ``DESCRIPTION_REQUIRED_TYPES``
-    set.
+    Background / {display_name} Relevance / Credibility Notes from
+    dedicated fields ``background`` / ``top_relevance`` /
+    ``credibility_notes``), so description is required on non-person
+    target types only — kept here as the inline
+    ``DESCRIPTION_REQUIRED_TYPES`` set.
   - ``claims`` removed at ``cde69cf`` (2026-04-21 — claims[] layer
     elimination): ``quotes[]`` became the universal evidentiary
     primitive; the claims data-shape layer no longer existed for

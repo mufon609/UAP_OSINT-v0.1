@@ -30,6 +30,9 @@ import urllib.parse
 from pathlib import Path
 from datetime import datetime
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib._common import load_topic  # noqa: E402
+
 try:
     import yaml
 except ImportError:
@@ -43,7 +46,7 @@ CDX_API = "http://web.archive.org/cdx/search/cdx"
 SAVE_API = "https://web.archive.org/save/"
 WAYBACK_BASE = "https://web.archive.org/web/"
 
-USER_AGENT = "UAP-Research-Archiver/2.0"
+USER_AGENT = f"{load_topic()['display_name']}-Research-Archiver/2.0"
 
 # A manifest URL may already BE a Wayback snapshot (e.g. cited primary
 # source is a dead site whose only surviving copy is a Wayback capture).

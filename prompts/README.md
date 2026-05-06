@@ -6,6 +6,7 @@ copy the relevant prompt into a fresh Claude Code session.
 | File | Use for |
 |---|---|
 | `onboard.md` | First-time session or any fresh session start |
+| `fork-init.md` | Bootstrap the toolkit for a different topic (run once on a fresh fork) |
 | `build.md` | Build a new node (Phase I → II → III) |
 | `audit.md` | Audit an existing node for evidentiary integrity (includes the audit-correction pattern for applying changes to an existing artifact) |
 | `web-claude-investigator.md` | Brief for Claude Web acting as investigator — find primary sources for a target, produce a handoff stub for Claude CLI to build from |

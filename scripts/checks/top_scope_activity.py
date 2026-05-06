@@ -1,9 +1,10 @@
-"""uap-scope-activity check — type-conditional research-artifact check.
+"""top-scope-activity check — type-conditional research-artifact check.
 
-Present on location artifacts. Tracks documented institutional UAP-
-scope activity at the location (NIDS investigations, AAWSAP / BAASS
-contract work, Fugal-era research, etc.); popular paranormal lore
-without primary-source backing belongs in ``rumors``, not here.
+Present on location artifacts. Tracks documented institutional
+activity within the topic's scope at the location (on this UAP
+fork: NIDS investigations, AAWSAP / BAASS contract work, Fugal-
+era research, etc.); popular lore without primary-source backing
+belongs in ``rumors``, not here.
 
 Each entry: required {period_start, activity, source}, optional
 {period_end, actor_paths (list), note}.
@@ -19,26 +20,24 @@ structured fields together.
 
 Topic-specific scope filter. The section's load-bearing
 distinction is institutional-vs-popular: only documented
-institutional UAP-scope activity (NIDS / AAWSAP / BAASS / Fugal-
-era research / etc.) belongs here; popular paranormal lore goes
-in ``rumors``. Unique among entry-list checks in carrying this
-contributor-discipline distinction explicitly in the schema +
-docstring. The check itself enforces shape only; the
-institutional-vs-popular distinction is contributor judgment at
-authoring time.
+institutional activity within the topic's scope belongs here;
+popular lore goes in ``rumors``. Unique among entry-list checks
+in carrying this contributor-discipline distinction explicitly
+in the schema + docstring. The check itself enforces shape only;
+the institutional-vs-popular distinction is contributor judgment
+at authoring time.
 
-Topic-neutrality observation (BACKLOG C22). The check's name
-``top_scope_activity`` and the rendered section header
-``## UAP-Scope Activity`` are explicitly UAP-named. The toolkit's
-scope statement claims schema and structure are topic-neutral
-("any investigation grounded in primary sources can use the same
-structure"), but this field name + the parallel ``top_relevance``
-on person artifacts contradict that claim. C22 documents the
-two resolution paths — fully topic-neutral rename, or honest-
-documentation acknowledgement that the two fields are fork-
-customization points. Not a correctness issue at THIS instance
-(the toolkit operates correctly with UAP-named fields); a fork-
-target would need to handle the inherited names.
+Topic-neutralized at C22 (commit ``ffad3ed``). Field name was
+formerly ``uap_scope_activity``; the rename to
+``top_scope_activity`` (and its sibling ``top_relevance`` on
+person artifacts) decoupled the field key from the UAP-specific
+display name. The rendered section header
+(``## UAP-Scope Activity`` on this fork) is now composed at
+render time from ``meta/topic/overview.md::display_name`` via
+``load_topic()`` — see ``scripts/build-from-research.py``
+``render_top_scope_activity``. A fork sets a different
+``display_name`` and the renderer substitutes accordingly without
+touching this check, the schema field key, or any artifact data.
 
 Period-bearing pattern. Same period_start / period_end shape as
 ``ownership_timeline`` (F.6a sibling), ``key_personnel`` (F.5a),
