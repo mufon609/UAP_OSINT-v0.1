@@ -91,7 +91,7 @@ Remaining 42 should land at ✅.
 | org_relationships | ☐ | relationship_type enum |
 | ownership_timeline | ☐ | Period + use_status |
 | participants | ☐ | capacity enum dispatch |
-| primary_sources | ☐ | path + format |
+| primary_sources | ✅ | Foundational from `af5f789` — schema entry shape + check function shipped together. Cleanest "stable / stable" foundational across investigated checks: no dispatch, no shared helpers (only universal entry-list check NOT using `_research_utils` — primary_sources entries have no `id` lifecycle field), no enum, no evolutionary history. Layering note: minimum-1 enforcement not implemented; downstream prose_drift / verbatim_quotes catch empty-sources case indirectly. |
 | program_involvement | ☐ | institutional-actor archetype |
 | prose_drift | ✅ | Anchored to F.1c Fravor pilot audit (introducing commit `d9bc684`) — RCA found contributor-prose drift unchecked despite verbatim quotes being source-verified. Threshold-tuning history at `836f96a` (revised from differentiated 80% to impartial single-rule) established the "validator surfaces drift, doesn't classify it" principle — reference before proposing any threshold change. Per-entry fields pool against top-level union, not per-entry source. |
 | publication_record | ☐ | reporter archetype |
