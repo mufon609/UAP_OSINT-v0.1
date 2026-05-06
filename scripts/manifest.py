@@ -26,14 +26,19 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
-SOURCES_DIR = REPO_ROOT / "sources"
+# Shared single sources of truth. CONTENT_DIRS / FORMAT_BY_EXT /
+# format_from_path / compute_sha256 all come from lib._common — same
+# values consumed by validators and Phase II tooling.
+from lib._common import (  # noqa: E402
+    MANIFEST_PATH,
+    REPO_ROOT,
+    SOURCES_DIR,
+    compute_sha256,
+    content_dirs,
+    format_from_path,
+)
 
-CONTENT_DIRS = [
-    "people", "organizations", "documents", "events",
-    "transcripts", "media", "locations", "findings",
-]
+CONTENT_DIRS = content_dirs()
 
 URL_PATTERN = re.compile(r"https?://[^\s\|\)>`\]]+")
 
@@ -50,38 +55,6 @@ def wayback_url_date(url):
         return None
     ts = m.group(1)[:8]
     return f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
-
-FORMAT_BY_EXT = {
-    ".pdf": "pdf",
-    ".html": "html",
-    ".htm": "html",
-    ".txt": "txt",
-    ".md": "transcript",
-    # Video extensions — schema format_values supports `video`
-    ".mp4": "video",
-    ".m4v": "video",
-    ".mov": "video",
-    ".webm": "video",
-    ".avi": "video",
-    ".mkv": "video",
-    # Audio extensions — schema format_values supports `audio`
-    ".mp3": "audio",
-    ".wav": "audio",
-    ".flac": "audio",
-    ".aac": "audio",
-    ".ogg": "audio",
-    ".m4a": "audio",
-    # Image extensions — schema format_values supports `image`
-    ".jpg": "image",
-    ".jpeg": "image",
-    ".png": "image",
-    ".gif": "image",
-    ".tiff": "image",
-    ".tif": "image",
-    ".webp": "image",
-    ".bmp": "image",
-    ".heic": "image",
-}
 
 
 def load_manifest():
@@ -112,18 +85,6 @@ def scan_urls_in_nodes():
                 url = url.rstrip(";,.)]*")
                 usage[url].add(str(node.relative_to(REPO_ROOT)))
     return usage
-
-
-def format_from_path(path):
-    if not path:
-        return None
-    return FORMAT_BY_EXT.get(Path(path).suffix.lower(), "html")
-
-
-# Imported from lib._common — single source shared with manifest_checksums
-# validator check so the integrity-check algorithm stays mechanically in
-# lockstep across CLI and validator paths.
-from lib._common import compute_sha256  # noqa: E402
 
 
 def cmd_add(args):

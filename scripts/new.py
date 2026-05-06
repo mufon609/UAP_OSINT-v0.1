@@ -28,26 +28,21 @@ from pathlib import Path
 from datetime import date
 
 try:
-    import yaml
+    import yaml  # noqa: F401  (kept for ImportError guidance)
 except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
+from lib._common import REPO_ROOT, content_type_dirs, load_schema
+
 TEMPLATES_DIR = REPO_ROOT / "meta" / "templates"
 ADDENDA_DIR = REPO_ROOT / "meta" / "topic" / "addenda"
 
-TYPE_DIRS = {
-    "person": "people",
-    "organization": "organizations",
-    "document": "documents",
-    "event": "events",
-    "transcript": "transcripts",
-    "media": "media",
-    "location": "locations",
-    "finding": "findings",
-}
+# TYPE_DIRS is the schema-derived ``{type: dirname}`` mapping shared
+# across every contributor script. The constant is bound at import
+# time from the cached schema; mutating it after import is unsupported
+# (treat as a frozen view into schema state).
+TYPE_DIRS = content_type_dirs()
 
 DEFAULT_STATUS = {
     "person": "active",
@@ -59,11 +54,6 @@ DEFAULT_STATUS = {
     "location": "active",
     "finding": "active",
 }
-
-
-def load_schema():
-    with open(SCHEMA_PATH) as f:
-        return yaml.safe_load(f)
 
 
 def humanize(slug):
@@ -184,10 +174,13 @@ def main():
             "ERROR: --archival-status required when doc_form=book. "
             "Valid values: full-text-archived, excerpts-only, not-archived"
         )
-    # Validate archival-status value when supplied
+    # Validate archival-status value when supplied. Direct subscript
+    # per the C21 no-silent-fallbacks principle — archival_status is
+    # only set on document type, where ``archival_status_values`` is
+    # always declared in schema.
     if args.archival_status:
-        valid_archival = type_spec.get("archival_status_values", [])
-        if valid_archival and args.archival_status not in valid_archival:
+        valid_archival = type_spec["archival_status_values"]
+        if args.archival_status not in valid_archival:
             sys.exit(f"ERROR: Invalid --archival-status. Valid: {valid_archival}")
 
     if args.type == "finding" and not args.entities:

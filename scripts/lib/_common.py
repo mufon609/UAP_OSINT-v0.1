@@ -38,12 +38,54 @@ import yaml
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 SOURCES_DIR = REPO_ROOT / "sources"
 MANIFEST_PATH = SOURCES_DIR / "manifest.yaml"
+SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
 
 
 # Per-process caches.
 _source_text_cache = {}             # Path -> extracted plain text or None
 _extraction_type_cache = None       # rel-path str -> extraction_type str
 _manifest_format_cache = None       # rel-path str -> format str
+_schema_cache = None                # parsed meta/schema.yaml
+
+
+def load_schema():
+    """Parse meta/schema.yaml once per process and cache. All scripts
+    that need schema data should import + call this rather than
+    duplicating the open + safe_load + SCHEMA_PATH boilerplate.
+    Errors loudly on parse failure or missing file (schema is
+    foundational toolkit contract; absence is fatal)."""
+    global _schema_cache
+    if _schema_cache is None:
+        with open(SCHEMA_PATH) as f:
+            _schema_cache = yaml.safe_load(f)
+    return _schema_cache
+
+
+def content_type_dirs():
+    """Return ``{type: dirname}`` mapping for content-node types,
+    derived from each type's ``path`` field in the schema. Excludes
+    ``meta`` and ``research-artifact`` (which have no ``path``).
+    Single source of truth for the type→directory relationship that
+    was previously duplicated across 10 contributor-script sites."""
+    schema = load_schema()
+    return {
+        t: spec["path"]
+        for t, spec in schema["types"].items()
+        if isinstance(spec, dict) and "path" in spec
+    }
+
+
+def content_dirs():
+    """Ordered list of content-directory names (people, organizations,
+    documents, …). Convenience wrapper around ``content_type_dirs()``
+    for callers that only need the directory names."""
+    return list(content_type_dirs().values())
+
+
+def content_node_types():
+    """Set of content-node type names (person, organization, …).
+    Derived from schema."""
+    return frozenset(content_type_dirs().keys())
 
 
 def _load_extraction_types():
@@ -198,6 +240,57 @@ def load_topic():
         "display_name": fm["display_name"],
     }
     return _TOPIC_CONFIG_CACHE
+
+
+# Extension → manifest ``format`` value. Centralized here so contributor
+# scripts (manifest.py CLI, research-scaffold.py building primary_sources
+# entries) share one mapping rather than duplicating the dict with a
+# "Mirrors manifest.py FORMAT_BY_EXT" comment. Coverage matches the
+# schema's ``manifest_entry.format_values`` vocabulary
+# (pdf / html / txt / transcript / audio / image / video). Unknown
+# extensions fall back to ``html`` — intentional for web scraping where
+# the source's extension is often absent or generic.
+FORMAT_BY_EXT = {
+    ".pdf": "pdf",
+    ".html": "html",
+    ".htm": "html",
+    ".txt": "txt",
+    ".md": "transcript",
+    # Video extensions — schema format_values supports `video`.
+    ".mp4": "video",
+    ".m4v": "video",
+    ".mov": "video",
+    ".webm": "video",
+    ".avi": "video",
+    ".mkv": "video",
+    # Audio extensions — schema format_values supports `audio`.
+    ".mp3": "audio",
+    ".wav": "audio",
+    ".flac": "audio",
+    ".aac": "audio",
+    ".ogg": "audio",
+    ".m4a": "audio",
+    # Image extensions — schema format_values supports `image`.
+    ".jpg": "image",
+    ".jpeg": "image",
+    ".png": "image",
+    ".gif": "image",
+    ".tiff": "image",
+    ".tif": "image",
+    ".webp": "image",
+    ".bmp": "image",
+    ".heic": "image",
+}
+
+
+def format_from_path(path):
+    """Return the manifest ``format`` value for a path's extension, or
+    ``html`` for unknown extensions (fallback for web-scraping cases
+    where the URL has no informative extension). Returns None for
+    empty / falsy paths."""
+    if not path:
+        return None
+    return FORMAT_BY_EXT.get(Path(path).suffix.lower(), "html")
 
 
 def compute_sha256(file_path):

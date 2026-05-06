@@ -117,23 +117,20 @@ from lib._common import load_topic  # noqa: E402
 # Constants
 # =============================================================================
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+from lib._common import (  # noqa: E402
+    REPO_ROOT,
+    SUPPORTED_TYPES,
+    content_type_dirs,
+)
+
 SCRIPTS_DIR = REPO_ROOT / "scripts"
 VALIDATE_RESEARCH = SCRIPTS_DIR / "validate-research.py"
 VALIDATE_NODE = SCRIPTS_DIR / "validate.py"
 ASSOCIATE = SCRIPTS_DIR / "associate.py"
 
-# Content-node type ↔ directory (mirrors research-scaffold.py / validate-research.py)
-TYPE_DIRS = {
-    "person": "people", "organization": "organizations", "document": "documents",
-    "event": "events", "transcript": "transcripts", "media": "media",
-    "location": "locations", "finding": "findings",
-}
-
-# Types this script can regenerate. Imported from lib._common so
-# review-coverage.py reads the same set without comment-discipline
-# lockstep. Finding pending F.7.
-from lib._common import SUPPORTED_TYPES  # noqa: E402
+# Content-node type → directory, derived from schema. Single source
+# of truth across every contributor script.
+TYPE_DIRS = content_type_dirs()
 
 # Separator between H2 sections in the rendered node body.
 # Matches repository convention: blank line, '---', blank line.

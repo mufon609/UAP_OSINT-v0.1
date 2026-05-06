@@ -54,6 +54,13 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+from lib._common import (
+    MANIFEST_PATH,
+    REPO_ROOT,
+    content_type_dirs,
+    load_schema,
+)
+
 from checks import BaseContext, ResearchContext
 
 # Pre-parse checks (raw line scans before yaml.safe_load)
@@ -95,27 +102,17 @@ from checks import witnesses_testimony as ck_witnesses_testimony
 # =============================================================================
 # Constants
 # =============================================================================
+#
+# REPO_ROOT, MANIFEST_PATH, load_schema, content_type_dirs() come from
+# lib._common — shared with every other script that walks the content
+# layer.
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
-MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
-
-TYPE_DIRS = {
-    "person": "people", "organization": "organizations", "document": "documents",
-    "event": "events", "transcript": "transcripts", "media": "media",
-    "location": "locations", "finding": "findings",
-}
 
 
 # =============================================================================
 # Loading
 # =============================================================================
-
-def load_schema():
-    with open(SCHEMA_PATH) as f:
-        return yaml.safe_load(f)
-
 
 def load_manifest_paths():
     """Return set of path strings registered in sources/manifest.yaml."""
@@ -156,7 +153,7 @@ def _discover_target(data):
         return None, None, None, None
 
     content_dir_name = target_node.split("/", 1)[0]
-    reverse_map = {v: k for k, v in TYPE_DIRS.items()}
+    reverse_map = {v: k for k, v in content_type_dirs().items()}
     target_type = reverse_map.get(content_dir_name)
 
     target_path = REPO_ROOT / f"{target_node}.md"

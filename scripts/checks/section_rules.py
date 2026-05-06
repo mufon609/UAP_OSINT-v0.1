@@ -89,7 +89,11 @@ def _extract_h3_subsections(section_text):
 
 
 def check(ctx):
-    section_rules = ctx.type_spec.get("section_rules", {})
+    # Direct subscript: every content type declares ``section_rules`` per
+    # schema.yaml. Silent fallback to ``{}`` would mask drift if a type
+    # loses the block. Loud KeyError per the C21 no-silent-fallbacks
+    # principle.
+    section_rules = ctx.type_spec["section_rules"]
     h2_sections = ctx.h2_sections
     for section_name, rules in section_rules.items():
         if section_name not in h2_sections:

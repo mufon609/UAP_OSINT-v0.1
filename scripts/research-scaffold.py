@@ -37,10 +37,16 @@ except ImportError:
 # Constants
 # =============================================================================
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+from lib._common import (
+    MANIFEST_PATH,
+    REPO_ROOT,
+    content_node_types,
+    content_type_dirs,
+    format_from_path,
+    load_schema,
+)
+
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
-SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
-MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
 
 # Schema-driven scaffolding (BACKLOG C19). Type-set constants previously
 # duplicated here (RUMORS_TYPES, TIMELINE_TYPES, ARCHETYPE_SECTION,
@@ -72,23 +78,11 @@ def empty_for(section_name):
     return EMPTY_SECTION_SHAPES.get(section_name, [])
 
 
-# All valid target-node types
-VALID_TARGET_TYPES = {
-    "person", "organization", "document", "event",
-    "transcript", "media", "location", "finding",
-}
-
-# Map target-node type → content directory
-TYPE_DIRS = {
-    "person": "people",
-    "organization": "organizations",
-    "document": "documents",
-    "event": "events",
-    "transcript": "transcripts",
-    "media": "media",
-    "location": "locations",
-    "finding": "findings",
-}
+# Schema-derived single sources of truth — bound at import time from the
+# cached schema. ``content_node_types()`` returns the set of types that
+# accept artifacts; ``content_type_dirs()`` is the {type: dirname} map.
+VALID_TARGET_TYPES = content_node_types()
+TYPE_DIRS = content_type_dirs()
 
 
 # =============================================================================
@@ -140,50 +134,14 @@ def build_primary_sources_list(source_paths, manifest):
         # pdf_metadata) during Phase I
         entry = {
             "path": path,
-            "format": infer_format(path),
+            "format": format_from_path(path),
         }
         entries.append(entry)
     return entries
 
 
-def infer_format(path):
-    """Map a source file path's extension to a manifest.yaml format value.
-    Covers the schema's format_values vocabulary (pdf / html / txt /
-    transcript / audio / image / video). Unknown extensions fall back to
-    html — intentional for web scraping where the source's extension is
-    often absent or generic. Mirrors manifest.py FORMAT_BY_EXT."""
-    ext = Path(path).suffix.lower()
-    return {
-        ".pdf": "pdf",
-        ".html": "html",
-        ".htm": "html",
-        ".txt": "txt",
-        ".md": "transcript",
-        # Video extensions — schema format_values supports `video`.
-        ".mp4": "video",
-        ".m4v": "video",
-        ".mov": "video",
-        ".webm": "video",
-        ".avi": "video",
-        ".mkv": "video",
-        # Audio extensions — schema format_values supports `audio`.
-        ".mp3": "audio",
-        ".wav": "audio",
-        ".flac": "audio",
-        ".aac": "audio",
-        ".ogg": "audio",
-        ".m4a": "audio",
-        # Image extensions — schema format_values supports `image`.
-        ".jpg": "image",
-        ".jpeg": "image",
-        ".png": "image",
-        ".gif": "image",
-        ".tiff": "image",
-        ".tif": "image",
-        ".webp": "image",
-        ".bmp": "image",
-        ".heic": "image",
-    }.get(ext, "html")
+# Format derivation moved to ``lib._common.format_from_path`` — single
+# source of truth shared with manifest.py CLI.
 
 
 def _read_target_frontmatter(node_type, slug):
@@ -230,22 +188,6 @@ def read_target_kind(node_type, slug):
     return _read_target_frontmatter(node_type, slug).get("kind")
 
 
-def _load_schema_conditional_keys():
-    """Read schema.yaml and return the research-artifact conditional_keys
-    dict, or {} on read/parse failure (defensive — scaffolder shouldn't
-    crash on schema issues; validator catches them)."""
-    try:
-        with open(SCHEMA_PATH) as f:
-            schema = yaml.safe_load(f)
-    except (OSError, yaml.YAMLError):
-        return {}
-    return (
-        (schema or {}).get("types", {})
-                      .get("research-artifact", {})
-                      .get("conditional_keys", {})
-    )
-
-
 def build_scaffold(node_type, slug, source_paths, manifest):
     """Assemble the research-artifact YAML dict for the given target.
 
@@ -277,7 +219,11 @@ def build_scaffold(node_type, slug, source_paths, manifest):
     # match this target.
     archetype = read_target_archetype(node_type, slug)
     kind = read_target_kind(node_type, slug)
-    conditional_keys = _load_schema_conditional_keys()
+    # Direct subscript via ``load_schema`` — no silent fallback per the
+    # C21 no-silent-fallbacks principle. Schema malformation surfaces
+    # loudly rather than silently scaffolding artifacts with no
+    # conditional sections.
+    conditional_keys = load_schema()["types"]["research-artifact"]["conditional_keys"]
     for section_name, rules in conditional_keys.items():
         if evaluate_required_when(rules, node_type, archetype, kind):
             artifact[section_name] = empty_for(section_name)

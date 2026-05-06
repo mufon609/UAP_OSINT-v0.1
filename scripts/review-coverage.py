@@ -38,6 +38,16 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+from lib._common import (
+    MANIFEST_PATH,
+    REPO_ROOT,
+    SOURCES_DIR,
+    SUPPORTED_TYPES,
+    content_type_dirs,
+    extract_source_text,
+    load_schema,
+)
+
 from checks import BaseContext, ResearchContext
 from checks import artifact_parse as ck_artifact_parse
 from checks import boundary as ck_boundary
@@ -45,24 +55,17 @@ from checks import coverage as ck_coverage
 from checks import description_token_drift as ck_description_token_drift
 from checks import phase_iii_inputs as ck_phase_iii_inputs
 from checks import stub_linking as ck_stub_linking
-from lib._common import SUPPORTED_TYPES, extract_source_text
 
 
 # =============================================================================
 # Constants
 # =============================================================================
+#
+# REPO_ROOT, SOURCES_DIR, MANIFEST_PATH, load_schema, SUPPORTED_TYPES,
+# content_type_dirs() come from lib._common — shared single sources of
+# truth across the toolkit.
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
-SOURCES_DIR = REPO_ROOT / "sources"
-MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
-
-TYPE_DIRS = {
-    "person": "people", "organization": "organizations", "document": "documents",
-    "event": "events", "transcript": "transcripts", "media": "media",
-    "location": "locations", "finding": "findings",
-}
 
 # SUPPORTED_TYPES imported from lib._common — single source shared with
 # build-from-research.py (mechanical lockstep, not comment-discipline).
@@ -83,11 +86,6 @@ _REVIEW_CHECKS = [
 # =============================================================================
 # Helpers
 # =============================================================================
-
-def load_schema():
-    with open(SCHEMA_PATH) as f:
-        return yaml.safe_load(f)
-
 
 def load_manifest_paths():
     if not MANIFEST_PATH.exists():
@@ -123,7 +121,7 @@ def target_node_type(artifact):
     if "/" not in target:
         return None
     dir_name = target.split("/", 1)[0]
-    reverse = {v: k for k, v in TYPE_DIRS.items()}
+    reverse = {v: k for k, v in content_type_dirs().items()}
     return reverse.get(dir_name)
 
 

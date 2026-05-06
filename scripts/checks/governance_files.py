@@ -47,34 +47,25 @@ Migration trail:
 C18 confirmed byte-identity through both the per-module migration
 and the helper consolidation.
 
-The ``_TEMPLATE_TYPE_DIRS`` map (type → content-directory mapping)
-is duplicated across ``new.py`` and ``validate-research.py`` per
-the comment below; centralization deferred until the map drifts or
-grows past the current 8 entries.
+Type → content-directory mapping comes from ``lib._common
+.content_type_dirs()`` — single source of truth shared with
+``new.py``, ``research-scaffold.py``, ``build-from-research.py``,
+the validator orchestrators, and every other script that walks the
+content layer.
 """
 
 import re
 from pathlib import Path
 
 from checks import Issue
-from lib._common import parse_frontmatter, schema_version_compat_messages
+from lib._common import (
+    content_type_dirs,
+    parse_frontmatter,
+    schema_version_compat_messages,
+)
 
 
 CHECK_NAME = "governance_files"
-
-
-# Type → content-directory mapping used to derive a template's expected
-# placeholder id (person.md → id: people/{{slug}}). Same small static map
-# appears in new.py and validate-research.py; centralization deferred —
-# the map is short, stable, and rarely changes (one entry added when a
-# new node type ships). If drift surfaces or the map grows, promote to
-# scripts/lib/_common.py alongside the source-extraction helpers.
-_TEMPLATE_TYPE_DIRS = {
-    "person": "people", "organization": "organizations",
-    "document": "documents", "event": "events",
-    "transcript": "transcripts", "media": "media",
-    "location": "locations", "finding": "findings",
-}
 
 _REQUIRED_META_FIELDS = ("id", "type", "schema_version", "created")
 
@@ -130,7 +121,10 @@ def _check_template_frontmatter(path, rel, text, compatible_with, schema_block):
             "Template missing required 'id:' line in frontmatter",
             check_name=CHECK_NAME)
     else:
-        expected_dir = _TEMPLATE_TYPE_DIRS.get(stem, stem)
+        # Schema-derived type→dir map; ``.get(stem, stem)`` falls back
+        # to using the stem as dirname for forward compatibility (a new
+        # node type whose template ships before its schema entry).
+        expected_dir = content_type_dirs().get(stem, stem)
         expected_id = f"{expected_dir}/{{{{slug}}}}"
         if id_match.group(1) != expected_id:
             yield Issue(rel, "error",

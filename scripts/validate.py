@@ -95,7 +95,13 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-from lib._common import parse_frontmatter
+from lib._common import (
+    MANIFEST_PATH,
+    REPO_ROOT,
+    content_dirs,
+    load_schema,
+    parse_frontmatter,
+)
 
 # Per-check modules. Each named check lives at scripts/checks/{name}.py;
 # orchestrator dispatches via the explicit step lists below.
@@ -120,24 +126,9 @@ from checks import status_archetype_kind as ck_status_archetype_kind
 from checks import table_cell_word_budget as ck_table_cell_word_budget
 from checks import verbatim_quotes as ck_verbatim_quotes
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
-SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
-MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
-
-CONTENT_DIRS = [
-    "people", "organizations", "documents", "events",
-    "transcripts", "media", "locations", "findings",
-]
-
-
-# =============================================================================
-# Schema loading
-# =============================================================================
-
-
-def load_schema():
-    with open(SCHEMA_PATH) as f:
-        return yaml.safe_load(f)
+# REPO_ROOT, MANIFEST_PATH, load_schema, content_dirs all come from
+# lib._common — single source of truth shared with every other script
+# that walks the content layer.
 
 
 # =============================================================================
@@ -214,7 +205,7 @@ def validate_node(path, base_ctx):
 
 def collect_nodes():
     nodes = []
-    for d in CONTENT_DIRS:
+    for d in content_dirs():
         cd = REPO_ROOT / d
         if cd.is_dir():
             nodes.extend(sorted(cd.glob("*.md")))

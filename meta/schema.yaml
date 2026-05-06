@@ -61,6 +61,7 @@ types:
   # publications, incidents) with a Category column enabling scan-by-type
   # without losing the chronological view.
   person:
+    path: people
     status_values: [active, in-progress]
     frontmatter:
       required: [id, type, schema_version, status, archetype, created]
@@ -148,6 +149,7 @@ types:
   #   - Description — labeled contributor synthesis (1-3 paragraphs);
   #     subject to prose-drift check scoping.
   organization:
+    path: organizations
     status_values: [active, in-progress]
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
@@ -192,6 +194,7 @@ types:
 
   # --- DOCUMENT -----------------------------------------------------------
   document:
+    path: documents
     status_values:
       - primary-source-confirmed
       - declassified-full
@@ -271,6 +274,7 @@ types:
   # Parallel to the news/book `What The Article Established` collapse
   # that shipped in the post-Step-D source-taxonomy consolidation.
   event:
+    path: events
     status_values: [documented, in-progress]
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
@@ -301,6 +305,7 @@ types:
 
   # --- TRANSCRIPT ---------------------------------------------------------
   transcript:
+    path: transcripts
     status_values: [primary-source-confirmed, partial]
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
@@ -351,6 +356,7 @@ types:
   # Heavy speech content (full interview, full cockpit audio) spins up a
   # separate transcript node that points to the media via `derived_from`.
   media:
+    path: media
     status_values:
       - primary-source-confirmed
       - declassified-full
@@ -401,6 +407,7 @@ types:
 
   # --- LOCATION -----------------------------------------------------------
   location:
+    path: locations
     status_values: [active, historical]
     frontmatter:
       required: [id, type, schema_version, status, created]
@@ -419,6 +426,7 @@ types:
 
   # --- FINDING ------------------------------------------------------------
   finding:
+    path: findings
     status_values: [active, superseded, unresolved]
     frontmatter:
       required: [id, type, schema_version, status, entities, created]
