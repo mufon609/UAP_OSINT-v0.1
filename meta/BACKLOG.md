@@ -1039,94 +1039,107 @@ forcing shape; codified the trigger condition here.
 
 ---
 
-### C15. Consolidate iff-section presence rules into a schema-driven check
-
-`validate-research.py::validate_artifact` carries ~12 inline walkers
-that all enforce the same shape: "section X required when target
-type/archetype/kind is in set Y; absent otherwise."
-
-```
-target_type in RUMORS_TYPES → rumors required (else absent)
-target_type in TIMELINE_TYPES → timeline required (else absent)
-target_archetype == eyewitness → corroboration_items required
-target_archetype == institutional-actor → program_involvement required
-target_archetype == reporter → publication_record required
-target_archetype == whistleblower → vouching_chain required
-target_type == person → background, uap_relevance, affiliations,
-  relationships, credibility_notes required
-target_type == event → event_intrinsic, participants required
-target_type == event AND kind == hearing → witnesses_testimony required
-target_type == event AND kind == encounter → corroboration_items required
-target_type == transcript → speakers required
-target_type == media → media_versioning required
-target_type == organization → key_personnel, org_relationships required
-target_type == organization AND kind == gov-contractor → contracts required
-target_type == location → ownership_timeline, uap_scope_activity,
-  location_relationships required
-```
-
-`meta/schema.yaml::research-artifact.conditional_keys` already declares
-the same rules in YAML. The validator doesn't read from it — every
-inline walker hand-codes the rule. Drift between the schema declaration
-and the validator is one rename away.
-
-**Refactor.** Single check `iff_section` reads `conditional_keys` from
-`schema.yaml` and walks the conditions schema-driven. Mirrors the
-`conditionally_required` dispatcher in `validate.py` (which already
-solved the equivalent problem for content nodes). One condition
-grammar (`<field> in <set>`, `<field> == <literal>`,
-`<field> is set`, `<combinator> AND <combinator>`); evaluated against
-target frontmatter; section presence enforced.
-
-**Coupling.** Orthogonal to C11/C13/C14. The iff-walkers eat ~12
-inline blocks in `validate_artifact` regardless of whether they migrate
-to a check module first or get consolidated first. Cleanest sequence:
-ship C15 (consolidate the walkers) BEFORE the C11 batch migrates
-`validate_artifact`'s inline logic — fewer modules to lift, simpler
-final orchestrator.
-
-**Scope.** Schema condition grammar may need extension (current
-`validate.py::evaluate_condition` handles `==` and `is set`; this
-case needs `in <set>` and AND-combination). Then a single
-`scripts/checks/iff_section.py` replaces the ~12 walkers. Deletes ~150
-lines of `validate_artifact` body.
-
-**Priority.** Low. The current shape works; consolidation is professional-
-shape work. Worth doing in the C11 cluster window when a contributor
-session is touching `validate_artifact` anyway.
-
-Surfaced: 2026-05-05 C11/C13/C14 investigation — issue #9 in the audit.
-Logged as separate entry per design-doc out-of-scope discipline; the
-schema-driven pattern is its own refactor.
+### C15. *(retired 2026-05-05 — schema-driven iff dispatch landed in commit `dc95d39`. New `scripts/checks/iff_section.py` reads `schema.yaml::types.research-artifact.conditional_keys` and emits all placement errors; per-section checks call `section_in_scope` for gating. Schema grammar upgraded from flat OR-keys to `required_when_any_of: [list of AND-rules]` to express conjunctions like witnesses_testimony's type=event AND kind=hearing. ~360 LOC of duplicated gate logic deleted across 18 per-section checks + artifact_top_level.)*
 
 ---
 
-### C16. Memoize `build-from-research.py` dry-run output across cross-layer checks
+### C16. *(retired 2026-05-05 — `ResearchContext.regenerated_body` lazy property landed in commit `4b1cfd3`. Subprocess spawned once per artifact on first access; cached as `(body, error)` tuple for the lifetime of the context. boundary.py reads the cached value; future cross-layer consumers benefit without re-implementing subprocess + caching machinery.)*
 
-`scripts/review-coverage.py::check_boundary` spawns
-`subprocess.run(['python3', 'build-from-research.py', '--dry-run',
-'--no-validate'])` per artifact — interpreter-startup overhead per
-review. Acceptable today: only one cross-layer check needs the
-regenerated body.
+---
 
-**Trigger to revisit.** When a second cross-layer check needs the
-regenerated body (most likely candidate: a future "round-trip
-fidelity" check that compares re-rendered output across the YAML
-artifact and the markdown body, or a quote-source-coverage check
-that needs to know which quotes the renderer emitted into which
-section). Adding a second consumer doubles the subprocess spawn cost
-unless the body is memoized once per artifact.
+### C17. Per-check unit tests with synthetic broken-input fixtures
 
-**Refactor when triggered.** Add a cached property on
-`ResearchContext`: `regenerated_body` — first access spawns the
-subprocess; subsequent accesses return the cached string. Per-artifact
-scope (cleared on next ResearchContext); orchestrator passes the same
-context to both checks.
+The C11/C13/C14 cluster decomposed every named validator check into
+a per-module callable in `scripts/checks/`. The pre-commit gate runs
+each check against the live corpus and confirms 0 errors / 0 warnings.
+That validates the **happy path** — checks running on clean data
+produce no Issues. It does NOT validate the **error paths** — that
+each check correctly emits Issues when violations exist.
 
-**Priority.** Low. Speculative; do nothing until a second consumer
-exists.
+A logic bug in a check that fires only on broken inputs would slip
+past the corpus pass. Example: if `manifest_archive_status` had a
+regression where it skipped one of the four `archive_status` bit-mask
+cases, the corpus pass (no entries with that case) wouldn't catch it
+— but a contributor introducing the case would get silent acceptance
+instead of the intended error.
 
-Surfaced: 2026-05-05 C11/C13/C14 investigation — issue #5 in the audit.
-Logged so the optimization-trigger doesn't get lost when the second
-consumer eventually surfaces.
+**Refactor.** Add per-check fixture-based unit tests under
+`scripts/tests/check_tests/`. Each test:
+1. Constructs a synthetic ResearchContext / NodeContext / BaseContext
+   with a deliberately-broken input (e.g., a manifest entry with
+   `archive_status=5` for the manifest_archive_status check).
+2. Invokes the check, collects yielded Issues.
+3. Asserts the expected Issue.check_name, Issue.level, and key
+   substring of Issue.message fired.
+4. Optionally tests negative cases (clean input → no Issues).
+
+Fixtures live alongside the test modules; one test module per check.
+Test runner integrated into pre-commit gate 2 (alongside
+test_stopwords) so regressions block commits.
+
+**Out of scope for the C11 cluster.** The cluster's retirement
+conditions were "decomposition + Issue contract + manifest lift".
+Unit testing is adjacent infrastructure that the decomposition
+**enables** (each check is now individually importable + invocable
+without fixture scaffolding) but isn't itself a cluster requirement.
+
+**Priority.** Medium. Closes a real testing gap surfaced by the
+C11/C13/C14 retrospective. Each unit test is small (~30-50 LOC);
+total scope is ~50 modules × small tests ≈ 1500-2500 LOC of
+straightforward fixture work. Could batch by check category.
+
+**Scope.** Multi-session unless an automated fixture-pattern emerges
+(e.g., a metaprogramming approach that generates tests from check
+docstrings). Realistic shape: pilot 5-10 checks in one session,
+extend to remaining checks across follow-up sessions.
+
+Surfaced: 2026-05-05 C11/C13/C14 closeout audit — verification pass
+spot-checked individual check error paths but didn't commit
+permanent regression coverage. Logged so the gap doesn't drift
+out of awareness.
+
+---
+
+### C18. Behavior diff verification — old-validator vs new-validator output
+
+C11/C13/C14 migrated every named validator check into per-module
+callables. Behavioral parity is asserted via the corpus pass (0/0
+on the live data, byte-identical to pre-migration). Stronger
+invariant: capture the old validator's full output (errors +
+warnings + broken-link registry) on a known-good corpus snapshot,
+then run the new validator and diff.
+
+A diff that's empty (modulo intentional formatting changes like
+the new check_name field that didn't exist pre-cluster) confirms
+behavioral identity beyond what 0/0 demonstrates. Catches
+regressions of the shape: "the corpus passes but the validators
+now report a different set of warnings on broken inputs."
+
+**Refactor.** A small one-shot harness:
+1. `git stash` current changes.
+2. `git checkout <pre-cluster-SHA>` (e.g., before commit `6a6726d`).
+3. Run validate.py / validate-research.py / review-coverage.py;
+   capture stdout + stderr + exit code per script.
+4. `git checkout main` (post-cluster).
+5. Run the same scripts; capture again.
+6. Diff captures pairwise. Identical output (excluding pre-existing
+   non-determinism, e.g., set-iteration ordering) confirms behavioral
+   equivalence.
+
+**Out of scope for the C11 cluster.** Same reasoning as C17:
+adjacent verification infrastructure; not a cluster retirement
+condition.
+
+**Priority.** Low. Belt-and-suspenders confidence boost. Useful for
+any future cluster of similar scale, less so for routine refactors.
+The corpus 0/0 pass is the load-bearing signal; this diff is
+confirmation of byte-identical reporting.
+
+**Scope.** One-shot harness script (~50-100 LOC); single session.
+Preserves output captures as a versioned baseline for future
+behavior-diff invocations.
+
+Surfaced: 2026-05-05 C11/C13/C14 closeout audit — recommended as
+"belt-and-suspenders" verification that the corpus pass
+behaviorally implies but doesn't strictly prove.
 
