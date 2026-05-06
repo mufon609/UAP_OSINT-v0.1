@@ -22,6 +22,21 @@ Consumes ``BaseContext.manifest_entries`` — the orchestrator loads
 ``sources/manifest.yaml`` once per invocation and shares it across
 the three manifest checks (manifest_checksums, manifest_archive_status,
 manifest_extraction_type) so the file isn't re-parsed per check.
+
+Origin: commit ``7a01d8b`` introduced the ``archive_status`` field and
+this integrity check together (Phase 1 of a 2-bit-indicator landing
+that lets ``archive.py`` skip URLs already confirmed in Wayback rather
+than re-checking the entire manifest every run). The check was
+defensive from day one — created *with* the optimization, not in
+reaction to a bug — to guarantee the composite indicator never
+silently lies when underlying state drifts. The concrete adjacent
+failure class is BACKLOG #30 (commit ``d6732e1``): at the time of
+7a01d8b, ``archive.py`` was fire-and-forget — not updating the
+manifest on successful Wayback submit, so bit 1 would have stayed 0
+even after a snapshot existed. The #30 fix made ``archive.py`` update
+the manifest; if that regressed, this check catches it. The migration
+to per-module shape happened later (commit ``1c34081``, BACKLOG C14
+session 2) without behavior changes; C18 confirmed byte-identity.
 """
 
 from checks import Issue

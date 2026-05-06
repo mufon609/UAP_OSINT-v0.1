@@ -44,7 +44,7 @@ Remaining 42 should land at ✅.
 | Check | Status | Notes |
 |---|---|---|
 | governance_files | ☐ | Walks `meta/`; substantial — schedule with heavy batch |
-| manifest_archive_status | 🟡 | 2-bit bitmask + wayback_skip contradiction |
+| manifest_archive_status | ✅ | Anchored to `7a01d8b` (field + check introduced together — defensive, paired with the `archive.py` recheck-skip optimization). Concrete adjacent failure class: BACKLOG #30 (`d6732e1`, archive.py fire-and-forget) — check catches any regression of that shape. |
 | manifest_checksums | ☐ | File-IO + sha256 |
 | manifest_extraction_type | ☐ | Light; pairs with manifest_archive_status |
 
