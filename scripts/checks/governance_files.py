@@ -213,6 +213,22 @@ def _check_governance_doc_frontmatter(path, rel, text, compatible_with, schema_b
                 f"{expected_id!r}",
                 check_name=CHECK_NAME)
 
+    # Per BACKLOG C22: meta/topic/overview.md is the canonical topic-
+    # config record; frontmatter must carry topic + display_name so
+    # lib._common.load_topic() and the renderer can substitute the
+    # display name into section headers. Other governance docs
+    # don't need these fields.
+    if str(rel) == "meta/topic/overview.md":
+        for field in ("topic", "display_name"):
+            if field not in fm:
+                yield Issue(rel, "error",
+                    f"meta/topic/overview.md frontmatter missing "
+                    f"required topic-config field {field!r} (topic + "
+                    f"display_name drive schema-field-rename + renderer "
+                    f"section-header substitution; see BACKLOG C22 + "
+                    f"prompts/fork-init.md)",
+                    check_name=CHECK_NAME)
+
 
 def check(ctx):
     """Yield Issues for any governance file under meta/ that violates

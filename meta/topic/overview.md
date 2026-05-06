@@ -3,6 +3,8 @@ id: meta/topic/overview
 type: meta
 schema_version: 1
 created: 2026-04-17
+topic: uap
+display_name: UAP
 ---
 
 # Topic Overview — this instance

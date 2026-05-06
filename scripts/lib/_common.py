@@ -145,6 +145,60 @@ def parse_frontmatter(text):
         return None, None
 
 
+# Topic-config — read from meta/topic/overview.md frontmatter.
+# Per BACKLOG C22: overview.md is the canonical topic-config record;
+# frontmatter carries `topic` (lowercase identifier) + `display_name`
+# (rendered text in section headers + agent prose). Cached per-process.
+_TOPIC_CONFIG_CACHE = None
+_OVERVIEW_PATH = REPO_ROOT / "meta" / "topic" / "overview.md"
+
+
+def load_topic():
+    """Read meta/topic/overview.md frontmatter and return
+    ``{topic, display_name}``. Cached per-process.
+
+    Errors loudly on missing file or required fields per the
+    schema-config no-silent-fallbacks principle (cf. C21 sweep).
+    Fork-target bootstrap is handled by ``prompts/fork-init.md``,
+    which generates overview.md with the required frontmatter
+    fields. Existing-instance contributors should never hit the
+    error path — overview.md is required + validated by
+    governance_files.
+    """
+    global _TOPIC_CONFIG_CACHE
+    if _TOPIC_CONFIG_CACHE is not None:
+        return _TOPIC_CONFIG_CACHE
+
+    if not _OVERVIEW_PATH.exists():
+        raise FileNotFoundError(
+            f"meta/topic/overview.md is required for topic-config but is "
+            f"missing at {_OVERVIEW_PATH}. If bootstrapping a fresh fork "
+            f"target, run prompts/fork-init.md to generate it."
+        )
+
+    text = _OVERVIEW_PATH.read_text()
+    fm, _ = parse_frontmatter(text)
+    if fm is None:
+        raise ValueError(
+            "meta/topic/overview.md frontmatter could not be parsed."
+        )
+
+    for field in ("topic", "display_name"):
+        if field not in fm:
+            raise KeyError(
+                f"meta/topic/overview.md frontmatter missing required "
+                f"field {field!r}. The two topic-config fields (topic + "
+                f"display_name) drive schema-field-rename + renderer "
+                f"section-header substitution. See prompts/fork-init.md."
+            )
+
+    _TOPIC_CONFIG_CACHE = {
+        "topic": fm["topic"],
+        "display_name": fm["display_name"],
+    }
+    return _TOPIC_CONFIG_CACHE
+
+
 def schema_version_compat_messages(sv, compatible_with, current_version, *, prefix=""):
     """Return list of ``(level, message)`` tuples for schema_version
     compatibility violations. Caller wraps each tuple with its Issue
