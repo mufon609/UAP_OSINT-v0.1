@@ -6,11 +6,33 @@ outside the compatible window (with a pointer to the migration
 docs). Absent schema_version is handled by frontmatter_required;
 this check no-ops on None.
 
-Lift from validate.py validate_node (C11 session-3 migration).
-Shares ``schema_version_compat_messages`` from ``lib/_common.py`` with
-the equivalent checks on research artifacts (artifact_top_level) and
-governance-doc / template frontmatter (governance_files). Same logic;
-one source — closes BACKLOG Issue #8.
+Origin: foundational from the initial commit (``af5f789``); the
+schema_version compat check was inline in validate.py from day one
+as part of the basic frontmatter discipline. Migration trail:
+
+  - ``60bb88d`` (C11 session 3 lift to per-module shape)
+  - ``2f3effb`` (BACKLOG #8 close — "lib: consolidate schema_version
+    compat helper") consolidated the version-compat logic into
+    ``lib._common.schema_version_compat_messages``. Same helper now
+    serves four sites: this per-node check, ``artifact_top_level``
+    (research-artifact top-level), ``governance_files`` template
+    route, ``governance_files`` governance-doc route. Single source
+    of truth for the version-compat error wording + migration-
+    pointer message.
+
+Anchor pattern: foundational thin-wrapper on shared helper. Stable
+check shape since af5f789; the check delegates the operative
+logic to ``lib._common``. Same shape as the helper-using paths in
+``artifact_top_level`` and ``governance_files``. The four consumer
+sites converged on a single helper rather than maintaining four
+parallel implementations of the version-compat-message logic —
+consistent with the broader lockstep pattern for source-extraction
+helpers (BACKLOG-tracked refactors that pulled extract_source_text,
+normalize_for_compare, parse_frontmatter, the prose-drift tokenizer
+into lib).
+
+C18 confirmed byte-identity through both the C11 lift and the
+helper consolidation.
 """
 
 from checks import Issue
