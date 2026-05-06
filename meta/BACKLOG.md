@@ -969,49 +969,48 @@ forcing shape; codified the trigger condition here.
 
 ---
 
-### C17. Per-check unit tests with synthetic broken-input fixtures
+### C17. Per-check investigation pass
 
-The C11/C13/C14 cluster decomposed every named validator check into
-a per-module callable in `scripts/checks/`. The pre-commit gate runs
-each check against the live corpus and confirms 0 errors / 0 warnings.
-That validates the **happy path** — checks running on clean data
-produce no Issues. It does NOT validate the **error paths** — that
-each check correctly emits Issues when violations exist.
+The C11/C13/C14 cluster decomposed every named validator check into a
+per-module callable in `scripts/checks/`. Each check reads clean and
+is individually importable, but no contributor has done a focused
+review pass on its intent, anchoring, or comment discipline.
 
-A logic bug in a check that fires only on broken inputs would slip
-past the corpus pass. Example: if `manifest_archive_status` had a
-regression where it skipped one of the four `archive_status` bit-mask
-cases, the corpus pass (no entries with that case) wouldn't catch it
-— but a contributor introducing the case would get silent acceptance
-instead of the intended error.
+Per-check work:
 
-**Status: pilot landed.** 7 representative checks audited + tested
-across all five dispatcher shapes (BaseContext / NodeContext / pre-
-parse / per-artifact / Phase III). Fixture helpers live at
-`scripts/tests/check_tests/_fixtures.py`; runner at
-`scripts/tests/run-check-tests.py` is wired as pre-commit gate 4.
-Per-check tracking (status, test counts, sequencing) at
-[`meta/toolkit-notes/check-audit.md`](toolkit-notes/check-audit.md).
+1. **Production-issue anchor.** Identify the concrete failure mode
+   the check was created to catch, and confirm its logic actually
+   catches that mode. `git log --diff-filter=A` on the module file
+   finds the introducing commit; from there, BACKLOG / toolkit-notes
+   / postmortem entries usually trace the surfacing incident.
+2. **Logic review.** Surface dead code, ambiguous behavior, or schema
+   gaps the check has been quietly accepting. Small fixes ship in the
+   same commit; larger ones become BACKLOG entries.
+3. **Docstring + comment discipline.** No dates, no session lore, no
+   didactic examples; anchored to BACKLOG IDs, schema field paths,
+   conventions.md sections.
 
-**Pattern shipped.** Per-check test module under
-`scripts/tests/check_tests/{check_name}_test.py`:
-1. Constructs a synthetic Context via `_fixtures.make_{base,node,research}_ctx`
-   with a deliberately-broken input.
-2. Invokes the check, collects yielded Issues.
-3. Asserts the expected Issue.check_name, Issue.level, and key
-   substring of Issue.message fired.
-4. Mirror case: clean input → no Issues.
+Per-check tracking lives at
+[`meta/toolkit-notes/check-audit.md`](toolkit-notes/check-audit.md):
+status by check + sequencing recommendation batched by Context type.
 
-The runner exits non-zero on any failure, blocking commits.
+**Tradeoff recorded.** An earlier shape of this entry called for
+synthetic-broken-input unit tests per check — that pilot shipped and
+was removed on the judgment that 49 test modules is more carrying
+cost than the regression coverage buys at this corpus size. The gap
+remains: a refactor that breaks a check's error path is detected only
+when a contributor encounters a real broken input. Documented here so
+the question doesn't get re-litigated each session.
 
-**Remaining.** 42 checks. Sequencing + per-check estimates in the
-audit-tracking file above. Realistic total ~15–20 hours focused
-across 5–8 sessions; batch by Context type so per-batch fixture
-idioms compound.
+**Status.** 7 checks docstring-audited in the pilot session
+(frontmatter_required, id_path_match, conditionally_required,
+manifest_archive_status, iff_section, affiliations,
+yaml_hash_truncation). Production-issue anchoring is loose on these
+seven and tightens on the remaining 42.
 
 Surfaced: C11/C13/C14 closeout audit — verification pass spot-checked
-individual check error paths but didn't commit permanent regression
-coverage. Logged so the gap doesn't drift out of awareness.
+individual check error paths but didn't commit a per-check review.
+Logged so the gap doesn't drift out of awareness.
 
 ---
 

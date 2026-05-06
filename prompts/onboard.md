@@ -43,12 +43,10 @@ Then run the health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-All eight gates must be green:
+All seven gates must be green:
 - `help-check` — every `scripts/*.py --help` exits clean
 - `test_stopwords` — STOPWORDS shape + content-word regression test
 - `smoke` — fixture scaffolds validate cleanly
-- `check-tests` — per-check unit tests with synthetic broken-input
-  fixtures (BACKLOG C17; runner at `scripts/tests/run-check-tests.py`)
 - `validate.py` — structural + verbatim-quote checks (orchestrator;
   per-check modules in `scripts/checks/`)
 - `validate-research.py` — research-artifact structural + prose-drift
