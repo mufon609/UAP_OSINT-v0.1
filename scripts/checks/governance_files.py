@@ -28,7 +28,7 @@ import re
 from pathlib import Path
 
 from checks import Issue
-from lib._common import parse_frontmatter
+from lib._common import parse_frontmatter, schema_version_compat_messages
 
 
 CHECK_NAME = "governance_files"
@@ -124,7 +124,8 @@ def _check_template_frontmatter(path, rel, text, compatible_with, schema_block):
 
     # schema_version: must be integer in compatible_with. Templates
     # hard-code a version (not a placeholder) because scaffolded nodes
-    # inherit the value verbatim.
+    # inherit the value verbatim. Shared lib helper drives the
+    # compat-check messaging (Issue #8 dedup).
     sv_match = re.search(r"^schema_version:\s*(\d+)\s*$", block, re.MULTILINE)
     if not sv_match:
         yield Issue(rel, "error",
@@ -133,12 +134,11 @@ def _check_template_frontmatter(path, rel, text, compatible_with, schema_block):
             check_name=CHECK_NAME)
     else:
         sv = int(sv_match.group(1))
-        if sv not in compatible_with:
-            current = schema_block.get("version", "?")
-            yield Issue(rel, "error",
-                f"Template schema_version {sv} not in compatible_with "
-                f"{compatible_with} (current schema version is {current})",
-                check_name=CHECK_NAME)
+        current = schema_block.get("version", "?")
+        for level, msg in schema_version_compat_messages(
+            sv, compatible_with, current, prefix="Template ",
+        ):
+            yield Issue(rel, level, msg, check_name=CHECK_NAME)
 
     # created: required; value is always `{{today}}` placeholder, not
     # validated as a date (the scaffolder substitutes).
@@ -168,22 +168,12 @@ def _check_governance_doc_frontmatter(path, rel, text, compatible_with, schema_b
                 f"{' / '.join(_REQUIRED_META_FIELDS)})",
                 check_name=CHECK_NAME)
 
-    # schema_version value check
-    sv = fm.get("schema_version")
-    if sv is not None:
-        if not isinstance(sv, int) or isinstance(sv, bool):
-            yield Issue(rel, "error",
-                f"schema_version must be an integer; got {sv!r} "
-                f"({type(sv).__name__})",
-                check_name=CHECK_NAME)
-        elif sv not in compatible_with:
-            current = schema_block.get("version", "?")
-            yield Issue(rel, "error",
-                f"schema_version {sv} not in compatible_with "
-                f"{compatible_with} (current schema version is "
-                f"{current}). Migrate per "
-                f"meta/toolkit-notes/schema-migrations/.",
-                check_name=CHECK_NAME)
+    # schema_version value check (shared lib helper — Issue #8 dedup)
+    current = schema_block.get("version", "?")
+    for level, msg in schema_version_compat_messages(
+        fm.get("schema_version"), compatible_with, current,
+    ):
+        yield Issue(rel, level, msg, check_name=CHECK_NAME)
 
     # id matches path
     if "id" in fm:

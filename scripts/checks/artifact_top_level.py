@@ -30,6 +30,7 @@ their own modules and gate themselves by target type.
 from pathlib import Path
 
 from checks import Issue
+from lib._common import schema_version_compat_messages
 
 
 CHECK_NAME = "artifact_top_level"
@@ -90,25 +91,14 @@ def check(ctx):
             check_name=CHECK_NAME,
         )
 
-    # schema_version compatibility
-    sv = data.get("schema_version")
-    compatible_with = ctx.schema.get("schema", {}).get("compatible_with", [1])
-    if sv is not None:
-        if not isinstance(sv, int) or isinstance(sv, bool):
-            yield Issue(
-                ctx.rel, "error",
-                f"schema_version must be an integer; got {sv!r}",
-                check_name=CHECK_NAME,
-            )
-        elif sv not in compatible_with:
-            current = ctx.schema.get("schema", {}).get("version", "?")
-            yield Issue(
-                ctx.rel, "error",
-                f"schema_version {sv} not in compatible_with {compatible_with} "
-                f"(current schema version is {current}). "
-                f"Migrate per meta/toolkit-notes/schema-migrations/.",
-                check_name=CHECK_NAME,
-            )
+    # schema_version compatibility (via shared lib helper — Issue #8 dedup)
+    schema_block = ctx.schema.get("schema", {}) or {}
+    compatible_with = schema_block.get("compatible_with", [1])
+    current = schema_block.get("version", "?")
+    for level, msg in schema_version_compat_messages(
+        data.get("schema_version"), compatible_with, current,
+    ):
+        yield Issue(ctx.rel, level, msg, check_name=CHECK_NAME)
 
     # status enum
     if data.get("status") and data.get("status") not in VALID_STATUS:

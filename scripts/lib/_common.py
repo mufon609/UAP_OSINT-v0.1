@@ -145,6 +145,39 @@ def parse_frontmatter(text):
         return None, None
 
 
+def schema_version_compat_messages(sv, compatible_with, current_version, *, prefix=""):
+    """Return list of ``(level, message)`` tuples for schema_version
+    compatibility violations. Caller wraps each tuple with its Issue
+    class. Empty list when the value is valid (or absent — None
+    silently passes; absence is handled by the caller's required-field
+    check).
+
+    Centralized here per BACKLOG #8 — the same logic was previously
+    duplicated across four sites (validate_node, _check_template_frontmatter,
+    _check_governance_doc_frontmatter, validate_artifact). One helper,
+    one place to update when schema migration discipline shifts.
+
+    ``prefix`` lets template-shaped check sites prepend context (e.g.,
+    "Template ") to error messages without forking the helper.
+    """
+    if sv is None:
+        return []
+    if not isinstance(sv, int) or isinstance(sv, bool):
+        return [(
+            "error",
+            f"{prefix}schema_version must be an integer; got {sv!r} "
+            f"({type(sv).__name__})",
+        )]
+    if sv not in compatible_with:
+        return [(
+            "error",
+            f"{prefix}schema_version {sv} not in compatible_with "
+            f"{compatible_with} (current schema version is {current_version}). "
+            f"Migrate per meta/toolkit-notes/schema-migrations/.",
+        )]
+    return []
+
+
 def extract_h2_sections(text):
     """Return the list of H2 heading titles (the text after ``## ``) in
     document order. Trailing whitespace stripped per heading. Used as
