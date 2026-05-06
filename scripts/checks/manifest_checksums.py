@@ -51,28 +51,12 @@ from the manifest's live ``sha256`` — captured at extraction time
 rather than current state). Different concern, different field.
 """
 
-import hashlib
-
 from checks import Issue
-from lib._common import SOURCES_DIR
+from lib._common import SOURCES_DIR, compute_sha256
 
 
 CHECK_NAME = "manifest_checksums"
 MANIFEST_REL = "sources/manifest.yaml"
-
-
-def _compute_sha256(file_path):
-    """Stream-compute SHA256 of a file. Returns hex digest or None on
-    read error. Same algorithm as scripts/manifest.py (kept duplicated
-    so each validator script remains self-contained)."""
-    try:
-        h = hashlib.sha256()
-        with open(file_path, "rb") as f:
-            for chunk in iter(lambda: f.read(65536), b""):
-                h.update(chunk)
-        return h.hexdigest()
-    except OSError:
-        return None
 
 
 def check(ctx):
@@ -112,7 +96,7 @@ def check(ctx):
             )
             continue
 
-        current = _compute_sha256(full)
+        current = compute_sha256(full)
         if current is None:
             yield Issue(
                 f"sources/{path}", "error",

@@ -21,10 +21,12 @@ import sys
 from pathlib import Path
 
 try:
-    import yaml
+    import yaml  # noqa: F401  (kept for early ImportError guidance)
 except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
+
+from lib._common import parse_frontmatter as _parse_frontmatter_with_body
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 CLAUDE_MD = REPO_ROOT / "CLAUDE.md"
@@ -49,15 +51,11 @@ MARKER_END = "<!-- BUILD-STATE-END -->"
 
 
 def parse_frontmatter(text):
-    if not text.startswith("---"):
-        return {}
-    end = text.find("\n---", 3)
-    if end < 0:
-        return {}
-    try:
-        return yaml.safe_load(text[3:end]) or {}
-    except yaml.YAMLError:
-        return {}
+    """Thin wrapper around ``lib._common.parse_frontmatter`` that returns
+    just the frontmatter dict (build-state doesn't consume the body) and
+    coerces None to {} so callers don't need a None check."""
+    fm, _ = _parse_frontmatter_with_body(text)
+    return fm or {}
 
 
 def collect_nodes():

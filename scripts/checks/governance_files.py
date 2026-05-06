@@ -233,13 +233,26 @@ def _check_governance_doc_frontmatter(path, rel, text, compatible_with, schema_b
 def check(ctx):
     """Yield Issues for any governance file under meta/ that violates
     the frontmatter discipline. Templates routed through a placeholder-
-    aware regex path; everything else uses standard YAML parsing."""
+    aware regex path; everything else uses standard YAML parsing.
+    Also verifies meta/topic/overview.md exists — every toolkit
+    instance must declare its topic scope there (see BACKLOG C22 +
+    prompts/fork-init.md)."""
     # Direct schema-config access; KeyError surfaces if the schema's
     # `schema:` block or its required nested keys are missing. Schema
     # is foundational toolkit contract — silent fallbacks would mask
     # schema drift, not a degrade-gracefully case.
     schema_block = ctx.schema["schema"]
     compatible_with = schema_block["compatible_with"]
+
+    overview_path = _META_DIR / "topic" / "overview.md"
+    if not overview_path.exists():
+        yield Issue(
+            "meta/topic/overview.md", "error",
+            "Required file missing — every toolkit instance must declare "
+            "its topic scope in meta/topic/overview.md. See README.md for "
+            "fork procedure.",
+            check_name=CHECK_NAME,
+        )
 
     for path in _iter_governance_files():
         rel = path.relative_to(_REPO_ROOT)

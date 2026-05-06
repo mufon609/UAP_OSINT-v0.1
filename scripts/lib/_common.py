@@ -24,6 +24,7 @@ live under `/meta/research/` (governance / structured-data backing
 tier per `meta/conventions.md`), not the content tier.
 """
 
+import hashlib
 import html
 import re
 import subprocess
@@ -197,6 +198,34 @@ def load_topic():
         "display_name": fm["display_name"],
     }
     return _TOPIC_CONFIG_CACHE
+
+
+def compute_sha256(file_path):
+    """Stream-compute SHA256 of a file. Returns hex digest or None on
+    read error. Shared between manifest.py (CLI) and the
+    manifest_checksums validator check so the integrity-check algorithm
+    is mechanical lockstep, not duplication."""
+    try:
+        h = hashlib.sha256()
+        with open(file_path, "rb") as f:
+            for chunk in iter(lambda: f.read(65536), b""):
+                h.update(chunk)
+        return h.hexdigest()
+    except OSError:
+        return None
+
+
+# Content-node types the Phase II renderer (build-from-research.py) and
+# the Phase III reviewer (review-coverage.py) both support. Centralized
+# here so the two stay in lockstep mechanically rather than via
+# comment-discipline (the prior "Matches build-from-research.py
+# SUPPORTED_TYPES. Expand in lockstep." pattern). Excludes ``finding`` —
+# F.7 finding renderer is the last unbuilt phase per ``meta/roadmap.md``;
+# add when F.7 ships.
+SUPPORTED_TYPES = frozenset({
+    "document", "person", "event", "transcript",
+    "media", "organization", "location",
+})
 
 
 def schema_version_compat_messages(sv, compatible_with, current_version, *, prefix=""):

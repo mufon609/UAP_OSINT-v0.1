@@ -50,7 +50,13 @@ CHECK_NAME = "frontmatter_required"
 
 
 def check(ctx):
-    required = ctx.type_spec.get("frontmatter", {}).get("required", [])
+    # Direct subscript on the schema-required path. Every node type's
+    # spec carries a ``frontmatter.required`` list per schema.yaml; a
+    # silent ``.get(..., {})`` fallback would mask schema drift (a type
+    # missing the ``frontmatter:`` block would silently skip required-
+    # field validation). Loud KeyError is the right failure mode per
+    # the C21 no-silent-fallbacks principle.
+    required = ctx.type_spec["frontmatter"]["required"]
     for field in required:
         if field not in ctx.fm:
             yield Issue(

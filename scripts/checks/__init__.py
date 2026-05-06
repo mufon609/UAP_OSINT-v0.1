@@ -38,6 +38,15 @@ Two contracts shared across every check:
   - Context: shared state passed to each check. BaseContext carries
     repo-global state (schema, manifest, broken-link registry); NodeContext
     and ResearchContext carry per-file state for the two iteration shapes.
+
+Preflight checks. Parse / load validity diagnostics (frontmatter parse,
+YAML root-shape, target_node resolution, source extraction health) live
+in dedicated check modules — ``frontmatter_parse``, ``artifact_parse``,
+``phase_iii_inputs``. Orchestrators dispatch them against a
+minimal-shape Context before the main step list, and short-circuit the
+chain on any fatal Issue. Every Issue's ``check_name`` therefore points
+to a real ``scripts/checks/{name}.py`` module — no orchestrator-emitted
+``check_name`` strings claiming a non-existent backing module.
 """
 
 from collections import defaultdict

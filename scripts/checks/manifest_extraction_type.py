@@ -63,23 +63,27 @@ from checks import Issue
 CHECK_NAME = "manifest_extraction_type"
 MANIFEST_REL = "sources/manifest.yaml"
 
-_VALID_VALUES = ("text-native", "ocr-scan", "extraction-lossy")
-
 
 def check(ctx):
     """Yield error-level Issue for any entry whose extraction_type is
-    set to a value outside the schema's enum."""
+    set to a value outside the schema's enum. Valid values come from
+    ``schema.yaml::manifest_entry.extraction_type_values`` — schema is
+    the single source of truth, so adding a new extraction_type is one
+    schema edit rather than a schema edit + this check edit. Direct
+    subscript surfaces a loud KeyError on schema malformation per the
+    C21 no-silent-fallbacks principle."""
+    valid_values = ctx.schema["manifest_entry"]["extraction_type_values"]
     for entry in ctx.manifest_entries:
         if not isinstance(entry, dict):
             continue
         if "extraction_type" not in entry:
             continue
         et = entry.get("extraction_type")
-        if et not in _VALID_VALUES:
+        if et not in valid_values:
             url = entry.get("url", "(no url)")
             yield Issue(
                 MANIFEST_REL, "error",
-                f"extraction_type must be one of {list(_VALID_VALUES)}; "
+                f"extraction_type must be one of {list(valid_values)}; "
                 f"got {et!r} (URL: {url})",
                 check_name=CHECK_NAME,
             )

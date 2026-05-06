@@ -38,12 +38,14 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-from checks import BaseContext, Issue, ResearchContext
+from checks import BaseContext, ResearchContext
+from checks import artifact_parse as ck_artifact_parse
 from checks import boundary as ck_boundary
 from checks import coverage as ck_coverage
 from checks import description_token_drift as ck_description_token_drift
+from checks import phase_iii_inputs as ck_phase_iii_inputs
 from checks import stub_linking as ck_stub_linking
-from lib._common import extract_source_text
+from lib._common import SUPPORTED_TYPES, extract_source_text
 
 
 # =============================================================================
@@ -62,10 +64,8 @@ TYPE_DIRS = {
     "location": "locations", "finding": "findings",
 }
 
-# Matches build-from-research.py SUPPORTED_TYPES. Expand in lockstep.
-SUPPORTED_TYPES = {
-    "document", "person", "event", "transcript", "media", "organization", "location",
-}
+# SUPPORTED_TYPES imported from lib._common — single source shared with
+# build-from-research.py (mechanical lockstep, not comment-discipline).
 
 
 # =============================================================================
@@ -98,14 +98,17 @@ def load_manifest_paths():
 
 
 def load_artifact(path):
+    """Open + parse the artifact YAML. Returns the parsed dict, or None
+    on any failure (file missing, YAML parse error, non-dict root). The
+    ``artifact_parse`` preflight check yields the user-facing diagnostic;
+    this loader stays exception-tolerant so per-artifact parse failures
+    don't halt the iteration when called from ``--all``."""
     try:
         with open(path) as f:
             data = yaml.safe_load(f)
-    except yaml.YAMLError as e:
-        sys.exit(f"ERROR: artifact parse failure: {e}")
-    if not isinstance(data, dict):
-        sys.exit(f"ERROR: artifact root is not a YAML mapping: {path}")
-    return data
+    except (OSError, yaml.YAMLError):
+        return None
+    return data if isinstance(data, dict) else None
 
 
 def target_node_path(artifact):
@@ -157,55 +160,44 @@ def _gather_source_text(artifact):
 # =============================================================================
 
 def review_artifact(artifact_path, base_ctx):
-    """Return (issues, skipped_reason_or_None)."""
+    """Return ``(issues, skipped_reason_or_None)``.
+
+    Two-stage preflight before the main ``_REVIEW_CHECKS`` chain:
+      1. ``artifact_parse`` — file exists, YAML parses, root is dict.
+         Fatal short-circuits.
+      2. ``phase_iii_inputs`` — target_node points to a real file +
+         primary_sources are extractable. Fatal short-circuits (target
+         missing); non-fatal warnings about source extraction flow into
+         the final issue stream.
+
+    Unsupported target types skip cleanly (skip != error) and never
+    reach the preflight, since the four review checks are renderer-
+    coupled and only meaningful where the renderer ships.
+    """
     rel = artifact_path.relative_to(REPO_ROOT)
+    issues = []
 
-    if not artifact_path.exists():
-        return [Issue(rel, "error", "Artifact file does not exist",
-                      check_name="review_coverage_load")], None
+    # Build a minimal ResearchContext for the parse preflight. data may
+    # be None if the file is missing or the YAML is malformed; the
+    # artifact_parse check yields a fatal Issue in that case.
+    artifact = load_artifact(artifact_path) if artifact_path.exists() else None
+    pre_ctx = ResearchContext(
+        base_ctx, path=artifact_path, rel=rel, raw_lines=[], data=artifact,
+    )
 
-    artifact = load_artifact(artifact_path)
+    parse_issues = list(ck_artifact_parse.check(pre_ctx))
+    issues.extend(parse_issues)
+    if any(i.fatal for i in parse_issues):
+        return issues, None
 
-    node_path = target_node_path(artifact)
-    if node_path is None or not node_path.exists():
-        return [Issue(
-            rel, "error",
-            f"target_node {artifact.get('target_node')!r} does not point "
-            f"to an existing file",
-            check_name="review_coverage_load",
-        )], None
-
+    # Parse preflight passed; downstream Context needs the parsed dict.
     node_type = target_node_type(artifact)
     if node_type not in SUPPORTED_TYPES:
-        return [], f"node type {node_type!r} not yet supported in Phase III (BACKLOG)"
+        return issues, f"node type {node_type!r} not yet supported in Phase III (BACKLOG)"
 
-    node_text = node_path.read_text()
-    source_text, missing_sources = _gather_source_text(artifact)
-
-    issues = []
-    for path in missing_sources:
-        full = SOURCES_DIR / path
-        if not full.exists():
-            issues.append(Issue(
-                rel, "error",
-                f"Description drift check: primary source {path!r} missing "
-                f"— file not present on disk under sources/. Source-archival "
-                f"integrity issue; verify the manifest entry and re-archive "
-                f"if needed.",
-                check_name="review_coverage_load",
-            ))
-        else:
-            # File exists but isn't text-extractable — typical for binary
-            # media. Non-blocking warn (matches verbatim-quote check
-            # semantics in validate.py).
-            issues.append(Issue(
-                rel, "warn",
-                f"Description drift check: primary source {path!r} not text-"
-                f"extractable (likely binary media — video/audio/image). "
-                f"Tokens from this source skipped; verbatim quote extraction "
-                f"from media sources requires manual contributor verification.",
-                check_name="review_coverage_load",
-            ))
+    node_path = target_node_path(artifact)
+    node_text = node_path.read_text() if (node_path and node_path.exists()) else None
+    source_text, _ = _gather_source_text(artifact) if node_text else ("", [])
 
     ctx = ResearchContext(
         base_ctx, path=artifact_path, rel=rel,
@@ -215,6 +207,13 @@ def review_artifact(artifact_path, base_ctx):
         node_text=node_text,
         source_text=source_text,
     )
+
+    # Phase III input integrity preflight — target_node existence
+    # (fatal) + per-source extraction health (non-fatal).
+    inputs_issues = list(ck_phase_iii_inputs.check(ctx))
+    issues.extend(inputs_issues)
+    if any(i.fatal for i in inputs_issues):
+        return issues, None
 
     for check_module in _REVIEW_CHECKS:
         issues.extend(check_module.check(ctx))

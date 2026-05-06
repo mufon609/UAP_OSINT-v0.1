@@ -97,13 +97,14 @@ except ImportError:
 
 from lib._common import parse_frontmatter
 
-# Per-check modules (C11 / C13 / C14 — pilot wiring; sessions 2 and 3
-# migrate the remaining checks against the same contract).
-from checks import BaseContext, Issue, NodeContext
+# Per-check modules. Each named check lives at scripts/checks/{name}.py;
+# orchestrator dispatches via the explicit step lists below.
+from checks import BaseContext, NodeContext
 from checks import chronological_tables as ck_chronological_tables
 from checks import conditionally_required as ck_conditionally_required
 from checks import doc_form_archival_status as ck_doc_form_archival_status
 from checks import finding_cross_ref as ck_finding_cross_ref
+from checks import frontmatter_parse as ck_frontmatter_parse
 from checks import frontmatter_required as ck_frontmatter_required
 from checks import governance_files as ck_governance_files
 from checks import id_path_match as ck_id_path_match
@@ -111,6 +112,7 @@ from checks import link_resolution as ck_link_resolution
 from checks import manifest_archive_status as ck_manifest_archive_status
 from checks import manifest_checksums as ck_manifest_checksums
 from checks import manifest_extraction_type as ck_manifest_extraction_type
+from checks import manifest_parse as ck_manifest_parse
 from checks import required_sections as ck_required_sections
 from checks import schema_version_compat as ck_schema_version_compat
 from checks import section_rules as ck_section_rules
@@ -126,16 +128,6 @@ CONTENT_DIRS = [
     "people", "organizations", "documents", "events",
     "transcripts", "media", "locations", "findings",
 ]
-
-
-# =============================================================================
-# Types and reporting
-# =============================================================================
-#
-# Issue + Context types live in scripts/checks/__init__.py — the unified
-# C13 contract adopted by every per-check module. validate.py imports
-# both alongside the per-check modules below; the legacy local Issue
-# class deleted at session-3 close.
 
 
 # =============================================================================
@@ -176,30 +168,33 @@ _NODE_CHECKS = [
 def validate_node(path, base_ctx):
     """Run the per-node check chain against a single content node.
 
-    Fatal cases (parse failure, missing 'type', unknown type) emit one
-    fatal-marked Issue and short-circuit downstream checks for this
-    file. broken_links accumulate in base_ctx.broken_links (out-of-band
-    metadata channel); main() reads the registry after all nodes
-    process.
+    Preflight (frontmatter_parse) runs first against a minimal
+    NodeContext carrying only ``text``; on any fatal Issue (parse
+    failure, missing 'type', unknown type) the main chain is skipped.
+    Otherwise the orchestrator builds the full NodeContext (fm /
+    node_type / type_spec populated) and dispatches ``_NODE_CHECKS``.
+
+    ``broken_links`` accumulate in ``base_ctx.broken_links``
+    (out-of-band metadata channel); main() reads the registry after
+    all nodes process.
     """
     issues = []
     text = path.read_text()
     rel = path.relative_to(REPO_ROOT)
 
+    # Preflight against a minimal NodeContext (text + base only). The
+    # frontmatter_parse check yields fatal Issues for malformed FM,
+    # missing 'type', or unknown type — all preconditions for the main
+    # chain's NodeContext shape.
+    preflight_ctx = NodeContext(base_ctx, path=path, rel=rel, text=text)
+    preflight_issues = list(ck_frontmatter_parse.check(preflight_ctx))
+    issues.extend(preflight_issues)
+    if any(i.fatal for i in preflight_issues):
+        return issues
+
     fm, _ = parse_frontmatter(text)
-    if fm is None:
-        return [Issue(rel, "error", "Missing or malformed YAML frontmatter",
-                      check_name="frontmatter_parse", fatal=True)]
-
-    node_type = fm.get("type")
-    if not node_type:
-        return [Issue(rel, "error", "Missing 'type' in frontmatter",
-                      check_name="frontmatter_parse", fatal=True)]
-
-    type_spec = base_ctx.schema["types"].get(node_type)
-    if not type_spec:
-        return [Issue(rel, "error", f"Unknown type '{node_type}'",
-                      check_name="frontmatter_parse", fatal=True)]
+    node_type = fm["type"]
+    type_spec = base_ctx.schema["types"][node_type]
 
     node_ctx = NodeContext(
         base_ctx, path=path, rel=rel, text=text,
@@ -210,12 +205,6 @@ def validate_node(path, base_ctx):
         issues.extend(check_module.check(node_ctx))
 
     return issues
-
-
-# governance_files check (frontmatter discipline for meta/ files) moved to
-# scripts/checks/governance_files.py during the C11 session-2 migration
-# (2026-05-05). Consumes BaseContext.schema; performs its own meta/ walk
-# (governance scope is global, not driven by content-node iteration).
 
 
 # =============================================================================
@@ -249,58 +238,45 @@ def main():
 
     all_issues = []
 
-    # Load the manifest once for shared global state. All three manifest
-    # checks consume BaseContext.manifest_entries; the orchestrator's
-    # single load (here) replaces the legacy load-3x per-check duplication.
-    # Parse-failure handling lives in the orchestrator so checks assume
-    # a clean entry list.
+    # Load the manifest once for shared global state. The three manifest-
+    # integrity checks consume BaseContext.manifest_entries; the
+    # orchestrator's single load (here) replaces the legacy load-3x
+    # per-check duplication. Parse-failure handling delegates to the
+    # ``manifest_parse`` preflight check below — this loader stays
+    # exception-tolerant so the preflight check produces the
+    # contributor-facing diagnostic with proper provenance.
     manifest_entries = []
     if MANIFEST_PATH.exists():
         try:
             with open(MANIFEST_PATH) as f:
-                manifest_entries = yaml.safe_load(f) or []
-        except yaml.YAMLError as e:
-            all_issues.append(Issue("sources/manifest.yaml", "error",
-                f"Manifest parse failure: {e}"))
-            manifest_entries = []
-        if not isinstance(manifest_entries, list):
-            all_issues.append(Issue("sources/manifest.yaml", "error",
-                "Manifest root must be a list of entries"))
-            manifest_entries = []
+                loaded = yaml.safe_load(f)
+            if isinstance(loaded, list):
+                manifest_entries = loaded
+        except yaml.YAMLError:
+            pass  # manifest_parse preflight yields the Issue
 
     base_ctx = BaseContext(schema=schema, manifest_entries=manifest_entries)
 
-    # Source-integrity backstop. Runs once per invocation, before per-node
-    # checks. "Do I trust my sources?" is a precondition for interpreting
-    # node content; a checksum mismatch means downstream quote verifications
-    # may be validating against altered source material.
-    #
-    # All three manifest checks consume BaseContext.manifest_entries — the
-    # orchestrator loads the manifest once (above) and shares. C14 retired
-    # at session-2 close (2026-05-05).
-    all_issues.extend(ck_manifest_checksums.check(base_ctx))
-    all_issues.extend(ck_manifest_archive_status.check(base_ctx))
-    all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
+    # Manifest-integrity preflight. On fatal Issue (parse failure /
+    # non-list root) the three manifest-integrity checks below would
+    # no-op on the empty fallback anyway — explicit gate makes the
+    # dependency obvious + suppresses noise in the failure path.
+    manifest_parse_issues = list(ck_manifest_parse.check(base_ctx))
+    all_issues.extend(manifest_parse_issues)
+    if not any(i.fatal for i in manifest_parse_issues):
+        # Source-integrity backstop. A checksum mismatch means downstream
+        # quote verifications may be validating against altered source
+        # material. All three manifest checks share BaseContext.manifest_entries
+        # from the single load above.
+        all_issues.extend(ck_manifest_checksums.check(base_ctx))
+        all_issues.extend(ck_manifest_archive_status.check(base_ctx))
+        all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
 
-    # Governance-file validation (governance-frontmatter check). Every .md
-    # under meta/ carries id / type / schema_version / created frontmatter;
-    # templates also have a placeholder-shape id. Runs regardless of --path
-    # argument because governance files apply to all nodes, not a specific
-    # target. Template drift is high-blast-radius (propagates to every node
-    # scaffolded afterward) — catching it here prevents silent downstream
-    # corruption. Migrated to scripts/checks/governance_files.py in
-    # C11 session-2 (2026-05-05).
+    # Governance-file validation. Every .md under meta/ carries id / type
+    # / schema_version / created frontmatter; templates also have a
+    # placeholder-shape id. Runs regardless of --path argument since
+    # template drift propagates to every node scaffolded afterward.
     all_issues.extend(ck_governance_files.check(base_ctx))
-
-    # Required-instance-file check: every toolkit instance must declare its
-    # topic scope in meta/topic/overview.md. Catches fork scenarios where
-    # meta/topic/ was emptied without recreating overview.md.
-    overview_path = REPO_ROOT / "meta" / "topic" / "overview.md"
-    if not overview_path.exists():
-        all_issues.append(Issue("meta/topic/overview.md", "error",
-            "Required file missing — every toolkit instance must declare its "
-            "topic scope in meta/topic/overview.md. See README.md for fork "
-            "procedure."))
 
     for node in nodes:
         all_issues.extend(validate_node(node, base_ctx))

@@ -14,7 +14,6 @@ Commands:
 """
 
 import argparse
-import hashlib
 import re
 import sys
 from pathlib import Path
@@ -121,16 +120,10 @@ def format_from_path(path):
     return FORMAT_BY_EXT.get(Path(path).suffix.lower(), "html")
 
 
-def compute_sha256(file_path):
-    """Compute SHA256 of a file. Returns hex digest, or None on read error."""
-    try:
-        h = hashlib.sha256()
-        with open(file_path, "rb") as f:
-            for chunk in iter(lambda: f.read(65536), b""):
-                h.update(chunk)
-        return h.hexdigest()
-    except OSError:
-        return None
+# Imported from lib._common — single source shared with manifest_checksums
+# validator check so the integrity-check algorithm stays mechanically in
+# lockstep across CLI and validator paths.
+from lib._common import compute_sha256  # noqa: E402
 
 
 def cmd_add(args):

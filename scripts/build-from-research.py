@@ -130,9 +130,10 @@ TYPE_DIRS = {
     "location": "locations", "finding": "findings",
 }
 
-# Types this script can regenerate (document, person, event,
-# transcript, media, organization, location). Finding pending F.7.
-SUPPORTED_TYPES = {"document", "person", "event", "transcript", "media", "organization", "location"}
+# Types this script can regenerate. Imported from lib._common so
+# review-coverage.py reads the same set without comment-discipline
+# lockstep. Finding pending F.7.
+from lib._common import SUPPORTED_TYPES  # noqa: E402
 
 # Separator between H2 sections in the rendered node body.
 # Matches repository convention: blank line, '---', blank line.

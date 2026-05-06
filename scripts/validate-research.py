@@ -54,11 +54,14 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-from checks import BaseContext, Issue, ResearchContext
+from checks import BaseContext, ResearchContext
 
 # Pre-parse checks (raw line scans before yaml.safe_load)
 from checks import yaml_colon_space as ck_yaml_colon_space
 from checks import yaml_hash_truncation as ck_yaml_hash_truncation
+
+# Parse preflight (file existence + YAML root shape)
+from checks import artifact_parse as ck_artifact_parse
 
 # Per-artifact checks (after parse)
 from checks import affiliations as ck_affiliations
@@ -66,7 +69,7 @@ from checks import artifact_top_level as ck_artifact_top_level
 from checks import contracts as ck_contracts
 from checks import corroboration_items as ck_corroboration_items
 from checks import cross_refs as ck_cross_refs
-from checks import entities as ck_entities
+from checks import entities_referenced as ck_entities_referenced
 from checks import iff_section as ck_iff_section
 from checks import key_personnel as ck_key_personnel
 from checks import location_relationships as ck_location_relationships
@@ -196,7 +199,7 @@ _ARTIFACT_CHECKS = [
     # Universal entry-list checks
     ck_primary_sources,
     ck_quotes,
-    ck_entities,
+    ck_entities_referenced,
     ck_naming_quirks,
     # Type-conditional entry-list checks
     ck_rumors,
@@ -233,10 +236,10 @@ def validate_artifact(path, base_ctx):
 
     Phase 1 — pre-parse checks on raw lines (yaml_hash_truncation,
     yaml_colon_space).
-    Phase 2 — yaml.safe_load + sanity check on root shape; fatal early-
-    return on parse failure or non-dict root.
-    Phase 3 — target type/archetype/kind discovery from the target node's
-    frontmatter; ResearchContext construction.
+    Phase 2 — parse preflight (``artifact_parse`` check): file exists,
+    YAML parses, root is dict. Fatal short-circuits the chain.
+    Phase 3 — target type/archetype/kind discovery from the target
+    node's frontmatter; ResearchContext construction.
     Phase 4 — each per-artifact check runs against the context. Each
     check self-gates on target_type/kind/archetype.
     """
@@ -254,19 +257,17 @@ def validate_artifact(path, base_ctx):
     for check_module in _PRE_PARSE_CHECKS:
         issues.extend(check_module.check(pre_ctx))
 
-    # Parse
-    try:
-        with open(path) as f:
-            data = yaml.safe_load(f)
-    except yaml.YAMLError as e:
-        issues.append(Issue(rel, "error", f"YAML parse failure: {e}",
-                            check_name="parse", fatal=True))
+    # Parse preflight — yields fatal Issues for missing file / YAML
+    # parse failure / non-dict root. Short-circuit chain on fatal since
+    # downstream Context needs ctx.data populated.
+    parse_issues = list(ck_artifact_parse.check(pre_ctx))
+    issues.extend(parse_issues)
+    if any(i.fatal for i in parse_issues):
         return issues
-    if not isinstance(data, dict):
-        issues.append(Issue(rel, "error",
-                            "Research artifact root must be a YAML mapping (dict)",
-                            check_name="parse", fatal=True))
-        return issues
+
+    # Parse preflight passed; load data for the full Context.
+    with open(path) as f:
+        data = yaml.safe_load(f)
 
     # Target discovery (reads target node's frontmatter)
     target_type, target_archetype, target_kind, target_derivation_of = (
