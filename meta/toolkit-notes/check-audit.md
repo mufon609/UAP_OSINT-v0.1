@@ -77,7 +77,7 @@ Remaining 42 should land at ✅.
 
 | Check | Status | Notes |
 |---|---|---|
-| affiliations | 🟡 | Entry-list helpers (`_research_utils`) |
+| affiliations | ✅ | Anchored to F.1b (`491e6f3`) — person renderer required structured `affiliations[]` to emit the Confirmed/Flagged-split table sorted by period_start. Extended D.4-era entry-list pattern to affiliations + relationships; later F.X work extended again to the full 18-check family. Same template applies to the 17 sibling entry-list checks. |
 | artifact_top_level | ☐ | Top-level required keys |
 | contracts | ☐ | gov-contractor only; multi-field shape |
 | corroboration_items | ☐ | eyewitness archetype + encounter kind |

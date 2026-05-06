@@ -4,7 +4,33 @@ Present on person artifacts. Each entry: required {organization_path,
 role, source}, optional {period_start, period_end, flagged, note}.
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
-errors come from ``iff_section``.
+errors come from ``iff_section``. Entry-shape validation delegates to
+the ``_research_utils`` helpers that the full 18-check entry-list
+family shares (check_unique_ids / check_lifecycle_fields /
+require_source_dict).
+
+Origin: commit ``491e6f3`` (F.1b — person renderer + five person-
+required artifact keys) introduced ``affiliations[]`` as a structured
+artifact field paired with the new person renderer, which emits the
+Affiliations table with Confirmed/Flagged split sorted by
+``period_start``. Free-prose affiliations couldn't drive that table
+mechanically. F.1b extended the D.4-era entry-list pattern (already
+covering corroboration_items / program_involvement /
+publication_record / vouching_chain) to affiliations + relationships;
+later F.X work extended it further to participants /
+witnesses_testimony / speakers / media_versioning / key_personnel /
+org_relationships / contracts / ownership_timeline /
+uap_scope_activity / location_relationships. Migration: commit
+``00a985d`` (C11 session 3) lifted to per-module shape; commit
+``dc95d39`` (C15) wired the schema-driven section gate via
+``section_in_scope``. C18 confirmed byte-identity through both.
+
+Note: ``period_start`` / ``period_end`` format isn't validated at
+this layer. Date parsing happens at render time
+(``build-from-research.py::parse_date_tuple``), where malformed values
+fall through to the 9999 end-of-time sentinel and sort last rather
+than crash the renderer. Layering by design — entry-list checks
+enforce shape; renderer handles temporal semantics.
 """
 
 from checks import Issue
