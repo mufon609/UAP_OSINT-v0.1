@@ -29,9 +29,47 @@ descriptor notes (``corroboration_items.note``,
 and meta-descriptors; fabrication in those cells is Phase III
 semantic-review territory.
 
-Lifted from validate-research.py. Lib imports unchanged
-(extract_significant_tokens, load_source_tokens) — the lockstep
-guarantee per ``meta/conventions.md`` lives at the lib layer.
+Origin: created in response to the F.1c Fravor pilot audit
+(introducing commit ``d9bc684``). The pilot built the first person
+node end-to-end under statements-only discipline and committed at i0;
+the audit found four contributor-prose drift issues despite all
+mechanical gates passing clean. RCA isolated the gap — existing
+checks operated on the artifact-to-node axis; the source-to-artifact
+axis was unchecked for prose, only for verbatim quotes (the
+verbatim_quotes check). The new check (then numbered #16, later
+renamed prose-drift per the topic-name migration) closed that gap.
+
+Threshold-tuning history: the initial shape used differentiated 80%
+error thresholds calibrated to let synthesis-heavy fields (e.g.
+``uap_relevance``, ``credibility_notes``) pass without error.
+Contributor feedback flagged that as bias — the validator was
+encoding a category judgment about which fields "deserve" more
+contributor vocabulary headroom. Revised at commit ``836f96a`` to
+the impartial single-rule design above (warn on every unmatched
+token, error only at 100% mathematical divergence). That revision
+established the broader "validator surfaces drift, doesn't classify
+it" principle documented in
+``meta/conventions.md`` "Prose-drift discipline on synthesis
+surfaces"; reference it before proposing any threshold extension or
+field-specific tuning.
+
+Per-entry fields pool against the top-level union (∪ primary_sources)
+rather than each entry's own ``source.path``. Synthesis-content notes
+legitimately draw vocabulary from cross-source synthesis (a voucher's
+claim referenced across multiple attestation venues; a contract
+described from both the contract itself and external reporting);
+per-entry pooling would over-fire on that legitimate case. The union
+pool still surfaces fabrication — vocabulary attested by NO cited
+source still produces unmatched tokens.
+
+Migration: ``00a985d`` (C11 session 3 lift to per-module shape);
+``a572f77`` (2026-05-05 lockstep refactor — ``extract_significant_tokens``,
+``load_source_tokens``, ``STOPWORDS`` moved to ``lib._common.py`` for
+cross-script lockstep with check-vocab.py and the validator
+orchestrators; the description-drift tokenizer at
+``review-coverage.py`` uses a different algorithm and is
+deliberately NOT consolidated with this one — see commit ``a572f77``
+docstring note). C18 confirmed byte-identity through both moves.
 """
 
 from checks import Issue

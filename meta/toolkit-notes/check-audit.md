@@ -93,7 +93,7 @@ Remaining 42 should land at ✅.
 | participants | ☐ | capacity enum dispatch |
 | primary_sources | ☐ | path + format |
 | program_involvement | ☐ | institutional-actor archetype |
-| prose_drift | ☐ | Heavy — exercises lib tokenizer |
+| prose_drift | ✅ | Anchored to F.1c Fravor pilot audit (introducing commit `d9bc684`) — RCA found contributor-prose drift unchecked despite verbatim quotes being source-verified. Threshold-tuning history at `836f96a` (revised from differentiated 80% to impartial single-rule) established the "validator surfaces drift, doesn't classify it" principle — reference before proposing any threshold change. Per-entry fields pool against top-level union, not per-entry source. |
 | publication_record | ☐ | reporter archetype |
 | quotes | ☐ | Universal evidentiary primitive; observation_type |
 | relationships | ☐ | person↔person edges |
