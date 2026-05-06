@@ -70,7 +70,7 @@ Remaining 42 should land at ✅.
 
 | Check | Status | Notes |
 |---|---|---|
-| yaml_colon_space | ☐ | Pairs with yaml_hash_truncation |
+| yaml_colon_space | ✅ | Anchored to `d9a63a1` (BACKLOG #11) + 2026-04-20 Cluster B hearing-event pilot incident — NewsNation submission title with inner `: ` broke a publication_record entry. Structural parallel to yaml_hash_truncation; word-count threshold differs (≥2 vs ≥3) due to different false-positive shapes (no `# WIP`-style equivalent for inner colons). |
 | yaml_hash_truncation | ✅ | Anchored to F.4c FLIR1 pilot (`c065e4a`) — methodology field truncated at `validate.py check #11 returns warn`. 3-word heuristic calibrated against that shape; accepts short `#N` references as known false-negative. |
 
 ## ResearchContext (per-artifact) — 26 checks
