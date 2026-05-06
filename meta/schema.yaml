@@ -810,17 +810,17 @@ types:
       # context: where / when / under what circumstances the speaker
       #   made the statement. Composed into the Attributed-to line of
       #   the rendered verification block. Required on person artifacts
-      #   (enforced by validate-research.py check_quotes) — every
-      #   person-statement needs to carry its venue. Optional on
-      #   document / transcript / media artifacts where the source
-      #   document itself carries the context.
+      #   (enforced by scripts/checks/quotes.py) — every person-statement
+      #   needs to carry its venue. Optional on document / transcript /
+      #   media artifacts where the source document itself carries the
+      #   context.
       # observation_type: direct | relayed
       #   Required on every quote when target_node type is `person`.
       #   `direct`  — first-hand sensory observation by the person
       #               (Fravor's "I saw a Tic Tac-shaped object" — observed).
       #   `relayed` — anything else the person asserted (things heard,
       #               read, inferred, relayed from others, published).
-      #   Default: relayed. Enforced by validate-research.py check_quotes.
+      #   Default: relayed. Enforced by scripts/checks/quotes.py.
       #   Ignored on non-person artifacts (documents, events, etc.).
       # category: free-text metadata tag (e.g., `filed-claim` on
       #   whistleblower artifacts so the Claim Inventory renderer can

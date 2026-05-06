@@ -43,23 +43,21 @@ Then run the health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-All five gates must be green:
+All seven gates must be green:
 - `help-check` — every `scripts/*.py --help` exits clean
+- `test_stopwords` — STOPWORDS shape + content-word regression test
 - `smoke` — fixture scaffolds validate cleanly
-- `validate.py` — structural + verbatim-quote checks
-- `validate-research.py` — research-artifact structural + prose-drift check
+- `validate.py` — structural + verbatim-quote checks (orchestrator;
+  per-check modules in `scripts/checks/`)
+- `validate-research.py` — research-artifact structural + prose-drift
+  + iff-section dispatch (orchestrator; per-check modules in
+  `scripts/checks/`)
+- `review-coverage.py --all` — Phase III coverage / boundary /
+  stub-linking / description-drift review (orchestrator; per-check
+  modules in `scripts/checks/`)
 - `build-state.py --check` — CLAUDE.md build-state block in sync
 
 If errors exist, report them and stop.
-
-For renderer-supported types (document, person, event, transcript),
-also spot-check:
-
-```
-python3 scripts/review-coverage.py meta/research/{slug}.yaml
-```
-
-on each existing research artifact — all should pass 0/0.
 
 Then:
 

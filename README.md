@@ -71,14 +71,21 @@ scripts/
   transcribe.py             YouTube caption download
   associate.py              auto-generate Associated Nodes sections
   build-state.py            refresh CLAUDE.md build state
+  checks/                   per-check modules — every named validator check
+                            lives here as its own file; validate.py /
+                            validate-research.py / review-coverage.py are
+                            thin orchestrators that import and dispatch
+                            them via explicit step lists
   lib/                      shared cross-script helpers (source extraction,
-                            HTML cleanup, quote normalization) — keeps
-                            validate.py / validate-research.py /
-                            review-coverage.py mechanically in lockstep
+                            HTML cleanup, quote normalization, frontmatter
+                            parse, schema_version compat) — imported by
+                            both the orchestrators and the per-check
+                            modules; keeps mechanical lockstep across them
 
 scripts/tests/
-  pre-commit.sh             canonical all-gates health check (chains the 5 gates below)
+  pre-commit.sh             canonical all-gates health check (chains the 7 gates below)
   help-check.sh             confirms every scripts/*.py --help exits 0
+  test_stopwords.py         STOPWORDS shape + content-word regression test
   smoke.sh                  fixture-based new.py + validator smoke tests
 
 sources/
@@ -174,9 +181,10 @@ health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-This chains 5 gates: help-check / smoke / `validate.py` /
-`validate-research.py` / `build-state.py --check`. Then pick work
-from `meta/topic/research-queue.md`.
+This chains 7 gates: help-check / test_stopwords / smoke /
+`validate.py` / `validate-research.py` / `review-coverage.py` /
+`build-state.py --check`. Then pick work from
+`meta/topic/research-queue.md`.
 
 ---
 

@@ -613,19 +613,33 @@ them:
   `review-coverage.py`), refresh utilities (`build-state.py`), and
   diagnostics (`check-vocab.py`, `normalize-locations.py`). A
   contributor's `ls scripts/` shows everything they might invoke.
+- **`/scripts/checks/`**: per-check modules — every named validator
+  check (verbatim-quote, prose-drift, chronological-ordering,
+  manifest-checksums, iff-section, etc.) lives at
+  `scripts/checks/{check_name}.py`. The three validators at the root
+  are thin orchestrators that import + dispatch these via explicit
+  step lists. Contributors don't usually invoke check modules
+  directly (the orchestrators do), but each check is individually
+  importable for unit-testing or single-check debugging. Shared
+  scaffolding (`_research_utils.py` for entry-list checks) lives
+  alongside as a private module.
 - **`/scripts/tests/`**: gate-internal infrastructure that exists ONLY
   to support the pre-commit chain — the orchestrator (`pre-commit.sh`)
   plus its internal regression tests (`help-check.sh`, `smoke.sh`,
   `test_stopwords.py`). No contributor invokes these directly; the
   directory is the gate chain's private toolkit.
 - **`/scripts/lib/`**: shared cross-cutting helpers (`_common.py`)
-  imported by multiple scripts in both tiers above. Kept separate so
-  the cross-script lockstep guarantee — `validate.py`'s verbatim-quote
-  check, `validate-research.py`'s prose-drift check, and
-  `review-coverage.py`'s description-drift check all extracting source
-  bytes through the same `extract_source_text` and tokenizing through
-  the same `STOPWORDS` set — is mechanical rather than
-  comment-discipline-based.
+  imported by multiple scripts in both tiers above and by the per-
+  check modules in `scripts/checks/`. Kept separate so the cross-
+  script lockstep guarantee — the verbatim-quote check, prose-drift
+  check, and description-drift check all extracting source bytes
+  through the same `extract_source_text` and tokenizing through the
+  same `STOPWORDS` set — is mechanical rather than comment-discipline-
+  based. Also carries the markdown helpers (`parse_frontmatter`,
+  `extract_h2_sections`, `extract_section`) and the
+  `schema_version_compat_messages` helper that consolidates the
+  schema-version compatibility check across content nodes, research
+  artifacts, and governance-doc / template frontmatter.
 
 The split is by caller, not by whether the pre-commit chain runs the
 script. Most root-tier validators ARE gate-invoked — contributors
