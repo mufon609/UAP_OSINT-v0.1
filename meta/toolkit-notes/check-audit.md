@@ -102,7 +102,7 @@ Remaining 42 should land at ✅.
 | timeline | ✅ | Anchored to F.1a (`8007ef1`) — one of six entry-list checks landed together. Foundational shape; stable since. Surfaces a real schema-validator gap (logged as BACKLOG C20): schema declares `timeline_category_values` "extensible; validator warns on unknown" but warn was never implemented. Corpus has ~7 unknown values (contract, foia, certification, etc.) honoring the "extensible" intent without surfacing for canonicalization. NEW sub-shape: stable check / unimplemented schema-declared behavior. |
 | uap_scope_activity | ☐ | Location-only |
 | vouching_chain | ☐ | whistleblower archetype |
-| witnesses_testimony | ☐ | event-hearing only |
+| witnesses_testimony | ✅ | F.2a (`13a2859`) — replaced prior "What The Hearing Established" synthesis-prose section with a structured cross-reference table (witnesses → oath status → transcript/written-testimony nodes). Schema gate is THE canonical AND-conjunction case for C15 grammar upgrade (type=event AND kind=hearing; pre-C15 flat OR-keys over-fired on transcript-hearings). Cross-references iff_section's investigation. oath_status enum {sworn, unsworn, affirmation, unknown}. |
 
 ## ResearchContext (Phase III review) — 4 checks
 
