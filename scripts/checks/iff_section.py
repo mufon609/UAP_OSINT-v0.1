@@ -29,7 +29,7 @@ diagnostics.
 """
 
 from checks import Issue
-from checks._research_utils import _evaluate_required_when
+from checks._research_utils import evaluate_required_when
 
 
 CHECK_NAME = "iff_section"
@@ -69,7 +69,7 @@ def check(ctx):
     conditional_keys = research_artifact.get("conditional_keys") or {}
 
     for section_name, rules in conditional_keys.items():
-        in_scope = _evaluate_required_when(rules, ctx)
+        in_scope = evaluate_required_when(rules, ctx)
         present = section_name in ctx.data
 
         if in_scope and not present:

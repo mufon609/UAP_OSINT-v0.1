@@ -52,10 +52,10 @@ def section_in_scope(ctx, section_name):
     if ctx.target_type is None:
         return False
 
-    return _evaluate_required_when(rules, ctx)
+    return evaluate_required_when(rules, ctx)
 
 
-def _evaluate_required_when(rules, ctx):
+def evaluate_required_when(rules, ctx):
     """Evaluate a section's ``required_when_any_of`` list against the
     artifact's target context. Returns True if any rule matches; False
     otherwise. Each rule's fields are AND-combined.
@@ -68,6 +68,10 @@ def _evaluate_required_when(rules, ctx):
 
     A rule with NO fields would match unconditionally; treated as not-
     matching to avoid silent over-firing on schema typos.
+
+    Shared with ``iff_section`` (which imports this directly to walk the
+    same rules); kept on this module so per-section gating and the
+    placement-error emitter agree byte-for-byte on which rules match.
     """
     rule_list = rules.get("required_when_any_of") or []
     if not isinstance(rule_list, list):
@@ -75,12 +79,12 @@ def _evaluate_required_when(rules, ctx):
     for rule in rule_list:
         if not isinstance(rule, dict) or not rule:
             continue
-        if _rule_matches(rule, ctx):
+        if rule_matches(rule, ctx):
             return True
     return False
 
 
-def _rule_matches(rule, ctx):
+def rule_matches(rule, ctx):
     """AND-combine the rule's fields against the target context."""
     type_in = rule.get("target_node_type_in")
     if type_in is not None and ctx.target_type not in type_in:
