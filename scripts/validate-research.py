@@ -59,6 +59,7 @@ from lib._common import (
     content_type_dirs,
     load_manifest_paths,
     load_schema,
+    resolve_cli_path,
 )
 
 from checks import BaseContext, ResearchContext
@@ -299,7 +300,7 @@ def main():
     base_ctx = BaseContext(schema=schema, manifest_paths=manifest_paths)
 
     if args.path:
-        artifacts = [Path(args.path).resolve()]
+        artifacts = [resolve_cli_path(args.path)]
     else:
         artifacts = collect_artifacts()
 

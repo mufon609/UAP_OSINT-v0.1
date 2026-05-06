@@ -101,6 +101,7 @@ from lib._common import (
     content_dirs,
     load_schema,
     parse_frontmatter,
+    resolve_cli_path,
 )
 
 # Per-check modules. Each named check lives at scripts/checks/{name}.py;
@@ -226,7 +227,7 @@ def main():
     args = parser.parse_args()
 
     schema = load_schema()
-    nodes = [Path(args.path).resolve()] if args.path else collect_nodes()
+    nodes = [resolve_cli_path(args.path)] if args.path else collect_nodes()
 
     all_issues = []
 

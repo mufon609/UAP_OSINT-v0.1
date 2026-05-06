@@ -46,6 +46,7 @@ from lib._common import (
     extract_source_text,
     load_manifest_paths,
     load_schema,
+    resolve_cli_path,
 )
 
 from checks import BaseContext, ResearchContext
@@ -234,7 +235,7 @@ def main():
     args = parser.parse_args()
 
     if args.path:
-        artifacts = [Path(args.path).resolve()]
+        artifacts = [resolve_cli_path(args.path)]
     elif args.all:
         artifacts = collect_artifacts()
     else:

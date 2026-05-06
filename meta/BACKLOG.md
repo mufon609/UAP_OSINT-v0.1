@@ -1134,4 +1134,62 @@ Surfaced: Finding F investigation during the audit-of-audit pass —
 the orchestrator's fatal-handling asymmetry between preflight and
 main loop became visible while comparing layering options.
 
+---
+
+### C24. Wrap ``check_module.check(ctx)`` calls in try/except — convert unhandled exceptions to fatal Issues
+
+**The gap.** Each orchestrator's main check-dispatch loop is an
+unguarded ``for check_module in _NODE_CHECKS: issues.extend(
+check_module.check(node_ctx))``. If a check raises an unexpected
+exception (TypeError on an unanticipated input shape, AttributeError
+on a refactor mismatch, KeyError where the C21 sweep tightened a
+schema lookup but missed a corner case), the exception propagates up
+through ``main()`` and crashes the validator with a Python traceback
+— taking the rest of the per-file iteration with it. Contributors see
+a stack trace instead of a check-named Issue, AND any other defects
+in the same node (or other nodes) go unreported.
+
+**Why latent.** No check yields exceptions in normal operation today.
+The C21 silent-fallback sweep tightened many ``.get(..., default)``
+fallbacks to direct subscripts which DO raise KeyError on schema
+drift — but every site I tightened was on a path the schema is
+guaranteed to populate, and the corpus passes pre-commit clean. So
+the latent failure mode hasn't manifested.
+
+**UX trade-off, same shape as C23.**
+
+  - Catch + convert to fatal Issue: validator never crashes; one
+    buggy check reports cleanly and the iteration continues. Risk:
+    hides actual bugs in checks during development.
+  - Don't catch (status quo): exceptions are loud during dev, but
+    contributors hitting an edge case see a traceback instead of a
+    diagnostic.
+
+A reasonable middle ground: catch + fatal-Issue with the exception
+type + message + check_name in the Issue; iteration continues.
+Contributors see "check X crashed with Y" rather than a traceback;
+the failure is in the Issue stream so other checks still run. Bugs
+during dev still surface (the Issue prints the traceback inline).
+
+**Scope.** ~10 lines per orchestrator — wrap ``list(check_module
+.check(ctx))`` in try/except, build an Issue with the check_module's
+``CHECK_NAME`` (or the module's ``__name__`` if CHECK_NAME isn't
+exposed), append to the issues list. Three orchestrators:
+``validate.py::validate_node``, ``validate-research.py
+::validate_artifact``, ``review-coverage.py::review_artifact``.
+
+**Coupled to C23.** Both items are about the orchestrator's
+exception-handling contract for the main check-dispatch loop. C23
+handles ``Issue.fatal=True`` short-circuit; C24 handles exceptions
+that escape the check entirely. Decide both UX questions in the same
+session if either is taken up — the design pressure is similar.
+
+**Priority.** Low. Latent today. Pairs naturally with C23 if either
+is promoted.
+
+Surfaced: audit pass after the contributor-script catch-up bundle
+(commit 7ecf6ad) — verifying orchestrator robustness on bad CLI
+paths exposed Q (mechanical, fixed in same commit-sequence) and
+this latent design gap.
+
 

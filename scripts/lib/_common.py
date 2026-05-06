@@ -28,6 +28,7 @@ import hashlib
 import html
 import re
 import subprocess
+import sys
 from pathlib import Path
 
 import yaml
@@ -294,6 +295,31 @@ def load_manifest_paths():
     ``load_manifest()`` for callers that only need path-existence checks
     (validate-research.py + review-coverage.py both use this shape)."""
     return {e.get("path") for e in load_manifest() if e.get("path")}
+
+
+def resolve_cli_path(arg_path):
+    """Resolve a CLI-supplied path argument, error cleanly + exit 1 if
+    it's missing or outside ``REPO_ROOT``. Used by validate.py /
+    validate-research.py / review-coverage.py to convert raw Python
+    ``FileNotFoundError`` / ``ValueError`` tracebacks into a one-line
+    contributor-facing error before per-file iteration begins.
+
+    Returns the resolved ``Path``. The orchestrators are CLI tools; a
+    bad CLI arg is a user-error condition rather than an Issue the
+    per-file iteration should try to report (the iteration can't even
+    construct a Context for a path that doesn't exist).
+    """
+    p = Path(arg_path).resolve()
+    if not p.exists():
+        sys.exit(f"ERROR: path does not exist: {arg_path}")
+    try:
+        p.relative_to(REPO_ROOT)
+    except ValueError:
+        sys.exit(
+            f"ERROR: path must be inside the repository "
+            f"({REPO_ROOT}); got: {arg_path}"
+        )
+    return p
 
 
 # ---------------------------------------------------------------------------
