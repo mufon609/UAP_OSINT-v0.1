@@ -398,7 +398,7 @@ mathematical floor on pure fabrication. Below 100%, the validator
 reports without judgment.
 
 **Contributor policy — resolve every warning structurally** (per
-durable memory `feedback_check16_warnings_must_resolve.md`). Each
+durable memory `feedback_prose_drift_warnings_must_resolve.md`). Each
 warning requires real resolution, not synthesis-acceptance:
 
 - **Free-prose synthesis fields** (`description`, `background`,
@@ -745,8 +745,9 @@ node surfaces no semantic issues. Ready to commit.
    ```
    bash scripts/tests/pre-commit.sh
    ```
-   All five gates must pass (help-check, smoke, validate, validate-research,
-   build-state).
+   All seven gates must pass (help-check, test_stopwords, smoke,
+   validate.py, validate-research.py, review-coverage.py,
+   build-state.py --check).
 6. `python3 scripts/build-state.py --update` if the commit adds, removes,
    or changes the status of a node (refreshes the CLAUDE.md build-state block)
 7. Commit the research artifact + regenerated node + any manifest
@@ -760,7 +761,7 @@ Until the F.7 renderer ships:
 2. Hand-author the node body per `meta/conventions.md`, drawing
    exclusively from artifact entries (no training-knowledge claims)
 3. `validate.py` passes; run `associate.py` to regenerate Associated Nodes
-4. Run `bash scripts/tests/pre-commit.sh` — all five gates green before commit
+4. Run `bash scripts/tests/pre-commit.sh` — all seven gates green before commit
 
 `review-coverage.py` currently skips finding artifacts with a notice;
 full coverage review unlocks when the F.7 renderer lands.

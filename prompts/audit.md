@@ -29,7 +29,7 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    renderer-supported types (document, person, event, transcript,
    media, organization, location), re-run `validate-research.py
    {artifact}` and work through the prose-drift warning set. Under the durable policy
-   (`feedback_check16_warnings_must_resolve.md`):
+   (`feedback_prose_drift_warnings_must_resolve.md`):
    - **Free-prose synthesis fields** (`description`, `background`,
      `top_relevance`, `credibility_notes`) and **per-entry synthesis
      content notes** (`ownership_timeline.note`,
@@ -81,7 +81,8 @@ not direct edits to the node body. Pattern:
 3. Regenerate the node (renderer-supported types):
    `python3 scripts/build-from-research.py meta/research/{slug}.yaml`
 4. Re-run `review-coverage.py` — must pass all four checks
-5. Run the full pre-commit chain — all five gates green
+5. Run the full pre-commit chain — all seven gates green
+   (`bash scripts/tests/pre-commit.sh`)
 6. Commit with a descriptive message; git log is the edit history.
 
 ## Audit output
