@@ -1105,4 +1105,64 @@ commit clean.
 Surfaced: C17 timeline-check investigation — qualitative review of
 corpus categories revealed the schema-validator gap.
 
+---
+
+### C22. Topic-specific schema field names contradict topic-neutrality claim
+
+The toolkit's scope statement (``README.md`` + ``meta/conventions.md``
+"Scope") claims schema and structure are topic-neutral — "any
+investigation grounded in primary sources can use the same
+structure". But two schema field names are explicitly UAP-named:
+
+  - ``uap_relevance`` (research-artifact / person artifact;
+    renders as ``## UAP Relevance`` H2 section on person nodes)
+  - ``uap_scope_activity`` (research-artifact / location artifact;
+    renders as ``## UAP-Scope Activity`` H2 section on location
+    nodes)
+
+A fork-target on a different investigation (historical event,
+legal case, scientific controversy, etc.) inherits these UAP-
+named fields and section headers. Per the README's "Forking for
+a different topic" instructions, the fork keeps schema +
+structure as-is — but the inherited UAP-named fields don't fit
+the new topic's vocabulary. The fork is forced to either keep
+the names and live with topic-misnamed sections, or rename
+inline (which the README's fork instructions don't cover).
+
+**Two resolution paths:**
+
+1. **Fully topic-neutral rename.** Rename schema fields to topic-
+   neutral equivalents (``uap_relevance`` → ``topic_relevance``;
+   ``uap_scope_activity`` → ``topic_scope_activity``) plus
+   rendered section headers. Touches schema, renderer, the
+   uap_scope_activity check (file + name), all related
+   docstrings, and existing artifacts (6 person + 1 location).
+   Path-of-record for "schema is topic-neutral" claim to actually
+   hold.
+
+2. **Document the topic-specificity as fork-customization
+   points.** Explicitly call out in README's fork-target
+   instructions that the two field names + section headers are
+   topic-specific and need fork-target customization. Update
+   conventions.md scope statement to say structure is "mostly
+   topic-neutral; two field names assume the UAP topic and need
+   fork-target rename." Lower-effort honest-documentation
+   alternative; preserves the names as load-bearing for THIS
+   instance's investigation discipline.
+
+Path 1 is more principled. Path 2 is faster and acknowledges the
+two fields as semantically load-bearing for THIS instance.
+
+**Priority.** Low. Not a correctness issue — toolkit operates
+correctly with UAP-named fields; the gap is stated philosophy vs
+schema reality. Worth resolving but not blocking.
+
+**Scope.** Path 1: ~2-3 hour rename + artifact migration pass
+(coordinate as corpus grows). Path 2: ~30-min documentation
+update.
+
+Surfaced: C17 ``uap_scope_activity`` investigation — comparing
+the field name to the toolkit's "schema is topic-neutral" README
+claim revealed the contradiction.
+
 

@@ -10,6 +10,48 @@ Each entry: required {period_start, activity, source}, optional
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``.
+
+Origin: introduced at commit ``5a67ec1`` (F.6a — "schema +
+validator + scaffolder for location-type research artifacts").
+Same anchor as ``ownership_timeline`` and
+``location_relationships``; F.6a added all three location-specific
+structured fields together.
+
+Topic-specific scope filter. The section's load-bearing
+distinction is institutional-vs-popular: only documented
+institutional UAP-scope activity (NIDS / AAWSAP / BAASS / Fugal-
+era research / etc.) belongs here; popular paranormal lore goes
+in ``rumors``. Unique among entry-list checks in carrying this
+contributor-discipline distinction explicitly in the schema +
+docstring. The check itself enforces shape only; the
+institutional-vs-popular distinction is contributor judgment at
+authoring time.
+
+Topic-neutrality observation (BACKLOG C22). The check's name
+``uap_scope_activity`` and the rendered section header
+``## UAP-Scope Activity`` are explicitly UAP-named. The toolkit's
+scope statement claims schema and structure are topic-neutral
+("any investigation grounded in primary sources can use the same
+structure"), but this field name + the parallel ``uap_relevance``
+on person artifacts contradict that claim. C22 documents the
+two resolution paths — fully topic-neutral rename, or honest-
+documentation acknowledgement that the two fields are fork-
+customization points. Not a correctness issue at THIS instance
+(the toolkit operates correctly with UAP-named fields); a fork-
+target would need to handle the inherited names.
+
+Period-bearing pattern. Same period_start / period_end shape as
+``ownership_timeline`` (F.6a sibling), ``key_personnel`` (F.5a),
+``contracts`` (F.5a), and ``affiliations`` (F.1b). All five
+share the pending "known start, unknown end (but not ongoing)"
+research-queue thread.
+
+actor_paths multi-path validation. Optional list of "/" paths.
+Same shape as ``contracts.deliverables``. Each list element
+validated as a string starting with "/".
+
+Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
+C18 confirmed byte-identity through the lift.
 """
 
 from checks import Issue
