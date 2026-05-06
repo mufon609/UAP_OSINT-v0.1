@@ -72,10 +72,12 @@ def check(ctx):
     if ctx.target_type is None:
         return
 
-    schema = ctx.schema or {}
-    types = schema.get("types") or {}
-    research_artifact = types.get("research-artifact") or {}
-    conditional_keys = research_artifact.get("conditional_keys") or {}
+    # Direct schema-config access; KeyError surfaces if the schema is
+    # missing the types / research-artifact / conditional_keys nested
+    # path. Silent fallback to {} would mass over-fire "should not be
+    # present" errors and under-fire "required missing" errors; loud
+    # crash is the right failure mode for schema breakage at this depth.
+    conditional_keys = ctx.schema["types"]["research-artifact"]["conditional_keys"]
 
     for section_name, rules in conditional_keys.items():
         in_scope = evaluate_required_when(

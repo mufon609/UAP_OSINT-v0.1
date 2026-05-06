@@ -41,10 +41,13 @@ def section_in_scope(ctx, section_name):
     Returns ``False`` when ``ctx.target_type is None`` (target_node
     couldn't be discovered) — downstream checks short-circuit cleanly.
     """
-    schema = ctx.schema or {}
-    types = schema.get("types") or {}
-    research_artifact = types.get("research-artifact") or {}
-    conditional_keys = research_artifact.get("conditional_keys") or {}
+    # Direct schema-config access; KeyError surfaces if the schema is
+    # missing the types / research-artifact / conditional_keys nested
+    # path. (The conditional_keys.get(section_name) below is a different
+    # concern: section may legitimately be absent from conditional_keys
+    # when it's universal, so the None response is meaningful routing,
+    # not schema-config fallback.)
+    conditional_keys = ctx.schema["types"]["research-artifact"]["conditional_keys"]
     rules = conditional_keys.get(section_name)
     if rules is None:
         return None  # not gated by conditional_keys; universal section

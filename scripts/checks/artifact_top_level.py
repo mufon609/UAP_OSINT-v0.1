@@ -139,10 +139,14 @@ def check(ctx):
             check_name=CHECK_NAME,
         )
 
-    # schema_version compatibility (via shared lib helper — Issue #8 dedup)
-    schema_block = ctx.schema.get("schema", {}) or {}
-    compatible_with = schema_block.get("compatible_with", [1])
-    current = schema_block.get("version", "?")
+    # schema_version compatibility (via shared lib helper — BACKLOG #8 dedup).
+    # Direct schema-config access; KeyError surfaces if the schema's
+    # `schema:` block or its required nested keys are missing (schema
+    # is foundational toolkit contract; silent fallbacks would mask
+    # schema drift).
+    schema_block = ctx.schema["schema"]
+    compatible_with = schema_block["compatible_with"]
+    current = schema_block["version"]
     for level, msg in schema_version_compat_messages(
         data.get("schema_version"), compatible_with, current,
     ):

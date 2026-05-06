@@ -218,8 +218,12 @@ def check(ctx):
     """Yield Issues for any governance file under meta/ that violates
     the frontmatter discipline. Templates routed through a placeholder-
     aware regex path; everything else uses standard YAML parsing."""
-    schema_block = ctx.schema.get("schema", {}) or {}
-    compatible_with = schema_block.get("compatible_with", [1])
+    # Direct schema-config access; KeyError surfaces if the schema's
+    # `schema:` block or its required nested keys are missing. Schema
+    # is foundational toolkit contract — silent fallbacks would mask
+    # schema drift, not a degrade-gracefully case.
+    schema_block = ctx.schema["schema"]
+    compatible_with = schema_block["compatible_with"]
 
     for path in _iter_governance_files():
         rel = path.relative_to(_REPO_ROOT)

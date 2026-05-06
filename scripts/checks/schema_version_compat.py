@@ -43,9 +43,12 @@ CHECK_NAME = "schema_version_compat"
 
 
 def check(ctx):
-    schema_block = ctx.schema.get("schema", {}) or {}
-    compatible_with = schema_block.get("compatible_with", [1])
-    current = schema_block.get("version", "?")
+    # Direct schema-config access; KeyError on missing `schema:` block
+    # or required nested keys (schema is foundational toolkit contract;
+    # silent fallbacks would mask schema drift).
+    schema_block = ctx.schema["schema"]
+    compatible_with = schema_block["compatible_with"]
+    current = schema_block["version"]
     for level, msg in schema_version_compat_messages(
         ctx.fm.get("schema_version"), compatible_with, current,
     ):

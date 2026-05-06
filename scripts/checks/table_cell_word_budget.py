@@ -22,13 +22,13 @@ Schema config is required; no fallback. The check reads
 ``ctx.schema["limits"]["table_cell_words_soft"]`` directly and lets
 KeyError surface if the schema is missing the value. Earlier
 iterations of the check used a ``.get(..., default)`` fallback
-that masked schema drift — the af5f789 schema's initial budget
-of 50 stayed as the hardcoded fallback even after the schema
-bumped to 55, drift unnoticed for ~3 weeks. The C17 audit removed
-the fallback (per BACKLOG C21 — broader pattern sweep) on the
-principle that schema is a foundational toolkit contract; if a
-required schema value is missing, the validator should fail
-loudly, not silently degrade.
+that masked schema drift — the af5f789 schema's initial budget of
+50 stayed as the hardcoded fallback even after the schema bumped
+to 55, drift unnoticed for ~3 weeks. The C17 audit removed the
+fallback as part of a broader sweep across the six schema-config
+fallback sites in the validator; principle is that schema is
+foundational toolkit contract — missing required schema values
+should fail loudly, not silently degrade.
 
 Migration: ``60bb88d`` (C11 session 3 lift to per-module shape).
 Carries ``_table_cell_overages`` (only consumer is this check).
