@@ -39,33 +39,38 @@ except ImportError:
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
+SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
 MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
 
-# Target-node types that carry a `rumors` section on their research artifact
-RUMORS_TYPES = {"person", "organization", "event", "location"}
-TIMELINE_TYPES = {"person", "organization", "event", "finding"}
+# Schema-driven scaffolding (BACKLOG C19). Type-set constants previously
+# duplicated here (RUMORS_TYPES, TIMELINE_TYPES, ARCHETYPE_SECTION,
+# KIND_SECTIONS_BY_TYPE) are now read from schema.yaml::types.research-
+# artifact.conditional_keys via the same evaluate_required_when helper
+# the validators use. One source of truth — schema edits propagate to
+# scaffolder + validators automatically.
 
-# person archetype → archetype-specific artifact section
-ARCHETYPE_SECTION = {
-    "eyewitness":           "corroboration_items",
-    "whistleblower":        "vouching_chain",
-    "institutional-actor":  "program_involvement",
-    "reporter":             "publication_record",
+from checks._research_utils import evaluate_required_when
+
+# Per-section empty-value shape lookup for schema-driven scaffolding.
+# Most sections are entry lists ([]); the prose fields and event_intrinsic
+# are exceptions. Default-list-via-fallback keeps the map small. Add a
+# new entry only when introducing a non-list section.
+EMPTY_SECTION_SHAPES = {
+    # Prose fields on person artifacts
+    "background": "",
+    "uap_relevance": "",
+    "credibility_notes": "",
+    # Single dict on event artifacts
+    "event_intrinsic": {},
 }
 
-# Per-node-type kind → kind-specific artifact section. Outer dict keyed
-# by node_type so event and transcript share a kind label ("hearing")
-# without clobbering each other. Transcript.other has no kind-specific
-# section (absent entry rather than mapping to a no-op value).
-KIND_SECTIONS_BY_TYPE = {
-    "event": {
-        "hearing":   "witnesses_testimony",
-        "encounter": "corroboration_items",
-    },
-    "organization": {
-        "gov-contractor": "contracts",
-    },
-}
+
+def empty_for(section_name):
+    """Return the empty value to scaffold under ``section_name``. Default
+    is `[]` (most conditional sections are entry lists); explicit
+    overrides for prose fields and event_intrinsic dict."""
+    return EMPTY_SECTION_SHAPES.get(section_name, [])
+
 
 # All valid target-node types
 VALID_TARGET_TYPES = {
@@ -225,8 +230,30 @@ def read_target_kind(node_type, slug):
     return _read_target_frontmatter(node_type, slug).get("kind")
 
 
+def _load_schema_conditional_keys():
+    """Read schema.yaml and return the research-artifact conditional_keys
+    dict, or {} on read/parse failure (defensive — scaffolder shouldn't
+    crash on schema issues; validator catches them)."""
+    try:
+        with open(SCHEMA_PATH) as f:
+            schema = yaml.safe_load(f)
+    except (OSError, yaml.YAMLError):
+        return {}
+    return (
+        (schema or {}).get("types", {})
+                      .get("research-artifact", {})
+                      .get("conditional_keys", {})
+    )
+
+
 def build_scaffold(node_type, slug, source_paths, manifest):
-    """Assemble the research-artifact YAML dict for the given target."""
+    """Assemble the research-artifact YAML dict for the given target.
+
+    Universal top-level keys are populated unconditionally. Type /
+    archetype / kind-conditional sections are dispatched schema-driven
+    from ``schema.yaml::conditional_keys`` via ``evaluate_required_when``
+    — same logic the validators use, single source of truth.
+    """
     today = date.today().isoformat()
     artifact = {
         "id": f"meta/research/{slug}",
@@ -243,79 +270,18 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         "entities_referenced": [],
         "naming_quirks": [],
     }
-    # Type-conditional `rumors` section
-    if node_type in RUMORS_TYPES:
-        artifact["rumors"] = []
-    # Type-conditional `timeline` section — person / organization / event /
-    # finding artifacts carry an aggregated chronological dated-facts list.
-    if node_type in TIMELINE_TYPES:
-        artifact["timeline"] = []
-    # Person-specific biographical sections — required by the renderer.
-    # Empty placeholders render as TODO stubs on the generated node body;
-    # contributors populate during Phase I investigation.
-    if node_type == "person":
-        artifact["background"] = ""
-        artifact["uap_relevance"] = ""
-        artifact["affiliations"] = []
-        artifact["relationships"] = []
-        artifact["credibility_notes"] = ""
-    # Event-specific universal sections. event_intrinsic carries
-    # kind-conditional metadata (hearing_title / committee / date for
-    # hearings; location_path / date / duration / weather for
-    # encounters). participants is the structured participant list.
-    if node_type == "event":
-        artifact["event_intrinsic"] = {}
-        artifact["participants"] = []
-    # Transcript-specific universal sections. `speakers` required on
-    # every transcript artifact regardless of kind (cross-reference
-    # surface).
-    if node_type == "transcript":
-        artifact["speakers"] = []
-    # Media-specific universal section. `media_versioning` required on
-    # every media artifact regardless of kind (photo / video / audio /
-    # imagery-other). Empty list when the media is canonical / original;
-    # populated when the node's frontmatter has derivation_of set and
-    # the derivative differs from its parent across one or more aspects
-    # (duration / encoding / metadata / content / provenance / other).
-    if node_type == "media":
-        artifact["media_versioning"] = []
-    # Organization-specific universal sections. key_personnel (people
-    # + sourced roles at this org) and org_relationships (org-to-org
-    # structured links) required on every organization artifact
-    # regardless of kind. Kind-conditional `contracts` scaffolded
-    # below via KIND_SECTIONS_BY_TYPE (gov-contractor only).
-    if node_type == "organization":
-        artifact["key_personnel"] = []
-        artifact["org_relationships"] = []
-    # Location-specific universal sections. ownership_timeline
-    # carries the chronological ownership-transition record;
-    # uap_scope_activity tracks institutional UAP-scope activity at the
-    # location; location_relationships is heterogeneous entity_path
-    # links to connected nodes (owners, investigators, events, media,
-    # adjacent locations, findings). Location has no kinds, so no
-    # kind-conditional extensions layer on top.
-    if node_type == "location":
-        artifact["ownership_timeline"] = []
-        artifact["uap_scope_activity"] = []
-        artifact["location_relationships"] = []
-    # Archetype-conditional section on person artifacts. Reads the target
-    # node's frontmatter to get its archetype; scaffolds the corresponding
-    # empty list. Only one of the four sections is ever scaffolded
-    # per person artifact (the archetype decides which).
+
+    # Schema-driven scaffolding for type / archetype / kind-conditional
+    # sections. Reads conditional_keys once; walks each declared
+    # section; adds an empty value of the right shape when the rules
+    # match this target.
     archetype = read_target_archetype(node_type, slug)
-    if archetype:
-        section = ARCHETYPE_SECTION.get(archetype)
-        if section:
-            artifact[section] = []
-    # Kind-conditional section on kind-bearing artifacts (event, transcript).
-    # Dispatched by KIND_SECTIONS_BY_TYPE — see constant definition for the
-    # full mapping. Absent inner entry (e.g., transcript.other) → no
-    # section scaffolded.
     kind = read_target_kind(node_type, slug)
-    if kind:
-        section = KIND_SECTIONS_BY_TYPE.get(node_type, {}).get(kind)
-        if section:
-            artifact[section] = []
+    conditional_keys = _load_schema_conditional_keys()
+    for section_name, rules in conditional_keys.items():
+        if evaluate_required_when(rules, node_type, archetype, kind):
+            artifact[section_name] = empty_for(section_name)
+
     return artifact
 
 
@@ -379,7 +345,7 @@ def main():
     print(f"  3. Write `description` (1-3 paragraphs) — renders as the node's Description section")
     print(f"  4. Populate quotes (verbatim passages with location refs)")
     print(f"  5. Populate entities_referenced, naming_quirks")
-    if node_type in RUMORS_TYPES:
+    if "rumors" in artifact:
         print(f"  6. Populate rumors (widely-reported claims lacking primary-source backing)")
     print(f"  7. Validate: python3 scripts/validate-research.py {rel}")
 

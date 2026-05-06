@@ -69,7 +69,9 @@ def check(ctx):
     conditional_keys = research_artifact.get("conditional_keys") or {}
 
     for section_name, rules in conditional_keys.items():
-        in_scope = evaluate_required_when(rules, ctx)
+        in_scope = evaluate_required_when(
+            rules, ctx.target_type, ctx.target_archetype, ctx.target_kind,
+        )
         present = section_name in ctx.data
 
         if in_scope and not present:

@@ -52,13 +52,15 @@ def section_in_scope(ctx, section_name):
     if ctx.target_type is None:
         return False
 
-    return evaluate_required_when(rules, ctx)
+    return evaluate_required_when(
+        rules, ctx.target_type, ctx.target_archetype, ctx.target_kind,
+    )
 
 
-def evaluate_required_when(rules, ctx):
+def evaluate_required_when(rules, target_type, target_archetype=None, target_kind=None):
     """Evaluate a section's ``required_when_any_of`` list against the
-    artifact's target context. Returns True if any rule matches; False
-    otherwise. Each rule's fields are AND-combined.
+    artifact's target type / archetype / kind. Returns True if any rule
+    matches; False otherwise. Each rule's fields are AND-combined.
 
     Rule field grammar:
       - ``target_node_type_in: [list]``      — target_type ∈ list
@@ -69,9 +71,14 @@ def evaluate_required_when(rules, ctx):
     A rule with NO fields would match unconditionally; treated as not-
     matching to avoid silent over-firing on schema typos.
 
-    Shared with ``iff_section`` (which imports this directly to walk the
-    same rules); kept on this module so per-section gating and the
-    placement-error emitter agree byte-for-byte on which rules match.
+    Takes positional values rather than a ctx so callers without a
+    ResearchContext (research-scaffold.py — has node_type / archetype /
+    kind as separate variables, not a context) can dispatch
+    schema-driven without faking a context object. Shared with
+    ``iff_section`` (placement-error emitter) and ``section_in_scope``
+    (per-section gate); all three see the same rule logic so the
+    scaffolder, validator orchestrator, and per-section checks agree
+    on which rules match.
     """
     rule_list = rules.get("required_when_any_of") or []
     if not isinstance(rule_list, list):
@@ -79,21 +86,21 @@ def evaluate_required_when(rules, ctx):
     for rule in rule_list:
         if not isinstance(rule, dict) or not rule:
             continue
-        if rule_matches(rule, ctx):
+        if rule_matches(rule, target_type, target_archetype, target_kind):
             return True
     return False
 
 
-def rule_matches(rule, ctx):
-    """AND-combine the rule's fields against the target context."""
+def rule_matches(rule, target_type, target_archetype, target_kind):
+    """AND-combine the rule's fields against the target values."""
     type_in = rule.get("target_node_type_in")
-    if type_in is not None and ctx.target_type not in type_in:
+    if type_in is not None and target_type not in type_in:
         return False
     archetype_in = rule.get("target_node_archetype_in")
-    if archetype_in is not None and ctx.target_archetype not in archetype_in:
+    if archetype_in is not None and target_archetype not in archetype_in:
         return False
     kind_in = rule.get("target_node_kind_in")
-    if kind_in is not None and ctx.target_kind not in kind_in:
+    if kind_in is not None and target_kind not in kind_in:
         return False
     return True
 
