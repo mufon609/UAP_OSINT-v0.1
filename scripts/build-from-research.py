@@ -126,21 +126,6 @@ TYPE_DIRS = {
 # transcript, media, organization, location). Finding pending F.7.
 SUPPORTED_TYPES = {"document", "person", "event", "transcript", "media", "organization", "location"}
 
-# Archetype → archetype-specific artifact section name (person only)
-ARCHETYPE_SECTION = {
-    "eyewitness":           "corroboration_items",
-    "institutional-actor":  "program_involvement",
-    "reporter":             "publication_record",
-    "whistleblower":        "vouching_chain",
-}
-# Archetype → H2 heading rendered for its archetype-specific section
-ARCHETYPE_H2 = {
-    "eyewitness":           "Corroboration",
-    "institutional-actor":  "Program Involvement",
-    "reporter":             "Publication Record",
-    "whistleblower":        "Claim Inventory",
-}
-
 # Separator between H2 sections in the rendered node body.
 # Matches repository convention: blank line, '---', blank line.
 SECTION_SEP = "\n---\n\n"
@@ -394,9 +379,10 @@ def render_primary_source_contradictions(artifact):
     `not-primary-source-established` status stays artifact-only
     (pure fabrication-prevention, never renders).
 
-    Applies to the 4 RUMORS_TYPES (person / organization / event /
-    location). Document / transcript / media artifacts don't carry
-    rumors and never emit this section.
+    Applies to the four target types whose schema rules require
+    `rumors` (person / organization / event / location per
+    schema.yaml::conditional_keys). Document / transcript / media
+    artifacts don't carry rumors and never emit this section.
     """
     rumors = artifact.get("rumors") or []
     disputed = [
