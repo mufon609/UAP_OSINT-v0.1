@@ -91,6 +91,20 @@ class NodeContext(BaseContext):
     Constructed once per node by the orchestrator. ``fm`` is parsed
     frontmatter; if parsing failed the orchestrator emits a fatal Issue
     and skips downstream checks (so checks here can assume non-None).
+
+    Two lazy caches share work across multiple checks:
+
+    - ``h2_sections``: list of H2 heading titles, computed once per
+      Context. Multiple checks walk the H2 list (required_sections,
+      section_rules, chronological_tables, table_cell_word_budget,
+      governance-style enforcers); centralizing the extraction here
+      avoids re-running ``re.findall`` for each consumer.
+
+    - ``section_text(name)``: memoized extraction of a single H2
+      section's body text. Called multiple times across section_rules,
+      table_cell_word_budget, etc. The lazy dict caches None for
+      absent sections too so probing for an optional section's
+      presence is O(1) on the second access.
     """
 
     def __init__(self, base, path, rel, text, fm=None, node_type=None,
@@ -107,6 +121,25 @@ class NodeContext(BaseContext):
         self.fm = fm
         self.node_type = node_type
         self.type_spec = type_spec
+        self._h2_sections = None         # lazy; populated on first .h2_sections access
+        self._section_text_cache = {}    # lazy per-section memoization
+
+    @property
+    def h2_sections(self):
+        """Lazy list of H2 heading titles in document order. Cached for
+        the lifetime of this NodeContext."""
+        if self._h2_sections is None:
+            from lib._common import extract_h2_sections
+            self._h2_sections = extract_h2_sections(self.text)
+        return self._h2_sections
+
+    def section_text(self, name):
+        """Lazy memoized extraction of a single H2 section's body text.
+        Returns None if the section is absent (and caches the None)."""
+        if name not in self._section_text_cache:
+            from lib._common import extract_section
+            self._section_text_cache[name] = extract_section(self.text, name)
+        return self._section_text_cache[name]
 
 
 class ResearchContext(BaseContext):
