@@ -83,7 +83,10 @@ scripts/
                             modules; keeps mechanical lockstep across them
 
 scripts/tests/
-  pre-commit.sh             canonical all-gates health check (chains the 7 gates below)
+  pre-commit.sh             canonical all-gates health check (chains 7 gates:
+                            help-check / test_stopwords / smoke / validate.py /
+                            validate-research.py / review-coverage.py /
+                            build-state.py --check)
   help-check.sh             confirms every scripts/*.py --help exits 0
   test_stopwords.py         STOPWORDS shape + content-word regression test
   smoke.sh                  fixture-based new.py + validator smoke tests
