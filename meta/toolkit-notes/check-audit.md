@@ -78,7 +78,7 @@ Remaining 42 should land at ✅.
 | Check | Status | Notes |
 |---|---|---|
 | affiliations | ✅ | Anchored to F.1b (`491e6f3`) — person renderer required structured `affiliations[]` to emit the Confirmed/Flagged-split table sorted by period_start. Extended D.4-era entry-list pattern to affiliations + relationships; later F.X work extended again to the full 18-check family. Same template applies to the 17 sibling entry-list checks. |
-| artifact_top_level | ☐ | Top-level required keys |
+| artifact_top_level | ✅ | Most-reductive multi-stage in the codebase. Foundational at `af5f789` with 17 required keys; 5 removed across 4 distinct commits as surrounding-system simplifications landed: `efd4588` (description → conditional on non-person), `cde69cf` (claims[] elimination), `1a8ddbb` (iteration log removal), `7ec1d61` (Open Questions / research_gaps removal). Distinct REDUCTIVE multi-stage sub-shape vs additive (quotes) and dual-evolution (entities). Schema-grammar gap: description-on-non-person uses inline rule because conditional_keys can't express NOT-IN; inline kept at n=1 per code comment. |
 | contracts | ☐ | gov-contractor only; multi-field shape |
 | corroboration_items | ✅ | Anchored to F.1a (`8007ef1`) — one of six entry-list-pattern checks landed together for the F.1a person redesign (alongside chronological_tables + four sibling archetype-conditional surfaces). Renderer-coupled-defensive shape; predates affiliations (F.1b). C15 added encounter-event kind to scope (the OR-disjunction case for the grammar upgrade; witnesses_testimony was the AND-conjunction case). Cross-reference surface, NOT statement surface; .note out of prose-drift scope per 2026-04-21 second scope cut. |
 | cross_refs | ☐ | Cross-entity link consistency |
