@@ -1193,3 +1193,150 @@ paths exposed Q (mechanical, fixed in same commit-sequence) and
 this latent design gap.
 
 
+---
+
+### C25. Templates and the build prompt impose count-target prose-length guidance that conflicts with `feedback_no_count_targets.md`
+
+**The gap.** Several scaffolding templates and `prompts/build.md` carry
+count-target language for free-prose fields — "1–2 paragraphs",
+"one paragraph", "1-3 paragraphs", "1-2 sentences", "2-4 sentences",
+"~50 words per paragraph". These guide contributors toward fixed
+densities that the actual built corpus does not follow, and that
+directly conflict with the durable contributor policy
+`feedback_no_count_targets.md` ("let source drive density; never propose
+ranges or numeric guidance").
+
+**Concrete corpus evidence** (built person nodes' rendered Background +
+{display_name} Relevance sections):
+
+| Node | Background paragraphs | Relevance paragraphs |
+|---|---|---|
+| `/people/ronald-moultrie` | 4 | 2 |
+| `/people/sean-kirkpatrick` | 4 | 1 long |
+| `/people/david-grusch` | 1 long | 1 |
+| `/people/david-fravor` | 1 short | 1 |
+| `/people/ryan-graves` | 1 | 1 long |
+| `/people/alex-dietrich` | 1 long | 4 |
+
+The `1–2 paragraphs` Background guidance and `One paragraph` Relevance
+guidance are false against this corpus — both surfaces range 1–4
+paragraphs based on what archived primary sources support.
+
+**The full inventory of count-target offenders:**
+
+| File | Line | Surface | Offender |
+|---|---|---|---|
+| `meta/templates/person.md` | 25 | Background | `1–2 paragraphs` *(fixed in this commit)* |
+| `meta/templates/person.md` | 33 | {display_name} Relevance | `One paragraph` *(fixed in this commit)* |
+| `meta/templates/person.md` | 203 | Credibility Notes | `~50 words per paragraph` *(fixed in this commit)* |
+| `meta/templates/media.md` | 81 | Key Passages significance | `1-2 sentences` |
+| `meta/templates/organization.md` | 39 | Description | `1-3 paragraphs` |
+| `meta/templates/finding.md` | 32 | Summary | `2–4 sentences` |
+| `prompts/build.md` | 143 | Phase I Step 5 description | `1-3 paragraph prose summary` |
+
+**Distinction from `meta/templates/finding.md` line 22.** The `~200
+words` finding-node creation threshold (`meta/schema.yaml::types.finding
+.creation_threshold`) is a different shape — it's a structural rule
+about when to promote analysis to a finding node, not a length target
+for an individual prose field. Keep that one.
+
+**Scope.** Single corpus-wide pass: rewrite each remaining offender to
+source-driven language ("length is whatever the archived primary
+sources support — let source density drive the length, not a target")
+or, where the count is structurally meaningful, anchor to the schema
+threshold instead of a free-floating number.
+
+**Priority.** Low. Documentation defect; doesn't affect rendered
+output. The `meta/templates/person.md` offenders are already fixed
+in this commit; the rest are scoped here for batch cleanup.
+
+**Why it matters.** Count-target language in scaffolding guidance is
+exactly the pressure `feedback_no_count_targets.md` says to avoid —
+it pushes contributors toward fixed densities, which means either
+filler entries (when the source doesn't support the count) or
+hallucinated content (when the model fills the gap from training
+knowledge). The pilot-failure-2026-04-17 postmortem documents the
+failure mode this discipline exists to prevent.
+
+Surfaced: 2026-05-06 sue-gough Phase I build session — user flagged
+the `1–2 paragraphs` Background and `One paragraph` Relevance
+template comments as false against the actual built corpus; broader
+audit confirmed the pattern repeats across templates and the build
+prompt.
+
+
+---
+
+### C26. `program_involvement_entry` schema-renderer field-naming mismatch — Period column renders empty on every institutional-actor node
+
+**The gap.** `meta/schema.yaml::types.research-artifact.program_involvement_entry`
+declares the optional period fields as `start_date` and `end_date`.
+The renderer at `scripts/build-from-research.py::render_program_involvement`
+composes its Period column via `_format_period(entry)` (line 489),
+which reads `entry.get("period_start")` and `entry.get("period_end")`
+— field names that don't exist on this entry shape. Net effect:
+the Period column on the rendered Program Involvement table is
+silently empty for every institutional-actor person node, regardless
+of whether the artifact populates `start_date` / `end_date`.
+
+**Concrete corpus evidence.**
+
+  - `/people/sean-kirkpatrick` artifact populates
+    `start_date: '2022-07-20'` + `end_date: '2023-12-01'` on `pi1`;
+    the rendered node's Program Involvement Period cell is empty.
+  - `/people/sue-gough` artifact populates `start_date: '2022-06'`
+    on `pi1`; same rendered behavior. Workaround applied in this
+    build session — moved the period inline into the role field
+    (`Department of Defense Public Affairs spokesperson with the
+    AARO portfolio (June 2022 — ongoing)`), matching the established
+    Kirkpatrick pattern (`Inaugural Director (July 20 2022 — December
+    1 2023)`).
+
+**Two paths to resolve** (decide which is canonical):
+
+  - **Renderer fix.** Update `_format_period` (or
+    `render_program_involvement` directly) to read `start_date` /
+    `end_date` for `program_involvement_entry`, while keeping
+    `period_start` / `period_end` for affiliations / key_personnel /
+    contracts / ownership_timeline / top_scope_activity (all of
+    which use the period_* convention per schema). Surfaces the
+    populated date metadata in the rendered Period column.
+  - **Schema fix.** Rename `start_date` / `end_date` →
+    `period_start` / `period_end` on `program_involvement_entry`
+    + corpus migration across institutional-actor artifacts that
+    populate these fields. Aligns with the period_* convention used
+    on every other dated entry shape in the schema.
+
+**Recommendation.** Schema fix. The period_* naming is the corpus-
+wide convention across affiliation_entry, key_personnel_entry,
+contract_entry, ownership_timeline_entry, top_scope_activity_entry —
+program_involvement_entry is the lone exception with start_date /
+end_date. Aligning the schema removes the special case and the
+renderer doesn't need a per-entry-type field-name table.
+
+**Scope.** Schema-fix path: ~5 lines in schema.yaml + corpus
+migration (grep `start_date:` under `program_involvement` blocks
+across `meta/research/*.yaml`; rename to `period_start`; same for
+end_date). validate-research.py's enum + key checks may need a
+brief update to the program_involvement_entry definition. Smoke
+test by re-rendering Kirkpatrick + Gough and confirming Period
+column populates.
+
+**Why it matters.** Reader-visibility issue per
+`feedback_reader_visibility_discipline.md` — the start_date /
+end_date metadata is captured in the artifact (so future query
+tooling can see it) but invisible in the rendered node body. Per
+the workaround (period in role field), Kirkpatrick + Gough
+currently surface period info to readers anyway, but the
+duplication-with-metadata is a render gap, not by design.
+
+**Priority.** Low. Workaround pattern already established
+(period in role); affects metadata visibility, not correctness of
+either schema or render.
+
+Surfaced: 2026-05-06 sue-gough Phase II build session — Period
+column rendered empty despite populated `start_date`; investigation
+traced the schema field name (`start_date`/`end_date`) vs renderer
+field name (`period_start`/`period_end`) divergence.
+
+

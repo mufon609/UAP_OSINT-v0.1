@@ -1,0 +1,536 @@
+id: meta/research/sue-gough
+type: research-artifact
+schema_version: 1
+target_node: people/sue-gough
+status: active
+created: '2026-05-06'
+description: ''
+primary_sources:
+- path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+  format: html
+- path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+  format: html
+- path: news/defensescoop-kirkpatrick-departure-20231130.html
+  format: html
+- path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+  format: pdf
+- path: news/defensescoop-aaro-foc-briefing-20241205.html
+  format: html
+- path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html
+  format: html
+- path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+  format: html
+document_intrinsic:
+  full_name: Susan L. Gough
+  aliases:
+  - Sue Gough
+  - Susan Gough
+  nationality: American
+  profession: Department of Defense Public Affairs spokesperson
+context_extrinsic: {}
+quotes:
+- id: q1
+  added_date: '2026-05-06'
+  text: |
+    The Unidentified Aerial Phenomena Task Force (UAPTF) was and is (until the follow-on Department of Defense [DOD] organization is fully operational) a partnership across federal and DOD agencies, with a variety of organizations providing personnel as required. Dr. Taylor was a government employee assigned to the U.S. Army Space and Missile Defense Command (SMDC). SMDC provided Dr. Taylor on a time-limited basis as part of a larger number of contributing organizations across the DOD, the Intelligence Community (IC), and other parts of the federal government to assist with the stand-up of the UAPTF and its reporting requirements. It was not a full time assignment; he remained an employee of SMDC. In early 2021, following consultations with the UAPTF, SMDC worked to clarify and de-conflict assigned tasks, responsibilities, and outside activities to balance mission priorities.
+
+    At the time of Dr. Taylor's initial work with the UAPTF, former Office of Naval Intelligence senior civilian John Stratton was leading the effort and informally referred to Dr. Taylor as his chief scientist as efforts to assemble a larger team were underway.
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: 'A1 response to Q1 — Dr. Travis Taylor as UAP Task Force chief scientist'
+  significance: 'Strongest on-record DoD attestation naming John Stratton as UAPTF lead and Travis Taylor as informally referred to chief scientist; SMDC time-limited assignment basis preserved.'
+  context: 'Pentagon Public Affairs written statement to The Black Vault, A1 response, June 29, 2022'
+  observation_type: relayed
+  statement_date: '2022-06-29'
+- id: q2
+  added_date: '2026-05-06'
+  text: |
+    Dr. Taylor worked with the UAPTF as a contributing scientist and engineer, bringing those skills to review the reports of UAP sightings by military personnel and the associated study of any related materials/data in an effort to identify the objects observed and possible approaches to obtaining improved technical data.
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: 'A2 response to Q2 — chief scientist duties'
+  significance: 'On-record description of Dr. Travis Taylor''s UAPTF duties as contributing scientist and engineer.'
+  context: 'Pentagon Public Affairs written statement to The Black Vault, A2 response, June 29, 2022'
+  observation_type: relayed
+  statement_date: '2022-06-29'
+- id: q3
+  added_date: '2026-05-06'
+  text: |
+    Dr. Taylor's work with the UAPTF focused on scientific and technical advice provided as a research scientist, and not on intelligence analysis. The UAPTF stands by the conclusions presented by Director Bray in his briefing.
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: 'A3 response to Q3 — drone-conclusion question'
+  significance: 'On-record DoD position that the UAPTF stands by Scott Bray''s May 2022 HPSCI briefing conclusions, despite Knapp/LasVegasNow reporting Taylor disputed the drone framing internally.'
+  context: 'Pentagon Public Affairs written statement to The Black Vault, A3 response, June 29, 2022'
+  observation_type: relayed
+  statement_date: '2022-06-29'
+- id: q4
+  added_date: '2026-05-06'
+  text: |
+    As stated, Dr. Taylor was an employee of the U.S. Army's Space and Missile Defense Command (SMDC). His parent organization (SMDC) provided him to assist the UAPTF based on his education and experience as a scientist and engineer. In early 2021, following consultations with the UAPTF, SMDC took steps to clarify and de-conflict assigned tasks, responsibilities, and outside activities to balance mission priorities.
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: 'A4 response to Q4 — TV-show conflict-of-interest question'
+  significance: 'On-record reference to early-2021 SMDC steps clarifying Dr. Travis Taylor''s outside activities; declines to address conflict-of-interest framing directly.'
+  context: 'Pentagon Public Affairs written statement to The Black Vault, A4 response, June 29, 2022'
+  observation_type: relayed
+  statement_date: '2022-06-29'
+- id: q5
+  added_date: '2026-05-06'
+  text: |
+    Broadly speaking, it means clarifying and de-conflicting his assigned tasks and responsibilities between SMDC, support to the UAPTF, and his outside activities. I can't provide further details, as we do not comment on individual personnel matters.
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: 'Follow-up reply to The Black Vault, after the four-question A1-A4 statement'
+  significance: 'On-record decline to elaborate on Dr. Travis Taylor''s SMDC clarify/de-conflict steps citing individual personnel matters.'
+  context: 'Pentagon Public Affairs follow-up email to The Black Vault, June 29, 2022'
+  observation_type: relayed
+  statement_date: '2022-06-29'
+- id: q6
+  added_date: '2026-05-06'
+  text: |
+    Good afternoon, I'm Sue Gough. I will be --from Defense Press Operations. I will be your moderator today. We are here to talk about the All-domain Anomaly Resolution Office, which as most of you know, is the office that replaced the former Navy-led UAPTF. We have with us here today, Under Secretary of Defense for Intelligence and Security Ronald Moultrie, and Dr. Sean Kirkpatrick, the director of AARO. And with that, I will turn it over to Mr. Moultrie.
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: 'STAFF moderator opening, joint AARO media roundtable, December 16, 2022'
+  significance: 'Gough as moderator opens the December 16, 2022 joint AARO media roundtable with Under Secretary of Defense for Intelligence and Security Ronald Moultrie and AARO Director Sean Kirkpatrick.'
+  context: 'STAFF speaker tag, joint AARO media roundtable, Pentagon, December 16, 2022'
+  observation_type: relayed
+  statement_date: '2022-12-16'
+- id: q7
+  added_date: '2026-05-06'
+  text: |
+    Friday, Dec. 1, is Dr. Kirkpatrick's last day in the office,
+  source:
+    path: news/defensescoop-kirkpatrick-departure-20231130.html
+    location: 'DefenseScoop article body, opening Gough quote'
+  significance: 'On-record DoD confirmation of AARO Director Sean Kirkpatrick''s last-day date as December 1, 2023.'
+  context: 'DefenseScoop article by Brandi Vincent, ''AARO''s leader is leaving the Pentagon, and a new director needs to be named'', November 30, 2023'
+  observation_type: relayed
+  statement_date: '2023-11-30'
+- id: q8
+  added_date: '2026-05-06'
+  text: |
+    Dr. Kirkpatrick assembled a very talented and dedicated team of federal government, military, and contract employees. AARO will continue to skillfully execute its mission throughout the leadership transition,
+  source:
+    path: news/defensescoop-kirkpatrick-departure-20231130.html
+    location: 'DefenseScoop article body, Gough mission-continuation quote'
+  significance: 'On-record DoD framing of the AARO leadership transition; affirms continuity of mission across change of director.'
+  context: 'DefenseScoop article by Brandi Vincent, November 30, 2023'
+  observation_type: relayed
+  statement_date: '2023-11-30'
+- id: q9
+  added_date: '2026-05-06'
+  text: |
+    The selection process for a new director for AARO is ongoing. We do not have an estimate on when the selection and announcement of the new AARO Director will be made,
+  source:
+    path: news/defensescoop-kirkpatrick-departure-20231130.html
+    location: 'DefenseScoop article body, Gough new-director selection quote'
+  significance: 'On-record DoD position on the AARO new-director selection: process ongoing, no announcement estimate as of November 30, 2023.'
+  context: 'DefenseScoop article by Brandi Vincent, November 30, 2023'
+  observation_type: relayed
+  statement_date: '2023-11-30'
+- id: q10
+  added_date: '2026-05-06'
+  text: |
+    Thanks for reaching out. At this time, we are looking to keep any media engagement with AARO's acting director to a small group. Note, should we have an on-record engagement this week, we will post the transcript once it is available.  With that, I will be sure keep you in mind for any upcoming opportunities to engage with AARO going forward.
+
+    Regarding an interview request, Acting Director Phillips does not have any availability for interviews at this time.  We will keep you in mind for future opportunities.
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Sue Gough email to YLE Finland journalist, March 5, 2024 21:51 — repeated in shorter form to Scientific American (March 5) and Washington Examiner (March 5) and to YLE earlier on February 14, 2024'
+  significance: 'Gough''s repeated standardized email response declining further press engagement with Acting Director Tim Phillips around the AARO Historical Record Report Volume I rollout, in favor of an invite-only briefing on March 8, 2024.'
+  context: 'FOIA case 24-F-0894 release, Document 1 (YLE Finland journalist exchange), email sent March 5, 2024 21:51 (Helsinki time)'
+  observation_type: relayed
+  statement_date: '2024-03-05'
+- id: q11
+  added_date: '2026-05-06'
+  text: |
+    Question 2 - I'm working on the press release today.  Do you want DNI/ODNI mentioned?  Unlike the annual UAP report, the legislation calls for AARO producing the report - but Dir, AARO reports to PDDNI, too, so wanted to check.
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Sue Gough email to ODNI counterpart, March 5, 2024 12:51 PM, Document 4 of FOIA release'
+  significance: 'Gough explicitly references AARO''s reporting line to PDDNI before the OSD(PA)-ODNI agreement to omit any ODNI mention from the AARO Historical Record Report Volume I press release.'
+  context: 'FOIA case 24-F-0894 release, Document 4 (Rollout update? — ODNI omission decision), Sue Gough email to ODNI counterpart, March 5, 2024 12:51 PM'
+  observation_type: relayed
+  statement_date: '2024-03-05'
+- id: q12
+  added_date: '2026-05-06'
+  text: |
+    Flagging for you in case you haven't heard.  We do not want to see sUAS added to AARO's portfolio!
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Sue Gough email to David A. Kozik (OUSD(I&S) Director Congressional Activities), March 6, 2024 1:45 PM, Subject "FW: Following up from Unders", Importance: High'
+  significance: 'Importance: High institutional position from Gough that AARO should not absorb sUAS cataloguing, sent the same day Sen. Gillibrand requested AARO take that role at a SASC briefing on the December 2023 JBLE drone incursions.'
+  context: 'FOIA case 24-F-0894 release, Document 6 (Following up from Unders — sUAS / cUAS / JBLE), Sue Gough to David Kozik, March 6, 2024 1:45 PM, Importance: High'
+  observation_type: relayed
+  statement_date: '2024-03-06'
+- id: q13
+  added_date: '2026-05-06'
+  text: |
+    Agree, coordinating is just fine and a necessary role. But knowing what the senator has done in the past, I was concerned she has a bigger role in mind.
+
+    Anyway, wanted to make you were aware in case you hadn't gotten a readout of the engagement.
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Sue Gough reply to David A. Kozik, March 7, 2024 9:40 AM, Subject "RE: Following up from Unders"'
+  significance: 'Gough accepts Kozik''s coordinating-role framing for AARO on counter-sUAS while reiterating concern that Sen. Gillibrand was seeking a bigger AARO role; documents the senator-driven origin of the same-day Importance: High portfolio email.'
+  context: 'FOIA case 24-F-0894 release, Document 6 (Following up from Unders), Sue Gough reply to Kozik, March 7, 2024 9:40 AM'
+  observation_type: relayed
+  statement_date: '2024-03-07'
+- id: q14
+  added_date: '2026-05-06'
+  text: |
+    AARO reached full operational capability as of Oct. 1, 2024. In practical terms, this means AARO now has the requisite personnel, expertise, facilities and tools to carry out its core mission,
+  source:
+    path: news/defensescoop-aaro-foc-briefing-20241205.html
+    location: 'DefenseScoop article body, opening attribution paragraph for AARO Full Operational Capability'
+  significance: 'On-record DoD declaration that AARO reached Full Operational Capability as of October 1, 2024 — the start of FY 2025 — preceding the Director Kosloski House Oversight closed-door briefing on December 6, 2024.'
+  context: 'DefenseScoop article by Brandi Vincent, ''AARO functioning at full operational capability as lawmakers prep for classified UAP briefing'', December 5, 2024'
+  observation_type: relayed
+  statement_date: '2024-12-05'
+- id: q15
+  added_date: '2026-05-06'
+  text: |
+    The department is committed to releasing a second volume of its Historical Record Report, to include AARO's findings on reports of potential pranks and inauthentic materials,
+  source:
+    path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html
+    location: 'WSJ article body, Gough on-record commitment to AARO Historical Record Report Volume II'
+  significance: 'On-record DoD commitment to release a second volume of the AARO Historical Record Report covering AARO''s findings on potential pranks and inauthentic materials; the Tovima/WSJ piece notes Gough also acknowledged AARO had uncovered evidence of fake classified program materials.'
+  context: 'Wall Street Journal piece on Pentagon disinformation in UFO mythology by Joel Schectman and Aruna Viswanatha, June 6, 2025 (carried by tovima.com)'
+  observation_type: relayed
+  statement_date: '2025-06-06'
+- id: q16
+  added_date: '2026-05-06'
+  text: |
+    AARO has been examining over 2,000 UAP cases.
+  source:
+    path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+    location: 'DefenseScoop article body, Gough caseload paragraph'
+  significance: 'On-record DoD AARO caseload of more than 2,000 UAP cases, an increase of at least 400 from the late-2024 public update of more than 1,600 reports.'
+  context: 'DefenseScoop article by Brandi Vincent, February 25, 2026, in response to questions about AARO publication blackout and forthcoming Trump UAP-disclosure executive order'
+  observation_type: relayed
+  statement_date: '2026-02-25'
+- id: q17
+  added_date: '2026-05-06'
+  text: |
+    We have nothing to announce at this time.
+  source:
+    path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+    location: 'DefenseScoop article body, Gough press-silence paragraph'
+  significance: 'On-record DoD response to DefenseScoop on why AARO has not disseminated unclassified reports or briefed reporters on its efforts in more than a year — no announcement at this time.'
+  context: 'DefenseScoop article by Brandi Vincent, February 25, 2026'
+  observation_type: relayed
+  statement_date: '2026-02-25'
+entities_referenced:
+- id: e1
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: Department of Defense
+  wrap_path: /organizations/dod
+  context_summary: 'Gough''s employer; she is a civilian Public Affairs spokesperson assigned to Defense Press Operations within OSD(PA).'
+- id: e2
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: All-domain Anomaly Resolution Office (AARO)
+  wrap_path: /organizations/aaro
+  context_summary: 'The DoD office whose Public Affairs portfolio Gough holds at OSD(PA) from June 2022 through February 2026.'
+- id: e3
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: Unidentified Aerial Phenomena Task Force (UAPTF)
+  wrap_path: /organizations/uaptf
+  context_summary: 'AARO''s predecessor; Gough''s June 29, 2022 Public Affairs statement names former ONI senior civilian John Stratton as UAPTF lead and informally referred to Dr. Travis Taylor as chief scientist.'
+- id: e4
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: Office of Naval Intelligence
+  wrap_path: /organizations/oni
+  context_summary: 'Stratton''s prior senior civilian role per Gough''s June 29, 2022 statement to The Black Vault.'
+- id: e5
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: Office of the Director of National Intelligence (ODNI)
+  wrap_path: /organizations/odni
+  context_summary: 'Public Affairs counterpart to OSD(PA) in the March 5, 2024 AARO Historical Record Report Volume I rollout email exchange agreeing to omit any ODNI mention from the public press release.'
+- id: e6
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))
+  wrap_path: /organizations/ousd-is
+  context_summary: 'AARO''s parent component; David Kozik (Director of Congressional Activities, OUSD(I&S)) was Gough''s counterpart in the March 6-7, 2024 AARO sUAS portfolio email exchange.'
+- id: e7
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: U.S. Army Space and Missile Defense Command (SMDC)
+  wrap_path: /organizations/u-s-army-smdc
+  context_summary: 'Dr. Travis Taylor''s parent organization per Gough''s June 29, 2022 statement; SMDC provided Taylor on a time-limited basis to the UAPTF and in early 2021 worked to clarify and de-conflict his assigned tasks, responsibilities, and outside activities.'
+- id: e8
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: U.S. Navy
+  wrap_path: /organizations/us-navy
+  context_summary: 'Source 1 (December 16, 2022 AARO roundtable) refers to UAPTF as the Navy-led predecessor of AARO.'
+- id: e9
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: The Black Vault
+  wrap_path: /organizations/the-black-vault
+  context_summary: 'John Greenewald Jr.''s FOIA-and-records archive; recipient of Gough''s June 29, 2022 Public Affairs written statement on Travis Taylor / UAPTF and of the August 2025 release of FOIA case 24-F-0894.'
+- id: e10
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: DefenseScoop
+  wrap_path: /organizations/defensescoop
+  context_summary: 'Recipient of multiple on-record Gough quotes — Kirkpatrick last-day (November 30, 2023), AARO Full Operational Capability (December 5, 2024), and AARO 2,000+ caseload (February 25, 2026).'
+- id: e11
+  added_date: '2026-05-06'
+  entity_type: organization
+  name: tovima.com
+  wrap_path: /organizations/tovima
+  context_summary: 'Carried the June 6, 2025 Wall Street Journal piece on Pentagon disinformation in UFO mythology that quotes Gough on the AARO Historical Record Report Volume II commitment.'
+- id: e12
+  added_date: '2026-05-06'
+  entity_type: person
+  name: John Stratton
+  wrap_path: /people/jay-stratton
+  context_summary: 'Named by Gough''s June 29, 2022 statement as the UAPTF lead — former Office of Naval Intelligence senior civilian — at the time of Dr. Travis Taylor''s initial work with the Task Force.'
+- id: e13
+  added_date: '2026-05-06'
+  entity_type: person
+  name: Travis Taylor
+  wrap_path: /people/travis-taylor
+  context_summary: 'Subject of Gough''s June 29, 2022 four-question Public Affairs statement to The Black Vault; informally referred to UAPTF chief scientist while remaining an SMDC employee on time-limited assignment.'
+- id: e14
+  added_date: '2026-05-06'
+  entity_type: person
+  name: Scott Bray
+  wrap_path: /people/scott-bray
+  context_summary: 'Director Bray; Gough''s A3 response says the UAPTF stands by the conclusions presented by Director Bray in his briefing — referring to the May 17, 2022 HPSCI UAP hearing.'
+- id: e15
+  added_date: '2026-05-06'
+  entity_type: person
+  name: Ronald Moultrie
+  wrap_path: /people/ronald-moultrie
+  context_summary: 'Under Secretary of Defense for Intelligence and Security; co-host with Sean Kirkpatrick of the December 16, 2022 joint AARO media roundtable that Gough moderated as STAFF.'
+- id: e16
+  added_date: '2026-05-06'
+  entity_type: person
+  name: Sean Kirkpatrick
+  wrap_path: /people/sean-kirkpatrick
+  context_summary: 'AARO''s first Director (December 2022 – December 1, 2023); Gough confirmed his last-day date and characterized the leadership transition in her November 30, 2023 statements to DefenseScoop.'
+- id: e17
+  added_date: '2026-05-06'
+  entity_type: person
+  name: Tim Phillips
+  wrap_path: /people/tim-phillips
+  context_summary: 'AARO Acting Director after Kirkpatrick''s December 1, 2023 departure; subject of Gough''s repeated email response declining further press engagement around the AARO Historical Record Report Volume I rollout, in favor of an invite-only briefing on March 8, 2024.'
+- id: e18
+  added_date: '2026-05-06'
+  entity_type: person
+  name: Jon Kosloski
+  wrap_path: /people/jonathan-kosloski
+  context_summary: 'AARO Director from August 2024; AARO''s Full Operational Capability (Oct. 1, 2024) declared on his watch and confirmed by Gough to DefenseScoop on December 5, 2024.'
+- id: e19
+  added_date: '2026-05-06'
+  entity_type: person
+  name: David Kozik
+  wrap_path: /people/david-kozik
+  context_summary: 'Director of Congressional Activities, OUSD(I&S); recipient of Gough''s March 6, 2024 Importance: High email stating OSD(PA) does not want to see sUAS added to AARO''s portfolio.'
+- id: e20
+  added_date: '2026-05-06'
+  entity_type: person
+  name: Senator Gillibrand
+  wrap_path: /people/kirsten-gillibrand
+  context_summary: 'SASC member who at the March 6, 2024 SASC briefing on the December 2023 JBLE drone incursions had an animated response asking that sUAS be catalogued by AARO — the request that triggered the same-day Gough/Kozik internal email exchange.'
+- id: e21
+  added_date: '2026-05-06'
+  entity_type: person
+  name: Brandi Vincent
+  wrap_path: /people/brandi-vincent
+  context_summary: 'DefenseScoop journalist whose articles carry Gough''s quotes on Kirkpatrick''s departure (November 30, 2023), AARO Full Operational Capability (December 5, 2024), and AARO 2,000+ caseload (February 25, 2026).'
+- id: e22
+  added_date: '2026-05-06'
+  entity_type: document
+  name: 'FOIA case 24-F-0894 — AARO HRR Vol I rollout emails (Black Vault release, August 26, 2025)'
+  wrap_path: /documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails
+  context_summary: 'Department of Defense FOIA case 24-F-0894 (released August 26, 2025; 14 pages responsive) — Gough''s internal Pentagon emails coordinating the AARO Historical Record Report Volume I press rollout, including the OSD(PA)-ODNI omission decision and the OSD(PA)-OUSD(I&S) sUAS-portfolio exchange.'
+- id: e23
+  added_date: '2026-05-06'
+  entity_type: document
+  name: 'WSJ — "The Pentagon Disinformation That Fueled America''s UFO Mythology" (Schectman + Viswanatha, June 6, 2025)'
+  wrap_path: /documents/wsj-pentagon-disinformation-ufo-mythology-2025
+  context_summary: 'Wall Street Journal investigative piece (carried by tovima.com) that quotes Gough on the AARO Historical Record Report Volume II commitment to cover findings on potential pranks and inauthentic materials.'
+naming_quirks: []
+rumors:
+- id: r1
+  added_date: '2026-05-06'
+  claim: 'The Sue Gough who serves as Department of Defense Public Affairs spokesperson with the AARO portfolio is the same Susan I. Gough who authored the April 7, 2003 U.S. Army War College Strategy Research Project paper "The Evolution of Strategic Influence" on perception management and strategic communication doctrine.'
+  status: not-primary-source-established
+  observed_sources:
+  - 'UAP-disclosure online discussion linking Gough''s 2003 USAWC perception-management paper to her later DoD/AARO UAP spokesperson role'
+  note: 'Middle initial differs in the two attestations — FOIA case 24-F-0894 email signatures use "L" (Gough, Susan L (Sue)), and the 2003 USAWC paper byline uses "I" (Susan I. Gough). No archived primary source bridges the two identities. The conflation rests on online inference, not on primary-source attestation.'
+timeline:
+- id: t1
+  added_date: '2026-05-06'
+  date: '2022-06-29'
+  category: statement
+  event: 'Provided Department of Defense Public Affairs written statement to The Black Vault naming former Office of Naval Intelligence senior civilian John Stratton as UAPTF lead and informally referring to Dr. Travis Taylor as chief scientist; SMDC time-limited assignment basis preserved across four Q&A answers and one follow-up reply.'
+  source:
+    path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
+    location: 'A1-A4 responses + follow-up reply, June 29, 2022 article body'
+- id: t2
+  added_date: '2026-05-06'
+  date: '2022-12-16'
+  category: engagement
+  event: 'Moderated joint AARO media roundtable with Under Secretary of Defense for Intelligence and Security Ronald Moultrie and AARO Director Sean Kirkpatrick at the Pentagon (STAFF moderator role).'
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: 'STAFF moderator opening, joint AARO media roundtable, December 16, 2022'
+- id: t3
+  added_date: '2026-05-06'
+  date: '2023-11-30'
+  category: statement
+  event: 'On-record statements to DefenseScoop confirming AARO Director Sean Kirkpatrick''s last-day date as December 1, 2023 and characterizing the AARO leadership transition.'
+  source:
+    path: news/defensescoop-kirkpatrick-departure-20231130.html
+    location: 'DefenseScoop article body, November 30, 2023'
+- id: t4
+  added_date: '2026-05-06'
+  date: '2024-02-14'
+  category: engagement
+  event: 'Standardized email response to YLE Finland journalist on AARO Historical Record Report press engagement — declined further engagement.'
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Document 1 (YLE journalist exchange), Sue Gough email of February 14, 2024 21:38 (Helsinki time)'
+- id: t5
+  added_date: '2026-05-06'
+  date: '2024-03-05'
+  category: coordination
+  event: 'OSD(PA)-ODNI email exchange agreeing to omit any ODNI mention from the AARO Historical Record Report Volume I press release — Gough question 12:51 PM, ODNI reply confirming agreement 2:53 PM.'
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Document 4 (Rollout update? — ODNI omission decision), March 5, 2024'
+- id: t6
+  added_date: '2026-05-06'
+  date: '2024-03-05'
+  category: engagement
+  event: 'Repeated email response declining further AARO press engagement, sent to Washington Examiner (2:46 PM short version) and YLE Finland (21:51 long version with interview-request decline).'
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Document 1 (YLE) and Document 3 (Washington Examiner) email exchanges, March 5, 2024'
+- id: t7
+  added_date: '2026-05-06'
+  date: '2024-03-06'
+  category: coordination
+  event: 'Importance: High email to David Kozik (OUSD(I&S) Director of Congressional Activities) at 1:45 PM stating OSD(PA) does not want to see sUAS added to AARO''s portfolio, sent in response to Senator Gillibrand''s same-day SASC briefing request that AARO catalogue sUAS following the December 2023 JBLE drone incursions.'
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Document 6 (Following up from Unders), Sue Gough to David Kozik, March 6, 2024 1:45 PM, Importance: High'
+- id: t8
+  added_date: '2026-05-06'
+  date: '2024-03-07'
+  category: coordination
+  event: 'Reply email to David Kozik at 9:40 AM agreeing the coordinating role for AARO on counter-sUAS efforts is fine while reiterating concern that Senator Gillibrand was seeking a bigger AARO role.'
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Document 6 (Following up from Unders), Sue Gough reply to Kozik, March 7, 2024 9:40 AM'
+- id: t9
+  added_date: '2026-05-06'
+  date: '2024-12-05'
+  category: statement
+  event: 'On-record AARO Full Operational Capability declaration to DefenseScoop — AARO reached FOC as of October 1, 2024 (the start of FY 2025) — preceding Director Kosloski''s December 6, 2024 closed-door House Oversight briefing.'
+  source:
+    path: news/defensescoop-aaro-foc-briefing-20241205.html
+    location: 'DefenseScoop article body, December 5, 2024'
+- id: t10
+  added_date: '2026-05-06'
+  date: '2025-06-06'
+  category: statement
+  event: 'Quoted in WSJ piece on Pentagon disinformation in UFO mythology (carried by tovima.com) on the Department of Defense commitment to release a second volume of the AARO Historical Record Report covering findings on potential pranks and inauthentic materials; piece notes Gough also acknowledged AARO had uncovered evidence of fake classified program materials.'
+  source:
+    path: news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html
+    location: 'WSJ article body, Gough on-record commitment paragraph'
+- id: t11
+  added_date: '2026-05-06'
+  date: '2026-02-25'
+  category: statement
+  event: 'On-record AARO caseload statement to DefenseScoop — AARO has been examining over 2,000 UAP cases — and "We have nothing to announce at this time" response on the year-plus AARO publication blackout.'
+  source:
+    path: news/defensescoop-aaro-hegseth-disclosure-20260225.html
+    location: 'DefenseScoop article body, February 25, 2026'
+program_involvement:
+- id: pi1
+  added_date: '2026-05-06'
+  program: AARO Public Affairs portfolio at OSD(PA)
+  role: Department of Defense Public Affairs spokesperson with the AARO portfolio (June 2022 — ongoing)
+  evidentiary_basis: primary-source
+  confidence: high
+  start_date: '2022-06'
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Sue Gough email signature in FOIA case 24-F-0894 — Defense Press Operations, OSD(PA); on-record AARO statements across June 2022 through February 2026'
+  note: 'On-record engagement with the AARO portfolio runs from June 2022 (Black Vault statement on UAPTF lead and Travis Taylor) through February 2026 (DefenseScoop AARO 2,000+ caseload statement) — an ongoing tenure across AARO''s first Director Sean Kirkpatrick, Acting Director Tim Phillips, and Director Jon Kosloski.'
+background: 'Sue Gough is a civilian Department of Defense ([`/organizations/dod`]) spokesperson assigned to Defense Press Operations within the Office of the Secretary of Defense Public Affairs (OSD(PA)). Pentagon emails identify her as Gough, Susan L (Sue) CIV OSD PA (USA). Within OSD(PA) she is the principal Public Affairs contact for the All-domain Anomaly Resolution Office ([`/organizations/aaro`]), providing on-record statements about AARO, its predecessor the UAP Task Force ([`/organizations/uaptf`]), and related Department of Defense matters.
+
+
+  She has held the AARO portfolio at OSD(PA) from June 2022 through February 2026 — an ongoing tenure across AARO''s first Director Sean Kirkpatrick ([`/people/sean-kirkpatrick`]), Acting Director Tim Phillips ([`/people/tim-phillips`]), and Director Jon Kosloski ([`/people/jonathan-kosloski`]).
+
+  '
+top_relevance: 'Sue Gough is the principal Department of Defense Public Affairs contact for the AARO portfolio. She provided the June 29, 2022 Public Affairs response to The Black Vault ([`/organizations/the-black-vault`]) that named former Office of Naval Intelligence ([`/organizations/oni`]) senior civilian John Stratton ([`/people/jay-stratton`]) as UAPTF lead, noted Dr. Travis Taylor''s ([`/people/travis-taylor`]) parent organization as the U.S. Army Space and Missile Defense Command ([`/organizations/u-s-army-smdc`]), and described Taylor as informally referred to chief scientist; was moderator of the December 16, 2022 joint AARO media engagement with Under Secretary of Defense for Intelligence and Security Ronald Moultrie ([`/people/ronald-moultrie`]) and Director Sean Kirkpatrick (which described AARO as the office that replaced the former Navy-led ([`/organizations/us-navy`]) UAPTF and noted the UAPTF stands by the conclusions presented by Director Bray ([`/people/scott-bray`]) in his briefing); led OSD(PA) coordination on the AARO Historical Record Report Volume I press release rollout in March 2024 (FOIA case 24-F-0894); confirmed AARO Full Operational Capability as of Oct. 1, 2024 to DefenseScoop ([`/organizations/defensescoop`]) journalist Brandi Vincent ([`/people/brandi-vincent`]); and reported AARO''s caseload of more than 2,000 UAP cases in February 2026.
+
+  '
+affiliations:
+- id: a1
+  added_date: '2026-05-06'
+  organization_path: /organizations/dod
+  role: 'Civilian Public Affairs spokesperson, Defense Press Operations, Office of the Secretary of Defense Public Affairs (OSD(PA)), with the AARO portfolio'
+  period_start: '2022-06'
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Sue Gough email signature — Defense Press Operations, OSD(PA); FOIA email header — Gough, Susan L (Sue) CIV OSD PA (USA)'
+relationships:
+- id: rel1
+  added_date: '2026-05-06'
+  person_path: /people/sean-kirkpatrick
+  relationship: 'Public Affairs spokesperson covering Kirkpatrick during his AARO directorship; moderated his December 16, 2022 joint AARO media roundtable and confirmed his December 1, 2023 last-day date to DefenseScoop on November 30, 2023.'
+  source:
+    path: news/defensescoop-kirkpatrick-departure-20231130.html
+    location: 'DefenseScoop article body, November 30, 2023'
+- id: rel2
+  added_date: '2026-05-06'
+  person_path: /people/ronald-moultrie
+  relationship: 'Moderated Moultrie''s December 16, 2022 joint AARO media roundtable with Kirkpatrick at the Pentagon (STAFF moderator role).'
+  source:
+    path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
+    location: 'STAFF moderator opening, joint AARO media roundtable, December 16, 2022'
+- id: rel3
+  added_date: '2026-05-06'
+  person_path: /people/tim-phillips
+  relationship: 'Public Affairs spokesperson covering Phillips during his AARO Acting Director tenure; coordinated the small-group invite-only press posture for the March 8, 2024 AARO Historical Record Report Volume I briefing and declined further press engagement with Phillips per the FOIA 24-F-0894 standardized email response.'
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Document 1 / Document 3 / Document 5 — Sue Gough standardized email responses, February-March 2024'
+- id: rel4
+  added_date: '2026-05-06'
+  person_path: /people/jonathan-kosloski
+  relationship: 'Public Affairs spokesperson covering Kosloski during his AARO directorship; provided the on-record AARO Full Operational Capability declaration on December 5, 2024 and the AARO 2,000+ caseload statement on February 25, 2026.'
+  source:
+    path: news/defensescoop-aaro-foc-briefing-20241205.html
+    location: 'DefenseScoop article body, December 5, 2024'
+- id: rel5
+  added_date: '2026-05-06'
+  person_path: /people/david-kozik
+  relationship: 'OSD(PA) counterpart to Kozik (OUSD(I&S) Director of Congressional Activities) on AARO Hill-facing scope; March 6-7, 2024 email exchange on AARO sUAS portfolio in FOIA 24-F-0894.'
+  source:
+    path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
+    location: 'Document 6 (Following up from Unders) — Gough/Kozik email exchange, March 6-7, 2024'
+credibility_notes: 'Gough speaks for the Department of Defense as a civilian Public Affairs spokesperson, not in a personal capacity. Her on-record statements carry institutional Department of Defense positions; her internal Pentagon emails released in FOIA case 24-F-0894 ([`/documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails`]) document the operational coordination behind those positions. The release includes a March 5, 2024 OSD(PA)–ODNI ([`/organizations/odni`]) email exchange in which OSD(PA) and ODNI agree to the omission of any ODNI mention from the AARO Historical Record Report Volume I press release, even though Dir, AARO reports to PDDNI as well as the Deputy Secretary of Defense; an Importance: High email from Gough to OUSD(I&S) ([`/organizations/ousd-is`]) Director of Congressional Activities David Kozik ([`/people/david-kozik`]) on March 6, 2024 in which Gough states OSD(PA) does not want to see sUAS added to AARO''s portfolio, sent in response to Senator Gillibrand ([`/people/kirsten-gillibrand`]) earlier the same day asking at a SASC briefing on the December 2023 JBLE drone incursions for sUAS to be catalogued by AARO; and a repeated email response from Gough to Scientific American, the Washington Examiner, and YLE Finland that declined further press engagement with Acting Director Tim Phillips ahead of an invite-only briefing on March 8, 2024.
+
+
+  In June 2025 the Wall Street Journal piece ([`/documents/wsj-pentagon-disinformation-ufo-mythology-2025`]) on Pentagon disinformation in UFO mythology — covered by tovima.com ([`/organizations/tovima`]) — noted on-record confirming from Gough that AARO had uncovered evidence of fake classified program materials, that the Department of Defense did not include those AARO findings in its Volume I report because the investigation was not yet completed, and that the Department was committed to releasing a second volume of its Historical Record Report to cover AARO''s findings on reports of potential pranks and inauthentic materials later that year. As of February 25, 2026 (DefenseScoop), AARO had not released a 2025 annual report or Volume II.
+
+
+  Her email signature in the FOIA case 24-F-0894 emails read Gough, Susan L (Sue) CIV OSD PA (USA) — a civilian Office of the Secretary of Defense Public Affairs USA assignment. She has held the AARO portfolio across AARO''s first Director Sean Kirkpatrick, Acting Director Tim Phillips, and Director Jon Kosloski, an ongoing tenure noted in sources from June 2022 through February 2026.
+
+  '

@@ -23,3 +23,953 @@
 # contributors add list items with the same shape after a Web audit /
 # manual review. Audit by reading the file directly.
 
+- ts: 2026-05-06T23:10:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 3 significant token(s) not in source (prose-drift check — contributor review): archived, documented, primary
+
+- ts: 2026-05-06T23:10:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 3 significant token(s) not in source (prose-drift check — contributor review): coordinated, informal, moderated
+
+- ts: 2026-05-06T23:10:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 25 significant token(s) not in source (prose-drift check — contributor review): 3373, agreeing, archived, attested, captures, catalog, chains, confirmation, … (+17 more)
+
+- ts: 2026-05-06T23:10:44Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 3 significant token(s) not in source (prose-drift check — contributor review): archived, documented, primary
+
+- ts: 2026-05-06T23:10:44Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 3 significant token(s) not in source (prose-drift check — contributor review): coordinated, informal, moderated
+
+- ts: 2026-05-06T23:10:44Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 25 significant token(s) not in source (prose-drift check — contributor review): 3373, agreeing, archived, attested, captures, catalog, chains, confirmation, … (+17 more)
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q1' text not found in node body: "The Unidentified Aerial Phenomena Task Force (UAPTF) was and is (until the follo..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q2' text not found in node body: "Dr. Taylor worked with the UAPTF as a contributing scientist and engineer, bring..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q3' text not found in node body: "Dr. Taylor's work with the UAPTF focused on scientific and technical advice prov..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q4' text not found in node body: "As stated, Dr. Taylor was an employee of the U.S. Army's Space and Missile Defen..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q5' text not found in node body: "Broadly speaking, it means clarifying and de-conflicting his assigned tasks and ..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q6' text not found in node body: "Good afternoon, I'm Sue Gough. I will be --from Defense Press Operations. I will..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q7' text not found in node body: "Friday, Dec. 1, is Dr. Kirkpatrick's last day in the office,"
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q8' text not found in node body: "Dr. Kirkpatrick assembled a very talented and dedicated team of federal governme..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q9' text not found in node body: "The selection process for a new director for AARO is ongoing. We do not have an ..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q10' text not found in node body: "Thanks for reaching out. At this time, we are looking to keep any media engageme..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q11' text not found in node body: "Question 2 - I'm working on the press release today.  Do you want DNI/ODNI menti..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q12' text not found in node body: "Flagging for you in case you haven't heard.  We do not want to see sUAS added to..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q13' text not found in node body: "Agree, coordinating is just fine and a necessary role. But knowing what the sena..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q14' text not found in node body: "AARO reached full operational capability as of Oct. 1, 2024. In practical terms,..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q15' text not found in node body: "The department is committed to releasing a second volume of its Historical Recor..."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q16' text not found in node body: "AARO has been examining over 2,000 UAP cases."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q17' text not found in node body: "We have nothing to announce at this time."
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: boundary
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e1' ('Department of Defense') wrap_path '/organizations/dod' does not appear as a [`/organizations/dod`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e2' ('All-domain Anomaly Resolution Office (AARO)') wrap_path '/organizations/aaro' does not appear as a [`/organizations/aaro`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e3' ('Unidentified Aerial Phenomena Task Force (UAPTF)') wrap_path '/organizations/uaptf' does not appear as a [`/organizations/uaptf`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e4' ('Office of Naval Intelligence') wrap_path '/organizations/oni' does not appear as a [`/organizations/oni`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e5' ('Office of the Director of National Intelligence (ODNI)') wrap_path '/organizations/odni' does not appear as a [`/organizations/odni`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e6' ('Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))') wrap_path '/organizations/ousd-is' does not appear as a [`/organizations/ousd-is`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e7' ('U.S. Army Space and Missile Defense Command (SMDC)') wrap_path '/organizations/u-s-army-smdc' does not appear as a [`/organizations/u-s-army-smdc`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e8' ('U.S. Navy') wrap_path '/organizations/us-navy' does not appear as a [`/organizations/us-navy`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('The Black Vault') wrap_path '/organizations/the-black-vault' does not appear as a [`/organizations/the-black-vault`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e10' ('DefenseScoop') wrap_path '/organizations/defensescoop' does not appear as a [`/organizations/defensescoop`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e11' ('tovima.com') wrap_path '/organizations/tovima' does not appear as a [`/organizations/tovima`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e12' ('John Stratton') wrap_path '/people/jay-stratton' does not appear as a [`/people/jay-stratton`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('Travis Taylor') wrap_path '/people/travis-taylor' does not appear as a [`/people/travis-taylor`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e14' ('Scott Bray') wrap_path '/people/scott-bray' does not appear as a [`/people/scott-bray`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e15' ('Ronald Moultrie') wrap_path '/people/ronald-moultrie' does not appear as a [`/people/ronald-moultrie`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e16' ('Sean Kirkpatrick') wrap_path '/people/sean-kirkpatrick' does not appear as a [`/people/sean-kirkpatrick`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e17' ('Tim Phillips') wrap_path '/people/tim-phillips' does not appear as a [`/people/tim-phillips`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e18' ('Jon Kosloski') wrap_path '/people/jonathan-kosloski' does not appear as a [`/people/jonathan-kosloski`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e19' ('David Kozik') wrap_path '/people/david-kozik' does not appear as a [`/people/david-kozik`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e20' ('Senator Gillibrand') wrap_path '/people/kirsten-gillibrand' does not appear as a [`/people/kirsten-gillibrand`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e21' ('Brandi Vincent') wrap_path '/people/brandi-vincent' does not appear as a [`/people/brandi-vincent`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e22' ('FOIA case 24-F-0894 — AARO HRR Vol I rollout emails (Black Vault release, August 26, 2025)') wrap_path '/documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails' does not appear as a [`/documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails`] link in the node
+
+- ts: 2026-05-06T23:34:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e23' ('WSJ — "The Pentagon Disinformation That Fueled America\'s UFO Mythology" (Schectman + Viswanatha, June 6, 2025)') wrap_path '/documents/wsj-pentagon-disinformation-ufo-mythology-2025' does not appear as a [`/documents/wsj-pentagon-disinformation-ufo-mythology-2025`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q1' text not found in node body: "The Unidentified Aerial Phenomena Task Force (UAPTF) was and is (until the follo..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q2' text not found in node body: "Dr. Taylor worked with the UAPTF as a contributing scientist and engineer, bring..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q3' text not found in node body: "Dr. Taylor's work with the UAPTF focused on scientific and technical advice prov..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q4' text not found in node body: "As stated, Dr. Taylor was an employee of the U.S. Army's Space and Missile Defen..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q5' text not found in node body: "Broadly speaking, it means clarifying and de-conflicting his assigned tasks and ..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q6' text not found in node body: "Good afternoon, I'm Sue Gough. I will be --from Defense Press Operations. I will..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q7' text not found in node body: "Friday, Dec. 1, is Dr. Kirkpatrick's last day in the office,"
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q8' text not found in node body: "Dr. Kirkpatrick assembled a very talented and dedicated team of federal governme..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q9' text not found in node body: "The selection process for a new director for AARO is ongoing. We do not have an ..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q10' text not found in node body: "Thanks for reaching out. At this time, we are looking to keep any media engageme..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q11' text not found in node body: "Question 2 - I'm working on the press release today.  Do you want DNI/ODNI menti..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q12' text not found in node body: "Flagging for you in case you haven't heard.  We do not want to see sUAS added to..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q13' text not found in node body: "Agree, coordinating is just fine and a necessary role. But knowing what the sena..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q14' text not found in node body: "AARO reached full operational capability as of Oct. 1, 2024. In practical terms,..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q15' text not found in node body: "The department is committed to releasing a second volume of its Historical Recor..."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q16' text not found in node body: "AARO has been examining over 2,000 UAP cases."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: coverage
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Coverage: quote 'q17' text not found in node body: "We have nothing to announce at this time."
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: boundary
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e1' ('Department of Defense') wrap_path '/organizations/dod' does not appear as a [`/organizations/dod`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e2' ('All-domain Anomaly Resolution Office (AARO)') wrap_path '/organizations/aaro' does not appear as a [`/organizations/aaro`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e3' ('Unidentified Aerial Phenomena Task Force (UAPTF)') wrap_path '/organizations/uaptf' does not appear as a [`/organizations/uaptf`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e4' ('Office of Naval Intelligence') wrap_path '/organizations/oni' does not appear as a [`/organizations/oni`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e5' ('Office of the Director of National Intelligence (ODNI)') wrap_path '/organizations/odni' does not appear as a [`/organizations/odni`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e6' ('Office of the Under Secretary of Defense for Intelligence and Security (OUSD(I&S))') wrap_path '/organizations/ousd-is' does not appear as a [`/organizations/ousd-is`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e7' ('U.S. Army Space and Missile Defense Command (SMDC)') wrap_path '/organizations/u-s-army-smdc' does not appear as a [`/organizations/u-s-army-smdc`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e8' ('U.S. Navy') wrap_path '/organizations/us-navy' does not appear as a [`/organizations/us-navy`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('The Black Vault') wrap_path '/organizations/the-black-vault' does not appear as a [`/organizations/the-black-vault`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e10' ('DefenseScoop') wrap_path '/organizations/defensescoop' does not appear as a [`/organizations/defensescoop`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e11' ('tovima.com') wrap_path '/organizations/tovima' does not appear as a [`/organizations/tovima`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e12' ('John Stratton') wrap_path '/people/jay-stratton' does not appear as a [`/people/jay-stratton`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('Travis Taylor') wrap_path '/people/travis-taylor' does not appear as a [`/people/travis-taylor`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e14' ('Scott Bray') wrap_path '/people/scott-bray' does not appear as a [`/people/scott-bray`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e15' ('Ronald Moultrie') wrap_path '/people/ronald-moultrie' does not appear as a [`/people/ronald-moultrie`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e16' ('Sean Kirkpatrick') wrap_path '/people/sean-kirkpatrick' does not appear as a [`/people/sean-kirkpatrick`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e17' ('Tim Phillips') wrap_path '/people/tim-phillips' does not appear as a [`/people/tim-phillips`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e18' ('Jon Kosloski') wrap_path '/people/jonathan-kosloski' does not appear as a [`/people/jonathan-kosloski`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e19' ('David Kozik') wrap_path '/people/david-kozik' does not appear as a [`/people/david-kozik`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e20' ('Senator Gillibrand') wrap_path '/people/kirsten-gillibrand' does not appear as a [`/people/kirsten-gillibrand`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e21' ('Brandi Vincent') wrap_path '/people/brandi-vincent' does not appear as a [`/people/brandi-vincent`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e22' ('FOIA case 24-F-0894 — AARO HRR Vol I rollout emails (Black Vault release, August 26, 2025)') wrap_path '/documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails' does not appear as a [`/documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails`] link in the node
+
+- ts: 2026-05-06T23:35:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e23' ('WSJ — "The Pentagon Disinformation That Fueled America\'s UFO Mythology" (Schectman + Viswanatha, June 6, 2025)') wrap_path '/documents/wsj-pentagon-disinformation-ufo-mythology-2025' does not appear as a [`/documents/wsj-pentagon-disinformation-ufo-mythology-2025`] link in the node
+
+- ts: 2026-05-06T23:37:51Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/sue-gough.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (59>55): Quoted in Wall Street Journal piece on Pentagon disinformati...
+
+- ts: 2026-05-06T23:37:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/sue-gough.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (59>55): Quoted in Wall Street Journal piece on Pentagon disinformati...
+
+- ts: 2026-05-06T23:40:33Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e7' ('U.S. Army Space and Missile Defense Command (SMDC)') wrap_path '/organizations/u-s-army-smdc' does not appear as a [`/organizations/u-s-army-smdc`] link in the node
+
+- ts: 2026-05-06T23:40:33Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e8' ('U.S. Navy') wrap_path '/organizations/us-navy' does not appear as a [`/organizations/us-navy`] link in the node
+
+- ts: 2026-05-06T23:40:33Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e14' ('Scott Bray') wrap_path '/people/scott-bray' does not appear as a [`/people/scott-bray`] link in the node
+
+- ts: 2026-05-06T23:40:33Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e21' ('Brandi Vincent') wrap_path '/people/brandi-vincent' does not appear as a [`/people/brandi-vincent`] link in the node
+
+- ts: 2026-05-06T23:40:33Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/sue-gough.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e23' ('WSJ — "The Pentagon Disinformation That Fueled America\'s UFO Mythology" (Schectman + Viswanatha, June 6, 2025)') wrap_path '/documents/wsj-pentagon-disinformation-ufo-mythology-2025' does not appear as a [`/documents/wsj-pentagon-disinformation-ufo-mythology-2025`] link in the node
+

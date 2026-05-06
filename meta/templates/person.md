@@ -22,16 +22,18 @@ created: {{today}}
 
 ## Background
 
-<!-- Prose only. 1–2 paragraphs summarizing who this person is and their
-     career. Structured career data belongs in Affiliations, not here.
-     Do not include tables in this section. -->
+<!-- Prose only. Length is whatever the archived primary sources support
+     for this person — let source density drive the length, not a target.
+     Structured career data belongs in Affiliations, not here. Do not
+     include tables in this section. -->
 
 ---
 
 ## {{topic_display_name}} Relevance
 
-<!-- One paragraph. Why is this person in this repository? What makes
-     their role/testimony/reporting/observation load-bearing? -->
+<!-- Why is this person in this repository? What makes their role /
+     testimony / reporting / observation load-bearing? Length is
+     whatever the source attests — let source density drive it. -->
 
 ---
 
@@ -198,10 +200,11 @@ created: {{today}}
 
 ## Credibility Notes
 
-<!-- Short analytical paragraphs. Observations grounded in primary
-     sources. For eyewitnesses, include an observational framing note.
-     Keep discrete findings at ~50 words per paragraph; promote longer
-     analyses to a finding node. -->
+<!-- Analytical paragraphs grounded in primary sources. For eyewitnesses,
+     include an observational framing note. When a discrete finding
+     spans 3+ entity nodes or otherwise meets the finding-node creation
+     threshold (see meta/schema.yaml::types.finding.creation_threshold),
+     promote it to a finding node. -->
 
 ---
 
