@@ -1133,62 +1133,118 @@ corpus categories revealed the schema-validator gap.
 
 ---
 
-### C22. Topic-specific schema field names contradict topic-neutrality claim
+### C22. Topic-customization mechanism + rename `uap_*` → `top_*`
 
 The toolkit's scope statement (``README.md`` + ``meta/conventions.md``
-"Scope") claims schema and structure are topic-neutral — "any
-investigation grounded in primary sources can use the same
-structure". But two schema field names are explicitly UAP-named:
+"Scope") claims schema and structure are topic-neutral. Two schema
+field names contradict that — ``uap_relevance`` (person artifact;
+renders as ``## UAP Relevance``) and ``uap_scope_activity``
+(location artifact; renders as ``## UAP-Scope Activity``). A fork-
+target on a different investigation inherits these UAP-named fields
+and section headers; the README's "Forking for a different topic"
+instructions don't cover the inline rename needed to make them fit
+the new topic.
 
-  - ``uap_relevance`` (research-artifact / person artifact;
-    renders as ``## UAP Relevance`` H2 section on person nodes)
-  - ``uap_scope_activity`` (research-artifact / location artifact;
-    renders as ``## UAP-Scope Activity`` H2 section on location
-    nodes)
+The fix isn't just rename. The toolkit lacks a topic-customization
+mechanism altogether — fork-targets currently inherit a hard-coded
+UAP topic identity in field names + rendered headers + (presumably)
+elsewhere as the instance grows. C22 scope is to establish the
+mechanism, then use it to rename ``uap_*`` → ``top_*`` as the first
+application.
 
-A fork-target on a different investigation (historical event,
-legal case, scientific controversy, etc.) inherits these UAP-
-named fields and section headers. Per the README's "Forking for
-a different topic" instructions, the fork keeps schema +
-structure as-is — but the inherited UAP-named fields don't fit
-the new topic's vocabulary. The fork is forced to either keep
-the names and live with topic-misnamed sections, or rename
-inline (which the README's fork instructions don't cover).
+**Mechanism.** A simple per-instance topic-info file at
+``meta/topic/topic.yaml`` (or similar):
 
-**Two resolution paths:**
+```yaml
+topic: uap                # lowercase identifier; goes into field-name prefixes
+display_name: UAP         # rendered text in section headers, prose, prompts
+```
 
-1. **Fully topic-neutral rename.** Rename schema fields to topic-
-   neutral equivalents (``uap_relevance`` → ``topic_relevance``;
-   ``uap_scope_activity`` → ``topic_scope_activity``) plus
-   rendered section headers. Touches schema, renderer, the
-   uap_scope_activity check (file + name), all related
-   docstrings, and existing artifacts (6 person + 1 location).
-   Path-of-record for "schema is topic-neutral" claim to actually
-   hold.
+(Open question on whether more fields belong — full_name, scope-
+description, etc. Start minimal; extend when a real need surfaces.)
 
-2. **Document the topic-specificity as fork-customization
-   points.** Explicitly call out in README's fork-target
-   instructions that the two field names + section headers are
-   topic-specific and need fork-target customization. Update
-   conventions.md scope statement to say structure is "mostly
-   topic-neutral; two field names assume the UAP topic and need
-   fork-target rename." Lower-effort honest-documentation
-   alternative; preserves the names as load-bearing for THIS
-   instance's investigation discipline.
+**Bootstrap flow.** First time any toolkit script runs in a fresh
+fork target:
 
-Path 1 is more principled. Path 2 is faster and acknowledges the
-two fields as semantically load-bearing for THIS instance.
+  1. Detect ``meta/topic/topic.yaml`` is missing.
+  2. Prompt the user in terminal:
+     - "What's the topic identifier (lowercase, used as field prefix
+       — e.g., ``uap``, ``warhol``, ``oklahoma-bombing``)?"
+     - "What's the display name (rendered in section headers — e.g.,
+       ``UAP``, ``Warhol Estate``, ``Oklahoma City Bombing``)?"
+  3. Write ``meta/topic/topic.yaml`` with the values.
+  4. Continue the requested command.
+
+Subsequent runs read the file silently.
+
+**Implementation surfaces:**
+
+  - **New file** ``meta/topic/topic.yaml`` (in this instance:
+    ``topic: uap`` + ``display_name: UAP``).
+  - **New helper** in ``scripts/lib/_common.py`` — ``load_topic()``
+    function that reads the file, prompts on missing, returns the
+    parsed dict. Cached per-process.
+  - **Schema rename** — ``uap_relevance`` → ``top_relevance``;
+    ``uap_scope_activity`` → ``top_scope_activity`` in ``schema.yaml``,
+    ``conditional_keys`` rules, ``required_keys`` invariants, all
+    schema comment cross-references.
+  - **Renderer change** — ``scripts/build-from-research.py`` reads
+    topic via ``load_topic()`` and substitutes ``display_name`` in
+    section headers (``## {display_name} Relevance``,
+    ``## {display_name}-Scope Activity``). Other prose surfaces that
+    today hardcode "UAP" or similar should also become topic-aware.
+  - **Validator check rename** — rename
+    ``scripts/checks/uap_scope_activity.py`` → ``top_scope_activity.py``
+    plus all internal references.
+  - **Existing artifact migration** — rename ``uap_relevance:`` →
+    ``top_relevance:`` across the 6 person artifacts; rename
+    ``uap_scope_activity:`` → ``top_scope_activity:`` on the 1
+    location artifact (skinwalker-ranch).
+  - **Existing rendered nodes** — regenerate via
+    ``build-from-research.py``. With ``display_name: UAP`` in this
+    instance's topic.yaml, the rendered output should be byte-
+    identical to current state (UAP-named headers stay UAP-named,
+    just driven by the config rather than hardcoded). Verify via
+    ``scripts/tests/pre-commit.sh`` clean pass.
+  - **Documentation** — update README's "Forking for a different
+    topic" section to describe the topic.yaml mechanism + bootstrap
+    flow. Reference from CLAUDE.md if any session-start
+    interaction matters (e.g., "if a script prompts for topic, the
+    fork is being initialized — fill in the values and re-run").
+
+**Audit pass for other UAP-hardcoded surfaces.** Beyond the two
+schema field names, grep the codebase for hardcoded UAP references
+that should also become topic-driven:
+
+  - Section headers in templates (``meta/templates/*.md``)
+  - Prompt files (``prompts/*.md``)
+  - Build-state placeholder fields in CLAUDE.md
+  - Any error-message strings in checks / scripts
+
+Audit findings determine which become topic-aware vs. which stay
+UAP-specific because they're load-bearing for THIS instance's
+investigation (the topic-overview document, the corpus addendum,
+etc.).
+
+**Open question on prefix.** ``top_*`` per the user's instruction
+(shorter); ``topic_*`` is the unambiguous alternative if the
+shortened form reads awkwardly in artifact YAML. Resolve at
+implementation time.
 
 **Priority.** Low. Not a correctness issue — toolkit operates
-correctly with UAP-named fields; the gap is stated philosophy vs
-schema reality. Worth resolving but not blocking.
+correctly with UAP-named fields. The gap is fork-readiness and
+philosophy-vs-reality alignment. Worth resolving when the toolkit
+is ready to support a second instance.
 
-**Scope.** Path 1: ~2-3 hour rename + artifact migration pass
-(coordinate as corpus grows). Path 2: ~30-min documentation
-update.
+**Scope.** Mechanism + rename + audit pass. Realistic estimate:
+~4-6 hours focused — small per-piece work multiplied by the
+~6-surface audit + verification that pre-commit stays 0/0
+through the migration. Single coherent session; don't fragment.
 
-Surfaced: C17 ``uap_scope_activity`` investigation — comparing
-the field name to the toolkit's "schema is topic-neutral" README
-claim revealed the contradiction.
+Surfaced: C17 ``uap_scope_activity`` investigation revealed the
+contradiction between the toolkit's stated philosophy and schema
+reality. User-directed reframe (this entry) expanded the scope
+from "rename the two fields" to "establish topic-customization
+mechanism, then rename".
 
 
