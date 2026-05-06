@@ -24,6 +24,29 @@ transcription) over ``pdftotext`` output. Binary-by-design sources
 (``image``/``video``/``audio`` per manifest format) warn rather than
 error — the validator can't substring-match against bytes that
 aren't text.
+
+Origin: created in direct response to
+``meta/toolkit-notes/pilot-failure-2026-04-17.md``. A pilot session
+built 10 nodes that all passed validate.py with 0 errors / 0 warnings;
+post-build fact-check then found significant fabrication — composite
+quotes (two non-adjacent source passages joined as one), widely-
+reported paraphrases marked as sworn testimony, mis-attributed
+claims. The structural validator caught zero of these: every
+fabrication was a syntactically valid block-quote with a structural
+verification block. The fix was a same-day mechanical backstop —
+extract every cited source to plaintext, normalize, substring-match
+the quote against the source. All three postmortem F1/F2/F3
+fabrication shapes fail this check. Shipped in the toolkit's initial
+commit (``af5f789``); migrated to per-module shape at commit
+``251c099``; ``extract_source_text`` and ``normalize_for_compare``
+later consolidated into ``lib._common.py`` (commit ``979207f`` and
+the 2026-05-01 lockstep refactor) for cross-script lockstep with
+prose_drift and description_token_drift. C18 confirmed byte-identity
+through both moves.
+
+The ``meta/conventions.md`` "Confirmation is a precondition for
+inclusion" principle rests on this check. Reference the postmortem
+before proposing to weaken or remove it.
 """
 
 import re

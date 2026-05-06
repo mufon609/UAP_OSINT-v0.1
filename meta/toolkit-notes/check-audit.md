@@ -64,7 +64,7 @@ Remaining 42 should land at ✅.
 | section_rules | ☐ | Walker — split / prose-only / quote-attribution |
 | status_archetype_kind | ☐ | Frontmatter enum validation |
 | table_cell_word_budget | ☐ | Soft cap warning |
-| verbatim_quotes | ☐ | Heavy — exercises `lib._common` source extraction |
+| verbatim_quotes | ✅ | Anchored directly to `pilot-failure-2026-04-17.md` postmortem. The toolkit's load-bearing backstop: 10 pilot nodes passed structural validation 0/0, post-build fact-check found composite quotes / paraphrases / mis-attributions; same-day fix was a mechanical substring-match against extracted sources. All three F1/F2/F3 fabrication shapes fail this check. The conventions.md "Confirmation is a precondition for inclusion" principle rests on this module. |
 
 ## ResearchContext (pre-parse) — 2 checks
 
