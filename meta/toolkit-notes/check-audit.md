@@ -87,7 +87,7 @@ Remaining 42 should land at ✅.
 | key_personnel | ☐ | leadership_class sub-grouping |
 | location_relationships | ☐ | Heterogeneous entity_path |
 | media_versioning | ☐ | derivation_of conditional |
-| naming_quirks | ☐ | resolution enum + observed/canonical |
+| naming_quirks | ✅ | Foundational from initial commit (`af5f789`) — schema + check + resolution enum complete from day one ("Leslie Keane → Leslie Kean" example was even in the original schema comment). New anchor pattern: STABLE CHECK / EVOLVING DISCIPLINE. The check's entry shape didn't change, but the contributor practices around `preserve-as-sic-in-quotes` evolved through F.1c (Lue/Luis), Cluster B (Bigalow, lockie Martin), and `13f9e91` codification of three-step OCR-scan discipline in conventions.md. |
 | org_relationships | ☐ | relationship_type enum |
 | ownership_timeline | ☐ | Period + use_status |
 | participants | ☐ | capacity enum dispatch |
