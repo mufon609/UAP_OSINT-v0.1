@@ -50,6 +50,11 @@ def check(ctx):
     """Yield error-level Issue for any entry whose archive_status is
     missing, out-of-range, inconsistent with status / path / wayback_date,
     or contradicted by wayback_skip + wayback_date both being set."""
+    # Schema-driven enum: ``archive_status_values`` declared on
+    # ``manifest_entry`` per schema.yaml. Direct subscript per the C21
+    # no-silent-fallbacks principle.
+    valid_archive_status = ctx.schema["manifest_entry"]["archive_status_values"]
+
     for entry in ctx.manifest_entries:
         if not isinstance(entry, dict):
             continue
@@ -64,11 +69,11 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
             continue
-        if not isinstance(arch, int) or arch not in (0, 1, 2, 3):
+        if arch not in valid_archive_status:
             yield Issue(
                 MANIFEST_REL, "error",
-                f"archive_status must be 0, 1, 2, or 3; got {arch!r} "
-                f"(URL: {url})",
+                f"archive_status must be one of {list(valid_archive_status)}; "
+                f"got {arch!r} (URL: {url})",
                 check_name=CHECK_NAME,
             )
             continue

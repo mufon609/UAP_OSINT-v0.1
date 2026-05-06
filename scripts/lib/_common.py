@@ -192,7 +192,7 @@ def parse_frontmatter(text):
 # Per BACKLOG C22: overview.md is the canonical topic-config record;
 # frontmatter carries `topic` (lowercase identifier) + `display_name`
 # (rendered text in section headers + agent prose). Cached per-process.
-_TOPIC_CONFIG_CACHE = None
+_topic_config_cache = None
 _OVERVIEW_PATH = REPO_ROOT / "meta" / "topic" / "overview.md"
 
 
@@ -208,9 +208,9 @@ def load_topic():
     error path — overview.md is required + validated by
     governance_files.
     """
-    global _TOPIC_CONFIG_CACHE
-    if _TOPIC_CONFIG_CACHE is not None:
-        return _TOPIC_CONFIG_CACHE
+    global _topic_config_cache
+    if _topic_config_cache is not None:
+        return _topic_config_cache
 
     if not _OVERVIEW_PATH.exists():
         raise FileNotFoundError(
@@ -235,11 +235,57 @@ def load_topic():
                 f"section-header substitution. See prompts/fork-init.md."
             )
 
-    _TOPIC_CONFIG_CACHE = {
+    _topic_config_cache = {
         "topic": fm["topic"],
         "display_name": fm["display_name"],
     }
-    return _TOPIC_CONFIG_CACHE
+    return _topic_config_cache
+
+
+# ---------------------------------------------------------------------------
+# Manifest helpers — Wayback URL detection + manifest I/O. Centralized so
+# manifest.py CLI and archive.py share one implementation rather than
+# carrying parallel copies of WAYBACK_URL_RE / wayback_url_date /
+# load_manifest / save_manifest. Schema's manifest_entry shape is the
+# contract; both consumers wrote and re-wrote the same logic before this.
+# ---------------------------------------------------------------------------
+
+# A cited URL may already BE a Wayback snapshot (e.g. dead primary source
+# whose only surviving copy is a Wayback capture). Auto-set archive_status
+# bit 1 and derive wayback_date from the 14-char timestamp.
+WAYBACK_URL_RE = re.compile(r"^https?://web\.archive\.org/web/(\d{8,14})/")
+
+
+def wayback_url_date(url):
+    """If URL is itself a Wayback snapshot, return its date (YYYY-MM-DD).
+    Otherwise return None."""
+    m = WAYBACK_URL_RE.match(url)
+    if not m:
+        return None
+    ts = m.group(1)[:8]  # first 8 chars = YYYYMMDD
+    return f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
+
+
+def load_manifest():
+    """Load sources/manifest.yaml. Returns the entries list, or [] if the
+    manifest is absent. Does NOT cache — callers needing repeated access
+    should hold the returned list."""
+    if not MANIFEST_PATH.exists():
+        return []
+    with open(MANIFEST_PATH) as f:
+        return yaml.safe_load(f) or []
+
+
+def save_manifest(entries):
+    """Write entries back to sources/manifest.yaml. Sorts by URL for
+    stable diffs; uses ``allow_unicode=True`` + ``width=9999`` so unicode
+    characters survive and YAML doesn't fold long values into multi-line
+    blocks."""
+    entries.sort(key=lambda e: e.get("url", ""))
+    MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
+    with open(MANIFEST_PATH, "w") as f:
+        yaml.dump(entries, f, sort_keys=False, default_flow_style=False,
+                  allow_unicode=True, width=9999)
 
 
 # ---------------------------------------------------------------------------

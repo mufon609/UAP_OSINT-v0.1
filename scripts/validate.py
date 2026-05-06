@@ -119,6 +119,7 @@ from checks import manifest_archive_status as ck_manifest_archive_status
 from checks import manifest_checksums as ck_manifest_checksums
 from checks import manifest_extraction_type as ck_manifest_extraction_type
 from checks import manifest_parse as ck_manifest_parse
+from checks import manifest_value_enums as ck_manifest_value_enums
 from checks import required_sections as ck_required_sections
 from checks import schema_version_compat as ck_schema_version_compat
 from checks import section_rules as ck_section_rules
@@ -257,11 +258,15 @@ def main():
     if not any(i.fatal for i in manifest_parse_issues):
         # Source-integrity backstop. A checksum mismatch means downstream
         # quote verifications may be validating against altered source
-        # material. All three manifest checks share BaseContext.manifest_entries
-        # from the single load above.
+        # material. The four manifest checks share BaseContext.manifest_entries
+        # from the single load above; together they cover the manifest's
+        # four closed enums (status / format / extraction_type /
+        # archive_status) plus content-byte integrity (sha256) and
+        # composite-indicator state consistency.
         all_issues.extend(ck_manifest_checksums.check(base_ctx))
         all_issues.extend(ck_manifest_archive_status.check(base_ctx))
         all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
+        all_issues.extend(ck_manifest_value_enums.check(base_ctx))
 
     # Governance-file validation. Every .md under meta/ carries id / type
     # / schema_version / created frontmatter; templates also have a

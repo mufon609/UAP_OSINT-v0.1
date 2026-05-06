@@ -29,22 +29,17 @@ import argparse
 import csv
 import re
 import sys
-from pathlib import Path
 
 import yaml
 
-# Path setup so the script can be invoked from any cwd.
-SCRIPT_DIR = Path(__file__).resolve().parent
-REPO_ROOT = SCRIPT_DIR.parent
-sys.path.insert(0, str(REPO_ROOT))
-from scripts.lib._common import (  # noqa: E402
-    REPO_ROOT as LIB_REPO_ROOT,
+from lib._common import (
+    REPO_ROOT,
     SOURCES_DIR,
     extract_source_text,
     manifest_format,
 )
 
-RESEARCH_DIR = LIB_REPO_ROOT / "meta" / "research"
+RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 
 
 # --- Location-form classification -------------------------------------------

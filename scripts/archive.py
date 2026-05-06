@@ -21,62 +21,31 @@ Usage:
 
 import argparse
 import json
-import re
 import sys
 import time
 import urllib.request
 import urllib.error
 import urllib.parse
-from pathlib import Path
 from datetime import datetime
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
-from lib._common import load_topic  # noqa: E402
-
-try:
-    import yaml
-except ImportError:
-    print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
-    sys.exit(1)
-
-REPO_ROOT = Path(__file__).resolve().parent.parent
-MANIFEST_PATH = REPO_ROOT / "sources" / "manifest.yaml"
+# Shared single sources of truth — same helpers manifest.py CLI uses, so
+# the two scripts can never drift on Wayback-URL detection / manifest
+# I/O semantics. ``yaml`` no longer imported directly here (load_manifest
+# / save_manifest both live behind lib).
+from lib._common import (  # noqa: E402
+    MANIFEST_PATH,
+    WAYBACK_URL_RE,
+    load_manifest,
+    load_topic,
+    save_manifest,
+    wayback_url_date,
+)
 
 CDX_API = "http://web.archive.org/cdx/search/cdx"
 SAVE_API = "https://web.archive.org/save/"
 WAYBACK_BASE = "https://web.archive.org/web/"
 
 USER_AGENT = f"{load_topic()['display_name']}-Research-Archiver/2.0"
-
-# A manifest URL may already BE a Wayback snapshot (e.g. cited primary
-# source is a dead site whose only surviving copy is a Wayback capture).
-# In that case the URL itself encodes the archival state — no CDX query,
-# no SPN submit. Timestamp (14 digits, YYYYMMDDhhmmss) → wayback_date.
-WAYBACK_URL_RE = re.compile(r"^https?://web\.archive\.org/web/(\d{8,14})/")
-
-
-def wayback_url_date(url):
-    """If URL is itself a Wayback snapshot, return its date (YYYY-MM-DD).
-    Otherwise return None."""
-    m = WAYBACK_URL_RE.match(url)
-    if not m:
-        return None
-    ts = m.group(1)[:8]  # first 8 chars = YYYYMMDD
-    return f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
-
-
-def load_manifest():
-    if not MANIFEST_PATH.exists():
-        return []
-    with open(MANIFEST_PATH) as f:
-        return yaml.safe_load(f) or []
-
-
-def save_manifest(entries):
-    entries.sort(key=lambda e: e.get("url", ""))
-    with open(MANIFEST_PATH, "w") as f:
-        yaml.dump(entries, f, sort_keys=False, default_flow_style=False,
-                  allow_unicode=True, width=9999)
 
 
 def check_wayback(url):

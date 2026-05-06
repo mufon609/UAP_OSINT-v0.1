@@ -26,51 +26,25 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
-# Shared single sources of truth. CONTENT_DIRS / FORMAT_BY_EXT /
-# format_from_path / compute_sha256 all come from lib._common — same
-# values consumed by validators and Phase II tooling.
+# Shared single sources of truth — same helpers archive.py CLI uses, so
+# the two scripts can never drift on Wayback-URL detection / manifest
+# I/O semantics.
 from lib._common import (  # noqa: E402
     MANIFEST_PATH,
     REPO_ROOT,
     SOURCES_DIR,
+    WAYBACK_URL_RE,
     compute_sha256,
     content_dirs,
     format_from_path,
+    load_manifest,
+    save_manifest,
+    wayback_url_date,
 )
 
 CONTENT_DIRS = content_dirs()
 
 URL_PATTERN = re.compile(r"https?://[^\s\|\)>`\]]+")
-
-# A cited URL may already BE a Wayback snapshot (e.g. dead primary source
-# whose only surviving copy is a Wayback capture). Auto-set archive_status
-# bit 1 and derive wayback_date from the 14-char timestamp.
-WAYBACK_URL_RE = re.compile(r"^https?://web\.archive\.org/web/(\d{8,14})/")
-
-
-def wayback_url_date(url):
-    """If URL is itself a Wayback snapshot, return its date (YYYY-MM-DD)."""
-    m = WAYBACK_URL_RE.match(url)
-    if not m:
-        return None
-    ts = m.group(1)[:8]
-    return f"{ts[:4]}-{ts[4:6]}-{ts[6:8]}"
-
-
-def load_manifest():
-    if not MANIFEST_PATH.exists():
-        return []
-    with open(MANIFEST_PATH) as f:
-        data = yaml.safe_load(f)
-    return data or []
-
-
-def save_manifest(entries):
-    entries.sort(key=lambda e: e.get("url", ""))
-    MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(MANIFEST_PATH, "w") as f:
-        yaml.dump(entries, f, sort_keys=False, default_flow_style=False,
-                  allow_unicode=True, width=9999)
 
 
 def scan_urls_in_nodes():

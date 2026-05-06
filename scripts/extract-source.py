@@ -28,8 +28,6 @@ manually (or via bounded agent tasks per prompts/build.md).
 """
 
 import argparse
-import html
-import re
 import subprocess
 import sys
 from pathlib import Path
@@ -40,33 +38,22 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+# Shared single sources of truth — same extraction layer the validators
+# use, so the Phase I scratch files contributors read match what the
+# verbatim-quote / prose-drift / description-drift checks see byte-for-
+# byte. The lib version handles PDF (with .txt-sibling fallback for
+# ocr-scan / extraction-lossy sources), HTML (with tag strip + entity
+# decode), TXT / MD / JSON. ``extract_pdf_metadata`` below stays local
+# because pdfinfo metadata capture has no lib equivalent — different
+# concern from text extraction.
+from lib._common import REPO_ROOT, SOURCES_DIR, extract_source_text  # noqa: E402
 
-# =============================================================================
-# Constants
-# =============================================================================
-
-REPO_ROOT = Path(__file__).resolve().parent.parent
-SOURCES_DIR = REPO_ROOT / "sources"
 SCRATCH_DIR = Path("/tmp")
 
 
 # =============================================================================
 # Extraction
 # =============================================================================
-
-def extract_pdf_text(source_file):
-    """Run pdftotext -layout; return stdout text or None on failure."""
-    try:
-        proc = subprocess.run(
-            ["pdftotext", "-layout", str(source_file), "-"],
-            capture_output=True, text=True, timeout=60,
-        )
-        if proc.returncode == 0:
-            return proc.stdout
-    except (FileNotFoundError, subprocess.TimeoutExpired):
-        pass
-    return None
-
 
 def extract_pdf_metadata(source_file):
     """Run pdfinfo; return dict of selected metadata fields, or {} on failure."""
@@ -92,52 +79,20 @@ def extract_pdf_metadata(source_file):
     return meta
 
 
-# HTML tag / entity handling: same pattern as scripts/validate.py's
-# _clean_html_for_text. Flat-scripts-pattern duplication rather than a shared
-# lib. Inline tags stripped with empty replacement (mid-word interleave
-# collapses — e.g., `Army<span>’</span>s` → `Army’s`); block / unknown tags
-# stripped with whitespace; entities decoded last.
-_HTML_INLINE_TAGS = (
-    r"span|b|i|em|strong|u|a|small|code|sub|sup|cite|q|mark|del|ins|"
-    r"abbr|dfn|samp|kbd|var|bdi|bdo|s|wbr|ruby|rt|rp|time|data|meter|"
-    r"progress|output|picture|tt|font"
-)
-
-
-def _clean_html_for_text(raw):
-    raw = re.sub(r"<script[^>]*>.*?</script>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
-    raw = re.sub(r"<style[^>]*>.*?</style>", " ", raw, flags=re.DOTALL | re.IGNORECASE)
-    raw = re.sub(rf"</?(?:{_HTML_INLINE_TAGS})(?:\s[^>]*)?>", "", raw, flags=re.IGNORECASE)
-    raw = re.sub(r"<[^>]+>", " ", raw)
-    raw = html.unescape(raw)
-    return raw
-
-
-def extract_text_file(source_file):
-    """Read a text file directly. For HTML / HTM, additionally strip tags
-    and decode entities so downstream Phase I scratch files contain the
-    rendered text rather than raw markup."""
-    try:
-        raw = source_file.read_text(encoding="utf-8", errors="replace")
-    except OSError:
-        return None
-    ext = source_file.suffix.lower()
-    if ext in (".html", ".htm"):
-        return _clean_html_for_text(raw)
-    return raw
-
-
 def extract(source_file):
     """Dispatch by extension. Returns (text, metadata) tuple.
-    metadata is {} for non-PDF sources."""
-    ext = source_file.suffix.lower()
-    if ext == ".pdf":
-        text = extract_pdf_text(source_file)
-        meta = extract_pdf_metadata(source_file) if text else {}
-        return text, meta
-    if ext in (".html", ".htm", ".txt", ".md"):
-        return extract_text_file(source_file), {}
-    return None, {}
+
+    Text extraction delegates to ``lib._common.extract_source_text`` so
+    Phase I scratch files reflect what the validator sees (including
+    ``.txt`` sibling preference for ocr-scan / extraction-lossy PDFs).
+    Metadata is captured only for PDFs via ``extract_pdf_metadata``;
+    ``{}`` for other formats."""
+    text = extract_source_text(source_file)
+    if source_file.suffix.lower() == ".pdf" and text is not None:
+        meta = extract_pdf_metadata(source_file)
+    else:
+        meta = {}
+    return text, meta
 
 
 # =============================================================================

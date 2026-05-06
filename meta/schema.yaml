@@ -385,11 +385,10 @@ types:
       - Provenance
       - Key Passages
       - Associated Nodes
-    optional_sections:
-      - Media Versioning
-      # Required when derivation_of is set — explains what changed between
-      # the parent and this derivative. Omit when this is the canonical /
-      # original.
+    # Media Versioning is conditionally required (per below) when
+    # derivation_of is set; omitted when this is the canonical /
+    # original. No separate ``optional_sections`` declaration — the
+    # conditionally_required entry is the authoritative gate.
     conditionally_required:
       "Media Versioning": "derivation_of is set"
     section_rules:

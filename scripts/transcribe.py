@@ -16,10 +16,10 @@ import argparse
 import json
 import re
 import sys
-from pathlib import Path
 from datetime import date
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+from lib._common import REPO_ROOT
+
 TRANSCRIPTS_DIR = REPO_ROOT / "sources" / "transcripts"
 
 
