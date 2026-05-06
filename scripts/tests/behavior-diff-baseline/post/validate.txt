@@ -1,0 +1,1262 @@
+================================================================
+ Validation Report
+================================================================
+
+  Nodes scanned: 29
+  Errors:        0
+  Warnings:      0
+  Broken links:  341 unbuilt-stub targets (backlog)
+
+----------------------------------------------------------------
+ Broken Link Registry
+----------------------------------------------------------------
+
+  /documents/1971-nuclear-war-risk-reduction-agreement (1 ref)
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /documents/2017-nyt-tic-tac (1 ref)
+    <- transcripts/2023-07-26-house-graves.md
+
+  /documents/aaro-fy24-consolidated-annual-report-uap-2024 (1 ref)
+    <- organizations/aaro.md
+
+  /documents/aaro-historical-record-report-vol-i (2 refs)
+    <- organizations/aaro.md
+    <- organizations/ttsa.md
+
+  /documents/aaro-invitations-to-grusch-2024 (1 ref)
+    <- people/david-grusch.md
+
+  /documents/aaro-ornl-synopsis-metallic-specimen-2024 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/aaro-supplement-to-ornl-analysis-2024 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/army-ttsa-crada-19-15-nete-2019 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/blackvault-foia-24-f-0894-aaro-vol-i-rollout-emails (1 ref)
+    <- organizations/aaro.md
+
+  /documents/blackvault-sancorp-23-f-1114-aaro-pws (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /documents/burlison-grusch-advisor-announcement-2025 (1 ref)
+    <- people/david-grusch.md
+
+  /documents/debrief-grusch-2023 (1 ref)
+    <- people/david-grusch.md
+
+  /documents/dird-puthoff-vacuum-metric-engineering-2010 (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /documents/executive-order-13526 (1 ref)
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /documents/federal-acquisition-regulations (1 ref)
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /documents/foia-23-f-0906-sancorp-ipmo-pws (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /documents/grusch-bio-2023 (1 ref)
+    <- people/david-grusch.md
+
+  /documents/grusch-dopsr-request-2023 (1 ref)
+    <- people/david-grusch.md
+
+  /documents/grusch-ppd-19-procedural-filing (1 ref)
+    <- people/david-grusch.md
+
+  /documents/hicks-aaro-establishment-memo-2022 (1 ref)
+    <- organizations/aaro.md
+
+  /documents/hunt-for-the-skinwalker-2005 (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /documents/icd-120 (1 ref)
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /documents/insa-naming-convention-2022 (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /documents/ipmo-notre-dame-memo-2022 (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /documents/nyt-glowing-auras-pentagon-ufo-2017 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/odni-preliminary-assessment-2021 (2 refs)
+    <- organizations/oni.md
+    <- organizations/uaptf.md
+
+  /documents/oversight-house-uap-request-letter-luna-2026 (1 ref)
+    <- organizations/aaro.md
+
+  /documents/ppd-19 (3 refs)
+    <- documents/written-testimony-grusch-2023.md
+    <- people/david-grusch.md
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /documents/sec-ttsa-1a-partii-2017 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/sec-ttsa-1k-2021 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/sec-ttsa-1k-2024 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/sec-ttsa-253g2-reg-a-termination-2021 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/skinwalkers-at-the-pentagon-2021 (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /documents/thedebrief-mellon-aaro-report-flawed-2024 (1 ref)
+    <- organizations/aaro.md
+
+  /documents/ttsa-puthoff-davis-ornl-analysis-memo-2025 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/uap-scg-2019 (1 ref)
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /documents/wikileaks-podesta-email-3099-2016 (1 ref)
+    <- organizations/ttsa.md
+
+  /documents/written-testimony-shellenberger-2024 (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /documents/wsj-pentagon-disinformation-ufo-mythology-2025 (1 ref)
+    <- organizations/aaro.md
+
+  /events/ttsa-launch-2017-10-11 (1 ref)
+    <- organizations/ttsa.md
+
+  /locations/encinitas-california (1 ref)
+    <- organizations/ttsa.md
+
+  /locations/vandenberg-afb (1 ref)
+    <- transcripts/2023-07-26-house-graves.md
+
+  /media/gimbal-declassified (1 ref)
+    <- transcripts/2023-07-26-house-graves.md
+
+  /media/go-fast (1 ref)
+    <- people/ryan-graves.md
+
+  /news/douglas-johnson-uapda-pentagon-rewrite-20240724 (1 ref)
+    <- documents/pentagon-uapda-revisions-2023-11.md
+
+  /organizations/318-cyber-operations-group (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/aaroexec (1 ref)
+    <- organizations/aaro.md
+
+  /organizations/aatip (3 refs)
+    <- organizations/ttsa.md
+    <- organizations/uaptf.md
+    <- people/alex-dietrich.md
+
+  /organizations/aawsap (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /organizations/adamantium-real-estate (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /organizations/aiaa (3 refs)
+    <- documents/written-testimony-graves-2023.md
+    <- people/ryan-graves.md
+    <- transcripts/2023-07-26-house-graves.md
+
+  /organizations/aic (2 refs)
+    <- organizations/ipmo.md
+    <- organizations/ousd-is.md
+
+  /organizations/altamira-technologies-corporation (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/american-alchemy (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/american-veterans-center (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/americans-for-safe-aerospace (4 refs)
+    <- documents/written-testimony-graves-2023.md
+    <- people/alex-dietrich.md
+    <- people/ryan-graves.md
+    <- transcripts/2023-07-26-house-graves.md
+
+  /organizations/aoimsg (2 refs)
+    <- organizations/aaro.md
+    <- organizations/uaptf.md
+
+  /organizations/apus (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/auburn-seminary (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/baass (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /organizations/battelle-memorial-institute (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/bigelow-aerospace (3 refs)
+    <- locations/skinwalker-ranch.md
+    <- organizations/ttsa.md
+    <- people/david-grusch.md
+
+  /organizations/blue-sky-innovators (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/bluevoyant (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/boeing (1 ref)
+    <- transcripts/2023-07-26-house-graves.md
+
+  /organizations/c-adi (1 ref)
+    <- organizations/ousd-is.md
+
+  /organizations/c-uas-task-force (1 ref)
+    <- organizations/aaro.md
+
+  /organizations/c5-capital (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/calling-all-beings (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/carrier-airwing-eleven (4 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- events/2004-nimitz-encounter.md
+    <- people/david-fravor.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /organizations/cbs-news (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/ccdc-ground-vehicle-systems-center (1 ref)
+    <- organizations/ttsa.md
+
+  /organizations/cdao (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/cia (3 refs)
+    <- organizations/ttsa.md
+    <- people/ronald-moultrie.md
+    <- people/sean-kirkpatrick.md
+
+  /organizations/comprehensive-approach-solutions (1 ref)
+    <- organizations/arlo-solutions.md
+
+  /organizations/cp-wmd (3 refs)
+    <- organizations/aaro.md
+    <- organizations/ipmo.md
+    <- organizations/ousd-is.md
+
+  /organizations/cu-boulder (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/da-m (1 ref)
+    <- organizations/aaro.md
+
+  /organizations/dcaa (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/dcsa (2 refs)
+    <- organizations/ousd-is.md
+    <- people/ronald-moultrie.md
+
+  /organizations/defense-language-institute (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/department-of-justice (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/department-of-the-army (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/department-of-the-navy (2 refs)
+    <- documents/eo-14347-restoring-department-of-war.md
+    <- organizations/sancorp-consulting.md
+
+  /organizations/department-of-war-historical (1 ref)
+    <- documents/eo-14347-restoring-department-of-war.md
+
+  /organizations/dhs (1 ref)
+    <- organizations/aaro.md
+
+  /organizations/dia (5 refs)
+    <- locations/skinwalker-ranch.md
+    <- organizations/aaro.md
+    <- organizations/ousd-is.md
+    <- people/ronald-moultrie.md
+    <- people/sean-kirkpatrick.md
+
+  /organizations/disclosure-foundation (1 ref)
+    <- organizations/aaro.md
+
+  /organizations/dmdpo (3 refs)
+    <- organizations/aaro.md
+    <- organizations/ipmo.md
+    <- organizations/ousd-is.md
+
+  /organizations/dod (17 refs)
+    <- documents/eo-14347-restoring-department-of-war.md
+    <- documents/written-testimony-fravor-2023.md
+    <- documents/written-testimony-kirkpatrick-2023.md
+    <- events/2004-nimitz-encounter.md
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- media/flir1-video.md
+    <- organizations/aaro.md
+    <- organizations/arlo-solutions.md
+    <- organizations/ipmo.md
+    <- organizations/ousd-is.md
+    <- organizations/sancorp-consulting.md
+    <- people/david-fravor.md
+    <- people/david-grusch.md
+    <- people/ronald-moultrie.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /organizations/doe (3 refs)
+    <- documents/written-testimony-kirkpatrick-2023.md
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /organizations/earthtech-international (1 ref)
+    <- organizations/ttsa.md
+
+  /organizations/elara-nova-the-space-consultancy (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /organizations/enigma-labs (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/faa (1 ref)
+    <- documents/written-testimony-graves-2023.md
+
+  /organizations/g2k-labs (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/gao (2 refs)
+    <- organizations/aaro.md
+    <- organizations/sancorp-consulting.md
+
+  /organizations/gravity-holdings-llc (1 ref)
+    <- organizations/ttsa.md
+
+  /organizations/gsa (2 refs)
+    <- organizations/arlo-solutions.md
+    <- organizations/sancorp-consulting.md
+
+  /organizations/gtri (1 ref)
+    <- organizations/aaro.md
+
+  /organizations/gwu (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/gwu-national-security-archive (1 ref)
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /organizations/harvard-kennedy-school (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/hasc (2 refs)
+    <- people/david-grusch.md
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /organizations/house-uap-caucus (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/hpsci (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/icapital-network (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/icig (3 refs)
+    <- documents/written-testimony-grusch-2023.md
+    <- people/david-grusch.md
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /organizations/insa (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/iob (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/isoo (1 ref)
+    <- documents/pentagon-uapda-revisions-2023-11.md
+
+  /organizations/itc-global-advisors (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/joe-rogan-experience (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/joint-staff (2 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /organizations/le-oversight-compliance-directorate (3 refs)
+    <- organizations/aaro.md
+    <- organizations/ipmo.md
+    <- organizations/ousd-is.md
+
+  /organizations/legacy-flight-academy (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/leolabs (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/linda-hall-library (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/lockheed-martin (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/lockheed-martin-skunk-works (1 ref)
+    <- organizations/ttsa.md
+
+  /organizations/love-movie-llc (1 ref)
+    <- organizations/ttsa.md
+
+  /organizations/mda (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/merged-podcast (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/mitre (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/nara (1 ref)
+    <- documents/pentagon-uapda-revisions-2023-11.md
+
+  /organizations/nas-oceana (1 ref)
+    <- transcripts/2023-07-26-house-graves.md
+
+  /organizations/nasa (5 refs)
+    <- documents/written-testimony-kirkpatrick-2023.md
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- organizations/aaro.md
+    <- people/alex-dietrich.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /organizations/national-cryptologic-foundation (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/national-intelligence-university (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/newsnation (2 refs)
+    <- people/david-grusch.md
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /organizations/nga (5 refs)
+    <- documents/written-testimony-grusch-2023.md
+    <- organizations/ousd-is.md
+    <- people/david-grusch.md
+    <- people/ronald-moultrie.md
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /organizations/nia (2 refs)
+    <- organizations/oni.md
+    <- organizations/uaptf.md
+
+  /organizations/nids (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /organizations/nightwing (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/noaa (2 refs)
+    <- documents/written-testimony-graves-2023.md
+    <- people/ryan-graves.md
+
+  /organizations/nonlinear-solutions (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /organizations/norad (1 ref)
+    <- organizations/aaro.md
+
+  /organizations/northcom (3 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- organizations/aaro.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /organizations/nro (6 refs)
+    <- documents/written-testimony-grusch-2023.md
+    <- organizations/ousd-is.md
+    <- people/david-grusch.md
+    <- people/ronald-moultrie.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /organizations/nsa (3 refs)
+    <- organizations/aaro.md
+    <- organizations/ousd-is.md
+    <- people/ronald-moultrie.md
+
+  /organizations/nsc (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /organizations/nssa-moorman-center (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /organizations/oasd-hdha (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/oasd-st (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/oceanus-security-strategies (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/odni (9 refs)
+    <- documents/pentagon-uapda-revisions-2023-11.md
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- organizations/aaro.md
+    <- organizations/oni.md
+    <- organizations/ousd-is.md
+    <- organizations/uaptf.md
+    <- people/ronald-moultrie.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /organizations/omb (1 ref)
+    <- documents/eo-14347-restoring-department-of-war.md
+
+  /organizations/ornl (2 refs)
+    <- organizations/ttsa.md
+    <- people/sean-kirkpatrick.md
+
+  /organizations/osd (4 refs)
+    <- documents/eo-14347-restoring-department-of-war.md
+    <- organizations/sancorp-consulting.md
+    <- organizations/ttsa.md
+    <- organizations/uaptf.md
+
+  /organizations/osd-red-team (3 refs)
+    <- organizations/aaro.md
+    <- organizations/ipmo.md
+    <- organizations/ousd-is.md
+
+  /organizations/ousd-is-exdir (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/ousd-is-sasp (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/oversight-task-force-declassification (1 ref)
+    <- organizations/aaro.md
+
+  /organizations/pallas (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/piab (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/premier-enterprise-solutions (3 refs)
+    <- organizations/arlo-solutions.md
+    <- organizations/ipmo.md
+    <- organizations/sancorp-consulting.md
+
+  /organizations/resolute-consulting (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/riwi-corp (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/ron-moultrie-consulting (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/sasc (5 refs)
+    <- documents/written-testimony-kirkpatrick-2023.md
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- people/david-grusch.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /organizations/sba-richmond-district-office (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/scpo (3 refs)
+    <- organizations/aaro.md
+    <- organizations/ipmo.md
+    <- organizations/ousd-is.md
+
+  /organizations/sequoia-inc (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/sol-foundation (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/somewhere-in-the-skies (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/state-dept-gec (1 ref)
+    <- organizations/ipmo.md
+
+  /organizations/syracuse-university (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/the-better-angels-society (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/the-debrief (2 refs)
+    <- people/alex-dietrich.md
+    <- people/david-grusch.md
+
+  /organizations/to-the-stars-inc (1 ref)
+    <- organizations/ttsa.md
+
+  /organizations/uap-excom (1 ref)
+    <- organizations/uaptf.md
+
+  /organizations/uga (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /organizations/umd (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/umd-school-of-public-policy (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/us-air-force (5 refs)
+    <- documents/written-testimony-grusch-2023.md
+    <- people/david-grusch.md
+    <- people/ronald-moultrie.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-07-26-house-grusch.md
+
+  /organizations/us-air-force-academy (1 ref)
+    <- people/david-grusch.md
+
+  /organizations/us-army (1 ref)
+    <- organizations/ttsa.md
+
+  /organizations/us-navy (13 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- documents/written-testimony-graves-2023.md
+    <- media/flir1-video.md
+    <- organizations/aaro.md
+    <- organizations/oni.md
+    <- organizations/uaptf.md
+    <- people/alex-dietrich.md
+    <- people/david-fravor.md
+    <- people/ronald-moultrie.md
+    <- people/ryan-graves.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-07-26-house-fravor.md
+    <- transcripts/2023-07-26-house-graves.md
+
+  /organizations/usna (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/uss-nimitz (6 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- events/2004-nimitz-encounter.md
+    <- media/flir1-video.md
+    <- people/alex-dietrich.md
+    <- people/david-fravor.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /organizations/uss-princeton (5 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- events/2004-nimitz-encounter.md
+    <- people/alex-dietrich.md
+    <- people/david-fravor.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /organizations/ussouthcom (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/usspacecom (3 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /organizations/usstratcom (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /organizations/vfa-11 (3 refs)
+    <- documents/written-testimony-graves-2023.md
+    <- people/ryan-graves.md
+    <- transcripts/2023-07-26-house-graves.md
+
+  /organizations/vfa-41 (5 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- events/2004-nimitz-encounter.md
+    <- people/alex-dietrich.md
+    <- people/david-fravor.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /organizations/vibrant-emotional-health (1 ref)
+    <- people/ronald-moultrie.md
+
+  /organizations/vmfa-232 (2 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- events/2004-nimitz-encounter.md
+
+  /organizations/westexec-advisors (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /organizations/when-it-mattered (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/whs (4 refs)
+    <- organizations/aaro.md
+    <- organizations/arlo-solutions.md
+    <- organizations/ipmo.md
+    <- organizations/sancorp-consulting.md
+
+  /organizations/whs-acquisition-directorate (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/whs-eosd (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /organizations/wings-for-val (1 ref)
+    <- people/alex-dietrich.md
+
+  /organizations/wright-patterson-afb (1 ref)
+    <- organizations/ttsa.md
+
+  /organizations/yahya-technologies-y-tech (1 ref)
+    <- people/ronald-moultrie.md
+
+  /people/alexandria-ocasio-cortez (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/andrew-ogles (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/andy-biggs (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/anna-paulina-luna (3 refs)
+    <- events/2023-07-26-house-uap-hearing.md
+    <- organizations/aaro.md
+    <- people/david-grusch.md
+
+  /people/arlene-wube (1 ref)
+    <- organizations/arlo-solutions.md
+
+  /people/aruna-viswanatha (1 ref)
+    <- organizations/aaro.md
+
+  /people/avi-loeb (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /people/avril-haines (1 ref)
+    <- organizations/aaro.md
+
+  /people/becky-zimmerman (1 ref)
+    <- organizations/aaro.md
+
+  /people/bill-whitaker (1 ref)
+    <- people/alex-dietrich.md
+
+  /people/bradley-hansell (2 refs)
+    <- organizations/ousd-is.md
+    <- people/ronald-moultrie.md
+
+  /people/brandi-vincent (1 ref)
+    <- organizations/aaro.md
+
+  /people/brandon-fugal (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /people/chad-underwood (1 ref)
+    <- people/alex-dietrich.md
+
+  /people/chitra-ragavan (1 ref)
+    <- people/alex-dietrich.md
+
+  /people/chris-williams (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /people/christina-pryka (1 ref)
+    <- organizations/arlo-solutions.md
+
+  /people/christopher-meagher (1 ref)
+    <- organizations/aaro.md
+
+  /people/christopher-mellon (7 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- organizations/aaro.md
+    <- organizations/ttsa.md
+    <- people/david-fravor.md
+    <- people/david-grusch.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /people/chuck-schumer (1 ref)
+    <- people/david-grusch.md
+
+  /people/colm-kelleher (2 refs)
+    <- locations/skinwalker-ranch.md
+    <- organizations/ttsa.md
+
+  /people/daniel-kimmage (1 ref)
+    <- organizations/ipmo.md
+
+  /people/david-abba (2 refs)
+    <- people/david-grusch.md
+    <- people/sean-kirkpatrick.md
+
+  /people/david-kozik (2 refs)
+    <- organizations/aaro.md
+    <- organizations/ousd-is.md
+
+  /people/david-m-taylor (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/david-norquist (4 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- organizations/aaro.md
+    <- organizations/uaptf.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /people/david-spergel (2 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /people/deitra-trotter (2 refs)
+    <- organizations/ipmo.md
+    <- organizations/ousd-is.md
+
+  /people/douglas-johnson (1 ref)
+    <- documents/pentagon-uapda-revisions-2023-11.md
+
+  /people/dustin-gard-weiss (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/dustin-slaughter (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /people/edith-myers (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /people/eric-burlison (2 refs)
+    <- events/2023-07-26-house-uap-hearing.md
+    <- people/david-grusch.md
+
+  /people/eric-davis (1 ref)
+    <- organizations/ttsa.md
+
+  /people/ezra-cohen-watnick (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/garry-nolan (2 refs)
+    <- organizations/ttsa.md
+    <- people/david-grusch.md
+
+  /people/garth-myers (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /people/george-knapp (2 refs)
+    <- events/2023-07-26-house-uap-hearing.md
+    <- locations/skinwalker-ranch.md
+
+  /people/george-washington (1 ref)
+    <- documents/eo-14347-restoring-department-of-war.md
+
+  /people/glen-vanherck (3 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /people/glenn-grothman (2 refs)
+    <- events/2023-07-26-house-uap-hearing.md
+    <- organizations/aaro.md
+
+  /people/gwen-sherman (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /people/hal-puthoff (1 ref)
+    <- organizations/ttsa.md
+
+  /people/harry-reid (3 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- people/david-grusch.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /people/heather-king (1 ref)
+    <- organizations/aaro.md
+
+  /people/helene-cooper (3 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- organizations/ttsa.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /people/j-christopher-mizer (1 ref)
+    <- organizations/ttsa.md
+
+  /people/jacky-rosen (3 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /people/jacqueline-verrine (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /people/jake-laturner (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/james-clapper (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/james-comer (2 refs)
+    <- events/2023-07-26-house-uap-hearing.md
+    <- organizations/aaro.md
+
+  /people/james-holly (3 refs)
+    <- organizations/ipmo.md
+    <- organizations/ousd-is.md
+    <- organizations/sancorp-consulting.md
+
+  /people/james-lacatski (2 refs)
+    <- locations/skinwalker-ranch.md
+    <- people/david-grusch.md
+
+  /people/jamie-raskin (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/jared-moskowitz (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/jasmine-crockett (1 ref)
+    <- organizations/aaro.md
+
+  /people/jay-stratton (7 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- events/2004-nimitz-encounter.md
+    <- organizations/oni.md
+    <- organizations/uaptf.md
+    <- people/david-fravor.md
+    <- people/david-grusch.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /people/jeremy-corbell (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/jesse-michels (1 ref)
+    <- people/david-grusch.md
+
+  /people/jim-semivan (1 ref)
+    <- organizations/ttsa.md
+
+  /people/joe-rogan (1 ref)
+    <- people/david-grusch.md
+
+  /people/joel-schectman (1 ref)
+    <- organizations/aaro.md
+
+  /people/john-alexander (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /people/john-podesta (1 ref)
+    <- organizations/ttsa.md
+
+  /people/john-shaw (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /people/jonathan-kosloski (2 refs)
+    <- organizations/aaro.md
+    <- people/sean-kirkpatrick.md
+
+  /people/joni-ernst (4 refs)
+    <- documents/written-testimony-kirkpatrick-2023.md
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /people/jordan-flowers (1 ref)
+    <- organizations/aaro.md
+
+  /people/joseph-cannon (1 ref)
+    <- organizations/ttsa.md
+
+  /people/joseph-kernan (2 refs)
+    <- organizations/ousd-is.md
+    <- people/ronald-moultrie.md
+
+  /people/justin-overbaugh (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/kari-bingen (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/kari-delonge (1 ref)
+    <- organizations/ttsa.md
+
+  /people/karl-nell (2 refs)
+    <- organizations/uaptf.md
+    <- people/david-grusch.md
+
+  /people/kathleen-hicks (5 refs)
+    <- organizations/aaro.md
+    <- organizations/ousd-is.md
+    <- people/david-grusch.md
+    <- people/ronald-moultrie.md
+    <- people/sean-kirkpatrick.md
+
+  /people/kelly-armstrong (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/kenneth-myers (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /people/kirsten-gillibrand (6 refs)
+    <- documents/written-testimony-kirkpatrick-2023.md
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- organizations/aaro.md
+    <- people/david-grusch.md
+    <- people/sean-kirkpatrick.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /people/lane-bodian (1 ref)
+    <- organizations/aaro.md
+
+  /people/leslie-kean (4 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- organizations/ttsa.md
+    <- people/david-grusch.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /people/lloyd-austin (3 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- people/ronald-moultrie.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /people/lonye-ford (1 ref)
+    <- organizations/arlo-solutions.md
+
+  /people/luis-elizondo (7 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- events/2004-nimitz-encounter.md
+    <- organizations/aaro.md
+    <- organizations/ttsa.md
+    <- people/david-fravor.md
+    <- people/david-grusch.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /people/marcel-lettre (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/marco-rubio (3 refs)
+    <- events/2023-04-19-sasc-aaro-hearing.md
+    <- people/david-grusch.md
+    <- transcripts/2023-04-19-sasc-kirkpatrick.md
+
+  /people/marik-von-rennenkampff (1 ref)
+    <- documents/pentagon-uapda-revisions-2023-11.md
+
+  /people/matt-gaetz (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/maxwell-frost (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/michael-gold (1 ref)
+    <- organizations/aaro.md
+
+  /people/michael-shellenberger (2 refs)
+    <- locations/skinwalker-ranch.md
+    <- organizations/aaro.md
+
+  /people/michael-vickers (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/mike-rounds (1 ref)
+    <- people/david-grusch.md
+
+  /people/milancy-harris (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/nadia-drake (1 ref)
+    <- people/alex-dietrich.md
+
+  /people/nancy-mace (2 refs)
+    <- events/2023-07-26-house-uap-hearing.md
+    <- organizations/aaro.md
+
+  /people/nick-langworthy (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/pamela-andrews (1 ref)
+    <- organizations/aaro.md
+
+  /people/paul-gosar (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/paul-nakasone (1 ref)
+    <- people/ronald-moultrie.md
+
+  /people/pete-hegseth (1 ref)
+    <- organizations/aaro.md
+
+  /people/pete-sessions (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/peter-bergen (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /people/peter-skafish (1 ref)
+    <- people/david-grusch.md
+
+  /people/rainie-wells (1 ref)
+    <- organizations/sancorp-consulting.md
+
+  /people/ralph-blumenthal (4 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- organizations/ttsa.md
+    <- people/david-grusch.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /people/rheanne-wirkkala (1 ref)
+    <- organizations/aaro.md
+
+  /people/robert-bigelow (2 refs)
+    <- locations/skinwalker-ranch.md
+    <- people/david-grusch.md
+
+  /people/robert-garcia (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/ross-coulthart (1 ref)
+    <- people/david-grusch.md
+
+  /people/ruben-gallego (1 ref)
+    <- people/ronald-moultrie.md
+
+  /people/ryan-sprague (1 ref)
+    <- people/alex-dietrich.md
+
+  /people/scott-berrier (1 ref)
+    <- people/ronald-moultrie.md
+
+  /people/scott-bray (1 ref)
+    <- organizations/oni.md
+
+  /people/scott-perry (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/sherman (1 ref)
+    <- organizations/aaro.md
+
+  /people/spedero (1 ref)
+    <- organizations/aaro.md
+
+  /people/stan-spry (1 ref)
+    <- organizations/ttsa.md
+
+  /people/stephen-cambone (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/steve-justice (4 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- organizations/ttsa.md
+    <- people/david-fravor.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /people/sue-gough (4 refs)
+    <- organizations/aaro.md
+    <- organizations/oni.md
+    <- people/ronald-moultrie.md
+    <- people/sean-kirkpatrick.md
+
+  /people/terry-sherman (1 ref)
+    <- locations/skinwalker-ranch.md
+
+  /people/tim-burchett (2 refs)
+    <- events/2023-07-26-house-uap-hearing.md
+    <- people/david-grusch.md
+
+  /people/tim-gallaudet (3 refs)
+    <- documents/written-testimony-graves-2023.md
+    <- organizations/aaro.md
+    <- people/ryan-graves.md
+
+  /people/tim-phillips (2 refs)
+    <- organizations/aaro.md
+    <- people/sean-kirkpatrick.md
+
+  /people/todd-lowery (1 ref)
+    <- organizations/ousd-is.md
+
+  /people/tom-delonge (4 refs)
+    <- documents/written-testimony-fravor-2023.md
+    <- organizations/ttsa.md
+    <- people/david-fravor.md
+    <- transcripts/2023-07-26-house-fravor.md
+
+  /people/tom-gibbs (1 ref)
+    <- people/alex-dietrich.md
+
+  /people/tony-frazier (1 ref)
+    <- people/ronald-moultrie.md
+
+  /people/travis-taylor (2 refs)
+    <- organizations/oni.md
+    <- organizations/uaptf.md
+
+  /people/trent-kelly (1 ref)
+    <- people/ronald-moultrie.md
+
+  /people/virginia-foxx (1 ref)
+    <- events/2023-07-26-house-uap-hearing.md
+
+  /people/william-mccasland (1 ref)
+    <- organizations/ttsa.md
+
+  /people/willie-shelton (1 ref)
+    <- people/sean-kirkpatrick.md
+
+  /transcripts/american-alchemy-grusch-72hrs-2023 (1 ref)
+    <- people/david-grusch.md
+
+  /transcripts/american-veterans-center-dietrich-2024 (1 ref)
+    <- people/alex-dietrich.md
+
+  /transcripts/calling-all-beings-104-dietrich-2024 (1 ref)
+    <- people/alex-dietrich.md
+
+  /transcripts/cbs-60min-uap-2021 (1 ref)
+    <- people/alex-dietrich.md
+
+  /transcripts/grusch-sol-2023-closing (1 ref)
+    <- people/david-grusch.md
+
+  /transcripts/jre-2065-grusch-2023 (1 ref)
+    <- people/david-grusch.md
+
+  /transcripts/linda-hall-uap-2025 (1 ref)
+    <- people/alex-dietrich.md
+
+  /transcripts/merged-podcast-014-dietrich-2023 (1 ref)
+    <- people/alex-dietrich.md
+
+  /transcripts/newsnation-coulthart-grusch-2023 (1 ref)
+    <- people/david-grusch.md
+
+  /transcripts/somewhere-in-the-skies-dietrich-2023 (2 refs)
+    <- organizations/oni.md
+    <- people/alex-dietrich.md
+
+  /transcripts/when-it-mattered-55-dietrich-2021 (1 ref)
+    <- people/alex-dietrich.md
+
+================================================================
+  PASSED — 0 warning(s)
