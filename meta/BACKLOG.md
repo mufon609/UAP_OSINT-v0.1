@@ -1059,4 +1059,79 @@ Logged so the gap doesn't drift out of awareness.
 
 ### C22. *(retired 2026-05-06 — topic-customization mechanism shipped across three commits. (1) `49a5f5e`: topic-config infrastructure — additive frontmatter fields `topic` + `display_name` on `meta/topic/overview.md`; `lib._common.load_topic()` helper reads them with hard-error semantics on missing fields (per C21 no-silent-fallbacks principle); `governance_files` check enforces the two fields as required on overview.md. (2) `ffad3ed`: schema rename `uap_relevance` → `top_relevance` (person) and `uap_scope_activity` → `top_scope_activity` (location), check-module rename via `git mv`, renderer composes section headers from `display_name` (`render_top_relevance` / `render_top_scope_activity`), corpus migration of 6 person artifacts + skinwalker-ranch.yaml, contemporary-docs sed pass. With `display_name: UAP` on this fork the rendered headers stay `## UAP Relevance` / `## UAP-Scope Activity` — boundary check confirmed byte-identity through the rename. (3) This commit: `prompts/fork-init.md` bootstrap walkthrough + `prompts/README.md` index entry, README "Forking for a different topic" paragraph amended to point at the prompt, audit pass for remaining UAP-hardcoded surfaces resolved (`scripts/archive.py` USER_AGENT now composed from `display_name`; `scripts/build-from-research.py` + `scripts/checks/artifact_top_level.py` + `scripts/checks/top_scope_activity.py` docstrings genericized to reference `{display_name}` substitution; `scripts/tests/test_stopwords.py` + `scripts/checks/manifest_extraction_type.py` + `scripts/checks/org_relationships.py` UAP references retained as deliberate topic-neutral commentary or production-incident anchors). Pre-commit 0/0 through all three commits.)*
 
+---
+
+### C23. Honor `Issue.fatal` in the post-parse main check loop
+
+**The gap.** The C11 design doc
+(`meta/toolkit-notes/c11-validator-decomposition-design.md` §5)
+specifies the per-file iteration shape as:
+
+> Per-file loop: (1) pre-parse checks on raw lines; (2) parse +
+> Context construction; if parse fails or frontmatter absent, emit
+> fatal Issue and continue to next file; (3) post-parse checks; abort
+> remaining checks for that file on any fatal Issue (per Q1 — confirmed).
+
+The orchestrators currently honor (1) and (2) — preflight checks short-
+circuit `_NODE_CHECKS` / `_ARTIFACT_CHECKS` / `_REVIEW_CHECKS` on any
+fatal Issue. They do NOT honor the same contract for (3). The main
+check-dispatch loops are unconditional ``for check_module in
+_NODE_CHECKS: issues.extend(check_module.check(node_ctx))`` patterns
+with no fatal-Issue inspection.
+
+**Why latent.** No main-loop check yields ``fatal=True`` today. Every
+fatal Issue currently emitted comes from a preflight module
+(``frontmatter_parse``, ``artifact_parse``, ``manifest_parse``,
+``phase_iii_inputs``). So the gap doesn't manifest as a behavior bug
+on the current corpus — but the contract the design doc declared is
+half-implemented, and the next contributor adding a fatal-yielding
+main-loop check would discover the mismatch.
+
+**Concrete near-term motivator.** The Finding-F investigation surfaced
+the layering gap between ``status_archetype_kind`` and downstream
+checks that depend on a valid archetype/kind value (currently
+``required_sections`` handles invalid arch/kind via explicit early-
+return + direct subscript, per the Finding-F local fix). A more
+principled architecture would: (a) make ``status_archetype_kind``
+yield ``fatal=True`` on invalid arch/kind, (b) have the orchestrator
+short-circuit the rest of ``_NODE_CHECKS`` on that fatal, (c)
+downstream checks rely on the value being valid without explicit
+guards. C23 is the orchestrator-side prerequisite for that chain.
+
+**Three orchestrators to update** (same shape change in each):
+
+  - ``scripts/validate.py::validate_node`` — main loop is
+    ``for check_module in _NODE_CHECKS: issues.extend(...)``;
+    add ``if any(i.fatal for i in fresh_issues): break`` semantics.
+  - ``scripts/validate-research.py::validate_artifact`` — same shape
+    over ``_ARTIFACT_CHECKS``.
+  - ``scripts/review-coverage.py::review_artifact`` — same shape
+    over ``_REVIEW_CHECKS``.
+
+**UX trade-off.** With fatal-chain in the main loop, contributors see
+ONE error per fix-cycle (root cause first). Without it, they see ALL
+related errors at once, which is sometimes useful for batch fixes
+(e.g., a renamed file producing both id-path-mismatch and broken-link
+issues). Decision is not obvious; either model is defensible.
+
+**Recommendation.** Decide the UX question first; the implementation
+is mechanical once the contract is agreed. Likely outcome: honor
+fatal in the main loop, since the alternative (status quo) means the
+``fatal`` field on Issue is half-honored — which is itself a contract
+inconsistency.
+
+**Scope.** ~15 lines per orchestrator (insert fatal-check after each
+check_module call). Optional follow-up: promote
+``status_archetype_kind`` errors to ``fatal=True`` and remove the
+explicit early-return guards in ``required_sections`` (rebound by the
+fatal short-circuit instead).
+
+**Priority.** Low. Latent, no current corpus impact. Worth resolving
+before any future check is added that genuinely needs to halt the
+chain on a discovered defect.
+
+Surfaced: Finding F investigation during the audit-of-audit pass —
+the orchestrator's fatal-handling asymmetry between preflight and
+main loop became visible while comparing layering options.
+
 

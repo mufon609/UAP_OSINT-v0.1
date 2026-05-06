@@ -71,6 +71,7 @@ per-module migration despite the cache-utilization shift.
 import re
 
 from checks import Issue
+from lib._common import parse_date_tuple
 
 
 CHECK_NAME = "chronological_tables"
@@ -82,10 +83,6 @@ DATE_HEADERS = {
     "date captured", "date released",
 }
 
-# Range separators between start and end dates in a single cell. Ordered
-# longest-first so "—" doesn't match inside " – ".
-_DATE_RANGE_SEPARATORS = (" – ", " — ", " to ", " - ", "–", "—", "-to-")
-
 
 _TABLE_RE = re.compile(
     r"(?P<header_line>^\|(?P<header>[^\n]+)\|\s*)\n"
@@ -93,38 +90,6 @@ _TABLE_RE = re.compile(
     r"(?P<rows>(?:^\|[^\n]+\|\s*\n?)+)",
     re.MULTILINE,
 )
-
-
-def parse_date_token(s):
-    """Return (year, month, day) tuple suitable for sort comparison, or
-    None if unparseable. Range cells take the leftmost date. Missing
-    month / day default to 0, so '2004' < '2004-11' < '2004-11-14'
-    under tuple comparison.
-    """
-    if not s:
-        return None
-    s = s.strip()
-    if s.lower() in {"—", "-", "n/a", "undated", "tbd", "present", "ongoing", ""}:
-        return None
-    # Range: take the left side. If the left side is empty (end-only
-    # period rendered as "– 2021" — signals bracketed end with unknown
-    # start, e.g., "former X" attestation without a specific start date),
-    # take the right side instead so the row still sorts by its attested
-    # end date.
-    for sep in _DATE_RANGE_SEPARATORS:
-        if sep in s:
-            left, _, right = s.partition(sep)
-            left = left.strip()
-            right = right.strip()
-            s = left if left else right
-            break
-    m = re.match(r"^(\d{4})(?:-(\d{1,2})(?:-(\d{1,2}))?)?", s)
-    if m:
-        y = int(m.group(1))
-        mo = int(m.group(2)) if m.group(2) else 0
-        d = int(m.group(3)) if m.group(3) else 0
-        return (y, mo, d)
-    return None
 
 
 def _parse_table_row(row_line):
@@ -169,7 +134,7 @@ def check(ctx):
                 if all(c == "" for c in cells):
                     continue  # template placeholder row
                 cell = cells[date_col]
-                d = parse_date_token(cell)
+                d = parse_date_tuple(cell)
                 if d is None and cell:
                     yield Issue(
                         ctx.rel, "warn",

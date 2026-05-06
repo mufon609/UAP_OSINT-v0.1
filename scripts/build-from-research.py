@@ -121,6 +121,7 @@ from lib._common import (  # noqa: E402
     REPO_ROOT,
     SUPPORTED_TYPES,
     content_type_dirs,
+    parse_date_tuple,
 )
 
 SCRIPTS_DIR = REPO_ROOT / "scripts"
@@ -203,41 +204,28 @@ def sort_by_id(entries):
     return sorted(entries, key=key)
 
 
-def parse_date_tuple(s):
-    """Return (year, month, day) tuple from a date string, or (9999, 0, 0)
-    for unparseable / missing dates so they sort LAST rather than first.
-    Range cells take the leftmost date. Mirror of validate.py's
-    parse_date_token but with an end-of-time sentinel for sort-stability.
-    """
-    if not s:
-        return (9999, 0, 0)
-    s = str(s).strip()
-    if not s:
-        return (9999, 0, 0)
-    # Range: take the left side
-    for sep in [" – ", " — ", " to ", " - ", "–", "—"]:
-        if sep in s:
-            s = s.split(sep, 1)[0].strip()
-            break
-    m = re.match(r"^(\d{4})(?:-(\d{1,2})(?:-(\d{1,2}))?)?", s)
-    if m:
-        y = int(m.group(1))
-        mo = int(m.group(2)) if m.group(2) else 0
-        d = int(m.group(3)) if m.group(3) else 0
-        return (y, mo, d)
-    return (9999, 0, 0)
+# Date parsing lifted to ``lib._common.parse_date_tuple`` — single source
+# of truth shared with the chronological-ordering validator check. The
+# parser returns ``None`` for unparseable / placeholder inputs; the
+# end-of-time sentinel ``(9999, 0, 0)`` is applied at the sort-key call
+# site below so the parser stays consumer-neutral.
+_END_OF_TIME = (9999, 0, 0)
 
 
 def sort_by_date(entries, date_key):
     """Stable-sort entries ascending by the date at `date_key`. Undated /
-    unparseable entries land at the end (via the 9999 sentinel). Tie-break
-    by natural-sort on id — prevents lex-sort from placing q10 between
-    q1 and q2 when all entries share the same date (common on transcripts
-    where every quote carries the hearing date)."""
+    unparseable entries land at the end (via the ``_END_OF_TIME``
+    sentinel applied here, NOT inside the parser). Tie-break by natural-
+    sort on id — prevents lex-sort from placing q10 between q1 and q2
+    when all entries share the same date (common on transcripts where
+    every quote carries the hearing date)."""
     def key(e):
         if not isinstance(e, dict):
-            return ((9999, 0, 0), ("zzz", 0, ""))
-        return (parse_date_tuple(e.get(date_key)), _id_natural_key(e.get("id") or ""))
+            return (_END_OF_TIME, ("zzz", 0, ""))
+        return (
+            parse_date_tuple(e.get(date_key)) or _END_OF_TIME,
+            _id_natural_key(e.get("id") or ""),
+        )
     return sorted(entries, key=key)
 
 

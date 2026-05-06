@@ -242,6 +242,71 @@ def load_topic():
     return _TOPIC_CONFIG_CACHE
 
 
+# ---------------------------------------------------------------------------
+# Date parsing — single source for the validator (chronological-ordering
+# check) and the renderer (Phase II sort_by_date). Earlier the two carried
+# parallel implementations with subtle drift: the renderer's copy missed
+# the placeholder-string set (``"n/a"`` / ``"undated"`` / ``"tbd"`` /
+# ``"present"`` / ``"ongoing"``), the ``"-to-"`` range separator, and the
+# empty-left-range fallback (``"– 2021"`` should sort by 2021, not at the
+# end-of-time sentinel). Centralizing here closes the drift surface and
+# fixes the renderer's empty-left-range handling as a byproduct.
+#
+# Returns ``Optional[(year, month, day)]`` — None for unparseable /
+# missing / placeholder inputs. The two consumers wrap differently:
+#
+#   - ``checks/chronological_tables.py`` treats None as "skip ordering
+#     check + warn on unparseable cells".
+#   - ``build-from-research.py::sort_by_date`` wraps with
+#     ``or (9999, 0, 0)`` at the sort-key call site so unparseable rows
+#     sort to the end without forcing the parser to invent a sentinel.
+# ---------------------------------------------------------------------------
+
+# Range separators between start and end dates in a single cell. Ordered
+# longest-first so " — " (em-dash with surrounding spaces) consumes the
+# spaces before bare "—" matches inside it.
+_DATE_RANGE_SEPARATORS = (" – ", " — ", " to ", " - ", "–", "—", "-to-")
+
+# Placeholder strings recognized as "no date" (case-insensitive). A row
+# whose date cell is "TBD" or "ongoing" is intentionally undated; the
+# validator skips ordering for it and the renderer sorts it last.
+_DATE_PLACEHOLDERS = frozenset({
+    "—", "-", "n/a", "undated", "tbd", "present", "ongoing", "",
+})
+
+
+def parse_date_tuple(s):
+    """Return ``(year, month, day)`` tuple from a date string suitable
+    for sort comparison, or ``None`` for empty / unparseable / placeholder
+    inputs.
+
+    Range cells take the leftmost date. Empty-left case (e.g.,
+    ``"– 2021"`` — bracketed-end with unknown start) takes the right side
+    so the row still sorts by its attested end date. Missing month / day
+    default to 0, so ``"2004"`` < ``"2004-11"`` < ``"2004-11-14"`` under
+    tuple comparison.
+    """
+    if not s:
+        return None
+    s = str(s).strip()
+    if s.lower() in _DATE_PLACEHOLDERS:
+        return None
+    for sep in _DATE_RANGE_SEPARATORS:
+        if sep in s:
+            left, _, right = s.partition(sep)
+            left = left.strip()
+            right = right.strip()
+            s = left if left else right
+            break
+    m = re.match(r"^(\d{4})(?:-(\d{1,2})(?:-(\d{1,2}))?)?", s)
+    if m:
+        y = int(m.group(1))
+        mo = int(m.group(2)) if m.group(2) else 0
+        d = int(m.group(3)) if m.group(3) else 0
+        return (y, mo, d)
+    return None
+
+
 # Extension → manifest ``format`` value. Centralized here so contributor
 # scripts (manifest.py CLI, research-scaffold.py building primary_sources
 # entries) share one mapping rather than duplicating the dict with a

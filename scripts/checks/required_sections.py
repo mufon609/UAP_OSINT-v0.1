@@ -59,7 +59,16 @@ runs with a null archetype, status_archetype_kind has already
 errored on the missing/null enum value. The fall-through behavior
 is correct, not a layering gap.
 
-C18 confirmed byte-identity through the C11 migration.
+Per-branch lookups separate two distinct cases: (1) invalid
+contributor data (archetype/kind set but not in the schema's enum) —
+``status_archetype_kind`` already errors on this, so this check
+returns an empty section list to avoid double-firing on the same
+defect; (2) schema drift (a per-archetype/kind block missing
+``required_sections``, or a top-level type missing it) — direct
+subscript surfaces a loud KeyError per the C21 no-silent-fallbacks
+principle. The earlier ``.get(arch, {}).get("required_sections", [])``
+chain conflated the two; the explicit guard + direct subscript shape
+keeps each case visible.
 """
 
 import re
@@ -93,15 +102,47 @@ def _load_addendum_sections(corpus):
 
 
 def _compute_required_sections(fm, type_spec):
+    """Compute the required-sections list for a node from type_spec.
+
+    Three layering shapes in the current schema:
+
+      1. Per-archetype (person) — each archetype declares its own
+         ``required_sections`` list; the type has no top-level one.
+      2. Per-kind (organization / document / event / transcript) — each
+         kind declares its own list; the type has no top-level one.
+      3. Top-level (media / location / finding) — the type declares
+         ``required_sections`` directly. Note that media also declares
+         ``kinds`` for taxonomy, but those are description-only (no
+         per-kind ``required_sections``); the type-level list applies
+         to every kind.
+
+    Invalid archetype/kind values are reported by ``status_archetype_kind``
+    — this check returns ``[]`` cleanly rather than double-firing or
+    crashing. Schema drift (a missing per-archetype, per-kind, or
+    top-level ``required_sections``) surfaces as a loud KeyError per
+    the C21 no-silent-fallbacks principle.
+    """
     sections = []
     arch = fm.get("archetype")
     kind = fm.get("kind")
     if arch and "archetypes" in type_spec:
-        sections = list(type_spec["archetypes"].get(arch, {}).get("required_sections", []))
+        if arch not in type_spec["archetypes"]:
+            return []  # invalid archetype — status_archetype_kind already errored
+        sections = list(type_spec["archetypes"][arch]["required_sections"])
     elif kind and "kinds" in type_spec:
-        sections = list(type_spec["kinds"].get(kind, {}).get("required_sections", []))
+        if kind not in type_spec["kinds"]:
+            return []  # invalid kind
+        kind_spec = type_spec["kinds"][kind]
+        if "required_sections" in kind_spec:
+            sections = list(kind_spec["required_sections"])
+        else:
+            # Per-kind block carries description-only metadata (e.g.,
+            # media's photo/video/audio/imagery-other); the type-level
+            # required_sections list applies uniformly across kinds.
+            sections = list(type_spec["required_sections"])
     else:
-        sections = list(type_spec.get("required_sections", []))
+        # location / finding — top-level required_sections, no kinds.
+        sections = list(type_spec["required_sections"])
     corpus = fm.get("corpus")
     if corpus:
         sections.extend(_load_addendum_sections(corpus))
