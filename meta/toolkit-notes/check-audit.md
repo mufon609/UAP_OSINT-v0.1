@@ -43,7 +43,7 @@ Remaining 42 should land at ✅.
 
 | Check | Status | Notes |
 |---|---|---|
-| governance_files | ☐ | Walks `meta/`; substantial — schedule with heavy batch |
+| governance_files | ✅ | Anchored to `30b7fc3` (BACKLOG #3 close — "Add check #13 — governance-file frontmatter validation"). Defensive design against template-drift blast-radius (drifted schema_version in template → propagates to every scaffolded node). Two-route design: templates regex (placeholders break YAML), governance docs YAML parse. Migration consolidated `parse_frontmatter` (`7f5f86f`) and `schema_version_compat_messages` (`2f3effb` / BACKLOG #8) into `lib/_common.py`. |
 | manifest_archive_status | ✅ | Anchored to `7a01d8b` (field + check introduced together — defensive, paired with the `archive.py` recheck-skip optimization). Concrete adjacent failure class: BACKLOG #30 (`d6732e1`, archive.py fire-and-forget) — check catches any regression of that shape. |
 | manifest_checksums | ☐ | File-IO + sha256 |
 | manifest_extraction_type | ☐ | Light; pairs with manifest_archive_status |
