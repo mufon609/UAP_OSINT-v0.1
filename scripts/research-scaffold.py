@@ -58,7 +58,7 @@ from checks._research_utils import evaluate_required_when
 EMPTY_SECTION_SHAPES = {
     # Prose fields on person artifacts
     "background": "",
-    "uap_relevance": "",
+    "top_relevance": "",
     "credibility_notes": "",
     # Single dict on event artifacts
     "event_intrinsic": {},

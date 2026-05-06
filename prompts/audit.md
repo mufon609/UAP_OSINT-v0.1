@@ -31,9 +31,9 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    {artifact}` and work through the prose-drift warning set. Under the durable policy
    (`feedback_check16_warnings_must_resolve.md`):
    - **Free-prose synthesis fields** (`description`, `background`,
-     `uap_relevance`, `credibility_notes`) and **per-entry synthesis
+     `top_relevance`, `credibility_notes`) and **per-entry synthesis
      content notes** (`ownership_timeline.note`,
-     `uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+     `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
      `media_versioning.note`, `vouching_chain.attestation`) — zero
      warnings is the target. Each unmatched token either resolves to
      source-matched prose OR gets captured as structured evidentiary

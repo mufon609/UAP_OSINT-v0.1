@@ -13,7 +13,7 @@ Origin: introduced at commit ``5a67ec1`` (F.6a — "schema +
 validator + scaffolder for location-type research artifacts").
 Same renderer-coupled-defensive shape as the F.1a / F.1b / F.2 /
 F.5 entry-list family; F.6 added location-specific structured
-fields (ownership_timeline, uap_scope_activity,
+fields (ownership_timeline, top_scope_activity,
 location_relationships) when locations gained Phase II rendering.
 
 UNIQUE design choice: heterogeneous target types. This is the ONLY

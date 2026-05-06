@@ -169,7 +169,7 @@ def _extract_description_drift_tokens(text):
 def _extract_description_text(node_text):
     """Return the prose body of the node's ``## Description`` section,
     or None if the section is absent (person nodes have no Description
-    section — their prose lives in background / uap_relevance /
+    section — their prose lives in background / top_relevance /
     credibility_notes instead)."""
     m = re.search(
         r"^## Description\s*$(.*?)(?=^## |\Z)",

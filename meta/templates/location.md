@@ -44,7 +44,7 @@ created: {{today}}
 ## UAP-Scope Activity
 
 <!-- Documented institutional UAP-scope activity at the location.
-     Populated from uap_scope_activity[] in the research artifact;
+     Populated from top_scope_activity[] in the research artifact;
      renderer sorts chronologically by period_start. Scope is
      institutional primary-source-attested activity — popular
      paranormal lore without primary-source backing belongs in the

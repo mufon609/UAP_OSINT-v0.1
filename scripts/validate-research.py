@@ -29,7 +29,7 @@ Per-artifact checks (after parse + ResearchContext construction):
   - media_versioning                  — media-conditional
   - key_personnel, org_relationships, contracts
                                        — organization / gov-contractor
-  - ownership_timeline, uap_scope_activity, location_relationships
+  - ownership_timeline, top_scope_activity, location_relationships
                                        — location-conditional
   - cross_refs, prose_drift           — whole-artifact
 
@@ -84,7 +84,7 @@ from checks import relationships as ck_relationships
 from checks import rumors as ck_rumors
 from checks import speakers as ck_speakers
 from checks import timeline as ck_timeline
-from checks import uap_scope_activity as ck_uap_scope_activity
+from checks import top_scope_activity as ck_top_scope_activity
 from checks import vouching_chain as ck_vouching_chain
 from checks import witnesses_testimony as ck_witnesses_testimony
 
@@ -216,7 +216,7 @@ _ARTIFACT_CHECKS = [
     ck_org_relationships,
     ck_contracts,
     ck_ownership_timeline,
-    ck_uap_scope_activity,
+    ck_top_scope_activity,
     ck_location_relationships,
     # Whole-artifact analytical checks
     ck_cross_refs,

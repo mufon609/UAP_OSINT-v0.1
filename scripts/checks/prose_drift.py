@@ -14,9 +14,9 @@ Impartial reporter — surface drift; the contributor judges each case:
     report.
 
 Scope is CONTRIBUTOR SYNTHESIS PROSE: top-level free-prose fields
-(``description``, ``background``, ``uap_relevance``, ``credibility_notes``)
+(``description``, ``background``, ``top_relevance``, ``credibility_notes``)
 and per-entry synthesis content notes (``ownership_timeline.note``,
-``uap_scope_activity.note``, ``key_personnel.note``, ``contracts.note``,
+``top_scope_activity.note``, ``key_personnel.note``, ``contracts.note``,
 ``media_versioning.note``, ``vouching_chain.attestation``). Applied
 across all renderer-supported types.
 
@@ -41,7 +41,7 @@ renamed prose-drift per the topic-name migration) closed that gap.
 
 Threshold-tuning history: the initial shape used differentiated 80%
 error thresholds calibrated to let synthesis-heavy fields (e.g.
-``uap_relevance``, ``credibility_notes``) pass without error.
+``top_relevance``, ``credibility_notes``) pass without error.
 Contributor feedback flagged that as bias — the validator was
 encoding a category judgment about which fields "deserve" more
 contributor vocabulary headroom. Revised at commit ``836f96a`` to
@@ -83,7 +83,7 @@ CHECK_NAME = "prose_drift"
 # Top-level prose fields by target type. Pooled against the union of
 # all primary_sources[].path token pools.
 PROSE_FIELDS_BY_TYPE = {
-    "person": ["background", "uap_relevance", "credibility_notes"],
+    "person": ["background", "top_relevance", "credibility_notes"],
     "event": ["description"],
     "media": ["description"],
     "transcript": ["description"],
@@ -111,7 +111,7 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
     ],
     "location": [
         ("ownership_timeline", "note"),
-        ("uap_scope_activity", "note"),
+        ("top_scope_activity", "note"),
     ],
 }
 

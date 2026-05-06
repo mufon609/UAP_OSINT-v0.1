@@ -26,9 +26,9 @@ doing anything:
    Apply the durable policies logged there: impartial validator
    reporting (no category-tuned thresholds); resolve every prose-drift-check
    warning structurally on scoped fields (top-level free-prose:
-   `description`, `background`, `uap_relevance`, `credibility_notes`;
+   `description`, `background`, `top_relevance`, `credibility_notes`;
    per-entry synthesis content notes: `ownership_timeline.note`,
-   `uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+   `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
    `media_versioning.note`, `vouching_chain.attestation`) —
    zero-warnings target. Structural label cells + cross-reference
    descriptor notes (`corroboration_items.note`,

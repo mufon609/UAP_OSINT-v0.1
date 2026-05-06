@@ -24,7 +24,7 @@ Sections added (15 across F.1a–F.6 renderer landings):
   - F.3:  speakers
   - F.4:  media_versioning
   - F.5:  key_personnel, org_relationships, contracts
-  - F.6:  ownership_timeline, uap_scope_activity,
+  - F.6:  ownership_timeline, top_scope_activity,
           location_relationships
 
 Sections removed (2):
@@ -91,7 +91,7 @@ ALL_ENTRY_SECTIONS = [
     "org_relationships",
     "contracts",
     "ownership_timeline",
-    "uap_scope_activity",
+    "top_scope_activity",
     "location_relationships",
 ]
 

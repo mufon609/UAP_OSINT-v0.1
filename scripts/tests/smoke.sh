@@ -210,7 +210,7 @@ for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-
 done
 
 # --- research artifact: location dispatch (F.6a + F.6b) ---
-# Scaffolder must emit ownership_timeline: [], uap_scope_activity: [],
+# Scaffolder must emit ownership_timeline: [], top_scope_activity: [],
 # and location_relationships: [] on every location artifact. Validator
 # enforces the type-conditional presence: missing-required fires on
 # location artifacts if absent; absent-on-other-type fires on non-

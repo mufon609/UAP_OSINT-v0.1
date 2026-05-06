@@ -444,7 +444,7 @@ ownership_timeline:
     path: news/vice-fugal-skinwalker-owner-20200310.html
     location: article body
   note: Fugal purchased the ranch from Bigelow in 2016 via Adamantium Real Estate LLC. Fugal's connection to the ranch began in 2010 through Bigelow's DIA project scientists. Ownership was kept quiet until March 2020 when Fugal went public in the Vice article.
-uap_scope_activity:
+top_scope_activity:
 - id: us1
   added_date: '2026-04-20'
   period_start: '1996'

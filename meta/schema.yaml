@@ -620,7 +620,7 @@ types:
           - target_node_type_in: [person]
         # Prose string (1–2 paragraphs) describing who the person is and
         # their career. Renders as the `## Background` section.
-      uap_relevance:
+      top_relevance:
         required_when_any_of:
           - target_node_type_in: [person]
         # Prose string (one paragraph) describing why this person is in
@@ -742,7 +742,7 @@ types:
         # Renders as the `## Ownership Timeline` table with chronological
         # ordering enforced via the chronological-ordering check. Entry shape:
         # ownership_timeline_entry below.
-      uap_scope_activity:
+      top_scope_activity:
         required_when_any_of:
           - target_node_type_in: [location]
         # Documented institutional UAP-scope activity at this location
@@ -752,7 +752,7 @@ types:
         # here. Each entry: period_start, period_end (optional),
         # activity, actor_paths (optional list of /people|/organizations),
         # source. Renders as the `## UAP-Scope Activity` table. Entry
-        # shape: uap_scope_activity_entry below.
+        # shape: top_scope_activity_entry below.
       location_relationships:
         required_when_any_of:
           - target_node_type_in: [location]
@@ -1096,7 +1096,7 @@ types:
       # note: optional contributor synthesis (1-2 sentences). Scanned by
       #   the prose-drift check.
 
-    uap_scope_activity_entry:
+    top_scope_activity_entry:
       required: [period_start, activity, source]
       optional: [period_end, actor_paths, note]
       # period_start / period_end: same conventions as
@@ -1207,7 +1207,7 @@ types:
       - "program_involvement section present iff target_node archetype == institutional-actor"
       - "publication_record section present iff target_node archetype == reporter"
       - "vouching_chain section present iff target_node archetype == whistleblower"
-      - "background / uap_relevance / affiliations / relationships / credibility_notes sections present iff target_node type == person"
+      - "background / top_relevance / affiliations / relationships / credibility_notes sections present iff target_node type == person"
       - "event_intrinsic and participants sections present iff target_node type == event"
       - "witnesses_testimony section present iff target_node type == event AND kind == hearing"
       - "corroboration_items section present iff target_node archetype == eyewitness OR (type == event AND kind == encounter)"
@@ -1215,7 +1215,7 @@ types:
       - "media_versioning section present iff target_node type == media (empty list permitted when media is canonical / original; populated when derivation_of is set)"
       - "key_personnel and org_relationships sections present iff target_node type == organization"
       - "contracts section present iff target_node type == organization AND kind == gov-contractor"
-      - "ownership_timeline, uap_scope_activity, location_relationships sections present iff target_node type == location"
+      - "ownership_timeline, top_scope_activity, location_relationships sections present iff target_node type == location"
 
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema

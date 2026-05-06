@@ -14,7 +14,7 @@ research artifact:
   - description required on non-person target types (the person body
     renderer doesn't emit ``## Description``; other types do)
 
-Type-conditional sections / fields (background, uap_relevance,
+Type-conditional sections / fields (background, top_relevance,
 credibility_notes, event_intrinsic, participants, etc.) are gated by
 ``iff_section`` (schema-driven dispatch over
 ``schema.yaml::conditional_keys``); the per-section checks rely on

@@ -235,7 +235,7 @@ rather than paraphrasing.
 ### Synthesis prose is labeled and drift-checked
 
 Contributor-synthesis prose is limited to labeled synthesis surfaces
-(`description`, `background`, `uap_relevance`, `credibility_notes`)
+(`description`, `background`, `top_relevance`, `credibility_notes`)
 and per-entry synthesis-content notes (`ownership_timeline.note`,
 `key_personnel.note`, `vouching_chain.attestation`, etc.).
 the prose-drift check tokenizes each of these against the
@@ -253,9 +253,9 @@ document.
 
 Nodes carry contributor-prose surfaces that sit alongside the verbatim
 `quotes[]` content: per-node `description` / `background` /
-`uap_relevance` / `credibility_notes` paragraphs, and per-entry
+`top_relevance` / `credibility_notes` paragraphs, and per-entry
 synthesis content notes (`ownership_timeline.note`,
-`uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+`top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
 `media_versioning.note`, `vouching_chain.attestation`). These are
 labeled synthesis — they exist to frame the evidentiary content — but
 the F.1c Fravor audit (2026-04-19) surfaced a real failure mode where

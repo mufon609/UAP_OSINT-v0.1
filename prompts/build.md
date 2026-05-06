@@ -154,7 +154,7 @@ it never calls `render_description`. Any content in a person
 artifact's `description` is unrendered. Either leave the field empty
 (or absent — validator is type-conditional) or use it as a brief
 index-level summary that never reaches the node body. Evidentiary
-prose for a person node belongs in `background` / `uap_relevance`
+prose for a person node belongs in `background` / `top_relevance`
 / `credibility_notes`. Each of those is scanned by the prose-drift
 check (see Step 10) against the pooled primary-source vocabulary.
 
@@ -379,9 +379,9 @@ if the content already spans multiple lines.
 **Prose-drift check warnings — review before leaving Phase I.**
 The validator runs a token-drift check across contributor-synthesis
 prose fields on every renderer-supported type (top-level free prose:
-`description`, `background`, `uap_relevance`, `credibility_notes`;
+`description`, `background`, `top_relevance`, `credibility_notes`;
 per-entry synthesis content notes: `ownership_timeline.note`,
-`uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+`top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
 `media_versioning.note`, `vouching_chain.attestation`). See
 `PROSE_FIELDS_BY_TYPE` / `PROSE_ENTRY_FIELDS_BY_TYPE` in
 `validate-research.py` for the per-type scope. It flags every
@@ -402,14 +402,14 @@ durable memory `feedback_check16_warnings_must_resolve.md`). Each
 warning requires real resolution, not synthesis-acceptance:
 
 - **Free-prose synthesis fields** (`description`, `background`,
-  `uap_relevance`, `credibility_notes`) — zero warnings is the target.
+  `top_relevance`, `credibility_notes`) — zero warnings is the target.
   Resolve each unmatched token by either (a) rewriting to use source
   vocabulary exactly, or (b) capturing the source-vs-prose variance
   as structured evidentiary data (naming_quirks, rumors, a timeline
   entry, a new quote). Rationalizing warnings as "legitimate synthesis
   vocabulary" defeats the check.
 - **Per-entry synthesis content notes** — `ownership_timeline.note`,
-  `uap_scope_activity.note`, `key_personnel.note`, `contracts.note`,
+  `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
   `media_versioning.note`, and `vouching_chain.attestation`. These
   are multi-sentence narrative / analytical prose about an event /
   transaction / role / derivation; zero warnings is the target, same
@@ -510,7 +510,7 @@ This:
    - `## Identity` — from `document_intrinsic` (full_name, aliases,
      nationality, profession)
    - `## Background` — from `background` prose field
-   - `## UAP Relevance` — from `uap_relevance` prose field
+   - `## UAP Relevance` — from `top_relevance` prose field
    - `## Affiliations` (Confirmed/Flagged split) — from `affiliations[]`,
      sorted by `period_start`
    - `## Statements` (Direct Observations / Other Statements split) —
@@ -622,7 +622,7 @@ This:
    - `## Ownership Timeline` — from `ownership_timeline[]`,
      chronological by `period_start`. Columns: `Period | Owner |
      Use / Status | Source`.
-   - `## UAP-Scope Activity` — from `uap_scope_activity[]`,
+   - `## UAP-Scope Activity` — from `top_scope_activity[]`,
      chronological by `period_start`. Columns: `Period | Activity |
      Source`. When entries have `actor_paths` populated, the wraps
      are appended inline to the Activity cell with an em-dash

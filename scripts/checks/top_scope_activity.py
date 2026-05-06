@@ -28,11 +28,11 @@ institutional-vs-popular distinction is contributor judgment at
 authoring time.
 
 Topic-neutrality observation (BACKLOG C22). The check's name
-``uap_scope_activity`` and the rendered section header
+``top_scope_activity`` and the rendered section header
 ``## UAP-Scope Activity`` are explicitly UAP-named. The toolkit's
 scope statement claims schema and structure are topic-neutral
 ("any investigation grounded in primary sources can use the same
-structure"), but this field name + the parallel ``uap_relevance``
+structure"), but this field name + the parallel ``top_relevance``
 on person artifacts contradict that claim. C22 documents the
 two resolution paths — fully topic-neutral rename, or honest-
 documentation acknowledgement that the two fields are fork-
@@ -64,26 +64,26 @@ from checks._research_utils import (
 )
 
 
-CHECK_NAME = "uap_scope_activity"
+CHECK_NAME = "top_scope_activity"
 
 
 def check(ctx):
-    if not section_in_scope(ctx, "uap_scope_activity"):
+    if not section_in_scope(ctx, "top_scope_activity"):
         return
-    if "uap_scope_activity" not in ctx.data:
+    if "top_scope_activity" not in ctx.data:
         return
 
-    items = entries(ctx.data, "uap_scope_activity")
-    yield from check_unique_ids(ctx.rel, items, "uap_scope_activity", CHECK_NAME)
+    items = entries(ctx.data, "top_scope_activity")
+    yield from check_unique_ids(ctx.rel, items, "top_scope_activity", CHECK_NAME)
     for i, e in enumerate(items):
         if not isinstance(e, dict):
             continue
-        yield from check_lifecycle_fields(ctx.rel, e, "uap_scope_activity", i, CHECK_NAME)
+        yield from check_lifecycle_fields(ctx.rel, e, "top_scope_activity", i, CHECK_NAME)
         for field in ("period_start", "activity"):
             if field not in e or not str(e.get(field) or "").strip():
                 yield Issue(
                     ctx.rel, "error",
-                    f"uap_scope_activity[{i}] ({e.get('id')!r}): "
+                    f"top_scope_activity[{i}] ({e.get('id')!r}): "
                     f"missing required {field!r}",
                     check_name=CHECK_NAME,
                 )
@@ -91,7 +91,7 @@ def check(ctx):
         if paths and not isinstance(paths, list):
             yield Issue(
                 ctx.rel, "error",
-                f"uap_scope_activity[{i}] ({e.get('id')!r}): "
+                f"top_scope_activity[{i}] ({e.get('id')!r}): "
                 f"actor_paths must be a list (got {type(paths).__name__})",
                 check_name=CHECK_NAME,
             )
@@ -100,11 +100,11 @@ def check(ctx):
                 if not isinstance(p, str) or not p.startswith("/"):
                     yield Issue(
                         ctx.rel, "error",
-                        f"uap_scope_activity[{i}] ({e.get('id')!r}): "
+                        f"top_scope_activity[{i}] ({e.get('id')!r}): "
                         f"actor_paths[{j}] must be a repo path starting "
                         f"with '/' (got {p!r})",
                         check_name=CHECK_NAME,
                     )
         yield from require_source_dict(
-            ctx.rel, e, "uap_scope_activity", i, ctx.manifest_paths, CHECK_NAME,
+            ctx.rel, e, "top_scope_activity", i, ctx.manifest_paths, CHECK_NAME,
         )

@@ -11,7 +11,7 @@ errors come from ``iff_section``.
 Origin: introduced at commit ``5a67ec1`` (F.6a — "schema +
 validator + scaffolder for location-type research artifacts").
 Same anchor as ``location_relationships`` and
-``uap_scope_activity``; F.6a added all three location-specific
+``top_scope_activity``; F.6a added all three location-specific
 structured fields together when locations gained Phase II
 rendering.
 

@@ -7,7 +7,7 @@ canonical tokenizer + extraction layer from `scripts/lib/_common.py`
 — same code path validate-research.py's prose-drift check uses, so
 script output reflects what the validator would see byte-for-byte.
 
-Use case: drafting `description` / `background` / `uap_relevance` /
+Use case: drafting `description` / `background` / `top_relevance` /
 `credibility_notes` prose (or per-entry synthesis content notes:
 `ownership_timeline.note`, `key_personnel.note`, `contracts.note`,
 `media_versioning.note`, `vouching_chain.attestation`). Per

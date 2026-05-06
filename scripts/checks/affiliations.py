@@ -20,7 +20,7 @@ publication_record / vouching_chain) to affiliations + relationships;
 later F.X work extended it further to participants /
 witnesses_testimony / speakers / media_versioning / key_personnel /
 org_relationships / contracts / ownership_timeline /
-uap_scope_activity / location_relationships. Migration: commit
+top_scope_activity / location_relationships. Migration: commit
 ``00a985d`` (C11 session 3) lifted to per-module shape; commit
 ``dc95d39`` (C15) wired the schema-driven section gate via
 ``section_in_scope``. C18 confirmed byte-identity through both.

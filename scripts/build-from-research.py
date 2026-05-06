@@ -105,6 +105,12 @@ except ImportError:
     sys.exit(1)
 
 
+# Make scripts/lib/ importable so the renderer can read topic config
+# via the shared load_topic() helper.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from lib._common import load_topic  # noqa: E402
+
+
 # =============================================================================
 # Constants
 # =============================================================================
@@ -485,11 +491,12 @@ def render_background(artifact):
     return f"## Background\n\n{body}\n"
 
 
-def render_uap_relevance(artifact):
-    body = (artifact.get("uap_relevance") or "").strip()
+def render_top_relevance(artifact):
+    body = (artifact.get("top_relevance") or "").strip()
     if not body:
-        body = "<!-- TODO: populate `uap_relevance` in the research artifact -->"
-    return f"## UAP Relevance\n\n{body}\n"
+        body = "<!-- TODO: populate `top_relevance` in the research artifact -->"
+    display_name = load_topic()["display_name"]
+    return f"## {display_name} Relevance\n\n{body}\n"
 
 
 def _format_period(entry):
@@ -1215,7 +1222,7 @@ def render_body_person(artifact, archetype):
     sections = [
         render_identity(artifact),
         render_background(artifact),
-        render_uap_relevance(artifact),
+        render_top_relevance(artifact),
         render_affiliations(artifact),
         render_statements(artifact),
         render_timeline(artifact),
@@ -1968,17 +1975,19 @@ def render_ownership_timeline(artifact):
     return "\n".join(lines) + "\n"
 
 
-def render_uap_scope_activity(artifact):
-    """UAP-Scope Activity section — chronological table from
-    uap_scope_activity[]. Columns: Period | Activity | Source. When
+def render_top_scope_activity(artifact):
+    """{display_name}-Scope Activity section — chronological table from
+    top_scope_activity[]. Columns: Period | Activity | Source. When
     actor_paths is populated, wraps are appended inline to the Activity
     cell as `— [`/path1`]; [`/path2`]`. Sorted ascending by period_start;
-    the chronological-ordering check enforces chronological order."""
+    the chronological-ordering check enforces chronological order. Header
+    text uses display_name from meta/topic/overview.md frontmatter."""
     items = sort_by_date(
-        [e for e in (artifact.get("uap_scope_activity") or []) if isinstance(e, dict)],
+        [e for e in (artifact.get("top_scope_activity") or []) if isinstance(e, dict)],
         "period_start",
     )
-    lines = ["## UAP-Scope Activity", "",
+    display_name = load_topic()["display_name"]
+    lines = [f"## {display_name}-Scope Activity", "",
              "| Period | Activity | Source |",
              "|---|---|---|"]
     if not items:
@@ -2077,7 +2086,7 @@ def render_body_location(artifact, fm):
         render_location_overview(artifact, fm),
         render_description(artifact),
         render_ownership_timeline(artifact),
-        render_uap_scope_activity(artifact),
+        render_top_scope_activity(artifact),
         render_location_key_passages(artifact),
         render_location_relationships(artifact),
         render_primary_source_contradictions(artifact),
