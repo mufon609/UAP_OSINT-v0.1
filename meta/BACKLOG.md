@@ -233,7 +233,8 @@ be fixed.
 
 **Problem 1 — Claim Inventory status column is undifferentiated.** On
 whistleblower nodes, every filed-claim row renders with a hard-coded
-`✅ Sworn / documented` label (`scripts/build-from-research.py:723`).
+`✅ Sworn / documented` label (in `scripts/build-from-research.py` —
+grep the literal string).
 Real attestation tiers vary materially:
 
 - **sworn under oath** — congressional hearing testimony
@@ -908,91 +909,7 @@ failure modes.
 
 ---
 
-### C9. Migrate remaining repo-discipline memories to `meta/`
-
-**Status (2026-05-05):** Two of eight candidate memories already
-migrated (cross-artifact consistency check → `meta/toolkit-notes/`;
-OCR-scan three-step discipline → `meta/conventions.md`). Six more
-remain in the user's Claude memory store — five clearly repo-wide
-discipline, one borderline. All should be considered during the
-migration session for visibility to humans, future contributors, and
-fork targets.
-
-**The principle.** Memory should host user-interaction preferences
-(how Claude should converse, when to pause, what to skip). Repo-wide
-methodology and discipline should live in `meta/conventions.md`
-(evidentiary discipline) or `meta/toolkit-notes/` (lessons-learned).
-The current memory store mixes both; the migration shifts the
-methodology side into the repo where it survives memory wipes /
-harness reinstalls / fork to a different topic.
-
-**Audit table.** Six memories whose substance is repo-wide
-discipline (one flagged borderline):
-
-| Memory | Likely destination |
-|---|---|
-| `feedback_prose_drift_warnings_must_resolve.md` | `meta/conventions.md` — extends the existing prose-drift discipline section with the per-warning resolution decision tree (word-form variant, paraphrase, source-form vs canonical, hyphenated compound, date tokens, genuinely-necessary contributor vocabulary) and the zero-warnings target on scoped fields |
-| `feedback_reader_visibility_discipline.md` | `meta/conventions.md` — new section "rendered fields vs metadata fields" enumerating which artifact fields don't render on node bodies (`note` across relationship/list sections, `naming_quirks`, `quote.significance`) and the contributor discipline of verifying rendered output before marking audit-flagged fixes resolved |
-| `feedback_source_priority_hierarchy.md` | `meta/conventions.md` — extends the "Contradictions" section with the source-ranking convention when sources disagree (subject's own words > primary witness > media narrator/outlet framing) |
-| `feedback_interview_node_entities.md` | `meta/conventions.md` person-node section, OR `meta/templates/person.md` — the per-interview venue/host/transcript registration rule for interview-heavy person nodes |
-| `feedback_transcript_timestamps_in_quotes.md` | `meta/conventions.md` — quote.text discipline section (single leading `[MM:SS]` for navigation; intermediate ticks dropped). Cross-reference to the location-ref convention's `[MM:SS]` form so the two stay aligned |
-| `feedback_validator_impartiality.md` *(borderline)* | `meta/conventions.md` "Check naming" sibling section, OR keep in memory. The principle ("validator should surface drift impartially; warn on each signal; mathematical floors over stylistic thresholds; uniform rules across field types") is repo-wide validator-design discipline, fits naturally near the existing "Check naming" subsection. Counterargument for keeping in memory: the originating context was user-corrective feedback on the prose-drift threshold debate (2026-04-19); the memory voice carries that incident framing. Migration session should weigh both — defensible either way; not a clear-cut migration like the other five |
-
-**Why deferred.** Each migration is real translation work, not
-copy-paste. Memory voice ("personal reminder") differs from
-conventions voice ("principle + rationale"); some memories carry
-detailed decision trees that need careful integration with
-existing convention sections. Rushing the work risks degrading
-`meta/conventions.md` — a load-bearing document — through fatigue.
-A focused session can do the rewrite carefully.
-
-**Sequencing within the migration.**
-- Start with `feedback_transcript_timestamps_in_quotes.md` (smallest
-  scope, naturally cross-references the location-ref convention I
-  just added) and `feedback_source_priority_hierarchy.md` (slot-fits
-  into the existing "Contradictions" section).
-- Then `feedback_reader_visibility_discipline.md` (worth a new
-  conventions section since the field-level enumeration doesn't fit
-  any existing one).
-- Then the heavier two (`feedback_prose_drift_warnings_must_resolve.md`,
-  `feedback_interview_node_entities.md`) which integrate with longer
-  existing sections.
-- Last: weigh the borderline case
-  (`feedback_validator_impartiality.md`) against the freshly-rewritten
-  conventions to decide whether the principle slot-fits cleanly. If
-  it does, migrate. If it would feel forced, keep in memory.
-- Each migration: rewrite into conventions voice, delete the memory
-  file, update `MEMORY.md` index, run pre-commit.
-
-**End-state target.** Memory drops from 11 entries (post-cluster-5)
-to ~5–6, all squarely user-interaction style: audit phasing, no
-count targets, YAML scalar style, post-compaction discipline,
-investigate-before-queueing — plus validator-design preference if
-the borderline case stays in memory. Repo gains 5 or 6 documented
-disciplines visible to all contributors and fork targets.
-
-**Out of scope** (worth noting so the migration session doesn't
-scope-creep): the five clearly user-interaction-style memories are
-NOT migrated — `feedback_audit_methodology.md`,
-`feedback_no_count_targets.md`,
-`feedback_post_compaction_plan_summary.md`,
-`feedback_description_yaml_scalar_style.md`,
-`feedback_investigate_before_queueing.md`. They modify *Claude's
-behavior* (how I converse, when to pause, what to skip) rather than
-defining content rules. Don't shift their location during this work.
-
-**Priority.** Low. Methodology is currently functional via
-auto-loaded MEMORY.md; migration improves shareability for humans
-and fork targets but doesn't unblock any work.
-
-Surfaced: 2026-05-05 review of memory store after BACKLOG C1
-retirement — initial audit found 7 of 13 memories were repo-wide
-discipline mis-located in user-private memory storage; two
-clearly-correct migrations completed inline. A follow-up
-re-examination after the OCR-detection-signals correction (commit
-5178f06 + the realization that conventions.md routinely carries
-procedure tied to principle) added `feedback_validator_impartiality.md`
-as a sixth borderline candidate to weigh during the migration.
+### C9. *(removed 2026-05-05 — abandoned per user direction; the planned memory-to-meta migration was discretionary cleanup without unblocking value. Methodology remains functional via auto-loaded MEMORY.md; entry would have generated work for a benefit only future fork-targets see.)*
 
 ---
 
