@@ -1,0 +1,25 @@
+# Issue log — append-only record of validator-emitted Issues and manual
+# audit findings (Claude Web / contributor reviews).
+#
+# One YAML list entry per issue. Fields:
+#   ts         — ISO-8601 UTC timestamp
+#   source     — "validator" for orchestrator-emitted, or
+#                "web-audit-{node}-{date}" / "manual-{date}" for human-found
+#   check      — for validator entries: the check_name. For manual entries:
+#                "manual:{semantic-tag}" (free-text; promote frequent tags
+#                to a documented list when patterns emerge)
+#   phase      — orchestrator that emitted (validate / validate-research /
+#                review-coverage), or "semantic" for manual entries
+#   node       — repo-relative path of the file the issue concerns
+#   node_type  — derived from path (person / organization / document /
+#                event / transcript / media / location / finding /
+#                research-artifact / governance / manifest)
+#   severity   — pulled from Issue.level: "error" | "warn"
+#   message    — Issue.message (validator) or contributor's prose
+#                description (manual). Multi-line via | literal block.
+#
+# Validator entries append automatically (fixture / smoke-test paths
+# whose basename starts with "__" are skipped). Manual entries:
+# contributors add list items with the same shape after a Web audit /
+# manual review. Audit by reading the file directly.
+

@@ -12,6 +12,7 @@ import html
 import re
 import subprocess
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
@@ -824,3 +825,131 @@ def load_source_tokens(source_rel_path):
     tokens = extract_significant_tokens(text)
     _source_token_cache[source_rel_path] = tokens
     return tokens
+
+
+# ---------------------------------------------------------------------------
+# Issue log
+# ---------------------------------------------------------------------------
+#
+# Append-only YAML log of validator-emitted Issues + manual audit findings
+# (Claude Web sessions, contributor reviews). One list entry per issue,
+# fields on their own lines for readability. Orchestrators call
+# append_issue_log() in main() after collecting their issue stream;
+# audit by reading the log file directly (a fresh CLI session walks the
+# YAML and reports patterns on demand — no aggregation script needed).
+
+ISSUE_LOG_PATH = REPO_ROOT / "meta" / "toolkit-notes" / "issue-log.yaml"
+
+_ISSUE_LOG_HEADER = """\
+# Issue log — append-only record of validator-emitted Issues and manual
+# audit findings (Claude Web / contributor reviews).
+#
+# One YAML list entry per issue. Fields:
+#   ts         — ISO-8601 UTC timestamp
+#   source     — "validator" for orchestrator-emitted, or
+#                "web-audit-{node}-{date}" / "manual-{date}" for human-found
+#   check      — for validator entries: the check_name. For manual entries:
+#                "manual:{semantic-tag}" (free-text; promote frequent tags
+#                to a documented list when patterns emerge)
+#   phase      — orchestrator that emitted (validate / validate-research /
+#                review-coverage), or "semantic" for manual entries
+#   node       — repo-relative path of the file the issue concerns
+#   node_type  — derived from path (person / organization / document /
+#                event / transcript / media / location / finding /
+#                research-artifact / governance / manifest)
+#   severity   — pulled from Issue.level: "error" | "warn"
+#   message    — Issue.message (validator) or contributor's prose
+#                description (manual). Multi-line via | literal block.
+#
+# Validator entries append automatically (fixture / smoke-test paths
+# whose basename starts with "__" are skipped). Manual entries:
+# contributors add list items with the same shape after a Web audit /
+# manual review. Audit by reading the file directly.
+
+"""
+
+_YAML_QUOTE_CHARS = set(":#[]{},&*!|>'\"%@`")
+
+
+def _derive_node_type(path):
+    """Return the node_type label for the issue log given a repo-
+    relative path. Schema content-type name for content nodes;
+    coarser bucket label (research-artifact / governance / manifest)
+    for non-content paths."""
+    s = str(path)
+    if s.startswith("meta/research/"):
+        return "research-artifact"
+    if s.startswith("meta/"):
+        return "governance"
+    if s.startswith("sources/"):
+        return "manifest"
+    first = s.split("/", 1)[0]
+    rev = {v: k for k, v in content_type_dirs().items()}
+    return rev.get(first, "unknown")
+
+
+def _yaml_quote_simple(val):
+    """Single-quote a YAML scalar that contains metacharacters or has
+    an ambiguous leading sigil. Returns the value unchanged otherwise.
+    Used for the issue-log entry serialization — manual format keeps
+    field order and forces | literal-block on the message field."""
+    s = str(val)
+    if not s:
+        return "''"
+    if any(c in _YAML_QUOTE_CHARS for c in s):
+        return "'" + s.replace("'", "''") + "'"
+    if s[0] in "-?":
+        return "'" + s + "'"
+    return s
+
+
+def _format_issue_log_entry(entry):
+    """Render an issue-log dict as a multi-line YAML list item with
+    fixed field order and | literal-block on the message field."""
+    out = [f"- ts: {entry['ts']}"]
+    for key in ("source", "check", "phase", "node", "node_type"):
+        out.append(f"  {key}: {_yaml_quote_simple(entry[key])}")
+    out.append(f"  severity: {entry['severity']}")
+    out.append("  message: |")
+    for line in entry["message"].split("\n"):
+        out.append(f"    {line}")
+    return "\n".join(out)
+
+
+def append_issue_log(issue, source="validator", phase="validate"):
+    """Append one entry to ``meta/toolkit-notes/issue-log.yaml`` for
+    the given Issue. Called by validator orchestrators in main() after
+    issue collection. ``source`` and ``phase`` are set per call site;
+    ``check`` / ``node`` / ``severity`` / ``message`` come from the
+    Issue itself.
+
+    Skips fixture / smoke-test paths (any path whose basename starts
+    with ``__``) so synthetic test entries don't pollute the real log.
+    Convention: fixture nodes use ``__smoke-`` / ``__fixture-`` slugs;
+    real content nodes never start with ``__``.
+
+    Creates the log file with the documentation header on first append
+    if it doesn't already exist (defensive — fresh forks may not have
+    the committed initial file)."""
+    path_str = str(issue.path)
+    basename = path_str.rsplit("/", 1)[-1]
+    if basename.startswith("__"):
+        return  # fixture / smoke-test path; not real content
+
+    entry = {
+        "ts": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "source": source,
+        "check": issue.check_name or "unknown",
+        "phase": phase,
+        "node": path_str,
+        "node_type": _derive_node_type(issue.path),
+        "severity": issue.level,
+        "message": issue.message,
+    }
+    ISSUE_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
+    new_file = not ISSUE_LOG_PATH.exists()
+    with open(ISSUE_LOG_PATH, "a") as f:
+        if new_file:
+            f.write(_ISSUE_LOG_HEADER)
+        f.write(_format_issue_log_entry(entry))
+        f.write("\n\n")
