@@ -1143,3 +1143,106 @@ Surfaced: 2026-05-05 C11/C13/C14 closeout audit — recommended as
 "belt-and-suspenders" verification that the corpus pass
 behaviorally implies but doesn't strictly prove.
 
+---
+
+### C19. Consolidate type-set constants — scaffolder + renderer should read schema.yaml
+
+C15 closed the schema-vs-validator drift surface (validators now read
+``schema.yaml::conditional_keys`` via ``iff_section`` + ``section_in_scope``).
+The same drift surface still exists on the **scaffolder** and **renderer**
+side: ``scripts/research-scaffold.py`` carries hard-coded ``RUMORS_TYPES``
+and ``TIMELINE_TYPES`` sets plus an ``ARCHETYPE_SECTION`` map that
+duplicate what schema.yaml already declares.
+
+**The duplication today:**
+
+```python
+# scripts/research-scaffold.py:45-46
+RUMORS_TYPES = {"person", "organization", "event", "location"}
+TIMELINE_TYPES = {"person", "organization", "event", "finding"}
+
+# scripts/research-scaffold.py:49-54
+ARCHETYPE_SECTION = {
+    "eyewitness":           "corroboration_items",
+    "whistleblower":        "vouching_chain",
+    "institutional-actor":  "program_involvement",
+    "reporter":             "publication_record",
+}
+```
+
+Plus ~6 inline ``if node_type == "X":`` blocks in research-scaffold.py
+that scaffold type-specific empty sections (``background`` / ``uap_relevance``
+/ etc. on person; ``event_intrinsic`` / ``participants`` on event; and so
+on for transcript / media / organization / location). Every one of those
+conditions duplicates what ``schema.yaml::conditional_keys`` declares.
+
+**Drift surface.** Schema edit changes ``conditional_keys`` (e.g., new
+target type added; section moved between archetypes). Validators
+update automatically via ``iff_section``. **Scaffolder doesn't.**
+Result: scaffolded artifacts have a stale set of empty sections;
+contributor doesn't notice until the validator complains, OR the
+validator's expectation matches the scaffolder's stale output and
+the schema edit is silently ineffective.
+
+This is the same architectural drift that C15 closed for validators.
+The fix shape mirrors C15: read ``conditional_keys`` from schema,
+walk the rules, dispatch.
+
+**Refactor.** ``scripts/research-scaffold.py`` reads schema and walks
+``conditional_keys``:
+
+```python
+# Pseudocode
+for section_name, rules in schema_conditional_keys.items():
+    if rules_match_target(rules, target_type, archetype, kind):
+        artifact[section_name] = []   # or "" for prose fields
+```
+
+Type-specific scaffolding decisions (e.g., empty list vs empty string
+vs empty dict) need a type-of-section signal that schema.yaml doesn't
+currently encode for every section. Three paths:
+
+(a) Schema gains a per-section ``initial_value`` field — explicit
+    declaration of what an empty entry shape looks like.
+(b) Scaffolder has a small per-section-name → empty-shape map (much
+    smaller than today's hard-coded type-set; only encodes "this
+    section's empty value").
+(c) Walk schema's entry-shape declarations (e.g., ``rumor_entry``,
+    ``timeline_entry``) — every entry-list has an empty shape of
+    ``[]``; every prose field has ``""``; every dict field has ``{}``.
+    Inferable from the schema's existing ``entry_shape`` blocks.
+
+(c) is most schema-driven; (b) is simplest. Realistic shape: scaffolder
+keeps a tiny per-section-name → empty-shape lookup, eliminating the
+target-type sets but retaining the trivial "what's empty for this
+section" signal.
+
+**``scripts/build-from-research.py``** also has type-conditional
+inline ``if node_type == "X":`` dispatches (one per renderable type).
+Those are harder to schema-drive — each type has type-intrinsic
+rendering logic (``## Identity`` for person, ``## Document Summary``
+for document, etc.) that's not just "is this section required" but
+"how does this section render." Out of scope for C19; the renderer's
+type dispatch isn't drift-prone in the same way (renderer is invoked
+on already-validated artifacts; the schema-validator gate catches
+type-section mismatches before render).
+
+**Priority.** Medium. The drift hasn't fired in practice yet — schema
+edits since C15 have been doc-only, not new type/section additions —
+but the next time someone adds a target type or moves a section in
+schema.yaml, the scaffolder produces stale artifacts silently. Real
+drift surface; bounded fix.
+
+**Scope.** Single session. Replace research-scaffold.py's hard-coded
+type sets with schema-driven dispatch using the same pattern as
+``section_in_scope`` (or via direct import from
+``checks._research_utils.evaluate_required_when``). Keep
+build-from-research.py's renderer dispatch as-is (different problem
+class). Pre-commit gates the corpus pass; behavior parity is the
+acceptance signal.
+
+Surfaced: 2026-05-05 C11/C13/C14/C15/C16 closeout audit — flagged as
+"pre-existing tech debt skipped per scope" during the C15 doc cleanup.
+User pushback established that the remaining drift surface is real
+enough to warrant a tracked entry.
+
