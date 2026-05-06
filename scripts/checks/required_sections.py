@@ -11,9 +11,55 @@ Corpus addenda (per ``meta/topic/addenda/{name}.md``) declare
 additional required sections; merged into the per-type list when the
 node's frontmatter sets ``corpus``.
 
-Lift from validate.py validate_node (C11 session-3 migration). Carries
-``compute_required_sections`` and ``load_addendum_sections`` (both
-only used by this check).
+Origin: foundational from the initial commit (``af5f789``). Both the
+schema-driven dispatcher (archetype/kind routing + type-default
+fallback) and the corpus-addendum extension mechanism shipped in
+af5f789. Migration: ``60bb88d`` (C11 session 3 lift to per-module
+shape). Carries ``_compute_required_sections`` and
+``_load_addendum_sections`` (both only used by this check).
+
+Anchor pattern: foundational schema-driven dispatcher. The check
+code has been stable since af5f789; the schema's per-type /
+per-archetype / per-kind required_sections lists evolved
+substantially across F.1a–F.6 renderer landings (every new node
+type or archetype shipped its own required_sections list), but the
+check just walks whatever the schema declares. Same "schema as
+single source of truth" pattern as ``iff_section`` (which formalized
+the pattern for conditional_keys); required_sections is the earlier
+instance.
+
+Forward-defensive corpus-addendum extension. The addendum mechanism
+allows corpus-specific structural requirements via
+``meta/topic/addenda/{corpus}.md`` — affected nodes set
+``corpus: {name}`` in frontmatter; the addendum's "Additional
+required sections" block contributes additional H2 requirements.
+The mechanism is in place + documented (the existing
+``aawsap-dird.md`` file documents itself as the canonical template
+for future corpus-specific addenda); currently no node in this
+toolkit instance carries a ``corpus:`` frontmatter, so the
+extension is dormant in practice. Forward-defensive — fork targets
+on different topic instances can drop in their own corpus addenda
+without modifying the check code.
+
+Match semantics intentionally permissive: exact-title OR
+title-prefix-followed-by-space-and-( OR title-prefix-followed-by-
+space-and-em-dash. Allows section-rename-with-qualifier
+(``## Overview (deprecated)``, ``## Identity — Aliases``) without
+forcing schema updates for cosmetic header changes. The
+boundary check (Phase III) catches structural divergence between
+artifact and rendered node, so over-permissive matching here
+doesn't open a real loophole.
+
+Truthy archetype/kind routing is intentional and distinct from the
+status_archetype_kind layering bug fixed during the C17 sweep:
+required_sections falls through to top-level required_sections when
+archetype/kind is null/absent, on the basis that archetype-validity
+is delegated to ``status_archetype_kind``. By the time this check
+runs with a null archetype, status_archetype_kind has already
+errored on the missing/null enum value. The fall-through behavior
+is correct, not a layering gap.
+
+C18 confirmed byte-identity through the C11 migration.
 """
 
 import re
