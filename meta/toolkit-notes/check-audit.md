@@ -82,7 +82,7 @@ Remaining 42 should land at ✅.
 | contracts | ☐ | gov-contractor only; multi-field shape |
 | corroboration_items | ✅ | Anchored to F.1a (`8007ef1`) — one of six entry-list-pattern checks landed together for the F.1a person redesign (alongside chronological_tables + four sibling archetype-conditional surfaces). Renderer-coupled-defensive shape; predates affiliations (F.1b). C15 added encounter-event kind to scope (the OR-disjunction case for the grammar upgrade; witnesses_testimony was the AND-conjunction case). Cross-reference surface, NOT statement surface; .note out of prose-drift scope per 2026-04-21 second scope cut. |
 | cross_refs | ☐ | Cross-entity link consistency |
-| entities | ☐ | entity_entry shape |
+| entities | ✅ | Foundational from `af5f789` with 6 types + quote_id+claim_id refs. Dual-evolution anchor — first investigated check spanning BOTH multi-stage-check (type list expanded to 8 at `26969ba`; claim_id refs removed at `cde69cf`) AND evolving-discipline (alex-dietrich rebuild surfaced "named in prose but not registered" → feedback_interview_node_entities; bumped Dietrich broken links 17 → 36). Cross-reference graph backbone: wrap_path drives broken-link registry + Associated Nodes + stub_linking. |
 | iff_section | ✅ | Anchored to BACKLOG C15 (`dc95d39`). Forcing case for the schema-driven dispatcher + grammar upgrade was `witnesses_testimony` (event-hearings only, not transcript-hearings; `hearing` is shared across both kinds → flat OR-keys couldn't express the AND-conjunction). |
 | key_personnel | ☐ | leadership_class sub-grouping |
 | location_relationships | ☐ | Heterogeneous entity_path |
