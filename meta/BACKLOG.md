@@ -1147,84 +1147,121 @@ the new topic.
 
 The fix isn't just rename. The toolkit lacks a topic-customization
 mechanism altogether — fork-targets currently inherit a hard-coded
-UAP topic identity in field names + rendered headers + (presumably)
+UAP topic identity in field names + rendered headers + (potentially)
 elsewhere as the instance grows. C22 scope is to establish the
 mechanism, then use it to rename ``uap_*`` → ``top_*`` as the first
 application.
 
-**Mechanism.** A simple per-instance topic-info file at
-``meta/topic/topic.yaml`` (or similar):
+**Mechanism.** Promote ``meta/topic/overview.md`` from "required
+prose document" to "the canonical topic-config record." overview.md
+already exists, is required (existence-checked by ``validate.py``
+main()), and carries the topic identity at narrative grade
+(scope statement, primary corpora, agent orientation). Add two
+additive frontmatter fields:
 
 ```yaml
-topic: uap                # lowercase identifier; goes into field-name prefixes
-display_name: UAP         # rendered text in section headers, prose, prompts
+id: meta/topic/overview
+type: meta
+schema_version: 1
+created: 2026-04-17
+topic: uap                # lowercase identifier; matches /meta/topic/ instance
+display_name: UAP         # rendered text in section headers + agent prose
 ```
 
-(Open question on whether more fields belong — full_name, scope-
-description, etc. Start minimal; extend when a real need surfaces.)
+The prose body stays untouched. ``governance_files`` check learns
+the two fields are required when ``id == meta/topic/overview``.
 
-**Bootstrap flow.** First time any toolkit script runs in a fresh
-fork target:
+Rationale: overview.md is already the topic's identity-of-record;
+prose body + structured frontmatter together is the same pattern
+as research artifacts (which carry both YAML config + prose
+``description``). No new required file.
 
-  1. Detect ``meta/topic/topic.yaml`` is missing.
-  2. Prompt the user in terminal:
-     - "What's the topic identifier (lowercase, used as field prefix
-       — e.g., ``uap``, ``warhol``, ``oklahoma-bombing``)?"
-     - "What's the display name (rendered in section headers — e.g.,
-       ``UAP``, ``Warhol Estate``, ``Oklahoma City Bombing``)?"
-  3. Write ``meta/topic/topic.yaml`` with the values.
-  4. Continue the requested command.
+**Bootstrap flow.** Existing fork instructions delete
+``meta/topic/`` along with content. A fresh fork-target needs to
+recreate ``meta/topic/overview.md`` with the new frontmatter
+fields populated + prose-body scaffold. Handled by a new
+paste-ready prompt:
 
-Subsequent runs read the file silently.
+``prompts/fork-init.md`` — paste into a fresh Claude Code session
+when bootstrapping a fork target. The prompt:
+
+  1. Detects ``meta/topic/overview.md`` is missing (validate.py
+     exits 1 with the canonical "Required file missing" error).
+  2. Prompts the user in-conversation for:
+     - ``topic`` identifier (lowercase; e.g., ``uap``, ``warhol``,
+       ``oklahoma-bombing``)
+     - ``display_name`` (rendered text; e.g., ``UAP``, ``Warhol
+       Estate``, ``Oklahoma City Bombing``)
+  3. Generates ``meta/topic/overview.md`` with the new
+     frontmatter fields + topic-statement template + scope-
+     boundaries scaffold (template lives in ``meta/templates/`` or
+     inline in the prompt).
+  4. Runs ``scripts/tests/pre-commit.sh`` to verify clean state.
+  5. Hands off to ``prompts/onboard.md`` for normal session start.
+
+Same pattern as existing ``prompts/onboard.md`` /
+``prompts/build.md`` — a paste-ready workflow for a specific
+phase, not a CLI script.
 
 **Implementation surfaces:**
 
-  - **New file** ``meta/topic/topic.yaml`` (in this instance:
-    ``topic: uap`` + ``display_name: UAP``).
-  - **New helper** in ``scripts/lib/_common.py`` — ``load_topic()``
-    function that reads the file, prompts on missing, returns the
-    parsed dict. Cached per-process.
+  - **overview.md frontmatter** — additive fields ``topic`` +
+    ``display_name`` on the existing required file. No new file.
+  - **``governance_files`` check** — learns that overview.md
+    frontmatter requires ``topic`` + ``display_name`` (gated on
+    ``id == meta/topic/overview``).
+  - **New helper** in ``scripts/lib/_common.py`` —
+    ``load_topic()`` reads overview.md frontmatter, returns
+    ``{topic, display_name}``. Cached per-process. Errors loudly
+    if overview.md is missing or the fields are absent (consistent
+    with the C21 schema-config "no silent fallbacks" principle).
   - **Schema rename** — ``uap_relevance`` → ``top_relevance``;
-    ``uap_scope_activity`` → ``top_scope_activity`` in ``schema.yaml``,
-    ``conditional_keys`` rules, ``required_keys`` invariants, all
-    schema comment cross-references.
+    ``uap_scope_activity`` → ``top_scope_activity`` in
+    ``schema.yaml``, ``conditional_keys`` rules, ``required_keys``
+    invariants, all schema comment cross-references. The schema
+    field-name prefix is fixed-toolkit-neutral as ``top_*``
+    regardless of instance topic; per-instance customization
+    happens at the rendered-header layer via ``display_name``
+    substitution.
   - **Renderer change** — ``scripts/build-from-research.py`` reads
-    topic via ``load_topic()`` and substitutes ``display_name`` in
-    section headers (``## {display_name} Relevance``,
-    ``## {display_name}-Scope Activity``). Other prose surfaces that
-    today hardcode "UAP" or similar should also become topic-aware.
+    ``load_topic()`` and substitutes ``display_name`` in section
+    headers: ``## {display_name} Relevance``,
+    ``## {display_name}-Scope Activity``.
   - **Validator check rename** — rename
-    ``scripts/checks/uap_scope_activity.py`` → ``top_scope_activity.py``
-    plus all internal references.
+    ``scripts/checks/uap_scope_activity.py`` →
+    ``top_scope_activity.py`` plus all internal references.
   - **Existing artifact migration** — rename ``uap_relevance:`` →
     ``top_relevance:`` across the 6 person artifacts; rename
     ``uap_scope_activity:`` → ``top_scope_activity:`` on the 1
     location artifact (skinwalker-ranch).
   - **Existing rendered nodes** — regenerate via
-    ``build-from-research.py``. With ``display_name: UAP`` in this
-    instance's topic.yaml, the rendered output should be byte-
-    identical to current state (UAP-named headers stay UAP-named,
-    just driven by the config rather than hardcoded). Verify via
+    ``build-from-research.py``. With ``display_name: UAP`` in
+    overview.md, the rendered output should be byte-identical to
+    current state (UAP-named headers stay UAP-named, just driven
+    by config rather than hardcoded). Verify via
     ``scripts/tests/pre-commit.sh`` clean pass.
-  - **Documentation** — update README's "Forking for a different
-    topic" section to describe the topic.yaml mechanism + bootstrap
-    flow. Reference from CLAUDE.md if any session-start
-    interaction matters (e.g., "if a script prompts for topic, the
-    fork is being initialized — fill in the values and re-run").
+  - **Prompt** — new ``prompts/fork-init.md`` orchestrating the
+    bootstrap workflow.
+  - **README** — one-sentence amendment to "Forking for a
+    different topic": "After deleting ``meta/topic/``, run
+    ``prompts/fork-init.md`` in a fresh session to bootstrap your
+    topic." No expansion beyond that.
+  - **CLAUDE.md** — no change. Existing-instance contributors
+    don't need to know about the bootstrap flow; overview.md is
+    already in place.
 
 **Audit pass for other UAP-hardcoded surfaces.** Beyond the two
-schema field names, grep the codebase for hardcoded UAP references
-that should also become topic-driven:
+schema field names + their rendered headers, grep the codebase for
+hardcoded UAP references that should also become topic-driven:
 
   - Section headers in templates (``meta/templates/*.md``)
   - Prompt files (``prompts/*.md``)
-  - Build-state placeholder fields in CLAUDE.md
-  - Any error-message strings in checks / scripts
+  - Error-message strings in checks / scripts
 
 Audit findings determine which become topic-aware vs. which stay
 UAP-specific because they're load-bearing for THIS instance's
-investigation (the topic-overview document, the corpus addendum,
-etc.).
+investigation (the topic-statement prose in overview.md, corpus
+addendum names like ``aawsap-dird``, etc.).
 
 **Open question on prefix.** ``top_*`` per the user's instruction
 (shorter); ``topic_*`` is the unambiguous alternative if the
@@ -1236,15 +1273,33 @@ correctly with UAP-named fields. The gap is fork-readiness and
 philosophy-vs-reality alignment. Worth resolving when the toolkit
 is ready to support a second instance.
 
-**Scope.** Mechanism + rename + audit pass. Realistic estimate:
-~4-6 hours focused — small per-piece work multiplied by the
-~6-surface audit + verification that pre-commit stays 0/0
-through the migration. Single coherent session; don't fragment.
+**Scope.** Mechanism + rename + audit pass + bootstrap prompt.
+Realistic estimate: ~4-6 hours focused — small per-piece work
+multiplied by the ~6-surface audit + verification that pre-commit
+stays 0/0 through the migration. Single coherent session; don't
+fragment.
+
+**Design rationale (why this consolidates onto overview.md
+frontmatter rather than introducing a new ``topic.yaml``).** The
+toolkit's existing pattern is "one file owns one identity." research
+artifacts carry both structured fields + prose ``description`` in
+the same file; this design extends that pattern to the topic-
+identity layer. overview.md is already required, already validated,
+already read at session-start by humans + agents. Promoting it from
+"prose document" to "config + prose document" with two additive
+frontmatter fields keeps the topic-identity surface consolidated and
+avoids parallel files that could drift. The README's existing fork
+instructions ("Create your own ``meta/topic/overview.md``") become
+"Run prompts/fork-init.md to generate your overview.md" — same
+required-file destination, just with a paste-ready bootstrap.
 
 Surfaced: C17 ``uap_scope_activity`` investigation revealed the
 contradiction between the toolkit's stated philosophy and schema
-reality. User-directed reframe (this entry) expanded the scope
-from "rename the two fields" to "establish topic-customization
-mechanism, then rename".
+reality. User-directed reframe (Round 1) expanded scope from
+"rename the two fields" to "establish topic-customization
+mechanism, then rename". User-directed reframe (Round 2) consolidated
+the topic-config storage onto overview.md frontmatter rather than a
+new ``topic.yaml`` file, on the principle of complementing the
+existing repo design rather than paralleling it.
 
 
