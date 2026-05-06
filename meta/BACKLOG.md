@@ -1002,21 +1002,47 @@ remains: a refactor that breaks a check's error path is detected only
 when a contributor encounters a real broken input. Documented here so
 the question doesn't get re-litigated each session.
 
-**Status.** Pilot 7 fully ✅ (frontmatter_required, id_path_match,
-conditionally_required, manifest_archive_status, iff_section,
-affiliations, yaml_hash_truncation): module-file introductions traced
-via ``git log --diff-filter=A``, production-issue anchors recorded in
-each module's docstring + the audit-tracking file's notes column,
-paired-check layering observations documented where relevant. 42
-checks remain to investigate.
+**Status.** Complete (49/49 ✅). All named validator checks
+investigated; per-check tracking lives at
+[`meta/toolkit-notes/check-audit.md`](toolkit-notes/check-audit.md).
 
-Pattern observation across the seven: investigations cluster into four
-anchor shapes — reactive incident, defensive feature-pairing,
-renderer-coupled entry-list, foundational schema discipline. The
-remaining 41 should fit roughly into these. The entry-list family
-(17 siblings of affiliations sharing ``_research_utils`` helpers) is
-the largest single batch and should investigate fast off the
-F.{N}-renderer template.
+The investigation surfaced eight substantive findings beyond
+docstring polish:
+
+  - Disproved hypothesis: ``doc_form_archival_status`` (commit
+    ``3ae1296``) — initially flagged as "likely subsumed by
+    conditionally_required"; investigation showed orthogonal
+    concerns, not subsumption.
+  - Filed BACKLOG ``C20`` — ``timeline.timeline_category_values``
+    declares "extensible; validator warns on unknown" but warn was
+    never implemented (commit ``569f725``).
+  - Fixed bug: ``status_archetype_kind`` truthy-guard layering
+    bug (commit ``610a695``) — null archetype/kind/status slipped
+    through both presence + enum checks; tightened to presence-
+    guard semantics.
+  - Synced stale fallback: ``table_cell_word_budget`` hardcoded
+    fallback (50) lagged schema bump to 55 by ~3 weeks (commit
+    ``1352006``).
+  - Filed and CLOSED BACKLOG ``C21`` — silent
+    ``ctx.schema.get(..., default)`` fallbacks across 6 sites
+    masked schema drift; removed all six in a coordinated sweep
+    (commits ``c42acea`` + ``719bca8``).
+  - Fixed schema-doc drift: ``vouching_chain`` schema comments
+    claimed "renders inside Credibility Notes" but renderer emits
+    standalone H2 (commit ``b9905c5``).
+  - Filed BACKLOG ``C22`` — ``uap_relevance`` + ``uap_scope_activity``
+    are explicitly UAP-named, contradicting the toolkit's "schema
+    is topic-neutral" scope claim (commit ``397d994``).
+
+Pattern observation: anchor shapes cluster into roughly six
+families — reactive incident; defensive feature-pairing; renderer-
+coupled entry-list; foundational schema discipline (with sub-shapes
+stable/stable, multi-stage, evolving-discipline, forward-defensive);
+hybrid additive-and-reductive multi-stage; metadata-only channel.
+Multiple paired-check families also surfaced (verbatim_quotes ↔
+coverage; prose_drift ↔ description_token_drift; frontmatter_
+required ↔ id_path_match ↔ status_archetype_kind; relationship-
+shape taxonomy across 4 checks).
 
 Surfaced: C11/C13/C14 closeout audit — verification pass spot-checked
 individual check error paths but didn't commit a per-check review.

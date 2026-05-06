@@ -6,6 +6,28 @@ Present on institutional-actor person artifacts. Each entry: required
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``.
+
+Origin: introduced at commit ``8007ef1`` (F.1a — person schema under
+statements-only discipline) as one of the four archetype-conditional
+checks landed together (alongside corroboration_items,
+publication_record, vouching_chain). Same renderer-coupled-defensive
+shape; same F.1a anchor.
+
+Closed enums shared with ``vouching_chain``:
+
+  - ``evidentiary_basis``: {primary-source, sworn-testimony,
+    on-record, self-attested, secondary} — classifies how the
+    contributor knows about the program involvement
+  - ``confidence``: {high, medium, low} — contributor's evidentiary
+    confidence in the involvement record
+
+The shared vocabulary represents the toolkit's common evidentiary-
+quality classification across credibility-attestation cross-
+references (program_involvement on institutional-actors;
+vouching_chain on whistleblowers).
+
+Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
+C18 confirmed byte-identity through the lift.
 """
 
 from checks import Issue
