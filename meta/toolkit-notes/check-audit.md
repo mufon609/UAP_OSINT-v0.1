@@ -108,7 +108,7 @@ Remaining 42 should land at ✅.
 
 | Check | Status | Notes |
 |---|---|---|
-| boundary | ☐ | Uses `ctx.regenerated_body` lazy cache |
+| boundary | ✅ | Anchored to D.4 introduction (`0a56989`); self-validating dogfood — caught real Fravor divergence on first run (5 errors at smoke). Three drift classes: artifact→node desync, hand-edits, renderer changes. Byte-equal comparison after Associated Nodes excision. Subprocess + caching moved to `ResearchContext.regenerated_body` lazy property at `4b1cfd3` (BACKLOG C16) — defensive design despite no second consumer (rationale: future cross-layer checks shouldn't re-implement). |
 | coverage | ✅ | Anchored to D.4 introduction (`0a56989`). Originally checked both claims[].statement and quotes[].text; simplified to quotes-only at `cde69cf` (claims[] layer elimination). Forms a paired-check family with verbatim_quotes that brackets the source ← quote → node-body integrity chain (verbatim_quotes catches fabrication entering the artifact; coverage catches artifact-vs-rendered-node drift). Both share `lib._common.normalize_for_compare`. |
 | description_token_drift | ✅ | Anchored to `5b1ea03` (Check #6 introduction; dogfooded on first run — caught Fravor's "Congressional" drift, fixed in i5). Same evidentiary axis as prose_drift but rendered-output layer; algorithmically distinct (proper-nouns + designators + numbers + quoted strings vs lowercase content words) — distinction locked in by 2026-05-05 lockstep refactor renaming the tokenizer. Severity model: error per unmatched token (rendered surface, not artifact field). |
 | stub_linking | ☐ | Cross-layer link resolution |
