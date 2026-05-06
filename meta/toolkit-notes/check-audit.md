@@ -53,7 +53,7 @@ Remaining 42 should land at ✅.
 | Check | Status | Notes |
 |---|---|---|
 | chronological_tables | ☐ | H2 table parsing + chronology ordering |
-| conditionally_required | 🟡 | Schema-driven dispatch, both routes |
+| conditionally_required | ✅ | Anchored to `26969ba` (source-taxonomy consolidation surfaced two simultaneous conditionals — archival_status when doc_form==book, Media Versioning when derivation_of). Dispatcher pattern chosen over two hardcoded `if` blocks to keep schema as the single source of truth. Both routes (field-key + section-name) currently exercised. |
 | doc_form_archival_status | ☐ | Likely subsumed by conditionally_required pattern |
 | finding_cross_ref | ☐ | Cross-references entities[] from finding |
 | frontmatter_required | 🟡 | Required-field walk |
