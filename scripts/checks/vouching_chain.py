@@ -6,6 +6,39 @@ confidence, note}.
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``.
+
+Origin: introduced at commit ``8007ef1`` (F.1a — person schema under
+statements-only discipline) as one of the four archetype-conditional
+checks landed together for the F.1a redesign (alongside
+corroboration_items, program_involvement, publication_record).
+Same renderer-coupled-defensive shape as its siblings.
+
+Two CLOSED enum fields:
+
+  - ``evidentiary_basis``: {primary-source, sworn-testimony,
+    on-record, self-attested, secondary}. Categorizes how the
+    voucher knows what they're attesting.
+  - ``confidence``: {high, medium, low}. Contributor's evidentiary
+    confidence in the vouching.
+
+Both shared with ``program_involvement`` (which uses the same
+evidentiary_basis + confidence enums); the vocabulary represents the
+toolkit's common evidentiary-quality classification, applied
+wherever a credibility-attestation cross-reference exists.
+
+Schema-vs-renderer drift fixed during this C17 investigation. Two
+schema comments previously claimed Vouching Chain "renders inside
+``## Credibility Notes``" or "appended to this section's content";
+the actual ``render_vouching_chain`` in build-from-research.py emits
+it as a STANDALONE ``## Vouching Chain`` H2 section between
+Credibility Notes and Associated Nodes (the renderer's own comment
+explicitly confirms this is the design, "to preserve the document
+structure"). Schema comments updated to match the renderer in this
+commit; the check itself was always shape-only and never depended
+on the rendering placement, so no validator change was needed.
+
+Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
+C18 confirmed byte-identity through the lift.
 """
 
 from checks import Issue

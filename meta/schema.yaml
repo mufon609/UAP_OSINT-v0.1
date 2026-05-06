@@ -622,7 +622,10 @@ types:
         required_when_any_of:
           - target_node_archetype_in: [whistleblower]
         # Named attestations supporting the whistleblower's credibility.
-        # Cross-reference surface; renders inside `## Credibility Notes`.
+        # Cross-reference surface. Renders as a standalone
+        # `## Vouching Chain` H2 section between Credibility Notes and
+        # Associated Nodes — see render_vouching_chain in
+        # build-from-research.py.
       background:
         required_when_any_of:
           - target_node_type_in: [person]
@@ -648,8 +651,10 @@ types:
           - target_node_type_in: [person]
         # Prose string (short analytical paragraphs). Renders as the
         # `## Credibility Notes` section. For whistleblower archetypes,
-        # the Vouching Chain subsection is rendered from `vouching_chain`
-        # appended to this section's content.
+        # the standalone `## Vouching Chain` section follows immediately
+        # after Credibility Notes (rendered from `vouching_chain[]`,
+        # NOT inlined into Credibility Notes content) — see
+        # render_vouching_chain in build-from-research.py.
       event_intrinsic:
         required_when_any_of:
           - target_node_type_in: [event]

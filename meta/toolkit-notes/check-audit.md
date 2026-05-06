@@ -101,7 +101,7 @@ Remaining 42 should land at ✅.
 | speakers | ☐ | transcript-only |
 | timeline | ✅ | Anchored to F.1a (`8007ef1`) — one of six entry-list checks landed together. Foundational shape; stable since. Surfaces a real schema-validator gap (logged as BACKLOG C20): schema declares `timeline_category_values` "extensible; validator warns on unknown" but warn was never implemented. Corpus has ~7 unknown values (contract, foia, certification, etc.) honoring the "extensible" intent without surfacing for canonicalization. NEW sub-shape: stable check / unimplemented schema-declared behavior. |
 | uap_scope_activity | ☐ | Location-only |
-| vouching_chain | ☐ | whistleblower archetype |
+| vouching_chain | ✅ | F.1a (`8007ef1`) — one of the four archetype-conditional checks landed for the F.1a redesign. Shares evidentiary_basis + confidence enums with program_involvement (closed enums). C17 investigation surfaced schema-vs-renderer drift: two schema comments claimed Vouching Chain "renders inside ## Credibility Notes" but the renderer (`render_vouching_chain` in build-from-research.py) emits it as a standalone H2. Schema comments fixed to match renderer; check itself was always shape-only and unaffected. |
 | witnesses_testimony | ✅ | F.2a (`13a2859`) — replaced prior "What The Hearing Established" synthesis-prose section with a structured cross-reference table (witnesses → oath status → transcript/written-testimony nodes). Schema gate is THE canonical AND-conjunction case for C15 grammar upgrade (type=event AND kind=hearing; pre-C15 flat OR-keys over-fired on transcript-hearings). Cross-references iff_section's investigation. oath_status enum {sworn, unsworn, affirmation, unknown}. |
 
 ## ResearchContext (Phase III review) — 4 checks
