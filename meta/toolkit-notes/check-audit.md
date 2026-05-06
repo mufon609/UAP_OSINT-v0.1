@@ -80,7 +80,7 @@ Remaining 42 should land at ✅.
 | affiliations | ✅ | Anchored to F.1b (`491e6f3`) — person renderer required structured `affiliations[]` to emit the Confirmed/Flagged-split table sorted by period_start. Extended D.4-era entry-list pattern to affiliations + relationships; later F.X work extended again to the full 18-check family. Same template applies to the 17 sibling entry-list checks. |
 | artifact_top_level | ☐ | Top-level required keys |
 | contracts | ☐ | gov-contractor only; multi-field shape |
-| corroboration_items | ☐ | eyewitness archetype + encounter kind |
+| corroboration_items | ✅ | Anchored to F.1a (`8007ef1`) — one of six entry-list-pattern checks landed together for the F.1a person redesign (alongside chronological_tables + four sibling archetype-conditional surfaces). Renderer-coupled-defensive shape; predates affiliations (F.1b). C15 added encounter-event kind to scope (the OR-disjunction case for the grammar upgrade; witnesses_testimony was the AND-conjunction case). Cross-reference surface, NOT statement surface; .note out of prose-drift scope per 2026-04-21 second scope cut. |
 | cross_refs | ☐ | Cross-entity link consistency |
 | entities | ☐ | entity_entry shape |
 | iff_section | ✅ | Anchored to BACKLOG C15 (`dc95d39`). Forcing case for the schema-driven dispatcher + grammar upgrade was `witnesses_testimony` (event-hearings only, not transcript-hearings; `hearing` is shared across both kinds → flat OR-keys couldn't express the AND-conjunction). |
