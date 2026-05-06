@@ -180,3 +180,45 @@ class ResearchContext(BaseContext):
         self.node_path = node_path
         self.node_text = node_text
         self.source_text = source_text
+        # Lazy regenerated-body cache (BACKLOG C16). First access spawns
+        # build-from-research.py --dry-run --no-validate and stores the
+        # result; subsequent accesses return the cached tuple. Closes the
+        # subprocess-per-cross-layer-check question — multiple consumers
+        # of the regenerated body now share one spawn.
+        self._regenerated = None  # populated lazily as (body, error)
+
+    @property
+    def regenerated_body(self):
+        """Lazily spawn ``build-from-research.py --dry-run --no-validate``
+        for this artifact and return ``(body_text, error_or_None)``.
+        Cached for the lifetime of the ResearchContext — a second cross-
+        layer check accessing this property doesn't respawn the
+        subprocess. ``body_text`` is None when the spawn fails (error
+        message lives in the second tuple element).
+        """
+        if self._regenerated is None:
+            import subprocess
+            from pathlib import Path
+            build_script = (
+                Path(__file__).resolve().parent.parent / "build-from-research.py"
+            )
+            try:
+                proc = subprocess.run(
+                    ["python3", str(build_script),
+                     str(self.path), "--dry-run", "--no-validate"],
+                    capture_output=True, text=True, timeout=60,
+                )
+                if proc.returncode == 0:
+                    self._regenerated = (proc.stdout, None)
+                else:
+                    detail = (proc.stderr.strip() or proc.stdout.strip())[:200]
+                    self._regenerated = (
+                        None,
+                        f"build-from-research.py exited {proc.returncode}: {detail}",
+                    )
+            except subprocess.TimeoutExpired:
+                self._regenerated = (
+                    None,
+                    "build-from-research.py timed out during dry-run",
+                )
+        return self._regenerated

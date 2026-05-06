@@ -5,26 +5,22 @@ matches what ``build-from-research.py --dry-run`` would regenerate
 from the current artifact. Divergence means the artifact drifted from
 the node, the node was hand-edited, or the renderer changed.
 
-Spawns ``python3 build-from-research.py --dry-run --no-validate`` per
-artifact (subprocess overhead; logged as BACKLOG C16 candidate for
-memoization if a second consumer of the regenerated body ever surfaces).
+Reads ``ctx.regenerated_body`` (a lazy ResearchContext property added
+by C16). The first cross-layer check to access the property spawns
+``python3 build-from-research.py --dry-run --no-validate``; the
+result is cached for the lifetime of the context so a second cross-
+layer consumer (when one surfaces) doesn't respawn.
 
-Consumes ``ctx.path`` and ``ctx.node_path`` (set by the review-coverage
-orchestrator after target-node resolution).
+Consumes ``ctx.node_path`` (set by the review-coverage orchestrator
+after target-node resolution) for reading the current rendered body.
 """
 
 import re
-import subprocess
-from pathlib import Path
 
 from checks import Issue
 
 
 CHECK_NAME = "boundary"
-
-
-_REPO_ROOT = Path(__file__).resolve().parent.parent.parent
-_BUILD_FROM_RESEARCH = _REPO_ROOT / "scripts" / "build-from-research.py"
 
 
 def _excise_associated_nodes(text):
@@ -44,32 +40,17 @@ def _excise_associated_nodes(text):
 def check(ctx):
     if ctx.node_path is None:
         return
-    try:
-        proc = subprocess.run(
-            ["python3", str(_BUILD_FROM_RESEARCH),
-             str(ctx.path), "--dry-run", "--no-validate"],
-            capture_output=True, text=True, timeout=60,
-        )
-    except subprocess.TimeoutExpired:
+
+    regenerated, error = ctx.regenerated_body
+    if error is not None:
         yield Issue(
             ctx.rel, "error",
-            "Boundary: build-from-research.py timed out during dry-run",
+            f"Boundary: {error}",
             check_name=CHECK_NAME,
         )
         return
 
-    if proc.returncode != 0:
-        detail = (proc.stderr.strip() or proc.stdout.strip())[:200]
-        yield Issue(
-            ctx.rel, "error",
-            f"Boundary: build-from-research.py exited {proc.returncode}: {detail}",
-            check_name=CHECK_NAME,
-        )
-        return
-
-    regenerated = proc.stdout
     current = ctx.node_path.read_text()
-
     regen_excised = _excise_associated_nodes(regenerated).strip()
     current_excised = _excise_associated_nodes(current).strip()
 
