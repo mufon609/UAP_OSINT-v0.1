@@ -1,14 +1,15 @@
 """id-path-match check — per-node NodeContext check.
 
 Verifies the frontmatter ``id`` field matches the node's file path
-(stripped of the ``.md`` suffix). The ``id`` field is the canonical
+(with the ``.md`` suffix stripped). The ``id`` field is the canonical
 slug-of-record across cross-references; drift between id and path
-produces broken navigation between linked nodes.
+produces broken navigation between linked nodes — a node referenced
+elsewhere as ``[/people/alex]`` whose own frontmatter says
+``id: people/alex-dietrich`` silently breaks any link resolver that
+keys off either form.
 
 Absent id is handled by frontmatter_required; this check no-ops when
-``id`` isn't set.
-
-Lift from validate.py validate_node (C11 session-3 migration).
+``id`` isn't set so the two checks compose without double-reporting.
 """
 
 from checks import Issue

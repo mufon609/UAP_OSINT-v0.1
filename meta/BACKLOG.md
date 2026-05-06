@@ -985,40 +985,33 @@ cases, the corpus pass (no entries with that case) wouldn't catch it
 — but a contributor introducing the case would get silent acceptance
 instead of the intended error.
 
-**Refactor.** Add per-check fixture-based unit tests under
-`scripts/tests/check_tests/`. Each test:
-1. Constructs a synthetic ResearchContext / NodeContext / BaseContext
-   with a deliberately-broken input (e.g., a manifest entry with
-   `archive_status=5` for the manifest_archive_status check).
+**Status: pilot landed.** 7 representative checks audited + tested
+across all five dispatcher shapes (BaseContext / NodeContext / pre-
+parse / per-artifact / Phase III). Fixture helpers live at
+`scripts/tests/check_tests/_fixtures.py`; runner at
+`scripts/tests/run-check-tests.py` is wired as pre-commit gate 4.
+Per-check tracking (status, test counts, sequencing) at
+[`meta/toolkit-notes/check-audit.md`](toolkit-notes/check-audit.md).
+
+**Pattern shipped.** Per-check test module under
+`scripts/tests/check_tests/{check_name}_test.py`:
+1. Constructs a synthetic Context via `_fixtures.make_{base,node,research}_ctx`
+   with a deliberately-broken input.
 2. Invokes the check, collects yielded Issues.
 3. Asserts the expected Issue.check_name, Issue.level, and key
    substring of Issue.message fired.
-4. Optionally tests negative cases (clean input → no Issues).
+4. Mirror case: clean input → no Issues.
 
-Fixtures live alongside the test modules; one test module per check.
-Test runner integrated into pre-commit gate 2 (alongside
-test_stopwords) so regressions block commits.
+The runner exits non-zero on any failure, blocking commits.
 
-**Out of scope for the C11 cluster.** The cluster's retirement
-conditions were "decomposition + Issue contract + manifest lift".
-Unit testing is adjacent infrastructure that the decomposition
-**enables** (each check is now individually importable + invocable
-without fixture scaffolding) but isn't itself a cluster requirement.
+**Remaining.** 42 checks. Sequencing + per-check estimates in the
+audit-tracking file above. Realistic total ~15–20 hours focused
+across 5–8 sessions; batch by Context type so per-batch fixture
+idioms compound.
 
-**Priority.** Medium. Closes a real testing gap surfaced by the
-C11/C13/C14 retrospective. Each unit test is small (~30-50 LOC);
-total scope is ~50 modules × small tests ≈ 1500-2500 LOC of
-straightforward fixture work. Could batch by check category.
-
-**Scope.** Multi-session unless an automated fixture-pattern emerges
-(e.g., a metaprogramming approach that generates tests from check
-docstrings). Realistic shape: pilot 5-10 checks in one session,
-extend to remaining checks across follow-up sessions.
-
-Surfaced: 2026-05-05 C11/C13/C14 closeout audit — verification pass
-spot-checked individual check error paths but didn't commit
-permanent regression coverage. Logged so the gap doesn't drift
-out of awareness.
+Surfaced: C11/C13/C14 closeout audit — verification pass spot-checked
+individual check error paths but didn't commit permanent regression
+coverage. Logged so the gap doesn't drift out of awareness.
 
 ---
 

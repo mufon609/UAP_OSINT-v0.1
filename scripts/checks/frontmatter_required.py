@@ -1,13 +1,13 @@
 """frontmatter-required check — per-node NodeContext check.
 
 Verifies every frontmatter field listed in ``type_spec.frontmatter.required``
-is present on the node's frontmatter. Per-type required field lists are
-declared in ``meta/schema.yaml``.
+is present on the node's frontmatter. Per-type required-field lists are
+declared in ``meta/schema.yaml::types.{T}.frontmatter.required``.
 
-Lift from validate.py validate_node (C11 session-3 migration). Assumes
-the orchestrator has already validated frontmatter parsed cleanly and
-type_spec is non-None (fatal cases handled upstream so per-check
-defensive coding stays minimal).
+Assumes the orchestrator has already parsed frontmatter cleanly and
+populated ``ctx.type_spec`` — fatal cases (parse failure, unknown type)
+are handled upstream, so this check stays minimal and assumes both
+fields are non-None.
 """
 
 from checks import Issue

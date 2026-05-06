@@ -7,12 +7,12 @@ path must appear in ``sources/manifest.yaml``. The four helpers below
 factor that shape so each per-check module isn't a ~50-line copy of
 the same scaffolding.
 
-``section_in_scope`` (added 2026-05-05 with C15) reads
+``section_in_scope`` reads
 ``schema.yaml::types.research-artifact.conditional_keys`` and answers
 "should this section be present on this artifact?" — schema-driven
-gate consumed by every per-section check that previously hard-coded
-its target_type / archetype / kind constants. Single source of truth;
-schema edits land without touching per-check Python.
+gate consumed by every per-section check, paired with ``iff_section``
+which emits placement errors for sections in the wrong scope. Single
+source of truth; schema edits land without touching per-check Python.
 
 Module name carries a leading underscore to signal "private to the
 checks/ package — internal scaffolding, not contract surface."

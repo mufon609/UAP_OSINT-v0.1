@@ -4,21 +4,15 @@ Walks ``schema.yaml::types.research-artifact.conditional_keys`` and
 emits placement errors:
 
   - ``required X key missing`` — when a section's
-    ``required_when_target_node_<dimension>_in`` rules match the
-    artifact's target context but the section is absent
+    ``required_when_any_of`` rules match the artifact's target context
+    but the section is absent
   - ``X key should not be present`` — when no rule matches but the
     section is present anyway
 
-Replaces ~22 inline iff-walker blocks that previously lived in
-``validate_artifact``: the per-section checks each duplicated the
-target_type / target_archetype / target_kind gate logic. This module
-reads the rules from ``schema.yaml`` once per artifact and dispatches.
-The schema becomes the single source of truth; per-section checks
-keep only entry validation and call ``section_in_scope`` for the
-gate.
-
-Closes BACKLOG C15. Schema edits to ``conditional_keys`` land without
-touching per-check Python.
+The schema is the single source of truth for which sections belong on
+which artifacts: per-section checks call ``section_in_scope`` for the
+gate and keep only entry validation. Schema edits to
+``conditional_keys`` land without touching per-check Python.
 
 Per-section checks STILL gate on ``section_in_scope`` and skip
 per-entry validation when the section is wrongly placed — emitting

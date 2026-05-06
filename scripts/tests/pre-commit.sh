@@ -7,15 +7,17 @@
 #   2. scripts/tests/test_stopwords.py  — STOPWORDS shape + no content-word
 #                                         contamination (lib/_common.py)
 #   3. scripts/tests/smoke.sh           — fixture scaffold + validate per type
-#   4. python3 scripts/validate.py      — structural + verbatim-quote +
+#   4. scripts/tests/run-check-tests.py — per-check unit tests with synthetic
+#                                         broken-input fixtures (BACKLOG C17)
+#   5. python3 scripts/validate.py      — structural + verbatim-quote +
 #                                         governance-file + conditionally_required
-#   5. python3 scripts/validate-research.py
+#   6. python3 scripts/validate-research.py
 #                                       — research-artifact structural check
-#   6. python3 scripts/review-coverage.py --all
+#   7. python3 scripts/review-coverage.py --all
 #                                       — cross-layer check (artifact ↔ rendered
 #                                         node): coverage / boundary /
 #                                         stub-linking / description-drift
-#   7. python3 scripts/build-state.py --check
+#   8. python3 scripts/build-state.py --check
 #                                       — CLAUDE.md build-state block in sync
 #
 # Covers: BACKLOG "Testing infrastructure" step 4 (pre-commit hook).
@@ -87,6 +89,7 @@ steps=(
     $'help-check\tbash scripts/tests/help-check.sh'
     $'test_stopwords\tpython3 scripts/tests/test_stopwords.py'
     $'smoke\tbash scripts/tests/smoke.sh'
+    $'check-tests\tpython3 scripts/tests/run-check-tests.py'
     $'validate.py\tpython3 scripts/validate.py'
     $'validate-research.py\tpython3 scripts/validate-research.py'
     $'review-coverage.py\tpython3 scripts/review-coverage.py --all'

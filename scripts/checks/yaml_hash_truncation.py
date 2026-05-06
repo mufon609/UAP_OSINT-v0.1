@@ -1,18 +1,19 @@
-"""yaml-hash-truncation check — pre-parse research-artifact pilot (C11).
+"""yaml-hash-truncation check — pre-parse research-artifact ResearchContext check.
 
 Scans raw lines for unquoted scalar values that contain ``space + #`` and
 get silently truncated by YAML's comment handling. Surfaces as warn —
-the YAML is technically valid; the check is flagging a likely
-contributor mistake (typing prose with embedded "#N" references like
-"Issue #3", "channel #23").
+the YAML is technically valid; the check flags a likely contributor
+mistake (typing prose with embedded ``#N`` references like
+``Issue #3`` or ``channel #23``, where YAML eats everything after
+the ``#`` as a trailing comment).
 
-Pre-parse: runs against the file's raw line text BEFORE yaml.safe_load.
-The orchestrator opens the file once and exposes the lines via
-``ctx.raw_lines``; this check only reads, never parses.
+Pre-parse: runs against the file's raw line text BEFORE
+``yaml.safe_load``. The orchestrator opens the file once and exposes
+the lines via ``ctx.raw_lines``; this check only reads.
 
 Heuristic tolerates one-line trailing comments (post-`#` content under
 3 words plausibly a deliberate contributor note). Only warns when the
-post-`#` content looks substantive (>= 3 words) — that's the shape that
+post-`#` content looks substantive (≥ 3 words) — that's the shape that
 indicates accidental truncation of prose.
 """
 

@@ -18,9 +18,10 @@ Also catches contradictory ``wayback_skip: true`` + ``wayback_date``
 combinations (a URL is either skippable from Wayback OR has a
 snapshot, not both).
 
-Consumes ``BaseContext.manifest_entries`` from the orchestrator's
-single manifest load (closes manifest-load-3x duplication along with
-the other manifest checks).
+Consumes ``BaseContext.manifest_entries`` — the orchestrator loads
+``sources/manifest.yaml`` once per invocation and shares it across
+the three manifest checks (manifest_checksums, manifest_archive_status,
+manifest_extraction_type) so the file isn't re-parsed per check.
 """
 
 from checks import Issue

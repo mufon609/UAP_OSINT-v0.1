@@ -16,16 +16,17 @@ a new conditional genuinely needs it):
   - ``<field> == <literal>`` — equality check; literal is \\w-separated token
   - ``<field> is set`` — field is present and truthy in frontmatter
 
-Replaces two earlier hardcoded checks (archival_status when doc_form
-is book; Media Versioning section when derivation_of is set) so future
+Schema-driven dispatch replaces what would otherwise be a hardcoded
+per-conditional check per case (e.g., archival_status when doc_form ==
+book; Media Versioning section when derivation_of is set), so new
 conditionals land as schema edits alone. Malformed condition strings
-surface as validator errors so schema drift is loud.
+surface as validator errors — schema drift fails loudly rather than
+silently no-op'ing.
 
-Lift from validate.py (C11 session-3 migration). Existing function
-shape adapted to the ``check(ctx)`` contract; uses ``ctx.h2_sections``
-lazy property to avoid duplicate H2 extraction with required_sections /
-section_rules / table_cell_word_budget when those checks run on the
-same NodeContext.
+Reads ``ctx.h2_sections`` for the section-name route — the lazy
+property memoizes H2 extraction so this check shares the work with
+required_sections / section_rules / table_cell_word_budget on the
+same NodeContext (one extraction, multiple consumers).
 """
 
 import re
