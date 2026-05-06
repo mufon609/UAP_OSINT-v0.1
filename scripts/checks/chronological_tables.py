@@ -22,7 +22,6 @@ exercises the per-node iteration shape end-to-end.
 import re
 
 from checks import Issue
-from lib._common import extract_h2_sections, extract_section
 
 
 CHECK_NAME = "chronological_tables"
@@ -92,10 +91,12 @@ def _parse_table_row(row_line):
 def check(ctx):
     """Yield Issues for any date-bearing table where rows aren't
     earliest-first. Warn on unparseable date cells; error on out-of-
-    order rows."""
-    h2_sections = extract_h2_sections(ctx.text)
-    for section_name in h2_sections:
-        section_text = extract_section(ctx.text, section_name)
+    order rows. Uses NodeContext lazy h2_sections + section_text caches
+    to share H2 extraction with the other section-walking checks
+    (required_sections, section_rules, table_cell_word_budget,
+    conditionally_required)."""
+    for section_name in ctx.h2_sections:
+        section_text = ctx.section_text(section_name)
         if section_text is None:
             continue
 
