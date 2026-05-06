@@ -6,6 +6,36 @@ flagged, note}.
 
 Gating delegated to ``section_in_scope`` (schema-driven); placement
 errors come from ``iff_section``.
+
+Origin: introduced at commit ``8d377c0`` (F.5a — "schema + template
++ validator + scaffolder for organization renderer"). Same anchor
+as ``contracts`` and ``org_relationships``; all three are F.5
+organization-renderer-coupled entry-list checks.
+
+CLOSED ``leadership_class`` enum {director, deputy, staff, advisor,
+other} drives renderer sub-grouping in the Key Personnel section:
+Directors / Deputy Leadership / Other Named Personnel buckets. Same
+sub-grouping pattern as ``participants.capacity`` (events) — the
+enum value mechanically routes the entry to its rendering subsection.
+
+Distinct from participants.capacity in optionality: leadership_class
+is OPTIONAL on entries (entries without it fall through to "Other
+Named Personnel" bucket per the schema). Only INVALID values error;
+absence is the graceful default. participants.capacity is
+required (no graceful default; missing capacity is an error). The
+softer optional-with-fallback design fits key_personnel's mixed
+corpus — many personnel entries are documented from sources that
+don't specify hierarchical role, so requiring leadership_class
+would force contributor speculation.
+
+``role`` is free-text (not enum). Same pattern as
+``affiliations.role`` — free-text role descriptions allow the
+diversity of org-specific titles ("Founding Director", "Acting
+Deputy Secretary", "Director, Office of Naval Intelligence") that
+no closed enum could cleanly capture.
+
+Migration: ``00a985d`` (C11 session 3 lift to per-module shape).
+C18 confirmed byte-identity through the lift.
 """
 
 from checks import Issue
