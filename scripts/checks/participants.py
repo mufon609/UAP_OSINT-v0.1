@@ -53,17 +53,17 @@ from checks._research_utils import (
 
 CHECK_NAME = "participants"
 
-VALID_CAPACITY = {
-    "witness-eyewitness", "witness-whistleblower", "witness-institutional",
-    "committee-member", "observer", "official", "other",
-}
-
 
 def check(ctx):
     if not section_in_scope(ctx, "participants"):
         return
     if "participants" not in ctx.data:
         return
+
+    # Schema-driven enum for ``capacity`` from
+    # ``participant_entry.capacity_values``.
+    valid_capacity = ctx.schema["types"]["research-artifact"][
+        "participant_entry"]["capacity_values"]
 
     items = entries(ctx.data, "participants")
     yield from check_unique_ids(ctx.rel, items, "participants", CHECK_NAME)
@@ -87,11 +87,11 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
         cap = e.get("capacity")
-        if cap and cap not in VALID_CAPACITY:
+        if cap and cap not in valid_capacity:
             yield Issue(
                 ctx.rel, "error",
                 f"participants[{i}] ({e.get('id')!r}): "
-                f"capacity {cap!r} not in {sorted(VALID_CAPACITY)}",
+                f"capacity {cap!r} not in {sorted(valid_capacity)}",
                 check_name=CHECK_NAME,
             )
         yield from require_source_dict(

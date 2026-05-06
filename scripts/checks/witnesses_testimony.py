@@ -59,14 +59,15 @@ from checks._research_utils import (
 
 CHECK_NAME = "witnesses_testimony"
 
-VALID_OATH_STATUS = {"sworn", "unsworn", "affirmation", "unknown"}
-
 
 def check(ctx):
     if not section_in_scope(ctx, "witnesses_testimony"):
         return
     if "witnesses_testimony" not in ctx.data:
         return
+
+    valid_oath_status = ctx.schema["types"]["research-artifact"][
+        "witnesses_testimony_entry"]["oath_status_values"]
 
     items = entries(ctx.data, "witnesses_testimony")
     yield from check_unique_ids(ctx.rel, items, "witnesses_testimony", CHECK_NAME)
@@ -91,11 +92,11 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
         oath = e.get("oath_status")
-        if oath and oath not in VALID_OATH_STATUS:
+        if oath and oath not in valid_oath_status:
             yield Issue(
                 ctx.rel, "error",
                 f"witnesses_testimony[{i}] ({e.get('id')!r}): "
-                f"oath_status {oath!r} not in {sorted(VALID_OATH_STATUS)}",
+                f"oath_status {oath!r} not in {sorted(valid_oath_status)}",
                 check_name=CHECK_NAME,
             )
         for optional_path_field in ("transcript_node", "written_testimony_node"):

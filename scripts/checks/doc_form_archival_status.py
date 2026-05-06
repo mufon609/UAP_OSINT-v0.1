@@ -61,9 +61,14 @@ def check(ctx):
     fm = ctx.fm
     type_spec = ctx.type_spec
 
-    valid_forms = type_spec.get("doc_form_values", [])
+    # Direct subscripts: both ``doc_form_values`` and
+    # ``archival_status_values`` are declared on the document type spec
+    # per schema.yaml; this check is gated to ``node_type == "document"``
+    # so absence at runtime would be schema drift. Loud KeyError per
+    # the C21 no-silent-fallbacks principle.
+    valid_forms = type_spec["doc_form_values"]
     df = fm.get("doc_form")
-    if df and valid_forms and df not in valid_forms:
+    if df and df not in valid_forms:
         yield Issue(
             ctx.rel, "warn",
             f"Unknown doc_form '{df}' (not in schema list; add if established)",
@@ -72,8 +77,8 @@ def check(ctx):
 
     if fm.get("archival_status"):
         archival = fm["archival_status"]
-        valid_archival = type_spec.get("archival_status_values", [])
-        if valid_archival and archival not in valid_archival:
+        valid_archival = type_spec["archival_status_values"]
+        if archival not in valid_archival:
             yield Issue(
                 ctx.rel, "error",
                 f"Invalid archival_status {archival!r}. Valid: {valid_archival}",

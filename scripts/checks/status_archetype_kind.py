@@ -63,8 +63,16 @@ def check(ctx):
     # enum check and errors because None is not a valid enum value.
     # Truthy-guard semantics here would skip null values and create
     # a layering gap with frontmatter_required's presence-only check.
-    status_values = type_spec.get("status_values", [])
-    if "status" in fm and status_values and fm["status"] not in status_values:
+    #
+    # ``status_values`` is universal (every type declares one per
+    # schema.yaml); direct subscript surfaces a loud KeyError on
+    # schema drift per the C21 no-silent-fallbacks principle.
+    # ``archetypes`` / ``kinds`` are polymorphic (person has archetypes
+    # but no kinds; orgs/docs/events/transcripts/media have kinds but
+    # no archetypes; locations / findings have neither) — the .get
+    # fallbacks are meaningful absences, not drift masks.
+    status_values = type_spec["status_values"]
+    if "status" in fm and fm["status"] not in status_values:
         yield Issue(
             ctx.rel, "error",
             f"Invalid status {fm['status']!r}. Valid: {status_values}",

@@ -63,17 +63,15 @@ from checks._research_utils import (
 
 CHECK_NAME = "org_relationships"
 
-VALID_RELATIONSHIP_TYPE = {
-    "parent", "subsidiary", "predecessor", "successor",
-    "contractor", "contracting-agency", "partner", "other",
-}
-
 
 def check(ctx):
     if not section_in_scope(ctx, "org_relationships"):
         return
     if "org_relationships" not in ctx.data:
         return
+
+    valid_relationship_type = ctx.schema["types"]["research-artifact"][
+        "org_relationship_entry"]["relationship_type_values"]
 
     items = entries(ctx.data, "org_relationships")
     yield from check_unique_ids(ctx.rel, items, "org_relationships", CHECK_NAME)
@@ -98,11 +96,11 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
         rt = e.get("relationship_type")
-        if rt is not None and rt not in VALID_RELATIONSHIP_TYPE:
+        if rt is not None and rt not in valid_relationship_type:
             yield Issue(
                 ctx.rel, "error",
                 f"org_relationships[{i}] ({e.get('id')!r}): "
-                f"relationship_type {rt!r} not in {sorted(VALID_RELATIONSHIP_TYPE)}",
+                f"relationship_type {rt!r} not in {sorted(valid_relationship_type)}",
                 check_name=CHECK_NAME,
             )
         yield from require_source_dict(

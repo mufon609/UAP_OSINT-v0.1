@@ -50,14 +50,15 @@ from checks._research_utils import (
 
 CHECK_NAME = "key_personnel"
 
-VALID_LEADERSHIP_CLASS = {"director", "deputy", "staff", "advisor", "other"}
-
 
 def check(ctx):
     if not section_in_scope(ctx, "key_personnel"):
         return
     if "key_personnel" not in ctx.data:
         return
+
+    valid_leadership_class = ctx.schema["types"]["research-artifact"][
+        "key_personnel_entry"]["leadership_class_values"]
 
     items = entries(ctx.data, "key_personnel")
     yield from check_unique_ids(ctx.rel, items, "key_personnel", CHECK_NAME)
@@ -81,11 +82,11 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
         lc = e.get("leadership_class")
-        if lc is not None and lc not in VALID_LEADERSHIP_CLASS:
+        if lc is not None and lc not in valid_leadership_class:
             yield Issue(
                 ctx.rel, "error",
                 f"key_personnel[{i}] ({e.get('id')!r}): "
-                f"leadership_class {lc!r} not in {sorted(VALID_LEADERSHIP_CLASS)}",
+                f"leadership_class {lc!r} not in {sorted(valid_leadership_class)}",
                 check_name=CHECK_NAME,
             )
         yield from require_source_dict(

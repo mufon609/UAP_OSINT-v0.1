@@ -58,12 +58,11 @@ from checks._research_utils import (
 
 CHECK_NAME = "naming_quirks"
 
-VALID_RESOLUTIONS = {
-    "preserve-as-sic-in-quotes", "use-canonical", "disputed", "unresolved",
-}
-
 
 def check(ctx):
+    valid_resolutions = ctx.schema["types"]["research-artifact"][
+        "naming_quirk_entry"]["resolution_values"]
+
     items = entries(ctx.data, "naming_quirks")
     yield from check_unique_ids(ctx.rel, items, "naming_quirks", CHECK_NAME)
     for i, nq in enumerate(items):
@@ -78,11 +77,11 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
         res = nq.get("resolution")
-        if res is not None and res not in VALID_RESOLUTIONS:
+        if res is not None and res not in valid_resolutions:
             yield Issue(
                 ctx.rel, "error",
                 f"naming_quirks[{i}] ({nq.get('id')!r}): resolution {res!r} "
-                f"not in {sorted(VALID_RESOLUTIONS)}",
+                f"not in {sorted(valid_resolutions)}",
                 check_name=CHECK_NAME,
             )
         sp = nq.get("source_path")

@@ -71,13 +71,11 @@ from checks._research_utils import (
 
 CHECK_NAME = "entities_referenced"
 
-VALID_ENTITY_TYPES = {
-    "person", "organization", "document", "event", "transcript",
-    "media", "location", "finding",
-}
-
 
 def check(ctx):
+    valid_entity_types = ctx.schema["types"]["research-artifact"][
+        "entity_entry"]["entity_type_values"]
+
     items = entries(ctx.data, "entities_referenced")
     yield from check_unique_ids(ctx.rel, items, "entities_referenced", CHECK_NAME)
     quote_ids = {q.get("id") for q in entries(ctx.data, "quotes")
@@ -93,11 +91,11 @@ def check(ctx):
                 f"entities_referenced[{i}] ({e.get('id')!r}): missing 'entity_type'",
                 check_name=CHECK_NAME,
             )
-        elif et not in VALID_ENTITY_TYPES:
+        elif et not in valid_entity_types:
             yield Issue(
                 ctx.rel, "error",
                 f"entities_referenced[{i}] ({e.get('id')!r}): entity_type "
-                f"{et!r} not in {sorted(VALID_ENTITY_TYPES)}",
+                f"{et!r} not in {sorted(valid_entity_types)}",
                 check_name=CHECK_NAME,
             )
         if not e.get("name"):

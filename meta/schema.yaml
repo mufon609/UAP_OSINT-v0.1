@@ -459,6 +459,21 @@ types:
     path_prefix: meta/research/
     format: yaml
 
+    # Closed-enum values for the artifact itself. ``status_values`` covers
+    # the artifact's own ``status`` field. ``evidentiary_basis_values`` and
+    # ``confidence_values`` are shared classifications used by both
+    # ``program_involvement_entry`` and ``vouching_chain_entry`` — declared
+    # once here so the two consumers read from a single source rather than
+    # duplicating the lists in each entry definition.
+    status_values: [active, archived]
+    evidentiary_basis_values:
+      - primary-source
+      - sworn-testimony
+      - on-record
+      - self-attested
+      - secondary
+    confidence_values: [high, medium, low]
+
     # Top-level required keys — the research artifact is a flat YAML dict
     # (no markdown frontmatter / body distinction since it's pure YAML).
     required_keys:
@@ -799,6 +814,7 @@ types:
     quote_entry:
       required: [text, source]
       optional: [significance, context, observation_type, category, statement_date]
+      observation_type_values: [direct, relayed]
       # text: verbatim quote, YAML literal block (|) preserves multi-line
       # source: object with path + location (single source per quote)
       # context: where / when / under what circumstances the speaker
@@ -854,6 +870,15 @@ types:
     entity_entry:
       required: [entity_type, name, wrap_path]
       optional: [context_summary, references]
+      entity_type_values:
+        - person
+        - organization
+        - document
+        - event
+        - transcript
+        - media
+        - location
+        - finding
       # entity_type: person | organization | document | event | location | finding
       # name: display name
       # wrap_path: canonical repo path (/people/..., /organizations/..., etc.)
@@ -863,6 +888,7 @@ types:
     rumor_entry:
       required: [claim, status]
       optional: [observed_sources, note]
+      status_values: [not-primary-source-established, primary-source-disputed]
       # claim: the circulating claim as prose
       # status: not-primary-source-established | primary-source-disputed
       #   Fabrication-prevention catalogue. Rumors are artifact-only
@@ -903,6 +929,11 @@ types:
     corroboration_entry:
       required: [observer_path, observation_type, source]
       optional: [observed_event_ref, note]
+      observation_type_values:
+        - testimonial
+        - instrumented
+        - government-statement
+        - documentary
       # observer_path: /people/... or /organizations/... — the corroborator
       # observation_type: testimonial | instrumented | government-statement |
       #                   documentary
@@ -965,6 +996,14 @@ types:
     participant_entry:
       required: [participant_path, capacity, source]
       optional: [role, flagged, note]
+      capacity_values:
+        - witness-eyewitness
+        - witness-whistleblower
+        - witness-institutional
+        - committee-member
+        - observer
+        - official
+        - other
       # participant_path: /people/... or /organizations/... path
       # capacity: one of [witness-eyewitness, witness-whistleblower,
       #   witness-institutional, committee-member, observer, official,
@@ -976,6 +1015,7 @@ types:
     witnesses_testimony_entry:
       required: [witness_path, oath_status, source]
       optional: [transcript_node, written_testimony_node, note]
+      oath_status_values: [sworn, unsworn, affirmation, unknown]
       # witness_path: /people/... of the witness
       # oath_status: sworn | unsworn | affirmation | unknown
       # transcript_node: /transcripts/... cross-reference (if built)
@@ -1002,6 +1042,7 @@ types:
     key_personnel_entry:
       required: [person_path, role, source]
       optional: [period_start, period_end, leadership_class, flagged, note]
+      leadership_class_values: [director, deputy, staff, advisor, other]
       # person_path: /people/... path of the individual
       # role: free-text role title at this organization (e.g., "Director",
       #   "Founding Director", "Acting Director", "Deputy Secretary",
@@ -1057,6 +1098,15 @@ types:
     org_relationship_entry:
       required: [organization_path, relationship_type, source]
       optional: [flagged, note]
+      relationship_type_values:
+        - parent
+        - subsidiary
+        - predecessor
+        - successor
+        - contractor
+        - contracting-agency
+        - partner
+        - other
       # organization_path: /organizations/... path of the other org
       # relationship_type: enum — one of
       #   [parent, subsidiary, predecessor, successor, contractor,
@@ -1132,6 +1182,7 @@ types:
     media_versioning_entry:
       required: [id, aspect, parent_form, this_form, source]
       optional: [note]
+      aspect_values: [duration, encoding, metadata, content, provenance, other]
       # aspect: one of [duration, encoding, metadata, content, provenance,
       #   other] — enum keeps the table's top-level structure scannable
       #   and enables future cross-node queries (e.g., "show all media
@@ -1164,6 +1215,7 @@ types:
     naming_quirk_entry:
       required: [observed, canonical, location, source_path, resolution]
       optional: [note]
+      resolution_values: [preserve-as-sic-in-quotes, use-canonical, disputed, unresolved]
       # observed: as it appears in source (e.g., "Leslie Keane")
       # canonical: corrected form (e.g., "Leslie Kean")
       # resolution: preserve-as-sic-in-quotes | use-canonical | disputed | unresolved
@@ -1174,7 +1226,6 @@ types:
       # Frontmatter / top-level
       - "target_node field points to a file that exists (type/slug.md)"
       - "schema_version value appears in schema.compatible_with"
-      - "status is one of [active, archived]"
 
       # Entry-level
       - "every entry id is unique within its section"
@@ -1185,20 +1236,29 @@ types:
       - "every reference in entity.references points to an existing quote.id"
       - "every superseded_by / contradicted_by / corroborated_by ref points to an existing entry id (or is a structured external ref)"
 
-      # Enum values
-      - "resolution (naming_quirks) in [preserve-as-sic-in-quotes, use-canonical, disputed, unresolved]"
-      - "rumor status in [not-primary-source-established, primary-source-disputed]"
-      - "entity entity_type in [person, organization, document, event, transcript, media, location, finding]"
-      - "observation_type (quotes, required on person artifacts) in [direct, relayed]"
+      # Closed-enum values — single source of truth lives on the entry-
+      # type definition (or the research-artifact root for shared
+      # vocabularies). Listed here for at-a-glance discovery; the
+      # ``*_values`` lists on each ``*_entry`` definition (and on the
+      # research-artifact root for ``status_values`` /
+      # ``evidentiary_basis_values`` / ``confidence_values``) are what
+      # the validator actually reads.
+      - "research-artifact.status: status_values (active | archived)"
+      - "quote_entry.observation_type: quote_entry.observation_type_values"
+      - "entity_entry.entity_type: entity_entry.entity_type_values"
+      - "rumor_entry.status: rumor_entry.status_values"
+      - "corroboration_entry.observation_type: corroboration_entry.observation_type_values"
+      - "participant_entry.capacity: participant_entry.capacity_values"
+      - "witnesses_testimony_entry.oath_status: witnesses_testimony_entry.oath_status_values"
+      - "key_personnel_entry.leadership_class (when set): key_personnel_entry.leadership_class_values"
+      - "org_relationship_entry.relationship_type: org_relationship_entry.relationship_type_values"
+      - "naming_quirk_entry.resolution: naming_quirk_entry.resolution_values"
+      - "media_versioning_entry.aspect: media_versioning_entry.aspect_values (warn on unknown; ``other`` permitted)"
+      - "program_involvement_entry.evidentiary_basis + vouching_chain_entry.evidentiary_basis: research-artifact.evidentiary_basis_values"
+      - "program_involvement_entry.confidence + vouching_chain_entry.confidence: research-artifact.confidence_values"
+
+      # Other field-shape rules
       - "context (quotes) required on person artifacts; optional on document / transcript / media"
-      - "corroboration_items[].observation_type in [testimonial, instrumented, government-statement, documentary]"
-      - "program_involvement[].evidentiary_basis in [primary-source, sworn-testimony, on-record, self-attested, secondary]"
-      - "program_involvement[].confidence in [high, medium, low]"
-      - "participants[].capacity in [witness-eyewitness, witness-whistleblower, witness-institutional, committee-member, observer, official, other]"
-      - "witnesses_testimony[].oath_status in [sworn, unsworn, affirmation, unknown]"
-      - "media_versioning[].aspect in [duration, encoding, metadata, content, provenance, other] (warn on unknown; `other` permitted)"
-      - "key_personnel[].leadership_class (when set) in [director, deputy, staff, advisor, other]"
-      - "org_relationships[].relationship_type in [parent, subsidiary, predecessor, successor, contractor, contracting-agency, partner, other]"
 
       # Conditional sections
       - "rumors section present if target_node type in [person, organization, event, location]; absent otherwise"

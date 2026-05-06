@@ -73,10 +73,16 @@ from checks._research_utils import (
 
 CHECK_NAME = "quotes"
 
-VALID_OBSERVATION_TYPES = {"direct", "relayed"}
-
 
 def check(ctx):
+    # Schema-driven enum: closed values for ``observation_type`` come
+    # from ``schema.yaml::types.research-artifact.quote_entry
+    # .observation_type_values``. Direct subscript surfaces a loud
+    # KeyError on schema malformation per the C21 no-silent-fallbacks
+    # principle.
+    valid_observation_types = ctx.schema["types"]["research-artifact"][
+        "quote_entry"]["observation_type_values"]
+
     quotes = entries(ctx.data, "quotes")
     yield from check_unique_ids(ctx.rel, quotes, "quotes", CHECK_NAME)
     for i, q in enumerate(quotes):
@@ -125,14 +131,14 @@ def check(ctx):
                     ctx.rel, "error",
                     f"quotes[{i}] ({q.get('id')!r}): missing required "
                     f"'observation_type' (required on person artifacts; "
-                    f"value in {sorted(VALID_OBSERVATION_TYPES)})",
+                    f"value in {sorted(valid_observation_types)})",
                     check_name=CHECK_NAME,
                 )
-            elif obs not in VALID_OBSERVATION_TYPES:
+            elif obs not in valid_observation_types:
                 yield Issue(
                     ctx.rel, "error",
                     f"quotes[{i}] ({q.get('id')!r}): observation_type "
-                    f"{obs!r} not in {sorted(VALID_OBSERVATION_TYPES)}",
+                    f"{obs!r} not in {sorted(valid_observation_types)}",
                     check_name=CHECK_NAME,
                 )
             ctx_field = q.get("context")

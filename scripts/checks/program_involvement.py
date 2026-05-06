@@ -42,17 +42,19 @@ from checks._research_utils import (
 
 CHECK_NAME = "program_involvement"
 
-VALID_EVIDENTIARY_BASIS = {
-    "primary-source", "sworn-testimony", "on-record", "self-attested", "secondary",
-}
-VALID_CONFIDENCE = {"high", "medium", "low"}
-
 
 def check(ctx):
     if not section_in_scope(ctx, "program_involvement"):
         return
     if "program_involvement" not in ctx.data:
         return
+
+    # ``evidentiary_basis_values`` and ``confidence_values`` are
+    # research-artifact-level shared classifications (also consumed by
+    # vouching_chain).
+    research_artifact = ctx.schema["types"]["research-artifact"]
+    valid_evidentiary_basis = research_artifact["evidentiary_basis_values"]
+    valid_confidence = research_artifact["confidence_values"]
 
     items = entries(ctx.data, "program_involvement")
     yield from check_unique_ids(ctx.rel, items, "program_involvement", CHECK_NAME)
@@ -69,19 +71,19 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
         eb = e.get("evidentiary_basis")
-        if eb and eb not in VALID_EVIDENTIARY_BASIS:
+        if eb and eb not in valid_evidentiary_basis:
             yield Issue(
                 ctx.rel, "error",
                 f"program_involvement[{i}] ({e.get('id')!r}): "
-                f"evidentiary_basis {eb!r} not in {sorted(VALID_EVIDENTIARY_BASIS)}",
+                f"evidentiary_basis {eb!r} not in {sorted(valid_evidentiary_basis)}",
                 check_name=CHECK_NAME,
             )
         conf = e.get("confidence")
-        if conf and conf not in VALID_CONFIDENCE:
+        if conf and conf not in valid_confidence:
             yield Issue(
                 ctx.rel, "error",
                 f"program_involvement[{i}] ({e.get('id')!r}): "
-                f"confidence {conf!r} not in {sorted(VALID_CONFIDENCE)}",
+                f"confidence {conf!r} not in {sorted(valid_confidence)}",
                 check_name=CHECK_NAME,
             )
         yield from require_source_dict(

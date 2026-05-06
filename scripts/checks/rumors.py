@@ -61,14 +61,15 @@ from checks._research_utils import (
 
 CHECK_NAME = "rumors"
 
-VALID_STATUSES = {"not-primary-source-established", "primary-source-disputed"}
-
 
 def check(ctx):
     if not section_in_scope(ctx, "rumors"):
         return  # iff_section handled placement; skip per-entry validation
     if "rumors" not in ctx.data:
         return  # iff_section emitted "required missing"; nothing to validate
+
+    valid_statuses = ctx.schema["types"]["research-artifact"][
+        "rumor_entry"]["status_values"]
 
     items = entries(ctx.data, "rumors")
     yield from check_unique_ids(ctx.rel, items, "rumors", CHECK_NAME)
@@ -89,10 +90,10 @@ def check(ctx):
                 f"rumors[{i}] ({r.get('id')!r}): missing required 'status'",
                 check_name=CHECK_NAME,
             )
-        elif status not in VALID_STATUSES:
+        elif status not in valid_statuses:
             yield Issue(
                 ctx.rel, "error",
                 f"rumors[{i}] ({r.get('id')!r}): status {status!r} "
-                f"not in {sorted(VALID_STATUSES)}",
+                f"not in {sorted(valid_statuses)}",
                 check_name=CHECK_NAME,
             )

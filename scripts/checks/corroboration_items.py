@@ -56,16 +56,20 @@ from checks._research_utils import (
 
 CHECK_NAME = "corroboration_items"
 
-VALID_OBSERVATION_TYPES = {
-    "testimonial", "instrumented", "government-statement", "documentary",
-}
-
 
 def check(ctx):
     if not section_in_scope(ctx, "corroboration_items"):
         return
     if "corroboration_items" not in ctx.data:
         return
+
+    # Schema-driven enum: ``observation_type`` values come from
+    # ``corroboration_entry.observation_type_values`` (different value
+    # set than ``quote_entry.observation_type_values`` despite the
+    # shared field name — corroboration is testimonial/instrumented/
+    # government-statement/documentary; quote is direct/relayed).
+    valid_observation_types = ctx.schema["types"]["research-artifact"][
+        "corroboration_entry"]["observation_type_values"]
 
     items = entries(ctx.data, "corroboration_items")
     yield from check_unique_ids(ctx.rel, items, "corroboration_items", CHECK_NAME)
@@ -82,11 +86,11 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
         ot = e.get("observation_type")
-        if ot and ot not in VALID_OBSERVATION_TYPES:
+        if ot and ot not in valid_observation_types:
             yield Issue(
                 ctx.rel, "error",
                 f"corroboration_items[{i}] ({e.get('id')!r}): "
-                f"observation_type {ot!r} not in {sorted(VALID_OBSERVATION_TYPES)}",
+                f"observation_type {ot!r} not in {sorted(valid_observation_types)}",
                 check_name=CHECK_NAME,
             )
         op = e.get("observer_path")

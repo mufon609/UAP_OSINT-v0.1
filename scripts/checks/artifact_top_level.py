@@ -108,10 +108,13 @@ DESCRIPTION_REQUIRED_TYPES = {
     "organization", "finding", "location",
 }
 
-VALID_STATUS = {"active", "archived"}
-
 
 def check(ctx):
+    # Research-artifact's own ``status`` enum lives in the schema's
+    # ``research-artifact.status_values`` (shared discipline with the
+    # other entry-level enums). Direct subscript per the C21 no-silent-
+    # fallbacks principle.
+    valid_status = ctx.schema["types"]["research-artifact"]["status_values"]
     data = ctx.data
 
     # Top-level required keys
@@ -154,10 +157,10 @@ def check(ctx):
         yield Issue(ctx.rel, level, msg, check_name=CHECK_NAME)
 
     # status enum
-    if data.get("status") and data.get("status") not in VALID_STATUS:
+    if data.get("status") and data.get("status") not in valid_status:
         yield Issue(
             ctx.rel, "error",
-            f"status must be one of {sorted(VALID_STATUS)}; "
+            f"status must be one of {sorted(valid_status)}; "
             f"got {data.get('status')!r}",
             check_name=CHECK_NAME,
         )

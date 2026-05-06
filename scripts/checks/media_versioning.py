@@ -64,16 +64,15 @@ from checks._research_utils import (
 
 CHECK_NAME = "media_versioning"
 
-VALID_ASPECT = {
-    "duration", "encoding", "metadata", "content", "provenance", "other",
-}
-
 
 def check(ctx):
     if not section_in_scope(ctx, "media_versioning"):
         return
     if "media_versioning" not in ctx.data:
         return
+
+    valid_aspect = ctx.schema["types"]["research-artifact"][
+        "media_versioning_entry"]["aspect_values"]
 
     items = entries(ctx.data, "media_versioning")
     if ctx.target_derivation_of and not items:
@@ -103,11 +102,11 @@ def check(ctx):
                     check_name=CHECK_NAME,
                 )
         aspect = e.get("aspect")
-        if aspect is not None and aspect not in VALID_ASPECT:
+        if aspect is not None and aspect not in valid_aspect:
             yield Issue(
                 ctx.rel, "warn",
                 f"media_versioning[{i}] ({e.get('id')!r}): "
-                f"aspect {aspect!r} not in {sorted(VALID_ASPECT)} — "
+                f"aspect {aspect!r} not in {sorted(valid_aspect)} — "
                 f"extensible vocabulary, but unexpected values may "
                 f"indicate a missing enum entry worth schema discussion.",
                 check_name=CHECK_NAME,
