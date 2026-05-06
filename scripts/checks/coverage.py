@@ -12,6 +12,35 @@ emits something different from what the artifact contains.
 
 Consumes ``ctx.node_text`` (set by the review-coverage orchestrator
 after target-node resolution).
+
+Origin: shipped at commit ``0a56989`` (D.4 — introduction of Phase III
+review-coverage.py) as one of four mechanical checks
+(Coverage / Boundary / Stub-linking / OQ dedup). Originally checked
+both ``claims[].statement`` AND ``quotes[].text`` against the rendered
+node body. The check simplified at commit ``cde69cf`` (claims[] layer
+elimination, 2026-04-21) — the claim.statement loop was deleted when
+claims[] was removed repo-wide and quotes[] became the universal
+evidentiary primitive.
+
+Forms a paired-check family with verbatim_quotes that brackets the
+evidentiary integrity chain:
+
+  verbatim_quotes: source text → artifact.quotes[].text
+                   (is the artifact's quote actually in the cited source?)
+  coverage:        artifact.quotes[].text → rendered node body
+                   (does the rendered node include the artifact's quotes?)
+
+Drift at either end of the source ← quote → node-body chain is
+caught: an unsourced fabrication entering the artifact trips
+verbatim_quotes; an artifact diverging from its rendered node trips
+coverage. Both checks use the same ``normalize_for_compare`` from
+``lib._common.py`` so the comparison shape is identical at both ends
+of the chain.
+
+Migration: lift to per-module shape at commit ``363212d`` (C11
+session 3 — lift all 4 review-coverage.py checks). C18 confirmed
+byte-identity through both the claims-elimination and the per-module
+moves.
 """
 
 from checks import Issue
