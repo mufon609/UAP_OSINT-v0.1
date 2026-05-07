@@ -3654,3 +3654,183 @@
   message: |
     Stub-linking: entity 'e54' ('Targ et al. — Coherent lidar airborne wind sensor II (Applied Optics 1996)') wrap_path '/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996' does not appear as a [`/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996`] link in the node
 
+- ts: 2026-05-07T22:17:34Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): affiliation, safireproject
+  tokens: [affiliation, safireproject]
+
+- ts: 2026-05-07T22:17:34Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 3 significant token(s) not in source (prose-drift check — contributor review): on-record, submission, sworn
+  tokens: [on-record, submission, sworn]
+
+- ts: 2026-05-07T22:17:34Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 3 significant token(s) not in source (prose-drift check — contributor review): align, differs, wording
+  tokens: [align, differs, wording]
+
+- ts: 2026-05-07T22:17:36Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (59>55): Co-authored "Stiffness, Strength and Fatigue Life Relationsh...
+
+- ts: 2026-05-07T22:18:50Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (59>55): Co-authored "Stiffness, Strength and Fatigue Life Relationsh...
+
+- ts: 2026-05-07T22:18:58Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): affiliation, safireproject
+  tokens: [affiliation, safireproject]
+
+- ts: 2026-05-07T22:18:58Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 3 significant token(s) not in source (prose-drift check — contributor review): on-record, submission, sworn
+  tokens: [on-record, submission, sworn]
+
+- ts: 2026-05-07T22:18:58Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 3 significant token(s) not in source (prose-drift check — contributor review): align, differs, wording
+  tokens: [align, differs, wording]
+
+- ts: 2026-05-07T22:21:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 1 significant token(s) not in source (prose-drift check — contributor review): lockheed-rye
+  tokens: [lockheed-rye]
+
+- ts: 2026-05-07T22:21:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): rests
+  tokens: [rests]
+
+- ts: 2026-05-07T22:21:19Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (59>55): Co-authored "Stiffness, Strength and Fatigue Life Relationsh...
+
+- ts: 2026-05-07T22:21:27Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 1 significant token(s) not in source (prose-drift check — contributor review): lockheed-rye
+  tokens: [lockheed-rye]
+
+- ts: 2026-05-07T22:21:27Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): rests
+  tokens: [rests]
+
+- ts: 2026-05-07T22:21:47Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (59>55): Co-authored "Stiffness, Strength and Fatigue Life Relationsh...
+
+- ts: 2026-05-07T22:23:09Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (59>55): Co-authored "Stiffness, Strength and Fatigue Life Relationsh...
+
+- ts: 2026-05-07T22:38:06Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (59>55): Co-authored "Stiffness, Strength and Fatigue Life Relationsh...
+
+- ts: 2026-05-07T22:39:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (59>55): Co-authored "Stiffness, Strength and Fatigue Life Relationsh...
+
