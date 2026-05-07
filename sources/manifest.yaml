@@ -58,8 +58,9 @@
   path: government/usaspending-arlo-hq003425f0104.json
   archived_date: '2026-05-03'
   sha256: ac47eea1b3b3cf7cd6e42d0753d01041ecd1d61a7c9f26c5a1a9b4ab23a5bfed
-  archive_status: 1
+  archive_status: 3
   note: USAspending API record for Arlo SASP BPA Call Order HQ003425F0104 ($78.5M base-and-all-options ceiling, signed 2025-02-21, parent BPA HQ003425A0004, awarded by WHS, funded by OSD OUSD(I)).
+  wayback_date: '2026-05-07'
 - url: https://api.usaspending.gov/api/v2/awards/CONT_IDV_HQ003425A0004_9700/
   format: txt
   status: archived
@@ -75,8 +76,27 @@
   path: government/usaspending-arlo-search.json
   archived_date: '2026-05-03'
   sha256: 652cedfae5e33ea09c4af154af6b63c664eeb47298f35f7435096f199a1d4d4e
-  archive_status: 1
+  archive_status: 3
   note: USAspending API award search by recipient UEI JSRCFJVJM874 (Arlo Solutions LLC); top 50 awards by amount returned, captured 2026-05-03; documents Arlo's full federal contract record back to 2019.
+  wayback_date: '2026-05-02'
+- url: https://apps.dtic.mil/sti/tr/pdf/ADA098295.pdf
+  format: pdf
+  status: archived
+  path: government/dtic-ada098295-mechanics-composites-review-vi-1981.pdf
+  archived_date: '2026-05-07'
+  sha256: cbd41a8bc0d068282d571ebe08f00895aae79598fbac3f7a118a0fc5dafcd217
+  archive_status: 3
+  note: DTIC AD-A098295 — 'Proceedings of the Annual Mechanics of Composites Review (Sixth)', Air Force Materials Laboratory, Wright-Patterson AFB. 214-page conference proceedings. Confirms Dr. James T. Ryder presented 'Effect of Load History on Fatigue Life' (presentation listed at TOC p. 65) on October 29, 1980 at the Sixth Annual Mechanics of Composites Review; affiliation 'Lockheed-California Company' attested as Principal Investigator address. Investigation citation [23]; Ryder authorship verified independently by pdftotext extract (TOC entry, abstract pages, principal investigator listing). The Lockheed-California Co. early-career affiliation is independently confirmed.
+  wayback_date: '2025-02-02'
+- url: https://apps.dtic.mil/sti/tr/pdf/ADA115795.pdf
+  format: pdf
+  status: archived
+  path: government/dtic-ada115795-mechanics-composites-review-vii-1982.pdf
+  archived_date: '2026-05-07'
+  sha256: 3dd7ed7f13f60ece63c2e133feeacd14053ba5f1cd55b2c862d154ae84f23ad5
+  archive_status: 3
+  note: 'DTIC AD-A115795 — ''Proceedings of the Seventh Annual Mechanics of Composites Review, held 28-30 October 1981, Dayton, Ohio.'' Air Force Materials Laboratory, Wright-Patterson AFB; 337-page conference proceedings. Confirms Dr. James T. Ryder presented at the Oct 28-30 1981 review (listed as presenter, Lockheed-California Company); explicit Rye Canyon Research Laboratory affiliation attested (''J. T. RYDER - LOCKHEED - RYE CANYON''); collaboration with T. K. O''Brien (NASA Langley Research Center) attested. Investigation citation [7]. Note: The proceedings also contain a ''James T. Ryder'' address entry at ''Lockheed-California Company / Bethpage, NY 11714 / (516)575-2648'' (line 14443) — Bethpage NY is geographically inconsistent with Rye Canyon (Valencia CA); may be a different individual entry in the proceedings or a Lockheed-California satellite office. Flag for follow-up audit if the address becomes load-bearing.'
+  wayback_date: '2025-02-02'
 - url: https://apps.uintah.utah.gov/ords/ucdev/r/public-searches/property-search?serial=140340003
   format: pdf
   status: archived
@@ -279,6 +299,18 @@
   sha256: c2d8c9fc7d8e5c6ccbb8600ba70733c0ddaa284c81759c55a40f4f49d2d77bcc
   archive_status: 3
   wayback_date: '2025-10-18'
+- url: https://catalog.hathitrust.org/Record/102856174
+  format: html
+  status: pending
+  archive_status: 2
+  note: HathiTrust catalog record for 'Advanced Residual Strength Degradation Rate Modeling for Advanced Composite Structures, Volume 3 (Appendixes to report for Tasks II and III)' (1981) by K. N. Lauraitis, D. E. Pettit, J. T. Ryder. Wright-Patterson AFB / Flight Dynamics Laboratory. Investigation citation [24]. Pending — same Cloudflare-challenge access blocker as Vol 2 record above.
+  wayback_date: '2024-07-10'
+- url: https://catalog.hathitrust.org/Record/102857441
+  format: html
+  status: pending
+  archive_status: 2
+  note: 'HathiTrust catalog record for ''Advanced Residual Strength Degradation Rate Modeling for Advanced Composite Structures, Volume 2 (Tasks II and III)'' (1981) by K. N. Lauraitis, D. E. Pettit, J. T. Ryder. Wright-Patterson AFB / Flight Dynamics Laboratory, Air Force Wright Aeronautical Laboratories. Investigation citation [24]. Pending — HathiTrust catalog page returns 403 cf-mitigated:challenge to automated fetchers; PDF page-image access may require institutional partner authentication. To archive: pull catalog page + PDF via partner-institution login or via HathiTrust full-text-search-only fallback.'
+  wayback_date: '2024-07-10'
 - url: https://cdn.muckrock.com/foia_files/2023/05/23/23-F-0905_Interim_Response.pdf
   format: pdf
   status: archived
@@ -331,9 +363,10 @@
   path: government/foia-23-f-0905-doc-2-released.pdf
   archived_date: '2026-04-30'
   sha256: c076c2ca945edf75ae02a311ee80e4129033eec605802345d7a401817d7acfe6
-  archive_status: 1
+  archive_status: 3
   extraction_type: ocr-scan
   note: FOIA 23-F-0905 partial release — doc_2.pdf (1 page). Released by DoD FOID Sept 11, 2023. Companion to doc_1.pdf in the AARO contract HQ003422C0094 partial release. pdftotext returns minimal content; likely a heavily-redacted page requiring VLM read.
+  wayback_date: '2026-05-07'
 - url: https://cdn.muckrock.com/foia_files/2023/09/11/23-F-0905_doc_2.pdf#txt-sibling
   format: txt
   status: archived
@@ -424,6 +457,15 @@
   archive_status: 3
   note: OSD OP-5 FY 2025 budget submission (June 2024 release), Operation and Maintenance Volume 1 Part 1. Bridge document between FY24 (names sub-office 'AARO') and FY26 (names sub-office 'AIC'). Confirms whether the AARO→AIC budget-document rename happened FY24→FY25 or FY25→FY26. Also documents the 'Walkoff – Classified' sub-office disposition between FY24 (where it appeared) and FY26 (where it does not). Direct fetch from comptroller.war.gov 2026-05-01.
   wayback_date: '2026-02-01'
+- url: https://cyclostationarity.com/biography/
+  format: html
+  status: archived
+  path: news/cyclostationarity-gardner-biography-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: 9431d5207a2b5479f388907d588554f5bf69d6a5176c585eed8888a7698b2365
+  archive_status: 3
+  note: 'Dr. William A. Gardner''s first-person biography page on his cyclostationarity research site. Documents Gardner''s five-year collaboration (started 2013) with ''the late Dr. James T Ryder (retired Vice President of Lockheed Martin Space Systems Company and head of the Advanced Technology Center in Palo Alto CA—an R&D organization covering a diverse range of technologies including solar and space sciences) during which time Dr. Ryder founded the ISF and served as chairman of the board of the ISF and also the IVS which was founded by Professor Gerald Pollack of the University of Washington.'' Footnote 1 attests: ''The International Science Foundation funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018.'' This is the only NAMED-source primary attestation of Ryder''s death timing (May 2018) — and the only collaborator-attestation of Ryder as ISF founder (not just chairman) and Pollack as IVS founder. Resolves the rumors[r1] death-date entry from anonymous secondary attribution to a named collaborator''s primary attestation.'
+  wayback_date: '2026-02-14'
 - url: https://d1ldvf68ux039x.cloudfront.net/thumbs/photos/1801/4064972/2000w_q95.jpg
   format: image
   status: archived
@@ -477,6 +519,11 @@
   archive_status: 3
   note: 'Brandi Vincent, DefenseScoop, Feb 25, 2026 — AARO publication blackout, Sue Gough caseload statement (>2,000 cases), Hegseth full-compliance quote re: forthcoming Trump UAP-disclosure executive order'
   wayback_date: '2026-04-14'
+- url: https://dl.astm.org/stps/book/1040/chapter-abstract/147417/Effect-of-Compression-on-Fatigue-Properties-of-a
+  format: html
+  status: pending
+  archive_status: 0
+  note: 'ASTM STP 636 chapter — ''Effect of Compression on Fatigue Properties of a Quasi-Isotropic Graphite/Epoxy Composite'' by J. T. Ryder and E. K. Walker (1977). DOI: 10.1520/STP27966S. Investigation citation [22]. Pending — dl.astm.org returns 402-blocked / 403; full-text behind ASTM paywall. Abstract page returns HTTP 403 to automated fetchers. Bibliographic entry independently verified via DOI lookup + investigation citation; full chapter text not currently archivable.'
 - url: https://docs.house.gov/Committee/Calendar/ByEvent.aspx?EventID=116282
   format: html
   status: archived
@@ -507,17 +554,19 @@
   path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
   archived_date: '2026-05-06'
   sha256: f6c5e040421c29ff849c1991dbf091d9cedfda68819bc051c4d9d76f27437bbd
-  archive_status: 1
+  archive_status: 3
   extraction_type: ocr-scan
   note: Submitted Document 004 to the 2024-11-13 House Oversight UAP hearing record. 21 pages, fully scanned (200 dpi JPEG / CCITT — pdftotext output is zero bytes; no embedded text layer). Page 1 is an unsigned three-question Q&A authored by an unnamed contributor, DOPSR-cleared 2023-09-06; widely attributed to James Lacatski by NewParadigmInstitute and the UAP-press secondary reporting (e.g., Sentinel Network "Architect" piece) on stylistic + content grounds — first-person AAWSAP-insider voice, self-citation of "Skinwalkers at the Pentagon" pp. 152-153, narrative match with Lacatski's book — but authorship is NOT primary-source-confirmed in the document itself or in the Nov 13 oral transcript. Page 1 is the load-bearing contemporary content for repo nodes; pp. 2-21 are appended historical primary sources (1947 Twining "Flying Discs" memo, 1950 Doyle Rees New Mexico memo, 1952 Chadwell CIA memo, 1952 FBI Savannah River + Hoover memo, 1950 FBI Knoxville radar memo, 1950 OSI/AEC Oak Ridge incident reports, 1949 ADC reports, 1957 FBI Belmont Montauk memo) — each its own document-node candidate. A contributor-produced `.txt` sibling at the same stem (`docs-house-gov-hhrg-118-go12-20241113-sd004.txt`) covers page 1 only with [annotation] markers where DOPSR/disclaimer overlays partially occlude the underlying Q&A text; pp. 2-21 are not transcribed in this sibling. Page-1 transcription was produced via multimodal-LLM visual read of the page-1 image (no OCR engine; no whisper).
+  wayback_date: '2025-09-07'
 - url: https://docs.house.gov/meetings/GO/GO12/20241113/117721/HHRG-118-GO12-Transcript-20241113.pdf
   format: pdf
   status: archived
   path: government/docs-house-gov-hhrg-118-go12-transcript-20241113.pdf
   archived_date: '2026-05-06'
   sha256: b409936be26d97a0f13ceeb13c56ec7a064c4db6548fee78e3032d8f5aba4e5c
-  archive_status: 1
+  archive_status: 3
   note: 'Stenographic transcript of the 2024-11-13 House Oversight Subcommittee on Cybersecurity, IT, and Government Innovation hearing ''Unidentified Anomalous Phenomena: Exposing the Truth.'' 52 pages. GPO publication 57-440 (PDF 2025). Witnesses: Lue Elizondo, Tim Gallaudet, Michael Gold, Michael Shellenberger. Burchett entered Shellenberger''s ''Immaculate Constellation'' 12-page document into the record at the hearing (pp. 292-298 of the transcript). Names ''Ryder'' and ''Lacatski'' do NOT appear in the oral transcript text — SD004 (the 21-page document with the Lacatski-attributed page-1 Q&A) is a separate paper submission not introduced via oral colloquy on the day of the hearing.'
+  wayback_date: '2025-07-28'
 - url: https://docs.house.gov/meetings/GO/GO12/20241113/117721/HHRG-118-GO12-Wstate-ShellenbergerM-20241113.pdf
   format: pdf
   status: archived
@@ -592,6 +641,15 @@
   archive_status: 1
   wayback_skip: true
   note: 'Contributor-produced clean-text transcription (.txt sibling) of blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf, produced 2026-05-02 via VLM page read of all 17 pages. The source PDF is OmniPage CSDK 20 / AINSLIB.OCR-produced (extraction_type: ocr-scan); per BACKLOG #19 OCR-scan discipline the validator''s extract_source_text prefers this same-stem .txt sibling over pdftotext output. Visual transcription preserves redaction markers (b)(6) / (b)(3) / (b)(5) verbatim, email-thread structure, foreign-language fragments (Finnish ''kirjoitti''), and timestamp ranges (1300-1400 / 1400-1530) without pdftotext line-wrap artifacts. Companion to PDF entry with extraction_type: ocr-scan above.'
+- url: https://douglasjohnson.ghost.io/content/files/2025/02/House-Oversight-QFR-Elizondo--Dec.-2024-.pdf
+  format: pdf
+  status: archived
+  path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+  sha256: 70a015557b2ccdf20d8e8c86f4688a373ae9d6a0e86817561fde318bf2b984ec
+  archived_date: '2026-05-07'
+  archive_status: 3
+  note: 'Luis D. Elizondo''s sworn Question-for-the-Record (QFR) response to Rep. Eric Burlison''s Dec 9, 2024 QFR letter (cover letter signed by subcommittee chairs Nancy Mace and Glenn Grothman), responding to the November 13, 2024 joint Subcommittee hearing ''Unidentified Anomalous Phenomena: Exposing the Truth'' (Subcommittees on Cybersecurity, Information Technology, and Government Innovation; National Security, the Border, and Foreign Affairs). 8-page Word-converted PDF (Acrobat PDFMaker 24 / Adobe PDF Library 24.5.83). Signed by Luis D. Elizondo, dated Dec 19, 2024, return-addressed P.O. Box 337, Buffalo WY 82834. Q1 response identifies Dr. James Lacatski (former Director of AAWSAP) as author of the DOPSR-cleared statement (Sep 6, 2023) naming James Ryder, and quotes the verbatim Lacatski statement (matching SD004 page-1 verbatim text). Q6 response: ''Yes. The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace.'' Q7 response: confirms Patuxent River Naval Air Station SAP-F hangar (~$10M, funding requested by then-Representative Steny Hoyer); Elizondo personally visited; no materials transferred at time of visit. Q11: notes $22M AAWSAP funding was directed to varied programmatic needs (37 DIRDs published; see Attachment 3 for complete list). Hosted on Douglas Johnson''s Ghost-blog CDN as the public mirror; canonical docs.house.gov path /meetings/GO/GO12/20241113/117721/HHRG-118-GO12-QFR-ElizondoL.pdf returns the docs.house.gov 404 ASP.NET error page (verified 2026-05-07) — the QFR was not published on the official House Oversight document repository; the Douglas Johnson mirror is the public-record route.'
+  wayback_date: '2025-12-10'
 - url: https://douglasjohnson.ghost.io/uap-disclosure-act-pentagon-rewrite-nov-2023/
   format: html
   status: archived
@@ -664,6 +722,15 @@
   archive_status: 3
   note: Enigma Labs blog post (2022-11-14) announcing Alex Dietrich as advisor. Attests her squadron assignment (VFA-41 'Black Aces' out of NAS Lemoore, 2001-2007), commissioning year (May 2001), service framing, and post-Navy advisor role at Enigma Labs.
   wayback_date: '2025-06-14'
+- url: https://espresearch.com/
+  format: html
+  status: archived
+  path: news/espresearch-russell-targ-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: ede193c7ee39e326fbfeb71c52a3f5750f5da3685dcfe52ae838bae26401bb61
+  archive_status: 3
+  note: 'Russell Targ''s own ESP Research website homepage. Verbatim self-attestation: ''Russell Targ is a physicist and author who was a pioneer in the development of the laser and cofounder of the Stanford Research Institute''s investigation into psychic abilities in the 1970s and 1980s.'' And: ''Targ retired from Lockheed Martin as a senior staff scientist, where he developed laser technology for peaceful applications.'' Confirms (a) Targ as SRI Stargate-precursor co-founder (with Puthoff), (b) Targ''s Lockheed Martin career as senior staff scientist. Establishes the basis for Ryder ↔ Targ Lockheed-employment overlap (Ryder retired Feb 2011 as VP of LMSSC; Targ retired from Lockheed Martin per his own site, no date attested in this single-page website but the investigation cites IRVA''s missing ''until 1997 retirement'' attestation).'
+  wayback_date: '2026-03-16'
 - url: https://executivegov.com/2023/11/aaro-shakes-up-executive-team-with-2-new-leadership-changes-kathleen-hicks-quoted/
   format: html
   status: archived
@@ -838,6 +905,33 @@
   archive_status: 3
   note: New Paradigm Institute response to the WSJ piece, framing it as Pentagon disinformation. Counter-narrative source for the WSJ Vol II preview, parallel to the Liberation Times rebuttal.
   wayback_date: '2026-02-21'
+- url: https://news.lockheedmartin.com/2008-03-05-Defense-Advanced-Research-Projects-Agency-DARPA-Awards-F6-Satellite-Program-Contract-to-Lockheed-Martin
+  format: html
+  status: archived
+  path: news/news.lockheedmartin.com-2008-03-05-darpa-f6-satellite-program.html
+  archived_date: '2026-05-07'
+  sha256: e8800fa54bc40ed5303c72f840c8fe9864eb0215325980ce848b78c68f3a62b6
+  archive_status: 3
+  note: 'Lockheed Martin Corp. press release dated March 5, 2008, Palo Alto, CA: ''Defense Advanced Research Projects Agency (DARPA) Awards F6 Satellite Program Contract to Lockheed Martin''. Quotes Dr. Jim Ryder, vice president of the Lockheed Martin Space Systems Advanced Technology Center (ATC) in Palo Alto, on the F6 (Future, Fast, Flexible, Fractionated, Free-Flying Spacecraft United by Information Exchange) program — $5.7M Phase 1 design contract. Independent corporate self-attestation of Ryder''s VP-of-ATC role.'
+  wayback_date: '2026-04-12'
+- url: https://news.lockheedmartin.com/2009-07-23-Lockheed-Martin-Supports-Forum-On-Environmental-Observations
+  format: html
+  status: archived
+  path: news/news.lockheedmartin.com-2009-07-23-environmental-observations-forum.html
+  archived_date: '2026-05-07'
+  sha256: 3081f91d13b7ec4540eb14d597891511125c718cc269410f6e6eebdde0af86a8
+  archive_status: 3
+  note: 'Lockheed Martin Corp. press release dated July 23, 2009, Palo Alto, CA: ''Lockheed Martin Supports Forum On Environmental Observations''. Quotes Dr. James T. Ryder, vice president of the Lockheed Martin Space Systems Company (LMSSC) Advanced Technology Center (ATC) in Palo Alto, Calif. Subject: Forum on Earth Observations III: The Environmental Information Revolution, Washington DC, July 30, 2009 (Alliance for Earth Observations). The ''LMSSC ATC'' attribution form (vs. 2008 PR''s ''LM Space Systems ATC'') is the most explicit corporate self-attestation of Ryder''s full role.'
+  wayback_date: '2026-04-12'
+- url: https://news.lockheedmartin.com/2009-11-18-Lockheed-Martin-Tests-Carbon-Nanotube-Based-Memory-Devices-on-NASA-Shuttle-Mission
+  format: html
+  status: archived
+  path: news/news.lockheedmartin.com-2009-11-18-carbon-nanotube-memory-shuttle.html
+  archived_date: '2026-05-07'
+  sha256: b455b81a5c0a7064c7114d4f6bab317f2638a30892dfdbc5a30bf52929bdda39
+  archive_status: 3
+  note: 'Lockheed Martin Corp. press release dated November 18, 2009, Palo Alto, CA: ''Lockheed Martin Tests Carbon Nanotube-Based Memory Devices on NASA Shuttle Mission''. Quotes Dr. Jim Ryder, vice president and general manager of the Lockheed Martin Advanced Technology Center in Palo Alto. Subject: NRAM (carbon-nanotube-based RAM) tested aboard STS-125 (Space Shuttle Atlantis, May 2009 Hubble servicing mission); collaboration with Nantero. The ''vice president AND general manager'' attribution is the strongest corporate self-attestation of Ryder''s executive role at the ATC.'
+  wayback_date: '2026-04-12'
 - url: https://nsiteam.com/social/smaspeakerseries_03october2023/
   format: html
   status: archived
@@ -1084,6 +1178,15 @@
   note: Americans for Safe Aerospace home page. Lists Jay Stratton in the Advisors section — direct on-record attestation by an organization of which Stratton is a listed advisor. Strongest non-.gov public-record attribution for Stratton's UAPTF role.
   archive_status: 3
   wayback_date: '2026-02-20'
+- url: https://safireproject.com/about-us/team.html
+  format: html
+  status: archived
+  path: news/safireproject-team-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: 047aacc5ee9787c355ae8c170542e5d7be1bd05c0f49e0f29db057053bb5589c
+  archive_status: 3
+  note: 'SAFIRE Project corporate team page. Lists ''Dr. James Ryder'' under ''science review team'' alongside Harold Puthoff PhD (Director, Institute for Advanced Studies at Austin), Eric W. Davis PhD (Chief Science Officer, IASA), and William A. Gardner (Professor Emeritus, University of California). Ryder''s role attestation: ''Chairman, International Science Foundation''. SAFIRE Project tests the Electric Sun model under the International Science Foundation mandate. Page also lists Mainwaring Archive Foundation as a SAFIRE funder. Primary corporate self-attestation of the Ryder/Puthoff/Davis/Gardner Science Review Team association — independent of any UAP-press reporting.'
+  wayback_date: '2025-12-19'
 - url: https://spacenews.com/the-jicspoc-is-dead-long-live-the-national-space-defense-center/
   format: html
   status: archived
@@ -1245,24 +1348,27 @@
   path: news/ivsci-leadership-snapshot.html
   archived_date: '2026-05-06'
   sha256: 8c7ca4e0b26b93739380cc0623ff1a7dc0928c27ab00898446c35ba60d222c64
-  archive_status: 1
+  archive_status: 3
   note: 'Institute for Venture Science (IVS) leadership page — primary biographical and institutional attestation of Dr. James T. Ryder. Sourced facts: 38 years in management/technical positions at Lockheed Martin Corporation; Vice President of Lockheed Martin Space Systems Company (Palo Alto, CA) May 2005 - February 2011; led the Advanced Technology Center (now STAR), the R&D division of Lockheed Martin Space Systems Company with annual program impact exceeding $9B; aircraft (L-1011, F-22, Skunk Works), rockets/missiles, and spacecraft career experience; PhD/MS/BS in theoretical and applied mechanics, University of Illinois; Chairman of the Board at IVS. The institutional self-attestation source for Ryder''s Lockheed VP role + Advanced Technology Center leadership independent of UAP-press reporting.'
+  wayback_date: '2025-03-11'
 - url: https://vimeo.com/222251077/ae21f8b6f1
   format: video
   status: archived
   path: video/lucistrust-rending-veils-pt2-blackburn-2017-222251077.mp4
   archived_date: '2026-05-06'
   sha256: a440a44b0a9af8b0afc4f1f7d95f55dc5aa73e85dc82e076eb4690bd7d905dfd
-  archive_status: 1
+  archive_status: 3
   note: '''The Rending of the Veils, Part 2: The Violet Force and Health'' — Dr. Lee Blackburn. Lucis Trust Arcane School Conference, London, 17-18 June 2017. Duration 1:12:38. Vimeo video ID 222251077. Companion talk paired with Ryder''s Part 1 (above); archived for full-conference contextual record. NOT a Ryder talk (Lee Blackburn is the speaker). No caption/subtitle tracks.'
+  wayback_date: '2026-05-07'
 - url: https://vimeo.com/222366976/0c171ef640
   format: video
   status: archived
   path: video/lucistrust-rending-veils-pt1-ryder-2017-222366976.mp4
   archived_date: '2026-05-06'
   sha256: ee20dbe48398accfecdb1c7f367893becb3f558f476b283fdaccc3d6ff322eef
-  archive_status: 1
+  archive_status: 3
   note: '''The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena'' — Dr. James T. Ryder. Lucis Trust Arcane School Conference, London, 17-18 June 2017. Duration 1:01:06. Vimeo video ID 222366976 (unlisted with privacy-hash share URL ''0c171ef640''). No caption/subtitle tracks. Source video preserved for primary-source archival; speech-to-text transcription deferred (will be run on contributor''s desktop with whisper at a later session, then registered as a separate transcript-format manifest entry per /meta/conventions.md siblings discipline). Ryder''s own voice — institutional self-attestation of his Lockheed Martin Space Systems VP role + Advanced Technology Center leadership, in his own words.'
+  wayback_date: '2025-09-03'
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
@@ -1469,6 +1575,12 @@
   archive_status: 3
   note: AFCEA conference biography for Dr. Sean M. Kirkpatrick as Deputy Director of Intelligence and DNI Representative, USSPACECOM (his pre-AARO role 2019-2021). Source for the six-new-start-organizations career framing and pre-AARO assignment chronology
   wayback_date: '2025-08-03'
+- url: https://www.aiaa.org/docs/default-source/uploadedfiles/membership-and-communities/individual-membership/aiaa-membership-grades/aiaa-associate-fellows-roster.pdf
+  format: pdf
+  status: pending
+  archive_status: 2
+  note: 'AIAA Associate Fellows Roster PDF — investigation citation [5]. Pending — historical URL returns HTTP 404; AIAA reorganized its membership-grade resources and the roster has moved. Current location uncertain (no Google Search-API access available in this session to discover the current AIAA URL). To archive: visit aiaa.org membership pages directly, locate the current Associate Fellows roster URL, archive + verify Ryder''s name appears.'
+  wayback_date: '2024-11-30'
 - url: https://www.archives.gov/records-mgmt/uap-guidance
   format: html
   status: archived
@@ -1587,6 +1699,15 @@
   archive_status: 3
   note: 'Audible podcast transcript: ''In the Room with Peter Bergen'' Episode 38 — Kirkpatrick interview (2024). Sources for Kirkpatrick''s ''self-licking ice cream cone'' framing and ''core group of people'' observation about Grusch'
   wayback_date: '2025-11-22'
+- url: https://www.aureonenergy.com/history
+  format: html
+  status: archived
+  path: news/aureonenergy-history-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: 764f1e57b89c414f30715bba698d2480f279ef446479035e304671d1d8cfb9af
+  archive_status: 3
+  note: Aureon Energy Ltd. (Squarespace site at aureonenergy.com; canonical URL after migration from aureon.ca, whose redirect /history is broken — Apache 301 sends Location 'https://aureonenergy.comhistory' missing slash; aureon.ca root redirects cleanly to aureonenergy.com). Page identifies Montgomery Childs as Founder and Chairman of Aureon Energy and confirms SAFIRE I (lab 2013) + SAFIRE II (lab 2019) as the company's lab-research lineage. The migrated Squarespace site does NOT carry the historical 'ISF as funder' text the investigation expected; that funding attribution is now established only via the SAFIRE Project team page (Ryder = ISF Chairman) and the Cyclostationarity Gardner biography (ISF funded SAFIRE).
+  wayback_date: '2025-08-04'
 - url: https://www.battelle.org/docs/default-source/privacy-policies-disclosures/2018-990-990t.pdf
   format: pdf
   status: archived
@@ -1818,8 +1939,9 @@
   path: news/defense-one-sof-week-oie-panel-20240524.html
   archived_date: '2026-05-03'
   sha256: 12bf6309c80b84b506488c8b5cffb6cfa51f3733b6e9ece9af592343aa664ed8
-  archive_status: 1
+  archive_status: 3
   note: 'Defense One article (Patrick Tucker, May 24, 2024) reporting on the SOF Week 2024 Operations in the Information Environment (OIE) Symposium panel held May 9, 2024 at the Tampa Convention Center. Panelists named: James Holly (IPMO / OUSD(I&S)); Daniel Kimmidge per article spelling — canonical Daniel Kimmage, Principal Deputy Coordinator of the State Department Global Engagement Center; Jason Schenker (Chairman, Futurist Institute); Alex Plitsas (former DoD chief of sensitive activities; Atlantic Council Scowcroft Middle East Security Initiative). Quotes Holly: ''I think the state of this enterprise is weak, quite frankly.'' SOF Week 2024 OIE Symposium page (sofweek.org/thursday-main-agenda/operations-information-environment-oie-symposium) returns HTTP 404 post-event; SOF Week Attendee Video Library does not currently surface this panel; primary-equivalent video/audio not publicly accessible. Captured 2026-05-03.'
+  wayback_date: '2026-04-04'
 - url: https://www.democrats.senate.gov/newsroom/press-releases/schumer-rounds-introduce-new-legislation-to-declassify-government-records-related-to-unidentified-anomalous-phenomena-and-ufos_modeled-after-jfk-assassination-records-collection-act--as-an-amendment-to-ndaa
   format: html
   status: archived
@@ -1869,8 +1991,9 @@
   path: government/dvids-kozik-portrait-page-20260501.html
   archived_date: '2026-05-01'
   sha256: 2be40c82c0d8c4787751b4f960d25b7481d840dea14b37167bcfc0128ab91acd
-  archive_status: 1
+  archive_status: 3
   note: 'DVIDS image-record page for David A. Kozik official portrait. Caption: ''David A. Kozik, Director Congressional Activities, Office of the Under Secretary of Defense Intelligence, poses for his official portrait in the Army portrait studio at the Pentagon in Arlington, Virginia, Dec. 27, 2017. (U.S. Army photo by William Pratt).'' Primary attestation that Kozik held the Director Congressional Activities role at OUSD(I&S) by Dec 2017 (career SES — same role at issue in the Mar 6-7 2024 Gough/Kozik exchange in FOIA 24-F-0894 re: AARO sUAS portfolio). Direct fetch 2026-05-01.'
+  wayback_date: '2025-03-05'
 - url: https://www.energy.gov/oha/articles/fia-24-0036
   format: pdf
   status: archived
@@ -1931,16 +2054,18 @@
   path: news/samdaily-fbo-06693814-hq003423c0061.html
   archived_date: '2026-05-03'
   sha256: 7869b6510d480f54b7cf7b75ca5a6657da67361193e9faba060275895df01055
-  archive_status: 1
+  archive_status: 3
   note: SAMDaily / fbodaily.com archive of WHS contract award notice for HQ003423C0061 (Sancorp IPMO follow-on, signed 2023-05-25). Awardee field correctly names Sancorp Consulting LLC; description text incorrectly names Premier Enterprise Solutions LLC. Clerical error in the description prose; structured awardee field is canonical and matches USAspending HQ003423C0061 record (Sancorp UEI GRYKNJ8BGFC8). Captured 2026-05-03.
+  wayback_date: '2026-05-07'
 - url: https://www.federalregister.gov/documents/2023/05/15/2023-10219/earth-science-advisory-committee-unidentified-aerial-phenomena-independent-study-team-meeting
   format: html
   status: archived
   path: government/federalregister-uapist-esac-meeting-20230515.html
   archived_date: '2026-05-03'
   sha256: 59a148ff8fce2832b22fd02d1ca93112c96d97e99c6f679beb18fa7c2d89eb0d
-  archive_status: 1
+  archive_status: 3
   note: Federal Register notice (May 15, 2023, doc 2023-10219; signed by Patricia Rausch, NASA Advisory Committee Management Officer; Designated Federal Officer Dr. Daniel Evans, Science Mission Directorate) announcing a meeting of the Unidentified Aerial Phenomena Independent Study Team (UAPIST) Subcommittee of the Earth Science Advisory Committee. NASA's own canonical attestation that UAPIST is a Subcommittee of ESAC — primary source for the structural relationship between UAPIST and ESAC. Cited on AARO node to anchor UAPIST's NASA-self-described structural form (subcommittee), distinct from the AARO HRR Vol I phrasing (subordinate group).
+  wayback_date: '2025-02-07'
 - url: https://www.federalregister.gov/documents/full_text/text/2025/09/10/2025-17508.txt
   format: txt
   status: archived
@@ -2065,6 +2190,12 @@
   archive_status: 3
   note: Inside Biden's Basement appointee tracker for Ronald Moultrie; Biden-administration appointment tracking with timeline of pre/post-government roles.
   wayback_date: '2025-09-06'
+- url: https://www.irva.org/speaker/targ-russell
+  format: html
+  status: pending
+  archive_status: 2
+  note: International Remote Viewing Association — Russell Targ speaker biography page. Investigation citation [25]. Pending — URL returns HTTP 404 (current IRVA site reorganized; the speaker bio at this path is no longer live). The IRVA homepage at irva.org does not surface a Targ biographical link in its current navigation. Targ's own site espresearch.com is the substitute primary attestation for his Lockheed Martin senior staff scientist role + SRI co-founder relationship; the IRVA bio's specific '1997 retirement' attestation is not currently re-archivable.
+  wayback_date: '2025-12-14'
 - url: https://www.jpost.com/omg/article-856910
   format: html
   status: archived
@@ -2080,8 +2211,9 @@
   path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
   archived_date: '2026-05-06'
   sha256: c71704351dc805203fc41e8a5eb2f30214e10bf80705cffd1ba06c277ce56359
-  archive_status: 1
+  archive_status: 3
   note: '''Congressman Recruits UFO Whistleblower to Support Investigation Into Secret Activities'', by Christopher Sharp, Liberation Times, 27 March 2025. Headline: Burlison hires Grusch as House Task Force on Declassification advisor (effective 2025-04-01). In-body content covers the 2011 attempted transfer of UAP materials between Lockheed Martin and DIA AAWSAP / DHS — confirms Lockheed Martin VP James Ryder''s role in proposing the transfer, and CIA Directorate of Science & Technology head Glenn Gaffney''s role in blocking it. Cites unnamed sources (''Liberation Times now understands''). Christopher Sharp = founder/editor-in-chief Liberation Times, senior contributing journalist at Daily Mail, London-based; the named accredited UAP-press journalist anchor for the Lockheed/Ryder/Gaffney narrative.'
+  wayback_date: '2026-02-11'
 - url: https://www.liberationtimes.com/home/from-moscow-to-malmstrom-russian-style-disinformation-tactics-target-us-ufo-transparency-efforts
   format: html
   status: archived
@@ -2100,6 +2232,15 @@
   archive_status: 3
   note: Liberation Times article (June 22, 2024) reporting that the Department of Defense confirmed in writing to the publication that Kirkpatrick attended an April 19, 2018 Skinwalker Ranch briefing on the Hill — directly contradicting Kirkpatrick's recorded denial to journalist Steven Greenstreet of any pre-AARO UAP duties. Audit finding 3.4 primary documentary source for the DoD attendance confirmation. Also documents Brandon Fugal's contradicting account ('Kirkpatrick was at the head of the table'), the photo Fugal posted on X with EXIF metadata anchoring it to 1:31pm ET on April 19 2018, and AARO's Airstar America test-balloon procurement.
   wayback_date: '2025-03-10'
+- url: https://www.liberationtimes.com/home/witnesses-announced-for-landmark-ufo-congressional-hearing
+  format: html
+  status: archived
+  path: news/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108.html
+  archived_date: '2026-05-07'
+  sha256: e25e8c51a8469eddd5f9faef3f901cd69369aeb62dc60c4272231948b57ec5aa
+  archive_status: 3
+  note: 'Liberation Times article ''Witnesses Announced for Landmark UFO Congressional Hearing'' by Christopher Sharp. Article byline: ''Written by Christopher Sharp - 8 November 2024'' (the upstream Claude Web investigation cited ''10 November 2024''; the byline in source is Nov 8 — going with the byline as canonical). Earliest archived public source naming Ryder (predating the existing 2025-03-27 Sharp piece by ~5 months). Names ''now-deceased James Ryder, former Vice President of Lockheed Martin Space Systems, who is said to have led efforts within Lockheed Martin'' and ''former CIA Director of Science and Technology, Glenn Gaffney'' as the official who allegedly blocked the material transfer; describes those involved including Ryder as ''feeling threatened due to the harshness of exchanges with CIA officials''. Cites unnamed sources (''multiple sources claimed'', ''Liberation Times understands''). Article context: published days before the Nov 13, 2024 House Oversight UAP hearing where Burchett entered SD004 with the same Ryder-naming text into the formal record.'
+  wayback_date: '2026-03-09'
 - url: https://www.loudountimes.com/0local-or-not/1local/ufo-whistleblower-sues-sheriffs-office-over-records-release/article_b24005c4-490e-11ef-97d5-4bc65ae077be.html
   format: html
   status: archived
@@ -2108,14 +2249,59 @@
   sha256: b67ecb9a65c50b8814f3745e7bc613e322d32cbdecb5a0463de2d4b49e90676f
   archive_status: 3
   wayback_date: '2026-01-06'
+- url: https://www.lucistrust.org/about_us/lucis_trust/bi_annual_letter/science_is_our_meditation_on_the_nature_of_the_universe
+  format: html
+  status: archived
+  path: news/lucistrust-bi-annual-letter-ryder-science-meditation-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: a5af9c5d73eca569f517ac0e0022ff0c04fabf34993dc57331e72dc71db10fb7
+  archive_status: 3
+  note: 'Lucis Trust bi-annual letter excerpt under Dr. James T. Ryder''s byline: ''Science is our meditation on the nature of the universe.'' Footer attribution states: ''Excerpted from an edited transcript of a talk, The Garment of God by the late Jim Ryder at a 2018 Arcane School Conference. Dr. Ryder was a retired Vice President of Lockheed Martin Space Systems Company and former head of the Advanced Technology Center.'' This is the Ryder-bylined, Lucis-Trust-published edited prose text of the 2018 NYC talk. Edited transcript — not full verbatim. Useful as a Ryder-authored secondary form of the 2018 talk content; cross-anchor against the YouTube R9Yn0hgbVA0 captioned recording for full verbatim.'
+  wayback_date: '2025-07-01'
 - url: https://www.lucistrust.org/conferences/show/conference_london_2017
   format: html
   status: archived
   path: news/lucistrust-arcane-conf-london-2017-snapshot.html
   archived_date: '2026-05-06'
   sha256: 5bd02073292ea65b481ee4965ef7de9fd7e170b6f431f0d787b40434e5542d60
-  archive_status: 1
+  archive_status: 3
   note: 'Lucis Trust Arcane School Conference London 2017 — video archive page. Lists Dr. James T. Ryder''s talk ''The Rending of the Veils (Part 1): Fairies, Devas and Unidentified Aerial Phenomena'' (Vimeo 222366976) alongside Dr. Lee Blackburn''s companion ''Part 2'' talk. Provides the conference framing + Ryder bio note: ''Dr. Ryder is a retired Vice President of Lockheed Martin Space Systems Company and former head of the Advanced Technology Center.'' Lucis Trust = theosophical/esoteric organization founded 1922 by Alice Bailey; this conference is in their Arcane School lineage.'
+  wayback_date: '2025-03-11'
+- url: https://www.lucistrust.org/conferences/show/conference_newyork_2018
+  format: html
+  status: archived
+  path: news/lucistrust-arcane-conf-newyork-2018-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: c2b79619480be3315c52dd3c8373a4ef487e278a6f5e39c46b31743b3eb8d184
+  archive_status: 3
+  note: 'Lucis Trust Arcane School Conference New York 2018 — schedule page. Confirms Dr. James T. Ryder presented ''The Garment of God – Esoterically and Scientifically'' at the conference on Saturday April 28, 2018. Includes Ryder''s own talk description (''the electrical nature of all phenomena... the mystery of electricity which relates to the nature of the garment of God'') and bio note: ''Dr. Ryder is a retired Vice President of Lockheed Martin Space Systems Company and former head of the Advanced Technology Center.'' Approximately one month before Ryder''s reported May 2018 death, this is the last public conference appearance attested in the Lucis Trust catalogue.'
+  wayback_date: '2025-05-13'
+- url: https://www.lucistrust.org/productions/videos/view/the_garment_of_god
+  format: html
+  status: archived
+  path: news/lucistrust-garment-of-god-video-page-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: 554ec84d3f935efc10cb60d9c126e18257b858c78279b0982d9f7f5d1fa4fd83
+  archive_status: 3
+  note: 'Lucis Trust productions video archive page for ''The Garment of God'' (2018 NYC Arcane School Conference talk). Includes brief description: ''A talk given at the Arcane School conference, New York, April 2018 by the late Dr. Ryder, a retired Vice President of Lockeed [sic — single ''h''] Martin Space Systems Company and former head of the Advanced Technology Center.'' Source-form ''Lockeed'' typo is a Lucis Trust artifact; canonical form is ''Lockheed Martin'' (per the LM corporate press releases). Lucis Trust acknowledges Ryder''s death (''the late Dr. Ryder'') without giving a date.'
+  wayback_date: '2025-08-02'
+- url: https://www.lucistrust.org/productions/videos/view/the_soul_is_light._what_then_is_light
+  format: html
+  status: archived
+  path: news/lucistrust-soul-is-light-video-page-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: 7cb6019e18793c127bbeefd1ec709076d477639b93c07241531115c80358d017
+  archive_status: 1
+  note: 'Lucis Trust productions video archive page for ''The Soul is Light. What Then is Light?'' (2015 London Arcane School Conference talk). Description: ''A talk given at the Arcane School conference, London, May 2015. Dr. Ryder is a retired Vice President of Lockheed Martin Space Systems Company and former head of the Advanced Technology Center.'' Note: 2015 page text uses present tense ''is'' (Ryder still living at archival time), contrasting with the ''Garment of God'' page''s ''the late Dr. Ryder'' phrasing.'
+- url: https://www.lucistrust.org/the_electric_bridge/electric_universe_the_human_story
+  format: html
+  status: archived
+  path: news/lucistrust-electric-bridge-electric-universe-human-story-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: e6fa34c24e249f337c22ec7331421716f1ee8cb101c6674da8518df38bb0fed7
+  archive_status: 3
+  note: Lucis Trust 'Electric Bridge' web page hosting Mintze Van der Velde's third-party report 'Electric Universe — the Human Story' on the Thunderbolts/Electric Universe conference in Las Vegas, January 6-8, 2012. NOT a Ryder talk recording — this is a contemporaneous attendee summary of the conference. Confirms 'Dr. James Ryder talked about the Surprising Results of the IBEX Experiment, a mission to image the edge of our solar system and study the global interaction between the solar wind and the interstellar medium. Instead of the expected spherical structure, the experimental data showed a very dynamic ribbon of bright pixels...' This page IS the source for Ryder's 2012 Thunderbolts talk topic + IBEX-ribbon discussion; the talk RECORDING (if it exists) would be hosted by Thunderbolts/EU rather than Lucis Trust. Pre-dates Lucis Trust's Vimeo Arcane School video archive (which carries 2015/2017/2018 only).
+  wayback_date: '2022-11-19'
 - url: https://www.muckrock.com/foi/united-states-of-america-10/ousdis-2-51923-146003/
   format: html
   status: archived
@@ -2134,6 +2320,15 @@
   archive_status: 3
   note: 'MuckRock FOIA request page for case 23-F-0905 (Robert Skvarla, Jr., filed May 19, 2023, with DoD/Office of the Under Secretary of Defense for Intelligence and Security; tracking 23-A-0905-A1). Direct fetch returns 403; archived via Wayback Machine snapshot from 2026-04-30 (full post-disposition page with 15 communications and 12 attached files). Request scope: Sancorp AARO contract HQ003422C0094. Final disposition per the released response: 125 pages identified responsive; 11 pages withheld in entirety under 5 U.S.C. § 552(b)(5) deliberative-process exemption; portions of remaining 114 pages withheld under (b)(4) (trade secrets / commercial confidential) and (b)(6) (personal privacy). Initial Denial Authority: Ms. Paulette Creighton, Division Director, Enterprise Acquisition Policy & Strategic Initiatives. Acquisition Directorate also conducted exhaustive searches for Correspondence, Requests for Information, Memorandums of Understanding, Letters of Interest, Task Letters, Privacy Impact Assessments, and Presentations by Sancorp and located no responsive records in those categories. Skvarla appealed Sept 18, 2023 (case 23-A-0905-A1); Joo Y. Chung (Assistant to the Secretary of Defense for Privacy, Civil Liberties, and Transparency) AFFIRMED the withholding decision Aug 21, 2024. Companion archive: Black Vault FOIA 23-F-1114 (already at government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) covers the AARO PWS in full release form. Note: the handoff §11 figure of ''91 pages withheld'' was a paraphrase; the actual agency framing is 11-pages-entirely-withheld + 114-pages-with-redactions.'
   wayback_date: '2026-04-30'
+- url: https://www.nature.com/articles/251602a0
+  format: html
+  status: archived
+  path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+  archived_date: '2026-05-07'
+  sha256: e494ccd18ee4ff1e18a9e57b956b86d8799010973e508b7dc52e039957ed2437
+  archive_status: 3
+  note: 'Nature article landing page (abstract preview): ''Information transmission under conditions of sensory shielding'' by Russell Targ & Harold Puthoff, Nature volume 251, pages 602-607 (18 October 1974); DOI 10.1038/251602a0. Author affiliation: ''Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025.'' Establishes the SRI-1974 Targ-Puthoff co-author relationship (the founding remote-viewing paper). Investigation citation [27]. NOTE: full article PDF is behind Nature subscription paywall ($39.95 per article or $199/year); only the abstract preview text is archived locally — the abstract is sufficient as a bibliographic anchor for the Targ-Puthoff relationship and the published date.'
+  wayback_date: '2025-12-29'
 - url: https://www.navair.navy.mil/foia/sites/g/files/jejdrs566/files/2020-04/1%20-%20FLIR.mp4
   format: video
   status: archived
@@ -2754,8 +2949,9 @@
 - url: https://www.wsj.com/politics/national-security/ufo-us-disinformation-45376f7e
   format: html
   status: 402-blocked
-  archive_status: 0
+  archive_status: 2
   note: Canonical Wall Street Journal URL for 'The Pentagon Disinformation That Fueled America's UFO Mythology' by Joel Schectman and Aruna Viswanatha (June 6, 2025). Paywalled — Wayback Save Page Now submission attempted 2026-05-03 returned HTTP 520; no Wayback CDX captures available. Full article text is preserved via the tovima.com WSJ-syndication entry directly above (news/tovima-wsj-pentagon-disinformation-ufo-mythology-20250606.html); registered here so the canonical wsj.com URL is in the source-of-record index even though the byte-faithful local archive lives under the tovima syndication path.
+  wayback_date: '2026-05-06'
 - url: https://www.young.senate.gov/newsroom/press-releases/young-colleagues-introduce-new-legislation-to-declassify-government-records-related-to-ufos-and-unidentified-anomalous-phenomena_modeled-after-jfk-assassination-records-collection-act--as-an-amendment-to-ndaa/
   format: html
   status: archived
@@ -2781,6 +2977,15 @@
   archive_status: 3
   note: 'YouTube auto-captions for Calling All Beings #104 with Alex Dietrich (~1:11:38). Published 2024-01-05. Discusses UAP activism, Sol Foundation conference attendance, Inquiry into the Anomalous Experience Conference.'
   wayback_date: '2026-04-22'
+- url: https://www.youtube.com/watch?v=DUgMd8ic2ig
+  format: transcript
+  status: archived
+  path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
+  archived_date: '2026-05-07'
+  sha256: 41149be4489113bd6cfd61f6fe6be6bfbb9fa98f7af46357e32f611385259456
+  archive_status: 3
+  note: 'Lucis Trust Arcane School Conference London, May 2015 — Dr. James T. Ryder presentation ''The Soul Is Light. What Then Is Light?'' (Lucis Trust productions video published 2020-08-07 on the Lucis Trust YouTube channel; runtime 1:06:49). Transcript provenance: contributor-pasted from the YouTube transcript UI (same workflow as 2025-09-09 hearing transcript), then reformatted from bare-timestamp-on-its-own-line to canonical [MM:SS]-inline form to match the corpus convention used by other YouTube-caption transcripts in /sources/transcripts/. Auto-caption transcript with [MM:SS] timestamps preserved on every content line. Contains: IBEX (Interstellar Boundary Explorer) ''built in my lab'' first-person attestation of Lockheed Martin ATC supervisory role; Andromeda matter-halo survey instruments built by his company; Hal Puthoff ''my friend Dr. Puthoff'' + cosmic-matrix paper citation; first read Alice Bailey Treatise on Cosmic Fire ~1970 (3 years before 1973 Lockheed start); governments researching ''telepathy'' for ''purposes of invading other people in a secret way'' (auto-caption renders ''telepathy'' as ''leprosy'' in the body); plasma-vs-gas Sun mislabeling discussion; David Bohm + Stephen Hawking 2014 Nature article + Feynman last-book citations.'
+  wayback_date: '2024-09-30'
 - url: https://www.youtube.com/watch?v=Nc9_ZP36-AI
   format: transcript
   status: archived
@@ -2799,6 +3004,15 @@
   archive_status: 3
   note: 'Joe Rogan Experience #2065 with David Grusch and Ross Coulthart, aired 2023-11-21 (post Spotify-exclusivity YouTube upload on JRE channel).'
   wayback_date: '2025-11-14'
+- url: https://www.youtube.com/watch?v=R9Yn0hgbVA0
+  format: transcript
+  status: archived
+  path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+  archived_date: '2026-05-07'
+  sha256: 6265b2d72f704360c4e63dd45a65ecf4642b30450f2d3d9146b108ff7edbd617
+  archive_status: 3
+  note: 'Lucis Trust Arcane School Conference NYC, April 28-29, 2018 — Dr. James T. Ryder presentation ''The Garment of God: Esoterically and Scientifically'' (Lucis Trust productions video published 2021-02-02 on the Lucis Trust YouTube channel). Approximately one month before Ryder''s reported May 2018 death. Transcript provenance: contributor-pasted from the YouTube transcript UI (same workflow as 2025-09-09 hearing transcript per its manifest note); youtube-transcript-api and yt-dlp were both blocked from automated pull in this environment (''Sign in to confirm you''re not a bot''). Reformatted from bare-timestamp-on-its-own-line to canonical [MM:SS]-inline form to match the corpus convention used by other YouTube-caption transcripts in /sources/transcripts/. Contains: Targ ''worked for me for years'' attestation; Puthoff ''good buddy'' + Journal of Physics vacuum-polarization paper; ESP Wars book internal-Lockheed-Martin lineage (assembled 2009 during VP tenure, daughter at Lockheed Martin routed copy back); Cold War U.S./USSR psychic research funding asymmetry; Alice Bailey Cosmic Fire framework; Pam Reynolds-style standstill aneurysm out-of-body case discussion. Auto-caption variants observed: ''pothos'', ''thought of'', ''put off'' (all = Puthoff).'
+  wayback_date: '2024-04-13'
 - url: https://www.youtube.com/watch?v=RBAISwCZ2v0
   format: transcript
   status: archived
@@ -2850,8 +3064,9 @@
   path: transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript.txt
   archived_date: '2026-05-06'
   sha256: cc9ecdec3ba69f3591a2e3f5886dd90806cdd923ecb1dc61d53a3241dff02613
-  archive_status: 1
+  archive_status: 3
   note: '2025-09-09 House Oversight UAP hearing YouTube recording — auto-generated captions copy-pasted from YouTube transcript UI; cleaned to strip duplicated screen-reader duration text. Hearing title: ''Restoring Public Trust through UAP Transparency and Whistleblower Protection''. Stenographic transcript not yet published by the committee.'
+  wayback_date: '2026-03-09'
 - url: https://www.youtube.com/watch?v=ribyo1XCtRo
   format: transcript
   status: archived
@@ -2905,6 +3120,14 @@
   archive_status: 1
   wayback_skip: true
   note: 'Brandon Fugal X (Twitter) post 2024-05-09 23:11:17 UTC: "On April 19, 2018, my team from Skinwalker Ranch was asked to provide a confidential briefing in Washington D.C. to the U.S. Senate Select Committee on Intelligence & United States Armed Services Committee. Sean Kirkpatrick was at the head of the table. It lasted 2.5 hrs." Attached photo at sources/social/fugal-skinwalker-ranch-senate-briefing-photo-20180419.jpg (pbs.twimg.com/media/GNLEvJqWgAABtvl.jpg, 2048x1806). Audit finding 3.4 primary source documenting Kirkpatrick at the briefing. x.com HTML page is 402-blocked; archived via cdn.syndication.twimg.com public tweet-result endpoint. Wayback CDX has captures under twitter.com/BrandonFugal/status/{id} but they are React-shell only.'
+- url: https://x.com/ChrisUKSharp/status/1905236006292316397
+  format: html
+  status: archived
+  path: social/sharp-x-cardillo-blocked-transfer-20250327.html
+  archived_date: '2026-05-07'
+  sha256: a10b45fc37293d876cc62d54c0d6cf97cceda772e80dc12ca3381820f0809a60
+  archive_status: 1
+  note: 'Christopher Sharp X post (status ID 1905236006292316397), created 2025-03-27 12:30:36 UTC, naming Robert Cardillo as the official with final authority to block the 2011 material transfer. Verbatim tweet text: ''As previously reported by Liberation Times, efforts in 2011 to transfer materials between Lockheed Martin and the Department of Homeland Security (DHS) were allegedly thwarted through actions coordinated by the CIA''s Directorate of Science & Technology, then led by Glenn Gaffney. Liberation Times now understands that the final authority to block the transfer ultimately rested with Robert Cardillo, who at the time served as the Deputy Director of National Intelligence for Intelligence Integration.'' Note source-internal divergence: Sharp''s earlier Liberation Times Nov 8, 2024 article identifies the recipient as DIA/AAWSAP (Bigelow Aerospace facilities); this X post identifies the recipient as DHS. Both source-attested by the same reporter; preserved per the contradiction-preservation discipline. Local archive is the Wayback snapshot of x.com/ChrisUKSharp/status/1905236006292316397 captured 2025-03-27T12:30:36Z (Twitter API JSON response, not rendered HTML).'
 - url: https://x.com/ChrisUKSharp/status/1965182535358456276/photo/1
   format: image
   status: archived

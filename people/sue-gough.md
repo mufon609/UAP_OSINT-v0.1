@@ -48,7 +48,7 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 
 ### Direct Observations
 
-<!-- No direct observations documented. -->
+_No direct observations documented._
 
 ### Other Statements
 

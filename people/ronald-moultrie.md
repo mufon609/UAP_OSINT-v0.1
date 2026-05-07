@@ -82,7 +82,7 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 
 ### Direct Observations
 
-<!-- No direct observations documented. -->
+_No direct observations documented._
 
 ### Other Statements
 

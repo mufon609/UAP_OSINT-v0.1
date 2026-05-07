@@ -54,7 +54,7 @@ From 2019 to 2021, in his [`/organizations/nro`] reservist capacity, Grusch was 
 
 ### Direct Observations
 
-<!-- No direct observations documented. -->
+_No direct observations documented._
 
 ### Other Statements
 

@@ -71,7 +71,7 @@ Dr. Kirkpatrick was asked by USD(I&S) Ronald Moultrie ([`/people/ronald-moultrie
 
 ### Direct Observations
 
-<!-- No direct observations documented. -->
+_No direct observations documented._
 
 ### Other Statements
 

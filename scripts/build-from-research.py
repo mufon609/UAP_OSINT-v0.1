@@ -603,7 +603,7 @@ def render_statements(artifact):
             lines.append(_render_statement_block(q, artifact))
             lines.append("")
     else:
-        lines += ["", "<!-- No direct observations documented. -->"]
+        lines += ["", "_No direct observations documented._"]
 
     lines += ["", "### Other Statements"]
     if other:
@@ -612,7 +612,7 @@ def render_statements(artifact):
             lines.append(_render_statement_block(q, artifact))
             lines.append("")
     else:
-        lines += ["", "<!-- No other statements documented. -->"]
+        lines += ["", "_No other statements documented._"]
 
     return "\n".join(lines).rstrip() + "\n"
 

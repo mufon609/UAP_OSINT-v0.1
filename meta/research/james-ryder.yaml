@@ -8,13 +8,53 @@ description: ''
 primary_sources:
   - path: transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript.txt
     format: txt
+  - path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+    format: transcript
+  - path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
+    format: transcript
   - path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
     format: pdf
+  - path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    format: pdf
+  - path: government/dtic-ada098295-mechanics-composites-review-vi-1981.pdf
+    format: pdf
+  - path: government/dtic-ada115795-mechanics-composites-review-vii-1982.pdf
+    format: pdf
   - path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+    format: html
+  - path: news/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108.html
     format: html
   - path: news/ivsci-leadership-snapshot.html
     format: html
   - path: news/lucistrust-arcane-conf-london-2017-snapshot.html
+    format: html
+  - path: news/lucistrust-arcane-conf-newyork-2018-snapshot.html
+    format: html
+  - path: news/lucistrust-garment-of-god-video-page-snapshot.html
+    format: html
+  - path: news/lucistrust-soul-is-light-video-page-snapshot.html
+    format: html
+  - path: news/lucistrust-bi-annual-letter-ryder-science-meditation-snapshot.html
+    format: html
+  - path: news/lucistrust-electric-bridge-electric-universe-human-story-snapshot.html
+    format: html
+  - path: news/news.lockheedmartin.com-2008-03-05-darpa-f6-satellite-program.html
+    format: html
+  - path: news/news.lockheedmartin.com-2009-07-23-environmental-observations-forum.html
+    format: html
+  - path: news/news.lockheedmartin.com-2009-11-18-carbon-nanotube-memory-shuttle.html
+    format: html
+  - path: news/safireproject-team-snapshot.html
+    format: html
+  - path: news/aureonenergy-history-snapshot.html
+    format: html
+  - path: news/cyclostationarity-gardner-biography-snapshot.html
+    format: html
+  - path: news/espresearch-russell-targ-snapshot.html
+    format: html
+  - path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    format: html
+  - path: social/sharp-x-cardillo-blocked-transfer-20250327.html
     format: html
   - path: video/lucistrust-rending-veils-pt1-ryder-2017-222366976.mp4
     format: video
@@ -29,7 +69,139 @@ document_intrinsic:
 context_extrinsic:
   retirement_date: '2011-02'
   vimeo_transcription_pending: 'Lucis Trust Vimeo recording 222366976 (Rending of the Veils, Part 1, June 2017) is the primary first-person source for Ryder''s own voice but currently un-transcribed. Whisper transcription deferred to contributor''s desktop; will register as a separate transcript-format manifest entry and add Ryder-attributed quotes to this artifact at that time.'
-quotes: []
+quotes:
+  - id: q1
+    added_date: '2026-05-07'
+    text: |
+      I'm going to define it as to develop and organize knowledge about the nature of the universe. And if you look at it from the esoteric point of view, that's a pretty big universe.
+    source:
+      path: news/lucistrust-bi-annual-letter-ryder-science-meditation-snapshot.html
+      location: '¶5'
+    observation_type: relayed
+    context: 'Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk ''The Garment of God'', published in a Lucis Trust Bi annual letter under the title ''Science is our meditation on the nature of the universe''.'
+    statement_date: '2018-04-28'
+    significance: 'Ryder''s published self-defined purpose of science, with explicit reference to the esoteric framing — bridges his Lockheed Martin technical career and his Lucis Trust Arcane School lecture series.'
+  - id: q2
+    added_date: '2026-05-07'
+    text: |
+      Its role, I contend, is collective meditation on truth. There are some interesting philosophical discussions on that in certain science books. I think we pursue science because it's a response to humanity's "cry" to understand and to know.
+    source:
+      path: news/lucistrust-bi-annual-letter-ryder-science-meditation-snapshot.html
+      location: '¶7'
+    observation_type: relayed
+    context: 'Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk ''The Garment of God'', published in a Lucis Trust Bi annual letter under the title ''Science is our meditation on the nature of the universe''.'
+    statement_date: '2018-04-28'
+    significance: 'Ryder''s published characterization of the role of science as collective meditation on truth, framing the Lucis-Trust-adjacent vocabulary (meditation) as compatible with scientific inquiry.'
+  - id: q3
+    added_date: '2026-05-07'
+    text: |
+      In the end, I think the role of science is to bring light into the world – the light of our understanding of what we are.
+    source:
+      path: news/lucistrust-bi-annual-letter-ryder-science-meditation-snapshot.html
+      location: '¶11'
+    observation_type: relayed
+    context: 'Ryder-bylined edited transcript excerpt of his April 2018 Arcane School Conference talk ''The Garment of God'', published in a Lucis Trust Bi annual letter under the title ''Science is our meditation on the nature of the universe''. This is the closing sentence of the published excerpt, delivered approximately one month before Ryder''s death.'
+    statement_date: '2018-04-28'
+    significance: 'Final published Ryder-byline statement on the role of science. Closing line of the edited transcript excerpt; Ryder died approximately one month after the original April 28-29, 2018 New York conference talk.'
+  - id: q4
+    added_date: '2026-05-07'
+    text: |
+      [39:00] so let's look at that i know about ibx internet boundary explorer very well because it was built in my lab and it discovered a ribbon in the sky
+    source:
+      path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
+      location: '[39:00]'
+    observation_type: relayed
+    context: 'Ryder''s 2015 Lucis Trust Arcane School Conference talk ''The Soul Is Light. What Then Is Light?'' (London, May 2015; YouTube DUgMd8ic2ig).'
+    statement_date: '2015-05'
+    significance: 'First-person Ryder primary attestation that IBEX (Interstellar Boundary Explorer, NASA Small Explorer mission launched October 2008) was developed in his Lockheed Martin Advanced Technology Center lab. Documents direct R&D leadership of a NASA spacecraft program by name. Auto-caption renders ''IBEX'' as ''ibx''.'
+  - id: q5
+    added_date: '2026-05-07'
+    text: |
+      [31:33] to look through those nose because they're out there in space i know a little about them because my company built a lot of them and i had the luck to oversee a lot of those
+    source:
+      path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
+      location: '[31:33]'
+    observation_type: relayed
+    context: 'Ryder''s 2015 Lucis Trust Arcane School Conference talk ''The Soul Is Light. What Then Is Light?'', referencing the May 2015 Nature publication on the matter halo around the Andromeda galaxy and the spacecraft instrumentation behind that observation.'
+    statement_date: '2015-05'
+    significance: 'First-person Ryder primary attestation that his company (Lockheed Martin Space Systems Company) built the spacecraft instruments behind the May 2015 Andromeda matter-halo Nature publication and that he personally oversaw the program. A second on-camera attestation of his Lockheed Martin Space Systems Vice President / ATC role beyond the IVS leadership page text.'
+  - id: q6
+    added_date: '2026-05-07'
+    text: |
+      [59:05] so as my friend dr put off said it's like the manifest universe is instantly intrinsically interconnected
+    source:
+      path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
+      location: '[59:05]'
+    observation_type: relayed
+    context: 'Ryder''s 2015 Lucis Trust Arcane School Conference talk ''The Soul Is Light. What Then Is Light?''.'
+    statement_date: '2015-05'
+    significance: 'First-person Ryder attestation of personal friendship with Hal Puthoff, naming Puthoff on camera as ''my friend dr put off''. Confirms the Ryder-Puthoff durable scientific friendship. Auto-caption renders ''Puthoff'' as ''put off''.'
+  - id: q7
+    added_date: '2026-05-07'
+    text: |
+      [1:02:05] i can tell you for a fact governments have looked into leprosy to use it for the purposes of invading other people in a secret way
+    source:
+      path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
+      location: '[1:02:05]'
+    observation_type: relayed
+    context: 'Ryder''s 2015 Lucis Trust Arcane School Conference talk ''The Soul Is Light. What Then Is Light?'', section on consciousness research and government psychic-research history.'
+    statement_date: '2015-05'
+    significance: 'First-person Ryder on-record acknowledgment that governments have investigated telepathy for covertly accessing other people, framed as a known historical fact rather than speculation. Auto-caption renders ''telepathy'' as ''leprosy''.'
+  - id: q8
+    added_date: '2026-05-07'
+    text: |
+      [1:08:10] and they did the first work some forty years ago dr pothos one dr targ who's worked for me for years is another one it's fun being able to say these things
+    source:
+      path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+      location: '[1:08:10]'
+    observation_type: relayed
+    context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God: Esoterically and Scientifically'' (April 28-29, 2018), section on telepathy and remote viewing research history.'
+    statement_date: '2018-04-28'
+    significance: 'First-person Ryder primary attestation of a direct supervisory relationship with Russell Targ at Lockheed: ''dr targ who''s worked for me for years''. The on-camera caption ''it''s fun being able to say these things'' lands at this moment, indicating Ryder is acknowledging the relationship publicly for the first time. Auto-caption renders ''Puthoff'' as ''pothos''.'
+  - id: q9
+    added_date: '2026-05-07'
+    text: |
+      [54:57] there you go what's that got to do on the page here i'll tell you a little story on that um a few weeks ago a good friend of mine who's still at lockheed martin still works there mainly as an advisor to the young kids because he's about my age and he just loves working and he sent through my daughter who also works at lockheed martin now said your dad might like this and he sent me a spiral bound book it's a big one like that pretty thick and it says on it esp wars i knew it instantly because that thing was put together when i was the vp there and russell targ dr targ had a lot of input doctor thought of did i get to say this now i'm so delighted
+    source:
+      path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+      location: '[54:57]'
+    observation_type: relayed
+    context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God: Esoterically and Scientifically'' (April 28-29, 2018), introducing his reference list which includes the ''ESP Wars: East and West'' book.'
+    statement_date: '2018-04-28'
+    significance: 'First-person Ryder narration of the internal Lockheed Martin lineage of the ''ESP Wars: East and West'' declassified-psychic-research book project. Establishes: (1) the book was assembled during Ryder''s LMSSC Vice President tenure, (2) Russell Targ ''had a lot of input'', (3) Hal Puthoff (auto-captioned ''thought of'') was involved, (4) Ryder''s daughter also works at Lockheed Martin, (5) a current Lockheed Martin colleague routed the published copy to Ryder via his daughter. Direct primary attestation of the LMSSC-internal psychic-research declassification chain.'
+  - id: q10
+    added_date: '2026-05-07'
+    text: |
+      [55:50] no put together in 2009 so i was two years away before i retired
+    source:
+      path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+      location: '[55:50]'
+    observation_type: relayed
+    context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God'', clarifying the assembly date of the ''ESP Wars'' book.'
+    statement_date: '2018-04-28'
+    significance: 'Ryder dates the ESP Wars book assembly to 2009, two years before his February 2011 retirement. Cross-anchors with the IVS leadership page period (May 2005 - February 2011) and confirms Ryder''s VP-tenure overlap with the book project.'
+  - id: q11
+    added_date: '2026-05-07'
+    text: |
+      [39:24] the second one is by dr hal put off as a physicist in austin and hal's publishing on that second one did get accepted into the journal of physics
+    source:
+      path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+      location: '[39:24]'
+    observation_type: relayed
+    context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God'', discussing alternative gravity theories. The ''second one'' refers to a specific gravity-as-electromagnetism paper Ryder is citing, immediately after referring to its author as ''my good buddy'' (line 39:12).'
+    statement_date: '2018-04-28'
+    significance: 'First-person Ryder primary attestation that Hal Puthoff is ''my good buddy'' (line 39:12 of source) and that Puthoff''s vacuum-polarization gravity paper was accepted in the Journal of Physics. Confirms the durable Ryder-Puthoff friendship in 2018, three years after the 2015 talk reference.'
+  - id: q12
+    added_date: '2026-05-07'
+    text: |
+      [20:50] if you wanted to study uh certain kinds of things related to what's called esp in the united states until very recently you had to hide it very carefully because you were crazy and then the government didn't want you people to think they're supporting crazy stuff but if you wanted to do the work in russia go right ahead fine here's your money because they're not caught in the religion that says it's not possible
+    source:
+      path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+      location: '[20:50]'
+    observation_type: relayed
+    context: 'Ryder''s 2018 Lucis Trust Arcane School Conference NYC talk ''The Garment of God'', section on Cold War ESP and psychic research funding history.'
+    statement_date: '2018-04-28'
+    significance: 'Ryder''s first-person framing of the Cold War U.S./USSR asymmetry in psychic research funding: in the U.S. ESP work had to be hidden, in the USSR it was openly funded. Provides Ryder''s personal historical framing of the ''ESP Wars'' book context.'
 entities_referenced:
   - id: e1
     added_date: '2026-05-06'
@@ -132,23 +304,185 @@ entities_referenced:
     entity_type: document
     name: 'SD004 — submitted document, 2024-11-13 House Oversight UAP hearing'
     wrap_path: '/documents/docs-house-gov-hhrg-118-go12-20241113-sd004'
-    context_summary: 'Submitted Document 004 to the 2024-11-13 House Oversight UAP hearing record. 21 pages, fully scanned (no embedded text layer). Page 1 is an unsigned three-question Q&A by an unnamed contributor, DOPSR-cleared 2023-09-06; widely attributed to James Lacatski by NewParadigmInstitute and the UAP-press secondary reporting on stylistic and content grounds, but authorship is not primary-source-confirmed.'
+    context_summary: 'Submitted Document 004 to the 2024-11-13 House Oversight UAP hearing record. 21 pages, fully scanned (no embedded text layer). Page 1 is an unsigned three-question Q&A DOPSR-cleared 2023-09-06; the author is identified by name as Dr. James Lacatski (former Director of AAWSAP) under sworn testimony in Luis Elizondo''s December 19, 2024 House Oversight Question-for-the-Record response (entity e25), which independently quotes the same DOPSR-cleared text verbatim and references it as Attachment 2 of Elizondo''s QFR.'
   - id: e22
     added_date: '2026-05-06'
     entity_type: document
     name: 'Liberation Times — Christopher Sharp (2025-03-27)'
     wrap_path: '/documents/liberationtimes-burlison-grusch-recruitment-20250327'
     context_summary: 'Liberation Times article by Christopher Sharp dated March 27, 2025; primary published-record reporting that recapitulates the Ryder / Lockheed Martin / Glenn Gaffney / Robert Cardillo / William Lynn narrative and documents Lockheed Martin''s repeated refusal to deny the underlying allegations.'
-naming_quirks: []
-rumors:
-  - id: r1
-    added_date: '2026-05-06'
-    claim: 'Ryder died on May 28, 2018 (Memorial Day) in San Jose, California, from a massive heart attack; the International Science Foundation closed in the wake of his death.'
-    status: not-primary-source-established
-    observed_sources:
-      - 'Sentinel Network "THE ARCHITECT" article (anonymous publication; cites Ancestry.com genealogy entry, said to be a contributor''s family memorial entry, and a memorial post by Dr. William A. Gardner on his cyclostationarity research blog).'
-      - 'halfway123 Substack ("Was Dr. James T. Ryder a First-Hand Member of ''The Legacy Program''?" — anonymous personal blog; same Ancestry.com source chain).'
-    note: 'Widely circulated in UAP-press secondary reporting; the SD004 page-1 author Q&A confirms the deceased status with the parenthetical "(now deceased)" but does not state a date. No primary source for the death date is currently archived in this corpus. The Lucis Trust productions catalogue may carry a primary memorial reference associated with Ryder''s 2018 "Garment of God" presentation; not yet retrieved.'
+  - id: e23
+    added_date: '2026-05-07'
+    entity_type: person
+    name: 'Russell Targ'
+    wrap_path: '/people/russell-targ'
+    context_summary: 'Physicist; co-founder of Stanford Research Institute remote-viewing program (1972) with Hal Puthoff; co-author of the 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (DOI 10.1038/251602a0). Targ retired from Lockheed Martin as a senior staff scientist (per his own site espresearch.com). Per investigator review of the 2018 ''Garment of God'' Lucis Trust talk (YouTube R9Yn0hgbVA0; not yet transcribed in this artifact), Ryder names Targ on camera and states Targ ''worked for me for years'' at Lockheed; quote-population pending the YouTube caption pull (BACKLOG-blocked: youtube-transcript-api / yt-dlp blocked from this environment, recovery via contributor browser-side workflow).'
+  - id: e24
+    added_date: '2026-05-07'
+    entity_type: person
+    name: 'Hal Puthoff'
+    wrap_path: '/people/hal-puthoff'
+    context_summary: 'Physicist; Director of Institute for Advanced Studies at Austin (per SAFIRE Project team page); SRI Stargate co-founder with Russell Targ (1972); co-author of the 1974 Nature ''Information transmission under conditions of sensory shielding'' paper. Listed on the SAFIRE Project Science Review Team alongside Ryder, Eric W. Davis, and William A. Gardner (primary attestation: safireproject.com/about-us/team.html). Per investigator review of Lucis Trust 2015 ''Soul Is Light'' (YouTube DUgMd8ic2ig) and 2018 ''Garment of God'' (YouTube R9Yn0hgbVA0), Ryder names Puthoff on camera as ''my friend Dr. Puthoff'' (2015) and ''good buddy'' (2018); quote-population pending caption pull.'
+  - id: e25
+    added_date: '2026-05-07'
+    entity_type: person
+    name: 'Eric W. Davis'
+    wrap_path: '/people/eric-davis'
+    context_summary: 'Chief Science Officer, Institute for Advanced Studies at Austin (per SAFIRE Project team page). Listed on the SAFIRE Project Science Review Team alongside Ryder, Hal Puthoff, and William A. Gardner (primary attestation: safireproject.com/about-us/team.html).'
+  - id: e26
+    added_date: '2026-05-07'
+    entity_type: person
+    name: 'William A. Gardner'
+    wrap_path: '/people/william-gardner'
+    context_summary: 'Professor Emeritus, University of California; cyclostationary signal processing researcher. Per his own first-person biography (cyclostationarity.com/biography/), Gardner began a five-year collaboration with Ryder in 2013; states Ryder ''founded the ISF and served as chairman of the board of the ISF and also the IVS which was founded by Professor Gerald Pollack of the University of Washington.'' Footnote 1 of Gardner''s biography is the only named-source primary attestation of Ryder''s death timing: ''The International Science Foundation funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018.'' Listed on the SAFIRE Project Science Review Team alongside Ryder, Puthoff, and Davis.'
+  - id: e27
+    added_date: '2026-05-07'
+    entity_type: person
+    name: 'Gerald Pollack'
+    wrap_path: '/people/gerald-pollack'
+    context_summary: 'University of Washington professor; founder of the Institute for Venture Science (IVS) per William A. Gardner''s first-person biography (cyclostationarity.com/biography/). Identifies the IVS-founder lineage that pairs with Ryder''s IVS Chairman role.'
+  - id: e28
+    added_date: '2026-05-07'
+    entity_type: person
+    name: 'Steny Hoyer'
+    wrap_path: '/people/steny-hoyer'
+    context_summary: 'Then-Representative (Maryland) identified by Luis Elizondo under oath (December 19, 2024 QFR Question 7 response) as the requesting authority for the approximately $10 million in funding allocated to construct the Patuxent River Naval Air Station Special Access Program Facility (SAP-F) hangar that was purpose-built to receive the alleged UAP materials transferred from Lockheed Martin. Elizondo states he personally visited the PAX River facility but no materials had been transferred at the time of his visit.'
+  - id: e29
+    added_date: '2026-05-07'
+    entity_type: person
+    name: 'Luis Elizondo'
+    wrap_path: '/people/luis-elizondo'
+    context_summary: 'Author and former Department of Defense official; AATIP senior ranking person. Author of the December 19, 2024 sworn Question-for-the-Record (QFR) response to Rep. Eric Burlison''s December 9, 2024 QFR letter, responding to the November 13, 2024 House Oversight UAP hearing. Elizondo''s Q1 response identifies Lacatski as the SD004 page-1 author; Q6 confirms ''The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace''; Q7 confirms the Patuxent River SAP-F hangar (~$10M, requested by Steny Hoyer) and Elizondo''s personal visit. The QFR is the load-bearing primary source resolving SD004 page-1 authorship from secondary attribution to sworn primary attestation.'
+  - id: e30
+    added_date: '2026-05-07'
+    entity_type: person
+    name: 'James Lacatski'
+    wrap_path: '/people/james-lacatski'
+    context_summary: 'Former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP) at the Defense Intelligence Agency. Identified by name under oath in Luis Elizondo''s December 19, 2024 QFR Q1 response as the author of the DOPSR-cleared (Sep 6, 2023) statement that names Ryder as the Lockheed Martin Space Systems Vice President who proposed the UAP material divestment plan to AAWSAP leadership. Resolves the prior secondary-attribution-only chain (NewParadigmInstitute / UAP-press) to sworn primary attestation by Elizondo. Co-author of ''Skinwalkers at the Pentagon'' (2021) and ''Inside the U.S. Government Covert UFO Program: Initial Revelations'' (2023).'
+  - id: e31
+    added_date: '2026-05-07'
+    entity_type: organization
+    name: 'International Science Foundation (ISF)'
+    wrap_path: '/organizations/international-science-foundation'
+    context_summary: 'Per William A. Gardner''s first-person biography, Ryder founded the International Science Foundation and served as Chairman of the Board until his death in May 2018, when ISF closed. ISF was the funder of the SAFIRE Project (commercial successor: Aureon Energy Ltd.) per the SAFIRE team page institutional self-attestation and Gardner footnote 1.'
+  - id: e32
+    added_date: '2026-05-07'
+    entity_type: organization
+    name: 'SAFIRE Project'
+    wrap_path: '/organizations/safire-project'
+    context_summary: 'Plasma-physics laboratory project testing the Electric Sun model under the International Science Foundation mandate (per safireproject.com/about-us/team.html); Ryder served on the SAFIRE Project Science Review Team alongside Hal Puthoff (Director, Institute for Advanced Studies at Austin), Eric W. Davis (Chief Science Officer, IASA), and William A. Gardner (Professor Emeritus, University of California). SAFIRE I built in lab 2013; SAFIRE II built in lab 2019; commercial successor is Aureon Energy Ltd. (per aureonenergy.com/history). The Mainwaring Archive Foundation is also listed as a SAFIRE funder on the team page.'
+  - id: e33
+    added_date: '2026-05-07'
+    entity_type: organization
+    name: 'Aureon Energy Ltd.'
+    wrap_path: '/organizations/aureon-energy'
+    context_summary: 'Commercial successor company to the SAFIRE Project plasma-physics research line. Founder and Chairman: Montgomery Childs (per aureonenergy.com/history). Domain migration history: aureon.ca → aureonenergy.com (Squarespace), the aureon.ca/history redirect is broken (HTTP 301 sends Location ''https://aureonenergy.comhistory'' missing slash). Migrated site retains photos of SAFIRE I (lab 2013) + SAFIRE II (lab 2019) but does not carry the historical ''ISF as funder'' text the legacy aureon.ca page reportedly carried.'
+  - id: e34
+    added_date: '2026-05-07'
+    entity_type: organization
+    name: 'Lockheed-California Company / Rye Canyon Research Laboratory'
+    wrap_path: '/organizations/lockheed-california-company'
+    context_summary: 'Lockheed-California Company (subsidiary of Lockheed Corporation prior to the 1995 Lockheed Martin merger). Operated the Rye Canyon Research Laboratory in Valencia, CA. Documented as Ryder''s early-career employer of record in DTIC AD-A098295 (Sixth Annual Mechanics of Composites Review, Oct 29 1980 presentation ''Effect of Load History on Fatigue Life'') and DTIC AD-A115795 (Seventh Annual Mechanics of Composites Review, Oct 28-30 1981 presentation; explicit ''J. T. RYDER - LOCKHEED - RYE CANYON'' attestation). Establishes Ryder''s Lockheed tenure back at least to the late 1970s — predating the May 2005 LMSSC VP role attested by the IVS leadership page.'
+  - id: e35
+    added_date: '2026-05-07'
+    entity_type: organization
+    name: 'Air Force Materials Laboratory / Wright-Patterson AFB'
+    wrap_path: '/organizations/afml-wright-patterson'
+    context_summary: 'Air Force Materials Laboratory (AFML) at Wright-Patterson AFB sponsored the Annual Mechanics of Composites Review series. Ryder presented at the Sixth (Oct 29, 1980; DTIC AD-A098295) and Seventh (Oct 28-30, 1981; DTIC AD-A115795) reviews as a contractor researcher representing Lockheed-California Company. AFML was succeeded by Air Force Wright Aeronautical Laboratories (AFWAL); the Lauraitis/Pettit/Ryder ''Advanced Residual Strength Degradation Rate Modeling for Advanced Composite Structures'' Vol 2 + Vol 3 (1981) was published under AFWAL / Flight Dynamics Laboratory.'
+  - id: e36
+    added_date: '2026-05-07'
+    entity_type: organization
+    name: 'Stanford Research Institute (SRI)'
+    wrap_path: '/organizations/stanford-research-institute'
+    context_summary: 'Stanford Research Institute, Menlo Park, California (94025); Electronics and Bioengineering Laboratory. Per the 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (Targ + Puthoff, Nature 251:602-607, 18 October 1974, DOI 10.1038/251602a0), the institutional venue where Targ and Puthoff founded the remote-viewing research program; underpins the Ryder ↔ Targ / Ryder ↔ Puthoff network anchors documented on the SAFIRE Project Science Review Team.'
+  - id: e37
+    added_date: '2026-05-07'
+    entity_type: location
+    name: 'Patuxent River Naval Air Station (PAX)'
+    wrap_path: '/locations/patuxent-river-nas'
+    context_summary: 'U.S. Navy installation in southern Maryland. Per Luis Elizondo''s sworn QFR (Dec 19, 2024 Q7 response), a hangar was purpose-built at PAX River to meet Special Access Program Facility (SAP-F) requirements at any classification level, capable of accommodating materials at any classification level; designed to facilitate the transfer of future materials via air and river. Funding (~$10 million) was allocated at the request of then-Representative Steny Hoyer. Elizondo personally visited the facility; no materials had yet been transferred at the time of his visit.'
+  - id: e38
+    added_date: '2026-05-07'
+    entity_type: document
+    name: 'Elizondo Sworn QFR Response (December 19, 2024)'
+    wrap_path: '/documents/elizondo-qfr-burlison-20241219'
+    context_summary: 'Luis D. Elizondo''s sworn Question-for-the-Record response to Rep. Eric Burlison''s Dec 9, 2024 QFR letter, addressed to House Oversight Subcommittees on Cybersecurity/IT/Government Innovation and National Security/Border/Foreign Affairs (Chairs: Nancy Mace, Glenn Grothman). 8-page document, dated December 19, 2024, signed by Luis D. Elizondo. Q1 identifies Lacatski as SD004 author (DOPSR-cleared Sep 6, 2023); Q6 confirms CIA opposed transfer; Q7 confirms PAX River SAP-F hangar (~$10M, Hoyer-requested); Q11 notes $22M AAWSAP funded varied programmatic needs (37 DIRDs published, see Attachment 3). Hosted on Douglas Johnson''s Ghost-blog mirror; canonical docs.house.gov path returns 404 (the QFR was not published on the House Oversight document repository).'
+  - id: e39
+    added_date: '2026-05-07'
+    entity_type: document
+    name: 'DTIC AD-A098295 — Sixth Annual Mechanics of Composites Review proceedings (1981)'
+    wrap_path: '/documents/dtic-ada098295-mechanics-composites-review-vi-1981'
+    context_summary: 'Air Force Materials Laboratory proceedings of the Sixth Annual Mechanics of Composites Review. 214-page document. Confirms Ryder''s presentation ''Effect of Load History on Fatigue Life'' (October 29, 1980; Lockheed-California Company affiliation) and his role as Principal Investigator on AFML composites research at the time. Investigation citation [23].'
+  - id: e40
+    added_date: '2026-05-07'
+    entity_type: document
+    name: 'DTIC AD-A115795 — Seventh Annual Mechanics of Composites Review proceedings (1982)'
+    wrap_path: '/documents/dtic-ada115795-mechanics-composites-review-vii-1982'
+    context_summary: 'Air Force Materials Laboratory proceedings of the Seventh Annual Mechanics of Composites Review held October 28-30, 1981, Dayton, Ohio. 337-page document. Confirms Ryder presented at the Oct 28-30 1981 review with explicit ''J. T. RYDER - LOCKHEED - RYE CANYON'' attribution; documents collaboration with T. K. O''Brien (NASA Langley Research Center). Investigation citation [7].'
+  - id: e41
+    added_date: '2026-05-07'
+    entity_type: document
+    name: 'Lucis Trust Bi-Annual Letter — ''Science is our meditation on the nature of the universe'' by James T. Ryder (2018)'
+    wrap_path: '/documents/lucistrust-ryder-science-meditation-letter-2018'
+    context_summary: 'Edited transcript excerpt of Dr. James T. Ryder''s 2018 ''Garment of God'' Arcane School Conference talk, published under Ryder''s byline as a Lucis Trust Bi annual letter feature. The Ryder-bylined published prose form of the 2018 NYC talk. Footer attribution: ''Excerpted from an edited transcript of a talk, The Garment of God by the late Jim Ryder at a 2018 Arcane School Conference. Dr. Ryder was a retired Vice President of Lockheed Martin Space Systems Company and former head of the Advanced Technology Center.'''
+naming_quirks:
+  - id: nq1
+    added_date: '2026-05-07'
+    observed: 'Lockeed Martin'
+    canonical: 'Lockheed Martin'
+    location: 'sources/news/lucistrust-garment-of-god-video-page-snapshot.html'
+    source_path: 'news/lucistrust-garment-of-god-video-page-snapshot.html'
+    resolution: preserve-as-sic-in-quotes
+    note: 'Lucis Trust ''Garment of God'' video archive page renders the company name with a single-h misspelling: ''a retired Vice President of Lockeed Martin Space Systems Company''. Source-form artifact; not a contributor mistake. Preserve verbatim if quoted; canonical ''Lockheed Martin'' attested in every other source (LM corporate press releases, IVS leadership page, etc.).'
+  - id: nq2
+    added_date: '2026-05-07'
+    observed: 'ibx'
+    canonical: 'IBEX'
+    location: 'sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt [39:00]'
+    source_path: 'transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt'
+    resolution: preserve-as-sic-in-quotes
+    note: 'YouTube auto-caption rendering of ''IBEX'' (Interstellar Boundary Explorer, NASA Small Explorer mission). Ryder spells it out moments later as ''internet boundary explorer'' (auto-caption mishears ''interstellar'' as ''internet''); preserved verbatim in q4. Canonical: IBEX.'
+  - id: nq3
+    added_date: '2026-05-07'
+    observed: 'leprosy'
+    canonical: 'telepathy'
+    location: 'sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt [1:02:05]'
+    source_path: 'transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt'
+    resolution: preserve-as-sic-in-quotes
+    note: 'YouTube auto-caption mishearing of ''telepathy'' as ''leprosy'' in q7. The surrounding context (''governments have looked into leprosy to use it for the purposes of invading other people in a secret way'') and the broader transcript section (the prior chunk: ''we''ve already talked a little bit about telepathy does telepathy work yes and no doubt about it'') make the canonical form unambiguous.'
+  - id: nq4
+    added_date: '2026-05-07'
+    observed: 'put off'
+    canonical: 'Puthoff'
+    location: 'sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt [59:05]; sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt [39:24]'
+    source_path: 'transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt'
+    resolution: preserve-as-sic-in-quotes
+    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''put off'' in q6 (2015 talk: ''dr put off'') and q11 (2018 talk: ''dr hal put off as a physicist in austin''). Canonical: Hal Puthoff, Director of Institute for Advanced Studies at Austin (per SAFIRE Project team page).'
+  - id: nq5
+    added_date: '2026-05-07'
+    observed: 'pothos'
+    canonical: 'Puthoff'
+    location: 'sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt [1:08:10]'
+    source_path: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
+    resolution: preserve-as-sic-in-quotes
+    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''pothos'' in q8 (2018 talk: ''dr pothos one dr targ''). Different auto-caption variant from nq4 ''put off''. Canonical: Hal Puthoff.'
+  - id: nq6
+    added_date: '2026-05-07'
+    observed: 'thought of'
+    canonical: 'Puthoff'
+    location: 'sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt [55:36]'
+    source_path: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
+    resolution: preserve-as-sic-in-quotes
+    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''thought of'' in q9 (2018 talk: ''doctor thought of did i get to say this''). The phrase ''doctor thought of'' is a real English phrase, but in context Ryder is naming Puthoff as a contributor to the ''ESP Wars'' book project. Most subtle auto-caption variant of the three Puthoff renderings on this artifact (nq4, nq5, nq6).'
+  - id: nq7
+    added_date: '2026-05-07'
+    observed: 'wall thornhill'
+    canonical: 'Wal Thornhill'
+    location: 'sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt [39:12]'
+    source_path: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
+    resolution: preserve-as-sic-in-quotes
+    note: 'YouTube auto-caption rendering of ''Wal Thornhill'' as ''wall thornhill'' in the source surrounding q11. Canonical: Wal Thornhill, Electric Universe model proponent referenced in the same passage.'
+rumors: []
 timeline:
   - id: t1
     added_date: '2026-05-06'
@@ -198,6 +532,102 @@ timeline:
       path: transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript.txt
       location: '[2:02:14]'
     category: testimony
+  - id: t7
+    added_date: '2026-05-07'
+    date: '1980-10-29'
+    event: 'Presented "Effect of Load History on Fatigue Life" at the Sixth Annual Mechanics of Composites Review (Air Force Materials Laboratory [`/organizations/afml-wright-patterson`], Wright-Patterson AFB) as Principal Investigator, with affiliation Lockheed-California Company; proceedings published as DTIC AD-A098295 [`/documents/dtic-ada098295-mechanics-composites-review-vi-1981`].'
+    source:
+      path: government/dtic-ada098295-mechanics-composites-review-vi-1981.pdf
+      location: 'p. 65'
+    category: publication
+  - id: t8
+    added_date: '2026-05-07'
+    date: '1981-10-28'
+    event: 'Presented at the Seventh Annual Mechanics of Composites Review (Air Force Materials Laboratory [`/organizations/afml-wright-patterson`], Wright-Patterson AFB; October 28-30, 1981, Dayton, Ohio) with Lockheed Rye Canyon attribution and a T. K. O''Brien (NASA Langley) work shown in the record; proceedings published as DTIC AD-A115795 [`/documents/dtic-ada115795-mechanics-composites-review-vii-1982`].'
+    source:
+      path: government/dtic-ada115795-mechanics-composites-review-vii-1982.pdf
+      location: 'p. 271'
+    category: publication
+  - id: t9
+    added_date: '2026-05-07'
+    date: '2008-03-05'
+    event: 'Quoted by name in a Lockheed Martin Corp. press release announcing the DARPA F6 (Future, Fast, Flexible, Fractionated, Free-Flying Spacecraft United by Information Exchange) Phase 1 contract; attribution: "Dr. Jim Ryder, vice president of the Lockheed Martin Space Systems Advanced Technology Center (ATC) in Palo Alto."'
+    source:
+      path: news/news.lockheedmartin.com-2008-03-05-darpa-f6-satellite-program.html
+      location: '¶3'
+    category: publication
+  - id: t10
+    added_date: '2026-05-07'
+    date: '2009-07-23'
+    event: 'Quoted by name in a Lockheed Martin Corp. press release supporting the Forum on Earth Observations III (Washington DC, July 30 2009; Alliance for Earth Observations); attribution: "Dr. James T. Ryder, vice president of the Lockheed Martin Space Systems Company (LMSSC) Advanced Technology Center (ATC) in Palo Alto, Calif."'
+    source:
+      path: news/news.lockheedmartin.com-2009-07-23-environmental-observations-forum.html
+      location: '¶3'
+    category: publication
+  - id: t11
+    added_date: '2026-05-07'
+    date: '2009-11-18'
+    event: 'Quoted by name in a Lockheed Martin Corp. press release on the STS-125 (Space Shuttle Atlantis Hubble servicing mission) carbon-nanotube memory experiment; attribution: "Dr. Jim Ryder, vice president and general manager of the Lockheed Martin Advanced Technology Center in Palo Alto."'
+    source:
+      path: news/news.lockheedmartin.com-2009-11-18-carbon-nanotube-memory-shuttle.html
+      location: '¶4'
+    category: publication
+  - id: t12
+    added_date: '2026-05-07'
+    date: '2012-01-06'
+    event: 'Presented on the Surprising Results of the IBEX (Interstellar Boundary Explorer) Experiment at the Thunderbolts/Electric Universe conference, Las Vegas, January 6-8, 2012; per Mintze Van der Velde''s Lucis Trust contemporaneous report, Ryder discussed the IBEX mission imaging the edge of the solar system and the experimental ribbon of bright pixels.'
+    source:
+      path: news/lucistrust-electric-bridge-electric-universe-human-story-snapshot.html
+      location: '¶6'
+    category: publication
+  - id: t13
+    added_date: '2026-05-07'
+    date: '2013'
+    event: 'Began a five-year scientific collaboration with Dr. William A. Gardner (Professor Emeritus, University of California) on cyclostationarity-related plasma physics, per Gardner''s first-person biography.'
+    source:
+      path: news/cyclostationarity-gardner-biography-snapshot.html
+      location: '¶3'
+    category: affiliation
+  - id: t14
+    added_date: '2026-05-07'
+    date: '2015-05'
+    event: 'Presented "The Soul Is Light. What Then Is Light?" at the Lucis Trust Arcane School Conference, London (May 2015). The talk was archived to Lucis Trust''s video productions page; YouTube upload (DUgMd8ic2ig) duration 1:06:49 published 2020-08-07.'
+    source:
+      path: news/lucistrust-soul-is-light-video-page-snapshot.html
+      location: '¶2'
+    category: publication
+  - id: t15
+    added_date: '2026-05-07'
+    date: '2018-04-28'
+    event: 'Presented "The Garment of God: Esoterically and Scientifically" at the Lucis Trust Arcane School Conference, New York (Saturday April 28 and Sunday April 29, 2018) — approximately one month before his death. Recorded talk archived on the Lucis Trust productions page; YouTube upload (R9Yn0hgbVA0) published 2021-02-02.'
+    source:
+      path: news/lucistrust-arcane-conf-newyork-2018-snapshot.html
+      location: '¶6'
+    category: publication
+  - id: t16
+    added_date: '2026-05-07'
+    date: '2018-05'
+    event: 'Death. Per Dr. William A. Gardner''s biography note 1, the International Science Foundation "closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018". The day of the month is reported as May 28 in secondary sources but no primary source on this record states the day.'
+    source:
+      path: news/cyclostationarity-gardner-biography-snapshot.html
+      location: '¶4'
+    category: incident
+  - id: t17
+    added_date: '2026-05-07'
+    date: '2024-11-08'
+    event: 'Liberation Times reporter Christopher Sharp publishes "Witnesses Announced for Landmark UFO Congressional Hearing" — first archived source on this record to name Ryder. Cites unnamed sources alleging the material transfer was blocked by then-CIA Director of Science and Technology Glenn Gaffney; describes Ryder as "feeling threatened due to the harshness of exchanges with CIA officials".'
+    source:
+      path: news/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108.html
+      location: '¶12'
+    category: publication
+  - id: t18
+    added_date: '2026-05-07'
+    date: '2024-12-19'
+    event: 'Luis Elizondo signs his Question for the Record response to Rep. Eric Burlison. Q1 names Dr. James Lacatski as the SD004 page 1 author; Q6 confirms CIA opposition to the Lockheed-Bigelow transfer; Q7 names the Patuxent River SAP-F hangar (~$10M, requested by Steny Hoyer).'
+    source:
+      path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+      location: 'p. 3'
+    category: filing
 program_involvement:
   - id: pi1
     added_date: '2026-05-06'
@@ -233,27 +663,61 @@ program_involvement:
       path: transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript.txt
       location: '[2:02:14]'
     note: 'George Knapp under oath, in response to the question "are any of you willing to name specific gatekeepers within the root cell of the UAP SAP Federation? You mean specific people in contractors that have dealt with this secret? Specific individuals." replied naming Dr. James Ryder at Lockheed. Knapp followed by stating he does not fault the contractors for doing what they were asked to do by the government and that the intelligence agencies told them to keep it quiet. The testimony is sworn but the underlying gatekeeper claim is not independently corroborated by primary record.'
+  - id: pi4
+    added_date: '2026-05-07'
+    program: 'International Science Foundation (ISF)'
+    role: 'Founder and Chairman of the Board'
+    period_start: '2013'
+    period_end: '2018-05'
+    evidentiary_basis: primary-source
+    confidence: high
+    source:
+      path: news/cyclostationarity-gardner-biography-snapshot.html
+      location: '¶3'
+    note: 'Per Dr. William A. Gardner''s first-person biography, Ryder founded the International Science Foundation and served as Chairman of the Board until his death; ISF was the funder of the SAFIRE Project plasma-physics research line. Gardner attests the founding occurred during the five-year collaboration that began in 2013, bounding the ISF founding to 2013-or-later; period_start ''2013'' reflects that earliest-attested bound. Period_end is the May 2018 death attested in Gardner footnote 1.'
+  - id: pi5
+    added_date: '2026-05-07'
+    program: 'SAFIRE Project Science Review Team'
+    role: 'Science Review Team member (alongside Hal Puthoff, Eric W. Davis, William A. Gardner)'
+    evidentiary_basis: primary-source
+    confidence: high
+    source:
+      path: news/safireproject-team-snapshot.html
+      location: '¶4'
+    note: 'Per the SAFIRE Project corporate team page (safireproject.com/about-us/team.html), Ryder is listed under the "science review team" heading alongside Harold Puthoff (Director, Institute for Advanced Studies at Austin), Eric W. Davis (Chief Science Officer, IASA), and William A. Gardner (Professor Emeritus, University of California). SAFIRE tests the Electric Sun model under the International Science Foundation mandate; Ryder''s ISF Chairman role made him the funding-side anchor of the Science Review Team relationship.'
 background: 'James T. Ryder served 38 years in management and technical positions at the Lockheed Martin Corporation [`/organizations/lockheed-martin`], holding roles of Vice President, Director, Manager, Program Manager, Principal Investigator, and scientist and engineer across aircraft (L1011, F22, Skunk Works), rockets and missiles (space shuttle main engines, FBM, THAAD), and spacecraft (classified and unclassified defense systems and for NASA). From May 2005 until his retirement in February 2011, Ryder served as Vice President of Lockheed Martin Space Systems Company [`/organizations/lockheed-martin-space-systems-company`] in Palo Alto, CA, leading the Advanced Technology Center for Lockheed Martin Space Systems Company and the Lockheed Martin Corporation. Ryder holds a PhD in theoretical and applied mechanics, an MS in engineering mechanics, and a BS in theoretical and applied mechanics, all from the University of Illinois [`/organizations/university-of-illinois`]; his technical contributions and publications include structural durability and damage-tolerance analysis, optical materials, development and analysis of materials, and sensor instrumentation. He has been an adjunct professor, has taught graduate courses, has served on numerous advisory panels, review boards, committees, and conference committees, and served as Chairman of the Board at the Institute for Venture Science [`/organizations/institute-for-venture-science`] (the leadership page has not been updated since his death).
 
 
-  At the Lucis Trust [`/organizations/lucis-trust`] Arcane School Conference London in June 2017, Ryder gave the discussion "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena". Dr. Lee Blackburn [`/people/lee-blackburn`] gave the Part 2 discussion on the violet force and health.'
-top_relevance: 'Three documented statements name Ryder as a Lockheed Martin Space Systems Vice President involved in the alleged 2011 attempted transfer of UAP materials.
+  Ryder''s early career at the Lockheed-California Company [`/organizations/lockheed-california-company`] is documented in Air Force Materials Laboratory technical reports archived at the Defense Technical Information Center: he presented "Effect of Load History on Fatigue Life" at the Sixth Annual Mechanics of Composites Review (October 1980) and again at the Seventh Annual Mechanics of Composites Review (October 1981, Dayton, Ohio), with the proceedings showing his Lockheed Rye Canyon Research Laboratory affiliations and his work with T. K. O''Brien at NASA Langley Research Center. His May 2005 promotion to LMSSC Vice President was independently named in three Lockheed Martin Corporation press releases between March 2008 and November 2009 that quote him on the DARPA F6 satellite contract, the Forum on Earth Observations III, and the STS-125 carbon nanotube memory experiment.
 
 
-  The 21-page SD004 [`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`] was entered into the 13 November 2024 House Committee on Oversight and Accountability [`/organizations/house-oversight`] UAP hearing record. Page 1 is an unnamed Q&A DOPSR-cleared on Sep 06, 2023. The Q&A states the $22M allocated for DIA AAWSAP [`/organizations/aawsap`], after the unnamed author spoke to multiple individuals on the program, was originally intended to SCIF-out Bigelow Aerospace [`/organizations/bigelow-aerospace`] Facilities in Las Vegas due to a UAP material divestment plan proposed to AAWSAP leadership by Lockheed Martin Space Systems Vice President Dr. James Ryder (now deceased). A specific facility was described as having crash retrieval material from the 1950s and other historical operations. The proposed Technology Transfer Agreement was into the Waived PSAP that Senator Harry Reid [`/people/harry-reid`] was championing. The transfer was disapproved at a meeting with the original government custodian, the CIA Directorate of Science and Technology [`/organizations/cia-ds-and-t`], while Glenn Gaffney [`/people/glenn-gaffney`] was in that position.
+  After his February 2011 retirement, Ryder founded the International Science Foundation [`/organizations/international-science-foundation`] and served as its Chairman of the Board until his death in May 2018; per Dr. William A. Gardner [`/people/william-gardner`]''s biography, the founding occurred during their five-year collaboration that began in 2013. Earlier, in January 2012, Ryder presented at the Thunderbolts/Electric Universe conference in Las Vegas on the surprising results of the IBEX experiment, per Mintze Van der Velde''s Lucis Trust report. ISF funded the SAFIRE Project [`/organizations/safire-project`] plasma physics research line for several years; the project''s commercial successor is Aureon Energy Ltd. [`/organizations/aureon-energy`], whose published team page lists Ryder on the SAFIRE Project Science Review Team alongside Hal Puthoff [`/people/hal-puthoff`] (Director, Institute for Advanced Studies at Austin), Eric W. Davis [`/people/eric-davis`] (Chief Science Officer, Institute for Advanced Studies at Austin), and Gardner (Professor Emeritus, University of California). The IVS Ryder chaired was founded by Professor Gerald Pollack [`/people/gerald-pollack`] of the University of Washington.
 
 
-  The 27 March 2025 Liberation Times article [`/documents/liberationtimes-burlison-grusch-recruitment-20250327`] by reporter Christopher Sharp [`/people/christopher-sharp`] states Lockheed Martin has refused on multiple occasions to comment on allegations that its executives, including former Vice President of Space Systems James Ryder, were involved in the attempted transfer of materials. Sharp states that the final authority to block the transfer ultimately rested with Robert Cardillo [`/people/robert-cardillo`], then Deputy Director of National Intelligence for Intelligence Integration, and that the effort to gain Special Access Program status for AAWSAP was blocked by Deputy Secretary of Defense William Lynn [`/people/william-lynn-iii`] due to pressure from individuals within the intelligence community. Asked in November 2023 whether it could deny that it possesses materials of unknown or non-human origin, a Lockheed Martin company spokesperson declined to issue a denial, stating "Questions about UAPs are best addressed by the U.S. government."
+  At the Lucis Trust [`/organizations/lucis-trust`] Arcane School Conference London in June 2017, Ryder gave the discussion "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena". Dr. Lee Blackburn [`/people/lee-blackburn`] gave the Part 2 discussion on the violet force and health. Ryder also presented at the Lucis Trust Arcane School Conference in May 2015 ("The Soul Is Light. What Then Is Light?", London) and at the New York conference of April 2018 ("The Garment of God: Esoterically and Scientifically") — the latter approximately one month before his death. An edited transcript of the 2018 talk was published under his name as "Science is our meditation on the nature of the universe" in a Lucis Trust Bi annual letter.'
+top_relevance: 'Four documented statements name Ryder as a Lockheed Martin Space Systems Vice President involved in the alleged 2011 attempted transfer of UAP materials, including one filed under oath that names the author of the underlying record.
+
+
+  The 21-page SD004 [`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`] was entered into the 13 November 2024 House Committee on Oversight and Accountability [`/organizations/house-oversight`] UAP hearing record. Page 1 is a Q&A DOPSR-cleared on September 6, 2023. The Q&A states the $22M allocated for DIA AAWSAP [`/organizations/aawsap`], after the author spoke to multiple individuals on the program, was originally intended to SCIF-out Bigelow Aerospace [`/organizations/bigelow-aerospace`] Facilities in Las Vegas due to a UAP material divestment plan proposed to AAWSAP leadership by Lockheed Martin Space Systems Vice President Dr. James Ryder (now deceased). A specific facility was described as having crash retrieval material from the 1950s and other historical operations. The proposed Technology Transfer Agreement was into the Waived PSAP that Senator Harry Reid [`/people/harry-reid`] was championing. The transfer was disapproved at a meeting with the original government custodian, the CIA Directorate of Science and Technology [`/organizations/cia-ds-and-t`], while Glenn Gaffney [`/people/glenn-gaffney`] was in that position.
+
+
+  The author of the SD004 page-1 statement was named in Luis Elizondo [`/people/luis-elizondo`]''s December 19, 2024 Question for the Record response [`/documents/elizondo-qfr-burlison-20241219`] to the same House Oversight subcommittees. Responding to Rep. Eric Burlison''s December 9, 2024 letter, Elizondo''s Q1 response named Dr. James Lacatski [`/people/james-lacatski`], former Director of AAWSAP, as the author of the DOPSR-cleared statement (dated September 6, 2023) and quoted the Lockheed Ryder verbatim text as Attachment 2. Q6 confirmed that "the CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace." Q7 said that specific facilities were named to enable Bigelow Aerospace to acquire and securely store the materials following transfer from Lockheed Martin — locations in the Las Vegas area, and a newly built hangar at the Patuxent River Naval Air Station [`/locations/patuxent-river-nas`] funded with approximately $10 million allocated at the request of then-Representative Steny Hoyer [`/people/steny-hoyer`]; the PAX River hangar was purpose-built to meet Special Access Program Facility (SAP-F) requirements at any classification level. Elizondo said he visited the PAX River facility but no materials had been transferred at the time of his visit.
+
+
+  The 27 March 2025 Liberation Times article [`/documents/liberationtimes-burlison-grusch-recruitment-20250327`] by reporter Christopher Sharp [`/people/christopher-sharp`] states Lockheed Martin has refused on multiple occasions to comment on allegations that its executives, including former Vice President of Space Systems James Ryder, were involved in the attempted transfer of materials. Sharp states that the final authority to block the transfer ultimately rested with Robert Cardillo [`/people/robert-cardillo`], then Deputy Director of National Intelligence for Intelligence Integration, and that the effort to gain Special Access Program status for AAWSAP was blocked by Deputy Secretary of Defense William Lynn [`/people/william-lynn-iii`] due to pressure from individuals within the intelligence community. Asked in November 2023 whether it could deny that it possesses materials of unknown or non-human origin, a Lockheed Martin company spokesperson declined to issue a denial, stating "Questions about UAPs are best addressed by the U.S. government." Sharp''s earlier Liberation Times article on November 8, 2024 — published five days before the November 13 hearing where SD004 was entered into the record — was the first archived public source to name Ryder, and described those involved including Ryder as "feeling threatened due to the harshness of exchanges with CIA officials."
 
 
   At the 2025 House Oversight UAP hearing, when asked under oath to name specific gatekeepers within the root cell of the UAP SAP Federation, George Knapp [`/people/george-knapp`] named Dr. James Ryder at Lockheed.'
-credibility_notes: 'None of the documented statements that name Ryder are by Ryder. Ryder is deceased; the SD004 page-1 Q&A states "(now deceased)". A primary-source date for the death is not yet archived; the widely reported death date is noted as a claim that has no primary source archived.
+credibility_notes: 'None of the documented Lockheed transfer statements that name Ryder are by Ryder. Ryder is deceased. The SD004 page 1 Q&A states "(now deceased)" without giving a date; the only named primary record of the death is note 1 of Dr. William A. Gardner''s biography page, which says the International Science Foundation "closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018." The day of the death is reported as May 28 in secondary sources but no primary source on this record states the day; only the month and the year.
 
 
-  The page-1 Q&A author of SD004 is unnamed in the document. The 13 November 2024 House Oversight UAP hearing oral record does not name a person who entered the document. The Q&A was DOPSR-cleared for open publication on Sep 06, 2023 — DOPSR clearance is addressed at prior classification and similar limits, not at the truth of the statements made. The 27 March 2025 Liberation Times article by Christopher Sharp states "Liberation Times now understands" when stating its sources. Lockheed Martin has refused to issue a denial when asked to address the allegations.
+  The page 1 Q&A author of SD004 is not named in the document itself. The author was named in Luis Elizondo''s December 19, 2024 Question for the Record response: Elizondo says the DOPSR document (dated September 6, 2023) was a statement by Dr. James Lacatski, former Director of AAWSAP, and quoted the Lockheed Ryder text as Attachment 2 of his response. The Q&A was DOPSR cleared for open publication on September 6, 2023 — DOPSR clearance is addressed at prior classification and similar limits, not at the truth of the statements made. The 27 March 2025 Liberation Times article by Christopher Sharp says "Liberation Times now understands" when stating its sources. Lockheed Martin has refused to issue a denial when asked to address the allegations.
 
 
-  Ryder gave the Lucis Trust 2017 London discussion "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena" — Ryder''s own video is preserved as a primary source on this record but is not yet rendered as text. Statements from that video may update this record when the video is rendered as a separate primary source.'
+  Christopher Sharp''s November 8, 2024 Liberation Times article and his March 2025 X post name the same Lockheed Martin transfer story but state different recipient agencies: the November 2024 article says the recipient was DIA AAWSAP / Bigelow Aerospace facilities; the March 2025 X post says "efforts in 2011 to transfer materials between Lockheed Martin and the Department of Homeland Security (DHS) were allegedly thwarted through actions coordinated by the CIA''s Directorate of Science & Technology, then led by Glenn Gaffney." Both forms of the story are recorded on this page; the primary sources currently archived do not resolve whether DHS is an added involved agency or a difference in how the reporter named the recipient.
+
+
+  Ryder gave the Lucis Trust 2017 London discussion "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena" — the video is preserved as a primary source on this page but is not yet rendered as text. Ryder''s 2015 ("The Soul Is Light") and 2018 ("The Garment of God") Lucis Trust talks each have a YouTube video whose transcript was pulled into this page (see Statements). The published edited Ryder text from the 2018 talk is archived separately as the Lucis Trust Bi annual letter publication [`/documents/lucistrust-ryder-science-meditation-letter-2018`]. The 2015 and 2018 talk transcript files were transcribed by YouTube''s tool and contain a number of different forms of proper names (''put off'' / ''pothos'' / ''thought of'' for Puthoff; ''leprosy'' for telepathy; ''ibx'' for IBEX; ''wall thornhill'' for Wal Thornhill); these are preserved as sic in the Statements quotes and listed for the reader on this page.'
 affiliations:
   - id: a2
     added_date: '2026-05-06'
@@ -264,36 +728,81 @@ affiliations:
     source:
       path: news/ivsci-leadership-snapshot.html
       location: '¶3'
+  - id: a8
+    added_date: '2026-05-08'
+    organization_path: '/organizations/lucis-trust'
+    role: 'Presenter at the Arcane School Conference (London May 2015, "The Soul Is Light. What Then Is Light?")'
+    period_start: '2015-05'
+    source:
+      path: news/lucistrust-soul-is-light-video-page-snapshot.html
+      location: '¶2'
   - id: a4
     added_date: '2026-05-06'
     organization_path: '/organizations/lucis-trust'
-    role: 'Presenter at the Arcane School Conference'
-    period_start: '2017'
+    role: 'Presenter at the Arcane School Conference (London June 2017, "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena")'
+    period_start: '2017-06'
     source:
       path: news/lucistrust-arcane-conf-london-2017-snapshot.html
       location: '¶7'
+  - id: a9
+    added_date: '2026-05-08'
+    organization_path: '/organizations/lucis-trust'
+    role: 'Presenter at the Arcane School Conference (New York April 2018, "The Garment of God: Esoterically and Scientifically")'
+    period_start: '2018-04'
+    source:
+      path: news/lucistrust-arcane-conf-newyork-2018-snapshot.html
+      location: '¶6'
   - id: a3
     added_date: '2026-05-06'
     organization_path: '/organizations/institute-for-venture-science'
     role: 'Chairman of the Board'
+    period_end: '2018-05'
     source:
       path: news/ivsci-leadership-snapshot.html
       location: '¶1'
+    note: 'Period_end derived from Dr. William A. Gardner''s biography footnote 1 (May 2018 death). The IVS leadership page has not been updated since Ryder''s death and still lists him as Chairman without an end date; period_start is not source-attested in any archived primary source.'
+  - id: a5
+    added_date: '2026-05-07'
+    organization_path: '/organizations/lockheed-california-company'
+    role: 'Principal Investigator on AFML composites research at the Rye Canyon Research Laboratory, Valencia, CA'
+    period_start: '1980'
+    period_end: '1981'
+    source:
+      path: government/dtic-ada115795-mechanics-composites-review-vii-1982.pdf
+      location: 'p. 271'
+  - id: a6
+    added_date: '2026-05-07'
+    organization_path: '/organizations/international-science-foundation'
+    role: 'Founder and Chairman of the Board'
+    period_start: '2013'
+    period_end: '2018-05'
+    source:
+      path: news/cyclostationarity-gardner-biography-snapshot.html
+      location: '¶3'
+  - id: a7
+    added_date: '2026-05-07'
+    organization_path: '/organizations/safire-project'
+    role: 'Science Review Team member'
+    period_end: '2018-05'
+    source:
+      path: news/safireproject-team-snapshot.html
+      location: '¶4'
+    note: 'Period_end derived from Dr. William A. Gardner''s biography footnote 1 (May 2018 death; ISF — the SAFIRE funder — closed at that point). SAFIRE team page is a current snapshot that still lists Ryder; period_start is not source-attested.'
 relationships:
   - id: rel1
     added_date: '2026-05-06'
     person_path: '/people/glenn-gaffney'
-    relationship: 'Per the SD004 page-1 author Q&A, Gaffney was the head of the CIA Directorate of Science and Technology who disapproved Ryder''s proposed Technology Transfer Agreement at a meeting; per Christopher Sharp at Liberation Times, Gaffney coordinated the actions that thwarted the 2011 transfer.'
+    relationship: 'Per the SD004 page-1 author Q&A, the CIA Directorate of Science and Technology — while Glenn Gaffney was in that position — disapproved Ryder''s proposed Technology Transfer Agreement at a meeting; per Christopher Sharp at Liberation Times, the same Directorate, then led by Gaffney, coordinated the actions that thwarted the 2011 transfer.'
     source:
       path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
       location: 'p. 1, ¶6'
   - id: rel2
     added_date: '2026-05-06'
     person_path: '/people/james-lacatski'
-    relationship: 'AAWSAP founding Program Manager at the Defense Intelligence Agency; the SD004 page-1 author Q&A — widely attributed to Lacatski by NewParadigmInstitute and UAP-press secondary reporting — is the published-record source for the AAWSAP divestment narrative, with reference to "Skinwalkers at the Pentagon" pages 152-153 (Lacatski''s own co-authored book).'
+    relationship: 'Former Director of AAWSAP at the Defense Intelligence Agency; named in Luis Elizondo''s December 19, 2024 Question for the Record response as the author of the DOPSR-cleared (September 6, 2023) statement that names Ryder as the Lockheed Martin Space Systems Vice President proposing the UAP material divestment plan. Same text on SD004 page 1.'
     source:
-      path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
-      location: 'p. 1, ¶6'
+      path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+      location: 'p. 3'
   - id: rel3
     added_date: '2026-05-06'
     person_path: '/people/lee-blackburn'
@@ -301,3 +810,53 @@ relationships:
     source:
       path: news/lucistrust-arcane-conf-london-2017-snapshot.html
       location: '¶7'
+  - id: rel4
+    added_date: '2026-05-07'
+    person_path: '/people/hal-puthoff'
+    relationship: 'SAFIRE Project Science Review Team co-member with Ryder (Puthoff listed as Director, Institute for Advanced Studies at Austin). Ryder names Puthoff on camera as ''my friend dr put off'' (2015 talk) and ''dr hal put off as a physicist in austin'' (2018 talk), confirming the durable scientific friendship across both talks.'
+    source:
+      path: news/safireproject-team-snapshot.html
+      location: '¶4'
+  - id: rel5
+    added_date: '2026-05-07'
+    person_path: '/people/eric-davis'
+    relationship: 'SAFIRE Project Science Review Team co-member; Davis is listed as Chief Science Officer, Institute for Advanced Studies at Austin alongside Puthoff and Ryder per the SAFIRE corporate team page.'
+    source:
+      path: news/safireproject-team-snapshot.html
+      location: '¶4'
+  - id: rel6
+    added_date: '2026-05-07'
+    person_path: '/people/william-gardner'
+    relationship: 'Five-year scientific collaborator beginning in 2013 per Gardner''s first-person biography; SAFIRE Project Science Review Team co-member. Gardner is the named-source primary attestation of Ryder''s death timing (footnote 1: ISF "closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018") and the only first-person collaborator-attestation of Ryder as ISF founder.'
+    source:
+      path: news/cyclostationarity-gardner-biography-snapshot.html
+      location: '¶3'
+  - id: rel7
+    added_date: '2026-05-07'
+    person_path: '/people/gerald-pollack'
+    relationship: 'Per Dr. William A. Gardner''s biography, Pollack (University of Washington) founded the Institute for Venture Science (IVS); Ryder served as IVS Chairman of the Board, pairing the Pollack-as-founder and Ryder-as-chairman institutional positions on the same body.'
+    source:
+      path: news/cyclostationarity-gardner-biography-snapshot.html
+      location: '¶3'
+  - id: rel8
+    added_date: '2026-05-07'
+    person_path: '/people/russell-targ'
+    relationship: 'Per Targ''s ESP Research website, Targ retired from Lockheed Martin as a senior staff scientist; Ryder names Targ on camera in his 2018 ''Garment of God'' Lucis Trust talk as ''dr targ who''s worked for me for years''. Targ also co-founded the Stanford Research Institute [`/organizations/stanford-research-institute`] remote-viewing program with Hal Puthoff in 1972.'
+    source:
+      path: news/espresearch-russell-targ-snapshot.html
+      location: '¶3'
+  - id: rel9
+    added_date: '2026-05-07'
+    person_path: '/people/luis-elizondo'
+    relationship: 'Author of the December 19, 2024 Question for the Record response that names Lacatski as the SD004 page 1 author and confirms PAX River SAP-F hangar funding plus CIA opposition to the Lockheed-Bigelow transfer. Elizondo is the institutional route by which Lacatski''s statement reached the Congressional record.'
+    source:
+      path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+      location: 'p. 3'
+  - id: rel10
+    added_date: '2026-05-07'
+    person_path: '/people/steny-hoyer'
+    relationship: 'Per Luis Elizondo''s December 19, 2024 Q7 response, then-Representative Hoyer was the requesting authority for the ~$10 million allocated to construct the Patuxent River Naval Air Station SAP-F hangar built to receive the alleged UAP materials. No primary source on this page documents direct Hoyer-Ryder interaction.'
+    flagged: true
+    source:
+      path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+      location: 'p. 3'

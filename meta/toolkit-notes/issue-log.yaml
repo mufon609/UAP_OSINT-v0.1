@@ -1525,3 +1525,1572 @@
     background: 2 significant token(s) not in source (prose-drift check — contributor review): ivs, per
   tokens: [ivs, per]
 
+- ts: 2026-05-07T16:08:24Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:25Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:27Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:28Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:30Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:31Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:33Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:34Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:36Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:38Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:39Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:41Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:42Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:44Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:45Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:47Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:48Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:50Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:51Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:53Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:54Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:56Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:08:58Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:09:01Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:09:03Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:09:06Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:09:09Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:09:12Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:09:15Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:09:17Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:09:20Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:09:28Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T16:33:20Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:47:38Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 13 significant token(s) not in source (prose-drift check — contributor review): 28-29, affiliation, attesting, bi-annual, byline, carbon-nanotube, corroborated, explicitly, … (+5 more — pass --verbose for full list)
+  tokens: [28-29, affiliation, attesting, bi-annual, byline, carbon-nanotube, corroborated, explicitly, first-person, follow-on, iasa, plasma-physics, quoting]
+
+- ts: 2026-05-07T17:47:38Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 8 significant token(s) not in source (prose-drift check — contributor review): adds, earliest, identifies, lockheed-ryder, naming, question-for-the-record, reproduces, sworn
+  tokens: [adds, earliest, identifies, lockheed-ryder, naming, question-for-the-record, reproduces, sworn]
+
+- ts: 2026-05-07T17:47:38Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 62 significant token(s) not in source (prose-drift check — contributor review): 38-year, absence, anonymous, assertion, attestation, attests, automated, bi-annual, … (+54 more — pass --verbose for full list)
+  tokens: [38-year, absence, anonymous, assertion, attestation, attests, automated, bi-annual, bot-detection, caption, captions, compilation, contradiction-preservation, culminating, databases, day-of-month, disc-shaped, dugmd8ic2ig, evidentiary, excerpt, first-person, footnote, genealogy, in-memoriam, indices, juxtaposing, leadership-history, lockheed-divestment, lockheed-ryder, month-and-year, named-source, obituary, on-camera, outlet, post-retirement, prehistory, primary-source-attested, public-record, pulls, question-for-the-record, quotes, r9yn0hgbva0, reader-visible, recording, reporter-attribution, repository, resolved, retain, retrievable, rock-art, ryder-bylined, slide, source-attested, surfaced, sworn, timestamping, timestamps, timing, transcript-format, transcripts, uploads, vimeo]
+
+- ts: 2026-05-07T17:47:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 13 significant token(s) not in source (prose-drift check — contributor review): 28-29, affiliation, attesting, bi-annual, byline, carbon-nanotube, corroborated, explicitly, … (+5 more — pass --verbose for full list)
+  tokens: [28-29, affiliation, attesting, bi-annual, byline, carbon-nanotube, corroborated, explicitly, first-person, follow-on, iasa, plasma-physics, quoting]
+
+- ts: 2026-05-07T17:47:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 8 significant token(s) not in source (prose-drift check — contributor review): adds, earliest, identifies, lockheed-ryder, naming, question-for-the-record, reproduces, sworn
+  tokens: [adds, earliest, identifies, lockheed-ryder, naming, question-for-the-record, reproduces, sworn]
+
+- ts: 2026-05-07T17:47:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 62 significant token(s) not in source (prose-drift check — contributor review): 38-year, absence, anonymous, assertion, attestation, attests, automated, bi-annual, … (+54 more — pass --verbose for full list)
+  tokens: [38-year, absence, anonymous, assertion, attestation, attests, automated, bi-annual, bot-detection, caption, captions, compilation, contradiction-preservation, culminating, databases, day-of-month, disc-shaped, dugmd8ic2ig, evidentiary, excerpt, first-person, footnote, genealogy, in-memoriam, indices, juxtaposing, leadership-history, lockheed-divestment, lockheed-ryder, month-and-year, named-source, obituary, on-camera, outlet, post-retirement, prehistory, primary-source-attested, public-record, pulls, question-for-the-record, quotes, r9yn0hgbva0, reader-visible, recording, reporter-attribution, repository, resolved, retain, retrievable, rock-art, ryder-bylined, slide, source-attested, surfaced, sworn, timestamping, timestamps, timing, transcript-format, transcripts, uploads, vimeo]
+
+- ts: 2026-05-07T17:53:35Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): affiliation, naming
+  tokens: [affiliation, naming]
+
+- ts: 2026-05-07T17:53:35Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 8 significant token(s) not in source (prose-drift check — contributor review): captions, footnote, naming, quotes, transcripts, uploads, versions, vimeo
+  tokens: [captions, footnote, naming, quotes, transcripts, uploads, versions, vimeo]
+
+- ts: 2026-05-07T17:54:10Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 3 significant token(s) not in source (prose-drift check — contributor review): footnote, named-recipient, quotes
+  tokens: [footnote, named-recipient, quotes]
+
+- ts: 2026-05-07T17:54:45Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): named-recipient
+  tokens: [named-recipient]
+
+- ts: 2026-05-07T17:55:04Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:55:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (77>55): Death (month and year). Per Dr. William A. Gardner's first-p...
+
+- ts: 2026-05-07T17:55:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (75>55): Liberation Times reporter Christopher Sharp publishes "Witne...
+
+- ts: 2026-05-07T17:55:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (118>55): Luis Elizondo signs and dates his sworn Question-for-the-Rec...
+
+- ts: 2026-05-07T17:55:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (83>55): Former Director of AAWSAP at the Defense Intelligence Agency...
+
+- ts: 2026-05-07T17:55:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (72>55): SAFIRE Project Science Review Team co-member with Ryder per ...
+
+- ts: 2026-05-07T17:55:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (80>55): Per Targ's own ESP Research website (espresearch.com), Targ ...
+
+- ts: 2026-05-07T17:55:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (82>55): Author of the December 19, 2024 sworn Question-for-the-Recor...
+
+- ts: 2026-05-07T17:55:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (65>55): Per Luis Elizondo's sworn QFR Q7 response, then-Representati...
+
+- ts: 2026-05-07T17:55:16Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:55:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (77>55): Death (month and year). Per Dr. William A. Gardner's first-p...
+
+- ts: 2026-05-07T17:55:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (75>55): Liberation Times reporter Christopher Sharp publishes "Witne...
+
+- ts: 2026-05-07T17:55:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (118>55): Luis Elizondo signs and dates his sworn Question-for-the-Rec...
+
+- ts: 2026-05-07T17:55:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (83>55): Former Director of AAWSAP at the Defense Intelligence Agency...
+
+- ts: 2026-05-07T17:55:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (72>55): SAFIRE Project Science Review Team co-member with Ryder per ...
+
+- ts: 2026-05-07T17:55:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (80>55): Per Targ's own ESP Research website (espresearch.com), Targ ...
+
+- ts: 2026-05-07T17:55:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (82>55): Author of the December 19, 2024 sworn Question-for-the-Recor...
+
+- ts: 2026-05-07T17:55:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (65>55): Per Luis Elizondo's sworn QFR Q7 response, then-Representati...
+
+- ts: 2026-05-07T17:55:21Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:55:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (77>55): Death (month and year). Per Dr. William A. Gardner's first-p...
+
+- ts: 2026-05-07T17:55:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (75>55): Liberation Times reporter Christopher Sharp publishes "Witne...
+
+- ts: 2026-05-07T17:55:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (118>55): Luis Elizondo signs and dates his sworn Question-for-the-Rec...
+
+- ts: 2026-05-07T17:55:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (83>55): Former Director of AAWSAP at the Defense Intelligence Agency...
+
+- ts: 2026-05-07T17:55:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (72>55): SAFIRE Project Science Review Team co-member with Ryder per ...
+
+- ts: 2026-05-07T17:55:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (80>55): Per Targ's own ESP Research website (espresearch.com), Targ ...
+
+- ts: 2026-05-07T17:55:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (82>55): Author of the December 19, 2024 sworn Question-for-the-Recor...
+
+- ts: 2026-05-07T17:55:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (65>55): Per Luis Elizondo's sworn QFR Q7 response, then-Representati...
+
+- ts: 2026-05-07T17:55:27Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:55:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (77>55): Death (month and year). Per Dr. William A. Gardner's first-p...
+
+- ts: 2026-05-07T17:55:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (75>55): Liberation Times reporter Christopher Sharp publishes "Witne...
+
+- ts: 2026-05-07T17:55:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (118>55): Luis Elizondo signs and dates his sworn Question-for-the-Rec...
+
+- ts: 2026-05-07T17:55:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (83>55): Former Director of AAWSAP at the Defense Intelligence Agency...
+
+- ts: 2026-05-07T17:55:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (72>55): SAFIRE Project Science Review Team co-member with Ryder per ...
+
+- ts: 2026-05-07T17:55:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (80>55): Per Targ's own ESP Research website (espresearch.com), Targ ...
+
+- ts: 2026-05-07T17:55:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (82>55): Author of the December 19, 2024 sworn Question-for-the-Recor...
+
+- ts: 2026-05-07T17:55:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (65>55): Per Luis Elizondo's sworn QFR Q7 response, then-Representati...
+
+- ts: 2026-05-07T17:56:58Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:56:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (58>55): Luis Elizondo signs his Question for the Record response to ...
+
+- ts: 2026-05-07T17:56:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (61>55): Per Targ's ESP Research website (espresearch.com), Targ reti...
+
+- ts: 2026-05-07T17:56:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (65>55): Author of the December 19, 2024 Question for the Record resp...
+
+- ts: 2026-05-07T17:56:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (56>55): Per Luis Elizondo's December 19, 2024 Question for the Recor...
+
+- ts: 2026-05-07T17:57:01Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:57:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (58>55): Luis Elizondo signs his Question for the Record response to ...
+
+- ts: 2026-05-07T17:57:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (61>55): Per Targ's ESP Research website (espresearch.com), Targ reti...
+
+- ts: 2026-05-07T17:57:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (65>55): Author of the December 19, 2024 Question for the Record resp...
+
+- ts: 2026-05-07T17:57:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (56>55): Per Luis Elizondo's December 19, 2024 Question for the Recor...
+
+- ts: 2026-05-07T17:57:07Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:57:07Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (58>55): Luis Elizondo signs his Question for the Record response to ...
+
+- ts: 2026-05-07T17:57:07Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (61>55): Per Targ's ESP Research website (espresearch.com), Targ reti...
+
+- ts: 2026-05-07T17:57:07Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (65>55): Author of the December 19, 2024 Question for the Record resp...
+
+- ts: 2026-05-07T17:57:07Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (56>55): Per Luis Elizondo's December 19, 2024 Question for the Recor...
+
+- ts: 2026-05-07T17:57:31Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:57:31Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (59>55): Author of the December 19, 2024 Question for the Record resp...
+
+- ts: 2026-05-07T17:57:33Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:57:33Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (59>55): Author of the December 19, 2024 Question for the Record resp...
+
+- ts: 2026-05-07T17:57:43Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:57:45Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:57:46Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:57:54Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e35' ('Air Force Materials Laboratory / Wright-Patterson AFB') wrap_path '/organizations/afml-wright-patterson' does not appear as a [`/organizations/afml-wright-patterson`] link in the node
+
+- ts: 2026-05-07T17:57:54Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e36' ('Stanford Research Institute (SRI)') wrap_path '/organizations/stanford-research-institute' does not appear as a [`/organizations/stanford-research-institute`] link in the node
+
+- ts: 2026-05-07T17:57:54Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e39' ('DTIC AD-A098295 — Sixth Annual Mechanics of Composites Review proceedings (1981)') wrap_path '/documents/dtic-ada098295-mechanics-composites-review-vi-1981' does not appear as a [`/documents/dtic-ada098295-mechanics-composites-review-vi-1981`] link in the node
+
+- ts: 2026-05-07T17:57:54Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e40' ('DTIC AD-A115795 — Seventh Annual Mechanics of Composites Review proceedings (1982)') wrap_path '/documents/dtic-ada115795-mechanics-composites-review-vii-1982' does not appear as a [`/documents/dtic-ada115795-mechanics-composites-review-vii-1982`] link in the node
+
+- ts: 2026-05-07T17:57:54Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e41' ("Lucis Trust Bi-Annual Letter — 'Science is our meditation on the nature of the universe' by James T. Ryder (2018)") wrap_path '/documents/lucistrust-ryder-science-meditation-letter-2018' does not appear as a [`/documents/lucistrust-ryder-science-meditation-letter-2018`] link in the node
+
+- ts: 2026-05-07T17:58:44Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:58:45Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e36' ('Stanford Research Institute (SRI)') wrap_path '/organizations/stanford-research-institute' does not appear as a [`/organizations/stanford-research-institute`] link in the node
+
+- ts: 2026-05-07T17:58:47Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:59:15Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:59:17Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T17:59:47Z
+  source: validator
+  check: governance_files
+  phase: validate
+  node: meta/toolkit-notes/Ryder_Investigation.md
+  node_type: governance
+  severity: error
+  message: |
+    Missing or malformed YAML frontmatter (meta/ files require id / type / schema_version / created)
+
+- ts: 2026-05-07T18:24:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 5 significant token(s) not in source (prose-drift check — contributor review): auto-caption, naming, q12, transcripts, variants
+  tokens: [auto-caption, naming, q12, transcripts, variants]
+
+- ts: 2026-05-07T18:24:43Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 2 significant token(s) not in source (prose-drift check — contributor review): naming, transcripts
+  tokens: [naming, transcripts]
+
+- ts: 2026-05-07T18:24:44Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 2 significant token(s) not in source (prose-drift check — contributor review): naming, transcripts
+  tokens: [naming, transcripts]
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 72 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[39:00] so let's look at that i know about ibx internet boundary explorer very w..."
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 80 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[31:33] to look through those nose because they're out there in space i know a l..."
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 88 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[59:05] so as my friend dr put off said it's like the manifest universe is insta..."
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 96 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[1:02:05] i can tell you for a fact governments have looked into leprosy to use ..."
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 128 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[1:08:10] and they did the first work some forty years ago dr pothos one dr targ..."
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 136 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[54:57] there you go what's that got to do on the page here i'll tell you a litt..."
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 152 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[39:24] the second one is by dr hal put off as a physicist in austin and hal's p..."
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 160 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[20:50] if you wanted to study uh certain kinds of things related to what's call..."
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (66>55): SAFIRE Project Science Review Team co-member with Ryder; Put...
+
+- ts: 2026-05-07T18:24:47Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (58>55): Per Targ's ESP Research website, Targ retired from Lockheed ...
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 72 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[39:00] so let's look at that i know about ibx internet boundary explorer very w..."
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 80 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[31:33] to look through those nose because they're out there in space i know a l..."
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 88 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[59:05] so as my friend dr put off said it's like the manifest universe is insta..."
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 96 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[1:02:05] i can tell you for a fact governments have looked into leprosy to use ..."
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 128 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[1:08:10] and they did the first work some forty years ago dr pothos one dr targ..."
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 136 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[54:57] there you go what's that got to do on the page here i'll tell you a litt..."
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 152 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[39:24] the second one is by dr hal put off as a physicist in austin and hal's p..."
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 160 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[20:50] if you wanted to study uh certain kinds of things related to what's call..."
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (66>55): SAFIRE Project Science Review Team co-member with Ryder; Put...
+
+- ts: 2026-05-07T18:24:49Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (58>55): Per Targ's ESP Research website, Targ retired from Lockheed ...
+
+- ts: 2026-05-07T18:25:00Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 72 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[39:00] so let's look at that i know about ibx internet boundary explorer very w..."
+
+- ts: 2026-05-07T18:25:00Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 80 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[31:33] to look through those nose because they're out there in space i know a l..."
+
+- ts: 2026-05-07T18:25:00Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 88 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[59:05] so as my friend dr put off said it's like the manifest universe is insta..."
+
+- ts: 2026-05-07T18:25:00Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 96 NOT FOUND in sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt: "[1:02:05] i can tell you for a fact governments have looked into leprosy to use ..."
+
+- ts: 2026-05-07T18:25:00Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 128 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[1:08:10] and they did the first work some forty years ago dr pothos one dr targ..."
+
+- ts: 2026-05-07T18:25:00Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 136 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[54:57] there you go what's that got to do on the page here i'll tell you a litt..."
+
+- ts: 2026-05-07T18:25:00Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 152 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[39:24] the second one is by dr hal put off as a physicist in austin and hal's p..."
+
+- ts: 2026-05-07T18:25:01Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 160 NOT FOUND in sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt: "[20:50] if you wanted to study uh certain kinds of things related to what's call..."
+
+- ts: 2026-05-07T18:25:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (66>55): SAFIRE Project Science Review Team co-member with Ryder; Put...
+
+- ts: 2026-05-07T18:25:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (58>55): Per Targ's ESP Research website, Targ retired from Lockheed ...
+
+- ts: 2026-05-07T18:27:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 2 significant token(s) not in source (prose-drift check — contributor review): naming, transcripts
+  tokens: [naming, transcripts]
+
+- ts: 2026-05-07T18:27:02Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (66>55): SAFIRE Project Science Review Team co-member with Ryder; Put...
+
+- ts: 2026-05-07T18:27:02Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (58>55): Per Targ's ESP Research website, Targ retired from Lockheed ...
+
+- ts: 2026-05-07T18:27:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (66>55): SAFIRE Project Science Review Team co-member with Ryder; Put...
+
+- ts: 2026-05-07T18:27:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (58>55): Per Targ's ESP Research website, Targ retired from Lockheed ...
+
+- ts: 2026-05-07T18:27:05Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 2 significant token(s) not in source (prose-drift check — contributor review): naming, transcripts
+  tokens: [naming, transcripts]
+
+- ts: 2026-05-07T18:27:44Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): naming
+  tokens: [naming]
+
+- ts: 2026-05-07T18:27:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): naming
+  tokens: [naming]
+
+- ts: 2026-05-07T20:12:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): contemporaneous, first-person
+  tokens: [contemporaneous, first-person]
+
+- ts: 2026-05-07T20:14:28Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): contemporaneous, first-person
+  tokens: [contemporaneous, first-person]
+

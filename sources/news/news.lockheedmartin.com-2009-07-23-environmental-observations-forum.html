@@ -1,0 +1,1128 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+<!-- begin spin_special_output(head_start) -->
+<script type="text/javascript" wd_script_id="view_printable_script" nonce="ODkzMTczZmY1YWM4ODk0NTdmZDYzNDE3YTM2YTJkMDQxNDA4ZGEzOQ==">
+	function view_printable() {
+		var loc = window.location;
+		var sep = (loc.search == "") ? "?" : "&";
+		var url = loc.protocol+"//"+loc.host+loc.pathname+loc.search+sep+"printable"+loc.hash;
+		window.open(url, "_blank", "");
+	}
+</script>
+<link href="thirdparty/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet" wd_script_id="font-awesome.min.css">
+<style type="text/css" wd_script_id="toolbar_style" nonce="ODkzMTczZmY1YWM4ODk0NTdmZDYzNDE3YTM2YTJkMDQxNDA4ZGEzOQ==">
+			div.wd_toolbar {
+				border-top: 1px solid #cccccc;
+				border-bottom: 1px solid #cccccc;
+				margin: 15px 0px 15px 0px;
+				padding: 5px;
+				line-height: 1;
+			}
+			div.wd_toolbar-page {
+				clear: both;
+			}
+			div.wd_toolbar ul.wd_tools {
+				display: inline-block;
+				width: 100%;
+				margin: 0;
+				padding: 5px 0;
+			}
+			div.wd_toolbar ul.wd_tools li.wd_tool {
+				display: block;
+				list-style-type: none;
+				margin-right: 5px;
+				padding: 0;
+				float: right;
+			}
+			span.wd_tool_icon > a:link,
+			span.wd_tool_icon > a:visited {
+				border-radius: 2px;
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				box-sizing: border-box;
+				margin: 0;
+				padding: 7px;
+				font-size: 16px;
+				line-height: 1;
+				text-align: center;
+				color: #ffffff;
+				background-color: #767676;
+			} 
+			span.wd_tool_icon > a:hover {
+				color: #ffffff;
+				background-color: #666666;
+				text-decoration: none;
+			}
+			div.wd_toolbar ul.wd_tools li.wd_tool-addthis {
+				float: left;
+			}
+		</style>
+<script type="text/javascript" src="js/jquery-webdriver.js" wd_script_id="jquery-webdriver.js" nonce="ODkzMTczZmY1YWM4ODk0NTdmZDYzNDE3YTM2YTJkMDQxNDA4ZGEzOQ=="></script>
+<script type="text/javascript" src="js/webdriver.js" wd_script_id="webdriver.js" nonce="ODkzMTczZmY1YWM4ODk0NTdmZDYzNDE3YTM2YTJkMDQxNDA4ZGEzOQ=="></script>
+<script type="text/javascript" src="js/wd_resize.js" wd_script_id="wd_resize.js" nonce="ODkzMTczZmY1YWM4ODk0NTdmZDYzNDE3YTM2YTJkMDQxNDA4ZGEzOQ=="></script>
+<script type="text/javascript" wd_script_id="format_news_script" nonce="ODkzMTczZmY1YWM4ODk0NTdmZDYzNDE3YTM2YTJkMDQxNDA4ZGEzOQ==">
+(function($) {
+	webDriver.formatNews = function() {
+		var $news = $(this);
+		var print_url = $news.attr("wd_print_url");
+		$news.find("table").each(function() {
+			var $table = $(this);
+			var $parent = $table.parent();
+			if ($parent.innerWidth() < $table.outerWidth()) {
+				if ($parent.hasClass("wd_news_table")) {
+					$parent.find(".fullscreen-button").show();
+				} else {
+					var $btn = $("<button>View News Release Full Screen</button>")
+						.addClass("fullscreen-button")
+						.on("click", function() {
+							if (print_url)
+								window.open(print_url, "_blank", "");
+							else
+								view_printable();
+						})
+					;
+
+					var $div = $("<div></div>)")
+						.addClass("wd_news_table")
+						.css("overflow-x", "auto")
+						.append($btn)
+					;
+
+					$table.replaceWith($div);
+					$div.append($table);
+				}
+			} else {
+				if ($parent.hasClass("wd_news_table"))
+					$parent.find(".fullscreen-button").hide();
+			}
+		});
+	}
+})(webDriver.jQuery);
+</script>
+<style type="text/css" wd_script_id="template detail:newsfeed_releases:system style" nonce="ODkzMTczZmY1YWM4ODk0NTdmZDYzNDE3YTM2YTJkMDQxNDA4ZGEzOQ==">
+.wd_title {
+	font-size: 1.3em;
+	font-weight: bold;
+}
+.wd_subtitle {
+	font-weight: bold;
+}
+table.wd_extimagetable {
+	border-style: none; 
+	border-spacing:0px;
+	clear: right; 
+	float: right; 
+}
+td.wd_extimagecell {
+	text-align: right; 
+	margin: 0px 0px 5px 5px;
+	padding:0px;
+}
+td.wd_extimagecell img {
+	padding-left:10px;
+	padding-bottom:10px;
+	border-style: none; 
+}
+blockquote.wd_pullquote {
+	font-style: italic;
+	width:200px;
+	margin:0 0 20px 20px;
+	line-height: 1.8em;
+	float: right;
+	clear: right;
+}
+blockquote.wd_pullquote:before {
+	content: "“ ";
+	font-size: xx-large;
+}
+blockquote.wd_pullquote:after {
+	content: " ”";
+	font-size: xx-large;
+	float: right;
+}
+.fullscreen-button {
+	border: 1px solid #d1d1d1;
+	background: #e3e3e3 url(images/webdriver/view_full_screen_button_background.png) no-repeat;
+	padding: 3px 3px 3px 30px;
+	margin: 5px 0px 5px 0px;
+	color: #727272;
+	width: 220px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.wd_contact {
+	margin: 1em 0;
+}
+.wd_release_data {
+	margin: 1em 0;
+}
+.wd_caption {
+	text-align: center;
+	font-size: 0.72em;
+	font-style: italic;
+	margin: 1em 0 0 0;
+}
+</style>
+
+<!-- end spin_special_output(head_start) -->
+
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="algolia-site-verification"  content="B5FE90C2A078ADBA" />
+
+		<link rel="shortcut icon" href="https://www.lockheedmartin.com/favicon.ico">
+		<title>Lockheed Martin Supports Forum On Environmental Observations - Jul 23, 2009</title>
+		
+ <meta name="keywords" content="" />
+ <meta name="description" content="" />
+ <meta name="twitter:card" content="summary" />
+ <meta name="twitter:title" content="Lockheed Martin Supports Forum On Environmental Observations" />
+ <meta name="twitter:description" content="Lockheed Martin is a major corporate sponsor of Forum on Earth Observations III: The Environmental Information Revolution, which will convene in Washington, D.C. on July 30, 2009. The Forum is..." />
+ <meta name="twitter:image" content="https://news.lockheedmartin.com/image/lm-logo.jpg" />
+ <meta property="og:site_name" content="Media - Lockheed Martin" />
+ <meta property="og:url" content="https://news.lockheedmartin.com/2009-07-23-Lockheed-Martin-Supports-Forum-On-Environmental-Observations" />
+ <meta property="og:title" content="Lockheed Martin Supports Forum On Environmental Observations" />
+ <meta property="og:description" content="Lockheed Martin is a major corporate sponsor of Forum on Earth Observations III: The Environmental Information Revolution, which will convene in Washington, D.C. on July 30, 2009. The Forum is..." />
+ <meta name="image" property="og:image" content="https://news.lockheedmartin.com/image/lm-logo.jpg" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-theme-classic@1.17.7/dist/theme.min.css" integrity="sha256-s8HZAxSFlUyg8xDRIGM9bjVSO0OZ9xJJCpJLtIyBUlA=" crossorigin="anonymous"/>
+        
+		<link rel="stylesheet" href="css/2022.min.css" type="text/css">
+		<link rel="stylesheet" href="css/search.css" type="text/css">
+		<!-- dataLayer for GTM -->
+		<script type="text/javascript">
+			var dataLayer = window.dataLayer = window.dataLayer || [];
+			dataLayer.push({
+			  'contentType' : '',
+			  'country' : '',
+			  'language' : '',
+			  'marketingPillar' : '',
+			  'capabilities' : '',
+			  'programOrFunction' : '',
+			  'businessArea' : '',
+			  'publishDate' : '',
+			  'fireGtm': true
+			});
+		</script>
+		<!-- Google Tag Manager -->
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+			})(window,document,'script','dataLayer','GTM-WDHXRC9');
+		</script>
+		<!-- End Google Tag Manager -->
+
+		<!-- Algolia Search -->
+        <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.24.0/dist/algoliasearch-lite.umd.js" integrity="sha256-b2n6oSgG4C1stMT/yc/ChGszs9EY/Mhs6oltEjQbFCQ=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4.75.5/dist/instantsearch.production.min.js" integrity="sha256-Ge9l2WgQoXm9fEH5EX/9oXKOjZVrpOwrMK7vAF2oWKg=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-js@1.17.7/dist/umd/index.production.js" integrity="sha256-SbEFZ66RzxGTw6+A7I+m/9hVVV/eGY1tT0wdSVWFt+w=" crossorigin="anonymous"></script>
+		<script>const { autocomplete } = window['@algolia/autocomplete-js'];</script>
+        <script src="https://cdn.jsdelivr.net/npm/@algolia/autocomplete-plugin-query-suggestions@1.17.7/dist/umd/index.production.js" integrity="sha256-rT9HEvrsHkeM9zHbWB+7xp02FKxnplHB1JEHdZQfeMg=" crossorigin="anonymous"></script>
+		<script>const { createQuerySuggestionsPlugin } = window['@algolia/autocomplete-plugin-query-suggestions'];</script>
+        <!-- End Algolia Search -->
+
+		<link rel="stylesheet" href="css/wdcontent.css" type="text/css">
+	
+<!-- begin spin_special_output(head_end) -->
+<link rel="canonical" href="https://news.lockheedmartin.com/2009-07-23-Lockheed-Martin-Supports-Forum-On-Environmental-Observations" />
+<!-- end spin_special_output(head_end) -->
+</head>
+	<body class="wd_pageid_20295 wd_item_page wd_item_124570">
+		<h1 class="sr-only sr-only-focusable">Lockheed Martin Corporation</h1>
+		<!-- Google Tag Manager (noscript) -->
+		<noscript><iframe sandbox src="https://www.googletagmanager.com/ns.html?id=GTM-WDHXRC9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<main>
+			<div>
+			<!--    Header Section Starts -->
+
+            <header>
+                <div class="bg-white">
+                    <div class="container-fluid container-xxxl">
+                        <div class="row">
+                            <div class="navMenuPlaceHolder col-2 pl-md-5">
+                                <button id="customBurger" class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navMenu_1_MainMenu" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                            <div class="navMenuPlaceHolder col-8 text-center">
+                                <a class="mt-4" href="https://www.lockheedmartin.com/en-us/index.html"><img src="https://www.lockheedmartin.com/content/dam/lockheed-martin/general/lm-logo.svg" alt="Lockheed Martin Logo" style="width: 200px"></a>
+                            </div>
+                            <div class="navMenuPlaceHolder col-2 text-right pr-md-5 pr-2">
+                                <a id="searchIconOutsideOfNav" class="fa fa-search" aria-controls="navMenu_2_Search" aria-expanded="false" href="#"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="windowShade"></div>
+                <!-- nav -->
+                <div id="navMenuContainer">
+                  <div id="miniWindowShade"></div>
+                  <div class="container-fluid container-xxxl">
+                    <div class="row">
+                      <div id="navMenu_1_MainMenu" class="navMenuCard navLevel1 col-9 col-lg-12 d-flex flex-column flex-lg-row justify-content-lg-between pl-lg-5 pr-lg-5">
+                        <div class="navMenuCardTopper">
+                          <a class="" href="https://www.lockheedmartin.com/">
+                            <img src="images/lm-logo.svg" style="width: 200px" alt="Lockheed Martin Logo">
+                          </a>
+                          <a class="mx-auto mr-sm-4 d-block d-lg-none navItem withSub noIcon" aria-controls="navMenu_2_Search" aria-expanded="false" href="#">
+                            <img src="images/search.svg">
+                          </a>
+                          <img class="customCloser d-lg-none" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_2_WhoWeAre" aria-expanded="false">Who we are</a>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_2_WhatWeDo" aria-expanded="false">What we do</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/news.html">News</a>
+                        <!-- <a class="navItem" href="https://www.lockheedmartin.com/careers">Careers</a> -->
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_2_Careers" aria-expanded="false">Careers</a>
+                        <a class="navItem" href="https://investors.lockheedmartin.com/">Investors</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/suppliers.html">Suppliers</a>
+                        <div class="navMenuCardBottom">
+                          <a id="navIconGlobe" class="d-flex align-items-center align-items-lg-start navItem withSub noIcon fa fa-globe" aria-controls="navMenu_2_GlobalActivity" aria-expanded="false" href="#">
+                            <div class="d-lg-none ml-3">
+                              <div class="navMenuTitle">Global Activity</div>
+                              <div class="navMenuTitleEng mt-1">United States | English</div>
+                            </div>
+                          </a>
+                          <a id="navIconSearch" class="pl-4 d-none d-lg-block navItem withSub noIcon fa fa-search" aria-controls="navMenu_2_Search" aria-expanded="false" href="#"></a>
+                        </div>
+                      </div>
+                      <div id="navMenu_2_GlobalActivity" class="navMenuCard navLevel2 col-9">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_1_MainMenu">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Global Activity</div>
+                        <div class="d-flex h-100">
+                          <div class="globalActivityPanel d-none d-lg-block">
+                            <div class="navSectionHeading">Featured</div>
+                            <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/international.html">
+                              <img src="images/ryan169.jpg" class="img-fluid navImage" alt="Global Activity image">
+                            </a>
+                            <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/international.html">Global Presence, Local Impact</a>
+                            <div class="navParagraph">Learn how we are strengthening the economies, industries and communities of our global partner nations.</div>
+                          </div>
+                          <div class="globalActivityPanel">
+                            <div class="globalActivityCountry">Australia</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-au/index.html">English</a>
+                            <div class="globalActivityCountry">Canada</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-ca/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/fr-ca/index.html">Français</a>
+                            <div class="globalActivityCountry">Denmark</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-dk/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/da-dk/index.html">Danish</a>
+                            <div class="globalActivityCountry">Germany</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-de/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/de-de/index.html">Deutsch</a>
+                            <div class="globalActivityCountry">Greece</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-gr/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/gr-gr/index.html">Ελληνικά</a>
+                            <div class="globalActivityCountry">India</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-us/who-we-are/international/india.html">English</a>
+                            <div class="globalActivityCountry">Israel</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-il/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/he-il/index.html">עברית</a>
+                            <div class="globalActivityCountry">Japan</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-jp/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/ja-jp/index.html">日本語</a>
+                            <div class="globalActivityCountry">Latin America</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-us/who-we-are/international/latin-america.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-us/who-we-are/international/latin-america/latin-america-es.html">Spanish</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-us/who-we-are/international/latin-america/latin-america-pt.html">Portuguese</a>
+                            <div class="globalActivityCountry">New Zealand</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-au/new-zealand.html">English</a>
+                            <div class="globalActivityCountry">Norway</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-no/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/no-no/index.html">Norsk</a>
+                          </div>
+                          <div class="globalActivityPanel">
+                            <div class="globalActivityCountry">Poland</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-pl/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/pl-pl/index.html">Polski</a>
+                            <div class="globalActivityCountry">Republic of Korea</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-kr/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/ko-kr/index.html">한국어</a>
+                            <div class="globalActivityCountry">Romania</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-ro/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/ro-ro/index.html">Română</a>
+                            <div class="globalActivityCountry">Saudi Arabia</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-sa/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/ar-sa/index.html">عربى</a>
+                            <div class="globalActivityCountry">Singapore</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-us/who-we-are/international/singapore.html">English</a>
+                            <div class="globalActivityCountry">Spain</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-es/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/es-es/index.html">Español</a>
+                            <div class="globalActivityCountry">Taiwan</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-us/who-we-are/international/taiwan.html">English</a>
+                            <div class="globalActivityCountry">United Arab Emirates</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-ae/index.html">English</a>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/ar-ae/index.html">عربى</a>
+                            <div class="globalActivityCountry">United Kingdom</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-gb/index.html">English</a>
+                            <div class="globalActivityCountry">United States</div>
+                            <a class="globalActivityLink" href="https://www.lockheedmartin.com/en-us/index.html">English</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="navMenu_2_Search" class="navMenuCard notTall navLevel2 col-9 col-lg-12">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_1_MainMenu">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Search</div>
+                        <div class="d-flex pl-lg-5 pr-lg-5">
+                          <div class="searchInputVisualBox">
+                            <div id="top-nav-search" class="subnav-dropdown-menu search">
+                              <div id="lm-search" name="q" type="text">
+                                <div id="autocomplete"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="navMenu_2_WhoWeAre" class="navMenuCard navLevel2 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_1_MainMenu">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Who we are</div>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_AboutUs" aria-expanded="false">About Us</a>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_LeadershipAndGovernance" aria-expanded="false">Leadership &amp; Governance</a>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_OurBusiness" aria-expanded="false">Our Businesses</a>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_EnvironmentalAndSocial" aria-expanded="false">Sustainability &amp; Social Impact</a>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_Ethics" aria-expanded="false">Ethics</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/economic-and-workforce-impact.html">Economic and Workforce Impact</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/international.html">Global Activities</a>
+                      </div>
+                      <div id="navMenu_3_AboutUs" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhoWeAre">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle" href="https://www.lockheedmartin.com/en-us/who-we-are.html">About Us</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are.html">Our Company</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/careers/life-at-lm.html">Our Culture</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/news/features/history.html">Our History</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/economic-and-workforce-impact.html#economic">Our Economic Impact</a>
+                      </div>
+                      <div id="navMenu_3_LeadershipAndGovernance" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhoWeAre">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle" href="https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html">Leadership &amp; Governance</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html">Executive Leadership Team</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance/full-spectrum-leadership.html">Full Spectrum Leadership</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">Corporate Governance</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance/board-of-directors.html">Board of Directors</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance/board-of-directors/corporate-charter.html">Corporate Charter</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance/board-of-directors/political-disclosures.html">Political Disclosures</a>
+                      </div>
+                      <div id="navMenu_3_OurBusiness" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhoWeAre">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Our Businesses</div>
+                        <div class="navSectionHeading">BUSINESS AREAS</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics.html">Aeronautics</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/business-areas/missiles-and-fire-control.html">Missiles and Fire Control</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/business-areas/rotary-and-mission-systems.html">Rotary and Mission Systems</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/business-areas/space.html">Space</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">INNOVATION &amp; INVESTMENT</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/lm-evolve.html">LM Evolve</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/lockheed-martin-ventures.html">LM Ventures</a>
+                      </div>
+                      <div id="navMenu_3_EnvironmentalAndSocial" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhoWeAre">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Sustainability &amp; Social Impact</div>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_4_GivingBack" aria-expanded="false">Social Impact</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/eesh.html">Environmental, Safety and Health</a>
+                        <a class="navItem" href="https://sustainability.lockheedmartin.com/sustainability/index.html">Sustainability</a>
+                      </div>
+                      <div id="navMenu_4_GivingBack" class="navMenuCard navLevel4 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_3_EnvironmentalAndSocial">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle" href="https://www.lockheedmartin.com/en-us/who-we-are/communities.html">Social Impact</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/communities.html">In the Community</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/communities/military-veteran-support.html">Military and Veteran Support</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/communities/stem-education.html">Future STEM Workforce</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/communities/employee-focused-programs.html">Employee Focused Programs</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/communities/volunteerism.html">Volunteerism</a>
+                        <div class="navDivider"></div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/communities/applying-for-contributions.html">Contribution Process</a>
+                      </div>
+                      <div id="navMenu_3_Ethics" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhoWeAre">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Ethics</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/ethics.html">Ethics</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/ethics/code-of-ethics.html">Code of Conduct</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/ethics/business-conduct-compliance-training.html">Business Conduct</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/ethics/ethics-awareness-training.html">Ethics Awareness Training</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/ethics/integrity-minute.html">Integrity Minute</a>
+                      </div>
+                      <div id="navMenu_4_Sustainability" class="navMenuCard navLevel4 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_3_EnvironmentalAndSocial">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Sustainability</div>
+                        <a class="navItem" href="https://sustainability.lockheedmartin.com/sustainability/index.html">Sustainability at LM</a>
+                        <a class="navItem" href="https://sustainability.lockheedmartin.com/sustainability/content/Lockheed_Martin_2022_Sustainability_Performance_Report.pdf">Sustainability Performance Report</a>
+                        <a class="navItem" href="https://sustainability.lockheedmartin.com/sustainability/sustainability-management-plan/2025-smp-management/">Sustainability Management Plan</a>
+                        <a class="navItem" href="https://sustainability.lockheedmartin.com/sustainability/esg-governance/">Sustainability Governance Plan</a>
+                      </div>
+                      <div id="navMenu_2_WhatWeDo" class="navMenuCard navLevel2 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_1_MainMenu">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">What We Do</div>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_Aircraft" aria-expanded="false">Aircraft</a>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_AllDomain" aria-expanded="false">All-Domain Operations</a>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_Autonomy" aria-expanded="false">Autonomy &amp; AI</a>
+                        <!---<a class="navItem" href="">Products by Domain</a>--->
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/cyber.html">Cyber</a>
+                        <!---<a class="navItem withSub" href="#" aria-controls="navMenu_3_Cyber" aria-expanded="false">Cyber</a>--->
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_Deterrence" aria-expanded="false">Deterrence Capabilities</a>
+                        <!---<a class="navItem withSub" href="#" aria-controls="navMenu_3_MaritimeSystems" aria-expanded="false">Maritime Systems</a>--->
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/maritime-systems.html">Maritime Systems</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/mission-integration.html">Mission Integration</a>
+                        <!-- <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space.html">Space</a> -->
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_Space" aria-expanded="false">Space</a>
+                        <!---<a class="navItem withSub" href="#" aria-controls="navMenu_3_SpaceTechnology" aria-expanded="false">Space</a>--->
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_Sustainment" aria-expanded="false">Sustainment &amp; Training Systems</a>
+                        <!---<a class="navItem withSub" href="#" aria-controls="navMenu_3_ThreatDetection" aria-expanded="false">Threat Detection</a>--->
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_TransformativeTechnology" aria-expanded="false">Transformative Technology</a>
+                        <div class="navDivider"></div>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_3_Products" aria-expanded="false">Products by Domain</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">Featured</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/accelerating-transformation.html">
+                          <img src="images/accelerating-transformation.jpg" class="img-fluid navImage" alt="Accelerating Transformation Image">
+                        </a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/accelerating-transformation.html">Accelerating Transformation</a>
+                        <div class="navParagraph">Turning acquisition reform into mission-ready delivery.</div>
+                        <!---<div class="navDivider"></div><a class="navItem actionButton" href="">All Products</a>--->
+                      </div>
+                      <div id="navMenu_3_Autonomy" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Autonomy &amp; AI</div>
+                        <div class="navSectionHeading">AI</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/artificial-intelligence-machine-learning.html">Artificial Intelligence</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/artificial-intelligence-machine-learning/ai-fight-club.html">AI Fight Club™</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/artificial-intelligence-machine-learning/star-os-ai-integration-framework.html">STAR.OS Integration Framework</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">AUTONOMY</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/autonomous-unmanned-systems.html">Autonomy</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products.html?domain=&amp;capability=ai%2C&amp;country=">View All Products</a>
+                      </div>
+                      <div id="navMenu_3_Aircraft" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Aircraft</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/air-dominance.html">Air Dominance</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">Fixed Wing</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products.html?domain=air%2C&amp;capability=ai%2C&amp;country=">Autonomous Aircraft</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products/commercial-aircraft.html">Commercial Aircraft</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/aircraft.html">Fighter Jets</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products/c130.html">Tactical Airlift</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products/c130/kc-130j-tanker.html">Tanker Transport</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">Rotary Wing</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/sikorsky.html">Sikorsky</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products/sikorsky-matrix-technology.html">Autonomous Aircraft</a>
+                        <a class="navItem" href="https://lockheedmartin.com/en-us/products/sikorsky-black-hawk-helicopter.html">Black Hawk Family</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/sikorsky/sikorsky-commercial-aircraft-and-services.html">Commercial Aircraft</a>
+                        <div class="navDivider"></div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/aircraft.html">Explore All Aircraft</a>
+                      </div>
+                      <div id="navMenu_3_AllDomain" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">All-Domain Operations</div>
+                        <!---<div class="d-flex flex-column flex-lg-row"><div class="d-flex flex-column w-50">--->
+                        <!---<a class="navItem withSub" href="#" aria-controls="navMenu_4_Aircraft" aria-expanded="false">Aircraft</a>--->
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/21st-century-security-networked-solutions.html">21st Century Security®</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/c4isr.html">C4ISR Solutions</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/multi-domain-operations.html">Joint All-Domain Operations</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/mission-integration.html">Mission Integration</a>
+                        <!---</div><div class="d-flex flex-column  w-50"><a class="navItem withSub" href="#" aria-controls="navMenu_4_Aircraft" aria-expanded="false">Item with Sub</a><a class="navItem" href="">Item</a><a class="navItem" href="">Item</a><a class="navItem" href="">Item</a><a class="navItem" href="">Item</a></div></div>--->
+                      </div>
+                      <div id="navMenu_4_Aircraft" class="navMenuCard navLevel4 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_3_DefenseSystems">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Aircraft</div>
+                        <div class="navSectionHeading">Fixed Wing</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products.html">Autonomous Aircraft</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products/commercial-aircraft.html">Commercial Aircraft</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/aircraft.html">Fighter Jets</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products/c130/kc-130j-tanker.html">Tanker Transport</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">Rotary Wing</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/sikorsky.html">Sikorsky</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products/sikorsky-matrix-technology.html">Autonomous Aircraft</a>
+                        <a class="navItem" href="https://lockheedmartin.com/en-us/products/sikorsky-black-hawk-helicopter.html">Black Hawk Family</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/sikorsky/sikorsky-commercial-aircraft-and-services.html">Commercial Aircraft</a>
+                      </div>
+                      <div id="navMenu_3_Cyber" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Cyber Capabilities</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks.html">Cyber 1</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space/atc.html">Cyber 2</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/research-labs/advanced-technology-labs.html">Cyber 3</a>
+                      </div>
+                      <div id="navMenu_3_Innovation" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Innovation</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks.html">Skunk Works®</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">Global Research and Development</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space/atc.html">Advanced Technology Center</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/research-labs/advanced-technology-labs.html">Advanced Technology Laboratories</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/research-labs/center-for-innovation.html">Center for Innovation</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/sikorsky/sikorsky-innovations.html">Sikorsky Innovations</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-au/stelarlab-research-development-operations-centre.html">STELaRLab</a>
+                      </div>
+                      <div id="navMenu_3_SpaceTechnology" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Space Capabilities</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space.html">Communications Security</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space.html">Deterrence &amp; Missile Defence</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space.html">Global Situational Awareness</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space.html">Human &amp; Scientific Exploration</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space.html">Intelligence Solutions &amp; Cyber</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space.html">Space Technologies</a>
+                      </div>
+                      <div id="navMenu_3_Sustainment" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Sustainment &amp; Training Systems</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/sustainment.html">Sustainment &amp; Global Readiness</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/training-logistics-sustainment.html">Training &amp; Simulation</a>
+                      </div>
+                      <div id="navMenu_3_Deterrence" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Deterrence Capabilities</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/air-dominance.html">Air Dominance</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/c4isr.html">C4ISR Solutions</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/counter-unmanned-aerial-systems.html">Counter-Unmanned Aerial Systems</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/cyber.html">Cyber Solutions</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/directed-energy.html">Directed Energy</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/electronic-warfare.html">Electronic Warfare</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/hypersonics.html">Hypersonics</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/missile-defense.html">Integrated Air &amp; Missile Defense</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/multi-domain-operations.html">Joint All-Domain Operations</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/radar-sensors.html">Radar</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/sensors.html">Sensors</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/undersea-warfare.html">Undersea Warfare</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/weapon-systems.html">Weapon Systems</a>
+                      </div>
+                      <div id="navMenu_3_Space" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Space</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space.html">All Space Capabilities</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space/deep-space-exploration.html">Deep Space Exploration</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space/human-space-exploration.html">Human Space Exploration</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space/national-security-space.html">National Security Space</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space/strategic-missile-defense.html">Strategic &amp; Missile Defense Systems</a>
+                        <a class="navItem" href="https://lockheedmartin.com/en-us/capabilities/space/weather-earth-science.html">Weather &amp; Earth Science</a>
+                      </div>
+                      <div id="navMenu_3_Products" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Products by Domain</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products.html">All Products</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">By Domain</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products.html?domain=air%2C&amp;capability=&amp;country=">Air</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products.html?domain=cyber%2C&amp;capability=&amp;country=">Cyber</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products.html?domain=land%2C&amp;capability=&amp;country=">Land</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products.html?domain=sea%2C&amp;capability=&amp;country=">Sea</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products.html?domain=space%2C&amp;capability=&amp;country=">Space</a>
+                      </div>
+                      <div id="navMenu_3_TransformativeTechnology" class="navMenuCard navLevel3 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_2_WhatWeDo">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Transformative Technologies</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/21st-century-security-networked-solutions.html">21st Century Security®</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products/5G.html">5G.MIL Solutions</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/artificial-intelligence-machine-learning.html">Artificial Intelligence</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/cyber.html">Cyber</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/directed-energy.html">Directed Energy</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/products/firefighting-intelligence.html">Firefighting Intelligence</a>
+                        <!---<a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/energy.html">Energy Solutions</a><a class="navItem" href="https://www.lockheedmartin.com/fvl/index.html">Future Vertical Lift</a>--->
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/hypersonics.html">Hypersonic Solutions</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/innovation-defense-technology.html">Innovation in Defense</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/spectrum-convergence.html">Spectrum Dominance</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">Our Business Innovation</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/accelerating-transformation/delivering-at-scale.html">Delivering at Scale</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/digital-transformation.html">Digital Transformation</a>
+                        <a class="navItem withSub" href="#" aria-controls="navMenu_4_ResearchLabs" aria-expanded="false">Research Labs</a>
+                        <!---<a class="navItem" href="https://www.lockheedmartin.com/sustainment/index.html">Sustainment and Global Readiness</a>--->
+                      </div>
+                      <div id="navMenu_4_ResearchLabs" class="navMenuCard navLevel4 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_3_TransformativeTechnology">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Research Labs</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/who-we-are/business-areas/aeronautics/skunkworks.html">Skunk Works®</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">Global Research and Development</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-au/advanced-systems-and-technologies.html">Advanced Systems and Technologies - AU</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/space/atc.html">Advanced Technology Center</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/research-labs/advanced-technology-labs.html">Advanced Technology Laboratories</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/research-labs/center-for-innovation.html">Center for Innovation</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/capabilities/sikorsky/sikorsky-innovations.html">Sikorsky Innovations</a>
+                      </div>
+                      <div id="navMenu_2_Careers" class="navMenuCard navLevel2 col-9 col-lg-3">
+                        <div class="navMenuCardTopper d-lg-none">
+                          <a class="navItem customBack" aria-controls="navMenu_1_MainMenu">back</a>
+                          <img class="customCloser" src="images/custom-close.svg" alt="close icon">
+                        </div>
+                        <div class="navMenuTitle">Careers</div>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/careers/index.html">Careers Home</a>
+                        <a class="navItem" href="https://www.lockheedmartinjobs.com/search-jobs">Search Open Jobs</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/careers/career-areas.html">Career Areas</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/careers/locations.html">Locations</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/careers/candidates/students-early-careers.html">Student &amp; Early Careers</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/careers/candidates/ex-pro.html">Experienced Professionals</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/careers/why-lm.html">Why LM?</a>
+                        <a class="navItem" href="https://www.lockheedmartin.com/en-us/careers/life-at-lm.html">Life@LM</a>
+                        <div class="navDivider"></div>
+                        <div class="navSectionHeading">My Account</div>
+                        <a class="navItem" href="https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25037&amp;siteid=5014&amp;pk_vid=b6c27996c05b2c151732641010904953#home" target="_blank">Early Careers</a>
+                        <a class="navItem" href="https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25037&amp;siteid=5010&amp;pk_vid=b6c27996c05b2c151732641004904953#home" target="_blank">Experienced Professionals</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </header>
+
+            <!--    Header Section Ends-->
+		  
+			<div class="content-well">
+				<div class="white">
+					<div class="container-fluid container-xxxl">
+						<div class="row">
+							<div class="col-12">
+								<div class="no-padding">
+									<div class="wd_pageheader"><div class="container"><h1>Releases</h1></div></div>																		<!-- BEGIN HEADER -->
+									<div class="wd_header">
+										<div class="wd_home_hero" style="background-image: url(/image/JADO-JADC2-Aegis-crop1.jpg);">
+											<div class="wd_header_content">
+																							</div>
+										</div>
+									</div>
+																		<!-- END HEADER -->
+								</div>
+								<!-- BEGIN CONTAINER -->
+								<div class="wd_container">
+									<!-- BEGIN CONTENT-WRAPPER -->
+									<div class="wd_content-wrapper">
+																				<div class="breadcrumb">
+											<a href="https://news.lockheedmartin.com/home">Newsroom<i class="fa fa-chevron-right" aria-hidden="true"></i></a><!-- Use the Code field from the Structure table --> 
+											<li>
+	<a href="https://news.lockheedmartin.com/news-releases" target="_self">
+		News Releases	</a>
+</li>
+										</div>
+																														<!-- BEGIN CONTENT -->
+										<div class="wd_content" >
+											<div id="wd_printable_content" class="fr-view">
+<div class="wd_newsfeed_releases-detail">
+<div class="wd_title wd_language_left">Lockheed Martin Supports Forum On Environmental Observations</div>
+
+<div class="wd_toolbar wd_toolbar-detail"><ul class="wd_tools"><li class="wd_tool wd_tool-print"><span class="wd_tool_icon"><a onclick="view_printable(); return false;" rel="nofollow" href="#print" title="print"><span class="fa fa-print"></span></a></span></li><li class="wd_tool wd_tool-socialshare_facebook"><span class="wd_tool_icon">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fnews.lockheedmartin.com%2Findex.php%3Fs%3D20295%26item%3D124570" target="_blank" title="Facebook Share" style="background-color:#4267B2;">
+                    <span class="fa fa-facebook"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable"></span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-socialshare_linkedin"><span class="wd_tool_icon">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fnews.lockheedmartin.com%2Findex.php%3Fs%3D20295%26item%3D124570" target="_blank" title="Linkedin Share" style="background-color:#0077B5;">
+                    <span class="fa fa-linkedin"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable"></span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-socialshare_twitter"><span class="wd_tool_icon">
+                    <a href="https://twitter.com/share?url=https%3A%2F%2Fnews.lockheedmartin.com%2Findex.php%3Fs%3D20295%26item%3D124570" target="_blank" title="Twitter Share" style="background-color:#000;">
+                    <span class="fa fa-twitter"></span>
+		    <span class="wd_sr-only wd_sr-only-focusable"></span>
+                    </a>
+                </span></li><li class="wd_tool wd_tool-email"><span class="wd_tool_icon"><a onclick="window.location.href = 'mailto:?subject=Lockheed%20Martin%20Supports%20Forum%20On%20Environmental%20Observations%20-%20Jul%2023%2C%202009&amp;body='+encodeURIComponent(window.location.href);return false;" href="#email" title="email"><span class="fa fa-envelope"></span></a></span></li><li class="wd_tool wd_tool-pdf"><span class="wd_tool_icon"><a href="https://news.lockheedmartin.com/2009-07-23-Lockheed-Martin-Supports-Forum-On-Environmental-Observations?asPDF=1" rel="nofollow" title="pdf"><span class="fa fa-file-pdf-o"></span></a></span></li><li class="wd_tool wd_tool-rss"><span class="wd_tool_icon"><a href="https://news.lockheedmartin.com/rss?rsspage=20295" title="rss"><span class="fa fa-rss"></span></a></span></li></ul></div>
+<div class="wd_release_data">
+	<div class="wd_distributor">PRNewswire</div>
+	<div class="wd_location">PALO ALTO, Calif.</div>
+	
+</div>
+
+
+			
+		
+
+			
+		
+
+<style type="text/css">
+
+					p.prnews_p{
+						margin: 0;
+					}
+				
+					div.PRN_ImbeddedAssetReference{
+						display: none;
+					}
+					div[id^="prni_dvprne"]{
+						display: none;
+					}
+				</style>
+
+<div class="wd_body wd_news_body fr-view" wd_resize="formatNews" wd_print_url="https://news.lockheedmartin.com/2009-07-23-Lockheed-Martin-Supports-Forum-On-Environmental-Observations?printable=1"><div class="block">
+		<p>Lockheed Martin <org idsrc="dummy" value="dummy"><alt-code idsrc="NYSE" value="LMT"/></org> is a major corporate sponsor of Forum on Earth Observations III: The Environmental Information Revolution, which will convene in Washington, D.C. on July 30, 2009. The Forum is organized by the Alliance for Earth Observations, of which Lockheed Martin is a member, and will bring together key leaders who are developing solutions to meet the unprecedented demand for information about our changing planet. Participants from both the private and public sectors are expected, from areas including information technology, aerospace, oceans industry, agriculture, energy, climate policy and national security, and science communications.</p>
+      <p>&quot;The evidence for global warming is compelling and we have to work collaboratively to provide the best possible data to policymakers, allowing wise decisions on mitigating future damage to our planet,&quot; says Dr. James T. Ryder, vice president of the Lockheed Martin Space Systems Company (LMSSC) Advanced Technology Center (ATC) in Palo Alto, Calif. &quot;We're pleased to be a primary sponsor of this Forum and look forward to a vigorous exchange of ideas that will be instructive in how best we can move forward together to make a difference.&quot; Dr. Ryder will introduce the lunch speaker on Climate and National Security at the Forum.</p>
+      <p>Confirmed speakers and panelists include Lawrie Jordan, Director, Imagery Enterprise Solutions, ESRI; Sherri Goodman, Senior Vice President, General Counsel &amp; Corporate Secretary, Center for Naval Analyses; Richard Lechner, Vice President for Energy and Environment, IBM; Conrad C. Lautenbacher, Former NOAA Administrator, Vice President, Polar Programs, Computer Sciences Corp; Robert Mitrevski, Vice President, Commercial Space Systems, ITT Corp., Space System Division; Berrien Moore III, Executive Director, Climate Central; Andrew Winston, author of the soon-to-be-released book &quot;Green Recovery&quot;; Nancy K. Kopp, Maryland State Treasurer; Linda Travers, Acting Assistant Administrator and Chief Information Officer, Office of Environmental Information, Environmental Protection Agency; and Shere Abbott of the White House Office of Science and Technology Policy.</p>
+      <p>Conference sessions at the Forum will focus on the private sector's role in responding to the emerging need for environmental information; address key questions regarding carbon monitoring, ocean observations, and delivery of information products to an expanding and increasingly diverse user community; discuss strengthening of the environmental information value chain; and examine entrepreneurial opportunities to develop the environmental information sector.</p>
+      <p>LMSSC designs and engineers products and processes with environmental protection in mind. Some examples of successful reduction of the company's &quot;environmental footprint&quot; in the San Francisco Bay Area, and recognition for such efforts include:</p>
+      
+      
+<pre class="pre-list">  --  Reducing the total solid waste disposed from 3,750 tons in 1990 to 143
+      tons in 2006 (96% reduction) through effective recycling efforts.
+  --  Reducing hazardous waste from 6,100 tons per year in the 1985 to 781
+      tons in 2006 (87% reduction)
+  --  Reducing metal-bearing wastewater discharges from 65 million gallons
+      per year in the mid-1980s to 1.2 million gallons in 2006 (99%
+      reduction).
+  --  Reducing ozone-depleting chemical usage from 660,000 pounds per year
+      in the mid-1980s to less than 100 pounds in 2006.
+
+  --  At the LMSSC ATC in Palo Alto, the company purchases renewable green
+      power for 10% of its energy needs. This contributed to the ATC being
+      honored with the 2006 &quot;Tall Trees Award&quot; from the Palo Alto Chamber of
+      Commerce.
+
+
+</pre>
+      <p>LMSSC is also one of the premier builders of the Nation's environmental satellites. For NASA and NOAA the company designed and built every Television and Infrared Observational Satellite (TIROS) since the first weather satellite was launched in April 1960. TIROS data supports a broad range of environmental monitoring applications including weather analysis and forecasting, climate research and prediction, ocean dynamics research, volcanic eruption monitoring and forest fire detection. LMSSC has been selected by NASA to build the next generation Geostationary Operational Environmental Satellites (GOES-R) and, for this important program, the ATC is developing the Solar Ultraviolet Imager and the Geostationary Lightning Mapper instruments.</p>
+      <p>The company also built Terra, the flagship spacecraft in NASA's Earth Observing System, launched in 1999 that began the continuous, long-term, calibrated measurements of global processes.  In addition, LMSSC built every spacecraft in the NASA Landsat program. Landsat's 37-year collection of land images serves those who observe and study the Earth, manage and utilize its natural resources, and monitor the changes brought on by natural processes and human activities.</p>
+      <p>The Solar and Astrophysics Laboratory at the ATC conducts basic research into understanding and predicting space weather and the behavior of our Sun including its impacts on Earth and climate.  It has a five-decade-long heritage of spaceborne solar instruments including the Soft X-ray Telescope on the Japanese Yohkoh satellite, the Michelson Doppler Imager on the ESA/NASA Solar and Heliospheric Observatory, the solar telescope on NASA's Transition Region and Coronal Explorer, the Focal Plane Package on the Japanese Hinode satellite, the Solar X-ray Imagers on GOES-N and -O, the Extreme Ultraviolet Imager instruments on NASA's twin STEREO spacecraft, and the Heliospheric and Magnetic Imager and the Atmospheric Imaging Assembly on NASA's upcoming Solar Dynamics Observatory.</p>
+      <p>The ATC is the research and development organization of Lockheed Martin Space Systems Company (LMSSC). LMSSC, a major operating unit of Lockheed Martin Corporation, designs and develops, tests, manufactures and operates a full spectrum of advanced-technology systems for national security and military, civil government and commercial customers. Chief products include human space flight systems; a full range of remote sensing, navigation, meteorological and communications satellites and instruments; space observatories and interplanetary spacecraft; laser radar; ballistic missiles; missile defense systems; and nanotechnology research and development.</p>
+      <p>Headquartered in Bethesda, Md., Lockheed Martin is a global security company that employs about 146,000 people worldwide and is principally engaged in the research, design, development, manufacture, integration and sustainment of advanced technology systems, products and services. The corporation reported 2008 sales of $42.7 billion.</p>
+      
+<pre id="pre1" class="pre">  Media Contact:  Buddy Nelson, (510) 797-0349; e-mail, <virtloc idsrc="dummy" value="dummy">buddynelson@mac.com</virtloc>,
+  For additional information, visit our website:
+  <a href="http://www.lockheedmartin.com/" target="_blank">http://www.lockheedmartin.com/</a>
+</pre>
+<p>First Call Analyst: <br/>FCMN Contact:  </p>
+		   <p class="datasource">SOURCE: Lockheed Martin
+    </p>
+	    </div>
+	    <div class="block-contact"><p>CONTACT:  Buddy Nelson, +1-510-797-0349, <virtloc idsrc="dummy" value="dummy">buddynelson@mac.com</virtloc>, for<br/>Lockheed Martin</p></div>
+	    <div class="block-website"><p>Web Site:  <a href="http://www.lockheedmartin.com/" target="_blank">http://www.lockheedmartin.com/</a> </p></div></div>
+
+
+
+
+ 
+				
+			
+
+<!-- ITEMDATE: 2009-07-23 11:48:00 EDT -->
+
+</div>
+</div>										</div>
+										<!-- END CONTENT -->
+									</div>
+									<!-- END CONTENT-WRAPPER -->
+								</div>
+							
+									
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+			<!--    Content Area Section Ends  -->
+			<!--    Footer Section  Starts -->
+			<footer>
+				<div class="bg-black">
+					<div id="homeHelpfulLinks" class="container-fluid container-xxxl pt-5 pb-5 reverseGray">
+						<div class="row">
+							<div class="col-12 pl-md-5">
+								<div class="typedSectionHeading reverseWhite mb-5">
+									Helpful Links &nbsp; ___
+								</div>
+							</div>
+							<div class="col-6 col-lg-2 pl-md-5 mb-5 mb-lg-0">
+								<span class="listedLink reverseWhite">What We Do</span>
+								<a href="https://www.lockheedmartin.com/en-us/capabilities.html" class="listedLink">Our Capabilities</a>
+								<a href="https://www.lockheedmartin.com/en-us/products.html" class="listedLink">Our Products</a>
+							</div>
+							<div class="col-6 col-lg-2 mb-5 mb-lg-0">
+								<span class="listedLink reverseWhite">Who We Are</span>
+								<a href="https://www.lockheedmartin.com/en-us/careers/index.html" class="listedLink">Careers</a>
+								<a href="https://www.lockheedmartin.com/en-us/who-we-are/communities.html" class="listedLink">Community</a>
+								<a href="https://www.lockheedmartin.com/en-us/who-we-are/leadership-governance.html" class="listedLink">Leadership</a>
+								<a href="https://news.lockheedmartin.com/" class="listedLink">Newsroom</a>
+								<a href="https://sustainability.lockheedmartin.com/" class="listedLink">Sustainability</a>
+								<a href="https://www.lockheedmartin.com/en-us/who-we-are.html" class="listedLink">About Us</a>
+							</div>
+							<div class="col-6 col-lg-2 pl-md-5 pl-lg-2 mb-5 mb-lg-0">
+								<span class="listedLink reverseWhite">Information</span>
+								<a href="https://www.lockheedmartin.com/en-us/employees.html" class="listedLink">Employees</a>
+								<a href="https://www.lockheedmartin.com/en-us/who-we-are/international.html" class="listedLink">International</a>
+								<a href="https://investors.lockheedmartin.com/" class="listedLink" target="_blank">Investors</a>
+								<a href="https://www.lockheedmartin.com/en-us/suppliers.html" class="listedLink">Suppliers</a>
+							</div>
+							<div class="col-6 col-lg-2 mb-5 mb-lg-0">
+								<span class="listedLink reverseWhite">Connect</a>
+								<a href="https://www.lockheedmartin.com/en-us/contact.html" class="listedLink">Contact Us</span>
+								<a href="https://www.lockheedmartin.com/en-us/news/media-contacts.html" class="listedLink">Media Relations</a>
+								<a href="https://www.lockheedmartin.com/en-us/news/multimedia.html" class="listedLink">Multimedia</a>
+								<a href="https://www.lockheedmartin.com/en-us/contact/vulnerability-disclosure-policy.html" class="listedLink">Disclosures</a>
+							</div>
+							<div class="d-lg-none col-12 mb-5" style="border-bottom: #ccc 1px solid;"></div>
+							<div class="d-none d-lg-block col-1" style="border-left: #ccc 1px solid;"></div>
+							<div class="col-9 col-lg-3 pl-md-5 pl-lg-0 pr-md-5">
+								<h4 class="reverseWhite mb-4">Join the Vector Star newsletter</h4>
+								<div class="mb-4">Get articles on the innovative projects Lockheed Martin scientists and engineers are working on right now.</div>
+								<a class="actionButton inline" href="https://www.lockheedmartin.com/en-us/news/features/vector-star.html" style="box-sizing: unset;">Join Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bg-gray">
+				<div class="container-fluid container-xxxl pt-5 pb-5">
+					<div class="row">
+						<div class="col-12 col-lg-2 mb-5 pl-md-5">
+							<a href="https://www.lockheedmartin.com/"><img src="images/lm-logo.svg" class="img-fluid" alt="Lockheed Martin Logo"></a>
+						</div>
+						<div class="col-12 col-lg-2 mb-5 pl-md-5 pl-lg-2">
+							&copy; 2026<br>
+							Lockheed Martin Corporation.<br>
+							All Rights Reserved.
+						</div>
+						<div class="col-6 col-lg-2 mb-5 pl-md-5 pl-lg-2">
+							<a href="https://www.lockheedmartin.com/en-us/contact/disclaimer.html#privacy">Privacy</a>
+							<a href="https://www.lockheedmartin.com/en-us/contact/disclaimer.html">Terms of Use</a>
+							<a href="https://www.lockheedmartin.com/en-us/contact/lockheed-martin-corporation-privacy-notice-eu.html">EU and UK Data Protection Notice (EU-US DPF Privacy Notice)</a>
+							<a href="https://www.lockheedmartin.com/en-us/contact/cookies.html">Cookies</a>
+						</div>
+						<div class="col-6 col-lg-2 mb-5 footer-copyright" stock-url="https://www.lockheedmartin.com/stockticker.html">
+							Stock Price<br>
+							<h5 id="stockPrice"></h5>
+						</div>
+						<div class="col-10 col-md-6 col-lg-3 offset-lg-1 pl-md-5 pl-lg-2 pr-md-5">
+							Social Media
+							<div class="d-flex flex-row justify-content-between mt-3">
+								<a href="http://www.facebook.com/lockheedmartin"><img src="images/footerIconFacebook.png" alt="Facebook Logo"></a>
+								<a href="http://twitter.com/lockheedmartin"><img src="images/twitter-x-logo-20.png" alt="Twitter Logo"></a>
+								<a href="http://www.youtube.com/user/LockheedMartinVideos"><img src="images/footerIconYouTube.png" alt="YouTube Logo"></a>
+								<a href="https://www.linkedin.com/company/lockheed-martin"><img src="images/footerIconLinkedIn.png" alt="LindIn Logo"></a>
+								<a href="http://instagram.com/lockheedmartin"><img src="images/footerIconInstagram.png" alt="Instagram Logo"></a>
+							</div>
+						</div>
+						<div>
+						</div>
+					</div>
+			</footer>
+			<!--    Footer Section Ends -->
+			</div> 	
+		</main>
+		<script src="js/2022.min.js"></script>
+		<script type="text/javascript">
+			var addthis_config ={"data_track_clickback":true};
+		</script>    
+		<!-- global modal -->     
+		<div class="modal fade" id="global-modal">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<i class="fa fa-times" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="modal-body"></div>
+				</div>
+			</div>
+		</div>
+
+		<script>
+		  $(document).ready(function(){
+		  
+		  // REMOVE TRAILING THUMBNAIL HREF
+			$('.wd_newsfeed_releases-teaser .item .wd_thumbnail a img').each(function(){
+			  this.src = this.src.replace('p=thumbnail', 'p=original');
+			  this.src = this.src.replace('?thumbnail=144', '');
+			});
+		  
+			// IMAGE REPLACEMENT
+			$('.wd_newsfeed_releases-teaser .item').each(function(){
+			  if($(this).find('.wd_thumbnail').length){}else{
+			  var $link = $(this).find('.wd_title a').attr('href');
+			  var $text = $(this).find('.wd_title').text();
+				$(this).prepend('<div class="wd_thumbnail"><a href="'+$link+'"><img alt="'+$text+'" src="images/lockheed_replacement.jpg" border="0"></a></div>');
+			  };
+			});
+		  
+			// ADD READ MORE BUTTON
+			$('.wd_newsfeed_releases-teaser .item').append('<button class="btn-simple"></button>');
+			$('.wd_newsfeed_releases-teaser .item').each(function () {
+			  var href = $(this).find('a').attr('href');
+			  $(this).find('button').wrapInner('<a href="'+href+'">More</a><i class="fas fa-angle-right"></i>');
+			});
+		  
+					  
+			// MOVE PAGE HEADER TO HERO IN INTERNAL PAGE
+						 if ( $('.wd_home_hero').length ) {
+			 $('h1.page_header').appendTo('.wd_header .wd_home_hero');
+			 };
+		  
+			 $(".wd_standard .item table").each(function() {
+				$(this).appendTo($(this).parent());
+			 });
+									 // ADD BUTTON TO BOTTOM OF RELEASES
+			 $('<div class="back-button"><a class="wd_pr_button" href="https://www.lockheedmartin.com/en-us/news/media-contacts.html">Media contacts</a><a class="wd_pr_button" href="news-releases">View all News</a></div>').appendTo('.wd_newsfeed_releases-detail');
+		  
+				//Custom Inner Detail page only for masonry type asset
+				if($('.wd_layout-masonry.wd_asset_list')[0]){
+		  
+					 $('.wd_body.wd_news_body').addClass('wd_flex_wrap')
+		  
+					 $('.wd_news_body').wrapInner('<div class="wd_left_col" />');
+					 $('.wd_news_body').append('<div class="wd_right_col" />');
+		  
+					 $('.wd_newsfeed_releases-detail .wd_captioned_image').appendTo('.wd_right_col');
+					 $('.wd_newsfeed_releases-detail .wd_pullquote').appendTo('.wd_right_col')
+		  
+					 $('.wd_layout-masonry.wd_asset_list').prependTo('.wd_right_col');
+				}
+
+			  //Toggle items
+			  $('.wd_toggle strong, .wd_toggle b').parent('p').addClass('wd_trigger');
+			  $('.wd_toggle').children().not('.wd_trigger').hide();
+			  $('.wd_trigger').click(function() {
+			  $(this).toggleClass('active');
+			  $(this).nextAll().slideToggle();
+			  });
+			  
+		  
+		  		  
+		  // CONVERT IMAGES TO BACKGROUND ON FRONT PAGE
+		  $('.wd_featureboxes_middle .wd_newsfeed_releases-teaser .item .wd_thumbnail a img').hide();
+		  $('.wd_featureboxes_middle .wd_newsfeed_releases-teaser .item .wd_thumbnail').each(function(){
+			 var img = $(this).find('img').attr('src');
+			 var top_height = $(this).parent('.wd_featureboxes_top').height();
+			 
+			 $(this).css({'height':top_height,
+			 'background-size':'cover',
+			 'background-image':'url('+img+')',
+			 'background-position':'center',
+			 'filter': 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'+img+'", sizingMethod="scale")',
+			 '-ms-filter': 'progid:DXImageTransform.Microsoft.AlphaImageLoader(src="'+img+'", sizingMethod="scale")'});
+		  })
+
+
+	  $('.fa-linkedin').each(function(){$(this).toggleClass('fa fab');});   
+			 $('.fa-facebook').each(function(){$(this).toggleClass('fa fab');});
+			 $('.fa-twitter').each(function(){$(this).toggleClass('fa fab');});
+		  
+		  });
+	  </script>
+	  <!-- Cision Impact Container Tag Code -->
+	  <script src="https://cdn.c212.net/c.min.js"></script>
+	  <script language="javascript">
+		  cidconv.setClientId("mvkxyFWL");
+		  cidconv.addEvent("e8", "1");
+		  cidconv.sendEvents();
+	  </script>
+	  <!-- End Cision Impact Container Tag Code -->
+	
+<!-- begin spin_special_output(body_end) -->
+<script wd_script_id="piwik_tracking_code"></script>
+<!-- Piwik Tracking Code -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+
+  _paq.push(["setCustomVariable", 1, "Content Type", "News Releases Feed", "page"]);
+
+  _paq.push(["setCustomVariable", 3, "Navigation Page", "News Releases", "page"]);
+
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+  (function() {
+    var u="//stats.drivetheweb.com/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", 3661]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
+    g.type="text/javascript"; g.async=true; g.defer=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript>
+	<img src="https://stats.drivetheweb.com/piwik.php?idsite=3661&rec=1" style="border:0" alt="" />
+</noscript>
+<!-- End Piwik Tracking Code -->
+		<script type="text/javascript" wd_script_id="google_tracking_code" nonce="ODkzMTczZmY1YWM4ODk0NTdmZDYzNDE3YTM2YTJkMDQxNDA4ZGEzOQ==">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-2727857-1']);
+		  _gaq.push(['_setDomainName', 'lockheedmartin.com']);
+		  _gaq.push(['_trackPageview']);
+		
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+
+<!-- end spin_special_output(body_end) -->
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f81c964991d8dd6',t:'MTc3ODE3MzI4Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
