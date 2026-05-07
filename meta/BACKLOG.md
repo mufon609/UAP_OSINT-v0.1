@@ -909,10 +909,6 @@ failure modes.
 
 ---
 
-### C9. *(removed 2026-05-05 — abandoned per user direction; the planned memory-to-meta migration was discretionary cleanup without unblocking value. Methodology remains functional via auto-loaded MEMORY.md; entry would have generated work for a benefit only future fork-targets see.)*
-
----
-
 ### C10. Subdivide `meta/toolkit-notes/` when retrospective files accumulate
 
 `meta/toolkit-notes/` currently holds three long-form retrospective /
