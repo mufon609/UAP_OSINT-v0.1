@@ -141,9 +141,17 @@ def do_batch(artifact_path):
     slug = artifact_path.stem
     print(f"Extracting {len(sources)} source(s) for meta/research/{slug}.yaml:\n")
 
+    # Binary primary-source formats — extraction is correctly skipped
+    # (no text to pull). Mirrors the validator's silent-skip behavior in
+    # the verbatim-quote check; the CLI message distinguishes "skipped
+    # by design" from "extraction failed unexpectedly".
+    BINARY_FORMATS = {"video", "audio", "image"}
+
     failures = 0
+    skipped = 0
     for i, src in enumerate(sources):
         rel = src.get("path") if isinstance(src, dict) else None
+        fmt = src.get("format", "") if isinstance(src, dict) else ""
         if not rel:
             print(f"  [{i}] SKIP — source entry has no 'path' field")
             failures += 1
@@ -153,6 +161,11 @@ def do_batch(artifact_path):
         if not full.exists():
             print(f"  [{i}] MISSING — sources/{rel} not on disk")
             failures += 1
+            continue
+
+        if fmt in BINARY_FORMATS:
+            print(f"  [{i}] skipped (binary format: {fmt}) sources/{rel}")
+            skipped += 1
             continue
 
         text, meta = extract(full)
@@ -172,8 +185,18 @@ def do_batch(artifact_path):
 
     print()
     if failures:
-        print(f"⚠  {failures} source(s) failed to extract")
+        msg = f"⚠  {failures} source(s) failed to extract"
+        if skipped:
+            msg += f"; {skipped} source(s) skipped (binary)"
+        print(msg)
         sys.exit(1)
+    if skipped:
+        print(f"✓ {len(sources) - skipped} source(s) extracted; "
+              f"{skipped} source(s) skipped (binary).")
+        print()
+        print("Next (Phase I steps, per prompts/build.md):")
+        print(f"  - Review each /tmp/scratch-{slug}-N.txt")
+        return
     print(f"✓ All {len(sources)} sources extracted.")
     print()
     print("Next (Phase I steps, per prompts/build.md):")

@@ -96,6 +96,10 @@ def cmd_add(args):
     entry["archive_status"] = bit0 | bit1
     if wb_date:
         entry["wayback_date"] = wb_date
+    if args.extraction_type:
+        entry["extraction_type"] = args.extraction_type
+    if args.wayback_skip:
+        entry["wayback_skip"] = True
     if args.note:
         entry["note"] = args.note
     entries.append(entry)
@@ -266,6 +270,16 @@ def main():
     p.add_argument("--path")
     p.add_argument("--format")
     p.add_argument("--note")
+    p.add_argument(
+        "--extraction-type",
+        choices=["text-native", "ocr-scan", "extraction-lossy"],
+        help="How the source's text is extracted "
+             "(default: text-native; field omitted from entry when default)")
+    p.add_argument(
+        "--wayback-skip",
+        action="store_true",
+        help="Mark the entry as ineligible for Wayback submission "
+             "(synthetic deep-link URLs that won't resolve at archive time)")
 
     p = subparsers.add_parser("status")
     p.add_argument("url")

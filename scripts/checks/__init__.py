@@ -62,6 +62,14 @@ class Issue:
     the line embed it in ``message`` (e.g., the verbatim-quote check
     writes ``"Quote at line 42 ..."``). Promote when a structured
     consumer (``--format json``, IDE integration) needs it.
+
+    ``tokens`` carries a structured payload for checks whose human-
+    readable ``message`` is necessarily truncated (e.g., prose-drift
+    warnings preview only the first 8 unmatched tokens). The full set
+    lands here and propagates to the issue-log YAML, so contributor
+    iteration loops and post-hoc audits don't re-derive what the check
+    already computed. ``None`` for checks that don't carry a structured
+    payload — preserves backward compatibility.
     """
 
     path: str
@@ -69,6 +77,7 @@ class Issue:
     message: str
     check_name: Optional[str] = None
     fatal: bool = False
+    tokens: Optional[list] = None
 
     def __post_init__(self):
         # Coerce Path / PosixPath inputs to str so call sites can pass

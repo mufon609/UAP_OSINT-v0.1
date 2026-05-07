@@ -868,6 +868,11 @@ _ISSUE_LOG_HEADER = """\
 #   severity   — pulled from Issue.level: "error" | "warn"
 #   message    — Issue.message (validator) or contributor's prose
 #                description (manual). Multi-line via | literal block.
+#   tokens     — (optional) structured payload. Present when the check
+#                carries data the human-readable message necessarily
+#                truncates — e.g., the prose-drift check previews the
+#                first 8 unmatched tokens and lands the full set here.
+#                Greppable / consumable for retrospective audits.
 #
 # Validator entries append automatically (fixture / smoke-test paths
 # whose basename starts with "__" are skipped). Manual entries:
@@ -921,6 +926,10 @@ def _format_issue_log_entry(entry):
     out.append("  message: |")
     for line in entry["message"].split("\n"):
         out.append(f"    {line}")
+    if "tokens" in entry:
+        # Inline-flow YAML list — readable at a glance, greppable.
+        token_strs = [_yaml_quote_simple(t) for t in entry["tokens"]]
+        out.append(f"  tokens: [{', '.join(token_strs)}]")
     return "\n".join(out)
 
 
@@ -954,6 +963,11 @@ def append_issue_log(issue, source="validator", phase="validate"):
         "severity": issue.level,
         "message": issue.message,
     }
+    if issue.tokens:
+        # Structured payload (e.g., full unmatched-token list on prose-
+        # drift warnings); message preview is truncated, full set lands
+        # here for retrospective audit + grep.
+        entry["tokens"] = list(issue.tokens)
     ISSUE_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     new_file = not ISSUE_LOG_PATH.exists()
     with open(ISSUE_LOG_PATH, "a") as f:

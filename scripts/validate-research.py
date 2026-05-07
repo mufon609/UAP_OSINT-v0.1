@@ -311,6 +311,11 @@ def main():
     )
     parser.add_argument("path", nargs="?", help="Single artifact path (optional)")
     parser.add_argument("--quiet", action="store_true", help="Errors only")
+    parser.add_argument(
+        "--verbose", action="store_true",
+        help="Print full structured payload (e.g., the complete unmatched-"
+             "token list on prose-drift warnings) inline below each issue. "
+             "Default keeps the truncated terminal-friendly preview.")
     args = parser.parse_args()
 
     schema = load_schema()
@@ -355,6 +360,8 @@ def main():
             for issue in by_file[f]:
                 tag = "ERROR" if issue.level == "error" else "WARN "
                 print(f"    [{tag}] {issue.message}")
+                if args.verbose and issue.tokens:
+                    print(f"           full payload: {', '.join(issue.tokens)}")
 
     print("\n" + "=" * 64)
     if errors:

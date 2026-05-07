@@ -94,9 +94,10 @@ def _judge_drift(rel, location, prose_tokens, unmatched):
     """
     if not unmatched:
         return
-    preview = ", ".join(sorted(unmatched)[:8])
+    full_tokens = sorted(unmatched)
+    preview = ", ".join(full_tokens[:8])
     if len(unmatched) > 8:
-        preview += f", … (+{len(unmatched) - 8} more)"
+        preview += f", … (+{len(unmatched) - 8} more — pass --verbose for full list)"
     if prose_tokens and len(unmatched) == len(prose_tokens):
         yield Issue(
             rel, "error",
@@ -105,6 +106,7 @@ def _judge_drift(rel, location, prose_tokens, unmatched):
             f"— prose has no shared vocabulary with the source it claims "
             f"to draw on. Unmatched: {preview}",
             check_name=CHECK_NAME,
+            tokens=full_tokens,
         )
     else:
         yield Issue(
@@ -112,6 +114,7 @@ def _judge_drift(rel, location, prose_tokens, unmatched):
             f"{location}: {len(unmatched)} significant token(s) not in "
             f"source (prose-drift check — contributor review): {preview}",
             check_name=CHECK_NAME,
+            tokens=full_tokens,
         )
 
 
