@@ -95,6 +95,7 @@ except ImportError:
     sys.exit(1)
 
 from lib._common import (
+    strict_yaml_load,
     MANIFEST_PATH,
     REPO_ROOT,
     append_issue_log,
@@ -242,7 +243,7 @@ def main():
     if MANIFEST_PATH.exists():
         try:
             with open(MANIFEST_PATH) as f:
-                loaded = yaml.safe_load(f)
+                loaded = strict_yaml_load(f)
             if isinstance(loaded, list):
                 manifest_entries = loaded
         except yaml.YAMLError:

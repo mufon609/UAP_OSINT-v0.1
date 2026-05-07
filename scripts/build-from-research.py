@@ -116,6 +116,7 @@ except ImportError:
 # ``sys.path.insert``.
 
 from lib._common import (
+    strict_yaml_load,
     REPO_ROOT,
     SUPPORTED_TYPES,
     content_type_dirs,
@@ -143,7 +144,7 @@ SECTION_SEP = "\n---\n\n"
 
 def load_artifact(path):
     with open(path) as f:
-        data = yaml.safe_load(f)
+        data = strict_yaml_load(f)
     if not isinstance(data, dict):
         sys.exit(f"ERROR: artifact root is not a YAML mapping: {path}")
     return data
@@ -161,7 +162,7 @@ def load_frontmatter(node_path):
         return None, None
     fm_yaml = text[3:end]
     try:
-        fm = yaml.safe_load(fm_yaml)
+        fm = strict_yaml_load(fm_yaml)
     except yaml.YAMLError:
         return None, None
     # raw block ends right after closing `---` + its newline
@@ -1319,7 +1320,7 @@ def _manifest_sha256_for(path):
         else:
             try:
                 with open(manifest_path) as f:
-                    entries = yaml.safe_load(f) or []
+                    entries = strict_yaml_load(f) or []
                 _manifest_sha256_cache = {
                     e.get("path"): e.get("sha256")
                     for e in entries

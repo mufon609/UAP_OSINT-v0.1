@@ -53,7 +53,7 @@ from pathlib import Path
 
 import yaml
 
-from lib._common import extract_significant_tokens, load_source_tokens
+from lib._common import extract_significant_tokens, load_source_tokens, strict_yaml_load
 
 
 def main():
@@ -88,7 +88,7 @@ def main():
         sys.exit(f"Artifact not found: {artifact_path}")
 
     with artifact_path.open() as f:
-        artifact = yaml.safe_load(f)
+        artifact = strict_yaml_load(f)
 
     primary_sources = artifact.get("primary_sources") or []
     if not primary_sources:

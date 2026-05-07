@@ -44,7 +44,7 @@ except ImportError:
 # for ocr-scan / extraction-lossy sources), HTML (with tag strip + entity
 # decode), and TXT / MD / JSON. ``extract_pdf_metadata`` below stays
 # local because pdfinfo metadata capture has no lib equivalent.
-from lib._common import REPO_ROOT, SOURCES_DIR, extract_source_text  # noqa: E402
+from lib._common import REPO_ROOT, SOURCES_DIR, extract_source_text, strict_yaml_load  # noqa: E402
 
 SCRATCH_DIR = Path("/tmp")
 
@@ -128,7 +128,7 @@ def do_batch(artifact_path):
 
     try:
         with open(artifact_path) as f:
-            data = yaml.safe_load(f) or {}
+            data = strict_yaml_load(f) or {}
     except yaml.YAMLError as e:
         sys.exit(f"ERROR: could not parse {artifact_path}: {e}")
 

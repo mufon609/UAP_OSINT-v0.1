@@ -31,6 +31,7 @@ import sys
 import yaml
 
 from lib._common import (
+    strict_yaml_load,
     REPO_ROOT,
     SOURCES_DIR,
     extract_source_text,
@@ -236,7 +237,7 @@ def walk_artifact(artifact_path: Path, include_canonical: bool):
     """Yield diagnostic rows for an artifact's quotes."""
     try:
         with open(artifact_path) as f:
-            data = yaml.safe_load(f)
+            data = strict_yaml_load(f)
     except Exception as e:
         print(f"warning: {artifact_path}: parse failed ({e})", file=sys.stderr)
         return

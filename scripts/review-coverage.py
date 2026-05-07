@@ -39,6 +39,7 @@ except ImportError:
     sys.exit(1)
 
 from lib._common import (
+    strict_yaml_load,
     REPO_ROOT,
     SOURCES_DIR,
     SUPPORTED_TYPES,
@@ -156,7 +157,7 @@ def review_artifact(artifact_path, base_ctx):
     if artifact_path.exists():
         try:
             with open(artifact_path) as f:
-                artifact = yaml.safe_load(f)
+                artifact = strict_yaml_load(f)
         except yaml.YAMLError as e:
             parse_error = str(e)
         except OSError:

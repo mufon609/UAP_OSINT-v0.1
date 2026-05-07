@@ -38,6 +38,7 @@ except ImportError:
 # =============================================================================
 
 from lib._common import (
+    strict_yaml_load,
     REPO_ROOT,
     content_node_types,
     content_type_dirs,
@@ -154,7 +155,7 @@ def _read_target_frontmatter(node_type, slug):
     if end < 0:
         return {}
     try:
-        return yaml.safe_load(text[3:end]) or {}
+        return strict_yaml_load(text[3:end]) or {}
     except yaml.YAMLError:
         return {}
 

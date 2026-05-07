@@ -11,7 +11,7 @@ explicit step lists per design doc §5 (no auto-discovery — adding /
 removing a check is one line in _PRE_PARSE_CHECKS or _ARTIFACT_CHECKS
 below). Pre-commit gates each step.
 
-Pre-parse checks (raw lines, before yaml.safe_load):
+Pre-parse checks (raw lines, before strict_yaml_load):
   - yaml_hash_truncation, yaml_colon_space
 
 Per-artifact checks (after parse + ResearchContext construction):
@@ -55,6 +55,7 @@ except ImportError:
     sys.exit(1)
 
 from lib._common import (
+    strict_yaml_load,
     REPO_ROOT,
     append_issue_log,
     content_type_dirs,
@@ -65,7 +66,7 @@ from lib._common import (
 
 from checks import BaseContext, ResearchContext
 
-# Pre-parse checks (raw line scans before yaml.safe_load)
+# Pre-parse checks (raw line scans before strict_yaml_load)
 from checks import yaml_colon_space as ck_yaml_colon_space
 from checks import yaml_hash_truncation as ck_yaml_hash_truncation
 
@@ -131,7 +132,7 @@ def _read_target_frontmatter(target_path):
     if end < 0:
         return {}
     try:
-        return yaml.safe_load(text[3:end]) or {}
+        return strict_yaml_load(text[3:end]) or {}
     except yaml.YAMLError:
         return {}
 
@@ -167,7 +168,7 @@ def _discover_target(data):
 # Per-check step lists
 # =============================================================================
 #
-# Pre-parse checks operate on ctx.raw_lines before yaml.safe_load.
+# Pre-parse checks operate on ctx.raw_lines before strict_yaml_load.
 # Per-artifact checks operate on ctx.data after parse + target discovery.
 # Each check self-gates by target_type/kind/archetype; the orchestrator
 # runs every check against every artifact.
@@ -251,7 +252,7 @@ def validate_artifact(path, base_ctx):
                 text = f.read()
             raw_lines = text.splitlines(keepends=True)
             try:
-                data = yaml.safe_load(text)
+                data = strict_yaml_load(text)
             except yaml.YAMLError as e:
                 parse_error = str(e)
         except OSError:

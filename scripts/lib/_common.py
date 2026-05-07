@@ -18,6 +18,69 @@ from pathlib import Path
 import yaml
 
 
+# ---------------------------------------------------------------------------
+# Strict YAML loader — rejects duplicate top-level mapping keys
+# ---------------------------------------------------------------------------
+#
+# PyYAML's default ``SafeLoader`` silently uses the last occurrence of a
+# duplicate mapping key. That's the failure mode that bit the Ryder build
+# session: an Edit-tool old_string mismatch produced a research artifact
+# with two ``credibility_notes:`` blocks; the loader silently used the
+# trailing one (which was the OLD content), so the validator passed
+# despite the new content being unreachable.
+#
+# ``StrictYAMLLoader`` overrides ``construct_mapping`` to raise
+# ``yaml.constructor.ConstructorError`` (subclass of ``yaml.YAMLError``)
+# on any duplicate key. Existing ``except yaml.YAMLError`` blocks at
+# parse-step modules catch it for free; contributors see a clean error
+# message naming the duplicate key + its line, instead of a silent
+# "validator passed but the change didn't take" failure.
+#
+# All YAML reads in the repo should go through ``strict_yaml_load`` —
+# manifest, schema, artifacts, frontmatter, scaffolders. Loading via
+# ``yaml.safe_load`` directly bypasses the protection.
+
+class StrictYAMLLoader(yaml.SafeLoader):
+    """SafeLoader that raises on duplicate mapping keys instead of
+    silently overwriting. Drop-in replacement for ``yaml.SafeLoader``."""
+    pass
+
+
+def _strict_construct_mapping(loader, node, deep=False):
+    if not isinstance(node, yaml.MappingNode):
+        raise yaml.constructor.ConstructorError(
+            None, None,
+            f"expected a mapping node, but found {node.id}",
+            node.start_mark)
+    mapping = {}
+    for key_node, value_node in node.value:
+        key = loader.construct_object(key_node, deep=deep)
+        if key in mapping:
+            raise yaml.constructor.ConstructorError(
+                "while constructing a mapping",
+                node.start_mark,
+                f"found duplicate key {key!r}",
+                key_node.start_mark)
+        mapping[key] = loader.construct_object(value_node, deep=deep)
+    return mapping
+
+
+StrictYAMLLoader.add_constructor(
+    yaml.resolver.BaseResolver.DEFAULT_MAPPING_TAG,
+    _strict_construct_mapping)
+
+
+def strict_yaml_load(stream):
+    """Project-wide YAML loader. Same shape as ``yaml.safe_load`` but
+    raises ``yaml.YAMLError`` (specifically a ``ConstructorError``) on
+    duplicate mapping keys, instead of silently using the last value.
+
+    Parse-step modules already catch ``yaml.YAMLError`` and convert to
+    fatal Issues, so this surfaces as a clean validator error rather
+    than a Python traceback."""
+    return yaml.load(stream, Loader=StrictYAMLLoader)
+
+
 # Repo paths — computed from this file's location so scripts can be
 # invoked from any cwd.
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
@@ -42,7 +105,7 @@ def load_schema():
     global _schema_cache
     if _schema_cache is None:
         with open(SCHEMA_PATH) as f:
-            _schema_cache = yaml.safe_load(f)
+            _schema_cache = strict_yaml_load(f)
     return _schema_cache
 
 
@@ -85,7 +148,7 @@ def _load_extraction_types():
         return _extraction_type_cache
     try:
         with open(MANIFEST_PATH) as f:
-            entries = yaml.safe_load(f) or []
+            entries = strict_yaml_load(f) or []
     except yaml.YAMLError:
         return _extraction_type_cache
     if not isinstance(entries, list):
@@ -117,7 +180,7 @@ def manifest_format(rel_path):
         return None
     try:
         with open(MANIFEST_PATH) as f:
-            entries = yaml.safe_load(f) or []
+            entries = strict_yaml_load(f) or []
     except yaml.YAMLError:
         return None
     if not isinstance(entries, list):
@@ -164,7 +227,7 @@ def parse_frontmatter(text):
     if end < 0:
         return None, None
     try:
-        fm = yaml.safe_load(text[3:end])
+        fm = strict_yaml_load(text[3:end])
         return fm, text[end + 4:]
     except yaml.YAMLError:
         return None, None
@@ -246,7 +309,7 @@ def load_manifest():
     if not MANIFEST_PATH.exists():
         return []
     with open(MANIFEST_PATH) as f:
-        return yaml.safe_load(f) or []
+        return strict_yaml_load(f) or []
 
 
 def save_manifest(entries):

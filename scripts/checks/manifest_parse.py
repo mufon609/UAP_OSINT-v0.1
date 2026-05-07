@@ -3,7 +3,7 @@
 Validates ``sources/manifest.yaml`` parses cleanly and the root is a list
 of entries. Two fatal cases:
 
-  - ``yaml.safe_load`` raises YAMLError.
+  - ``strict_yaml_load`` raises YAMLError.
   - Root value is not a list.
 
 Missing manifest is silent (manifest is optional in toolkit shape; a
@@ -21,7 +21,7 @@ explicit gate keeps the dependency obvious).
 import yaml
 
 from checks import Issue
-from lib._common import MANIFEST_PATH
+from lib._common import MANIFEST_PATH, strict_yaml_load
 
 
 CHECK_NAME = "manifest_parse"
@@ -37,7 +37,7 @@ def check(ctx):
 
     try:
         with open(MANIFEST_PATH) as f:
-            data = yaml.safe_load(f)
+            data = strict_yaml_load(f)
     except yaml.YAMLError as e:
         yield Issue(
             MANIFEST_REL, "error",
