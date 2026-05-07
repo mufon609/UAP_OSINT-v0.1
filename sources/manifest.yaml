@@ -641,6 +641,22 @@
   archive_status: 1
   wayback_skip: true
   note: 'Contributor-produced clean-text transcription (.txt sibling) of blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf, produced 2026-05-02 via VLM page read of all 17 pages. The source PDF is OmniPage CSDK 20 / AINSLIB.OCR-produced (extraction_type: ocr-scan); per BACKLOG #19 OCR-scan discipline the validator''s extract_source_text prefers this same-stem .txt sibling over pdftotext output. Visual transcription preserves redaction markers (b)(6) / (b)(3) / (b)(5) verbatim, email-thread structure, foreign-language fragments (Finnish ''kirjoitti''), and timestamp ranges (1300-1400 / 1400-1530) without pdftotext line-wrap artifacts. Companion to PDF entry with extraction_type: ocr-scan above.'
+- url: https://doi.org/10.1364/AO.30.002013
+  format: html
+  status: archived
+  path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
+  archived_date: '2026-05-07'
+  sha256: 97ba6a30e9828bb8324c9984d1a55fe19d52f7082f9e71a71e818966023639e7
+  archive_status: 1
+  note: 'Targ, R.; Kavaya, M.J.; Huffaker, R.M.; Bowles, R.L., ''Coherent lidar airborne windshear sensor: performance evaluation'', Applied Optics 30 (15), 2013-2026, 1991. DOI 10.1364/AO.30.002013. Resolves to opg.optica.org/abstract.cfm?URI=ao-30-15-2013. Russell Targ author byline lists affiliation as ''Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA''. Bowles affiliated NASA Langley; Kavaya & Huffaker affiliated Coherent Technologies, Boulder. Primary peer-reviewed attestation of Targ at LMSC in 1991 (replaces secondary biographical sources for the Targ-Lockheed tenure claim). Abstract open; full text paywalled.'
+- url: https://doi.org/10.1364/AO.35.007117
+  format: html
+  status: archived
+  path: news/opg.optica.org-targ-coherent-lidar-airborne-wind-sensor-ii-1996.html
+  archived_date: '2026-05-07'
+  sha256: 93dcdd1c1803d97a2003b8302ddd2cd1c8b3971e990a2cb7610ec4321784670c
+  archive_status: 1
+  note: 'Targ, R.; Steakley, B.C.; Hawley, J.G.; Ames, L.L., et al., ''Coherent lidar airborne wind sensor II: flight-test results at 2 and 10 µm'', Applied Optics 35 (36), 7117-7127, 1996. DOI 10.1364/AO.35.007117. Resolves to opg.optica.org/abstract.cfm?URI=ao-35-36-7117. Russell Targ author byline lists affiliation as ''Advanced Technology Center, Lockheed Martin, 3251 Hanover Street, Palo Alto, California 94304-1191''. Same physical address as Targ''s 1991 LMSC affiliation; documents the LMSC -> Lockheed Martin ATC institutional continuity at one site across the 1995 Lockheed Martin merger. Co-authors include LM ATC staff (Forney, Swanson, Stone, Otto, Zarifis), NASA Langley (Brockman, Calloway, Robinson), and MIT Lincoln Lab (Klein). Primary peer-reviewed attestation of Targ at LM ATC in 1996. Abstract open; full text paywalled.'
 - url: https://douglasjohnson.ghost.io/content/files/2025/02/House-Oversight-QFR-Elizondo--Dec.-2024-.pdf
   format: pdf
   status: archived
@@ -793,6 +809,15 @@
   archive_status: 3
   note: HandWiki encyclopedia biography entry for Sean M. Kirkpatrick — cross-reference index to multiple DoD / AFCEA / Symposium365 source citations confirming the 2003-2005 NRO, 2005-2007 CIA S&T, 2007-2010 joint CIA-DIA, 2010-2012 OSD Space Control chronology. Treat as secondary-source aggregate; primary anchor for any specific claim is the DoD bio, AFCEA bio, or Potomac Officers Club bio. Audit appendix cross-reference resource.
   wayback_date: '2026-04-29'
+- url: https://hoyer.house.gov/content/hoyer-announces-investments-southern-maryland-military-facilities
+  format: html
+  status: archived
+  path: government/hoyer-house-gov-investments-southern-maryland-milcon-fy2011-20100728.html
+  archived_date: '2026-05-07'
+  sha256: 57e6440fc68b753427c4792d6458033c3ff2c2897ad8a8cba0ee0b3338e97fe9
+  archive_status: 3
+  note: Hoyer congressional office press release, July 28, 2010, 'Hoyer Announces Investments in Southern Maryland Military Facilities'. Includes the FY2011 MILCON line item 'Atlantic Test Range Addition, Naval Air Station, Patuxent River – $10,160,000' with explicit specification for 'Sensitive Compartmented Information Facility areas' alongside 'control rooms for Unmanned Air Vehicles' and 'intelligence data acquisition laboratory spaces'. Dollar figure, fiscal year, location, and SCIF specification primary-source-corroborate Elizondo's December 2024 sworn QFR description of a ~$10M Pax River SAP-F hangar Hoyer requested. Architectural form (addition to ATR Building 2118) is an addition rather than a standalone hangar.
+  wayback_date: '2025-03-22'
 - url: https://irp.fas.org/eprint/gough.pdf
   format: pdf
   status: archived
@@ -811,6 +836,14 @@
   archive_status: 3
   note: 'LeoLabs press release December 3 2024: ''Former U.S. Under Secretary of Defense for Intelligence & Security Ron Moultrie joins LeoLabs Board of Directors''. 26 days after the November 7 2024 NSSA SDA24 forum at MITRE where Kirkpatrick (then ORNL CTO/National Security Programs) was moderator and LeoLabs participated as panelist'
   wayback_date: '2026-01-15'
+- url: https://link.springer.com/article/10.1007/s11214-009-9499-4
+  format: html
+  status: archived
+  path: news/link.springer.com-mccomas-ibex-interstellar-boundary-explorer-2009.html
+  archived_date: '2026-05-07'
+  sha256: 2acfb06270ed44fb6e462680031fe7d532fb4f2428e91a788c95098d8044e1c5
+  archive_status: 1
+  note: McComas, D.J., et al., 'IBEX-Interstellar Boundary Explorer', Space Science Reviews, vol. 146, Issue 1-4, October 2009, pp. 11-33. DOI 10.1007/s11214-009-9499-4. Peer-reviewed institutional attestation. Author-affiliation byline lists 'Lockheed Martin Advanced Technology Center, Palo Alto, CA, 94304, USA' tied to S. A. Fuselier as a co-author institution. First author McComas (SwRI). Multi-institution author list (UNH, NASA Goddard, U. Bern, JHU/APL, LANL, USC, Boston U., Orbital Sciences, etc.). Abstract page open access; full text paywalled. Archived as the abstract-with-byline-affiliation page; the byline-affiliation IS the load-bearing primary attestation.
 - url: https://lweb.cfa.harvard.edu/~loeb/LK1.pdf
   format: pdf
   status: archived
@@ -905,6 +938,15 @@
   archive_status: 3
   note: New Paradigm Institute response to the WSJ piece, framing it as Pentagon disinformation. Counter-narrative source for the WSJ Vol II preview, parallel to the Liberation Times rebuttal.
   wayback_date: '2026-02-21'
+- url: https://news.lockheedmartin.com/2005-02-17-Lockheed-Martin-to-Develop-Sensor-for-Interstellar-Boundary-Explorer-Mission
+  format: html
+  status: archived
+  path: news/news.lockheedmartin.com-2005-02-17-ibex-lo-sensor-development.html
+  archived_date: '2026-05-07'
+  sha256: f18e1a41ab1b5132c54241dbdbaaaa99ebd22c150363ad2832f6348ab901dee1
+  archive_status: 3
+  note: 'Lockheed Martin Corporation press release, February 17, 2005: ''Lockheed Martin to Develop Sensor for Interstellar Boundary Explorer Mission''. The Lockheed Martin Advanced Technology Center (ATC) leads development of the IBEX-Lo sensor for NASA''s Small Explorer mission; Southwest Research Institute (SwRI) awarded the contract to the ATC; Dr. Stephen A. Fuselier is the lead investigator for IBEX-Lo, Eric Hertzberg the lead engineer, both members of the ATC''s Space Physics Department; the overall project is under SwRI''s Dr. Dave McComas as Principal Investigator. Primary-source institutional corroboration of Ryder''s 2015 Lucis Trust talk claim that IBEX ''was built in my lab'' (lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt at 39:00). Ryder served as ATC head from May 2005 onward — IBEX-Lo development was within his organizational supervision.'
+  wayback_date: '2026-04-11'
 - url: https://news.lockheedmartin.com/2008-03-05-Defense-Advanced-Research-Projects-Agency-DARPA-Awards-F6-Satellite-Program-Contract-to-Lockheed-Martin
   format: html
   status: archived
@@ -914,6 +956,14 @@
   archive_status: 3
   note: 'Lockheed Martin Corp. press release dated March 5, 2008, Palo Alto, CA: ''Defense Advanced Research Projects Agency (DARPA) Awards F6 Satellite Program Contract to Lockheed Martin''. Quotes Dr. Jim Ryder, vice president of the Lockheed Martin Space Systems Advanced Technology Center (ATC) in Palo Alto, on the F6 (Future, Fast, Flexible, Fractionated, Free-Flying Spacecraft United by Information Exchange) program — $5.7M Phase 1 design contract. Independent corporate self-attestation of Ryder''s VP-of-ATC role.'
   wayback_date: '2026-04-12'
+- url: https://news.lockheedmartin.com/2008-10-08-Lockheed-Martin-Sensor-Aboard-for-Interstellar-Boundary-Explorer-IBEX-Mission-Launch
+  format: html
+  status: archived
+  path: news/news.lockheedmartin.com-2008-10-08-ibex-mission-launch.html
+  archived_date: '2026-05-07'
+  sha256: 917d5c3d812794c57452e352f163e7ef3d62efeb82b25221d0e718dcabd7a123
+  archive_status: 1
+  note: 'Lockheed Martin Corporation press release, October 8, 2008, ''Lockheed Martin Sensor Aboard for Interstellar Boundary Explorer (IBEX) Mission Launch''. States: ''The IBEX-Lo sensor was built by a team of scientists and engineers at the ATC in Palo Alto, Calif., the University of New Hampshire in Durham, N.H., SwRI in San Antonio, Texas, the NASA Goddard Space Flight Center in Greenbelt, Md, and the University of Bern in Bern, Switzerland.'' Important nuance: ATC was one of FIVE building institutions for IBEX-Lo, not ATC-only. The team integrated and calibrated the sensor at the University of Bern. Corroborates Ryder''s 2015 ''built in my lab'' attestation as ATC participation; refines from ATC-exclusive build to multi-institution build led by ATC.'
 - url: https://news.lockheedmartin.com/2009-07-23-Lockheed-Martin-Supports-Forum-On-Environmental-Observations
   format: html
   status: archived
@@ -1690,6 +1740,15 @@
   archive_status: 3
   note: 'AARO unclassified slide deck for the November 19, 2024 Senate Armed Services Subcommittee on Emerging Threats and Capabilities open hearing. 7-page presentation by Director Dr. Jon Kosloski covering UAP REPORTING TRENDS (Jan 1, 1996 – Oct 10, 2024) and three case resolutions: THE PUERTO RICO OBJECT (April 26, 2013, USCBP IR video over Rafael Hernandez Airport — assessed ''high confidence'' as two distinct objects, illusion of splitting due to changing sensor angle, perception of high speed attributed to motion parallax, traveled at wind speed in a straight line at ~3.6 m/s, descending to ~200 meters); GO FAST (January 2016 — assessed at ~13,000 feet at ~45 mph / 39 knots, with 60-knot winds at altitude, parallax explanation); MT. ETNA OBJECT (2018 — assessed ''moderate confidence'' as a balloon drifting with the wind ''approximately 170 kilometers from the volcano''). PDF metadata Author: Halterman, Jessica L CTR OSD OUSD Intel; Title: ''Graphics Proposed AARO Branding Guide''. Pages: 7. Created Nov 18, 2024 — the day before the hearing. CONTRADICTION: slide deck states ''170 kilometers'' from volcano while the SASC stenographic transcript records Kosloski''s oral testimony as ''170 meters away from the plume''.'
   wayback_date: '2025-10-12'
+- url: https://www.askapoluaps.com/p/hoyer-claims-human-intelligence-over-nhi
+  format: html
+  status: archived
+  path: news/askapoluaps-com-hoyer-human-intelligence-over-nhi-20251022.html
+  archived_date: '2026-05-07'
+  sha256: e973adacf62a35e81d1788e9273c61ababd272658e62431fdc1a2f64633b8430
+  archive_status: 3
+  note: 'Matt Laslo (Ask a Pol UAP), interview with former House Majority Leader Steny Hoyer (D-MD), conducted October 16, 2025 at the Capitol Visitors Center, published October 22, 2025. Hoyer questioned directly about the $10 million Pax River hangar appropriation in the FY2011 MILCON bill (Laslo''s question framed it as ''for Lockheed Martin''); Hoyer self-corrected from ''private'' to ''public partner'' (terminology specific to public-private partnership construction); did not deny the appropriation. Direct quotes: ''I don''t remember the specifics'' / ''It may well be. Let me check on it, though'' (when asked if the appropriation related to new technology) / ''No. I''m not. I''m sort of a human intelligence person'' (in response to a separate question about familiarity with non-human intelligence / NHI). Hoyer himself made no statements about Elizondo or his QFR by name in the interview — the article uses Elizondo''s QFR as background framing only.'
+  wayback_date: '2026-02-10'
 - url: https://www.audible.com/blog/in-the-room-with-peter-bergen-transcript-episode-38
   format: html
   status: archived
@@ -2232,6 +2291,15 @@
   archive_status: 3
   note: Liberation Times article (June 22, 2024) reporting that the Department of Defense confirmed in writing to the publication that Kirkpatrick attended an April 19, 2018 Skinwalker Ranch briefing on the Hill — directly contradicting Kirkpatrick's recorded denial to journalist Steven Greenstreet of any pre-AARO UAP duties. Audit finding 3.4 primary documentary source for the DoD attendance confirmation. Also documents Brandon Fugal's contradicting account ('Kirkpatrick was at the head of the table'), the photo Fugal posted on X with EXIF metadata anchoring it to 1:31pm ET on April 19 2018, and AARO's Airstar America test-balloon procurement.
   wayback_date: '2025-03-10'
+- url: https://www.liberationtimes.com/home/white-house-approved-trip-allegedly-took-congressman-to-maryland-base-to-examine-suspected-ufo-facility
+  format: html
+  status: archived
+  path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+  archived_date: '2026-05-07'
+  sha256: 6c9024312c5986f76862048c03b1ecd9241543803ce37d308c80a59d795f4123
+  archive_status: 3
+  note: 'Liberation Times article by Christopher Sharp, March 6, 2026, with March 12, 2026 update appended at the same URL. Original reports Burlison''s White House-approved Pax River site visit verified the hangar exists but is empty; sources said Burlison saw a ''private runway said to have been built for Bigelow'' and ''a crane allegedly intended to support the transfer of materials by air and by river''. March 12 update walks back: three sources said the hangar Burlison toured ''was not the one allegedly built to facilitate the proposed transfer of materials'' and ''Burlison did not see a runway built specifically for Bigelow''; the broader allegation that ''UAP-related materials, including an exotic vehicle of unknown origin, may be stored at the U.S. base in Maryland'' in ''different facilities within Pax River'' was preserved.'
+  wayback_date: '2026-03-25'
 - url: https://www.liberationtimes.com/home/witnesses-announced-for-landmark-ufo-congressional-hearing
   format: html
   status: archived

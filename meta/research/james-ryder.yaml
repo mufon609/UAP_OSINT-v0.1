@@ -58,6 +58,24 @@ primary_sources:
     format: html
   - path: video/lucistrust-rending-veils-pt1-ryder-2017-222366976.mp4
     format: video
+  - path: government/aaro-hrr-volume-1-20240308.pdf
+    format: pdf
+  - path: government/hoyer-house-gov-investments-southern-maryland-milcon-fy2011-20100728.html
+    format: html
+  - path: news/news.lockheedmartin.com-2005-02-17-ibex-lo-sensor-development.html
+    format: html
+  - path: news/askapoluaps-com-hoyer-human-intelligence-over-nhi-20251022.html
+    format: html
+  - path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+    format: html
+  - path: news/news.lockheedmartin.com-2008-10-08-ibex-mission-launch.html
+    format: html
+  - path: news/link.springer.com-mccomas-ibex-interstellar-boundary-explorer-2009.html
+    format: html
+  - path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
+    format: html
+  - path: news/opg.optica.org-targ-coherent-lidar-airborne-wind-sensor-ii-1996.html
+    format: html
 document_intrinsic:
   full_name: 'James T. Ryder'
   aliases:
@@ -425,6 +443,84 @@ entities_referenced:
     name: 'Lucis Trust Bi-Annual Letter — ''Science is our meditation on the nature of the universe'' by James T. Ryder (2018)'
     wrap_path: '/documents/lucistrust-ryder-science-meditation-letter-2018'
     context_summary: 'Edited transcript excerpt of Dr. James T. Ryder''s 2018 ''Garment of God'' Arcane School Conference talk, published under Ryder''s byline as a Lucis Trust Bi annual letter feature. The Ryder-bylined published prose form of the 2018 NYC talk. Footer attribution: ''Excerpted from an edited transcript of a talk, The Garment of God by the late Jim Ryder at a 2018 Arcane School Conference. Dr. Ryder was a retired Vice President of Lockheed Martin Space Systems Company and former head of the Advanced Technology Center.'''
+  - id: e42
+    added_date: '2026-05-09'
+    entity_type: person
+    name: 'Eric Burlison'
+    wrap_path: '/people/eric-burlison'
+    context_summary: 'Representative (Missouri); House Oversight Committee member and Government Secrets Disclosure Task Force member. Author of the December 9, 2024 Question for the Record letter to Luis Elizondo that prompted the December 19, 2024 sworn QFR response identifying Lacatski as the SD004 page-1 author. Conducted a White House-approved February 2026 site visit to Naval Air Station Patuxent River to investigate the SAP-F hangar Elizondo''s Q7 response described as Hoyer-requested; per Liberation Times reporting March 6, 2026 (with March 12 walk-back), Burlison verified the hangar exists but is empty.'
+  - id: e43
+    added_date: '2026-05-09'
+    entity_type: person
+    name: 'Matt Laslo'
+    wrap_path: '/people/matt-laslo'
+    context_summary: 'Journalist; founder of Ask a Pol UAP. Conducted the October 16, 2025 on-record interview with former House Majority Leader Steny Hoyer at the Capitol Visitors Center; published October 22, 2025 under the headline "Hoyer Claims ''Human Intelligence'' over NHI". Laslo''s question framed the FY2011 Pax River appropriation as "for Lockheed Martin"; Hoyer self-corrected from "private" to "public partner" and did not deny the appropriation.'
+  - id: e44
+    added_date: '2026-05-09'
+    entity_type: organization
+    name: 'Ask a Pol UAP'
+    wrap_path: '/organizations/ask-a-pol'
+    context_summary: 'Substack-hosted UAP-press outlet founded by Matt Laslo. Publication venue for the October 22, 2025 Hoyer interview that surfaced Hoyer''s on-record non-denial of the FY2011 Pax River hangar appropriation.'
+  - id: e45
+    added_date: '2026-05-09'
+    entity_type: organization
+    name: 'All-domain Anomaly Resolution Office (AARO)'
+    wrap_path: '/organizations/aaro'
+    context_summary: 'Department of Defense office established July 2022 (originally as the Anomaly Surveillance and Resolution Office; expanded and renamed All-domain Anomaly Resolution Office under the FY2023 NDAA). Author of the "Report on the Historical Record of U.S. Government Involvement with Unidentified Anomalous Phenomena (UAP), Volume I" (DOPSR-cleared March 8, 2024) whose Executive Summary page 8 addresses the Lockheed-to-AAWSAP allegation cluster on the record.'
+  - id: e46
+    added_date: '2026-05-09'
+    entity_type: document
+    name: 'AARO Historical Record Report Volume I (DOPSR-cleared March 8, 2024)'
+    wrap_path: '/documents/aaro-historical-record-report-vol-i'
+    context_summary: 'AARO''s "Report on the Historical Record of U.S. Government Involvement with Unidentified Anomalous Phenomena (UAP), Volume I", DOPSR-cleared March 8, 2024. Executive Summary page 8 addresses the Lockheed-to-AAWSAP allegation cluster: a named former CIA official signed a memo rejecting that he managed the movement of and experimentation on off-world technology; AARO confirmed the 2004-2007 disclosure study was conducted but not requested by the White House; aerospace company executives, scientists, and chief technology officers met with the Director of AARO and denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology. Institutional counter-vector to the Lacatski / Elizondo / Knapp testimony chain.'
+  - id: e47
+    added_date: '2026-05-09'
+    entity_type: document
+    name: 'Hoyer FY2011 MILCON announcement (July 28, 2010)'
+    wrap_path: '/documents/hoyer-fy2011-milcon-southern-maryland-20100728'
+    context_summary: 'Hoyer congressional office press release, July 28, 2010, "Hoyer Announces Investments in Southern Maryland Military Facilities". Includes the FY2011 MILCON line item "Atlantic Test Range Addition, Naval Air Station, Patuxent River – $10,160,000" with explicit specification for "Sensitive Compartmented Information Facility areas" alongside "control rooms for Unmanned Air Vehicles" and "intelligence data acquisition laboratory spaces". Predates any UAP allegation by 14 years; the dollar figure, fiscal year, location, and SCIF specification correspond to the Pax River SAP-F hangar Elizondo''s December 2024 sworn QFR Q7 described as Hoyer-requested.'
+  - id: e48
+    added_date: '2026-05-09'
+    entity_type: document
+    name: 'Liberation Times — Christopher Sharp (2026-03-06)'
+    wrap_path: '/documents/liberationtimes-white-house-approved-trip-pax-river-20260306'
+    context_summary: 'Liberation Times article by Christopher Sharp, March 6, 2026, "White House-Approved Trip Allegedly Took Congressman to Maryland Base to Examine Suspected UFO Facility". Original reporting documents Burlison''s February 2026 White House-approved Pax River site visit; sources said Burlison verified the hangar exists but is empty, saw a private runway said to have been built for Bigelow, and saw a crane allegedly intended to support the transfer of materials by air and by river. The same URL was updated on March 12, 2026 with three sources telling Liberation Times the hangar Burlison toured was not the one allegedly built to facilitate the proposed transfer of materials and Burlison did not see a runway built specifically for Bigelow; the broader allegation that UAP-related materials may be stored in different facilities within Pax River was preserved.'
+  - id: e49
+    added_date: '2026-05-09'
+    entity_type: document
+    name: 'Ask a Pol UAP — Matt Laslo / Hoyer interview (2025-10-22)'
+    wrap_path: '/documents/askapoluaps-laslo-hoyer-20251022'
+    context_summary: 'Matt Laslo (Ask a Pol UAP) interview with former House Majority Leader Steny Hoyer at the Capitol Visitors Center, conducted October 16, 2025, published October 22, 2025. Hoyer questioned about the $10 million Pax River hangar appropriation in the FY2011 MILCON bill (Laslo framed it as "for Lockheed Martin"); Hoyer self-corrected from "private" to "public partner" and did not deny the appropriation. Direct responses captured: "I don''t remember the specifics" / "It may well be. Let me check on it, though" / "No. I''m not. I''m sort of a human intelligence person" (the last in response to a separate NHI question).'
+  - id: e50
+    added_date: '2026-05-09'
+    entity_type: document
+    name: 'Lockheed Martin IBEX-Lo press release (February 17, 2005)'
+    wrap_path: '/documents/lm-ibex-lo-press-release-20050217'
+    context_summary: 'Lockheed Martin Corporation press release, February 17, 2005, "Lockheed Martin to Develop Sensor for Interstellar Boundary Explorer Mission". Announces that the Lockheed Martin Advanced Technology Center will lead development of the IBEX-Lo sensor for NASA''s Small Explorer mission; the Southwest Research Institute (SwRI) awarded the contract to the ATC; Stephen A. Fuselier named lead investigator, Eric Hertzberg named lead engineer, both members of the ATC''s Space Physics Department; overall project under SwRI''s Dr. Dave McComas as Principal Investigator. Independent institutional corroboration of Ryder''s 2015 Lucis Trust talk attestation that IBEX "was built in my lab"; the contract was awarded to the ATC three months before Ryder''s May 2005 promotion to LMSSC Vice President and head of the ATC.'
+  - id: e51
+    added_date: '2026-05-09'
+    entity_type: document
+    name: 'Lockheed Martin IBEX mission launch press release (October 8, 2008)'
+    wrap_path: '/documents/lm-ibex-mission-launch-press-release-20081008'
+    context_summary: 'Lockheed Martin Corporation press release, October 8, 2008, "Lockheed Martin Sensor Aboard for Interstellar Boundary Explorer (IBEX) Mission Launch". Coincident with the October 19, 2008 IBEX launch. Adds important nuance to the 2005 IBEX-Lo press release: the IBEX-Lo sensor was built by a team of scientists and engineers at the ATC in Palo Alto, CA, the University of New Hampshire in Durham, NH, SwRI in San Antonio, TX, the NASA Goddard Space Flight Center in Greenbelt, MD, and the University of Bern in Bern, Switzerland; the team integrated and calibrated the sensor at the University of Bern. The ATC was one of five building institutions, not the only one. Refines Ryder''s 2015 "built in my lab" attestation from ATC-exclusive build to ATC-led multi-institution build.'
+  - id: e52
+    added_date: '2026-05-09'
+    entity_type: document
+    name: 'McComas et al. — IBEX-Interstellar Boundary Explorer (Space Science Reviews 2009)'
+    wrap_path: '/documents/mccomas-ibex-space-science-reviews-2009'
+    context_summary: 'McComas, D.J., et al., "IBEX-Interstellar Boundary Explorer", Space Science Reviews vol. 146, Issue 1-4, October 2009, pp. 11-33 (DOI 10.1007/s11214-009-9499-4). Peer-reviewed institutional attestation. Author-affiliation byline lists "Lockheed Martin Advanced Technology Center, Palo Alto, CA, 94304, USA" tied to S. A. Fuselier as a co-author institution. First author McComas (SwRI). Multi-institution author list (UNH, NASA Goddard, U. Bern, JHU/APL, LANL, USC, Boston U., Orbital Sciences, etc.). Independent peer-reviewed corroboration of the LM ATC''s IBEX role under Ryder''s ATC tenure (May 2005-February 2011). Abstract page open access; full text paywalled.'
+  - id: e53
+    added_date: '2026-05-09'
+    entity_type: document
+    name: 'Targ et al. — Coherent lidar airborne windshear sensor (Applied Optics 1991)'
+    wrap_path: '/documents/targ-coherent-lidar-airborne-windshear-sensor-1991'
+    context_summary: 'Targ, R.; Kavaya, M.J.; Huffaker, R.M.; Bowles, R.L., "Coherent lidar airborne windshear sensor: performance evaluation", Applied Optics vol. 30 (15), pp. 2013-2026, 20 May 1991 (DOI 10.1364/AO.30.002013). Russell Targ author byline lists his affiliation as "Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA" — peer-reviewed primary attestation of Targ at LMSC in 1991. Bowles affiliated NASA Langley; Kavaya & Huffaker at Coherent Technologies, Boulder. Replaces earlier secondary biographical sources (Wikipedia, Contact in the Desert speaker bio) for the Targ-Lockheed tenure claim. Abstract page open access; full text paywalled.'
+  - id: e54
+    added_date: '2026-05-09'
+    entity_type: document
+    name: 'Targ et al. — Coherent lidar airborne wind sensor II (Applied Optics 1996)'
+    wrap_path: '/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996'
+    context_summary: 'Targ, R.; Steakley, B.C.; Hawley, J.G.; Ames, L.L., et al., "Coherent lidar airborne wind sensor II: flight-test results at 2 and 10 µm", Applied Optics vol. 35 (36), pp. 7117-7127, 20 December 1996 (DOI 10.1364/AO.35.007117). Russell Targ author byline lists his affiliation as "Advanced Technology Center, Lockheed Martin, 3251 Hanover Street, Palo Alto, California 94304-1191" — same physical address as the 1991 LMSC byline. Documents the LMSC to Lockheed Martin ATC institutional continuity at one site across the 1995 Lockheed Martin merger. Co-authors include LM ATC staff (Forney, Swanson, Stone, Otto, Zarifis), NASA Langley (Brockman, Calloway, Robinson), and MIT Lincoln Lab (Klein). Abstract page open access; full text paywalled.'
 naming_quirks:
   - id: nq1
     added_date: '2026-05-07'
@@ -628,6 +724,78 @@ timeline:
       path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
       location: 'p. 3'
     category: filing
+  - id: t19
+    added_date: '2026-05-09'
+    date: '2005-02-17'
+    event: 'Lockheed Martin announces the Advanced Technology Center will lead development of the Interstellar Boundary Explorer (IBEX)-Lo sensor for NASA''s Small Explorer mission; Southwest Research Institute awarded the contract to the ATC; Stephen A. Fuselier named lead investigator, Eric Hertzberg lead engineer. Contract awarded three months before Ryder''s May 2005 ATC promotion.'
+    source:
+      path: news/news.lockheedmartin.com-2005-02-17-ibex-lo-sensor-development.html
+      location: '¶1'
+    category: publication
+  - id: t20
+    added_date: '2026-05-09'
+    date: '2010-07-28'
+    event: 'Hoyer announces fiscal year 2011 Military Construction line item: "Atlantic Test Range Addition, Naval Air Station, Patuxent River – $10,160,000" with "Sensitive Compartmented Information Facility areas", "control rooms for Unmanned Air Vehicles", and "intelligence data acquisition laboratory spaces". Corresponds to Pax River SAP-F hangar Elizondo''s December 2024 QFR Q7 described as requested by Hoyer.'
+    source:
+      path: government/hoyer-house-gov-investments-southern-maryland-milcon-fy2011-20100728.html
+      location: '¶8'
+    category: publication
+  - id: t21
+    added_date: '2026-05-09'
+    date: '2024-03-08'
+    event: 'AARO publishes Historical Record Report Volume I (DOPSR-cleared March 8, 2024). Executive Summary p. 8: a former CIA official''s memo rejecting that he managed the movement of off-world technology; disclosure study confirmed but not requested by the White House; aerospace executives denying having recovered or engaged in reverse-engineering of extraterrestrial technology.'
+    source:
+      path: government/aaro-hrr-volume-1-20240308.pdf
+      location: 'p. 8'
+    category: publication
+  - id: t22
+    added_date: '2026-05-09'
+    date: '2025-10-16'
+    event: 'Hoyer interviewed by Matt Laslo (Ask a Pol UAP) on the $10 million Pax River appropriation Laslo named "for Lockheed Martin" (published Oct 22, 2025). Hoyer changed from "private" to "public partner", did not deny it: "I don''t remember the specifics" / "It may well be". On NHI: "I''m a human intelligence person."'
+    source:
+      path: news/askapoluaps-com-hoyer-human-intelligence-over-nhi-20251022.html
+      location: '¶6'
+    category: publication
+  - id: t23
+    added_date: '2026-05-09'
+    date: '2026-02'
+    event: 'Rep. Eric Burlison conducts White House-approved site visit to Naval Air Station Patuxent River. Per Liberation Times (March 6, 2026), the hangar exists but is empty; sources said Burlison saw a "private runway said to have been built for Bigelow" and "a crane allegedly intended to support the transfer of materials by air and river".'
+    source:
+      path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+      location: '¶7'
+    category: incident
+  - id: t24
+    added_date: '2026-05-09'
+    date: '2026-03-06'
+    event: 'Liberation Times publishes Sharp''s "White House-Approved Trip..." on Burlison''s Pax River visit. Updated March 12: three sources said the hangar Burlison visited was not the one allegedly built for the transfer, and the runway said to have been built for Bigelow was not confirmed. Broader allegation that materials may be stored in Pax River preserved.'
+    source:
+      path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+      location: '¶13'
+    category: publication
+  - id: t25
+    added_date: '2026-05-09'
+    date: '1991-05-20'
+    event: 'Targ et al. publish "Coherent lidar airborne windshear sensor" [`/documents/targ-coherent-lidar-airborne-windshear-sensor-1991`] in Applied Optics 30 (15), 2013-2026 (DOI 10.1364/AO.30.002013). Targ author affiliation listed as "Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191" — peer-reviewed primary statement of Targ at LMSC in 1991.'
+    source:
+      path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
+      location: '¶3'
+    category: publication
+  - id: t26
+    added_date: '2026-05-09'
+    date: '1996-12-20'
+    event: 'Targ et al. publish "Coherent lidar airborne wind sensor II" [`/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996`] in Applied Optics 35 (36), 7117-7127 (DOI 10.1364/AO.35.007117). Targ author affiliation listed as "Advanced Technology Center, Lockheed Martin, 3251 Hanover Street, Palo Alto" — same address as the 1991 LMSC affiliation; documents LMSC to Lockheed Martin ATC continuity at one site across the 1995 merger.'
+    source:
+      path: news/opg.optica.org-targ-coherent-lidar-airborne-wind-sensor-ii-1996.html
+      location: '¶3'
+    category: publication
+  - id: t27
+    added_date: '2026-05-09'
+    date: '2008-10-19'
+    event: 'IBEX (Interstellar Boundary Explorer) launches as a NASA Small Explorer mission. Per the Lockheed Martin press release of October 8, 2008, the IBEX-Lo sensor was built by ATC, the University of New Hampshire, SwRI, NASA Goddard, and the University of Bern; integrated and calibrated at Bern. Launch fell within Ryder''s ATC tenure.'
+    source:
+      path: news/news.lockheedmartin.com-2008-10-08-ibex-mission-launch.html
+      location: '¶4'
+    category: publication
 program_involvement:
   - id: pi1
     added_date: '2026-05-06'
@@ -695,7 +863,7 @@ background: 'James T. Ryder served 38 years in management and technical position
 
 
   In January 2012, Ryder presented at the Thunderbolts/Electric Universe conference in Las Vegas on the surprising results of the IBEX experiment, per Mintze Van der Velde''s Lucis Trust report. At the Lucis Trust [`/organizations/lucis-trust`] Arcane School Conference London in June 2017, Ryder gave the discussion "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena". Dr. Lee Blackburn [`/people/lee-blackburn`] gave the Part 2 discussion on the violet force and health. Ryder also presented at the Lucis Trust Arcane School Conference in May 2015 ("The Soul Is Light. What Then Is Light?", London) and at the New York conference of April 2018 ("The Garment of God: Esoterically and Scientifically") — the latter approximately one month before his death. An edited transcript of the 2018 talk was published under his name as "Science is our meditation on the nature of the universe" in a Lucis Trust Bi annual letter.'
-top_relevance: 'Four documented statements name Ryder as a Lockheed Martin Space Systems Vice President involved in the alleged 2011 attempted transfer of UAP materials, including one filed under oath that names the author of the underlying record.
+top_relevance: 'Multiple documented statements name Ryder as a Lockheed Martin Space Systems Vice President involved in the alleged 2011 attempted transfer of UAP materials, including one filed under oath that names the author of the underlying record and one delivered under oath at a 2025 House Oversight UAP hearing. The Patuxent River Naval Air Station hangar Hoyer is alleged to have requested funding for is also named in a Hoyer congressional press release dated July 28, 2010 announcing the fiscal year 2011 Military Construction line item, a 2025 interview in which Hoyer did not deny the same appropriation, and a 2026 White House-approved site visit by Rep. Eric Burlison [`/people/eric-burlison`] that verified the hangar exists but is empty.
 
 
   The 21-page SD004 [`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`] was entered into the 13 November 2024 House Committee on Oversight and Accountability [`/organizations/house-oversight`] UAP hearing record. Page 1 is a Q&A DOPSR-cleared on September 6, 2023. The Q&A states the $22M allocated for DIA AAWSAP [`/organizations/aawsap`], after the author spoke to multiple individuals on the program, was originally intended to SCIF-out Bigelow Aerospace [`/organizations/bigelow-aerospace`] Facilities in Las Vegas due to a UAP material divestment plan proposed to AAWSAP leadership by Lockheed Martin Space Systems Vice President Dr. James Ryder (now deceased). A specific facility was described as having crash retrieval material from the 1950s and other historical operations. The proposed Technology Transfer Agreement was into the Waived PSAP that Senator Harry Reid [`/people/harry-reid`] was championing. The transfer was disapproved at a meeting with the original government custodian, the CIA Directorate of Science and Technology [`/organizations/cia-ds-and-t`], while Glenn Gaffney [`/people/glenn-gaffney`] was in that position.
@@ -704,10 +872,19 @@ top_relevance: 'Four documented statements name Ryder as a Lockheed Martin Space
   The author of the SD004 page-1 statement was named in Luis Elizondo [`/people/luis-elizondo`]''s December 19, 2024 Question for the Record response [`/documents/elizondo-qfr-burlison-20241219`] to the same House Oversight subcommittees. Responding to Rep. Eric Burlison''s December 9, 2024 letter, Elizondo''s Q1 response named Dr. James Lacatski [`/people/james-lacatski`], former Director of AAWSAP, as the author of the DOPSR-cleared statement (dated September 6, 2023) and quoted the Lockheed Ryder verbatim text as Attachment 2. Q6 confirmed that "the CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace." Q7 said that specific facilities were named to enable Bigelow Aerospace to acquire and securely store the materials following transfer from Lockheed Martin — locations in the Las Vegas area, and a newly built hangar at the Patuxent River Naval Air Station [`/locations/patuxent-river-nas`] funded with approximately $10 million allocated at the request of then-Representative Steny Hoyer [`/people/steny-hoyer`]; the PAX River hangar was purpose-built to meet Special Access Program Facility (SAP-F) requirements at any classification level. Elizondo said he visited the PAX River facility but no materials had been transferred at the time of his visit.
 
 
+  Hoyer''s congressional office press release dated July 28, 2010 [`/documents/hoyer-fy2011-milcon-southern-maryland-20100728`] — 14 years before any UAP allegation — announces the fiscal year 2011 Military Construction and Veterans Affairs Appropriations Act and includes a Pax River line item: "Atlantic Test Range Addition, Naval Air Station, Patuxent River – $10,160,000" to construct "Sensitive Compartmented Information Facility areas" alongside "control rooms for Unmanned Air Vehicles" and "intelligence data acquisition laboratory spaces." The dollar figure, fiscal year, location, and Sensitive Compartmented Information Facility correspond to the Pax River SAP-F hangar that Elizondo''s December 2024 QFR Q7 described as requested by Hoyer. The press release describes the funding as an addition to the existing Atlantic Test Range rather than a separate hangar.
+
+
   The 27 March 2025 Liberation Times article [`/documents/liberationtimes-burlison-grusch-recruitment-20250327`] by reporter Christopher Sharp [`/people/christopher-sharp`] states Lockheed Martin has refused on multiple occasions to comment on allegations that its executives, including former Vice President of Space Systems James Ryder, were involved in the attempted transfer of materials. Sharp states that the final authority to block the transfer ultimately rested with Robert Cardillo [`/people/robert-cardillo`], then Deputy Director of National Intelligence for Intelligence Integration, and that the effort to gain Special Access Program status for AAWSAP was blocked by Deputy Secretary of Defense William Lynn [`/people/william-lynn-iii`] due to pressure from individuals within the intelligence community. Asked in November 2023 whether it could deny that it possesses materials of unknown or non-human origin, a Lockheed Martin company spokesperson declined to issue a denial, stating "Questions about UAPs are best addressed by the U.S. government." Sharp''s earlier Liberation Times article on November 8, 2024 — published five days before the November 13 hearing where SD004 was entered into the record — was the first archived public source to name Ryder, and described those involved including Ryder as "feeling threatened due to the harshness of exchanges with CIA officials."
 
 
-  At the 2025 House Oversight UAP hearing, when asked under oath to name specific gatekeepers within the root cell of the UAP SAP Federation, George Knapp [`/people/george-knapp`] named Dr. James Ryder at Lockheed.'
+  On October 16, 2025, journalist Matt Laslo [`/people/matt-laslo`] (Ask a Pol UAP [`/organizations/ask-a-pol`]) questioned Hoyer at the Capitol Visitors Center about the same $10 million Pax River appropriation [`/documents/askapoluaps-laslo-hoyer-20251022`]. Laslo''s question described the appropriation as "for Lockheed Martin"; Hoyer changed from "private" to "public partner" — terminology used in public private partnership construction — and did not deny the appropriation. He responded "I don''t remember the specifics" and, when asked if the appropriation related to new technology, "It may well be. Let me check on it, though." Asked separately whether he was familiar with non-human intelligence, Hoyer answered: "No. I''m not. I''m sort of a human intelligence person." Hoyer himself made no statements about Elizondo or the QFR by name in the interview.
+
+
+  At the 2025 House Oversight UAP hearing, when asked under oath to name specific gatekeepers within the root cell of the UAP SAP Federation, George Knapp [`/people/george-knapp`] named Dr. James Ryder at Lockheed.
+
+
+  In February 2026, Rep. Eric Burlison conducted a White House-approved site visit to Naval Air Station Patuxent River to investigate the facility Elizondo described. Per Liberation Times reporting on March 6, 2026 [`/documents/liberationtimes-white-house-approved-trip-pax-river-20260306`], Burlison verified the hangar exists but is empty; sources said Burlison saw a "private runway said to have been built for Bigelow" and "a crane allegedly intended to support the transfer of materials by air and by river"; the findings were reported back to the White House. The same article was updated on March 12, 2026 with three sources telling Liberation Times the hangar Burlison visited may not have been the one Elizondo named, and the runway said to have been built for Bigelow was not confirmed; the update keeps the broader allegation that UAP-related materials may be stored in different facilities within Pax River.'
 credibility_notes: 'None of the documented Lockheed transfer statements that name Ryder are by Ryder. Ryder is deceased. The SD004 page 1 Q&A states "(now deceased)" without giving a date; the only named primary record of the death is note 1 of Dr. William A. Gardner''s biography page, which says the International Science Foundation "closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018." The day of the death is reported as May 28 in secondary sources but no primary source on this record states the day; only the month and the year.
 
 
@@ -715,6 +892,12 @@ credibility_notes: 'None of the documented Lockheed transfer statements that nam
 
 
   Christopher Sharp''s November 8, 2024 Liberation Times article and his March 2025 X post name the same Lockheed Martin transfer story but state different recipient agencies: the November 2024 article says the recipient was DIA AAWSAP / Bigelow Aerospace facilities; the March 2025 X post says "efforts in 2011 to transfer materials between Lockheed Martin and the Department of Homeland Security (DHS) were allegedly thwarted through actions coordinated by the CIA''s Directorate of Science & Technology, then led by Glenn Gaffney." Both forms of the story are recorded on this page; the primary sources currently archived do not resolve whether DHS is an added involved agency or a difference in how the reporter named the recipient.
+
+
+  AARO [`/organizations/aaro`]''s "Report on the Historical Record of U.S. Government Involvement with Unidentified Anomalous Phenomena (UAP), Volume I" [`/documents/aaro-historical-record-report-vol-i`] (DOPSR-cleared March 8, 2024) addresses the Lockheed Martin to AAWSAP allegation cluster on Executive Summary page 8 in three on the record findings: the named, former CIA official "was not involved in the movement of extraterrestrial technology" and "signed a memo rejecting a claim made by interviewees that he managed the movement of and experimentation on off-world technology"; "AARO confirmed the [2004 to 2007 disclosure] study was conducted, but it was not requested by the White House"; and "executives, scientists, and chief technology officers of the companies named by interviewees met with the Director of AARO and denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology." AARO''s named companies denial does not single out Lockheed Martin, addresses current executives'' statements rather than custody chain prior to current tenure, and was published before the Sharp Liberation Times reporting that documents Lockheed Martin''s repeated refusal to deny the allegations when asked. The memo cited in the AARO report is described as rejecting the claim that the CIA official "managed" the movement of off-world technology; Lacatski''s DOPSR-cleared statement and the Liberation Times reporting use "disapproved" — opposed during a meeting, not managed — so the AARO denial and the Lacatski description address different actions even when they appear to address the same allegation. The AARO Historical Record Report Volume I findings and the Lacatski / Elizondo / Knapp testimony chain remain on the record from named officials in opposite directions; the repository documents both.
+
+
+  Ryder''s 2015 Lucis Trust talk statement that IBEX "was built in my lab" is matched by a Lockheed Martin Corporation press release dated February 17, 2005 [`/documents/lm-ibex-lo-press-release-20050217`] announcing that the Lockheed Martin Advanced Technology Center "will lead the development of the Interstellar Boundary Explorer (IBEX)-Lo sensor for the recently selected NASA Small Explorer mission" with "the Southwest Research Institute (SwRI)" having awarded the contract to the ATC. The press release names Stephen A. Fuselier as IBEX-Lo lead investigator and Eric Hertzberg as lead engineer, both members of the ATC''s Space Physics Department, with the overall project under SwRI''s Dr. Dave McComas as Principal Investigator. The contract was awarded to the ATC three months before Ryder''s May 2005 promotion to LMSSC Vice President and head of the ATC; the build then proceeded under Ryder''s supervision through the October 2008 IBEX launch. A second Lockheed Martin press release dated October 8, 2008 [`/documents/lm-ibex-mission-launch-press-release-20081008`] states: "The IBEX-Lo sensor was built by a team of scientists and engineers at the ATC in Palo Alto, Calif., the University of New Hampshire in Durham, N.H., SwRI in San Antonio, Texas, the NASA Goddard Space Flight Center in Greenbelt, Md, and the University of Bern in Bern, Switzerland." The ATC was one of five building institutions, not the only one; the team integrated and calibrated the sensor at the University of Bern. The peer-reviewed McComas et al. paper in Space Science Reviews 146 (October 2009) [`/documents/mccomas-ibex-space-science-reviews-2009`] also lists "Lockheed Martin Advanced Technology Center, Palo Alto, CA, 94304, USA" as a co-author institution tied to S. A. Fuselier — peer-reviewed independent statement of the ATC''s IBEX role.
 
 
   Ryder gave the Lucis Trust 2017 London discussion "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena" — the video is preserved as a primary source on this page but is not yet rendered as text. Ryder''s 2015 ("The Soul Is Light") and 2018 ("The Garment of God") Lucis Trust talks each have a YouTube video whose transcript was pulled into this page (see Statements). The published edited Ryder text from the 2018 talk is archived separately as the Lucis Trust Bi annual letter publication [`/documents/lucistrust-ryder-science-meditation-letter-2018`]. The 2015 and 2018 talk transcript files were transcribed by YouTube''s tool and contain a number of different forms of proper names (''put off'' / ''pothos'' / ''thought of'' for Puthoff; ''leprosy'' for telepathy; ''ibx'' for IBEX; ''wall thornhill'' for Wal Thornhill); these are preserved as sic in the Statements quotes and listed for the reader on this page.'
@@ -841,9 +1024,9 @@ relationships:
   - id: rel8
     added_date: '2026-05-07'
     person_path: '/people/russell-targ'
-    relationship: 'Per Targ''s ESP Research website, Targ retired from Lockheed Martin as a senior staff scientist; Ryder names Targ on camera in his 2018 ''Garment of God'' Lucis Trust talk as ''dr targ who''s worked for me for years''. Targ also co-founded the Stanford Research Institute [`/organizations/stanford-research-institute`] remote-viewing program with Hal Puthoff in 1972.'
+    relationship: 'Russell Targ documented at Lockheed via Applied Optics author affiliations: 1991 LMSC and 1996 Lockheed Martin ATC, same Hanover Street address across the 1995 merger. Ryder names Targ on camera in his 2018 ''Garment of God'' talk as ''dr targ who''s worked for me for years''. Targ co-founded the Stanford Research Institute [`/organizations/stanford-research-institute`] remote-viewing program.'
     source:
-      path: news/espresearch-russell-targ-snapshot.html
+      path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
       location: '¶3'
   - id: rel9
     added_date: '2026-05-07'

@@ -1,0 +1,2159 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="tdm-reservation" content="1"/>
+<meta name="tdm-policy" content="https://opg.optica.org/policies/opg-tdm-policy.json"/>
+<meta name="viewport" content="width=device-width" initial-scale="1">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge"><script>
+var __uzdbm_1 = "98fe07c0-2483-a4bf-ab8b-5c500a64f990";var __uzdbm_2 ="ZTdiNWI2MmQtZDNoeS0xNmQ4LThiMzEtOTEwOGU3MDAyMGM1JDczLjI5LjIwMC4xOTM=";
+
+  (function(w, d, e, u, c, g, a, b){
+    w["SSJSConnectorObj"] = w["SSJSConnectorObj"] || {ss_cid : c, domain_info: "auto"};
+    w[g] = function(i, j){w["SSJSConnectorObj"][i] = j};
+    a = d.createElement(e);
+    a.async = true;
+    if(navigator.userAgent.indexOf('MSIE')!==-1
+    || navigator.appVersion.indexOf('Trident/') > -1){
+    u = u.replace("/advanced/", "/advanced/ie/");
+    }
+    a.src = u;
+    b = d.getElementsByTagName(e)[0];
+    b.parentNode.insertBefore(a, b);
+    
+  })(window,document,"script","https://cdn.perfdrive.com/advanced/stormcaster.js","d3i0","ssConf");
+    
+    ssConf("c1" , "https://cas.avalon.perfdrive.com");
+</script>
+<meta name="format-detection" content="telephone=no">
+<title>Coherent lidar airborne windshear sensor: performance evaluation</title>
+<link title="schema(DC)" rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
+<meta name="dc.date" content="1991-05-20">
+<meta name="dc.description" content="National attention has focused on the critical problem of detecting and avoiding windshear since the crash on 2 Aug. 1985 of a Lockheed L-1011 at Dallas/Fort Worth International Airport. As part of the NASA/FAA National Integrated Windshear Program, we have defined a measurable windshear hazard index that can be remotely sensed from an aircraft, to give the pilot information about the wind conditions he will experience at some later time if he continues along the present flight path. A technology analysis and end-to-end performance simulation measuring signal-to-noise ratios and resulting wind velocity errors for competing coherent laser radar (lidar) systems have been carried out. The results show that a Ho:YAG lidar at a wavelength of 2.1 μm and a CO2 lidar at 10.6 μm can give the pilot information about the line-of-sight component of a windshear threat from his present position to a region extending 2–4 km in front of the aircraft. This constitutes a warning time of 20–40 s, even in conditions of moderately heavy precipitation. Using these results, a Coherent Lidar Airborne Shear Sensor (CLASS) that uses a Q-switched CO2 laser at 10.6 μm is being designed and developed for flight evaluation in the fall of 1991.">
+<meta name="dc.identifier" content="doi:10.1364/AO.30.002013">
+<meta name="dc.language" content="EN">
+<meta property="og:description" content="National attention has focused on the critical problem of detecting and avoiding windshear since the crash on 2 Aug. 1985 of a Lockheed L-1011 at Dallas/Fort Worth International Airport. As part of the NASA/FAA National Integrated Windshear Program, we have defined a measurable windshear hazard index that can be remotely sensed from an aircraft, to give the pilot information about the wind conditions he will experience at some later time if he continues along the present flight path. A technology analysis and end-to-end performance simulation measuring signal-to-noise ratios and resulting wind velocity errors for competing coherent laser radar (lidar) systems have been carried out. The results show that a Ho:YAG lidar at a wavelength of 2.1 μm and a CO2 lidar at 10.6 μm can give the pilot information about the line-of-sight component of a windshear threat from his present position to a region extending 2–4 km in front of the aircraft. This constitutes a warning time of 20–40 s, even in conditions of moderately heavy precipitation. Using these results, a Coherent Lidar Airborne Shear Sensor (CLASS) that uses a Q-switched CO2 laser at 10.6 μm is being designed and developed for flight evaluation in the fall of 1991.">
+<meta property="og:image" content="/images/optica_general_thumbnail.jpg">
+<meta property="og:sitename" content="Optica Publishing Group">
+<meta property="og:title" content="Coherent lidar airborne windshear sensor: performance evaluation">
+<meta property="og:type" content="Article">
+<meta property="og:url" content="https://opg.optica.org/ao/abstract.cfm?uri=ao-30-15-2013">
+<meta name="dc.publisher" content="Optica Publishing Group">
+<meta name="dc.rights" content="&amp;#169; 1991 Optical Society of America">
+<meta name="dc.source" content="Applied Optics, Vol. 30, Issue 15, pp. 2013-2026">
+<meta name="dc.title" content="Coherent lidar airborne windshear sensor: performance evaluation">
+<meta name="citation_abstract_html_url" content="https://opg.optica.org/abstract.cfm?uri=ao-30-15-2013">
+<meta name="citation_author" content="Russell Targ">
+<meta name="citation_author_institution" content="Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191">
+<meta name="citation_author" content="Michael J. Kavaya">
+<meta name="citation_author_institution" content="The other authors are with Coherent Technologies, Inc., 3300 Mitchell Lane, Suite 330, Boulder, Colorado 80301-2272.">
+<meta name="citation_author" content="R. Milton Huffaker">
+<meta name="citation_author_institution" content="The other authors are with Coherent Technologies, Inc., 3300 Mitchell Lane, Suite 330, Boulder, Colorado 80301-2272.">
+<meta name="citation_author" content="Roland L. Bowles">
+<meta name="citation_author_institution" content="NASA Langley Research Center, Hampton, Virginia 23665">
+<meta name="citation_doi" content="10.1364/AO.30.002013">
+<meta name="citation_firstpage" content="2013">
+<meta name="citation_fulltext_html_url" content="https://opg.optica.org/viewmedia.cfm?uri=ao-30-15-2013&amp;seq=0&amp;html=true">
+<meta name="citation_issn" content="2155-3165">
+<meta name="citation_issue" content="15">
+<meta name="citation_journal_abbrev" content="Appl. Opt., AO">
+<meta name="citation_journal_title" content="Applied Optics">
+<meta name="citation_keywords" content="Carbon dioxide lasers;Extinction coefficients;Radar;Remote sensing;Sensor performance;Solid state lasers;">
+<meta name="citation_language" content="EN">
+<meta name="citation_lastpage" content="2026">
+<meta name="citation_online_date" content="1991/05/20">
+<meta name="citation_pdf_url" content="https://opg.optica.org/viewmedia.cfm?uri=ao-30-15-2013&amp;seq=0">
+<meta name="citation_publication_date" content="1991/05/20">
+<meta name="citation_publisher" content="Optica Publishing Group">
+<meta name="citation_title" content="Coherent lidar airborne windshear sensor: performance evaluation">
+<meta name="citation_volume" content="30">
+<!-- Google Tag Manager -->
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5N7G55X');</script>
+<!-- End Google Tag Manager -->
+<link rel="icon" href="/favicon.ico?v=2">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/token-input-facebook.css">
+<link rel="stylesheet" href="/css/app.min.css?v=04142026">
+<!--<link rel="stylesheet" href="/css/search.css"> Second style redefines first in app.css -->
+<link rel="stylesheet" href="/css/journal-colors.css">
+<link rel="stylesheet" href="/css/tools.css?v=09192021">
+<link rel="stylesheet" href="/css/jqueryui/jquery-ui.css">
+<link rel="stylesheet" href="/css/jqueryui/jquery-ui-1.10.3.custom.min.css">
+<link rel="stylesheet" href="/css/carrousel.css">
+<!--[if lt IE 9]>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/vendor/html5shiv.min.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/vendor/respond.min.js"></script>
+<![endif]-->
+<link href="/fonts/fa5pro/css/all.css" rel="stylesheet">
+<link href="/fonts/fa7/css/all.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Noto+Sans:700&amp;subset=latin,greek-ext' rel='stylesheet' type='text/css'>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/vendor/custom.modernizr.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="https://scholar.google.com/scholar_js/casa.js" async></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body class="single-article journal-ao">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5N7G55X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<symbol id="right-arrow" viewBox="0 0 7.7 8.89">
+<defs>
+<style>
+.rarrow {
+stroke-miterlimit: 10;
+}
+</style>
+</defs>
+<title>Expand this Topic</title>
+<desc>clickable element to expand a topic</desc>
+<polygon class="rarrow" points="0.5 0.87 0.5 8.03 6.7 4.45 0.5 0.87" />
+</symbol>
+</svg>
+<div class="site">
+<nav class="primary--home navbar navbar-inverse hidden-xs p-0 mt-1" aria-label="Global Navigation">
+<div class="container">
+<div class="user-acct navbar-right d-lg-flex flex-row pt-2">
+<div class="d-flex flex-column pt-1 position-relative">
+<button id="header-search" class="btn text--right shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#search-nav" aria-label="start search">
+<div style="margin-top:-4px; width:30px; height:30px;border: 0; padding-top:6px;">
+<i id="header-search-icon" class="fal fa-search text-white" style="font-size:1em;"></i>
+</div>
+</button>
+<div id="search-nav" class="header-search collapse position-absolute end-100 top-0 p-1 bg-black">
+<div class="search-bar input-group main-search">
+<form name="nojs" action="/search_noscript.cfm" class="form-inline d-flex">
+<input name="q" id="topSearchText" type="text" class="search-text-input form-control input-sm header-search_inputField" placeholder="Search" aria-label="Search">
+<div class="input-group-btn header-search_btnGroup d-flex">
+<div class="dropdown">
+<button class="btn btn-sm btn-dropdown dropdown-toggle btn-topheader" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+<span id="dropdownText">All Publications</span> <span class="caret"></span>
+</button>
+<ul id="dropdownDesktop" class="dropdown-menu z-index--1000" aria-labelledby="dropdownMenuButton">
+<!-- Options to change the button text -->
+<li><a class="dropdown-item" href="#" data-search-type="all">All Publications</a></li>
+<li><a class="dropdown-item" href="#" data-search-type="site">Site Search</a></li>
+</ul>
+</div>
+<button id="topSearch" type="button" class="btn btn-sm btn-search" aria-label="start search" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Enter a search term or choose options to see advanced search" data-bs-custom-class="custom-tooltip">
+<div style="margin-top:-4px; width:30px; height:30px; padding-top:6px;">
+<i class="fal fa-search text-white" style="font-size:0.8em;"></i>
+</div>
+</button>
+<button data-bs-toggle="collapse" data-bs-target="#advanced-search-popup" type="button" class="btn text-wrap text--right search-options-header p-0 p__1--xs">Advanced Search</button>
+</div>
+</form>
+</div>
+<form id="advanced-search-popup" class="collapse advanced-search-popup">
+<div class="row avs-header">
+<div class="col-sm-9" style="font-weight:bold;">
+<i class="fal fa-filter"></i> SEARCH OPTIONS
+</div>
+<div class="col-sm-3 close-container">
+<div class="close-top"><a href="#" data-bs-toggle="collapse" data-bs-target="#advanced-search-popup" style="color:white;">Close <i class="fal fa-times"></i></a></div>
+</div>
+</div>
+<nav class="nav nav-tabs">
+<li role="presentation" class="active">
+<a href="#" id="OpgAdvancedSearch">Article Search</a>
+</li>
+<li role="presentation">
+<a href="#" id="ImageBankAdvancedSearch">ImageBank Search</a>
+</li>
+<li role="presentation">
+<a href="#" id="ContentAdvancedSearch">Site Search</a>
+</li>
+</nav>
+<div class="avs-content">
+<div class="no-content-search">
+<div class="avs_grayout"></div>
+<div class="row">
+<div class="col-sm-2 avs-label" style="font-weight:bold;">KEYWORDS</div>
+<div class="col-sm-8">
+<input name="" id="txtSearch" type="text" class="form-control" placeholder="Enter search terms here" aria-label="Enter search terms here" />
+<span class="opg-search-only"><input id="chkOtrResource" name="selectionChk" type="checkbox" value="" /> <span class="avs-inline-label-left"><label for="chkOtrResource" style="font-weight:normal;">Only if other supplemental resources are available</label></span></span>
+</div>
+<div class="col-sm-2 opg-search-only">
+<div><input name="chkSearchIn" type="checkbox" id="chk-searchin-metadata" CHECKED /> <span class="avs-inline-label-left"><label for="chk-searchin-metadata" style="font-weight:normal;display:inline;">Title and Abstract</label></span></div>
+<div><input name="chkSearchIn" type="checkbox" id="chk-searchin-all"/> <span class="avs-inline-label-left"><label for="chk-searchin-all" style="font-weight:normal;">All text</label></span></div>
+</div>
+</div>
+<div class="row space-top">
+<div class="col-sm-2 avs-label" style="font-weight:bold;">AUTHORS</div>
+<div class="col-sm-8">
+<input type="text" id="authorSearch" class="form-control" placeholder="Enter author names here" aria-label="author names"/>
+<span class="small muted">&bull; Use these formats for best results: Smith or J Smith</span>
+<span class="small muted"><br>&bull; Use a comma to separate multiple people: J Smith, RL Jones, Macarthur</span>
+</div>
+<div class="col-sm-2">
+<label for="chkAny" style="font-weight:normal;">Any :</label>&nbsp;<input id="chkAny" name="chkAnyAll" type="radio" value="any" checked="checked"/>
+<label for="chkAll" style="font-weight:normal;">All :</label>&nbsp;<input id="chkAll" name="chkAnyAll" type="radio" value="all"/>
+</div>
+</div>
+<div class="row space-top">
+<div class="col-sm-12">
+<div class="avs-help avs-divider">
+<a class="avs-help-link" data-action='slide-toggle' data-target='#avsHint1' href="#" title="Help Link">?</a>
+<div id="avsHint1" class="avs-help-message">
+<strong>Tips for preparing a search:</strong>
+<ul>
+<li>Keep it simple - don't use too many different parameters.</li>
+<li>Separate search groups with parentheses and Booleans. Note the Boolean sign must be in upper-case.
+<ul>
+<li>Example: (diode OR solid-state) AND laser [search contains "diode" or "solid-state" and laser]</li>
+<li>Example: (photons AND downconversion) - pump [search contains both "photons" and "downconversion" but not "pump"]</li>
+</ul>
+</li>
+<li>Improve efficiency in your search by using wildcards.</li>
+<ul>
+<li>Asterisk ( * ) -- Example: "elect*" retrieves documents containing "electron," "electronic," and "electricity"</li>
+<li>Question mark (?) -- Example: "gr?y" retrieves documents containing "grey" or "gray"</li>
+</ul>
+<li>Use quotation marks " " around specific phrases where you want the entire phrase only.</li>
+<li>For best results, use the separate Authors field to search for author names.</li>
+<li>Author name searching:
+<ul>
+<li>Use these formats for best results: Smith or J Smith</li>
+<li>Use a comma to separate multiple people: J Smith, RL Jones, Macarthur</li>
+<li>Note: Author names will be searched in the keywords field, also, but that may find papers where the person is mentioned, rather than papers they authored.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12" style="font-weight:bold;">
+SEARCH IN
+</div>
+</div>
+<div class="row space-top">
+<div class="col-sm-2">
+<input name="selectionChk" id="chkJournals" type="checkbox" class="checkbox" CHECKED> <span class="avs-inline-label-left"><label for="chkJournals" style="font-weight:normal;">Journals</label></span>
+</div>
+<div class="col-sm-7">
+<div class="input-collapse">
+<input id="advsJournalsSelector" type="text" class="form-control" placeholder="All journals (type names or look up list)" aria-label="choose journals">
+<div class="input-group-btn" name="journal">
+<button type="button" class="btn btn-default dropdown-toggle avs-modal-open" data-bs-toggle="dropdown" aria-label="Expand"><span class="caret"></span></button>
+</div>
+</div>
+</div>
+<div class="col-sm-3 avs-tiny">
+<div class="avs-tiny_field">
+<label for="volSearch" style="font-weight:normal;">Vol. </label><input id="volSearch" type="text" class="form-control" placeholder="All" />
+</div>
+<div class="avs-tiny_field">
+<label for="issueSearch" style="font-weight:normal;">Issue </label><input id="issueSearch" type="text" class="form-control" placeholder="All" />
+</div>
+<div class="avs-tiny_field">
+<label for="pageSearch" style="font-weight:normal;">Page </label><input id="pageSearch" type="text" class="form-control" placeholder="All" />
+</div>
+</div>
+</div>
+<div class="row space-top-lg opg-search-only">
+<div class="col-sm-2">
+<input id="chkConferences" type="checkbox" class="checkbox" CHECKED> <span class="avs-inline-label-left"><label for="chkConferences" style="font-weight:normal;">Conferences</label></span>
+</div>
+<div class="col-sm-7">
+<div class="input-collapse">
+<input type="text" id="advsProceedingSelector" class="form-control" placeholder="All conferences (type names or look up list)" aria-label="choose conferences">
+<div class="input-group-btn" name="proceeding">
+<button type="button" class="btn btn-default dropdown-toggle avs-modal-open" data-bs-toggle="dropdown" aria-label="Expand"><span class="caret"></span></button>
+</div>
+</div>
+</div>
+<div class="col-sm-3 avs-tiny">
+<div class="avs-tiny_field">
+<label for="yearSearch" style="font-weight:normal;">Year </label><input id="yearSearch" type="text" class="form-control" placeholder="All" />
+</div>
+<div class="avs-tiny_field avs-tiny_field--expanded">
+<label for="sessionPagerSearch" style="font-weight:normal;">Paper # </label><input id="sessionPagerSearch" type="text" class="form-control" placeholder="All" />
+</div>
+</div>
+</div>
+<div class="row space-top-lg opg-search-only">
+<div class="col-sm-3">
+<input id="chkReports" type="checkbox" class="checkbox" CHECKED> <span class="avs-inline-label-left"><label for="chkReports" style="font-weight:normal;">Industry Reports</label></span>
+</div>
+<div class="col-sm-6">&nbsp;</div>
+<div class="col-sm-3 avs-tiny">
+<div class="avs-tiny_field avs-tiny_field--expanded">
+<label for="reportYearSearch" style="font-weight:normal;">Report Year </label><input id="reportYearSearch" type="text" class="form-control" placeholder="All" />
+</div>
+</div>
+</div>
+<div class="row space-top">
+<div class="col-md-12">
+<div class="avs-help avs-divider"></div>
+</div>
+</div>
+<div class="row space-top">
+<div class="col-sm-3" style="font-weight:bold;">PUBLICATION YEARS</div>
+<div class="col-sm-5">
+<div class="form-inline">
+<div class="form-group">
+<span class="avs-inline-label-right"><label for="startYear" style="font-weight:normal;">From</label></span>
+<input id="startYear" type="text" class="form-control year-inline" placeholder="1917" maxlength="4"/>
+<span class="avs-inline-label-left avs-inline-label-right"><label for="endYear" style="font-weight:normal;">To</label></span>
+<input id="endYear" type="text" class="form-control year-inline" placeholder="2026" maxlength="4"/>
+</div>
+</div>
+</div>
+<div class="col-sm-4">
+<div><small class="muted">Enter only one date to search</small></div>
+<div><small class="muted">After ("From") or Before ("To")</small></div>
+</div>
+</div>
+<div class="row space-top">
+<div class="col-md-12">
+<div class="avs-help avs-divider"></div>
+</div>
+</div>
+<div class="avs_topics opg-search-only">
+<div class="row space-top mbottom-10">
+<div class="col-sm-3" style="font-weight:bold;">OPTICS &amp; PHOTONICS TOPICS</div>
+<div class="col-sm-9 input-collapse avs_topics-search">
+<a id="browsetopicsbutton" href="#" class="btn btn-default avs_topics-browse-btn purple-border">Browse All Topics</a>
+<input type="text" id="advsTopicsSelector" class="form-control avs_topics-search-field" placeholder="Search All Topics" aria-label="Search All Topics"><br/>
+</div>
+</div>
+<div class="row space-top selectedtopicsadv mbottom-10">
+<div class="col-md-2"><small class="muted">Selected topics</small></div>
+<div class="col-md-10" id="advTopicsSelectedList"></div>
+</div>
+<div class="row selectedtopicsadv mbottom-10">
+<div class="col-md-2"></div>
+<div class="col-md-10 muted">
+<input id="chkAnyTopic" name="chkAnyAllTopic" type="radio" value="any" checked="checked"/> <label for="chkAnyTopic" style="font-weight:normal;">Find articles with <strong>any</strong> selected topics</label>
+&nbsp;&nbsp;<input id="chkAllTopic" name="chkAnyAllTopic" type="radio" value="all"/> <label for="chkAllTopic" style="font-weight:normal;">Find articles with <strong>all</strong> selected topics</label>
+</div>
+</div>
+<div class="row hidden mbottom-20" id="pickTopicsBrowse">
+<div class="col-md-12 mbottom-20 ">
+<strong>Browse All Topics</strong><br>
+Click the <svg class="selection-list_arrow"><use xlink:href="#right-arrow" /></svg> to reveal subtopics. Use the checkbox to select a topic to filter your search.
+</div>
+<div id="advBrowseTopics" class="col-md-12">
+</div>
+</div>
+<div class="row space-top">
+<div class="col-md-12">
+<div class="avs-help avs-divider">
+<a class="avs-help-link" data-action='slide-toggle' data-target='#avsHint2' href="#" title="Help Link">?</a>
+<div id="avsHint2" class="avs-help-message">
+<strong>About Optics &amp; Photonics Topics</strong>
+<br>Optica Publishing Group developed the Optics and Photonics Topics to help organize its diverse content more accurately by topic area. This topic browser contains over 2400 terms and is organized in a three-level hierarchy. <a href="/thesaurus/default.cfm" target="_blank">Read more.</a>
+<br><br>Topics can be refined further in the search results. The Topic facet will reveal the high-level topics associated with the articles returned in the search results.
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row space-top opg-search-only">
+<div class="col-sm-2" style="font-weight:bold;">SPECIAL COLLECTIONS</div>
+<div class="col-sm-5 input-collapse">
+<input id="specialcollections_ee" name="specialcollections" type="checkbox" value="ee"/> <label class="avs-inline-label-left" for="specialcollections_ee">Energy and Environmental Optics Express</label><br/>
+<input id="specialcollections_el" name="specialcollections" type="checkbox" value="elnotes"/> <label class="avs-inline-label-left" for="specialcollections_el">Application Notes (formerly E&L Notes)</label><br/>
+<input id="specialcollections_mem" name="specialcollections" type="checkbox" value="memorandum" />
+<label for="specialcollections_mem" class="avs-inline-label-left">Memoranda</label><br />
+<input id="specialcollections_op" name="specialcollections" type="checkbox" value="opinion" />
+<label for="specialcollections_op" class="avs-inline-label-left">Opinions</label>
+</div>
+<div class="col-sm-5 input-collapse">
+<input id="specialcollections_rev" name="specialcollections" type="checkbox" value="review-article" />
+<label for="specialcollections_rev" class="avs-inline-label-left">Reviews</label><br />
+<input id="specialcollections_spt" name="specialcollections" type="checkbox" value="spotlight"/> <label class="avs-inline-label-left" for="specialcollections_spt">Spotlight on Optics</label><br/>
+<input id="specialcollections_tut" name="specialcollections" type="checkbox" value="tutorial"/> <label class="avs-inline-label-left" for="specialcollections_tut">Tutorials</label><br/>
+<input id="specialcollections_ret" name="specialcollections" type="checkbox" value="retrospective"/> <label class="avs-inline-label-left" for="specialcollections_tut">Retrospectives</label>
+</div>
+</div>
+<div class="row space-top opg-search-only">
+<div class="col-md-12">
+<div class="avs-help avs-divider"></div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6"><a id="clearFilters" href="#" class="btn btn-default purple-border">Clear my choices above</a></div>
+<div class="col-sm-6"><a id="cmdSearch" href="#" class="btn btn-primary pull-right"><strong class="fi-magnifying-glass"></strong>&nbsp; Search</a></div>
+</div>
+</div>
+<div id="contentSearchOnly" class="content-search-only d-none">
+<div class="row">
+<div class="col-sm-2 avs-label" style="font-weight:bold;">KEYWORDS</div>
+<div class="col-sm-8">
+<input name="" id="contentSearch" type="text" placeholder="Enter search terms here" aria-label="Enter search terms here" />
+</div>
+<div class="col-sm-2">
+<button id="submitContent" class="btn btn-primary">Search</button>
+</div>
+</div>
+</div>
+</div>
+<input type="hidden" name="origsearchstr" id="origsearchstr" value=""/>
+<input type="hidden" name="facetsearchstr" id="facetsearchstr" value=""/>
+<input type="hidden" name="facetavoidstr" id="facetavoidstr" value=""/>
+</form>
+</div>
+</div>
+<ul class="manage-user-acct nav navbar-nav d-flex flex-row">
+<li class="nav-link pt-1"><a href="#" data-bs-toggle="modal" data-bs-target="#userLogin" id="loginModal" class="p__1--md">LOGIN</a></li>
+<li class="nav-link pt-1"><a href="https://prism.optica.org" class="p__1--md">SUBMIT</a></li>
+<li class="nav-link pt-1 optica-ai-nav"><a href="/content/optica-ai" class="p__1--md">OPTICA AI</a></li>
+</ul>
+</div>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=">
+function closePopup() {
+$.get('/util/close_announcement.cfm', function() {
+$('.osap-maintenance-alert').alert('close');
+})
+}
+</script>
+</div>
+</nav>
+<div style="background-color: black;">
+<header class="masthead container">
+<div>
+<div>
+<div class="mobile-header">
+<a class="skip-nav" href="#content">Skip to content</a>
+<div class="primary-branding col-sm-4 col-xs-7">
+<a href="https://opg.optica.org" class="primary-brand"><img src="/images/Optica_logo_publishing_hz_rev_rgb.png" alt="Optica Publishing Group" /></a>
+</div>
+<div class="mobile-nav-toggle visible-xs col-xs-5">
+<button type="button" class="mobile-nav-btn navbar-toggle" data-bs-toggle="collapse" data-bs-target="#osaGlobalNav" aria-controls="osaGlobalNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<button type="button" class="mobile-search-btn navbar-toggle" data-bs-toggle="collapse" data-bs-target="#mobile-search" aria-label="start search">
+<span class="fal fa-search text-white"></span>
+</button>
+</div>
+</div>
+<div class="collapse" id="mobile-search">
+<div class="header-search col-sm-9 col-xs-12 d-block d-md-none">
+<div class="d-flex w-100">
+<input id="topSearchTextMobile" type="text" placeholder="Search" aria-label="Search" style="width:60%">
+<div class="input-group-btn d-flex">
+<div class="dropdown">
+<button class="btn btn-sm btn-dropdown dropdown-toggle btn-topheader" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+<span id="dropdownTextMobile">All Publications</span> <span class="caret"></span>
+</button>
+<ul id="dropdownMobile" class="dropdown-menu z-index--1000" aria-labelledby="dropdownMenuButton">
+<!-- Options to change the button text -->
+<li><a class="dropdown-item" href="#" data-search-type="all">All Publications</a></li>
+<li><a class="dropdown-item" href="#" data-search-type="site">Site Search</a></li>
+</ul>
+</div>
+<a id="topSearchMobile" class="btn btn-primary btn-sm"><span class="fal fa-search text-white"></span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="site-nav-container col-lg-8 col-md-12">
+<nav class="primary-site-nav collapse navbar-collapse" id="osaGlobalNav" aria-label="Osa Global Navigation">
+<ul class="nav navbar-nav navbar-main d-sm-flex flex-sm-row" id="first-nav">
+<li class="primary-site-nav__dropdown">
+<a href="/about.cfm" class="dropdown-toggle navbar-main-header navbar-aria-header" id="select_journals" role="button" aria-haspopup="true" aria-controls="journalsDropdown" tabindex="0">Journals </a>
+<div class="dropdown-menu dropdown-two-col-lg dropdown-wide " id="journalsDropdown">
+<div class="row">
+<div class="col-md-6 col-sm-12">
+<ul>
+<li><a href="/aop">Advances in Optics and Photonics</a></li>
+<li><a href="/ao">Applied Optics</a></li>
+<li><a href="/as">Applied Spectroscopy</a></li>
+<li><a href="/boe">Biomedical Optics Express</a></li>
+<li><a href="/col">Chinese Optics Letters</a></li>
+<li><a href="/copp">Current Optics and Photonics</a></li>
+<li><a href="/jlt">Journal of Lightwave Technology</a></li>
+<li><a href="/jnirs">Journal of Near Infrared Spectroscopy</a></li>
+<li><a href="/jot">Journal of Optical Technology</a></li>
+<li><a href="/jocn">Journal of Optical Communications and Networking</a></li>
+<li><a href="/josaa">Journal of the Optical Society of America A</a></li>
+<li><a href="/josab">Journal of the Optical Society of America B</a></li>
+<li><a href="/optica">Optica</a></li>
+<li><a href="/opticaq">Optica Quantum</a></li>
+</ul>
+</div>
+<div class="col-md-6 col-sm-12">
+<ul>
+<li><a href="/ome">Optical Materials Express</a></li>
+<li><a href="https://www.optica-opn.org/home/" target="_blank">Optics and Photonics News <span class="fal fa-external-link"></span></a></li>
+<li><a href="/optcon">Optics Continuum</a></li>
+<li><a href="/oe">Optics Express</a></li>
+<li><a href="/ol">Optics Letters</a></li>
+<li><a href="/prj">Photonics Research</a></li>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Legacy Journals</span></li>
+<li><a href="/jdt">Journal of Display Technology (2005-2016)</a></li>
+<li><a href="/josk">Journal of the Optical Society of Korea (1997-2016)</a></li>
+<li><a href="/jon">Journal of Optical Networking (2002-2009)</a></li>
+<li><a href="/josa">Journal of the Optical Society of America (1917-1983)</a></li>
+<li><a href="/on">Optics News (1975-1989)</a></li>
+<li><a href="/osac">OSA Continuum (2018-2021)</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="primary-site-nav__dropdown">
+<a href="/conferences.cfm" class="dropdown-toggle navbar-main-header navbar-aria-header" id="select_proceedings" role="button" aria-haspopup="true" aria-controls="conferencesDropdown" tabindex="0">Conferences </a>
+<div class="dropdown-menu dropdown-two-col-lg" id="conferencesDropdown">
+<div class="row">
+<div class="col-sm-6">
+<ul>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Find Conferences</span></li>
+<li><a href="/conferences.cfm">By Year</a></li>
+<li><a href="/conferences.cfm?findby=conference">By Name</a></li>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Featured</span></li>
+<li><a href="/conference.cfm?meetingid=5">Optical Fiber Communication (OFC)</a></li>
+<li><a href="/conference.cfm?meetingid=124">Conference on Lasers and Electro-Optics (CLEO)</a></li>
+<li><a href="/conference.cfm?meetingid=56">Frontiers in Optics (FiO)</a></li>
+</ul>
+</div>
+<div class="col-sm-6">
+<ul>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Newly Published</span></li>
+<li><a href="/conference.cfm?meetingid=327&yr=2025">British and Irish Conference on Optics and Photonics</a></li>
+<li><a href="/conference.cfm?meetingid=56&yr=2025">Frontiers in Optics</a></li>
+<li><a href="/conference.cfm?meetingid=69&yr=2025">Laser Science</a></li>
+<li><a href="/conference.cfm?meetingid=1&yr=2025">Advanced Solid State Lasers</a></li>
+<li><a href="/conference.cfm?meetingid=102&yr=2025">Applications of Lasers for Sensing and Free Space Communications</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="primary-site-nav__dropdown">
+<a href="https://opticapreprints.figshare.com/" class="dropdown-toggle navbar-main-header navbar-aria-header" id="select_preprints" role="button" aria-haspopup="true" aria-controls="preprintsDropdown" tabindex="0">Preprints </a>
+<div class="dropdown-menu dropdown-two-col-lg" id="preprintsDropdown">
+<div class="row">
+<div class="col-md-6 col-sm-12">
+<ul>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Optica Open</span></li>
+<li><a href="https://opticapreprints.figshare.com/" target="_blank">View preprints</a></li>
+<li><a href="https://opticaopen.org" target="_blank">Submit preprint</a></li>
+<li><a href="https://opticaopen.org/Home/Guidelines" target="_blank">Author instructions</a></li>
+</ul>
+</div>
+<div class="col-md-6 col-sm-12">
+<ul>
+<li class="nav-link-heading"><span class="nav-link-heading-txt"></span></li>
+<li class="nav-link-heading"><span class="nav-link-heading-txt"></span></li>
+<li><a href="https://opticaopen.org/Home/About" target="_blank">About</a></li>
+<li><a href="https://opticaopen.org/Home/FAQ" target="_blank">FAQ</a></li>
+</ul>
+</div>
+</div>
+</div>
+</li>
+<li class="primary-site-nav__dropdown">
+<a href="#global-nav" class="dropdown-toggle navbar-main-header navbar-aria-header" id="select_other_resources" data-bs-toggle="dropdown" data-bs-target="select_other_resources" role="button" aria-haspopup="true" aria-controls="resourcesDropdown" tabindex="0">Other Resources </a>
+<div class="dropdown-menu dropdown-two-col-lg" id="resourcesDropdown">
+<div class="row">
+<div class="col-sm-6">
+<ul>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Information For</span></li>
+<li><a href="/content/author/">Authors</a></li>
+<li><a href="/content/reviewer/">Reviewers</a></li>
+<li><a href="/library/">Librarians</a></li>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Products and Services</span></li>
+<li><a href="/content/info/portal/item/digitalarchive/">Digital Archive</a></li>
+<li><a href="/content/collection/page/item/isp/">Interactive Science Publishing (ISP)</a></li>
+<li><a href="https://opticapreprints.figshare.com/" target="_blank">Optica Open <span class="fal fa-external-link"></span></a></li>
+<li><a href="/info/opticsimagebank.cfm">Optics ImageBank</a></li>
+<li><a href="/thesaurus/default.cfm">Optics and Photonics Topics</a></li>
+<li><a href="/spotlight">Spotlight on Optics</a></li>	
+</ul>
+</div>
+<div class="col-sm-6">
+<ul>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Publications</span></li>
+<li><a href="/content/bookshelf/">Bookshelf</a></li>
+<li><a href="/collections/special-collections.cfm">Special Collections</a></li>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Regional Content</span></li>
+<li><a href="/content/newsItem/list/section/prj/">On The Cover: Photonics Research</a></li>
+<li><a href="/content/newsItem/list/section/col/">Spotlight: Chinese Optics Letters</a></li>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Open Access Information</span></li>
+<li><a href="/content/author/portal/item/review-open-access-policy-stat/">Open Access Statement and Policy</a>
+</li>
+<li><a href="/library/license_v2.cfm">Terms for Journal Article Reuse</a></li>
+<li class="nav-link-heading"><span class="nav-link-heading-txt">Accessibility Information</span></li>
+<li><a href="/content/library/portal/item/accessibility-statement">OPG Accessibility Statement</a>
+</li>	
+</ul>
+</div>
+</div>
+</div>
+</li>
+</ul>
+<ul class="nav navbar-nav navbar-right navbar-secondary d-sm-flex flex-sm-row" id="second-nav">
+<li class="primary-site-nav__dropdown">
+<a href="#" class="dropdown-toggle navbar-secondary-header navbar-aria-header" data-bs-toggle="dropdown" id="my_favorites" aria-controls="favoritesDropdown">My Favorites </a>
+<div class="dropdown-menu dropdown-one-col" id="favoritesDropdown">
+<ul>
+<li><a href="/user">Go to My Account</a></li>
+<li><a href="#" data-bs-toggle="modal" data-bs-target="#userLogin">Login to access favorites</a></li>
+</ul>
+</div>
+</li>
+<li class="primary-site-nav__dropdown">
+<a href="#" class="dropdown-toggle navbar-secondary-header navbar-aria-header" data-bs-toggle="dropdown" id="recent_pages" aria-controls="recentsDropdown">Recent Pages </a>
+<div class="dropdown-menu dropdown-one-col" id="recentsDropdown">
+<ul class="recent-page-list">
+</ul>
+</div>
+</li>
+</ul>
+<ul class="hidden-sm hidden-md hidden-lg manage-user-acct--mobile">
+<li class="nav-link"><a href="#" data-bs-toggle="modal" data-bs-target="#userLogin" id="loginModal"><img src="/images/icons/icon-my-account.png" alt="my account"> LOGIN <span class="muted">OR</span> CREATE ACCOUNT</a>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+</div>
+<nav class="nav-bar-siblings container small">
+<a class="secondary-smallnav-item_link" href="/ao/home.cfm">Journal Home</a>
+<a class="secondary-smallnav-item_link" href="/ao/journal/ao/about.cfm">About</a>
+<a class="secondary-smallnav-item_link" href="/ao/upcomingissue.cfm">Issues in Progress</a>
+<a class="secondary-smallnav-item_link" href="/ao/issue.cfm">Current Issue</a>
+<a class="secondary-smallnav-item_link" href="/ao/browse.cfm">All Issues</a>
+<a class="secondary-smallnav-item_link" href="/ao/upcoming.cfm">Early Posting</a>
+<a class="secondary-smallnav-item_link" href="/ao/feature.cfm">Feature Issues</a>
+</nav>
+<div role="main" class="container content d-flex flex-column" id="articleContainer" style="padding-top:1em;">
+<div class="col-md-12">
+<div class="row">
+<div class="article-parents">
+<ul class="small list-inline article-journal-name">
+<li><strong>Applied Optics</strong></li>
+<li>Vol. 30,</li>
+<li><a href="/ao/issue.cfm?volume=30&issue=15">Issue 15</a>,</li>
+<li>pp. 2013-2026</li>
+<li>(1991)</li>
+<li class="article-doi"><span class="separator-disc">&bull;</span><a href="https://doi.org/10.1364/AO.30.002013">https://doi.org/10.1364/AO.30.002013</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="article-header">
+<div class="col-md-12 col-sm-12 pl-0">
+<div class="col-md-2 col-sm-2 article-header__image p-0" style="">
+<div class="w-100 text--left">
+<div class="p-0 text--center" style="border:1px solid #ddd;">
+<img src="/images/optica_general_thumbnail.jpg" width="168" height="170" alt="Optica Article" class="img-thumbnail hidden-xs article-thumbnail_img jcover">
+</div>
+</div>
+</div>
+<div class="col-md-10 col-sm-10 pl-4 mb-1" style="">
+<h1 class="article-title" lang="en">
+Coherent lidar airborne windshear sensor: performance evaluation
+</h1>
+<p class="article-authors">
+Russell Targ, Michael J. Kavaya, R. Milton Huffaker, and Roland L. Bowles
+</p>
+<div>
+<div class="btn-group article-affiliations-dropdown dropdown hidden-xs mr-2">
+<a data-bs-toggle="dropdown" id="author-affiliations-dropdown">
+Author Information <span class="caret"></span>
+</a>
+<div id="authorAffiliations" class="article-author-affiliations dropdown-menu">
+<h5>Author Affiliations</h5>
+<p><strong>
+Russell Targ,<sup>1</sup>
+Michael J. Kavaya,<sup>3</sup>
+R. Milton Huffaker,<sup>3</sup>
+and Roland L. Bowles<sup>2</sup>
+</strong></p>
+<p><em>
+<sup>1</sup>Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA
+</em></p>
+<p><em>
+<sup>2</sup>NASA Langley Research Center, Hampton, Virginia 23665 USA
+</em></p>
+<p><em>
+<sup>3</sup>The other authors are with Coherent Technologies, Inc., 3300 Mitchell Lane, Suite 330, Boulder, Colorado 80301-2272. USA
+</em></p>
+</div>
+</div>
+<div class="btn-group hidden-xs hidden-sm">
+<a data-bs-toggle="dropdown" id="search-by-author-dropdown">
+<i class="fal fa-search p__1--sm"></i> Find other works by these authors <span class="caret"></span>
+</a>
+<ul class="dropdown-menu" id="search-by-author">
+<li><a href="search.cfm?a=R Targ">R Targ</a></li>
+<li><a href="search.cfm?a=M Kavaya">M Kavaya</a></li>
+<li><a href="search.cfm?a=R Huffaker">R Huffaker</a></li>
+<li><a href="search.cfm?a=R Bowles">R Bowles</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 pr-0">
+<div class="col-md-2 pr-0 pl-0">
+<a name="scrollUp"></a>
+<div class="access-permissions inaccessible" style="margin-left:-20px;">
+<strong>
+Not Accessible</strong>
+<p class="muted">Your library or personal account may give you access</p>
+</div>
+</div>
+<div class="col-md-10 pr-0 abstract-container">
+<div class="abstract-tools-header">
+<div class="article-tools d-lg-flex w-100">
+<ul class="tool-list-one">
+<li class="pdf-download"><a href="viewmedia.cfm?uri=ao-30-15-2013&seq=0" target="_blank" aria-label="Pdf icon"><i class="fal fa-file-pdf"></i><span class="hidden-xs"><br>Get PDF</span></a></li>
+<li><a href="mailto:?subject=Article Published in Applied Optics&body=I would like to notify you about the following article published in Applied Optics:%0ARussell Targ, Michael J. Kavaya, R. Milton Huffaker, and Roland L. Bowles, &quot;Coherent lidar airborne windshear sensor: performance evaluation,&quot; Appl. Opt. 30, 2013-2026 (1991)%0Ahttps://opg.optica.org/ao/abstract.cfm?URI=ao-30-15-2013%0A---------------------------------------------------------------------------%0AThis is sent to you as an email notification feature from Optica Publishing Group: https://opg.optica.org" aria-label="Mail icon"><i class="fal fa-envelope"></i><span class="hidden-xs"><br>Email</span></a></li>
+<li class="dropdown js-article-dropdown">
+<button
+class="dropdown-toggle js-article-dropdown-toggle border-0 bg-transparent"
+aria-label="Open sharing options"
+aria-haspopup="true"
+aria-expanded="false"
+aria-controls="share-menu"
+>
+<i class="fal fa-share-alt" aria-hidden="true"></i>
+<span class="hidden-xs"><br>Share <span class="caret" aria-hidden="true"></span></span>
+</button>
+<ul class="dropdown-menu list-unstyled" role="menu">
+<li role="none"><a role="menuitem" href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fao%2Fabstract%2Ecfm%3Furi%3Dao%2D30%2D15%2D2013" class="sharefacebook" target="_blank"><i class="fab fa-facebook-f mr-1" style="color: #ffffff;"></i>Share with Facebook</a></li>
+<li role="none"><a role="menuitem" href="https://twitter.com/intent/tweet?text=Reading this AO article %23OSA_AO https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fao%2Fabstract%2Ecfm%3Furi%3Dao%2D30%2D15%2D2013" class="sharetwitter" target="_blank"><i class="icon-x mr-1" style="font-size: 24px;font-family: Arial, sans-serif; color:#ffffff;"><strong>X</strong></i>Share on X</a></li>
+<li role="none"><a role="menuitem" href="https://www.reddit.com/submit?url=https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fao%2Fabstract%2Ecfm%3Furi%3Dao%2D30%2D15%2D2013" class="sharereddit" target="_blank"><i class="fab fa-reddit-alien mr-1" style="color: #ffffff;"></i>Post on reddit</a></li>
+<li role="none"><a role="menuitem" href="https://www.linkedin.com/cws/share?url=https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fservices%2Fopen%5Fmd%2Ecfm%3Furi%3Dao%2D30%2D15%2D2013" class="sharelinkedin" target="_blank"><i class="fab fa-linkedin mr-1" style="color: #ffffff;"></i>Share with LinkedIn</a></li>
+<li role="none"><a role="menuitem" href="http://www.mendeley.com/import/?url=https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fao%2Fabstract%2Ecfm%3Furi%3Dao%2D30%2D15%2D2013" class="sharemendeley" target="_blank"><i class="fab fa-mendeley mr-1" style="color: #ffffff;"></i>Add to Mendeley</a></li>
+<li role="none"><a role="menuitem" href="https://www.bibsonomy.org/ShowBookmarkEntry?c=b&jump=yes&url=https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fao%2Fabstract%2Ecfm%3Furi%3Dao%2D30%2D15%2D2013" class="sharebibsonomy" target="_blank"><img src="/images/bibsonomy-icon.png" alt="Add to BibSonomy" title="BibSonomy" class="share-icon">Add to BibSonomy</a></li>
+<li role="none"><a role="menuitem" href="https://www.addtoany.com/add_to/wechat?linkurl=https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fao%2Fabstract%2Ecfm%3Furi%3Dao%2D30%2D15%2D2013&linkname=ao-30-15-2013" class="sharewechat" target="_blank"><i class="fab fa-weixin mr-1" style="color: #ffffff;"></i>Share with WeChat</a></li>
+</ul>
+</li>
+<li class="get-citation dropdown js-article-dropdown">
+<button
+id="getCitation__toggle"
+class="dropdown-toggle js-article-dropdown-toggle border-0 bg-transparent"
+aria-label="Open citation options"
+aria-haspopup="true"
+aria-expanded="false"
+aria-controls="share-menu"
+>
+<i class="fal fa-quote-right" aria-hidden="true"></i>
+<span class="hidden-xs"><br>Get Citation <span class="caret" aria-hidden="true"></span></span>
+</button>
+<div id="getCitation" class="get-citation-content dropdown-menu">
+<strong>Copy Citation Text</strong>
+<div class="citation-text">
+Russell Targ, Michael J. Kavaya, R. Milton Huffaker, and Roland L. Bowles, "Coherent lidar airborne windshear sensor: performance evaluation," Appl. Opt. <b>30</b>, 2013-2026 (1991)
+</div>
+<form name="articlesForm" id="articlesForm" method="post" action="" style="display: inline">
+<input type="hidden" name="articles" value="38824">
+<input type="hidden" name="ArticleAction" value=""></form>
+<strong>Export Citation</strong>
+<ul class="list-unstyled">
+<li><a href="#" onclick="checkboxActions('export_bibtex'); return false;">BibTex</a></li>
+<li><a href="#" onclick="checkboxActions('export_endnote'); return false;">Endnote (RIS)</a></li>
+<li><a href="#" onclick="checkboxActions('export_html'); return false;">HTML</a></li>
+<li><a href="#" onclick="checkboxActions('export_txt'); return false;">Plain Text</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#" data-bs-toggle="modal" data-bs-target="#userLogin" aria-label="Set citation alert"><i class="fal fa-engine-warning"></i><span class="hidden-xs"><br>Citation alert</span></a></li>
+<li><a href="/user/favorites_add_article.cfm?articles=38824" target="_blank" aria-label="Save icon"><i class="fal fa-folder-upload"></i><span class="hidden-xs"><br>Save article</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a id="content" class="hidden"></a>
+<div class="row">
+<!-- Aux Sidebar -->
+<div class="col-sm-3 col-sm-push-9 article-secondary">
+<div class="sidebar-nav hidden-xs">
+<ul class="right-nav">
+<li class="sub-list">
+<h3 class="osap-accordion__label right-nav__label">
+<button class="btn p-0 text-start w-100 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#relatedTopics" aria-expanded="false" aria-controls="relatedTopics" id="toggle-relatedTopics">
+<strong>Related Topics</strong>
+<i class="far osap-accordion__chevron" aria-hidden="true"></i>
+</button>
+</h3>
+<div id="relatedTopics" class="collapse osap-accordion__content" role="region" aria-labelledby="toggle-relatedTopics" data-bs-parent=".right-nav">
+<div id="topicsHelp" class="get-citation dropdown">
+<em>Optics &amp; Photonics Topics</em> <div class="advanced-search-popup advanced-search-popup--article"><a id="topicsHelp__toggle" class="topicsHelp__toggle" title="Help Link">?</a></div>
+<div class="get-citation-content dropdown-menu">
+<span class="small">The topics in this list come from the <a href="/thesaurus/default.cfm" target="_blank">Optics and Photonics Topics</a> applied to this article.</span>
+</div>
+</div>
+<ul class="list-unstyled">
+<li class="pb-1"><a class="js-relatedTopicLink" href="search.cfm?t=Lasers and laser optics|Lasers|Carbon dioxide lasers">Carbon dioxide lasers</a></li>
+<li class="pb-1"><a class="js-relatedTopicLink" href="search.cfm?t=Scattering|Extinction|Extinction coefficients">Extinction coefficients</a></li>
+<li class="pb-1"><a class="js-relatedTopicLink" href="search.cfm?t=Atmospheric and oceanic optics|Remote sensing|Radar">Radar</a></li>
+<li class="pb-1"><a class="js-relatedTopicLink" href="search.cfm?t=Atmospheric and oceanic optics|Remote sensing">Remote sensing</a></li>
+<li class="pb-1"><a class="js-relatedTopicLink" href="search.cfm?t=Optical devices|Sensors|Sensor performance">Sensor performance</a></li>
+<li class="pb-1"><a class="js-relatedTopicLink" href="search.cfm?t=Lasers and laser optics|Lasers|Solid state lasers">Solid state lasers</a></li>
+</ul>
+<br>
+</div>
+</li>
+</ul>
+<ul class="right-nav">
+<li class="sub-list">
+<h3 class="osap-accordion__label right-nav__label">
+<button class="btn p-0 text-start w-100" type="button" data-bs-toggle="collapse" data-bs-target="#aboutThisArticle" aria-expanded="true" aria-controls="aboutThisArticle" id="toggle-aboutArticle">
+<strong>About this Article</strong>
+<i class="far osap-accordion__chevron" aria-hidden="true"></i>
+</button>
+</h3>
+<div id="aboutThisArticle" class="osap-accordion__content" role="region" aria-labelledby="toggle-aboutArticle" data-bs-parent=".right-nav">
+<em>History</em>
+<ul class="list-unstyled small">
+<li>Original Manuscript: March 8, 1990</li>
+<li>Published: May 20, 1991</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div id="referenceInfo" class="reference-info">
+<!-- Dynamic Reference Info -->
+</div>
+</div>
+<!-- Main Content -->
+<div class="col-sm-9 col-sm-pull-3">
+<div class="row">
+<!-- Article Navigation -->
+<div class="article-sidebar col-md-3">
+<a style="color:white" href="viewmedia.cfm?uri=ao-30-15-2013&seq=0" target="_blank" id="link-pdf"><button type="submit" class="btn btn-getpdf btn-sm" style="margin:2px 0px 1em 0px;width:100%;text-align:left;font-weight:600;">PDF Article</button></a>
+<div id="articleNav" class="article-nav sub-page-nav">
+<ul class="sidebar-nav-list" data-action="change-section" data-target="articleBody">
+<li class="sidebar-nav-i"><a href="#Abstract" onclick="scrollToAnchor('scrollUp');" class="sidebar-nav-link">Abstract</a></li>
+<li class="sidebar-nav-i"><a href="viewmedia.cfm?uri=ao-30-15-2013&seq=0&html=true" class="sidebar-nav-link">Full Article</a></li>
+</ul>
+<ul class="sidebar-nav-list navextras">
+<li class="sidebar-nav-i"><a id="figurestablink" href="#articleFigures" onclick="scrollToAnchor('scrollUp');" class="sidebar-nav-link" data-action="change-section" data-target="articleFigures">Figures (<span class="sidebar-hlight">9</span>)</a></li>
+<li class="sidebar-nav-i"><a href="#articleTables" onclick="scrollToAnchor('scrollUp');" class="sidebar-nav-link" data-action="change-section" data-target="articleTables">Tables (<span class="sidebar-hlight">4</span>)</a></li>
+<li class="sidebar-nav-i"><a href="#articleEquations" onclick="scrollToAnchor('scrollUp');" class="sidebar-nav-link" data-action="change-section" data-target="articleEquations">Equations (<span class="sidebar-hlight">29</span>)</a></li>
+<li class="sidebar-nav-i">
+<a href="#articleReferences" 
+id="articleNavRefLink" 
+onclick="scrollToAnchor('scrollUp');" 
+class="sidebar-nav-link" 
+data-action="change-section" 
+data-target="articleReferences" 
+data-article-id="38824">
+References (<span class="sidebar-hlight">32</span>)
+</a>
+</li>
+<li class="sidebar-nav-i">
+<a href="#articleCitations"
+onclick="scrollToAnchor('scrollUp');"
+id="articleNavCitationLink"
+class="sidebar-nav-link"
+data-article-id="38824"
+data-action="change-section"
+data-target="articleCitations">
+Cited By <span id="numrefs">(<span class="sidebar-hlight">72</span>)</span>
+</a>
+</li>
+<li class="sidebar-nav-i"><a href="#articleMetrics" id="articleNavMetricsLink" class="sidebar-nav-link" data-action="change-section" data-target="articleMetrics" data-article-id="38824">Metrics</a></li>
+<li class="sidebar-nav-i"><a href="#top" class="sidebar-nav__top-link">Back to Top</a></li>
+</ul>
+</div>
+</div>
+<!-- Article Body -->
+<div class="main-content col-md-9">
+<div id="articleBody" class="article-section page-section active">
+<h2 class="article-heading" id="Abstract">Abstract</h2>
+<div lang="en">
+<p><p xmlns:ali="http://www.niso.org/schemas/ali/1.0/" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">National attention has focused on the critical problem of detecting and avoiding windshear since the crash on 2 Aug. 1985 of a Lockheed L-1011 at Dallas/Fort Worth International Airport. As part of the NASA/FAA National Integrated Windshear Program, we have defined a measurable windshear hazard index that can be remotely sensed from an aircraft, to give the pilot information about the wind conditions he will experience at some later time if he continues along the present flight path. A technology analysis and end-to-end performance simulation measuring signal-to-noise ratios and resulting wind velocity errors for competing coherent laser radar (lidar) systems have been carried out. The results show that a Ho:YAG lidar at a wavelength of 2.1 <i>μ</i>m and a CO<sub>2</sub> lidar at 10.6 <i>μ</i>m can give the pilot information about the line-of-sight component of a windshear threat from his present position to a region extending 2–4 km in front of the aircraft. This constitutes a warning time of 20–40 s, even in conditions of moderately heavy precipitation. Using these results, a Coherent Lidar Airborne Shear Sensor (CLASS) that uses a <i>Q</i>-switched CO<sub>2</sub> laser at 10.6 <i>μ</i>m is being designed and developed for flight evaluation in the fall of 1991.</p></p>
+</div>
+<p>© 1991 Optical Society of America</p>
+<a href="viewmedia.cfm?uri=ao-30-15-2013&seq=0&html=true" id="link-full">Full Article</a>&nbsp; |&nbsp;
+<a href="viewmedia.cfm?uri=ao-30-15-2013&seq=0" target="_blank" id="link-pdf">PDF Article</a>
+<hr style="margin-top:5em;">
+<strong>More Like This</strong>
+<div class="content-item media-twbs">
+<div class="media-twbs-left">
+<img class="media-object" src="/getThumbnail.cfm?uri=ao-35-36-7117&o=y" width="50" height="50" aria-hidden="true" role="presentation">
+</div>
+<div class="media-twbs-body">
+<a class="js-relatedArticleLink" href="/ao/abstract.cfm?uri=ao-35-36-7117">Coherent lidar airborne wind sensor II: flight-test results at 2 and
+10 μm</a>
+<p>Russell Targ, Bruce C. Steakley, James G. Hawley, Lawrence L. Ames, Paul Forney, David Swanson, Richard Stone, Robert G. Otto, Vassilis Zarifis, Philip Brockman, Raymond S. Calloway, Sarah Harrell Klein, and Paul A. Robinson<br>
+<span class="muted">Appl. Opt. <strong>35</strong>(36) 7117-7127 (1996)</span></p>
+</div>
+</div>
+<div class="content-item media-twbs">
+<div class="media-twbs-left">
+<img class="media-object" src="/getThumbnail.cfm?uri=oe-28-25-37406&o=y" width="50" height="50" aria-hidden="true" role="presentation">
+</div>
+<div class="media-twbs-body">
+<a class="js-relatedArticleLink" href="/oe/abstract.cfm?uri=oe-28-25-37406">Identifying cloud, precipitation, windshear, and turbulence by deep analysis of the power spectrum of coherent Doppler wind lidar</a>
+<p>Jinlong Yuan, Haiyun Xia, Tianwen Wei, Lu Wang, Bin Yue, and Yunbin Wu<br>
+<span class="muted">Opt. Express <strong>28</strong>(25) 37406-37418 (2020)</span></p>
+</div>
+</div>
+<div class="content-item media-twbs">
+<div class="media-twbs-left">
+<img class="media-object" src="/getThumbnail.cfm?uri=ao-25-15-2546&o=y" width="50" height="50" aria-hidden="true" role="presentation">
+</div>
+<div class="media-twbs-body">
+<a class="js-relatedArticleLink" href="/ao/abstract.cfm?uri=ao-25-15-2546">Doppler lidar atmospheric wind sensors: a comparative performance evaluation for global measurement applications from earth orbit</a>
+<p>Robert T. Menzies<br>
+<span class="muted">Appl. Opt. <strong>25</strong>(15) 2546-2553 (1986)</span></p>
+</div>
+</div>
+<div class="content-item media-twbs-body relatedmorelink" style="text-align:center">
+<a href"#" onclick="$('.relatedmore').show(); $('.relatedmorelink').hide(); return false;">View More...</a>
+</div>
+<div class="relatedmore" style="display:none">
+<div class="content-item media-twbs">
+<div class="media-twbs-left">
+<img class="media-object" src="/getThumbnail.cfm?uri=ao-32-24-4557&o=y" width="50" height="50" aria-hidden="true" role="presentation">
+</div>
+<div class="media-twbs-body">
+<a class="js-relatedArticleLink" href="/ao/abstract.cfm?uri=ao-32-24-4557">Coherent launch-site atmospheric wind sounder: theory and experiment</a>
+<p>James G. Hawley, Russell Targ, Sammy W. Henderson, Charley P. Hale, Michael J. Kavaya, and Daniel Moerder<br>
+<span class="muted">Appl. Opt. <strong>32</strong>(24) 4557-4568 (1993)</span></p>
+</div>
+</div>
+<div class="content-item media-twbs">
+<div class="media-twbs-left">
+<img class="media-object" src="/getThumbnail.cfm?uri=oe-2-2-40&o=y" width="50" height="50" aria-hidden="true" role="presentation">
+</div>
+<div class="media-twbs-body">
+<a class="js-relatedArticleLink" href="/oe/abstract.cfm?uri=oe-2-2-40">Remote sensing of multi-level wind fields with high-energy airborne scanning coherent Doppler lidar</a>
+<p>Jeffry Rothermel, Lisa D. Olivier, Robert M. Banta, R. Michael Hardesty, James N. Howell, Dean R. Cutten, Steven C. Johnson, Robert T. Menzies, and David M. Tratt<br>
+<span class="muted">Opt. Express <strong>2</strong>(2) 40-50 (1998)</span></p>
+</div>
+</div>
+</div>
+<div style="width:100%; padding: 40px 0px 0px 0px;">
+<a href="abstract.cfm?uri=ao-30-15-2005" class="ft-article-prev"><i class="fal fa-caret-left"></i> Previous Article</a>
+<a href="abstract.cfm?uri=ao-30-15-2027" class="ft-article-next">Next Article <i class="fal fa-caret-right"></i></a>
+</div>
+</div>
+<div id="articleReferences" class="article-section page-section small">
+<div id="refsList"></div>
+</div>
+<div id="articleCitations" class="article-section page-section small">
+<h3 class="article-heading">Cited By</h3>
+<p>You do not have subscription access to this journal. Cited by links are available to subscribers only. You may subscribe either as an Optica member, or as an authorized user of your institution.
+<p>Contact your librarian or system administrator
+<br>or<br>
+<a href="#" data-bs-toggle="modal" data-bs-target="#userLogin">Login to access Optica Member Subscription</a>
+</p>
+</div>
+<div id="articleFigures" class="article-section page-section media-section ">
+<h3 class="article-heading">Figures (9)</h3>
+<p>You do not have subscription access to this journal. Figure files are available to subscribers only. You may subscribe either as an Optica member, or as an authorized user of your institution.
+<p>Contact your librarian or system administrator
+<br>or<br>
+<a href="#" data-bs-toggle="modal" data-bs-target="#userLogin">Login to access Optica Member Subscription</a>
+</p>
+</div>
+<div id="articleTables" class="article-section page-section small">
+<h3 class="article-heading">Tables (4)</h3>
+<p>You do not have subscription access to this journal. Article tables are available to subscribers only. You may subscribe either as an Optica member, or as an authorized user of your institution.
+<p>Contact your librarian or system administrator
+<br>or<br>
+<a href="#" data-bs-toggle="modal" data-bs-target="#userLogin">Login to access Optica Member Subscription</a>
+</p>
+</div>
+<div id="articleEquations" class="article-section page-section small">
+<h3 class="article-heading">Equations (29)</h3>
+<p>You do not have subscription access to this journal. Equations are available to subscribers only. You may subscribe either as an Optica member, or as an authorized user of your institution.
+<p>Contact your librarian or system administrator
+<br>or<br>
+<a href="#" data-bs-toggle="modal" data-bs-target="#userLogin">Login to access Optica Member Subscription</a>
+</p>
+</div>
+<div id="articleMetrics" class="article-section page-section small">
+<div id="metricsData"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="hidden-sm hidden-md hidden-lg secondary-navigation--footer">
+<div style="padding: 5px 0px 0px 0px;">
+<div class="journal-nav-item hidden-md hidden-lg hidden-sm">
+<div class="mobile-journal-header p-0">
+<a href="/ao/home.cfm"><h1>Applied Optics</h1>
+<p class="primary-editors">Peter Andersen, Editor-in-Chief</p></a>
+</div>
+</div>
+<div class="journal-nav-item hidden-xs ">
+<a class="secondary-nav-item_link" href="/ao/home.cfm" >Journal Home</a>
+</div>
+<div class="journal-nav-item ">
+<a class="secondary-nav-item_link" href="/content/journal/about/item/ao/" >About</a>
+</div>
+<div class="journal-nav-item ">
+<a class="secondary-nav-item_link" href="/ao/journal/ao/ao-app-notes.cfm" >Application Notes</a>
+</div>
+<div class="journal-nav-item ">
+<a class="secondary-nav-item_link" href="/ao/upcomingissue.cfm" >Issues in Progress</a>
+</div>
+<div class="journal-nav-item ">
+<a class="secondary-nav-item_link" href="/ao/issue.cfm" >Current Issue</a>
+</div>
+<div class="journal-nav-item ">
+<a class="secondary-nav-item_link" href="/ao/browse.cfm" >All Issues</a>
+</div>
+<div class="journal-nav-item ">
+<a class="secondary-nav-item_link" href="/ao/upcoming.cfm" >Early Posting</a>
+</div>
+<div class="journal-nav-item ">
+<a class="secondary-nav-item_link" href="/ao/feature.cfm" >Feature Issues</a>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade full" id="tablet1" tabindex="-1" role="dialog" aria-labelledby="tablet1Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="tablet1Label">Table I</h4>
+</div>
+<div class="modal-body">
+<h4>Quantitative Technical Requirements</h4>
+<div class="table-responsive"><?xml version="1.0" encoding="UTF-8"?><table CLASS="table" frame="hsides" rules="none"><tbody><tr><td align="left" colspan="1" rowspan="1" valign="top">Minimum sensing range</td><td align="left" colspan="1" rowspan="1" valign="top">2 to 4 km</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Advance warning time</td><td align="left" colspan="1" rowspan="1" valign="top">20 to 40 s</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Range resolution</td><td align="left" colspan="1" rowspan="1" valign="top">0.3 km</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Velocity accuracy</td><td align="left" colspan="1" rowspan="1" valign="top">better than 1 m/s</td></tr></tbody></table></div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade full" id="tablet2" tabindex="-1" role="dialog" aria-labelledby="tablet2Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="tablet2Label">Table II</h4>
+</div>
+<div class="modal-body">
+<h4>Pulsed Lidar Computer Simulation Input Parameters</h4>
+<div class="table-responsive"><?xml version="1.0" encoding="UTF-8"?><table CLASS="table" frame="hsides" rules="none"><tbody><tr><td align="left" colspan="1" rowspan="1" valign="top">Coherent Lidar System:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Laser wavelength, λ</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Transmitted pulse energy, E</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Transmitted pulse duration, τ</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Focal range, F</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Beam diameter (e<sup>−2</sup> intensity), D</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Optical/detection efficiency, η</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Lidar Platform:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Lidar (aircraft) altitude</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Elevation pointing angle, θ</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Azimuth pointing angle,ϕ,</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Distance to microburst center</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Atmosphere Model:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Microburst model (radial wind, vertical wind, temperature, pressure, humidity, rain)</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Linear extinction coefficient vs height, α (z)</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Aerosol backscatter coefficient vs height, β(z)</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Refractive index structure constant vs height, 
+<inline-formula>
+<math display="inline" id="m42" overflow="scroll">
+<mrow>
+<msubsup>
+<mrow>
+<mtext>C</mtext>
+</mrow>
+<mtext>n</mtext>
+<mn>2</mn>
+</msubsup>
+<mo stretchy="false">(</mo>
+<mtext>z</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+</math>
+</inline-formula></td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Signal Processing:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Desired range gate separation of velocity measurements, ΔR</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Laser pulses averaged per direction, NSHOT</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Unidirectional maximum design radial wind velocity, V<sub>MAX</sub></td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Number of samples, M/shot/range gate</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Velocity error expression, σ<sub>ν</sub>(R)</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Hazard Index:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Aircraft velocity, V<sub>a</sub></td></tr></tbody></table></div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade full" id="tablet3" tabindex="-1" role="dialog" aria-labelledby="tablet3Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="tablet3Label">Table III</h4>
+</div>
+<div class="modal-body">
+<h4>Monte Carlo Coherent Lidar Windshear Computer Simulation</h4>
+<div class="table-responsive"><?xml version="1.0" encoding="UTF-8"?><table CLASS="table" frame="hsides" rules="none"><tbody><tr><td align="left" colspan="1" rowspan="1" valign="top">
+<list list-type="order"><list-item><p>Read input parameters</p></list-item><list-item><p>Loop through azimuth angles, then shots, and then range gates</p></list-item><list-item><p>Calculate total extinction, total backscatter coefficient, and atmospheric refractive turbulence parameter, S<sub>0</sub></p></list-item><list-item><p>Calculate wideband SNR, SNR<sub>W</sub>(R), for CRLB velocity error expression</p></list-item><list-item><p>Interpolate microburst true radial velocity, V<sub>T</sub>(R)</p></list-item><list-item><p>Convolve V<sub>T</sub>(R) with untruncated Gaussian laser pulse to obtain first moment 
+<inline-formula>
+<math display="inline" id="m43" overflow="scroll">
+<mrow>
+<mover accent="true">
+<mrow>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>r</mtext>
+</msub>
+<mo stretchy="false">(</mo>
+<mtext>R</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo>¯</mo>
+</mover>
+</mrow>
+</math>
+</inline-formula></p></list-item><list-item><p>Convolve 
+<inline-formula>
+<math display="inline" id="m44" overflow="scroll">
+<mrow>
+<msubsup>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>T</mtext>
+<mn>2</mn>
+</msubsup>
+<mo stretchy="false">(</mo>
+<mtext>R</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+</math>
+</inline-formula> with Gaussian pulse to obtain second moment, 
+<inline-formula>
+<math display="inline" id="m45" overflow="scroll">
+<mrow>
+<mover accent="true">
+<mrow>
+<msubsup>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>r</mtext>
+<mtext>2</mtext>
+</msubsup>
+<mo stretchy="false">(</mo>
+<mtext>R</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo>¯</mo>
+</mover>
+</mrow>
+</math>
+</inline-formula></p></list-item><list-item><p>Calculate IF frequency width, W<sub>f</sub>(R), from the first and second moments and from the pulse duration <em>τ</em></p></list-item><list-item><p>Calculate narrowband SNR, SNR<sub>N</sub>(R), for comparing matched filter performance</p></list-item><list-item><p>Calculate standard deviation of velocity error (2 × CRLB), <em>σ</em><sub>V</sub></p></list-item><list-item><p>Discard velocity estimate if <em>σ</em><sub>V</sub> &gt; V<sub>MAX</sub></p></list-item><list-item><p>Loop through independent velocity estimates if NEST &gt; 1</p></list-item><list-item><p>Generate Gaussian R.V. velocity error, V<sub>Ei</sub></p></list-item><list-item><p>Calculate measured velocity 
+<inline-formula>
+<math display="inline" id="m46" overflow="scroll">
+<mrow>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mrow>
+<mtext>Mi</mtext>
+</mrow>
+</msub>
+<mo>=</mo>
+<mover accent="true">
+<mrow>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>r</mtext>
+</msub>
+<mo stretchy="false">(</mo>
+<mtext>R</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>+</mo>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mrow>
+<mtext>Ei</mtext>
+</mrow>
+</msub>
+</mrow>
+</math>
+</inline-formula></p></list-item><list-item><p>End independent estimate loop</p></list-item><list-item><p>Use median V<sub>Mi</sub> and paired SNR<sub>Ni</sub>, for V<sub>M</sub>, SNR<sub>N</sub></p></list-item><list-item><p>Calculate velocity error, V<sub>E</sub> = V<sub>M</sub> − V<sub>T</sub></p></list-item><list-item><p>End range gate and then shot loops</p></list-item><list-item><p>Calculate 
+<inline-formula>
+<math display="inline" id="m47" overflow="scroll">
+<mrow>
+<mover accent="true">
+<mrow>
+<msub>
+<mrow>
+<mrow>
+<mtext>SNR</mtext>
+</mrow>
+</mrow>
+<mtext>N</mtext>
+</msub>
+</mrow>
+<mo>¯</mo>
+</mover>
+</mrow>
+</math>
+</inline-formula> and 
+<inline-formula>
+<math display="inline" id="m48" overflow="scroll">
+<mrow>
+<mover accent="true">
+<mrow>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>M</mtext>
+</msub>
+</mrow>
+<mo>¯</mo>
+</mover>
+</mrow>
+</math>
+</inline-formula></p></list-item><list-item><p>End azimuth angle loop</p></list-item></list>
+</td></tr></tbody></table></div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade full" id="tablet4" tabindex="-1" role="dialog" aria-labelledby="tablet4Label" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="tablet4Label">Table IV</h4>
+</div>
+<div class="modal-body">
+<h4>Base Case Parameters</h4>
+<div class="table-responsive"><?xml version="1.0" encoding="UTF-8"?><table CLASS="table" frame="hsides" rules="cols"><thead><tr><th align="center" colspan="1" rowspan="1"/><th align="center" colspan="2" rowspan="1" valign="bottom">Lidar System</th></tr><tr><th align="center" colspan="1" rowspan="1"/><th align="left" colspan="2" rowspan="1" valign="bottom">
+<hr/>
+</th></tr><tr><th align="center" colspan="1" rowspan="1">Parameters</th><th align="center" colspan="1" rowspan="1">CO<sub>2</sub></th><th align="center" colspan="1" rowspan="1">Ho:YAG</th></tr><tr><th align="left" colspan="3" rowspan="1" valign="bottom">
+<hr/>
+</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1" valign="top">Laser Wavelength (μm)</td><td align="center" colspan="1" rowspan="1" valign="top">10.591</td><td align="center" colspan="1" rowspan="1" valign="top">2.091282</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">MLS Atmos. Attenuation (dB/km)</td><td align="center" colspan="1" rowspan="1" valign="top">1.1</td><td align="center" colspan="1" rowspan="1" valign="top">0.16</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Aerosol Backscatter Coeff. at 500 m [m<sup>−1</sup> · sr<sup>−1</sup>]</td><td align="center" colspan="1" rowspan="1" valign="top">5.1 × 10<sup>8</sup></td><td align="center" colspan="1" rowspan="1" valign="top">1.3 × 10<sup>−6</sup></td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Optical/Detection Efficiency</td><td align="center" colspan="1" rowspan="1" valign="top">0.1</td><td align="center" colspan="1" rowspan="1" valign="top">0.1</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Pulse Energy (mJ)</td><td align="center" colspan="1" rowspan="1" valign="top">5</td><td align="center" colspan="1" rowspan="1" valign="top">5</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Pulse Duration (μs)</td><td align="center" colspan="1" rowspan="1" valign="top">1.5</td><td align="center" colspan="1" rowspan="1" valign="top">0.3</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Narrow Bandwidth (MHz)</td><td align="center" colspan="1" rowspan="1" valign="top">~0.67</td><td align="center" colspan="1" rowspan="1" valign="top">~3.3</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Pulses Averaged Per Direction</td><td align="center" colspan="1" rowspan="1" valign="top">10</td><td align="center" colspan="1" rowspan="1" valign="top">10</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">e<sup>−2</sup> Intensity Beam Diameter (cm)</td><td align="center" colspan="1" rowspan="1" valign="top">15</td><td align="center" colspan="1" rowspan="1" valign="top">15</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Focal Range (km)</td><td align="center" colspan="1" rowspan="1" valign="top">3</td><td align="center" colspan="1" rowspan="1" valign="top">3</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Aircraft Velocity (m/s)</td><td align="center" colspan="1" rowspan="1" valign="top">100</td><td align="center" colspan="1" rowspan="1" valign="top">100</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Aircraft (Lidar) Altitude (m)</td><td align="center" colspan="1" rowspan="1" valign="top">500</td><td align="center" colspan="1" rowspan="1" valign="top">500</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Lidar Elevation Angle (deg)</td><td align="center" colspan="1" rowspan="1" valign="top">−3</td><td align="center" colspan="1" rowspan="1" valign="top">−3</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Distance to Microburst Center (km)</td><td align="center" colspan="1" rowspan="1" valign="top">4</td><td align="center" colspan="1" rowspan="1" valign="top">4</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Maximum Wind Velocity (mis)</td><td align="center" colspan="1" rowspan="1" valign="top">±25</td><td align="center" colspan="1" rowspan="1" valign="top">±25</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Wide Bandwidth (MHz)</td><td align="center" colspan="1" rowspan="1" valign="top">10.1</td><td align="center" colspan="1" rowspan="1" valign="top">51.2</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Number of Samples</td><td align="center" colspan="1" rowspan="1" valign="top">13</td><td align="center" colspan="1" rowspan="1" valign="top">30</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Range Resolution (m)</td><td align="center" colspan="1" rowspan="1" valign="top">300</td><td align="center" colspan="1" rowspan="1" valign="top">300</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Number of Indep. Estimates</td><td align="center" colspan="1" rowspan="1" valign="top">1</td><td align="center" colspan="1" rowspan="1" valign="top">3</td></tr></tbody></table></div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade full" id="allTablesModal" tabindex="-1" role="dialog" aria-labelledby="allTablesLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="allTablesLabel">Tables (4)</h4>
+</div>
+<div class="modal-body">
+<h4>Table I</h4>
+<p>Quantitative Technical Requirements</p>
+<div class="table-responsive"><?xml version="1.0" encoding="UTF-8"?><table CLASS="table" frame="hsides" rules="none"><tbody><tr><td align="left" colspan="1" rowspan="1" valign="top">Minimum sensing range</td><td align="left" colspan="1" rowspan="1" valign="top">2 to 4 km</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Advance warning time</td><td align="left" colspan="1" rowspan="1" valign="top">20 to 40 s</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Range resolution</td><td align="left" colspan="1" rowspan="1" valign="top">0.3 km</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Velocity accuracy</td><td align="left" colspan="1" rowspan="1" valign="top">better than 1 m/s</td></tr></tbody></table></div>
+<h4>Table II</h4>
+<p>Pulsed Lidar Computer Simulation Input Parameters</p>
+<div class="table-responsive"><?xml version="1.0" encoding="UTF-8"?><table CLASS="table" frame="hsides" rules="none"><tbody><tr><td align="left" colspan="1" rowspan="1" valign="top">Coherent Lidar System:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Laser wavelength, λ</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Transmitted pulse energy, E</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Transmitted pulse duration, τ</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Focal range, F</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Beam diameter (e<sup>−2</sup> intensity), D</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Optical/detection efficiency, η</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Lidar Platform:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Lidar (aircraft) altitude</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Elevation pointing angle, θ</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Azimuth pointing angle,ϕ,</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Distance to microburst center</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Atmosphere Model:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Microburst model (radial wind, vertical wind, temperature, pressure, humidity, rain)</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Linear extinction coefficient vs height, α (z)</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Aerosol backscatter coefficient vs height, β(z)</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Refractive index structure constant vs height, 
+<inline-formula>
+<math display="inline" id="m42" overflow="scroll">
+<mrow>
+<msubsup>
+<mrow>
+<mtext>C</mtext>
+</mrow>
+<mtext>n</mtext>
+<mn>2</mn>
+</msubsup>
+<mo stretchy="false">(</mo>
+<mtext>z</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+</math>
+</inline-formula></td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Signal Processing:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Desired range gate separation of velocity measurements, ΔR</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Laser pulses averaged per direction, NSHOT</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Unidirectional maximum design radial wind velocity, V<sub>MAX</sub></td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Number of samples, M/shot/range gate</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Velocity error expression, σ<sub>ν</sub>(R)</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Hazard Index:</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top"> Aircraft velocity, V<sub>a</sub></td></tr></tbody></table></div>
+<h4>Table III</h4>
+<p>Monte Carlo Coherent Lidar Windshear Computer Simulation</p>
+<div class="table-responsive"><?xml version="1.0" encoding="UTF-8"?><table CLASS="table" frame="hsides" rules="none"><tbody><tr><td align="left" colspan="1" rowspan="1" valign="top">
+<list list-type="order"><list-item><p>Read input parameters</p></list-item><list-item><p>Loop through azimuth angles, then shots, and then range gates</p></list-item><list-item><p>Calculate total extinction, total backscatter coefficient, and atmospheric refractive turbulence parameter, S<sub>0</sub></p></list-item><list-item><p>Calculate wideband SNR, SNR<sub>W</sub>(R), for CRLB velocity error expression</p></list-item><list-item><p>Interpolate microburst true radial velocity, V<sub>T</sub>(R)</p></list-item><list-item><p>Convolve V<sub>T</sub>(R) with untruncated Gaussian laser pulse to obtain first moment 
+<inline-formula>
+<math display="inline" id="m43" overflow="scroll">
+<mrow>
+<mover accent="true">
+<mrow>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>r</mtext>
+</msub>
+<mo stretchy="false">(</mo>
+<mtext>R</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo>¯</mo>
+</mover>
+</mrow>
+</math>
+</inline-formula></p></list-item><list-item><p>Convolve 
+<inline-formula>
+<math display="inline" id="m44" overflow="scroll">
+<mrow>
+<msubsup>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>T</mtext>
+<mn>2</mn>
+</msubsup>
+<mo stretchy="false">(</mo>
+<mtext>R</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+</math>
+</inline-formula> with Gaussian pulse to obtain second moment, 
+<inline-formula>
+<math display="inline" id="m45" overflow="scroll">
+<mrow>
+<mover accent="true">
+<mrow>
+<msubsup>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>r</mtext>
+<mtext>2</mtext>
+</msubsup>
+<mo stretchy="false">(</mo>
+<mtext>R</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo>¯</mo>
+</mover>
+</mrow>
+</math>
+</inline-formula></p></list-item><list-item><p>Calculate IF frequency width, W<sub>f</sub>(R), from the first and second moments and from the pulse duration <em>τ</em></p></list-item><list-item><p>Calculate narrowband SNR, SNR<sub>N</sub>(R), for comparing matched filter performance</p></list-item><list-item><p>Calculate standard deviation of velocity error (2 × CRLB), <em>σ</em><sub>V</sub></p></list-item><list-item><p>Discard velocity estimate if <em>σ</em><sub>V</sub> &gt; V<sub>MAX</sub></p></list-item><list-item><p>Loop through independent velocity estimates if NEST &gt; 1</p></list-item><list-item><p>Generate Gaussian R.V. velocity error, V<sub>Ei</sub></p></list-item><list-item><p>Calculate measured velocity 
+<inline-formula>
+<math display="inline" id="m46" overflow="scroll">
+<mrow>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mrow>
+<mtext>Mi</mtext>
+</mrow>
+</msub>
+<mo>=</mo>
+<mover accent="true">
+<mrow>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>r</mtext>
+</msub>
+<mo stretchy="false">(</mo>
+<mtext>R</mtext>
+<mo stretchy="false">)</mo>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>+</mo>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mrow>
+<mtext>Ei</mtext>
+</mrow>
+</msub>
+</mrow>
+</math>
+</inline-formula></p></list-item><list-item><p>End independent estimate loop</p></list-item><list-item><p>Use median V<sub>Mi</sub> and paired SNR<sub>Ni</sub>, for V<sub>M</sub>, SNR<sub>N</sub></p></list-item><list-item><p>Calculate velocity error, V<sub>E</sub> = V<sub>M</sub> − V<sub>T</sub></p></list-item><list-item><p>End range gate and then shot loops</p></list-item><list-item><p>Calculate 
+<inline-formula>
+<math display="inline" id="m47" overflow="scroll">
+<mrow>
+<mover accent="true">
+<mrow>
+<msub>
+<mrow>
+<mrow>
+<mtext>SNR</mtext>
+</mrow>
+</mrow>
+<mtext>N</mtext>
+</msub>
+</mrow>
+<mo>¯</mo>
+</mover>
+</mrow>
+</math>
+</inline-formula> and 
+<inline-formula>
+<math display="inline" id="m48" overflow="scroll">
+<mrow>
+<mover accent="true">
+<mrow>
+<msub>
+<mrow>
+<mtext>V</mtext>
+</mrow>
+<mtext>M</mtext>
+</msub>
+</mrow>
+<mo>¯</mo>
+</mover>
+</mrow>
+</math>
+</inline-formula></p></list-item><list-item><p>End azimuth angle loop</p></list-item></list>
+</td></tr></tbody></table></div>
+<h4>Table IV</h4>
+<p>Base Case Parameters</p>
+<div class="table-responsive"><?xml version="1.0" encoding="UTF-8"?><table CLASS="table" frame="hsides" rules="cols"><thead><tr><th align="center" colspan="1" rowspan="1"/><th align="center" colspan="2" rowspan="1" valign="bottom">Lidar System</th></tr><tr><th align="center" colspan="1" rowspan="1"/><th align="left" colspan="2" rowspan="1" valign="bottom">
+<hr/>
+</th></tr><tr><th align="center" colspan="1" rowspan="1">Parameters</th><th align="center" colspan="1" rowspan="1">CO<sub>2</sub></th><th align="center" colspan="1" rowspan="1">Ho:YAG</th></tr><tr><th align="left" colspan="3" rowspan="1" valign="bottom">
+<hr/>
+</th></tr></thead><tbody><tr><td align="left" colspan="1" rowspan="1" valign="top">Laser Wavelength (μm)</td><td align="center" colspan="1" rowspan="1" valign="top">10.591</td><td align="center" colspan="1" rowspan="1" valign="top">2.091282</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">MLS Atmos. Attenuation (dB/km)</td><td align="center" colspan="1" rowspan="1" valign="top">1.1</td><td align="center" colspan="1" rowspan="1" valign="top">0.16</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Aerosol Backscatter Coeff. at 500 m [m<sup>−1</sup> · sr<sup>−1</sup>]</td><td align="center" colspan="1" rowspan="1" valign="top">5.1 × 10<sup>8</sup></td><td align="center" colspan="1" rowspan="1" valign="top">1.3 × 10<sup>−6</sup></td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Optical/Detection Efficiency</td><td align="center" colspan="1" rowspan="1" valign="top">0.1</td><td align="center" colspan="1" rowspan="1" valign="top">0.1</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Pulse Energy (mJ)</td><td align="center" colspan="1" rowspan="1" valign="top">5</td><td align="center" colspan="1" rowspan="1" valign="top">5</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Pulse Duration (μs)</td><td align="center" colspan="1" rowspan="1" valign="top">1.5</td><td align="center" colspan="1" rowspan="1" valign="top">0.3</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Narrow Bandwidth (MHz)</td><td align="center" colspan="1" rowspan="1" valign="top">~0.67</td><td align="center" colspan="1" rowspan="1" valign="top">~3.3</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Pulses Averaged Per Direction</td><td align="center" colspan="1" rowspan="1" valign="top">10</td><td align="center" colspan="1" rowspan="1" valign="top">10</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">e<sup>−2</sup> Intensity Beam Diameter (cm)</td><td align="center" colspan="1" rowspan="1" valign="top">15</td><td align="center" colspan="1" rowspan="1" valign="top">15</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Focal Range (km)</td><td align="center" colspan="1" rowspan="1" valign="top">3</td><td align="center" colspan="1" rowspan="1" valign="top">3</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Aircraft Velocity (m/s)</td><td align="center" colspan="1" rowspan="1" valign="top">100</td><td align="center" colspan="1" rowspan="1" valign="top">100</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Aircraft (Lidar) Altitude (m)</td><td align="center" colspan="1" rowspan="1" valign="top">500</td><td align="center" colspan="1" rowspan="1" valign="top">500</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Lidar Elevation Angle (deg)</td><td align="center" colspan="1" rowspan="1" valign="top">−3</td><td align="center" colspan="1" rowspan="1" valign="top">−3</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Distance to Microburst Center (km)</td><td align="center" colspan="1" rowspan="1" valign="top">4</td><td align="center" colspan="1" rowspan="1" valign="top">4</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Maximum Wind Velocity (mis)</td><td align="center" colspan="1" rowspan="1" valign="top">±25</td><td align="center" colspan="1" rowspan="1" valign="top">±25</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Wide Bandwidth (MHz)</td><td align="center" colspan="1" rowspan="1" valign="top">10.1</td><td align="center" colspan="1" rowspan="1" valign="top">51.2</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Number of Samples</td><td align="center" colspan="1" rowspan="1" valign="top">13</td><td align="center" colspan="1" rowspan="1" valign="top">30</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Range Resolution (m)</td><td align="center" colspan="1" rowspan="1" valign="top">300</td><td align="center" colspan="1" rowspan="1" valign="top">300</td></tr><tr><td align="left" colspan="1" rowspan="1" valign="top">Number of Indep. Estimates</td><td align="center" colspan="1" rowspan="1" valign="top">1</td><td align="center" colspan="1" rowspan="1" valign="top">3</td></tr></tbody></table></div>
+</div>
+<div class="modal-footer">
+<button type="button" class="btn btn-default" data-bs-dismiss="modal">Close</button>
+</div>
+</div>
+</div>
+</div>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/Javascript">
+function alertconfirmed() {
+// Send ajax to confirm
+document.getElementById('confirmAlertButton').disabled = 'disabled';
+$.ajax({
+cache: false,
+type: "GET",
+url: "set_citation_alert.cfm?uri=ao-30-15-2013&confirmalert=true"
+}).done(function( ajxretmsg ) {
+if (ajxretmsg == "1") {
+document.getElementById('alertConfirmArea').innerHTML = '<strong>Your alert has been set!</strong><br><br><input type="button" name="closeEmail" data-bs-dismiss="modal" value="Close">';
+} else {
+document.getElementById('alertConfirmArea').innerHTML = 'There was an error setting your alert. Please try again later.<br><br><input type="button" name="closeEmail" data-bs-dismiss="modal" value="Close">';
+}
+});
+}
+</script>
+<div class="modal fade" id="setCitationModal" tabindex="-1" role="dialog" aria-labelledby="setCitationLabel" aria-hidden="true">
+<div class="modal-dialog login-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+<h4 class="modal-title" id="setCitationLabel">Confirm Citation Alert</h4>
+</div>
+<div class="modal-body">
+Please <a data-bs-toggle="modal" data-bs-target="#userLogin">login</a> to set citation alerts.
+</div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="mathJaxHelp" tabindex="-1" role="dialog" aria-labelledby="mathJaxHelp" aria-hidden="true">
+<div class="modal-dialog login-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-bs-dismiss="modal" aria-hidden="true">&times;</button>
+MathJax Help
+</div>
+<div class="modal-body">
+Equations displayed with <a href="http://www.mathjax.org" target="_blank">MathJax</a>. Right click equation to reveal menu options.
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div>
+<div id="formErrors" class="modal fade" role="dialog">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<button class="close" data-dismiss="modal" aria-label="close">
+<span aria-hidden="true">&times;</span>
+</button>
+<h4 class="modal-title">Field Error</h4>
+</div>
+<div class="modal-body">
+<p id="formErrorsText"></p>
+</div>
+<div class="modal-footer">
+<button class="btn btn-primary" data-dismiss="modal">Ok</button>
+</div>
+</div>
+</div>
+</div>
+<div id="avsModal" class="avs-modal">
+<div id="avsModalContent" class="avs-modal-content">
+<strong>Select <span id="titleFiltersPopup"></span> as filters</strong>
+<hr>
+<div class="row">
+<div class="col-md-8">
+<div class="input-collapse">
+<input id="input-popup-selectize" type="text" class="form-control selectized" placeholder="(type names or look up list)" tabindex="-1" aria-label="type names or look up list"/>
+<div class="selectize-control form-control multi"></div>
+</div>
+</div>
+</div>
+<hr>
+<ul id="checkBoxList"></ul>
+<hr>
+<span id="avsModalSubmit" class="btn btn-primary">Select Topics</span> <span id="avsModalClose" class="cancel"> Cancel</span>
+</div>
+</div>
+<footer><div class="container ft-links"><a id="global-nav"></a>
+<nav aria-label="Back to top"><div class="top-button"><a href="#" style="color:white;"><span class="fi-arrow-up"> Top </span></a></div></nav>
+<div class="col-sm-3">
+<ul class="ft-links-list">
+<li><a href="/">Publishing Home</a></li>
+<li><a href="/about.cfm">Journals</a></li>
+<li><a href="/conferences.cfm">Conferences</a></li>
+<li><a target="_blank" href="https://opticapreprints.figshare.com/">Preprints (Optica Open) <span class="fal fa-external-link"></span></a></li>
+</ul>
+<ul class="ft-links-list">
+<li class="ft-links-header">Information for</li>
+<li><a href="/content/author/">Authors</a></li>
+<li><a href="/content/reviewer/">Reviewers</a></li>
+<li><a href="/content/library/">Librarians</a></li>
+</ul>
+</div>
+<div class="col-sm-3">
+<ul class="ft-links-list">
+<li class="ft-links-header">Open Access Information</li>
+<li><a href="/content/author/portal/item/review-open-access-policy-stat/">Open Access Statement and Policy</a></li>
+<li><a href="/library/license_v2.cfm">Terms for Journal Article Reuse</a></li>
+</ul>
+<ul class="ft-links-list">
+<li class="ft-links-header">Other Resources</li>
+<li><a target="_blank" href="https://opticapreprints.figshare.com/" >Optica Open <span class="fal fa-external-link"></span></a></li>	
+<li><a href="/content/bookshelf/">Optica Publishing Group Bookshelf</a></li>
+<li><a href="/info/opticsimagebank.cfm">Optics ImageBank</a></li>
+<li><a href="https://www.optica-opn.org/home/" target="_blank">Optics &amp; Photonics News <span class="fal fa-external-link"></span></a></li>
+<li><a href="/spotlight/">Spotlight on Optics</a></li>
+<li><a href="https://www.optica.org">Optica Home</a></li>
+</ul>
+<!-- mobile only regional sites link -->
+</div>
+<div class="col-sm-3">
+<ul class="ft-links-list">
+<li class="ft-links-header">Accessibility Information</li>
+<li><a href="/content/library/portal/item/accessibility-statement">OPG Accessibility Statement</a></li>	
+</ul>
+<ul class="ft-links-list">
+<li class="ft-links-header">About</li>
+<!--"INDUSTRY REPORTS" LINK TEMPORARILY DISABLED ON 3/3/2023 UNTIL FURTHER NOTICE FROM CORP DEPT.-->
+<!--li><a href="/industryreports.cfm">Industry Reports</a></li-->
+<li><a href="/about.cfm">About Optica Publishing Group</a></li>
+<li><a href="/content/info/portal/item/benefitslog">About My Account</a></li>
+<li><a href="/user/toc_alerts_subscribe.cfm">Sign up for Alerts</a></li>
+<li><a href="/content/info/portal/item/contactus/">Contact Us</a></li>
+<li><a href="#" onclick="popUpWindow('/submitFeedback.cfm?url='+escape(document.location.href),700,490); return false;">Send Us Feedback</a></li>	
+</ul>
+</div>
+<div class="col-sm-3">
+<ul class="nav navbar-nav navbar-right navbar-ft hidden-sm hidden-xs d-flex flex-row">
+<li class="dropdown" style="border:1px solid #6c6c6c; margin-right: 10px;">
+<a href="#" class="dropdown-toggle navbar-ft-header" data-bs-toggle="dropdown">My Favorites <strong class="caret"></strong></a>
+<ul class="dropdown-menu up">
+<li><a href="/user">Go to My Account</a></li>
+<li><a href="#" data-bs-toggle="modal" data-bs-target="#userLogin">Login to access favorites</a></li>
+</ul>
+</li>
+<li class="dropdown" style="border:1px solid #6c6c6c;">
+<a href="#" class="dropdown-toggle navbar-ft-header" data-bs-toggle="dropdown">Recent Pages <strong class="caret"></strong></a>
+<ul class="dropdown-menu up recent-page-list">
+</ul>
+</li>
+</ul>
+</div>
+<div>
+<div class="col-xs-12 col-md-3 col-md-offset-9 text-right" style="margin-top:-40px;">
+<a class="ft-links-header purple-hover" href="https://www.twitter.com/OpticaPubsGroup" target="_blank" aria-label="Follow @OpticaPubsGroup on Twitter">
+<span class="fa-2x fa-square-x-twitter me-2">X</span>
+</a>
+<a class="ft-links-header purple-hover" href="https://www.facebook.com/OpticaWorldwide" target="_blank" aria-label="Follow us on Facebook">
+<span class="fab fa-2x fa-facebook-square">&nbsp;</span>
+</a>
+<a class="ft-links-header purple-hover" href="https://www.linkedin.com/company/optica-worldwide/" target="_blank" aria-label="Follow us on LinkedIn">
+<span class="fab fa-2x fa-linkedin">&nbsp;</span>
+</a>
+<a class="ft-links-header purple-hover" href="/toc_alerts_subscribe.cfm" target="_blank" aria-label="RSS Alerts">
+<span class="fas fa-2x fa-rss-square">&nbsp;</span>
+</a>
+</div>
+</div></div>
+<div class="ft-bottom">
+<div class="container">
+<div class="col-sm-10">
+&copy; Copyright 2026 | Optica Publishing Group. All rights reserved, including rights for text and data mining and training of artificial technologies or similar technologies.
+</div>
+<div class="col-sm-2 ft-right">
+<a class="footer-link" href="/content/info/portal/item/privacy">Privacy</a> | <a class="footer-link" href="/content/info/portal/item/termsofuse">Terms of Use</a>
+</div>
+</div>
+</div></footer>
+<div class="modal fade" id="userLogin" aria-hidden="true" role="dialog">
+<div class="modal-dialog login-dialog">
+<div class="modal-content">
+<div class="modal-header flex-row-reverse">
+<button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+<h4 class="modal-title">Login or <a class="text-decoration-underline" href="/util/create-account.cfm">Create Account</a></h4>
+</div>
+<div class="modal-body">
+<form class="form-horizontal" role="form">
+<div class="alert alert-danger loginErr" role="alert" aria-live="assertive"></div>
+<div class="alert alert-warning loginLoading">Please wait...</div>
+<div class="form-group">
+<label for="inputEmail" class="col-sm-2 control-label">Email</label>
+<div class="col-sm-10">
+<input type="email" class="form-control" id="inputEmail" placeholder="Email" autofocus>
+</div>
+</div>
+<div class="form-group">
+<label for="inputPassword" class="col-sm-2 control-label">Password</label>
+<div class="col-sm-10">
+<input type="password" class="form-control" id="inputPassword" placeholder="Password">
+<span class="help-block"><a href="https://account.optica.org/eweb/Dynamicpage.aspx?webcode=forgotpassword&Site=osac">Forgot your password?</a></span>
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+<div class="checkbox">
+<label>
+<input type="checkbox" id="rememberme"> Remember me on this computer
+</label>
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+<button type="submit" class="btn btn-primary" id="loginButton">Login</button>
+<button type="submit" class="btn btn-default" data-bs-dismiss="modal" data-bs-target="#userLogin">Cancel</button>
+</div>
+</div>
+</form>
+</div>
+<div class="modal-footer">
+<div class="col-xs-12" style="text-align: left"><a href="https://auth.optica.org/connect/authorize?client_id=osap&response_type=id_token token&scope=openid email profile affiliation&redirect_uri=https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fdefault%2Ecfm&state=2CCDF097-1D10-47C3-A6557E416F1D5F7A|https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fabstract%2Ecfm%3Frwjcode%3Dao%26uri%3Dao%2D30%2D15%2D2013&nonce=2CCDF097-1D10-47C3-A6557E416F1D5F7A&acr_values=idp:oa&response_mode=form_post">Institutional Login</a> (Optica Publishing Group participates in eduGAIN)</div>
+</div>
+<div class="modal-footer">
+<div class="col-xs-12" style="text-align: left"><a href="https://auth.optica.org/connect/authorize?client_id=osap&response_type=id_token token&scope=openid email profile affiliation&redirect_uri=https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fdefault%2Ecfm&state=2CCDF097-1D10-47C3-A6557E416F1D5F7A|https%3A%2F%2Fopg%2Eoptica%2Eorg%2Fabstract%2Ecfm%3Frwjcode%3Dao%26uri%3Dao%2D30%2D15%2D2013&nonce=2CCDF097-1D10-47C3-A6557E416F1D5F7A&acr_values=idp:oa&response_mode=form_post">China CARSI Member Access</a></div>
+</div>
+<div class="modal-footer">
+<div class="col-xs-12" style="text-align: left"><a href="/openathens.cfm?entity=https%3A%2F%2Fpassport.escience.cn%2Fidp%2Fshibboleth">China CAoS Member Access</a></div>
+</div>
+<div class="modal-footer flex-nowrap">
+<div class="col-xs-6" style="text-align: left"><a href="/content/info/portal/item/privacy">Privacy Policy</a></div>
+<div class="col-xs-6"><a href="https://www.optica.org/help/">Need help?</a> <i class="fal fa-info-circle"></i></div>
+</div>
+</div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+</div>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=">
+window.MathJax = {
+chtml: {
+mathmlSpacing: true,
+mtextInheritFont: true,
+displayAlign: "center",
+scale: 1
+},
+svg: {
+mtextInheritFont: true
+},
+options: {
+menuOptions: {
+settings: {
+zoom: "Click",
+zscale: "125%"
+}
+},
+ignoreHtmlClass: 'tex2jax_ignore',
+processHtmlClass: 'tex2jax_process'
+},
+tex: {
+inlineMath: [["$","$"],["\\(","\\)"]],
+processEscapes: true,
+macros: {
+scalebox: [ "{ }", 1],
+resizebox: [ "{ }", 1],
+vskip: [ "{ }", 1],
+noalign: [ "{ }", 1],
+upalpha: "\\text{α}",
+upbeta: "\\text{β}",
+upgamma: "\\text{γ}",
+updelta: "\\text{δ}",
+upepsilon: "\\text{ε}",
+upzeta: "\\text{ζ}",
+upeta: "\\text{η}",
+uptheta: "\\text{θ}",
+upiota: "\\text{ι}",
+upkappa: "\\text{κ}",
+uplambda: "\\text{λ}",
+upmu: "\\text{μ}",
+upnu: "\\text{ν}",
+upxi: "\\text{ξ}",
+upomicron: "\\text{ο}",
+uppi: "\\text{π}",
+uprho: "\\text{ρ}",
+upsigma: "\\text{σ}",
+uptau: "\\text{τ}",
+upupsilon: "\\text{υ}",
+upphi: "\\text{φ}",
+upchi: "\\text{χ}",
+uppsi: "\\text{ψ}",
+upomega: "\\text{ω}",
+upGamma: "\\text{Γ}",
+upDelta: "\\text{Δ}",
+upTheta: "\\text{Θ}",
+upLambda: "\\text{Λ}",
+upXi: "\\text{Ξ}",
+upPi: "\\text{Π}",
+upSigma: "\\text{Σ}",
+upUpsilon: "\\text{Υ}",
+upPhi: "\\text{Φ}",
+upPsi: "\\text{Ψ}",
+upOmega: "\\text{Ω}",
+upvarepsilon: "\\text{ϵ}",
+upvartheta: "\\text{ϑ}",
+upvarrho: "\\text{ϱ}",
+upvarpi: "\\text{φ}"
+},
+autoload: {
+color: [],
+colorv2: ['color']
+},
+packages: {'[+]': ['noerrors','ams']}
+},
+loader: {
+load: ['[tex]/noerrors','[tex]/ams']
+}
+};
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script"></script>
+<style>
+.CtxtMenu_InfoContent {
+max-width: none;
+max-height: none;
+overflow: visible;
+border: 0;
+background: transparent;
+}
+.CtxtMenu_Info {
+border: 0;
+border-radius: 0;
+background-color: #eee; /* OPG light gray */
+}
+</style>
+<!-- <script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=">
+document.write('<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src=' +
+('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+'.js><\/script>')
+</script> -->
+<!--these are the concatenated scripts - when we're done with the JS, we should put together a cfif to serve these if it's not on development-->
+<!--
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/libraries.min.js" type="text/javascript"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/app.min.js" type="text/javascript"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/full-search.min.js" type="text/javascript"></script>
+-->
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/vendor/jquery.autocomplete.min.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/vendor/selectize.js?v=11102021"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/vendor/selectize.custom.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/vendor/sly.min.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/jquery.tinysort.min.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/app.js?v=04142026"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/recentPages.js?v=11102021"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/purify.min.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/quickpager.jquery.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/jquery.unveil.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/jquery.tokeninput.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/jquery.base64.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="/js/search.js?v=12202024"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/underscore.js"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/ApiClient.js?v=02082023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Bus.js?v=02082023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Config.js?v=02082023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Constants.js?v=02082023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Template.js?v=02082023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Facet.js?v=02082023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Pagination.js?v=02082023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Results.js?v=02082023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Search.js?v=12202024"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Topics.js?v=07242023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Util.js?v=02082023"></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript" src="/js/search/Main.js?v=02082023"></script>
+<!-- templates -->
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="template-page-size-selector">
+<%= selected %>
+<ul class="dropdown-menu">
+<%= unselected %>
+</ul>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="template-pagination-selected-page-size">
+<a class="page_size_<%= size %> btn btn-default dropdown-toggle" data-bs-toggle="dropdown" href="#">
+<%= size %>
+<span class="caret"></span>
+</a>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="template-pagination-unselected-page-size">
+<li><a class="page_size_<%= size %>" href="#"><%= size %></a></li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-row">
+<li class="sr-item">
+<input type="checkbox" class="sri-select hidden-xs" name="articles" value="<%= documentUri %>" aria-label="<%= documentUri %> checkbox"/>
+<div class="sri-summary">
+<p class="sri-title"><a href="<%= path %>abstract.cfm?uri=<%= documentUri %>&origin=search" target="_blank"><%= title %><%= videoIcon %></a></p>
+<span class="sri-authors"><%= authors %></span>
+<ul class="sri-details">
+<li class="sri-year"><%= year %></li>
+<li class="sri-journal"><%= access%> <%= name %><strong>&nbsp; View: <%= htmlLinks %><%= pdfLinks %></strong><%= xinfo %></li>
+</ul>
+<div class="sri-toggle-extended fi-plus">
+</div>
+</div>
+<div class="sri-extended">
+<div class="d-flex">
+<img src="<%= imgLink%>" class="sri-image" height="100" width="100" alt="" loading="lazy" style="max-width: 150px; height: auto;" onerror="this.parentNode.removeChild(this);" />
+<div>
+<p class="sri-abstract"><%= abstract %></p>
+<ul class="sri-hits list-unstyled">
+<%= searchHits %>
+</ul>
+</div>
+</div>
+</div>
+</li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-image-result-row">
+<li class="sr-item sr-item-image">
+<div class="sri-summary">
+<h3 class="sri-title">
+<a href="<%= path %>" target="_blank">
+<%= title %>
+</a>
+</h3>
+<span class="sri-authors"><%= authors %></span>
+<ul class="sri-details">
+<li class="sri-year"><%= year %></li>
+<li class="sri-journal"><%= access %> <%= journalTitle %> <strong><%= volume %></strong>(<%= issue %>) <%=firstPage %>&nbsp; <strong>View:</strong> <a href="<%= path %>" target="_blank">Image</a></li>
+</ul>
+</div>
+<div class="sri-image-details">
+<img src="<%= imgLink%>" class="sri-image" height="100" width="100" alt="<%=title%> thumbnail" loading="lazy" style="max-width: 150px; height: auto;"/>
+<p class="sri-abstract">
+<strong>Caption:</strong>&nbsp;<%= figLabel %><%= caption %></p>
+</div>
+</li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-hit">
+<li>&hellip;<%= hitText %>&hellip;</li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-snippet-highlighted"><strong><%= text %></strong></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-snippet-xinfo"> [<%= xinfo %>]</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-snippet-pdf"><a href="<%= pdfUri %>" target="_blank">PDF</a></script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-snippet-html"><a href="<%= htmlUri %>" target="_blank">HTML</a> | </script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-element-visible">display:inline</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-element-hidden">display:none</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-element-nbsp">&nbsp;</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet">
+<h5 class="bg1">
+<span class="float_l">
+<input type="checkbox" name="chkAllFacet-<%= name %>">
+<%= facetName %>
+</input>
+</span>
+<%= moreLink %>
+<a id="sortby-<%= name %>" class="sidebar_more white" href="#">Sort</a>
+</h5>
+<ul id="facet-values-<%= name %>">
+<%= facetValues %>
+</ul>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="facet-publications">
+<ul class="sf-list">
+<li class="sf-list_list-item"><input id="publicationsAll" class="sf-select-all sf-list_input" type="checkbox" checked="checked" disabled="disabled"/> <label class="sf-list_label" for="publicationsAll">All</label></li>
+<li class="sf-list_list-item"><input id="facet-publications-journals" class="sf-list_input" type="checkbox" name="publications"/> <label class="sf-list_label" for="facet-publications-journals">Journals <span class="facet-count">(<%= totalJournals %>)</span></label></li>
+<li class="sf-list_list-item"><input id="facet-publications-proceedings" class="sf-list_input" type="checkbox" name="proceedings"/> <label class="sf-list_label" for="facet-publications-proceedings">Conferences <span class="facet-count">(<%= totalProceedings %>)</span></label></li>
+<li class="sf-list_list-item"><input id="facet-publications-reports" class="sf-list_input" type="checkbox" name="reports"/> <label class="sf-list_label" for="facet-publications-reports">Industry Reports <span class="facet-count">(<%= totalReports %>)</span></label></li>
+</ul>
+</div>
+<div class="sf-module sf-journals">
+<div class="row2">
+<p id="facet-journal-show" class="sf-group-title collapsed" style="text-transform: none !important;">Journals</p>
+<div id="sortJournal" class="sf-sort"></div>
+</div>
+<div id="facet-journal-values">
+</div>
+</div>
+<div class="sf-module sf-proceedings">
+<div class="row2">
+<p id="facet-proceeding-show" class="sf-group-title collapsed" style="text-transform: none !important;">Conferences</p>
+<div id="sortProceeding" class="sf-sort"></div>
+</div>
+<div id="facet-proceeding-values"></div>
+</div>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-basics">
+<ul class="sf-list">
+<li class="sf-select-all"><input id="<%= allId %>" type="checkbox" checked="checked" disabled="disabled"/> <label for="<%= allId %>">All</label></li>
+<%= values %>
+<li class="sf-expanded">
+<a href="#" id="more-<%= allId %>" class="search-panel_more-link" data-bs-toggle="modal" data-bs-target="#modal-<%= allId %>">more <%=name%> &raquo;</a>
+<div class="modal full fade" id="modal-<%= allId %>">
+<div class="modal-dialog">
+<div class="modal-content search">
+<div class="row mbottom-20">
+<div class="col-md-4">
+<h3 class="modal-header search"><%= modalTitle %></h3>
+</div>
+<div class="col-md-6 col-md-offset-2">
+<input id="input-<%= allId%>" type="text" class="form-control selectized" placeholder="(type names or look up list)" tabindex="-1" aria-label="type names or look up list"></input>
+<div class="selectize-control form-control multi"></div>
+</div>
+</div>
+<div class="modal_option-container mbottom-20 scrollable" id="moreUl-<%=allId%>">
+</div>
+<hr>
+<div class="d-flex">
+<a href="#" id="apply-<%= allId %>" class="btn btn-primary mr-1" data-bs-dismiss="modal">Apply Filters</a>
+<a href="#" id="cancel-<%= allId %>" class="btn btn-default" data-bs-dismiss="modal">Cancel</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-terms">
+<ul class="sf-list">
+<li class="sf-select-all">
+<input id="<%= allId %>" type="checkbox" checked="checked" disabled="disabled"/>
+<label for="<%= allId %>">Remove all topic filters</label>
+</li>
+<%= values %>
+<li class="sf-expanded">
+<a href="#" id="more-<%= allId %>" class="search-panel_more-link hidden-xs" data-bs-toggle="modal" data-bs-target="#modal-<%= allId %>">include more topics &raquo;</a>
+<div class="modal full fade" id="modal-<%= allId %>">
+<div class="modal-dialog">
+<div class="modal-content search">
+<div class="row mbottom-20">
+<div class="col-md-4">
+<h3 class="modal-header search">Optics &amp; Photonics Topics</h3>
+</div>
+<div class="col-md-6 col-md-offset-2">
+<input id="input-<%= allId%>" type="text" class="form-control" placeholder="Search for a specific topic" tabindex="-1" aria-label="Search for a specific topic"></input>
+</div>
+</div>
+<div class="row mbottom-20">
+<div class="col-md-12">
+<strong>Browse the topics:</strong>
+Click the <svg class="selection-list_arrow"><use xlink:href="#right-arrow" /></svg> to reveal subtopics. Use the checkbox to select a topic to filter your search.
+</div>
+</div>
+<div class="modal_option-container mbottom-20 scrollable" id="moreUl-<%=allId%>">
+</div>
+<div class="row">
+<div class="col-md-12">
+<strong>Selected Topics</strong>
+</div>
+</div>
+<div id="moreSelectedList"></div>
+<div class="row"><div class="col-md-12">&nbsp;<!-- spacing row --></div></div>
+<div class="d-flex">
+<a href="#" id="apply-<%= allId %>" class="btn btn-primary mr-1" data-bs-dismiss="modal">Add Selected Topic Filters</a>
+<a href="#" id="cancel-<%= allId %>" class="btn btn-default" data-bs-dismiss="modal">Cancel</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-journal-proceedings">
+<ul class="sf-list">
+<li class="sf-select-all"><input id="<%= allId %>" type="checkbox" checked> <label for="<%= allId %>">All</label></li>
+<%= values %>
+<li class="sf-expanded">
+<a href="#" id="more-<%= allId %>" class="search-panel_more-link" data-bs-toggle="modal" data-bs-target="#modal-<%= allId %>" class="sf-expanded-toggle">more <%=name%> &raquo;</a>
+<div class="modal full fade" id="modal-<%= allId %>">
+<div class="modal-dialog">
+<div class="modal-content search">
+<div class="row mbottom-20">
+<div class="col-md-4">
+<h3 class="modal-header search"><%= modalTitle%></h3>
+</div>
+<div class="col-md-6 col-md-offset-2">
+<input id="input-<%= allId%>" type="text" class="form-control selectized" placeholder="(type names or look up list)" tabindex="-1" aria-label="type names or look up list"></input>
+<div class="selectize-control form-control multi"></div>
+</div>
+</div>
+<div class="modal_option-container mbottom-20 scrollable" id="moreUl-<%=allId%>">
+</div>
+<hr>
+<div class="d-flex">
+<a href="#" id="apply-<%= allId %>" class="btn btn-primary mr-1" data-bs-dismiss="modal">Apply Filters</a>
+<a href="#" id="cancel-<%= allId %>" class="btn btn-default" data-bs-dismiss="modal">Cancel</a>
+</div>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-content">
+<ul class="sf-list">
+<%= values %>
+</ul>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="facet-more-new-content">
+<div class="more-columns_container">
+<div class="more-columns_column"><ul class="selection-list"><%= val1%></ul></div>
+<div class="more-columns_column"><ul class="selection-list"><%= val2%></ul></div>
+<div class="more-columns_column"><ul class="selection-list"><%= val3%></ul></div>
+</div>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="facet-more-terms-div">
+<div class="more-columns_container">
+<div class="more-columns_column" id="<%= name%>-col1"><%= val%></div>
+<div class="more-columns_column" id="<%= name%>-col2"></div>
+<div class="more-columns_column" id="<%= name%>-col3"></div>
+</div>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="facet-more-terms-list">
+<ul class="selection-list"><%= val%></ul>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-more">
+<a id="more-<%= name %>" href="#" class="sidebar_more white">More</a>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-detail">
+<a href="#" id="details-link-<%= id %>" class="sidebar_more black">details</a>
+<ul id="details-container-<%= id %>" class="list-unstyled" style="display:none;" data-value="<%= valName %>"></ul>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-value">
+<li class="sf-list_list-item <%= rowclass %>" style="<%= display %>">
+<input type="checkbox" class="sf-list_input visually-hidden" name="chkFacet-<%= name %>" value="<%= code %>" aria-label="<%= dataValue %>" data-value="<%= dataValue %>" id="<%= id %>" <%= checked %> acronym="<%= acronym %>" />
+<% if (hasCloseButton === true) { %>
+<div <% if (isbold != '') { %> class="sf-list_label sf-authors-bold" <% } else { %> class="sf-list_label" style="margin-bottom:5px"<% } %>><%= valName %><span class="facet-count"><%= valCount %></span> <span class="fal fa-times-circle facet-value_toggle purple-color"></span></div> <%= detail%>
+<% } else { %>
+<label <%= title%> for="<%= id %>" <% if (isbold != '') { %> class="sf-list_label sf-authors-bold" <% } else { %> class="sf-list_label" <% } %>><%= valName %> <span class="facet-count"><%= valCount %></span></label> <%= detail%>
+<% } %>
+</li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="more-term-facet-value">
+<li class="selection-list_list-item" style="<%= display %>">
+<input id="<%= labelid %>" class="selection-list_checkbox" aria-label="<%= dataValue %>" type="checkbox" name="<%= name %>" data-value="<%= dataValue %>" <%= checked %> <%= boxstyle %>/><div class="selection-list_link" name="text-<%= name %>" data-value="<%= dataValue %>" <%= clazz %>><label for="<%= labelid %>" style="font-weight:normal;margin-bottom:0px;"><%= valName %><% if (valCount != "") { %> <span class="more-facet-count"><%= valCount %></span><% } %></label></div><% if (isx === true) { %><a href="#" aria-label="selection expander" class="selection-list_expander <%= inputname%>-expandin" aria-controls="topic-list"><svg class="selection-list_arrow"><use xlink:href="#right-arrow" /></svg></a><% } %>
+</li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="more-term-selected">
+<div class="selected-facet" data-topic="<%= finalTopic %>">
+<%= val %>
+<a href="#" name="selected-x" aria-label="Remove <%= dataValue %> filter" data-value="<%= dataValue %>" count="<%= cnt %>" class="selected-facet_close" role="button" tabindex="0"><span class="fal fa-times-circle purple-color" aria-hidden="true"></span></a>
+</div>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-class">
+class=""
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-style-normal">
+style="font-weight:normal"
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="search-result-facet-sort-popup">
+<p>
+<input type="radio" id='<%= name %>:item-order:ascending' name="facetSortBy" value='<%= name %>:item-order:ascending' >
+<label for='<%= name %>:item-order:ascending'><%= label %> ascending</label><br>
+<input type="radio" id='<%= name %>:item-order:descending' name="facetSortBy" value='<%= name %>:item-order:descending' >
+<label for='<%= name %>:item-order:descending'><%= label %> descending</label><br>
+<input type="radio" id='<%= name %>:frequency-order:ascending' name="facetSortBy" value='<%= name %>:frequency-order:ascending' >
+<label for='<%= name %>:frequency-order:ascending'>Frequency ascending</label><br>
+<input type="radio" id='<%= name %>:frequency-order:descending' name="facetSortBy" value='<%= name %>:frequency-order:descending'>
+<label for='<%= name %>:frequency-order:descending'>Frequency descending</label>
+</p>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="filter-selected">
+<li class="label filter-tag filter-tag--<%= filterType %>"> <%= filterValue %> <a class="inline-dismiss"><span name="filterSelected" id="<%= filterId %>" class="fal fa-times purple-color" data-value="<%= filterValue %>"></span></a></li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="filter-search">
+<li class="filter-search label filter-tag filter-tag--<%= filterType %>"> <%= filterLabel %> <a class="inline-dismiss"><span name="filterSelected" id="<%= filterId %>" class="fal fa-times purple-color" data-value="<%= filterValue %>"></span></a></li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="publication-sort-template">
+<button class="sf-sort-toggle"><i class="fas fa-sort"></i><span class="sr-only">sort</span></button>
+<div class="sf-sort-popup">
+<ul>
+<li class="active"><a href="#" name="sort-<%= type%>" data-value="<%= type%>:frequency-order:descending">Article Count</a></li>
+<li><a href="#" name="sort-<%= type%>" data-value="<%= type%>:item-order:ascending">Alphabetical A>Z</a></li>
+<li><a href="#" name="sort-<%= type%>" data-value="<%= type%>:item-order:descending">Alphabetical Z>A</a></li>
+</ul>
+</div>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="author-topic-sort-template">
+<button class="sf-sort-toggle"><i class="fas fa-sort"></i><span class="sr-only">sort</span></button>
+<div class="sf-sort-popup">
+<ul>
+<li class="active"><a href="#" name="sort-<%= type%>" data-value="<%= type%>:frequency-order:descending">Article Count</a></li>
+<li><a href="#" name="sort-<%= type%>" data-value="<%= type%>:item-order:ascending">Alphabetical A>Z</a></li>
+<li><a href="#" name="sort-<%= type%>" data-value="<%= type%>:item-order:descending">Alphabetical Z>A</a></li>
+</ul>
+</div>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="year-sort-template">
+<button class="sf-sort-toggle"><i class="fas fa-sort"></i><span class="sr-only">sort</span></button>
+<div class="sf-sort-popup">
+<ul>
+<li class="active"><a href="#" name="sort-year" data-value="year:item-order:descending">Newest date first</a></li>
+<li><a href="#" name="sort-year" data-value="year:item-order:ascending">Oldest date first</a></li>
+<li><a href="#" name="sort-year" data-value="year:frequency-order:descending">Article Count</a></li>
+</ul>
+</div>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="more-pop-up-template">
+<%= values%>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="loading-gif-template">
+<li><img style="position:center; display:none;" src="/images/ajax-loader.gif"/></li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="all-plus-separator-template">
+<li class="sf-select-all"><input id="<%= allId %>" type="checkbox" > <label for="<%= allId %>">All</label></li>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="more-topic-column-header">
+<div class="selection-list_header"><%= name %></div>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/template" id="loader">
+<div class="progress">
+<div class="progress-bar progress-bar-striped active" role="progress-bar" id="progress-<%= allId %>"></div>
+</div>
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript">
+document.addEventListener('DOMContentLoaded', function() {
+if (location.hash.indexOf("figanchor") != -1) {
+let figHash = location.hash;
+$("#figurestablink").click();
+window.location.hash = figHash;
+$(location.hash).get(0).scrollIntoView({behavior: "smooth"});
+}
+// Populate recent pages
+if (typeof populateRecentPages === 'function') {
+populateRecentPages();
+}
+// Lazy load images
+$("img").removeClass("lazyimg").unveil(100);
+});
+</script>
+<script nonce="rFGp2lgG2iG2Vm/zJ+UghbfGw/toVR+NQBb04OQlMwI=" type="text/javascript">
+var gaAcct = "UA-1200622-15";
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "/js/loadJS.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script>
+</body>
+</html>

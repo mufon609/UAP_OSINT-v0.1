@@ -3094,3 +3094,563 @@
     background: 2 significant token(s) not in source (prose-drift check — contributor review): contemporaneous, first-person
   tokens: [contemporaneous, first-person]
 
+- ts: 2026-05-07T21:09:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 21 significant token(s) not in source (prose-drift check — contributor review): aligning, anchored, bigelow-specific, corroboration, elizondo-named, ending, explicit, framed, … (+13 more — pass --verbose for full list)
+  tokens: [aligning, anchored, bigelow-specific, corroboration, elizondo-named, ending, explicit, framed, fy2011, hoyer-requested, milcon, non-denial, on-record, predating, preserves, public-private, self-corrected, specification, standalone, sworn, toured]
+
+- ts: 2026-05-07T21:09:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 18 significant token(s) not in source (prose-drift check — contributor review): 2004-2007, attestation, attestations, awarding, cia-official, corroborated, first-person, framing, … (+10 more — pass --verbose for full list)
+  tokens: [2004-2007, attestation, attestations, awarding, cia-official, corroborated, first-person, framing, hrr, institutionally-corroborated, lockheed-to-aawsap, managing, named-companies, on-the-record, organizational, predates, rejects, verbs]
+
+- ts: 2026-05-07T21:09:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (133>55): Lockheed Martin Corporation press release announces that the...
+
+- ts: 2026-05-07T21:09:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (103>55): Hoyer congressional office press release announces FY2011 Mi...
+
+- ts: 2026-05-07T21:09:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (98>55): AARO publishes "Report on the Historical Record of U.S. Gove...
+
+- ts: 2026-05-07T21:09:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (112>55): Steny Hoyer interviewed by Matt Laslo (Ask a Pol UAP) at the...
+
+- ts: 2026-05-07T21:09:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (90>55): Rep. Eric Burlison conducts White House-approved site visit ...
+
+- ts: 2026-05-07T21:09:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (92>55): Liberation Times publishes Christopher Sharp's "White House-...
+
+- ts: 2026-05-07T21:10:14Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (133>55): Lockheed Martin Corporation press release announces that the...
+
+- ts: 2026-05-07T21:10:14Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (103>55): Hoyer congressional office press release announces FY2011 Mi...
+
+- ts: 2026-05-07T21:10:14Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (98>55): AARO publishes "Report on the Historical Record of U.S. Gove...
+
+- ts: 2026-05-07T21:10:14Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (112>55): Steny Hoyer interviewed by Matt Laslo (Ask a Pol UAP) at the...
+
+- ts: 2026-05-07T21:10:14Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (90>55): Rep. Eric Burlison conducts White House-approved site visit ...
+
+- ts: 2026-05-07T21:10:14Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (92>55): Liberation Times publishes Christopher Sharp's "White House-...
+
+- ts: 2026-05-07T21:10:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 21 significant token(s) not in source (prose-drift check — contributor review): aligning, anchored, bigelow-specific, corroboration, elizondo-named, ending, explicit, framed, … (+13 more — pass --verbose for full list)
+  tokens: [aligning, anchored, bigelow-specific, corroboration, elizondo-named, ending, explicit, framed, fy2011, hoyer-requested, milcon, non-denial, on-record, predating, preserves, public-private, self-corrected, specification, standalone, sworn, toured]
+
+- ts: 2026-05-07T21:10:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 18 significant token(s) not in source (prose-drift check — contributor review): 2004-2007, attestation, attestations, awarding, cia-official, corroborated, first-person, framing, … (+10 more — pass --verbose for full list)
+  tokens: [2004-2007, attestation, attestations, awarding, cia-official, corroborated, first-person, framing, hrr, institutionally-corroborated, lockheed-to-aawsap, managing, named-companies, on-the-record, organizational, predates, rejects, verbs]
+
+- ts: 2026-05-07T21:12:55Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 21 significant token(s) not in source (prose-drift check — contributor review): aligning, anchored, bigelow-specific, corroboration, elizondo-named, ending, explicit, framed, … (+13 more — pass --verbose for full list)
+  tokens: [aligning, anchored, bigelow-specific, corroboration, elizondo-named, ending, explicit, framed, fy2011, hoyer-requested, milcon, non-denial, on-record, predating, preserves, public-private, self-corrected, specification, standalone, sworn, toured]
+
+- ts: 2026-05-07T21:12:55Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 18 significant token(s) not in source (prose-drift check — contributor review): 2004-2007, attestation, attestations, awarding, cia-official, corroborated, first-person, framing, … (+10 more — pass --verbose for full list)
+  tokens: [2004-2007, attestation, attestations, awarding, cia-official, corroborated, first-person, framing, hrr, institutionally-corroborated, lockheed-to-aawsap, managing, named-companies, on-the-record, organizational, predates, rejects, verbs]
+
+- ts: 2026-05-07T21:16:57Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 3 significant token(s) not in source (prose-drift check — contributor review): corrected, matches, sworn
+  tokens: [corrected, matches, sworn]
+
+- ts: 2026-05-07T21:16:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Lockheed Martin announces the Advanced Technology Center wil...
+
+- ts: 2026-05-07T21:16:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Hoyer congressional office announces FY2011 Military Constru...
+
+- ts: 2026-05-07T21:16:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (68>55): AARO publishes "Report on the Historical Record of U.S. Gove...
+
+- ts: 2026-05-07T21:16:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (67>55): Steny Hoyer interviewed by Matt Laslo (Ask a Pol UAP); publi...
+
+- ts: 2026-05-07T21:16:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): Rep. Eric Burlison conducts White House-approved site visit ...
+
+- ts: 2026-05-07T21:16:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (67>55): Liberation Times publishes Christopher Sharp's "White House-...
+
+- ts: 2026-05-07T21:17:00Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 3 significant token(s) not in source (prose-drift check — contributor review): corrected, matches, sworn
+  tokens: [corrected, matches, sworn]
+
+- ts: 2026-05-07T21:17:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Lockheed Martin announces the Advanced Technology Center wil...
+
+- ts: 2026-05-07T21:17:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Hoyer congressional office announces FY2011 Military Constru...
+
+- ts: 2026-05-07T21:17:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (68>55): AARO publishes "Report on the Historical Record of U.S. Gove...
+
+- ts: 2026-05-07T21:17:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (67>55): Steny Hoyer interviewed by Matt Laslo (Ask a Pol UAP); publi...
+
+- ts: 2026-05-07T21:17:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): Rep. Eric Burlison conducts White House-approved site visit ...
+
+- ts: 2026-05-07T21:17:01Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (67>55): Liberation Times publishes Christopher Sharp's "White House-...
+
+- ts: 2026-05-07T21:17:15Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Lockheed Martin announces the Advanced Technology Center wil...
+
+- ts: 2026-05-07T21:17:15Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Hoyer congressional office announces FY2011 Military Constru...
+
+- ts: 2026-05-07T21:17:15Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (68>55): AARO publishes "Report on the Historical Record of U.S. Gove...
+
+- ts: 2026-05-07T21:17:15Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (67>55): Steny Hoyer interviewed by Matt Laslo (Ask a Pol UAP); publi...
+
+- ts: 2026-05-07T21:17:15Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): Rep. Eric Burlison conducts White House-approved site visit ...
+
+- ts: 2026-05-07T21:17:15Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (67>55): Liberation Times publishes Christopher Sharp's "White House-...
+
+- ts: 2026-05-07T21:21:26Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Hoyer congressional office announces fiscal year 2011 Milita...
+
+- ts: 2026-05-07T21:22:35Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Hoyer congressional office announces fiscal year 2011 Milita...
+
+- ts: 2026-05-07T21:23:11Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Hoyer congressional office announces fiscal year 2011 Milita...
+
+- ts: 2026-05-07T21:35:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 4 significant token(s) not in source (prose-drift check — contributor review): adds, attestation, byline, ibex-interstellar
+  tokens: [adds, attestation, byline, ibex-interstellar]
+
+- ts: 2026-05-07T21:35:20Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): Russell Targ et al. publish "Coherent lidar airborne wind se...
+
+- ts: 2026-05-07T21:35:20Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): IBEX (Interstellar Boundary Explorer) launch — NASA Small Ex...
+
+- ts: 2026-05-07T21:35:20Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (119>55): Russell Targ documented at Lockheed via author bylines in tw...
+
+- ts: 2026-05-07T21:35:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): Russell Targ et al. publish "Coherent lidar airborne wind se...
+
+- ts: 2026-05-07T21:35:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): IBEX (Interstellar Boundary Explorer) launch — NASA Small Ex...
+
+- ts: 2026-05-07T21:35:21Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (119>55): Russell Targ documented at Lockheed via author bylines in tw...
+
+- ts: 2026-05-07T21:35:22Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 4 significant token(s) not in source (prose-drift check — contributor review): adds, attestation, byline, ibex-interstellar
+  tokens: [adds, attestation, byline, ibex-interstellar]
+
+- ts: 2026-05-07T21:37:32Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (59>55): Russell Targ documented at Lockheed via Applied Optics autho...
+
+- ts: 2026-05-07T21:37:34Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (59>55): Russell Targ documented at Lockheed via Applied Optics autho...
+
+- ts: 2026-05-07T21:39:25Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e53' ('Targ et al. — Coherent lidar airborne windshear sensor (Applied Optics 1991)') wrap_path '/documents/targ-coherent-lidar-airborne-windshear-sensor-1991' does not appear as a [`/documents/targ-coherent-lidar-airborne-windshear-sensor-1991`] link in the node
+
+- ts: 2026-05-07T21:39:25Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e54' ('Targ et al. — Coherent lidar airborne wind sensor II (Applied Optics 1996)') wrap_path '/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996' does not appear as a [`/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996`] link in the node
+
+- ts: 2026-05-07T21:39:31Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e53' ('Targ et al. — Coherent lidar airborne windshear sensor (Applied Optics 1991)') wrap_path '/documents/targ-coherent-lidar-airborne-windshear-sensor-1991' does not appear as a [`/documents/targ-coherent-lidar-airborne-windshear-sensor-1991`] link in the node
+
+- ts: 2026-05-07T21:39:31Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e54' ('Targ et al. — Coherent lidar airborne wind sensor II (Applied Optics 1996)') wrap_path '/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996' does not appear as a [`/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996`] link in the node
+
