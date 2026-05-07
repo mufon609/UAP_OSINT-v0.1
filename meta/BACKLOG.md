@@ -345,8 +345,8 @@ for the open design questions.
   `node_type == "finding"` branch, any `if node_type == "finding":`
   branches in build-from-research.py / associate.py / build-state.py
   (total: 8 scripts). The scaffolder (research-scaffold.py) reads the
-  type list from schema.yaml directly post-C19, so its rename is
-  driven by the schema edit alone.
+  type list from schema.yaml directly (since the conditional_keys
+  refactor), so its rename is driven by the schema edit alone.
 - `meta/templates/finding.md` → `investigation.md`
 - `/findings/` directory (currently empty) → `/investigations/`
 - Top-level docs — README, AGENT, CONTRIBUTING, conventions, overview,
@@ -949,123 +949,10 @@ forcing shape; codified the trigger condition here.
 
 ---
 
-### C11. *(retired 2026-05-05 — every named check lives at scripts/checks/{name}.py; validate.py / validate-research.py / review-coverage.py are thin orchestrators with explicit step lists per the C11 design doc; full session-1/2/3 progress preserved in git log; design rationale at meta/toolkit-notes/c11-validator-decomposition-design.md.)*
-
----
-
-### C13. *(retired 2026-05-05 — every check yields scripts/checks/__init__.py:Issue; legacy Issue classes deleted from validate.py / validate-research.py / review-coverage.py; check_name + fatal contract fields adopted across all checks; closed alongside C11 in session 3.)*
-
----
-
-### C14. *(retired 2026-05-05 — see commit `1c34081`; manifest checks fully migrated, load-3x duplication closed.)*
-
----
-
-### C15. *(retired 2026-05-05 — schema-driven iff dispatch landed in commit `dc95d39`. New `scripts/checks/iff_section.py` reads `schema.yaml::types.research-artifact.conditional_keys` and emits all placement errors; per-section checks call `section_in_scope` for gating. Schema grammar upgraded from flat OR-keys to `required_when_any_of: [list of AND-rules]` to express conjunctions like witnesses_testimony's type=event AND kind=hearing. ~360 LOC of duplicated gate logic deleted across 18 per-section checks + artifact_top_level.)*
-
----
-
-### C16. *(retired 2026-05-05 — `ResearchContext.regenerated_body` lazy property landed in commit `4b1cfd3`. Subprocess spawned once per artifact on first access; cached as `(body, error)` tuple for the lifetime of the context. boundary.py reads the cached value; future cross-layer consumers benefit without re-implementing subprocess + caching machinery.)*
-
----
-
-### C17. Per-check investigation pass
-
-The C11/C13/C14 cluster decomposed every named validator check into a
-per-module callable in `scripts/checks/`. Each check reads clean and
-is individually importable, but no contributor has done a focused
-review pass on its intent, anchoring, or comment discipline.
-
-Per-check work:
-
-1. **Production-issue anchor.** Identify the concrete failure mode
-   the check was created to catch, and confirm its logic actually
-   catches that mode. `git log --diff-filter=A` on the module file
-   finds the introducing commit; from there, BACKLOG / toolkit-notes
-   / postmortem entries usually trace the surfacing incident.
-2. **Logic review.** Surface dead code, ambiguous behavior, or schema
-   gaps the check has been quietly accepting. Small fixes ship in the
-   same commit; larger ones become BACKLOG entries.
-3. **Docstring + comment discipline.** No dates, no session lore, no
-   didactic examples; anchored to BACKLOG IDs, schema field paths,
-   conventions.md sections.
-
-Per-check tracking lives at
-[`meta/toolkit-notes/check-audit.md`](toolkit-notes/check-audit.md):
-status by check + sequencing recommendation batched by Context type.
-
-**Tradeoff recorded.** An earlier shape of this entry called for
-synthetic-broken-input unit tests per check — that pilot shipped and
-was removed on the judgment that 49 test modules is more carrying
-cost than the regression coverage buys at this corpus size. The gap
-remains: a refactor that breaks a check's error path is detected only
-when a contributor encounters a real broken input. Documented here so
-the question doesn't get re-litigated each session.
-
-**Status.** Complete (49/49 ✅). All named validator checks
-investigated; per-check tracking lives at
-[`meta/toolkit-notes/check-audit.md`](toolkit-notes/check-audit.md).
-
-The investigation surfaced eight substantive findings beyond
-docstring polish:
-
-  - Disproved hypothesis: ``doc_form_archival_status`` (commit
-    ``3ae1296``) — initially flagged as "likely subsumed by
-    conditionally_required"; investigation showed orthogonal
-    concerns, not subsumption.
-  - Filed and CLOSED BACKLOG ``C20`` — ``timeline.timeline_category_values``
-    declared "extensible; validator warns on unknown" but warn was
-    never implemented. Closeout removed the schema list rather than
-    wiring the warn, on the principle that the list had no consumer
-    and the field has always operated as free-text (the canonical
-    list was cargo-cult decoration).
-  - Fixed bug: ``status_archetype_kind`` truthy-guard layering
-    bug (commit ``610a695``) — null archetype/kind/status slipped
-    through both presence + enum checks; tightened to presence-
-    guard semantics.
-  - Synced stale fallback: ``table_cell_word_budget`` hardcoded
-    fallback (50) lagged schema bump to 55 by ~3 weeks (commit
-    ``1352006``).
-  - Filed and CLOSED BACKLOG ``C21`` — silent
-    ``ctx.schema.get(..., default)`` fallbacks across 6 sites
-    masked schema drift; removed all six in a coordinated sweep
-    (commits ``c42acea`` + ``719bca8``).
-  - Fixed schema-doc drift: ``vouching_chain`` schema comments
-    claimed "renders inside Credibility Notes" but renderer emits
-    standalone H2 (commit ``b9905c5``).
-  - Filed BACKLOG ``C22`` — ``uap_relevance`` + ``uap_scope_activity``
-    are explicitly UAP-named, contradicting the toolkit's "schema
-    is topic-neutral" scope claim (commit ``397d994``).
-
-Pattern observation: anchor shapes cluster into roughly six
-families — reactive incident; defensive feature-pairing; renderer-
-coupled entry-list; foundational schema discipline (with sub-shapes
-stable/stable, multi-stage, evolving-discipline, forward-defensive);
-hybrid additive-and-reductive multi-stage; metadata-only channel.
-Multiple paired-check families also surfaced (verbatim_quotes ↔
-coverage; prose_drift ↔ description_token_drift; frontmatter_
-required ↔ id_path_match ↔ status_archetype_kind; relationship-
-shape taxonomy across 4 checks).
-
-Surfaced: C11/C13/C14 closeout audit — verification pass spot-checked
-individual check error paths but didn't commit a per-check review.
-Logged so the gap doesn't drift out of awareness.
-
----
-
-### C19. *(retired 2026-05-05 — scripts/research-scaffold.py now reads schema.yaml::types.research-artifact.conditional_keys via the same evaluate_required_when helper the validators use; commit `73fbae2`. Removed RUMORS_TYPES, TIMELINE_TYPES, ARCHETYPE_SECTION, KIND_SECTIONS_BY_TYPE constants + 6 inline `if node_type == "X":` blocks. Replaced with single loop over conditional_keys + small EMPTY_SECTION_SHAPES map (4 entries for prose fields and event_intrinsic dict; everything else defaults to []). evaluate_required_when refactored to take positional args (target_type, target_archetype, target_kind) so the scaffolder can dispatch without faking a Context. build-from-research.py renderer dispatch — type-intrinsic rendering logic, gated by validator before render runs — remains as-is per scope note.)*
-
----
-
-### C22. *(retired 2026-05-06 — topic-customization mechanism shipped across three commits. (1) `49a5f5e`: topic-config infrastructure — additive frontmatter fields `topic` + `display_name` on `meta/topic/overview.md`; `lib._common.load_topic()` helper reads them with hard-error semantics on missing fields (per C21 no-silent-fallbacks principle); `governance_files` check enforces the two fields as required on overview.md. (2) `ffad3ed`: schema rename `uap_relevance` → `top_relevance` (person) and `uap_scope_activity` → `top_scope_activity` (location), check-module rename via `git mv`, renderer composes section headers from `display_name` (`render_top_relevance` / `render_top_scope_activity`), corpus migration of 6 person artifacts + skinwalker-ranch.yaml, contemporary-docs sed pass. With `display_name: UAP` on this fork the rendered headers stay `## UAP Relevance` / `## UAP-Scope Activity` — boundary check confirmed byte-identity through the rename. (3) This commit: `prompts/fork-init.md` bootstrap walkthrough + `prompts/README.md` index entry, README "Forking for a different topic" paragraph amended to point at the prompt, audit pass for remaining UAP-hardcoded surfaces resolved (`scripts/archive.py` USER_AGENT now composed from `display_name`; `scripts/build-from-research.py` + `scripts/checks/artifact_top_level.py` + `scripts/checks/top_scope_activity.py` docstrings genericized to reference `{display_name}` substitution; `scripts/tests/test_stopwords.py` + `scripts/checks/manifest_extraction_type.py` + `scripts/checks/org_relationships.py` UAP references retained as deliberate topic-neutral commentary or production-incident anchors). Pre-commit 0/0 through all three commits.)*
-
----
-
 ### C23. Honor `Issue.fatal` in the post-parse main check loop
 
-**The gap.** The C11 design doc
-(`meta/toolkit-notes/c11-validator-decomposition-design.md` §5)
-specifies the per-file iteration shape as:
+**The gap.** The validator decomposition shipped with this per-file
+iteration contract:
 
 > Per-file loop: (1) pre-parse checks on raw lines; (2) parse +
 > Context construction; if parse fails or frontmatter absent, emit
@@ -1142,17 +1029,18 @@ main loop became visible while comparing layering options.
 unguarded ``for check_module in _NODE_CHECKS: issues.extend(
 check_module.check(node_ctx))``. If a check raises an unexpected
 exception (TypeError on an unanticipated input shape, AttributeError
-on a refactor mismatch, KeyError where the C21 sweep tightened a
-schema lookup but missed a corner case), the exception propagates up
+on a refactor mismatch, KeyError where the silent-fallback sweep
+tightened a schema lookup but missed a corner case), the exception
+propagates up
 through ``main()`` and crashes the validator with a Python traceback
 — taking the rest of the per-file iteration with it. Contributors see
 a stack trace instead of a check-named Issue, AND any other defects
 in the same node (or other nodes) go unreported.
 
 **Why latent.** No check yields exceptions in normal operation today.
-The C21 silent-fallback sweep tightened many ``.get(..., default)``
+The silent-fallback sweep tightened many ``.get(..., default)``
 fallbacks to direct subscripts which DO raise KeyError on schema
-drift — but every site I tightened was on a path the schema is
+drift — but every site tightened was on a path the schema is
 guaranteed to populate, and the corpus passes pre-commit clean. So
 the latent failure mode hasn't manifested.
 
