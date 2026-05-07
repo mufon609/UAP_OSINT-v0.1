@@ -159,6 +159,65 @@ a contributor-verified `.txt` sibling. The three-step contributor
 discipline below handles the per-quote case during the window before
 the sibling exists.
 
+**Producing the `.txt` sibling — four valid paths.** The sibling is
+canonical because it has been *visually verified against the source
+by an agent independent of the producer*. Production methods are
+interchangeable; the independent-verification step is what closes the
+trust gap. Pick the path that fits the document's shape.
+
+1. **Text-layer pull.** Some scanned PDFs carry a clean text layer
+   despite OCR-suggesting producer metadata (the BACKLOG A2 audit
+   surfaced one such case). Run `pdftotext -layout source.pdf`, diff
+   the output against the rendered page, and copy to the sibling
+   path if clean. Lowest effort; only viable when the layer happens
+   to be reliable. The validator's `extract_source_text` already
+   prefers the sibling when present, so the workflow is strictly
+   one-shot.
+
+2. **Modern OCR.** Tesseract / Google Cloud Vision / Azure Read API
+   on rasterized pages. Output requires page-by-page contributor
+   review against the source PDF — OCR introduces character-level
+   corruption (`rt`↔`tr`, `cl`↔`d`, `rn`↔`m`, `ll`↔`11`) that the
+   contributor must correct before the sibling becomes canonical.
+   The contributor IS the independent verifier here; reading both
+   the OCR output and the source page closes the trust gap. Best for
+   batch-processing long documents where per-character review at
+   scale is more practical than full retyping.
+
+3. **VLM page-image read.** A multimodal LLM reads the source's
+   page images directly and produces transcribed text in one pass
+   (e.g., Claude's Read tool with `pages: N-M`, max 20 pages per
+   request). Per-character OCR corruptions don't appear because the
+   model isn't reading character-glyph features — it's reading the
+   image at a higher level of abstraction. Failure mode is different:
+   the model may *hallucinate* over ambiguous content (faded ink,
+   redactions, marginal handwriting, signature glyphs) where OCR
+   would simply garble.
+
+   *Independent verification by a different agent — a human
+   contributor or a different model session — is required before the
+   sibling becomes canonical.* The producing session cannot self-
+   verify hallucinations; the failure mode is invisible to the agent
+   that produced it. Practical for short documents (single-digit
+   page counts) where chunking overhead is low and human spot-check
+   is fast. For documents > 20 pages, track the chunk boundaries
+   explicitly (e.g., `pages: 1-20`, `pages: 21-40`) so re-runs land
+   on the same page sets.
+
+4. **Manual transcription.** The contributor reads the source page
+   directly and types the transcription. Highest fidelity for very
+   short documents (1-3 pages, e.g., the SD004 page-1 Q&A). The
+   contributor is both producer and verifier; the visual reading
+   that produces the text IS the verification. No second-agent step
+   needed.
+
+For all four paths, the canonical sibling lands at `<same-stem>.txt`
+adjacent to the source. The validator's `extraction_type: ocr-scan`
+or `extraction-lossy` flag tells `extract_source_text` to prefer the
+sibling over the underlying PDF text layer. The sibling itself is a
+manifest entry (with its own sha256 — integrity backstop matching the
+parent PDF entry's).
+
 **Per-quote contributor discipline when an OCR-scan source's `.txt`
 sibling hasn't been produced yet.** A new OCR-scan source may enter
 the corpus before a contributor produces its clean-text sibling — the
