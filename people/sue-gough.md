@@ -62,38 +62,6 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 | Source | [archived source](../sources/news/blackvault-smdc-travis-taylor-uaptf-20220629.html) |
 | Location | A1 response to Q1 — Dr. Travis Taylor as UAP Task Force chief scientist |
 
-> Dr. Taylor worked with the UAPTF as a contributing scientist and engineer, bringing those skills to review the reports of UAP sightings by military personnel and the associated study of any related materials/data in an effort to identify the objects observed and possible approaches to obtaining improved technical data.
-
-| Field | Value |
-|---|---|
-| Attributed to | Pentagon Public Affairs written statement to The Black Vault, A2 response, June 29, 2022, 2022-06-29 |
-| Source | [archived source](../sources/news/blackvault-smdc-travis-taylor-uaptf-20220629.html) |
-| Location | A2 response to Q2 — chief scientist duties |
-
-> Dr. Taylor's work with the UAPTF focused on scientific and technical advice provided as a research scientist, and not on intelligence analysis. The UAPTF stands by the conclusions presented by Director Bray in his briefing.
-
-| Field | Value |
-|---|---|
-| Attributed to | Pentagon Public Affairs written statement to The Black Vault, A3 response, June 29, 2022, 2022-06-29 |
-| Source | [archived source](../sources/news/blackvault-smdc-travis-taylor-uaptf-20220629.html) |
-| Location | A3 response to Q3 — drone-conclusion question |
-
-> As stated, Dr. Taylor was an employee of the U.S. Army's Space and Missile Defense Command (SMDC). His parent organization (SMDC) provided him to assist the UAPTF based on his education and experience as a scientist and engineer. In early 2021, following consultations with the UAPTF, SMDC took steps to clarify and de-conflict assigned tasks, responsibilities, and outside activities to balance mission priorities.
-
-| Field | Value |
-|---|---|
-| Attributed to | Pentagon Public Affairs written statement to The Black Vault, A4 response, June 29, 2022, 2022-06-29 |
-| Source | [archived source](../sources/news/blackvault-smdc-travis-taylor-uaptf-20220629.html) |
-| Location | A4 response to Q4 — TV-show conflict-of-interest question |
-
-> Broadly speaking, it means clarifying and de-conflicting his assigned tasks and responsibilities between SMDC, support to the UAPTF, and his outside activities. I can't provide further details, as we do not comment on individual personnel matters.
-
-| Field | Value |
-|---|---|
-| Attributed to | Pentagon Public Affairs follow-up email to The Black Vault, June 29, 2022, 2022-06-29 |
-| Source | [archived source](../sources/news/blackvault-smdc-travis-taylor-uaptf-20220629.html) |
-| Location | Follow-up reply to The Black Vault, after the four-question A1-A4 statement |
-
 > Good afternoon, I'm Sue Gough. I will be --from Defense Press Operations. I will be your moderator today. We are here to talk about the All-domain Anomaly Resolution Office, which as most of you know, is the office that replaced the former Navy-led UAPTF. We have with us here today, Under Secretary of Defense for Intelligence and Security Ronald Moultrie, and Dr. Sean Kirkpatrick, the director of AARO. And with that, I will turn it over to Mr. Moultrie.
 
 | Field | Value |
@@ -109,22 +77,6 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 | Attributed to | DefenseScoop article by Brandi Vincent, 'AARO's leader is leaving the Pentagon, and a new director needs to be named', November 30, 2023, 2023-11-30 |
 | Source | [archived source](../sources/news/defensescoop-kirkpatrick-departure-20231130.html) |
 | Location | DefenseScoop article body, opening Gough quote |
-
-> Dr. Kirkpatrick assembled a very talented and dedicated team of federal government, military, and contract employees. AARO will continue to skillfully execute its mission throughout the leadership transition,
-
-| Field | Value |
-|---|---|
-| Attributed to | DefenseScoop article by Brandi Vincent, November 30, 2023, 2023-11-30 |
-| Source | [archived source](../sources/news/defensescoop-kirkpatrick-departure-20231130.html) |
-| Location | DefenseScoop article body, Gough mission-continuation quote |
-
-> The selection process for a new director for AARO is ongoing. We do not have an estimate on when the selection and announcement of the new AARO Director will be made,
-
-| Field | Value |
-|---|---|
-| Attributed to | DefenseScoop article by Brandi Vincent, November 30, 2023, 2023-11-30 |
-| Source | [archived source](../sources/news/defensescoop-kirkpatrick-departure-20231130.html) |
-| Location | DefenseScoop article body, Gough new-director selection quote |
 
 > Thanks for reaching out. At this time, we are looking to keep any media engagement with AARO's acting director to a small group. Note, should we have an on-record engagement this week, we will post the transcript once it is available.  With that, I will be sure keep you in mind for any upcoming opportunities to engage with AARO going forward.
 >
@@ -200,7 +152,7 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 
 | Date | Event | Category | Source | Node Link |
 |---|---|---|---|---|
-| 2022-06-29 | Provided Department of Defense Public Affairs written statement to The Black Vault naming former Office of Naval Intelligence senior civilian John Stratton as UAPTF lead and informally referring to Dr. Travis Taylor as chief scientist; SMDC time-limited assignment basis preserved across four Q&A answers and one follow-up reply. | statement | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |  |
+| 2022-06-29 | Provided Department of Defense Public Affairs written statement to The Black Vault naming former Office of Naval Intelligence senior civilian John Stratton as UAPTF lead and informally referring to Dr. Travis Taylor as chief scientist; SMDC time-limited assignment basis attested in the same Pentagon Public Affairs response. | statement | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |  |
 | 2022-12-16 | Moderated joint AARO media roundtable with Under Secretary of Defense for Intelligence and Security Ronald Moultrie and AARO Director Sean Kirkpatrick at the Pentagon (STAFF moderator role). | engagement | government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html |  |
 | 2023-11-30 | On-record statements to DefenseScoop confirming AARO Director Sean Kirkpatrick's last-day date as December 1, 2023 and characterizing the AARO leadership transition. | statement | news/defensescoop-kirkpatrick-departure-20231130.html |  |
 | 2024-02-14 | Standardized email response to YLE Finland journalist on AARO Historical Record Report press engagement — declined further engagement. | engagement | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
