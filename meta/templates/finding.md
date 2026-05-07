@@ -29,9 +29,10 @@ created: {{today}}
 
 ## Summary
 
-<!-- 2–4 sentences. What is the pattern, who is involved, why does it
-     matter analytically. Single canonical framing — avoid re-stating
-     in each entity's node. -->
+<!-- What is the pattern, who is involved, why does it matter
+     analytically. Single canonical framing — avoid re-stating in each
+     entity's node. Length is source-driven (see `meta/conventions.md`
+     "Free-prose density is source-driven"). -->
 
 ---
 

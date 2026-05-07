@@ -211,18 +211,29 @@ def sort_by_id(entries):
 _END_OF_TIME = (9999, 0, 0)
 
 
-def sort_by_date(entries, date_key):
-    """Stable-sort entries ascending by the date at `date_key`. Undated /
-    unparseable entries land at the end (via the ``_END_OF_TIME``
-    sentinel applied here, NOT inside the parser). Tie-break by natural-
-    sort on id — prevents lex-sort from placing q10 between q1 and q2
-    when all entries share the same date (common on transcripts where
-    every quote carries the hearing date)."""
+def sort_by_date(entries, date_key, fallback_key=None):
+    """Stable-sort entries ascending by the date at `date_key`. When
+    `fallback_key` is provided and an entry's primary key is missing /
+    unparseable, the fallback key is consulted before the entry sinks
+    to the end. Mirrors the chronological-tables check's "leftmost
+    date else rightmost date" parsing — for period-bearing entry
+    tables, pass `fallback_key="period_end"` so bare-end rows
+    (rendered as `"– 2015"` by `_format_period`) sort by their attested
+    end date instead of landing after every dated row.
+
+    Undated / unparseable entries land at the end (via the
+    ``_END_OF_TIME`` sentinel applied here, NOT inside the parser).
+    Tie-break by natural-sort on id — prevents lex-sort from placing
+    q10 between q1 and q2 when all entries share the same date
+    (common on transcripts where every quote carries the hearing date)."""
     def key(e):
         if not isinstance(e, dict):
             return (_END_OF_TIME, ("zzz", 0, ""))
+        primary = parse_date_tuple(e.get(date_key))
+        if primary is None and fallback_key is not None:
+            primary = parse_date_tuple(e.get(fallback_key))
         return (
-            parse_date_tuple(e.get(date_key)) or _END_OF_TIME,
+            primary or _END_OF_TIME,
             _id_natural_key(e.get("id") or ""),
         )
     return sorted(entries, key=key)
@@ -705,7 +716,11 @@ def render_claim_inventory(artifact):
 
 
 def render_program_involvement(artifact):
-    items = artifact.get("program_involvement") or []
+    items = sort_by_date(
+        [e for e in (artifact.get("program_involvement") or []) if isinstance(e, dict)],
+        "period_start",
+        fallback_key="period_end",
+    )
     lines = ["## Program Involvement", "",
              "| Program | Role | Period | Evidentiary Basis | Confidence | Source |",
              "|---|---|---|---|---|---|"]

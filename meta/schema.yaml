@@ -949,9 +949,17 @@ types:
 
     program_involvement_entry:
       required: [program, role, evidentiary_basis, confidence, source]
-      optional: [start_date, end_date, note]
+      optional: [period_start, period_end, note]
       # program: program name (free-text or /organizations/... path)
       # role: the person's role in the program
+      # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY; rendered
+      #                    by build-from-research.py's universal _format_period
+      #                    helper into the Period column of the
+      #                    `## Program Involvement` table. Same naming
+      #                    convention as every other dated entry shape
+      #                    (affiliation_entry, key_personnel_entry,
+      #                    contract_entry, ownership_timeline_entry,
+      #                    top_scope_activity_entry).
       # evidentiary_basis: primary-source / sworn-testimony / on-record /
       #                    self-attested / secondary
       # confidence: high | medium | low

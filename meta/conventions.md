@@ -284,6 +284,37 @@ reference descriptor notes (`corroboration_items.note`,
 on those surfaces; fabrication there is Phase III semantic-review
 territory.
 
+### Free-prose density is source-driven
+
+Templates and prompts do not impose paragraph or sentence count targets
+on free-prose fields (`description`, `background`, `top_relevance`,
+`credibility_notes`, synthesis-content `.note` fields). Contributors
+populate each field with what archived primary sources support — no
+more, no less.
+
+Count targets ("1-2 paragraphs", "one paragraph", "2-4 sentences",
+"~50 words per paragraph") create pressure that splits two ways under
+real source variance: filler entries when the source doesn't support
+the count, or hallucinated content when the model fills the gap from
+training knowledge. The `pilot-failure-2026-04-17.md` postmortem
+documents the failure mode this discipline exists to prevent. The
+durable contributor memory `feedback_no_count_targets.md` codified
+the rule for entry-list population; this section extends the same
+rule to free-prose density.
+
+Structural thresholds are different and remain in force. The finding-
+node creation threshold (~200 words, 3+ entity nodes, or text about
+to be written into 3+ different nodes per `meta/schema.yaml::types
+.finding.creation_threshold`) governs WHEN analysis should move to a
+different node, not HOW LONG a field's prose should be. Cross-
+reference brevity — entity nodes citing a finding carry a brief
+summary plus link back, with the canonical narrative living on the
+finding node — is structural rather than length-prescribed.
+
+Templates describe the WHAT of each field (subject, scope, what to
+capture); they do not prescribe the HOW LONG. New templates and new
+prompt sections follow the same rule.
+
 ### Date precision: orientation-grade in prose, field-precise in tables
 
 Description prose carries orientation-grade dates anchored to semantic
@@ -341,6 +372,7 @@ itself:
 | Unpaginated short document (HTML article, single-page memo) | `¶N` |
 | Caption / audio / video transcript | `[MM:SS]` (or `[MM:SS]–[MM:SS]` for long quotes) |
 | Multi-page document where paragraph anchors aren't available — either the document lacks paragraph structure, or `pdftotext -layout` collapses visually-distinct paragraphs on a page into a single block (in which case ¶1 would overstate the precision the extract can deliver) | `p. N` |
+| FOIA email release with a contributor-produced `.txt` sibling carrying `DOCUMENT N — header` markers (e.g., `blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.txt`). Each `DOCUMENT` block is a discrete email or threaded exchange — analogous to a page but heavier, and stable across re-extractions because the markers live in the contributor-produced sibling rather than the underlying PDF text layer. | `Doc N` for single-email documents; `Doc N, Sender YYYY-MM-DD HH:MM` for multi-email threaded exchanges. The cover letter (if quoted) uses `Cover letter, ¶M`. Email metadata that doesn't fit the location anchor (recipient, subject, importance flags) moves to `context` / `significance` where it renders as reader-visible attribution. |
 | The extract itself IS the intended reference (rare; e.g., extract carries content the source PDF lacks) | `lines N-M of the extract` (the `of the extract` qualifier is required) |
 
 Plain `lines N-M` is not a valid permanent ref. Three layers serve
@@ -486,8 +518,8 @@ nodes, create a single `/findings/{slug}` node.
 Below these thresholds, keep the analysis in the single most relevant
 entity node. Don't create a finding for every pairwise cross-reference.
 
-Entity nodes cited by a finding carry a short summary (1–3 sentences) +
-link back to the finding, not the full narrative. The finding node is
+Entity nodes cited by a finding carry a brief summary + link back to
+the finding, not the full narrative. The finding node is
 the single canonical home for that pattern.
 
 Findings are not verdicts. They document cross-entity patterns observed

@@ -346,11 +346,11 @@ program_involvement:
 - id: pi1
   added_date: '2026-04-29'
   program: All-domain Anomaly Resolution Office (AARO)
-  role: Inaugural Director (July 20 2022 — December 1 2023)
+  role: Inaugural Director
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2022-07-20'
-  end_date: '2023-12-01'
+  period_start: '2022-07-20'
+  period_end: '2023-12-01'
   source:
     path: government/defense-gov-kirkpatrick-departure-20231120.html
     location: ¶1
@@ -361,8 +361,8 @@ program_involvement:
   role: Deputy Director of Intelligence and DNI Representative; led establishment (the fifth IC new-start organization Kirkpatrick led)
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2019'
-  end_date: '2021'
+  period_start: '2019'
+  period_end: '2021'
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: lines 32-35
@@ -372,8 +372,8 @@ program_involvement:
   role: Department of Defense's counterpart to the National Intelligence Manager for Science and Technology
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2012'
-  end_date: '2016'
+  period_start: '2012'
+  period_end: '2016'
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: lines 26-28
@@ -383,8 +383,8 @@ program_involvement:
   role: Special assignment to Principal Deputy Director of National Intelligence leading IC support
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2015'
-  end_date: '2016'
+  period_start: '2015'
+  period_end: '2016'
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: lines 28-30
@@ -394,8 +394,8 @@ program_involvement:
   role: Deputy Director of Intelligence
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2016'
-  end_date: '2017'
+  period_start: '2016'
+  period_end: '2017'
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: lines 32-34
@@ -405,8 +405,8 @@ program_involvement:
   role: Director, National Security Strategy
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2017'
-  end_date: '2018'
+  period_start: '2017'
+  period_end: '2018'
   source:
     path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
     location: lines 32-34
@@ -416,7 +416,7 @@ program_involvement:
   role: Chief Operating Officer for National Security Sciences Directorate (per FIA-24-0036 internal documentation); public titles include Chief Technology Officer for Defense and Intelligence Programs and Chief Technology Officer, National Security Programs
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2023-12'
+  period_start: '2023-12'
   source:
     path: government/energy-gov-fia-24-0036-kirkpatrick-ornl-20240717.pdf
     location: p. 1-3
@@ -427,7 +427,7 @@ program_involvement:
   role: Member, NSSA Board of Advisors; co-author of multiple Moorman Center Occasional Papers
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2024'
+  period_start: '2024'
   source:
     path: news/nssa-shelton-kirkpatrick-sda-20241105.pdf
     location: footer
@@ -1589,7 +1589,7 @@ quotes:
     the first brief and the majority of the second brief.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Rheanne E. Wirkkala (HON OSD OASD/LA) read-out summary, March 6, 2024 11:51 AM'
+    location: 'Doc 6, Wirkkala 2024-03-06 10:21'
   significance: 'FOIA 24-F-0894 documents that Dr. Sean Kirkpatrick co-presented at TWO classified Hill briefings on the AARO Historical Record Report on March 6, 2024 — Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530) — alongside Acting Director Tim Phillips and a third (b)(6)-redacted presenter. Per the Wirkkala read-out, Phillips delivered prepared opening remarks at both sessions; Kirkpatrick attended both and fielded questions alongside Phillips during Q&A. The "outside reviewer" framing later applied around Kirkpatrick (per his Greenstreet interview answers in May 2024 and per his post-departure consultancy posture) is in tension with this primary-source documentation that he was actively presenting AARO findings as part of AARO leadership three months after his official December 1, 2023 departure date.'
   context: 'Wirkkala read-out summary in FOIA 24-F-0894 documenting Kirkpatrick co-presenting two AARO Historical Record Report briefings on Capitol Hill three months after his December 1, 2023 official AARO departure'
 - id: q43

@@ -803,6 +803,14 @@ def extract_significant_tokens(text):
     # Strip trailing possessive `'s` to collapse "fravor" ↔ "fravor's".
     # (Leaves intra-word apostrophes alone: "don't" stays "don't".)
     words = [re.sub(r"'s$", "", w) for w in words]
+    # Strip trailing quote characters that the regex captured from
+    # source-quoted phrases. The matched class `[a-z0-9\-']+` includes
+    # the apostrophe so intra-word forms like "don't" survive — but the
+    # same pattern keeps a trailing quote when a source-quoted phrase
+    # like 'High' or America's UFO Mythology' decodes through YAML
+    # single-quoted-scalar escaping. The trailing quote is grammatical
+    # punctuation, never part of a word's identity; drop it.
+    words = [w.rstrip("'") for w in words]
     return {w for w in words if len(w) >= 3 and w not in STOPWORDS}
 
 

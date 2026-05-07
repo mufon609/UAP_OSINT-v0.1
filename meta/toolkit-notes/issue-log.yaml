@@ -973,3 +973,73 @@
   message: |
     Stub-linking: entity 'e23' ('WSJ — "The Pentagon Disinformation That Fueled America\'s UFO Mythology" (Schectman + Viswanatha, June 6, 2025)') wrap_path '/documents/wsj-pentagon-disinformation-ufo-mythology-2025' does not appear as a [`/documents/wsj-pentagon-disinformation-ufo-mythology-2025`] link in the node
 
+- ts: 2026-05-07T00:09:10Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/ronald-moultrie.md
+  node_type: person
+  severity: error
+  message: |
+    Section 'Program Involvement': table rows not in chronological order (saw '2021-06-01 – 2024-02-29' after '2022-07-20 – 2024-02-29' in 'period' column; earliest first)
+
+- ts: 2026-05-07T00:09:12Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/sean-kirkpatrick.md
+  node_type: person
+  severity: error
+  message: |
+    Section 'Program Involvement': table rows not in chronological order (saw '2019 – 2021' after '2022-07-20 – 2023-12-01' in 'period' column; earliest first)
+
+- ts: 2026-05-07T00:09:40Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/ronald-moultrie.md
+  node_type: person
+  severity: error
+  message: |
+    Section 'Program Involvement': table rows not in chronological order (saw '– 2015' after '2022-07-20 – 2024-02-29' in 'period' column; earliest first)
+
+- ts: 2026-05-07T00:44:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/aaro.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e47' ('Christopher Meagher') wrap_path '/people/christopher-meagher' does not appear as a [`/people/christopher-meagher`] link in the node
+
+- ts: 2026-05-07T00:44:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/aaro.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e48' ('Rheanne E. Wirkkala') wrap_path '/people/rheanne-wirkkala' does not appear as a [`/people/rheanne-wirkkala`] link in the node
+
+- ts: 2026-05-07T00:44:45Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/aaro.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e47' ('Christopher Meagher') wrap_path '/people/christopher-meagher' does not appear as a [`/people/christopher-meagher`] link in the node
+
+- ts: 2026-05-07T00:44:45Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/aaro.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e48' ('Rheanne E. Wirkkala') wrap_path '/people/rheanne-wirkkala' does not appear as a [`/people/rheanne-wirkkala`] link in the node
+

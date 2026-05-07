@@ -36,11 +36,12 @@ created: {{today}}
 
 ## Description
 
-<!-- Labeled contributor synthesis (1-3 paragraphs). Narrative about
-     what the organization is and why it is in this repository.
-     Source: free-text populated from `description` key in the research
-     artifact. Scanned by the prose-drift check against the
-     union of primary_sources token pools. -->
+<!-- Labeled contributor synthesis. Narrative about what the
+     organization is and why it is in this repository. Length is
+     source-driven (see `meta/conventions.md` "Free-prose density is
+     source-driven"). Source: free-text populated from `description`
+     key in the research artifact. Scanned by the prose-drift check
+     against the union of primary_sources token pools. -->
 
 ---
 

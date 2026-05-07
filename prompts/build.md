@@ -140,9 +140,10 @@ Fields used by `build-from-research.py` when rendering document nodes
 
 ### Step 5. Populate `description` (and other free-prose fields)
 
-A 1-3 paragraph prose summary that renders as the node's `##
-Description` section on document / transcript / media / event /
-organization / finding / location nodes. Every factual claim in the
+Prose summary that renders as the node's `## Description` section on
+document / transcript / media / event / organization / finding /
+location nodes. Length is source-driven (see `meta/conventions.md`
+"Free-prose density is source-driven"). Every factual claim in the
 description should be traceable to a specific artifact entry (quote or
 document-intrinsic field). Treat it as a synthesis of the structured
 fields below, not as new evidentiary content.

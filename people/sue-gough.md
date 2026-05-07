@@ -134,7 +134,7 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 |---|---|
 | Attributed to | FOIA case 24-F-0894 release, Document 1 (YLE Finland journalist exchange), email sent March 5, 2024 21:51 (Helsinki time), 2024-03-05 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Sue Gough email to YLE Finland journalist, March 5, 2024 21:51 — repeated in shorter form to Scientific American (March 5) and Washington Examiner (March 5) and to YLE earlier on February 14, 2024 |
+| Location | Doc 1, Gough 2024-03-05 21:51 |
 
 > Question 2 - I'm working on the press release today.  Do you want DNI/ODNI mentioned?  Unlike the annual UAP report, the legislation calls for AARO producing the report - but Dir, AARO reports to PDDNI, too, so wanted to check.
 
@@ -142,7 +142,7 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 |---|---|
 | Attributed to | FOIA case 24-F-0894 release, Document 4 (Rollout update? — ODNI omission decision), Sue Gough email to ODNI counterpart, March 5, 2024 12:51 PM, 2024-03-05 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Sue Gough email to ODNI counterpart, March 5, 2024 12:51 PM, Document 4 of FOIA release |
+| Location | Doc 4, Gough 2024-03-05 12:51 |
 
 > Flagging for you in case you haven't heard.  We do not want to see sUAS added to AARO's portfolio!
 
@@ -150,7 +150,7 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 |---|---|
 | Attributed to | FOIA case 24-F-0894 release, Document 6 (Following up from Unders — sUAS / cUAS / JBLE), Sue Gough to David Kozik, March 6, 2024 1:45 PM, Importance: High, 2024-03-06 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Sue Gough email to David A. Kozik (OUSD(I&S) Director Congressional Activities), March 6, 2024 1:45 PM, Subject "FW: Following up from Unders", Importance: High |
+| Location | Doc 6, Gough 2024-03-06 13:45 |
 
 > Agree, coordinating is just fine and a necessary role. But knowing what the senator has done in the past, I was concerned she has a bigger role in mind.
 >
@@ -160,7 +160,7 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 |---|---|
 | Attributed to | FOIA case 24-F-0894 release, Document 6 (Following up from Unders), Sue Gough reply to Kozik, March 7, 2024 9:40 AM, 2024-03-07 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Sue Gough reply to David A. Kozik, March 7, 2024 9:40 AM, Subject "RE: Following up from Unders" |
+| Location | Doc 6, Gough 2024-03-07 09:40 |
 
 > AARO reached full operational capability as of Oct. 1, 2024. In practical terms, this means AARO now has the requisite personnel, expertise, facilities and tools to carry out its core mission,
 
@@ -232,7 +232,7 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 
 | Program | Role | Period | Evidentiary Basis | Confidence | Source |
 |---|---|---|---|---|---|
-| AARO Public Affairs portfolio at OSD(PA) | Department of Defense Public Affairs spokesperson with the AARO portfolio (June 2022 — ongoing) |  | primary-source | high | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |
+| AARO Public Affairs portfolio at OSD(PA) | Department of Defense Public Affairs spokesperson with the AARO portfolio | 2022-06 | primary-source | high | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |
 
 ---
 

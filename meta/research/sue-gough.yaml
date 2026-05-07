@@ -138,7 +138,7 @@ quotes:
     Regarding an interview request, Acting Director Phillips does not have any availability for interviews at this time.  We will keep you in mind for future opportunities.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Sue Gough email to YLE Finland journalist, March 5, 2024 21:51 — repeated in shorter form to Scientific American (March 5) and Washington Examiner (March 5) and to YLE earlier on February 14, 2024'
+    location: 'Doc 1, Gough 2024-03-05 21:51'
   significance: 'Gough''s repeated standardized email response declining further press engagement with Acting Director Tim Phillips around the AARO Historical Record Report Volume I rollout, in favor of an invite-only briefing on March 8, 2024.'
   context: 'FOIA case 24-F-0894 release, Document 1 (YLE Finland journalist exchange), email sent March 5, 2024 21:51 (Helsinki time)'
   observation_type: relayed
@@ -149,7 +149,7 @@ quotes:
     Question 2 - I'm working on the press release today.  Do you want DNI/ODNI mentioned?  Unlike the annual UAP report, the legislation calls for AARO producing the report - but Dir, AARO reports to PDDNI, too, so wanted to check.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Sue Gough email to ODNI counterpart, March 5, 2024 12:51 PM, Document 4 of FOIA release'
+    location: 'Doc 4, Gough 2024-03-05 12:51'
   significance: 'Gough explicitly references AARO''s reporting line to PDDNI before the OSD(PA)-ODNI agreement to omit any ODNI mention from the AARO Historical Record Report Volume I press release.'
   context: 'FOIA case 24-F-0894 release, Document 4 (Rollout update? — ODNI omission decision), Sue Gough email to ODNI counterpart, March 5, 2024 12:51 PM'
   observation_type: relayed
@@ -160,7 +160,7 @@ quotes:
     Flagging for you in case you haven't heard.  We do not want to see sUAS added to AARO's portfolio!
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Sue Gough email to David A. Kozik (OUSD(I&S) Director Congressional Activities), March 6, 2024 1:45 PM, Subject "FW: Following up from Unders", Importance: High'
+    location: 'Doc 6, Gough 2024-03-06 13:45'
   significance: 'Importance: High institutional position from Gough that AARO should not absorb sUAS cataloguing, sent the same day Sen. Gillibrand requested AARO take that role at a SASC briefing on the December 2023 JBLE drone incursions.'
   context: 'FOIA case 24-F-0894 release, Document 6 (Following up from Unders — sUAS / cUAS / JBLE), Sue Gough to David Kozik, March 6, 2024 1:45 PM, Importance: High'
   observation_type: relayed
@@ -173,7 +173,7 @@ quotes:
     Anyway, wanted to make you were aware in case you hadn't gotten a readout of the engagement.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Sue Gough reply to David A. Kozik, March 7, 2024 9:40 AM, Subject "RE: Following up from Unders"'
+    location: 'Doc 6, Gough 2024-03-07 09:40'
   significance: 'Gough accepts Kozik''s coordinating-role framing for AARO on counter-sUAS while reiterating concern that Sen. Gillibrand was seeking a bigger AARO role; documents the senator-driven origin of the same-day Importance: High portfolio email.'
   context: 'FOIA case 24-F-0894 release, Document 6 (Following up from Unders), Sue Gough reply to Kozik, March 7, 2024 9:40 AM'
   observation_type: relayed
@@ -463,10 +463,10 @@ program_involvement:
 - id: pi1
   added_date: '2026-05-06'
   program: AARO Public Affairs portfolio at OSD(PA)
-  role: Department of Defense Public Affairs spokesperson with the AARO portfolio (June 2022 — ongoing)
+  role: Department of Defense Public Affairs spokesperson with the AARO portfolio
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2022-06'
+  period_start: '2022-06'
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
     location: 'Sue Gough email signature in FOIA case 24-F-0894 — Defense Press Operations, OSD(PA); on-record AARO statements across June 2022 through February 2026'

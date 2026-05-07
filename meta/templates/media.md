@@ -72,13 +72,16 @@ corpus: {{corpus}}
                 provenance | other]; see schema.yaml
                 media_versioning_entry for the per-aspect semantics
        Parent — short observation of the parent (derivation_of) node
-                (1-2 lines)
-       This   — short observation of this derivative (1-2 lines)
+                — length is whatever the source attests
+       This   — short observation of this derivative — length is
+                whatever the source attests
        Source — primary source attesting the difference (archived
                 press release, FOIA response, side-by-side inspection,
                 etc.)
        Note   — optional contributor synthesis of analytical
-                significance (1-2 sentences) -->
+                significance. Length is source-driven (see
+                `meta/conventions.md` "Free-prose density is
+                source-driven"). -->
 <!-- DERIVATIVE: yes -->
 ## Media Versioning
 

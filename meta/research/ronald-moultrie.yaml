@@ -346,8 +346,8 @@ program_involvement:
   role: Cognizant senior advisor at AARO establishment (July 20 2022); selected Sean Kirkpatrick as inaugural Director; chaired AARO Executive Council across most of Kirkpatrick's directorship; reporting chain transitioned from OUSD(I&S) to Deputy Secretary of Defense in late July 2023
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2022-07-20'
-  end_date: '2024-02-29'
+  period_start: '2022-07-20'
+  period_end: '2024-02-29'
   source:
     path: government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html
     location: ¶ Under Secretary of Defense for Intelligence and Security
@@ -357,8 +357,8 @@ program_involvement:
   role: Principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; exercised authority, direction, and control over NSA, DIA, NGA, NRO, DCSA and the intelligence components of the combatant commands and military services
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2021-06-01'
-  end_date: '2024-02-29'
+  period_start: '2021-06-01'
+  period_end: '2024-02-29'
   source:
     path: government/wargov-moultrie-biography.html
     location: ¶ Mr. Moultrie exercised authority
@@ -368,8 +368,8 @@ program_involvement:
   role: Reported to the Director of National Intelligence in this capacity
   evidentiary_basis: primary-source
   confidence: high
-  start_date: '2021-06-01'
-  end_date: '2024-02-29'
+  period_start: '2021-06-01'
+  period_end: '2024-02-29'
   source:
     path: government/wargov-moultrie-biography.html
     location: ¶ He also was dual-hatted
@@ -379,7 +379,7 @@ program_involvement:
   role: Final pre-retirement role at NSA; retired from the DoD in 2015 as NSA's Director of Operations
   evidentiary_basis: primary-source
   confidence: high
-  end_date: '2015'
+  period_end: '2015'
   source:
     path: government/wargov-moultrie-biography.html
     location: ¶ He retired from the DoD in 2015
@@ -407,7 +407,7 @@ program_involvement:
   role: Appointed Board Member; served until January 2025
   evidentiary_basis: primary-source
   confidence: high
-  end_date: '2025-01'
+  period_end: '2025-01'
   source:
     path: news/umd-moultrie-faculty-bio.html
     location: ¶ until January 2025

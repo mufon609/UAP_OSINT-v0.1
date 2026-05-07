@@ -342,7 +342,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | FOIA 24-F-0894, Sue Gough reply email to journalist inquiry, repeated verbatim across multiple journalist exchanges in February-March 2024, 2024-02-14 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Sue Gough reply to journalist inquiries about AARO HRR Vol I press engagement, February-March 2024 |
+| Location | Doc 3, Gough 2024-03-05 14:46 |
 
 ---
 
@@ -354,7 +354,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | FOIA 24-F-0894, Pentagon internal email Sue Gough (OSD/PA) to ODNI counterpart, March 5, 2024 12:51 PM, 2024-03-05 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Pentagon spokesperson Sue Gough internal email to ODNI counterpart, March 5, 2024 12:51 PM |
+| Location | Doc 4, Gough 2024-03-05 12:51 |
 
 ---
 
@@ -366,7 +366,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | FOIA 24-F-0894, ODNI internal-email reply to Gough, March 5, 2024 2:53 PM (sender (b)(3) 50 USC § 3024(i)/(m)-redacted), 2024-03-05 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | ODNI counterpart reply email to Sue Gough, March 5, 2024 2:53 PM |
+| Location | Doc 4, ODNI 2024-03-05 14:53 |
 
 ---
 
@@ -378,7 +378,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | FOIA 24-F-0894, Sue Gough to David Kozik email, March 6, 2024 1:45 PM, "Importance: High", 2024-03-06 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Sue Gough email to David A. Kozik (OUSD(I&S) Director Congressional Activities), March 6, 2024 1:45 PM, Subject "FW: Following up from Unders", Importance: High |
+| Location | Doc 6, Gough 2024-03-06 13:45 |
 
 ---
 
@@ -392,7 +392,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | FOIA 24-F-0894, Lane Bodian (SES, OASD/LA) email summary of March 6, 2024 SASC briefing on JBLE December 2023 drone incursions, 2024-03-06 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Lane A. Bodian (SES, OASD/LA) email summary of SASC member briefing on JBLE drone incursions, March 6, 2024 1:28 PM |
+| Location | Doc 6, Bodian 2024-03-06 13:28 |
 
 ---
 
@@ -408,9 +408,9 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 | Field | Value |
 |---|---|
-| Attributed to | FOIA 24-F-0894, Heather King (SES, SD office) email to Meagher, Waibel, March 6, 2024 10:19 AM, 2024-03-06 |
+| Attributed to | FOIA 24-F-0894, Heather King ([`/people/heather-king`]) (SES, SD office) email to Christopher Meagher ([`/people/christopher-meagher`]), Waibel, March 6, 2024 10:19 AM, 2024-03-06 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Heather King ([`/people/heather-king`]) (SES, Secretary of Defense office) email to Christopher Meagher ([`/people/christopher-meagher`]) (SES, OSD/PA), March 6, 2024 10:19 AM, Subject "Following up from Unders" |
+| Location | Doc 6, King 2024-03-06 10:19 |
 
 ---
 
@@ -420,9 +420,9 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 | Field | Value |
 |---|---|
-| Attributed to | FOIA 24-F-0894, Rheanne Wirkkala (HON OSD OASD/LA) read-out summary, March 6, 2024 11:51 AM, 2024-03-06 |
+| Attributed to | FOIA 24-F-0894, Rheanne Wirkkala ([`/people/rheanne-wirkkala`]) (HON OSD OASD/LA) read-out, March 6, 2024 10:21 AM, 2024-03-06 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Rheanne E. Wirkkala ([`/people/rheanne-wirkkala`]) (HON OSD OASD/LA) read-out of two AARO Hill briefings on the AARO HRR, March 6, 2024 |
+| Location | Doc 6, Wirkkala 2024-03-06 10:21 |
 
 ---
 
@@ -434,9 +434,9 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 | Field | Value |
 |---|---|
-| Attributed to | FOIA 24-F-0894, Wirkkala read-out, March 6, 2024 Compartmented Annex Brief Q&A summary, 2024-03-06 |
+| Attributed to | FOIA 24-F-0894, Rheanne Wirkkala ([`/people/rheanne-wirkkala`]) read-out, March 6, 2024 Compartmented Annex Brief Q&A summary, 2024-03-06 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | Rheanne E. Wirkkala read-out, Compartmented Annex Brief Q&A summary, March 6, 2024 |
+| Location | Doc 6, Wirkkala 2024-03-06 10:21 |
 
 ---
 
@@ -448,7 +448,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | FOIA 24-F-0894, David Kozik (OUSD(I&S) Director Congressional Activities) reply email to Sue Gough, March 7, 2024 9:23 AM, 2024-03-07 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | David A. Kozik reply email to Sue Gough, March 7, 2024 9:23 AM, Subject "RE: Following up from Unders" |
+| Location | Doc 6, Kozik 2024-03-07 09:23 |
 
 ---
 
@@ -974,7 +974,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 |---|---|
 | Attributed to | FOIA 24-F-0894 cover letter dated August 26, 2025, signed by Pamela Andrews, Chief, FOIA, OSD/JS Freedom of Information Division, 2025-08-26 |
 | Source | [archived source](../sources/government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf) |
-| Location | FOIA 24-F-0894 cover letter dated August 26, 2025, Initial Denial Authority paragraph |
+| Location | Cover letter, ¶3 |
 
 ---
 

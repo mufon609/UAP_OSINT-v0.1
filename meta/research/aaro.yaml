@@ -873,7 +873,7 @@ quotes:
     Question 2 — I’m working on the press release today. Do you want DNI/ODNI mentioned? Unlike the annual UAP report, the legislation calls for AARO producing the report — but Dir, AARO reports to PDDNI, too, so wanted to check.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Pentagon spokesperson Sue Gough internal email to ODNI counterpart, March 5, 2024 12:51 PM'
+    location: 'Doc 4, Gough 2024-03-05 12:51'
   significance: 'Pentagon spokesperson Sue Gough (OSD/PA) to ODNI counterpart on March 5, 2024 — internal coordination on whether to mention DNI/ODNI in the AARO Historical Record Report Volume I rollout press release. Gough explicitly references AARO''s statutory dual reporting line (Director, AARO reports to PDDNI per 50 U.S.C. § 3373) as the question warranting check.'
   context: 'FOIA 24-F-0894, Pentagon internal email Sue Gough (OSD/PA) to ODNI counterpart, March 5, 2024 12:51 PM'
   statement_date: '2024-03-05'
@@ -883,7 +883,7 @@ quotes:
     Confirming that we're good without any ODNI mention
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'ODNI counterpart reply email to Sue Gough, March 5, 2024 2:53 PM'
+    location: 'Doc 4, ODNI 2024-03-05 14:53'
   significance: 'ODNI counterpart''s confirmation reply to Gough — the public AARO HRR Vol I rollout was framed as DoD-only, with the omission of ODNI agreed to bilaterally by ODNI''s own public-affairs office (sender redacted under (b)(3) 50 USC § 3024(i)/(m), the ODNI sources-and-methods exemption). Anchors the operational PA-coordination shape of the rollout, as distinct from a unilateral DoD framing decision.'
   context: 'FOIA 24-F-0894, ODNI internal-email reply to Gough, March 5, 2024 2:53 PM (sender (b)(3) 50 USC § 3024(i)/(m)-redacted)'
   statement_date: '2024-03-05'
@@ -893,7 +893,7 @@ quotes:
     Thanks for reaching out. At this time, we are looking to keep any media engagement with AARO's acting director to a small group.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Sue Gough reply to journalist inquiries about AARO HRR Vol I press engagement, February-March 2024'
+    location: 'Doc 3, Gough 2024-03-05 14:46'
   significance: 'Pentagon spokesperson Sue Gough''s standardized reply to multiple journalist requests (Scientific American, Washington Examiner, YLE Finland) for press-engagement access to Acting AARO Director Tim Phillips around the AARO HRR Vol I release. Documents the invite-only press-rollout posture; substantive media access was declined in favor of a single small invite-only briefing on March 8, 2024.'
   context: 'FOIA 24-F-0894, Sue Gough reply email to journalist inquiry, repeated verbatim across multiple journalist exchanges in February-March 2024'
   statement_date: '2024-02-14'
@@ -903,7 +903,7 @@ quotes:
     Flagging for you in case you haven't heard. We do not want to see sUAS added to AARO's portfolio!
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Sue Gough email to David A. Kozik (OUSD(I&S) Director Congressional Activities), March 6, 2024 1:45 PM, Subject "FW: Following up from Unders", Importance: High'
+    location: 'Doc 6, Gough 2024-03-06 13:45'
   significance: 'Pentagon spokesperson Sue Gough (OSD/PA) to David A. Kozik (Director Congressional Activities, OUSD(I&S)) on March 6, 2024 — explicit institutional position that AARO''s portfolio should not be expanded to include small unmanned aircraft systems (sUAS) cataloging despite Sen. Gillibrand''s same-day request at the SASC briefing on JBLE drone incursions. Sent at 1:45 PM with "Importance: High" flag.'
   context: 'FOIA 24-F-0894, Sue Gough to David Kozik email, March 6, 2024 1:45 PM, "Importance: High"'
   statement_date: '2024-03-06'
@@ -913,7 +913,7 @@ quotes:
     Thanks Sue—yeah, there's a bit of challenge here. AARO absolutely should be involved in cUAS efforts in a *coordinating* role, but they should not/not be the lead. The problem is, the rest of DoD doesn't always think to include them even in the coordinating role—or forgets to mention that they're part of the team when they're engaging certain members of Congress who are convinced they must be part of the team.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'David A. Kozik reply email to Sue Gough, March 7, 2024 9:23 AM, Subject "RE: Following up from Unders"'
+    location: 'Doc 6, Kozik 2024-03-07 09:23'
   significance: 'David A. Kozik (Director Congressional Activities, OUSD(I&S)) reply to Gough on March 7, 2024 — establishes OUSD(I&S)''s institutional position that AARO has a coordinating but not lead role in counter-sUAS efforts, and attributes the Sen. Gillibrand "lead role" framing to a "prep failure on our part for ASD HD&HA" (Becky Zimmerman) at the prior-day SASC briefing. Confirms operational coordination between AARO Public Affairs (Gough) and OUSD(I&S) Congressional Activities (Kozik) on AARO''s Hill-facing scope.'
   context: 'FOIA 24-F-0894, David Kozik (OUSD(I&S) Director Congressional Activities) reply email to Sue Gough, March 7, 2024 9:23 AM'
   statement_date: '2024-03-07'
@@ -925,7 +925,7 @@ quotes:
                AARO. Ms. Zimmerman briefly mentioned stand-up of the SIG C-UXS during this exchange.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Lane A. Bodian (SES, OASD/LA) email summary of SASC member briefing on JBLE drone incursions, March 6, 2024 1:28 PM'
+    location: 'Doc 6, Bodian 2024-03-06 13:28'
   significance: 'Lane A. Bodian (Senior Executive Service, Office of the Assistant Secretary of Defense for Legislative Affairs) summary of the SASC member briefing on the December 2023 JBLE drone incursions, given by PTDO ASD Becky Zimmerman (HD&HA), RADM Spedero (Joint Staff), and Maj Gen Sherman (USAF). Documents Sen. Gillibrand''s on-the-record position — "sUAS should be catalogued by AARO" — that Gough and Kozik subsequently contested in their March 6-7 2024 internal exchange. The 14 senators in attendance included Reed, Wicker, Shaheen, Gillibrand, Ernst, Cramer, Tuberville, Rounds, Schmitt, Cotton, Manchin, Peters, Kaine, and Kelly.'
   context: 'FOIA 24-F-0894, Lane Bodian (SES, OASD/LA) email summary of March 6, 2024 SASC briefing on JBLE December 2023 drone incursions'
   statement_date: '2024-03-06'
@@ -941,9 +941,9 @@ quotes:
     those hill engagements.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Heather King ([`/people/heather-king`]) (SES, Secretary of Defense office) email to Christopher Meagher ([`/people/christopher-meagher`]) (SES, OSD/PA), March 6, 2024 10:19 AM, Subject "Following up from Unders"'
+    location: 'Doc 6, King 2024-03-06 10:19'
   significance: 'Heather King (SES, immediate Secretary of Defense office) email on March 6, 2024 — the Deputy Secretary of Defense (Hicks) office''s direct staff connected the Joint Base Langley-Eustis December 2023 drone incursion story (Breaking Defense reporting) to the AARO Historical Record Report Vol I rollout in DoD''s own internal correspondence on the day of the rollout briefings. King requested a readout of the AARO Hill engagements.'
-  context: 'FOIA 24-F-0894, Heather King (SES, SD office) email to Meagher, Waibel, March 6, 2024 10:19 AM'
+  context: 'FOIA 24-F-0894, Heather King ([`/people/heather-king`]) (SES, SD office) email to Christopher Meagher ([`/people/christopher-meagher`]), Waibel, March 6, 2024 10:19 AM'
   statement_date: '2024-03-06'
 - id: q69
   added_date: '2026-05-01'
@@ -951,9 +951,9 @@ quotes:
     Mr. Tim Phillips, Acting Director AARO, and (b)(6) were joined by Dr. Sean Kirkpatrick in a compartmented brief and a TS//SCI brief to staff on the findings of the Historical Record Report
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Rheanne E. Wirkkala ([`/people/rheanne-wirkkala`]) (HON OSD OASD/LA) read-out of two AARO Hill briefings on the AARO HRR, March 6, 2024'
+    location: 'Doc 6, Wirkkala 2024-03-06 10:21'
   significance: 'Rheanne E. Wirkkala (Assistant Secretary of Defense for Legislative Affairs) read-out documents that Acting Director Tim Phillips and a third (b)(6)-redacted presenter were joined by Dr. Sean Kirkpatrick in TWO classified Hill briefings on the AARO Historical Record Report on March 6, 2024 — three months after Kirkpatrick''s December 1, 2023 official AARO departure. Briefings were Compartmented Annex Brief to Senior Staff (1300-1400) and TS//SCI Brief to Intelligence and Defense Committee Professional Staff Members (1400-1530).'
-  context: 'FOIA 24-F-0894, Rheanne Wirkkala (HON OSD OASD/LA) read-out summary, March 6, 2024 11:51 AM'
+  context: 'FOIA 24-F-0894, Rheanne Wirkkala ([`/people/rheanne-wirkkala`]) (HON OSD OASD/LA) read-out, March 6, 2024 10:21 AM'
   statement_date: '2024-03-06'
 - id: q70
   added_date: '2026-05-01'
@@ -963,9 +963,9 @@ quotes:
       narratives related to UAP based on the review.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'Rheanne E. Wirkkala read-out, Compartmented Annex Brief Q&A summary, March 6, 2024'
+    location: 'Doc 6, Wirkkala 2024-03-06 10:21'
   significance: 'Hill staff at the AARO HRR Compartmented Annex briefing (1300-1400, March 6, 2024) explicitly asked AARO leadership for "perspectives and recommendations for countering inaccurate or misleading narratives related to UAP based on the review" — committee-staff request to AARO at the SCI level for narrative-shaping work product, attested in DoD legislative-affairs correspondence.'
-  context: 'FOIA 24-F-0894, Wirkkala read-out, March 6, 2024 Compartmented Annex Brief Q&A summary'
+  context: 'FOIA 24-F-0894, Rheanne Wirkkala ([`/people/rheanne-wirkkala`]) read-out, March 6, 2024 Compartmented Annex Brief Q&A summary'
   statement_date: '2024-03-06'
 - id: q71
   added_date: '2026-05-01'
@@ -974,7 +974,7 @@ quotes:
     determined that the pages contained information exempt from mandatory public release.
   source:
     path: government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf
-    location: 'FOIA 24-F-0894 cover letter dated August 26, 2025, Initial Denial Authority paragraph'
+    location: 'Cover letter, ¶3'
   significance: 'FOIA 24-F-0894 cover letter (August 26, 2025) attesting five Initial Denial Authorities signed off on the 14-page release — Mr. Paul Plescow (Senior Intelligence Officer, Intelligence and Security), Ms. Ca-Asia Lane (Director of Operations, Legislative Affairs), Ms. Erin Morrison (Chief, Information Review and Release Group, Office of the Director of National Intelligence), Ms. Tanya Rose (Information Management Director, Public Affairs), and Ms. Debra Shockley (Deputy Director, Policy Executive Secretariat, Under Secretary of Defense for Policy). Cross-component IDA breadth (OSD/I&S, OASD/LA, ODNI, OSD/PA, OUSD/Policy) documents that AARO HRR rollout messaging implicated five OSD components plus ODNI on the redaction-authority side.'
   context: 'FOIA 24-F-0894 cover letter dated August 26, 2025, signed by Pamela Andrews, Chief, FOIA, OSD/JS Freedom of Information Division'
   statement_date: '2025-08-26'
