@@ -172,14 +172,66 @@ photo metadata in two unauthenticated calls.
 
 **Problem:** Video pages are JavaScript-heavy and don't yield useful
 content via `curl` or WebFetch. Video files can't be meaningfully
-archived as HTML.
+archived as HTML. Some IPs (cloud provider ranges, VPN exit nodes,
+sustained-scraping IPs) hit YouTube's anti-bot wall and are rejected
+by both `youtube-transcript-api` ("YouTube is blocking requests from
+your IP") and `yt-dlp` ("Sign in to confirm you're not a bot") even
+with `--cookies-from-browser` and a JS runtime in place.
 
-**What works:**
+**What works (in priority order):**
 
-- **`scripts/transcribe.py URL`** — downloads YouTube captions (auto or
-  manual) and formats as markdown with timestamps. Writes to
-  `sources/transcripts/`.
-- **yt-dlp** — for full video download if the node genuinely needs it.
+- **`scripts/transcribe.py URL`** — first attempt. Uses
+  `youtube-transcript-api` to download captions (auto-generated or
+  manual). Formats as timestamped markdown to `sources/transcripts/`.
+- **`yt-dlp` with `--cookies-from-browser firefox` and a JS runtime
+  (`deno`)** — second attempt. Modern yt-dlp requires a JS runtime
+  to navigate YouTube's anti-bot challenge; install `deno` if missing
+  (`curl -fsSL https://deno.land/install.sh | sh`). Use this path
+  for full video downloads (subject to the "Large primary-source
+  files (>100MB)" section below) or as a transcribe.py fallback.
+- **Manual paste from YouTube's "Show transcript" UI** — fallback
+  when both extraction libraries are IP-blocked. Open the video in
+  a browser, click the three-dot menu → "Show transcript", select
+  all, copy, paste into a file at `sources/transcripts/<descriptive-name>.txt`.
+  The pasted text concatenates `<H:MM:SS><spelled-out-duration><line text>`
+  per line without separators (a screen-reader accessibility artifact
+  of YouTube's transcript pane); strip the duration overlay with this
+  Python regex before registering:
+
+  ```python
+  import re
+  LINE_RE = re.compile(
+      r'^'
+      r'(?P<ts>\d{1,2}(?::\d{2}){1,2})'
+      r'\d+\s+(?:hour|minute|second)s?'
+      r'(?:,\s+\d+\s+(?:hour|minute|second)s?){0,2}'
+      r'(?P<text>.*)$'
+  )
+  # Apply per line; replace each match with f'[{ts}] {text}'.
+  ```
+
+  Strip the trailing `Sync to video time` UI artifact at the bottom of
+  the paste. Register in manifest with `format: transcript`, noting
+  the manual-paste origin and the cleanup applied.
+
+**Notes on the manual-paste discipline:**
+
+- Auto-caption typos (`bigalow`, `lockie martin`, etc.) are preserved
+  verbatim per `feedback_transcript_timestamps_in_quotes.md`. Log
+  source-form-vs-canonical variances in the artifact's `naming_quirks`
+  with `resolution: preserve-as-sic-in-quotes`.
+- The cleaned `[H:MM:SS] text` shape matches what `transcribe.py`
+  produces, so downstream tooling (verbatim-quote check, prose-drift
+  tokenizer) treats the paste indistinguishably from a CLI download.
+- If the video is auto-caption-derived (most), the open question
+  about audio-as-source-of-record vs caption-as-source-of-record
+  remains BACKLOG A1; the manual-paste path inherits the same
+  unresolved framing.
+
+Surfaced: 2026-05-06 Ryder build session — IP-blocked YouTube
+extraction forced manual-paste fallback for the 2025-09-09 House
+Oversight UAP hearing transcript; cleanup regex captured here so
+the next session doesn't re-derive it.
 
 ---
 
@@ -302,6 +354,73 @@ false errors.
 
 Surfaced: Grusch rebuild (2026-04-22) — 5 Wayback-fetched HTMLs arrived
 gzipped; decompressed post-hoc with checksum update.
+
+---
+
+## Large primary-source files (>100MB)
+
+**Problem:** GitHub's git remote enforces a 100MB hard limit per file
+and a 50MB warning threshold. Common primary-source media — full-
+length video recordings, large scanned-image PDFs, audio archives —
+routinely exceed both thresholds. A push containing such a file is
+rejected with `GH001: Large files detected`, which forces a recovery
+that strips the file from history before re-pushing.
+
+**What works:**
+
+- **Local archive + manifest registration only.** The local file in
+  `sources/<category>/<filename>` is the integrity guarantee per
+  `meta/conventions.md`; the manifest entry records the source URL
+  and sha256, so anyone cloning the repo can re-download from the
+  source URL and verify integrity against the recorded sha256. The
+  file itself is never committed to the git remote.
+
+- **Add the source category directory (or a specific file pattern
+  within it) to `.gitignore`** so future primary sources of the same
+  shape don't accidentally land in the git index. Already-tracked
+  small files in the same directory remain tracked because gitignore
+  does not retroactively untrack files. Example for video:
+
+  ```
+  # Video primary sources — kept locally per manifest entries
+  # (URL + sha256) but excluded from git remote due to file-size
+  # limits.
+  sources/video/
+  ```
+
+- **The pre-commit gate `scripts/tests/file-size-check.sh`** (gate 8
+  in `scripts/tests/pre-commit.sh`) walks the git index and warns on
+  any file 50MB–100MB / errors on any file >100MB. The error blocks
+  the commit; the warning prints but does not block. Set up before
+  the first oversized primary source lands.
+
+**Recovery if a large file was committed before the gate caught it:**
+
+1. Add the file's directory or a specific pattern to `.gitignore`.
+2. `git rm --cached <path>` — removes from the git index, preserves
+   the local file.
+3. `git commit --amend --no-edit` — replaces the existing commit so
+   the file is no longer in history. If the commit hasn't been pushed
+   yet, this is enough; otherwise force-push rewrites shared history
+   and should be coordinated with collaborators (or avoided if the
+   commit is already widely fetched).
+4. Re-push.
+
+**Why not Git LFS?** Git LFS would track large files via pointers and
+push the actual content to a separate LFS store. It's a viable path
+for repos that genuinely need versioning of large binaries. This
+toolkit instead treats large primary sources as content-addressable
+through their source URL + sha256 — the file is regeneratable from
+the URL, and integrity is checked at extraction time. LFS adds
+infrastructure dependencies without solving a problem the manifest
+doesn't already solve.
+
+Surfaced: 2026-05-06 Ryder build session — two Vimeo recordings (826
+MB and 1.2 GB) were committed before the file-size discipline was
+documented; push to GitHub failed; recovery via `.gitignore` +
+`git rm --cached` + amend cleaned the history. Discipline codified
+here and gated by `file-size-check.sh` so the failure mode doesn't
+recur.
 
 ---
 

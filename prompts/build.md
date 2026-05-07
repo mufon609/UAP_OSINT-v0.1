@@ -746,9 +746,9 @@ node surfaces no semantic issues. Ready to commit.
    ```
    bash scripts/tests/pre-commit.sh
    ```
-   All seven gates must pass (help-check, test_stopwords, smoke,
+   All eight gates must pass (help-check, test_stopwords, smoke,
    validate.py, validate-research.py, review-coverage.py,
-   build-state.py --check).
+   build-state.py --check, file-size-check).
 6. `python3 scripts/build-state.py --update` if the commit adds, removes,
    or changes the status of a node (refreshes the CLAUDE.md build-state block)
 7. Commit the research artifact + regenerated node + any manifest
@@ -762,7 +762,7 @@ Until the F.7 renderer ships:
 2. Hand-author the node body per `meta/conventions.md`, drawing
    exclusively from artifact entries (no training-knowledge claims)
 3. `validate.py` passes; run `associate.py` to regenerate Associated Nodes
-4. Run `bash scripts/tests/pre-commit.sh` — all seven gates green before commit
+4. Run `bash scripts/tests/pre-commit.sh` — all eight gates green before commit
 
 `review-coverage.py` currently skips finding artifacts with a notice;
 full coverage review unlocks when the F.7 renderer lands.

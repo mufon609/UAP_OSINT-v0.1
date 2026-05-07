@@ -81,7 +81,7 @@ not direct edits to the node body. Pattern:
 3. Regenerate the node (renderer-supported types):
    `python3 scripts/build-from-research.py meta/research/{slug}.yaml`
 4. Re-run `review-coverage.py` — must pass all four checks
-5. Run the full pre-commit chain — all seven gates green
+5. Run the full pre-commit chain — all eight gates green
    (`bash scripts/tests/pre-commit.sh`)
 6. Commit with a descriptive message; git log is the edit history.
 

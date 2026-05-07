@@ -17,6 +17,9 @@
 #                                         stub-linking / description-drift
 #   7. python3 scripts/build-state.py --check
 #                                       — CLAUDE.md build-state block in sync
+#   8. scripts/tests/file-size-check.sh — git-tracked files within
+#                                         GitHub's size thresholds (warn
+#                                         50MB / error 100MB)
 #
 # Adding or removing a gate: edit the `steps` array below. Step
 # numbering ("N/total") regenerates automatically from the array length.
@@ -89,6 +92,7 @@ steps=(
     $'validate-research.py\tpython3 scripts/validate-research.py'
     $'review-coverage.py\tpython3 scripts/review-coverage.py --all'
     $'build-state.py --check\tpython3 scripts/build-state.py --check'
+    $'file-size-check\tbash scripts/tests/file-size-check.sh'
 )
 
 total=${#steps[@]}

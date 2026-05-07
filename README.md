@@ -83,13 +83,15 @@ scripts/
                             modules; keeps mechanical lockstep across them
 
 scripts/tests/
-  pre-commit.sh             canonical all-gates health check (chains 7 gates:
+  pre-commit.sh             canonical all-gates health check (chains 8 gates:
                             help-check / test_stopwords / smoke / validate.py /
                             validate-research.py / review-coverage.py /
-                            build-state.py --check)
+                            build-state.py --check / file-size-check)
   help-check.sh             confirms every scripts/*.py --help exits 0
   test_stopwords.py         STOPWORDS shape + content-word regression test
   smoke.sh                  fixture-based new.py + validator smoke tests
+  file-size-check.sh        warn 50MB / error 100MB on git-tracked files
+                            (per meta/sources-access.md large-file discipline)
 
 sources/
   manifest.yaml             source-archival index (YAML; sha256-checksummed)
@@ -188,9 +190,9 @@ health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-This chains 7 gates: help-check / test_stopwords / smoke /
+This chains 8 gates: help-check / test_stopwords / smoke /
 `validate.py` / `validate-research.py` / `review-coverage.py` /
-`build-state.py --check`. Then pick work from
+`build-state.py --check` / `file-size-check`. Then pick work from
 `meta/topic/research-queue.md`.
 
 ---
