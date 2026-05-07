@@ -337,6 +337,29 @@ in its own context. Resolution requires per-instance source-form audit
 (which source attests which form), not opportunistic harmonization.
 Worth a systematic pass once a clear pattern emerges across 3+ nodes.
 
+### Deceased subject — `status` field semantics + structured lifespan
+
+The schema's `status` field on a person artifact carries values
+`active | in-progress` and reflects the *node's* maintenance state
+(actively maintained vs in-progress build), not the *subject's*
+life status. The current schema has no structured `died`, `born`,
+`lifespan`, or equivalent field — death is captured only in
+`credibility_notes` prose and (when the date is uncertain) in
+`rumors[]`. `/people/james-ryder` is the surfacing case in the
+REFACTOR repo: deceased subject, `status: active` per node-
+maintenance semantics, with the deceased state documented in
+credibility_notes prose. The Affiliations row for his IVS Chairman
+role has no `period_end` because the IVS leadership page (the source
+attestation for the role) hasn't been updated since his death — the
+"ongoing" render is technically correct against source but
+implicitly contradicted by the deceased-status prose. Adjacent to
+the "known start, unknown end" facet above; both stem from "what
+should the structured surface say when the source attestation is
+stale relative to a known-but-unsourced fact". Worth a convention
+pass once a 3+ node pattern accumulates (legacy parent repo has
+several deceased subjects already; if those nodes are migrated into
+REFACTOR, the pattern reaches threshold immediately).
+
 ---
 
 ## Milestones
