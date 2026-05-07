@@ -190,14 +190,12 @@ def do_batch(artifact_path):
             msg += f"; {skipped} source(s) skipped (binary)"
         print(msg)
         sys.exit(1)
+    extracted = len(sources) - skipped
     if skipped:
-        print(f"✓ {len(sources) - skipped} source(s) extracted; "
+        print(f"✓ {extracted} source(s) extracted; "
               f"{skipped} source(s) skipped (binary).")
-        print()
-        print("Next (Phase I steps, per prompts/build.md):")
-        print(f"  - Review each /tmp/scratch-{slug}-N.txt")
-        return
-    print(f"✓ All {len(sources)} sources extracted.")
+    else:
+        print(f"✓ All {len(sources)} sources extracted.")
     print()
     print("Next (Phase I steps, per prompts/build.md):")
     print(f"  - Review each /tmp/scratch-{slug}-N.txt")

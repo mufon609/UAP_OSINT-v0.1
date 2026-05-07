@@ -171,7 +171,7 @@ class ResearchContext(BaseContext):
 
     ``raw_lines`` is the file content split into lines for pre-parse
     checks (yaml_hash_truncation, yaml_colon_space) that scan before
-    yaml.safe_load runs. ``data`` is the parsed YAML; the orchestrator
+    strict_yaml_load runs. ``data`` is the parsed YAML; the orchestrator
     is responsible for the load + parse and populates ``data`` on
     success or ``parse_error`` (string from yaml.YAMLError) on failure.
     The ``artifact_parse`` preflight check inspects this state and

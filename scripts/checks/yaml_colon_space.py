@@ -15,7 +15,7 @@ Heuristic skips:
 Warns only when the post-colon content is ≥2 words, reducing false
 positives on single-word sub-keys.
 
-Runs against ``ctx.raw_lines`` before yaml.safe_load. Parallel to
+Runs against ``ctx.raw_lines`` before strict_yaml_load. Parallel to
 ``yaml_hash_truncation`` — both are pre-parse heuristics for
 common YAML-mis-parse shapes.
 """

@@ -7,7 +7,7 @@ everything after the ``#``). Warns rather than errors — the YAML is
 technically valid; the check flags a likely contributor mistake.
 
 Pre-parse: runs against the file's raw line text via ``ctx.raw_lines``
-BEFORE ``yaml.safe_load``.
+BEFORE ``strict_yaml_load``.
 
 Heuristic tolerates one-line trailing comments (post-``#`` content
 under 3 words is plausibly a deliberate contributor note). Only warns
