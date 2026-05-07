@@ -1,0 +1,150 @@
+SCOPE OF THIS SIBLING
+=====================
+
+This `.txt` sibling covers PAGE 1 ONLY of the 21-page SD004 PDF —
+the load-bearing contemporary Q&A content authored by an unnamed
+contributor under DoD prepublication review (DOPSR) clearance dated
+2023-09-06.
+
+Pages 2-21 of the SD004 PDF are appended historical primary-source
+attachments from the National Archives — each a famous UAP-related
+government document with its own provenance and worthy of dedicated
+document-node treatment. Specifically:
+
+- pp. 2-3: 25 May 1950 USAF OSI memo from Doyle Rees on aerial
+  phenomena in the New Mexico area (Dec 1948 - May 1950).
+- pp. 4-6: 23 Sep 1947 Air Materiel Command "AMC Opinion Concerning
+  Flying Discs" memo, Lt Gen Nathan F. Twining to Brig Gen George
+  Schulgen.
+- pp. 7-12: 24 Sep 1952 / 2 Oct 1952 H. Marshall Chadwell CIA Office
+  of Scientific Intelligence "Flying Saucers" memorandum to the
+  Director of Central Intelligence.
+- pp. 13-15: 12 May 1952 FBI Savannah teletype + 25 May 1952 J. Edgar
+  Hoover memo on Savannah River Plant disc sightings.
+- p. 16: 18 Oct 1950 FBI Knoxville memo on radar detection of
+  unidentified objects over Oak Ridge, Oct 12-16, 1950.
+- pp. 17-18: 15 Oct 1950 / 16 Oct 1950 / 20 Oct 1950 OSI / Atomic
+  Energy Commission Security Patrol incident reports — Oak Ridge area.
+- p. 19: 1949 Air Defense Command incident reports.
+- pp. 20-21: 23 Sep 1957 FBI Belmont memo on a 20 Sep 1957
+  unidentified flying object reported by U.S. Air Defense Command
+  (Montauk Point / Benton, Pennsylvania radar tracking).
+
+Each appended primary source carries its own classification chain,
+authorship, dates, and historical significance independent of
+SD004's contemporary Q&A content. Future contributors building those
+document nodes should produce their own `.txt` siblings (or, if the
+primary sources are independently archived elsewhere in the
+public record, register the cleaner originals as separate manifest
+entries) rather than extending this file. This sibling exists for
+the page-1 contributor Q&A only.
+
+EXTRACTION METHODOLOGY
+======================
+
+The SD004 PDF has no embedded text layer (verified: pdftotext output
+is zero bytes). All 21 pages are 200-DPI scanned images embedded as
+JPEG (color) or CCITT (grayscale). The page-1 transcription below
+was produced by visually reading the page-1 image via a multimodal
+LLM and authoring the verbatim text from what is legibly displayed.
+Bracketed annotations [in square brackets] document where DOPSR /
+disclaimer text overlays partially occlude the underlying Q&A text.
+
+================================================================
+PAGE 1 — CONTEMPORARY Q&A CONTENT (DOPSR-CLEARED 2023-09-06)
+================================================================
+
+[Top-right corner stamp:]
+CLEARED
+For Open Publication
+Sep 06, 2023
+
+[Right-margin text above stamp:]
+Department of Defense
+OFFICE OF PREPUBLICATION AND SECURITY REVIEW
+
+[Top-center disclaimer block:]
+The views expressed in this article are those of the author
+and do not reflect the official policy or position of the
+Department of Defense or the U.S. Government.
+
+[Left-margin disclaimers:]
+The appearance of external hyperlinks does not constitute
+endorsement by the United States Department of Defense (DoD) of
+the linked websites, or the information products or services
+contained therein. The DoD does not exercise any editorial
+security or other control over the information you may find at
+these locations.
+
+DoD Public Release Clearance is provided with the understanding
+that it does not abridge the privacy rights of any individual
+depicted in these photographs nor any copyright protection of
+information photographs or animation used in this presentation
+nor any other provisions of law prohibiting public release.
+
+----------------------------------------------------------------
+Q1: [text partially obscured by the top-of-page disclaimer overlay; legible portion] European/Italian UAP recovery?
+----------------------------------------------------------------
+
+[Answer is partially overlaid by the disclaimer block; legible
+fragments only. The visible portions read:]
+
+This vehicle was in an acorn or bell shaped as it appeared the
+edges broke off during its impact with [text obscured] ape would
+be lenticular, or saucer shaped with a raised center. [text
+obscured] OSS and eventual landing on FDR's desk.
+
+Open source ref: https://www.popularmechanics.com/military/research/a44460099/researcher-says-he-[truncated by left margin]
+
+----------------------------------------------------------------
+Q2: [partially obscured] intent of the $22M allocated by Sen Harry Reid for the DIA Program (AAWSAP)?
+----------------------------------------------------------------
+
+Open source ref: https://www.newyorker.com/magazine/2021/05/10/how-the-pentagon-started-taking-ufos-seriously (Reid confirms Lockheed Martin)
+
+https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/170015/  (Sen Reid SAP Request)
+
+Pages 152-153 "Skinwalkers at the Pentagon" (DOPSR Approved)
+
+The $22M allocated for DIA AAWSAP, after speaking to multiple
+individuals on the program, was originally intended to SCIF-out
+Bigelow Aerospace Facilities in Las Vegas due to a UAP material
+divestment plan proposed to AAWSAP leadership by Lockheed Martin
+Space Systems Vice President Dr. James Ryder (now deceased). A
+specific facility known to me was described as having crash
+retrieval material from the 1950s and other historical operations.
+They proposed a technology transfer agreement (TTA) into the
+propose Waived PSAP Sen Reid was championing (See DIA FOIA
+release). Unfortunately, due to the sensitive nature of the TTA,
+USDI and OSD leadership were not specifically briefed on this
+proposal. This is why, in "Skinwalkers at the Pentagon," they
+approach DHS S&T, Tara O'Toole to set up a PSAP. Ultimately the
+original government custodian, CIA DS&T, disapproved that transfer
+during a meeting with Glenn Gaffney while he was in that position.
+Instead, much of the money was used to produce Defense Intelligence
+Reference Documents (DIRDs) to possibly show value to the Legacy
+Program.
+
+----------------------------------------------------------------
+Q3: What do you know about President Obama and rump [sic — first letter "T" of "Trump" appears cut off in the rendered page] being briefed on Legacy Program activities as defined in Sen Schumer's proposed unclassified legislation?
+----------------------------------------------------------------
+
+Open Source Ref: https://thehill.com/opinion/technology/4101345-non-human-intelligence-schumer-proposes-stunning-new-ufo-legislation/
+
+My sources with direct access indicated to me that President Obama
+requested a briefing post-presidency after the NY AAIP/AAWSAP news
+broke and wanted to understand what information he was not afforded
+access to during his administration. President Trump was briefed
+mid-way through his administration by multiple CIA officers in an
+unofficial manner as the Legacy Program leadership did not trust the
+President. The briefing President Trump was deeply disturbed by the
+contents of the briefing and decided not to proceed with any
+disclosure activities at that time.
+
+================================================================
+PAGES 2-21 — HISTORICAL PRIMARY-SOURCE ATTACHMENTS NOT TRANSCRIBED HERE
+================================================================
+
+See the SCOPE section above for the per-page inventory of appended
+historical documents. Each is its own primary source with separate
+provenance; none are transcribed in this sibling.

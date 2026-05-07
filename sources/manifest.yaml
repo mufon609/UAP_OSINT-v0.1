@@ -501,6 +501,23 @@
   sha256: aa6099b37a26b8d65ab97984133883d2b0b98b29b8cc344967eaa29a5239d9e7
   archive_status: 3
   wayback_date: '2024-09-09'
+- url: https://docs.house.gov/meetings/GO/GO12/20241113/117721/HHRG-118-GO12-20241113-SD004.pdf
+  format: pdf
+  status: archived
+  path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf
+  archived_date: '2026-05-06'
+  sha256: f6c5e040421c29ff849c1991dbf091d9cedfda68819bc051c4d9d76f27437bbd
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: Submitted Document 004 to the 2024-11-13 House Oversight UAP hearing record. 21 pages, fully scanned (200 dpi JPEG / CCITT — pdftotext output is zero bytes; no embedded text layer). Page 1 is an unsigned three-question Q&A authored by an unnamed contributor, DOPSR-cleared 2023-09-06; widely attributed to James Lacatski by NewParadigmInstitute and the UAP-press secondary reporting (e.g., Sentinel Network "Architect" piece) on stylistic + content grounds — first-person AAWSAP-insider voice, self-citation of "Skinwalkers at the Pentagon" pp. 152-153, narrative match with Lacatski's book — but authorship is NOT primary-source-confirmed in the document itself or in the Nov 13 oral transcript. Page 1 is the load-bearing contemporary content for repo nodes; pp. 2-21 are appended historical primary sources (1947 Twining "Flying Discs" memo, 1950 Doyle Rees New Mexico memo, 1952 Chadwell CIA memo, 1952 FBI Savannah River + Hoover memo, 1950 FBI Knoxville radar memo, 1950 OSI/AEC Oak Ridge incident reports, 1949 ADC reports, 1957 FBI Belmont Montauk memo) — each its own document-node candidate. A contributor-produced `.txt` sibling at the same stem (`docs-house-gov-hhrg-118-go12-20241113-sd004.txt`) covers page 1 only with [annotation] markers where DOPSR/disclaimer overlays partially occlude the underlying Q&A text; pp. 2-21 are not transcribed in this sibling. Page-1 transcription was produced via multimodal-LLM visual read of the page-1 image (no OCR engine; no whisper).
+- url: https://docs.house.gov/meetings/GO/GO12/20241113/117721/HHRG-118-GO12-Transcript-20241113.pdf
+  format: pdf
+  status: archived
+  path: government/docs-house-gov-hhrg-118-go12-transcript-20241113.pdf
+  archived_date: '2026-05-06'
+  sha256: b409936be26d97a0f13ceeb13c56ec7a064c4db6548fee78e3032d8f5aba4e5c
+  archive_status: 1
+  note: 'Stenographic transcript of the 2024-11-13 House Oversight Subcommittee on Cybersecurity, IT, and Government Innovation hearing ''Unidentified Anomalous Phenomena: Exposing the Truth.'' 52 pages. GPO publication 57-440 (PDF 2025). Witnesses: Lue Elizondo, Tim Gallaudet, Michael Gold, Michael Shellenberger. Burchett entered Shellenberger''s ''Immaculate Constellation'' 12-page document into the record at the hearing (pp. 292-298 of the transcript). Names ''Ryder'' and ''Lacatski'' do NOT appear in the oral transcript text — SD004 (the 21-page document with the Lacatski-attributed page-1 Q&A) is a separate paper submission not introduced via oral colloquy on the day of the hearing.'
 - url: https://docs.house.gov/meetings/GO/GO12/20241113/117721/HHRG-118-GO12-Wstate-ShellenbergerM-20241113.pdf
   format: pdf
   status: archived
@@ -1222,6 +1239,30 @@
   archive_status: 3
   note: '50 U.S.C. § 3373 — ''Establishment of All-domain Anomaly Resolution Office''. Codification of Section 1683 of the James M. Inhofe National Defense Authorization Act for Fiscal Year 2023 (P.L. 117-263, December 23, 2022; supersedes Section 1683 of NDAA FY2022 P.L. 117-81 which originally directed AARO''s establishment). Title 50, Chapter 45 (Miscellaneous Intelligence Community Authorities), Subchapter IV (Collection, Analysis, and Sharing of Intelligence). Specifies: (a) establishment within OSD or joint OSD-ODNI organization; (b) Director and Deputy Director appointment by SecDef in consultation with DNI; reporting line to Deputy Secretary of Defense and Principal Deputy Director of National Intelligence; classified-briefing obligations sunset December 31, 2026; GAO audit regime; line-organization designation authority; and the appropriate-congressional-committees list.'
   wayback_date: '2025-09-15'
+- url: https://venturescience.wixsite.com/ivsci/leadership
+  format: html
+  status: archived
+  path: news/ivsci-leadership-snapshot.html
+  archived_date: '2026-05-06'
+  sha256: 8c7ca4e0b26b93739380cc0623ff1a7dc0928c27ab00898446c35ba60d222c64
+  archive_status: 1
+  note: 'Institute for Venture Science (IVS) leadership page — primary biographical and institutional attestation of Dr. James T. Ryder. Sourced facts: 38 years in management/technical positions at Lockheed Martin Corporation; Vice President of Lockheed Martin Space Systems Company (Palo Alto, CA) May 2005 - February 2011; led the Advanced Technology Center (now STAR), the R&D division of Lockheed Martin Space Systems Company with annual program impact exceeding $9B; aircraft (L-1011, F-22, Skunk Works), rockets/missiles, and spacecraft career experience; PhD/MS/BS in theoretical and applied mechanics, University of Illinois; Chairman of the Board at IVS. The institutional self-attestation source for Ryder''s Lockheed VP role + Advanced Technology Center leadership independent of UAP-press reporting.'
+- url: https://vimeo.com/222251077/ae21f8b6f1
+  format: video
+  status: archived
+  path: video/lucistrust-rending-veils-pt2-blackburn-2017-222251077.mp4
+  archived_date: '2026-05-06'
+  sha256: a440a44b0a9af8b0afc4f1f7d95f55dc5aa73e85dc82e076eb4690bd7d905dfd
+  archive_status: 1
+  note: '''The Rending of the Veils, Part 2: The Violet Force and Health'' — Dr. Lee Blackburn. Lucis Trust Arcane School Conference, London, 17-18 June 2017. Duration 1:12:38. Vimeo video ID 222251077. Companion talk paired with Ryder''s Part 1 (above); archived for full-conference contextual record. NOT a Ryder talk (Lee Blackburn is the speaker). No caption/subtitle tracks.'
+- url: https://vimeo.com/222366976/0c171ef640
+  format: video
+  status: archived
+  path: video/lucistrust-rending-veils-pt1-ryder-2017-222366976.mp4
+  archived_date: '2026-05-06'
+  sha256: ee20dbe48398accfecdb1c7f367893becb3f558f476b283fdaccc3d6ff322eef
+  archive_status: 1
+  note: '''The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena'' — Dr. James T. Ryder. Lucis Trust Arcane School Conference, London, 17-18 June 2017. Duration 1:01:06. Vimeo video ID 222366976 (unlisted with privacy-hash share URL ''0c171ef640''). No caption/subtitle tracks. Source video preserved for primary-source archival; speech-to-text transcription deferred (will be run on contributor''s desktop with whisper at a later session, then registered as a separate transcript-format manifest entry per /meta/conventions.md siblings discipline). Ryder''s own voice — institutional self-attestation of his Lockheed Martin Space Systems VP role + Advanced Technology Center leadership, in his own words.'
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
@@ -2033,6 +2074,14 @@
   archive_status: 3
   note: Jerusalem Post coverage of the WSJ Pentagon-disinformation piece, June 2025. Secondary mainstream outlet picked up the story; useful for cross-corroboration of the WSJ findings.
   wayback_date: '2025-06-21'
+- url: https://www.liberationtimes.com/home/congressman-recruits-ufo-whistleblower-to-support-investigation-into-secret-activities
+  format: html
+  status: archived
+  path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+  archived_date: '2026-05-06'
+  sha256: c71704351dc805203fc41e8a5eb2f30214e10bf80705cffd1ba06c277ce56359
+  archive_status: 1
+  note: '''Congressman Recruits UFO Whistleblower to Support Investigation Into Secret Activities'', by Christopher Sharp, Liberation Times, 27 March 2025. Headline: Burlison hires Grusch as House Task Force on Declassification advisor (effective 2025-04-01). In-body content covers the 2011 attempted transfer of UAP materials between Lockheed Martin and DIA AAWSAP / DHS — confirms Lockheed Martin VP James Ryder''s role in proposing the transfer, and CIA Directorate of Science & Technology head Glenn Gaffney''s role in blocking it. Cites unnamed sources (''Liberation Times now understands''). Christopher Sharp = founder/editor-in-chief Liberation Times, senior contributing journalist at Daily Mail, London-based; the named accredited UAP-press journalist anchor for the Lockheed/Ryder/Gaffney narrative.'
 - url: https://www.liberationtimes.com/home/from-moscow-to-malmstrom-russian-style-disinformation-tactics-target-us-ufo-transparency-efforts
   format: html
   status: archived
@@ -2059,6 +2108,14 @@
   sha256: b67ecb9a65c50b8814f3745e7bc613e322d32cbdecb5a0463de2d4b49e90676f
   archive_status: 3
   wayback_date: '2026-01-06'
+- url: https://www.lucistrust.org/conferences/show/conference_london_2017
+  format: html
+  status: archived
+  path: news/lucistrust-arcane-conf-london-2017-snapshot.html
+  archived_date: '2026-05-06'
+  sha256: 5bd02073292ea65b481ee4965ef7de9fd7e170b6f431f0d787b40434e5542d60
+  archive_status: 1
+  note: 'Lucis Trust Arcane School Conference London 2017 — video archive page. Lists Dr. James T. Ryder''s talk ''The Rending of the Veils (Part 1): Fairies, Devas and Unidentified Aerial Phenomena'' (Vimeo 222366976) alongside Dr. Lee Blackburn''s companion ''Part 2'' talk. Provides the conference framing + Ryder bio note: ''Dr. Ryder is a retired Vice President of Lockheed Martin Space Systems Company and former head of the Advanced Technology Center.'' Lucis Trust = theosophical/esoteric organization founded 1922 by Alice Bailey; this conference is in their Arcane School lineage.'
 - url: https://www.muckrock.com/foi/united-states-of-america-10/ousdis-2-51923-146003/
   format: html
   status: archived
@@ -2787,6 +2844,14 @@
   archive_status: 3
   note: Jesse Michels / American Alchemy documentary "Proof Of Aliens On Earth // 72 hrs With UFO Whistleblower David Grusch Under Oath", released ~October 2023.
   wayback_date: '2025-11-19'
+- url: https://www.youtube.com/watch?v=mu9mw6GHPEM
+  format: transcript
+  status: archived
+  path: transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript.txt
+  archived_date: '2026-05-06'
+  sha256: cc9ecdec3ba69f3591a2e3f5886dd90806cdd923ecb1dc61d53a3241dff02613
+  archive_status: 1
+  note: '2025-09-09 House Oversight UAP hearing YouTube recording — auto-generated captions copy-pasted from YouTube transcript UI; cleaned to strip duplicated screen-reader duration text. Hearing title: ''Restoring Public Trust through UAP Transparency and Whistleblower Protection''. Stenographic transcript not yet published by the committee.'
 - url: https://www.youtube.com/watch?v=ribyo1XCtRo
   format: transcript
   status: archived

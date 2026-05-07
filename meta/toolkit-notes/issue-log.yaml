@@ -1043,3 +1043,463 @@
   message: |
     Stub-linking: entity 'e48' ('Rheanne E. Wirkkala') wrap_path '/people/rheanne-wirkkala' does not appear as a [`/people/rheanne-wirkkala`] link in the node
 
+- ts: 2026-05-07T03:36:23Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 16 significant token(s) not in source (prose-drift check — contributor review): 2018, attestation, companion, corpus, coverage, jose, paired, parent, … (+8 more)
+
+- ts: 2026-05-07T03:36:23Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 25 significant token(s) not in source (prose-drift check — contributor review): 2024-11-13, adds, attestations, attributed, championed, clarified, covered, describes, … (+17 more)
+
+- ts: 2026-05-07T03:36:23Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 61 significant token(s) not in source (prose-drift check — contributor review): 2018, 2025-09-09, aawsap-insider, accuracy, addresses, artifact, asymmetry, attested, … (+53 more)
+
+- ts: 2026-05-07T12:35:08Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 5 significant token(s) not in source (prose-drift check — contributor review): 004, adds, covered, september, three-question
+
+- ts: 2026-05-07T12:35:08Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 61 significant token(s) not in source (prose-drift check — contributor review): 2018, 2025-09-09, aawsap-insider, accuracy, addresses, artifact, asymmetry, attested, … (+53 more)
+
+- ts: 2026-05-07T12:36:27Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 5 significant token(s) not in source (prose-drift check — contributor review): 004, adds, covered, september, three-question
+
+- ts: 2026-05-07T12:36:27Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 17 significant token(s) not in source (prose-drift check — contributor review): 004, 2024-11-13, accuracy, addresses, archival, artifact, cites, locally, … (+9 more)
+
+- ts: 2026-05-07T12:38:33Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2018, addresses, attribution, existing, naming, rumor, widely-reported
+
+- ts: 2026-05-07T12:38:55Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 4 significant token(s) not in source (prose-drift check — contributor review): addresses, circulating, pre-existing, primary-source-established
+
+- ts: 2026-05-07T12:39:45Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: error
+  message: |
+    Section 'Affiliations': table rows not in chronological order (saw '– 2011-02' after '2017' in 'period' column; earliest first)
+
+- ts: 2026-05-07T12:39:45Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (68>55): SD004 — a 21-page submitted document whose page-1 Q&A (DOPSR...
+
+- ts: 2026-05-07T12:40:45Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (68>55): SD004 — a 21-page submitted document whose page-1 Q&A (DOPSR...
+
+- ts: 2026-05-07T12:40:52Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (68>55): SD004 — a 21-page submitted document whose page-1 Q&A (DOPSR...
+
+- ts: 2026-05-07T12:40:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-ryder.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (68>55): SD004 — a 21-page submitted document whose page-1 Q&A (DOPSR...
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e1' ('Lockheed Martin Corporation') wrap_path '/organizations/lockheed-martin' does not appear as a [`/organizations/lockheed-martin`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e5' ('University of Illinois') wrap_path '/organizations/university-of-illinois' does not appear as a [`/organizations/university-of-illinois`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e6' ('AAWSAP') wrap_path '/organizations/aawsap' does not appear as a [`/organizations/aawsap`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e7' ('Bigelow Aerospace') wrap_path '/organizations/bigelow-aerospace' does not appear as a [`/organizations/bigelow-aerospace`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e8' ('CIA Directorate of Science and Technology') wrap_path '/organizations/cia-ds-and-t' does not appear as a [`/organizations/cia-ds-and-t`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('House Committee on Oversight and Accountability') wrap_path '/organizations/house-oversight' does not appear as a [`/organizations/house-oversight`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e10' ('George Knapp') wrap_path '/people/george-knapp' does not appear as a [`/people/george-knapp`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('Harry Reid') wrap_path '/people/harry-reid' does not appear as a [`/people/harry-reid`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e14' ('Christopher Sharp') wrap_path '/people/christopher-sharp' does not appear as a [`/people/christopher-sharp`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e15' ('Robert Cardillo') wrap_path '/people/robert-cardillo' does not appear as a [`/people/robert-cardillo`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e16' ('William Lynn') wrap_path '/people/william-lynn-iii' does not appear as a [`/people/william-lynn-iii`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e17' ('Eric Burlison') wrap_path '/people/eric-burlison' does not appear as a [`/people/eric-burlison`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e18' ('Tim Burchett') wrap_path '/people/tim-burchett' does not appear as a [`/people/tim-burchett`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e20' ('SD004 — submitted document, 2024-11-13 House Oversight UAP hearing') wrap_path '/documents/docs-house-gov-hhrg-118-go12-20241113-sd004' does not appear as a [`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e21' ('2025-09-09 House Oversight UAP hearing — YouTube transcript') wrap_path '/transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript' does not appear as a [`/transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript`] link in the node
+
+- ts: 2026-05-07T12:42:03Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e22' ('Liberation Times — Christopher Sharp (2025-03-27)') wrap_path '/documents/liberationtimes-burlison-grusch-recruitment-20250327' does not appear as a [`/documents/liberationtimes-burlison-grusch-recruitment-20250327`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e1' ('Lockheed Martin Corporation') wrap_path '/organizations/lockheed-martin' does not appear as a [`/organizations/lockheed-martin`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e5' ('University of Illinois') wrap_path '/organizations/university-of-illinois' does not appear as a [`/organizations/university-of-illinois`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e6' ('AAWSAP') wrap_path '/organizations/aawsap' does not appear as a [`/organizations/aawsap`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e7' ('Bigelow Aerospace') wrap_path '/organizations/bigelow-aerospace' does not appear as a [`/organizations/bigelow-aerospace`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e8' ('CIA Directorate of Science and Technology') wrap_path '/organizations/cia-ds-and-t' does not appear as a [`/organizations/cia-ds-and-t`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('House Committee on Oversight and Accountability') wrap_path '/organizations/house-oversight' does not appear as a [`/organizations/house-oversight`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e10' ('George Knapp') wrap_path '/people/george-knapp' does not appear as a [`/people/george-knapp`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('Harry Reid') wrap_path '/people/harry-reid' does not appear as a [`/people/harry-reid`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e14' ('Christopher Sharp') wrap_path '/people/christopher-sharp' does not appear as a [`/people/christopher-sharp`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e15' ('Robert Cardillo') wrap_path '/people/robert-cardillo' does not appear as a [`/people/robert-cardillo`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e16' ('William Lynn') wrap_path '/people/william-lynn-iii' does not appear as a [`/people/william-lynn-iii`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e17' ('Eric Burlison') wrap_path '/people/eric-burlison' does not appear as a [`/people/eric-burlison`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e18' ('Tim Burchett') wrap_path '/people/tim-burchett' does not appear as a [`/people/tim-burchett`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e20' ('SD004 — submitted document, 2024-11-13 House Oversight UAP hearing') wrap_path '/documents/docs-house-gov-hhrg-118-go12-20241113-sd004' does not appear as a [`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e21' ('2025-09-09 House Oversight UAP hearing — YouTube transcript') wrap_path '/transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript' does not appear as a [`/transcripts/2025-09-09-house-oversight-uap-hearing-youtube-transcript`] link in the node
+
+- ts: 2026-05-07T12:43:29Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e22' ('Liberation Times — Christopher Sharp (2025-03-27)') wrap_path '/documents/liberationtimes-burlison-grusch-recruitment-20250327' does not appear as a [`/documents/liberationtimes-burlison-grusch-recruitment-20250327`] link in the node
+
