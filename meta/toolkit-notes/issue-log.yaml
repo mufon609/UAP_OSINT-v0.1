@@ -1503,3 +1503,25 @@
   message: |
     Stub-linking: entity 'e22' ('Liberation Times — Christopher Sharp (2025-03-27)') wrap_path '/documents/liberationtimes-burlison-grusch-recruitment-20250327' does not appear as a [`/documents/liberationtimes-burlison-grusch-recruitment-20250327`] link in the node
 
+- ts: 2026-05-07T15:41:07Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): ivs, per
+  tokens: [ivs, per]
+
+- ts: 2026-05-07T15:41:07Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): ivs, per
+  tokens: [ivs, per]
+
