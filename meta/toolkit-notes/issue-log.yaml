@@ -3856,3 +3856,756 @@
     background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
   tokens: [bylines, identifies]
 
+- ts: 2026-05-07T23:02:57Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 8 significant token(s) not in source (prose-drift check — contributor review): alongside, genesis-20180223-2, headquartered, identified, operated, per, referenced, unfolded
+  tokens: [alongside, genesis-20180223-2, headquartered, identified, operated, per, referenced, unfolded]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[0] ('kp1') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[1] ('kp2') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('kp4') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[4] ('kp5') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[5] ('kp6') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[6] ('kp7') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[7] ('kp8') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[8] ('kp9') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[9] ('kp10') note: 2 significant token(s) not in source (prose-drift check — contributor review): per, sic
+  tokens: [per, sic]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[10] ('kp11') note: 2 significant token(s) not in source (prose-drift check — contributor review): co-financed, per
+  tokens: [co-financed, per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[11] ('kp12') note: 4 significant token(s) not in source (prose-drift check — contributor review): consults, finances, per, volunteered
+  tokens: [consults, finances, per, volunteered]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 2 significant token(s) not in source (prose-drift check — contributor review): footnote, per
+  tokens: [footnote, per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[13] ('kp14') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[14] ('kp15') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[15] ('kp16') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:36:36Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[16] ('kp17') note: 5 significant token(s) not in source (prose-drift check — contributor review): alongside, block, foundation-partner, per, specified
+  tokens: [alongside, block, foundation-partner, per, specified]
+
+- ts: 2026-05-08T00:39:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 2 significant token(s) not in source (prose-drift check — contributor review): footnote, identifies
+  tokens: [footnote, identifies]
+
+- ts: 2026-05-08T00:39:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[9] ('kp10') note: 1 significant token(s) not in source (prose-drift check — contributor review): sic
+  tokens: [sic]
+
+- ts: 2026-05-08T00:39:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[10] ('kp11') note: 1 significant token(s) not in source (prose-drift check — contributor review): co-financed
+  tokens: [co-financed]
+
+- ts: 2026-05-08T00:39:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[11] ('kp12') note: 3 significant token(s) not in source (prose-drift check — contributor review): consults, finances, volunteered
+  tokens: [consults, finances, volunteered]
+
+- ts: 2026-05-08T00:39:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 2 significant token(s) not in source (prose-drift check — contributor review): footnote, per
+  tokens: [footnote, per]
+
+- ts: 2026-05-08T00:39:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[15] ('kp16') note: 1 significant token(s) not in source (prose-drift check — contributor review): per
+  tokens: [per]
+
+- ts: 2026-05-08T00:39:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[16] ('kp17') note: 4 significant token(s) not in source (prose-drift check — contributor review): alongside, block, foundation-partner, specified
+  tokens: [alongside, block, foundation-partner, specified]
+
+- ts: 2026-05-08T00:41:06Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[10] ('kp11') note: 2 significant token(s) not in source (prose-drift check — contributor review): foundation-partners, listing
+  tokens: [foundation-partners, listing]
+
+- ts: 2026-05-08T00:41:06Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[16] ('kp17') note: 1 significant token(s) not in source (prose-drift check — contributor review): listing
+  tokens: [listing]
+
+- ts: 2026-05-08T00:41:44Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Overview' exceeds word budget (67>55): Plasma physics laboratory project proposed by Montgomery Chi...
+
+- ts: 2026-05-08T00:41:44Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): David Talbott invites Montgomery Childs to propose his SAFIR...
+
+- ts: 2026-05-08T00:41:54Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Overview' exceeds word budget (67>55): Plasma physics laboratory project proposed by Montgomery Chi...
+
+- ts: 2026-05-08T00:41:54Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): David Talbott invites Montgomery Childs to propose his SAFIR...
+
+- ts: 2026-05-08T00:42:00Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Overview' exceeds word budget (67>55): Plasma physics laboratory project proposed by Montgomery Chi...
+
+- ts: 2026-05-08T00:42:00Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): David Talbott invites Montgomery Childs to propose his SAFIR...
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e17' ('Gerald Pollack') wrap_path '/people/gerald-pollack' does not appear as a [`/people/gerald-pollack`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e24' ('Institute for Venture Science') wrap_path '/organizations/institute-for-venture-science' does not appear as a [`/organizations/institute-for-venture-science`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e25' ('Hathaway Consulting Services') wrap_path '/organizations/hathaway-consulting-services' does not appear as a [`/organizations/hathaway-consulting-services`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e26' ('Lockheed Martin Space Systems Company') wrap_path '/organizations/lockheed-martin-space-systems-company' does not appear as a [`/organizations/lockheed-martin-space-systems-company`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e27' ('University of Washington') wrap_path '/organizations/university-of-washington' does not appear as a [`/organizations/university-of-washington`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e28' ('University of California') wrap_path '/organizations/university-of-california' does not appear as a [`/organizations/university-of-california`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e29' ('United States Department of Defense') wrap_path '/organizations/dod' does not appear as a [`/organizations/dod`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e30' ('E-Cat World') wrap_path '/organizations/e-cat-world' does not appear as a [`/organizations/e-cat-world`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e31' ('Genesis Design Engineering, Inc.') wrap_path '/organizations/genesis-design-engineering' does not appear as a [`/organizations/genesis-design-engineering`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e32' ('Linear Transfer Systems, Ltd.') wrap_path '/organizations/linear-transfer-systems' does not appear as a [`/organizations/linear-transfer-systems`] link in the node
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'A new website for Aureon Energy, a company to commercialize the SAFIRE project, has been published at https://aureon.ca... Hal Puthoff, a familiar name to many, is a member of their Science Advisory Board.' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-08T00:42:27Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'The new SAFIRE PROJECT, now a commercial enterprise, will be headed by Aureon Energy Ltd..' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-08T00:44:04Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e24' ('Institute for Venture Science') wrap_path '/organizations/institute-for-venture-science' does not appear as a [`/organizations/institute-for-venture-science`] link in the node
+
+- ts: 2026-05-08T00:44:04Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e26' ('Lockheed Martin Space Systems Company') wrap_path '/organizations/lockheed-martin-space-systems-company' does not appear as a [`/organizations/lockheed-martin-space-systems-company`] link in the node
+
+- ts: 2026-05-08T00:44:04Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e27' ('University of Washington') wrap_path '/organizations/university-of-washington' does not appear as a [`/organizations/university-of-washington`] link in the node
+
+- ts: 2026-05-08T00:44:04Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e28' ('University of California') wrap_path '/organizations/university-of-california' does not appear as a [`/organizations/university-of-california`] link in the node
+
+- ts: 2026-05-08T00:44:04Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e29' ('United States Department of Defense') wrap_path '/organizations/dod' does not appear as a [`/organizations/dod`] link in the node
+
+- ts: 2026-05-08T00:44:04Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e31' ('Genesis Design Engineering, Inc.') wrap_path '/organizations/genesis-design-engineering' does not appear as a [`/organizations/genesis-design-engineering`] link in the node
+
+- ts: 2026-05-08T00:44:04Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e32' ('Linear Transfer Systems, Ltd.') wrap_path '/organizations/linear-transfer-systems' does not appear as a [`/organizations/linear-transfer-systems`] link in the node
+
+- ts: 2026-05-08T00:46:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
+- ts: 2026-05-08T00:47:53Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
+- ts: 2026-05-08T01:07:35Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
+- ts: 2026-05-08T01:12:22Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (71>55): SAFIRE PROJECT Genesis report (p. 2): "In 2011 engineer Mont...
+
+- ts: 2026-05-08T01:12:36Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (71>55): SAFIRE PROJECT Genesis report (p. 2): "In 2011 engineer Mont...
+
+- ts: 2026-05-08T01:13:26Z
+  source: validator
+  check: manifest_archive_status
+  phase: validate
+  node: sources/manifest.yaml
+  node_type: manifest
+  severity: error
+  message: |
+    archive_status missing on entry (URL: None) — required field per schema.yaml manifest_entry.required
+
+- ts: 2026-05-08T01:14:09Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
+- ts: 2026-05-08T01:15:45Z
+  source: validator
+  check: manifest_parse
+  phase: validate
+  node: sources/manifest.yaml
+  node_type: manifest
+  severity: error
+  message: |
+    Manifest parse failure: while scanning a quoted scalar
+      in "/home/neural/Desktop/uap-research/REFACTOR/sources/manifest.yaml", line 643, column 9
+    found unexpected end of stream
+      in "/home/neural/Desktop/uap-research/REFACTOR/sources/manifest.yaml", line 643, column 184
+
+- ts: 2026-05-08T01:16:54Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
+- ts: 2026-05-08T01:18:49Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
+- ts: 2026-05-08T01:20:31Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
+- ts: 2026-05-08T01:34:39Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): refines
+  tokens: [refines]
+
+- ts: 2026-05-08T01:34:40Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): refines
+  tokens: [refines]
+
+- ts: 2026-05-08T01:34:42Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): E-Cat World reports that a new website for Aureon Energy, a ...
+
+- ts: 2026-05-08T01:34:54Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): E-Cat World reports that a new website for Aureon Energy, a ...
+
+- ts: 2026-05-08T01:36:29Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
+- ts: 2026-05-08T01:57:03Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[16] ('kp17') note: 4 significant token(s) not in source (prose-drift check — contributor review): caption, listing, personnel, twelve
+  tokens: [caption, listing, personnel, twelve]
+
+- ts: 2026-05-08T01:58:52Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+

@@ -641,6 +641,12 @@
   archive_status: 1
   wayback_skip: true
   note: 'Contributor-produced clean-text transcription (.txt sibling) of blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf, produced 2026-05-02 via VLM page read of all 17 pages. The source PDF is OmniPage CSDK 20 / AINSLIB.OCR-produced (extraction_type: ocr-scan); per BACKLOG #19 OCR-scan discipline the validator''s extract_source_text prefers this same-stem .txt sibling over pdftotext output. Visual transcription preserves redaction markers (b)(6) / (b)(3) / (b)(5) verbatim, email-thread structure, foreign-language fragments (Finnish ''kirjoitti''), and timestamp ranges (1300-1400 / 1400-1530) without pdftotext line-wrap artifacts. Companion to PDF entry with extraction_type: ocr-scan above.'
+- url: https://doi.org/10.1088/0963-0252/24/5/055022
+  format: html
+  status: pending
+  archive_status: 2
+  note: 'W. Lowell Morgan + Montgomery W. Childs, "Study of striations in a spherically symmetric hydrogen discharge", Plasma Sources Science and Technology, vol. 24 no. 5 art. 055022, published 23 September 2015. DOI 10.1088/0963-0252/24/5/055022. The only known peer-reviewed publication by SAFIRE / Aurtas team members about SAFIRE-related plasma physics. Author affiliations per the IOPscience abstract page byline: Morgan = Kinema Research & Software, LLC, PO Box 1147, Monument, CO 80132, USA; Childs = Aurtas International, Inc., 7 Highland Drive, Horseshoe Highlands, Oro Medonte, Ontario, L0L-2L0, Canada. Status pending — IOPscience abstract page is Radware Bot Manager captcha-blocked for automated retrieval (Incident ID 8935247b-cnvj-46af-a768-5c33c8ec2100); full text is paywalled. Paper bibliographic existence is independently verifiable via DOI resolution. Manual browser save or alternate-access route required for local archival of the abstract.'
+  wayback_date: '2026-05-07'
 - url: https://doi.org/10.1364/AO.30.002013
   format: html
   status: archived
@@ -675,6 +681,15 @@
   archive_status: 3
   note: 'Douglas Dean Johnson, ''The UAP Disclosure Act: The proposed Pentagon/AARO re-write of November 2023'' (Mirador, July 24, 2024). Detailed analysis of the OUSD(I&S) UAPDA rewrite; includes Kirkpatrick''s July 17 2024 von Rennenkampff interview (''we convinced Congress last year not to go down that road'') and July 23 2024 email to Johnson (''a compromise was proposed to allow for the exercising of eminent domain under AARO''s authority''); confirms institutional rather than political direction'
   wayback_date: '2026-01-22'
+- url: https://e-catworld.com/2020/03/08/aureon-energy-website-launched-new-company-to-commercialize-safire-technology/
+  format: html
+  status: archived
+  path: news/e-catworld-aureon-launch-20200308.html
+  archived_date: '2026-05-07'
+  sha256: 75dd785c8823b8bd10bdda36b5b738e317c17db307c3709e4eff732e95a93d4a
+  archive_status: 3
+  note: 'E-Cat World article dated March 8 2020 reporting the launch of the Aureon Energy website (aureon.ca) as the commercialization vehicle for SAFIRE technology. Independent press attestation of: (a) the March 8 2020 commercial-launch date, (b) the original aureon.ca domain (since migrated to aureonenergy.com), (c) Aureon''s launch leadership: Childs (CEO/Founder), Clarage (Chief Science Officer), Anderson (Chief Technical Officer; titles since changed on the current Aureon team page where Anderson is VP Experiments), and Hal Puthoff named to the Aureon Science Advisory Board. Quotes Aureon''s self-description: ''SAFIRE can create, control, contain, sustain, and repeat-at-will any number of plasma regimes. No other technology in the world can do this.'' E-Cat World is a LENR / cold-fusion-community blog (Frank Acland), so this attestation is press, not peer-review; useful for date-stamping the launch and the early Puthoff Science Advisory Board appointment.'
+  wayback_date: '2026-01-14'
 - url: https://elaranova.com/264-2/
   format: html
   status: archived
@@ -842,8 +857,9 @@
   path: news/link.springer.com-mccomas-ibex-interstellar-boundary-explorer-2009.html
   archived_date: '2026-05-07'
   sha256: 2acfb06270ed44fb6e462680031fe7d532fb4f2428e91a788c95098d8044e1c5
-  archive_status: 1
+  archive_status: 3
   note: McComas, D.J., et al., 'IBEX-Interstellar Boundary Explorer', Space Science Reviews, vol. 146, Issue 1-4, October 2009, pp. 11-33. DOI 10.1007/s11214-009-9499-4. Peer-reviewed institutional attestation. Author-affiliation byline lists 'Lockheed Martin Advanced Technology Center, Palo Alto, CA, 94304, USA' tied to S. A. Fuselier as a co-author institution. First author McComas (SwRI). Multi-institution author list (UNH, NASA Goddard, U. Bern, JHU/APL, LANL, USC, Boston U., Orbital Sciences, etc.). Abstract page open access; full text paywalled. Archived as the abstract-with-byline-affiliation page; the byline-affiliation IS the load-bearing primary attestation.
+  wayback_date: '2025-12-08'
 - url: https://lweb.cfa.harvard.edu/~loeb/LK1.pdf
   format: pdf
   status: archived
@@ -962,8 +978,9 @@
   path: news/news.lockheedmartin.com-2008-10-08-ibex-mission-launch.html
   archived_date: '2026-05-07'
   sha256: 917d5c3d812794c57452e352f163e7ef3d62efeb82b25221d0e718dcabd7a123
-  archive_status: 1
+  archive_status: 3
   note: 'Lockheed Martin Corporation press release, October 8, 2008, ''Lockheed Martin Sensor Aboard for Interstellar Boundary Explorer (IBEX) Mission Launch''. States: ''The IBEX-Lo sensor was built by a team of scientists and engineers at the ATC in Palo Alto, Calif., the University of New Hampshire in Durham, N.H., SwRI in San Antonio, Texas, the NASA Goddard Space Flight Center in Greenbelt, Md, and the University of Bern in Bern, Switzerland.'' Important nuance: ATC was one of FIVE building institutions for IBEX-Lo, not ATC-only. The team integrated and calibrated the sensor at the University of Bern. Corroborates Ryder''s 2015 ''built in my lab'' attestation as ATC participation; refines from ATC-exclusive build to multi-institution build led by ATC.'
+  wayback_date: '2026-04-12'
 - url: https://news.lockheedmartin.com/2009-07-23-Lockheed-Martin-Supports-Forum-On-Environmental-Observations
   format: html
   status: archived
@@ -1077,8 +1094,9 @@
   path: government/ousdi-defense-gov-overbaugh-duswis-bio-2025.pdf
   archived_date: '2026-04-30'
   sha256: 664bb62e574b0ce8401168cef51accfdee93dc2ec29777e9a76e49bbb97f014b
-  archive_status: 1
+  archive_status: 3
   note: 'Official 2025 DUSWIS biography of Justin P. Overbaugh, Deputy Under Secretary of War for Intelligence and Security, hosted on the OUSD(I&S) institutional subdomain ousdi.defense.gov/Portals/73/. Confirms Overbaugh''s Deputy USW(I&S) role: ''Honorable Justin Overbaugh serves as the Deputy Under Secretary of War for Intelligence and Security. In this role, he supports the Under Secretary across all matters related to intelligence, counterintelligence, and security. This includes overseeing defense intelligence and security agencies and shaping policy to advance national security and military operations.'' Pre-government: COO at Strategic Decision Solutions; former U.S. Army Officer (reconnaissance unit Afghanistan / Iraq, HUMINT collection, strategic counterintelligence operations U.S./Europe/Middle East, U.S. Army Recruiting Battalion command, Director of Intelligence for Special Operations Joint Task Force). Military training: Ranger, Airborne, Air Assault, Pathfinder, SERE, DIA Advanced Foreign Counterintelligence Operations. Education: Naval Postgraduate School M.S. Defense Analysis/Irregular Warfare; U.S. Naval War College M.A. National Security and Strategic Studies. Awards include Legion of Merit. Wayback capture 2026-02-11.'
+  wayback_date: '2026-05-07'
 - url: https://ousdi.defense.gov/Portals/73/2025%20Official%20USDIS%20Bio%20Hansell_Bradley.pdf
   format: pdf
   status: archived
@@ -1228,6 +1246,23 @@
   note: Americans for Safe Aerospace home page. Lists Jay Stratton in the Advisors section — direct on-record attestation by an organization of which Stratton is a listed advisor. Strongest non-.gov public-record attribution for Stratton's UAPTF role.
   archive_status: 3
   wayback_date: '2026-02-20'
+- url: https://safireproject.com/about-us/genesis.html
+  format: html
+  status: archived
+  path: news/safireproject-genesis-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: d38c88f84d9f465c2a835d36efb0e51d0b8a69f356f641e3a78fa81f0082e0f2
+  archive_status: 1
+  note: 'SAFIRE Project corporate self-attestation of project genesis. Names 2012 Electric Universe conference where Montgomery Childs proposed SAFIRE: "In 2012 at a conference exploring the electrical nature of deep space Montgomery Childs proposed a way the Electric Sun Model could be tested." Childs''s foundational concept: "Two years of research has led me to the conclusion that the Electric Sun Model might be boiled down to a fundamental process: Charged plasma affecting matter of a different electrical potential." Names Scott Mainwaring as recognizing the proposal''s value and introducing it to his father Bruce Mainwaring; both Mainwarings supported the project through the Mainwaring Archive Foundation. Phase One/Two/Three structure with Phase Three priority for 2018 and beyond.'
+- url: https://safireproject.com/about-us/historical.html
+  format: html
+  status: archived
+  path: news/safireproject-historical-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: ea45c9d7e77fb7227bd96eb9b679dc001b7c668e46a614741e04713750785da0
+  archive_status: 3
+  note: SAFIRE Project's own historical / theoretical-lineage page. Establishes that SAFIRE was built to test 'The Electric Universe hypothesis, specifically The Electric Sun Model'. Cites historical figures Benjamin Franklin (1752 kite experiment), Michael Faraday, James Clerk Maxwell, Sir William Crookes, Nikola Tesla, Kristian Birkeland, Irving Langmuir, and Hannes Alfvén in tracing the electromagnetic-cosmology lineage. Identifies Wal Thornhill and Dr. Don Scott as contemporary leading proponents developing the Electric Sun Model. Asserts 99.9% of visible Universe is plasma.
+  wayback_date: '2025-12-19'
 - url: https://safireproject.com/about-us/team.html
   format: html
   status: archived
@@ -1237,6 +1272,102 @@
   archive_status: 3
   note: 'SAFIRE Project corporate team page. Lists ''Dr. James Ryder'' under ''science review team'' alongside Harold Puthoff PhD (Director, Institute for Advanced Studies at Austin), Eric W. Davis PhD (Chief Science Officer, IASA), and William A. Gardner (Professor Emeritus, University of California). Ryder''s role attestation: ''Chairman, International Science Foundation''. SAFIRE Project tests the Electric Sun model under the International Science Foundation mandate. Page also lists Mainwaring Archive Foundation as a SAFIRE funder. Primary corporate self-attestation of the Ryder/Puthoff/Davis/Gardner Science Review Team association — independent of any UAP-press reporting.'
   wayback_date: '2025-12-19'
+- url: https://safireproject.com/ewExternalFiles/Genesis-20180223-2.pdf
+  format: pdf
+  status: archived
+  path: news/safireproject-genesis-report-20180223.pdf
+  archived_date: '2026-05-07'
+  sha256: 4c00895ccce385cf3c93ef965e86c3bcbe9d657d660a4a5267ab5cf095731edf
+  archive_status: 3
+  note: 'SAFIRE PROJECT Genesis report, "Genesis-20180223-2.pdf" (filename embeds date 2018-02-23). Self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017. Primary attestation of the SAFIRE acronym expansion: "The Stellar Atmospheric Function in Regulation Experiment (SAFIRE) was initiated. Its objective..." (page text). Also attests June 15, 2016 first-firing date and Mississauga, Ontario lab location ("The SAFIRE sun, photographed in the SAFIRE lab, Mississauga, Ontario, Canada, June 15, 2016"). Resolves rumor r1 in the SAFIRE Project research artifact (acronym expansion was previously third-party-attested only).'
+  wayback_date: '2024-07-13'
+- url: https://safireproject.com/ewExternalFiles/SAFIRE-Phase-One.pdf
+  format: pdf
+  status: archived
+  path: news/safireproject-phase-one-report.pdf
+  archived_date: '2026-05-07'
+  sha256: 5a4a6e80391e3761a142c0e2fb0d231ba7210971c969dcd5399f4a234368b1b8
+  archive_status: 3
+  note: SAFIRE PROJECT Phase One report. Self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017. Detailed Phase One (proof-of-concept bench-top bell jar) report referenced from safireproject.com/resources.html.
+  wayback_date: '2026-05-07'
+- url: https://safireproject.com/movies/presentations.html
+  format: html
+  status: archived
+  path: news/safireproject-presentations-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: bd0117134dcd0b29d696946f13416ff3e0aefb78805a27f5d2b22f1007a8d72e
+  archive_status: 3
+  note: 'SAFIRE Project conference / presentation record. Lists multiple Childs + Clarage talks: (1) 2017 Electric Universe FUTURE SCIENCE Conference, Phoenix Arizona, 90-minute presentation. (2) Electric Universe UK International Conference & Symposium, Somerset UK, July 7-11 2018, three presentations. (3) Dynamic Earth Science Conference, University of Bath UK, July 6 2019. (4) SAFIRE PROJECT 2019, Bath UK. (5) GlobalBEM Conference, Netherlands (date listed November 9-10, year unspecified). All presentations co-presented by Montgomery Childs and Dr. Michael Clarage.'
+  wayback_date: '2025-04-21'
+- url: https://safireproject.com/resources.html
+  format: html
+  status: archived
+  path: news/safireproject-resources-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: a3dfcb20f3197dda7d07e2f5ac5b63d22ad197db8f0454c914ec52adf9b8e30b
+  archive_status: 3
+  note: 'SAFIRE Project resources / report-listing page. Lists four self-published reports: (1) ''Genesis-20180223-2.pdf'' — full SAFIRE PROJECT REPORT, available; the filename embeds date 2018-02-23 (Feb 23 2018). (2) ''SAFIRE-Project-Report.pdf'' — TEMPORARILY LOCKED, a new version being editing [sic]. (3) ''SAFIRE-Phase-One.pdf'' — Phase One report, available. (4) Phase Two report — temporarily locked, editing in progress. None of these are peer-reviewed publications; all are SAFIRE''s own self-published technical reports. As of the snapshot date, the first and third are listed as available for download but the actual PDF URLs return HTTP 404 when fetched.'
+  wayback_date: '2026-03-15'
+- url: https://safireproject.com/science/commercialization.html
+  format: html
+  status: archived
+  path: news/safireproject-commercialization-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: 384eadbfa1ab2ca170a311591b924ef3421ab98c0635bf9e8a3309ac43692a17
+  archive_status: 3
+  note: 'SAFIRE Project corporate self-attestation of the research-to-commercial transition. Verbatim: ''The decision was then made to take all the discoveries of the previous six years and employ them in producing a commercial plasma reactor.'' Verbatim transition statement: ''The new SAFIRE PROJECT, now a commercial enterprise, will be headed by Aureon Energy Ltd.'' The ''previous six years'' frame anchors the transition to ~2018-2019, consistent with the May 2018 ISF closure (Ryder death) and the SAFIRE II lab buildout in 2019. Page references www.aureon.ca for ongoing updates. No specific incorporation date for Aureon Energy is given here.'
+  wayback_date: '2025-07-17'
+- url: https://safireproject.com/science/ewExternalFiles/SAFIRE-Phase-Three.pdf
+  format: pdf
+  status: archived
+  path: news/safireproject-phase-three-report.pdf
+  archived_date: '2026-05-07'
+  sha256: 33a1c3c0eb2ca785b8907f4aed5b5aa409972fb8e2a3de3bdb3b6f9b76b0cc3f
+  archive_status: 1
+  note: SAFIRE PROJECT — Phase Three Report PDF, self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc.
+- url: https://safireproject.com/science/ewExternalFiles/SAFIRE-Phase-Two.pdf
+  format: pdf
+  status: archived
+  path: news/safireproject-phase-two-report.pdf
+  archived_date: '2026-05-07'
+  sha256: 55f00ef82f8495dfc26b30977ceec46811bac09cf755aa65f9fff7ff5268fe58
+  archive_status: 1
+  note: 'SAFIRE PROJECT — Phase Two Report PDF, self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending. Phase Two-specific report attesting reactor specifications: stainless-steel cylinder four feet in diameter and seven feet long; 200 kW DC power supply; 40,000 parts.'
+- url: https://safireproject.com/science/ewExternalFiles/SAFIRE-Project-Report.pdf
+  format: pdf
+  status: archived
+  path: news/safireproject-project-report.pdf
+  archived_date: '2026-05-07'
+  sha256: cc8fbd3e125d1fcbd8f9ec8c076bcdc1be3f9ecda1a6d1ebf65150c33e6860cb
+  archive_status: 1
+  note: 'SAFIRE PROJECT — full Project Report PDF (~73 pp), self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending. Multi-corroborates the SAFIRE acronym expansion ("The Stellar Atmospheric Function in Regulation Experiment", p. 174 and p. 1093 of pdftotext extract). Attests Phase II reactor specs: stainless-steel cylinder four feet in diameter and seven feet long; 200 kW DC power supply; 40,000 parts. Names full SAFIRE personnel roster including Ben Ged Low (Cinematography, Optics, Video Capture). Lists Lowell Morgan as core team Applied Physicist as of 2018-02-23. Discovered via the corrected URL path /science/ewExternalFiles/ rather than /ewExternalFiles/.'
+- url: https://safireproject.com/science/phase-one.html
+  format: html
+  status: archived
+  path: news/safireproject-phase-one-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: 8988c7436ad5392f0eb3326ce3ba34c34f6a6cb214800cc7c48fd831484410c9
+  archive_status: 3
+  note: 'SAFIRE Project corporate self-attestation of Phase One (proof-of-concept bench-top "bell jar" prototype). Names Montgomery Childs as principal experimenter. Describes iron-composite anode (2 and 4 cm diameters) used to test plasma behavior. Childs quote: ''When we first fired up the bell jar and began measuring the electromagnetic and radio frequencies of the plasma — there was a rhythm, like a heartbeat; stable and continuous.'' Cites observation of atomic mass of 3 within active plasma environment. No specific Phase One start/end dates given on the page; per the Aureon Energy history page, SAFIRE I was in lab in 2013.'
+  wayback_date: '2025-07-17'
+- url: https://safireproject.com/science/phase-three.html
+  format: html
+  status: archived
+  path: news/safireproject-phase-three-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: f9749fc937e2887ba0841b3691b531d8e6d0c0e8d625ce79edd5f50d64a3c105
+  archive_status: 3
+  note: 'SAFIRE Project Phase Three corporate self-attestation. Page summarizes the project''s stated experimental capabilities: ''Production of low energy quiescent plasmas'', ''Production of multi spherical plasma double layer shells'', ''Potential of Low-Energy Nuclear Reactions (LENR)''. Stated counter-thermonuclear-model finding: ''The core of SAFIRE is cooler than its surrounding atmoshere'' [sic, ''atmosphere'' typo]. Also: ''SAFIRE is generating variations in electron density comparable to the photoshpere [sic], heliosphere and nuclear bombs.'' Names the 2017 Electric Universe FUTURE SCIENCE Conference in Phoenix Arizona where SAFIRE team gave a 90-minute presentation. References Genesis-20180223-2.pdf (Feb 23 2018 Genesis report). Diagnostic techniques cited: Optical Spectroscopy, Mass Spectroscopy, Langmuir Probe Measurements, Scanning Electron Microscopy, Polarimetry.'
+  wayback_date: '2026-03-11'
+- url: https://safireproject.com/science/phase-two.html
+  format: html
+  status: archived
+  path: news/safireproject-phase-two-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: 05755b2d73b717e865eee135d49552f9466ed84011e33fe110922aa64f5cee7a
+  archive_status: 3
+  note: SAFIRE Project Phase Two corporate self-attestation. Names Montgomery Childs and Jason Lickver. References Autodesk design software, OIPTS (Open Issues and Project Tracking System), and 500°C gas temperature in the apparatus. Phase Two start/end dates not given on the page; per the Aureon Energy history page, SAFIRE II was in lab in 2019. Phase Two corresponds to the full-scale plasma reactor buildout described elsewhere on the SAFIRE Project site.
+  wayback_date: '2026-03-16'
 - url: https://spacenews.com/the-jicspoc-is-dead-long-live-the-national-space-defense-center/
   format: html
   status: archived
@@ -1766,6 +1897,15 @@
   sha256: 764f1e57b89c414f30715bba698d2480f279ef446479035e304671d1d8cfb9af
   archive_status: 3
   note: Aureon Energy Ltd. (Squarespace site at aureonenergy.com; canonical URL after migration from aureon.ca, whose redirect /history is broken — Apache 301 sends Location 'https://aureonenergy.comhistory' missing slash; aureon.ca root redirects cleanly to aureonenergy.com). Page identifies Montgomery Childs as Founder and Chairman of Aureon Energy and confirms SAFIRE I (lab 2013) + SAFIRE II (lab 2019) as the company's lab-research lineage. The migrated Squarespace site does NOT carry the historical 'ISF as funder' text the investigation expected; that funding attribution is now established only via the SAFIRE Project team page (Ryder = ISF Chairman) and the Cyclostationarity Gardner biography (ISF funded SAFIRE).
+  wayback_date: '2025-08-04'
+- url: https://www.aureonenergy.com/team
+  format: html
+  status: archived
+  path: news/aureonenergy-team-snapshot.html
+  archived_date: '2026-05-07'
+  sha256: bfae3335da0e73f26f16f93e21607132293742bb6358ad734f64c7c34e6aaeb3
+  archive_status: 3
+  note: 'Aureon Energy Ltd. corporate team page (Squarespace site at aureonenergy.com). Lists current company leadership: Montgomery W. Childs (Chairman & Founder; founded predecessor company Aurtas International, Inc.; prior CEO of Genesis Design Engineering Inc. and Linear Transfer Systems Ltd.; named entrepreneur of the year by Profit magazine; Toyota 5-Star award; 11 issued patents in machine control, solar energy, and plasma physics; designed a meteorological rocket for the Canadian National Research Council; former Georgian College AI/CAD instructor; certified machinist and toolmaker), Dr. Michael Clarage (Chief Science Officer; PhD physics, Brandeis University), Dr. Paul Anderson (VP Experiments; senior physical chemist working for the United States Department of Defense, serving as a lead scientist; 18 peer-reviewed publications; over 40 government technical reports; IEEE and NDIA member; PhD Physical Chemistry), Jason Lickver (VP Engineering; ~30 years mechanical design / energy management / automation), Jan Onderco (Senior Scientist; MSc Technical Cybernetics and Controlling). Establishes the Aurtas International predecessor lineage and Anderson''s DoD lead-scientist self-attestation.'
   wayback_date: '2025-08-04'
 - url: https://www.battelle.org/docs/default-source/privacy-policies-disclosures/2018-990-990t.pdf
   format: pdf
@@ -2517,8 +2657,9 @@
   path: government/osti-5527433-doe-honors-research-program-1986-impact-education.html
   archived_date: '2026-04-29'
   sha256: 1cf6d786671841585b02d34d49dbe45278eb444a0c9c5795cad1d86e3bc5cb97
-  archive_status: 1
+  archive_status: 3
   note: 'DOE OSTI catalog entry for ORAU 1987 technical report ''Impact on education and career plans'' (Oak Ridge Associated Universities, December 1, 1987). Primary government catalog confirmation that the DOE High School Science Student Honors Program ran in summer 1986 at two laboratories: the High School Student Supercomputing Honors Program at Lawrence Livermore National Laboratory, and the High School Student Honors Research Program at Brookhaven National Laboratory. Documents who participated in the 1986 summer program. Full-text PDF not available through OSTI; the catalog metadata itself is the primary-source attestation that the program existed and ran at BNL in 1986. Per WorldCat the underlying report is held by libraries but not digitized; participant-level attribution for Kirkpatrick remains via Wikipedia citing AJC 1986 (audit 2.3 Open).'
+  wayback_date: '2026-05-07'
 - url: https://www.osti.gov/biblio/6679837
   format: html
   status: archived

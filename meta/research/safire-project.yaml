@@ -1,0 +1,878 @@
+id: meta/research/safire-project
+type: research-artifact
+schema_version: 1
+target_node: organizations/safire-project
+status: active
+created: '2026-05-07'
+description: 'The SAFIRE Project ([`/organizations/safire-project`]) is a plasma physics laboratory project proposed by Montgomery Childs ([`/people/montgomery-childs`]) to test the Electric Sun Model. The project''s own SAFIRE PROJECT Genesis report (copyright 2017 Aurtas International, patents pending): "The Stellar Atmospheric Function in Regulation Experiment (SAFIRE) was initiated. Its objective was to test the Electric Sun model." The project''s own genesis page: "In 2012 at a conference exploring the electrical nature of deep space Montgomery Childs proposed a way the Electric Sun Model could be tested." David Talbott ([`/people/david-talbott`]) "recognized in Monty Childs'' SAFIRE concept a real and empircal method for testing the Electric Sun model, and so invited Monty to propose his idea to the Electric Universe Group at the 2012 Electric Universe Conference"; Scott Mainwaring ([`/people/scott-mainwaring`]) "recognized in Montgomery Child''s proposal a pragmatic empirical method to test the Electric Universe hypothesis"; Scott "introduced Monty''s proposal to his father, Bruce Mainwaring ([`/people/bruce-mainwaring`]). Father and son decided to support the project through the Mainwaring Archive Foundation." Aurtas International, Inc. ([`/organizations/aurtas-international`]) is Aureon Energy''s predecessor company; the Aureon Energy team page: Childs "is the chairman and founder of Aureon Energy and its predecessor company, Aurtas International, Inc, where he is the creator, chief scientist, and program leader of the SAFIRE Project". The Aurtas International location is Mississauga according to Jan Onderco ([`/people/jan-onderco`])''s Aureon Energy biography. The project is unfolding in three major phases: a fully working proof-of-concept miniature (bench-top) lab (SAFIRE I in the lab 2013 according to the Aureon Energy history page), a full-size SAFIRE laboratory at the heart of which was the SAFIRE Plasma Engine (SAFIRE II in the lab 2019), and a third phase focused on the molecular and atomic levels of reactions observed in the apparatus.
+
+
+  The SAFIRE Project corporate team page: "This is the team in the years of the International Science Foundation ([`/organizations/international-science-foundation`]) mandate to test the Electric Sun model. As SAFIRE has become a commercial enterprise under the auspices of AUREON ENERGY, Ltd. the team has been expanding." The team page lists the Mainwaring Archive Foundation and the International Science Foundation as foundation partners; the SAFIRE PROJECT Genesis report (p. 9): "Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation." Dr. William A. Gardner ([`/people/william-gardner`])''s biography on his cyclostationarity research site, "1 The International Science Foundation funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder ([`/people/james-ryder`])''s, death in May 2018." The SAFIRE Project team page lists Ryder under science review team with Harold Puthoff PhD ([`/people/hal-puthoff`]) (Director, Institute for Advanced Studies at Austin ([`/organizations/institute-for-advanced-studies-at-austin`])), Eric W. Davis Ph.D. ([`/people/eric-davis`]) (Chief Science Officer, Institute for Advanced Studies at Austin), William A. Gardner (Professor Emeritus, University of California), and Hathaway Consulting Services ([`/organizations/hathaway-consulting-services`]). The project''s own commercialization page: "THE SAFIRE PROJECT succesfully completed its original mandate to test the Electric Sun. The decision was then made to take all the discoveries of the previous six years and employ them in producing a commercial plasma reactor that does not generate radioactive waste." The same page: "The new SAFIRE PROJECT, now a commercial enterprise, will be headed by Aureon Energy Ltd." ([`/organizations/aureon-energy`]) The Aureon Energy history page: "Aureon Energy Ltd.  Midland, Ontario,   Canada" with Childs as "Founder and Chairman of Aureon Energy". E-Cat World ([`/organizations/e-cat-world`]) on March 8, 2020: "A new website for Aureon Energy, a company to commercialize the SAFIRE project, has been published at https://aureon.ca". The same article: "Hal Puthoff, a familiar name to many, is a member of their Science Advisory Board."
+
+
+  The Electric Sun Model SAFIRE was built to test is part of the Electric Universe hypothesis. The project''s own historical page: "It is now acknowledged that magnetic fields pervade the Universe, and it was Alfvén who noted that these fields cannot exist without electric currents. According to the evidence from satellites and space-based telescopes, 99.9% of the visible Universe appears to be made up of plasma." The project''s own Phase Three page lists production capabilities including "Production of low energy quiescent plasmas", "Production of multi spherical plasma double layer shells", and "Potential of Low-Energy Nuclear Reactions (LENR)"; the same page: "SAFIRE is generating variations in electron density comparable to the photoshpere, heliosphere and nuclear bombs" and "The core of SAFIRE is cooler than its surrounding atmoshere". A "90 minute SAFIRE PROJECT presentation" was given "at the 2017 Electric Universe FUTURE SCIENCE Conference in Phoenix Arizona" by Childs and Dr. Michael Clarage ([`/people/michael-clarage`]).
+
+  '
+primary_sources:
+- path: news/safireproject-team-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-0.txt
+- path: news/aureonenergy-history-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-1.txt
+- path: news/cyclostationarity-gardner-biography-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-2.txt
+- path: news/safireproject-genesis-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-3.txt
+- path: news/safireproject-historical-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-4.txt
+- path: news/safireproject-phase-one-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-5.txt
+- path: news/safireproject-phase-two-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-6.txt
+- path: news/safireproject-phase-three-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-7.txt
+- path: news/safireproject-commercialization-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-8.txt
+- path: news/safireproject-resources-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-9.txt
+- path: news/safireproject-presentations-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-10.txt
+- path: news/aureonenergy-team-snapshot.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-11.txt
+- path: news/e-catworld-aureon-launch-20200308.html
+  format: html
+  extracted_text_path: /tmp/scratch-safire-project-12.txt
+- path: news/safireproject-genesis-report-20180223.pdf
+  format: pdf
+- path: news/safireproject-phase-one-report.pdf
+  format: pdf
+- path: news/safireproject-project-report.pdf
+  format: pdf
+- path: news/safireproject-phase-two-report.pdf
+  format: pdf
+- path: news/safireproject-phase-three-report.pdf
+  format: pdf
+document_intrinsic:
+  internal_name: SAFIRE PROJECT
+  full_name: SAFIRE Project
+  founded_date: '2012'
+  headquarters: 'Mississauga, Ontario, Canada — research-era SAFIRE lab location attested by the SAFIRE PROJECT Genesis report cover-photo caption ("The SAFIRE sun, photographed in the SAFIRE lab, Mississauga, Ontario, Canada, June 15, 2016"); the commercial-successor Aureon Energy Ltd. is at Midland, Ontario, Canada per the Aureon Energy history page.'
+  current_leadership_path: /people/montgomery-childs
+  public_status: 'Plasma physics laboratory project; ran under Aurtas International, Inc. (Mississauga, Ontario) during the International Science Foundation mandate years; commercial successor Aureon Energy Ltd. (Midland, Ontario, Canada) website live by March 8, 2020 per E-Cat World.'
+  org_type: project
+context_extrinsic:
+  display_title: SAFIRE Project
+quotes:
+- id: q1
+  added_date: '2026-05-07'
+  text: |
+    In 2012 at a conference exploring the electrical nature of deep space Montgomery Childs proposed a way the Electric Sun Model could be tested.
+  source:
+    path: news/safireproject-genesis-snapshot.html
+    location: '¶3'
+  significance: SAFIRE's origin date and originating event — Montgomery Childs proposed the project at a 2012 Electric Universe conference.
+  context: 'SAFIRE Project corporate genesis page, safireproject.com/about-us/genesis.html'
+  statement_date: '2012'
+- id: q2
+  added_date: '2026-05-07'
+  text: |
+    Montgomery Childs: "Two years of research has led me to the conclusion that the Electric Sun Model might be boiled down to a fundamental process:     "Charged plasma affecting matter of a different electrical potential.”
+  source:
+    path: news/safireproject-genesis-snapshot.html
+    location: '¶4'
+  significance: Childs's stated foundational concept for SAFIRE — distilling the Electric Sun Model to a process between charged plasma and matter at different electrical potential. Page attributes this directly to Childs by name.
+  context: 'SAFIRE Project corporate genesis page; quote attributed verbatim to Montgomery Childs'
+  statement_date: '2012'
+- id: q3
+  added_date: '2026-05-07'
+  text: |
+    Scott introduced Monty's proposal to his father, Bruce Mainwaring. Father and son decided to support the project through the Mainwaring Archive Foundation.
+  source:
+    path: news/safireproject-genesis-snapshot.html
+    location: '¶7'
+  significance: Origin of the Mainwaring Archive Foundation funding line — Scott Mainwaring brought Monty's proposal to his father Bruce; the father-son pair backed the project through their family foundation.
+  context: 'SAFIRE Project corporate genesis page'
+  statement_date: '2012'
+- id: q4
+  added_date: '2026-05-07'
+  text: |
+    The SAFIRE PROJECT was initiated. Its objective was to test the Electric Sun Model. The project is unfolding in three major phases.
+  source:
+    path: news/safireproject-genesis-snapshot.html
+    location: '¶5'
+  significance: Project's stated objective and three-phase structure as articulated on the project's own genesis page.
+  context: 'SAFIRE Project corporate genesis page'
+  statement_date: '2012'
+- id: q5
+  added_date: '2026-05-07'
+  text: |
+    MONTGOMERY CHILDS is the Founder of AUREON ENERGY, Ltd., and the principal scientist and chief engineer of the SAFIRE PROJECT. It was Childs who first proposed SAFIRE, and Scott and Bruce Mainwaring who recognized its potential and supported it.
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶3'
+  significance: Childs's official roles per the SAFIRE Project's own corporate team page — Founder of Aureon Energy Ltd., and principal scientist and chief engineer of the SAFIRE Project. Names Mainwaring brothers as the original supporters.
+  context: 'SAFIRE Project corporate team page, safireproject.com/about-us/team.html'
+  statement_date: '2012'
+- id: q6
+  added_date: '2026-05-07'
+  text: |
+    NOTE: This is the team in the years of the International Science Foundation mandate to test the Electric Sun model. As SAFIRE has become a commercial enterprise under the auspices of AUREON ENERGY, Ltd. the team has been expanding.
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶15'
+  significance: Project's own statement of the institutional transition — from International Science Foundation mandate years to commercial enterprise under Aureon Energy Ltd. Anchors the ISF→Aureon corporate-vehicle handoff.
+  context: 'SAFIRE Project corporate team page'
+- id: q7
+  added_date: '2026-05-07'
+  text: |
+    DAVID TALBOTT recognized in Monty Childs' SAFIRE concept a real and empircal method for testing the Electric Sun model, and so invited Monty to propose his idea to the Electric Universe Group at the 2012 Electric Universe Conference.
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶17'
+  significance: Talbott's role as the inviter — Talbott invited Monty to propose his SAFIRE idea at the 2012 EU Conference, the originating venue. Verbatim contains source typo "empircal" preserved per source-form discipline.
+  context: 'SAFIRE Project corporate team page'
+  statement_date: '2012'
+- id: q8
+  added_date: '2026-05-07'
+  text: |
+    MONTGOMERY CHILDS:     "When we first fired up the bell jar and began measuring the electromagnetic and radio frequencies of the plasma – there was a rhythm, like a heartbeat; stable and continuous.
+  source:
+    path: news/safireproject-phase-one-snapshot.html
+    location: '¶5'
+  significance: Childs's first-person account of the Phase One bell-jar firing — the project's initial proof-of-concept experiment with iron composite anodes (2 and 4 cm diameter).
+  context: 'SAFIRE Project Phase One page; quote attributed verbatim to Montgomery Childs'
+- id: q9
+  added_date: '2026-05-07'
+  text: |
+    •     Production of low energy quiescent plasmas  •     Stabilization of low energy quiescent plasmas   •     Production of plasma tufts  •     Stabilization of plasma tufts  •     Production of multi spherical plasma double layer shells  •     Stabilization of multi spherical plasma double layer shells  •     Production of high energy exothermic plasma reactions  •     Stabilization of high energy exothermic plasma reactions  •     Containment of high energy dense plasmas  •     Stabilizing of high energy plasma dense plasmas  •     Creation of high energy exothermic plasma reactions.  •     Stabilization of high energy exothermic plasma reactions  •     Slowing the speed of light  •     Production of 10.2eV vacuum ultra violet light  •     Production of copious amounts of atomic hydrogen  •     Production of free protons  •     Production of virtual cathode  •     Potential of Low-Energy Nuclear Reactions (LENR)
+  source:
+    path: news/safireproject-phase-three-snapshot.html
+    location: '¶5'
+  significance: Project's own list of production capabilities including the Potential of Low-Energy Nuclear Reactions (LENR) — places the work adjacent to the LENR research community.
+  context: 'SAFIRE Project Phase Three page, technology capabilities list'
+- id: q10
+  added_date: '2026-05-07'
+  text: |
+    SAFIRE is generating variations in electron density comparable to the photoshpere, heliosphere and nuclear bombs.     Electrical confinement of high energy photos (photon trapping)     The core of SAFIRE is cooler than its surrounding atmoshere
+  source:
+    path: news/safireproject-phase-three-snapshot.html
+    location: '¶7'
+  significance: Project's stated counter-thermonuclear-model finding — that the core of SAFIRE is cooler than its surrounding atmosphere [sic 'atmoshere'], and electron density comparable to the photosphere [sic 'photoshpere'], heliosphere and nuclear bombs. Verbatim preserves source typos.
+  context: 'SAFIRE Project Phase Three page, stated discoveries section'
+- id: q11
+  added_date: '2026-05-07'
+  text: |
+    CLICK to view the 90 minute SAFIRE PROJECT presentation, given at the 2017 Electric Universe FUTURE SCIENCE Conference in Phoenix Arizona.
+  source:
+    path: news/safireproject-phase-three-snapshot.html
+    location: '¶8'
+  significance: Date-stamped attestation of the 90 minute SAFIRE PROJECT presentation at the 2017 Electric Universe FUTURE SCIENCE Conference, Phoenix Arizona.
+  context: 'SAFIRE Project Phase Three page'
+  statement_date: '2017'
+- id: q12
+  added_date: '2026-05-07'
+  text: |
+    THE SAFIRE PROJECT succesfully completed its original mandate to test the Electric Sun. The decision was then made to take all the discoveries of the previous six years and employ them in producing a commercial plasma reactor that does not generate radioactive waste.
+  source:
+    path: news/safireproject-commercialization-snapshot.html
+    location: '¶3'
+  significance: Project's own statement of the research-to-commercial transition — successfully completing the original Electric Sun test mandate and pivoting to commercial plasma reactor production. Verbatim preserves source typo "succesfully" [sic].
+  context: 'SAFIRE Project commercialization page'
+- id: q13
+  added_date: '2026-05-07'
+  text: |
+    The new SAFIRE PROJECT, now a commercial enterprise, will be headed by Aureon Energy Ltd.
+  source:
+    path: news/safireproject-commercialization-snapshot.html
+    location: '¶4'
+  significance: Project's own statement that the post-research SAFIRE Project is headed by Aureon Energy Ltd.
+  context: 'SAFIRE Project commercialization page'
+- id: q14
+  added_date: '2026-05-07'
+  text: |
+    1 The International Science Foundation funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder’s, death in May 2018.
+  source:
+    path: news/cyclostationarity-gardner-biography-snapshot.html
+    location: 'footnote 1'
+  significance: Named-collaborator (Gardner) primary attestation of the ISF funding relationship to SAFIRE and ISF closure timing — at Ryder's death, May 2018.
+  context: 'Dr. William A. Gardner''s biography page on cyclostationarity.com, footnote 1'
+- id: q15
+  added_date: '2026-05-07'
+  text: |
+    Montgomery Childs is the chairman and founder of Aureon Energy and its predecessor company, Aurtas International, Inc, where he is the creator, chief scientist, and program leader of the SAFIRE Project.
+  source:
+    path: news/aureonenergy-team-snapshot.html
+    location: '¶2'
+  significance: Aureon Energy's primary self-attestation of the Aurtas International predecessor lineage — establishes Aurtas International, Inc. as Childs's predecessor company under which the SAFIRE Project ran before transitioning to Aureon.
+  context: 'Aureon Energy corporate team page, aureonenergy.com/team'
+- id: q16
+  added_date: '2026-05-07'
+  text: |
+    Dr. Paul Anderson is a senior physical chemist working for the United States Department of Defense, serving as a lead scientist overseeing and researching the synthesis, formulation, and characterization of next-generation explosive and propellant systems.
+  source:
+    path: news/aureonenergy-team-snapshot.html
+    location: '¶8'
+  significance: Aureon Energy's self-attestation that Paul Anderson — Aureon VP, Experiments and SAFIRE Project Phase One/Two/Three chemistry lead — works for the United States Department of Defense as a lead scientist on next-generation explosive and propellant systems. Documented institutional crossover between SAFIRE personnel and DoD lead-scientist role.
+  context: 'Aureon Energy corporate team page'
+- id: q17
+  added_date: '2026-05-07'
+  text: |
+    A new website for Aureon Energy, a company to commercialize the SAFIRE project, has been published at https://aureon.ca
+  source:
+    path: news/e-catworld-aureon-launch-20200308.html
+    location: '¶3'
+  significance: Independent press attestation (E-Cat World, March 8 2020) of the Aureon Energy website launch at aureon.ca as the commercialization vehicle for the SAFIRE project.
+  context: 'E-Cat World article dated March 8, 2020'
+  statement_date: '2020-03-08'
+- id: q18
+  added_date: '2026-05-07'
+  text: |
+    Their team includes Montgomery Childs (CEO and Founder), Michael Clarage (Chief Science Officer) and Paul Anderson (Chief Technical Officer). Hal Puthoff, a familiar name to many, is a member of their Science Advisory Board.
+  source:
+    path: news/e-catworld-aureon-launch-20200308.html
+    location: '¶3'
+  significance: E-Cat World's identification of Aureon's launch leadership (Childs CEO/Founder, Clarage CSO, Anderson CTO) and Hal Puthoff as Science Advisory Board member as of March 8 2020.
+  context: 'E-Cat World article dated March 8, 2020'
+  statement_date: '2020-03-08'
+- id: q19
+  added_date: '2026-05-07'
+  text: |
+    The Stellar Atmospheric Function in Regulation
+    Experiment (SAFIRE) was initiated. Its objective
+    was to test the Electric Sun model.
+  source:
+    path: news/safireproject-genesis-report-20180223.pdf
+    location: 'p. 9'
+  significance: Primary-source attestation of the SAFIRE acronym expansion ("Stellar Atmospheric Function in Regulation Experiment"). Resolves the previously third-party-only attribution. The Genesis report is self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending.
+  context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), self-published; cover photo dated June 15, 2016'
+- id: q20
+  added_date: '2026-05-07'
+  text: |
+    Funding for an initial test was promised by the
+    Mainwaring Archive Foundation, to be administered
+    by the International Science Foundation.
+  source:
+    path: news/safireproject-genesis-report-20180223.pdf
+    location: 'p. 9'
+  significance: Primary-source attestation of the project's funding structure — Mainwaring Archive Foundation as funder, International Science Foundation as fund administrator. Refines the prior partner-only framing.
+  context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), self-published'
+- id: q21
+  added_date: '2026-05-07'
+  text: |
+    The SAFIRE sun, photographed in the SAFIRE lab, Mississauga, Ontario, Canada, June 15, 2016
+  source:
+    path: news/safireproject-genesis-report-20180223.pdf
+    location: 'p. 1 (cover photo caption)'
+  significance: Primary-source attestation of (a) the SAFIRE lab location as Mississauga, Ontario, Canada and (b) the precise first-firing date as June 15, 2016 (refines the prior month-only attestation from the resources page caption).
+  context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), cover-page photo caption'
+  statement_date: '2016-06-15'
+- id: q22
+  added_date: '2026-05-07'
+  text: |
+    In 2011 engineer Montgomery Childs was researching
+    photovoltaic energy production systems when he noticed
+    that aspects of the Sun’s behavior appeared to contradict
+    expected behavior predicted by the standard model of
+    solar physics.
+  source:
+    path: news/safireproject-genesis-report-20180223.pdf
+    location: 'p. 2, ¶1'
+  significance: Primary-source attestation of the 2011 antecedent — Childs's photovoltaic-research observations of solar behavior contradicting the standard model, the personal precursor to the 2012 Electric Universe Conference proposal that initiated the SAFIRE PROJECT.
+  context: 'SAFIRE PROJECT Genesis report (Genesis-20180223-2.pdf), opening Genesis section'
+  statement_date: '2011'
+- id: q23
+  added_date: '2026-05-07'
+  text: |
+    The central feature of the experimental apparatus is
+    a stainless-steel cylinder four feet in diameter and
+    seven feet long.
+  source:
+    path: news/safireproject-phase-two-report.pdf
+    location: 'p. 3'
+  significance: SAFIRE Phase II reactor primary dimensions — stainless-steel cylinder four feet in diameter and seven feet long. Self-attested in the Phase Two report.
+  context: 'SAFIRE PROJECT Phase Two report'
+- id: q24
+  added_date: '2026-05-07'
+  text: |
+    A power supply capable of producing 200kW of clean,
+    continuous, direct current and voltage was constructed
+    for the project.
+  source:
+    path: news/safireproject-phase-two-report.pdf
+    location: 'p. 13'
+  significance: SAFIRE Phase II power supply specification — 200 kW DC. Self-attested in the Phase Two report.
+  context: 'SAFIRE PROJECT Phase Two report'
+- id: q25
+  added_date: '2026-05-07'
+  text: |
+    The SAFIRE engine is made up of 40,000 parts.
+  source:
+    path: news/safireproject-phase-two-report.pdf
+    location: 'p. 19'
+  significance: SAFIRE engine parts-count attestation (40,000 parts). Self-attested in the Phase Two report.
+  context: 'SAFIRE PROJECT Phase Two report'
+entities_referenced:
+- id: e1
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Montgomery Childs
+  wrap_path: /people/montgomery-childs
+  context_summary: 'Founder of Aureon Energy Ltd.; principal scientist and chief engineer of the SAFIRE Project; chairman and founder of predecessor company Aurtas International, Inc. Aureon Energy team page:prior CEO of Genesis Design Engineering, Inc. and Linear Transfer Systems, Ltd.; named Profit magazine Entrepreneur of the Year; Toyota 5-Star Award; 11 issued patents in machine control, solar energy, and plasma physics; designed a meteorological rocket for the Canadian National Research Council; former AI/CAD instructor at Georgian College.'
+  references:
+  - quote_id: q1
+  - quote_id: q2
+  - quote_id: q3
+  - quote_id: q5
+  - quote_id: q7
+  - quote_id: q8
+  - quote_id: q15
+  - quote_id: q18
+- id: e2
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Scott Mainwaring
+  wrap_path: /people/scott-mainwaring
+  context_summary: 'Recognized in Childs''s 2012 proposal a pragmatic empirical method to test the Electric Universe hypothesis; introduced the proposal to his father Bruce Mainwaring. Per the SAFIRE team page, finances the work through the Mainwaring Archive Foundation, consults regularly with Monty, and volunteered hands-on assistance in building the main Phase 2 apparatus.'
+  references:
+  - quote_id: q3
+  - quote_id: q5
+- id: e3
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Bruce Mainwaring
+  wrap_path: /people/bruce-mainwaring
+  context_summary: 'Father of Scott Mainwaring; supported the SAFIRE Project through the Mainwaring Archive Foundation. Per the SAFIRE team page, devoted fan of the Electric Universe idea for half a century with lifelong work in applied electrical sciences.'
+  references:
+  - quote_id: q3
+  - quote_id: q5
+- id: e4
+  added_date: '2026-05-07'
+  entity_type: person
+  name: David Talbott
+  wrap_path: /people/david-talbott
+  context_summary: 'Per the SAFIRE team page, recognized in Monty Childs'' SAFIRE concept a real and empircal [sic] method for testing the Electric Sun model, and invited Monty to propose his idea to the Electric Universe Group at the 2012 Electric Universe Conference. Initiator and co-producer of the annual Electric Universe Conferences.'
+  references:
+  - quote_id: q7
+- id: e5
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Wal Thornhill
+  wrap_path: /people/wal-thornhill
+  context_summary: 'Per the SAFIRE Project historical and team pages, "arguably the world''s leading authority on the Electric Sun model"; presents the key factors that define the new model and helps propose and clarify SAFIRE experiments. Listed on the consulting team.'
+- id: e6
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Donald Scott
+  wrap_path: /people/donald-scott
+  context_summary: 'Listed on SAFIRE consulting team. Per the SAFIRE team page, "a key player in the EU Group, offers a lifetime of experience with both traditional and now bleeding-edge electrical concepts." SAFIRE Project historical page:has a long history of further refining the Electric Sun Model in terms of on-the-ground empirical electrical theory and plasma electrodynamics.'
+- id: e7
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Jano Onderco
+  wrap_path: /people/jan-onderco
+  context_summary: 'Listed on SAFIRE core team as Monty''s right-hand man in the lab, responsible for all data acquisition. Aureon Energy team page:since 2014 contributing to the SAFIRE project at Aurtas International in Mississauga, designing and developing SCADA systems and data transformation engines for physics research. Master''s in Technical Cybernetics and Controlling from Slovak Technical University.'
+- id: e8
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Jason Lickver
+  wrap_path: /people/jason-lickver
+  context_summary: 'Listed on SAFIRE core team as engineer who helps analyze and troubleshoot Monty''s design blueprints and collaborates with construction of the SAFIRE apparatus itself. Aureon Energy team page:has been a driving force behind the SAFIRE Team since 2014, serving as the Senior Design Engineer on SAFIRE II and III.'
+- id: e9
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Leighton Macmillan
+  wrap_path: /people/leighton-macmillan
+  context_summary: 'Listed on SAFIRE core team. Per the SAFIRE team page, "plumber, millright, machinist, engineer, sparky, electronic control, mechanical assembly, documentation; person Friday for your average ''out of the box'' science project."'
+- id: e10
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Michael Clarage
+  wrap_path: /people/michael-clarage
+  context_summary: 'Listed on SAFIRE core team as Ph.D scientist who collates, analyzes, and compares experiment data. Aureon Energy team page:Aureon''s Chief Science Officer; Ph.D. in physics from Brandeis University; research has spanned multiple academic specialties from binary pulsars at the Arecibo radio telescope to fractional calculus and chaotic systems. Co-presented the 2017 90-minute SAFIRE PROJECT presentation at the EU FUTURE SCIENCE Conference in Phoenix.'
+  references:
+  - quote_id: q18
+- id: e11
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Paul Anderson
+  wrap_path: /people/paul-anderson
+  context_summary: 'Listed on SAFIRE core team as Ph.D chemist managing Design of Experiments, chemical studies, and statistical analysis and modeling. Aureon Energy team page:Aureon''s VP, Experiments; senior physical chemist working for the United States Department of Defense, serving as a lead scientist overseeing and researching the synthesis, formulation, and characterization of next-generation explosive and propellant systems; 4 patents; 18 peer-reviewed publications; over 40 government technical reports; IEEE and NDIA member; Ph.D. in Physical Chemistry from Northeastern University.'
+  references:
+  - quote_id: q16
+  - quote_id: q18
+- id: e12
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Lowell Morgan
+  wrap_path: /people/lowell-morgan
+  context_summary: 'Listed on SAFIRE core team. Per the SAFIRE team page, "brings a lifetime of experience in plasma physics, both theoretical and applied; he is also extremely skilled at writing peer reviewable papers in this field."'
+- id: e13
+  added_date: '2026-05-07'
+  entity_type: person
+  name: James Ryder
+  wrap_path: /people/james-ryder
+  context_summary: 'Listed on the SAFIRE Project Science Review Team as Chairman, International Science Foundation. Dr. William A. Gardner''s biography, founded the International Science Foundation; ISF closed at Ryder''s death in May 2018. The IVS Ryder also chaired was founded by Professor Gerald Pollack of the University of Washington. Also listed on the SAFIRE consulting team — "with a wealth of exerpience [sic] in the aerospace industry, points out the latest discoveries in space that were not anticipated."'
+  references:
+  - quote_id: q14
+- id: e14
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Hal Puthoff
+  wrap_path: /people/hal-puthoff
+  context_summary: 'Listed on the SAFIRE Project Science Review Team as Harold Puthoff PhD, Director, Institute for Advanced Studies at Austin. E-Cat World March 8 2020 article:named to Aureon Energy''s Science Advisory Board at the company''s website launch.'
+  references:
+  - quote_id: q18
+- id: e15
+  added_date: '2026-05-07'
+  entity_type: person
+  name: Eric W. Davis
+  wrap_path: /people/eric-davis
+  context_summary: 'Listed on the SAFIRE Project Science Review Team as Eric W. Davis Ph.D., Chief Science Officer, Institute for Advanced Studies at Austin, Austin, TX.'
+- id: e16
+  added_date: '2026-05-07'
+  entity_type: person
+  name: William A. Gardner
+  wrap_path: /people/william-gardner
+  context_summary: 'Listed on the SAFIRE Project Science Review Team as Professor Emeritus, University of California. Per his own first-person biography on cyclostationarity.com, began a five-year collaboration with Ryder in 2013; provided voluntary support for SAFIRE through electromagnetic modeling of laboratory-confined/controlled plasma. Footnote 1 of his biography is the named-source primary attestation of Ryder''s May 2018 death and ISF closure.'
+  references:
+  - quote_id: q14
+- id: e19
+  added_date: '2026-05-07'
+  entity_type: organization
+  name: Aurtas International, Inc.
+  wrap_path: /organizations/aurtas-international
+  context_summary: 'Aureon Energy team page:Aureon Energy''s predecessor company; Childs''s prior corporate vehicle. Jan Onderco''s Aureon biography:located in Mississauga, Ontario; SAFIRE project ran at Aurtas International from at least 2014.'
+  references:
+  - quote_id: q15
+- id: e20
+  added_date: '2026-05-07'
+  entity_type: organization
+  name: Aureon Energy Ltd.
+  wrap_path: /organizations/aureon-energy
+  context_summary: 'Commercial successor to the SAFIRE Project research line. Aureon Energy history page:headquartered in Midland, Ontario, Canada; SAFIRE I in lab 2013, SAFIRE II in lab 2019. E-Cat World March 8 2020 article:website launched at https://aureon.ca on March 8, 2020. Childs is Chairman & Founder.'
+  references:
+  - quote_id: q5
+  - quote_id: q6
+  - quote_id: q13
+  - quote_id: q15
+  - quote_id: q17
+  - quote_id: q18
+- id: e21
+  added_date: '2026-05-07'
+  entity_type: organization
+  name: International Science Foundation
+  wrap_path: /organizations/international-science-foundation
+  context_summary: 'SAFIRE Project corporate team page:the International Science Foundation mandate funded SAFIRE during the project''s research years. Dr. William A. Gardner''s biography, ISF funded SAFIRE for several years and closed down at Ryder''s death in May 2018. Per the SAFIRE team page, ISF foundation-partner block lists Dr. James Ryder and Susan Schirott.'
+  references:
+  - quote_id: q6
+  - quote_id: q14
+- id: e22
+  added_date: '2026-05-07'
+  entity_type: organization
+  name: Mainwaring Archive Foundation
+  wrap_path: /organizations/mainwaring-archive-foundation
+  context_summary: 'SAFIRE Project genesis page:Bruce and Scott Mainwaring decided to support the project through the Mainwaring Archive Foundation. Per the SAFIRE team page, foundation-partner block lists Bruce Mainwaring and Scott Mainwaring.'
+  references:
+  - quote_id: q3
+- id: e23
+  added_date: '2026-05-07'
+  entity_type: organization
+  name: Institute for Advanced Studies at Austin
+  wrap_path: /organizations/institute-for-advanced-studies-at-austin
+  context_summary: 'SAFIRE Project corporate team page:Hal Puthoff is Director of Institute for Advanced Studies at Austin and Eric W. Davis is Chief Science Officer of Institute for Advanced Studies at Austin (Austin, TX). The two SAFIRE Science Review Team members share the IASA institutional anchor.'
+- id: e25
+  added_date: '2026-05-07'
+  entity_type: organization
+  name: Hathaway Consulting Services
+  wrap_path: /organizations/hathaway-consulting-services
+  context_summary: 'Listed on the SAFIRE Project Science Review Team and as a corporate consultant on the team page.'
+- id: e30
+  added_date: '2026-05-07'
+  entity_type: organization
+  name: E-Cat World
+  wrap_path: /organizations/e-cat-world
+  context_summary: 'LENR / cold-fusion-community blog (Frank Acland) that reported the March 8, 2020 Aureon Energy website launch at https://aureon.ca; surfaced Hal Puthoff''s Science Advisory Board appointment.'
+  references:
+  - quote_id: q17
+  - quote_id: q18
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-07'
+  observed: empircal
+  canonical: empirical
+  location: 'sources/news/safireproject-team-snapshot.html ¶17 (David Talbott bio)'
+  source_path: news/safireproject-team-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'SAFIRE Project corporate team page renders "empirical" as "empircal" in David Talbott''s consulting-team bio — typo at the source. Canonical form: empirical. Preserved verbatim in q7 quote text.'
+- id: nq2
+  added_date: '2026-05-07'
+  observed: exerpience
+  canonical: experience
+  location: 'sources/news/safireproject-team-snapshot.html ¶16 (Jim Ryder consulting bio)'
+  source_path: news/safireproject-team-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'SAFIRE Project corporate team page renders "experience" as "exerpience" in Jim Ryder''s consulting-team bio — typo at the source. Canonical form: experience. Preserved verbatim where the bio text appears in source extracts.'
+- id: nq3
+  added_date: '2026-05-07'
+  observed: scientfic
+  canonical: scientific
+  location: 'sources/news/safireproject-team-snapshot.html ¶14 (consulting team description)'
+  source_path: news/safireproject-team-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'SAFIRE Project corporate team page renders "scientific" as "scientfic" in the consulting team description — typo at the source. Canonical form: scientific.'
+- id: nq4
+  added_date: '2026-05-07'
+  observed: atmoshere
+  canonical: atmosphere
+  location: 'sources/news/safireproject-phase-three-snapshot.html ¶7 (stated discoveries)'
+  source_path: news/safireproject-phase-three-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'SAFIRE Project Phase Three page renders "atmosphere" as "atmoshere" in the project''s stated counter-thermonuclear-model finding ("The core of SAFIRE is cooler than its surrounding atmoshere"). Canonical form: atmosphere. Preserved verbatim in q10 quote text.'
+- id: nq5
+  added_date: '2026-05-07'
+  observed: photoshpere
+  canonical: photosphere
+  location: 'sources/news/safireproject-phase-three-snapshot.html ¶7'
+  source_path: news/safireproject-phase-three-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'SAFIRE Project Phase Three page renders "photosphere" as "photoshpere" in the electron-density comparison statement. Canonical form: photosphere. Preserved verbatim in q10 quote text.'
+- id: nq6
+  added_date: '2026-05-07'
+  observed: succesfully
+  canonical: successfully
+  location: 'sources/news/safireproject-commercialization-snapshot.html ¶3'
+  source_path: news/safireproject-commercialization-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'SAFIRE Project commercialization page renders "successfully" as "succesfully" in the project''s research-to-commercial transition statement. Canonical form: successfully. Preserved verbatim in q12 quote text.'
+- id: nq7
+  added_date: '2026-05-07'
+  observed: John Hopkins University
+  canonical: Johns Hopkins University
+  location: 'sources/news/safireproject-genesis-snapshot.html (planning session photo caption)'
+  source_path: news/safireproject-genesis-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'SAFIRE Project genesis page renders "Johns Hopkins" as "John Hopkins" in the planning session photo caption ("Michael Clarage, Montgomery Childs, Wal Thornhill, Paul Anderson; planning session at John Hopkins University."). Canonical form: Johns Hopkins University.'
+- id: nq8
+  added_date: '2026-05-07'
+  observed: Hal Putoff
+  canonical: Hal Puthoff
+  location: 'sources/news/safireproject-team-snapshot.html (group photo caption identifying photo subjects)'
+  source_path: news/safireproject-team-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'SAFIRE Project team page group-photo caption renders "Puthoff" as "Putoff" alongside other subject identifications. Canonical form: Hal Puthoff. Same person who appears correctly as "Harold Puthoff, PhD" in the Science Review Team listing on the same page.'
+- id: nq9
+  added_date: '2026-05-07'
+  observed: Monty
+  canonical: Montgomery Childs
+  location: 'sources/news/safireproject-team-snapshot.html (multiple paragraphs); sources/news/safireproject-genesis-snapshot.html'
+  source_path: news/safireproject-team-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'SAFIRE Project pages frequently use the informal short form "Monty" for Montgomery Childs (e.g., "Monty''s right-hand man", "Scott introduced Monty''s proposal"). Alias-of-record — not a typo; Monty is the project-internal informal address form used across multiple paragraphs.'
+rumors: []
+timeline:
+- id: t12
+  added_date: '2026-05-07'
+  date: '2011'
+  event: 'Engineer Montgomery Childs, while researching photovoltaic energy production systems, observes solar behavior contradicting the standard model of solar physics; subsequently discovers Electric Sun model researchers — antecedent to the 2012 EU Conference proposal (Genesis report p. 2).'
+  source:
+    path: news/safireproject-genesis-report-20180223.pdf
+    location: 'p. 2, ¶1'
+  category: antecedent
+- id: t1
+  added_date: '2026-05-07'
+  date: '2012'
+  event: 'Montgomery Childs proposes SAFIRE at the 2012 Electric Universe Conference (David Talbott invitation); Scott Mainwaring brings the proposal to his father Bruce; the Mainwarings support the project through the Mainwaring Archive Foundation.'
+  source:
+    path: news/safireproject-genesis-snapshot.html
+    location: '¶3-7'
+  category: founding
+- id: t2
+  added_date: '2026-05-07'
+  date: '2013'
+  event: 'SAFIRE I — proof-of-concept bench-top bell-jar prototype — in the lab per the Aureon Energy history page caption ("Historical photo of SAFIRE I in in the lab 2013"). Same year, Dr. William A. Gardner begins a five-year collaboration with James T. Ryder per Gardner''s biography.'
+  source:
+    path: news/aureonenergy-history-snapshot.html
+    location: '¶3 (SAFIRE I caption)'
+  category: milestone
+- id: t3
+  added_date: '2026-05-07'
+  date: '2014'
+  event: 'Aureon Energy team page:Jan Onderco joins the SAFIRE project at Aurtas International in Mississauga (designing and developing SCADA systems and data transformation engines for physics research); Jason Lickver also joins the SAFIRE Team in 2014 as Senior Design Engineer on SAFIRE II and III.'
+  source:
+    path: news/aureonenergy-team-snapshot.html
+    location: '¶12 (Onderco bio); ¶10 (Lickver bio)'
+  category: personnel
+- id: t4
+  added_date: '2026-05-07'
+  date: '2016-06-15'
+  event: 'SAFIRE first-firing date — the SAFIRE PROJECT Genesis report cover photo caption attests "The SAFIRE sun, photographed in the SAFIRE lab, Mississauga, Ontario, Canada, June 15, 2016". The same project''s resources page caption attests "This is an image of the 12 centimeter anode several minutes after SAFIRE is first fired up in June of 2016".'
+  source:
+    path: news/safireproject-genesis-report-20180223.pdf
+    location: 'p. 1 (cover photo caption)'
+  category: milestone
+- id: t5
+  added_date: '2026-05-07'
+  date: '2017'
+  event: '90 minute SAFIRE PROJECT presentation given by Montgomery Childs and Dr. Michael Clarage at the 2017 Electric Universe FUTURE SCIENCE Conference in Phoenix Arizona. Per the Phase Three page, the SAFIRE laboratory was completed and fully commissioned and through 2017 the SAFIRE team performed numerous experiments.'
+  source:
+    path: news/safireproject-phase-three-snapshot.html
+    location: '¶8'
+  category: presentation
+- id: t6
+  added_date: '2026-05-07'
+  date: '2018-02-23'
+  event: 'SAFIRE PROJECT REPORT (Genesis-20180223-2.pdf) referenced on the SAFIRE Project resources page; filename embeds the date 2018-02-23.'
+  source:
+    path: news/safireproject-resources-snapshot.html
+    location: '¶3'
+  category: publication
+- id: t7
+  added_date: '2026-05-07'
+  date: '2018-05'
+  event: 'Dr. William A. Gardner''s biography footnote 1, Dr. James T. Ryder dies; the International Science Foundation closes down at the time of its Founder/COB''s death.'
+  source:
+    path: news/cyclostationarity-gardner-biography-snapshot.html
+    location: 'footnote 1'
+  category: institutional
+- id: t8
+  added_date: '2026-05-07'
+  date: '2018-07'
+  event: 'Three SAFIRE PROJECT presentations at the Electric Universe – United Kingdom International Conference & Symposium, 7th-11th July 2018, Somerset, UK, by Montgomery Childs and Michael Clarage.'
+  source:
+    path: news/safireproject-presentations-snapshot.html
+    location: '¶12'
+  category: presentation
+- id: t9
+  added_date: '2026-05-07'
+  date: '2019'
+  event: 'SAFIRE II in the lab per the Aureon Energy history page caption ("Historical photo of SAFIRE II in in the lab 2019"). Walk-through of SAFIRE II Plasma Reactor video dated 2019.'
+  source:
+    path: news/aureonenergy-history-snapshot.html
+    location: '¶4 (SAFIRE II caption)'
+  category: milestone
+- id: t10
+  added_date: '2026-05-07'
+  date: '2019-07-06'
+  event: 'Montgomery Childs and Michael Clarage present at the 2nd Electric Universe UK conference / Dynamic Earth Science Conference, University of Bath, UK, July 6 2019.'
+  source:
+    path: news/safireproject-presentations-snapshot.html
+    location: '¶12'
+  category: presentation
+- id: t11
+  added_date: '2026-05-07'
+  date: '2020-03-08'
+  event: 'Aureon Energy website live at https://aureon.ca by March 8, 2020 per E-Cat World. Aureon leadership: Childs (CEO/Founder), Clarage (CSO), Anderson (CTO); Puthoff on Science Advisory Board.'
+  source:
+    path: news/e-catworld-aureon-launch-20200308.html
+    location: '¶3'
+  category: institutional
+key_personnel:
+- id: kp1
+  added_date: '2026-05-07'
+  person_path: /people/montgomery-childs
+  role: 'Founder, principal scientist, and chief engineer of the SAFIRE PROJECT'
+  leadership_class: director
+  period_start: '2012'
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶3'
+  note: 'SAFIRE Project corporate team page:Childs is the Founder of AUREON ENERGY, Ltd. and the principal scientist and chief engineer of the SAFIRE PROJECT. Aureon Energy team page:also chairman and founder of predecessor company Aurtas International, Inc., where he is the creator, chief scientist, and program leader of the SAFIRE Project.'
+- id: kp2
+  added_date: '2026-05-07'
+  person_path: /people/jan-onderco
+  role: 'Core team member; data acquisition, equipment continuity, computer interfacing'
+  leadership_class: staff
+  period_start: '2014'
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶4'
+  note: 'SAFIRE Project corporate team page:Monty''s right-hand man in the lab, responsible for all data acquisition. Aureon Energy team page:since 2014 contributing to the SAFIRE project at Aurtas International in Mississauga, designing and developing SCADA systems and data transformation engines for physics research.'
+- id: kp3
+  added_date: '2026-05-07'
+  person_path: /people/jason-lickver
+  role: 'Core team engineer; Senior Design Engineer on SAFIRE II and III (per Aureon team page)'
+  leadership_class: staff
+  period_start: '2014'
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶8'
+  note: 'SAFIRE Project corporate team page:engineer who helps to analyze and troubleshoot Monty''s design blueprints, then collaborates with the construction of the SAFIRE apparatus itself. Aureon Energy team page:has been a driving force behind the SAFIRE Team since 2014.'
+- id: kp4
+  added_date: '2026-05-07'
+  person_path: /people/leighton-macmillan
+  role: 'Core team multi-disciplinary engineer / mechanical assembly / documentation'
+  leadership_class: staff
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶7'
+  note: 'SAFIRE Project corporate team page:"plumber, millright, machinist, engineer, sparky, electronic control, mechanical assembly, documentation; person Friday for your average ''out of the box'' science project."'
+- id: kp5
+  added_date: '2026-05-07'
+  person_path: /people/michael-clarage
+  role: 'Core team data analyst (Ph.D); Chief Science Officer at Aureon Energy'
+  leadership_class: staff
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶9'
+  note: 'SAFIRE Project corporate team page:collates, analyzes, and compares the data acquired from the experiments with the latest data from official sources such as NASA; the Solar & Heliospheric Observatory; the Solar Dynamics Observatory; the Voyager probes; and the Rosetta sensors. Aureon Energy team page:Aureon''s Chief Science Officer; Ph.D. in physics from Brandeis University.'
+- id: kp6
+  added_date: '2026-05-07'
+  person_path: /people/paul-anderson
+  role: 'Core team chemist (Ph.D); VP Experiments at Aureon Energy'
+  leadership_class: staff
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶10'
+  note: 'SAFIRE Project corporate team page:a chemist by training who works with high energy reactions, manages and oversees the Design of Experiments, chemical studies, and statistical analysis and modeling. Aureon Energy team page:Aureon''s VP Experiments; senior physical chemist working for the United States Department of Defense, serving as a lead scientist; 4 patents; Ph.D. in Physical Chemistry from Northeastern University.'
+- id: kp7
+  added_date: '2026-05-07'
+  person_path: /people/lowell-morgan
+  role: 'Core team plasma physicist'
+  leadership_class: staff
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶11'
+  note: 'SAFIRE Project corporate team page:brings a lifetime of experience in plasma physics, both theoretical and applied; extremely skilled at writing peer reviewable papers in this field.'
+- id: kp8
+  added_date: '2026-05-07'
+  person_path: /people/wal-thornhill
+  role: 'Consulting team member; Electric Sun model researcher'
+  leadership_class: advisor
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶5'
+  note: 'SAFIRE Project corporate team page:presents the key factors that define the new model, then helps to propose and clarify experiments that could be undertaken by SAFIRE to affirm or refute the model.'
+- id: kp9
+  added_date: '2026-05-07'
+  person_path: /people/donald-scott
+  role: 'Consulting team member; Electric Universe Group'
+  leadership_class: advisor
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶6'
+  note: 'SAFIRE Project corporate team page:offers a lifetime of experience with both traditional and now bleeding-edge electrical concepts. SAFIRE Project historical page:has a long history of further refining the Electric Sun Model in terms of on-the-ground empirical electrical theory and plasma electrodynamics.'
+- id: kp10
+  added_date: '2026-05-07'
+  person_path: /people/david-talbott
+  role: 'Consulting team; initiator and co-producer of the Electric Universe Conferences; invited Childs to the 2012 EU Conference'
+  leadership_class: advisor
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶17'
+  note: 'SAFIRE Project corporate team page: Talbott "recognized in Monty Childs'' SAFIRE concept a real and empircal method for testing the Electric Sun model, and so invited Monty to propose his idea to the Electric Universe Group at the 2012 Electric Universe Conference."'
+- id: kp11
+  added_date: '2026-05-07'
+  person_path: /people/bruce-mainwaring
+  role: 'Consulting team; supporter through Mainwaring Archive Foundation'
+  leadership_class: advisor
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶12'
+  note: 'SAFIRE Project corporate team page: Bruce Mainwaring "has been a devoted fan of the Electric Universe idea for half a century or more, years before it had even acquired a name. His lifelong work in the field of applied electrical sciences has given him a profound insight into the pragmatic nature of the Electric Sun model." Named under foundation partners with the Mainwaring Archive Foundation on the same team page.'
+- id: kp12
+  added_date: '2026-05-07'
+  person_path: /people/scott-mainwaring
+  role: 'Consulting team; financing through the Mainwaring Archive Foundation'
+  leadership_class: advisor
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶13'
+  note: 'SAFIRE Project corporate team page: Scott Mainwaring "was one of the few at the 2012 EU Conference who understood exactly where Monty Childs was coming from. Like David Talbott he immediately recognized a plausible way to test the Electric Universe hypothesis. Scott plays an essential role in the ongoing process – financing the work through the Mainwaring Archive Foundation, consulting regularly with Monty, and even volunteering hands-on assistance in the building of the main Phase 2 apparatus."'
+- id: kp13
+  added_date: '2026-05-07'
+  person_path: /people/james-ryder
+  role: 'Science Review Team — Chairman, International Science Foundation; also listed on the consulting team'
+  leadership_class: advisor
+  period_end: '2018-05'
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶18 (Science Review Team block)'
+  note: 'SAFIRE Project corporate team page lists "Dr. James Ryder  Chairman, International Science Foundation" under science review team. Period_end is May 2018, the date of Ryder''s death — Dr. William A. Gardner''s biography: "1 The International Science Foundation funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018."'
+- id: kp14
+  added_date: '2026-05-07'
+  person_path: /people/hal-puthoff
+  role: 'Science Review Team — Director, Institute for Advanced Studies at Austin; Aureon Energy Science Advisory Board member'
+  leadership_class: advisor
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶18'
+  note: 'SAFIRE Project corporate team page:listed on the science review team as "Harold Puthoff, PhD, Director, Institute for Advanced Studies at Austin". E-Cat World March 8 2020 article:named to Aureon Energy''s Science Advisory Board at the website launch.'
+- id: kp15
+  added_date: '2026-05-07'
+  person_path: /people/eric-davis
+  role: 'Science Review Team — Chief Science Officer, Institute for Advanced Studies at Austin'
+  leadership_class: advisor
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶18'
+  note: 'SAFIRE Project corporate team page:listed on the science review team as "Eric W. Davis, Ph.D., Chief Science Officer, Institute for Advanced Studies at Austin, Austin, TX".'
+- id: kp16
+  added_date: '2026-05-07'
+  person_path: /people/william-gardner
+  role: 'Science Review Team — Professor Emeritus, University of California; voluntary electromagnetic-modeling support'
+  leadership_class: advisor
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶18'
+  note: 'SAFIRE Project corporate team page lists "William A. Gardner  Professor Emeritus, University of California" under science review team. Gardner''s biography: provided "voluntary support of the SAFIRE Project, funded by International Science Foundation (ISF)" through "electromagnetic modeling of laboratory-confined/controlled plasma".'
+- id: kp17
+  added_date: '2026-05-07'
+  person_path: /people/ben-ged-low
+  role: 'Core team Cinematography, Optics, Video Capture'
+  leadership_class: staff
+  source:
+    path: news/safireproject-project-report.pdf
+    location: 'p. 69 (THE SAFIRE PROJECT Team listing)'
+  note: 'SAFIRE PROJECT Project Report: "Ben Ged Low / Cinematography, Optics, Video Capture". Also named in the SAFIRE corporate team page group photo with other team members.'
+org_relationships:
+- id: or1
+  added_date: '2026-05-07'
+  organization_path: /organizations/aurtas-international
+  relationship_type: predecessor
+  source:
+    path: news/aureonenergy-team-snapshot.html
+    location: '¶2'
+  note: 'Aureon Energy team page:Aurtas International, Inc. is Aureon Energy''s predecessor company; Childs is chairman and founder of both. Jan Onderco''s Aureon biography:Aurtas International is in Mississauga; SAFIRE project ran at Aurtas International from at least 2014.'
+- id: or2
+  added_date: '2026-05-07'
+  organization_path: /organizations/aureon-energy
+  relationship_type: successor
+  source:
+    path: news/safireproject-commercialization-snapshot.html
+    location: '¶4'
+  note: 'SAFIRE Project commercialization page:"The new SAFIRE PROJECT, now a commercial enterprise, will be headed by Aureon Energy Ltd." Aureon Energy is the post-2018-2019 commercial vehicle for the SAFIRE Project research line, headquartered in Midland, Ontario, Canada per the Aureon Energy history page; website launched at https://aureon.ca on March 8, 2020 per E-Cat World.'
+- id: or3
+  added_date: '2026-05-07'
+  organization_path: /organizations/international-science-foundation
+  relationship_type: partner
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶15'
+  note: 'ISF role per the SAFIRE PROJECT Genesis report (p. 9): fund administrator. Verbatim: "Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation." The SAFIRE team page foundation-partners block lists ISF alongside the Mainwaring Archive Foundation. Per Dr. William A. Gardner''s biography footnote 1, ISF "funded the SAFIRE project for several years and then closed down at the time of its Founder/COB, Dr. James T. Ryder''s, death in May 2018." Schema relationship_type "partner" used because the closed enum does not include "fund-administrator"; the funder/administrator distinction is preserved here in the note pending BACKLOG B1 (note rendering on relationship tables).'
+- id: or4
+  added_date: '2026-05-07'
+  organization_path: /organizations/mainwaring-archive-foundation
+  relationship_type: partner
+  source:
+    path: news/safireproject-genesis-snapshot.html
+    location: '¶7'
+  note: 'Mainwaring Archive Foundation role per the SAFIRE PROJECT Genesis report (p. 9): funder. Verbatim: "Funding for an initial test was promised by the Mainwaring Archive Foundation, to be administered by the International Science Foundation." Per the SAFIRE Project genesis page, Bruce and Scott Mainwaring "decided to support the project through the Mainwaring Archive Foundation." The team page foundation-partners block lists the Mainwaring Archive Foundation (Bruce Mainwaring, Scott Mainwaring) alongside the International Science Foundation. Schema relationship_type "partner" used because the closed enum does not include "funder"; the funder/administrator distinction is preserved here in the note pending BACKLOG B1.'
+- id: or5
+  added_date: '2026-05-07'
+  organization_path: /organizations/hathaway-consulting-services
+  relationship_type: other
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶18 (science review team) and ¶21 (corporate consultants)'
+  note: 'SAFIRE Project corporate team page lists Hathaway Consulting Services on the science review team alongside Ryder, Puthoff, Davis, and Gardner, and also separately under corporate consultants. Schema relationship_type "other" used because the closed enum does not include "consulting" or "science-review-team-member"; specific role preserved here in the note.'
