@@ -40,27 +40,27 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 
 ## Speakers
 
-| Name | Role | Node Link |
-|---|---|---|
-| David Grusch | Witness | [`/people/david-grusch`] |
-| David Fravor | Witness | [`/people/david-fravor`] |
-| Ryan Graves | Witness |  |
-| Glenn Grothman | Subcommittee Chair |  |
-| Robert Garcia | Subcommittee Ranking Member |  |
-| Tim Burchett | Member (waived on) |  |
-| Anna Paulina Luna | Member (waived on) |  |
-| Jared Moskowitz | Subcommittee Member |  |
-| Jamie Raskin | Full Committee Ranking Member |  |
-| Virginia Foxx | Subcommittee Member |  |
-| Maxwell Frost | Subcommittee Member |  |
-| James Comer | Full Committee Chair |  |
-| Matt Gaetz | Member (waived on) |  |
-| Alexandria Ocasio-Cortez | Member (waived on) |  |
-| Andy Biggs | Subcommittee Member |  |
-| Eric Burlison | Member (waived on) |  |
-| Nancy Mace | Subcommittee Member |  |
-| Nick Langworthy | Member (waived on) |  |
-| Andrew Ogles | Member (waived on) |  |
+| Name | Role | Node Link | Note |
+|---|---|---|---|
+| David Grusch | Witness | [`/people/david-grusch`] | Primary subject of this transcript; former intelligence officer, NRO Representative to the UAP Task Force; testified under oath on a multi-decade UAP crash retrieval and reverse engineering program allegation. |
+| David Fravor | Witness | [`/people/david-fravor`] | Retired U.S. Navy Commander; 2004 commanding officer of Strike Fighter Squadron 41; testified under oath on the 2004 Nimitz Tic Tac encounter. |
+| Ryan Graves | Witness |  | Former F-18 pilot; Executive Director of Americans for Safe Aerospace; testified under oath on 2014-2015 Virginia Beach encounters. |
+| Glenn Grothman | Subcommittee Chair |  | Chairman of the Subcommittee on National Security, the Border, and Foreign Affairs (Wisconsin). |
+| Robert Garcia | Subcommittee Ranking Member |  | Ranking Minority Member of the Subcommittee (California). |
+| Tim Burchett | Member (waived on) |  | Representative (Tennessee); led the effort to secure the hearing; questioned Grusch on retaliation, SAP oversight evasion, corporate involvement, and whistleblower routing. |
+| Anna Paulina Luna | Member (waived on) |  | Representative (Florida); co-led the effort to secure the hearing; questioned Grusch on Kirkpatrick contact, NHI adversary claims, FAR violations, and the 1971 nuclear arms treaty. |
+| Jared Moskowitz | Subcommittee Member |  | Representative (Florida); questioned Grusch on unsanctioned programs, 10 USC §119, Gang of 8 notification, funding mechanisms, IR&D, and NGA satellite imagery. |
+| Jamie Raskin | Full Committee Ranking Member |  | Ranking Minority Member of the full Committee on Oversight and Accountability (Maryland); questioned Grusch on post-disclosure retaliation and the "administrative terrorism" characterization. |
+| Virginia Foxx | Subcommittee Member |  | Representative (North Carolina); elicited Grusch's sworn contradiction of AARO Director Kirkpatrick's "no credible evidence" public statement. |
+| Maxwell Frost | Subcommittee Member |  | Representative (Florida); questioned Graves and Fravor on NASA and commercial aviation collaboration; did not directly question Grusch. |
+| James Comer | Full Committee Chair |  | Chairman of the full Committee on Oversight and Accountability (Kentucky); yielded his 5 minutes to Burchett. |
+| Matt Gaetz | Member (waived on) |  | Representative (Florida); waived on to the Subcommittee; questioned Grusch on above-top-secret classification and cited EO 13526. |
+| Alexandria Ocasio-Cortez | Member (waived on) |  | Representative (New York); waived on to the Subcommittee; questioned Grusch on defense contractor interactions, IR&D disclosure requirements, and PPR notification methods. |
+| Andy Biggs | Subcommittee Member |  | Representative (Arizona); questioned Grusch on the UAP Task Force 2019 Security Classification Guide (eliciting Grusch's co-authorship disclosure) and declassification practices. |
+| Eric Burlison | Member (waived on) |  | Representative (Missouri); waived on to the Subcommittee; questioned Grusch on harm claims, personal witness with wife, and multidimensional/holographic-principle framework. |
+| Nancy Mace | Subcommittee Member |  | Representative (South Carolina); elicited Grusch's sworn affirmatives on nonhuman biologics and active U.S. Government disinformation campaign. |
+| Nick Langworthy | Member (waived on) |  | Representative (New York); waived on to the Subcommittee mid-hearing (line 2050); questioned Fravor only on the 2004 Nimitz encounter details. |
+| Andrew Ogles | Member (waived on) |  | Representative (Tennessee); waived on to the Subcommittee; questioned Grusch on reconnaissance, vulnerability testing, existential threat assessment, and Department of Energy involvement. |
 
 ---
 

@@ -41,42 +41,42 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 #### Witnesses — Eyewitness Testimony
 
-| Participant | Role | Source |
-|---|---|---|
-| [`/people/david-fravor`] | Witness — former Commanding Officer, Strike Fighter Squadron 41, United States Navy (retired) | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/ryan-graves`] | Witness — Executive Director, Americans for Safe Aerospace; former U.S. Navy pilot | government/congress-gov-house-hearing-transcript-20230726.pdf |
+| Participant | Role | Source | Note |
+|---|---|---|---|
+| [`/people/david-fravor`] | Witness — former Commanding Officer, Strike Fighter Squadron 41, United States Navy (retired) | government/congress-gov-house-hearing-transcript-20230726.pdf | Fravor testified under oath; his oral statement and Q&A responses appear at lines 796-2762 of the transcript; his companion written testimony is filed separately. |
+| [`/people/ryan-graves`] | Witness — Executive Director, Americans for Safe Aerospace; former U.S. Navy pilot | government/congress-gov-house-hearing-transcript-20230726.pdf | Graves testified under oath; oral statement at lines 640-721; companion written testimony filed separately. |
 
 #### Witnesses — Whistleblower Testimony
 
-| Participant | Role | Source |
-|---|---|---|
-| [`/people/david-grusch`] | Witness — former National Reconnaissance Office Representative, Unidentified Anomalous Phenomena Task Force, Department of Defense | government/congress-gov-house-hearing-transcript-20230726.pdf |
+| Participant | Role | Source | Note |
+|---|---|---|---|
+| [`/people/david-grusch`] | Witness — former National Reconnaissance Office Representative, Unidentified Anomalous Phenomena Task Force, Department of Defense | government/congress-gov-house-hearing-transcript-20230726.pdf | Grusch testified under oath; oral statement at lines 724-792; his PPD-19 urgent concern filing is referenced in his testimony. |
 
 #### Committee Members
 
-| Participant | Role | Source |
-|---|---|---|
-| [`/people/glenn-grothman`] | Chairman, Subcommittee on National Security, the Border, and Foreign Affairs (Wisconsin) | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/robert-garcia`] | Ranking Minority Member, Subcommittee on National Security, the Border, and Foreign Affairs (California) | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/tim-burchett`] | Representative (Tennessee) — waived on to the Subcommittee for this hearing; brought it forward | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/anna-paulina-luna`] | Representative (Florida) — waived on to the Subcommittee for this hearing; brought it forward | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/jared-moskowitz`] | Representative (Florida); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/jamie-raskin`] | Ranking Minority Member, full Committee on Oversight and Accountability (Maryland) | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/virginia-foxx`] | Representative (North Carolina); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/maxwell-frost`] | Representative (Florida); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/james-comer`] | Chairman, full Committee on Oversight and Accountability (Kentucky); gave his 5 minutes to Burchett | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/matt-gaetz`] | Representative (Florida) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/alexandria-ocasio-cortez`] | Representative (New York) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/andy-biggs`] | Representative (Arizona); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/eric-burlison`] | Representative (Missouri) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/nancy-mace`] | Representative (South Carolina); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/nick-langworthy`] | Representative (New York) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/andrew-ogles`] | Representative (Tennessee) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/paul-gosar`] | Representative (Arizona); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/pete-sessions`] | Representative (Texas); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/jake-laturner`] | Representative (Kansas); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/kelly-armstrong`] | Representative (North Dakota); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/people/scott-perry`] | Representative (Pennsylvania); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf |
+| Participant | Role | Source | Note |
+|---|---|---|---|
+| [`/people/glenn-grothman`] | Chairman, Subcommittee on National Security, the Border, and Foreign Affairs (Wisconsin) | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/robert-garcia`] | Ranking Minority Member, Subcommittee on National Security, the Border, and Foreign Affairs (California) | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/tim-burchett`] | Representative (Tennessee) — waived on to the Subcommittee for this hearing; brought it forward | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/anna-paulina-luna`] | Representative (Florida) — waived on to the Subcommittee for this hearing; brought it forward | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/jared-moskowitz`] | Representative (Florida); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/jamie-raskin`] | Ranking Minority Member, full Committee on Oversight and Accountability (Maryland) | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/virginia-foxx`] | Representative (North Carolina); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/maxwell-frost`] | Representative (Florida); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/james-comer`] | Chairman, full Committee on Oversight and Accountability (Kentucky); gave his 5 minutes to Burchett | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/matt-gaetz`] | Representative (Florida) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/alexandria-ocasio-cortez`] | Representative (New York) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/andy-biggs`] | Representative (Arizona); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/eric-burlison`] | Representative (Missouri) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/nancy-mace`] | Representative (South Carolina); Subcommittee member | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/nick-langworthy`] | Representative (New York) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/andrew-ogles`] | Representative (Tennessee) — waived on to the Subcommittee for this hearing | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/people/paul-gosar`] | Representative (Arizona); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | Listed in the "Present" roster; does not appear as a speaker in the stenographic record. |
+| [`/people/pete-sessions`] | Representative (Texas); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | Listed in the "Present" roster; does not appear as a speaker in the stenographic record. |
+| [`/people/jake-laturner`] | Representative (Kansas); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | Listed in the "Present" roster; does not appear as a speaker in the stenographic record. |
+| [`/people/kelly-armstrong`] | Representative (North Dakota); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | Listed in the "Present" roster; does not appear as a speaker in the stenographic record. |
+| [`/people/scott-perry`] | Representative (Pennsylvania); Subcommittee member — Present for this hearing; did not speak on record | government/congress-gov-house-hearing-transcript-20230726.pdf | Listed in the "Present" roster; does not appear as a speaker in the stenographic record. |
 
 ---
 
@@ -173,11 +173,11 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 ## Witnesses & Testimony
 
-| Witness | Oath Status | Transcript | Written Testimony |
-|---|---|---|---|
-| [`/people/david-fravor`] | sworn | [`/transcripts/2023-07-26-house-fravor`] | [`/documents/written-testimony-fravor-2023`] |
-| [`/people/ryan-graves`] | sworn | [`/transcripts/2023-07-26-house-graves`] | [`/documents/written-testimony-graves-2023`] |
-| [`/people/david-grusch`] | sworn | [`/transcripts/2023-07-26-house-grusch`] | [`/documents/written-testimony-grusch-2023`] |
+| Witness | Oath Status | Transcript | Written Testimony | Note |
+|---|---|---|---|---|
+| [`/people/david-fravor`] | sworn | [`/transcripts/2023-07-26-house-fravor`] | [`/documents/written-testimony-fravor-2023`] | Fravor was sworn with Graves and Grusch; his oral statement appears in the hearing record; his written testimony was submitted for the record. |
+| [`/people/ryan-graves`] | sworn | [`/transcripts/2023-07-26-house-graves`] | [`/documents/written-testimony-graves-2023`] | Graves was sworn with Fravor and Grusch; his oral statement appears in the hearing record; his written testimony was submitted for the record. |
+| [`/people/david-grusch`] | sworn | [`/transcripts/2023-07-26-house-grusch`] | [`/documents/written-testimony-grusch-2023`] | Grusch was sworn with Fravor and Graves; his oral statement appears in the hearing record; his written testimony was submitted for the record. |
 
 ---
 

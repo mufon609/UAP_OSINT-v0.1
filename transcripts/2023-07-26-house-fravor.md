@@ -38,27 +38,27 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 ## Speakers
 
-| Name | Role | Node Link |
-|---|---|---|
-| David Fravor | Witness | [`/people/david-fravor`] |
-| Ryan Graves | Witness | [`/people/ryan-graves`] |
-| David Grusch | Witness | [`/people/david-grusch`] |
-| Glenn Grothman | Subcommittee Chair |  |
-| Robert Garcia | Subcommittee Ranking Member |  |
-| Tim Burchett | Member (waived on) |  |
-| Anna Paulina Luna | Member (waived on) |  |
-| Jared Moskowitz | Subcommittee Member |  |
-| Jamie Raskin | Full Committee Ranking Member |  |
-| Virginia Foxx | Subcommittee Member |  |
-| Maxwell Frost | Subcommittee Member |  |
-| James Comer | Full Committee Chair |  |
-| Matt Gaetz | Member (waived on) |  |
-| Alexandria Ocasio-Cortez | Member (waived on) |  |
-| Andy Biggs | Subcommittee Member |  |
-| Eric Burlison | Member (waived on) |  |
-| Nancy Mace | Subcommittee Member |  |
-| Nick Langworthy | Member (waived on) |  |
-| Andrew Ogles | Member (waived on) |  |
+| Name | Role | Node Link | Note |
+|---|---|---|---|
+| David Fravor | Witness | [`/people/david-fravor`] | Primary subject of this transcript; retired U.S. Navy Commander; testified under oath on the 2004 Nimitz UAP encounter. |
+| Ryan Graves | Witness | [`/people/ryan-graves`] | Former F-18 pilot; Executive Director of Americans for Safe Aerospace; testified under oath on 2014-2015 Virginia Beach UAP encounters. |
+| David Grusch | Witness | [`/people/david-grusch`] | Former intelligence officer, NRO Representative to the UAP Task Force; filed a PPD-19 urgent concern complaint in May 2022; testified under oath. |
+| Glenn Grothman | Subcommittee Chair |  | Chairman of the Subcommittee on National Security, the Border, and Foreign Affairs (Wisconsin). |
+| Robert Garcia | Subcommittee Ranking Member |  | Ranking Minority Member of the Subcommittee (California). |
+| Tim Burchett | Member (waived on) |  | Representative (Tennessee); led effort to secure the hearing; questioned all three witnesses. |
+| Anna Paulina Luna | Member (waived on) |  | Representative (Florida); co-led effort to secure the hearing; questioned Grusch and Graves. |
+| Jared Moskowitz | Subcommittee Member |  | Representative (Florida); questioned all three witnesses on physics, sensors, and satellite imagery. |
+| Jamie Raskin | Full Committee Ranking Member |  | Ranking Minority Member of the full Committee on Oversight and Accountability (Maryland); questioned all three witnesses. |
+| Virginia Foxx | Subcommittee Member |  | Representative (North Carolina); questioned Grusch on Kirkpatrick AARO contradiction. |
+| Maxwell Frost | Subcommittee Member |  | Representative (Florida); questioned Graves and Fravor on NASA and commercial aviation. |
+| James Comer | Full Committee Chair |  | Chairman of the full Committee on Oversight and Accountability (Kentucky); yielded his 5 minutes to Burchett. |
+| Matt Gaetz | Member (waived on) |  | Representative (Florida); waived on to the Subcommittee for this hearing; questioned Fravor and Graves on Eglin Air Force Base UAP incident. |
+| Alexandria Ocasio-Cortez | Member (waived on) |  | Representative (New York); waived on to the Subcommittee for this hearing; questioned all three witnesses on defense contractor relationships. |
+| Andy Biggs | Subcommittee Member |  | Representative (Arizona); questioned on Phoenix Lights case and over-classification. |
+| Eric Burlison | Member (waived on) |  | Representative (Missouri); questioned Grusch on harm claims and multidimensional frameworks. |
+| Nancy Mace | Subcommittee Member |  | Representative (South Carolina); questioned all three witnesses. |
+| Nick Langworthy | Member (waived on) |  | Representative (New York); waived on to the Subcommittee for this hearing; questioned Fravor in detail on the November 14 2004 Nimitz incident. |
+| Andrew Ogles | Member (waived on) |  | Representative (Tennessee); waived on to the Subcommittee for this hearing; questioned all three witnesses on national security threat assessment. |
 
 ---
 

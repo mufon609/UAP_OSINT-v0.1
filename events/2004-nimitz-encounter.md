@@ -34,15 +34,15 @@ As the flight turned back towards the CAP point, the air controller let them kno
 
 ### Confirmed
 
-| Participant | Role | Source |
-|---|---|---|
-| [`/people/david-fravor`] | Flight lead; F/A-18F pilot; Commanding Officer of Strike Fighter Squadron Forty-One | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
-| [`/people/alex-dietrich`] | F/A-18F pilot; Fravor's wingman | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
-| [`/organizations/uss-princeton`] | Aegis combat system radar control; CG-59 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
-| [`/organizations/uss-nimitz`] | Carrier from which Fravor's flight launched; CVN-68 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
-| [`/organizations/vfa-41`] | Fravor's squadron; Strike Fighter Squadron Forty-One, Black Aces | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
-| [`/organizations/vmfa-232`] | Marine F/A-18 squadron; Red Air was being flown by them | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
-| [`/organizations/carrier-airwing-eleven`] | Strike Fighter Squadron Forty-One was attached to this airwing | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |
+| Participant | Role | Source | Note |
+|---|---|---|---|
+| [`/people/david-fravor`] | Flight lead; F/A-18F pilot; Commanding Officer of Strike Fighter Squadron Forty-One | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| [`/people/alex-dietrich`] | F/A-18F pilot; Fravor's wingman | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| [`/organizations/uss-princeton`] | Aegis combat system radar control; CG-59 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| [`/organizations/uss-nimitz`] | Carrier from which Fravor's flight launched; CVN-68 | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| [`/organizations/vfa-41`] | Fravor's squadron; Strike Fighter Squadron Forty-One, Black Aces | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| [`/organizations/vmfa-232`] | Marine F/A-18 squadron; Red Air was being flown by them | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
+| [`/organizations/carrier-airwing-eleven`] | Strike Fighter Squadron Forty-One was attached to this airwing | government/oversight-house-gov-fravor-written-testimony-20230726.pdf |  |
 
 ---
 

@@ -182,9 +182,9 @@ _No direct observations documented._
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| AARO Public Affairs portfolio at OSD(PA) | Department of Defense Public Affairs spokesperson with the AARO portfolio | 2022-06 | primary-source | high | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |
+| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
+|---|---|---|---|---|---|---|
+| AARO Public Affairs portfolio at OSD(PA) | Department of Defense Public Affairs spokesperson with the AARO portfolio | 2022-06 | primary-source | high | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf | On-record engagement with the AARO portfolio runs from June 2022 (Black Vault statement on UAPTF lead and Travis Taylor) through February 2026 (DefenseScoop AARO 2,000+ caseload statement) — an ongoing tenure across AARO's first Director Sean Kirkpatrick, Acting Director Tim Phillips, and Director Jon Kosloski. |
 
 ---
 

@@ -43,14 +43,14 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 ## Speakers
 
-| Name | Role | Node Link |
-|---|---|---|
-| Sean Kirkpatrick | Witness | [`/people/sean-kirkpatrick`] |
-| Kirsten E. Gillibrand | Subcommittee Chair | [`/people/kirsten-gillibrand`] |
-| Joni Ernst | Subcommittee Ranking Member | [`/people/joni-ernst`] |
-| Senator Rosen | Subcommittee Member | [`/people/jacky-rosen`] |
-| Audience Member | Audience speaker (anonymized in transcript) |  |
-| Staff | Subcommittee staff |  |
+| Name | Role | Node Link | Note |
+|---|---|---|---|
+| Sean Kirkpatrick | Witness | [`/people/sean-kirkpatrick`] | Director, All-domain Anomaly Resolution Office at the time of the hearing; sole open-session witness; oath status unknown — see context_extrinsic. |
+| Kirsten E. Gillibrand | Subcommittee Chair | [`/people/kirsten-gillibrand`] | Chairwoman of the Subcommittee on Emerging Threats and Capabilities (New York); presiding. |
+| Joni Ernst | Subcommittee Ranking Member | [`/people/joni-ernst`] | Ranking Member of the Subcommittee (Iowa). |
+| Senator Rosen | Subcommittee Member | [`/people/jacky-rosen`] | Senator from Nevada; Subcommittee member; transcript labels her speaker tag as "Senator Rosen" without first name. |
+| Audience Member | Audience speaker (anonymized in transcript) |  | The transcript labels two distinct audience speakers as "Audience Member" without further identification: a Marine veteran from Ohio (drove 600 miles, mentioned David Spergel and Neil deGrasse Tyson, presented a book) and a resident from Albuquerque, New Mexico (described UAP over Sandia Labs and Kirtland Air Force Base; stated propulsion-field theories about the craft observed). A third briefer "Same here" comment from a separate audience member is also recorded. |
+| Staff | Subcommittee staff |  | Anonymous Subcommittee staff member; one brief response in the closing exchange about handling of materials presented by the audience. |
 
 ---
 

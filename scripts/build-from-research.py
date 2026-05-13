@@ -725,10 +725,10 @@ def render_program_involvement(artifact):
         fallback_key="period_end",
     )
     lines = ["## Program Involvement", "",
-             "| Program | Role | Period | Evidentiary Basis | Confidence | Source |",
-             "|---|---|---|---|---|---|"]
+             "| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |",
+             "|---|---|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |  |")
+        lines.append("|  |  |  |  |  |  |  |")
     for e in items:
         if not isinstance(e, dict):
             continue
@@ -743,7 +743,8 @@ def render_program_involvement(artifact):
             f"{period} | "
             f"{e.get('evidentiary_basis') or ''} | "
             f"{e.get('confidence') or ''} | "
-            f"{(e.get('source') or {}).get('path') or ''} |"
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -754,10 +755,10 @@ def render_publication_record(artifact):
         "date",
     )
     lines = ["## Publication Record", "",
-             "| Date | Publication | Outlet | Beat / Role | Source | Node Link |",
-             "|---|---|---|---|---|---|"]
+             "| Date | Publication | Outlet | Beat / Role | Source | Node Link | Note |",
+             "|---|---|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |  |")
+        lines.append("|  |  |  |  |  |  |  |")
     for e in items:
         outlet = e.get("outlet") or ""
         outlet_cell = _wrap_path(outlet) if outlet.startswith("/") else outlet
@@ -767,7 +768,8 @@ def render_publication_record(artifact):
             f"{outlet_cell} | "
             f"{e.get('beat') or ''} | "
             f"{(e.get('source') or {}).get('path') or ''} | "
-            f"{_wrap_path(e.get('node_link'))} |"
+            f"{_wrap_path(e.get('node_link'))} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -790,10 +792,10 @@ def render_archetype_section(artifact, archetype):
 def render_vouching_chain(artifact):
     items = artifact.get("vouching_chain") or []
     lines = ["## Vouching Chain", "",
-             "| Name | Credentials | Statement | Source |",
-             "|---|---|---|---|"]
+             "| Name | Credentials | Statement | Source | Note |",
+             "|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |  |  |")
     for e in items:
         if not isinstance(e, dict):
             continue
@@ -805,7 +807,8 @@ def render_vouching_chain(artifact):
             f"| {voucher} | "
             f"{e.get('evidentiary_basis') or ''} | "
             f"{attestation} | "
-            f"{(e.get('source') or {}).get('path') or ''} |"
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -921,12 +924,13 @@ def render_event_description(artifact):
 
 def _participant_row(e):
     """Render one participant row. Cells: participant (wrap_path), role,
-    source.path."""
+    source.path, note."""
     p = _wrap_path(e.get("participant_path"))
     return (
         f"| {p} | "
         f"{e.get('role') or ''} | "
-        f"{(e.get('source') or {}).get('path') or ''} |"
+        f"{(e.get('source') or {}).get('path') or ''} | "
+        f"{_escape_table_cell(e.get('note'))} |"
     )
 
 
@@ -937,17 +941,17 @@ def render_participants_encounter(artifact):
     flagged   = [e for e in items if isinstance(e, dict) and e.get("flagged")]
 
     lines = ["## Participants", "", "### Confirmed", "",
-             "| Participant | Role | Source |",
-             "|---|---|---|"]
+             "| Participant | Role | Source | Note |",
+             "|---|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(_participant_row(e))
     else:
-        lines.append("|  |  |  |")
+        lines.append("|  |  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Participant | Role | Source |",
-                  "|---|---|---|"]
+                  "| Participant | Role | Source | Note |",
+                  "|---|---|---|---|"]
         for e in flagged:
             lines.append(_participant_row(e))
     return "\n".join(lines) + "\n"
@@ -973,28 +977,28 @@ def render_participants_hearing(artifact):
         lines.append("")
         lines.append(f"#### {subheader}")
         lines.append("")
-        lines.append("| Participant | Role | Source |")
-        lines.append("|---|---|---|")
+        lines.append("| Participant | Role | Source | Note |")
+        lines.append("|---|---|---|---|")
         if subsection_entries:
             for e in subsection_entries:
                 lines.append(_participant_row(e))
         else:
-            lines.append("|  |  |  |")
+            lines.append("|  |  |  |  |")
 
     # Catch entries with unknown capacity — they still need to render
     known = set(_HEARING_CAPACITY_ORDER)
     other_confirmed = [e for e in confirmed if e.get("capacity") not in known]
     if other_confirmed:
         lines += ["", "#### Other", "",
-                  "| Participant | Role | Source |",
-                  "|---|---|---|"]
+                  "| Participant | Role | Source | Note |",
+                  "|---|---|---|---|"]
         for e in other_confirmed:
             lines.append(_participant_row(e))
 
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Participant | Role | Source |",
-                  "|---|---|---|"]
+                  "| Participant | Role | Source | Note |",
+                  "|---|---|---|---|"]
         for e in flagged:
             lines.append(_participant_row(e))
     return "\n".join(lines) + "\n"
@@ -1026,16 +1030,17 @@ def render_witnesses_testimony(artifact):
     nodes."""
     items = [e for e in (artifact.get("witnesses_testimony") or []) if isinstance(e, dict)]
     lines = ["## Witnesses & Testimony", "",
-             "| Witness | Oath Status | Transcript | Written Testimony |",
-             "|---|---|---|---|"]
+             "| Witness | Oath Status | Transcript | Written Testimony | Note |",
+             "|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |  |  |")
     for e in items:
         lines.append(
             f"| {_wrap_path(e.get('witness_path'))} | "
             f"{e.get('oath_status') or ''} | "
             f"{_wrap_path(e.get('transcript_node'))} | "
-            f"{_wrap_path(e.get('written_testimony_node'))} |"
+            f"{_wrap_path(e.get('written_testimony_node'))} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -1152,16 +1157,17 @@ def render_transcript_speakers(artifact):
     as `## Key Passages`."""
     items = sort_by_id([s for s in (artifact.get("speakers") or []) if isinstance(s, dict)])
     lines = ["## Speakers", "",
-             "| Name | Role | Node Link |",
-             "|---|---|---|"]
+             "| Name | Role | Node Link | Note |",
+             "|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |")
+        lines.append("|  |  |  |  |")
         return "\n".join(lines) + "\n"
     for s in items:
         lines.append(
             f"| {_escape_table_cell(s.get('name'))} | "
             f"{_escape_table_cell(s.get('role'))} | "
-            f"{_wrap_path(s.get('node_link'))} |"
+            f"{_wrap_path(s.get('node_link'))} | "
+            f"{_escape_table_cell(s.get('note'))} |"
         )
     return "\n".join(lines) + "\n"
 

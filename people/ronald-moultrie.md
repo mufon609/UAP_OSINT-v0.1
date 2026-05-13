@@ -270,15 +270,15 @@ _No direct observations documented._
 
 ## Program Involvement
 
-| Program | Role | Period | Evidentiary Basis | Confidence | Source |
-|---|---|---|---|---|---|
-| NSA Director of Operations | Final pre-retirement role at NSA; retired from the DoD in 2015 as NSA's Director of Operations | – 2015 | primary-source | high | government/wargov-moultrie-biography.html |
-| Defense Intelligence and Security Enterprise oversight | Principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; exercised authority, direction, and control over NSA, DIA, NGA, NRO, DCSA and the intelligence components of the combatant commands and military services | 2021-06-01 – 2024-02-29 | primary-source | high | government/wargov-moultrie-biography.html |
-| Director of Defense Intelligence (dual-hat ODNI role) | Reported to the Director of National Intelligence in this capacity | 2021-06-01 – 2024-02-29 | primary-source | high | government/wargov-moultrie-biography.html |
-| All-domain Anomaly Resolution Office (AARO) | Cognizant senior advisor at AARO establishment (July 20 2022); selected Sean Kirkpatrick as inaugural Director; chaired AARO Executive Council across most of Kirkpatrick's directorship; reporting chain transitioned from OUSD(I&S) to Deputy Secretary of Defense in late July 2023 | 2022-07-20 – 2024-02-29 | primary-source | high | government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html |
-| President's Intelligence Advisory Board (PIAB) and President's Intelligence Oversight Board (IOB) | Appointed Board Member; served until January 2025 | – 2025-01 | primary-source | high | news/umd-moultrie-faculty-bio.html |
-| CIA Senior Intelligence Service / Directorate of Science & Technology | Senior member of the CIA Senior Intelligence Service (SIS) responsible for a major office within the Directorate of Science & Technology |  | primary-source | high | government/wargov-moultrie-biography.html |
-| Department of the Navy Comprehensive Cybersecurity Review | Senior Advisor to the Secretary of the Navy; led the crafting of a digital roadmap to better optimize the Department's focus on cybersecurity, data analytics and infrastructure, and emerging technologies such as AI/Machine Learning, 5 and 6G, and Quantum computing |  | primary-source | high | government/wargov-moultrie-biography.html |
+| Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
+|---|---|---|---|---|---|---|
+| NSA Director of Operations | Final pre-retirement role at NSA; retired from the DoD in 2015 as NSA's Director of Operations | – 2015 | primary-source | high | government/wargov-moultrie-biography.html |  |
+| Defense Intelligence and Security Enterprise oversight | Principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; exercised authority, direction, and control over NSA, DIA, NGA, NRO, DCSA and the intelligence components of the combatant commands and military services | 2021-06-01 – 2024-02-29 | primary-source | high | government/wargov-moultrie-biography.html |  |
+| Director of Defense Intelligence (dual-hat ODNI role) | Reported to the Director of National Intelligence in this capacity | 2021-06-01 – 2024-02-29 | primary-source | high | government/wargov-moultrie-biography.html |  |
+| All-domain Anomaly Resolution Office (AARO) | Cognizant senior advisor at AARO establishment (July 20 2022); selected Sean Kirkpatrick as inaugural Director; chaired AARO Executive Council across most of Kirkpatrick's directorship; reporting chain transitioned from OUSD(I&S) to Deputy Secretary of Defense in late July 2023 | 2022-07-20 – 2024-02-29 | primary-source | high | government/defense-gov-moultrie-kirkpatrick-aaro-roundtable-20221216.html |  |
+| President's Intelligence Advisory Board (PIAB) and President's Intelligence Oversight Board (IOB) | Appointed Board Member; served until January 2025 | – 2025-01 | primary-source | high | news/umd-moultrie-faculty-bio.html |  |
+| CIA Senior Intelligence Service / Directorate of Science & Technology | Senior member of the CIA Senior Intelligence Service (SIS) responsible for a major office within the Directorate of Science & Technology |  | primary-source | high | government/wargov-moultrie-biography.html |  |
+| Department of the Navy Comprehensive Cybersecurity Review | Senior Advisor to the Secretary of the Navy; led the crafting of a digital roadmap to better optimize the Department's focus on cybersecurity, data analytics and infrastructure, and emerging technologies such as AI/Machine Learning, 5 and 6G, and Quantum computing |  | primary-source | high | government/wargov-moultrie-biography.html |  |
 
 ---
 

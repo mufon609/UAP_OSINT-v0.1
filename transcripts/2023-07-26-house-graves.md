@@ -40,27 +40,27 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 ## Speakers
 
-| Name | Role | Node Link |
-|---|---|---|
-| Ryan Graves | Witness |  |
-| David Fravor | Witness | [`/people/david-fravor`] |
-| David Grusch | Witness | [`/people/david-grusch`] |
-| Glenn Grothman | Subcommittee Chair |  |
-| Robert Garcia | Subcommittee Ranking Member |  |
-| Tim Burchett | Member (waived on) |  |
-| Anna Paulina Luna | Member (waived on) |  |
-| Jared Moskowitz | Subcommittee Member |  |
-| Jamie Raskin | Full Committee Ranking Member |  |
-| Virginia Foxx | Subcommittee Member |  |
-| Maxwell Frost | Subcommittee Member |  |
-| James Comer | Full Committee Chair |  |
-| Matt Gaetz | Member (waived on) |  |
-| Alexandria Ocasio-Cortez | Member (waived on) |  |
-| Andy Biggs | Subcommittee Member |  |
-| Eric Burlison | Member (waived on) |  |
-| Nancy Mace | Subcommittee Member |  |
-| Nick Langworthy | Member (waived on) |  |
-| Andrew Ogles | Member (waived on) |  |
+| Name | Role | Node Link | Note |
+|---|---|---|---|
+| Ryan Graves | Witness |  | Primary subject of this transcript; former F-18 pilot, decade in U.S. Navy; Executive Director of Americans for Safe Aerospace; testified under oath on 2014-2015 Virginia Beach UAP encounters. |
+| David Fravor | Witness | [`/people/david-fravor`] | Retired U.S. Navy Commander; 2004 commanding officer of Strike Fighter Squadron 41; testified under oath on the 2004 Nimitz Tic Tac encounter. |
+| David Grusch | Witness | [`/people/david-grusch`] | Former intelligence officer, NRO Representative to the UAP Task Force; testified under oath on a multi-decade UAP crash retrieval and reverse engineering program allegation. |
+| Glenn Grothman | Subcommittee Chair |  | Chairman of the Subcommittee on National Security, the Border, and Foreign Affairs (Wisconsin). |
+| Robert Garcia | Subcommittee Ranking Member |  | Ranking Minority Member of the Subcommittee (California). |
+| Tim Burchett | Member (waived on) |  | Representative (Tennessee); led the effort to secure the hearing; questioned Graves on object-kinematics behaviors, East Coast commercial/military pilot contacts, and public reporting mechanism gaps. |
+| Anna Paulina Luna | Member (waived on) |  | Representative (Florida); co-led the effort to secure the hearing; questioned Graves on the 2003 Vandenberg AFB incident, Gimbal video ending, and commercial-aviator cease-and-desist orders. |
+| Jared Moskowitz | Subcommittee Member |  | Representative (Florida); questioned Graves on sonic boom, G forces, and object physical characteristics. |
+| Jamie Raskin | Full Committee Ranking Member |  | Ranking Minority Member of the full Committee on Oversight and Accountability (Maryland); questioned Graves on global detection scope, 2017 NYT recognition, cube-in-clear-sphere shape details, and the near-mid-air pilot account. |
+| Virginia Foxx | Subcommittee Member |  | Representative (North Carolina); questioned Grusch on the Kirkpatrick "no credible evidence" contradiction; did not directly question Graves. |
+| Maxwell Frost | Subcommittee Member |  | Representative (Florida); questioned Graves on NASA and commercial aviation collaboration and scientists on the advisory board. |
+| James Comer | Full Committee Chair |  | Chairman of the full Committee on Oversight and Accountability (Kentucky); yielded his 5 minutes to Burchett. |
+| Matt Gaetz | Member (waived on) |  | Representative (Florida); waived on to the Subcommittee; questioned Graves on multi-craft formations (Gimbal fleet of objects). |
+| Alexandria Ocasio-Cortez | Member (waived on) |  | Representative (New York); waived on to the Subcommittee; questioned Graves on FAA reporting process gaps and AARO data-collection priorities. |
+| Andy Biggs | Subcommittee Member |  | Representative (Arizona); questioned Graves on training-range reporting (Range Fouler Report) and information suppression mechanisms. |
+| Eric Burlison | Member (waived on) |  | Representative (Missouri); waived on to the Subcommittee; questioned Grusch on multidimensionality / holographic-principle framework; did not directly question Graves. |
+| Nancy Mace | Subcommittee Member |  | Representative (South Carolina); questioned Graves on UAP reporting percentage (5% estimate) and U.S. Navy response seriousness on Virginia Beach encounters. |
+| Nick Langworthy | Member (waived on) |  | Representative (New York); waived on to the Subcommittee mid-hearing (line 2050); questioned Fravor only on the 2004 Nimitz encounter details. |
+| Andrew Ogles | Member (waived on) |  | Representative (Tennessee); waived on to the Subcommittee; questioned Graves on reconnaissance, vulnerability testing, existential threat assessment, and defense capability against hostile encounters. |
 
 ---
 
