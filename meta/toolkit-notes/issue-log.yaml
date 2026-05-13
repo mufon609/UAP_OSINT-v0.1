@@ -4609,3 +4609,14 @@
     background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
   tokens: [bylines, identifies]
 
+- ts: 2026-05-13T15:55:41Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 2 significant token(s) not in source (prose-drift check — contributor review): bylines, identifies
+  tokens: [bylines, identifies]
+
