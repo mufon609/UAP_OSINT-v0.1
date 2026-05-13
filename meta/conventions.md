@@ -497,11 +497,9 @@ Count targets ("1-2 paragraphs", "one paragraph", "2-4 sentences",
 "~50 words per paragraph") create pressure that splits two ways under
 real source variance: filler entries when the source doesn't support
 the count, or hallucinated content when the model fills the gap from
-training knowledge. The `pilot-failure-2026-04-17.md` postmortem
-documents the failure mode this discipline exists to prevent. The
-durable contributor memory `feedback_no_count_targets.md` codified
-the rule for entry-list population; this section extends the same
-rule to free-prose density.
+training knowledge. The durable contributor memory
+`feedback_no_count_targets.md` codified the rule for entry-list
+population; this section extends the same rule to free-prose density.
 
 Structural thresholds are different and remain in force. The finding-
 node creation threshold (~200 words, 3+ entity nodes, or text about
@@ -894,11 +892,10 @@ their character:
   stable governance specs and forward-looking work registers — the
   rules and the active agenda. A contributor consults these at
   session start or when something on the work queue applies.
-- **`meta/toolkit-notes/`**: retrospectives, postmortems, technique
-  docs, design records. Backward-looking lessons explaining *why* a
-  current rule exists or *what was tried before*. A contributor
-  consults these when understanding the history behind a current
-  convention.
+- **`meta/toolkit-notes/`**: validator issue-log (auto-appended by
+  the validator orchestrators). Reserved for any future retrospective
+  or technique notes — backward-looking lessons live here when they
+  surface. Empty of `.md` content at present.
 - **`meta/templates/`**: scaffolding templates, one per node type.
   Consumed mechanically by `scripts/new.py`; rarely read directly
   by contributors except when a new node type is being added.
