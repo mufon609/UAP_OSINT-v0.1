@@ -231,151 +231,46 @@ the removal.
 ## B. Parallel batch (renderer pass)
 
 Items that touch the renderer and naturally batch into a single
-polish pass. Per B1's own scope note, bundling reduces churn vs.
-shipping each as a separate touch.
+polish pass — bundling reduces churn vs. shipping each as a
+separate touch. B1 retired 2026-05-13 (Phase 1 + 2 shipped);
+tombstone below for ID-stable history.
 
-### B1. Artifact-attested nuance not reaching readers — `.note` fields dropped in tables; preserve-as-sic forms unmarked in prose
+### B1. Artifact-attested nuance not reaching readers — RETIRED 2026-05-13
 
-Replaces former #17 and #23. Two manifestations of the same gap:
-research artifacts capture source-derived evidentiary nuance in
-fields that the rendered node body silently drops or under-signals,
-leaving the reader with the structured surface but not the nuance.
+Phase 1 (M1) + Phase 2 (M2) shipped:
 
-**Manifestation 1 — table renderers drop `.note` across relationship-bearing list sections.**
+  - **M1** — Note column added to 14 list-section table renderers
+    in `scripts/build-from-research.py` (`render_affiliations`,
+    `render_relationships`, `render_org_relationships`,
+    `render_org_key_personnel`, `render_org_primary_contracts`,
+    `render_ownership_timeline`, `render_top_scope_activity`,
+    `render_location_relationships`, `render_program_involvement`,
+    `render_publication_record`, `render_vouching_chain`,
+    `_participant_row`, `render_witnesses_testimony`,
+    `render_transcript_speakers`). Word-budget check
+    (`scripts/checks/table_cell_word_budget.py`) extended to exempt
+    Note columns. The BACKLOG entry undercounted (listed 8;
+    actual was 14 — self-audit caught the 6 missed renderers).
 
-Eight list-section entry shapes carry an optional `note` field that
-no current renderer emits:
+  - **M2** — `## Source-Form Notes` auto-renderer added (function
+    `render_source_form_notes` in `scripts/build-from-research.py`);
+    wired into all 7 body composers. Tables every `naming_quirks`
+    entry with `resolution: preserve-as-sic-in-quotes`; columns
+    Source Form / Canonical / Source / Note. Auto-suppressed when
+    no qualifying entries. Section renders on 25 of 32 nodes today;
+    7 nodes auto-suppress. `meta/conventions.md` OCR-scan +
+    transcript-provenance sections updated; the prose-flag
+    requirement demoted from mandatory to optional belt-and-
+    suspenders.
 
-- `org_relationships.note` — direct vs. downstream succession,
-  oversight vs. parent-chartering, etc.
-- `key_personnel.note`
-- `contracts.note`
-- `affiliations[].note` (person nodes)
-- `relationships[].note` (person-to-person)
-- `ownership_timeline.note`
-- `uap_scope_activity.note`
-- `location_relationships[].note`
+  - **Phase 3 polish** (backlog-stub ghosting, end-only-period
+    rendering) dropped from scope per user direction.
 
-The corresponding renderers in `scripts/build-from-research.py`
-(`render_org_relationships`, `render_affiliations`,
-`render_relationships`, `render_org_key_personnel`,
-`render_org_primary_contracts`, `render_ownership_timeline`,
-`render_uap_scope_activity`, `render_location_relationships`) emit
-only the structured cells (e.g., Organization | Relationship |
-Source) and drop `note` content. The `note` field IS rendered in
-three other places — `rumors.note` (Primary-source refutation),
-`corroboration_items.note` (What It Confirms column),
-`media_versioning.note` (notes column) — so the gap is specifically
-the eight relationship/list sections.
-
-Concrete consequence on the AARO node: `or1` (DoD parent) and
-`or5` (OUSD(I&S) supervisory) both render as bare `parent`
-relationship type with no visible distinction; the late-July 2023
-DEPSECDEF reporting-line shift documented in description prose has
-no structural counterpart in the relationship table. Same shape
-hits AARO with AOIMSG-vs-UAPTF predecessor disambiguation and the
-IPMO co-location-vs-partner case — see "Note-rendering gap
-manifestations" under AARO open notes in
-`meta/topic/research-queue.md`. The UAPTF audit had flagged the
-same pattern earlier with AARO-as-downstream-successor and
-EXCOM-as-oversight collapsing into bare `other` relationship type.
-
-**Manifestation 2 — verbatim source-form tokens appear unmarked in synthesis prose.**
-
-When a primary source uses a non-canonical form (auto-caption typos,
-OCR artifacts, alias-of-record), contributors register the variance
-as a `naming_quirks` entry with `resolution: preserve-as-sic-in-quotes`.
-Currently 74 such entries across 22 research artifacts. The verbatim
-form is preserved in `quote.text` (correct per source-read-first
-discipline). When the same form appears in synthesis prose
-(`description`, `credibility_notes`), the reader has no explicit
-signal that "Bigalow Aerospace" is the source's auto-caption output
-rather than a contributor misspelling.
-
-The Grusch node uses an implicit signal — single-quoted source form
-followed by a canonical wrap link (e.g., `'Bigalow Aerospace'`
-followed by [`/organizations/bigelow-aerospace`]). A discerning
-reader infers the source-vs-canonical pairing from the bracket-link,
-but the convention isn't documented anywhere reader-visible and
-other nodes don't apply it consistently. Heaviest affected nodes:
-sancorp-consulting (13 entries — pdftotext OCR artifacts: SuppOI1,
-anached, thi s, etc.), alex-dietrich (8 — fraver, prinston, nits,
-Nimttz, Fleer, ROC), ousd-is (8 — pdftotext extraction artifacts),
-ttsa (6 — metamateiiais, struefural), aaro (5 — fulfi lled, etc.),
-david-grusch (4 — Bigalow, lockie, Jim laty, Lou alzando).
-
-**Why these are one gap.** Both surface artifact-attested
-evidentiary nuance that the rendered output drops or under-signals.
-M1 lives in the structured table-render path; M2 lives in the
-prose-render / convention path. The fix shapes differ but the
-diagnosis is shared: artifact metadata not reaching readers. Both
-are renderer / convention layer; neither requires schema changes.
-A single coordinated pass closes both gaps for past and future
-nodes; per-node remediation is not required.
-
-**Fix sketches.**
-
-*M1 — render the `.note` field.*
-
-1. **Display convention.** Inline-below row prose (indented
-   paragraph below each row) reads more naturally for the 1–3
-   sentences `note` actually carries; column-wise 4th-column
-   "Notes" cell pushes long notes into unreadable wrapping on
-   narrow screens. Recommend inline-below; confirm at prototype.
-2. **Truncation policy.** Full render is probably right for an
-   evidentiary repo — codify the convention once rather than
-   per-section.
-3. **Backlog-stub ghosting** (orthogonal but adjacent). If a
-   note-bearing row references an unbuilt stub (e.g., UAPTF's `or9`
-   → `/organizations/uap-excom`), the renderer could italicize /
-   ghost the row to calibrate click-through expectations. Cheap to
-   include if the renderer is being touched anyway.
-4. **Enum-extension alternative considered and deferred.** Adding
-   `downstream-successor` / `oversight` / `reporting-body` to
-   `org_relationships.relationship_type` was rejected because the
-   enum grows indefinitely as edge nuances surface, each addition
-   is a schema commitment in advance of usage evidence, and
-   rendering the existing `note` field achieves the same reader-
-   visible outcome without schema prescription. Note rendering
-   does NOT foreclose future enum tightening — if notes recur
-   across many edges (e.g., 15+ rows saying "oversight body per
-   Charter"), that becomes evidence-driven justification for an
-   enum addition.
-
-*M2 — signal source-form preservation to readers.*
-
-1. **Inline `[sic]`** after verbatim source-form tokens in prose.
-   Contributor discipline; no schema or renderer change.
-2. **Renderer surface for `naming_quirks`** — emit a
-   `## Source-Form Notes` section listing preserve-as-sic entries
-   with their canonical forms. Surfaces 74 entries across 17
-   nodes today; auto-applies to future entries.
-3. **Backtick-quoted spans with trailing descriptor** —
-   `` `Bigalow` [source form preserved] ``. More verbose than
-   single-quote-plus-wrap; less ambiguous.
-
-Documenting the single-quote-plus-wrap convention in
-`meta/conventions.md` would also help, even without renderer change.
-
-**Parallel renderer polish.** The note-render pass and the
-end-only-period rendering (`period: – 2021` for bracketed-end-with-
-unknown-start) are both passes over artifact content the structured
-data already contains. If the renderer is touched broadly, grouping
-related polish — column alignment, sort stability, header
-formatting, note rendering, source-form notes — into one pass
-reduces churn.
-
-**Scope.** Corpus-wide. M1 affects every relationship/list row in
-every node built and every node that will ever be built. M2 affects
-74 naming_quirks entries across 22 artifacts today and grows as
-auto-caption / OCR sources land in the corpus.
-
-Surfaced: UAPTF audit (M1 — AARO and EXCOM rows displaying
-identically to `other`-typed edges); Grusch v2 audit (M2 — auto-
-caption verbatim forms in Credibility Notes prose read as
-contributor misspellings without explicit signal). The same
-node-build-audit cycle surfaced both shapes; reader-visibility for
-artifact metadata is the umbrella.
+Surfaced and closed two Grusch-audit-era reader-visibility failure
+cases (PPD-19 OCR artifacts + USAF date reconciliation) at the
+structural level; future contributors no longer need per-node
+prose-flag workarounds for `.note` content or preserve-as-sic
+naming_quirks.
 
 ---
 
@@ -420,10 +315,11 @@ C. Convention-only. Document in `meta/conventions.md` that "as of
    file, validated by a new check that reads `git log -1`. No schema
    change.
 
-**Relationship to BACKLOG B1.** Adjacent but distinct. B1 is about
-artifact-attested nuance (`note` fields, preserve-as-sic forms) not
-reaching readers; this is about prose-clause currency without a
-structural anchor. Both are reader-visibility issues.
+**Relationship to retired BACKLOG B1.** Adjacent but distinct. B1
+was about artifact-attested nuance (`note` fields, preserve-as-sic
+forms) not reaching readers — shipped 2026-05-13. This entry is
+about prose-clause currency without a structural anchor. Both are
+reader-visibility issues.
 
 **Priority.** Low. Not a correctness issue — the currency claim is
 already source-attested via the underlying primary sources; the
@@ -604,7 +500,7 @@ shape.
 
 ---
 
-### C6. Migrate residual `contracts[].value` analytical prose to `.note` once BACKLOG B1 ships
+### C6. Migrate residual `contracts[].value` analytical prose to `.note` (unblocked 2026-05-13 — B1 shipped)
 
 **The gap.** Schema spec for `contract_entry.value` is a label-shaped
 dollar string — *"$22 million" / "$22M" / "22,000,000"* per
@@ -614,16 +510,20 @@ in `value`: c10's USAspending base_and_all_options systemic-conflation
 observation, and c11's three-source value reconciliation with the
 ≥$6.5M unreconciled-gap observation. Schema-correct home for that
 prose is `.note` (in prose-drift scope, drift-checked, in-scope per
-`feedback_prose_drift_warnings_must_resolve.md`). But `.note` does
-not render in the Primary Contracts table today — that's the BACKLOG
-B1 (table renderers drop `.note` field) gap.
+`feedback_prose_drift_warnings_must_resolve.md`). As of 2026-05-13,
+`.note` renders in the Primary Contracts table (B1 M1 shipped) —
+C6 is now actionable; the migration is just a ~10 min Arlo artifact
+edit + regenerate.
 
-**Why this entry is B1-tied, not standalone.** Migrating the prose
-from `value` to `.note` *today* would lose two reader-visible
-analytical observations until B1 ships. Per
+**B1 dependency historical context (resolved 2026-05-13).** When
+this entry was filed, migrating the prose from `value` to `.note`
+would have lost two reader-visible analytical observations because
+`.note` didn't render. Per
 `feedback_reader_visibility_discipline.md`, fixes must surface in
-rendered output; trading visibility for schema-conformance is a
-regression. So the migration waits on B1.
+rendered output; trading visibility for schema-conformance was a
+regression. With B1 M1 shipped (Note column rendering), the
+dependency is resolved and the migration is now schema-conformant
+AND reader-visible.
 
 **Pre-staged work that already shipped (Arlo audit, this session,
 Option B).** The duplicated content in c10.value (3-of-4 vendor
@@ -663,12 +563,12 @@ all with 1-3 word `value` strings — schema-conformant and not
 affected. No other gov-contractor org artifacts exist today.
 
 **Priority.** Low. Bounded scope (2 entries, 1 artifact); cleanup
-fires automatically when B1 ships.
+fires now that B1 has shipped (2026-05-13).
 
-**Scope.** ~10 minutes after B1 ships: migrate two analytical
-observations from `value` to `.note`, regenerate, validate, verify
-rendered Primary Contracts table shows the migrated content via
-B1's note-rendering surface.
+**Scope.** ~10 minutes: migrate two analytical observations from
+`value` to `.note`, regenerate, validate, verify rendered Primary
+Contracts table shows the migrated content via the Note column
+(shipped in B1 M1).
 
 Surfaced: Arlo Solutions audit Phase 3 close-out review (Claude Web
 greenlit Option B trim of duplicated `value` prose; B1-dependent
