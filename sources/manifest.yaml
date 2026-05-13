@@ -2179,6 +2179,14 @@
   note: Deseret News 'Frequent Flyers?' by Zack Van Eyck (Staff Writer), June 30, 1996. Contemporaneous primary source for the Sherman era of Skinwalker Ranch. Direct quotes from Terry and Gwen Sherman, 480-acre ranch description, Fort Duchesne/Randlett location, April 1995 first-sighting date, 7-cattle-affected count (4 disappeared, 3 mutilated). Names private investigators (Joseph 'Junior' Hicks, Ryan Layton, Bill Lyons). No mention of Bigelow or NIDS (predates the October 1996 acquisition).
   archive_status: 3
   wayback_date: '2026-02-09'
+- url: https://www.dhs.gov/about-dhs
+  format: html
+  status: archived
+  path: government/dhs-gov-about-20260412.html
+  archived_date: '2026-05-13'
+  sha256: 34d3ce40262c977b218b0b7ff661341ff3aa67d9d0c3c5c9865703774335669f
+  archive_status: 1
+  note: DHS About page snapshot. Captured 2026-04-12. Not currently cited by any built node; registered for archival-integrity tracking. The KONA BLUE / AARO HRR Vol I DHS facts attest via the AARO Historical Record Report itself; this snapshot was archived in anticipation of a future DHS-related build but has not been needed in any node citation to date.
 - url: https://www.dia.mil/FOIA/FOIA-Electronic-Reading-Room/FileId/170018/
   format: pdf
   status: archived

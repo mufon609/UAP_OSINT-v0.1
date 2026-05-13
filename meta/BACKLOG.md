@@ -373,3 +373,46 @@ improvement. Validator doesn't care.
 Surfaced: Cluster 1 conversion re-review (2026-05-04) — spot-check
 of converted location refs against source content surfaced both
 failure modes.
+
+---
+### C25. Render `disputed` naming_quirks alongside `preserve-as-sic-in-quotes`
+
+`naming_quirks` entries with `resolution: preserve-as-sic-in-quotes`
+auto-render in a `## Source-Form Notes` table near the foot of every
+node body (BACKLOG B1 M2, shipped 2026-05-13). Entries with
+`resolution: disputed` carry the same evidentiary character — the
+contributor has recognized that two primary sources attest opposing
+forms of the same fact and chosen not to adjudicate — but currently
+render nowhere on the node body. The explicit "this disagreement is
+recognized and unresolved" flagging stays investigator-only in the
+YAML.
+
+**Surfacing case.** AARO node `naming_quirks.nq4` (Mt. Etna 170m vs
+170km) registers the dispute between AARO's slide-deck attestation
+("approximately 170 kilometers from the volcano", q54) and Kosloski's
+oral SASC testimony ("170 meters away from the plume", q25). Both
+verbatim quotes are preserved in Key Passages, so a careful reader
+encountering both quotes sees the disagreement in the primary-source
+content directly. What's missing is the explicit corpus-level flag
+that this disagreement is recognized and unresolved — currently only
+in the YAML nq4 entry, not on the body.
+
+**Fix sketch.** Extend the Source-Form Notes renderer (or add a
+parallel section like `## Preserved Disagreements`) to surface
+`resolution: disputed` naming_quirks entries. Columns could be:
+Observed form | Disputed counterpart | Source A | Source B | Note.
+Auto-suppressed when no qualifying entries exist, parallel to the
+existing Source-Form Notes suppression.
+
+**Priority.** Low. Not a correctness issue; reader-visibility
+extension. The disagreement is already visible to a careful reader
+in Key Passages; this surfaces it explicitly.
+
+**Scope.** Renderer extension + brief conventions.md note. Likely
+one Phase II render-pass + a doc paragraph in
+`meta/conventions.md` "Contradictions" section.
+
+Surfaced: 2026-05-13 D4 explanation during F.7 scope design —
+eliminating the AARO "open notes" research-queue.md surface as a
+philosophy violation surfaced that the explicit disagreement
+flagging for nq4 only lives in the YAML, not on the body.
