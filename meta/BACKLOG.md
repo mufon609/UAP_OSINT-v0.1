@@ -165,9 +165,18 @@ at each audit-execution session.
   audio-source handling; three framings are sketched in the
   closeout doc; option 3 (hybrid by `transcript_provenance`) is
   the most principled and requires schema work.
-- **Tier 4 — HTML sources.** 77 sources / 203 quotes. Extraction
-  low-risk (tag-strip + entity-decode handles nearly all cases).
-  Batched spot-check pattern across the source set.
+- **Tier 4 — HTML sources.** 77 sources / 203 quotes. **Complete
+  2026-05-13** — three-step methodology: (1) programmatic
+  extraction-artifact scan across all 77 HTML sources via
+  `extract_source_text` — 0 quote-affecting artifacts (the few
+  template-scaffolding leaks found sit outside quoted regions);
+  (2) quote-text artifact scan across all 203 cited quotes —
+  2 contributor-side findings corrected (uaptf q1 + q2 carried
+  literal `&nbsp;` in quote text rather than the decoded `\xA0`
+  character the source actually attests; same failure-mode shape
+  as q157, different artifact class); (3) representative visual
+  spot-check on most-cited HTML source (thedebrief-grusch-2023,
+  10 quotes) — 10/10 match.
 - **Tier 5 — PDF long-tail.**
   - **5a — text-native PDFs.** 52 sources / 176 quotes. Apply
     Tier 2 three-step methodology (metadata → pdftotext suspect-
@@ -190,21 +199,22 @@ at each audit-execution session.
   the closeout doc; confirm follow-up BACKLOG entries are still
   appropriately scoped; close A2.
 
-**Findings to date** (Tiers 1+2 + Tier 5b + Tier 5c). 399 audited
-quotes across 13 sources. Total contributor-side findings: 7
+**Findings to date** (Tiers 1+2 + Tier 4 + Tier 5b + Tier 5c). 602
+audited quotes across 90 sources. Total contributor-side findings: 9
 (6 in Tier 1's 211 quotes per closeout-doc category breakdown; 0
-in Tier 2's 87 quotes; 0 in Tier 5b's 62 quotes; 1 in Tier 5c's
-39 quotes — david-grusch q157 carried two OCR character-
-confusions preserved from the original pdftotext extraction,
-`lAW`→`IAW` and `(0)`→`(O)`, that did not match the page-visible
-source content; surfaced during canonical-sibling production for
-blackvault-aaro-invitations 24-F-0266). The canonical sibling
-produced via VLM transcription per `meta/conventions.md`'s
-FOIA-email-release convention (DOCUMENT N markers, 8 enclosures)
-is what made the divergence visible — pdftotext-only auditing
-would have masked it (the textbook ocr-scan blind spot the audit
-exists to catch).
-**Projected remaining findings (Tier 4 + Tier 5a):** 1–2 corrections.
+in Tier 2's 87 quotes; 2 in Tier 4's 203 HTML-source quotes —
+uaptf q1 + q2 `&nbsp;` literal → `\xA0` character; 0 in Tier 5b's
+62 quotes; 1 in Tier 5c's 39 quotes — david-grusch q157 `lAW`→`IAW`
+and `(0)`→`(O)` OCR character-confusions). The Tier 4 findings and
+the q157 Tier 5c finding share a failure-mode shape: contributor
+preserved an extraction-pipeline artifact (HTML entity / OCR
+mis-read) in the quote text rather than the page-attested form;
+validator passed because both quote and extract carried the same
+artifact under `normalize_for_compare`. Different artifact classes
+(HTML markup vs OCR mis-read), same audit-discipline lesson:
+source-read-first means the page-rendered form, not the markup or
+extraction output.
+**Projected remaining findings (Tier 5a):** 1–2 corrections.
 
 **Recommended sequence.** Tiers 4 + 5 first (HTML and PDF long-tail
 — extraction-track work, no convention decisions blocking). Tier 3

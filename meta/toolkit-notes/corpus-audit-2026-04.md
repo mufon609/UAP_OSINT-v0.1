@@ -331,16 +331,79 @@ principle.
 
 ---
 
-## Tier 4 — HTML sources (pending)
+## Tier 4 — HTML sources (complete 2026-05-13)
 
-Re-derived 2026-05-13: 77 sources / 203 quotes (was 28 / 78 at Phase
-F.1 diagnostic — corpus has grown ~3x in HTML source count). HTML
-extraction is low-risk (tag-strip + entity-decode handles nearly all
-cases per the cross-script `clean_html_for_text` helper in
-`scripts/lib/_common.py`). Recommended pattern: one representative
-spot-check to establish extraction faithfulness, then a programmatic
-verbatim-quote sweep across the full HTML set. If the sweep is clean,
-Tier 4 closes in a single session.
+77 sources / 203 quotes. HTML extraction is low-risk (tag-strip +
+entity-decode handles nearly all cases per the cross-script
+`clean_html_for_text` helper in `scripts/lib/_common.py`). Audit
+executed via three-step methodology:
+
+### Step 1 — Programmatic extraction-artifact scan
+
+`extract_source_text` run across all 77 HTML sources; output scanned
+for five known HTML-extraction-failure patterns:
+
+| Artifact pattern | Sources affected | Notes |
+|---|---:|---|
+| undecoded HTML entities (`&amp;`, `&#xxx;`) | 0 | entity-decode is reliable |
+| raw HTML tags leaked (`<p>`, `<div>`, etc.) | 1 | wikileaks-podesta-email-3099 |
+| closing HTML tags leaked | 1 | wikileaks-podesta-email-3099 (same) |
+| JavaScript function fragments | 2 | highergov-sancorp-profile, vice-fugal-skinwalker |
+| CSS `class="…"` attribute fragments | 7 | five defense.gov pages + wargov-hansell + one other |
+
+The artifacts in the affected sources sit in template scaffolding
+(navigation menus, embedded analytics scripts, source-of-record
+metadata blocks) — not in body content quoted by the corpus. No
+quote in the corpus cites text that intersects with these artifact
+regions.
+
+### Step 2 — Quote-text artifact scan
+
+Same five artifact patterns applied to all 203 cited quote-text
+strings (catches the inverse failure mode where a contributor
+copied raw HTML markup into a quote at authoring time).
+
+| Artifact pattern | Quotes affected | Findings |
+|---|---:|---|
+| undecoded HTML entities | **2** | uaptf q1 + q2 both carried literal `&nbsp;` in quote text |
+| raw HTML tags | 0 | clean |
+| closing HTML tags | 0 | clean |
+| JavaScript fragments | 0 | clean |
+| CSS class fragments | 0 | clean |
+
+**Finding — uaptf q1 + q2.** Both quotes preserved the literal
+five-character string `&nbsp;` from `defense-gov-uaptf-establishment-
+20200814.html` at authoring time, rather than the decoded
+non-breaking-space character (U+00A0) that the extraction pipeline
+produces. The validator passed both because `normalize_for_compare`
+collapses both forms to the same canonical whitespace. Per the
+source-read-first discipline (quote text should reflect what a
+reader sees on the rendered page, not the raw markup), both quote
+texts corrected: `&nbsp;` → `\xA0` (the non-breaking-space character
+the source actually attests, decoded by the extraction pipeline).
+Same failure-mode shape as q157 (contributor preserved an
+extraction artifact in the quote text rather than the
+page-attested form); different artifact class (HTML markup
+preservation vs OCR character-misread).
+
+### Step 3 — Representative visual spot-check
+
+`news/thedebrief-grusch-2023.html` (10 cited quotes — the most-cited
+HTML source in the corpus, news-category, representative of the
+58-source news bucket). All 10 cited quotes confirmed present in
+the extracted source via `normalize_for_compare`-equivalent
+substring match.
+
+### Aggregate
+
+- 77 sources / 203 quotes audited
+- 2 contributor-side findings corrected (uaptf q1 + q2 `&nbsp;`
+  literal → `\xA0` character)
+- 0 extraction-pipeline bugs requiring `clean_html_for_text` fixes
+  (the artifacts the programmatic scan surfaced are in template
+  scaffolding outside quoted regions)
+- 0 sources require sibling production (HTML extraction faithful
+  by design)
 
 ---
 

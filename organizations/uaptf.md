@@ -101,7 +101,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ### Establishment — Norquist approval + Navy/USD(I&S) placement
 
-> On Aug. 4, 2020, Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF). &nbsp;The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF.
+> On Aug. 4, 2020, Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF).  The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF.
 
 | Field | Value |
 |---|---|
@@ -113,7 +113,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ### Mission statement — detect, analyze, catalog UAPs
 
-> The Department of Defense established the UAPTF to improve its understanding of, and gain insight into, the nature and origins of UAPs. &nbsp;The mission of the task force is to detect, analyze and catalog UAPs that could potentially pose a threat to U.S. national security.
+> The Department of Defense established the UAPTF to improve its understanding of, and gain insight into, the nature and origins of UAPs.  The mission of the task force is to detect, analyze and catalog UAPs that could potentially pose a threat to U.S. national security.
 
 | Field | Value |
 |---|---|

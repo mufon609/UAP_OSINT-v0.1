@@ -103,7 +103,7 @@ context_extrinsic:
 quotes:
 - id: q1
   added_date: '2026-04-20'
-  text: On Aug. 4, 2020, Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF). &nbsp;The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF.
+  text: "On Aug. 4, 2020, Deputy Secretary of Defense David L. Norquist approved the establishment of an Unidentified Aerial Phenomena (UAP) Task Force (UAPTF). \xA0The Department of the Navy, under the cognizance of the Office of the Under Secretary of Defense for Intelligence and Security, will lead the UAPTF."
   source:
     path: government/defense-gov-uaptf-establishment-20200814.html
     location: article body ¶1
@@ -112,7 +112,7 @@ quotes:
   statement_date: '2020-08-14'
 - id: q2
   added_date: '2026-04-20'
-  text: The Department of Defense established the UAPTF to improve its understanding of, and gain insight into, the nature and origins of UAPs. &nbsp;The mission of the task force is to detect, analyze and catalog UAPs that could potentially pose a threat to U.S. national security.
+  text: "The Department of Defense established the UAPTF to improve its understanding of, and gain insight into, the nature and origins of UAPs. \xA0The mission of the task force is to detect, analyze and catalog UAPs that could potentially pose a threat to U.S. national security."
   source:
     path: government/defense-gov-uaptf-establishment-20200814.html
     location: article body ¶2
