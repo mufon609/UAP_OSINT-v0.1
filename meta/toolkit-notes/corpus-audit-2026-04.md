@@ -415,9 +415,9 @@ diagnostic). Per-sub-tier breakdown:
 
 | Sub-tier | Sources | Quotes | State |
 |---|---:|---:|---|
-| 5a — text-native PDFs | 52 | 176 | pending — apply Tier 2 methodology |
-| 5b — extraction-lossy PDFs | 2 | 62 | siblings produced; need verification pass |
-| 5c — ocr-scan PDFs | 6 | 39 | partial — see below |
+| 5a — text-native PDFs | 52 | 176 | complete 2026-05-13 |
+| 5b — extraction-lossy PDFs | 2 | 62 | complete 2026-05-13 |
+| 5c — ocr-scan PDFs | 6 | 39 | complete 2026-05-13 |
 
 ### Tier 5c progress (2026-05-13)
 
@@ -546,6 +546,49 @@ verified; **0 new findings**. Combined with the production-pass
 Tier 5c (3 sources / 12 quotes / 1 finding), Tier 5b and 5c are now
 **fully audited**: 9 sources / 101 quotes / 1 contributor-drift
 finding (q157).
+
+### Tier 5a — text-native PDFs (complete 2026-05-13)
+
+52 sources / 176 quotes. 44 government / 7 news / 1 transcript by
+category. Audited via the Tier 2 three-step methodology, batched
+where possible.
+
+**Step 1 — Producer-metadata scan across all 52 sources.**
+`pdfinfo` checked for OCR-producer signatures (OmniPage, AINSLIB.OCR,
+ABBYY, Tesseract, FineReader). 1 finding:
+
+- `government/blackvault-grusch-dopsr-23-F-0946.pdf` — Creator:
+  OmniPage CSDK 20 / Producer: AINSLIB.OCR. Manifest entry omitted
+  `extraction_type`, defaulting to text-native. Manifest mis-flag.
+  Investigated further (see Step 4); flagged `ocr-scan` with a
+  verification note per the documented exception case in
+  `meta/conventions.md` (OCR producer with clean extract; no `.txt`
+  sibling needed).
+
+Remaining 51 sources have non-OCR producers (Word, Distiller, Skia,
+LibreOffice Writer, Acrobat, etc.) — pdftotext is faithful by
+producer class.
+
+**Step 2 — Suspect-Unicode scan across all 52 sources.** Same
+heuristics as Tier 1 (`‡`/`†`/audit-flagged characters): 0 hits.
+
+**Step 3 — Quote-text artifact scan across all 176 cited quotes.**
+Same patterns as Tier 4 (HTML entities / raw tags / JS / CSS
+fragments leaked into quote text): 0 hits.
+
+**Step 4 — Visual spot-checks on representative + flagged sources.**
+
+| Source | Quotes | Spot-check method | Result |
+|---|---:|---|---|
+| `blackvault-grusch-dopsr-23-F-0946.pdf` | 2 | VLM page reads of pp. 4-8 + 12-16 (cover, Grusch DOPSR-submission emails, DD Form 1910, DOPSR Action sheets, cleared Speaker/Author Summary); both cited quotes (q154 on PDF p. 5, q155 on PDF p. 16) confirmed verbatim against rendered pages | OmniPage OCR produced clean extract — exception case; manifest flagged `ocr-scan` with verification note |
+| `armed-services-senate-gov-kirkpatrick-statement-20230419.pdf` | 20 (most-cited Tier 5a source) | VLM page read p. 1; q1 / q2 / q19 phrases cross-checked against rendered page | 3/3 match cleanly; Microsoft Word producer extracts faithfully |
+| `uintah-parcel-150050001-20260420.pdf` | 1 | VLM page read of full 1-page parcel record; q11 "Taxing Description" cell content confirmed | Match; cluster-verify-once applies to all 7 Uintah parcel PDFs (shared ORDS portal pipeline / LibreOffice Writer producer) |
+
+**Tier 5a aggregate**: 52 sources / 176 quotes audited; 1
+manifest-metadata finding corrected (dopsr-23-F-0946 mis-flag);
+**0 contributor-side findings**. Programmatic scans + visual
+spot-checks confirm extraction faithfulness across the text-native
+PDF set.
 
 ---
 

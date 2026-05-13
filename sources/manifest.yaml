@@ -610,7 +610,8 @@
   archived_date: '2026-04-22'
   sha256: 8cc28cb080933af8107eb71d2941282b638710054209ec737fc482820928d85a
   archive_status: 3
-  note: DOPSR pre-publication review request materials, Grusch written testimony (FOIA 23-F-0946); esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror.
+  extraction_type: ocr-scan
+  note: DOPSR pre-publication review request materials, Grusch written testimony (FOIA 23-F-0946); esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror. Producer chain OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan per BACKLOG A2 discipline (Tier 5a survey 2026-05-13 surfaced the OCR producer; prior manifest entry omitted extraction_type, defaulting to text-native). Extraction verified clean 2026-05-13 via visual VLM page reads on pp. 4-8, 12-16 — pdftotext output is faithful across cover letter, Grusch DOPSR-submission emails, DD Form 1910, DOPSR Action sheets, and the cleared Speaker/Author Summary cover; no character-level OCR corruption surfaced. Both cited quotes (david-grusch q154 on PDF p. 5, q155 on PDF p. 16) verified verbatim against rendered pages. No `.txt` sibling produced — this is the documented "OCR producer with clean extract" exception case per `meta/conventions.md` (validator's extract_source_text falls back to pdftotext, which is substantively meaningful here). Future contributors adding quotes from this PDF should visually verify against the rendered source page since OCR artifacts can surface on previously-unread regions.
   wayback_date: '2024-05-29'
 - url: https://documents2.theblackvault.com/documents/osd/23-F-1114.pdf
   format: pdf

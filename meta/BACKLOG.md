@@ -178,11 +178,19 @@ at each audit-execution session.
   spot-check on most-cited HTML source (thedebrief-grusch-2023,
   10 quotes) — 10/10 match.
 - **Tier 5 — PDF long-tail.**
-  - **5a — text-native PDFs.** 52 sources / 176 quotes. Apply
-    Tier 2 three-step methodology (metadata → pdftotext suspect-
-    char scan → visual VLM check). Some pipelines cluster (Uintah
-    parcel PDFs share an ORDS portal pipeline — verify once, apply
-    across); the rest are one-by-one spot-checks.
+  - **5a — text-native PDFs.** 52 sources / 176 quotes. **Complete
+    2026-05-13** — three-step Tier 2 methodology: (1) producer-
+    metadata scan across all 52 sources surfaced 1 manifest mis-
+    flag (`blackvault-grusch-dopsr-23-F-0946.pdf` was OmniPage
+    OCR-produced but flagged text-native; visual VLM verification
+    confirmed clean extract per the conventions.md exception case;
+    manifest updated to `extraction_type: ocr-scan` with
+    verification note, no sibling needed); (2) suspect-Unicode +
+    quote-text artifact scans across all 52 sources / 176 quotes —
+    0 hits; (3) visual VLM spot-checks on the most-cited source
+    (kirkpatrick-statement, 20 quotes — 3 cross-checked phrases
+    match) plus one Uintah parcel (cluster-verify covers all 7
+    parcel PDFs sharing the ORDS portal pipeline).
   - **5b — extraction-lossy PDFs.** 2 sources / 62 quotes (SASC
     2023-04-19 + SASC 2024-11-19 transcripts). **Verified clean
     2026-05-13** — programmatic OCR/Unicode scans clean + visual
@@ -199,22 +207,31 @@ at each audit-execution session.
   the closeout doc; confirm follow-up BACKLOG entries are still
   appropriately scoped; close A2.
 
-**Findings to date** (Tiers 1+2 + Tier 4 + Tier 5b + Tier 5c). 602
-audited quotes across 90 sources. Total contributor-side findings: 9
+**Findings to date** (Tiers 1+2 + Tier 4 + Tier 5 complete). 778
+audited quotes across 142 sources — every cited primary source in
+the corpus except the Tier 3 transcript / auto-caption sub-tier
+(blocked on BACKLOG A1). Total contributor-side findings: 9
 (6 in Tier 1's 211 quotes per closeout-doc category breakdown; 0
 in Tier 2's 87 quotes; 2 in Tier 4's 203 HTML-source quotes —
-uaptf q1 + q2 `&nbsp;` literal → `\xA0` character; 0 in Tier 5b's
-62 quotes; 1 in Tier 5c's 39 quotes — david-grusch q157 `lAW`→`IAW`
-and `(0)`→`(O)` OCR character-confusions). The Tier 4 findings and
-the q157 Tier 5c finding share a failure-mode shape: contributor
-preserved an extraction-pipeline artifact (HTML entity / OCR
-mis-read) in the quote text rather than the page-attested form;
-validator passed because both quote and extract carried the same
-artifact under `normalize_for_compare`. Different artifact classes
-(HTML markup vs OCR mis-read), same audit-discipline lesson:
-source-read-first means the page-rendered form, not the markup or
+uaptf q1 + q2 `&nbsp;` literal → `\xA0` character; 0 in Tier 5a's
+176 quotes; 0 in Tier 5b's 62 quotes; 1 in Tier 5c's 39 quotes —
+david-grusch q157 `lAW`→`IAW` and `(0)`→`(O)` OCR character-
+confusions). Plus 1 manifest-metadata finding (Tier 5a surfaced
+dopsr-23-F-0946 mis-flagged text-native despite OmniPage OCR
+producer; corrected to ocr-scan with verification note per the
+conventions.md exception case). The Tier 4 findings and the q157
+Tier 5c finding share a failure-mode shape: contributor preserved
+an extraction-pipeline artifact (HTML entity / OCR mis-read) in
+the quote text rather than the page-attested form; validator
+passed because both quote and extract carried the same artifact
+under `normalize_for_compare`. Different artifact classes (HTML
+markup vs OCR mis-read), same audit-discipline lesson: source-
+read-first means the page-rendered form, not the markup or
 extraction output.
-**Projected remaining findings (Tier 5a):** 1–2 corrections.
+
+A2 is now blocked only on Tier 3 (12 transcript sources / 84
+quotes — auto-caption convention decision per BACKLOG A1) and
+Tier 6 closeout.
 
 **Recommended sequence.** Tiers 4 + 5 first (HTML and PDF long-tail
 — extraction-track work, no convention decisions blocking). Tier 3
