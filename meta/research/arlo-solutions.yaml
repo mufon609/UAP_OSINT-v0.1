@@ -846,7 +846,7 @@ contracts:
   period_start: '2025-02-14'
   period_end: '2030-02-14'
   subject: OUSD(I&S) Enterprise BPA — Technical, Administrative and Professional Support Services
-  value: '$856,000,000 — good faith estimate amount, aggregate across four BPA vendors. USAspending stores this aggregate in the BPA''s "base_and_all_options" field, which nominally denotes an individual ceiling — a systemic conflation.'
+  value: '$856,000,000 — good faith estimate amount, aggregate across four BPA vendors.'
   source:
     path: government/usaspending-arlo-bpa-hq003425a0004.json
     location: USAspending API record — date_signed + period_of_performance.end_date + base_and_all_options + description fields
@@ -859,7 +859,7 @@ contracts:
   period_start: '2025-02-21'
   period_end: '2026-03-27'
   subject: SASP Call Order 2 — Administrative, Policy, Operations, and Analytic Support Services to the OUSD(I&S) Sensitive Activities & Special Programs Office
-  value: '$78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 to-date per USAspending field "base_exercised_options" (base period plus exercised options); "more than $85 million" per Arlo''s March 16, 2026 SASP press statement. The press release figure is a floor; announcement-vs-ceiling gap is at least $6.5 million; exact figure unreconciled in source.'
+  value: '$78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 to-date per USAspending field "base_exercised_options" (base period plus exercised options); "more than $85 million" per Arlo''s March 16, 2026 SASP press statement.'
   source:
     path: government/usaspending-arlo-hq003425f0104.json
     location: USAspending API record — date_signed + base_and_all_options + base_exercised_options + description fields

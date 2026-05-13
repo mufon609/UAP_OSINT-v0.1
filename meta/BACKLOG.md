@@ -500,79 +500,57 @@ shape.
 
 ---
 
-### C6. Migrate residual `contracts[].value` analytical prose to `.note` (unblocked 2026-05-13 — B1 shipped)
+### C6. Migrate residual `contracts[].value` analytical prose — RETIRED 2026-05-13
 
-**The gap.** Schema spec for `contract_entry.value` is a label-shaped
-dollar string — *"$22 million" / "$22M" / "22,000,000"* per
-`meta/schema.yaml:986-988`. Two contract entries on
-`/organizations/arlo-solutions` carry multi-sentence analytical prose
-in `value`: c10's USAspending base_and_all_options systemic-conflation
-observation, and c11's three-source value reconciliation with the
-≥$6.5M unreconciled-gap observation. Schema-correct home for that
-prose is `.note` (in prose-drift scope, drift-checked, in-scope per
-`feedback_prose_drift_warnings_must_resolve.md`). As of 2026-05-13,
-`.note` renders in the Primary Contracts table (B1 M1 shipped) —
-C6 is now actionable; the migration is just a ~10 min Arlo artifact
-edit + regenerate.
+c10.value and c11.value reduced to schema-conformant dollar
+strings; the analytical observations they carried did NOT migrate
+into `.note` as the BACKLOG-prescribed path suggested.
 
-**B1 dependency historical context (resolved 2026-05-13).** When
-this entry was filed, migrating the prose from `value` to `.note`
-would have lost two reader-visible analytical observations because
-`.note` didn't render. Per
-`feedback_reader_visibility_discipline.md`, fixes must surface in
-rendered output; trading visibility for schema-conformance was a
-regression. With B1 M1 shipped (Note column rendering), the
-dependency is resolved and the migration is now schema-conformant
-AND reader-visible.
+**Why the deviation.** Both observations relied on contributor
+synthesis vocabulary ("systemic conflation", "denotes", "stores",
+"nominally", "ceiling", "floor", "gap", "unreconciled",
+"announcement-vs-ceiling", "exact figure") that's nowhere in
+either entry's `source.path` token pool — nor in any of the 10
+primary_sources on the artifact (broader description-level pool
+checked: same absent verdict). The prose-drift discipline doesn''t
+accommodate analytical-synthesis vocabulary that's about HOW
+sources encode data: the words for that meta-commentary are
+necessarily absent from the data itself.
 
-**Pre-staged work that already shipped (Arlo audit, this session,
-Option B).** The duplicated content in c10.value (3-of-4 vendor
-attribution, "not Arlo's individual ceiling" explicit framing) was
-trimmed because the same facts already render in description ¶2 +
-Timeline rows; the unique systemic-conflation observation stays in
-`value` until B1 enables clean migration. c11.value left as-is —
-its content (multi-source figure reconciliation with W5 field-name
-disambiguation, ≥$6.5M unreconciled-gap observation) is all unique
-to that surface. So the residual misuse is precisely two analytical
-observations across two entries on one node.
+**What landed.**
 
-**Post-B1 cleanup scope (when this entry fires).**
+  - `c10.value`: `'$856,000,000 — good faith estimate amount,
+    aggregate across four BPA vendors.'` (clean label per schema
+    spec)
+  - `c10.note`: unchanged from pre-migration content (source-
+    attested narrative about the reevaluation + GAO-named vendors
+    + per-call-order scoping)
+  - `c11.value`: multi-source canonical figures retained with W5
+    field-name disambiguation ($78.5M USAspending ceiling +
+    $7.4M exercised + Arlo's "more than $85 million" press
+    statement)
+  - `c11.note`: unchanged from pre-migration content (source-
+    attested protest-history narrative)
 
-1. Move c10 systemic-conflation observation from `value` to `.note`.
-   c10.value reduces to `"$856,000,000 — good faith estimate amount,
-   aggregate across four BPA vendors."` — clean schema-conformant
-   dollar string with source-attested gloss.
-2. Move c11's reconciliation-gap observation (the ≥$6.5M
-   unreconciled gap analytical claim) from `value` to `.note`.
-   c11.value retains the multi-source canonical figures with
-   W5 field-name disambiguation.
-3. **Verify duplication doesn't reintroduce when migrating** —
-   c10 and c11 already have populated `.note` fields with their
-   own content. The migration target is "extend the existing
-   note with the analytical observation," not "replace the note."
-   Confirm migrated content doesn't duplicate what's already in
-   note, in description, or in Timeline.
-4. Validate prose-drift on the extended notes — the analytical
-   observations use vocabulary like "systemic conflation",
-   "unreconciled", "floor", "ceiling" that may need source-
-   vocabulary alignment to clear the drift check.
+**Substance trade-off.** The c10 systemic-conflation framing is
+implicitly carried by the description's "for all BPAs, not Arlo''s
+individual limit" wording — reader still understands the
+aggregation. The c11 three-figure presentation in `value` lets the
+reader see the ceiling-vs-press gap directly; the explicit "press
+release is a floor; ≥$6.5M unreconciled" interpretive framing is
+lost. Both trade-offs preserve the underlying facts (figures +
+description context); only the 1-sentence contributor synthesis
+framing is gone.
 
-**Corpus impact.** Confirmed Arlo-only. `sancorp-consulting`
-(the only other artifact carrying `contracts[]`) has 17 entries,
-all with 1-3 word `value` strings — schema-conformant and not
-affected. No other gov-contractor org artifacts exist today.
-
-**Priority.** Low. Bounded scope (2 entries, 1 artifact); cleanup
-fires now that B1 has shipped (2026-05-13).
-
-**Scope.** ~10 minutes: migrate two analytical observations from
-`value` to `.note`, regenerate, validate, verify rendered Primary
-Contracts table shows the migrated content via the Note column
-(shipped in B1 M1).
-
-Surfaced: Arlo Solutions audit Phase 3 close-out review (Claude Web
-greenlit Option B trim of duplicated `value` prose; B1-dependent
-residual cleanup deferred to this entry).
+**Audit-discipline observation.** This is a known edge case where
+prose-drift discipline + analytical synthesis at the per-entry
+note level pull against each other. The discipline is right; the
+right home for meta-commentary about data encoding is either
+description (broader source pool, but vocabulary still didn''t
+help here) or a finding node spanning multiple entities — neither
+applies cleanly to single-entry observations. The fact that the
+substance survives (in description and in the figures themselves)
+is what makes "drop" the acceptable outcome here.
 
 ---
 

@@ -6810,3 +6810,47 @@
   message: |
     Table cell in 'Speakers' exceeds word budget (69>55): The transcript labels two distinct audience speakers as "Aud...
 
+- ts: 2026-05-13T20:07:35Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/arlo-solutions.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contracts[9] ('c10') note: 7 significant token(s) not in source (prose-drift check — contributor review): aggregate, ceiling, conflation, denotes, nominally, stores, systemic
+  tokens: [aggregate, ceiling, conflation, denotes, nominally, stores, systemic]
+
+- ts: 2026-05-13T20:07:35Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/arlo-solutions.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contracts[10] ('c11') note: 7 significant token(s) not in source (prose-drift check — contributor review): announcement-vs-ceiling, exact, figure, floor, gap, release, unreconciled
+  tokens: [announcement-vs-ceiling, exact, figure, floor, gap, release, unreconciled]
+
+- ts: 2026-05-13T20:07:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/arlo-solutions.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contracts[9] ('c10') note: 7 significant token(s) not in source (prose-drift check — contributor review): aggregate, ceiling, conflation, denotes, nominally, stores, systemic
+  tokens: [aggregate, ceiling, conflation, denotes, nominally, stores, systemic]
+
+- ts: 2026-05-13T20:07:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/arlo-solutions.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contracts[10] ('c11') note: 7 significant token(s) not in source (prose-drift check — contributor review): announcement-vs-ceiling, exact, figure, floor, gap, release, unreconciled
+  tokens: [announcement-vs-ceiling, exact, figure, floor, gap, release, unreconciled]
+
