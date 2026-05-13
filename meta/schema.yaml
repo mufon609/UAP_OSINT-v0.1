@@ -1298,7 +1298,7 @@ types:
 
 manifest_entry:
   required: [url, format, status, archive_status]
-  optional: [path, sha256, archived_date, wayback_date, wayback_skip, note, category, extraction_type]
+  optional: [path, sha256, archived_date, wayback_date, wayback_skip, note, category, extraction_type, transcript_provenance]
   conditionally_required:
     path: "status == archived"       # must be set when the file is archived locally
     sha256: "status == archived"     # SHA256 of the archived file; integrity backstop
@@ -1356,6 +1356,64 @@ manifest_entry:
   # are not flagged with the source's extraction_type — confirmation against
   # the underlying original is a precondition for inclusion, not a rendered
   # claim. See meta/conventions.md for the principle.
+  transcript_provenance_values:
+    - stenographic
+    - published-transcript
+    - human-corrected-caption
+    - auto-caption
+    - unknown
+  # `transcript_provenance` classifies how a `format: transcript` source's
+  # text was produced from the underlying audio/video. Optional; defaults
+  # to `unknown` when absent. Parallel field to `extraction_type` (which
+  # applies to static-text sources); same ingestion-pipeline-metadata role.
+  # The five values distinguish how much human confirmation has already
+  # been applied between the original audio signal and the archived text:
+  #   stenographic            — court-reporting service (e.g., Alderson
+  #                             Court Reporting) or other accredited
+  #                             stenographic transcription. Human-attested
+  #                             at audio-to-text capture. Equivalent
+  #                             footing with text-native PDF — validator
+  #                             substring match against transcript text
+  #                             is substantively meaningful.
+  #   published-transcript    — published transcript by an outlet whose
+  #                             editorial process includes human review
+  #                             against audio (e.g., NYTimes transcript
+  #                             service, Federal News Network, 60
+  #                             Minutes-published transcripts). Same
+  #                             equivalent-footing as stenographic.
+  #   human-corrected-caption — auto-caption (or other machine output)
+  #                             that has been contributor-corrected
+  #                             against the audio. Equivalent-footing
+  #                             once the correction step is documented
+  #                             in the manifest note.
+  #   auto-caption            — machine-generated caption (YouTube auto-
+  #                             caption, Otter.ai, Whisper output, etc.)
+  #                             with no human correction. Failure mode:
+  #                             character-level mis-transcription
+  #                             (e.g. "Bigalow" for "Bigelow", "lockie
+  #                             Martin" for "Lockheed Martin", "Kurpatre"
+  #                             for "Kirkpatrick"). Same shape as
+  #                             ocr-scan: machine rendering of an
+  #                             underlying signal, with errors. The
+  #                             caption file IS the machine output.
+  #                             Validator substring match against the
+  #                             caption file passes trivially when both
+  #                             quote text and caption carry the same
+  #                             machine artifact — the textbook auto-
+  #                             caption blind spot the audit must catch.
+  #   unknown                 — provenance not yet classified.
+  # Operational handling for auto-caption: same workflow as ocr-scan.
+  # The caption file is the machine extraction; the underlying audio /
+  # video is the original source. Contributor discipline requires
+  # registering known caption typos as `naming_quirks` entries with
+  # resolution `preserve-as-sic-in-quotes`, mirroring the OCR-scan
+  # discipline. Audio confirmation is required when programmatic /
+  # contextual review surfaces anomalies — the exception case is when
+  # the auto-caption happens to be clean enough that the validator's
+  # substring match is substantively meaningful (analog to the
+  # ocr-scan-with-clean-extract exception in meta/conventions.md).
+  # See meta/conventions.md "Transcript provenance and audit discipline"
+  # for the full discipline.
   # `category` is derived from path prefix (government/, news/, etc.) unless overridden
   # `sha256` detects local file corruption, accidental overwrite, and silent
   # substitution. Computed at archive-time by manifest.py add; re-verified

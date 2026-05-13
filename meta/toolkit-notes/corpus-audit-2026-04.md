@@ -293,41 +293,88 @@ Tier 2's speed is the baseline for text-native audits going forward.
 
 ---
 
-## Tier 3 — transcript sources (pending; convention decision blocks audit)
+## Tier 3 — transcript sources (complete 2026-05-13)
 
-Targets: 9 sources, 73 quotes. Mostly YouTube-downloaded auto-
-captions (the `-downloaded.md` pattern in `sources/transcripts/`):
-JRE 2065 (20), NewsNation Coulthart (17), American Alchemy (10),
-Somewhere in the Skies (9), Grusch Sol closing (6), Linda Hall (5),
-American Veterans Center (3), Merged Podcast (2), Calling All
-Beings (1). One PDF-format transcript (When It Mattered, 6 quotes)
-— worth categorizing whether it's a human-produced transcript or a
-caption re-packaging.
+Re-derived 2026-05-13: 12 cited sources / 84 quotes (was 9 / 73 at
+Phase F.1 diagnostic). All 12 are YouTube auto-captions (no
+stenographic or human-produced transcripts in the current corpus).
 
-**Convention decision required before audit execution.** Phase E's
-principle ("confirmation is a precondition for inclusion, against
-the underlying primary source") doesn't directly specify how to
-handle audio sources. Three framings:
+### Convention resolution (BACKLOG A1)
 
-1. **Transcript-as-source.** What Phase E language literally says.
-   Under this rule, Tier 3 audit just checks quotes match transcript
-   file, which the validator already does. Clean but accepts
-   caption errors as authentic to the source.
-2. **Audio-as-source.** Every transcript-derived quote needs
-   confirmation against audio. Substantial work (download + sample-
-   verify all 9 sources). Possibly automate via modern speech-to-
-   text + diff-against-caption, human-verify disagreements.
-3. **Hybrid by transcript provenance.** Equivalent-footing when
-   human-produced (stenographic transcripts, published interview
-   transcripts — human has already done confirmation-against-audio
-   work). Audio-confirmation required when auto-caption (machine
-   extraction of audio; same shape of problem as OCR vs. page
-   image). Requires classifying each of the 9 sources.
+**Option 3 (hybrid by transcript provenance) selected and implemented.**
+Convention question Phase E's primary-source principle left open —
+"what does 'confirmed' mean for an auto-caption transcript?" — landed
+as follows:
 
-Option 3 is most principled; requires a `transcript_provenance`
-field on transcript manifest entries (or similar classifier).
-Decision lives in `meta/conventions.md` alongside the Phase E
-principle.
+- `transcript_provenance_values` enum added to `meta/schema.yaml`
+  `manifest_entry`: `stenographic | published-transcript |
+  human-corrected-caption | auto-caption | unknown`.
+- "Transcript provenance and audit discipline" section added to
+  `meta/conventions.md` documenting the per-provenance verification
+  path. Human-produced classes (stenographic, published-transcript)
+  are equivalent-footing primary sources. Auto-caption sources are
+  machine extractions of underlying audio — same shape as ocr-scan
+  PDFs; same audit discipline (naming_quirks for known artifacts,
+  programmatic + contextual review, audio confirmation when
+  anomalies surface, contributor-produced clean-text sibling when
+  systemic drift is observed).
+- All 16 transcript-format manifest entries classified as
+  `auto-caption` (the current corpus has only YouTube sources).
+
+### Tier 3 audit execution
+
+**Step 1 — Caption-file artifact scan.** Programmatic scan across
+all 12 cited caption files for known auto-caption artifact patterns
+(`Bigalow`, `lockie`, `Kirknat`, `Kurpatre`, `alzando`, `fraver`,
+`Nimttz`, etc.). 7 of 12 caption files contain such artifacts —
+expected given the auto-caption-from-YouTube provenance.
+
+**Step 2 — Naming-quirks coverage cross-reference.** Every
+caption-artifact token appearing in cited quote text was checked
+against the registered `naming_quirks` entries with
+`resolution: preserve-as-sic-in-quotes` per the source-form-
+preserve discipline. 3 missing entries surfaced (one per
+artifact-source pair where coverage was incomplete on a per-source
+basis):
+
+| Node | Quote | Source | Artifact | Action |
+|---|---|---|---|---|
+| `alex-dietrich` | q38 | american-veterans-center-dietrich-2024 | `fraver` → Fravor | added nq10 |
+| `david-grusch` | q25 | newsnation-coulthart-grusch-2023 | `Kurpatre` → Kirkpatrick | added nq8 |
+| `james-ryder` | q11 | lucistrust-garment-of-god-ryder-2018 | `put off` → Puthoff | added nq8 |
+
+These are documentation-completeness findings, not contributor-side
+drift — the quote text already preserved the verbatim caption form
+correctly (the source-read-first discipline was applied at quote-
+authoring time); only the audit-trail naming_quirks coverage was
+incomplete on a per-source basis. Each finding closed by adding the
+missing naming_quirks entry to the relevant research artifact.
+
+**Step 3 — Quote-text artifact scan.** Same patterns as Tier 4
+(HTML entities / raw tags / JS / CSS fragments leaked into quote
+text — different shape from caption mis-transcriptions; checking
+contributor preservation of caption-file markup rather than audio
+mis-transcription). **0 hits across all 84 caption-source quotes.**
+
+### Tier 3 aggregate
+
+- 12 sources / 84 quotes audited
+- 3 documentation-completeness findings corrected (missing
+  per-source naming_quirks entries)
+- 0 contributor-side findings (no caption artifact slipped into
+  quote text without source-form preservation)
+- All caption-artifact tokens in quote text now have corresponding
+  `preserve-as-sic-in-quotes` naming_quirks entries registered on a
+  per-source basis
+
+### Future-proofing
+
+The `transcript_provenance` enum gives the corpus a hook for
+adding stenographic / published-transcript sources later. Audit
+discipline for those classes is equivalent-footing per
+`meta/conventions.md`'s "Transcript provenance and audit
+discipline" section. The auto-caption-specific workflow remains in
+place for any future YouTube/Otter.ai/Whisper sources added.
 
 ---
 

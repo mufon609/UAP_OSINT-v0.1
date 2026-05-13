@@ -46,73 +46,23 @@ coupled to roadmap F.7 (finding renderer); A4 pairs with F.7. Pick
 up in this order; do not skip ahead without the upstream piece in
 place.
 
-### A1. Auto-caption-vs-audio confirmation discipline (Phase F Tier 3 blocker)
+### A1. Auto-caption-vs-audio confirmation discipline — RETIRED 2026-05-13
 
-Phase E's "Confirmation is a precondition for inclusion" principle
-(`meta/conventions.md`) names transcripts as equivalent-footing
-sources once confirmed, but does not specify what "confirmed" means
-for an auto-caption transcript. A YouTube-downloaded caption file
-is itself an extraction of audio by a machine-transcription service;
-caption typos (e.g., "Bigalow" for "Bigelow", "lockie Martin" for
-"Lockheed Martin" in Grusch's JRE episode) are structurally the
-same shape as OCR character-corruption on a scanned PDF — machine
-rendering of an underlying signal, with errors.
-
-Current established practice (per
-`feedback_transcript_timestamps_in_quotes.md` and Phase A work):
-preserve auto-caption typos verbatim via `naming_quirks` entries
-with resolution `preserve-as-sic-in-quotes`. This is a node-level
-workaround; it does not resolve the broader question of whether
-audio or the caption file is the authoritative source.
-
-**Three framings to decide between:**
-
-1. **Transcript-as-source** — what Phase E language literally says.
-   Tier 3 audit just confirms quotes match the transcript file,
-   which the validator already does. Cheap. Accepts caption errors
-   as authentic to the source of record.
-2. **Audio-as-source** — every transcript-derived quote needs
-   confirmation against audio. Download audio for all transcript
-   sources; sample-verify passages; possibly automate via modern
-   speech-to-text diffed against the caption file, human-verify
-   disagreements. Expensive.
-3. **Hybrid by transcript provenance** — equivalent-footing when
-   human-produced (stenographic transcripts, published interview
-   transcripts — human has already done the confirmation-against-
-   audio work). Audio-confirmation required when auto-caption
-   (machine extraction of audio; same shape as OCR vs. page image).
-   Requires classifying each transcript source via a new field
-   `transcript_provenance` with values like `stenographic`,
-   `human-produced`, `service-produced`, or `auto-caption`.
-
-**Recommendation** (from the Phase F.3 closeout draft): option 3.
-Most principled; aligns auto-caption handling with the OCR pattern
-established in Phase A/D. Requires manifest schema field addition
-+ classification pass + per-category audit methodology in
-`meta/conventions.md`.
-
-**Affected now.** 11 transcript sources, 80 quotes. Representative
-cases: JRE 2065 (20 quotes — auto-caption), NewsNation Coulthart
-(17 — auto-caption), American Alchemy (10 — auto-caption), plus
-`when-it-mattered-55-dietrich-2021.pdf` (6 quotes — provenance
-unclear, worth categorizing) and `ncas-kirkpatrick-aaro-duality`
-(1 quote — auto-caption from a post-AARO Kirkpatrick presentation).
-Mix expected to grow as additional interview / podcast sources land
-in the corpus.
-
-**Scope.** Convention decision can land on its own. Execution
-scope depends on option chosen: option 1 is a single audit pass on
-the existing transcript set; option 3 is a classification pass
-across each transcript source plus sampled audio verification per
-category.
-
-**Blocks.** Phase F Tier 3. BACKLOG A2 cannot close until this
-decision resolves and Tier 3 executes under it.
-
-Surfaced: Phase F.1 diagnostic — transcript sources concentrate
-~10% of the corpus's quotes; Phase E principle didn't anticipate
-the auto-caption-vs-audio axis when generalizing transcripts as
-equivalent-footing.
+Option 3 (hybrid by transcript provenance) selected and implemented.
+`transcript_provenance_values` enum added to `meta/schema.yaml`
+`manifest_entry` with values `stenographic | published-transcript |
+human-corrected-caption | auto-caption | unknown`. "Transcript
+provenance and audit discipline" section added to
+`meta/conventions.md` documenting the per-provenance verification
+path (human-produced classes are equivalent-footing primary sources;
+auto-caption sources are machine extractions handled with the same
+discipline as ocr-scan PDFs — naming_quirks for known artifacts,
+programmatic + contextual review, audio confirmation when
+anomalies surface, contributor-produced clean-text sibling when
+systemic drift is observed). All 16 transcript-format manifest
+entries classified as `auto-caption`. Tier 3 audit executed under
+the new discipline (see A2 + corpus-audit-2026-04.md "Tier 3"
+section).
 
 ---
 
@@ -160,11 +110,21 @@ at each audit-execution session.
 **Remaining work.**
 
 - **Tier 3 — transcript sources (auto-caption majority).** 12 sources
-  / 84 quotes. Blocked on BACKLOG A1 (auto-caption-vs-audio convention
-  decision). Phase E's primary-source principle didn't specify
-  audio-source handling; three framings are sketched in the
-  closeout doc; option 3 (hybrid by `transcript_provenance`) is
-  the most principled and requires schema work.
+  / 84 quotes. **Complete 2026-05-13** — A1 resolved (option 3
+  hybrid-by-`transcript_provenance` adopted; schema + conventions
+  updated; all 16 transcript-format manifest entries classified as
+  `auto-caption`). Tier 3 audit executed: programmatic caption-
+  artifact scan + naming_quirks cross-reference across all 12 cited
+  sources / 84 quotes. 3 missing naming_quirks entries surfaced and
+  registered (alex-dietrich `fraver` for american-veterans-center;
+  david-grusch `Kurpatre` for newsnation-coulthart; james-ryder
+  `put off` for lucistrust-garment-of-god) — these are
+  documentation-completeness findings (the quote text already
+  preserved the verbatim caption form per source-form-preserve
+  discipline; only the audit-trail naming_quirks coverage was
+  incomplete on a per-source basis). 0 contributor-side findings
+  (no caption-artifact slipped into quote text without source-form
+  preservation).
 - **Tier 4 — HTML sources.** 77 sources / 203 quotes. **Complete
   2026-05-13** — three-step methodology: (1) programmatic
   extraction-artifact scan across all 77 HTML sources via
@@ -207,31 +167,32 @@ at each audit-execution session.
   the closeout doc; confirm follow-up BACKLOG entries are still
   appropriately scoped; close A2.
 
-**Findings to date** (Tiers 1+2 + Tier 4 + Tier 5 complete). 778
-audited quotes across 142 sources — every cited primary source in
-the corpus except the Tier 3 transcript / auto-caption sub-tier
-(blocked on BACKLOG A1). Total contributor-side findings: 9
-(6 in Tier 1's 211 quotes per closeout-doc category breakdown; 0
-in Tier 2's 87 quotes; 2 in Tier 4's 203 HTML-source quotes —
-uaptf q1 + q2 `&nbsp;` literal → `\xA0` character; 0 in Tier 5a's
-176 quotes; 0 in Tier 5b's 62 quotes; 1 in Tier 5c's 39 quotes —
-david-grusch q157 `lAW`→`IAW` and `(0)`→`(O)` OCR character-
-confusions). Plus 1 manifest-metadata finding (Tier 5a surfaced
-dopsr-23-F-0946 mis-flagged text-native despite OmniPage OCR
-producer; corrected to ocr-scan with verification note per the
-conventions.md exception case). The Tier 4 findings and the q157
-Tier 5c finding share a failure-mode shape: contributor preserved
-an extraction-pipeline artifact (HTML entity / OCR mis-read) in
-the quote text rather than the page-attested form; validator
-passed because both quote and extract carried the same artifact
-under `normalize_for_compare`. Different artifact classes (HTML
-markup vs OCR mis-read), same audit-discipline lesson: source-
-read-first means the page-rendered form, not the markup or
-extraction output.
+**Findings to date** (all tiers complete except Tier 6 closeout).
+862 audited quotes across 154 sources — every cited primary source
+in the corpus. Total contributor-side findings: 9 (6 in Tier 1's
+211 quotes per closeout-doc category breakdown; 0 in Tier 2's 87
+quotes; 0 in Tier 3's 84 quotes; 2 in Tier 4's 203 HTML-source
+quotes — uaptf q1 + q2 `&nbsp;` literal → `\xA0` character; 0 in
+Tier 5a's 176 quotes; 0 in Tier 5b's 62 quotes; 1 in Tier 5c's 39
+quotes — david-grusch q157 `lAW`→`IAW` and `(0)`→`(O)` OCR
+character-confusions). Plus 1 manifest-metadata finding (Tier 5a
+surfaced dopsr-23-F-0946 mis-flagged text-native despite OmniPage
+OCR producer; corrected to ocr-scan with verification note per the
+conventions.md exception case). Plus 3 documentation-completeness
+findings (Tier 3 surfaced missing naming_quirks entries on a
+per-source basis for caption artifacts that were already preserved
+correctly in quote text). The Tier 4 findings and the q157 Tier 5c
+finding share a failure-mode shape: contributor preserved an
+extraction-pipeline artifact (HTML entity / OCR mis-read) in the
+quote text rather than the page-attested form; validator passed
+because both quote and extract carried the same artifact under
+`normalize_for_compare`. Different artifact classes (HTML markup
+vs OCR mis-read), same audit-discipline lesson: source-read-first
+means the page-rendered form, not the markup or extraction output.
 
-A2 is now blocked only on Tier 3 (12 transcript sources / 84
-quotes — auto-caption convention decision per BACKLOG A1) and
-Tier 6 closeout.
+A2 is ready for Tier 6 closeout — every cited source in the corpus
+has been audited under its appropriate per-extraction-type
+discipline; all findings are corrected or registered.
 
 **Recommended sequence.** Tiers 4 + 5 first (HTML and PDF long-tail
 — extraction-track work, no convention decisions blocking). Tier 3

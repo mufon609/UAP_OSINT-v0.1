@@ -91,11 +91,19 @@ the reader's behalf.
 
 Transcripts of speech sources — congressional hearings, podcasts,
 broadcasts, interviews, depositions, conference talks — are
-equivalent-footing sources once confirmed. The inclusion bar does
-not vary by medium: every quote, whether extracted from a PDF, an
-HTML page, a stenographic transcript, or a captioning file, must
-appear in the cited source. No marker variant, no different
-verification path, no renderer special-casing.
+equivalent-footing sources once confirmed against the relevant
+primary source. The inclusion bar does not vary by medium: every
+quote, whether extracted from a PDF, an HTML page, a stenographic
+transcript, or a captioning file, must appear in the cited source.
+No marker variant, no different verification path, no renderer
+special-casing. What "the cited source" means for a transcript
+depends on the transcript's provenance: human-produced transcripts
+(stenographic court reporting, outlet-published transcripts with
+human editorial review) ARE the primary source; auto-caption files
+(YouTube auto-captions, Otter.ai, Whisper output) are machine
+extractions of the underlying audio/video, and the underlying media
+is the original source. See "Transcript provenance and audit
+discipline" below for the per-provenance verification path.
 
 OCR-scanned sources are a known blind spot: when both the quote text
 and the source extract carry the same OCR corruption, the
@@ -265,6 +273,75 @@ from the sibling rather than the corrupted PDF text layer; the
 naming_quirks entries continue to record the original artifacts as
 provenance. The prose flag may be tightened or removed at that point
 depending on whether the sibling fully resolves the artifacts.
+
+### Transcript provenance and audit discipline
+
+Transcripts of speech sources split into two evidentiary classes by
+how the audio-to-text transcription happened:
+
+**Human-produced transcripts** (stenographic court reporting like
+Alderson Court Reporting; outlet-published transcripts with human
+editorial review against audio — NYTimes transcript service, Federal
+News Network, broadcast transcripts where the outlet's process
+includes audio confirmation). The human has already done the audio-
+to-text confirmation. These are equivalent-footing primary sources —
+the validator's substring match against the transcript file is
+substantively meaningful, no additional audio verification required.
+The `transcript_provenance` values `stenographic` and
+`published-transcript` mark these classes.
+
+**Auto-caption transcripts** (YouTube auto-captions, Otter.ai,
+Whisper output, any other machine-generated caption file with no
+human correction step). The caption file IS the machine extraction
+of an underlying audio/video signal — structurally the same shape as
+the OCR text layer of a scanned PDF. Failure mode: character-level
+mis-transcription (`Bigalow` for `Bigelow`, `lockie Martin` for
+`Lockheed Martin`, `Kurpatre` for `Kirkpatrick`, `Jim laty` for `Jim
+Lacatski`). When both quote text and caption file carry the same
+machine artifact, the verbatim-quote check passes trivially — the
+textbook auto-caption blind spot. The `transcript_provenance` value
+`auto-caption` marks these sources; the underlying audio/video is
+the canonical original. Audit handling mirrors `ocr-scan`:
+
+- **Known caption artifacts** registered as `naming_quirks` entries
+  with resolution `preserve-as-sic-in-quotes` (same workflow as
+  OCR-scan source-form preservation per
+  `feedback_prose_drift_warnings_must_resolve.md` Category 3).
+  Examples already in the corpus: `Bigalow`→`Bigelow`,
+  `lockie Martin`→`Lockheed Martin`, `Jim laty`→`Jim Lacatski`,
+  `alzando`→`Elizondo`.
+
+- **Programmatic suspect-pattern scan** on caption files: same
+  character-cluster heuristics that detect OCR mis-reads
+  (`rt`↔`tr`, `cl`↔`d`, `rn`↔`m`, etc.) plus caption-specific
+  patterns (single-syllable proper-noun mis-spellings, phoneme-
+  substitution drift on uncommon names).
+
+- **Audio confirmation** for any quote whose programmatic / contextual
+  review surfaces an anomaly. For an auto-caption source with a
+  documented track record of clean output across spot-checked
+  passages, programmatic + naming_quirks discipline is substantively
+  meaningful — the exception case parallels the
+  ocr-scan-with-clean-extract pattern (validator's caption-file
+  substring match suffices; document the verification approach in
+  the manifest note).
+
+- **Contributor-produced clean-text sibling** is the analog of the
+  ocr-scan `.txt` sibling for auto-caption sources where systemic
+  drift is observed. The sibling is a contributor transcription of
+  the audio (or a human-corrected version of the caption file)
+  with its own manifest entry + sha256; the `transcript_provenance`
+  value moves from `auto-caption` to `human-corrected-caption` once
+  the correction step is documented.
+
+**Hybrid sources** — auto-caption files contributor-corrected
+against audio playback — flag as `human-corrected-caption`. Once
+corrected, equivalent-footing with stenographic and published-
+transcript classes.
+
+The five-value `transcript_provenance` enum is the schema layer
+(see `manifest_entry.transcript_provenance_values` in
+`schema.yaml`). The audit discipline above is the contributor layer.
 
 ### Type-specialized views of `quotes[]`
 

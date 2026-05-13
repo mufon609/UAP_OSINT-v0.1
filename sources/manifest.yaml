@@ -3207,6 +3207,7 @@
   sha256: 8026cbed22997c042cb0ce465ed9f339a143d8e09f4dc73e9c51891e57a8029c
   archive_status: 3
   wayback_date: '2026-02-12'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=9DUmMdSQXHk
   format: transcript
   status: archived
@@ -3216,6 +3217,7 @@
   archive_status: 3
   note: 'YouTube auto-captions for Calling All Beings #104 with Alex Dietrich (~1:11:38). Published 2024-01-05. Discusses UAP activism, Sol Foundation conference attendance, Inquiry into the Anomalous Experience Conference.'
   wayback_date: '2026-04-22'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=DUgMd8ic2ig
   format: transcript
   status: archived
@@ -3225,6 +3227,7 @@
   archive_status: 3
   note: 'Lucis Trust Arcane School Conference London, May 2015 — Dr. James T. Ryder presentation ''The Soul Is Light. What Then Is Light?'' (Lucis Trust productions video published 2020-08-07 on the Lucis Trust YouTube channel; runtime 1:06:49). Transcript provenance: contributor-pasted from the YouTube transcript UI (same workflow as 2025-09-09 hearing transcript), then reformatted from bare-timestamp-on-its-own-line to canonical [MM:SS]-inline form to match the corpus convention used by other YouTube-caption transcripts in /sources/transcripts/. Auto-caption transcript with [MM:SS] timestamps preserved on every content line. Contains: IBEX (Interstellar Boundary Explorer) ''built in my lab'' first-person attestation of Lockheed Martin ATC supervisory role; Andromeda matter-halo survey instruments built by his company; Hal Puthoff ''my friend Dr. Puthoff'' + cosmic-matrix paper citation; first read Alice Bailey Treatise on Cosmic Fire ~1970 (3 years before 1973 Lockheed start); governments researching ''telepathy'' for ''purposes of invading other people in a secret way'' (auto-caption renders ''telepathy'' as ''leprosy'' in the body); plasma-vs-gas Sun mislabeling discussion; David Bohm + Stephen Hawking 2014 Nature article + Feynman last-book citations.'
   wayback_date: '2024-09-30'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=Nc9_ZP36-AI
   format: transcript
   status: archived
@@ -3234,6 +3237,7 @@
   archive_status: 3
   note: YouTube auto-captions for Merged Podcast EP0114 'Pilots & Witnesses; Systematic UAP Reporting' (~1:00:57). Published 2023-08-31. Framed around pilot reporting mechanisms — likely useful for Dietrich's institutional engagement history.
   wayback_date: '2025-01-17'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=R8TqBrrqL4U
   format: transcript
   status: archived
@@ -3243,6 +3247,7 @@
   archive_status: 3
   note: 'Joe Rogan Experience #2065 with David Grusch and Ross Coulthart, aired 2023-11-21 (post Spotify-exclusivity YouTube upload on JRE channel).'
   wayback_date: '2025-11-14'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=R9Yn0hgbVA0
   format: transcript
   status: archived
@@ -3252,6 +3257,7 @@
   archive_status: 3
   note: 'Lucis Trust Arcane School Conference NYC, April 28-29, 2018 — Dr. James T. Ryder presentation ''The Garment of God: Esoterically and Scientifically'' (Lucis Trust productions video published 2021-02-02 on the Lucis Trust YouTube channel). Approximately one month before Ryder''s reported May 2018 death. Transcript provenance: contributor-pasted from the YouTube transcript UI (same workflow as 2025-09-09 hearing transcript per its manifest note); youtube-transcript-api and yt-dlp were both blocked from automated pull in this environment (''Sign in to confirm you''re not a bot''). Reformatted from bare-timestamp-on-its-own-line to canonical [MM:SS]-inline form to match the corpus convention used by other YouTube-caption transcripts in /sources/transcripts/. Contains: Targ ''worked for me for years'' attestation; Puthoff ''good buddy'' + Journal of Physics vacuum-polarization paper; ESP Wars book internal-Lockheed-Martin lineage (assembled 2009 during VP tenure, daughter at Lockheed Martin routed copy back); Cold War U.S./USSR psychic research funding asymmetry; Alice Bailey Cosmic Fire framework; Pam Reynolds-style standstill aneurysm out-of-body case discussion. Auto-caption variants observed: ''pothos'', ''thought of'', ''put off'' (all = Puthoff).'
   wayback_date: '2024-04-13'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=RBAISwCZ2v0
   format: transcript
   status: archived
@@ -3261,6 +3267,7 @@
   archive_status: 3
   note: NewsNation Reality Check with Ross Coulthart — Grusch interview aired 2023-06-11 (official NewsNation channel re-upload).
   wayback_date: '2026-03-31'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=SIbHsv1I8Ko
   format: transcript
   status: archived
@@ -3270,6 +3277,7 @@
   archive_status: 3
   note: YouTube auto-captions for Linda Hall Library panel 'UAP in a Scientific Context' (~1:18:22). Recorded 2025-02-20, uploaded 2025-04-23. Moderator Nadia Drake; panelists Alex Dietrich, Greg Eghigian (PSU), Joshua Semeter (BU).
   wayback_date: '2025-04-27'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=bi0H_mkwTW0
   format: transcript
   status: archived
@@ -3279,6 +3287,7 @@
   archive_status: 3
   note: 'YouTube auto-caption transcript of Kirkpatrick''s April 9 2026 first public reappearance after ~2 years of relative silence; National Capital Area Skeptics (NCAS) Arlington VA event titled ''All-domain Anomaly Resolution Office (AARO): a Duality in Mission Regarding UAPs'' hosted by NCAS president Scott Snell. Kirkpatrick restated the no-aliens / no-legacy-program conclusion. Source for audit finding 3.4. extraction_type: auto-caption; expect transcribe-pipeline typos (BACKLOG #20).'
   wayback_date: '2026-04-27'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=ku9CYCKw4Aw
   format: transcript
   status: archived
@@ -3288,6 +3297,7 @@
   archive_status: 3
   note: 'YouTube auto-captions for American Veterans Center ''UFOs and The Military: A Combat Pilot''s Experience'' interview with Tom Gibbs (~26:18). Recorded 2024-11-09, published 2025-03-18. Biographical: VFA-41, two combat deployments (OIF + OEF), Bronze Star, Air Combat Medal, ~1,250 hours, ~375 carrier traps.'
   wayback_date: '2025-12-05'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=kwsWAQ9sJZE
   format: transcript
   status: archived
@@ -3297,6 +3307,7 @@
   archive_status: 3
   note: Jesse Michels / American Alchemy documentary "Proof Of Aliens On Earth // 72 hrs With UFO Whistleblower David Grusch Under Oath", released ~October 2023.
   wayback_date: '2025-11-19'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=mu9mw6GHPEM
   format: transcript
   status: archived
@@ -3306,6 +3317,7 @@
   archive_status: 3
   note: '2025-09-09 House Oversight UAP hearing YouTube recording — auto-generated captions copy-pasted from YouTube transcript UI; cleaned to strip duplicated screen-reader duration text. Hearing title: ''Restoring Public Trust through UAP Transparency and Whistleblower Protection''. Stenographic transcript not yet published by the committee.'
   wayback_date: '2026-03-09'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=ribyo1XCtRo
   format: transcript
   status: archived
@@ -3315,6 +3327,7 @@
   archive_status: 3
   note: YouTube auto-captions for 'Somewhere in the Skies — Chasing the Tic Tac UFO with Alex Dietrich' (host Ryan Sprague, ~1:16:48). Longest single Dietrich interview surveyed; published 2024-11-26 (YouTube replay).
   wayback_date: '2025-01-26'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=u6Z8OCKhxic
   format: transcript
   status: archived
@@ -3324,6 +3337,7 @@
   archive_status: 3
   note: YouTube auto-captions for 'When It Mattered Ep. 55 — Great-granddaughter of a SciFi pioneer spots a UFO' with Chitra Ragavan (~37:10). Audio originally published 2021-06-16; YouTube re-upload 2022-02-24. Dietrich's first dedicated long-form interview post-60 Minutes; heavy biographical content.
   wayback_date: '2024-05-04'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=xkP0X6vBP88
   format: transcript
   status: archived
@@ -3332,6 +3346,7 @@
   sha256: c684299117f5e1b075222afcc9e3185510396b8f754898c1c9028ba751e4d9e7
   archive_status: 3
   wayback_date: '2025-02-23'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=z-kNIzV5qSE
   format: transcript
   status: archived
@@ -3341,6 +3356,7 @@
   archive_status: 3
   note: Grusch closing remarks at the Sol Foundation Inaugural Symposium, Stanford (2023-11-17/18); Sol Foundation YouTube upload 2024-02-12.
   wayback_date: '2025-11-18'
+  transcript_provenance: auto-caption
 - url: https://x.com/BrandonFugal/status/1788707062408421795
   format: txt
   status: archived
