@@ -153,43 +153,6 @@ point.
 
 ---
 
-### A4. Rename `finding` → `investigation` + redesign type
-
-Mechanical rename plus a design pass. The `finding` type will be
-renamed to `investigation`; the redesign will decide what synthesis
-surface an investigation node carries. See **Redesign pass** below
-for the open design questions.
-
-**Rename surfaces** (mechanical):
-- `meta/schema.yaml` — `types.finding` block + `conditional_keys`
-  rule for `timeline.required_when_any_of` (which lists `finding` as
-  a target_node_type) + ~6 enum-list references
-- Scripts — `DIRS` maps, `new.py` argparse, `validate.py`
-  `node_type == "finding"` branch, any `if node_type == "finding":`
-  branches in build-from-research.py / associate.py / build-state.py
-  (total: 8 scripts). The scaffolder (research-scaffold.py) reads the
-  type list from schema.yaml directly (since the conditional_keys
-  refactor), so its rename is driven by the schema edit alone.
-- `meta/templates/finding.md` → `investigation.md`
-- `/findings/` directory (currently empty) → `/investigations/`
-- Top-level docs — README, AGENT, CONTRIBUTING, conventions, overview,
-  research-queue
-
-**Redesign pass** (design decision deferred):
-- What sections does an investigation node carry under the
-  statements-only discipline? Options: quotes-only Key Passages
-  parallel to documents, or a cross-reference surface parallel to
-  hearing Witnesses & Testimony. See roadmap "F.7" section.
-- Incorporate the investigation-pathway material that used to live in
-  `research_gaps[]` (what readers expect from an active research
-  thread: concrete methodology, cross-node scope, resolution state).
-
-Surfaced: Open-Questions section removal — the rename was
-deliberately deferred to a later session rather than bundled with
-the removal.
-
----
-
 ## B. Parallel batch (renderer pass)
 
 Items that touch the renderer and naturally batch into a single

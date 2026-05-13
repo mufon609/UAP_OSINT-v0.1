@@ -19,12 +19,43 @@ when.
 
 ## Active work
 
-### F.7 — finding renderer  ⏳ PENDING (last remaining type)
+### F.7 — synthesis-layer node types: finding + investigation  ⏳ PENDING
 
-Finding is the last unbuilt node type. Design pass open: decide what
-synthesis section (if any) finding nodes carry under statements-only.
-Options: quotes-only Key Passages parallel to documents, or a cross-
-reference surface parallel to hearing Witnesses & Testimony.
+Scope decision 2026-05-13: synthesis splits into two new types rather
+than one redefined `finding`. Both consume entity-node facts; neither
+restructures the existing entity-node layer.
+
+**Finding** — a pattern that becomes visible only by reading multiple
+primary sources together. No single source attests the pattern; the
+synthesis-of-reading-together produces information not present in any
+constituent attestation. Distinguished from a fact (single attestation,
+lives on entity nodes). Findings duplicate primary-source content from
+entity nodes by design — if a finding cites something the relevant
+entity node doesn't yet attest, the entity node is updated (primary
+source confirmed + archived) before the finding can use it. Findings
+do not reference the investigations that produced them.
+
+**Investigation** — an open-ended question or hypothesis, speculation-
+tolerant. Evaluates hypotheses against the primary-source record by
+consuming findings + entity-node facts. Investigations link to and
+summarize findings; findings do not link back. Investigations build
+cases — proving, disproving, or further pursuing the question.
+
+**Entity nodes** — unchanged at scope level. Carry facts including
+load-bearing cross-entity facts (single-source attestations that name
+other entities). `## Associated Nodes`, structural cross-references,
+and prose-section cross-references stay. What entity nodes do NOT
+carry: findings (multi-source patterns) or hypothesis-tolerant
+analysis (investigations).
+
+**Structure deferred.** Section shape, frontmatter, status
+vocabularies, and renderer dispatch all to be decided in a separate
+design pass.
+
+Scope validated via exploratory walk through "does Lockheed Martin
+own/house UAP material?" (2026-05-13) — four multi-source convergence
+patterns (findings) and two single-source attestations (facts) fell
+out cleanly.
 
 No pilot candidate yet — will emerge from cross-entity patterns
 observed during Step G content population.
