@@ -62,23 +62,25 @@ programmatic + contextual review, audio confirmation when
 anomalies surface, contributor-produced clean-text sibling when
 systemic drift is observed). All 16 transcript-format manifest
 entries classified as `auto-caption`. Tier 3 audit executed under
-the new discipline (see A2 + corpus-audit-2026-04.md "Tier 3"
-section).
+the new discipline. Full audit trail in
+`meta/toolkit-notes/corpus-audit-2026-04.md` "Tier 3" section.
 
 ---
 
 ### A2. Verified-verbatim marker removed; full-corpus source-integrity audit (Phase F) — RETIRED 2026-05-13
 
-Phase F audit complete: 862 audited quotes across 154 sources —
-every cited primary source in the corpus. 9 contributor-side
-findings + 1 manifest-metadata finding + 3 documentation-
-completeness findings; all corrected. Schema evolution shipped:
-`extraction_type` enum (text-native | ocr-scan | extraction-lossy)
-for static sources; `transcript_provenance` enum (stenographic |
-published-transcript | human-corrected-caption | auto-caption |
-unknown) for transcript sources. Validator `.txt`-sibling
-preference generalized from `== ocr-scan` to `!= text-native`.
-Full audit trail in `meta/toolkit-notes/corpus-audit-2026-04.md`.
+Phase F audit complete: 881 audited quotes across 158 sources —
+every cited primary source in the corpus, including 5 native-text
+TXT/JSON exports covered by audit-by-format (Tier 5d). 9
+contributor-side findings + 1 manifest-metadata finding + 3
+documentation-completeness findings; all corrected. Schema
+evolution shipped: `extraction_type` enum (text-native | ocr-scan
+| extraction-lossy) for static sources; `transcript_provenance`
+enum (stenographic | published-transcript | human-corrected-caption
+| auto-caption | unknown) for transcript sources. Validator
+`.txt`-sibling preference generalized from `== ocr-scan` to
+`!= text-native`. Full audit trail in
+`meta/toolkit-notes/corpus-audit-2026-04.md`.
 
 ---
 

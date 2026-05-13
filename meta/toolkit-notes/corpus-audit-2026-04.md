@@ -639,6 +639,36 @@ manifest-metadata finding corrected (dopsr-23-F-0946 mis-flag);
 spot-checks confirm extraction faithfulness across the text-native
 PDF set.
 
+**Counting note**: the dopsr-23-F-0946 mis-flag was reclassified
+from text-native → ocr-scan at audit close. Pre-audit T5a was 52
+sources / 176 quotes (the set audited); post-audit classification
+is 51 T5a / 7 T5c. Either framing is internally consistent; the
+post-audit framing appears in the Tier 6 aggregate table.
+
+---
+
+## Tier 5d — TXT-format sources (audit-covered by format)
+
+5 sources / 19 quotes. Direct text exports from authoritative
+origins:
+
+| Source | Quotes | Origin |
+|---|---:|---|
+| `government/eo-14347-restoring-department-of-war-20250910.txt` | 15 | Federal Register text dump of Executive Order 14347 (Vol 90 No 173) |
+| `government/usaspending-arlo-bpa-hq003425a0004.json` | 1 | USAspending API JSON record (Arlo parent BPA) |
+| `government/usaspending-arlo-hq003425f0104.json` | 1 | USAspending API JSON record (Arlo SASP call order) |
+| `government/usaspending-hq003422c0094.txt` | 1 | USAspending JSON record (Sancorp AARO contract) |
+| `government/usaspending-w912cl25ca005.txt` | 1 | USAspending JSON record (Sancorp USSOUTHCOM contract) |
+
+**Audit status**: covered by virtue of native-text format. No
+extraction step (the validator reads the file directly); no
+extraction-pipeline failure mode possible. The contributor-side
+correctness concern that motivates Tier 1-5c does not apply —
+these files are direct exports from upstream APIs / Federal
+Register text downloads, not contributor-produced transcriptions.
+Validator's substring match against the file IS the source
+verification. 0 findings; 0 sibling-production needed.
+
 ---
 
 ## Tier 6 — closeout (complete 2026-05-13)
@@ -648,8 +678,8 @@ PDF set.
 Phase F walked every cited primary source in the corpus through a
 per-extraction-type audit discipline. The original Phase F.1
 diagnostic measured 508 quotes / 64 sources / 16 artifacts; by
-audit completion the corpus had grown to **862 quotes / 154 unique
-source paths / 32 research artifacts** (~70% growth). Every cited
+audit completion the corpus had grown to **881 quotes / 158 unique
+source paths / 32 research artifacts** (~73% growth). Every cited
 source was audited under its appropriate methodology:
 
 | Tier | Source class | Sources | Quotes | Methodology | Date |
@@ -658,25 +688,27 @@ source was audited under its appropriate methodology:
 | 2 | written-testimony PDFs (text-native) | 3 | 87 | Three-step (metadata / suspect-char / VLM check) | 2026-04-24 |
 | 3 | YouTube auto-caption transcripts | 12 | 84 | Caption-artifact scan + per-source naming_quirks coverage cross-reference | 2026-05-13 |
 | 4 | HTML sources | 77 | 203 | Programmatic extraction-artifact scan + quote-text artifact scan + representative visual spot-check | 2026-05-13 |
-| 5a | text-native PDF long-tail | 52 | 176 | Tier 2 three-step methodology, batched where pipelines cluster | 2026-05-13 |
+| 5a | text-native PDF long-tail | 51 | 174 | Tier 2 three-step methodology, batched where pipelines cluster (audit pre-dopsr-reclassification covered 52/176) | 2026-05-13 |
 | 5b | extraction-lossy PDFs (SASC transcripts) | 2 | 62 | Sibling production (pre-session) + programmatic + visual spot-check re-verify | 2026-05-13 |
-| 5c | ocr-scan PDFs | 7 | 39 | Sibling production where needed + programmatic + visual verify | 2026-05-13 |
-| **Total** | — | **154** | **862** | — | **complete** |
+| 5c | ocr-scan PDFs | 7 | 41 | Sibling production where needed + programmatic + visual verify (dopsr-23-F-0946 reclassified here at audit close) | 2026-05-13 |
+| 5d | TXT-format direct exports | 5 | 19 | Audit-by-format (no extraction step; native text exports from upstream APIs and Federal Register) | 2026-05-13 |
+| **Total** | — | **158** | **881** | — | **complete** |
 
 ### Aggregate findings
 
 Three distinct finding classes surfaced:
 
-**Contributor-side findings (9 — quote text required correction):**
+**Contributor-side findings (9 — quote text or sibling text required correction):**
 
 | Tier | Node/Quote | Class | Resolution |
 |---|---|---|---|
 | 1 | `transcripts/2023-07-26-house-fravor` q3 | Word-drift ("over" extra word) | Corrected |
 | 1 | `transcripts/2023-07-26-house-fravor` q20 | **Content insertion** ("No one came." fabricated sentence) | Corrected; categorically different from drift — see Tier 1 section |
 | 1 | `transcripts/2023-07-26-house-graves` q12 | Word-drift ("it" missing) | Corrected |
-| 1 | `transcripts/2023-07-26-house-grusch` q31 + `people/david-grusch` q106 | Unicode mapping (`11‡`→`11½`) | Corrected via sibling |
-| 1 | (Tier 1's nq6 case + 2 transcription errors in the contributor-produced sibling) | Counted within Tier 1's 6 total | — |
-| 4 | `organizations/uaptf` q1 + q2 | HTML entity literal preserved (`&nbsp;` → `\xA0`) | Corrected |
+| 1 | `transcripts/2023-07-26-house-grusch` q31 + `people/david-grusch` q106 | Unicode mapping (`11‡`→`11½` — extraction-artifact category) | Corrected via sibling |
+| 1 | `.txt` sibling p. 22 "There are" → "There were" (affects Grusch q83 + `transcripts/grusch` q18) | Sibling-transcription substantive | Corrected in sibling |
+| 1 | `.txt` sibling p. 41 missing phrase "the airwing with the carrier" (affects `transcripts/fravor` q31) | Sibling-transcription substantive | Corrected in sibling |
+| 4 | `organizations/uaptf` q1 + q2 | HTML entity literal preserved (`&nbsp;` → `\xA0`) | Corrected (counts as 2 findings) |
 | 5c | `people/david-grusch` q157 | OCR character-confusion preserved (`lAW`→`IAW`; `(0)`→`(O)`) | Corrected during canonical-sibling production |
 
 The Tier 4 and Tier 5c findings share a single failure-mode shape:
@@ -749,13 +781,13 @@ pointing here.
 
 ### What the audit was worth
 
-- **Aggregate contributor-drift rate** across 862 audited quotes:
-  9 contributor-side findings = **1.04% across the full corpus**.
+- **Aggregate contributor-drift rate** across 881 audited quotes:
+  9 contributor-side findings = **1.02% across the full corpus**.
   Tier 1's 1.4% standalone rate was the worst-case segment (high
   quote volume, extraction-lossy source, content-insertion failure
-  caught only by independent reference); Tiers 2, 3, 5a, 5b each
-  ran 0% contributor-drift; Tier 4 caught 2/203 (1.0%); Tier 5c
-  caught 1/39 (2.6%, n=39).
+  caught only by independent reference); Tiers 2, 3, 5a, 5b, 5d
+  each ran 0% contributor-drift; Tier 4 caught 2/203 (1.0%);
+  Tier 5c caught 1/41 (2.4%, n=41 post-dopsr-reclassification).
 - **Mechanical backstop demonstrated**: the verbatim-quote check
   alone passes contributor + machine-extraction artifacts when both
   quote and extract carry the same drift. Visual / VLM verification
