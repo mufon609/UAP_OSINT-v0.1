@@ -133,6 +133,18 @@ def check(ctx):
     if not isinstance(ctx.data, dict):
         return
 
+    # Build case-insensitive set of hypothesis ids for cross-reference
+    # resolution. hypotheses[].id and hypothesis_evaluation[]
+    # .hypothesis_id (and counter_evidence[].against_hypothesis_id) may
+    # be authored in mixed case; the validator and renderer both
+    # normalize to lowercase so a contributor case-mismatch produces
+    # a clear error rather than silent degraded rendering.
+    hypothesis_ids = {
+        (h.get("id") or "").lower()
+        for h in entries(ctx.data, "hypotheses")
+        if isinstance(h, dict) and h.get("id")
+    }
+
     # --- hypothesis_evaluation[] ---
     hypothesis_evals = entries(ctx.data, "hypothesis_evaluation")
     for i, he in enumerate(hypothesis_evals):
@@ -142,12 +154,21 @@ def check(ctx):
         label = f"hypothesis_evaluation[{i}] (hypothesis_id={hid!r})"
 
         # hypothesis_id is required (lifecycle check covers id; this
-        # one verifies hypothesis_id specifically)
-        if not he.get("hypothesis_id"):
+        # one verifies hypothesis_id specifically + cross-resolution)
+        hid_value = he.get("hypothesis_id")
+        if not hid_value:
             yield Issue(
                 ctx.rel, "error",
                 f"{label}: missing required 'hypothesis_id' "
                 f"(must match an entry id in hypotheses[])",
+                check_name=CHECK_NAME,
+            )
+        elif hypothesis_ids and hid_value.lower() not in hypothesis_ids:
+            yield Issue(
+                ctx.rel, "error",
+                f"{label}: hypothesis_id {hid_value!r} does not match "
+                f"any id in hypotheses[] (case-insensitive lookup). "
+                f"Known hypothesis ids: {sorted(hypothesis_ids)}",
                 check_name=CHECK_NAME,
             )
 
@@ -213,11 +234,20 @@ def check(ctx):
         cid = ce.get("id") or f"index-{i}"
         label = f"counter_evidence[{i}] (id={cid!r})"
 
-        if not ce.get("against_hypothesis_id"):
+        against = ce.get("against_hypothesis_id")
+        if not against:
             yield Issue(
                 ctx.rel, "error",
                 f"{label}: missing required 'against_hypothesis_id' "
                 f"(must match an entry id in hypotheses[])",
+                check_name=CHECK_NAME,
+            )
+        elif hypothesis_ids and against.lower() not in hypothesis_ids:
+            yield Issue(
+                ctx.rel, "error",
+                f"{label}: against_hypothesis_id {against!r} does not "
+                f"match any id in hypotheses[] (case-insensitive "
+                f"lookup). Known hypothesis ids: {sorted(hypothesis_ids)}",
                 check_name=CHECK_NAME,
             )
         yield from _check_text_field(

@@ -2446,9 +2446,20 @@ def _render_sources_rollup(sources):
 def render_hypothesis_evaluation(artifact):
     """`## Hypothesis Evaluation` — per-hypothesis H3 cards. Each card:
     H3 heading with hypothesis statement, **Status:** verdict line,
-    analytical prose, **Sources:** rollup of findings + entity anchors."""
+    analytical prose, **Sources:** rollup of findings + entity anchors.
+
+    Hypothesis-id lookup is case-insensitive (hypotheses[].id and
+    hypothesis_evaluation[].hypothesis_id may be authored in mixed case;
+    the renderer normalizes to lowercase for lookup and uppercases for
+    display). The investigation_hypothesis_citation check enforces
+    that every hypothesis_id resolves to a hypotheses[] entry, so the
+    contract is mechanically verified; this renderer fallback merely
+    avoids degraded output between contributor edit and validate."""
     items = [e for e in (artifact.get("hypothesis_evaluation") or []) if isinstance(e, dict)]
-    hyps = {h.get("id"): h for h in (artifact.get("hypotheses") or []) if isinstance(h, dict)}
+    hyps = {
+        (h.get("id") or "").lower(): h
+        for h in (artifact.get("hypotheses") or []) if isinstance(h, dict)
+    }
 
     head = "## Hypothesis Evaluation\n"
     if not items:
@@ -2458,7 +2469,7 @@ def render_hypothesis_evaluation(artifact):
     for e in items:
         hid_raw = e.get("hypothesis_id") or ""
         hid = hid_raw.upper()
-        statement = (hyps.get(hid_raw, {}).get("statement") or "").strip()
+        statement = (hyps.get(hid_raw.lower(), {}).get("statement") or "").strip()
         heading = f"### {hid} — {statement}" if statement else f"### {hid}"
         status = (e.get("status") or "").strip()
         text = (e.get("text") or "").strip()

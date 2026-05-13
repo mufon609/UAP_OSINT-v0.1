@@ -76,11 +76,17 @@ from checks import artifact_parse as ck_artifact_parse
 # Per-artifact checks (after parse)
 from checks import affiliations as ck_affiliations
 from checks import artifact_top_level as ck_artifact_top_level
+from checks import cited_findings as ck_cited_findings
+from checks import closure_path as ck_closure_path
 from checks import contracts as ck_contracts
+from checks import contradictions as ck_contradictions
 from checks import corroboration_items as ck_corroboration_items
 from checks import cross_refs as ck_cross_refs
+from checks import does_not_establish as ck_does_not_establish
 from checks import entities_referenced as ck_entities_referenced
+from checks import establishes as ck_establishes
 from checks import finding_no_investigation_refs as ck_finding_no_investigation_refs
+from checks import hypotheses as ck_hypotheses
 from checks import iff_section as ck_iff_section
 from checks import investigation_closure_path_when_paused as ck_investigation_closure_path_when_paused
 from checks import investigation_hypothesis_citation as ck_investigation_hypothesis_citation
@@ -88,6 +94,7 @@ from checks import key_personnel as ck_key_personnel
 from checks import location_relationships as ck_location_relationships
 from checks import media_versioning as ck_media_versioning
 from checks import naming_quirks as ck_naming_quirks
+from checks import open_questions as ck_open_questions
 from checks import org_relationships as ck_org_relationships
 from checks import ownership_timeline as ck_ownership_timeline
 from checks import participants as ck_participants
@@ -97,6 +104,7 @@ from checks import prose_drift as ck_prose_drift
 from checks import publication_record as ck_publication_record
 from checks import quotes as ck_quotes
 from checks import relationships as ck_relationships
+from checks import resolution_history as ck_resolution_history
 from checks import rumors as ck_rumors
 from checks import speakers as ck_speakers
 from checks import timeline as ck_timeline
@@ -223,7 +231,16 @@ _ARTIFACT_CHECKS = [
     ck_ownership_timeline,
     ck_top_scope_activity,
     ck_location_relationships,
-    # Finding / investigation type-specific checks (F.7)
+    # Finding / investigation per-section entry-shape checks (F.7)
+    ck_establishes,
+    ck_does_not_establish,
+    ck_contradictions,
+    ck_hypotheses,
+    ck_cited_findings,
+    ck_open_questions,
+    ck_closure_path,
+    ck_resolution_history,
+    # Finding / investigation type-specific cross-cutting checks (F.7)
     ck_finding_no_investigation_refs,
     ck_investigation_hypothesis_citation,
     ck_investigation_closure_path_when_paused,

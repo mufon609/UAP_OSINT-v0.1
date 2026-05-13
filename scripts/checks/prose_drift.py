@@ -18,10 +18,11 @@ Scope is CONTRIBUTOR SYNTHESIS PROSE: top-level free-prose fields
 (``description``, ``background``, ``top_relevance``, ``credibility_notes``)
 and per-entry synthesis content notes (``ownership_timeline.note``,
 ``top_scope_activity.note``, ``key_personnel.note``, ``contracts.note``,
-``media_versioning.note``, ``vouching_chain.attestation``). Applied
-across all renderer-supported types. See ``meta/conventions.md``
-"Prose-drift discipline on synthesis surfaces" for the principle of
-record before proposing any field-specific threshold tuning.
+``media_versioning.note``, ``vouching_chain.attestation``,
+``contradictions.note``). Applied to renderer-supported types EXCEPT
+investigation — see below. See ``meta/conventions.md`` "Prose-drift
+discipline on synthesis surfaces" for the principle of record before
+proposing any field-specific threshold tuning.
 
 OUT of scope: compact label cells (role titles, short relationship
 descriptors, ``timeline[].event``, ``use_status``, ``activity``,
@@ -31,6 +32,18 @@ descriptor notes (``corroboration_items.note``,
 ``location_relationships.note``). Token-match misfires on label cells
 and meta-descriptors; fabrication in those cells is semantic-review
 territory.
+
+ALSO OUT of scope: every prose surface on investigation artifacts.
+Investigations are speculation-tolerant by design — the
+``hypothesis_evaluation`` / ``best_current_answer`` /
+``counter_evidence`` / ``open_questions`` / ``closure_path`` /
+``resolution_history`` surfaces (and the investigation's umbrella
+``description``) carry analytical prose that intentionally goes
+beyond what any single primary source attests. Token-match drift on
+those surfaces would force investigations into source-vocabulary-only
+prose and defeat the layer. The ``investigation_hypothesis_citation``
+check enforces non-empty Sources rollups in lieu of token-match drift
+on those surfaces.
 
 Per-entry fields pool against the top-level union (∪ primary_sources)
 rather than each entry's own ``source.path``. Synthesis-content notes
@@ -52,6 +65,23 @@ CHECK_NAME = "prose_drift"
 
 # Top-level prose fields by target type. Pooled against the union of
 # all primary_sources[].path token pools.
+#
+# Finding `description` is in scope because finding synthesis prose is
+# anchored to the convergent multi-source pool — the description
+# explains the pattern visible across those sources and should use
+# their vocabulary.
+#
+# Investigation prose is intentionally NOT in scope at any field —
+# investigations are speculation-tolerant by design (description /
+# hypothesis_evaluation.text / hypothesis_evaluation.status /
+# best_current_answer.text / counter_evidence.text /
+# open_questions.question / closure_path entries / resolution_history
+# entries all carry contributor analytical prose that goes beyond what
+# any single source attests). The investigation_hypothesis_citation
+# check enforces source-rollup discipline in lieu of token-match drift.
+# Adding ``"investigation": [...]`` here would mis-fire against the
+# design and force investigations to use only source-vocabulary, which
+# defeats the speculation-tolerant layer.
 PROSE_FIELDS_BY_TYPE = {
     "person": ["background", "top_relevance", "credibility_notes"],
     "event": ["description"],
@@ -60,12 +90,18 @@ PROSE_FIELDS_BY_TYPE = {
     "document": ["description"],
     "organization": ["description"],
     "location": ["description"],
+    "finding": ["description"],
 }
 
 # Per-entry prose fields by target type. Each tuple: (list_key,
 # field_name_within_entry). Pooled against the union of all
 # primary_sources (per entry's own source.path no longer scopes the
 # pool — see commentary in the lifted check).
+#
+# Finding `contradictions[].note` is in scope (synthesis content note
+# describing why the divergence is preserved). Investigation has no
+# per-entry prose-drift-checked surfaces — see the comment above
+# PROSE_FIELDS_BY_TYPE.
 PROSE_ENTRY_FIELDS_BY_TYPE = {
     "person": [
         ("vouching_chain", "attestation"),
@@ -82,6 +118,9 @@ PROSE_ENTRY_FIELDS_BY_TYPE = {
     "location": [
         ("ownership_timeline", "note"),
         ("top_scope_activity", "note"),
+    ],
+    "finding": [
+        ("contradictions", "note"),
     ],
 }
 
