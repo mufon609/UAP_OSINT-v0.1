@@ -151,41 +151,58 @@ non-text-native — the sibling is a contributor-produced clean
 transcription, visually verified against the source, with its own
 manifest entry + sha256.
 
-**Current corpus state.** 827 quotes across 144 unique source paths
-across 28 research artifacts (up from 508 / 64 / 16 at Phase F.1
-diagnostic — corpus has grown ~60%). The per-tier source counts in
-the closeout doc were Phase F.1 snapshots; counts re-derive at each
-audit-execution session.
+**Current corpus state** (2026-05-13). 881 quotes across 158 unique
+source paths across 32 research artifacts (up from 508 / 64 / 16 at
+Phase F.1 diagnostic — corpus has grown ~70%). The per-tier source
+counts in the closeout doc were Phase F.1 snapshots; counts re-derive
+at each audit-execution session.
 
 **Remaining work.**
 
-- **Tier 3 — transcript sources (auto-caption majority).** Audit
-  blocked on BACKLOG A1 (auto-caption-vs-audio convention
+- **Tier 3 — transcript sources (auto-caption majority).** 12 sources
+  / 84 quotes. Blocked on BACKLOG A1 (auto-caption-vs-audio convention
   decision). Phase E's primary-source principle didn't specify
   audio-source handling; three framings are sketched in the
   closeout doc; option 3 (hybrid by `transcript_provenance`) is
   the most principled and requires schema work.
-- **Tier 4 — HTML sources.** Extraction low-risk (tag-strip +
-  entity-decode handles nearly all cases). Batched spot-check
-  pattern across the source set.
-- **Tier 5 — PDF long-tail.** Government / news / FOIA / SEC
-  PDFs. Some pipelines cluster (Uintah parcel PDFs share an ORDS
-  portal pipeline — verify once, apply across); the rest are
-  one-by-one spot-checks.
+- **Tier 4 — HTML sources.** 77 sources / 203 quotes. Extraction
+  low-risk (tag-strip + entity-decode handles nearly all cases).
+  Batched spot-check pattern across the source set.
+- **Tier 5 — PDF long-tail.**
+  - **5a — text-native PDFs.** 52 sources / 176 quotes. Apply
+    Tier 2 three-step methodology (metadata → pdftotext suspect-
+    char scan → visual VLM check). Some pipelines cluster (Uintah
+    parcel PDFs share an ORDS portal pipeline — verify once, apply
+    across); the rest are one-by-one spot-checks.
+  - **5b — extraction-lossy PDFs.** 2 sources / 62 quotes (SASC
+    2023-04-19 + SASC 2024-11-19 transcripts). Siblings produced
+    pre-session; need verbatim-quote-against-sibling re-confirmation
+    plus visual quality verification of the existing siblings.
+  - **5c — ocr-scan PDFs.** 4 sources / 27 quotes remaining
+    (PPD-19 filing + foia-23-f-0905-doc-1/2 + blackvault-foia-24-f-
+    0894-emails). Siblings exist; need same verification pass as
+    Tier 5b. 2 ocr-scan PDFs (foia-23-f-0906 IPMO PWS, blackvault-
+    aaro-invitations 24-F-0266) shipped this session with full
+    sibling production; SD004 manifest hygiene also closed.
 - **Tier 6 — Closeout.** Aggregate findings across all tiers into
   the closeout doc; confirm follow-up BACKLOG entries are still
   appropriately scoped; close A2.
 
-**Findings to date** (Tiers 1+2). Aggregate contributor-drift rate
-across the audited 298 quotes: **0.67%** (6 corrections in Tier 1's
-211 quotes / 0 corrections in Tier 2's 87 quotes). Tier 1 was the
-worst-case segment of the corpus — high quote volume, known
-extraction-layer issue (`11‡→11½` Unicode mapping), and source
-complexity (54-page stenographic transcript with oral testimony +
-Q&A + submitted documents). Tier 2's 0% rate in contributor-
-authored short written testimonies is evidence that Tier 1's 1.4%
-standalone rate was the peak, not the baseline.
-**Projected remaining findings (Tiers 4+5):** 1–2 corrections.
+**Findings to date** (Tiers 1+2 + Tier 5 partial). Aggregate
+contributor-drift rate across the 310 audited quotes: **0.65%**
+(6 corrections in Tier 1's 211 quotes / 0 in Tier 2's 87 quotes /
+1 in this session's 12 Tier-5c quotes — david-grusch q157 carried
+two OCR character-confusions preserved from the original pdftotext
+extraction, `lAW`→`IAW` and `(0)`→`(O)`, that did not match the
+page-visible source content; surfaced during canonical-sibling
+production for blackvault-aaro-invitations 24-F-0266). The
+canonical sibling produced via VLM transcription per
+`meta/conventions.md`'s FOIA-email-release convention (DOCUMENT N
+markers, 8 enclosures) is what made the divergence visible —
+pdftotext-only auditing would have masked it (the textbook ocr-scan
+blind spot the audit exists to catch).
+**Projected remaining findings (Tiers 4+5a + Tier 5b/5c re-verify):**
+1–2 corrections.
 
 **Recommended sequence.** Tiers 4 + 5 first (HTML and PDF long-tail
 — extraction-track work, no convention decisions blocking). Tier 3

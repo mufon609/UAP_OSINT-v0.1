@@ -333,20 +333,116 @@ principle.
 
 ## Tier 4 — HTML sources (pending)
 
-28 sources, 78 quotes. HTML extraction is low-risk (tag-strip +
-entity-decode). Spot-check per source; run verbatim-quote check;
-surface findings. Batched execution expected.
+Re-derived 2026-05-13: 77 sources / 203 quotes (was 28 / 78 at Phase
+F.1 diagnostic — corpus has grown ~3x in HTML source count). HTML
+extraction is low-risk (tag-strip + entity-decode handles nearly all
+cases per the cross-script `clean_html_for_text` helper in
+`scripts/lib/_common.py`). Recommended pattern: one representative
+spot-check to establish extraction faithfulness, then a programmatic
+verbatim-quote sweep across the full HTML set. If the sweep is clean,
+Tier 4 closes in a single session.
 
 ---
 
-## Tier 5 — PDF long-tail (pending)
+## Tier 5 — PDF long-tail (partial — ocr-scan sub-tier advanced 2026-05-13)
 
-~17 sources, ~50 quotes. Includes 6 Uintah parcel PDFs (same
-dynamic ORDS portal pipeline — likely consistent extraction
-condition across all 6, check once, apply conclusion to all). Plus
-remaining government and news PDFs (AARO HRR, ODNI preliminary
-assessment, various FOIA responses, etc.). One-by-one or batched
-where pipeline shared.
+Re-derived 2026-05-13: corpus grew ~70% from Phase F.1; current
+Tier 5 scope is **60 sources / 277 quotes** (was ~17 / ~50 at
+diagnostic). Per-sub-tier breakdown:
+
+| Sub-tier | Sources | Quotes | State |
+|---|---:|---:|---|
+| 5a — text-native PDFs | 52 | 176 | pending — apply Tier 2 methodology |
+| 5b — extraction-lossy PDFs | 2 | 62 | siblings produced; need verification pass |
+| 5c — ocr-scan PDFs | 6 | 39 | partial — see below |
+
+### Tier 5c progress (2026-05-13)
+
+Investigation of BACKLOG A2 sibling state surfaced three defects on
+the 9 flagged non-text-native PDFs (after Tier 1+2):
+
+1. `government/foia-23-f-0906-sancorp-ipmo-pws.pdf` (ocr-scan; 4
+   cited quotes on ipmo + sancorp-consulting): no sibling on disk
+   or in manifest.
+2. `government/blackvault-aaro-invitations-to-grusch-24-F-0266.pdf`
+   (ocr-scan; 8 cited quotes on david-grusch + sean-kirkpatrick):
+   no sibling on disk or in manifest.
+3. `government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf`
+   (ocr-scan; 0 cited quotes — manifest-hygiene only): sibling on
+   disk but unregistered in manifest.
+
+All three resolved in commits 917346b + a9c9244:
+
+**foia-23-f-0906-sancorp-ipmo-pws.pdf — text-layer-pull sibling.**
+pdftotext `-layout` output used as base; all 21 pages visually
+verified against rendered images. Body content extracts faithfully;
+5 OCR character-confusions corrected in section headings and one
+Technical Exhibit cell (`Obiectives` → `Objectives`; `Oualitv
+Control` → `Quality Control`; `Recoenized Holidays` → `Recognized
+Holidays`; `1.6.16-7 Phase out Period` → `1.6.16 Phase out Period`;
+`reqiiirements stipulated in para 1.6.164` → `requirements
+stipulated in para 1.6.16`). Draft markup in the FOIA-released PWS
+(red strikethroughs, WNNCWA tracked-change comments) preserved
+verbatim — these are real document features, not OCR artifacts. All
+4 cited quotes cite clean body content; zero contributor-drift
+findings. Sibling sha256: `16bda707…`.
+
+**blackvault-aaro-invitations-to-grusch-24-F-0266.pdf — canonical
+VLM-transcription sibling.** Two-phase production:
+
+- Phase 1 (commit 917346b): pdftotext-base sibling; all 8 cited
+  quote body passages visually verified clean against rendered
+  pages (Kirkpatrick q36/q37 on Signal-chat screenshot pages 8-9;
+  Grusch q156-q161 on email-attachment pages 16-21). pdftotext-base
+  scope acknowledged that email-header metadata carried OCR
+  artifacts (scrambled `Sent:` dates, `Kirkpatrick` → `Kirknatrirk`,
+  iPad status-bar text) but documented that header artifacts don't
+  affect the verbatim-quote check, which substring-matches body
+  text only.
+
+- Phase 2 (commit a9c9244): replaced with canonical-quality
+  sibling structured per `meta/conventions.md`'s FOIA-email-release
+  convention. Page-by-page VLM visual read of all 29 page images;
+  clean transcription with 8 DOCUMENT N markers delimiting
+  enclosures (DOC 1 AARO MFR; DOC 2 Signal exchange Kirkpatrick ↔
+  Chris Mellon; DOC 3 iMessage exchange Kirkpatrick ↔ (b)(6); DOC
+  4 Grusch ↔ AARO email thread; DOC 5 internal "Dave Grusch"
+  thread; DOC 6 Grusch ↔ AARO thread continuation; DOC 7 ODNI
+  CAPCO-23-003 [Enclosure 2]; DOC 8 DoD SAPCO MFR [Enclosure 1]).
+  File shrunk 1442 raw pdftotext lines → 845 structured canonical
+  lines.
+
+  **One contributor-drift finding caught during canonicalization:**
+  david-grusch q157 carried two character-level OCR artifacts
+  preserved from the original pdftotext extraction —
+  `(lAW DODI 5205.11` (lowercase-L misread of capital-I "IAW")
+  and `HCS-Operations (0) Restricted` (digit-0 misread of
+  capital-O). Neither matched the page-visible content. Quote text
+  corrected; this is the textbook ocr-scan blind spot — both quote
+  text and pdftotext extract carried the same OCR corruption, so
+  the verbatim-quote check passed trivially despite the quote not
+  matching the original. The canonical sibling is what surfaced
+  the divergence; pdftotext-only auditing would have masked it.
+
+  Sibling sha256: `5674ba38…`.
+
+**SD004 manifest hygiene.** Existing page-1 sibling (`docs-house-gov-
+hhrg-118-go12-20241113-sd004.txt`) registered in manifest with
+sha256 `fa690c49…`. Zero quote impact (no quotes cite this source);
+hygiene only.
+
+### Tier 5c aggregate
+
+- 3 sources audited / 12 cited quotes; 1 contributor-drift finding
+  corrected (8.3% finding rate on this subset, but n is small;
+  q157's drift was preserved from the pre-A2 verification regime).
+- 4 ocr-scan PDFs remain (blackvault-foia-24-f-0894-emails,
+  foia-23-f-0905-doc-1/2, grusch-ppd-19-procedural-filing); all
+  already have siblings on disk + in manifest from prior work;
+  verification pass needed to confirm sibling quality + quote
+  re-validation.
+- Sibling-state diagnostic re-run after this session: **0 defects
+  remaining** on the 9 flagged non-text-native PDFs.
 
 ---
 
