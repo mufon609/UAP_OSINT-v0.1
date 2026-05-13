@@ -41,48 +41,10 @@ externally-blocked item ever surfaces (rare), reinstate the
 
 ## A. Priority sequence
 
-Items with ordering or coupling constraints. A1 and A2 retired
-2026-05-13 (Phase F corpus audit complete; tombstones below for
-ID-stable history). A3 is coupled to roadmap F.7 (finding renderer);
-A4 pairs with F.7. Pick up in this order; do not skip ahead without
-the upstream piece in place.
-
-### A1. Auto-caption-vs-audio confirmation discipline — RETIRED 2026-05-13
-
-Option 3 (hybrid by transcript provenance) selected and implemented.
-`transcript_provenance_values` enum added to `meta/schema.yaml`
-`manifest_entry` with values `stenographic | published-transcript |
-human-corrected-caption | auto-caption | unknown`. "Transcript
-provenance and audit discipline" section added to
-`meta/conventions.md` documenting the per-provenance verification
-path (human-produced classes are equivalent-footing primary sources;
-auto-caption sources are machine extractions handled with the same
-discipline as ocr-scan PDFs — naming_quirks for known artifacts,
-programmatic + contextual review, audio confirmation when
-anomalies surface, contributor-produced clean-text sibling when
-systemic drift is observed). All 16 transcript-format manifest
-entries classified as `auto-caption`. Tier 3 audit executed under
-the new discipline. Full audit trail in
-`meta/toolkit-notes/corpus-audit-2026-04.md` "Tier 3" section.
-
----
-
-### A2. Verified-verbatim marker removed; full-corpus source-integrity audit (Phase F) — RETIRED 2026-05-13
-
-Phase F audit complete: 881 audited quotes across 158 sources —
-every cited primary source in the corpus, including 5 native-text
-TXT/JSON exports covered by audit-by-format (Tier 5d). 9
-contributor-side findings + 1 manifest-metadata finding + 3
-documentation-completeness findings; all corrected. Schema
-evolution shipped: `extraction_type` enum (text-native | ocr-scan
-| extraction-lossy) for static sources; `transcript_provenance`
-enum (stenographic | published-transcript | human-corrected-caption
-| auto-caption | unknown) for transcript sources. Validator
-`.txt`-sibling preference generalized from `== ocr-scan` to
-`!= text-native`. Full audit trail in
-`meta/toolkit-notes/corpus-audit-2026-04.md`.
-
----
+Items with ordering or coupling constraints. A3 is coupled to
+roadmap F.7 (finding renderer); A4 pairs with F.7. Pick up in
+this order; do not skip ahead without the upstream piece in
+place.
 
 ### A3. Person-node Statements section — three reader-visibility problems on one data-model decision
 
@@ -232,47 +194,7 @@ the removal.
 
 Items that touch the renderer and naturally batch into a single
 polish pass — bundling reduces churn vs. shipping each as a
-separate touch. B1 and B3 retired 2026-05-13; tombstones below
-for ID-stable history.
-
-### B1. Artifact-attested nuance not reaching readers — RETIRED 2026-05-13
-
-Phase 1 (M1) + Phase 2 (M2) shipped:
-
-  - **M1** — Note column added to 14 list-section table renderers
-    in `scripts/build-from-research.py` (`render_affiliations`,
-    `render_relationships`, `render_org_relationships`,
-    `render_org_key_personnel`, `render_org_primary_contracts`,
-    `render_ownership_timeline`, `render_top_scope_activity`,
-    `render_location_relationships`, `render_program_involvement`,
-    `render_publication_record`, `render_vouching_chain`,
-    `_participant_row`, `render_witnesses_testimony`,
-    `render_transcript_speakers`). Word-budget check
-    (`scripts/checks/table_cell_word_budget.py`) extended to exempt
-    Note columns. The BACKLOG entry undercounted (listed 8;
-    actual was 14 — self-audit caught the 6 missed renderers).
-
-  - **M2** — `## Source-Form Notes` auto-renderer added (function
-    `render_source_form_notes` in `scripts/build-from-research.py`);
-    wired into all 7 body composers. Tables every `naming_quirks`
-    entry with `resolution: preserve-as-sic-in-quotes`; columns
-    Source Form / Canonical / Source / Note. Auto-suppressed when
-    no qualifying entries. Section renders on 25 of 32 nodes today;
-    7 nodes auto-suppress. `meta/conventions.md` OCR-scan +
-    transcript-provenance sections updated; the prose-flag
-    requirement demoted from mandatory to optional belt-and-
-    suspenders.
-
-  - **Phase 3 polish** (backlog-stub ghosting, end-only-period
-    rendering) dropped from scope per user direction.
-
-Surfaced and closed two Grusch-audit-era reader-visibility failure
-cases (PPD-19 OCR artifacts + USAF date reconciliation) at the
-structural level; future contributors no longer need per-node
-prose-flag workarounds for `.note` content or preserve-as-sic
-naming_quirks.
-
----
+separate touch.
 
 ### B2. `updated` frontmatter field — corpus-wide currency anchoring
 
@@ -315,11 +237,10 @@ C. Convention-only. Document in `meta/conventions.md` that "as of
    file, validated by a new check that reads `git log -1`. No schema
    change.
 
-**Relationship to retired BACKLOG B1.** Adjacent but distinct. B1
-was about artifact-attested nuance (`note` fields, preserve-as-sic
-forms) not reaching readers — shipped 2026-05-13. This entry is
-about prose-clause currency without a structural anchor. Both are
-reader-visibility issues.
+**Scope shape.** Distinct reader-visibility concern from the now-
+closed artifact-attested-nuance work (where `.note` content sat in
+YAML without reaching readers). This entry is about prose-clause
+currency without a structural anchor.
 
 **Priority.** Low. Not a correctness issue — the currency claim is
 already source-attested via the underlying primary sources; the
@@ -334,48 +255,6 @@ currency clauses.
 Surfaced: AARO web audit — auditor flagged an "as of {date}" clause
 as ambiguous between rolling-currency review and forward-projected
 boilerplate. Currently affects AARO; pattern likely recurs corpus-wide.
-
----
-
-### B3. Codify Key Passages ordering convention — RETIRED 2026-05-13
-
-Three rules landed in `meta/conventions.md` as a single new "Key
-Passages ordering" section, plus a schema-comment refresh on
-`quote_entry.statement_date`:
-
-  - **Rule 1** — chronological-by-`statement_date` declared the
-    corpus default for every quote-bearing list section (person
-    Statements, hearing Key Testimony, and universal Key Passages
-    on documents / transcripts / media / organizations /
-    locations). Previously documented only for person Statements
-    and hearing Key Testimony; now codified universally.
-
-  - **Rule 2** — population convention with per-type guidance.
-    People / organizations / events / transcripts: virtually
-    always populate (95-100% corpus coverage today). Documents:
-    populate when attested (40% coverage today, gap is legitimate
-    undated material). Locations: artifact-entry order is the
-    acceptable default when source quotes lack semantic dates
-    (0% coverage today). Mixed population on a single artifact
-    is the failure mode the convention warns against. The
-    optional validate-research.py warning add was deferred —
-    docs convention is sufficient as a contributor-discipline
-    guidance; revisit if drift surfaces.
-
-  - **Rule 3** — in-header epistemic-hedge pattern codified.
-    When a quote's evidentiary weight is meaningfully below
-    artifact median (claim-of-record, self-attested, secondary-
-    source, contested), the `significance` H3 header carries an
-    explicit hedge phrase. The TTSA q5 DeLonge-Podesta email is
-    the surfacing case (chronological promotion to position 1
-    over later SEC filings; hedge phrase keeps the order
-    chronological but inoculates against the reading as
-    endorsement). No schema change; contributor discipline at the
-    `significance` field.
-
-Schema comment on `quote_entry.statement_date` updated to
-reflect universal use (was: person-only sort surface; now: all
-quote-bearing sections sort surface).
 
 ---
 
@@ -440,61 +319,6 @@ the per-quote Verified row but don't share the trust-performance
 shape.
 
 ---
-
-### C6. Migrate residual `contracts[].value` analytical prose — RETIRED 2026-05-13
-
-c10.value and c11.value reduced to schema-conformant dollar
-strings; the analytical observations they carried did NOT migrate
-into `.note` as the BACKLOG-prescribed path suggested.
-
-**Why the deviation.** Both observations relied on contributor
-synthesis vocabulary ("systemic conflation", "denotes", "stores",
-"nominally", "ceiling", "floor", "gap", "unreconciled",
-"announcement-vs-ceiling", "exact figure") that's nowhere in
-either entry's `source.path` token pool — nor in any of the 10
-primary_sources on the artifact (broader description-level pool
-checked: same absent verdict). The prose-drift discipline doesn''t
-accommodate analytical-synthesis vocabulary that's about HOW
-sources encode data: the words for that meta-commentary are
-necessarily absent from the data itself.
-
-**What landed.**
-
-  - `c10.value`: `'$856,000,000 — good faith estimate amount,
-    aggregate across four BPA vendors.'` (clean label per schema
-    spec)
-  - `c10.note`: unchanged from pre-migration content (source-
-    attested narrative about the reevaluation + GAO-named vendors
-    + per-call-order scoping)
-  - `c11.value`: multi-source canonical figures retained with W5
-    field-name disambiguation ($78.5M USAspending ceiling +
-    $7.4M exercised + Arlo's "more than $85 million" press
-    statement)
-  - `c11.note`: unchanged from pre-migration content (source-
-    attested protest-history narrative)
-
-**Substance trade-off.** The c10 systemic-conflation framing is
-implicitly carried by the description's "for all BPAs, not Arlo''s
-individual limit" wording — reader still understands the
-aggregation. The c11 three-figure presentation in `value` lets the
-reader see the ceiling-vs-press gap directly; the explicit "press
-release is a floor; ≥$6.5M unreconciled" interpretive framing is
-lost. Both trade-offs preserve the underlying facts (figures +
-description context); only the 1-sentence contributor synthesis
-framing is gone.
-
-**Audit-discipline observation.** This is a known edge case where
-prose-drift discipline + analytical synthesis at the per-entry
-note level pull against each other. The discipline is right; the
-right home for meta-commentary about data encoding is either
-description (broader source pool, but vocabulary still didn''t
-help here) or a finding node spanning multiple entities — neither
-applies cleanly to single-entry observations. The fact that the
-substance survives (in description and in the figures themselves)
-is what makes "drop" the acceptable outcome here.
-
----
-
 ### C8. Quote.text leading-timestamp discipline — drift between in-text marker and actual quote-start
 
 The existing convention in
