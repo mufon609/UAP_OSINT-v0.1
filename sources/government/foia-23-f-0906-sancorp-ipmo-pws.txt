@@ -1,0 +1,833 @@
+                             PERFORMANCE WORK STATEMENT (PWS)
+                                        April 25,2022
+
+    Specialized and Sensitive Administrative, Security, Policy, Operations, and Analytic Support
+                Services to the Influence and Perception Management Office (IPMO)
+                Office of the Under Secretary of Defense for Intelligence and Security
+
+
+                                                     Part 1
+
+                                             General Information
+
+I. GENERAL:
+
+This is a non-personal services contract to provide specialized and sensitive administrative, security, policy,
+operations, and analytic, support to the Influence and Perception Management Office (IPMO) within the
+Office of the Under Secretary of Defense, Intelligence and Security (OUSD(I&S)). The Government shall
+not exercise any supervision or control over the contract service providers performing the services herein.
+Such contract service providers shall be accountable solely to the Contractor who, in turn is responsible to
+the Government.
+
+1.1 Description of Services/Introduction: The contractor shall provide all personnel, equipment, supplies,
+facilities, transportation, tools, materials, supervision, and other items and non-personal services necessary
+to perform specialized and sensitive administrative, security, policy, operational, and analytic support to the
+IPMO as defined in this Performance Work Statement except for those items specified as government
+furnished property and services. The contractor shall perform to the standards in this contract.
+
+1.2 Background: The Under Secretary of Defense for Intelligence and Security (USD(I&S)) is the principal
+staff assistant and advisor to the Secretary of Defense and the Deputy Secretary of Defense on intelligence,
+counterintelligence, security, sensitive activities, and other intelligence-related matters. The USD(I&S)
+exercises the Secretary of Defense's authority, direction, and control over the Defense Agencies and DoD
+Field Activities that are Defense intelligence, counterintelligence, or security Components and exercises
+planning, policy, and strategic oversight over all DoD intelligence, counterintelligence, and security policy,
+plans, and programs. Among other organizations, the USD(I&S) is supported by the Director for Defense
+Intelligence (Collection and Special Programs) (DDI (C&SP)), who is supported by the Director of the
+IPMO for all influence and perception management related matters.
+
+1.3 Objectives: The IPMO will develop broad thematic influence guidance focused on key adversaries;
+promulgate competitive influence strategies focused on specific defense issues, which direct subordinate
+planning efforts for the conduct of influence-related activities; and fill existing gaps in policy, oversight,
+governance, and integration related to influence and perception management matters.
+
+1.4 Scope: The contractor shall provide specialized and sensitive administrative, security, policy,
+operational, and analytic, support including the development of strategy and policy, and the conduct of
+oversight, governance, and integration related to influence and perception management matters conducted
+by all DoD components. The contractor shall provide wide ranging specialized and sensitive administrative
+and operational program support at the direction of the Director of the IPMO.
+
+1.5 Period of Performance: The period of performance shall be for one (1) Base Period of 12 months.
+
+1.6 General Information
+
+1.6.1 Quality Control: The contractor shall develop and maintain an effective quality control program to
+ensure services are performed in accordance with this PWS. The contractor shall develop and implement
+procedures to identify, prevent, and ensure non-recurrence of defective services. The contractor's quality
+control program is the means by which he assures himself that his work complies with the requirement of
+the contract. The contractor will deliver a quality assurance plan (QAP) to the COR within 30 days after
+contract award. After review by the COR and acceptance of the quality control plan, the contractor shall
+receive the contracting officer's acceptance in writing of any proposed change to his QC system.
+
+The contractor will provide a monthly status report (MSR) no later than the 10th of every month accurately
+reflecting progress and a summary status of the tasks outlined in paragraph 5. The MSR shall identify
+accomplishments, address any issues encountered, and include a table quantifying cumulative number of
+actions that have been processed (e.g. meetings, policy revisions, reviews, inspections, reports, briefmgs,
+staff packages, administrative transactions, site visits, and any other reports or activities that demonstrate
+performance of the tasks listed under paragraph 5 and progress toward the objectives in paragraph 1.3).
+The MSR shall also include:
+         •         Description of work completed and plans for the next two months
+         •        Summary of Meetings between Contract Managers/PMs and the COR or other
+                   GPOC/Program Leads.
+         •         Resource status
+         •         Manning Status and related metrics.
+         •        Travel conducted/projected
+The MSR shall be provided in Microsoft word format and shall include the items listed above and other
+quality measures/metrics from the QAP or other information as requested by the COR.
+
+1.6.2 Quality Assurance: The government shall evaluate the contractor's performance under this contract
+in accordance with the Quality Assurance Surveillance Plan (QASP). This plan is primarily focused on
+what the Government must do to ensure that the contractor has performed in accordance with the
+performance standards. It defines how the performance standards will be applied, the frequency of
+surveillance, and the minimum acceptable defect rate(s).
+
+1.6.3 Recognized Holidays: Contractor personnel are not customarily expected to work on holidays, but
+holiday work is possible, subject to advance scheduling with the contractor. Recognized Federal holidays
+are as follows:
+
+New Year's Day                                         Labor Day
+Martin Luther King Jr.'s Birthday                      Columbus Day
+President's Day                                        Veteran's Day
+Memorial Day                                           Thanksgiving Day
+Juneteenth Independence Day                            Christmas Day
+Independence Day
+
+1.6.4 Hours of Operation: The contractor is responsible for conducting business during OUSD(I&S) normal
+work hours from 8:30a.m. to 5:00p.m. Monday thru Friday. Contractor personnel typically work eight (8)
+hours per day, 40 hours per week, with starting times normally no earlier than 6:00 a.m. and end times
+normally no later than 6:00 p.m. as authorized by the Director of the IPMO. This excludes Federal holidays
+or when the Government facility is closed due to local or national emergencies, administrative closings, or
+similar Government directed facility closings. For other than firm fixed price contracts, the contractor will
+not be reimbursed when the government facility is closed for the above reasons. The Contractor must at all
+times maintain an adequate workforce for the uninterrupted performance of all tasks defined within this PWS
+when the Government facility is not closed for the above reasons. When hiring personnel, the Contractor
+shall keep in mind that the stability and continuity of the workforce are essential.
+
+1.6.4.1 When the Government grants administrative leave to Government employees, or is closed as a
+result of inclement weather, potentially hazardous conditions, or other special circumstances, the
+Contractor's program manager and/or on-site manager shall coordinate with the Contracting Officer and/or
+Contracting Officer Representative (COR) on the work status of personnel, to the extent that the overall
+performance is not adversely impacted.
+1.6.5 Place of Performance: The work to be performed under this contract will be performed at Crystal
+City, Arlington, VA; Pentagon, Arlington, VA; Mark Center, Alexandria, VA; or other government sites
+within the National Capital Region. Telework is generally not appropriate for the tasks associated with this
+contract but may be considered on a situational/ad hoc basis at an approved alternate worksite. Telework
+must be authorized in writing by the COR, DDI Chief of Staff, and the senior government program
+manager. The contractor will highlight in monthly status reporting telework hours and activities for
+contractor personnel that conduct telework on behalf of the government.
+
+1.6.6 Type of Contract: The government will award a hybrid contract that consist of Labor Hour and Time
+and Materials (T&M)feentrnet.
+
+1.6.7 Security Requirements: The contractor shall have a Top Secret Facility Clearance from Defense
+Counterintelligence & Security Agency (DCSA) at the time of proposal submission, and maintain the level
+for the life of the contract. The Contractor shall fully comply with all security requirements established for
+this Contract in the associated "Contract Security Classification Specification" (DoD Form 254). All tasks
+shall be conducted in full compliance with DoD security regulations. All personnel are required to have a
+Top Secret/Sensitive Compartmented Information (SCI) clearance with eligibility for immediate access
+prior to performing work on this contract. Personnel must also maintain eligibility for access to Special
+Access Programs (SAP) for all tasks. The contractor personnel must maintain this level of security for the
+life of the contract.
+
+1.6.7.1 SCI eligibility, as defined by the Intelligence Community Directive (ICD) 704, Eligibility for
+Access to SCI, and reinforced in the DoD Manual 5105.21, Volume 3 is considered "in scope" for
+personnel security investigations (Tier 5, Tier 5 Reinvestigation) and access determinations that are void of
+deviations, conditions, or waivers. ICD 704.4 defines "in scope investigations" as those that are less than
+seven years old, without a 24 month break in service. To preserve reciprocity, the subject reinvestigation
+must be in progress within seven years from the completion of the previous investigation.
+
+1.6.7.2 Security policy for the protection of SAP information will follow the provisions of DoD Directive
+5205.07, Special Access Program Policy, and DoD Instruction 5205.11, Management, Administration, and
+Oversight of DoD SAPs, including associated DoD Manuals 5205.07, Volumes 1 through 4, and applies on
+all OUSD(I&S) SAP efforts.
+
+Continuous Evaluation (CE): The OUSD(I) Memorandum, "Department of Defense Guidance for the
+Implementation of Measures to Reduce the Federal Government's Background Investigation Inventory in
+Fiscal Year 2018", July 27,2018 allows for the deferment of investigations and enrollment in CE. If a
+subject appears out of scope consistent with ICD 704, CE enrollment can be confirmed in the Defense
+Information System for Security (DISS) or Scattered Castles (SC). Once confirmed, the subject's most
+recent SCI eligibility applies.
+
+The Contractor shall submit a security nomination package to the COR for the personnel assigned to the
+task order for OUSD(I&S) Security verification prior to performing work on this contract.
+
+In the event that required special accesses are not adjudicated within 45 days for any individual assigned to
+this task order, the Government will require the Contractor to remove the individual from this task order
+and provide a replacement meeting the requirements of this PWS.
+
+All contractor personnel shall be required to sign a Classified Information Non-Disclosure Agreement (SF-
+312).
+
+1.6.7.1 Physical Security: The contractor shall be responsible for safeguarding all government equipment,
+information and property provided for contractor use. At the close of each work period, government
+facilities, equipment, and materials shall be secured.
+
+1.6.7.2 Key Control: The Contractor shall establish and implement methods of making sure all keys/key
+cards issued to the Contractor by the Government are not lost or misplaced and are not used by
+unauthorized persons. NOTE: All references to keys include key cards. No keys issued to the Contractor
+by the Government shall be duplicated. The Contractor shall develop procedures covering key control that
+shall be included in the Quality Control Plan. Such procedures shall include turn-in of any issued keys by
+personnel who no longer require access to locked areas. The Contractor shall immediately report any
+occurrences of lost or duplicate keys/key cards to the Contracting Officer.
+
+1.6.7.2.1. In the event keys, other than master keys, are lost or duplicated, the Contractor shall, upon
+direction of the Contracting Officer, re-key or replace the affected lock or locks; however, the Government,
+at its option, may replace the affected lock or locks or perform re-keying. When the replacement of locks
+or re-keying is performed by the Government, the total cost of re-keying or the replacement of the lock or
+locks shall be deducted from the monthly payment due the Contractor. In the event a master key is lost or
+duplicated, all locks and keys for that system shall be replaced by the Government and the total cost
+deducted from the monthly payment due the Contractor.
+
+1.6.7.2.2. The Contractor shall prohibit the use of Government issued keys/key cards by any persons other
+than the Contractor's employees. The Contractor shall prohibit the opening of locked areas by Contractor
+employees to permit entrance of persons other than Contractor employees engaged in the performance of
+assigned work in those areas, or personnel authorized entrance by the Contracting Officer.
+
+1.6.7.3 Lock Combinations: Contractor shall establish and implement methods of ensuring that all lock
+combinations are not revealed to unauthorized persons. The Contractor shall ensure that lock combinations
+are changed when personnel having access to the combinations no longer have a need to know such
+combinations. These procedures shall be included in the Contractor's Quality Control Plan.
+
+1.6.8 Post Award Conference/Periodic Progress Meetings: The Contractor agrees to attend any post award
+conference convened by the contracting activity or contract administration office in accordance with
+Federal Acquisition Regulation Subpart 42.5. The contracting officer, Contracting Officers Representative
+(COR), and other Government personnel, as appropriate, may meet periodically with the contractor to
+review the contractor's performance. At these meetings the contracting officer will apprise the contractor
+of how the government views the contractor's performance and the contractor will apprise the Government
+of problems, if any, being experienced. Appropriate action shall be taken to resolve outstanding issues.
+These meetings shall be at no additional cost to the government.
+
+1.6.9 Contracting Officer Representative (COR): The COR will be identified by separate letter. The COR
+monitors all technical aspects of the contract and assists in contract administration The COR is authorized
+to perform the following functions: assure that the Contractor performs the technical requirements of the
+contract: perform inspections necessary in connection with contract performance: maintain written and
+verbal communications with the Contractor concerning technical aspects of the contract: issue written
+interpretations of technical requirements, including Government drawings, designs, specifications: monitor
+Contractor's performance and notifies both the Contracting Officer and Contractor of any deficiencies;
+coordinate availability of government furnished property, and provide site entry of Contractor personnel. A
+letter of designation issued to the COR, a copy of which is sent to the Contractor, states the responsibilities
+and limitations of the COR, especially with regard to changes in cost or price, estimates or changes in
+delivery dates. The COR is not authorized to change any of the terms and conditions of the resulting order.
+
+1.6.10 The contractor shall provide an on-site contract task lead who shall be responsible for the
+performance of the work. The name of this person and an alternate who shall act for the contractor when
+the task lead is absent shall be designated in writing to the COR. The on-site contract task lead or alternate
+shall have full authority to act for the contractor on all contract matters relating to daily operation of this
+contract. The on-site contract task lead or alternate shall be available between 0900 and 1500 hours,
+Monday thru Friday except Federal holidays or when the government facility is closed for administrative
+reasons.
+
+1.6.11 Key Personnel: Before replacing any individual designated as Key by the Government, the
+Contractor shall notify the Contracting Officer no less than 10 business days in advance, submit written
+justification for replacement, and provide the name and qualifications of any proposed substitute(s). All
+proposed substitutes shall possess qualifications equal to or superior to those of the Key person being
+replaced, unless otherwise approved by the Contracting Officer. The Contractor shall not
+replace Key Contractor personnel without written approval from the Contracting Officer and
+Contracting Officer Representative (COR). The following personnel are considered key personnel by the
+government: Senior Executive Administrator; Senior Administrative Operations Manager; Senior
+Operations Specialist/Contract Task Lead; Senior Special Security and Compartmented Program Specialist;
+and Senior Operations Specialist. Qualifications of select key personnel are listed below:
+
+1.6.11.1 Senior Administrative Operations Manager (PWS Task 5.3)
+
+Required Education and Certification:
+•  Degree: Bachelor's degree from a regionally accredited institution
+
+Preferred Education and Certification:
+•   Degree: Master's degree from a regionally accredited institution
+•   Certification: Project Management or Program Management Professional
+•   Certification: Lean Six Sigma Green or Black Belt
+
+Required Skills and Relevant Experience:
+•  Active IS security clearance with immediate SCI eligibility upon award
+•  Experience with working in a fast-paced, dynamic environment with tight deadlines and competing
+   requirements with organizational, planning, and time management responsibilities.
+•  Senior level operations management, administrative management, or project management experience
+   within the past five years.
+
+Preferred Skills and Relevant Experience:
+•   Minimum of 5-10 years of operations management, administrative management, or project
+    management experience.
+•   Strong written and oral communications skills. Experience identifying stakeholders, fostering           Commented (1/1iNNCVJA(1]: This needs to be removed as
+    collaboration, leading groups, developing and advocating positions, and negotiating compromises in a    can't assess strong written and oral communication skills in a
+    multifinictional environment.                                                                           vendor resume.
+•   Ability to develop and maintain personal and professional contacts with senior civilian and military
+    leaders and officials within DoD, the IC, interagency, National Security council, executive branch
+    appointees, members of Congress and their respective staffs, and other government agencies.
+•   Knowledge and experience with the Planning, Program, Budgeting, and Execution (PPBE) phases of
+    the DoD budget.
+•   Knowledge and experience with Operation & Maintenance and Research, Development, Test &
+    Evaluation appropriations.
+
+1.6.11.2 Senior Operations Specialist and Contract Task Lead (PWS Task 5.4)
+
+Required Education and Certification:
+•  Degree: Bachelor's degree from a regionally accredited institution
+
+Preferred Education and Certification:
+•   Degree: Master's degree from a regionally accredited institution
+•   Certification: Project Management or Program Management Professional
+•   Certification: Lean Six Sigma Green or Black Belt
+
+Required Skills and Relevant Experience:
+•  Active TS security clearance with immediate SCI eligibility upon award
+•  Minimum of 2 years of senior level operations management, administrative management, or project
+   management experience.
+•  Minimum 2 years' experience leading, directing, managing, or supervising subordinates.
+•   Experience working in a fast-paced, dynamic environment with tight deadlines and competing
+    requirements with organizational, planning, and time management responsibilities.
+
+Preferred Skills and Relevant Experience:
+•   Minimum of 5 years of senior level operations management, administrative management, or project
+    management experience.
+•   Knowledge of DoD, Intelligence Community (IC), and interagency organizations and their functional
+    relationships, programs, and policies.
+•   Experience in and knowledge of policy development, program oversight, guidance, capabilities
+    development, and resourcing requirements.
+•   Ability to support management and oversight of sensitive DoD and IC compartmented programs.
+•   Strong written and oral communications skills. Have the ability to identify stakeholders, foster          Commented [ANNNCVVA(2]: See previous comment
+    collaboration, lead groups, develop and advocate positions, and negotiate compromises in a
+    multifunctional environment.
+•   Ability to develop and maintain personal and professional contacts with senior civilian and military
+    leaders and officials within DoD, the IC, interagency, National Security council, executive branch
+    appointees, members of Congress and their respective staffs, and other government agencies.
+•   Experience in leading groups, negotiating compromises, and influencing key leaders, customers and
+    stakeholders involving problems or public policy issues that have great sensitivity, including national
+    or international consequence.
+•   Knowledge and experience with the Planning, Program, Budgeting, and Execution (PPBE) phases of
+    the DoD budget.
+•   Knowledge and experience with Operation & Maintenance and Research, Development, Test &
+    Evaluation appropriations.
+
+1.6.11.3 Senior Operations Specialist (PWS Task 5.6)
+
+Required Education and Certification:
+•  Degree: Bachelor's degree from a regionally accredited institution
+
+Preferred Education and Certification:
+•   Degree: Master's degree from a regionally accredited institution
+•   Certification: Project Management or Program Management Professional
+•   Certification: Lean Six Sigma Green or Black Belt
+
+Required Skills and Relevant Experience:
+•  Active TS security clearance with immediate SCI eligibility upon award
+•  Senior level operations management, administrative management, or project management experience
+   within the past five years.
+
+Preferred Skills and Relevant Experience:
+•   Minimum of 5 years of senior level operations management, administrative management, or project
+    management experience.
+•   Knowledge of DoD, Intelligence Community (IC), and interagency organizations and their functional
+    relationships, programs, and policies.
+•   Experience in and knowledge of policy development, program oversight, guidance, capabilities
+    development, and resourcing requirements.
+•   Experience supporting management and oversight of sensitive DoD and IC compartmented programs.
+•   Experience working in a fast-paced, dynamic environment with tight deadlines and competing
+    requirements with organizational, planning, and time management responsibilities.
+•   Strong written and oral communications skills. Have the ability to identify stakeholders, foster          Commented [WNNCWA(3]: See previous comment
+    collaboration, lead groups, develop and advocate positions, and negotiate compromises in a
+    multifunctional environment.
+•   Ability to develop and maintain personal and professional contacts with senior civilian and military
+    leaders and officials within DoD, the IC, interagency, National Security council, executive branch
+    appointees, members of Congress and their respective staffs, and other government agencies.
+•   Experience leading groups, negotiating compromises, and influencing key leaders, customers and
+    stakeholders involving problems or public policy issues that have great sensitivity, including national
+    or international consequence.
+•   Knowledge and experience with the Planning, Program, Budgeting, and Execution (PPBE) phases of
+    the DoD budget.
+•   Knowledge and experience with Operation & Maintenance and Research, Development, Test &
+    Evaluation appropriations.
+
+1.6.12 Identification of Contractor Employees: All contract personnel attending meetings, answering
+Government telephones, and working in other situations where their contractor status is not obvious to third
+parties are required to identify themselves as such to avoid creating an impression in the minds of members
+of the public that they are Government officials. They must also ensure that all documents, reports, and
+correspondence (e.g. email) produced by contractors are suitably marked as contractor products or that
+contractor participation is appropriately disclosed.
+
+1.6.13 Contractor Travel: In accordance with FAR 31.205-46, Travel Cost, the contractor shall provide
+travel in support of this contract. The contractor shall provide a written request to the Contracting Officer
+Representative (COR) for approval prior to making any travel arrangements. Requests for travel shall
+include the name of the person(s) traveling, travel destination, dates of travel, mode of transportation, and
+estimated costs for travel. All travel must be pre-approved in writing by the COR prior to purchase of any
+tickets and commencement of travel. The Contractor shall be reimbursed for actual allowable, allocable,
+and reasonable travel cost incurred during performance efforts in accordance with FAR 31.205-46.
+Contractor travel will be a Time-and-Material CLIN.                                                               Commented DNNNCVJA(4]: I've added this language as
+                                                                                                                  we need to ensure the contractor is aware of the regulation
+1.6.13.1Contractor personnel may be required to travel CONUS, OCONUS, and within the National                     that
+Capital Region (NCR) during the performance of this contract to attend meetings, conferences, training,
+staff assistance visits, and liaison support. Contractor will be authorized travel expenses consistent with the
+substantive provisions of the Federal Travel Regulation (F3TR) and the limitation of funds specified in this
+contract. All travel requires Government approval/authorization and must be authorized in advance by the
+COR. Contractor travel within 50 miles of the NCR is not considered reimbursable.
+
+1.6.14 Other Direct Costs: Contractor will be required to provide parking to all IPMO employed,
+assigned, or detailed personnel when the Director of the IPMO determines that additional parking
+facilities or accesses are necessary to avoid a significant impairment of the IPMO's operating efficiency.
+The contactor will submit a parking plan and quote prior to payment for approval by the IPMO
+Director. The total cost for parking shall not exceed $35,000.00.                                                 Commented 1111iNNCVVA(5): Per my initial comments
+                                                                                                                  and our meeting, this section was to pay for contractor
+                                                                                                                  parking (which I don't believe we should be spelling out
+1.6.15 Organizational Conflict of Interest: Contractor and subcontractor personnel performing work under          specifically, but i) This reads as we're giving parking to
+this contract may receive, have access to or participate in the development of proprietary or source              Government employee, and we can't do that. We discussed
+selection information (e.g., cost or pricing information, budget information or analyses, specifications or       this matter in the meeting with Legal. This reads unclearly.
+work statements, etc.) or perform evaluation services which may create a current or subsequent                    This needs to be updated. reads u
+Organizational Conflict of Interests (OCI) as defined in FAR Subpart 9.5. The Contractor shall notify the
+Contracting Officer immediately whenever it becomes aware that such access or participation may result in
+any actual or potential OCI and shall promptly submit a plan to the Contracting Officer to avoid or mitigate
+any such OCI. The Contractor's mitigation plan will be determined to be acceptable solely at the discretion
+of the Contracting Officer and in the event the Contracting Officer unilaterally determines that any such
+OCI cannot be satisfactorily avoided or mitigated, the Contracting Officer may affect other remedies as he
+or she deems necessary, including prohibiting the Contractor from participation in subsequent contracted
+requirements which may be affected by the OCI.
+
+In addition to the NDA required as a condition of access to classified information (para 1.6.7.), contractor
+personnel engaged in delivering support services to OUSD(I&S) will sign a NDA to protect and prevent
+access to and disclosure of nonpublic information
+
+
+1.6.16 Phase out Period: The Contractor shall provide a phase-out plan within sixty (60) days prior to
+expiration of this contract. The Contractor shall maintain complete documentation accessible to designated
+Government representatives as the Government directs. The Contractor will work with Government
+personnel and the incoming contractor to transfer knowledge, information and documentation for all
+projects and tasks related to this contract.
+
+The information and documentation to be transferred includes but is not limited to:
+•   Historical Files
+•   Current Work/Staff Packages
+•   File Management Plan
+•   SOPs/TTPs developed or maintained by the contractor.
+•   Assessment of potential transition risks, issues, and mitigation strategies.                                 Commented [VVNNCWA(61: OUSDI stated they don't
+                                                                                                                 have a Phase In/Phase Out plan. If we're going to keep it,
+1.6.17 Limitation on Subcontracting Reporting: The contractor shall comply with FAR 52.219-14,                   then we need to ensure we have FAR 52.237-3, Continuity
+Limitation of Subcontracting that's listed in the contract, and submit yearly report at the end of each period   of Services clause in the contract.
+of performance.                                                                                                  Formatted: Indent Left: 0"
+                                                PART 2
+                                       DEFINITIONS & ACRONYMS
+
+2. DEFINITIONS AND ACRONYMS:
+
+2.1. DEFINITIONS:
+
+2.1.1. CONTRACTOR. A supplier or vendor awarded a contract to provide specific supplies or service to
+the government. The term used in this contract refers to the prime.
+
+2.1.2. CONTRACTING OFFICER. A person with authority to enter into, administer, and or terminate
+contracts, and make related determinations and findings on behalf of the government. Note: The only
+individual who can legally bind the government.
+
+2.1.3. CONTRACTING OFFICER'S REPRESENTATIVE (COR). An employee of the U.S. Government
+appointed by the contracting officer to administer the contract. Such appointment shall be in writing and
+shall state the scope of authority and limitations. This individual has authority to provide technical
+direction to the Contractor as long as that direction is within the scope of the contract, does not constitute a
+change, and has no funding implications. This individual does NOT have authority to change the terms and
+conditions of the contract.
+
+2.1.4. DEFECTIVE SERVICE. A service output that does not meet the standard of performance
+associated with the Performance Work Statement.
+
+2.1.5. DELIVERABLE. Anything that can be physically delivered, but may include non-manufactured
+things such as meeting minutes or reports.
+
+2.1.6. KEY PERSONNEL. Contractor personnel that are evaluated in a source selection process and that
+may be required to be used in the performance of a contract by the Key Personnel listed in the PWS. When
+key personnel are used as an evaluation factor in best value procurement, an offer can be rejected if it does
+not have a firm commitment from the persons that are listed in the proposal.
+
+2.1.7. PHYSICAL SECURITY. Actions that prevent the loss or damage of Government property.
+
+2.1.8. QUALITY ASSURANCE. The government procedures to verify that services being performed by
+the Contractor are performed according to acceptable standards.
+
+2.1.9. QUALITY ASSURANCE Surveillance Plan (QASP). An organized written document specifying
+the surveillance methodology to be used for surveillance of contractor performance.
+
+2.1.10. QUALITY CONTROL. All necessary measures taken by the Contractor to assure that the quality
+of an end product or service shall meet contract requirements.
+
+2.1.11. SUBCONTRACTOR. One that enters into a contract with a prime contractor. The Government
+does not have privity of contract with the subcontractor.
+
+2.1.12. WORK DAY. The number of hours per day the Contractor provides services in accordance with
+the contract.
+
+2.1.12. WORK WEEK. Monday through Friday, unless specified otherwise.
+
+2.2. ACRONYMS:
+
+ACOR                        Alternate Contracting Officer's Representative
+BCTF                        Boards, Commissions, and Task Forces
+CFR           Code of Federal Regulations
+CONUS         Continental United States (excludes Alaska and Hawaii)
+COR           Contracting Officer Representative
+COTR          Contracting Officer's Technical Representative
+COTS          Commercial-Off-the-Shelf
+DD Form 254   Department of Defense Contract Security Requirement List
+DFARS         Defense Federal Acquisition Regulation Supplement
+DMDC          Defense Manpower Data Center
+DOD           Department of Defense
+EM            Enterprise Management Directorate
+FAR           Federal Acquisition Regulation
+HIPAA         Health Insurance Portability and Accountability Act of 1996
+IPM0          Influence and Perception Management Office
+KO            Contracting Officer
+OCI           Organizational Conflict of Interest
+OCONUS        Outside Continental United States (includes Alaska and Hawaii)
+ODC           Other Direct Costs
+OUSD(I&S)     Office of the Under Secretary of Defense for Intelligence & Security
+PIPO          Phase-In/Phase-Out
+POC           Point of Contact
+PRS           Performance Requirements Summary
+PWS           Performance Work Statement
+QA            Quality Assurance
+QAP           Quality Assurance Program
+QASP          Quality Assurance Surveillance Plan
+QC            Quality Control
+QCP           Quality Control Program
+TE            Technical Exhibit
+WHS           Washington Headquarters Services
+                                     PART 3
+              GOVERNMENT FURNISHED PROPERTY, EQUIPMENT, AND SERVICES
+
+3. GOVERNMENT FURNISHED ITEMS AND SERVICES: Basic facilities such as
+work space and its associated operating requirements (i.e., phones, desks, utilities, information technology,
+and consumable and general purpose office supplies) will be provided while working in Government
+facilities. The Government will provide information, material and forms unique to the Government for
+supporting the task. All Government unique information related to this requirement, which is necessary for
+Contractor performance, will be made available to the Contractor.
+                                         PART 4
+                         CONTRACTOR FURNISHED ITEMS AND SERVICES
+
+4. CONTRACTOR FURNISHED ITEMS AND RESPONSIBILITIES:
+
+4.1 General: The Contractor shall furnish all supplies, equipment, facilities and services required to
+perform work under this contract that are not listed under Section 3 of this PWS.
+                                                PART 5
+                                            SPECIFIC TASKS
+
+5. Specific Tasks:
+
+5.1. Basic Services. The contractor shall provide services for specialized and sensitive administrative,
+security, policy, operational, and analytic, support to the IPMO. The contractor shall perform the tasks
+listed below.
+
+5.2. Executive Administrative Support (Senier—gweative-Administrative-Supportr I-FTE)                        Commented DIVNNCVJA(7]: We don't need to identify
+In support of the Influence and Perception Management Office, the contractor shall:                          the number of FTEs at each task title. The number of FTEs
+•    Serve as the front facing point of contact for the IPMO, ensuring external engagements are              should be identified in the estimated workload table.
+     accomplished in a timely and professional manner.
+•    Maintain IPMO leadership's daily calendars, and arrange meetings, conferences, and video-
+     teleconferences to include actual meeting management, recording minutes, and maintaining invitations
+     and attendee contact rosters.
+•    Prepare and oversee travel arrangements for IPMO personnel, assist with developing travel reports and
+     travel vouchers ensuring reimbursement for expenses incurred, and assist with acquisition and renewal
+     of parking permits.
+•    Review, monitor, and report the status of action item, activities, and products using the
+     Correspondence and Task Management System (CATMS) and Joint Staff Action Processing (JSAP)
+     System.
+•    Answer phones, maintain office files and the office filing system, and track action items in the
+     OUSD(I&S) suspense portal; use knowledge of administrative management, automation equipment,
+     and/or various software packages to input, retrieve, compile, and manage information.
+
+5.3. Administrative Operations Management Support (Senior Administrative Operations Manager, 1
+FTE — Key Personnel)                                                                                         Commented [VVNNCVVA(8]: See previous comment.
+In support of the Influence and Perception Management Office, the contractor shall:
+•    Provide support to IPMO personnel for all required correspondence actions (e.g. formal letters,
+     memorandum, read-ahead briefing/meeting packages, activity reports, senior leadership reports).
+     Tasks may include technical writing/editing, editorial consultation, proofreading, or overall
+     documentation review.
+•    Provide recommendations for increased efficiency and effectiveness in the conduct of strategy
+     development, planning, policy development, oversight, and governance regarding all IPMO assigned
+     authorities, roles, and responsibilities.
+•    Support IPMO budget and cost analysis activities including, monitoring resources allocated to IPMO,
+     providing advice on options available to IPMO, and preparing budget related matters for DIR IPMO
+     review and decision. The Contractor may also be required to coordinate with OUSD(I&S) Budget
+     officials external to IPMO to inform Dir IPMO decisions and recommendations.
+•    Provide administrative transaction and management support for office related facilities, furniture,
+     communications, and/or information technology requirements (e.g. submit requests and coordinate
+     work orders approved by IPMO for support services).
+•    Support IPMO with external engagements, including the Executive Office of the President, National
+     Security Council, Congress, Military Departments, Combatant Commands, Defense Intelligence
+     Components, OSD Components, non-DoD Federal Departments and Agencies, and Foreign Partners.
+
+5.4. Policy, Operations, Analytic and Contract Task Lead Support (Senior Operations Specialist/
+Contract Task Lead, 1 FTE — Key Personnel)                                                                   Commented l'INNNCWA(9]: See previous comment.
+In support of the Influence and Perception Management Office, the contractor shall:
+•    Serve as the primary contractor point of contact for IPMO leadership regarding contractor personnel
+     related issues, including serving as an interlocutor with the contract Program Manager.
+•    Assist IPMO leadership with the assignment of contractor personnel required to accomplish key tasks
+     identified by IPMO leadership.
+•   Ensure timeliness and accuracy of deliverables associated with all tasks listed in Para 5 of the PWS
+    consistent with the performance requirements in TECHNICAL EXHIBIT 1.
+•   Assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD
+    influence, deception, and perception management related operations, activities, and investments.
+•   Assist IPMO leadership in the conduct of oversight and governance, to include staff assistance visits
+    and compliance inspections, for DoD influence, deception, and perception management related
+    operations, activities, and investments.
+•   Develop and coordinate staff packages that include time-sensitive requirements for IPMO leadership to
+    enable DoD influence, deception, and perception management related operations, activities, and
+    investments.
+•   Develop and maintain positive working relationships with counterparts across the DoD, including the
+    Joint Staff, other OSD organizations, DoD Components, Military Departments, and Combatant
+    Commands.
+•   Produce and disseminate reports and briefmgs that detail DoD influence, deception, and perception
+    management related operations, activities, and investments for Congress and Senior Executive Branch
+    officials.
+
+5.5. Special Security and Compartmented Program Support (Senior Special Security and Special
+Access Security Manager, I FIE)                                                                                 Commented [INNNCWA(10]: See previous comment.
+In support of the Influence and Perception Management Office, the contractor shall:
+•    Serve as the Contract Program Security Officer (CPSO) and subject matter expert for special security
+     and special access program support in a sensitive compartmented information facility (SCIF) and/or
+     special access program facility (SAPF)
+•    Monitor access to SCIF/SAPF, and IPMO compliance with physical and administrative security
+     requirements for the IPMO SCIF/SAPF.
+•    Develop and establish professional working relationships with the OUSD(I&S) Special Access
+     Program Central Office, Special Security Office, National Programs Directorate, Special Technical
+     Operations Branch, and the National Security Agency Central Security Service Representative.
+     Coordinate with these activities as required for guidance, direction, and resolution of security related
+     issues and requirements
+•    Coordinate IPMO personnel clearance verifications, visit request requirements, and provide security
+     briefings for IPMO visitors and meetings.
+•    Initiate and Coordinate Program Access Requests (PARS) and provide access briefings when PARs are
+     approved
+•    Facilitate Alternate Compensatory Control Measure (ACCM) accesses as required.
+•    Update and maintain classified access management systems of record (e.g. Scattered Castles, Joint
+     Access Database Environment, Defense Information System for Security) as required and authorized
+•    Coordinate IPMO facility, equipment, communications, and information technology needs specific to
+     SCIF/SAPF requirements, including preparation for and assistance during required security
+     inspections.
+•    Maintain records for control and accountability of classified correspondence, and other material
+     received in the office, making distribution to appropriate members of the IPMO staff. Ensure IPMO
+     records are marked, filed, and retained in accordance with the federal records disposition schedule
+     approved by the National Archives and Records Administration.
+
+5.6. Policy, Operations, and Analytic Support (Senior Operations Specialist, 7 FTEs — Key Personnel)            Commented [INNNCWA(11]: See previous comment.
+In support of the Influence and Perception Management Office, the contractor shall:
+•    Assist IPMO leadership in the development and promulgation of strategy, plans, and policy for DoD
+     influence, deception, and perception management related operations, activities, and investments.
+•    Assist IPMO leadership in the conduct of oversight and governance, to include staff assistance visits
+     and compliance inspections, for DoD influence, deception, and perception management related
+     operations, activities, and investments.
+•    Develop and coordinate staff packages that include time-sensitive requirements for IPMO leadership to
+     enable DoD influence, deception, and perception management related operations, activities, and
+     investments.
+•   Develop and maintain positive working relationships with counterparts across the DoD, including the
+    Joint Staff, other OSD organizations, DoD Components, Military Departments, and Combatant
+    Commands.
+•   Produce and disseminate reports and briefmgs that detail DoD influence, deception, and perception
+    management related operations, activities, and investments for Congress and Senior Executive Branch
+    officials.
+
+5.7. Administrative and Information Technology Support (Facilities/IT Manager, 1 FIE)                            Commented [INNNCVVA(12): See previous comment
+In support of the Influence and Perception Management Office, the contractor shall:
+•    Serve as primary 'PM° liaison to Washington Headquarters Services (WHS) to provide administrative
+     and management support for office related facilities, furniture, communications, and/or information
+     technology requirements (e.g. submit requests and coordinate work orders approved by IPMO for
+     support services).
+•    Provide IT support across a wide range of technical services including supporting remote sites,
+     preforming cabling and desktop installation, systems administration, VTC operations, managing
+     cryptography keys, and hardware and software troubleshooting.
+•    Provide IPM0 on-site desk-side support services including account and access management, tailoring
+     directory service entries, mailbox management, supporting equipment installation, move, and change
+     requests, and troubleshooting end-user devices and peripherals.
+•    Submit, monitor, and approve MAXIMO requests, manage service calls and monitor requests for
+     building service-related requirements.
+•    Perform administrative, executive support, and security services as required by the contract task lead or
+     IPM0 leadership. Primary duties are in support of IPM0 personnel, but general support may be
+     provided for other OUSD(I&S) requirements as requested by the OUSD(I&S) Chief of Staff and
+     authorized by the Director, IPM0.
+
+5.8 Operations Specialist for Influence and Perception Management Office — OPTIONAL
+(Operations Specialist, Not-to-Exceed 5 FTEs)                                                                    Commented IWNNCWA(13]: See previous comment
+In support of the Influence and Perception Management Office, the contractor shall:
+•    Assist IPM0 leadership in the development and promulgation of strategy, plans, and policy for DoD
+     influence, deception, and perception management related operations, activities, and investments.
+•    Assist 'PM° leadership in the conduct of oversight and governance, to include staff assistance visits
+     and compliance inspections, for DoD influence, deception, and perception management related
+     operations, activities, and investments.
+•    Develop and coordinate staff packages that include time-sensitive requirements for IPM0 leadership to
+     enable DoD influence, deception, and perception management related operations, activities, and
+     investments.
+•    Develop and maintain positive working relationships with counterparts across the DoD, including the
+     Joint Staff, other OSD organizations, DoD Components, Military Departments, and Combatant
+     Commands.
+•    Produce and disseminate reports and briefmgs that detail DoD influence, deception, and perception
+     management related operations, activities, and investments for Congress and Senior Executive Branch
+     officials.
+                                            PART 6
+                                    APPLICABLE PUBLICATIONS
+
+6. APPLICABLE PUBLICATIONS (CURRENT EDITIONS
+
+6.1. The Contractor must abide by all applicable regulations, publications, manuals, and local policies and
+procedures.
+6.2. The following documents are cited in the security requirements stipulated in para 1.6.7 "Security
+Requirements" in this PWS.
+6.2.1. Intelligence Community Directive (ICD) 704, "Personnel Security Standards and Procedures
+Governing Eligibility for Access to Sensitive Compartmented Information and Other Controlled Access
+Program Information" (1 October 2008)
+6.2.2. ICD 704.4 "Reciprocity of Personnel Security Clearance and Access Determinations, (20 June 2018)
+6.2.3. DoD Manual 5105.21, Volume 3 "Sensitive Compartmented Information (SCI) Administrative
+Security Manual: Administration of Personnel Security, Industrial Security, and Special Activities (19
+October 2012)
+6.2.4. DoD Manual 5205.07, Volumes 1 "DoD Special Access Program (SAP) Security Manual: General
+Procedures" (18 June 2015)
+6.2.5. DoD Manual 5205.07, Volumes 2, "Special Access Program (SAP) Security Manual: Personnel
+Security" (24 November 2015)
+6.2.6. DoD Manual 5205.07, Volumes 3, "DoD Special Access Program (SAP) Security Manual: Physical
+Security" (23 April 2015)
+6.2.7. DoD Manual 5205.07, Volumes 4, "6.2.6. DoD Manual 5205.07, Volumes 3" (10 October 2013)
+6.2.8. DoD Instruction 5205.11, "Management, Administration, and Oversight of DoD Special Access
+Programs(SAPs)" (6 Feb 2013)
+6.2.9. OUSD(I) Memorandum, "Department of Defense Guidance for the Implementation of Measures to
+Reduce the Federal Government's Background Investigation Inventory in Fiscal Year 2018" (July 27,2018)
+                                       PART 7
+                         ATTACHMENT/TECHNICAL EXHIBIT LISTING
+
+7.   Attachment/Technical Exhibit List:
+
+7.1. Attachment 1/Technical Exhibit 1 — Performance Requirements Summary
+
+7.2. Attachment 2/Technical Exhibit 2— Deliverables Schedule
+
+7.3. Attachment 3/Technical Exhibit 3 — Estimated Workload Data
+                                                    TECHNICAL EXHIBIT 1
+
+                                             Performance Requirements Summary
+
+
+            The contractor service requirements are summarized into performance objectives that relate directly to
+            mission essential items. The performance threshold briefly describes the minimum acceptable levels of
+            service required for each requirement. These thresholds are critical to mission success.
+
+
+        Performance Objective                                 rrHThR1i                       Performance Threshold               Method of
+                                                                                                                                Surveillance
+
+PRS # 1.                                  All contractor personnel possess the skills        All contractor personnel are      Periodic
+The contractor shall provide qualified    and experience required to perform the             functional users of               Surveillance by
+personal to successfully perform the      required tasks as specified in the PWS.            OUSD(I&S) systems and             COR/GPOC
+tasks outlined in PWS Paragraph 5.                                                           processes within 2 weeks of           or
+                                                                                             their start date.
+                                                                                                                               Validated
+                                                                                             The Contractor's work             Customer
+                                                                                             products are suitable to          Complaint
+                                                                                             support the full range of tasks   received by
+                                                                                             specified in the PWS.             COR.
+
+                                                                                             The contractor's personnel are
+                                                                                             qualified and adept at
+                                                                                             Presenting clear, concise, and
+                                                                                             complete professional work
+                                                                                             products free of substantive
+                                                                                             errors, political conclusions,
+                                                                                             or personal/individual bias.
+PRS #2                                    Timelines in para 1.6.10 are met with no           100%                              Periodic
+The contractor shall manage Key           more than al0 business daygap in support                                             Surveillance by
+Personnel according to pars 1.6.10 of     for any key positions.                                                               COR/GPOC
+the PWS.                                                                                                                           or
+                                                                                                                               Validated
+                                                                                                                               Customer
+                                                                                                                               Complaint
+                                                                                                                               received by
+                                                                                                                               COR.
+PRS #3                                    Contractor personnel will meet suspense's          100%                              Periodic
+The contractor shall ensure timeliness    established by the PWS, GPOC or Contract                                             Surveillance by
+and accuracy of deliverables associated   Task Lead on behalf of the GPOC. Work                                                COR/GPOC
+with all tasks listed in Para 5 of the    product will be clear, concise, well written                                             Or
+PWS or other deliverables specified in    and complete. Deliverables will be 99%                                               Validated
+the PWS.                                  free of grammatical errors or misspellings, free                                     Customer
+                                          of substantive errors, political conclusions                                         Complaint
+                                          or personal/individual bias. No more than 2                                          received by
+                                          submissions for rework per deliverable.                                              COR.
+                                          Editorial and typographical errors should be
+                                          few.
+PRS #4 The contract program manager        The contract program manager will be           100%        Surveillance by
+or alternate contract program manager      responsive in acknowledging urgent                         COR/GPOC.
+shall be available and responsive as       matters on the same business day as
+stipulated in para 1.6.10                  notified by the COR or Government
+                                           Program Manager (or representative) or no
+                                           later than noon of the next business day.
+                                           For routine matters acknowledgement will
+                                           be within 2 business days.
+PRS #5                                     The contractor shall achieve full              I (i()" 0   Phase-In/Kick-
+The contractor shall meet the phase in     operational capability for all tasks and                   Off Meeting
+requirements stipulated in para 1.6.14     deliverables in the PWS by the end of the                      and
+                                           30 day phase-in period                                     Surveillance by
+                                                                                                      COR/GI Comm, nted (1/1/NNC1NA(14]: This needs be removed as 1
+PRS #6                                     The contractor will provide a phase out        100%        Phase-0 we don'i have a phase-in plan.
+The contractor shall meet the phase out    plan no later than 60 days before the end of               Meeting
+requirements stipulated in para 1.6.16   the contract and will work with                                and
+                                           Government personnel and the incoming                      Surveillance by
+                                           contractor to support a smooth transition.                 COR/GPOC
+                                    TECHNICAL EXHIBIT 2
+
+                                 DELIVERABLES SCHEDULE
+
+
+DELIVERABLE           FR   UENCY             # OF COPIES   MEDIUM/FORMAT      SUBMIT TO
+
+QAP according to      The contractor will       One        MS Word/Softcopy   COR via email
+para 1.6.1            deliver a quality                                                           Commented [VVN NCVVA(1 51: This is listed twice in this
+                      assurance plan                                                              table. Please update as it should be identify one time.
+                      (QAP) to the COR
+                      within 30 days after
+                      contract award.
+Monthly Status                                  One        MS Word/Softcopy   COR via email
+Report (MSR) per      By the 10th of every
+para 1.6.1            month.
+Quality Assurance     No later than 30          One        MS Word/Softcopy   COR via email
+Plan (QAP) per para   days following
+1.6.1                 award of contract
+Non-Disclosure        Once when in              One        PDF/Softcopy       OUSD(I&S)
+Agreement             processing or as                                        Security Officer Commented [INNNCVVA(161: This needs to be added as
+(Security) per para   directed.                                               during in processir an attachment to the solicitation. Meaning we should have
+1.6.7                                                       Adobe Acrobat     Security Briefing this as a separate document and not embedded with the PWS.
+                                                              Document                            Make sure you have a separate document.
+Non-Disclosure        Once when in              One        PDF/Softeopy       COR via email
+Agreement             processing or as
+(Nonpublic            directed.                                                                   Commented PNNNCWA(17]: Please see comment
+                                                                                                  abON e.
+Information) per                                            Adobe Acrobat
+para 1.6.16                                                   Document
+Phase out Plan per    Once, NLT 60 days         One        MS Word/Softcopy   COR via email
+para 1.6.17           prior to end of
+                      contract
+Limitation on         The last month of         One        MS Word/Softcopy   COR/CO via email
+Subcontracting        the period of
+Yearly Reporting      performance of the
+(PWS 1.6.17)          base period
+Travel Trip Reports   If requested, within      One        MS Word/Softcopy   COR
+                      ten (10) working
+                      days of travel
+                                     TECHNICAL EXHIBIT 3
+
+                                ESTIMATED WORKLOAD DATA
+
+        The data provided below, identifies the labor cate2ories and hours to accomplish the               Formatted: Indent Left: 0.5"
+        requirements listed in the PWS for the Labor-Hour CLINs
+
+The estimated hours and labor categories are simply estimates on what it may take to perform the
+requirements listed in this PWS based on history on similar projects. The Contractor is not required
+to propose the hours listed below and is encouraged to use sound business practices when preparing
+the price/cost proposal.                                                                                   Commented IWNNCWA(18]: This language is only used
+                                                                                                           for FFP. This is a Labor Hour Contract so the contractor
+                                                                                                           must perform to the hours we're giving them. They can't
+                                                                                                           propose different hours. I've updated this language and
+ PWS       Labor Category                               FTEs        Hours                                  provided it back.
+ Item
+ 5.2       Senior Executive Administrative Support          1                      1872
+ 5.3       Senior Administrative Operations Manager         1                      1872
+ 5.4       Senior Operations Specialist/ Contract           1                      1872
+           Task Lead
+ 5.5       Senior Special Security and Special Access       1                      1872
+           Security Manager
+ 5.6       Senior Operations Specialist                     7               13,104 (NTE 18,720)
+ 5.7       Facilities/IT Manager                            1                       1872
+ 5.8       Senior Operations Specialist (Optional)      0-(NTE 3)              0-(NTE 5616)                Formatted: Left
+ 5.8       Operations Specialist (Optional)             0 (NTE 5)              0-(NTE 9360)            •
+                                                                                                           Commented 1WNNCWA(19]: I don't understand 0 and
+                                                                                                           NTE 3. These are optional CLINs, so we need to identify the
+                                                                                                           number of FTEs and the hours. So remove the "0" amount as
+                                                                                                           the vendor will propose a labor rate that will be needed.
+                                                                                                           Formatted: Left
+

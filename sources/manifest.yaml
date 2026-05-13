@@ -558,6 +558,15 @@
   extraction_type: ocr-scan
   note: Submitted Document 004 to the 2024-11-13 House Oversight UAP hearing record. 21 pages, fully scanned (200 dpi JPEG / CCITT — pdftotext output is zero bytes; no embedded text layer). Page 1 is an unsigned three-question Q&A authored by an unnamed contributor, DOPSR-cleared 2023-09-06; widely attributed to James Lacatski by NewParadigmInstitute and the UAP-press secondary reporting (e.g., Sentinel Network "Architect" piece) on stylistic + content grounds — first-person AAWSAP-insider voice, self-citation of "Skinwalkers at the Pentagon" pp. 152-153, narrative match with Lacatski's book — but authorship is NOT primary-source-confirmed in the document itself or in the Nov 13 oral transcript. Page 1 is the load-bearing contemporary content for repo nodes; pp. 2-21 are appended historical primary sources (1947 Twining "Flying Discs" memo, 1950 Doyle Rees New Mexico memo, 1952 Chadwell CIA memo, 1952 FBI Savannah River + Hoover memo, 1950 FBI Knoxville radar memo, 1950 OSI/AEC Oak Ridge incident reports, 1949 ADC reports, 1957 FBI Belmont Montauk memo) — each its own document-node candidate. A contributor-produced `.txt` sibling at the same stem (`docs-house-gov-hhrg-118-go12-20241113-sd004.txt`) covers page 1 only with [annotation] markers where DOPSR/disclaimer overlays partially occlude the underlying Q&A text; pp. 2-21 are not transcribed in this sibling. Page-1 transcription was produced via multimodal-LLM visual read of the page-1 image (no OCR engine; no whisper).
   wayback_date: '2025-09-07'
+- url: https://docs.house.gov/meetings/GO/GO12/20241113/117721/HHRG-118-GO12-20241113-SD004.pdf#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/docs-house-gov-hhrg-118-go12-20241113-sd004.txt
+  archived_date: '2026-05-13'
+  sha256: fa690c499ac9e0745ffdce0d67b7fbd8fa4759e6acac77686bf89c52323abd6d
+  archive_status: 1
+  wayback_skip: true
+  note: Contributor-produced clean-text sibling for page 1 ONLY of the 21-page SD004 PDF (paired entry above, same path stem; flagged extraction_type=ocr-scan). Page-1 transcription produced via multimodal-LLM visual read of the page-1 image (no OCR engine; no whisper); covers the load-bearing DOPSR-cleared 2023-09-06 Q&A content. Pages 2-21 of the SD004 PDF are appended historical primary-source attachments (1947 Twining memo, 1950 Doyle Rees memo, 1952 Chadwell CIA memo, etc.) — each its own document-node candidate; not transcribed in this sibling. [annotation] markers used where DOPSR/disclaimer overlays partially occlude underlying Q&A text. Validator (extract_source_text in scripts/lib/_common.py) prefers this same-stem .txt sibling over pdftotext output for PDFs flagged extraction_type=ocr-scan or =extraction-lossy. Registered 2026-05-13 to close the manifest-hygiene gap surfaced during BACKLOG A2 investigation.
 - url: https://docs.house.gov/meetings/GO/GO12/20241113/117721/HHRG-118-GO12-Transcript-20241113.pdf
   format: pdf
   status: archived
@@ -622,6 +631,15 @@
   extraction_type: ocr-scan
   note: AARO invitations to interview Grusch (FOIA 24-F-0266); Grusch declined; esd.whs.mil Akamai-blocks automated retrieval — archived via The Black Vault mirror. PDF Producer is OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan per BACKLOG A2 discipline. Extraction verified clean 2026-05-04 (no character-level OCR artifacts in pdftotext output; the 2 currently-cited quotes verified verbatim on pages 8 and 9 of the rendered PDF), so no `.txt` sibling produced. Future contributors adding quotes from this PDF should visually verify against the rendered source page since OCR artifacts can surface on previously-unread regions.
   wayback_date: '2025-11-18'
+- url: https://documents2.theblackvault.com/documents/osd/24-F-0266.pdf#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/blackvault-aaro-invitations-to-grusch-24-F-0266.txt
+  archived_date: '2026-05-13'
+  sha256: 860c7955e2ddfddc18ab688eadcee060aa2acda342d43a842fb5301e0819a011
+  archive_status: 1
+  wayback_skip: true
+  note: 'Contributor-produced clean-text sibling for the 29-page Black Vault FOIA 24-F-0266 release (paired entry above, same path stem; flagged extraction_type=ocr-scan, OmniPage CSDK 20 / AINSLIB.OCR producer chain). PDF structure: DoD cover letter (pp. 1-2); AARO MEMORANDUM FOR RECORD summarizing invitations to interview Mr. David Grusch (pp. 3-7); appended iPad-screenshot images of Signal/iMessage chat exchanges between Sean Kirkpatrick and Chris Mellon (pp. 8-11) and between Kirkpatrick and a (b)(6)-redacted counterparty (pp. 12-15); appended David Grusch email thread with AARO (pp. 16-21); appended Verbal Legal Advisement / SAPCO MFR memo (pp. 22-29). Production methodology: pdftotext -layout output used as base; visually verified against rendered page images for all 8 quoted-passage pages. All 8 cited quote BODY texts visually verified clean against rendered pages — david-grusch q156-q161 (six emails, pp. 16-21) and sean-kirkpatrick q36-q37 (Signal chat blue bubbles, pp. 8-9). Email body text and Signal chat bubble text extract cleanly via pdftotext. Known OCR artifacts in pdftotext output are confined to non-body metadata: email Sent: header dates and times scrambled (e.g., "Monday. lant an/ 8.10141:44 PM" for "Monday, January 8, 2024 1:44 PM"; "Tuesday. Novem oer 14 2023 10.36 AM"); recipient name fields like "Kirkpatrick" → "Kirknatrirk", "HQE" → "HOE"; iPad screenshot status-bar text. These header artifacts do not affect the verbatim-quote check, which substring-matches the QUOTE TEXT (clean body content) against the source text. Validator (extract_source_text in scripts/lib/_common.py) prefers this same-stem .txt sibling over pdftotext output for PDFs flagged extraction_type=ocr-scan. SCOPE: this sibling resolves the missing-sibling A2 defect (8 quote body passages now verified against a contributor-stamped clean-text extraction); a future canonical-quality production pass with DOCUMENT N markers per meta/conventions.md (FOIA email release sibling convention) is deferred for navigability improvement — current sibling provides body-content correctness but not canonical email/document boundary structure. Registered 2026-05-13 to close the missing-sibling defect surfaced during BACKLOG A2 investigation.'
 - url: https://documents2.theblackvault.com/documents/osd/24-F-0894.pdf
   format: pdf
   status: archived
@@ -1323,8 +1341,9 @@
   path: news/safireproject-phase-three-report.pdf
   archived_date: '2026-05-07'
   sha256: 33a1c3c0eb2ca785b8907f4aed5b5aa409972fb8e2a3de3bdb3b6f9b76b0cc3f
-  archive_status: 1
+  archive_status: 3
   note: SAFIRE PROJECT — Phase Three Report PDF, self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc.
+  wayback_date: '2024-11-22'
 - url: https://safireproject.com/science/ewExternalFiles/SAFIRE-Phase-Two.pdf
   format: pdf
   status: archived
@@ -1339,8 +1358,9 @@
   path: news/safireproject-project-report.pdf
   archived_date: '2026-05-07'
   sha256: cc8fbd3e125d1fcbd8f9ec8c076bcdc1be3f9ecda1a6d1ebf65150c33e6860cb
-  archive_status: 1
+  archive_status: 3
   note: 'SAFIRE PROJECT — full Project Report PDF (~73 pp), self-published by The SAFIRE PROJECT & Silver Wolf Productions Inc., copyright 2017 / 2017 Aurtas International, patents pending. Multi-corroborates the SAFIRE acronym expansion ("The Stellar Atmospheric Function in Regulation Experiment", p. 174 and p. 1093 of pdftotext extract). Attests Phase II reactor specs: stainless-steel cylinder four feet in diameter and seven feet long; 200 kW DC power supply; 40,000 parts. Names full SAFIRE personnel roster including Ben Ged Low (Cinematography, Optics, Video Capture). Lists Lowell Morgan as core team Applied Physicist as of 2018-02-23. Discovered via the corrected URL path /science/ewExternalFiles/ rather than /ewExternalFiles/.'
+  wayback_date: '2024-05-08'
 - url: https://safireproject.com/science/phase-one.html
   format: html
   status: archived
@@ -2220,6 +2240,15 @@
   extraction_type: ocr-scan
   note: 'FOIA 23-F-0906 release — Sancorp Consulting LLC IPMO contract HQ003422C0064 Performance Work Statement, posted to esd.whs.mil/Portals/54/Documents/FOID/Reading Room/Contracts/. Counterpart to FOIA 23-F-1114 AARO PWS (already archived at government/blackvault-sancorp-23-f-1114-aaro-pws.pdf). Both PWSs were issued in spring/summer 2022 by WHS Acquisition Directorate (IPMO PWS dated April 25, 2022; AARO PWS dated July 7, 2022). IPMO PWS contains visible "WNNCWA" reviewer-comment marginalia in pdftotext extract (e.g., "Commented [WNNCWA(3]: See previous comment"); AARO PWS comparable annotation layer requires visual inspection (pdftotext does not extract PDF annotation layer). PDF producer is OmniPage CSDK 20 / AINSLIB.OCR — flagged ocr-scan; verbatim quotes must be visually verified against the source page or a clean-text sibling. esd.whs.mil Akamai-blocks automated retrieval; archived via Wayback Machine snapshot 2024-09-30.'
   wayback_date: '2026-02-01'
+- url: https://www.esd.whs.mil/Portals/54/Documents/FOID/Reading%20Room/Contracts/23-F-0906_Performance_Work_Statement.pdf#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/foia-23-f-0906-sancorp-ipmo-pws.txt
+  archived_date: '2026-05-13'
+  sha256: 16bda707705903b75be78ef5e04c5748ac95c616ce91f86efa7d91f3a39d93ba
+  archive_status: 1
+  wayback_skip: true
+  note: 'Contributor-produced clean-text sibling for the 21-page Sancorp/IPMO PWS PDF (paired entry above, same path stem; flagged extraction_type=ocr-scan, OmniPage CSDK 20 / AINSLIB.OCR producer chain). Production methodology: pdftotext -layout output used as base; visually verified against rendered page images for all 21 pages (Read tool, pages 1-21); body content extracts faithfully; targeted corrections applied for 5 confirmed OCR character-confusions in section headings and one body cell — "Obiectives" → "Objectives" (§1.3 heading; j→i), "Oualitv Control" → "Quality Control" (§1.6.1 heading; Q→O, y→v), "Recoenized Holidays" → "Recognized Holidays" (§1.6.3 heading; g→e), "1.6.16-7 Phase out Period" → "1.6.16 Phase out Period" (§1.6.16 heading; stray "-7" suffix dropped — visible page image shows "1.6.16" only), "reqiiirements stipulated in para 1.6.164" → "requirements stipulated in para 1.6.16" (Technical Exhibit 1 PRS #6 cell; u→ii, stray "4" digit dropped). All 4 quotes citing this source (ipmo q6, q7; sancorp-consulting q35, q36) reference clean body content unaffected by these corrections. PDF contains draft markup (red strikethroughs, WNNCWA tracked-change comments in margins) which pdftotext renders literally and the sibling preserves verbatim — these are real document features, not OCR artifacts. Validator (extract_source_text in scripts/lib/_common.py) prefers this same-stem .txt sibling over pdftotext output for PDFs flagged extraction_type=ocr-scan. Registered 2026-05-13 to close the missing-sibling defect surfaced during BACKLOG A2 investigation.'
 - url: https://www.everycrsreport.com/reports/IF10523.html
   format: html
   status: archived
