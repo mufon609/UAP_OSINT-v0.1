@@ -68,6 +68,10 @@ EMPTY_SECTION_SHAPES = {
     "credibility_notes": "",
     # Single dict on event artifacts
     "event_intrinsic": {},
+    # Finding artifact — single declarative sentence
+    "pattern_statement": "",
+    # Investigation artifact — single integrated answer object
+    "best_current_answer": {},
 }
 
 

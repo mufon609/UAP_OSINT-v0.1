@@ -424,28 +424,124 @@ types:
       Key Passages: {requires_quote_attribution: true}
 
   # --- FINDING ------------------------------------------------------------
+  # A finding documents a CROSS-SOURCE PATTERN that becomes visible only
+  # when multiple primary sources are read together. The pattern is not
+  # established by any single source; the synthesis-of-reading-together
+  # produces information not present in any constituent attestation. A
+  # finding is the canonical home for that pattern.
+  #
+  # Findings CITE PRIMARY SOURCES DIRECTLY via evidence[].source.path
+  # (never entity-node markdown files). attestor_path on each evidence
+  # row captures who attested; the citation itself goes to the source.
+  #
+  # Findings DUPLICATE primary-source content from entity nodes BY DESIGN.
+  # If a finding cites material the relevant entity node doesn't yet
+  # attest, the entity node is updated first (primary source confirmed +
+  # archived) before the finding can use it.
+  #
+  # Findings DO NOT REFERENCE the investigations that consume them —
+  # directional contract enforced by the finding_no_investigation_refs
+  # check. Investigations link to findings; findings stay reusable.
+  #
+  # Findings are distinguished from FACTS (single-source attestations
+  # naming another entity), which continue to live structurally on
+  # entity nodes. See meta/conventions.md "Three-layer evidentiary
+  # architecture" for the full bright line.
   finding:
     path: findings
-    status_values: [active, superseded, unresolved]
+    status_values: [documented, in-progress, superseded]
     frontmatter:
-      required: [id, type, schema_version, status, entities, created]
-      # `entities` is a list of node paths that the finding concerns.
-      # Validator checks that each listed entity's body links back to this finding.
-    creation_threshold: |
-      Create a finding node when ANY of:
-        (a) the pattern spans 3+ entity nodes,
-        (b) the analytical narrative would exceed ~200 words in any single
-            entity node's table cell or subsection, OR
-        (c) the same text is about to be written into 3+ different nodes.
-      Below these thresholds, keep the analysis in the single most relevant
-      entity node.
+      required: [id, type, schema_version, status, created, updated]
+      optional: [superseded_by]
+      # superseded_by: path of newer finding when status == superseded.
     required_sections:
-      - Summary
+      - Pattern Statement
+      - Description
+      - Evidence
+      - What the Record Establishes
+      - What the Record Doesn't Establish
+      - Associated Nodes
+    optional_sections:
+      - Apparent Contradictions
       - Timeline
-      - Primary Source Basis
-      - Entities Involved
+      - Source-Form Notes
     section_rules:
+      Evidence:
+        requires_quote_attribution: true
       Timeline: {chronological: true}
+      "Apparent Contradictions":
+        requires_quote_attribution: true
+    # Apparent Contradictions / Timeline / Source-Form Notes are
+    # rendered conditionally by the renderer based on artifact-side
+    # content (populated contradictions[] / timeline[] / naming_quirks
+    # entries with resolution preserve-as-sic-in-quotes). No frontmatter
+    # gate, so no conditionally_required entry — section auto-suppressed
+    # by renderer; optional_sections list above declares acceptability.
+
+  # --- INVESTIGATION ------------------------------------------------------
+  # An investigation pursues an OPEN QUESTION or hypothesis by consuming
+  # findings and entity-node facts. Investigations are SPECULATION-
+  # TOLERANT — the layer where hypotheses are evaluated against the
+  # primary-source record. Per-hypothesis status verdicts capture the
+  # current evidentiary standing (free-text: "Substantiated as allegation
+  # on record"; "Not established by primary sources"; etc.).
+  #
+  # Investigations link to and summarize findings via cited_findings[]
+  # and per-hypothesis sources[] rollups; findings DO NOT link back.
+  # Investigations build cases — proving, disproving, or further
+  # pursuing the question.
+  #
+  # Hypothesis Evaluation prose is NOT subject to the prose-drift check
+  # (speculation by design). Instead, the investigation_hypothesis_citation
+  # check requires each hypothesis subsection to carry a non-empty
+  # sources[] rollup naming the findings or entity-node facts the
+  # contributor drew on.
+  investigation:
+    path: investigations
+    status_values: [open, paused, closed]
+    frontmatter:
+      required: [id, type, schema_version, status, question, created, updated]
+      # question: free-text frontmatter — the open question this
+      # investigation pursues. Grep-able for investigation indices;
+      # mirrored as the rendered ## Question section body.
+    required_sections:
+      - Question
+      - Description
+      - Hypotheses
+      - Cited Findings
+      - Hypothesis Evaluation
+      - Open Questions
+      - Best-Current Answer
+      - Associated Nodes
+    optional_sections:
+      - Counter-Evidence
+      - Closure Path
+      - Resolution History
+    section_rules:
+      "Hypothesis Evaluation":
+        subsection_per_hypothesis: true
+    conditionally_required:
+      # Closure Path required on the rendered node body when the
+      # investigation's frontmatter status == paused (externally
+      # blocked). Counter-Evidence and Resolution History are
+      # artifact-content-conditional — renderer auto-suppresses when
+      # empty, no frontmatter gate, no conditionally_required entry.
+      "Closure Path": "status == paused"
+
+  # --- ATTESTATION TIER ---------------------------------------------------
+  # Per-attestation evidentiary tier carried on finding evidence[] rows.
+  # Renderer surfaces the tier in each evidence row's verification block
+  # so readers see the evidentiary weight of each attestation when
+  # convergence spans mixed tiers. Scoped to finding evidence[] only;
+  # entity-node quotes[] do not adopt this enum (entity nodes carry the
+  # existing ✅ Sworn / documented label until a separate migration pass).
+  attestation_tier_values:
+    - sworn-oath           # under-oath congressional testimony
+    - sworn-perjury        # 18 U.S.C. § 1001 legal filing
+    - dopsr-cleared        # DoD/IC pre-publication-reviewed
+    - on-record            # interview, podcast, broadcast — no oath
+    - self-attested        # subject asserts about themselves; no external corroboration
+    - secondary-source     # journalistic reporting, third-party narration
 
   # --- META ---------------------------------------------------------------
   meta:
@@ -603,7 +699,7 @@ types:
         # (fabrication-prevention mechanism).
       timeline:
         required_when_any_of:
-          - target_node_type_in: [person, organization, event, finding]
+          - target_node_type_in: [person, organization, event]
         # Aggregated chronological dated facts about the node's subject.
         # Entries carry `date`, `event`, `source`, and on person artifacts
         # `category` (affiliation / role / observation / testimony /
@@ -786,6 +882,104 @@ types:
         # (org-to-org) by virtue of the heterogeneous entity_path field.
         # Renders as the `## Relationships` section with Confirmed /
         # Flagged split. Entry shape: location_relationship_entry below.
+      pattern_statement:
+        required_when_any_of:
+          - target_node_type_in: [finding]
+        # One declarative sentence stating the cross-source pattern this
+        # finding documents. Cluster-neutral framing (table the pattern,
+        # do not presume which investigation consumes it). Renders as
+        # the `## Pattern Statement` section body.
+      establishes:
+        required_when_any_of:
+          - target_node_type_in: [finding]
+        # List of prose strings — explicit claims about what the
+        # convergence in evidence[] proves, each anchored to specific
+        # evidence quote ids in inline references (e.g. "Anchored claim
+        # citing q1 + q2"). Cluster-neutral. Renders as the `## What
+        # the Record Establishes` section as a bullet list.
+      does_not_establish:
+        required_when_any_of:
+          - target_node_type_in: [finding]
+        # List of prose strings — explicit caveats, gaps, and
+        # divergences the convergence does NOT reach. No speculation;
+        # what the record DOES NOT carry. Renders as the `## What the
+        # Record Doesn't Establish` section as a bullet list.
+      contradictions:
+        required_when_any_of:
+          - target_node_type_in: [finding]
+        # Optional list of structured divergences within the finding's
+        # scope. Each entry: question, positions[] (with evidence_id +
+        # position prose), note. Renders as the `## Apparent
+        # Contradictions` section ONLY when entries exist; section
+        # auto-suppressed for empty list. Entry shape:
+        # contradiction_entry below.
+      hypotheses:
+        required_when_any_of:
+          - target_node_type_in: [investigation]
+        # Numbered list of competing hypotheses the investigation tests.
+        # Each entry: id (h1 / h2 / h0 — h0 reserved for null
+        # hypothesis when meaningful), statement. Renders as the
+        # `## Hypotheses` section as a numbered list with hypothesis ids
+        # in bold (**H1** — ...). Entry shape: hypothesis_entry below.
+      cited_findings:
+        required_when_any_of:
+          - target_node_type_in: [investigation]
+        # Table of findings consumed by this investigation. Each entry
+        # references a finding by path, copies its pattern_statement for
+        # convenience, and carries a contributor-written relevance
+        # note explaining how the finding bears on the investigation.
+        # Renders as the `## Cited Findings` section. Entry shape:
+        # cited_finding_entry below.
+      hypothesis_evaluation:
+        required_when_any_of:
+          - target_node_type_in: [investigation]
+        # Per-hypothesis analytical evaluation. Each entry carries
+        # hypothesis_id (matches a hypotheses[] entry id), status (free-
+        # text verdict — "Substantiated as allegation on record" /
+        # "Not established by primary sources" / etc.), text (free-
+        # flowing analytical prose; speculation-tolerant), and sources[]
+        # (per-hypothesis rollup of finding paths or entity-node
+        # anchors). Renders as the `## Hypothesis Evaluation` section
+        # with per-hypothesis H3 subsections. Entry shape:
+        # hypothesis_evaluation_entry below.
+      open_questions:
+        required_when_any_of:
+          - target_node_type_in: [investigation]
+        # Questions the primary-source record doesn't resolve. Each
+        # entry: question, what_would_resolve. Renders as the
+        # `## Open Questions` section. Entry shape:
+        # open_question_entry below.
+      best_current_answer:
+        required_when_any_of:
+          - target_node_type_in: [investigation]
+        # The investigation's current integrated answer to the framing
+        # question. Speculation-tolerant; hedge-laden where the record
+        # requires it. Carries text (free-flowing prose) + sources[]
+        # rollup parallel to hypothesis_evaluation entries. Renders as
+        # the `## Best-Current Answer` section.
+      counter_evidence:
+        required_when_any_of:
+          - target_node_type_in: [investigation]
+        # Optional list of structured counter-evidence entries — when
+        # active findings contradict the investigation's hypotheses.
+        # Discrete section so disconfirming material is visible, not
+        # buried in Hypothesis Evaluation prose. Entry shape:
+        # counter_evidence_entry below.
+      closure_path:
+        required_when_any_of:
+          - target_node_type_in: [investigation]
+        # Required when investigation status == paused (externally
+        # blocked); optional otherwise. Documents what event would
+        # unblock the investigation. Entry shape: closure_path_entry
+        # below.
+      resolution_history:
+        required_when_any_of:
+          - target_node_type_in: [investigation]
+        # Optional list of evolution entries — when hypotheses have been
+        # added, refuted, or superseded over time. Most investigations
+        # do not need this; reserved for long-running investigations
+        # where evolution is itself load-bearing. Entry shape:
+        # resolution_history_entry below.
 
     # Primary-source list entries
     primary_sources_entry:
@@ -820,8 +1014,25 @@ types:
 
     quote_entry:
       required: [text, source]
-      optional: [significance, context, observation_type, category, statement_date]
+      optional: [significance, context, observation_type, category, statement_date, attestation_tier, attestor_path]
       observation_type_values: [direct, relayed]
+      attestation_tier_values:
+        - sworn-oath
+        - sworn-perjury
+        - dopsr-cleared
+        - on-record
+        - self-attested
+        - secondary-source
+      # attestation_tier: scoped to finding artifacts. Renderer surfaces
+      #   the tier in the evidence row's verification block so readers
+      #   see evidentiary weight across mixed-tier convergence. Ignored
+      #   on non-finding artifacts.
+      # attestor_path: scoped to finding artifacts. Optional /people/...
+      #   or /organizations/... path of the named attester (when the
+      #   evidence row is a statement by an identifiable person/org).
+      #   Renderer surfaces as a wrap-link in the Attributed-to line.
+      #   Distinct from source.path (which points at the primary source
+      #   the attestation lives in).
       # text: verbatim quote, YAML literal block (|) preserves multi-line
       # source: object with path + location (single source per quote)
       # context: where / when / under what circumstances the speaker
@@ -892,6 +1103,7 @@ types:
         - media
         - location
         - finding
+        - investigation
       # entity_type: person | organization | document | event | location | finding
       # name: display name
       # wrap_path: canonical repo path (/people/..., /organizations/..., etc.)
@@ -1200,6 +1412,135 @@ types:
       # source: object with path + location attesting the relationship.
       # note: optional contributor synthesis. Scanned by the prose-drift check.
 
+    # --- Finding entry shapes ---
+
+    contradiction_entry:
+      required: [id, question, positions]
+      optional: [note]
+      # question: the specific question on which sources within this
+      #   finding diverge (e.g., "How far from the volcano plume?").
+      # positions: list of objects with shape:
+      #   { evidence_id: q1, position: 'verbatim position summary' }
+      #   evidence_id refers to a quote_entry id within this artifact's
+      #   own quotes[] list (the finding's evidence rows). Renderer
+      #   surfaces each position as a row in the Apparent Contradictions
+      #   table, with the linked quote anchoring back to the Evidence
+      #   section.
+      # note: optional contributor synthesis (1-2 sentences) on why
+      #   both positions stay on the record. Scanned by the prose-drift
+      #   check against the union token pool of cited sources.
+
+    # --- Investigation entry shapes ---
+
+    hypothesis_entry:
+      required: [id, statement]
+      # id: h1 / h2 / h0 (h0 reserved for the null hypothesis when
+      #   meaningful — coordinated-fabrication, allegation-is-mistaken,
+      #   etc.). Hypotheses are numbered for stable reference; ids
+      #   appear in hypothesis_evaluation_entry.hypothesis_id and in
+      #   counter_evidence_entry.against_hypothesis_id.
+      # statement: one declarative sentence stating the hypothesis.
+      #   Scanned by the investigation_hypothesis_citation check for
+      #   citation discipline on the corresponding evaluation entry,
+      #   not for prose-drift (speculation-tolerant by design).
+
+    cited_finding_entry:
+      required: [id, finding_path, relevance]
+      optional: [pattern_statement]
+      # finding_path: /findings/... path of the cited finding. Must
+      #   resolve to an existing finding node (or to the broken-link
+      #   registry for future-build candidates).
+      # pattern_statement: optional convenience copy of the finding's
+      #   own pattern_statement for at-a-glance reading in the rendered
+      #   Cited Findings table. Renderer auto-fills from the target
+      #   finding's pattern_statement when omitted.
+      # relevance: contributor-written prose (1-2 sentences) describing
+      #   how this finding bears on the investigation. Not scoped to
+      #   prose-drift (speculation-tolerant cross-layer description,
+      #   parallel to corroboration_items.note).
+
+    hypothesis_evaluation_entry:
+      required: [hypothesis_id, status, text, sources]
+      # hypothesis_id: must match an id in this artifact's hypotheses[].
+      # status: free-text verdict on the hypothesis (e.g.,
+      #   "Substantiated as allegation on record; not established as
+      #   physical fact", "Not established by primary sources;
+      #   non-denial pattern is suggestive but not affirmative"). Free-
+      #   text rather than enum — verdicts don't fit clean categories
+      #   and forcing them would either mislabel or pressure
+      #   contributors toward false clarity. Validator checks presence
+      #   + reasonable length (~10–200 chars).
+      # text: free-flowing analytical prose. Speculation-tolerant.
+      #   Not scoped to prose-drift; the investigation_hypothesis_citation
+      #   check requires non-empty sources[] rollup as the discipline.
+      # sources: per-hypothesis rollup of finding citations and entity-
+      #   node anchors. Each entry: source_entry shape below.
+      #   investigation_hypothesis_citation check requires non-empty
+      #   sources[] per hypothesis_evaluation entry.
+
+    source_entry:
+      required: [description]
+      # Source entries are oneOf two shapes (mutually exclusive):
+      #   { finding_path: /findings/X, description: '...' }
+      #   { entity_path: /people/X | /organizations/X | ...,
+      #     anchor: 'q24' | '## Statements' | etc.,
+      #     description: '...' }
+      # Validator enforces oneOf via the
+      # investigation_hypothesis_citation check.
+      # description: 1-2 sentence contributor-written summary of what
+      #   this source contributes to the analysis. ≥10 chars enforced.
+      #   Renders as the descriptive text after the wrap link in each
+      #   sources[] rollup row.
+      # finding_path: /findings/... path of the cited finding.
+      # entity_path: any /people/.. | /organizations/.. | /documents/.. |
+      #   /events/.. | /transcripts/.. | /media/.. | /locations/.. path.
+      # anchor: when entity_path is set, a quote id (q1, q24, kp3) or
+      #   H2 section name pinpointing the specific fact within the
+      #   entity node. Required when entity_path is set; ignored
+      #   otherwise.
+
+    open_question_entry:
+      required: [id, question]
+      optional: [what_would_resolve]
+      # question: the open analytical question (e.g., "Does Lacatski's
+      #   account constitute primary-source evidence of the event
+      #   occurring, or only of the claim having been made?").
+      # what_would_resolve: contributor-written description of the
+      #   primary-source material that would close the question.
+      #   Speculation-tolerant by design.
+
+    best_current_answer_entry:
+      required: [text, sources]
+      # Single-object entry (not a list — investigations carry exactly
+      # one Best-Current Answer). Same shape as hypothesis_evaluation
+      # entries minus the hypothesis_id and status fields: text + sources
+      # rollup. The integrated cross-hypothesis judgment.
+
+    counter_evidence_entry:
+      required: [id, against_hypothesis_id, text, sources]
+      # against_hypothesis_id: must match an id in this artifact's
+      # hypotheses[]. Routes the counter-evidence to the hypothesis it
+      # contests.
+      # text: analytical prose framing the counter-evidence.
+      # sources: rollup parallel to hypothesis_evaluation; cites
+      # findings or entity-node anchors that disconfirm the hypothesis.
+
+    closure_path_entry:
+      required: [id, blocking_event]
+      optional: [expected_unblock_path]
+      # blocking_event: the external event blocking the investigation
+      #   (e.g., "BlackVault FOIA appeal on 24-F-0266 resolves").
+      # expected_unblock_path: contributor-written description of what
+      #   the unblock would surface and how it would advance the
+      #   investigation. Speculation-tolerant.
+
+    resolution_history_entry:
+      required: [id, date, event]
+      # date: YYYY-MM-DD when the resolution event occurred.
+      # event: prose description of how the investigation evolved on
+      #   this date (e.g., "H3 refuted by finding X", "H2 added after
+      #   new primary source Y surfaced").
+
     media_versioning_entry:
       required: [id, aspect, parent_form, this_form, source]
       optional: [note]
@@ -1283,7 +1624,7 @@ types:
 
       # Conditional sections
       - "rumors section present if target_node type in [person, organization, event, location]; absent otherwise"
-      - "timeline section present if target_node type in [person, organization, event, finding]; absent otherwise"
+      - "timeline section present if target_node type in [person, organization, event]; absent otherwise"
       - "corroboration_items section present iff target_node archetype == eyewitness"
       - "program_involvement section present iff target_node archetype == institutional-actor"
       - "publication_record section present iff target_node archetype == reporter"
@@ -1297,6 +1638,12 @@ types:
       - "key_personnel and org_relationships sections present iff target_node type == organization"
       - "contracts section present iff target_node type == organization AND kind == gov-contractor"
       - "ownership_timeline, top_scope_activity, location_relationships sections present iff target_node type == location"
+      - "pattern_statement / establishes / does_not_establish sections present iff target_node type == finding"
+      - "contradictions section present iff target_node type == finding (empty list permitted; populated drives the Apparent Contradictions section)"
+      - "hypotheses / cited_findings / hypothesis_evaluation / open_questions / best_current_answer present iff target_node type == investigation"
+      - "counter_evidence / closure_path / resolution_history sections present iff target_node type == investigation (lists may be empty; closure_path required when status == paused)"
+      - "findings do not reference investigations — directional contract enforced by finding_no_investigation_refs"
+      - "investigation hypothesis_evaluation sources[] non-empty — enforced by investigation_hypothesis_citation"
 
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema

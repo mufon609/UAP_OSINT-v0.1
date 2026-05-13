@@ -15,7 +15,8 @@ Examples:
   new.py media --kind video --slug gimbal-declassified
   new.py media --kind photo --slug dird-01-cover
   new.py location --slug skinwalker-ranch
-  new.py finding --entities /people/sean-kirkpatrick,/organizations/aaro --slug kirkpatrick-ornl
+  new.py finding --slug lockheed-martin-non-denial-pattern
+  new.py investigation --slug lockheed-martin-uap-materials --question "Does Lockheed Martin own/house UAP material?"
 
 Reads meta/schema.yaml + meta/templates/{type}.md + optionally meta/topic/addenda/{corpus}.md.
 Writes to {type_dir}/{slug}.md.
@@ -50,7 +51,8 @@ DEFAULT_STATUS = {
     "transcript": "primary-source-confirmed",
     "media": "primary-source-confirmed",
     "location": "active",
-    "finding": "active",
+    "finding": "in-progress",
+    "investigation": "open",
 }
 
 
@@ -137,7 +139,7 @@ def main():
     parser.add_argument("--derivation-of", help="Media derivation_of: path to parent media node for derivative media")
     parser.add_argument("--source-medium", help="Transcript source_medium (free-text; e.g., youtube, podcast, broadcast)")
     parser.add_argument("--derived-from", help="Transcript derived_from: path to underlying media/document node")
-    parser.add_argument("--entities", help="Comma-separated entity paths (finding nodes)")
+    parser.add_argument("--question", help="Open question (investigation nodes — frontmatter `question` field)")
     parser.add_argument("--corpus", help="Corpus addendum (e.g., aawsap-dird)")
     parser.add_argument("--force", action="store_true", help="Overwrite existing")
     args = parser.parse_args()
@@ -181,8 +183,8 @@ def main():
         if args.archival_status not in valid_archival:
             sys.exit(f"ERROR: Invalid --archival-status. Valid: {valid_archival}")
 
-    if args.type == "finding" and not args.entities:
-        sys.exit("ERROR: --entities required for finding")
+    if args.type == "investigation" and not args.question:
+        sys.exit("ERROR: --question required for investigation")
 
     # Output path
     type_dir = REPO_ROOT / TYPE_DIRS[args.type]
@@ -224,12 +226,8 @@ def main():
         "derived_from": args.derived_from or "",
         "corpus": args.corpus or "",
         "parent_slug": (args.derivation_of.rsplit("/", 1)[-1] if args.derivation_of else ""),
+        "question": (args.question or "").replace("'", "''"),
     }
-
-    if args.type == "finding":
-        ents = [e.strip() for e in args.entities.split(",")]
-        for i in range(1, 4):
-            subs[f"entity_path_{i}"] = ents[i - 1] if i <= len(ents) else ""
 
     # Render placeholders
     text = render_placeholders(text, subs)

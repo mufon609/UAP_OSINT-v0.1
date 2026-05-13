@@ -44,12 +44,14 @@ CHECK_NAME = "quotes"
 
 
 def check(ctx):
-    # Closed enum values for ``observation_type`` come from
-    # ``schema.yaml::types.research-artifact.quote_entry
-    # .observation_type_values``. Direct subscript surfaces a loud
-    # KeyError on schema malformation.
+    # Closed enum values for ``observation_type`` and
+    # ``attestation_tier`` come from
+    # ``schema.yaml::types.research-artifact.quote_entry``. Direct
+    # subscript surfaces a loud KeyError on schema malformation.
     valid_observation_types = ctx.schema["types"]["research-artifact"][
         "quote_entry"]["observation_type_values"]
+    valid_attestation_tiers = ctx.schema["types"]["research-artifact"][
+        "quote_entry"]["attestation_tier_values"]
 
     quotes = entries(ctx.data, "quotes")
     yield from check_unique_ids(ctx.rel, quotes, "quotes", CHECK_NAME)
@@ -128,3 +130,24 @@ def check(ctx):
                 f"ignored by renderer; consider removing",
                 check_name=CHECK_NAME,
             )
+
+        # attestation_tier — optional finding-scoped field. Validate
+        # enum membership when present. Warn when set on non-finding
+        # artifacts (renderer ignores it).
+        tier = q.get("attestation_tier")
+        if tier is not None:
+            if tier not in valid_attestation_tiers:
+                yield Issue(
+                    ctx.rel, "error",
+                    f"quotes[{i}] ({q.get('id')!r}): attestation_tier "
+                    f"{tier!r} not in {sorted(valid_attestation_tiers)}",
+                    check_name=CHECK_NAME,
+                )
+            elif ctx.target_type is not None and ctx.target_type != "finding":
+                yield Issue(
+                    ctx.rel, "warn",
+                    f"quotes[{i}] ({q.get('id')!r}): attestation_tier set on "
+                    f"a non-finding artifact (target_type {ctx.target_type!r}) "
+                    f"— ignored by renderer; consider removing",
+                    check_name=CHECK_NAME,
+                )

@@ -7,8 +7,7 @@ preserved from the existing node; body sections (H1 title onward) are
 replaced entirely by content derived from the artifact.
 
 SCOPE: document, person, event, transcript, media, organization,
-location. The finding renderer is unimplemented; see
-``meta/roadmap.md``.
+location, finding, investigation.
 
 Person renderer:
   - Universal sections: Identity, Background, {Topic} Relevance,
@@ -2168,6 +2167,456 @@ def render_body_location(artifact, fm):
     return title + "\n" + joined
 
 
+# =============================================================================
+# Finding renderer (F.7)
+# =============================================================================
+
+def render_title_finding(artifact):
+    """H1 title for finding nodes. Drawn from the slug-derived display
+    name; matches the existing pattern for organization / document /
+    media titles."""
+    target = artifact.get("target_node") or ""
+    slug = target.rsplit("/", 1)[-1] if "/" in target else target
+    display = slug.replace("-", " ").title() if slug else "Finding"
+    return f"# {display}\n"
+
+
+def render_pattern_statement(artifact):
+    """`## Pattern Statement` — one declarative sentence stating the
+    cross-source pattern this finding documents. Sourced from the
+    artifact's `pattern_statement` field."""
+    pattern = (artifact.get("pattern_statement") or "").strip()
+    lines = ["## Pattern Statement", ""]
+    if pattern:
+        lines.append(pattern)
+    else:
+        lines.append("<!-- TODO: populate `pattern_statement` in the research artifact -->")
+    return "\n".join(lines) + "\n"
+
+
+def render_finding_evidence(artifact):
+    """`## Evidence` — H3-per-quote cards from quotes[]. Each card
+    renders the verbatim attestation as a blockquote followed by a
+    verification table with Attributed-to / Tier / Attestor / Source /
+    Location rows. The Tier row surfaces `attestation_tier` so readers
+    see evidentiary weight per row when convergence spans mixed tiers.
+    Sorted ascending by statement_date with natural-sort tie-break."""
+    quotes = [q for q in (artifact.get("quotes") or []) if isinstance(q, dict)]
+    quotes = sort_by_date(quotes, "statement_date")
+
+    head = "## Evidence\n"
+    if not quotes:
+        return head + "\n<!-- TODO: populate `quotes` in the research artifact -->\n"
+
+    blocks = []
+    for q in quotes:
+        h3 = q.get("significance") or "Attestation"
+        text = (q.get("text") or "").rstrip("\n")
+        lines = [f"### {h3}", ""]
+        for qline in text.split("\n"):
+            lines.append(f"> {qline}" if qline else ">")
+        lines.append("")
+
+        # Verification block, extended with Tier + Attestor rows
+        ctx = q.get("context") or ""
+        date = q.get("statement_date") or ""
+        if date and date in ctx:
+            attributed_to = ctx
+        else:
+            parts = [p for p in [ctx, date] if p]
+            attributed_to = ", ".join(parts) if parts else ""
+        src = q.get("source") or {}
+        src_path = src.get("path") or ""
+        src_link = f"[archived source](../sources/{src_path})" if src_path else ""
+        loc = src.get("location") or ""
+        tier = q.get("attestation_tier") or ""
+        attestor = q.get("attestor_path") or ""
+
+        rows = ["| Field | Value |", "|---|---|"]
+        if attributed_to:
+            rows.append(f"| Attributed to | {attributed_to} |")
+        if tier:
+            rows.append(f"| Tier | {tier} |")
+        if attestor:
+            rows.append(f"| Attestor | {_wrap_path(attestor)} |")
+        if src_link:
+            rows.append(f"| Source | {src_link} |")
+        if loc:
+            rows.append(f"| Location | {loc} |")
+        lines.append("\n".join(rows))
+        blocks.append("\n".join(lines))
+
+    return head + "\n" + "\n\n---\n\n".join(blocks) + "\n"
+
+
+def render_finding_establishes(artifact):
+    """`## What the Record Establishes` — bullet list from
+    `establishes[]`. Each entry is a prose string with inline
+    references to evidence quote ids."""
+    items = artifact.get("establishes") or []
+    lines = ["## What the Record Establishes", ""]
+    if not items:
+        lines.append("<!-- TODO: populate `establishes` in the research artifact -->")
+        return "\n".join(lines) + "\n"
+    for item in items:
+        if isinstance(item, str) and item.strip():
+            lines.append(f"- {item.strip()}")
+    return "\n".join(lines) + "\n"
+
+
+def render_finding_does_not_establish(artifact):
+    """`## What the Record Doesn't Establish` — bullet list from
+    `does_not_establish[]`. Caveats, gaps, divergences (without
+    speculation)."""
+    items = artifact.get("does_not_establish") or []
+    lines = ["## What the Record Doesn't Establish", ""]
+    if not items:
+        lines.append("<!-- TODO: populate `does_not_establish` in the research artifact -->")
+        return "\n".join(lines) + "\n"
+    for item in items:
+        if isinstance(item, str) and item.strip():
+            lines.append(f"- {item.strip()}")
+    return "\n".join(lines) + "\n"
+
+
+def render_finding_contradictions(artifact):
+    """`## Apparent Contradictions` — structured divergences within
+    the finding's scope. Conditional: returns empty string when
+    contradictions[] is empty (section auto-suppressed)."""
+    items = [c for c in (artifact.get("contradictions") or []) if isinstance(c, dict)]
+    if not items:
+        return ""
+    lines = ["## Apparent Contradictions", ""]
+    for c in items:
+        question = (c.get("question") or "").strip()
+        if question:
+            lines.append(f"### {question}")
+            lines.append("")
+        positions = c.get("positions") or []
+        if positions:
+            lines.append("| Evidence | Position |")
+            lines.append("|---|---|")
+            for p in positions:
+                if not isinstance(p, dict):
+                    continue
+                eid = p.get("evidence_id") or ""
+                pos = (p.get("position") or "").replace("|", "\\|")
+                lines.append(f"| `{eid}` | {pos} |")
+        note = (c.get("note") or "").strip()
+        if note:
+            lines.append("")
+            lines.append(note)
+        lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_finding_timeline(artifact):
+    """`## Timeline` — chronological table from timeline[]. Conditional:
+    returns empty string when timeline[] is empty (section auto-
+    suppressed for non-temporal findings)."""
+    items = sort_by_date(
+        [t for t in (artifact.get("timeline") or []) if isinstance(t, dict)],
+        "date",
+    )
+    if not items:
+        return ""
+    lines = ["## Timeline", "",
+             "| Date | Event | Source | Node Link |",
+             "|---|---|---|---|"]
+    for t in items:
+        date = t.get("date") or ""
+        event = (t.get("event") or "").replace("|", "\\|")
+        src = (t.get("source") or {}).get("path") or ""
+        node_link = t.get("node_link") or ""
+        if node_link:
+            node_link = _wrap_path(node_link)
+        lines.append(f"| {date} | {event} | {src} | {node_link} |")
+    return "\n".join(lines) + "\n"
+
+
+def render_body_finding(artifact, fm):
+    """Finding-type body composition. Section order matches the
+    schema's required_sections: Pattern Statement → Description →
+    Evidence → What the Record Establishes → What the Record Doesn't
+    Establish → (Apparent Contradictions if populated) → (Timeline if
+    populated) → Source-Form Notes (if entries) → Associated Nodes.
+
+    Findings cite primary sources directly via evidence[].source.path;
+    no entity-node references in the directional contract (enforced by
+    finding_no_investigation_refs and by convention)."""
+    title = render_title_finding(artifact).rstrip("\n") + "\n"
+    sections = [
+        render_pattern_statement(artifact),
+        render_description(artifact),
+        render_finding_evidence(artifact),
+        render_finding_establishes(artifact),
+        render_finding_does_not_establish(artifact),
+        render_finding_contradictions(artifact),       # conditional
+        render_finding_timeline(artifact),             # conditional
+        render_source_form_notes(artifact),            # conditional
+        render_associated_nodes(),
+    ]
+    sections = [s for s in sections if s]
+    joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
+    return title + "\n" + joined
+
+
+# =============================================================================
+# Investigation renderer (F.7)
+# =============================================================================
+
+def render_title_investigation(artifact):
+    """H1 title for investigation nodes."""
+    target = artifact.get("target_node") or ""
+    slug = target.rsplit("/", 1)[-1] if "/" in target else target
+    display = slug.replace("-", " ").title() if slug else "Investigation"
+    return f"# {display}\n"
+
+
+def render_question(artifact, fm):
+    """`## Question` — the open question being pursued. Mirrors the
+    frontmatter `question` field for at-a-glance reading on the body."""
+    question = (fm.get("question") or artifact.get("question") or "").strip()
+    lines = ["## Question", ""]
+    if question:
+        lines.append(question)
+    else:
+        lines.append("<!-- TODO: populate `question` in the artifact / frontmatter -->")
+    return "\n".join(lines) + "\n"
+
+
+def render_hypotheses(artifact):
+    """`## Hypotheses` — numbered list from hypotheses[]. Each entry:
+    **H{id}** — {statement}."""
+    items = [h for h in (artifact.get("hypotheses") or []) if isinstance(h, dict)]
+    lines = ["## Hypotheses", ""]
+    if not items:
+        lines.append("<!-- TODO: populate `hypotheses` in the research artifact -->")
+        return "\n".join(lines) + "\n"
+    for h in items:
+        hid = (h.get("id") or "?").upper()
+        statement = (h.get("statement") or "").strip()
+        lines.append(f"- **{hid}** — {statement}")
+    return "\n".join(lines) + "\n"
+
+
+def render_cited_findings(artifact):
+    """`## Cited Findings` — table of findings consumed by this
+    investigation. Columns: Finding | Pattern | Relevance."""
+    items = [c for c in (artifact.get("cited_findings") or []) if isinstance(c, dict)]
+    lines = ["## Cited Findings", "",
+             "| Finding | Pattern | Relevance |",
+             "|---|---|---|"]
+    if not items:
+        lines.append("|  |  |  |")
+        return "\n".join(lines) + "\n"
+    for c in items:
+        fp = c.get("finding_path") or ""
+        wrap = _wrap_path(fp) if fp else ""
+        pattern = (c.get("pattern_statement") or "").replace("|", "\\|")
+        relevance = (c.get("relevance") or "").replace("|", "\\|")
+        lines.append(f"| {wrap} | {pattern} | {relevance} |")
+    return "\n".join(lines) + "\n"
+
+
+def _render_sources_rollup(sources):
+    """Render a per-subsection **Sources:** rollup. Each entry has
+    either finding_path or entity_path + anchor, plus a required
+    description. Returns "" when no sources (caller decides whether
+    to emit a TODO comment)."""
+    items = [s for s in (sources or []) if isinstance(s, dict)]
+    if not items:
+        return ""
+    lines = ["**Sources:**", ""]
+    for s in items:
+        description = (s.get("description") or "").strip()
+        if s.get("finding_path"):
+            wrap = _wrap_path(s["finding_path"])
+            lines.append(f"- {wrap} — {description}")
+        elif s.get("entity_path"):
+            wrap = _wrap_path(s["entity_path"])
+            anchor = s.get("anchor") or ""
+            anchor_str = f" {anchor}" if anchor else ""
+            lines.append(f"- {wrap}{anchor_str} — {description}")
+        else:
+            lines.append(f"- (malformed source entry) — {description}")
+    return "\n".join(lines) + "\n"
+
+
+def render_hypothesis_evaluation(artifact):
+    """`## Hypothesis Evaluation` — per-hypothesis H3 cards. Each card:
+    H3 heading with hypothesis statement, **Status:** verdict line,
+    analytical prose, **Sources:** rollup of findings + entity anchors."""
+    items = [e for e in (artifact.get("hypothesis_evaluation") or []) if isinstance(e, dict)]
+    hyps = {h.get("id"): h for h in (artifact.get("hypotheses") or []) if isinstance(h, dict)}
+
+    head = "## Hypothesis Evaluation\n"
+    if not items:
+        return head + "\n<!-- TODO: populate `hypothesis_evaluation` in the research artifact -->\n"
+
+    blocks = []
+    for e in items:
+        hid_raw = e.get("hypothesis_id") or ""
+        hid = hid_raw.upper()
+        statement = (hyps.get(hid_raw, {}).get("statement") or "").strip()
+        heading = f"### {hid} — {statement}" if statement else f"### {hid}"
+        status = (e.get("status") or "").strip()
+        text = (e.get("text") or "").strip()
+        sources_block = _render_sources_rollup(e.get("sources"))
+
+        lines = [heading, ""]
+        if status:
+            lines.append(f"**Status:** {status}")
+            lines.append("")
+        if text:
+            lines.append(text)
+            lines.append("")
+        if sources_block:
+            lines.append(sources_block.rstrip())
+        blocks.append("\n".join(lines).rstrip())
+
+    return head + "\n" + "\n\n".join(blocks) + "\n"
+
+
+def render_open_questions(artifact):
+    """`## Open Questions` — questions the primary-source record does
+    not resolve, each paired with what would resolve them."""
+    items = [q for q in (artifact.get("open_questions") or []) if isinstance(q, dict)]
+    lines = ["## Open Questions", ""]
+    if not items:
+        lines.append("<!-- TODO: populate `open_questions` in the research artifact -->")
+        return "\n".join(lines) + "\n"
+    for q in items:
+        question = (q.get("question") or "").strip()
+        resolve = (q.get("what_would_resolve") or "").strip()
+        if resolve:
+            lines.append(f"- **{question}** — {resolve}")
+        else:
+            lines.append(f"- {question}")
+    return "\n".join(lines) + "\n"
+
+
+def render_best_current_answer(artifact):
+    """`## Best-Current Answer` — integrated cross-hypothesis judgment
+    with its own sources rollup."""
+    bca = artifact.get("best_current_answer")
+    head = "## Best-Current Answer\n"
+    # Treat both None and empty dict as scaffold state — emit TODO so
+    # the contributor sees what to populate. Only a populated dict
+    # enters the render-the-content branch.
+    if not isinstance(bca, dict) or not bca:
+        return head + "\n<!-- TODO: populate `best_current_answer` in the research artifact -->\n"
+    text = (bca.get("text") or "").strip()
+    sources_block = _render_sources_rollup(bca.get("sources"))
+    lines = [head.rstrip(), ""]
+    if text:
+        lines.append(text)
+        lines.append("")
+    if sources_block:
+        lines.append(sources_block.rstrip())
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_counter_evidence(artifact):
+    """`## Counter-Evidence` — discrete section for findings or facts
+    that contradict the investigation's hypotheses. Conditional: returns
+    empty when counter_evidence[] is empty."""
+    items = [c for c in (artifact.get("counter_evidence") or []) if isinstance(c, dict)]
+    if not items:
+        return ""
+    head = "## Counter-Evidence\n"
+    blocks = []
+    for c in items:
+        against = (c.get("against_hypothesis_id") or "").upper()
+        heading = f"### Against {against}" if against else "### Counter-evidence"
+        text = (c.get("text") or "").strip()
+        sources_block = _render_sources_rollup(c.get("sources"))
+        lines = [heading, ""]
+        if text:
+            lines.append(text)
+            lines.append("")
+        if sources_block:
+            lines.append(sources_block.rstrip())
+        blocks.append("\n".join(lines).rstrip())
+    return head + "\n" + "\n\n".join(blocks) + "\n"
+
+
+def render_closure_path(artifact, fm):
+    """`## Closure Path` — required when investigation status == paused;
+    optional otherwise. Documents what external event would unblock
+    the investigation."""
+    items = [c for c in (artifact.get("closure_path") or []) if isinstance(c, dict)]
+    status = fm.get("status")
+    if not items and status != "paused":
+        return ""
+    head = "## Closure Path\n"
+    if not items:
+        return head + "\n<!-- TODO: status is 'paused' but closure_path is empty — populate the artifact -->\n"
+    lines = [head.rstrip(), ""]
+    for c in items:
+        blocking = (c.get("blocking_event") or "").strip()
+        expected = (c.get("expected_unblock_path") or "").strip()
+        if expected:
+            lines.append(f"- **{blocking}** — {expected}")
+        else:
+            lines.append(f"- {blocking}")
+    return "\n".join(lines) + "\n"
+
+
+def render_resolution_history(artifact):
+    """`## Resolution History` — optional log of how the investigation
+    has evolved. Conditional: empty when resolution_history[] empty."""
+    items = sort_by_date(
+        [r for r in (artifact.get("resolution_history") or []) if isinstance(r, dict)],
+        "date",
+    )
+    if not items:
+        return ""
+    lines = ["## Resolution History", "",
+             "| Date | Event |",
+             "|---|---|"]
+    for r in items:
+        date = r.get("date") or ""
+        event = (r.get("event") or "").replace("|", "\\|")
+        lines.append(f"| {date} | {event} |")
+    return "\n".join(lines) + "\n"
+
+
+def render_body_investigation(artifact, fm):
+    """Investigation-type body composition. Section order matches the
+    schema's required_sections: Question → Description → Hypotheses →
+    Cited Findings → Hypothesis Evaluation → Open Questions →
+    Best-Current Answer → (Counter-Evidence if populated) → (Closure
+    Path when paused or populated) → (Resolution History if populated)
+    → Associated Nodes.
+
+    Hypothesis Evaluation, Best-Current Answer, and Counter-Evidence
+    each carry their own **Sources:** rollup; the
+    investigation_hypothesis_citation check enforces non-empty rollups
+    on these speculation-tolerant prose surfaces."""
+    title = render_title_investigation(artifact).rstrip("\n") + "\n"
+    sections = [
+        render_question(artifact, fm),
+        render_description(artifact),
+        render_hypotheses(artifact),
+        render_cited_findings(artifact),
+        render_hypothesis_evaluation(artifact),
+        render_open_questions(artifact),
+        render_best_current_answer(artifact),
+        render_counter_evidence(artifact),            # conditional
+        render_closure_path(artifact, fm),            # conditional / paused
+        render_resolution_history(artifact),          # conditional
+        render_associated_nodes(),
+    ]
+    sections = [s for s in sections if s]
+    joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
+    return title + "\n" + joined
+
+
+# =============================================================================
+# Top-level dispatch
+# =============================================================================
+
 def render_body(artifact, node_type, fm):
     """Dispatch by node_type. `fm` is the existing node frontmatter
     (needed for kind / archetype context the renderer can't derive from
@@ -2186,6 +2635,10 @@ def render_body(artifact, node_type, fm):
         return render_body_organization(artifact, fm.get("kind"))
     if node_type == "location":
         return render_body_location(artifact, fm)
+    if node_type == "finding":
+        return render_body_finding(artifact, fm)
+    if node_type == "investigation":
+        return render_body_investigation(artifact, fm)
     sys.exit(f"ERROR: build-from-research.py does not yet support node_type {node_type!r}")
 
 
@@ -2261,9 +2714,7 @@ def main():
         sys.exit(f"ERROR: unknown content-dir {dir_name!r} in target_node")
     if node_type not in SUPPORTED_TYPES:
         sys.exit(f"ERROR: build-from-research.py currently supports "
-                 f"{sorted(SUPPORTED_TYPES)} only (got {node_type!r}). "
-                 f"See meta/roadmap.md for the renderer status of the "
-                 f"finding type.")
+                 f"{sorted(SUPPORTED_TYPES)} only (got {node_type!r}).")
 
     node_path = REPO_ROOT / dir_name / f"{slug}.md"
     if not node_path.exists():

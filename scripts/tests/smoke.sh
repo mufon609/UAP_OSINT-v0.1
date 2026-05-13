@@ -111,8 +111,9 @@ test_scaffold "media imagery-other" media --kind imagery-other --slug __smoke-me
 test_scaffold "media derivative"    media --kind video --derivation-of /media/__smoke-media-video --slug __smoke-media-deriv
 
 # --- single-variant types ---
-test_scaffold "location" location --slug __smoke-location
-test_scaffold "finding"  finding  --slug __smoke-finding --entities "/people/a,/organizations/b,/events/c"
+test_scaffold "location"      location      --slug __smoke-location
+test_scaffold "finding"       finding       --slug __smoke-finding
+test_scaffold "investigation" investigation --slug __smoke-investigation --question "Does the test question resolve?"
 
 # --- research artifact (uses the gov-doc fixture as target) ---
 artifact_out="$(python3 scripts/research-scaffold.py --target documents/__smoke-doc-gov 2>&1)"
@@ -289,6 +290,43 @@ for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-cont
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("review-coverage $ok_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+done
+
+# --- research artifact: finding + investigation dispatch ---
+# Scaffolder emits pattern_statement: "" and establishes / does_not_establish
+# / contradictions / timeline / quotes empty lists on finding artifacts;
+# hypotheses / cited_findings / hypothesis_evaluation / open_questions
+# / counter_evidence / closure_path / resolution_history empty lists +
+# best_current_answer: {} on investigation artifacts. Validator
+# enforces type-conditional presence; renderer pipeline exercises the
+# F.7 finding + investigation body composition.
+for syn_target in "findings/__smoke-finding" "investigations/__smoke-investigation"; do
+    artifact_out="$(python3 scripts/research-scaffold.py --target "$syn_target" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("research-scaffold $syn_target — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
+        fail=$((fail + 1))
+        continue
+    fi
+    syn_slug="${syn_target##*/}"
+    created_files+=("meta/research/$syn_slug.yaml")
+    artifact_out="$(python3 scripts/validate-research.py "meta/research/$syn_slug.yaml" --quiet 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("research-scaffold $syn_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
+        fail=$((fail + 1))
+    else
+        pass=$((pass + 1))
+    fi
+    # Exercise the renderer pipeline
+    artifact_out="$(python3 scripts/build-from-research.py "meta/research/$syn_slug.yaml" 2>&1)"
+    rc=$?
+    if [ "$rc" -ne 0 ]; then
+        failures+=("build-from-research $syn_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
         fail=$((fail + 1))
     else
         pass=$((pass + 1))

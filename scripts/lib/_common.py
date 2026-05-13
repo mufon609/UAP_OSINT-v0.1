@@ -480,11 +480,11 @@ def compute_sha256(file_path):
 
 
 # Content-node types the renderer (build-from-research.py) and the
-# coverage reviewer (review-coverage.py) both support. Excludes
-# ``finding`` until the finding renderer ships (see ``meta/roadmap.md``).
+# coverage reviewer (review-coverage.py) both support.
 SUPPORTED_TYPES = frozenset({
     "document", "person", "event", "transcript",
     "media", "organization", "location",
+    "finding", "investigation",
 })
 
 

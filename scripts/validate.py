@@ -111,7 +111,6 @@ from checks import BaseContext, Issue, NodeContext
 from checks import chronological_tables as ck_chronological_tables
 from checks import conditionally_required as ck_conditionally_required
 from checks import doc_form_archival_status as ck_doc_form_archival_status
-from checks import finding_cross_ref as ck_finding_cross_ref
 from checks import frontmatter_parse as ck_frontmatter_parse
 from checks import frontmatter_required as ck_frontmatter_required
 from checks import governance_files as ck_governance_files
@@ -150,7 +149,6 @@ _NODE_CHECKS = [
     ck_chronological_tables,
     ck_link_resolution,            # writes to ctx.broken_links; yields no Issues
     ck_table_cell_word_budget,
-    ck_finding_cross_ref,
 ]
 
 

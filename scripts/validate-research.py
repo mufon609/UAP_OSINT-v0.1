@@ -80,7 +80,10 @@ from checks import contracts as ck_contracts
 from checks import corroboration_items as ck_corroboration_items
 from checks import cross_refs as ck_cross_refs
 from checks import entities_referenced as ck_entities_referenced
+from checks import finding_no_investigation_refs as ck_finding_no_investigation_refs
 from checks import iff_section as ck_iff_section
+from checks import investigation_closure_path_when_paused as ck_investigation_closure_path_when_paused
+from checks import investigation_hypothesis_citation as ck_investigation_hypothesis_citation
 from checks import key_personnel as ck_key_personnel
 from checks import location_relationships as ck_location_relationships
 from checks import media_versioning as ck_media_versioning
@@ -139,12 +142,19 @@ def _read_target_frontmatter(target_path):
 
 def _discover_target(data):
     """Discover target_type / target_archetype / target_kind /
-    target_derivation_of from the artifact's target_node and the
-    target node's frontmatter. Returns 4-tuple of None when target_node
-    isn't set or doesn't resolve."""
+    target_derivation_of / target_status from the artifact's
+    target_node and the target node's frontmatter. Returns 5-tuple
+    of None when target_node isn't set or doesn't resolve.
+
+    ``target_status`` is the node's frontmatter ``status`` value
+    (e.g., ``open`` / ``paused`` / ``closed`` for investigation,
+    ``documented`` / ``in-progress`` / ``superseded`` for finding).
+    Used by checks that gate on the node's status — currently
+    ``investigation_closure_path_when_paused``.
+    """
     target_node = data.get("target_node") or ""
     if "/" not in target_node:
-        return None, None, None, None
+        return None, None, None, None, None
 
     content_dir_name = target_node.split("/", 1)[0]
     reverse_map = {v: k for k, v in content_type_dirs().items()}
@@ -152,7 +162,7 @@ def _discover_target(data):
 
     target_path = REPO_ROOT / f"{target_node}.md"
     if not target_path.exists():
-        return target_type, None, None, None
+        return target_type, None, None, None, None
 
     fm = _read_target_frontmatter(target_path)
     target_archetype = fm.get("archetype") if target_type == "person" else None
@@ -160,8 +170,9 @@ def _discover_target(data):
         fm.get("kind") if target_type in ("event", "transcript", "organization") else None
     )
     target_derivation_of = fm.get("derivation_of") if target_type == "media" else None
+    target_status = fm.get("status")
 
-    return target_type, target_archetype, target_kind, target_derivation_of
+    return target_type, target_archetype, target_kind, target_derivation_of, target_status
 
 
 # =============================================================================
@@ -212,6 +223,10 @@ _ARTIFACT_CHECKS = [
     ck_ownership_timeline,
     ck_top_scope_activity,
     ck_location_relationships,
+    # Finding / investigation type-specific checks (F.7)
+    ck_finding_no_investigation_refs,
+    ck_investigation_hypothesis_citation,
+    ck_investigation_closure_path_when_paused,
     # Whole-artifact analytical checks
     ck_cross_refs,
     ck_prose_drift,
@@ -276,9 +291,8 @@ def validate_artifact(path, base_ctx):
         return issues
 
     # Target discovery (reads target node's frontmatter)
-    target_type, target_archetype, target_kind, target_derivation_of = (
-        _discover_target(data)
-    )
+    (target_type, target_archetype, target_kind,
+     target_derivation_of, target_status) = _discover_target(data)
 
     # Full ResearchContext for per-artifact checks. Reuses the parsed
     # data from above — single parse per artifact.
@@ -287,6 +301,7 @@ def validate_artifact(path, base_ctx):
         parse_error=parse_error,
         target_type=target_type, target_archetype=target_archetype,
         target_kind=target_kind, target_derivation_of=target_derivation_of,
+        target_status=target_status,
     )
 
     for check_module in _ARTIFACT_CHECKS:

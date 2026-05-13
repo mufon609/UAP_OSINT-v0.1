@@ -104,7 +104,7 @@ sources/
   video/                    video-adjacent content
 
 people/ organizations/ documents/ events/ transcripts/
-media/ locations/ findings/
+media/ locations/ findings/ investigations/
                             content nodes (human-readable narrative)
 
 prompts/                    paste-ready session prompts — see prompts/README.md for the index
@@ -113,8 +113,8 @@ prompts/                    paste-ready session prompts — see prompts/README.m
 **Forking for a different topic.** Delete `meta/topic/`,
 `meta/research/`, and the contents of `/people/`, `/organizations/`,
 `/documents/`, `/events/`, `/transcripts/`, `/media/`, `/locations/`,
-`/findings/`, and `sources/{category}/` (keep the directories
-themselves); empty `sources/manifest.yaml`. Create your own
+`/findings/`, `/investigations/`, and `sources/{category}/` (keep the
+directories themselves); empty `sources/manifest.yaml`. Create your own
 `meta/topic/overview.md` — its frontmatter `topic` and `display_name`
 fields drive every UI surface that names the subject (rendered
 section headers like `## {display_name} Relevance`, archiver
@@ -146,9 +146,16 @@ prompts, validators, test suite — is topic-neutral toolkit.
   provenance, and optional verbatim Key Passages for legible text or
   audible speech.
 - **location** — non-institutional physical sites
-- **finding** — cross-entity patterns that span 3+ nodes
+- **finding** — multi-source primary-source patterns that become visible
+  only by reading multiple sources together (convergence or divergence
+  on a single question)
+- **investigation** — open-ended hypothesis evaluation that consumes
+  findings + entity-node facts. Speculation-tolerant; per-hypothesis
+  status verdicts; cited findings + per-hypothesis sources rollups
 
-Full specification in `meta/schema.yaml`.
+Full specification in `meta/schema.yaml`. See `meta/conventions.md`
+"Three-layer evidentiary architecture" for the fact / finding /
+investigation bright line.
 
 ---
 

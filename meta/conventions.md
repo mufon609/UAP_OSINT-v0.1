@@ -702,28 +702,120 @@ documented separately.
 
 ---
 
-## Finding nodes
+## Three-layer evidentiary architecture
 
-Some patterns span multiple entities. When an analytical narrative about
-a cross-entity pattern would otherwise be duplicated across 3+ entity
-nodes, create a single `/findings/{slug}` node.
+The repository carries three distinct evidentiary layers. Each has a
+different role; the layers' boundaries are load-bearing for the
+discipline.
 
-**Creation threshold:**
-- Pattern spans 3+ entity nodes, OR
-- Analytical narrative would exceed ~200 words in any single entity
-  node's cell, OR
-- The same text is about to be written into 3+ different nodes.
+### Entity nodes — facts
 
-Below these thresholds, keep the analysis in the single most relevant
-entity node. Don't create a finding for every pairwise cross-reference.
+Entity nodes (people, organizations, documents, events, transcripts,
+media, locations) carry **facts**: single-source attestations,
+including load-bearing facts that name other entities. The fact
+"Grusch on JRE #2065 named Lockheed Martin as the contractor he
+provided to the ICIG" is a fact about Grusch — it lives on his
+person node and on the JRE transcript node and (because it's load-
+bearing for Lockheed Martin) on the Lockheed Martin organization
+node. Same primary source; three entity-side fact records. None of
+them speculates beyond what the source attests.
 
-Entity nodes cited by a finding carry a brief summary + link back to
-the finding, not the full narrative. The finding node is
-the single canonical home for that pattern.
+Entity nodes keep cross-node links, `## Associated Nodes`, structural
+cross-references (Affiliations rows pointing at orgs, Speakers
+pointing at persons, transcript `derived_from`, etc.), and prose-
+section references to other entities where the primary source
+attests them. Those are facts, not findings.
 
-Findings are not verdicts. They document cross-entity patterns observed
-in primary sources and flag the analytical questions each pattern
-raises — without adjudicating intent or assigning responsibility.
+### Finding nodes — multi-source patterns
+
+A finding documents a **pattern that becomes visible only by reading
+multiple primary sources together**. No single source attests the
+pattern; the synthesis-of-reading-together produces information not
+present in any constituent attestation. Multi-source convergence
+(or divergence on a single question) is what makes it a finding,
+not the number of entities it touches.
+
+Findings cite primary sources DIRECTLY via `evidence[].source.path`,
+never entity-node markdown files. The `attestor_path` field on each
+evidence row captures who attested; the citation itself goes to the
+source.
+
+Findings duplicate primary-source content from entity nodes BY
+DESIGN. If a finding cites material the relevant entity node
+doesn't yet attest, the entity node is updated first (primary
+source confirmed + archived) before the finding can use it.
+
+Findings DO NOT REFERENCE the investigations that consume them —
+directional contract enforced by the `finding_no_investigation_refs`
+check. Findings stay cluster-neutral so they can be cited from
+multiple investigations.
+
+Findings are not verdicts. They document the multi-source pattern
+and stop there — what the convergence establishes, what it doesn't
+establish, where it diverges. Hypothesis evaluation belongs on
+investigation nodes.
+
+### Investigation nodes — speculation-tolerant hypothesis evaluation
+
+An investigation pursues an open question or hypothesis by consuming
+findings and entity-node facts. Investigations are
+**speculation-tolerant** — the layer where hypotheses are evaluated
+against the primary-source record. Per-hypothesis status verdicts
+capture the current evidentiary standing as free-text phrases
+("Substantiated as allegation on record"; "Not established by
+primary sources"; etc.).
+
+Investigations link to and summarize findings via `cited_findings[]`
+and per-hypothesis `sources[]` rollups; findings do not link back.
+Investigations build cases — proving, disproving, or further
+pursuing the question.
+
+Investigation prose surfaces (hypothesis_evaluation, best_current_answer,
+counter_evidence, open_questions, closure_path) are NOT subject to
+the prose-drift check (speculation by design). Instead, the
+`investigation_hypothesis_citation` check requires each
+hypothesis subsection to carry a non-empty `sources[]` rollup
+naming the findings or entity-node anchors the contributor drew on.
+
+### Bright line — fact vs finding
+
+A **fact** = a single attestation from a single primary source. Lives
+on the relevant entity nodes (speaker's node, named-subject's node,
+document / transcript / event node where attested). May reference
+other entities (because the source names them) but doesn't synthesize
+across sources.
+
+A **finding** = a pattern that becomes visible only when multiple
+primary sources are read together. No single source establishes the
+pattern; the synthesis is the cross-source convergence (or
+divergence on a single question).
+
+Grusch on JRE naming Lockheed = fact (one source, one statement).
+Lockheed's consistent refusal to deny across three Liberation Times
+moments over 16 months = finding (three sources, the pattern is the
+consistency). Lacatski authoring SD004 page 1 (anonymous in SD004,
+named in Elizondo QFR, entered into House record) = finding (three-
+source chain establishing authorship).
+
+### Promotion thresholds
+
+An open question or caveat below the investigation threshold stays
+structurally encoded on the entity node — empty period_end fields
+with prose hedges, naming_quirks with `resolution: disputed`, etc.
+Don't track sub-investigation items in a workflow surface; the
+entity node is the canonical record of what the corpus knows.
+
+An open question becomes an investigation when it picks up ANY of:
+active pursuit (someone gathering primary sources to answer it),
+cross-entity scope (≥2 entity nodes), competing answers being
+weighed (≥2 hypotheses with primary-source backing on different
+sides), or analytical content requiring sustained evaluation
+(≥ ~100 words).
+
+A finding is justified when the multi-source convergence pattern
+emerges — typically when 3+ independent sources converge on (or
+diverge on) a single question. The pattern-shape is what matters,
+not the entity count.
 
 ---
 
