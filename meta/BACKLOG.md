@@ -582,8 +582,8 @@ Wayback link is the actual evidence, not the hostname).
 
 **If revisited, the interesting move** is not removing the markers
 but tightening them so the evidence is always as checkable as the
-SHA256 case. That's different analysis from BACKLOG A2 and
-deserves its own design pass.
+SHA256 case. That's different analysis from the Phase F corpus
+audit and deserves its own design pass.
 
 **Recommendation.** Defer. Not a correctness issue (Provenance rows
 are factual metadata with evidence attached; the marker is a
@@ -773,9 +773,10 @@ failure modes.
 ### C10. Subdivide `meta/toolkit-notes/` when retrospective files accumulate
 
 `meta/toolkit-notes/` currently holds three long-form retrospective /
-design files: `corpus-audit-2026-04.md` (closeout for BACKLOG A2),
-`cross-artifact-consistency-check.md` (technique doc surfaced from
-BACKLOG C1), `pilot-failure-2026-04-17.md` (Step C postmortem). At
+design files: `corpus-audit-2026-04.md` (Phase F corpus-audit
+closeout), `cross-artifact-consistency-check.md` (technique doc
+surfaced from the location-reference normalization work),
+`pilot-failure-2026-04-17.md` (Step C postmortem). At
 n=3 a flat directory reads fine. As the toolkit accumulates more
 closeouts and design records, the directory will get noisier than
 scannable.
