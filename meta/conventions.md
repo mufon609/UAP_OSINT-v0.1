@@ -362,7 +362,67 @@ Each node type renders a filtered view of the same universal primitive:
   by `statement_date`, surfacing evidentiarily-distinctive moments.
 - **Document / transcript / media / organization / location** →
   `## Key Passages`, verbatim excerpts of what the source says about
-  its subject.
+  its subject — sorted by `statement_date` (see "Key Passages
+  ordering" below).
+
+### Key Passages ordering
+
+Chronological-by-`statement_date` is the corpus default for every
+quote-bearing section that surfaces source content as a list:
+person `## Statements`, hearing `## Key Testimony`, and the
+universal `## Key Passages` on documents / transcripts / media /
+organizations / locations. The renderer sorts ascending by
+`statement_date` when populated; entries without `statement_date`
+fall through to artifact-entry order (the order they appear in the
+research artifact's `quotes[]` list).
+
+**Population convention.** `statement_date` should be populated
+whenever the source attests a date. Per-type guidance:
+
+- **People / organizations / events / transcripts**: virtually every
+  quote has an attested date (the speaker's testimony, the
+  organization's press release, the hearing date, the broadcast
+  date). Populate; partial population produces mixed ordering that
+  surprises readers.
+- **Documents**: most documents have publication or signing dates;
+  populate when attested. Quotes from undated material (e.g., a
+  reference document with no edition date in source) legitimately
+  omit `statement_date`.
+- **Locations**: source quotes about a location may have no semantic
+  date anchor (geological description, ownership-history narrative
+  spanning years, etc.); artifact-entry order is the acceptable
+  default when no date is meaningful.
+
+When a contributor faces partial population on an artifact — some
+quotes with dates, some without — choose one: either populate every
+attestable quote and accept artifact-entry order for the legitimately
+date-less ones (renders the dated ones chronologically with the
+undated trailing in artifact-entry order), or leave the field blank
+on all quotes to render the whole section in artifact-entry order.
+Mixed population is the failure mode the convention exists to
+prevent.
+
+**In-header epistemic-hedge pattern.** Chronological ordering can
+promote a low-evidentiary-weight quote to position 1 simply because
+it's earliest. When a quote's evidentiary weight is meaningfully
+below the median for its artifact — claim-of-record, self-attested,
+secondary-source, contested — the `significance` H3 header carries
+an explicit hedge phrase so readers see the epistemic framing before
+they read the quote text. Examples:
+
+- "DeLonge email to Podesta — claim-of-record regarding McCasland,
+  Roswell material, and Wright-Patterson AFB (claim made by DeLonge;
+  not independently verified)"
+- "Self-attested capacity, contested by AARO record"
+- "Claim-of-record — secondary-source attestation only"
+
+The hedge appears in the H3 header where readers see it BEFORE
+reading the blockquote. The TTSA artifact's q5 DeLonge-Podesta email
+is the surfacing case: chronological promotion to position 1 (over
+later SEC filings) risked the ordering being read as an epistemic
+endorsement; the hedge phrase keeps the order chronological but
+inoculates against that reading. No schema change; contributor
+discipline at the `significance` field.
 
 ### Hearing events as venues
 

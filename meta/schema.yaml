@@ -843,10 +843,16 @@ types:
       #   whistleblower artifacts so the Claim Inventory renderer can
       #   filter). Optional on all artifacts.
       # statement_date: YYYY-MM-DD; YYYY-MM or YYYY tolerated for imprecise
-      #   events. On person artifacts, used by the Phase II renderer to
-      #   sort Statements chronologically within each subsection
-      #   (earliest first). Required on person-artifact quotes when the
-      #   renderer needs to order them; optional otherwise.
+      #   events. Used by the Phase II renderer to sort every quote-bearing
+      #   section chronologically (ascending by date) — person Statements,
+      #   hearing Key Testimony, and Key Passages on documents / transcripts
+      #   / media / organizations / locations. Entries without
+      #   statement_date fall through to artifact-entry order. Partial
+      #   population produces mixed ordering and is the failure mode the
+      #   convention warns against (see meta/conventions.md "Key Passages
+      #   ordering"). Populate whenever the source attests a date; quotes
+      #   from legitimately undated material (some location quotes, some
+      #   reference documents) may omit the field.
 
     quote_source:
       required: [path, location]

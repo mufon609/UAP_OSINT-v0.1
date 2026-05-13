@@ -232,8 +232,8 @@ the removal.
 
 Items that touch the renderer and naturally batch into a single
 polish pass — bundling reduces churn vs. shipping each as a
-separate touch. B1 retired 2026-05-13 (Phase 1 + 2 shipped);
-tombstone below for ID-stable history.
+separate touch. B1 and B3 retired 2026-05-13; tombstones below
+for ID-stable history.
 
 ### B1. Artifact-attested nuance not reaching readers — RETIRED 2026-05-13
 
@@ -337,104 +337,45 @@ boilerplate. Currently affects AARO; pattern likely recurs corpus-wide.
 
 ---
 
-### B3. Codify Key Passages ordering convention in `conventions.md`
+### B3. Codify Key Passages ordering convention — RETIRED 2026-05-13
 
-The node-body renderer sorts Key Passages (and Key Testimony on
-hearing events) by `statement_date` when the field is present on
-entries. The ordering is currently an implicit behavior — it is
-documented in `meta/conventions.md` only for hearing-kind Key
-Testimony ("verbatim passages sorted by `statement_date`") and
-person Statements (sorted by `statement_date` within Direct
-Observations / Other Statements subsections); for document /
-transcript / media / organization / location Key Passages, neither
-schema.yaml nor conventions.md specifies ordering. Behavior is
-emergent: artifacts with `statement_date` populated render
-chronologically; artifacts without it render in artifact-entry
-order; partial population produces mixed ordering.
+Three rules landed in `meta/conventions.md` as a single new "Key
+Passages ordering" section, plus a schema-comment refresh on
+`quote_entry.statement_date`:
 
-**Concrete consequence** — TTSA audit. Populating `statement_date`
-on all 44 quotes triggered chronological sort, which promoted
-q5 (DeLonge email to Podesta, 2016-01-25) from mid-list to position
-1 — ahead of the 2017-07-10 SEC 1-A filings. The DeLonge email is
-the weakest-sourced entry in the set (self-attestation about
-Roswell material and Wright-Patterson AFB, not independently
-verified), and placing it at position 1 risks the chronological
-convention being read as an epistemic endorsement.
+  - **Rule 1** — chronological-by-`statement_date` declared the
+    corpus default for every quote-bearing list section (person
+    Statements, hearing Key Testimony, and universal Key Passages
+    on documents / transcripts / media / organizations /
+    locations). Previously documented only for person Statements
+    and hearing Key Testimony; now codified universally.
 
-Workaround applied at the time: tighten q5's `significance` header
-to "DeLonge email to Podesta — claim-of-record regarding McCasland,
-Roswell material, and Wright-Patterson AFB (claim made by DeLonge;
-not independently verified)". The in-header framing makes the
-weakest attestation carry its own epistemic hedge at the top of the
-passage, independent of list position. Pattern recommendation
-codified as Rule 3 below.
+  - **Rule 2** — population convention with per-type guidance.
+    People / organizations / events / transcripts: virtually
+    always populate (95-100% corpus coverage today). Documents:
+    populate when attested (40% coverage today, gap is legitimate
+    undated material). Locations: artifact-entry order is the
+    acceptable default when source quotes lack semantic dates
+    (0% coverage today). Mixed population on a single artifact
+    is the failure mode the convention warns against. The
+    optional validate-research.py warning add was deferred —
+    docs convention is sufficient as a contributor-discipline
+    guidance; revisit if drift surfaces.
 
-**Convention to codify:**
+  - **Rule 3** — in-header epistemic-hedge pattern codified.
+    When a quote's evidentiary weight is meaningfully below
+    artifact median (claim-of-record, self-attested, secondary-
+    source, contested), the `significance` H3 header carries an
+    explicit hedge phrase. The TTSA q5 DeLonge-Podesta email is
+    the surfacing case (chronological promotion to position 1
+    over later SEC filings; hedge phrase keeps the order
+    chronological but inoculates against the reading as
+    endorsement). No schema change; contributor discipline at the
+    `significance` field.
 
-1. Chronological ordering is the corpus default for Key Passages
-   across all node types that support `statement_date`. Same rule
-   as the explicit hearing Key Testimony rule — extend the scope
-   clause in `schema.yaml` to cover all Key-Passages sections, and
-   cross-reference the behavior in `conventions.md`.
-2. `statement_date` should be universally populated on quotes
-   whenever the source attests a date. Partial population produces
-   mixed-order rendering that confuses readers; a fully-populated
-   artifact produces clean chronology. Consider promoting
-   `statement_date` from optional to required where the source has
-   a date (validate-research.py can warn when a quote has no
-   statement_date but the source has an attested date).
-3. In-header epistemic flagging is the hedge for weak attestations
-   that would otherwise claim position 1 purely on chronology. The
-   convention: when a quote's evidentiary weight is meaningfully
-   below the median for its artifact (claim-of-record, self-
-   attested, secondary-source, contested), the `significance`
-   header carries an explicit hedge phrase — "claim made by X; not
-   independently verified" / "claim-of-record" / "self-attested,
-   contested" — so readers see the epistemic framing before they
-   read the quote text. No schema change; discipline at the
-   contributor layer.
-
-**Scope note.** Rule 1 is a documentation change (schema.yaml
-comment clarification + a `conventions.md` section on Key Passages
-ordering). Rule 2 is a schema policy decision (whether to promote
-`statement_date` from optional to required-when-attested, and
-whether to add a validate-research.py warning). Rule 3 is a
-contributor-discipline convention — codifying the hedge-phrase
-pattern with examples in `conventions.md`. All three address the
-same emergent behavior and should land in a single convention
-pass.
-
-**Current `statement_date` population** (corpus-wide, 827 quotes
-across 28 artifacts):
-
-| Target type | Populated / total | % |
-|---|---|---|
-| events | 21 / 21 | 100% |
-| organizations | 247 / 247 | 100% |
-| transcripts | 157 / 157 | 100% |
-| people | 284 / 286 | 99.3% |
-| documents | 40 / 99 | 40.4% |
-| locations | 0 / 17 | 0% |
-| **TOTAL** | **749 / 827** | **90.6%** |
-
-Documents and locations are the gap. Documents have a partial-
-population pattern (some doc artifacts populated, others not);
-locations have zero coverage (suggesting the field was never
-prioritized for location Key Passages — worth confirming whether
-location source dates are even meaningful or whether the section
-is structurally orderless). Rule 2 should land alongside per-type
-guidance on what to do when no source date is attestable.
-
-**Pattern confirmation status.** Multiple organization-node audits
-have shipped since TTSA surfaced this (AARO, UAPTF, OUSD-IS, IPMO,
-Sancorp, Arlo) — all populated `statement_date` and rendered
-chronologically without ordering concerns surfacing. The hedge-
-phrase convention (Rule 3) appears to hold but hasn't been
-formally codified. Worth a single convention-pass session.
-
-Surfaced: TTSA audit — q5 DeLonge-Podesta email promoted from
-position 5 to position 1 after `statement_date` adoption; hedged
-in-header in the same commit.
+Schema comment on `quote_entry.statement_date` updated to
+reflect universal use (was: person-only sort surface; now: all
+quote-bearing sections sort surface).
 
 ---
 
