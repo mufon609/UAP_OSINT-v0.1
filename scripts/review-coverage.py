@@ -51,7 +51,7 @@ from lib._common import (
     resolve_cli_path,
 )
 
-from checks import BaseContext, ResearchContext
+from checks import BaseContext, Issue, ResearchContext
 from checks import artifact_parse as ck_artifact_parse
 from checks import boundary as ck_boundary
 from checks import coverage as ck_coverage
@@ -200,7 +200,20 @@ def review_artifact(artifact_path, base_ctx):
         return issues, None
 
     for check_module in _REVIEW_CHECKS:
-        issues.extend(check_module.check(ctx))
+        check_name = getattr(check_module, "CHECK_NAME", None) or check_module.__name__
+        try:
+            fresh = list(check_module.check(ctx))
+        except Exception as e:
+            import traceback
+            fresh = [Issue(
+                ctx.rel, "error",
+                f"check {check_name!r} crashed: {type(e).__name__}: {e}\n"
+                f"{traceback.format_exc()}",
+                check_name=check_name, fatal=True,
+            )]
+        issues.extend(fresh)
+        if any(i.fatal for i in fresh):
+            break
     return issues, None
 
 

@@ -107,7 +107,7 @@ from lib._common import (
 
 # Per-check modules. Each named check lives at scripts/checks/{name}.py;
 # orchestrator dispatches via the explicit step lists below.
-from checks import BaseContext, NodeContext
+from checks import BaseContext, Issue, NodeContext
 from checks import chronological_tables as ck_chronological_tables
 from checks import conditionally_required as ck_conditionally_required
 from checks import doc_form_archival_status as ck_doc_form_archival_status
@@ -199,7 +199,20 @@ def validate_node(path, base_ctx):
     )
 
     for check_module in _NODE_CHECKS:
-        issues.extend(check_module.check(node_ctx))
+        check_name = getattr(check_module, "CHECK_NAME", None) or check_module.__name__
+        try:
+            fresh = list(check_module.check(node_ctx))
+        except Exception as e:
+            import traceback
+            fresh = [Issue(
+                node_ctx.rel, "error",
+                f"check {check_name!r} crashed: {type(e).__name__}: {e}\n"
+                f"{traceback.format_exc()}",
+                check_name=check_name, fatal=True,
+            )]
+        issues.extend(fresh)
+        if any(i.fatal for i in fresh):
+            break
 
     return issues
 

@@ -64,7 +64,7 @@ from lib._common import (
     resolve_cli_path,
 )
 
-from checks import BaseContext, ResearchContext
+from checks import BaseContext, Issue, ResearchContext
 
 # Pre-parse checks (raw line scans before strict_yaml_load)
 from checks import yaml_colon_space as ck_yaml_colon_space
@@ -290,7 +290,20 @@ def validate_artifact(path, base_ctx):
     )
 
     for check_module in _ARTIFACT_CHECKS:
-        issues.extend(check_module.check(ctx))
+        check_name = getattr(check_module, "CHECK_NAME", None) or check_module.__name__
+        try:
+            fresh = list(check_module.check(ctx))
+        except Exception as e:
+            import traceback
+            fresh = [Issue(
+                ctx.rel, "error",
+                f"check {check_name!r} crashed: {type(e).__name__}: {e}\n"
+                f"{traceback.format_exc()}",
+                check_name=check_name, fatal=True,
+            )]
+        issues.extend(fresh)
+        if any(i.fatal for i in fresh):
+            break
 
     return issues
 
