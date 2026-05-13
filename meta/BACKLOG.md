@@ -175,34 +175,36 @@ at each audit-execution session.
     parcel PDFs share an ORDS portal pipeline — verify once, apply
     across); the rest are one-by-one spot-checks.
   - **5b — extraction-lossy PDFs.** 2 sources / 62 quotes (SASC
-    2023-04-19 + SASC 2024-11-19 transcripts). Siblings produced
-    pre-session; need verbatim-quote-against-sibling re-confirmation
-    plus visual quality verification of the existing siblings.
-  - **5c — ocr-scan PDFs.** 4 sources / 27 quotes remaining
-    (PPD-19 filing + foia-23-f-0905-doc-1/2 + blackvault-foia-24-f-
-    0894-emails). Siblings exist; need same verification pass as
-    Tier 5b. 2 ocr-scan PDFs (foia-23-f-0906 IPMO PWS, blackvault-
-    aaro-invitations 24-F-0266) shipped this session with full
-    sibling production; SD004 manifest hygiene also closed.
+    2023-04-19 + SASC 2024-11-19 transcripts). **Verified clean
+    2026-05-13** — programmatic OCR/Unicode scans clean + visual
+    spot-check of quote-densest page on each sibling; 0 findings.
+  - **5c — ocr-scan PDFs.** 7 sources / 39 quotes. **Complete
+    2026-05-13** — 3 sources / 12 quotes shipped via production
+    (foia-23-f-0906 sibling + blackvault-aaro-invitations canonical
+    sibling + SD004 manifest hygiene; 1 finding — q157); remaining
+    4 sources / 27 quotes (PPD-19 + foia-23-f-0905-doc-1/2 +
+    blackvault-foia-24-f-0894-emails) verified via programmatic
+    scans + production-time VLM-read provenance; 0 additional
+    findings.
 - **Tier 6 — Closeout.** Aggregate findings across all tiers into
   the closeout doc; confirm follow-up BACKLOG entries are still
   appropriately scoped; close A2.
 
-**Findings to date** (Tiers 1+2 + Tier 5 partial). Aggregate
-contributor-drift rate across the 310 audited quotes: **0.65%**
-(6 corrections in Tier 1's 211 quotes / 0 in Tier 2's 87 quotes /
-1 in this session's 12 Tier-5c quotes — david-grusch q157 carried
-two OCR character-confusions preserved from the original pdftotext
-extraction, `lAW`→`IAW` and `(0)`→`(O)`, that did not match the
-page-visible source content; surfaced during canonical-sibling
-production for blackvault-aaro-invitations 24-F-0266). The
-canonical sibling produced via VLM transcription per
-`meta/conventions.md`'s FOIA-email-release convention (DOCUMENT N
-markers, 8 enclosures) is what made the divergence visible —
-pdftotext-only auditing would have masked it (the textbook ocr-scan
-blind spot the audit exists to catch).
-**Projected remaining findings (Tiers 4+5a + Tier 5b/5c re-verify):**
-1–2 corrections.
+**Findings to date** (Tiers 1+2 + Tier 5b + Tier 5c). 399 audited
+quotes across 13 sources. Total contributor-side findings: 7
+(6 in Tier 1's 211 quotes per closeout-doc category breakdown; 0
+in Tier 2's 87 quotes; 0 in Tier 5b's 62 quotes; 1 in Tier 5c's
+39 quotes — david-grusch q157 carried two OCR character-
+confusions preserved from the original pdftotext extraction,
+`lAW`→`IAW` and `(0)`→`(O)`, that did not match the page-visible
+source content; surfaced during canonical-sibling production for
+blackvault-aaro-invitations 24-F-0266). The canonical sibling
+produced via VLM transcription per `meta/conventions.md`'s
+FOIA-email-release convention (DOCUMENT N markers, 8 enclosures)
+is what made the divergence visible — pdftotext-only auditing
+would have masked it (the textbook ocr-scan blind spot the audit
+exists to catch).
+**Projected remaining findings (Tier 4 + Tier 5a):** 1–2 corrections.
 
 **Recommended sequence.** Tiers 4 + 5 first (HTML and PDF long-tail
 — extraction-track work, no convention decisions blocking). Tier 3

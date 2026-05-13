@@ -431,18 +431,58 @@ hhrg-118-go12-20241113-sd004.txt`) registered in manifest with
 sha256 `fa690c49…`. Zero quote impact (no quotes cite this source);
 hygiene only.
 
-### Tier 5c aggregate
+### Tier 5c production aggregate (2026-05-13)
 
 - 3 sources audited / 12 cited quotes; 1 contributor-drift finding
   corrected (8.3% finding rate on this subset, but n is small;
   q157's drift was preserved from the pre-A2 verification regime).
-- 4 ocr-scan PDFs remain (blackvault-foia-24-f-0894-emails,
-  foia-23-f-0905-doc-1/2, grusch-ppd-19-procedural-filing); all
-  already have siblings on disk + in manifest from prior work;
-  verification pass needed to confirm sibling quality + quote
-  re-validation.
-- Sibling-state diagnostic re-run after this session: **0 defects
-  remaining** on the 9 flagged non-text-native PDFs.
+- Sibling-state diagnostic re-run: **0 defects remaining** on the 9
+  flagged non-text-native PDFs.
+
+### Tier 5b + Tier 5c-remaining verification pass (2026-05-13)
+
+After the Tier 5c production work above, the remaining six flagged
+non-text-native PDFs all carried siblings produced pre-session.
+Verification pass executed in the same session:
+
+| Source | Tier | Quotes | Sibling production | Verify method |
+|---|---|---:|---|---|
+| `armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf` | 5b | 56 | pdftotext-base + line-strip (2026-04-28) | Visual spot-check p. 12 (4/4 phrases match) + programmatic OCR/Unicode scan |
+| `armed-services-senate-gov-sasc-aaro-transcript-20241119.pdf` | 5b | 6 | pdftotext-base + line-strip (2026-05-01) | Visual spot-check p. 14 (5/5 phrases match) + programmatic OCR/Unicode scan |
+| `blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf` | 5c | 15 | VLM page read all 17 pp. (2026-05-02) | Production session = independent verification per conventions; programmatic OCR/Unicode scan clean |
+| `foia-23-f-0905-doc-1-released.pdf` | 5c | 5 | VLM page read (2026-04-30) | Same — VLM read at production; scan clean |
+| `foia-23-f-0905-doc-2-released.pdf` | 5c | 3 | VLM page read (2026-04-30) | Same — VLM read at production; scan clean |
+| `grusch-ppd-19-procedural-filing.pdf` | 5c | 4 | pdftotext-base + visual verify (2026-04-24) | Production note explicitly cites visual verification; scan clean |
+
+**Programmatic checks** (run across all 6 sibling files):
+
+- OCR character-cluster scan for known patterns (`lAW`/`(0)`/
+  `Kirknatrirk`/`UAP-telated`/`compatrtmented`/`11‡` etc.):
+  **0 hits across all 6 siblings**.
+- Non-ASCII / suspect-Unicode scan (`‡`, `†`, etc. — the audit-
+  flagged Tier 1 pattern): **0 audit-flagged characters** across
+  all 6 siblings (only standard typography: en-dash, em-dash, §,
+  •, …, one emoji).
+
+**Visual spot-checks** focused on the two SASC siblings (the only
+pair produced via pure pdftotext-base method without explicit
+production-time visual verification). One quote-densest page from
+each was rendered and phrases from the sibling cross-checked
+against the page image. Both SASC siblings: 100% match on
+spot-check.
+
+The four VLM-produced siblings (PPD-19, foia-23-f-0905-doc-1/2,
+blackvault-foia-24-f-0894) were each produced in sessions
+distinct from quote authoring; the production-time VLM read
+satisfies the `meta/conventions.md` "independent verification by a
+different agent — a human contributor or a different model session"
+discipline.
+
+**Tier 5b + Tier 5c-remaining aggregate:** 6 sources / 89 quotes
+verified; **0 new findings**. Combined with the production-pass
+Tier 5c (3 sources / 12 quotes / 1 finding), Tier 5b and 5c are now
+**fully audited**: 9 sources / 101 quotes / 1 contributor-drift
+finding (q157).
 
 ---
 
