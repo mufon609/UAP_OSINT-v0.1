@@ -43,9 +43,9 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 #### Directors
 
-| Name | Role | Period | Source |
-|---|---|---|---|
-| [`/people/james-holly`] | Acting Director | 2022-03 – 2023-10 | government/notre-dame-ipmo-memo-20220527.pdf |
+| Name | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/people/james-holly`] | Acting Director | 2022-03 – 2023-10 | government/notre-dame-ipmo-memo-20220527.pdf | First Acting Director of IPMO from establishment per the Notre Dame memorandum signed by James A. Holly on May 27, 2022. |
 
 ---
 
@@ -306,19 +306,19 @@ Per the FY 2026 OSD OP-5 budget submission, IPMO is funded under OUSD(I&S) along
 
 ### Confirmed
 
-| Organization | Relationship | Source |
-|---|---|---|
-| [`/organizations/ousd-is`] | parent | government/notre-dame-ipmo-memo-20220527.pdf |
-| [`/organizations/dod`] | parent | government/notre-dame-ipmo-memo-20220527.pdf |
-| [`/organizations/aaro`] | partner | government/osd-op5-fy24-20260501.pdf |
-| [`/organizations/dmdpo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
-| [`/organizations/osd-red-team`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
-| [`/organizations/scpo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
-| [`/organizations/cp-wmd`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
-| [`/organizations/aic`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
-| [`/organizations/le-oversight-compliance-directorate`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
-| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0064.txt |
-| [`/organizations/whs`] | contracting-agency | government/usaspending-hq003422c0064.txt |
+| Organization | Relationship | Source | Note |
+|---|---|---|---|
+| [`/organizations/ousd-is`] | parent | government/notre-dame-ipmo-memo-20220527.pdf |  |
+| [`/organizations/dod`] | parent | government/notre-dame-ipmo-memo-20220527.pdf |  |
+| [`/organizations/aaro`] | partner | government/osd-op5-fy24-20260501.pdf | Sister sub-office under OUSD(I&S) per the FY 2024 OSD OP-5 sub-office cluster (q15); AARO established four months after IPMO (July 15, 2022 vs March 1, 2022). Both share Sancorp Consulting as prime contractor. By FY 2026 the AARO bullet is no longer in this OUSD(I&S) cluster; near-identical operational language appears under Advanced Intelligence Capabilities (AIC) instead — apparent budget-document rebrand per entity e11. |
+| [`/organizations/dmdpo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
+| [`/organizations/osd-red-team`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
+| [`/organizations/scpo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
+| [`/organizations/cp-wmd`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
+| [`/organizations/aic`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
+| [`/organizations/le-oversight-compliance-directorate`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |  |
+| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0064.txt | Prime contractor across three sequential IPMO Support Services contracts (HQ003422C0064 / HQ003423C0061 / HQ003424C0046) via WHS Acquisition Directorate as 8(a) sole-source procurements. See Sancorp node for full contract detail. |
+| [`/organizations/whs`] | contracting-agency | government/usaspending-hq003422c0064.txt |  |
 
 ---
 

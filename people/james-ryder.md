@@ -54,16 +54,16 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 ### Confirmed
 
-| Organization | Role | Period | Source |
-|---|---|---|---|
-| [`/organizations/lockheed-california-company`] | Principal Investigator on AFML composites research at the Rye Canyon Research Laboratory, Valencia, CA | 1980 – 1981 | government/dtic-ada115795-mechanics-composites-review-vii-1982.pdf |
-| [`/organizations/lockheed-martin-space-systems-company`] | Vice President — leading the Advanced Technology Center for Lockheed Martin Space Systems Company and the Lockheed Martin Corporation | 2005-05 – 2011-02 | news/ivsci-leadership-snapshot.html |
-| [`/organizations/lucis-trust`] | Presenter at the Arcane School Conference (London May 2015, "The Soul Is Light. What Then Is Light?") | 2015-05 | news/lucistrust-soul-is-light-video-page-snapshot.html |
-| [`/organizations/lucis-trust`] | Presenter at the Arcane School Conference (London June 2017, "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena") | 2017-06 | news/lucistrust-arcane-conf-london-2017-snapshot.html |
-| [`/organizations/lucis-trust`] | Presenter at the Arcane School Conference (New York April 2018, "The Garment of God: Esoterically and Scientifically") | 2018-04 | news/lucistrust-arcane-conf-newyork-2018-snapshot.html |
-| [`/organizations/institute-for-venture-science`] | Chairman of the Board | – 2018-05 | news/ivsci-leadership-snapshot.html |
-| [`/organizations/international-science-foundation`] | Founder and Chairman of the Board | – 2018-05 | news/cyclostationarity-gardner-biography-snapshot.html |
-| [`/organizations/safire-project`] | Science Review Team member | – 2018-05 | news/safireproject-team-snapshot.html |
+| Organization | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/organizations/lockheed-california-company`] | Principal Investigator on AFML composites research at the Rye Canyon Research Laboratory, Valencia, CA | 1980 – 1981 | government/dtic-ada115795-mechanics-composites-review-vii-1982.pdf |  |
+| [`/organizations/lockheed-martin-space-systems-company`] | Vice President — leading the Advanced Technology Center for Lockheed Martin Space Systems Company and the Lockheed Martin Corporation | 2005-05 – 2011-02 | news/ivsci-leadership-snapshot.html |  |
+| [`/organizations/lucis-trust`] | Presenter at the Arcane School Conference (London May 2015, "The Soul Is Light. What Then Is Light?") | 2015-05 | news/lucistrust-soul-is-light-video-page-snapshot.html |  |
+| [`/organizations/lucis-trust`] | Presenter at the Arcane School Conference (London June 2017, "The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena") | 2017-06 | news/lucistrust-arcane-conf-london-2017-snapshot.html |  |
+| [`/organizations/lucis-trust`] | Presenter at the Arcane School Conference (New York April 2018, "The Garment of God: Esoterically and Scientifically") | 2018-04 | news/lucistrust-arcane-conf-newyork-2018-snapshot.html |  |
+| [`/organizations/institute-for-venture-science`] | Chairman of the Board | – 2018-05 | news/ivsci-leadership-snapshot.html | Period_end derived from Dr. William A. Gardner's biography footnote 1 (May 2018 death). The IVS leadership page has not been updated since Ryder's death and still lists him as Chairman without an end date; period_start is not source-attested in any archived primary source. |
+| [`/organizations/international-science-foundation`] | Founder and Chairman of the Board | – 2018-05 | news/cyclostationarity-gardner-biography-snapshot.html | Period_start absent: Gardner's biography attests Ryder founded the ISF during the five-year collaboration that began in 2013, bounding the founding to between 2013 and the May 2018 death; the precise founding date is not source-attested in any archived primary source. Period_end is the May 2018 death attested in Gardner footnote 1. |
+| [`/organizations/safire-project`] | Science Review Team member | – 2018-05 | news/safireproject-team-snapshot.html | Period_end derived from Dr. William A. Gardner's biography footnote 1 (May 2018 death; ISF — the SAFIRE funder — closed at that point). SAFIRE team page is a current snapshot that still lists Ryder; period_start is not source-attested. |
 
 ---
 
@@ -211,23 +211,23 @@ _No direct observations documented._
 
 ### Confirmed
 
-| Person | Relationship |
-|---|---|
-| [`/people/glenn-gaffney`] | Per the SD004 page-1 author Q&A, the CIA Directorate of Science and Technology — while Glenn Gaffney was in that position — disapproved Ryder's proposed Technology Transfer Agreement at a meeting; per Christopher Sharp at Liberation Times, the same Directorate, then led by Gaffney, coordinated the actions that thwarted the 2011 transfer. |
-| [`/people/james-lacatski`] | Former Director of AAWSAP at the Defense Intelligence Agency; named in Luis Elizondo's December 19, 2024 Question for the Record response as the author of the DOPSR-cleared (September 6, 2023) statement that names Ryder as the Lockheed Martin Space Systems Vice President proposing the UAP material divestment plan. Same text on SD004 page 1. |
-| [`/people/lee-blackburn`] | Companion presenter at the Lucis Trust Arcane School Conference London 2017 — Blackburn gave "The Rending of the Veils, Part 2: The Violet Force and Health" paired with Ryder's Part 1. |
-| [`/people/hal-puthoff`] | SAFIRE Project Science Review Team co-member with Ryder (Puthoff listed as Director, Institute for Advanced Studies at Austin). Ryder names Puthoff on camera as 'my friend dr put off' (2015 talk) and 'dr hal put off as a physicist in austin' (2018 talk), confirming the durable scientific friendship across both talks. |
-| [`/people/eric-davis`] | SAFIRE Project Science Review Team co-member; Davis is listed as Chief Science Officer, Institute for Advanced Studies at Austin alongside Puthoff and Ryder per the SAFIRE corporate team page. |
-| [`/people/william-gardner`] | Five-year scientific collaborator beginning in 2013 per Gardner's first-person biography; SAFIRE Project Science Review Team co-member. Gardner is the named-source primary attestation of Ryder's death timing (footnote 1: ISF "closed down at the time of its Founder/COB, Dr. James T. Ryder's, death in May 2018") and the only first-person collaborator-attestation of Ryder as ISF founder. |
-| [`/people/gerald-pollack`] | Per Dr. William A. Gardner's biography, Pollack (University of Washington) founded the Institute for Venture Science (IVS); Ryder served as IVS Chairman of the Board, pairing the Pollack-as-founder and Ryder-as-chairman institutional positions on the same body. |
-| [`/people/russell-targ`] | Russell Targ documented at Lockheed via Applied Optics author affiliations: 1991 LMSC and 1996 Lockheed Martin ATC, same Hanover Street address across the 1995 merger. Ryder names Targ on camera in his 2018 'Garment of God' talk as 'dr targ who's worked for me for years'. Targ co-founded the Stanford Research Institute [`/organizations/stanford-research-institute`] remote-viewing program. |
-| [`/people/luis-elizondo`] | Author of the December 19, 2024 Question for the Record response that names Lacatski as the SD004 page 1 author and confirms PAX River SAP-F hangar funding plus CIA opposition to the Lockheed-Bigelow transfer. Elizondo is the institutional route by which Lacatski's statement reached the Congressional record. |
+| Person | Relationship | Note |
+|---|---|---|
+| [`/people/glenn-gaffney`] | Per the SD004 page-1 author Q&A, the CIA Directorate of Science and Technology — while Glenn Gaffney was in that position — disapproved Ryder's proposed Technology Transfer Agreement at a meeting; per Christopher Sharp at Liberation Times, the same Directorate, then led by Gaffney, coordinated the actions that thwarted the 2011 transfer. |  |
+| [`/people/james-lacatski`] | Former Director of AAWSAP at the Defense Intelligence Agency; named in Luis Elizondo's December 19, 2024 Question for the Record response as the author of the DOPSR-cleared (September 6, 2023) statement that names Ryder as the Lockheed Martin Space Systems Vice President proposing the UAP material divestment plan. Same text on SD004 page 1. |  |
+| [`/people/lee-blackburn`] | Companion presenter at the Lucis Trust Arcane School Conference London 2017 — Blackburn gave "The Rending of the Veils, Part 2: The Violet Force and Health" paired with Ryder's Part 1. |  |
+| [`/people/hal-puthoff`] | SAFIRE Project Science Review Team co-member with Ryder (Puthoff listed as Director, Institute for Advanced Studies at Austin). Ryder names Puthoff on camera as 'my friend dr put off' (2015 talk) and 'dr hal put off as a physicist in austin' (2018 talk), confirming the durable scientific friendship across both talks. |  |
+| [`/people/eric-davis`] | SAFIRE Project Science Review Team co-member; Davis is listed as Chief Science Officer, Institute for Advanced Studies at Austin alongside Puthoff and Ryder per the SAFIRE corporate team page. |  |
+| [`/people/william-gardner`] | Five-year scientific collaborator beginning in 2013 per Gardner's first-person biography; SAFIRE Project Science Review Team co-member. Gardner is the named-source primary attestation of Ryder's death timing (footnote 1: ISF "closed down at the time of its Founder/COB, Dr. James T. Ryder's, death in May 2018") and the only first-person collaborator-attestation of Ryder as ISF founder. |  |
+| [`/people/gerald-pollack`] | Per Dr. William A. Gardner's biography, Pollack (University of Washington) founded the Institute for Venture Science (IVS); Ryder served as IVS Chairman of the Board, pairing the Pollack-as-founder and Ryder-as-chairman institutional positions on the same body. |  |
+| [`/people/russell-targ`] | Russell Targ documented at Lockheed via Applied Optics author affiliations: 1991 LMSC and 1996 Lockheed Martin ATC, same Hanover Street address across the 1995 merger. Ryder names Targ on camera in his 2018 'Garment of God' talk as 'dr targ who's worked for me for years'. Targ co-founded the Stanford Research Institute [`/organizations/stanford-research-institute`] remote-viewing program. |  |
+| [`/people/luis-elizondo`] | Author of the December 19, 2024 Question for the Record response that names Lacatski as the SD004 page 1 author and confirms PAX River SAP-F hangar funding plus CIA opposition to the Lockheed-Bigelow transfer. Elizondo is the institutional route by which Lacatski's statement reached the Congressional record. |  |
 
 ### Flagged
 
-| Person | Relationship |
-|---|---|
-| [`/people/steny-hoyer`] | Per Luis Elizondo's December 19, 2024 Q7 response, then-Representative Hoyer was the requesting authority for the ~$10 million allocated to construct the Patuxent River Naval Air Station SAP-F hangar built to receive the alleged UAP materials. No primary source on this page documents direct Hoyer-Ryder interaction. |
+| Person | Relationship | Note |
+|---|---|---|
+| [`/people/steny-hoyer`] | Per Luis Elizondo's December 19, 2024 Q7 response, then-Representative Hoyer was the requesting authority for the ~$10 million allocated to construct the Patuxent River Naval Air Station SAP-F hangar built to receive the alleged UAP materials. No primary source on this page documents direct Hoyer-Ryder interaction. |  |
 
 ---
 

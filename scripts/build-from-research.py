@@ -524,21 +524,22 @@ def render_affiliations(artifact):
             f"| {org} | "
             f"{e.get('role') or ''} | "
             f"{_format_period(e)} | "
-            f"{(e.get('source') or {}).get('path') or ''} |"
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
 
     lines = ["## Affiliations", "", "### Confirmed", "",
-             "| Organization | Role | Period | Source |",
-             "|---|---|---|---|"]
+             "| Organization | Role | Period | Source | Note |",
+             "|---|---|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(render_row(e))
     else:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Organization | Role | Period | Source |",
-                  "|---|---|---|---|"]
+                  "| Organization | Role | Period | Source | Note |",
+                  "|---|---|---|---|---|"]
         for e in flagged:
             lines.append(render_row(e))
     return "\n".join(lines) + "\n"
@@ -648,21 +649,22 @@ def render_relationships(artifact):
         person = _wrap_path(e.get("person_path"))
         return (
             f"| {person} | "
-            f"{e.get('relationship') or ''} |"
+            f"{e.get('relationship') or ''} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
 
     lines = ["## Relationships", "", "### Confirmed", "",
-             "| Person | Relationship |",
-             "|---|---|"]
+             "| Person | Relationship | Note |",
+             "|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(row(e))
     else:
-        lines.append("|  |  |")
+        lines.append("|  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Person | Relationship |",
-                  "|---|---|"]
+                  "| Person | Relationship | Note |",
+                  "|---|---|---|"]
         for e in flagged:
             lines.append(row(e))
     return "\n".join(lines) + "\n"
@@ -1663,13 +1665,14 @@ def render_org_overview(artifact, kind):
 
 def _org_key_personnel_row(e):
     """Render a single Key Personnel row — person wrap + role + period
-    + source.path (parallels the person affiliations row shape)."""
+    + source.path + note (parallels the person affiliations row shape)."""
     person = _wrap_path(e.get("person_path"))
     return (
         f"| {person} | "
         f"{e.get('role') or ''} | "
         f"{_format_period(e)} | "
-        f"{(e.get('source') or {}).get('path') or ''} |"
+        f"{(e.get('source') or {}).get('path') or ''} | "
+        f"{_escape_table_cell(e.get('note'))} |"
     )
 
 
@@ -1703,8 +1706,8 @@ def render_org_key_personnel(artifact):
             out += [
                 f"{h4_level} {_LEADERSHIP_CLASS_HEADING[cls]}",
                 "",
-                "| Name | Role | Period | Source |",
-                "|---|---|---|---|",
+                "| Name | Role | Period | Source | Note |",
+                "|---|---|---|---|---|",
             ]
             for e in buckets[cls]:
                 out.append(_org_key_personnel_row(e))
@@ -1773,10 +1776,10 @@ def render_org_primary_contracts(artifact):
     items = sort_by_date(items, "period_start")
 
     lines = ["## Primary Contracts", "",
-             "| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |",
-             "|---|---|---|---|---|---|---|"]
+             "| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source | Note |",
+             "|---|---|---|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |  |  |  |")
+        lines.append("|  |  |  |  |  |  |  |  |")
         return "\n".join(lines) + "\n"
 
     deliverable_blocks = []
@@ -1789,7 +1792,8 @@ def render_org_primary_contracts(artifact):
             f"{e.get('value') or ''} | "
             f"{counterparty} | "
             f"{e.get('subject') or ''} | "
-            f"{(e.get('source') or {}).get('path') or ''} |"
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
         deliverables = e.get("deliverables") or []
         if deliverables:
@@ -1819,21 +1823,22 @@ def render_org_relationships(artifact):
         return (
             f"| {org} | "
             f"{e.get('relationship_type') or ''} | "
-            f"{(e.get('source') or {}).get('path') or ''} |"
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
 
     lines = ["## Relationships", "", "### Confirmed", "",
-             "| Organization | Relationship | Source |",
-             "|---|---|---|"]
+             "| Organization | Relationship | Source | Note |",
+             "|---|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(row(e))
     else:
-        lines.append("|  |  |  |")
+        lines.append("|  |  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Organization | Relationship | Source |",
-                  "|---|---|---|"]
+                  "| Organization | Relationship | Source | Note |",
+                  "|---|---|---|---|"]
         for e in flagged:
             lines.append(row(e))
     return "\n".join(lines) + "\n"
@@ -1954,10 +1959,10 @@ def render_ownership_timeline(artifact):
         "period_start",
     )
     lines = ["## Ownership Timeline", "",
-             "| Period | Owner | Use / Status | Source |",
-             "|---|---|---|---|"]
+             "| Period | Owner | Use / Status | Source | Note |",
+             "|---|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |  |  |")
         return "\n".join(lines) + "\n"
     for e in items:
         period = _format_period(e)
@@ -1972,7 +1977,8 @@ def render_ownership_timeline(artifact):
             f"| {period} | "
             f"{owner_cell} | "
             f"{e.get('use_status') or ''} | "
-            f"{(e.get('source') or {}).get('path') or ''} |"
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -1990,10 +1996,10 @@ def render_top_scope_activity(artifact):
     )
     display_name = load_topic()["display_name"]
     lines = [f"## {display_name}-Scope Activity", "",
-             "| Period | Activity | Source |",
-             "|---|---|---|"]
+             "| Period | Activity | Source | Note |",
+             "|---|---|---|---|"]
     if not items:
-        lines.append("|  |  |  |")
+        lines.append("|  |  |  |  |")
         return "\n".join(lines) + "\n"
     for e in items:
         period = _format_period(e)
@@ -2007,7 +2013,8 @@ def render_top_scope_activity(artifact):
         lines.append(
             f"| {period} | "
             f"{activity_cell} | "
-            f"{(e.get('source') or {}).get('path') or ''} |"
+            f"{(e.get('source') or {}).get('path') or ''} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
     return "\n".join(lines) + "\n"
 
@@ -2056,21 +2063,22 @@ def render_location_relationships(artifact):
         ep = _wrap_path(e.get("entity_path"))
         return (
             f"| {ep} | "
-            f"{e.get('relationship') or ''} |"
+            f"{e.get('relationship') or ''} | "
+            f"{_escape_table_cell(e.get('note'))} |"
         )
 
     lines = ["## Relationships", "", "### Confirmed", "",
-             "| Entity | Relationship |",
-             "|---|---|"]
+             "| Entity | Relationship | Note |",
+             "|---|---|---|"]
     if confirmed:
         for e in confirmed:
             lines.append(row(e))
     else:
-        lines.append("|  |  |")
+        lines.append("|  |  |  |")
     if flagged:
         lines += ["", "### Flagged", "",
-                  "| Entity | Relationship |",
-                  "|---|---|"]
+                  "| Entity | Relationship | Note |",
+                  "|---|---|---|"]
         for e in flagged:
             lines.append(row(e))
     return "\n".join(lines) + "\n"

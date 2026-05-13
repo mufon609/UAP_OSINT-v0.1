@@ -38,9 +38,9 @@ Sue Gough is the principal Department of Defense Public Affairs contact for the 
 
 ### Confirmed
 
-| Organization | Role | Period | Source |
-|---|---|---|---|
-| [`/organizations/dod`] | Civilian Public Affairs spokesperson, Defense Press Operations, Office of the Secretary of Defense Public Affairs (OSD(PA)), with the AARO portfolio | 2022-06 | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |
+| Organization | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/organizations/dod`] | Civilian Public Affairs spokesperson, Defense Press Operations, Office of the Secretary of Defense Public Affairs (OSD(PA)), with the AARO portfolio | 2022-06 | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 
 ---
 
@@ -170,13 +170,13 @@ _No direct observations documented._
 
 ### Confirmed
 
-| Person | Relationship |
-|---|---|
-| [`/people/sean-kirkpatrick`] | Public Affairs spokesperson covering Kirkpatrick during his AARO directorship; moderated his December 16, 2022 joint AARO media roundtable and confirmed his December 1, 2023 last-day date to DefenseScoop on November 30, 2023. |
-| [`/people/ronald-moultrie`] | Moderated Moultrie's December 16, 2022 joint AARO media roundtable with Kirkpatrick at the Pentagon (STAFF moderator role). |
-| [`/people/tim-phillips`] | Public Affairs spokesperson covering Phillips during his AARO Acting Director tenure; coordinated the small-group invite-only press posture for the March 8, 2024 AARO Historical Record Report Volume I briefing and declined further press engagement with Phillips per the FOIA 24-F-0894 standardized email response. |
-| [`/people/jonathan-kosloski`] | Public Affairs spokesperson covering Kosloski during his AARO directorship; provided the on-record AARO Full Operational Capability declaration on December 5, 2024 and the AARO 2,000+ caseload statement on February 25, 2026. |
-| [`/people/david-kozik`] | OSD(PA) counterpart to Kozik (OUSD(I&S) Director of Congressional Activities) on AARO Hill-facing scope; March 6-7, 2024 email exchange on AARO sUAS portfolio in FOIA 24-F-0894. |
+| Person | Relationship | Note |
+|---|---|---|
+| [`/people/sean-kirkpatrick`] | Public Affairs spokesperson covering Kirkpatrick during his AARO directorship; moderated his December 16, 2022 joint AARO media roundtable and confirmed his December 1, 2023 last-day date to DefenseScoop on November 30, 2023. |  |
+| [`/people/ronald-moultrie`] | Moderated Moultrie's December 16, 2022 joint AARO media roundtable with Kirkpatrick at the Pentagon (STAFF moderator role). |  |
+| [`/people/tim-phillips`] | Public Affairs spokesperson covering Phillips during his AARO Acting Director tenure; coordinated the small-group invite-only press posture for the March 8, 2024 AARO Historical Record Report Volume I briefing and declined further press engagement with Phillips per the FOIA 24-F-0894 standardized email response. |  |
+| [`/people/jonathan-kosloski`] | Public Affairs spokesperson covering Kosloski during his AARO directorship; provided the on-record AARO Full Operational Capability declaration on December 5, 2024 and the AARO 2,000+ caseload statement on February 25, 2026. |  |
+| [`/people/david-kozik`] | OSD(PA) counterpart to Kozik (OUSD(I&S) Director of Congressional Activities) on AARO Hill-facing scope; March 6-7, 2024 email exchange on AARO sUAS portfolio in FOIA 24-F-0894. |  |
 
 ---
 

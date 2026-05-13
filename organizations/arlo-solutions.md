@@ -38,17 +38,17 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 #### Directors
 
-| Name | Role | Period | Source |
-|---|---|---|---|
-| [`/people/lonye-ford`] | Co-Founder | 2014 | news/arlo-company-overview-2021-08.pdf |
-| [`/people/arlene-wube`] | Co-Founder | 2014 | news/arlo-company-overview-2021-08.pdf |
-| [`/people/lonye-ford`] | CEO | 2026-03-16 | news/arlo-press-85m-sasp-20260503.html |
+| Name | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/people/lonye-ford`] | Co-Founder | 2014 | news/arlo-company-overview-2021-08.pdf | Lonye Ford named in the FOUNDERS line of the August 2021 Company Overview. |
+| [`/people/arlene-wube`] | Co-Founder | 2014 | news/arlo-company-overview-2021-08.pdf | Arlene Wube named in the FOUNDERS line of the August 2021 Company Overview as one of the founders of Arlo Solutions. |
+| [`/people/lonye-ford`] | CEO | 2026-03-16 | news/arlo-press-85m-sasp-20260503.html | Lonye Ford named CEO of Arlo Solutions in the March 16, 2026 SASP press statement. |
 
 #### Staff
 
-| Name | Role | Period | Source |
-|---|---|---|---|
-| [`/people/christina-pryka`] | Media Contact | 2024-04-18 | news/arlo-press-cls-vetting-20260503.html |
+| Name | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/people/christina-pryka`] | Media Contact | 2024-04-18 | news/arlo-press-cls-vetting-20260503.html | Christina Pryka listed as Arlo's media contact for media requests. |
 
 ---
 
@@ -275,21 +275,21 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 ## Primary Contracts
 
-| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source |
-|---|---|---|---|---|---|---|
-| HQ003419C0172 | WHS | 2019-09-25 – 2024-04-29 | $4,027,742.99 | [`/organizations/ousd-is`] | Personnel Security Policy Support | government/usaspending-arlo-search.json |
-| HQ003420C0104 | WHS | 2020-06-19 – 2025-07-27 | $3,419,667.82 | [`/organizations/ousd-is`] | Business Operations and Support Services | government/usaspending-arlo-search.json |
-| 47QTCA21D003B | GSA | 2020-12-15 – 2025-12-14 | GWAC vehicle (per-task-order value) |  | GSA Multiple Award Schedule (MAS) — vehicle Arlo holds; parent IDV for HQ003422F0271, HQ003423F0356, and HQ003424F0190 OUSD(I&S) task orders | news/arlo-contract-vehicles-20260503.html |
-| 47QTCB21D0051 | GSA | 2021-07-02 – 2026-07-01 | GWAC vehicle (fixed price, time and materials, labor-hour, hybrid; per-task-order value) |  | GSA 8(a) STARS III GWAC — vehicle Arlo holds for IT solutions task orders | news/arlo-contract-vehicles-20260503.html |
-| HQ003421C0078 | WHS | 2021-08-27 – 2022-06-29 | $3,144,219.46 | [`/organizations/ousd-is`] | Counterintelligence, Law Enforcement & Security Policy, Administrative, and Technical Support Services | government/usaspending-arlo-search.json |
-| HQ003421C0090 | WHS | 2021-09-16 – 2026-09-22 | $4,065,931.45 | [`/organizations/ousd-is`] | Admin Support Services | government/usaspending-arlo-search.json |
-| HQ003422F0271 | WHS (under GSA MAS 47QTCA21D003B) | 2022-06-29 – 2026-04-28 | $19,237,545.98 | [`/organizations/ousd-is`] | Counterintelligence, Law Enforcement, Security Policy, Administrative and Technical Support Services | government/usaspending-arlo-search.json |
-| HQ003422C0092 | WHS | 2022-09-12 – 2026-06-11 | $15,319,593.94 | [`/organizations/ousd-is`] | Cyberspace Oversight Support Services | government/usaspending-arlo-search.json |
-| HQ003423F0356 | WHS (under GSA MAS 47QTCA21D003B) | 2023-08-01 – 2026-04-30 | $10,473,111.72 | [`/organizations/ousd-is`] | Administrative, Policy and Subject Matter Expertise Support Services for Counterintelligence, Law Enforcement, and Security | government/usaspending-arlo-search.json |
-| HQ003423C0093 | WHS | 2023-08-29 – 2026-08-28 | $3,015,826.41 | [`/organizations/ousd-is`] | Event Planning Support Services | government/usaspending-arlo-search.json |
-| HQ003424F0190 | WHS (under GSA MAS 47QTCA21D003B) | 2024-04-30 – 2026-04-29 | $1,474,125.12 obligated; $3.7 million per Arlo press release ceiling | [`/organizations/ousd-is`] | Integrated Vetting Policy & Analytical Support | news/arlo-press-cls-vetting-20260503.html |
-| HQ003425A0004 | WHS | 2025-02-14 – 2030-02-14 | $856,000,000 — good faith estimate amount, aggregate across four BPA vendors. USAspending stores this aggregate in the BPA's "base_and_all_options" field, which nominally denotes an individual ceiling — a systemic conflation. | [`/organizations/ousd-is`] | OUSD(I&S) Enterprise BPA — Technical, Administrative and Professional Support Services | government/usaspending-arlo-bpa-hq003425a0004.json |
-| HQ003425F0104 | WHS (BPA Call Order under HQ003425A0004) | 2025-02-21 – 2026-03-27 | $78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 to-date per USAspending field "base_exercised_options" (base period plus exercised options); "more than $85 million" per Arlo's March 16, 2026 SASP press statement. The press release figure is a floor; announcement-vs-ceiling gap is at least $6.5 million; exact figure unreconciled in source. | [`/organizations/ousd-is`] | SASP Call Order 2 — Administrative, Policy, Operations, and Analytic Support Services to the OUSD(I&S) Sensitive Activities & Special Programs Office | government/usaspending-arlo-hq003425f0104.json |
+| Contract | Contracting Agency | Period | Value | Counterparty | Subject | Source | Note |
+|---|---|---|---|---|---|---|---|
+| HQ003419C0172 | WHS | 2019-09-25 – 2024-04-29 | $4,027,742.99 | [`/organizations/ousd-is`] | Personnel Security Policy Support | government/usaspending-arlo-search.json |  |
+| HQ003420C0104 | WHS | 2020-06-19 – 2025-07-27 | $3,419,667.82 | [`/organizations/ousd-is`] | Business Operations and Support Services | government/usaspending-arlo-search.json |  |
+| 47QTCA21D003B | GSA | 2020-12-15 – 2025-12-14 | GWAC vehicle (per-task-order value) |  | GSA Multiple Award Schedule (MAS) — vehicle Arlo holds; parent IDV for HQ003422F0271, HQ003423F0356, and HQ003424F0190 OUSD(I&S) task orders | news/arlo-contract-vehicles-20260503.html | GSA MAS GWAC contract held by Arlo as a prime; SIN 54151S (Information Technology Professional Services), SIN 541611 (Professional Management), SIN 561320SBSA (Temporary Staffing). Several OUSD(I&S) Arlo task orders pertain to this GSA MAS as parent IDV. |
+| 47QTCB21D0051 | GSA | 2021-07-02 – 2026-07-01 | GWAC vehicle (fixed price, time and materials, labor-hour, hybrid; per-task-order value) |  | GSA 8(a) STARS III GWAC — vehicle Arlo holds for IT solutions task orders | news/arlo-contract-vehicles-20260503.html | GSA 8(a) Stars III GWAC contract held by Arlo; small business set-aside vehicle for customized IT solutions across federal agencies. Period of performance July 2, 2021 — July 1, 2026 with one 3-year option according to Arlo's contract vehicles page. |
+| HQ003421C0078 | WHS | 2021-08-27 – 2022-06-29 | $3,144,219.46 | [`/organizations/ousd-is`] | Counterintelligence, Law Enforcement & Security Policy, Administrative, and Technical Support Services | government/usaspending-arlo-search.json |  |
+| HQ003421C0090 | WHS | 2021-09-16 – 2026-09-22 | $4,065,931.45 | [`/organizations/ousd-is`] | Admin Support Services | government/usaspending-arlo-search.json |  |
+| HQ003422F0271 | WHS (under GSA MAS 47QTCA21D003B) | 2022-06-29 – 2026-04-28 | $19,237,545.98 | [`/organizations/ousd-is`] | Counterintelligence, Law Enforcement, Security Policy, Administrative and Technical Support Services | government/usaspending-arlo-search.json | OUSD(I&S) Counterintelligence, Law Enforcement, Security Policy task order under GSA MAS 47QTCA21D003B. |
+| HQ003422C0092 | WHS | 2022-09-12 – 2026-06-11 | $15,319,593.94 | [`/organizations/ousd-is`] | Cyberspace Oversight Support Services | government/usaspending-arlo-search.json |  |
+| HQ003423F0356 | WHS (under GSA MAS 47QTCA21D003B) | 2023-08-01 – 2026-04-30 | $10,473,111.72 | [`/organizations/ousd-is`] | Administrative, Policy and Subject Matter Expertise Support Services for Counterintelligence, Law Enforcement, and Security | government/usaspending-arlo-search.json |  |
+| HQ003423C0093 | WHS | 2023-08-29 – 2026-08-28 | $3,015,826.41 | [`/organizations/ousd-is`] | Event Planning Support Services | government/usaspending-arlo-search.json |  |
+| HQ003424F0190 | WHS (under GSA MAS 47QTCA21D003B) | 2024-04-30 – 2026-04-29 | $1,474,125.12 obligated; $3.7 million per Arlo press release ceiling | [`/organizations/ousd-is`] | Integrated Vetting Policy & Analytical Support | news/arlo-press-cls-vetting-20260503.html | CL&S Integrated Vetting team contract issued to Arlo on April 18, 2024 as a $3.7 million contract. The Director for Defense Intelligence Counterintelligence Law Enforcement Security DDI(CL&S) is the responsible OUSD(I&S) Office according to the press statement scope description. |
+| HQ003425A0004 | WHS | 2025-02-14 – 2030-02-14 | $856,000,000 — good faith estimate amount, aggregate across four BPA vendors. USAspending stores this aggregate in the BPA's "base_and_all_options" field, which nominally denotes an individual ceiling — a systemic conflation. | [`/organizations/ousd-is`] | OUSD(I&S) Enterprise BPA — Technical, Administrative and Professional Support Services | government/usaspending-arlo-bpa-hq003425a0004.json | Multiple award BPA established under HQ003424R0178 reevaluation; Arlo is one of four BPA vendors. The public GAO B-422985 decision identified three of the four BPA vendors (Sancorp, Premier, Arlo); the remaining BPA vendor is not identified in the public decision. The good faith estimate amount of $856 million is for all BPAs; individual call orders pertain to specific OUSD(I&S) Offices. |
+| HQ003425F0104 | WHS (BPA Call Order under HQ003425A0004) | 2025-02-21 – 2026-03-27 | $78,512,350.27 ceiling per USAspending field "base_and_all_options"; $7,447,926.22 to-date per USAspending field "base_exercised_options" (base period plus exercised options); "more than $85 million" per Arlo's March 16, 2026 SASP press statement. The press release figure is a floor; announcement-vs-ceiling gap is at least $6.5 million; exact figure unreconciled in source. | [`/organizations/ousd-is`] | SASP Call Order 2 — Administrative, Policy, Operations, and Analytic Support Services to the OUSD(I&S) Sensitive Activities & Special Programs Office | government/usaspending-arlo-hq003425f0104.json | SASP Call Order awarded to Arlo following the WHS reevaluation under HQ003424R0178; issued in place of Sancorp's September 2024 initial SASP award. Sancorp filed a protest of the reevaluation; GAO B-422985.4 / B-422985.5 (June 11, 2025) dismissed Sancorp's challenges to the SASP call order on the basis that Sancorp's proposed staff officer key personnel had resigned prior to SASP call order issuance, rendering Sancorp's SASP quotation unacceptable. |
 
 ---
 
@@ -323,15 +323,15 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 ### Confirmed
 
-| Organization | Relationship | Source |
-|---|---|---|
-| [`/organizations/whs`] | contracting-agency | government/gao-b-422985-wayback-20250708.html |
-| [`/organizations/ousd-is`] | other | government/usaspending-arlo-bpa-hq003425a0004.json |
-| [`/organizations/dod`] | other | government/gao-b-422985-wayback-20250708.html |
-| [`/organizations/sancorp-consulting`] | other | government/gao-b-422985-wayback-20250708.html |
-| [`/organizations/premier-enterprise-solutions`] | other | government/gao-b-422985-wayback-20250708.html |
-| [`/organizations/comprehensive-approach-solutions`] | other | government/gao-b-422985-wayback-20250708.html |
-| [`/organizations/gsa`] | contracting-agency | news/arlo-contract-vehicles-20260503.html |
+| Organization | Relationship | Source | Note |
+|---|---|---|---|
+| [`/organizations/whs`] | contracting-agency | government/gao-b-422985-wayback-20250708.html | Washington Headquarters Services is the WHS contracting agency that issued RFQ HQ003424R0178 and the resulting BPAs and call orders to Arlo (HQ003425A0004 BPA; HQ003425F0104 SASP Call Order); WHS is also the awarding agency for nearly all of Arlo's OUSD(I&S) prime contracts since 2019. |
+| [`/organizations/ousd-is`] | other | government/usaspending-arlo-bpa-hq003425a0004.json | OUSD(I&S) is Arlo's primary federal customer office. The BPA HQ003425A0004 description names "the Under Secretary of Defense for Intelligence & Security Enterprise" as the customer; individual call orders are scoped to OUSD(I&S) sub-directorates (HQ003425F0104 = SASP). |
+| [`/organizations/dod`] | other | government/gao-b-422985-wayback-20250708.html | Department of Defense is the parent of WHS and OUSD(I&S); per Arlo's post-2025 marketing the alternative form Department of War (DoW) is used in press release framing — see nq4. |
+| [`/organizations/sancorp-consulting`] | other | government/gao-b-422985-wayback-20250708.html | Adjacent OUSD(I&S) contractor and direct competitor on RFQ HQ003424R0178. Sancorp was the September 2024 initial SASP awardee; Arlo protested; reevaluation awarded SASP to Arlo; Sancorp protested the reevaluation; GAO denied (EXDIR) and dismissed (SASP) Sancorp's protests. Sancorp's separate prime contracts at other OUSD(I&S) directorates (AARO, IPMO) are independent and remain Sancorp's. |
+| [`/organizations/premier-enterprise-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Co-vendor in the OUSD(I&S) contractor cluster; co-protester with Arlo of the September 2024 initial awards. Premier won EXDIR Call Order 1 in the reevaluation while Arlo won SASP Call Order 2. Both are Arlo's peer awardees under the HQ003425A0004 BPA. Schema enum "partner" denotes a joint-venture or teaming partnership; no such contracting relationship between Arlo and Premier is attested in the primary-source corpus, so this relationship is recorded as "other" with the co-protester / co-awardee structure described here. |
+| [`/organizations/comprehensive-approach-solutions`] | other | government/gao-b-422985-wayback-20250708.html | Initial September 2024 EXDIR Call Order 1 awardee (displaced when WHS took corrective action and reevaluated). Co-vendor in the OUSD(I&S) contractor cluster; not retained as an awardee in the reevaluation. |
+| [`/organizations/gsa`] | contracting-agency | news/arlo-contract-vehicles-20260503.html | GSA sponsors Arlo's GSA Multiple Award Schedule (MAS) contract 47QTCA21D003B, GSA OASIS+ contracts (47QRCA24DV270 SDVOSB; 47QRCA24DW239 WOSB; 47QRCA25DSA74 SB; 47QRCA25DA370 8(a)), and GSA 8(a) Stars III contract 47QTCB21D0051. The RFQ HQ003424R0178 was issued under the GSA Federal Supply Schedule Professional Services BPA framework. |
 
 ---
 

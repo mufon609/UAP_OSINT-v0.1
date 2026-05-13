@@ -42,20 +42,20 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 
 ### Confirmed
 
-| Organization | Role | Period | Source |
-|---|---|---|---|
-| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html |
-| [`/organizations/uss-nimitz`] | Deployed aboard during 2004 workup cycle | 2004 – 2004 | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |
-| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 | news/enigmalabs-dietrich-advisor-announcement.html |
-| [`/organizations/cu-boulder`] | Adjunct Instructor (Engineering Leadership Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html |
-| [`/organizations/enigma-labs`] | First advisor (unpaid) | 2022-11-14 | news/enigmalabs-dietrich-advisor-announcement.html |
-| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2023 | news/cu-boulder-emp-dietrich-bio.html |
-| [`/organizations/americans-for-safe-aerospace`] | Advisor | 2023-06 | government/safeaerospace-home-20230602.html |
-| [`/organizations/usna`] | Military Professor (Department of Leadership, Ethics and Law) |  | news/cu-boulder-emp-dietrich-bio.html |
-| [`/organizations/gwu`] | Assistant Professor of Naval Science |  | news/enigmalabs-dietrich-advisor-announcement.html |
-| [`/organizations/syracuse-university`] | Interim Chief Human Resources Officer |  | news/syracuse-chancellor-dietrich-bio.html |
-| [`/organizations/legacy-flight-academy`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |
-| [`/organizations/wings-for-val`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |
+| Organization | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/organizations/us-navy`] | F/A-18F strike fighter pilot | 2001-05 – 2020 | news/debrief-dietrich-cooperation-uap-opinion.html | Per her self-authored Debrief op-ed: F/A-18 pilot from 2001-2020; logged more than 1,250 flight hours and 375 carrier-arrested landings; awarded a Bronze Star and a Combat Air Medal for 206 combat missions flown in support of Operation Iraqi Freedom and Operation Enduring Freedom. |
+| [`/organizations/uss-nimitz`] | Deployed aboard during 2004 workup cycle | 2004 – 2004 | news/cbsnews-ufo-military-intelligence-60min-2021-05-16.html |  |
+| [`/organizations/vfa-41`] | F/A-18F pilot | 2004-07 | news/enigmalabs-dietrich-advisor-announcement.html | Dietrich self-attests squadron-join in July 2004 on the Merged Podcast. The Enigma Labs announcement attests Navy service 2001 until 2014 and names VFA-41 as her squadron during the 2004 Nimitz encounter, but no archived primary source in this pool pins the VFA-41 end date specifically. |
+| [`/organizations/cu-boulder`] | Adjunct Instructor (Engineering Leadership Program) | 2022 | news/cu-boulder-emp-dietrich-bio.html | Joined CU Boulder College of Engineering faculty in 2022 as an adjunct instructor in the Engineering Leadership Program. |
+| [`/organizations/enigma-labs`] | First advisor (unpaid) | 2022-11-14 | news/enigmalabs-dietrich-advisor-announcement.html | Self-attested as 'first advisor' in unpaid role on the Somewhere in the Skies podcast; Enigma Labs announcement dated 2022-11-14, the 19th anniversary of the Nimitz encounter. |
+| [`/organizations/cu-boulder`] | Scholar in Residence (Engineering Management Program) | 2023 | news/cu-boulder-emp-dietrich-bio.html | Appointed Scholar in Residence to the Engineering Management Program in 2023 — a separate appointment from the 2022 adjunct instructor role in the Engineering Leadership Program. |
+| [`/organizations/americans-for-safe-aerospace`] | Advisor | 2023-06 | government/safeaerospace-home-20230602.html | Earliest known Wayback snapshot showing Dietrich on the safeaerospace.org personnel grid is 2023-06-02; she was originally listed under the heading 'Aircrew Leadership Council' which was later renamed 'Advisors'. |
+| [`/organizations/usna`] | Military Professor (Department of Leadership, Ethics and Law) |  | news/cu-boulder-emp-dietrich-bio.html |  |
+| [`/organizations/gwu`] | Assistant Professor of Naval Science |  | news/enigmalabs-dietrich-advisor-announcement.html | Post-Navy faculty role at her alma mater; consortium teaching included Georgetown, George Washington, Howard, and Catholic Universities per Syracuse and CU Boulder bios. |
+| [`/organizations/syracuse-university`] | Interim Chief Human Resources Officer |  | news/syracuse-chancellor-dietrich-bio.html |  |
+| [`/organizations/legacy-flight-academy`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |  |
+| [`/organizations/wings-for-val`] | Advocate |  | news/debrief-dietrich-cooperation-uap-opinion.html |  |
 
 ---
 
@@ -443,10 +443,10 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 
 ### Confirmed
 
-| Person | Relationship |
-|---|---|
-| [`/people/david-fravor`] | Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing as the second pilot in the two-ship F/A-18F flight |
-| [`/people/chad-underwood`] | On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object — position on that aircraft has conflicting attestations (Dietrich's Sprague-podcast recollection places him as WSO; Underwood's own 2019 NYMag interview describes him as the pilot, which outranks Dietrich's recollection per the source-priority hierarchy) |
+| Person | Relationship | Note |
+|---|---|---|
+| [`/people/david-fravor`] | Commanding Officer of VFA-41 and flight lead during the November 14, 2004 USS Nimitz Tic Tac encounter; Dietrich was on his wing as the second pilot in the two-ship F/A-18F flight |  |
+| [`/people/chad-underwood`] | On the subsequent F/A-18F sortie that captured the FLIR1 targeting-pod video of the same Tic Tac object — position on that aircraft has conflicting attestations (Dietrich's Sprague-podcast recollection places him as WSO; Underwood's own 2019 NYMag interview describes him as the pilot, which outranks Dietrich's recollection per the source-priority hierarchy) |  |
 
 ---
 

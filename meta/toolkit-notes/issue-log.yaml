@@ -4710,3 +4710,783 @@
   message: |
     Checksum MISMATCH — stored:860c7955e2ddfddc... vs current:5674ba388bad9095... (URL: https://documents2.theblackvault.com/documents/osd/24-F-0266.pdf#clean-text-transcription) — possible corruption, overwrite, or substitution
 
+- ts: 2026-05-13T19:08:28Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/aaro.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (80>55): Per the Hicks AARO establishment memo (July 15, 2022), the D...
+
+- ts: 2026-05-13T19:08:28Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/aaro.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (80>55): Influence and Perception Management Office. Sister sub-offic...
+
+- ts: 2026-05-13T19:08:33Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/arlo-solutions.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (60>55): Multiple award BPA established under HQ003424R0178 reevaluat...
+
+- ts: 2026-05-13T19:08:33Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/arlo-solutions.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (67>55): SASP Call Order awarded to Arlo following the WHS reevaluati...
+
+- ts: 2026-05-13T19:08:33Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/arlo-solutions.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (78>55): Co-vendor in the OUSD(I&S) contractor cluster; co-protester ...
+
+- ts: 2026-05-13T19:08:39Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Affiliations' exceeds word budget (67>55): Period_end 2023-05 sourced from the bio ([`/documents/grusch...
+
+- ts: 2026-05-13T19:08:46Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ipmo.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (63>55): Sister sub-office under OUSD(I&S) per the FY 2024 OSD OP-5 s...
+
+- ts: 2026-05-13T19:08:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (86>55): First Under Secretary of Defense for Intelligence. Per the d...
+
+- ts: 2026-05-13T19:08:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (84>55): Clapper was sworn in as Under Secretary of Defense for Intel...
+
+- ts: 2026-05-13T19:08:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (89>55): Per the 2025 official biography hosted on ousdi.defense.gov,...
+
+- ts: 2026-05-13T19:08:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (69>55): Per the 2025 official biography hosted on ousdi.defense.gov,...
+
+- ts: 2026-05-13T19:08:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (67>55): Department of Defense is the parent department; DoDD 5143.01...
+
+- ts: 2026-05-13T19:08:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (144>55): Deputy Secretary of Defense Hicks directed the USD(I&S) to e...
+
+- ts: 2026-05-13T19:08:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (146>55): Advanced Intelligence Capabilities. Per FY 2026 OSD OP-5, AI...
+
+- ts: 2026-05-13T19:08:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (108>55): Law Enforcement Oversight and Compliance Directorate. Per FY...
+
+- ts: 2026-05-13T19:08:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (92>55): Counter-Adversary Defense Industry (C-ADI) program. First pu...
+
+- ts: 2026-05-13T19:09:05Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/ronald-moultrie.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Affiliations' exceeds word budget (140>55): Battelle Advisory Board membership attested only by Moultrie...
+
+- ts: 2026-05-13T19:09:05Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/ronald-moultrie.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Affiliations' exceeds word budget (61>55): The March 6 2017 mondovisione announcement names Moultrie as...
+
+- ts: 2026-05-13T19:09:10Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (59>55): SAFIRE Project corporate team page:a chemist by training who...
+
+- ts: 2026-05-13T19:09:10Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (70>55): SAFIRE Project corporate team page: Bruce Mainwaring "has be...
+
+- ts: 2026-05-13T19:09:10Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (77>55): SAFIRE Project corporate team page: Scott Mainwaring "was on...
+
+- ts: 2026-05-13T19:09:10Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (62>55): SAFIRE Project corporate team page lists "Dr. James Ryder  C...
+
+- ts: 2026-05-13T19:09:10Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (109>55): ISF role per the SAFIRE PROJECT Genesis report (p. 9): fund ...
+
+- ts: 2026-05-13T19:09:10Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (97>55): Mainwaring Archive Foundation role per the SAFIRE PROJECT Ge...
+
+- ts: 2026-05-13T19:09:13Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/sancorp-consulting.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (62>55): Sancorp Company News states that 'SANCORP was awarded a cont...
+
+- ts: 2026-05-13T19:09:13Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/sancorp-consulting.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (118>55): Period of performance start date August 22, 2022; date signe...
+
+- ts: 2026-05-13T19:09:13Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/sancorp-consulting.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (61>55): USAspending description of the contract scope: 'USSOUTHCOM S...
+
+- ts: 2026-05-13T19:09:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/sean-kirkpatrick.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Affiliations' exceeds word budget (57>55): The DoD bio places this assignment near the end of his DIO/S...
+
+- ts: 2026-05-13T19:09:26Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (58>55): President and CEO of EarthTech International, Inc. (ETI), an...
+
+- ts: 2026-05-13T19:09:26Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (60>55): Former Lockheed Martin Skunk Works Program Director for Adva...
+
+- ts: 2026-05-13T19:09:26Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (66>55): Founder of the company and principal investor; President of ...
+
+- ts: 2026-05-13T19:09:26Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (68>55): Chief Marketing and Product Officer for company's subsidiary...
+
+- ts: 2026-05-13T19:09:26Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (79>55): Career intelligence officer whose experience includes workin...
+
+- ts: 2026-05-13T19:09:26Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (75>55): Former Deputy Assistant Secretary of Defense for Intelligenc...
+
+- ts: 2026-05-13T19:09:26Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (61>55): Majority shareholder — Gravity Holdings LLC (whose sole memb...
+
+- ts: 2026-05-13T19:09:29Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/uaptf.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (75>55): DoD Public Affairs statement via Gough is the strongest gove...
+
+- ts: 2026-05-13T19:09:29Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/uaptf.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (93>55): Grusch's written testimony states "I was a member of the UAP...
+
+- ts: 2026-05-13T19:09:29Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/uaptf.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (85>55): AARO is the downstream successor in the chain — UAPTF → AOIM...
+
+- ts: 2026-05-13T19:09:29Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/uaptf.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (61>55): UAP Executive Steering Committee (EXCOM) — senior oversight ...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Affiliations' exceeds word budget (67>55): Period_end 2023-05 sourced from the bio ([`/documents/grusch...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/ronald-moultrie.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Affiliations' exceeds word budget (140>55): Battelle Advisory Board membership attested only by Moultrie...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/ronald-moultrie.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Affiliations' exceeds word budget (61>55): The March 6 2017 mondovisione announcement names Moultrie as...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/sean-kirkpatrick.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Affiliations' exceeds word budget (57>55): The DoD bio places this assignment near the end of his DIO/S...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/aaro.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (80>55): Per the Hicks AARO establishment memo (July 15, 2022), the D...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/aaro.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (80>55): Influence and Perception Management Office. Sister sub-offic...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/arlo-solutions.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (60>55): Multiple award BPA established under HQ003424R0178 reevaluat...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/arlo-solutions.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (67>55): SASP Call Order awarded to Arlo following the WHS reevaluati...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/arlo-solutions.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (78>55): Co-vendor in the OUSD(I&S) contractor cluster; co-protester ...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ipmo.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (63>55): Sister sub-office under OUSD(I&S) per the FY 2024 OSD OP-5 s...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (86>55): First Under Secretary of Defense for Intelligence. Per the d...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (84>55): Clapper was sworn in as Under Secretary of Defense for Intel...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (89>55): Per the 2025 official biography hosted on ousdi.defense.gov,...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (69>55): Per the 2025 official biography hosted on ousdi.defense.gov,...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (67>55): Department of Defense is the parent department; DoDD 5143.01...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (144>55): Deputy Secretary of Defense Hicks directed the USD(I&S) to e...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (146>55): Advanced Intelligence Capabilities. Per FY 2026 OSD OP-5, AI...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (108>55): Law Enforcement Oversight and Compliance Directorate. Per FY...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ousd-is.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (92>55): Counter-Adversary Defense Industry (C-ADI) program. First pu...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (59>55): SAFIRE Project corporate team page:a chemist by training who...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (70>55): SAFIRE Project corporate team page: Bruce Mainwaring "has be...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (77>55): SAFIRE Project corporate team page: Scott Mainwaring "was on...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (62>55): SAFIRE Project corporate team page lists "Dr. James Ryder  C...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (109>55): ISF role per the SAFIRE PROJECT Genesis report (p. 9): fund ...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/safire-project.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (97>55): Mainwaring Archive Foundation role per the SAFIRE PROJECT Ge...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/sancorp-consulting.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (62>55): Sancorp Company News states that 'SANCORP was awarded a cont...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/sancorp-consulting.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (118>55): Period of performance start date August 22, 2022; date signe...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/sancorp-consulting.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Primary Contracts' exceeds word budget (61>55): USAspending description of the contract scope: 'USSOUTHCOM S...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (58>55): President and CEO of EarthTech International, Inc. (ETI), an...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (60>55): Former Lockheed Martin Skunk Works Program Director for Adva...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (66>55): Founder of the company and principal investor; President of ...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (68>55): Chief Marketing and Product Officer for company's subsidiary...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (79>55): Career intelligence officer whose experience includes workin...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (75>55): Former Deputy Assistant Secretary of Defense for Intelligenc...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/ttsa.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (61>55): Majority shareholder — Gravity Holdings LLC (whose sole memb...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/uaptf.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (75>55): DoD Public Affairs statement via Gough is the strongest gove...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/uaptf.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Personnel' exceeds word budget (93>55): Grusch's written testimony states "I was a member of the UAP...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/uaptf.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (85>55): AARO is the downstream successor in the chain — UAPTF → AOIM...
+
+- ts: 2026-05-13T19:10:58Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/uaptf.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (61>55): UAP Executive Steering Committee (EXCOM) — senior oversight ...
+

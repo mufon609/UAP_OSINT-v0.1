@@ -42,39 +42,39 @@ Per DefenseScoop reporting (Brandi Vincent, August 30, 2023), between November 2
 
 ### Confirmed
 
-| Organization | Role | Period | Source |
-|---|---|---|---|
-| [`/organizations/nsa`] | Senior Executive (later); retired in 2015 as NSA's Director of Operations | 2010 – 2015 | government/wargov-moultrie-biography.html |
-| [`/organizations/oceanus-security-strategies`] | President & Founder | 2015-11 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/g2k-labs`] | Board Member (also recorded as G2X Labs Inc, Chairman of the Board, in 2018 LinkedIn profile) | 2016 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/the-better-angels-society`] | Board Member | 2016-06 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/battelle-memorial-institute`] | Advisory Board Member | 2016-07 – 2018-04 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |
-| [`/organizations/itc-global-advisors`] | Senior Advisor | 2016-07 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |
-| [`/organizations/riwi-corp`] | Senior Advisor | 2017-01 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |
-| [`/organizations/c5-capital`] | Strategic Partner (March 2017 announcement) — elevated to Chairman, C5 US by December 2017 (per Businesswire IISS Manama Dialogue panel listing) | 2017-01 | news/businesswire-c5-iiss-manama-moultrie-chairman-c5-us-20171212.html |
-| [`/organizations/resolute-consulting`] | Cyber Security Advisory Board | 2018-05 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |
-| [`/organizations/altamira-technologies-corporation`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/icapital-network`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/sequoia-inc`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/yahya-technologies-y-tech`] | Advisory Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/auburn-seminary`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/vibrant-emotional-health`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |
-| [`/organizations/mitre`] | Senior Adviser — role active as of the June 2021 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested, end date no later than the June 1 2021 USD(I&S) confirmation | 2021 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
-| [`/organizations/pallas`] | Senior Adviser — role active as of the June 2021 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested, end date no later than the June 1 2021 USD(I&S) confirmation | 2021 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
-| [`/organizations/bluevoyant`] | Vice Chairman, Advisory Board — appointment announced June 2021 during the USD(I&S) nomination period (per the ExecutiveBiz article 'BlueVoyant Names Debora Plunkett, Ariel Litvin to Board of Directors, Ronald Moultrie to Advisory Board') | 2021-06 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |
-| [`/organizations/ousd-is`] | Under Secretary of Defense for Intelligence and Security (Senate-confirmed presidential appointment); principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; managed a portfolio of over $30 billion and 225,000 global civilian and uniformed personnel | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |
-| [`/organizations/odni`] | Director of Defense Intelligence (dual-hatted with USD(I&S) role) | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |
-| [`/organizations/ron-moultrie-consulting`] | President/Owner | 2024 | news/insa-moultrie-bio.html |
-| [`/organizations/leolabs`] | Outside Director (Board of Directors); independent corporate oversight of LeoLabs | 2024-12-03 | news/leolabs-moultrie-board-20241203.html |
-| [`/organizations/us-air-force`] | Russian linguist (active duty); recipient of Defense Meritorious Service Medal and U.S. Air Force Meritorious Service Medal during active duty |  | government/wargov-moultrie-biography.html |
-| [`/organizations/cia`] | Senior Intelligence Service (SIS) officer; senior member responsible for a major office within the Directorate of Science & Technology |  | government/wargov-moultrie-biography.html |
-| [`/organizations/odni`] | Senior Executive Officer serving the DNI |  | government/wargov-moultrie-biography.html |
-| [`/organizations/us-navy`] | Senior Advisor to the Secretary of the Navy; played an instrumental role in the Department of the Navy Comprehensive Cybersecurity Review |  | government/wargov-moultrie-biography.html |
-| [`/organizations/nightwing`] | Board Member |  | news/umd-moultrie-faculty-bio.html |
-| [`/organizations/national-cryptologic-foundation`] | Board Member |  | news/insidebidensbasement-moultrie.html |
-| [`/organizations/piab`] | Appointed Board Member; served until January 2025 | – 2025-01 | news/umd-moultrie-faculty-bio.html |
-| [`/organizations/iob`] | Appointed Board Member; served until January 2025 | – 2025-01 | news/umd-moultrie-faculty-bio.html |
-| [`/organizations/umd-school-of-public-policy`] | Distinguished Senior Fellow, Executive Programs (affiliations — International Policy and Science & Technology Policy) |  | news/umd-moultrie-faculty-bio.html |
+| Organization | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/organizations/nsa`] | Senior Executive (later); retired in 2015 as NSA's Director of Operations | 2010 – 2015 | government/wargov-moultrie-biography.html |  |
+| [`/organizations/oceanus-security-strategies`] | President & Founder | 2015-11 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/g2k-labs`] | Board Member (also recorded as G2X Labs Inc, Chairman of the Board, in 2018 LinkedIn profile) | 2016 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/the-better-angels-society`] | Board Member | 2016-06 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/battelle-memorial-institute`] | Advisory Board Member | 2016-07 – 2018-04 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg | Battelle Advisory Board membership attested only by Moultrie's contemporaneous LinkedIn profile (printed June 27 2018, screenshot distributed by Christopher Sharp via X). Battelle is absent from all current public Moultrie biographies (war.gov, INSA, UMD, LeoLabs, Wikipedia, ExecutiveBiz, Inside Biden's Basement OGE 278e Schedule D); the omission pattern applies to all Moultrie's 2015-2018 advisory roles, not Battelle alone — OGE Form 278 Schedule D requires listing positions held in the two calendar years before filing, and the Battelle role ended approximately three years before Moultrie's June 2021 USD(I&S) appointment. The two Battelle Memorial Institute IRS Form 990 filings in this artifact's primary_sources (FY ending September 30 2019 and FY ending September 30 2021) confirm Moultrie was not a member of Battelle's Board of Directors during those fiscal years; Form 990 Part VII Section A does not require listing Advisory Board members. |
+| [`/organizations/itc-global-advisors`] | Senior Advisor | 2016-07 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
+| [`/organizations/riwi-corp`] | Senior Advisor | 2017-01 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
+| [`/organizations/c5-capital`] | Strategic Partner (March 2017 announcement) — elevated to Chairman, C5 US by December 2017 (per Businesswire IISS Manama Dialogue panel listing) | 2017-01 | news/businesswire-c5-iiss-manama-moultrie-chairman-c5-us-20171212.html | The March 6 2017 mondovisione announcement names Moultrie as "Strategic Partner" of C5 Partners. The December 12 2017 Businesswire press release on the C5 Capital partnership with the International Institute for Strategic Studies lists Moultrie's role as "Chairman, C5 US" on the IISS Manama Dialogue panel — primary attestation of the role escalation within nine months of joining (audit § 5.2). |
+| [`/organizations/resolute-consulting`] | Cyber Security Advisory Board | 2018-05 | social/sharp-x-moultrie-linkedin-printout-20180627.jpeg |  |
+| [`/organizations/altamira-technologies-corporation`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/icapital-network`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/sequoia-inc`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/yahya-technologies-y-tech`] | Advisory Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/auburn-seminary`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/vibrant-emotional-health`] | Board Member | 2020 – 2021-05 | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/mitre`] | Senior Adviser — role active as of the June 2021 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested, end date no later than the June 1 2021 USD(I&S) confirmation | 2021 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |  |
+| [`/organizations/pallas`] | Senior Adviser — role active as of the June 2021 ExecutiveBiz article ('He is also a senior adviser to Mitre, Resolute Consulting and Pallas'); start date unattested, end date no later than the June 1 2021 USD(I&S) confirmation | 2021 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html |  |
+| [`/organizations/bluevoyant`] | Vice Chairman, Advisory Board — appointment announced June 2021 during the USD(I&S) nomination period (per the ExecutiveBiz article 'BlueVoyant Names Debora Plunkett, Ariel Litvin to Board of Directors, Ronald Moultrie to Advisory Board') | 2021-06 – 2021-06 | news/executivebiz-bluevoyant-moultrie-advisory-board-202106.html | Appointment announced shortly before Moultrie was sworn in as USD(I&S) on June 1 2021; the role was effectively concurrent with the start of his government service and would have been disclosed on his entry-level OGE filing. Audit § 5.5 source. |
+| [`/organizations/ousd-is`] | Under Secretary of Defense for Intelligence and Security (Senate-confirmed presidential appointment); principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters; managed a portfolio of over $30 billion and 225,000 global civilian and uniformed personnel | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |  |
+| [`/organizations/odni`] | Director of Defense Intelligence (dual-hatted with USD(I&S) role) | 2021-06-01 – 2024-02-29 | government/wargov-moultrie-biography.html |  |
+| [`/organizations/ron-moultrie-consulting`] | President/Owner | 2024 | news/insa-moultrie-bio.html |  |
+| [`/organizations/leolabs`] | Outside Director (Board of Directors); independent corporate oversight of LeoLabs | 2024-12-03 | news/leolabs-moultrie-board-20241203.html |  |
+| [`/organizations/us-air-force`] | Russian linguist (active duty); recipient of Defense Meritorious Service Medal and U.S. Air Force Meritorious Service Medal during active duty |  | government/wargov-moultrie-biography.html |  |
+| [`/organizations/cia`] | Senior Intelligence Service (SIS) officer; senior member responsible for a major office within the Directorate of Science & Technology |  | government/wargov-moultrie-biography.html |  |
+| [`/organizations/odni`] | Senior Executive Officer serving the DNI |  | government/wargov-moultrie-biography.html |  |
+| [`/organizations/us-navy`] | Senior Advisor to the Secretary of the Navy; played an instrumental role in the Department of the Navy Comprehensive Cybersecurity Review |  | government/wargov-moultrie-biography.html |  |
+| [`/organizations/nightwing`] | Board Member |  | news/umd-moultrie-faculty-bio.html |  |
+| [`/organizations/national-cryptologic-foundation`] | Board Member |  | news/insidebidensbasement-moultrie.html |  |
+| [`/organizations/piab`] | Appointed Board Member; served until January 2025 | – 2025-01 | news/umd-moultrie-faculty-bio.html |  |
+| [`/organizations/iob`] | Appointed Board Member; served until January 2025 | – 2025-01 | news/umd-moultrie-faculty-bio.html |  |
+| [`/organizations/umd-school-of-public-policy`] | Distinguished Senior Fellow, Executive Programs (affiliations — International Policy and Science & Technology Policy) |  | news/umd-moultrie-faculty-bio.html |  |
 
 ---
 
@@ -252,19 +252,19 @@ _No direct observations documented._
 
 ### Confirmed
 
-| Person | Relationship |
-|---|---|
-| [`/people/sean-kirkpatrick`] | Selected by Moultrie to stand up and lead AARO as the office's first Director (July 20 2022 — December 1 2023); joint media-roundtable counterpart at the December 16 2022 first AARO public update; AARO Executive Council reported to Moultrie until late July 2023 reporting-chain transition to Deputy Secretary of Defense |
-| [`/people/kathleen-hicks`] | Deputy Secretary of Defense; took direct AARO oversight in late July 2023, repositioning Kirkpatrick to report directly to her rather than through Moultrie's office; issued November 8 2023 Kirkpatrick departure statement |
-| [`/people/lloyd-austin`] | Secretary of Defense across most of Moultrie's USD(I&S) tenure; Moultrie was 'the principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters' |
-| [`/people/joseph-kernan`] | Predecessor as Under Secretary of Defense for Intelligence and Security |
-| [`/people/bradley-hansell`] | Successor as Under Secretary of Defense for Intelligence and Security (sworn in after Moultrie's February 29, 2024 retirement) |
-| [`/people/sue-gough`] | Department of Defense spokesperson; moderator of the December 16 2022 joint AARO media roundtable hosted by Moultrie and Kirkpatrick |
-| [`/people/paul-nakasone`] | NSA Director / U.S. Cyber Command Commander; co-witness alongside Moultrie at the March 17 2022 House Armed Services Subcommittee on Intelligence and Special Operations posture hearing |
-| [`/people/scott-berrier`] | DIA Director; co-witness alongside Moultrie at the March 17 2022 House Armed Services Subcommittee on Intelligence and Special Operations posture hearing |
-| [`/people/ruben-gallego`] | Chairman of the House Armed Services Subcommittee on Intelligence and Special Operations at the March 17 2022 posture hearing where Moultrie testified |
-| [`/people/trent-kelly`] | Ranking Member of the House Armed Services Subcommittee on Intelligence and Special Operations at the March 17 2022 posture hearing |
-| [`/people/tony-frazier`] | LeoLabs CEO who welcomed Moultrie to the Board of Directors as Outside Director on December 3, 2024 |
+| Person | Relationship | Note |
+|---|---|---|
+| [`/people/sean-kirkpatrick`] | Selected by Moultrie to stand up and lead AARO as the office's first Director (July 20 2022 — December 1 2023); joint media-roundtable counterpart at the December 16 2022 first AARO public update; AARO Executive Council reported to Moultrie until late July 2023 reporting-chain transition to Deputy Secretary of Defense |  |
+| [`/people/kathleen-hicks`] | Deputy Secretary of Defense; took direct AARO oversight in late July 2023, repositioning Kirkpatrick to report directly to her rather than through Moultrie's office; issued November 8 2023 Kirkpatrick departure statement |  |
+| [`/people/lloyd-austin`] | Secretary of Defense across most of Moultrie's USD(I&S) tenure; Moultrie was 'the principal advisor to the Secretary of Defense on intelligence, counterintelligence, and security matters' |  |
+| [`/people/joseph-kernan`] | Predecessor as Under Secretary of Defense for Intelligence and Security |  |
+| [`/people/bradley-hansell`] | Successor as Under Secretary of Defense for Intelligence and Security (sworn in after Moultrie's February 29, 2024 retirement) |  |
+| [`/people/sue-gough`] | Department of Defense spokesperson; moderator of the December 16 2022 joint AARO media roundtable hosted by Moultrie and Kirkpatrick |  |
+| [`/people/paul-nakasone`] | NSA Director / U.S. Cyber Command Commander; co-witness alongside Moultrie at the March 17 2022 House Armed Services Subcommittee on Intelligence and Special Operations posture hearing |  |
+| [`/people/scott-berrier`] | DIA Director; co-witness alongside Moultrie at the March 17 2022 House Armed Services Subcommittee on Intelligence and Special Operations posture hearing |  |
+| [`/people/ruben-gallego`] | Chairman of the House Armed Services Subcommittee on Intelligence and Special Operations at the March 17 2022 posture hearing where Moultrie testified |  |
+| [`/people/trent-kelly`] | Ranking Member of the House Armed Services Subcommittee on Intelligence and Special Operations at the March 17 2022 posture hearing |  |
+| [`/people/tony-frazier`] | LeoLabs CEO who welcomed Moultrie to the Board of Directors as Outside Director on December 3, 2024 |  |
 
 ---
 

@@ -84,17 +84,17 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 #### Directors
 
-| Name | Role | Period | Source |
-|---|---|---|---|
-| [`/people/sean-kirkpatrick`] | Director | 2022-07 – 2023-12 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |
-| [`/people/jonathan-kosloski`] | Director (detail from National Security Agency) | 2024-08-26 | government/defense-gov-kosloski-appointment-20240826.html |
+| Name | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/people/sean-kirkpatrick`] | Director | 2022-07 – 2023-12 | government/media-defense-gov-kirkpatrick-biography-20220720.pdf |  |
+| [`/people/jonathan-kosloski`] | Director (detail from National Security Agency) | 2024-08-26 | government/defense-gov-kosloski-appointment-20240826.html |  |
 
 #### Deputy Leadership
 
-| Name | Role | Period | Source |
-|---|---|---|---|
-| [`/people/tim-phillips`] | Deputy Director | 2023-10 | government/aaro-phillips-timothy-bio-dec2023.pdf |
-| [`/people/tim-phillips`] | Acting Director | 2023-12 – 2024-08-26 | government/aaro-phillips-timothy-bio-dec2023.pdf |
+| Name | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/people/tim-phillips`] | Deputy Director | 2023-10 | government/aaro-phillips-timothy-bio-dec2023.pdf |  |
+| [`/people/tim-phillips`] | Acting Director | 2023-12 – 2024-08-26 | government/aaro-phillips-timothy-bio-dec2023.pdf |  |
 
 ---
 
@@ -1173,17 +1173,17 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ### Confirmed
 
-| Organization | Relationship | Source |
-|---|---|---|
-| [`/organizations/dod`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
-| [`/organizations/aoimsg`] | predecessor | government/defense-gov-aaro-establishment-20220720.html |
-| [`/organizations/uaptf`] | predecessor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
-| [`/organizations/odni`] | partner | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
-| [`/organizations/ousd-is`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
-| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0094.txt |
-| [`/organizations/whs`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf |
-| [`/organizations/aaroexec`] | other | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |
-| [`/organizations/ipmo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf |
+| Organization | Relationship | Source | Note |
+|---|---|---|---|
+| [`/organizations/dod`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |  |
+| [`/organizations/aoimsg`] | predecessor | government/defense-gov-aaro-establishment-20220720.html | AARO: renaming and expanding the scope of the AOIMSG |
+| [`/organizations/uaptf`] | predecessor | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | Memorandum directed the Secretary of the Navy to disestablish the UAPTF no later than the date the AARO is established, and to support the orderly transition of the UAPTF, including the transfer of any data, analysis, or other relevant material, to the AARO |
+| [`/organizations/odni`] | partner | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | Memorandum direction — establishment in coordination with the Director of National Intelligence (DNI) |
+| [`/organizations/ousd-is`] | parent | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | Per the Hicks AARO establishment memo (July 15, 2022), the Deputy Secretary of Defense directed the Under Secretary of Defense for Intelligence and Security (USD(I&S)) to establish AARO. Two-track relationship since late July 2023 — OUSD(I&S) retains administrative cognizance (contracting, security, public-affairs clearance, FOIA review, Congressional Activities coordination); operational reporting transitioned to the Deputy Secretary of Defense per 50 U.S.C. § 3373, with Hicks repositioning Director Kirkpatrick to report directly to her per DefenseScoop reporting (Brandi Vincent, August 30, 2023). |
+| [`/organizations/sancorp-consulting`] | contractor | government/usaspending-hq003422c0094.txt | Sancorp Consulting LLC provides AARO support services under prime contracts HQ003422C0094 (initial 2022, \$4,061,786.51) and HQ003424C0096 (follow-on 2024, \$3,471,829.40). Performance Work Statement defines eight task areas including Executive Administrative Support, Strategy/Plans/Policy Support, Congressional Affairs/Public Affairs/FOIA Support, Data Architecture, Planning/Programming/Budgeting/Executive Support, Reporting Support, and Operations Support. |
+| [`/organizations/whs`] | contracting-agency | government/blackvault-sancorp-23-f-1114-aaro-pws.pdf | Washington Headquarters Services Acquisition Directorate (DODAAC HQ0034) is the contracting subtier agency that issues AARO''s support-services contracts on behalf of OUSD(I&S). Located at 4800 Mark Center Drive, Suite 09F09, Alexandria VA. Pay Official DODAAC HQ0768 (WHS Financial Management Directorate). |
+| [`/organizations/aaroexec`] | other | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf | AAROEXEC is the AARO Executive Council, renamed by the Hicks AARO establishment memo from the predecessor AOIMEXEC. Per the Hicks memo, the mission of the AAROEXEC is to provide oversight and direction to the AARO. Distinct from the parent USD(I&S) reporting line; AAROEXEC is the senior governance body that reviews AARO direction. |
+| [`/organizations/ipmo`] | partner | government/osd-op5-fy26-wayback-20260201.pdf | Influence and Perception Management Office. Sister sub-office under the same OUSD(I&S) administrative parent per FY 2026 OSD OP-5 (which lists IPMO alongside DMDPO, OSD Red Team, SCPO, CP/WMD Office, AIC, and the Law Enforcement Oversight and Compliance Directorate as funded OUSD(I&S) sub-offices). Sancorp Consulting holds prime contracts at both AARO (HQ003422C0094, signed September 1, 2022) and IPMO (HQ003422C0064, PWS dated April 25, 2022) — both 8(a) sole-source procurements issued by the same Washington Headquarters Services Acquisition Directorate three months apart. |
 
 ---
 

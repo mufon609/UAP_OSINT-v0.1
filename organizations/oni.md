@@ -36,9 +36,9 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 
 #### Other Named Personnel
 
-| Name | Role | Period | Source |
-|---|---|---|---|
-| [`/people/jay-stratton`] | Senior civilian |  | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |
+| Name | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/people/jay-stratton`] | Senior civilian |  | news/blackvault-smdc-travis-taylor-uaptf-20220629.html | Per the Department of Defense Spokesperson Susan Gough written statement to The Black Vault dated June 29, 2022, Stratton was "former Office of Naval Intelligence senior civilian" at the time he was leading UAPTF; the date of his ONI role is not directly stated in the primary sources cited for this organization |
 
 ---
 
@@ -143,11 +143,11 @@ Outside the UAPTF arrangement, ONI is named by Navy pilot Alex Dietrich ([`/peop
 
 ### Confirmed
 
-| Organization | Relationship | Source |
-|---|---|---|
-| [`/organizations/uaptf`] | other | government/blackvault-uap-security-classification-guide-20200416.pdf |
-| [`/organizations/us-navy`] | parent | government/dni-gov-odni-preliminary-assessment-20210625.pdf |
-| [`/organizations/odni`] | other | government/dni-gov-odni-preliminary-assessment-20210625.pdf |
+| Organization | Relationship | Source | Note |
+|---|---|---|---|
+| [`/organizations/uaptf`] | other | government/blackvault-uap-security-classification-guide-20200416.pdf | UAP Task Force operating subject per the Naval Intelligence Activity UAP Security Classification Guide (16 April 2020); the Senate Select Committee on Intelligence subsequently names "the Unidentified Aerial Phenomenon Task Force at the Office of Naval Intelligence" in Senate Report 116-233 (June 17, 2020) |
+| [`/organizations/us-navy`] | parent | government/dni-gov-odni-preliminary-assessment-20210625.pdf | ODNI Preliminary Assessment lists "Navy/ONI" among the contributing agencies, attesting ONI as a Navy component |
+| [`/organizations/odni`] | other | government/dni-gov-odni-preliminary-assessment-20210625.pdf | Director of National Intelligence drafted the June 25, 2021 Preliminary Assessment with input from Navy/ONI; ODNI was directed by Senate Report 116-233 to include in its analysis the data and intelligence reporting collected or held by the Office of Naval Intelligence |
 
 ---
 

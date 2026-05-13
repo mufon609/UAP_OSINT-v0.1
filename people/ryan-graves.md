@@ -36,12 +36,12 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 
 ### Confirmed
 
-| Organization | Role | Period | Source |
-|---|---|---|---|
-| [`/organizations/us-navy`] | Former F-18 pilot | 2009 | government/docs-house-gov-graves-written-testimony-20230726.pdf |
-| [`/organizations/vfa-11`] | F–18 Foxtrot pilot in the Navy Fighter Attack Squadron 11, the Red Rippers | 2014 | government/congress-gov-house-hearing-transcript-20230726.pdf |
-| [`/organizations/americans-for-safe-aerospace`] | founded the organization |  | government/docs-house-gov-graves-written-testimony-20230726.pdf |
-| [`/organizations/aiaa`] | Chair of the UAP Integration & Outreach Committee |  | government/docs-house-gov-graves-written-testimony-20230726.pdf |
+| Organization | Role | Period | Source | Note |
+|---|---|---|---|---|
+| [`/organizations/us-navy`] | Former F-18 pilot | 2009 | government/docs-house-gov-graves-written-testimony-20230726.pdf |  |
+| [`/organizations/vfa-11`] | F–18 Foxtrot pilot in the Navy Fighter Attack Squadron 11, the Red Rippers | 2014 | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [`/organizations/americans-for-safe-aerospace`] | founded the organization |  | government/docs-house-gov-graves-written-testimony-20230726.pdf |  |
+| [`/organizations/aiaa`] | Chair of the UAP Integration & Outreach Committee |  | government/docs-house-gov-graves-written-testimony-20230726.pdf |  |
 
 ---
 
@@ -167,11 +167,11 @@ Graves has witnessed advanced UAP on multiple sensor systems firsthand. Upon an 
 
 ### Confirmed
 
-| Person | Relationship |
-|---|---|
-| [`/people/david-fravor`] | fellow witness at the July 26, 2023 House Oversight UAP hearing |
-| [`/people/david-grusch`] | fellow witness at the July 26, 2023 House Oversight UAP hearing |
-| [`/people/tim-gallaudet`] | one of the advisors at Americans for Safe Aerospace; former head of National Oceanic and Atmospheric Administration and Oceanographer of the Navy; Gallaudet received a 2015 classified SIPRNET email about UAP near mid-air collisions in the operating area where Graves's encounters occurred |
+| Person | Relationship | Note |
+|---|---|---|
+| [`/people/david-fravor`] | fellow witness at the July 26, 2023 House Oversight UAP hearing |  |
+| [`/people/david-grusch`] | fellow witness at the July 26, 2023 House Oversight UAP hearing |  |
+| [`/people/tim-gallaudet`] | one of the advisors at Americans for Safe Aerospace; former head of National Oceanic and Atmospheric Administration and Oceanographer of the Navy; Gallaudet received a 2015 classified SIPRNET email about UAP near mid-air collisions in the operating area where Graves's encounters occurred |  |
 
 ---
 
