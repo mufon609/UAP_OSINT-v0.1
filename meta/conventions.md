@@ -235,8 +235,8 @@ case, and OCR character-corruptions (`telated` for `related`,
 verbatim-quote check because both the quote text and the source extract
 carry the same corruption. The check is mechanically correct but reader-
 misleading — confirmation against the OCR-corrupted extract is not
-confirmation against the original document. Three steps, all required,
-when authoring a quote from such a source:
+confirmation against the original document. Two contributor steps,
+both required, when authoring a quote from such a source:
 
 1. **Log each artifact as a `naming_quirks` entry** with resolution
    `preserve-as-sic-in-quotes` — observed form, canonical form, source
@@ -252,20 +252,20 @@ when authoring a quote from such a source:
    strips the bracket wrap before tokenizing, so the source-verbatim
    token matches against source while the canonical wrap provides
    navigability.
-3. **Source-Form Notes section renders automatically** (per BACKLOG
-   B1 M2). The Phase II body renderer emits a `## Source-Form Notes`
-   section near the foot of every node body (just before
-   `## Associated Nodes`) that tables every `naming_quirks` entry
-   whose resolution is `preserve-as-sic-in-quotes`. Columns: Source
-   Form, Canonical, Source, Note. The section is auto-suppressed
-   when no such entries exist on the artifact. A reader encountering
-   a source-form token in quoted text now has a reference table
-   directly on the node body — no separate prose flag required.
-   Adding a one-sentence prose flag in `credibility_notes` /
-   `description` remains optional when the source-form pattern is
-   particularly load-bearing for a specific evidentiary claim
-   (the Grusch q157 + PPD-19 cases are examples), but is no longer
-   the primary reader-visibility mechanism.
+
+Reader-visibility is automatic from there (per BACKLOG B1 M2). The
+Phase II body renderer emits a `## Source-Form Notes` section near
+the foot of every node body (just before `## Associated Nodes`) that
+tables every `naming_quirks` entry whose resolution is
+`preserve-as-sic-in-quotes`. Columns: Source Form, Canonical, Source,
+Note. The section is auto-suppressed when no such entries exist on
+the artifact. A reader encountering a source-form token in quoted
+text has a reference table directly on the node body — no separate
+prose flag required. Adding a one-sentence prose flag in
+`credibility_notes` / `description` remains optional when the
+source-form pattern is particularly load-bearing for a specific
+evidentiary claim (the Grusch q157 + PPD-19 cases are examples), but
+is not the primary reader-visibility mechanism.
 
 After registering the naming_quirks entries, re-grep the source
 extract for additional artifact patterns matching those already
