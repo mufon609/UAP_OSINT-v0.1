@@ -252,27 +252,32 @@ when authoring a quote from such a source:
    strips the bracket wrap before tokenizing, so the source-verbatim
    token matches against source while the canonical wrap provides
    navigability.
-3. **Add a reader-visible prose flag** in the appropriate free-prose
-   field (person: `credibility_notes`; document / organization /
-   location: `description`). `naming_quirks` entries don't render on
-   node bodies — without a prose flag, the reader sees the source-form
-   tokens in quoted text without the contextual signal that they're
-   preserved OCR artifacts. One sentence enumerating the OCR artifacts
-   from a given source is sufficient; use source-attested vocabulary
-   (`optical`, `character`, `recognition`, `artifacts`, `scan`,
-   `extract`, `preserved`) so the prose-drift check passes cleanly.
+3. **Source-Form Notes section renders automatically** (per BACKLOG
+   B1 M2). The Phase II body renderer emits a `## Source-Form Notes`
+   section near the foot of every node body (just before
+   `## Associated Nodes`) that tables every `naming_quirks` entry
+   whose resolution is `preserve-as-sic-in-quotes`. Columns: Source
+   Form, Canonical, Source, Note. The section is auto-suppressed
+   when no such entries exist on the artifact. A reader encountering
+   a source-form token in quoted text now has a reference table
+   directly on the node body — no separate prose flag required.
+   Adding a one-sentence prose flag in `credibility_notes` /
+   `description` remains optional when the source-form pattern is
+   particularly load-bearing for a specific evidentiary claim
+   (the Grusch q157 + PPD-19 cases are examples), but is no longer
+   the primary reader-visibility mechanism.
 
-After applying step 3, re-grep the source extract for additional
-artifact patterns matching those already logged — drafting the prose
-flag often surfaces artifacts not caught in the initial scan.
+After registering the naming_quirks entries, re-grep the source
+extract for additional artifact patterns matching those already
+logged — drafting the registrations often surfaces artifacts not
+caught in the initial scan.
 
 The discipline is a per-quote workaround, not a substitute for
 producing the `.txt` sibling. Once the sibling exists and the manifest
 entry's `extraction_type` is set to `ocr-scan`, the validator extracts
 from the sibling rather than the corrupted PDF text layer; the
 naming_quirks entries continue to record the original artifacts as
-provenance. The prose flag may be tightened or removed at that point
-depending on whether the sibling fully resolves the artifacts.
+provenance and continue rendering via the Source-Form Notes section.
 
 ### Transcript provenance and audit discipline
 

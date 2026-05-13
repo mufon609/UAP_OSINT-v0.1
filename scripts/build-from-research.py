@@ -374,6 +374,52 @@ def render_associated_nodes():
     )
 
 
+def render_source_form_notes(artifact):
+    """Emit a `## Source-Form Notes` section listing `naming_quirks`
+    entries whose resolution is `preserve-as-sic-in-quotes` —
+    contributor-registered source-form preservations (auto-caption
+    typos, OCR artifacts, alias-of-record forms) that appear verbatim
+    in quote text and would otherwise read to a reader as contributor
+    misspellings without explicit signal.
+
+    Returns empty string when no preserve-as-sic entries exist. Other
+    naming_quirks resolutions (use-canonical, disputed, unresolved) are
+    contributor-side metadata only and don't render here.
+
+    Applies to every node type — naming_quirks is universal across
+    target types. See meta/conventions.md "Source-form preservation
+    discipline" for the reader-visibility rationale.
+    """
+    quirks = artifact.get("naming_quirks") or []
+    preserved = [
+        q for q in quirks
+        if isinstance(q, dict) and q.get("resolution") == "preserve-as-sic-in-quotes"
+    ]
+    if not preserved:
+        return ""
+
+    lines = [
+        "## Source-Form Notes",
+        "",
+        "Source-form preservations — verbatim tokens in quote text "
+        "that the cited primary source attests in a non-canonical form "
+        "(auto-caption typos, OCR artifacts, alias-of-record). The "
+        "verbatim form is preserved in quoted text per source-read-"
+        "first discipline; the canonical form is recorded here for "
+        "navigation.",
+        "",
+        "| Source Form | Canonical | Source | Note |",
+        "|---|---|---|---|",
+    ]
+    for q in preserved:
+        observed = _escape_table_cell(q.get("observed"))
+        canonical = _escape_table_cell(q.get("canonical"))
+        source_path = _escape_table_cell(q.get("source_path"))
+        note = _escape_table_cell(q.get("note"))
+        lines.append(f"| {observed} | {canonical} | {source_path} | {note} |")
+    return "\n".join(lines) + "\n"
+
+
 def render_primary_source_contradictions(artifact):
     """Emit a `## Primary-Source Contradictions` section listing rumors
     whose status is `primary-source-disputed` — widely-circulated
@@ -1218,8 +1264,10 @@ def render_body_document(artifact, node_kind):
         sections.append(render_provenance(artifact))
     sections.extend([
         render_key_passages(artifact),
+        render_source_form_notes(artifact),
         render_associated_nodes(),
     ])
+    sections = [s for s in sections if s]
     joined = SECTION_SEP.join(s.rstrip("\n") + "\n" for s in sections).rstrip() + "\n"
     return title + "\n" + joined
 
@@ -1245,6 +1293,7 @@ def render_body_person(artifact, archetype):
         sections.append(render_vouching_chain(artifact))
     sections.extend([
         render_primary_source_contradictions(artifact),
+        render_source_form_notes(artifact),
         render_associated_nodes(),
     ])
     # Drop empty section strings (archetype dispatcher returns "" on unknown)
@@ -1282,6 +1331,7 @@ def render_body_event(artifact, kind):
         sys.exit(f"ERROR: render_body_event: unknown event kind {kind!r}")
     sections.extend([
         render_primary_source_contradictions(artifact),
+        render_source_form_notes(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
@@ -1305,6 +1355,7 @@ def render_body_transcript(artifact, kind, fm):
         render_transcript_summary(artifact),
         render_transcript_speakers(artifact),
         render_transcript_key_passages(artifact),
+        render_source_form_notes(artifact),
         render_associated_nodes(),
     ]
     sections = [s for s in sections if s]
@@ -1524,6 +1575,7 @@ def render_body_media(artifact, kind, fm):
         sections.append(mv_section)
     sections.extend([
         render_media_key_passages(artifact),
+        render_source_form_notes(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
@@ -1870,6 +1922,7 @@ def render_body_organization(artifact, kind):
         render_timeline(artifact),
         render_org_relationships(artifact),
         render_primary_source_contradictions(artifact),
+        render_source_form_notes(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
@@ -2107,6 +2160,7 @@ def render_body_location(artifact, fm):
         render_location_key_passages(artifact),
         render_location_relationships(artifact),
         render_primary_source_contradictions(artifact),
+        render_source_form_notes(artifact),
         render_associated_nodes(),
     ]
     sections = [s for s in sections if s]
