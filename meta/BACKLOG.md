@@ -41,10 +41,11 @@ externally-blocked item ever surfaces (rare), reinstate the
 
 ## A. Priority sequence
 
-Items with ordering or coupling constraints. A1 unblocks A2; A3 is
-coupled to roadmap F.7 (finding renderer); A4 pairs with F.7. Pick
-up in this order; do not skip ahead without the upstream piece in
-place.
+Items with ordering or coupling constraints. A1 and A2 retired
+2026-05-13 (Phase F corpus audit complete; tombstones below for
+ID-stable history). A3 is coupled to roadmap F.7 (finding renderer);
+A4 pairs with F.7. Pick up in this order; do not skip ahead without
+the upstream piece in place.
 
 ### A1. Auto-caption-vs-audio confirmation discipline — RETIRED 2026-05-13
 
@@ -66,167 +67,18 @@ section).
 
 ---
 
-### A2. Verified-verbatim marker removed; full-corpus source-integrity audit (Phase F) in progress
+### A2. Verified-verbatim marker removed; full-corpus source-integrity audit (Phase F) — RETIRED 2026-05-13
 
-**The principle (settled, see `meta/conventions.md`).** Confirmation
-against the underlying primary source is a precondition for
-inclusion in node bodies, not a rendered claim. `validate.py`'s
-verbatim-quote check runs unconditionally on every block-quote with
-a Source row; nodes carry no per-quote verification marker. The
-discipline is enforced mechanically and is invisible to readers by
-design.
-
-**Why this entry stays open.** The principle landed via a marker
-removal + validator refactor + node regeneration pass. That pass
-left a corpus-integrity question: existing quotes were verified
-under the old regime, which substring-matched quote text against
-`pdftotext` / HTML extract output. When the source's extraction
-layer is lossy (OCR-scanned PDFs, character-substituting PDF
-generators), bytes-match-extract is not bytes-match-original. A
-multi-tier source-integrity audit (Phase F) walks every cited
-source and re-verifies extraction quality. A2 closes when Tier 6
-closeout runs.
-
-**Authoritative progress record.** Tier-by-tier methodology,
-findings, and aggregate measurements live in
-`meta/toolkit-notes/corpus-audit-2026-04.md`. This BACKLOG entry
-tracks the high-level work plan and remaining decisions; the
-closeout doc is the source of truth for audit detail.
-
-**Schema additions shipped during Phase F.** `extraction_type`
-field on `manifest_entry`, with values `text-native`, `ocr-scan`,
-or `extraction-lossy`. The validator prefers a same-stem `.txt`
-sibling over `pdftotext` output when extraction_type is
-non-text-native — the sibling is a contributor-produced clean
-transcription, visually verified against the source, with its own
-manifest entry + sha256.
-
-**Current corpus state** (2026-05-13). 881 quotes across 158 unique
-source paths across 32 research artifacts (up from 508 / 64 / 16 at
-Phase F.1 diagnostic — corpus has grown ~70%). The per-tier source
-counts in the closeout doc were Phase F.1 snapshots; counts re-derive
-at each audit-execution session.
-
-**Remaining work.**
-
-- **Tier 3 — transcript sources (auto-caption majority).** 12 sources
-  / 84 quotes. **Complete 2026-05-13** — A1 resolved (option 3
-  hybrid-by-`transcript_provenance` adopted; schema + conventions
-  updated; all 16 transcript-format manifest entries classified as
-  `auto-caption`). Tier 3 audit executed: programmatic caption-
-  artifact scan + naming_quirks cross-reference across all 12 cited
-  sources / 84 quotes. 3 missing naming_quirks entries surfaced and
-  registered (alex-dietrich `fraver` for american-veterans-center;
-  david-grusch `Kurpatre` for newsnation-coulthart; james-ryder
-  `put off` for lucistrust-garment-of-god) — these are
-  documentation-completeness findings (the quote text already
-  preserved the verbatim caption form per source-form-preserve
-  discipline; only the audit-trail naming_quirks coverage was
-  incomplete on a per-source basis). 0 contributor-side findings
-  (no caption-artifact slipped into quote text without source-form
-  preservation).
-- **Tier 4 — HTML sources.** 77 sources / 203 quotes. **Complete
-  2026-05-13** — three-step methodology: (1) programmatic
-  extraction-artifact scan across all 77 HTML sources via
-  `extract_source_text` — 0 quote-affecting artifacts (the few
-  template-scaffolding leaks found sit outside quoted regions);
-  (2) quote-text artifact scan across all 203 cited quotes —
-  2 contributor-side findings corrected (uaptf q1 + q2 carried
-  literal `&nbsp;` in quote text rather than the decoded `\xA0`
-  character the source actually attests; same failure-mode shape
-  as q157, different artifact class); (3) representative visual
-  spot-check on most-cited HTML source (thedebrief-grusch-2023,
-  10 quotes) — 10/10 match.
-- **Tier 5 — PDF long-tail.**
-  - **5a — text-native PDFs.** 52 sources / 176 quotes. **Complete
-    2026-05-13** — three-step Tier 2 methodology: (1) producer-
-    metadata scan across all 52 sources surfaced 1 manifest mis-
-    flag (`blackvault-grusch-dopsr-23-F-0946.pdf` was OmniPage
-    OCR-produced but flagged text-native; visual VLM verification
-    confirmed clean extract per the conventions.md exception case;
-    manifest updated to `extraction_type: ocr-scan` with
-    verification note, no sibling needed); (2) suspect-Unicode +
-    quote-text artifact scans across all 52 sources / 176 quotes —
-    0 hits; (3) visual VLM spot-checks on the most-cited source
-    (kirkpatrick-statement, 20 quotes — 3 cross-checked phrases
-    match) plus one Uintah parcel (cluster-verify covers all 7
-    parcel PDFs sharing the ORDS portal pipeline).
-  - **5b — extraction-lossy PDFs.** 2 sources / 62 quotes (SASC
-    2023-04-19 + SASC 2024-11-19 transcripts). **Verified clean
-    2026-05-13** — programmatic OCR/Unicode scans clean + visual
-    spot-check of quote-densest page on each sibling; 0 findings.
-  - **5c — ocr-scan PDFs.** 7 sources / 39 quotes. **Complete
-    2026-05-13** — 3 sources / 12 quotes shipped via production
-    (foia-23-f-0906 sibling + blackvault-aaro-invitations canonical
-    sibling + SD004 manifest hygiene; 1 finding — q157); remaining
-    4 sources / 27 quotes (PPD-19 + foia-23-f-0905-doc-1/2 +
-    blackvault-foia-24-f-0894-emails) verified via programmatic
-    scans + production-time VLM-read provenance; 0 additional
-    findings.
-- **Tier 6 — Closeout.** Aggregate findings across all tiers into
-  the closeout doc; confirm follow-up BACKLOG entries are still
-  appropriately scoped; close A2.
-
-**Findings to date** (all tiers complete except Tier 6 closeout).
-862 audited quotes across 154 sources — every cited primary source
-in the corpus. Total contributor-side findings: 9 (6 in Tier 1's
-211 quotes per closeout-doc category breakdown; 0 in Tier 2's 87
-quotes; 0 in Tier 3's 84 quotes; 2 in Tier 4's 203 HTML-source
-quotes — uaptf q1 + q2 `&nbsp;` literal → `\xA0` character; 0 in
-Tier 5a's 176 quotes; 0 in Tier 5b's 62 quotes; 1 in Tier 5c's 39
-quotes — david-grusch q157 `lAW`→`IAW` and `(0)`→`(O)` OCR
-character-confusions). Plus 1 manifest-metadata finding (Tier 5a
-surfaced dopsr-23-F-0946 mis-flagged text-native despite OmniPage
-OCR producer; corrected to ocr-scan with verification note per the
-conventions.md exception case). Plus 3 documentation-completeness
-findings (Tier 3 surfaced missing naming_quirks entries on a
-per-source basis for caption artifacts that were already preserved
-correctly in quote text). The Tier 4 findings and the q157 Tier 5c
-finding share a failure-mode shape: contributor preserved an
-extraction-pipeline artifact (HTML entity / OCR mis-read) in the
-quote text rather than the page-attested form; validator passed
-because both quote and extract carried the same artifact under
-`normalize_for_compare`. Different artifact classes (HTML markup
-vs OCR mis-read), same audit-discipline lesson: source-read-first
-means the page-rendered form, not the markup or extraction output.
-
-A2 is ready for Tier 6 closeout — every cited source in the corpus
-has been audited under its appropriate per-extraction-type
-discipline; all findings are corrected or registered.
-
-**Recommended sequence.** Tiers 4 + 5 first (HTML and PDF long-tail
-— extraction-track work, no convention decisions blocking). Tier 3
-convention decision runs on its own track and should not be
-collapsed into an audit-execution pass — option 3 (hybrid by
-`transcript_provenance`) requires a schema field that needs the
-same care `extraction_type` got. Tier 6 closeout follows once Tier
-3 has executed.
-
-**Follow-up BACKLOG entries surfaced during the audit.** All filed
-for tracking; fates confirmed at Tier 6 closeout:
-
-- **A1** — auto-caption vs audio confirmation discipline (blocks
-  Tier 3)
-- **C4** — `pdftotext` Unicode-mapping quirks (extraction-tool-
-  layer fix; narrower than the `extraction-lossy` schema category)
-- **C3** — Provenance-marker treatment on document Provenance
-  tables (different shape from per-quote Verified)
-- **C1** — Location reference normalization (stale `lines N-M`
-  pdftotext refs; navigation-precision hygiene)
-- **B1 (M2)** — naming_quirks preserve-as-sic forms unmarked in
-  synthesis prose
-
-**On C4's deferred status.** Tier 2 provided evidence that
-Distiller-produced PDFs are not automatically extraction-lossy —
-the Grusch written testimony uses the same Acrobat Distiller 23.0
-as the Tier 1 hearing transcript but extracts cleanly. The
-Unicode-mapping issue isn't consistent within a single producer, so
-a wholesale tool change would be solving the wrong problem
-(treating the tool as the variable when the actual variable is
-upstream — font embedding, encoding tables, source-specific). The
-current approach — flag lossy sources, produce `.txt` siblings,
-move on — remains correct for the observed pattern. Revisit C4
-only if Tier 5 surfaces a systemic pattern.
+Phase F audit complete: 862 audited quotes across 154 sources —
+every cited primary source in the corpus. 9 contributor-side
+findings + 1 manifest-metadata finding + 3 documentation-
+completeness findings; all corrected. Schema evolution shipped:
+`extraction_type` enum (text-native | ocr-scan | extraction-lossy)
+for static sources; `transcript_provenance` enum (stenographic |
+published-transcript | human-corrected-caption | auto-caption |
+unknown) for transcript sources. Validator `.txt`-sibling
+preference generalized from `== ocr-scan` to `!= text-native`.
+Full audit trail in `meta/toolkit-notes/corpus-audit-2026-04.md`.
 
 ---
 

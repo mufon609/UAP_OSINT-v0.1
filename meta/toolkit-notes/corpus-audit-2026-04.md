@@ -2,17 +2,19 @@
 id: meta/toolkit-notes/corpus-audit-2026-04
 type: meta
 schema_version: 1
-status: in-progress
+status: complete
 created: 2026-04-24
+completed: 2026-05-13
 ---
 
 # Corpus audit — Phase F
 
 Institutional memory for the full-corpus source-integrity audit
-launched as Phase F of BACKLOG #19. Document is authored in-progress:
-Tier 1 complete as of 2026-04-24; Tiers 2–6 pending. Final closeout
-will include aggregate findings, convention decisions, and a single
-record of what the audit was worth across the full corpus.
+launched as Phase F of BACKLOG A2 (originally BACKLOG #19). **Complete
+2026-05-13** — all six tiers executed; aggregate findings, convention
+decisions, and follow-up BACKLOG dispositions consolidated below.
+BACKLOG A2 retired in the same closeout commit; the audit's
+institutional memory lives here.
 
 ---
 
@@ -639,31 +641,141 @@ PDF set.
 
 ---
 
-## Tier 6 — closeout (pending)
+## Tier 6 — closeout (complete 2026-05-13)
 
-Complete this document with aggregate findings and convention
-decisions. File follow-up BACKLOG entries:
+### Audit scope and execution
 
-1. **Auto-caption-vs-audio confirmation discipline** (Tier 3
-   convention; may be closed by Tier 3's decision if option 3
-   chosen and transcript_provenance classifier added)
-2. **pdftotext Unicode-mapping quirks on text-native PDFs** (narrow
-   extraction-tool-layer question; separate from extraction-lossy
-   schema category which is broader)
-3. **Provenance-marker treatment** (per-row custody-chain checkmarks
-   on document nodes — different shape from per-quote Verified;
-   deserves its own analysis rather than folding into #19's
-   removal pattern)
-4. **BACKLOG #17 note-rendering surfacing in Credibility Notes
-   prose** (verbatim caption forms read as misspellings to reader
-   without signal they're sourced)
-5. **Location reference normalization** (stale `lines N-M` pdftotext
-   refs in existing quote Locations; low-priority hygiene, not
-   correctness; systematic conversion to page/section refs)
+Phase F walked every cited primary source in the corpus through a
+per-extraction-type audit discipline. The original Phase F.1
+diagnostic measured 508 quotes / 64 sources / 16 artifacts; by
+audit completion the corpus had grown to **862 quotes / 154 unique
+source paths / 32 research artifacts** (~70% growth). Every cited
+source was audited under its appropriate methodology:
 
-Any additional items surfaced during Tier 2–5 appended here.
+| Tier | Source class | Sources | Quotes | Methodology | Date |
+|---|---|---:|---:|---|---|
+| 1 | hearing transcript (known extraction-lossy) | 1 | 211 | Full VLM transcription `.txt` sibling | 2026-04-24 |
+| 2 | written-testimony PDFs (text-native) | 3 | 87 | Three-step (metadata / suspect-char / VLM check) | 2026-04-24 |
+| 3 | YouTube auto-caption transcripts | 12 | 84 | Caption-artifact scan + per-source naming_quirks coverage cross-reference | 2026-05-13 |
+| 4 | HTML sources | 77 | 203 | Programmatic extraction-artifact scan + quote-text artifact scan + representative visual spot-check | 2026-05-13 |
+| 5a | text-native PDF long-tail | 52 | 176 | Tier 2 three-step methodology, batched where pipelines cluster | 2026-05-13 |
+| 5b | extraction-lossy PDFs (SASC transcripts) | 2 | 62 | Sibling production (pre-session) + programmatic + visual spot-check re-verify | 2026-05-13 |
+| 5c | ocr-scan PDFs | 7 | 39 | Sibling production where needed + programmatic + visual verify | 2026-05-13 |
+| **Total** | — | **154** | **862** | — | **complete** |
 
-Close BACKLOG #19.
+### Aggregate findings
+
+Three distinct finding classes surfaced:
+
+**Contributor-side findings (9 — quote text required correction):**
+
+| Tier | Node/Quote | Class | Resolution |
+|---|---|---|---|
+| 1 | `transcripts/2023-07-26-house-fravor` q3 | Word-drift ("over" extra word) | Corrected |
+| 1 | `transcripts/2023-07-26-house-fravor` q20 | **Content insertion** ("No one came." fabricated sentence) | Corrected; categorically different from drift — see Tier 1 section |
+| 1 | `transcripts/2023-07-26-house-graves` q12 | Word-drift ("it" missing) | Corrected |
+| 1 | `transcripts/2023-07-26-house-grusch` q31 + `people/david-grusch` q106 | Unicode mapping (`11‡`→`11½`) | Corrected via sibling |
+| 1 | (Tier 1's nq6 case + 2 transcription errors in the contributor-produced sibling) | Counted within Tier 1's 6 total | — |
+| 4 | `organizations/uaptf` q1 + q2 | HTML entity literal preserved (`&nbsp;` → `\xA0`) | Corrected |
+| 5c | `people/david-grusch` q157 | OCR character-confusion preserved (`lAW`→`IAW`; `(0)`→`(O)`) | Corrected during canonical-sibling production |
+
+The Tier 4 and Tier 5c findings share a single failure-mode shape:
+contributor preserved a machine-extraction artifact in the quote
+text rather than the page-attested form. Validator passed because
+both quote and extract carried the same artifact under
+`normalize_for_compare`. Different artifact classes (HTML markup vs
+OCR mis-read), single audit-discipline lesson: **source-read-first
+means the page-rendered form, not the markup or extraction output.**
+
+**Manifest-metadata findings (1):**
+
+- `government/blackvault-grusch-dopsr-23-F-0946.pdf` was OmniPage
+  OCR-produced but flagged `text-native` (Tier 5a producer-metadata
+  scan caught this). Visual VLM verification confirmed pdftotext
+  output is clean despite OCR producer — documented exception case
+  per `meta/conventions.md`. Manifest updated to `extraction_type:
+  ocr-scan` with verification note; no `.txt` sibling needed.
+
+**Documentation-completeness findings (3):**
+
+- `alex-dietrich/nq10` (Tier 3): missing `fraver` → Fravor entry
+  for the american-veterans-center caption source. Added.
+- `david-grusch/nq8` (Tier 3): missing `Kurpatre` → Kirkpatrick
+  entry for the newsnation-coulthart caption source. Added.
+- `james-ryder/nq8` (Tier 3): missing `put off` → Puthoff entry
+  for the lucistrust-garment-of-god caption source. Added.
+
+These are not contributor-side drift — the quote text already
+preserved the verbatim caption form per source-form-preserve
+discipline; only the audit-trail naming_quirks coverage was
+incomplete on a per-source basis.
+
+### Schema evolution during the audit
+
+The audit drove four schema additions, each a small response to a
+real source condition surfaced during execution:
+
+| Addition | Surfaced by | Why |
+|---|---|---|
+| `extraction_type: ocr-scan` | Grusch PPD-19 (Phase A pre-audit) | Distinguish scanned-image PDFs whose text layer is OCR output from native-text PDFs |
+| `extraction_type: extraction-lossy` | Tier 1 hearing transcript | Distinguish text-native PDFs whose extraction is unreliable for non-OCR reasons (Unicode-mapping artifacts, stenographic-format noise) |
+| `transcript_provenance` enum | Tier 3 (A1 resolution) | Distinguish stenographic / published-transcript / auto-caption transcripts so audit discipline matches the audio-to-text confirmation pathway |
+| Validator `.txt`-sibling preference generalized from `== ocr-scan` to `!= text-native` | Tier 1 | Same sibling-lookup mechanism extends to extraction-lossy and any future non-default extraction_type |
+
+Pattern: binary schema taxonomies rarely survive first contact with
+real data. Each enum extension was a small design decision, not a
+retrofit — the audit-driven evolution itself produced the discipline.
+
+### Follow-up BACKLOG dispositions
+
+Each follow-up entry initially filed for tracking confirmed as
+appropriately scoped (or retired) at closeout:
+
+| Entry | State | Disposition |
+|---|---|---|
+| A1 — auto-caption-vs-audio convention | **RETIRED 2026-05-13** | Option 3 (hybrid by `transcript_provenance`) adopted; schema + conventions + Tier 3 audit shipped together |
+| B1 — artifact-attested nuance not reaching readers (`.note` fields dropped in tables; preserve-as-sic forms unmarked in synthesis prose) | Still open | Renderer + convention pass; corpus-wide; not blocking; same scope as filed |
+| C1 — location reference normalization | Retired in earlier C-series cleanup; not in current BACKLOG | Subsumed by the Quote-location-refs section in `meta/conventions.md` ("source-anchored, not extraction-anchored") |
+| C3 — provenance-marker treatment on document Provenance tables | Still open | Per-row checkmark analysis distinct from per-quote Verified removal; scope unchanged |
+| C4 — pdftotext Unicode-mapping quirks | Retired in earlier C-series cleanup; not in current BACKLOG | Tier 2's evidence (Distiller-produced PDFs not automatically extraction-lossy) settled the question — current `.txt`-sibling-for-flagged-sources approach is correct; a wholesale tool change would solve the wrong problem |
+
+### A2 retirement
+
+BACKLOG A2 retired in the same closeout commit. The full audit
+trail lives in this document; the BACKLOG entry served its
+purpose (tracking the high-level work plan + remaining decisions
+across multiple sessions) and is replaced by a brief tombstone
+pointing here.
+
+### What the audit was worth
+
+- **Aggregate contributor-drift rate** across 862 audited quotes:
+  9 contributor-side findings = **1.04% across the full corpus**.
+  Tier 1's 1.4% standalone rate was the worst-case segment (high
+  quote volume, extraction-lossy source, content-insertion failure
+  caught only by independent reference); Tiers 2, 3, 5a, 5b each
+  ran 0% contributor-drift; Tier 4 caught 2/203 (1.0%); Tier 5c
+  caught 1/39 (2.6%, n=39).
+- **Mechanical backstop demonstrated**: the verbatim-quote check
+  alone passes contributor + machine-extraction artifacts when both
+  quote and extract carry the same drift. Visual / VLM verification
+  against the rendered original is the only mechanism that catches
+  this. The audit's discipline (programmatic scan + per-extraction-
+  type-appropriate visual verification) is what closes the gap.
+- **Source-read-first discipline validated**: the q157 finding
+  surfaced during canonical-sibling production demonstrates that
+  the discipline only works when the contributor reads the
+  page-rendered form, not the extraction output. This is the
+  single audit-discipline lesson reinforced across multiple
+  artifact classes.
+- **Schema + conventions are now per-extraction-type complete**:
+  text-native / ocr-scan / extraction-lossy for static sources;
+  stenographic / published-transcript / human-corrected-caption /
+  auto-caption / unknown for transcript sources. Future
+  contributors adding sources have a clear per-class discipline to
+  follow.
+
+BACKLOG A2 closed.
 
 ---
 
