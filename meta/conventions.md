@@ -153,7 +153,7 @@ output looks clean on a casual read. The signals to check:
 - **Producer-string heuristic.** Run `pdfinfo` on the PDF and check
   the Producer / Creator fields. OmniPage CSDK, AINSLIB.OCR, ABBYY
   FineReader, and Tesseract producers all warrant inspection even
-  when the extract looks clean. (One PDF in the BACKLOG A2 audit had
+  when the extract looks clean. (One PDF in the Phase F corpus audit had
   a clean extract despite OCR producer metadata; that's the
   exception case — flagged `ocr-scan` with a verification note
   instead of producing a `.txt` sibling. Most OCR-produced PDFs need
@@ -174,8 +174,8 @@ interchangeable; the independent-verification step is what closes the
 trust gap. Pick the path that fits the document's shape.
 
 1. **Text-layer pull.** Some scanned PDFs carry a clean text layer
-   despite OCR-suggesting producer metadata (the BACKLOG A2 audit
-   surfaced one such case). Run `pdftotext -layout source.pdf`, diff
+   despite OCR-suggesting producer metadata (the Phase F corpus
+   audit surfaced one such case). Run `pdftotext -layout source.pdf`, diff
    the output against the rendered page, and copy to the sibling
    path if clean. Lowest effort; only viable when the layer happens
    to be reliable. The validator's `extract_source_text` already
@@ -253,8 +253,8 @@ both required, when authoring a quote from such a source:
    token matches against source while the canonical wrap provides
    navigability.
 
-Reader-visibility is automatic from there (per BACKLOG B1 M2). The
-Phase II body renderer emits a `## Source-Form Notes` section near
+Reader-visibility is automatic from there — the Phase II body
+renderer emits a `## Source-Form Notes` section near
 the foot of every node body (just before `## Associated Nodes`) that
 tables every `naming_quirks` entry whose resolution is
 `preserve-as-sic-in-quotes`. Columns: Source Form, Canonical, Source,
