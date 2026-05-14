@@ -10,10 +10,7 @@ Runs unconditionally. Confirmation against the source is a precondition
 for inclusion in node bodies, not a marker the contributor opts into;
 the check has no rendered counterpart (no "Verified" row) by design —
 the source link IS the evidence for readers. See ``meta/conventions.md``
-"Confirmation is a precondition for inclusion" and the
-``meta/toolkit-notes/pilot-failure-2026-04-17.md`` postmortem; this
-check is the rationale-of-record fix for the failure modes documented
-there. Reference the postmortem before proposing to weaken or remove.
+"Confirmation is a precondition for inclusion" for the rationale.
 
 Failure messages name the node, the line number of the block-quote,
 the cited source file, and a preview of the unmatched text — enough

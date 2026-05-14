@@ -20,9 +20,8 @@ new nodes reference not-yet-built targets"). A clean repo runs at
 0 errors / 0 warnings AND a non-zero broken-link count.
 
 Erroring on unbuilt references would force either pre-building every
-stub before its referer (violates the one-node-per-session rule from
-``meta/toolkit-notes/pilot-failure-2026-04-17.md``) or stubbing
-references in prose (breaks the cross-reference graph that
+stub before its referer (violates the one-node-per-session rule) or
+stubbing references in prose (breaks the cross-reference graph that
 ``stub_linking`` and the registry depend on).
 
 ``_NODE_PATH_FRONTMATTER_FIELDS`` is a small module-level map; promote

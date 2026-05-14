@@ -62,7 +62,7 @@ If you're doing anything related to this instance's topic, read
 | Corpus-specific addenda (this topic) | `meta/topic/addenda/` |
 | Source archive | `sources/` + `sources/manifest.yaml` |
 | Site-specific archival workarounds | `meta/sources-access.md` |
-| Toolkit lessons-learned (postmortems, design notes) | `meta/toolkit-notes/` |
+| Validator audit trail (auto-appended) | `meta/toolkit-notes/issue-log.yaml` |
 | Build-state snapshot | `CLAUDE.md` (auto-generated section) |
 | This instance's topic scope | `meta/topic/overview.md` |
 
@@ -101,7 +101,7 @@ If you're doing anything related to this instance's topic, read
 | Path pattern | Type | Format |
 |---|---|---|
 | `AGENT.md`, `CLAUDE.md`, `README.md` | Governance / entry points | Markdown |
-| `meta/*.md`, `meta/topic/*.md`, `meta/toolkit-notes/*.md`, `meta/topic/addenda/*.md` | Governance / reference | Markdown with YAML frontmatter |
+| `meta/*.md`, `meta/topic/*.md`, `meta/topic/addenda/*.md` | Governance / reference | Markdown with YAML frontmatter |
 | `meta/schema.yaml` | Machine-readable spec | YAML |
 | `meta/templates/*.md` | Node scaffolding templates | Markdown with placeholder tokens |
 | `{type}/*.md` (people, organizations, ...) | Content nodes | Markdown with YAML frontmatter |
@@ -118,9 +118,8 @@ If you're doing anything related to this instance's topic, read
 Every schema-governed file declares `schema_version` in its frontmatter.
 The current schema version is declared at the top of `meta/schema.yaml`
 under the `schema:` block. If you encounter a file whose `schema_version`
-is not listed in `schema.compatible_with`, consult
-`meta/toolkit-notes/schema-migrations/{from}-to-{to}.md` for migration
-instructions.
+is not listed in `schema.compatible_with`, consult the migration docs
+that ship with the schema_version bump.
 
 ---
 

@@ -510,7 +510,7 @@ def schema_version_compat_messages(sv, compatible_with, current_version, *, pref
             "error",
             f"{prefix}schema_version {sv} not in compatible_with "
             f"{compatible_with} (current schema version is {current_version}). "
-            f"Migrate per meta/toolkit-notes/schema-migrations/.",
+            f"Consult the migration docs that ship with the schema_version bump.",
         )]
     return []
 

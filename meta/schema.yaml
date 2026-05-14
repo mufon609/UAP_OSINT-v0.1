@@ -10,13 +10,12 @@ schema:
   compatible_with: [1]
   # compatible_with lists which file-level schema_version values validate
   # cleanly against this spec. Expanded during migration windows; shrunk
-  # when a version is retired. Migration docs live in
-  # meta/toolkit-notes/schema-migrations/{from}-to-{to}.md.
+  # when a version is retired.
 
 # Every schema-governed file carries schema_version in its frontmatter
 # (nodes, templates, research artifacts, governance docs under meta/).
 # Version is checked at validation time against `schema.compatible_with`
-# above. Mismatches surface as errors with a pointer to the migration doc.
+# above. Mismatches surface as errors.
 
 # ---------------------------------------------------------------------------
 # Cross-cutting vocabularies
