@@ -38,42 +38,11 @@ externally-blocked item ever surfaces (rare), reinstate the
 
 ---
 
-
 ## A. Priority sequence
 
-Items with ordering or coupling constraints. A3 carries person-node
-Statements polish work that ships cleanly against the
-quotes-per-artifact model (each artifact owns its own quotes — the
-data-model question is closed).
+Items with ordering or coupling constraints.
 
-### A3. Person-node Statements section — Claim Inventory tier labels
-
-The Claim Inventory section on whistleblower nodes renders every
-filed-claim row with a hard-coded `✅ Sworn / documented` label (in
-`scripts/build-from-research.py` — grep the literal string). Real
-attestation tiers vary materially:
-
-- **sworn under oath** — congressional hearing testimony
-- **sworn under penalty of perjury** — formal legal filing under
-  18 U.S.C. § 1001
-- **DOPSR-cleared public disclosure** — pre-publication-reviewed,
-  reviewed but not sworn
-- **on-record interview** — podcast / broadcast / streaming with no
-  attestation ceremony
-
-A reader scanning the inventory cannot distinguish a sworn-oath claim
-from a podcast claim. Schema already carries `attestation_tier` on
-`quote_entry` (values `sworn-oath` / `sworn-perjury` / `dopsr-cleared`
-/ `on-record` / `self-attested` / `secondary-source`) but scoped to
-finding artifacts only — the entity-node Claim Inventory renderer
-ignores it. Fix: lift the schema scope to entity quotes too, wire the
-renderer to map tier → label, and backfill `attestation_tier` on
-existing whistleblower filed-claim entries.
-
-Surfaced: Grusch rebuild — Claim Inventory rendered identically
-across every row regardless of whether the underlying attestation
-was sworn House testimony, an IC IG complaint, or an on-record
-podcast statement.
+*No priority-sequence items currently open.*
 
 ---
 
