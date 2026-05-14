@@ -44,7 +44,9 @@ AGENT.md                    first-read for AI agents querying the repo
 CLAUDE.md                   session-start checklist for contributors
 
 meta/
+  README.md                 friendly-face index of the directory
   BACKLOG.md                deferred work items (not on active roadmap)
+  roadmap.md                active work + design decisions that shaped the codebase
   schema.yaml               machine-readable spec (source of truth)
   conventions.md            evidentiary philosophy (why the rules exist)
   sources-access.md         site-specific archival workarounds
@@ -66,6 +68,8 @@ scripts/
   review-coverage.py        Phase III coverage / boundary / stub-linking / description-drift review
   validate.py               node structural + verbatim-quote + source-integrity validation
   validate-research.py      research-artifact structural validation
+  check-vocab.py            pre-flight prose-drift token check (contributor diagnostic)
+  normalize-locations.py    quote `source.location` ref diagnostic (read-only)
   manifest.py               manifest CLI (add, verify-paths, verify-checksums, …)
   archive.py                Wayback Machine submission
   transcribe.py             YouTube caption download
