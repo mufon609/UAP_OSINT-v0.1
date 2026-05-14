@@ -7242,3 +7242,115 @@
     description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
   tokens: [involves]
 
+- ts: 2026-05-14T00:09:28Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-uap-materials.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e6' ('Luis Elizondo') wrap_path '/people/luis-elizondo' does not appear as a [`/people/luis-elizondo`] link in the node
+
+- ts: 2026-05-14T00:09:28Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-uap-materials.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e7' ('James Lacatski') wrap_path '/people/james-lacatski' does not appear as a [`/people/james-lacatski`] link in the node
+
+- ts: 2026-05-14T00:09:28Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-uap-materials.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('George Knapp') wrap_path '/people/george-knapp' does not appear as a [`/people/george-knapp`] link in the node
+
+- ts: 2026-05-14T00:09:28Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-uap-materials.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e10' ('Christopher Sharp') wrap_path '/people/christopher-sharp' does not appear as a [`/people/christopher-sharp`] link in the node
+
+- ts: 2026-05-14T00:09:28Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-uap-materials.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e11' ('Eric Burlison') wrap_path '/people/eric-burlison' does not appear as a [`/people/eric-burlison`] link in the node
+
+- ts: 2026-05-14T00:09:28Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-uap-materials.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e12' ('Steny Hoyer') wrap_path '/people/steny-hoyer' does not appear as a [`/people/steny-hoyer`] link in the node
+
+- ts: 2026-05-14T00:09:28Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-uap-materials.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('Glenn Gaffney') wrap_path '/people/glenn-gaffney' does not appear as a [`/people/glenn-gaffney`] link in the node
+
+- ts: 2026-05-14T00:09:28Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-uap-materials.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e14' ('Robert Cardillo') wrap_path '/people/robert-cardillo' does not appear as a [`/people/robert-cardillo`] link in the node
+
+- ts: 2026-05-14T00:09:28Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-uap-materials.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e15' ('William Lynn III') wrap_path '/people/william-lynn-iii' does not appear as a [`/people/william-lynn-iii`] link in the node
+
+- ts: 2026-05-14T00:12:03Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+
+- ts: 2026-05-14T00:14:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+

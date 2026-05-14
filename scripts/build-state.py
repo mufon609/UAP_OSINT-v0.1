@@ -43,14 +43,15 @@ CLAUDE_MD = REPO_ROOT / "CLAUDE.md"
 # ``display`` and ``mode`` are presentation-only; ``dir`` comes from
 # ``lib._common.content_dirs()``.
 _DISPLAY_AND_MODE = {
-    "people":         ("People",        "archetype-table"),
-    "organizations":  ("Organizations", "kind-table"),
-    "events":         ("Events",        "kind-table"),
-    "documents":      ("Documents",     "kind-table"),
-    "transcripts":    ("Transcripts",   "kind-table"),
-    "media":          ("Media",         "kind-table"),
-    "locations":      ("Locations",     "status-list"),
-    "findings":       ("Findings",      "status-list"),
+    "people":          ("People",         "archetype-table"),
+    "organizations":   ("Organizations",  "kind-table"),
+    "events":          ("Events",         "kind-table"),
+    "documents":       ("Documents",      "kind-table"),
+    "transcripts":     ("Transcripts",    "kind-table"),
+    "media":           ("Media",          "kind-table"),
+    "locations":       ("Locations",      "status-list"),
+    "findings":        ("Findings",       "status-list"),
+    "investigations":  ("Investigations", "status-list"),
 }
 
 # Render order matches CLAUDE.md's expected sequence (people first, then

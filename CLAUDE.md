@@ -111,6 +111,10 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 
 - `/findings/pax-river-scif-fiscal-triangulation` — in-progress
 
+### Investigations (1)
+
+- `/investigations/lockheed-martin-uap-materials` — open
+
 <!-- BUILD-STATE-END -->
 
 Regenerate after any node add / remove / status change:
