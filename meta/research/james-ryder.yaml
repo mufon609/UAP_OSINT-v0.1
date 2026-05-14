@@ -334,7 +334,7 @@ entities_referenced:
     entity_type: person
     name: 'Russell Targ'
     wrap_path: '/people/russell-targ'
-    context_summary: 'Physicist; co-founder of Stanford Research Institute remote-viewing program (1972) with Hal Puthoff; co-author of the 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (DOI 10.1038/251602a0). Targ retired from Lockheed Martin as a senior staff scientist (per his own site espresearch.com). Per investigator review of the 2018 ''Garment of God'' Lucis Trust talk (YouTube R9Yn0hgbVA0; not yet transcribed in this artifact), Ryder names Targ on camera and states Targ ''worked for me for years'' at Lockheed; quote-population pending the YouTube caption pull (BACKLOG-blocked: youtube-transcript-api / yt-dlp blocked from this environment, recovery via contributor browser-side workflow).'
+    context_summary: 'Physicist; co-founder of Stanford Research Institute remote-viewing program (1972) with Hal Puthoff; co-author of the 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (DOI 10.1038/251602a0). Targ retired from Lockheed Martin as a senior staff scientist (per his own site espresearch.com). Per investigator review of the 2018 ''Garment of God'' Lucis Trust talk (YouTube R9Yn0hgbVA0; not yet transcribed in this artifact), Ryder names Targ on camera and states Targ ''worked for me for years'' at Lockheed; quote-population pending the YouTube caption pull (youtube-transcript-api / yt-dlp blocked from this environment, recovery via contributor browser-side workflow).'
   - id: e24
     added_date: '2026-05-07'
     entity_type: person

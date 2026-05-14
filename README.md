@@ -48,7 +48,7 @@ meta/
   schema.yaml               machine-readable spec (source of truth)
   conventions.md            evidentiary philosophy (why the rules exist)
   sources-access.md         site-specific archival workarounds
-  templates/                scaffolding templates (8 files, one per node type)
+  templates/                scaffolding templates (9 files, one per node type)
   research/                 YAML research artifacts backing each node
                             (structured facts; one per content node)
   topic/                    THIS INSTANCE'S topic-specific content

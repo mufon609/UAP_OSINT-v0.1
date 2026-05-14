@@ -499,8 +499,8 @@ This:
    - `## Provenance` (gov-doc only) — from `context_extrinsic.provenance`
    - `## Key Passages` — from `quotes` (verification block per quote).
      Document nodes' sole evidentiary layer — no `## What This
-     Establishes` table (see `meta/conventions.md` "Document nodes vs
-     synthesis nodes").
+     Establishes` table (see `meta/conventions.md` "Three-layer
+     evidentiary architecture").
 
    **Person nodes:** (order follows `render_body_person`)
    - `## Identity` — from `document_intrinsic` (full_name, aliases,
