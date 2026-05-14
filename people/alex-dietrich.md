@@ -119,13 +119,13 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Location | [59:18] |
 
-> [56:42] we all gathered around and we watched uh several times this um black and white uh Fleer footage it's was much clearer uh the resolution uh than what you see on now if you just Google Tic Tac video video um because it was the original tape
+> [56:34] we all gathered around and we watched uh several times this um black and white uh Fleer footage it's was much clearer uh the resolution uh than what you see on now if you just Google Tic Tac video video um because it was the original tape
 
 | Field | Value |
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [56:42] |
+| Location | [56:34] |
 
 > [11:22] we estimated that it's about the size of our own fuselage uh so about 30 to 40 feet long and smooth just like a a Tic Tac uh breath mint uh sort of a matte white color with no windows no flight control surfaces uh no visible forms of
 
@@ -135,29 +135,29 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
 | Location | [11:22] |
 
-> [13:45] moving so it was changing air speed it was changing direction it was changing angles in a way that didn't make sense um and didn't adhere to our understanding of physics and gravity and um all of the aerodynamics that we study
+> [13:41] moving so it was changing air speed it was changing direction it was changing angles in a way that didn't make sense um and didn't adhere to our understanding of physics and gravity and um all of the aerodynamics that we study
 
 | Field | Value |
 |---|---|
 | Attributed to | American Veterans Center interview (recorded 2024-11-09) |
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
-| Location | [13:45] |
+| Location | [13:41] |
 
-> [15:26] it was moving in a way that we couldn't recognize. It didn't follow our laws of physics. It didn't have our turn radius or our acceleration.
+> [15:24] it was moving in a way that we couldn't recognize. It didn't follow our laws of physics. It didn't have our turn radius or our acceleration.
 
 | Field | Value |
 |---|---|
 | Attributed to | Linda Hall Library UAP Scientific Context panel (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Location | [15:26] |
+| Location | [15:24] |
 
-> [58:44] Uh the visual uh for me again as the most junior pilot uh was 10 12 seconds. Uh but for the other more senior uh aviators and the crew it was a few minutes.
+> [58:40] Uh the visual uh for me again as the most junior pilot uh was 10 12 seconds. Uh but for the other more senior uh aviators and the crew it was a few minutes.
 
 | Field | Value |
 |---|---|
 | Attributed to | Linda Hall Library UAP Scientific Context panel Q&A (recorded 2025-02-20) |
 | Source | [archived source](../sources/transcripts/linda-hall-uap-scientific-context-2025-downloaded.md) |
-| Location | [58:44] |
+| Location | [58:40] |
 
 
 ### Other Statements
@@ -250,29 +250,29 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Location | [10:03] |
 
-> [1:00:56] again I was a lieutenant JG at the time yeah there's ensen and Lieutenant JG lieutenant you know so I had had very little um uh rank or authority or anything
+> [1:00:48] again I was a lieutenant JG at the time yeah there's ensen and Lieutenant JG lieutenant you know so I had had very little um uh rank or authority or anything
 
 | Field | Value |
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [1:00:56] |
+| Location | [1:00:48] |
 
-> [1:02:00] and I was a lieutenant JG it wasn't my place to um investigate or follow up or follow through in that way
-
-| Field | Value |
-|---|---|
-| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
-| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [1:02:00] |
-
-> [5:25] I really after after that uh you know the few days of excitement uh that followed I forgot about it uh you know wasn't on my mind I certainly wasn't uh trying to figure it out or anything until um you know several years later when uh the Office of Naval intelligence folks contacted me and they were doing their investigation and their followup
+> [1:01:51] and I was a lieutenant JG it wasn't my place to um investigate or follow up or follow through in that way
 
 | Field | Value |
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [5:25] |
+| Location | [1:01:51] |
+
+> [5:19] I really after after that uh you know the few days of excitement uh that followed I forgot about it uh you know wasn't on my mind I certainly wasn't uh trying to figure it out or anything until um you know several years later when uh the Office of Naval intelligence folks contacted me and they were doing their investigation and their followup
+
+| Field | Value |
+|---|---|
+| Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
+| Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
+| Location | [5:19] |
 
 > they asked me to be their first advisor uh so it's a unpaid role
 
@@ -282,13 +282,13 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
 | Location | [27:08] |
 
-> [19:37] I was fortunate to um attend the first meeting of the NASA independent study uh so it was hosted by NASA
+> [19:30] I was fortunate to um attend the first meeting of the NASA independent study uh so it was hosted by NASA
 
 | Field | Value |
 |---|---|
 | Attributed to | Somewhere in the Skies podcast with Ryan Sprague (recorded 2023, YouTube replay 2024-11-26) |
 | Source | [archived source](../sources/transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md) |
-| Location | [19:37] |
+| Location | [19:30] |
 
 > [55:28] another single aircraft launched uh with Chad and the back seat and uh and his Pilot they looked for found and recorded the Fleer footage uh that we believe to be the same thing uh that the same Tic Tac that we encountered
 
@@ -378,13 +378,13 @@ Dietrich joined Enigma Labs as their first advisor (an unpaid role) in November 
 | Source | [archived source](../sources/transcripts/calling-all-beings-104-dietrich-2024-downloaded.md) |
 | Location | [30:38] |
 
-> [9:24] that so I was uh new to the Squadron I was a lieutenant Junior grade and uh on the wing of the commanding officer uh Commander David fraver uh he had a senior lieutenant in his back seat and I had a department head a lieutenant commander in my back seat
+> [9:20] that so I was uh new to the Squadron I was a lieutenant Junior grade and uh on the wing of the commanding officer uh Commander David fraver uh he had a senior lieutenant in his back seat and I had a department head a lieutenant commander in my back seat
 
 | Field | Value |
 |---|---|
 | Attributed to | American Veterans Center interview (recorded 2024-11-09) |
 | Source | [archived source](../sources/transcripts/american-veterans-center-dietrich-2024-downloaded.md) |
-| Location | [9:24] |
+| Location | [9:20] |
 
 > [12:07] I I graduated and commissioned through the ROC program in 2001. Went through flight school, had my first flight on 911, uh which was a paradigm shift for the world and for me personally and professionally. Uh and then I ended up in the strike fighter pipeline. So I flew F-18 Super Hornets for the Navy uh off of the USS Nimttz aircraft carrier uh from the squadron VFA41.
 

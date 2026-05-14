@@ -249,7 +249,7 @@ _The Debrief article by Kean & Blumenthal, published 2023-06-05; [archived sourc
 | Source | [archived source](../sources/transcripts/newsnation-coulthart-grusch-2023-downloaded.md) |
 | Location | [10:40] |
 
-> know, isotopic ratios that would have to [13:05] be engineered for it to be um at those levels, but also just extremely uh uh strange heavy atomic metal, you know, high up in the periodic table um arrangements that um we don't understand
+> know, isotopic ratios that would have to be engineered for it to be um at those levels, but also just extremely uh uh strange heavy atomic metal, you know, high up in the periodic table um arrangements that um we don't understand
 
 | Field | Value |
 |---|---|
@@ -1176,7 +1176,7 @@ _Oral testimony Q&A (response to "Are you aware of any individuals that are part
 | Location | Email dated 2023-11-19 6:03 PM from David Grusch (Subject:
 "Re: Contact Request") |
 
-> so I was a Intel officer [0:36] in the Air Force for 14 years seven active seven Reserve uh then I kind of had like a parallel tract in the civilian Intel world when I became a reservist um uh and ultimately I got brought back in in Civil Service in a government way at the national GE spatial intelligence agency couple years ago um at a senior level uh so I was a major in the Air Force and a gs15 at NGA which is like a full bird colonel equivalent civilian employee
+> so I was a Intel officer in the Air Force for 14 years seven active seven Reserve uh then I kind of had like a parallel tract in the civilian Intel world when I became a reservist um uh and ultimately I got brought back in in Civil Service in a government way at the national GE spatial intelligence agency couple years ago um at a senior level uh so I was a major in the Air Force and a gs15 at NGA which is like a full bird colonel equivalent civilian employee
 
 | Field | Value |
 |---|---|
