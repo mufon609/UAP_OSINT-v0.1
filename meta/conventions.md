@@ -694,6 +694,7 @@ finding, not a property of either document.
 | One document's statement contradicts another's | `Institutional Assessment` on the relevant organization node (when an agency finding contradicts a cited claim), or a finding node spanning the conflicting sources |
 | Written vs. oral testimony divergence | Finding node spanning the two primary records (transcript + companion written testimony document) |
 | Contested affiliation | `Flagged` subsection of `Affiliations` |
+| Source-form disagreement (two sources attest opposing forms of the same fact, contributor does not adjudicate) | `naming_quirks` entry with `resolution: disputed`; auto-rendered as `## Preserved Disagreements` near the foot of the node body |
 
 The Confirmed/Flagged binary is unchanged by contradictions —
 "contradicted" is not a third status. Both sources remain confirmed

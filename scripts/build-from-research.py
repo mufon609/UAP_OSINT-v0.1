@@ -419,6 +419,49 @@ def render_source_form_notes(artifact):
     return "\n".join(lines) + "\n"
 
 
+def render_preserved_disagreements(artifact):
+    """Emit a `## Preserved Disagreements` section listing
+    `naming_quirks` entries whose resolution is `disputed` — two
+    primary sources attest opposing forms of the same fact and the
+    contributor has chosen not to adjudicate. Surfaces the explicit
+    "this disagreement is recognized and unresolved" flag that would
+    otherwise live only in the YAML artifact.
+
+    Returns empty string when no disputed entries exist. Other
+    naming_quirks resolutions render via render_source_form_notes
+    (`preserve-as-sic-in-quotes`) or stay artifact-only
+    (`use-canonical`, `unresolved`).
+
+    Applies to every node type — naming_quirks is universal. See
+    `meta/conventions.md` "Contradictions" for the framing.
+    """
+    quirks = artifact.get("naming_quirks") or []
+    disputed = [
+        q for q in quirks
+        if isinstance(q, dict) and q.get("resolution") == "disputed"
+    ]
+    if not disputed:
+        return ""
+
+    lines = [
+        "## Preserved Disagreements",
+        "",
+        "Naming-quirk entries where two primary sources attest opposing "
+        "forms of the same fact. The repository does not adjudicate; "
+        "both positions stay on the record.",
+        "",
+        "| Position | Counterpart | Source | Note |",
+        "|---|---|---|---|",
+    ]
+    for q in disputed:
+        observed = _escape_table_cell(q.get("observed"))
+        canonical = _escape_table_cell(q.get("canonical"))
+        source_path = _escape_table_cell(q.get("source_path"))
+        note = _escape_table_cell(q.get("note"))
+        lines.append(f"| {observed} | {canonical} | {source_path} | {note} |")
+    return "\n".join(lines) + "\n"
+
+
 def render_primary_source_contradictions(artifact):
     """Emit a `## Primary-Source Contradictions` section listing rumors
     whose status is `primary-source-disputed` — widely-circulated
@@ -1303,6 +1346,7 @@ def render_body_document(artifact, node_kind):
     sections.extend([
         render_key_passages(artifact),
         render_source_form_notes(artifact),
+        render_preserved_disagreements(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
@@ -1332,6 +1376,7 @@ def render_body_person(artifact, archetype):
     sections.extend([
         render_primary_source_contradictions(artifact),
         render_source_form_notes(artifact),
+        render_preserved_disagreements(artifact),
         render_associated_nodes(),
     ])
     # Drop empty section strings (archetype dispatcher returns "" on unknown)
@@ -1370,6 +1415,7 @@ def render_body_event(artifact, kind):
     sections.extend([
         render_primary_source_contradictions(artifact),
         render_source_form_notes(artifact),
+        render_preserved_disagreements(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
@@ -1394,6 +1440,7 @@ def render_body_transcript(artifact, kind, fm):
         render_transcript_speakers(artifact),
         render_transcript_key_passages(artifact),
         render_source_form_notes(artifact),
+        render_preserved_disagreements(artifact),
         render_associated_nodes(),
     ]
     sections = [s for s in sections if s]
@@ -1614,6 +1661,7 @@ def render_body_media(artifact, kind, fm):
     sections.extend([
         render_media_key_passages(artifact),
         render_source_form_notes(artifact),
+        render_preserved_disagreements(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
@@ -1961,6 +2009,7 @@ def render_body_organization(artifact, kind):
         render_org_relationships(artifact),
         render_primary_source_contradictions(artifact),
         render_source_form_notes(artifact),
+        render_preserved_disagreements(artifact),
         render_associated_nodes(),
     ])
     sections = [s for s in sections if s]
@@ -2199,6 +2248,7 @@ def render_body_location(artifact, fm):
         render_location_relationships(artifact),
         render_primary_source_contradictions(artifact),
         render_source_form_notes(artifact),
+        render_preserved_disagreements(artifact),
         render_associated_nodes(),
     ]
     sections = [s for s in sections if s]
@@ -2398,6 +2448,7 @@ def render_body_finding(artifact, fm):
         render_finding_contradictions(artifact),       # conditional
         render_finding_timeline(artifact),             # conditional
         render_source_form_notes(artifact),            # conditional
+        render_preserved_disagreements(artifact),      # conditional
         render_associated_nodes(),
     ]
     sections = [s for s in sections if s]
