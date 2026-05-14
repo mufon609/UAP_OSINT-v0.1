@@ -237,11 +237,7 @@ _No direct observations documented._
 
 > self-licking ice cream cone
 
-| Field | Value |
-|---|---|
-| Attributed to | Audible podcast In the Room with Peter Bergen Episode 38, 2024 |
-| Source | [archived source](../sources/news/audible-bergen-kirkpatrick-episode38-2024.html) |
-| Location | ¶ Bergen interview transcript |
+_Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived source](../sources/news/audible-bergen-kirkpatrick-episode38-2024.html); ¶ Bergen interview transcript_
 
 > core group of people that have influenced him, have told him this information
 

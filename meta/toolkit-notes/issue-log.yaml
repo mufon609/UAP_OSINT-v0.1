@@ -7674,3 +7674,173 @@
   message: |
     Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
 
+- ts: 2026-05-14T03:43:54Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 162 NOT FOUND in sources/news/thedebrief-grusch-2023.html: "_The Debrief article by Kean & Blumenthal, published 2023-06-05; [archived sourc..."
+
+- ts: 2026-05-14T03:43:54Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 518 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-..."
+
+- ts: 2026-05-14T03:43:54Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 562 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-..."
+
+- ts: 2026-05-14T03:43:54Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 782 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A (response to "By UAPs or by people within the Federal Govern..."
+
+- ts: 2026-05-14T03:43:54Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 906 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-..."
+
+- ts: 2026-05-14T03:43:54Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 910 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-..."
+
+- ts: 2026-05-14T03:43:54Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 922 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A (response to "Do you have any personal knowledge of someone ..."
+
+- ts: 2026-05-14T03:43:54Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 942 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A (response to "Are you aware of any individuals that are part..."
+
+- ts: 2026-05-14T03:43:57Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/sean-kirkpatrick.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 240 NOT FOUND in sources/news/audible-bergen-kirkpatrick-episode38-2024.html: "_Audible podcast In the Room with Peter Bergen Episode 38, 2024; [archived sourc..."
+
+- ts: 2026-05-14T03:44:07Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 162 NOT FOUND in sources/news/thedebrief-grusch-2023.html: "_The Debrief article by Kean & Blumenthal, published 2023-06-05; [archived sourc..."
+
+- ts: 2026-05-14T03:44:07Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 518 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-..."
+
+- ts: 2026-05-14T03:44:07Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 562 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-..."
+
+- ts: 2026-05-14T03:44:07Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 782 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A (response to "By UAPs or by people within the Federal Govern..."
+
+- ts: 2026-05-14T03:44:07Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 906 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-..."
+
+- ts: 2026-05-14T03:44:07Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 910 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-..."
+
+- ts: 2026-05-14T03:44:07Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 922 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A (response to "Do you have any personal knowledge of someone ..."
+
+- ts: 2026-05-14T03:44:07Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/david-grusch.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 942 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A (response to "Are you aware of any individuals that are part..."
+

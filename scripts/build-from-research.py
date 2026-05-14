@@ -623,15 +623,54 @@ def _render_attribution_block(quote, artifact):
     return "\n".join(rows)
 
 
+_COMPACT_STATEMENT_CHAR_THRESHOLD = 30
+
+
 def _render_statement_block(quote, artifact):
-    """Render a single block-quote + verification block pair."""
+    """Render a single block-quote + verification block pair.
+
+    Sub-threshold quotes (Q&A answer fragments, short terminology
+    extracts) render in compact form: blockquote line + italicized
+    attribution continuation, no verification table. Disproportionate
+    table noise for one-word answers like ``"Yes."`` is what motivates
+    the demotion; long-form quotes keep the standard block."""
     text = (quote.get("text") or "").rstrip("\n")
+    if len(text.strip()) < _COMPACT_STATEMENT_CHAR_THRESHOLD:
+        return _render_compact_statement_block(quote, text)
     lines = []
     for qline in text.split("\n"):
         lines.append(f"> {qline}" if qline else ">")
     lines.append("")
     lines.append(_render_attribution_block(quote, artifact))
     return "\n".join(lines)
+
+
+def _render_compact_statement_block(quote, text):
+    """One-line blockquote + italicized attribution continuation for
+    sub-threshold quotes. Preserves Attributed-to / Source / Location
+    inline without the 3-4-row verification table."""
+    ctx = quote.get("context") or ""
+    date = quote.get("statement_date") or ""
+    if date and date in ctx:
+        attributed_to = ctx
+    else:
+        attributed_to_parts = [p for p in [ctx, date] if p]
+        attributed_to = ", ".join(attributed_to_parts) if attributed_to_parts else ""
+    src = quote.get("source") or {}
+    src_path = src.get("path") or ""
+    src_link = f"[archived source](../sources/{src_path})" if src_path else ""
+    loc = src.get("location") or ""
+
+    parts = [p for p in [attributed_to, src_link, loc] if p]
+    attr_line = "; ".join(parts)
+
+    quote_line = f"> {text}" if text else ">"
+    if attr_line:
+        # Blank line breaks the blockquote — attribution renders as a
+        # separate italicized paragraph. Keeps it out of the
+        # verbatim-quote check's blockquote scan.
+        return f"{quote_line}\n\n_{attr_line}_"
+    return quote_line
 
 
 def render_statements(artifact):

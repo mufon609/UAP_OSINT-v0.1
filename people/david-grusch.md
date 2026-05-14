@@ -159,11 +159,7 @@ Submission") |
 
 > eighty-year arms race
 
-| Field | Value |
-|---|---|
-| Attributed to | The Debrief article by Kean & Blumenthal, published 2023-06-05 |
-| Source | [archived source](../sources/news/thedebrief-grusch-2023.html) |
-| Location | final ¶ (Grusch quoted fragment) |
+_The Debrief article by Kean & Blumenthal, published 2023-06-05; [archived source](../sources/news/thedebrief-grusch-2023.html); final ¶ (Grusch quoted fragment)_
 
 > further inhibits the world populace to be prepared for an unexpected, non-human intelligence contact scenario
 
@@ -519,11 +515,7 @@ Submission") |
 
 > Yes, personally.
 
-| Field | Value |
-|---|---|
-| Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Burchett, p. 20 |
+_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26; [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf); Q&A with Rep. Burchett, p. 20_
 
 > I have to be careful asking that question. I directed people with that knowledge to the appropriate authorities.
 
@@ -567,11 +559,7 @@ Submission") |
 
 > Yes, personally. Yes.
 
-| Field | Value |
-|---|---|
-| Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Luna, p. 23 |
+_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26; [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf); Q&A with Rep. Luna, p. 23_
 
 > Yes. Him and I had a classified conversation in April 2022 before he took over AARO in July 2022 and I provided him some concerns I had.
 
@@ -791,11 +779,7 @@ Submission") |
 
 > Both.
 
-| Field | Value |
-|---|---|
-| Attributed to | Oral testimony Q&A (response to "By UAPs or by people within the Federal Government?"), House Oversight Subcommittee on National Security, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Burlison, p. 36 |
+_Oral testimony Q&A (response to "By UAPs or by people within the Federal Government?"), House Oversight Subcommittee on National Security, 2023-07-26; [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf); Q&A with Rep. Burlison, p. 36_
 
 > I cannot get into the specifics in an open environment, but at least the activity that I personally witnessed—and I have to be very careful here because you do not—you know, they tell you never to acknowledge tradecraft, right. So, what I personally witnessed, myself and my wife, was very disturbing.
 
@@ -919,19 +903,11 @@ Submission") |
 
 > Fair assessment.
 
-| Field | Value |
-|---|---|
-| Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Ogles, p. 43 |
+_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26; [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf); Q&A with Rep. Ogles, p. 43_
 
 > Yes, sir, potentially.
 
-| Field | Value |
-|---|---|
-| Attributed to | Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Ogles, p. 43 |
+_Oral testimony Q&A, House Oversight Subcommittee on National Security, 2023-07-26; [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf); Q&A with Rep. Ogles, p. 43_
 
 > By external observation, sure, that could be a fair assessment. Yes.
 
@@ -943,11 +919,7 @@ Submission") |
 
 > Yes.
 
-| Field | Value |
-|---|---|
-| Attributed to | Oral testimony Q&A (response to "Do you have any personal knowledge of someone who has possibly been injured working on legacy UAP reverse engineering?"), House Oversight Subcommittee on National Security, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Burchett (follow-up round), p. 44 |
+_Oral testimony Q&A (response to "Do you have any personal knowledge of someone who has possibly been injured working on legacy UAP reverse engineering?"), House Oversight Subcommittee on National Security, 2023-07-26; [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf); Q&A with Rep. Burchett (follow-up round), p. 44_
 
 > I cannot get into specifics, but you can imagine assessing an unknown unknown there is a lot of potentialities you cannot fully prepare for.
 
@@ -967,11 +939,7 @@ Submission") |
 
 > Personally, yes.
 
-| Field | Value |
-|---|---|
-| Attributed to | Oral testimony Q&A (response to "Are you aware of any individuals that are participating in reverse engineering programs for non-terrestrial craft?"), House Oversight Subcommittee on National Security, 2023-07-26 |
-| Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
-| Location | Q&A with Rep. Burchett, p. 44 |
+_Oral testimony Q&A (response to "Are you aware of any individuals that are participating in reverse engineering programs for non-terrestrial craft?"), House Oversight Subcommittee on National Security, 2023-07-26; [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf); Q&A with Rep. Burchett, p. 44_
 
 > Certainly, closed door and assurances that breaking their NDA they are not going to get administratively punished for so.
 

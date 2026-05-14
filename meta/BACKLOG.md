@@ -42,24 +42,16 @@ externally-blocked item ever surfaces (rare), reinstate the
 ## A. Priority sequence
 
 Items with ordering or coupling constraints. A3 carries person-node
-Statements polish work that was gated on the F.7 finding/investigation
-data-model decision; F.7 shipped 2026-05-13 picking Path A (each
-artifact owns its own quotes), so A3 Problems 1 and 2 now have a
-stable substrate to ship against.
+Statements polish work that ships cleanly against the
+quotes-per-artifact model (each artifact owns its own quotes — the
+data-model question is closed).
 
-### A3. Person-node Statements section — three reader-visibility problems on one data-model decision
+### A3. Person-node Statements section — Claim Inventory tier labels
 
-The Statements section on a person node renders every quote attributed
-to that person, sorted chronologically.
-Three problems surface here; they're tied together because the
-data-model decision in Problem 3 shapes how Problems 1 and 2 should
-be fixed.
-
-**Problem 1 — Claim Inventory status column is undifferentiated.** On
-whistleblower nodes, every filed-claim row renders with a hard-coded
-`✅ Sworn / documented` label (in `scripts/build-from-research.py` —
-grep the literal string).
-Real attestation tiers vary materially:
+The Claim Inventory section on whistleblower nodes renders every
+filed-claim row with a hard-coded `✅ Sworn / documented` label (in
+`scripts/build-from-research.py` — grep the literal string). Real
+attestation tiers vary materially:
 
 - **sworn under oath** — congressional hearing testimony
 - **sworn under penalty of perjury** — formal legal filing under
@@ -70,86 +62,18 @@ Real attestation tiers vary materially:
   attestation ceremony
 
 A reader scanning the inventory cannot distinguish a sworn-oath claim
-from a podcast claim. Fix sketch: add an optional `attestation_tier`
-enum to `quote_entry` (values `sworn-oath` / `sworn-perjury` /
-`dopsr-cleared` / `on-record` / `self-attested` / `unknown`); renderer
-maps tier to a differentiated status label.
+from a podcast claim. Schema already carries `attestation_tier` on
+`quote_entry` (values `sworn-oath` / `sworn-perjury` / `dopsr-cleared`
+/ `on-record` / `self-attested` / `secondary-source`) but scoped to
+finding artifacts only — the entity-node Claim Inventory renderer
+ignores it. Fix: lift the schema scope to entity quotes too, wire the
+renderer to map tier → label, and backfill `attestation_tier` on
+existing whistleblower filed-claim entries.
 
-**Problem 2 — Q&A answer fragments render as standalone blockquotes.**
-Oral testimony produces one-word answers (`"Yes."`, `"Both."`,
-`"Personally, yes."`) that the verbatim-quote check passes (the byte
-appears in source) but that render as full blockquote rows whose
-meaning is opaque without reading the `Attributed to` cell. Corpus
-state: 9 person-node quotes are sub-30 chars; 7 are Q&A answer
-fragments; 2 are legitimate terminology extracts
-(`"self-licking ice cream cone"`, `"eighty-year arms race"`).
-Fix sketches:
-
-- **Q&A pair schema** — optional `question` field on `quote_entry`;
-  renderer emits Q + A as a paired block. Schema extension; verbatim
-  check anchors both halves against source.
-- **Content-rewrite discipline** — merge tight Q&A exchanges into
-  single quote entries where the answer is continuous with the
-  question. Schema-stable; relies on author discipline.
-- **Render-time demotion** — quotes below a length threshold render
-  inline (`> **Q:** … — **A:** Yes.`) rather than as standalone
-  blockquotes. No schema change; renderer-only.
-
-**Problem 3 — cross-artifact quote duplication.** A statement made by
-person X at hearing Y currently lives as identical bytes in three
-places: `quotes` on the person artifact, on the hearing-event
-artifact, and on the hearing-transcript artifact. Corpus state: 82
-verbatim passages are duplicated across 2+ artifacts, and the
-duplication grows per node built. Person nodes inflate as a
-consequence (whistleblower nodes can run 1000+ lines).
-
-This is the E.3 cross-artifact-resolver question the roadmap deferred
-until ~10 nodes were through the pipeline. Threshold reached. Three
-paths:
-
-- **Path A — keep duplication, polish renders.** Each artifact owns
-  its own quotes. Ship Problems 1 and 2 as render-time / schema
-  additions on the existing model. Duplicates persist but Statements
-  becomes scannable via tier labels and Q&A handling.
-- **Path B — pull E.3 forward.** Each verbatim passage lives in
-  exactly one artifact (the source-owning one — transcript for oral,
-  document for text-native). Person and event artifacts carry
-  `quote_refs: [qid@artifact]` pointers; the renderer resolves at
-  build time. Person nodes shrink as a consequence. Whistleblower
-  Claim Inventory and eyewitness Direct/Other-Statements filters
-  need a cross-artifact resolver — either walk every artifact where
-  `speaker_path == /people/{slug}`, or build a reverse index at
-  validation time.
-- **Path C — hybrid.** Ship E.3 first; re-evaluate Problems 1 and 2
-  on the reformed model. Tier labels and Q&A handling likely still
-  useful but their shape may shift (Q&A handling moves to the source
-  artifact, not the person view of it).
-
-**F.7 outcome.** F.7 shipped 2026-05-13 picking Path A — findings cite
-primary sources directly via `source_entry` (`finding_path` /
-`entity_path` + `anchor`), not entity-node quotes. The cross-artifact
-resolver question (Path B) is back in E.3 deferred. A3 Problems 1
-and 2 (tier labels, Q&A handling) now ship cleanly against the
-duplicated model.
-
-**Lighter alternative if Path A wins.** Add a navigation affordance —
-TOC jump-links at the top of nodes ≥500 lines, or collapsible
-per-venue Statements subsections. Doesn't touch the data model;
-addresses the scannability symptom. Strictly cosmetic.
-
-**Constraint from `meta/conventions.md`.** Claim Inventory is
-defined as *"a render-time projection of quotes tagged
-`category: filed-claim`. A filter, not a separate data structure —
-the filed claim IS the quote."* Path B must preserve this filter
-semantics across artifacts; the filter logic moves out of the
-renderer's local-quote iteration into a cross-artifact walk.
-
-Surfaced: Grusch rebuild — three observations converged from the
-same node-build session (Problem 1 from a Claim Inventory rendering
-identically across all rows; Problem 2 from oral-testimony Q&A
-extraction; Problem 3 from an over-long person node prompting "can
-quotes be offloaded?"). One person-node session, one design decision
-point.
+Surfaced: Grusch rebuild — Claim Inventory rendered identically
+across every row regardless of whether the underlying attestation
+was sworn House testimony, an IC IG complaint, or an on-record
+podcast statement.
 
 ---
 
