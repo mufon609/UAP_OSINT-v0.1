@@ -53,6 +53,10 @@ from pathlib import Path
 
 import yaml
 
+# scripts/tools/check-vocab.py — put the scripts/ parent on sys.path so
+# `from lib._common` resolves from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from lib._common import extract_significant_tokens, load_source_tokens, strict_yaml_load
 
 

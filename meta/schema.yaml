@@ -1,7 +1,7 @@
 # Primary-source investigation knowledge-base — schema
 #
 # Single source of truth for node types, required sections, vocabularies,
-# and structural rules. Read by scripts/validate.py and scripts/new.py.
+# and structural rules. Read by scripts/build/validate.py and scripts/build/new.py.
 # Human-readable rationale lives in meta/conventions.md.
 
 schema:
@@ -556,7 +556,7 @@ types:
   #
   # The research artifact is the canonical record of what the repository
   # knows about a node's subject. Nodes are regeneratable from research
-  # artifacts via scripts/build-from-research.py (Phase II of the layered
+  # artifacts via scripts/build/build-from-research.py (Phase II of the layered
   # build process).
   research-artifact:
     path_prefix: meta/research/
@@ -1007,14 +1007,9 @@ types:
         - corroborated_by         # list of entry ids or external refs
       # Content-lifecycle fields above support the Node Versioning
       # discipline (originals preserved; corrections added alongside
-      # via Superseded By / Contradicted By pointers). Iteration-log
-      # tracking (added_by_iteration / iterations[] / last_iteration)
-      # was removed 2026-04-21 — git log / git diff on the artifact
-      # file are authoritative for edit history; the in-artifact log
-      # was duplicative ceremony. Per-entry audit tracking
-      # (last_audited_date / audit_cadence_days / audit_status) was
-      # removed 2026-04-20 along with scripts/audit-schedule.py.
-      # Rebuild either if real tracking requirements surface.
+      # via Superseded By / Contradicted By pointers). Edit history
+      # lives in git log / git diff on the artifact file; no in-
+      # artifact iteration log.
 
     # Per-section entry shapes (each inherits lifecycle fields above):
 
@@ -1588,7 +1583,7 @@ types:
       # canonical: corrected form (e.g., "Leslie Kean")
       # resolution: preserve-as-sic-in-quotes | use-canonical | disputed | unresolved
 
-    # --- Validation invariants (enforced by scripts/validate-research.py) ---
+    # --- Validation invariants (enforced by scripts/build/validate-research.py) ---
 
     invariants:
       # Frontmatter / top-level

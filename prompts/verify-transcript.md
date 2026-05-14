@@ -63,7 +63,7 @@ Steps:
 **Output:**
 - Before-and-after diff for each quote that changed
 - Summary count: verbatim / drift-corrected / replaced / removed
-- Re-run `python3 scripts/validate.py {path}` to confirm the
+- Re-run `python3 scripts/build/validate.py {path}` to confirm the
   verbatim-quote check passes on every retained quote
 - Commit with a message naming the transcript and the categories of
   change applied

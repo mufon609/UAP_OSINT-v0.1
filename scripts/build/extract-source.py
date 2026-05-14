@@ -38,6 +38,10 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+# scripts/build/extract-source.py — put the scripts/ parent on sys.path
+# so `from lib._common` resolves from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 # Use the shared extraction layer so contributor scratch files match
 # what the verbatim-quote / prose-drift / description-drift checks see
 # byte-for-byte. The lib helper handles PDF (with .txt-sibling fallback
@@ -201,7 +205,7 @@ def do_batch(artifact_path):
     print(f"  - Review each /tmp/scratch-{slug}-N.txt")
     print(f"  - Populate document_intrinsic / context_extrinsic in {artifact_path.relative_to(REPO_ROOT)}")
     print(f"  - Populate quotes, entities_referenced, naming_quirks")
-    print(f"  - Validate: python3 scripts/validate-research.py {artifact_path.relative_to(REPO_ROOT)}")
+    print(f"  - Validate: python3 scripts/build/validate-research.py {artifact_path.relative_to(REPO_ROOT)}")
 
 
 # =============================================================================

@@ -21,8 +21,8 @@ or scripts (`/scripts/`).
 | `roadmap.md` | Active toolkit-development work + completed phases |
 | `schema.yaml` | Machine-readable spec — node types, archetypes, kinds, required sections, vocabularies |
 | `sources-access.md` | Site-specific archival workarounds (SEC, defense.gov, Twitter/X, etc.) |
-| `templates/` | Scaffolding templates per node type — consumed by `scripts/new.py` |
-| `research/` | YAML research artifacts backing each content node — Phase I working surface; consumed by `scripts/build-from-research.py`; fork-deletes |
+| `templates/` | Scaffolding templates per node type — consumed by `scripts/build/new.py` |
+| `research/` | YAML research artifacts backing each content node — Phase I working surface; consumed by `scripts/build/build-from-research.py`; fork-deletes |
 | `toolkit-notes/` | Validator issue-log (auto-appended). Reserved for future retrospectives or technique notes; currently no `.md` content. |
 | `topic/` | Topic-specific governance — priority research queue, topic overview, corpus addenda, in-progress working notes; fork-deletes when toolkit is forked to a different investigation |
 

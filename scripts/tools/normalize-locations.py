@@ -15,10 +15,10 @@ actual line range where the quote text lives in the current extract so
 that verification is fast.
 
 Usage:
-  scripts/normalize-locations.py                # corpus-wide survey
-  scripts/normalize-locations.py PATH           # per-artifact diagnostic
-  scripts/normalize-locations.py --all          # include canonical refs
-  scripts/normalize-locations.py --csv [PATH]   # machine-readable
+  scripts/tools/normalize-locations.py                # corpus-wide survey
+  scripts/tools/normalize-locations.py PATH           # per-artifact diagnostic
+  scripts/tools/normalize-locations.py --all          # include canonical refs
+  scripts/tools/normalize-locations.py --csv [PATH]   # machine-readable
 """
 
 from __future__ import annotations
@@ -27,8 +27,13 @@ import argparse
 import csv
 import re
 import sys
+from pathlib import Path
 
 import yaml
+
+# scripts/tools/normalize-locations.py — put the scripts/ parent on
+# sys.path so `from lib._common` resolves from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib._common import (
     strict_yaml_load,

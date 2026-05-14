@@ -49,16 +49,16 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    contradict and at least one side has primary-source evidence;
    `⚠ Disputed — unknown` used only where neither side has
    primary-source evidence. Reclassify if wrong.
-5. **Section requirements** — run `python3 scripts/validate.py {path}`
+5. **Section requirements** — run `python3 scripts/build/validate.py {path}`
    and fix any errors.
 6. **Coverage / Boundary / Stub-linking / Description-drift** — run
-   `python3 scripts/review-coverage.py meta/research/{slug}.yaml`. Any
+   `python3 scripts/build/review-coverage.py meta/research/{slug}.yaml`. Any
    Boundary failure means the node was hand-edited after regeneration
    (or the artifact drifted). Fix in the **artifact**; regenerate via
    `build-from-research.py`; never hand-patch the node to silence the
    check.
 7. **Associated Nodes freshness** — run
-   `python3 scripts/associate.py {path}` to regenerate.
+   `python3 scripts/build/associate.py {path}` to regenerate.
 8. **Cross-node consistency** — check that claims in this node agree
    with claims in nodes it references. Flag any unexplained divergence.
    For naming quirks (e.g., "Lue" alias-of-record for Elizondo),
@@ -79,7 +79,7 @@ not direct edits to the node body. Pattern:
    clarifications edit in place; content that was substantively
    different gets a new entry + pointer.
 3. Regenerate the node (renderer-supported types):
-   `python3 scripts/build-from-research.py meta/research/{slug}.yaml`
+   `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`
 4. Re-run `review-coverage.py` — must pass all four checks
 5. Run the full pre-commit chain — all eight gates green
    (`bash scripts/tests/pre-commit.sh`)

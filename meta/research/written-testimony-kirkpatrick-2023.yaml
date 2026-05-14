@@ -60,7 +60,7 @@ context_extrinsic:
     verified: '✅ Confirmed — sources/manifest.yaml entry path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf'
   - step: SHA256 verified
     date: '2026-04-28'
-    entity: scripts/manifest.py verify-checksums
+    entity: scripts/tools/manifest.py verify-checksums
     verified: ✅ Confirmed — SHA256 fcf53c2d6c97042e943302a6050486f43102de6fe235ae7f5d38da1bbbe7a7c7 matches archived file
 quotes:
 - id: q1

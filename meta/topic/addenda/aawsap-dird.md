@@ -70,11 +70,11 @@ reference to the AAWSAP per-deliverable tracker for full context.
 
 ## How addenda resolve
 
-When `scripts/validate.py` encounters a document node with `corpus: X`,
+When `scripts/build/validate.py` encounters a document node with `corpus: X`,
 it loads `meta/topic/addenda/X.md` and merges the addendum's required
 sections and frontmatter fields with the base `gov-doc` rules.
 
-When `scripts/new.py` scaffolds a node with `--corpus X`, it pulls the
+When `scripts/build/new.py` scaffolds a node with `--corpus X`, it pulls the
 addendum's template sections and injects them into the base template at
 the documented insertion point (`<!-- CORPUS-ADDENDUM-INSERT -->`).
 

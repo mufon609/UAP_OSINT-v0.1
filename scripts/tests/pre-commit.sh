@@ -3,23 +3,23 @@
 # exit-code gate. Non-zero exit on any failure blocks the commit.
 #
 # Runs, in order:
-#   1. scripts/tests/help-check.sh      — scripts/*.py --help doesn't crash
-#   2. scripts/tests/test_stopwords.py  — STOPWORDS shape + no content-word
-#                                         contamination (lib/_common.py)
-#   3. scripts/tests/smoke.sh           — fixture scaffold + validate per type
-#   4. python3 scripts/validate.py      — structural + verbatim-quote +
-#                                         governance-file + conditionally_required
-#   5. python3 scripts/validate-research.py
-#                                       — research-artifact structural check
-#   6. python3 scripts/review-coverage.py --all
-#                                       — cross-layer check (artifact ↔ rendered
-#                                         node): coverage / boundary /
-#                                         stub-linking / description-drift
-#   7. python3 scripts/build-state.py --check
-#                                       — CLAUDE.md build-state block in sync
-#   8. scripts/tests/file-size-check.sh — git-tracked files within
-#                                         GitHub's size thresholds (warn
-#                                         50MB / error 100MB)
+#   1. scripts/tests/help-check.sh           — scripts/**/*.py --help doesn't crash
+#   2. scripts/tests/test_stopwords.py       — STOPWORDS shape + no content-word
+#                                              contamination (lib/_common.py)
+#   3. scripts/tests/smoke.sh                — fixture scaffold + validate per type
+#   4. python3 scripts/build/validate.py     — structural + verbatim-quote +
+#                                              governance-file + conditionally_required
+#   5. python3 scripts/build/validate-research.py
+#                                            — research-artifact structural check
+#   6. python3 scripts/build/review-coverage.py --all
+#                                            — cross-layer check (artifact ↔ rendered
+#                                              node): coverage / boundary /
+#                                              stub-linking / description-drift
+#   7. python3 scripts/build/build-state.py --check
+#                                            — CLAUDE.md build-state block in sync
+#   8. scripts/tests/file-size-check.sh      — git-tracked files within
+#                                              GitHub's size thresholds (warn
+#                                              50MB / error 100MB)
 #
 # Adding or removing a gate: edit the `steps` array below. Step
 # numbering ("N/total") regenerates automatically from the array length.
@@ -88,10 +88,10 @@ steps=(
     $'help-check\tbash scripts/tests/help-check.sh'
     $'test_stopwords\tpython3 scripts/tests/test_stopwords.py'
     $'smoke\tbash scripts/tests/smoke.sh'
-    $'validate.py\tpython3 scripts/validate.py'
-    $'validate-research.py\tpython3 scripts/validate-research.py'
-    $'review-coverage.py\tpython3 scripts/review-coverage.py --all'
-    $'build-state.py --check\tpython3 scripts/build-state.py --check'
+    $'validate.py\tpython3 scripts/build/validate.py'
+    $'validate-research.py\tpython3 scripts/build/validate-research.py'
+    $'review-coverage.py\tpython3 scripts/build/review-coverage.py --all'
+    $'build-state.py --check\tpython3 scripts/build/build-state.py --check'
     $'file-size-check\tbash scripts/tests/file-size-check.sh'
 )
 

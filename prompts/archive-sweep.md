@@ -10,8 +10,8 @@ Steps:
 
 1. **Health check** the manifest integrity:
    ```
-   python3 scripts/manifest.py verify-paths
-   python3 scripts/manifest.py summary
+   python3 scripts/tools/manifest.py verify-paths
+   python3 scripts/tools/manifest.py summary
    ```
    If `verify-paths` reports missing files, report to the user and stop
    before submitting anything — missing local copies must be fixed
@@ -19,12 +19,12 @@ Steps:
 
 2. **Detect orphans and missing entries:**
    ```
-   python3 scripts/manifest.py missing     # URLs in nodes not in manifest
-   python3 scripts/manifest.py orphans     # manifest entries no node cites
+   python3 scripts/tools/manifest.py missing     # URLs in nodes not in manifest
+   python3 scripts/tools/manifest.py orphans     # manifest entries no node cites
    ```
    - For `missing`: add each to the manifest:
      ```
-     python3 scripts/manifest.py add URL --path PATH
+     python3 scripts/tools/manifest.py add URL --path PATH
      ```
      (download the source first if not already present; see
      `meta/sources-access.md` for site-specific workarounds)
@@ -33,7 +33,7 @@ Steps:
 
 3. **Submit pending Wayback entries:**
    ```
-   python3 scripts/archive.py
+   python3 scripts/tools/archive.py
    ```
    This rate-limits per IA guidelines. Leave it running; report
    progress periodically.

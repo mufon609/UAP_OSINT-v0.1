@@ -3,7 +3,7 @@
 Validate research artifacts against meta/schema.yaml.
 
 Structural checks only — does NOT compare against the target node
-(that's scripts/review-coverage.py).
+(that's scripts/build/review-coverage.py).
 
 Per-check modules live in scripts/checks/. This file is the orchestrator:
 loads schema + manifest, iterates artifacts, dispatches checks via
@@ -53,6 +53,10 @@ try:
 except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
+
+# scripts/build/validate-research.py — put the scripts/ parent on sys.path
+# so `from lib._common` and `from checks` resolve from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib._common import (
     strict_yaml_load,

@@ -34,6 +34,10 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+# scripts/build/new.py — put the scripts/ parent on sys.path so
+# `from lib._common` resolves from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from lib._common import REPO_ROOT, content_type_dirs, load_schema, load_topic
 
 TEMPLATES_DIR = REPO_ROOT / "meta" / "templates"
@@ -315,9 +319,9 @@ def main():
     print("Next steps:")
     print(f"  1. Fill in {rel_path} — frontmatter TODO fields, Identity/Overview,")
     print("     Description, required tables. Archive cited URLs inline.")
-    print("  2. Register sources:  python3 scripts/manifest.py add URL --path PATH")
-    print(f"  3. Regenerate Associated Nodes:  python3 scripts/associate.py {rel_path}")
-    print("  4. Validate:  python3 scripts/validate.py")
+    print("  2. Register sources:  python3 scripts/tools/manifest.py add URL --path PATH")
+    print(f"  3. Regenerate Associated Nodes:  python3 scripts/build/associate.py {rel_path}")
+    print("  4. Validate:  python3 scripts/build/validate.py")
 
 
 if __name__ == "__main__":

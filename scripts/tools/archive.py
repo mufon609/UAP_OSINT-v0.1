@@ -27,6 +27,11 @@ import urllib.request
 import urllib.error
 import urllib.parse
 from datetime import datetime
+from pathlib import Path
+
+# scripts/tools/archive.py — put the scripts/ parent on sys.path so
+# `from lib._common` resolves from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 # Wayback-URL detection + manifest I/O share helpers with manifest.py
 # via lib._common.

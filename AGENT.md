@@ -108,7 +108,7 @@ If you're doing anything related to this instance's topic, read
 | `meta/research/*.yaml` | Research artifacts | YAML |
 | `sources/manifest.yaml` | Source archival index | YAML |
 | `sources/{category}/*` | Archived primary sources | PDF / HTML / TXT / other |
-| `scripts/*.py` | Toolkit scripts | Python |
+| `scripts/{build,tools}/*.py` | Toolkit scripts (build pipeline + utilities) | Python |
 | `prompts/*.md` | Paste-ready session prompts | Markdown |
 
 ---

@@ -15,7 +15,7 @@ Two backlogs live here, distinguished by origin:
 - **Queue** (top) — leads that don't yet have a `[/path]` reference in
   any built node. These are "here's a lead; no node home yet."
 - **Priority Build Queue** — unbuilt stubs that are already referenced
-  by built nodes (visible in `scripts/validate.py` broken-link
+  by built nodes (visible in `scripts/build/validate.py` broken-link
   registry), curated here with priority and rationale.
 
 ---
@@ -59,7 +59,7 @@ pilot / corroborator), the supporting organization nodes, and the 19
 interview-venue stubs Dietrich's build surfaced (CBS News + Bill
 Whitaker; the five podcast organizations + hosts; Linda Hall Library
 + Nadia Drake; American Veterans Center + Tom Gibbs; seven interview
-transcript nodes — all visible in `scripts/validate.py` broken-link
+transcript nodes — all visible in `scripts/build/validate.py` broken-link
 registry).
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
@@ -101,7 +101,7 @@ announcement, 3 Burchett press releases, Rubio interviews, UAPDA
 package). The rebuild surfaced new entities across four groups —
 vouchers, Sol Foundation peers, disclosure journalists, and
 documents/transcripts cited in Grusch's statements. All appear in
-the `scripts/validate.py` broken-link registry.
+the `scripts/build/validate.py` broken-link registry.
 
 **Vouchers (high priority — directly support Grusch credibility):**
 
@@ -265,7 +265,7 @@ Worth a systematic pass once a clear pattern emerges across 3+ nodes.
 
 The person-node `## Identity` table renders four rows (Full Name, Aliases,
 Nationality, Profession) with a Source column that the renderer always
-emits as empty (`scripts/build-from-research.py::render_identity` hardcodes
+emits as empty (`scripts/build/renderers/person.py::render_identity` hardcodes
 `f"| {k} | {v} |  |"`). The schema's `document_intrinsic` for person
 artifacts carries `full_name / aliases / nationality / profession` only —
 no per-field source pointers. Rendered output therefore shows an empty

@@ -6,14 +6,14 @@ exports a single ``check(ctx) -> Iterable[Issue]`` callable.
 Routing — three orchestrators dispatch the checks via explicit step
 lists in their own files (the lists are the routing source of truth):
 
-  - scripts/validate.py — direct dispatch in main() for global manifest
-    + governance checks (BaseContext); ``_NODE_CHECKS`` for per-content-
-    node checks (NodeContext).
-  - scripts/validate-research.py — ``_PRE_PARSE_CHECKS`` for raw-line
-    checks before YAML parse (minimal ResearchContext);
+  - scripts/build/validate.py — direct dispatch in main() for global
+    manifest + governance checks (BaseContext); ``_NODE_CHECKS`` for
+    per-content-node checks (NodeContext).
+  - scripts/build/validate-research.py — ``_PRE_PARSE_CHECKS`` for
+    raw-line checks before YAML parse (minimal ResearchContext);
     ``_ARTIFACT_CHECKS`` for per-research-artifact checks (full
     ResearchContext).
-  - scripts/review-coverage.py — ``_REVIEW_CHECKS`` for cross-layer
+  - scripts/build/review-coverage.py — ``_REVIEW_CHECKS`` for cross-layer
     review (ResearchContext extended with target node body and source
     text).
 
@@ -229,8 +229,11 @@ class ResearchContext(BaseContext):
         if self._regenerated is None:
             import subprocess
             from pathlib import Path
+            # scripts/checks/__init__.py.parent.parent == scripts/;
+            # build-from-research.py lives at scripts/build/.
             build_script = (
-                Path(__file__).resolve().parent.parent / "build-from-research.py"
+                Path(__file__).resolve().parent.parent
+                / "build" / "build-from-research.py"
             )
             try:
                 proc = subprocess.run(

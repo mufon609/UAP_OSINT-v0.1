@@ -18,7 +18,7 @@ Usage:
 
 The scaffolded artifact is a structurally valid empty shell. Phase I of
 the build process fills it in. Contributors should run
-`scripts/validate-research.py` after populating each section.
+`scripts/build/validate-research.py` after populating each section.
 """
 
 import argparse
@@ -31,6 +31,10 @@ try:
 except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
+
+# scripts/build/research-scaffold.py — put the scripts/ parent on sys.path
+# so `from lib._common` and `from checks` resolve from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 
 # =============================================================================
@@ -252,7 +256,7 @@ def main():
     target_file = target_node_file(node_type, slug)
     if not target_file.exists():
         sys.exit(f"ERROR: target node not found: {target_file.relative_to(REPO_ROOT)}\n"
-                 f"  Scaffold the target node first via `scripts/new.py`, then its research artifact.")
+                 f"  Scaffold the target node first via `scripts/build/new.py`, then its research artifact.")
 
     # Compute output path
     RESEARCH_DIR.mkdir(parents=True, exist_ok=True)
@@ -279,7 +283,7 @@ def main():
     print("Next steps (Phase I):")
     print(f"  1. Extract primary sources to plaintext:")
     if source_paths:
-        print(f"     python3 scripts/extract-source.py --artifact {rel}")
+        print(f"     python3 scripts/build/extract-source.py --artifact {rel}")
         print(f"     (writes /tmp/scratch-{slug}-N.txt — one per primary source)")
     else:
         print(f"     (add sources to primary_sources in {rel}, or re-scaffold with --sources)")
@@ -289,7 +293,7 @@ def main():
     print(f"  5. Populate entities_referenced, naming_quirks")
     if "rumors" in artifact:
         print(f"  6. Populate rumors (widely-reported claims lacking primary-source backing)")
-    print(f"  7. Validate: python3 scripts/validate-research.py {rel}")
+    print(f"  7. Validate: python3 scripts/build/validate-research.py {rel}")
 
 
 if __name__ == "__main__":

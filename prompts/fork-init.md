@@ -86,12 +86,12 @@ The `topic` and `display_name` fields are validated as required by
 error. Both flow into `lib._common.load_topic()` which is read at
 render time by:
 
-- `scripts/build-from-research.py::render_top_relevance` (person
+- `scripts/build/build-from-research.py::render_top_relevance` (person
   artifacts) — composes `## {display_name} Relevance` headers
-- `scripts/build-from-research.py::render_top_scope_activity`
+- `scripts/build/build-from-research.py::render_top_scope_activity`
   (location artifacts) — composes `## {display_name}-Scope Activity`
   headers
-- `scripts/archive.py::USER_AGENT` — composes
+- `scripts/tools/archive.py::USER_AGENT` — composes
   `{display_name}-Research-Archiver/2.0` for Wayback Machine
   submissions
 
@@ -119,8 +119,8 @@ day 1; the queue grows organically as leads accumulate.
 Run:
 
 ```
-python3 scripts/validate.py
-python3 scripts/build-state.py --check
+python3 scripts/build/validate.py
+python3 scripts/build/build-state.py --check
 bash scripts/tests/pre-commit.sh
 ```
 

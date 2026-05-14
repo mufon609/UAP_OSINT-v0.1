@@ -31,7 +31,7 @@ behind each node. They capture:
   corroboration_items, program_involvement, vouching_chain, etc.)
 
 The narrative node at `{type}/{slug}.md` is a derived view of its
-artifact. `scripts/build-from-research.py` deterministically regenerates
+artifact. `scripts/build/build-from-research.py` deterministically regenerates
 the narrative from the artifact (Phase II of the layered build
 process) for all nine node types — document, person, event,
 transcript, media, organization, location, finding, and investigation.
@@ -39,8 +39,8 @@ transcript, media, organization, location, finding, and investigation.
 ## Conventions
 
 - Schema defined in `meta/schema.yaml` under `types.research-artifact`
-- Validated structurally via `scripts/validate-research.py`
-- Scaffolded empty via `scripts/research-scaffold.py --target {type}/{slug}`
+- Validated structurally via `scripts/build/validate-research.py`
+- Scaffolded empty via `scripts/build/research-scaffold.py --target {type}/{slug}`
 - Never hand-delete entries; use lifecycle fields
   (`superseded_by`, `contradicted_by`) to preserve history
 

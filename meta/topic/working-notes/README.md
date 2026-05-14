@@ -82,7 +82,7 @@ integration_targets:
   not type-based. Every `.md` file under `meta/` except those in this
   `working-notes/` directory is validated by the governance-files walk
   and must satisfy the meta-required-fields check.
-  `scripts/validate-research.py` operates on `meta/research/*.yaml`
+  `scripts/build/validate-research.py` operates on `meta/research/*.yaml`
   artifacts only — a structurally separate scope from the
   governance-doc / content-node walk in `validate.py`.
 - **Don't archive in `sources/manifest.yaml`.** These are not

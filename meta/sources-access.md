@@ -180,7 +180,7 @@ with `--cookies-from-browser` and a JS runtime in place.
 
 **What works (in priority order):**
 
-- **`scripts/transcribe.py URL`** — first attempt. Uses
+- **`scripts/tools/transcribe.py URL`** — first attempt. Uses
   `youtube-transcript-api` to download captions (auto-generated or
   manual). Formats as timestamped markdown to `sources/transcripts/`.
 - **`yt-dlp` with `--cookies-from-browser firefox` and a JS runtime
@@ -442,6 +442,6 @@ appropriate block status and add to the Manual Archival Queue below.
 
 Sources requiring manual browser download. Save to the appropriate
 `sources/` subdirectory and update `sources/manifest.yaml` via
-`scripts/manifest.py add`.
+`scripts/tools/manifest.py add`.
 
 *No entries yet — Phase 2 pilots not started.*

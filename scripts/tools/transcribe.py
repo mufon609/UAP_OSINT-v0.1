@@ -17,6 +17,11 @@ import json
 import re
 import sys
 from datetime import date
+from pathlib import Path
+
+# scripts/tools/transcribe.py — put the scripts/ parent on sys.path so
+# `from lib._common` resolves from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib._common import REPO_ROOT
 
@@ -108,7 +113,7 @@ def main():
 
     print()
     print("Next: register source in manifest:")
-    print(f"  python3 scripts/manifest.py add {args.url} --path transcripts/{slug}-downloaded.md --format transcript")
+    print(f"  python3 scripts/tools/manifest.py add {args.url} --path transcripts/{slug}-downloaded.md --format transcript")
 
 
 if __name__ == "__main__":

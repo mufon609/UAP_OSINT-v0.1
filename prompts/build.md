@@ -22,7 +22,7 @@ organization, location, finding, and investigation.
    one is in-flight. The session ends when the one node has validated,
    been regenerated from its research artifact, passed coverage review,
    and been committed. Scope: this rule applies to scaffolding *new*
-   nodes (`scripts/new.py` + `scripts/research-scaffold.py`). Editing,
+   nodes (`scripts/build/new.py` + `scripts/build/research-scaffold.py`). Editing,
    auditing, fixing, or rebuilding existing nodes — including in
    batches — is unrestricted and follows its own prompts (`audit.md`,
    `verify-transcript.md`, `archive-sweep.md`).
@@ -51,10 +51,10 @@ Before starting, confirm:
 - The **target node** is known (path: `{type}/{slug}`, e.g.,
   `documents/written-testimony-fravor-2023`)
 - The target node's **narrative file exists** as an empty scaffold
-  (via `python3 scripts/new.py …`). Create it first if needed.
+  (via `python3 scripts/build/new.py …`). Create it first if needed.
 - All **primary sources are archived locally** in `sources/{category}/`
   and registered in `sources/manifest.yaml`. If new sources are needed,
-  archive them via `python3 scripts/manifest.py add …` before Phase I
+  archive them via `python3 scripts/tools/manifest.py add …` before Phase I
   begins.
 - The research artifact is either **absent** (will be scaffolded in
   step 1 below) or **exists in initial-scaffold state** with no content
@@ -69,7 +69,7 @@ If any prerequisite is unmet, stop and fix before proceeding.
 ### Step 1. Scaffold the research artifact (if not yet scaffolded)
 
 ```
-python3 scripts/research-scaffold.py --target {type}/{slug} \
+python3 scripts/build/research-scaffold.py --target {type}/{slug} \
     --sources {comma-separated-source-paths-relative-to-sources/}
 ```
 
@@ -79,7 +79,7 @@ A `rumors:` section is included only if the target node type is
 
 Validate the scaffold passed its structural checks:
 ```
-python3 scripts/validate-research.py meta/research/{slug}.yaml
+python3 scripts/build/validate-research.py meta/research/{slug}.yaml
 ```
 
 Should exit 0 (passes, zero content but structurally valid).
@@ -87,7 +87,7 @@ Should exit 0 (passes, zero content but structurally valid).
 ### Step 2. Extract every primary source to plaintext
 
 ```
-python3 scripts/extract-source.py --artifact meta/research/{slug}.yaml
+python3 scripts/build/extract-source.py --artifact meta/research/{slug}.yaml
 ```
 
 This writes `/tmp/scratch-{slug}-0.txt`, `/tmp/scratch-{slug}-1.txt`,
@@ -359,7 +359,7 @@ carry a rumors section.
 ### Step 10. Validate the research artifact
 
 ```
-python3 scripts/validate-research.py meta/research/{slug}.yaml
+python3 scripts/build/validate-research.py meta/research/{slug}.yaml
 ```
 
 Must exit 0 before leaving Phase I. Any errors must be corrected by
@@ -482,7 +482,7 @@ media, organization, location, finding, and investigation.
 ### Step 1. Regenerate the node from its research artifact
 
 ```
-python3 scripts/build-from-research.py meta/research/{slug}.yaml
+python3 scripts/build/build-from-research.py meta/research/{slug}.yaml
 ```
 
 This:
@@ -646,7 +646,7 @@ This:
 3. Preserves the node's existing frontmatter verbatim.
 4. Writes the regenerated body to `{type}/{slug}.md`, overwriting the
    previous body.
-5. Invokes `scripts/associate.py {node}` to rewrite Associated Nodes.
+5. Invokes `scripts/build/associate.py {node}` to rewrite Associated Nodes.
 6. Post-build: re-runs `validate.py` on the regenerated node (quote
    verbatim check, section structure, etc.). Exits non-zero if
    validation fails.
@@ -681,7 +681,7 @@ research artifact. Runs last — assumes Phase I and Phase II have passed.
 ### Step 1. Run the coverage checker
 
 ```
-python3 scripts/review-coverage.py meta/research/{slug}.yaml
+python3 scripts/build/review-coverage.py meta/research/{slug}.yaml
 ```
 
 The script runs four mechanical checks:
@@ -730,10 +730,10 @@ node surfaces no semantic issues. Ready to commit.
 
 ### Renderer-supported types (document, person, event, transcript, media, organization, location)
 
-1. `python3 scripts/validate-research.py meta/research/{slug}.yaml` — must pass
-2. `python3 scripts/build-from-research.py meta/research/{slug}.yaml` — must
+1. `python3 scripts/build/validate-research.py meta/research/{slug}.yaml` — must pass
+2. `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml` — must
    complete cleanly (includes post-build `validate.py`)
-3. `python3 scripts/review-coverage.py meta/research/{slug}.yaml` — must pass
+3. `python3 scripts/build/review-coverage.py meta/research/{slug}.yaml` — must pass
    (Coverage / Boundary / Stub-linking / Description-drift — all four checks)
 4. Read the regenerated node top-to-bottom; fix any issues in the
    **artifact** (not the node) and re-run steps 2–3
@@ -744,7 +744,7 @@ node surfaces no semantic issues. Ready to commit.
    All eight gates must pass (help-check, test_stopwords, smoke,
    validate.py, validate-research.py, review-coverage.py,
    build-state.py --check, file-size-check).
-6. `python3 scripts/build-state.py --update` if the commit adds, removes,
+6. `python3 scripts/build/build-state.py --update` if the commit adds, removes,
    or changes the status of a node (refreshes the CLAUDE.md build-state block)
 7. Commit the research artifact + regenerated node + any manifest
    changes in one focused commit (one *new* node per session — hard rule)

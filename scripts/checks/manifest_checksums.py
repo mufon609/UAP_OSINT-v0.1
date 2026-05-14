@@ -67,7 +67,7 @@ def check(ctx):
             yield Issue(
                 f"sources/{path}", "error",
                 f"Archived manifest entry has no sha256 — run: "
-                f"python3 scripts/manifest.py verify-checksums  "
+                f"python3 scripts/tools/manifest.py verify-checksums  "
                 f"(cited URL: {url})",
                 check_name=CHECK_NAME,
             )

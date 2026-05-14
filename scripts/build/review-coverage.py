@@ -38,6 +38,10 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+# scripts/build/review-coverage.py — put the scripts/ parent on sys.path
+# so `from lib._common` and `from checks` resolve from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from lib._common import (
     strict_yaml_load,
     REPO_ROOT,

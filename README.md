@@ -61,24 +61,31 @@ meta/
   toolkit-notes/            toolkit lessons-learned (topic-neutral)
 
 scripts/
-  new.py                    scaffolder — produces empty node from template
-  research-scaffold.py      scaffold the research artifact backing a node
-  extract-source.py         extract primary sources to plaintext (Phase I)
-  build-from-research.py    regenerate node body from its research artifact (Phase II)
-  review-coverage.py        Phase III coverage / boundary / stub-linking / description-drift review
-  validate.py               node structural + verbatim-quote + source-integrity validation
-  validate-research.py      research-artifact structural validation
-  check-vocab.py            pre-flight prose-drift token check (contributor diagnostic)
-  normalize-locations.py    quote `source.location` ref diagnostic (read-only)
-  manifest.py               manifest CLI (add, verify-paths, verify-checksums, …)
-  archive.py                Wayback Machine submission
-  transcribe.py             YouTube caption download
-  associate.py              auto-generate Associated Nodes sections
-  build-state.py            refresh CLAUDE.md build state
+  build/                    build pipeline + validators (contributor-facing)
+    new.py                  scaffolder — produces empty node from template
+    research-scaffold.py    scaffold the research artifact backing a node
+    extract-source.py       extract primary sources to plaintext (Phase I)
+    build-from-research.py  orchestrator — regenerates node body from artifact (Phase II)
+    renderers/              per-type renderer modules dispatched by
+                            build-from-research.py — _common.py, _universal.py,
+                            and one module per node type
+                            (document / person / event / transcript / media /
+                            organization / location / finding / investigation)
+    review-coverage.py      Phase III coverage / boundary / stub-linking / description-drift review
+    validate.py             node structural + verbatim-quote + source-integrity validation
+    validate-research.py    research-artifact structural validation
+    associate.py            auto-generate Associated Nodes sections
+    build-state.py          refresh CLAUDE.md build state
+  tools/                    standalone utilities + diagnostics
+    manifest.py             manifest CLI (add, verify-paths, verify-checksums, …)
+    archive.py              Wayback Machine submission
+    transcribe.py           YouTube caption download
+    check-vocab.py          pre-flight prose-drift token check (contributor diagnostic)
+    normalize-locations.py  quote `source.location` ref diagnostic (read-only)
   checks/                   per-check modules — every named validator check
-                            lives here as its own file; validate.py /
-                            validate-research.py / review-coverage.py are
-                            thin orchestrators that import and dispatch
+                            lives here as its own file; build/validate.py /
+                            build/validate-research.py / build/review-coverage.py
+                            are thin orchestrators that import and dispatch
                             them via explicit step lists
   lib/                      shared cross-script helpers (source extraction,
                             HTML cleanup, quote normalization, frontmatter
@@ -88,10 +95,10 @@ scripts/
 
 scripts/tests/
   pre-commit.sh             canonical all-gates health check (chains 8 gates:
-                            help-check / test_stopwords / smoke / validate.py /
-                            validate-research.py / review-coverage.py /
-                            build-state.py --check / file-size-check)
-  help-check.sh             confirms every scripts/*.py --help exits 0
+                            help-check / test_stopwords / smoke / build/validate.py /
+                            build/validate-research.py / build/review-coverage.py /
+                            build/build-state.py --check / file-size-check)
+  help-check.sh             confirms every scripts/{build,tools}/*.py --help exits 0
   test_stopwords.py         STOPWORDS shape + content-word regression test
   smoke.sh                  fixture-based new.py + validator smoke tests
   file-size-check.sh        warn 50MB / error 100MB on git-tracked files
@@ -215,7 +222,7 @@ independent mechanisms:
 
 1. **Local archive** — downloaded file in `/sources/{category}/` and
    registered in `sources/manifest.yaml`
-2. **Wayback Machine** — submitted via `scripts/archive.py`
+2. **Wayback Machine** — submitted via `scripts/tools/archive.py`
 
 The local archive is the integrity guarantee; Wayback is insurance.
 

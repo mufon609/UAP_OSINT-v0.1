@@ -74,9 +74,9 @@ Before opening the load-bearing question, the artifact must already
 pass:
 
 ```
-python3 scripts/validate-research.py meta/research/{slug}.yaml
-python3 scripts/build-from-research.py meta/research/{slug}.yaml
-python3 scripts/review-coverage.py meta/research/{slug}.yaml
+python3 scripts/build/validate-research.py meta/research/{slug}.yaml
+python3 scripts/build/build-from-research.py meta/research/{slug}.yaml
+python3 scripts/build/review-coverage.py meta/research/{slug}.yaml
 ```
 
 A failing baseline means the audit candidates may be confounded by
@@ -139,8 +139,8 @@ Once contributor approves the recommendation set:
    needed, update `entities_referenced` if surfacing for a future node).
 2. If consolidating, update `significance` / `context` on the
    surviving quote to capture what was in the dropped siblings.
-3. Re-render: `python3 scripts/build-from-research.py meta/research/{slug}.yaml`
-4. Re-run Phase III: `python3 scripts/review-coverage.py meta/research/{slug}.yaml`
+3. Re-render: `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`
+4. Re-run Phase III: `python3 scripts/build/review-coverage.py meta/research/{slug}.yaml`
 5. Verify the rendered Statements section reads cleanly — the
    subject-as-protagonist test should pass at a glance.
 6. Pre-commit chain: `bash scripts/tests/pre-commit.sh`

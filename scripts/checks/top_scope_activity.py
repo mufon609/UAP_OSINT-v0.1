@@ -16,7 +16,7 @@ Topic-neutral by design: the schema field key is ``top_scope_activity``,
 not ``uap_scope_activity``. The rendered section header (``## UAP-Scope
 Activity`` on this fork) is composed at render time from
 ``meta/topic/overview.md::display_name`` via ``load_topic()`` — see
-``scripts/build-from-research.py::render_top_scope_activity``. A fork
+``scripts/build/build-from-research.py::render_top_scope_activity``. A fork
 sets a different ``display_name`` and the renderer substitutes
 without touching this check, the schema field key, or any artifact
 data.

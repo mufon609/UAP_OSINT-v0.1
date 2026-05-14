@@ -26,6 +26,10 @@ except ImportError:
     print("ERROR: Install PyYAML: pip install pyyaml", file=sys.stderr)
     sys.exit(1)
 
+# scripts/tools/manifest.py — put the scripts/ parent on sys.path so
+# `from lib._common` resolves from this nested location.
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 # Wayback-URL detection + manifest I/O share helpers with archive.py
 # via lib._common.
 from lib._common import (  # noqa: E402

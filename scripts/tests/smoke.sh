@@ -42,7 +42,7 @@ trap cleanup EXIT
 test_scaffold() {
     local label="$1"; shift
     local out
-    out="$(python3 scripts/new.py "$@" 2>&1)"
+    out="$(python3 scripts/build/new.py "$@" 2>&1)"
     local rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("$label — scaffold failed (rc=$rc): $(echo "$out" | head -1)")
@@ -60,7 +60,7 @@ test_scaffold() {
     fi
     created_files+=("$file_path")
 
-    out="$(python3 scripts/validate.py "$file_path" --quiet 2>&1)"
+    out="$(python3 scripts/build/validate.py "$file_path" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("$label — validate.py failed on scaffold: $(echo "$out" | grep ERROR | head -2)")
@@ -116,14 +116,14 @@ test_scaffold "finding"       finding       --slug __smoke-finding
 test_scaffold "investigation" investigation --slug __smoke-investigation --question "Does the test question resolve?"
 
 # --- research artifact (uses the gov-doc fixture as target) ---
-artifact_out="$(python3 scripts/research-scaffold.py --target documents/__smoke-doc-gov 2>&1)"
+artifact_out="$(python3 scripts/build/research-scaffold.py --target documents/__smoke-doc-gov 2>&1)"
 rc=$?
 if [ "$rc" -ne 0 ]; then
     failures+=("research-scaffold — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
     fail=$((fail + 1))
 else
     created_files+=("meta/research/__smoke-doc-gov.yaml")
-    artifact_out="$(python3 scripts/validate-research.py meta/research/__smoke-doc-gov.yaml --quiet 2>&1)"
+    artifact_out="$(python3 scripts/build/validate-research.py meta/research/__smoke-doc-gov.yaml --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research artifact — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -144,7 +144,7 @@ fi
 # derivative fixture surfaces the validate-research warn for empty
 # media_versioning + derivation_of set (non-blocking signal).
 for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/__smoke-media-audio" "media/__smoke-media-imagery" "media/__smoke-media-deriv"; do
-    artifact_out="$(python3 scripts/research-scaffold.py --target "$m_target" 2>&1)"
+    artifact_out="$(python3 scripts/build/research-scaffold.py --target "$m_target" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $m_target — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
@@ -153,7 +153,7 @@ for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/_
     fi
     m_slug="${m_target##*/}"
     created_files+=("meta/research/$m_slug.yaml")
-    artifact_out="$(python3 scripts/validate-research.py "meta/research/$m_slug.yaml" --quiet 2>&1)"
+    artifact_out="$(python3 scripts/build/validate-research.py "meta/research/$m_slug.yaml" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $m_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -162,7 +162,7 @@ for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/_
         pass=$((pass + 1))
     fi
     # Exercise the renderer pipeline
-    artifact_out="$(python3 scripts/build-from-research.py "meta/research/$m_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build/build-from-research.py "meta/research/$m_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("build-from-research $m_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -170,7 +170,7 @@ for m_target in "media/__smoke-media-photo" "media/__smoke-media-video" "media/_
     else
         pass=$((pass + 1))
     fi
-    artifact_out="$(python3 scripts/review-coverage.py "meta/research/$m_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build/review-coverage.py "meta/research/$m_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("review-coverage $m_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -186,7 +186,7 @@ done
 # / quotes / speakers / entities_referenced / naming_quirks. A clean
 # validate pass on an empty scaffold is the pass criterion.
 for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-other"; do
-    artifact_out="$(python3 scripts/research-scaffold.py --target "$tk_target" 2>&1)"
+    artifact_out="$(python3 scripts/build/research-scaffold.py --target "$tk_target" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $tk_target — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
@@ -195,7 +195,7 @@ for tk_target in "transcripts/__smoke-trans-hearing" "transcripts/__smoke-trans-
     fi
     tk_slug="${tk_target##*/}"
     created_files+=("meta/research/$tk_slug.yaml")
-    artifact_out="$(python3 scripts/validate-research.py "meta/research/$tk_slug.yaml" --quiet 2>&1)"
+    artifact_out="$(python3 scripts/build/validate-research.py "meta/research/$tk_slug.yaml" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $tk_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -214,7 +214,7 @@ done
 # {display_name}-Scope Activity + Relationships with Confirmed /
 # Flagged split.
 for loc_target in "locations/__smoke-location"; do
-    artifact_out="$(python3 scripts/research-scaffold.py --target "$loc_target" 2>&1)"
+    artifact_out="$(python3 scripts/build/research-scaffold.py --target "$loc_target" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $loc_target — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
@@ -223,7 +223,7 @@ for loc_target in "locations/__smoke-location"; do
     fi
     loc_slug="${loc_target##*/}"
     created_files+=("meta/research/$loc_slug.yaml")
-    artifact_out="$(python3 scripts/validate-research.py "meta/research/$loc_slug.yaml" --quiet 2>&1)"
+    artifact_out="$(python3 scripts/build/validate-research.py "meta/research/$loc_slug.yaml" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $loc_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -232,7 +232,7 @@ for loc_target in "locations/__smoke-location"; do
         pass=$((pass + 1))
     fi
     # Exercise the renderer pipeline
-    artifact_out="$(python3 scripts/build-from-research.py "meta/research/$loc_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build/build-from-research.py "meta/research/$loc_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("build-from-research $loc_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -240,7 +240,7 @@ for loc_target in "locations/__smoke-location"; do
     else
         pass=$((pass + 1))
     fi
-    artifact_out="$(python3 scripts/review-coverage.py "meta/research/$loc_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build/review-coverage.py "meta/research/$loc_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("review-coverage $loc_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -260,7 +260,7 @@ done
 # kinds emit Overview / Key Personnel (with leadership_class
 # sub-grouping) / Key Passages / Relationships.
 for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-contractor" "organizations/__smoke-org-private"; do
-    artifact_out="$(python3 scripts/research-scaffold.py --target "$ok_target" 2>&1)"
+    artifact_out="$(python3 scripts/build/research-scaffold.py --target "$ok_target" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $ok_target — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
@@ -269,7 +269,7 @@ for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-cont
     fi
     ok_slug="${ok_target##*/}"
     created_files+=("meta/research/$ok_slug.yaml")
-    artifact_out="$(python3 scripts/validate-research.py "meta/research/$ok_slug.yaml" --quiet 2>&1)"
+    artifact_out="$(python3 scripts/build/validate-research.py "meta/research/$ok_slug.yaml" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $ok_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -278,7 +278,7 @@ for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-cont
         pass=$((pass + 1))
     fi
     # Exercise the renderer pipeline
-    artifact_out="$(python3 scripts/build-from-research.py "meta/research/$ok_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build/build-from-research.py "meta/research/$ok_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("build-from-research $ok_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -286,7 +286,7 @@ for ok_target in "organizations/__smoke-org-gov" "organizations/__smoke-org-cont
     else
         pass=$((pass + 1))
     fi
-    artifact_out="$(python3 scripts/review-coverage.py "meta/research/$ok_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build/review-coverage.py "meta/research/$ok_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("review-coverage $ok_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -305,7 +305,7 @@ done
 # enforces type-conditional presence; renderer pipeline exercises the
 # finding + investigation body composition.
 for syn_target in "findings/__smoke-finding" "investigations/__smoke-investigation"; do
-    artifact_out="$(python3 scripts/research-scaffold.py --target "$syn_target" 2>&1)"
+    artifact_out="$(python3 scripts/build/research-scaffold.py --target "$syn_target" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $syn_target — failed (rc=$rc): $(echo "$artifact_out" | head -1)")
@@ -314,7 +314,7 @@ for syn_target in "findings/__smoke-finding" "investigations/__smoke-investigati
     fi
     syn_slug="${syn_target##*/}"
     created_files+=("meta/research/$syn_slug.yaml")
-    artifact_out="$(python3 scripts/validate-research.py "meta/research/$syn_slug.yaml" --quiet 2>&1)"
+    artifact_out="$(python3 scripts/build/validate-research.py "meta/research/$syn_slug.yaml" --quiet 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("research-scaffold $syn_target — validate-research.py failed: $(echo "$artifact_out" | grep ERROR | head -2)")
@@ -323,7 +323,7 @@ for syn_target in "findings/__smoke-finding" "investigations/__smoke-investigati
         pass=$((pass + 1))
     fi
     # Exercise the renderer pipeline
-    artifact_out="$(python3 scripts/build-from-research.py "meta/research/$syn_slug.yaml" 2>&1)"
+    artifact_out="$(python3 scripts/build/build-from-research.py "meta/research/$syn_slug.yaml" 2>&1)"
     rc=$?
     if [ "$rc" -ne 0 ]; then
         failures+=("build-from-research $syn_target — failed: $(echo "$artifact_out" | grep ERROR | head -2)")
