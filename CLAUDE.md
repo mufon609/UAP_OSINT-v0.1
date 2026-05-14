@@ -107,8 +107,9 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 
 - `/locations/skinwalker-ranch` — active
 
-### Findings (1)
+### Findings (2)
 
+- `/findings/lacatski-authorship-chain` — in-progress
 - `/findings/pax-river-scif-fiscal-triangulation` — in-progress
 
 ### Investigations (1)

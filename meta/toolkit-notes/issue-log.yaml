@@ -7354,3 +7354,96 @@
     description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
   tokens: [involves]
 
+- ts: 2026-05-14T00:23:12Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lacatski-authorship-chain.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 10 significant token(s) not in source (prose-drift check — contributor review): 2011, date, dopsr-clearance, entered, establishes, identifies, named, names, … (+2 more — pass --verbose for full list)
+  tokens: [2011, date, dopsr-clearance, entered, establishes, identifies, named, names, proposer, quotes]
+
+- ts: 2026-05-14T00:24:53Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lacatski-authorship-chain.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 5 significant token(s) not in source (prose-drift check — contributor review): confirming, identify, reproduced, signed, supplemental
+  tokens: [confirming, identify, reproduced, signed, supplemental]
+
+- ts: 2026-05-14T00:27:37Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: findings/lacatski-authorship-chain.md
+  node_type: finding
+  severity: error
+  message: |
+    Quote at line 28 NOT FOUND in sources/government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf: "CLEARED For Open Publication Sep 06, 2023 Department of Defense OFFICE OF PREPUB..."
+
+- ts: 2026-05-14T00:32:24Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: findings/lacatski-authorship-chain.md
+  node_type: finding
+  severity: error
+  message: |
+    Quote at line 28 NOT FOUND in sources/government/docs-house-gov-hhrg-118-go12-20241113-sd004.pdf: "CLEARED For Open Publication Sep 06, 2023 Department of Defense OFFICE OF PREPUB..."
+
+- ts: 2026-05-14T00:34:11Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lacatski-authorship-chain.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e6' ('Bigelow Aerospace') wrap_path '/organizations/bigelow-aerospace' does not appear as a [`/organizations/bigelow-aerospace`] link in the node
+
+- ts: 2026-05-14T00:34:11Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lacatski-authorship-chain.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('SD004 — House Oversight UAP hearing supplemental document, 2024-11-13') wrap_path '/documents/docs-house-gov-hhrg-118-go12-20241113-sd004' does not appear as a [`/documents/docs-house-gov-hhrg-118-go12-20241113-sd004`] link in the node
+
+- ts: 2026-05-14T00:34:11Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lacatski-authorship-chain.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e10' ('Elizondo QFR Response to Burlison (2024-12-19)') wrap_path '/documents/elizondo-qfr-burlison-20241219' does not appear as a [`/documents/elizondo-qfr-burlison-20241219`] link in the node
+
+- ts: 2026-05-14T00:34:11Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/lacatski-authorship-chain.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token "authorized the release of a statement by Dr. James Lacatski, the former Director of the Advanced Aerospace Weapon System Application Program ('AAWSAP')" not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-14T00:36:28Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+
