@@ -102,13 +102,9 @@ created: {{today}}
 |  |  |  |  |
 
 <!-- Cross-reference surface — one row per hearing witness pointing at
-     their transcript and written-testimony nodes. Replaces the prior
-     "What The Hearing Established" synthesis section, which was
-     collapsed under the statements-only discipline (same treatment as
-     the news/book collapse in the source-taxonomy consolidation). The
-     evidentiary record of what a witness said is now resolved by
-     following the transcript / document links — no contributor-prose
-     summary layer. -->
+     their transcript and written-testimony nodes. The evidentiary
+     record of what a witness said is resolved by following the
+     transcript / document links — no contributor-prose summary layer. -->
 
 ---
 <!-- /KIND -->

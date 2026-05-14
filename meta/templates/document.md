@@ -55,9 +55,9 @@ archival_status: {{archival_status}}
 
 <!-- Author info for document nodes lives in document_intrinsic.authors_per_document
      on the research artifact and renders as the Author row in Document Summary.
-     No separate Authors section needed — the D.5 pilot confirmed the redundancy.
-     Applies to all document kinds and doc_forms (gov-doc technical reports
-     and testimony; non-gov-doc article, book, social-post, filing, etc). -->
+     No separate Authors section needed. Applies to all document kinds
+     and doc_forms (gov-doc technical reports and testimony; non-gov-doc
+     article, book, social-post, filing, etc). -->
 
 <!-- Document nodes have no "What This Establishes" synthesis section by
      design. The document IS the fact record. Evidentiary content is

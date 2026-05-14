@@ -76,10 +76,10 @@ created: {{today}}
      but does not yet cross-check block-quote statement order.
 
      Entry shape: a markdown blockquote with the verbatim passage,
-     then a 3-row verification table with fields
-       Attributed to | Source | Verified.
-     Source field uses backtick-bracket node links, e.g.
-     `[`/transcripts/some-node`]` or `[`/documents/some-node`]`. See
+     then a 3-row verification table with rows
+       Attributed to / Source / Location.
+     Source field renders as a markdown link to the archived source
+     (e.g., `[archived source](../sources/government/some.pdf)`). See
      prompts/build.md (Step 6 — quotes discipline) for the canonical
      shape. -->
 

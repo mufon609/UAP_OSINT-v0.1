@@ -17,7 +17,8 @@ created: {{today}}
        gov (agency/office): internal_name, full_name, statutory_authority,
                  established_date, terminated_date,
                  parent_organization_path, current_director_path,
-                 office_type, jurisdiction
+                 head_title (optional opt-in label override for
+                 current_director_path), office_type, jurisdiction
        gov (military-unit): designator, unit_class, parent_unit_path,
                  home_station, commissioned_date, decommissioned_date,
                  mission
