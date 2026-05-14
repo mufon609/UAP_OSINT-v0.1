@@ -485,7 +485,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | Fleer | FLIR | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription error for 'FLIR' (Forward-Looking Infrared) in Sprague podcast. |
 | ROC | NROTC | transcripts/linda-hall-uap-scientific-context-2025-downloaded.md | YouTube auto-caption transcription error for 'NROTC' (Naval Reserve Officers Training Corps) in Linda Hall panel. |
 | turning water | roiling water / churning water | transcripts/somewhere-in-the-skies-dietrich-2024-downloaded.md | YouTube auto-caption transcription error for 'churning water' or 'roiling water' (the white water disturbance Dietrich saw); appears as 'turning water' (line 479) and 'roing water' (line 484) in the same passage. |
-| fraver | Fravor | transcripts/american-veterans-center-dietrich-2024-downloaded.md | YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver"). Same caption-artifact pattern as nq2 (somewhere-in-the-skies source); registered separately because naming_quirks entries anchor to a specific source_path. Surfaced during BACKLOG A2 Tier 3 audit, 2026-05-13. |
+| fraver | Fravor | transcripts/american-veterans-center-dietrich-2024-downloaded.md | YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver"). Same caption-artifact pattern as nq2 (somewhere-in-the-skies source); registered separately because naming_quirks entries anchor to a specific source_path. |
 
 ---
 

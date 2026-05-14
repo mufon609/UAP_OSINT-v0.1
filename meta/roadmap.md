@@ -69,20 +69,19 @@ the claims layer itself. A contributor-synthesis layer between source
 and reader is an unavoidable drift surface while the layer exists.
 
 Correction shipped in two waves:
-- **Wave 1 (Post-Step D, 2026-04):** document nodes lose their claims
-  layer; evidentiary content is verbatim Key Passages only.
-- **Wave 2 (2026-04-21):** the `claims[]` shape is eliminated repo-
-  wide. `quotes[]` becomes the universal evidentiary primitive
-  across all node types. Every rendered "claim-like" surface is a
-  filtered view of `quotes[]` (Claim Inventory on whistleblowers =
-  quotes tagged `filed-claim`; Key Testimony on hearings = quotes
-  sorted by date; Key Passages elsewhere = all quotes).
+- **Wave 1:** document nodes lose their claims layer; evidentiary
+  content is verbatim Key Passages only.
+- **Wave 2:** the `claims[]` shape is eliminated repo-wide. `quotes[]`
+  becomes the universal evidentiary primitive across all node types.
+  Every rendered "claim-like" surface is a filtered view of `quotes[]`
+  (Claim Inventory on whistleblowers = quotes tagged `filed-claim`;
+  Key Testimony on hearings = quotes sorted by date; Key Passages
+  elsewhere = all quotes).
 
 Cross-entity synthesis (patterns spanning 3+ nodes) goes on finding
-nodes (F.7) — a node-level structure, not an artifact-level data
-layer.
+nodes — a node-level structure, not an artifact-level data layer.
 
-### Source-taxonomy partition (Post-Step D, 2026-04)
+### Source-taxonomy partition
 
 `news` and `book` were separate node types carrying their own
 contributor-synthesis sections (same drift surface as claims). Plus:
@@ -103,18 +102,17 @@ new `media` type with four kinds (photo, video, audio, imagery-other);
 `transcript.kind: interview` → `other` to cover podcasts / press
 conferences / documentaries.
 
-### Material Differences eliminated from hearing transcripts (Post-F.3, 2026-04-20)
+### Material Differences eliminated from hearing transcripts
 
 Hearing transcripts initially carried a per-divergence Material
 Differences table comparing oral vs companion written testimony.
 Cross-entity comparison between a transcript and its companion
 document is synthesis — belongs on a finding node, not on either
 primary record. Feature removed after the second pilot; cross-artifact
-resolver machinery went with it. F.7 finding nodes (shipped 2026-05-13)
-cite primary sources directly via `source_entry` (`finding_path` /
-`entity_path` + `anchor`); broader cross-artifact propagation
-(`corroborated_by` / `superseded_by` resolution across artifacts)
-remains deferred to E.3.
+resolver machinery went with it. Finding nodes now cite primary
+sources directly via `source_entry` (`finding_path` / `entity_path`
++ `anchor`); broader cross-artifact propagation (`corroborated_by` /
+`superseded_by` resolution across artifacts) remains deferred to E.3.
 
 ### Iteration log eliminated (2026-04-21)
 

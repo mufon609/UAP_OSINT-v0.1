@@ -71,11 +71,9 @@ created: {{today}}
 
      Both subsections list entries in chronological order by the date in
      each statement's verification block — earliest first. The Phase II
-     person renderer (F.1b) sorts mechanically at build time; hand-
-     authored nodes should manually order by date until the renderer
-     ships. The chronological-ordering check enforces table-row ordering universally but does
-     not yet cross-check block-quote statement order (tracked in
-     BACKLOG).
+     person renderer sorts mechanically at build time. The
+     chronological-ordering check enforces table-row ordering universally
+     but does not yet cross-check block-quote statement order.
 
      Entry shape: a markdown blockquote with the verbatim passage,
      then a 3-row verification table with fields

@@ -426,8 +426,8 @@ discipline at the `significance` field.
 
 ### Hearing events as venues
 
-An event is a venue, not a speaker. F.2a collapsed the prior `What The
-Hearing Established` synthesis section into `Witnesses & Testimony`,
+An event is a venue, not a speaker. The prior `What The Hearing
+Established` synthesis section is collapsed into `Witnesses & Testimony`,
 a cross-reference table pointing at each witness's transcript and
 written-testimony nodes. What a hearing "established" is the verbatim
 record those linked nodes carry; the event node navigates to them
@@ -459,9 +459,9 @@ synthesis content notes (`ownership_timeline.note`,
 `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
 `media_versioning.note`, `vouching_chain.attestation`). These are
 labeled synthesis — they exist to frame the evidentiary content — but
-the F.1c Fravor audit (2026-04-19) surfaced a real failure mode where
-contributor prose introduces unstated premises, paraphrase drift, and
-content widening even when every referenced quote is verbatim-clean.
+contributor prose introduces a real failure mode: unstated premises,
+paraphrase drift, and content widening even when every referenced
+quote is verbatim-clean.
 
 `validate-research.py`'s prose-drift check verifies
 that significant words in these prose fields appear in the referenced

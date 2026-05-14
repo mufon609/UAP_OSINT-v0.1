@@ -132,8 +132,9 @@ types:
   # --- ORGANIZATION -------------------------------------------------------
   # Under the statements-only discipline, orgs don't speak — officials
   # speak for them. The previous `What Is Confirmed` section was
-  # contributor-prose synthesis anchored to sources; F.5 removed it
-  # across all three kinds. Factual content about the org flows through:
+  # contributor-prose synthesis anchored to sources; the renderer
+  # redesign removed it across all three kinds. Factual content about
+  # the org flows through:
   #   - Key Passages — verbatim excerpts from primary sources ABOUT the
   #     org (establishment press releases, statutory authority, director
   #     announcements, IG findings). Parallels document Key Passages but
@@ -268,11 +269,11 @@ types:
   # point tying those nodes together.
   #
   # Hearings previously carried `What The Hearing Established` as a
-  # contributor-prose synthesis section. F.2a collapses that into
+  # contributor-prose synthesis section. That collapses into
   # `Witnesses & Testimony` — a cross-reference table (witness → oath
   # status → transcript/document nodes) with no synthesis prose.
   # Parallel to the news/book `What The Article Established` collapse
-  # that shipped in the post-Step-D source-taxonomy consolidation.
+  # that shipped in the source-taxonomy consolidation.
   event:
     path: events
     status_values: [documented, in-progress]
@@ -324,9 +325,9 @@ types:
       #
       #   Hearing transcripts use
       #   context_extrinsic.companion_written_testimony for the
-      #   cross-reference to their companion written testimony (per F.3c
-      #   D3, 2026-04-19). Those are independent primary records of the
-      #   same event, not derivations.
+      #   cross-reference to their companion written testimony.
+      #   Those are independent primary records of the same event,
+      #   not derivations.
     kinds:
       hearing:
         description: "Verbatim record of a formal proceeding — congressional hearing, deposition. Written-vs-oral divergence analysis (when it applies) belongs on a finding node, not on the transcript."
@@ -655,8 +656,8 @@ types:
       #   person, Key Testimony on hearings, Key Passages elsewhere). No
       #   separate `claims[]` layer — a contributor-synthesized claim layer
       #   created a drift surface that mechanical checks couldn't catch;
-      #   eliminated repo-wide 2026-04-21. Cross-entity synthesis goes on
-      #   finding nodes (F.7).
+      #   eliminated repo-wide. Cross-entity synthesis goes on finding
+      #   nodes.
       - entities_referenced   # list — every named person/org/event/doc/location
       - naming_quirks         # list — source-specific oddities (typos, alt spellings)
     # Audit trail / history: git log and git diff on the artifact file

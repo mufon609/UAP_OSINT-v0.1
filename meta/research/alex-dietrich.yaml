@@ -1217,7 +1217,7 @@ naming_quirks:
   location: transcripts/american-veterans-center-dietrich-2024-downloaded.md
   source_path: transcripts/american-veterans-center-dietrich-2024-downloaded.md
   resolution: preserve-as-sic-in-quotes
-  note: YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver"). Same caption-artifact pattern as nq2 (somewhere-in-the-skies source); registered separately because naming_quirks entries anchor to a specific source_path. Surfaced during BACKLOG A2 Tier 3 audit, 2026-05-13.
+  note: YouTube auto-caption typo of "Fravor" as "fraver" on the American Veterans Center transcript (q38 context "Commander David fraver"). Same caption-artifact pattern as nq2 (somewhere-in-the-skies source); registered separately because naming_quirks entries anchor to a specific source_path.
 rumors:
 - id: rm1
   added_date: '2026-04-21'

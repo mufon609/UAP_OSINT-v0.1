@@ -597,7 +597,7 @@ naming_quirks:
     location: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
     source_path: 'transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt'
     resolution: preserve-as-sic-in-quotes
-    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''put off'' in q11 (2018 Lucis Trust talk: ''dr hal put off as a physicist''). A fourth auto-caption variant of Puthoff on this same source — see also nq4 (''pothos''), nq5 (per james-ryder.yaml nq5), and nq6 (''thought of''). Surfaced during BACKLOG A2 Tier 3 audit, 2026-05-13.'
+    note: 'YouTube auto-caption rendering of ''Puthoff'' as ''put off'' in q11 (2018 Lucis Trust talk: ''dr hal put off as a physicist''). A fourth auto-caption variant of Puthoff on this same source — see also nq4 (''pothos''), nq5 (per james-ryder.yaml nq5), and nq6 (''thought of'').'
 rumors: []
 timeline:
   - id: t1

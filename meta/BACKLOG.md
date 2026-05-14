@@ -49,8 +49,8 @@ stable substrate to ship against.
 
 ### A3. Person-node Statements section — three reader-visibility problems on one data-model decision
 
-Replaces former #13, #14, #16. The Statements section on a person node
-renders every quote attributed to that person, sorted chronologically.
+The Statements section on a person node renders every quote attributed
+to that person, sorted chronologically.
 Three problems surface here; they're tied together because the
 data-model decision in Problem 3 shapes how Problems 1 and 2 should
 be fixed.
