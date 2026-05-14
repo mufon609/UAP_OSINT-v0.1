@@ -25,10 +25,10 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    confirmed quotes — confirmation is a precondition for inclusion,
    enforced by the validator, not displayed to the reader. See
    `meta/conventions.md`.
-3. **Prose-drift check** — for artifacts of
-   renderer-supported types (document, person, event, transcript,
-   media, organization, location), re-run `validate-research.py
-   {artifact}` and work through the prose-drift warning set. Under the durable policy
+3. **Prose-drift check** — for all artifact types (document, person,
+   event, transcript, media, organization, location, finding,
+   investigation), re-run `validate-research.py {artifact}` and work
+   through the prose-drift warning set. Under the durable policy
    (`feedback_prose_drift_warnings_must_resolve.md`):
    - **Free-prose synthesis fields** (`description`, `background`,
      `top_relevance`, `credibility_notes`) and **per-entry synthesis
@@ -51,12 +51,12 @@ The audit target is: **{PATH}**  (ask the user if not specified)
    primary-source evidence. Reclassify if wrong.
 5. **Section requirements** — run `python3 scripts/validate.py {path}`
    and fix any errors.
-6. **Coverage / Boundary / Stub-linking / Description-drift** — for
-   renderer-supported types, run `python3 scripts/review-coverage.py
-   meta/research/{slug}.yaml`. Any Boundary failure means the node was
-   hand-edited after regeneration (or the artifact drifted). Fix in
-   the **artifact**; regenerate via `build-from-research.py`; never
-   hand-patch the node to silence the check.
+6. **Coverage / Boundary / Stub-linking / Description-drift** — run
+   `python3 scripts/review-coverage.py meta/research/{slug}.yaml`. Any
+   Boundary failure means the node was hand-edited after regeneration
+   (or the artifact drifted). Fix in the **artifact**; regenerate via
+   `build-from-research.py`; never hand-patch the node to silence the
+   check.
 7. **Associated Nodes freshness** — run
    `python3 scripts/associate.py {path}` to regenerate.
 8. **Cross-node consistency** — check that claims in this node agree

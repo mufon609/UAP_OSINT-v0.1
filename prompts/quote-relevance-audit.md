@@ -25,8 +25,7 @@ entity?*
 
 Especially relevant on **PA-spokesperson institutional-actor nodes**,
 where the speaker's role is structurally to speak FOR the institution
-ABOUT other people / programs / events. See
-`feedback_quote_relevance_load_bearing.md`.
+ABOUT other people / programs / events.
 
 ---
 
@@ -174,8 +173,6 @@ mechanical checks cannot evaluate.
 
 ## Related memories and prompts
 
-- `feedback_quote_relevance_load_bearing.md` — the durable policy this
-  prompt operationalizes
 - `feedback_no_count_targets.md` — source drives density (no quantitative
   target — but also no over-extraction)
 - `feedback_source_priority_hierarchy.md` — subject's own words rank
