@@ -11,10 +11,9 @@ auditing, or rebuilding existing nodes; for those tasks see
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
 
-**Phase II scope:** `build-from-research.py` supports **document,
-person, event, transcript, media, organization, and location** node
-types end-to-end. Only `finding` remains hand-authored pending F.7
-(tracked in `meta/roadmap.md`).
+**Phase II scope:** `build-from-research.py` supports **all nine node
+types** end-to-end — document, person, event, transcript, media,
+organization, location, finding, and investigation.
 
 ---
 
@@ -478,11 +477,8 @@ Deterministic transformation from research artifact → populated node
 body. No creative writing in Phase II. Every line in the node body
 traces to a research-artifact entry.
 
-**Scope:** document, person, event, transcript, media, organization,
-and location node types. Only `finding` remains hand-authored —
-follow `meta/conventions.md` and draw exclusively from the populated
-research artifact. Renderer extension tracked in
-`meta/roadmap.md` (F.7).
+**Scope:** all nine node types — document, person, event, transcript,
+media, organization, location, finding, and investigation.
 
 ### Step 1. Regenerate the node from its research artifact
 
@@ -753,19 +749,6 @@ node surfaces no semantic issues. Ready to commit.
    or changes the status of a node (refreshes the CLAUDE.md build-state block)
 7. Commit the research artifact + regenerated node + any manifest
    changes in one focused commit (one *new* node per session — hard rule)
-
-### Pending-renderer type (finding)
-
-Until the F.7 renderer ships:
-
-1. `validate-research.py` passes on the populated artifact
-2. Hand-author the node body per `meta/conventions.md`, drawing
-   exclusively from artifact entries (no training-knowledge claims)
-3. `validate.py` passes; run `associate.py` to regenerate Associated Nodes
-4. Run `bash scripts/tests/pre-commit.sh` — all eight gates green before commit
-
-`review-coverage.py` currently skips finding artifacts with a notice;
-full coverage review unlocks when the F.7 renderer lands.
 
 ---
 

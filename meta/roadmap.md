@@ -19,47 +19,6 @@ when.
 
 ## Active work
 
-### F.7 — synthesis-layer node types: finding + investigation  ⏳ PENDING
-
-Scope decision 2026-05-13: synthesis splits into two new types rather
-than one redefined `finding`. Both consume entity-node facts; neither
-restructures the existing entity-node layer.
-
-**Finding** — a pattern that becomes visible only by reading multiple
-primary sources together. No single source attests the pattern; the
-synthesis-of-reading-together produces information not present in any
-constituent attestation. Distinguished from a fact (single attestation,
-lives on entity nodes). Findings duplicate primary-source content from
-entity nodes by design — if a finding cites something the relevant
-entity node doesn't yet attest, the entity node is updated (primary
-source confirmed + archived) before the finding can use it. Findings
-do not reference the investigations that produced them.
-
-**Investigation** — an open-ended question or hypothesis, speculation-
-tolerant. Evaluates hypotheses against the primary-source record by
-consuming findings + entity-node facts. Investigations link to and
-summarize findings; findings do not link back. Investigations build
-cases — proving, disproving, or further pursuing the question.
-
-**Entity nodes** — unchanged at scope level. Carry facts including
-load-bearing cross-entity facts (single-source attestations that name
-other entities). `## Associated Nodes`, structural cross-references,
-and prose-section cross-references stay. What entity nodes do NOT
-carry: findings (multi-source patterns) or hypothesis-tolerant
-analysis (investigations).
-
-**Structure deferred.** Section shape, frontmatter, status
-vocabularies, and renderer dispatch all to be decided in a separate
-design pass.
-
-Scope validated via exploratory walk through "does Lockheed Martin
-own/house UAP material?" (2026-05-13) — four multi-source convergence
-patterns (findings) and two single-source attestations (facts) fell
-out cleanly.
-
-No pilot candidate yet — will emerge from cross-entity patterns
-observed during Step G content population.
-
 ### Step G — Content population  🟡 IN PROGRESS
 
 Interleaves with F sub-phases — each phase pilot is a G node;
@@ -151,8 +110,11 @@ Differences table comparing oral vs companion written testimony.
 Cross-entity comparison between a transcript and its companion
 document is synthesis — belongs on a finding node, not on either
 primary record. Feature removed after the second pilot; cross-artifact
-resolver machinery went with it. Rebuild when F.7 needs cross-artifact
-refs under finding-node design discipline.
+resolver machinery went with it. F.7 finding nodes (shipped 2026-05-13)
+cite primary sources directly via `source_entry` (`finding_path` /
+`entity_path` + `anchor`); broader cross-artifact propagation
+(`corroborated_by` / `superseded_by` resolution across artifacts)
+remains deferred to E.3.
 
 ### Iteration log eliminated (2026-04-21)
 
@@ -243,6 +205,7 @@ so a contributor can recognize what the phase produced.
 | F.4 — media renderer | ✅ 2026-04-20 | photo/video/audio/imagery-other kinds; FLIR1 pilot; Media Versioning conditional on `derivation_of` |
 | F.5 — organization renderer | ✅ 2026-04-20 | gov/gov-contractor/private kinds; AARO pilot; Key Personnel with leadership_class sub-grouping; Primary Contracts (gov-contractor only) |
 | F.6 — location renderer | ✅ 2026-04-20 | non-institutional site type; Skinwalker Ranch pilot; ownership_timeline / uap_scope_activity / location_relationships conditional sections |
+| F.7 — synthesis-layer node types | ✅ 2026-05-13 | finding + investigation types — schema + templates + renderer + validators (`finding_no_investigation_refs` directional contract; `investigation_hypothesis_citation` discipline; speculation-tolerant investigation prose out of prose-drift scope); Lockheed Martin investigation pilot cluster (1 investigation + 4 findings). See `meta/conventions.md` "Three-layer evidentiary architecture" for the fact / finding / investigation bright line. |
 
 ---
 

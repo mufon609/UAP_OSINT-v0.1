@@ -41,10 +41,11 @@ externally-blocked item ever surfaces (rare), reinstate the
 
 ## A. Priority sequence
 
-Items with ordering or coupling constraints. A3 is coupled to
-roadmap F.7 (finding renderer); A4 pairs with F.7. Pick up in
-this order; do not skip ahead without the upstream piece in
-place.
+Items with ordering or coupling constraints. A3 carries person-node
+Statements polish work that was gated on the F.7 finding/investigation
+data-model decision; F.7 shipped 2026-05-13 picking Path A (each
+artifact owns its own quotes), so A3 Problems 1 and 2 now have a
+stable substrate to ship against.
 
 ### A3. Person-node Statements section — three reader-visibility problems on one data-model decision
 
@@ -124,13 +125,12 @@ paths:
   useful but their shape may shift (Q&A handling moves to the source
   artifact, not the person view of it).
 
-**F.7 dependency.** A finding node citing a quote needs a stable
-reference. On the duplicated model, `q66@david-grusch` and
-`q53@2023-07-26-house-grusch` resolve to the same source passage — a
-finding has to pick one arbitrarily. F.7 (finding renderer, pending
-in roadmap) forces this question regardless of person-node bulk
-considerations. The data-model decision should land before or with
-F.7.
+**F.7 outcome.** F.7 shipped 2026-05-13 picking Path A — findings cite
+primary sources directly via `source_entry` (`finding_path` /
+`entity_path` + `anchor`), not entity-node quotes. The cross-artifact
+resolver question (Path B) is back in E.3 deferred. A3 Problems 1
+and 2 (tier labels, Q&A handling) now ship cleanly against the
+duplicated model.
 
 **Lighter alternative if Path A wins.** Add a navigation affordance —
 TOC jump-links at the top of nodes ≥500 lines, or collapsible
