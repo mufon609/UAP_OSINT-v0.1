@@ -46,19 +46,19 @@ cited_findings:
   added_date: '2026-05-13'
   finding_path: /findings/lacatski-authorship-chain
   pattern_statement: 'Three-source attestation chain (SD004 anonymous page-1 statement + Elizondo QFR Q1 naming Lacatski as the author + entry into House Oversight hearing record) establishing James Lacatski as the author of the DOPSR-cleared (2023-09-06) statement that named Ryder.'
-  relevance: 'Establishes the chain-of-custody for the original allegation document — who authored, when it cleared DOPSR, and how it entered the public record. Grounds H1 (the allegation is on the record at primary-source level) and H0 (the chain spans named officials with direct access, not anonymous claims). Finding not yet built; cited as broken-link build candidate.'
+  relevance: 'Establishes the chain-of-custody for the original allegation document — who authored, when it cleared DOPSR, and how it entered the public record. Grounds H1 (the allegation is on the record at primary-source level) and H0 (the chain spans named officials with direct access, not anonymous claims).'
 
 - id: cf3
   added_date: '2026-05-13'
   finding_path: /findings/lockheed-martin-non-denial-pattern
   pattern_statement: 'Three independent Liberation Times moments (2023-11, 2024-11-08, 2025-03-27) documenting Lockheed Martin''s consistent refusal to issue categorical denials when asked about possession of UAP / non-human material.'
-  relevance: 'Bears directly on H2 (current possession). Pattern over sixteen months of refusal to deny when given multiple opportunities to do so. Suggestive but not affirmative — refusing to deny is consistent with either continued custody or corporate-policy non-engagement with UAP allegations. Finding not yet built; cited as broken-link build candidate.'
+  relevance: 'Bears directly on H2 (current possession). Pattern over sixteen months of refusal to deny when given multiple opportunities to do so. Suggestive but not affirmative — refusing to deny is consistent with either continued custody or corporate-policy non-engagement with UAP allegations.'
 
 - id: cf4
   added_date: '2026-05-13'
   finding_path: /findings/aaro-denial-action-mismatch
   pattern_statement: 'AARO HRR Vol I institutional denial frame is structurally asymmetric with the Lockheed-Bigelow allegation chain — current-executive on-record statements about "ever recovered, possessed, or engaged in reverse-engineering" vs an alleged 2011 disapproved-transfer-proposal.'
-  relevance: 'Bears on H1 and H2. AARO''s finding is the most-cited institutional counter to the allegation chain, but addresses a different action than the allegation describes (ever-possessed vs disapproved-transfer-proposal) and rests on current-executive denials that do not reach the alleged 2011 timeframe. Finding not yet built; cited as broken-link build candidate.'
+  relevance: 'Bears on H1 and H2. AARO''s finding is the most-cited institutional counter to the allegation chain, but addresses a different action than the allegation describes (ever-possessed vs disapproved-transfer-proposal) and rests on current-executive denials that do not reach the alleged 2011 timeframe.'
 
 hypothesis_evaluation:
 
@@ -266,17 +266,17 @@ entities_referenced:
 - id: e18
   added_date: '2026-05-13'
   entity_type: finding
-  name: Lacatski Authorship Chain (build candidate)
+  name: Lacatski Authorship Chain
   wrap_path: /findings/lacatski-authorship-chain
 
 - id: e19
   added_date: '2026-05-13'
   entity_type: finding
-  name: Lockheed Martin Non-Denial Pattern (build candidate)
+  name: Lockheed Martin Non-Denial Pattern
   wrap_path: /findings/lockheed-martin-non-denial-pattern
 
 - id: e20
   added_date: '2026-05-13'
   entity_type: finding
-  name: AARO Denial / Allegation-Chain Action-Mismatch (build candidate)
+  name: AARO Denial / Allegation-Chain Action-Mismatch
   wrap_path: /findings/aaro-denial-action-mismatch

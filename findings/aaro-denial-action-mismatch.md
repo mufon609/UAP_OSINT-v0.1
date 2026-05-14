@@ -17,7 +17,7 @@ AARO HRR Vol I institutional denial frame addresses a different action-scope tha
 
 ## Description
 
-AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/aaro-hrr-vol-i-20240308`]) states: "AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology." The Executive Summary p. 8 records that "executives, scientists, and chief technology officers of the companies named by interviewees met with the Director of AARO and denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology", and that a named former CIA official "signed a memo rejecting a claim made by interviewees that he managed the movement of and experimentation on off-world technology". Luis Elizondo ([`/people/luis-elizondo`]) Question for the Record Question 6 to Rep. Eric Burlison ([`/people/eric-burlison`]) ([`/documents/elizondo-qfr-burlison-20241219`]) reads: "Yes. The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin ([`/organizations/lockheed-martin`]) to Bigelow Aerospace ([`/organizations/bigelow-aerospace`])." AARO's recorded actions — "ever recovered, possessed, or engaged in reverse-engineering" (executives) and "managed the movement of and experimentation on" (a former CIA official) — do not match the action Elizondo identified: a transfer the CIA "opposed".
+AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/aaro-historical-record-report-vol-i`]) states: "AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology." The Executive Summary p. 8 records that "executives, scientists, and chief technology officers of the companies named by interviewees met with the Director of AARO and denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology", and that a named former CIA official "signed a memo rejecting a claim made by interviewees that he managed the movement of and experimentation on off-world technology". Luis Elizondo ([`/people/luis-elizondo`]) Question for the Record Question 6 to Rep. Eric Burlison ([`/people/eric-burlison`]) ([`/documents/elizondo-qfr-burlison-20241219`]) reads: "Yes. The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin ([`/organizations/lockheed-martin`]) to Bigelow Aerospace ([`/organizations/bigelow-aerospace`])." AARO's recorded actions — "ever recovered, possessed, or engaged in reverse-engineering" (executives) and "managed the movement of and experimentation on" (a former CIA official) — do not match the action Elizondo identified: a transfer the CIA "opposed".
 
 ---
 
@@ -125,5 +125,5 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 
 ### Documents
 
-- [`/documents/aaro-hrr-vol-i-20240308`]
+- [`/documents/aaro-historical-record-report-vol-i`]
 - [`/documents/elizondo-qfr-burlison-20241219`]

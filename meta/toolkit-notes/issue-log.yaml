@@ -7612,3 +7612,14 @@
     description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
   tokens: [involves]
 
+- ts: 2026-05-14T02:27:45Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+
