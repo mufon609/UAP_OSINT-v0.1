@@ -91,7 +91,7 @@ If you're doing anything related to this instance's topic, read
 - Verbatim quotes must match source character-for-character; `validate.py` checks this mechanically.
 - Contradictions are preserved, not reconciled.
 - Sworn testimony is a distinct evidentiary fact from the truth of the claim testified to.
-- **One *new* node per build session.** Batch *construction* violates the discipline; see `meta/toolkit-notes/pilot-failure-2026-04-17.md` for the case that established this rule. The rule limits new-node scaffolding only — editing, auditing, fixing, or rebuilding existing nodes is unrestricted.
+- **One *new* node per build session.** Batch *construction* violates the discipline; the 2026-04-17 pilot failure is the case that established this rule. The rule limits new-node scaffolding only — editing, auditing, fixing, or rebuilding existing nodes is unrestricted.
 - Source-read-first: every node's content traces to a primary source file extracted and read *in the session the content was written*. Not training knowledge.
 
 ---

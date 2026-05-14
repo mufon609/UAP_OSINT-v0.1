@@ -31,12 +31,10 @@ behind each node. They capture:
   corroboration_items, program_involvement, vouching_chain, etc.)
 
 The narrative node at `{type}/{slug}.md` is a derived view of its
-artifact. For **renderer-supported types** (document, person, event,
-transcript, media, organization, location),
-`scripts/build-from-research.py` deterministically regenerates the
-narrative from the artifact (Phase II of the layered build process).
-Finding is the last remaining type; F.7 renderer design pass is open
-(see `meta/roadmap.md`).
+artifact. `scripts/build-from-research.py` deterministically regenerates
+the narrative from the artifact (Phase II of the layered build
+process) for all nine node types — document, person, event,
+transcript, media, organization, location, finding, and investigation.
 
 ## Conventions
 

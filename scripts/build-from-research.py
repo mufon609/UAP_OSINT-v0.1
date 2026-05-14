@@ -2168,7 +2168,7 @@ def render_body_location(artifact, fm):
 
 
 # =============================================================================
-# Finding renderer (F.7)
+# Finding renderer
 # =============================================================================
 
 def render_title_finding(artifact):
@@ -2367,7 +2367,7 @@ def render_body_finding(artifact, fm):
 
 
 # =============================================================================
-# Investigation renderer (F.7)
+# Investigation renderer
 # =============================================================================
 
 def render_title_investigation(artifact):

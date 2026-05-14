@@ -3,10 +3,9 @@
 Paste into a Claude Code session to build **one new node** under the
 layered Investigation → Build → Review process. **One *new* node per
 session** is the hard rule established after the 2026-04-17 pilot
-failure (see `meta/toolkit-notes/pilot-failure-2026-04-17.md`). The
-rule limits *new node construction* — it does not restrict editing,
-auditing, or rebuilding existing nodes; for those tasks see
-`prompts/audit.md` and the per-task prompts in `prompts/`.
+failure. The rule limits *new node construction* — it does not
+restrict editing, auditing, or rebuilding existing nodes; for those
+tasks see `prompts/audit.md` and the per-task prompts in `prompts/`.
 
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.

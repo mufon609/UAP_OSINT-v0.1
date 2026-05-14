@@ -231,7 +231,7 @@ _ARTIFACT_CHECKS = [
     ck_ownership_timeline,
     ck_top_scope_activity,
     ck_location_relationships,
-    # Finding / investigation per-section entry-shape checks (F.7)
+    # Finding / investigation per-section entry-shape checks
     ck_establishes,
     ck_does_not_establish,
     ck_contradictions,
@@ -240,7 +240,7 @@ _ARTIFACT_CHECKS = [
     ck_open_questions,
     ck_closure_path,
     ck_resolution_history,
-    # Finding / investigation type-specific cross-cutting checks (F.7)
+    # Finding / investigation type-specific cross-cutting checks
     ck_finding_no_investigation_refs,
     ck_investigation_hypothesis_citation,
     ck_investigation_closure_path_when_paused,

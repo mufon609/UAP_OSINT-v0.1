@@ -13,9 +13,9 @@ doing anything:
 3. Read `meta/conventions.md` — the evidentiary discipline.
 4. Read `meta/schema.yaml` — the machine-readable spec for node types,
    required sections, vocabularies, research-artifact shape.
-5. Read `meta/roadmap.md` — active work (F.7 finding
-   renderer pending; Step G content population in progress) +
-   architectural corrections that shape the current codebase.
+5. Read `meta/roadmap.md` — active work (Step G content population
+   in progress) + architectural corrections that shape the current
+   codebase.
 6. Read `meta/topic/research-queue.md` — current priority queue.
 7. Read `meta/BACKLOG.md` — deferred work items; note any active entries
    relevant to the session's planned task.

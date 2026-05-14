@@ -72,6 +72,7 @@ You do not have to decide the final node type — Claude CLI will. But naming a 
 - **media** — photo, video, audio, or other imagery
 - **location** — physical site
 - **finding** — cross-entity pattern spanning 3+ nodes
+- **investigation** — open-ended hypothesis evaluation consuming findings + entity-node facts
 
 ---
 
@@ -114,7 +115,7 @@ Output exactly one markdown file in this structure. No preamble, no closing rema
 # Handoff: [Target name or claim]
 
 ## Suggested node type
-[person | organization | document | event | transcript | media | location | finding]
+[person | organization | document | event | transcript | media | location | finding | investigation]
 
 ## Sub-classification
 [e.g., person/whistleblower; organization/gov-contractor; document/gov-doc; event/hearing]

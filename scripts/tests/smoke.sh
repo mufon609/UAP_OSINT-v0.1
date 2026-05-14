@@ -303,7 +303,7 @@ done
 # / counter_evidence / closure_path / resolution_history empty lists +
 # best_current_answer: {} on investigation artifacts. Validator
 # enforces type-conditional presence; renderer pipeline exercises the
-# F.7 finding + investigation body composition.
+# finding + investigation body composition.
 for syn_target in "findings/__smoke-finding" "investigations/__smoke-investigation"; do
     artifact_out="$(python3 scripts/research-scaffold.py --target "$syn_target" 2>&1)"
     rc=$?
