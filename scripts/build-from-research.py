@@ -381,13 +381,15 @@ def render_source_form_notes(artifact):
     in quote text and would otherwise read to a reader as contributor
     misspellings without explicit signal.
 
-    Returns empty string when no preserve-as-sic entries exist. Other
-    naming_quirks resolutions (use-canonical, disputed, unresolved) are
-    contributor-side metadata only and don't render here.
+    Returns empty string when no preserve-as-sic entries exist.
+    `disputed` resolutions render via render_preserved_disagreements
+    (parallel section); `use-canonical` and `unresolved` stay
+    contributor-side metadata only.
 
     Applies to every node type — naming_quirks is universal across
-    target types. See meta/conventions.md "Source-form preservation
-    discipline" for the reader-visibility rationale.
+    target types. See meta/conventions.md "Statements as the
+    universal evidentiary primitive" for the source-form preservation
+    rationale.
     """
     quirks = artifact.get("naming_quirks") or []
     preserved = [
