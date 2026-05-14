@@ -21,26 +21,11 @@ when.
 
 ### Step G — Content population  🟡 IN PROGRESS
 
-Interleaves with F sub-phases — each phase pilot is a G node;
-additional G nodes follow once the renderer is stable.
-
-**Current active clusters:**
-
-- **Cluster A — 2004 Nimitz encounter.** Event, Fravor person, Fravor
-  transcript, FLIR1 media, Dietrich person all built. Remaining:
-  Underwood (FLIR1 pilot / corroborator), Nimitz / Princeton / VFA-41
-  (orgs), and 19 Dietrich-interview stubs (CBS News + Whitaker + five
-  podcast orgs and hosts + Linda Hall + AVC + seven interview
-  transcripts).
-- **Cluster B — 2023-07-26 House Oversight hearing.** Complete.
-  Event + 3 transcripts + 3 written testimonies + 3 witness person
-  nodes all built.
-- **Cluster D — UAP oversight institutions.** AARO + UAPTF built.
-  Remaining: ONI (UAPTF parent), NIA (UAPTF Charter signer), Norquist
-  (DSD approver), Travis Taylor (informal Chief Scientist).
-
-G milestones are emergent, not pre-planned. `meta/topic/research-queue.md`
-drives additions after each cluster closes.
+Ongoing entity-node builds driven by the priority queue. Cluster
+status, build candidates, and per-node rationale live in
+`meta/topic/research-queue.md` (canonical); the auto-generated
+build-state block in `CLAUDE.md` is the authoritative count of what
+shipped.
 
 ### E.3 — Cross-node update propagation  ⏸ DEFERRED
 
