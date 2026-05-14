@@ -7550,3 +7550,65 @@
     description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
   tokens: [involves]
 
+- ts: 2026-05-14T02:11:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/aaro-denial-action-mismatch.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 10 significant token(s) not in source (prose-drift check — contributor review): bullet, cia-official, confirms, denies, describes, named-companies, possession-and-action, side, … (+2 more — pass --verbose for full list)
+  tokens: [bullet, cia-official, confirms, denies, describes, named-companies, possession-and-action, side, verbs, windows]
+
+- ts: 2026-05-14T02:15:04Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/aaro-denial-action-mismatch.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): AARO publishes Historical Record Report Volume I. Executive ...
+
+- ts: 2026-05-14T02:15:05Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/aaro-denial-action-mismatch.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Q6' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-14T02:15:40Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/aaro-denial-action-mismatch.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): AARO publishes Historical Record Report Volume I. Executive ...
+
+- ts: 2026-05-14T02:15:49Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/aaro-denial-action-mismatch.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): AARO publishes Historical Record Report Volume I. Executive ...
+
+- ts: 2026-05-14T02:17:47Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+

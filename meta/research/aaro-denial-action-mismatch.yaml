@@ -1,0 +1,160 @@
+id: meta/research/aaro-denial-action-mismatch
+type: research-artifact
+schema_version: 1
+target_node: findings/aaro-denial-action-mismatch
+status: active
+created: '2026-05-13'
+
+description: 'AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/aaro-hrr-vol-i-20240308`]) states: "AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology." The Executive Summary p. 8 records that "executives, scientists, and chief technology officers of the companies named by interviewees met with the Director of AARO and denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology", and that a named former CIA official "signed a memo rejecting a claim made by interviewees that he managed the movement of and experimentation on off-world technology". Luis Elizondo ([`/people/luis-elizondo`]) Question for the Record Question 6 to Rep. Eric Burlison ([`/people/eric-burlison`]) ([`/documents/elizondo-qfr-burlison-20241219`]) reads: "Yes. The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin ([`/organizations/lockheed-martin`]) to Bigelow Aerospace ([`/organizations/bigelow-aerospace`])." AARO''s recorded actions — "ever recovered, possessed, or engaged in reverse-engineering" (executives) and "managed the movement of and experimentation on" (a former CIA official) — do not match the action Elizondo identified: a transfer the CIA "opposed".
+
+  '
+
+pattern_statement: 'AARO HRR Vol I institutional denial frame addresses a different action-scope than the Lockheed-Bigelow allegation chain Elizondo''s QFR Q6 confirms: AARO denies "ever recovered, possessed, or engaged in reverse-engineering" by named companies and the "movement of and experimentation on" by a former CIA official; the allegation describes a proposed transfer the CIA "opposed."'
+
+primary_sources:
+- path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+  format: pdf
+- path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+  format: pdf
+
+document_intrinsic:
+  full_name: 'AARO HRR Vol I Denial — Action-Scope Mismatch'
+context_extrinsic: {}
+
+quotes:
+
+- id: q1
+  added_date: '2026-05-13'
+  text: |-
+    AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology.
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: 'Executive Summary, p. 7'
+  significance: 'AARO HRR Vol I top-line finding — frames AARO''s headline denial in terms of "reverse-engineering extraterrestrial technology". The action verb is reverse-engineering; the temporal frame is "have been" (a perfect-tense looking-backward claim).'
+  context: 'AARO Historical Record Report Volume I Executive Summary top-line finding, March 8, 2024'
+  statement_date: '2024-03-08'
+  attestation_tier: on-record
+  attestor_path: /organizations/aaro
+
+- id: q2
+  added_date: '2026-05-13'
+  text: |-
+    executives, scientists, and chief technology officers of the companies named by interviewees met with the Director of AARO and denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology.
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: 'Executive Summary, p. 8, "Named Companies Allegedly Experimenting on Alien Technology" bullet'
+  significance: 'AARO HRR Vol I Named-Companies denial — names the action-scope of the corporate denial as "ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology". The action verbs are recovered / possessed / reverse-engineered; the temporal frame is "ever" (perfect-tense looking-backward).'
+  context: 'AARO Historical Record Report Volume I Executive Summary p. 8 Named-Companies bullet recording corporate executives'' denials to the Director of AARO'
+  statement_date: '2024-03-08'
+  attestation_tier: on-record
+  attestor_path: /organizations/aaro
+
+- id: q3
+  added_date: '2026-05-13'
+  text: |-
+    The named, former CIA official was not involved in the movement of extraterrestrial technology. The same former CIA officer signed a memo rejecting a claim made by interviewees that he managed the movement of and experimentation on off-world technology.
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: 'Executive Summary, p. 8, "A CIA Official Allegedly Managed UAP Experimentation" bullet'
+  significance: 'AARO HRR Vol I CIA-Official denial — names the action-scope of the official''s denial as "managed the movement of and experimentation on off-world technology". The action verbs are managed / experimentation; the temporal frame is past management of a movement and experimentation event.'
+  context: 'AARO Historical Record Report Volume I Executive Summary p. 8 CIA-Official bullet documenting the named former CIA official''s memo rejecting the interviewee claim'
+  statement_date: '2024-03-08'
+  attestation_tier: on-record
+  attestor_path: /organizations/aaro
+
+- id: q4
+  added_date: '2026-05-13'
+  text: |-
+    Yes. The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace.
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'p. 2, Q6 response'
+  significance: 'Elizondo QFR Q6 — names the action-scope of the allegation as "transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace" that the CIA "opposed". The action verbs are transfer / opposed; the temporal frame is a proposed-and-disapproved past event. Distinct verbs, distinct event from AARO''s "ever recovered / possessed / reverse-engineered" denial frame.'
+  context: 'Luis Elizondo Question for the Record response to Rep. Eric Burlison Q6 — confirms the CIA opposed the alleged Lockheed-to-Bigelow transfer'
+  statement_date: '2024-12-19'
+  attestation_tier: dopsr-cleared
+  attestor_path: /people/luis-elizondo
+
+entities_referenced:
+
+- id: e1
+  added_date: '2026-05-13'
+  entity_type: organization
+  name: All-domain Anomaly Resolution Office
+  wrap_path: /organizations/aaro
+
+- id: e2
+  added_date: '2026-05-13'
+  entity_type: organization
+  name: Lockheed Martin
+  wrap_path: /organizations/lockheed-martin
+
+- id: e3
+  added_date: '2026-05-13'
+  entity_type: organization
+  name: Bigelow Aerospace
+  wrap_path: /organizations/bigelow-aerospace
+
+- id: e4
+  added_date: '2026-05-13'
+  entity_type: person
+  name: Luis Elizondo
+  wrap_path: /people/luis-elizondo
+
+- id: e5
+  added_date: '2026-05-13'
+  entity_type: person
+  name: Eric Burlison
+  wrap_path: /people/eric-burlison
+
+- id: e6
+  added_date: '2026-05-13'
+  entity_type: document
+  name: AARO Historical Record Report Volume I (2024-03-08)
+  wrap_path: /documents/aaro-hrr-vol-i-20240308
+
+- id: e7
+  added_date: '2026-05-13'
+  entity_type: document
+  name: Elizondo QFR Response to Burlison (2024-12-19)
+  wrap_path: /documents/elizondo-qfr-burlison-20241219
+
+naming_quirks: []
+
+establishes:
+
+- 'AARO HRR Vol I top-line finding names the action AARO denies as "reverse-engineering extraterrestrial technology" (per q1).'
+- 'AARO HRR Vol I Named-Companies bullet names the action-scope of the corporate denial as "ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology" (per q2).'
+- 'AARO HRR Vol I CIA-Official bullet names the action-scope of the official''s denial as "managed the movement of and experimentation on off-world technology" (per q3).'
+- 'Elizondo QFR Q6 names the action-scope of the allegation as a "transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace" that "the CIA opposed" (per q4).'
+- 'AARO''s denial verbs (recovered / possessed / reverse-engineered / managed the movement of / experimentation on) do not include the allegation''s verbs (transfer / opposed). The action-scopes do not overlap.'
+- 'AARO''s denial is on the record at Executive Summary level (q1, q2, q3). Elizondo''s reaffirmation of the allegation is on the record at congressional-response level (q4, dopsr-cleared).'
+
+does_not_establish:
+
+- 'That AARO''s denial is incorrect — the action-mismatch does not address whether the recovered/possessed/reverse-engineered claims AARO denies are true or false.'
+- 'That the allegation Elizondo confirms is correct — the action-mismatch does not address whether the transfer-the-CIA-opposed event actually occurred.'
+- 'That AARO is aware of the Lockheed-Bigelow transfer allegation as a distinct claim from the recovered/possessed/reverse-engineered claims. The HRR Vol I Executive Summary does not address a Lockheed-Bigelow transfer in those terms.'
+- 'That AARO''s denial reaches the alleged 2011 timeframe. The Named-Companies denial rests on "executives, scientists, and chief technology officers of the companies named by interviewees" meeting with the Director of AARO at the time of the HRR (per q2); the action-scope is the executives'' past statements at that meeting, not a comprehensive historical-record check of 2011-or-earlier corporate custody.'
+
+contradictions: []
+
+timeline:
+
+- id: t1
+  added_date: '2026-05-13'
+  date: '2024-03-08'
+  event: 'AARO publishes Historical Record Report Volume I. Executive Summary p. 7 denies "reverse-engineering extraterrestrial technology" claims; p. 8 denies executives "ever recovered, possessed, or engaged in reverse-engineering" and denies a named CIA official "managed the movement of and experimentation on off-world technology".'
+  category: publication
+  source:
+    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    location: 'Executive Summary p. 7-8'
+
+- id: t2
+  added_date: '2026-05-13'
+  date: '2024-12-19'
+  event: 'Luis Elizondo signs Question for the Record response to Rep. Eric Burlison. Q6 response: "Yes. The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace." The allegation is reaffirmed at congressional-response level nine months after the AARO HRR Vol I publication.'
+  category: filing
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'p. 2, Q6 response'
