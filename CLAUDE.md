@@ -107,9 +107,9 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 
 - `/locations/skinwalker-ranch` — active
 
-### Findings (0)
+### Findings (1)
 
-*No nodes yet.*
+- `/findings/pax-river-scif-fiscal-triangulation` — in-progress
 
 <!-- BUILD-STATE-END -->
 

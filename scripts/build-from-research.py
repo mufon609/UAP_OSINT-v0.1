@@ -2172,9 +2172,14 @@ def render_body_location(artifact, fm):
 # =============================================================================
 
 def render_title_finding(artifact):
-    """H1 title for finding nodes. Drawn from the slug-derived display
-    name; matches the existing pattern for organization / document /
-    media titles."""
+    """H1 title for finding nodes. ``document_intrinsic.full_name``
+    overrides when populated — preserves acronyms (SCIF / SAP-F /
+    FY) that title-casing the slug would lose. Falls back to slug-
+    derived display name when full_name is absent."""
+    di = artifact.get("document_intrinsic") or {}
+    name = di.get("full_name")
+    if name:
+        return f"# {name}\n"
     target = artifact.get("target_node") or ""
     slug = target.rsplit("/", 1)[-1] if "/" in target else target
     display = slug.replace("-", " ").title() if slug else "Finding"
@@ -2366,7 +2371,12 @@ def render_body_finding(artifact, fm):
 # =============================================================================
 
 def render_title_investigation(artifact):
-    """H1 title for investigation nodes."""
+    """H1 title for investigation nodes. ``document_intrinsic.full_name``
+    overrides when populated; falls back to slug-derived title."""
+    di = artifact.get("document_intrinsic") or {}
+    name = di.get("full_name")
+    if name:
+        return f"# {name}\n"
     target = artifact.get("target_node") or ""
     slug = target.rsplit("/", 1)[-1] if "/" in target else target
     display = slug.replace("-", " ").title() if slug else "Investigation"

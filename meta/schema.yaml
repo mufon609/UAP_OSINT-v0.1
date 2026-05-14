@@ -699,8 +699,14 @@ types:
         # (fabrication-prevention mechanism).
       timeline:
         required_when_any_of:
-          - target_node_type_in: [person, organization, event]
+          - target_node_type_in: [person, organization, event, finding]
         # Aggregated chronological dated facts about the node's subject.
+        # On finding artifacts, the timeline list may be empty (non-
+        # temporal patterns omit it; renderer auto-suppresses the
+        # Timeline section). Populated when the finding documents a
+        # pattern that itself has temporal structure (cumulative
+        # attestations, denial patterns over time, fiscal-data
+        # triangulation across years).
         # Entries carry `date`, `event`, `source`, and on person artifacts
         # `category` (affiliation / role / observation / testimony /
         # publication / clearance / incident / filing / other). Node

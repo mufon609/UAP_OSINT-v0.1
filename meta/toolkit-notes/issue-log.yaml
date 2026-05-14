@@ -6854,3 +6854,391 @@
     contracts[10] ('c11') note: 7 significant token(s) not in source (prose-drift check — contributor review): announcement-vs-ceiling, exact, figure, floor, gap, release, unreconciled
   tokens: [announcement-vs-ceiling, exact, figure, floor, gap, release, unreconciled]
 
+- ts: 2026-05-13T23:42:14Z
+  source: validator
+  check: iff_section
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    'rumors' key should not be present — schema conditional_keys gates it on target_type / archetype / kind that don't match this artifact (target_type='finding', target_archetype=None, target_kind=None)
+
+- ts: 2026-05-13T23:42:14Z
+  source: validator
+  check: iff_section
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    'timeline' key should not be present — schema conditional_keys gates it on target_type / archetype / kind that don't match this artifact (target_type='finding', target_archetype=None, target_kind=None)
+
+- ts: 2026-05-13T23:42:14Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 30 significant token(s) not in source (prose-drift check — contributor review): announcement, appropriation, converge, convergence, describes, designation, divergences, documented, … (+22 more — pass --verbose for full list)
+  tokens: [announcement, appropriation, converge, convergence, describes, designation, divergences, documented, dollar, establish, existence, february, finding, fiscal-data, fourteen, framing, independent, journalistic, location, magnitude, naming, physical, predates, preserving, primary, requesting, role, routine, structure, triangulation]
+
+- ts: 2026-05-13T23:42:14Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contradictions[0] ('c1') note: 17 significant token(s) not in source (prose-drift check — contributor review): appropriation, approximate, architectural, archived, attestations, characterisation, diverges, dollar, … (+9 more — pass --verbose for full list)
+  tokens: [appropriation, approximate, architectural, archived, attestations, characterisation, diverges, dollar, location, magnitude, named-official, primary, requesting, resolve, standalone, structure, versus]
+
+- ts: 2026-05-13T23:42:14Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contradictions[1] ('c2') note: 11 significant token(s) not in source (prose-drift check — contributor review): alleged-transfer, apart, broader, days, distinguishes, framing, outlet, paired, … (+3 more — pass --verbose for full list)
+  tokens: [alleged-transfer, apart, broader, days, distinguishes, framing, outlet, paired, preserved, reports, six]
+
+- ts: 2026-05-13T23:42:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 30 significant token(s) not in source (prose-drift check — contributor review): announcement, appropriation, converge, convergence, describes, designation, divergences, documented, … (+22 more — pass --verbose for full list)
+  tokens: [announcement, appropriation, converge, convergence, describes, designation, divergences, documented, dollar, establish, existence, february, finding, fiscal-data, fourteen, framing, independent, journalistic, location, magnitude, naming, physical, predates, preserving, primary, requesting, role, routine, structure, triangulation]
+
+- ts: 2026-05-13T23:42:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contradictions[0] ('c1') note: 17 significant token(s) not in source (prose-drift check — contributor review): appropriation, approximate, architectural, archived, attestations, characterisation, diverges, dollar, … (+9 more — pass --verbose for full list)
+  tokens: [appropriation, approximate, architectural, archived, attestations, characterisation, diverges, dollar, location, magnitude, named-official, primary, requesting, resolve, standalone, structure, versus]
+
+- ts: 2026-05-13T23:42:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contradictions[1] ('c2') note: 11 significant token(s) not in source (prose-drift check — contributor review): alleged-transfer, apart, broader, days, distinguishes, framing, outlet, paired, … (+3 more — pass --verbose for full list)
+  tokens: [alleged-transfer, apart, broader, days, distinguishes, framing, outlet, paired, preserved, reports, six]
+
+- ts: 2026-05-13T23:44:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 5 significant token(s) not in source (prose-drift check — contributor review): article, later, named, primary, updated
+  tokens: [article, later, named, primary, updated]
+
+- ts: 2026-05-13T23:44:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contradictions[0] ('c1') note: 11 significant token(s) not in source (prose-drift check — contributor review): approximate, archived, descriptions, diverge, location, named-official, names, requesting, … (+3 more — pass --verbose for full list)
+  tokens: [approximate, archived, descriptions, diverge, location, named-official, names, requesting, resolve, statements, structure]
+
+- ts: 2026-05-13T23:44:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contradictions[1] ('c2') note: 7 significant token(s) not in source (prose-drift check — contributor review): 2026-03-06, 2026-03-12, article, distinguishing, named, preserved, reports
+  tokens: [2026-03-06, 2026-03-12, article, distinguishing, named, preserved, reports]
+
+- ts: 2026-05-13T23:46:05Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contradictions[0] ('c1') note: 4 significant token(s) not in source (prose-drift check — contributor review): archived, attest, requesting, resolve
+  tokens: [archived, attest, requesting, resolve]
+
+- ts: 2026-05-13T23:46:05Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contradictions[1] ('c2') note: 1 significant token(s) not in source (prose-drift check — contributor review): preserves
+  tokens: [preserves]
+
+- ts: 2026-05-13T23:46:53Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    contradictions[0] ('c1') note: 2 significant token(s) not in source (prose-drift check — contributor review): say, statements
+  tokens: [say, statements]
+
+- ts: 2026-05-13T23:47:19Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: findings/pax-river-scif-fiscal-triangulation.md
+  node_type: finding
+  severity: error
+  message: |
+    Quote at line 42 NOT FOUND in sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf: "These facilities included locations in the Las Vegas area and a newly built hang..."
+
+- ts: 2026-05-13T23:47:19Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/pax-river-scif-fiscal-triangulation.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Apparent Contradictions' exceeds word budget (58>55): Hoyer's 2010 press release: "Atlantic Test Range Addition" —...
+
+- ts: 2026-05-13T23:47:19Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/pax-river-scif-fiscal-triangulation.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (57>55): Liberation Times updates the 2026-03-06 Burlison report: thr...
+
+- ts: 2026-05-13T23:50:28Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/pax-river-scif-fiscal-triangulation.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Apparent Contradictions' exceeds word budget (58>55): Hoyer's 2010 press release: "Atlantic Test Range Addition" —...
+
+- ts: 2026-05-13T23:50:28Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/pax-river-scif-fiscal-triangulation.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (57>55): Liberation Times updates the 2026-03-06 Burlison report: thr...
+
+- ts: 2026-05-13T23:50:36Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/pax-river-scif-fiscal-triangulation.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Apparent Contradictions' exceeds word budget (58>55): Hoyer's 2010 press release: "Atlantic Test Range Addition" —...
+
+- ts: 2026-05-13T23:50:36Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/pax-river-scif-fiscal-triangulation.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (57>55): Liberation Times updates the 2026-03-06 Burlison report: thr...
+
+- ts: 2026-05-13T23:52:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+
+- ts: 2026-05-13T23:54:11Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+
+- ts: 2026-05-13T23:54:23Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e5' ('Robert Bigelow') wrap_path '/people/robert-bigelow' does not appear as a [`/people/robert-bigelow`] link in the node
+
+- ts: 2026-05-13T23:54:23Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('Advanced Aerospace Weapon System Applications Program') wrap_path '/organizations/aawsap' does not appear as a [`/organizations/aawsap`] link in the node
+
+- ts: 2026-05-13T23:54:23Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e11' ('Hoyer FY2011 MILCON Southern Maryland press release') wrap_path '/documents/hoyer-fy2011-milcon-southern-maryland-20100728' does not appear as a [`/documents/hoyer-fy2011-milcon-southern-maryland-20100728`] link in the node
+
+- ts: 2026-05-13T23:54:23Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e12' ('Elizondo QFR Response to Burlison (2024-12-19)') wrap_path '/documents/elizondo-qfr-burlison-20241219' does not appear as a [`/documents/elizondo-qfr-burlison-20241219`] link in the node
+
+- ts: 2026-05-13T23:54:23Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('Liberation Times — Burlison Pax River visit (2026-03-06)') wrap_path '/documents/liberationtimes-white-house-approved-trip-pax-river-20260306' does not appear as a [`/documents/liberationtimes-white-house-approved-trip-pax-river-20260306`] link in the node
+
+- ts: 2026-05-13T23:54:31Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e5' ('Robert Bigelow') wrap_path '/people/robert-bigelow' does not appear as a [`/people/robert-bigelow`] link in the node
+
+- ts: 2026-05-13T23:54:31Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('Advanced Aerospace Weapon System Applications Program') wrap_path '/organizations/aawsap' does not appear as a [`/organizations/aawsap`] link in the node
+
+- ts: 2026-05-13T23:54:31Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e11' ('Hoyer FY2011 MILCON Southern Maryland press release') wrap_path '/documents/hoyer-fy2011-milcon-southern-maryland-20100728' does not appear as a [`/documents/hoyer-fy2011-milcon-southern-maryland-20100728`] link in the node
+
+- ts: 2026-05-13T23:54:31Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e12' ('Elizondo QFR Response to Burlison (2024-12-19)') wrap_path '/documents/elizondo-qfr-burlison-20241219' does not appear as a [`/documents/elizondo-qfr-burlison-20241219`] link in the node
+
+- ts: 2026-05-13T23:54:31Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('Liberation Times — Burlison Pax River visit (2026-03-06)') wrap_path '/documents/liberationtimes-white-house-approved-trip-pax-river-20260306' does not appear as a [`/documents/liberationtimes-white-house-approved-trip-pax-river-20260306`] link in the node
+
+- ts: 2026-05-13T23:55:20Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+
+- ts: 2026-05-13T23:56:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+
+- ts: 2026-05-13T23:58:04Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+
+- ts: 2026-05-13T23:59:40Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+
