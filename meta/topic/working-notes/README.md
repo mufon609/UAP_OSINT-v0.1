@@ -72,18 +72,19 @@ integration_targets:
 - **Don't link from content nodes.** Working-notes files are not
   primary sources and cannot be cited from validated entity nodes.
   Cite the underlying primary sources instead.
-- **Don't validate.** `scripts/validate.py` skips the entire
-  `meta/topic/working-notes/` directory by path prefix (see comment at
-  `scripts/validate.py:1060`) — its files sit outside the schema-
-  frontmatter contract regardless of `type`. Use `type: meta` in
-  working-notes frontmatter for human-reader consistency with other
-  governance docs, but do not rely on `type: meta` alone to confer skip
-  status — the skip is path-based, not type-based. Every `.md` file
-  under `meta/` except those in this `working-notes/` directory is
-  validated by the governance-files walk and must satisfy the meta-
-  required-fields check. `scripts/validate-research.py` operates on
-  `meta/research/*.yaml` artifacts only — a structurally separate
-  scope from the governance-doc / content-node walk in `validate.py`.
+- **Don't validate.** The `governance-frontmatter` check (in
+  `scripts/checks/governance_files.py`) skips the entire
+  `meta/topic/working-notes/` directory by path prefix — its files
+  sit outside the schema-frontmatter contract regardless of `type`.
+  Use `type: meta` in working-notes frontmatter for human-reader
+  consistency with other governance docs, but do not rely on
+  `type: meta` alone to confer skip status — the skip is path-based,
+  not type-based. Every `.md` file under `meta/` except those in this
+  `working-notes/` directory is validated by the governance-files walk
+  and must satisfy the meta-required-fields check.
+  `scripts/validate-research.py` operates on `meta/research/*.yaml`
+  artifacts only — a structurally separate scope from the
+  governance-doc / content-node walk in `validate.py`.
 - **Don't archive in `sources/manifest.yaml`.** These are not
   primary sources; they're contributor synthesis.
 - **Do cite primary sources** within the working-notes prose when

@@ -10,11 +10,11 @@ before counting so a cell carrying many cross-reference links isn't
 flagged just for them.
 
 ``Note`` columns are exempt — they're designed to carry 1-3 sentences
-of source-attested nuance per the BACKLOG B1 M1 render-the-`.note`
-convention. The word-budget is a promote-to-subsection heuristic for
-terse label cells (org names, role titles, dates); it doesn't apply
-to columns whose purpose is prose. The check tracks the most recent
-table header row in the section to identify Note-column positions.
+of source-attested nuance. The word-budget is a promote-to-subsection
+heuristic for terse label cells (org names, role titles, dates); it
+doesn't apply to columns whose purpose is prose. The check tracks the
+most recent table header row in the section to identify Note-column
+positions.
 
 The budget value is read via direct subscript so schema drift fails
 loudly rather than silently degrading.

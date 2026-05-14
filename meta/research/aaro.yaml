@@ -1862,7 +1862,7 @@ naming_quirks:
   location: Hicks establishment memo p.1 — "The All-domain Anomaly Resolution Office (AARO) will be established to carry out the duties that were to be fulfi lled by the AOIMSG"
   source_path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'The Hicks memorandum is a text-native PDF, but the source text layer encodes "fulfilled" with an internal space — both `pdftotext` (default) and `pdftotext -layout` extract the literal token "fulfi lled". The visible memorandum reads "fulfilled". Same shape as the BACKLOG #19 `extraction-lossy` category (text layer present, not OCR''d, but pdftotext yields artifacts); the verbatim quote in description prose preserves the source extract as received. A clean `.txt` sibling per the BACKLOG #19 Phase F discipline could close this at the manifest layer.'
+  note: 'The Hicks memorandum is a text-native PDF, but the source text layer encodes "fulfilled" with an internal space — both `pdftotext` (default) and `pdftotext -layout` extract the literal token "fulfi lled". The visible memorandum reads "fulfilled". Same shape as the `extraction-lossy` manifest category (text layer present, not OCR''d, but pdftotext yields artifacts — see `meta/conventions.md` "Statements as the universal evidentiary primitive" and `meta/schema.yaml::manifest_entry.extraction_type_values`); the verbatim quote in description prose preserves the source extract as received. A clean `.txt` sibling per the `extraction-lossy` sibling discipline could close this at the manifest layer.'
 - id: nq2
   added_date: '2026-04-20'
   observed: Airborne Object Identification and Management Group

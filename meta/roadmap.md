@@ -137,9 +137,8 @@ enforced by in-script `# Mirror validate.py exactly` comments plus
 contributor discipline. The discipline failed empirically — features
 shipped to `validate.py` without parallel updates (HTML entity decode;
 YouTube caption timestamp strip 2026-04-22; OCR-scan / extraction-
-lossy `.txt` sibling preference 2026-04-24 per BACKLOG A2 Phase F
-Tier 1; HTML tag cleanup) and the divergence was invisible to
-pre-commit gates.
+lossy `.txt` sibling preference 2026-04-24; HTML tag cleanup) and the
+divergence was invisible to pre-commit gates.
 
 Correction: extracted `extract_source_text`, `normalize_for_compare`,
 `clean_html_for_text` (and `_load_extraction_types`, caches,

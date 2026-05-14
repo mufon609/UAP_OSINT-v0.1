@@ -223,10 +223,11 @@ with `--cookies-from-browser` and a JS runtime in place.
 - The cleaned `[H:MM:SS] text` shape matches what `transcribe.py`
   produces, so downstream tooling (verbatim-quote check, prose-drift
   tokenizer) treats the paste indistinguishably from a CLI download.
-- If the video is auto-caption-derived (most), the open question
-  about audio-as-source-of-record vs caption-as-source-of-record
-  remains BACKLOG A1; the manual-paste path inherits the same
-  unresolved framing.
+- If the video is auto-caption-derived (most), the audio-vs-caption-
+  as-source-of-record framing is governed by the `transcript_provenance`
+  convention (see `meta/conventions.md` "Transcript provenance and
+  audit discipline"); the manual-paste path inherits the same
+  per-provenance discipline.
 
 Surfaced: 2026-05-06 Ryder build session — IP-blocked YouTube
 extraction forced manual-paste fallback for the 2025-09-09 House

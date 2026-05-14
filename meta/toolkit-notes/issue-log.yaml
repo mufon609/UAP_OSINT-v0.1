@@ -7634,3 +7634,43 @@
     description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
   tokens: [involves]
 
+- ts: 2026-05-14T03:11:09Z
+  source: validator
+  check: boundary
+  phase: review-coverage
+  node: meta/research/aaro.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
+
+- ts: 2026-05-14T03:11:09Z
+  source: validator
+  check: boundary
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
+
+- ts: 2026-05-14T03:11:28Z
+  source: validator
+  check: boundary
+  phase: review-coverage
+  node: meta/research/aaro.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
+
+- ts: 2026-05-14T03:11:28Z
+  source: validator
+  check: boundary
+  phase: review-coverage
+  node: meta/research/safire-project.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
+

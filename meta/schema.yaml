@@ -1377,8 +1377,8 @@ types:
       #   link in the Owner cell when set.
       # use_status: one-line description of how the property was used
       #   during the period (e.g., "Cattle ranching", "Residential with
-      #   paranormal research operations", "Vacant"). Scanned by check
-      #   #16 against source.path token pool.
+      #   paranormal research operations", "Vacant"). Scanned by the
+      #   prose-drift check against source.path token pool.
       # source: object with path + location attesting the ownership
       #   transition (deed record, property registry, news article
       #   contemporaneous with the transfer, etc.).
