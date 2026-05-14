@@ -7447,3 +7447,106 @@
     description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
   tokens: [involves]
 
+- ts: 2026-05-14T01:39:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lockheed-martin-non-denial-pattern.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 24 significant token(s) not in source (prose-drift check — contributor review): 2023-11, 2024-11-08, 2025-03, 2025-03-27, allegation, attests, categorical, cluster, … (+16 more — pass --verbose for full list)
+  tokens: [2023-11, 2024-11-08, 2025-03, 2025-03-27, allegation, attests, categorical, cluster, days, declining, denials, discrete, documents, five, given, moments, opportunities, pattern, published, refuse-to-deny, reporting, sixteen-month, three, window]
+
+- ts: 2026-05-14T01:41:54Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lockheed-martin-non-denial-pattern.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 8 significant token(s) not in source (prose-drift check — contributor review): 2024-11-08, article, covering, handling, issued, prior, publication, states
+  tokens: [2024-11-08, article, covering, handling, issued, prior, publication, states]
+
+- ts: 2026-05-14T01:46:45Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/lockheed-martin-non-denial-pattern.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Liberation Times publishes "Witnesses Announced for Landmark...
+
+- ts: 2026-05-14T01:46:45Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/lockheed-martin-non-denial-pattern.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (58>55): Liberation Times contacts Lockheed Martin's media relations ...
+
+- ts: 2026-05-14T01:46:45Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lockheed-martin-non-denial-pattern.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e5' ('Glenn Gaffney') wrap_path '/people/glenn-gaffney' does not appear as a [`/people/glenn-gaffney`] link in the node
+
+- ts: 2026-05-14T01:46:57Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/lockheed-martin-non-denial-pattern.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Liberation Times publishes "Witnesses Announced for Landmark...
+
+- ts: 2026-05-14T01:46:57Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/lockheed-martin-non-denial-pattern.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (58>55): Liberation Times contacts Lockheed Martin's media relations ...
+
+- ts: 2026-05-14T01:47:05Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/lockheed-martin-non-denial-pattern.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): Liberation Times publishes "Witnesses Announced for Landmark...
+
+- ts: 2026-05-14T01:47:05Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: findings/lockheed-martin-non-denial-pattern.md
+  node_type: finding
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (58>55): Liberation Times contacts Lockheed Martin's media relations ...
+
+- ts: 2026-05-14T01:49:22Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/pax-river-scif-fiscal-triangulation.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): involves
+  tokens: [involves]
+

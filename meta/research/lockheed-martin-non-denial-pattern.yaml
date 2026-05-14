@@ -1,0 +1,184 @@
+id: meta/research/lockheed-martin-non-denial-pattern
+type: research-artifact
+schema_version: 1
+target_node: findings/lockheed-martin-non-denial-pattern
+status: active
+created: '2026-05-13'
+
+description: 'Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organizations/liberation-times`]) ([`/documents/liberationtimes-burlison-grusch-recruitment-20250327`]) reported: "Lockheed Martin ([`/organizations/lockheed-martin`]) has refused on multiple occasions to comment on allegations that its executives, including former Vice President of Space Systems, James Ryder ([`/people/james-ryder`]), were involved in the attempted transfer of materials." In November 2023 Liberation Times asked Lockheed Martin whether it could deny allegations that it possesses materials of unknown or non-human origin; a company spokesperson stated: "Questions about UAPs are best addressed by the U.S. government." On 3 March 2025 Liberation Times contacted Lockheed Martin''s media relations office with the following inquiries: the company''s involvement in the proposed material divestment plan, whether Lockheed Martin currently possesses or has previously handled advanced non-human materials linked to historical crash retrieval operations, and whether the company holds any records of Ryder''s alleged role. "Despite repeated requests for comment, Lockheed Martin has refused to respond." Sharp had earlier reported on 8 November 2024 ([`/documents/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108`]) that the alleged non-human materials "Lockheed Martin may still possess to this day"; no Lockheed Martin denial followed.
+
+  '
+
+pattern_statement: 'Three discrete Liberation Times-documented moments (November 2023, multiple occasions across 2024 and early 2025, March 3 2025) of Lockheed Martin refusing to issue categorical denials of allegations that it possesses or has handled UAP / non-human material.'
+
+primary_sources:
+- path: news/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108.html
+  format: html
+- path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+  format: html
+
+document_intrinsic:
+  full_name: 'Lockheed Martin — Non-Denial Pattern'
+context_extrinsic: {}
+
+quotes:
+
+- id: q1
+  added_date: '2026-05-13'
+  text: |-
+    In November 2023, Liberation Times asked Lockheed Martin whether it could deny allegations that it possesses materials of unknown or non-human origin and had attempted to divest itself of such materials. A company spokesperson declined to issue a denial, instead stating: "Questions about UAPs are best addressed by the U.S. government."
+  source:
+    path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+    location: ¶ following Lockheed Martin "refused on multiple occasions" attestation
+  significance: 'November 2023 Liberation Times direct query to Lockheed Martin asking the company to deny possession and divestment allegations — Lockheed Martin''s spokesperson "declined to issue a denial" and instead deflected to the U.S. government. The first attested moment in the non-denial pattern; recapped by Sharp in his 2025-03-27 article.'
+  context: 'Christopher Sharp, Liberation Times, 2025-03-27 article recapping the November 2023 spokesperson response'
+  statement_date: '2023-11'
+  attestation_tier: secondary-source
+  attestor_path: /organizations/lockheed-martin
+
+- id: q2
+  added_date: '2026-05-13'
+  text: |-
+    Lockheed Martin has refused on multiple occasions to comment on allegations that its executives, including former Vice President of Space Systems, James Ryder, were involved in the attempted transfer of materials.
+  source:
+    path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+    location: ¶ Lockheed Martin allegation framing
+  significance: 'Sharp''s aggregate attestation that Lockheed Martin has declined to comment on the Ryder-transfer allegations "on multiple occasions" across his sixteen-month reporting window — frames the pattern beyond any single moment.'
+  context: 'Christopher Sharp, Liberation Times, 2025-03-27 article, aggregate non-comment attestation'
+  statement_date: '2025-03-27'
+  attestation_tier: secondary-source
+  attestor_path: /people/christopher-sharp
+
+- id: q3
+  added_date: '2026-05-13'
+  text: |-
+    On 3 March 2025, Liberation Times contacted Lockheed Martin's media relations office with the following inquiries:
+  source:
+    path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+    location: ¶ Liberation Times direct outreach attestation
+  significance: 'Sharp documents the March 3 2025 direct outreach to Lockheed Martin''s media relations office — the second explicit non-denial moment in the chain after the November 2023 spokesperson response.'
+  context: 'Christopher Sharp, Liberation Times, 2025-03-27 article, opening of the March 3 2025 outreach section'
+  statement_date: '2025-03-03'
+  attestation_tier: secondary-source
+  attestor_path: /people/christopher-sharp
+
+- id: q4
+  added_date: '2026-05-13'
+  text: |-
+    Despite repeated requests for comment, Lockheed Martin has refused to respond.
+  source:
+    path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+    location: ¶ closing of the March 3 2025 outreach inquiries
+  significance: 'Sharp''s closing attestation on the March 3 2025 outreach — Lockheed Martin "refused to respond" to repeated requests covering company involvement in the proposed transfer, current and prior possession of non-human material, and any Ryder records. Most recent attested non-denial moment in the chain.'
+  context: 'Christopher Sharp, Liberation Times, 2025-03-27 article, closing the March 3 2025 outreach section'
+  statement_date: '2025-03-27'
+  attestation_tier: secondary-source
+  attestor_path: /people/christopher-sharp
+
+- id: q5
+  added_date: '2026-05-13'
+  text: |-
+    Liberation Times understands that the transfer was blocked by Gaffney, as the CIA's Directorate of Technology remains the original custodian of the alleged non-human materials, which Lockheed Martin may still possess to this day.
+  source:
+    path: news/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108.html
+    location: ¶ Gaffney-block summary
+  significance: 'Sharp''s 2024-11-08 reporting publicly aired the allegation that "Lockheed Martin may still possess" the non-human materials — published five days before the November 13 2024 House Oversight hearing. Lockheed Martin did not issue a public denial of this allegation after publication; the absence of denial is contextual evidence supporting the non-denial pattern Sharp later documents explicitly in 2025-03-27.'
+  context: 'Christopher Sharp, Liberation Times, 2024-11-08 "Witnesses Announced for Landmark UFO Congressional Hearing", Gaffney-block summary'
+  statement_date: '2024-11-08'
+  attestation_tier: secondary-source
+  attestor_path: /people/christopher-sharp
+
+entities_referenced:
+
+- id: e1
+  added_date: '2026-05-13'
+  entity_type: organization
+  name: Lockheed Martin
+  wrap_path: /organizations/lockheed-martin
+
+- id: e2
+  added_date: '2026-05-13'
+  entity_type: organization
+  name: Liberation Times
+  wrap_path: /organizations/liberation-times
+
+- id: e3
+  added_date: '2026-05-13'
+  entity_type: person
+  name: Christopher Sharp
+  wrap_path: /people/christopher-sharp
+
+- id: e4
+  added_date: '2026-05-13'
+  entity_type: person
+  name: James T. Ryder
+  wrap_path: /people/james-ryder
+
+- id: e6
+  added_date: '2026-05-13'
+  entity_type: document
+  name: Liberation Times — Witnesses Announced (2024-11-08)
+  wrap_path: /documents/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108
+
+- id: e7
+  added_date: '2026-05-13'
+  entity_type: document
+  name: Liberation Times — Congressman Recruits Grusch (2025-03-27)
+  wrap_path: /documents/liberationtimes-burlison-grusch-recruitment-20250327
+
+naming_quirks: []
+
+establishes:
+
+- 'Lockheed Martin declined to issue a denial when Liberation Times asked directly in November 2023 whether it could deny allegations of possessing materials of unknown or non-human origin (per q1).'
+- 'Lockheed Martin "refused on multiple occasions to comment on allegations" of executive involvement in the proposed material transfer (per q2 — Sharp''s aggregate attestation in 2025-03-27).'
+- 'Lockheed Martin did not respond to direct media-relations-office inquiries from Liberation Times on March 3 2025 covering company involvement in the proposed transfer, current or prior handling of non-human material, and records of Ryder''s alleged role (per q3 and q4).'
+- 'Lockheed Martin issued no public denial after Liberation Times published the Gaffney-blocked-transfer allegation in the 2024-11-08 article that named Ryder and stated the materials "Lockheed Martin may still possess to this day" (per q5; absence of subsequent denial is contextual).'
+- 'The non-denial pattern is consistent across the sixteen-month window from November 2023 to March 2025 across multiple journalistic touchpoints with Sharp''s reporting at Liberation Times.'
+
+does_not_establish:
+
+- 'Whether Lockheed Martin currently possesses materials of unknown or non-human origin — refusing to comment is consistent with continued custody, with corporate-policy non-engagement on UAP allegations, or with no factual underlying material to comment on.'
+- 'The reason for Lockheed Martin''s non-denial posture — legal exposure, classification constraints, corporate communications policy, factual ambiguity, and other explanations are all consistent with the pattern.'
+- 'Independent corroboration of the non-denial pattern outside Sharp''s Liberation Times reporting — the pattern is documented through one outlet''s sustained outreach to the company.'
+- 'Whether Lockheed Martin would issue a categorical denial under different conditions — sworn testimony, formal Securities and Exchange Commission filing, or direct congressional inquiry have not (per archived primary sources) been the form of any documented inquiry to Lockheed Martin to date on this allegation cluster.'
+
+contradictions: []
+
+timeline:
+
+- id: t1
+  added_date: '2026-05-13'
+  date: 2023-11
+  event: 'Liberation Times asks Lockheed Martin whether it could deny allegations that it possesses materials of unknown or non-human origin and had attempted to divest itself of such materials. A Lockheed Martin spokesperson "declined to issue a denial, instead stating: ''Questions about UAPs are best addressed by the U.S. government.''" (Attested in Sharp''s 2025-03-27 article.)'
+  category: outreach
+  source:
+    path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+    location: ¶ November 2023 spokesperson quote
+
+- id: t2
+  added_date: '2026-05-13'
+  date: '2024-11-08'
+  event: 'Liberation Times publishes "Witnesses Announced for Landmark UFO Congressional Hearing" — names Ryder and states the alleged non-human materials "Lockheed Martin may still possess to this day". Published five days before the November 13 2024 House Oversight UAP hearing. No Lockheed Martin denial follows.'
+  category: publication
+  source:
+    path: news/liberationtimes-witnesses-announced-landmark-ufo-hearing-20241108.html
+    location: ¶ Gaffney-block summary + byline
+
+- id: t3
+  added_date: '2026-05-13'
+  date: '2025-03-03'
+  event: 'Liberation Times contacts Lockheed Martin''s media relations office with three direct inquiries — the company''s involvement in the proposed divestment plan; whether the company currently possesses or has previously handled non-human materials; whether the company holds Ryder records.'
+  category: outreach
+  source:
+    path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+    location: ¶ March 3 2025 outreach inquiries
+
+- id: t4
+  added_date: '2026-05-13'
+  date: '2025-03-27'
+  event: 'Liberation Times publishes "Congressman Recruits UFO Whistleblower to Support Investigation Into Secret Activities". Sharp attests: "Despite repeated requests for comment, Lockheed Martin has refused to respond." Sixteen months after the November 2023 spokesperson response, Lockheed Martin''s posture remains refuse-to-deny.'
+  category: publication
+  source:
+    path: news/liberationtimes-burlison-grusch-recruitment-20250327.html
+    location: ¶ closing of the March 3 2025 outreach section
