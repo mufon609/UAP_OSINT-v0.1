@@ -28,6 +28,23 @@ navigation / tangential matches are common (a hearing transcript
 names 50 topics; a witness node only quotes a few). Contributor
 judges each candidate manually.
 
+## Recover 404'd primary sources via Wayback
+
+If any manifest entry referenced by the artifact has `status:
+pending` plus `wayback_date` set, the original URL is no longer
+serving but the Internet Archive Wayback Machine retains a snapshot.
+This is a recoverable audit-blocker, not a dead end — see
+`meta/sources-access.md` "Wayback Machine fetch — fuzzy-timestamp
+URLs bypass anti-bot challenge". Use the fuzzy-timestamp pull
+workflow there to retrieve the snapshot, save it locally, update the
+manifest entry to `status: archived` with path + sha256, and add the
+source to the artifact's `primary_sources[]`. Quotes derived from
+the recovered source then pass the verbatim-quote check normally.
+
+Don't conclude "primary source unrecoverable" until the
+fuzzy-timestamp pull has been tried — exact-timestamp Wayback URLs
+trigger an anti-bot challenge that fuzzy-timestamp URLs bypass.
+
 ## Audit goals
 
 1. **Evidentiary integrity** — every confirmed claim traces to a
@@ -84,6 +101,16 @@ judges each candidate manually.
    verify the quirk is tracked consistently across all artifacts that
    cite the same source.
 
+For nodes carrying significant quote material (transcripts, hearing
+events, podcast-heavy person nodes), follow this prompt with
+`prompts/quote-relevance-audit.md` — a deeper layer that evaluates
+each `quotes[]` entry for load-bearing relevance to the node's
+subject. Extraction-completeness audit (this prompt) and content-
+relevance audit (quote-relevance-audit.md) are separate concerns:
+this prompt asks "did the contributor extract everything the source
+supports?"; quote-relevance asks "is each extracted quote earning
+its place on this node?". Both passes complement each other.
+
 ## Applying corrections
 
 Audit findings that require changes are edits to the research artifact,
@@ -106,12 +133,47 @@ not direct edits to the node body. Pattern:
 
 ## Audit output
 
-1. Summary of findings (errors, warnings, suggestions, policy-driven
-   corrections)
-2. Proposed changes (artifact diff preview + regenerated-node diff
-   preview before applying)
-3. After user approval, apply changes and commit as a focused
-   audit-correction commit
+Use this template so audit reports stay comparable across sessions
+and contributors. Each section may be empty (skip when nothing applies):
+
+```
+## Audit findings — {node path}
+
+### Mechanical (validators)
+- validate.py: PASS / FAIL ({error/warning count})
+- validate-research.py: PASS / FAIL ({error/warning count})
+- review-coverage.py: PASS / FAIL ({per-check status})
+
+### Semantic gaps from existing sources
+- (list under-extracted content surfaced by coverage-suggest +
+   re-reading; cite paragraph / line refs)
+
+### Missing primary sources
+- (list sources we'd want but don't have archived; for each, note
+   whether a Wayback snapshot exists per manifest, the retrieval plan
+   if known, or the blocker if unrecoverable)
+
+### Rumors / non-primary-sourced circulating claims
+- (claims widely repeated in public discourse not yet anchored to a
+   primary source; candidates for rumor entries)
+
+### Cross-node consistency findings
+- (divergences between this node and nodes it references)
+
+### Proposed changes
+- (artifact diff preview)
+- (regenerated-node diff preview)
+
+### Recommendations
+- (numbered list of actions, ordered fix-now vs queue-for-later;
+   queued items get BACKLOG entries per
+   feedback_investigate_before_queueing.md)
+```
+
+After user approval, apply changes and commit as a focused
+audit-correction commit. Per the audit-correction pattern above:
+edit the artifact, regenerate the node, run the full pre-commit
+chain, commit.
 
 ## Do not
 

@@ -61,7 +61,7 @@ If you're doing anything related to this instance's topic, read
 | Node templates (one per type) | `meta/templates/` |
 | Corpus-specific addenda (this topic) | `meta/topic/addenda/` |
 | Source archive | `sources/` + `sources/manifest.yaml` |
-| Site-specific archival workarounds | `meta/sources-access.md` |
+| Site-specific archival workarounds (incl. Wayback fuzzy-timestamp pull for recovering 404'd sources) | `meta/sources-access.md` |
 | Validator audit trail (auto-appended) | `meta/toolkit-notes/issue-log.yaml` |
 | Build-state snapshot | `CLAUDE.md` (auto-generated section) |
 | This instance's topic scope | `meta/topic/overview.md` |

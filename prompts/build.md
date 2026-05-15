@@ -171,6 +171,24 @@ descriptions so the evidentiary-derivation invariant is enforced
 mechanically. For now: hand-write with discipline — across every
 free-prose field, not just `description`.
 
+**Pre-flight tool for free-prose drafting:** `scripts/tools/check-vocab.py`
+pools the artifact's primary-source significant tokens (same
+tokenizer the prose-drift check uses) and reports per-input-token
+presence. Drafting `description` / `background` / `top_relevance` /
+`credibility_notes` cold then iterating against `validate-research.py`
+warnings takes 4-6 passes for a heavy synthesis field; pre-flighting
+candidate tokens via check-vocab cuts that to 1-2. Use it any time
+you're drafting prose against an unfamiliar source corpus:
+
+```
+python3 scripts/tools/check-vocab.py --artifact meta/research/{slug}.yaml \
+    candidate token list against source vocabulary
+```
+
+Reports `✓ present` / `✗ absent` per input token. Absent tokens
+either get rewritten to source vocabulary or captured as structured
+data (naming_quirks, rumors, entries) per the prose-drift discipline.
+
 ### Step 6. Populate `quotes` (bounded agent task T2)
 
 **Person artifacts — speaker-attribution rule.** `quotes[]` on a
@@ -484,6 +502,13 @@ tightening. If no — the resolution is still to rewrite to source
 vocabulary on free-prose fields (or document the variance
 structurally).
 
+When you're iterating against the prose-drift check and want to test
+replacement vocabulary before rewriting prose,
+`scripts/tools/check-vocab.py` (introduced in Step 5) accepts a list
+of candidate tokens and reports `✓ present` / `✗ absent` per token
+against the source pool — useful for picking source-matched
+substitutes without running the full validator each round.
+
 ### Phase I complete
 
 At this point you have a structurally-valid, content-populated
@@ -740,6 +765,26 @@ Re-run `build-from-research.py` and `review-coverage.py`.
 
 No dedicated prompt for this pass yet — planned as a bounded agent
 task (T7) in a later increment.
+
+### Step 3. Optional — coverage-suggest self-audit
+
+```
+python3 scripts/tools/coverage-suggest.py meta/research/{slug}.yaml
+```
+
+Read-only diagnostic. For each primary source, surfaces (a)
+substantive paragraphs no `quotes[].text` references and (b)
+capitalized terms in the source that don't appear anywhere in the
+artifact. Catches build-phase under-extraction the same author may
+not have caught — the verbatim-quote check confirms every quote IS
+in the source; coverage-suggest is the forward-direction complement
+("what's IN the source that no quote references").
+
+Likely surfaces some signal and some noise (nav boilerplate, tangential
+content, etc.) — contributor judges what's load-bearing. Skippable when
+the artifact has tight source coverage (single-source nodes, short
+sources); high-value on multi-source person / organization nodes where
+under-extraction is easy to miss.
 
 ### Phase III complete
 

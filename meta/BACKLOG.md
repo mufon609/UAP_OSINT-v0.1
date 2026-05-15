@@ -62,45 +62,4 @@ Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
 
-### C2 — Prompts cross-reference + UX polish pass
-
-**Scope.** A round of contributor-experience polish across
-`prompts/*.md` that surfaces existing tools and workflows at the
-right phase boundaries. Each individual change is small; the value
-is in the bundle — the prompts currently fail to mention several
-high-leverage tools and workflows that exist in the toolkit.
-
-**Evidence.** Specific gaps surfaced during the Targ build + audit:
-
-| Prompt | Missing reference | Why it matters |
-|---|---|---|
-| `prompts/build.md` Step 5 / Step 10 | `scripts/tools/check-vocab.py` as the pre-flight vocabulary helper for prose-drift discipline | Iterating prose against the prose-drift check is the single heaviest friction point in the build; check-vocab.py reduces 5+ validator passes to 1-2 |
-| `prompts/build.md` Phase III | `scripts/tools/coverage-suggest.py` as a post-build self-audit step | Catches build-phase under-extraction before contributor commits; same author may not catch their own gap |
-| `prompts/audit.md` | Cross-reference to `prompts/quote-relevance-audit.md` as the next-deeper layer | Audit catches extraction completeness; quote-relevance audit catches content-relevance — separate concerns, currently not linked |
-| `prompts/audit.md` | Cross-reference to `meta/sources-access.md` Wayback-fuzzy-timestamp workflow when a manifest entry is `status: pending` + has `wayback_date` set | First Targ audit pass missed this and stalled at the IRVA bio — workflow is documented but not discoverable from the audit prompt |
-| `prompts/audit.md` "Audit output" | Template for the final audit report (mechanical findings / semantic gaps / missing sources / rumors / recommendations) | Standardized output makes audits comparable across sessions and contributors; currently free-form |
-| `prompts/archive-sweep.md` | Wayback-fuzzy-timestamp workflow for recovering 404'd sources | Same Wayback retrieval gap that affected the audit |
-| `CLAUDE.md` + `AGENT.md` | One-line callout for the Wayback fuzzy-timestamp workflow | Highest-traffic docs; both should surface the workflow so future sessions don't repeat the dead-end |
-
-**Build dependencies.** None remaining — C1 (rumor rendering) and
-`coverage-suggest.py` have both shipped. Safe to pick up any time.
-
-**Implementation sketch.**
-
-1. `prompts/build.md` Step 5 — add `check-vocab.py` reference paragraph.
-2. `prompts/build.md` Phase III — add optional `coverage-suggest.py`
-   step (self-audit before commit).
-3. `prompts/audit.md` — add the four cross-references in the table
-   above + audit-output template.
-4. `prompts/archive-sweep.md` — add Wayback-fuzzy-timestamp note.
-5. `CLAUDE.md` + `AGENT.md` — one-line Wayback callout each.
-6. Pre-commit + commit as one polish-pass commit.
-
-**Density math.** ~6 documentation files touched, each with 1-3
-small edits. Estimated ~50-100 lines of doc changes total. No
-schema / renderer changes; pure doc surface.
-
-**Surfaced from.** Russell Targ build + audit retrospective
-(2026-05-15) — user asked for cross-prompt improvements; specific
-recommendations emerged from process-friction observation across two
-build sessions + two audit passes.
+*No anytime items currently open.*

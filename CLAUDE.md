@@ -202,6 +202,14 @@ Confirms every `scripts/{build,tools}/*.py --help` exits 0 with no
 traceback — catches syntax errors, import errors, and argparse
 regressions.
 
+**Recovering 404'd primary sources via Wayback** — if an audit hits a
+manifest entry with `status: pending` plus `wayback_date` set (live URL
+dead, Wayback has a snapshot), use the fuzzy-timestamp pull workflow
+in `meta/sources-access.md` "Wayback Machine fetch — fuzzy-timestamp
+URLs bypass anti-bot challenge". Exact-timestamp Wayback URLs trigger
+an anti-bot challenge; fuzzy-timestamp URLs (`/web/{year}/{url}`)
+redirect to the nearest snapshot and serve directly.
+
 ---
 
 ## 6. What this repository is not
