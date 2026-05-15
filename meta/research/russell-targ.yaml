@@ -66,6 +66,17 @@ quotes:
   statement_date: '1974-10-18'
   significance: 'Co-authored Targ + Puthoff peer-reviewed report on the SRI investigation into psychic abilities. Foundational primary-source anchor for Targ''s Stanford Research Institute cofounder role (the role Targ self-attests on his ESP Research site). The paper''s author affiliation places Targ at the Electronics and Bioengineering Laboratory, SRI, Menlo Park as of the 11 March 1974 manuscript receipt date.'
 
+- id: q4
+  added_date: '2026-05-15'
+  text: |
+    He most recently authored Third Eye Spies: A Guide to Remote Viewing and Transformation of Consciousness and Do You See What I See? Memoirs of a Blind Biker: Lasers and Love, ESP and the CIA, and the Meaning of Life. He is co-author of Mind Reach: Scientists Look at Psychic Abilities; The Mind Race: Understanding and Using Psychic Abilities; Miracles of Mind: Remote Viewing and Spiritual Healing; The Heart of the Mind: How to Experience God Without Belief; and The End of Suffering: Fearless Living in Troubled Times.He is also an editor, publisher, songwriter, producer, teacher, and more.
+  source:
+    path: news/espresearch-russell-targ-snapshot.html
+    location: '¶2'
+  context: 'Self-attestation on Russell Targ''s ESP Research website (espresearch.com homepage), undated'
+  observation_type: relayed
+  significance: 'Targ''s own self-attestation of his authored and co-authored book catalogue (two recent solo / lead-authored works and five co-authored works), and his broader self-described roles beyond physicist and author (editor, publisher, songwriter, producer, teacher). Primary-source anchor for the book catalogue; specific publication years are not attested on the espresearch homepage.'
+
 entities_referenced:
 - id: e1
   added_date: '2026-05-14'
@@ -141,7 +152,44 @@ entities_referenced:
 
 naming_quirks: []
 
-rumors: []
+rumors:
+- id: r1
+  added_date: '2026-05-15'
+  claim: 'Russell Targ was born April 11, 1934 in Chicago, Illinois.'
+  status: not-primary-source-established
+  observed_sources:
+  - 'Wikipedia (Russell Targ article)'
+  - 'IRVA speaker biography page at irva.org/speaker/targ-russell (currently HTTP 404; the Internet Archive Wayback Machine retains snapshots but retrieval is blocked from this toolkit environment per sources/manifest.yaml manifest note)'
+  note: 'Targ''s birth date and place are widely repeated in third-party biographical sources but no primary attestation has been archived in this repository. The espresearch.com homepage does not state birth-date or place. When a primary-source attestation is archived (e.g., birth-record image, Wayback retrieval of the IRVA bio, an interview transcript where Targ states his birth date on the record), graduate this rumor to a quote entry.'
+
+- id: r2
+  added_date: '2026-05-15'
+  claim: 'Targ worked at Sperry Gyroscope (1956-1958), Technical Research Group (late 1950s), and Sylvania Electronic Defense Laboratories (1960s) prior to joining Stanford Research Institute around 1972.'
+  status: not-primary-source-established
+  observed_sources:
+  - 'Wikipedia (Russell Targ article)'
+  - 'IRVA speaker biography page (currently 404)'
+  - 'Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (cited in espresearch.com q4 but the book itself is not archived in this repository)'
+  note: 'Pre-SRI career details circulate widely in biographical writeups about Targ. The espresearch.com homepage attests Targ as ''a pioneer in the development of the laser'' (q1) but does not name pre-SRI employers. When Sperry / Technical Research Group / Sylvania employment is primary-source-attested (e.g., archived patents listing those employers, archived obituary, archived memoir excerpts), graduate to affiliation entries and quote entries with the specific source path.'
+
+- id: r3
+  added_date: '2026-05-15'
+  claim: 'Targ retired from Lockheed Martin in 1997.'
+  status: not-primary-source-established
+  observed_sources:
+  - 'IRVA speaker biography page (currently 404; Wayback retains snapshots per sources/manifest.yaml; pull blocked from this toolkit environment)'
+  - 'Wikipedia (Russell Targ article)'
+  note: 'The 1997 retirement year was previously attested on the IRVA speaker bio that is no longer live. The Internet Archive Wayback Machine retains the page but automated retrieval is blocked from this toolkit environment (HTTP 200 returns the Wayback ''One moment, please…'' anti-bot challenge page; curl + Mozilla User-Agent header tested, no useful response). When the IRVA bio is re-archived or a different primary source (Lockheed Martin retirement announcement, contemporaneous press coverage, the espresearch books page if it cites the date) is archived, graduate the period_end on affiliations[a3] (Lockheed Martin) and program_involvement[p2] (Lockheed laser technology) from absent to ''1997''.'
+
+- id: r4
+  added_date: '2026-05-15'
+  claim: 'The Stanford Research Institute psychic-abilities investigation that Targ and Puthoff cofounded was funded by the U.S. Central Intelligence Agency and the Defense Intelligence Agency, and became known as the Stargate Project (1972-1995).'
+  status: not-primary-source-established
+  observed_sources:
+  - 'Declassified CIA records released ~1995 (CIA CREST FOIA reading room contains hundreds of Stargate-program documents)'
+  - 'Wikipedia (Stargate Project article)'
+  - 'Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (the book''s subtitle explicitly references "ESP and the CIA"; not archived in this repository)'
+  note: 'The CIA / DIA funding chain for the SRI psychic-abilities investigation is extensively primary-source-documented in the declassified CIA records released after the Stargate Project was terminated in 1995. None of those documents are archived in this repository yet. The espresearch.com homepage (q1) attests Targ as ''cofounder of the Stanford Research Institute''s investigation into psychic abilities in the 1970s and 1980s'' but does not name CIA / DIA or the Stargate Project as the funder. When CIA CREST Stargate documents are archived in /sources/government/, graduate this rumor to quote entries + a program_involvement entry that supersedes p1 with the named CIA / DIA sponsorship and the formal Stargate program designation.'
 
 timeline:
 - id: t1

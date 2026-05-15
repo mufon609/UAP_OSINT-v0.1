@@ -76,6 +76,14 @@ _No direct observations documented._
 | Source | [archived source](../sources/news/espresearch-russell-targ-snapshot.html) |
 | Location | ¶2 |
 
+> He most recently authored Third Eye Spies: A Guide to Remote Viewing and Transformation of Consciousness and Do You See What I See? Memoirs of a Blind Biker: Lasers and Love, ESP and the CIA, and the Meaning of Life. He is co-author of Mind Reach: Scientists Look at Psychic Abilities; The Mind Race: Understanding and Using Psychic Abilities; Miracles of Mind: Remote Viewing and Spiritual Healing; The Heart of the Mind: How to Experience God Without Belief; and The End of Suffering: Fearless Living in Troubled Times.He is also an editor, publisher, songwriter, producer, teacher, and more.
+
+| Field | Value |
+|---|---|
+| Attributed to | Self-attestation on Russell Targ's ESP Research website (espresearch.com homepage), undated |
+| Source | [archived source](../sources/news/espresearch-russell-targ-snapshot.html) |
+| Location | ¶2 |
+
 ---
 
 ## Timeline
