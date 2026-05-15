@@ -8,6 +8,8 @@ created: '2026-05-14'
 primary_sources:
 - path: news/espresearch-russell-targ-snapshot.html
   format: html
+- path: news/irva-targ-russell-wayback-20250123.html
+  format: html
 - path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
   format: html
 - path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
@@ -25,11 +27,11 @@ document_intrinsic:
 
 context_extrinsic: {}
 
-background: 'Russell Targ is a physicist and author. Per Targ''s ESP Research site, Targ was a pioneer in the development of the laser and cofounder of the Stanford Research Institute''s investigation into psychic abilities in the 1970s and 1980s, and retired from Lockheed Martin as a senior staff scientist where he developed laser technology for peaceful applications. The 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (Targ and Puthoff) reports experiments at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. Applied Optics author affiliations show Lockheed Missiles & Space Company (1991) and Advanced Technology Center, Lockheed Martin (1996), both at 3251 Hanover Street, Palo Alto, California.'
+background: 'Russell Targ is a physicist and author. Per the IRVA page, Targ has a bachelor''s degree in physics from Queens College and did graduate work in physics at Columbia University. He has received two National Aeronautics and Space-Administration awards for inventions and contributions to lasers and laser communications. Per Targ''s ESP Research site, Targ was a pioneer in the development of the laser and cofounder of the Stanford Research Institute''s investigation into psychic abilities in the 1970s and 1980s. The 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (Targ and Puthoff) reports experiments at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. Applied Optics author affiliations show Lockheed Missiles & Space Company (1991) and Advanced Technology Center, Lockheed Martin (1996), both at 3251 Hanover Street, Palo Alto, California. Per the IRVA page, Targ presented remote-viewing demonstrations to the USSR Academy of Sciences in 1983 and 1984, and retired from Lockheed Martin in 1997 after he developed airborne laser systems for the detection of windshear and air turbulence.'
 
-top_relevance: 'Targ is the cofounder of the Stanford Research Institute investigation into psychic abilities in the 1970s and 1980s — the institutional context for the remote viewing research later cited across government materials. Targ''s Lockheed Martin senior staff scientist role places him at the Palo Alto site at 3251 Hanover Street.'
+top_relevance: 'Targ is the cofounder of the Stanford Research Institute investigation into psychic abilities in the 1970s and 1980s — the institutional context for the remote viewing research later cited across government materials. Targ''s Lockheed Martin senior staff scientist role places him at the Palo Alto site at 3251 Hanover Street; he retired in 1997 after work on airborne laser systems for windshear and air turbulence detection.'
 
-credibility_notes: 'Targ''s ESP Research site (his own publication) names him as a pioneer in the development of the laser and cofounder of the Stanford Research Institute investigation into psychic abilities. The 1974 Nature paper (Targ and Puthoff) places Targ at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. The 1991 and 1996 Applied Optics author affiliations show Targ at Lockheed Missiles & Space Company (1991) and Advanced Technology Center, Lockheed Martin (1996) — same Palo Alto site at 3251 Hanover Street. A separate 2018 talk [`/transcripts/lucistrust-garment-of-god-ryder-2018`] also names Targ as having worked at Lockheed for years.'
+credibility_notes: 'Targ''s ESP Research site (his own publication) names him as a pioneer in the development of the laser and cofounder of the Stanford Research Institute investigation into psychic abilities. The 1974 Nature paper (Targ and Puthoff) places Targ at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. The IRVA page states two National Aeronautics and Space-Administration ([`/organizations/nasa`]) awards for laser inventions, a Queens College bachelor''s degree and Columbia University graduate work in physics, 1983 and 1984 invitations to the USSR Academy of Sciences for remote-viewing demonstrations, and that Targ retired from Lockheed Martin in 1997. The IRVA page also names Jane Katra ([`/people/jane-katra`]) as Targ''s co-author on Miracles of Mind (1998). The 1991 and 1996 Applied Optics author affiliations show Targ at Lockheed Missiles & Space Company (1991) and Advanced Technology Center, Lockheed Martin (1996) — same Palo Alto site at 3251 Hanover Street. A separate 2018 talk [`/transcripts/lucistrust-garment-of-god-ryder-2018`] also names Targ as having worked at Lockheed for years.'
 
 quotes:
 - id: q1
@@ -76,6 +78,56 @@ quotes:
   context: 'Self-attestation on Russell Targ''s ESP Research website (espresearch.com homepage), undated'
   observation_type: relayed
   significance: 'Targ''s own self-attestation of his authored and co-authored book catalogue (two recent solo / lead-authored works and five co-authored works), and his broader self-described roles beyond physicist and author (editor, publisher, songwriter, producer, teacher). Primary-source anchor for the book catalogue; specific publication years are not attested on the espresearch homepage.'
+
+- id: q5
+  added_date: '2026-05-15'
+  text: |
+    Russell Targ is a physicist and author, a pioneer in the development of the laser and laser applications, and a cofounder of the Stanford Research Institute (SRI) investigation of psychic abilities in the 1970s and 1980s. SRI is a research and development think tank in Menlo Park, California. Called remote viewing, his work in the psychic area has been published in Nature, The Proceedings of the Institute of Electronic and Electrical Engineers (IEEE), and the Proceedings of the American Association the Advancement of Science (AAAS).
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶1'
+  context: 'International Remote Viewing Association speaker biography for Russell Targ, irva.org/speaker/targ-russell (live URL is currently HTTP 404; archived from Wayback Machine snapshot 20250123205703)'
+  observation_type: relayed
+  corroborated_by:
+  - q1
+  significance: 'Third-party (IRVA) biographical attestation corroborating Targ''s espresearch.com self-attestation (q1) of laser-pioneer + SRI psychic-abilities cofounder role, and adding new primary-source-attested facts: (a) the SRI work was published in Nature, IEEE Proceedings, and AAAS Proceedings — the Nature 1974 paper (q3) is one of those publications; (b) explicit framing of the SRI work as ''remote viewing''.'
+
+- id: q6
+  added_date: '2026-05-15'
+  text: |
+    Targ has a bachelor’s degree in physics from Queens College and did graduate work in physics at Columbia University. He has received two National Aeronautics and Space-Administration awards for inventions and contributions to lasers and laser communications. In 1983 and 1984 he accepted invitations to present remote-viewing demonstrations and to address the USSR Academy of Science on this research.
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶2'
+  context: 'International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703)'
+  observation_type: relayed
+  significance: 'IRVA bio attests Targ''s educational background (Queens College BS Physics + Columbia University graduate work in physics), two NASA awards for laser inventions, and a specific Cold-War-era engagement with the USSR Academy of Science (1983 and 1984 remote-viewing demonstrations). None of these facts are attested on the espresearch.com homepage.'
+
+- id: q7
+  added_date: '2026-05-15'
+  text: |
+    He is author or co-author of nine books dealing with the scientific investigation of psychic abilities and Buddhist approaches to the transformation of consciousness, including Mind Reach: Scientists Look at Psychic Ability (with E. Harold Puthoff, 1977, 2005); Miracles of Mind: Exploring Nonlocal Consciousness and Spiritual Healing (with Jane Katra, 1998); and Limitless Mind: A Guide to Remote Viewing and Transformation of Consciousness (2004). He also wrote an autobiography, Do You See What I See: Memoirs of a Blind Biker, in 2008. His current book is The Reality of ESP: A Physicist’s Proof of Psychic Abilities.
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶3'
+  context: 'International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703)'
+  observation_type: relayed
+  corroborated_by:
+  - q4
+  significance: 'IRVA bio adds publication-year and co-author detail to the book catalogue Targ self-attests on espresearch.com (q4). Specific corroboration: Mind Reach co-author E. Harold Puthoff, 1977 (reprint 2005); Miracles of Mind co-author Jane Katra, 1998; Limitless Mind 2004; Do You See What I See (autobiography) 2008. Specific divergence: IRVA lists Mind Reach co-author as ''E. Harold Puthoff'' while the 1974 Nature paper byline (q3) uses ''HAROLD PUTHOFF'' — same person, formal vs middle-initial style. Mind Reach''s subtitle differs slightly between sources (espresearch q4: ''Scientists Look at Psychic Abilities''; IRVA q7: ''Scientists Look at Psychic Ability'' — singular vs plural ''Ability'').'
+
+- id: q8
+  added_date: '2026-05-15'
+  text: |
+    As a senior staff scientist at Lockheed Missiles and Space Company, Targ developed airborne laser systems for the detection of windshear and air turbulence. Having retired in 1997, he now writes books on psychic research and teaches remote viewing worldwide.
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶4'
+  context: 'International Remote Viewing Association speaker biography for Russell Targ (Wayback snapshot 20250123205703)'
+  observation_type: relayed
+  corroborated_by:
+  - q2
+  significance: 'IRVA bio attests the specific Lockheed retirement year (1997) — the central retrieval target for this audit pass. Corroborates espresearch.com self-attestation (q2) of senior-staff-scientist role at Lockheed and adds the technical-domain framing (airborne laser systems for windshear and air turbulence detection — consistent with the 1991 and 1996 Applied Optics papers'' subject matter). Supersedes rumor r3 (1997 retirement was previously not-primary-source-established); r3 deleted on this audit pass.'
 
 entities_referenced:
 - id: e1
@@ -150,7 +202,60 @@ entities_referenced:
   wrap_path: '/transcripts/lucistrust-garment-of-god-ryder-2018'
   context_summary: 'Lucis Trust Arcane School conference, New York, April 28-29 2018 — Ryder talk ''The Garment of God: Esoterically and Scientifically'' (YouTube R9Yn0hgbVA0; published 2021-02-02 on the Lucis Trust YouTube channel). Auto-caption transcript registered at sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt (transcript_provenance: auto-caption). Ryder names Targ on camera at [55:28] (''russell targ dr targ had a lot of input'') and [1:08:10] (''dr targ who''s worked for me for years''). New unbuilt stub introduced by this Targ artifact.'
 
-naming_quirks: []
+- id: e10
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Jane Katra'
+  wrap_path: '/people/jane-katra'
+  context_summary: 'Co-author with Targ on Miracles of Mind: Exploring Nonlocal Consciousness and Spiritual Healing (1998) per the IRVA speaker bio (q7). New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q7
+
+- id: e11
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'Queens College'
+  wrap_path: '/organizations/queens-college'
+  context_summary: 'Targ''s bachelor''s degree in physics is from Queens College per the IRVA speaker bio (q6). New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q6
+
+- id: e12
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'Columbia University'
+  wrap_path: '/organizations/columbia-university'
+  context_summary: 'Targ did graduate work in physics at Columbia University per the IRVA speaker bio (q6). New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q6
+
+- id: e13
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'National Aeronautics and Space Administration (NASA)'
+  wrap_path: '/organizations/nasa'
+  context_summary: 'Targ has received two NASA awards for inventions and contributions to lasers and laser communications per the IRVA speaker bio (q6). New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q6
+
+- id: e14
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'USSR Academy of Sciences'
+  wrap_path: '/organizations/ussr-academy-of-sciences'
+  context_summary: 'Per the IRVA speaker bio (q6), Targ presented remote-viewing demonstrations and addressed the USSR Academy of Science on his research in 1983 and 1984. New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q6
+
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-15'
+  observed: 'Scientists Look at Psychic Ability'
+  canonical: 'Scientists Look at Psychic Abilities'
+  location: '¶3'
+  source_path: news/irva-targ-russell-wayback-20250123.html
+  resolution: disputed
+  note: 'The IRVA speaker bio (q7) renders Mind Reach''s subtitle in singular form (''Scientists Look at Psychic Ability''), while Targ''s own espresearch.com homepage (q4) renders the same book''s subtitle in plural form (''Scientists Look at Psychic Abilities''). Both are primary attestations by parties close to the source. Source-priority hierarchy (per feedback_source_priority_hierarchy.md): subject''s own words rank above third-party. The plural form (espresearch.com) is treated as canonical per Targ-self-attestation precedence; the IRVA-attested singular form is preserved as-source in the q7 quote text and flagged here as ''disputed'' so future contributors evaluating the book entity name can see the divergence. Note that ''Psychic Abilities'' (plural) also matches the typical published edition cover.'
 
 rumors:
 - id: r1
@@ -171,15 +276,6 @@ rumors:
   - 'IRVA speaker biography page (currently 404)'
   - 'Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (cited in espresearch.com q4 but the book itself is not archived in this repository)'
   note: 'Pre-SRI career details circulate widely in biographical writeups about Targ. The espresearch.com homepage attests Targ as ''a pioneer in the development of the laser'' (q1) but does not name pre-SRI employers. When Sperry / Technical Research Group / Sylvania employment is primary-source-attested (e.g., archived patents listing those employers, archived obituary, archived memoir excerpts), graduate to affiliation entries and quote entries with the specific source path.'
-
-- id: r3
-  added_date: '2026-05-15'
-  claim: 'Targ retired from Lockheed Martin in 1997.'
-  status: not-primary-source-established
-  observed_sources:
-  - 'IRVA speaker biography page (currently 404; Wayback retains snapshots per sources/manifest.yaml; pull blocked from this toolkit environment)'
-  - 'Wikipedia (Russell Targ article)'
-  note: 'The 1997 retirement year was previously attested on the IRVA speaker bio that is no longer live. The Internet Archive Wayback Machine retains the page but automated retrieval is blocked from this toolkit environment (HTTP 200 returns the Wayback ''One moment, please…'' anti-bot challenge page; curl + Mozilla User-Agent header tested, no useful response). When the IRVA bio is re-archived or a different primary source (Lockheed Martin retirement announcement, contemporaneous press coverage, the espresearch books page if it cites the date) is archived, graduate the period_end on affiliations[a3] (Lockheed Martin) and program_involvement[p2] (Lockheed laser technology) from absent to ''1997''.'
 
 - id: r4
   added_date: '2026-05-15'
@@ -241,6 +337,35 @@ timeline:
   category: testimony
   node_link: '/people/james-ryder'
 
+- id: t6
+  added_date: '2026-05-15'
+  date: '1983'
+  event: 'Targ accepts an invitation to present remote-viewing demonstrations and to address the USSR Academy of Sciences ([`/organizations/ussr-academy-of-sciences`]) on the SRI psychic-research work (per the IRVA speaker bio q6).'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶2'
+  category: other
+  node_link: '/organizations/ussr-academy-of-sciences'
+
+- id: t7
+  added_date: '2026-05-15'
+  date: '1984'
+  event: 'Targ again presents remote-viewing demonstrations to the USSR Academy of Sciences ([`/organizations/ussr-academy-of-sciences`]) (per the IRVA speaker bio q6).'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶2'
+  category: other
+  node_link: '/organizations/ussr-academy-of-sciences'
+
+- id: t8
+  added_date: '2026-05-15'
+  date: '1997'
+  event: 'Targ retires from Lockheed Martin after developing airborne laser systems for the detection of windshear and air turbulence (per the IRVA speaker bio, q8).'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶4'
+  category: role
+
 affiliations:
 - id: a1
   added_date: '2026-05-14'
@@ -266,12 +391,31 @@ affiliations:
 - id: a3
   added_date: '2026-05-14'
   organization_path: '/organizations/lockheed-martin'
-  role: 'Senior staff scientist at the Advanced Technology Center, Lockheed Martin (per the 1996 Applied Optics paper byline and Targ''s ESP Research site retirement self-attestation)'
+  role: 'Senior staff scientist at the Advanced Technology Center, Lockheed Martin (per the 1996 Applied Optics paper byline, Targ''s ESP Research site retirement self-attestation, and the IRVA speaker bio''s 1997-retirement attestation)'
   period_start: '1996'
+  period_end: '1997'
   source:
-    path: news/opg.optica.org-targ-coherent-lidar-airborne-wind-sensor-ii-1996.html
-    location: 'p. 1'
-  note: 'period_start 1996 is the earliest archived primary-source attestation of Targ at the post-1995 Lockheed Martin entity at the 3251 Hanover Street Palo Alto site (1996 Applied Optics paper byline). period_end intentionally absent — Targ''s own ESP Research site reports his retirement from Lockheed Martin but does not attest the retirement year; the IRVA speaker bio that previously attested ''1997 retirement'' is currently 404 (per sources/manifest.yaml). James Ryder ([`/people/james-ryder`]) places Targ at Lockheed Martin during Ryder''s Lockheed Martin Space Systems Company vice president era per the 2018 talk transcript ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]).'
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶4'
+  note: 'period_start 1996 is the earliest archived primary-source attestation of Targ at the post-1995 Lockheed Martin entity at the 3251 Hanover Street Palo Alto site (1996 Applied Optics paper byline). period_end 1997 anchors on the IRVA speaker bio (q8): ''Having retired in 1997''. The IRVA bio uses the pre-1995 corporate name ''Lockheed Missiles and Space Company'' in its prose even when describing the late-career period; the corporate-name transition at the same Palo Alto site is reflected here by a2 (LMSC 1991-1995) + a3 (Lockheed Martin 1996-1997). Targ''s espresearch.com self-attestation (q2) reports retirement as a senior staff scientist but does not name the year.'
+
+- id: a4
+  added_date: '2026-05-15'
+  organization_path: '/organizations/queens-college'
+  role: 'Bachelor''s degree in physics'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶2'
+  note: 'Per the IRVA speaker bio (q6), Targ holds a bachelor''s degree in physics from Queens College. period_start / period_end intentionally absent — IRVA does not attest specific enrollment / graduation years.'
+
+- id: a5
+  added_date: '2026-05-15'
+  organization_path: '/organizations/columbia-university'
+  role: 'Graduate work in physics'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶2'
+  note: 'Per the IRVA speaker bio (q6), Targ did graduate work in physics at Columbia University after his Queens College BS Physics. period_start / period_end intentionally absent — IRVA does not attest specific enrollment / completion years and does not state whether a graduate degree was conferred.'
 
 relationships:
 - id: r1
@@ -309,11 +453,25 @@ program_involvement:
 - id: p2
   added_date: '2026-05-14'
   program: 'Lockheed Martin laser technology research (Lockheed Missiles & Space Company / Advanced Technology Center)'
-  role: 'Senior staff scientist (per Targ''s ESP Research site self-attestation and the 1991 and 1996 Applied Optics author affiliations)'
+  role: 'Senior staff scientist (per Targ''s ESP Research site self-attestation, the 1991 and 1996 Applied Optics author affiliations, and the IRVA speaker bio): developed airborne laser systems for the detection of windshear and air turbulence'
   period_start: '1991'
+  period_end: '1997'
   evidentiary_basis: 'primary-source'
   confidence: 'high'
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
     location: 'p. 1'
-  note: 'period_start 1991 anchors on the earliest archived peer-reviewed paper byline placing Targ at the Hanover Street Palo Alto Lockheed site (Lockheed Missiles & Space Company pre-merger; Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end intentionally absent — Targ''s ESP Research site reports retirement but does not attest the retirement year. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk places Targ at Lockheed during Ryder''s pre-2011 vice president era ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]).'
+  note: 'period_start 1991 anchors on the earliest archived peer-reviewed paper byline placing Targ at the Hanover Street Palo Alto Lockheed site (Lockheed Missiles & Space Company pre-merger; Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end 1997 per IRVA speaker bio q8 ''Having retired in 1997''. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk places Targ at Lockheed during Ryder''s pre-2011 vice president era ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]), consistent with the 1991-1997 window.'
+
+- id: p3
+  added_date: '2026-05-15'
+  program: 'USSR Academy of Sciences remote-viewing demonstrations'
+  role: 'Invited presenter — addressed the USSR Academy of Sciences on the SRI remote-viewing research, presenting demonstrations of the technique'
+  period_start: '1983'
+  period_end: '1984'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶2'
+  note: 'Per the IRVA speaker bio (q6), Targ accepted invitations to present remote-viewing demonstrations to the USSR Academy of Sciences in 1983 and in 1984. Cold-War-era engagement between U.S. and Soviet psychic-research communities; the IRVA bio does not name specific Soviet counterparts.'

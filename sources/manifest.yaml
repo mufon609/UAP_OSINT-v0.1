@@ -2429,9 +2429,12 @@
   wayback_date: '2025-09-06'
 - url: https://www.irva.org/speaker/targ-russell
   format: html
-  status: pending
-  archive_status: 2
-  note: International Remote Viewing Association — Russell Targ speaker biography page. Investigation citation [25]. Pending — URL returns HTTP 404 (current IRVA site reorganized; the speaker bio at this path is no longer live). The IRVA homepage at irva.org does not surface a Targ biographical link in its current navigation. Targ's own site espresearch.com is the substitute primary attestation for his Lockheed Martin senior staff scientist role + SRI co-founder relationship; the IRVA bio's specific '1997 retirement' attestation is not currently re-archivable.
+  status: archived
+  path: news/irva-targ-russell-wayback-20250123.html
+  archived_date: '2026-05-15'
+  sha256: 19476529fe736380bbcf4188acdda805b14f18ab8470c3fc1c3106e0511ea066
+  archive_status: 3
+  note: 'International Remote Viewing Association — Russell Targ speaker biography page. Wayback Machine snapshot 20250123205703 (live URL has been HTTP 404 since the IRVA site was reorganized). Retrieved via curl against the fuzzy-timestamp Wayback URL `https://web.archive.org/web/2024/https://www.irva.org/speaker/targ-russell` which redirects to the nearest snapshot WITHOUT triggering the Wayback anti-bot challenge that exact-timestamp URLs hit. Substantive bio content (4 paragraphs): laser pioneer + SRI psychic-abilities cofounder; Queens College BS Physics + Columbia University graduate work; two NASA awards for laser inventions; USSR Academy of Science remote-viewing demonstrations in 1983 and 1984; 9 authored / co-authored books (Mind Reach with Puthoff 1977/2005, Miracles of Mind with Katra 1998, Limitless Mind 2004, Memoirs of a Blind Biker 2008, The Reality of ESP); senior staff scientist at Lockheed Missiles & Space Company; retired 1997.'
   wayback_date: '2025-12-14'
 - url: https://www.jpost.com/omg/article-856910
   format: html

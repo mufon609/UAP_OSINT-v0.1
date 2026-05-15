@@ -356,6 +356,53 @@ false errors.
 Surfaced: Grusch rebuild (2026-04-22) — 5 Wayback-fetched HTMLs arrived
 gzipped; decompressed post-hoc with checksum update.
 
+## Wayback Machine fetch — fuzzy-timestamp URLs bypass anti-bot challenge
+
+**Gotcha:** Exact-timestamp Wayback URLs of the form
+`https://web.archive.org/web/{YYYYMMDDhhmmss}/{original_url}` trigger
+the Wayback anti-bot challenge from automated clients. The challenge
+page is a JavaScript-redirect placeholder with title "One moment,
+please…" and a `setTimeout` body that reloads after 5 seconds. Without
+JS execution, `curl` saves the placeholder page instead of the actual
+snapshot. Tested workarounds that do NOT help: rotating User-Agent
+strings, cookie-jar persistence with sleep+retry, the CDX search API
+(returns 503), the Memento Time Travel API (returns empty).
+
+**What works:** **fuzzy-timestamp URLs** like
+`https://web.archive.org/web/2024/{original_url}` redirect to the
+nearest available snapshot WITHOUT triggering the anti-bot challenge.
+The redirect path is server-side and serves the snapshot content
+directly:
+
+```
+curl -sSL --compressed -A "Mozilla/5.0 Firefox/120.0" \
+     -o sources/news/foo-wayback-{YYYYMMDD}.html \
+     "https://web.archive.org/web/2024/https://www.example.com/path"
+```
+
+Use a year-only fuzzy timestamp (`/web/2024/`) or a YYYYMM
+(`/web/202412/`) — both work. The actual snapshot timestamp can be
+read out of the response (`__wm.wombat("{original_url}","{timestamp}",
+…)`); record it in the manifest entry's `note` field for provenance.
+
+**When to use this workflow:** the live URL is HTTP 404 / dead AND
+the manifest entry has `wayback_date` set (proving a snapshot exists)
+AND the original URL needs to be archived locally. Without a Wayback
+snapshot, fall back to manual browser save.
+
+**Manifest update after pull:** set `status: archived`, add `path` +
+`sha256` + `archived_date`, set `archive_status: 3` (both bits — local
+and Wayback). The note field should explain that the local archive
+is a Wayback-recovered snapshot and reference the snapshot timestamp
+embedded in the page's `__wm.wombat` call.
+
+Surfaced: Russell Targ audit (2026-05-15) — IRVA speaker bio page
+required for the audit; live URL was HTTP 404; fuzzy-timestamp
+Wayback URL `https://web.archive.org/web/2024/https://www.irva.org/
+speaker/targ-russell` retrieved snapshot 20250123205703 cleanly.
+Exact-timestamp URLs against the same path returned the anti-bot
+challenge page.
+
 ---
 
 ## Large primary-source files (>100MB)

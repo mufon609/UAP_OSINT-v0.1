@@ -7948,3 +7948,86 @@
   message: |
     Table cell in 'Timeline' exceeds word budget (76>55): James Ryder ([`/people/james-ryder`]) names Targ on camera a...
 
+- ts: 2026-05-15T03:35:28Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 3 significant token(s) not in source (prose-drift check — contributor review): bio, developing, speaker
+  tokens: [bio, developing, speaker]
+
+- ts: 2026-05-15T03:35:28Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 1 significant token(s) not in source (prose-drift check — contributor review): retiring
+  tokens: [retiring]
+
+- ts: 2026-05-15T03:35:28Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 4 significant token(s) not in source (prose-drift check — contributor review): adds, bio, retirement, speaker
+  tokens: [adds, bio, retirement, speaker]
+
+- ts: 2026-05-15T03:36:32Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (62>55): Targ retires from Lockheed Martin (Lockheed Missiles and Spa...
+
+- ts: 2026-05-15T03:36:32Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e10' ('Jane Katra') wrap_path '/people/jane-katra' does not appear as a [`/people/jane-katra`] link in the node
+
+- ts: 2026-05-15T03:36:32Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('National Aeronautics and Space Administration (NASA)') wrap_path '/organizations/nasa' does not appear as a [`/organizations/nasa`] link in the node
+
+- ts: 2026-05-15T03:36:55Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (62>55): Targ retires from Lockheed Martin (Lockheed Missiles and Spa...
+
+- ts: 2026-05-15T03:37:06Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (62>55): Targ retires from Lockheed Martin (Lockheed Missiles and Spa...
+
