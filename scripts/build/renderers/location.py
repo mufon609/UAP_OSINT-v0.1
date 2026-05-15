@@ -21,6 +21,7 @@ from ._universal import (
     render_description,
     render_preserved_disagreements,
     render_primary_source_contradictions,
+    render_public_record_claims,
     render_source_form_notes,
 )
 
@@ -239,6 +240,7 @@ def render_body_location(artifact, fm):
         render_location_key_passages(artifact),
         render_location_relationships(artifact),
         render_primary_source_contradictions(artifact),
+        render_public_record_claims(artifact),
         render_source_form_notes(artifact),
         render_preserved_disagreements(artifact),
         render_associated_nodes(),

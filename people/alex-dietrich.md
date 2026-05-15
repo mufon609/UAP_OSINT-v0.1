@@ -471,6 +471,18 @@ She had been in one-way contact with Pentagon UAP investigators since about 2009
 
 ---
 
+## Public-Record Claims Without Primary Source
+
+Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
+
+### "Lt. Cmdr. Jim Slaight was Alex Dietrich's Weapons System Officer (WSO) in the back seat of her F/A-18F during the November 14, 2004 USS Nimitz Tic Tac encounter"
+
+**Circulates in:** Multiple secondary UAP-community sources name Slaight as Dietrich's backseater; Slaight briefly co-appeared with Fravor on a Jesse Watters Fox segment in 2017-2018 but has been largely silent since.
+
+**Investigator note:** Dietrich does NOT name her WSO in any of the 19 primary sources surveyed. In the American Veterans Center 2024 interview she refers to her backseater only by rank ('I had a department head a lieutenant commander in my back seat'). The Slaight identification is widely circulated but lacks Dietrich-direct or Slaight-direct primary-source attestation in the current source pool.
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

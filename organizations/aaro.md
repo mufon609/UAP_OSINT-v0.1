@@ -1187,6 +1187,24 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 
 ---
 
+## Public-Record Claims Without Primary Source
+
+Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
+
+### "Kirkpatrick's December 2023 departure was driven by conflict with Congressional whistleblower investigators and/or political pressure rather than voluntary retirement"
+
+**Circulates in:** Circulating in public discourse attributed to unnamed sources and to commentary accompanying the November 2023 departure announcement
+
+**Investigator note:** The Hicks statement is the only primary-source account of the departure's framing surfaced in the 11-source corpus here; absent conflicting primary evidence, the announcement framing stands as the authoritative public record
+
+### "AARO's investigatory scope was narrowed or constrained by DoD leadership to exclude access to classified programs that would have contained evidence of UAP reverse-engineering activities"
+
+**Circulates in:** Widely referenced in public UAP discourse and in commentary on the HRR Vol I findings; Explicit claims attributed to witnesses at 2023-07-26 House Oversight hearing and subsequent testimony that is archived in this repository
+
+**Investigator note:** AARO's own primary sources assert adequate investigatory access; counter-claims live in other archived primary sources. The disagreement is a cross-node analytical finding rather than a gap in AARO's primary record
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

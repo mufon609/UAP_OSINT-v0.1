@@ -72,6 +72,30 @@ As the flight turned back towards the CAP point, the air controller let them kno
 
 ---
 
+## Public-Record Claims Without Primary Source
+
+Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
+
+### "The pilot who took the approximately 90 second targeting pod video was Chad Underwood"
+
+**Circulates in:** New York Magazine interview with Chad Underwood (2019); Multiple secondary-source accounts
+
+**Investigator note:** Fravor's 2023 written testimony says only "one of my crews who were getting ready to launch" — no name given. Widely reported in secondary coverage as Chad Underwood.
+
+### "The encounter took place off the coast of Southern California"
+
+**Circulates in:** Multiple secondary-source accounts
+
+**Investigator note:** Fravor's 2023 written testimony places the encounter "at sea" with the CAP point "roughly 40 miles South of the ship" — no geographic region is named in this source.
+
+### "The encounter occurred on November 14, 2004"
+
+**Circulates in:** Multiple secondary-source accounts
+
+**Investigator note:** Fravor's 2023 written testimony gives only "Nov 2004" and "at sea for roughly 2 weeks" from the Early November start — consistent with mid-November but not specifying a date.
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

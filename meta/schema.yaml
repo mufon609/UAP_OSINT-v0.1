@@ -1131,25 +1131,31 @@ types:
       status_values: [not-primary-source-established, primary-source-disputed]
       # claim: the circulating claim as prose
       # status: not-primary-source-established | primary-source-disputed
-      #   Fabrication-prevention catalogue. Rumors are artifact-only
-      #   investigator memory: contributors record widely-circulated
-      #   claims lacking primary-source backing so a future session
-      #   doesn't unconsciously recirculate them into node prose.
-      #   - not-primary-source-established: no renderer surface. Pure
-      #     write-time discipline. When a rumor eventually gets
-      #     primary-source backing, graduate it to a quote or claim
-      #     and delete the rumor entry.
+      #   Fabrication-prevention catalogue + reader-visible
+      #   transparency surface. Rumors are contributor-curated records
+      #   of widely-circulated claims so a future session doesn't
+      #   unconsciously recirculate them into node prose, AND so
+      #   readers landing on the node see the repository's stance on
+      #   each circulating claim rather than silent omission.
+      #   - not-primary-source-established: widely reported in public
+      #     discourse; no primary-source attestation archived in this
+      #     repository (yet). Renders as a `## Public-Record Claims
+      #     Without Primary Source` section on the node body. When a
+      #     primary source is eventually archived, graduate the rumor
+      #     to a quote / claim and delete the rumor entry.
       #   - primary-source-disputed: primary sources actively refute
       #     the claim. Renders as a `## Primary-Source Contradictions`
       #     section on the node body — the contradiction itself is an
       #     evidentiary finding investigators should see.
       # observed_sources: list of descriptions — where the rumor
-      #   circulates. For disputed rumors, renders as the "Circulates
-      #   in" line in the contradictions section.
-      # note: for primary-source-disputed rumors this is the
-      #   primary-source refutation text (renders as "Primary-source
-      #   refutation:"). For not-primary-source-established rumors it's
-      #   contributor context — artifact-only, never renders.
+      #   circulates. Renders as the "Circulates in:" line on both
+      #   render surfaces.
+      # note: free-text contributor synthesis. Renders as
+      #   "Primary-source refutation:" on disputed rumors and
+      #   "Investigator note:" on not-primary-source-established
+      #   rumors. Use it to record (a) what the rumor would need to
+      #   graduate to a confirmed quote and (b) where to look for a
+      #   primary source if one becomes archivable.
 
     timeline_entry:
       required: [date, event, source]

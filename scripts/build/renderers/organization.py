@@ -21,6 +21,7 @@ from ._universal import (
     render_description,
     render_preserved_disagreements,
     render_primary_source_contradictions,
+    render_public_record_claims,
     render_source_form_notes,
     render_timeline,
 )
@@ -345,6 +346,7 @@ def render_body_organization(artifact, kind):
         render_timeline(artifact),
         render_org_relationships(artifact),
         render_primary_source_contradictions(artifact),
+        render_public_record_claims(artifact),
         render_source_form_notes(artifact),
         render_preserved_disagreements(artifact),
         render_associated_nodes(),

@@ -749,6 +749,45 @@ documented separately.
 
 ---
 
+## Rumors — circulating claims without primary-source backing
+
+Person / organization / event / location artifacts carry an optional
+`rumors[]` section recording widely-circulated public-record claims
+the repository has positioned on but not yet anchored to a verbatim
+primary-source quote. Two statuses, two reader-visible render
+surfaces:
+
+- `not-primary-source-established` — the claim circulates in public
+  discourse (Wikipedia, third-party biographies, news coverage,
+  organizational PR) but no primary attestation has been archived in
+  this repository. Renders as a `## Public-Record Claims Without
+  Primary Source` section. Reader sees both the claim and the
+  repository's stance: "we know this circulates; we haven't sourced
+  it." Investigator note in the entry captures what would graduate
+  the rumor to a quote (e.g., "when the IRVA bio is re-archived from
+  Wayback, graduate r3").
+
+- `primary-source-disputed` — primary sources in the archive
+  actively refute the claim. Renders as a `## Primary-Source
+  Contradictions` section. The contradiction itself is the
+  evidentiary finding; the note field carries the refutation text.
+
+Both surfaces serve dual purposes — fabrication-prevention for future
+contributor sessions ("we already considered this; don't re-introduce
+it without a source") and reader-visible transparency ("here's
+what's circulating and how we evaluated it"). When a primary source
+eventually anchors a `not-primary-source-established` rumor, graduate
+it to a `quotes[]` entry citing the new source and delete the rumor
+entry — `git log --follow` preserves the rumor history.
+
+Rumors are NOT a third evidentiary tier. The Confirmed / Flagged
+binary still applies to the structured-table content of the node;
+rumors are a separate catalogue of circulating-but-unanchored
+claims, distinct from both confirmed facts and structured-Flagged
+secondary-source-only entries.
+
+---
+
 ## Three-layer evidentiary architecture
 
 The repository carries three distinct evidentiary layers. Each has a

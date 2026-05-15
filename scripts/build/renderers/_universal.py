@@ -20,7 +20,14 @@ their type-specific sections.
                                          — emits on every type whose
                                            schema permits ``rumors``
                                            (person / organization /
-                                           event / location).
+                                           event / location). Filters
+                                           rumors by status
+                                           ``primary-source-disputed``.
+  - ``render_public_record_claims``      — parallel surface to
+                                           ``render_primary_source_contradictions``
+                                           filtering rumors by status
+                                           ``not-primary-source-established``.
+                                           Same four target types.
   - ``render_timeline``                  — person / event / organization
                                            share a single Timeline shape.
   - ``render_corroboration``             — eyewitness persons + encounter
@@ -140,8 +147,9 @@ def render_primary_source_contradictions(artifact):
 
     Returns empty string when no disputed rumors exist. Disputed
     rumors are analytical findings worth surfacing to readers; the
-    `not-primary-source-established` status stays artifact-only
-    (pure fabrication-prevention, never renders).
+    parallel `not-primary-source-established` status renders via
+    ``render_public_record_claims`` (separate section so readers can
+    distinguish active refutation from absence-of-primary-source).
 
     Applies to the four target types whose schema rules require
     `rumors` (person / organization / event / location). Document /
@@ -178,6 +186,63 @@ def render_primary_source_contradictions(artifact):
         note = (r.get("note") or "").strip()
         if note:
             parts.append(f"**Primary-source refutation:** {note}")
+            parts.append("")
+    return "\n".join(parts).rstrip() + "\n"
+
+
+def render_public_record_claims(artifact):
+    """Emit a `## Public-Record Claims Without Primary Source` section
+    listing rumors whose status is `not-primary-source-established` —
+    widely-reported claims circulating in public discourse that the
+    repository has not yet archived a primary source for.
+
+    Parallel surface to ``render_primary_source_contradictions``
+    (which renders the active-refutation case). This renderer
+    surfaces the absence-of-primary-source case so readers see both
+    confirmed content and contributor-curated unsourced material on
+    the same node — closing the prior asymmetry where disputed
+    rumors rendered but not-established rumors stayed artifact-only.
+
+    The schema's fabrication-prevention purpose is preserved: rumors
+    are still investigator memory, but they're now reader-visible
+    investigator memory. A reader landing on the node sees the
+    repository's stance ("we know this circulates; we haven't sourced
+    it") rather than silent omission.
+
+    Returns empty string when no qualifying rumors exist. Applies to
+    the four target types whose schema rules require `rumors`
+    (person / organization / event / location)."""
+    rumors = artifact.get("rumors") or []
+    qualifying = [
+        r for r in rumors
+        if isinstance(r, dict) and r.get("status") == "not-primary-source-established"
+    ]
+    if not qualifying:
+        return ""
+
+    parts = [
+        "## Public-Record Claims Without Primary Source",
+        "",
+        "Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.",
+        "",
+    ]
+    for r in qualifying:
+        claim = (r.get("claim") or "").strip()
+        if not claim:
+            continue
+        parts.append(f'### "{claim}"')
+        parts.append("")
+        obs = r.get("observed_sources")
+        if obs:
+            if isinstance(obs, list):
+                obs_str = "; ".join(str(o) for o in obs)
+            else:
+                obs_str = str(obs)
+            parts.append(f"**Circulates in:** {obs_str}")
+            parts.append("")
+        note = (r.get("note") or "").strip()
+        if note:
+            parts.append(f"**Investigator note:** {note}")
             parts.append("")
     return "\n".join(parts).rstrip() + "\n"
 

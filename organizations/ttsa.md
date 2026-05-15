@@ -676,6 +676,18 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 
 ---
 
+## Public-Record Claims Without Primary Source
+
+Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
+
+### "Retired Lt. Gen. William N. McCasland personally facilitated TTSA's founding-era advisory team and had insider knowledge of recovered UAP material at Wright-Patterson Air Force Base."
+
+**Circulates in:** DeLonge's 2016-01-25 email to Podesta (WikiLeaks Podesta emails; Public discourse about the TTSA-McCasland relationship
+
+**Investigator note:** The sole primary-source attestation of McCasland's advisory-team role is DeLonge's own 2016 email to Podesta. McCasland has not publicly confirmed or denied the claim, and no independent primary-source documentation of his TTSA involvement is archived in this repository. The Podesta email itself is primary-source-authentic (SPF/DMARC/DKIM validated in the raw source), but it documents DeLonge's claim about McCasland, not McCasland's own statements.
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

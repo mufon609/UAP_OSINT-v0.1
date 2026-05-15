@@ -162,6 +162,30 @@ Targ's ESP Research site (his own publication) names him as a pioneer in the dev
 
 ---
 
+## Public-Record Claims Without Primary Source
+
+Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
+
+### "Russell Targ was born April 11, 1934 in Chicago, Illinois."
+
+**Circulates in:** Wikipedia (Russell Targ article); IRVA speaker biography page at irva.org/speaker/targ-russell (currently HTTP 404; the Internet Archive Wayback Machine retains snapshots but retrieval is blocked from this toolkit environment per sources/manifest.yaml manifest note)
+
+**Investigator note:** Targ's birth date and place are widely repeated in third-party biographical sources but no primary attestation has been archived in this repository. The espresearch.com homepage does not state birth-date or place. When a primary-source attestation is archived (e.g., birth-record image, Wayback retrieval of the IRVA bio, an interview transcript where Targ states his birth date on the record), graduate this rumor to a quote entry.
+
+### "Targ worked at Sperry Gyroscope (1956-1958), Technical Research Group (late 1950s), and Sylvania Electronic Defense Laboratories (1960s) prior to joining Stanford Research Institute around 1972."
+
+**Circulates in:** Wikipedia (Russell Targ article); IRVA speaker biography page (currently 404); Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (cited in espresearch.com q4 but the book itself is not archived in this repository)
+
+**Investigator note:** Pre-SRI career details circulate widely in biographical writeups about Targ. The espresearch.com homepage attests Targ as 'a pioneer in the development of the laser' (q1) but does not name pre-SRI employers. When Sperry / Technical Research Group / Sylvania employment is primary-source-attested (e.g., archived patents listing those employers, archived obituary, archived memoir excerpts), graduate to affiliation entries and quote entries with the specific source path.
+
+### "The Stanford Research Institute psychic-abilities investigation that Targ and Puthoff cofounded was funded by the U.S. Central Intelligence Agency and the Defense Intelligence Agency, and became known as the Stargate Project (1972-1995)."
+
+**Circulates in:** Declassified CIA records released ~1995 (CIA CREST FOIA reading room contains hundreds of Stargate-program documents); Wikipedia (Stargate Project article); Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (the book's subtitle explicitly references "ESP and the CIA"; not archived in this repository)
+
+**Investigator note:** The CIA / DIA funding chain for the SRI psychic-abilities investigation is extensively primary-source-documented in the declassified CIA records released after the Stargate Project was terminated in 1995. None of those documents are archived in this repository yet. The espresearch.com homepage (q1) attests Targ as 'cofounder of the Stanford Research Institute's investigation into psychic abilities in the 1970s and 1980s' but does not name CIA / DIA or the Stargate Project as the funder. When CIA CREST Stargate documents are archived in /sources/government/, graduate this rumor to quote entries + a program_involvement entry that supersedes p1 with the named CIA / DIA sponsorship and the formal Stargate program designation.
+
+---
+
 ## Preserved Disagreements
 
 Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.

@@ -338,6 +338,24 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 
 ---
 
+## Public-Record Claims Without Primary Source
+
+Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
+
+### "Karl Nell served as Army Director / Army liaison supporting the UAPTF from 2021 to 2022"
+
+**Circulates in:** Americans for Safe Aerospace advisor listing (non-.gov; Stratton is a listed advisor to the same organization); SALT speaker bio (salt.org); The Debrief Kean/Blumenthal coverage
+
+**Investigator note:** Widely attested across secondary sources but not in the primary sources this artifact has cited. Logged here while the primary-source gap remains open.
+
+### "UAPTF was deliberately under-resourced and denied access to pre-existing compartmented UAP programs within the U.S. Government"
+
+**Circulates in:** Grusch sworn testimony at 2023-07-26 House Oversight hearing (archived as /documents/written-testimony-grusch-2023) claims denial of access to a "multi-decade UAP crash retrieval and reverse engineering program"; Widely circulating in UAP-related public discourse
+
+**Investigator note:** The allegation is a cross-node analytical finding rather than a UAPTF-internal record. UAPTF's own primary sources do not substantiate or refute the scope-constraint framing
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

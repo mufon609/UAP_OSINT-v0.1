@@ -334,6 +334,18 @@ Widely-circulated secondary-source claims contradicted by primary-source evidenc
 
 ---
 
+## Public-Record Claims Without Primary Source
+
+Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
+
+### "IPMO is an institutional successor or continuation of the Office of Strategic Influence (OSI), the short-lived 2001-2002 DoD office shut down by SecDef Rumsfeld after public scrutiny."
+
+**Circulates in:** Klippenstein (The Intercept, May 17, 2023) — "Inside The Pentagon's New Perception Management Office"; Webb (MintPress News, June 29, 2023); Klarenberg (multiple outlets, 2023); Wikipedia "Influence and Perception Management Office" article
+
+**Investigator note:** No primary source — including Holly's Notre Dame memo, the IPMO PWS, the NSI 23-S-3438 IPMO 101 slides, the NSI Speaker Series page, and OSD OP-5 FY 2023 / FY 2024 / FY 2025 / FY 2026 — names a predecessor office. Holly's NSI Speaker Series talk references a "two-decade institutional debate among military and civilian leaders" about consolidating influence-related governance, but does not name OSI or any other named predecessor at primary-source level. Claims that IPMO is a successor to OSI (Office of Strategic Influence, 2001-2002) or to subsequent Strategic Communication coordinator roles are journalistic / historiographic, not documented institutional succession. Recorded here per fabrication-prevention discipline so a future contributor does not unconsciously recirculate the lineage claim into node prose.
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.

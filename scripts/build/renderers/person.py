@@ -28,6 +28,7 @@ from ._universal import (
     render_corroboration,
     render_preserved_disagreements,
     render_primary_source_contradictions,
+    render_public_record_claims,
     render_source_form_notes,
     render_timeline,
 )
@@ -326,6 +327,7 @@ def render_body_person(artifact, archetype):
         sections.append(render_vouching_chain(artifact))
     sections.extend([
         render_primary_source_contradictions(artifact),
+        render_public_record_claims(artifact),
         render_source_form_notes(artifact),
         render_preserved_disagreements(artifact),
         render_associated_nodes(),

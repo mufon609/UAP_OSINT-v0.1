@@ -335,6 +335,24 @@ Solicitation HQ003424R0178 issued call orders for SASP and EXDIR support service
 
 ---
 
+## Public-Record Claims Without Primary Source
+
+Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
+
+### "Arlo Solutions has a direct contract with the Influence and Perception Management Office (IPMO) — i.e., Arlo is an IPMO contractor in the same way Sancorp is the IPMO contractor under HQ003422C0064 / HQ003423C0061 / HQ003424C0046."
+
+**Circulates in:** meta/topic/research-queue.md F.X finding-node candidate writeup, citing the now-retired meta/topic/working-notes/uap-disclosure-architecture-handoff.md; Arlo's own recruitment page advertises positions titled "Influence, Deception, and Perception Management Activities Staff Officer SME IV / V" using IPMO's verbatim mission language
+
+**Investigator note:** Investigated 2026-05-03. No primary source attests an Arlo-IPMO contract. Arlo's federal contract record (USAspending UEI JSRCFJVJM874, top 50 awards) names OUSD(I&S) sub-directorates SASP, EXDIR, and CL&S as customer offices but does not name IPMO. The Influence/Deception/Perception position descriptions on Arlo's recruitment page list OUSD(I&S) generally as the customer office; the work most likely bills under SASP scope under HQ003425F0104 (which has scope overlap with IPMO mission areas including "designated compartmented programs" management) but that is inference, not primary-source attestation. Graduate to a quote entry if a USAspending or FOIA-released contract record names IPMO as Arlo's customer office.
+
+### "Sancorp's resigned SASP staff officer key personnel ("X" in the GAO B-422985 decision) joined Arlo Solutions in February 2025 — i.e., Arlo poached the Sancorp incumbent who would have filled the SASP staff officer SME IV role, materially weakening Sancorp's protest position."
+
+**Circulates in:** GAO B-422985.4 / B-422985.5 decision (June 11, 2025) names Arlo as the intervenor whose request for dismissal cited X's resignation and new employment; Arlo's recruitment page advertises Influence, Deception, and Perception Management Activities Staff Officer SME IV positions — same level/role X had at Sancorp; Arlo's Greenhouse job board carries an "OUSW(I&S) SASP Incumbent" category placeholder, suggesting incumbent-staff-transfer mechanics
+
+**Investigator note:** Investigated 2026-05-03. No primary source establishes an X→Arlo lateral move. Two converging structural signals point to a non-Arlo employer: (1) Arlo's intervenor brief (per GAO source line 1559) names X's new employer as "another company" — third-party phrasing; a self-referencing employer would normally be named directly. (2) X's new role per Arlo's brief is "Operations Officer/Research Analyst" — title does not match Arlo's Greenhouse job-board taxonomy of Staff Officer SME I-IV roles tagged by mission area. The "Operations Officer/Research Analyst" hybrid title is more consistent with a specialized analytical firm or government direct-hire position. X is anonymized to a single letter in the GAO source by deliberate agency choice; identification via authenticated LinkedIn scraping was declined on Terms-of-Service / privacy / repository-discipline grounds. The protest narrative stands as documented regardless of X's identity — the SASP-key-personnel-unavailability mechanic is the load-bearing fact, not X's subsequent employer. Graduate to a quote entry if a primary source (FOIA-released GAO exhibit, federal-court filing, or named hire announcement) attests the X→Arlo claim.
+
+---
+
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
