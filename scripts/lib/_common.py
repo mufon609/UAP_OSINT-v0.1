@@ -332,6 +332,23 @@ def load_manifest_paths():
     return {e.get("path") for e in load_manifest() if e.get("path")}
 
 
+def normalize_source_rel_path(arg_path):
+    """Normalize a contributor-supplied source path to manifest-canonical
+    form (relative to ``sources/``). Accepts both ``news/foo.html``
+    (already canonical) and ``sources/news/foo.html`` (repo-root form
+    that contributors often copy from grep / find output) and returns
+    the canonical form. Also strips a leading slash. Use this at every
+    CLI boundary that takes a source path (``extract-source.py
+    --source``, ``research-scaffold.py --sources``, ``manifest.py add
+    --path``) so the same input works regardless of which root the
+    contributor pasted.
+    """
+    p = (arg_path or "").lstrip("/")
+    if p.startswith("sources/"):
+        p = p[len("sources/"):]
+    return p
+
+
 def resolve_cli_path(arg_path):
     """Resolve a CLI-supplied path argument, error cleanly + exit 1 if
     it's missing or outside ``REPO_ROOT``. Used by validate.py /

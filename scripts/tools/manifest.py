@@ -41,6 +41,7 @@ from lib._common import (  # noqa: E402
     content_dirs,
     format_from_path,
     load_manifest,
+    normalize_source_rel_path,
     save_manifest,
     wayback_url_date,
 )
@@ -69,16 +70,19 @@ def cmd_add(args):
     if any(e["url"] == args.url for e in entries):
         print(f"Already in manifest: {args.url}")
         return
+    # Normalize the supplied --path to manifest-canonical form (relative
+    # to sources/) — contributors paste either form from grep/find output.
+    path = normalize_source_rel_path(args.path) if args.path else None
     entry = {
         "url": args.url,
-        "format": args.format or format_from_path(args.path) or "html",
-        "status": "archived" if args.path else "pending",
+        "format": args.format or format_from_path(path) or "html",
+        "status": "archived" if path else "pending",
     }
-    if args.path:
-        entry["path"] = args.path
+    if path:
+        entry["path"] = path
         entry["archived_date"] = date.today().isoformat()
         # Compute sha256 of archived file — integrity backstop per schema.yaml
-        full_path = SOURCES_DIR / args.path
+        full_path = SOURCES_DIR / path
         if full_path.exists():
             sha = compute_sha256(full_path)
             if sha:
@@ -86,7 +90,7 @@ def cmd_add(args):
             else:
                 print(f"WARNING: Could not compute sha256 for {full_path}", file=sys.stderr)
         else:
-            print(f"WARNING: path does not exist (archival incomplete): sources/{args.path}", file=sys.stderr)
+            print(f"WARNING: path does not exist (archival incomplete): sources/{path}", file=sys.stderr)
     # archive_status: 2-bit presence indicator per schema.yaml manifest_entry.
     # New entries start with bit 0 set iff local archival is complete
     # (status == archived AND path set); bit 1 is set later by archive.py

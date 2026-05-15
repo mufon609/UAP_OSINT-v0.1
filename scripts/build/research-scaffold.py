@@ -49,6 +49,7 @@ from lib._common import (
     format_from_path,
     load_manifest,
     load_schema,
+    normalize_source_rel_path,
 )
 
 RESEARCH_DIR = REPO_ROOT / "meta" / "research"
@@ -213,7 +214,6 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         "target_node": f"{TYPE_DIRS[node_type]}/{slug}",
         "status": "active",
         "created": today,
-        "description": "",
         "primary_sources": build_primary_sources_list(source_paths, manifest),
         "document_intrinsic": {},
         "context_extrinsic": {},
@@ -221,6 +221,16 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         "entities_referenced": [],
         "naming_quirks": [],
     }
+
+    # description is required by the validator on document / transcript /
+    # media / event / organization / finding / location types (the types
+    # whose renderers emit ## Description); person and investigation
+    # renderers do not call render_description, so the field is unrendered
+    # on those types. Skip emitting an empty placeholder for person to
+    # avoid the "scaffolded but never rendered" trap. Investigation keeps
+    # description as opt-in since its renderer DOES wire it up.
+    if node_type != "person":
+        artifact["description"] = ""
 
     # Schema-driven scaffolding for type / archetype / kind-conditional
     # sections. Reads conditional_keys once; walks each declared
@@ -272,8 +282,13 @@ def main():
         sys.exit(f"ERROR: {out_path.relative_to(REPO_ROOT)} exists. "
                  f"Use --force to overwrite.")
 
-    # Parse sources
-    source_paths = [s.strip() for s in args.sources.split(",") if s.strip()]
+    # Parse sources — accept both ``news/foo.html`` (canonical sources/-
+    # relative form) and ``sources/news/foo.html`` (repo-root form
+    # contributors paste from grep / find output) per the shared
+    # ``normalize_source_rel_path`` helper.
+    source_paths = [
+        normalize_source_rel_path(s) for s in args.sources.split(",") if s.strip()
+    ]
     manifest = load_manifest()
 
     # Build scaffold

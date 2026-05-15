@@ -10,6 +10,18 @@ updated: {{today}}
 
 # {{display_name}}
 
+<!-- ─────────────────────────────────────────────────────────────────────
+     RENDERER-MANAGED BODY. Do NOT hand-edit the sections below.
+
+     This node body is regenerated from meta/research/{{slug}}.yaml by
+     scripts/build/build-from-research.py. The scaffolded sections
+     below are a shape reference; once you run build-from-research.py
+     the body is replaced entirely (frontmatter above is preserved
+     verbatim). Populate the research artifact and re-run the renderer
+     — see prompts/build.md Phase II for the full procedure. Hand-edits
+     to the body trigger the Phase III boundary-check failure.
+     ───────────────────────────────────────────────────────────────────── -->
+
 <!-- An investigation pursues an OPEN QUESTION or hypothesis by
      consuming findings and entity-node facts. Investigations are
      SPECULATION-TOLERANT — the layer where hypotheses are evaluated

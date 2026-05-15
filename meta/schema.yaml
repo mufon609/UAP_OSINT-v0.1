@@ -586,7 +586,21 @@ types:
       - target_node           # {type}/{slug} of the node this artifact backs
       - status                # active | archived
       - created               # YYYY-MM-DD
-      - description           # 1-3 paragraphs of prose; renders as node's Description section. Required on all artifact types EXCEPT person — person body renderer emits Background / UAP Relevance / Credibility Notes from dedicated fields and never calls render_description, so description on a person artifact is unrendered content.
+      # ``description`` is type-conditional and lives outside this universal
+      # required_keys list. REQUIRED on document / transcript / media /
+      # event / organization / finding / location artifacts (enforced by
+      # scripts/checks/artifact_top_level.py's DESCRIPTION_REQUIRED_TYPES
+      # allowlist; renders as the node's `## Description` section).
+      # OPTIONAL on investigation artifacts (renderer wires it up but a
+      # missing key is permitted). UNRENDERED on person artifacts — the
+      # person body renderer emits `## Background`, `## UAP Relevance`,
+      # and `## Credibility Notes` from dedicated prose fields
+      # (`background`, `top_relevance`, `credibility_notes`) and never
+      # calls render_description. The scaffolder
+      # (scripts/build/research-scaffold.py) skips emitting this key for
+      # person artifacts; contributors should not populate it on person
+      # artifacts (the content will not reach readers — put person-level
+      # synthesis prose in the three dedicated fields).
       - primary_sources       # list — sources this artifact draws on
       - document_intrinsic    # dict — facts the primary source(s) state internally.
       #   Per-type key conventions (read by the Phase II renderer):

@@ -5,8 +5,6 @@ target_node: people/russell-targ
 status: active
 created: '2026-05-14'
 
-description: ''
-
 primary_sources:
 - path: news/espresearch-russell-targ-snapshot.html
   format: html

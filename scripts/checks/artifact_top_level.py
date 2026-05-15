@@ -11,20 +11,25 @@ artifact:
   - schema_version is integer in ``schema.compatible_with``
   - status enum: active | archived
   - target_node points to an existing content-node .md file
-  - description required on non-person target types (the person body
-    renderer doesn't emit ``## Description``; other types do)
+  - description required on document / transcript / media / event /
+    organization / finding / location target types (the renderers for
+    those types emit ``## Description``); not required on person
+    (renderer never calls render_description) or investigation
+    (renderer wires it up but a missing key is permitted)
 
 Type-conditional sections / fields (background, top_relevance,
 credibility_notes, event_intrinsic, participants, etc.) are gated by
 ``iff_section`` via ``schema.yaml::conditional_keys``; the per-section
 checks rely on ``section_in_scope``. This check keeps only the
-universal metadata plus the description-required-on-non-person rule.
+universal metadata plus the type-conditional description-required
+rule.
 
 The description rule isn't expressed in ``conditional_keys`` because
-the grammar (``required_when_any_of: [list of AND-rules]``) can't
-express the negation case (NOT-IN [person]) — the rule lives inline
-here as ``DESCRIPTION_REQUIRED_TYPES`` until a second negation case
-surfaces and a grammar extension becomes worthwhile.
+the grammar (``required_when_any_of: [list of AND-rules]``) only
+supports type-IN matches — the rule's allowlist is the seven types
+that DO require description, expressed inline here as
+``DESCRIPTION_REQUIRED_TYPES``. Investigation's NOT-required state
+falls out of the allowlist by exclusion alongside person.
 
 Bundled into one module because the sub-checks are all "this top-level
 shape" enforcement, share the artifact's top-level dict access, and
@@ -50,7 +55,9 @@ REQUIRED_TOP_LEVEL_KEYS = [
     "naming_quirks",
 ]
 
-# description required on all artifact types EXCEPT person.
+# description required on the seven content-bearing renderer-supported
+# types. Excluded: person (renderer never calls render_description) and
+# investigation (renderer wires it up but treats it as optional).
 DESCRIPTION_REQUIRED_TYPES = {
     "document", "transcript", "media", "event",
     "organization", "finding", "location",
@@ -122,10 +129,11 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
 
-    # description required on non-person target types. Not expressed in
-    # conditional_keys today (would need a schema extension to declare
-    # "required when target_type NOT in [person]"); kept as a small inline
-    # rule until that extension lands.
+    # description required on the seven types in DESCRIPTION_REQUIRED_TYPES
+    # (above). Person and investigation are excluded — see the module
+    # docstring for rationale. Kept as a small inline allowlist rather
+    # than a conditional_keys grammar entry because the rule is
+    # type-IN-allowlist, simple enough to live here.
     if (ctx.target_type in DESCRIPTION_REQUIRED_TYPES
             and "description" not in data):
         yield Issue(

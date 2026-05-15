@@ -48,7 +48,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 # for ocr-scan / extraction-lossy sources), HTML (with tag strip + entity
 # decode), and TXT / MD / JSON. ``extract_pdf_metadata`` below stays
 # local because pdfinfo metadata capture has no lib equivalent.
-from lib._common import REPO_ROOT, SOURCES_DIR, extract_source_text, strict_yaml_load  # noqa: E402
+from lib._common import (  # noqa: E402
+    REPO_ROOT,
+    SOURCES_DIR,
+    extract_source_text,
+    normalize_source_rel_path,
+    strict_yaml_load,
+)
 
 SCRATCH_DIR = Path("/tmp")
 
@@ -106,10 +112,9 @@ def do_single(source_rel_path):
 
     Accepts the path either relative to sources/ (e.g.
     ``news/foo.html``) or as a repo path (``sources/news/foo.html``).
-    Both forms resolve to the same file under SOURCES_DIR."""
-    source_rel_path = source_rel_path.lstrip("/")
-    if source_rel_path.startswith("sources/"):
-        source_rel_path = source_rel_path[len("sources/"):]
+    Both forms resolve to the same file under SOURCES_DIR — the shared
+    ``normalize_source_rel_path`` helper handles the conversion."""
+    source_rel_path = normalize_source_rel_path(source_rel_path)
     full = SOURCES_DIR / source_rel_path
     if not full.exists():
         sys.exit(f"ERROR: source file not found: sources/{source_rel_path}")

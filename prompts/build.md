@@ -98,6 +98,14 @@ immediate review (useful for populating `document_intrinsic`).
 files. If a claim or quote is not traceable to text in a scratch file,
 it does not belong in the research artifact.
 
+**Source-path forms.** `extract-source.py --source`, `research-scaffold.py
+--sources`, and `manifest.py add --path` all accept the source path in
+either canonical sources/-relative form (`news/foo.html`) or repo-
+relative form (`sources/news/foo.html`). Both normalize to the same
+archived file via the shared `normalize_source_rel_path` helper in
+`scripts/lib/_common.py`. Paste paths from `grep` / `find` output or
+from manifest entries directly — both work.
+
 ### Step 3. Populate `document_intrinsic`
 
 For each primary source, scan the extracted text for facts the
@@ -146,16 +154,17 @@ description should be traceable to a specific artifact entry (quote or
 document-intrinsic field). Treat it as a synthesis of the structured
 fields below, not as new evidentiary content.
 
-**Person artifacts — `description` is optional and not rendered.**
-The person body renderer (`render_body_person`) emits Background,
-UAP Relevance, and Credibility Notes from dedicated prose fields;
-it never calls `render_description`. Any content in a person
-artifact's `description` is unrendered. Either leave the field empty
-(or absent — validator is type-conditional) or use it as a brief
-index-level summary that never reaches the node body. Evidentiary
-prose for a person node belongs in `background` / `top_relevance`
-/ `credibility_notes`. Each of those is scanned by the prose-drift
-check (see Step 10) against the pooled primary-source vocabulary.
+**Person artifacts — `description` is unrendered, omit the key
+entirely.** The person body renderer (`render_body_person`) emits
+Background, UAP Relevance, and Credibility Notes from dedicated prose
+fields; it never calls `render_description`. The scaffolder
+(`scripts/build/research-scaffold.py`) does not emit a `description`
+key for person artifacts, and contributors should not add one — any
+content in a person artifact's `description` is unrendered and
+unreachable by readers. Evidentiary prose for a person node belongs
+in `background` / `top_relevance` / `credibility_notes`. Each of
+those is scanned by the prose-drift check (see Step 10) against the
+pooled primary-source vocabulary.
 
 Future plan (tracked in `meta/BACKLOG.md`): move to agent-generated
 descriptions so the evidentiary-derivation invariant is enforced
@@ -163,6 +172,19 @@ mechanically. For now: hand-write with discipline — across every
 free-prose field, not just `description`.
 
 ### Step 6. Populate `quotes` (bounded agent task T2)
+
+**Person artifacts — speaker-attribution rule.** `quotes[]` on a
+person artifact carries statements *by* the subject — first-person
+utterances, co-authored academic publications with substantive
+subject-relevant content, self-attestations on the subject's own
+publications. Statements *about* the subject (a reporter narrating, a
+voucher attesting, a supervisor describing) belong on the speaker's
+own artifact and on the subject's structured cross-reference surfaces
+(`relationships[].note`, `program_involvement[].note`,
+`affiliations[].note`, `timeline[]` rows). See `meta/conventions.md`
+"Statements speaker-attribution — quotes BY the person, not ABOUT" for
+the full bright-line guidance, including the co-authored-publications
+borderline cases.
 
 **Agent task T2:**
 - **Input:** extracted plaintext scratch file(s)
