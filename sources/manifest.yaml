@@ -2926,6 +2926,22 @@
   archive_status: 3
   note: 'SEC Form 1-K Part II Annual Report for fiscal year ended December 31, 2024, filed 2025-04-17. Registrant: TO THE STARS INC. (Delaware; EIN 84-3854992; CIK 1710274). Primary-source confirmation of: (a) 2022 rebrand from ''To The Stars Academy of Arts and Science Inc.'' to ''To The Stars Inc.'' (both names now registered trademarks); (b) current HQ 315 S. Coast Highway 101 Suite U38 Encinitas CA 92024; (c) going-concern audit finding; (d) Gravity Holdings LLC holds 52.16% of Class A Common Stock; (e) current board (DeLonge, Semivan, Stan Spry, J. Christopher Mizer); (f) current Advisory Board (Gilpin, Kahn, Schurman, Rapp, Herndon, Puthoff); (g) 2024-09-27 Puthoff/Davis memo submitted to Board as ORNL counter-analysis; (h) 2024 CRADA end; (i) TTSA→USACCDC→ORNL material-testing chain. Fetched directly from SEC EDGAR using research-identifying User-Agent.'
   wayback_date: '2026-04-28'
+- url: https://www.sri.com/about/
+  format: html
+  status: archived
+  path: news/sri-international-about-20260515.html
+  archived_date: '2026-05-15'
+  sha256: 3647b621f6fc0f81a75fef2c3c9e0fad10a13248c1ac7aa364e1bf1598f0c422
+  archive_status: 1
+  note: 'SRI International official ''About'' page (www.sri.com/about/), retrieved 2026-05-15. SRI''s first-party institutional anchor. Verbatim self-attestation: ''An independent nonprofit R&D institute with deep roots in Silicon Valley''; ''Founded in 1946 as Stanford Research Institute, and independent since 1970, we acquired Sarnoff Corp. (formerly RCA Labs) in 1987 and the Palo Alto Research Center (PARC) in 2023''; ''Today, our 1,500 researchers and professional staff work with government and commercial customers and collaborators''. Identifies current CEO David Parekh, headquarters at 333 Ravenswood Ave, Menlo Park, CA 94025 USA, and the 13,000+ patents / 50+ spin-off companies / 500+ R&D projects per year institutional scale. Page footer carries ''© 2026 SRI INTERNATIONAL'' (canonical legal name). Research divisions named in primary navigation: Advanced Technology & Systems / Biosciences / Education / Information & Computing Sciences / Integrated Systems & Solutions; commercialization arms: Commercial R&D / Ventures / Center for Innovation, Strategy & Policy / Nomura-SRI Innovation Center. Does NOT explicitly attest the date of the rebrand from ''Stanford Research Institute'' to ''SRI International'' — implicit between the 1970 independence event and present-day ''SRI International'' branding. Text-native HTML (WordPress / Yoast SEO); clean extraction via html.parser visible-text walk.'
+- url: https://www.sri.com/timeline-of-innovation/
+  format: html
+  status: archived
+  path: news/sri-international-timeline-of-innovation-20260515.html
+  archived_date: '2026-05-15'
+  sha256: 37a40cb5173c423ad5a15be9bcca3dbb44360b931687bdfe58d5f6bda4632afa
+  archive_status: 1
+  note: 'SRI International ''Interactive Timeline of Innovation'' page (www.sri.com/timeline-of-innovation/), retrieved 2026-05-15. SRI''s first-party institutional history index. Verbatim self-attestation of founding and lineage: ''Founded in 1946 by Stanford University as the Stanford Research Institute, and independent since 1970, we''''ve created technologies, services, and ideas that have had a meaningful impact on every one of our lives throughout our history. In 1987, we acquired Sarnoff Corp. (formerly RCA Labs), and in 2023, we received as a donation the Palo Alto Research Center (PARC)''. Tightens the about-page attestation by naming ''Stanford University'' as the 1946 founder explicitly. Timeline entries by decade (1940s through 2020s) name decade-specific SRI innovations (Transmission electron microscope, ARPANET research, Disneyland feasibility studies, ERMA banking automation, optical video disk, etc.) — useful institutional-shape signal but parapsychology investigations are not surfaced on this page (consistent with sri.com positioning post-program). Schema.org Organization block at top of page declares legal name ''SRI International''. Does NOT attest the date of the rebrand from ''Stanford Research Institute'' to ''SRI International''. Text-native HTML (WordPress / Yoast SEO).'
 - url: https://www.theblackvault.com/documentarchive/dod-announces-the-establishment-of-the-all-domain-anomaly-resolution-office-july-20-2022/
   format: html
   status: archived

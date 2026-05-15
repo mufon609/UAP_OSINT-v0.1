@@ -8144,3 +8144,1300 @@
   message: |
     Table cell in 'Timeline' exceeds word budget (65>55): The Stanford Research Institute ([`/organizations/stanford-r...
 
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[0]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[1]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[2]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[3]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[4]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[5]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[6]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[7]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[8]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[9]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[10]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[11]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[12]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[0] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[0] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[0] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[1] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[1] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[1] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[2] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[2] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[2] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[3] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[3] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[3] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[4] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[4] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[4] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[5] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[5] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[5] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[6] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[6] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[6] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[7] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[7] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[7] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[8] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[8] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[8] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[9] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[9] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[9] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[10] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[10] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[10] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[11] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[11] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[11] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[12] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[12] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[12] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[0]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[1]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[2]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[3]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[0] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[0] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[0] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[1] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[1] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[1] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[2] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[2] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[2] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[3] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[3] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[3] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[0]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[1]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[2]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[3]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[4]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[5]: missing required 'id' field
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[0] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[0] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[0] (None): missing required 'organization_path'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[0] (None): missing required 'relationship_type'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[0] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[1] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[1] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[1] (None): missing required 'organization_path'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[1] (None): missing required 'relationship_type'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[1] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[2] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[2] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[2] (None): missing required 'organization_path'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[2] (None): missing required 'relationship_type'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[2] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[3] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[3] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[3] (None): missing required 'organization_path'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[3] (None): missing required 'relationship_type'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[3] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[4] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[4] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[4] (None): missing required 'organization_path'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[4] (None): missing required 'relationship_type'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[4] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[5] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[5] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[5] (None): missing required 'organization_path'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[5] (None): missing required 'relationship_type'
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[5] (None): 'source' must be a dict with path + location
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 9 significant token(s) not in source (prose-drift check — contributor review): agency-, agency-funded, arms, cia-funded, coauthored, cofounded, divisions, employs, … (+1 more — pass --verbose for full list)
+  tokens: [agency-, agency-funded, arms, cia-funded, coauthored, cofounded, divisions, employs, venue]
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[0] ('?') note: 5 significant token(s) not in source (prose-drift check — contributor review): archived, attested, block, ceo-quote, tenure
+  tokens: [archived, attested, block, ceo-quote, tenure]
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[1] ('?') note: 11 significant token(s) not in source (prose-drift check — contributor review): archived, attested, bio, byline, cia-osi, cofounded, corpus, ended, … (+3 more — pass --verbose for full list)
+  tokens: [archived, attested, bio, byline, cia-osi, cofounded, corpus, ended, optics, self-attestation, sri-tenure]
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('?') note: 7 significant token(s) not in source (prose-drift check — contributor review): anchors, attested, counterpart, discontinuation, q12, q13, sri-tenure
+  tokens: [anchors, attested, counterpart, discontinuation, q12, q13, sri-tenure]
+
+- ts: 2026-05-15T23:38:11Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('?') note: 9 significant token(s) not in source (prose-drift check — contributor review): 825, anchors, attestation, discontinuation, post-1990, preamble, q12, q15, … (+1 more — pass --verbose for full list)
+  tokens: [825, anchors, attestation, discontinuation, post-1990, preamble, q12, q15, text]
+
+- ts: 2026-05-15T23:40:22Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[0] ('or1'): relationship_type 'founder' not in ['contracting-agency', 'contractor', 'other', 'parent', 'partner', 'predecessor', 'subsidiary', 'successor']
+
+- ts: 2026-05-15T23:40:22Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[3] ('or4'): relationship_type 'funder' not in ['contracting-agency', 'contractor', 'other', 'parent', 'partner', 'predecessor', 'subsidiary', 'successor']
+
+- ts: 2026-05-15T23:40:22Z
+  source: validator
+  check: org_relationships
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    org_relationships[4] ('or5'): relationship_type 'funder' not in ['contracting-agency', 'contractor', 'other', 'parent', 'partner', 'predecessor', 'subsidiary', 'successor']
+
+- ts: 2026-05-15T23:40:22Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 9 significant token(s) not in source (prose-drift check — contributor review): agency-, agency-funded, arms, cia-funded, coauthored, cofounded, divisions, employs, … (+1 more — pass --verbose for full list)
+  tokens: [agency-, agency-funded, arms, cia-funded, coauthored, cofounded, divisions, employs, venue]
+
+- ts: 2026-05-15T23:40:22Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[0] ('kp1') note: 6 significant token(s) not in source (prose-drift check — contributor review): archived, attested, block, ceo, quote, tenure
+  tokens: [archived, attested, block, ceo, quote, tenure]
+
+- ts: 2026-05-15T23:40:22Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[1] ('kp2') note: 8 significant token(s) not in source (prose-drift check — contributor review): archived, attested, bio, byline, corpus, ended, optics, self-attestation
+  tokens: [archived, attested, bio, byline, corpus, ended, optics, self-attestation]
+
+- ts: 2026-05-15T23:40:22Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 5 significant token(s) not in source (prose-drift check — contributor review): anchors, attested, counterpart, discontinuation, tenure
+  tokens: [anchors, attested, counterpart, discontinuation, tenure]
+
+- ts: 2026-05-15T23:40:22Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('kp4') note: 3 significant token(s) not in source (prose-drift check — contributor review): anchors, attestation, discontinuation
+  tokens: [anchors, attestation, discontinuation]
+
+- ts: 2026-05-15T23:41:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 9 significant token(s) not in source (prose-drift check — contributor review): agency-, agency-funded, arms, cia-funded, coauthored, cofounded, divisions, employs, … (+1 more — pass --verbose for full list)
+  tokens: [agency-, agency-funded, arms, cia-funded, coauthored, cofounded, divisions, employs, venue]
+
+- ts: 2026-05-15T23:41:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[0] ('kp1') note: 6 significant token(s) not in source (prose-drift check — contributor review): archived, attested, block, ceo, quote, tenure
+  tokens: [archived, attested, block, ceo, quote, tenure]
+
+- ts: 2026-05-15T23:41:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[1] ('kp2') note: 8 significant token(s) not in source (prose-drift check — contributor review): archived, attested, bio, byline, corpus, ended, optics, self-attestation
+  tokens: [archived, attested, bio, byline, corpus, ended, optics, self-attestation]
+
+- ts: 2026-05-15T23:41:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 5 significant token(s) not in source (prose-drift check — contributor review): anchors, attested, counterpart, discontinuation, tenure
+  tokens: [anchors, attested, counterpart, discontinuation, tenure]
+
+- ts: 2026-05-15T23:41:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('kp4') note: 3 significant token(s) not in source (prose-drift check — contributor review): anchors, attestation, discontinuation
+  tokens: [anchors, attestation, discontinuation]
+
+- ts: 2026-05-15T23:43:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): cofounders
+  tokens: [cofounders]
+
+- ts: 2026-05-15T23:44:16Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 2 significant token(s) not in source (prose-drift check — contributor review): byline, co-named
+  tokens: [byline, co-named]
+
+- ts: 2026-05-15T23:44:38Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Overview' exceeds word budget (70>55): Founded in 1946 by Stanford University as the Stanford Resea...
+
+- ts: 2026-05-15T23:44:45Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Overview' exceeds word budget (70>55): Founded in 1946 by Stanford University as the Stanford Resea...
+
+- ts: 2026-05-15T23:45:49Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e15' ('Parapsychology in Intelligence: A Personal Review and Conclusions (Studies in Intelligence, 1977)') wrap_path '/documents/kress-parapsychology-in-intelligence-1977' does not appear as a [`/documents/kress-parapsychology-in-intelligence-1977`] link in the node
+
+- ts: 2026-05-15T23:45:49Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e16' ('STAR GATE PROJECT: AN OVERVIEW (DIA, 1993)') wrap_path '/documents/dia-stargate-project-overview-1993' does not appear as a [`/documents/dia-stargate-project-overview-1993`] link in the node
+

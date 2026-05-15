@@ -56,7 +56,7 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/people/sean-kirkpatrick` | active | institutional-actor |
 | `/people/sue-gough` | active | institutional-actor |
 
-### Organizations (9)
+### Organizations (10)
 
 | Node | Status | Kind |
 |---|---|---|
@@ -67,6 +67,7 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/organizations/ousd-is` | active | gov |
 | `/organizations/safire-project` | active | private |
 | `/organizations/sancorp-consulting` | active | gov-contractor |
+| `/organizations/stanford-research-institute` | active | private |
 | `/organizations/ttsa` | active | private |
 | `/organizations/uaptf` | active | gov |
 
