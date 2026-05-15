@@ -62,79 +62,6 @@ Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
 
-### C1 — Render `not-primary-source-established` rumors to reader
-
-**Scope.** Today the rumor schema renders `primary-source-disputed`
-rumors as a `## Primary-Source Contradictions` section on the node
-body, but `not-primary-source-established` rumors have NO renderer
-surface — they're investigator-only YAML memory. Change the renderer
-so `not-primary-source-established` rumors render in a new section
-(working title: `## Claims Circulating Without Primary Source`) with
-the same fact-table shape as Primary-Source Contradictions. Section
-auto-suppresses when no qualifying rumors exist. Reader-visible
-transparency: a reader landing on a node sees both confirmed claims
-and curated-but-unsourced ones, and can self-police by sending better
-sources.
-
-**Evidence.** Current state of rumor entries across the corpus:
-
-| Status | Count | Renders? |
-|---|---|---|
-| `primary-source-disputed` | 3 | yes (`## Primary-Source Contradictions`) |
-| `not-primary-source-established` | 20 | **no** (artifact-only) |
-
-Twenty curated rumors across 11 artifacts are invisible to readers
-despite being deliberate contributor work. Affected artifacts:
-
-| Artifact | Rumors (not-established) |
-|---|---|
-| `/people/russell-targ` | 3 (birth, pre-SRI employers, CIA/Stargate) |
-| `/locations/skinwalker-ranch` | 4 |
-| `/people/alex-dietrich`, `/people/ronald-moultrie`, `/people/sue-gough` | 1 each |
-| `/organizations/aaro`, `/organizations/arlo-solutions`, `/organizations/ipmo`, `/organizations/ttsa`, `/organizations/uaptf` | 2 each |
-| `/events/2004-nimitz-encounter` | 3 |
-
-**Build dependencies.** None — single coordinated change to schema +
-renderer + conventions doc. No content edits needed (existing rumor
-entries auto-render once the renderer surfaces them).
-
-**Implementation sketch.**
-
-1. `meta/schema.yaml::types.research-artifact.rumor_entry` — update
-   the `status_values` comment block to note the renderer surface for
-   `not-primary-source-established` (currently says "no renderer
-   surface").
-2. `scripts/build/renderers/_universal.py` (or wherever
-   `Primary-Source Contradictions` is rendered) — add a parallel
-   render block that filters rumors by `status:
-   not-primary-source-established` and emits the new section. Section
-   header copy candidates: `## Claims Circulating Without Primary
-   Source` / `## Public-Record Claims Lacking Primary Source` /
-   `## Investigator-Curated Unverified Claims` — pick one in
-   implementation.
-3. `meta/conventions.md` — update the rumor-discipline section to
-   reflect that both rumor types are now reader-visible.
-4. Regenerate the 11 affected artifacts via `build-from-research.py`;
-   they pick up the new section automatically. Inspect a couple for
-   reader-visibility quality.
-5. Re-run pre-commit; commit as one focused commit per the audit-
-   correction pattern.
-
-**Density math.** Affects 11 of 37 currently-built artifacts (~30%).
-Renders 20 new reader-visible rumor entries on first build pass. Each
-new section is a 3-column fact table (claim / circulates-in / note)
-— same shape as the existing Primary-Source Contradictions section,
-so reader cognitive load is bounded.
-
-**Surfaced from.** Russell Targ audit session (2026-05-15) — user
-question about whether the audit's 4 rumors should be reader-visible.
-Investigation confirmed the asymmetry (disputed renders, not-
-established doesn't) is not reader-honest, and substantial existing
-investigator work would gain visibility from a single renderer
-change.
-
----
-
 ### C2 — Prompts cross-reference + UX polish pass
 
 **Scope.** A round of contributor-experience polish across
@@ -155,10 +82,8 @@ high-leverage tools and workflows that exist in the toolkit.
 | `prompts/archive-sweep.md` | Wayback-fuzzy-timestamp workflow for recovering 404'd sources | Same Wayback retrieval gap that affected the audit |
 | `CLAUDE.md` + `AGENT.md` | One-line callout for the Wayback fuzzy-timestamp workflow | Highest-traffic docs; both should surface the workflow so future sessions don't repeat the dead-end |
 
-**Build dependencies.** Should ship after C1 (rumor rendering) and
-after `coverage-suggest.py` lands (already shipped). The audit-prompt
-cross-ref to rumor rendering needs C1 to land first; otherwise the
-prompt would describe a renderer behavior that doesn't exist yet.
+**Build dependencies.** None remaining — C1 (rumor rendering) and
+`coverage-suggest.py` have both shipped. Safe to pick up any time.
 
 **Implementation sketch.**
 
