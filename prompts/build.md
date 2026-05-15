@@ -504,8 +504,8 @@ structurally).
 
 When you're iterating against the prose-drift check and want to test
 replacement vocabulary before rewriting prose,
-`scripts/tools/check-vocab.py` (introduced in Step 5) accepts a list
-of candidate tokens and reports `✓ present` / `✗ absent` per token
+`scripts/tools/check-vocab.py` (see Step 5) accepts a list of
+candidate tokens and reports `✓ present` / `✗ absent` per token
 against the source pool — useful for picking source-matched
 substitutes without running the full validator each round.
 
