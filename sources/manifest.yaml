@@ -160,6 +160,15 @@
   note: 'Uintah County Real Property Owner Information report (Year 2026), owner ADAMANTIUM REAL ESTATE LLC. Serial 150050004 / Account 126864. Address 3400 S 5500 E, Independence. Land Use: VACANT LAND. Acres: 40.00. Legal (SE 1/4 NE 1/4, Sec 5, T3S, R1E, USM). Tax Dist 16. Retrieved 2026-04-20 from apps.uintah.utah.gov ORDS portal via ''ADAMANTIUM'' owner search. Mailing address on all 7 Adamantium parcels: 6440 S Millrock Dr Ste 500, Salt Lake City, UT 84121.'
   archive_status: 1
   wayback_skip: true
+- url: https://archive.org/details/cia-readingroom-document-cia-rdp96-00789r002800180001-2
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+  archived_date: '2026-05-15'
+  sha256: e3477417ec0dbb86bc5af99dc1dca8c20b73058a4b259e1029bb803517dd5856
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: '''STAR GATE PROJECT: AN OVERVIEW'' (Short Title DTI-S-1056-SL), Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, 30 April 1993 (29 pages). CIA Reading Room document CIA-RDP96-00789R002800180001-2 (Approved For Release 2000/08/08); mirrored via Internet Archive (URL embedded in PDF metadata Keywords field). DIA internal program-overview briefing of STAR GATE — the umbrella designation for the remote-viewing investigation that ran at SRI International (Menlo Park, CA) from 1970 to 1990 and at Princeton University. Attests: ''1970-1990 — SRI INTERNATIONAL, MENLO PARK, CA'' program window; CIA initiation followed by DIA continuation of funding; the SRI program discontinued in 1990; eleven years of work ''headed by Dr. H. Puthoff.'' Primary-source attestation of the formal Stargate program designation and the SRI funding chain (CIA → DIA). Closes Russell Targ artifact rumor r4 (CIA/DIA-funded SRI psychic-abilities investigation = Stargate Project, 1972-1995). OCR-scan PDF (Internet Archive''s pymupdf + mupdf rendering of typewritten 1993 CIA scans); visible spacing/character artifacts on headings and tables consistent with typewriter-scan OCR.'
 - url: https://archive.org/download/army_ttsa_crada/ARMY_text.pdf
   format: pdf
   status: archived
@@ -790,6 +799,15 @@
   archive_status: 3
   note: 'ExecutiveGov November 8 2023 coverage: ''AARO Shakes Up Executive Team With 2 New Leadership Changes'' — same-day reporting on Kirkpatrick''s announced departure and Tim Phillips appointment as Acting Director'
   wayback_date: '2024-10-04'
+- url: https://fas.org/sgp/othergov/airreport.html
+  format: pdf
+  status: archived
+  path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
+  archived_date: '2026-05-15'
+  sha256: 2ae8b2f01eeb1a5a41ad2af006465e63b61565779c6f0c5b50da289ee39c10a0
+  archive_status: 1
+  extraction_type: text-native
+  note: 'Michael D. Mumford, PhD; Andrew M. Rose, PhD; David A. Goslin, PhD, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research (AIR), 29 September 1995 (183 pages). Independent program evaluation commissioned by CIA at the end of the Stargate Project. Hosted publicly by Federation of American Scientists at fas.org/sgp/othergov/airreport.html (canonical public mirror; the AIR-prepared PDF carries no CREST stamps because it was authored by AIR rather than released through the CIA reading-room declassification process). Substantive content: Section 3 ''THE SRI ERA'' covering 1973-1988 SRI research with Section 3.2 ''THE EARLY SCIENTIFIC EFFORT AT SRI'' (Puthoff and Targ 1975); Section 3.3 ''AN OVERALL ANALYSIS OF THE SRI EXPERIMENTS: 1973-1988'' reporting the 1988 SRI internal analysis; bibliography cites ''Puthoff, Harold E. and Russell Targ (1975). Perceptual Augmentation Techniques: Part Two — Research Report'' as the foundational SRI bibliographic anchor. Independent government-commissioned attestation of Targ''s SRI cofounder role and the SRI program''s institutional shape across the 1970s and 1980s. Text-native PDF (Microsoft Word source via Acrobat PDFWriter 3.02, 1998-04-28); clean pdftotext extraction.'
 - url: https://floridapolitics.com/archives/626664-theyre-giving-us-the-runaround-anna-paulina-luna-floats-defunding-pentagon-positions-if-ufo-information-isnt-released/
   format: html
   status: archived
@@ -2008,6 +2026,15 @@
   archive_status: 3
   note: 60 Minutes broadcast transcript (May 16, 2021), 'UFOs regularly spotted in restricted U.S. airspace.' Bill Whitaker reports. Includes on-camera interview with Lt. Cmdr. Alex Dietrich (her first public statements about the November 2004 USS Nimitz Tic Tac encounter) and Cmdr. David Fravor; also covers Ryan Graves on 2014-15 East Coast encounters.
   wayback_date: '2026-04-13'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP88G01116R000600690003-8.pdf
+  format: pdf
+  status: archived
+  path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  archived_date: '2026-05-15'
+  sha256: 075f04c4234a87840328ecbc57b123d435663211d4e0dcee9015ba461b16405f
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence (CIA in-house journal), 1977; Sanitized Copy Approved for Release 2011/06/23 (document ID CIA-RDP88G01116R000600690003-8). Named primary-source author Kenneth A. Kress, CIA Operations Officer in the Office of Technical Service (OTS), recounts CIA''s mid-1970s engagement with the SRI parapsychology program. Verbatim: ''Two laser physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology''; documents the April 1972 Targ-CIA OSI meeting; Targ having ''recently joined the Stanford Research Institute (SRI)''; the August 1972 OTS contract ($874) with Targ and Puthoff; the 9 November 1973 SRI experiment; the 12 December 1974 OTS SRI Experiment memo. Foundational primary-source attestation of the CIA funding chain for the Targ + Puthoff SRI psychic-abilities investigation — closes Russell Targ artifact rumor r4 (CIA / Stargate funding) by direct first-party CIA attestation. OCR-scan PDF (typewritten 1977 original scanned during CIA declassification): visible character-corruption examples include ''lasqr physicists'' (→ ''laser physicists''), ''Tug'' (→ ''Targ''), ''Pen:eptual'' (→ ''Perceptual''), ''ORO'' (→ ''ORD''), ''parapsv-chology'' (→ ''parapsychology''). Per OCR-scan discipline (meta/conventions.md), quotes drawing on this source preserve source-form artifacts verbatim and register them as naming_quirks entries; a .txt sibling production may be warranted before heavy quote extraction.'
 - url: https://www.colorado.edu/emp/people/alex-dietrich
   format: html
   status: archived

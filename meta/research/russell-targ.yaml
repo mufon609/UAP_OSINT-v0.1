@@ -18,6 +18,12 @@ primary_sources:
   format: html
 - path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
   format: transcript
+- path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  format: pdf
+- path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+  format: pdf
+- path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
+  format: pdf
 
 document_intrinsic:
   full_name: 'Russell Targ'
@@ -29,9 +35,14 @@ context_extrinsic: {}
 
 background: 'Russell Targ is a physicist and author. Per the IRVA page, Targ has a bachelor''s degree in physics from Queens College and did graduate work in physics at Columbia University. He has received two National Aeronautics and Space-Administration awards for inventions and contributions to lasers and laser communications. Per Targ''s ESP Research site, Targ was a pioneer in the development of the laser and cofounder of the Stanford Research Institute''s investigation into psychic abilities in the 1970s and 1980s. The 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (Targ and Puthoff) reports experiments at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. Applied Optics author affiliations show Lockheed Missiles & Space Company (1991) and Advanced Technology Center, Lockheed Martin (1996), both at 3251 Hanover Street, Palo Alto, California. Per the IRVA page, Targ presented remote-viewing demonstrations to the USSR Academy of Sciences in 1983 and 1984, and retired from Lockheed Martin in 1997 after he developed airborne laser systems for the detection of windshear and air turbulence.'
 
-top_relevance: 'Targ is the cofounder of the Stanford Research Institute investigation into psychic abilities in the 1970s and 1980s — the institutional context for the remote viewing research later cited across government materials. Targ''s Lockheed Martin senior staff scientist role places him at the Palo Alto site at 3251 Hanover Street; he retired in 1997 after work on airborne laser systems for windshear and air turbulence detection.'
+top_relevance: 'Targ is the cofounder of the Stanford Research Institute investigation into psychic abilities in the 1970s and 1980s — the institutional context for the remote viewing research that the 1977 CIA Kress paper, the 1993 DIA STAR GATE Project Overview, and the 1995 American Institutes for Research evaluation document at SRI International, Menlo Park. The Kress paper places Targ''s April 1972 meeting with the CIA Office of Scientific Intelligence as the first documented CIA contact and the August 1972 Office of Technical Service contract with Targ and Puthoff at SRI as the first contract funded by CIA. The STAR GATE Project Overview describes the SRI program at Menlo Park from 1970 to 1990 with CIA funding to SRI for continuing remote viewing research, discontinued in 1975, and subsequent funding provided by DIA. The AIR evaluation reviews the 1973-1988 SRI experiments and includes Puthoff and Targ (1975) "Perceptual Augmentation Techniques: Part Two — Research Report" — the Stanford Research Institute Final Report. Targ''s Lockheed Martin senior staff scientist role places him at the Palo Alto site at 3251 Hanover Street; he retired in 1997 after work on airborne laser systems for windshear and air turbulence detection.'
 
-credibility_notes: 'Targ''s ESP Research site (his own publication) names him as a pioneer in the development of the laser and cofounder of the Stanford Research Institute investigation into psychic abilities. The 1974 Nature paper (Targ and Puthoff) places Targ at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. The IRVA page states two National Aeronautics and Space-Administration ([`/organizations/nasa`]) awards for laser inventions, a Queens College bachelor''s degree and Columbia University graduate work in physics, 1983 and 1984 invitations to the USSR Academy of Sciences for remote-viewing demonstrations, and that Targ retired from Lockheed Martin in 1997. The IRVA page also names Jane Katra ([`/people/jane-katra`]) as Targ''s co-author on Miracles of Mind (1998). The 1991 and 1996 Applied Optics author affiliations show Targ at Lockheed Missiles & Space Company (1991) and Advanced Technology Center, Lockheed Martin (1996) — same Palo Alto site at 3251 Hanover Street. A separate 2018 talk [`/transcripts/lucistrust-garment-of-god-ryder-2018`] also names Targ as having worked at Lockheed for years.'
+credibility_notes: 'Targ''s ESP Research site (his own publication) names him as a pioneer in the development of the laser and cofounder of the Stanford Research Institute investigation into psychic abilities. The 1974 Nature paper (Targ and Puthoff) places Targ at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. The IRVA page states two National Aeronautics and Space-Administration ([`/organizations/nasa`]) awards for laser inventions, a Queens College bachelor''s degree and Columbia University graduate work in physics, 1983 and 1984 invitations to the USSR Academy of Sciences for remote-viewing demonstrations, and that Targ retired from Lockheed Martin in 1997. The IRVA page also names Jane Katra ([`/people/jane-katra`]) as Targ''s co-author on Miracles of Mind (1998). The 1991 and 1996 Applied Optics author affiliations show Targ at Lockheed Missiles & Space Company (1991) and Advanced Technology Center, Lockheed Martin (1996) — same Palo Alto site at 3251 Hanover Street. A separate 2018 talk [`/transcripts/lucistrust-garment-of-god-ryder-2018`] also names Targ as having worked at Lockheed for years.
+
+
+  The 1977 CIA Studies in Intelligence paper by Kenneth A. Kress ([`/people/kenneth-kress`]) — declassified 2011 (CIA-RDP88G01116R000600690003-8) — names Targ and Puthoff as the two laser physicists who re-awakened CIA ([`/organizations/cia`]) research in parapsychology, documents Targ''s April 1972 meeting with the Office of Scientific Intelligence, places Targ as having recently joined the Stanford Research Institute in 1972, and describes the August 1972 Office of Technical Service contract with Targ and Puthoff at SRI ($874 for a few days of work with the magnetometer subject) followed by the February 1974 jointly funded ORD and OTS program. The Kress paper also describes the November 1976 briefing of Director George Bush on CIA''s investigations into parapsychology after he became aware that official Soviets were visiting and questioning Puthoff and Targ at SRI. The 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview describes the SRI International program at Menlo Park from 1970 to 1990 with CIA funding to SRI for continuing remote viewing research discontinued in 1975 and subsequent funding provided by DIA, the SRI effort discontinued in 1990, and Systems Applications International Corporation ([`/organizations/saic`]) at Menlo Park established under the FY 1991 Defense Authorization Act. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviews the 1973-1988 SRI experiments (154 experiments, over 26,000 individual trials, 227 subjects per May et al. 1988) and includes Puthoff and Targ (1975) "Perceptual Augmentation Techniques: Part Two — Research Report" as the Stanford Research Institute Final Report.
+
+  '
 
 quotes:
 - id: q1
@@ -128,6 +139,102 @@ quotes:
   corroborated_by:
   - q2
   significance: 'IRVA bio attests the specific Lockheed retirement year (1997) — the central retrieval target for this audit pass. Corroborates espresearch.com self-attestation (q2) of senior-staff-scientist role at Lockheed and adds the technical-domain framing (airborne laser systems for windshear and air turbulence detection — consistent with the 1991 and 1996 Applied Optics papers'' subject matter). Supersedes rumor r3 (1997 retirement was previously not-primary-source-established); r3 deleted on this audit pass.'
+
+- id: q9
+  added_date: '2026-05-15'
+  text: |
+    Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology. Targ had been avocationally interested in parapsv- chology for most of his adult life. As an experimentalist, he was interested in scientir'ic observations of parapsychology. Puthoff became interested in the field in the early 1970s. He was a theoretician who was exploring new fields of research after extensive work in quantum electronics.
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶1'
+  context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence (CIA in-house journal) Vol. 21 No. 4, Winter 1977 (declassified 2011/06/23, document ID CIA-RDP88G01116R000600690003-8)'
+  observation_type: relayed
+  statement_date: '1977'
+  significance: 'Foundational CIA primary-source attestation of Targ as one of the two laser physicists (alongside Harold E. Puthoff) who re-awakened CIA research in parapsychology. Kress, a CIA Operations Officer in the Office of Technical Service (OTS), characterizes Targ as the experimentalist counterpart to Puthoff''s theoretician role and attests Targ''s long-standing avocational interest in parapsychology. Corroborates Targ''s espresearch.com self-attestation (q1) and the IRVA bio (q5) of the SRI cofounder role from CIA''s own institutional record. Source carries OCR-scan artifacts (Adobe Acrobat Paper Capture Plug-in): "lasqr" for "laser"; "parapsv- chology" for "parapsychology" (PDF line-wrap rendering); "scientir''ic" for "scientific" — preserved as-source per OCR-scan discipline; see naming_quirks nq2-nq4 and the rendered Source-Form Notes section.'
+
+- id: q10
+  added_date: '2026-05-15'
+  text: |
+    In April of 1972, Targ met with CIA personnel from the Office of Scientific Intelligence (OSI) and discussed the subject of paranormal abilities. Targ revealed that he had contacts with people who purported to have seen and documented some Soviet investigations of psychokinesis. Films of Soviets moving inanimate objects by "mental powers" were made available to analysts from OSI. They, in tum, contacted personnel from the Office of Research and Development (ORO) and OTS. An ORO Project Officer then visited Targ who had recently joined the Stanford Research Institute (SRI). Targ proposed that some psychokinetic verification investigations could be done at SRI in conjunction with Puthoff.
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶2'
+  context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
+  observation_type: relayed
+  statement_date: '1977'
+  significance: 'CIA primary-source attestation of the specific April 1972 Targ-CIA Office of Scientific Intelligence meeting that initiated CIA''s engagement with the SRI parapsychology investigation, and of Targ as having "recently joined the Stanford Research Institute (SRI)" as of that meeting. The 1972 SRI-join attestation tightens the earlier bracketing on affiliation a1 (period_start 1974 from Nature paper byline) and program_involvement p1 (period_start 1970 from espresearch decade window) to April 1972. The Kress paper also names the CIA sub-offices that managed the Targ contracts: Office of Scientific Intelligence (OSI), Office of Research and Development (ORD; OCR-rendered "ORO" in the Kress paper), and Office of Technical Service (OTS). Source carries OCR artifacts: "tum" for "turn"; "ORO" for "ORD" (recurring, two instances in this passage) — preserved as-source per OCR-scan discipline; see naming_quirks nq5, nq7.'
+
+- id: q11
+  added_date: '2026-05-15'
+  text: |
+    The Office of Technical Services took the first action. With the approval of the same manager who supported the ESP studies a decade previously, an OTS project officer contracted for a demonstration with the previously described subject at SRI For a cost of $874, one OTS and one ORO representative worked with Targ and Puthoff and the previously mentioned man for a few days in August, 19i2.
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶4'
+  context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
+  observation_type: relayed
+  statement_date: '1977'
+  significance: 'CIA primary-source attestation of the first formal CIA contract with Targ and Puthoff at SRI: a $874 OTS project-officer contract in August 1972 for a demonstration with the previously-described magnetometer subject. This is the inception of the CIA-funded SRI parapsychology investigation; subsequent expansion (Kress footnote 4: OTS Contract 8473, 1 October 1972 $50,000 expanded effort; February 1974 joint OTS/ORD program) flowed from this initial $874 demonstration contract. Source carries OCR artifacts: "ORO" for "ORD"; "19i2" for "1972" — preserved as-source; see naming_quirks nq5, nq6.'
+
+- id: q12
+  added_date: '2026-05-15'
+  text: |
+    During November of 1976, Director George Bush became aware that official Soviets were visiting and questioning Puthoff and Targ at SRI about their work in parapsychology. Mr. Bush requested and received a briefing on CIA's investigations into parapsychology.
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 15, ¶1'
+  context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
+  observation_type: relayed
+  statement_date: '1977'
+  significance: 'CIA primary-source attestation that Targ was still actively engaged with the SRI parapsychology investigation as of November 1976, and that the SRI work had drawn sufficient attention from the Soviet intelligence community to prompt DCI George Bush to request a briefing on CIA''s parapsychology investigations. Anchors a lower-bound for Targ''s continuing SRI tenure (Nov 1976) — Targ remained at SRI at least four years after the April 1972 join attested by q10.'
+
+- id: q13
+  added_date: '2026-05-15'
+  text: |
+    In the early 1970's, U.S. researchers at SRI-International, Menlo Park, CA, also initiated research into phenomena understanding and application pursuits. This work, centering on "remote viewing (RV)" came to the attention of the CIA. CIA then provided funding to SRI for continuing RV research.
+  source:
+    path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+    location: 'p. 10, ¶1'
+  context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (Short Title DTI-S-1056-SL), 30 April 1993; CIA Reading Room document CIA-RDP96-00789R002800180001-2'
+  observation_type: relayed
+  statement_date: '1993-04-30'
+  significance: 'DIA institutional primary-source attestation of the early-1970s SRI International remote viewing research and the initial CIA funding to SRI for continuing that research. Quote scope is bounded to page 10 of the source (the page-10/11 break interrupts the source''s continuation about 1975 funding discontinuation and subsequent DIA funding — that sequence is described in credibility_notes and in program_involvement p1 / p4 notes per the same Stargate Overview Section III).'
+
+- id: q14
+  added_date: '2026-05-15'
+  text: |
+    The effort at SRI was discontinued in 1990. However, as a result of Congressional direction in FY 1991 for DIA, new research in this area was established with the Systems Applications International Corporation (SAIC), in Menlo Park, CA.
+  source:
+    path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+    location: 'p. 10, ¶3'
+  context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993'
+  observation_type: relayed
+  statement_date: '1993-04-30'
+  significance: 'DIA institutional attestation of the 1990 termination of the SRI International parapsychology investigation and the immediate FY 1991 Congressional re-establishment of the research at Systems Applications International Corporation (SAIC) in Menlo Park. Anchors the outer bound of the SRI program window: Figure 1 of the same document lists "1970-1990 — SRI INTERNATIONAL, MENLO PARK, CA" in the KEY US RESEARCH EFFORTS table. Targ''s individual SRI-tenure end is not attested by this source — only the program''s end at SRI.'
+
+- id: q15
+  added_date: '2026-05-15'
+  text: |
+    During 1974 and early 1975 a number of controlled experiments were conducted to see if various types of target material could be successfully described with remote viewing. The results reported by Puthoff and Targ (1975) indicated success with a wide range of material, from "technical" targets like a Xerox machine to natural settings, like a swimming pool.
+  source:
+    path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
+    location: 'p. 3-13, ¶1'
+  context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.2 (The Early Scientific Effort at SRI)'
+  observation_type: relayed
+  statement_date: '1995-09-29'
+  significance: 'Independent government-commissioned evaluation (AIR, prepared at CIA''s request at the end of the Stargate Project) describes the 1974-1975 SRI controlled experiments and the results reported by Puthoff and Targ (1975) — the foundational SRI internal report co-authored by Targ. The AIR bibliography (p. 3-30) lists the cited reference as "Puthoff, Harold E. and Russell Targ (1975). ''Perceptual Augmentation Techniques: Part Two—Research Report,'' Stanford Research Institute Final Report, Dec. 1, 1975."'
+
+- id: q16
+  added_date: '2026-05-15'
+  text: |
+    In 1988 an analysis was made of all of the experiments conducted at SRI from 1973 until that time (May et al, 1988). The analysis was based on all 154 experiments conducted during that era, consisting of over 26,000 individual trials. Of those, almost 20,000 were of the forced choice type and just over a thousand were laboratory remote viewings. There were a total of 227 subjects in all experiments.
+  source:
+    path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
+    location: 'p. 3-14, ¶1'
+  context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988)'
+  observation_type: relayed
+  statement_date: '1995-09-29'
+  significance: 'AIR review of the 1988 SRI internal program analysis (May, Utts, Trask, Luke, Frivold, Humphrey 1988 "Review of the psychoenergetic research conducted at SRI International (1973-1988)") establishes the institutional shape of the SRI parapsychology program over its 1973-1988 documented span: 154 experiments, over 26,000 individual trials, 227 total subjects. Targ as SRI cofounder is the institutional context for this program; the 1973 start anchors the time-frame from CIA / SRI internal documentation.'
 
 entities_referenced:
 - id: e1
@@ -247,6 +354,60 @@ entities_referenced:
   references:
   - quote_id: q6
 
+- id: e15
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Kenneth A. Kress'
+  wrap_path: '/people/kenneth-kress'
+  context_summary: 'CIA Operations Officer in the Office of Technical Service (OTS); CIA Project Officer for the SRI parapsychology investigation October 1972 onward; author of the 1977 Studies in Intelligence paper "Parapsychology in Intelligence: A Personal Review and Conclusions" (declassified 2011, CIA-RDP88G01116R000600690003-8). Kress recounts CIA''s mid-1970s engagement with Targ and Puthoff at SRI in first-person account; named in this Targ artifact via quotes q9-q12. New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q9
+  - quote_id: q10
+  - quote_id: q11
+  - quote_id: q12
+
+- id: e16
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'Central Intelligence Agency (CIA)'
+  wrap_path: '/organizations/cia'
+  context_summary: 'CIA was the primary federal sponsor of the SRI parapsychology investigation 1972-1975 (per Kress 1977 / quotes q9-q11). The CIA sub-offices that managed Targ contracts: Office of Scientific Intelligence (OSI; first CIA contact for Targ April 1972), Office of Research and Development (ORD; OCR-rendered "ORO" in the Kress paper), and Office of Technical Service (OTS; $874 demo contract August 1972, expanded $50,000 contract 1 October 1972 OTS Contract 8473, jointly funded ORD/OTS program 1 February 1974). DCI George Bush received a CIA parapsychology briefing in November 1976 after Soviets visited Targ + Puthoff at SRI (q12). The 1993 DIA STAR GATE Project Overview (q13) attests CIA funding to SRI was discontinued in 1975 with subsequent DIA support. New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q9
+  - quote_id: q10
+  - quote_id: q11
+  - quote_id: q12
+  - quote_id: q13
+
+- id: e17
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'Defense Intelligence Agency (DIA)'
+  wrap_path: '/organizations/dia'
+  context_summary: 'DIA provided the federal sponsorship for the SRI International remote viewing investigation after CIA funding was discontinued in 1975 (per the 1993 DIA STAR GATE Project Overview, q13). DIA was identified as executive agent for the STAR GATE program in the FY 1991 Defense Authorization Act with an authorized funding level of $2 million; the STAR GATE Project Overview (DTI-S-1056-SL, 30 April 1993) is the institutional record. New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q13
+  - quote_id: q14
+
+- id: e18
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'American Institutes for Research (AIR)'
+  wrap_path: '/organizations/american-institutes-for-research'
+  context_summary: 'American Institutes for Research prepared the 29 September 1995 program evaluation "An Evaluation of Remote Viewing: Research and Applications" (Mumford, Rose, and Goslin) commissioned by CIA at the end of the Stargate Project. The AIR evaluation reviews the 1973-1988 SRI experiments (Section 3.3) and cites Puthoff and Targ (1975) "Perceptual Augmentation Techniques: Part Two—Research Report" as the foundational SRI internal report (Section 3.1 and bibliography). New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q15
+  - quote_id: q16
+
+- id: e19
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'Systems Applications International Corporation (SAIC)'
+  wrap_path: '/organizations/saic'
+  context_summary: 'SAIC at Menlo Park, CA was the FY 1991 Congressionally-directed successor venue for the federally-sponsored remote viewing research after the SRI effort was discontinued in 1990 (per the 1993 DIA STAR GATE Project Overview, q14). DIA negotiated the external SAIC contract for basic and applied research; the STAR GATE umbrella program continued at SAIC under DIA executive agency. New unbuilt stub introduced by this audit pass.'
+  references:
+  - quote_id: q14
+
 naming_quirks:
 - id: nq1
   added_date: '2026-05-15'
@@ -256,6 +417,60 @@ naming_quirks:
   source_path: news/irva-targ-russell-wayback-20250123.html
   resolution: disputed
   note: 'The IRVA speaker bio (q7) renders Mind Reach''s subtitle in singular form (''Scientists Look at Psychic Ability''), while Targ''s own espresearch.com homepage (q4) renders the same book''s subtitle in plural form (''Scientists Look at Psychic Abilities''). Both are primary attestations by parties close to the source. Source-priority hierarchy (per feedback_source_priority_hierarchy.md): subject''s own words rank above third-party. The plural form (espresearch.com) is treated as canonical per Targ-self-attestation precedence; the IRVA-attested singular form is preserved as-source in the q7 quote text and flagged here as ''disputed'' so future contributors evaluating the book entity name can see the divergence. Note that ''Psychic Abilities'' (plural) also matches the typical published edition cover.'
+
+- id: nq2
+  added_date: '2026-05-15'
+  observed: 'lasqr'
+  canonical: 'laser'
+  location: 'p. 8, ¶1'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper (declassified scan of typewritten 1977 original; Adobe Acrobat Paper Capture Plug-in producer). The source extract reads "Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff" where the canonical form is "Two laser physicists". The OCR engine read "e" as "q" — common typewritten-font OCR misread. Preserved verbatim in q9 quote text per OCR-scan source-form-preservation discipline.'
+
+- id: nq3
+  added_date: '2026-05-15'
+  observed: 'parapsv- chology'
+  canonical: 'parapsychology'
+  location: 'p. 8, ¶1'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper. The PDF renders the word "parapsychology" with a typewritten-font OCR misread "v" for "y" yielding "parapsvchology", further fragmented by PDF end-of-line word-wrap into "parapsv-" / "chology" across two source lines. The source extract preserves the hyphen-and-newline; pdftotext output and the verbatim-quote check normalize the newline to a space, yielding "parapsv- chology" as the comparison form. Preserved verbatim in q9 quote text per OCR-scan source-form-preservation discipline. The clean form "parapsychology" appears elsewhere in the same Kress paper (e.g., q9 second sentence: "observations of parapsychology"), confirming the misread is artifact-localized rather than systematic.'
+
+- id: nq4
+  added_date: '2026-05-15'
+  observed: 'scientir''ic'
+  canonical: 'scientific'
+  location: 'p. 8, ¶1'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "fi" ligature as "r''i" (apostrophe-i sequence) yielding "scientir''ic" where the canonical form is "scientific". Common typewritten-font OCR misread on f-i ligatures. Preserved verbatim in q9 quote text per OCR-scan source-form-preservation discipline.'
+
+- id: nq5
+  added_date: '2026-05-15'
+  observed: 'ORO'
+  canonical: 'ORD'
+  location: 'p. 8, ¶2-4'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine consistently reads CIA Office of Research and Development abbreviation "ORD" as "ORO" — typewritten-font OCR misread of cursive "D" as "O". The source paper expands the abbreviation explicitly in q10: "Office of Research and Development (ORO)" — the parenthetical expansion confirms the misread (the official name is "Office of Research and Development" — abbreviation must be "ORD"). The artifact appears recurringly across the Kress paper (multiple instances in q10 and q11). Preserved verbatim in q10 and q11 quote text per OCR-scan source-form-preservation discipline.'
+
+- id: nq6
+  added_date: '2026-05-15'
+  observed: '19i2'
+  canonical: '1972'
+  location: 'p. 8, ¶4'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "7" as "i" in the year "1972" yielding "19i2" — typewritten-font OCR misread on the digit-7 glyph. The clean form "1972" appears elsewhere in the same Kress paper (e.g., q10 first sentence: "In April of 1972"), confirming the misread is artifact-localized. Preserved verbatim in q11 quote text per OCR-scan source-form-preservation discipline.'
+
+- id: nq7
+  added_date: '2026-05-15'
+  observed: 'tum'
+  canonical: 'turn'
+  location: 'p. 8, ¶2'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "rn" as "m" yielding "tum" where the canonical form is "turn" — common typewritten-font OCR cluster misread (rn↔m is documented in meta/conventions.md as a typical OCR confusion). Preserved verbatim in q10 quote text per OCR-scan source-form-preservation discipline.'
 
 rumors:
 - id: r1
@@ -276,16 +491,6 @@ rumors:
   - 'IRVA speaker biography page (currently 404)'
   - 'Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (cited in espresearch.com q4 but the book itself is not archived in this repository)'
   note: 'Pre-SRI career details circulate widely in biographical writeups about Targ. The espresearch.com homepage attests Targ as ''a pioneer in the development of the laser'' (q1) but does not name pre-SRI employers. When Sperry / Technical Research Group / Sylvania employment is primary-source-attested (e.g., archived patents listing those employers, archived obituary, archived memoir excerpts), graduate to affiliation entries and quote entries with the specific source path.'
-
-- id: r4
-  added_date: '2026-05-15'
-  claim: 'The Stanford Research Institute psychic-abilities investigation that Targ and Puthoff cofounded was funded by the U.S. Central Intelligence Agency and the Defense Intelligence Agency, and became known as the Stargate Project (1972-1995).'
-  status: not-primary-source-established
-  observed_sources:
-  - 'Declassified CIA records released ~1995 (CIA CREST FOIA reading room contains hundreds of Stargate-program documents)'
-  - 'Wikipedia (Stargate Project article)'
-  - 'Targ-authored memoir Do You See What I See? Memoirs of a Blind Biker (the book''s subtitle explicitly references "ESP and the CIA"; not archived in this repository)'
-  note: 'The CIA / DIA funding chain for the SRI psychic-abilities investigation is extensively primary-source-documented in the declassified CIA records released after the Stargate Project was terminated in 1995. None of those documents are archived in this repository yet. The espresearch.com homepage (q1) attests Targ as ''cofounder of the Stanford Research Institute''s investigation into psychic abilities in the 1970s and 1980s'' but does not name CIA / DIA or the Stargate Project as the funder. When CIA CREST Stargate documents are archived in /sources/government/, graduate this rumor to quote entries + a program_involvement entry that supersedes p1 with the named CIA / DIA sponsorship and the formal Stargate program designation.'
 
 timeline:
 - id: t1
@@ -366,16 +571,74 @@ timeline:
     location: '¶4'
   category: role
 
+- id: t9
+  added_date: '2026-05-15'
+  date: '1972-04'
+  event: 'In April 1972, Targ meets with CIA ([`/organizations/cia`]) personnel from the Office of Scientific Intelligence (OSI) and discusses paranormal abilities, having recently joined the Stanford Research Institute ([`/organizations/stanford-research-institute`]) per the 1977 Kress paper (q10). First documented Targ-CIA contact initiating the CIA-funded SRI parapsychology investigation.'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶2'
+  category: role
+  node_link: '/organizations/cia'
+
+- id: t10
+  added_date: '2026-05-15'
+  date: '1972-08'
+  event: 'August 1972 $874 CIA ([`/organizations/cia`]) Office of Technical Service demonstration contract with Targ and Puthoff at SRI ([`/organizations/stanford-research-institute`]) per the 1977 Kress paper (q11). First formal CIA contract for the SRI parapsychology investigation; OTS subsequently approves $2,500 + $50,000 expanded work orders (OTS Contract 8473, 1 October 1972).'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶4'
+  category: other
+  node_link: '/organizations/cia'
+
+- id: t11
+  added_date: '2026-05-15'
+  date: '1974-02'
+  event: 'Jointly funded CIA ([`/organizations/cia`]) Office of Research and Development and Office of Technical Service program at SRI begins in February 1974 per the 1977 Kress paper. Kenneth A. Kress ([`/people/kenneth-kress`]) is CIA Project Officer for the SRI work.'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 10, ¶1'
+  category: other
+  node_link: '/organizations/cia'
+
+- id: t12
+  added_date: '2026-05-15'
+  date: '1975-12-01'
+  event: 'Puthoff and Targ publish "Perceptual Augmentation Techniques: Part Two — Research Report" as the Stanford Research Institute ([`/organizations/stanford-research-institute`]) Final Report on 1 December 1975 — the SRI internal report cited in the 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation (q15) as the foundational primary-source attestation of the SRI scientific research endeavor.'
+  source:
+    path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
+    location: 'p. 3-30'
+  category: publication
+
+- id: t13
+  added_date: '2026-05-15'
+  date: '1976-11'
+  event: 'In November 1976, Director of Central Intelligence George Bush becomes aware that official Soviets are visiting and questioning Puthoff and Targ at SRI ([`/organizations/stanford-research-institute`]) about their work in parapsychology, and Bush requests a briefing on CIA''s ([`/organizations/cia`]) parapsychology investigations per the 1977 Kress paper (q12). Anchors a lower-bound for Targ''s continuing SRI tenure (Nov 1976).'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 15, ¶1'
+  category: other
+  node_link: '/organizations/cia'
+
+- id: t14
+  added_date: '2026-05-15'
+  date: '1990'
+  event: 'SRI ([`/organizations/stanford-research-institute`]) parapsychology investigation discontinued in 1990 per the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview (q14); FY 1991 Congressional direction establishes new research at SAIC ([`/organizations/saic`]) in Menlo Park. Targ''s individual SRI tenure end is not attested but precedes his 1991 Lockheed affiliation (a2).'
+  source:
+    path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+    location: 'p. 10, ¶3'
+  category: other
+
 affiliations:
 - id: a1
   added_date: '2026-05-14'
   organization_path: '/organizations/stanford-research-institute'
   role: 'Cofounder of the Stanford Research Institute investigation into psychic abilities (per Targ''s ESP Research site); author at the Electronics and Bioengineering Laboratory per the 1974 Nature paper byline'
-  period_start: '1974'
+  period_start: '1972'
   source:
-    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
-    location: '¶3'
-  note: 'Targ''s own ESP Research site reports the SRI cofounder role for the 1970s and 1980s; the 1974 Nature paper anchors the earliest primary-source attestation of his SRI affiliation. period_end intentionally absent — no archived primary source attests a specific SRI departure date.'
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶2'
+  note: 'Targ''s own ESP Research site reports the SRI cofounder role for the 1970s and 1980s; the 1977 Kress paper (q10) attests Targ as having "recently joined the Stanford Research Institute (SRI)" as of the April 1972 Targ-CIA Office of Scientific Intelligence meeting — the earliest primary-source attestation of Targ''s SRI affiliation. The 1974 Nature paper (q3) byline confirms continuing SRI Electronics and Bioengineering Laboratory affiliation. period_end intentionally absent — no archived primary source attests a specific SRI departure date; the SRI parapsychology investigation itself was discontinued in 1990 per the 1993 DIA STAR GATE Project Overview (q14, t14), and Targ''s 1991 Applied Optics paper byline (q3 corroborator at Lockheed Missiles & Space Company) provides an outer bound on his SRI tenure.'
 
 - id: a2
   added_date: '2026-05-14'
@@ -440,15 +703,15 @@ program_involvement:
 - id: p1
   added_date: '2026-05-14'
   program: 'Stanford Research Institute investigation into psychic abilities'
-  role: 'Cofounder (per Targ''s ESP Research site self-attestation); co-author of the 1974 Nature paper that anchors the program''s peer-reviewed primary-source record'
-  period_start: '1970'
+  role: 'Cofounder (per Targ''s ESP Research site self-attestation); co-author of the 1974 Nature paper and the 1975 Stanford Research Institute Final Report "Perceptual Augmentation Techniques: Part Two — Research Report" that anchor the program''s peer-reviewed and SRI-internal primary-source record'
+  period_start: '1972'
   period_end: '1989'
   evidentiary_basis: 'primary-source'
   confidence: 'high'
   source:
-    path: news/espresearch-russell-targ-snapshot.html
-    location: '¶2'
-  note: 'Targ''s own ESP Research site self-attests the cofounder role and the 1970s-and-1980s active window; the 1974 Nature paper (DOI 10.1038/251602a0) is the earliest peer-reviewed primary-source attestation of Targ at the Stanford Research Institute Electronics and Bioengineering Laboratory. period_start 1970 and period_end 1989 bracket the self-attested ''1970s and 1980s'' decade window; archived primary sources do not attest specific start or end dates.'
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶2'
+  note: 'Targ''s own ESP Research site self-attests the cofounder role and the 1970s-and-1980s active window; the 1977 Kress paper (q10) attests April 1972 as the earliest documented Targ-CIA contact and characterizes Targ at that moment as having "recently joined the Stanford Research Institute (SRI)". period_start 1972 anchors on the Kress April 1972 attestation; period_end 1989 brackets the self-attested ''1970s and 1980s'' decade window since no archived primary source attests a specific Targ-SRI-tenure end date. The 1993 DIA STAR GATE Project Overview (q14) attests the SRI program itself was discontinued in 1990 — the program-level outer bound, distinct from Targ''s individual tenure. The 1995 AIR evaluation (q15-q16) reviews the 1973-1988 SRI experiments (154 experiments, 26,000+ trials, 227 subjects per May et al. 1988).'
 
 - id: p2
   added_date: '2026-05-14'
@@ -475,3 +738,16 @@ program_involvement:
     path: news/irva-targ-russell-wayback-20250123.html
     location: '¶2'
   note: 'Per the IRVA speaker bio (q6), Targ accepted invitations to present remote-viewing demonstrations to the USSR Academy of Sciences in 1983 and in 1984. Cold-War-era engagement between U.S. and Soviet psychic-research communities; the IRVA bio does not name specific Soviet counterparts.'
+
+- id: p4
+  added_date: '2026-05-15'
+  program: 'CIA-sponsored SRI parapsychology investigation (OTS / ORD)'
+  role: 'Co-investigator with Harold E. Puthoff under successive CIA Office of Technical Service ([`/organizations/cia`]) contracts at SRI ([`/organizations/stanford-research-institute`]): August 1972 $874 demonstration contract; 1 October 1972 OTS Contract 8473 ($50,000 expanded effort); 1 February 1974 jointly funded ORD and OTS program. Project Officer (CIA-side) was Kenneth A. Kress ([`/people/kenneth-kress`]) per the 1977 Kress paper.'
+  period_start: '1972-08'
+  period_end: '1975'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶4'
+  note: 'period_start 1972-08 anchors on the $874 OTS demonstration contract (q11). period_end 1975 anchors on the 1993 DIA STAR GATE Project Overview (q13): "Then funding was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA". Targ''s broader SRI cofounder role continued beyond the CIA-sponsorship window — see p1 for the umbrella SRI investigation. This entry isolates the specific CIA-funded sub-program documented in the Kress paper.'

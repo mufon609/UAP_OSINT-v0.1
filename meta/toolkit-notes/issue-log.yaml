@@ -8031,3 +8031,116 @@
   message: |
     Table cell in 'Timeline' exceeds word budget (62>55): Targ retires from Lockheed Martin (Lockheed Missiles and Spa...
 
+- ts: 2026-05-15T16:57:38Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 5 significant token(s) not in source (prose-drift check — contributor review): anchored, attestations, attests, cia-to-dia, window
+  tokens: [anchored, attestations, attests, cia-to-dia, window]
+
+- ts: 2026-05-15T16:57:38Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 4 significant token(s) not in source (prose-drift check — contributor review): attests, cia-to-dia, successor, window
+  tokens: [attests, cia-to-dia, successor, window]
+
+- ts: 2026-05-15T17:00:40Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 2 significant token(s) not in source (prose-drift check — contributor review): cia-funded, targ-cia
+  tokens: [cia-funded, targ-cia]
+
+- ts: 2026-05-15T17:01:17Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 97 NOT FOUND in sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf: "In the early 1970's, U.S. researchers at SRI-International, Menlo Park, CA, also..."
+
+- ts: 2026-05-15T17:01:17Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 113 NOT FOUND in sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf: "According to Puthoff and Targ (1975) the scientific research endeavor at SRI may..."
+
+- ts: 2026-05-15T17:01:17Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (60>55): In August 1972, a CIA ([`/organizations/cia`]) Office of Tec...
+
+- ts: 2026-05-15T17:01:17Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): The Stanford Research Institute ([`/organizations/stanford-r...
+
+- ts: 2026-05-15T17:01:25Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 97 NOT FOUND in sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf: "In the early 1970's, U.S. researchers at SRI-International, Menlo Park, CA, also..."
+
+- ts: 2026-05-15T17:01:25Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: error
+  message: |
+    Quote at line 113 NOT FOUND in sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf: "According to Puthoff and Targ (1975) the scientific research endeavor at SRI may..."
+
+- ts: 2026-05-15T17:01:25Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (60>55): In August 1972, a CIA ([`/organizations/cia`]) Office of Tec...
+
+- ts: 2026-05-15T17:01:25Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (65>55): The Stanford Research Institute ([`/organizations/stanford-r...
+
