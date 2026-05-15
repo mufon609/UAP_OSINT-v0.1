@@ -990,7 +990,7 @@ tier that matches who invokes them and what role they play:
   scaffold → render → validate transformation pipeline. The
   manifest CLI (`manifest.py`), Wayback submission (`archive.py`),
   YouTube transcription (`transcribe.py`), and read-only contributor
-  diagnostics (`check-vocab.py`, `normalize-locations.py`).
+  diagnostics (`check-vocab.py`, `coverage-suggest.py`, `normalize-locations.py`).
 - **`/scripts/checks/`**: per-check modules — every named validator
   check (verbatim-quote, prose-drift, chronological-ordering,
   manifest-checksums, iff-section, etc.) lives at

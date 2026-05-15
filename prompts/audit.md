@@ -9,6 +9,25 @@ this session.
 
 The audit target is: **{PATH}**  (ask the user if not specified)
 
+## Optional pre-audit — surface under-extraction candidates
+
+The mechanical validators verify structural integrity, verbatim-quote
+correctness, and prose-drift discipline — but they cannot catch
+under-extraction (substantive source content the contributor missed
+when populating quotes / entities). Run the read-only source-coverage
+diagnostic before the audit-goal pass to surface candidates:
+
+```
+python3 scripts/tools/coverage-suggest.py meta/research/{slug}.yaml
+```
+
+For each primary source, the tool prints (a) substantive paragraphs
+no quote references and (b) capitalized terms not present anywhere
+in the artifact. Both lists are audit suggestions — boilerplate /
+navigation / tangential matches are common (a hearing transcript
+names 50 topics; a witness node only quotes a few). Contributor
+judges each candidate manually.
+
 ## Audit goals
 
 1. **Evidentiary integrity** — every confirmed claim traces to a

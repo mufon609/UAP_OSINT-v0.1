@@ -81,6 +81,7 @@ scripts/
     archive.py              Wayback Machine submission
     transcribe.py           YouTube caption download
     check-vocab.py          pre-flight prose-drift token check (contributor diagnostic)
+    coverage-suggest.py     source-coverage audit aid (read-only; surfaces under-extraction candidates)
     normalize-locations.py  quote `source.location` ref diagnostic (read-only)
   checks/                   per-check modules — every named validator check
                             lives here as its own file; build/validate.py /

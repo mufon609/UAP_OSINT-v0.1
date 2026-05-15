@@ -187,6 +187,7 @@ landing rules.
 | `transcribe.py` | Download YouTube captions to `sources/transcripts/` |
 | `normalize-locations.py` | Diagnostic for quote `source.location` refs — surfaces deprecated `lines N-M` forms with actual line ranges and canonical-form proposals (read-only) |
 | `check-vocab.py` | Pre-flight vocabulary check for prose-drift discipline — pools an artifact's primary-source significant tokens (shares `lib/_common.py`'s prose-drift tokenizer with `validate-research.py`) and reports per-input-token presence. Contributor convenience for drafting `description` / `background` / `top_relevance` / `credibility_notes` / synthesis-content `.note` fields against source vocabulary. |
+| `coverage-suggest.py` | Source-coverage audit aid — for each primary source on an artifact, surfaces (a) substantive source paragraphs that no quote references and (b) capitalized terms that appear in the source but nowhere in the artifact. Forward-direction complement of the verbatim-quote check; flags likely under-extraction candidates. Read-only; contributor judges what's load-bearing vs. boilerplate. Useful at audit time on already-built nodes. |
 
 Full build walk-through: paste `prompts/onboard.md` into a fresh
 session, then `prompts/build.md` for the Phase I → II → III procedure.
