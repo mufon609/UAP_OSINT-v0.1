@@ -123,20 +123,27 @@ def target_node_file(node_type, slug):
 
 def build_primary_sources_list(source_paths, manifest):
     """For each provided source path, create a primary_sources entry.
-    Validates each path appears in the manifest."""
-    manifest_paths = {e.get("path") for e in manifest if e.get("path")}
+    Validates each path appears in the manifest. Format is read from
+    the manifest entry when available — the manifest is the source of
+    truth — so scaffolded artifacts cannot diverge from the manifest at
+    creation. Falls back to extension-based inference only when the
+    path is absent from the manifest (which will trigger a validator
+    error anyway)."""
+    manifest_by_path = {e["path"]: e for e in manifest if e.get("path")}
     entries = []
     for path in source_paths:
-        if path not in manifest_paths:
+        manifest_entry = manifest_by_path.get(path)
+        if manifest_entry is None:
             print(f"WARNING: {path!r} not found in sources/manifest.yaml — "
                   f"scaffolder will still include it, but validate-research.py "
                   f"will error until the source is registered.",
                   file=sys.stderr)
-        # Minimum shape — contributor fills in optional fields (extracted_text_path,
-        # pdf_metadata) during Phase I
+            fmt = format_from_path(path)
+        else:
+            fmt = manifest_entry.get("format") or format_from_path(path)
         entry = {
             "path": path,
-            "format": format_from_path(path),
+            "format": fmt,
         }
         entries.append(entry)
     return entries

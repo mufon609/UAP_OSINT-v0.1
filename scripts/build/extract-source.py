@@ -102,7 +102,14 @@ def extract(source_file):
 # =============================================================================
 
 def do_single(source_rel_path):
-    """Extract one source; write to /tmp/scratch-{basename}.txt."""
+    """Extract one source; write to /tmp/scratch-{basename}.txt.
+
+    Accepts the path either relative to sources/ (e.g.
+    ``news/foo.html``) or as a repo path (``sources/news/foo.html``).
+    Both forms resolve to the same file under SOURCES_DIR."""
+    source_rel_path = source_rel_path.lstrip("/")
+    if source_rel_path.startswith("sources/"):
+        source_rel_path = source_rel_path[len("sources/"):]
     full = SOURCES_DIR / source_rel_path
     if not full.exists():
         sys.exit(f"ERROR: source file not found: sources/{source_rel_path}")

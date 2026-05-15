@@ -7844,3 +7844,107 @@
   message: |
     Quote at line 942 NOT FOUND in sources/government/congress-gov-house-hearing-transcript-20230726.pdf: "_Oral testimony Q&A (response to "Are you aware of any individuals that are part..."
 
+- ts: 2026-05-15T01:57:45Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 4 significant token(s) not in source (prose-drift check — contributor review): attestor, primary-source, recurs, repository
+  tokens: [attestor, primary-source, recurs, repository]
+
+- ts: 2026-05-15T01:57:45Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 11 significant token(s) not in source (prose-drift check — contributor review): attestation, camera, career, peer-reviewed, primary-source, provide, provides, roles, … (+3 more — pass --verbose for full list)
+  tokens: [attestation, camera, career, peer-reviewed, primary-source, provide, provides, roles, ryder, self-attestation, sites]
+
+- ts: 2026-05-15T01:58:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 4 significant token(s) not in source (prose-drift check — contributor review): attestor, primary-source, recurs, repository
+  tokens: [attestor, primary-source, recurs, repository]
+
+- ts: 2026-05-15T01:58:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/russell-targ.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 11 significant token(s) not in source (prose-drift check — contributor review): attestation, camera, career, peer-reviewed, primary-source, provide, provides, roles, … (+3 more — pass --verbose for full list)
+  tokens: [attestation, camera, career, peer-reviewed, primary-source, provide, provides, roles, ryder, self-attestation, sites]
+
+- ts: 2026-05-15T02:00:11Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (60>55): Targ et al. publish [`/documents/targ-coherent-lidar-airborn...
+
+- ts: 2026-05-15T02:00:11Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (76>55): James Ryder ([`/people/james-ryder`]) names Targ on camera a...
+
+- ts: 2026-05-15T02:00:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (60>55): Targ et al. publish [`/documents/targ-coherent-lidar-airborn...
+
+- ts: 2026-05-15T02:00:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (76>55): James Ryder ([`/people/james-ryder`]) names Targ on camera a...
+
+- ts: 2026-05-15T02:00:29Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (60>55): Targ et al. publish [`/documents/targ-coherent-lidar-airborn...
+
+- ts: 2026-05-15T02:00:29Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/russell-targ.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (76>55): James Ryder ([`/people/james-ryder`]) names Targ on camera a...
+

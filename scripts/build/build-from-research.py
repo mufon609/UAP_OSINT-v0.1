@@ -31,7 +31,7 @@ PIPELINE WIRING:
   Pre-flight:  python3 scripts/build/validate-research.py {artifact} --quiet
   Regenerate:  this script (writes node body)
   Post-step:   python3 scripts/build/associate.py {node}   (rewrites Associated Nodes)
-  Validate:    python3 scripts/build/validate.py {node} --quiet
+  Validate:    python3 scripts/build/validate.py {node}
 """
 
 import argparse
@@ -123,7 +123,7 @@ def preflight_validate_artifact(artifact_path):
 
 def post_build_validate(node_path):
     proc = subprocess.run(
-        ["python3", str(VALIDATE_NODE), str(node_path), "--quiet"],
+        ["python3", str(VALIDATE_NODE), str(node_path)],
         capture_output=True, text=True,
     )
     sys.stdout.write(proc.stdout)

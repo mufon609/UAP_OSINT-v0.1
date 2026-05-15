@@ -1,0 +1,273 @@
+id: meta/research/russell-targ
+type: research-artifact
+schema_version: 1
+target_node: people/russell-targ
+status: active
+created: '2026-05-14'
+
+description: ''
+
+primary_sources:
+- path: news/espresearch-russell-targ-snapshot.html
+  format: html
+- path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+  format: html
+- path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
+  format: html
+- path: news/opg.optica.org-targ-coherent-lidar-airborne-wind-sensor-ii-1996.html
+  format: html
+- path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+  format: transcript
+
+document_intrinsic:
+  full_name: 'Russell Targ'
+  aliases: []
+  nationality: ''
+  profession: 'Physicist and author'
+
+context_extrinsic: {}
+
+background: 'Russell Targ is a physicist and author. Per Targ''s ESP Research site, Targ was a pioneer in the development of the laser and cofounder of the Stanford Research Institute''s investigation into psychic abilities in the 1970s and 1980s, and retired from Lockheed Martin as a senior staff scientist where he developed laser technology for peaceful applications. The 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (Targ and Puthoff) reports experiments at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. Applied Optics author affiliations show Lockheed Missiles & Space Company (1991) and Advanced Technology Center, Lockheed Martin (1996), both at 3251 Hanover Street, Palo Alto, California.'
+
+top_relevance: 'Targ is the cofounder of the Stanford Research Institute investigation into psychic abilities in the 1970s and 1980s — the institutional context for the remote viewing research later cited across government materials. Targ''s Lockheed Martin senior staff scientist role places him at the Palo Alto site at 3251 Hanover Street.'
+
+credibility_notes: 'Targ''s ESP Research site (his own publication) names him as a pioneer in the development of the laser and cofounder of the Stanford Research Institute investigation into psychic abilities. The 1974 Nature paper (Targ and Puthoff) places Targ at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. The 1991 and 1996 Applied Optics author affiliations show Targ at Lockheed Missiles & Space Company (1991) and Advanced Technology Center, Lockheed Martin (1996) — same Palo Alto site at 3251 Hanover Street. A separate 2018 talk [`/transcripts/lucistrust-garment-of-god-ryder-2018`] also names Targ as having worked at Lockheed for years.'
+
+quotes:
+- id: q1
+  added_date: '2026-05-14'
+  text: |
+    Russell Targ is a physicist and author who was a pioneer in the development of the laser and cofounder of the Stanford Research Institute’s investigation into psychic abilities in the 1970s and 1980s.
+  source:
+    path: news/espresearch-russell-targ-snapshot.html
+    location: '¶2'
+  context: 'Self-attestation on Russell Targ''s ESP Research website (espresearch.com homepage), undated'
+  observation_type: relayed
+  significance: 'Targ''s own self-attestation of three roles: laser pioneer, Stanford Research Institute psychic-abilities investigation cofounder, and active period 1970s-1980s. Primary-source anchor for Targ''s SRI Stargate-precursor cofounder role (the 1974 Nature paper provides peer-reviewed corroboration via the Targ + Puthoff byline).'
+
+- id: q2
+  added_date: '2026-05-14'
+  text: |
+    Targ retired from Lockheed Martin as a senior staff scientist, where he developed laser technology for peaceful applications.
+  source:
+    path: news/espresearch-russell-targ-snapshot.html
+    location: '¶2'
+  context: 'Self-attestation on Russell Targ''s ESP Research website (espresearch.com homepage), undated'
+  observation_type: relayed
+  significance: 'Targ''s own self-attestation of his Lockheed Martin career outcome (retirement as senior staff scientist) and characterization of his Lockheed-era work (laser technology for peaceful applications). Independent peer-reviewed corroboration of the Lockheed Martin role from the 1991 and 1996 Applied Optics author affiliations; the retirement date itself is not attested in archived sources.'
+
+- id: q3
+  added_date: '2026-05-14'
+  text: |
+    WE present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. The literature1–3 and our observations lead us to conclude that such abilities can be studied under laboratory conditions.
+  source:
+    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    location: '¶1'
+  context: 'Abstract of Targ and Puthoff, ''Information transmission under conditions of sensory shielding'', Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0 — Targ and Puthoff author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025'
+  observation_type: relayed
+  statement_date: '1974-10-18'
+  significance: 'Co-authored Targ + Puthoff peer-reviewed report on the SRI investigation into psychic abilities. Foundational primary-source anchor for Targ''s Stanford Research Institute cofounder role (the role Targ self-attests on his ESP Research site). The paper''s author affiliation places Targ at the Electronics and Bioengineering Laboratory, SRI, Menlo Park as of the 11 March 1974 manuscript receipt date.'
+
+entities_referenced:
+- id: e1
+  added_date: '2026-05-14'
+  entity_type: person
+  name: 'Hal Puthoff'
+  wrap_path: '/people/hal-puthoff'
+  context_summary: 'Targ and Puthoff are co-authors of the 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (DOI 10.1038/251602a0); affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per Targ''s ESP Research site, Targ is the cofounder of the Stanford Research Institute investigation into psychic abilities — Puthoff is the co-cofounder per the same Nature paper byline.'
+  references:
+  - quote_id: q3
+
+- id: e2
+  added_date: '2026-05-14'
+  entity_type: person
+  name: 'James Ryder'
+  wrap_path: '/people/james-ryder'
+  context_summary: 'Ryder''s 2018 Lucis Trust Garment of God talk names Targ on camera as ''dr targ who''s worked for me for years'' ([1:08:10] in the YouTube auto-caption transcript). The talk also describes the ESP Wars: East and West book project as assembled when Ryder was vice president at Lockheed Martin Space Systems Company, with Targ as a contributor ([55:28] ''russell targ dr targ had a lot of input''). Ryder is built at /people/james-ryder.'
+
+- id: e3
+  added_date: '2026-05-14'
+  entity_type: organization
+  name: 'Stanford Research Institute'
+  wrap_path: '/organizations/stanford-research-institute'
+  context_summary: 'Per the 1974 Nature paper byline, Targ and Puthoff are at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per Targ''s ESP Research site, Targ cofounded the Stanford Research Institute investigation into psychic abilities in the 1970s and 1980s. SRI is unbuilt in this repository (cross-referenced from /people/james-ryder).'
+  references:
+  - quote_id: q1
+  - quote_id: q3
+
+- id: e4
+  added_date: '2026-05-14'
+  entity_type: organization
+  name: 'Lockheed Martin'
+  wrap_path: '/organizations/lockheed-martin'
+  context_summary: 'Per Targ''s ESP Research site, Targ retired from Lockheed Martin as a senior staff scientist. The 1996 Applied Optics paper byline places Targ at the Advanced Technology Center, Lockheed Martin, 3251 Hanover Street, Palo Alto, California 94304-1191 — the post-1995 corporate parent of the 1991 Lockheed Missiles & Space Company affiliation at the same address. Lockheed Martin is unbuilt in this repository.'
+  references:
+  - quote_id: q2
+
+- id: e5
+  added_date: '2026-05-14'
+  entity_type: organization
+  name: 'Lockheed Missiles & Space Company'
+  wrap_path: '/organizations/lockheed-missiles-and-space-company'
+  context_summary: 'Per the 1991 Applied Optics paper byline, Targ is at Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA — the pre-1995 corporate identity at the same Palo Alto address later carried by Advanced Technology Center, Lockheed Martin. New unbuilt stub introduced by this Targ artifact.'
+
+- id: e6
+  added_date: '2026-05-14'
+  entity_type: document
+  name: 'Coherent lidar airborne windshear sensor: performance evaluation (Applied Optics 1991)'
+  wrap_path: '/documents/targ-coherent-lidar-airborne-windshear-sensor-1991'
+  context_summary: 'Targ, Kavaya, Huffaker, and Bowles, Applied Optics 30 (15), 2013–2026, 20 May 1991, DOI 10.1364/AO.30.002013. Targ author affiliation: Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA. Already a referenced stub from /people/james-ryder.'
+
+- id: e7
+  added_date: '2026-05-14'
+  entity_type: document
+  name: 'Coherent lidar airborne wind sensor II: flight-test results at 2 and 10 µm (Applied Optics 1996)'
+  wrap_path: '/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996'
+  context_summary: 'Targ, Steakley, Hawley, Ames, Forney, Swanson, Stone, Otto, Zarifis, Brockman, Calloway, Klein, and Robinson, Applied Optics 35 (36), 7117–7127, 20 December 1996, DOI 10.1364/AO.35.007117. Targ author affiliation: Advanced Technology Center, Lockheed Martin, 3251 Hanover Street, Palo Alto, California 94304-1191. Already a referenced stub from /people/james-ryder.'
+
+- id: e8
+  added_date: '2026-05-14'
+  entity_type: document
+  name: 'Information transmission under conditions of sensory shielding (Nature 1974)'
+  wrap_path: '/documents/nature-1974-targ-puthoff-information-transmission'
+  context_summary: 'Targ and Puthoff, Nature 251, 602–607, 18 October 1974, DOI 10.1038/251602a0. Targ and Puthoff author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Received 11 March 1974; revised 8 July 1974; issue 18 October 1974. New unbuilt stub introduced by this Targ artifact.'
+  references:
+  - quote_id: q3
+
+- id: e9
+  added_date: '2026-05-14'
+  entity_type: transcript
+  name: 'The Garment of God — Ryder, Lucis Trust 2018 (YouTube auto-caption transcript)'
+  wrap_path: '/transcripts/lucistrust-garment-of-god-ryder-2018'
+  context_summary: 'Lucis Trust Arcane School conference, New York, April 28-29 2018 — Ryder talk ''The Garment of God: Esoterically and Scientifically'' (YouTube R9Yn0hgbVA0; published 2021-02-02 on the Lucis Trust YouTube channel). Auto-caption transcript registered at sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt (transcript_provenance: auto-caption). Ryder names Targ on camera at [55:28] (''russell targ dr targ had a lot of input'') and [1:08:10] (''dr targ who''s worked for me for years''). New unbuilt stub introduced by this Targ artifact.'
+
+naming_quirks: []
+
+rumors: []
+
+timeline:
+- id: t1
+  added_date: '2026-05-14'
+  date: '1974-03-11'
+  event: 'Targ and Puthoff submit ''Information transmission under conditions of sensory shielding'' to Nature (manuscript receipt date per the published paper''s metadata). Author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025.'
+  source:
+    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    location: '¶3'
+  category: publication
+
+- id: t2
+  added_date: '2026-05-14'
+  date: '1974-10-18'
+  event: 'Targ and Puthoff publish [`/documents/nature-1974-targ-puthoff-information-transmission`] in Nature 251, 602–607 (DOI 10.1038/251602a0). Issue date 18 October 1974. Foundational peer-reviewed primary-source attestation of the Targ + Puthoff Stanford Research Institute investigation into psychic abilities.'
+  source:
+    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    location: '¶1'
+  category: publication
+  node_link: '/documents/nature-1974-targ-puthoff-information-transmission'
+
+- id: t3
+  added_date: '2026-05-14'
+  date: '1991-05-20'
+  event: 'Targ, Kavaya, Huffaker, and Bowles publish [`/documents/targ-coherent-lidar-airborne-windshear-sensor-1991`] in Applied Optics 30 (15), 2013–2026 (DOI 10.1364/AO.30.002013). Targ author affiliation: Lockheed Missiles & Space Company, 3251 Hanover Street, Palo Alto, California 94304-1191 USA — peer-reviewed primary attestation of Targ at LMSC in 1991.'
+  source:
+    path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
+    location: 'p. 1'
+  category: publication
+  node_link: '/documents/targ-coherent-lidar-airborne-windshear-sensor-1991'
+
+- id: t4
+  added_date: '2026-05-14'
+  date: '1996-12-20'
+  event: 'Targ et al. publish [`/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996`] in Applied Optics 35 (36), 7117–7127 (DOI 10.1364/AO.35.007117). Targ author affiliation: Advanced Technology Center, Lockheed Martin, 3251 Hanover Street, Palo Alto — same address as the 1991 Lockheed Missiles & Space Company byline.'
+  source:
+    path: news/opg.optica.org-targ-coherent-lidar-airborne-wind-sensor-ii-1996.html
+    location: 'p. 1'
+  category: publication
+  node_link: '/documents/targ-coherent-lidar-airborne-wind-sensor-ii-1996'
+
+- id: t5
+  added_date: '2026-05-14'
+  date: '2018-04-28'
+  event: 'James Ryder ([`/people/james-ryder`]) names Targ in the 2018 ''Garment of God'' talk ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]): at [55:28] crediting Targ with ''a lot of input'' on the ESP Wars: East and West book project, and at [1:08:10] describing Targ as ''dr targ who''s worked for me for years''.'
+  source:
+    path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+    location: '[55:28]'
+  category: testimony
+  node_link: '/people/james-ryder'
+
+affiliations:
+- id: a1
+  added_date: '2026-05-14'
+  organization_path: '/organizations/stanford-research-institute'
+  role: 'Cofounder of the Stanford Research Institute investigation into psychic abilities (per Targ''s ESP Research site); author at the Electronics and Bioengineering Laboratory per the 1974 Nature paper byline'
+  period_start: '1974'
+  source:
+    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    location: '¶3'
+  note: 'Targ''s own ESP Research site reports the SRI cofounder role for the 1970s and 1980s; the 1974 Nature paper anchors the earliest primary-source attestation of his SRI affiliation. period_end intentionally absent — no archived primary source attests a specific SRI departure date.'
+
+- id: a2
+  added_date: '2026-05-14'
+  organization_path: '/organizations/lockheed-missiles-and-space-company'
+  role: 'Senior staff scientist (per the 1991 Applied Optics paper byline at the Hanover Street Palo Alto site)'
+  period_start: '1991'
+  period_end: '1995'
+  source:
+    path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
+    location: 'p. 1'
+  note: 'period_start 1991 is the earliest archived primary-source attestation of Targ at LMSC (1991 Applied Optics paper byline). period_end set at 1995 (the year the Lockheed Martin merger renamed the entity); see a3 for the post-1995 Lockheed Martin Advanced Technology Center role at the same Palo Alto address.'
+
+- id: a3
+  added_date: '2026-05-14'
+  organization_path: '/organizations/lockheed-martin'
+  role: 'Senior staff scientist at the Advanced Technology Center, Lockheed Martin (per the 1996 Applied Optics paper byline and Targ''s ESP Research site retirement self-attestation)'
+  period_start: '1996'
+  source:
+    path: news/opg.optica.org-targ-coherent-lidar-airborne-wind-sensor-ii-1996.html
+    location: 'p. 1'
+  note: 'period_start 1996 is the earliest archived primary-source attestation of Targ at the post-1995 Lockheed Martin entity at the 3251 Hanover Street Palo Alto site (1996 Applied Optics paper byline). period_end intentionally absent — Targ''s own ESP Research site reports his retirement from Lockheed Martin but does not attest the retirement year; the IRVA speaker bio that previously attested ''1997 retirement'' is currently 404 (per sources/manifest.yaml). James Ryder ([`/people/james-ryder`]) places Targ at Lockheed Martin during Ryder''s Lockheed Martin Space Systems Company vice president era per the 2018 talk transcript ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]).'
+
+relationships:
+- id: r1
+  added_date: '2026-05-14'
+  person_path: '/people/hal-puthoff'
+  relationship: 'Stanford Research Institute investigation into psychic abilities co-founder; 1974 Nature paper co-author'
+  source:
+    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    location: '¶3'
+  note: 'Targ and Puthoff co-authored ''Information transmission under conditions of sensory shielding'' (Nature 251, 602–607, 18 October 1974, DOI 10.1038/251602a0); shared affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Targ''s ESP Research site identifies Targ as ''cofounder of the Stanford Research Institute''s investigation into psychic abilities'' (1970s and 1980s); the 1974 Nature paper byline establishes Puthoff as the second cofounder.'
+
+- id: r2
+  added_date: '2026-05-14'
+  person_path: '/people/james-ryder'
+  relationship: 'Lockheed Martin colleague and supervisor (per Ryder''s 2018 talk: Targ ''worked for me for years'')'
+  source:
+    path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+    location: '[1:08:10]'
+  note: 'James Ryder''s 2018 Lucis Trust Garment of God talk attests on camera at [1:08:10] ''dr targ who''s worked for me for years'' and at [55:28] credits Targ with ''a lot of input'' on the ESP Wars: East and West book project assembled during Ryder''s Lockheed Martin Space Systems Company vice president era. Source is YouTube auto-caption (transcript_provenance: auto-caption); ''dr targ'' renders verbatim, the canonical form ''Dr. Targ'' is preserved for prose elsewhere via [`/people/russell-targ`] backtick-bracket wrapping.'
+
+program_involvement:
+- id: p1
+  added_date: '2026-05-14'
+  program: 'Stanford Research Institute investigation into psychic abilities'
+  role: 'Cofounder (per Targ''s ESP Research site self-attestation); co-author of the 1974 Nature paper that anchors the program''s peer-reviewed primary-source record'
+  period_start: '1970'
+  period_end: '1989'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: news/espresearch-russell-targ-snapshot.html
+    location: '¶2'
+  note: 'Targ''s own ESP Research site self-attests the cofounder role and the 1970s-and-1980s active window; the 1974 Nature paper (DOI 10.1038/251602a0) is the earliest peer-reviewed primary-source attestation of Targ at the Stanford Research Institute Electronics and Bioengineering Laboratory. period_start 1970 and period_end 1989 bracket the self-attested ''1970s and 1980s'' decade window; archived primary sources do not attest specific start or end dates.'
+
+- id: p2
+  added_date: '2026-05-14'
+  program: 'Lockheed Martin laser technology research (Lockheed Missiles & Space Company / Advanced Technology Center)'
+  role: 'Senior staff scientist (per Targ''s ESP Research site self-attestation and the 1991 and 1996 Applied Optics author affiliations)'
+  period_start: '1991'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
+    location: 'p. 1'
+  note: 'period_start 1991 anchors on the earliest archived peer-reviewed paper byline placing Targ at the Hanover Street Palo Alto Lockheed site (Lockheed Missiles & Space Company pre-merger; Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end intentionally absent — Targ''s ESP Research site reports retirement but does not attest the retirement year. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk places Targ at Lockheed during Ryder''s pre-2011 vice president era ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]).'
