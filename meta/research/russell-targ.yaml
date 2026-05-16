@@ -242,7 +242,7 @@ entities_referenced:
   entity_type: person
   name: 'Hal Puthoff'
   wrap_path: '/people/hal-puthoff'
-  context_summary: 'Targ and Puthoff are co-authors of the 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (DOI 10.1038/251602a0); affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per Targ''s ESP Research site, Targ is the cofounder of the Stanford Research Institute investigation into psychic abilities — Puthoff is the co-cofounder per the same Nature paper byline.'
+  context_summary: 'Targ and Puthoff are co-authors of the 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (DOI 10.1038/251602a0); affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per Targ''s ESP Research site, Targ is the cofounder of the Stanford Research Institute investigation into psychic abilities; the 1974 Nature paper byline corroborates Puthoff''s coterminous SRI Electronics and Bioengineering Laboratory affiliation, but the ''cofounder'' designation for Puthoff derives from Targ''s self-attestation that he was ''cofounder'' (implying a co-), not directly from the byline.'
   references:
   - quote_id: q3
 
@@ -472,6 +472,15 @@ naming_quirks:
   resolution: preserve-as-sic-in-quotes
   note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "rn" as "m" yielding "tum" where the canonical form is "turn" — common typewritten-font OCR cluster misread (rn↔m is documented in meta/conventions.md as a typical OCR confusion). Preserved verbatim in q10 quote text per OCR-scan source-form-preservation discipline.'
 
+- id: nq8
+  added_date: '2026-05-15'
+  observed: 'E. Harold Puthoff'
+  canonical: 'Harold E. Puthoff'
+  location: '¶3'
+  source_path: news/irva-targ-russell-wayback-20250123.html
+  resolution: disputed
+  note: 'The IRVA speaker bio (q7) lists the Mind Reach co-author as ''E. Harold Puthoff'' (initial-then-middle-name form), while two other archived primary sources attest different forms: the 1974 Nature paper byline (q3) renders the name as ''HAROLD PUTHOFF'' (no middle initial), and the 1977 Kress paper (q9) renders it as ''Dr. Harold E. Puthoff'' (first-name-middle-initial form). The repository canonical /people/hal-puthoff slug uses the informal short form by which Puthoff is widely identified. Source-priority hierarchy (per feedback_source_priority_hierarchy.md): the subject (Puthoff) has not self-attested in this Targ artifact''s archived sources, so primary documentary attestation falls to the Nature paper byline (subject''s own peer-reviewed publication) and the Kress paper (CIA-side institutional record) — both of which use first-name-middle-initial form. Preserved as-source in q7 quote text per source-form preservation discipline; flagged here as ''disputed'' so future contributors evaluating the Mind Reach book co-author byline can see the divergence.'
+
 rumors:
 - id: r1
   added_date: '2026-05-15'
@@ -638,7 +647,7 @@ affiliations:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶2'
-  note: 'Targ''s own ESP Research site reports the SRI cofounder role for the 1970s and 1980s; the 1977 Kress paper (q10) attests Targ as having "recently joined the Stanford Research Institute (SRI)" as of the April 1972 Targ-CIA Office of Scientific Intelligence meeting — the earliest primary-source attestation of Targ''s SRI affiliation. The 1974 Nature paper (q3) byline confirms continuing SRI Electronics and Bioengineering Laboratory affiliation. period_end intentionally absent — no archived primary source attests a specific SRI departure date; the SRI parapsychology investigation itself was discontinued in 1990 per the 1993 DIA STAR GATE Project Overview (q14, t14), and Targ''s 1991 Applied Optics paper byline (q3 corroborator at Lockheed Missiles & Space Company) provides an outer bound on his SRI tenure.'
+  note: 'Targ''s own ESP Research site reports the SRI cofounder role for the 1970s and 1980s; the 1977 Kress paper (q10) attests Targ as having "recently joined the Stanford Research Institute (SRI)" as of the April 1972 Targ-CIA Office of Scientific Intelligence meeting — the earliest primary-source attestation of Targ''s SRI affiliation. The 1974 Nature paper (q3) byline confirms continuing SRI Electronics and Bioengineering Laboratory affiliation. period_end intentionally absent — no archived primary source attests a specific SRI departure date; the SRI parapsychology investigation itself was discontinued in 1990 per the 1993 DIA STAR GATE Project Overview (q14, t14), and Targ''s 1991 Applied Optics paper byline (a2 at Lockheed Missiles & Space Company) provides an outer bound on his SRI tenure. Program Involvement p1 mirrors the same open-ended representation; the bare period_start + prose hedge is the working stop-gap per meta/topic/research-queue.md "known start, unknown end (but not ongoing)" pending convention question.'
 
 - id: a2
   added_date: '2026-05-14'
@@ -688,7 +697,7 @@ relationships:
   source:
     path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
     location: '¶3'
-  note: 'Targ and Puthoff co-authored ''Information transmission under conditions of sensory shielding'' (Nature 251, 602–607, 18 October 1974, DOI 10.1038/251602a0); shared affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Targ''s ESP Research site identifies Targ as ''cofounder of the Stanford Research Institute''s investigation into psychic abilities'' (1970s and 1980s); the 1974 Nature paper byline establishes Puthoff as the second cofounder.'
+  note: 'Targ and Puthoff co-authored ''Information transmission under conditions of sensory shielding'' (Nature 251, 602–607, 18 October 1974, DOI 10.1038/251602a0); shared affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Targ''s ESP Research site identifies Targ as ''cofounder of the Stanford Research Institute''s investigation into psychic abilities'' (1970s and 1980s); the 1974 Nature paper byline corroborates Puthoff''s coterminous SRI Electronics and Bioengineering Laboratory affiliation. The ''cofounder'' designation for Puthoff derives from Targ''s self-attestation that he was ''cofounder'' (implying a co-), not directly from the Nature byline.'
 
 - id: r2
   added_date: '2026-05-14'
@@ -699,19 +708,36 @@ relationships:
     location: '[1:08:10]'
   note: 'James Ryder''s 2018 Lucis Trust Garment of God talk attests on camera at [1:08:10] ''dr targ who''s worked for me for years'' and at [55:28] credits Targ with ''a lot of input'' on the ESP Wars: East and West book project assembled during Ryder''s Lockheed Martin Space Systems Company vice president era. Source is YouTube auto-caption (transcript_provenance: auto-caption); ''dr targ'' renders verbatim, the canonical form ''Dr. Targ'' is preserved for prose elsewhere via [`/people/russell-targ`] backtick-bracket wrapping.'
 
+- id: r3
+  added_date: '2026-05-15'
+  person_path: '/people/jane-katra'
+  relationship: 'Miracles of Mind: Exploring Nonlocal Consciousness and Spiritual Healing (1998) co-author per the IRVA speaker bio (q7); also named in Targ''s espresearch.com book catalogue (q4)'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: '¶3'
+  note: 'Targ and Katra co-authored Miracles of Mind: Exploring Nonlocal Consciousness and Spiritual Healing (1998) per IRVA q7. Targ''s own espresearch.com homepage (q4) also lists Miracles of Mind as one of his co-authored works (without naming the co-author). Parallel evidentiary pattern to the Puthoff relationship (r1: 1974 Nature paper co-author). Katra is currently an unbuilt stub.'
+
+- id: r4
+  added_date: '2026-05-15'
+  person_path: '/people/kenneth-kress'
+  relationship: 'CIA Project Officer for the SRI parapsychology investigation contracts (1972 onward); chronicler of Targ-CIA engagement in the 1977 Studies in Intelligence paper'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶1-4'
+  note: 'Kress was CIA Operations Officer in the Office of Technical Service (OTS) and CIA Project Officer for the SRI parapsychology investigation contracts beginning October 1972 (per the Kress 1977 paper, q9-q11). Kress''s direct contact with Targ was institutional rather than personal — managing CIA contracts with Targ and Puthoff at SRI, and authoring the 1977 first-person Studies in Intelligence review that is the foundational CIA-side primary-source attestation of Targ''s 1972 SRI join, the April 1972 OSI meeting, the August 1972 $874 OTS demonstration contract, and the November 1976 DCI Bush briefing. Parallels the Ryder relationship (r2) in framing as an institutional/professional connection rather than personal. Kress is currently an unbuilt stub.'
+
 program_involvement:
 - id: p1
   added_date: '2026-05-14'
   program: 'Stanford Research Institute investigation into psychic abilities'
   role: 'Cofounder (per Targ''s ESP Research site self-attestation); co-author of the 1974 Nature paper and the 1975 Stanford Research Institute Final Report "Perceptual Augmentation Techniques: Part Two — Research Report" that anchor the program''s peer-reviewed and SRI-internal primary-source record'
   period_start: '1972'
-  period_end: '1989'
   evidentiary_basis: 'primary-source'
   confidence: 'high'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶2'
-  note: 'Targ''s own ESP Research site self-attests the cofounder role and the 1970s-and-1980s active window; the 1977 Kress paper (q10) attests April 1972 as the earliest documented Targ-CIA contact and characterizes Targ at that moment as having "recently joined the Stanford Research Institute (SRI)". period_start 1972 anchors on the Kress April 1972 attestation; period_end 1989 brackets the self-attested ''1970s and 1980s'' decade window since no archived primary source attests a specific Targ-SRI-tenure end date. The 1993 DIA STAR GATE Project Overview (q14) attests the SRI program itself was discontinued in 1990 — the program-level outer bound, distinct from Targ''s individual tenure. The 1995 AIR evaluation (q15-q16) reviews the 1973-1988 SRI experiments (154 experiments, 26,000+ trials, 227 subjects per May et al. 1988).'
+  note: 'Targ''s own ESP Research site self-attests the cofounder role and the 1970s-and-1980s active window; the 1977 Kress paper (q10) attests April 1972 as the earliest documented Targ-CIA contact and characterizes Targ at that moment as having "recently joined the Stanford Research Institute (SRI)". period_start 1972 anchors on the Kress April 1972 attestation. period_end intentionally absent (mirroring affiliation a1) — no archived primary source attests a specific Targ-SRI-tenure end date, and the self-attested ''1970s and 1980s'' decade window does not pin a year-precise departure. The 1991 Applied Optics paper byline (a2 at Lockheed Missiles & Space Company) provides an outer bound on individual tenure; the 1993 DIA STAR GATE Project Overview (q14) attests the SRI program itself was discontinued in 1990 — the program-level outer bound, distinct from Targ''s individual tenure. The 1995 AIR evaluation (q15-q16) reviews the 1973-1988 SRI experiments (154 experiments, 26,000+ trials, 227 subjects per May et al. 1988). Per the corpus-wide pending convention question on "known start, unknown end (but not ongoing)" (meta/topic/research-queue.md), bare period_start + prose hedge is the working stop-gap pattern.'
 
 - id: p2
   added_date: '2026-05-14'
@@ -724,7 +750,7 @@ program_involvement:
   source:
     path: news/opg.optica.org-targ-coherent-lidar-airborne-windshear-sensor-1991.html
     location: 'p. 1'
-  note: 'period_start 1991 anchors on the earliest archived peer-reviewed paper byline placing Targ at the Hanover Street Palo Alto Lockheed site (Lockheed Missiles & Space Company pre-merger; Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end 1997 per IRVA speaker bio q8 ''Having retired in 1997''. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk places Targ at Lockheed during Ryder''s pre-2011 vice president era ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]), consistent with the 1991-1997 window.'
+  note: 'period_start 1991 anchors on the earliest archived peer-reviewed paper byline placing Targ at the Hanover Street Palo Alto Lockheed site (Lockheed Missiles & Space Company pre-merger; Advanced Technology Center, Lockheed Martin post-merger at the same address per the 1996 paper). period_end 1997 per IRVA speaker bio q8 ''Having retired in 1997''. The 2018 James Ryder ([`/people/james-ryder`]) Lucis Trust talk ([`/transcripts/lucistrust-garment-of-god-ryder-2018`]) attests on camera (transcript_provenance: auto-caption) at [1:08:10] that Targ ''worked for me for years''; the talk itself does not date the start or end of that working relationship. Independent attestation places Ryder as a Lockheed Martin Space Systems Company vice president in the pre-2011 era (see /people/james-ryder); under that framing the ''years'' Targ worked for Ryder are consistent with — but do not directly anchor — the 1991-1997 window attested by the Applied Optics paper bylines (1991, 1996) and the IRVA bio retirement attestation (1997).'
 
 - id: p3
   added_date: '2026-05-15'
