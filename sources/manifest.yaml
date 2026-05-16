@@ -885,9 +885,10 @@
   path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   archived_date: '2026-05-16'
   sha256: 61269a3800433f53975ebf5acb5cee50f68aa19d8457ab0338a8dccfbe26a124
-  archive_status: 1
+  archive_status: 3
   extraction_type: ocr-scan
   note: 'AAWSAP DIRD #5 — ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'', DIA-08-1003-015, ICOD 1 December 2009, dated 29 March 2010, U//FOUO. Author: H.E. Puthoff, Ph.D., EarthTech International, Inc., Austin, Texas. Prepared by Acquisition Support Division (DWO-3), Defense Warning Office, Directorate for Analysis, Defense Intelligence Agency. AAWSA Program Manager: James T. Lacatski, D.Eng. Open-source mirror via Public Intelligence (info.publicintelligence.net); originally FOIA-released with 36 other AAWSAP DIRDs via The Black Vault. PDF text layer carries pervasive Cyrillic-glyph substitutions (Cyrillic о/п/Ь/у/Ы/Т encoded in place of visually-identical Latin glyphs) at the PDF content-stream level — verified per meta/conventions.md as ''Unicode-mapping artifact at PDF-generation time''; not recoverable via extraction-tool swap. Clean-text sibling produced via VLM page-image read (Claude Read tool, pages 1-17) and registered separately.'
+  wayback_date: '2026-05-12'
 - url: https://info.publicintelligence.net/DIA-AdvancedSpacePropulsion.pdf#clean-text-transcription
   format: txt
   status: archived
@@ -1307,8 +1308,9 @@
   path: news/propublica-sri-international-941160950-20260515.html
   archived_date: '2026-05-15'
   sha256: 6e417cb12c90b4890706eb57dea2b57e9b9f5f4d48255ae63cb2c1cf541eb212
-  archive_status: 1
+  archive_status: 3
   note: 'ProPublica Nonprofit Explorer page for SRI International (EIN 94-1160950), retrieved 2026-05-15. Aggregated structured-data view of IRS Form 990 filings (data attributed to IRS per ProPublica''s own disclaimer). Attests: tax-exempt since March 1949; 501(c)(3); NTEE category ''Science and Technology Research Institutes, Services / Science, General''. Fiscal Year ending Dec. 2024 (filed November 12, 2025): Revenue $437,926,151; Expenses $433,169,251; Net Income $4,756,900; Total Assets $409,624,782; Total Liabilities $231,589,878; Net Assets $178,034,904. Substantive notable: going-concern flag from FY2024 independent audit. Board (FY2024): David Motley (Chair), Ellen Ochoa, Ellen Pawlikowski, Charles Mathis, John J Young Jr, Deborah Rieman, Ramesh Rengarajan. CEO David Parekh. Note: ProPublica''s underlying IRS Form 990 PDF download is Cloudflare-bot-protected; this HTML overview page is the accessible primary-source archival route. Form 990 filing IDs: 941160950_202312_990T_2024112122902146, 941160950_202212_990_2024010322163674.'
+  wayback_date: '2025-01-14'
 - url: https://safeaerospace.org/
   format: html
   status: archived
@@ -1581,6 +1583,32 @@
   archive_status: 3
   note: Unknown Country article (June 2024) reporting on the Brandon Fugal-disclosed undisclosed 2018 meeting between Kirkpatrick (then DIO/S&TI at DIA) and the Skinwalker Ranch research team in Washington DC; cites Fugal's May 9 2024 X post photograph documenting Kirkpatrick at the head of the table during the April 19 2018 SSCI/SASC briefing, and the EXIF metadata anchoring the photograph to 1:31pm ET on April 19 2018 between 1:00-3:30pm ET. Documents the Greenstreet split-screen interview where Kirkpatrick denied any pre-AARO UAP duties and characterized himself as 'an independent outside reviewer'. Source for audit finding 3.4 (post-departure controversy).
   wayback_date: '2025-03-20'
+- url: https://urigeller.com/about-uri/
+  format: html
+  status: archived
+  path: news/urigeller-com-about-uri-20260516.html
+  archived_date: '2026-05-16'
+  sha256: 224eb0f9dfece8e3636a56d76013ace993b004518b7d57eef05c45907f8983bb
+  archive_status: 3
+  note: 'Uri Geller''s About index page on his own site (urigeller.com/about-uri/), fetched 2026-05-16. Curated table of contents pointing to biography, picture gallery, TV shows, charity work, Red Cross page, Mind Over Missile, legal issues, sport pages, music collaborations, art work, columns. Carries the headline one-sentence self-attestation: ''Uri Geller is one of the world''s most investigated and celebrated mystifiers.'' Used to anchor the Identity section and Affiliations index.'
+  wayback_date: '2026-01-28'
+- url: https://urigeller.com/scientific-paranormal/uri-geller-ufos-metal-bending-and-the-psi-war/
+  format: html
+  status: archived
+  path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
+  archived_date: '2026-05-16'
+  sha256: 09890af8833d78c7836376bbc0a1c7f835b8b3cc1c64a98cd08b640c28aec836
+  archive_status: 3
+  note: Brendan Burton article 'Uri Geller – UFOs, metal-bending and the PSI war' (dated November 24, 2007) republished on urigeller.com under the Scientific & Paranormal section, fetched 2026-05-16. Third-party-authored but Geller-site-published; contains verbatim Russell Targ quote about Geller's SRI tenure (six weeks in 1973, remarkable ESP perceptual ability for hidden-picture remote viewing, no metal bending under acceptably controlled conditions). Names Hal Puthoff, Russell Targ, Edgar Mitchell, Andrija Puharich, Shimson 'Shipi' Shtrang (brother-in-law), Jack Hauk (metallurgist, Boeing), Jane Katra. Anchors Geller's December 1972 entry into the SRI parapsychology investigation under Puharich's introduction.
+  wayback_date: '2024-11-13'
+- url: https://urigeller.com/uri-gellers-biography/
+  format: html
+  status: archived
+  path: news/urigeller-com-biography-20260516.html
+  archived_date: '2026-05-16'
+  sha256: 6fcc1c3b494d343b14b632ea9f623bf60c540472592e451ce815ec4c6a6c1814
+  archive_status: 1
+  note: 'Uri Geller''s canonical biography page on his own site (urigeller.com/uri-gellers-biography/), fetched 2026-05-16. First-person + third-person bio attestation by the subject''s own publishing presence. Topics: birth 1946-12-20 Israel; Hungarian/Austrian parentage; Sigmund Freud lineage claim; age-4 sphere-of-light encounter with retired IAF officer eyewitness; spoon-bending onset age 5; Cyprus 1957-1963 (age 11-17); IDF paratrooper Six-Day War 1967 wounded; modelled 1968-69; PK demos from 1969; Golda Meir 1971 endorsement; Nature paper on Stanford Research Institute work; FBI/CIA collaboration claims (KGB computer files, serial-killer tracking, Nuclear Arms Reduction Treaty influence); Capitol Building briefing of US Senators and National Security Executives; Red Cross negotiations with Palestine Red Crescent and Magen David Adom.'
 - url: https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title10-section137&num=0&edition=prelim
   format: html
   status: archived
@@ -2986,8 +3014,9 @@
   path: news/sri-com-about-history-1925-1930s-wayback-2004.html
   archived_date: '2026-05-15'
   sha256: 9bfa2dc397f7e10f50d29c322eb259416a1388f73685582cf47947e9f5c7c827
-  archive_status: 1
+  archive_status: 3
   note: 'SRI International''s 2004-era history page covering 1925-1930s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+  wayback_date: '2011-09-27'
 - url: https://www.sri.com/about/history/1940.html
   format: html
   status: archived
@@ -3002,56 +3031,63 @@
   path: news/sri-com-about-history-1950s-wayback-2004.html
   archived_date: '2026-05-15'
   sha256: 1061d3d9c057d7d338ed8f0f7c9c4150d8d9eeb132298f22f816b9027e26eae5
-  archive_status: 1
+  archive_status: 3
   note: 'SRI International''s 2004-era history page covering 1950s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1950.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+  wayback_date: '2008-05-17'
 - url: https://www.sri.com/about/history/1960.html
   format: html
   status: archived
   path: news/sri-com-about-history-1960s-wayback-2004.html
   archived_date: '2026-05-15'
   sha256: 98afff8f04dc048333497f438c41697977c450157a51ba6ff2a12336c08f11a0
-  archive_status: 1
+  archive_status: 3
   note: 'SRI International''s 2004-era history page covering 1960s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1960.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+  wayback_date: '2008-05-17'
 - url: https://www.sri.com/about/history/1970.html
   format: html
   status: archived
   path: news/sri-com-about-history-1970s-wayback-2004.html
   archived_date: '2026-05-15'
   sha256: 0c06a827e2dc05101455023c03a0a93d05dbc1afdaa1192d72c468867caec6d8
-  archive_status: 1
+  archive_status: 3
   note: 'SRI International''s 2004-era history page covering 1970s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1970.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+  wayback_date: '2008-05-17'
 - url: https://www.sri.com/about/history/1980.html
   format: html
   status: archived
   path: news/sri-com-about-history-1980s-wayback-2004.html
   archived_date: '2026-05-15'
   sha256: 1da3ba0a54fc178966c36539b3c90a161d6050a8abc24a65fa29c811049e4dc7
-  archive_status: 1
+  archive_status: 3
   note: 'SRI International''s 2004-era history page covering 1980s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1980.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+  wayback_date: '2008-05-17'
 - url: https://www.sri.com/about/history/1990.html
   format: html
   status: archived
   path: news/sri-com-about-history-1990s-wayback-2004.html
   archived_date: '2026-05-15'
   sha256: 505b7b4c9b00f2ec7d510c35fcd893032c6cf1670c7bd2f82fa3b99bc13d9a02
-  archive_status: 1
+  archive_status: 3
   note: 'SRI International''s 2004-era history page covering 1990s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1990.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+  wayback_date: '2008-05-17'
 - url: https://www.sri.com/about/history/2000.html
   format: html
   status: archived
   path: news/sri-com-about-history-2000s-wayback-2004.html
   archived_date: '2026-05-15'
   sha256: 2d997f23ac4da6fb3bc8348ec1394c0a752ce924c64499bde42d1c862c02e246
-  archive_status: 1
+  archive_status: 3
   note: 'SRI International''s 2004-era history page covering 2000s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/2000.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+  wayback_date: '2008-05-17'
 - url: https://www.sri.com/board-of-directors/
   format: html
   status: archived
   path: news/sri-com-board-of-directors-20260515.html
   archived_date: '2026-05-15'
   sha256: e0b7538e93f49c693c3ef18ef950adec95e08e24942ad71a5347426aa6b20c8f
-  archive_status: 1
+  archive_status: 3
   note: 'SRI International ''Our People'' page accessed via /board-of-directors/ URL (sri.com routes /board-of-directors/ and /executive-team/ to the same combined page; MD5 identical at fetch time 2026-05-15). First-party current attestation of board roster + executive team. Current board (as of 2026-05-15 page state): David Motley (Board Chair, ''Co-founder, General Partner, BTN Ventures''; listing 2024-06-01); Stefan Heck (CEO and Founder of Nauto; 2024-04-02); Charles Mathis (Fortune 500 CFO retired); Marshall Mohr (EVP and CFO retired, Intuitive Surgical; 2023-02-02); Ellen Ochoa (Veteran Astronaut, Director of NASA Johnson Space Center retired; 2021-12-02); David Parekh (CEO; 2021-09-08); Ellen M. Pawlikowski (General Retired, US Air Force; 2022-09-01); Rengarajan Ramesh (Operating Partner, EagleTree Capital; 2024-01-18); Steven Walker (VP and CTO Lockheed Martin retired, former DARPA director; 2025-02-19). Executive team (current page state): David Parekh (CEO 2021-09-08), Kathlynn Brown (President Biosciences Div), John Crowe (President ATSD 2024-02-20), James Fritz (SVP Federal/Strategic Program Development), Todd A. Grindal (President SRI Education), Joann Lime (CHRO), Peter Marcotullio (SVP Commercialization), John McIntire (CLO), Michael Page (CIO), Steve Perna (President InSyS Division 2022-09-26), Suresh Sunderrajan (CFO), Dimitra Vergyri (Director STAR Lab). Listing dates next to each name indicate when the person was added to the Our People page; not necessarily their appointment date. Corroborates ProPublica FY2024 board roster (Motley as chair, Ochoa, Pawlikowski, Mathis); diverges by adding Heck, Mohr, Walker (current board) and omitting Young Jr, Rieman (on ProPublica FY2024 but not current page). Confirms Parekh CEO listing predates 2021-09-08.'
+  wayback_date: '2024-08-08'
 - url: https://www.sri.com/timeline-of-innovation/
   format: html
   status: archived
@@ -3067,8 +3103,9 @@
   path: news/sri-international-timeline-of-innovation-page2-20260515.html
   archived_date: '2026-05-15'
   sha256: 309b9ea0241f8a607c6a7835343ab46b42c3abdf1481fccc5ee0c084807ea725
-  archive_status: 1
+  archive_status: 3
   note: SRI International 'Interactive Timeline of Innovation' page 2 (sri.com/timeline-of-innovation/?query-117-page=2), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 2 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+  wayback_date: '2026-04-28'
 - url: https://www.sri.com/timeline-of-innovation/?query-117-page=3
   format: html
   status: archived
@@ -3084,8 +3121,9 @@
   path: news/sri-international-timeline-of-innovation-page4-20260515.html
   archived_date: '2026-05-15'
   sha256: f1d51152504ca00a9eb1612c312363a239bbc3ef94f2ae6e56c05c5107ef3d90
-  archive_status: 1
+  archive_status: 3
   note: SRI International 'Interactive Timeline of Innovation' page 4 (sri.com/timeline-of-innovation/?query-117-page=4), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 4 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+  wayback_date: '2025-12-11'
 - url: https://www.sri.com/timeline-of-innovation/?query-117-page=5
   format: html
   status: archived
@@ -3101,16 +3139,18 @@
   path: news/sri-international-timeline-of-innovation-page6-20260515.html
   archived_date: '2026-05-15'
   sha256: a7d157496e6700834a45b98efe4ed1bf55f7e1d50788785e66b586ee778f17e3
-  archive_status: 1
+  archive_status: 3
   note: SRI International 'Interactive Timeline of Innovation' page 6 (sri.com/timeline-of-innovation/?query-117-page=6), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 6 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+  wayback_date: '2025-12-13'
 - url: https://www.sri.com/timeline-of-innovation/?query-117-page=7
   format: html
   status: archived
   path: news/sri-international-timeline-of-innovation-page7-20260515.html
   archived_date: '2026-05-15'
   sha256: bf273f4c6df89b4f617c0ae59d84f00e877504685ae70aabb704114f474b3b71
-  archive_status: 1
+  archive_status: 3
   note: SRI International 'Interactive Timeline of Innovation' page 7 (sri.com/timeline-of-innovation/?query-117-page=7), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 7 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+  wayback_date: '2026-01-20'
 - url: https://www.theblackvault.com/documentarchive/dod-announces-the-establishment-of-the-all-domain-anomaly-resolution-office-july-20-2022/
   format: html
   status: archived

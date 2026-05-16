@@ -10777,3 +10777,385 @@
     key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
   tokens: [2024-01-19]
 
+- ts: 2026-05-16T15:41:32Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T15:41:32Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T15:45:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T15:45:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T16:21:59Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 8 significant token(s) not in source (prose-drift check — contributor review): archived, article, don't, republished, source, urigeller-com-about-uri-20260516, urigeller-com-biography-20260516, urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516
+  tokens: [archived, article, 'don''t', republished, source, urigeller-com-about-uri-20260516, urigeller-com-biography-20260516, urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516]
+
+- ts: 2026-05-16T16:21:59Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 7 significant token(s) not in source (prose-drift check — contributor review): article, attests, commented, investigation, most-publicly-known, republished, we've
+  tokens: [article, attests, commented, investigation, most-publicly-known, republished, 'we''ve']
+
+- ts: 2026-05-16T16:21:59Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 135 significant token(s) not in source (prose-drift check — contributor review): 1975, 1977, 1993, 1995, addressing, anchoring, archival, archived, … (+127 more — pass --verbose for full list)
+  tokens: [1975, 1977, 1993, 1995, addressing, anchoring, archival, archived, article, artifact, artifacts, as-source, attestation, attestations, attesting, attests, augmentation, bio, biographical, brazilian, build, candidate, candidates, canonical, carries, carrying, cia-sponsored, cited, closing, collaboration, conventions, corpus, corroborating, corroboration, cross-reference, declassification, described, descriptors, dia, discipline, document, evaluation, explicitly, facts, final, first-party, flags, framing, gap, gate, geller-adjacent, hierarchy, include, index, ingo, instance, institutes, institutional, intelligence, investigation, irva, kenneth, kress, locally, magnetometer, multiple, naming, narrative, narrator, node, nodes, nq1-nq9, ocr, ordering, overview, part, pat, paywall, plus, preserved, price, primary, primary-source, primary-witness, program, prose, public-record, publisher, publishing, q17, quirks, quote, rank, records, referenced, registered, release, repository, republished, rests, retrospective, scanate-era, second, self-attestation, sensitive, source, source-form, source-form-preservation, source-priority, source-quality, specific, spelling, spellings, statements, statistical, subjects, swann, sweeping, targ-puthoff, techniques, tenure, third, third-party, third-person, topics, tracked, transcription, typographical, unattested, uses, variants, verbatim, verdict, weight, witnesses]
+
+- ts: 2026-05-16T16:29:30Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Section 'Timeline': unparseable date 'c. 1950' in 'date' column
+
+- ts: 2026-05-16T16:29:30Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Section 'Timeline': unparseable date 'c. 1951' in 'date' column
+
+- ts: 2026-05-16T16:29:30Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Section 'Timeline': unparseable date 'c. 1957' in 'date' column
+
+- ts: 2026-05-16T16:29:30Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (61>55): 4 May 1987 issue of US News & World Report — "Washington Whi...
+
+- ts: 2026-05-16T16:29:30Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (83>55): SRI co-investigator and primary-witness attestor of Uri's SR...
+
+- ts: 2026-05-16T16:29:30Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (92>55): Theoretical physicist who provided Brendan Burton with a ver...
+
+- ts: 2026-05-16T16:29:30Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (59>55): Metallurgist and US Naval scientist (deceased late 2002) nam...
+
+- ts: 2026-05-16T16:29:42Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Section 'Timeline': unparseable date 'c. 1950' in 'date' column
+
+- ts: 2026-05-16T16:29:42Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Section 'Timeline': unparseable date 'c. 1951' in 'date' column
+
+- ts: 2026-05-16T16:29:42Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Section 'Timeline': unparseable date 'c. 1957' in 'date' column
+
+- ts: 2026-05-16T16:29:42Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (61>55): 4 May 1987 issue of US News & World Report — "Washington Whi...
+
+- ts: 2026-05-16T16:29:42Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (83>55): SRI co-investigator and primary-witness attestor of Uri's SR...
+
+- ts: 2026-05-16T16:29:42Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (92>55): Theoretical physicist who provided Brendan Burton with a ver...
+
+- ts: 2026-05-16T16:29:42Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (59>55): Metallurgist and US Naval scientist (deceased late 2002) nam...
+
+- ts: 2026-05-16T16:33:30Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T16:33:30Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T17:30:09Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 314: value contains `Geller: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: 'CIA Masterspy?" released as paperback and digital publicatio'
+
+- ts: 2026-05-16T17:30:09Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 486: value contains `Geller: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: 'CIA Masterspy?" (2013) per biography ¶26'
+
+- ts: 2026-05-16T17:30:09Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "<unicode string>", line 314, column 95:
+         ... k "The Secret Life of Uri Geller: CIA Masterspy?" released as pa ... 
+                                             ^
+
+- ts: 2026-05-16T17:30:10Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 314: value contains `Geller: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: 'CIA Masterspy?" released as paperback and digital publicatio'
+
+- ts: 2026-05-16T17:30:10Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 486: value contains `Geller: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: 'CIA Masterspy?" (2013) per biography ¶26'
+
+- ts: 2026-05-16T17:30:10Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "<unicode string>", line 314, column 95:
+         ... k "The Secret Life of Uri Geller: CIA Masterspy?" released as pa ... 
+                                             ^
+
+- ts: 2026-05-16T17:30:10Z
+  source: validator
+  check: artifact_parse
+  phase: review-coverage
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "/home/neural/Desktop/uap-research/REFACTOR/meta/research/uri-geller.yaml", line 314, column 95
+
+- ts: 2026-05-16T17:32:10Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T17:32:10Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T17:41:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T17:41:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T17:54:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T17:54:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+

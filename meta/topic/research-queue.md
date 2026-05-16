@@ -202,6 +202,37 @@ Secondary cluster surfaced through Fravor testimony narrative.
 | `/people/ralph-blumenthal` | person / reporter | Low | NYT Dec 2017 co-author | Public record |
 | `/people/helene-cooper` | person / reporter | Low | NYT Dec 2017 co-author | Public record |
 
+### Cluster F — SRI parapsychology / remote-viewing primary-source corpus
+
+The Stanford Research Institute parapsychology investigation 1972-1990 is
+currently anchored in this repository via the Stanford Research Institute
+([`/organizations/stanford-research-institute`]) org node, the Hal Puthoff
+([`/people/hal-puthoff`]) and Russell Targ ([`/people/russell-targ`])
+person nodes, and the newly-built Uri Geller ([`/people/uri-geller`])
+person node. The institutional record of the program is documented at the
+SRI / Puthoff / Targ nodes through three CIA / DIA / AIR sources — the
+1977 Kress Studies in Intelligence paper, the 1993 DIA STAR GATE Project
+Overview, and the 1995 American Institutes for Research evaluation — none
+of which name early test subjects by name. The Geller node currently
+anchors its SRI cross-reference on (a) Geller's own biographical
+self-attestation that Nature published a paper on his work at SRI and
+(b) Russell Targ's 2007 retrospective comment in the Brendan Burton
+article that "Uri was at our laboratory at SRI for six weeks in 1973".
+Several SRI-internal primary-source documents would close per-subject
+identification gaps and resolve chronology discrepancies across the
+cluster.
+
+| Path | Type / Kind | Priority | Rationale | Source Access |
+|---|---|---|---|---|
+| `/documents/puthoff-targ-the-record-daily-log` | document / non-gov-doc | High | SRI-internal daily log documenting each Geller visit window. Per web-research audit on the Uri Geller node (rumor r1, 2026-05-16), "The Record" documents two distinct Geller visits — a five-week period in late 1972 and an eight-day visit August 4-11 1973 — that Targ's 2007 Burton-interview recollection of "six weeks in 1973" may collapse into a single period. Resolves the SRI chronology across SRI / Puthoff / Targ / Geller nodes; potential finding-node candidate (Targ retrospective vs SRI internal log). | Published by Puthoff-Targ with consent; archival route TBD |
+| `/documents/nature-1974-targ-puthoff-information-transmission` | document / non-gov-doc (article) | High | The Targ-Puthoff 1974 Nature paper ('Information transmission under conditions of sensory shielding', Nature 251, 602-607, 18 October 1974, DOI 10.1038/251602a0). Currently archived as paywall HTML only at `sources/news/nature-1974-targ-puthoff-information-transmission-abstract.html` (Nature.com paywall landing page); full paper body not archived. Per public record names Geller and Pat Price as test subjects in the body text. Already a broken-link stub with 3+ refs (Puthoff×2, Targ×1, now Geller). | Paywall PDF ($39.95) or institutional/library access route |
+| `/documents/sri-perceptual-augmentation-techniques-final-report-1975` | document / non-gov-doc | Medium | The SRI internal Final Report by Puthoff and Targ (December 1, 1975), cited by the 1995 American Institutes for Research evaluation. Currently a broken-link stub on the SRI artifact. May or may not name Geller specifically. | DTIC / NTIS or CIA Reading Room search |
+| `/people/ingo-swann` | person / institutional-actor | Medium | 1972 magnetometer subject per Kress 1977; named by Targ IRVA 2002 retrospective as foundational SRI subject. Subject node closes the early-SRI-subjects cluster alongside Geller and Pat Price. | Public record + IRVA bio |
+| `/people/pat-price` | person / institutional-actor | Medium | 1973 'third sensitive subject' per Kress 1977; named by Targ IRVA 2002 retrospective. Per public record also named alongside Geller in the 1974 Nature paper. | Public record |
+| `/people/hella-hammid` | person / institutional-actor | Low | 1974 'control subject' brought in to supplement Pat Price and Ingo Swann per Targ IRVA 2009 retrospective; ten-year SRI tenure 1974-1984. | Public record (IRVA bio) |
+| `/people/andrija-puharich` | person / institutional-actor | Medium | Introducer who brought Geller to the USA and into SRI per Brendan Burton article ¶5. Per Burton, Puharich previously worked with 'Dr Vinod' on 'The Nine' channelled information and was a pivotal figure in the contactee movement. | Public record (Puharich self-published books) |
+| `/people/edgar-mitchell` | person / institutional-actor | Medium | Apollo 14 astronaut; introduced to Geller via Puharich per Brendan Burton ¶5; named in Burton's Sources list as a correspondence source. UAPDA-era IONS (Institute of Noetic Sciences) founder — separately relevant. | Public record |
+
 ### Cluster D — UAP oversight institutions (AARO + UAPTF + ONI shipped)
 
 AARO, UAPTF, and ONI now built. Remaining stubs (surfaced by the AARO +
@@ -320,6 +351,84 @@ stale relative to a known-but-unsourced fact". Worth a convention
 pass once a 3+ node pattern accumulates (legacy parent repo has
 several deceased subjects already; if those nodes are migrated into
 REFACTOR, the pattern reaches threshold immediately).
+
+### Source-rot annotation pattern — date-relative language in older sources
+
+When an archived source contains date-relative phrasing that has rotted
+since the source was written ("Michael Jackson's latest albums" where
+the source predates MJ's June 25 2009 death and refers to Invincible
+(October 30 2001) — Invincible became MJ's final studio album upon his
+death; "current Director" attestations made before subsequent leadership
+transitions; "next year we will…" promises made in source written
+decades ago), no existing structural mechanism flags the rot to the
+reader. The `naming_quirks` resolution enum (`preserve-as-sic-in-quotes`
+/ `use-canonical` / `disputed` / `unresolved`) does not include a category
+for date-relative-language source-rot. Candidate resolution: a new
+`source-rot` enum value paired with a `rot_date` or `rot_context` field
+capturing what specifically has shifted.
+
+**Surfacing case:** Uri Geller node web-audit (2026-05-16) — biography
+page preserves "Michael Jackson's latest albums" wording from a pre-2009
+source revision; MJ's actual final studio album (Invincible, 2001)
+became "final" rather than "latest" upon his death (June 25, 2009).
+
+**Status:** pending pattern accumulation (need 3+ instances before
+codifying).
+
+### Geographic-anachronism naming-quirk resolution
+
+The Israel-1946 birthplace case (Uri Geller node nq11) is a
+geographic-anachronism — Geller's bio writes "born in Israel on
+December 20, 1946" but the State of Israel was declared May 14, 1948,
+17 months after his birth, and the territory of his birth was the
+British Mandate of Palestine at the time. Currently bucketed under
+`resolution: preserve-as-sic-in-quotes`, but the rendered framing
+"Source Form / Canonical" doesn't quite capture the geographic-vs-
+temporal mismatch (it's not a typo, alias, or two-source dispute —
+it's a political-geographic naming choice the source makes that's
+ahistorical to the period). A `resolution: geographic-anachronism`
+value with rendered framing "Source attests / Period-accurate name"
+would be more honest. Likely also covers cases like Stalin-era
+"Petrograd" vs modern "St. Petersburg", "Ceylon" vs "Sri Lanka", etc.
+
+**Surfacing case:** Uri Geller node web-audit (2026-05-16) — nq11
+Israel/1946.
+
+**Status:** pending pattern accumulation (need 3+ instances before
+codifying).
+
+### Per-quote attestation-class field
+
+Person artifacts currently distinguish `observation_type: direct |
+relayed` on quotes (driving the Statements section split into Direct
+Observations vs Other Statements). Program_involvement carries
+`evidentiary_basis` (`primary-source` / `sworn-testimony` /
+`on-record` / `self-attested` / `secondary`) and `confidence`
+(`high` / `medium` / `low`). Quotes themselves carry neither — every
+quote in `quotes[]` is implicitly assumed to be attested by its
+`source.path`, but the attestation class (self-attestation on
+subject's own publication; first-hand observation; third-party
+narration about the subject) is not structurally captured.
+
+When a person's biography page makes a sweeping self-attested claim
+(e.g., Geller's Sigmund Freud lineage claim; Geller's CIA / FBI
+collaboration claims about KGB file erasure / serial-killer tracking /
+Russian-negotiator influence), the `credibility_notes` prose has to
+flag the self-attestation manually. A per-quote `attestation_class`
+field matching the `program_involvement.evidentiary_basis` enum would
+let the renderer surface "Self-attestation" / "First-hand observation"
+/ "Third-party narration" labels on each Statement verification
+block, removing the need for manual `credibility_notes` prose flags
+and reducing prose-drift surface.
+
+**Surfacing case:** Uri Geller node web-audit (2026-05-16) — Web
+flagged the Freud lineage claim as unverified beyond Geller's own
+statements. Per-quote attestation-class would let q2 render
+"Attestation class: self-attestation on subject's own publication"
+in its verification block automatically.
+
+**Status:** pending pattern accumulation (need 3+ instances before
+codifying); schema extension + renderer update required.
 
 ---
 
