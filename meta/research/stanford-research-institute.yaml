@@ -21,6 +21,8 @@ primary_sources:
   format: html
 - path: news/sri-international-timeline-of-innovation-page7-20260515.html
   format: html
+- path: news/propublica-sri-international-941160950-20260515.html
+  format: html
 - path: news/espresearch-russell-targ-snapshot.html
   format: html
 - path: news/irva-targ-russell-wayback-20250123.html
@@ -39,7 +41,7 @@ document_intrinsic:
   org_type: 'Independent nonprofit R&D institute'
   headquarters: '333 Ravenswood Ave, Menlo Park, CA 94025 USA'
   current_leadership_path: /people/david-parekh
-  public_status: 'Founded 1946 by Stanford University as Stanford Research Institute; independent since 1970. Now SRI International (per page footer ''© 2026 SRI INTERNATIONAL''). Rebrand date not attested in archived sources.'
+  public_status: '501(c)(3) tax-exempt since March 1949 per IRS (EIN 94-1160950). Founded 1946 by Stanford University as Stanford Research Institute; independent since 1970. Now SRI International (per page footer ''© 2026 SRI INTERNATIONAL''). Rebrand date not attested in archived sources. FY2024 going concern flag from independent audit.'
 
 context_extrinsic:
   display_title: 'SRI International'
@@ -298,6 +300,61 @@ quotes:
   context: 'SRI International ''Interactive Timeline of Innovation'' page (sri.com/timeline-of-innovation/), retrieved 2026-05-15 — framing paragraph for the decade-by-decade index'
   significance: 'SRI''s first-party framing of its institutional R&D legacy — nine IEEE Milestones (industry-standard third-party recognition of historically-significant technical contributions) anchor the breadth claim. Frames the pages 1-7 decade index of SRI projects spanning 1940s-2020s.'
 
+- id: q24
+  added_date: '2026-05-15'
+  text: |
+    Tax-exempt since March 1949
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Organization summary'
+  context: 'ProPublica Nonprofit Explorer page for SRI International, EIN 94-1160950, retrieved 2026-05-15. Data attributed by ProPublica to IRS Form 990 filings.'
+  significance: 'IRS-sourced attestation that SRI became tax-exempt in March 1949 — three years after the 1946 founding. Tightens the founding-to-tax-exempt-status timeline beyond the sri.com self-attestation. ProPublica aggregates from IRS Form 990 data.'
+
+- id: q25
+  added_date: '2026-05-15'
+  text: |
+    An independent audit commissioned by this organization for the fiscal year ending Dec. 2024 identified:
+    Going concern flag
+    Audit identified substantial doubt about this organization’s ability to meet its financial obligations and continue operating for the foreseeable future.
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Details, Going concern flag block'
+  context: 'ProPublica Nonprofit Explorer page for SRI International, EIN 94-1160950, retrieved 2026-05-15 — Details section reporting the FY2024 independent-audit finding'
+  statement_date: '2025-11-12'
+  significance: 'Substantive financial-health attestation: SRI''s FY2024 independent audit identified a going-concern flag — substantial doubt about the organization''s ability to meet financial obligations and continue operating. ProPublica sources this from the Federal Audit Clearinghouse-deposited audit accompanying the FY2024 Form 990 (filed November 12, 2025). First-time financial-stress attestation in the archived corpus.'
+
+- id: q26
+  added_date: '2026-05-15'
+  text: |
+    Revenue
+    $437,926,151
+    Expenses
+    $433,169,251
+    Net Income
+    $4,756,900
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Fiscal Year Ending Dec. 2024, Extracted Financial Data'
+  context: 'ProPublica Nonprofit Explorer extracted financial data for SRI International FY2024 (per Form 990 filed November 12, 2025); EIN 94-1160950'
+  statement_date: '2025-11-12'
+  significance: 'IRS-sourced attestation of SRI International FY2024 institutional scale: revenue $437.9M, expenses $433.2M, net income $4.8M. Anchors current-scale claims at field-precise granularity (the sri.com About page q2 attests only headcount, patents, and spin-offs; this is the first dollar-figure attestation in the archived corpus).'
+
+- id: q27
+  added_date: '2026-05-15'
+  text: |
+    Total Assets
+    $409,624,782
+    Total Liabilities
+    $231,589,878
+    Net Assets
+    $178,034,904
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Fiscal Year Ending Dec. 2024, Assets/Debt'
+  context: 'ProPublica Nonprofit Explorer extracted financial data for SRI International FY2024 (per Form 990 filed November 12, 2025)'
+  statement_date: '2025-11-12'
+  significance: 'IRS-sourced attestation of SRI International FY2024 balance-sheet position: total assets $409.6M, total liabilities $231.6M, net assets $178.0M. The net-assets / total-liabilities ratio combined with the going-concern flag (q25) frames the financial-stress context — substantial liabilities against a modest net-assets cushion.'
+
 entities_referenced:
 
 - id: e1
@@ -527,6 +584,48 @@ entities_referenced:
   name: 'National Aeronautics and Space Administration'
   wrap_path: '/organizations/nasa'
   context_summary: 'NASA — collaboration partner on the Parker Solar Probe (2010s, sri.com Timeline page 7) and Europa Clipper (2020s, sri.com Timeline page 7) missions per SRI''s self-attestation in the Timeline of Innovation. Also referenced in the Targ IRVA biography (q5) which attests Targ received "two National Aeronautics and Space-Administration awards for inventions and contributions to lasers and laser communications". Unbuilt in this repository.'
+
+- id: e23
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'David Motley'
+  wrap_path: '/people/david-motley'
+  context_summary: 'Board Chair of SRI International per FY2024 Form 990 (board member in FY2023; chair role started during FY2024). Compensation FY2024: $110,000 per ProPublica. Unbuilt in this repository.'
+
+- id: e24
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Ellen Ochoa'
+  wrap_path: '/people/ellen-ochoa'
+  context_summary: 'Board Member of SRI International per FY2023 (start 2/1/23) and FY2024 Form 990. Compensation FY2024: $76,000 per ProPublica. Unbuilt in this repository.'
+
+- id: e25
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Ellen Pawlikowski'
+  wrap_path: '/people/ellen-pawlikowski'
+  context_summary: 'Board Member of SRI International per FY2023 and FY2024 Form 990. Compensation FY2024: $76,000 per ProPublica. Unbuilt in this repository.'
+
+- id: e26
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'John J Young Jr'
+  wrap_path: '/people/john-j-young-jr'
+  context_summary: 'Board Member of SRI International per FY2023 and FY2024 Form 990. Compensation FY2024: $70,000 per ProPublica. Unbuilt in this repository.'
+
+- id: e27
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'John McIntire'
+  wrap_path: '/people/john-mcintire'
+  context_summary: 'Chief Legal Officer of SRI International per FY2023 and FY2024 Form 990. Compensation FY2024: $878,652 per ProPublica. Unbuilt in this repository.'
+
+- id: e28
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Suresh Sunderrajan'
+  wrap_path: '/people/suresh-sunderrajan'
+  context_summary: 'Chief Financial Officer of SRI International from 1/19/24 per FY2024 Form 990 (previously President, Commercialization in FY2023). Compensation FY2024: $698,934 per ProPublica. Unbuilt in this repository.'
 
 naming_quirks:
 
@@ -865,6 +964,24 @@ timeline:
     path: news/sri-international-timeline-of-innovation-page7-20260515.html
     location: '2020s entries section'
 
+- id: tl15
+  added_date: '2026-05-15'
+  date: '1949-03'
+  category: governance
+  event: 'IRS grants 501(c)(3) tax-exempt status to Stanford Research Institute per ProPublica Nonprofit Explorer (EIN 94-1160950).'
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Organization summary'
+
+- id: tl16
+  added_date: '2026-05-15'
+  date: '2025-11-12'
+  category: governance
+  event: 'SRI International files FY2024 Form 990 with the IRS. Independent audit accompanying the filing identifies a going concern flag — substantial doubt about the organization''s ability to meet its financial obligations and continue operating for the foreseeable future. FY2024 revenue $437,926,151; total assets $409,624,782; net assets $178,034,904.'
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Details, Going concern flag block'
+
 key_personnel:
 
 - id: kp1
@@ -944,6 +1061,62 @@ key_personnel:
     path: news/irva-targ-russell-wayback-20250123.html
     location: 'Presentations, IRVA 2009 (Hella Hammid Tribute) talk abstract'
   note: 'Per Targ IRVA 2009 Hella Hammid tribute talk abstract, Hammid was a LIFE magazine photographer brought into the SRI remote-viewing program in 1974 as a "control" subject our sponsors from the CIA wanted to supplement Pat Price and Ingo Swann. In her ten years with the program, she became our most reliable viewer.'
+
+- id: kp8
+  added_date: '2026-05-15'
+  person_path: /people/david-motley
+  role: 'Board Chair'
+  leadership_class: director
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2024'
+
+- id: kp9
+  added_date: '2026-05-15'
+  person_path: /people/ellen-ochoa
+  role: 'Board Member'
+  leadership_class: director
+  period_start: '2023-02-01'
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2023'
+
+- id: kp10
+  added_date: '2026-05-15'
+  person_path: /people/ellen-pawlikowski
+  role: 'Board Member'
+  leadership_class: director
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2024'
+
+- id: kp11
+  added_date: '2026-05-15'
+  person_path: /people/john-j-young-jr
+  role: 'Board Member'
+  leadership_class: director
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2024'
+
+- id: kp12
+  added_date: '2026-05-15'
+  person_path: /people/john-mcintire
+  role: 'Chief Legal Officer'
+  leadership_class: other
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2024'
+
+- id: kp13
+  added_date: '2026-05-15'
+  person_path: /people/suresh-sunderrajan
+  role: 'Chief Financial Officer (from 2024-01-19; previously President, Commercialization)'
+  leadership_class: other
+  period_start: '2024-01-19'
+  source:
+    path: news/propublica-sri-international-941160950-20260515.html
+    location: 'Compensation, Key Employees and Officers, FY2024'
 
 org_relationships:
 

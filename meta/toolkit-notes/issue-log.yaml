@@ -9494,3 +9494,133 @@
   message: |
     Quote at line 215 NOT FOUND in sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf: "According to Puthoff and Targ (1975) the scientific research endeavor at SRI may..."
 
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: primary_sources
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    primary_sources[8]: path 'news/propublica-sri-international-941160950-20260515.html' not registered in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: quotes
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    quotes[23] ('q24'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: quotes
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    quotes[24] ('q25'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: quotes
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    quotes[25] ('q26'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: quotes
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    quotes[26] ('q27'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[28] ('tl15'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: timeline
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    timeline[29] ('tl16'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[7] ('kp8'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[8] ('kp9'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[9] ('kp10'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[10] ('kp11'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[11] ('kp12'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+
+- ts: 2026-05-16T00:37:21Z
+  source: validator
+  check: key_personnel
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    key_personnel[12] ('kp13'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
+

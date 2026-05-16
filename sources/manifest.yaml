@@ -1274,6 +1274,14 @@
   archive_status: 3
   note: PJ Media coverage by Rick Moran of the WSJ Pentagon-disinformation piece (June 7 2025). Right-leaning mainstream pickup; cross-corroboration of the WSJ findings.
   wayback_date: '2025-07-26'
+- url: https://projects.propublica.org/nonprofits/organizations/941160950
+  format: html
+  status: archived
+  path: news/propublica-sri-international-941160950-20260515.html
+  archived_date: '2026-05-15'
+  sha256: 6e417cb12c90b4890706eb57dea2b57e9b9f5f4d48255ae63cb2c1cf541eb212
+  archive_status: 1
+  note: 'ProPublica Nonprofit Explorer page for SRI International (EIN 94-1160950), retrieved 2026-05-15. Aggregated structured-data view of IRS Form 990 filings (data attributed to IRS per ProPublica''s own disclaimer). Attests: tax-exempt since March 1949; 501(c)(3); NTEE category ''Science and Technology Research Institutes, Services / Science, General''. Fiscal Year ending Dec. 2024 (filed November 12, 2025): Revenue $437,926,151; Expenses $433,169,251; Net Income $4,756,900; Total Assets $409,624,782; Total Liabilities $231,589,878; Net Assets $178,034,904. Substantive notable: going-concern flag from FY2024 independent audit. Board (FY2024): David Motley (Chair), Ellen Ochoa, Ellen Pawlikowski, Charles Mathis, John J Young Jr, Deborah Rieman, Ramesh Rengarajan. CEO David Parekh. Note: ProPublica''s underlying IRS Form 990 PDF download is Cloudflare-bot-protected; this HTML overview page is the accessible primary-source archival route. Form 990 filing IDs: 941160950_202312_990T_2024112122902146, 941160950_202212_990_2024010322163674.'
 - url: https://safeaerospace.org/
   format: html
   status: archived
