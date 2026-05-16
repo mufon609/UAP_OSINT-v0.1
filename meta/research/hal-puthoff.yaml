@@ -52,6 +52,10 @@ primary_sources:
   format: transcript
 - path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   format: pdf
+- path: government/aaro-supplement-to-ornl-analysis-202407.pdf
+  format: pdf
+- path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
+  format: html
 
 document_intrinsic:
   full_name: 'Harold E. Puthoff'
@@ -72,6 +76,9 @@ credibility_notes: 'Puthoff''s professional record is documented across primary 
 
 
   The 29 March 2010 Defense Intelligence Reference Document DIA-08-1003-015 (DIA AAWSA Program) is a direct primary source on Puthoff''s author contribution to the AAWSA Program''s advanced technology reports. The document''s references list names three prior peer-reviewed publications by Puthoff on vacuum engineering and Alcubierre warp drive analysis: H. E. Puthoff, ''SETI, the velocity-of-light limitation, and the Alcubierre warp drive: An integrating overview'' (Physics Essays 9, 156, 1996; Reference 3 of the document); H. E. Puthoff, ''Polarizable-vacuum (PV) approach to general relativity'' (Found. Phys. 32, 927, 2002; Reference 16); and H. E. Puthoff, E. W. Davis and C. Maccone, ''Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity'' (Gen. Relativ. Grav. 37, 483, 2005; Reference 19). The references show that Puthoff''s 2010 analysis is based on a prior list of his own peer-reviewed publications on the same subject matter.
+
+
+  The Magnesium-Zinc-Bismuth (MgZn/Bi) specimen analysis is on the public record from two institutional positions. The July 2024 [`/organizations/aaro`] ([`/documents/aaro-supplement-to-ornl-analysis-2024`]) ''Supplement to Oak Ridge National Laboratory''s Analysis of a Metallic Specimen'' concurs with the ORNL April 2024 finding that the specimen''s isotopic composition indicates terrestrial origin and that its physical and elemental properties are incompatible with functioning as a THz waveguide. The 27 September 2024 Puthoff/Davis memorandum to the TTSA Board of Directors states that the same analysis ''did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either''.
 
   '
 
@@ -299,7 +306,7 @@ entities_referenced:
   entity_type: organization
   name: 'Oak Ridge National Laboratory (ORNL)'
   wrap_path: '/organizations/ornl'
-  context_summary: 'Per the April 17, 2025 TTSA SEC Form 1-K Part II filing and the 2025-02-28 TTSA press-and-news post, ORNL produced the April 2024 terrestrial-origin analysis of the Magnesium-Zinc-Bismuth ''Art''s Parts'' material that Puthoff and Davis subsequently counter-analyzed in a memorandum to the TTSA Board of Directors on September 27, 2024. New unbuilt stub.'
+  context_summary: 'Per the July 2024 AARO ''Supplement to Oak Ridge National Laboratory''s Analysis of a Metallic Specimen'': ''In 2022, The All-domain Anomaly Resolution Office (AARO) contracted with Oak Ridge National Laboratory (ORNL) to conduct materials testing on a magnesium (Mg) alloy specimen. This specimen has been publicly alleged to be a component recovered from a crashed extraterrestrial vehicle in 1947, and purportedly exhibits extraordinary properties, such as functioning as a terahertz waveguide to generate antigravity capabilities. In April 2024, ORNL produced a summary of findings documenting the laboratory''s methodology to assess this specimen''s elemental and structural characteristics, available on AARO''s website.'' ORNL''s April 2024 analysis (the document the AARO July 2024 Supplement supplements) is what Puthoff and Davis subsequently counter-analyzed in a memorandum to the TTSA Board of Directors on September 27, 2024 (per the April 17, 2025 TTSA SEC Form 1-K Part II filing and the 2025-02-28 TTSA press-and-news post). New unbuilt stub.'
 
 - id: e21
   added_date: '2026-05-16'
@@ -322,7 +329,7 @@ entities_referenced:
   entity_type: document
   name: 'Puthoff and Davis ORNL counter-analysis memo (2024-09-27)'
   wrap_path: '/documents/ttsa-puthoff-davis-ornl-analysis-memo-2025'
-  context_summary: 'The Puthoff/Davis memorandum to the TTSA Board of Directors dated 27 September 2024, counter-analyzing the April 2024 ORNL terrestrial-origin finding for the Magnesium-Zinc-Bismuth (Art''s Parts) material sample. Public-released via the TTSA press-and-news post on 2025-02-28. New unbuilt stub.'
+  context_summary: 'The Puthoff/Davis memorandum to the TTSA Board of Directors dated 27 September 2024, counter-analyzing the April 2024 ORNL terrestrial-origin finding for the Magnesium-Zinc-Bismuth (Art''s Parts) material sample. The ORNL analysis was conducted under a 2022 AARO contract; ORNL''s conclusion (specimen is terrestrial in origin and does not meet the conditions to function as a terahertz waveguide) is the analytical target of the Puthoff/Davis counter-analysis. AARO''s July 2024 Supplement (separate primary source) concurs with the ORNL assessment. The Puthoff/Davis memo was public-released via the TTSA press-and-news post on 2025-02-28. New unbuilt stub.'
   references:
   - quote_id: q3
 
@@ -381,6 +388,20 @@ entities_referenced:
   - quote_id: q4
   - quote_id: q5
   - quote_id: q6
+
+- id: e30
+  added_date: '2026-05-16'
+  entity_type: document
+  name: 'AARO Supplement to ORNL Analysis of a Metallic Specimen (July 2024)'
+  wrap_path: '/documents/aaro-supplement-to-ornl-analysis-2024'
+  context_summary: 'All-domain Anomaly Resolution Office, ''Supplement to Oak Ridge National Laboratory''s Analysis of a Metallic Specimen'' (July 2024). 4-page government document; PDF metadata Author: All-domain Anomaly Resolution Office; CreationDate 10 July 2024. AARO''s public-facing conclusion: ''AARO concurs with ORNL''s findings that the specimen''s isotopic composition indicates terrestrial origin. AARO also concurs with ORNL''s findings that its physical and elemental properties are incompatible with functioning as a THz waveguide.'' This is the AARO/ORNL document the Puthoff/Davis 2024-09-27 memorandum subsequently counter-analyzed. New unbuilt stub.'
+
+- id: e31
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'All-domain Anomaly Resolution Office (AARO)'
+  wrap_path: '/organizations/aaro'
+  context_summary: 'Per the July 2024 AARO Supplement to ORNL Analysis: ''In 2022, The All-domain Anomaly Resolution Office (AARO) contracted with Oak Ridge National Laboratory (ORNL) to conduct materials testing on a magnesium (Mg) alloy specimen.'' AARO is the contracting authority that commissioned the ORNL April 2024 analysis the Puthoff/Davis 2024-09-27 memorandum counter-analyzed. AARO''s July 2024 Supplement concurs with the ORNL terrestrial-origin and not-a-waveguide assessments. Built node.'
 
 naming_quirks:
 - id: nq1
@@ -597,6 +618,26 @@ timeline:
     location: 'p. i'
   category: publication
   node_link: '/documents/dia-advancedspacepropulsion-puthoff-dird-2010'
+
+- id: t17
+  added_date: '2026-05-16'
+  date: '2018-09-27'
+  event: 'TTSA ([`/organizations/ttsa`]) ''Material of Interest: Magnesium-Zinc-Bismuth'' blog post on the [`/organizations/adam-research-project`]: ''One artifact on loan to TTSA for analysis is a Magnesium-Zinc-Bismuth (MgZn/Bi) sample... The supplied documentation states that it is from a UAP crash recovery.'' Same material Puthoff and Davis ([`/people/eric-davis`]) later counter-analyze in their 2024-09-27 memorandum.'
+  source:
+    path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
+    location: '¶ on Magnesium-Zinc-Bismuth sample'
+  category: publication
+  node_link: '/organizations/adam-research-project'
+
+- id: t18
+  added_date: '2026-05-16'
+  date: '2024-07'
+  event: '[`/organizations/aaro`] AARO publishes [`/documents/aaro-supplement-to-ornl-analysis-2024`] ''Supplement to Oak Ridge National Laboratory''s Analysis of a Metallic Specimen'' (July 2024). AARO concurs with ORNL''s ([`/organizations/ornl`]) terrestrial-origin and not-a-THz-waveguide findings on the Magnesium-Zinc-Bismuth (MgZn/Bi) specimen — the analytical target of the Puthoff/Davis ([`/people/eric-davis`]) 2024-09-27 memorandum to the TTSA ([`/organizations/ttsa`]) Board.'
+  source:
+    path: government/aaro-supplement-to-ornl-analysis-202407.pdf
+    location: 'p. 1, ¶1-2'
+  category: publication
+  node_link: '/documents/aaro-supplement-to-ornl-analysis-2024'
 
 affiliations:
 - id: a1

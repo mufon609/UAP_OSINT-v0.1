@@ -10680,3 +10680,45 @@
     key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
   tokens: [2024-01-19]
 
+- ts: 2026-05-16T14:49:57Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (80>55): TTSA ([`/organizations/ttsa`]) 'Material of Interest: Magnes...
+
+- ts: 2026-05-16T14:49:57Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (76>55): [`/organizations/aaro`] All-domain Anomaly Resolution Office...
+
+- ts: 2026-05-16T14:52:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T14:52:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
