@@ -1,0 +1,735 @@
+id: meta/research/hal-puthoff
+type: research-artifact
+schema_version: 1
+target_node: people/hal-puthoff
+status: active
+created: '2026-05-15'
+
+primary_sources:
+- path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  format: pdf
+- path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+  format: pdf
+- path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
+  format: pdf
+- path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+  format: html
+- path: government/aawsap-contract-hhm402-08-c-0072-mod-p00001-20090902.pdf
+  format: pdf
+- path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+  format: html
+- path: government/sec-ttsa-1a-partii-20170710.html
+  format: html
+- path: government/sec-ttsa-1k-partii-20220502.html
+  format: html
+- path: government/sec-ttsa-1k-partii-20250417.html
+  format: html
+- path: news/ttsa-blog-adam-research-project-intro-20180727.html
+  format: html
+- path: news/tothestarsacademy-home-20180108.html
+  format: html
+- path: news/tothestarsacademy-home-20200105.html
+  format: html
+- path: news/tothestarsacademy-home-20220120.html
+  format: html
+- path: news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html
+  format: html
+- path: news/safireproject-team-snapshot.html
+  format: html
+- path: news/safireproject-genesis-snapshot.html
+  format: html
+- path: news/e-catworld-aureon-launch-20200308.html
+  format: html
+- path: news/aureonenergy-team-snapshot.html
+  format: html
+- path: news/espresearch-russell-targ-snapshot.html
+  format: html
+- path: news/irva-targ-russell-wayback-20250123.html
+  format: html
+- path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
+  format: transcript
+- path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+  format: transcript
+
+document_intrinsic:
+  full_name: 'Harold E. Puthoff'
+  aliases: ['Hal Puthoff', 'Dr. H. Puthoff', 'Harold Puthoff']
+  nationality: ''
+  profession: 'physicist'
+
+context_extrinsic: {}
+
+background: 'Harold E. Puthoff is a physicist. The To The Stars Academy of Arts & Science page (January 8, 2018) reports that Puthoff earned his Ph.D. from Stanford University in 1967 and that his professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency ([`/organizations/nsa`]), Stanford University and SRI International, with patents issued in the laser, communications, and energy fields. The TTSA SEC Form 1-K Part II annual reports (May 2, 2022 and April 17, 2025 filings) state that Dr. Puthoff has served as President and CEO of EarthTech International, Inc. (ETI) and Director of the Institute for Advanced Studies at Austin (IASA) since 1985. The 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (Targ and Puthoff) describes experiments at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California. The 1977 CIA Studies in Intelligence paper by Kenneth A. Kress names Targ and Puthoff as the two laser physicists who re-awakened CIA research in parapsychology and describes Puthoff as a theoretician who was exploring new fields of research after extensive work in quantum electronics and who became interested in the field in the early 1970s.'
+
+top_relevance: 'Puthoff is a co-founder, former Director, and current Advisory Board member of [`/organizations/ttsa`] To The Stars Academy of Arts & Science (per the TTSA SEC Form 1-A Part II preliminary offering circular dated July 10, 2017 and the TTSA SEC Form 1-K Part II annual reports filed May 2, 2022 and April 17, 2025). The TTSA announcement (July 26, 2018) of the ADAM Research Project (Acquisition and Data Analysis of Materials) names Dr. Harold E. Puthoff as ''a former Senior Advisor and Subcontractor to the Pentagon''s AATIP program (Advanced Aerospace Threat Identification Program) and current VP of Technology for TTS Academy'', with EarthTech International, Inc. — under Puthoff''s leadership — contracted to evaluate the material samples. The New York Times article ''Glowing Auras and Black Money: The Pentagon''s Mysterious U.F.O. Program'' (Helene Cooper, Ralph Blumenthal, and Leslie Kean, December 16, 2017) names Harold E. Puthoff as a contractor for the program who had earlier conducted research on extrasensory perception for the C.I.A., and reports that Elizondo joined Puthoff and Christopher K. Mellon in the new commercial venture called To the Stars Academy of Arts and Science. The TTSA press release on the ORNL Report (February 28, 2025) reports that Dr. Hal Puthoff and Dr. Eric Davis''s analysis of the Magnesium-Zinc-Bismuth (MgZn/Bi) ''Art''s Parts'' sample was completed and submitted to the TTSA Board of Directors on the 27th of September 2024. Puthoff''s SRI institutional context is documented by the 1977 Kress paper, the 1993 DIA STAR GATE Project Overview (which describes the SRI International program at Menlo Park from 1970 to 1990 as a small group headed by Dr. H. Puthoff), and the 1995 American Institutes for Research evaluation (which reviews the 1973-1988 SRI experiments and cites Puthoff and Targ (1975) ''Perceptual Augmentation Techniques: Part Two — Research Report'' as the SRI Final Report).'
+
+credibility_notes: 'Puthoff''s professional record is documented across primary sources spanning more than five decades. The 1977 CIA Studies in Intelligence paper by Kenneth A. Kress ([`/people/kenneth-kress`]) — declassified June 23, 2011 (CIA-RDP88G01116R000600690003-8) — names Targ and Puthoff as the two laser physicists who re-awakened CIA ([`/organizations/cia`]) research in parapsychology, describes Puthoff as a theoretician who was exploring new fields of research after extensive work in quantum electronics, and documents the August 1972 Office of Technical Service contract with Targ and Puthoff at SRI ($874 for a few days of work with the magnetometer subject), the October 1, 1972 OTS Contract 8473 expanded effort, the February 1, 1974 jointly funded ORD and OTS program at SRI, and the November 1976 briefing of Director George Bush on CIA''s investigations into parapsychology after he became aware that official Soviets were visiting and questioning Puthoff and Targ at SRI. The 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview describes the SRI International program at Menlo Park as a small group headed by Dr. H. Puthoff and reports the program discontinued in 1990. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviews the 1973-1988 SRI experiments and cites Puthoff, Harold E. and Russell Targ (1975) ''Perceptual Augmentation Techniques: Part Two — Research Report'' as the SRI Final Report (December 1, 1975).
+
+
+  The TTSA page (January 8, 2018) is the most comprehensive single source on Puthoff''s career: it states that Puthoff earned his Ph.D. from Stanford University in 1967, that his professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International, that he has served as President and CEO of EarthTech International, Inc. (ETI) and Director of the Institute for Advanced Studies at Austin (IASA) since 1985, that he holds patents issued in the laser, communications, and energy fields, and that he won a Who''s Who Lifetime Achievement in 2017. The TTSA SEC Form 1-A Part II (July 10, 2017) and SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025) corroborate the EarthTech President and IASA Director roles since 1985 and the TTSA co-founder role; the May 2, 2022 filing reports that Puthoff recently left his position on the Company''s board of directors to serve on the Advisory Board, and the April 17, 2025 filing records the September 27, 2024 Puthoff/Davis memorandum to the Board of Directors on the ORNL ([`/organizations/ornl`]) Art''s Parts material analysis. The December 16, 2017 New York Times article describes Puthoff as ''an engineer who has conducted research on extrasensory perception for the C.I.A. and later worked as a contractor for the program''; other primary sources describe Puthoff as a physicist (Kress 1977: ''Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff''; the 2018 TTSA page: ''DR. HAL PUTHOFF, PhD''; SAFIRE Project team page: ''Harold Puthoff, PhD'').
+
+  '
+
+quotes:
+- id: q1
+  added_date: '2026-05-16'
+  text: |
+    WE present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. The literature1–3 and our observations lead us to conclude that such abilities can be studied under laboratory conditions.
+  source:
+    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    location: '¶1'
+  context: 'Abstract of Targ and Puthoff, ''Information transmission under conditions of sensory shielding'', Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0 — Targ and Puthoff author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025'
+  observation_type: relayed
+  statement_date: '1974-10-18'
+  significance: 'Co-authored Targ + Puthoff peer-reviewed report on the SRI investigation into psychic abilities. Foundational primary-source anchor for Puthoff''s Stanford Research Institute affiliation at the Electronics and Bioengineering Laboratory in 1974, and for the published peer-reviewed primary-source attestation of the SRI parapsychology research the CIA was sponsoring at the time. Substantively the subject''s own research and therefore registered as a Puthoff Statement per the conventions on co-authored academic publications.'
+
+- id: q2
+  added_date: '2026-05-16'
+  text: |
+    We’re sort of in the position of what would happen if you gave Leonardo da Vinci a garage-door opener,
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ on AATIP material-analysis program research'
+  context: 'New York Times article ''Glowing Auras and Black Money: The Pentagon''s Mysterious U.F.O. Program'' by Helene Cooper, Ralph Blumenthal, and Leslie Kean, published 2017-12-16. Puthoff quoted in his capacity as a contractor for the Advanced Aerospace Threat Identification Program who had earlier conducted research on extrasensory perception for the C.I.A.'
+  observation_type: relayed
+  statement_date: '2017-12-16'
+  significance: 'Foundational disclosure-era statement framing AATIP material analysis as a knowledge-asymmetry problem (the implicit framing: the materials may carry advanced technology whose function the recipient lacks the conceptual vocabulary to recognize). Quoted in the same NYT article that publicly named Luis Elizondo as the AATIP director and identified Puthoff, Elizondo, and Christopher K. Mellon as principals in the new commercial venture To the Stars Academy of Arts and Science.'
+
+- id: q3
+  added_date: '2026-05-16'
+  text: |
+    We have a chance at making progress, because we will follow where the data leads us.
+  source:
+    path: news/tothestarsacademy-home-20220120.html
+    location: '¶ in ADAM Research Project / Material Science Research section'
+  context: 'To The Stars Academy of Arts & Science homepage, snapshot 2022-01-20 (Wayback Machine). Attribution on the page: ''Dr. Hal Puthoff, Co-Founder of TTSA''. The quote appears in the ADAM Research Project / Material Science Research section describing TTSA''s materials-analysis research stance.'
+  observation_type: relayed
+  statement_date: '2022-01-20'
+  significance: 'TTSA homepage self-attestation framing the ADAM Research Project''s investigative stance — empirical (follow the data) rather than hypothesis-driven. Anchors Puthoff''s continuing TTSA co-founder role as of the 2022-01-20 snapshot, alongside the May 2, 2022 SEC Form 1-K Part II attestation that he had recently moved from the Board of Directors to the Advisory Board.'
+
+entities_referenced:
+- id: e1
+  added_date: '2026-05-16'
+  entity_type: person
+  name: 'Russell Targ'
+  wrap_path: '/people/russell-targ'
+  context_summary: 'Co-author of the 1974 Nature paper ''Information transmission under conditions of sensory shielding'' (Targ and Puthoff) and co-founder, with Puthoff, of the Stanford Research Institute investigation into psychic abilities in the 1970s and 1980s (per Targ''s ESP Research site). The 1977 Kress paper names Targ and Puthoff together as the two laser physicists who re-awakened CIA research in parapsychology.'
+  references:
+  - quote_id: q1
+
+- id: e2
+  added_date: '2026-05-16'
+  entity_type: person
+  name: 'Eric Davis'
+  wrap_path: '/people/eric-davis'
+  context_summary: 'Dr. Eric Davis co-authored with Puthoff the September 27, 2024 memorandum submitted to the TTSA Board of Directors counter-analyzing the ORNL Magnesium-Zinc-Bismuth (Art''s Parts) material report; the TTSA 2025-02-28 press-and-news post characterizes the Puthoff/Davis analysis as having clarified aspects of the ORNL report. Davis appears on the SAFIRE Project science review team as Chief Science Officer, Institute for Advanced Studies at Austin alongside Puthoff (Director, IASA). New unbuilt stub.'
+
+- id: e3
+  added_date: '2026-05-16'
+  entity_type: person
+  name: 'Luis Elizondo'
+  wrap_path: '/people/luis-elizondo'
+  context_summary: 'Per the 2017-12-16 NYT article, Elizondo led the Advanced Aerospace Threat Identification Program until October 2017 and joined Puthoff and Mellon in the new commercial venture To the Stars Academy of Arts and Science. The 2018-07-26 TTSA ADAM Research Project announcement names Puthoff as ''a former Senior Advisor and Subcontractor to the Pentagon''s AATIP program''. New unbuilt stub.'
+  references:
+  - quote_id: q2
+
+- id: e4
+  added_date: '2026-05-16'
+  entity_type: person
+  name: 'Christopher K. Mellon'
+  wrap_path: '/people/christopher-mellon'
+  context_summary: 'Per the 2017-12-16 NYT article, Christopher K. Mellon was a deputy assistant secretary of defense for intelligence and joined Puthoff and Elizondo in the new commercial venture To the Stars Academy of Arts and Science. New unbuilt stub.'
+  references:
+  - quote_id: q2
+
+- id: e5
+  added_date: '2026-05-16'
+  entity_type: person
+  name: 'Kenneth A. Kress'
+  wrap_path: '/people/kenneth-kress'
+  context_summary: 'CIA Operations Officer in the Office of Technical Service (OTS) and CIA Project Officer for the SRI parapsychology investigation contracts beginning October 1972. Author of the 1977 Studies in Intelligence paper ''Parapsychology in Intelligence: A Personal Review and Conclusions'' (declassified 2011, CIA-RDP88G01116R000600690003-8) — the foundational CIA-side primary-source attestation of the Targ + Puthoff SRI parapsychology investigation. New unbuilt stub.'
+
+- id: e6
+  added_date: '2026-05-16'
+  entity_type: person
+  name: 'James Ryder'
+  wrap_path: '/people/james-ryder'
+  context_summary: 'In the 2015 Lucis Trust ''Soul is Light'' talk and the 2018 Lucis Trust ''Garment of God'' talk, Ryder describes Puthoff as ''my friend dr put off'' (2015) and ''dr hal put off as a physicist in austin'' (2018) — auto-caption renderings of ''Dr. Puthoff'' and ''Dr. Hal Puthoff'' respectively. Ryder''s built node references Puthoff via the SAFIRE Project science review team alongside Davis and Gardner.'
+
+- id: e7
+  added_date: '2026-05-16'
+  entity_type: person
+  name: 'Tom DeLonge'
+  wrap_path: '/people/tom-delonge'
+  context_summary: 'TTSA Co-founder, Chairman of the Board, and (per the TTSA homepage snapshots) Interim CEO. Per the TTSA SEC Form 1-A Part II (2017-07-10), DeLonge is the principal investor; Puthoff is named alongside DeLonge and James Semivan as TTSA board members and Class B Common Stock holders (Gravity Holdings LLC, JimSemI LLC, and Harold Puthoff per the Form 1-A). New unbuilt stub.'
+
+- id: e8
+  added_date: '2026-05-16'
+  entity_type: person
+  name: 'Jim Semivan'
+  wrap_path: '/people/jim-semivan'
+  context_summary: 'TTSA Co-founder, Board Member, and VP Operations per the TTSA homepage snapshots and SEC filings. 25 years as Operations Officer for the CIA Directorate of Operations per the TTSA 2018 bio. Named alongside Puthoff and DeLonge as TTSA founding board / stockholder per the SEC Form 1-A Part II (2017-07-10). New unbuilt stub.'
+
+- id: e9
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Stanford Research Institute (SRI International)'
+  wrap_path: '/organizations/stanford-research-institute'
+  context_summary: 'Per the 1974 Nature paper byline, Puthoff''s author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per the 1977 Kress paper, Targ and Puthoff conducted the CIA-sponsored parapsychology investigation at SRI from 1972 onward. Per the 1993 DIA STAR GATE Project Overview, the SRI program at Menlo Park ran from 1970 to 1990 and was headed by Dr. H. Puthoff. Per the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), Puthoff''s career included research at SRI International before he became President of EarthTech in 1985.'
+  references:
+  - quote_id: q1
+
+- id: e10
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'EarthTech International, Inc. (ETI)'
+  wrap_path: '/organizations/earthtech-international'
+  context_summary: 'Per the TTSA homepage snapshot 2018-01-08 and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), Puthoff has served as President and CEO of EarthTech International, Inc. since 1985. Per the 2018-07-26 TTSA ADAM Research Project announcement, TTS Academy established a contract with EarthTech International — based in Austin, Texas — to evaluate the properties of the materials collected by the ADAM Research Project under Puthoff''s leadership. New unbuilt stub.'
+
+- id: e11
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Institute for Advanced Studies at Austin (IASA)'
+  wrap_path: '/organizations/institute-for-advanced-studies-at-austin'
+  context_summary: 'Per the TTSA homepage snapshot 2018-01-08 and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), Puthoff has served as Director of the Institute for Advanced Studies at Austin (IASA) since 1985. Per the SAFIRE Project team snapshot, IASA is the institutional home of Puthoff (Director) and Eric W. Davis (Chief Science Officer) on the SAFIRE science review team. New unbuilt stub.'
+
+- id: e12
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'To The Stars Academy of Arts & Science (TTSA)'
+  wrap_path: '/organizations/ttsa'
+  context_summary: 'Puthoff is a co-founder of TTSA and served as Vice President Science and Technology and as a member of the Board of Directors from 2017 (per the SEC Form 1-A Part II preliminary offering circular dated 2017-07-10) until he moved to the Advisory Board (per the May 2, 2022 SEC Form 1-K Part II filing). The April 17, 2025 SEC Form 1-K Part II filing records the September 27, 2024 Puthoff/Davis memorandum to the Board of Directors on the ORNL Art''s Parts material analysis.'
+  references:
+  - quote_id: q3
+
+- id: e13
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Central Intelligence Agency (CIA)'
+  wrap_path: '/organizations/cia'
+  context_summary: 'Per the 1977 Kress paper, the CIA Office of Technical Service contracted with Targ and Puthoff at SRI in August 1972 ($874 demonstration contract) and subsequently funded the expanded $50,000 effort (OTS Contract 8473, 1 October 1972) and the February 1974 jointly funded ORD and OTS program. Per the 2017-12-16 NYT article, Puthoff had earlier conducted research on extrasensory perception for the C.I.A. New unbuilt stub.'
+
+- id: e14
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Defense Intelligence Agency (DIA)'
+  wrap_path: '/organizations/dia'
+  context_summary: 'Per the 1993 DIA Directorate for Scientific and Technical Intelligence ''STAR GATE PROJECT: AN OVERVIEW'' (Short Title DTI-S-1056-SL, CIA-RDP96-00789R002800180001-2), DIA was the continuing funding source for the SRI International remote-viewing research after CIA funding was discontinued in 1975, and the SRI program was discontinued in 1990. New unbuilt stub.'
+
+- id: e15
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Advanced Aerospace Threat Identification Program (AATIP)'
+  wrap_path: '/organizations/aatip'
+  context_summary: 'Per the 2018-07-26 TTSA blog post announcing the ADAM Research Project, Puthoff is ''a former Senior Advisor and Subcontractor to the Pentagon''s AATIP program (Advanced Aerospace Threat Identification Program)''. Per the 2017-12-16 NYT article, Puthoff was a contractor for the program. New unbuilt stub.'
+  references:
+  - quote_id: q2
+
+- id: e16
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'National Security Agency (NSA)'
+  wrap_path: '/organizations/nsa'
+  context_summary: 'Per the TTSA homepage snapshot 2018-01-08 and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), the National Security Agency is one of the institutions in Puthoff''s pre-SRI research career: ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' Specific dates not attested in the archived sources. New unbuilt stub.'
+
+- id: e17
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Stanford University'
+  wrap_path: '/organizations/stanford-university'
+  context_summary: 'Per the TTSA homepage snapshot 2018-01-08, Puthoff earned his Ph.D. from Stanford University in 1967. The same source lists Stanford University among the institutions of his more-than-five-decades research career. New unbuilt stub.'
+
+- id: e18
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'SAFIRE Project'
+  wrap_path: '/organizations/safire-project'
+  context_summary: 'Per the SAFIRE Project team snapshot, the SAFIRE science review team includes ''Harold Puthoff, PhD — Director, Institute for Advanced Studies at Austin'' alongside Dr. James Ryder (Chairman, International Science Foundation), Eric W. Davis (Chief Science Officer, IASA), and William A. Gardner (Professor Emeritus, University of California). The same page renders Puthoff in a tag-list typo as ''Hal Putoff''.'
+
+- id: e19
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Aureon Energy, Ltd.'
+  wrap_path: '/organizations/aureon-energy'
+  context_summary: 'Per the E-Cat World 2020-03-08 report on the Aureon Energy website launch, ''Hal Puthoff, a familiar name to many, is a member of their Science Advisory Board.'' Aureon Energy was launched in March 2020 as the commercialization vehicle for the SAFIRE technology with Montgomery Childs as CEO and Founder, Michael Clarage as Chief Science Officer, and Paul Anderson as Chief Technical Officer. New unbuilt stub.'
+
+- id: e20
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Oak Ridge National Laboratory (ORNL)'
+  wrap_path: '/organizations/ornl'
+  context_summary: 'Per the April 17, 2025 TTSA SEC Form 1-K Part II filing and the 2025-02-28 TTSA press-and-news post, ORNL produced the April 2024 terrestrial-origin analysis of the Magnesium-Zinc-Bismuth ''Art''s Parts'' material that Puthoff and Davis subsequently counter-analyzed in a memorandum to the TTSA Board of Directors on September 27, 2024. New unbuilt stub.'
+
+- id: e21
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'American Institutes for Research (AIR)'
+  wrap_path: '/organizations/american-institutes-for-research'
+  context_summary: 'Per the 1995 American Institutes for Research evaluation ''An Evaluation of Remote Viewing: Research and Applications'' (Michael D. Mumford, Andrew M. Rose, David A. Goslin; 29 September 1995), AIR conducted the independent end-of-program review of the Stargate Project at CIA''s request. The evaluation cites Puthoff, Harold E. and Russell Targ (1975) ''Perceptual Augmentation Techniques: Part Two — Research Report'' as the SRI Final Report. New unbuilt stub.'
+
+- id: e22
+  added_date: '2026-05-16'
+  entity_type: document
+  name: 'Targ and Puthoff (1974) Nature paper'
+  wrap_path: '/documents/nature-1974-targ-puthoff-information-transmission'
+  context_summary: 'Targ, R. & Puthoff, H. (1974). ''Information transmission under conditions of sensory shielding.'' Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0. Author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Foundational peer-reviewed primary-source attestation of the Targ + Puthoff SRI investigation. New unbuilt stub.'
+  references:
+  - quote_id: q1
+
+- id: e23
+  added_date: '2026-05-16'
+  entity_type: document
+  name: 'Puthoff and Davis ORNL counter-analysis memo (2024-09-27)'
+  wrap_path: '/documents/ttsa-puthoff-davis-ornl-analysis-memo-2025'
+  context_summary: 'The Puthoff/Davis memorandum to the TTSA Board of Directors dated 27 September 2024, counter-analyzing the April 2024 ORNL terrestrial-origin finding for the Magnesium-Zinc-Bismuth (Art''s Parts) material sample. Public-released via the TTSA press-and-news post on 2025-02-28. New unbuilt stub.'
+  references:
+  - quote_id: q3
+
+- id: e24
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'ADAM Research Project'
+  wrap_path: '/organizations/adam-research-project'
+  context_summary: 'Per the 2018-07-26 TTSA blog post, the ADAM (Acquisition and Data Analysis of Materials) Research Project is a TTSA partnership with EarthTech International under Puthoff''s leadership focused on detailed and rigorous scientific evaluation of material samples reported to have come from advanced aerospace vehicles of unknown origin. New unbuilt stub.'
+  references:
+  - quote_id: q3
+
+- id: e25
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'General Electric'
+  wrap_path: '/organizations/general-electric'
+  context_summary: 'Per the TTSA page (January 8, 2018) and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), General Electric is one of the institutions in Puthoff''s pre-SRI research career: ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' Specific dates not attested in the archived sources. New unbuilt stub.'
+
+- id: e26
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Sperry'
+  wrap_path: '/organizations/sperry'
+  context_summary: 'Per the TTSA page (January 8, 2018) and the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025), Sperry is one of the institutions in Puthoff''s pre-SRI research career: ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' Specific dates not attested in the archived sources. New unbuilt stub.'
+
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-16'
+  observed: 'lasqr'
+  canonical: 'laser'
+  location: 'p. 8, ¶1'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper (declassified scan of typewritten 1977 original; Adobe Acrobat Paper Capture Plug-in producer). The source extract reads ''Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff'' where the canonical form is ''Two laser physicists''. The OCR engine read ''e'' as ''q'' — common typewritten-font OCR misread. Cross-referenced from /people/russell-targ artifact (naming_quirks nq2) where the same phrase is preserved verbatim in Targ-q9. Preserved as-source per OCR-scan source-form-preservation discipline.'
+
+- id: nq2
+  added_date: '2026-05-16'
+  observed: 'put off'
+  canonical: 'Puthoff'
+  location: '[59:05]'
+  source_path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
+  resolution: preserve-as-sic-in-quotes
+  note: 'Auto-caption artifact in the 2015 Lucis Trust ''Soul is Light'' YouTube transcript (transcript_provenance: auto-caption). James Ryder''s spoken reference ''my friend Dr. Puthoff'' is rendered by the YouTube auto-caption system as ''my friend dr put off''. Same artifact appears in the 2018 ''Garment of God'' transcript (see nq3). Preserved as-source per auto-caption source-form-preservation discipline.'
+
+- id: nq3
+  added_date: '2026-05-16'
+  observed: 'hal put off'
+  canonical: 'Hal Puthoff'
+  location: '[39:24]'
+  source_path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+  resolution: preserve-as-sic-in-quotes
+  note: 'Auto-caption artifact in the 2018 Lucis Trust ''Garment of God'' YouTube transcript (transcript_provenance: auto-caption). James Ryder''s spoken reference ''Dr. Hal Puthoff'' is rendered by the YouTube auto-caption system as ''dr hal put off as a physicist in austin''. Recurrent variant of nq2. Preserved as-source per auto-caption source-form-preservation discipline.'
+
+- id: nq4
+  added_date: '2026-05-16'
+  observed: 'pothos'
+  canonical: 'Puthoff'
+  location: '[1:08:10]'
+  source_path: transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt
+  resolution: preserve-as-sic-in-quotes
+  note: 'Auto-caption artifact in the 2018 Lucis Trust ''Garment of God'' YouTube transcript. The phoneme sequence in ''Dr. Puthoff'' is rendered by the YouTube auto-caption system as ''dr pothos one'' (one = part of next utterance ''one Dr. Targ''). Phoneme-substitution drift on the uncommon surname. Preserved as-source per auto-caption source-form-preservation discipline.'
+
+- id: nq5
+  added_date: '2026-05-16'
+  observed: 'Hal Putoff'
+  canonical: 'Hal Puthoff'
+  location: 'tag list at end of page'
+  source_path: news/safireproject-team-snapshot.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'Single-character spelling typo in the SAFIRE Project team page tag list, dropping one ''h'' from ''Puthoff''. The same page renders the canonical ''Harold Puthoff'' in the science review team listing immediately above the tag list. Preserved as-source per source-form-preservation discipline; not adjudicated against the canonical form because the source itself uses both forms in the same page.'
+
+- id: nq6
+  added_date: '2026-05-16'
+  observed: 'E. Harold Puthoff'
+  canonical: 'Harold E. Puthoff'
+  location: '¶3'
+  source_path: news/irva-targ-russell-wayback-20250123.html
+  resolution: disputed
+  note: 'The IRVA speaker bio for Russell Targ lists the Mind Reach co-author as ''E. Harold Puthoff'' (initial-then-middle-name form), while the 1977 Kress paper renders the name as ''Dr. Harold E. Puthoff'' (first-name-middle-initial form) — the two substantively-different orderings of the middle initial. The 1974 Nature paper byline renders the name as ''HAROLD PUTHOFF'' (no middle initial, all-caps), which is journal typography rather than a third substantive variant — Nature consistently capitalizes all bylines in the same period. The repository canonical /people/hal-puthoff slug uses the informal short form. Source-priority hierarchy (per feedback_source_priority_hierarchy.md): the subject (Puthoff) has not self-attested in this artifact''s archived sources, so primary documentary attestation falls to the Nature paper byline (Puthoff''s own peer-reviewed publication, same first-name-then-surname order as Kress) and the Kress paper (CIA-side institutional record). Flagged as ''disputed'' so future contributors evaluating the Mind Reach book co-author byline can see the divergence. Mirrors naming_quirks nq8 on the Russell Targ artifact.'
+
+rumors: []
+
+timeline:
+- id: t1
+  added_date: '2026-05-16'
+  date: '1967'
+  event: 'Puthoff earns his Ph.D. from Stanford University ([`/organizations/stanford-university`]) per the To The Stars Academy of Arts & Science homepage snapshot 2018-01-08.'
+  source:
+    path: news/tothestarsacademy-home-20180108.html
+    location: '¶ in Hal Puthoff biographical section'
+  category: other
+  node_link: '/organizations/stanford-university'
+
+- id: t2
+  added_date: '2026-05-16'
+  date: '1972-04'
+  event: 'In April 1972, Targ ([`/people/russell-targ`]) meets with CIA ([`/organizations/cia`]) personnel from the Office of Scientific Intelligence (OSI) and proposes that some psychokinetic verification investigations could be done at SRI ([`/organizations/stanford-research-institute`]) in conjunction with Puthoff per the 1977 Kress paper. First documented Targ + Puthoff CIA-engagement antecedent.'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶2'
+  category: role
+  node_link: '/organizations/cia'
+
+- id: t3
+  added_date: '2026-05-16'
+  date: '1972-08'
+  event: 'August 1972 $874 CIA ([`/organizations/cia`]) Office of Technical Service demonstration contract with Targ and Puthoff at SRI ([`/organizations/stanford-research-institute`]) per the 1977 Kress paper. First formal CIA contract with Puthoff at SRI; OTS subsequently approves $2,500 + $50,000 expanded work orders (OTS Contract 8473, 1 October 1972).'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶4'
+  category: other
+  node_link: '/organizations/cia'
+
+- id: t4
+  added_date: '2026-05-16'
+  date: '1974-02'
+  event: 'Jointly funded CIA ([`/organizations/cia`]) Office of Research and Development and Office of Technical Service program at SRI ([`/organizations/stanford-research-institute`]) begins in February 1974 per the 1977 Kress paper. Kenneth A. Kress ([`/people/kenneth-kress`]) is CIA Project Officer.'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 10, ¶1'
+  category: other
+  node_link: '/organizations/cia'
+
+- id: t5
+  added_date: '2026-05-16'
+  date: '1974-10-18'
+  event: 'Targ ([`/people/russell-targ`]) and Puthoff publish [`/documents/nature-1974-targ-puthoff-information-transmission`] in Nature 251, 602–607 (DOI 10.1038/251602a0). Issue date 18 October 1974. Author affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute ([`/organizations/stanford-research-institute`]), Menlo Park, California, 94025.'
+  source:
+    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    location: '¶1'
+  category: publication
+  node_link: '/documents/nature-1974-targ-puthoff-information-transmission'
+
+- id: t6
+  added_date: '2026-05-16'
+  date: '1975-12-01'
+  event: 'Puthoff and Targ ([`/people/russell-targ`]) publish ''Perceptual Augmentation Techniques: Part Two — Research Report'' as the Stanford Research Institute ([`/organizations/stanford-research-institute`]) Final Report on 1 December 1975 — the SRI internal report cited in the 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation as the foundational primary-source attestation of the SRI scientific research endeavor.'
+  source:
+    path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
+    location: 'bibliography'
+  category: publication
+
+- id: t7
+  added_date: '2026-05-16'
+  date: '1976-11'
+  event: 'In November 1976, Director of Central Intelligence George Bush becomes aware that official Soviets are visiting and questioning Puthoff and Targ ([`/people/russell-targ`]) at SRI ([`/organizations/stanford-research-institute`]) about their work in parapsychology, and Bush requests a briefing on CIA''s ([`/organizations/cia`]) investigations into parapsychology per the 1977 Kress paper.'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 15, ¶1'
+  category: other
+  node_link: '/organizations/cia'
+
+- id: t8
+  added_date: '2026-05-16'
+  date: '1985'
+  event: 'Puthoff becomes President and CEO of EarthTech International, Inc. ([`/organizations/earthtech-international`]) and Director of the Institute for Advanced Studies at Austin (IASA) ([`/organizations/institute-for-advanced-studies-at-austin`]) per the TTSA SEC Form 1-K Part II filings of May 2, 2022 and April 17, 2025 and the TTSA homepage snapshot 2018-01-08.'
+  source:
+    path: news/tothestarsacademy-home-20180108.html
+    location: '¶ in Hal Puthoff biographical section'
+  category: role
+  node_link: '/organizations/earthtech-international'
+
+- id: t9
+  added_date: '2026-05-16'
+  date: '1990'
+  event: 'SRI ([`/organizations/stanford-research-institute`]) parapsychology investigation discontinued per the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview. The 1984 internal review (Appendix B) describes the SRI program as ''a small group headed by Dr. H. Puthoff''. Program-level outer bound on Puthoff''s individual SRI tenure.'
+  source:
+    path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+    location: 'p. 10, ¶3'
+  category: other
+
+- id: t10
+  added_date: '2026-05-16'
+  date: '2017-07-10'
+  event: 'TTSA ([`/organizations/ttsa`]) SEC Form 1-A Part II preliminary offering circular filed (CIK 1710274, accession 000114420417036300). Names Puthoff among the TTSA founding board members and Class B Common Stockholders (Gravity Holdings LLC, JimSemI LLC, and Harold Puthoff per the Form 1-A). Form signed ''/s/ Harold Puthoff, Director''.'
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: 'signature page'
+  category: role
+  node_link: '/organizations/ttsa'
+
+- id: t11
+  added_date: '2026-05-16'
+  date: '2017-12-16'
+  event: 'The New York Times publishes ''Glowing Auras and Black Money: The Pentagon''s Mysterious U.F.O. Program'' (Helene Cooper, Ralph Blumenthal, and Leslie Kean) which quotes Puthoff and names him alongside Elizondo ([`/people/luis-elizondo`]) and Mellon ([`/people/christopher-mellon`]) as principals in the new commercial venture To the Stars Academy of Arts and Science ([`/organizations/ttsa`]).'
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ on AATIP material-analysis program research'
+  category: testimony
+  node_link: '/organizations/ttsa'
+
+- id: t12
+  added_date: '2026-05-16'
+  date: '2018-07-26'
+  event: 'TTSA ([`/organizations/ttsa`]) announces the ADAM Research Project ([`/organizations/adam-research-project`]) under Puthoff''s leadership; EarthTech International ([`/organizations/earthtech-international`]) (Austin, Texas) contracted to evaluate materials. Puthoff named ''a former Senior Advisor and Subcontractor to the Pentagon''s AATIP program ([`/organizations/aatip`]) and current VP of Technology for TTS Academy''.'
+  source:
+    path: news/ttsa-blog-adam-research-project-intro-20180727.html
+    location: '¶ on TTSA-EarthTech ADAM contract'
+  category: role
+  node_link: '/organizations/adam-research-project'
+
+- id: t13
+  added_date: '2026-05-16'
+  date: '2020-03-08'
+  event: 'Aureon Energy, Ltd. ([`/organizations/aureon-energy`]) website launched as the commercialization vehicle for the SAFIRE Project ([`/organizations/safire-project`]) technology, with Puthoff named on the Aureon Science Advisory Board per the E-Cat World 2020-03-08 report.'
+  source:
+    path: news/e-catworld-aureon-launch-20200308.html
+    location: '¶ on Aureon team'
+  category: role
+  node_link: '/organizations/aureon-energy'
+
+- id: t14
+  added_date: '2026-05-16'
+  date: '2022-01-20'
+  event: 'TTSA ([`/organizations/ttsa`]) page attributes ''We have a chance at making progress, because we will follow where the data leads us.'' to ''Dr. Hal Puthoff, Co-Founder of TTSA''. Anchors the post-Board transition (per the May 2, 2022 SEC Form 1-K Part II, Puthoff recently left the Board to serve on the Advisory Board).'
+  source:
+    path: news/tothestarsacademy-home-20220120.html
+    location: '¶ in ADAM Research Project / Material Science Research section'
+  category: testimony
+  node_link: '/organizations/ttsa'
+
+- id: t15
+  added_date: '2026-05-16'
+  date: '2024-09-27'
+  event: 'Puthoff and Davis ([`/people/eric-davis`]) submit a memorandum to the TTSA ([`/organizations/ttsa`]) Board of Directors counter-analyzing the April 2024 ORNL ([`/organizations/ornl`]) finding for the Magnesium-Zinc-Bismuth (Art''s Parts) sample. The Puthoff/Davis analysis ''did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either.'''
+  source:
+    path: news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html
+    location: '¶ on Puthoff/Davis September 27 memorandum'
+  category: publication
+  node_link: '/documents/ttsa-puthoff-davis-ornl-analysis-memo-2025'
+
+affiliations:
+- id: a1
+  added_date: '2026-05-16'
+  organization_path: '/organizations/stanford-university'
+  role: 'Ph.D. recipient (1967 per the TTSA page January 8, 2018); also among the institutions in his more-than-five-decades research career'
+  period_start: '1967'
+  period_end: '1967'
+  source:
+    path: news/tothestarsacademy-home-20180108.html
+    location: '¶ in Hal Puthoff biographical section'
+  note: 'Both period_start and period_end set to 1967 to anchor the Ph.D. award date per the TTSA page (''He earned his Ph.D. from Stanford University in 1967''). Graduate enrollment start year is not attested in the archived sources. The same TTSA page also lists Stanford University among the institutions of Puthoff''s more-than-five-decades research career; specific dates for any post-Ph.D. Stanford research role are not attested.'
+
+- id: a2
+  added_date: '2026-05-16'
+  organization_path: '/organizations/stanford-research-institute'
+  role: 'Physicist at the Electronics and Bioengineering Laboratory (per the 1974 Nature paper byline); co-investigator with Russell Targ on the CIA-sponsored and DIA-sponsored parapsychology research program at SRI Menlo Park (per the 1977 Kress paper and the 1993 DIA STAR GATE Project Overview)'
+  period_start: '1972-04'
+  source:
+    path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+    location: 'p. B-2'
+  note: 'period_start 1972-04 anchors on the 1977 Kress paper (q9-q11 on the Russell Targ artifact) which attests the April 1972 Targ-CIA-OSI meeting at which Targ proposed Puthoff as co-investigator at SRI; the subsequent August 1972 OTS $874 contract names Puthoff directly. The 1993 DIA STAR GATE Project Overview (Appendix B 1984 internal review) attests the SRI program at the eleven-year mark as ''a small group headed by Dr. H. Puthoff''. period_end intentionally absent — no archived primary source attests Puthoff''s specific SRI departure date; the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025) attests that Puthoff has been President of EarthTech and Director of IASA since 1985, providing an outer bound on his SRI tenure. Per the corpus-wide pending convention question on ''known start, unknown end (but not ongoing)'' (meta/topic/research-queue.md), bare period_start + prose hedge is the working stop-gap pattern.'
+
+- id: a3
+  added_date: '2026-05-16'
+  organization_path: '/organizations/earthtech-international'
+  role: 'President and CEO'
+  period_start: '1985'
+  source:
+    path: government/sec-ttsa-1k-partii-20250417.html
+    location: '¶ in Harold E. Puthoff director bio'
+  note: 'Per the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025) and the TTSA homepage snapshot 2018-01-08: ''Since 1985, Dr. Puthoff has served as President and CEO of EarthTech International, Inc.'' period_end intentionally absent — the April 17, 2025 filing attests the EarthTech role as continuing. The 2018-07-26 TTSA ADAM Research Project announcement corroborates the EarthTech role: ''TTS Academy has established a contract with EarthTech International, Inc., (www.earthtech.org) a well-respected research think tank in Austin, Texas, to evaluate the properties of the available materials. Under the leadership of Dr. Harold E. Puthoff''.'
+
+- id: a4
+  added_date: '2026-05-16'
+  organization_path: '/organizations/institute-for-advanced-studies-at-austin'
+  role: 'Director'
+  period_start: '1985'
+  source:
+    path: government/sec-ttsa-1k-partii-20250417.html
+    location: '¶ in Harold E. Puthoff director bio'
+  note: 'Per the TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025) and the TTSA homepage snapshot 2018-01-08: ''since 1985, as President of ETI and Director IASA''. The SAFIRE Project team snapshot also lists Puthoff as ''Director, Institute for Advanced Studies at Austin'' on the science review team. period_end intentionally absent — the April 17, 2025 filing attests the role as continuing.'
+
+- id: a5
+  added_date: '2026-05-16'
+  organization_path: '/organizations/ttsa'
+  role: 'Co-founder and Director (Board of Directors) 2017–2021; Vice President Science and Technology 2017–2021; Advisory Board 2022–ongoing'
+  period_start: '2017'
+  source:
+    path: government/sec-ttsa-1k-partii-20220502.html
+    location: '¶ in Harold E. Puthoff director bio'
+  note: 'period_start 2017 anchors on the TTSA SEC Form 1-A Part II preliminary offering circular dated 2017-07-10 (signature page: ''/s/ Harold Puthoff, Director'') and the TTSA homepage snapshot 2018-01-08 (''Dr. Harold E. Puthoff is the co-founder and Vice President of Science and Technology of TTS Academy''). The May 2, 2022 TTSA SEC Form 1-K Part II filing attests: ''Harold E. Puthoff is a co-founder of the Company, and recently left his position on the Company''s board of directors to serve on our Advisory Board.'' period_end intentionally absent — Puthoff''s 2022 transition is from one role on TTSA (Board) to another (Advisory Board), not a departure from TTSA; the April 17, 2025 filing attests continuing Advisory Board membership.'
+
+- id: a6
+  added_date: '2026-05-16'
+  organization_path: '/organizations/safire-project'
+  role: 'Science review team member (Director, Institute for Advanced Studies at Austin)'
+  source:
+    path: news/safireproject-team-snapshot.html
+    location: '¶ on science review team'
+  note: 'Per the SAFIRE Project team snapshot, Puthoff appears on the SAFIRE science review team alongside Dr. James Ryder (Chairman, International Science Foundation), Eric W. Davis (Chief Science Officer, Institute for Advanced Studies at Austin), and William A. Gardner (Professor Emeritus, University of California). The same page renders Puthoff in a tag-list typo as ''Hal Putoff'' (see naming_quirks nq5). period_start / period_end intentionally absent — the SAFIRE team page itself attests no launch date, roster-establishment date, or membership start date for Puthoff. The Aureon-row pattern (a7, period_start 2020-03-08) is not transferable here: the Aureon anchor is the source-attested website-launch date reported in the E-Cat World article (a separate primary source); the SAFIRE team page carries no equivalent date attestation in its content. The manifest archived_date 2026-05-07 is the repository-capture date, not a Puthoff-membership-start date — using it as an anchor would misleadingly imply Puthoff joined SAFIRE in 2026 when his Science Review Team membership likely predates the capture by years.'
+
+- id: a7
+  added_date: '2026-05-16'
+  organization_path: '/organizations/aureon-energy'
+  role: 'Science Advisory Board member'
+  period_start: '2020-03-08'
+  source:
+    path: news/e-catworld-aureon-launch-20200308.html
+    location: '¶ on Aureon team'
+  note: 'Per the E-Cat World 2020-03-08 report on the Aureon Energy website launch: ''Hal Puthoff, a familiar name to many, is a member of their Science Advisory Board.'' period_start anchors on the website-launch date (the date the Aureon Science Advisory Board roster is first publicly attested). period_end intentionally absent.'
+
+- id: a8
+  added_date: '2026-05-16'
+  organization_path: '/organizations/general-electric'
+  role: 'Research Scientist'
+  source:
+    path: news/tothestarsacademy-home-20220120.html
+    location: '¶ in Hal Puthoff biographical section'
+  note: 'Per the TTSA page (January 8, 2018): ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' The 2022 TTSA page (January 20, 2022) titles the role across all five institutions as ''50+ years experience as a Research Scientist at General Electric, National Security Agency, Stanford University, Sperry & SRI International''. period_start / period_end intentionally absent — both TTSA bios enumerate the institutions but attest no specific dates for the General Electric tenure.'
+
+- id: a9
+  added_date: '2026-05-16'
+  organization_path: '/organizations/sperry'
+  role: 'Research Scientist'
+  source:
+    path: news/tothestarsacademy-home-20220120.html
+    location: '¶ in Hal Puthoff biographical section'
+  note: 'Per the TTSA page (January 8, 2018): ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' The 2022 TTSA page (January 20, 2022) titles the role across all five institutions as ''50+ years experience as a Research Scientist at General Electric, National Security Agency, Stanford University, Sperry & SRI International''. period_start / period_end intentionally absent — both TTSA bios enumerate the institutions but attest no specific dates for the Sperry tenure.'
+
+- id: a10
+  added_date: '2026-05-16'
+  organization_path: '/organizations/nsa'
+  role: 'Research Scientist'
+  source:
+    path: news/tothestarsacademy-home-20220120.html
+    location: '¶ in Hal Puthoff biographical section'
+  note: 'Per the TTSA page (January 8, 2018): ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' The 2022 TTSA page (January 20, 2022) titles the role across all five institutions as ''50+ years experience as a Research Scientist at General Electric, National Security Agency, Stanford University, Sperry & SRI International''. period_start / period_end intentionally absent — both TTSA bios enumerate the institutions but attest no specific dates for the National Security Agency tenure.'
+
+relationships:
+- id: r1
+  added_date: '2026-05-16'
+  person_path: '/people/russell-targ'
+  relationship: 'Stanford Research Institute investigation into psychic abilities co-investigator; 1974 Nature paper co-author; 1975 SRI Final Report ''Perceptual Augmentation Techniques: Part Two'' co-author; 1977 Mind Reach: Scientists Look at Psychic Ability co-author'
+  source:
+    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    location: '¶3'
+  note: 'Targ and Puthoff co-authored ''Information transmission under conditions of sensory shielding'' (Nature 251, 602–607, 18 October 1974, DOI 10.1038/251602a0); shared affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. The 1977 CIA Kress paper names Targ and Puthoff as the two laser physicists who re-awakened CIA research in parapsychology and characterizes Targ as the experimentalist counterpart to Puthoff''s theoretician role. The 1995 American Institutes for Research evaluation cites Puthoff and Targ (1975) ''Perceptual Augmentation Techniques: Part Two — Research Report'' as the SRI Final Report; the IRVA Targ speaker bio lists Mind Reach (with E. Harold Puthoff, 1977, 2005) among Targ''s co-authored works.'
+
+- id: r2
+  added_date: '2026-05-16'
+  person_path: '/people/eric-davis'
+  relationship: 'Co-author of the September 27, 2024 memorandum to the TTSA Board of Directors counter-analyzing the ORNL Magnesium-Zinc-Bismuth (Art''s Parts) material analysis; SAFIRE Project science review team co-member (Davis as Chief Science Officer, IASA; Puthoff as Director, IASA)'
+  source:
+    path: news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html
+    location: '¶ on Puthoff/Davis September 27 memorandum'
+  note: 'Davis and Puthoff are institutionally co-located at the Institute for Advanced Studies at Austin (Davis as Chief Science Officer; Puthoff as Director — per the SAFIRE Project team snapshot and the April 17, 2025 TTSA SEC Form 1-K Part II filing). The TTSA 2025-02-28 press-and-news post quotes the Puthoff/Davis analysis conclusion: ''did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either.'' Davis is currently an unbuilt stub.'
+
+- id: r3
+  added_date: '2026-05-16'
+  person_path: '/people/luis-elizondo'
+  relationship: 'Co-principal in the To The Stars Academy of Arts & Science commercial venture (per the 2017-12-16 NYT article); ADAM Research Project context (per the 2018-07-26 TTSA blog: Puthoff is ''a former Senior Advisor and Subcontractor to the Pentagon''s AATIP program'' which Elizondo led until October 2017)'
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ near close of article'
+  note: 'Per the 2017-12-16 NYT article: ''Mr. Elizondo has now joined Mr. Puthoff and another former Defense Department official, Christopher K. Mellon, who was a deputy assistant secretary of defense for intelligence, in a new commercial venture called To the Stars Academy of Arts and Science.'' Elizondo led the AATIP program until his October 2017 resignation; Puthoff was a former Senior Advisor and Subcontractor to that same AATIP program per the 2018-07-26 TTSA ADAM Research Project announcement. Elizondo is currently an unbuilt stub.'
+
+- id: r4
+  added_date: '2026-05-16'
+  person_path: '/people/christopher-mellon'
+  relationship: 'Co-principal in the To The Stars Academy of Arts & Science commercial venture per the 2017-12-16 NYT article'
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ near close of article'
+  note: 'Per the 2017-12-16 NYT article, Mellon was a deputy assistant secretary of defense for intelligence and joined Puthoff and Elizondo in the new commercial venture To the Stars Academy of Arts and Science. Mellon is currently an unbuilt stub.'
+
+- id: r5
+  added_date: '2026-05-16'
+  person_path: '/people/tom-delonge'
+  relationship: 'TTSA co-founder, Chairman of the Board, Interim CEO; named alongside Puthoff and Semivan as TTSA founding board / Class B Common Stockholders per the SEC Form 1-A Part II (2017-07-10)'
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: '¶ on Class B Common Stock holders'
+  note: 'Per the TTSA SEC Form 1-A Part II preliminary offering circular dated 2017-07-10: ''A Common Stock and 5,400 shares of Class B Common Stock to Gravity Holdings, LLC, JimSemI, LLC, and Harold Puthoff''. DeLonge holds via Gravity Holdings LLC and is named Co-founder, Chairman of the Board, Interim CEO in the TTSA homepage snapshots. DeLonge is currently an unbuilt stub.'
+
+- id: r6
+  added_date: '2026-05-16'
+  person_path: '/people/jim-semivan'
+  relationship: 'TTSA co-founder, Board Member, VP Operations; named alongside Puthoff and DeLonge as TTSA founding board / Class B Common Stockholders per the SEC Form 1-A Part II (2017-07-10)'
+  source:
+    path: government/sec-ttsa-1a-partii-20170710.html
+    location: '¶ on Class B Common Stock holders'
+  note: 'Per the TTSA SEC Form 1-A Part II preliminary offering circular dated 2017-07-10, Semivan holds via JimSemI, LLC. Per the TTSA homepage snapshots, Semivan is Co-founder, Board Member, VP Operations with 25 years as Operations Officer for the CIA Directorate of Operations. Semivan is currently an unbuilt stub.'
+
+- id: r7
+  added_date: '2026-05-16'
+  person_path: '/people/kenneth-kress'
+  relationship: 'CIA Project Officer for the SRI parapsychology investigation contracts (1972 onward); author of the 1977 Studies in Intelligence paper that is the foundational CIA-side primary-source attestation of the Targ + Puthoff SRI program'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶1-4'
+  note: 'Kress was CIA Operations Officer in the Office of Technical Service (OTS) and CIA Project Officer for the SRI parapsychology investigation contracts beginning October 1972 (per the Kress 1977 paper). Kress''s direct contact with Puthoff was institutional rather than personal — managing CIA contracts with Targ and Puthoff at SRI, and authoring the 1977 first-person Studies in Intelligence review. Mirrors the corresponding relationship on the Russell Targ artifact (r4). Kress is currently an unbuilt stub.'
+
+- id: r8
+  added_date: '2026-05-16'
+  person_path: '/people/james-ryder'
+  relationship: 'Lucis Trust talk co-referent: Ryder names Puthoff as ''my friend Dr. Puthoff'' (2015 Soul is Light talk) and ''Dr. Hal Puthoff as a physicist in Austin'' (2018 Garment of God talk); SAFIRE Project science review team co-member (Ryder as Chairman, International Science Foundation; Puthoff as Director, IASA)'
+  source:
+    path: transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt
+    location: '[59:05]'
+  note: 'James Ryder''s 2015 Lucis Trust Soul is Light talk attests on camera at [59:05] ''as my friend dr put off said'' and ''dr puthoff is a physicist in the united'' (auto-caption renderings of ''Dr. Puthoff'' and the United-States reference). The 2018 Garment of God talk renders the name as ''dr hal put off as a physicist in austin'' at [39:24] and ''dr pothos one'' at [1:08:10]. Source transcripts are YouTube auto-caption (transcript_provenance: auto-caption); the auto-caption variants are registered as naming_quirks nq2-nq4. Ryder and Puthoff also appear together on the SAFIRE Project science review team per the SAFIRE team snapshot.'
+
+program_involvement:
+- id: p1
+  added_date: '2026-05-16'
+  program: 'Stanford Research Institute investigation into psychic abilities (SRI parapsychology / remote viewing program at Menlo Park)'
+  role: 'Head of the SRI investigation per the 1993 DIA STAR GATE Project Overview (Appendix B 1984 internal review: ''a small group headed by Dr. H. Puthoff''); co-investigator with Russell Targ; co-author of the 1974 Nature paper and the 1975 SRI Final Report ''Perceptual Augmentation Techniques: Part Two''.'
+  period_start: '1972-04'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+    location: 'p. B-2'
+  note: 'period_start 1972-04 anchors on the 1977 Kress paper attestation of the April 1972 Targ-CIA-OSI meeting at which Targ proposed Puthoff as co-investigator at SRI; the August 1972 OTS $874 contract names Puthoff directly. The 1993 DIA STAR GATE Project Overview describes the SRI program as ''a small group headed by Dr. H. Puthoff''. The 1995 AIR evaluation reviews the 1973-1988 SRI experiments and cites Puthoff and Targ (1975) ''Perceptual Augmentation Techniques: Part Two — Research Report'' as the SRI Final Report. period_end intentionally absent — no archived primary source attests Puthoff''s specific SRI tenure end date; the 1990 SRI-program discontinuation (per the 1993 DIA Overview) provides the program-level outer bound, distinct from his individual tenure. The TTSA SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025) attests his EarthTech President role since 1985, providing an outer bound. Per the corpus-wide pending convention question on ''known start, unknown end (but not ongoing)'' (meta/topic/research-queue.md), bare period_start + prose hedge is the working stop-gap pattern.'
+
+- id: p2
+  added_date: '2026-05-16'
+  program: 'CIA-sponsored SRI parapsychology investigation (OTS / ORD contracts)'
+  role: 'Co-investigator with Russell Targ under successive CIA Office of Technical Service contracts at SRI: August 1972 $874 demonstration contract; 1 October 1972 OTS Contract 8473 ($50,000 expanded effort); 1 February 1974 jointly funded ORD and OTS program at SRI'
+  period_start: '1972-08'
+  period_end: '1975'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶4'
+  note: 'period_start 1972-08 anchors on the August 1972 OTS $874 demonstration contract per the 1977 Kress paper. period_end 1975 anchors on the 1993 DIA STAR GATE Project Overview attestation: ''Then funding was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA''. Puthoff''s broader SRI head role continued beyond the CIA-sponsorship window — see p1 for the umbrella SRI investigation. This entry isolates the specific CIA-funded sub-program documented in the Kress paper.'
+
+- id: p3
+  added_date: '2026-05-16'
+  program: 'Advanced Aerospace Threat Identification Program (AATIP)'
+  role: 'Former Senior Advisor and Subcontractor (per the 2018-07-26 TTSA ADAM Research Project announcement) and contractor for the program (per the 2017-12-16 NYT article)'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: news/ttsa-blog-adam-research-project-intro-20180727.html
+    location: '¶ on TTSA-EarthTech ADAM contract'
+  note: 'The 2018-07-26 TTSA ADAM Research Project announcement attests: ''Dr. Harold E. Puthoff, a former Senior Advisor and Subcontractor to the Pentagon''s AATIP program (Advanced Aerospace Threat Identification Program)''. The 2017-12-16 NYT article corroborates Puthoff as a contractor for the AATIP program. period_start / period_end intentionally absent — the AATIP program ran 2007-2012 per the same NYT article; Puthoff''s specific subcontractor engagement window with AATIP is not attested precisely in the archived sources.'
+
+- id: p4
+  added_date: '2026-05-16'
+  program: 'ADAM Research Project (Acquisition and Data Analysis of Materials), To The Stars Academy of Arts & Science'
+  role: 'Project leader (per the 2018-07-26 TTSA blog post: ''Under the leadership of Dr. Harold E. Puthoff''); also continues in the role of VP of Technology for TTS Academy at the time of the announcement'
+  period_start: '2018-07-26'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: news/ttsa-blog-adam-research-project-intro-20180727.html
+    location: '¶ on TTSA-EarthTech ADAM contract'
+  note: 'period_start 2018-07-26 anchors on the TTSA blog post announcing the ADAM Research Project under Puthoff''s leadership. EarthTech International is the contracted research think tank evaluating the materials. The 2025-02-28 TTSA press-and-news post on the ORNL counter-analysis attests the program''s continuing material-analysis work via the September 27, 2024 Puthoff/Davis memorandum to the TTSA Board of Directors. period_end intentionally absent — the 2025 TTSA filing attests continuing operations.'

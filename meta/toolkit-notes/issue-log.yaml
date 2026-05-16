@@ -10108,3 +10108,343 @@
     key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
   tokens: [2024-01-19]
 
+- ts: 2026-05-16T03:27:16Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T03:27:16Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T10:41:49Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 5 significant token(s) not in source (prose-drift check — contributor review): 2018-01-08, bio, characterizing, homepage, snapshot
+  tokens: [2018-01-08, bio, characterizing, homepage, snapshot]
+
+- ts: 2026-05-16T10:41:49Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 9 significant token(s) not in source (prose-drift check — contributor review): 2017-07-10, 2017-12-16, 2018-07-26, 2025-02-28, blog, foundational, frames, press-and-news, … (+1 more — pass --verbose for full list)
+  tokens: [2017-07-10, 2017-12-16, 2018-07-26, 2025-02-28, blog, foundational, frames, press-and-news, sri-era]
+
+- ts: 2026-05-16T10:41:49Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 35 significant token(s) not in source (prose-drift check — contributor review): 2017-07-10, 2017-12-16, 2018-01-08, acrobat, adobe, as-source, attest, attestation, … (+27 more — pass --verbose for full list)
+  tokens: [2017-07-10, 2017-12-16, 2018-01-08, acrobat, adobe, as-source, attest, attestation, attested, auto-caption, biographical, canonical, carries, character-corruption, characterizing, framing, homepage, lucis, misreads, multiply, naming, nq1, nq2-nq4, nq5, ocr-scan, outlet, plug-in, quirks, render, shorthand, snapshot, source-form-preservation, tag, typo, verbatim]
+
+- ts: 2026-05-16T10:42:02Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 5 significant token(s) not in source (prose-drift check — contributor review): 2018-01-08, bio, characterizing, homepage, snapshot
+  tokens: [2018-01-08, bio, characterizing, homepage, snapshot]
+
+- ts: 2026-05-16T10:42:02Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 9 significant token(s) not in source (prose-drift check — contributor review): 2017-07-10, 2017-12-16, 2018-07-26, 2025-02-28, blog, foundational, frames, press-and-news, … (+1 more — pass --verbose for full list)
+  tokens: [2017-07-10, 2017-12-16, 2018-07-26, 2025-02-28, blog, foundational, frames, press-and-news, sri-era]
+
+- ts: 2026-05-16T10:42:02Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 35 significant token(s) not in source (prose-drift check — contributor review): 2017-07-10, 2017-12-16, 2018-01-08, acrobat, adobe, as-source, attest, attestation, … (+27 more — pass --verbose for full list)
+  tokens: [2017-07-10, 2017-12-16, 2018-01-08, acrobat, adobe, as-source, attest, attestation, attested, auto-caption, biographical, canonical, carries, character-corruption, characterizing, framing, homepage, lucis, misreads, multiply, naming, nq1, nq2-nq4, nq5, ocr-scan, outlet, plug-in, quirks, render, shorthand, snapshot, source-form-preservation, tag, typo, verbatim]
+
+- ts: 2026-05-16T10:46:27Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: error
+  message: |
+    Section 'Affiliations': table rows not in chronological order (saw '– 1967' after '2020-03-08' in 'period' column; earliest first)
+
+- ts: 2026-05-16T10:46:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (61>55): SRI ([`/organizations/stanford-research-institute`]) parapsy...
+
+- ts: 2026-05-16T10:46:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (63>55): TTSA ([`/organizations/ttsa`]) announces the ADAM Research P...
+
+- ts: 2026-05-16T10:46:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (69>55): TTSA ([`/organizations/ttsa`]) homepage snapshot 2022-01-20 ...
+
+- ts: 2026-05-16T10:46:27Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (62>55): Puthoff and Davis ([`/people/eric-davis`]) submit a memorand...
+
+- ts: 2026-05-16T10:46:35Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: error
+  message: |
+    Section 'Affiliations': table rows not in chronological order (saw '– 1967' after '2020-03-08' in 'period' column; earliest first)
+
+- ts: 2026-05-16T10:46:35Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (61>55): SRI ([`/organizations/stanford-research-institute`]) parapsy...
+
+- ts: 2026-05-16T10:46:35Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (63>55): TTSA ([`/organizations/ttsa`]) announces the ADAM Research P...
+
+- ts: 2026-05-16T10:46:35Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (69>55): TTSA ([`/organizations/ttsa`]) homepage snapshot 2022-01-20 ...
+
+- ts: 2026-05-16T10:46:35Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (62>55): Puthoff and Davis ([`/people/eric-davis`]) submit a memorand...
+
+- ts: 2026-05-16T10:48:25Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e16' ('National Security Agency (NSA)') wrap_path '/organizations/nsa' does not appear as a [`/organizations/nsa`] link in the node
+
+- ts: 2026-05-16T10:51:05Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T10:51:05Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T10:52:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T10:52:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T11:13:26Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T11:13:26Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T11:24:19Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T11:24:19Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T11:24:33Z
+  source: validator
+  check: boundary
+  phase: review-coverage
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
+
+- ts: 2026-05-16T11:26:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T11:26:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T11:33:40Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T11:33:40Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
