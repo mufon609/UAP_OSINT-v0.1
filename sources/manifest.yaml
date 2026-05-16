@@ -2945,6 +2945,70 @@
   sha256: 3647b621f6fc0f81a75fef2c3c9e0fad10a13248c1ac7aa364e1bf1598f0c422
   archive_status: 1
   note: 'SRI International official ''About'' page (www.sri.com/about/), retrieved 2026-05-15. SRI''s first-party institutional anchor. Verbatim self-attestation: ''An independent nonprofit R&D institute with deep roots in Silicon Valley''; ''Founded in 1946 as Stanford Research Institute, and independent since 1970, we acquired Sarnoff Corp. (formerly RCA Labs) in 1987 and the Palo Alto Research Center (PARC) in 2023''; ''Today, our 1,500 researchers and professional staff work with government and commercial customers and collaborators''. Identifies current CEO David Parekh, headquarters at 333 Ravenswood Ave, Menlo Park, CA 94025 USA, and the 13,000+ patents / 50+ spin-off companies / 500+ R&D projects per year institutional scale. Page footer carries ''© 2026 SRI INTERNATIONAL'' (canonical legal name). Research divisions named in primary navigation: Advanced Technology & Systems / Biosciences / Education / Information & Computing Sciences / Integrated Systems & Solutions; commercialization arms: Commercial R&D / Ventures / Center for Innovation, Strategy & Policy / Nomura-SRI Innovation Center. Does NOT explicitly attest the date of the rebrand from ''Stanford Research Institute'' to ''SRI International'' — implicit between the 1970 independence event and present-day ''SRI International'' branding. Text-native HTML (WordPress / Yoast SEO); clean extraction via html.parser visible-text walk.'
+- url: https://www.sri.com/about/history/
+  format: html
+  status: archived
+  path: news/sri-com-about-history-1925-1930s-wayback-2004.html
+  archived_date: '2026-05-15'
+  sha256: 9bfa2dc397f7e10f50d29c322eb259416a1388f73685582cf47947e9f5c7c827
+  archive_status: 1
+  note: 'SRI International''s 2004-era history page covering 1925-1930s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+- url: https://www.sri.com/about/history/1940.html
+  format: html
+  status: archived
+  path: news/sri-com-about-history-1940s-wayback-2004.html
+  archived_date: '2026-05-15'
+  sha256: 68188baf8e4f5d97ca926d909110b025433aa27a251403fb3ea4c2c693831b94
+  archive_status: 1
+  note: 'SRI International''s 2004-era history page covering 1940s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1940.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+- url: https://www.sri.com/about/history/1950.html
+  format: html
+  status: archived
+  path: news/sri-com-about-history-1950s-wayback-2004.html
+  archived_date: '2026-05-15'
+  sha256: 1061d3d9c057d7d338ed8f0f7c9c4150d8d9eeb132298f22f816b9027e26eae5
+  archive_status: 1
+  note: 'SRI International''s 2004-era history page covering 1950s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1950.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+- url: https://www.sri.com/about/history/1960.html
+  format: html
+  status: archived
+  path: news/sri-com-about-history-1960s-wayback-2004.html
+  archived_date: '2026-05-15'
+  sha256: 98afff8f04dc048333497f438c41697977c450157a51ba6ff2a12336c08f11a0
+  archive_status: 1
+  note: 'SRI International''s 2004-era history page covering 1960s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1960.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+- url: https://www.sri.com/about/history/1970.html
+  format: html
+  status: archived
+  path: news/sri-com-about-history-1970s-wayback-2004.html
+  archived_date: '2026-05-15'
+  sha256: 0c06a827e2dc05101455023c03a0a93d05dbc1afdaa1192d72c468867caec6d8
+  archive_status: 1
+  note: 'SRI International''s 2004-era history page covering 1970s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1970.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+- url: https://www.sri.com/about/history/1980.html
+  format: html
+  status: archived
+  path: news/sri-com-about-history-1980s-wayback-2004.html
+  archived_date: '2026-05-15'
+  sha256: 1da3ba0a54fc178966c36539b3c90a161d6050a8abc24a65fa29c811049e4dc7
+  archive_status: 1
+  note: 'SRI International''s 2004-era history page covering 1980s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1980.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+- url: https://www.sri.com/about/history/1990.html
+  format: html
+  status: archived
+  path: news/sri-com-about-history-1990s-wayback-2004.html
+  archived_date: '2026-05-15'
+  sha256: 505b7b4c9b00f2ec7d510c35fcd893032c6cf1670c7bd2f82fa3b99bc13d9a02
+  archive_status: 1
+  note: 'SRI International''s 2004-era history page covering 1990s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/1990.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+- url: https://www.sri.com/about/history/2000.html
+  format: html
+  status: archived
+  path: news/sri-com-about-history-2000s-wayback-2004.html
+  archived_date: '2026-05-15'
+  sha256: 2d997f23ac4da6fb3bc8348ec1394c0a752ce924c64499bde42d1c862c02e246
+  archive_status: 1
+  note: 'SRI International''s 2004-era history page covering 2000s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/2000.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
 - url: https://www.sri.com/timeline-of-innovation/
   format: html
   status: archived

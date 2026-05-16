@@ -17,7 +17,7 @@ created: 2026-05-15
 | Founded | 1946 |
 | Headquarters | 333 Ravenswood Ave, Menlo Park, CA 94025 USA |
 | Current Leadership | [`/people/david-parekh`] |
-| Public Status | 501(c)(3) tax-exempt since March 1949 per IRS (EIN 94-1160950). Founded 1946 by Stanford University as Stanford Research Institute; independent since 1970. Now SRI International (per page footer '© 2026 SRI INTERNATIONAL'). Rebrand date not attested in archived sources. FY2024 going concern flag from independent audit. |
+| Public Status | 501(c)(3) tax-exempt since March 1949 per IRS (EIN 94-1160950). Founded 1946 by Stanford University as Stanford Research Institute; independent since 1970; officially renamed SRI International in 1977 (per the 2004-era SRI history page archived in Wayback). FY2024 going concern flag from independent audit. |
 
 ---
 
@@ -37,6 +37,8 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
+| [`/people/charles-a-anderson`] | President (1968 onward) | 1968 | news/sri-com-about-history-1960s-wayback-2004.html | Charles A. Anderson becomes SRI's president in 1968. Succeeded by William F. Miller in 1979. |
+| [`/people/william-f-miller`] | President (1979 onward; succeeded Charles A. Anderson) | 1979 | news/sri-com-about-history-1970s-wayback-2004.html | 1979: William F. Miller becomes SRI's president. Succeeded Charles A. Anderson, who became SRI's president in 1968. |
 | [`/people/ellen-ochoa`] | Board Member | 2023-02-01 | news/propublica-sri-international-941160950-20260515.html |  |
 | [`/people/david-parekh`] | Chief Executive Officer |  | news/sri-international-about-20260515.html |  |
 | [`/people/david-motley`] | Board Chair |  | news/propublica-sri-international-941160950-20260515.html |  |
@@ -47,6 +49,7 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 
 | Name | Role | Period | Source | Note |
 |---|---|---|---|---|
+| [`/people/douglas-engelbart`] | Researcher; led the 1968 first demonstration of personal computing at the Fall Joint Computer Conference | 1968 | news/sri-com-about-history-1960s-wayback-2004.html | Douglas Engelbart and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco in 1968. |
 | [`/people/hal-puthoff`] | Cofounder of the SRI investigation of psychic abilities (with Russell Targ); program head per DIA STAR GATE Project Overview | 1972 – 1990 | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | The SRI program was headed by Dr. H. Puthoff for eleven years per the 1993 DIA STAR GATE Project Overview. Puthoff was a theoretician who became interested in the field in the early 1970s after extensive work in quantum electronics. |
 | [`/people/ingo-swann`] | Foundational SRI remote-viewing subject (1972); New York artist and psychic | 1972 | news/irva-targ-russell-wayback-20250123.html | Per Targ IRVA 2002 talk abstract: "in 1972, New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory" at SRI. |
 | [`/people/russell-targ`] | Cofounder of the SRI investigation of psychic abilities (with Harold E. Puthoff) | 1972-04 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Targ had recently joined the Stanford Research Institute (SRI) as of the April 1972 meeting with CIA personnel from the Office of Scientific Intelligence. Targ is cofounder of the Stanford Research Institute investigation of psychic abilities in the 1970s and 1980s. |
@@ -59,6 +62,54 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 ---
 
 ## Key Passages
+
+### SRI's own first-party attestation of the 1946 founding events: Stanford trustees approve the institute proposal "in principle"; Articles of incorporation for Stanford Research Institute signed and filed with the state of California; nonprofit status granted; eleven SRI directors elected by Stanford trustees. Tightens the prior founding-year-only attestation (q2, q3) with specific institutional steps. Specific within-1946 date for incorporation not attested.
+
+> 1946: Stanford University trustees approve the proposal for a research institute in principle. Articles of incorporation for Stanford Research Institute are signed and filed with the state of California. SRI is granted a nonprofit status, and Stanford University trustees elect eleven SRI directors.
+
+| Field | Value |
+|---|---|
+| Attributed to | SRI International's 2004-era 'History of SRI International, 1940s' page (sri.com/about/history/1940.html), retrieved via Wayback Machine snapshot from 2004, 1946 |
+| Source | [archived source](../sources/news/sri-com-about-history-1940s-wayback-2004.html) |
+| Location | 1946 entry |
+
+---
+
+### SRI's own first-party attestation of Douglas Engelbart's December 1968 personal computing demonstration at the Fall Joint Computer Conference — historically known as the "Mother of All Demos" and the foundational moment for interactive computing (computer mouse, hypertext, video conferencing, etc.). Anchors the computer-mouse SRI claim already in tl2b. Specific December date not attested on this page.
+
+> 1968: Douglas Engelbart and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco.
+
+| Field | Value |
+|---|---|
+| Attributed to | SRI International's 2004-era 'History of SRI International, 1960s' page (sri.com/about/history/1960.html), retrieved via Wayback Machine snapshot from 2004, 1968 |
+| Source | [archived source](../sources/news/sri-com-about-history-1960s-wayback-2004.html) |
+| Location | 1968 entry (Engelbart) |
+
+---
+
+### SRI's own first-party attestation that SRI was the recipient of the first ARPANET login — the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors prior rumor r3 (ARPANET) at a more specific institutional event than the timeline-page entry tl2c. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.
+
+> 1969: SRI receives the first login on the ARPANET, the world's first computer network with flexible routing, and the predecessor to today's Internet.
+
+| Field | Value |
+|---|---|
+| Attributed to | SRI International's 2004-era 'History of SRI International, 1960s' page (sri.com/about/history/1960.html), retrieved via Wayback Machine snapshot from 2004, 1969 |
+| Source | [archived source](../sources/news/sri-com-about-history-1960s-wayback-2004.html) |
+| Location | 1969 entry (ARPANET) |
+
+---
+
+### SRI's own first-party attestation of the 1970 Stanford severance — the specific event marking SRI's transition from Stanford-University-affiliated subsidiary to independent nonprofit. Closes prior gap-list item #8 (1970 Stanford severance circumstances): the live sri.com About / Timeline pages attest the year but not the discrete event; the 2004-era History page does. Specific date within 1970 still not attested in the archived corpus.
+
+> 1970: Stanford Research Institute becomes independent from Stanford University.
+
+| Field | Value |
+|---|---|
+| Attributed to | SRI International's 2004-era 'History of SRI International, 1970s' page (sri.com/about/history/1970.html), retrieved via Wayback Machine snapshot from 2004. Live URL has been removed from the modern sri.com site. |
+| Source | [archived source](../sources/news/sri-com-about-history-1970s-wayback-2004.html) |
+| Location | 1970 entry |
+
+---
 
 ### Peer-reviewed Nature author-affiliation block establishing that the SRI parapsychology investigation operated out of the Electronics and Bioengineering Laboratory at Stanford Research Institute, Menlo Park, California, 94025 — the specific sub-unit and address at SRI. Co-author byline (Targ and Puthoff) confirms the two-person cofounder structure attested by Targ self-attestation (q4).
 
@@ -153,6 +204,18 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 | Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977; footnote 4 cites the contract: "Office of Technical Service Contract 8473, 1 October 1972 (CONFIDENTIAL)" |
 | Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
 | Location | p. 8, ¶6 |
+
+---
+
+### SRI's own first-party attestation of the specific 1977 rename event — closes prior gap-list item #7 and graduates rumor r1 (1977 rename date previously not-primary-source-established). The full year-only date is attested; specific within-1977 date not attested.
+
+> 1977: Stanford Research Institute officially becomes SRI International, with a new logo to reflect the change.
+
+| Field | Value |
+|---|---|
+| Attributed to | SRI International's 2004-era 'History of SRI International, 1970s' page (sri.com/about/history/1970.html), retrieved via Wayback Machine snapshot from 2004, 1977 |
+| Source | [archived source](../sources/news/sri-com-about-history-1970s-wayback-2004.html) |
+| Location | 1977 entry (rename) |
 
 ---
 
@@ -400,12 +463,15 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 
 | Date | Event | Category | Source | Node Link |
 |---|---|---|---|---|
-| 1946 | SRI [`/organizations/stanford-research-institute`] founded by Stanford University [`/organizations/stanford-university`] as the Stanford Research Institute. Specific founding date within 1946 not attested by archived primary sources. | founding | news/sri-international-timeline-of-innovation-20260515.html |  |
+| 1946 | SRI [`/organizations/stanford-research-institute`] founded by Stanford University [`/organizations/stanford-university`] as the Stanford Research Institute. Stanford University trustees approve the proposal in principle; Articles of incorporation signed and filed with the state of California; nonprofit status granted; eleven SRI directors elected by Stanford trustees. Specific within-1946 date not attested. | founding | news/sri-com-about-history-1940s-wayback-2004.html |  |
 | 1949-03 | IRS grants 501(c)(3) tax-exempt status to Stanford Research Institute per ProPublica Nonprofit Explorer (EIN 94-1160950). | governance | news/propublica-sri-international-941160950-20260515.html |  |
 | 1960s | Shakey the Robot — 1960s SRI innovation per the sri.com Timeline of Innovation page 2 (one of nine IEEE Milestones cohort per q23). | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
 | 1960s | The computer mouse and interactive computing — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
 | 1960s | ARPANET — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. Anchors a primary-source attestation of SRI's ARPANET role (graduates rumor r3 partially — body-text attestation now in place from sri.com self-attestation). | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
-| 1970 | SRI becomes independent from Stanford University [`/organizations/stanford-university`]. Specific date within 1970 not attested by archived primary sources. | governance | news/sri-international-about-20260515.html |  |
+| 1968 | Douglas Engelbart [`/people/douglas-engelbart`] and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco — the "Mother of All Demos". | innovation | news/sri-com-about-history-1960s-wayback-2004.html |  |
+| 1968 | Charles A. Anderson [`/people/charles-a-anderson`] becomes SRI's president. | governance | news/sri-com-about-history-1960s-wayback-2004.html |  |
+| 1969 | SRI receives the first login on the ARPANET [`/organizations/arpanet`] — the world's first computer network with flexible routing, and the predecessor to today's Internet. | innovation | news/sri-com-about-history-1960s-wayback-2004.html |  |
+| 1970 | Stanford Research Institute becomes independent from Stanford University [`/organizations/stanford-university`] per the 2004-era SRI history page. Specific within-1970 date not attested. | governance | news/sri-com-about-history-1970s-wayback-2004.html |  |
 | 1970s | Ethernet — 1970s SRI innovation per the sri.com Timeline of Innovation page 3. | innovation | news/sri-international-timeline-of-innovation-page3-20260515.html |  |
 | 1970s | Graphical User Interface (GUI) — 1970s SRI innovation per the sri.com Timeline of Innovation page 3. | innovation | news/sri-international-timeline-of-innovation-page3-20260515.html |  |
 | 1970s | Internetworking — 1970s SRI innovation per the sri.com Timeline of Innovation page 3. | innovation | news/sri-international-timeline-of-innovation-page3-20260515.html |  |
@@ -421,6 +487,8 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 | 1974-10-18 | Targ [`/people/russell-targ`] and Puthoff [`/people/hal-puthoff`] publish [`/documents/nature-1974-targ-puthoff-information-transmission`] "Information transmission under conditions of sensory shielding" in Nature 251, 602–607 (DOI 10.1038/251602a0). Affiliation: Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. | publication | news/nature-1974-targ-puthoff-information-transmission-abstract.html |  |
 | 1975-12-01 | Puthoff [`/people/hal-puthoff`] and Targ [`/people/russell-targ`] publish [`/documents/sri-perceptual-augmentation-techniques-final-report-1975`] "Perceptual Augmentation Techniques: Part Two — Research Report" as the Stanford Research Institute Final Report, cited by AIR 1995. | publication | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |  |
 | 1976-11 | DCI George Bush [`/people/george-h-w-bush`] becomes aware of Soviet visits to Puthoff [`/people/hal-puthoff`] and Targ [`/people/russell-targ`] at SRI; requests and receives briefing on CIA's [`/organizations/cia`] parapsychology investigations. | institutional | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |  |
+| 1977 | Stanford Research Institute officially becomes SRI International, with a new logo to reflect the change, per the 2004-era SRI history page. Specific within-1977 date not attested. | governance | news/sri-com-about-history-1970s-wayback-2004.html |  |
+| 1979 | William F. Miller [`/people/william-f-miller`] becomes SRI's president, succeeding Charles A. Anderson [`/people/charles-a-anderson`]. | governance | news/sri-com-about-history-1970s-wayback-2004.html |  |
 | 1987 | SRI acquires Sarnoff Corp. [`/organizations/sarnoff-corp`] (formerly RCA Labs). Specific date within 1987 not attested. | acquisition | news/sri-international-about-20260515.html |  |
 | 1990 | SRI parapsychology investigation discontinued. FY 1991 Congressional direction for DIA [`/organizations/dia`] establishes successor research at SAIC [`/organizations/saic`] in Menlo Park, CA. | program-termination | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |  |
 | 1995-09-29 | American Institutes for Research [`/organizations/american-institutes-for-research`] publishes [`/documents/air-mumford-evaluation-remote-viewing-1995`] "An Evaluation of Remote Viewing: Research and Applications" — independent government-commissioned evaluation of the Stargate program. Section 3 covers the 1973-1988 SRI experimental record. | external-evaluation | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |  |
@@ -448,18 +516,6 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 
 ---
 
-## Public-Record Claims Without Primary Source
-
-Widely-reported claims that circulate in public discourse but lack primary-source backing in this repository's archive. Contributor-curated; treat as leads, not facts.
-
-### "The Stanford Research Institute was renamed SRI International in 1977."
-
-**Circulates in:** Multiple secondary sources (Wikipedia, third-party SRI histories)
-
-**Investigator note:** The 1977 rename date is widely circulated in secondary sources but is NOT attested by any primary source archived in this repository. The sri.com About and Timeline pages name the 1946 founding and 1970 independence events but do not state when the "Stanford Research Institute → SRI International" rebrand occurred. Government documents in the archived corpus show the institutional name in transition: the 1974 Nature paper uses "Stanford Research Institute"; the 1977 Kress paper uses "Stanford Research Institute (SRI)"; the 1993 DIA STAR GATE Project Overview uses "SRI International" / "SRI-International"; the 1995 AIR evaluation refers to "Stanford Research Institute, later known as SRI International". Graduate when a primary source attesting the specific 1977 rename date is archived (e.g., SRI press release, official corporate filing, or contemporaneous news coverage).
-
----
-
 ## Source-Form Notes
 
 Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
@@ -483,8 +539,10 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ### People
 
+- [`/people/charles-a-anderson`]
 - [`/people/david-motley`]
 - [`/people/david-parekh`]
+- [`/people/douglas-engelbart`]
 - [`/people/edwin-may`]
 - [`/people/ellen-ochoa`]
 - [`/people/ellen-pawlikowski`]
@@ -498,10 +556,12 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/pat-price`]
 - [`/people/russell-targ`]
 - [`/people/suresh-sunderrajan`]
+- [`/people/william-f-miller`]
 
 ### Organizations
 
 - [`/organizations/american-institutes-for-research`]
+- [`/organizations/arpanet`]
 - [`/organizations/cia`]
 - [`/organizations/dia`]
 - [`/organizations/nasa`]

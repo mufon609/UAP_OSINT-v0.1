@@ -9624,3 +9624,36 @@
   message: |
     key_personnel[12] ('kp13'): source.path 'news/propublica-sri-international-941160950-20260515.html' not in sources/manifest.yaml
 
+- ts: 2026-05-16T00:55:14Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[13] ('kp14') note: 5 significant token(s) not in source (prose-drift check — contributor review): attested, presidency, rename, severance, spanned
+  tokens: [attested, presidency, rename, severance, spanned]
+
+- ts: 2026-05-16T00:55:14Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[14] ('kp15') note: 4 significant token(s) not in source (prose-drift check — contributor review): 2004-era, archived, attested, corpus
+  tokens: [2004-era, archived, attested, corpus]
+
+- ts: 2026-05-16T00:55:14Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[15] ('kp16') note: 1 significant token(s) not in source (prose-drift check — contributor review): attested
+  tokens: [attested]
+

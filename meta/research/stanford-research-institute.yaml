@@ -23,6 +23,22 @@ primary_sources:
   format: html
 - path: news/propublica-sri-international-941160950-20260515.html
   format: html
+- path: news/sri-com-about-history-1925-1930s-wayback-2004.html
+  format: html
+- path: news/sri-com-about-history-1940s-wayback-2004.html
+  format: html
+- path: news/sri-com-about-history-1950s-wayback-2004.html
+  format: html
+- path: news/sri-com-about-history-1960s-wayback-2004.html
+  format: html
+- path: news/sri-com-about-history-1970s-wayback-2004.html
+  format: html
+- path: news/sri-com-about-history-1980s-wayback-2004.html
+  format: html
+- path: news/sri-com-about-history-1990s-wayback-2004.html
+  format: html
+- path: news/sri-com-about-history-2000s-wayback-2004.html
+  format: html
 - path: news/espresearch-russell-targ-snapshot.html
   format: html
 - path: news/irva-targ-russell-wayback-20250123.html
@@ -41,7 +57,7 @@ document_intrinsic:
   org_type: 'Independent nonprofit R&D institute'
   headquarters: '333 Ravenswood Ave, Menlo Park, CA 94025 USA'
   current_leadership_path: /people/david-parekh
-  public_status: '501(c)(3) tax-exempt since March 1949 per IRS (EIN 94-1160950). Founded 1946 by Stanford University as Stanford Research Institute; independent since 1970. Now SRI International (per page footer ''© 2026 SRI INTERNATIONAL''). Rebrand date not attested in archived sources. FY2024 going concern flag from independent audit.'
+  public_status: '501(c)(3) tax-exempt since March 1949 per IRS (EIN 94-1160950). Founded 1946 by Stanford University as Stanford Research Institute; independent since 1970; officially renamed SRI International in 1977 (per the 2004-era SRI history page archived in Wayback). FY2024 going concern flag from independent audit.'
 
 context_extrinsic:
   display_title: 'SRI International'
@@ -355,6 +371,61 @@ quotes:
   statement_date: '2025-11-12'
   significance: 'IRS-sourced attestation of SRI International FY2024 balance-sheet position: total assets $409.6M, total liabilities $231.6M, net assets $178.0M. The net-assets / total-liabilities ratio combined with the going-concern flag (q25) frames the financial-stress context — substantial liabilities against a modest net-assets cushion.'
 
+- id: q28
+  added_date: '2026-05-15'
+  text: |
+    1970: Stanford Research Institute becomes independent from Stanford University.
+  source:
+    path: news/sri-com-about-history-1970s-wayback-2004.html
+    location: '1970 entry'
+  context: 'SRI International''s 2004-era ''History of SRI International, 1970s'' page (sri.com/about/history/1970.html), retrieved via Wayback Machine snapshot from 2004. Live URL has been removed from the modern sri.com site.'
+  statement_date: '1970'
+  significance: 'SRI''s own first-party attestation of the 1970 Stanford severance — the specific event marking SRI''s transition from Stanford-University-affiliated subsidiary to independent nonprofit. Closes prior gap-list item #8 (1970 Stanford severance circumstances): the live sri.com About / Timeline pages attest the year but not the discrete event; the 2004-era History page does. Specific date within 1970 still not attested in the archived corpus.'
+
+- id: q29
+  added_date: '2026-05-15'
+  text: |
+    1977: Stanford Research Institute officially becomes SRI International, with a new logo to reflect the change.
+  source:
+    path: news/sri-com-about-history-1970s-wayback-2004.html
+    location: '1977 entry (rename)'
+  context: 'SRI International''s 2004-era ''History of SRI International, 1970s'' page (sri.com/about/history/1970.html), retrieved via Wayback Machine snapshot from 2004'
+  statement_date: '1977'
+  significance: 'SRI''s own first-party attestation of the specific 1977 rename event — closes prior gap-list item #7 and graduates rumor r1 (1977 rename date previously not-primary-source-established). The full year-only date is attested; specific within-1977 date not attested.'
+
+- id: q30
+  added_date: '2026-05-15'
+  text: |
+    1946: Stanford University trustees approve the proposal for a research institute in principle. Articles of incorporation for Stanford Research Institute are signed and filed with the state of California. SRI is granted a nonprofit status, and Stanford University trustees elect eleven SRI directors.
+  source:
+    path: news/sri-com-about-history-1940s-wayback-2004.html
+    location: '1946 entry'
+  context: 'SRI International''s 2004-era ''History of SRI International, 1940s'' page (sri.com/about/history/1940.html), retrieved via Wayback Machine snapshot from 2004'
+  statement_date: '1946'
+  significance: 'SRI''s own first-party attestation of the 1946 founding events: Stanford trustees approve the institute proposal "in principle"; Articles of incorporation for Stanford Research Institute signed and filed with the state of California; nonprofit status granted; eleven SRI directors elected by Stanford trustees. Tightens the prior founding-year-only attestation (q2, q3) with specific institutional steps. Specific within-1946 date for incorporation not attested.'
+
+- id: q31
+  added_date: '2026-05-15'
+  text: |
+    1968: Douglas Engelbart and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco.
+  source:
+    path: news/sri-com-about-history-1960s-wayback-2004.html
+    location: '1968 entry (Engelbart)'
+  context: 'SRI International''s 2004-era ''History of SRI International, 1960s'' page (sri.com/about/history/1960.html), retrieved via Wayback Machine snapshot from 2004'
+  statement_date: '1968'
+  significance: 'SRI''s own first-party attestation of Douglas Engelbart''s December 1968 personal computing demonstration at the Fall Joint Computer Conference — historically known as the "Mother of All Demos" and the foundational moment for interactive computing (computer mouse, hypertext, video conferencing, etc.). Anchors the computer-mouse SRI claim already in tl2b. Specific December date not attested on this page.'
+
+- id: q32
+  added_date: '2026-05-15'
+  text: |
+    1969: SRI receives the first login on the ARPANET, the world's first computer network with flexible routing, and the predecessor to today's Internet.
+  source:
+    path: news/sri-com-about-history-1960s-wayback-2004.html
+    location: '1969 entry (ARPANET)'
+  context: 'SRI International''s 2004-era ''History of SRI International, 1960s'' page (sri.com/about/history/1960.html), retrieved via Wayback Machine snapshot from 2004'
+  statement_date: '1969'
+  significance: 'SRI''s own first-party attestation that SRI was the recipient of the first ARPANET login — the first message from UCLA to SRI in October 1969, foundational to the Internet. Anchors prior rumor r3 (ARPANET) at a more specific institutional event than the timeline-page entry tl2c. The famous "LO" first ARPANET message (incomplete "LOGIN") from UCLA to SRI is the event in question, though the page does not state the date precision.'
+
 entities_referenced:
 
 - id: e1
@@ -627,6 +698,45 @@ entities_referenced:
   wrap_path: '/people/suresh-sunderrajan'
   context_summary: 'Chief Financial Officer of SRI International from 1/19/24 per FY2024 Form 990 (previously President, Commercialization in FY2023). Compensation FY2024: $698,934 per ProPublica. Unbuilt in this repository.'
 
+- id: e29
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Douglas Engelbart'
+  wrap_path: '/people/douglas-engelbart'
+  context_summary: 'SRI researcher; gave the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco in 1968 (q31) — the "Mother of All Demos" that introduced the computer mouse, hypertext, and interactive computing. Subsequently associated with SRI''s Augmentation Research Center. Unbuilt in this repository.'
+  references:
+  - quote_id: q31
+
+- id: e30
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Charles A. Anderson'
+  wrap_path: '/people/charles-a-anderson'
+  context_summary: 'President of SRI from 1968 per the 2004-era SRI history page 1960s ("1968: Charles A. Anderson becomes SRI''s president"). Anderson''s presidency spanned the 1970 Stanford severance and the 1977 SRI International rename. Unbuilt in this repository.'
+
+- id: e31
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'William F. Miller'
+  wrap_path: '/people/william-f-miller'
+  context_summary: 'President of SRI from 1979 per the 2004-era SRI history page 1970s ("1979: William F. Miller becomes SRI''s president"). Succeeded Charles A. Anderson. Unbuilt in this repository.'
+
+- id: e32
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'Stanford University Trustees'
+  wrap_path: '/organizations/stanford-university'
+  context_summary: 'Stanford University Board of Trustees — approved the proposal for an SRI research institute "in principle" in 1946 (q30) and elected eleven SRI directors at founding. The 1970 SRI severance was a Stanford Trustees decision per the SRI 1970s history page (q28). Cross-references the existing /organizations/stanford-university entity (e7).'
+
+- id: e33
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'ARPANET'
+  wrap_path: '/organizations/arpanet'
+  context_summary: 'ARPANET — DARPA-funded packet-switched computer network, predecessor to today''s Internet. Per the 2004-era SRI 1960s history page (q32), SRI received the first login on the ARPANET in 1969. Unbuilt in this repository.'
+  references:
+  - quote_id: q32
+
 naming_quirks:
 
 - id: nq1
@@ -716,19 +826,46 @@ timeline:
   added_date: '2026-05-15'
   date: '1946'
   category: founding
-  event: 'SRI [`/organizations/stanford-research-institute`] founded by Stanford University [`/organizations/stanford-university`] as the Stanford Research Institute. Specific founding date within 1946 not attested by archived primary sources.'
+  event: 'SRI [`/organizations/stanford-research-institute`] founded by Stanford University [`/organizations/stanford-university`] as the Stanford Research Institute. Stanford University trustees approve the proposal in principle; Articles of incorporation signed and filed with the state of California; nonprofit status granted; eleven SRI directors elected by Stanford trustees. Specific within-1946 date not attested.'
   source:
-    path: news/sri-international-timeline-of-innovation-20260515.html
-    location: '¶2'
+    path: news/sri-com-about-history-1940s-wayback-2004.html
+    location: '1946 entry'
+
+- id: tl1a
+  added_date: '2026-05-15'
+  date: '1968'
+  category: innovation
+  event: 'Douglas Engelbart [`/people/douglas-engelbart`] and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco — the "Mother of All Demos".'
+  source:
+    path: news/sri-com-about-history-1960s-wayback-2004.html
+    location: '1968 entry (Engelbart)'
+
+- id: tl1b
+  added_date: '2026-05-15'
+  date: '1968'
+  category: governance
+  event: 'Charles A. Anderson [`/people/charles-a-anderson`] becomes SRI''s president.'
+  source:
+    path: news/sri-com-about-history-1960s-wayback-2004.html
+    location: '1968 entry (Anderson)'
+
+- id: tl1c
+  added_date: '2026-05-15'
+  date: '1969'
+  category: innovation
+  event: 'SRI receives the first login on the ARPANET [`/organizations/arpanet`] — the world''s first computer network with flexible routing, and the predecessor to today''s Internet.'
+  source:
+    path: news/sri-com-about-history-1960s-wayback-2004.html
+    location: '1969 entry (ARPANET)'
 
 - id: tl2
   added_date: '2026-05-15'
   date: '1970'
   category: governance
-  event: 'SRI becomes independent from Stanford University [`/organizations/stanford-university`]. Specific date within 1970 not attested by archived primary sources.'
+  event: 'Stanford Research Institute becomes independent from Stanford University [`/organizations/stanford-university`] per the 2004-era SRI history page. Specific within-1970 date not attested.'
   source:
-    path: news/sri-international-about-20260515.html
-    location: '¶4'
+    path: news/sri-com-about-history-1970s-wayback-2004.html
+    location: '1970 entry (severance)'
 
 - id: tl2a
   added_date: '2026-05-15'
@@ -891,6 +1028,24 @@ timeline:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 15, ¶1'
+
+- id: tl9a
+  added_date: '2026-05-15'
+  date: '1977'
+  category: governance
+  event: 'Stanford Research Institute officially becomes SRI International, with a new logo to reflect the change, per the 2004-era SRI history page. Specific within-1977 date not attested.'
+  source:
+    path: news/sri-com-about-history-1970s-wayback-2004.html
+    location: '1977 entry (rename)'
+
+- id: tl9b
+  added_date: '2026-05-15'
+  date: '1979'
+  category: governance
+  event: 'William F. Miller [`/people/william-f-miller`] becomes SRI''s president, succeeding Charles A. Anderson [`/people/charles-a-anderson`].'
+  source:
+    path: news/sri-com-about-history-1970s-wayback-2004.html
+    location: '1979 entry (Miller presidency)'
 
 - id: tl10
   added_date: '2026-05-15'
@@ -1118,6 +1273,39 @@ key_personnel:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
 
+- id: kp14
+  added_date: '2026-05-15'
+  person_path: /people/charles-a-anderson
+  role: 'President (1968 onward)'
+  leadership_class: director
+  period_start: '1968'
+  source:
+    path: news/sri-com-about-history-1960s-wayback-2004.html
+    location: '1968 entry (Anderson presidency)'
+  note: 'Charles A. Anderson becomes SRI''s president in 1968. Succeeded by William F. Miller in 1979.'
+
+- id: kp15
+  added_date: '2026-05-15'
+  person_path: /people/william-f-miller
+  role: 'President (1979 onward; succeeded Charles A. Anderson)'
+  leadership_class: director
+  period_start: '1979'
+  source:
+    path: news/sri-com-about-history-1970s-wayback-2004.html
+    location: '1979 entry (Miller presidency)'
+  note: '1979: William F. Miller becomes SRI''s president. Succeeded Charles A. Anderson, who became SRI''s president in 1968.'
+
+- id: kp16
+  added_date: '2026-05-15'
+  person_path: /people/douglas-engelbart
+  role: 'Researcher; led the 1968 first demonstration of personal computing at the Fall Joint Computer Conference'
+  leadership_class: other
+  period_start: '1968'
+  source:
+    path: news/sri-com-about-history-1960s-wayback-2004.html
+    location: '1968 entry (Engelbart demo)'
+  note: 'Douglas Engelbart and his SRI team give the first demonstration ever of personal computing at the Fall Joint Computer Conference in San Francisco in 1968.'
+
 org_relationships:
 
 - id: or1
@@ -1174,13 +1362,5 @@ org_relationships:
     location: 'p. 10, ¶3'
   note: 'Per the 1993 DIA STAR GATE Project Overview, Congressional direction in FY 1991 for DIA established new remote-viewing research at Systems Applications International Corporation (SAIC), Menlo Park, CA, after the SRI program was discontinued in 1990. SAIC was the institutional successor for the remote-viewing program, not a peer or partner of SRI.'
 
-rumors:
-
-- id: r1
-  added_date: '2026-05-15'
-  claim: 'The Stanford Research Institute was renamed SRI International in 1977.'
-  status: not-primary-source-established
-  observed_sources:
-  - 'Multiple secondary sources (Wikipedia, third-party SRI histories)'
-  note: 'The 1977 rename date is widely circulated in secondary sources but is NOT attested by any primary source archived in this repository. The sri.com About and Timeline pages name the 1946 founding and 1970 independence events but do not state when the "Stanford Research Institute → SRI International" rebrand occurred. Government documents in the archived corpus show the institutional name in transition: the 1974 Nature paper uses "Stanford Research Institute"; the 1977 Kress paper uses "Stanford Research Institute (SRI)"; the 1993 DIA STAR GATE Project Overview uses "SRI International" / "SRI-International"; the 1995 AIR evaluation refers to "Stanford Research Institute, later known as SRI International". Graduate when a primary source attesting the specific 1977 rename date is archived (e.g., SRI press release, official corporate filing, or contemporaneous news coverage).'
+rumors: []
 
