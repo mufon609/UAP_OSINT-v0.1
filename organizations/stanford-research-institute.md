@@ -318,12 +318,32 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 
 ---
 
+### SRI's first-party framing of its institutional R&D legacy — nine IEEE Milestones (industry-standard third-party recognition of historically-significant technical contributions) anchor the breadth claim. Frames the pages 1-7 decade index of SRI projects spanning 1940s-2020s.
+
+> In our 80-year history, SRI innovations have won numerous awards and accolades, including nine IEEE Milestones, that celebrate human ingenuity and honor the transformative technologies that have shaped our world and inspired generations of innovators.
+
+| Field | Value |
+|---|---|
+| Attributed to | SRI International 'Interactive Timeline of Innovation' page (sri.com/timeline-of-innovation/), retrieved 2026-05-15 — framing paragraph for the decade-by-decade index |
+| Source | [archived source](../sources/news/sri-international-timeline-of-innovation-20260515.html) |
+| Location | ¶3 |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
 |---|---|---|---|---|
 | 1946 | SRI [`/organizations/stanford-research-institute`] founded by Stanford University [`/organizations/stanford-university`] as the Stanford Research Institute. Specific founding date within 1946 not attested by archived primary sources. | founding | news/sri-international-timeline-of-innovation-20260515.html |  |
+| 1960s | Shakey the Robot — 1960s SRI innovation per the sri.com Timeline of Innovation page 2 (one of nine IEEE Milestones cohort per q23). | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
+| 1960s | The computer mouse and interactive computing — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
+| 1960s | ARPANET — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. Anchors a primary-source attestation of SRI's ARPANET role (graduates rumor r3 partially — body-text attestation now in place from sri.com self-attestation). | innovation | news/sri-international-timeline-of-innovation-page2-20260515.html |  |
 | 1970 | SRI becomes independent from Stanford University [`/organizations/stanford-university`]. Specific date within 1970 not attested by archived primary sources. | governance | news/sri-international-about-20260515.html |  |
+| 1970s | Ethernet — 1970s SRI innovation per the sri.com Timeline of Innovation page 3. | innovation | news/sri-international-timeline-of-innovation-page3-20260515.html |  |
+| 1970s | Graphical User Interface (GUI) — 1970s SRI innovation per the sri.com Timeline of Innovation page 3. | innovation | news/sri-international-timeline-of-innovation-page3-20260515.html |  |
+| 1970s | Internetworking — 1970s SRI innovation per the sri.com Timeline of Innovation page 3. | innovation | news/sri-international-timeline-of-innovation-page3-20260515.html |  |
+| 1970s | Natural Language Processing — 1970s SRI innovation per the sri.com Timeline of Innovation page 4. | innovation | news/sri-international-timeline-of-innovation-page4-20260515.html |  |
+| 1970s | 911 emergency call system — 1970s SRI innovation per the sri.com Timeline of Innovation page 4. | innovation | news/sri-international-timeline-of-innovation-page4-20260515.html |  |
 | 1972 | Ingo Swann [`/people/ingo-swann`] joins the SRI parapsychology investigation per Targ IRVA 2002 talk abstract — "New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory". Specific date within 1972 not attested. | program-inception | news/irva-targ-russell-wayback-20250123.html |  |
 | 1972-04 | Russell Targ [`/people/russell-targ`] meets with CIA [`/organizations/cia`] personnel from the Office of Scientific Intelligence (OSI), having "recently joined the Stanford Research Institute (SRI)". First documented CIA-SRI contact initiating the parapsychology investigation. | program-inception | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |  |
 | 1972-08 | OTS project officer contracts for $874 demonstration with Targ [`/people/russell-targ`] and Harold E. Puthoff [`/people/hal-puthoff`] at SRI. First formal CIA contract for the SRI parapsychology investigation. | contract | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf |  |
@@ -337,6 +357,10 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 | 1987 | SRI acquires Sarnoff Corp. [`/organizations/sarnoff-corp`] (formerly RCA Labs). Specific date within 1987 not attested. | acquisition | news/sri-international-about-20260515.html |  |
 | 1990 | SRI parapsychology investigation discontinued. FY 1991 Congressional direction for DIA [`/organizations/dia`] establishes successor research at SAIC [`/organizations/saic`] in Menlo Park, CA. | program-termination | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |  |
 | 1995-09-29 | American Institutes for Research [`/organizations/american-institutes-for-research`] publishes [`/documents/air-mumford-evaluation-remote-viewing-1995`] "An Evaluation of Remote Viewing: Research and Applications" — independent government-commissioned evaluation of the Stargate program. Section 3 covers the 1973-1988 SRI experimental record. | external-evaluation | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |  |
+| 2000s | Artificial intelligence: CALO — 2000s SRI innovation per the sri.com Timeline of Innovation page 6. CALO (Cognitive Assistant that Learns and Organizes) was the SRI-led DARPA program from which the Siri voice assistant spun out. | innovation | news/sri-international-timeline-of-innovation-page6-20260515.html |  |
+| 2000s | Siri — 2000s SRI innovation per the sri.com Timeline of Innovation page 6. Siri (the voice-assistant technology subsequently acquired by Apple Inc. in 2010 per public record; Apple acquisition not attested in the archived corpus). | innovation | news/sri-international-timeline-of-innovation-page6-20260515.html |  |
+| 2010s | NASA Parker Solar Probe — 2010s SRI innovation per the sri.com Timeline of Innovation page 7. SRI instrument contribution to the NASA [`/organizations/nasa`] solar-science mission. | innovation | news/sri-international-timeline-of-innovation-page7-20260515.html |  |
+| 2020s | NASA Europa Clipper — 2020s SRI innovation per the sri.com Timeline of Innovation page 7. SRI instrument contribution to the NASA [`/organizations/nasa`] Jupiter-moon mission. | innovation | news/sri-international-timeline-of-innovation-page7-20260515.html |  |
 | 2023 | SRI receives the Palo Alto Research Center [`/organizations/parc`] (PARC) as a donation. Specific date within 2023 not attested. | acquisition | news/sri-international-timeline-of-innovation-20260515.html |  |
 
 ---
@@ -365,12 +389,6 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 **Circulates in:** Multiple secondary sources (Wikipedia, third-party SRI histories)
 
 **Investigator note:** The 1977 rename date is widely circulated in secondary sources but is NOT attested by any primary source archived in this repository. The sri.com About and Timeline pages name the 1946 founding and 1970 independence events but do not state when the "Stanford Research Institute → SRI International" rebrand occurred. Government documents in the archived corpus show the institutional name in transition: the 1974 Nature paper uses "Stanford Research Institute"; the 1977 Kress paper uses "Stanford Research Institute (SRI)"; the 1993 DIA STAR GATE Project Overview uses "SRI International" / "SRI-International"; the 1995 AIR evaluation refers to "Stanford Research Institute, later known as SRI International". Graduate when a primary source attesting the specific 1977 rename date is archived (e.g., SRI press release, official corporate filing, or contemporaneous news coverage).
-
-### "SRI hosted ARPANET research that was foundational to the Internet."
-
-**Circulates in:** sri.com timeline-of-innovation page meta description: "SRI has lead groundbreaking innovations including ARPANET, Siri, and Motobot."
-
-**Investigator note:** The sri.com Timeline of Innovation page meta description (in HTML head metadata, not body text) mentions ARPANET as an SRI innovation, but the body of both sri.com pages archived here does NOT carry verbatim attestation of SRI's ARPANET role. The metadata is technically primary-source but is page-level summary, not the substantive body content that quotes are extracted from. Graduate when (a) the Timeline page's decade-specific entries are paginated through and the ARPANET entry is reached and extracted, or (b) a separate primary source (e.g., SRI's own ARPANET retrospective) is archived.
 
 ---
 
@@ -412,6 +430,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/american-institutes-for-research`]
 - [`/organizations/cia`]
 - [`/organizations/dia`]
+- [`/organizations/nasa`]
 - [`/organizations/parc`]
 - [`/organizations/saic`]
 - [`/organizations/sarnoff-corp`]

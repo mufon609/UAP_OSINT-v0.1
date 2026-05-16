@@ -2946,6 +2946,54 @@
   archive_status: 3
   note: 'SRI International ''Interactive Timeline of Innovation'' page (www.sri.com/timeline-of-innovation/), retrieved 2026-05-15. SRI''s first-party institutional history index. Verbatim self-attestation of founding and lineage: ''Founded in 1946 by Stanford University as the Stanford Research Institute, and independent since 1970, we''''ve created technologies, services, and ideas that have had a meaningful impact on every one of our lives throughout our history. In 1987, we acquired Sarnoff Corp. (formerly RCA Labs), and in 2023, we received as a donation the Palo Alto Research Center (PARC)''. Tightens the about-page attestation by naming ''Stanford University'' as the 1946 founder explicitly. Timeline entries by decade (1940s through 2020s) name decade-specific SRI innovations (Transmission electron microscope, ARPANET research, Disneyland feasibility studies, ERMA banking automation, optical video disk, etc.) — useful institutional-shape signal but parapsychology investigations are not surfaced on this page (consistent with sri.com positioning post-program). Schema.org Organization block at top of page declares legal name ''SRI International''. Does NOT attest the date of the rebrand from ''Stanford Research Institute'' to ''SRI International''. Text-native HTML (WordPress / Yoast SEO).'
   wayback_date: '2026-04-28'
+- url: https://www.sri.com/timeline-of-innovation/?query-117-page=2
+  format: html
+  status: archived
+  path: news/sri-international-timeline-of-innovation-page2-20260515.html
+  archived_date: '2026-05-15'
+  sha256: 309b9ea0241f8a607c6a7835343ab46b42c3abdf1481fccc5ee0c084807ea725
+  archive_status: 1
+  note: SRI International 'Interactive Timeline of Innovation' page 2 (sri.com/timeline-of-innovation/?query-117-page=2), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 2 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+- url: https://www.sri.com/timeline-of-innovation/?query-117-page=3
+  format: html
+  status: archived
+  path: news/sri-international-timeline-of-innovation-page3-20260515.html
+  archived_date: '2026-05-15'
+  sha256: f9d7de4f6a1189df60f5ff9415876dc55897ac2a54c6ef425646022823bb1340
+  archive_status: 1
+  note: SRI International 'Interactive Timeline of Innovation' page 3 (sri.com/timeline-of-innovation/?query-117-page=3), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 3 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+- url: https://www.sri.com/timeline-of-innovation/?query-117-page=4
+  format: html
+  status: archived
+  path: news/sri-international-timeline-of-innovation-page4-20260515.html
+  archived_date: '2026-05-15'
+  sha256: f1d51152504ca00a9eb1612c312363a239bbc3ef94f2ae6e56c05c5107ef3d90
+  archive_status: 1
+  note: SRI International 'Interactive Timeline of Innovation' page 4 (sri.com/timeline-of-innovation/?query-117-page=4), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 4 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+- url: https://www.sri.com/timeline-of-innovation/?query-117-page=5
+  format: html
+  status: archived
+  path: news/sri-international-timeline-of-innovation-page5-20260515.html
+  archived_date: '2026-05-15'
+  sha256: f68be1e68e749bbc6eea37b5dd4862467635ff1efede1d1904494a26fc122aec
+  archive_status: 1
+  note: SRI International 'Interactive Timeline of Innovation' page 5 (sri.com/timeline-of-innovation/?query-117-page=5), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 5 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+- url: https://www.sri.com/timeline-of-innovation/?query-117-page=6
+  format: html
+  status: archived
+  path: news/sri-international-timeline-of-innovation-page6-20260515.html
+  archived_date: '2026-05-15'
+  sha256: a7d157496e6700834a45b98efe4ed1bf55f7e1d50788785e66b586ee778f17e3
+  archive_status: 1
+  note: SRI International 'Interactive Timeline of Innovation' page 6 (sri.com/timeline-of-innovation/?query-117-page=6), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 6 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+- url: https://www.sri.com/timeline-of-innovation/?query-117-page=7
+  format: html
+  status: archived
+  path: news/sri-international-timeline-of-innovation-page7-20260515.html
+  archived_date: '2026-05-15'
+  sha256: bf273f4c6df89b4f617c0ae59d84f00e877504685ae70aabb704114f474b3b71
+  archive_status: 1
+  note: SRI International 'Interactive Timeline of Innovation' page 7 (sri.com/timeline-of-innovation/?query-117-page=7), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 7 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
 - url: https://www.theblackvault.com/documentarchive/dod-announces-the-establishment-of-the-all-domain-anomaly-resolution-office-july-20-2022/
   format: html
   status: archived

@@ -9,6 +9,18 @@ primary_sources:
   format: html
 - path: news/sri-international-timeline-of-innovation-20260515.html
   format: html
+- path: news/sri-international-timeline-of-innovation-page2-20260515.html
+  format: html
+- path: news/sri-international-timeline-of-innovation-page3-20260515.html
+  format: html
+- path: news/sri-international-timeline-of-innovation-page4-20260515.html
+  format: html
+- path: news/sri-international-timeline-of-innovation-page5-20260515.html
+  format: html
+- path: news/sri-international-timeline-of-innovation-page6-20260515.html
+  format: html
+- path: news/sri-international-timeline-of-innovation-page7-20260515.html
+  format: html
 - path: news/espresearch-russell-targ-snapshot.html
   format: html
 - path: news/irva-targ-russell-wayback-20250123.html
@@ -276,6 +288,16 @@ quotes:
   statement_date: '1995-09-29'
   significance: 'AIR independent evaluation''s headline statistical finding from the 1988 SRI internal analysis of 1973-1988 experiments (q15): the overall p-value was less than 10-20, motivating the conclusion that "some explanation other than chance must be found." AIR Section 3.3 notes that methodological problems in early experiments cannot account for the result because the same level of functioning persisted in later, methodologically-improved experiments.'
 
+- id: q23
+  added_date: '2026-05-15'
+  text: |
+    In our 80-year history, SRI innovations have won numerous awards and accolades, including nine IEEE Milestones, that celebrate human ingenuity and honor the transformative technologies that have shaped our world and inspired generations of innovators.
+  source:
+    path: news/sri-international-timeline-of-innovation-20260515.html
+    location: '¶3'
+  context: 'SRI International ''Interactive Timeline of Innovation'' page (sri.com/timeline-of-innovation/), retrieved 2026-05-15 — framing paragraph for the decade-by-decade index'
+  significance: 'SRI''s first-party framing of its institutional R&D legacy — nine IEEE Milestones (industry-standard third-party recognition of historically-significant technical contributions) anchor the breadth claim. Frames the pages 1-7 decade index of SRI projects spanning 1940s-2020s.'
+
 entities_referenced:
 
 - id: e1
@@ -499,6 +521,13 @@ entities_referenced:
   references:
   - quote_id: q18
 
+- id: e22
+  added_date: '2026-05-15'
+  entity_type: organization
+  name: 'National Aeronautics and Space Administration'
+  wrap_path: '/organizations/nasa'
+  context_summary: 'NASA — collaboration partner on the Parker Solar Probe (2010s, sri.com Timeline page 7) and Europa Clipper (2020s, sri.com Timeline page 7) missions per SRI''s self-attestation in the Timeline of Innovation. Also referenced in the Targ IRVA biography (q5) which attests Targ received "two National Aeronautics and Space-Administration awards for inventions and contributions to lasers and laser communications". Unbuilt in this repository.'
+
 naming_quirks:
 
 - id: nq1
@@ -601,6 +630,78 @@ timeline:
   source:
     path: news/sri-international-about-20260515.html
     location: '¶4'
+
+- id: tl2a
+  added_date: '2026-05-15'
+  date: '1960s'
+  category: innovation
+  event: 'Shakey the Robot — 1960s SRI innovation per the sri.com Timeline of Innovation page 2 (one of nine IEEE Milestones cohort per q23).'
+  source:
+    path: news/sri-international-timeline-of-innovation-page2-20260515.html
+    location: '1960s entries section'
+
+- id: tl2b
+  added_date: '2026-05-15'
+  date: '1960s'
+  category: innovation
+  event: 'The computer mouse and interactive computing — 1960s SRI innovation per the sri.com Timeline of Innovation page 2.'
+  source:
+    path: news/sri-international-timeline-of-innovation-page2-20260515.html
+    location: '1960s entries section'
+
+- id: tl2c
+  added_date: '2026-05-15'
+  date: '1960s'
+  category: innovation
+  event: 'ARPANET — 1960s SRI innovation per the sri.com Timeline of Innovation page 2. Anchors a primary-source attestation of SRI''s ARPANET role (graduates rumor r3 partially — body-text attestation now in place from sri.com self-attestation).'
+  source:
+    path: news/sri-international-timeline-of-innovation-page2-20260515.html
+    location: '1960s entries section'
+
+- id: tl2d
+  added_date: '2026-05-15'
+  date: '1970s'
+  category: innovation
+  event: 'Ethernet — 1970s SRI innovation per the sri.com Timeline of Innovation page 3.'
+  source:
+    path: news/sri-international-timeline-of-innovation-page3-20260515.html
+    location: '1970s entries section'
+
+- id: tl2e
+  added_date: '2026-05-15'
+  date: '1970s'
+  category: innovation
+  event: 'Graphical User Interface (GUI) — 1970s SRI innovation per the sri.com Timeline of Innovation page 3.'
+  source:
+    path: news/sri-international-timeline-of-innovation-page3-20260515.html
+    location: '1970s entries section'
+
+- id: tl2f
+  added_date: '2026-05-15'
+  date: '1970s'
+  category: innovation
+  event: 'Internetworking — 1970s SRI innovation per the sri.com Timeline of Innovation page 3.'
+  source:
+    path: news/sri-international-timeline-of-innovation-page3-20260515.html
+    location: '1970s entries section'
+
+- id: tl2g
+  added_date: '2026-05-15'
+  date: '1970s'
+  category: innovation
+  event: 'Natural Language Processing — 1970s SRI innovation per the sri.com Timeline of Innovation page 4.'
+  source:
+    path: news/sri-international-timeline-of-innovation-page4-20260515.html
+    location: '1970s entries section'
+
+- id: tl2h
+  added_date: '2026-05-15'
+  date: '1970s'
+  category: innovation
+  event: '911 emergency call system — 1970s SRI innovation per the sri.com Timeline of Innovation page 4.'
+  source:
+    path: news/sri-international-timeline-of-innovation-page4-20260515.html
+    location: '1970s entries section'
 
 - id: tl3
   added_date: '2026-05-15'
@@ -719,6 +820,33 @@ timeline:
     path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
     location: 'Cover page'
 
+- id: tl12a
+  added_date: '2026-05-15'
+  date: '2000s'
+  category: innovation
+  event: 'Artificial intelligence: CALO — 2000s SRI innovation per the sri.com Timeline of Innovation page 6. CALO (Cognitive Assistant that Learns and Organizes) was the SRI-led DARPA program from which the Siri voice assistant spun out.'
+  source:
+    path: news/sri-international-timeline-of-innovation-page6-20260515.html
+    location: '2000s entries section'
+
+- id: tl12b
+  added_date: '2026-05-15'
+  date: '2000s'
+  category: innovation
+  event: 'Siri — 2000s SRI innovation per the sri.com Timeline of Innovation page 6. Siri (the voice-assistant technology subsequently acquired by Apple Inc. in 2010 per public record; Apple acquisition not attested in the archived corpus).'
+  source:
+    path: news/sri-international-timeline-of-innovation-page6-20260515.html
+    location: '2000s entries section'
+
+- id: tl12c
+  added_date: '2026-05-15'
+  date: '2010s'
+  category: innovation
+  event: 'NASA Parker Solar Probe — 2010s SRI innovation per the sri.com Timeline of Innovation page 7. SRI instrument contribution to the NASA [`/organizations/nasa`] solar-science mission.'
+  source:
+    path: news/sri-international-timeline-of-innovation-page7-20260515.html
+    location: '2010s entries section'
+
 - id: tl13
   added_date: '2026-05-15'
   date: '2023'
@@ -727,6 +855,15 @@ timeline:
   source:
     path: news/sri-international-timeline-of-innovation-20260515.html
     location: '¶2'
+
+- id: tl14
+  added_date: '2026-05-15'
+  date: '2020s'
+  category: innovation
+  event: 'NASA Europa Clipper — 2020s SRI innovation per the sri.com Timeline of Innovation page 7. SRI instrument contribution to the NASA [`/organizations/nasa`] Jupiter-moon mission.'
+  source:
+    path: news/sri-international-timeline-of-innovation-page7-20260515.html
+    location: '2020s entries section'
 
 key_personnel:
 
@@ -874,10 +1011,3 @@ rumors:
   - 'Multiple secondary sources (Wikipedia, third-party SRI histories)'
   note: 'The 1977 rename date is widely circulated in secondary sources but is NOT attested by any primary source archived in this repository. The sri.com About and Timeline pages name the 1946 founding and 1970 independence events but do not state when the "Stanford Research Institute → SRI International" rebrand occurred. Government documents in the archived corpus show the institutional name in transition: the 1974 Nature paper uses "Stanford Research Institute"; the 1977 Kress paper uses "Stanford Research Institute (SRI)"; the 1993 DIA STAR GATE Project Overview uses "SRI International" / "SRI-International"; the 1995 AIR evaluation refers to "Stanford Research Institute, later known as SRI International". Graduate when a primary source attesting the specific 1977 rename date is archived (e.g., SRI press release, official corporate filing, or contemporaneous news coverage).'
 
-- id: r3
-  added_date: '2026-05-15'
-  claim: 'SRI hosted ARPANET research that was foundational to the Internet.'
-  status: not-primary-source-established
-  observed_sources:
-  - 'sri.com timeline-of-innovation page meta description: "SRI has lead groundbreaking innovations including ARPANET, Siri, and Motobot."'
-  note: 'The sri.com Timeline of Innovation page meta description (in HTML head metadata, not body text) mentions ARPANET as an SRI innovation, but the body of both sri.com pages archived here does NOT carry verbatim attestation of SRI''s ARPANET role. The metadata is technically primary-source but is page-level summary, not the substantive body content that quotes are extracted from. Graduate when (a) the Timeline page''s decade-specific entries are paginated through and the ARPANET entry is reached and extracted, or (b) a separate primary source (e.g., SRI''s own ARPANET retrospective) is archived.'
