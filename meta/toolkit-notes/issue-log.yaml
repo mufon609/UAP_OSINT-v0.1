@@ -9838,3 +9838,273 @@
   message: |
     Quote at line 249 NOT FOUND in sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf: "Then funding was discontinued in 1975; subsequent funding for RV investigation a..."
 
+- ts: 2026-05-16T02:30:34Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 4 significant token(s) not in source (prose-drift check — contributor review): 2004-era, attests, engagement, ran
+  tokens: [2004-era, attests, engagement, ran]
+
+- ts: 2026-05-16T02:30:34Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[7] ('kp8') note: 7 significant token(s) not in source (prose-drift check — contributor review): archived, attested, attests, captures, fy2022, fy2023, fy2024
+  tokens: [archived, attested, attests, captures, fy2022, fy2023, fy2024]
+
+- ts: 2026-05-16T02:30:34Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[8] ('kp9') note: 6 significant token(s) not in source (prose-drift check — contributor review): 2023-02-01, board-start, fy2023, fy2024, parenthetical, primary-source-attested
+  tokens: [2023-02-01, board-start, fy2023, fy2024, parenthetical, primary-source-attested]
+
+- ts: 2026-05-16T02:30:34Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[9] ('kp10') note: 7 significant token(s) not in source (prose-drift check — contributor review): archived, attested, board-start, captures, fy2022, fy2023, fy2024
+  tokens: [archived, attested, board-start, captures, fy2022, fy2023, fy2024]
+
+- ts: 2026-05-16T02:30:34Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[10] ('kp11') note: 8 significant token(s) not in source (prose-drift check — contributor review): archived, attested, board-start, captures, fy2021, fy2022, fy2023, fy2024
+  tokens: [archived, attested, board-start, captures, fy2021, fy2022, fy2023, fy2024]
+
+- ts: 2026-05-16T02:30:34Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[11] ('kp12') note: 10 significant token(s) not in source (prose-drift check — contributor review): archived, attested, captures, fy2021, fy2022, fy2023, fy2024, middle-initial, … (+2 more — pass --verbose for full list)
+  tokens: [archived, attested, captures, fy2021, fy2022, fy2023, fy2024, middle-initial, role-start, variance]
+
+- ts: 2026-05-16T02:30:36Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (63>55): Pat Price [`/people/pat-price`] arrives at SRI in early-to-m...
+
+- ts: 2026-05-16T02:30:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 4 significant token(s) not in source (prose-drift check — contributor review): 2004-era, attests, engagement, ran
+  tokens: [2004-era, attests, engagement, ran]
+
+- ts: 2026-05-16T02:30:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[7] ('kp8') note: 7 significant token(s) not in source (prose-drift check — contributor review): archived, attested, attests, captures, fy2022, fy2023, fy2024
+  tokens: [archived, attested, attests, captures, fy2022, fy2023, fy2024]
+
+- ts: 2026-05-16T02:30:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[8] ('kp9') note: 6 significant token(s) not in source (prose-drift check — contributor review): 2023-02-01, board-start, fy2023, fy2024, parenthetical, primary-source-attested
+  tokens: [2023-02-01, board-start, fy2023, fy2024, parenthetical, primary-source-attested]
+
+- ts: 2026-05-16T02:30:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[9] ('kp10') note: 7 significant token(s) not in source (prose-drift check — contributor review): archived, attested, board-start, captures, fy2022, fy2023, fy2024
+  tokens: [archived, attested, board-start, captures, fy2022, fy2023, fy2024]
+
+- ts: 2026-05-16T02:30:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[10] ('kp11') note: 8 significant token(s) not in source (prose-drift check — contributor review): archived, attested, board-start, captures, fy2021, fy2022, fy2023, fy2024
+  tokens: [archived, attested, board-start, captures, fy2021, fy2022, fy2023, fy2024]
+
+- ts: 2026-05-16T02:30:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[11] ('kp12') note: 10 significant token(s) not in source (prose-drift check — contributor review): archived, attested, captures, fy2021, fy2022, fy2023, fy2024, middle-initial, … (+2 more — pass --verbose for full list)
+  tokens: [archived, attested, captures, fy2021, fy2022, fy2023, fy2024, middle-initial, role-start, variance]
+
+- ts: 2026-05-16T02:30:46Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (63>55): Pat Price [`/people/pat-price`] arrives at SRI in early-to-m...
+
+- ts: 2026-05-16T02:35:48Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (63>55): Pat Price [`/people/pat-price`] arrives at SRI in early-to-m...
+
+- ts: 2026-05-16T02:35:59Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (63>55): Pat Price [`/people/pat-price`] arrives at SRI in early-to-m...
+
+- ts: 2026-05-16T02:36:07Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (63>55): Pat Price [`/people/pat-price`] arrives at SRI in early-to-m...
+
+- ts: 2026-05-16T02:59:54Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T02:59:54Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T03:01:27Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T03:01:27Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T03:16:40Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T03:16:40Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T03:18:13Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T03:18:13Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+

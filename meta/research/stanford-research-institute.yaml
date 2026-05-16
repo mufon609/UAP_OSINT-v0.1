@@ -64,10 +64,10 @@ document_intrinsic:
 context_extrinsic:
   display_title: 'SRI International'
 
-description: 'SRI International ([`/organizations/stanford-research-institute`]) is an independent nonprofit R&D institute with deep roots in Silicon Valley, at 333 Ravenswood Ave, Menlo Park, CA 94025. Founded in 1946 by Stanford University ([`/organizations/stanford-university`]) as the Stanford Research Institute, and independent since 1970, SRI has 1,500 researchers and professional staff who work with government and commercial customers and collaborators. In 1987, SRI acquired Sarnoff Corp. ([`/organizations/sarnoff-corp`]) (formerly RCA Labs); in 2023, it received as a donation the Palo Alto Research Center ([`/organizations/parc`]) (PARC). David Parekh ([`/people/david-parekh`]) is Chief Executive Officer. The institute reports 13,000+ patents filed, 50+ spin-off companies, and 500+ R&D projects per year. Research covers Advanced Technology & Systems, Biosciences, Education, Information & Computing Sciences, and Integrated Systems & Solutions; commercialization activities include Commercial R&D, Ventures, Center for Innovation, Strategy & Policy, and the Nomura-SRI Innovation Center.
+description: 'SRI International ([`/organizations/stanford-research-institute`]) is an independent nonprofit R&D institute with deep roots in Silicon Valley, at 333 Ravenswood Ave, Menlo Park, CA 94025. The institute was founded in 1946 by Stanford University ([`/organizations/stanford-university`]) as the Stanford Research Institute, became independent in 1970, and officially became SRI International in 1977 per the SRI history page; SRI has 1,500 researchers and professional staff who work with government and commercial customers and collaborators. In 1987, SRI acquired Sarnoff Corp. ([`/organizations/sarnoff-corp`]) (formerly RCA Labs); in 2023, it received as a donation the Palo Alto Research Center ([`/organizations/parc`]) (PARC). David Parekh ([`/people/david-parekh`]) is Chief Executive Officer. The institute reports 13,000+ patents filed, 50+ spin-off companies, and 500+ R&D projects per year. Research covers Advanced Technology & Systems, Biosciences, Education, Information & Computing Sciences, and Integrated Systems & Solutions; commercialization activities include Commercial R&D, Ventures, Center for Innovation, Strategy & Policy, and the Nomura-SRI Innovation Center.
 
 
-  From 1972 through 1990, the SRI International parapsychology and remote viewing research program in Menlo Park, CA was funded by the Central Intelligence Agency through 1975 and then by DIA and DIA''s service support elements with occasional support from various R&D organizations per the 1993 DIA STAR GATE Project Overview, with Russell Targ ([`/people/russell-targ`]) and Harold E. Puthoff ([`/people/hal-puthoff`]) — two physicists who re-awakened CIA research in parapsychology per Kress 1977. Per the 1977 Studies in Intelligence article [`/documents/kress-parapsychology-in-intelligence-1977`] by Kenneth A. Kress ([`/people/kenneth-kress`]) — a CIA ([`/organizations/cia`]) Operations Officer in the Office of Technical Service — Targ met with CIA personnel from the Office of Scientific Intelligence in April 1972 having "recently joined the Stanford Research Institute (SRI)"; an OTS project officer contracted for a demonstration with Targ and Puthoff at SRI in August 1972 for $874, the first action in the CIA work at SRI. Targ and Puthoff''s 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] ''Information transmission under conditions of sensory shielding'' places the work at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview [`/documents/dia-stargate-project-overview-1993`], the effort at SRI was discontinued in 1990 and Congressional direction in FY 1991 for DIA established new research at Science Applications International Corporation (SAIC) ([`/organizations/saic`]) in Menlo Park, CA. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviewed the 1973-1988 SRI experiments — 154 experiments and over 26,000 individual trials with 227 subjects — and described the program as headed for eleven years by Dr. H. Puthoff.
+  Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview (KEY US RESEARCH EFFORTS table), the SRI International parapsychology and remote viewing research program is listed for 1970-1990 in Menlo Park, CA; documented CIA work at SRI began in April 1972 per Kress 1977. The program was funded by the Central Intelligence Agency through 1975 and then by DIA and DIA''s service support elements with occasional support from various R&D organizations per the 1993 DIA STAR GATE Project Overview, with Targ and Harold E. Puthoff ([`/people/hal-puthoff`]) — two laser physicists who re-awakened CIA research in parapsychology per Kress 1977. Per the 1977 Studies in Intelligence article [`/documents/kress-parapsychology-in-intelligence-1977`] by Kenneth A. Kress ([`/people/kenneth-kress`]) — a CIA ([`/organizations/cia`]) Operations Officer in the Office of Technical Service — Targ met with CIA personnel from the Office of Scientific Intelligence in April 1972 having "recently joined the Stanford Research Institute (SRI)"; an OTS project officer contracted for a demonstration with Targ and Puthoff at SRI in August 1972 for $874, the first action in the CIA work at SRI. Targ and Puthoff''s 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] ''Information transmission under conditions of sensory shielding'' places the work at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per the 1993 DIA STAR GATE Project Overview [`/documents/dia-stargate-project-overview-1993`], the effort at SRI was discontinued in 1990 and Congressional direction in FY 1991 for DIA established new research at Science Applications International Corporation (SAIC) ([`/organizations/saic`]) in Menlo Park, CA. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviewed the 1973-1988 SRI experiments — 154 experiments and over 26,000 individual trials with 227 subjects; the 1993 DIA STAR GATE Project Overview separately characterized the program as headed for eleven years by Dr. H. Puthoff.
 
   '
 
@@ -198,7 +198,7 @@ quotes:
     location: 'p. 10, ¶3'
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993'
   statement_date: '1993-04-30'
-  significance: 'DIA institutional attestation of the 1990 termination of the SRI International parapsychology investigation and the immediate FY 1991 Congressional re-establishment of the research at Systems Applications International Corporation (SAIC) in Menlo Park, CA. Anchors the outer bound of the SRI program window (1970-1990 per Figure 1 of the same document).'
+  significance: 'DIA institutional attestation of the 1990 termination of the SRI International parapsychology investigation and the immediate FY 1991 Congressional re-establishment of the research at Systems Applications International Corporation (SAIC) in Menlo Park, CA. Anchors the outer bound of the SRI program window (1970-1990 per Figure 1 of the same document — see q12c for the verbatim Figure 1 row attestation). Source-form artifact: the DIA document writes "Systems Applications International Corporation" — a documented writing error against the canonical company name "Science Applications International Corporation" — preserved as-source; see naming_quirks nq12.'
 
 - id: q13
   added_date: '2026-05-15'
@@ -209,7 +209,7 @@ quotes:
     location: 'p. 22, ¶1'
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993 — Section on SRI Studies in Remote Viewing: A Program Review'
   statement_date: '1993-04-30'
-  significance: 'DIA characterization of the SRI program leadership: "headed by Dr. H. Puthoff" over the eleven-year window referenced. The OCR-scan PDF preserves the typewriter-source spacing artifacts (extra whitespace between words consistent with typewriter-rendered text on the original 1993 document). Independent corroboration of Puthoff''s leadership role attested by Kress 1977 (q7) and AIR 1995 (q15).'
+  significance: 'DIA characterization of the SRI program leadership: "headed by Dr. H. Puthoff" over the eleven-year window referenced. The OCR-scan PDF preserves the typewriter-source spacing artifacts (extra whitespace between words consistent with typewriter-rendered text on the original 1993 document). Kress 1977 (q7) corroborates Puthoff''s broader role at SRI (two laser physicists who re-awakened CIA research in parapsychology, alongside Targ) but does not specifically characterize Puthoff as program leader; AIR 1995 (q15) attests the 1973-1988 experimental scale (154 experiments, 26,000+ trials, 227 subjects) but does not separately attest Puthoff''s program-leadership role.'
 
 - id: q14
   added_date: '2026-05-15'
@@ -242,7 +242,7 @@ quotes:
     location: 'p. 9, ¶1'
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
   statement_date: '1977'
-  significance: 'CIA primary-source attestation of Pat Price as the third sensitive subject at SRI (February–May 1973 window per the surrounding Kress narrative — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time"), and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. The "third sensitive subject" framing implies first and second exist: the first (the magnetometer subject in q8) is identified as Ingo Swann per Targ''s IRVA 2002 retrospective (q17); the unnamed second subject between Swann and Price is not attested in the archived corpus. Source-form artifacts: "a~ailable" for "available" (OCR tilde-for-v misread); "ORO" recurring (already nq5); "tum" recurring (already nq7); hanging "S" footnote marker. See naming_quirks nq5, nq7, nq9.'
+  significance: 'CIA primary-source attestation of Pat Price as the third sensitive subject at SRI in early-to-mid 1973 per the surrounding Kress narrative ordering — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time" — and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. Specific Price arrival date not attested in the Kress paper; February 1973 is the inner bound (Project Officer rotation), and Kress narrative ordering places Price after the rotation but before the 1974-1975 controlled experiments described in q14. The "third sensitive subject" framing implies first and second exist: the first (the magnetometer subject in q8) is identified as Ingo Swann per Targ''s IRVA 2002 retrospective (q17); the unnamed second subject between Swann and Price is not attested in the archived corpus. Source-form artifacts: "a~ailable" for "available" (OCR tilde-for-v misread); "ORO" recurring (already nq5); "tum" recurring (already nq7); hanging "S" footnote marker. See naming_quirks nq5, nq7, nq9.'
 
 - id: q17
   added_date: '2026-05-15'
@@ -317,7 +317,18 @@ quotes:
     location: 'p. 10, ¶1 (continuation)'
   context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993 — Section III narrative continuing from q11'
   statement_date: '1993-04-30'
-  significance: 'DIA institutional attestation of the 1975 CIA-funding-discontinuation date for the SRI parapsychology investigation, and of the post-1975 funding chain — "DIA and some of DIA''s service support elements with occasional support from various R&D organizations" (the service support elements include the Air Force Foreign Technology Division and Army INSCOM, per Section III''s later detail attesting "HQDA/INSCOM established a small unit" late 1970s, transferred to DIA 1986 as the SUN STREAK SAP). Source carries the same "SRI-International" hyphenated form recorded in nq8.'
+  significance: 'DIA institutional attestation of the 1975 CIA-funding-discontinuation date for the SRI parapsychology investigation, and of the post-1975 funding chain — "DIA and some of DIA''s service support elements with occasional support from various R&D organizations" (the service support elements include the Air Force Foreign Technology Division and Army INSCOM, per Section III''s later detail attesting "HQDA/INSCOM established a small unit" late 1970s, transferred to DIA 1986 as the SUN STREAK SAP).'
+
+- id: q12c
+  added_date: '2026-05-15'
+  text: |
+    1970-1990 --SRI INTERNATIONAL, MENLO PARK, CA
+  source:
+    path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+    location: 'Figure 1 (KEY US RESEARCH EFFORTS table), p. 7'
+  context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993 — Figure 1 (KEY US RESEARCH EFFORTS table) row entry for SRI International'
+  statement_date: '1993-04-30'
+  significance: 'DIA institutional primary-source attestation of the 1970-1990 SRI International program window in the KEY US RESEARCH EFFORTS table of Figure 1. Anchors the program-level outer bound previously referenced parenthetically in q12 significance to a directly-quoted Figure 1 row. The 1970 program-start predates the documented April 1972 Targ-CIA OSI engagement attested by Kress 1977 (q8) — i.e., the DIA Figure 1 program window starts two years earlier than the documented CIA-engagement onset. Source-form artifact: the Figure 1 row spans multiple visual columns in the source PDF; the default pdftotext extraction renders the row with "--SRI" (no space between dashes and SRI) and the verbatim form is preserved as-source per source-form-preservation discipline.'
 
 - id: q23
   added_date: '2026-05-15'
@@ -671,7 +682,7 @@ entities_referenced:
   entity_type: person
   name: 'Pat Price'
   wrap_path: '/people/pat-price'
-  context_summary: 'Retired police commissioner named as the third sensitive subject at SRI per Kress 1977 (q16, p. 9, ¶1), with arrival "About this time" in the February–May 1973 window when "the remote viewing experiments in which a subject describes his impressions of remote objects or locations began in earnest." Independently named by Targ as the foundational 1973 SRI remote-viewing subject per Targ''s IRVA 2002 talk abstract (q17) and IRVA 2009 talk abstract (q18). Unbuilt in this repository.'
+  context_summary: 'Retired police commissioner named as the third sensitive subject at SRI per Kress 1977 (q16, p. 9, ¶1), with arrival "About this time" — early-to-mid 1973 per Kress narrative ordering after the February 1973 ORD Project Officer rotation; specific Price arrival date not attested — when "the remote viewing experiments in which a subject describes his impressions of remote objects or locations began in earnest." Independently named by Targ as the foundational 1973 SRI remote-viewing subject per Targ''s IRVA 2002 talk abstract (q17) and IRVA 2009 talk abstract (q18). Unbuilt in this repository.'
   references:
   - quote_id: q16
   - quote_id: q17
@@ -884,7 +895,7 @@ naming_quirks:
   location: 'p. 10, ¶1'
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
-  note: 'The 1993 DIA STAR GATE Project Overview uses the hyphenated form "SRI-International" in one passage (q11) where the canonical form is "SRI International" (no hyphen). DIA''s own document varies: Figure 1 of the same document lists "1970-1990 — SRI INTERNATIONAL, MENLO PARK, CA" (no hyphen). Preserved verbatim in q11 quote text.'
+  note: 'The 1993 DIA STAR GATE Project Overview uses the hyphenated form "SRI-International" in one passage (q11) where the canonical form is "SRI International" (no hyphen). DIA''s own document varies: Figure 1 of the same document uses "SRI INTERNATIONAL" without the q11 hyphenation (see q12c for the verbatim Figure 1 row attestation; the Figure 1 row carries a separate pdftotext-default-extraction artifact recorded as nq13). Preserved verbatim in q11 quote text.'
 
 - id: nq9
   added_date: '2026-05-15'
@@ -921,6 +932,15 @@ naming_quirks:
   source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
   resolution: preserve-as-sic-in-quotes
   note: 'The 1993 DIA STAR GATE Project Overview names the SAIC contractor as "Systems Applications International Corporation" in multiple passages (p. 7 and p. 10 ¶3) — a documented writing error in the DIA document. The canonical company name is "Science Applications International Corporation", attested in this artifact''s corpus by the 1995 AIR Evaluation (scratch lines 764, 824, 1295 — "government sponsored research conducted at Stanford Research Institute, later known as SRI International, and at Science Applications International Corporation, known as SAIC"). Preserved verbatim in q12 quote text per source-form-preservation discipline. Companion to nq8 (DIA''s "SRI-International" hyphenated form) — both errors in the same DIA document.'
+
+- id: nq13
+  added_date: '2026-05-15'
+  observed: '--SRI'
+  canonical: '-- SRI'
+  location: 'Figure 1 (KEY US RESEARCH EFFORTS table), p. 7'
+  source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'pdftotext-default extraction artifact in the DIA STAR GATE Project Overview Figure 1 table. The source PDF page 7 visually renders each Figure 1 row as date-range, multi-space column gap, two typewriter hyphens, a single space, then the lab name and location (verified against the rendered PDF page image). Default pdftotext extraction collapses the multi-space column gap AND the single space between the two hyphens and SRI, producing "--SRI" with no intervening space — the verbatim form preserved in q12c. The two hyphens in the source are literal hyphen characters (not an em-dash), consistent with the 1993 source''s typewriter format. Preserved verbatim in q12c per source-form-preservation discipline. The same extraction-artifact phenomenon affects every other Figure 1 row but only the SRI row is preserved as a quote in q12c.'
 
 timeline:
 
@@ -1081,7 +1101,7 @@ timeline:
   added_date: '2026-05-15'
   date: '1973'
   category: program-inception
-  event: 'Pat Price [`/people/pat-price`] arrives at SRI in the February–May 1973 window per Kress 1977 as the third sensitive subject; "the remote viewing experiments in which a subject describes his impressions of remote objects or locations began in earnest". Per Targ IRVA 2002 talk abstract, Price was a "retired police commissioner".'
+  event: 'Pat Price [`/people/pat-price`] arrives at SRI in early-to-mid 1973 per Kress 1977 narrative ordering (specific arrival date not attested) as the third sensitive subject; "the remote viewing experiments... began in earnest". Per Targ IRVA 2002, Price was a "retired police commissioner".'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 9, ¶1'
@@ -1281,7 +1301,7 @@ key_personnel:
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     location: 'p. 22, ¶1'
-  note: 'The SRI program was headed by Dr. H. Puthoff for eleven years per the 1993 DIA STAR GATE Project Overview. Puthoff was a theoretician who became interested in the field in the early 1970s after extensive work in quantum electronics.'
+  note: 'The SRI program was headed by Dr. H. Puthoff for eleven years per the 1993 DIA STAR GATE Project Overview — a smaller period than the 1972-1990 in the period_start/period_end fields. The DIA document of 30 April 1993 reads "For the past eleven years", which based on the program''s 1990 discontinued date places the head role approximately 1979-1990. The 1972-1990 period_start/period_end fields follow the broader cofounder period per Targ''s ESP Research site (Puthoff named alongside Targ as cofounder); specific Puthoff end date at SRI is not stated in the primary sources. Puthoff was a theoretician who became interested in the field in the early 1970s after extensive work in quantum electronics.'
 
 - id: kp4
   added_date: '2026-05-15'
@@ -1337,6 +1357,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
+  note: 'David Motley is named Board Chair in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024 ($110,000 listed compensation). The same source lists Motley as Board Member in the sections for fiscal years ending Dec. 2023 and earlier, with $67,500 and lower listed compensation — the role transition to Board Chair occurred between the Dec. 2023 and Dec. 2024 reporting periods; the specific transition date is not stated on the ProPublica page.'
 
 - id: kp9
   added_date: '2026-05-15'
@@ -1347,6 +1368,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2023'
+  note: 'Ellen Ochoa is named in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2023 with the listing "Board Member Start 2/1/23" — the source listing for Ochoa''s board start date. Ochoa is listed as Board Member in the section for fiscal year ending Dec. 2024.'
 
 - id: kp10
   added_date: '2026-05-15'
@@ -1356,6 +1378,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
+  note: 'Ellen Pawlikowski is named Board Member in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024, and listed in the same source''s sections for fiscal years ending Dec. 2023 and Dec. 2022 — the ProPublica page renders SRI International''s IRS Form 990 filings. The specific Pawlikowski board start date is not stated on the ProPublica page.'
 
 - id: kp11
   added_date: '2026-05-15'
@@ -1365,6 +1388,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
+  note: 'John J. Young Jr. is named Board Member in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024, and listed in the same source''s sections for fiscal years ending Dec. 2023, Dec. 2022, and Dec. 2021 — the ProPublica page renders SRI International''s IRS Form 990 filings. The specific Young board start date is not stated on the ProPublica page.'
 
 - id: kp12
   added_date: '2026-05-15'
@@ -1374,6 +1398,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
+  note: 'John P. McIntire is named Chief Legal Officer in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024, and listed in the same source''s sections for fiscal years ending Dec. 2023, Dec. 2022, Dec. 2021, and earlier years — the ProPublica page renders SRI International''s IRS Form 990 filings. The ProPublica page renders the name as "John Mcintire" in the section for fiscal year ending Dec. 2024 and "John P Mcintire" in earlier sections — minor middle initial variation across IRS Form 990 filings. The specific McIntire role start date is not stated on the ProPublica page.'
 
 - id: kp13
   added_date: '2026-05-15'
@@ -1384,6 +1409,7 @@ key_personnel:
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
+  note: 'Suresh Sunderrajan is named in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024 with the listing "Chief Financial Officer From 1/19/24" — the source listing for Sunderrajan''s 2024-01-19 CFO start date. The same source lists Sunderrajan in the section for fiscal year ending Dec. 2023 as "President, Commercialization" — the prior role recorded before the transition to CFO.'
 
 - id: kp14
   added_date: '2026-05-15'
