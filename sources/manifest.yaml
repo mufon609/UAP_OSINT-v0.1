@@ -2091,6 +2091,24 @@
   archive_status: 3
   note: 60 Minutes broadcast transcript (May 16, 2021), 'UFOs regularly spotted in restricted U.S. airspace.' Bill Whitaker reports. Includes on-camera interview with Lt. Cmdr. Alex Dietrich (her first public statements about the November 2004 USS Nimitz Tic Tac encounter) and Cmdr. David Fravor; also covers Ryan Graves on 2014-15 East Coast encounters.
   wayback_date: '2026-04-13'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP79-00999A000300030027-0.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+  archived_date: '2026-05-16'
+  sha256: 3b89ff0edbc3a80db5d703ee86d2f40176664442f26ba1991bbbe28e62ae7742
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP79-00999A000300030027-0: ''EXPERIMENTS — URI GELLER AT SRI, AUGUST 4-11, 1973''. Dated August 13, 1973 (cover memo); experiments conducted August 4-11, 1973. 31 pages. Originating from CIA Office of Technical Service (OTS) program at SRI under contract 8473. Contains the eight-day session at SRI''s double-walled shielded room (Life Sciences Division, originally used for EEG research) — picture-drawing experiments, including the firecracker / camel-horse / bridge / bird-swan / arrow-through-heart trials. SRI conclusion: ''As a result of Geller''s success in the experimental period, we consider that he has demonstrated his paranormal perceptual ability in a convincing and unambiguous manner.'' Source archived via Internet Archive stargatefiles collection (https://archive.org/download/CIA-RDP79-00999A000300030027-0/CIA-RDP79-00999A000300030027-0.pdf) because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). PDF is an OCR scan of typewritten/photocopied document with redactions; per-quote OCR-artifact preservation expected per meta/conventions.md OCR-scan discipline.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP79-00999A000300030027-0.pdf#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.txt
+  archived_date: '2026-05-16'
+  sha256: ffe4c717f8636a76bb2c7f24e94890d416cf111eb0a6969b918dcf220a09a7a8
+  archive_status: 1
+  wayback_skip: true
+  note: 'Contributor-produced clean-text transcription of CIA-RDP79-00999A000300030027-0.pdf via VLM page-image read (Claude session, 2026-05-16). Read tool with pages: 1-15 and pages: 16-31; produced as clean transcription of the five text-bearing pages (1, 3, 8, 16, 27) with figure-pages marked as descriptive placeholders. The parent PDF is an Image Container PDF from a 2016 Acrobat scan with no usable text layer; pdftotext returned 0 substantive lines. Archive.org''s DjVu OCR ran but garbled the famous conclusion sentence (''demonstrated his paranormal perceptual ability in a convincing and unambiguous manner'') beyond verbatim-quote usability. VLM clean-text sibling is the canonical extraction per meta/conventions.md OCR-scan discipline path #4 (manual transcription with VLM assist; producing session is also verifier per visual reading).'
 - url: https://www.cia.gov/readingroom/docs/CIA-RDP88G01116R000600690003-8.pdf
   format: pdf
   status: archived
@@ -2101,6 +2119,96 @@
   extraction_type: ocr-scan
   note: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence (CIA in-house journal), 1977; Sanitized Copy Approved for Release 2011/06/23 (document ID CIA-RDP88G01116R000600690003-8). Named primary-source author Kenneth A. Kress, CIA Operations Officer in the Office of Technical Service (OTS), recounts CIA''s mid-1970s engagement with the SRI parapsychology program. Verbatim: ''Two laser physicists, Dr. Russell Targ and Dr. Harold E. Puthoff, re-awakened CIA research in parapsychology''; documents the April 1972 Targ-CIA OSI meeting; Targ having ''recently joined the Stanford Research Institute (SRI)''; the August 1972 OTS contract ($874) with Targ and Puthoff; the 9 November 1973 SRI experiment; the 12 December 1974 OTS SRI Experiment memo. Foundational primary-source attestation of the CIA funding chain for the Targ + Puthoff SRI psychic-abilities investigation — closes Russell Targ artifact rumor r4 (CIA / Stargate funding) by direct first-party CIA attestation. OCR-scan PDF (typewritten 1977 original scanned during CIA declassification): visible character-corruption examples include ''lasqr physicists'' (→ ''laser physicists''), ''Tug'' (→ ''Targ''), ''Pen:eptual'' (→ ''Perceptual''), ''ORO'' (→ ''ORD''), ''parapsv-chology'' (→ ''parapsychology''). Per OCR-scan discipline (meta/conventions.md), quotes drawing on this source preserve source-form artifacts verbatim and register them as naming_quirks entries; a .txt sibling production may be warranted before heavy quote extraction.'
   wayback_date: '2025-04-09'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000100180001-3.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
+  archived_date: '2026-05-16'
+  sha256: 6c101360596f7bff099f5f2f67fc58976ae9d71dbe3f52a9b7b1c04ce5df6915
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP96-00787R000100180001-3: ''Technical Memorandum — A Progress Report on Contract Number 1471(S)73''. Covers 1 December 1972 – 15 January 1973. Task 3: ''Experimentation with Uri Geller''. SRI-internal primary record of Geller''s December 1972 SRI entry — the earlier of the two documented SRI engagement windows (the second being the August 4-11 1973 session in CIA-RDP79-00999A000300030027-0). Closes the r1 two-visit chronology gap on /people/uri-geller. Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000100220001-8.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+  archived_date: '2026-05-16'
+  sha256: d93148cf887335651572b159ad1565d946167a64cbf20644ce3ff9653473ba1a
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP96-00787R000100220001-8: Declassified CIA copy of Targ, R. & Puthoff, H., ''Information transmission under conditions of sensory shielding'', Nature 251, 602-607 (18 October 1974), DOI 10.1038/251602a0. This is the CIA-mirrored full text of the foundational SRI parapsychology publication that named Geller as a test subject (the original is paywalled at nature.com at $39.95 per article; the CIA copy is open). Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000100220001-8.pdf#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.txt
+  archived_date: '2026-05-16'
+  sha256: 437f66fcea4513c9374952c817eaf447ad09dc08fb337a019add727ea1de16cd
+  archive_status: 1
+  wayback_skip: true
+  note: 'Archive.org DjVu OCR clean-text sibling of CIA-RDP96-00787R000100220001-8.pdf (the CIA mirror of the Targ-Puthoff 1974 Nature paper). Fetched 2026-05-16 from https://archive.org/download/CIA-RDP96-00787R000100220001-8/CIA-RDP96-00787R000100220001-8_djvu.txt. The parent PDF is an Image Container PDF from a 2016 Acrobat scan with no usable text layer (pdftotext returns 1 line). The DjVu OCR is substantively clean across the 19-page paper — 41 mentions of Geller / Pat Price / Targ extract cleanly, including the abstract, the per-experiment narratives, and the formal conclusion. Some OCR artifacts present (line-break-induced hyphenation like ''imper-fect'', ''con-ducted'', and a few apostrophe-replacements like ''Geller* s'' for ''Geller''s'') — these are visually flagged by review-coverage but the substantive content matches the source PDF reliably. Verification: visual spot-check of the title page and conclusion paragraph against the source PDF in this session, plus secondary verification through the matching SRI experimenter and subject names across the document.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000700050001-1.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00787r000700050001-1-perceptual-augmentation-executive-summary.pdf
+  archived_date: '2026-05-16'
+  sha256: 1b09c9ec1a3b8827e45b6197e63401993fedff3da2b44cc584cc54907a25dc40
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP96-00787R000700050001-1: ''Perceptual Augmentation Techniques, Part One — Executive Summary''. Companion to the SRI Final Report (CIA-RDP96-00791R000300030004-9). Notes that the Targ-Puthoff Nature paper (''Information Transmission Under Conditions of Sensory Shielding,'' Nature 252, 18 October 1974, and reprinted in IEEE Communications 13, January 1975) ''is included as Appendix A of this report''. Primary SRI-internal cross-reference between the Nature publication and the institutional SRI Final Report record. Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000700100004-2.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00787r000700100004-2-perceptual-augmentation-progress-no1-geller-experiments.pdf
+  archived_date: '2026-05-16'
+  sha256: e1bbdea7693a78add7ebb800ceb7033f9b2403bee1d09623853fa7fac35235f6
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP96-00787R000700100004-2: ''Perceptual Augmentation Techniques, Progress Report No. 1'' by H. Puthoff and R. Targ. SRI Project 3183. Contains the numbered Geller experiments 1-13 with detailed protocols: firecracker (Exp. 1), camel/horse (Exp. 8), bridge (Exp. 9), bird/swan (Exp. 10), computer-graphics arrow-through-heart (Exp. 13). Documents the shielded-room and Faraday-cage configurations used during the August 1973 sessions. Primary SRI-internal record of experimental methodology — complements the CIA-RDP79-00999A000300030027-0 summary report with per-experiment protocol detail. Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00791R000100030062-7.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00791r000100030062-7-cia-remote-viewing-declass-qa-19950612.pdf
+  archived_date: '2026-05-16'
+  sha256: 50fe698248375b1fb405ec4001652f9cfbcc7e3690a1fa129261e02675e5fa0f
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP96-00791R000100030062-7: ''CIA Remote Viewing Declassification Q & A''. Memo dated 12 June 1995 from CIA Office of Research and Development to CIA Public Affairs. Institutional confirmation: ''CIA funded research and development activities at Stanford Research Institute (SRI) during about 1972 to about 1977.'' Primary CIA-side attestation of the SRI funding window. Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00791R000100420002-0.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00791r000100420002-0-perceptual-augmentation-proposal-part-one-19731001.pdf
+  archived_date: '2026-05-16'
+  sha256: dd6c385d61752e679adbf874a1372549fdcba7bde24f4fd3c16203bc01c8c3e4
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP96-00791R000100420002-0: SRI Project Proposal No. ISH 73-146, ''Perceptual Augmentation Techniques, Part One — Technical Proposal''. 1 October 1973. Authors: H. Puthoff, R. Targ, B. Cox. Approved by Earle D. Jones (Director, Electronics and Bioengineering Laboratory, SRI). 59 pages. Cites prior ''carefully controlled remote perception experiments with Mr. Uri Geller'' as the basis for the proposed continuing program — primary SRI-side institutional attestation that Geller''s experiments grounded what became the multi-year SRI parapsychology program. Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00791R000100480003-3.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00791r000100480003-3-perceptual-augmentation-appendix-i-geller.pdf
+  archived_date: '2026-05-16'
+  sha256: 0208b4ebfccfeca4898e3de631b3262108d0c4d2cfbfda57c3a1c1285e0ba64e
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP96-00791R000100480003-3: ''Appendix I — Experiments — Uri Geller at SRI''. Appendix to SRI Final Report on Perceptual Augmentation (CIA-RDP96-00791R000300030004-9). Dated August 4, 1973. 32 pages. Parallel-copy of the Aug 4-11 1973 Geller experiments report (RDP79-00999A000300030027-0); the two documents are substantively the same Aug 1973 SRI report filed under different CIA stock numbers. Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan of typewritten/photocopied document.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00791R000200030040-0.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00791r000200030040-0-kress-parapsychology-intelligence-1977-declass1996.pdf
+  archived_date: '2026-05-16'
+  sha256: f96dc174737cdf060779015a24d4d70067950894eae4f3186eb1ff03ab718d8a
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP96-00791R000200030040-0: Parallel-copy of Kress, K. A., ''Parapsychology in Intelligence: A Personal Review and Conclusions'', Studies in Intelligence Winter 1977, declassified 1996. The repository already carries this paper under a different CIA stock number (cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf from CIA-RDP88G01116R000600690003-8) — the two are the same Kress 1977 paper from different CIA declassification copies. Kress places the start of CIA work at SRI in April 1972 and discusses Geller''s results — including the internal SRI conclusion that films of Geller''s metal-bending were ''insufficient to determine whether metals are being bent by normal or paranormal means'' and that ''it was always necessary for him in the experimental situation to have physical contact with any metal he bent''. Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00791R000300030004-9.pdf
+  format: pdf
+  status: archived
+  path: government/cia-rdp96-00791r000300030004-9-perceptual-augmentation-final-report-part-two-19751201.pdf
+  archived_date: '2026-05-16'
+  sha256: 3ed51b812fa853c1732f963c2c1a67c5c8e08df56852e565fa25da3eb8246633
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'CIA Reading Room document CIA-RDP96-00791R000300030004-9: ''Perceptual Augmentation Techniques, Part Two — Research Report'' (Final Report). 1 December 1975. SRI Project 3183. Authors: H. Puthoff and R. Targ. Covers January 1974 through February 1975 (the second-year program; first-year Geller work is in Appendix I = CIA-RDP96-00791R000100480003-3). Approved by Earle Jones (Director, Electronics and Bioengineering Laboratory) and Bonnar Cox (Executive Director, Information Science and Engineering Division). 5.7MB PDF. Already a broken-link stub in the registry as /documents/sri-perceptual-augmentation-techniques-final-report-1975. Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan.'
 - url: https://www.colorado.edu/emp/people/alex-dietrich
   format: html
   status: archived
@@ -2670,6 +2778,14 @@
   archive_status: 3
   note: 'MuckRock FOIA request page for case 23-F-0905 (Robert Skvarla, Jr., filed May 19, 2023, with DoD/Office of the Under Secretary of Defense for Intelligence and Security; tracking 23-A-0905-A1). Direct fetch returns 403; archived via Wayback Machine snapshot from 2026-04-30 (full post-disposition page with 15 communications and 12 attached files). Request scope: Sancorp AARO contract HQ003422C0094. Final disposition per the released response: 125 pages identified responsive; 11 pages withheld in entirety under 5 U.S.C. § 552(b)(5) deliberative-process exemption; portions of remaining 114 pages withheld under (b)(4) (trade secrets / commercial confidential) and (b)(6) (personal privacy). Initial Denial Authority: Ms. Paulette Creighton, Division Director, Enterprise Acquisition Policy & Strategic Initiatives. Acquisition Directorate also conducted exhaustive searches for Correspondence, Requests for Information, Memorandums of Understanding, Letters of Interest, Task Letters, Privacy Impact Assessments, and Presentations by Sancorp and located no responsive records in those categories. Skvarla appealed Sept 18, 2023 (case 23-A-0905-A1); Joo Y. Chung (Assistant to the Secretary of Defense for Privacy, Civil Liberties, and Transparency) AFFIRMED the withholding decision Aug 21, 2024. Companion archive: Black Vault FOIA 23-F-1114 (already at government/blackvault-sancorp-23-f-1114-aaro-pws.pdf) covers the AARO PWS in full release form. Note: the handoff §11 figure of ''91 pages withheld'' was a paraphrase; the actual agency framing is 11-pages-entirely-withheld + 114-pages-with-redactions.'
   wayback_date: '2026-04-30'
+- url: https://www.nature.com/articles/251559a0
+  format: html
+  status: archived
+  path: news/maddox-investigating-paranormal-nature-19741018.html
+  archived_date: '2026-05-16'
+  sha256: af49d15347275beee2b2658e54854f466f5fac28a5969f7459bf0ef8ee4f22c4
+  archive_status: 1
+  note: 'Maddox, J. (editorial), ''Investigating the paranormal'', Nature 251, 559-560 (18 October 1974), DOI 10.1038/251559a0. The Nature editor''s accompanying editorial that ran in the same issue as the Targ-Puthoff paper on Geller. METADATA STUB ONLY — the archived HTML is the nature.com article landing page (HTTP 200 on direct fetch as of 2026-05-16) carrying title, byline, DOI, publication date, Altmetric / Citations counts, and a paywall sign-in prompt. The editorial body text is NOT in the archived file (zero mentions of Geller, metal, psychokinetic, extravagant, or rumour in the archived HTML). The well-known Maddox passage cautioning that the Targ-Puthoff paper ''does not present any evidence whatsoever for Geller''s alleged abilities to bend metal rods by stroking them, influence magnets at a distance, make watches stop or start by some psychokinetic force and so on'' (cited widely in secondary literature) cannot be verified against this archived file and is therefore not usable as a quotation source. A /documents/maddox-investigating-paranormal-1974 node build is deferred until body text becomes available — paths to investigate: JSTOR / institutional library subscription, scanned-print archive, or a cached-content snapshot from an older Wayback capture that pre-dates Nature''s paywall tightening. Manifest entry preserved as a bibliographic anchor for when the body becomes archivable.'
 - url: https://www.nature.com/articles/251602a0
   format: html
   status: archived
@@ -3151,6 +3267,14 @@
   archive_status: 3
   note: SRI International 'Interactive Timeline of Innovation' page 7 (sri.com/timeline-of-innovation/?query-117-page=7), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 7 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
   wayback_date: '2026-01-20'
+- url: https://www.tabletmag.com/sections/arts-letters/articles/the-spy-who-bent-a-million-spoons
+  format: html
+  status: archived
+  path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+  archived_date: '2026-05-16'
+  sha256: d095f4bddd88d4566fe922df21d8389e6fa9e73412c9dbe966f61df494cc5a30
+  archive_status: 1
+  note: 'Tablet Magazine, ''The Spy Who Bent a Million Spoons'' (article title in archived page: ''Israeli Mentalist Uri Geller''s Mind-Over-Matter Philosophy of Life''). Verified-publication first-person Geller interview by Tal Kra-Oz, published June 03, 2015. Contains direct Geller statements on his asserted Mossad / Aman recruitment chain: Yoav Shaham (described in article as a Mossad agent at the Cyprus bed-and-breakfast and later as a commander in the paratroopers killed in the West Bank) → Meir Amit (Mossad director 1963-1968) → Aharon Yariv (Aman head 1964-1972); Geller account: ''Yariv summoned me to a meeting in Tel Aviv. I went through all the biggest intelligence guys. And then that''s it — no comment from that point on.'' Web''s handoff cited the surname transliteration ''Shacham''; the archived article body consistently uses ''Shaham'' (no ''c''). Primary source for Geller''s own statements about Israeli intelligence service (Geller-self-claim primary, structurally parallel to the urigeller.com Burton 2007 article already in corpus). Direct fetch returns 403 (Tablet WAF blocking); archived via Wayback (https://web.archive.org/web/2024/https://www.tabletmag.com/sections/arts-letters/articles/the-spy-who-bent-a-million-spoons → snapshot 20250125134050) as of 2026-05-16.'
 - url: https://www.theblackvault.com/documentarchive/dod-announces-the-establishment-of-the-all-domain-anomaly-resolution-office-july-20-2022/
   format: html
   status: archived

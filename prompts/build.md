@@ -1,11 +1,16 @@
 # Build prompt — layered three-phase process
 
-Paste into a Claude Code session to build **one new node** under the
+Paste into a Claude Code session to build one or more nodes under the
 layered Investigation → Build → Review process. **One *new* node per
 session** is the hard rule established after the 2026-04-17 pilot
-failure. The rule limits *new node construction* — it does not
-restrict editing, auditing, or rebuilding existing nodes; for those
-tasks see `prompts/audit.md` and the per-task prompts in `prompts/`.
+failure — but it applies to person and organization nodes only.
+Document, event, transcript, media, location, finding, and
+investigation nodes carry lighter synthesis surfaces (most of their
+body is verbatim source via Key Passages) and may be scaffolded in
+batches within a single session. The rule limits *new node
+construction* — it does not restrict editing, auditing, or rebuilding
+existing nodes; for those tasks see `prompts/audit.md` and the
+per-task prompts in `prompts/`.
 
 This prompt documents all three phases: **Phase I (Investigation)**,
 **Phase II (Build)**, and **Phase III (Review)**.
@@ -18,13 +23,18 @@ organization, location, finding, and investigation.
 
 ## Hard rules
 
-1. **One *new* node per session.** Do not scaffold a second target while
-   one is in-flight. The session ends when the one node has validated,
-   been regenerated from its research artifact, passed coverage review,
-   and been committed. Scope: this rule applies to scaffolding *new*
-   nodes (`scripts/build/new.py` + `scripts/build/research-scaffold.py`). Editing,
-   auditing, fixing, or rebuilding existing nodes — including in
-   batches — is unrestricted and follows its own prompts (`audit.md`,
+1. **One *new* node per session — applies to person and organization
+   nodes only.** Do not scaffold a second person or organization node
+   while one is in-flight; the session ends for that target when the
+   node has validated, been regenerated from its research artifact,
+   passed coverage review, and been committed. Document, event,
+   transcript, media, location, finding, and investigation nodes
+   carry lighter synthesis surfaces and may be scaffolded in batches
+   within a single session. Scope: this rule applies to scaffolding
+   *new* nodes (`scripts/build/new.py` +
+   `scripts/build/research-scaffold.py`). Editing, auditing, fixing,
+   or rebuilding existing nodes — including in batches — is
+   unrestricted for any type and follows its own prompts (`audit.md`,
    `verify-transcript.md`, `archive-sweep.md`).
 
 2. **Source-read-first.** Every claim and every quote must trace to
@@ -105,6 +115,19 @@ relative form (`sources/news/foo.html`). Both normalize to the same
 archived file via the shared `normalize_source_rel_path` helper in
 `scripts/lib/_common.py`. Paste paths from `grep` / `find` output or
 from manifest entries directly — both work.
+
+**Pre-flight: sibling-fed extracts are silent.** Before treating an
+extract as pdftotext output, verify pdftotext alone is the source.
+`extract_source_text` matches a `.txt` at the source's path stem
+regardless of whether that `.txt` is registered in the manifest
+(see `meta/conventions.md` "Silent-sibling lookup"). Diagnostic for
+an OCR-scan or extraction-lossy PDF whose extract looks suspiciously
+clean: temporarily rename any `<same-stem>.txt` aside and re-run
+`extract-source.py`. If line count collapses to ~1, the sibling was
+load-bearing and the PDF's text layer is unusable on its own.
+Restore the sibling and confirm it has a manifest entry — if it
+doesn't, register it now (per `meta/conventions.md` "Silent-sibling
+lookup" the convention is file + manifest entry created together).
 
 ### Step 3. Populate `document_intrinsic`
 
@@ -188,6 +211,19 @@ python3 scripts/tools/check-vocab.py --artifact meta/research/{slug}.yaml \
 Reports `✓ present` / `✗ absent` per input token. Absent tokens
 either get rewritten to source vocabulary or captured as structured
 data (naming_quirks, rumors, entries) per the prose-drift discipline.
+
+**ESL-grammar trap.** Iterating against `check-vocab.py` until every
+token passes can produce grammatical English that reads as broken
+English — using a source-attested participle where natural English
+would use an absent finite verb (`is containing` instead of
+`contains`), or stringing source-attested compound nouns where a
+single synthesis word would read better. If the resulting prose
+reads as ESL, the response is restructure-the-sentence, not
+ship-the-bad-phrasing. Either rephrase to use a different
+source-attested verb that fits grammatically, or rephrase to elide
+the absent word entirely. Source-vocabulary discipline applies
+token-by-token; English-grammar discipline applies to the rendered
+prose. When the two collide, restructure the sentence.
 
 ### Step 6. Populate `quotes` (bounded agent task T2)
 
@@ -814,7 +850,9 @@ node surfaces no semantic issues. Ready to commit.
 6. `python3 scripts/build/build-state.py --update` if the commit adds, removes,
    or changes the status of a node (refreshes the CLAUDE.md build-state block)
 7. Commit the research artifact + regenerated node + any manifest
-   changes in one focused commit (one *new* node per session — hard rule)
+   changes in one focused commit per node (one *new* person or
+   organization node per session — hard rule; other node types may
+   batch within the same session)
 
 ---
 

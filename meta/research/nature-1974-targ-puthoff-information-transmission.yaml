@@ -1,0 +1,227 @@
+id: meta/research/nature-1974-targ-puthoff-information-transmission
+type: research-artifact
+schema_version: 1
+target_node: documents/nature-1974-targ-puthoff-information-transmission
+status: active
+created: '2026-05-16'
+primary_sources:
+- path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-nature-1974-targ-puthoff-information-transmission-0.txt
+  pdf_metadata:
+    title: CIA-RDP96-00787R000100220001-8.TIF
+    creator: Adobe Acrobat 15.16
+    producer: Adobe Acrobat 15.16 Image Conversion Plug-in
+    creation_date: Fri Jun 24 13:55:50 2016 EDT
+    mod_date: Fri Jun 24 13:55:50 2016 EDT
+    pages: 19
+document_intrinsic:
+  internal_title: INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING
+  internal_date: 'October, 1974'
+  authors_per_document:
+  - Dr. Harold E. Puthoff
+  - Russell Targ
+  classification: Approved For Release 2001/03/07
+  classification_markings_on_document: 'Approved For Release 2001/03/07 : CIA-RDP96-00787R0001 00220001 -8 (release marking on every page)'
+  pages: 19
+context_extrinsic:
+  display_title: 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING — Puthoff & Targ, Nature 251, 602-607 (October 1974); CIA mirror CIA-RDP96-00787R000100220001-8'
+  primary_source_url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000100220001-8.pdf
+  quote_attribution: 'Dr. Harold E. Puthoff and Russell Targ, ''INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING'', Nature 251, 602-607 (October 1974)'
+  provenance:
+  - step: SRI research conducted (Geller experiments)
+    date: '1973-08-04'
+    entity: Stanford Research Institute, Menlo Park, California
+    verified: ✅ Confirmed — paper attests the Geller experiments at SRI's facility for EEG research and the SRI Engineering Building, in the date range August 1973 per related CIA-RDP79-00999A000300030027-0
+  - step: Submitted as SRI preprint
+    date: '1974'
+    entity: Harold E. Puthoff & Russell Targ, Stanford Research Institute
+    verified: '✅ Confirmed — title page reads ''STANFORD RESEARCH INSTITUTE, Menlo Park, California 94025'' as the institutional letterhead; ''Published in NATURE Magazine, October, 1974'' on the title page'
+  - step: Published in Nature Magazine
+    date: '1974-10'
+    entity: Nature (Macmillan Journals, London)
+    verified: '✅ Confirmed — title page ''Published in NATURE Magazine, October, 1974''; canonical citation Nature 251, 602-607, 18 October 1974'
+  - step: Approved for release by CIA
+    date: '2001-03-07'
+    entity: Central Intelligence Agency
+    verified: '✅ Confirmed — release marking ''Approved For Release 2001/03/07 : CIA-RDP96-00787R0001 00220001 -8'' on every page'
+  - step: Scanned to TIF / Image Container PDF
+    date: '2016-06-24'
+    entity: CIA Reading Room (Adobe Acrobat 15.16 Image Conversion Plug-in)
+    verified: '✅ Confirmed — PDF metadata Title CIA-RDP96-00787R000100220001-8.TIF; CreationDate Fri Jun 24 13:55:50 2016 EDT'
+  - step: Mirrored to Internet Archive (stargatefiles collection)
+    date: '2016-06-25'
+    entity: Michael Best / That 1 Archive
+    verified: '✅ Confirmed — archive.org item CIA-RDP96-00787R000100220001-8'
+  - step: Archived locally
+    date: '2026-05-16'
+    entity: UAP_OSINT REFACTOR repository
+    verified: ✅ Confirmed — sha256 verified via sources/manifest.yaml
+description: 'INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING by Dr. Harold E. Puthoff ([`/people/hal-puthoff`]) and Russell Targ ([`/people/russell-targ`]), Stanford Research Institute ([`/organizations/stanford-research-institute`]), Menlo Park, California 94025. Published in NATURE Magazine, October, 1974. Approved For Release 2001/03/07.
+
+
+  Puthoff and Targ present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. They investigated the ability of certain people to describe graphical material or remote scenes shielded against ordinary perception. They also performed pilot studies to determine if electroencephalographic (EEG) recordings might indicate perception of remote happenings even in the absence of correct overt responses.
+
+
+  The paper has three studies. First, experiments with Mr. Uri Geller ([`/people/uri-geller`]) in which Puthoff and Targ examined his ability, while located in an electrically shielded room, to reproduce target pictures drawn by experimenters located at remote locations. Second, double-blind experiments with Mr. Pat Price ([`/people/pat-price`]), in which Puthoff and Targ measured his ability to describe remote outdoor scenes many miles from his physical location. Finally, preliminary tests using EEGs.
+
+
+  For the Geller experiments, the conditions and results for the 10 experiments carried out in the shielded room are displayed in Table 1 and Fig. 1. Experiments 1 through 10 were carried out using a shielded room in SRI''s facility for EEG research — a double walled steel room, locked by means of an inner and outer door, each of which is secured with a refrigerator-type locking mechanism. Experiments 11 through 13 were carried out in SRI''s Engineering Building to make use of the computer facilities available there, with Geller secured in a double walled, copper-screen Faraday cage 54 m down the hall and around the corner from the computer room.
+
+
+  Puthoff and Targ conclude that a channel exists whereby information about a remote location can be obtained by means of an as yet unidentified perceptual modality, containing noise along with the signal as with all biological systems. The research was sponsored by The Foundation for Parasensory Investigation, New York City; Puthoff and Targ thank Mrs. Judith Skutch and Dr. Edgar D. Mitchell ([`/people/edgar-mitchell`]) of the Institute of Noetic Sciences as well as SRI associate Mr. Bonnar Cox.
+
+  '
+quotes:
+- id: q1
+  added_date: '2026-05-16'
+  text: |-
+    INFORMATION TRANSMISSION UNDER CONDITIONS OF
+    SENSORY SHIELDING
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 1, ¶ title'
+  significance: Paper title — verbatim
+  statement_date: '1974-10'
+- id: q2
+  added_date: '2026-05-16'
+  text: |-
+    Dr. Harold E. Puthoff and Russell Targ
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 1, ¶ author byline'
+  significance: Paper author byline
+  statement_date: '1974-10'
+- id: q3
+  added_date: '2026-05-16'
+  text: |-
+    Published in NATURE Magazine, October, 1974
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 1, ¶ publication-line'
+  significance: Publication attestation on the title page
+  statement_date: '1974-10'
+- id: q4
+  added_date: '2026-05-16'
+  text: |-
+    We present results of experiments suggesting the existence of one or more
+
+    perceptual modalities through which individuals obtain information about their
+
+    environment, although this information is not presented to any known sense.
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 1, ¶ abstract'
+  significance: Paper abstract / opening — the existence-of-perceptual-modalities framing
+  statement_date: '1974-10'
+- id: q5
+  added_date: '2026-05-16'
+  text: |-
+    First, we conducted experiments with Mr. Uri Geller in which we examined
+    his ability, while located in an electrically shielded room, to reproduce target
+    pictures drawn by experimenters located at remote locations.
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 2, ¶ studies-overview'
+  significance: First-of-three studies — Geller experiments framing — primary Nature-paper attestation that names Geller as the subject of the foundational SRI parapsychology experiments
+  statement_date: '1974-10'
+- id: q6
+  added_date: '2026-05-16'
+  text: |-
+    Second, we con-ducted double-blind experiments with Mr. Pat Price, in which we measured his
+    ability to describe remote outdoor scenes many miles from his physical location.
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 2, ¶ studies-overview'
+  significance: Second-of-three studies — Pat Price experiments framing — primary Nature-paper attestation that names Pat Price as a second SRI subject (alongside Geller) in the foundational paper
+  statement_date: '1974-10'
+- id: q7
+  added_date: '2026-05-16'
+  text: |-
+    To prevent sensory cueing of the target information, Experiments 1 through
+    10 were carried out using a shielded room in SRI's facility for EEG research.
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 2, ¶ shielded-room-protocol'
+  significance: Shielded-room protocol description for Geller experiments 1-10 — same facility as the August 1973 CIA-RDP79-00999A000300030027-0 SRI report
+  statement_date: '1974-10'
+- id: q8
+  added_date: '2026-05-16'
+  text: |-
+    Experiments 11 through 13 were carried out in SRI's Engineering Building,
+    to make use of the computer facilities available there.
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 3, ¶ engineering-building-protocol'
+  significance: Engineering Building protocol for Geller experiments 11-13 — corresponds to the August 9-10 1973 sessions in the CIA Aug 1973 SRI report
+  statement_date: '1974-10'
+- id: q9
+  added_date: '2026-05-16'
+  text: |-
+    A channel exists whereby information about a remote location can be obtained
+    by means of an as yet unidentified perceptual modality.
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, ¶ conclusion'
+  significance: Paper's formal conclusion sentence — the 'channel exists' framing — the load-bearing claim that downstream Geller-bio invocations cite as the Nature-paper endorsement
+  statement_date: '1974-10'
+- id: q10
+  added_date: '2026-05-16'
+  text: |-
+    Our observation of the phenomena leads us to conclude that experiments in
+    the area of so-called paranormal phenomena can be scientifically conducted, and
+    it is our hope that other laboratories will initiate additional research to attempt
+    to replicate these findings.
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, ¶ closing'
+  significance: Paper's closing methodological framing — paranormal phenomena can be scientifically conducted; call for replication
+  statement_date: '1974-10'
+- id: q11
+  added_date: '2026-05-16'
+  text: |-
+    This research was sponsored by The Foundation for Parasensory Investiga-tion, New York City. We thank Mrs. Judith Skutch, Dr. Edgar D. Mitchell of the
+    Institute of Noetic Sciences
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, ¶ acknowledgements'
+  significance: 'Funding and acknowledgements — Foundation for Parasensory Investigation as sponsor; Judith Skutch and Edgar D. Mitchell of the Institute of Noetic Sciences thanked. The institutional pre-CIA-mirror funding chain that frames the 1974-public version of the research (the CIA funding chain via OTS is not named in the Nature paper itself).'
+  statement_date: '1974-10'
+entities_referenced:
+- id: e1
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Harold E. Puthoff
+  wrap_path: /people/hal-puthoff
+  context_summary: Lead co-author of the Nature paper; named in the author byline as Dr. Harold E. Puthoff
+- id: e2
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Russell Targ
+  wrap_path: /people/russell-targ
+  context_summary: Co-author of the Nature paper; named in the author byline as Russell Targ
+- id: e3
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Uri Geller
+  wrap_path: /people/uri-geller
+  context_summary: 'Subject of the first study in the Nature paper — picture-drawing experiments in the SRI shielded room and Engineering Building Faraday cage (13 numbered experiments)'
+- id: e4
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Pat Price
+  wrap_path: /people/pat-price
+  context_summary: Subject of the second study in the Nature paper — double-blind experiments measuring ability to describe remote outdoor scenes many miles from his physical location
+- id: e5
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Edgar D. Mitchell
+  wrap_path: /people/edgar-mitchell
+  context_summary: Acknowledged in the paper as Dr. Edgar D. Mitchell of the Institute of Noetic Sciences
+- id: e6
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: Stanford Research Institute
+  wrap_path: /organizations/stanford-research-institute
+  context_summary: Institutional letterhead of the paper — STANFORD RESEARCH INSTITUTE, Menlo Park, California 94025; the experiments were carried out in SRI's facility for EEG research and SRI's Engineering Building
+naming_quirks: []

@@ -226,6 +226,22 @@ sibling over the underlying PDF text layer. The sibling itself is a
 manifest entry (with its own sha256 — integrity backstop matching the
 parent PDF entry's).
 
+**Silent-sibling lookup.** `extract_source_text` finds a `.txt`
+sibling by *path stem*, not by manifest registration. A
+`<same-stem>.txt` file adjacent to the source PDF gets used by the
+validator's verbatim-quote check whenever the parent PDF's manifest
+entry has `extraction_type: ocr-scan` or `extraction-lossy`,
+regardless of whether the sibling itself has a manifest entry. The
+discipline: file and manifest entry are created together. A
+sibling-on-disk-but-not-in-manifest is a silent dependency —
+quote-verification depends on a file pre-commit has no sha256
+integrity guarantee for, and deleting the file (e.g., as "orphan
+cleanup") silently breaks the build by reverting extract output to
+the PDF's unusable text layer. Register the sibling at the moment of
+creation, and treat the manifest-paths verifier (`scripts/tools/manifest.py
+verify-paths`) plus pre-commit as the only safe orphan-cleanup gate
+for sibling files.
+
 **Per-quote contributor discipline when an OCR-scan source's `.txt`
 sibling hasn't been produced yet.** A new OCR-scan source may enter
 the corpus before a contributor produces its clean-text sibling — the
@@ -521,6 +537,16 @@ significant words with the source it claims to draw on), a
 mathematical floor on pure fabrication rather than a stylistic
 threshold. Below 100%, the validator makes no judgment; careful
 contributor review is the quality gate.
+
+The contributor review also asks a second question: *does the prose
+read as natural English?* Iterating against `check-vocab.py` until
+every significant token passes can produce stilted constructions —
+a source-attested participle stretched to substitute for an absent
+finite verb (`is containing` instead of `contains`), source-attested
+compound nouns where a single synthesis word would read better.
+Source-vocabulary discipline applies token-by-token; English-grammar
+discipline applies to the rendered prose. When the two collide,
+restructure the sentence — don't ship the broken phrasing.
 
 The prose-drift check is explicitly scoped to synthesis prose (free-
 prose fields and synthesis-content notes). Compact label cells (role

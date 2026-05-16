@@ -1,0 +1,207 @@
+id: meta/research/tablet-spy-who-bent-a-million-spoons
+type: research-artifact
+schema_version: 1
+target_node: documents/tablet-spy-who-bent-a-million-spoons
+status: active
+created: '2026-05-16'
+primary_sources:
+- path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+  format: html
+  extracted_text_path: /tmp/scratch-tablet-spy-who-bent-a-million-spoons-0.txt
+document_intrinsic:
+  internal_title: The Spy Who Bent a Million Spoons
+  internal_subtitle: Israeli mentalist Uri Geller's mind-over-matter philosophy of life
+  internal_date: 'June 03, 2015'
+  authors_per_document:
+  - Tal Kra-Oz
+  classification: published
+  classification_markings_on_document: 'Tablet Magazine; Tal Kra-Oz byline'
+context_extrinsic:
+  display_title: 'Tablet Magazine — ''The Spy Who Bent a Million Spoons'' (Tal Kra-Oz, June 3, 2015)'
+  primary_source_url: https://www.tabletmag.com/sections/arts-letters/articles/the-spy-who-bent-a-million-spoons
+  quote_attribution: 'Tal Kra-Oz, ''The Spy Who Bent a Million Spoons'', Tablet Magazine, June 03, 2015'
+  provenance:
+  - step: Interview conducted at Geller's Sonning residence
+    date: '2015'
+    entity: Tal Kra-Oz interviewing Uri Geller
+    verified: '✅ Confirmed — article narrative names Sonning village location and the in-person Monday-afternoon interview format. Year inferred from Geller-aged-68 self-description in the article (Geller born 1946-12-20 → age 68 from 2014-12-20 through 2015-12-19) intersected with the June 03, 2015 publication date; specific month not attested by source.'
+  - step: Published in Tablet Magazine
+    date: '2015-06-03'
+    entity: Tablet Magazine (Nextbook Inc.)
+    verified: '✅ Confirmed — byline date ''June 03, 2015'' on the article page'
+  - step: Archived via Wayback Machine
+    date: '2025-01-25'
+    entity: Internet Archive
+    verified: '✅ Confirmed — Wayback capture 20250125134050 (direct tabletmag.com fetch returns HTTP 403; Wayback fallback used per meta/sources-access.md discipline)'
+  - step: Archived locally
+    date: '2026-05-16'
+    entity: UAP_OSINT REFACTOR repository
+    verified: ✅ Confirmed — sha256 verified via sources/manifest.yaml
+description: 'Interview with Uri Geller ([`/people/uri-geller`]) by Tal Kra-Oz ([`/people/tal-kra-oz`]) in Tablet Magazine ([`/organizations/tablet-magazine`]) on June 03, 2015. The interview was at Geller''s home in the village of Sonning about an hour''s drive west of London. The article begins with Geller in Tel Aviv at age 5 (his first bent spoon), his military service as a paratrooper in the IDF, the house parties in Israel through which he climbed the social ladder from photographers to judges to army generals, the general''s house party where Golda Meir ([`/people/golda-meir`]) was at the party and gave him an Israeli radio interview the next day that he calls the beginning of his career, his most publicly humiliating moment on Johnny Carson''s Tonight Show with James Randi, and the Stanford Research Institute ([`/organizations/stanford-research-institute`]) tests sponsored by the CIA in the 1970s.
+
+
+  The article also has Geller on the Israeli intelligence record. Geller said his stepfather ran a bed-and-breakfast in Cyprus that he calls ''a Mossad ([`/organizations/mossad`]) safe house'', that as a 12 or 13 year old he confronted one of the agents Yoav Shaham ([`/people/yoav-shaham`]), that Shaham gave him a job as a courier whose letters would arrive at the hotel from Arab countries and that Geller would deliver them to the Israeli ambassador in Nicosia, and that after Shaham — a commander in the paratroopers — was killed in the West Bank, intelligence chiefs Meir Amit ([`/people/meir-amit`]) and Aharon Yariv ([`/people/aharon-yariv`]) summoned Geller to a meeting in Tel Aviv. Tal Kra-Oz notes that Geller''s recollections of private conversations with long-dead celebrities and CIA handlers are often impossible to confirm, though much of what Geller said seems true.
+
+
+  Other things in the article: Geller''s role in knocking out radar stations ahead of the Israel Air Force''s flight to Entebbe; his role in influencing the Russians to sign the 1987 Nuclear Reduction Treaty; the FBI asked him to convince Russian diplomats to defect at parties in Long Island where he mingled and beamed his mind; his friend Michael Jackson ([`/people/michael-jackson`]) who agreed to be the best man when Geller renewed his wedding vows with Rabbi Shmuley Boteach; his charitable work flying terminally ill children from Israel to his home; his role in the 2005 agreement that got Magen David Adom into the International Red Cross; the BBC ([`/organizations/bbc`]) documentary ''The Secret Life of Uri Geller: Psychic Spy?'' directed by Vikram Jayanti (2013); and a live spoon-bending and drawing demonstration during the interview.
+
+  '
+quotes:
+- id: q1
+  added_date: '2026-05-16'
+  text: |-
+    The Spy Who Bent a Million Spoons
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶ headline
+  significance: Article headline as published in Tablet Magazine
+  statement_date: '2015-06-03'
+- id: q2
+  added_date: '2026-05-16'
+  text: |-
+    Israeli mentalist Uri Geller's mind-over-matter philosophy of life
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶ subtitle
+  significance: Article subtitle as published
+  statement_date: '2015-06-03'
+- id: q3
+  added_date: '2026-05-16'
+  text: |-
+    Though his recollections of private conversations with long-dead celebrities, not to mention CIA handlers, are often impossible to confirm, much of what he says—I wouldn't dare guess at a percentage—seems true.
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶3
+  significance: Tal Kra-Oz framing of the evidentiary weight of Geller's self-claims (impossible-to-confirm but seems-true characterization)
+  statement_date: '2015-06-03'
+- id: q4
+  added_date: '2026-05-16'
+  text: |-
+    After his parents divorced and his mother remarried, he moved to Cyprus where his new stepfather ran a bed-and-breakfast. "It was a Mossad safe house," Geller said in a hushed tone, "from which agents would go to Damascus, Jordan, Egypt, all of those countries. When I was 12 or 13, I confronted one of the agents. His name was Yoav Shaham. I told him: 'You're a spy, Yoav!' I felt it. He freaked out. He told me never to dare say that again."
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶ Mossad-safe-house
+  significance: 'Geller''s account of his stepfather''s Cyprus bed-and-breakfast as a Mossad safe house and his teenage encounter with Yoav Shaham — primary self-attestation of the entry point into the Israeli-intelligence recruitment chain'
+  statement_date: '2015-06-03'
+- id: q5
+  added_date: '2026-05-16'
+  text: |-
+    Shaham gave Geller a job as a courier. He would collect letters that would arrive at the hotel from Arab countries and deliver them to the Israeli ambassador in Nicosia.
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶ Mossad-safe-house+1
+  significance: Tal Kra-Oz reconstruction of Geller's account — courier role for Shaham delivering Arab-country letters to the Israeli ambassador in Nicosia
+  statement_date: '2015-06-03'
+- id: q6
+  added_date: '2026-05-16'
+  text: |-
+    And Shaham promised more, but before Geller finished his IDF service, Shaham, a commander in the paratroopers, was killed in the West Bank. "That shattered me," Geller said. "I knew that I had lost my chance. But what I didn't know was that he had spoken with intelligence chiefs Meir Amit and Aharon Yariv about me. Yariv summoned me to a meeting in Tel Aviv. I went through all the biggest intelligence guys. And then that's it—no comment from that point on."
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶ Mossad-safe-house+2
+  significance: 'Geller''s account of Shaham''s death in the West Bank and the subsequent summons to a Tel Aviv meeting by Aharon Yariv (Aman chief 1964-1972) — primary self-attestation of the recruitment chain Shaham → Meir Amit → Aharon Yariv that Web''s handoff identified as the load-bearing Israeli-intelligence claim from this source'
+  statement_date: '2015-06-03'
+- id: q7
+  added_date: '2026-05-16'
+  text: |-
+    The BBC documentary details the extensive tests Geller underwent at Stanford Research Institute in the 1970s, research that was sponsored by the CIA during the years that were profiled in the book Men Who Stare at Goats, later made into a film starring George Clooney.
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶ BBC-documentary
+  significance: Article framing of the SRI / CIA testing era — Tal Kra-Oz description of the BBC documentary's account of Geller's SRI tests
+  statement_date: '2015-06-03'
+- id: q8
+  added_date: '2026-05-16'
+  text: |-
+    The documentary suggests that after Geller's handlers tried to harness his psychic powers to doing everything from knocking out radar stations ahead of the Israel Air Force's fateful flight to Entebbe, Uganda, to influencing the Russians to sign the 1987 Nuclear Reduction Treaty. He told me he was never paid for his efforts, and that he always refused to do negative things.
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶ BBC-documentary+1
+  significance: 'Article reporting of the BBC-documentary claims about Geller''s claimed operational uses — Entebbe radar and 1987 Nuclear Reduction Treaty Russians; Geller''s never-paid and never-do-negative claims to Kra-Oz'
+  statement_date: '2015-06-03'
+- id: q9
+  added_date: '2026-05-16'
+  text: |-
+    I can tell you that the FBI asked me to convince Russian diplomats to defect. They made whole parties in Long Island, I mingled there, I beamed my mind,
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶ FBI-defection
+  significance: Geller's account of the FBI asking him — Long Island parties, mingled with Russian diplomats, claimed beaming-of-mind to influence defection
+  statement_date: '2015-06-03'
+- id: q10
+  added_date: '2026-05-16'
+  text: |-
+    I walked up to her and handed her a marker. I told her 'Golda, go to the restroom, close the door, draw something, don't show it to anyone, get out, look in my eyes, and I'll draw it.' I'm the only person who ever sent the prime minister to the toilet!
+  source:
+    path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
+    location: ¶ Golda-Meir-party
+  significance: 'Geller''s account of the encounter with Golda Meir at a general''s house party — Geller asked Meir to draw something in the restroom and reproduce it via telepathy; the encounter that preceded Meir''s next-day Israeli-radio remark that Geller calls the beginning of his career'
+  statement_date: '2015-06-03'
+entities_referenced:
+- id: e1
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Uri Geller
+  wrap_path: /people/uri-geller
+  context_summary: Interview subject — the article is a long-form profile + Q&A with Geller at his Sonning residence
+- id: e2
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Tal Kra-Oz
+  wrap_path: /people/tal-kra-oz
+  context_summary: 'Article author — Israeli writer based in Tel Aviv; byline ''Tal Kra-Oz'' on the Tablet Magazine piece'
+- id: e3
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Aharon Yariv
+  wrap_path: /people/aharon-yariv
+  context_summary: 'Aman chief (IDF Military Intelligence, 1964-1972); per Geller''s account in the article, summoned Geller to a meeting in Tel Aviv after Yoav Shaham''s death'
+- id: e4
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Meir Amit
+  wrap_path: /people/meir-amit
+  context_summary: 'Mossad director (1963-1968); per Geller''s account, was spoken to by Yoav Shaham about Geller before Shaham''s death'
+- id: e5
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Yoav Shaham
+  wrap_path: /people/yoav-shaham
+  context_summary: 'Mossad agent at the Cyprus bed-and-breakfast Geller''s stepfather ran; per Geller''s account, gave Geller a courier job at age 12 or 13 and was later killed in the West Bank as a commander in the paratroopers'
+- id: e6
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Golda Meir
+  wrap_path: /people/golda-meir
+  context_summary: 'Prime Minister of Israel; per Geller''s account, met him at a general''s house party and gave him the ''Don''t ask me, ask Uri Geller'' Israeli radio quote that launched his career'
+- id: e7
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Michael Jackson
+  wrap_path: /people/michael-jackson
+  context_summary: 'Geller''s friend; per Geller''s account in the article, Jackson agreed to be the best man at Geller''s renewal-of-wedding-vows ceremony with Rabbi Shmuley Boteach'
+- id: e8
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: Stanford Research Institute
+  wrap_path: /organizations/stanford-research-institute
+  context_summary: SRI conducted the 1970s tests of Geller mentioned in the article; the article reports those tests were sponsored by the CIA
+- id: e9
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: Mossad
+  wrap_path: /organizations/mossad
+  context_summary: 'Israeli intelligence service; per Geller''s account, his stepfather''s Cyprus bed-and-breakfast was a Mossad safe house from which agents would go to Damascus, Jordan, Egypt'
+- id: e10
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: Tablet Magazine
+  wrap_path: /organizations/tablet-magazine
+  context_summary: Publication venue — the article appeared in Tablet Magazine on June 03, 2015
+- id: e11
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: BBC
+  wrap_path: /organizations/bbc
+  context_summary: 'Article reports on the BBC documentary ''The Secret Life of Uri Geller: Psychic Spy?'' directed by Vikram Jayanti (2013), which the article describes in detail'
+naming_quirks: []

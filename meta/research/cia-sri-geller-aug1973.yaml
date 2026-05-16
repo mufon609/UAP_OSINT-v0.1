@@ -1,0 +1,198 @@
+id: meta/research/cia-sri-geller-aug1973
+type: research-artifact
+schema_version: 1
+target_node: documents/cia-sri-geller-aug1973
+status: active
+created: '2026-05-16'
+primary_sources:
+- path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+  format: pdf
+  extracted_text_path: /tmp/scratch-cia-sri-geller-aug1973-0.txt
+  pdf_metadata:
+    title: CIA-RDP79-00999A000300030027-0.TIF
+    creator: Adobe Acrobat 15.16
+    producer: Adobe Acrobat 15.16 Image Conversion Plug-in
+    creation_date: Fri Jun 24 13:44:27 2016 EDT
+    mod_date: Fri Jun 24 13:44:27 2016 EDT
+    pages: 31
+document_intrinsic:
+  internal_title: EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973
+  internal_date: 'August 13, 1973'
+  classification: Approved For Release 2003/03/28
+  classification_markings_on_document: 'Approved For Release 2003/03/28 : CIA-RDP79-00999A000300030027-0 (release marking on every page)'
+  authors_per_document:
+  - R. Targ
+  pages: 31
+context_extrinsic:
+  display_title: 'CIA SRI Geller Experiments — August 4-11, 1973 (CIA-RDP79-00999A000300030027-0)'
+  primary_source_url: https://www.cia.gov/readingroom/docs/CIA-RDP79-00999A000300030027-0.pdf
+  quote_attribution: 'R. Targ, ''EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973'', CIA-RDP79-00999A000300030027-0, August 13, 1973'
+  provenance:
+  - step: Experiments conducted at SRI
+    date: '1973-08-04'
+    entity: SRI Life Sciences Division (Aug 4-8) + SRI Engineering building computer facilities (Aug 9-11), Menlo Park, California
+    verified: ✅ Confirmed — document attests an eight-day experimental period August 4-11, 1973
+  - step: Cover memo authored
+    date: '1973-08-13'
+    entity: R. Targ
+    verified: ✅ Confirmed — document page header carries 'August 13, 1973  R. Targ' on each text page (pp. 3, 8, 16, 27)
+  - step: Approved for release
+    date: '2003-03-28'
+    entity: Central Intelligence Agency
+    verified: '✅ Confirmed — release marking ''Approved For Release 2003/03/28 : CIA-RDP79-00999A000300030027-0'' on every page'
+  - step: Scanned to TIF / Image Container PDF
+    date: '2016-06-24'
+    entity: CIA Reading Room (Adobe Acrobat 15.16 Image Conversion Plug-in)
+    verified: '✅ Confirmed — PDF metadata Title CIA-RDP79-00999A000300030027-0.TIF; CreationDate Fri Jun 24 13:44:27 2016 EDT'
+  - step: Mirrored to Internet Archive (stargatefiles collection)
+    date: '2016-06-25'
+    entity: Michael Best / That 1 Archive (per stargatefiles collection metadata)
+    verified: '✅ Confirmed — archive.org item CIA-RDP79-00999A000300030027-0 publicdate 2016-06-25T05:46:58Z'
+  - step: Archived locally
+    date: '2026-05-16'
+    entity: UAP_OSINT REFACTOR repository
+    verified: ✅ Confirmed — sha256 verified via sources/manifest.yaml (parent PDF + .txt clean-text sibling registered)
+description: 'Records of picture drawing experiments performed with Uri Geller ([`/people/uri-geller`]) at SRI ([`/organizations/stanford-research-institute`]) over the eight days August 4 through August 11, 1973. Text pages are dated August 13, 1973 with R. Targ ([`/people/russell-targ`]). Approved For Release 2003/03/28.
+
+
+  The OBJECTIVE on page 1: ''to verify Geller''s apparent paranormal perception under carefully controlled conditions and to head toward an understanding of the physical and psychological variables underlying his apparent ability''. In each of the eight days the experimenters separated Geller from the target material either by an electrically isolated shielded room or by the isolation provided by having the targets drawn on the East Coast. Six days of work were performed with the double-walled shielded room used for EEG research in the Life Sciences Division of SRI, locked by an inner and outer door each secured with a refrigerator-type locking mechanism. On Thursday August 9 the experiments moved to a new shielded room in the Engineering building, about 150 feet down the hall and around a corner from the computer room, to make use of the computer facilities available there.
+
+
+  Page 1 records that ''as a result of Geller''s success in this experimental period, we consider that he has demonstrated his paranormal perceptual ability in a convincing and unambiguous manner''. The same page also records that six days of work were performed with the Life Sciences shielded room and that good results were obtained on the four days when there was no openly skeptical observer. Target and Geller response across the eight days are shown in the text and attached collection of drawings: ''fuse'' / firecracker (a cylinder with noise coming out of it, drum); ''bunch'' / bunch of grapes (drops of water coming out of the picture, 24 grapes in both target and response); a man which evolved through the drawing process into a devil with a trident (Sunday August 5 with Puthoff ([`/people/hal-puthoff`]) inside the room with Geller and Targ in the experimenter''s office about a half mile away with the drawing; Garden of Eden picture; Geller drew the trident but not the man); the solar system without orbit lines (Geller''s response: ''space''); a pure clairvoyance task with a rabbit (passed); a tree and an envelope with EEG apparatus (passed); a camel (horse); the Golden Gate Bridge (curved lines with squares, passed); a flying sea gull (flying swan over a hill); a kite drawn on the face of the TV screen by the computer''s graphics program (square with the diagonals drawn in, then triangular airplanes); a church drawn and stored in the memory of the computer (passed); an arrow through a heart drawn on the face of the TV tube with the intensity turned off (arrow inside a suitcase); a long distance experiment with an East Coast scientist (two peaked mountains with a sun in the upper right / two arches side by side with a circle in the upper right); and a Saturday August 11 long distance experiment with another East Coast scientist who chose a cross-sectional view of the brain (Geller writing ''medical'', ''organic'', ''living'', ''aviation'', ''architecture'', and a drawing that did somewhat resemble an anatomical cross-section).
+
+  '
+quotes:
+- id: q1
+  added_date: '2026-05-16'
+  text: |-
+    EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1, ¶ title'
+  significance: Document title — verbatim internal-title attestation
+  statement_date: '1973-08-13'
+- id: q2
+  added_date: '2026-05-16'
+  text: |-
+    The objective of this group of experimental sessions is to verify Geller's apparent paranormal perception under carefully controlled conditions and to head toward an understanding of the physical and psychological variables underlying his apparent ability.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1, ¶ OBJECTIVE'
+  significance: Stated objective of the experimental program
+  statement_date: '1973-08-13'
+- id: q3
+  added_date: '2026-05-16'
+  text: |-
+    In each of the eight days of this experimental period we conducted picture drawing experiments. In these experiments Geller was separated from the target material either by an electrically isolated shielded room or by the isolation provided by having the targets drawn on the East Coast.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1, ¶ EXPERIMENTAL PROGRAM'
+  significance: Experimental-period framing — eight days, shielded-room isolation or East Coast remote-target isolation
+  statement_date: '1973-08-13'
+- id: q4
+  added_date: '2026-05-16'
+  text: |-
+    As a result of Geller's success in this experimental period, we consider that he has demonstrated his paranormal perceptual ability in a convincing and unambiguous manner.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1, ¶ EXPERIMENTAL PROGRAM'
+  significance: SRI experimenter conclusion on the eight-day period — the load-bearing quote cited by Geller's biography and downstream Stargate-history accounts
+  statement_date: '1973-08-13'
+- id: q5
+  added_date: '2026-05-16'
+  text: |-
+    Saturday, August 4. Two drawing experiments were conducted this day. In both of these, Geller was closeted in an opaque, acoustically and electrically shielded room. This room is the double-walled shielded room used for EEG research in the Life Sciences Division of SRI. It is locked by means of an inner and outer door, each of which is secured with a refrigerator-type locking mechanism.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1, ¶ Saturday, August 4'
+  significance: Shielded-room facility description — double-walled EEG-research room, Life Sciences Division SRI; refrigerator-type locking mechanism
+  statement_date: '1973-08-13'
+- id: q6
+  added_date: '2026-05-16'
+  text: |-
+    In this work the target picture is never discussed by the experimenters after the picture is drawn or brought near the shielded room. The intercom operates only from the inside of the room to the outside, except when the push-to-talk switch is depressed on the outside of the room. In our detailed examination of the shielded room and the protocol used in these experiments no sensory leakage has been found, nor has any defect in the protocol been brought to our attention.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 3, ¶4'
+  significance: Protocol-controls attestation — one-way intercom, no sensory leakage found in detailed examination
+  statement_date: '1973-08-13'
+- id: q7
+  added_date: '2026-05-16'
+  text: |-
+    Sunday, August 5. Geller is locked in the shielded room and the target is drawn in the experimenter's office about a half mile away. The target selected from the dictionary was an outline drawing of a man, which evolved through the drawing process into a devil with a trident. To start the experiment, Puthoff, who was with Geller, called Targ, who was with the drawing.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 3, ¶ Sunday, August 5'
+  significance: Per-day narrative — Puthoff with Geller, Targ with drawing (half-mile separation); primary attestation of the SRI experimenter roles
+  statement_date: '1973-08-13'
+- id: q8
+  added_date: '2026-05-16'
+  text: |-
+    Monday, August 6. The experiment to be done this day was a pure clairvoyance task. A picture was drawn by a scientist outside of the usual experimental group. The picture was locked in the shielded room before Geller's arrival at SRI. Geller was then led by the experimenters to the shielded room, and asked to draw the picture inside the room. He drew a number of pictures, all of which he rejected as not being applicable. He said that he got no clear impression and passed.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 8, ¶ Monday, August 6'
+  significance: Per-day narrative — clairvoyance task with target drawn by outside-of-group scientist; Geller passed on the rabbit target
+  statement_date: '1973-08-13'
+- id: q9
+  added_date: '2026-05-16'
+  text: |-
+    Tuesday, August 7. This day two target pictures were attempted with Geller in the shielded room. He was connected to an EEG apparatus to allow measurement of his brain waves at the time that he was attempting to perceive a hidden picture. The two target pictures were a tree and an envelope. He experienced difficulty, did not make a drawing that corresponded to either drawing and passed.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 8, ¶ Tuesday, August 7'
+  significance: Per-day narrative — EEG apparatus session; tree and envelope targets; Geller passed on both
+  statement_date: '1973-08-13'
+- id: q10
+  added_date: '2026-05-16'
+  text: |-
+    In these experiments conducted with this shielded room, six day's work was done. Good results were obtained on the four days when there was no openly skeptical observer (except the experimenters whom Geller has learned to accept).
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 16, ¶5'
+  significance: Six-day summary — four success days when no openly skeptical observer present (Targ note on observer effect)
+  statement_date: '1973-08-13'
+- id: q11
+  added_date: '2026-05-16'
+  text: |-
+    Thursday, August 9. We moved the experiments to a new shielded room from the Life Science to the Engineering building in order to make use of the computer facilities available there.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 16, ¶ Thursday, August 9'
+  significance: Facility transition — Life Sciences shielded room to Engineering-building shielded room for computer-target experiments
+  statement_date: '1973-08-13'
+- id: q12
+  added_date: '2026-05-16'
+  text: |-
+    These latter two experiments admit of at least two hypotheses which will require further work to differentiate: (1) clairvoyant perception of information stored in the computer, or (2) telepathy, since there were several people in the computer room, all of whom knew the nature of the target that was stored.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 27, ¶4'
+  significance: Mechanism-hypothesis framing — Targ identifies two competing mechanisms (clairvoyance vs telepathy) the computer-storage experiments cannot distinguish
+  statement_date: '1973-08-13'
+entities_referenced:
+- id: e1
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Uri Geller
+  wrap_path: /people/uri-geller
+  context_summary: Test subject in the eight-day SRI experimental period August 4-11, 1973
+- id: e2
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Russell Targ
+  wrap_path: /people/russell-targ
+  context_summary: 'Cover-memo author; the page header ''August 13, 1973  R. Targ'' identifies him as the document''s author; primary SRI experimenter (Sunday August 5 narrative ''Targ, who was with the drawing'')'
+- id: e3
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Hal Puthoff
+  wrap_path: /people/hal-puthoff
+  context_summary: 'Co-experimenter at SRI (Sunday August 5 narrative ''Puthoff, who was with Geller'')'
+- id: e4
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: Stanford Research Institute
+  wrap_path: /organizations/stanford-research-institute
+  context_summary: SRI hosted the experimental sessions across two divisions — Life Sciences Division (shielded room used for EEG research; August 4-8) and the Engineering building (computer facilities; August 9-11)
+naming_quirks: []

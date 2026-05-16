@@ -81,12 +81,15 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (6)
+### Documents (9)
 
 | Node | Status | Kind |
 |---|---|---|
+| `/documents/cia-sri-geller-aug1973` | primary-source-confirmed | gov-doc |
 | `/documents/eo-14347-restoring-department-of-war` | primary-source-confirmed | gov-doc |
+| `/documents/nature-1974-targ-puthoff-information-transmission` | primary-source-confirmed | non-gov-doc |
 | `/documents/pentagon-uapda-revisions-2023-11` | primary-source-confirmed | gov-doc |
+| `/documents/tablet-spy-who-bent-a-million-spoons` | primary-source-confirmed | non-gov-doc |
 | `/documents/written-testimony-fravor-2023` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-graves-2023` | primary-source-confirmed | gov-doc |
 | `/documents/written-testimony-grusch-2023` | primary-source-confirmed | gov-doc |
@@ -138,13 +141,21 @@ at `meta/topic/research-queue.md` is a suggestion, not a mandate. Confirm
 scope, archetype/kind selection, and primary-source availability before
 starting.
 
-**One *new* node per build session — hard rule.** Do not scaffold a
-second node until the first is fully populated, passes `validate.py`
-(including quote-verification), and is committed. Batch node
-*construction* caused the 2026-04-17 pilot failure that established
-this rule. The rule restricts scaffolding new nodes only — edits,
-audits, fixes, rebuilds, and multi-node sweeps across already-built
-nodes are not restricted.
+**One *new* node per build session — applies to person and
+organization nodes only.** Do not scaffold a second person or
+organization node until the first is fully populated, passes
+`validate.py` (including quote-verification), and is committed.
+Batch construction of synthesis-heavy node types — those carrying
+large free-prose surfaces like `background`, `uap_relevance`,
+`credibility_notes`, `vouching_chain` — caused the 2026-04-17 pilot
+failure that established this rule. Document, event, transcript,
+media, location, finding, and investigation nodes carry lighter
+synthesis surfaces (most of their body is verbatim source via Key
+Passages); the verbatim-quote check is sufficient procedural backstop
+for these types, and they may be scaffolded and built in batches
+within a single session. The rule restricts scaffolding new nodes
+only — edits, audits, fixes, rebuilds, and multi-node sweeps across
+already-built nodes are not restricted for any type.
 
 **Source-read-first — hard rule.** Every `✅ Confirmed — verified verbatim`
 quote must rest on text you extracted from the archived source file in

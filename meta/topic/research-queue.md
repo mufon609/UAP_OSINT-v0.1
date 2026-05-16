@@ -208,25 +208,39 @@ The Stanford Research Institute parapsychology investigation 1972-1990 is
 currently anchored in this repository via the Stanford Research Institute
 ([`/organizations/stanford-research-institute`]) org node, the Hal Puthoff
 ([`/people/hal-puthoff`]) and Russell Targ ([`/people/russell-targ`])
-person nodes, and the newly-built Uri Geller ([`/people/uri-geller`])
-person node. The institutional record of the program is documented at the
-SRI / Puthoff / Targ nodes through three CIA / DIA / AIR sources — the
-1977 Kress Studies in Intelligence paper, the 1993 DIA STAR GATE Project
-Overview, and the 1995 American Institutes for Research evaluation — none
-of which name early test subjects by name. The Geller node currently
-anchors its SRI cross-reference on (a) Geller's own biographical
-self-attestation that Nature published a paper on his work at SRI and
-(b) Russell Targ's 2007 retrospective comment in the Brendan Burton
-article that "Uri was at our laboratory at SRI for six weeks in 1973".
-Several SRI-internal primary-source documents would close per-subject
-identification gaps and resolve chronology discrepancies across the
-cluster.
+person nodes, the Uri Geller ([`/people/uri-geller`]) person node, and
+three newly-built document nodes from the 2026-05-16 archival sweep:
+the 1974 Nature paper ([`/documents/nature-1974-targ-puthoff-information-transmission`])
+which names Geller and Pat Price as the foundational SRI subjects;
+the August 1973 CIA SRI Geller report
+([`/documents/cia-sri-geller-aug1973`]) which records the eight-day
+Aug 4-11 1973 picture-drawing experiments at SRI; and the 2015 Tablet
+Magazine interview ([`/documents/tablet-spy-who-bent-a-million-spoons`])
+which carries Geller's own account of his Israeli-intelligence
+recruitment chain through Yoav Shaham, Meir Amit, and Aharon Yariv.
+
+The 2026-05-16 archival sweep also added nine other CIA STARGATE-era
+primary sources to the manifest as archived-only (cite-from-existing-
+nodes targets, not standalone /documents/ nodes): the Appendix I
+parallel-copy of the Aug 1973 Geller report
+(CIA-RDP96-00791R000100480003-3), the Dec 1972 – Jan 1973 progress report
+on contract 1471(S)73 (CIA-RDP96-00787R000100180001-3), the Oct 1973
+Technical Proposal Part One (CIA-RDP96-00791R000100420002-0), the
+Progress Report No. 1 with 13 numbered Geller experiments
+(CIA-RDP96-00787R000700100004-2), the 1975 SRI Final Report Part Two
+(CIA-RDP96-00791R000300030004-9 — also the queue item below), the
+Part One Executive Summary (CIA-RDP96-00787R000700050001-1), the Kress
+1977 parallel-copy (CIA-RDP96-00791R000200030040-0), and the 1995 CIA
+Public Affairs Q&A (CIA-RDP96-00791R000100030062-7).
+
+The remaining open queue items below close per-subject identification
+gaps (Ingo Swann, Hella Hammid) and the SRI-internal chronology question
+(The Record daily log) that the new corpus does not fully resolve.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/documents/puthoff-targ-the-record-daily-log` | document / non-gov-doc | High | SRI-internal daily log documenting each Geller visit window. Per web-research audit on the Uri Geller node (rumor r1, 2026-05-16), "The Record" documents two distinct Geller visits — a five-week period in late 1972 and an eight-day visit August 4-11 1973 — that Targ's 2007 Burton-interview recollection of "six weeks in 1973" may collapse into a single period. Resolves the SRI chronology across SRI / Puthoff / Targ / Geller nodes; potential finding-node candidate (Targ retrospective vs SRI internal log). | Published by Puthoff-Targ with consent; archival route TBD |
-| `/documents/nature-1974-targ-puthoff-information-transmission` | document / non-gov-doc (article) | High | The Targ-Puthoff 1974 Nature paper ('Information transmission under conditions of sensory shielding', Nature 251, 602-607, 18 October 1974, DOI 10.1038/251602a0). Currently archived as paywall HTML only at `sources/news/nature-1974-targ-puthoff-information-transmission-abstract.html` (Nature.com paywall landing page); full paper body not archived. Per public record names Geller and Pat Price as test subjects in the body text. Already a broken-link stub with 3+ refs (Puthoff×2, Targ×1, now Geller). | Paywall PDF ($39.95) or institutional/library access route |
-| `/documents/sri-perceptual-augmentation-techniques-final-report-1975` | document / non-gov-doc | Medium | The SRI internal Final Report by Puthoff and Targ (December 1, 1975), cited by the 1995 American Institutes for Research evaluation. Currently a broken-link stub on the SRI artifact. May or may not name Geller specifically. | DTIC / NTIS or CIA Reading Room search |
+| `/documents/puthoff-targ-the-record-daily-log` | document / non-gov-doc | High | SRI-internal daily log documenting each Geller visit window. Per web-research audit on the Uri Geller node (rumor r1, 2026-05-16), "The Record" documents two distinct Geller visits — a five-week period in late 1972 and an eight-day visit August 4-11 1973 — that Targ's 2007 Burton-interview recollection of "six weeks in 1973" may collapse into a single period. The Dec 1972 – Jan 1973 contract progress report (CIA-RDP96-00787R000100180001-3, archived 2026-05-16) attests the earlier SRI engagement window; the Aug 1973 report (now built at /documents/cia-sri-geller-aug1973) attests the August window — but the chronology bridge between the two windows and Targ's "six weeks in 1973" recollection still requires "The Record". | Published by Puthoff-Targ with consent; archival route TBD |
+| `/documents/sri-perceptual-augmentation-techniques-final-report-1975` | document / non-gov-doc | Medium | The SRI internal Final Report by Puthoff and Targ (December 1, 1975), cited by the 1995 American Institutes for Research evaluation. Archived 2026-05-16 as CIA-RDP96-00791R000300030004-9 (5.7MB OCR-scan PDF); document-node build pending. May or may not name Geller specifically — confirmable from the archived file. | Archived in manifest; awaits node build |
 | `/people/ingo-swann` | person / institutional-actor | Medium | 1972 magnetometer subject per Kress 1977; named by Targ IRVA 2002 retrospective as foundational SRI subject. Subject node closes the early-SRI-subjects cluster alongside Geller and Pat Price. | Public record + IRVA bio |
 | `/people/pat-price` | person / institutional-actor | Medium | 1973 'third sensitive subject' per Kress 1977; named by Targ IRVA 2002 retrospective. Per public record also named alongside Geller in the 1974 Nature paper. | Public record |
 | `/people/hella-hammid` | person / institutional-actor | Low | 1974 'control subject' brought in to supplement Pat Price and Ingo Swann per Targ IRVA 2009 retrospective; ten-year SRI tenure 1974-1984. | Public record (IRVA bio) |

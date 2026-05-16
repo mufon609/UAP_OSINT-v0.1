@@ -11159,3 +11159,1223 @@
     key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
   tokens: [2024-01-19]
 
+- ts: 2026-05-16T18:30:30Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T18:30:30Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T18:52:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T18:52:46Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T19:09:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T19:09:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T19:24:25Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "<unicode string>", line 42, column 78:
+         ... Approved For Release 2003/03/28 : CIA-RDP79-00999A000300030027-0 ... 
+                                             ^
+
+- ts: 2026-05-16T19:24:26Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "<unicode string>", line 42, column 78:
+         ... Approved For Release 2003/03/28 : CIA-RDP79-00999A000300030027-0 ... 
+                                             ^
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[0]: missing required 'id' field
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[1]: missing required 'id' field
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[2]: missing required 'id' field
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[3]: missing required 'id' field
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[0] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[0] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[0] (None): missing 'name'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[1] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[1] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[1] (None): missing 'name'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[2] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[2] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[2] (None): missing 'name'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[3] ('?'): missing required lifecycle field 'id'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[3] ('?'): missing required lifecycle field 'added_date'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[3] (None): missing 'name'
+
+- ts: 2026-05-16T19:24:53Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 40 significant token(s) not in source (prose-drift check — contributor review): 2016, able, approximately, archive, carries, computer-drawn, computer-stored, conclusion, … (+32 more — pass --verbose for full list)
+  tokens: [2016, able, approximately, archive, carries, computer-drawn, computer-stored, conclusion, cover, cylinder-with-noise, document, documenting, drops-of-water, eight-day, entries, four-and-a-half, garden-of-eden, institute, internet, june, long-distance, march, matching, memo, mirrored, narrative, pairs, per-day, prepared, remainder, reproducing, series, stanford, stargatefiles, stated, target-and-response, twenty-eight, two-arches-with-circle, two-peaked-mountains, verifying]
+
+- ts: 2026-05-16T19:25:26Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 40 significant token(s) not in source (prose-drift check — contributor review): 2016, able, approximately, archive, carries, computer-drawn, computer-stored, conclusion, … (+32 more — pass --verbose for full list)
+  tokens: [2016, able, approximately, archive, carries, computer-drawn, computer-stored, conclusion, cover, cylinder-with-noise, document, documenting, drops-of-water, eight-day, entries, four-and-a-half, garden-of-eden, institute, internet, june, long-distance, march, matching, memo, mirrored, narrative, pairs, per-day, prepared, remainder, reproducing, series, stanford, stargatefiles, stated, target-and-response, twenty-eight, two-arches-with-circle, two-peaked-mountains, verifying]
+
+- ts: 2026-05-16T19:28:37Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 5 significant token(s) not in source (prose-drift check — contributor review): becoming, credited, describe, header, states
+  tokens: [becoming, credited, describe, header, states]
+
+- ts: 2026-05-16T19:30:11Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): cover
+  tokens: [cover]
+
+- ts: 2026-05-16T19:30:58Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e3' ('Hal Puthoff') wrap_path '/people/hal-puthoff' does not appear as a [`/people/hal-puthoff`] link in the node
+
+- ts: 2026-05-16T19:33:25Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T19:33:25Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T19:35:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T19:35:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T19:42:13Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/tablet-spy-who-bent-a-million-spoons.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 33 significant token(s) not in source (prose-drift check — contributor review): account, aman, appearance, arriving, bringing, chain, charity, childhood, … (+25 more — pass --verbose for full list)
+  tokens: [account, aman, appearance, arriving, bringing, chain, charity, childhood, conducted, covers, delivering, describes, 'don''t', evidentiary, frames, friendship, humiliation, identified, include, load-bearing, long-form, noting, picture-drawing, published, quote, records, recruitment, relates, start, tasking, topics, web, weight]
+
+- ts: 2026-05-16T19:43:49Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/tablet-spy-who-bent-a-million-spoons.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 12 significant token(s) not in source (prose-drift check — contributor review): asking, don't, general's-house, gives, israeli-radio, material, opens, question, … (+4 more — pass --verbose for full list)
+  tokens: [asking, 'don''t', 'general''s-house', gives, israeli-radio, material, opens, question, remark, renewal, words, writes]
+
+- ts: 2026-05-16T19:45:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/tablet-spy-who-bent-a-million-spoons.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): words
+  tokens: [words]
+
+- ts: 2026-05-16T19:45:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/tablet-spy-who-bent-a-million-spoons.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 137 NOT FOUND in sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html: "I can tell you that the FBI asked me to convince Russian diplomats to defect. Th..."
+
+- ts: 2026-05-16T19:45:47Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/tablet-spy-who-bent-a-million-spoons.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 149 NOT FOUND in sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html: "One day, at a general's house, Golda Meir was at the party. I walked up to her a..."
+
+- ts: 2026-05-16T19:46:08Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/tablet-spy-who-bent-a-million-spoons.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 137 NOT FOUND in sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html: "I can tell you that the FBI asked me to convince Russian diplomats to defect. Th..."
+
+- ts: 2026-05-16T19:46:08Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/tablet-spy-who-bent-a-million-spoons.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 149 NOT FOUND in sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html: "One day, at a general's house, Golda Meir was at the party. I walked up to her a..."
+
+- ts: 2026-05-16T19:46:10Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/tablet-spy-who-bent-a-million-spoons.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 137 NOT FOUND in sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html: "I can tell you that the FBI asked me to convince Russian diplomats to defect. Th..."
+
+- ts: 2026-05-16T19:46:10Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/tablet-spy-who-bent-a-million-spoons.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 149 NOT FOUND in sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html: "One day, at a general's house, Golda Meir was at the party. I walked up to her a..."
+
+- ts: 2026-05-16T20:21:28Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 13 significant token(s) not in source (prose-drift check — contributor review): acknowledgements, authors, cia, cia-rdp96-00787r000100220001-8, concludes, correlated, double-walled, imperfect, … (+5 more — pass --verbose for full list)
+  tokens: [acknowledgements, authors, cia, cia-rdp96-00787r000100220001-8, concludes, correlated, double-walled, imperfect, mirror, monitored, others, presents, reading]
+
+- ts: 2026-05-16T20:22:45Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 2 significant token(s) not in source (prose-drift check — contributor review): contains, thanks
+  tokens: [contains, thanks]
+
+- ts: 2026-05-16T20:25:03Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T20:25:03Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T20:28:17Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T20:28:17Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T20:33:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T20:33:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T20:37:37Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: while parsing a block mapping
+      in "<unicode string>", line 1, column 1:
+        id: meta/research/cia-sri-geller ... 
+        ^
+    expected <block end>, but found '<scalar>'
+      in "<unicode string>", line 61, column 878:
+         ... er and Targ in the experimenter's office about a half mile away  ... 
+                                             ^
+
+- ts: 2026-05-16T20:39:13Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: while parsing a block mapping
+      in "<unicode string>", line 1, column 1:
+        id: meta/research/cia-sri-geller ... 
+        ^
+    expected <block end>, but found '<scalar>'
+      in "<unicode string>", line 61, column 878:
+         ... er and Targ in the experimenter's office about a half mile away  ... 
+                                             ^
+
+- ts: 2026-05-16T20:39:13Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T20:39:13Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T20:39:27Z
+  source: validator
+  check: artifact_parse
+  phase: review-coverage
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: while parsing a block mapping
+      in "/home/neural/Desktop/uap-research/REFACTOR/meta/research/cia-sri-geller-aug1973.yaml", line 1, column 1
+    expected <block end>, but found '<scalar>'
+      in "/home/neural/Desktop/uap-research/REFACTOR/meta/research/cia-sri-geller-aug1973.yaml", line 61, column 878
+
+- ts: 2026-05-16T20:41:20Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T20:41:20Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T20:41:34Z
+  source: validator
+  check: boundary
+  phase: review-coverage
+  node: meta/research/cia-sri-geller-aug1973.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
+
+- ts: 2026-05-16T20:43:29Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T20:43:29Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 45 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING"
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 58 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Dr. Harold E. Puthoff and Russell Targ"
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 70 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Published in NATURE Magazine, October, 1974"
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 82 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "We present results of experiments suggesting the existence of one or more"
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 84 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "perceptual modalities through which individuals obtain information about their"
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 86 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "environment, although this information is not presented to any known sense."
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 98 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "First, we conducted experiments with Mr. Uri Geller in which we examined his abi..."
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 112 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Second, we con-ducted double-blind experiments with Mr. Pat Price, in which we m..."
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 125 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "To prevent sensory cueing of the target information, Experiments 1 through 10 we..."
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 138 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Experiments 11 through 13 were carried out in SRI's Engineering Building, to mak..."
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 151 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "A channel exists whereby information about a remote location can be obtained by ..."
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 164 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Our observation of the phenomena leads us to conclude that experiments in the ar..."
+
+- ts: 2026-05-16T20:45:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 179 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "This research was sponsored by The Foundation for Parasensory Investiga-tion, Ne..."
+
+- ts: 2026-05-16T20:46:08Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    prose-drift check: no source text could be extracted from primary_sources — check skipped (pdftotext missing? source files present on disk?)
+
+- ts: 2026-05-16T20:46:08Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T20:46:08Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token '11' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token '54' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Bonnar' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'City' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Cox' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'EEGs' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Faraday' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Fig' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Finally' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'First' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Foundation' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Investigation' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Judith' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Mr' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Mrs' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'New' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Noetic' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Parasensory' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Sciences' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Second' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Skutch' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'Table' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:22Z
+  source: validator
+  check: description_token_drift
+  phase: review-coverage
+  node: meta/research/nature-1974-targ-puthoff-information-transmission.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Description drift: token 'York' not found in source, context_extrinsic, document_intrinsic, naming_quirks canonical, or entities_referenced names. Either correct the description to match available grounding, or add the supporting data to the artifact.
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 45 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "INFORMATION TRANSMISSION UNDER CONDITIONS OF SENSORY SHIELDING"
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 58 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Dr. Harold E. Puthoff and Russell Targ"
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 70 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Published in NATURE Magazine, October, 1974"
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 82 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "We present results of experiments suggesting the existence of one or more"
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 84 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "perceptual modalities through which individuals obtain information about their"
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 86 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "environment, although this information is not presented to any known sense."
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 98 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "First, we conducted experiments with Mr. Uri Geller in which we examined his abi..."
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 112 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Second, we con-ducted double-blind experiments with Mr. Pat Price, in which we m..."
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 125 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "To prevent sensory cueing of the target information, Experiments 1 through 10 we..."
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 138 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Experiments 11 through 13 were carried out in SRI's Engineering Building, to mak..."
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 151 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "A channel exists whereby information about a remote location can be obtained by ..."
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 164 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "Our observation of the phenomena leads us to conclude that experiments in the ar..."
+
+- ts: 2026-05-16T20:46:58Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: documents/nature-1974-targ-puthoff-information-transmission.md
+  node_type: document
+  severity: error
+  message: |
+    Quote at line 179 NOT FOUND in sources/government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf: "This research was sponsored by The Foundation for Parasensory Investiga-tion, Ne..."
+
+- ts: 2026-05-16T20:49:04Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T20:49:04Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T20:56:50Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T20:56:50Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
