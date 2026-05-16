@@ -58,6 +58,8 @@ primary_sources:
   format: html
 - path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
   format: pdf
+- path: news/earthtech-team-20260516.html
+  format: html
 
 document_intrinsic:
   full_name: 'Harold E. Puthoff'
@@ -156,6 +158,42 @@ quotes:
   observation_type: relayed
   statement_date: '2010-03-29'
   significance: 'Methodological conclusion of the DIRD. Puthoff explicitly characterizes the engineering implementability of vacuum/metric engineering as ''premature'' to even guess about a critical path for development at the technological evolution level of 2010, while arguing that ''only through rigorous inquiry'' can the possibilities be properly assessed. The hedge frames the DIRD as a basic-research substrate document for the AAWSAP program, not an implementation roadmap.'
+
+- id: q7
+  added_date: '2026-05-16'
+  text: |
+    Harold (Hal) Puthoff, PhD, is President, CEO and Chairman of the Board of EarthTech International, Inc., and Director of the Institute for Advanced Studies at Austin. Earning his PhD from Stanford University in 1967 as a theoretical and experimental physicist specializing in lasers, his present research activities range from theoretical studies concerning fundamental electrodynamics, gravitation, and the quantum vacuum to laboratory studies of innovative approaches to energy generation and space propulsion.
+  source:
+    path: news/earthtech-team-20260516.html
+    location: '¶ in Puthoff Full Bio modal'
+  context: 'EarthTech International, Inc. (Puthoff''s own institution) Team page Full Bio modal opening paragraph. Self-attestation of position, education, and research focus'
+  observation_type: relayed
+  statement_date: '2026-05-16'
+  significance: 'EarthTech institutional self-attestation of Puthoff''s present positions (President, CEO and Chairman of the Board of EarthTech; Director of IASA), his Stanford PhD specialization (theoretical and experimental physicist specializing in lasers), and the current scope of his research activities — fundamental electrodynamics, gravitation, and the quantum vacuum bridging into energy generation and space propulsion. Chairman of the Board title is new on the artifact (prior SEC and TTSA sources attested President and CEO only).'
+
+- id: q8
+  added_date: '2026-05-16'
+  text: |
+    With a professional background spanning decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International, Dr. Puthoff has a publication stream in Tier-1 physics journals on electron-beam devices, lasers, quantum vacuum energy physics, general relativity models and space propulsion, is co-author of a graduate-level textbook Fundamentals of Quantum Electronics published in English, French, Russian and Chinese, and has patents issued in the laser, communications and energy fields. Dr. Puthoff regularly serves various foundations, corporations, NASA, and the DoD and intelligence communities as advisor on leading-edge technologies and future technology trends, and his awards and honors include a DoD Certificate of Commendation from NSA for his work on high-speed opto-electronic computers.
+  source:
+    path: news/earthtech-team-20260516.html
+    location: '¶ in Puthoff Full Bio modal'
+  context: 'EarthTech Full Bio modal second paragraph — career institutions, publications, advisory roles, NSA Commendation'
+  observation_type: relayed
+  statement_date: '2026-05-16'
+  significance: 'EarthTech institutional self-attestation of Puthoff''s pre-1985 career institutions (General Electric, Sperry, NSA, Stanford, SRI International) and post-1985 advisory roles (foundations, corporations, NASA, DoD, intelligence communities). The Fundamentals of Quantum Electronics textbook (English / French / Russian / Chinese translations) and the DoD Certificate of Commendation from NSA for high-speed opto-electronic computers work are both new on the artifact, as is the publication-stream taxonomy (electron-beam devices / lasers / quantum vacuum energy / general relativity / space propulsion).'
+
+- id: q9
+  added_date: '2026-05-16'
+  text: |
+    Dr. Puthoff is a member of several professional organizations, including AFIO (Assoc. of Former Intelligence Officers), is listed in such biographical reference works as Who’s Who in the World, and has been designated a Fetzer Fellow (1991) and a Fellow of the British Interplanetary Society (2012).
+  source:
+    path: news/earthtech-team-20260516.html
+    location: '¶ in Puthoff Full Bio modal'
+  context: 'EarthTech Full Bio modal third paragraph — professional organizations, biographical references, Fellow designations'
+  observation_type: relayed
+  statement_date: '2026-05-16'
+  significance: 'EarthTech institutional self-attestation of Puthoff''s AFIO membership (Association of Former Intelligence Officers — new affiliation on the artifact, corroborates his NSA + CIA + DoD + IC advisor background), the Fetzer Fellow designation (1991), and the Fellow of the British Interplanetary Society designation (2012). Both Fellow designations are dated honors that bracket his post-SRI / EarthTech-era academic positioning.'
 
 entities_referenced:
 - id: e1
@@ -411,6 +449,26 @@ entities_referenced:
   name: 'Davis (2010) AAWSA Program DIRD — Concepts for Extracting Energy From the Quantum Vacuum'
   wrap_path: '/documents/dird-24-quantum-vacuum-energy-extraction-2010'
   context_summary: 'Defense Intelligence Reference Document DIA-08-1004-007, ''Concepts for Extracting Energy From the Quantum Vacuum'', dated 6 April 2010 (ICOD 1 December 2009; UNCLASSIFIED//FOR OFFICIAL USE ONLY; 58 pages). Author: Dr. Eric W. Davis, EarthTech International (per DIA January 2018 SASC letter naming the AAWSAP DIRD authors). Produced under the same Defense Intelligence Agency, Defense Warning Office''s Advanced Aerospace Weapon System Applications (AAWSA) Program as Puthoff''s 2010-03-29 DIRD. The Acknowledgements section names H. E. Puthoff (EarthTech) first among the colleagues credited for technical contributions to that report. New unbuilt stub.'
+  references:
+  - quote_id: q5
+
+- id: e33
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'Association of Former Intelligence Officers (AFIO)'
+  wrap_path: '/organizations/afio'
+  context_summary: 'Per the EarthTech International Team page Full Bio (2026-05-16): ''Dr. Puthoff is a member of several professional organizations, including AFIO (Assoc. of Former Intelligence Officers).'' Professional organization membership corroborating Puthoff''s NSA / CIA / DoD / intelligence-community advisory background. New unbuilt stub.'
+  references:
+  - quote_id: q9
+
+- id: e34
+  added_date: '2026-05-16'
+  entity_type: organization
+  name: 'British Interplanetary Society'
+  wrap_path: '/organizations/british-interplanetary-society'
+  context_summary: 'Per the EarthTech International Team page Full Bio (2026-05-16): Puthoff ''has been designated a Fetzer Fellow (1991) and a Fellow of the British Interplanetary Society (2012).'' Academic-society Fellow designation 2012; the British Interplanetary Society is the world''s oldest space-advocacy organization (founded 1933). New unbuilt stub.'
+  references:
+  - quote_id: q9
 
 naming_quirks:
 - id: nq1
@@ -658,6 +716,25 @@ timeline:
   category: publication
   node_link: '/documents/dird-24-quantum-vacuum-energy-extraction-2010'
 
+- id: t20
+  added_date: '2026-05-16'
+  date: '1991'
+  event: 'Puthoff designated a Fetzer Fellow per the EarthTech International Team page Full Bio.'
+  source:
+    path: news/earthtech-team-20260516.html
+    location: '¶ in Puthoff Full Bio modal'
+  category: other
+
+- id: t21
+  added_date: '2026-05-16'
+  date: '2012'
+  event: 'Puthoff designated a Fellow of the [`/organizations/british-interplanetary-society`] per the EarthTech International Team page Full Bio.'
+  source:
+    path: news/earthtech-team-20260516.html
+    location: '¶ in Puthoff Full Bio modal'
+  category: other
+  node_link: '/organizations/british-interplanetary-society'
+
 affiliations:
 - id: a1
   added_date: '2026-05-16'
@@ -755,6 +832,25 @@ affiliations:
     path: news/tothestarsacademy-home-20220120.html
     location: '¶ in Hal Puthoff biographical section'
   note: 'Per the TTSA page (January 8, 2018): ''Dr. Puthoff''s professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International.'' The 2022 TTSA page (January 20, 2022) titles the role across all five institutions as ''50+ years experience as a Research Scientist at General Electric, National Security Agency, Stanford University, Sperry & SRI International''. period_start / period_end intentionally absent — both TTSA bios enumerate the institutions but attest no specific dates for the National Security Agency tenure.'
+
+- id: a11
+  added_date: '2026-05-16'
+  organization_path: '/organizations/afio'
+  role: 'Member'
+  source:
+    path: news/earthtech-team-20260516.html
+    location: '¶ in Puthoff Full Bio modal'
+  note: 'Per the EarthTech International Team page Full Bio (2026-05-16): ''Dr. Puthoff is a member of several professional organizations, including AFIO (Assoc. of Former Intelligence Officers).'' period_start / period_end intentionally absent — the EarthTech page attests current membership but no enrollment date for AFIO.'
+
+- id: a12
+  added_date: '2026-05-16'
+  organization_path: '/organizations/british-interplanetary-society'
+  role: 'Fellow'
+  period_start: '2012'
+  source:
+    path: news/earthtech-team-20260516.html
+    location: '¶ in Puthoff Full Bio modal'
+  note: 'Per the EarthTech International Team page Full Bio (2026-05-16): Puthoff ''has been designated a Fetzer Fellow (1991) and a Fellow of the British Interplanetary Society (2012).'' period_start 2012 anchors on the EarthTech page attestation of the 2012 Fellow designation; period_end intentionally absent — the EarthTech page attests current Fellow status without an end date.'
 
 relationships:
 - id: r1

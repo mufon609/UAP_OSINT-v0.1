@@ -2287,6 +2287,14 @@
   archive_status: 3
   note: 'DVIDS image-record page for David A. Kozik official portrait. Caption: ''David A. Kozik, Director Congressional Activities, Office of the Under Secretary of Defense Intelligence, poses for his official portrait in the Army portrait studio at the Pentagon in Arlington, Virginia, Dec. 27, 2017. (U.S. Army photo by William Pratt).'' Primary attestation that Kozik held the Director Congressional Activities role at OUSD(I&S) by Dec 2017 (career SES — same role at issue in the Mar 6-7 2024 Gough/Kozik exchange in FOIA 24-F-0894 re: AARO sUAS portfolio). Direct fetch 2026-05-01.'
   wayback_date: '2025-03-05'
+- url: https://www.earthtech.org/team
+  format: html
+  status: archived
+  path: news/earthtech-team-20260516.html
+  archived_date: '2026-05-16'
+  sha256: 5cf0aae3a67cbbabb95b51f674fce9205e52e2a8fb87e3da3ac09501a910a03c
+  archive_status: 1
+  note: 'EarthTech International, Inc. (Puthoff''s own institution) Team page. Verbatim Puthoff bio: President, CEO and Chairman of the Board of EarthTech International, Inc., and Director of the Institute for Advanced Studies at Austin; PhD from Stanford University 1967 as theoretical and experimental physicist specializing in lasers; career institutions General Electric / Sperry / NSA / Stanford University / SRI International; co-author of graduate-level textbook ''Fundamentals of Quantum Electronics'' (English, French, Russian, Chinese); patents in laser, communications, energy fields; DoD Certificate of Commendation from NSA for work on high-speed opto-electronic computers; AFIO (Association of Former Intelligence Officers) member; Fetzer Fellow 1991, Fellow of the British Interplanetary Society 2012. Also names Collin Puthoff (Chief Operations Officer, Director of Life Sciences) and Brendan Puthoff (CFO) as EarthTech principals; Eric Davis as Senior Science Advisor / Chief Science Officer.'
 - url: https://www.energy.gov/oha/articles/fia-24-0036
   format: pdf
   status: archived

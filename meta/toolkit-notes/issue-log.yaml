@@ -10755,3 +10755,25 @@
     key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
   tokens: [2024-01-19]
 
+- ts: 2026-05-16T15:26:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T15:26:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
