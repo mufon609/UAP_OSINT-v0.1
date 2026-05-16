@@ -9807,3 +9807,34 @@
   message: |
     Stub-linking: entity 'e36' ('Defense Advanced Research Projects Agency') wrap_path '/organizations/darpa' does not appear as a [`/organizations/darpa`] link in the node
 
+- ts: 2026-05-16T01:26:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 3 significant token(s) not in source (prose-drift check — contributor review): naming, nq12, quirk
+  tokens: [naming, nq12, quirk]
+
+- ts: 2026-05-16T01:27:14Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: error
+  message: |
+    Quote at line 249 NOT FOUND in sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf: "Then funding was discontinued in 1975; subsequent funding for RV investigation a..."
+
+- ts: 2026-05-16T01:27:23Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: error
+  message: |
+    Quote at line 249 NOT FOUND in sources/government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf: "Then funding was discontinued in 1975; subsequent funding for RV investigation a..."
+

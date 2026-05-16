@@ -67,7 +67,7 @@ context_extrinsic:
 description: 'SRI International ([`/organizations/stanford-research-institute`]) is an independent nonprofit R&D institute with deep roots in Silicon Valley, at 333 Ravenswood Ave, Menlo Park, CA 94025. Founded in 1946 by Stanford University ([`/organizations/stanford-university`]) as the Stanford Research Institute, and independent since 1970, SRI has 1,500 researchers and professional staff who work with government and commercial customers and collaborators. In 1987, SRI acquired Sarnoff Corp. ([`/organizations/sarnoff-corp`]) (formerly RCA Labs); in 2023, it received as a donation the Palo Alto Research Center ([`/organizations/parc`]) (PARC). David Parekh ([`/people/david-parekh`]) is Chief Executive Officer. The institute reports 13,000+ patents filed, 50+ spin-off companies, and 500+ R&D projects per year. Research covers Advanced Technology & Systems, Biosciences, Education, Information & Computing Sciences, and Integrated Systems & Solutions; commercialization activities include Commercial R&D, Ventures, Center for Innovation, Strategy & Policy, and the Nomura-SRI Innovation Center.
 
 
-  From 1972 through 1990, the SRI International parapsychology and remote viewing research program in Menlo Park, CA was funded by the Central Intelligence Agency and the Defense Intelligence Agency, with Russell Targ ([`/people/russell-targ`]) and Harold E. Puthoff ([`/people/hal-puthoff`]) — two physicists who re-awakened CIA research in parapsychology per Kress 1977. Per the 1977 Studies in Intelligence article [`/documents/kress-parapsychology-in-intelligence-1977`] by Kenneth A. Kress ([`/people/kenneth-kress`]) — a CIA ([`/organizations/cia`]) Operations Officer in the Office of Technical Service — Targ met with CIA personnel from the Office of Scientific Intelligence in April 1972 having "recently joined the Stanford Research Institute (SRI)"; an OTS project officer contracted for a demonstration with Targ and Puthoff at SRI in August 1972 for $874, the first action in the CIA work at SRI. Targ and Puthoff''s 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] ''Information transmission under conditions of sensory shielding'' places the work at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview [`/documents/dia-stargate-project-overview-1993`], the effort at SRI was discontinued in 1990 and Congressional direction in FY 1991 for DIA established new research at Systems Applications International Corporation (SAIC) ([`/organizations/saic`]) in Menlo Park, CA. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviewed the 1973-1988 SRI experiments — 154 experiments and over 26,000 individual trials with 227 subjects — and described the program as headed for eleven years by Dr. H. Puthoff.
+  From 1972 through 1990, the SRI International parapsychology and remote viewing research program in Menlo Park, CA was funded by the Central Intelligence Agency through 1975 and then by DIA and DIA''s service support elements with occasional support from various R&D organizations per the 1993 DIA STAR GATE Project Overview, with Russell Targ ([`/people/russell-targ`]) and Harold E. Puthoff ([`/people/hal-puthoff`]) — two physicists who re-awakened CIA research in parapsychology per Kress 1977. Per the 1977 Studies in Intelligence article [`/documents/kress-parapsychology-in-intelligence-1977`] by Kenneth A. Kress ([`/people/kenneth-kress`]) — a CIA ([`/organizations/cia`]) Operations Officer in the Office of Technical Service — Targ met with CIA personnel from the Office of Scientific Intelligence in April 1972 having "recently joined the Stanford Research Institute (SRI)"; an OTS project officer contracted for a demonstration with Targ and Puthoff at SRI in August 1972 for $874, the first action in the CIA work at SRI. Targ and Puthoff''s 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] ''Information transmission under conditions of sensory shielding'' places the work at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview [`/documents/dia-stargate-project-overview-1993`], the effort at SRI was discontinued in 1990 and Congressional direction in FY 1991 for DIA established new research at Science Applications International Corporation (SAIC) ([`/organizations/saic`]) in Menlo Park, CA. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviewed the 1973-1988 SRI experiments — 154 experiments and over 26,000 individual trials with 227 subjects — and described the program as headed for eleven years by Dr. H. Puthoff.
 
   '
 
@@ -242,7 +242,7 @@ quotes:
     location: 'p. 9, ¶1'
   context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
   statement_date: '1977'
-  significance: 'CIA primary-source attestation of Pat Price as the third sensitive subject at SRI (February–May 1973 window per the surrounding Kress narrative — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time"), and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. Source-form artifacts: "a~ailable" for "available" (OCR tilde-for-v misread); "ORO" recurring (already nq5); "tum" recurring (already nq7); hanging "S" footnote marker. See naming_quirks nq5, nq7, nq9.'
+  significance: 'CIA primary-source attestation of Pat Price as the third sensitive subject at SRI (February–May 1973 window per the surrounding Kress narrative — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time"), and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. The "third sensitive subject" framing implies first and second exist: the first (the magnetometer subject in q8) is identified as Ingo Swann per Targ''s IRVA 2002 retrospective (q17); the unnamed second subject between Swann and Price is not attested in the archived corpus. Source-form artifacts: "a~ailable" for "available" (OCR tilde-for-v misread); "ORO" recurring (already nq5); "tum" recurring (already nq7); hanging "S" footnote marker. See naming_quirks nq5, nq7, nq9.'
 
 - id: q17
   added_date: '2026-05-15'
@@ -307,6 +307,17 @@ quotes:
   context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988)'
   statement_date: '1995-09-29'
   significance: 'AIR independent evaluation''s headline statistical finding from the 1988 SRI internal analysis of 1973-1988 experiments (q15): the overall p-value was less than 10-20, motivating the conclusion that "some explanation other than chance must be found." AIR Section 3.3 notes that methodological problems in early experiments cannot account for the result because the same level of functioning persisted in later, methodologically-improved experiments.'
+
+- id: q12b
+  added_date: '2026-05-15'
+  text: |
+    Then funding was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA and some of DIA's service support elements
+  source:
+    path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+    location: 'p. 10, ¶1 (continuation)'
+  context: 'Defense Intelligence Agency Directorate for Scientific and Technical Intelligence, ''STAR GATE PROJECT: AN OVERVIEW'' (DTI-S-1056-SL), 30 April 1993 — Section III narrative continuing from q11'
+  statement_date: '1993-04-30'
+  significance: 'DIA institutional attestation of the 1975 CIA-funding-discontinuation date for the SRI parapsychology investigation, and of the post-1975 funding chain — "DIA and some of DIA''s service support elements with occasional support from various R&D organizations" (the service support elements include the Air Force Foreign Technology Division and Army INSCOM, per Section III''s later detail attesting "HQDA/INSCOM established a small unit" late 1970s, transferred to DIA 1986 as the SUN STREAK SAP). Source carries the same "SRI-International" hyphenated form recorded in nq8.'
 
 - id: q23
   added_date: '2026-05-15'
@@ -587,9 +598,9 @@ entities_referenced:
 - id: e12
   added_date: '2026-05-15'
   entity_type: organization
-  name: 'Systems Applications International Corporation'
+  name: 'Science Applications International Corporation'
   wrap_path: '/organizations/saic'
-  context_summary: 'Per the 1993 DIA STAR GATE Project Overview (q12), Congressional direction in FY 1991 for DIA established new remote-viewing research at Systems Applications International Corporation (SAIC), Menlo Park, CA, after the SRI program was discontinued in 1990. Per the AIR 1995 evaluation (q14, q15), SAIC research was directed by Dr. Edwin May (previously of the SRI program). Unbuilt in this repository.'
+  context_summary: 'Per the 1993 DIA STAR GATE Project Overview (q12), Congressional direction in FY 1991 for DIA established new remote-viewing research at SAIC (which the DIA source writes "Systems Applications International Corporation" — naming_quirk nq12 captures the DIA-source error against canonical "Science Applications International Corporation"; the canonical form is attested in this artifact''s corpus by the 1995 AIR Evaluation). Per the AIR 1995 evaluation (q14, q15), SAIC research was directed by Dr. Edwin May (previously of the SRI program). Unbuilt in this repository.'
   references:
   - quote_id: q12
 
@@ -901,6 +912,15 @@ naming_quirks:
   source_path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   resolution: preserve-as-sic-in-quotes
   note: 'Superscript loss during pdftotext extraction of the AIR 1995 PDF. The source PDF renders "10^-20" as the digit 10 with a superscript -20; pdftotext flattens this to baseline "10-20" without preserving the superscript relationship. Preserved verbatim in q22 quote text. Companion to nq10 ("1020" for "10^20") in the same passage.'
+
+- id: nq12
+  added_date: '2026-05-15'
+  observed: 'Systems Applications International Corporation'
+  canonical: 'Science Applications International Corporation'
+  location: 'p. 10, ¶3 (also p. 7 — multi-occurrence)'
+  source_path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'The 1993 DIA STAR GATE Project Overview names the SAIC contractor as "Systems Applications International Corporation" in multiple passages (p. 7 and p. 10 ¶3) — a documented writing error in the DIA document. The canonical company name is "Science Applications International Corporation", attested in this artifact''s corpus by the 1995 AIR Evaluation (scratch lines 764, 824, 1295 — "government sponsored research conducted at Stanford Research Institute, later known as SRI International, and at Science Applications International Corporation, known as SAIC"). Preserved verbatim in q12 quote text per source-form-preservation discipline. Companion to nq8 (DIA''s "SRI-International" hyphenated form) — both errors in the same DIA document.'
 
 timeline:
 
@@ -1445,7 +1465,7 @@ org_relationships:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶4'
-  note: 'Per Kress 1977, the inception of the CIA-SRI parapsychology investigation was an $874 OTS demonstration contract in August 1972. Per the 1993 DIA STAR GATE Project Overview, CIA funding to SRI was for "continuing RV research" and was subsequently discontinued in 1975, after which DIA assumed funding.'
+  note: 'Per Kress 1977, the inception of the CIA-SRI parapsychology investigation was an $874 OTS demonstration contract in August 1972. Per the 1993 DIA STAR GATE Project Overview (q12b), CIA funding to SRI was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA and some of DIA''s service support elements with occasional support from various R&D organizations.'
 
 - id: or5
   added_date: '2026-05-15'
@@ -1454,7 +1474,7 @@ org_relationships:
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     location: 'p. 10, ¶3'
-  note: 'Per the 1993 DIA STAR GATE Project Overview, DIA funded the SRI parapsychology investigation following CIA''s 1975 funding discontinuation through the 1990 program termination at SRI. FY 1991 Congressional direction for DIA established successor research at SAIC.'
+  note: 'Per the 1993 DIA STAR GATE Project Overview (q12b), subsequent funding for RV investigation at SRI was provided by DIA and some of DIA''s service support elements with occasional support from various R&D organizations after CIA funding was discontinued in 1975. The same source attests that in the late 1970s HQDA/INSCOM established a small unit for "development of a community capability" in RV; that unit was transferred to DIA in 1986 as the SUN STREAK Special Access Program. FY 1991 Congressional direction for DIA established the successor research at SAIC.'
 
 - id: or6
   added_date: '2026-05-15'
@@ -1463,7 +1483,7 @@ org_relationships:
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     location: 'p. 10, ¶3'
-  note: 'Per the 1993 DIA STAR GATE Project Overview, Congressional direction in FY 1991 for DIA established new remote-viewing research at Systems Applications International Corporation (SAIC), Menlo Park, CA, after the SRI program was discontinued in 1990. SAIC was the institutional successor for the remote-viewing program, not a peer or partner of SRI.'
+  note: 'Per the 1993 DIA STAR GATE Project Overview, Congressional direction in FY 1991 for DIA established new remote-viewing research at Science Applications International Corporation (SAIC), Menlo Park, CA, after the SRI program was discontinued in 1990. SAIC was the institutional successor for the remote-viewing program, not a peer or partner of SRI. The DIA source writes "Systems Applications International Corporation" — the company''s canonical name is "Science Applications International Corporation" per the 1995 AIR Evaluation in this artifact''s corpus; the DIA-source error is recorded as naming_quirk nq12 and preserved verbatim in q12.'
 
 rumors: []
 
