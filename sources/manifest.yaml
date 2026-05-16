@@ -870,6 +870,24 @@
   archive_status: 3
   note: Hoyer congressional office press release, July 28, 2010, 'Hoyer Announces Investments in Southern Maryland Military Facilities'. Includes the FY2011 MILCON line item 'Atlantic Test Range Addition, Naval Air Station, Patuxent River – $10,160,000' with explicit specification for 'Sensitive Compartmented Information Facility areas' alongside 'control rooms for Unmanned Air Vehicles' and 'intelligence data acquisition laboratory spaces'. Dollar figure, fiscal year, location, and SCIF specification primary-source-corroborate Elizondo's December 2024 sworn QFR description of a ~$10M Pax River SAP-F hangar Hoyer requested. Architectural form (addition to ATR Building 2118) is an addition rather than a standalone hangar.
   wayback_date: '2025-03-22'
+- url: https://info.publicintelligence.net/DIA-AdvancedSpacePropulsion.pdf
+  format: pdf
+  status: archived
+  path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
+  archived_date: '2026-05-16'
+  sha256: 61269a3800433f53975ebf5acb5cee50f68aa19d8457ab0338a8dccfbe26a124
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'AAWSAP DIRD #5 — ''Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering'', DIA-08-1003-015, ICOD 1 December 2009, dated 29 March 2010, U//FOUO. Author: H.E. Puthoff, Ph.D., EarthTech International, Inc., Austin, Texas. Prepared by Acquisition Support Division (DWO-3), Defense Warning Office, Directorate for Analysis, Defense Intelligence Agency. AAWSA Program Manager: James T. Lacatski, D.Eng. Open-source mirror via Public Intelligence (info.publicintelligence.net); originally FOIA-released with 36 other AAWSAP DIRDs via The Black Vault. PDF text layer carries pervasive Cyrillic-glyph substitutions (Cyrillic о/п/Ь/у/Ы/Т encoded in place of visually-identical Latin glyphs) at the PDF content-stream level — verified per meta/conventions.md as ''Unicode-mapping artifact at PDF-generation time''; not recoverable via extraction-tool swap. Clean-text sibling produced via VLM page-image read (Claude Read tool, pages 1-17) and registered separately.'
+- url: https://info.publicintelligence.net/DIA-AdvancedSpacePropulsion.pdf#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.txt
+  archived_date: '2026-05-16'
+  sha256: a622101e946f5dff0ca8ea963bc1ea337640c5cab8500bf328d4ea6ef193bee4
+  archive_status: 1
+  wayback_skip: true
+  note: 'Contributor-produced clean-text sibling of the OCR-scanned AAWSAP DIRD #5 PDF (paired entry above; same path stem; flagged extraction_type=ocr-scan). Produced 2026-05-16 via multimodal-LLM visual read of page images (Claude Read tool on pages 1-17 of the source PDF). The PDF''s content-stream-level Cyrillic-glyph substitutions (Cyrillic о/п/Ь/у/Ы/Т encoded in place of visually-identical Latin glyphs) are not recoverable via extraction-tool swap per meta/conventions.md OCR-scan discipline; this sibling restores the clean Latin forms by reading the page images directly. Prose preserved verbatim; mathematical equations rendered as [Equation (N)] placeholders (not quote candidates); Table 1 contents transcribed in bracketed table-text form; Figure references preserved at original positions. Independent verification by a separate session not yet performed (the convention requires this before the sibling becomes canonical for VLM-path siblings); flagged here for follow-up. Validator (scripts/lib/_common.py::extract_source_text) prefers this same-stem .txt sibling over the corrupted pdftotext output for PDFs flagged extraction_type=ocr-scan.'
 - url: https://irp.fas.org/eprint/gough.pdf
   format: pdf
   status: archived

@@ -10448,3 +10448,235 @@
     key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
   tokens: [2024-01-19]
 
+- ts: 2026-05-16T11:46:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T11:46:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T12:06:13Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 7 significant token(s) not in source (prose-drift check — contributor review): aawsap, attestation, authorship, dird, fouo, primary-source, technical-substrate
+  tokens: [aawsap, attestation, authorship, dird, fouo, primary-source, technical-substrate]
+
+- ts: 2026-05-16T12:06:13Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 13 significant token(s) not in source (prose-drift check — contributor review): 2010-03-29, aawsap, alcubierre-warp-drive, attestation, authorship, dia-commissioned, dird, foundational, … (+5 more — pass --verbose for full list)
+  tokens: [2010-03-29, aawsap, alcubierre-warp-drive, attestation, authorship, dia-commissioned, dird, foundational, primary-source, self-citations, substrate, technical-report, vacuum-engineering]
+
+- ts: 2026-05-16T12:06:29Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 7 significant token(s) not in source (prose-drift check — contributor review): aawsap, attestation, authorship, dird, fouo, primary-source, technical-substrate
+  tokens: [aawsap, attestation, authorship, dird, fouo, primary-source, technical-substrate]
+
+- ts: 2026-05-16T12:06:29Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/hal-puthoff.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 13 significant token(s) not in source (prose-drift check — contributor review): 2010-03-29, aawsap, alcubierre-warp-drive, attestation, authorship, dia-commissioned, dird, foundational, … (+5 more — pass --verbose for full list)
+  tokens: [2010-03-29, aawsap, alcubierre-warp-drive, attestation, authorship, dia-commissioned, dird, foundational, primary-source, self-citations, substrate, technical-report, vacuum-engineering]
+
+- ts: 2026-05-16T14:18:25Z
+  source: validator
+  check: manifest_value_enums
+  phase: validate
+  node: sources/manifest.yaml
+  node_type: manifest
+  severity: error
+  message: |
+    format must be one of ['pdf', 'html', 'txt', 'audio', 'image', 'video', 'transcript']; got 'PDF' (URL: https://info.publicintelligence.net/DIA-AdvancedSpacePropulsion.pdf)
+
+- ts: 2026-05-16T14:18:25Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Statements' exceeds word budget (85>55): Preface and Introduction opening paragraph of Defense Intell...
+
+- ts: 2026-05-16T14:18:25Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Statements' exceeds word budget (73>55): Section IV (Discussion) opening paragraph of Defense Intelli...
+
+- ts: 2026-05-16T14:18:25Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (94>55): Puthoff publishes [`/documents/dia-advancedspacepropulsion-p...
+
+- ts: 2026-05-16T14:18:25Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Program Involvement' exceeds word budget (79>55): Author of Defense Intelligence Reference Document DIA-08-100...
+
+- ts: 2026-05-16T14:18:33Z
+  source: validator
+  check: manifest_value_enums
+  phase: validate
+  node: sources/manifest.yaml
+  node_type: manifest
+  severity: error
+  message: |
+    format must be one of ['pdf', 'html', 'txt', 'audio', 'image', 'video', 'transcript']; got 'PDF' (URL: https://info.publicintelligence.net/DIA-AdvancedSpacePropulsion.pdf)
+
+- ts: 2026-05-16T14:18:33Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Statements' exceeds word budget (85>55): Preface and Introduction opening paragraph of Defense Intell...
+
+- ts: 2026-05-16T14:18:33Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Statements' exceeds word budget (73>55): Section IV (Discussion) opening paragraph of Defense Intelli...
+
+- ts: 2026-05-16T14:18:33Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (94>55): Puthoff publishes [`/documents/dia-advancedspacepropulsion-p...
+
+- ts: 2026-05-16T14:18:33Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/hal-puthoff.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Program Involvement' exceeds word budget (79>55): Author of Defense Intelligence Reference Document DIA-08-100...
+
+- ts: 2026-05-16T14:22:09Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T14:22:09Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T14:24:00Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T14:24:00Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T14:26:42Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T14:26:42Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
