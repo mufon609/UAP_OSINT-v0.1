@@ -201,6 +201,81 @@ quotes:
   statement_date: '1995-09-29'
   significance: 'AIR review of the 1988 SRI internal program analysis (May, Utts, Trask, Luke, Frivold, Humphrey 1988 "Review of the psychoenergetic research conducted at SRI International (1973-1988)") establishes the institutional shape of the SRI parapsychology program over its 1973-1988 documented span: 154 experiments, over 26,000 individual trials, 227 total subjects. Direction of Dr. Edwin May from mid-1970s per AIR Section 3 preamble.'
 
+- id: q16
+  added_date: '2026-05-15'
+  text: |
+    Interest was translated into action when ORD requested an increase in the scope of the effort and transferred funds to OTS. S About this time. a third sensitive subject. Pat Price. became a~ailable at SRI. and the remote viewing experiments in which a subject describes his impressions of remote objects or locations began in earnest.
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 9, ¶1'
+  context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977'
+  statement_date: '1977'
+  significance: 'CIA primary-source attestation of Pat Price as the third sensitive subject at SRI (February–May 1973 window per the surrounding Kress narrative — ORD sent new Project Officers to SRI in February 1973; Price became available "About this time"), and of the inception of "the remote viewing experiments in which a subject describes his impressions of remote objects or locations" in earnest. Source-form artifacts: "a~ailable" for "available" (OCR tilde-for-v misread); "ORO" recurring (already nq5); "tum" recurring (already nq7); hanging "S" footnote marker. See naming_quirks nq5, nq7, nq9.'
+
+- id: q17
+  added_date: '2026-05-15'
+  text: |
+    At Stanford Research Institute (SRI), in 1972, New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory. The following year, retired police commissioner, Pat Price showed us how to do this with great reliability and accuracy. With these data, and the education provided by Pat and Ingo, we were able to initiate a twenty-million dollar program in research and applications of remote viewing that lasted more than twenty years – a paranormal feat in itself.
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: 'Presentations, IRVA 2002 talk abstract'
+  context: 'Russell Targ, IRVA 2002 talk abstract "The Real ''Real X-Files'': Remote viewing at Stanford Research Institute" (archived on the IRVA speaker biography page)'
+  significance: 'Targ first-person retrospective naming Ingo Swann (1972) and Pat Price (1973) as the foundational SRI remote-viewing subjects. Adds the "twenty-million dollar" program scale claim over "more than twenty years" — Targ-self-attestation, not independently quantified in the archived corpus. Combined with Kress 1977 (q16) on Price, this passage graduates the earlier rumor r2 (Price/Swann as foundational SRI subjects) by anchoring both names to a primary-source attestation. Source-priority hierarchy applies: Targ retrospective on his own collaborators ranks below Kress contemporaneous CIA primary source for Price; uniquely names Swann (Kress 1977 describes the magnetometer subject only as "the previously described subject"/"the previously mentioned man" without naming him).'
+
+- id: q18
+  added_date: '2026-05-15'
+  text: |
+    In 1974 Hal Puthoff and I were then two years into our remote viewing program at SRI, and our sponsors from the CIA wanted us to find an inexperienced “control” subject to supplement Pat Price and Ingo Swann who were life-long practitioners of remote viewing. Hella, who had just moved to Los Angeles thought it would be very entertaining to be part of a government sponsored ESP program, and she promised us that she had no previous experience in that area. In her ten years with the program, she became our most reliable viewer.
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: 'Presentations, IRVA 2009 (Hella Hammid Tribute) talk abstract'
+  context: 'Russell Targ, IRVA 2009 talk abstract "A Tribute to Hella Hammid: The First Woman Remote Viewer, Part 2" (archived on the IRVA speaker biography page)'
+  significance: 'Targ first-person retrospective attesting Hella Hammid''s ten-year SRI tenure (1974–1984) as the CIA-requested "control" subject brought in to supplement Pat Price and Ingo Swann. Anchors Hammid''s SRI involvement to 1974 (two years after the program''s 1972 start). Independent corroboration of the Swann + Price foundational-subject pair attested by q17.'
+
+- id: q19
+  added_date: '2026-05-15'
+  text: |
+    By October, 1972, I was the Project Officer. I was chosen because of my physics background to work with the physicists from SRI. The Office of Technical Service funded a $50,000 expanded effort in parapsychology.
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, ¶6'
+  context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977; footnote 4 cites the contract: "Office of Technical Service Contract 8473, 1 October 1972 (CONFIDENTIAL)"'
+  statement_date: '1977'
+  significance: 'CIA primary-source attestation of the formalization of the August 1972 $874 demonstration contract (q9) into OTS Contract 8473 — a $50,000 expanded effort dated 1 October 1972 — and of Kress himself becoming Project Officer by October 1972 due to his physics background. Footnote 4 of the Kress paper carries the contract citation: "Office of Technical Service Contract 8473, 1 October 1972 (CONFIDENTIAL)". Anchors timeline tl5 with primary-source citation rather than the prior summary-only reference.'
+
+- id: q20
+  added_date: '2026-05-15'
+  text: |
+    WE present results of experiments suggesting the existence of one or more perceptual modalities through which individuals obtain information about their environment, although this information is not presented to any known sense. The literature1–3 and our observations lead us to conclude that such abilities can be studied under laboratory conditions.
+  source:
+    path: news/nature-1974-targ-puthoff-information-transmission-abstract.html
+    location: 'Abstract, ¶1'
+  context: 'Targ and Puthoff, ''Information transmission under conditions of sensory shielding'', Nature 251, 602–607 (18 October 1974), DOI 10.1038/251602a0 — abstract body'
+  statement_date: '1974-10-18'
+  significance: 'Peer-reviewed Targ + Puthoff statement of the SRI parapsychology investigation''s evidentiary claim — the existence of perceptual modalities through which individuals obtain environmental information not presented to any known sense, studyable under laboratory conditions. Adds methodological framing to the existing author-affiliation attestation (q6).'
+
+- id: q21
+  added_date: '2026-05-15'
+  text: |
+    One of the apparent successes concerned the "West Virginia Site" in which two remote viewers purportedly identified an underground secret facility. One of them apparently named codewords and personnel in this facility accurately enough that it set off a security investigation to determine how that information could have been leaked. Based only on the coordinates of the site, the viewer first described the above ground terrain, then proceeded to describe details of the hidden underground site.
+  source:
+    path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
+    location: 'p. 3-12, ¶2'
+  context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.1 (Early Operational Successes and Evaluation)'
+  statement_date: '1995-09-29'
+  significance: 'AIR independent evaluation describing one of the three apparent operational successes in the early days of the SRI parapsychology program — the "West Virginia Site" remote-viewing identification of an underground secret facility that set off a security investigation to determine the source of the leaked codewords and personnel names. AIR Section 3.1 cites Puthoff and Targ (1975) as the source; methodological caveats are discussed in the same section.'
+
+- id: q22
+  added_date: '2026-05-15'
+  text: |
+    The statistical results were so overwhelming that results that extreme or more so would occur only about once in every 1020 such instances if chance alone is the explanation (i.e., the p-value was less than 10-20). Obviously some explanation other than chance must be found.
+  source:
+    path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
+    location: 'p. 3-14, ¶2'
+  context: 'Michael D. Mumford, Andrew M. Rose, and David A. Goslin, ''An Evaluation of Remote Viewing: Research and Applications,'' American Institutes for Research, 29 September 1995, Section 3.3 (An Overall Analysis of the SRI Experiments: 1973-1988)'
+  statement_date: '1995-09-29'
+  significance: 'AIR independent evaluation''s headline statistical finding from the 1988 SRI internal analysis of 1973-1988 experiments (q15): the overall p-value was less than 10-20, motivating the conclusion that "some explanation other than chance must be found." AIR Section 3.3 notes that methodological problems in early experiments cannot account for the result because the same level of functioning persisted in later, methodologically-improved experiments.'
+
 entities_referenced:
 
 - id: e1
@@ -389,9 +464,40 @@ entities_referenced:
   entity_type: document
   name: 'Perceptual Augmentation Techniques: Part Two — Research Report (SRI Final Report, 1975)'
   wrap_path: '/documents/sri-perceptual-augmentation-techniques-final-report-1975'
-  context_summary: 'Puthoff, Harold E. and Russell Targ (1975) "Perceptual Augmentation Techniques: Part Two — Research Report," Stanford Research Institute Final Report, Dec. 1, 1975. SRI''s internal program report on the 1974-1975 controlled remote-viewing experiments, cited by AIR 1995 (q14). Unbuilt in this repository; full text not archived.'
+  context_summary: 'Puthoff, Harold E. and Russell Targ (1975) "Perceptual Augmentation Techniques: Part Two — Research Report," Stanford Research Institute Final Report, Dec. 1, 1975. SRI''s internal program report on the 1974-1975 controlled remote-viewing experiments, cited by AIR 1995 (q14, q21). Unbuilt in this repository; full text not archived.'
   references:
   - quote_id: q14
+  - quote_id: q21
+
+- id: e19
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Pat Price'
+  wrap_path: '/people/pat-price'
+  context_summary: 'Retired police commissioner named as the third sensitive subject at SRI per Kress 1977 (q16, p. 9, ¶1), with arrival "About this time" in the February–May 1973 window when "the remote viewing experiments in which a subject describes his impressions of remote objects or locations began in earnest." Independently named by Targ as the foundational 1973 SRI remote-viewing subject per Targ''s IRVA 2002 talk abstract (q17) and IRVA 2009 talk abstract (q18). Unbuilt in this repository.'
+  references:
+  - quote_id: q16
+  - quote_id: q17
+  - quote_id: q18
+
+- id: e20
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Ingo Swann'
+  wrap_path: '/people/ingo-swann'
+  context_summary: 'New York artist and psychic named by Targ as the 1972 foundational SRI remote-viewing subject per his IRVA 2002 talk abstract (q17) — "in 1972, New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory". Kress 1977 describes the same demonstration without naming the subject (the magnetometer-disturbance demonstration in q7/q8 is the inception of the Targ-Puthoff-Swann work attested by Kress). Unbuilt in this repository.'
+  references:
+  - quote_id: q17
+  - quote_id: q18
+
+- id: e21
+  added_date: '2026-05-15'
+  entity_type: person
+  name: 'Hella Hammid'
+  wrap_path: '/people/hella-hammid'
+  context_summary: 'Photographer for LIFE magazine; CIA-requested "control" subject brought into the SRI remote-viewing program in 1974 to supplement Pat Price and Ingo Swann per Targ''s IRVA 2009 talk abstract (q18). Targ attests her ten-year SRI tenure (1974–1984) and characterizes her as their "most reliable viewer". Unbuilt in this repository.'
+  references:
+  - quote_id: q18
 
 naming_quirks:
 
@@ -467,6 +573,15 @@ naming_quirks:
   resolution: preserve-as-sic-in-quotes
   note: 'The 1993 DIA STAR GATE Project Overview uses the hyphenated form "SRI-International" in one passage (q11) where the canonical form is "SRI International" (no hyphen). DIA''s own document varies: Figure 1 of the same document lists "1970-1990 — SRI INTERNATIONAL, MENLO PARK, CA" (no hyphen). Preserved verbatim in q11 quote text.'
 
+- id: nq9
+  added_date: '2026-05-15'
+  observed: 'a~ailable'
+  canonical: 'available'
+  location: 'p. 9, ¶1'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper. The OCR engine read "v" as "~" (tilde) in "available" yielding "a~ailable" — typewritten-font OCR misread on the lowercase v glyph. Preserved verbatim in q16 quote text per OCR-scan source-form-preservation discipline.'
+
 timeline:
 
 - id: tl1
@@ -505,6 +620,15 @@ timeline:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶4'
 
+- id: tl4b
+  added_date: '2026-05-15'
+  date: '1972'
+  category: program-inception
+  event: 'Ingo Swann [`/people/ingo-swann`] joins the SRI parapsychology investigation per Targ IRVA 2002 talk abstract — "New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory". Specific date within 1972 not attested.'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: 'Presentations, IRVA 2002 talk abstract'
+
 - id: tl5
   added_date: '2026-05-15'
   date: '1972-10-01'
@@ -514,6 +638,15 @@ timeline:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, footnote 4'
 
+- id: tl5b
+  added_date: '2026-05-15'
+  date: '1973'
+  category: program-inception
+  event: 'Pat Price [`/people/pat-price`] arrives at SRI in the February–May 1973 window per Kress 1977 as the third sensitive subject; "the remote viewing experiments in which a subject describes his impressions of remote objects or locations began in earnest". Per Targ IRVA 2002 talk abstract, Price was a "retired police commissioner".'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 9, ¶1'
+
 - id: tl6
   added_date: '2026-05-15'
   date: '1974-02'
@@ -522,6 +655,15 @@ timeline:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶5'
+
+- id: tl6b
+  added_date: '2026-05-15'
+  date: '1974'
+  category: program-inception
+  event: 'Hella Hammid [`/people/hella-hammid`] joins the SRI remote-viewing program as the CIA-requested "control" subject to supplement Pat Price and Ingo Swann per Targ IRVA 2009 talk abstract. Ten-year SRI tenure (1974–1984).'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: 'Presentations, IRVA 2009 (Hella Hammid Tribute) talk abstract'
 
 - id: tl7
   added_date: '2026-05-15'
@@ -632,6 +774,40 @@ key_personnel:
     location: 'p. 3-2'
   note: 'Dr. Edwin May had been employed in the SRI program since the mid 1970s per AIR 1995. Led the 1988 internal SRI analysis of all 154 experiments conducted at SRI from 1973 until that time.'
 
+- id: kp5
+  added_date: '2026-05-15'
+  person_path: /people/ingo-swann
+  role: 'Foundational SRI remote-viewing subject (1972); New York artist and psychic'
+  leadership_class: other
+  period_start: '1972'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: 'Presentations, IRVA 2002 talk abstract'
+  note: 'Per Targ IRVA 2002 talk abstract: "in 1972, New York artist, and psychic, Ingo Swann taught us how to experience remote viewing in the laboratory" at SRI.'
+
+- id: kp6
+  added_date: '2026-05-15'
+  person_path: /people/pat-price
+  role: 'Foundational SRI remote-viewing subject (1973); retired police commissioner'
+  leadership_class: other
+  period_start: '1973'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 9, ¶1'
+  note: 'Per Kress 1977, Pat Price was the third sensitive subject at SRI; per Targ IRVA 2002 talk abstract, Price was a "retired police commissioner" who "showed us how to do this with great reliability and accuracy".'
+
+- id: kp7
+  added_date: '2026-05-15'
+  person_path: /people/hella-hammid
+  role: 'SRI remote-viewing "control" subject (1974-1984); LIFE magazine photographer'
+  leadership_class: other
+  period_start: '1974'
+  period_end: '1984'
+  source:
+    path: news/irva-targ-russell-wayback-20250123.html
+    location: 'Presentations, IRVA 2009 (Hella Hammid Tribute) talk abstract'
+  note: 'Per Targ IRVA 2009 Hella Hammid tribute talk abstract, Hammid was a LIFE magazine photographer brought into the SRI remote-viewing program in 1974 as a "control" subject our sponsors from the CIA wanted to supplement Pat Price and Ingo Swann. In her ten years with the program, she became our most reliable viewer.'
+
 org_relationships:
 
 - id: or1
@@ -697,16 +873,6 @@ rumors:
   observed_sources:
   - 'Multiple secondary sources (Wikipedia, third-party SRI histories)'
   note: 'The 1977 rename date is widely circulated in secondary sources but is NOT attested by any primary source archived in this repository. The sri.com About and Timeline pages name the 1946 founding and 1970 independence events but do not state when the "Stanford Research Institute → SRI International" rebrand occurred. Government documents in the archived corpus show the institutional name in transition: the 1974 Nature paper uses "Stanford Research Institute"; the 1977 Kress paper uses "Stanford Research Institute (SRI)"; the 1993 DIA STAR GATE Project Overview uses "SRI International" / "SRI-International"; the 1995 AIR evaluation refers to "Stanford Research Institute, later known as SRI International". Graduate when a primary source attesting the specific 1977 rename date is archived (e.g., SRI press release, official corporate filing, or contemporaneous news coverage).'
-
-- id: r2
-  added_date: '2026-05-15'
-  claim: 'Pat Price and Ingo Swann were the foundational early-1970s SRI remote-viewing subjects.'
-  status: not-primary-source-established
-  observed_sources:
-  - 'Targ IRVA 2002 talk abstract (line 319 of irva-targ scratch file — referenced but not a verbatim primary source for the SRI investigation itself)'
-  - 'Targ IRVA 2009 talk abstract (line 319 of irva-targ scratch file)'
-  - 'Multiple secondary sources (popular accounts of the Stargate program)'
-  note: 'The Kress 1977 paper (the foundational CIA primary source archived here) describes the early demonstrations as involving "the previously described subject" (q9, referring to the magnetometer subject named earlier in the paper — Ingo Swann per AIR 1995 cross-reference but not named in the Kress passage we''ve archived). The names "Pat Price" and "Ingo Swann" appear in the Kress paper extract (scratch line 326 "Pat[t]ern, Price, became a~ailable at SRI" and elsewhere) but the specific Price / Swann attestation as foundational SRI subjects is not yet anchored as a verbatim primary-source quote in this artifact. Graduate by extracting the relevant Kress paragraphs as additional quotes if/when their role is load-bearing for the SRI node.'
 
 - id: r3
   added_date: '2026-05-15'

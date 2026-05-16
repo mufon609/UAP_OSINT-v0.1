@@ -9441,3 +9441,56 @@
   message: |
     Stub-linking: entity 'e16' ('STAR GATE PROJECT: AN OVERVIEW (DIA, 1993)') wrap_path '/documents/dia-stargate-project-overview-1993' does not appear as a [`/documents/dia-stargate-project-overview-1993`] link in the node
 
+- ts: 2026-05-16T00:03:41Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[4] ('kp5') note: 4 significant token(s) not in source (prose-drift check — contributor review): attestation, attested, inception, unnamed
+  tokens: [attestation, attested, inception, unnamed]
+
+- ts: 2026-05-16T00:03:41Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[5] ('kp6') note: 6 significant token(s) not in source (prose-drift check — contributor review): archived, arriving, attested, corpus, february-may, window
+  tokens: [archived, arriving, attested, corpus, february-may, window]
+
+- ts: 2026-05-16T00:03:41Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[6] ('kp7') note: 6 significant token(s) not in source (prose-drift check — contributor review): 1974-1984, attests, characterizes, cia-requested, ten-year, tenure
+  tokens: [1974-1984, attests, characterizes, cia-requested, ten-year, tenure]
+
+- ts: 2026-05-16T00:04:32Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: error
+  message: |
+    Quote at line 215 NOT FOUND in sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf: "According to Puthoff and Targ (1975) the scientific research endeavor at SRI may..."
+
+- ts: 2026-05-16T00:04:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: error
+  message: |
+    Quote at line 215 NOT FOUND in sources/government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf: "According to Puthoff and Targ (1975) the scientific research endeavor at SRI may..."
+
