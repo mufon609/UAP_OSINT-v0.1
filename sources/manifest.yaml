@@ -2968,8 +2968,9 @@
   path: news/sri-international-timeline-of-innovation-page3-20260515.html
   archived_date: '2026-05-15'
   sha256: f9d7de4f6a1189df60f5ff9415876dc55897ac2a54c6ef425646022823bb1340
-  archive_status: 1
+  archive_status: 3
   note: SRI International 'Interactive Timeline of Innovation' page 3 (sri.com/timeline-of-innovation/?query-117-page=3), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 3 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+  wayback_date: '2026-01-21'
 - url: https://www.sri.com/timeline-of-innovation/?query-117-page=4
   format: html
   status: archived
@@ -2984,8 +2985,9 @@
   path: news/sri-international-timeline-of-innovation-page5-20260515.html
   archived_date: '2026-05-15'
   sha256: f68be1e68e749bbc6eea37b5dd4862467635ff1efede1d1904494a26fc122aec
-  archive_status: 1
+  archive_status: 3
   note: SRI International 'Interactive Timeline of Innovation' page 5 (sri.com/timeline-of-innovation/?query-117-page=5), retrieved 2026-05-15. Continuation of the institutional history index — decade-binned project titles for SRI's R&D portfolio. Page 5 carries entries spanning specific decades; see Phase II render for the per-entry citations. Companion to the page-1 capture (sri-international-timeline-of-innovation-20260515.html).
+  wayback_date: '2025-12-12'
 - url: https://www.sri.com/timeline-of-innovation/?query-117-page=6
   format: html
   status: archived
