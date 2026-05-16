@@ -25,7 +25,7 @@ created: 2026-05-15
 
 SRI International ([`/organizations/stanford-research-institute`]) is an independent nonprofit R&D institute with deep roots in Silicon Valley, at 333 Ravenswood Ave, Menlo Park, CA 94025. Founded in 1946 by Stanford University ([`/organizations/stanford-university`]) as the Stanford Research Institute, and independent since 1970, SRI has 1,500 researchers and professional staff who work with government and commercial customers and collaborators. In 1987, SRI acquired Sarnoff Corp. ([`/organizations/sarnoff-corp`]) (formerly RCA Labs); in 2023, it received as a donation the Palo Alto Research Center ([`/organizations/parc`]) (PARC). David Parekh ([`/people/david-parekh`]) is Chief Executive Officer. The institute reports 13,000+ patents filed, 50+ spin-off companies, and 500+ R&D projects per year. Research covers Advanced Technology & Systems, Biosciences, Education, Information & Computing Sciences, and Integrated Systems & Solutions; commercialization activities include Commercial R&D, Ventures, Center for Innovation, Strategy & Policy, and the Nomura-SRI Innovation Center.
 
-From 1972 through 1990, the SRI International parapsychology and remote viewing research program in Menlo Park, CA was funded by the Central Intelligence Agency and the Defense Intelligence Agency, with Russell Targ ([`/people/russell-targ`]) as cofounder and Harold E. Puthoff ([`/people/hal-puthoff`]) as co-author of the 1974 Nature paper. Per the 1977 Studies in Intelligence article [`/documents/kress-parapsychology-in-intelligence-1977`] by Kenneth A. Kress ([`/people/kenneth-kress`]) — a CIA ([`/organizations/cia`]) Operations Officer in the Office of Technical Service — Targ met with CIA personnel from the Office of Scientific Intelligence in April 1972 having "recently joined the Stanford Research Institute (SRI)"; an OTS project officer contracted for a demonstration with Targ and Puthoff at SRI in August 1972 for $874, the first action in the CIA work at SRI. Targ and Puthoff's 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] 'Information transmission under conditions of sensory shielding' places the work at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview [`/documents/dia-stargate-project-overview-1993`], the effort at SRI was discontinued in 1990 and Congressional direction in FY 1991 for DIA established new research at Systems Applications International Corporation (SAIC) ([`/organizations/saic`]) in Menlo Park, CA. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviewed the 1973-1988 SRI experiments — 154 experiments and over 26,000 individual trials with 227 subjects — and described the program as headed for eleven years by Dr. H. Puthoff.
+From 1972 through 1990, the SRI International parapsychology and remote viewing research program in Menlo Park, CA was funded by the Central Intelligence Agency and the Defense Intelligence Agency, with Russell Targ ([`/people/russell-targ`]) and Harold E. Puthoff ([`/people/hal-puthoff`]) — two physicists who re-awakened CIA research in parapsychology per Kress 1977. Per the 1977 Studies in Intelligence article [`/documents/kress-parapsychology-in-intelligence-1977`] by Kenneth A. Kress ([`/people/kenneth-kress`]) — a CIA ([`/organizations/cia`]) Operations Officer in the Office of Technical Service — Targ met with CIA personnel from the Office of Scientific Intelligence in April 1972 having "recently joined the Stanford Research Institute (SRI)"; an OTS project officer contracted for a demonstration with Targ and Puthoff at SRI in August 1972 for $874, the first action in the CIA work at SRI. Targ and Puthoff's 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] 'Information transmission under conditions of sensory shielding' places the work at the Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025. Per the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview [`/documents/dia-stargate-project-overview-1993`], the effort at SRI was discontinued in 1990 and Congressional direction in FY 1991 for DIA established new research at Systems Applications International Corporation (SAIC) ([`/organizations/saic`]) in Menlo Park, CA. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviewed the 1973-1988 SRI experiments — 154 experiments and over 26,000 individual trials with 227 subjects — and described the program as headed for eleven years by Dr. H. Puthoff.
 
 ---
 
@@ -40,7 +40,8 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 | [`/people/charles-a-anderson`] | President (1968 onward) | 1968 | news/sri-com-about-history-1960s-wayback-2004.html | Charles A. Anderson becomes SRI's president in 1968. Succeeded by William F. Miller in 1979. |
 | [`/people/william-f-miller`] | President (1979 onward; succeeded Charles A. Anderson) | 1979 | news/sri-com-about-history-1970s-wayback-2004.html | 1979: William F. Miller becomes SRI's president. Succeeded Charles A. Anderson, who became SRI's president in 1968. |
 | [`/people/ellen-ochoa`] | Board Member | 2023-02-01 | news/propublica-sri-international-941160950-20260515.html |  |
-| [`/people/david-parekh`] | Chief Executive Officer |  | news/sri-international-about-20260515.html |  |
+| [`/people/steven-walker`] | Board Member (page listing 2024-01-18); Vice President and Chief Technology Officer Lockheed Martin (retired) and former DARPA director | 2024-01-18 | news/sri-com-board-of-directors-20260515.html | Steven Walker joined the SRI Board of Directors per the Our People page listing date January 18, 2024. The page names Walker as "Vice President and Chief Technology Officer, Lockheed Martin (retired) and former DARPA director". A separate Walker start date for the SRI board role is not stated on the page. |
+| [`/people/david-parekh`] | Chief Executive Officer |  | news/sri-international-about-20260515.html | David Parekh is named Chief Executive Officer, SRI on the Our People page with a listing date of December 2, 2021 (in both the Executive Team and Board of Directors sections). A specific Parekh start date for the CEO role is not stated on either sri.com page. |
 | [`/people/david-motley`] | Board Chair |  | news/propublica-sri-international-941160950-20260515.html |  |
 | [`/people/ellen-pawlikowski`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html |  |
 | [`/people/john-j-young-jr`] | Board Member |  | news/propublica-sri-international-941160950-20260515.html |  |
@@ -55,7 +56,7 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 | [`/people/russell-targ`] | Cofounder of the SRI investigation of psychic abilities (with Harold E. Puthoff) | 1972-04 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Targ had recently joined the Stanford Research Institute (SRI) as of the April 1972 meeting with CIA personnel from the Office of Scientific Intelligence. Targ is cofounder of the Stanford Research Institute investigation of psychic abilities in the 1970s and 1980s. |
 | [`/people/pat-price`] | Foundational SRI remote-viewing subject (1973); retired police commissioner | 1973 | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Per Kress 1977, Pat Price was the third sensitive subject at SRI; per Targ IRVA 2002 talk abstract, Price was a "retired police commissioner" who "showed us how to do this with great reliability and accuracy". |
 | [`/people/hella-hammid`] | SRI remote-viewing "control" subject (1974-1984); LIFE magazine photographer | 1974 – 1984 | news/irva-targ-russell-wayback-20250123.html | Per Targ IRVA 2009 Hella Hammid tribute talk abstract, Hammid was a LIFE magazine photographer brought into the SRI remote-viewing program in 1974 as a "control" subject our sponsors from the CIA wanted to supplement Pat Price and Ingo Swann. In her ten years with the program, she became our most reliable viewer. |
-| [`/people/edwin-may`] | Researcher in the SRI program (mid-1970s onward); led 1988 internal SRI analysis of 1973-1988 experiments | 1975 – 1990 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf | Dr. Edwin May had been employed in the SRI program since the mid 1970s per AIR 1995. Led the 1988 internal SRI analysis of all 154 experiments conducted at SRI from 1973 until that time. |
+| [`/people/edwin-may`] | Researcher in the SRI program (mid-1970s onward); led 1988 internal SRI analysis of 1973-1988 experiments | 1975 – 1990 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf | Dr. Edwin May had been employed in the SRI program since the mid 1970s per AIR 1995. Led the 1988 internal SRI analysis of all 154 experiments conducted at SRI from 1973 until that time. period_start '1975' is a single year within the mid 1970s the source says; a specific year is not stated. |
 | [`/people/suresh-sunderrajan`] | Chief Financial Officer (from 2024-01-19; previously President, Commercialization) | 2024-01-19 | news/propublica-sri-international-941160950-20260515.html |  |
 | [`/people/john-mcintire`] | Chief Legal Officer |  | news/propublica-sri-international-941160950-20260515.html |  |
 
@@ -111,7 +112,7 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 
 ---
 
-### Peer-reviewed Nature author-affiliation block establishing that the SRI parapsychology investigation operated out of the Electronics and Bioengineering Laboratory at Stanford Research Institute, Menlo Park, California, 94025 — the specific sub-unit and address at SRI. Co-author byline (Targ and Puthoff) confirms the two-person cofounder structure attested by Targ self-attestation (q4).
+### Peer-reviewed Nature author-affiliation block establishing that the SRI parapsychology investigation operated out of the Electronics and Bioengineering Laboratory at Stanford Research Institute, Menlo Park, California, 94025 — the specific sub-unit and address at SRI. The Nature byline names both Russell Targ and Harold E. Puthoff at SRI, establishing the two-person co-author structure (Targ self-attests his cofounder role at SRI on espresearch.com per q4; the Nature byline corroborates Puthoff at SRI alongside Targ).
 
 > Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025  RUSSELL TARG & HAROLD PUTHOFF
 
@@ -303,6 +304,19 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 
 ---
 
+### SRI's own first-party attestation that Steven Walker joined SRI's board (page listing date January 18, 2024). The Walker addition is institutionally significant for the UAP-research corpus — Walker's page bio names "Vice President and Chief Technology Officer, Lockheed Martin (retired) and former DARPA director", both load-bearing entities (Targ's Lockheed retirement; DARPA's ARPANET / AAWSAP / IPMO contract chains).
+
+> January 18, 2024
+> Steven Walker
+
+| Field | Value |
+|---|---|
+| Attributed to | SRI International 'Our People' page (sri.com/board-of-directors/), retrieved 2026-05-15 — current Board of Directors listing, 2024-01-18 |
+| Source | [archived source](../sources/news/sri-com-board-of-directors-20260515.html) |
+| Location | Board of Directors section, Steven Walker entry |
+
+---
+
 ### Substantive financial-health attestation: SRI's FY2024 independent audit identified a going-concern flag — substantial doubt about the organization's ability to meet financial obligations and continue operating. ProPublica sources this from the Federal Audit Clearinghouse-deposited audit accompanying the FY2024 Form 990 (filed November 12, 2025). First-time financial-stress attestation in the archived corpus.
 
 > An independent audit commissioned by this organization for the fiscal year ending Dec. 2024 identified:
@@ -334,7 +348,7 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 
 ---
 
-### IRS-sourced attestation of SRI International FY2024 balance-sheet position: total assets $409.6M, total liabilities $231.6M, net assets $178.0M. The net-assets / total-liabilities ratio combined with the going-concern flag (q25) frames the financial-stress context — substantial liabilities against a modest net-assets cushion.
+### IRS-sourced attestation of SRI International FY2024 balance-sheet position: total assets $409.6M, total liabilities $231.6M, net assets $178.0M. The cause of the going-concern flag (q25) is not attested in the archived sources — the balance-sheet numbers alone do not establish it.
 
 > Total Assets
 > $409,624,782
@@ -459,6 +473,32 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 
 ---
 
+### SRI's first-party attestation of three institutional-scale metrics — 13,000+ patents filed, 50+ spin-off companies, and 500+ R&D projects per year. Anchors the description's reference to these figures (previously sourced to the page in token-pool only).
+
+> 13,000+ Patents filed
+> 50+ Spin-off companies
+> 500+ R&D projects per year
+
+| Field | Value |
+|---|---|
+| Attributed to | SRI International 'About' page (sri.com/about/), retrieved 2026-05-15 — institutional-scale stat block following the David Parekh CEO quote |
+| Source | [archived source](../sources/news/sri-international-about-20260515.html) |
+| Location | Stat block (13,000+ Patents / 50+ Spin-off companies / 500+ R&D projects) |
+
+---
+
+### SRI's own attestation of Steven Walker's prior roles at Lockheed Martin (VP/CTO, retired) and DARPA (former director). Cross-references Lockheed Martin and DARPA as load-bearing entities in the corpus.
+
+> Vice President and Chief Technology Officer, Lockheed Martin (retired) and former DARPA director
+
+| Field | Value |
+|---|---|
+| Attributed to | SRI International 'Our People' page (sri.com/board-of-directors/), retrieved 2026-05-15 — bio descriptor for board member Steven Walker |
+| Source | [archived source](../sources/news/sri-com-board-of-directors-20260515.html) |
+| Location | Board of Directors section, Steven Walker bio descriptor |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -497,6 +537,7 @@ From 1972 through 1990, the SRI International parapsychology and remote viewing 
 | 2010s | NASA Parker Solar Probe — 2010s SRI innovation per the sri.com Timeline of Innovation page 7. SRI instrument contribution to the NASA [`/organizations/nasa`] solar-science mission. | innovation | news/sri-international-timeline-of-innovation-page7-20260515.html |  |
 | 2020s | NASA Europa Clipper — 2020s SRI innovation per the sri.com Timeline of Innovation page 7. SRI instrument contribution to the NASA [`/organizations/nasa`] Jupiter-moon mission. | innovation | news/sri-international-timeline-of-innovation-page7-20260515.html |  |
 | 2023 | SRI receives the Palo Alto Research Center [`/organizations/parc`] (PARC) as a donation. Specific date within 2023 not attested. | acquisition | news/sri-international-timeline-of-innovation-20260515.html |  |
+| 2024-01-18 | Steven Walker [`/people/steven-walker`] — Vice President and Chief Technology Officer Lockheed Martin [`/organizations/lockheed-martin`] (retired) and former DARPA [`/organizations/darpa`] director — joined the SRI Board of Directors per the Our People page listing date. | governance | news/sri-com-board-of-directors-20260515.html |  |
 | 2025-11-12 | SRI International files FY2024 Form 990 with the IRS. Independent audit accompanying the filing identifies a going concern flag — substantial doubt about the organization's ability to meet its financial obligations and continue operating for the foreseeable future. FY2024 revenue $437,926,151; total assets $409,624,782; net assets $178,034,904. | governance | news/propublica-sri-international-941160950-20260515.html |  |
 
 ---
@@ -530,6 +571,8 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | tum | turn | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper. The OCR engine read "rn" as "m" yielding "tum" where the canonical form is "turn" — common typewritten-font OCR cluster misread (rn↔m is documented in meta/conventions.md as a typical OCR confusion). Preserved verbatim in q8 quote text per OCR-scan source-form-preservation discipline. |
 | SRI-International | SRI International | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | The 1993 DIA STAR GATE Project Overview uses the hyphenated form "SRI-International" in one passage (q11) where the canonical form is "SRI International" (no hyphen). DIA's own document varies: Figure 1 of the same document lists "1970-1990 — SRI INTERNATIONAL, MENLO PARK, CA" (no hyphen). Preserved verbatim in q11 quote text. |
 | a~ailable | available | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper. The OCR engine read "v" as "~" (tilde) in "available" yielding "a~ailable" — typewritten-font OCR misread on the lowercase v glyph. Preserved verbatim in q16 quote text per OCR-scan source-form-preservation discipline. |
+| 1020 | 10^20 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf | Superscript loss during pdftotext extraction of the AIR 1995 PDF. The source PDF renders "10^20" as the digit 10 with a superscript 20; pdftotext flattens this to baseline "1020" without preserving the superscript relationship. Preserved verbatim in q22 quote text. The same phenomenon affects "10^-20" → "10-20" in the next clause of q22 (see nq11). |
+| 10-20 | 10^-20 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf | Superscript loss during pdftotext extraction of the AIR 1995 PDF. The source PDF renders "10^-20" as the digit 10 with a superscript -20; pdftotext flattens this to baseline "10-20" without preserving the superscript relationship. Preserved verbatim in q22 quote text. Companion to nq10 ("1020" for "10^20") in the same passage. |
 
 ---
 
@@ -555,6 +598,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/kenneth-kress`]
 - [`/people/pat-price`]
 - [`/people/russell-targ`]
+- [`/people/steven-walker`]
 - [`/people/suresh-sunderrajan`]
 - [`/people/william-f-miller`]
 
@@ -563,7 +607,9 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/american-institutes-for-research`]
 - [`/organizations/arpanet`]
 - [`/organizations/cia`]
+- [`/organizations/darpa`]
 - [`/organizations/dia`]
+- [`/organizations/lockheed-martin`]
 - [`/organizations/nasa`]
 - [`/organizations/parc`]
 - [`/organizations/saic`]

@@ -9657,3 +9657,153 @@
     key_personnel[15] ('kp16') note: 1 significant token(s) not in source (prose-drift check — contributor review): attested
   tokens: [attested]
 
+- ts: 2026-05-16T01:06:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): cofounded
+  tokens: [cofounded]
+
+- ts: 2026-05-16T01:07:14Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 3 significant token(s) not in source (prose-drift check — contributor review): bio, byline, co-named
+  tokens: [bio, byline, co-named]
+
+- ts: 2026-05-16T01:08:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('kp4') note: 2 significant token(s) not in source (prose-drift check — contributor review): attests, contributor
+  tokens: [attests, contributor]
+
+- ts: 2026-05-16T01:08:11Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('kp4') note: 1 significant token(s) not in source (prose-drift check — contributor review): identifies
+  tokens: [identifies]
+
+- ts: 2026-05-16T01:08:29Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: error
+  message: |
+    Section 'Key Personnel': table rows not in chronological order (saw '– 1990' after '2024-01-19' in 'period' column; earliest first)
+
+- ts: 2026-05-16T01:08:37Z
+  source: validator
+  check: chronological_tables
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: error
+  message: |
+    Section 'Key Personnel': table rows not in chronological order (saw '– 1990' after '2024-01-19' in 'period' column; earliest first)
+
+- ts: 2026-05-16T01:09:02Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('kp4') note: 3 significant token(s) not in source (prose-drift check — contributor review): attested, midpoint, window
+  tokens: [attested, midpoint, window]
+
+- ts: 2026-05-16T01:13:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[0] ('kp1') note: 5 significant token(s) not in source (prose-drift check — contributor review): appointment, archived, attested, board-of-directors, corpus
+  tokens: [appointment, archived, attested, board-of-directors, corpus]
+
+- ts: 2026-05-16T01:13:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('kp4') note: 3 significant token(s) not in source (prose-drift check — contributor review): attested, midpoint, window
+  tokens: [attested, midpoint, window]
+
+- ts: 2026-05-16T01:13:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[16] ('kp17') note: 3 significant token(s) not in source (prose-drift check — contributor review): appointment, bio, descriptor
+  tokens: [appointment, bio, descriptor]
+
+- ts: 2026-05-16T01:13:51Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('kp4') note: 1 significant token(s) not in source (prose-drift check — contributor review): contributor
+  tokens: [contributor]
+
+- ts: 2026-05-16T01:13:59Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[3] ('kp4') note: 1 significant token(s) not in source (prose-drift check — contributor review): picks
+  tokens: [picks]
+
+- ts: 2026-05-16T01:14:18Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e35' ('Lockheed Martin') wrap_path '/organizations/lockheed-martin' does not appear as a [`/organizations/lockheed-martin`] link in the node
+
+- ts: 2026-05-16T01:14:18Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e36' ('Defense Advanced Research Projects Agency') wrap_path '/organizations/darpa' does not appear as a [`/organizations/darpa`] link in the node
+

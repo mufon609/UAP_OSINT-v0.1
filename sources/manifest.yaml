@@ -3009,6 +3009,14 @@
   sha256: 2d997f23ac4da6fb3bc8348ec1394c0a752ce924c64499bde42d1c862c02e246
   archive_status: 1
   note: 'SRI International''s 2004-era history page covering 2000s (sri.com/about/history/). Live URL no longer exists on the modern sri.com site (CDX shows the section was removed by the early-2010s WordPress redesign); retrieved via Wayback Machine fuzzy-timestamp URL https://web.archive.org/web/2004/https://www.sri.com/about/history/2000.html. Decade-specific facts attest the institutional history: founding events, presidential transitions, major innovations, and milestones. Combined with the live sri.com Timeline of Innovation pages (which carry titles only, not decade prose), these Wayback snapshots are the substantive narrative source for SRI''s pre-2010 institutional history.'
+- url: https://www.sri.com/board-of-directors/
+  format: html
+  status: archived
+  path: news/sri-com-board-of-directors-20260515.html
+  archived_date: '2026-05-15'
+  sha256: e0b7538e93f49c693c3ef18ef950adec95e08e24942ad71a5347426aa6b20c8f
+  archive_status: 1
+  note: 'SRI International ''Our People'' page accessed via /board-of-directors/ URL (sri.com routes /board-of-directors/ and /executive-team/ to the same combined page; MD5 identical at fetch time 2026-05-15). First-party current attestation of board roster + executive team. Current board (as of 2026-05-15 page state): David Motley (Board Chair, ''Co-founder, General Partner, BTN Ventures''; listing 2024-06-01); Stefan Heck (CEO and Founder of Nauto; 2024-04-02); Charles Mathis (Fortune 500 CFO retired); Marshall Mohr (EVP and CFO retired, Intuitive Surgical; 2023-02-02); Ellen Ochoa (Veteran Astronaut, Director of NASA Johnson Space Center retired; 2021-12-02); David Parekh (CEO; 2021-09-08); Ellen M. Pawlikowski (General Retired, US Air Force; 2022-09-01); Rengarajan Ramesh (Operating Partner, EagleTree Capital; 2024-01-18); Steven Walker (VP and CTO Lockheed Martin retired, former DARPA director; 2025-02-19). Executive team (current page state): David Parekh (CEO 2021-09-08), Kathlynn Brown (President Biosciences Div), John Crowe (President ATSD 2024-02-20), James Fritz (SVP Federal/Strategic Program Development), Todd A. Grindal (President SRI Education), Joann Lime (CHRO), Peter Marcotullio (SVP Commercialization), John McIntire (CLO), Michael Page (CIO), Steve Perna (President InSyS Division 2022-09-26), Suresh Sunderrajan (CFO), Dimitra Vergyri (Director STAR Lab). Listing dates next to each name indicate when the person was added to the Our People page; not necessarily their appointment date. Corroborates ProPublica FY2024 board roster (Motley as chair, Ochoa, Pawlikowski, Mathis); diverges by adding Heck, Mohr, Walker (current board) and omitting Young Jr, Rieman (on ProPublica FY2024 but not current page). Confirms Parekh CEO listing predates 2021-09-08.'
 - url: https://www.sri.com/timeline-of-innovation/
   format: html
   status: archived
