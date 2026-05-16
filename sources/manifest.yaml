@@ -594,6 +594,15 @@
   note: 'Michael Shellenberger written testimony for 2024-11-13 House Oversight + Cybersecurity/IT hearing ''Unidentified Anomalous Phenomena: Exposing the Truth''. Contains detailed timeline referencing Skinwalker Ranch, BAASS/AAWSAP, Bigelow 2007 DIA letter, and Fugal 2022 purchase narrative. 214 pages.'
   archive_status: 3
   wayback_date: '2025-10-21'
+- url: https://documents2.theblackvault.com/documents/dia/AAWSAP-DIRDs/DIRD_24-DIRD_Concepts_for_Extracting_Energy_from_the_Quantum_Vacuum.pdf
+  format: pdf
+  status: archived
+  path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
+  archived_date: '2026-05-16'
+  sha256: 7baf7248d7850366754d574cc1f3a8cde5fe555a8f95e9f3c5fb4f83c7151d29
+  archive_status: 1
+  extraction_type: ocr-scan
+  note: 'AAWSAP DIRD Black Vault #24 — ''Concepts for Extracting Energy From the Quantum Vacuum'', DIA-08-1004-007, ICOD 1 December 2009, dated 6 April 2010, UNCLASSIFIED//FOR OFFICIAL USE ONLY. 58 pages. Author: Dr. Eric W. Davis, EarthTech International (per DIA January 2018 SASC letter naming the AAWSAP DIRD authors). The Acknowledgements section names 13 technical and useful-input contributors including H. E. Puthoff (EarthTech, Int''l) — primary-source attestation that Puthoff was an acknowledged technical contributor to a second AAWSAP DIRD beyond his own authored DIRD #15. Source archived via The Black Vault FOIA mirror (theblackvault.com). PDF producer metadata: ''Adobe Acrobat 9.55 Paper Capture Plug-in'' — OCR''d document; per-quote OCR artifacts preserved as naming_quirks entries on consuming artifacts per meta/conventions.md OCR-scan source-form discipline.'
 - url: https://documents2.theblackvault.com/documents/navy/DON-2021-003140.pdf
   format: pdf
   status: archived

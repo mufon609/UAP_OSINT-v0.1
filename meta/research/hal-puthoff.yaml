@@ -56,6 +56,8 @@ primary_sources:
   format: pdf
 - path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
   format: html
+- path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
+  format: pdf
 
 document_intrinsic:
   full_name: 'Harold E. Puthoff'
@@ -75,7 +77,7 @@ credibility_notes: 'Puthoff''s professional record is documented across primary 
   The TTSA page (January 8, 2018) is the most comprehensive single source on Puthoff''s career: it states that Puthoff earned his Ph.D. from Stanford University in 1967, that his professional background spans more than five decades of research at General Electric, Sperry, the National Security Agency, Stanford University and SRI International, that he has served as President and CEO of EarthTech International, Inc. (ETI) and Director of the Institute for Advanced Studies at Austin (IASA) since 1985, that he holds patents issued in the laser, communications, and energy fields, and that he won a Who''s Who Lifetime Achievement in 2017. The TTSA SEC Form 1-A Part II (July 10, 2017) and SEC Form 1-K Part II (filed May 2, 2022 and April 17, 2025) corroborate the EarthTech President and IASA Director roles since 1985 and the TTSA co-founder role; the May 2, 2022 filing reports that Puthoff recently left his position on the Company''s board of directors to serve on the Advisory Board, and the April 17, 2025 filing records the September 27, 2024 Puthoff/Davis memorandum to the Board of Directors on the ORNL ([`/organizations/ornl`]) Art''s Parts material analysis. The December 16, 2017 New York Times article describes Puthoff as ''an engineer who has conducted research on extrasensory perception for the C.I.A. and later worked as a contractor for the program''; other primary sources describe Puthoff as a physicist (Kress 1977: ''Two lasqr physicists, Dr. Russell Targ and Dr. Harold E. Puthoff''; the 2018 TTSA page: ''DR. HAL PUTHOFF, PhD''; SAFIRE Project team page: ''Harold Puthoff, PhD'').
 
 
-  The 29 March 2010 Defense Intelligence Reference Document DIA-08-1003-015 (DIA AAWSA Program) is a direct primary source on Puthoff''s author contribution to the AAWSA Program''s advanced technology reports. The document''s references list names three prior peer-reviewed publications by Puthoff on vacuum engineering and Alcubierre warp drive analysis: H. E. Puthoff, ''SETI, the velocity-of-light limitation, and the Alcubierre warp drive: An integrating overview'' (Physics Essays 9, 156, 1996; Reference 3 of the document); H. E. Puthoff, ''Polarizable-vacuum (PV) approach to general relativity'' (Found. Phys. 32, 927, 2002; Reference 16); and H. E. Puthoff, E. W. Davis and C. Maccone, ''Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity'' (Gen. Relativ. Grav. 37, 483, 2005; Reference 19). The references show that Puthoff''s 2010 analysis is based on a prior list of his own peer-reviewed publications on the same subject matter.
+  The 29 March 2010 Defense Intelligence Reference Document DIA-08-1003-015 (DIA AAWSA Program) is a direct primary source on Puthoff''s author contribution to the AAWSA Program''s advanced technology reports. The document''s references list names three prior peer-reviewed publications by Puthoff on vacuum engineering and Alcubierre warp drive analysis: H. E. Puthoff, ''SETI, the velocity-of-light limitation, and the Alcubierre warp drive: An integrating overview'' (Physics Essays 9, 156, 1996; Reference 3 of the document); H. E. Puthoff, ''Polarizable-vacuum (PV) approach to general relativity'' (Found. Phys. 32, 927, 2002; Reference 16); and H. E. Puthoff, E. W. Davis and C. Maccone, ''Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity'' (Gen. Relativ. Grav. 37, 483, 2005; Reference 19). The references show that Puthoff''s 2010 analysis is based on a prior list of his own peer-reviewed publications on the same subject matter. The 6 April 2010 Defense Intelligence Reference Document ''Concepts for Extracting Energy From the Quantum Vacuum'' (DIA-08-1004-007), prepared under the AAWSA Program by Davis, names H. E. Puthoff (EarthTech, Int''l) first among colleagues for technical contributions to that report — a second documented Puthoff contribution to the AAWSA Program advanced technology reports beyond his own Defense Intelligence Reference Document.
 
 
   The Magnesium-Zinc-Bismuth (MgZn/Bi) specimen analysis is on the public record from two institutional positions. The July 2024 [`/organizations/aaro`] ([`/documents/aaro-supplement-to-ornl-analysis-2024`]) ''Supplement to Oak Ridge National Laboratory''s Analysis of a Metallic Specimen'' concurs with the ORNL April 2024 finding that the specimen''s isotopic composition indicates terrestrial origin and that its physical and elemental properties are incompatible with functioning as a THz waveguide. The 27 September 2024 Puthoff/Davis memorandum to the TTSA Board of Directors states that the same analysis ''did not reveal any form of proof of exotic (Extraterrestrial, Ultra-terrestrial, or inter-dimensional) origin, but it did not absolutely rule it out either''.
@@ -170,7 +172,7 @@ entities_referenced:
   entity_type: person
   name: 'Eric Davis'
   wrap_path: '/people/eric-davis'
-  context_summary: 'Dr. Eric Davis co-authored with Puthoff the September 27, 2024 memorandum submitted to the TTSA Board of Directors counter-analyzing the ORNL Magnesium-Zinc-Bismuth (Art''s Parts) material report; the TTSA 2025-02-28 press-and-news post characterizes the Puthoff/Davis analysis as having clarified aspects of the ORNL report. Davis appears on the SAFIRE Project science review team as Chief Science Officer, Institute for Advanced Studies at Austin alongside Puthoff (Director, IASA). The 2010-03-29 DIA AAWSA DIRD authored by Puthoff cites Davis''s prior work three times: as co-editor (with M. G. Millis) of Frontiers of Propulsion Science (AIAA Press, 2009; Reference 1, the comprehensive-introduction citation Puthoff returns to in both Preface and Discussion footnotes); as co-author with Puthoff and Maccone of ''Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity'' (Gen. Relativ. Grav. 37, 483 (2005); Reference 19); and as sole author of Chapter 15: ''Faster-than-Light Approaches in General Relativity'' in that same Frontiers of Propulsion Science compendium (Reference 22 of the DIRD, the cited authority for warp-drive and wormhole technology feasibility constraints). New unbuilt stub.'
+  context_summary: 'Dr. Eric Davis co-authored with Puthoff the September 27, 2024 memorandum submitted to the TTSA Board of Directors counter-analyzing the ORNL Magnesium-Zinc-Bismuth (Art''s Parts) material report; the TTSA 2025-02-28 press-and-news post characterizes the Puthoff/Davis analysis as having clarified aspects of the ORNL report. Davis appears on the SAFIRE Project science review team as Chief Science Officer, Institute for Advanced Studies at Austin alongside Puthoff (Director, IASA). The 2010-03-29 DIA AAWSA DIRD authored by Puthoff cites Davis''s prior work three times: as co-editor (with M. G. Millis) of Frontiers of Propulsion Science (AIAA Press, 2009; Reference 1, the comprehensive-introduction citation Puthoff returns to in both Preface and Discussion footnotes); as co-author with Puthoff and Maccone of ''Levi-Civita effect in the polarizable vacuum (PV) representation of general relativity'' (Gen. Relativ. Grav. 37, 483 (2005); Reference 19); and as sole author of Chapter 15: ''Faster-than-Light Approaches in General Relativity'' in that same Frontiers of Propulsion Science compendium (Reference 22 of the DIRD, the cited authority for warp-drive and wormhole technology feasibility constraints). The 2010-04-06 Davis-authored AAWSA Program DIRD ''Concepts for Extracting Energy From the Quantum Vacuum'' (DIA-08-1004-007) names H. E. Puthoff (EarthTech) first among the colleagues credited for technical contributions to that report — second documented Davis-Puthoff AAWSA-DIRD collaboration beyond Puthoff''s own DIRD #15. New unbuilt stub.'
 
 - id: e3
   added_date: '2026-05-16'
@@ -402,6 +404,13 @@ entities_referenced:
   name: 'All-domain Anomaly Resolution Office (AARO)'
   wrap_path: '/organizations/aaro'
   context_summary: 'Per the July 2024 AARO Supplement to ORNL Analysis: ''In 2022, The All-domain Anomaly Resolution Office (AARO) contracted with Oak Ridge National Laboratory (ORNL) to conduct materials testing on a magnesium (Mg) alloy specimen.'' AARO is the contracting authority that commissioned the ORNL April 2024 analysis the Puthoff/Davis 2024-09-27 memorandum counter-analyzed. AARO''s July 2024 Supplement concurs with the ORNL terrestrial-origin and not-a-waveguide assessments. Built node.'
+
+- id: e32
+  added_date: '2026-05-16'
+  entity_type: document
+  name: 'Davis (2010) AAWSA Program DIRD — Concepts for Extracting Energy From the Quantum Vacuum'
+  wrap_path: '/documents/dird-24-quantum-vacuum-energy-extraction-2010'
+  context_summary: 'Defense Intelligence Reference Document DIA-08-1004-007, ''Concepts for Extracting Energy From the Quantum Vacuum'', dated 6 April 2010 (ICOD 1 December 2009; UNCLASSIFIED//FOR OFFICIAL USE ONLY; 58 pages). Author: Dr. Eric W. Davis, EarthTech International (per DIA January 2018 SASC letter naming the AAWSAP DIRD authors). Produced under the same Defense Intelligence Agency, Defense Warning Office''s Advanced Aerospace Weapon System Applications (AAWSA) Program as Puthoff''s 2010-03-29 DIRD. The Acknowledgements section names H. E. Puthoff (EarthTech) first among the colleagues credited for technical contributions to that report. New unbuilt stub.'
 
 naming_quirks:
 - id: nq1
@@ -638,6 +647,16 @@ timeline:
     location: 'p. 1, ¶1-2'
   category: publication
   node_link: '/documents/aaro-supplement-to-ornl-analysis-2024'
+
+- id: t19
+  added_date: '2026-05-16'
+  date: '2010-04-06'
+  event: 'Davis ([`/people/eric-davis`]) publishes [`/documents/dird-24-quantum-vacuum-energy-extraction-2010`] — Defense Intelligence Reference Document DIA-08-1004-007, ''Concepts for Extracting Energy From the Quantum Vacuum'' — under the same DIA ([`/organizations/dia`]) AAWSA Program ([`/organizations/aawsap`]) as Puthoff''s DIRD. Acknowledgements name Puthoff (EarthTech ([`/organizations/earthtech-international`])) first among the colleagues credited for technical contributions.'
+  source:
+    path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
+    location: 'p. 41, ¶1'
+  category: publication
+  node_link: '/documents/dird-24-quantum-vacuum-energy-extraction-2010'
 
 affiliations:
 - id: a1
@@ -880,3 +899,16 @@ program_involvement:
     path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
     location: 'p. i'
   note: 'period_start and period_end both set to 2010-03-29 to anchor the DIRD authorship to its publication date — the source attests Puthoff as the named Author of this particular DIRD on that date but does not attest a broader Puthoff-AAWSAP engagement window (no contract, no recurring-author relationship document is in the archived corpus). The ICOD (Information Cut-Off Date) 1 December 2009 anchors the document''s scientific content snapshot. The DIRD is one of the 37 AAWSAP technical reports FOIA-released to The Black Vault. Relationship to p3 (AATIP, 2007-2012): AAWSAP (2008-2012) is the DIA-internal program; AATIP is the AAWSAP-successor / re-branded continuation at OSD-level; per the 2018-07-26 TTSA ADAM announcement Puthoff is named as ''former Senior Advisor and Subcontractor to the Pentagon''s AATIP program''. The AAWSAP-DIRD authorship attested here is the program-substrate documentary instance of that broader AAWSAP/AATIP relationship.'
+
+- id: p6
+  added_date: '2026-05-16'
+  program: 'Advanced Aerospace Weapon System Applications (AAWSA) Program, Defense Intelligence Agency, Defense Warning Office'
+  role: 'Acknowledged technical contributor on the Davis-authored AAWSA Program DIRD DIA-08-1004-007, ''Concepts for Extracting Energy From the Quantum Vacuum'' (6 April 2010). The Acknowledgements name H. E. Puthoff (EarthTech) first among the colleagues credited for technical contributions to that report.'
+  period_start: '2010-04-06'
+  period_end: '2010-04-06'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: government/dird-24-quantum-vacuum-energy-extraction-2010.pdf
+    location: 'p. 41, ¶1'
+  note: 'Distinct from p5 (Puthoff''s own DIRD authorship): this is an acknowledged-technical-contributor role on Davis''s DIRD #24. The source attests this single contribution event but does not attest a broader period of engagement; bare period_start = period_end. The acknowledgment is a second documented Puthoff-EarthTech contribution to the AAWSA Program DIRD substrate, beyond Puthoff''s own DIRD #15.'
