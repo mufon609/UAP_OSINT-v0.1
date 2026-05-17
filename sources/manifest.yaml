@@ -3669,6 +3669,16 @@
   note: 'Lucis Trust Arcane School Conference London, May 2015 — Dr. James T. Ryder presentation ''The Soul Is Light. What Then Is Light?'' (Lucis Trust productions video published 2020-08-07 on the Lucis Trust YouTube channel; runtime 1:06:49). Transcript provenance: contributor-pasted from the YouTube transcript UI (same workflow as 2025-09-09 hearing transcript), then reformatted from bare-timestamp-on-its-own-line to canonical [MM:SS]-inline form to match the corpus convention used by other YouTube-caption transcripts in /sources/transcripts/. Auto-caption transcript with [MM:SS] timestamps preserved on every content line. Contains: IBEX (Interstellar Boundary Explorer) ''built in my lab'' first-person attestation of Lockheed Martin ATC supervisory role; Andromeda matter-halo survey instruments built by his company; Hal Puthoff ''my friend Dr. Puthoff'' + cosmic-matrix paper citation; first read Alice Bailey Treatise on Cosmic Fire ~1970 (3 years before 1973 Lockheed start); governments researching ''telepathy'' for ''purposes of invading other people in a secret way'' (auto-caption renders ''telepathy'' as ''leprosy'' in the body); plasma-vs-gas Sun mislabeling discussion; David Bohm + Stephen Hawking 2014 Nature article + Feynman last-book citations.'
   wayback_date: '2024-09-30'
   transcript_provenance: auto-caption
+- url: https://www.youtube.com/watch?v=MiUDl_9v6Ag
+  format: transcript
+  status: archived
+  path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+  archived_date: '2026-05-17'
+  sha256: 997c9b1f58c696f8f6e11430fff4959211250a97464ef94824fdeec269de0e63
+  archive_status: 3
+  note: 8 News Now / KLAS-TV Las Vegas / Mystery Wire news segment 'Craft of unknown origin subject of secret study, former US intelligence official confirms' by George Knapp, published 2026-04-06. ~5 minutes (132 caption lines). Lacatski speaks directly on-camera with Knapp. Published 2 days before WEAPONIZED EP 114 (2026-04-08); same 'Future Visions' (Lacatski's fourth book) press cycle but news-segment format vs long-form podcast. Opens with narrator naming Lacatski and his AAWSAP role; Lacatski speaks throughout.
+  transcript_provenance: auto-caption
+  wayback_date: '2026-05-17'
 - url: https://www.youtube.com/watch?v=Nc9_ZP36-AI
   format: transcript
   status: archived
@@ -3729,6 +3739,16 @@
   note: YouTube auto-captions for Linda Hall Library panel 'UAP in a Scientific Context' (~1:18:22). Recorded 2025-02-20, uploaded 2025-04-23. Moderator Nadia Drake; panelists Alex Dietrich, Greg Eghigian (PSU), Joshua Semeter (BU).
   wayback_date: '2025-04-27'
   transcript_provenance: auto-caption
+- url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  format: transcript
+  status: archived
+  path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  archived_date: '2026-05-17'
+  sha256: 15470fbcfbfa8fe0c0c2dda7e420d5ed6e8d4285ccac6be8b19a2ee5f5de5e4b
+  archive_status: 3
+  note: Mystery Wire / 8 News Now Las Vegas (KLAS-TV) book launch interview with George Knapp, Dr. James Lacatski, and Dr. Colm Kelleher, published 2021-10-12. ~17 minutes (421 caption lines). Earliest known on-record Lacatski primary-source media (predates the WEAPONIZED EP 38 interview by 2 years). Promotional press cycle for 'Skinwalkers at the Pentagon' (Lacatski/Kelleher/Knapp, October 2021). Auto-caption typos likely present for proper names (Lacatski/Kelleher/AAWSAP/AATIP) — register as naming_quirks during Phase I per source-form preservation discipline.
+  transcript_provenance: auto-caption
+  wayback_date: '2026-05-17'
 - url: https://www.youtube.com/watch?v=bi0H_mkwTW0
   format: transcript
   status: archived
