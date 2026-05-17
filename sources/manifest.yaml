@@ -3679,6 +3679,16 @@
   note: YouTube auto-captions for Merged Podcast EP0114 'Pilots & Witnesses; Systematic UAP Reporting' (~1:00:57). Published 2023-08-31. Framed around pilot reporting mechanisms — likely useful for Dietrich's institutional engagement history.
   wayback_date: '2025-01-17'
   transcript_provenance: auto-caption
+- url: https://www.youtube.com/watch?v=Qu8pudJk_-A
+  format: transcript
+  status: archived
+  path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  archived_date: '2026-05-17'
+  sha256: fc4a02a5e0e159ffc1dc8eafdfe3c6fc105cf10517ffc950e27f125f50726042
+  archive_status: 3
+  note: 'WEAPONIZED ''He Ran The Pentagon''s Secret UFO Program - And Says We''ve Been Played: Dr. James Lacatski (PART 1)'', published 2025-11-05. Runtime ~50m (1468 caption lines). Lacatski solo with hosts George Knapp and Jeremy Corbell. New material 2 years after EP 38: explicit claims about Kona Blue (KBP) program, deliberate AARO disinformation campaign, and a recovered UFO craft where U.S. teams breached the hull. Auto-caption variants: ''AASAP'' for AAWSAP; proper-name ''Lacatski'' renders correctly in this transcript (cleaner ASR than EP 38).'
+  transcript_provenance: auto-caption
+  wayback_date: '2026-05-17'
 - url: https://www.youtube.com/watch?v=R8TqBrrqL4U
   format: transcript
   status: archived
@@ -3729,6 +3739,16 @@
   note: 'YouTube auto-caption transcript of Kirkpatrick''s April 9 2026 first public reappearance after ~2 years of relative silence; National Capital Area Skeptics (NCAS) Arlington VA event titled ''All-domain Anomaly Resolution Office (AARO): a Duality in Mission Regarding UAPs'' hosted by NCAS president Scott Snell. Kirkpatrick restated the no-aliens / no-legacy-program conclusion. Source for audit finding 3.4. extraction_type: auto-caption; expect transcribe-pipeline typos (BACKLOG #20).'
   wayback_date: '2026-04-27'
   transcript_provenance: auto-caption
+- url: https://www.youtube.com/watch?v=cggMuAjFJcI
+  format: transcript
+  status: archived
+  path: transcripts/weaponized-lacatski-part2-2025-downloaded.md
+  archived_date: '2026-05-17'
+  sha256: 90e135b496c455632c680e29399b08582b01780656c4f8ed075405048d90b02c
+  archive_status: 3
+  note: 'WEAPONIZED ''The Government UFO Boss - Monsters, Men in Black & UFO Crashes: Dr. James Lacatski (PART 2)'', published 2025-11-11. Runtime ~1h 16m (1787 caption lines). Lacatski solo with hosts George Knapp and Jeremy Corbell. Continuation of the 2025-11-05 PART 1 interview. Topics: slow pace of disclosure, government entities discrediting official investigation, Lacatski''s own encounters with the unknown, current theories about UFO crashes and recovered bodies, whether the Tic Tac objects were ''one of ours''.'
+  transcript_provenance: auto-caption
+  wayback_date: '2026-05-17'
 - url: https://www.youtube.com/watch?v=ku9CYCKw4Aw
   format: transcript
   status: archived
@@ -3759,6 +3779,26 @@
   note: '2025-09-09 House Oversight UAP hearing YouTube recording — auto-generated captions copy-pasted from YouTube transcript UI; cleaned to strip duplicated screen-reader duration text. Hearing title: ''Restoring Public Trust through UAP Transparency and Whistleblower Protection''. Stenographic transcript not yet published by the committee.'
   wayback_date: '2026-03-09'
   transcript_provenance: auto-caption
+- url: https://www.youtube.com/watch?v=ow7FqiegixQ
+  format: transcript
+  status: archived
+  path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
+  archived_date: '2026-05-17'
+  sha256: fb62b750bdb54a4d26fdd6bebb92a3940fa1ac9e1e7a4c309916f78c1e7a0d7c
+  archive_status: 3
+  note: 'WEAPONIZED Episode #38 ''Inside the DIAs Secretive UFO Investigation'' with Dr. James Lacatski and Dr. Colm Kelleher, published 2023-10-16 (Weaponized site) / 2023-10-17 (iHeart). Runtime ~1h 49m (2365 caption lines). The foundational on-record Lacatski interview where he discusses the AAWSAP program, the 2011 Capitol Building meeting in which he posed the ''craft of unknown origin'' question to a U.S. Senator and an agency Under Secretary, and the Skinwalkers at the Pentagon book content. Source of the verbatim Lacatski quotes that Liberation Times Sharp (2023-10-17, liberationtimes-lacatski-craft-20231015.html) reports second-hand. Auto-caption variants present: ''latsky'' for Lacatski, ''kellerer'' for Kelleher, ''assap''/''oap''/''atip'' for AAWSAP/AATIP — register as naming_quirks during Phase I per source-form preservation discipline.'
+  transcript_provenance: auto-caption
+  wayback_date: '2026-05-17'
+- url: https://www.youtube.com/watch?v=rW02-PuPMJ8
+  format: transcript
+  status: archived
+  path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
+  archived_date: '2026-05-17'
+  sha256: e67a035ec54a164c8ea8315c43e37a4d670d9309ead42365a4d2a3045dee0a85
+  archive_status: 3
+  note: 'WEAPONIZED Episode #114 ''Dr. James Lacatski - This Is UFO Disclosure, As Far As It Can Go'', published 2026-04-08 (Weaponized site) / 2026-04-09 UTC (Apple Podcasts). Runtime ~1h 48m (2581 caption lines). Lacatski solo with hosts George Knapp and Jeremy Corbell. Most recent Lacatski material; discusses his fourth book ''Future Visions'' (draws from unreleased AAWSAP files). Carries the Lacatski ''wide open'' assertion: ''The government doesn''t know much more [than the general public]. There are people that think they know more, but they don''t. That this is wide open.'' Cleaner auto-captions than EP 38 (proper-name capitalization: ''Dr. Lacatski'', ''Future Visions'').'
+  transcript_provenance: auto-caption
+  wayback_date: '2026-05-17'
 - url: https://www.youtube.com/watch?v=ribyo1XCtRo
   format: transcript
   status: archived
