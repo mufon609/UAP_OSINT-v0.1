@@ -14659,3 +14659,256 @@
     credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
   tokens: [klas-tv]
 
+- ts: 2026-05-17T18:40:16Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 34: value contains `Blue: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: '"at least one element of Kona Blue is going forward. We just'
+
+- ts: 2026-05-17T18:40:16Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 22 significant token(s) not in source (prose-drift check — contributor review): 114, aawsap, closing, confirms, conflicts, dealt, disagreement, education, … (+14 more — pass --verbose for full list)
+  tokens: [114, aawsap, closing, confirms, conflicts, dealt, disagreement, education, interviews, naming, narration, paraphrase, quirks, quoting, recent, self-attestation, sent, source-form, startup-monitoring, structural, uses, utility-sector]
+
+- ts: 2026-05-17T18:40:32Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 19 significant token(s) not in source (prose-drift check — contributor review): 114, aawsap, confirms, conflicts, dealt, disagreement, education, interviews, … (+11 more — pass --verbose for full list)
+  tokens: [114, aawsap, confirms, conflicts, dealt, disagreement, education, interviews, naming, narration, quirks, quoting, recent, self-attestation, sent, source-form, startup-monitoring, uses, utility-sector]
+
+- ts: 2026-05-17T18:41:06Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 9 significant token(s) not in source (prose-drift check — contributor review): aawsap, disputed, entry, foot, interviews, narration, near, self-attestation, … (+1 more — pass --verbose for full list)
+  tokens: [aawsap, disputed, entry, foot, interviews, narration, near, self-attestation, uses]
+
+- ts: 2026-05-17T18:41:17Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 4 significant token(s) not in source (prose-drift check — contributor review): attestation, narration, source-form, transcripts
+  tokens: [attestation, narration, source-form, transcripts]
+
+- ts: 2026-05-17T18:41:26Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): interviews
+  tokens: [interviews]
+
+- ts: 2026-05-17T18:42:08Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-114-lacatski-future-visions-2026.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 197 NOT FOUND in sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md: "[1:00:48] Well, I think you're you're you're right asking the right questions. I..."
+
+- ts: 2026-05-17T18:42:08Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-114-lacatski-future-visions-2026.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 233 NOT FOUND in sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md: "[16:42] one thing I really don't like and people brought to my attention even in..."
+
+- ts: 2026-05-17T18:42:08Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e31' ('WEAPONIZED PART 1 (2025-11-05)') wrap_path '/transcripts/weaponized-lacatski-part1-2025' does not appear as a [`/transcripts/weaponized-lacatski-part1-2025`] link in the node
+
+- ts: 2026-05-17T18:42:08Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e32' ('WEAPONIZED PART 2 (2025-11-11)') wrap_path '/transcripts/weaponized-lacatski-part2-2025' does not appear as a [`/transcripts/weaponized-lacatski-part2-2025`] link in the node
+
+- ts: 2026-05-17T18:42:21Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-114-lacatski-future-visions-2026.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 197 NOT FOUND in sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md: "[1:00:48] Well, I think you're you're you're right asking the right questions. I..."
+
+- ts: 2026-05-17T18:42:21Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-114-lacatski-future-visions-2026.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 233 NOT FOUND in sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md: "[16:42] one thing I really don't like and people brought to my attention even in..."
+
+- ts: 2026-05-17T18:44:08Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e31' ('WEAPONIZED PART 1 (2025-11-05)') wrap_path '/transcripts/weaponized-lacatski-part1-2025' does not appear as a [`/transcripts/weaponized-lacatski-part1-2025`] link in the node
+
+- ts: 2026-05-17T18:44:08Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e32' ('WEAPONIZED PART 2 (2025-11-11)') wrap_path '/transcripts/weaponized-lacatski-part2-2025' does not appear as a [`/transcripts/weaponized-lacatski-part2-2025`] link in the node
+
+- ts: 2026-05-17T18:46:24Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e31' ('WEAPONIZED PART 1 (2025-11-05)') wrap_path '/transcripts/weaponized-lacatski-part1-2025' does not appear as a [`/transcripts/weaponized-lacatski-part1-2025`] link in the node
+
+- ts: 2026-05-17T18:46:24Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/weaponized-114-lacatski-future-visions-2026.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e32' ('WEAPONIZED PART 2 (2025-11-11)') wrap_path '/transcripts/weaponized-lacatski-part2-2025' does not appear as a [`/transcripts/weaponized-lacatski-part2-2025`] link in the node
+
+- ts: 2026-05-17T18:46:47Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T18:49:39Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T18:49:51Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T18:53:40Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T18:56:04Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T18:58:29Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T19:00:41Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T19:03:30Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+

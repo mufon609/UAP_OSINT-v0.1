@@ -1,0 +1,356 @@
+---
+id: transcripts/weaponized-114-lacatski-future-visions-2026
+type: transcript
+schema_version: 1
+status: primary-source-confirmed
+kind: other
+created: 2026-05-17
+source_medium: youtube
+---
+
+# WEAPONIZED EP 114 — Dr. James Lacatski: This Is UFO Disclosure, As Far As It Can Go (April 8, 2026)
+
+## Publication Record
+
+| Field | Value |
+|---|---|
+| Program / Show / Venue | WEAPONIZED (podcast hosted by George Knapp and Jeremy Corbell) |
+| Host(s) / Interviewer(s) | George Knapp + Jeremy Corbell |
+| Source Medium | youtube |
+| Source URL | https://www.youtube.com/watch?v=rW02-PuPMJ8 |
+| Transcript Verified | ✅ Confirmed — SHA256 verified via sources/manifest.yaml |
+
+---
+
+## Summary
+
+WEAPONIZED with Dr. James Lacatski ([`/people/james-lacatski`]) with George ([`/people/george-knapp`]) and Jeremy ([`/people/jeremy-corbell`]). For the book ([`/documents/future-visions-2026`]).
+
+George said the DIA ([`/organizations/dia`]) program "AATIP" was the largest UFO investigation funded by the US government — see ([`/organizations/aawsap`]) for the difference in form between this episode and Lacatski's own earlier episodes.
+
+Lacatski said his Skinwalker Ranch ([`/locations/skinwalker-ranch`]) visit request went through "my managers, multiple managers approval, to request to visit Skinwalker Ranch. I wanted to hear the real details. What is really going on? And that's what DIA was interested in." Lacatski said the program was "under cover, in a sense, even from within my own group." Lacatski said about Jay Stratton ([`/people/jay-stratton`]): "he was part of what we call the air team. He worked on air threats" — and Lacatski "was head of uh the missile threat, enemy missile threat to the United States." Lacatski said "I I I didn't see the relationship at first and then I saw the relationship that UFOs were under the paranormal umbrella, not vice versa or anything like that or totally dissociated. That disturbs me when I read about people who don't believe in the connection cuz if if anything, that's what we proved."
+
+Lacatski said his reactor startup monitoring work in the utility sector lasted "6-7 months"; he then went after an L clearance and then a Q clearance at DOE; worked on naval reactors, specifically shielding of new attack submarines at Knolls Atomic Power Plant. He said he worked on countermeasures and threat to the missile defense system. He said his doctor of engineering thesis was on "torsatron" reactor design "tied to Oak Ridge's advanced toroidal facility" and that he had a security clearance at the time and was "doing classified work both with DOE and DOD" on "a very advanced weapon system." He said the weapon system was approved for research by DOD multiple levels but "was not buildable" at the time but "is buildable now."
+
+The four books: George said "your latest book, the last book that you intend to write about AATIP. You've told me that taken together they in essence uh are the equivalent of disclosure. Am I overstating it?" Lacatski said "No, I believe that that's was our intent. Now, as to having four books, we thought one would suffice. Then it apparently had three more were needed." Lacatski said about Kona Blue ([`/organizations/kona-blue`]): "I mentioned last time on your program the foundation of Kona Blue ... if you go through all four of the books you can see the structure that we first put into Skinwalkers in the Pentagon ([`/documents/skinwalkers-at-the-pentagon-2021`]) as a future program. You can see that matches up almost exactly with the program that DHS and DOD released on what Kona Blue was to be. Everything they released on Kona Blue was correct. All I'm saying is it was incomplete. Omission."
+
+Lacatski's "wide open" passage: "We've just opened up the door by saying, 'Hey, this is real. You need to do your research, your due diligence. If you expect the the government to to carry the ball on this, I wouldn't.' Uh but uh that uh it's wide open."
+
+Pax River facility — Jeremy asked "have you ever been to the Pax River facility, and is there a craft there?" Lacatski said "I can answer part of the question. I can say yes, I've been there. Yes, I've seen the facility, but it was it was uh just built ... I can't say what was going to go in there. It was big enough ... this could have held our probably our largest aircraft in that building. Now, why would it need to at a naval facility? I don't know, because they wouldn't have a need for that, I would think."
+
+Tic Tac — Jeremy asked "Is Tic Tac still legit? Is it ours? Do we have anything like it? And if we did, why the hell don't we use it?" Lacatski said "if I was just Jim of the street, the the Jim public, I I wouldn't believe it if anyone told me that that was a classified program of the US. I I just I just can't believe that. But ... but the thing is is there's classified programs that are your developments and ... crumbs that you've picked up in the forest." Lacatski said "there were some things that still haven't been released that were classified on the Tic Tac incident."
+
+Russian Thread 3 files: Lacatski said "we translated them. Uh we got distribution and discussion approved by DIA because they were all marked highly secret in Soviet markings. Um Russian markings ... I would say that we ... This is contrary to what's out there on the internet, that we patterned our program after these. Well, we received them too late in the program to ... actually pattern anything after the Thread 3 documents. We were in the process of studying them, and uh that's when uh we were running into rough waters with the program continuing beyond."
+
+Later, George and Jeremy talk about a passage from the book — Lacatski "personally briefed two Department of Homeland Security officials in a skiff for three and a half hours in February of 2011 and he said that they left them shell-shocked. That's a quote with sleepless nights and his exact words were that ASAP never ended but converted to Kona Blue" — Corbell from the book. Knapp and Corbell talk through the future of Kona Blue, saying "at least one element of Kona Blue is going forward. We just don't know what it is."
+
+Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-borland`] [`/people/luis-elizondo`] [`/people/david-grusch`] [`/people/anna-paulina-luna`] [`/people/tim-burchett`] [`/people/donald-trump`] [`/people/michio-kaku`] [`/people/bob-lazar`] [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/bigelow-aerospace`] [`/organizations/dod`] [`/organizations/dhs`] [`/organizations/oni`] [`/organizations/weaponized-podcast`] [`/organizations/klas-tv`] [`/documents/inside-us-gov-covert-ufo-2023`] [`/transcripts/weaponized-lacatski-part1-2025`] [`/transcripts/weaponized-lacatski-part2-2025`]
+
+---
+
+## Speakers
+
+| Name | Role | Node Link | Note |
+|---|---|---|---|
+| George Knapp | Co-Host | [`/people/george-knapp`] | KLAS-TV / 8 News Now / Mystery Wire chief investigator; WEAPONIZED co-host; book co-author with Lacatski. |
+| Jeremy Corbell | Co-Host | [`/people/jeremy-corbell`] | WEAPONIZED co-host with George Knapp; primary in-studio questioner of Lacatski. |
+| Dr. James Lacatski | Guest | [`/people/james-lacatski`] | Former AAWSAP director and Kona Blue lead at DIA. Surname renders canonically as "Lacatski" through most of the transcript; one variant "Lakatski" registered in naming_quirks. |
+
+---
+
+## Key Passages
+
+### Lacatski's structural account of his Skinwalker Ranch visit request — sent via "multiple managers approval" at DIA. Establishes the institutional path by which his Ranch investigation was officially sanctioned at DIA — not a personal interest pursued outside the job
+
+> [7:42] Skinwalker Ranch came up. Short discussion, and that started it all. I wrote a letter to uh uh with my managers, multiple managers approval, to request to visit Skinwalker Ranch. I wanted to hear the real details. What is really going on? And that's what DIA was interested in.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 explaining the early origins of the DIA UFO interest that became AAWSAP, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [7:42]–[8:00] |
+
+---
+
+### Lacatski's framing of AAWSAP as kept under cover "even from within my own group" — continuity with the closed-program / closed-stovepipe framing from EP 38 and Mystery Wire. Frames the four books explicitly as "a controlled disclosure of the information that we wanted to put forward with Pentagon approval."
+
+> [8:20] And so, everything was under under cover, in a sense, even from within my own group. I just wanted to keep things controlled. And you've seen that up to this day. And the four books, they're a controlled disclosure of the information that we wanted to put forward with Pentagon approval.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 framing the controlled-disclosure structure of the AAWSAP-era information, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [8:20]–[8:42] |
+
+---
+
+### Lacatski's structural attestation about Jay Stratton at DIA — Stratton was "part of what we call the air team. He worked on air threats" and was "head of that group." Lacatski was "head of uh the missile threat, enemy missile threat to the United States." Documents the air-team/missile-threat division of labor at DIA during the AAWSAP-pre-AAWSAP period; Stratton was either on assignment to DIA from ONI ([`/organizations/oni`]) or a DIA employee — Lacatski does not know which.
+
+> [9:13] we had uh he was part of what we call the air team. He worked on air threats. And he was I don't know if he was on assignment to DIA from ONI or if he was a DIA uh uh employee at the time. But we also had other members within those teams. He was head of that group. I was head of uh the missile threat, enemy missile threat to the United States.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 responding to George's framing of how he and Stratton compared notes at DIA, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [9:13]–[9:43] |
+
+---
+
+### Lacatski's direct attestation of the paranormal-umbrella discovery — "I didn't see the relationship at first and then I saw the relationship that UFOs were under the paranormal umbrella, not vice versa." Says "that's what we proved" of the AAWSAP work. The "proved" framing on the paranormal-as-umbrella connection is one of the strongest on-record affirmative claims by Lacatski on what AAWSAP established.
+
+> [11:14] I I I didn't see the relationship at first and then I saw the relationship that UFOs were under the paranormal umbrella, not vice versa or anything like that or totally dissociated. That disturbs me when I read about people who don't believe in the connection cuz if if anything, that's what we proved.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 responding to George's framing of his "no religious type beliefs going into this", 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [11:14]–[11:37] |
+
+---
+
+### Lacatski's direct attestation of his Q clearance at DOE and naval reactors work "specifically shielding of new attack submarines." The Q clearance attestation continues from PART 2 ("a Q clearance at deal"); EP 114 adds the substantive content of the work — naval reactor shielding on new attack submarines.
+
+> [12:49] And then Uh once I was employed there, I went after the Q clearance. And so, in that regard, I was working on naval reactors, specifically shielding of new attack submarines.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 walking through his pre-AAWSAP DOE / naval reactors background, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [12:49]–[13:08] |
+
+---
+
+### Lacatski's direct attestation of his pre-AAWSAP classified DOE / DOD work on "a very advanced weapon system" — approved for research at DOD multiple levels "even to the highest" but "was not buildable" at the time. He says in the next exchange "It is buildable now." Documents a previously-undisclosed advanced-weapon-system research thread in Lacatski's pre-AAWSAP career.
+
+> [14:34] I had the clearance at the time and I was doing classified work both with DOE and DOD. And uh we can't talk about that at all. Because and I can tell you because it was a very advanced weapon system that I was working on, very advanced. Wow. And it is Back then, it was approved for research by DOD multiple levels, even to the highest. But was not buildable.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 responding to Corbell's research into his University of Tennessee / Oak Ridge torsatron thesis, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [14:34]–[15:05] |
+
+---
+
+### Lacatski's direct attestation that Kona Blue was "first put into Skinwalkers in the Pentagon as a future program" — Skinwalkers chapter rear-portions structure matches "almost exactly" the program "DHS and DOD released on what Kona Blue was to be." Lacatski affirms the DHS/DOD release on Kona Blue as "correct" but "incomplete" — by omission. Critical structural framing for understanding the official Kona Blue release record.
+
+> [17:42] No, I mentioned last time on your program the foundation of Kona Blue. Actually, now, your readers can do this. I think both of you are doing it. But if you go through all four of the books you can see the structure that we first put into Skinwalkers in the Pentagon as a future program. You can see that matches up almost exactly with the program that DHS and DOD released on what Kona Blue was to be. Everything they released on Kona Blue was correct. All I'm saying is it was incomplete. Omission.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 explaining the four-book Kona Blue lineage, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [17:42]–[18:22] |
+
+---
+
+### Lacatski's direct attestation that AAWSAP was "highly classified" (contradicting the official "unclassified program" framing) but the books' content was checked by the Pentagon and is unclassified.
+
+> [19:00] And we did the same thing throughout AATIP. Uh when it was untrue that it was an unclassified program. It was It was highly classified. But everything you got out here and checked by the Pentagon is unclassified.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 explaining the classified status of the underlying program versus the unclassified release, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [19:00]–[19:17] |
+
+---
+
+### Lacatski's direct attestation that the AAWSAP RFP "was meant to be" obscure — no untrue statement in it — and that DIA deliberately went with "small contractors" Bigelow Aerospace and BAASS so the program "could form it from the ground up" without inheriting structure from a big aerospace company.
+
+> [20:20] That's correct. Uh, right from the beginning and we've If people thought that the request for proposal was obscure, well, it was meant to be. But, is there an untrue statement in there? No, that's what we wanted. Uh, and but we were very specific of going with the small contractors because we knew that with a small contractor like, uh, Bigelow Aerospace uh, and an even smaller one, BAASS, their specialized study for this for this contract they could form it from the ground up.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 responding to Corbell's framing of the AAWSAP "institutional argument" that followed the data "into the taboo", 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [20:20]–[20:57] |
+
+---
+
+### Lacatski's direct on-record framing of the disclosure status as of April 2026 — "Hey, this is real. You need to do your research, your due diligence. If you expect the government to carry the ball on this, I wouldn't. ... it's wide open." The "wide open" framing is the load-bearing public-record statement from this episode.
+
+> [30:14] We've just opened up the door by saying, "Hey, this is real. You need to do your research, your due diligence. If you expect the the government to to carry the ball on this, I wouldn't. Uh but uh that uh it's wide open.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 closing his framing of the four-book controlled-disclosure structure, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [30:14]–[30:34] |
+
+---
+
+### Lacatski's first-person on-record confirmation that he visited the Pax River Naval Air Station facility — "yes, I've been there. Yes, I've seen the facility, but it was it was uh just built." Lacatski says the building "could have held our probably our largest aircraft" and asks "why would it need to at a naval facility?" Closes the loop on the Pax River SAP-F hangar question Elizondo's QFR Q7 had attested ([`/findings/pax-river-scif-fiscal-triangulation`]) — Lacatski independently confirms the visit and the structural scale.
+
+> [33:51] I can answer part of the question. I can say yes, I've been there. Yes, I've seen the facility, but it was it was uh just built. So, uh I can't say what was going to go in there. It was big enough. It You know, there's Memories fade like that when you're looking at a big building. And sometimes, when I look at big buildings, they don't seem quite as big when you're there. But this could have held our probably our largest aircraft in that building. Now, why would it need to at a naval facility? I don't know, because they wouldn't have a need for that, I would think.
+
+| Field | Value |
+|---|---|
+| Attributed to | Jeremy in WEAPONIZED EP 114 asking Lacatski directly about the Pax River facility Rep. Burchett had referenced, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [33:51]–[34:32] |
+
+---
+
+### Lacatski's rhetorical pivot on the Tic Tac-is-it-ours question — "You think we wouldn't see some evidence of that machine now?" Continues the counterfactual argument from PART 2 q24/q9 that if Tic Tac were 22-year-old US technology it would be implemented on aircraft today.
+
+> [1:00:48] >> Well, I think you're you're you're right asking the right questions. I'm not the right one to answer on some of them, others I am. But what do you think? Do you think that that that such a machine from 20 5 years ago was when it was seen? Not 25 uh 22
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 responding to Corbell's question of whether Tic Tac is "ours" 22 years later, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [1:00:48]–[1:01:07] |
+
+---
+
+### Lacatski's direct on-record statement on Tic Tac — "there were some things that still haven't been released that were classified on the Tic Tac incident." His personal position: "I just can't believe" that the 2004 Tic Tac was a classified US program. Documents Lacatski's evolving framing on whether Tic Tac is US technology — from "not that I'm aware of" in PART 2 to "I just can't believe that" in EP 114.
+
+> [1:02:08] There were some things that still haven't been released that were classified on um on uh the Tic Tac incident. So, I think if I was just Jim of the street, the the Jim public, I I wouldn't believe it if anyone told me that that was a classified program of the US. I I just I just can't believe that.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 directly answering Corbell on whether the 2004 Tic Tac is US technology, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [1:02:08]–[1:02:30] |
+
+---
+
+### Lacatski's direct attestation about the Russian Thread 3 files — translated and approved for DIA distribution and discussion despite Soviet/Russian highly-secret markings. Lacatski contradicts the public framing that AAWSAP was "patterned" after the Thread 3 documents — the Russian files arrived "too late in the program" to pattern anything after; they were under study when AAWSAP was running into "rough waters with the program continuing beyond."
+
+> [1:03:54] Well, as you know, we trans translated them. Uh we got uh uh distribution and discussion approved by DIA because they were all marked highly secret in Soviet markings. Um Russian markings. Um I would say that we This is contrary to what's out there on the internet, that we patterned our program after these. Well, we received them too late in the program to uh to actually pattern anything after uh the Thread 3 uh uh documents. We were in the process of studying them, and uh that's when uh we were running into rough waters with the program continuing beyond.
+
+| Field | Value |
+|---|---|
+| Attributed to | George in WEAPONIZED EP 114 asking Lacatski to summarize the Thread 3 / Russian-files content in the new book, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [1:03:54]–[1:04:46] |
+
+---
+
+### Lacatski's framing of the four-book editorial process — he was "the editor" of the 38 different styles that came in and had to convert them to one consistent voice. "I had to read every line and make the corrections." Documents Lacatski's hands-on editorial role across the four-book series.
+
+> [16:52] And I I had to understand them. I was the editor. Yeah, cuz we got 38 different styles coming in to that we had to convert to one. So, there was a there was an effort. I had to read every line and make the corrections.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 explaining the editorial process for the four books, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [16:52]–[17:07] |
+
+---
+
+### Lacatski's direct affirmative attestation on the AAWSAP findings — "These are craft many of them. They have effects, physical, physiological, psychological on humans. It's real. It's happening. It's happening all over the world." Documents his explicit "It's real. It's happening" framing of the UAP phenomenon as established by AAWSAP investigation.
+
+> [28:50] Everything that's in these books was thoroughly investigated. All the cases, all the incidents, all the locations, uh, and you know, you you've got some general themes throughout. These are craft many of them. They have effects, physical, physiological, psychological on humans. It's real. It's happening. It's happening all over the world. And everything that you've written in these four books is approved in a sense.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 summarizing the four-book content, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [28:50]–[29:16] |
+
+---
+
+### Lacatski's direct on-record framing that he is "hopeful that I'm going to be able to share in one form or another everything from A SAP and Kona Blue" — the canonical statement of his ongoing disclosure intent as of April 2026, while acknowledging "can we have all the details? Probably not."
+
+> [29:31] Well, no, I'm hopeful that I'm going to be able to share in one form or another everything from A SAP and Kona Blue. I I I I expected to be able to do that. Uh can we have all the details? Probably not.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 responding to Corbell's question whether he is "happy now that the four books are done with what you've been able to share", 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [29:31]–[29:58] |
+
+---
+
+### Lacatski's direct programmatic framing — "that's what needs to be done now with Kona Blue. We need to move ahead." Says lights-in-the-sky and possibly even close-landings collection "isn't going to cut it anymore"; the future program needs to involve "real detail here and acquire that."
+
+> [23:26] that's what needs to be done now with Kona Blue. We need to move ahead. We're not collecting information on lights in the sky isn't going to cut it anymore. And possibly even not close landings. But, you know, we're going to have to involve ourselves in some real detail here and acquire that.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED EP 114 framing the structural future of Kona Blue, 2026-04-08 |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [23:26]–[23:48] |
+
+---
+
+## Source-Form Notes
+
+Source-form preservations — verbatim tokens in quote text that the cited primary source attests in a non-canonical form (auto-caption typos, OCR artifacts, alias-of-record). The verbatim form is preserved in quoted text per source-read-first discipline; the canonical form is recorded here for navigation.
+
+| Source Form | Canonical | Source | Note |
+|---|---|---|---|
+| ASAP | AAWSAP | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption alternate rendering of "AAWSAP" as "ASAP" in Lacatski's references; same pattern as earlier transcripts. |
+| A SAP | AAWSAP | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption two-word rendering of "AAWSAP" as "A SAP" in Lacatski's "everything from A SAP and Kona Blue" attestation. |
+| Lakatski | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption alternate rendering of "Lacatski" as "Lakatski" in one Corbell address ("Lakatski, you're like building an institutional argument"). |
+| skiff | SCIF | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption phonetic rendering of "SCIF" (Sensitive Compartmented Information Facility) as "skiff" in Corbell's paraphrase of the Lacatski-DHS 2011 briefing from the Future Visions book. |
+| Lacy | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption short-form rendering of "Lacatski" as "Lacy" — same variant that appeared in PART 2. |
+
+---
+
+## Preserved Disagreements
+
+Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
+
+| Position | Counterpart | Source | Note |
+|---|---|---|---|
+| AATIP | AAWSAP | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | WEAPONIZED EP 114 narration consistently uses "AATIP" for the program Lacatski directed at DIA — same as the 8 News Now news segment ([`/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026`]). Per Lacatski's own attestations in WEAPONIZED EP 38, Mystery Wire 2021, WEAPONIZED PART 1, and the Puthoff DIRD attribution, the program he directed was AAWSAP. The WEAPONIZED EP 114 framing diverges from Lacatski's own self-attestations; preserved with resolution `disputed`. |
+
+---
+
+## Associated Nodes
+
+<!-- Auto-generated by scripts/build/associate.py. Do not hand-edit. -->
+
+### People
+
+- [`/people/anna-paulina-luna`]
+- [`/people/bob-lazar`]
+- [`/people/colm-kelleher`]
+- [`/people/david-grusch`]
+- [`/people/donald-trump`]
+- [`/people/dylan-borland`]
+- [`/people/george-knapp`]
+- [`/people/harry-reid`]
+- [`/people/james-lacatski`]
+- [`/people/jay-stratton`]
+- [`/people/jeremy-corbell`]
+- [`/people/luis-elizondo`]
+- [`/people/michio-kaku`]
+- [`/people/tim-burchett`]
+
+### Organizations
+
+- [`/organizations/aatip`]
+- [`/organizations/aawsap`]
+- [`/organizations/baass`]
+- [`/organizations/bigelow-aerospace`]
+- [`/organizations/dhs`]
+- [`/organizations/dia`]
+- [`/organizations/dod`]
+- [`/organizations/klas-tv`]
+- [`/organizations/kona-blue`]
+- [`/organizations/oni`]
+- [`/organizations/weaponized-podcast`]
+
+### Documents
+
+- [`/documents/future-visions-2026`]
+- [`/documents/inside-us-gov-covert-ufo-2023`]
+- [`/documents/skinwalkers-at-the-pentagon-2021`]
+
+### Transcripts
+
+- [`/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026`]
+- [`/transcripts/weaponized-lacatski-part1-2025`]
+- [`/transcripts/weaponized-lacatski-part2-2025`]
+
+### Locations
+
+- [`/locations/skinwalker-ranch`]
+
+### Findings
+
+- [`/findings/pax-river-scif-fiscal-triangulation`]
