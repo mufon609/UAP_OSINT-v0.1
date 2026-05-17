@@ -14912,3 +14912,36 @@
     credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
   tokens: [klas-tv]
 
+- ts: 2026-05-17T19:05:59Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T19:18:02Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T19:42:58Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): wire
+  tokens: [wire]
+
