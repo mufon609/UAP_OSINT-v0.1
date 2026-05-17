@@ -62,4 +62,6 @@ Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
 
-*No anytime items currently open.*
+*No anytime items currently open.* (C1 retired 2026-05-17 —
+shipped as `scripts/tools/extract-firefox-cookies.py`; ID held
+open per the gap-stable retirement rule.)
