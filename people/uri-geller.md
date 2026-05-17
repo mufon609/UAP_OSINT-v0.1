@@ -45,7 +45,7 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | Organization | Role | Period | Source | Note |
 |---|---|---|---|---|
 | [`/organizations/idf`] | Paratrooper, Israeli army; fought in the Six-Day War of 1967, wounded in action | 1967 | news/urigeller-com-biography-20260516.html |  |
-| [`/organizations/stanford-research-institute`] | Subject of a scientific study undertaken at the Stanford Research Institute at Menlo Park, California (parapsychology investigation); per the Russell Targ verbatim attestation in the Brendan Burton article, at SRI for six weeks in 1973 | 1972-12 – 1973 | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html | December 1972 entry attested by Burton article ¶5 ("In December 1972 he allowed himself to become the subject of a scientific study"); six weeks in 1973 attested by Targ verbatim quote ¶7. Period_end set to 1973 reflects the Targ-attested SRI tenure window; subsequent SRI engagement (if any) not attested by the archived sources. |
+| [`/organizations/stanford-research-institute`] | Test subject in the SRI parapsychology investigation at Menlo Park, California — eight-day session Aug 4-11, 1973 attested by the CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`] and by the Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`]; earlier nine-day field measurement program in November-December 1972 attested by CIA-RDP96-00787R000100180001-3 (the contract 1471(S)73 progress report) | 1972-12 – 1973-08 | government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf | Title page of the Aug 1973 CIA report attests Geller as test subject — "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973" (R. Targ cover memo dated August 13, 1973). The earlier engagement is attested by the CIA-RDP96-00787R000100180001-3 contract 1471(S)73 progress report (Section A, page 2): "Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller"; Section III, page 11 describes the program as "The experiments conducted with Geller in November-December, 1972"; Figure 5, page 21 dates a sample picture-drawing experiment 12/7/72. The Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] names "Mr. Uri Geller" in the studies overview as the first-study subject of the SRI experiments published in October 1974. Burton article (¶5 "In December 1972 he allowed himself to become the subject of a scientific study"; Targ verbatim ¶7 "Uri was at our laboratory at SRI for six weeks in 1973") remains a supporting third-party attestation but is no longer the load-bearing source — the CIA primary docs supersede it for the SRI subject status. Total documented Geller SRI engagement per the primary record is approximately 17 days (9 days late 1972 + 8 days Aug 1973); Targ's 2007 recollection of "six weeks in 1973" exceeds the contemporaneous record by approximately four weeks and assigns the engagement entirely to 1973 despite the bulk per contract progress being in November-December 1972; see r1 and the F.SRI finding-node candidate in meta/topic/research-queue.md. |
 | [`/organizations/cia`] | Subject of tests per the 2017 CIA release of previously top secret data; per Geller's biography, his work with the CIA has ranged from using Mind Power to erase KGB computer files and track serial killers, to attending nuclear disarmament negotiations |  | news/urigeller-com-biography-20260516.html | Self-attestation. The 2017 CIA Reading Room release of declassified Stargate-era documents is a real event (referenced in biography ¶31); the specific CIA documents carrying the "convincing and unambiguous" verdict are not currently archived in this repository. |
 | [`/organizations/fbi`] | Self-attested work with the FBI alongside CIA collaboration claims per Geller's biography |  | news/urigeller-com-biography-20260516.html | Self-attestation. No FBI primary-source corroboration archived in this repository. |
 | [`/organizations/uri-geller-charitable-foundation`] | Founder |  | news/urigeller-com-biography-20260516.html |  |
@@ -60,6 +60,22 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 
 ### Direct Observations
 
+> a cylinder with noise coming out of it
+
+| Field | Value |
+|---|---|
+| Attributed to | R. Targ ([`/people/russell-targ`]) transcription of Geller's verbal response during the firecracker experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`], 1973-08-04 |
+| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
+| Location | p. 3, ¶ Saturday-August-4-firecracker |
+
+> drops of water coming out of the picture
+
+| Field | Value |
+|---|---|
+| Attributed to | R. Targ ([`/people/russell-targ`]) transcription of Geller's verbal response during the grapes experiment, Saturday August 4, 1973 SRI session, CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`], 1973-08-04 |
+| Source | [archived source](../sources/government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf) |
+| Location | p. 3, ¶ Saturday-August-4-grapes |
+
 > I was as surprised as anybody else to open the 4 May 1987 issue of US News & World Report and read the following on the ‘Washington Whispers’ page:
 
 | Field | Value |
@@ -67,6 +83,54 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | Attributed to | About index page, Mind Over Missile? teaser block (first-person Geller voice introducing the linked sub-page), 1987-05-04 |
 | Source | [archived source](../sources/news/urigeller-com-about-uri-20260516.html) |
 | Location | ¶ Mind Over Missile? teaser |
+
+> from which agents would go to Damascus, Jordan, Egypt, all of those countries. When I was 12 or 13, I confronted one of the agents. His name was Yoav Shaham. I told him: 'You're a spy, Yoav!' I felt it. He freaked out. He told me never to dare say that again.
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ Mossad-safe-house |
+
+> But what I didn't know was that he had spoken with intelligence chiefs Meir Amit and Aharon Yariv about me. Yariv summoned me to a meeting in Tel Aviv. I went through all the biggest intelligence guys. And then that's it—no comment from that point on.
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ Mossad-safe-house+2 |
+
+> I can tell you that the FBI asked me to convince Russian diplomats to defect. They made whole parties in Long Island, I mingled there, I beamed my mind,
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ FBI-defection |
+
+> I act upon it if necessary, because I'm still in touch with various government agencies that might need my help
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ daily-routine |
+
+> When the first spoon bent and broke in my hand, I knew I could turn this into an act, something that could make me money so I could stop my mother from working. And then I discovered that I could also do telepathy, I could read minds, move the needle of a compass, sprout seeds in the palm of my hands.
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ first-spoon |
+
+> I bent a spoon, but it wasn't bent enough for Carson, and he kind of sneered and mocked. And that was it, I was humiliated for 22 minutes. I sat there sweating, and the only thought that went through my mind was: Uri Geller, you are destroyed. I was ready to pack up the next morning and head back to Tel Aviv.
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ Carson-humiliation |
 
 > He first became aware of his unusual powers when he was about five. One day, during a meal, his spoon curled up in his hand and broke, although he had applied no physical pressure to it. His parents were somewhat shocked and Uri did not mention the incident to anyone else at that time. He developed these powers in school by demonstrating them to pupils. His mother thought he inherited them from Sigmund Freud.
 
@@ -110,6 +174,14 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | Attributed to | Brendan Burton article "Uri Geller – UFOs, metal-bending and the PSI war" (November 24, 2007) ¶25 — transcription of Geller's Mind Medicine (Element Books, 1999) |
 | Source | [archived source](../sources/news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html) |
 | Location | ¶25 |
+
+> I am shamelessly admitting that I am the king of quirkiness and bizarrity, of strangeness, of the mysterious and so on,
+
+| Field | Value |
+|---|---|
+| Attributed to | Tablet Magazine interview by Tal Kra-Oz, "The Spy Who Bent a Million Spoons", June 03, 2015 |
+| Source | [archived source](../sources/news/tablet-spy-who-bent-a-million-spoons-20260516.html) |
+| Location | ¶ opening-acknowledgment |
 
 > In 2017 the CIA released a large volume of previously top secret data, including documents and memos about the tests that were performed on Uri Geller.
 
@@ -158,8 +230,11 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | 1969 | Began to demonstrate his powers of telepathy and psychokinesis to small audiences | observation | news/urigeller-com-biography-20260516.html |  |
 | 1971 | By the end of 1971, a household name throughout Israel; Prime Minister Golda Meir ([`/people/golda-meir`]) endorsed Uri on national radio — "Don't ask me – ask Uri Geller!" — when asked what she predicted for the future of Israel | other | news/urigeller-com-biography-20260516.html |  |
 | 1972-12 | Allowed himself to become the subject of a scientific study undertaken at the Stanford Research Institute ([`/organizations/stanford-research-institute`]) at Menlo Park, California; introduced to the SRI investigators (Hal Puthoff ([`/people/hal-puthoff`]) and Russell Targ ([`/people/russell-targ`])) and astronaut Edgar Mitchell ([`/people/edgar-mitchell`]) under the wing of Andrija Puharich ([`/people/andrija-puharich`]) per Brendan Burton | affiliation | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |  |
+| 1972-12 | Nine-day SRI field measurement program with consultant Uri Geller under contract 1471(S)73 Task 3 within the time period 1 December 1972 to 15 January 1973 per CIA-RDP96-00787R000100180001-3 progress report (dated 22 February 1973); Section III, page 11 dates the experiments to November-December 1972; Figure 5, page 21 shows a sample picture-drawing experiment dated 12/7/72 | affiliation | government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf |  |
 | 1973 | Six weeks at the Stanford Research Institute laboratory in 1973 per Russell Targ ([`/people/russell-targ`]) verbatim quote in Brendan Burton article — remarkable ESP perceptual ability to describe and draw hidden pictures; did not bend any metal under acceptably controlled conditions | testimony | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |  |
+| 1973-08-04 | SRI eight-day Geller session (August 4-11, 1973) per CIA Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`] — picture-drawing experiments at SRI Life Sciences Division shielded room (Aug 4-8) and Engineering Building Faraday cage (Aug 9-11); Geller "demonstrated his paranormal perceptual ability in a convincing and unambiguous manner" | testimony | government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf |  |
 | 1974 | Nature magazine published a paper on Uri's work at the Stanford Research Institute (per Geller's biography); the results of the experiments and studies, which presented an "existence of one or more perceptual modalities through which individuals obtain information about their environment" per Brendan Burton | publication | news/urigeller-com-biography-20260516.html |  |
+| 1974-10-18 | Targ-Puthoff Nature paper "Information transmission under conditions of sensory shielding" published in Nature 251, 602-607, October 18, 1974, naming "Mr. Uri Geller" in the studies overview as the first-study subject [`/documents/nature-1974-targ-puthoff-information-transmission`] | publication | government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf |  |
 | 1987-05-04 | US News & World Report "Washington Whispers" item — Senate Foreign Relations Chairman Claiborne Pell ([`/people/claiborne-pell`]) reserved a Capitol attic vault to hear Geller on Soviet strategic intentions; cited in Geller's first-person Mind Over Missile? teaser | publication | news/urigeller-com-about-uri-20260516.html |  |
 | 1999 | Mind Medicine published (Element Books, 1999) — Geller's book passage transcribed by Brendan Burton: "I believe it represents a deep wisdom that we all inherit form our forebears and which, once harnessed, can effectively give every one of us much greater knowledge and insight into out lives." | publication | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html |  |
 | 2004 | World Economic Forum at Davos — invited by PriceWaterhouseCoopers as a speaker alongside Bill Clinton ([`/people/bill-clinton`]), Dick Cheney ([`/people/dick-cheney`]), and Steve Forbes ([`/people/steve-forbes`]) per biography | other | news/urigeller-com-biography-20260516.html |  |
@@ -167,6 +242,7 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | 2013 | Jonathan Margolis ([`/people/jonathan-margolis`]) book "The Secret Life of Uri Geller: CIA Masterspy?" released as paperback and digital publication | publication | news/urigeller-com-biography-20260516.html |  |
 | 2013-07 | Oscar-winning director Vikram Jayanti ([`/people/vikram-jayanti`]) created a 1.5-hour BBC ([`/organizations/bbc`]) documentary "The Secret Life of Uri Geller – Psychic Spy?" — received critical acclaim and worldwide media interest | publication | news/urigeller-com-biography-20260516.html |  |
 | 2013-10 | Interviewed live on the radio station Coast to Coast AM by George Knapp ([`/people/george-knapp`]); the interview lasted for four hours and the live psychic experiment caused a surge of traffic which almost crashed the website's host servers per biography | testimony | news/urigeller-com-biography-20260516.html |  |
+| 2015-06-03 | Tablet Magazine ([`/organizations/tablet-magazine`]) publishes long-form Tal Kra-Oz ([`/people/tal-kra-oz`]) interview with Geller — "The Spy Who Bent a Million Spoons" [`/documents/tablet-spy-who-bent-a-million-spoons`] — containing Geller's first-person account of the Israeli-intelligence recruitment chain through Yoav Shaham ([`/people/yoav-shaham`]), Meir Amit ([`/people/meir-amit`]), and Aharon Yariv ([`/people/aharon-yariv`]) | publication | news/tablet-spy-who-bent-a-million-spoons-20260516.html |  |
 | 2016 | Returned to Israel after years in the UK; settled in Old Jaffa per biography | other | news/urigeller-com-biography-20260516.html |  |
 | 2017 | CIA ([`/organizations/cia`]) released a large volume of previously top secret data, including documents and memos about the tests that were performed on Uri Geller; per Geller's biography the CIA concluded that Uri "demonstrated his paranormal perception ability in a convincing and unambiguous manner" | other | news/urigeller-com-biography-20260516.html |  |
 | 2022 | Announced the formation of the micronation of Lamb, an island off the coast of Scotland which he bought in 2009; thousands of people have adopted Lamb citizenship, making it one of the most "populous" micronations in history per biography. Joining-fee proceeds channeled to Save a Child's Heart ([`/organizations/save-a-childs-heart`]) | other | news/urigeller-com-biography-20260516.html |  |
@@ -199,6 +275,11 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 | [`/people/salvador-dali`] | Art mentor; Uri was a "pupil" to Salvador Dali in the 1970's per biography ¶17 (Dali was a great mentor to him influencing his art style) |  |
 | [`/people/michael-jackson`] | Friend; per biography ¶17 Uri provided a drawing for Michael Jackson's album "invincible" and Uri's drawings are featured on Michael Jackson's latest album | Source-rot: the biography page ¶17 wording "Michael Jackson's latest albums" preserves a phrasing from before Michael Jackson's death on June 25, 2009. Invincible (released October 30, 2001) was Michael Jackson's then-most-recent studio album at the time the biography page was written; with MJ's death in 2009, Invincible became MJ's last released studio album. Geller's involvement as illustrator on the Invincible album is independently corroborated outside this repository (Discogs credit, Wikipedia MJ-Invincible album page), but the "latest" wording is source-rot and should not be propagated as a current-tense claim by readers of this node. See credibility_notes MJ-rot-flag paragraph and the source-rot annotation Pending Convention Question in meta/topic/research-queue.md (the schema-level fix would add a `resolution: source-rot` naming_quirks enum value with a `rot_context` field; until then, the flag lives in this note and in credibility_notes). |
 | [`/people/john-lennon`] | Close friend in New York during the Seventies per biography ¶17 |  |
+| [`/people/pat-price`] | Co-SRI-subject named alongside Geller in the 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] — Targ-Puthoff identify Price as the second-study subject in double-blind experiments measuring his ability to describe remote outdoor scenes many miles from his physical location, while Geller is the first-study subject in the SRI shielded-room picture-drawing experiments |  |
+| [`/people/yoav-shaham`] | Mossad ([`/organizations/mossad`]) agent at the Cyprus bed-and-breakfast Geller's stepfather ran (per Geller via Tablet [`/documents/tablet-spy-who-bent-a-million-spoons`]); gave Geller a courier job at age 12 or 13 delivering letters from Arab countries to the Israeli ambassador in Nicosia; later killed in the West Bank as a paratroopers commander | Geller-self-claim primary attestation only. Tablet author Tal Kra-Oz notes Geller's recollections of private conversations are often impossible to confirm. |
+| [`/people/meir-amit`] | Mossad ([`/organizations/mossad`]) director 1963-1968; per Geller via Tablet [`/documents/tablet-spy-who-bent-a-million-spoons`], Yoav Shaham ([`/people/yoav-shaham`]) had spoken with Meir Amit about Geller before Shaham was killed | Geller-self-claim primary attestation only. |
+| [`/people/aharon-yariv`] | Aman chief (IDF Military Intelligence Directorate) 1964-1972; per Geller via Tablet [`/documents/tablet-spy-who-bent-a-million-spoons`], Yariv summoned Geller to a meeting in Tel Aviv after Yoav Shaham ([`/people/yoav-shaham`]) was killed — "Yariv summoned me to a meeting in Tel Aviv. I went through all the biggest intelligence guys. And then that's it—no comment from that point on." | Geller-self-claim primary attestation only. |
+| [`/people/tal-kra-oz`] | Tablet Magazine ([`/organizations/tablet-magazine`]) writer who conducted the long-form 2015 interview with Geller [`/documents/tablet-spy-who-bent-a-million-spoons`] at his Sonning residence |  |
 
 ---
 
@@ -206,7 +287,7 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 
 | Program | Role | Period | Evidentiary Basis | Confidence | Source | Note |
 |---|---|---|---|---|---|---|
-| CIA-sponsored Stanford Research Institute parapsychology investigation | Test subject | 1972-12 – 1973 | on-record | medium | news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html | Burton article ¶5 attests December 1972 entry to SRI; Russell Targ verbatim quote ¶7 attests six weeks at SRI laboratory in 1973 with remarkable ESP perceptual ability for hidden-picture tasks but no metal bending under acceptably controlled conditions. The CIA-sponsorship link is established by the Stanford Research Institute ([`/organizations/stanford-research-institute`]) node's CIA funding attestation (Kress 1977, August 1972 OTS demonstration contract; October 1972 OTS Contract 8473 expanded effort) and the Russell Targ ([`/people/russell-targ`]) node's program_involvement entries — Geller's specific subject status is attested via the Burton article's primary-witness quotes rather than a CIA-side document naming him. Confidence is medium pending archival of a primary CIA / DIA / AIR document that names Geller specifically. |
+| CIA-sponsored Stanford Research Institute parapsychology investigation | Test subject | 1972-12 – 1973-08 | primary-source | high | government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf | Geller's CIA-sponsored SRI subject status is now attested directly by three archived CIA primary sources naming him by name. (1) The Aug 1973 SRI report [`/documents/cia-sri-geller-aug1973`] (CIA-RDP79-00999A000300030027-0) — title page "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", R. Targ cover memo dated August 13, 1973 — records the eight-day Geller picture-drawing session with the load-bearing conclusion that Geller "demonstrated his paranormal perceptual ability in a convincing and unambiguous manner". (2) The contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) records on page 2 Section A "Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller" and on page 11 Section III "The experiments conducted with Geller in November-December, 1972" — the earlier nine-day SRI engagement window. (3) The Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror RDP96-00787R000100220001-8) names "Mr. Uri Geller" in the studies overview as the first-study subject. The CIA-sponsorship link is institutionally confirmed by the 1995 CIA Public Affairs Q&A (CIA-RDP96-00791R000100030062-7) — "CIA funded research and development activities at Stanford Research Institute (SRI) during about 1972 to about 1977". Confidence upgraded medium → high and evidentiary_basis on-record → primary-source on the strength of these multi-source archived attestations naming Geller directly. Total documented Geller SRI engagement per the primary record is approximately 17 days (9 days late 1972 + 8 days Aug 1973). |
 | FBI / CIA post-SRI collaboration (self-attested per biography) | Per biography ¶9, work that has ranged from using Mind Power to erase KGB computer files and track serial killers, to attending nuclear disarmament negotiations to bombard and influence the Russian chief negotiator with positive thought waves so that the Soviet delegation would sign the Nuclear Arms Reduction Treaty |  | self-attested | low | news/urigeller-com-biography-20260516.html | Self-attestation only. No primary-source corroboration archived. The biography itself states "For decades this aspect of his career was too confidential and controversial to discuss" (¶10). |
 | US Senate / National Security Executives Capitol Building briefing | Briefer — addressed a group of US Senators and National Security Executives at the high-security room in the Capitol Building in Washington per biography ¶10 |  | self-attested | low | news/urigeller-com-biography-20260516.html | Self-attestation only. The about-uri page's "Mind Over Missile?" teaser (¶ teaser block) attests this thread via the 4 May 1987 US News & World Report "Washington Whispers" item that named Senator Claiborne Pell ([`/people/claiborne-pell`]) as the convener; the underlying USNWR primary source is not archived in this repository. |
 
@@ -215,6 +296,10 @@ Per the November 24, 2007 Brendan Burton piece on urigeller.com, Russell Targ ([
 ## Credibility Notes
 
 Per urigeller.com, Uri Geller has led a unique life shrouded in debate, controversy and mystery. Per the November 24, 2007 Brendan Burton ([`/people/brendan-burton`]) piece on urigeller.com, Russell Targ ([`/people/russell-targ`]) gave the following comment on his experiences resulting from the SRI experiments: "Uri was at our laboratory at SRI for six weeks in 1973. He showed remarkable ESP perceptual ability to describe and draw hidden pictures... He did not bend any metal under acceptably controlled conditions." Hal Puthoff ([`/people/hal-puthoff`]) said of the same SRI experiments: "Our publications make our statement, and our personal feelings are congruent with what we’ve published. And in the intervening years of listening to the criticisms of the skeptics we have yet to be shown any viable reason to reassess our position." Per Burton, the results were written up in Nature magazine. Per the biography page, Uri’s work with the FBI ([`/organizations/fbi`]) and the CIA ([`/organizations/cia`]) has ranged from using Mind Power to erase KGB computer files and track serial killers, to attending nuclear disarmament negotiations to bombard and influence the Russian chief negotiator with positive thought waves so that the Soviet delegation would sign the Nuclear Arms Reduction Treaty. Per the same biography Uri also addressed a group of US Senators and National Security Executives at the high-security room in the Capitol Building in Washington; for decades this aspect of his career was too confidential and controversial to discuss. In 2017 the CIA released a large volume of previously top secret data, including documents and memos about the tests that were performed on Uri Geller, and per the biography the CIA concluded that Uri "demonstrated his paranormal perception ability in a convincing and unambiguous manner". The Burton piece further names Dr Werner von Braun ([`/people/wernher-von-braun`]), Dr EW Bastin, and Dr Edgar Mitchell ([`/people/edgar-mitchell`]) as credible academics who have witnessed both the bending phenomena up close and first hand.
+
+Geller's claims of work with the FBI and CIA and his address to US Senators and National Security Executives in the high-security room in the Capitol Building in Washington have evidence only in Geller's own biography page; the biography states for decades this aspect of his career was too confidential and controversial to discuss.
+
+Per the 2015 Tablet Magazine interview [`/documents/tablet-spy-who-bent-a-million-spoons`] by Tal Kra-Oz ([`/people/tal-kra-oz`]), Geller said his stepfather's Cyprus bed-and-breakfast was a Mossad ([`/organizations/mossad`]) safe house from which agents would go to Damascus, Jordan, Egypt; that he was given a courier job at age 12 or 13 by Yoav Shaham ([`/people/yoav-shaham`]) to deliver letters from Arab countries to the Israeli ambassador in Nicosia; and that after Shaham — a commander in the paratroopers — was killed in the West Bank, intelligence chiefs Meir Amit ([`/people/meir-amit`]) and Aharon Yariv ([`/people/aharon-yariv`]) summoned Geller to a meeting in Tel Aviv. Tal Kra-Oz notes that Geller's recollections of private conversations with long-dead celebrities and CIA handlers are often impossible to confirm.
 
 Per the biography page ¶3, Geller’s mother thought he inherited his unusual powers from Sigmund Freud ([`/people/sigmund-freud`]); this distantly related Sigmund Freud claim has its evidence only in Geller’s own biography page.
 
@@ -230,7 +315,7 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 
 **Circulates in:** Puthoff-Targ "The Record" daily log — SRI-internal primary source, not currently archived in this repository (see meta/topic/research-queue.md Cluster F pre-builds); Puthoff-Targ SRI film narration (published with consent of the SRI researchers; surfaces the late-1972 visit predating the film's March 1973 Columbia University screening); urigeller.com/project-stargate-the-cias-human-experiments-with-mind-control/ (third-party syndicated article on Geller's site; not in the archived source set for this node; carries the "eight days in August 1973" framing); Multiple public-record secondary sources (Wikipedia, Project Stargate biographies, Geller's own books)
 
-**Investigator note:** The archived corpus for this node currently carries only Russell Targ's 2007 retrospective comment in the Brendan Burton article (¶7) — "Uri was at our laboratory at SRI for six weeks in 1973" — captured in this node's top_relevance, credibility_notes, and relationships r5. Web-research audit (2026-05-16) surfaced that the SRI-internal primary record ("The Record" daily log, published by Puthoff and Targ themselves) documents two distinct Geller visits: a five-week period in late 1972 (predating the SRI film's March 1973 Columbia University screening) and an eight-day August 4-11 1973 visit. If "The Record" is accurate, Targ's 2007 recollection of "six weeks in 1973" likely collapses the two visits — the five weeks belonging to late 1972 rather than 1973, and the second visit being the eight-day August 1973 window often cited in third-party syndicated accounts of Project Stargate. The eight-day framing previously treated as competing secondary-source against Targ's primary-witness recollection may in fact have the better primary-source backing — pending archival of "The Record". Closure requires archival of "The Record" daily log as an SRI Cluster F pre-build; once archived, the SRI chronology resolves consistently across the Stanford Research Institute, Hal Puthoff, Russell Targ, and Geller nodes, and Targ's 2007 retrospective becomes one secondary-source data point rather than the dispositive primary witness. Until archived, this entry preserves both framings as plausible without adjudicating between them, per the repository's no-adjudication principle. Affiliation a2 and program_involvement pi1 currently anchor SRI tenure to the December 1972 entry per Burton ¶5 and the "six weeks in 1973" per Targ ¶7 — those entries remain as-is per source-read-first until "The Record" is archived; the revised two-visit chronology would land via versioned superseded_by entries at that time.
+**Investigator note:** Status: partially resolved with substantial correction as of the 2026-05-16 archival sweep and the same-day Phase-3 investigation pass on the F.SRI finding-node candidate. The Aug 1973 CIA SRI report [`/documents/cia-sri-geller-aug1973`] (CIA-RDP79-00999A000300030027-0) confirms the eight-day Aug 4-11 1973 SRI window verbatim. The contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) confirms the earlier window with a critical correction: Section A page 2 attests "Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller", and Section III page 11 describes "The experiments conducted with Geller in November-December, 1972" — that is, nine days, not the five weeks Web's research audit attributed to Puthoff-Targ's SRI-internal "The Record" daily log. Total documented Geller SRI engagement per the primary record is therefore approximately 17 days (9 days late 1972 + 8 days Aug 1973), not the six weeks Targ recalled in 2007 nor the ~6 weeks the late-1972 plus Aug-1973 windows total would suggest if late 1972 were itself a multi-week visit. The "five-week period in late 1972" framing attributed to "The Record" is directly contradicted by the contract progress report; either "The Record" itself disagrees with the contract progress report (which would be its own finding) or Web's attribution to "The Record" is a secondary-source error. Closure of the inter-source discrepancy requires archival of "The Record" daily log (Cluster F queue item). Targ's 2007 recollection of "six weeks in 1973" exceeds the documented total by approximately four weeks and assigns the engagement entirely to 1973 despite the bulk per contract progress being in November-December 1972; the divergence is documented in the F.SRI finding-node candidate at meta/topic/research-queue.md. Affiliation a2 and program_involvement pi1 are anchored on the Aug 1973 CIA primary source per Phase 1 of this 2026-05-16 audit pass and were updated with the November-December 1972 / nine-day framing in the Phase 3 investigation; Burton ¶5/¶7 demoted to supporting third-party attestations.
 
 ### "A retired Israeli air force officer eyewitness validated Geller's age-four sphere-of-light encounter in a garden near his house, decades after the event."
 
@@ -243,14 +328,6 @@ Widely-reported claims that circulate in public discourse but lack primary-sourc
 **Circulates in:** Wikipedia (Uri Geller Museum entry); urigellermuseum.com (the museum's own website); JNS (Jewish News Syndicate) November 2021 coverage of the museum opening; Jewish Virtual Library
 
 **Investigator note:** The archived urigeller.com biography page ¶35 attests only that "Uri lives in Old Jaffa and runs the Uri Geller Museum" — no opening date is given in any of the three archived primary sources for this node. The 2021 opening date is widely attested in external secondary sources but no primary source has been archived in this repository. When a primary source naming the museum opening date is archived (the museum's own website, a JNS-published interview, a municipal record, or similar), graduate this rumor to a quotes[] entry and populate affiliations a9 period_start. Recorded here to prevent future contributor sessions from re-introducing the conflated 2016 return-to-Israel anchor that this entry replaces (the prior period_start: 2016 was removed during the 2026-05-16 web-audit review; see a9 note).
-
-### "Uri Geller is widely reported as a subject of the CIA-sponsored Stanford Research Institute parapsychology investigation 1972-1973, including as the foundational subject in popular accounts of the program's origin."
-
-**Circulates in:** Multiple public-record secondary sources (Wikipedia, Project Stargate syndicated pieces, biographies); Russell Targ's verbatim quote in the Brendan Burton article (¶7) — primary-witness corroboration of SRI tenure ("six weeks in 1973") but the Targ quote is republished on urigeller.com, not extracted from a CIA/SRI institutional record
-
-**Investigator note:** Corpus gap acknowledged. No primary source archived in this repository names Uri Geller as a subject of the CIA-sponsored SRI parapsychology investigation. The three CIA / DIA institutional records of the SRI program already cited by the Stanford Research Institute, Hal Puthoff, and Russell Targ nodes — the 1977 Kenneth A. Kress Studies in Intelligence paper, the 1993 DIA STAR GATE Project Overview, and the 1995 American Institutes for Research evaluation — refer to early SRI subjects only by descriptors ("the magnetometer subject", "previously described subject", "third sensitive subject") and do not name Geller. The Russell Targ artifact's q17 IRVA 2002 retrospective names Ingo Swann (1972 magnetometer subject) and Pat Price (1973 "third sensitive subject"); the Stanford Research Institute artifact explicitly flags an unattested "second sensitive subject" gap between Swann and Price in the Kress 1977 narrative ordering. Geller is the leading public-record candidate for that gap. Anchoring the SRI / CIA cross-reference in this Geller node currently rests on (a) Geller's own biographical self-attestation that Nature published a paper on Uri's work at the Stanford Research Institute, and (b) the Russell Targ verbatim quote in the Brendan Burton article attesting six weeks at SRI in 1973 (registered indirectly via relationships r5 and program_involvement pi1). Closing the corpus gap requires archival of a primary source naming Geller — candidates include the full body of the Targ-Puthoff 1974 Nature paper (currently archived as paywall HTML only on the Stanford Research Institute node), the Targ-Puthoff 1975 SRI Final Report "Perceptual Augmentation Techniques: Part Two" (cited by the 1995 American Institutes for Research evaluation but not archived), or one of the CIA SCANATE-era documents released to the CIA Reading Room since 2017. The biography page's "convincing and unambiguous" verdict (q10) is a real CIA Reading Room declassification reference; the specific CIA document carrying that verdict is not currently archived in this repository.
-The CIA / FBI / Capitol Building claims registered as Statements (q5, q6) appear only as Geller's self-attestation on his own biography page; no primary-source corroboration is archived in this repository. The biography itself states "For decades this aspect of his career was too confidential and controversial to discuss" (q6).
-The Burton article carries multiple spelling variants preserved as-source per the source-form-preservation discipline: "Puthof" (¶5), "Russel" (¶5), "psychokenesis" (¶15), "pheomena" (¶16), "Brasil" (¶17), "Brasilian" (¶17), "statisical" (¶21), "form" (¶25 — Geller book quote transcription), "out" (¶25 — same Geller book quote). See naming_quirks nq1-nq9 for per-variant detail.
 
 ---
 
@@ -280,6 +357,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ### People
 
+- [`/people/aharon-yariv`]
 - [`/people/andrija-puharich`]
 - [`/people/bill-clinton`]
 - [`/people/brendan-burton`]
@@ -295,15 +373,19 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/jane-katra`]
 - [`/people/john-lennon`]
 - [`/people/jonathan-margolis`]
+- [`/people/meir-amit`]
 - [`/people/michael-jackson`]
+- [`/people/pat-price`]
 - [`/people/russell-targ`]
 - [`/people/salvador-dali`]
 - [`/people/shimson-shtrang`]
 - [`/people/sigmund-freud`]
 - [`/people/steve-forbes`]
 - [`/people/susan-blackmore`]
+- [`/people/tal-kra-oz`]
 - [`/people/vikram-jayanti`]
 - [`/people/wernher-von-braun`]
+- [`/people/yoav-shaham`]
 
 ### Organizations
 
@@ -311,9 +393,17 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/cia`]
 - [`/organizations/fbi`]
 - [`/organizations/idf`]
+- [`/organizations/mossad`]
 - [`/organizations/royal-berkshire-hospital`]
 - [`/organizations/royal-hospital-for-children-bristol`]
 - [`/organizations/save-a-childs-heart`]
 - [`/organizations/stanford-research-institute`]
+- [`/organizations/tablet-magazine`]
 - [`/organizations/uri-geller-charitable-foundation`]
 - [`/organizations/uri-geller-museum`]
+
+### Documents
+
+- [`/documents/cia-sri-geller-aug1973`]
+- [`/documents/nature-1974-targ-puthoff-information-transmission`]
+- [`/documents/tablet-spy-who-bent-a-million-spoons`]

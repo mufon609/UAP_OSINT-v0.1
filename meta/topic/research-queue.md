@@ -529,6 +529,98 @@ traced two distinct candidate findings, of which this one (DoD/DoW
 asymmetry) met the 3-entity threshold while the other (April-2026
 disclosure-coordination press cycle) did not.
 
+### F.SRI — SRI Geller engagement duration: Targ 2007 recollection vs CIA contemporaneous record
+
+**Scope.** Document the divergence between Russell Targ's 2007
+retrospective recollection — "Uri was at our laboratory at SRI for
+six weeks in 1973" (Brendan Burton article on urigeller.com) — and
+the CIA contemporaneous record, which attests approximately 17 days
+of Geller engagement at SRI across two windows: a nine-day Geller
+field measurement program in November-December 1972 within the
+contract 1471(S)73 contract window (Dec 1 1972 – Jan 15 1973), and
+an eight-day session Aug 4-11 1973. Targ's "six weeks in 1973"
+recollection exceeds the contemporaneous record by approximately
+four weeks and assigns the engagement entirely to 1973 even though
+the bulk per the contract progress report was in November-December
+1972.
+
+**Evidence already in repo.**
+
+| Surface | Attestation | Source |
+|---|---|---|
+| Targ retrospective (2007) | "Uri was at our laboratory at SRI for six weeks in 1973" | Brendan Burton article (urigeller.com), Nov 24, 2007 — quoted on `/people/uri-geller` r5 and `/people/russell-targ` |
+| CIA Aug 1973 SRI report | Eight-day session Aug 4-11 1973 per R. Targ cover memo dated August 13, 1973 | `/documents/cia-sri-geller-aug1973` (CIA-RDP79-00999A000300030027-0) |
+| Contract 1471(S)73 progress report (22 February 1973) | "Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller" (Section A, page 2); "The experiments conducted with Geller in November-December, 1972..." (Section III, page 11); sample picture-drawing experiment dated 12/7/72 (Figure 5, page 21) | manifest entry `government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf` (cite-only; doc node unbuilt) |
+
+**What the primary record DOES NOT support.** Web's external research
+audit (the 2026-05-16 investigation that produced the Geller node r1
+rumor) attributed a "five-week period in late 1972" framing to
+Puthoff-Targ's SRI-internal daily log "The Record" (unarchived in
+this repository). The contract 1471(S)73 progress report —
+contemporaneous to the engagement window and authored by Puthoff
+and Targ — attests a nine-day program, not a five-week period.
+"The Record" itself remains unarchived; either (a) "The Record"
+disagrees with the contract progress report (which would itself be
+a finding), or (b) Web's attribution to "The Record" is a secondary-
+source error misattributing the 5-week figure. Without "The Record"
+archived, the discrepancy cannot be adjudicated; the finding
+acknowledges both possibilities.
+
+**Build dependencies (in priority order).**
+
+1. `/documents/cia-sri-geller-aug1973` (built) — primary
+   attestation of the Aug 1973 window.
+2. `/people/uri-geller` (built, audited + corrected 2026-05-16) —
+   carries the r1 rumor this finding would graduate from.
+3. `/people/russell-targ` (built) — carries the 2007 Targ
+   retrospective quote that diverges from the contemporaneous record.
+4. `/documents/sri-contract-1471s73-progress-dec1972` (unbuilt;
+   archived) — would tighten the late 1972 cross-reference and add
+   the only built-doc-node anchor for the 9-day attestation. The
+   finding can ship without this doc-node by citing the manifest path
+   directly, but the doc-node would convert the cite-only reference
+   into a full structural cross-reference and supersede the inline
+   Section A / Section III page references with proper Key-Passage
+   quotes.
+
+**Useful but not gating:** `/documents/puthoff-targ-the-record-daily-log`
+(unbuilt; unarchived per Cluster F High priority). "The Record"
+would either confirm or refute the contract progress report's 9-day
+attestation, potentially adding a fourth-source data point to the
+divergence.
+
+**Density at launch.** F.SRI spans 4 entity nodes minimum (Aug 1973
+SRI report + Geller + Targ + contract progress manifest entry); 5
+with the contract progress doc-node built; 6 if "The Record" ships
+later and reveals an additional discrepancy. Substantive analysis:
+the ~4-week divergence between Targ's 2007 recollection and the
+contemporaneous primary records (~30 years apart) is the pattern;
+the finding documents what each source says, computes the per-window
+day-counts, and stops short of adjudicating whether Targ's 2007
+memory is an error, a stylization, or includes off-contract days
+not captured in the contract progress report. Meets the 3+ entity
+threshold; exceeds the ~200-word threshold via the per-source
+attestation narrative + the recollection-vs-record analysis.
+
+**Status:** Shippable. Two paths:
+(a) build now with cite-only reference to the Dec 1972 contract
+progress manifest entry; OR
+(b) wait for `/documents/sri-contract-1471s73-progress-dec1972`
+and/or "The Record" for tighter cross-references. Path (a) is
+faster; path (b) gives the finding stronger structural cross-
+references and allows Key-Passage quotes from the contract progress
+report. Either way the r1 rumor on Geller node graduates to a
+brief cross-reference back to the finding.
+
+**Surfaced from:** Uri Geller node audit Phase 3 (2026-05-16) —
+the r1 rumor on the Geller node carried this multi-source analysis
+at single-entity scope; graduating to a finding-node moves the
+canonical analysis to a cross-entity surface. Investigation pass
+on the queued candidate (same date) read the contract 1471(S)73
+progress report directly, surfaced the 9-day attestation that
+sharpens the divergence, and corrected the math (≈ 17 days total,
+not the ≈ 7 weeks originally claimed) before this entry stabilized.
+
 ---
 
 ## Externally blocked

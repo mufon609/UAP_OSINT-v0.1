@@ -12379,3 +12379,219 @@
     key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
   tokens: [2024-01-19]
 
+- ts: 2026-05-16T21:13:57Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): itself
+  tokens: [itself]
+
+- ts: 2026-05-16T21:13:58Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): itself
+  tokens: [itself]
+
+- ts: 2026-05-16T21:15:39Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T21:15:39Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T21:15:39Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): itself
+  tokens: [itself]
+
+- ts: 2026-05-16T21:17:53Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T21:17:53Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-16T21:30:43Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (64>55): SRI eight-day Geller session begins (August 4-11, 1973) per ...
+
+- ts: 2026-05-16T21:30:43Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (57>55): Mossad ([`/organizations/mossad`]) agent at the Cyprus bed-a...
+
+- ts: 2026-05-16T21:31:13Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/uri-geller.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Relationships' exceeds word budget (57>55): Mossad ([`/organizations/mossad`]) agent at the Cyprus bed-a...
+
+- ts: 2026-05-16T23:45:38Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 2 significant token(s) not in source (prose-drift check — contributor review): agent, delivering
+  tokens: [agent, delivering]
+
+- ts: 2026-05-16T23:47:33Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-16T23:47:33Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-17T00:00:04Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-17T00:00:04Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-17T00:40:03Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-17T00:40:03Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
+- ts: 2026-05-17T00:40:17Z
+  source: validator
+  check: boundary
+  phase: review-coverage
+  node: meta/research/uri-geller.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Boundary: node body diverges from build-from-research.py output. Either the artifact drifted from the node, or the node was hand-edited. Re-run build-from-research.py to resync.
+
+- ts: 2026-05-17T00:44:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[2] ('kp3') note: 2 significant token(s) not in source (prose-drift check — contributor review): 1972-1990, 1979-1990
+  tokens: [1972-1990, 1979-1990]
+
+- ts: 2026-05-17T00:44:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/stanford-research-institute.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    key_personnel[12] ('kp13') note: 1 significant token(s) not in source (prose-drift check — contributor review): 2024-01-19
+  tokens: [2024-01-19]
+
