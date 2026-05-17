@@ -14203,3 +14203,317 @@
     credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, distinguished, launch, proposer, sd004, venue, wire
   tokens: [2021, distinguished, launch, proposer, sd004, venue, wire]
 
+- ts: 2026-05-17T18:05:30Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-lacatski-part2-2025.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 20 significant token(s) not in source (prose-drift check — contributor review): 500, aawsap, asks, cannot, continuation, dollars, grusch, kelleher, … (+12 more — pass --verbose for full list)
+  tokens: [500, aawsap, asks, cannot, continuation, dollars, grusch, kelleher, lacatski, lockheed, opening, pages, passage, pre-aawsap, pressed, provenance, reed, refinement, returns, sticks-and-stones]
+
+- ts: 2026-05-17T18:07:51Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-lacatski-part2-2025.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 5 significant token(s) not in source (prose-drift check — contributor review): cannot, dollars, lacatski, opening, pre-oap
+  tokens: [cannot, dollars, lacatski, opening, pre-oap]
+
+- ts: 2026-05-17T18:08:31Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-lacatski-part2-2025.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): lacatski
+  tokens: [lacatski]
+
+- ts: 2026-05-17T18:09:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 79 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[2:00] You alluded that the UFO in the possession of the US makes uh the technol..."
+
+- ts: 2026-05-17T18:09:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 103 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[6:25] As I said, Kona Blue was a compartment reputed to be for uh uh recovered ..."
+
+- ts: 2026-05-17T18:09:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 115 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[19:53] I can't speak to that. The only other clearance I had was uh, uh, a Q cl..."
+
+- ts: 2026-05-17T18:09:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 127 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[20:38] people coming in to testify. It's like, "Oh, okay. Oh, wait a minute. Un..."
+
+- ts: 2026-05-17T18:09:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 139 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[21:10] has there to your knowledge been any contact at a government level with ..."
+
+- ts: 2026-05-17T18:09:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 163 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[35:36] Uh the the one thing they're having trouble with though for sure is Tic ..."
+
+- ts: 2026-05-17T18:09:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 175 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[36:58] So, so the tic tac is not Loheed Martin. Definitively, the tic tac is no..."
+
+- ts: 2026-05-17T18:09:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 235 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[1:04:11] as your friend Jay Stratton has said you can't tell your friends witho..."
+
+- ts: 2026-05-17T18:09:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 259 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[1:10:08] Oh, I meant I meant in I meant in in Kona blue aspects. Uh we're going..."
+
+- ts: 2026-05-17T18:09:26Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 79 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[2:00] You alluded that the UFO in the possession of the US makes uh the technol..."
+
+- ts: 2026-05-17T18:09:26Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 103 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[6:25] As I said, Kona Blue was a compartment reputed to be for uh uh recovered ..."
+
+- ts: 2026-05-17T18:09:26Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 115 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[19:53] I can't speak to that. The only other clearance I had was uh, uh, a Q cl..."
+
+- ts: 2026-05-17T18:09:26Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 127 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[20:38] people coming in to testify. It's like, "Oh, okay. Oh, wait a minute. Un..."
+
+- ts: 2026-05-17T18:09:26Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 139 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[21:10] has there to your knowledge been any contact at a government level with ..."
+
+- ts: 2026-05-17T18:09:26Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 163 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[35:36] Uh the the one thing they're having trouble with though for sure is Tic ..."
+
+- ts: 2026-05-17T18:09:26Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 175 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[36:58] So, so the tic tac is not Loheed Martin. Definitively, the tic tac is no..."
+
+- ts: 2026-05-17T18:09:26Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 235 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[1:04:11] as your friend Jay Stratton has said you can't tell your friends witho..."
+
+- ts: 2026-05-17T18:09:26Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 259 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[1:10:08] Oh, I meant I meant in I meant in in Kona blue aspects. Uh we're going..."
+
+- ts: 2026-05-17T18:09:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 79 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[2:00] You alluded that the UFO in the possession of the US makes uh the technol..."
+
+- ts: 2026-05-17T18:09:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 103 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[6:25] As I said, Kona Blue was a compartment reputed to be for uh uh recovered ..."
+
+- ts: 2026-05-17T18:09:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 115 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[19:53] I can't speak to that. The only other clearance I had was uh, uh, a Q cl..."
+
+- ts: 2026-05-17T18:09:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 127 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[20:38] people coming in to testify. It's like, "Oh, okay. Oh, wait a minute. Un..."
+
+- ts: 2026-05-17T18:09:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 139 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[21:10] has there to your knowledge been any contact at a government level with ..."
+
+- ts: 2026-05-17T18:09:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 163 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[35:36] Uh the the one thing they're having trouble with though for sure is Tic ..."
+
+- ts: 2026-05-17T18:09:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 175 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[36:58] So, so the tic tac is not Loheed Martin. Definitively, the tic tac is no..."
+
+- ts: 2026-05-17T18:09:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 235 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[1:04:11] as your friend Jay Stratton has said you can't tell your friends witho..."
+
+- ts: 2026-05-17T18:09:41Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part2-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 259 NOT FOUND in sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md: "[1:10:08] Oh, I meant I meant in I meant in in Kona blue aspects. Uh we're going..."
+
+- ts: 2026-05-17T18:16:10Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, distinguished, launch, proposer, sd004, venue, wire
+  tokens: [2021, distinguished, launch, proposer, sd004, venue, wire]
+
