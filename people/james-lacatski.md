@@ -24,15 +24,17 @@ created: 2026-05-17
 
 Dr. James T. Lacatski, D.Eng., is named as "AAWSA Program Manager, Defense Intelligence Agency, ATTN: CLAR/DWO-3, Bldg 6000, Washington, DC 20340-5100" — addressed by the page 1 Administrative Note of the Puthoff ([`/people/hal-puthoff`]) vacuum metric engineering report ([`/documents/dird-puthoff-vacuum-metric-engineering-2010`]) as the contact for the FY 2009 Advanced Aerospace Weapon System Applications (AAWSA) Program reports prepared by the Acquisition Support Division (DWO-3), Defense Warning Office, Directorate for Analysis, Defense Intelligence Agency ([`/organizations/dia`]).
 
-Lacatski said in WEAPONIZED Episode 38 with george knap ([`/people/george-knapp`]) and jeremy corbell ([`/people/jeremy-corbell`]) that the program was "basically created between myself and Senator Reed" ([`/people/harry-reid`]) at DIA — a $22 million program with the capability of going five years, completed in two years. Lacatski said he retired in 2016 and came "from the contractor world in the first half of my career" before DIA.
+Lacatski said in WEAPONIZED Episode 38 with george knap ([`/people/george-knapp`]) and jeremy corbell ([`/people/jeremy-corbell`]) that the program was "basically created between myself and Senator Reed" ([`/people/harry-reid`]) at DIA — a $22 million program with the capability of going five years, completed in two years. Lacatski said he retired in 2016 and came "from the contractor world in the first half of my career" before DIA. In WEAPONIZED PART 1 ([`/transcripts/weaponized-lacatski-part1-2025`]) Lacatski said he was "the creator and DIA program manager of AASAP ... and of the follow-on Kona Blue program ([`/organizations/kona-blue`]), KBP. Both classified programs, regardless of what the internet has said in the past. Both classified." In WEAPONIZED PART 2 ([`/transcripts/weaponized-lacatski-part2-2025`]) Lacatski said his only other clearance was "a Q clearance at deal" — and said "I can't speak to that" when asked whether he was read into a legacy UAP program before AAWSAP.
 
 ---
 
 ## UAP Relevance
 
-Lacatski said he directed the $22 million ([`/organizations/aawsap`]) program at DIA ([`/organizations/dia`]) from september 2008; said the program was over after a 90-day no cost extension by december of 2010. The Puthoff vacuum metric engineering report ([`/documents/dird-puthoff-vacuum-metric-engineering-2010`]) names him "AAWSA Program Manager" on page 1. Elizondo's ([`/people/luis-elizondo`]) Question for the Record response ([`/documents/elizondo-qfr-burlison-20241219`]) names Lacatski as "the former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP)" and names him as author of a DOPSR document (September 6, 2023) about a UAP material divestment plan proposed to AAWSAP leadership by Lockheed Martin Space Systems Vice President Dr. James Ryder.
+Lacatski said he directed the $22 million ([`/organizations/aawsap`]) program at DIA ([`/organizations/dia`]) from september 2008; said the program was over after a 90-day no cost extension by december of 2010. The Puthoff vacuum metric engineering report ([`/documents/dird-puthoff-vacuum-metric-engineering-2010`]) names him "AAWSA Program Manager" on page 1. Elizondo's ([`/people/luis-elizondo`]) Question for the Record response ([`/documents/elizondo-qfr-burlison-20241219`]) names Lacatski as "the former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP)" and names him as author of a DOPSR document (September 6, 2023) about a UAP material divestment plan proposed to AAWSAP leadership by Lockheed Martin ([`/organizations/lockheed-martin`]) Space Systems Vice President Dr. James Ryder ([`/people/james-ryder`]).
 
-Lacatski wrote two books on the program with colum kellerer ([`/people/colm-kelleher`]) and george knap ([`/people/george-knapp`]) — "Skinwalkers at the Pentagon" and "Inside the US Government Covert UFO Program: Initial Revelations." He gave the Mystery interview with Knap and kellerer ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]) and the WEAPONIZED Episode 38 interview with Knap and jeremy corbell ([`/people/jeremy-corbell`]) ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]). In WEAPONIZED EP 38 corbell read from chapter 9 of the 2023 book about a 2011 meeting in the Capitol building with a US senator and an agency under secretary, at which Lacatski (the only one of the books authors present) posed a question that the United States was in possession of a craft of unknown origin and had successfully gained access to its interior. Lacatski said "the wording that you read is correct" and "yes you I was allowed to tell you," but said he was "not going beyond what it was what you read from the book."
+Lacatski also said in WEAPONIZED PART 1 ([`/transcripts/weaponized-lacatski-part1-2025`]) he was "the creator and DIA program manager" of "the follow-on Kona Blue program ([`/organizations/kona-blue`]), KBP. Both classified programs." In WEAPONIZED PART 2 ([`/transcripts/weaponized-lacatski-part2-2025`]) Lacatski said Kona Blue was "a compartment reputed to be for recovered technology" and also a program; said "you can't kill Kona Blue" and that Kona Blue "is much more than going and getting what some have described as 60 year old parts" — he knows "what the exchange parameters were and what was promised on all sides."
+
+Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and george knap ([`/people/george-knapp`]) — "Skinwalkers at the Pentagon," "Inside the US Government Covert UFO Program: Initial Revelations," the new "New Insights," and the approved future book "Future Visions." He gave the Mystery interview with Knap and kellerer ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]), the WEAPONIZED Episode 38 interview ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]), and the WEAPONIZED series PART 1 and PART 2. In WEAPONIZED EP 38 corbell read from chapter 9 of the 2023 book about a 2011 meeting in the Capitol building with a US senator and an agency under secretary, at which Lacatski (the only one of the books authors present) posed a question that the United States was in possession of a craft of unknown origin and had successfully gained access to its interior. Lacatski said "the wording that you read is correct" and "yes you I was allowed to tell you," but said he was "not going beyond what it was what you read from the book."
 
 Lacatski as author of the page 1 statement about James Ryder is documented in ([`/findings/lacatski-authorship-chain`]).
 
@@ -192,6 +194,94 @@ _No direct observations documented._
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [1:46:30]–[1:46:40] |
 
+> [2:00] as way of background, I was the creator and DIA program manager of AASAP, the Advanced Aerospace Weapons System Applications Program, and of the follow-on Kona Blue program, KBP. Both classified programs, regardless of what the internet has said in the past. Both classified.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski reading from a prepared statement at the opening of WEAPONIZED PART 1, 2025-11-05 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Location | [2:00]–[2:22] |
+
+> [8:39] Okay, now, here's a tough statement. I don't suspect, wonder, or harbor any suspicion that false statements have been made to Congress, to the Pentagon, to you, the press, and on the internet. I know they have been. I know it. Deliberately false, not just incorrect, documents have been created about AASAP and Kona Blue, and are in currently in government files.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski continuing his prepared statement in WEAPONIZED PART 1 on disinformation against AAWSAP / Kona Blue, 2025-11-05 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Location | [8:39]–[9:08] |
+
+> [14:54] Now, remember this is important and it's near the conclusion right here. Only believe AATIP and Kona Blue information directly read by you in the four books. This is to the public. Or if you hear directly statements from myself or Colm Kelleher. Something serious is going on. In my opinion, you all are in the middle of a what I can only describe as a major and repetitive counterintelligence operation by unknown multiple operators or organizations and for unknown reasons.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski reading the near-conclusion of his prepared statement in WEAPONIZED PART 1, 2025-11-05 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Location | [14:54]–[15:29] |
+
+> [22:27] Kona Blue is much more than Kona Blue, I can answer that directly, but I can't go into details. Kona Blue was a compartment. It was also a program.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 1 explaining why he should not use past tense for Kona Blue, 2025-11-05 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Location | [22:27]–[22:38] |
+
+> [25:11] it it was killed right there. Um Yes. Yes, and uh that The program was not killed. You can't kill Kona Blue. At one point in the near future, you'll start seeing it because I suggested to Dr. Kelleher that there be a book after these four, and I want the public to participate because it will be my interpretation and my statements that were made in DHS.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 1 responding to Knapp's recap of the public Kona-Blue-killed-at-DHS narrative, 2025-11-05 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Location | [25:11]–[25:45] |
+
+> [19:53] I can't speak to that. The only other clearance I had was uh, uh, a Q clearance at deal.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 2 responding to Corbell's question whether he was read into a legacy UAP program before AAWSAP, 2025-11-11 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Location | [19:53]–[20:01] |
+
+> [36:11] it's not. I mean, I don't know that officially, but there are other things that were not uh not discussed in the full descriptions that occurred that uh uh would have that implemented on aircraft. If if if if we had that technology,
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 2 responding to George's 21st-anniversary framing of the 2004 Tic Tac, 2025-11-11 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Location | [36:11]–[36:32] |
+
+> [47:48] One hint. I had I had a firm no way anyone could pull this off as a counter inelligence operation. my own man in black sighting, but not a sighting of a person, but clearly clearly a strange event. And this was during Kona Blue, not during Oset. Everything else seemed to happen in right after Osap. There were there were a lot of things happening and closing down the project that I put in the in the book.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 2 introducing the MIB sighting story (immediately followed by the description in q26), 2025-11-11 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Location | [47:48]–[48:18] |
+
+> [49:42] I look over and there's a man in black on a full blank page. A traditional typical always illustrated this way man in black suit, white uh shirt, black shoes and tie, shiny black shoes in the picture and a black hat. Who in Washington wears a black hat like that? and had two words, two words below him. Join us.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 2 describing his MIB sighting on the train, 2025-11-11 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Location | [49:42]–[50:15] |
+
+> [1:07:24] like you know Jeremy's recovered bodies. Uh I know nothing about that right now, but we need you know we need those people. Initial revelations was a tough read. I know that.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 2 responding to Corbell's framing of recovered bodies, 2025-11-11 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Location | [1:07:24]–[1:07:38] |
+
+> [1:10:17] >> you're not going to be yet. We need to define what is in Kona blue. And let me tell you, it's much more than going and getting what some have described as 60 year old parts. No, it's much more than that. And and I'm I I can say I know what the exchange parameters were and I know what was promised on all sides. And I mean there was also the the money side.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski in WEAPONIZED PART 2 explaining what his "full human capabilities" statement referred to — "in Kona Blue aspects", 2025-11-11 |
+| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Location | [1:10:17]–[1:10:48] |
+
 ---
 
 ## Timeline
@@ -208,7 +298,10 @@ _No direct observations documented._
 | 2021-10-12 | Mystery Wire book-launch interview with George Knapp and Colm Kelleher — Lacatski''s earliest on-record primary-source media in this repository | testimony | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] |
 | 2023-09-06 | DOPSR clearance of Lacatski''s statement naming Lockheed Martin Space Systems Vice President Dr. James Ryder as the proposer of a UAP material divestment plan to AAWSAP leadership (later entered into the 2024-11-13 House Oversight UAP hearing record as SD004 page 1) | filing | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |  |
 | 2023-10-16 | WEAPONIZED Episode 38 with George Knapp and Jeremy Corbell — foundational on-record Lacatski interview discussing AAWSAP creation, AATIP name origin, the 2011 Capitol building "craft of unknown origin" passage, and his disclosure stance | testimony | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | [`/transcripts/weaponized-038-lacatski-kelleher-2023`] |
+| 2024 | "Inside the US Government Covert UFO Program: New Insights" — third Lacatski / Kelleher / Knapp book (PART 1 lists it among "those books are Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program, Initial Revelations, the new book New Insights") | publication | transcripts/weaponized-lacatski-part1-2025-downloaded.md |  |
 | 2024-12-19 | Luis Elizondo''s sworn Question for the Record response to Rep. Eric Burlison''s December 9, 2024 QFR letter names Lacatski as the former Director of AAWSAP and the author of the DOPSR-cleared SD004 page-1 statement | filing | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf | [`/documents/elizondo-qfr-burlison-20241219`] |
+| 2025-11-05 | WEAPONIZED PART 1 broadcast — Lacatski self-attests as creator and DIA program manager of the follow-on Kona Blue program, KBP; AARO disinformation framing; recovered craft hull breach restated | testimony | transcripts/weaponized-lacatski-part1-2025-downloaded.md | [`/transcripts/weaponized-lacatski-part1-2025`] |
+| 2025-11-11 | WEAPONIZED PART 2 broadcast — Lacatski says Tic Tac is not US technology, describes own MIB sighting during Kona Blue, says Kona Blue is "much more than going and getting what some have described as 60 year old parts" | testimony | transcripts/weaponized-lacatski-part2-2025-downloaded.md | [`/transcripts/weaponized-lacatski-part2-2025`] |
 
 ---
 
@@ -226,6 +319,8 @@ _No direct observations documented._
 | [`/people/jeremy-corbell`] | WEAPONIZED Podcast co-host (with George Knapp); primary in-studio interviewer of Lacatski in WEAPONIZED EP 38 | Corbell self-introduces at the start of WEAPONIZED EP 38. |
 | [`/people/david-grusch`] | Whistleblower whose claims Lacatski has publicly characterized as "credible" and "reasonable" while saying he never witnessed what he would consider illegal activities; Lacatski does not "concur" with Grusch on the alleged illegality framing but agrees Grusch''s underlying claims are "reasonable" | Lacatski''s on-record position on Grusch in WEAPONIZED EP 38 — affirms credibility of Grusch''s underlying claims about reverse engineering and biologicals; distinguishes credible from witnessed. |
 | [`/people/hal-puthoff`] | Author of AAWSAP DIRD #5 on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — produced under Lacatski''s AAWSA Program Management at DIA in FY 2009 | Puthoff''s 29 March 2010 DIRD names Lacatski as AAWSA Program Manager; documents the program-manager-to-DIRD-author relationship for one of the 38 AAWSAP DIRDs. |
+| [`/people/dylan-borland`] | Named by Lacatski in WEAPONIZED PART 2 ([`/transcripts/weaponized-lacatski-part2-2025`]) alongside David Grusch as having said the same thing about compartment-read-in requirements blocking Congress testimony | Lacatski's PART 2 attestation: "Well, said that. David Grush said that. Dylan Borland said that. Everybody that has a knowledge in these special access programs, Congress needs to be able to hear those statements." |
+| [`/people/tara-otoole`] | Met with Lacatski on the Kona Blue process per Corbell's framing in WEAPONIZED PART 1 — Lacatski says she is "staying away from it" and that he could not discuss her perspective further because "we have to also talk about DHS interests" | Lacatski declined to share Tara O''Toole''s view on the Kona Blue process; documents her as a Kona-Blue-relevant figure he met with at DHS. |
 
 ---
 
@@ -235,6 +330,7 @@ _No direct observations documented._
 |---|---|---|---|---|---|---|
 | AAWSAP — Advanced Aerospace Weapon System Applications Program ([`/organizations/aawsap`]) | Program Manager / Director (Defense Warning Office, DIA) | 2008-09 – 2016 | primary-source | high | government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf | Three-source convergence: (1) Puthoff's FY 2009 vacuum metric engineering DIRD ([`/documents/dird-puthoff-vacuum-metric-engineering-2010`]) names Lacatski as "AAWSA Program Manager" on page 1; (2) Elizondo's December 2024 sworn QFR Q1 response ([`/documents/elizondo-qfr-burlison-20241219`]) names Lacatski as "the former Director of the Advanced Aerospace Weapon System Application Program (AAWSAP)"; (3) Lacatski self-attests in WEAPONIZED EP 38 that AAWSAP was "basically created between myself and Senator Reed at the defense intelligence agency." Period_start: AAWSAP funding began September 2008 per Lacatski's WEAPONIZED EP 38 attestation. Period_end: 2016 retirement per Lacatski's WEAPONIZED EP 38 self-attestation. The program's funding ended September 2010 with a 90-day no-cost extension through December 2010, but Lacatski continued at DIA on related matters per his account through 2016. |
 | SD004 Page-1 DOPSR-Cleared Statement (entered into 2024-11-13 House Oversight UAP hearing record) | Author of the September 6, 2023 DOPSR-cleared statement naming Lockheed Martin Space Systems Vice President Dr. James Ryder | 2023-09-06 | sworn-testimony | high | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf | See finding [`/findings/lacatski-authorship-chain`] for the full three-source attestation chain. Elizondo's sworn QFR Q1 response attests authorship; the SD004 page-1 substantive content (verbatim re-attested in Elizondo's QFR Q1 as Attachment 2) carries the Lockheed Martin / James Ryder UAP material divestment claim. DOPSR clearance attests authorization to publish; the underlying factual claim is not adjudicated by DOPSR. |
+| Kona Blue Program (KBP) ([`/organizations/kona-blue`]) | Creator and DIA program manager (the follow-on program to AAWSAP) |  | on-record | medium | transcripts/weaponized-lacatski-part1-2025-downloaded.md | Lacatski's direct self-attestation in WEAPONIZED PART 1 ([`/transcripts/weaponized-lacatski-part1-2025`]): "I was the creator and DIA program manager of AASAP, the Advanced Aerospace Weapons System Applications Program, and of the follow-on Kona Blue program, KBP. Both classified programs, regardless of what the internet has said in the past. Both classified." PART 2 ([`/transcripts/weaponized-lacatski-part2-2025`]) refinement: Kona Blue was "a compartment reputed to be for recovered technology" AND "Kona Blue the program" first described in Skinwalkers at the Pentagon via the private-money structure. Lacatski says Kona Blue "is much more than going and getting what some have described as 60 year old parts" and that he knows "what the exchange parameters were and what was promised on all sides." Confidence: medium — Kona Blue is self-attested by Lacatski but lacks the multi-source convergence of the AAWSAP attribution (no equivalent of the Puthoff DIRD page-1 mention or the Elizondo QFR for Kona Blue specifically). Period dates not attested in source.  |
 
 ---
 
@@ -252,7 +348,11 @@ Lacatski as author of the page 1 statement about Lockheed Martin Space Systems V
 
 In WEAPONIZED Episode 38 ([`/organizations/weaponized-podcast`]) Corbell read from chapter 9 of the 2023 book ([`/documents/inside-us-gov-covert-ufo-2023`]) about the 2011 Capitol building meeting where Lacatski posed a question that the United States was in possession of a craft of unknown origin and had successfully gained access to its interior. Lacatski said "the wording that you read is correct" and confirmed the meeting happened and it is "true yes." Lacatski said "you see I'm not speaking at all I'm not going beyond what it was what you read from the book."
 
-Mystery Wire ([`/organizations/klas-tv`]) was the Las Vegas venue for the 2021 book launch interview. Lacatski distinguished the program ([`/organizations/aatip`]) at the Pentagon ([`/organizations/dod`]) from his program at DIA. He named Bob Bigelow's bass ([`/organizations/baass`]) at Bigelow Aerospace ([`/organizations/bigelow-aerospace`]) as the program contractor. Lacatski's SD004 page 1 statement named Lockheed Martin ([`/organizations/lockheed-martin`]) Space Systems Vice President Dr. James Ryder ([`/people/james-ryder`]) as the proposer of a UAP material divestment plan to program leadership.
+In the Mystery interview at KLAS-TV ([`/organizations/klas-tv`]) Las Vegas Lacatski said the program ([`/organizations/aatip`]) at the Pentagon ([`/organizations/dod`]) is "quite distinct" from his program at DIA. He named Bob Bigelow's bass ([`/organizations/baass`]) at Bigelow Aerospace ([`/organizations/bigelow-aerospace`]) as the program contractor. Lacatski as author of the page 1 statement that named Lockheed Martin ([`/organizations/lockheed-martin`]) Space Systems Vice President Dr. James Ryder ([`/people/james-ryder`]) is documented in ([`/findings/lacatski-authorship-chain`]).
+
+In WEAPONIZED PART 1 Lacatski said he was creator and DIA program manager of the follow-on Kona Blue program (KBP) — his first statement on Kona Blue in the books and interviews so far. He said deliberately false documents about AAWSAP and Kona Blue are in government files and that he reported some to the DOD/DOW Inspector General. He said AARO is a disinformation campaign "steering the direction of the conversation," refused two AARO meeting requests, and reported a former AARO deputy director publicly disparaging the UAP and paranormal connection — "they were looking for werewolves." Lacatski said the books are his disclosure — the four books are Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program Initial Revelations, the new New Insights, and the approved future book Future Visions. Books are "approved for release by the Department of Defense or War."
+
+In WEAPONIZED PART 2 Lacatski did not deny being read in to a legacy UAP program before AAWSAP — "I can't speak to that. The only other clearance I had was a Q clearance at deal." He said the 2004 Tic Tac is "not" US technology and "not that I am aware of" Lockheed Martin technology from 2004. He described his own man in black sighting on a Union Station express train during Kona Blue — a man in black on a full blank page with the words "Join us." He said "I know nothing about that right now" on Jeremy's recovered bodies. He said Kona Blue is "much more than going and getting what some have described as 60 year old parts" — he knows "what the exchange parameters were and what was promised on all sides."
 
 ---
 
@@ -279,6 +379,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 - [`/people/colm-kelleher`]
 - [`/people/david-grusch`]
+- [`/people/dylan-borland`]
 - [`/people/george-knapp`]
 - [`/people/hal-puthoff`]
 - [`/people/harry-reid`]
@@ -286,6 +387,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/jeremy-corbell`]
 - [`/people/luis-elizondo`]
 - [`/people/robert-bigelow`]
+- [`/people/tara-otoole`]
 
 ### Organizations
 
@@ -296,6 +398,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/dia`]
 - [`/organizations/dod`]
 - [`/organizations/klas-tv`]
+- [`/organizations/kona-blue`]
 - [`/organizations/lockheed-martin`]
 - [`/organizations/weaponized-podcast`]
 
@@ -310,6 +413,8 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 - [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]
 - [`/transcripts/weaponized-038-lacatski-kelleher-2023`]
+- [`/transcripts/weaponized-lacatski-part1-2025`]
+- [`/transcripts/weaponized-lacatski-part2-2025`]
 
 ### Findings
 

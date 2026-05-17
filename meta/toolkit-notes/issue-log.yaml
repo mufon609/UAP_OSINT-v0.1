@@ -14517,3 +14517,90 @@
     credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, distinguished, launch, proposer, sd004, venue, wire
   tokens: [2021, distinguished, launch, proposer, sd004, venue, wire]
 
+- ts: 2026-05-17T18:22:45Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 1 significant token(s) not in source (prose-drift check — contributor review): doe
+  tokens: [doe]
+
+- ts: 2026-05-17T18:22:45Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 2 significant token(s) not in source (prose-drift check — contributor review): 2025, two-part
+  tokens: [2025, two-part]
+
+- ts: 2026-05-17T18:22:45Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 13 significant token(s) not in source (prose-drift check — contributor review): 2021, 2025, attestation, distinguished, framing, illustration, launch, lineage, … (+5 more — pass --verbose for full list)
+  tokens: [2021, 2025, attestation, distinguished, framing, illustration, launch, lineage, on-record, proposer, sd004, venue, wire]
+
+- ts: 2026-05-17T18:23:03Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 13 significant token(s) not in source (prose-drift check — contributor review): 2021, 2025, attestation, distinguished, framing, illustration, launch, lineage, … (+5 more — pass --verbose for full list)
+  tokens: [2021, 2025, attestation, distinguished, framing, illustration, launch, lineage, on-record, proposer, sd004, venue, wire]
+
+- ts: 2026-05-17T18:23:55Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 2 significant token(s) not in source (prose-drift check — contributor review): corpus, self-attestation
+  tokens: [corpus, self-attestation]
+
+- ts: 2026-05-17T18:24:12Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e18' ('KLAS-TV / 8 News Now / Mystery Wire') wrap_path '/organizations/klas-tv' does not appear as a [`/organizations/klas-tv`] link in the node
+
+- ts: 2026-05-17T18:24:40Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
+- ts: 2026-05-17T18:26:35Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+
