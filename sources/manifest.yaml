@@ -1549,6 +1549,15 @@
   sha256: 5da4b91b69f81faa1f176dc57cbde3e42f3f8985adcf4621ddbbe33a5825afd7
   archive_status: 3
   wayback_date: '2026-03-15'
+- url: https://thesolfoundation.org/people/jacques-vallee-3/
+  format: html
+  status: archived
+  path: government/solfoundation-vallee-people-page-20260517.html
+  archived_date: '2026-05-16'
+  archive_status: 3
+  note: Sol Foundation 'People' bio page for Jacques Vallée — institutional attestation of Vallée as 'a staff engineer of Stanford Research Institute's International Augmentation Research Center, under Douglas Engelbart' and as having worked on the ARPANET network information center. Sol Foundation lists Vallée as a member alongside Hal Puthoff, Christopher Mellon, Garry Nolan, Peter Skafish, and others. Page does not attest specific years of SRI employment.
+  sha256: 6598dbdd3dc40859370c85877359c5f1d4152e6a3553386d62f78072bfc0a3c4
+  wayback_date: '2026-05-17'
 - url: https://thesolfoundation.org/wp-content/uploads/2024/05/Sol_WhitePaper_Vol1N3.pdf
   format: pdf
   status: archived

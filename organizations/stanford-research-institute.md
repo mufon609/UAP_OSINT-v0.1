@@ -112,6 +112,18 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
+### CIA primary-source attestation of K. Green at OSI as the earliest named CIA-side recipient of Puthoff's June 17, 1972 letter from Stanford Research Institute — the personal-communication channel that delivered the SRI magnetometer demonstration record to the Agency. The same Kress paper at p. 10 (footnote, not separately quoted here) separately attests K. Green/LSD/OSI (Life Sciences Division of OSI) as author of a 9 November 1973 CIA Memorandum for the Record on "Verification of Remote Viewing Experiments at Stanford Research Institute"; Green's OSI role as CIA-side program officer thus spans at least the program-inception window from June 1972 through November 1973. Source carries OCR artifact "'1:7," for "17," — preserved as-source per OCR-scan source-form-preservation discipline; see naming_quirks nq14.
+
+> H. E. Puthoff; Stanford Research Institute; Letter to K. Green/OSI, June '1:7, 1972-
+
+| Field | Value |
+|---|---|
+| Attributed to | Kenneth A. Kress, 'Parapsychology in Intelligence: A Personal Review and Conclusions,' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 8., 1972-06-17 |
+| Source | [archived source](../sources/government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf) |
+| Location | p. 8, footnote |
+
+---
+
 ### Peer-reviewed Nature author-affiliation block establishing that the SRI parapsychology investigation operated out of the Electronics and Bioengineering Laboratory at Stanford Research Institute, Menlo Park, California, 94025 — the specific sub-unit and address at SRI. The Nature byline names both Russell Targ and Harold E. Puthoff at SRI, establishing the two-person co-author structure (Targ self-attests his cofounder role at SRI on espresearch.com per q4; the Nature byline corroborates Puthoff at SRI alongside Targ).
 
 > Electronics and Bioengineering Laboratory, Stanford Research Institute, Menlo Park, California, 94025  RUSSELL TARG & HAROLD PUTHOFF
@@ -523,6 +535,18 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 
 ---
 
+### Sol Foundation institutional attestation of Jacques Vallée as a staff engineer at SRI's Augmentation Research Center (ARC) under Douglas Engelbart, working on the ARPANET network information center. Identifies Vallée's SRI affiliation as the computer-science / ARPANET division (ARC under Engelbart), distinct from the contemporaneous SRI parapsychology investigation under Puthoff and Targ (q7–q10) — same parent institution, different division. Sol page does not attest specific years of Vallée's ARC tenure. Source-form note: Sol writes "Stanford Research Institute’s International Augmentation Research Center" — the canonical name of the Engelbart division is "Augmentation Research Center" (ARC); "International" is Sol's descriptive insertion (likely conflating with the post-1977 institutional rename "SRI International") and not part of the division's historical name. Preserved verbatim per source-form-preservation discipline; see naming_quirks nq15.
+
+> He later worked on the network information center for the ARPANET, a precursor to the modern Internet, as a staff engineer of Stanford Research Institute’s International Augmentation Research Center, under Douglas Engelbart.
+
+| Field | Value |
+|---|---|
+| Attributed to | Sol Foundation 'People' page for Jacques Vallée ([`/people/jacques-vallee`]) — thesolfoundation.org/people/jacques-vallee-3/, retrieved 2026-05-17. Page-attributed Sol role: Emeritus Advisor. |
+| Source | [archived source](../sources/government/solfoundation-vallee-people-page-20260517.html) |
+| Location | ¶2 |
+
+---
+
 ## Timeline
 
 | Date | Event | Category | Source | Node Link |
@@ -575,7 +599,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 | [`/organizations/stanford-university`] | parent | news/sri-international-timeline-of-innovation-20260515.html | Stanford University founded SRI as the Stanford Research Institute in 1946 (q3); SRI became independent from Stanford in 1970 (q2, q3). Specific circumstances of the 1970 severance are not attested by the archived sri.com sources. |
 | [`/organizations/sarnoff-corp`] | subsidiary | news/sri-international-about-20260515.html | SRI acquired Sarnoff Corp. (formerly RCA Labs) in 1987 per q2 and q3. Sarnoff Corp. was originally a research arm of RCA; the corporate-history details of the Sarnoff acquisition are not attested by archived sources. |
 | [`/organizations/parc`] | subsidiary | news/sri-international-timeline-of-innovation-20260515.html | In 2023 SRI received the Palo Alto Research Center (PARC) "as a donation" per q3. Donating party not attested in the archived sri.com sources (PARC was a subsidiary of Xerox prior to the donation per public record but Xerox is not named on the sri.com pages). |
-| [`/organizations/cia`] | contracting-agency | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Per Kress 1977, the inception of the CIA-SRI parapsychology investigation was an $874 OTS demonstration contract in August 1972. Per the 1993 DIA STAR GATE Project Overview (q12b), CIA funding to SRI was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA and some of DIA's service support elements with occasional support from various R&D organizations. |
+| [`/organizations/cia`] | contracting-agency | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | Per Kress 1977, the inception of the CIA-SRI parapsychology investigation was an $874 OTS demonstration contract in August 1972; the named CIA OSI officer at program inception was K. Green ([`/people/kit-green`]) — recipient of Puthoff's June 1972 letter from SRI per q36, and (per p. 10 footnote of the same Kress paper) author of a 9 November 1973 Memorandum for the Record at LSD/OSI on Verification of Remote Viewing Experiments at Stanford Research Institute. Per the 1993 DIA STAR GATE Project Overview (q12b), CIA funding to SRI was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA and some of DIA's service support elements with occasional support from various R&D organizations. |
 | [`/organizations/dia`] | contracting-agency | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | Per the 1993 DIA STAR GATE Project Overview (q12b), subsequent funding for RV investigation at SRI was provided by DIA and some of DIA's service support elements with occasional support from various R&D organizations after CIA funding was discontinued in 1975. The same source attests that in the late 1970s HQDA/INSCOM established a small unit for "development of a community capability" in RV; that unit was transferred to DIA in 1986 as the SUN STREAK Special Access Program. FY 1991 Congressional direction for DIA established the successor research at SAIC. |
 | [`/organizations/saic`] | successor | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | Per the 1993 DIA STAR GATE Project Overview, Congressional direction in FY 1991 for DIA established new remote-viewing research at Science Applications International Corporation (SAIC), Menlo Park, CA, after the SRI program was discontinued in 1990. SAIC was the institutional successor for the remote-viewing program, not a peer or partner of SRI. The DIA source writes "Systems Applications International Corporation" — the company's canonical name is "Science Applications International Corporation" per the 1995 AIR Evaluation in this artifact's corpus; the DIA-source error is recorded as naming_quirk nq12 and preserved verbatim in q12. |
 
@@ -599,6 +623,8 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | 10-20 | 10^-20 | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf | Superscript loss during pdftotext extraction of the AIR 1995 PDF. The source PDF renders "10^-20" as the digit 10 with a superscript -20; pdftotext flattens this to baseline "10-20" without preserving the superscript relationship. Preserved verbatim in q22 quote text. Companion to nq10 ("1020" for "10^20") in the same passage. |
 | Systems Applications International Corporation | Science Applications International Corporation | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | The 1993 DIA STAR GATE Project Overview names the SAIC contractor as "Systems Applications International Corporation" in multiple passages (p. 7 and p. 10 ¶3) — a documented writing error in the DIA document. The canonical company name is "Science Applications International Corporation", attested in this artifact's corpus by the 1995 AIR Evaluation (scratch lines 764, 824, 1295 — "government sponsored research conducted at Stanford Research Institute, later known as SRI International, and at Science Applications International Corporation, known as SAIC"). Preserved verbatim in q12 quote text per source-form-preservation discipline. Companion to nq8 (DIA's "SRI-International" hyphenated form) — both errors in the same DIA document. |
 | --SRI | -- SRI | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf | pdftotext-default extraction artifact in the DIA STAR GATE Project Overview Figure 1 table. The source PDF page 7 visually renders each Figure 1 row as date-range, multi-space column gap, two typewriter hyphens, a single space, then the lab name and location (verified against the rendered PDF page image). Default pdftotext extraction collapses the multi-space column gap AND the single space between the two hyphens and SRI, producing "--SRI" with no intervening space — the verbatim form preserved in q12c. The two hyphens in the source are literal hyphen characters (not an em-dash), consistent with the 1993 source's typewriter format. Preserved verbatim in q12c per source-form-preservation discipline. The same extraction-artifact phenomenon affects every other Figure 1 row but only the SRI row is preserved as a quote in q12c. |
+| '1:7, | 17, | government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf | OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "17" in the date "June 17, 1972" (Puthoff's letter date in q36) as "'1:7" — apostrophe-1-colon-7 cluster substituting for the digit 17. Preserved verbatim in q36 quote text per OCR-scan source-form-preservation discipline. |
+| International Augmentation Research Center | Augmentation Research Center | government/solfoundation-vallee-people-page-20260517.html | Sol Foundation's "People" bio page for Jacques Vallée writes "Stanford Research Institute’s International Augmentation Research Center" in q37 — the historical name of Doug Engelbart's SRI division is "Augmentation Research Center" (ARC), not "International Augmentation Research Center". "International" appears to be Sol's descriptive insertion, likely conflating with the post-1977 SRI rebrand "SRI International". Preserved verbatim in q37 per source-form-preservation discipline. |
 
 ---
 
@@ -619,9 +645,11 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/hal-puthoff`]
 - [`/people/hella-hammid`]
 - [`/people/ingo-swann`]
+- [`/people/jacques-vallee`]
 - [`/people/john-j-young-jr`]
 - [`/people/john-mcintire`]
 - [`/people/kenneth-kress`]
+- [`/people/kit-green`]
 - [`/people/pat-price`]
 - [`/people/russell-targ`]
 - [`/people/steven-walker`]

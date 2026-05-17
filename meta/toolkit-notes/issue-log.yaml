@@ -13066,3 +13066,23 @@
     key_personnel[2] ('kp3') note: 1 significant token(s) not in source (prose-drift check — contributor review): placing
   tokens: [placing]
 
+- ts: 2026-05-17T02:31:13Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Passages' exceeds word budget (81>55): Kenneth A. Kress, 'Parapsychology in Intelligence: A Persona...
+
+- ts: 2026-05-17T02:31:29Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: organizations/stanford-research-institute.md
+  node_type: organization
+  severity: warn
+  message: |
+    Table cell in 'Key Passages' exceeds word budget (81>55): Kenneth A. Kress, 'Parapsychology in Intelligence: A Persona...
+
