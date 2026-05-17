@@ -1,0 +1,374 @@
+id: meta/research/mysterywire-lacatski-kelleher-knapp-2021
+type: research-artifact
+schema_version: 1
+target_node: transcripts/mysterywire-lacatski-kelleher-knapp-2021
+status: active
+created: '2026-05-17'
+description: 'Book interviews with "dr jim lakatsky" ([`/people/james-lacatski`]) and "dr kelleher" ([`/people/colm-kelleher`]) by george ([`/people/george-knapp`]) for the book ([`/documents/skinwalkers-at-the-pentagon-2021`]). lakatsky says the program "was completely ufo related" — the statement of objectives format for the request for proposal made the contract contents insufficient for "anyone examining the contents of the contract" without the proposal from bigelow aerospace advanced space studies ([`/organizations/baass`]). lakatsky said the difference between "ossap" ([`/organizations/aawsap`]) at the defense intelligence agency ([`/organizations/dia`]) and "a tip" ([`/organizations/aatip`]) at the pentagon ([`/organizations/dod`]) is "quite distinct": ossap had 22 million dollars of funding, a main contract and subcontracts, military and civilian ufos, a massive database; "a tip" was basically zero funded with no contract. lakatsky was running "not an official sap but a closed program" — within his own office, "they did not know except leadership that this contract was being run."
+
+
+  kelleher said the bass operation ran september 2008 to late 2010; he was hired november 2008; about 300 telephone interviews and at least 100 face-to-face interviews between november 2008 and april 2009 to recruit phd level physics and biology scientists, master''s level scientists, technicians, database analysts, military intelligence personnel, security officers, and a 20-year veteran of the air force office of special investigations ([`/organizations/afosi`]). Team of about 50 people by may 2009 executed multiple programs side by side over the 24-month contract. kelleher said "dr lakatsky''s input in washington dc and greasing the wheels" was the key and that he was "the day-to-day manager in las vegas." kelleher said a medical investigation example — a biotechnologist driving towards bend oregon whose ufo encounter was followed for years through blood samples, analytical chemistry, hematology, immune system parameters, mris, and a rare form of ductal carcinoma.
+
+
+  lakatsky said it took 14 months to "get the stamp of approval from the dod" for public release authority of the book — they had to process the book during the pandemic through secure channels and handle it as if it had "maybe top secret sci information in it."
+
+
+  Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-knapp`] [`/people/harry-reid`] [`/people/robert-bigelow`] [`/organizations/aawsap`] [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/bigelow-aerospace`] [`/organizations/dia`] [`/organizations/dod`] [`/organizations/afosi`] [`/organizations/klas-tv`] [`/documents/skinwalkers-at-the-pentagon-2021`]'
+primary_sources:
+- path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  format: transcript
+  extracted_text_path: /tmp/scratch-mysterywire-lacatski-kelleher-knapp-2021-0.txt
+document_intrinsic:
+  internal_title: 'YouTube Transcript — mysterywire-lacatski-kelleher-knapp-2021'
+  source_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  video_id: b3U0PVvv7RQ
+  caption_lines: 421
+  approximate_runtime: '17 minutes'
+context_extrinsic:
+  display_title: 'Mystery Wire — Lacatski, Kelleher, Knapp on Skinwalkers at the Pentagon (October 12, 2021)'
+  venue: Mystery Wire / 8 News Now (KLAS-TV Las Vegas)
+  host: George Knapp
+  guests: Dr. James Lacatski, Dr. Colm Kelleher
+  broadcast_date: '2021-10-12'
+  topic: Book launch promotional interview for "Skinwalkers at the Pentagon" (October 2021)
+  primary_source_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ
+  transcript_provenance: auto-caption
+  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
+  quote_attribution: 'Dr. James Lacatski (and Dr. Colm Kelleher), Mystery Wire / 8 News Now (KLAS-TV Las Vegas) book-launch interview with George Knapp, October 12, 2021'
+speakers:
+- id: s1
+  added_date: '2026-05-17'
+  name: George Knapp
+  role: Host / Interviewer
+  node_link: /people/george-knapp
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[0:03]'
+  note: KLAS-TV / 8 News Now Las Vegas investigative reporter; Mystery Wire founder; co-author with Lacatski and Kelleher of "Skinwalkers at the Pentagon" (October 2021); interviewer throughout this segment.
+- id: s2
+  added_date: '2026-05-17'
+  name: Dr. James Lacatski
+  role: Guest
+  node_link: /people/james-lacatski
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[0:39]'
+  note: Former AAWSAP director at DIA; co-author of "Skinwalkers at the Pentagon"; primary subject of the interview. Auto-caption renders his surname as "lakatsky" / "lykotsky" / "caskey" — see naming_quirks.
+- id: s3
+  added_date: '2026-05-17'
+  name: Dr. Colm Kelleher
+  role: Guest
+  node_link: /people/colm-kelleher
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[4:26]'
+  note: Former BAASS program manager; co-author of "Skinwalkers at the Pentagon"; second guest in the interview. Auto-caption renders his first name as "collin" / "column" — see naming_quirks.
+quotes:
+- id: q1
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [0:39] it was completely ufo related the reason you haven't seen the documentation is we use the statement of objectives format for the request for proposal that is insufficient for anyone examining the contents of the contract they must have the proposal now within the proposal and in this case it was from bigelow aerospace advanced space studies it's clearly mentioned among the topics a worldwide database of advanced aerospace vehicles there can be no ambiguity here this was being proposed as a ufo project
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[0:39]–[1:23]'
+  significance: Lacatski's direct on-record response to the DoD spokesperson framing that AAWSAP "had nothing to do with UFOs" — Lacatski says the program was completely UFO-related, explains the Statement of Objectives RFP format that obscured the program's content to anyone reading only the contract without the underlying Bigelow Aerospace Advanced Space Studies (BAASS) proposal, and points to the BAASS proposal's explicit mention of a "worldwide database of advanced aerospace vehicles" among its topics
+  context: Lacatski responding to George Knapp's framing question about DoD spokesperson statements that the $22M AAWSAP funding had "nothing to do with UFOs"
+- id: q2
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [1:24] now if you want to look at the tail end of the project you'll find over a hundred documents required to be reported to the defense intelligence agency that were ufo related in part of course i mean they were large very large documents and you also have uh you know technical studies and you have that database probably the largest ufo database that exists in the world and is currently being used by the us military so yes it was completely a ufo project
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[1:24]–[2:06]'
+  significance: Lacatski's deliverables claim — over 100 documents required to be reported to DIA were UFO-related; the AAWSAP database is "probably the largest UFO database that exists in the world" and is "currently being used by the US military" as of October 2021. Closes with the categorical affirmation "so yes it was completely a ufo project."
+  context: Lacatski continuing his answer to Knapp on the UFO scope of AAWSAP, describing the program's documentary and database deliverables
+- id: q3
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [2:22] yes the name atip was a nickname for asap for certain security reasons that we've put into the book but the difference between osap with the nickname atep at dia and a tip at the pentagon is quite distinct asap had 22 million dollars of funding it covered military and civilian ufos yielding a massive database it also had a main contract and subcontracts now a tip in the pentagon as described in the articles was basically zero funded looked at specific military ufo encounters and very important ones because they had film and it had no contract
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[2:22]–[3:19]'
+  significance: Lacatski's structural distinction between AAWSAP (DIA, $22M, main contract + subcontracts, military and civilian UFO coverage, "massive database") and AATIP (Pentagon, zero-funded, no contract, specific military encounters with film). Resolves the long-running NYT-2017-vs-actual-funding-trail confusion by attesting the two programs as substantively distinct organizations with the AATIP name as a nickname used "for certain security reasons" detailed in the book. Auto-caption typos preserved verbatim (atip / asap / osap / atep / "a tip").
+  context: Lacatski responding to Knapp's clarification question on the difference between AAWSAP and AATIP after the New York Times and other major media reported the $22M went to AATIP
+- id: q4
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [3:20] so getting back to how did this mix-up occur i think it it's it's not deliberate it's not due to to to authors to television personalities etc it's the fact we were running not an official sap but a closed program i can tell you for a fact that within my own office they did not know except leadership that this contract was being run they had no idea whatsoever our security was that tight
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[3:20]–[3:55]'
+  significance: Lacatski's security-posture attestation — AAWSAP was "not an official SAP but a closed program"; within his own DIA office only leadership knew the contract was being run; staff had "no idea whatsoever" the program existed. Frames the AAWSAP/AATIP press confusion as a consequence of compartmentation rather than deliberate misdirection. Direct first-person attestation by the program's named director.
+  context: Lacatski explaining how the AAWSAP/AATIP press mix-up originated, attributing it to the program's closed-program compartmentation rather than to authors or media personalities
+- id: q5
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [4:26] well i was hired in uh november of 2008. the asap program ran from september 2008 to late 2010 so one of the first tasks that i had on coming on board was to put together a team of uh ufo focused investigators as quickly as possible so i was thinking back on this and between november 2008 and probably april 2009 i personally conducted about 300 telephone interviews in an attempt to recruit different people for different positions at ossap and in addition i i did at least 100 face-to-face interviews in my office in that period of time
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[4:26]–[5:14]'
+  significance: Kelleher's program-timeline attestation — AAWSAP ran September 2008 to late 2010 (24-month contract); Kelleher hired November 2008; ~300 telephone interviews + ~100 face-to-face interviews between November 2008 and April 2009 to recruit "ufo focused investigators." Establishes the program's date bounds and recruitment intensity directly from the BAASS program manager.
+  context: Kelleher responding to Knapp's question about the BAASS operation — how many people were hired, in what time frame, and what they did
+- id: q6
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [5:30] phd level scientists uh that would include physics and biology master's level scientists technicians we also looked for database analysts and uh military intelligence personnel who had a long uh history investigative background and of course we also were looking for a lot of security officers because security was a big issue interestingly one of our program managers was um a 20-year veteran of the air force office of special investigations also known as afosi
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[5:30]–[6:07]'
+  significance: Kelleher's BAASS team-composition attestation — PhD-level physics and biology scientists, master's-level scientists, technicians, database analysts, military intelligence personnel, security officers, plus a 20-year AFOSI veteran as program manager. Establishes the staffing profile of the BAASS organization that executed AAWSAP under DIA's contract.
+  context: Kelleher continuing his answer to Knapp on the BAASS staffing profile during the 2008-2009 hiring period
+- id: q7
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [6:29] i think by the end of may of 2009 we had a team of about 50 50 people and george when you considered that that you know this was a 24-month contract so not only were we uh putting together the security infrastructure of this uh of this large organization and that included facility security clearances getting everything up to you know to a level that was sufficient for um inspections but hiring these people training all of these different people and then we executed uh multiple programs side by side and all of this happened in a 24-month period
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[6:29]–[7:14]'
+  significance: Kelleher's team-size + scope attestation — by May 2009 BAASS had a team of approximately 50 people; the 24-month contract included security infrastructure (facility security clearances "sufficient for inspections"), hiring and training, plus execution of multiple programs side by side. Frames the operational scope as "pretty extraordinary" for a 24-month government contract.
+  context: Kelleher describing the BAASS organization's scale and security infrastructure during the AAWSAP contract execution period
+- id: q8
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [7:36] dr lakatsky's input in washington dc and greasing the wheels to make all of this happen i'm putting together a pretty large organization that was focused only on ufo investigations that was the key
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[7:36]–[7:51]'
+  significance: Kelleher's attestation about Lacatski's Washington D.C. role — Lacatski's input "in washington dc and greasing the wheels" enabled BAASS to assemble a large organization "focused only on ufo investigations." Statement BY Kelleher ABOUT Lacatski's program-director function; quotes by Kelleher about Lacatski belong on Kelleher's own (unbuilt) person artifact and as a cross-reference on Lacatski's structured surfaces — captured here for transcript completeness.
+  context: Kelleher crediting Lacatski as the Washington-D.C.-side enabler of BAASS during a reflection on the 24-month BAASS buildup
+- id: q9
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [13:30] well i'm glad that we finally gut public release authority and and frankly i understood all of their concerns uh what we had to rewrite in the book and what we had to remove and put in i wasn't really sweating it because i was almost in constant communication with them very pleasant
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[13:30]–[13:57]'
+  significance: Lacatski on the 14-month DoD pre-publication review process — "public release authority" obtained after rewrites and removals; constant communication with DoD reviewers framed as "very pleasant." Direct attestation that "Skinwalkers at the Pentagon" passed an official DoD release-authority review (auto-caption renders "got" as "gut").
+  context: Lacatski responding to Knapp on the 14-month DoD pre-publication review process for "Skinwalkers at the Pentagon"
+- id: q10
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [14:02] people i was dealing with and i understood their situation during the pandemic they were working off-site but they had to process it through secure channels because you don't know what's in the book until so they had to process it as if it had maybe top secret sci information in it uh of course it didn't but nevertheless they had to handle it that way they had to go into work transfer to various organizations for their review and approval but it eventually occurred and i'm glad we got that uh approval for release
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[14:02]–[14:36]'
+  significance: Lacatski extends the DoD-review account — pandemic-era off-site processing through secure channels handling the book "as if it had maybe top secret sci information in it" even though "it didn't"; multi-organization transfer for review and approval. Establishes the procedural shape of the pre-publication review process while attesting the book itself contained no TS/SCI material (per Lacatski).
+  context: Lacatski continuing his answer to Knapp on the mechanics of the DoD pre-publication review
+- id: q11
+  added_date: '2026-05-17'
+  statement_date: '2021-10-12'
+  text: |
+    [15:56] um i think it's about time that the entire story of ossop is being told and you know dr lykotsky was the driving force in in washington dc and i was the day-to-day manager in las vegas so i think between the two of us we've come up with a pretty good summary of what what the whole program looked like
+  source:
+    path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+    location: '[15:56]–[16:19]'
+  significance: Kelleher's closing role-summary — Lacatski "driving force in Washington D.C.", Kelleher "day-to-day manager in Las Vegas" — codifies the two-author program-leadership division for the AAWSAP/BAASS operation. Statement BY Kelleher ABOUT Lacatski's program function; book co-authorship attestation in source.
+  context: Kelleher's closing comment on the book's coverage of the AAWSAP/BAASS program
+entities_referenced:
+- id: e1
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Dr. James Lacatski
+  wrap_path: /people/james-lacatski
+  context_summary: Former AAWSAP director at DIA; first guest in the interview; primary speaker on the AAWSAP / AATIP distinction, the closed-program security posture, and the DoD pre-publication review of "Skinwalkers at the Pentagon"
+- id: e2
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Dr. Colm Kelleher
+  wrap_path: /people/colm-kelleher
+  context_summary: Former BAASS program manager; second guest in the interview; co-author of "Skinwalkers at the Pentagon"; describes BAASS team composition, the 24-month contract execution, and one medical-injury case example
+- id: e3
+  added_date: '2026-05-17'
+  entity_type: person
+  name: George Knapp
+  wrap_path: /people/george-knapp
+  context_summary: KLAS-TV / 8 News Now / Mystery Wire investigative reporter; book co-author with Lacatski and Kelleher; host of this interview
+- id: e4
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Harry Reid
+  wrap_path: /people/harry-reid
+  context_summary: Late U.S. Senator (D-NV); named by Knapp in the opening framing question as the senator who "secured" the $22M AAWSAP funding "in congress" along with his colleagues
+- id: e5
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Robert Bigelow
+  wrap_path: /people/robert-bigelow
+  context_summary: Founder of Bigelow Aerospace and Bigelow Aerospace Advanced Space Studies; named by Knapp in the closing exchange as having "fought to get the program on and get it up and running" alongside Reid
+- id: e6
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: AAWSAP — Advanced Aerospace Weapon System Applications Program
+  wrap_path: /organizations/aawsap
+  context_summary: DIA-administered $22M UAP investigation program (September 2008 — late 2010); the subject of the interview; Lacatski was program manager / director. Source rendered variously as "ossap" / "asap" / "osap" / "allsap" — see naming_quirks
+- id: e7
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: AATIP — Advanced Aerospace Threat Identification Program
+  wrap_path: /organizations/aatip
+  context_summary: Pentagon UAP investigation program named in 2017 NYT reporting; Lacatski distinguishes it from AAWSAP as zero-funded, no contract, specific military encounters with film. Source rendered as "atip" / "atep" / "a tip" — see naming_quirks
+- id: e8
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: BAASS — Bigelow Aerospace Advanced Space Studies
+  wrap_path: /organizations/baass
+  context_summary: Bigelow Aerospace subsidiary that executed the AAWSAP contract under DIA; Kelleher was program manager; named in the BAASS proposal Lacatski references as the contract awardee. Source rendered as "bass" — see naming_quirks
+- id: e9
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Bigelow Aerospace
+  wrap_path: /organizations/bigelow-aerospace
+  context_summary: Parent organization of BAASS; named by Lacatski as the proposal originator (the contract was awarded to "bigelow aerospace advanced space studies")
+- id: e10
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Defense Intelligence Agency (DIA)
+  wrap_path: /organizations/dia
+  context_summary: AAWSAP's home agency; Lacatski's employer; the agency to which BAASS reported "over a hundred documents" of UFO-related deliverables
+- id: e11
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Department of Defense (DoD)
+  wrap_path: /organizations/dod
+  context_summary: AAWSAP's parent department; conducted the 14-month pre-publication review of "Skinwalkers at the Pentagon"; named obliquely as the "Pentagon" venue distinct from DIA where AATIP operated
+- id: e12
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Air Force Office of Special Investigations (AFOSI)
+  wrap_path: /organizations/afosi
+  context_summary: Named by Kelleher as the agency a 20-year veteran of which served as a BAASS program manager. Source rendered correctly once ("afosi") and once as "aflacy" — see naming_quirks
+- id: e13
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: KLAS-TV / 8 News Now / Mystery Wire
+  wrap_path: /organizations/klas-tv
+  context_summary: Las Vegas CBS-affiliate TV station; Knapp's home outlet; Mystery Wire is the station's UFO-investigation brand; venue for this interview
+- id: e14
+  added_date: '2026-05-17'
+  entity_type: document
+  name: Skinwalkers at the Pentagon (2021)
+  wrap_path: /documents/skinwalkers-at-the-pentagon-2021
+  context_summary: Lacatski / Kelleher / Knapp book published October 2021; the subject of this book-launch interview; passed a 14-month DoD pre-publication review per Lacatski
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-17'
+  observed: lakatsky
+  canonical: Lacatski
+  location: '[0:03]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "Lacatski" phonetically as "lakatsky" in the opening Knapp address. Preserved as it appears in the caption file.
+- id: nq2
+  added_date: '2026-05-17'
+  observed: lykotsky
+  canonical: Lacatski
+  location: '[7:36], [15:56]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption alternate rendering of "Lacatski" when spoken by Kelleher — "lykotsky" replaces the initial L-a- with L-y- and renders the final -ski as -tsky. Preserved as it appears.
+- id: nq3
+  added_date: '2026-05-17'
+  observed: caskey
+  canonical: Lacatski
+  location: '[13:13]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption third variant of "Lacatski" — "caskey" when Knapp addresses Lacatski before the DoD review question ("dr caskey jim"). Preserved as it appears.
+- id: nq4
+  added_date: '2026-05-17'
+  observed: collin
+  canonical: Colm
+  location: '[4:09]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders Colm Kelleher's first name phonetically as "collin" in Knapp's turn-of-speaker address. Preserved as it appears.
+- id: nq5
+  added_date: '2026-05-17'
+  observed: column
+  canonical: Colm
+  location: '[12:25]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption second rendering of Colm Kelleher's first name as "column" in Knapp's closing turn-of-speaker address ("column you're excited to it"). Preserved as it appears.
+- id: nq6
+  added_date: '2026-05-17'
+  observed: allsap
+  canonical: AAWSAP
+  location: '[0:28]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "AAWSAP" as "allsap" in Knapp's framing question. AAWSAP = Advanced Aerospace Weapon System Applications Program. Preserved as it appears.
+- id: nq7
+  added_date: '2026-05-17'
+  observed: ossap
+  canonical: AAWSAP
+  location: '[5:08], [5:34], [15:56], [16:35]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "AAWSAP" as "ossap" in multiple Kelleher turns. Preserved as it appears.
+- id: nq8
+  added_date: '2026-05-17'
+  observed: asap
+  canonical: AAWSAP
+  location: '[2:26], [2:43], [4:14], [4:31]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption variant of "AAWSAP" as "asap" in multiple Lacatski + Kelleher turns. Preserved as it appears.
+- id: nq9
+  added_date: '2026-05-17'
+  observed: osap
+  canonical: AAWSAP
+  location: '[2:34]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption variant of "AAWSAP" as "osap" in the AAWSAP/AATIP distinction turn. Preserved as it appears.
+- id: nq10
+  added_date: '2026-05-17'
+  observed: atip
+  canonical: AATIP
+  location: '[2:24], [2:39], [3:02]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "AATIP" as "atip" (single A). AATIP = Advanced Aerospace Threat Identification Program. Preserved as it appears.
+- id: nq11
+  added_date: '2026-05-17'
+  observed: atep
+  canonical: AATIP
+  location: '[2:14], [2:36]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption alternate rendering of "AATIP" as "atep" in Knapp's clarification question and Lacatski's response. Preserved as it appears.
+- id: nq12
+  added_date: '2026-05-17'
+  observed: bass
+  canonical: BAASS
+  location: '[4:11]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "BAASS" as "bass" in Knapp's turn-of-speaker question to Kelleher. BAASS = Bigelow Aerospace Advanced Space Studies. Preserved as it appears.
+- id: nq13
+  added_date: '2026-05-17'
+  observed: aflacy
+  canonical: AFOSI
+  location: '[6:19]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption mid-passage variant — the canonical form "afosi" appears earlier in the same Kelleher turn ([6:04]), then the variant "aflacy" appears at [6:19]. AFOSI = Air Force Office of Special Investigations. Preserved as it appears.
+- id: nq14
+  added_date: '2026-05-17'
+  observed: tick
+  canonical: Tic Tac
+  location: '[16:25]'
+  source_path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "Tic Tac" as "tick" in Kelleher's closing comment about the book covering "the genesis of tick investigation." Preserved as it appears.

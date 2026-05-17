@@ -13298,3 +13298,80 @@
   message: |
     Table cell in 'Timeline' exceeds word budget (56>55): PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassi...
 
+- ts: 2026-05-17T16:46:13Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/mysterywire-lacatski-kelleher-knapp-2021.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 81 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 22m, 421, aatip, aawsap, aawsap-vs-aatip, addresses, … (+73 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 22m, 421, aatip, aawsap, aawsap-vs-aatip, addresses, alleged, auto-caption, baass, body, book-launch, caption, clear, closed-program, closes, colm, content, cycle, describes, diagnosis, discipline, disclosure-era, distinction, driver, earliest, examples, explains, head-on, headline, immune-system, including, interview, james, klas-tv, knapp, knew, lacatski, lines, manifest, medical-injury, minutes, mystery, news, node, non-obvious, notes, october, on-record, per, points, posture, pre-publication, preserved, press, primary-source, produced, promotional, provenance, published, reading, rendered, responds, rfp, runtime, see, skinwalkers, source-form, sources, staff, subsequent, tac, tic, toward, typos, underlying, walks, wire, yaml, zero-funded]
+
+- ts: 2026-05-17T16:46:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/mysterywire-lacatski-kelleher-knapp-2021.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 81 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 22m, 421, aatip, aawsap, aawsap-vs-aatip, addresses, … (+73 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 22m, 421, aatip, aawsap, aawsap-vs-aatip, addresses, alleged, auto-caption, baass, body, book-launch, caption, clear, closed-program, closes, colm, content, cycle, describes, diagnosis, discipline, disclosure-era, distinction, driver, earliest, examples, explains, head-on, headline, immune-system, including, interview, james, klas-tv, knapp, knew, lacatski, lines, manifest, medical-injury, minutes, mystery, news, node, non-obvious, notes, october, on-record, per, points, posture, pre-publication, preserved, press, primary-source, produced, promotional, provenance, published, reading, rendered, responds, rfp, runtime, see, skinwalkers, source-form, sources, staff, subsequent, tac, tic, toward, typos, underlying, walks, wire, yaml, zero-funded]
+
+- ts: 2026-05-17T16:48:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/mysterywire-lacatski-kelleher-knapp-2021.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 62 significant token(s) not in source (prose-drift check — contributor review): 17-minute, 2021, 421, aatip, aawsap, addresses, auto-caption, baass, … (+54 more — pass --verbose for full list)
+  tokens: [17-minute, 2021, 421, aatip, aawsap, addresses, auto-caption, baass, body, book-launch, caption, closes, colm, content, cycle, describes, diagnosis, discipline, distinction, division, ending, examples, executing, explains, handling, hosted, interview, klas-tv, knapp, knew, lacatski, lines, manifest, mystery, news, node, notes, october, pandemic-era, per, points, preserved, press, press-cycle, processing, promotional, provenance, published, rendered, responds, see, source-form, sources, tac, tic, toward, two-author, typos, underlying, walks, wire, yaml]
+
+- ts: 2026-05-17T16:50:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/mysterywire-lacatski-kelleher-knapp-2021.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 54 significant token(s) not in source (prose-drift check — contributor review): 2021, addresses, auto-caption, body, book-launch, closes, credits, cycle, … (+46 more — pass --verbose for full list)
+  tokens: [2021, addresses, auto-caption, body, book-launch, closes, credits, cycle, describes, diagnosis, discipline, distinction, earliest, ending, examples, executing, explains, foot, frames, handling, himself, hosted, interview, manifest, masters, near, node, notes, october, on-record, pandemic-era, per, posture, preserved, primary-source, processing, promotional, provenance, public-record, published, questions, rendered, repository, responds, section, see, source-form, sources, staff, underlying, variants, walks, yaml, yielded]
+
+- ts: 2026-05-17T16:50:52Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/mysterywire-lacatski-kelleher-knapp-2021.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 23 significant token(s) not in source (prose-drift check — contributor review): auto-caption, closes, credits, cycle, describes, discipline, distinguishes, executing, … (+15 more — pass --verbose for full list)
+  tokens: [auto-caption, closes, credits, cycle, describes, discipline, distinguishes, executing, frames, handling, himself, interview, masters, per, preserved, processing, promotional, see, source-form, staff, underlying, variants, walks]
+
+- ts: 2026-05-17T16:51:41Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/mysterywire-lacatski-kelleher-knapp-2021.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 5 significant token(s) not in source (prose-drift check — contributor review): attests, discusses, handled, processing, underlying
+  tokens: [attests, discusses, handled, processing, underlying]
+
+- ts: 2026-05-17T16:52:18Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/mysterywire-lacatski-kelleher-knapp-2021.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): attests
+  tokens: [attests]
+
