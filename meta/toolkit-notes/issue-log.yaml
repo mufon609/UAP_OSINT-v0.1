@@ -13375,3 +13375,192 @@
     description: 1 significant token(s) not in source (prose-drift check — contributor review): attests
   tokens: [attests]
 
+- ts: 2026-05-17T17:07:15Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 22: value contains `latsky: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: '"you see im not speaking at all im not going beyond what it '
+
+- ts: 2026-05-17T17:07:15Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 43: value contains `Program: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: 'Initial Revelations" (Lacatski / Kelleher / Knapp, 2023)'
+
+- ts: 2026-05-17T17:07:15Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 164: value contains `frame: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: '"we can\'t say anything more than what we\'ve been approved to'
+
+- ts: 2026-05-17T17:07:15Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 194: value contains `pattern: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: 'a "no" would itself be a security-controlled answer rather t'
+
+- ts: 2026-05-17T17:07:15Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "<unicode string>", line 43, column 80:
+         ... US Government Covert UFO Program: Initial Revelations" (Lacatski ... 
+                                             ^
+
+- ts: 2026-05-17T17:07:55Z
+  source: validator
+  check: yaml_colon_space
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 22: value contains `latsky: ` (word followed by colon + space) inside an unquoted scalar — YAML's block-mapping parser may treat the inner `: ` as a key/value separator, either causing a parse error or silently truncating the scalar. Fix: quote the entire value (single or double quotes), OR replace the inner colon with an em-dash `—` / semicolon `;` if typographically appropriate. Post-colon content: '"you see im not speaking at all im not going beyond what it '
+
+- ts: 2026-05-17T17:07:55Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 51 significant token(s) not in source (prose-drift check — contributor review): 2023, 2025, 2026, 2365, advocacy, advocates, asserts, auto-caption, … (+43 more — pass --verbose for full list)
+  tokens: [2023, 2025, 2026, 2365, advocacy, advocates, asserts, auto-caption, bigelows, broadcast, cant, caption, centerpiece, claims, confirms, cycle, declines, dias, dollar, dollars, foundational, grushs, hes, hosted, instead, latskys, manifest, non-answers, october, on-record, passage, predates, promotional, provenance, related, repeats, return, secretive, security-bound, seq, somethings, sources, stating, theres, theyre, theyve, throughout, two-part, visions, weve, yaml]
+
+- ts: 2026-05-17T17:08:06Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 52 significant token(s) not in source (prose-drift check — contributor review): 2023, 2025, 2026, 2365, advocacy, advocates, asserts, auto-caption, … (+44 more — pass --verbose for full list)
+  tokens: [2023, 2025, 2026, 2365, advocacy, advocates, asserts, auto-caption, bigelows, broadcast, cant, caption, centerpiece, claims, confirms, cycle, declines, dias, dollar, dollars, foundational, grushs, hes, hosted, instead, latskys, manifest, non-answers, october, on-record, passage, predates, promotional, provenance, related, repeats, responds, return, secretive, security-bound, seq, somethings, sources, stating, theres, theyre, theyve, throughout, two-part, visions, weve, yaml]
+
+- ts: 2026-05-17T17:09:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 24 significant token(s) not in source (prose-drift check — contributor review): auto-caption, cant, dias, dollar, hes, hosted, instead, manifest, … (+16 more — pass --verbose for full list)
+  tokens: [auto-caption, cant, dias, dollar, hes, hosted, instead, manifest, non-answers, passage, promotional, provenance, related, secretive, seq, somethings, sources, stating, theres, theyre, theyve, throughout, weve, yaml]
+
+- ts: 2026-05-17T17:10:38Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 3 significant token(s) not in source (prose-drift check — contributor review): dollars, non-answers, related
+  tokens: [dollars, non-answers, related]
+
+- ts: 2026-05-17T17:11:00Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 2 significant token(s) not in source (prose-drift check — contributor review): non-answer, pattern
+  tokens: [non-answer, pattern]
+
+- ts: 2026-05-17T17:11:07Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-038-lacatski-kelleher-2023.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): throughout
+  tokens: [throughout]
+
+- ts: 2026-05-17T17:11:22Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-038-lacatski-kelleher-2023.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 142 NOT FOUND in sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md: "[16:52] it's it it makes it described in here here look primitive why why is it ..."
+
+- ts: 2026-05-17T17:11:22Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-038-lacatski-kelleher-2023.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 190 NOT FOUND in sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md: "[49:22] emphasize something I said on my first and only interview it was a close..."
+
+- ts: 2026-05-17T17:11:32Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-038-lacatski-kelleher-2023.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 142 NOT FOUND in sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md: "[16:52] it's it it makes it described in here here look primitive why why is it ..."
+
+- ts: 2026-05-17T17:11:32Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-038-lacatski-kelleher-2023.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 190 NOT FOUND in sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md: "[49:22] emphasize something I said on my first and only interview it was a close..."
+
+- ts: 2026-05-17T17:11:46Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-038-lacatski-kelleher-2023.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 142 NOT FOUND in sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md: "[16:52] it's it it makes it described in here here look primitive why why is it ..."
+
+- ts: 2026-05-17T17:11:46Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-038-lacatski-kelleher-2023.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 190 NOT FOUND in sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md: "[49:22] emphasize something I said on my first and only interview it was a close..."
+
