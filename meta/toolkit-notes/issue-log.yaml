@@ -13564,3 +13564,529 @@
   message: |
     Quote at line 190 NOT FOUND in sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md: "[49:22] emphasize something I said on my first and only interview it was a close..."
 
+- ts: 2026-05-17T17:22:01Z
+  source: validator
+  check: yaml_hash_truncation
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 108: value contains ` #` followed by substantive content — YAML will silently treat everything after `#` as a comment and truncate the scalar. If the `#` is intentional content (e.g., "Issue #3", "channel #23"), quote the entire value (single or double quotes) or use a YAML literal block (`|`). Post-`#` content that will be truncated: '5 on Advanced Space Propulsion Based on Vacuum (Spacetime Metric) Engineering — '
+
+- ts: 2026-05-17T17:22:01Z
+  source: validator
+  check: yaml_hash_truncation
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    line 549: value contains ` #` followed by substantive content — YAML will silently treat everything after `#` as a comment and truncate the scalar. If the `#` is intentional content (e.g., "Issue #3", "channel #23"), quote the entire value (single or double quotes) or use a YAML literal block (`|`). Post-`#` content that will be truncated: '5 by H.E. Puthoff; names Lacatski as "AAWSA Program Manager, Defense Intelligenc'
+
+- ts: 2026-05-17T17:22:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 11 significant token(s) not in source (prose-drift check — contributor review): artifact, attribution, carries, cites, creator, dird, joining, knapp, … (+3 more — pass --verbose for full list)
+  tokens: [artifact, attribution, carries, cites, creator, dird, joining, knapp, retirement, self-attests, self-identifies]
+
+- ts: 2026-05-17T17:22:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 29 significant token(s) not in source (prose-drift check — contributor review): 2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, … (+21 more — pass --verbose for full list)
+  tokens: [2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, co-authored, colm, creation, declines, dird, disclosure-era, dopsr-cleared, finding, foundational, knapp, naming, no-cost, october, on-record, page-1, proposer, sd004, spoken, stating, sworn, wire]
+
+- ts: 2026-05-17T17:22:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 67 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, … (+59 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, attribution, authorship, auto-caption, belong, book-confirmed, book-published, carries, chain, characterization, co-authored, confidence, confirming, corroborates, dird, discipline, evidentiary, explicitly, extend, extended-disclosure, finding, first-person, framing, himself, hosts, institutional, institutional-access, knapp, load-bearing, naming, node, nodes, on-record, page-1, passage, podcast, pre-publication, preserves, primary-source, program-director, quirks, quotes, re-read, refuses, rests, revenue, royalty, sd004, self-attestation, source-verbatim, spans, speakers, spoken, spoken-interview, status, sworn, testimony, transcripts, typos, wire]
+
+- ts: 2026-05-17T17:22:32Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 11 significant token(s) not in source (prose-drift check — contributor review): artifact, attribution, carries, cites, creator, dird, joining, knapp, … (+3 more — pass --verbose for full list)
+  tokens: [artifact, attribution, carries, cites, creator, dird, joining, knapp, retirement, self-attests, self-identifies]
+
+- ts: 2026-05-17T17:22:32Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 29 significant token(s) not in source (prose-drift check — contributor review): 2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, … (+21 more — pass --verbose for full list)
+  tokens: [2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, co-authored, colm, creation, declines, dird, disclosure-era, dopsr-cleared, finding, foundational, knapp, naming, no-cost, october, on-record, page-1, proposer, sd004, spoken, stating, sworn, wire]
+
+- ts: 2026-05-17T17:22:32Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 67 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, … (+59 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, attribution, authorship, auto-caption, belong, book-confirmed, book-published, carries, chain, characterization, co-authored, confidence, confirming, corroborates, dird, discipline, evidentiary, explicitly, extend, extended-disclosure, finding, first-person, framing, himself, hosts, institutional, institutional-access, knapp, load-bearing, naming, node, nodes, on-record, page-1, passage, podcast, pre-publication, preserves, primary-source, program-director, quirks, quotes, re-read, refuses, rests, revenue, royalty, sd004, self-attestation, source-verbatim, spans, speakers, spoken, spoken-interview, status, sworn, testimony, transcripts, typos, wire]
+
+- ts: 2026-05-17T17:24:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 1 significant token(s) not in source (prose-drift check — contributor review): dird
+  tokens: [dird]
+
+- ts: 2026-05-17T17:24:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 29 significant token(s) not in source (prose-drift check — contributor review): 2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, … (+21 more — pass --verbose for full list)
+  tokens: [2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, co-authored, colm, creation, declines, dird, disclosure-era, dopsr-cleared, finding, foundational, knapp, naming, no-cost, october, on-record, page-1, proposer, sd004, spoken, stating, sworn, wire]
+
+- ts: 2026-05-17T17:24:48Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 67 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, … (+59 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, attribution, authorship, auto-caption, belong, book-confirmed, book-published, carries, chain, characterization, co-authored, confidence, confirming, corroborates, dird, discipline, evidentiary, explicitly, extend, extended-disclosure, finding, first-person, framing, himself, hosts, institutional, institutional-access, knapp, load-bearing, naming, node, nodes, on-record, page-1, passage, podcast, pre-publication, preserves, primary-source, program-director, quirks, quotes, re-read, refuses, rests, revenue, royalty, sd004, self-attestation, source-verbatim, spans, speakers, spoken, spoken-interview, status, sworn, testimony, transcripts, typos, wire]
+
+- ts: 2026-05-17T17:25:00Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 29 significant token(s) not in source (prose-drift check — contributor review): 2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, … (+21 more — pass --verbose for full list)
+  tokens: [2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, co-authored, colm, creation, declines, dird, disclosure-era, dopsr-cleared, finding, foundational, knapp, naming, no-cost, october, on-record, page-1, proposer, sd004, spoken, stating, sworn, wire]
+
+- ts: 2026-05-17T17:25:00Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 67 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, … (+59 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, attribution, authorship, auto-caption, belong, book-confirmed, book-published, carries, chain, characterization, co-authored, confidence, confirming, corroborates, dird, discipline, evidentiary, explicitly, extend, extended-disclosure, finding, first-person, framing, himself, hosts, institutional, institutional-access, knapp, load-bearing, naming, node, nodes, on-record, page-1, passage, podcast, pre-publication, preserves, primary-source, program-director, quirks, quotes, re-read, refuses, rests, revenue, royalty, sd004, self-attestation, source-verbatim, spans, speakers, spoken, spoken-interview, status, sworn, testimony, transcripts, typos, wire]
+
+- ts: 2026-05-17T17:25:05Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 29 significant token(s) not in source (prose-drift check — contributor review): 2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, … (+21 more — pass --verbose for full list)
+  tokens: [2008-fy, 2021, aawsap-vs-aatip, affirmation, attests, authorship, book-launch, carries, co-authored, colm, creation, declines, dird, disclosure-era, dopsr-cleared, finding, foundational, knapp, naming, no-cost, october, on-record, page-1, proposer, sd004, spoken, stating, sworn, wire]
+
+- ts: 2026-05-17T17:25:05Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 67 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, … (+59 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, attribution, authorship, auto-caption, belong, book-confirmed, book-published, carries, chain, characterization, co-authored, confidence, confirming, corroborates, dird, discipline, evidentiary, explicitly, extend, extended-disclosure, finding, first-person, framing, himself, hosts, institutional, institutional-access, knapp, load-bearing, naming, node, nodes, on-record, page-1, passage, podcast, pre-publication, preserves, primary-source, program-director, quirks, quotes, re-read, refuses, rests, revenue, royalty, sd004, self-attestation, source-verbatim, spans, speakers, spoken, spoken-interview, status, sworn, testimony, transcripts, typos, wire]
+
+- ts: 2026-05-17T17:25:47Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, authorship, finding, launch, naming, sd004, wire
+  tokens: [2021, authorship, finding, launch, naming, sd004, wire]
+
+- ts: 2026-05-17T17:25:47Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 67 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, … (+59 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, attribution, authorship, auto-caption, belong, book-confirmed, book-published, carries, chain, characterization, co-authored, confidence, confirming, corroborates, dird, discipline, evidentiary, explicitly, extend, extended-disclosure, finding, first-person, framing, himself, hosts, institutional, institutional-access, knapp, load-bearing, naming, node, nodes, on-record, page-1, passage, podcast, pre-publication, preserves, primary-source, program-director, quirks, quotes, re-read, refuses, rests, revenue, royalty, sd004, self-attestation, source-verbatim, spans, speakers, spoken, spoken-interview, status, sworn, testimony, transcripts, typos, wire]
+
+- ts: 2026-05-17T17:26:12Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 2 significant token(s) not in source (prose-drift check — contributor review): 004, supplemental
+  tokens: [004, supplemental]
+
+- ts: 2026-05-17T17:26:12Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 67 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, … (+59 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, attribution, authorship, auto-caption, belong, book-confirmed, book-published, carries, chain, characterization, co-authored, confidence, confirming, corroborates, dird, discipline, evidentiary, explicitly, extend, extended-disclosure, finding, first-person, framing, himself, hosts, institutional, institutional-access, knapp, load-bearing, naming, node, nodes, on-record, page-1, passage, podcast, pre-publication, preserves, primary-source, program-director, quirks, quotes, re-read, refuses, rests, revenue, royalty, sd004, self-attestation, source-verbatim, spans, speakers, spoken, spoken-interview, status, sworn, testimony, transcripts, typos, wire]
+
+- ts: 2026-05-17T17:26:19Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 67 significant token(s) not in source (prose-drift check — contributor review): 14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, … (+59 more — pass --verbose for full list)
+  tokens: [14-month, 2021, 2024-11-13, affirmation, affirming, archived, attested, attests, attribution, authorship, auto-caption, belong, book-confirmed, book-published, carries, chain, characterization, co-authored, confidence, confirming, corroborates, dird, discipline, evidentiary, explicitly, extend, extended-disclosure, finding, first-person, framing, himself, hosts, institutional, institutional-access, knapp, load-bearing, naming, node, nodes, on-record, page-1, passage, podcast, pre-publication, preserves, primary-source, program-director, quirks, quotes, re-read, refuses, rests, revenue, royalty, sd004, self-attestation, source-verbatim, spans, speakers, spoken, spoken-interview, status, sworn, testimony, transcripts, typos, wire]
+
+- ts: 2026-05-17T17:27:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 8 significant token(s) not in source (prose-drift check — contributor review): 2021, archived, on-record, passage, podcast, revenue, royalty, testimony
+  tokens: [2021, archived, on-record, passage, podcast, revenue, royalty, testimony]
+
+- ts: 2026-05-17T17:27:19Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 4 significant token(s) not in source (prose-drift check — contributor review): cited, proceeds, revenue, sworn
+  tokens: [cited, proceeds, revenue, sworn]
+
+- ts: 2026-05-17T17:27:53Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): testified
+  tokens: [testified]
+
+- ts: 2026-05-17T17:28:01Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): spoken
+  tokens: [spoken]
+
+- ts: 2026-05-17T17:28:15Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-lacatski.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (79>55): 2011 Capitol building meeting — Lacatski (the only one of th...
+
+- ts: 2026-05-17T17:28:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('James Ryder') wrap_path '/people/james-ryder' does not appear as a [`/people/james-ryder`] link in the node
+
+- ts: 2026-05-17T17:28:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e11' ('AATIP — Advanced Aerospace Threat Identification Program') wrap_path '/organizations/aatip' does not appear as a [`/organizations/aatip`] link in the node
+
+- ts: 2026-05-17T17:28:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e12' ('BAASS — Bigelow Aerospace Advanced Space Studies') wrap_path '/organizations/baass' does not appear as a [`/organizations/baass`] link in the node
+
+- ts: 2026-05-17T17:28:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('Bigelow Aerospace') wrap_path '/organizations/bigelow-aerospace' does not appear as a [`/organizations/bigelow-aerospace`] link in the node
+
+- ts: 2026-05-17T17:28:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e15' ('Department of Defense (DoD)') wrap_path '/organizations/dod' does not appear as a [`/organizations/dod`] link in the node
+
+- ts: 2026-05-17T17:28:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e16' ('Lockheed Martin') wrap_path '/organizations/lockheed-martin' does not appear as a [`/organizations/lockheed-martin`] link in the node
+
+- ts: 2026-05-17T17:28:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e17' ('WEAPONIZED Podcast') wrap_path '/organizations/weaponized-podcast' does not appear as a [`/organizations/weaponized-podcast`] link in the node
+
+- ts: 2026-05-17T17:28:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e18' ('KLAS-TV / 8 News Now / Mystery Wire') wrap_path '/organizations/klas-tv' does not appear as a [`/organizations/klas-tv`] link in the node
+
+- ts: 2026-05-17T17:28:16Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e22' ('Inside the US Government Covert UFO Program: Initial Revelations (2023)') wrap_path '/documents/inside-us-gov-covert-ufo-2023' does not appear as a [`/documents/inside-us-gov-covert-ufo-2023`] link in the node
+
+- ts: 2026-05-17T17:28:25Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-lacatski.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (79>55): 2011 Capitol building meeting — Lacatski (the only one of th...
+
+- ts: 2026-05-17T17:28:36Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('James Ryder') wrap_path '/people/james-ryder' does not appear as a [`/people/james-ryder`] link in the node
+
+- ts: 2026-05-17T17:28:36Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e11' ('AATIP — Advanced Aerospace Threat Identification Program') wrap_path '/organizations/aatip' does not appear as a [`/organizations/aatip`] link in the node
+
+- ts: 2026-05-17T17:28:36Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e12' ('BAASS — Bigelow Aerospace Advanced Space Studies') wrap_path '/organizations/baass' does not appear as a [`/organizations/baass`] link in the node
+
+- ts: 2026-05-17T17:28:36Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e13' ('Bigelow Aerospace') wrap_path '/organizations/bigelow-aerospace' does not appear as a [`/organizations/bigelow-aerospace`] link in the node
+
+- ts: 2026-05-17T17:28:36Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e15' ('Department of Defense (DoD)') wrap_path '/organizations/dod' does not appear as a [`/organizations/dod`] link in the node
+
+- ts: 2026-05-17T17:28:36Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e16' ('Lockheed Martin') wrap_path '/organizations/lockheed-martin' does not appear as a [`/organizations/lockheed-martin`] link in the node
+
+- ts: 2026-05-17T17:28:36Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e17' ('WEAPONIZED Podcast') wrap_path '/organizations/weaponized-podcast' does not appear as a [`/organizations/weaponized-podcast`] link in the node
+
+- ts: 2026-05-17T17:28:36Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e18' ('KLAS-TV / 8 News Now / Mystery Wire') wrap_path '/organizations/klas-tv' does not appear as a [`/organizations/klas-tv`] link in the node
+
+- ts: 2026-05-17T17:28:36Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e22' ('Inside the US Government Covert UFO Program: Initial Revelations (2023)') wrap_path '/documents/inside-us-gov-covert-ufo-2023' does not appear as a [`/documents/inside-us-gov-covert-ufo-2023`] link in the node
+
+- ts: 2026-05-17T17:29:43Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, distinguished, launch, proposer, sd004, venue, wire
+  tokens: [2021, distinguished, launch, proposer, sd004, venue, wire]
+
+- ts: 2026-05-17T17:29:45Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-lacatski.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (79>55): 2011 Capitol building meeting — Lacatski (the only one of th...
+
+- ts: 2026-05-17T17:29:51Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, distinguished, launch, proposer, sd004, venue, wire
+  tokens: [2021, distinguished, launch, proposer, sd004, venue, wire]
+
+- ts: 2026-05-17T17:29:53Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/james-lacatski.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (79>55): 2011 Capitol building meeting — Lacatski (the only one of th...
+
+- ts: 2026-05-17T17:30:03Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, distinguished, launch, proposer, sd004, venue, wire
+  tokens: [2021, distinguished, launch, proposer, sd004, venue, wire]
+
+- ts: 2026-05-17T17:31:53Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, distinguished, launch, proposer, sd004, venue, wire
+  tokens: [2021, distinguished, launch, proposer, sd004, venue, wire]
+
