@@ -1,0 +1,371 @@
+Approved For Release 2000/08/10 : CIA-RDP96-00787R000100180001-3
+
+
+[Page 1 — cover]
+
+STANFORD RESEARCH INSTITUTE
+MENLO PARK, CALIFORNIA
+
+22 February 1973
+
+ORD # 1416-73
+
+TECHNICAL MEMORANDUM
+
+A Progress Report on Contract Number 1471(S)73
+
+Prepared by:
+
+Dr. H.E. Puthoff
+Mr. Russell Targ
+Senior Research Physicist
+Electronics and Bioengineering Laboratory
+
+
+[Page 2]
+
+I    FIELD MEASUREMENTS PROGRAM, TASKS 1, 2, AND 3
+
+    A.    Introduction
+
+        Following is a summary of work carried out under Field
+Measurements Contract No. 1471(S)73, Tasks 1, 2, and 3. Tasks 1 and
+2 cover a two-week field measurement program (14-28 August 1972) with
+consultant Ingo Swann; Task 3 covers a nine-day field measurement
+program within the time period 1 December 1972 to 15 January 1973
+with consultant Uri Geller.
+
+    B.    Background
+
+        A program in biofield measurements was initiated in July 1972
+with a preliminary experiment with Mr. Swann. In this work using
+a shielded magnetometer, Mr. Swann apparently demonstrated an ability
+to increase and decrease at will the magnetic field within a super-
+conducting magnetic shield. This experiment made use of an existing
+facility and we have confidence that Mr. Swann had no prior knowledge
+of either the apparatus or of our intended experiment. The experimental
+results were carefully scrutinized and were unlike any data previously
+produced with this apparatus. That observation is summarized in
+Proposal for Research SRI No. ISU 72-134 (Biofield Measurements Program)
+in your possession. Based on that observation, Tasks 1 and 2 were
+initiated to carry out further experimentation with Mr. Swann in the
+field measurements area, and, later, Task 3 was added to carry out
+similar experimentation with Mr. Geller.
+
+
+[Page 3]
+
+    C.    Protocol
+
+        A rigid protocol for experimentation in the area of psycho-
+energetic research has been instituted in order to carry out the
+assigned tasks.
+
+    1.    Because of the history of charlatanism in this area, one
+of our basic operating assumptions has to be that we cannot exclude
+the possibility that a subject will hoax if given an opportunity. To
+handle this, we consider it important to design experiments  a) which
+are totally under the design and control of the experimenter rather
+than the subject, and  b) which are considered in their basic design
+to be cheatproof. Specifically, if in the performance of an experiment
+or in the evaluation afterwards it is found that the results could
+in principle be duplicated by cheating or stage magic, then that
+experiment is to be considered void, even when there is no evidence
+of cheating.
+
+    2.    Given the nature of the phenomena, any prejudgment or bias
+on the part of the experimenter, whether "pro" or "con", is more likely
+to affect the experimentation, results, and their evaluation in this
+area than in any other area of behavioral research. Therefore, we
+consider it important to design experiments which  a) can be carried
+out using double blind procedures and  b) can be evaluated by objective
+measures independent of experimenter belief structures.
+
+
+[Page 4]
+
+II   TASKS 1 AND 2; EXPERIMENTATION WITH INGO SWANN
+
+    The magnetometer observation of July 1972 indicated at least two
+forms of biofield functioning: 1) the passive perception of information
+through some as yet unidentified communication channel, and 2) the
+active perturbation of the functioning of a laboratory device. The
+initial experiments were designed to test each of these functions
+separately.
+
+    A.    Probability 1/3 Target Location
+
+        The first experiment to be carried out under Tasks 1 and 2
+had as its goal the testing of the hypothesis that information can be
+obtained from locations inaccessible to ordinary viewing.
+    In order to place the experiment on a quantitative basis,
+a procedure was followed in which a target object was placed in one of
+three identical containers, the task of Swann being to enter the
+experimental area after placement and indicate the target container.
+[...experimental details and results, 50 trials yielding 26 hits at p=0.005...]
+
+
+[Page 5]
+
+[...continuation of Section A results with statistical analysis...]
+
+    B.    Remote Temperature Control Experiment
+
+        A second experiment was initiated to examine the active
+perturbation of the functioning of a laboratory device. The target
+chosen was a copper-constantin 30 μV/°F thermocouple sealed in a
+50 milliliter flask of helium gas at atmospheric pressure.
+[...experimental setup with Mr. Swann's task to control temperature
+at the thermocouple junction, Hewlett-Packard Model 425A DC microvoltmeter
+and strip chart recorder...]
+
+
+[Page 6]
+
+    [...continuation of Section B results. The data, shown in Figure 3,
+were obtained in the following procedure. After a 20-minute control
+period in which the temperature was stabilized, a predetermined random
+series of ten "heat" and "rest" commands were read out by the
+experimenter at 3-minute intervals. The recorded data indicates that
+nine of the ten commands resulted in changes in agreement with the
+commands. Control runs with other laboratory personnel under identical
+conditions yielded null results. Therefore it can be concluded that
+the control of temperature variations in a remote object is indicated.]
+
+
+[Page 7]
+
+    C.    4-State Random Generator Experiment
+
+        A third experiment with Mr. Swann involved the use of an
+electronic random number generator which randomly chooses one of
+four possible targets (p = 1/4) without indicating its choice until
+Mr. Swann had indicated to the machine his choice by pressing a
+button.
+[...experimental design details, the apparatus, the PASS button,
+double-blind nature of the experiment...]
+
+
+[Page 8]
+
+    [...continuation of Section C results: 7 runs of 20+ trials each,
+total scoring at p=0.35 level (not significantly different from chance
+overall), but learning trend across runs at 0.7/run learning rate.]
+
+
+[Page 9]
+
+    D.    Additional Areas Indicating Further Investigation
+
+        Of further significance, but difficult to evaluate quantitatively
+at this point, was a number of subjective observations reported by Mr.
+Swann during the course of experimentation. Mr. Swann is extremely
+articulate about subjective impressions, visualizations, etc., which
+leads to the possibility of building up a coherent picture over a long
+period of experimentation which can then be tested objectively.
+
+
+[Page 10]
+
+[Section D continues with examples — helium gas as yellow, scanning beams,
+quartz prism rainbow, etc.]
+
+
+[Page 11]
+
+III  TASK 3; EXPERIMENTATION WITH URI GELLER
+
+    The experiments conducted with Geller in November-December, 1972,
+fell into two broad categories:
+    1.    Perception experiments in which he was asked to identify and
+draw the contents of opaque sealed envelopes, to identify a die face
+concealed in a metal box, and to find objects hidden in one of ten
+identical film cans.
+    2.    Experiments involving physical effects in which he was asked
+to interact with laboratory equipment by perturbing the experimental
+apparatus without physical contact.
+    All experiments were monitored by simultaneous filming, video-
+taping, sound recording, and, where appropriate, laboratory instrumenta-
+tion. The experiments performed with Mr. Geller are summarized below
+in writing and a film covering the experimentation is in progress.
+
+    A.    Probability 1/6 Double-Blind Dice Box Experiment
+
+        A double-blind experiment was performed in which a single
+die was placed in a closed metal box. The box was vigorously shaken
+by one of the experimenters and placed on a table. The orientation
+of the die inside the box was unknown to the experimenters at that
+time. Mr. Geller would then look at the box without touching it and
+call out which die face he believed was uppermost. He gave the correct
+answer each of 8 times the experiment was performed. The probability
+that this could have occurred by chance alone is approximately one
+in a million. The experiment was actually performed ten times, but on
+two occasions the subject said his perception was not clear and he
+was allowed to pass.
+
+
+[Page 12]
+
+    B.    Probability 1/10 Hidden Object Experiment
+
+        For this experiment ten identical aluminum film cans with
+stainless steel tops were placed in a row. An outside assistant not
+associated with the research would place the cans in a random position
+and put the target object into one of them. He would then put caps on
+all the cans and leave the experimental area, notifying the experimenters
+that the experiment was ready. The experimenters, who were not aware
+which can contained the object, would then enter the room with Geller
+(i.e., the experiment was carried out in a double-blind fashion).
+[...protocol details: subject would pass his hand over the row of cans
+or simply look at them, call out which were empty, then announce
+target...He had no difficulty identifying the location of water, steel
+ball bearings and small magnets. This task was performed twelve times,
+without error. The probability that this could have occurred by chance
+alone is about one in a trillion. On two occasions he declined to
+answer. One target that "stumped" him was a paper-wrapped metal ball
+bearing. The other was a sugar cube.]
+
+    C.    Picture Drawing Experiment
+
+        In this experiment simple pictures were drawn on 3x5 file
+cards. The field of possibilities of target materials was at no
+time revealed to Mr. Geller. The pictures were put into double-sealed
+envelopes by an outside assistant not associated with the experiment
+
+
+[Page 13]
+
+and placed in a safe for which the experimenters did not have the
+combination. To conduct the experiment, the experimenters, two of
+which had to be present, were permitted to select an envelope at
+random from the safe, open it to identify the picture, seal it again
+and enter the experimental room. Geller made seven almost exact
+reproductions of the seven chosen target pictures, with no errors
+(see Fig. 5). Video and audio monitoring did not reveal any cueing
+possibilities. Figure 6 shows the results obtained when a drawing
+was brought in as a test by an outside consultant to a potential
+sponsor. The inspiration of the drawing was a magazine cartoon
+shown in the upper right. The drawing itself is shown in the upper
+left, and Geller's version is shown in the lower right. A double
+blind version of the drawing experiment is shown in Fig. 7 where
+an envelope chosen at random and unknown both to experimenter and
+Geller resulted in the reproduction shown.
+
+    Two experiments to measure physical perturbation of
+laboratory apparatus were also carried out. One of these involved
+apparently exerting a force on a laboratory balance, and the other
+was the generation of an apparent magnetic field recorded by a
+magnetometer. Both of these experiments were performed several
+times with results improving with repetition, showing apparent
+evidence of learning taking place.
+
+
+[Page 14]
+
+    D.    Laboratory Balance
+
+        A precision laboratory balance measuring weights from one
+milligram to fifty grams was placed under a bell jar. This balance,
+made by Scientech Corp., Boulder, Colorado, generated an electrical
+output voltage in proportion to the force applied to it.
+[...experimental setup details. On several occasions the subject
+caused the balance to respond as though a force were applied to the
+pan. These displacements increased from 50 - 1500 milligrams and were
+significantly different in signature from those that could be produced
+by striking the bell jar or the table or jumping on the floor. Efforts
+on our part to debunk the experiment by the use of magnets or discharge
+of static electricity against parts of the apparatus were unsuccessful.
+Day-long control runs with no effort on Geller's part failed to reveal
+noise or artifacts resembling the signals produced by Geller's efforts.
+Therefore, the experiment indicated an apparent ability of Geller to
+affect the apparatus by an as yet unidentified means.]
+
+
+[Page 15]
+
+    E.    Magnetometer Experiment
+
+        A Bell gaussmeter was used to determine if Mr. Geller could
+perturb an instrument sensitive to magnetic fields. The instrument
+was set to a full scale sensitivity of 0.3 gauss. The subject would
+move his empty hands near the instrument in an effort to cause a
+deflection of the chart recorder monitoring the magnetometer output.
+In carefully filmed experiments, Geller was able to perturb the
+magnetometer causing full scale deflection without touching the
+measuring head of the instrument. Geller was examined before, during,
+and after experimentation with the same magnetometer probe to insure
+against the presence of artifact-producing materials.
+
+    F.    Further Observations
+
+        A number of other observations were made which for one
+reason or another did not meet our rigorous protocol prerequisites
+for a controlled experiment and therefore are not to be included
+in the category of experiments A through E which we consider well
+controlled.
+        Perhaps the most notable of these were a class of observations
+associated with one of Geller's alleged attributes that had been
+reported to us, which was that he was able to bend or break metal
+from a distance without touching it. In the laboratory we did not
+find him able to do so. It was always necessary for him in the
+experimental situation to have physical contact with any metal he
+bent. In a more relaxed protocol where he was permitted to touch
+the metal, metals were bent. This included SRI-manufactured and
+
+
+[Page 16]
+
+serialized rings of brass and copper which were measured to require 150
+lbs. force to bend them. However, it was not clear whether such
+bending took place because Mr. Geller has extraordinarily strong
+fingers and good control of micro-manipulatory movements, or whether
+the metal "turns to plastic" in his hand as he claims. Our final
+conclusion in watching our films was that simple photo interpretation
+is insufficient to determine whether metals are being bent by normal or
+paranormal means.
+
+    In summary, the three perception experiments (hidden drawings
+in envelopes, double-blind hidden object experiment, double-blind
+die-in-the-box experiment) and the two psychokinetic experiments
+(depression or raising of a weight on an electrical scale and the
+magnetometer indication) do not admit of any ready counterhypothesis
+to the concept of extraordinary human functioning.
+
+
+IV   SUMMARY AND CONCLUSIONS
+
+    The data gathered to date with the aid of consultants Swann and
+Geller point to the existence of an as yet unidentified mode of
+extraordinary human functioning. Efforts to explain the phenomena
+either within the framework of conventional concepts or by exposure
+of outright fraud have both met with failure at this point. With
+regard to the latter possibility, it might be mentioned that our
+efforts to detect fraud were quite sophisticated (including the use
+of consultant magicians on our part) under the hypothesis that
+subjects skilled in trickery might be sent to us to test the
+adequacy of our program to detect fraud.
+
+    The observations to date are sufficiently detailed and well
+controlled to indicate without doubt that extraordinary human
+functioning has been observed. Further work is required, however,
+to obtain sufficient data to permit the emergence of patterns of
+cause-effect relationships and the elucidation of the mechanisms and
+agencies involved.
+
+
+[Pages 17-22 — figures]
+
+[Page 17 — Figure 1: cumulative hits curve, Swann probability 1/3 experiment, 50 trials, Σ=26 (p=0.005)]
+
+[Page 18 — Figure 2: hits/run plot, Swann probability 1/3 experiment, 5 runs of 10 trials each, learning rate 0.5]
+
+[Page 19 — Figure 3: Swann remote temperature control chart recording, R and H markers showing rest/heat commands across time]
+
+[Page 20 — Figure 4: hits/run plot, Swann 4-state random generator experiment, 7 runs, 190 trials, learning rate 0.7]
+
+[Page 21 — Figure 5: Geller picture-drawing experiment results, dated 12/7/72, showing target/response pairs (plane, smiley face, car, etc.) with "URI" signature and timestamps 1:40, 1:45, 1:50]
+
+[Pages 22-29 — additional figures showing Geller experimental drawings + apparatus diagrams]
+
+
+Approved For Release 2000/08/10 : CIA-RDP96-00787R000100180001-3

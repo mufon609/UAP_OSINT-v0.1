@@ -24,6 +24,12 @@ primary_sources:
   format: pdf
 - path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
   format: pdf
+- path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+  format: pdf
+- path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
+  format: pdf
+- path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+  format: pdf
 
 document_intrinsic:
   full_name: 'Russell Targ'
@@ -41,6 +47,9 @@ credibility_notes: 'Targ''s ESP Research site (his own publication) names him as
 
 
   The 1977 CIA Studies in Intelligence paper by Kenneth A. Kress ([`/people/kenneth-kress`]) — declassified 2011 (CIA-RDP88G01116R000600690003-8) — names Targ and Puthoff as the two laser physicists who re-awakened CIA ([`/organizations/cia`]) research in parapsychology, documents Targ''s April 1972 meeting with the Office of Scientific Intelligence, places Targ as having recently joined the Stanford Research Institute in 1972, and describes the August 1972 Office of Technical Service contract with Targ and Puthoff at SRI ($874 for a few days of work with the magnetometer subject) followed by the February 1974 jointly funded ORD and OTS program. The Kress paper also describes the November 1976 briefing of Director George Bush on CIA''s investigations into parapsychology after he became aware that official Soviets were visiting and questioning Puthoff and Targ at SRI. The 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview describes the SRI International program at Menlo Park from 1970 to 1990 with CIA funding to SRI for continuing remote viewing research discontinued in 1975 and subsequent funding provided by DIA, the SRI effort discontinued in 1990, and Systems Applications International Corporation ([`/organizations/saic`]) at Menlo Park established under the FY 1991 Defense Authorization Act. The 1995 American Institutes for Research ([`/organizations/american-institutes-for-research`]) evaluation reviews the 1973-1988 SRI experiments (154 experiments, over 26,000 individual trials, 227 subjects per May et al. 1988) and includes Puthoff and Targ (1975) "Perceptual Augmentation Techniques: Part Two — Research Report" as the Stanford Research Institute Final Report.
+
+
+  Targ''s later retrospective comment in the Burton article — "Uri was at our laboratory at SRI for six weeks in 1973" — differs from Targ''s concurrent CIA records of the SRI Geller sessions: the 22 February 1973 contract progress report Targ authored with Puthoff records a nine-day Geller field measurement program in November-December 1972, and the 13 August 1973 SRI Geller report Targ sole authored records an eight day session 4-11 August 1973 — approximately 17 days documented across both periods, not six weeks.
 
   '
 
@@ -236,6 +245,104 @@ quotes:
   statement_date: '1995-09-29'
   significance: 'AIR review of the 1988 SRI internal program analysis (May, Utts, Trask, Luke, Frivold, Humphrey 1988 "Review of the psychoenergetic research conducted at SRI International (1973-1988)") establishes the institutional shape of the SRI parapsychology program over its 1973-1988 documented span: 154 experiments, over 26,000 individual trials, 227 total subjects. Targ as SRI cofounder is the institutional context for this program; the 1973 start anchors the time-frame from CIA / SRI internal documentation.'
 
+- id: q17
+  added_date: '2026-05-16'
+  text: |
+    The objective of this group of experimental sessions is to verify Geller's apparent paranormal perception under carefully controlled conditions and to head toward an understanding of the physical and psychological variables underlying his apparent ability.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1, ¶ OBJECTIVE'
+  context: 'R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`]'
+  observation_type: relayed
+  statement_date: '1973-08-13'
+  significance: 'Targ-authored objective statement framing the Aug 4-11, 1973 SRI Geller eight-day session as a verification exercise under carefully controlled conditions — Targ''s own framing of the methodological intent at the start of his sole-authored cover memo to CIA.'
+
+- id: q18
+  added_date: '2026-05-16'
+  text: |
+    As a result of Geller's success in this experimental period, we consider that he has demonstrated his paranormal perceptual ability in a convincing and unambiguous manner.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1, ¶ EXPERIMENTAL PROGRAM'
+  context: 'R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`]'
+  observation_type: relayed
+  statement_date: '1973-08-13'
+  significance: 'Targ-authored "convincing and unambiguous manner" conclusion — the load-bearing primary-source statement that downstream Geller-biography accounts (and the urigeller.com biography page) invoke as the SRI / CIA endorsement of Geller. Targ is the sole author of this cover memo, so this is Targ''s own primary-source conclusion on the Aug 1973 SRI experiments.'
+
+- id: q19
+  added_date: '2026-05-16'
+  text: |
+    In our detailed examination of the shielded room and the protocol used in these experiments no sensory leakage has been found, nor has any defect in the protocol been brought to our attention.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 3, ¶4'
+  context: 'R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`]'
+  observation_type: relayed
+  statement_date: '1973-08-13'
+  significance: 'Targ-authored protocol-controls attestation — the one-way intercom, sensory-leakage examination, and no-defect framing that Targ documents at the procedural-rigor end of the Aug 1973 SRI Geller report. Counterweight to subsequent skeptical critiques (Maddox 1974 editorial, Randi accounts) that the SRI protocols admitted sensory cueing.'
+
+- id: q20
+  added_date: '2026-05-16'
+  text: |
+    These latter two experiments admit of at least two hypotheses which will require further work to differentiate: (1) clairvoyant perception of information stored in the computer, or (2) telepathy, since there were several people in the computer room, all of whom knew the nature of the target that was stored.
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 27, ¶4'
+  context: 'R. Targ sole-authored cover memo, "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973", CIA-RDP79-00999A000300030027-0, August 13, 1973 [`/documents/cia-sri-geller-aug1973`]'
+  observation_type: relayed
+  statement_date: '1973-08-13'
+  significance: 'Targ-authored mechanism-hypothesis framing — Targ explicitly identifies two competing mechanisms (clairvoyance vs telepathy) that the Aug 1973 computer-stored-target experiments cannot distinguish. Important methodological framing: Targ acknowledges the experiments do not adjudicate between mechanisms even when they appear to demonstrate perceptual ability.'
+
+- id: q21
+  added_date: '2026-05-16'
+  text: |
+    Following is a summary of work carried out under Field Measurements Contract No. 1471(S)73, Tasks 1, 2, and 3. Tasks 1 and 2 cover a two-week field measurement program (14-28 August 1972) with consultant Ingo Swann; Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller.
+  source:
+    path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
+    location: 'p. 2, ¶ Section A Introduction'
+  context: 'Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973'
+  observation_type: relayed
+  statement_date: '1973-02-22'
+  significance: 'Targ-co-authored Section A introduction enumerating the contract 1471(S)73 tasks Targ co-conducted: Tasks 1+2 with Ingo Swann (two-week field measurement program, 14-28 August 1972); Task 3 with Uri Geller (nine-day field measurement program within December 1, 1972 to January 15, 1973). Primary-source attestation of Targ''s involvement with both Swann and Geller as CIA-contract SRI consultants during the foundational 1972 / late-1972 window.'
+
+- id: q22
+  added_date: '2026-05-16'
+  text: |
+    Because of the history of charlatanism in this area, one of our basic operating assumptions has to be that we cannot exclude the possibility that a subject will hoax if given an opportunity. To handle this, we consider it important to design experiments a) which are totally under the design and control of the experimenter rather than the subject, and b) which are considered in their basic design to be cheatproof.
+  source:
+    path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
+    location: 'p. 3, ¶ Section C Protocol #1'
+  context: 'Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973'
+  observation_type: relayed
+  statement_date: '1973-02-22'
+  significance: 'Targ-co-authored statement of the hoax-exclusion methodological stance — the contemporaneous Puthoff-Targ acknowledgment that a subject will hoax if given an opportunity, and their corresponding experimenter-control-and-cheatproof-design principle. Important Targ-co-authored counterweight to subsequent skeptical critiques framing the SRI protocols as naive.'
+
+- id: q23
+  added_date: '2026-05-16'
+  text: |
+    The data gathered to date with the aid of consultants Swann and Geller point to the existence of an as yet unidentified mode of extraordinary human functioning. Efforts to explain the phenomena either within the framework of conventional concepts or by exposure of outright fraud have both met with failure at this point.
+  source:
+    path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
+    location: 'p. 16, ¶ Section IV Summary'
+  context: 'Puthoff and Targ co-authored "Technical Memorandum: A Progress Report on Contract Number 1471(S)73", CIA-RDP96-00787R000100180001-3, dated 22 February 1973'
+  observation_type: relayed
+  statement_date: '1973-02-22'
+  significance: 'Targ-co-authored Section IV Summary conclusion on Tasks 1-3 data (Swann + Geller): "extraordinary human functioning" framing + acknowledgment that fraud-exposure efforts have also failed. Contemporaneous-to-the-engagement Targ statement contrasting with Targ''s 2007 retrospective ("six weeks in 1973") — see F.SRI finding-node candidate in meta/topic/research-queue.md for the duration-divergence analysis.'
+
+- id: q24
+  added_date: '2026-05-16'
+  text: |
+    From these experiments we conclude that:
+
+    A channel exists whereby information about a remote location can be obtained by means of an as yet unidentified perceptual modality.
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 13, ¶ conclusion'
+  context: 'Dr. Harold E. Puthoff and Russell Targ co-authored "Information transmission under conditions of sensory shielding", Nature 251, 602-607, 18 October 1974 [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror CIA-RDP96-00787R000100220001-8)'
+  observation_type: relayed
+  statement_date: '1974-10-18'
+  significance: 'Targ-co-authored formal conclusion of the 1974 Nature paper — the public-record "a channel exists" framing of the SRI parapsychology investigation that downstream Geller-bio accounts invoke as the Nature endorsement. Complements existing q3 (Nature paper abstract from the news/HTML source) by adding the conclusion from the CIA-mirrored full text now archived as a primary source.'
+
 entities_referenced:
 - id: e1
   added_date: '2026-05-14'
@@ -407,6 +514,41 @@ entities_referenced:
   context_summary: 'SAIC at Menlo Park, CA was the FY 1991 Congressionally-directed successor venue for the federally-sponsored remote viewing research after the SRI effort was discontinued in 1990 (per the 1993 DIA STAR GATE Project Overview, q14). DIA negotiated the external SAIC contract for basic and applied research; the STAR GATE umbrella program continued at SAIC under DIA executive agency. New unbuilt stub introduced by this audit pass.'
   references:
   - quote_id: q14
+
+- id: e20
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Uri Geller
+  wrap_path: /people/uri-geller
+  context_summary: 'Test subject in the SRI parapsychology investigation Targ co-conducted. Named in Task 3 of the Feb 1973 contract 1471(S)73 progress report (q21); subject of the Aug 1973 SRI Geller report Targ sole-authored (q17-q20); named as the first-study subject in the 1974 Nature paper Targ co-authored (q24 context).'
+
+- id: e21
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Pat Price
+  wrap_path: /people/pat-price
+  context_summary: 'Second-study subject in the 1974 Nature paper Targ co-authored — double-blind experiments measuring Price''s ability to describe remote outdoor scenes many miles from his physical location. New unbuilt stub.'
+
+- id: e22
+  added_date: '2026-05-16'
+  entity_type: person
+  name: Ingo Swann
+  wrap_path: /people/ingo-swann
+  context_summary: 'Consultant on Tasks 1 and 2 of the contract 1471(S)73 (two-week field measurement program, 14-28 August 1972) Targ co-conducted, per q21. The 1972 magnetometer experiment with Swann (mentioned in the contract progress Section II Background) was the program-initiating engagement that preceded the Aug 1972 OTS demonstration contract and the subsequent Targ-CIA contract chain. New unbuilt stub.'
+
+- id: e23
+  added_date: '2026-05-16'
+  entity_type: document
+  name: CIA Aug 1973 SRI Geller Report
+  wrap_path: /documents/cia-sri-geller-aug1973
+  context_summary: 'CIA-RDP79-00999A000300030027-0; R. Targ sole-authored cover memo dated August 13, 1973 documenting the Aug 4-11, 1973 SRI eight-day Geller picture-drawing session. Carries the load-bearing "convincing and unambiguous manner" conclusion. Built doc node; referenced from q17-q20, affiliation a1, program_involvement p1 + p4 notes.'
+
+- id: e24
+  added_date: '2026-05-16'
+  entity_type: document
+  name: Nature 1974 Targ-Puthoff Information Transmission paper
+  wrap_path: /documents/nature-1974-targ-puthoff-information-transmission
+  context_summary: 'Nature 251, 602-607, 18 October 1974, by Dr. Harold E. Puthoff and Russell Targ. Names Mr. Uri Geller as the first-study subject and Mr. Pat Price as the second-study subject of the SRI parapsychology investigation. CIA mirror copy CIA-RDP96-00787R000100220001-8 is now the archived primary source. Built doc node; referenced from q24, affiliation a1, program_involvement p1 + p4 notes, relationship r5.'
 
 naming_quirks:
 - id: nq1
@@ -638,16 +780,61 @@ timeline:
     location: 'p. 10, ¶3'
   category: other
 
+- id: t15
+  added_date: '2026-05-16'
+  date: '1972-08-14'
+  event: 'Two-week field measurement program with consultant Ingo Swann ([`/people/ingo-swann`]) at SRI under contract 1471(S)73 Tasks 1 and 2 (14-28 August 1972) Targ co-conducted; per the Puthoff-Targ Feb 1973 progress report (q21)'
+  source:
+    path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
+    location: 'p. 2, Section A'
+  category: testimony
+
+- id: t16
+  added_date: '2026-05-16'
+  date: '1972-12'
+  event: 'Nine-day field measurement program with consultant Uri Geller ([`/people/uri-geller`]) at SRI under contract 1471(S)73 Task 3 within the time period 1 December 1972 to 15 January 1973 Targ co-conducted; per the Puthoff-Targ Feb 1973 progress report (q21) Section III describes the experiments as conducted in November-December 1972'
+  source:
+    path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
+    location: 'p. 2, Section A + p. 11, Section III'
+  category: testimony
+
+- id: t17
+  added_date: '2026-05-16'
+  date: '1973-02-22'
+  event: 'Puthoff-Targ "Technical Memorandum: A Progress Report on Contract Number 1471(S)73" (CIA-RDP96-00787R000100180001-3) co-authored and dated; page-1 byline attests Targ as "Senior Research Physicist, Electronics and Bioengineering Laboratory" at SRI — earliest primary-source attestation of Targ''s SRI title (q21-q23)'
+  source:
+    path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
+    location: 'p. 1, ¶ cover'
+  category: publication
+
+- id: t18
+  added_date: '2026-05-16'
+  date: '1973-08-04'
+  event: 'SRI eight-day Geller session begins (August 4-11, 1973) — Targ co-conducted the picture-drawing experiments at SRI Life Sciences Division shielded room (Aug 4-8) and Engineering Building Faraday cage (Aug 9-11) [`/documents/cia-sri-geller-aug1973`]'
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1'
+  category: testimony
+
+- id: t19
+  added_date: '2026-05-16'
+  date: '1973-08-13'
+  event: 'R. Targ sole-authored cover memo "EXPERIMENTS - Uri Geller at SRI, August 4-11, 1973" (CIA-RDP79-00999A000300030027-0 [`/documents/cia-sri-geller-aug1973`]) dated; carries Targ''s load-bearing conclusion that Geller "demonstrated his paranormal perceptual ability in a convincing and unambiguous manner" (q18)'
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1, ¶ cover'
+  category: publication
+
 affiliations:
 - id: a1
   added_date: '2026-05-14'
   organization_path: '/organizations/stanford-research-institute'
-  role: 'Cofounder of the Stanford Research Institute investigation into psychic abilities (per Targ''s ESP Research site); author at the Electronics and Bioengineering Laboratory per the 1974 Nature paper byline'
+  role: 'Cofounder of the Stanford Research Institute investigation into psychic abilities (per Targ''s ESP Research site); Senior Research Physicist at SRI''s Electronics and Bioengineering Laboratory per the February 1973 contract 1471(S)73 progress report co-author line [`/sources/government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf`] — earliest primary-source attestation of Targ''s SRI title; affiliation continuing through the 1974 Nature paper byline'
   period_start: '1972'
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶2'
-  note: 'Targ''s own ESP Research site reports the SRI cofounder role for the 1970s and 1980s; the 1977 Kress paper (q10) attests Targ as having "recently joined the Stanford Research Institute (SRI)" as of the April 1972 Targ-CIA Office of Scientific Intelligence meeting — the earliest primary-source attestation of Targ''s SRI affiliation. The 1974 Nature paper (q3) byline confirms continuing SRI Electronics and Bioengineering Laboratory affiliation. period_end intentionally absent — no archived primary source attests a specific SRI departure date; the SRI parapsychology investigation itself was discontinued in 1990 per the 1993 DIA STAR GATE Project Overview (q14, t14), and Targ''s 1991 Applied Optics paper byline (a2 at Lockheed Missiles & Space Company) provides an outer bound on his SRI tenure. Program Involvement p1 mirrors the same open-ended representation; the bare period_start + prose hedge is the working stop-gap per meta/topic/research-queue.md "known start, unknown end (but not ongoing)" pending convention question.'
+  note: 'Targ''s own ESP Research site reports the SRI cofounder role for the 1970s and 1980s; the 1977 Kress paper (q10) attests Targ as having "recently joined the Stanford Research Institute (SRI)" as of the April 1972 Targ-CIA Office of Scientific Intelligence meeting — the earliest primary-source attestation of Targ''s SRI affiliation tenure. The contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) co-authored by H.E. Puthoff and Russell Targ attests Targ''s specific SRI title — page 1 byline: "Dr. H.E. Puthoff / Mr. Russell Targ / Senior Research Physicist / Electronics and Bioengineering Laboratory" — the earliest primary-source attestation of Targ''s SRI position at the title level (the 1974 Nature paper byline cites the lab but not the title). The 1974 Nature paper (q3) byline confirms continuing SRI Electronics and Bioengineering Laboratory affiliation. period_end intentionally absent — no archived primary source attests a specific SRI departure date; the SRI parapsychology investigation itself was discontinued in 1990 per the 1993 DIA STAR GATE Project Overview (q14, t14), and Targ''s 1991 Applied Optics paper byline (a2 at Lockheed Missiles & Space Company) provides an outer bound on his SRI tenure. Program Involvement p1 mirrors the same open-ended representation; the bare period_start + prose hedge is the working stop-gap per meta/topic/research-queue.md "known start, unknown end (but not ongoing)" pending convention question.'
 
 - id: a2
   added_date: '2026-05-14'
@@ -726,6 +913,33 @@ relationships:
     location: 'p. 8, ¶1-4'
   note: 'Kress was CIA Operations Officer in the Office of Technical Service (OTS) and CIA Project Officer for the SRI parapsychology investigation contracts beginning October 1972 (per the Kress 1977 paper, q9-q11). Kress''s direct contact with Targ was institutional rather than personal — managing CIA contracts with Targ and Puthoff at SRI, and authoring the 1977 first-person Studies in Intelligence review that is the foundational CIA-side primary-source attestation of Targ''s 1972 SRI join, the April 1972 OSI meeting, the August 1972 $874 OTS demonstration contract, and the November 1976 DCI Bush briefing. Parallels the Ryder relationship (r2) in framing as an institutional/professional connection rather than personal. Kress is currently an unbuilt stub.'
 
+- id: r5
+  added_date: '2026-05-16'
+  person_path: '/people/uri-geller'
+  relationship: 'Test subject Targ co-conducted at SRI under contract 1471(S)73 Task 3 (nine-day field measurement program in November-December 1972) and the Aug 4-11, 1973 SRI eight-day session [`/documents/cia-sri-geller-aug1973`]; named alongside Targ as first-study subject in the 1974 Nature paper [`/documents/nature-1974-targ-puthoff-information-transmission`] Targ co-authored'
+  source:
+    path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
+    location: 'p. 1, ¶ title'
+  note: 'Targ-Geller experimenter-subject relationship is anchored across three primary sources: the Feb 1973 contract progress report (q21) for the Task 3 nine-day program; the Aug 1973 SRI Geller report (q17-q20) Targ sole-authored for the Aug 4-11 1973 eight-day session; the 1974 Nature paper (q24) for the public-record summation. Targ''s Sunday August 5 1973 role attested verbatim in the Aug 1973 report: "Puthoff, who was with Geller, called Targ, who was with the drawing".'
+
+- id: r6
+  added_date: '2026-05-16'
+  person_path: '/people/pat-price'
+  relationship: 'Test subject Targ co-conducted in the 1974 Nature paper''s second study — double-blind experiments measuring Price''s ability to describe remote outdoor scenes many miles from his physical location'
+  source:
+    path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
+    location: 'p. 2, ¶ studies-overview'
+  note: 'Targ-Price experimenter-subject relationship surfaces primarily through the 1974 Nature paper Targ co-authored. Pat Price was the SRI parapsychology investigation''s "third sensitive subject" per the 1977 Kress paper''s narrative ordering (Swann first, second subject unattested by name in Kress, Price third); the Nature paper makes the Price-as-subject attestation explicit. Pat Price is currently an unbuilt stub.'
+
+- id: r7
+  added_date: '2026-05-16'
+  person_path: '/people/ingo-swann'
+  relationship: 'Consultant on SRI Tasks 1 and 2 (two-week field measurement program, 14-28 August 1972) Targ co-conducted under contract 1471(S)73, per the Puthoff-Targ Feb 1973 progress report (q21); the program-initiating engagement that preceded the August 1972 OTS demonstration contract'
+  source:
+    path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.pdf
+    location: 'p. 2, Section A'
+  note: 'Targ-Swann experimenter-subject relationship anchored by the Feb 1973 contract progress report (q21). Swann is named as the program-initiating "magnetometer subject" per the 1977 Kress paper (q9) and the Kress paper''s broader narrative; the contract progress report adds the Aug 14-28 1972 Tasks 1+2 specific dates that the Kress paper does not enumerate. Ingo Swann is currently an unbuilt stub.'
+
 program_involvement:
 - id: p1
   added_date: '2026-05-14'
@@ -737,7 +951,7 @@ program_involvement:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶2'
-  note: 'Targ''s own ESP Research site self-attests the cofounder role and the 1970s-and-1980s active window; the 1977 Kress paper (q10) attests April 1972 as the earliest documented Targ-CIA contact and characterizes Targ at that moment as having "recently joined the Stanford Research Institute (SRI)". period_start 1972 anchors on the Kress April 1972 attestation. period_end intentionally absent (mirroring affiliation a1) — no archived primary source attests a specific Targ-SRI-tenure end date, and the self-attested ''1970s and 1980s'' decade window does not pin a year-precise departure. The 1991 Applied Optics paper byline (a2 at Lockheed Missiles & Space Company) provides an outer bound on individual tenure; the 1993 DIA STAR GATE Project Overview (q14) attests the SRI program itself was discontinued in 1990 — the program-level outer bound, distinct from Targ''s individual tenure. The 1995 AIR evaluation (q15-q16) reviews the 1973-1988 SRI experiments (154 experiments, 26,000+ trials, 227 subjects per May et al. 1988). Per the corpus-wide pending convention question on "known start, unknown end (but not ongoing)" (meta/topic/research-queue.md), bare period_start + prose hedge is the working stop-gap pattern.'
+  note: 'Targ''s own ESP Research site self-attests the cofounder role and the 1970s-and-1980s active window; the 1977 Kress paper (q10) attests April 1972 as the earliest documented Targ-CIA contact and characterizes Targ at that moment as having "recently joined the Stanford Research Institute (SRI)". period_start 1972 anchors on the Kress April 1972 attestation. The contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) — co-authored by Puthoff and Targ — provides a second primary-source attestation of Targ''s active SRI program involvement at the "Senior Research Physicist" title; Section A page 2 attests Tasks 1 and 2 (a two-week Ingo Swann field measurement program 14-28 August 1972) and Task 3 (a nine-day Uri Geller ([`/people/uri-geller`]) field measurement program within the 1 December 1972 to 15 January 1973 contract window) as the early-1973-documented sub-programs Targ co-conducted. period_end intentionally absent (mirroring affiliation a1) — no archived primary source attests a specific Targ-SRI-tenure end date, and the self-attested ''1970s and 1980s'' decade window does not pin a year-precise departure. The 1991 Applied Optics paper byline (a2 at Lockheed Missiles & Space Company) provides an outer bound on individual tenure; the 1993 DIA STAR GATE Project Overview (q14) attests the SRI program itself was discontinued in 1990 — the program-level outer bound, distinct from Targ''s individual tenure. The 1995 AIR evaluation (q15-q16) reviews the 1973-1988 SRI experiments (154 experiments, 26,000+ trials, 227 subjects per May et al. 1988). Per the corpus-wide pending convention question on "known start, unknown end (but not ongoing)" (meta/topic/research-queue.md), bare period_start + prose hedge is the working stop-gap pattern.'
 
 - id: p2
   added_date: '2026-05-14'
@@ -776,4 +990,6 @@ program_involvement:
   source:
     path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
     location: 'p. 8, ¶4'
-  note: 'period_start 1972-08 anchors on the $874 OTS demonstration contract (q11). period_end 1975 anchors on the 1993 DIA STAR GATE Project Overview (q13): "Then funding was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA". Targ''s broader SRI cofounder role continued beyond the CIA-sponsorship window — see p1 for the umbrella SRI investigation. This entry isolates the specific CIA-funded sub-program documented in the Kress paper.'
+  note: 'period_start 1972-08 anchors on the $874 OTS demonstration contract (q11). period_end 1975 anchors on the 1993 DIA STAR GATE Project Overview (q13): "Then funding was discontinued in 1975; subsequent funding for RV investigation at SRI was provided by DIA". Targ''s broader SRI cofounder role continued beyond the CIA-sponsorship window — see p1 for the umbrella SRI investigation. This entry isolates the specific CIA-funded sub-program documented in the Kress paper. Three additional CIA primary sources archived in the 2026-05-16 archival sweep further attest Targ as author or co-author of the program''s working documents: (a) the contract 1471(S)73 progress report (CIA-RDP96-00787R000100180001-3, dated 22 February 1973) co-authored by Puthoff and Targ — the working-document side of the August 1972 OTS demonstration contract that became Task 3 with Geller; (b) the Nature 1974 paper [`/documents/nature-1974-targ-puthoff-information-transmission`] (CIA mirror RDP96-00787R000100220001-8) co-authored by Puthoff and Targ — the public-record summation of the CIA-funded Geller and Pat Price ([`/people/pat-price`]) experiments; (c) the Aug 1973 SRI Geller report [`/documents/cia-sri-geller-aug1973`] (CIA-RDP79-00999A000300030027-0) — Targ sole-authored cover memo dated August 13, 1973 summarizing the Aug 4-11, 1973 eight-day Geller picture-drawing session with the load-bearing conclusion that Geller "demonstrated his paranormal perceptual ability in a convincing and unambiguous manner". The three documents anchor Targ as the principal experimenter recording the program''s public-record claims. Targ''s 2007 retrospective comment in the Brendan Burton article on urigeller.com — "Uri was at our laboratory at SRI for six weeks in 1973" — exceeds the contemporaneous Targ-authored records by approximately four weeks (~17 days documented in total: 9 days late 1972 per contract progress (q21) + 8 days Aug 1973 per Targ-sole-authored Aug 1973 SRI report (q17-q20) vs 6 weeks recalled in 2007). The recollection-versus-record divergence is documented as the F.SRI finding-node candidate in meta/topic/research-queue.md.'
+
+

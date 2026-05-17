@@ -2128,6 +2128,15 @@
   archive_status: 1
   extraction_type: ocr-scan
   note: 'CIA Reading Room document CIA-RDP96-00787R000100180001-3: ''Technical Memorandum — A Progress Report on Contract Number 1471(S)73''. Covers 1 December 1972 – 15 January 1973. Task 3: ''Experimentation with Uri Geller''. SRI-internal primary record of Geller''s December 1972 SRI entry — the earlier of the two documented SRI engagement windows (the second being the August 4-11 1973 session in CIA-RDP79-00999A000300030027-0). Closes the r1 two-visit chronology gap on /people/uri-geller. Source archived via Internet Archive stargatefiles collection because direct cia.gov access returns 302 to /readingroom landing page (as of 2026-05-16). OCR scan.'
+- url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000100180001-3.pdf#clean-text-transcription
+  format: txt
+  status: archived
+  path: government/cia-rdp96-00787r000100180001-3-contract-1471s73-progress-dec1972.txt
+  archived_date: '2026-05-16'
+  sha256: da6125879318716d2ee8283a1b2eab70496bde5d1aa81fb1c160e0f3fd509c08
+  archive_status: 1
+  wayback_skip: true
+  note: Contributor-produced clean-text transcription of CIA-RDP96-00787R000100180001-3.pdf via VLM page-image read (Claude session, 2026-05-16). Read tool with pages 1-10 + pages 11-22 produced as clean transcription of the text-bearing pages (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16) with figure pages 17-29 marked as descriptive placeholders. Parent PDF is an Image Container PDF from a 2016 Acrobat scan with no usable text layer (pdftotext returns 0 lines). Substantive content includes Section A page 2 'Task 3 covers a nine-day field measurement program within the time period 1 December 1972 to 15 January 1973 with consultant Uri Geller'; Section III page 11 'The experiments conducted with Geller in November-December, 1972'; Section IV page 16 summary 'The data gathered to date with the aid of consultants Swann and Geller point to the existence of an as yet unidentified mode of extraordinary human functioning'. Page-1 byline 'Dr. H.E. Puthoff / Mr. Russell Targ / Senior Research Physicist / Electronics and Bioengineering Laboratory' is the earliest primary-source attestation of Russell Targ's specific SRI title.
 - url: https://www.cia.gov/readingroom/docs/CIA-RDP96-00787R000100220001-8.pdf
   format: pdf
   status: archived
