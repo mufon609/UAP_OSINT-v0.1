@@ -14604,3 +14604,58 @@
     credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
   tokens: [klas-tv]
 
+- ts: 2026-05-17T18:31:22Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/8newsnow-craft-of-unknown-origin-lacatski-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 19 significant token(s) not in source (prose-drift check — contributor review): 4th, aawsap, attestation, attestations, blue, closed, klas-tv, kona, … (+11 more — pass --verbose for full list)
+  tokens: [4th, aawsap, attestation, attestations, blue, closed, klas-tv, kona, minutes, names, naming, per, published, quirks, said, see, segment, uses, weaponized]
+
+- ts: 2026-05-17T18:31:59Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/8newsnow-craft-of-unknown-origin-lacatski-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 2 significant token(s) not in source (prose-drift check — contributor review): closing, names
+  tokens: [closing, names]
+
+- ts: 2026-05-17T18:32:11Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/8newsnow-craft-of-unknown-origin-lacatski-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 2 significant token(s) not in source (prose-drift check — contributor review): end, linked
+  tokens: [end, linked]
+
+- ts: 2026-05-17T18:32:20Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/8newsnow-craft-of-unknown-origin-lacatski-2026.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): anchor
+  tokens: [anchor]
+
+- ts: 2026-05-17T18:34:22Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): klas-tv
+  tokens: [klas-tv]
+

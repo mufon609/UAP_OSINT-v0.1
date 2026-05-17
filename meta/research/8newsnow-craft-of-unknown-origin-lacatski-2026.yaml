@@ -1,0 +1,244 @@
+id: meta/research/8newsnow-craft-of-unknown-origin-lacatski-2026
+type: research-artifact
+schema_version: 1
+target_node: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026
+status: active
+created: '2026-05-17'
+description: 'News story with George ([`/people/george-knapp`]) and Dr. James Lacatski ([`/people/james-lacatski`]).
+
+
+  George: "A US intelligence official who designed and directed the largest UFO investigation in American history has confirmed at least one UFO type craft of unknown origin is being studied in absolute secrecy. But Dr. James Lacatski adds the fact that our government has stashed away one of these craft is just a small part of a much bigger mystery."
+
+
+  Lacatski: "Reducing 30,000 pages of analyst photos and information and logs and and sightings, etc., and investigations, that was a tough job." Lacatski: "to investigate the paranormal as being the umbrella over UFOs right from the get-go. And your bosses knew that from the beginning." Lacatski: "they were concerned from the beginning about the the leak, but we never had a a leak." Lacatski: "the purpose of the government effort was to look into is there is there something really there, especially in the paranormal umbrella. And the answer is absolutely yes."
+
+
+  Lacatski on the new book ([`/documents/future-visions-2026`]): "You could have craft, you could have bodies, it wouldn''t necessarily tell you where they''re from, why they''re here, what their their plan is." Lacatski: "if there was an alien intelligence, which some people think is behind all of this, they must be shaking their heads in frustration cuz we move like a snail. And maybe at times we even go backwards."
+
+
+  George: "This is Dr. Lacatski''s fourth and final book based on the AATIP files. I was co-author on two of those along with Dr. Colm Kelleher ([`/people/colm-kelleher`]). Future Visions contains many new details about dramatic UFO incidents and cases, weird events at Skinwalker Ranch ([`/locations/skinwalker-ranch`]) and similar locations, and hints about another program that grew out of AATIP."
+
+
+  Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`] [`/organizations/aawsap`] [`/organizations/dia`] [`/organizations/baass`] [`/organizations/bigelow-aerospace`] [`/organizations/kona-blue`] [`/documents/inside-us-gov-covert-ufo-2023`] [`/transcripts/weaponized-114-lacatski-future-visions-2026`] [`/transcripts/weaponized-lacatski-part1-2025`] [`/transcripts/weaponized-lacatski-part2-2025`]'
+primary_sources:
+- path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+  format: transcript
+  extracted_text_path: /tmp/scratch-8newsnow-craft-of-unknown-origin-lacatski-2026-0.txt
+document_intrinsic:
+  internal_title: 'YouTube Transcript — 8newsnow-craft-of-unknown-origin-lacatski-2026'
+  source_url: https://www.youtube.com/watch?v=MiUDl_9v6Ag
+  video_id: MiUDl_9v6Ag
+  caption_lines: 132
+  approximate_runtime: '5 minutes'
+context_extrinsic:
+  display_title: '8 News Now / KLAS-TV — Craft of unknown origin subject of secret study, former US intelligence official confirms (George Knapp, April 6, 2026)'
+  venue: 8 News Now / KLAS-TV / Mystery Wire (Las Vegas)
+  host: George Knapp
+  guests: Dr. James Lacatski
+  broadcast_date: '2026-04-06'
+  topic: 'Promotional news segment for Lacatski''s fourth book "Future Visions"'
+  primary_source_url: https://www.youtube.com/watch?v=MiUDl_9v6Ag
+  transcript_provenance: auto-caption
+  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
+  quote_attribution: 'Dr. James Lacatski, 8 News Now / KLAS-TV news segment by George Knapp, April 6, 2026'
+speakers:
+- id: s1
+  added_date: '2026-05-17'
+  name: George Knapp
+  role: Host / Investigative Reporter
+  node_link: /people/george-knapp
+  source:
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+    location: '[0:16]'
+  note: KLAS-TV / 8 News Now Las Vegas chief investigator; primary narrator-anchor of the segment; book co-author with Lacatski.
+- id: s2
+  added_date: '2026-05-17'
+  name: Dr. James Lacatski
+  role: Guest
+  node_link: /people/james-lacatski
+  source:
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+    location: '[0:53]'
+  note: Former AAWSAP director at DIA; speaks directly on-camera with Knapp; surname renders canonically as "Lacatski" in this segment.
+- id: s3
+  added_date: '2026-05-17'
+  name: Anchor
+  role: Studio Anchor (closing)
+  node_link: null
+  source:
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+    location: '[5:08]'
+  note: 'Unnamed studio anchor closing the segment ("Does it get more interesting than a George Knapp report?"); anonymized in the transcript.'
+quotes:
+- id: q1
+  added_date: '2026-05-17'
+  statement_date: '2026-04-06'
+  text: |
+    [0:53] Reducing 30,000 pages of analyst photos and information and logs and and sightings, etc., and investigations, that was a tough job. So, when I first met you, I could only give you a very top-level view of what we had done.
+  source:
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+    location: '[0:53]–[1:12]'
+  significance: 'Lacatski''s direct framing of the AAWSAP work product as 30,000 pages of "analyst photos and information and logs and and sightings, etc., and investigations" and his framing of his prior interviews with Knapp as "top-level view" reductions of the full record. The 30,000-page figure aligns with Lacatski''s WEAPONIZED PART 1 attestation that Kelleher reduced 30,000 pages to 7,500 pages then to ~1,200 pages across the four books.'
+  context: Lacatski in the 8 News Now news segment opening direct-quote section
+- id: q2
+  added_date: '2026-05-17'
+  statement_date: '2026-04-06'
+  text: |
+    [2:17] to investigate the paranormal as being the umbrella over UFOs right from the get-go. And your bosses knew that from the beginning. They knew it was going to get here.
+  source:
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+    location: '[2:17]–[2:27]'
+  significance: 'Lacatski''s direct attestation of the paranormal-umbrella framing of AAWSAP — the program was designed "to investigate the paranormal as being the umbrella over UFOs right from the get-go" and his DIA superiors "knew that from the beginning." The "umbrella over UFOs" framing inverts the standard public framing that paranormal was a side effect of UFO investigation; Lacatski places paranormal as the structural top layer.'
+  context: Lacatski in the 8 News Now news segment responding to George's framing of AAWSAP as "follow the evidence wherever it led"
+- id: q3
+  added_date: '2026-05-17'
+  statement_date: '2026-04-06'
+  text: |
+    [2:29] from the beginning. Uh they were concerned from the beginning about the the leak, but we never had a a leak. Uh not at all.
+  source:
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+    location: '[2:29]–[2:36]'
+  significance: Lacatski's first-person attestation that AAWSAP "never had a leak" despite his bosses being concerned about leaks from the beginning. Contradicts later public framings that the program was leaky; Lacatski says it was tight.
+  context: Lacatski continuing the previous attestation in the 8 News Now news segment
+- id: q4
+  added_date: '2026-05-17'
+  statement_date: '2026-04-06'
+  text: |
+    [3:28] That's the purpose of the government effort was to look into is there is there something really there, especially in the paranormal umbrella. And the answer is absolutely yes.
+  source:
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+    location: '[3:28]–[3:42]'
+  significance: 'Lacatski''s direct affirmative on-record statement about the AAWSAP finding — "the purpose of the government effort was to look into is there is there something really there, especially in the paranormal umbrella. And the answer is absolutely yes." Documents Lacatski''s explicit affirmation that AAWSAP found a positive answer to the existence question on the paranormal-umbrella scope.'
+  context: Lacatski in the 8 News Now segment summarizing the AAWSAP / Future Visions framing
+- id: q5
+  added_date: '2026-05-17'
+  statement_date: '2026-04-06'
+  text: |
+    [4:11] You could have craft, you could have bodies, it wouldn't necessarily tell you where they're from, why they're here, what their their plan is. Nope, it it wouldn't, and that's part of the of the story.
+  source:
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+    location: '[4:11]–[4:24]'
+  significance: 'Lacatski''s direct attestation that the recovered-craft and bodies framing does not by itself answer "where they''re from, why they''re here, what their plan is" — Lacatski''s structural argument for why AAWSAP / Future Visions necessarily extend beyond craft-and-bodies recovery into the paranormal-umbrella scope.'
+  context: Lacatski in the 8 News Now segment after George frames "the government does possess at least one advanced craft of unknown origin" from the previous book
+- id: q6
+  added_date: '2026-05-17'
+  statement_date: '2026-04-06'
+  text: |
+    [4:24] And if What what whatever we really done. In fact, if there was an alien intelligence, which some people think is behind all of this, they must be shaking their heads in frustration cuz we move like a snail. And maybe at times we even go backwards.
+  source:
+    path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+    location: '[4:24]–[4:44]'
+  significance: 'Lacatski''s direct speculative framing in the news segment — "if there was an alien intelligence, which some people think is behind all of this, they must be shaking their heads in frustration cuz we move like a snail. And maybe at times we even go backwards." Documents Lacatski''s own framing of the disclosure-process pace as backsliding from a hypothetical observer''s perspective.'
+  context: Lacatski in the 8 News Now segment closing the substantive segment before George's wrap-up
+entities_referenced:
+- id: e1
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Dr. James Lacatski
+  wrap_path: /people/james-lacatski
+  context_summary: Direct on-camera interview subject; speaks throughout the segment; surname renders canonically (no auto-caption typos for his name in this transcript)
+- id: e2
+  added_date: '2026-05-17'
+  entity_type: person
+  name: George Knapp
+  wrap_path: /people/george-knapp
+  context_summary: 8 News Now chief investigator; narrator-host of the segment; book co-author with Lacatski and Kelleher
+- id: e3
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Dr. Colm Kelleher
+  wrap_path: /people/colm-kelleher
+  context_summary: 'Named by George in the closing as co-author on two of Lacatski''s four books: "I was co-author on two of those along with Dr. Colm Kelleher"'
+- id: e4
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Harry Reid
+  wrap_path: /people/harry-reid
+  context_summary: 'Late U.S. Senator (D-NV); named by George as having arranged the March 2018 Washington D.C. meeting where Lacatski first revealed AAWSAP''s existence: "arranged by Senator Harry Reid"'
+- id: e5
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Jay Stratton
+  wrap_path: /people/jay-stratton
+  context_summary: 'Named by George as a "DIA colleague" of Lacatski: "Lacatski and a DIA colleague, Jay Stratton, were inspired to pursue these subjects" — first explicit Stratton-as-DIA-colleague framing in the corpus'
+- id: e6
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: AAWSAP — Advanced Aerospace Weapon System Applications Program
+  wrap_path: /organizations/aawsap
+  context_summary: 'The DIA UFO program Lacatski directed; in this segment George''s narration uses "AATIP" for the program — see naming_quirks for the news-segment vs Lacatski-self-attestation framing'
+- id: e7
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Defense Intelligence Agency (DIA)
+  wrap_path: /organizations/dia
+  context_summary: 'AAWSAP''s home agency; named explicitly by George: "worked for the DIA, the Defense Intelligence Agency"'
+- id: e8
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: BAASS — Bigelow Aerospace Advanced Space Studies
+  wrap_path: /organizations/baass
+  context_summary: 'Named by George as the program''s Las Vegas contractor: "carried out by Las Vegas subcontractor of Bigelow Aerospace"'
+- id: e9
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Bigelow Aerospace
+  wrap_path: /organizations/bigelow-aerospace
+  context_summary: 'Named by George as the parent of the BAASS subcontractor: "Las Vegas subcontractor of Bigelow Aerospace"'
+- id: e10
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: KLAS-TV / 8 News Now / Mystery Wire
+  wrap_path: /organizations/klas-tv
+  context_summary: George Knapp's home outlet; venue for the news segment; closing references the Mystery Wire site for the full interview
+- id: e11
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Kona Blue Program (KBP)
+  wrap_path: /organizations/kona-blue
+  context_summary: 'Not named directly in the segment, but George''s closing reference to "another program that grew out of AATIP" — verified as Kona Blue per Lacatski''s WEAPONIZED PART 1 and PART 2 self-attestations'
+- id: e12
+  added_date: '2026-05-17'
+  entity_type: document
+  name: 'Future Visions (2026) — fourth Lacatski book'
+  wrap_path: /documents/future-visions-2026
+  context_summary: 'Lacatski''s fourth and final book on AAWSAP per George''s segment closing: "This is Dr. Lacatski''s fourth and final book based on the AATIP files." Contains "many new details about dramatic UFO incidents and cases, weird events at Skinwalker Ranch and similar locations, and hints about another program that grew out of AATIP"'
+- id: e13
+  added_date: '2026-05-17'
+  entity_type: document
+  name: 'Inside the US Government Covert UFO Program: Initial Revelations (2023)'
+  wrap_path: /documents/inside-us-gov-covert-ufo-2023
+  context_summary: Lacatski / Kelleher / Knapp 2023 book referenced by George as "a previous book" where Lacatski "was authorized to say in very brief terms that the government does possess at least one advanced craft of unknown origin"
+- id: e14
+  added_date: '2026-05-17'
+  entity_type: location
+  name: Skinwalker Ranch
+  wrap_path: /locations/skinwalker-ranch
+  context_summary: Named explicitly by George in the segment as the location of "a cornucopia of bizarre, seemingly paranormal phenomena" where Lacatski visited and had an experience himself
+- id: e15
+  added_date: '2026-05-17'
+  entity_type: transcript
+  name: WEAPONIZED EP 114 (2026-04-08)
+  wrap_path: /transcripts/weaponized-114-lacatski-future-visions-2026
+  context_summary: 'Companion long-form podcast interview for the same Future Visions book cycle, published 2 days after this news segment'
+- id: e16
+  added_date: '2026-05-17'
+  entity_type: transcript
+  name: WEAPONIZED PART 1 (2025-11-05)
+  wrap_path: /transcripts/weaponized-lacatski-part1-2025
+  context_summary: 'Six-month-prior Lacatski interview where he self-attested as creator and DIA program manager of the follow-on Kona Blue program — the program George''s segment closing alludes to as "another program that grew out of AATIP"'
+- id: e17
+  added_date: '2026-05-17'
+  entity_type: transcript
+  name: WEAPONIZED PART 2 (2025-11-11)
+  wrap_path: /transcripts/weaponized-lacatski-part2-2025
+  context_summary: 'Companion PART 2 to PART 1; Lacatski''s Kona Blue refinement and "exchange parameters" framing'
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-17'
+  observed: AATIP
+  canonical: AAWSAP
+  location: '[0:38], [0:46], [1:36], [1:42], [3:26], [4:25]'
+  source_path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
+  resolution: disputed
+  note: 'The 8 News Now news segment narration consistently uses "AATIP" to refer to the program Lacatski directed at DIA. Per Lacatski''s own attestations in WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]), Mystery Wire 2021 ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]), WEAPONIZED PART 1 ([`/transcripts/weaponized-lacatski-part1-2025`]), and the Puthoff DIRD ([`/documents/dird-puthoff-vacuum-metric-engineering-2010`]) attribution, the program he directed was AAWSAP. AATIP is a separate Pentagon program. The news-segment ''AATIP'' framing diverges from Lacatski''s own self-attestation; preserved as it appears with resolution `disputed` per the convention for source-form disagreements between sources.'
