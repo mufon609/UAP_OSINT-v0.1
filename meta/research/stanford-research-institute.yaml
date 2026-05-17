@@ -1301,7 +1301,7 @@ key_personnel:
   source:
     path: government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf
     location: 'p. 22, ¶1'
-  note: 'The SRI program was headed by Dr. H. Puthoff for eleven years per the 1993 DIA STAR GATE Project Overview — a smaller period than the 1972-1990 in the period_start/period_end fields. The DIA document of 30 April 1993 reads "For the past eleven years", which based on the program''s 1990 discontinued date places the head role approximately 1979-1990. The 1972-1990 period_start/period_end fields follow the broader cofounder period per Targ''s ESP Research site (Puthoff named alongside Targ as cofounder); specific Puthoff end date at SRI is not stated in the primary sources. Puthoff was a theoretician who became interested in the field in the early 1970s after extensive work in quantum electronics.'
+  note: 'The SRI program was headed by Dr. H. Puthoff for eleven years per the 1993 DIA STAR GATE Project Overview — a smaller period than the cofounder period recorded in the period_start/period_end fields. The DIA document of 30 April 1993 reads "For the past eleven years"; the SRI program was discontinued in 1990. The period_start/period_end fields follow the broader cofounder period per Targ''s ESP Research site (Puthoff named alongside Targ as cofounder); specific Puthoff end date at SRI is not stated in the primary sources. Puthoff was a theoretician who became interested in the field in the early 1970s after extensive work in quantum electronics.'
 
 - id: kp4
   added_date: '2026-05-15'
@@ -1403,13 +1403,13 @@ key_personnel:
 - id: kp13
   added_date: '2026-05-15'
   person_path: /people/suresh-sunderrajan
-  role: 'Chief Financial Officer (from 2024-01-19; previously President, Commercialization)'
+  role: 'Chief Financial Officer (previously President, Commercialization)'
   leadership_class: other
   period_start: '2024-01-19'
   source:
     path: news/propublica-sri-international-941160950-20260515.html
     location: 'Compensation, Key Employees and Officers, FY2024'
-  note: 'Suresh Sunderrajan is named in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024 with the listing "Chief Financial Officer From 1/19/24" — the source listing for Sunderrajan''s 2024-01-19 CFO start date. The same source lists Sunderrajan in the section for fiscal year ending Dec. 2023 as "President, Commercialization" — the prior role recorded before the transition to CFO.'
+  note: 'Suresh Sunderrajan is named in the ProPublica Compensation, Key Employees and Officers section for the fiscal year ending Dec. 2024 with the listing "Chief Financial Officer From 1/19/24" — the source listing for Sunderrajan''s CFO start date. The same source lists Sunderrajan in the section for fiscal year ending Dec. 2023 as "President, Commercialization" — the prior role recorded before the transition to CFO.'
 
 - id: kp14
   added_date: '2026-05-15'
