@@ -1,0 +1,432 @@
+id: meta/research/weaponized-lacatski-part1-2025
+type: research-artifact
+schema_version: 1
+target_node: transcripts/weaponized-lacatski-part1-2025
+status: active
+created: '2026-05-17'
+description: 'WEAPONIZED part one of two with Dr. James Lacatski ([`/people/james-lacatski`]) with George ([`/people/george-knapp`]) and Jeremy ([`/people/jeremy-corbell`]) — almost two years after WEAPONIZED ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]).
+
+
+  Lacatski said "I was the creator and DIA ([`/organizations/dia`]) program manager of AASAP ([`/organizations/aawsap`]), the Advanced Aerospace Weapons System Applications Program, and of the follow-on Kona Blue program, KBP. Both classified programs, regardless of what the internet has said in the past. Both classified." Lacatski says Jeremy asked him to testify before Congress and Lacatski''s answer is in the four books — Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program: Initial Revelations, the new New Insights, and the approved future book Future Visions. Lacatski says the books are "everything that I have been approved to say condensed into what will be 1,200 pages" and "all I could ever say to the Congress, and they can read it and know a hundred times more than they''re ever going to get from hearings." Lacatski says the books are "approved for release by the Department of Defense or War."
+
+
+  Lacatski says "I don''t suspect, wonder, or harbor any suspicion that false statements have been made to Congress, to the Pentagon, to you, the press, and on the internet. I know they have been. I know it. Deliberately false, not just incorrect, documents have been created about AASAP and Kona Blue, and are in currently in government files." Lacatski says he reported some of the false information to the DOD/DOW Inspector General''s Office and requested IG take no action against the individuals because the falsehoods "to my mind have been ineffective." Lacatski says the 2017 New York Times story was "totally inaccurate" and that the authors "knew my name and position at AATIP, yet never attempted to contact me"; the Pentagon ([`/organizations/dod`]) "states that AATIP really AATIP was not a UFO program. They''ve changed their tune, but the Pentagon has never asked me about anything. They circumvented me and went to my colleagues, but not me."
+
+
+  Lacatski says he has been requested to meet with AARO ([`/organizations/aaro`]) twice and has refused. He said an AARO email said: "Holding a meeting with you in a secure space is very easy. Under our authorities, you do not need a current clearance. The law also grants us additional security authorities. Under a special program we can hold discussions at any level including human." Lacatski says HUMINT is controlled by the gathering organization and cannot be discussed across the lines without a ton of paperwork. Lacatski says AARO is reviewing his books — "AARO is reviewing books? Wow." Lacatski reports a former deputy director of AARO disparaging the UAP and paranormal connection — said "they were looking for werewolves" and that "Kona Blue was established as the home for all these paranormal UFO crap." Lacatski says "Something serious is going on. In my opinion, you all are in the middle of a what I can only describe as a major and repetitive counterintelligence operation by unknown multiple operators or organizations and for unknown reasons. Big question. What is so important about AATIP or Kona Blue?" Lacatski says "Arrow''s a disinformation campaign you''re coming to realize by their public statements and how they''re talking about a program that you have knowledge of that they''re completely lying to the American public" — he then says it is more "steering the direction of the conversation" than completely lying.
+
+
+  On Kona Blue: Lacatski says "Kona Blue is much more than... Kona Blue, I can answer that directly, but I can''t go into details. Kona Blue was a compartment. It was also a program." Lacatski says he should not be using the past tense for Kona Blue. "A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out. So, a UFO study program could continue under that name." Lacatski says Kelleher suggested "private money. Private money going in from multiple sources" — in the rear portions of Skinwalkers at the Pentagon. Lacatski says "The program was not killed. You can''t kill Kona Blue." Lacatski says he met with Dr. Tar O''Toole ([`/people/tara-otoole`]) and that he wants to write another book on Kona Blue from his perspective.
+
+
+  On the UFO craft: Jeremy said "we have a UFO in government possession, that we have an exploitation effort on on vehicle, that we''ve had that we''ve been successful in at least penetrating the hull." When asked whether the United States "has a reverse engineering program on that UFO if you breached the hull," Lacatski says "I can''t answer that. It goes beyond what I''ve been approved to say." Lacatski says "if you''re looking at such a craft, what are you primarily interested in? The craft? The fact that it''s empty? Or what in the world is the power supply and the motive force?" Lacatski says "a fair amount of money went into the medical aspect of UFOs in and AATIP, much more so than was described." Lacatski says "where are the pilots? Who were they? Where did they go if there were pilots?" Asked whether the craft was "landed, crashed, or gifted to us," Lacatski says "You''re relentless, aren''t you?" and does not answer. The 10-month BAASS ([`/organizations/baass`]) report was "stolen" — never numbered, may be two complete bound copies still out there.
+
+
+  Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stratton`] [`/people/dylan-borland`] [`/organizations/aatip`] [`/organizations/dia`] [`/organizations/dhs`] [`/organizations/kona-blue`] [`/organizations/weaponized-podcast`] [`/documents/inside-us-gov-covert-ufo-2023`] [`/documents/skinwalkers-at-the-pentagon-2021`]'
+primary_sources:
+- path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  format: transcript
+  extracted_text_path: /tmp/scratch-weaponized-lacatski-part1-2025-0.txt
+document_intrinsic:
+  internal_title: 'YouTube Transcript — weaponized-lacatski-part1-2025'
+  source_url: https://www.youtube.com/watch?v=Qu8pudJk_-A
+  video_id: Qu8pudJk_-A
+  caption_lines: 1468
+  approximate_runtime: '50 minutes'
+context_extrinsic:
+  display_title: 'WEAPONIZED — He Ran The Pentagon''s Secret UFO Program And Says We''ve Been Played, Dr. James Lacatski (PART 1) (November 5, 2025)'
+  venue: WEAPONIZED (podcast hosted by George Knapp and Jeremy Corbell)
+  hosts: George Knapp + Jeremy Corbell
+  guests: Dr. James Lacatski
+  broadcast_date: '2025-11-05'
+  episode_number: 'PART 1 of 2'
+  topic: 'Lacatski solo interview — Kona Blue, AARO disinformation framing, and the recovered craft hull breach'
+  primary_source_url: https://www.youtube.com/watch?v=Qu8pudJk_-A
+  transcript_provenance: auto-caption
+  transcript_verified: ✅ Confirmed — SHA256 verified via sources/manifest.yaml
+  quote_attribution: 'Dr. James Lacatski, WEAPONIZED (PART 1) with George Knapp and Jeremy Corbell, November 5, 2025'
+speakers:
+- id: s1
+  added_date: '2026-05-17'
+  name: George Knapp
+  role: Co-Host
+  node_link: /people/george-knapp
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[1:29]'
+  note: KLAS-TV / 8 News Now Las Vegas investigative reporter; WEAPONIZED co-host; book co-author with Lacatski and Kelleher.
+- id: s2
+  added_date: '2026-05-17'
+  name: Jeremy Corbell
+  role: Co-Host
+  node_link: /people/jeremy-corbell
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[0:48]'
+  note: WEAPONIZED co-host with George Knapp; primary in-studio questioner.
+- id: s3
+  added_date: '2026-05-17'
+  name: Dr. James Lacatski
+  role: Guest
+  node_link: /people/james-lacatski
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[0:12]'
+  note: Former AAWSAP director at DIA; Kona Blue lead per his own self-attestation in this transcript. The auto-caption renders his surname correctly through most of this episode (Lacatski / Dr. Lacatski); one variant "Dr. Kitaski" registered in naming_quirks.
+quotes:
+- id: q1
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [2:00] as way of background, I was the creator and DIA program manager of AASAP, the Advanced Aerospace Weapons System Applications Program, and of the follow-on Kona Blue program, KBP. Both classified programs, regardless of what the internet has said in the past. Both classified.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[2:00]–[2:22]'
+  significance: Lacatski's direct on-record self-attestation as creator and DIA program manager of both AAWSAP and Kona Blue (KBP) — the first time he publicly names himself as the Kona Blue lead in this corpus. Establishes the structural Kona Blue → Lacatski lineage and asserts "Both classified" against alternative internet framings.
+  context: Lacatski reading from a prepared statement at the opening of WEAPONIZED PART 1, hosted by George Knapp and Jeremy Corbell
+- id: q2
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [3:21] They are complete. I I'll tell you in a moment how difficult that was to do, but they are complete. That's everything that I have been approved to say condensed into what will be 1,200 pages. Uh so, those books are Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program, Initial Revelations, the new book New Insights, and the also approved future book, let's say it's 4 months, 6 months, Future Visions. Now, that is a complete package. That's all I could ever say to the Congress, and they can read it and know a hundred times more than they're ever going to get from hearings.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[3:21]–[4:13]'
+  significance: 'Lacatski''s four-book ledger as of November 2025 — Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program (Initial Revelations), New Insights (new), and the future-approved Future Visions. Together: ~1,200 pages of "everything that I have been approved to say." Lacatski says the four books are his complete public-record testimony and would tell Congress "a hundred times more than they''re ever going to get from hearings."'
+  context: Lacatski continuing his prepared statement on the structural role of the four books in his disclosure footprint
+- id: q3
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [5:03] Instead, the books factually detail the results of AASAP's day-to-day activities assembled only from official government files at DIA, and approved for release by the Department of Defense or War.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[5:03]–[5:20]'
+  significance: 'Lacatski''s attestation that the books "factually detail the results of AASAP''s day-to-day activities assembled only from official government files at DIA" and "approved for release by the Department of Defense or War." The post-EO-14347 "Department of Defense or War" phrasing is Lacatski''s — the only such phrasing in the corpus attributable to a named institutional actor.'
+  context: Lacatski explaining how the books were assembled from DIA government files and reviewed by DoD/DoW
+- id: q4
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [5:50] If you have the free version of Kindle, I make about 50 cents a book. If you buy a full a full printed copy, I make a dollar 50. And believe me, in this niche market, I am not laughing all the way to the bank. It was a lot of work to basically earn what in the Washington area is minimum wage. I, by the way, would have to be selling 80 books a day to keep up with minimum wage if I had a full-time job at a fast food restaurant.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[5:50]–[6:25]'
+  significance: Lacatski's on-record commercial-relationship attestation about book royalties — $0.50/Kindle, $1.50/printed copy; "in this niche market, I am not laughing all the way to the bank." Establishes the per-copy royalty floor for the four-book series; addresses the financial-motivation framing that critics apply to disclosure-era figures.
+  context: Lacatski during his prepared statement on the structural cost and revenue of the books
+- id: q5
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [8:39] Okay, now, here's a tough statement. I don't suspect, wonder, or harbor any suspicion that false statements have been made to Congress, to the Pentagon, to you, the press, and on the internet. I know they have been. I know it. Deliberately false, not just incorrect, documents have been created about AASAP and Kona Blue, and are in currently in government files. This is a surprise. And a first statement, I have reported some, there's a lot of it, some of the false information to the DOD/DOW Inspector General's Office, providing the evidence. I requested that IG take no action against the individuals.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[8:39]–[9:28]'
+  significance: 'Lacatski''s first-person assertion that he has reported deliberately false documents about AASAP and Kona Blue to the DOD/DOW Inspector General''s Office with supporting evidence. The "Deliberately false, not just incorrect, documents have been created about AASAP and Kona Blue, and are in currently in government files" framing is the load-bearing claim; the IG reporting establishes a procedural action on Lacatski''s part. Sworn-adjacent attestation of disinformation against AAWSAP / Kona Blue.'
+  context: Lacatski continuing his prepared statement on the disinformation campaign against AAWSAP and Kona Blue
+- id: q6
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [9:42] Um the initial reporting, let's go back to the day one, but the New York Times story in 2017 was totally inaccurate. Contrary to what some people claim, the authors knew my name and position at AATIP, yet never attempted to contact me. Likewise, the Washington Post Politico contacted me within hours after the articles were published in the three publications asking for my opinion. They knew my name. They had my phone number.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[9:42]–[10:19]'
+  significance: Lacatski's direct attestation that the 2017 New York Times disclosure-breaking story was "totally inaccurate" and that the authors knew his name and position at AATIP yet never contacted him. Washington Post and Politico contacted him only after publication. Establishes the gap between Lacatski's contemporaneous role and the journalistic reconstruction of the program.
+  context: Lacatski continuing his prepared statement on the early disclosure-era press coverage
+- id: q7
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [11:43] I have been requested to meet with AARO twice and have refused. The second time I was told and I I I made the grammar a little better so I could read it to you. Holding a meeting with you in a secure space is very easy. Under our authorities, you do not need a current clearance. The law also grants us additional security authorities. Under a special program we can hold discussions at any level including human Huh? Uh very interested in speaking with you. This is what it the email says
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[11:43]–[12:23]'
+  significance: 'Lacatski reading from an AARO email inviting him to a meeting in a secure space — "Under our authorities, you do not need a current clearance. The law also grants us additional security authorities. Under a special program we can hold discussions at any level including human." Lacatski says he has refused both AARO meeting requests. The "discussions at any level including human" phrase becomes the load-bearing concern: HUMINT cannot be discussed across the lines per Lacatski''s ensuing explanation.'
+  context: Lacatski reading from a recent AARO email proposing a secure-space meeting and explaining why he refused
+- id: q8
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [13:09] Oh, by the way, you should have received notice last Friday that your DOPSR request completed staffing. That's on the two books, so that's good news. Now, AARO is reviewing books? Wow.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[13:09]–[13:22]'
+  significance: 'Lacatski''s on-record reaction to AARO communicating the DOPSR clearance status of his books — "AARO is reviewing books? Wow." Establishes that AARO had visibility into the DOPSR review of Lacatski''s books, which Lacatski frames as suspicious meddling.'
+  context: Lacatski reading the closing of the AARO email
+- id: q9
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [13:31] Three months later, I found out that the former deputy director of AARO was disparaging UAP at paranormal connection, a clear violation of not disclosing activities confident uh confidentially discussed. Now, the interviewer at the time said this is a leading question. DIA's unofficial paranormal ghost hunt program at Skinwalker Ranch where they went rogue. Well, now what if that's not a preconception, I don't know what is. The response from the deputy director they were looking for werewolves. The second response was Kona Blue was established as the home for all these paranormal UFO crap. Now, that's from the deputy director of AARO. Now, that is a very objective view at uh UFOs.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[13:31]–[14:29]'
+  significance: 'Lacatski''s on-record attestation that a former deputy director of AARO disparaged the UAP-paranormal connection in a public interview — said "they were looking for werewolves" and "Kona Blue was established as the home for all these paranormal UFO crap." Lacatski frames this as a "clear violation of not disclosing activities" confidentially discussed and as evidence of AARO''s preconception against AAWSAP/Kona Blue.'
+  context: Lacatski explaining his refusal to meet with AARO after a former deputy director publicly disparaged the program
+- id: q10
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [14:54] Now, remember this is important and it's near the conclusion right here. Only believe AATIP and Kona Blue information directly read by you in the four books. This is to the public. Or if you hear directly statements from myself or Colm Kelleher. Something serious is going on. In my opinion, you all are in the middle of a what I can only describe as a major and repetitive counterintelligence operation by unknown multiple operators or organizations and for unknown reasons. Big question. What is so important about AATIP or Kona Blue?
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[14:54]–[15:36]'
+  significance: 'Lacatski''s direct framing in his prepared statement — only believe AATIP and Kona Blue information directly from the four books or from Lacatski / Kelleher themselves. Lacatski characterizes the disclosure-era public record as "a major and repetitive counterintelligence operation by unknown multiple operators or organizations and for unknown reasons." Asks "What is so important about AATIP or Kona Blue?"'
+  context: Lacatski reading the near-conclusion of his prepared statement
+- id: q11
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [26:50] Now, isn't that great? What did you expect to come out in their review? Any reasonable person said would say or intel analyst or or you know, civilian intel analyst would say, "I'm being ha-having the wool pulled over my eyes." Well, guess what? Arrow's a disinformation campaign you're coming to realize by their public statements and how they're talking about a program that you have knowledge of that they're completely lying to the American public. Well, I wouldn't use the word completely lying. That's not how counterintelligence work. There's some truth. There's some false. But, but you said it very clearly, steering the direction of the conversation.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[26:50]–[27:54]'
+  significance: 'Lacatski''s on-record framing of AARO as a "disinformation campaign" — Corbell offers "completely lying to the American public"; Lacatski moderates to "not completely lying" but "steering the direction of the conversation," characterizing AARO as counterintelligence-style information control rather than outright fabrication. Load-bearing on the AARO-as-counterintelligence framing Lacatski extends throughout PART 1.'
+  context: Lacatski responding to Corbell on whether AARO is a disinformation campaign or counterintelligence
+- id: q12
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [22:27] Kona Blue is much more than Kona Blue, I can answer that directly, but I can't go into details. Kona Blue was a compartment. It was also a program.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[22:27]–[22:38]'
+  significance: Lacatski's direct on-record statement that Kona Blue was both a compartment and a program — and is "much more than" either. The "compartment" + "program" distinction is the load-bearing structural framing for Lacatski's ensuing explanation that the program continues regardless of funding state.
+  context: Corbell asking Lacatski why he should not use the past tense for Kona Blue
+- id: q13
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [23:43] A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out. So, a UFO study program could continue under that name.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[23:43]–[23:58]'
+  significance: 'Lacatski''s structural attestation that a "program" can persist independent of funding state — "A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out." Establishes the framework under which Kona Blue, despite the public DHS narrative of being killed, persists as a structural program.'
+  context: Lacatski explaining to Corbell why Kona Blue should not be characterized in past tense
+- id: q14
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [25:11] it it was killed right there. Um Yes. Yes, and uh that The program was not killed. You can't kill Kona Blue. At one point in the near future, you'll start seeing it because I suggested to Dr. Kelleher that there be a book after these four, and I want the public to participate because it will be my interpretation and my statements that were made in DHS.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[25:11]–[25:45]'
+  significance: 'Lacatski''s direct contradiction of the public narrative that Kona Blue was killed at DHS — "The program was not killed. You can''t kill Kona Blue." Lacatski says he is planning a fifth book "after these four" about Kona Blue from his perspective, including his statements made in DHS.'
+  context: Lacatski responding to Knapp's recap of the public Kona-Blue-killed-at-DHS narrative
+- id: q15
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [40:01] Do you stand behind that we have a UFO in our possession and that cuz that would mean we have a reverse engineering program on that UFO if you breached the hull. That would answer what everybody wants to know. I can't answer that. It goes beyond what I've been approved to say. And by the way, if you're looking at such a craft, what are you primarily interested in? The craft? The fact that it's empty? Or what in the world is the power supply and the motive force?
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[40:01]–[40:34]'
+  significance: 'Lacatski''s "I can''t answer that" on whether the United States has a reverse engineering program — restated almost two years after WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]). Lacatski pivots from the reverse-engineering question to the propulsion question: "what in the world is the power supply and the motive force?" — frames his own interest as the question of motive force and where the craft came from "if no terrestrial human nation has made it."'
+  context: Corbell asking Lacatski to confirm a reverse engineering program follows from the hull-breach admission
+- id: q16
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [55:14] This is one of the greatest mysteries I gave a partial answer the other day. He's going to have to think about it. No, this is one of the greatest mysteries for me. That's why we're doing it.
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[55:14]–[55:21]'
+  significance: Lacatski's first-person framing of the UAP phenomenon as "one of the greatest mysteries for me" — establishes his stated continuing interest in the question despite his retirement and the structural restrictions on what he can say in spoken interview.
+  context: Lacatski responding to Corbell on whether he is concerned about the answer to the UAP question
+- id: q17
+  added_date: '2026-05-17'
+  statement_date: '2025-11-05'
+  text: |
+    [56:29] Was the craft landed, crashed, or gifted to us? Come on, you know the one. Do you know the answer to that?
+  source:
+    path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+    location: '[56:29]–[56:43]'
+  significance: Corbell's direct closing question on whether the craft was "landed, crashed, or gifted to us" — Lacatski does not answer in PART 1; the answer (if any) deferred to PART 2. Captures the three-way framing Corbell uses to structure the question of craft provenance.
+  context: Corbell's closing question to Lacatski in PART 1 about the provenance of the recovered craft
+entities_referenced:
+- id: e1
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Dr. James Lacatski
+  wrap_path: /people/james-lacatski
+  context_summary: Solo guest in this episode; reads from a prepared opening statement and answers questions throughout
+- id: e2
+  added_date: '2026-05-17'
+  entity_type: person
+  name: George Knapp
+  wrap_path: /people/george-knapp
+  context_summary: WEAPONIZED co-host; investigative reporter; Lacatski's book co-author
+- id: e3
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Jeremy Corbell
+  wrap_path: /people/jeremy-corbell
+  context_summary: WEAPONIZED co-host with Knapp; primary in-studio questioner of Lacatski
+- id: e4
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Dr. Colm Kelleher
+  wrap_path: /people/colm-kelleher
+  context_summary: Former BAASS program manager; Lacatski's book co-author; not present in PART 1 but referenced multiple times — Lacatski credits Kelleher with suggesting private money for Kona Blue in the rear portions of Skinwalkers at the Pentagon
+- id: e5
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Harry Reid
+  wrap_path: /people/harry-reid
+  context_summary: 'Late U.S. Senator (D-NV); referenced in the PART 1 teaser for PART 2 — "Nevada Senator Harry Reid told us before his death that the race is real and that we''d better win it"'
+- id: e6
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Jay Stratton
+  wrap_path: /people/jay-stratton
+  context_summary: Former head of the UAP Task Force; named by Corbell as having "also does great work trying to find answers to these mysteries" before AARO replaced UAPTF
+- id: e7
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Dylan Borland
+  wrap_path: /people/dylan-borland
+  context_summary: Named by Lacatski as having summarized the HUMINT-discussion-with-Congress problem well — "Mr. Borland summarized it very well when he was directly asked, 'Can you talk to us in a SCIF?'"
+- id: e8
+  added_date: '2026-05-17'
+  entity_type: person
+  name: Dr. Tara O'Toole
+  wrap_path: /people/tara-otoole
+  context_summary: Named by Corbell as a person Lacatski met with on Kona Blue process; "she's staying away from it"; Corbell asks about her perspective on Kona Blue value; Lacatski declines to discuss her further
+- id: e9
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: AAWSAP — Advanced Aerospace Weapon System Applications Program
+  wrap_path: /organizations/aawsap
+  context_summary: 'The DIA UFO investigation program Lacatski directed; rendered "AASAP" / "AOSAP" in auto-caption — see naming_quirks'
+- id: e10
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: AATIP — Advanced Aerospace Threat Identification Program
+  wrap_path: /organizations/aatip
+  context_summary: 'Pentagon program separate from AAWSAP; Lacatski says the Pentagon publicly states AATIP "was not a UFO program. They''ve changed their tune"'
+- id: e11
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: BAASS — Bigelow Aerospace Advanced Space Studies
+  wrap_path: /organizations/baass
+  context_summary: 'Bigelow contractor that executed AAWSAP; rendered "Bass" in auto-caption; Lacatski says BAASS "was up to speed so fast"'
+- id: e12
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Kona Blue Program (KBP)
+  wrap_path: /organizations/kona-blue
+  context_summary: The follow-on program to AAWSAP per Lacatski's PART 1 self-attestation — he was the DIA program manager. Both a compartment and a program; Lacatski says he should not use past tense for Kona Blue
+- id: e13
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Defense Intelligence Agency (DIA)
+  wrap_path: /organizations/dia
+  context_summary: AAWSAP's home agency at DIA; Lacatski's employer; the records were assembled "only from official government files at DIA"
+- id: e14
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Department of Defense (DoD)
+  wrap_path: /organizations/dod
+  context_summary: 'Lacatski says the four books were "approved for release by the Department of Defense or War"; Pentagon "states that AATIP really AATIP was not a UFO program"'
+- id: e15
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: Department of Homeland Security (DHS)
+  wrap_path: /organizations/dhs
+  context_summary: Where Lacatski made statements about Kona Blue per his account; Lacatski says DHS released a "very good write-up" on Kona Blue with "a key sentence in there"
+- id: e16
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: All-Domain Anomaly Resolution Office (AARO)
+  wrap_path: /organizations/aaro
+  context_summary: Current DoD UAP office; subject of Lacatski's most pointed critique in PART 1 — Lacatski has refused two AARO meeting requests and characterizes AARO as a "disinformation campaign" steering the public conversation
+- id: e17
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: WEAPONIZED Podcast
+  wrap_path: /organizations/weaponized-podcast
+  context_summary: George Knapp + Jeremy Corbell's podcast; venue for this PART 1 interview
+- id: e18
+  added_date: '2026-05-17'
+  entity_type: document
+  name: Skinwalkers at the Pentagon (2021)
+  wrap_path: /documents/skinwalkers-at-the-pentagon-2021
+  context_summary: 'Book #1 in the Lacatski / Kelleher / Knapp series; Lacatski says Kelleher "wrote it in the rear portions of Skinwalkers at the Pentagon" — suggested private money for Kona Blue'
+- id: e19
+  added_date: '2026-05-17'
+  entity_type: document
+  name: 'Inside the US Government Covert UFO Program: Initial Revelations (2023)'
+  wrap_path: /documents/inside-us-gov-covert-ufo-2023
+  context_summary: 'Book #2 in the Lacatski series; recapped at length in PART 1 as the source of the 2011 Capitol "craft of unknown origin" passage'
+- id: e20
+  added_date: '2026-05-17'
+  entity_type: transcript
+  name: WEAPONIZED Episode 38 (2023)
+  wrap_path: /transcripts/weaponized-038-lacatski-kelleher-2023
+  context_summary: The 2023 EP 38 Lacatski / Kelleher interview that PART 1 follows up on — Knapp says "it's been a couple years since you've been on Weaponized, almost to the day"
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-17'
+  observed: AASAP
+  canonical: AAWSAP
+  location: '[0:02], [0:15], [2:03], [4:48], [9:00], etc.'
+  source_path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "AAWSAP" as "AASAP" throughout PART 1. Preserved as it appears.
+- id: nq2
+  added_date: '2026-05-17'
+  observed: AOSAP
+  canonical: AAWSAP
+  location: '[56:15], [56:21]'
+  source_path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption variant of "AAWSAP" as "AOSAP" in the closing Corbell question about achieving levitating craft. Preserved as it appears.
+- id: nq3
+  added_date: '2026-05-17'
+  observed: Bass
+  canonical: BAASS
+  location: '[31:08]'
+  source_path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "BAASS" as "Bass" in Lacatski's statement that "Bass was up to speed so fast." Preserved as it appears.
+- id: nq4
+  added_date: '2026-05-17'
+  observed: Column
+  canonical: Colm
+  location: '[24:05]'
+  source_path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders Colm Kelleher's first name as "Column" in Lacatski's reference to Kelleher having written about private money "in the rear portions of Skinwalkers at the Pentagon." Preserved as it appears.
+- id: nq5
+  added_date: '2026-05-17'
+  observed: Kitaski
+  canonical: Lacatski
+  location: '[44:22]'
+  source_path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption variant of "Lacatski" as "Kitaski" in Corbell's reference to "Dr. Kitaski, get in trouble" about the books-vs-Congress framing. Preserved as it appears.
+- id: nq6
+  added_date: '2026-05-17'
+  observed: Arrow
+  canonical: AARO
+  location: '[20:23], [20:31], [20:42], [26:50], etc.'
+  source_path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "AARO" as "Arrow" in multiple Corbell turns about AARO's role and behavior. Preserved as it appears.
+- id: nq7
+  added_date: '2026-05-17'
+  observed: Tar O'Toole
+  canonical: Tara O'Toole
+  location: '[26:03]'
+  source_path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "Tara O'Toole" as "Tar O'Toole" in Corbell's question about Lacatski's meeting with her. Preserved as it appears.
+- id: nq8
+  added_date: '2026-05-17'
+  observed: Walker
+  canonical: Skinwalker
+  location: '[39:17]'
+  source_path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: YouTube auto-caption renders "Skinwalker" as "Walker" / "books, Walker" in Corbell's vampire-and-Skinwalker remark. Preserved as it appears.

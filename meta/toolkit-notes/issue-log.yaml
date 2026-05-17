@@ -14090,3 +14090,116 @@
     credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, distinguished, launch, proposer, sd004, venue, wire
   tokens: [2021, distinguished, launch, proposer, sd004, venue, wire]
 
+- ts: 2026-05-17T17:39:02Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-lacatski-part1-2025.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 30 significant token(s) not in source (prose-drift check — contributor review): 2011, 2025, auto-caption, capitol, clarifies, corbell, dopsr-cleared, episode, … (+22 more — pass --verbose for full list)
+  tokens: [2011, 2025, auto-caption, capitol, clarifies, corbell, dopsr-cleared, episode, fifth, hosted, kellerer, knap, linked, manifest, narrows, november, opening, passage, per, pivots, plans, possibly, prepared, pressed, provenance, reads, recaps, solo, uap-paranormal, yaml]
+
+- ts: 2026-05-17T17:41:25Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/weaponized-lacatski-part1-2025.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 10 significant token(s) not in source (prose-drift check — contributor review): cleared, entities, fifth, plans, possibly, prepared, pressed, reads, … (+2 more — pass --verbose for full list)
+  tokens: [cleared, entities, fifth, plans, possibly, prepared, pressed, reads, recaps, recovered]
+
+- ts: 2026-05-17T17:42:17Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part1-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 129 NOT FOUND in sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md: "[11:43] I have been requested to meet with AARO twice and have refused. The seco..."
+
+- ts: 2026-05-17T17:42:17Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part1-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 225 NOT FOUND in sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md: "[39:51] Now, without going outside of those bounds, do you stand behind this tha..."
+
+- ts: 2026-05-17T17:42:27Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part1-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 129 NOT FOUND in sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md: "[11:43] I have been requested to meet with AARO twice and have refused. The seco..."
+
+- ts: 2026-05-17T17:42:27Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part1-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 225 NOT FOUND in sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md: "[39:51] Now, without going outside of those bounds, do you stand behind this tha..."
+
+- ts: 2026-05-17T17:42:46Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part1-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 129 NOT FOUND in sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md: "[11:43] I have been requested to meet with AARO twice and have refused. The seco..."
+
+- ts: 2026-05-17T17:42:46Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part1-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 225 NOT FOUND in sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md: "[39:51] Now, without going outside of those bounds, do you stand behind this tha..."
+
+- ts: 2026-05-17T17:54:06Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part1-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 225 NOT FOUND in sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md: "[39:51] Now, without going outside of those bounds, do you stand behind this tha..."
+
+- ts: 2026-05-17T17:54:16Z
+  source: validator
+  check: verbatim_quotes
+  phase: validate
+  node: transcripts/weaponized-lacatski-part1-2025.md
+  node_type: transcript
+  severity: error
+  message: |
+    Quote at line 225 NOT FOUND in sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md: "[39:51] Now, without going outside of those bounds, do you stand behind this tha..."
+
+- ts: 2026-05-17T17:57:23Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/james-lacatski.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 7 significant token(s) not in source (prose-drift check — contributor review): 2021, distinguished, launch, proposer, sd004, venue, wire
+  tokens: [2021, distinguished, launch, proposer, sd004, venue, wire]
+
