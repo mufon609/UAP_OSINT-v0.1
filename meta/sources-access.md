@@ -171,68 +171,123 @@ photo metadata in two unauthenticated calls.
 ## YouTube (youtube.com)
 
 **Problem:** Video pages are JavaScript-heavy and don't yield useful
-content via `curl` or WebFetch. Video files can't be meaningfully
-archived as HTML. Some IPs (cloud provider ranges, VPN exit nodes,
-sustained-scraping IPs) hit YouTube's anti-bot wall and are rejected
-by both `youtube-transcript-api` ("YouTube is blocking requests from
-your IP") and `yt-dlp` ("Sign in to confirm you're not a bot") even
-with `--cookies-from-browser` and a JS runtime in place.
+content via `curl` or WebFetch. Many residential / VPN / cloud IP
+ranges hit YouTube's anti-bot wall and are rejected by
+`youtube-transcript-api` ("YouTube is blocking requests from your
+IP") and `yt-dlp` ("Sign in to confirm you're not a bot"). Cookie-
+based authentication via yt-dlp consistently bypasses the block,
+but `--cookies-from-browser firefox` can't extract cookies if
+Firefox is running with its default cookie protections engaged.
 
-**What works (in priority order):**
+### Canonical caption-archival workflow
 
-- **`scripts/tools/transcribe.py URL`** — first attempt. Uses
-  `youtube-transcript-api` to download captions (auto-generated or
-  manual). Formats as timestamped markdown to `sources/transcripts/`.
-- **`yt-dlp` with `--cookies-from-browser firefox` and a JS runtime
-  (`deno`)** — second attempt. Modern yt-dlp requires a JS runtime
-  to navigate YouTube's anti-bot challenge; install `deno` if missing
-  (`curl -fsSL https://deno.land/install.sh | sh`). Use this path
-  for full video downloads (subject to the "Large primary-source
-  files (>100MB)" section below) or as a transcribe.py fallback.
-- **Manual paste from YouTube's "Show transcript" UI** — fallback
-  when both extraction libraries are IP-blocked. Open the video in
-  a browser, click the three-dot menu → "Show transcript", select
-  all, copy, paste into a file at `sources/transcripts/<descriptive-name>.txt`.
-  The pasted text concatenates `<H:MM:SS><spelled-out-duration><line text>`
-  per line without separators (a screen-reader accessibility artifact
-  of YouTube's transcript pane); strip the duration overlay with this
-  Python regex before registering:
+**Three steps, one tool per step.** Steps 1 + 2 are one-time
+per session; step 3 is per-video.
 
-  ```python
-  import re
-  LINE_RE = re.compile(
-      r'^'
-      r'(?P<ts>\d{1,2}(?::\d{2}){1,2})'
-      r'\d+\s+(?:hour|minute|second)s?'
-      r'(?:,\s+\d+\s+(?:hour|minute|second)s?){0,2}'
-      r'(?P<text>.*)$'
-  )
-  # Apply per line; replace each match with f'[{ts}] {text}'.
-  ```
+1. **Configure Firefox prereqs** (one-time setup; persistent across
+   sessions until you change Firefox settings):
 
-  Strip the trailing `Sync to video time` UI artifact at the bottom of
-  the paste. Register in manifest with `format: transcript`, noting
-  the manual-paste origin and the cleanup applied.
+   - `about:preferences#privacy` → **Enhanced Tracking Protection:
+     Standard** (NOT Strict — Total Cookie Protection partitioning
+     hides cookies from sqlite extraction)
+   - Uncheck **"Delete cookies and site data when Firefox is closed"**
+   - History: **"Remember history"** (not "Never remember" /
+     "Custom" with clear-on-close)
+   - Log into `https://youtube.com` in a **regular** (non-private)
+     window; click a video so the session writes to `cookies.sqlite`
 
-**Notes on the manual-paste discipline:**
+2. **Extract cookies** via `scripts/tools/extract-firefox-cookies.py`:
 
-- Auto-caption typos (`bigalow`, `lockie martin`, etc.) are preserved
-  verbatim per `feedback_transcript_timestamps_in_quotes.md`. Log
-  source-form-vs-canonical variances in the artifact's `naming_quirks`
+   ```
+   python3 scripts/tools/extract-firefox-cookies.py --output /tmp/yt-cookies.txt
+   ```
+
+   No browser extension, no manual paste, **Firefox stays open**.
+   Opens `cookies.sqlite` in read-only + `immutable=1` URI mode to
+   bypass Firefox's write locks; writes Netscape-format cookies.txt
+   at 0600 perms. Auto-detects the default-esr profile. Reports zero-
+   cookie failures with a diagnostic checklist pointing back at the
+   prereqs above.
+
+3. **Download captions** via `scripts/tools/transcribe.py URL --cookies /tmp/yt-cookies.txt`:
+
+   `transcribe.py` tries `youtube-transcript-api` first (no cookies
+   needed) when `--cookies` is absent. With `--cookies` supplied
+   (or on API failure with no cookies), it falls back to yt-dlp,
+   downloads JSON3 captions, converts to the canonical `[MM:SS] text`
+   markdown format internally, writes to `sources/transcripts/{slug}-downloaded.md`.
+
+   Then register in manifest as documented in the script's output:
+
+   ```
+   python3 scripts/tools/manifest.py add URL --path transcripts/{slug}-downloaded.md --format transcript
+   ```
+
+   Manually append `transcript_provenance: auto-caption` to the
+   manifest entry (the `manifest.py add` CLI doesn't expose the
+   field yet — minor ergonomics gap, fix-when-needed).
+
+**After the session**, securely delete the cookies file:
+
+```
+shred -u /tmp/yt-cookies.txt
+```
+
+The cookies authenticate full Google account access, not just
+YouTube. Rotate the Google session if the cookies were ever pasted
+inline into a contributor-AI conversation transcript.
+
+### Last-resort fallback — manual paste from "Show transcript" UI
+
+When even cookies-authenticated yt-dlp fails (rare; YouTube format
+restrictions on specific videos, signed-out-only content, etc.):
+open the video in a browser, click the three-dot menu under the
+video → "Show transcript", select all in the transcript pane,
+copy, paste into a file at
+`sources/transcripts/<descriptive-name>.txt`. The pasted text
+concatenates `<H:MM:SS><spelled-out-duration><line text>` per line
+without separators (a screen-reader accessibility artifact of
+YouTube's transcript pane); strip the duration overlay with this
+Python regex before registering:
+
+```python
+import re
+LINE_RE = re.compile(
+    r'^'
+    r'(?P<ts>\d{1,2}(?::\d{2}){1,2})'
+    r'\d+\s+(?:hour|minute|second)s?'
+    r'(?:,\s+\d+\s+(?:hour|minute|second)s?){0,2}'
+    r'(?P<text>.*)$'
+)
+# Apply per line; replace each match with f'[{ts}] {text}'.
+```
+
+Strip the trailing `Sync to video time` UI artifact at the bottom
+of the paste. Register in manifest with `format: transcript`,
+noting the manual-paste origin and the cleanup applied.
+
+### Notes on the auto-caption discipline
+
+- Auto-caption typos (`bigalow`, `lockie martin`, `latsky` for
+  Lacatski, `kellerer` for Kelleher, etc.) are preserved verbatim
+  per `feedback_transcript_timestamps_in_quotes.md`. Log source-
+  form-vs-canonical variances in the artifact's `naming_quirks`
   with `resolution: preserve-as-sic-in-quotes`.
-- The cleaned `[H:MM:SS] text` shape matches what `transcribe.py`
-  produces, so downstream tooling (verbatim-quote check, prose-drift
-  tokenizer) treats the paste indistinguishably from a CLI download.
-- If the video is auto-caption-derived (most), the audio-vs-caption-
-  as-source-of-record framing is governed by the `transcript_provenance`
-  convention (see `meta/conventions.md` "Transcript provenance and
-  audit discipline"); the manual-paste path inherits the same
-  per-provenance discipline.
+- All three paths above produce the same `[MM:SS] text` shape, so
+  downstream tooling (verbatim-quote check, prose-drift tokenizer)
+  treats them indistinguishably.
+- The audio-vs-caption-as-source-of-record framing is governed by
+  the `transcript_provenance` convention (see `meta/conventions.md`
+  "Transcript provenance and audit discipline"); cookies-
+  authenticated yt-dlp output is `auto-caption` provenance, same
+  as the API path and the manual-paste fallback.
 
-Surfaced: 2026-05-06 Ryder build session — IP-blocked YouTube
-extraction forced manual-paste fallback for the 2025-09-09 House
-Oversight UAP hearing transcript; cleanup regex captured here so
-the next session doesn't re-derive it.
+Surfaced: 2026-05-06 Ryder build session (IP-blocked extraction
+forced manual-paste for the 2025-09-09 hearing transcript;
+cleanup regex captured then). 2026-05-17 Lacatski Weaponized
+archival session (6 episodes; cookies-extractor +
+yt-dlp-fallback workflow shipped as the canonical path; manual
+paste demoted to last resort).
 
 ---
 

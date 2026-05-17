@@ -1,29 +1,49 @@
 #!/usr/bin/env python3
-"""
-Download a YouTube transcript (auto-generated or manual captions) and save
-as markdown to sources/transcripts/.
+"""Download a YouTube transcript (auto-generated or manual captions) and
+save as markdown to sources/transcripts/.
+
+Two extraction paths, tried in order:
+
+  1. youtube-transcript-api — fast, no auth needed, but YouTube blocks
+     many residential / VPN / cloud IP ranges with "YouTube is blocking
+     requests from your IP".
+
+  2. yt-dlp fallback — used automatically when the API path fails, OR
+     unconditionally when --cookies is supplied. yt-dlp uses different
+     network paths than the API and combined with authenticated cookies
+     (see scripts/tools/extract-firefox-cookies.py) reliably reaches
+     YouTube when the API path is blocked.
 
 Usage:
-  transcribe.py URL
-  transcribe.py URL --slug custom-name
-  transcribe.py URL --raw              # also save raw JSON segments
+    transcribe.py URL                              # API only; fallback to yt-dlp on failure
+    transcribe.py URL --cookies /tmp/yt.txt        # skip API; go straight to yt-dlp w/ cookies
+    transcribe.py URL --slug custom-name           # custom output filename
+    transcribe.py URL --raw                        # also save raw segments JSON
 
-Requires: yt-dlp (for fallback) OR youtube-transcript-api.
-Install:  pip install youtube-transcript-api
+Cookies are produced by scripts/tools/extract-firefox-cookies.py (see
+its docstring for Firefox-side prereqs).
+
+Requires: youtube-transcript-api  (pip install youtube-transcript-api)
+Optional: yt-dlp                  (pip install yt-dlp)
+          deno                    (for yt-dlp JS challenge solver; only
+                                   needed for video downloads, not for
+                                   caption-only extraction)
 """
 
 import argparse
 import json
+import os
 import re
+import shutil
+import subprocess
 import sys
+import tempfile
 from datetime import date
 from pathlib import Path
 
-# scripts/tools/transcribe.py — put the scripts/ parent on sys.path so
-# `from lib._common` resolves from this nested location.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from lib._common import REPO_ROOT
+from lib._common import REPO_ROOT  # noqa: E402
 
 TRANSCRIPTS_DIR = REPO_ROOT / "sources" / "transcripts"
 
@@ -41,20 +61,77 @@ def extract_video_id(url):
 
 def fetch_via_api(video_id):
     """Fetch transcript via youtube-transcript-api. Returns list of
-    ``{text, start, duration}`` dicts via the instance method
-    ``YouTubeTranscriptApi().fetch(video_id).to_raw_data()``.
-    """
+    ``{text, start, duration}`` dicts. Raises RuntimeError on any
+    failure (caller decides whether to fall back)."""
     try:
         from youtube_transcript_api import YouTubeTranscriptApi
     except ImportError:
-        print("ERROR: pip install youtube-transcript-api", file=sys.stderr)
-        sys.exit(1)
+        raise RuntimeError("youtube-transcript-api not installed (pip install youtube-transcript-api)")
 
     try:
         return YouTubeTranscriptApi().fetch(video_id).to_raw_data()
     except Exception as e:
-        print(f"ERROR fetching transcript: {e}", file=sys.stderr)
-        sys.exit(1)
+        raise RuntimeError(f"youtube-transcript-api failed: {e}")
+
+
+def fetch_via_ytdlp(video_id, cookies_path=None):
+    """Fall back to yt-dlp when youtube-transcript-api is blocked or
+    when the caller explicitly opts in via --cookies. Downloads JSON3
+    captions, converts to the same ``{text, start, duration}`` shape
+    fetch_via_api returns."""
+    if not shutil.which("yt-dlp"):
+        raise RuntimeError("yt-dlp not installed (pip install yt-dlp)")
+
+    with tempfile.TemporaryDirectory(prefix="transcribe-ytdlp-") as tmpdir:
+        output_stem = f"{tmpdir}/cap"
+        cmd = [
+            "yt-dlp",
+            "--skip-download",
+            "--write-auto-subs",
+            "--sub-lang", "en",
+            "--sub-format", "json3",
+            "--ignore-no-formats-error",
+            "-o", output_stem,
+            f"https://www.youtube.com/watch?v={video_id}",
+        ]
+        if cookies_path:
+            cmd[1:1] = ["--cookies", str(cookies_path)]
+        try:
+            subprocess.run(cmd, check=True, capture_output=True, text=True)
+        except subprocess.CalledProcessError as e:
+            raise RuntimeError(f"yt-dlp failed:\n{e.stderr}")
+
+        json3_path = f"{output_stem}.en.json3"
+        if not os.path.exists(json3_path):
+            raise RuntimeError(
+                "yt-dlp completed but wrote no captions file. "
+                "Video may have no English captions available."
+            )
+
+        with open(json3_path) as f:
+            data = json.load(f)
+        return _json3_to_segments(data)
+
+
+def _json3_to_segments(data):
+    """Convert yt-dlp JSON3 event format to the
+    ``{text, start, duration}`` shape used by render_markdown.
+    Skips window-setup events with no ``segs`` array and empty-text
+    events."""
+    segments = []
+    for ev in data.get("events", []):
+        segs = ev.get("segs")
+        if not segs:
+            continue
+        text = "".join(s.get("utf8", "") for s in segs).replace("\n", " ").strip()
+        if not text:
+            continue
+        segments.append({
+            "text": text,
+            "start": ev.get("tStartMs", 0) / 1000.0,
+            "duration": ev.get("dDurationMs", 0) / 1000.0,
+        })
+    return segments
 
 
 def format_timestamp(seconds):
@@ -90,7 +167,12 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("url")
     parser.add_argument("--slug", help="Output slug (default: video ID)")
-    parser.add_argument("--raw", action="store_true", help="Also save raw JSON")
+    parser.add_argument("--cookies", help=(
+        "Path to a Netscape-format cookies.txt (see "
+        "extract-firefox-cookies.py). When supplied, the API path is "
+        "skipped and yt-dlp is used directly."
+    ))
+    parser.add_argument("--raw", action="store_true", help="Also save raw segments JSON")
     args = parser.parse_args()
 
     video_id = extract_video_id(args.url)
@@ -100,7 +182,26 @@ def main():
     slug = args.slug or video_id
     TRANSCRIPTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    segments = fetch_via_api(video_id)
+    # Fetch path selection:
+    #   --cookies set → user explicitly wants yt-dlp; skip API
+    #   otherwise → API first, yt-dlp fallback on failure
+    segments = None
+    if args.cookies:
+        print("(--cookies supplied; using yt-dlp directly)", file=sys.stderr)
+        try:
+            segments = fetch_via_ytdlp(video_id, args.cookies)
+        except RuntimeError as e:
+            sys.exit(f"ERROR: {e}")
+    else:
+        try:
+            segments = fetch_via_api(video_id)
+        except RuntimeError as api_err:
+            print(f"(API path failed: {api_err})", file=sys.stderr)
+            print("(falling back to yt-dlp; supply --cookies if auth is needed)", file=sys.stderr)
+            try:
+                segments = fetch_via_ytdlp(video_id, cookies_path=None)
+            except RuntimeError as ytdlp_err:
+                sys.exit(f"ERROR: yt-dlp fallback also failed:\n  {ytdlp_err}")
 
     md_path = TRANSCRIPTS_DIR / f"{slug}-downloaded.md"
     md_path.write_text(render_markdown(segments, args.url, video_id, slug))

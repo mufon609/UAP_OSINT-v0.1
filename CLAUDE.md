@@ -199,7 +199,8 @@ landing rules.
 |---|---|
 | `manifest.py` | Manage `sources/manifest.yaml` (add, verify-paths, verify-checksums, …) |
 | `archive.py` | Submit URLs to the Wayback Machine |
-| `transcribe.py` | Download YouTube captions to `sources/transcripts/` |
+| `transcribe.py` | Download YouTube captions to `sources/transcripts/`. Tries `youtube-transcript-api` first; falls back to yt-dlp automatically when blocked. Accepts `--cookies PATH` to skip the API path and use yt-dlp with authentication directly (see `extract-firefox-cookies.py`). |
+| `extract-firefox-cookies.py` | Extract Firefox cookies to Netscape `cookies.txt` for use with yt-dlp / `transcribe.py --cookies`. Reads `cookies.sqlite` in read-only + `immutable=1` mode so Firefox can stay open; no browser extension, no manual paste. Auto-detects the default-esr profile. See `meta/sources-access.md` "YouTube" for the prereqs + canonical workflow. |
 | `normalize-locations.py` | Diagnostic for quote `source.location` refs — surfaces deprecated `lines N-M` forms with actual line ranges and canonical-form proposals (read-only) |
 | `check-vocab.py` | Pre-flight vocabulary check for prose-drift discipline — pools an artifact's primary-source significant tokens (shares `lib/_common.py`'s prose-drift tokenizer with `validate-research.py`) and reports per-input-token presence. Contributor convenience for drafting `description` / `background` / `top_relevance` / `credibility_notes` / synthesis-content `.note` fields against source vocabulary. |
 | `coverage-suggest.py` | Source-coverage audit aid — for each primary source on an artifact, surfaces (a) substantive source paragraphs that no quote references and (b) capitalized terms that appear in the source but nowhere in the artifact. Forward-direction complement of the verbatim-quote check; flags likely under-extraction candidates. Read-only; contributor judges what's load-bearing vs. boilerplate. Useful at audit time on already-built nodes. |
