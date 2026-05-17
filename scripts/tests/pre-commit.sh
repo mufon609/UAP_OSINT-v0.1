@@ -20,6 +20,11 @@
 #   8. scripts/tests/file-size-check.sh      — git-tracked files within
 #                                              GitHub's size thresholds (warn
 #                                              50MB / error 100MB)
+#   9. scripts/tests/cookies-check.sh        — no tracked file contains
+#                                              Netscape cookies content or
+#                                              Google session cookies in
+#                                              Netscape-shape rows (defensive
+#                                              backstop to .gitignore patterns)
 #
 # Adding or removing a gate: edit the `steps` array below. Step
 # numbering ("N/total") regenerates automatically from the array length.
@@ -93,6 +98,7 @@ steps=(
     $'review-coverage.py\tpython3 scripts/build/review-coverage.py --all'
     $'build-state.py --check\tpython3 scripts/build/build-state.py --check'
     $'file-size-check\tbash scripts/tests/file-size-check.sh'
+    $'cookies-check\tbash scripts/tests/cookies-check.sh'
 )
 
 total=${#steps[@]}

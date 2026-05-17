@@ -7,3 +7,12 @@ __pycache__/
 # gitignore does not retroactively untrack files; new additions need
 # `git add -f` to override this rule.
 sources/video/
+
+# Session credentials — never commit. yt-dlp / Firefox cookies.txt files
+# authenticate full Google account access (SID, SAPISID, __Secure-*PSID,
+# LOGIN_INFO). The pre-commit `cookies-check` gate (scripts/tests/cookies-check.sh)
+# is the defensive backstop if a renamed file slips past these patterns.
+cookies.txt
+yt-cookies*.txt
+*.cookies.txt
+*cookies.sqlite*
