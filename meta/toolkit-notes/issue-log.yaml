@@ -14945,3 +14945,240 @@
     credibility_notes: 1 significant token(s) not in source (prose-drift check — contributor review): wire
   tokens: [wire]
 
+- ts: 2026-05-17T21:05:08Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "<unicode string>", line 184, column 291:
+         ... The Rending of the Veils, Part 1: Fairies, Devas and Unidentifie ... 
+                                             ^
+
+- ts: 2026-05-17T21:06:12Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[1] ('e2'): missing 'wrap_path'
+
+- ts: 2026-05-17T21:06:12Z
+  source: validator
+  check: entities_referenced
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    entities_referenced[4] ('e5'): missing 'wrap_path'
+
+- ts: 2026-05-17T21:06:12Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 96 significant token(s) not in source (prose-drift check — contributor review): 000-40, 0c171ef640, 10-11, 2017, 222366976, 25-30, alice, anchors, … (+88 more — pass --verbose for full list)
+  tokens: [000-40, 0c171ef640, 10-11, 2017, 222366976, 25-30, alice, anchors, applied, arcane, art, asks, ayahuasca-induced, bailey, bio, blackburn, bridges, cave, claims, closes, conference, confirms, contemporary, continuity, continuous, depicting, depictions, describes, deva, distinguishes, e-magonia, entity-type, eschatological, establishes, events, explicit, facial, features, force, framed, frames, grey, half, health, iconography, introducing, jet, june, lee, london, lucis, lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript, methodological, moderator, movement, nations, noting, on-record, paired, prehistoric, premise, presents, privacy-hash, programme, recurring, reference, russian-american, ryder, school, share, sharing, sources, style, subjects, substantive, summary, surveillance, synthesis, synthesises, terminology, theosophical, title, tradition, transcript, transcripts, trust, txt, ufo-encounter, unlisted, url, vall, verbatim, via, vimeo, visions, whisper-derived]
+
+- ts: 2026-05-17T21:06:33Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 96 significant token(s) not in source (prose-drift check — contributor review): 000-40, 0c171ef640, 10-11, 2017, 222366976, 25-30, alice, anchors, … (+88 more — pass --verbose for full list)
+  tokens: [000-40, 0c171ef640, 10-11, 2017, 222366976, 25-30, alice, anchors, applied, arcane, art, asks, ayahuasca-induced, bailey, bio, blackburn, bridges, cave, claims, closes, conference, confirms, contemporary, continuity, continuous, depicting, depictions, describes, deva, distinguishes, e-magonia, entity-type, eschatological, establishes, events, explicit, facial, features, force, framed, frames, grey, half, health, iconography, introducing, jet, june, lee, london, lucis, lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript, methodological, moderator, movement, nations, noting, on-record, paired, prehistoric, premise, presents, privacy-hash, programme, recurring, reference, russian-american, ryder, school, share, sharing, sources, style, subjects, substantive, summary, surveillance, synthesis, synthesises, terminology, theosophical, title, tradition, transcript, transcripts, trust, txt, ufo-encounter, unlisted, url, vall, verbatim, via, vimeo, visions, whisper-derived]
+
+- ts: 2026-05-17T21:08:15Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 28 significant token(s) not in source (prose-drift check — contributor review): 2017, arcane, ayahuasca-induced, blackburn, cave, closed, conference, confirmed, … (+20 more — pass --verbose for full list)
+  tokens: [2017, arcane, ayahuasca-induced, blackburn, cave, closed, conference, confirmed, encounter, force, framed, health, jet, june, lee, london, lucis, moderator, named, opening, paired, prehistoric, presented, ryder, school, summarised, trust, upper-atmosphere]
+
+- ts: 2026-05-17T21:09:19Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 6 significant token(s) not in source (prose-drift check — contributor review): discuss, ended, introduces, moderator, opening, ryder
+  tokens: [discuss, ended, introduces, moderator, opening, ryder]
+
+- ts: 2026-05-17T21:10:55Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 1 significant token(s) not in source (prose-drift check — contributor review): ryder
+  tokens: [ryder]
+
+- ts: 2026-05-17T21:11:59Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e2' ('Lawrence') wrap_path '/people/lawrence-lucis-trust-moderator' does not appear as a [`/people/lawrence-lucis-trust-moderator`] link in the node
+
+- ts: 2026-05-17T21:11:59Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e5' ('Stephen Phillips') wrap_path '/people/stephen-phillips-chemist' does not appear as a [`/people/stephen-phillips-chemist`] link in the node
+
+- ts: 2026-05-17T21:11:59Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e6' ('Dr. Lee Blackburn') wrap_path '/people/lee-blackburn' does not appear as a [`/people/lee-blackburn`] link in the node
+
+- ts: 2026-05-17T21:11:59Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e7' ('Lucis Trust') wrap_path '/organizations/lucis-trust' does not appear as a [`/organizations/lucis-trust`] link in the node
+
+- ts: 2026-05-17T21:11:59Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e8' ('Lucis Trust Arcane School') wrap_path '/organizations/lucis-trust-arcane-school' does not appear as a [`/organizations/lucis-trust-arcane-school`] link in the node
+
+- ts: 2026-05-17T21:11:59Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('Lockheed Martin Space Systems Company') wrap_path '/organizations/lockheed-martin-space-systems-company' does not appear as a [`/organizations/lockheed-martin-space-systems-company`] link in the node
+
+- ts: 2026-05-17T21:12:35Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 9 significant token(s) not in source (prose-drift check — contributor review): arcane, companion, force, gave, health, lee, lucis, school, … (+1 more — pass --verbose for full list)
+  tokens: [arcane, companion, force, gave, health, lee, lucis, school, trust]
+
+- ts: 2026-05-17T21:12:38Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    description: 9 significant token(s) not in source (prose-drift check — contributor review): arcane, companion, force, gave, health, lee, lucis, school, … (+1 more — pass --verbose for full list)
+  tokens: [arcane, companion, force, gave, health, lee, lucis, school, trust]
+
+- ts: 2026-05-17T21:14:08Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e6' ('Dr. Lee Blackburn') wrap_path '/people/lee-blackburn' does not appear as a [`/people/lee-blackburn`] link in the node
+
+- ts: 2026-05-17T21:14:08Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e7' ('Lucis Trust') wrap_path '/organizations/lucis-trust' does not appear as a [`/organizations/lucis-trust`] link in the node
+
+- ts: 2026-05-17T21:14:08Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e8' ('Lucis Trust Arcane School') wrap_path '/organizations/lucis-trust-arcane-school' does not appear as a [`/organizations/lucis-trust-arcane-school`] link in the node
+
+- ts: 2026-05-17T21:15:02Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "<unicode string>", line 47, column 454:
+         ... /people/lee-blackburn`]) "Part 2: The Violet Force and Health".
+                                             ^
+
+- ts: 2026-05-17T21:15:02Z
+  source: validator
+  check: artifact_parse
+  phase: validate-research
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "<unicode string>", line 47, column 454:
+         ... /people/lee-blackburn`]) "Part 2: The Violet Force and Health".
+                                             ^
+
+- ts: 2026-05-17T21:15:02Z
+  source: validator
+  check: artifact_parse
+  phase: review-coverage
+  node: meta/research/lucistrust-rending-veils-ryder-2017.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    YAML parse failure: mapping values are not allowed here
+      in "/home/neural/Desktop/uap-research/REFACTOR/meta/research/lucistrust-rending-veils-ryder-2017.yaml", line 47, column 454
+

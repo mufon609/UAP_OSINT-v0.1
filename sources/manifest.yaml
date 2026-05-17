@@ -1661,8 +1661,18 @@
   archived_date: '2026-05-06'
   sha256: ee20dbe48398accfecdb1c7f367893becb3f558f476b283fdaccc3d6ff322eef
   archive_status: 3
-  note: '''The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena'' — Dr. James T. Ryder. Lucis Trust Arcane School Conference, London, 17-18 June 2017. Duration 1:01:06. Vimeo video ID 222366976 (unlisted with privacy-hash share URL ''0c171ef640''). No caption/subtitle tracks. Source video preserved for primary-source archival; speech-to-text transcription deferred (will be run on contributor''s desktop with whisper at a later session, then registered as a separate transcript-format manifest entry per /meta/conventions.md siblings discipline). Ryder''s own voice — institutional self-attestation of his Lockheed Martin Space Systems VP role + Advanced Technology Center leadership, in his own words.'
+  note: '''The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena'' — Dr. James T. Ryder. Lucis Trust Arcane School Conference, London, 17-18 June 2017. Duration 1:01:06. Vimeo video ID 222366976 (unlisted with privacy-hash share URL ''0c171ef640''). No caption/subtitle tracks. Source video preserved for primary-source archival; whisper-derived transcript at sibling path transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt (separate manifest entry below). Ryder''s own voice — institutional self-attestation of his Lockheed Martin Space Systems VP role + Advanced Technology Center leadership, in his own words.'
   wayback_date: '2025-09-03'
+- url: https://vimeo.com/222366976/0c171ef640
+  format: transcript
+  status: archived
+  path: transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt
+  archived_date: '2026-05-17'
+  sha256: 4413c840f451403e69e0668e01495b9067b9434a8831211c9e057b32c19d93a1
+  archive_status: 3
+  note: 'Whisper-derived transcript of Dr. James T. Ryder''s presentation ''The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena'' at the Lucis Trust Arcane School Conference, London, 10-11 June 2017 (Vimeo video ID 222366976, runtime 1:01:06). Sibling artifact to the parent Vimeo video entry above. Transcript provenance: faster-whisper large-v3 int8 CPU transcription run 2026-05-17 against the local Vimeo video archive (sources/video/lucistrust-rending-veils-pt1-ryder-2017-222366976.mp4) on a 4-core ARM64 VM; initial_prompt seeded with proper nouns (Puthoff, Targ, Vallée, Bailey, Constable, devas, Lockheed, IBEX, SAFIRE, Hancock) to bias proper-noun spellings. 1382 segments / 107.7 min runtime. Same canonical [MM:SS]-inline format as the corpus convention used by other auto-caption transcripts in /sources/transcripts/. Machine-generated with no human-corrected caption pass — auto-caption-class provenance, same audit discipline as YouTube auto-captions per meta/conventions.md "Transcript provenance and audit discipline".'
+  wayback_date: '2025-09-03'
+  transcript_provenance: auto-caption
 - url: https://web.archive.org/web/20021128162945/http://www.nidsci.org/whatsnew.html
   format: html
   status: archived
