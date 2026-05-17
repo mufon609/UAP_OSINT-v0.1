@@ -237,6 +237,37 @@ The cookies authenticate full Google account access, not just
 YouTube. Rotate the Google session if the cookies were ever pasted
 inline into a contributor-AI conversation transcript.
 
+### Memory-only workflow (no disk write)
+
+When you want cookies to never touch disk at all,
+`extract-firefox-cookies.py --stdout` emits the cookies to stdout
+and `transcribe.py --cookies -` reads them from stdin. yt-dlp
+receives them via `--cookies /dev/stdin` internally; the data
+flows through kernel pipe buffers, never landing in a file.
+
+```
+# Single-video chain (cookies in kernel pipe buffer only):
+python3 scripts/tools/extract-firefox-cookies.py --stdout |
+    python3 scripts/tools/transcribe.py URL --cookies -
+
+# Multi-video with shell variable (cookies in bash process memory):
+COOKIES=$(python3 scripts/tools/extract-firefox-cookies.py --stdout)
+printf '%s' "$COOKIES" | python3 scripts/tools/transcribe.py URL1 --cookies -
+printf '%s' "$COOKIES" | python3 scripts/tools/transcribe.py URL2 --cookies -
+unset COOKIES   # clears the variable from shell memory
+```
+
+`printf` is a bash builtin (args not visible via `/proc/PID/cmdline`),
+the pipe goes through an anonymous kernel pipe (no disk). The
+shell variable lives in the bash process's address space until
+`unset` or shell exit. **Do not `echo "$COOKIES"` to inspect** —
+that would expose the value to your shell history.
+
+Trade-off vs the disk-file workflow: the shell variable / pipe
+disappears when the shell exits, so re-extraction is needed for
+each new shell session. The disk-file workflow persists across
+shell sessions but needs explicit `shred -u` cleanup.
+
 ### Last-resort fallback — manual paste from "Show transcript" UI
 
 When even cookies-authenticated yt-dlp fails (rare; YouTube format

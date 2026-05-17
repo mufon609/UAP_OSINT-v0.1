@@ -42,6 +42,10 @@ errors=()
 
 while IFS= read -r path; do
     [ -f "$path" ] || continue
+    # Self-exclusion: this script legitimately documents the detection
+    # patterns it scans for (Netscape header + sensitive cookie names).
+    # Without this skip, the gate trips on its own source.
+    [ "$path" = "scripts/tests/cookies-check.sh" ] && continue
     bytes=$(stat -c '%s' "$path" 2>/dev/null || echo 0)
     [ "$bytes" -gt "$MAX_SCAN_BYTES" ] && continue
     case "$(file --mime-type -b "$path" 2>/dev/null)" in

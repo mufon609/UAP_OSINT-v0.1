@@ -3,19 +3,32 @@
 
 No browser extension. No manual paste. No need to close Firefox.
 Opens cookies.sqlite in read-only + immutable mode (bypasses Firefox's
-write locks; reads the last-committed state directly) and writes a
-Netscape-format cookies file (0600 perms).
+write locks; reads the last-committed state directly).
+
+Two output modes:
+
+  --output PATH   (default)  Write to a file at 0600 perms.
+                             Default path: /tmp/yt-cookies.txt
+
+  --stdout                   Print to stdout (no disk write). Status
+                             messages go to stderr so stdout is clean
+                             for piping or capture.
 
 Usage:
-    extract-firefox-cookies.py [--profile PATH] [--domain PATTERN]
-                               [--output PATH]
+    # Disk file (batch reuse):
+    extract-firefox-cookies.py --output /tmp/yt-cookies.txt
+    yt-dlp --cookies /tmp/yt-cookies.txt URL
+    shred -u /tmp/yt-cookies.txt   # when done
 
-Defaults:
-    --profile   auto-detect first *.default-esr in ~/.mozilla/firefox/
-                (falls back to *.default)
-    --domain    youtube google accounts.google (LIKE-pattern fragments;
-                repeatable)
-    --output    /tmp/yt-cookies.txt
+    # Stdin pipe (single command, never touches disk):
+    extract-firefox-cookies.py --stdout |
+        python3 scripts/tools/transcribe.py URL --cookies -
+
+    # Shell variable (multi-URL, never touches disk):
+    COOKIES=$(scripts/tools/extract-firefox-cookies.py --stdout)
+    printf '%s' "$COOKIES" | scripts/tools/transcribe.py URL1 --cookies -
+    printf '%s' "$COOKIES" | scripts/tools/transcribe.py URL2 --cookies -
+    unset COOKIES
 
 Firefox-side prereqs (one-time setup; cookies must actually persist
 to the on-disk store for sqlite3 to see them):
@@ -29,12 +42,7 @@ to the on-disk store for sqlite3 to see them):
        non-private window
     3. Visit the site briefly so the session writes to cookies.sqlite
 
-Then run this script while Firefox stays open. The atomic backup
-snapshot doesn't require Firefox to close.
-
-After use:
-    yt-dlp --cookies /tmp/yt-cookies.txt <URL>
-    shred -u /tmp/yt-cookies.txt   # when done
+Then run this script while Firefox stays open.
 """
 
 import argparse
@@ -60,7 +68,9 @@ def find_firefox_profile():
     return None
 
 
-def extract(cookies_db, domain_likes, output_path):
+def build_cookies_text(cookies_db, domain_likes):
+    """Query cookies.sqlite and return (text, count). Text is the full
+    Netscape cookies.txt body including header lines."""
     domain_clauses = " OR ".join(f"host LIKE '%{d}%'" for d in domain_likes)
 
     # immutable=1 tells sqlite to treat the file as read-only media,
@@ -90,10 +100,7 @@ def extract(cookies_db, domain_likes, output_path):
         lines.append(
             f"{host}\t{include_subs}\t{path}\t{secure}\t{expiry}\t{name}\t{value}"
         )
-
-    output_path.write_text("\n".join(lines) + "\n")
-    os.chmod(output_path, 0o600)
-    return len(rows)
+    return "\n".join(lines) + "\n", len(rows)
 
 
 def main():
@@ -114,11 +121,17 @@ def main():
             "youtube google accounts.google)"
         ),
     )
-    parser.add_argument(
+    out_group = parser.add_mutually_exclusive_group()
+    out_group.add_argument(
         "--output",
         type=Path,
-        default=DEFAULT_OUTPUT,
-        help=f"Output cookies.txt path (default: {DEFAULT_OUTPUT})",
+        default=None,
+        help=f"Output cookies.txt path (default: {DEFAULT_OUTPUT}; mutually exclusive with --stdout)",
+    )
+    out_group.add_argument(
+        "--stdout",
+        action="store_true",
+        help="Print cookies to stdout (no disk write). Status messages go to stderr.",
     )
     args = parser.parse_args()
 
@@ -131,14 +144,12 @@ def main():
         sys.exit(f"ERROR: cookies.sqlite not found at {cookies_db}")
 
     domain_likes = args.domain if args.domain else DEFAULT_DOMAIN_LIKES
-    count = extract(cookies_db, domain_likes, args.output)
+    text, count = build_cookies_text(cookies_db, domain_likes)
 
-    print(f"✓ Wrote {args.output} ({count} cookies, profile: {profile.name})")
     if count == 0:
         print(
-            "\nWARNING: Zero cookies extracted. Likely causes:\n"
-            "  - Firefox set to ETP Strict (Total Cookie Protection partitions "
-            "cookies)\n"
+            "ERROR: Zero cookies extracted. Likely causes:\n"
+            "  - Firefox set to ETP Strict (Total Cookie Protection partitions cookies)\n"
             "  - 'Delete cookies on close' is enabled\n"
             "  - You were in a private window when logging in\n"
             "  - You haven't logged into the target site yet\n"
@@ -147,7 +158,18 @@ def main():
         )
         sys.exit(2)
 
-    print(f"  Use with: yt-dlp --cookies {args.output} <URL>")
+    if args.stdout:
+        sys.stdout.write(text)
+        print(
+            f"✓ Emitted {count} cookies to stdout (profile: {profile.name})",
+            file=sys.stderr,
+        )
+    else:
+        output_path = args.output or DEFAULT_OUTPUT
+        output_path.write_text(text)
+        os.chmod(output_path, 0o600)
+        print(f"✓ Wrote {output_path} ({count} cookies, profile: {profile.name})")
+        print(f"  Use with: yt-dlp --cookies {output_path} <URL>")
 
 
 if __name__ == "__main__":

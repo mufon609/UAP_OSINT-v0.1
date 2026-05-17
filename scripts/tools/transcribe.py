@@ -16,9 +16,22 @@ Two extraction paths, tried in order:
 
 Usage:
     transcribe.py URL                              # API only; fallback to yt-dlp on failure
-    transcribe.py URL --cookies /tmp/yt.txt        # skip API; go straight to yt-dlp w/ cookies
+    transcribe.py URL --cookies /tmp/yt.txt        # skip API; yt-dlp with cookies from file
+    transcribe.py URL --cookies -                  # skip API; yt-dlp with cookies from stdin
+                                                   #   (cookies never touch disk)
     transcribe.py URL --slug custom-name           # custom output filename
     transcribe.py URL --raw                        # also save raw segments JSON
+
+Stdin-cookies workflow (cookies stay in process memory throughout):
+
+    # Single-video chain:
+    extract-firefox-cookies.py --stdout | transcribe.py URL --cookies -
+
+    # Multi-video with shell variable (extract once, transcribe many):
+    COOKIES=$(extract-firefox-cookies.py --stdout)
+    printf '%s' "$COOKIES" | transcribe.py URL1 --cookies -
+    printf '%s' "$COOKIES" | transcribe.py URL2 --cookies -
+    unset COOKIES
 
 Cookies are produced by scripts/tools/extract-firefox-cookies.py (see
 its docstring for Firefox-side prereqs).
@@ -78,9 +91,19 @@ def fetch_via_ytdlp(video_id, cookies_path=None):
     """Fall back to yt-dlp when youtube-transcript-api is blocked or
     when the caller explicitly opts in via --cookies. Downloads JSON3
     captions, converts to the same ``{text, start, duration}`` shape
-    fetch_via_api returns."""
+    fetch_via_api returns.
+
+    ``cookies_path`` accepts a file path OR the literal string ``"-"``
+    to read cookies from this process's stdin and pipe them to yt-dlp's
+    stdin (zero disk write — cookies stay in process memory)."""
     if not shutil.which("yt-dlp"):
         raise RuntimeError("yt-dlp not installed (pip install yt-dlp)")
+
+    stdin_cookies = None
+    if cookies_path == "-":
+        stdin_cookies = sys.stdin.read()
+        if not stdin_cookies.strip():
+            raise RuntimeError("--cookies - was set but stdin was empty")
 
     with tempfile.TemporaryDirectory(prefix="transcribe-ytdlp-") as tmpdir:
         output_stem = f"{tmpdir}/cap"
@@ -94,10 +117,23 @@ def fetch_via_ytdlp(video_id, cookies_path=None):
             "-o", output_stem,
             f"https://www.youtube.com/watch?v={video_id}",
         ]
-        if cookies_path:
+        if cookies_path == "-":
+            # yt-dlp's stdin-cookies syntax is /dev/stdin (Linux-specific).
+            # The bare "-" form is silently ignored without auth — verified
+            # 2026-05-17. Stays in-process: input=stdin_cookies pipes the
+            # data via kernel pipe to yt-dlp's stdin which it reads via
+            # /dev/stdin. No tmp file written.
+            cmd[1:1] = ["--cookies", "/dev/stdin"]
+        elif cookies_path:
             cmd[1:1] = ["--cookies", str(cookies_path)]
         try:
-            subprocess.run(cmd, check=True, capture_output=True, text=True)
+            subprocess.run(
+                cmd,
+                check=True,
+                capture_output=True,
+                text=True,
+                input=stdin_cookies,
+            )
         except subprocess.CalledProcessError as e:
             raise RuntimeError(f"yt-dlp failed:\n{e.stderr}")
 
@@ -168,9 +204,10 @@ def main():
     parser.add_argument("url")
     parser.add_argument("--slug", help="Output slug (default: video ID)")
     parser.add_argument("--cookies", help=(
-        "Path to a Netscape-format cookies.txt (see "
-        "extract-firefox-cookies.py). When supplied, the API path is "
-        "skipped and yt-dlp is used directly."
+        "Path to a Netscape-format cookies.txt, OR the literal '-' to "
+        "read cookies from stdin (no disk write). When supplied, the "
+        "API path is skipped and yt-dlp is used directly. See "
+        "extract-firefox-cookies.py for the cookies-acquisition workflow."
     ))
     parser.add_argument("--raw", action="store_true", help="Also save raw segments JSON")
     args = parser.parse_args()
