@@ -1789,6 +1789,15 @@
   archive_status: 3
   wayback_date: '2024-12-08'
   note: Wayback Machine snapshot 2024-12-08 of ORNL staff profile for Sean M. Kirkpatrick — last known live capture before the page was taken down. Original URL https://www.ornl.gov/staff-profile/sean-m-kirkpatrick. Documents the page's existence ~12 months into Kirkpatrick's ORNL CTO tenure; the page was 404 by 2024-12-22.
+- url: https://web.archive.org/web/20241212223146/https://www.irva.org/speaker/green-christopher
+  format: html
+  status: archived
+  path: news/irva-kit-green-wayback-20241212.html
+  archived_date: '2026-05-16'
+  sha256: 97d5efe1dfec9bf8d235e947fe1f50f4356a4faac8f84a5c0c8629ac93b0378e
+  archive_status: 3
+  wayback_date: '2024-12-12'
+  note: 'International Remote Viewing Association (IRVA) speaker biography page for Christopher (Kit) Green, M.D., Ph.D. — Wayback Machine snapshot dated 2024-12-12. Verbatim text of Green''s career biography as published by IRVA: U.S. Federal Government 1969 as Senior Division Analyst for neurosciences at the CIA; mid-1970s first analyst and program manager for Remote Viewing research; Branch Chief, Deputy Division Director, Assistant National Intelligence Officer for Science and Technology; General Motors Corporation 1985 (Life Materials and Environmental Sciences; later Executive Director Technology Intelligence; later Chief Technology Officer GM Asia Pacific Operations); Wayne State School of Medicine faculty 2002 onward; NAS/NRC TIGER committee founder; National Intelligence Medal; Fellow in American Academy of Forensic Sciences. Higher source-priority than the Black Vault article quotation of the same bio. Wayback fuzzy-timestamp form per meta/sources-access.md.'
 - url: https://web.archive.org/web/20241222193218/https://www.ornl.gov/staff-profile/sean-m-kirkpatrick
   format: html
   status: archived
@@ -1825,6 +1834,15 @@
   archive_status: 3
   wayback_date: '2025-08-04'
   note: Wayback Machine snapshot 2025-08-04 of attempted access to ORNL staff profile for Sean M. Kirkpatrick — confirms the page remained 404 ~8 months after the takedown captured at 2024-12-22.
+- url: https://web.archive.org/web/20260111121806/https://www.theblackvault.com/documentarchive/the-advanced-aviation-threat-identification-program-aatip-dird-report-research/
+  format: html
+  status: archived
+  path: news/theblackvault-aatip-dird-20260111.html
+  archived_date: '2026-05-16'
+  sha256: 1c7ba7946bbdd819d21ca54137020e9b7aa9a984c3554367e172b3240f1cd6b5
+  archive_status: 3
+  wayback_date: '2026-01-11'
+  note: The Black Vault (John Greenewald Jr.) feature article 'The Advanced Aviation Threat Identification Program (AATIP) - DIRD Report Research', accessed via Internet Archive Wayback Machine snapshot 2026-01-11. Substantively quotes the IRVA (International Remote Viewing Association) biographical text on Dr. Christopher (Kit) Green at length — independent corroboration of the same IRVA bio archived directly at news/irva-kit-green-wayback-20241212.html. Also surveys AATIP-era DIRD documents and named contributors. Wayback fuzzy-timestamp URL.
 - url: https://web.archive.org/web/20260220223643/https://www.safeaerospace.org/
   format: html
   status: archived
@@ -2831,6 +2849,15 @@
   archive_status: 3
   note: 'Kyla Guilfoil, NBC News, Apr 18, 2026 — formal War Department statement to NBC News Saturday: AARO disclosure-coordination statement with full verbatim text'
   wayback_date: '2026-04-22'
+- url: https://www.ncbi.nlm.nih.gov/books/NBK207949/
+  format: html
+  status: archived
+  path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
+  archived_date: '2026-05-16'
+  sha256: a8f040fb1fd4ac3e8021a4e0e8303fa3a39311e3d11a12225aabb7818988556b
+  archive_status: 3
+  note: 'NCBI Bookshelf rendering of Appendix A ''Biographical Sketches of Committee Members'' from ''Emerging Cognitive Neuroscience and Related Technologies'' (2008), published by the National Academies Press for the National Research Council (US) Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research in the Next Two Decades, chaired by Christopher C. Green. The book is NRC committee output; the biographical sketches were authored under NRC editorial review. Carries Green''s NRC-authored bio attesting: assistant dean for Asia Pacific at Wayne State School of Medicine (Beijing); clinical fellow in neuroimaging/MRI; CIA career 1969-1985 as senior division analyst and assistant national intelligence officer for science and technology; General Motors 1985-2004; Ph.D. University of Colorado Medical School (neurophysiology); M.D. Autonomous City University El Paso TX/Monterey Mexico; National Intelligence Medal; American Academy of Forensic Sciences fellow.'
+  wayback_date: '2026-05-17'
 - url: https://www.newsnationnow.com/politics/grusch-hired-burlison/
   format: html
   status: archived
@@ -2945,6 +2972,15 @@
   archive_status: 3
   note: 'DOE OSTI catalog entry for ORAU 1987 follow-up assessment ''US Department of Energy High School Student Supercomputing Honors Program: A follow-up assessment'' (DOI 10.2172/6679837). Primary government catalog attestation that the DOE Honors Program family was inaugurated at LLNL in August 1985 — making the 1986 Brookhaven HSRP the second site in the family rather than the absolute inaugural year of the DOE Honors Program initiative. Useful for tightening Wikipedia''s ''inaugural High School Honors Research Program'' framing on the Kirkpatrick node (audit 2.3 context).'
   wayback_date: '2018-07-26'
+- url: https://www.pbs.org/wnet/secrets/umbrella-assassin-interview-christopher-c-green/1557/
+  format: html
+  status: archived
+  path: news/pbs-umbrella-assassin-green-interview-20260517.html
+  archived_date: '2026-05-16'
+  sha256: 51cd30281723b904dd898085cba74f17822e6123b08e9d8e7e8ed26350ae9406
+  archive_status: 3
+  note: PBS 'Secrets of the Dead' interview with Dr. Christopher C. Green, episode 'Umbrella Assassin' (Season 5 Ep 5, 2006). Green discusses the 1978 forensic investigation of the Georgi Markov assassination (ricin pellet from umbrella). First documented public attestation of Green's CIA identity (his identity as a CIA officer was reportedly secret until 2007 per third-party sources). Substantive first-person Green statements on his CIA career, forensic medicine specialty, and current academic work in brain imaging/decision-making. Identifies him as 'investigative officer with the Central Intelligence Agency' for a twenty-year career; current Wayne State professor; M.D., Ph.D.; Fellow in Clinical Imaging; Fellow in American Academy of Forensic Sciences; continues as CIA consultant.
+  wayback_date: '2026-05-17'
 - url: https://www.physast.uga.edu/academic_programs/grad/graduate-awards
   format: html
   status: archived

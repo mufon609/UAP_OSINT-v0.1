@@ -13086,3 +13086,215 @@
   message: |
     Table cell in 'Key Passages' exceeds word budget (81>55): Kenneth A. Kress, 'Parapsychology in Intelligence: A Persona...
 
+- ts: 2026-05-17T02:56:46Z
+  source: validator
+  check: primary_sources
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    primary_sources[1]: path 'government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html' not registered in sources/manifest.yaml
+
+- ts: 2026-05-17T02:56:46Z
+  source: validator
+  check: primary_sources
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    primary_sources[4]: path 'news/theblackvault-aatip-dird-20260111.html' not registered in sources/manifest.yaml
+
+- ts: 2026-05-17T03:04:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 9 significant token(s) not in source (prose-drift check — contributor review): attestation, attested, attests, documenting, engagement, mid-1970s, snapshot, sri-cia, … (+1 more — pass --verbose for full list)
+  tokens: [attestation, attested, attests, documenting, engagement, mid-1970s, snapshot, sri-cia, wayback]
+
+- ts: 2026-05-17T03:04:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 16 significant token(s) not in source (prose-drift check — contributor review): 1972-1973, appearance, attestation, attests, cia-side, continuing, corpus, counterpart, … (+8 more — pass --verbose for full list)
+  tokens: [1972-1973, appearance, attestation, attests, cia-side, continuing, corpus, counterpart, engagement, foundational, placing, post-2016, program-officer, rests, sri-cia, uap-adjacent]
+
+- ts: 2026-05-17T03:04:21Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 41 significant token(s) not in source (prose-drift check — contributor review): 1969-1985, adjudication, anchor, attestation, attestations, attested, attests, beyond, … (+33 more — pass --verbose for full list)
+  tokens: [1969-1985, adjudication, anchor, attestation, attestations, attested, attests, beyond, confirming, consultancy, contributor-attested, corpus, corroborate, departure, differ, duration, footnote, foundational, fugal-green, inception, letter-recipient, longer, member-org, narrative, narrator, narrator-attested, nids, participants, post-2016, preserved, primary, quotes, self-attestation, self-description, separately, sits, sixteen, source, span, sri-cia, text]
+
+- ts: 2026-05-17T03:04:27Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 9 significant token(s) not in source (prose-drift check — contributor review): attestation, attested, attests, documenting, engagement, mid-1970s, snapshot, sri-cia, … (+1 more — pass --verbose for full list)
+  tokens: [attestation, attested, attests, documenting, engagement, mid-1970s, snapshot, sri-cia, wayback]
+
+- ts: 2026-05-17T03:04:27Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 16 significant token(s) not in source (prose-drift check — contributor review): 1972-1973, appearance, attestation, attests, cia-side, continuing, corpus, counterpart, … (+8 more — pass --verbose for full list)
+  tokens: [1972-1973, appearance, attestation, attests, cia-side, continuing, corpus, counterpart, engagement, foundational, placing, post-2016, program-officer, rests, sri-cia, uap-adjacent]
+
+- ts: 2026-05-17T03:04:27Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 41 significant token(s) not in source (prose-drift check — contributor review): 1969-1985, adjudication, anchor, attestation, attestations, attested, attests, beyond, … (+33 more — pass --verbose for full list)
+  tokens: [1969-1985, adjudication, anchor, attestation, attestations, attested, attests, beyond, confirming, consultancy, contributor-attested, corpus, corroborate, departure, differ, duration, footnote, foundational, fugal-green, inception, letter-recipient, longer, member-org, narrative, narrator, narrator-attested, nids, participants, post-2016, preserved, primary, quotes, self-attestation, self-description, separately, sits, sixteen, source, span, sri-cia, text]
+
+- ts: 2026-05-17T03:05:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    background: 1 significant token(s) not in source (prose-drift check — contributor review): text
+  tokens: [text]
+
+- ts: 2026-05-17T03:05:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 8 significant token(s) not in source (prose-drift check — contributor review): 1972-1973, alongside, appearance, naming, placing, post-2016, ricin-pellet, text
+  tokens: [1972-1973, alongside, appearance, naming, placing, post-2016, ricin-pellet, text]
+
+- ts: 2026-05-17T03:05:56Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 15 significant token(s) not in source (prose-drift check — contributor review): 1969-1985, 1972-1973, beyond, extending, framing, fugal-green, longer, narrator, … (+7 more — pass --verbose for full list)
+  tokens: [1969-1985, 1972-1973, beyond, extending, framing, fugal-green, longer, narrator, post-2016, preserved, quotes, self-curated, sixteen-year, source, span]
+
+- ts: 2026-05-17T03:07:25Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 2 significant token(s) not in source (prose-drift check — contributor review): onward, putting
+  tokens: [onward, putting]
+
+- ts: 2026-05-17T03:07:25Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    credibility_notes: 3 significant token(s) not in source (prose-drift check — contributor review): beyond, exceeds, kept
+  tokens: [beyond, exceeds, kept]
+
+- ts: 2026-05-17T03:08:00Z
+  source: validator
+  check: prose_drift
+  phase: validate-research
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: warn
+  message: |
+    top_relevance: 1 significant token(s) not in source (prose-drift check — contributor review): naming
+  tokens: [naming]
+
+- ts: 2026-05-17T03:08:34Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e9' ('Defense Intelligence Agency') wrap_path '/organizations/dia' does not appear as a [`/organizations/dia`] link in the node
+
+- ts: 2026-05-17T03:08:34Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/kit-green.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e12' ('International Remote Viewing Association') wrap_path '/organizations/irva' does not appear as a [`/organizations/irva`] link in the node
+
+- ts: 2026-05-17T03:20:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/kit-green.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Statements' exceeds word budget (56>55): PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassi...
+
+- ts: 2026-05-17T03:20:16Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/kit-green.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassi...
+
+- ts: 2026-05-17T03:20:30Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/kit-green.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Statements' exceeds word budget (56>55): PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassi...
+
+- ts: 2026-05-17T03:20:30Z
+  source: validator
+  check: table_cell_word_budget
+  phase: validate
+  node: people/kit-green.md
+  node_type: person
+  severity: warn
+  message: |
+    Table cell in 'Timeline' exceeds word budget (56>55): PBS Secrets of the Dead Season 5 Episode 5 'Umbrella Assassi...
+

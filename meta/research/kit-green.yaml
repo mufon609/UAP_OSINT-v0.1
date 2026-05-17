@@ -1,0 +1,617 @@
+id: meta/research/kit-green
+type: research-artifact
+schema_version: 1
+target_node: people/kit-green
+status: active
+created: '2026-05-16'
+primary_sources:
+- path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  format: pdf
+- path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
+  format: html
+- path: news/irva-kit-green-wayback-20241212.html
+  format: html
+- path: news/pbs-umbrella-assassin-green-interview-20260517.html
+  format: html
+- path: news/theblackvault-aatip-dird-20260111.html
+  format: html
+- path: news/vice-fugal-skinwalker-owner-20200310.html
+  format: html
+- path: government/solfoundation-vallee-people-page-20260517.html
+  format: html
+
+document_intrinsic:
+  full_name: 'Christopher C. Green'
+  aliases:
+  - 'Christopher (Kit) Green'
+  - 'Kit Green'
+  - 'K. Green'
+  - 'Dr. Christopher Green'
+  nationality: 'United States'
+  profession: 'Physician (M.D., Ph.D.); former Central Intelligence Agency Senior Division Analyst and Assistant National Intelligence Officer for Science and Technology'
+
+context_extrinsic: {}
+
+background: 'Christopher (Kit) Green is a medical doctor, forensic specialist, and former Central Intelligence Agency analyst whose career began with the US Federal Government in 1969 as a Senior Division Analyst for neurosciences at the Central Intelligence Agency (q4). Per the IRVA biographical page (q4), in the mid-’70s he was the first analyst and program manager for Remote Viewing research; he became a Branch Chief, Deputy Division Director, and Assistant National Intelligence Officer for Science and Technology. The 1977 Kress paper (q1, q2) names him in two specific OSI roles: recipient of Puthoff''s June 17, 1972 letter from Stanford Research Institute, and author of a 9 November 1973 LSD/OSI Memorandum for the Record on Verification of Remote Viewing Experiments at Stanford Research Institute. Green joined General Motors Corporation in 1985 as head of Life, Materials and Environmental Sciences, and later became Executive Director of Technology Intelligence, and Chief Technology Officer for GM Asia Pacific Operations (q4), serving from 1985 through 2004 per the NCBI bio (q5). He returned to the full-time practice of medicine and became a faculty member at the Wayne State School of Medicine in 2002 (q6); per the IRVA page he holds clinical appointments as Professor in the Departments of Diagnostic Radiology and Psychiatry & Behavioral Neurosciences of the Harper University Hospital, Detroit Medical Center, and is Assistant Dean (Asia Pacific) (q3). His medical specialties are brain imaging, forensic medicine and toxicology, and neurophysiology (q5). He holds the National Intelligence Medal and is a Fellow in the American Academy of Forensic Sciences (q3, q5). His Ph.D. is from the University of Colorado Medical School in neurophysiology, and his M.D. is from the Autonomous City University in El Paso, Texas/Monterey, Mexico (q5).'
+
+top_relevance: 'Per the IRVA biographical page (q4), in the mid-’70s Green was the first analyst and program manager for Remote Viewing research at the Central Intelligence Agency — names him the CIA program manager for the Remote Viewing investigation cofounded by Russell Targ and Harold E. Puthoff at Stanford Research Institute. The 1977 Kress paper (q1, q2) names him as the OSI analyst who received Puthoff''s June 17, 1972 letter from SRI and as the LSD/OSI author of a 9 November 1973 Memorandum on Verification of Remote Viewing Experiments at Stanford Research Institute — Green at the program from its 1972 and 1973 beginning. Per Vice 2020 (q7) Green was brought in to consult on Brandon Fugal''s Skinwalker Ranch project, together with Hal Puthoff; Green and Puthoff were also involved in Bigelow''s DIA project (the Advanced Aerospace Weapon System Applications Program / AAWSAP). Green''s public identity as a CIA officer is shown through the PBS Secrets of the Dead Umbrella Assassin interview page (q8), where he describes his forensic role in the 1978 Georgi Markov ricin pellet assassination investigation as the most unusual and significant case of his twenty year career as an investigative officer with the Central Intelligence Agency.'
+
+credibility_notes: 'Green holds the National Intelligence Medal and is a Fellow in the American Academy of Forensic Sciences per IRVA (q3) and the 2008 NCBI / NRC committee bio (q5) — both sources name the same honors. The NCBI bio (q5) names his career with the CIA as extended from 1969 to 1985 as a senior division analyst and assistant national intelligence officer for science and technology. The PBS Secrets of the Dead Umbrella Assassin interview page (q8) names his CIA tenure as a "twenty year career as an investigative officer with the Central Intelligence Agency" — a figure greater than the NCBI 1969 to 1985 figure. The same PBS page (q8) also notes that Green still serves as a consultant to the Central Intelligence Agency, which may be why the figure given by PBS is greater. The two sources are held as separate evidence without contributor judgment. The IRVA bio (q4) names him as "the first analyst and program manager for Remote Viewing research" in the mid-’70s — Green''s own description on the IRVA member page; Kress 1977 (q1, q2) names him at OSI in 1972 and 1973 as the recipient of Puthoff''s letter and the author of the LSD/OSI Verification memorandum but does not name him as "first" program manager. Vice 2020 (q7) names Green and Puthoff as scientists brought in to consult on Brandon Fugal''s Skinwalker Ranch project, and as also involved in Bigelow''s DIA project — friendship between Fugal and Green is named, but Green''s specific role on AAWSAP is not detailed in the consultant description.'
+
+quotes:
+
+- id: q1
+  added_date: '2026-05-17'
+  text: |
+    H. E. Puthoff; Stanford Research Institute; Letter to K. Green/OSI, June '1:7, 1972-
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, footnote'
+  context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 8 naming K. Green at OSI'
+  statement_date: '1972-06-17'
+  observation_type: relayed
+  significance: 'CIA primary-source attestation of K. Green at OSI as the recipient of Puthoff''s June 17, 1972 letter from Stanford Research Institute — the earliest archived attestation of Green''s OSI role in the SRI-CIA parapsychology engagement. Source carries OCR artifact "''1:7," for "17," — preserved as-source; see naming_quirks nq1.'
+
+- id: q2
+  added_date: '2026-05-17'
+  text: |
+    T 1(. Green; LSD/OSI; Memorandum for the Rerord; Subject: Verification of Remote Viewing
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 10, footnote'
+  context: 'Kenneth A. Kress, ''Parapsychology in Intelligence: A Personal Review and Conclusions,'' Studies in Intelligence Vol. 21 No. 4, Winter 1977 — bibliographic footnote at p. 10 naming K. Green at LSD/OSI as author of a 9 November 1973 Memorandum for the Record on Verification of Remote Viewing Experiments at Stanford Research Institute'
+  statement_date: '1973-11-09'
+  observation_type: relayed
+  significance: 'CIA primary-source attestation of K. Green at LSD/OSI (Life Sciences Division of OSI) as the author of a 9 November 1973 Memorandum for the Record on Verification of Remote Viewing Experiments at Stanford Research Institute. Combined with q1, places Green at OSI in the SRI-CIA parapsychology engagement from at least June 1972 through November 1973. Source carries OCR artifacts: "T 1(." for "K." (line wrap collapsed onto preceding line in extract), "Rerord" for "Record"; preserved as-source — see naming_quirks nq2, nq3.'
+
+- id: q3
+  added_date: '2026-05-17'
+  text: |
+    Christopher (Kit) Green, M.D., Ph.D. is an Assistant Dean (Asia Pacific) of the Wayne State School of Medicine in Detroit, Michigan. He holds clinical appointments as Professor in the Departments of Diagnostic Radiology and Psychiatry & Behavioral Neurosciences of the Harper University Hospital, Detroit Medical Center. He is also Professor at the Institute of Biophysics / Laboratory of Brain and Cognitive Science, of the Chinese Academy of Sciences. He maintains an active clinical private medical practice in forensic medicine and neuroimaging, neurogenomics, and neurotoxicology. Kit’s specialty includes the determination of morbidity and mortality of neurological and psychiatric disease due to unsuspected etiology. 20% of his medical practice is pro bono related to the forensic investigation and diagnosis of patients injured by anomalous events.
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶1 of biographical text'
+  context: 'International Remote Viewing Association speaker biographical page on Christopher (Kit) Green, Wayback Machine snapshot dated 2024-12-12 — page-authored bio published by IRVA as a member organization, drawing on Green-provided or Green-approved biographical content'
+  observation_type: relayed
+  significance: 'IRVA self-curated biographical attestation of Green''s current academic positions, clinical appointments, medical specialties, and the pro bono "forensic investigation and diagnosis of patients injured by anomalous events" practice — the latter the only attested anchor to anomalous-phenomena clinical work in the archived corpus.'
+
+- id: q4
+  added_date: '2026-05-17'
+  text: |
+    His career began with the US Federal Government in 1969 as a Senior Division Analyst for neurosciences at the Central Intelligence Agency. In the mid-’70s he was the first analyst and program manager for Remote Viewing research. He became a Branch Chief, Deputy Division Director, and Assistant National Intelligence Officer for Science and Technology. He joined General Motors Corporation in 1985 as head of Life, Materials and Environmental Sciences, and later became Executive Director of Technology Intelligence, and Chief Technology Officer for GM Asia Pacific Operations.
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶2 of biographical text'
+  context: 'International Remote Viewing Association speaker biographical page on Christopher (Kit) Green, ¶2 — career narrative covering CIA 1969 onward and General Motors 1985 onward'
+  observation_type: relayed
+  significance: 'IRVA self-curated biographical attestation of Green''s CIA career progression: 1969 Senior Division Analyst for neurosciences, mid-1970s first analyst and program manager for Remote Viewing research, Branch Chief, Deputy Division Director, Assistant National Intelligence Officer for Science and Technology. The "first analyst and program manager for Remote Viewing research" framing is self-attested on the IRVA member-organization page; no independent CIA primary source in the archived corpus separately confirms the "first" characterization (Kress 1977 q1 and q2 attest Green at OSI at the program''s 1972-1973 inception but do not characterize him as "first" program manager).'
+
+- id: q5
+  added_date: '2026-05-17'
+  text: |
+    Christopher C. Green, Chair, is the assistant dean for Asia Pacific of the Wayne State School of Medicine (SOM) in Beijing, China. He is also a clinical fellow in neuroimaging/MRI in the Department of Diagnostic Radiology and the Department of Psychiatry and Behavioral Neurosciences of the SOM and the Detroit Medical Center (DMC). His medical specialties are brain imaging, forensic medicine and toxicology, and neurophysiology, and his personal medical practice is in the differential diagnoses of neurodegenerative disease. He has served and continues to serve on many government advisory groups and private sector corporate boards of directors. Immediately prior to his current position, he was executive director for emergent technology research for the SOM/DMC. From 1985 through 2004 he was executive director, Global Technology Policy, and chief technology officer for General Motors’ Asia-Pacific Operations. His career at General Motors included positions as head, Biomedical Sciences Research, and executive director, General Motors Research Laboratory for Materials and Environmental Sciences. His distinguished career with the CIA extended from 1969 to 1985 as a senior division analyst and assistant national intelligence officer for science and technology. His Ph.D. is from the University of Colorado Medical School in neurophysiology, and his M.D. is from the Autonomous City University in El Paso, Texas/Monterey, Mexico, with honors. He also holds the National Intelligence Medal and is a fellow in the American Academy of Forensic Sciences. Dr. Green is a current member of the National Research Council’s Standing Committee on Technology Insight—Gauge, Evaluate, and Review (TIGER).
+  source:
+    path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
+    location: 'Appendix A, Christopher C. Green entry'
+  context: 'National Research Council Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research in the Next Two Decades, ''Emerging Cognitive Neuroscience and Related Technologies'' (Washington, DC: National Academies Press, 2008), Appendix A: Biographical Sketches of Committee Members — Christopher C. Green (Chair) entry'
+  statement_date: '2008'
+  observation_type: relayed
+  significance: 'NRC committee biographical sketch of Christopher C. Green as the committee''s Chair, attesting CIA career 1969-1985, General Motors 1985-2004 (slight differing chronology from IRVA which attests Wayne State faculty membership 2002 onward — the two attestations are consistent if Green transitioned from GM to Wayne State during the 2002-2004 overlap), Ph.D. neurophysiology University of Colorado Medical School, M.D. Autonomous City University El Paso Texas / Monterey Mexico, and his TIGER standing-committee membership. NRC source carries institutional weight comparable to a government-document attestation; the bio was authored under NRC editorial review.'
+
+- id: q6
+  added_date: '2026-05-17'
+  text: |
+    Kit returned to the full-time practice of medicine and became a faculty member at the Wayne State School of Medicine in 2002. Since 1985 he continuously has also served on over a dozen Federal science boards and positions, including as Chair of the Board on Army Science and Technology, and as a founder of the National Academy of Sciences/ National Research Council (NRC) Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER).
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶3 of biographical text'
+  context: 'International Remote Viewing Association speaker biographical page on Christopher (Kit) Green, ¶3 — narrative of his post-1985 federal advisory roles and 2002 Wayne State return to medicine'
+  observation_type: relayed
+  significance: 'IRVA biographical attestation that Green returned to full-time medicine and joined Wayne State faculty in 2002 and that since 1985 he has continuously served on over a dozen Federal science boards, including Chair of the Board on Army Science and Technology and founder of the NRC TIGER standing committee. Anchors his Wayne State tenure start at 2002.'
+
+- id: q7
+  added_date: '2026-05-17'
+  text: |
+    Though Fugal’s pursuit of breakthroughs in advanced physics was not a success, there was a silver lining. Several scientists who were brought in to consult on the project, namely Dr. Hal Puthoff and Dr. Christopher Green, were also involved in Bigelow’s DIA project. They became friends. Even after the project was shut down in 2014, Fugal stayed in touch with these scientists.
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: '¶49 (Fugal/Skinwalker section)'
+  context: 'M.J. Banias, ''The Pentagon’s Secret UFO Program Stunk of Cult Activity, Insider Says'' (or related Fugal-Skinwalker article), Vice / Motherboard, 2020-03-10 — passage on Brandon Fugal''s post-Bigelow Skinwalker Ranch project and the scientists who continued to consult on it'
+  observation_type: relayed
+  significance: 'Vice attestation that Christopher Green was brought in alongside Hal Puthoff to consult on Brandon Fugal''s post-2016 Skinwalker Ranch project, and that Green and Puthoff were "also involved in Bigelow''s DIA project" (the Advanced Aerospace Weapon System Applications Program / AAWSAP). Friendships with Fugal post-shutdown attested. The specific scope of Green''s AAWSAP involvement is not detailed in this article beyond the consultancy framing.'
+
+- id: q8
+  added_date: '2026-05-17'
+  text: |
+    The investigation into the assassination of Bulgarian dissident Georgi Markov, murdered with a poison-filled pellet shot into his leg (possibly with a converted “umbrella gun”) at a bus stop in Britain in 1978, was the most unusual and significant case that medical doctor and forensic specialist Christopher C. Green participated in during his twenty year career as an investigative officer with the Central Intelligence Agency.
+  source:
+    path: news/pbs-umbrella-assassin-green-interview-20260517.html
+    location: 'Episode header narration'
+  context: 'PBS Secrets of the Dead Season 5 Episode 5 ''Umbrella Assassin'', interview page on pbs.org dated June 3, 2014 — narrator-authored header on Green''s CIA forensic role in the 1978 Markov investigation. The page date may not be the original broadcast date.'
+  observation_type: relayed
+  significance: 'PBS narrator attestation that Green had "a twenty year career as an investigative officer with the Central Intelligence Agency" — a longer span than the 1969-1985 (16-year) duration the NCBI bio (q5) attests. The two attestations differ on duration and are preserved separately; the longer span may reflect Green''s continued consulting role with the CIA after his 1985 GM departure per the PBS narrator''s separate attestation that "he still serves as a consultant" with the CIA. Anchors his public CIA-identity disclosure to the PBS broadcast (2014 publication date on the interview page; the source episode aired earlier).'
+
+- id: q9
+  added_date: '2026-05-17'
+  text: |
+    we had pretty much all of the story from a forensic point of view. We had the body, the thing in the body that he was hit with — the pellet — and the stuff from the pellet. We knew that the material used to kill him, ricin, had been under development by a foreign service linked to the incident. We also knew that he had been a target of assassination attempts in the past. The story of him being a target was very well known. So we had information on the means, motive, and the opportunity.
+  source:
+    path: news/pbs-umbrella-assassin-green-interview-20260517.html
+    location: '¶3 (Green direct quote)'
+  context: 'PBS Secrets of the Dead Season 5 Episode 5 ''Umbrella Assassin'', interview with Christopher C. Green — Green first-person attestation on the forensic completeness of the 1978 Georgi Markov investigation'
+  observation_type: direct
+  significance: 'Green first-person attestation on the forensic shape of the Markov investigation: complete body, pellet, ricin chain, foreign-service linkage, and prior assassination-attempt history. Green identifies the CIA-side forensic case as the most complete he encountered in his career.'
+
+- id: q10
+  added_date: '2026-05-17'
+  text: |
+    Typically, when someone dies who is involved in an intelligence issue or national policy issue, you have a lot of paranoia , gossip, and rumor, but very little information.
+  source:
+    path: news/pbs-umbrella-assassin-green-interview-20260517.html
+    location: '¶4 (Green direct quote)'
+  context: 'PBS Secrets of the Dead Season 5 Episode 5 ''Umbrella Assassin'', interview with Christopher C. Green — Green first-person methodological attestation on intelligence-death investigations'
+  observation_type: direct
+  significance: 'Green first-person attestation on the typical epistemic shape of intelligence-related death investigations — paranoia, gossip, and rumor with little information. Speaks to his methodological framing of forensic intelligence work.'
+
+- id: q11
+  added_date: '2026-05-17'
+  text: |
+    Most people who say that a foreign power is conspiring to kill them are scatterbrained and delusional
+  source:
+    path: news/pbs-umbrella-assassin-green-interview-20260517.html
+    location: '¶6 (Green direct quote)'
+  context: 'PBS Secrets of the Dead Season 5 Episode 5 ''Umbrella Assassin'', interview with Christopher C. Green — Green first-person attestation contrasting Markov''s credibility with the typical foreign-power-conspiracy claimant'
+  observation_type: direct
+  significance: 'Green first-person methodological attestation on credibility filtering in foreign-power-conspiracy claims — context for why Markov''s prior threats and his credibility as a BBC / Radio Free Europe broadcaster were load-bearing for the investigation to proceed at all.'
+
+entities_referenced:
+
+- id: e1
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: 'Central Intelligence Agency'
+  wrap_path: '/organizations/cia'
+  context_summary: 'Federal intelligence agency where Green served from 1969 to 1985 per the NCBI bio (q5) and IRVA bio (q4), and where he reportedly continued as a consultant after his 1985 departure per the 2014 PBS interview (q8). Office of Scientific Intelligence (OSI) and Life Sciences Division of OSI (LSD/OSI) attested as his specific organizational locations per Kress 1977 (q1, q2). Unbuilt in this repository.'
+  references:
+  - quote_id: q1
+  - quote_id: q2
+  - quote_id: q4
+  - quote_id: q5
+  - quote_id: q8
+
+- id: e2
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: 'Stanford Research Institute'
+  wrap_path: '/organizations/stanford-research-institute'
+  context_summary: 'SRI International (institutional successor name) — Green''s primary OSI-side counterpart institution at the 1972-1973 inception of the CIA-SRI parapsychology investigation per Kress 1977 (q1, q2). Built at /organizations/stanford-research-institute.'
+  references:
+  - quote_id: q1
+  - quote_id: q2
+
+- id: e3
+  added_date: '2026-05-17'
+  entity_type: person
+  name: 'Harold E. Puthoff'
+  wrap_path: '/people/hal-puthoff'
+  context_summary: 'Cofounder of the SRI parapsychology investigation; author of the June 17, 1972 letter from SRI to K. Green/OSI that q1 attests. Per Vice 2020 (q7), Puthoff and Green were both brought in to consult on Brandon Fugal''s post-2016 Skinwalker Ranch project and were both involved in Bigelow''s DIA project (AAWSAP). Built at /people/hal-puthoff.'
+  references:
+  - quote_id: q1
+  - quote_id: q7
+
+- id: e4
+  added_date: '2026-05-17'
+  entity_type: person
+  name: 'Russell Targ'
+  wrap_path: '/people/russell-targ'
+  context_summary: 'Cofounder of the SRI parapsychology investigation alongside Puthoff per Kress 1977 (already on the SRI artifact). Targ''s April 1972 meeting with CIA OSI personnel preceded the June 1972 Puthoff-to-Green letter and the formal $874 OTS demonstration contract. Built at /people/russell-targ.'
+
+- id: e5
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: 'Wayne State School of Medicine'
+  wrap_path: '/organizations/wayne-state-school-of-medicine'
+  context_summary: 'Detroit-based medical school where Green became a faculty member in 2002 per the IRVA bio (q6) and where he currently holds the Assistant Dean (Asia Pacific) position and Professor appointments in Diagnostic Radiology and Psychiatry & Behavioral Neurosciences per IRVA (q3) and NCBI (q5). Unbuilt in this repository.'
+  references:
+  - quote_id: q3
+  - quote_id: q5
+  - quote_id: q6
+
+- id: e6
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: 'General Motors Corporation'
+  wrap_path: '/organizations/general-motors'
+  context_summary: 'Automaker where Green served 1985 onward — initially head of Life, Materials and Environmental Sciences (IRVA q4) or Biomedical Sciences Research (NCBI q5), later Executive Director Technology Intelligence (IRVA q4) or Global Technology Policy (NCBI q5), and Chief Technology Officer for GM Asia Pacific Operations. NCBI (q5) attests GM tenure 1985-2004. Unbuilt in this repository.'
+  references:
+  - quote_id: q4
+  - quote_id: q5
+
+- id: e7
+  added_date: '2026-05-17'
+  entity_type: person
+  name: 'Brandon Fugal'
+  wrap_path: '/people/brandon-fugal'
+  context_summary: 'Skinwalker Ranch owner since 2016 (post-Bigelow). Per the 2020 Vice article (q7), Green and Hal Puthoff were brought in to consult on Fugal''s post-2016 Skinwalker project, and Fugal stayed in touch with both after the project shutdown attested in the same passage. Unbuilt in this repository.'
+  references:
+  - quote_id: q7
+
+- id: e8
+  added_date: '2026-05-17'
+  entity_type: person
+  name: 'Robert Bigelow'
+  wrap_path: '/people/robert-bigelow'
+  context_summary: 'Per the 2020 Vice article (q7), Green and Hal Puthoff were involved in Bigelow''s DIA project (Advanced Aerospace Weapon System Applications Program / AAWSAP). Unbuilt in this repository.'
+  references:
+  - quote_id: q7
+
+- id: e9
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: 'Defense Intelligence Agency'
+  wrap_path: '/organizations/dia'
+  context_summary: 'DIA — successor CIA funding agency for SRI Remote Viewing research after CIA funding was discontinued in 1975 per the SRI artifact''s q11/q12. Per Vice 2020 (q7), Green was also involved in Bigelow''s DIA project (AAWSAP). Unbuilt in this repository.'
+  references:
+  - quote_id: q7
+
+- id: e10
+  added_date: '2026-05-17'
+  entity_type: person
+  name: 'Georgi Markov'
+  wrap_path: '/people/georgi-markov'
+  context_summary: 'Bulgarian dissident, BBC and Radio Free Europe broadcaster, assassinated in London 1978 with a ricin-filled platinum-iridium pellet (the umbrella-gun case). Subject of Green''s 1978 CIA forensic investigation per the 2014 PBS Secrets of the Dead interview (q8, q9, q11). Unbuilt in this repository.'
+  references:
+  - quote_id: q8
+  - quote_id: q9
+  - quote_id: q11
+
+- id: e11
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: 'National Academy of Sciences / National Research Council'
+  wrap_path: '/organizations/national-academies'
+  context_summary: 'Per IRVA (q6), Green is a founder of the National Academy of Sciences / National Research Council (NRC) Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER) and Chair of the 2008 Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research in the Next Two Decades that produced the NCBI-archived volume (q5). NCBI (q5) also attests his Lifetime National Associate election (January 2012 per the IRVA closing of the same bio paragraph). Unbuilt in this repository.'
+  references:
+  - quote_id: q5
+  - quote_id: q6
+
+- id: e12
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: 'International Remote Viewing Association'
+  wrap_path: '/organizations/irva'
+  context_summary: 'Remote-viewing professional association where Green is a speaker / member; publisher of the q3, q4, q6 biographical text. Unbuilt in this repository.'
+  references:
+  - quote_id: q3
+  - quote_id: q4
+  - quote_id: q6
+
+- id: e13
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: 'Chinese Academy of Sciences'
+  wrap_path: '/organizations/chinese-academy-of-sciences'
+  context_summary: 'Chinese Academy of Sciences — Green holds a concurrent Professor role at the Institute of Biophysics / Laboratory of Brain and Cognitive Science per IRVA (q3). Specific period dates are not attested. Unbuilt in this repository.'
+  references:
+  - quote_id: q3
+
+- id: e14
+  added_date: '2026-05-17'
+  entity_type: organization
+  name: 'United States Army'
+  wrap_path: '/organizations/us-army'
+  context_summary: 'Per IRVA (q6), Green chaired the Independent Science Panel for the Undersecretary of the Army for Operations Research and the Assistant Secretary of Defense for Chemical, Biological, and Nuclear Matters — a federal advisory panel reporting to USA(ORS) and ASD(CBN). Unbuilt in this repository.'
+  references:
+  - quote_id: q6
+
+naming_quirks:
+
+- id: nq1
+  added_date: '2026-05-17'
+  observed: '''1:7,'
+  canonical: '17,'
+  location: 'p. 8, footnote'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "17" in the date "June 17, 1972" (Puthoff''s letter date in q1) as "''1:7" — apostrophe-1-colon-7 cluster substituting for the digit 17. Preserved verbatim in q1 quote text per OCR-scan source-form-preservation discipline. Same artifact recorded as nq14 on the /organizations/stanford-research-institute artifact for the same source passage.'
+
+- id: nq2
+  added_date: '2026-05-17'
+  observed: 'T 1(.'
+  canonical: 'K.'
+  location: 'p. 10, footnote'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "K." (initial of "K. Green") as "T 1(." — typewritten-font misread of capital K as the "T 1(" character cluster, with the closing period dropped. Preserved verbatim in q2 quote text per OCR-scan source-form-preservation discipline. Source line continues across a line wrap in the extract.'
+
+- id: nq3
+  added_date: '2026-05-17'
+  observed: 'Rerord'
+  canonical: 'Record'
+  location: 'p. 10, footnote'
+  source_path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+  resolution: preserve-as-sic-in-quotes
+  note: 'OCR-scan artifact in the Kress 1977 paper bibliography. The OCR engine read "c" as "r" in the word "Record" yielding "Rerord" — typewritten-font OCR misread of the lowercase c glyph. Preserved verbatim in q2 quote text per OCR-scan source-form-preservation discipline.'
+
+- id: nq4
+  added_date: '2026-05-17'
+  observed: 'Wayne State School of Medicine (SOM) in Beijing, China'
+  canonical: 'Wayne State School of Medicine (Detroit) — Beijing/Asia-Pacific program'
+  location: 'NCBI bio, Christopher C. Green entry'
+  source_path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
+  resolution: preserve-as-sic-in-quotes
+  note: 'The 2008 NCBI bio (q5) writes "assistant dean for Asia Pacific of the Wayne State School of Medicine (SOM) in Beijing, China" — the Wayne State School of Medicine is headquartered in Detroit, Michigan (per the IRVA bio q3); the "in Beijing, China" qualifier in q5 reflects Green''s Asia Pacific assistant dean role being based in Beijing, not a relocation of the school itself. The IRVA bio (q3) writes "Wayne State School of Medicine in Detroit, Michigan" without the Beijing qualifier. The two attestations are consistent — Wayne State SOM is in Detroit and Green''s Asia Pacific role operates from Beijing — but the q5 phrasing reads as if Wayne State itself is in Beijing. Preserved verbatim in q5.'
+
+timeline:
+
+- id: tl1
+  added_date: '2026-05-17'
+  date: '1969'
+  category: 'employment'
+  event: 'Christopher C. Green joins the [`/organizations/cia`] as Senior Division Analyst for neurosciences — beginning of his U.S. Federal Government career per IRVA (q4) and NCBI (q5).'
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶2'
+
+- id: tl2
+  added_date: '2026-05-17'
+  date: '1972-06-17'
+  category: 'institutional-role'
+  event: 'Recipient at OSI of [`/people/hal-puthoff`]''s letter from [`/organizations/stanford-research-institute`] documenting the SRI magnetometer demonstration of the previously-described subject per Kress 1977 footnote at p. 8 (q1) — earliest archived attestation of Green''s OSI role in the SRI-CIA parapsychology engagement.'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8, footnote'
+
+- id: tl3
+  added_date: '2026-05-17'
+  date: '1973-11-09'
+  category: 'institutional-role'
+  event: 'Authors at LSD/OSI (Life Sciences Division of OSI) a Memorandum for the Record on Verification of Remote Viewing Experiments at [`/organizations/stanford-research-institute`] per Kress 1977 footnote at p. 10 (q2) — second archived Kress 1977 attestation of Green''s OSI role.'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 10, footnote'
+
+- id: tl4
+  added_date: '2026-05-17'
+  date: '1978'
+  category: 'casework'
+  event: 'CIA forensic investigation of the [`/people/georgi-markov`] assassination (ricin platinum-iridium pellet, London) per the PBS Secrets of the Dead Umbrella Assassin episode (q8, q9, q11) — described as "the most unusual and significant case" of Green''s CIA career.'
+  source:
+    path: news/pbs-umbrella-assassin-green-interview-20260517.html
+    location: 'Episode header narration'
+
+- id: tl5
+  added_date: '2026-05-17'
+  date: '1985'
+  category: 'employment'
+  event: 'Leaves the [`/organizations/cia`] for [`/organizations/general-motors`] as head of Life, Materials and Environmental Sciences (IRVA q4) / Biomedical Sciences Research (NCBI q5) — sixteen-year CIA tenure (1969-1985) per NCBI (q5).'
+  source:
+    path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
+    location: 'Appendix A, Christopher C. Green entry'
+
+- id: tl6
+  added_date: '2026-05-17'
+  date: '2002'
+  category: 'employment'
+  event: 'Returns to full-time medical practice as faculty member at [`/organizations/wayne-state-school-of-medicine`] per IRVA (q6).'
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶3'
+
+- id: tl7
+  added_date: '2026-05-17'
+  date: '2004'
+  category: 'employment'
+  event: 'GM Asia Pacific Operations tenure concludes per NCBI (q5) — 1985-2004 General Motors span.'
+  source:
+    path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
+    location: 'Appendix A, Christopher C. Green entry'
+
+- id: tl8
+  added_date: '2026-05-17'
+  date: '2008'
+  category: 'publication'
+  event: 'Chairs the National Research Council Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research in the Next Two Decades, producing ''Emerging Cognitive Neuroscience and Related Technologies'' (Washington, DC: National Academies Press) per q5.'
+  source:
+    path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
+    location: 'Appendix A'
+
+- id: tl9
+  added_date: '2026-05-17'
+  date: '2012-01'
+  category: 'honor'
+  event: 'Elected Lifetime National Associate of the U.S. National Research Council of the National Academies of Sciences per IRVA (q6 closing sentence).'
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶3'
+
+- id: tl10
+  added_date: '2026-05-17'
+  date: '2014-06-03'
+  category: 'media'
+  event: 'PBS Secrets of the Dead Umbrella Assassin interview page on pbs.org dated to this day (q8, q9, q10, q11) — Green describes the 1978 Markov forensic investigation as the most unusual and significant case of his CIA career. Page date may not be the original broadcast date.'
+  source:
+    path: news/pbs-umbrella-assassin-green-interview-20260517.html
+    location: 'Episode header'
+
+- id: tl11
+  added_date: '2026-05-17'
+  date: '2016'
+  category: 'consultancy'
+  event: 'After [`/people/brandon-fugal`]''s purchase of Skinwalker Ranch (post-Bigelow), Green and [`/people/hal-puthoff`] are brought in to consult on the Fugal project per Vice 2020 (q7); both are also attested as participants in [`/people/robert-bigelow`]''s DIA project (AAWSAP).'
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: '¶49'
+
+program_involvement:
+
+- id: pi1
+  added_date: '2026-05-17'
+  program: 'CIA SRI parapsychology investigation (precursor program to Stargate)'
+  role: 'OSI / LSD-OSI program officer at the SRI-CIA engagement inception'
+  period_start: '1972-06-17'
+  period_end: '1973-11-09'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8 and p. 10 footnotes'
+  note: 'Per Kress 1977 footnotes (q1, q2), Green at OSI is the recipient of Puthoff''s June 17, 1972 letter from SRI documenting the magnetometer demonstration, and Green at LSD/OSI is the author of a 9 November 1973 Memorandum for the Record on Verification of Remote Viewing Experiments at SRI. The two Kress footnotes anchor the earliest and a second-attested point in Green''s OSI program-officer role at the 1972-1973 SRI-CIA parapsychology investigation inception. Period_end of 1973-11-09 reflects the last archived Kress 1977 attestation date; Green''s continuing role beyond that date is attested at narrative level by IRVA (q4) ("first analyst and program manager for Remote Viewing research") but no archived primary source pinpoints a Green-at-OSI date later than 1973-11-09.'
+
+- id: pi2
+  added_date: '2026-05-17'
+  program: 'CIA Remote Viewing research program'
+  role: 'First analyst and program manager (IRVA self-attested)'
+  period_start: '1972'
+  evidentiary_basis: 'self-attested'
+  confidence: 'medium'
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶2'
+  note: 'Per IRVA biographical text (q4): "In the mid-’70s he was the first analyst and program manager for Remote Viewing research." Self-attested on Green''s IRVA member-organization page; the "first" characterization is not separately confirmed by Kress 1977 (which attests Green at OSI in 1972-1973 letter-recipient and memorandum-author roles, q1 and q2, but does not characterize him as "first" program manager). Confidence: medium — the role is anchored in archived Kress 1977 primary attestations of his OSI engagement at the program''s inception, but the "first" framing rests on self-attestation alone.'
+
+- id: pi3
+  added_date: '2026-05-17'
+  program: 'AAWSAP (Advanced Aerospace Weapon System Applications Program)'
+  role: 'Scientific consultant (Vice-attested)'
+  evidentiary_basis: 'on-record'
+  confidence: 'medium'
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: '¶49'
+  note: 'Per Vice 2020 (q7): "Several scientists who were brought in to consult on the project, namely Dr. Hal Puthoff and Dr. Christopher Green, were also involved in Bigelow''s DIA ([`/organizations/dia`]) project. They became friends." The Vice attestation places Green as a participant in AAWSAP — Robert Bigelow''s DIA-funded program — but does not detail his specific role, contracted scope, or AAWSAP tenure. Confidence: medium — the participation is on-record via Vice but the role and scope are not further anchored in the archived corpus.'
+
+- id: pi5
+  added_date: '2026-05-17'
+  program: 'CIA biological terrorism and chemical warfare intelligence'
+  role: 'CIA analyst studying brain responses to chemicals and neurological agents; investigated foreign advances'
+  evidentiary_basis: 'on-record'
+  confidence: 'medium'
+  source:
+    path: news/pbs-umbrella-assassin-green-interview-20260517.html
+    location: '¶4 (narrator-authored)'
+  note: 'Per the PBS Secrets of the Dead Umbrella Assassin interview page narrator (q8 surroundings): "At the CIA, Green studied how the brain responds to chemicals and neurological agents, while also investigating foreign advances in biological terrorism and chemical warfare." Describes the substantive scope of Green''s CIA work alongside his Remote Viewing program-officer role (pi1, pi2) and Markov forensic case (tl4). The PBS page is narrator-authored, not a Green first-person statement; the scope is reported by the PBS interview page rather than directly named by Green.'
+
+- id: pi4
+  added_date: '2026-05-17'
+  program: 'Fugal-era Skinwalker Ranch project (post-2016)'
+  role: 'Scientific consultant'
+  period_start: '2016'
+  evidentiary_basis: 'on-record'
+  confidence: 'medium'
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: '¶49'
+  note: 'Per Vice 2020 (q7), Green alongside Hal Puthoff was brought in to consult on Brandon Fugal''s post-2016 Skinwalker Ranch project. The same passage attests that the scientists became friends with Fugal and remained in touch after the project was shut down (Vice attests "shut down in 2014" but the chronological context of Fugal''s 2016 purchase suggests the shutdown refers to Bigelow''s AAWSAP-era project, not the Fugal-era project). The specific scope of Green''s Fugal-Skinwalker consultancy is not detailed beyond the consultancy framing.'
+
+affiliations:
+
+- id: a1
+  added_date: '2026-05-17'
+  organization_path: /organizations/cia
+  role: 'Senior Division Analyst for neurosciences; later Branch Chief; Deputy Division Director; Assistant National Intelligence Officer for Science and Technology'
+  period_start: '1969'
+  period_end: '1985'
+  confidence: confirmed
+  source:
+    path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
+    location: 'Appendix A, Christopher C. Green entry'
+  note: 'NCBI (q5): "His distinguished career with the CIA extended from 1969 to 1985 as a senior division analyst and assistant national intelligence officer for science and technology." IRVA (q4) corroborates the 1969 CIA start and the same role progression (Senior Division Analyst → Branch Chief → Deputy Division Director → ANIO/S&T). PBS narrator (q8) attests a "twenty year career" as CIA investigative officer (longer span); the IRVA-attested continuing consultancy post-1985 may account for the longer narrator-attested span — preserved as quote-level divergence rather than affiliation-row revision.'
+
+- id: a2
+  added_date: '2026-05-17'
+  organization_path: /organizations/general-motors
+  role: 'Head of Life, Materials and Environmental Sciences / Biomedical Sciences Research; Executive Director Technology Intelligence / Global Technology Policy / Materials and Environmental Sciences Lab; Chief Technology Officer GM Asia Pacific Operations'
+  period_start: '1985'
+  period_end: '2004'
+  confidence: confirmed
+  source:
+    path: government/ncbi-nas-green-bio-emerging-cognitive-neuroscience-2008.html
+    location: 'Appendix A, Christopher C. Green entry'
+  note: 'NCBI (q5): "From 1985 through 2004 he was executive director, Global Technology Policy, and chief technology officer for General Motors''s Asia-Pacific Operations." IRVA (q4) attests the 1985 start and same role progression; the role-title variations between IRVA and NCBI are preserved as quote-level differences. Tenure overlap with the Wayne State faculty role beginning 2002 (a3) — overlapping employment is the corpus-attested shape, not a contradiction.'
+
+- id: a3
+  added_date: '2026-05-17'
+  organization_path: /organizations/wayne-state-school-of-medicine
+  role: 'Faculty member; Professor in Departments of Diagnostic Radiology and Psychiatry & Behavioral Neurosciences; later Assistant Dean (Asia Pacific) — preceded by executive director for emergent technology research for the SOM/DMC per NCBI (q5)'
+  period_start: '2002'
+  confidence: confirmed
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶3'
+  note: 'IRVA ([`/organizations/irva`]) (q6): "Kit returned to the full-time practice of medicine and became a faculty member at the Wayne State School of Medicine in 2002." Current role as Assistant Dean (Asia Pacific) attested by IRVA (q3) and NCBI (q5). The NCBI 2008 bio (q5) attests that "Immediately prior to his current position, he was executive director for emergent technology research for the SOM/DMC" — a prior Wayne State role that preceded the current Assistant Dean position; the specific date of role transition is not attested in the archived sources. Active affiliation as of the IRVA Wayback snapshot date 2024-12-12.'
+
+- id: a4
+  added_date: '2026-05-17'
+  organization_path: /organizations/national-academies
+  role: 'Founder of NRC Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER); Chair of 2008 Committee on Military and Intelligence Methodology for Emergent Neurophysiological and Cognitive/Neural Research; Chair of the Board on Army Science and Technology; Lifetime National Associate'
+  period_start: '1985'
+  confidence: confirmed
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶3'
+  note: 'IRVA (q6): "Since 1985 he continuously has also served on over a dozen Federal science boards and positions, including as Chair of the Board on Army Science and Technology, and as a founder of the National Academy of Sciences/ National Research Council (NRC) Standing Committee on Technology Insight-Gauge, Evaluate, and Review (TIGER)." Lifetime National Associate election dated January 2012 per IRVA (q6 closing sentence).'
+
+- id: a5
+  added_date: '2026-05-17'
+  organization_path: /organizations/chinese-academy-of-sciences
+  role: 'Professor at the Institute of Biophysics / Laboratory of Brain and Cognitive Science'
+  confidence: confirmed
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶1'
+  note: 'IRVA (q3): "He is also Professor at the Institute of Biophysics / Laboratory of Brain and Cognitive Science, of the Chinese Academy of Sciences." Concurrent with his Wayne State role (a3). Specific period start and end dates are not attested in the archived sources.'
+
+- id: a6
+  added_date: '2026-05-17'
+  organization_path: /organizations/us-army
+  role: 'Chair, Independent Science Panel for the Undersecretary of the Army for Operations Research and the Assistant Secretary of Defense for Chemical, Biological, and Nuclear Matters'
+  confidence: confirmed
+  source:
+    path: news/irva-kit-green-wayback-20241212.html
+    location: '¶3'
+  note: 'IRVA (q6): "He recently was Chair, of the Independent Science Panel for the Undersecretary of the Army for Operations Research and the Assistant Secretary of Defense for Chemical, Biological, and Nuclear Matters." The Panel reports to both the USA(ORS) and the ASD(CBN). Specific period start and end dates are not attested in the archived sources; "recently" in q6 dates the role to a window before the IRVA page''s last edit date 2021-07-21 per its schema.org metadata.'
+
+relationships:
+
+- id: rel1
+  added_date: '2026-05-17'
+  person_path: /people/hal-puthoff
+  relationship: 'CIA OSI program officer (Green) and SRI parapsychology cofounder (Puthoff) at the 1972-1973 SRI-CIA engagement inception; later co-consultants on Bigelow AAWSAP and Fugal Skinwalker projects'
+  confidence: confirmed
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: '¶49'
+  note: 'Green-Puthoff working relationship spans the entire archived corpus arc — June 1972 letter from Puthoff to Green at OSI (q1), Green''s November 1973 LSD/OSI memorandum on Verification of Remote Viewing Experiments at SRI (q2), and post-2016 Fugal Skinwalker consultancy plus AAWSAP participation alongside Puthoff (q7).'
+
+- id: rel2
+  added_date: '2026-05-17'
+  person_path: /people/russell-targ
+  relationship: 'CIA OSI program officer (Green) and SRI parapsychology cofounder (Targ) at the 1972-1973 SRI-CIA engagement inception'
+  confidence: confirmed
+  source:
+    path: government/cia-kress-parapsychology-in-intelligence-studies-intelligence-1977-declassified-1996.pdf
+    location: 'p. 8 footnote (q1) + p. 10 footnote (q2) + p. 8 ¶2 body narrative'
+  note: 'Targ''s April 1972 meeting with CIA OSI personnel preceded the June 17, 1972 Puthoff-to-Green letter that q1 attests; Green at LSD/OSI then authored the November 1973 Memorandum for the Record on Verification of Remote Viewing Experiments at SRI (q2). The Kress 1977 narrative establishes Green at OSI as the CIA-side counterpart for the Targ-Puthoff SRI investigation across the program''s 1972-1973 inception.'
+
+- id: rel3
+  added_date: '2026-05-17'
+  person_path: /people/robert-bigelow
+  relationship: 'Bigelow''s AAWSAP DIA-funded project participant per Vice 2020 (q7)'
+  confidence: confirmed
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: '¶49'
+  note: 'Per Vice 2020 (q7), Green and Hal Puthoff were both "involved in Bigelow''s DIA project" — the Advanced Aerospace Weapon System Applications Program / AAWSAP. The specific Green role, contracted scope, and tenure within AAWSAP are not detailed in the archived corpus beyond this attestation.'
+
+- id: rel4
+  added_date: '2026-05-17'
+  person_path: /people/brandon-fugal
+  relationship: 'Scientific consultant on Fugal''s post-2016 Skinwalker Ranch project; Fugal-Green friendship attested post-shutdown'
+  confidence: confirmed
+  source:
+    path: news/vice-fugal-skinwalker-owner-20200310.html
+    location: '¶49'
+  note: 'Per Vice 2020 (q7): Green and Puthoff were brought in to consult on Fugal''s Skinwalker project; Fugal stayed in touch with both after the (earlier-era) shutdown.'
+
+rumors: []
