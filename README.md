@@ -79,8 +79,8 @@ scripts/
   tools/                    standalone utilities + diagnostics
     manifest.py             manifest CLI (add, verify-paths, verify-checksums, …)
     archive.py              Wayback Machine submission
-    transcribe.py           YouTube caption download (auto-fallback to yt-dlp; --cookies opt-in)
-    extract-firefox-cookies.py  Firefox cookies → Netscape cookies.txt (for transcribe.py --cookies)
+    transcribe.py           YouTube caption download (auto-fallback to yt-dlp; --cookies - reads from stdin)
+    extract-firefox-cookies.py  Firefox cookies → stdout (memory-only; pipe into transcribe.py --cookies -)
     check-vocab.py          pre-flight prose-drift token check (contributor diagnostic)
     coverage-suggest.py     source-coverage audit aid (read-only; surfaces under-extraction candidates)
     normalize-locations.py  quote `source.location` ref diagnostic (read-only)

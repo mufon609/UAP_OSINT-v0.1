@@ -181,43 +181,58 @@ Firefox is running with its default cookie protections engaged.
 
 ### Canonical caption-archival workflow
 
-**Three steps, one tool per step.** Steps 1 + 2 are one-time
-per session; step 3 is per-video.
+**Cookies stay in memory.** The toolkit deliberately doesn't write
+cookies to disk — these are session credentials authenticating full
+Google account access, and the disk-file path adds backup-leak,
+accidental-commit, and forgot-to-shred failure modes for very
+little benefit (extraction is sub-second; re-extract per shell).
+Memory-only is the single supported workflow.
 
-1. **Configure Firefox prereqs** (one-time setup; persistent across
-   sessions until you change Firefox settings):
+**Two steps once per shell session, one step per video.**
+
+1. **One-time Firefox setup** (persistent across sessions until you
+   change Firefox settings):
 
    - `about:preferences#privacy` → **Enhanced Tracking Protection:
-     Standard** (NOT Strict — Total Cookie Protection partitioning
-     hides cookies from sqlite extraction)
+     Standard** (NOT Strict — Total Cookie Protection in Strict
+     partitions the cookie store in a way that sqlite extraction
+     can't follow)
    - Uncheck **"Delete cookies and site data when Firefox is closed"**
-   - History: **"Remember history"** (not "Never remember" /
-     "Custom" with clear-on-close)
+   - History: **"Remember history"** (not "Never remember" / "Custom"
+     with clear-on-close)
    - Log into `https://youtube.com` in a **regular** (non-private)
      window; click a video so the session writes to `cookies.sqlite`
 
-2. **Extract cookies** via `scripts/tools/extract-firefox-cookies.py`:
+2. **Extract + capture cookies into a shell variable** (per shell
+   session; cookies live in the bash process's memory):
 
    ```
-   python3 scripts/tools/extract-firefox-cookies.py --output /tmp/yt-cookies.txt
+   COOKIES=$(python3 scripts/tools/extract-firefox-cookies.py)
    ```
 
-   No browser extension, no manual paste, **Firefox stays open**.
-   Opens `cookies.sqlite` in read-only + `immutable=1` URI mode to
-   bypass Firefox's write locks; writes Netscape-format cookies.txt
-   at 0600 perms. Auto-detects the default-esr profile. Reports zero-
-   cookie failures with a diagnostic checklist pointing back at the
-   prereqs above.
+   `extract-firefox-cookies.py` reads `cookies.sqlite` in read-only +
+   `immutable=1` mode (bypasses Firefox's write locks; Firefox stays
+   open) and emits Netscape-format content to stdout. Status messages
+   go to stderr so the shell capture is clean. Reports zero-cookie
+   failures (with the prereq checklist) to stderr.
 
-3. **Download captions** via `scripts/tools/transcribe.py URL --cookies /tmp/yt-cookies.txt`:
+3. **Per-video — pipe cookies into `transcribe.py`**:
 
-   `transcribe.py` tries `youtube-transcript-api` first (no cookies
-   needed) when `--cookies` is absent. With `--cookies` supplied
-   (or on API failure with no cookies), it falls back to yt-dlp,
-   downloads JSON3 captions, converts to the canonical `[MM:SS] text`
-   markdown format internally, writes to `sources/transcripts/{slug}-downloaded.md`.
+   ```
+   printf '%s' "$COOKIES" | python3 scripts/tools/transcribe.py URL --cookies -
+   ```
 
-   Then register in manifest as documented in the script's output:
+   `transcribe.py --cookies -` reads cookies from stdin, pipes them to
+   yt-dlp via `--cookies /dev/stdin`, downloads JSON3 captions,
+   converts to the canonical `[MM:SS] text` markdown format internally,
+   writes to `sources/transcripts/{slug}-downloaded.md`. Cookies stay
+   in kernel pipe buffers — never written to disk.
+
+   `printf` is a bash builtin, so args don't appear in
+   `/proc/PID/cmdline`. **Do not `echo "$COOKIES"` to inspect** —
+   echo would expose the value to your shell history.
+
+   Then register in manifest:
 
    ```
    python3 scripts/tools/manifest.py add URL --path transcripts/{slug}-downloaded.md --format transcript
@@ -227,46 +242,44 @@ per session; step 3 is per-video.
    manifest entry (the `manifest.py add` CLI doesn't expose the
    field yet — minor ergonomics gap, fix-when-needed).
 
-**After the session**, securely delete the cookies file:
+4. **End of session — clear the shell variable**:
+
+   ```
+   unset COOKIES
+   ```
+
+   (Also gone on shell exit. The cookies authenticate full Google
+   account access; if they were ever exposed via paste / inspection
+   / accidental echo, rotate the Google session at
+   `https://myaccount.google.com/u/0/security`.)
+
+### One-video shorthand
+
+For single-video archival, skip the variable:
 
 ```
-shred -u /tmp/yt-cookies.txt
-```
-
-The cookies authenticate full Google account access, not just
-YouTube. Rotate the Google session if the cookies were ever pasted
-inline into a contributor-AI conversation transcript.
-
-### Memory-only workflow (no disk write)
-
-When you want cookies to never touch disk at all,
-`extract-firefox-cookies.py --stdout` emits the cookies to stdout
-and `transcribe.py --cookies -` reads them from stdin. yt-dlp
-receives them via `--cookies /dev/stdin` internally; the data
-flows through kernel pipe buffers, never landing in a file.
-
-```
-# Single-video chain (cookies in kernel pipe buffer only):
-python3 scripts/tools/extract-firefox-cookies.py --stdout |
+python3 scripts/tools/extract-firefox-cookies.py |
     python3 scripts/tools/transcribe.py URL --cookies -
-
-# Multi-video with shell variable (cookies in bash process memory):
-COOKIES=$(python3 scripts/tools/extract-firefox-cookies.py --stdout)
-printf '%s' "$COOKIES" | python3 scripts/tools/transcribe.py URL1 --cookies -
-printf '%s' "$COOKIES" | python3 scripts/tools/transcribe.py URL2 --cookies -
-unset COOKIES   # clears the variable from shell memory
 ```
 
-`printf` is a bash builtin (args not visible via `/proc/PID/cmdline`),
-the pipe goes through an anonymous kernel pipe (no disk). The
-shell variable lives in the bash process's address space until
-`unset` or shell exit. **Do not `echo "$COOKIES"` to inspect** —
-that would expose the value to your shell history.
+### Defense layers (so the canonical path stays the only path that ships)
 
-Trade-off vs the disk-file workflow: the shell variable / pipe
-disappears when the shell exits, so re-extraction is needed for
-each new shell session. The disk-file workflow persists across
-shell sessions but needs explicit `shred -u` cleanup.
+Even with memory-only as the documented workflow, contributors can
+construct cookies files via other tools (browser extensions, manual
+exports, redirecting `extract-firefox-cookies.py > file.txt`). Three
+layers defend against those files reaching git history:
+
+- **`.gitignore`** patterns block accidental `git add` of
+  `cookies.txt`, `yt-cookies*.txt`, `*.cookies.txt`, `*cookies.sqlite*`
+- **`cookies-check` pre-commit gate**
+  (`scripts/tests/cookies-check.sh`, gate 9 of `pre-commit.sh`)
+  scans every tracked file for Netscape HTTP Cookie File headers or
+  Google session cookies in Netscape-shape rows; errors with
+  recovery instructions
+- **`transcribe.py --cookies PATH`** still accepts file paths
+  (undocumented escape hatch for async batch use cases where shell
+  variables don't fit), but the gate + gitignore catch any file that
+  results
 
 ### Last-resort fallback — manual paste from "Show transcript" UI
 

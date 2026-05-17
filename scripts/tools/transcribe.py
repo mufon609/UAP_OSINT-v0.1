@@ -15,26 +15,33 @@ Two extraction paths, tried in order:
      YouTube when the API path is blocked.
 
 Usage:
-    transcribe.py URL                              # API only; fallback to yt-dlp on failure
-    transcribe.py URL --cookies /tmp/yt.txt        # skip API; yt-dlp with cookies from file
-    transcribe.py URL --cookies -                  # skip API; yt-dlp with cookies from stdin
-                                                   #   (cookies never touch disk)
-    transcribe.py URL --slug custom-name           # custom output filename
-    transcribe.py URL --raw                        # also save raw segments JSON
+    transcribe.py URL                          # API only; fallback to yt-dlp on failure
+    transcribe.py URL --cookies -              # skip API; cookies via stdin (canonical)
+    transcribe.py URL --slug custom-name       # custom output filename
+    transcribe.py URL --raw                    # also save raw segments JSON
 
-Stdin-cookies workflow (cookies stay in process memory throughout):
+Canonical cookies workflow (cookies stay in memory; never touch disk):
 
     # Single-video chain:
-    extract-firefox-cookies.py --stdout | transcribe.py URL --cookies -
+    extract-firefox-cookies.py | transcribe.py URL --cookies -
 
     # Multi-video with shell variable (extract once, transcribe many):
-    COOKIES=$(extract-firefox-cookies.py --stdout)
+    COOKIES=$(extract-firefox-cookies.py)
     printf '%s' "$COOKIES" | transcribe.py URL1 --cookies -
     printf '%s' "$COOKIES" | transcribe.py URL2 --cookies -
     unset COOKIES
 
-Cookies are produced by scripts/tools/extract-firefox-cookies.py (see
-its docstring for Firefox-side prereqs).
+Cookies are session credentials authenticating full Google account
+access. The toolkit deliberately doesn't suggest writing them to disk
+— memory-only workflow eliminates backup-leak / accidental-commit /
+forgot-to-shred failure modes. See scripts/tools/extract-firefox-cookies.py
+for the Firefox-side prereqs (ETP Standard, persist-on-close, regular
+non-private window).
+
+--cookies also accepts a file path (escape hatch for edge cases like
+async batch processing where shell variables aren't viable); the
+.gitignore patterns + cookies-check pre-commit gate defend against
+accidentally staging a cookies file from this path.
 
 Requires: youtube-transcript-api  (pip install youtube-transcript-api)
 Optional: yt-dlp                  (pip install yt-dlp)
@@ -204,9 +211,9 @@ def main():
     parser.add_argument("url")
     parser.add_argument("--slug", help="Output slug (default: video ID)")
     parser.add_argument("--cookies", help=(
-        "Path to a Netscape-format cookies.txt, OR the literal '-' to "
-        "read cookies from stdin (no disk write). When supplied, the "
-        "API path is skipped and yt-dlp is used directly. See "
+        "'-' to read cookies from stdin (canonical; memory-only). "
+        "Also accepts a file path as an escape hatch. When supplied, "
+        "the API path is skipped and yt-dlp is used directly. See "
         "extract-firefox-cookies.py for the cookies-acquisition workflow."
     ))
     parser.add_argument("--raw", action="store_true", help="Also save raw segments JSON")

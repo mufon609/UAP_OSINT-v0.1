@@ -1,31 +1,27 @@
 #!/usr/bin/env python3
-"""Extract Firefox cookies to Netscape cookies.txt format for yt-dlp.
+"""Extract Firefox cookies to Netscape cookies.txt format, emitted to stdout.
+
+Stdout always. No file output. The cookies are session credentials that
+authenticate full Google account access — the toolkit deliberately
+doesn't write them to disk so they can't be backed up, accidentally
+committed, or left lying around for the next contributor on a shared
+machine. Use shell-variable capture for multi-URL workflows; cookies
+live in the bash process's memory until `unset` or shell exit.
 
 No browser extension. No manual paste. No need to close Firefox.
-Opens cookies.sqlite in read-only + immutable mode (bypasses Firefox's
-write locks; reads the last-committed state directly).
+Opens cookies.sqlite in read-only + immutable=1 URI mode (bypasses
+Firefox's write locks; reads last-committed state directly).
 
-Two output modes:
+Status messages go to stderr so stdout stays clean for piping.
 
-  --output PATH   (default)  Write to a file at 0600 perms.
-                             Default path: /tmp/yt-cookies.txt
+Canonical usage:
 
-  --stdout                   Print to stdout (no disk write). Status
-                             messages go to stderr so stdout is clean
-                             for piping or capture.
+    # Single video:
+    scripts/tools/extract-firefox-cookies.py |
+        scripts/tools/transcribe.py URL --cookies -
 
-Usage:
-    # Disk file (batch reuse):
-    extract-firefox-cookies.py --output /tmp/yt-cookies.txt
-    yt-dlp --cookies /tmp/yt-cookies.txt URL
-    shred -u /tmp/yt-cookies.txt   # when done
-
-    # Stdin pipe (single command, never touches disk):
-    extract-firefox-cookies.py --stdout |
-        python3 scripts/tools/transcribe.py URL --cookies -
-
-    # Shell variable (multi-URL, never touches disk):
-    COOKIES=$(scripts/tools/extract-firefox-cookies.py --stdout)
+    # Multi-video (one extract, many transcribes within one shell):
+    COOKIES=$(scripts/tools/extract-firefox-cookies.py)
     printf '%s' "$COOKIES" | scripts/tools/transcribe.py URL1 --cookies -
     printf '%s' "$COOKIES" | scripts/tools/transcribe.py URL2 --cookies -
     unset COOKIES
@@ -35,7 +31,7 @@ to the on-disk store for sqlite3 to see them):
     1. about:preferences#privacy
        - Enhanced Tracking Protection: Standard (NOT Strict — Total
          Cookie Protection in Strict partitions the cookie store in a
-         way that yt-dlp can't follow)
+         way that sqlite extraction can't follow)
        - Uncheck "Delete cookies and site data when Firefox is closed"
        - History: "Remember history" (not "Never remember")
     2. Log into the target site (e.g. YouTube) in a regular,
@@ -46,7 +42,6 @@ Then run this script while Firefox stays open.
 """
 
 import argparse
-import os
 import sqlite3
 import sys
 from datetime import datetime
@@ -54,7 +49,6 @@ from pathlib import Path
 
 
 DEFAULT_DOMAIN_LIKES = ["youtube", "google", "accounts.google"]
-DEFAULT_OUTPUT = Path("/tmp/yt-cookies.txt")
 
 
 def find_firefox_profile():
@@ -121,18 +115,6 @@ def main():
             "youtube google accounts.google)"
         ),
     )
-    out_group = parser.add_mutually_exclusive_group()
-    out_group.add_argument(
-        "--output",
-        type=Path,
-        default=None,
-        help=f"Output cookies.txt path (default: {DEFAULT_OUTPUT}; mutually exclusive with --stdout)",
-    )
-    out_group.add_argument(
-        "--stdout",
-        action="store_true",
-        help="Print cookies to stdout (no disk write). Status messages go to stderr.",
-    )
     args = parser.parse_args()
 
     profile = args.profile or find_firefox_profile()
@@ -158,18 +140,11 @@ def main():
         )
         sys.exit(2)
 
-    if args.stdout:
-        sys.stdout.write(text)
-        print(
-            f"✓ Emitted {count} cookies to stdout (profile: {profile.name})",
-            file=sys.stderr,
-        )
-    else:
-        output_path = args.output or DEFAULT_OUTPUT
-        output_path.write_text(text)
-        os.chmod(output_path, 0o600)
-        print(f"✓ Wrote {output_path} ({count} cookies, profile: {profile.name})")
-        print(f"  Use with: yt-dlp --cookies {output_path} <URL>")
+    sys.stdout.write(text)
+    print(
+        f"✓ Emitted {count} cookies to stdout (profile: {profile.name})",
+        file=sys.stderr,
+    )
 
 
 if __name__ == "__main__":
