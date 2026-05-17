@@ -15182,3 +15182,23 @@
     YAML parse failure: mapping values are not allowed here
       in "/home/neural/Desktop/uap-research/REFACTOR/meta/research/lucistrust-rending-veils-ryder-2017.yaml", line 47, column 454
 
+- ts: 2026-05-17T23:06:47Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e59' ('Graham Hancock') wrap_path '/people/graham-hancock' does not appear as a [`/people/graham-hancock`] link in the node
+
+- ts: 2026-05-17T23:06:47Z
+  source: validator
+  check: stub_linking
+  phase: review-coverage
+  node: meta/research/james-ryder.yaml
+  node_type: research-artifact
+  severity: error
+  message: |
+    Stub-linking: entity 'e60' ('Lawrence (Lucis Trust moderator)') wrap_path '/people/lawrence-lucis-trust-moderator' does not appear as a [`/people/lawrence-lucis-trust-moderator`] link in the node
+
