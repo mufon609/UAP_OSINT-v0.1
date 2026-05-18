@@ -41,7 +41,9 @@ identity reference set; crops/ is the working area for unidentified faces
 awaiting contributor review.
 
 Requires python3-opencv and opencv-data (Haar cascade XMLs). Run
-scripts/tools/setup-photo-identity.sh once to install.
+scripts/tools/setup-photo-identity.sh once to install. See
+scripts/tools/VIDEO-PIPELINE.md for the end-to-end workflow this tool is
+step 3 of.
 
 Usage examples:
   # Detect faces in every frame referenced by an extract-frames index

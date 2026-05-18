@@ -16,3 +16,19 @@ cookies.txt
 yt-cookies*.txt
 *.cookies.txt
 *cookies.sqlite*
+
+# yt-dlp gotcha — `--cookies -` is interpreted as a literal filename, and
+# yt-dlp writes refreshed cookies back to a file named `-` in the working
+# directory after the run. scripts/tools/download-video.py and transcribe.py
+# avoid this by using `--cookies-from-browser firefox` and `--cookies /dev/stdin`
+# respectively, but the gitignore entry is defense-in-depth in case a future
+# tool or contributor command leaks via `-`. See scripts/tools/VIDEO-PIPELINE.md
+# "Cookies — when, why, and the dangerous form" for the canonical workflow.
+/-
+
+# yt-dlp partial / temp / metadata artifacts. Same memory-only discipline
+# concern: a future yt-dlp version or flag combination could persist
+# auth-bearing state here.
+*.part
+*.ytdl
+*.live_chat.json

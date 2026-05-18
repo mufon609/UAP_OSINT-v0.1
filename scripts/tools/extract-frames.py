@@ -60,7 +60,8 @@ Usage examples:
       --transcript sources/transcripts/foo-whisper-transcript.txt --every 5
 
 Lives at scripts/tools/ per the directory convention (contributor diagnostic,
-not part of the build pipeline).
+not part of the build pipeline). See scripts/tools/VIDEO-PIPELINE.md for the
+end-to-end workflow this tool is step 2 of.
 """
 
 import argparse

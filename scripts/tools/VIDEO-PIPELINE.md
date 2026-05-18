@@ -1,0 +1,267 @@
+# Video pipeline — speaker disambiguation workflow
+
+This pipeline supports **transcript verification on multi-speaker video sources**.
+Whisper and YouTube auto-caption transcripts don't preserve speaker identity.
+When a source has multiple people on camera — panel discussion, moderated
+interview, documentary with intercut interviews — a single transcript line may
+belong to any of them. This pipeline lets a contributor visually confirm
+who-is-who before quoting material in entity-node Statements / Key Passages.
+
+Where the pipeline fits in the repo: contributor diagnostic tooling, not part
+of the build pipeline. It gates the discipline of "every quote attributed to
+a person actually came from that person" — same evidentiary discipline that
+the verbatim-quote check enforces mechanically, but for sources where the
+speaker isn't stamped in the transcript itself.
+
+---
+
+## One-time setup
+
+```
+bash scripts/tools/setup-photo-identity.sh
+```
+
+Installs and verifies:
+
+| Dependency | Purpose | Install path |
+|---|---|---|
+| `python3-opencv` | Haar cascade face detection | apt |
+| `opencv-data` | Cascade XML files | apt |
+| `yt-dlp` | Video download | pip / apt |
+| `ffmpeg`, `ffprobe` | Frame extraction, merge, duration probe | apt |
+| JS runtime (`deno` / `node` / `bun`) | yt-dlp's EJS challenge solver | varies |
+
+The setup script reports any missing pieces and exits non-zero if any apt
+install fails. Re-runnable.
+
+---
+
+## Four-step pipeline
+
+Each step is one command. Defaults are tuned for the common case; flags exist
+for tuning when needed.
+
+### 1. Download the source video
+
+```
+python3 scripts/tools/download-video.py URL --slug NAME
+```
+
+Example:
+
+```
+python3 scripts/tools/download-video.py \
+    "https://www.youtube.com/watch?v=dnnpyNuPdXs" \
+    --slug american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs
+```
+
+Output:
+
+- `sources/video/{slug}.mp4` — the downloaded file (~300-500 MB for 1-3 hour
+  videos at 480p)
+- `sources/manifest.yaml` — new entry registered via `manifest.py add` with
+  format: video, sha256, archive bits
+
+Idempotent. Re-running with the same `--slug` skips the download if the file
+already exists; still re-runs the manifest registration (which is itself
+idempotent).
+
+Common tunables:
+
+- `--quality 720` for higher facial detail (file size scales ~2-3×)
+- `--note "STR"` to attach contributor context to the manifest entry
+- `--dry-run` to inspect the yt-dlp invocation without running
+
+### 2. Extract frames at contested timestamps
+
+```
+# Anchor frames — preset early timestamps to establish each speaker's visual
+# identity before the contested-passage analysis
+python3 scripts/tools/extract-frames.py anchor --video sources/video/{slug}.mp4
+
+# Burst at specific timestamps — 5 frames over 2 seconds per timestamp, tiled
+# into a single contact-sheet jpg. Mouth motion across the burst distinguishes
+# active speech from listening from B-roll narration.
+python3 scripts/tools/extract-frames.py burst \
+    --video sources/video/{slug}.mp4 \
+    --timestamps "44:53,45:00,45:09,45:20"
+```
+
+Output lands at `/tmp/frames-{slug}/` with an `index.md` listing every
+extraction by timestamp + path. Other modes:
+
+- `sweep --from MM:SS --to MM:SS --every N` — periodic burst across a range
+- `transcript --transcript PATH --every N` — burst at each `[MM:SS]` caption
+  tick (or every Nth)
+
+### 3. Detect faces in the extracted frames
+
+```
+# Process every contact sheet listed in the index
+python3 scripts/tools/detect-faces.py detect \
+    --index /tmp/frames-{slug}/index.md
+
+# Or process a single directory of images
+python3 scripts/tools/detect-faces.py detect \
+    --input /tmp/frames-{slug}/anchor/
+```
+
+For each detected face, the tool saves a 256×256 jpg crop to
+`sources/photo-identity-log/crops/` (skipping near-duplicates via perceptual
+hash). Summary reports counts: faces detected, deduplicated, identified
+(meaning: pHash matched against an existing baseline crop).
+
+### 4. Register clear baselines
+
+After visually reviewing crops in `sources/photo-identity-log/crops/`, register
+the ones that are unambiguous identifications:
+
+```
+python3 scripts/tools/detect-faces.py register \
+    --crop sources/photo-identity-log/crops/{file}.jpg \
+    --identity {kebab-slug} \
+    --source-video sources/video/{slug}.mp4 \
+    --source-timestamp MM:SS \
+    --bbox X,Y,W,H \
+    --note "context"
+```
+
+The bbox values come from `sources/photo-identity-log/index.csv` (which the
+`detect` step populates). Identity slugs are kebab-case (e.g.,
+`jake-barber`, `jesse-michels`); multiple baselines per identity are
+encouraged — register different poses/angles as `ref_01.jpg`, `ref_02.jpg`,
+etc.
+
+The `register` command:
+
+1. Moves the crop from `crops/` to `baselines/{identity}/ref_NN.jpg`
+2. Computes sha256
+3. Appends an entry to `sources/photo-identity-log/manifest.yaml` with full
+   provenance (source video path, timestamp, bbox)
+
+Future `detect` runs will identify new crops against the accumulating
+baseline set — when an unambiguous baseline pHash-matches a freshly-detected
+face in a new frame, the tool reports it as identified rather than queuing
+it as an unlabeled crop.
+
+### Maintenance: prune unidentified crops
+
+```
+python3 scripts/tools/detect-faces.py prune          # interactive
+python3 scripts/tools/detect-faces.py prune --dry-run
+python3 scripts/tools/detect-faces.py prune --force  # no prompt
+```
+
+Removes crops in `crops/` whose pHash matches no baseline — i.e., unlabeled
+faces the contributor has decided not to keep. Removed crops leave git
+history but no longer in HEAD.
+
+---
+
+## Cookies — when, why, and the dangerous form
+
+YouTube blocks unauthenticated downloads on many residential and VPN IPs.
+`download-video.py` handles this via:
+
+```
+yt-dlp --cookies-from-browser firefox ...
+```
+
+yt-dlp reads cookies **directly from Firefox's profile in memory** — no
+cookies file ever touches disk. This is the canonical and safe form.
+
+**Do NOT use `--cookies -`** as the cookies flag value to yt-dlp. The `-`
+gets interpreted as a literal filename, and yt-dlp writes refreshed cookies
+*back* to that path after the run completes. We learned this the hard way
+during the Michels-Barber download — a file named `-` containing live
+session credentials was created in the working directory.
+
+For tools without a `--cookies-from-browser` equivalent (e.g.,
+`scripts/tools/transcribe.py` driving the YouTube captions API):
+
+```
+scripts/tools/extract-firefox-cookies.py --accept-risks | \
+    scripts/tools/transcribe.py URL --cookies -
+```
+
+`transcribe.py` internally wires the stdin cookies through to yt-dlp via
+`--cookies /dev/stdin` — a real filesystem path the kernel maps to file
+descriptor 0, which yt-dlp opens read-only and can't write back to. The
+bare `-` form would fail; `/dev/stdin` is the Linux-specific safe form.
+
+`extract-firefox-cookies.py` itself keeps cookies in memory (stdout) and
+never writes to disk. The danger is downstream tools that misinterpret
+`-` as a file path.
+
+**Strong recommendation:** use a burner Google account for YouTube cookies.
+Live session credentials grant full access to whatever Google identity is
+logged in.
+
+### Pre-commit safety net
+
+The `cookies-check` pre-commit gate scans staged content for Netscape
+cookies / Google session credentials. `.gitignore` excludes common cookie
+filenames including the bare `-` variant. Together they catch accidental
+cookie file commits.
+
+---
+
+## End-to-end example
+
+The Michels-Barber documentary, end to end:
+
+```
+# Setup (one time)
+bash scripts/tools/setup-photo-identity.sh
+
+# Download
+python3 scripts/tools/download-video.py \
+    "https://www.youtube.com/watch?v=dnnpyNuPdXs" \
+    --slug american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs
+
+# Anchor frames for speaker identity baselines
+python3 scripts/tools/extract-frames.py anchor \
+    --video sources/video/american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs.mp4 \
+    --timestamps "0:15,1:00,5:00,10:00,20:00,45:00,1:30:00,2:30:00"
+
+# Detect faces in anchors
+python3 scripts/tools/detect-faces.py detect \
+    --input /tmp/frames-american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs/anchor/
+
+# Register two baselines (bbox values from sources/photo-identity-log/index.csv)
+python3 scripts/tools/detect-faces.py register \
+    --crop sources/photo-identity-log/crops/10-00_face_01.jpg \
+    --identity jesse-michels \
+    --source-video sources/video/american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs.mp4 \
+    --source-timestamp 10:00 --bbox 296,63,156,156
+
+python3 scripts/tools/detect-faces.py register \
+    --crop sources/photo-identity-log/crops/1-30-00_face_01.jpg \
+    --identity jake-barber \
+    --source-video sources/video/american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs.mp4 \
+    --source-timestamp 1:30:00 --bbox 386,51,159,159
+
+# Re-detect — now identification fires on the baselines
+python3 scripts/tools/detect-faces.py detect \
+    --input /tmp/frames-american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs/anchor/
+
+# Prune unlabeled crops (interactive)
+python3 scripts/tools/detect-faces.py prune
+```
+
+---
+
+## When to use which tool
+
+| Tool | When |
+|---|---|
+| `setup-photo-identity.sh` | First time on a machine, or when adding the video pipeline to an existing checkout |
+| `download-video.py` | Archiving a new video source that needs face detection |
+| `extract-frames.py anchor` | First-time on a video — establish visual identity of each on-camera speaker |
+| `extract-frames.py burst` | Speaker disambiguation at a specific contested transcript timestamp |
+| `extract-frames.py sweep` | Visual map of an unfamiliar source |
+| `extract-frames.py transcript` | Exhaustive frame coverage matching every caption tick |
+| `detect-faces.py detect` | After any extract-frames run, to find faces in the extracted frames |
+| `detect-faces.py register` | After reviewing a crop, to promote it to a persistent baseline |
+| `detect-faces.py prune` | Periodic cleanup of unidentified crops |
+| `extract-firefox-cookies.py` | Only when piping cookies into a tool that doesn't support `--cookies-from-browser` (e.g., `transcribe.py`) |
