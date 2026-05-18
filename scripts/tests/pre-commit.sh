@@ -6,7 +6,7 @@
 #   1. scripts/tests/help-check.sh           — scripts/**/*.py --help doesn't crash
 #   2. scripts/tests/test_stopwords.py       — STOPWORDS shape + no content-word
 #                                              contamination (lib/_common.py)
-#   3. scripts/tests/smoke.sh                — fixture scaffold + validate per type
+#   3. scripts/tests/smoke.py                — fixture scaffold + validate per type
 #   4. python3 scripts/build/validate.py     — structural + verbatim-quote +
 #                                              governance-file + conditionally_required
 #   5. python3 scripts/build/validate-research.py
@@ -92,7 +92,7 @@ run_step() {
 steps=(
     $'help-check\tbash scripts/tests/help-check.sh'
     $'test_stopwords\tpython3 scripts/tests/test_stopwords.py'
-    $'smoke\tbash scripts/tests/smoke.sh'
+    $'smoke\tpython3 scripts/tests/smoke.py'
     $'validate.py\tpython3 scripts/build/validate.py'
     $'validate-research.py\tpython3 scripts/build/validate-research.py'
     $'review-coverage.py\tpython3 scripts/build/review-coverage.py --all'

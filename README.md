@@ -102,7 +102,8 @@ scripts/tests/
                             build/build-state.py --check / file-size-check)
   help-check.sh             confirms every scripts/{build,tools}/*.py --help exits 0
   test_stopwords.py         STOPWORDS shape + content-word regression test
-  smoke.sh                  fixture-based new.py + validator smoke tests
+  smoke.py                  fixture-based new.py + validator smoke tests
+                            (single-process; ProcessPoolExecutor over fork)
   file-size-check.sh        warn 50MB / error 100MB on git-tracked files
                             (per meta/sources-access.md large-file discipline)
 
