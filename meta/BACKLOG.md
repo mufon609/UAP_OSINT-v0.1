@@ -148,15 +148,6 @@ treat the non-URL response as failure, or store a distinct
 
 Surfaced: 2026-05-17 repo audit.
 
-### C4 — `scripts/tools/normalize-locations.py:230` — `NameError` on relative path argument
-
-[BUG] References `LIB_REPO_ROOT` as the fallback root for resolving a
-relative `target` argument, but only `REPO_ROOT` is imported (L40).
-First contributor passing a relative path that doesn't resolve in cwd
-hits a raw `NameError` traceback. One-character rename fix.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C5 — `scripts/checks/section_rules.py:88` — `requires_quote_attribution` check is all-or-nothing
 
 [BUG] `if quotes > 0 and attributions == 0:` only fires when no

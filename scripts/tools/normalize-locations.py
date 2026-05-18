@@ -227,7 +227,7 @@ def iter_artifacts(target):
         if not p.is_absolute():
             # Try as-given, then relative to repo root
             if not p.exists():
-                p = LIB_REPO_ROOT / target
+                p = REPO_ROOT / target
         if p.is_dir():
             for q in sorted(p.glob("*.yaml")):
                 yield q
