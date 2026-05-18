@@ -196,18 +196,6 @@ silent data loss.
 
 Surfaced: 2026-05-17 repo audit.
 
-### C14 — `BINARY_FORMATS` triplet hardcoded at three sites
-
-[BANDAID] `("image", "video", "audio")` is repeated as a literal in
-`scripts/build/extract-source.py:164`,
-`scripts/checks/phase_iii_inputs.py:52`, and
-`scripts/checks/verbatim_quotes.py:111`. Adding a new binary format
-to the manifest schema requires updates in three places. Promote to
-a shared constant in `scripts/lib/_common.py` and have all three
-sites import it.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C15 — `scripts/tools/archive.py:73` — retry has no backoff and no jitter
 
 [BANDAID] Single retry on `URLError`/`TimeoutError` with a hardcoded

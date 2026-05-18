@@ -20,7 +20,7 @@ gone missing on disk), not pipeline blockers.
 """
 
 from checks import Issue
-from lib._common import SOURCES_DIR, extract_source_text
+from lib._common import BINARY_FORMATS, SOURCES_DIR, extract_source_text
 
 
 CHECK_NAME = "phase_iii_inputs"
@@ -46,10 +46,7 @@ def check(ctx):
         rel_path = ps.get("path")
         if not rel_path:
             continue
-        # Binary primary sources (image/video/audio) are not text-
-        # extractable by design — silent skip rather than warn (matches
-        # the manifest extraction contract).
-        if ps.get("format") in ("image", "video", "audio"):
+        if ps.get("format") in BINARY_FORMATS:
             continue
         full = SOURCES_DIR / rel_path
         if not full.exists():

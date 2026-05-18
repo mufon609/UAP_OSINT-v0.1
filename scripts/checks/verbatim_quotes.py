@@ -30,6 +30,7 @@ import re
 
 from checks import Issue
 from lib._common import (
+    BINARY_FORMATS,
     SOURCES_DIR,
     extract_source_text,
     manifest_format,
@@ -101,14 +102,14 @@ def check(ctx):
             continue
         source_text = extract_source_text(source_file)
         if source_text is None:
-            # Distinguish binary-by-design (image/video/audio per manifest
-            # format) from extraction-infrastructure failure. pdftotext
-            # didn't fail on a .mp4; it was never going to run. Binary-
-            # source-citing quotes require manual contributor verification —
-            # the validator can't substring-match against bytes that aren't
+            # Distinguish binary-by-design (per BINARY_FORMATS) from
+            # extraction-infrastructure failure. pdftotext didn't fail
+            # on a .mp4; it was never going to run. Binary-source-citing
+            # quotes require manual contributor verification — the
+            # validator can't substring-match against bytes that aren't
             # text. Frame the warning accordingly.
             fmt = manifest_format(rel_source)
-            if fmt in ("image", "video", "audio"):
+            if fmt in BINARY_FORMATS:
                 yield Issue(
                     ctx.rel, "warn",
                     f"Quote at line {line_no} cites sources/{rel_source} "

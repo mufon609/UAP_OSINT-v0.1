@@ -169,14 +169,21 @@ def _load_extraction_types():
     return _extraction_type_cache
 
 
+# Manifest formats whose sources are binary-by-design — no text layer
+# to extract, so the verbatim-quote check / Phase III coverage / etc.
+# skip text-extraction paths for these and frame any "missing text"
+# observation as expected rather than as a failure.
+BINARY_FORMATS = frozenset({"image", "video", "audio"})
+
+
 def manifest_format(rel_path):
     """Return the manifest's `format` value for a source path (relative to
     sources/), or None if the path or the field is absent. Lazy + cached.
 
-    Used to distinguish binary-by-design sources (image/video/audio) from
-    text-extractable formats when the verbatim-quote check needs to frame
-    its warning accurately — pdftotext didn't fail on a .mp4; it was
-    never going to run.
+    Used to distinguish binary-by-design sources (per BINARY_FORMATS)
+    from text-extractable formats when the verbatim-quote check needs
+    to frame its warning accurately — pdftotext didn't fail on a .mp4;
+    it was never going to run.
     """
     global _manifest_format_cache
     if _manifest_format_cache is not None:

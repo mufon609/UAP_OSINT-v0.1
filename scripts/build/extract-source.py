@@ -49,6 +49,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 # decode), and TXT / MD / JSON. ``extract_pdf_metadata`` below stays
 # local because pdfinfo metadata capture has no lib equivalent.
 from lib._common import (  # noqa: E402
+    BINARY_FORMATS,
     REPO_ROOT,
     SOURCES_DIR,
     extract_source_text,
@@ -156,12 +157,6 @@ def do_batch(artifact_path):
 
     slug = artifact_path.stem
     print(f"Extracting {len(sources)} source(s) for meta/research/{slug}.yaml:\n")
-
-    # Binary primary-source formats — extraction is correctly skipped
-    # (no text to pull). Mirrors the validator's silent-skip behavior in
-    # the verbatim-quote check; the CLI message distinguishes "skipped
-    # by design" from "extraction failed unexpectedly".
-    BINARY_FORMATS = {"video", "audio", "image"}
 
     failures = 0
     skipped = 0
