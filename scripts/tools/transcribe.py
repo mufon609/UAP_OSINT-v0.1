@@ -108,6 +108,12 @@ def fetch_via_ytdlp(video_id, cookies_path=None):
 
     stdin_cookies = None
     if cookies_path == "-":
+        if sys.stdin.isatty():
+            raise RuntimeError(
+                "--cookies - requires cookies piped on stdin, but stdin is a "
+                "TTY. Pipe from extract-firefox-cookies.py, e.g.: "
+                "`extract-firefox-cookies.py | transcribe.py URL --cookies -`"
+            )
         stdin_cookies = sys.stdin.read()
         if not stdin_cookies.strip():
             raise RuntimeError("--cookies - was set but stdin was empty")

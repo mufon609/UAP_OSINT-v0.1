@@ -159,16 +159,6 @@ row.
 
 Surfaced: 2026-05-17 repo audit.
 
-### C10 — `scripts/tools/transcribe.py:111-113` — hangs forever on interactive `--cookies -` misuse
-
-[BUG] `sys.stdin.read()` blocks until EOF; the empty-stdin guard at
-L113 fires only after the read returns. A contributor running
-`transcribe.py URL --cookies -` interactively without piping hangs
-with no prompt. Detect TTY on stdin and abort with a usage hint
-before the blocking read.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C11 — `scripts/lib/_common.py:660` — PDF line-wrap hyphen merge applied to all extracted text
 
 [BUG] `re.sub(r"-\s+", "-", result)` unconditionally collapses
