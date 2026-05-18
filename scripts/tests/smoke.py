@@ -1,27 +1,46 @@
 #!/usr/bin/env python3
 """Fixture-based smoke tests — single-process, parallel.
 
-Replaces ``smoke.sh``. Imports the build / validate scripts as
-modules instead of spawning python3 subprocesses, then dispatches
-fixtures across a fork-based ProcessPoolExecutor. Three optimizations
-account for the speedup over the bash version:
+For every node-type + archetype / kind combination, scaffold via
+``new.py``, validate via ``validate.py``, and (for types whose
+renderer ships) scaffold a research artifact + run
+``validate-research``, ``build-from-research``, ``review-coverage``.
+Each step is a fixture pass/fail; failures surface with the source
+error message in the summary.
 
-  * 94 × ~80ms python3 cold starts eliminated (modules loaded once;
-    forked workers inherit the parent's loaded state)
-  * 94 × ~220ms redundant manifest YAML loads eliminated (manifest
-    cached at the lib._common layer; ``load_manifest`` rebound)
-  * 23 × ~1.2s ``manifest_checksums`` sha256 walks eliminated for
-    fixture validates — the check walks the whole 440-entry manifest
-    every time and its result doesn't depend on the fixture being
-    validated. Manifest integrity is verified by the full-corpus
-    ``validate.py`` pre-commit gate; running it once per smoke
-    fixture is pure waste.
+Catches regressions in:
+  - ``new.py`` scaffolding (template rendering, conditional-block
+    filtering by --archetype / --kind, placeholder substitution)
+  - ``meta/templates/*.md`` body content (the governance-files check
+    catches template frontmatter drift; only this test catches
+    body-section drift)
+  - ``validate.py``'s required-section / archetype-conditional /
+    kind-conditional enforcement
+  - ``research-scaffold.py`` + ``validate-research.py`` on empty-
+    content artifacts; ``build-from-research.py`` + ``review-
+    coverage.py`` for the types whose renderer ships
 
-Concurrency: ProcessPoolExecutor with the ``fork`` mp_context.
-Workers inherit the parent's pre-loaded modules + caches + the
-manifest-check no-ops. Three phases preserve the two data
-dependencies in the fixture set (transcript-other → doc-gov;
-media-deriv → media-video).
+Architecture — three optimizations against per-fixture subprocess cost:
+
+  * Modules imported once via ``importlib.util``; forked workers
+    inherit the parent's loaded state. No python3 cold start per
+    fixture.
+  * Manifest YAML parsed once at startup; ``load_manifest`` rebound
+    on ``lib._common`` so every consumer hits the cached value.
+  * Manifest-integrity + governance-file checks no-op'd for the
+    smoke path — they walk the whole manifest / all governance
+    files and their results don't depend on the individual fixture.
+    The full-corpus ``validate.py`` pre-commit gate runs them once
+    against real state.
+
+Concurrency: ``ProcessPoolExecutor`` with the ``fork`` mp_context.
+Workers inherit the parent's pre-loaded modules, caches, and the
+check no-ops. Three phases sequence by data dependency:
+
+  Phase 1 — 21 independent scaffolds (no inter-deps)
+  Phase 2 — 2 dependent scaffolds (transcript-other → doc-gov;
+            media-deriv → media-video)
+  Phase 3 — 14 research-artifact pipelines (independent per artifact)
 
 Cleanup is pattern-based on the ``__smoke-*`` slug convention. Fires
 at startup (clears debris from a prior crashed run) and on exit.
@@ -321,7 +340,9 @@ PHASE2_SCAFFOLDS = [
 
 # Phase 3 — research-artifact pipelines. ``steps`` declares which of
 # {build, coverage} run after validate-research; validate-research
-# always runs. Mirrors the per-type matrix from smoke.sh.
+# always runs. ``build`` + ``coverage`` apply to types whose renderer
+# ships; ``coverage`` is reserved for entity-node types (skipped on
+# finding / investigation per Phase III dispatch).
 PHASE3_RESEARCH = [
     ("doc-gov",        "documents/__smoke-doc-gov",                ()),
     ("media-photo",    "media/__smoke-media-photo",                ("build", "coverage")),

@@ -77,11 +77,12 @@ Arguments for keeping:
 - Already wired; cost of removal is non-zero
 
 Arguments for removing:
-- Repeats every check fire on every run; no de-duplication, so the
-  log grows ~100 entries per validator run on a clean repo (warns
-  re-fire each time)
-- Audit value is realized once in a while at most; the running cost
-  is paid every commit
+- No de-duplication across runs — every warning re-fires its log
+  entry every time the validator runs, so the log balloons on any
+  branch where warnings exist (the audit found one node with the
+  same 3 warnings re-appended on every commit cycle)
+- Audit value is realized once in a while at most; the per-commit
+  carrying cost (append I/O on every issue) is paid every time
 - The validators' own output is already the source of truth at the
   moment a contributor cares; the log is an after-the-fact mirror
 
