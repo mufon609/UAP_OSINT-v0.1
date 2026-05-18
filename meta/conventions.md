@@ -1069,8 +1069,9 @@ tier that matches who invokes them and what role they play:
 - **`/scripts/tests/`**: gate-internal infrastructure that exists ONLY
   to support the pre-commit chain — the orchestrator (`pre-commit.sh`)
   plus its internal regression tests (`help-check.sh`, `smoke.py`,
-  `test_stopwords.py`, `file-size-check.sh`). No contributor invokes
-  these directly; the directory is the gate chain's private toolkit.
+  `test_stopwords.py`, `file-size-check.sh`, `cookies-check.sh`). No
+  contributor invokes these directly; the directory is the gate chain's
+  private toolkit.
 - **`/scripts/lib/`**: shared cross-cutting helpers (`_common.py`)
   imported by scripts in `build/` and `tools/` and by the per-check
   modules in `checks/`. Kept separate so the cross-script lockstep

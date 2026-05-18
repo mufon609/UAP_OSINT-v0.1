@@ -96,16 +96,20 @@ scripts/
                             modules; keeps mechanical lockstep across them
 
 scripts/tests/
-  pre-commit.sh             canonical all-gates health check (chains 8 gates:
+  pre-commit.sh             canonical all-gates health check (chains 9 gates:
                             help-check / test_stopwords / smoke / build/validate.py /
                             build/validate-research.py / build/review-coverage.py /
-                            build/build-state.py --check / file-size-check)
+                            build/build-state.py --check / file-size-check /
+                            cookies-check)
   help-check.sh             confirms every scripts/{build,tools}/*.py --help exits 0
   test_stopwords.py         STOPWORDS shape + content-word regression test
   smoke.py                  fixture-based new.py + validator smoke tests
                             (single-process; ProcessPoolExecutor over fork)
   file-size-check.sh        warn 50MB / error 100MB on git-tracked files
                             (per meta/sources-access.md large-file discipline)
+  cookies-check.sh          block commits containing Netscape cookies content
+                            or Google session cookies in Netscape-shape rows
+                            (defensive backstop to .gitignore patterns)
 
 sources/
   manifest.yaml             source-archival index (YAML; sha256-checksummed)
@@ -211,10 +215,10 @@ health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-This chains 8 gates: help-check / test_stopwords / smoke /
+This chains 9 gates: help-check / test_stopwords / smoke /
 `validate.py` / `validate-research.py` / `review-coverage.py` /
-`build-state.py --check` / `file-size-check`. Then pick work from
-`meta/topic/research-queue.md`.
+`build-state.py --check` / `file-size-check` / `cookies-check`. Then
+pick work from `meta/topic/research-queue.md`.
 
 ---
 

@@ -43,7 +43,7 @@ Then run the health check:
 bash scripts/tests/pre-commit.sh
 ```
 
-All eight gates must be green:
+All nine gates must be green:
 - `help-check` — every `scripts/{build,tools}/*.py --help` exits clean
 - `test_stopwords` — STOPWORDS shape + content-word regression test
 - `smoke` — fixture scaffolds validate cleanly
@@ -59,6 +59,8 @@ All eight gates must be green:
 - `file-size-check` — git-tracked files within GitHub thresholds
   (warn 50MB / error 100MB; per `meta/sources-access.md` "Large
   primary-source files (>100MB)")
+- `cookies-check` — no Netscape cookies content or Google session
+  cookies in tracked files (defensive backstop to `.gitignore` patterns)
 
 If errors exist, report them and stop.
 

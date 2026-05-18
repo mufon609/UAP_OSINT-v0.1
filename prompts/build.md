@@ -844,9 +844,9 @@ node surfaces no semantic issues. Ready to commit.
    ```
    bash scripts/tests/pre-commit.sh
    ```
-   All eight gates must pass (help-check, test_stopwords, smoke,
+   All nine gates must pass (help-check, test_stopwords, smoke,
    validate.py, validate-research.py, review-coverage.py,
-   build-state.py --check, file-size-check).
+   build-state.py --check, file-size-check, cookies-check).
 6. `python3 scripts/build/build-state.py --update` if the commit adds, removes,
    or changes the status of a node (refreshes the CLAUDE.md build-state block)
 7. Commit the research artifact + regenerated node + any manifest
