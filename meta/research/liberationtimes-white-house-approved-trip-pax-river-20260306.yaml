@@ -1,0 +1,164 @@
+id: meta/research/liberationtimes-white-house-approved-trip-pax-river-20260306
+type: research-artifact
+schema_version: 1
+target_node: documents/liberationtimes-white-house-approved-trip-pax-river-20260306
+status: active
+created: '2026-05-18'
+
+primary_sources:
+- path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+  format: html
+
+document_intrinsic:
+  internal_title: 'White House-Approved Trip Allegedly Took Congressman to Maryland Base to Examine Suspected UFO Facility'
+  internal_date: 'Mar 6'
+  authors_per_document:
+    - 'Christopher Sharp'
+
+context_extrinsic:
+  display_title: 'Liberation Times — White House-Approved Trip to Pax River (March 6, 2026)'
+  primary_source_url: 'https://www.liberationtimes.com/home/white-house-approved-trip-allegedly-took-congressman-to-maryland-base-to-examine-suspected-ufo-facility'
+  quote_attribution: 'Christopher Sharp, Liberation Times, March 6, 2026'
+  provenance:
+    - step: 'Written by Christopher Sharp and published at Liberation Times'
+      date: '2026-03-06'
+      entity: 'Christopher Sharp, Liberation Times'
+      verified: '✅ Confirmed — "Written by Christopher Sharp -6 March 2026" byline printed in article'
+    - step: 'Update appended at same URL'
+      date: '2026-03-12'
+      entity: 'Christopher Sharp, Liberation Times'
+      verified: '✅ Confirmed — "Update -12 March 2026" subhead printed in article body'
+    - step: 'Archived locally'
+      date: '2026-05-07'
+      entity: 'sources/news/liberationtimes-white-house-approved-trip-pax-river-20260306.html'
+      verified: '✅ Confirmed — SHA256 verified via sources/manifest.yaml'
+
+description: 'Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organizations/liberation-times`]) on March 6, 2026 — Representative Eric Burlison ([`/people/eric-burlison`]), a key congressional Unidentified Anomalous Phenomena advocate, visited Naval Air Station Patuxent River ([`/locations/patuxent-river-nas`]) in Maryland last month on a White House-approved trip. Two sources told Liberation Times that Burlison visited a hangar that Lue Elizondo ([`/people/luis-elizondo`]), the former head of the Pentagon''s Advanced Aerospace Threat Identification Program, alleged in writing to Congress was built to accommodate the proposed transfer to Bigelow Aerospace ([`/organizations/bigelow-aerospace`]); Liberation Times understands that Burlison was able to verify the hangar exists, but that it remains empty. The alleged transfer was blocked by the CIA ([`/organizations/cia`]), the original custodian of the machinery, which is understood to have been recovered since the 1950s. One source told Liberation Times the visit confirmed long-held suspicions the facility was built for a specific purpose that had not materialised. Update -12 March 2026: Three separate sources familiar with the trip said the hangar visited by Burlison was not the one allegedly built to facilitate the proposed transfer of materials, and Burlison did not see a runway built specifically for Bigelow. UAP-related materials, including an exotic vehicle of unknown origin, may be stored within different facilities within Pax River. Burlison stated on The Resilient Show that there was enough evidence of infrastructure on the property; Steny Hoyer ([`/people/steny-hoyer`]) speaking with Matt Laslo ([`/people/matt-laslo`]) added he did not remember the specifics of the $10 million hangar.
+
+  '
+
+quotes:
+- id: q1
+  added_date: '2026-05-18'
+  text: |-
+    Written by Christopher Sharp -6 March 2026  Liberation Times understands Representative Eric Burlison, a key congressional Unidentified Anomalous Phenomena advocate, visited Naval Air Station Patuxent River (Pax River) in Maryland last month on a White House-approved trip.   The alleged visit examined claims that materials of advanced, non-human origin were earmarked for transfer between Lockheed Martin and billionaire businessman Robert Bigelow more than a decade ago.
+  source:
+    path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+    location: 'article opening, ¶1–2'
+  significance: 'Article lede — establishes the article as Christopher Sharp''s March 6, 2026 report on Rep. Eric Burlison''s previous-month White House-approved trip to Naval Air Station Patuxent River. Frames the visit as an examination of claims that materials of advanced, non-human origin were earmarked for transfer between Lockheed Martin ([`/organizations/lockheed-martin`]) and billionaire businessman Robert Bigelow ([`/people/robert-bigelow`]) more than a decade ago.'
+  statement_date: '2026-03-06'
+- id: q2
+  added_date: '2026-05-18'
+  text: |-
+    Two sources told Liberation Times that Burlison visited a hangar that Lue Elizondo, the former head of the Pentagon’s Advanced Aerospace Threat Identification Program, has alleged in writing to Congress was built to accommodate the machinery and its transfer to Bigelow.  Liberation Times understands that Burlison was able to verify the hangar exists, but that it remains empty. The alleged transfer was blocked by the CIA, the original custodian of the machinery, which is understood to have been recovered since the 1950s.
+  source:
+    path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+    location: 'article body, ¶ following the lede'
+  significance: 'Two-sources attestation of Burlison''s hangar visit — the hangar Liberation Times pairs with Elizondo''s QFR Q7 description of the SAP-F hangar built to accommodate the alleged Lockheed-to-Bigelow transfer. "Burlison was able to verify the hangar exists, but that it remains empty" is the most-cited Liberation Times line from the article and the foundational source for the empty-hangar attestation in the pax-river-scif-fiscal-triangulation finding ([`/findings/pax-river-scif-fiscal-triangulation`]).'
+  statement_date: '2026-03-06'
+- id: q3
+  added_date: '2026-05-18'
+  text: |-
+    One source told Liberation Times the visit confirmed long-held suspicions that the facility was built for a specific purpose that had not materialised.  The source added that Burlison and other officials saw a private runway said to have been built for Bigelow, as well as a crane allegedly intended to support the transfer of materials by air and by river. Liberation Times understands that the findings were reported back to the White House.
+  source:
+    path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+    location: 'article body, ¶ following the empty-hangar attestation'
+  significance: 'One-source attestation that the visit confirmed long-held suspicions about the facility''s specific purpose; same source attests Burlison and other officials saw a private runway said to have been built for Bigelow plus a crane allegedly intended for material transfer by air and by river. Findings were reported back to the White House. This source-attested account is the one the March 12 update revises.'
+  statement_date: '2026-03-06'
+- id: q4
+  added_date: '2026-05-18'
+  text: |-
+    Update -12 March 2026: However, a subsequent investigation by Liberation Times has cast doubt on key elements of that account. Three separate sources familiar with the trip said the hangar visited by Burlison was not the one allegedly built to facilitate the proposed transfer of materials. They also said Burlison did not see a runway built specifically for Bigelow.  Liberation Times is aware of allegations that UAP-related materials, including an exotic vehicle of unknown origin, may be stored at the U.S. base in Maryland. Those materials are understood to be stored within different facilities within Pax River.
+  source:
+    path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+    location: 'article body, "Update -12 March 2026" block'
+  significance: 'March 12, 2026 update — three separate sources familiar with the trip cast doubt on key elements of the March 6 account: the hangar visited by Burlison was NOT the one allegedly built to facilitate the proposed transfer of materials, and Burlison did not see a runway built specifically for Bigelow. The broader allegation that UAP-related materials, including an exotic vehicle of unknown origin, may be stored within different facilities within Pax River remains on the record. Foundational source for the c2 contradiction in the pax-river-scif-fiscal-triangulation finding.'
+  statement_date: '2026-03-12'
+- id: q5
+  added_date: '2026-05-18'
+  text: |-
+    “What I was looking for was this: I had information that there was no material there, but there is enough evidence of infrastructure on the property to indicate that there was.   “What I was trying to do was prove, or find, any kind of evidence or proof of the narrative. So, if I could prove, for example, that there was a building created for the purpose of receiving a transfer of goods, then, at least if the building exists, I can identify and prove that there may be some validity to that story.”
+  source:
+    path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+    location: 'article body, Burlison Resilient Show quotation'
+  significance: 'Burlison''s own Resilient Show quotation — frames the Pax River visit as a search for infrastructure-for-purpose evidence rather than for materials themselves. Burlison states "I had information that there was no material there, but there is enough evidence of infrastructure on the property to indicate that there was" and that the goal was to "prove" the narrative through structural evidence. Surfaces in the H3 evaluation on the Lockheed Martin investigation ([`/investigations/lockheed-martin-uap-materials`]).'
+  statement_date: '2026-03-06'
+- id: q6
+  added_date: '2026-05-18'
+  text: |-
+    In written testimony submitted to Congress following a 2024 hearing before the House Oversight Committee, Elizondo wrote that the hangar had been allocated at the request of then-Representative Steny Hoyer, who represented Maryland’s 5th congressional district:   ‘I was informed that funding for the hangar, approximately $10 million, was allocated at the request of then-Representative Steny Hoyer.’   Last year, journalist Matt Laslo questioned Hoyer on the allegation, asking:   “Do you -you might not remember this -but do you remember the $10 million for a new hangar that you helped get at Pax [River Naval Air Station] do you remember why that was important? That new hangar, I think, was for Lockheed Martin…?”   Hoyer responded:   “Well, it’s a private — public partner.”   He added:   “Public partner. Um, but I don’t remember the specifics. How long did we — did we did we get that in this bill?”
+  source:
+    path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
+    location: 'article body, Elizondo QFR Q7 quotation + Laslo-Hoyer exchange'
+  significance: 'Sharp''s reproduction of Elizondo''s QFR Q7 funding sentence verbatim (preserves "approximately $10 million" and the Hoyer-requested attribution), paired with Matt Laslo''s ([`/people/matt-laslo`]) prior interview asking Hoyer about the $10 million hangar at Pax River and Hoyer''s "private — public partner" response indicating he did not remember the specifics. Source for q2b on the pax-river-scif-fiscal-triangulation finding (the Elizondo QFR sentence as Liberation Times reproduces it) and source for Hoyer''s on-record non-recollection of the specific appropriation purpose.'
+  statement_date: '2026-03-06'
+
+entities_referenced:
+- id: e1
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Christopher Sharp'
+  wrap_path: /people/christopher-sharp
+  context_summary: 'Author of the article — "Written by Christopher Sharp -6 March 2026" byline.'
+- id: e2
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'Liberation Times'
+  wrap_path: /organizations/liberation-times
+  context_summary: 'Publisher — Liberation Times is named as the reporting outlet throughout the article ("Liberation Times understands..." / "Two sources told Liberation Times...").'
+- id: e3
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Eric Burlison'
+  wrap_path: /people/eric-burlison
+  context_summary: 'Subject of the article — Representative Eric Burlison, a key congressional Unidentified Anomalous Phenomena advocate, who visited NAS Patuxent River on a White House-approved trip the previous month.'
+- id: e4
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Luis Elizondo'
+  wrap_path: /people/luis-elizondo
+  context_summary: 'Named as the former head of the Pentagon''s Advanced Aerospace Threat Identification Program who alleged in writing to Congress that the Pax River hangar was built to accommodate the machinery and its transfer to Bigelow. Liberation Times quotes Elizondo''s QFR Q7 funding sentence verbatim.'
+- id: e5
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Robert Bigelow'
+  wrap_path: /people/robert-bigelow
+  context_summary: 'Named as "billionaire businessman Robert Bigelow", recipient counterparty in the alleged 2010s-era materials transfer between Lockheed Martin and Bigelow.'
+- id: e6
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Steny Hoyer'
+  wrap_path: /people/steny-hoyer
+  context_summary: 'Named in the Elizondo QFR Q7 quotation as the then-Representative at whose request the ~$10 million Pax River hangar funding was allocated; quoted from a Matt Laslo interview responding to a question about the appropriation with "Well, it''s a private — public partner... I don''t remember the specifics."'
+- id: e7
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Matt Laslo'
+  wrap_path: /people/matt-laslo
+  context_summary: 'Journalist who, prior to the Liberation Times article, interviewed Hoyer about the $10 million Pax River hangar appropriation. Sharp reproduces the Laslo-Hoyer exchange verbatim in the article.'
+- id: e8
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'Lockheed Martin'
+  wrap_path: /organizations/lockheed-martin
+  context_summary: 'Named as the alleged original transferor of materials of advanced, non-human origin that the article reports were earmarked for transfer to Bigelow more than a decade ago.'
+- id: e9
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'Bigelow Aerospace'
+  wrap_path: /organizations/bigelow-aerospace
+  context_summary: 'Named as the intended new custodian of the alleged transfer. The article repeatedly pairs Lockheed Martin with Bigelow as the alleged transfer counterparties.'
+- id: e10
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'Central Intelligence Agency'
+  wrap_path: /organizations/cia
+  context_summary: 'Named as the original custodian of the alleged machinery and the agency that blocked the alleged transfer. "The alleged transfer was blocked by the CIA, the original custodian of the machinery, which is understood to have been recovered since the 1950s."'
+- id: e11
+  added_date: '2026-05-18'
+  entity_type: location
+  name: 'Naval Air Station Patuxent River'
+  wrap_path: /locations/patuxent-river-nas
+  context_summary: 'Site of Burlison''s reported visit — "Naval Air Station Patuxent River (Pax River) in Maryland."'
+
+naming_quirks: []

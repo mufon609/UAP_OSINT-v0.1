@@ -84,12 +84,15 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/events/2023-04-19-sasc-aaro-hearing` | documented | hearing |
 | `/events/2023-07-26-house-uap-hearing` | documented | hearing |
 
-### Documents (9)
+### Documents (12)
 
 | Node | Status | Kind |
 |---|---|---|
 | `/documents/cia-sri-geller-aug1973` | primary-source-confirmed | gov-doc |
+| `/documents/elizondo-qfr-burlison-20241219` | primary-source-confirmed | gov-doc |
 | `/documents/eo-14347-restoring-department-of-war` | primary-source-confirmed | gov-doc |
+| `/documents/hoyer-fy2011-milcon-southern-maryland-20100728` | primary-source-confirmed | gov-doc |
+| `/documents/liberationtimes-white-house-approved-trip-pax-river-20260306` | primary-source-confirmed | non-gov-doc |
 | `/documents/nature-1974-targ-puthoff-information-transmission` | primary-source-confirmed | non-gov-doc |
 | `/documents/pentagon-uapda-revisions-2023-11` | primary-source-confirmed | gov-doc |
 | `/documents/tablet-spy-who-bent-a-million-spoons` | primary-source-confirmed | non-gov-doc |
