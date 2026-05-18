@@ -62,6 +62,33 @@ Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
 
-*No anytime items currently open.* (C1 retired 2026-05-17 —
-shipped as `scripts/tools/extract-firefox-cookies.py`; ID held
-open per the gap-stable retirement rule.)
+### C2 — Decide whether to retain `meta/toolkit-notes/issue-log.yaml`
+
+After the 2026-05-17 audit (1,470 entries over 11 days; 23 distinct
+checks; mostly repeated fires of the same issue across runs), the log
+was purged. Open question: does the auto-appended log earn its keep,
+or should the mechanism be removed entirely (delete
+`append_issue_log()` in `scripts/lib/_common.py`, drop all the
+orchestrator call sites, retire the file)?
+
+Arguments for keeping:
+- Time-series visibility into which checks fire most + on which nodes
+- Greppable history for forensic audits ("when did this fail first?")
+- Already wired; cost of removal is non-zero
+
+Arguments for removing:
+- Repeats every check fire on every run; no de-duplication, so the
+  log grows ~100 entries per validator run on a clean repo (warns
+  re-fire each time)
+- Audit value is realized once in a while at most; the running cost
+  is paid every commit
+- The validators' own output is already the source of truth at the
+  moment a contributor cares; the log is an after-the-fact mirror
+
+Surfaced: 2026-05-17 corpus check-script audit. Decision deferred —
+purged for now; revisit when the log accumulates ≥ a week of new
+entries and the audit value can be re-evaluated against the carrying
+cost.
+
+C1 retired 2026-05-17 — shipped as `scripts/tools/extract-firefox-cookies.py`;
+ID held open per the gap-stable retirement rule.
