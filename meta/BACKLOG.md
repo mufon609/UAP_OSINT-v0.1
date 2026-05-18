@@ -148,17 +148,6 @@ treat the non-URL response as failure, or store a distinct
 
 Surfaced: 2026-05-17 repo audit.
 
-### C7 — `scripts/build/renderers/transcript.py:88-91` — `derived_from` silently dropped for non-`/media/`, non-`/documents/` paths
-
-[BUG] The `derived_from` row in the Publication Record table only
-renders when the path starts with `/media/` or `/documents/`. Any
-other valid node-path target disappears from rendered output with no
-fallback row and no validator complaint. Either widen the prefix
-match to all node-type roots, or emit a generic "Underlying Source"
-row.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C11 — `scripts/lib/_common.py:660` — PDF line-wrap hyphen merge applied to all extracted text
 
 [BUG] `re.sub(r"-\s+", "-", result)` unconditionally collapses

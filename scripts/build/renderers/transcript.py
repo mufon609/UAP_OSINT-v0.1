@@ -83,12 +83,14 @@ def render_transcript_publication_record(artifact, kind, fm):
         row("Primary Speaker(s)", ctx.get("primary_speakers"))
         row("Format",             ctx.get("format"))
         row("Source Medium",      source_medium)
-        # derived_from on an `other` transcript typically points at a
-        # /media/... node (the underlying media the transcript renders).
-        if derived_from and str(derived_from).startswith("/media/"):
-            row("Underlying Media Node", _wrap_path(derived_from))
-        elif derived_from and str(derived_from).startswith("/documents/"):
-            row("Underlying Document", _wrap_path(derived_from))
+        if derived_from:
+            dfs = str(derived_from)
+            if dfs.startswith("/media/"):
+                row("Underlying Media Node", _wrap_path(derived_from))
+            elif dfs.startswith("/documents/"):
+                row("Underlying Document", _wrap_path(derived_from))
+            else:
+                row("Underlying Source", _wrap_path(derived_from))
         row("Source URL",         ctx.get("primary_source_url"))
         row("Transcript Verified", ctx.get("transcript_verified"))
         row("Citation Style",     ctx.get("citation_style"))
