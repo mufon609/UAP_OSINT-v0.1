@@ -21,6 +21,7 @@ Usage:
 
 import argparse
 import json
+import random
 import sys
 import time
 import urllib.request
@@ -48,6 +49,13 @@ CDX_API = "http://web.archive.org/cdx/search/cdx"
 SAVE_API = "https://web.archive.org/save/"
 WAYBACK_BASE = "https://web.archive.org/web/"
 
+# CDX network-retry policy. Exponential backoff (2 → 4 sec) with up
+# to 50% jitter on top — avoids hammering the IA endpoint when it's
+# returning transient failures across multiple manifest entries in a
+# single run.
+_CDX_RETRIES = 3
+_CDX_BACKOFF_BASE = 2.0
+
 USER_AGENT = f"{load_topic()['display_name']}-Research-Archiver/2.0"
 
 
@@ -70,7 +78,7 @@ def check_wayback(url):
     })
     cdx_url = f"{CDX_API}?{params}"
 
-    for attempt in range(2):  # one retry on transient network error
+    for attempt in range(_CDX_RETRIES):
         try:
             req = urllib.request.Request(cdx_url, headers={"User-Agent": USER_AGENT})
             with urllib.request.urlopen(req, timeout=30) as resp:
@@ -80,8 +88,9 @@ def check_wayback(url):
                 return ts[:4] + "-" + ts[4:6] + "-" + ts[6:8], "found"
             return None, "absent"
         except (urllib.error.URLError, TimeoutError):
-            if attempt == 0:
-                time.sleep(5)
+            if attempt < _CDX_RETRIES - 1:
+                backoff = _CDX_BACKOFF_BASE * (2 ** attempt)
+                time.sleep(backoff + random.uniform(0, backoff * 0.5))
                 continue
             return None, "unknown"
         except (json.JSONDecodeError, IndexError):

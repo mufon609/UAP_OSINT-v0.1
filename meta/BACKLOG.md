@@ -185,12 +185,3 @@ silent data loss.
 
 Surfaced: 2026-05-17 repo audit.
 
-### C15 — `scripts/tools/archive.py:73` — retry has no backoff and no jitter
-
-[BANDAID] Single retry on `URLError`/`TimeoutError` with a hardcoded
-5-second sleep. Treats DNS failure, connection reset, and timeout
-identically. Switch to a small exponential backoff with jitter, or
-classify the error and retry only on transient categories.
-
-Surfaced: 2026-05-17 repo audit.
-
