@@ -270,14 +270,3 @@ classify the error and retry only on transient categories.
 
 Surfaced: 2026-05-17 repo audit.
 
-### C16 — Gate `.sh` scripts use newline-unsafe `git ls-files` reads
-
-[BANDAID] `scripts/tests/cookies-check.sh:43` and
-`scripts/tests/file-size-check.sh:31` both iterate via
-`while IFS= read -r path; do … done < <(git ls-files)` — filenames
-containing newlines split across iterations. Switch to
-`git ls-files -z | while IFS= read -r -d '' path` for null-delimited
-safety. Repo policy makes the failure mode unlikely, but the gate
-should not rely on policy.
-
-Surfaced: 2026-05-17 repo audit.

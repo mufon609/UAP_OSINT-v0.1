@@ -28,7 +28,7 @@ ERROR_BYTES=$((100 * 1024 * 1024))
 warnings=()
 errors=()
 
-while IFS= read -r path; do
+while IFS= read -r -d '' path; do
     [ -f "$path" ] || continue
     bytes=$(stat -c '%s' "$path" 2>/dev/null || echo 0)
     if [ "$bytes" -gt "$ERROR_BYTES" ]; then
@@ -38,7 +38,7 @@ while IFS= read -r path; do
         mb=$((bytes / 1024 / 1024))
         warnings+=("$path  (${mb}MB — over 50MB GitHub warn threshold)")
     fi
-done < <(git ls-files)
+done < <(git ls-files -z)
 
 echo "======================================================================"
 echo " File-size check (git-tracked; warn 50MB / error 100MB)"

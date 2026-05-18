@@ -40,7 +40,7 @@ MAX_SCAN_BYTES=$((512 * 1024))
 
 errors=()
 
-while IFS= read -r path; do
+while IFS= read -r -d '' path; do
     [ -f "$path" ] || continue
     # Self-exclusion: this script legitimately documents the detection
     # patterns it scans for (Netscape header + sensitive cookie names).
@@ -68,7 +68,7 @@ while IFS= read -r path; do
         END { exit !found }' "$path" 2>/dev/null; then
         errors+=("$path  (sensitive Google session cookie in Netscape format)")
     fi
-done < <(git ls-files)
+done < <(git ls-files -z)
 
 echo "======================================================================"
 echo " Cookies / session-credential check (git-tracked files)"
