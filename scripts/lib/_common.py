@@ -13,6 +13,7 @@ import os
 import re
 import subprocess
 import sys
+from collections import defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -87,6 +88,7 @@ def strict_yaml_load(stream):
 REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 SOURCES_DIR = REPO_ROOT / "sources"
 MANIFEST_PATH = SOURCES_DIR / "manifest.yaml"
+RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
 SCHEMA_RESEARCH_ARTIFACT_PATH = REPO_ROOT / "meta" / "schema-research-artifact.yaml"
 
@@ -360,6 +362,52 @@ def load_manifest_paths():
     ``load_manifest()`` for callers that only need path-existence checks
     (validate-research.py + review-coverage.py both use this shape)."""
     return {e.get("path") for e in load_manifest() if e.get("path")}
+
+
+def load_source_to_artifacts_index():
+    """Return ``{source_path: [target_node, ...]}`` mapping every source
+    path cited in an ENTITY-type research artifact's ``primary_sources[]``
+    to the list of target nodes that cite it.
+
+    Entity types only — finding / investigation / meta artifacts are
+    excluded since they're the consumers, not the canonical-fact homes.
+    Per ``meta/conventions.md`` "Three-layer evidentiary architecture",
+    findings DUPLICATE primary-source content from entity nodes; the
+    entity node is updated first. The
+    ``finding_source_in_entity_node`` check uses this index to enforce
+    that contract mechanically.
+
+    Loaded once at orchestrator entry (in ``main()``) and passed via
+    ``BaseContext.source_to_artifacts``; fork-propagated to every worker.
+    One sequential YAML parse pass over ``meta/research/*.yaml`` —
+    ``~100ms`` total at current corpus size, amortized across the full
+    validate-research.py run.
+    """
+    index = defaultdict(list)
+    if not RESEARCH_DIR.is_dir():
+        return dict(index)
+    for path in sorted(RESEARCH_DIR.glob("*.yaml")):
+        try:
+            with open(path) as f:
+                data = strict_yaml_load(f)
+        except (yaml.YAMLError, OSError):
+            continue
+        if not isinstance(data, dict):
+            continue
+        target_node = data.get("target_node") or ""
+        if not isinstance(target_node, str) or "/" not in target_node:
+            continue
+        type_dir = target_node.split("/", 1)[0]
+        # Skip non-entity types — findings consume; investigations
+        # consume findings; meta is governance, not evidentiary.
+        if type_dir in ("findings", "investigations", "meta"):
+            continue
+        for ps in (data.get("primary_sources") or []):
+            if isinstance(ps, dict):
+                src = ps.get("path")
+                if isinstance(src, str) and src:
+                    index[src].append(target_node)
+    return dict(index)
 
 
 def normalize_source_rel_path(arg_path):

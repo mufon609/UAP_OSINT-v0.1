@@ -98,14 +98,24 @@ class BaseContext:
     ``broken_links`` is the out-of-band metadata channel. Link-resolution
     writes to it; orchestrator reads it for the registry print. NOT an
     Issue stream — broken stubs are backlog signal, not violations.
+
+    ``source_to_artifacts`` is the cross-artifact index keyed by source
+    path, mapping to the list of entity-type artifacts (people /
+    organizations / documents / events / transcripts / media / locations)
+    that cite that source in their ``primary_sources[]``. Built once at
+    orchestrator entry by ``load_source_to_artifacts_index()``; consumed
+    by the ``finding_source_in_entity_node`` check to enforce the
+    three-layer architecture rule that findings duplicate entity-node
+    primary-source content rather than introducing it.
     """
 
     def __init__(self, schema, manifest_paths=None, manifest_entries=None,
-                 broken_links=None):
+                 broken_links=None, source_to_artifacts=None):
         self.schema = schema
         self.manifest_paths = manifest_paths if manifest_paths is not None else set()
         self.manifest_entries = manifest_entries if manifest_entries is not None else []
         self.broken_links = broken_links if broken_links is not None else defaultdict(set)
+        self.source_to_artifacts = source_to_artifacts if source_to_artifacts is not None else {}
 
 
 class NodeContext(BaseContext):
@@ -138,6 +148,7 @@ class NodeContext(BaseContext):
             manifest_paths=base.manifest_paths,
             manifest_entries=base.manifest_entries,
             broken_links=base.broken_links,
+            source_to_artifacts=base.source_to_artifacts,
         )
         self.path = path
         self.rel = rel
@@ -194,6 +205,7 @@ class ResearchContext(BaseContext):
             manifest_paths=base.manifest_paths,
             manifest_entries=base.manifest_entries,
             broken_links=base.broken_links,
+            source_to_artifacts=base.source_to_artifacts,
         )
         self.path = path
         self.rel = rel

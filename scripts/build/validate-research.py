@@ -69,6 +69,7 @@ from lib._common import (
     content_type_dirs,
     load_manifest_paths,
     load_schema,
+    load_source_to_artifacts_index,
     resolve_cli_path,
 )
 
@@ -94,6 +95,7 @@ from checks import does_not_establish as ck_does_not_establish
 from checks import entities_referenced as ck_entities_referenced
 from checks import establishes as ck_establishes
 from checks import finding_no_investigation_refs as ck_finding_no_investigation_refs
+from checks import finding_source_in_entity_node as ck_finding_source_in_entity_node
 from checks import hypotheses as ck_hypotheses
 from checks import iff_section as ck_iff_section
 from checks import investigation_closure_path_when_paused as ck_investigation_closure_path_when_paused
@@ -250,6 +252,7 @@ _ARTIFACT_CHECKS = [
     ck_resolution_history,
     # Finding / investigation type-specific cross-cutting checks
     ck_finding_no_investigation_refs,
+    ck_finding_source_in_entity_node,
     ck_investigation_hypothesis_citation,
     ck_investigation_closure_path_when_paused,
     # Whole-artifact analytical checks
@@ -394,7 +397,11 @@ def main():
 
     schema = load_schema()
     manifest_paths = load_manifest_paths()
-    base_ctx = BaseContext(schema=schema, manifest_paths=manifest_paths)
+    source_to_artifacts = load_source_to_artifacts_index()
+    base_ctx = BaseContext(
+        schema=schema, manifest_paths=manifest_paths,
+        source_to_artifacts=source_to_artifacts,
+    )
 
     if args.path:
         artifacts = [resolve_cli_path(args.path)]

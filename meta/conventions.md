@@ -855,7 +855,12 @@ source.
 Findings duplicate primary-source content from entity nodes BY
 DESIGN. If a finding cites material the relevant entity node
 doesn't yet attest, the entity node is updated first (primary
-source confirmed + archived) before the finding can use it.
+source confirmed + archived) before the finding can use it. The
+`finding-source-in-entity-node` check enforces this directionally:
+every `quotes[].source.path` on a finding artifact must appear in
+at least one entity-type research artifact's `primary_sources[]`.
+Findings can't introduce sources the entity layer doesn't already
+attest.
 
 Findings DO NOT REFERENCE the investigations that consume them —
 directional contract enforced by the `finding_no_investigation_refs`
