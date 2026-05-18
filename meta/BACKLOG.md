@@ -148,18 +148,6 @@ treat the non-URL response as failure, or store a distinct
 
 Surfaced: 2026-05-17 repo audit.
 
-### C11 — `scripts/lib/_common.py:660` — PDF line-wrap hyphen merge applied to all extracted text
-
-[BUG] `re.sub(r"-\s+", "-", result)` unconditionally collapses
-`"-<whitespace>"` sequences across the entire extracted-text path,
-including HTML and plaintext. A legitimate plaintext
-`"well-known phrase\nmore text"` collapses across the linebreak,
-mismatching the source form for verbatim-quote checks against
-non-PDF sources. Gate the substitution on the source format being a
-PDF whose extraction shape is known to line-wrap.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C12 — Silent `except` swallow at four parser/IO sites
 
 [BANDAID] `scripts/build/validate.py:287-288`,
