@@ -3669,6 +3669,14 @@
   note: 'YouTube auto-captions for Calling All Beings #104 with Alex Dietrich (~1:11:38). Published 2024-01-05. Discusses UAP activism, Sol Foundation conference attendance, Inquiry into the Anomalous Experience Conference.'
   wayback_date: '2026-04-22'
   transcript_provenance: auto-caption
+- url: https://www.youtube.com/watch?v=C4rSj5Aum7w
+  format: video
+  status: archived
+  path: video/american-alchemy-sheehan-jfk-2026-c4rsj5aum7w.mp4
+  archived_date: '2026-05-18'
+  sha256: c1c495ce0f0bfc5ffb478f7c360aa14a190e63753c04ae3c0cefd5d26400dc28
+  archive_status: 1
+  note: 'Jesse Michels / American Alchemy documentary ''UFOs & JFK: He Knew Too Much! (Ft. Danny Sheehan)'' — 2:47:09 multi-speaker doc with Danny Sheehan as guest. Test target for the video pipeline.'
 - url: https://www.youtube.com/watch?v=DUgMd8ic2ig
   format: transcript
   status: archived

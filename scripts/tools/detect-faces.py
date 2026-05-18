@@ -402,6 +402,22 @@ def cmd_detect(args) -> None:
         print(f"  pre-clean: removed {stale_removed} crop(s) now represented by baselines")
         crop_hashes = collect_existing_hashes([CROPS_DIR])
 
+    # Also drop index rows whose crop_path is a crops/* entry that no longer
+    # exists on disk. crops/ is gitignored working state, so contributors will
+    # routinely delete or never-receive the underlying jpgs; the index must
+    # not retain rows pointing at absent files.
+    orphan_removed = 0
+    keep_rows = []
+    for row in index_rows:
+        crop_rel = row.get("crop_path", "")
+        if crop_rel.startswith("crops/") and not (LOG_DIR / crop_rel).is_file():
+            orphan_removed += 1
+            continue
+        keep_rows.append(row)
+    index_rows = keep_rows
+    if orphan_removed:
+        print(f"  pre-clean: dropped {orphan_removed} index row(s) for absent crops")
+
     # Dedup-set spans BOTH crops/ and baselines/ — re-detecting a face that
     # already has a baseline entry shouldn't churn a new crop into crops/.
     # Each entry is (phash, identity_or_None_for_unlabeled_crops).

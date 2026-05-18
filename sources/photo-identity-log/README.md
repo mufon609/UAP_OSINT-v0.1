@@ -14,21 +14,36 @@ that for the workflow.
 ```
 sources/photo-identity-log/
 ├── crops/                          # working area — unlabeled face crops
-│   └── {video-stem}_{ts}_face_NN.jpg
+│   └── {video-stem}_{ts}_face_NN.jpg          (gitignored)
 ├── baselines/                      # persistent — labeled identity references
 │   ├── {identity-slug}/
 │   │   ├── ref_01.jpg
 │   │   └── ref_02.jpg
 │   └── ...
-├── manifest.yaml                   # baseline registry (sha256-tracked)
-├── index.csv                       # working state — every crop + identity match
+├── manifest.yaml                   # baseline registry (sha256-tracked) — THE persistent record
+├── index.csv                       # per-session detect log (gitignored)
 └── README.md                       # this file
 ```
 
-All paths tracked in git. `crops/` is a working area but its crops are still
-committed — perceptual-hash dedup at `detect` time prevents duplicate
-accumulation; `prune` is available when contributors want to remove
-unidentified crops they've decided not to keep.
+`baselines/` and `manifest.yaml` are the persistent record — they're the
+permanent identity-reference set the whole pipeline depends on.
+`manifest.yaml` carries everything that has to survive across machines and
+contributors: sha256, source-video path, source timestamp, bbox,
+added_date, and note for every registered baseline.
+
+`crops/` is gitignored working state (see `.gitignore`). detect-faces.py
+writes unlabeled face crops here for the contributor to review; once a
+crop is `register`ed as a baseline it moves into `baselines/`. Unlabeled
+crops that don't represent anyone worth a baseline can be deleted
+freely — they're never the permanent record. The directory itself is
+tracked via `.gitkeep` so the layout is reproducible on fresh clones.
+
+`index.csv` is also gitignored — it's purely a per-session log of every
+crop detect-faces.py encountered, useful within a session for reviewing
+what came out of a run. detect-faces.py auto-prunes rows whose `crops/*`
+paths no longer exist on disk, so the local file stays coherent across
+runs. The authoritative cross-session record for baselines is
+`manifest.yaml`.
 
 ## Manifest schema
 
