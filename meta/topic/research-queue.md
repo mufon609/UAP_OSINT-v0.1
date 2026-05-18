@@ -306,43 +306,6 @@ in its own context. Resolution requires per-instance source-form audit
 (which source attests which form), not opportunistic harmonization.
 Worth a systematic pass once a clear pattern emerges across 3+ nodes.
 
-### Person Identity table — Source column has no schema backing
-
-The person-node `## Identity` table renders four rows (Full Name, Aliases,
-Nationality, Profession) with a Source column that the renderer always
-emits as empty (`scripts/build/renderers/person.py::render_identity` hardcodes
-`f"| {k} | {v} |  |"`). The schema's `document_intrinsic` for person
-artifacts carries `full_name / aliases / nationality / profession` only —
-no per-field source pointers. Rendered output therefore shows an empty
-Source column on every person node.
-
-**Surfacing case:** `/people/james-ryder` audit (Claude Web, 2026-05-08).
-Auditor flagged the empty cells; population would require schema
-extension (per-field source pointers on `document_intrinsic`) and
-matching renderer logic.
-
-**Three options worth considering:**
-
-1. **Drop the Source column.** Aligns the renderer with current schema;
-   if/when per-field sources are added, column comes back. Smallest
-   change. Reader-visible improvement (removes noise).
-2. **Add per-field source pointers** — `document_intrinsic.full_name_source`
-   etc., schema fields validated and rendered. Most expressive; most
-   schema work.
-3. **Add a single collective Source row** below the Identity table —
-   "Sources: see Background, Affiliations, Statements" — pointing readers
-   at the rest of the node where attestation lives. No schema change,
-   minimal renderer change.
-
-**Priority.** Low. Pure presentation; no correctness implication.
-
-**Scope.** Decision pass + renderer change; if option 2, also schema
-field + validator update.
-
-Surfaced: James Ryder Phase 2 audit (Claude Web) — auditor flagged
-blank cells; investigation traced root cause to schema gap rather than
-node-level oversight.
-
 ### Deceased subject — `status` field semantics + structured lifespan
 
 The schema's `status` field on a person artifact carries values

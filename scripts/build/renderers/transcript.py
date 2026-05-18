@@ -47,13 +47,16 @@ def render_transcript_publication_record(artifact, kind, fm):
     source of truth for those fields."""
     ctx = artifact.get("context_extrinsic") or {}
     lines = ["## Publication Record", "", "| Field | Value |", "|---|---|"]
+    rows_emitted = False
 
     def row(label, value):
+        nonlocal rows_emitted
         if value in (None, "", [], {}):
             return
         if isinstance(value, list):
             value = "; ".join(str(v) for v in value)
         lines.append(f"| {label} | {_escape_table_cell(value)} |")
+        rows_emitted = True
 
     derived_from = (fm or {}).get("derived_from") or ctx.get("derived_from")
     source_medium = (fm or {}).get("source_medium") or ctx.get("source_medium")
@@ -95,7 +98,7 @@ def render_transcript_publication_record(artifact, kind, fm):
         row("Transcript Verified", ctx.get("transcript_verified"))
         row("Citation Style",     ctx.get("citation_style"))
 
-    if len(lines) == 4:
+    if not rows_emitted:
         lines.append("|  |  |")
     return "\n".join(lines) + "\n"
 

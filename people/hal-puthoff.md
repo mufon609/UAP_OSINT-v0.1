@@ -11,12 +11,12 @@ created: 2026-05-15
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | Harold E. Puthoff |  |
-| Aliases | Hal Puthoff; Dr. H. Puthoff; Harold Puthoff |  |
-| Nationality |  |  |
-| Profession | physicist |  |
+| Field | Value |
+|---|---|
+| Full Name | Harold E. Puthoff |
+| Aliases | Hal Puthoff; Dr. H. Puthoff; Harold Puthoff |
+| Nationality |  |
+| Profession | physicist |
 
 ---
 

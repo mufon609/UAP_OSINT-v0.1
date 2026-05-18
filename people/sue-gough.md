@@ -11,12 +11,12 @@ created: 2026-05-06
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | Susan L. Gough |  |
-| Aliases | Sue Gough; Susan Gough |  |
-| Nationality | American |  |
-| Profession | Department of Defense Public Affairs spokesperson |  |
+| Field | Value |
+|---|---|
+| Full Name | Susan L. Gough |
+| Aliases | Sue Gough; Susan Gough |
+| Nationality | American |
+| Profession | Department of Defense Public Affairs spokesperson |
 
 ---
 

@@ -52,47 +52,7 @@ Items that touch the renderer and naturally batch into a single
 polish pass — bundling reduces churn vs. shipping each as a
 separate touch.
 
-### B1 — Magic-number empty-state sentinel in three renderers
-
-`scripts/build/renderers/event.py:107`, `transcript.py:96`, and
-`media.py:103` each emit an empty placeholder row via
-`if len(lines) == 4:` — coupled to the exact header-line count (the
-`| Field | Value |` header + separator + first two rows). Any change
-to header structure silently breaks the empty-state placeholder.
-Replace with a positive "no rows emitted" flag tracked during row
-construction.
-
-Surfaced: 2026-05-17 repo audit (renderer dead-code + bandaid sweep).
-
-### B2 — `person.py:182-202` Claim Inventory Status column is hardcoded
-
-`render_claim_inventory` writes `✅ Sworn / documented` into every
-Status cell regardless of artifact data. No quote field drives this,
-so the column is decorative — either source from a per-quote field
-(schema extension) or drop the column.
-
-Surfaced: 2026-05-17 repo audit.
-
-### B3 — `person.py:67-70` Identity Source column ships empty unconditionally
-
-Renderer-side counterpart to the schema-gap analysis already tracked
-in `meta/topic/research-queue.md` "Person Identity table — Source
-column has no schema backing". When that decision lands (drop the
-column / add per-field sources / single collective Source row), the
-renderer-side change is the implementation half.
-
-Surfaced: 2026-05-17 repo audit.
-
-### B4 — `media.py:122-134` empty `## Media Versioning` row when artifact has none
-
-When `derivation_of` is set but `media_versioning[]` is empty, the
-renderer emits the required section with an empty-cell placeholder
-row to satisfy the section-presence gate. The blank row reads as
-missing data rather than "no versioning aspects documented." Either
-emit a TODO-comment-only section, or auto-suppress and let
-`conditionally_required` drive the presence check.
-
-Surfaced: 2026-05-17 repo audit.
+*No parallel-batch items currently open.*
 
 ---
 

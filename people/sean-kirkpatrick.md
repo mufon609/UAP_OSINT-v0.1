@@ -11,12 +11,12 @@ created: 2026-04-29
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | Sean Michael Kirkpatrick |  |
-| Aliases | Dr. K |  |
-| Nationality | American |  |
-| Profession | Laser and materials physicist; former senior intelligence officer; consultant |  |
+| Field | Value |
+|---|---|
+| Full Name | Sean Michael Kirkpatrick |
+| Aliases | Dr. K |
+| Nationality | American |
+| Profession | Laser and materials physicist; former senior intelligence officer; consultant |
 
 ---
 

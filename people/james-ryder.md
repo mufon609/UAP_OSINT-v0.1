@@ -11,12 +11,12 @@ created: 2026-05-06
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | James T. Ryder |  |
-| Aliases | Dr. James Ryder; Dr. James T. Ryder; Jim Ryder; James T. Ryder, PhD |  |
-| Nationality |  |  |
-| Profession | Aerospace executive and engineer; former Vice President of Lockheed Martin Space Systems Company; former head of the Advanced Technology Center |  |
+| Field | Value |
+|---|---|
+| Full Name | James T. Ryder |
+| Aliases | Dr. James Ryder; Dr. James T. Ryder; Jim Ryder; James T. Ryder, PhD |
+| Nationality |  |
+| Profession | Aerospace executive and engineer; former Vice President of Lockheed Martin Space Systems Company; former head of the Advanced Technology Center |
 
 ---
 

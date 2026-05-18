@@ -11,12 +11,12 @@ created: 2026-05-16
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | Uri Geller |  |
-| Aliases |  |  |
-| Nationality | Israeli; Mexican (granted by Mexico's President Jose Lopez Portillo per urigeller.com/uri-gellers-biography/ ¶13) |  |
-| Profession | Mystifier; author; television presenter |  |
+| Field | Value |
+|---|---|
+| Full Name | Uri Geller |
+| Aliases |  |
+| Nationality | Israeli; Mexican (granted by Mexico's President Jose Lopez Portillo per urigeller.com/uri-gellers-biography/ ¶13) |
+| Profession | Mystifier; author; television presenter |
 
 ---
 

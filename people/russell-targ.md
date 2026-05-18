@@ -11,12 +11,12 @@ created: 2026-05-14
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | Russell Targ |  |
-| Aliases |  |  |
-| Nationality |  |  |
-| Profession | Physicist and author |  |
+| Field | Value |
+|---|---|
+| Full Name | Russell Targ |
+| Aliases |  |
+| Nationality |  |
+| Profession | Physicist and author |
 
 ---
 

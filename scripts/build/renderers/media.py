@@ -59,13 +59,16 @@ def render_media_summary(artifact, kind):
         fmt = sources[0].get("format")
 
     lines = ["## Media Summary", "", "| Field | Value |", "|---|---|"]
+    rows_emitted = False
 
     def row(label, value):
+        nonlocal rows_emitted
         if value in (None, "", [], {}):
             return
         if isinstance(value, list):
             value = "; ".join(str(v) for v in value)
         lines.append(f"| {label} | {_escape_table_cell(value)} |")
+        rows_emitted = True
 
     row("Title", ctx.get("display_title") or dm.get("internal_title"))
     row("Kind", kind)
@@ -100,7 +103,7 @@ def render_media_summary(artifact, kind):
     if path:
         row("Local Archive", f"[sources/{path}](../sources/{path})")
 
-    if len(lines) == 4:
+    if not rows_emitted:
         lines.append("|  |  |")
     return "\n".join(lines) + "\n"
 
@@ -122,6 +125,15 @@ def render_media_versioning(artifact, fm):
     if not items and not is_derivative:
         return ""  # Canonical / original media — omit the section entirely
 
+    if not items:
+        return (
+            "## Media Versioning\n\n"
+            "<!-- TODO: populate `media_versioning[]` in the research artifact. "
+            "Per-aspect differences between the parent (derivation_of) media "
+            "node and this derivative. Aspect enum: duration / encoding / "
+            "metadata / content / provenance / other. -->\n"
+        )
+
     lines = ["## Media Versioning", "",
              "<!-- Per-aspect differences between the parent (derivation_of) "
              "media node and this derivative. Aspect enum: duration / "
@@ -129,9 +141,6 @@ def render_media_versioning(artifact, fm):
              "",
              "| Aspect | Parent | This | Source | Note |",
              "|---|---|---|---|---|"]
-    if not items:
-        lines.append("|  |  |  |  |  |")
-        return "\n".join(lines) + "\n"
     for e in items:
         aspect = _escape_table_cell(e.get("aspect"))
         parent = _escape_table_cell(e.get("parent_form"))

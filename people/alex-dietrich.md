@@ -11,12 +11,12 @@ created: 2026-04-21
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | Alex Dietrich |  |
-| Aliases |  |  |
-| Nationality |  |  |
-| Profession | Strike fighter pilot, U.S. Navy (retired) |  |
+| Field | Value |
+|---|---|
+| Full Name | Alex Dietrich |
+| Aliases |  |
+| Nationality |  |
+| Profession | Strike fighter pilot, U.S. Navy (retired) |
 
 ---
 

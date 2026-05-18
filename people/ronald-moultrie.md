@@ -11,12 +11,12 @@ created: 2026-04-29
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | Ronald S. Moultrie |  |
-| Aliases | Ron Moultrie; Ron |  |
-| Nationality | American |  |
-| Profession | Intelligence official; consultant; corporate director |  |
+| Field | Value |
+|---|---|
+| Full Name | Ronald S. Moultrie |
+| Aliases | Ron Moultrie; Ron |
+| Nationality | American |
+| Profession | Intelligence official; consultant; corporate director |
 
 ---
 

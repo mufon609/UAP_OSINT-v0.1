@@ -11,12 +11,12 @@ created: 2026-04-20
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | Ryan Graves |  |
-| Aliases | FOBS |  |
-| Nationality | American |  |
-| Profession | Former U.S. Navy F-18 pilot; Executive Director of Americans for Safe Aerospace; Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics |  |
+| Field | Value |
+|---|---|
+| Full Name | Ryan Graves |
+| Aliases | FOBS |
+| Nationality | American |
+| Profession | Former U.S. Navy F-18 pilot; Executive Director of Americans for Safe Aerospace; Chair of the UAP Integration & Outreach Committee for the American Institute of Aeronautics and Astronautics |
 
 ---
 

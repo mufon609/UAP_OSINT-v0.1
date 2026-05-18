@@ -11,12 +11,12 @@ created: 2026-04-19
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | David Fravor |  |
-| Aliases |  |  |
-| Nationality |  |  |
-| Profession | Retired U.S. Navy Commander |  |
+| Field | Value |
+|---|---|
+| Full Name | David Fravor |
+| Aliases |  |
+| Nationality |  |
+| Profession | Retired U.S. Navy Commander |
 
 ---
 

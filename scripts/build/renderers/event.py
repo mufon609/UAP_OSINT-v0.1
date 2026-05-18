@@ -77,13 +77,16 @@ def render_event_summary(artifact, kind):
     differ by kind; renderer emits whichever keys are present."""
     ei = artifact.get("event_intrinsic") or {}
     lines = ["## Event Summary", "", "| Field | Value |", "|---|---|"]
+    rows_emitted = False
 
     def row(label, value):
+        nonlocal rows_emitted
         if value in (None, "", [], {}):
             return
         if isinstance(value, list):
             value = "; ".join(str(v) for v in value)
         lines.append(f"| {label} | {value} |")
+        rows_emitted = True
 
     if kind == "hearing":
         row("Full Title",      ei.get("hearing_title"))
@@ -105,7 +108,7 @@ def render_event_summary(artifact, kind):
         row("Weather",         ei.get("weather"))
         row("Instruments Involved", ei.get("instruments_involved"))
 
-    if len(lines) == 4:
+    if not rows_emitted:
         lines.append("|  |  |")
     return "\n".join(lines) + "\n"
 

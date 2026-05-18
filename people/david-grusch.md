@@ -11,12 +11,12 @@ created: 2026-04-20
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | David Charles Grusch |  |
-| Aliases | David C. Grusch |  |
-| Nationality |  |  |
-| Profession | Senior intelligence and strategic engagement advisor; former USAF intelligence officer (Major) and NGA Senior Geospatial Intelligence Officer; Whistleblower |  |
+| Field | Value |
+|---|---|
+| Full Name | David Charles Grusch |
+| Aliases | David C. Grusch |
+| Nationality |  |
+| Profession | Senior intelligence and strategic engagement advisor; former USAF intelligence officer (Major) and NGA Senior Geospatial Intelligence Officer; Whistleblower |
 
 ---
 
@@ -1414,70 +1414,70 @@ Contact Request") |
 
 ## Claim Inventory
 
-| Claim | Document | Status | Node Link |
-|---|---|---|---|
-| I have read the disclosure drafted by my attorneys, Irvin Charles McCullough, III, and Andrew P. Bakaj, and I hereby … | government/grusch-ppd-19-procedural-filing.pdf | ✅ Sworn / documented |  |
-| Mr. Grusch previously served as a fully cleared member of the United States (US) Government’s UAP Task Force. He has … | government/grusch-ppd-19-procedural-filing.pdf | ✅ Sworn / documented |  |
-| In July 2021, Mr. Grusch confidentially provided UAP-related classified information to the Department of Defense Insp… | government/grusch-ppd-19-procedural-filing.pdf | ✅ Sworn / documented |  |
-| Since his protected disclosure(s) to the DoD IG, Mr. Grusch has been subjected to numerous adverse security clearance… | government/grusch-ppd-19-procedural-filing.pdf | ✅ Sworn / documented |  |
-| multiple agencies nesting UAP activities in conventional secret access programs without appropriate reporting to vari… | news/thedebrief-grusch-2023.html | ✅ Sworn / documented |  |
-| – a competition with near-peer adversaries over the years to identify UAP crashes/landings and retrieve the material … | news/thedebrief-grusch-2023.html | ✅ Sworn / documented |  |
-| Individuals on these UAP programs approached me in my official capacity and disclosed their concerns regarding a mult… | news/thedebrief-grusch-2023.html | ✅ Sworn / documented |  |
-| of exotic origin (non-human intelligence, whether extraterrestrial or unknown origin) based on the vehicle morphologi… | news/thedebrief-grusch-2023.html | ✅ Sworn / documented |  |
-| The material includes intact and partially intact vehicles. | news/thedebrief-grusch-2023.html | ✅ Sworn / documented |  |
-| When you have multiple agencies nesting UAP activities in conventional SAP/CAP programs, both as recipients of exploi… | news/thedebrief-grusch-2023.html | ✅ Sworn / documented |  |
-| [6:28] UAP task force was refused access to um a broad crash retrieval program. When you say crash retrieval, what do… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [7:04] confiding in me. They approached me. I have plenty of current former senior intelligence officers that came to… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [9:15] shut the door in my face. They denied me access to these programs. | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [10:40] Well, naturally, um when you recover something that's either landed or crashed, um sometimes you encounter, u… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [24:28] uh overall you know the government has been the custodian of a lot of this right and they'll they'll hand rec… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [28:02] there have been attempts to bring down craft that we've acted offensively against non-human craft. There have… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [32:31] been committed? At the very least, I saw substantiative evidence that white collar crime was committed. Have … | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [37:37] credibility of your complaint. They found after interviewing myself in the subjects and other subjects that I… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| I became a Whistleblower, through a PPD-19 Urgent Concern filing with the Intelligence Community Inspector General (I… | government/oversight-house-gov-grusch-written-testimony-20230726.pdf | ✅ Sworn / documented |  |
-| I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering pr… | government/oversight-house-gov-grusch-written-testimony-20230726.pdf | ✅ Sworn / documented |  |
-| As you know, I have suffered retaliation for my decision. But I am hopeful that my actions will ultimately lead to a … | government/oversight-house-gov-grusch-written-testimony-20230726.pdf | ✅ Sworn / documented |  |
-| I became a whistleblower through a PPD–19 urgent concern filing in May 2022 with the intelligence community inspector… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering prog… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| I made the decision based on the data I collected to report this information to my superiors and multiple inspectors … | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Yes, I can speak to that very briefly in an unclassified manner. As you know, the preponderance of my complaint was c… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Absolutely, based on interviewing over 40 witnesses over 4 years. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| I know the exact locations and those locations were provided to the Inspector General and some of which to the intell… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Yes. I have to be careful what I say in detail because there is an open whistleblower reprisal investigation on my be… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Yes, personally. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Well, it has only been about 2 months or so. So, I guess my experience has been overwhelming support from former coll… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Yes. There were certain colleagues of mine that were brutally administratively attacked, and it actually makes me ver… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Yes, personally. Yes. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Yes. I personally interviewed those individuals. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| I will give you generalities. I can get very specific in a closed session. But misappropriation of funds and self-fund. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Correct, through something called IR&D. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| It is not accurate. I believe Dr. Kirkpatrick mentioned he had about 30 individuals that have come to AARO thus far. … | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| I like to use the term nonhuman. I do not like to denote origin. Keeps the aperture open both scientifically. Certain… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| If you reference my News Nation interview and I talked about a multi-decade, you know, campaign to disenfranchise pub… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| I know of multiple colleagues of mine that got physically injured and the activity—— | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Both. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| I cannot get into the specifics in an open environment, but at least the activity that I personally witnessed—and I h… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| As previously stated publicly, yes. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| As I have stated publicly already in my News Nation interview, biologics came with some of these recoveries. Yes. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently s… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Yes. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| Personally, yes. | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| I have concerns based on the interviews I conducted under my official duties of potential violations of the Federal A… | government/congress-gov-house-hearing-transcript-20230726.pdf | ✅ Sworn / documented |  |
-| [9:50] Yeah. Did all the checks I could possibly do, you know, within my, you know, kind of official capacity, realiz… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
-| [10:12] They tried to claim all these things against me, conduct wise, mental health, all this other, uh, unfortunate… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
-| [44:41] As I've stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
-| [48:04] So, the actual reprisal stuff and the access denial stuff actually enhanced my ability to operate. But I will… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
-| [46:57] But they have. The people that I interviewed have. And they were some of the people that were interviewed by … | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md | ✅ Sworn / documented |  |
-| [11:14] encounter with the information a very senior individual in the Intel Community came to me when uh I guess I w… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [12:42] that spooked to me and that was like fall of 2019 and you know I don't take a guy's word for it | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [12:50] myself and my trusted colleagues that had a lot of lot of special accesses like me you know we cultivated our… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [15:41] and I eventually went to Congress in December of 2022 and it's a crazy story why I took so long it's [ __ ] n… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [30:54] freak out but I'm telling the truth here um so lockie Martin wanted to divest itself from this material at a … | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [41:02] answers that question so uh there were sens of human derve foreign intelligence that I read um so I had acces… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [42:53] Congress and they debriefed me uh from all my accesses over in that other sister agency and made up some bogu… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [1:06:56] looking into this I mean they came after me so hard to try to revoke my clearance um ruined my career kicke… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [1:09:27] is uh they showed my wife and I they can touch me at any time two times and it was very disturbing it was i… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
-| [1:24:14] physiology yeah no I was in I was in the room when uh I got be careful I don't want to uh I was in Washingt… | transcripts/jre-2065-grusch-2023-downloaded.md | ✅ Sworn / documented |  |
+| Claim | Document | Node Link |
+|---|---|---|
+| I have read the disclosure drafted by my attorneys, Irvin Charles McCullough, III, and Andrew P. Bakaj, and I hereby … | government/grusch-ppd-19-procedural-filing.pdf |  |
+| Mr. Grusch previously served as a fully cleared member of the United States (US) Government’s UAP Task Force. He has … | government/grusch-ppd-19-procedural-filing.pdf |  |
+| In July 2021, Mr. Grusch confidentially provided UAP-related classified information to the Department of Defense Insp… | government/grusch-ppd-19-procedural-filing.pdf |  |
+| Since his protected disclosure(s) to the DoD IG, Mr. Grusch has been subjected to numerous adverse security clearance… | government/grusch-ppd-19-procedural-filing.pdf |  |
+| multiple agencies nesting UAP activities in conventional secret access programs without appropriate reporting to vari… | news/thedebrief-grusch-2023.html |  |
+| – a competition with near-peer adversaries over the years to identify UAP crashes/landings and retrieve the material … | news/thedebrief-grusch-2023.html |  |
+| Individuals on these UAP programs approached me in my official capacity and disclosed their concerns regarding a mult… | news/thedebrief-grusch-2023.html |  |
+| of exotic origin (non-human intelligence, whether extraterrestrial or unknown origin) based on the vehicle morphologi… | news/thedebrief-grusch-2023.html |  |
+| The material includes intact and partially intact vehicles. | news/thedebrief-grusch-2023.html |  |
+| When you have multiple agencies nesting UAP activities in conventional SAP/CAP programs, both as recipients of exploi… | news/thedebrief-grusch-2023.html |  |
+| [6:28] UAP task force was refused access to um a broad crash retrieval program. When you say crash retrieval, what do… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |  |
+| [7:04] confiding in me. They approached me. I have plenty of current former senior intelligence officers that came to… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |  |
+| [9:15] shut the door in my face. They denied me access to these programs. | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |  |
+| [10:40] Well, naturally, um when you recover something that's either landed or crashed, um sometimes you encounter, u… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |  |
+| [24:28] uh overall you know the government has been the custodian of a lot of this right and they'll they'll hand rec… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |  |
+| [28:02] there have been attempts to bring down craft that we've acted offensively against non-human craft. There have… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |  |
+| [32:31] been committed? At the very least, I saw substantiative evidence that white collar crime was committed. Have … | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |  |
+| [37:37] credibility of your complaint. They found after interviewing myself in the subjects and other subjects that I… | transcripts/newsnation-coulthart-grusch-2023-downloaded.md |  |
+| I became a Whistleblower, through a PPD-19 Urgent Concern filing with the Intelligence Community Inspector General (I… | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |  |
+| I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering pr… | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |  |
+| As you know, I have suffered retaliation for my decision. But I am hopeful that my actions will ultimately lead to a … | government/oversight-house-gov-grusch-written-testimony-20230726.pdf |  |
+| I became a whistleblower through a PPD–19 urgent concern filing in May 2022 with the intelligence community inspector… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering prog… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| I made the decision based on the data I collected to report this information to my superiors and multiple inspectors … | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Yes, I can speak to that very briefly in an unclassified manner. As you know, the preponderance of my complaint was c… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Absolutely, based on interviewing over 40 witnesses over 4 years. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| I know the exact locations and those locations were provided to the Inspector General and some of which to the intell… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Yes. I have to be careful what I say in detail because there is an open whistleblower reprisal investigation on my be… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Yes, personally. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Well, it has only been about 2 months or so. So, I guess my experience has been overwhelming support from former coll… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Yes. There were certain colleagues of mine that were brutally administratively attacked, and it actually makes me ver… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Yes, personally. Yes. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Yes. I personally interviewed those individuals. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| I will give you generalities. I can get very specific in a closed session. But misappropriation of funds and self-fund. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Correct, through something called IR&D. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| It is not accurate. I believe Dr. Kirkpatrick mentioned he had about 30 individuals that have come to AARO thus far. … | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| I like to use the term nonhuman. I do not like to denote origin. Keeps the aperture open both scientifically. Certain… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| If you reference my News Nation interview and I talked about a multi-decade, you know, campaign to disenfranchise pub… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| I know of multiple colleagues of mine that got physically injured and the activity—— | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Both. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| I cannot get into the specifics in an open environment, but at least the activity that I personally witnessed—and I h… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| As previously stated publicly, yes. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| As I have stated publicly already in my News Nation interview, biologics came with some of these recoveries. Yes. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently s… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Yes. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| Personally, yes. | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| I have concerns based on the interviews I conducted under my official duties of potential violations of the Federal A… | government/congress-gov-house-hearing-transcript-20230726.pdf |  |
+| [9:50] Yeah. Did all the checks I could possibly do, you know, within my, you know, kind of official capacity, realiz… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md |  |
+| [10:12] They tried to claim all these things against me, conduct wise, mental health, all this other, uh, unfortunate… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md |  |
+| [44:41] As I've stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md |  |
+| [48:04] So, the actual reprisal stuff and the access denial stuff actually enhanced my ability to operate. But I will… | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md |  |
+| [46:57] But they have. The people that I interviewed have. And they were some of the people that were interviewed by … | transcripts/american-alchemy-grusch-72hrs-2023-downloaded.md |  |
+| [11:14] encounter with the information a very senior individual in the Intel Community came to me when uh I guess I w… | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| [12:42] that spooked to me and that was like fall of 2019 and you know I don't take a guy's word for it | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| [12:50] myself and my trusted colleagues that had a lot of lot of special accesses like me you know we cultivated our… | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| [15:41] and I eventually went to Congress in December of 2022 and it's a crazy story why I took so long it's [ __ ] n… | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| [30:54] freak out but I'm telling the truth here um so lockie Martin wanted to divest itself from this material at a … | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| [41:02] answers that question so uh there were sens of human derve foreign intelligence that I read um so I had acces… | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| [42:53] Congress and they debriefed me uh from all my accesses over in that other sister agency and made up some bogu… | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| [1:06:56] looking into this I mean they came after me so hard to try to revoke my clearance um ruined my career kicke… | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| [1:09:27] is uh they showed my wife and I they can touch me at any time two times and it was very disturbing it was i… | transcripts/jre-2065-grusch-2023-downloaded.md |  |
+| [1:24:14] physiology yeah no I was in I was in the room when uh I got be careful I don't want to uh I was in Washingt… | transcripts/jre-2065-grusch-2023-downloaded.md |  |
 
 ---
 

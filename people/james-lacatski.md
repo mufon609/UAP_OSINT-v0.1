@@ -11,12 +11,12 @@ created: 2026-05-17
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | James T. Lacatski, D.Eng. |  |
-| Aliases |  |  |
-| Nationality | American |  |
-| Profession | AAWSA Program Manager (Defense Intelligence Agency), Defense Warning Office |  |
+| Field | Value |
+|---|---|
+| Full Name | James T. Lacatski, D.Eng. |
+| Aliases |  |
+| Nationality | American |
+| Profession | AAWSA Program Manager (Defense Intelligence Agency), Defense Warning Office |
 
 ---
 

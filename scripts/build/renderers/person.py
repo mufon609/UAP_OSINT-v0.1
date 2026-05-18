@@ -64,9 +64,9 @@ def render_identity(artifact):
         ("Nationality", dm.get("nationality") or ""),
         ("Profession",  dm.get("profession") or ""),
     ]
-    lines = ["## Identity", "", "| Field | Value | Source |", "|---|---|---|"]
+    lines = ["## Identity", "", "| Field | Value |", "|---|---|"]
     for k, v in rows:
-        lines.append(f"| {k} | {v} |  |")
+        lines.append(f"| {k} | {v} |")
     return "\n".join(lines) + "\n"
 
 
@@ -188,17 +188,17 @@ def render_claim_inventory(artifact):
               if isinstance(q, dict) and q.get("category") == "filed-claim"]
     quotes = sort_by_date(quotes, "statement_date")
     lines = ["## Claim Inventory", "",
-             "| Claim | Document | Status | Node Link |",
-             "|---|---|---|---|"]
+             "| Claim | Document | Node Link |",
+             "|---|---|---|"]
     if not quotes:
-        lines.append("|  |  |  |  |")
+        lines.append("|  |  |  |")
     for q in quotes:
         text = (q.get("text") or "").strip().replace("\n", " ")
         if len(text) > 120:
             text = text[:117] + "…"
         src_path = (q.get("source") or {}).get("path") or ""
         node_link = _wrap_path(q.get("node_link"))
-        lines.append(f"| {text} | {src_path} | ✅ Sworn / documented | {node_link} |")
+        lines.append(f"| {text} | {src_path} | {node_link} |")
     return "\n".join(lines) + "\n"
 
 

@@ -11,12 +11,12 @@ created: 2026-05-16
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name | Christopher C. Green |  |
-| Aliases | Christopher (Kit) Green; Kit Green; K. Green; Dr. Christopher Green |  |
-| Nationality | United States |  |
-| Profession | Physician (M.D., Ph.D.); former Central Intelligence Agency Senior Division Analyst and Assistant National Intelligence Officer for Science and Technology |  |
+| Field | Value |
+|---|---|
+| Full Name | Christopher C. Green |
+| Aliases | Christopher (Kit) Green; Kit Green; K. Green; Dr. Christopher Green |
+| Nationality | United States |
+| Profession | Physician (M.D., Ph.D.); former Central Intelligence Agency Senior Division Analyst and Assistant National Intelligence Officer for Science and Technology |
 
 ---
 
