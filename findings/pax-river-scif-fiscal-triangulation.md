@@ -17,7 +17,7 @@ Three independent primary sources converge on the fiscal data for a Sensitive Co
 
 ## Description
 
-Hoyer ([`/people/steny-hoyer`]) 2010 press release ([`/documents/hoyer-fy2011-milcon-southern-maryland-20100728`]): "Atlantic Test Range Addition, Naval Air Station, Patuxent River ([`/locations/patuxent-river-nas`]) – $10,160,000" for "Sensitive Compartmented Information Facility areas". Elizondo ([`/people/luis-elizondo`]) Question for the Record ([`/documents/elizondo-qfr-burlison-20241219`]): "a newly built hangar at the Patuxent River Naval Air Station" built to meet "Special Access Program Facility" requirements with "approximately $10 million" "allocated at the request of then-Representative Steny Hoyer". Liberation Times ([`/organizations/liberation-times`]) reporting ([`/documents/liberationtimes-white-house-approved-trip-pax-river-20260306`]): Burlison ([`/people/eric-burlison`]) "was able to verify the hangar exists, but that it remains empty". Liberation Times update: "three separate sources familiar with the trip said the hangar visited by Burlison was not the one allegedly built to facilitate the proposed transfer of materials" — the alleged transfer was from Lockheed Martin ([`/organizations/lockheed-martin`]) to Bigelow Aerospace ([`/organizations/bigelow-aerospace`]).
+Hoyer ([`/people/steny-hoyer`]) 2010 press release ([`/documents/hoyer-fy2011-milcon-southern-maryland-20100728`]): "Atlantic Test Range Addition, Naval Air Station, Patuxent River ([`/locations/patuxent-river-nas`]) – $10,160,000" for "Sensitive Compartmented Information Facility areas". Elizondo ([`/people/luis-elizondo`]) Question for the Record ([`/documents/elizondo-qfr-burlison-20241219`]): "a newly built hangar at the Patuxent River Naval Air Station" built to meet "Special Access Program Facility" requirements with "approximately $10 million" "allocated at the request of then-Representative Steny Hoyer". Liberation Times ([`/organizations/liberation-times`]) reporting ([`/documents/liberationtimes-white-house-approved-trip-pax-river-20260306`]): Burlison ([`/people/eric-burlison`]) "was able to verify the hangar exists, but that it remains empty". Liberation Times update: "three separate sources familiar with the trip said the hangar visited by Burlison was not the one allegedly built to facilitate the proposed transfer of materials" — the alleged transfer was from Lockheed Martin ([`/organizations/lockheed-martin`]) to Bigelow Aerospace ([`/organizations/bigelow-aerospace`]). Lacatski ([`/people/james-lacatski`]) on WEAPONIZED ([`/transcripts/weaponized-114-lacatski-future-visions-2026`]), 2026: "I can answer part of the question. I can say yes, I've been there. Yes, I've seen the facility, but it was it was uh just built." Lacatski directed the AAWSAP DIA program in the fiscal year 2011 funding period; he said the building was big enough to have held "our probably our largest aircraft".
 
 ---
 
@@ -93,14 +93,29 @@ Hoyer ([`/people/steny-hoyer`]) 2010 press release ([`/documents/hoyer-fy2011-mi
 
 ---
 
+### Lacatski's first-person attestation that he personally visited the Pax River facility while it was just built — fourth independent primary source on the structure, distinct from the Hoyer fiscal record (q1), Elizondo's post-hoc QFR description (q2 / q2b), and the Burlison / Liberation Times 2026 visit reporting (q3 / q4). Lacatski directed AAWSAP at DIA during the FY2011 appropriation window per his q2 Statement on his person node; his Pax River visit is the contemporaneous program-side site visit, not yet attested in this finding before the 2026-04-08 EP 114 disclosure.
+
+> [33:51] I can answer part of the question. I can say yes, I've been there. Yes, I've seen the facility, but it was it was uh just built. So, uh I can't say what was going to go in there. It was big enough.
+
+| Field | Value |
+|---|---|
+| Attributed to | Lacatski ([`/people/james-lacatski`]) on WEAPONIZED EP 114 ([`/transcripts/weaponized-114-lacatski-future-visions-2026`]), 2026-04-08; responding to Corbell question about Pax River. Lacatski further says the structure "could have held our probably our largest aircraft" and asks "why would it need to at a naval facility?" |
+| Tier | on-record |
+| Attestor | [`/people/james-lacatski`] |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [33:51]–[34:05] |
+
+---
+
 ## What the Record Establishes
 
-- Three independent primary sources (q1 from 2010, q2 from 2024, q3 from 2026) attest the same physical structure at Naval Air Station Patuxent River.
+- Four independent primary sources (q1 from 2010, q2 from 2024, q3 from 2026, q5 from 2026) attest the same physical structure at Naval Air Station Patuxent River.
 - Fiscal year (FY2011) and approximate dollar magnitude triangulate across q1 ($10,160,000) and q2 (approximately $10 million).
 - Steny Hoyer's role as the requesting representative is attested independently in q1 (Hoyer's own 2010 press release) and q2 (Elizondo's 2024 QFR: "allocated at the request of then-Representative Steny Hoyer").
 - The Sensitive Compartmented Information Facility designation in q1 corresponds to the Special Access Program Facility (SAP-F) designation in q2; both describe compartmented-information-handling infrastructure at the SAP / SCIF classification tier.
 - The structure physically exists at Pax River as of February 2026 per q3, sixteen years after the original Fiscal Year 2011 appropriation.
 - Hoyer's 2010 press release (q1) predates any UAP framing of the appropriation by fourteen years and was a routine Military Construction announcement at the time of publication.
+- Lacatski's 2026 EP 114 attestation (q5) places him at the facility during construction ("it was just built") — first-person contemporaneous program-side site visit by the AAWSAP DIA program director, distinct in evidentiary class from Hoyer's fiscal record (q1), Elizondo's post-hoc QFR description (q2 / q2b), and Burlison's 2026 site visit (q3 / q4).
 
 ---
 
@@ -145,6 +160,7 @@ Both are Liberation Times Christopher Sharp reporting on the same alleged transf
 | 2026-02 | Rep. Eric Burlison conducts White House-approved site visit to Naval Air Station Patuxent River to examine claims of UAP-related infrastructure. Per Liberation Times reporting, Burlison verifies the hangar exists but is empty. | news/liberationtimes-white-house-approved-trip-pax-river-20260306.html |  |
 | 2026-03-06 | Liberation Times (Christopher Sharp) publishes "White House-Approved Trip Allegedly Took Congressman to Maryland Base to Examine Suspected UFO Facility" — the initial report pairing the Burlison visit with Elizondo's QFR Q7 hangar description. | news/liberationtimes-white-house-approved-trip-pax-river-20260306.html |  |
 | 2026-03-12 | Liberation Times 2026-03-12 update on the Burlison report: three sources told the outlet the hangar Burlison visited was not the one allegedly built for the transfer; Burlison did not see a runway built for Bigelow. The broader Pax River allegation remains on the record. | news/liberationtimes-white-house-approved-trip-pax-river-20260306.html |  |
+| 2026-04-08 | Lacatski ([`/people/james-lacatski`]) on WEAPONIZED EP 114 ([`/transcripts/weaponized-114-lacatski-future-visions-2026`]) discloses he personally visited the Pax River facility while it was "just built" — first-person contemporaneous program-side site visit attestation by the AAWSAP DIA program director. | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md |  |
 
 ---
 
@@ -156,6 +172,7 @@ Both are Liberation Times Christopher Sharp reporting on the same alleged transf
 
 - [`/people/christopher-sharp`]
 - [`/people/eric-burlison`]
+- [`/people/james-lacatski`]
 - [`/people/luis-elizondo`]
 - [`/people/steny-hoyer`]
 
@@ -170,6 +187,10 @@ Both are Liberation Times Christopher Sharp reporting on the same alleged transf
 - [`/documents/elizondo-qfr-burlison-20241219`]
 - [`/documents/hoyer-fy2011-milcon-southern-maryland-20100728`]
 - [`/documents/liberationtimes-white-house-approved-trip-pax-river-20260306`]
+
+### Transcripts
+
+- [`/transcripts/weaponized-114-lacatski-future-visions-2026`]
 
 ### Locations
 
