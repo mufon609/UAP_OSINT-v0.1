@@ -1,0 +1,39 @@
+- identity: jake-barber
+  path: baselines/jake-barber/ref_01.jpg
+  sha256: c4f727193d174dfe7e44c0a1a37d0f636a6aabc3e637ec34c6be6ce3d56769ba
+  source_video_path: sources/video/american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs.mp4
+  source_timestamp: '1:30:00'
+  bbox:
+  - 386
+  - 51
+  - 159
+  - 159
+  added_date: '2026-05-18'
+  source_video_url: https://www.youtube.com/watch?v=dnnpyNuPdXs
+  note: Solo close-up of Jake Barber at 1:30:00 in 'I Retrieved a UFO With My Helicopter!' (Jesse Michels / American Alchemy, 2026); bald + glasses + dark plaid frontal view.
+- identity: jesse-michels
+  path: baselines/jesse-michels/ref_01.jpg
+  sha256: 4f1186fc96cd6d350ae3fc8348a83cb683636d44677a570ab91c984061a072d5
+  source_video_path: sources/video/american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs.mp4
+  source_timestamp: '10:00'
+  bbox:
+  - 296
+  - 63
+  - 156
+  - 156
+  added_date: '2026-05-18'
+  source_video_url: https://www.youtube.com/watch?v=dnnpyNuPdXs
+  note: Solo close-up of Jesse Michels at 10:00 in 'I Retrieved a UFO With My Helicopter!' (Jesse Michels / American Alchemy, 2026); first anchor frame yielding a clear frontal face.
+- identity: jesse-michels
+  path: baselines/jesse-michels/ref_02.jpg
+  sha256: 5fdc717ca2bc749111b63d7d626c7c12d0ddc444c0d064b2ea5326056a775437
+  source_video_path: sources/video/american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs.mp4
+  source_timestamp: 0:15
+  bbox:
+  - 354
+  - 133
+  - 83
+  - 83
+  added_date: '2026-05-18'
+  source_video_url: https://www.youtube.com/watch?v=dnnpyNuPdXs
+  note: BTS wide-shot of Jesse Michels at 0:15; smaller-bbox second-angle reference complementing the 10:00 solo close-up baseline.

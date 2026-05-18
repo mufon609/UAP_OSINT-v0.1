@@ -1,0 +1,4 @@
+crop_path,source_image,source_timestamp,bbox_x,bbox_y,bbox_w,bbox_h,phash,identity,identity_source,run_date
+baselines/jake-barber/ref_01.jpg,/tmp/frames-american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs/anchor/1-30-00.jpg,,386,51,159,159,071f1b031b130300,jake-barber,manual-register,2026-05-18
+baselines/jesse-michels/ref_01.jpg,/tmp/frames-american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs/anchor/10-00.jpg,,296,63,156,156,c787838387c743c0,jesse-michels,manual-register,2026-05-18
+baselines/jesse-michels/ref_02.jpg,/tmp/frames-american-alchemy-barber-ufo-helicopter-2026-dnnpyNuPdXs/anchor/00-15.jpg,,354,133,83,83,ffc7c383c3c7c3c1,jesse-michels,manual-register,2026-05-18

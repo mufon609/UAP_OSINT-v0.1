@@ -688,6 +688,39 @@ manifest_entry:
   # guarantee for such entries.
 
 # ---------------------------------------------------------------------------
+# Photo identity log manifest (sources/photo-identity-log/manifest.yaml)
+# ---------------------------------------------------------------------------
+#
+# Separate-schema manifest tracking the persistent baseline crops produced by
+# scripts/tools/detect-faces.py. Lives at sources/photo-identity-log/manifest.yaml
+# (distinct from sources/manifest.yaml above, which tracks URL-archived primary
+# sources). Each entry registers one baseline crop with sha256 integrity and
+# provenance back to the source video + timestamp + bbox.
+#
+# Working-area crops (sources/photo-identity-log/crops/) are NOT manifest-
+# tracked; only contributor-promoted baselines under
+# sources/photo-identity-log/baselines/{identity}/ get manifest entries.
+
+photo_identity_manifest_entry:
+  required: [identity, path, sha256, source_video_path, source_timestamp, bbox, added_date]
+  optional: [source_video_url, note]
+  # identity: kebab-case slug — lowercase letters, digits, hyphens. Matches
+  #   the baselines/{identity}/ subdirectory the crop lives in.
+  # path: relative to sources/photo-identity-log/. Typically
+  #   baselines/{identity}/ref_NN.jpg.
+  # sha256: integrity hash of the baseline crop. Recomputed at
+  #   register-time by detect-faces.py.
+  # source_video_path: path to the source video relative to repo root.
+  # source_timestamp: MM:SS or H:MM:SS within the source video the source
+  #   frame was extracted from.
+  # bbox: [x, y, w, h] face bounding box (in pixels) within the source
+  #   frame the crop was derived from. Lets a future workflow re-derive the
+  #   crop from the source video deterministically.
+  # added_date: YYYY-MM-DD when the baseline was registered.
+  # source_video_url: optional original URL for cross-reference.
+  # note: optional contributor context (pose, lighting, framing notes).
+
+# ---------------------------------------------------------------------------
 # Addenda
 # ---------------------------------------------------------------------------
 
