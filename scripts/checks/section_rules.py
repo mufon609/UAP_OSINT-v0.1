@@ -60,7 +60,7 @@ def _count_quote_blocks_and_attributions(section_text):
         if is_quote and not in_block:
             blocks += 1
             in_block = True
-        elif not is_quote and line.strip() != "":
+        elif not is_quote:
             in_block = False
     source_rows = sum(
         1 for line in lines if line.strip().startswith("| Source |")
