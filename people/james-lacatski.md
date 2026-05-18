@@ -282,6 +282,110 @@ _No direct observations documented._
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [1:10:17]–[1:10:48] |
 
+> [0:53] Reducing 30,000 pages of analyst photos and information and logs and and sightings, etc., and investigations, that was a tough job.
+
+| Field | Value |
+|---|---|
+| Attributed to | 8 News Now / KLAS-TV / Mystery Wire segment 'Craft of unknown origin subject of secret study' (transcript [`/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026`]), published 2026-04-06; Lacatski on-camera with narrator George Knapp ([`/people/george-knapp`]) |
+| Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
+| Location | [00:53]–[01:07] |
+
+> [2:28] >> from the beginning. Uh they were concerned from the beginning about the the leak, but we never had a a leak. Uh not at all.
+
+| Field | Value |
+|---|---|
+| Attributed to | 8 News Now segment 2026-04-06; Lacatski responding to Knapp narrator framing that AAWSAP bosses knew the paranormal-umbrella scope from the beginning and were concerned about leaks |
+| Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
+| Location | [02:28]–[02:36] |
+
+> [3:28] purpose of the government effort was to look into is there is there something really there, especially in the paranormal umbrella. And the answer is absolutely yes.
+
+| Field | Value |
+|---|---|
+| Attributed to | 8 News Now segment 2026-04-06; Lacatski summarizing the AAWSAP investigative purpose in the Future Visions book launch press cycle |
+| Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
+| Location | [03:28]–[03:42] |
+
+> [4:12] You could have craft, you could have bodies, it wouldn't necessarily tell you where they're from, why they're here, what their their plan is. Nope, it it wouldn't, and that's part of the of the story.
+
+| Field | Value |
+|---|---|
+| Attributed to | 8 News Now segment 2026-04-06; Lacatski responding to Knapp narrator framing about Congressional focus on crashed-UFOs and alien-bodies legacy-program allegations |
+| Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
+| Location | [04:12]–[04:24] |
+
+> [6:32] this all started when I was working I distinctly remember working with this huge cathode ray tube monitor in my house, brand new, but still huge machine. And I'm looking at it and I said, "Wait a minute, there's a project at DIA and and an associated to my particular group, uh uh alternate group? I I didn't know they were they were working on such odd things." And then Skinwalker Ranch came up, literally.
+
+| Field | Value |
+|---|---|
+| Attributed to | WEAPONIZED EP 114 'Future Visions' interview (transcript [`/transcripts/weaponized-114-lacatski-future-visions-2026`]) for Lacatski''s fourth book Future Visions ([`/documents/lacatski-future-visions-2026`]), 2026-04-08; Lacatski responding to Corbell question about his DIA background pre-AAWSAP |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [06:32]–[07:03] |
+
+> [9:13] we had uh he was part of what we call the air team. He worked on air threats. And he was I don't know if he was on assignment to DIA from ONI or if he was a DIA uh uh employee at the time. But we also had other members within those teams. He was head of that group. I was head of uh the missile threat, enemy missile threat to the United States.
+
+| Field | Value |
+|---|---|
+| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski responding to Corbell paraphrase of Stratton's account of how AAWSAP came about — "you two guys were both at DIA at the same time with different sort of specialties" |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [09:13]–[09:41] |
+
+> [30:14] We've just opened up the door by saying, "Hey, this is real. You need to do your research, your due diligence. If you expect the the government to to carry the ball on this, I wouldn't. Uh but uh that uh it's wide open.
+
+| Field | Value |
+|---|---|
+| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski responding to Knapp on whether something further beyond the four books needs to be released |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [30:14]–[30:31] |
+
+> [33:51] I can answer part of the question. I can say yes, I've been there. Yes, I've seen the facility, but it was it was uh just built. So, uh I can't say what was going to go in there. It was big enough.
+
+| Field | Value |
+|---|---|
+| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski responding to Corbell question about Pax River — Corbell sets up the question by noting Rep. Tim Burchett ([`/people/tim-burchett`]) has been visiting facilities historically said to hold non-human intelligence craft, including Pax River |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [33:51]–[34:05] |
+
+> [48:53] there was a case which I think I can describe in the upcoming that happened during Kona Blue there. There was a levitation of a human being. And uh you know, that was by a reliable person. Now, you already know about the levitating objects uh you know, there at the ranch. I'm talking about an actual person in the air.
+
+| Field | Value |
+|---|---|
+| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski on Skinwalker Ranch communication experiments and time anomalies during Kona Blue period |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [48:53]–[49:22] |
+
+> [52:54] But no, AATIP was the name was created um for use in the Senator Reid's letter for our first attempt for material transfer. It came and went. The next time I really saw AATIP was uh uh uh in the in the the New York Times article.
+
+| Field | Value |
+|---|---|
+| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski responding to Knapp question about how to describe what AATIP was |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [52:54]–[53:20] |
+
+> [56:35] looking for a list. So you shouldn't put too much into that letter other than it was a broad request for us uh now we were able to look for the list. Let's Let's jump off that for a moment. And guess what? It had disappeared. List of what? > Disappeared > A list of what? Recovered materials. Recovered materials.
+
+| Field | Value |
+|---|---|
+| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski responding to Knapp / Corbell question about what the Reid letter was actually about |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [56:35]–[56:57] |
+
+> [1:26:01] That transfer of material that DHS said in Kona Blue denied, didn't exist. Don't you think I already knew that already? This was the third attempt for that transfer under the conditions laid for us. The third attempt. And this was Did I not know it was going to fail? What I didn't know, and the surprise, what I didn't know was something I can't tell you right now. I was very surprised of what they were really focused on. Very surprised. And it wasn't transfer of recovered technology.
+
+| Field | Value |
+|---|---|
+| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski on the conclusion of Kona Blue at DHS |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [1:26:01]–[1:26:46] |
+
+> [1:23:43] George is correct. They've gotten what they've gotten right here. It's complete and it's truthful. And I'm telling you that there's falsehoods out there. They're being led down a wrong path. Congress is being led down a wrong path. The president is being led down the wrong path. There's a problem here, and I'm I'm disturbed by it cuz I'm not going to live forever, and I want the truth to come out.
+
+| Field | Value |
+|---|---|
+| Attributed to | WEAPONIZED EP 114 2026-04-08; Lacatski to Corbell on whether the four books are the closest the public will get to disclosure |
+| Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
+| Location | [1:23:43]–[1:24:07] |
+
 ---
 
 ## Timeline
@@ -368,6 +472,20 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 | caskey | Lacatski | transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md | YouTube auto-caption rendering of Lacatski''s surname in Knapp''s closing address ("dr caskey jim"). |
 | laty | Lacatski | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption alternate rendering of Lacatski''s surname in Corbell''s closing recap address ("Dr lat" / "Dr laty"). |
 | Reed | Reid | transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md | YouTube auto-caption renders "Senator Harry Reid" as "Senator Reed" in Lacatski''s AAWSAP creation attestation. |
+| Dothraki | DOPSR | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption rendering of "DOPSR" (Defense Office of Prepublication and Security Review) as "Dothraki" in Corbell''s question about how Lacatski''s book revelations were authorized. |
+| Burleson | Burlison | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption rendering of Rep. Eric Burlison''s surname as "Burleson" in Lacatski''s reference to a Burlison statement about Lacatski''s book sufficiency. |
+| Lakatski | Lacatski | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption alternate rendering of Lacatski''s surname in EP 114 — capitalized variant "Lakatski" (distinct from EP 38''s "latsky" / Mystery Wire 2021''s "lakatsky"). |
+| Bass | BAASS | transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md | YouTube auto-caption rendering of BAASS (Bigelow Aerospace Advanced Space Studies) as "Bass" in Lacatski''s reflection on what Bass did right ("We didn''t fail at all on the research that Bass did"). |
+
+---
+
+## Preserved Disagreements
+
+Naming-quirk entries where two primary sources attest opposing forms of the same fact. The repository does not adjudicate; both positions stay on the record.
+
+| Position | Counterpart | Source | Note |
+|---|---|---|---|
+| AATIP | AAWSAP | transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md | Both new 2026 sources have George Knapp''s narration using "AATIP" to refer to the program Lacatski directed at DIA — but the program Lacatski directed was AAWSAP, not AATIP. Lacatski himself clarifies the AATIP-name history in q38 ("AATIP was the name was created um for use in the Senator Reid''s letter for our first attempt for material transfer ... It came and went. The next time I really saw AATIP was uh uh uh in the in the the New York Times article"). The Knapp / 8 News Now / EP 114 narrator framing conflates the two; Lacatski''s direct quotes consistently use "AAWSAP" / "A SAP" (auto-caption for AAWSAP). Resolution `disputed` because the divergence is between two primary-source attestations of the same fact (program name), not a typo to harmonize. |
 
 ---
 
@@ -388,6 +506,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/luis-elizondo`]
 - [`/people/robert-bigelow`]
 - [`/people/tara-otoole`]
+- [`/people/tim-burchett`]
 
 ### Organizations
 
@@ -407,12 +526,15 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/documents/dird-puthoff-vacuum-metric-engineering-2010`]
 - [`/documents/elizondo-qfr-burlison-20241219`]
 - [`/documents/inside-us-gov-covert-ufo-2023`]
+- [`/documents/lacatski-future-visions-2026`]
 - [`/documents/skinwalkers-at-the-pentagon-2021`]
 
 ### Transcripts
 
+- [`/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026`]
 - [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]
 - [`/transcripts/weaponized-038-lacatski-kelleher-2023`]
+- [`/transcripts/weaponized-114-lacatski-future-visions-2026`]
 - [`/transcripts/weaponized-lacatski-part1-2025`]
 - [`/transcripts/weaponized-lacatski-part2-2025`]
 
