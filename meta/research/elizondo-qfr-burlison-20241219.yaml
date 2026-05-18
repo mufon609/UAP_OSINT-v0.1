@@ -99,7 +99,7 @@ quotes:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: 'p. 1, Q1 response — DOPSR / Lacatski attribution + verbatim Lacatski quotation'
-  significance: 'Q1 response — names Dr. James Lacatski, former Director of AAWSAP, as the author of the September 6, 2023 DOPSR-cleared statement and quotes the verbatim Lacatski text identifying Dr. James Ryder as proposer of the UAP material divestment plan. Source for the lacatski-authorship-chain finding ([`/findings/lacatski-authorship-chain`]) — closes the authorship loop from anonymous SD004 page-1 to named author Lacatski.'
+  significance: 'Q1 response — names Dr. James Lacatski, former Director of AAWSAP, as the author of the September 6, 2023 DOPSR-cleared statement and quotes the verbatim Lacatski text identifying Dr. James Ryder as proposer of the UAP material divestment plan. Closes the authorship loop from anonymous SD004 page-1 to named author Lacatski.'
   statement_date: '2024-12-19'
 - id: q4
   added_date: '2026-05-18'
@@ -145,7 +145,7 @@ quotes:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: 'p. 2, Q6 response'
-  significance: 'Q6 — Elizondo confirms the CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace. The Q6 question text names journalist Christopher Sharp ([`/people/christopher-sharp`]) as the source of the underlying claim Burlison was asking Elizondo to confirm or deny. The shortest substantive Yes in the QFR; the action-scope attested ("opposed the transfer") is the foundation for the aaro-denial-action-mismatch finding ([`/findings/aaro-denial-action-mismatch`]) and for the H1 evaluation in the Lockheed Martin investigation ([`/investigations/lockheed-martin-uap-materials`]).'
+  significance: 'Q6 — Elizondo confirms the CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace. The Q6 question text names journalist Christopher Sharp ([`/people/christopher-sharp`]) as the source of the underlying claim Burlison was asking Elizondo to confirm or deny. The shortest substantive Yes in the QFR; the action-scope attested is "opposed the transfer".'
   statement_date: '2024-12-19'
 - id: q7
   added_date: '2026-05-18'
@@ -161,7 +161,7 @@ quotes:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: 'p. 2, Q7 response opening (before p. 2/p. 3 page-break interruption)'
-  significance: 'Q7 — Elizondo names the Patuxent River SAP-F hangar specifically: purpose-built to meet Special Access Program Facility requirements at any classification level. Foundational source for the pax-river-scif-fiscal-triangulation finding ([`/findings/pax-river-scif-fiscal-triangulation`]). The Q7 response continues after a p. 2 / p. 3 page-break: "$10 million" funding allocated at Hoyer''s request, and "I have visited this facility." That continuation is quoted on the Pax River finding as q2b per pdftotext page-footer artifact discipline.'
+  significance: 'Q7 — Elizondo names the Patuxent River SAP-F hangar specifically: purpose-built to meet Special Access Program Facility requirements at any classification level. The Q7 response continues after a p. 2 / p. 3 page-break: "$10 million" funding allocated at Hoyer''s request, and "I have visited this facility." That continuation is quoted as q2b per pdftotext page-footer artifact discipline.'
   statement_date: '2024-12-19'
 - id: q8
   added_date: '2026-05-18'

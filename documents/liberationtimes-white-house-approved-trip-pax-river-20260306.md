@@ -43,7 +43,7 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 
 ---
 
-### Two-sources attestation of Burlison's hangar visit — the hangar Liberation Times pairs with Elizondo's QFR Q7 description of the SAP-F hangar built to accommodate the alleged Lockheed-to-Bigelow transfer. "Burlison was able to verify the hangar exists, but that it remains empty" is the most-cited Liberation Times line from the article and the foundational source for the empty-hangar attestation in the pax-river-scif-fiscal-triangulation finding ([`/findings/pax-river-scif-fiscal-triangulation`]).
+### Two-sources attestation of Burlison's hangar visit — the hangar Liberation Times pairs with Elizondo's QFR Q7 description of the SAP-F hangar built to accommodate the alleged Lockheed-to-Bigelow transfer. "Burlison was able to verify the hangar exists, but that it remains empty" is the most-cited Liberation Times line from the article.
 
 > Two sources told Liberation Times that Burlison visited a hangar that Lue Elizondo, the former head of the Pentagon’s Advanced Aerospace Threat Identification Program, has alleged in writing to Congress was built to accommodate the machinery and its transfer to Bigelow.  Liberation Times understands that Burlison was able to verify the hangar exists, but that it remains empty. The alleged transfer was blocked by the CIA, the original custodian of the machinery, which is understood to have been recovered since the 1950s.
 
@@ -79,7 +79,7 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 
 ---
 
-### Burlison's own Resilient Show quotation — frames the Pax River visit as a search for infrastructure-for-purpose evidence rather than for materials themselves. Burlison states "I had information that there was no material there, but there is enough evidence of infrastructure on the property to indicate that there was" and that the goal was to "prove" the narrative through structural evidence. Surfaces in the H3 evaluation on the Lockheed Martin investigation ([`/investigations/lockheed-martin-uap-materials`]).
+### Burlison's own Resilient Show quotation — frames the Pax River visit as a search for infrastructure-for-purpose evidence rather than for materials themselves. Burlison states "I had information that there was no material there, but there is enough evidence of infrastructure on the property to indicate that there was" and that the goal was to "prove" the narrative through structural evidence.
 
 > “What I was looking for was this: I had information that there was no material there, but there is enough evidence of infrastructure on the property to indicate that there was.   “What I was trying to do was prove, or find, any kind of evidence or proof of the narrative. So, if I could prove, for example, that there was a building created for the purpose of receiving a transfer of goods, then, at least if the building exists, I can identify and prove that there may be some validity to that story.”
 
@@ -126,7 +126,3 @@ Christopher Sharp ([`/people/christopher-sharp`]) at Liberation Times ([`/organi
 ### Locations
 
 - [`/locations/patuxent-river-nas`]
-
-### Findings
-
-- [`/findings/pax-river-scif-fiscal-triangulation`]

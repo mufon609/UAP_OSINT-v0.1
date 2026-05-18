@@ -194,7 +194,7 @@ quotes:
   source:
     path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
     location: '[33:51]–[34:32]'
-  significance: 'Lacatski''s first-person on-record confirmation that he visited the Pax River Naval Air Station facility — "yes, I''ve been there. Yes, I''ve seen the facility, but it was it was uh just built." Lacatski says the building "could have held our probably our largest aircraft" and asks "why would it need to at a naval facility?" Closes the loop on the Pax River SAP-F hangar question Elizondo''s QFR Q7 had attested ([`/findings/pax-river-scif-fiscal-triangulation`]) — Lacatski independently confirms the visit and the structural scale.'
+  significance: 'Lacatski''s first-person on-record confirmation that he visited the Pax River Naval Air Station facility — "yes, I''ve been there. Yes, I''ve seen the facility, but it was it was uh just built." Lacatski says the building "could have held our probably our largest aircraft" and asks "why would it need to at a naval facility?" Independently confirms the visit and the structural scale that Elizondo''s December 2024 QFR Q7 had attested.'
   context: Jeremy in WEAPONIZED EP 114 asking Lacatski directly about the Pax River facility Rep. Burchett had referenced
 - id: q12
   added_date: '2026-05-17'
@@ -441,12 +441,6 @@ entities_referenced:
   name: Skinwalker Ranch
   wrap_path: /locations/skinwalker-ranch
   context_summary: 'Named explicitly in EP 114 — Lacatski''s visit request "via multiple managers approval" at DIA was the structural origin of the AAWSAP-era ranch investigation'
-- id: e30
-  added_date: '2026-05-17'
-  entity_type: finding
-  name: Pax River SCIF Fiscal Triangulation
-  wrap_path: /findings/pax-river-scif-fiscal-triangulation
-  context_summary: 'EP 114 closes a key thread on the Pax River SAP-F hangar — Lacatski independently confirms he visited the facility ("I''ve been there. Yes, I''ve seen the facility") and says the building "could have held our probably our largest aircraft." Aligns with Elizondo QFR Q7 attestation about the Pax River SAP-F hangar funding'
 - id: e31
   added_date: '2026-05-17'
   entity_type: transcript

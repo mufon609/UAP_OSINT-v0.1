@@ -54,7 +54,7 @@ quotes:
   source:
     path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
     location: 'article body, ¶ following the lede'
-  significance: 'Two-sources attestation of Burlison''s hangar visit — the hangar Liberation Times pairs with Elizondo''s QFR Q7 description of the SAP-F hangar built to accommodate the alleged Lockheed-to-Bigelow transfer. "Burlison was able to verify the hangar exists, but that it remains empty" is the most-cited Liberation Times line from the article and the foundational source for the empty-hangar attestation in the pax-river-scif-fiscal-triangulation finding ([`/findings/pax-river-scif-fiscal-triangulation`]).'
+  significance: 'Two-sources attestation of Burlison''s hangar visit — the hangar Liberation Times pairs with Elizondo''s QFR Q7 description of the SAP-F hangar built to accommodate the alleged Lockheed-to-Bigelow transfer. "Burlison was able to verify the hangar exists, but that it remains empty" is the most-cited Liberation Times line from the article.'
   statement_date: '2026-03-06'
 - id: q3
   added_date: '2026-05-18'
@@ -81,7 +81,7 @@ quotes:
   source:
     path: news/liberationtimes-white-house-approved-trip-pax-river-20260306.html
     location: 'article body, Burlison Resilient Show quotation'
-  significance: 'Burlison''s own Resilient Show quotation — frames the Pax River visit as a search for infrastructure-for-purpose evidence rather than for materials themselves. Burlison states "I had information that there was no material there, but there is enough evidence of infrastructure on the property to indicate that there was" and that the goal was to "prove" the narrative through structural evidence. Surfaces in the H3 evaluation on the Lockheed Martin investigation ([`/investigations/lockheed-martin-uap-materials`]).'
+  significance: 'Burlison''s own Resilient Show quotation — frames the Pax River visit as a search for infrastructure-for-purpose evidence rather than for materials themselves. Burlison states "I had information that there was no material there, but there is enough evidence of infrastructure on the property to indicate that there was" and that the goal was to "prove" the narrative through structural evidence.'
   statement_date: '2026-03-06'
 - id: q6
   added_date: '2026-05-18'

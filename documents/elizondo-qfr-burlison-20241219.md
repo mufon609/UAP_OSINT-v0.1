@@ -86,7 +86,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q1 response — names Dr. James Lacatski, former Director of AAWSAP, as the author of the September 6, 2023 DOPSR-cleared statement and quotes the verbatim Lacatski text identifying Dr. James Ryder as proposer of the UAP material divestment plan. Source for the lacatski-authorship-chain finding ([`/findings/lacatski-authorship-chain`]) — closes the authorship loop from anonymous SD004 page-1 to named author Lacatski.
+### Q1 response — names Dr. James Lacatski, former Director of AAWSAP, as the author of the September 6, 2023 DOPSR-cleared statement and quotes the verbatim Lacatski text identifying Dr. James Ryder as proposer of the UAP material divestment plan. Closes the authorship loop from anonymous SD004 page-1 to named author Lacatski.
 
 > Confirmation of this may be inferred from an official DoD Office of Prepublication and
 >    Security Review (“DOPSR”) document, dated September 6, 2023. This document authorized
@@ -146,7 +146,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q6 — Elizondo confirms the CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace. The Q6 question text names journalist Christopher Sharp ([`/people/christopher-sharp`]) as the source of the underlying claim Burlison was asking Elizondo to confirm or deny. The shortest substantive Yes in the QFR; the action-scope attested ("opposed the transfer") is the foundation for the aaro-denial-action-mismatch finding ([`/findings/aaro-denial-action-mismatch`]) and for the H1 evaluation in the Lockheed Martin investigation ([`/investigations/lockheed-martin-uap-materials`]).
+### Q6 — Elizondo confirms the CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace. The Q6 question text names journalist Christopher Sharp ([`/people/christopher-sharp`]) as the source of the underlying claim Burlison was asking Elizondo to confirm or deny. The shortest substantive Yes in the QFR; the action-scope attested is "opposed the transfer".
 
 > 6. Question: “Are you aware of the recent claim made by journalist Christopher Sharp
 >    regarding Bigelow Aerospace, Lockheed Martin, and the CIA allegedly blocking the transfer
@@ -163,7 +163,7 @@ Luis D. Elizondo ([`/people/luis-elizondo`]) Question for the Record response to
 
 ---
 
-### Q7 — Elizondo names the Patuxent River SAP-F hangar specifically: purpose-built to meet Special Access Program Facility requirements at any classification level. Foundational source for the pax-river-scif-fiscal-triangulation finding ([`/findings/pax-river-scif-fiscal-triangulation`]). The Q7 response continues after a p. 2 / p. 3 page-break: "$10 million" funding allocated at Hoyer's request, and "I have visited this facility." That continuation is quoted on the Pax River finding as q2b per pdftotext page-footer artifact discipline.
+### Q7 — Elizondo names the Patuxent River SAP-F hangar specifically: purpose-built to meet Special Access Program Facility requirements at any classification level. The Q7 response continues after a p. 2 / p. 3 page-break: "$10 million" funding allocated at Hoyer's request, and "I have visited this facility." That continuation is quoted as q2b per pdftotext page-footer artifact discipline.
 
 > Response: Yes. I can confirm that specific facilities were identified to enable Bigelow
 >    Aerospace to acquire and securely store recovered UAP materials as the new custodian,
@@ -274,9 +274,3 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 ### Locations
 
 - [`/locations/patuxent-river-nas`]
-
-### Findings
-
-- [`/findings/aaro-denial-action-mismatch`]
-- [`/findings/lacatski-authorship-chain`]
-- [`/findings/pax-river-scif-fiscal-triangulation`]

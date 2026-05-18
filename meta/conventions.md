@@ -867,6 +867,19 @@ directional contract enforced by the `finding_no_investigation_refs`
 check. Findings stay cluster-neutral so they can be cited from
 multiple investigations.
 
+Entity nodes (person / organization / document / event / transcript /
+media / location) DO NOT REFERENCE findings or investigations —
+symmetric directional contract enforced by the
+`entity_no_finding_or_investigation_refs` check. Facts flow up to the
+synthesis layer; the synthesis layer does not flow back into the
+fact substrate. The Ryder person node attesting that he was named in
+the SD004 statement is a fact; pointing the Ryder node at the
+finding that synthesizes the multi-source authorship-chain pattern
+would invert the flow. Findings and investigations are discoverable
+from the priority queue, the research-queue cross-references, and
+inter-finding / inter-investigation paths — not from the entity
+layer pointing at them.
+
 Findings are not verdicts. They document the multi-source pattern
 and stop there — what the convergence establishes, what it doesn't
 establish, where it diverges. Hypothesis evaluation belongs on

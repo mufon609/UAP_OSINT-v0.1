@@ -180,7 +180,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ---
 
-### Lacatski's first-person on-record confirmation that he visited the Pax River Naval Air Station facility — "yes, I've been there. Yes, I've seen the facility, but it was it was uh just built." Lacatski says the building "could have held our probably our largest aircraft" and asks "why would it need to at a naval facility?" Closes the loop on the Pax River SAP-F hangar question Elizondo's QFR Q7 had attested ([`/findings/pax-river-scif-fiscal-triangulation`]) — Lacatski independently confirms the visit and the structural scale.
+### Lacatski's first-person on-record confirmation that he visited the Pax River Naval Air Station facility — "yes, I've been there. Yes, I've seen the facility, but it was it was uh just built." Lacatski says the building "could have held our probably our largest aircraft" and asks "why would it need to at a naval facility?" Independently confirms the visit and the structural scale that Elizondo's December 2024 QFR Q7 had attested.
 
 > [33:51] I can answer part of the question. I can say yes, I've been there. Yes, I've seen the facility, but it was it was uh just built. So, uh I can't say what was going to go in there. It was big enough. It You know, there's Memories fade like that when you're looking at a big building. And sometimes, when I look at big buildings, they don't seem quite as big when you're there. But this could have held our probably our largest aircraft in that building. Now, why would it need to at a naval facility? I don't know, because they wouldn't have a need for that, I would think.
 
@@ -350,7 +350,3 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 ### Locations
 
 - [`/locations/skinwalker-ranch`]
-
-### Findings
-
-- [`/findings/pax-river-scif-fiscal-triangulation`]

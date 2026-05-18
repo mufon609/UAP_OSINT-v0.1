@@ -47,7 +47,7 @@ top_relevance: 'Lacatski said he directed the $22 million ([`/organizations/aaws
   Lacatski wrote four books with colum kellerer ([`/people/colm-kelleher`]) and george knap ([`/people/george-knapp`]) — "Skinwalkers at the Pentagon," "Inside the US Government Covert UFO Program: Initial Revelations," the new "New Insights," and the approved future book "Future Visions." He gave the Mystery interview with Knap and kellerer ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]), the WEAPONIZED Episode 38 interview ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]), and the WEAPONIZED series PART 1 and PART 2. In WEAPONIZED EP 38 corbell read from chapter 9 of the 2023 book about a 2011 meeting in the Capitol building with a US senator and an agency under secretary, at which Lacatski (the only one of the books authors present) posed a question that the United States was in possession of a craft of unknown origin and had successfully gained access to its interior. Lacatski said "the wording that you read is correct" and "yes you I was allowed to tell you," but said he was "not going beyond what it was what you read from the book."
 
 
-  Lacatski as author of the page 1 statement about James Ryder is documented in ([`/findings/lacatski-authorship-chain`]).'
+  '
 affiliations:
 - id: a1
   added_date: '2026-05-17'
@@ -173,7 +173,7 @@ program_involvement:
   source:
     path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
     location: p. 2, Q1 response
-  note: 'See finding [`/findings/lacatski-authorship-chain`] for the full three-source attestation chain. Elizondo''s sworn QFR Q1 response attests authorship; the SD004 page-1 substantive content (verbatim re-attested in Elizondo''s QFR Q1 as Attachment 2) carries the Lockheed Martin / James Ryder UAP material divestment claim. DOPSR clearance attests authorization to publish; the underlying factual claim is not adjudicated by DOPSR.'
+  note: 'Elizondo''s sworn QFR Q1 response attests authorship; the SD004 page-1 substantive content (verbatim re-attested in Elizondo''s QFR Q1 as Attachment 2) carries the Lockheed Martin / James Ryder UAP material divestment claim. DOPSR clearance attests authorization to publish; the underlying factual claim is not adjudicated by DOPSR.'
 timeline:
 - id: t1
   added_date: '2026-05-17'
@@ -306,13 +306,10 @@ credibility_notes: 'Lacatski is named in the Puthoff vacuum metric engineering r
   Lacatski wrote two books with kellerer ([`/people/colm-kelleher`]) and knap ([`/people/george-knapp`]) — "Skinwalkers at the Pentagon" and "Inside the US Government Covert UFO Program." Lacatski said in the Mystery interview that it took 14 months to get the stamp of approval from the DoD for public release of the book.
 
 
-  Lacatski as author of the page 1 statement about Lockheed Martin Space Systems Vice President Dr. James Ryder is documented in ([`/findings/lacatski-authorship-chain`]).
-
-
   In WEAPONIZED Episode 38 ([`/organizations/weaponized-podcast`]) Corbell read from chapter 9 of the 2023 book ([`/documents/inside-us-gov-covert-ufo-2023`]) about the 2011 Capitol building meeting where Lacatski posed a question that the United States was in possession of a craft of unknown origin and had successfully gained access to its interior. Lacatski said "the wording that you read is correct" and confirmed the meeting happened and it is "true yes." Lacatski said "you see I''m not speaking at all I''m not going beyond what it was what you read from the book."
 
 
-  In the Mystery interview ([`/organizations/klas-tv`]) in Las Vegas Lacatski said the program ([`/organizations/aatip`]) at the Pentagon ([`/organizations/dod`]) is "quite distinct" from his program at DIA. He named Bob Bigelow''s bass ([`/organizations/baass`]) at Bigelow Aerospace ([`/organizations/bigelow-aerospace`]) as the program contractor. Lacatski as author of the page 1 statement that named Lockheed Martin ([`/organizations/lockheed-martin`]) Space Systems Vice President Dr. James Ryder ([`/people/james-ryder`]) is documented in ([`/findings/lacatski-authorship-chain`]).
+  In the Mystery interview ([`/organizations/klas-tv`]) in Las Vegas Lacatski said the program ([`/organizations/aatip`]) at the Pentagon ([`/organizations/dod`]) is "quite distinct" from his program at DIA. He named Bob Bigelow''s bass ([`/organizations/baass`]) at Bigelow Aerospace ([`/organizations/bigelow-aerospace`]) as the program contractor. Lacatski as author of the page 1 statement named Lockheed Martin ([`/organizations/lockheed-martin`]) Space Systems Vice President Dr. James Ryder ([`/people/james-ryder`]).
 
 
   In WEAPONIZED PART 1 Lacatski said he was creator and DIA program manager of the follow-on Kona Blue program (KBP) — his first statement on Kona Blue in the books and interviews so far. He said deliberately false documents about AAWSAP and Kona Blue are in government files and that he reported some to the DOD/DOW Inspector General. He said AARO is a disinformation campaign "steering the direction of the conversation," refused two AARO meeting requests, and reported a former AARO deputy director publicly disparaging the UAP and paranormal connection — "they were looking for werewolves." Lacatski said the books are his disclosure — the four books are Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program Initial Revelations, the new New Insights, and the approved future book Future Visions. Books are "approved for release by the Department of Defense or War."
@@ -714,7 +711,7 @@ quotes:
   source:
     path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md
     location: '[33:51]–[34:05]'
-  significance: Lacatski's first-person attestation that he visited the Pax River facility while it was under construction — "I've been there. Yes, I've seen the facility, but it was uh just built." Direct corroboration material for the [`/findings/pax-river-scif-fiscal-triangulation`] finding.
+  significance: Lacatski's first-person attestation that he visited the Pax River facility while it was under construction — "I've been there. Yes, I've seen the facility, but it was uh just built."
   context: WEAPONIZED EP 114 2026-04-08; Lacatski responding to Corbell question about Pax River — Corbell sets up the question by noting Rep. Tim Burchett ([`/people/tim-burchett`]) has been visiting facilities historically said to hold non-human intelligence craft, including Pax River
 - id: q37
   added_date: '2026-05-18'
@@ -916,12 +913,6 @@ entities_referenced:
   name: Mystery Wire 2021 book launch transcript
   wrap_path: /transcripts/mysterywire-lacatski-kelleher-knapp-2021
   context_summary: The earliest on-record Lacatski media (2021-10-12); promotional press cycle for "Skinwalkers at the Pentagon"
-- id: e25
-  added_date: '2026-05-17'
-  entity_type: finding
-  name: Lacatski Authorship Chain — SD004 Page-1 Statement
-  wrap_path: /findings/lacatski-authorship-chain
-  context_summary: The three-source attestation chain establishing Lacatski as the author of the DOPSR-cleared SD004 page-1 statement naming Lockheed Martin Space Systems VP James Ryder
 - id: e26
   added_date: '2026-05-17'
   entity_type: organization

@@ -93,6 +93,7 @@ from checks import corroboration_items as ck_corroboration_items
 from checks import cross_refs as ck_cross_refs
 from checks import does_not_establish as ck_does_not_establish
 from checks import entities_referenced as ck_entities_referenced
+from checks import entity_no_finding_or_investigation_refs as ck_entity_no_finding_or_investigation_refs
 from checks import establishes as ck_establishes
 from checks import finding_no_investigation_refs as ck_finding_no_investigation_refs
 from checks import finding_source_in_entity_node as ck_finding_source_in_entity_node
@@ -253,6 +254,7 @@ _ARTIFACT_CHECKS = [
     # Finding / investigation type-specific cross-cutting checks
     ck_finding_no_investigation_refs,
     ck_finding_source_in_entity_node,
+    ck_entity_no_finding_or_investigation_refs,
     ck_investigation_hypothesis_citation,
     ck_investigation_closure_path_when_paused,
     # Whole-artifact analytical checks

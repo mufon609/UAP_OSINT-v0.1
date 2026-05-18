@@ -129,7 +129,7 @@ Lawrence said crop circles are "possibly being created by divas of some kind, in
 
 ---
 
-### Ryder's most direct non-physical-phenomenon claim — abductions occur under continuous camera surveillance in locked rooms with no detected physical movement. "Whatever's happening is not happening physically." Couples the contemporary observation with the temporal-continuity claim — "those same descriptions go back 25 to 30,000 years, certainly back to Roman times." This passage stands in structural tension with the Lockheed-Bigelow physical-material custody allegation chain ([`/findings/lacatski-authorship-chain`]).
+### Ryder's most direct non-physical-phenomenon claim — abductions occur under continuous camera surveillance in locked rooms with no detected physical movement. "Whatever's happening is not happening physically." Couples the contemporary observation with the temporal-continuity claim — "those same descriptions go back 25 to 30,000 years, certainly back to Roman times."
 
 > [50:00] Interestingly enough, people who have been moved out of their rooms and flown out the window, women who've gone through that, have actually been investigated in sealed rooms where they go to bed and sleep and the room is locked from the outside. There are no windows in it. There are no doors in it. And they have cameras on them all the time. And those people do experience what I just described while in the room and the cameras and all of the sound pickups show nothing happened in the room except she snored or he snored that night. So whatever's happening is not happening physically. And it's also been shown that those same descriptions go back 25 to 30,000 years, certainly back to Roman times.
 
@@ -221,7 +221,3 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/lucis-trust`]
 - [`/organizations/lucis-trust-arcane-school`]
 - [`/organizations/safire-project`]
-
-### Findings
-
-- [`/findings/lacatski-authorship-chain`]
