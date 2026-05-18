@@ -28,9 +28,9 @@ from lib._common import normalize_for_compare
 CHECK_NAME = "coverage"
 
 
-def _truncate(s, n=80):
+def _truncate(s):
     s = s.replace("\n", " ").strip()
-    return s if len(s) <= n else s[:n] + "..."
+    return s if len(s) <= 80 else s[:80] + "..."
 
 
 def check(ctx):

@@ -18,6 +18,7 @@ from ._common import (
 from ._universal import (
     render_associated_nodes,
     render_corroboration,
+    render_description,
     render_preserved_disagreements,
     render_primary_source_contradictions,
     render_public_record_claims,
@@ -107,13 +108,6 @@ def render_event_summary(artifact, kind):
     if len(lines) == 4:
         lines.append("|  |  |")
     return "\n".join(lines) + "\n"
-
-
-def render_event_description(artifact):
-    body = (artifact.get("description") or "").strip()
-    if not body:
-        body = "<!-- TODO: populate `description` in the research artifact -->"
-    return f"## Description\n\n{body}\n"
 
 
 def _participant_row(e):
@@ -242,7 +236,7 @@ def render_body_event(artifact, kind):
     title = render_title_event(artifact).rstrip("\n") + "\n"
     sections = [
         render_event_summary(artifact, kind),
-        render_event_description(artifact),
+        render_description(artifact),
     ]
     if kind == "hearing":
         sections.extend([

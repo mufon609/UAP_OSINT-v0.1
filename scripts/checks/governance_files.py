@@ -137,7 +137,7 @@ def _check_template_frontmatter(path, rel, text, compatible_with, schema_block):
             check_name=CHECK_NAME)
 
 
-def _check_governance_doc_frontmatter(path, rel, text, compatible_with, schema_block):
+def _check_governance_doc_frontmatter(rel, text, compatible_with, schema_block):
     """Standard governance-doc frontmatter check via YAML parse."""
     fm, _ = parse_frontmatter(text)
 
@@ -226,4 +226,4 @@ def check(ctx):
                 path, rel, text, compatible_with, schema_block)
         else:
             yield from _check_governance_doc_frontmatter(
-                path, rel, text, compatible_with, schema_block)
+                rel, text, compatible_with, schema_block)

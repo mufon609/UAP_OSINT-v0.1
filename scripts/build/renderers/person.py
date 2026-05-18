@@ -295,14 +295,10 @@ def render_vouching_chain(artifact):
     return "\n".join(lines) + "\n"
 
 
-def render_credibility_notes(artifact, archetype):
+def render_credibility_notes(artifact):
     body = (artifact.get("credibility_notes") or "").strip()
     if not body:
         body = "<!-- TODO: populate `credibility_notes` in the research artifact -->"
-    # Whistleblower archetype: Vouching Chain renders as a separate H2
-    # after Credibility Notes (per the schema's required_sections
-    # ordering). Keep it as a standalone section to preserve the
-    # document structure.
     return f"## Credibility Notes\n\n{body}\n"
 
 
@@ -321,7 +317,7 @@ def render_body_person(artifact, archetype):
         render_timeline(artifact),
         render_relationships(artifact),
         render_archetype_section(artifact, archetype),
-        render_credibility_notes(artifact, archetype),
+        render_credibility_notes(artifact),
     ]
     if archetype == "whistleblower":
         sections.append(render_vouching_chain(artifact))

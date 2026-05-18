@@ -77,7 +77,6 @@ NAV_NOISE = frozenset({
     "Back", "Banner", "Blog", "Buy",
     "Cite", "Citation", "Citations", "Click", "Close", "Contact",
     "Cookie", "Cookies", "Copy", "Copyright",
-    "Click",
     "Email", "English",
     "Facebook", "Find", "Follow", "Footer", "Forward",
     "Get", "Google",
