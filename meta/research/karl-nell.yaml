@@ -1,0 +1,641 @@
+id: meta/research/karl-nell
+type: research-artifact
+schema_version: 1
+target_node: people/karl-nell
+status: active
+created: '2026-05-18'
+
+primary_sources:
+- path: news/thedebrief-grusch-2023.html
+  format: html
+- path: government/solfoundation-ufo-enigma-nell-2025.pdf
+  format: pdf
+- path: transcripts/nell-sol-foundation-2023-downloaded.md
+  format: transcript
+- path: transcripts/nell-salt-2024-downloaded.md
+  format: transcript
+
+document_intrinsic:
+  full_name: 'Karl E. Nell'
+  aliases: ['Karl Nell', 'Col. Karl E. Nell', 'Colonel Karl E. Nell', 'Carl Nell']
+  nationality: ''
+  profession: 'retired United States Army colonel; aerospace executive'
+
+context_extrinsic: {}
+
+background: 'Karl E. Nell is a recently retired United States Army ([`/organizations/us-army`]) colonel and aerospace executive. The Sol Foundation policy paper "The UFO Enigma: A Call for US Government Disclosure" (Spring 2025), in its About the Author section, states that Nell served as advisor to the Vice Chief of Staff of the Army, deputy chief of staff for United States Africa Command ([`/organizations/africom`]), commander of the 336th Expeditionary Military Intelligence Brigade, and Technical Intelligence operations officer (C/J-2) for the Combined Joint Captured Materiel Exploitation Center in Iraq, and that his last active-duty assignment was as Army director supporting the UAP Task Force ([`/organizations/uaptf`]). The same source states that Nell has held positions with Bell Laboratories ([`/organizations/bell-laboratories`]), Lockheed Martin ([`/organizations/lockheed-martin`]), and Northrop Grumman TASC ([`/organizations/northrop-grumman`]), among others, and is the Chief Executive Officer of StarDustX Materials, Inc. ([`/organizations/stardustx-materials`]), a VC-backed startup focused on metamaterial analysis and design. At SALT iConnections NY on May 21, 2024, Nell stated he had a four-year scholarship to Penn, a degree in electrical engineering, was sent overseas by the Army to do engineering projects in Europe, worked in Army space command, commanded a satellite ground station, spent time at Wright Patterson Air Force Base, received a Master in mechanical engineering, a Master in strategic studies, and graduate work in computer science. He further stated he was vice president and general manager of a Northern Virginia firm, commanded at every grade level through Brigade in the Reserve, and was fortunate to stand up the Army''s newest Expeditionary Military Intelligence Brigade.'
+
+top_relevance: 'Karl Nell served as the Army''s liaison for the UAP Task Force from 2021 to 2022 and worked with David Grusch ([`/people/david-grusch`]) there per The Debrief ([`/organizations/the-debrief`]) article "Intelligence Officials Say U.S. Has Retrieved Craft of Non-Human Origin" by Leslie Kean ([`/people/leslie-kean`]) and Ralph Blumenthal ([`/people/ralph-blumenthal`]) of June 5, 2023. The Sol Foundation ([`/organizations/sol-foundation`]) policy paper About the Author section states his last active-duty assignment was as Army director supporting the UAP Task Force. Nell characterizes Grusch as "beyond reproach" and states that Grusch''s assertion concerning the existence of a terrestrial arms race occurring sub-rosa over the past eighty years focused on reverse engineering technologies of unknown origin is fundamentally correct, as is the indisputable realization that at least some of these technologies of unknown origin derive from non-human intelligence — both statements published in The Debrief on June 5, 2023. Nell is the author of the Sol Foundation policy paper "The UFO Enigma: A Call for US Government Disclosure" (Spring 2025), which states the rationale for the Unidentified Anomalous Phenomena Disclosure Act ([`/documents/uap-disclosure-act-2024`]) reintroduced in 2024 by Senators Mike Rounds ([`/people/mike-rounds`]) and Chuck Schumer ([`/people/chuck-schumer`]), the proposed Review Board of nine distinguished citizens, eminent domain over technology of unknown origin, and a benchmark-driven controlled disclosure plan. Nell spoke at the Sol Foundation Symposium at Stanford in 2023 on the Schumer Amendment and controlled disclosure (transcript [`/transcripts/nell-sol-foundation-2023`]); and at SALT iConnections NY on May 21, 2024, where he stated there is zero doubt that non-human intelligence exists and has been interacting with humanity (transcript [`/transcripts/nell-salt-2024`]).'
+
+credibility_notes: 'The Debrief article by Leslie Kean and Ralph Blumenthal of June 5, 2023 reports that in a 2022 performance evaluation, Laura A. Potter, Deputy Chief of Staff for Intelligence, Headquarters, Department of the Army, described Nell as "an officer with the strongest possible moral compass." This is the only third party Army Intelligence performance evaluation on Nell in the primary sources here. Nell stated at SALT iConnections NY on May 21, 2024 that non-human intelligence exists, has been interacting with humanity, that this interaction is not new and is ongoing, and that there are unelected people in the government who are aware of that. Nell stated "zero doubt" as the confidence level for that claim. The underlying NHI claim is not corroborated by other primary sources here; Nell''s institutional access (UAP Task Force, 2021 to 2022) is corroborated by The Debrief article and the Sol Foundation policy paper About the Author, but the NHI claim itself is based on Nell''s on the record assertion alone.
+
+
+  Nell vouched for David Grusch ([`/people/david-grusch`]) in The Debrief: he characterizes Grusch as "beyond reproach" (a personal claim) and states that Grusch''s assertion concerning a sub-rosa arms race for reverse engineering technologies of unknown origin is fundamentally correct, with at least some derived from non-human intelligence (a claim on the core point of the Grusch disclosure). Both statements appear in the same Debrief article.
+
+
+  Nell is the author of the Sol Foundation policy paper "The UFO Enigma" (Spring 2025), published as Volume 2, Number 2 of the Sol Foundation Policy Papers series. The paper addresses the rationale for the UAP Disclosure Act, the proposed Review Board of nine distinguished citizens, eminent domain over technology of unknown origin, and benchmark-driven controlled disclosure. Nell''s current commercial position is Chief Executive Officer of StarDustX Materials, Inc., a VC-backed startup focused on metamaterial analysis and design, per the Spring 2025 Sol Foundation policy paper About the Author.
+
+  '
+
+quotes:
+- id: q1
+  added_date: '2026-05-18'
+  text: |
+    His assertion concerning the existence of a terrestrial arms race occurring sub-rosa over the past eighty years focused on reverse engineering technologies of unknown origin is fundamentally correct, as is the indisputable realization that at least some of these technologies of unknown origin derive from non-human intelligence,
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: '¶ beginning "His assertion concerning the existence of a terrestrial arms race"'
+  context: 'The Debrief, ''Intelligence Officials Say U.S. Has Retrieved Craft of Non-Human Origin'' by Leslie Kean and Ralph Blumenthal, June 5, 2023; Nell quoted in his capacity as the retired Army Colonel who worked with Grusch on the UAP Task Force'
+  observation_type: relayed
+  statement_date: '2023-06-05'
+  significance: 'Nell''s substantive on-record attestation supporting the core factual claim of the Grusch disclosure — that a decades-long sub-rosa arms race for reverse engineering technologies of unknown origin exists, and that at least some such technologies derive from non-human intelligence. This is the strongest institutional-peer endorsement of the Grusch evidentiary thesis in the archived disclosure-era record; cited as vc2 in the Grusch artifact Vouching Chain.'
+
+- id: q2
+  added_date: '2026-05-18'
+  text: |
+    His last active-duty assignment was as Army director
+    supporting the UAP Task Force. An executive in the aerospace industry, he has held positions
+    with Bell Laboratories, Lockheed Martin, and Northrop Grumman TASC, among others. He
+    currently serves as the Chief Executive Officer of StarDustX Materials, Inc., a multimillion-dol-lar VC-backed startup focused on metamaterial analysis and design.
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 19, About the Author'
+  context: 'Sol Foundation policy paper ''The UFO Enigma: A Call for US Government Disclosure'', Vol. 2 No. 2 Spring 2025, About the Author section. Self-authored institutional bio'
+  observation_type: relayed
+  statement_date: '2025-05-12'
+  significance: 'Self-authored Sol Foundation policy paper About the Author passage anchoring three current career attestations: last active-duty assignment as Army director supporting the UAP Task Force; aerospace-industry positions at Bell Laboratories, Lockheed Martin, and Northrop Grumman TASC; current CEO role at StarDustX Materials, Inc. The hyphenated form "multimillion-dol-lar" is a PDF page-break artifact preserved verbatim per the verbatim-quote check. Earlier Army roles in the same paragraph (moderniza-tion advisor to the Vice Chief of Staff, AFRICOM deputy chief of staff, 336th Expeditionary MI Brigade commander, C/J-2 Iraq) interleave with a PDF dropped-cap and page-break artifact and are captured in background prose rather than in this quote.'
+
+- id: q3
+  added_date: '2026-05-18'
+  text: |
+    The public must now entertain the possibili-ty that three independent witnesses who held highly sensitive positions in the US military and
+           performed distinguished national service are either willfully prevaricating under penalty of
+           perjury, suffering from an undiagnosed and shared psychosis, or actually relating the facts as
+           they understand them. Regardless of which alternative is true, the national security interests
+           of the United States are unequivocally at stake.
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 7, ¶3'
+  context: 'Sol Foundation policy paper, Section 2 The UAP Disclosure Act; passage discussing the July 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]) testimony by Naval aviators David Fravor ([`/people/david-fravor`]) and Ryan Graves ([`/people/ryan-graves`]) and NGA whistleblower David Grusch'
+  observation_type: relayed
+  statement_date: '2025-05-12'
+  significance: 'Nell''s three-option framing of the David Fravor ([`/people/david-fravor`]) / Ryan Graves ([`/people/ryan-graves`]) / David Grusch ([`/people/david-grusch`]) July 2023 House Oversight UAP hearing ([`/events/2023-07-26-house-uap-hearing`]) testimony — willful perjury, shared psychosis, or factual relation — published in the Sol Foundation policy paper. The framing positions the national-security stake as independent of which option is true, narrowing the inferential space available to the reader. Hyphenated "possibili-ty" is a PDF page-break artifact preserved verbatim.'
+
+- id: q4
+  added_date: '2026-05-18'
+  text: |
+    The UAP Disclosure Act would create an independent Review Board of nine distinguished
+           citizens at the uppermost tiers of their professions to serve as that control group. Nominated
+           by the President and confirmed by the Senate, the Board would have the responsibility of
+           centralizing and assessing all extant government information concerning UFOs, with the
+           intent of creating public transparency, assessing the defense and national security issues raised
+           by the objects, and setting the agenda for international cooperation.
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 4, Executive Summary, ¶3'
+  context: 'Sol Foundation policy paper Executive Summary; description of the UAP Disclosure Act Review Board mechanism'
+  observation_type: relayed
+  statement_date: '2025-05-12'
+  significance: 'Nell''s authoritative description of the UAP Disclosure Act Review Board — nine members at uppermost professional tiers, Presidential nomination and Senate confirmation, centralized record assessment, transparency / national-security / international-cooperation mandate. The structural mechanism Nell advocates for in the white paper and previously articulated in his 2023 Sol Symposium remarks on the Schumer Amendment.'
+
+- id: q5
+  added_date: '2026-05-18'
+  text: |
+    The Disclosure Act reverses this decision (which possibly violated the Federal
+           Acquisition Regulation) by directing the executive branch to invoke eminent domain over any
+           and all technology and materials that “incorporate science and technology that lack prosaic
+           attribution or known means of human manufacture.”
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 15, ¶2'
+  context: 'Sol Foundation policy paper Section 6 The Matter of Eminent Domain; passage on whistleblower testimony that technology and materials of nonhuman origin were transferred to private aerospace companies'
+  observation_type: relayed
+  statement_date: '2025-05-12'
+  significance: 'Nell''s articulation of the eminent domain provision in the UAP Disclosure Act — directing the executive branch to invoke eminent domain over technology and materials lacking prosaic attribution or known means of human manufacture. The provision (per Nell) was driven by whistleblower testimony that nonhuman-origin material was transferred to private aerospace companies possibly in violation of Federal Acquisition Regulations.'
+
+- id: q6
+  added_date: '2026-05-18'
+  text: |
+    middle-management level in this formerly recalcitrant department, is inadequate and ill-suit-ed to addressing the national strategic objectives for which the Review Board was conceived.
+    Therefore, AARO and the Review Board are neither competitive nor redundant, but are in
+    fact complementary.
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 18, ¶1'
+  context: 'Sol Foundation policy paper Section 7 Recommendations; closing argument framing AARO ([`/organizations/aaro`])''s institutional positioning relative to the Review Board mandate'
+  observation_type: relayed
+  statement_date: '2025-05-12'
+  significance: 'Nell''s Sol Foundation policy paper characterization of AARO ([`/organizations/aaro`]) as middle-management-level and inadequate to the national strategic objectives — and his framing of AARO and the Review Board as complementary rather than competitive. The full passage opens at the foot of page 17 ("Even if one believes that current Department of Defense efforts are effective, its AARO, designed to function at a") and continues across the page break to page 18 starting at "middle-management level" — this quote captures the page-18 portion. Hyphenated "ill-suit-ed" is a PDF page-break artifact preserved verbatim.'
+
+- id: q7
+  added_date: '2026-05-18'
+  text: |
+    [00:01:46] The opportunity to come in and advise uh Army uh Futures command the largest reorganization in the Army Reserve uh since uh since really 1973 on how the Army could be more effective and uh my last assignment uh was involved with the UAP task force which maybe is the most
+  source:
+    path: transcripts/nell-salt-2024-downloaded.md
+    location: '[01:46]'
+  context: 'SALT iConnections NY, May 21, 2024; Nell''s opening biographical remarks summarizing his Army career immediately before disclosing his UAP Task Force assignment'
+  observation_type: relayed
+  statement_date: '2024-05-21'
+  significance: 'Nell''s on-record self-attestation of his UAP Task Force role as his "last assignment", spoken at SALT iConnections NY May 2024. The framing places the UAP Task Force in succession to his role advising Army Futures Command. The auto-caption ortho­graphy is preserved verbatim per repository discipline for transcript-provenance auto-caption.'
+
+- id: q8
+  added_date: '2026-05-18'
+  text: |
+    [00:02:05] Aopo uh for this discussion and so Carl here's here's the million-dollar question do you believe that a higher form of non-human intelligence has visited this planet right so non-human intelligence exists non-human intelligence has been interacting with Humanity this interaction is not new and
+  source:
+    path: transcripts/nell-salt-2024-downloaded.md
+    location: '[02:05]'
+  context: 'SALT iConnections NY, May 21, 2024; interviewer asks Nell whether he believes a higher form of non-human intelligence has visited the planet. Nell''s answer begins mid-segment.'
+  observation_type: relayed
+  statement_date: '2024-05-21'
+  significance: 'Nell''s direct on-record assertion that non-human intelligence exists, has been interacting with humanity, and that this interaction is ongoing. The single most-cited public NHI position by Nell. Spoken in a financial-industry conference venue (SALT iConnections NY), not a classified or congressional setting. The auto-caption preserves the interviewer''s mid-segment question framing and the start of Nell''s answer.'
+
+- id: q9
+  added_date: '2026-05-18'
+  text: |
+    [00:02:28] It's been ongoing and there are unelected people in the government that are aware of that and and so Carl that is quite a bold statement um I'm wondering and I'm curious how confident are you that that is true there's zero doubt and and Carl what evidence have you seen what was the moment where you
+  source:
+    path: transcripts/nell-salt-2024-downloaded.md
+    location: '[02:28]'
+  context: 'SALT iConnections NY, May 21, 2024; interviewer follow-up on Nell''s NHI assertion and Nell''s confidence-level reply'
+  observation_type: relayed
+  statement_date: '2024-05-21'
+  significance: 'Nell''s "zero doubt" attestation. The single most-quoted Nell phrase from SALT 2024 in subsequent press coverage. Attests Nell''s subjective confidence in his preceding claim that non-human intelligence exists and has been interacting with humanity. Auto-caption preserves the interleaved question-and-answer structure.'
+
+- id: q10
+  added_date: '2026-05-18'
+  text: |
+    [00:00:30] Thank you thank you very much it's really a pleasure and an honor to be here and uh just the sincerest thanks to Gary and Peter and Saul for for putting this together and it's really a combination of I think Decades of work of all the people in the audience and
+  source:
+    path: transcripts/nell-sol-foundation-2023-downloaded.md
+    location: '[00:30]'
+  context: 'Sol Foundation Inaugural Symposium, Stanford University, November 17–18, 2023; Nell''s opening acknowledgments. "Gary" is auto-caption for Garry Nolan; "Peter" is Peter Skafish; "Saul" is auto-caption for Sol Foundation.'
+  observation_type: relayed
+  statement_date: '2023-11-18'
+  significance: 'Opening of Nell''s Sol Symposium talk. Anchors the date, venue, and Nell''s acknowledgement of Sol co-founders Garry Nolan and Peter Skafish. Naming-quirk preservation: "Gary"/"Saul" are auto-caption artifacts.'
+
+- id: q11
+  added_date: '2026-05-18'
+  text: |
+    [00:08:42] Door nonpublic but the other point about this which is very mature and very gratifying and again I think links to what Diana was saying about this sort of collaboration and emergent way of working the legislative branch is not making themselves the antagonist of the Executive Branch the legislation
+  source:
+    path: transcripts/nell-sol-foundation-2023-downloaded.md
+    location: '[08:42]'
+  context: 'Sol Foundation Symposium 2023; Nell on the Schumer Amendment''s institutional framing — legislative and executive branches as joint subjects of the disclosure-oversight problem'
+  observation_type: relayed
+  statement_date: '2023-11-18'
+  significance: 'Nell''s framing of the Schumer Amendment as positioning the legislative and executive branches as jointly underinformed about the UAP topic, rather than as adversaries. The framing is consistent with the Sol Foundation white paper''s Review Board mandate but expressed here in extempore form.'
+
+- id: q12
+  added_date: '2026-05-18'
+  text: |
+    [00:23:47] Discussion where all the information is just dumped out there by an adversary or uh non-human intelligence to create societal disruption all right so this is an important important slide because if we want uh to facilitate this board doing its work then uh the barriers that
+  source:
+    path: transcripts/nell-sol-foundation-2023-downloaded.md
+    location: '[23:47]'
+  context: 'Sol Foundation Symposium 2023; Nell on catastrophic disclosure — information dump by an adversary or by non-human intelligence creating societal disruption — as the alternative to controlled disclosure'
+  observation_type: relayed
+  statement_date: '2023-11-18'
+  significance: 'Nell''s catastrophic-disclosure framing — the scenario the controlled-disclosure plan exists to prevent. Names the two candidate dump scenarios (adversary, or non-human intelligence). This framing is consistent with the Sol Foundation white paper''s sociological-impact discussion but is expressed at the Symposium in extempore form.'
+
+entities_referenced:
+- id: e1
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'David Grusch'
+  wrap_path: /people/david-grusch
+  context_summary: 'NGA / NRO whistleblower vouched for by Nell as "beyond reproach" and substantively endorsed by Nell on the existence of a non-human-origin reverse-engineering program; Nell''s UAP Task Force colleague 2021–2022'
+  references:
+  - quote_id: q1
+  - quote_id: q3
+- id: e2
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'David Fravor'
+  wrap_path: /people/david-fravor
+  context_summary: 'Naval aviator and Nimitz UAP encounter eyewitness; referenced by Nell as one of three witnesses whose July 2023 House hearing testimony grounds the national-security stake'
+  references:
+  - quote_id: q3
+- id: e3
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Ryan Graves'
+  wrap_path: /people/ryan-graves
+  context_summary: 'Naval aviator and UAP eyewitness; referenced by Nell as one of three witnesses whose July 2023 House hearing testimony grounds the national-security stake'
+  references:
+  - quote_id: q3
+- id: e4
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Garry Nolan'
+  wrap_path: /people/garry-nolan
+  context_summary: 'Sol Foundation co-founder; thanked by Nell in opening of Sol Symposium remarks (auto-caption "Gary")'
+  references:
+  - quote_id: q10
+- id: e5
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Peter Skafish'
+  wrap_path: /people/peter-skafish
+  context_summary: 'Sol Foundation co-founder; thanked by Nell in opening of Sol Symposium remarks'
+  references:
+  - quote_id: q10
+- id: e6
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Leslie Kean'
+  wrap_path: /people/leslie-kean
+  context_summary: 'Co-author of The Debrief article (June 5, 2023) that carries Nell''s two voucher quotes about Grusch'
+  references: []
+- id: e7
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Ralph Blumenthal'
+  wrap_path: /people/ralph-blumenthal
+  context_summary: 'Co-author of The Debrief article (June 5, 2023) that carries Nell''s two voucher quotes about Grusch'
+  references: []
+- id: e10
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Chuck Schumer'
+  wrap_path: /people/chuck-schumer
+  context_summary: 'Then–Senate Majority Leader; co-sponsor of the UAP Disclosure Act (Schumer Amendment) — central subject of Nell''s 2023 Sol Symposium remarks and the Spring 2025 Sol Foundation white paper'
+  references: []
+- id: e11
+  added_date: '2026-05-18'
+  entity_type: person
+  name: 'Mike Rounds'
+  wrap_path: /people/mike-rounds
+  context_summary: 'Co-sponsor of the UAP Disclosure Act with Schumer; named in Nell''s 2025 Sol Foundation white paper'
+  references: []
+- id: e17
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'UAP Task Force'
+  wrap_path: /organizations/uaptf
+  context_summary: 'The Unidentified Aerial Phenomena Task Force; Nell''s last active-duty assignment 2021–2022 (Army director / Army liaison)'
+  references:
+  - quote_id: q2
+  - quote_id: q7
+- id: e18
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'Sol Foundation'
+  wrap_path: /organizations/sol-foundation
+  context_summary: 'Publisher of Nell''s May 2025 policy paper "The UFO Enigma"; venue of Nell''s November 2023 Symposium remarks; co-founded by Garry Nolan and Peter Skafish'
+  references:
+  - quote_id: q10
+- id: e19
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'The Debrief'
+  wrap_path: /organizations/the-debrief
+  context_summary: 'Publisher of the Kean / Blumenthal June 5, 2023 article that carries Nell''s two voucher quotes about Grusch'
+  references: []
+- id: e20
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'StarDustX Materials, Inc.'
+  wrap_path: /organizations/stardustx-materials
+  context_summary: 'Nell''s current employer per the Sol Foundation white paper About the Author; multimillion-dollar VC-backed metamaterial-analysis startup; Nell is CEO'
+  references:
+  - quote_id: q2
+- id: e21
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'United States Army'
+  wrap_path: /organizations/us-army
+  context_summary: 'Nell''s military service; rank attained Colonel; multiple assignments named in the Sol Foundation white paper About the Author'
+  references:
+  - quote_id: q2
+  - quote_id: q7
+- id: e22
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'United States Africa Command'
+  wrap_path: /organizations/africom
+  context_summary: 'AFRICOM; Nell served as deputy chief of staff per Sol Foundation white paper About the Author'
+  references:
+  - quote_id: q2
+- id: e23
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'Bell Laboratories'
+  wrap_path: /organizations/bell-laboratories
+  context_summary: 'Nell''s post-Army-active-service industry employer; named in the Sol Foundation white paper About the Author and self-described at SALT 2024'
+  references:
+  - quote_id: q2
+- id: e24
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'Lockheed Martin'
+  wrap_path: /organizations/lockheed-martin
+  context_summary: 'Industry employer of Nell per Sol Foundation white paper About the Author; SALT 2024 self-description names "locki missiles in space" (Lockheed Missiles & Space)'
+  references:
+  - quote_id: q2
+- id: e25
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'Northrop Grumman'
+  wrap_path: /organizations/northrop-grumman
+  context_summary: 'Industry employer of Nell per Sol Foundation white paper About the Author (Northrop Grumman TASC); SALT 2024 names "northr grman"'
+  references:
+  - quote_id: q2
+- id: e26
+  added_date: '2026-05-18'
+  entity_type: organization
+  name: 'All-Domain Anomaly Resolution Office'
+  wrap_path: /organizations/aaro
+  context_summary: 'AARO; characterized by Nell in his Sol Foundation white paper as middle-management-level and inadequate to the strategic objectives for which the Review Board was conceived'
+  references:
+  - quote_id: q6
+- id: e27
+  added_date: '2026-05-18'
+  entity_type: document
+  name: 'Unidentified Anomalous Phenomena Disclosure Act of 2024'
+  wrap_path: /documents/uap-disclosure-act-2024
+  context_summary: 'The Schumer Amendment / UAP Disclosure Act co-sponsored by Senators Rounds and Schumer; central subject of Nell''s Sol Foundation white paper and 2023 Sol Symposium remarks'
+  references:
+  - quote_id: q4
+  - quote_id: q5
+- id: e28
+  added_date: '2026-05-18'
+  entity_type: document
+  name: 'The UFO Enigma: A Call for US Government Disclosure'
+  wrap_path: /documents/solfoundation-ufo-enigma-nell-2025
+  context_summary: 'Nell''s Sol Foundation policy paper, Vol. 2 No. 2 Spring 2025; canonical published statement of Nell''s policy framework'
+  references:
+  - quote_id: q2
+  - quote_id: q3
+  - quote_id: q4
+  - quote_id: q5
+  - quote_id: q6
+- id: e29
+  added_date: '2026-05-18'
+  entity_type: event
+  name: '2023-07-26 House Oversight UAP hearing'
+  wrap_path: /events/2023-07-26-house-uap-hearing
+  context_summary: 'House Committee on Oversight and Government Reform hearing where Fravor, Graves, and Grusch testified; referenced in Nell''s Sol Foundation white paper as the witness-testimony moment grounding national-security stakes'
+  references:
+  - quote_id: q3
+
+affiliations:
+- id: a2
+  added_date: '2026-05-18'
+  organization_path: /organizations/uaptf
+  role: 'Army director / Army liaison for the UAP Task Force'
+  period_start: '2021'
+  period_end: '2022'
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: '¶ beginning "Karl E. Nell, a recently retired Army Colonel"'
+  note: 'Per The Debrief article (Kean and Blumenthal, June 5, 2023), Nell was the Army''s liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there. The Sol Foundation white paper About the Author attests the same period in different language — "Army director supporting the UAP Task Force" — corroborating the role with a slight role-label variation between "liaison" (Debrief) and "Army director" (Nell''s self-authored bio).'
+- id: a3
+  added_date: '2026-05-18'
+  organization_path: /organizations/stardustx-materials
+  role: 'Chief Executive Officer'
+  period_start: ''
+  period_end: ''
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 19, About the Author'
+  note: 'Per Nell''s self-authored Sol Foundation white paper About the Author (Spring 2025), Nell "currently serves as the Chief Executive Officer of StarDustX Materials, Inc., a multimillion-dollar VC-backed startup focused on metamaterial analysis and design." Start date not attested in source.'
+- id: a4
+  added_date: '2026-05-18'
+  organization_path: /organizations/bell-laboratories
+  role: 'engineer (industry employee)'
+  period_start: ''
+  period_end: ''
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 19, About the Author'
+  note: 'Per the Sol Foundation white paper About the Author, Nell held positions at Bell Laboratories among other industry employers. SALT 2024 talk attests Nell was at Bell Labs during "the tri vesture" (auto-caption for the AT&T trivestiture) — historically the 1996 AT&T trivestiture creating Lucent Technologies, NCR, and the residual AT&T. Period start / end not attested directly.'
+- id: a5
+  added_date: '2026-05-18'
+  organization_path: /organizations/lockheed-martin
+  role: 'industry employee'
+  period_start: ''
+  period_end: ''
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 19, About the Author'
+  note: 'Per the Sol Foundation white paper About the Author, Nell held positions at Lockheed Martin among other industry employers. SALT 2024 talk attests Nell worked at "locki missiles in space" (auto-caption for Lockheed Missiles & Space) after leaving Bell Labs. Period start / end not attested directly.'
+- id: a6
+  added_date: '2026-05-18'
+  organization_path: /organizations/northrop-grumman
+  role: 'industry employee (Northrop Grumman TASC)'
+  period_start: ''
+  period_end: ''
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 19, About the Author'
+  note: 'Per the Sol Foundation white paper About the Author, Nell held positions at Northrop Grumman TASC. SALT 2024 talk attests Nell worked at "northr grman" (auto-caption for Northrop Grumman). Period start / end not attested directly.'
+- id: a7
+  added_date: '2026-05-18'
+  organization_path: /organizations/sol-foundation
+  role: 'author (Policy Papers, Vol. 2 No. 2, Spring 2025)'
+  period_start: '2023'
+  period_end: ''
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'p. 19, About the Author'
+  note: 'Sol Foundation policy-paper author; Nell delivered remarks at the Sol Foundation Inaugural Symposium at Stanford on November 17–18, 2023 (transcript [`/transcripts/nell-sol-foundation-2023`]) and the Sol Foundation published his policy paper "The UFO Enigma" as Vol. 2 No. 2 of its Policy Papers in Spring 2025. Period start 2023 anchored to the Symposium appearance; end open.'
+
+program_involvement:
+- id: pi1
+  added_date: '2026-05-18'
+  program: '/organizations/uaptf'
+  role: 'Army director / Army liaison'
+  period_start: '2021'
+  period_end: '2022'
+  evidentiary_basis: 'primary-source'
+  confidence: 'high'
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: '¶ beginning "Karl E. Nell, a recently retired Army Colonel"'
+  note: 'The Debrief article (Kean and Blumenthal, June 5, 2023) states Nell was the Army''s liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there. The Sol Foundation policy paper About the Author (Spring 2025), authored by Nell, states the same period in different language — Army director supporting the UAP Task Force. Two-source corroboration with a role-label variance: liaison (reporter framing) versus Army director (self-attested bio).'
+
+timeline:
+- id: t1
+  added_date: '2026-05-18'
+  date: '2021'
+  event: 'Begins assignment as Army director / Army liaison for the UAP Task Force ([`/organizations/uaptf`]), working with David Grusch ([`/people/david-grusch`])'
+  category: 'role'
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: '¶ beginning "Karl E. Nell, a recently retired Army Colonel"'
+- id: t2
+  added_date: '2026-05-18'
+  date: '2022'
+  event: 'Concludes UAP Task Force assignment; described in a Department of the Army performance evaluation by Laura A. Potter, Deputy Chief of Staff for Intelligence, Headquarters, Department of the Army, as "an officer with the strongest possible moral compass"'
+  category: 'role'
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: '¶ beginning "In a 2022 performance evaluation, Laura A. Potter"'
+- id: t3
+  added_date: '2026-05-18'
+  date: '2023-06-05'
+  event: 'Quoted in The Debrief ([`/organizations/the-debrief`]) article by Leslie Kean ([`/people/leslie-kean`]) and Ralph Blumenthal ([`/people/ralph-blumenthal`]); characterizes Grusch as "beyond reproach" and on the core arms-race / non-human intelligence claim states Grusch is "fundamentally correct"'
+  category: 'publication'
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: '¶ beginning "Karl E. Nell, a recently retired Army Colonel"'
+- id: t4
+  added_date: '2026-05-18'
+  date: '2023-11-18'
+  event: 'Delivers remarks "Karl Nell on The Schumer Amendment & Controlled Disclosure" at the Sol Foundation ([`/organizations/sol-foundation`]) Inaugural Symposium, Stanford University; transcript [`/transcripts/nell-sol-foundation-2023`]'
+  category: 'publication'
+  source:
+    path: transcripts/nell-sol-foundation-2023-downloaded.md
+    location: 'full remarks'
+- id: t5
+  added_date: '2026-05-18'
+  date: '2024-05-21'
+  event: 'Delivers remarks at SALT iConnections NY conference; on-record states there is "zero doubt" that non-human intelligence exists and has been interacting with humanity; transcript [`/transcripts/nell-salt-2024`]'
+  category: 'publication'
+  source:
+    path: transcripts/nell-salt-2024-downloaded.md
+    location: 'full remarks'
+- id: t6
+  added_date: '2026-05-18'
+  date: '2025-05-12'
+  event: 'Sol Foundation ([`/organizations/sol-foundation`]) publishes Nell''s policy paper "The UFO Enigma: A Call for US Government Disclosure" as Volume 2, Number 2 of its Policy Papers series ([`/documents/solfoundation-ufo-enigma-nell-2025`])'
+  category: 'publication'
+  source:
+    path: government/solfoundation-ufo-enigma-nell-2025.pdf
+    location: 'cover; CreationDate Mon May 12 11:57:15 2025 EDT'
+
+relationships:
+- id: r1
+  added_date: '2026-05-18'
+  person_path: /people/david-grusch
+  relationship: 'UAP Task Force colleague (2021–2022) and on-record voucher; characterized Grusch as "beyond reproach" and substantively affirmed the core factual claim of Grusch''s disclosure'
+  source:
+    path: news/thedebrief-grusch-2023.html
+    location: '¶ beginning "Karl E. Nell, a recently retired Army Colonel"'
+  note: 'Per The Debrief article (Kean and Blumenthal, June 5, 2023), Nell was the Army''s liaison for the UAP Task Force from 2021 to 2022 and worked with Grusch there. The article carries two Nell attestations about Grusch — the "beyond reproach" character vouching and the substantive "fundamentally correct" / "non-human intelligence" attestation. See [`/people/david-grusch`] Vouching Chain rows vc1 and vc2 for the canonical placement of the voucher pair.'
+- id: r2
+  added_date: '2026-05-18'
+  person_path: /people/garry-nolan
+  relationship: 'Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks'
+  source:
+    path: transcripts/nell-sol-foundation-2023-downloaded.md
+    location: '[00:30]'
+  note: 'Nell''s Sol Foundation Symposium opening remarks thank "Gary and Peter and Saul for for putting this together" — "Gary" is the auto-caption rendering of Garry Nolan, "Peter" is Peter Skafish, and "Saul" is the auto-caption rendering of Sol Foundation. Nolan and Skafish are the co-founders Nell collaborated with on the symposium organization and on the subsequent policy-paper series.'
+- id: r3
+  added_date: '2026-05-18'
+  person_path: /people/peter-skafish
+  relationship: 'Sol Foundation co-founder peer; thanked by Nell in opening of Sol Foundation Symposium 2023 remarks'
+  source:
+    path: transcripts/nell-sol-foundation-2023-downloaded.md
+    location: '[00:30]'
+  note: 'See r2 — co-thanked by Nell with Nolan as Sol Foundation co-founder in the Symposium opening.'
+
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-18'
+  observed: 'Saul'
+  canonical: 'Sol'
+  location: 'transcripts/nell-sol-foundation-2023-downloaded.md, multiple lines'
+  source_path: transcripts/nell-sol-foundation-2023-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Sol" (Sol Foundation) as "Saul". Auto-caption artifact; preserve in quotes.'
+- id: nq2
+  added_date: '2026-05-18'
+  observed: 'Gary'
+  canonical: 'Garry'
+  location: 'transcripts/nell-sol-foundation-2023-downloaded.md, multiple lines'
+  source_path: transcripts/nell-sol-foundation-2023-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Garry Nolan" with first-name spelling "Gary". Auto-caption artifact; preserve in quotes.'
+- id: nq3
+  added_date: '2026-05-18'
+  observed: 'Lou alzando'
+  canonical: 'Luis Elizondo'
+  location: 'transcripts/nell-sol-foundation-2023-downloaded.md, line beginning "[00:02:43]"'
+  source_path: transcripts/nell-sol-foundation-2023-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Luis Elizondo" as "Lou alzando" in Sol Symposium transcript. Auto-caption artifact; preserve in quotes.'
+- id: nq4
+  added_date: '2026-05-18'
+  observed: 'L Alando'
+  canonical: 'Luis Elizondo'
+  location: 'transcripts/nell-sol-foundation-2023-downloaded.md, line beginning "[00:12:13]"'
+  source_path: transcripts/nell-sol-foundation-2023-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'Second auto-caption rendering of "Luis Elizondo" as "L Alando" in same transcript. Distinct from "Lou alzando" because the caption mishears the name differently at a different point in the talk.'
+- id: nq5
+  added_date: '2026-05-18'
+  observed: 'Chris melon'
+  canonical: 'Chris Mellon'
+  location: 'transcripts/nell-sol-foundation-2023-downloaded.md, line beginning "[00:02:43]"'
+  source_path: transcripts/nell-sol-foundation-2023-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Chris Mellon" with lowercase second-name "melon". Auto-caption artifact; preserve in quotes.'
+- id: nq6
+  added_date: '2026-05-18'
+  observed: 'Carl'
+  canonical: 'Karl'
+  location: 'transcripts/nell-salt-2024-downloaded.md, multiple lines'
+  source_path: transcripts/nell-salt-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'SALT 2024 interviewer addresses Nell as "Carl" rather than "Karl". Auto-caption artifact preserving the interviewer''s spoken address; preserve in quotes.'
+- id: nq7
+  added_date: '2026-05-18'
+  observed: 'Paul helier'
+  canonical: 'Paul Hellyer'
+  location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:03:32]"'
+  source_path: transcripts/nell-salt-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Paul Hellyer" as "Paul helier". Auto-caption artifact; preserve in quotes.'
+- id: nq8
+  added_date: '2026-05-18'
+  observed: 'ham Eed'
+  canonical: 'Haim Eshed'
+  location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:03:32]"'
+  source_path: transcripts/nell-salt-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of former Israel space-directorate head Haim Eshed as "ham Eed". Auto-caption artifact; preserve in quotes.'
+- id: nq9
+  added_date: '2026-05-18'
+  observed: 'Lou Alzando'
+  canonical: 'Luis Elizondo'
+  location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:03:32]"'
+  source_path: transcripts/nell-salt-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Luis Elizondo" as "Lou Alzando" in the SALT 2024 talk. Third distinct auto-caption rendering of the same canonical name across the two transcripts (alongside "Lou alzando" and "L Alando" in Sol Symposium).'
+- id: nq10
+  added_date: '2026-05-18'
+  observed: 'truck Schumer'
+  canonical: 'Chuck Schumer'
+  location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:04:08]"'
+  source_path: transcripts/nell-salt-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Chuck Schumer" as "truck Schumer". Auto-caption artifact; preserve in quotes.'
+- id: nq11
+  added_date: '2026-05-18'
+  observed: 'marubio'
+  canonical: 'Marco Rubio'
+  location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:04:08]"'
+  source_path: transcripts/nell-salt-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Marco Rubio" as "marubio". Auto-caption artifact; preserve in quotes.'
+- id: nq12
+  added_date: '2026-05-18'
+  observed: 'rri Patterson Air Force Base'
+  canonical: 'Wright-Patterson Air Force Base'
+  location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:00:17]"'
+  source_path: transcripts/nell-salt-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Wright-Patterson Air Force Base" as "rri Patterson Air Force Base". Auto-caption artifact; preserve in quotes.'
+- id: nq13
+  added_date: '2026-05-18'
+  observed: 'Eric Klein'
+  canonical: 'Eric Cline'
+  location: 'transcripts/nell-salt-2024-downloaded.md, line beginning "[00:10:04]"'
+  source_path: transcripts/nell-salt-2024-downloaded.md
+  resolution: disputed
+  note: 'Auto-caption rendering of "Eric Cline" (historian, author of "1177 BC: The Year Civilization Collapsed") as "Eric Klein". Nell also attributes Cline to "Princeton University" in the same passage; Eric Cline is actually a professor at George Washington University. The caption preserves a name typo that overlaps with Nell''s separate institutional misattribution; resolution flagged as disputed pending further attestation.'
+
+rumors: []
