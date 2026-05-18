@@ -148,16 +148,6 @@ treat the non-URL response as failure, or store a distinct
 
 Surfaced: 2026-05-17 repo audit.
 
-### C5 — `scripts/checks/section_rules.py:88` — `requires_quote_attribution` check is all-or-nothing
-
-[BUG] `if quotes > 0 and attributions == 0:` only fires when no
-attribution rows exist. A section with 3 block-quotes and 1
-attribution passes silently — the rule's intent is "each block-quote
-is paired with an attribution," so the condition is missing a
-`quotes > attributions` branch.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C6 — `scripts/checks/{contradictions,investigation_hypothesis_citation}.py` — silent skip when target list is empty
 
 [BUG] `contradictions.py:84` and

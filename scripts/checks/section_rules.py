@@ -35,16 +35,42 @@ def _section_has_table(section_text):
 
 
 def _count_quote_blocks_and_attributions(section_text):
-    """Count ``> blockquote`` lines and ``| Source | …`` attribution rows
-    in a section. Used to enforce the structural rule that a section
-    flagged ``requires_quote_attribution`` either has no quotes (empty
-    section is fine) or has a Source row for each quote — the renderer
-    always pairs a block-quote with an attribution table whose Source
-    row points at the cited archived file.
+    """Returns (blocks, attributions) for a section.
+
+    ``blocks`` is the number of distinct contiguous block-quote runs
+    (each `>`-prefixed run between blank/non-quote lines counts as
+    one). ``attributions`` is the sum of two surfaces produced by
+    the renderer:
+
+      - ``| Source |`` rows from the long-form attribution table
+      - italicized inline attribution lines (``_…_`` on a line by
+        themselves) emitted by the compact-quote renderer for
+        sub-threshold quotes
+
+    The two surfaces are equivalent for the
+    `requires_quote_attribution` rule's purpose — both pair a
+    block-quote with its source attribution. A partial-attribution
+    case (3 blocks, 1 source row, 0 italic lines) trips the gate.
     """
-    quotes = sum(1 for line in section_text.splitlines() if line.strip().startswith(">"))
-    attributions = sum(1 for line in section_text.splitlines() if line.strip().startswith("| Source |"))
-    return quotes, attributions
+    lines = section_text.splitlines()
+    blocks = 0
+    in_block = False
+    for line in lines:
+        is_quote = line.strip().startswith(">")
+        if is_quote and not in_block:
+            blocks += 1
+            in_block = True
+        elif not is_quote and line.strip() != "":
+            in_block = False
+    source_rows = sum(
+        1 for line in lines if line.strip().startswith("| Source |")
+    )
+    italic_lines = 0
+    for line in lines:
+        s = line.strip()
+        if len(s) > 2 and s.startswith("_") and s.endswith("_"):
+            italic_lines += 1
+    return blocks, source_rows + italic_lines
 
 
 def _extract_h3_subsections(section_text):
@@ -84,12 +110,13 @@ def check(ctx):
                     )
 
         if rules.get("requires_quote_attribution"):
-            quotes, attributions = _count_quote_blocks_and_attributions(section_text)
-            if quotes > 0 and attributions == 0:
+            blocks, attributions = _count_quote_blocks_and_attributions(section_text)
+            if blocks > attributions:
                 yield Issue(
                     ctx.rel, "error",
-                    f"Section '{section_name}' has quotes but no attribution "
-                    f"blocks (each block-quote needs a `| Source | … |` row "
-                    f"pointing at the cited archived file)",
+                    f"Section '{section_name}' has {blocks} block-quote(s) "
+                    f"but only {attributions} attribution surface(s) "
+                    f"(each block-quote needs either a `| Source | … |` row "
+                    f"or an italicized inline attribution line)",
                     check_name=CHECK_NAME,
                 )
