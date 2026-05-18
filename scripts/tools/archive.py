@@ -99,6 +99,16 @@ def check_wayback(url):
 
 
 def submit_wayback(url):
+    """Submit ``url`` to SPN. Returns ``(ok, result)``:
+      ok=True  → SPN redirected to a confirmed web.archive.org snapshot
+                 URL; result is that URL (timestamp extractable via
+                 ``wayback_url_date``).
+      ok=False → SPN response did not redirect to web.archive.org (could
+                 not confirm the snapshot was actually created), or a
+                 network / HTTP error occurred; result carries the
+                 diagnostic string. The next sweep's CDX check is the
+                 authoritative re-query.
+    """
     try:
         req = urllib.request.Request(
             f"{SAVE_API}{url}",
@@ -108,7 +118,11 @@ def submit_wayback(url):
             final = resp.url if hasattr(resp, "url") else resp.geturl()
             if "web.archive.org" in final:
                 return True, final
-            return True, f"Submitted — check {WAYBACK_BASE}*/{url}"
+            return False, (
+                f"SPN response did not redirect to web.archive.org "
+                f"(got: {final}) — snapshot not confirmed; next CDX "
+                f"sweep will re-check"
+            )
     except urllib.error.HTTPError as e:
         return False, f"HTTP {e.code}"
     except (urllib.error.URLError, TimeoutError) as e:
@@ -223,10 +237,13 @@ def main():
                 time.sleep(15)  # rate limit
                 ok, result = submit_wayback(url)
                 if ok:
-                    e["wayback_date"] = datetime.now().strftime("%Y-%m-%d")
+                    e["wayback_date"] = (
+                        wayback_url_date(result)
+                        or datetime.now().strftime("%Y-%m-%d")
+                    )
                     e["archive_status"] = e.get("archive_status", 0) | 2
                     submitted += 1
-                    print(f"           SUBMITTED")
+                    print(f"           SUBMITTED ({result})")
                 else:
                     errors += 1
                     print(f"           FAILED: {result}")

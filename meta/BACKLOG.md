@@ -94,20 +94,6 @@ cost.
 C1 retired 2026-05-17 — shipped as `scripts/tools/extract-firefox-cookies.py`;
 ID held open per the gap-stable retirement rule.
 
-### C3 — `scripts/tools/archive.py:99-102, 133` — Wayback submit records unconfirmed snapshots as archived
-
-[BUG] `submit_wayback` returns `(True, "Submitted — check …")` when
-the SPN response URL doesn't contain `web.archive.org`;
-`cmd_submit_one` then calls `wayback_url_date(result)` (returns None
-on the non-URL fallback string), falls through to
-`datetime.now().strftime("%Y-%m-%d")`, and stamps the manifest with
-`wayback_date = <today>` plus `archive_status |= 2`. The manifest
-records "Wayback archived" for snapshots that may not exist. Either
-treat the non-URL response as failure, or store a distinct
-`pending-confirmation` state that a follow-up sweep can resolve.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C12 — Silent `except` swallow at four parser/IO sites
 
 [BANDAID] `scripts/build/validate.py:287-288`,
