@@ -7,7 +7,7 @@ don't match any local id warn (may be external — contributor verifies);
 no error so legitimate cross-artifact refs aren't false-positive'd.
 
 Sections to scan are derived from
-``schema.yaml::types.research-artifact.conditional_keys`` plus the
+``schema-research-artifact.yaml::conditional_keys`` plus the
 universal entry-bearing top-level sections (``quotes``,
 ``entities_referenced``, ``naming_quirks``). Schema is the single
 source of truth — when a new conditional section ships, this check

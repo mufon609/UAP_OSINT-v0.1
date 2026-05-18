@@ -43,8 +43,9 @@ def render_title_media(artifact):
 def render_media_summary(artifact, kind):
     """Media Summary table — kind-agnostic row emission from
     document_intrinsic + context_extrinsic + primary_sources + manifest
-    sha256 lookup. Field conventions documented in schema.yaml's
-    document_intrinsic comment for media. Rows with empty values are
+    sha256 lookup. Field conventions documented in
+    schema-research-artifact.yaml's required_keys section
+    (document_intrinsic field comment, media subsection). Rows with empty values are
     skipped — the Summary adapts to what the source and contributor
     populated rather than showing "N/A" placeholders. `kind` comes
     from the node frontmatter (photo / video / audio / imagery-other)

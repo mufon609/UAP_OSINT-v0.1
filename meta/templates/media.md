@@ -81,8 +81,9 @@ corpus: {{corpus}}
 
      Columns:
        Aspect — one of [duration | encoding | metadata | content |
-                provenance | other]; see schema.yaml
-                media_versioning_entry for the per-aspect semantics
+                provenance | other]; see
+                schema-research-artifact.yaml::media_versioning_entry
+                for the per-aspect semantics
        Parent — short observation of the parent (derivation_of) node
                 — length is whatever the source attests
        This   — short observation of this derivative — length is

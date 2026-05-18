@@ -6,8 +6,8 @@ Produces meta/research/{slug}.yaml with:
   - required top-level keys populated with defaults
   - empty lists for each content section
   - `rumors` section present only when target_node type ∈
-    {person, organization, event, location} (per schema.yaml
-    research-artifact.conditional_keys)
+    {person, organization, event, location} (per
+    schema-research-artifact.yaml::conditional_keys)
 
 Usage:
   research-scaffold.py --target {type}/{slug}
@@ -56,7 +56,7 @@ RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 
 # Type-set conditionals (which sections to scaffold for which target
 # type / archetype / kind) come from
-# schema.yaml::types.research-artifact.conditional_keys via the same
+# schema-research-artifact.yaml::conditional_keys via the same
 # ``evaluate_required_when`` helper the validators use, so schema edits
 # propagate to the scaffolder automatically.
 
@@ -150,10 +150,6 @@ def build_primary_sources_list(source_paths, manifest):
     return entries
 
 
-# Format derivation moved to ``lib._common.format_from_path`` — single
-# source of truth shared with manifest.py CLI.
-
-
 def _read_target_frontmatter(node_type, slug):
     """Read the target node's frontmatter and return it as a dict (or
     empty dict on failure). Shared helper used for archetype (person)
@@ -203,7 +199,7 @@ def build_scaffold(node_type, slug, source_paths, manifest):
 
     Universal top-level keys are populated unconditionally. Type /
     archetype / kind-conditional sections are dispatched schema-driven
-    from ``schema.yaml::conditional_keys`` via ``evaluate_required_when``
+    from ``schema-research-artifact.yaml::conditional_keys`` via ``evaluate_required_when``
     (the same helper the validators use).
     """
     today = date.today().isoformat()

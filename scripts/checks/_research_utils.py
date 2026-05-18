@@ -8,7 +8,7 @@ factor that shape so each per-check module isn't a ~50-line copy of
 the same scaffolding.
 
 ``section_in_scope`` reads
-``schema.yaml::types.research-artifact.conditional_keys`` and answers
+``schema-research-artifact.yaml::conditional_keys`` and answers
 "should this section be present on this artifact?" — schema-driven
 gate consumed by every per-section check, paired with ``iff_section``
 which emits placement errors for sections in the wrong scope. Single
@@ -24,7 +24,7 @@ from checks import Issue
 
 def section_in_scope(ctx, section_name):
     """Return True if ``section_name`` should be present on this
-    research artifact per ``schema.yaml`` conditional_keys rules.
+    research artifact per ``schema-research-artifact.yaml::conditional_keys`` rules.
 
     Reads ``ctx.schema.types.research-artifact.conditional_keys`` and
     evaluates the section's ``required_when_any_of`` list against

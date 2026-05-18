@@ -30,7 +30,8 @@ from ._universal import (
 # Row-label mapping for Overview fact-table rows. Keyed by
 # document_intrinsic field name; value is the display label for the
 # table row. Rows emit only for populated fields — empty keys skipped.
-# Per-kind convention lives in schema.yaml document_intrinsic comment.
+# Per-kind convention lives in schema-research-artifact.yaml's
+# required_keys section (document_intrinsic field comment).
 _ORG_OVERVIEW_LABELS = {
     # Common
     "full_name":                "Full Name",

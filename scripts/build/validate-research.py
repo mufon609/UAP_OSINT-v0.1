@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
-Validate research artifacts against meta/schema.yaml.
+Validate research artifacts against meta/schema-research-artifact.yaml
+(merged into the schema dict by scripts/lib/_common.py::load_schema()).
 
 Structural checks only — does NOT compare against the target node
 (that's scripts/build/review-coverage.py).
@@ -208,7 +209,7 @@ _ARTIFACT_CHECKS = [
     # Universal top-level metadata
     ck_artifact_top_level,
     # Schema-driven iff-section dispatch (placement errors based on
-    # schema.yaml::conditional_keys). Per-section checks below gate
+    # schema-research-artifact.yaml::conditional_keys). Per-section checks below gate
     # on section_in_scope and skip per-entry validation when the
     # section is wrongly placed; iff_section carries the placement
     # error so each placement issue produces one diagnostic, not many.

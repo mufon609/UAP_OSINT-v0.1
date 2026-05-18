@@ -1,0 +1,1116 @@
+# Primary-source investigation knowledge-base — research-artifact schema
+#
+# Specification for the structured-data layer backing every content
+# node (`meta/research/{slug}.yaml`). Loaded by
+# `scripts/lib/_common.py::load_schema()`, which splices this file's
+# top-level keys into `schema["types"]["research-artifact"]` so
+# callers see a single merged dict. Cross-references use the form
+# `schema-research-artifact.yaml::X`.
+
+path_prefix: meta/research/
+format: yaml
+
+# Closed-enum values for the artifact itself. ``status_values`` covers
+# the artifact's own ``status`` field. ``evidentiary_basis_values`` and
+# ``confidence_values`` are shared classifications used by both
+# ``program_involvement_entry`` and ``vouching_chain_entry`` — declared
+# once here so the two consumers read from a single source rather than
+# duplicating the lists in each entry definition.
+status_values: [active, archived]
+evidentiary_basis_values:
+  - primary-source
+  - sworn-testimony
+  - on-record
+  - self-attested
+  - secondary
+confidence_values: [high, medium, low]
+
+# Top-level required keys — the research artifact is a flat YAML dict
+# (no markdown frontmatter / body distinction since it's pure YAML).
+required_keys:
+  - id                    # meta/research/{slug}; must match file path
+  - type                  # literal: research-artifact
+  - schema_version        # validated against schema.compatible_with
+  - target_node           # {type}/{slug} of the node this artifact backs
+  - status                # active | archived
+  - created               # YYYY-MM-DD
+  # ``description`` is type-conditional and lives outside this universal
+  # required_keys list. REQUIRED on document / transcript / media /
+  # event / organization / finding / location artifacts (enforced by
+  # scripts/checks/artifact_top_level.py's DESCRIPTION_REQUIRED_TYPES
+  # allowlist; renders as the node's `## Description` section).
+  # OPTIONAL on investigation artifacts (renderer wires it up but a
+  # missing key is permitted). UNRENDERED on person artifacts — the
+  # person body renderer emits `## Background`, `## UAP Relevance`,
+  # and `## Credibility Notes` from dedicated prose fields
+  # (`background`, `top_relevance`, `credibility_notes`) and never
+  # calls render_description. The scaffolder
+  # (scripts/build/research-scaffold.py) skips emitting this key for
+  # person artifacts; contributors should not populate it on person
+  # artifacts (the content will not reach readers — put person-level
+  # synthesis prose in the three dedicated fields).
+  - primary_sources       # list — sources this artifact draws on
+  - document_intrinsic    # dict — facts the primary source(s) state internally.
+  #   Per-type key conventions (read by the Phase II renderer):
+  #     document:  internal_title, internal_date, authors_per_document,
+  #                classification, classification_markings_on_document, pages
+  #     person:    full_name, aliases, nationality, profession
+  #                (renders as the `## Identity` table rows)
+  #     media:     internal_title, capture_date, duration, dimensions,
+  #                file_format, file_size, camera_device,
+  #                embedded_metadata (dict or prose summary),
+  #                color_mode, codec
+  #                (renders as `## Media Summary` table rows, paired
+  #                with context_extrinsic fields `display_title`,
+  #                `release_date`, `primary_source_url` and the
+  #                primary_sources[0].path / manifest sha256 for
+  #                Local Archive / SHA256)
+  #     event, transcript: use event_intrinsic / context_extrinsic
+  #                respectively for their kind-specific metadata;
+  #                document_intrinsic remains an optional metadata
+  #                sidecar on these types but isn't rendered.
+  #     organization: per-kind conventions (all key sets optional;
+  #                populate what the primary source(s) attest):
+  #       gov (agency/office): internal_name, full_name, statutory_authority,
+  #                    established_date, terminated_date,
+  #                    parent_organization_path, current_director_path,
+  #                    head_title (optional opt-in label override for
+  #                    current_director_path — e.g., "Under Secretary",
+  #                    "Acting Director", "Secretary", "Commander"; when
+  #                    absent, the Overview row labels current_director_path
+  #                    as "Director" — accurate for agency-kind heads,
+  #                    less so for under-secretariats / departments /
+  #                    services / commands; backward-compatible),
+  #                    office_type (agency|office|program|lab|commission),
+  #                    jurisdiction
+  #       gov (military-unit): designator, unit_class
+  #                    (squadron|air-wing|ship-class|division), parent_unit_path,
+  #                    home_station, commissioned_date, decommissioned_date,
+  #                    mission
+  #       gov (military-service): full_name, branch_type, founded_date
+  #       gov-contractor: contracting_agency, period_of_performance,
+  #                    primary_counterparty_path, registered_status,
+  #                    cage_code
+  #       private: founded_date, org_type
+  #                    (501c3|LLC|Corp|academic|media|nonprofit),
+  #                    headquarters, current_leadership_path, public_status
+  #                (renders as `## Overview` fact table — rows emitted
+  #                for whichever keys are populated; empty keys skipped.
+  #                Labeled-synthesis narrative belongs in `description`.)
+  #     location:  full_name, alternate_names (list), location_type,
+  #                geographic_location, coordinates (lat/long —
+  #                decimal degrees string, e.g. "40.2584, -109.8879"),
+  #                legal_description (PLSS township/range or other
+  #                jurisdiction-appropriate legal anchor),
+  #                ownership_history_summary, scope_significance
+  #                (renders as `## Overview` fact table; empty keys
+  #                skipped. Location has no kinds, so a single key set.
+  #                Status comes from frontmatter; contributors don't
+  #                duplicate it into document_intrinsic.)
+  #   Every key is a fact the primary source(s) attest to. Facts not
+  #   attested in a primary source don't belong here — they belong in
+  #   `description` (synthesis, labeled) or don't enter the record.
+  - context_extrinsic     # dict — contextual metadata (hearing date, etc.)
+  - quotes                # list — verbatim statements from primary sources.
+  #   The universal evidentiary primitive across all node types; filtered
+  #   at render time for type-specific section rendering (Statements on
+  #   person, Key Testimony on hearings, Key Passages elsewhere). No
+  #   separate `claims[]` layer — a contributor-synthesized claim layer
+  #   created a drift surface that mechanical checks couldn't catch;
+  #   eliminated repo-wide. Cross-entity synthesis goes on finding
+  #   nodes.
+  - entities_referenced   # list — every named person/org/event/doc/location
+  - naming_quirks         # list — source-specific oddities (typos, alt spellings)
+# Audit trail / history: git log and git diff on the artifact file
+# are authoritative. No in-artifact iteration log. Entry lifecycle
+# fields (superseded_by / contradicted_by / corroborated_by) provide
+# content-versioning pointers that remain independent of edit history.
+
+# Type-conditional keys — present only on research artifacts whose
+# target_node type / archetype / kind matches the declared rule(s).
+# Consumed by scripts/checks/iff_section.py (placement-error emitter)
+# + scripts/checks/_research_utils.py::section_in_scope (gate helper
+# used by per-section checks to skip per-entry validation when the
+# section is wrongly placed).
+#
+# Grammar: each entry declares ``required_when_any_of: [list]``. Each
+# list element is a rule whose fields are AND-combined; the list as
+# a whole is OR-combined. So a section is in scope iff ANY rule
+# matches, and a rule matches iff ALL its fields match.
+#
+# Rule fields (all optional within a rule; absent fields don't constrain):
+#   target_node_type_in: [list]      — target_type must be in list
+#   target_node_archetype_in: [list] — target_archetype must be in list
+#   target_node_kind_in: [list]      — target_kind must be in list
+#
+# Rationale for the grammar (vs. flat OR'd top-level keys): some
+# sections require AND-combination of constraints. ``hearing`` is
+# both an event kind and a transcript kind; ``witnesses_testimony``
+# belongs only on event-hearings, not transcript-hearings, so the
+# rule must constrain BOTH type=event AND kind=hearing. The flat
+# OR-grammar can't express this without losing other sections'
+# legitimate disjunctions (corroboration_items: eyewitness-person
+# OR encounter-event). The any-of-list grammar handles both shapes
+# uniformly.
+conditional_keys:
+  rumors:
+    required_when_any_of:
+      - target_node_type_in: [person, organization, event, location]
+    # Captures widely-reported claims circulating in public discourse
+    # that lack primary-source support in this artifact
+    # (fabrication-prevention mechanism).
+  timeline:
+    required_when_any_of:
+      - target_node_type_in: [person, organization, event, finding]
+    # Aggregated chronological dated facts about the node's subject.
+    # On finding artifacts, the timeline list may be empty (non-
+    # temporal patterns omit it; renderer auto-suppresses the
+    # Timeline section). Populated when the finding documents a
+    # pattern that itself has temporal structure (cumulative
+    # attestations, denial patterns over time, fiscal-data
+    # triangulation across years).
+    # Entries carry `date`, `event`, `source`, and on person artifacts
+    # `category` (affiliation / role / observation / testimony /
+    # publication / clearance / incident / filing / other). Node
+    # renderer emits in chronological order; the chronological-ordering check
+    # confirms the rendered Timeline table is earliest-first.
+  corroboration_items:
+    required_when_any_of:
+      - target_node_archetype_in: [eyewitness]
+      - target_node_kind_in: [encounter]
+    # Other observers of events this person witnessed (on eyewitness
+    # person artifacts) OR observers of this encounter (on encounter
+    # event artifacts). Same entry shape in both contexts. Cross-
+    # reference surface; NOT a statement surface. Renders as
+    # `## Corroboration`.
+  program_involvement:
+    required_when_any_of:
+      - target_node_archetype_in: [institutional-actor]
+    # Programs / roles / evidentiary basis. Metadata surface;
+    # NOT a statement surface. Renders as `## Program Involvement`.
+  publication_record:
+    required_when_any_of:
+      - target_node_archetype_in: [reporter]
+    # Published works by this person. Cross-reference surface.
+    # Renders as `## Publication Record`.
+  vouching_chain:
+    required_when_any_of:
+      - target_node_archetype_in: [whistleblower]
+    # Named attestations supporting the whistleblower's credibility.
+    # Cross-reference surface. Renders as a standalone
+    # `## Vouching Chain` H2 section between Credibility Notes and
+    # Associated Nodes — see render_vouching_chain in
+    # build-from-research.py.
+  background:
+    required_when_any_of:
+      - target_node_type_in: [person]
+    # Prose string (1–2 paragraphs) describing who the person is and
+    # their career. Renders as the `## Background` section.
+  top_relevance:
+    required_when_any_of:
+      - target_node_type_in: [person]
+    # Prose string (one paragraph) describing why this person is in
+    # the repository. Renders as the `## UAP Relevance` section.
+  affiliations:
+    required_when_any_of:
+      - target_node_type_in: [person]
+    # List of organizational affiliations with role/period. Renders as
+    # the `## Affiliations` section (with Confirmed / Flagged subsections).
+  relationships:
+    required_when_any_of:
+      - target_node_type_in: [person]
+    # List of inter-person relationships. Renders as the
+    # `## Relationships` section (with Confirmed / Flagged subsections).
+  credibility_notes:
+    required_when_any_of:
+      - target_node_type_in: [person]
+    # Prose string (short analytical paragraphs). Renders as the
+    # `## Credibility Notes` section. For whistleblower archetypes,
+    # the standalone `## Vouching Chain` section follows immediately
+    # after Credibility Notes (rendered from `vouching_chain[]`,
+    # NOT inlined into Credibility Notes content) — see
+    # render_vouching_chain in build-from-research.py.
+  event_intrinsic:
+    required_when_any_of:
+      - target_node_type_in: [event]
+    # Dict of event-specific metadata. Per-kind conventions:
+    #   hearing:   hearing_title, committee, session, congress_number,
+    #              date, location, chair
+    #   encounter: location_path, date, duration, weather,
+    #              instruments_involved
+    # Every entry is a fact the primary source(s) attest. Renders
+    # into the `## Event Summary` table.
+  participants:
+    required_when_any_of:
+      - target_node_type_in: [event]
+    # List of event participants. Each entry carries participant_path,
+    # role, capacity (witness-eyewitness / witness-whistleblower /
+    # witness-institutional / committee-member / observer / official /
+    # other), source. Renders as the `## Participants` section with
+    # hearing-kind sub-structure (Witnesses — Eyewitness Testimony /
+    # Whistleblower Testimony / Institutional Testimony / Committee
+    # Members) or flat Confirmed/Flagged table for encounters.
+  witnesses_testimony:
+    required_when_any_of:
+      - target_node_type_in: [event]
+        target_node_kind_in: [hearing]
+    # List of hearing witnesses with cross-references to their
+    # transcript and written-testimony nodes. Replaces the prior
+    # `What The Hearing Established` prose section — same evidentiary
+    # content via cross-reference. Renders as the `## Witnesses &
+    # Testimony` table.
+    #
+    # AND-combined: hearing is shared between event and transcript
+    # kinds, so the rule must constrain BOTH type=event AND
+    # kind=hearing to belong only on event-hearings.
+  speakers:
+    required_when_any_of:
+      - target_node_type_in: [transcript]
+    # List of speakers in this transcript (witness, chair, committee
+    # members, host, interviewer, etc.). Name + role + optional link
+    # to a person node. Cross-reference surface (NOT a statement
+    # surface — speakers' actual statements live in `quotes` and
+    # render as `## Key Passages`). Required on every transcript
+    # artifact regardless of kind; renders as `## Speakers`.
+  media_versioning:
+    required_when_any_of:
+      - target_node_type_in: [media]
+    # Per-aspect entries documenting how a derivative media node
+    # differs from its parent (per frontmatter `derivation_of`).
+    # Always present on media artifacts (empty list when media is
+    # canonical / original; populated when derivation_of is set on
+    # the node). Renderer emits the `## Media Versioning` section
+    # only when entries exist; canonical / original media node
+    # bodies omit the section entirely. Entry shape:
+    # media_versioning_entry below.
+  key_personnel:
+    required_when_any_of:
+      - target_node_type_in: [organization]
+    # Named personnel at the organization with sourced role + period.
+    # Cross-reference surface (NOT a statement surface — personnel
+    # statements live on their own person nodes). Renderer sub-groups
+    # by leadership_class (director / deputy / staff / advisor /
+    # other) with Confirmed / Flagged split. Entry shape:
+    # key_personnel_entry below.
+  contracts:
+    required_when_any_of:
+      - target_node_type_in: [organization]
+        target_node_kind_in: [gov-contractor]
+    # Structured contract records on gov-contractor organization
+    # artifacts. Each entry: contract_number, contracting_agency,
+    # period_start/end, counterparties, value, deliverables,
+    # source. Shape influenced by the AAWSAP / DIRD corpus
+    # (single large contract producing many technical deliverables
+    # as referenced docs). Renders as the `## Primary Contracts`
+    # table, chronologically ordered by period_start. Absent on
+    # gov and private kinds. Entry shape: contract_entry below.
+    #
+    # Type+kind AND-combined for symmetry with witnesses_testimony,
+    # though gov-contractor is currently unique to organizations.
+  org_relationships:
+    required_when_any_of:
+      - target_node_type_in: [organization]
+    # Organization-to-organization structured relationships
+    # (parent, subsidiary, predecessor, successor, contractor,
+    # contracting-agency, partner, other). Renders as the
+    # `## Relationships` section with Confirmed / Flagged split.
+    # Distinct from person `relationships` (person-to-person) and
+    # from `key_personnel` (org-to-person). Entry shape:
+    # org_relationship_entry below.
+  ownership_timeline:
+    required_when_any_of:
+      - target_node_type_in: [location]
+    # Chronological ownership transitions for the location. Each entry
+    # carries period_start, period_end (absent for current ownership),
+    # owner (free-text family / individual / entity name), owner_path
+    # (optional wrap_path when the owner has a repo node), use_status
+    # (what the property was used for during the period), source.
+    # Renders as the `## Ownership Timeline` table with chronological
+    # ordering enforced via the chronological-ordering check. Entry shape:
+    # ownership_timeline_entry below.
+  top_scope_activity:
+    required_when_any_of:
+      - target_node_type_in: [location]
+    # Documented institutional UAP-scope activity at this location
+    # (NIDS investigation, BAASS/AAWSAP contract work, Fugal-era
+    # research, etc.). Scope is institutional — popular paranormal
+    # lore without primary-source backing belongs in `rumors`, not
+    # here. Each entry: period_start, period_end (optional),
+    # activity, actor_paths (optional list of /people|/organizations),
+    # source. Renders as the `## UAP-Scope Activity` table. Entry
+    # shape: top_scope_activity_entry below.
+  location_relationships:
+    required_when_any_of:
+      - target_node_type_in: [location]
+    # Location-to-any-entity structured relationships. Heterogeneous
+    # target types — locations connect to owners (/people,
+    # /organizations), investigators, documented events, media,
+    # adjacent locations, and findings. Distinct from person
+    # `relationships` (person-to-person) and org_relationships
+    # (org-to-org) by virtue of the heterogeneous entity_path field.
+    # Renders as the `## Relationships` section with Confirmed /
+    # Flagged split. Entry shape: location_relationship_entry below.
+  pattern_statement:
+    required_when_any_of:
+      - target_node_type_in: [finding]
+    # One declarative sentence stating the cross-source pattern this
+    # finding documents. Cluster-neutral framing (table the pattern,
+    # do not presume which investigation consumes it). Renders as
+    # the `## Pattern Statement` section body.
+  establishes:
+    required_when_any_of:
+      - target_node_type_in: [finding]
+    # List of prose strings — explicit claims about what the
+    # convergence in evidence[] proves, each anchored to specific
+    # evidence quote ids in inline references (e.g. "Anchored claim
+    # citing q1 + q2"). Cluster-neutral. Renders as the `## What
+    # the Record Establishes` section as a bullet list.
+  does_not_establish:
+    required_when_any_of:
+      - target_node_type_in: [finding]
+    # List of prose strings — explicit caveats, gaps, and
+    # divergences the convergence does NOT reach. No speculation;
+    # what the record DOES NOT carry. Renders as the `## What the
+    # Record Doesn't Establish` section as a bullet list.
+  contradictions:
+    required_when_any_of:
+      - target_node_type_in: [finding]
+    # Optional list of structured divergences within the finding's
+    # scope. Each entry: question, positions[] (with evidence_id +
+    # position prose), note. Renders as the `## Apparent
+    # Contradictions` section ONLY when entries exist; section
+    # auto-suppressed for empty list. Entry shape:
+    # contradiction_entry below.
+  hypotheses:
+    required_when_any_of:
+      - target_node_type_in: [investigation]
+    # Numbered list of competing hypotheses the investigation tests.
+    # Each entry: id (h1 / h2 / h0 — h0 reserved for null
+    # hypothesis when meaningful), statement. Renders as the
+    # `## Hypotheses` section as a numbered list with hypothesis ids
+    # in bold (**H1** — ...). Entry shape: hypothesis_entry below.
+  cited_findings:
+    required_when_any_of:
+      - target_node_type_in: [investigation]
+    # Table of findings consumed by this investigation. Each entry
+    # references a finding by path, copies its pattern_statement for
+    # convenience, and carries a contributor-written relevance
+    # note explaining how the finding bears on the investigation.
+    # Renders as the `## Cited Findings` section. Entry shape:
+    # cited_finding_entry below.
+  hypothesis_evaluation:
+    required_when_any_of:
+      - target_node_type_in: [investigation]
+    # Per-hypothesis analytical evaluation. Each entry carries
+    # hypothesis_id (matches a hypotheses[] entry id), status (free-
+    # text verdict — "Substantiated as allegation on record" /
+    # "Not established by primary sources" / etc.), text (free-
+    # flowing analytical prose; speculation-tolerant), and sources[]
+    # (per-hypothesis rollup of finding paths or entity-node
+    # anchors). Renders as the `## Hypothesis Evaluation` section
+    # with per-hypothesis H3 subsections. Entry shape:
+    # hypothesis_evaluation_entry below.
+  open_questions:
+    required_when_any_of:
+      - target_node_type_in: [investigation]
+    # Questions the primary-source record doesn't resolve. Each
+    # entry: question, what_would_resolve. Renders as the
+    # `## Open Questions` section. Entry shape:
+    # open_question_entry below.
+  best_current_answer:
+    required_when_any_of:
+      - target_node_type_in: [investigation]
+    # The investigation's current integrated answer to the framing
+    # question. Speculation-tolerant; hedge-laden where the record
+    # requires it. Carries text (free-flowing prose) + sources[]
+    # rollup parallel to hypothesis_evaluation entries. Renders as
+    # the `## Best-Current Answer` section.
+  counter_evidence:
+    required_when_any_of:
+      - target_node_type_in: [investigation]
+    # Optional list of structured counter-evidence entries — when
+    # active findings contradict the investigation's hypotheses.
+    # Discrete section so disconfirming material is visible, not
+    # buried in Hypothesis Evaluation prose. Entry shape:
+    # counter_evidence_entry below.
+  closure_path:
+    required_when_any_of:
+      - target_node_type_in: [investigation]
+    # Required when investigation status == paused (externally
+    # blocked); optional otherwise. Documents what event would
+    # unblock the investigation. Entry shape: closure_path_entry
+    # below.
+  resolution_history:
+    required_when_any_of:
+      - target_node_type_in: [investigation]
+    # Optional list of evolution entries — when hypotheses have been
+    # added, refuted, or superseded over time. Most investigations
+    # do not need this; reserved for long-running investigations
+    # where evolution is itself load-bearing. Entry shape:
+    # resolution_history_entry below.
+
+# Primary-source list entries
+primary_sources_entry:
+  required: [path, format]
+  optional: [extracted_text_path, pdf_metadata, sha256_at_extraction]
+  # path: relative to sources/, must appear in sources/manifest.yaml
+  # sha256_at_extraction: captured SHA256 at extraction time (optional
+  #   audit trail; separate from manifest's live sha256 field)
+
+# --- Entry shapes per top-level list section ---
+
+# Every entry across quotes, entities_referenced, rumors,
+# naming_quirks carries the lifecycle fields below.
+entry_lifecycle_fields:
+  required: [id, added_date]
+  optional:
+    - superseded_by           # entry id within this artifact, or external ref
+    - contradicted_by         # same
+    - corroborated_by         # list of entry ids or external refs
+  # Content-lifecycle fields above support the Node Versioning
+  # discipline (originals preserved; corrections added alongside
+  # via Superseded By / Contradicted By pointers). Edit history
+  # lives in git log / git diff on the artifact file; no in-
+  # artifact iteration log.
+
+# Per-section entry shapes (each inherits lifecycle fields above):
+
+quote_entry:
+  required: [text, source]
+  optional: [significance, context, observation_type, category, statement_date, attestation_tier, attestor_path]
+  observation_type_values: [direct, relayed]
+  attestation_tier_values:
+    - sworn-oath
+    - sworn-perjury
+    - dopsr-cleared
+    - on-record
+    - self-attested
+    - secondary-source
+  # attestation_tier: scoped to finding artifacts. Renderer surfaces
+  #   the tier in the evidence row's verification block so readers
+  #   see evidentiary weight across mixed-tier convergence. Ignored
+  #   on non-finding artifacts.
+  # attestor_path: scoped to finding artifacts. Optional /people/...
+  #   or /organizations/... path of the named attester (when the
+  #   evidence row is a statement by an identifiable person/org).
+  #   Renderer surfaces as a wrap-link in the Attributed-to line.
+  #   Distinct from source.path (which points at the primary source
+  #   the attestation lives in).
+  # text: verbatim quote, YAML literal block (|) preserves multi-line
+  # source: object with path + location (single source per quote)
+  # context: where / when / under what circumstances the speaker
+  #   made the statement. Composed into the Attributed-to line of
+  #   the rendered verification block. Required on person artifacts
+  #   (enforced by scripts/checks/quotes.py) — every person-statement
+  #   needs to carry its venue. Optional on document / transcript /
+  #   media artifacts where the source document itself carries the
+  #   context.
+  # observation_type: direct | relayed
+  #   Required on every quote when target_node type is `person`.
+  #   `direct`  — first-hand sensory observation by the person
+  #               (Fravor's "I saw a Tic Tac-shaped object" — observed).
+  #   `relayed` — anything else the person asserted (things heard,
+  #               read, inferred, relayed from others, published).
+  #   Default: relayed. Enforced by scripts/checks/quotes.py.
+  #   Ignored on non-person artifacts (documents, events, etc.).
+  # category: free-text metadata tag (e.g., `filed-claim` on
+  #   whistleblower artifacts so the Claim Inventory renderer can
+  #   filter). Optional on all artifacts.
+  # statement_date: YYYY-MM-DD; YYYY-MM or YYYY tolerated for imprecise
+  #   events. Used by the Phase II renderer to sort every quote-bearing
+  #   section chronologically (ascending by date) — person Statements,
+  #   hearing Key Testimony, and Key Passages on documents / transcripts
+  #   / media / organizations / locations. Entries without
+  #   statement_date fall through to artifact-entry order. Partial
+  #   population produces mixed ordering and is the failure mode the
+  #   convention warns against (see meta/conventions.md "Key Passages
+  #   ordering"). Populate whenever the source attests a date; quotes
+  #   from legitimately undated material (some location quotes, some
+  #   reference documents) may omit the field.
+
+quote_source:
+  required: [path, location]
+  # path: appears in manifest.yaml
+  # location: anchors the quote within the source. Form depends on
+  #   the source's structural shape — government page + paragraph
+  #   (`p. N, ¶M`) for paginated PDFs, paragraph-only (`¶N`) for
+  #   unpaginated short documents, timestamp (`[MM:SS]` or
+  #   `[MM:SS]–[MM:SS]`) for caption/audio/video, page-only
+  #   (`p. N`) when no paragraph anchor is available. `lines N-M
+  #   of the extract` is permitted only when the pdftotext extract
+  #   IS the intended reference (rare; the `of the extract`
+  #   qualifier is required). Plain `lines N-M` (without `of the
+  #   extract`) refers to extraction-version-dependent line numbers
+  #   and is not a valid permanent ref — see `meta/conventions.md`
+  #   "Quote location refs: source-anchored, not extraction-
+  #   anchored".
+  #   Media artifacts accept flexible location forms on a SINGLE
+  #   quote entry type — timestamp (e.g., "0:23-0:45" for
+  #   audio/video speech), timestamp + in-frame coordinate (e.g.,
+  #   "HUD bottom-right, 0:12" for visible text in a video frame),
+  #   or spatial-only (e.g., "upper-right corner" for photo-visible
+  #   text). Contributor chooses the shape that best anchors the
+  #   passage; the renderer passes the string through verbatim and
+  #   the quote-verbatim check substring-matches the extracted source
+  #   text regardless.
+
+entity_entry:
+  required: [entity_type, name, wrap_path]
+  optional: [context_summary, references]
+  entity_type_values:
+    - person
+    - organization
+    - document
+    - event
+    - transcript
+    - media
+    - location
+    - finding
+    - investigation
+  # entity_type: person | organization | document | event | location | finding
+  # name: display name
+  # wrap_path: canonical repo path (/people/..., /organizations/..., etc.)
+  # references: list of {quote_id: X} — auto-populated by
+  #   scaffolder/build-from-research.py; contributors don't hand-maintain
+
+rumor_entry:
+  required: [claim, status]
+  optional: [observed_sources, note]
+  status_values: [not-primary-source-established, primary-source-disputed]
+  # claim: the circulating claim as prose
+  # status: not-primary-source-established | primary-source-disputed
+  #   Fabrication-prevention catalogue + reader-visible
+  #   transparency surface. Rumors are contributor-curated records
+  #   of widely-circulated claims so a future session doesn't
+  #   unconsciously recirculate them into node prose, AND so
+  #   readers landing on the node see the repository's stance on
+  #   each circulating claim rather than silent omission.
+  #   - not-primary-source-established: widely reported in public
+  #     discourse; no primary-source attestation archived in this
+  #     repository (yet). Renders as a `## Public-Record Claims
+  #     Without Primary Source` section on the node body. When a
+  #     primary source is eventually archived, graduate the rumor
+  #     to a quote / claim and delete the rumor entry.
+  #   - primary-source-disputed: primary sources actively refute
+  #     the claim. Renders as a `## Primary-Source Contradictions`
+  #     section on the node body — the contradiction itself is an
+  #     evidentiary finding investigators should see.
+  # observed_sources: list of descriptions — where the rumor
+  #   circulates. Renders as the "Circulates in:" line on both
+  #   render surfaces.
+  # note: free-text contributor synthesis. Renders as
+  #   "Primary-source refutation:" on disputed rumors and
+  #   "Investigator note:" on not-primary-source-established
+  #   rumors. Use it to record (a) what the rumor would need to
+  #   graduate to a confirmed quote and (b) where to look for a
+  #   primary source if one becomes archivable.
+
+timeline_entry:
+  required: [date, event, source]
+  optional: [category, node_link, end_date]
+  # date: YYYY-MM-DD; YYYY-MM and YYYY tolerated for imprecise events
+  # event: prose description of what happened on the date
+  # source: object with path + location (same shape as quote_source)
+  # category: free-text label rendered in the Timeline table's
+  #   Category column. No canonical vocabulary or enum check —
+  #   contributors use whatever label fits the entry. Common
+  #   values include affiliation, role, observation, testimony,
+  #   publication, clearance, incident, filing, contract, foia,
+  #   founding (descriptive guidance, not enforced).
+  # node_link: optional path to a related node (/people/..., etc.)
+  # end_date: if the entry describes a period rather than a point
+
+corroboration_entry:
+  required: [observer_path, observation_type, source]
+  optional: [observed_event_ref, note]
+  observation_type_values:
+    - testimonial
+    - instrumented
+    - government-statement
+    - documentary
+  # observer_path: /people/... or /organizations/... — the corroborator
+  # observation_type: testimonial | instrumented | government-statement |
+  #                   documentary
+  # source: object with path + location
+  # observed_event_ref: optional event node path the corroboration concerns
+
+program_involvement_entry:
+  required: [program, role, evidentiary_basis, confidence, source]
+  optional: [period_start, period_end, note]
+  # program: program name (free-text or /organizations/... path)
+  # role: the person's role in the program
+  # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY; rendered
+  #                    by build-from-research.py's universal _format_period
+  #                    helper into the Period column of the
+  #                    `## Program Involvement` table. Same naming
+  #                    convention as every other dated entry shape
+  #                    (affiliation_entry, key_personnel_entry,
+  #                    contract_entry, ownership_timeline_entry,
+  #                    top_scope_activity_entry).
+  # evidentiary_basis: primary-source / sworn-testimony / on-record /
+  #                    self-attested / secondary
+  # confidence: high | medium | low
+  # source: object with path + location
+
+publication_record_entry:
+  required: [publication, outlet, date, source]
+  optional: [node_link, beat, note]
+  # publication: title of the piece
+  # outlet: publishing organization (free-text or /organizations/... path)
+  # date: YYYY-MM-DD publication date
+  # source: object with path + location
+  # node_link: optional /documents/... path if the publication is
+  #   also a document node in this repository
+
+vouching_chain_entry:
+  required: [voucher_path, attestation, source]
+  optional: [evidentiary_basis, confidence, note]
+  # voucher_path: /people/... or /organizations/... of the voucher
+  # attestation: verbatim or paraphrased statement of vouching.
+  #   When the attestation is a verbatim quote, the contributor may
+  #   additionally register it as a quote entry on the vouching
+  #   person's own research artifact and link to that person node
+  #   here via voucher_path.
+  # source: object with path + location
+  # evidentiary_basis / confidence: same vocabulary as program_involvement
+
+affiliation_entry:
+  required: [organization_path, role, source]
+  optional: [period_start, period_end, flagged, note]
+  # organization_path: /organizations/... path
+  # role: the person's role / title at the organization
+  # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY; used
+  #   by renderer to compose a Period cell and by the chronological-ordering check to
+  #   sort rows chronologically
+  # flagged: bool (default false) — routes the entry to the
+  #   `### Flagged` subsection rather than `### Confirmed`
+  # source: object with path + location
+
+relationship_entry:
+  required: [person_path, relationship, source]
+  optional: [flagged, note]
+  # person_path: /people/... path
+  # relationship: short description (flying partner, disclosure
+  #   collaborator, advisor, superior, colleague, source, etc.)
+  # flagged: bool (default false); routes to `### Flagged` subsection
+  # source: object with path + location
+
+participant_entry:
+  required: [participant_path, capacity, source]
+  optional: [role, flagged, note]
+  capacity_values:
+    - witness-eyewitness
+    - witness-whistleblower
+    - witness-institutional
+    - committee-member
+    - observer
+    - official
+    - other
+  # participant_path: /people/... or /organizations/... path
+  # capacity: one of [witness-eyewitness, witness-whistleblower,
+  #   witness-institutional, committee-member, observer, official,
+  #   other] — drives sub-section routing on hearing-kind events
+  # role: free-text role description at this specific event
+  # flagged: bool (default false); routes to `### Flagged`
+  # source: object with path + location
+
+witnesses_testimony_entry:
+  required: [witness_path, oath_status, source]
+  optional: [transcript_node, written_testimony_node, note]
+  oath_status_values: [sworn, unsworn, affirmation, unknown]
+  # witness_path: /people/... of the witness
+  # oath_status: sworn | unsworn | affirmation | unknown
+  # transcript_node: /transcripts/... cross-reference (if built)
+  # written_testimony_node: /documents/... cross-reference (if built)
+  # source: object with path + location — typically the hearing
+  #   transcript or witness record attesting the oath status
+
+speaker_entry:
+  required: [name, source]
+  optional: [role, node_link, note]
+  # name: display name (e.g., "David Fravor", "Glenn Grothman")
+  # role: the speaker's role at this transcript event. Free-text;
+  #   common values: Witness, Chair, Committee Member, Host,
+  #   Interviewer, Guest, Moderator, Presenter. Scanned by
+  #   the prose-drift check against the entry's
+  #   source.path token pool.
+  # node_link: optional /people/... path when the speaker has a
+  #   repository node. Renders as backtick-bracket link in the
+  #   Node Link column.
+  # source: object with path + location — typically the transcript's
+  #   own source page where the speaker is named/identified (cover
+  #   sheet, speaker roster, intro Q&A)
+
+key_personnel_entry:
+  required: [person_path, role, source]
+  optional: [period_start, period_end, leadership_class, flagged, note]
+  leadership_class_values: [director, deputy, staff, advisor, other]
+  # person_path: /people/... path of the individual
+  # role: free-text role title at this organization (e.g., "Director",
+  #   "Founding Director", "Acting Director", "Deputy Secretary",
+  #   "Commanding Officer"). Scanned by the prose-drift check against the entry's
+  #   source.path token pool.
+  # leadership_class: optional enum
+  #   [director, deputy, staff, advisor, other]. Drives renderer sub-
+  #   grouping in the Key Personnel section (Directors / Deputy
+  #   Leadership / Other Named Personnel). Absent entries render in
+  #   the Other Named Personnel bucket.
+  # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY; used by
+  #   renderer to sort entries within each leadership_class subsection
+  #   and by the chronological-ordering check to sort rows chronologically.
+  # flagged: bool (default false) — routes to `### Flagged` subsection
+  # source: object with path + location — primary source attesting the
+  #   person's role at this organization (appointment announcement,
+  #   press release, published bio, etc.)
+
+contract_entry:
+  required: [contract_number, contracting_agency, period_start, source]
+  optional:
+    - period_end
+    - primary_counterparty_path
+    - subject
+    - value
+    - deliverables
+    - note
+  # contract_number: contract identifier as attested in the primary
+  #   source (e.g., "HHM402-08-C-0072" for AAWSAP). Preserved verbatim
+  #   from source.
+  # contracting_agency: free-text (e.g., "DIA", "DARPA", "Navy OPNAV").
+  #   Prefer the agency's /organizations/ wrap_path in contributor
+  #   prose elsewhere; this field carries the agency's short form as
+  #   it appears on the contract itself.
+  # primary_counterparty_path: optional /organizations/... path of the
+  #   contract recipient (typically the node this contract sits on, but
+  #   explicit for sub-contract or joint-venture cases).
+  # period_start / period_end: YYYY-MM-DD; period_end may be absent
+  #   for ongoing or open-ended contracts.
+  # subject: short descriptor of the contract's stated purpose (1-6
+  #   words; e.g., "Advanced Aerospace Weapon System Applications",
+  #   "Cockpit video system integration"). Scanned by the prose-drift check against
+  #   source.path token pool.
+  # value: dollar amount attested in the primary source (string form
+  #   preserves source formatting — "$22 million", "$22M", "22,000,000").
+  # deliverables: optional list of document paths the contract produced
+  #   (e.g., DIRD technical reports on AAWSAP). Each entry a
+  #   /documents/... path; absent or empty list when deliverables are
+  #   not publicly enumerated.
+  # note: contributor synthesis (1-2 sentences; optional). Scanned by
+  #   the prose-drift check against source.path token pool.
+
+org_relationship_entry:
+  required: [organization_path, relationship_type, source]
+  optional: [flagged, note]
+  relationship_type_values:
+    - parent
+    - subsidiary
+    - predecessor
+    - successor
+    - contractor
+    - contracting-agency
+    - partner
+    - other
+  # organization_path: /organizations/... path of the other org
+  # relationship_type: enum — one of
+  #   [parent, subsidiary, predecessor, successor, contractor,
+  #    contracting-agency, partner, other]
+  #     parent               — the other org is this org's parent
+  #     subsidiary           — the other org is a subsidiary of this
+  #     predecessor          — the other org preceded this one
+  #                            (lineage / reorganization)
+  #     successor            — the other org succeeded this one
+  #     contractor           — the other org is a contractor to this
+  #                            (this is the contracting agency)
+  #     contracting-agency   — the other org is this org's contracting
+  #                            agency (this is the contractor)
+  #     partner              — joint venture / partnership
+  #     other                — doesn't fit above; explain in note
+  # flagged: bool (default false); routes to `### Flagged`
+  # source: object with path + location attesting the relationship
+  # note: contributor synthesis (1-2 sentences; optional). Scanned by
+  #   the prose-drift check against source.path token pool.
+
+ownership_timeline_entry:
+  required: [period_start, owner, use_status, source]
+  optional: [period_end, owner_path, note]
+  # period_start / period_end: YYYY-MM-DD or YYYY-MM or YYYY. period_end
+  #   absent for current / ongoing ownership.
+  # owner: free-text name of the owner (family, individual, or entity).
+  # owner_path: optional /people|/organizations|/locations wrap_path
+  #   when the owner has a repo node. Renders as a backtick-bracket
+  #   link in the Owner cell when set.
+  # use_status: one-line description of how the property was used
+  #   during the period (e.g., "Cattle ranching", "Residential with
+  #   paranormal research operations", "Vacant"). Scanned by the
+  #   prose-drift check against source.path token pool.
+  # source: object with path + location attesting the ownership
+  #   transition (deed record, property registry, news article
+  #   contemporaneous with the transfer, etc.).
+  # note: optional contributor synthesis (1-2 sentences). Scanned by
+  #   the prose-drift check.
+
+top_scope_activity_entry:
+  required: [period_start, activity, source]
+  optional: [period_end, actor_paths, note]
+  # period_start / period_end: same conventions as
+  #   ownership_timeline_entry.
+  # activity: one-line description of the UAP-scope institutional
+  #   activity conducted at the location (e.g., "NIDS investigation",
+  #   "BAASS/AAWSAP contract research", "Fugal-era on-site research
+  #   operations"). Scanned by the prose-drift check against source.path token
+  #   pool.
+  # actor_paths: optional list of /people|/organizations wrap_paths
+  #   for the entities conducting the activity. Renders as
+  #   backtick-bracket links in an Actors cell when set.
+  # source: object with path + location attesting the activity.
+  # note: optional contributor synthesis (1-2 sentences). Scanned by
+  #   the prose-drift check.
+
+location_relationship_entry:
+  required: [entity_path, relationship, source]
+  optional: [flagged, note]
+  # entity_path: any /type/slug wrap_path — person, organization,
+  #   document, event, transcript, media, location, or finding. This
+  #   is the only relationship_entry shape in the schema that allows
+  #   heterogeneous target types, because locations connect to
+  #   anything the primary source attests (owners, investigators,
+  #   documented incidents, adjacent properties, etc.).
+  # relationship: short description of the connection (e.g., "Current
+  #   owner", "Conducted 1996-2004 investigation", "Site of documented
+  #   incident"). Scanned by the prose-drift check against source.path token pool.
+  # flagged: bool (default false); routes to `### Flagged`.
+  # source: object with path + location attesting the relationship.
+  # note: optional contributor synthesis. Scanned by the prose-drift check.
+
+# --- Finding entry shapes ---
+
+contradiction_entry:
+  required: [id, question, positions]
+  optional: [note]
+  # question: the specific question on which sources within this
+  #   finding diverge (e.g., "How far from the volcano plume?").
+  # positions: list of objects with shape:
+  #   { evidence_id: q1, position: 'verbatim position summary' }
+  #   evidence_id refers to a quote_entry id within this artifact's
+  #   own quotes[] list (the finding's evidence rows). Renderer
+  #   surfaces each position as a row in the Apparent Contradictions
+  #   table, with the linked quote anchoring back to the Evidence
+  #   section.
+  # note: optional contributor synthesis (1-2 sentences) on why
+  #   both positions stay on the record. Scanned by the prose-drift
+  #   check against the union token pool of cited sources.
+
+# --- Investigation entry shapes ---
+
+hypothesis_entry:
+  required: [id, statement]
+  # id: h1 / h2 / h0 (h0 reserved for the null hypothesis when
+  #   meaningful — coordinated-fabrication, allegation-is-mistaken,
+  #   etc.). Hypotheses are numbered for stable reference; ids
+  #   appear in hypothesis_evaluation_entry.hypothesis_id and in
+  #   counter_evidence_entry.against_hypothesis_id.
+  # statement: one declarative sentence stating the hypothesis.
+  #   Scanned by the investigation_hypothesis_citation check for
+  #   citation discipline on the corresponding evaluation entry,
+  #   not for prose-drift (speculation-tolerant by design).
+
+cited_finding_entry:
+  required: [id, finding_path, relevance]
+  optional: [pattern_statement]
+  # finding_path: /findings/... path of the cited finding. Must
+  #   resolve to an existing finding node (or to the broken-link
+  #   registry for future-build candidates).
+  # pattern_statement: optional convenience copy of the finding's
+  #   own pattern_statement for at-a-glance reading in the rendered
+  #   Cited Findings table. Renderer auto-fills from the target
+  #   finding's pattern_statement when omitted.
+  # relevance: contributor-written prose (1-2 sentences) describing
+  #   how this finding bears on the investigation. Not scoped to
+  #   prose-drift (speculation-tolerant cross-layer description,
+  #   parallel to corroboration_items.note).
+
+hypothesis_evaluation_entry:
+  required: [hypothesis_id, status, text, sources]
+  # hypothesis_id: must match an id in this artifact's hypotheses[].
+  # status: free-text verdict on the hypothesis (e.g.,
+  #   "Substantiated as allegation on record; not established as
+  #   physical fact", "Not established by primary sources;
+  #   non-denial pattern is suggestive but not affirmative"). Free-
+  #   text rather than enum — verdicts don't fit clean categories
+  #   and forcing them would either mislabel or pressure
+  #   contributors toward false clarity. Validator checks presence
+  #   + reasonable length (~10–200 chars).
+  # text: free-flowing analytical prose. Speculation-tolerant.
+  #   Not scoped to prose-drift; the investigation_hypothesis_citation
+  #   check requires non-empty sources[] rollup as the discipline.
+  # sources: per-hypothesis rollup of finding citations and entity-
+  #   node anchors. Each entry: source_entry shape below.
+  #   investigation_hypothesis_citation check requires non-empty
+  #   sources[] per hypothesis_evaluation entry.
+
+source_entry:
+  required: [description]
+  # Source entries are oneOf two shapes (mutually exclusive):
+  #   { finding_path: /findings/X, description: '...' }
+  #   { entity_path: /people/X | /organizations/X | ...,
+  #     anchor: 'q24' | '## Statements' | etc.,
+  #     description: '...' }
+  # Validator enforces oneOf via the
+  # investigation_hypothesis_citation check.
+  # description: 1-2 sentence contributor-written summary of what
+  #   this source contributes to the analysis. ≥10 chars enforced.
+  #   Renders as the descriptive text after the wrap link in each
+  #   sources[] rollup row.
+  # finding_path: /findings/... path of the cited finding.
+  # entity_path: any /people/.. | /organizations/.. | /documents/.. |
+  #   /events/.. | /transcripts/.. | /media/.. | /locations/.. path.
+  # anchor: when entity_path is set, a quote id (q1, q24, kp3) or
+  #   H2 section name pinpointing the specific fact within the
+  #   entity node. Required when entity_path is set; ignored
+  #   otherwise.
+
+open_question_entry:
+  required: [id, question]
+  optional: [what_would_resolve]
+  # question: the open analytical question (e.g., "Does Lacatski's
+  #   account constitute primary-source evidence of the event
+  #   occurring, or only of the claim having been made?").
+  # what_would_resolve: contributor-written description of the
+  #   primary-source material that would close the question.
+  #   Speculation-tolerant by design.
+
+best_current_answer_entry:
+  required: [text, sources]
+  # Single-object entry (not a list — investigations carry exactly
+  # one Best-Current Answer). Same shape as hypothesis_evaluation
+  # entries minus the hypothesis_id and status fields: text + sources
+  # rollup. The integrated cross-hypothesis judgment.
+
+counter_evidence_entry:
+  required: [id, against_hypothesis_id, text, sources]
+  # against_hypothesis_id: must match an id in this artifact's
+  # hypotheses[]. Routes the counter-evidence to the hypothesis it
+  # contests.
+  # text: analytical prose framing the counter-evidence.
+  # sources: rollup parallel to hypothesis_evaluation; cites
+  # findings or entity-node anchors that disconfirm the hypothesis.
+
+closure_path_entry:
+  required: [id, blocking_event]
+  optional: [expected_unblock_path]
+  # blocking_event: the external event blocking the investigation
+  #   (e.g., "BlackVault FOIA appeal on 24-F-0266 resolves").
+  # expected_unblock_path: contributor-written description of what
+  #   the unblock would surface and how it would advance the
+  #   investigation. Speculation-tolerant.
+
+resolution_history_entry:
+  required: [id, date, event]
+  # date: YYYY-MM-DD when the resolution event occurred.
+  # event: prose description of how the investigation evolved on
+  #   this date (e.g., "H3 refuted by finding X", "H2 added after
+  #   new primary source Y surfaced").
+
+media_versioning_entry:
+  required: [id, aspect, parent_form, this_form, source]
+  optional: [note]
+  aspect_values: [duration, encoding, metadata, content, provenance, other]
+  # aspect: one of [duration, encoding, metadata, content, provenance,
+  #   other] — enum keeps the table's top-level structure scannable
+  #   and enables future cross-node queries (e.g., "show all media
+  #   with metadata scrubs"). `other` is an extensibility escape —
+  #   validator warns on unknown values but does not error.
+  #     duration   — clip length differences
+  #     encoding   — codec, resolution, bitrate, container format
+  #     metadata   — EXIF / container-level metadata (creation date,
+  #                  camera/platform info, author fields, etc.)
+  #     content    — visible/audible content differences — watermarks,
+  #                  overlays, cropping, frames added/removed, audio
+  #                  presence or absence
+  #     provenance — chain-of-custody differences (known upload or
+  #                  distribution paths, release venue, declassification
+  #                  authority)
+  #     other      — doesn't fit the above; explain in `note`
+  # parent_form: free-text observation of the parent (derivation_of)
+  #   media (1-2 lines). Accommodates per-aspect shape variance —
+  #   numerical for duration, list-like for metadata, prose for content.
+  # this_form: free-text observation of THIS derivative media (1-2
+  #   lines). Same free-text shape.
+  # source: object with path + location — the primary source attesting
+  #   the difference (e.g., DoD press release confirming the 2020
+  #   declassified cut; FOIA response with metadata inspection;
+  #   side-by-side visual comparison noted in an archived article).
+  # note: contributor synthesis of analytical significance (1-2
+  #   sentences; optional). Scanned by the prose-drift check against the entry's
+  #   own source.path token pool.
+
+naming_quirk_entry:
+  required: [observed, canonical, location, source_path, resolution]
+  optional: [note]
+  resolution_values: [preserve-as-sic-in-quotes, use-canonical, disputed, unresolved]
+  # observed: as it appears in source (e.g., "Leslie Keane")
+  # canonical: corrected form (e.g., "Leslie Kean")
+  # resolution: preserve-as-sic-in-quotes | use-canonical | disputed | unresolved
+
+# --- Validation invariants (enforced by scripts/build/validate-research.py) ---
+
+invariants:
+  # Frontmatter / top-level
+  - "target_node field points to a file that exists (type/slug.md)"
+  - "schema_version value appears in schema.compatible_with"
+
+  # Entry-level
+  - "every entry id is unique within its section"
+  - "every entry has required lifecycle fields (id, added_date)"
+
+  # Cross-reference
+  - "every sources[].path exists in sources/manifest.yaml"
+  - "every reference in entity.references points to an existing quote.id"
+  - "every superseded_by / contradicted_by / corroborated_by ref points to an existing entry id (or is a structured external ref)"
+
+  # Closed-enum values — single source of truth lives on the entry-
+  # type definition (or the research-artifact root for shared
+  # vocabularies). Listed here for at-a-glance discovery; the
+  # ``*_values`` lists on each ``*_entry`` definition (and on the
+  # research-artifact root for ``status_values`` /
+  # ``evidentiary_basis_values`` / ``confidence_values``) are what
+  # the validator actually reads.
+  - "research-artifact.status: status_values (active | archived)"
+  - "quote_entry.observation_type: quote_entry.observation_type_values"
+  - "entity_entry.entity_type: entity_entry.entity_type_values"
+  - "rumor_entry.status: rumor_entry.status_values"
+  - "corroboration_entry.observation_type: corroboration_entry.observation_type_values"
+  - "participant_entry.capacity: participant_entry.capacity_values"
+  - "witnesses_testimony_entry.oath_status: witnesses_testimony_entry.oath_status_values"
+  - "key_personnel_entry.leadership_class (when set): key_personnel_entry.leadership_class_values"
+  - "org_relationship_entry.relationship_type: org_relationship_entry.relationship_type_values"
+  - "naming_quirk_entry.resolution: naming_quirk_entry.resolution_values"
+  - "media_versioning_entry.aspect: media_versioning_entry.aspect_values (warn on unknown; ``other`` permitted)"
+  - "program_involvement_entry.evidentiary_basis + vouching_chain_entry.evidentiary_basis: research-artifact.evidentiary_basis_values"
+  - "program_involvement_entry.confidence + vouching_chain_entry.confidence: research-artifact.confidence_values"
+
+  # Other field-shape rules
+  - "context (quotes) required on person artifacts; optional on document / transcript / media"
+
+  # Conditional sections
+  - "rumors section present if target_node type in [person, organization, event, location]; absent otherwise"
+  - "timeline section present if target_node type in [person, organization, event]; absent otherwise"
+  - "corroboration_items section present iff target_node archetype == eyewitness"
+  - "program_involvement section present iff target_node archetype == institutional-actor"
+  - "publication_record section present iff target_node archetype == reporter"
+  - "vouching_chain section present iff target_node archetype == whistleblower"
+  - "background / top_relevance / affiliations / relationships / credibility_notes sections present iff target_node type == person"
+  - "event_intrinsic and participants sections present iff target_node type == event"
+  - "witnesses_testimony section present iff target_node type == event AND kind == hearing"
+  - "corroboration_items section present iff target_node archetype == eyewitness OR (type == event AND kind == encounter)"
+  - "speakers section present iff target_node type == transcript"
+  - "media_versioning section present iff target_node type == media (empty list permitted when media is canonical / original; populated when derivation_of is set)"
+  - "key_personnel and org_relationships sections present iff target_node type == organization"
+  - "contracts section present iff target_node type == organization AND kind == gov-contractor"
+  - "ownership_timeline, top_scope_activity, location_relationships sections present iff target_node type == location"
+  - "pattern_statement / establishes / does_not_establish sections present iff target_node type == finding"
+  - "contradictions section present iff target_node type == finding (empty list permitted; populated drives the Apparent Contradictions section)"
+  - "hypotheses / cited_findings / hypothesis_evaluation / open_questions / best_current_answer present iff target_node type == investigation"
+  - "counter_evidence / closure_path / resolution_history sections present iff target_node type == investigation (lists may be empty; closure_path required when status == paused)"
+  - "findings do not reference investigations — directional contract enforced by finding_no_investigation_refs"
+  - "investigation hypothesis_evaluation sources[] non-empty — enforced by investigation_hypothesis_citation"
+

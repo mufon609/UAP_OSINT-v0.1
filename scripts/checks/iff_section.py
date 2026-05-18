@@ -1,6 +1,6 @@
 """iff-section check — schema-driven research-artifact ResearchContext check.
 
-Walks ``schema.yaml::types.research-artifact.conditional_keys`` and
+Walks ``schema-research-artifact.yaml::conditional_keys`` and
 emits placement errors:
 
   - ``required X key missing`` — when a section's

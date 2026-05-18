@@ -125,11 +125,11 @@ def fetch_via_ytdlp(video_id, cookies_path=None):
             f"https://www.youtube.com/watch?v={video_id}",
         ]
         if cookies_path == "-":
-            # yt-dlp's stdin-cookies syntax is /dev/stdin (Linux-specific).
-            # The bare "-" form is silently ignored without auth — verified
-            # 2026-05-17. Stays in-process: input=stdin_cookies pipes the
-            # data via kernel pipe to yt-dlp's stdin which it reads via
-            # /dev/stdin. No tmp file written.
+            # yt-dlp's stdin-cookies syntax is /dev/stdin (Linux-specific);
+            # the bare "-" form is silently ignored without auth. Stays
+            # in-process: input=stdin_cookies pipes the data via kernel
+            # pipe to yt-dlp's stdin which it reads via /dev/stdin. No
+            # tmp file written.
             cmd[1:1] = ["--cookies", "/dev/stdin"]
         elif cookies_path:
             cmd[1:1] = ["--cookies", str(cookies_path)]

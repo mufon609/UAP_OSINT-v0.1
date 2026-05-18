@@ -19,7 +19,7 @@ artifact:
 
 Type-conditional sections / fields (background, top_relevance,
 credibility_notes, event_intrinsic, participants, etc.) are gated by
-``iff_section`` via ``schema.yaml::conditional_keys``; the per-section
+``iff_section`` via ``schema-research-artifact.yaml::conditional_keys``; the per-section
 checks rely on ``section_in_scope``. This check keeps only the
 universal metadata plus the type-conditional description-required
 rule.
@@ -66,7 +66,7 @@ DESCRIPTION_REQUIRED_TYPES = {
 
 def check(ctx):
     # Research-artifact's own ``status`` enum is declared in
-    # ``schema.yaml::types.research-artifact.status_values``. Direct
+    # ``schema-research-artifact.yaml::status_values``. Direct
     # subscript: schema malformation surfaces loudly.
     valid_status = ctx.schema["types"]["research-artifact"]["status_values"]
     data = ctx.data

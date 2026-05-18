@@ -46,7 +46,7 @@ CHECK_NAME = "quotes"
 def check(ctx):
     # Closed enum values for ``observation_type`` and
     # ``attestation_tier`` come from
-    # ``schema.yaml::types.research-artifact.quote_entry``. Direct
+    # ``schema-research-artifact.yaml::quote_entry``. Direct
     # subscript surfaces a loud KeyError on schema malformation.
     valid_observation_types = ctx.schema["types"]["research-artifact"][
         "quote_entry"]["observation_type_values"]

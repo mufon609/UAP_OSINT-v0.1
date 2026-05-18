@@ -87,25 +87,31 @@ REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 SOURCES_DIR = REPO_ROOT / "sources"
 MANIFEST_PATH = SOURCES_DIR / "manifest.yaml"
 SCHEMA_PATH = REPO_ROOT / "meta" / "schema.yaml"
+SCHEMA_RESEARCH_ARTIFACT_PATH = REPO_ROOT / "meta" / "schema-research-artifact.yaml"
 
 
 # Per-process caches.
 _source_text_cache = {}             # Path -> extracted plain text or None
 _extraction_type_cache = None       # rel-path str -> extraction_type str
 _manifest_format_cache = None       # rel-path str -> format str
-_schema_cache = None                # parsed meta/schema.yaml
+_schema_cache = None                # parsed schema (merged)
 
 
 def load_schema():
-    """Parse meta/schema.yaml once per process and cache. All scripts
-    that need schema data should import + call this rather than
-    duplicating the open + safe_load + SCHEMA_PATH boilerplate.
-    Errors loudly on parse failure or missing file (schema is
-    foundational toolkit contract; absence is fatal)."""
+    """Parse the schema once per process and cache. Composes two files:
+    ``meta/schema.yaml`` (main spec) and ``meta/schema-research-artifact.yaml``
+    (the research-artifact subspec). The latter's top-level keys are
+    spliced into ``schema["types"]["research-artifact"]`` so callers
+    see a single merged dict. Errors loudly on parse failure or
+    missing files (schema is foundational toolkit contract; absence
+    is fatal)."""
     global _schema_cache
     if _schema_cache is None:
         with open(SCHEMA_PATH) as f:
-            _schema_cache = strict_yaml_load(f)
+            schema = strict_yaml_load(f)
+        with open(SCHEMA_RESEARCH_ARTIFACT_PATH) as f:
+            schema["types"]["research-artifact"] = strict_yaml_load(f)
+        _schema_cache = schema
     return _schema_cache
 
 

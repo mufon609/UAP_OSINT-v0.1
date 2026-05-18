@@ -25,7 +25,8 @@ created: {{today}}
 
 <!-- Populated from organization_intrinsic in the research artifact.
      Per-kind keys emit rows for whichever are populated; empty keys
-     skipped. See meta/schema.yaml for key conventions per kind:
+     skipped. See meta/schema-research-artifact.yaml (required_keys
+     section, document_intrinsic field comment) for key conventions per kind:
        gov (agency/office): internal_name, full_name, statutory_authority,
                  established_date, terminated_date,
                  parent_organization_path, current_director_path,
