@@ -23,12 +23,12 @@ created: {{today}}
 
 ## Identity
 
-| Field | Value | Source |
-|---|---|---|
-| Full Name |  |  |
-| Aliases |  |  |
-| Nationality |  |  |
-| Profession |  |  |
+| Field | Value |
+|---|---|
+| Full Name |  |
+| Aliases |  |
+| Nationality |  |
+| Profession |  |
 
 ---
 
@@ -161,19 +161,15 @@ created: {{today}}
 <!-- ARCHETYPE: whistleblower -->
 ## Claim Inventory
 
-| Claim | Document | Status | Node Link |
-|---|---|---|---|
-|  |  |  |  |
+| Claim | Document | Node Link |
+|---|---|---|
+|  |  |  |
 
 <!-- Derived view of this person's filed claims — each row maps to one
      or more statements tagged `category: filed-claim` in the research
      artifact. The statements are primary; this table is a render-time
-     index grouping them claim → supporting document → status.
-
-     Status values:
-     - Document exists and supports
-     - Document exists and contradicts
-     - No document anchor identified -->
+     index linking each claim to its supporting document and any
+     related node. -->
 
 ---
 <!-- /ARCHETYPE -->

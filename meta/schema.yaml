@@ -531,8 +531,7 @@ types:
   # Renderer surfaces the tier in each evidence row's verification block
   # so readers see the evidentiary weight of each attestation when
   # convergence spans mixed tiers. Scoped to finding evidence[] only;
-  # entity-node quotes[] do not adopt this enum (entity nodes carry the
-  # existing ✅ Sworn / documented label until a separate migration pass).
+  # entity-node quotes[] do not adopt this enum.
   attestation_tier_values:
     - sworn-oath           # under-oath congressional testimony
     - sworn-perjury        # 18 U.S.C. § 1001 legal filing
