@@ -81,7 +81,7 @@ def check(ctx):
                     f"'evidence_id' (must reference a quote id in this artifact)",
                     check_name=CHECK_NAME,
                 )
-            elif quote_ids and eid not in quote_ids:
+            elif eid not in quote_ids:
                 yield Issue(
                     ctx.rel, "error",
                     f"contradictions[{i}].positions[{j}]: evidence_id "

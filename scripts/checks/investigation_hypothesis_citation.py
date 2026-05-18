@@ -163,7 +163,7 @@ def check(ctx):
                 f"(must match an entry id in hypotheses[])",
                 check_name=CHECK_NAME,
             )
-        elif hypothesis_ids and hid_value.lower() not in hypothesis_ids:
+        elif hid_value.lower() not in hypothesis_ids:
             yield Issue(
                 ctx.rel, "error",
                 f"{label}: hypothesis_id {hid_value!r} does not match "
@@ -242,7 +242,7 @@ def check(ctx):
                 f"(must match an entry id in hypotheses[])",
                 check_name=CHECK_NAME,
             )
-        elif hypothesis_ids and against.lower() not in hypothesis_ids:
+        elif against.lower() not in hypothesis_ids:
             yield Issue(
                 ctx.rel, "error",
                 f"{label}: against_hypothesis_id {against!r} does not "

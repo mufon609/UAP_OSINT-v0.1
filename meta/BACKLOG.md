@@ -148,19 +148,6 @@ treat the non-URL response as failure, or store a distinct
 
 Surfaced: 2026-05-17 repo audit.
 
-### C6 — `scripts/checks/{contradictions,investigation_hypothesis_citation}.py` — silent skip when target list is empty
-
-[BUG] `contradictions.py:84` and
-`investigation_hypothesis_citation.py:166, 245` use the pattern
-`elif quote_ids and eid not in quote_ids:` (and analog for
-`hypothesis_ids`). When the target list is empty, dangling-reference
-validation is skipped silently — which is exactly the case the check
-should catch (contributor forgot to populate the referenced
-structure). Drop the truthiness guard or emit a distinct "cannot
-resolve, target list empty" error.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C7 — `scripts/build/renderers/transcript.py:88-91` — `derived_from` silently dropped for non-`/media/`, non-`/documents/` paths
 
 [BUG] The `derived_from` row in the Publication Record table only
