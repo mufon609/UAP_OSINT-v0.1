@@ -174,14 +174,3 @@ or surface the error with context.
 
 Surfaced: 2026-05-17 repo audit.
 
-### C13 — `scripts/lib/_common.py` `save_manifest` is non-atomic — concurrent writers race
-
-[BANDAID] `save_manifest` does a whole-file rewrite without flock or
-temp+rename. Two concurrent `scripts/tools/manifest.py add`
-invocations race; the second overwrites the first. Switch to
-write-temp + atomic rename, or wrap in `fcntl.flock`. Low likelihood
-in current single-contributor workflow, but the failure mode is
-silent data loss.
-
-Surfaced: 2026-05-17 repo audit.
-

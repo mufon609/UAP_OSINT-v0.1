@@ -9,6 +9,7 @@ silently. This module is the single implementation the three import.
 
 import hashlib
 import html
+import os
 import re
 import subprocess
 import sys
@@ -329,12 +330,28 @@ def save_manifest(entries):
     """Write entries back to sources/manifest.yaml. Sorts by URL for
     stable diffs; uses ``allow_unicode=True`` + ``width=9999`` so unicode
     characters survive and YAML doesn't fold long values into multi-line
-    blocks."""
+    blocks.
+
+    Atomic write: serialize to a same-directory temp file then
+    ``os.replace`` onto the destination. A crash or interrupted write
+    leaves the previous manifest intact; the rename is atomic on POSIX
+    so concurrent readers never see a half-written file.
+    """
     entries.sort(key=lambda e: e.get("url", ""))
     MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(MANIFEST_PATH, "w") as f:
-        yaml.dump(entries, f, sort_keys=False, default_flow_style=False,
-                  allow_unicode=True, width=9999)
+    tmp = MANIFEST_PATH.with_suffix(MANIFEST_PATH.suffix + ".tmp")
+    try:
+        with open(tmp, "w") as f:
+            yaml.dump(entries, f, sort_keys=False, default_flow_style=False,
+                      allow_unicode=True, width=9999)
+        os.replace(tmp, MANIFEST_PATH)
+    except Exception:
+        if tmp.exists():
+            try:
+                tmp.unlink()
+            except OSError:
+                pass
+        raise
 
 
 def load_manifest_paths():
