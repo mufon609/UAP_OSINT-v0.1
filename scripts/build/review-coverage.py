@@ -240,7 +240,7 @@ _PARALLEL_BASE_CTX = None
 def _review_one_worker(path_str):
     """ProcessPoolExecutor worker: review one artifact against the
     parent-process ``_PARALLEL_BASE_CTX``. Returns ``(issues, skip_reason)``
-    matching the serial ``review_artifact`` contract."""
+    matching the ``review_artifact`` return contract."""
     issues, skip_reason = review_artifact(Path(path_str), _PARALLEL_BASE_CTX)
     return list(issues), skip_reason
 
