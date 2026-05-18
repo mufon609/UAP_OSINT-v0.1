@@ -19,9 +19,10 @@ speaker isn't stamped in the transcript itself.
 
 ```
 bash scripts/tools/setup-photo-identity.sh
+bash scripts/tools/setup-diarize-audio.sh    # only if using diarize-audio.py
 ```
 
-Installs and verifies:
+`setup-photo-identity.sh` installs and verifies the visual-side pipeline:
 
 | Dependency | Purpose | Install path |
 |---|---|---|
@@ -31,8 +32,16 @@ Installs and verifies:
 | `ffmpeg`, `ffprobe` | Frame extraction, merge, duration probe | apt |
 | JS runtime (`deno` / `node` / `bun`) | yt-dlp's EJS challenge solver | varies |
 
-The setup script reports any missing pieces and exits non-zero if any apt
-install fails. Re-runnable.
+`setup-diarize-audio.sh` covers the audio-side optional step:
+
+| Dependency | Purpose | Install path |
+|---|---|---|
+| `pyannote.audio` + `torch` + `torchaudio` | Speaker diarization model | pip |
+| Hugging Face user-conditions (manual) | pyannote/speaker-diarization-3.1 + pyannote/segmentation-3.0 are gated | hf.co browser click |
+| `HF_TOKEN` env var | Auth for the pipeline download | shell export |
+
+Both scripts report missing pieces and exit non-zero if any apt / pip step
+fails. Re-runnable.
 
 ---
 
@@ -71,6 +80,42 @@ Common tunables:
 - `--quality 720` for higher facial detail (file size scales ~2-3×)
 - `--note "STR"` to attach contributor context to the manifest entry
 - `--dry-run` to inspect the yt-dlp invocation without running
+
+### 1.5. (Optional) Diarize the audio — discover speaker turns
+
+```
+python3 scripts/tools/diarize-audio.py sources/video/{slug}.mp4
+python3 scripts/tools/diarize-audio.py sources/video/{slug}.mp4 --start 19:00 --end 22:00
+```
+
+Identity-blind speaker diarization via `pyannote/speaker-diarization-3.1`.
+Output is two files in `/tmp/diarize-{slug}/` (or `--out DIR`):
+
+- `segments.csv` — `start_seconds, end_seconds, duration_seconds, speaker`
+  one row per detected turn. Speaker labels are anonymous
+  (`SPEAKER_00`, `SPEAKER_01`, ...) — pyannote answers "this voice is
+  different from that voice," not "this is X."
+- `segments.md` — human-readable summary: per-speaker total speech time +
+  percentage, chronological segment list with `[HH:MM:SS]` anchors, and a
+  per-speaker view for jumping to a specific speaker's appearances.
+
+When to run it:
+
+- **Unfamiliar source**: you don't know how many people speak or when they
+  trade off. Diarize first to see "3 speakers, SPEAKER_01 dominates
+  18:00–32:00, SPEAKER_02 enters at 47:00" — then targeted extract-frames
+  at those handoffs.
+- **Narration vs. on-camera speech**: a video-only frame at a contested
+  timestamp can't tell you whether a voice belongs to someone on camera
+  or to off-frame narration. Diarization + frames together resolve this:
+  if SPEAKER_NN persists across cuts where the on-camera person changes,
+  it's narration.
+- **Skip it** for short, two-speaker, well-known sources where you can
+  identify speakers from the frames directly.
+
+Slow on CPU — diarization runs at roughly real-time, so a 3-hour video
+takes ~3 hours. Use `--start` / `--end` to slice the analyzed range to
+the contested passage.
 
 ### 2. Extract frames at contested timestamps
 
@@ -256,7 +301,9 @@ python3 scripts/tools/detect-faces.py prune
 | Tool | When |
 |---|---|
 | `setup-photo-identity.sh` | First time on a machine, or when adding the video pipeline to an existing checkout |
+| `setup-diarize-audio.sh` | First time using the audio-side speaker-diarization step (separate from the visual-side setup) |
 | `download-video.py` | Archiving a new video source that needs face detection |
+| `diarize-audio.py` | Unfamiliar long source — discover how many speakers exist and when they trade off, before pointing extract-frames at handoff timestamps; also useful for distinguishing on-camera speech from off-frame narration |
 | `extract-frames.py anchor` | First-time on a video — establish visual identity of each on-camera speaker |
 | `extract-frames.py burst` | Speaker disambiguation at a specific contested transcript timestamp |
 | `extract-frames.py sweep` | Visual map of an unfamiliar source |
