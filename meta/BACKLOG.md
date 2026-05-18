@@ -169,16 +169,6 @@ controlled-`sys.exit` on the missing key.
 
 Surfaced: 2026-05-17 repo audit.
 
-### C9 — `scripts/checks/_research_utils.py:180` — empty-string path falls through validation
-
-[BUG] `require_source_dict` checks `if src.get("path") and src["path"]
-not in manifest_paths:`. A `path: ""` entry passes both the "path is
-missing" branch above and the manifest-membership branch — silently
-treated as valid. Fix the truthiness guard so empty strings hit the
-"missing path" error path.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C10 — `scripts/tools/transcribe.py:111-113` — hangs forever on interactive `--cookies -` misuse
 
 [BUG] `sys.stdin.read()` blocks until EOF; the empty-stdin guard at

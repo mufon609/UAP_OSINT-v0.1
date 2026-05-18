@@ -170,17 +170,23 @@ def require_source_dict(rel, entry, section_name, i, manifest_paths, check_name)
             check_name=check_name,
         )
         return
-    if "path" not in src or "location" not in src:
+    path = src.get("path")
+    if not path or "location" not in src:
+        missing = []
+        if not path:
+            missing.append("'path' (non-empty)")
+        if "location" not in src:
+            missing.append("'location'")
         yield Issue(
             rel, "error",
             f"{section_name}[{i}] ({entry.get('id')!r}): "
-            f"source must include 'path' and 'location'",
+            f"source must include {' and '.join(missing)}",
             check_name=check_name,
         )
-    if src.get("path") and src["path"] not in manifest_paths:
+    if path and path not in manifest_paths:
         yield Issue(
             rel, "error",
             f"{section_name}[{i}] ({entry.get('id')!r}): "
-            f"source.path {src['path']!r} not in sources/manifest.yaml",
+            f"source.path {path!r} not in sources/manifest.yaml",
             check_name=check_name,
         )
