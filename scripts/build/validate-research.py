@@ -44,9 +44,12 @@ Usage:
 """
 
 import argparse
+import multiprocessing as mp
+import os
 import sys
-from pathlib import Path
 from collections import defaultdict
+from concurrent.futures import ProcessPoolExecutor
+from pathlib import Path
 
 try:
     import yaml
@@ -354,6 +357,19 @@ def collect_artifacts():
     return sorted(RESEARCH_DIR.glob("*.yaml"))
 
 
+# Module-level slot for the BaseContext, populated by main() before the
+# worker pool starts. Workers forked from the parent inherit the value
+# via fork-method copy-on-write; only the per-artifact path is passed
+# through ``executor.submit`` (small + picklable).
+_PARALLEL_BASE_CTX = None
+
+
+def _validate_one_worker(path_str):
+    """ProcessPoolExecutor worker: validate one artifact against the
+    parent-process ``_PARALLEL_BASE_CTX``. Returns the Issues list."""
+    return list(validate_artifact(Path(path_str), _PARALLEL_BASE_CTX))
+
+
 def main():
     parser = argparse.ArgumentParser(
         description=__doc__,
@@ -378,8 +394,24 @@ def main():
         artifacts = collect_artifacts()
 
     all_issues = []
-    for p in artifacts:
-        all_issues.extend(validate_artifact(p, base_ctx))
+    # Parallel per-artifact dispatch when there's enough work to amortize
+    # pool startup. Single-artifact path (smoke fixtures, CLI --path)
+    # skips the pool. Fork-method workers inherit the parent's
+    # ``_PARALLEL_BASE_CTX`` (and the pre-loaded schema / manifest) via
+    # copy-on-write — only the artifact path string crosses the pickle
+    # boundary.
+    if len(artifacts) >= 2:
+        global _PARALLEL_BASE_CTX
+        _PARALLEL_BASE_CTX = base_ctx
+        workers = min(os.cpu_count() or 1, len(artifacts))
+        with ProcessPoolExecutor(
+            max_workers=workers, mp_context=mp.get_context("fork"),
+        ) as exe:
+            for issues in exe.map(_validate_one_worker, [str(p) for p in artifacts]):
+                all_issues.extend(issues)
+    else:
+        for p in artifacts:
+            all_issues.extend(validate_artifact(p, base_ctx))
 
     # Append every emitted Issue to the issue log for time-series audit.
     for issue in all_issues:

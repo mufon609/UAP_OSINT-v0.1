@@ -28,9 +28,12 @@ Expected execution order per prompts/build.md:
 """
 
 import argparse
+import multiprocessing as mp
+import os
 import sys
-from pathlib import Path
 from collections import defaultdict
+from concurrent.futures import ProcessPoolExecutor
+from pathlib import Path
 
 try:
     import yaml
@@ -227,6 +230,21 @@ def collect_artifacts():
     return sorted(RESEARCH_DIR.glob("*.yaml"))
 
 
+# Module-level slot for the BaseContext, populated by main() before the
+# worker pool starts. Workers forked from the parent inherit the value
+# via copy-on-write; only the per-artifact path crosses the pickle
+# boundary.
+_PARALLEL_BASE_CTX = None
+
+
+def _review_one_worker(path_str):
+    """ProcessPoolExecutor worker: review one artifact against the
+    parent-process ``_PARALLEL_BASE_CTX``. Returns ``(issues, skip_reason)``
+    matching the serial ``review_artifact`` contract."""
+    issues, skip_reason = review_artifact(Path(path_str), _PARALLEL_BASE_CTX)
+    return list(issues), skip_reason
+
+
 # =============================================================================
 # Main
 # =============================================================================
@@ -260,13 +278,33 @@ def main():
     reviewed = 0
     skipped = []
 
-    for p in artifacts:
-        issues, skip_reason = review_artifact(p, base_ctx)
-        if skip_reason:
-            skipped.append((p.relative_to(REPO_ROOT), skip_reason))
-            continue
-        reviewed += 1
-        all_issues.extend(issues)
+    if len(artifacts) >= 2:
+        # Parallel per-artifact dispatch. Fork-method workers inherit
+        # ``_PARALLEL_BASE_CTX`` (and pre-loaded schema / manifest) via
+        # copy-on-write; only the path string crosses the pickle boundary.
+        global _PARALLEL_BASE_CTX
+        _PARALLEL_BASE_CTX = base_ctx
+        workers = min(os.cpu_count() or 1, len(artifacts))
+        # Preserve deterministic (artifact_path, result) pairing for the
+        # skipped-list output by zipping back to the input order.
+        with ProcessPoolExecutor(
+            max_workers=workers, mp_context=mp.get_context("fork"),
+        ) as exe:
+            results = list(exe.map(_review_one_worker, [str(p) for p in artifacts]))
+        for p, (issues, skip_reason) in zip(artifacts, results):
+            if skip_reason:
+                skipped.append((p.relative_to(REPO_ROOT), skip_reason))
+                continue
+            reviewed += 1
+            all_issues.extend(issues)
+    else:
+        for p in artifacts:
+            issues, skip_reason = review_artifact(p, base_ctx)
+            if skip_reason:
+                skipped.append((p.relative_to(REPO_ROOT), skip_reason))
+                continue
+            reviewed += 1
+            all_issues.extend(issues)
 
     # Append every emitted Issue to the issue log for time-series audit.
     for issue in all_issues:

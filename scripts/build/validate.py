@@ -84,9 +84,12 @@ validate-research.py). See meta/conventions.md "Check naming".
 """
 
 import argparse
+import multiprocessing as mp
+import os
 import sys
-from pathlib import Path
 from collections import defaultdict
+from concurrent.futures import ProcessPoolExecutor
+from pathlib import Path
 
 try:
     import yaml
@@ -233,6 +236,26 @@ def collect_nodes():
     return nodes
 
 
+# Module-level slot for the BaseContext; populated by main() before the
+# worker pool starts so forked workers can read it via copy-on-write.
+# Only the per-node path crosses the pickle boundary.
+_PARALLEL_BASE_CTX = None
+
+
+def _validate_one_worker(node_path_str):
+    """ProcessPoolExecutor worker: validate one node. Returns
+    ``(issues, broken_links_for_this_node)``. ``broken_links`` is the
+    out-of-band accumulator on BaseContext that ``link_resolution``
+    writes to; each worker resets it to an empty defaultdict before
+    the call so the returned dict isolates this node's contributions.
+    The parent merges these contributions into the master defaultdict
+    after the pool completes."""
+    base_ctx = _PARALLEL_BASE_CTX
+    base_ctx.broken_links = defaultdict(set)
+    issues = list(validate_node(Path(node_path_str), base_ctx))
+    return issues, dict(base_ctx.broken_links)
+
+
 # =============================================================================
 # Main — CLI, orchestration, and report formatting
 # =============================================================================
@@ -286,8 +309,26 @@ def main():
     # since template drift propagates to every node scaffolded afterward.
     all_issues.extend(ck_governance_files.check(base_ctx))
 
-    for node in nodes:
-        all_issues.extend(validate_node(node, base_ctx))
+    # Per-node validation: parallel dispatch when ≥2 nodes, serial for
+    # single-node CLI use. Fork-method workers inherit the parent's
+    # base_ctx (with the loaded schema + manifest_entries) via
+    # copy-on-write. Each worker resets its own ``broken_links``
+    # defaultdict per node and returns it; the parent merges all
+    # contributions into the master accumulator below.
+    if len(nodes) >= 2:
+        global _PARALLEL_BASE_CTX
+        _PARALLEL_BASE_CTX = base_ctx
+        workers = min(os.cpu_count() or 1, len(nodes))
+        with ProcessPoolExecutor(
+            max_workers=workers, mp_context=mp.get_context("fork"),
+        ) as exe:
+            for issues, bl in exe.map(_validate_one_worker, [str(n) for n in nodes]):
+                all_issues.extend(issues)
+                for link, refs in bl.items():
+                    base_ctx.broken_links[link].update(refs)
+    else:
+        for node in nodes:
+            all_issues.extend(validate_node(node, base_ctx))
 
     # broken_links accumulate into base_ctx.broken_links via
     # ck_link_resolution — out-of-band metadata channel; broken stubs
