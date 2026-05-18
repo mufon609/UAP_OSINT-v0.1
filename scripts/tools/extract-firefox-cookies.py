@@ -14,6 +14,13 @@ Firefox's write locks; reads last-committed state directly).
 
 Status messages go to stderr so stdout stays clean for piping.
 
+Before extraction runs, the script prints a cookie-export warning to
+stderr and prompts for explicit consent (type `yes` to proceed).
+Non-interactive invocations (stdin not a TTY) require the
+`--accept-risks` flag to bypass the interactive prompt. The prompt
+fires once per script invocation — the canonical multi-video pattern
+(`COOKIES=$(extract-firefox-cookies.py)`) prompts once per session.
+
 Canonical usage:
 
     # Single video:
@@ -49,6 +56,87 @@ from pathlib import Path
 
 
 DEFAULT_DOMAIN_LIKES = ["youtube", "google", "accounts.google"]
+
+
+CONSENT_WARNING = """\
+═══════════════════════════════════════════════════════════════════════
+  COOKIE EXPORT — read before continuing
+═══════════════════════════════════════════════════════════════════════
+
+  What this is about to do
+  ------------------------
+  Read Google / YouTube session cookies from your Firefox profile and
+  emit them as a Netscape cookies.txt blob on stdout.
+
+  Why it's needed
+  ---------------
+  YouTube blocks the unauthenticated transcript API on many residential,
+  VPN, and cloud IP ranges. yt-dlp + an authenticated cookie jar reaches
+  YouTube reliably where the API path fails — this is the workaround.
+
+  What's at risk
+  --------------
+  These cookies are live session credentials. Anyone holding them can
+  act as YOUR Google identity until the session is invalidated — full
+  access to Gmail, Drive, Calendar, YouTube history, account settings,
+  and every other Google service tied to the logged-in profile. Treat
+  the output like a password.
+
+  How the toolkit mitigates exposure
+  ----------------------------------
+  • Stdout only — no file is written. Cookies live in the shell
+    process's memory and disappear on `unset` or shell exit.
+  • cookies.sqlite is opened read-only + immutable; Firefox state is
+    untouched.
+  • Repo `.gitignore` blocks common cookie filenames.
+  • Pre-commit gate (`cookies-check`) refuses commits containing
+    Netscape cookies content or Google session cookies.
+  • `transcribe.py` pipes cookies kernel→yt-dlp via `/dev/stdin`; no
+    intermediate file ever exists.
+
+  STRONG RECOMMENDATION — use a burner account
+  --------------------------------------------
+  Log into YouTube with a throwaway Google account that owns no real
+  data: no meaningful mail, no Drive contents, no calendar, not linked
+  to your personal/work identity. After your session, sign out (or
+  "Sign out of all devices" in Google account settings) to invalidate
+  the exported cookies. Do not use your primary Google account.
+
+═══════════════════════════════════════════════════════════════════════
+"""
+
+
+def prompt_consent(accept_risks_flag):
+    """Print the cookie-export warning and require explicit consent.
+
+    Returns True if consent is granted, False otherwise. Interactive
+    sessions (stdin is a TTY) require typing `yes`; non-interactive
+    sessions require the `--accept-risks` flag.
+    """
+    sys.stderr.write(CONSENT_WARNING)
+    sys.stderr.flush()
+
+    if accept_risks_flag:
+        print("--accept-risks supplied; skipping interactive prompt.", file=sys.stderr)
+        return True
+
+    if not sys.stdin.isatty():
+        print(
+            "ERROR: stdin is not a TTY (non-interactive invocation).\n"
+            "Re-run with --accept-risks to acknowledge the above and proceed.",
+            file=sys.stderr,
+        )
+        return False
+
+    sys.stderr.write(
+        "Type 'yes' to acknowledge these risks and continue. Anything else aborts.\n> "
+    )
+    sys.stderr.flush()
+    try:
+        response = input().strip().lower()
+    except EOFError:
+        return False
+    return response == "yes"
 
 
 def find_firefox_profile():
@@ -115,6 +203,15 @@ def main():
             "youtube google accounts.google)"
         ),
     )
+    parser.add_argument(
+        "--accept-risks",
+        action="store_true",
+        help=(
+            "Skip the interactive consent prompt (required when stdin "
+            "is not a TTY; equivalent to typing 'yes' interactively). "
+            "The warning text is still printed to stderr for the record."
+        ),
+    )
     args = parser.parse_args()
 
     profile = args.profile or find_firefox_profile()
@@ -124,6 +221,9 @@ def main():
     cookies_db = profile / "cookies.sqlite"
     if not cookies_db.is_file():
         sys.exit(f"ERROR: cookies.sqlite not found at {cookies_db}")
+
+    if not prompt_consent(args.accept_risks):
+        sys.exit("Aborted — consent not granted; no cookies extracted.")
 
     domain_likes = args.domain if args.domain else DEFAULT_DOMAIN_LIKES
     text, count = build_cookies_text(cookies_db, domain_likes)
