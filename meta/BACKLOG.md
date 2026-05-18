@@ -159,16 +159,6 @@ row.
 
 Surfaced: 2026-05-17 repo audit.
 
-### C8 — `scripts/build/new.py:185-188` — raw `KeyError` on `--archival-status` for non-document types
-
-[BUG] `type_spec["archival_status_values"]` raises an unhandled
-`KeyError` when `--archival-status` is passed for any type whose spec
-doesn't carry the key (everything except `document`). argparse
-doesn't gate the flag by type. Either gate the flag's acceptance, or
-controlled-`sys.exit` on the missing key.
-
-Surfaced: 2026-05-17 repo audit.
-
 ### C10 — `scripts/tools/transcribe.py:111-113` — hangs forever on interactive `--cookies -` misuse
 
 [BUG] `sys.stdin.read()` blocks until EOF; the empty-stdin guard at

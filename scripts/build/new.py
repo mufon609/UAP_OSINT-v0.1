@@ -178,11 +178,11 @@ def main():
             "ERROR: --archival-status required when doc_form=book. "
             "Valid values: full-text-archived, excerpts-only, not-archived"
         )
-    # Validate archival-status value when supplied. Direct subscript:
-    # archival_status is only set on document type, where
-    # ``archival_status_values`` is declared, so schema malformation
-    # surfaces loudly.
     if args.archival_status:
+        if args.type != "document":
+            sys.exit(
+                "ERROR: --archival-status only applies to --type document"
+            )
         valid_archival = type_spec["archival_status_values"]
         if args.archival_status not in valid_archival:
             sys.exit(f"ERROR: Invalid --archival-status. Valid: {valid_archival}")
