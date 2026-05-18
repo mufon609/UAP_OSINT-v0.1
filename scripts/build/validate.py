@@ -284,8 +284,13 @@ def main():
                 loaded = strict_yaml_load(f)
             if isinstance(loaded, list):
                 manifest_entries = loaded
-        except yaml.YAMLError:
-            pass  # manifest_parse preflight yields the Issue
+        except (yaml.YAMLError, OSError) as e:
+            print(
+                f"validate.py: warning — couldn't preload manifest "
+                f"({type(e).__name__}: {e}); manifest_parse check will "
+                f"surface details",
+                file=sys.stderr,
+            )
 
     base_ctx = BaseContext(schema=schema, manifest_entries=manifest_entries)
 

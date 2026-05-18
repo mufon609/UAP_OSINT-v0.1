@@ -243,7 +243,7 @@ def walk_artifact(artifact_path: Path, include_canonical: bool):
     try:
         with open(artifact_path) as f:
             data = strict_yaml_load(f)
-    except Exception as e:
+    except (OSError, yaml.YAMLError) as e:
         print(f"warning: {artifact_path}: parse failed ({e})", file=sys.stderr)
         return
     if not isinstance(data, dict):

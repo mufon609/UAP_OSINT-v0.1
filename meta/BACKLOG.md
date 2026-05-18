@@ -94,17 +94,3 @@ cost.
 C1 retired 2026-05-17 — shipped as `scripts/tools/extract-firefox-cookies.py`;
 ID held open per the gap-stable retirement rule.
 
-### C12 — Silent `except` swallow at four parser/IO sites
-
-[BANDAID] `scripts/build/validate.py:287-288`,
-`scripts/build/validate-research.py:298-299`,
-`scripts/build/research-scaffold.py:160-172`, and
-`scripts/tools/normalize-locations.py:246` swallow YAML or IO errors
-and rely on a downstream check (or contributor judgment) to
-re-detect. Permission errors, encoding errors, and partial parses
-silently become "empty" rather than surfacing. Audit each site:
-either narrow the exception class to the documented expected mode,
-or surface the error with context.
-
-Surfaced: 2026-05-17 repo audit.
-

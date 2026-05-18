@@ -295,8 +295,15 @@ def validate_artifact(path, base_ctx):
                 data = strict_yaml_load(text)
             except yaml.YAMLError as e:
                 parse_error = str(e)
-        except OSError:
-            pass  # raw_lines stays []; artifact_parse catches missing file
+        except FileNotFoundError:
+            pass  # artifact_parse downstream surfaces the missing-file Issue
+        except OSError as e:
+            print(
+                f"validate-research.py: warning — couldn't read {rel} "
+                f"({type(e).__name__}: {e}); artifact_parse will report "
+                f"as missing",
+                file=sys.stderr,
+            )
 
     # Pre-parse: ResearchContext minimal (raw_lines only; data + parse_error
     # carried for the artifact_parse preflight that follows).

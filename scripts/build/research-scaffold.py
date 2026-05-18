@@ -153,13 +153,21 @@ def build_primary_sources_list(source_paths, manifest):
 def _read_target_frontmatter(node_type, slug):
     """Read the target node's frontmatter and return it as a dict (or
     empty dict on failure). Shared helper used for archetype (person)
-    and kind (event) reads."""
+    and kind (event) reads. Warns to stderr on read / parse failures
+    so the contributor knows why the scaffold may be missing
+    archetype/kind-specific sections."""
     path = target_node_file(node_type, slug)
     if not path.exists():
         return {}
     try:
         text = path.read_text(encoding="utf-8", errors="replace")
-    except OSError:
+    except OSError as e:
+        print(
+            f"research-scaffold.py: warning — couldn't read {path} "
+            f"({type(e).__name__}: {e}); scaffold may be missing "
+            f"archetype/kind-specific sections",
+            file=sys.stderr,
+        )
         return {}
     if not text.startswith("---"):
         return {}
@@ -168,7 +176,13 @@ def _read_target_frontmatter(node_type, slug):
         return {}
     try:
         return strict_yaml_load(text[3:end]) or {}
-    except yaml.YAMLError:
+    except yaml.YAMLError as e:
+        print(
+            f"research-scaffold.py: warning — frontmatter parse failed "
+            f"for {path} ({e}); scaffold may be missing archetype/"
+            f"kind-specific sections",
+            file=sys.stderr,
+        )
         return {}
 
 
