@@ -3666,7 +3666,7 @@
   archived_date: '2026-05-19'
   sha256: 3eb43cf7f3395c9a103fbf67b43f865d47de570186dd587fa3913f3a2a705f50
   archive_status: 1
-  note: 'Auto-caption transcript of Ross Coulthart Q&A ''New Church Commission, CIA lies and the galactic federation'' (NewsNation Reality Check, 2026-05-17, 31:24, co-host Meagan Medick). Downloaded via transcribe.py + yt-dlp + Firefox cookies on 2026-05-19.'
+  note: Auto-caption transcript of Ross Coulthart Q&A 'New Church Commission, CIA lies and the galactic federation' (NewsNation Reality Check, 2026-05-17, 31:24, co-host Meagan Medick). Downloaded via transcribe.py + yt-dlp + Firefox cookies on 2026-05-19.
   transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=9DUmMdSQXHk
   format: transcript
@@ -3696,6 +3696,14 @@
   note: 'Lucis Trust Arcane School Conference London, May 2015 — Dr. James T. Ryder presentation ''The Soul Is Light. What Then Is Light?'' (Lucis Trust productions video published 2020-08-07 on the Lucis Trust YouTube channel; runtime 1:06:49). Transcript provenance: contributor-pasted from the YouTube transcript UI (same workflow as 2025-09-09 hearing transcript), then reformatted from bare-timestamp-on-its-own-line to canonical [MM:SS]-inline form to match the corpus convention used by other YouTube-caption transcripts in /sources/transcripts/. Auto-caption transcript with [MM:SS] timestamps preserved on every content line. Contains: IBEX (Interstellar Boundary Explorer) ''built in my lab'' first-person attestation of Lockheed Martin ATC supervisory role; Andromeda matter-halo survey instruments built by his company; Hal Puthoff ''my friend Dr. Puthoff'' + cosmic-matrix paper citation; first read Alice Bailey Treatise on Cosmic Fire ~1970 (3 years before 1973 Lockheed start); governments researching ''telepathy'' for ''purposes of invading other people in a secret way'' (auto-caption renders ''telepathy'' as ''leprosy'' in the body); plasma-vs-gas Sun mislabeling discussion; David Bohm + Stephen Hawking 2014 Nature article + Feynman last-book citations.'
   wayback_date: '2024-09-30'
   transcript_provenance: auto-caption
+- url: https://www.youtube.com/watch?v=KQ7Dw-739VY
+  format: video
+  status: archived
+  path: video/2023-07-26-house-oversight-uap-hearing-kq7dw-739vy.mp4
+  archived_date: '2026-05-19'
+  sha256: 5eed865986c457b1806b2d98be56746f46aaece7ef2cb56055e4c4639ef7c4a0
+  archive_status: 1
+  note: Embedded video on the official oversight.house.gov hearing page (government/oversight-house-gov-hearing-page-20230726.html, archived 2026-04-22). Speaker baselines for direction-1 warnings on /people/david-fravor + /people/ryan-graves; Grusch already baselined separately.
 - url: https://www.youtube.com/watch?v=MiUDl_9v6Ag
   format: transcript
   status: archived

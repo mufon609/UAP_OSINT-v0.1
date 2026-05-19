@@ -36,6 +36,18 @@
   added_date: '2026-05-18'
   source_video_url: https://www.youtube.com/watch?v=C4rSj5Aum7w
   note: Three-quarter view, mid-doc — different lighting / angle than ref_01 for cross-pose robustness.
+- identity: david-fravor
+  path: baselines/david-fravor/ref_01.jpg
+  sha256: 40b498d62fe87ee4b1ea997ad9bff27202c9b7b49888ae6737649ae1f5574932
+  source_video_path: sources/video/2023-07-26-house-oversight-uap-hearing-kq7dw-739vy.mp4
+  source_timestamp: '59:30'
+  bbox:
+  - 265
+  - 80
+  - 150
+  - 150
+  added_date: '2026-05-19'
+  note: Manually cropped from 59-30 anchor — Haar cascade missed Fravor at every anchor frame (54-06, 59-30, 1-00-30) despite clean frontal close-ups; glasses + camera angle likely defeating the cascade. Crop region (x=265,y=80,w=150,h=150) resized to 256x256 via PIL.LANCZOS. Cmdr. David Fravor (Ret.) at the witness table; 'CDR. Fravor (Ret.)' placard confirms identity. 2023-07-26 House Oversight UAP hearing — Fravor delivered opening statement around this point. Same manual-crop workflow as george-knapp/ref_01 + james-ryder/ref_03.
 - identity: david-grusch
   path: baselines/david-grusch/ref_01.jpg
   sha256: d965b6846e4afa372a33a84e838e91516b9793c7866c687218fa0f1350c300dd
@@ -207,3 +219,15 @@
   - 194
   added_date: '2026-05-19'
   note: Frontal angle, same NewsNation studio segment — cross-pose pair with ref_01 three-quarter angle.
+- identity: ryan-graves
+  path: baselines/ryan-graves/ref_01.jpg
+  sha256: f5ee8693054d36690ccded40214ea4208ca2d290ae20373be0fe802cae33dc29
+  source_video_path: sources/video/2023-07-26-house-oversight-uap-hearing-kq7dw-739vy.mp4
+  source_timestamp: '1:02:30'
+  bbox:
+  - 268
+  - 51
+  - 89
+  - 89
+  added_date: '2026-05-19'
+  note: Haar-detected frontal close-up at the witness table during Graves's opening statement. 'Mr. Graves' placard visible in adjacent anchors (1-00-30 wide shot showing all three witnesses; 1-02-30 / 1-05-00 close-ups) confirms identity. Bald younger man, dark suit, blue tie. 2023-07-26 House Oversight UAP hearing.
