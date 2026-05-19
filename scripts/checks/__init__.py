@@ -59,9 +59,9 @@ class Issue:
     decorating the stream.
 
     ``line`` is deliberately not a structured field — checks that know
-    the line embed it in ``message`` (e.g., the verbatim-quote check
-    writes ``"Quote at line 42 ..."``). Promote when a structured
-    consumer (``--format json``, IDE integration) needs it.
+    a location embed it in ``message`` (e.g., entry-shape checks write
+    ``"quotes[3] ('q12'): ..."``). Promote when a structured consumer
+    (``--format json``, IDE integration) needs it.
 
     ``tokens`` carries a structured payload for checks whose human-
     readable ``message`` is necessarily truncated (e.g., prose-drift

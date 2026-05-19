@@ -38,6 +38,61 @@ boundary-correct home for them. If a genuinely toolkit-neutral
 externally-blocked item ever surfaces (rare), reinstate the
 "Externally blocked" heading at the bottom of this file.
 
+Cross-references between entries use `**Blocks:**` /
+`**Blocked by:**` / `**A2 effect:**` lines so the dependency graph
+is visible inline. The "Roadmap forward" section below traces the
+full graph for items in the A2 chain.
+
+---
+
+## Roadmap forward
+
+Section A items participate in a dependency chain anchored by
+**A2** (multi-agent decomposition of source-prep + Phase I). The
+graph below shows what blocks what, and what A2 retires or absorbs
+on landing. Cross-reference lines on individual items name their
+position in the graph.
+
+**Tier 0 — A2 prerequisites (must resolve first; can land
+independently in any order):**
+
+- **C29** — manifest URL ↔ artifacts model
+- **C33** — verbatim-quote normalization architecture
+- **A3** — quote-section redesign
+
+**Tier 1 — A2 sub-task (scoped after A2's agent decomposition is
+settled; implementation co-lands with A2):**
+
+- **A4** — per-phase validator dispatch
+
+**Tier 2 — A2 implementation:**
+
+- **A2** — multi-agent decomposition of source-prep + Phase I
+
+**Retired or reduced by A2 on landing:**
+
+- **C30** — source-prep orchestrator (fully retired; can ship as
+  interim orchestrator if A2 stays roadmap-scoped)
+- **C5** — auto-generate per-type section list in prompts/build.md
+  (retired if A2 replaces the monolithic narrative with per-agent
+  prompts)
+- **C27** — reader-visibility discipline (workflow half absorbed by
+  builder agent; schema-comment half stays independent)
+- **C28** — interview-node entities_referenced discipline
+  (mechanically absorbed by meta-linker; convention text in
+  meta/conventions.md still needed as the agent's source)
+- **C31** — preflight discipline audit (reduced; manual-invocation
+  case stays for tools called outside the agent chain)
+- **C32** — research-scaffold placeholder shape (narrows to
+  non-marker-populated fields)
+
+**Independent of the A2 chain:**
+
+- **A1** — entities_referenced[] body rendering (orthogonal
+  renderer decision)
+- **C34** — schema↔CLI parity check (orthogonal mechanism question;
+  blocked by C29 for its only known concrete drift instance)
+
 ---
 
 ## A. Priority sequence
@@ -123,6 +178,301 @@ entry `event` fields alongside `entities_referenced[]` entries to
 force broken-link discovery. That duplication is the workaround the
 investigation exists to retire.
 
+**Blocks:** none.
+**Blocked by:** none (independent renderer decision; in Section A
+because the investigation has coupling constraints across renderer,
+schema, validator, and AGENT.md query-layer surfaces).
+
+---
+
+### A2 — Multi-agent decomposition of source-prep + Phase I
+
+**Proposal framing.** Today the contributor is the synchronization
+layer between every stage of node construction — source URL →
+archived file → extracted text → quote candidates → artifact prose
+→ node body → cross-references → validation. Slug consistency is
+contributor-enforced across multiple tools, load-bearing-ness is
+contributor-judged against primary sources, quote organization and
+cross-reference completeness and build-step ordering all flow
+through the same single contributor mind. This proposal decomposes
+that work into specialized agent stages with mechanical handoff
+between them.
+
+**Proposed pipeline.**
+
+1. **Investigator agent** — given a target node, produces a list of
+   candidate primary sources and a per-source one-line summary of
+   what each source contains. No archival yet; the output is the
+   source plan.
+2. **Verifier agent** — reads each candidate source, confirms it is
+   genuinely load-bearing to the target node's investigation (not
+   incidental, not duplicate), runs `scripts/tools/manifest.py add`
+   to archive the confirmed sources, and emits a handoff stub
+   recording its decision.
+3. **Marker agent** — runs once per archived source, identifies the
+   load-bearing spans inside each, and emits structured
+   quote-candidate stubs (text + source location + significance) for
+   the manager stage to consume.
+4. **Manager agent** — consumes per-source marker output, decides
+   which quote candidates land in the node and how they're
+   organized. The quote-section structure itself may need redesign
+   as part of this work (see Quote-section sub-question below).
+5. **Meta-linker agent** — populates remaining cross-reference
+   surfaces (`entities_referenced`, `relationships`, `affiliations`,
+   `timeline` cross-refs) once the quote layer is settled.
+6. **Builder agent** — runs `build-from-research.py` +
+   `validate.py` + `review-coverage.py`, resolves or logs
+   validation findings.
+
+Each agent emits a **handoff stub** — a small temp artifact
+recording who-did-what-why and what the next agent inherits. Stubs
+are debugging surfaces, not load-bearing data; they exist so a
+failure mid-pipeline can be traced back to the agent that produced
+the upstream artifact.
+
+**Quote-section sub-question.** The current node-body quote section
+may need to be redesigned to be less clunky. The constraints are no
+info loss and no duplicate noise. A person node always points to
+the source nodes anyway, so verbatim quote content remains
+recoverable from the source layer even if the person-node surface
+itself is leaner. This is a separable structural decision and likely
+wants its own BACKLOG entry once the multi-agent decomposition is
+scoped.
+
+**Surfaces an investigation has to walk.**
+
+- `prompts/build.md` — the canonical Phase I/II/III walkthrough the
+  multi-agent decomposition replaces or extends.
+- `scripts/build/` — the existing scaffold / extract /
+  build-from-research / validate / review-coverage tools each
+  proposed agent invokes.
+- `scripts/tools/manifest.py` — the archival entry point; its dedup
+  semantics shape the verifier-agent contract.
+- `meta/schema.yaml` and `meta/schema-research-artifact.yaml` — the
+  data contracts each agent reads or writes.
+- `meta/conventions.md` — the source-read-first rule, the
+  synthesis-confirmation invariant, the speaker-attribution rule,
+  the quotes-by-not-about discipline.
+
+**Open design questions before implementation.**
+
+1. **Load-bearing determination without source-read is a regression.**
+   The investigator agent listing "what each source contains" cannot
+   summarize from training knowledge or from the URL alone — the
+   source-read-first rule applies. Either the investigator agent
+   also reads each source (collapsing investigator + verifier into
+   one source-read-then-archive stage), or it produces only a
+   candidate list that the verifier reads and prunes against the
+   archived text.
+2. **Handoff-stub home.** Temp file under `/tmp/`? Sidecar YAML next
+   to the research artifact? Frontmatter block on the artifact?
+   Comment region inside the artifact? Each has different
+   post-mortem-debuggability properties — temp files vanish on
+   reboot; sidecars live with the artifact in git; in-artifact
+   comments mix data with provenance.
+3. **Quote-section redesign scope.** Per-quote verification blocks
+   today carry source link, attribution, context, observation type,
+   significance. Which fields move, which compress, and what the
+   node-body rendering looks like vs. the artifact layer — open.
+4. **Agent boundary discipline.** Phase II/III rebuild loops surface
+   failures invisible until validation. More agents create more
+   synchronization points; the proposal needs to be explicit about
+   which agents read primary sources directly vs. consume upstream
+   agent output, and how a defect attributable to a stage three
+   agents upstream is handled when validation surfaces it.
+
+**Out of scope until upstream structural items resolve.**
+
+- **C29** — manifest URL ↔ artifacts model. The verifier-agent /
+  `manifest.py add` contract depends on whether one URL maps to one
+  entry or one URL maps to many entries.
+- **C33** — verbatim-quote normalization architecture. The marker
+  agent's extraction primitive depends on what counts as a
+  verbatim match.
+- **A3** — quote-section redesign. The manager-agent's contract
+  (how it organizes quotes into the node) depends on what the
+  rendered quote section looks like.
+- **A4** — per-phase validator dispatch. The agent-chain handoff
+  stubs ARE the per-phase validator outputs. A4 is scoped after
+  A2's agent list is settled, but A2's implementation depends on
+  A4 mechanics being in place.
+
+**Candidate alternative resolutions** (listed for the decision space,
+not as recommendations):
+
+- **Status quo + tooling polish** — keep Phase I/II/III monolithic;
+  retire contributor-as-glue via the C30 orchestrator (single
+  slug-threaded command), C32 scaffold placeholders, C31 preflight
+  discipline. Decomposes the friction without introducing agent
+  boundaries.
+- **Two-phase decomposition** — split source-prep from
+  artifact-construction; keep artifact construction monolithic.
+  Investigator + verifier + marker handle pre-Phase-I; Phase I
+  onwards stays one-agent.
+- **Phase-internal sub-tasks, not agents** — keep Phase I
+  monolithic but formalize the investigator → verifier → marker →
+  manager → meta-linker steps as a checklist with mechanical
+  handoff inside `prompts/build.md`, not as separate agent
+  invocations.
+
+**Surfaced from.** Contributor observation that the same contributor
+mind currently carries every coordination decision across
+source-prep + Phase I + Phase II + Phase III, with no mechanical
+handoff at stage boundaries.
+
+**Blocks:** retires C30, absorbs sub-pieces of C5 / C27 / C28 / C31 / C32 on landing.
+**Blocked by:** A3, A4, C29, C33.
+
+---
+
+### A3 — Quote-section redesign
+
+**Open structural question.** The current node-body quote section
+carries per-quote verification blocks with source link,
+attribution, context, observation type, and significance. Across
+the corpus this produces dense, repetitive surfaces — a person
+node citing many statements becomes a long quote-block stream. The
+constraint is load-bearing: every claim must trace to a verbatim
+source. The question is whether the rendered surface can be leaner
+without losing the evidentiary trace.
+
+**Constraints.**
+
+1. **No info loss.** Every quote that supports a claim must remain
+   recoverable, with verbatim text + source link + attribution.
+2. **No duplicate noise.** A person node citing the same source for
+   five quotes shouldn't repeat the source attribution five times
+   in the body. The artifact layer carries the data; the rendered
+   surface is the presentation.
+3. **The source node carries the canonical quote text.** A person
+   node always points to the source node (document / transcript /
+   media); the verbatim quote already lives there. The person node
+   could carry compressed references rather than full verbatim
+   repetition, since the source node is one click away.
+
+**Candidate approaches** (listed for the decision space; none
+recommended):
+
+- **Compressed reference layout.** Person node renders a short
+  attribution + significance + link to the source node's quote.
+  Full verbatim text lives only in the source node. Smallest body
+  surface; highest navigation cost for a reader who wants the
+  quoted text inline.
+- **Source-grouped layout.** Multiple quotes from the same source
+  render under one attribution heading, not one per quote.
+  Eliminates repetition without losing inline verbatim text.
+- **Collapsible blocks.** Body renders full quote in a
+  collapsible HTML detail/summary structure. Compact by default,
+  expandable on demand. Breaks pure-Markdown discipline (renderer
+  would need to emit raw HTML).
+- **Status quo + tighter discipline.** Keep per-quote blocks;
+  retire the duplicative attribution / context / observation-type
+  fields where the source layer already carries them. Smallest
+  structural change.
+
+**Surfaces an investigation has to walk.**
+
+- `scripts/build/renderers/{person,document,event,transcript}.py` —
+  current quote rendering across types.
+- `meta/schema-research-artifact.yaml` — per-quote required fields.
+- `meta/conventions.md` "Statements as the universal evidentiary
+  primitive" — the principle the section enforces.
+- A representative sample of dense person nodes (e.g.,
+  `karl-nell`, `david-grusch`) to see how the current surface
+  reads against each candidate layout.
+
+**Blocks:** A2 (the manager agent's contract — how it organizes
+quotes into the node — depends on what the rendered quote section
+looks like).
+**Blocked by:** none.
+
+**Surfaced from:** A2 proposal flagged this as a sibling
+structural question. Quote-section structure is independent of the
+agent-decomposition question but blocks A2 implementation.
+
+---
+
+### A4 — Per-phase validator dispatch (sub-task of A2)
+
+**Proposal framing.** Today `scripts/build/validate.py` runs ~60
+check modules in `scripts/checks/` as a single end-of-build pass.
+Under A2's multi-agent decomposition, each agent emits a phase
+boundary where a defined subset of checks reads the artifact
+state that agent just wrote. Per-phase dispatch makes the
+validator clustering match the agent boundaries — and the
+per-phase validation output IS each agent's handoff stub.
+
+**Natural clustering** (mapped to A2 agent boundaries):
+
+- **Always at the top** (pre-flight on every phase invocation):
+  `frontmatter_parse`, `frontmatter_required`, `artifact_parse`,
+  `artifact_top_level`, `schema_version_compat`,
+  `yaml_colon_space`, `yaml_hash_truncation`, `id_path_match`.
+- **After verifier** (source archival): `manifest_parse`,
+  `manifest_value_enums`, `manifest_archive_status`,
+  `manifest_checksums`, `manifest_checksum_at_extraction`,
+  `manifest_extraction_type`.
+- **After marker** (quote extraction): `verbatim_quotes`
+  (artifact-side post-C4), `quotes`, `speakers`,
+  `speaker_baseline_consistency`.
+- **After manager** (free-prose synthesis): `prose_drift`,
+  `description_token_drift`, `top_scope_activity`,
+  `corroboration_items`, `vouching_chain`, `hypotheses`,
+  `open_questions`, `naming_quirks`.
+- **After meta-linker** (cross-references): `entities_referenced`,
+  `stub_linking`, `relationships`, `affiliations`,
+  `key_personnel`, `timeline`, `chronological_tables`,
+  `org_relationships`, `location_relationships`,
+  `program_involvement`, `ownership_timeline`, `participants`,
+  `cross_refs`, `closure_path`, `iff_section`.
+- **After builder** (render-time): `link_resolution`,
+  `required_sections`, `section_rules`, `cited_findings`,
+  `contracts`, `contradictions`, `coverage`,
+  `table_cell_word_budget`, `boundary`, `phase_iii_inputs`,
+  `does_not_establish`, `establishes`.
+
+The clustering above is illustrative; the implementation has to
+classify every check module by which artifact field it reads,
+which may surface checks that don't cleanly belong to one phase.
+
+**Open design questions before implementation.**
+
+1. **CLI surface.** `validate.py --phase {verifier|marker|manager|
+   meta-linker|builder}` flags, or per-phase invocations stay
+   full-pass with each agent filtering by its own checklist?
+2. **Phase-not-yet-reached handling.** If marker has run but
+   manager hasn't, and `--phase manager` is invoked, does it skip
+   silently (agent isn't there yet) or error (you ran it out of
+   sequence)?
+3. **Final-pass guarantee.** Even with per-phase dispatch, a final
+   full-pass remains valuable as the global consistency check.
+   Does the builder agent's final run BE the full pass, or is
+   full-pass a separate contributor-invoked step?
+4. **Re-run discipline.** When an upstream agent re-runs (e.g.,
+   manager edits prose after meta-linker has already populated
+   cross-refs), do downstream phases auto-invalidate or does the
+   contributor manually re-trigger them?
+
+**Surfaces an investigation has to walk.**
+
+- `scripts/build/validate.py` — current `_NODE_CHECKS` dispatch.
+- `scripts/build/validate-research.py` — current
+  `_ARTIFACT_CHECKS` dispatch.
+- `scripts/checks/` — every per-check module (each needs
+  classification by which artifact field it reads).
+
+**Blocks:** A2 (the agent-chain handoff stubs ARE the per-phase
+validator outputs; without per-phase dispatch, A2's agent
+boundaries have no mechanical verification).
+**Blocked by:** A2's agent list needs to be settled before the
+check-to-agent mapping can be finalized. Not blocked by A2
+implementation.
+
+**Surfaced from:** A2 proposal — the contributor question "can
+the check scripts be broken into different phases instead of a
+massive last-minute call" pointed at this as the
+architecturally-natural mechanism for agent handoff verification.
+
 ---
 
 ## B. Parallel batch (renderer pass)
@@ -138,56 +488,6 @@ separate touch.
 Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
-
-### C4 — Move verbatim-quote check from rendered Markdown to research artifact
-
-The verbatim-quote check (`scripts/checks/verbatim_quotes.py`, dispatched
-per-node by `validate.py` via `_NODE_CHECKS`) parses the rendered node
-body to locate quotes: a blockquote regex finds `> ...` blocks, then a
-2500-character window scan finds the following `| Source | ... |` row,
-then a markdown-link regex extracts `(../sources/{path})`, then the
-quote is substring-checked against the extracted source text.
-
-The check then has a defensive `continue` branch for any Source row that
-doesn't match the `(../sources/...)` pattern — a "soft case" silent-skip
-on malformed Source rows. Across the current corpus this branch never
-fires (1205 rendered Source rows + 2256 artifact `quotes[].source.path`
-values all canonical), but a hand-edited node body or a renderer
-regression would slip through silently — exactly the silent-drift class
-of failure the check exists to catch.
-
-The structural fix: dispatch the check from the artifact layer, not the
-rendered layer. The artifact's `quotes[]` carry `text` + `source.path`
-as structured fields; substring-check `text` against the source extracted
-at `source.path`. Concrete changes:
-
-- New per-artifact check, `scripts/checks/verbatim_quotes_artifact.py`
-  (or rename the existing module and re-purpose it), dispatched from
-  `validate-research.py::_ARTIFACT_CHECKS`.
-- Retire the per-node markdown-parsing implementation in
-  `scripts/build/validate.py::_NODE_CHECKS`.
-- Drop the markdown-link regex, the blockquote regex, and the 2500-char
-  search window — all artifacts of parsing rendered output that the
-  artifact-side check doesn't need.
-- Update `validate.py`'s `__doc__` block + `meta/conventions.md`
-  "Statements as the universal evidentiary primitive" / "Confirmation
-  is a precondition for inclusion" to reflect that verification is
-  artifact-side, with the rendered node faithful to the artifact by
-  construction.
-
-Side benefits:
-- Faster (no per-node markdown regex pass).
-- The 2500-char magic number disappears with the markdown-side check.
-- Architecturally consistent with the rest of the validator chain:
-  drift / coverage / prose-drift checks all already run against the
-  artifact, not the rendered node.
-
-Why it matters: the current per-node check reaches 0 errors because
-everything is renderer-emitted, but the architecture inverts the
-source-of-truth direction (verifies generated output, not the
-structured source). Moving to artifact-side is the principled fix —
-the rendered node stays faithful to the artifact by construction
-rather than by happenstance.
 
 ### C5 — Auto-generate the per-type section list in `prompts/build.md`
 
@@ -229,6 +529,10 @@ duplication between governance docs and source-of-truth layers
 fix, but closes the documentation-drift surface for forks and schema
 evolution.
 
+**A2 effect:** retired in full when A2 replaces the monolithic
+`prompts/build.md` narrative with per-agent prompts. Until A2
+ships, this remains a tractable standalone fix.
+
 ### C27 — Split reader-visibility discipline into audit prompt + schema comments
 
 The rule "verify a fix actually surfaces in the rendered node before
@@ -264,6 +568,11 @@ Concrete work:
    (memory, code comment, BACKLOG note), delete it; the new homes are
    canonical.
 
+**A2 effect:** workflow-discipline half ("regenerate + grep"
+verification) absorbed by the builder agent's contract. The
+schema-comment half (per-field render catalog in
+`schema-research-artifact.yaml`) stays independent of A2.
+
 ### C28 — Promote interview-node entities_referenced discipline; optional audit aid
 
 Two related pieces:
@@ -297,6 +606,11 @@ nouns inside quoted source / etc. Premature enforcement reintroduces
 the category-tuned-threshold failure mode.
 
 (b) is optional follow-up; (a) is the load-bearing work.
+
+**A2 effect:** (a) the discipline is mechanically encoded by the
+meta-linker agent's contract. (b) the optional audit aid retires —
+the meta-linker's own check is the audit. The convention text in
+`meta/conventions.md` still needs to exist as the agent's source.
 
 ### C29 — One source URL ↔ many archived artifacts: no schema model
 
@@ -401,6 +715,11 @@ the visual tools (`extract-frames.py`, `detect-faces.py`,
 disk by path and never consult the manifest for it; the unregistered
 state surfaces only when a node tries to cite the video URL.
 
+**Blocks:** A2 (verifier-agent / `manifest.py add` contract), C34
+(the only concrete schema↔CLI drift instance is the manifest
+URL-uniqueness gap C29 hasn't decided).
+**Blocked by:** none.
+
 ### C30 — Source-prep orchestrator: single command for the full caption + video chain
 
 Preparing one YouTube source for a person node currently chains four
@@ -455,6 +774,12 @@ The walkthrough ran each step manually to evaluate the pipeline; the
 slug-consistency requirement and the multi-tool consent gates
 emerged as the two friction points an orchestrator would close.
 
+**A2 effect:** fully retired when A2 ships. The verifier + marker
+agents absorb the orchestration; slug consistency becomes
+agent-internal. Could ship as an interim orchestrator if A2 stays
+roadmap-scoped, but the work does not carry forward into A2 — the
+agents replace the orchestrator rather than build on it.
+
 ### C31 — Preflight discipline audit across `scripts/tools/`
 
 Tools that depend on environmental prerequisites (env vars, gated
@@ -503,6 +828,11 @@ Candidate resolutions (none recommended; listed for completeness):
 shared preflight helpers; `meta/conventions.md` "Inside /scripts/"
 for the landing rules; `scripts/tests/` for the smoke / help-check
 patterns the preflight standard would integrate with.
+
+**A2 effect:** agent-invocation case reduced — agents preflight on
+their own behalf before invoking tools. Manual-invocation case
+stays: tools called directly by contributors outside the agent
+chain still want preflight discipline.
 
 ### C32 — `research-scaffold.py` should emit placeholder entries showing required shape
 
@@ -554,6 +884,13 @@ scaffold.py`; `meta/schema-research-artifact.yaml` (the
 per-entry shape specs); `scripts/checks/` (the validators that
 detect missing fields); `prompts/build.md` Phase I Step 1
 (how the scaffold integrates with the build prompt).
+
+**A2 effect:** narrows to non-marker-populated fields. The marker
+agent fills `quotes[]` (and possibly `timeline[]`) from sources;
+those fields no longer need placeholder teaching. Free-prose
+fields (`description`, `background`, `top_relevance`,
+`credibility_notes`) and structured-data lists not auto-populated
+(`affiliations`, `relationships`) still want scaffold placeholders.
 
 ### C33 — Verbatim-quote normalization: principled refactor vs. reactive patches
 
@@ -624,6 +961,9 @@ primitive" (the principle the check enforces); the existing
 drift via contributor declaration rather than mechanical
 normalization).
 
+**Blocks:** A2 (marker-agent extraction primitive).
+**Blocked by:** none.
+
 ### C34 — Schema↔CLI parity check
 
 The schema (`meta/schema.yaml::manifest_entry`) and the CLI
@@ -673,4 +1013,11 @@ research-artifact.yaml` (the entry-shape specs CLI scaffolders
 need to honor); `scripts/build/research-scaffold.py`,
 `scripts/build/new.py`, `scripts/build/build-state.py` (other
 CLI tools whose behavior implicitly assumes schema semantics).
+
+**Blocks:** none.
+**Blocked by:** C29 (the only known concrete drift instance is the
+manifest URL-uniqueness gap, which is precisely what C29 hasn't
+decided). The parity-mechanism question itself is unblocked, but
+has no second drift instance to design against until C29 resolves
+or the corpus surfaces another mismatch.
 

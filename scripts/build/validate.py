@@ -25,27 +25,6 @@ Checks:
 
   Finding cross-ref consistency — entities listed must link back
 
-  Verbatim-quote check — for every '> blockquote' followed by an
-  attribution block whose Source row points at an archived file under
-  `sources/`, extract the cited source to plaintext and confirm the
-  quote appears as a substring (with whitespace/dash/quote-style
-  normalization). Errors if the quote is not present, with a failure
-  message naming the node, approximate line number of the block-quote,
-  the cited source file, and a preview of the unmatched text.
-
-  Runs unconditionally — confirmation against the underlying source
-  is a precondition for inclusion in node bodies, not a marker the
-  contributor opts into. The check has no rendered counterpart in node
-  output (no Verified row) by design; the source link IS the evidence
-  for readers, this check is the mechanical backstop against silent
-  drift between an artifact's quote text and the source it claims to
-  draw on. See meta/conventions.md.
-
-  Requires `pdftotext` for PDF sources (poppler-utils on Linux);
-  HTML/TXT sources read directly. PDFs flagged
-  `extraction_type: ocr-scan` in sources/manifest.yaml prefer a
-  same-stem `.txt` sibling (clean transcription) over pdftotext output.
-
   Manifest-checksum check — for every archived entry in
   sources/manifest.yaml, recompute SHA256 and compare to stored value.
   Errors on: file missing on disk, missing sha256 field when required,
@@ -132,7 +111,6 @@ from checks import schema_version_compat as ck_schema_version_compat
 from checks import section_rules as ck_section_rules
 from checks import status_archetype_kind as ck_status_archetype_kind
 from checks import table_cell_word_budget as ck_table_cell_word_budget
-from checks import verbatim_quotes as ck_verbatim_quotes
 
 # =============================================================================
 # Per-node validation orchestration
@@ -151,7 +129,6 @@ _NODE_CHECKS = [
     ck_conditionally_required,
     ck_required_sections,
     ck_section_rules,
-    ck_verbatim_quotes,
     ck_chronological_tables,
     ck_link_resolution,            # writes to ctx.broken_links; yields no Issues
     ck_table_cell_word_budget,

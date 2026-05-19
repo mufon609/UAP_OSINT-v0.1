@@ -221,9 +221,9 @@ def _render_attribution_block(quote, artifact):
     quote.context (when set) and quote.statement_date (when set); skips
     the date append if it already appears in the context string. The
     block carries no verification marker — confirmation against the
-    underlying source is a precondition for inclusion (enforced by
-    validate.py's verbatim-quote check), not a rendered claim. See
-    meta/conventions.md."""
+    underlying source is a precondition for inclusion (enforced
+    artifact-side by the verbatim-quote check), not a rendered claim.
+    See meta/conventions.md."""
     ctx = quote.get("context") or ""
     date = quote.get("statement_date") or ""
     if date and date in ctx:
@@ -308,8 +308,8 @@ def _render_compact_statement_block(quote, text):
     quote_line = f"> {text}" if text else ">"
     if attr_line:
         # Blank line breaks the blockquote — attribution renders as a
-        # separate italicized paragraph. Keeps it out of the
-        # verbatim-quote check's blockquote scan.
+        # separate italicized paragraph so the reader sees the quote
+        # and its attribution as visually distinct surfaces.
         return f"{quote_line}\n\n_{attr_line}_"
     return quote_line
 

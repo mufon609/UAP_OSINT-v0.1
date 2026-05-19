@@ -20,7 +20,16 @@ Per-artifact checks (after parse + ResearchContext construction):
                                          version compat, target_node
                                          existence, person/event prose
                                          keys, description-required.
-  - primary_sources, quotes, entities, naming_quirks
+  - primary_sources, quotes, verbatim_quotes, entities, naming_quirks
+                                       — quotes is shape; verbatim_quotes
+                                         substring-matches each quote's
+                                         text against the extracted
+                                         source file (load-bearing
+                                         fabrication backstop). Source-
+                                         of-truth verification is artifact-
+                                         side; the rendered node inherits
+                                         the verified quote text from
+                                         the artifact by construction.
   - rumors, timeline                  — type-conditional
   - corroboration_items, program_involvement, publication_record,
     vouching_chain                    — archetype/kind-conditional
@@ -121,6 +130,7 @@ from checks import speaker_baseline_consistency as ck_speaker_baseline_consisten
 from checks import speakers as ck_speakers
 from checks import timeline as ck_timeline
 from checks import top_scope_activity as ck_top_scope_activity
+from checks import verbatim_quotes as ck_verbatim_quotes
 from checks import vouching_chain as ck_vouching_chain
 from checks import witnesses_testimony as ck_witnesses_testimony
 
@@ -222,6 +232,7 @@ _ARTIFACT_CHECKS = [
     ck_primary_sources,
     ck_manifest_checksum_at_extraction,
     ck_quotes,
+    ck_verbatim_quotes,
     ck_entities_referenced,
     ck_naming_quirks,
     # Type-conditional entry-list checks

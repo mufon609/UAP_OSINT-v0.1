@@ -82,12 +82,15 @@ verifies a quote by following the link to the archived source, not
 by reading a checkbox.
 
 The principle is enforced mechanically by the build validator: the
-verbatim-quote check fails any commit where a quote's text does not
-appear in the extracted source. The enforcement is invisible to the
-reader by design. The validator catches silent drift (a quote edited
-in an artifact months later that no longer matches the source) and
-broken source references; it does not, and cannot, perform trust on
-the reader's behalf.
+verbatim-quote check fails any commit where a quote's `text` does not
+appear in the extracted source. The check runs against the research
+artifact's `quotes[]` directly — `text` + `source.path` are structured
+fields, no rendered-output parsing involved. The rendered node body
+inherits the verified quote text from the artifact by construction.
+The enforcement is invisible to the reader by design. The validator
+catches silent drift (a quote edited in an artifact months later that
+no longer matches the source) and broken source references; it does
+not, and cannot, perform trust on the reader's behalf.
 
 Transcripts of speech sources — congressional hearings, podcasts,
 broadcasts, interviews, depositions, conference talks — are
