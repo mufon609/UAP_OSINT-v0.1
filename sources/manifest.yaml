@@ -3919,3 +3919,10 @@
   archive_status: 3
   note: Rep. Eric Burlison X/Twitter post announcing Grusch hire as UAP Caucus advisor (2025-03-27); fetched via Wayback Machine (20260102 snapshot); x.com blocks direct automated retrieval.
   wayback_date: '2026-01-02'
+- url: https://youtu.be/kRO5jOa06Qw
+  format: video
+  status: archived
+  path: video/american-alchemy-grusch-breaks-silence-2023-kro5joa06qw.mp4
+  archived_date: '2026-05-19'
+  sha256: 12d91e67270e209c6d01769ae2378c9a7f022e6e623eb5537390627d5310c812
+  archive_status: 1
