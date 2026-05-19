@@ -13,9 +13,9 @@ artifact authored with ``primary_sources: []`` wouldn't error here;
 ``artifact_top_level`` enforces key presence but not minimum content.
 Downstream checks catch empty primary_sources indirectly — prose_drift
 warns when the source-token pool is empty; verbatim_quotes
-cross-references each quote's source.path against the manifest. If a
-real incident surfaces where an empty primary_sources slips into a
-committed artifact, minimum-1 enforcement could land here.
+cross-references each quote's source.path against the manifest.
+Minimum-1 enforcement could land here if downstream coverage proves
+insufficient.
 """
 
 from checks import Issue
