@@ -3659,6 +3659,15 @@
   archive_status: 3
   wayback_date: '2026-02-12'
   transcript_provenance: auto-caption
+- url: https://www.youtube.com/watch?v=54TA6fyC5Pw
+  format: transcript
+  status: archived
+  path: transcripts/newsnation-coulthart-qa-church-commission-2026-54ta6fyc5pw-downloaded.md
+  archived_date: '2026-05-19'
+  sha256: 3eb43cf7f3395c9a103fbf67b43f865d47de570186dd587fa3913f3a2a705f50
+  archive_status: 1
+  note: 'Auto-caption transcript of Ross Coulthart Q&A ''New Church Commission, CIA lies and the galactic federation'' (NewsNation Reality Check, 2026-05-17, 31:24, co-host Meagan Medick). Downloaded via transcribe.py + yt-dlp + Firefox cookies on 2026-05-19.'
+  transcript_provenance: auto-caption
 - url: https://www.youtube.com/watch?v=9DUmMdSQXHk
   format: transcript
   status: archived
