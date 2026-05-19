@@ -84,6 +84,18 @@
   - 200
   added_date: '2026-05-19'
   note: Manually cropped from 16-23 anchor TR quadrant — Haar cascade missed Knapp at every anchor + burst extraction in this video (leaning-back / hand-to-chin poses across the quad-layout segments are not Haar-friendly). Crop region (x=475,y=20,w=200,h=200) resized to 256x256 via PIL.LANCZOS. Older white-haired man, dark button-up shirt, file-box bookshelves (Las Vegas KLAS-TV / Mystery Wire office). Co-host with Jeremy Corbell on WEAPONIZED podcast (confirmed by 54-36 banner 'JEREMY CORBELL & GEORGE KNAPP'). Same manual-crop workflow used for james-ryder/ref_03.
+- identity: jacky-rosen
+  path: baselines/jacky-rosen/ref_01.jpg
+  sha256: 78ad5f3882e22d837c9aba3f7b8d7702c5600e425858455e95379d7482829786
+  source_video_path: sources/video/2023-04-19-sasc-aaro-hearing.mp4
+  source_timestamp: '2:30:00'
+  bbox:
+  - 425
+  - 115
+  - 340
+  - 340
+  added_date: '2026-05-19'
+  note: Manually cropped from 2-30-00 anchor — Haar missed Rosen's face (glasses + downward gaze defeating the cascade). Crop region (x=425,y=115,w=340,h=340) resized to 256x256 via PIL.LANCZOS. 'MS. ROSEN' placard visible confirms identity. Senator Jacky Rosen (D-NV), member of SASC Subcommittee on Emerging Threats. Short dark hair, dark-rimmed glasses, light pink tweed jacket, multi-colored statement necklace. Same manual-crop workflow as the other manually-cropped baselines.
 - identity: jake-barber
   path: baselines/jake-barber/ref_01.jpg
   sha256: c4f727193d174dfe7e44c0a1a37d0f636a6aabc3e637ec34c6be6ce3d56769ba
@@ -183,6 +195,30 @@
   added_date: '2026-05-18'
   source_video_url: https://www.youtube.com/watch?v=dnnpyNuPdXs
   note: BTS wide-shot of Jesse Michels at 0:15; smaller-bbox second-angle reference complementing the 10:00 solo close-up baseline.
+- identity: joni-ernst
+  path: baselines/joni-ernst/ref_01.jpg
+  sha256: f1c0893dbf0eb15fab40991723e9c713e1a0198285c0c662b2a649380f978452
+  source_video_path: sources/video/2023-04-19-sasc-aaro-hearing.mp4
+  source_timestamp: '1:58:00'
+  bbox:
+  - 475
+  - 130
+  - 300
+  - 300
+  added_date: '2026-05-19'
+  note: Manually cropped from 1-58-00 anchor — Haar missed Ernst's face (glasses + downward gaze defeating the cascade). Crop region (x=475,y=130,w=300,h=300) resized to 256x256 via PIL.LANCZOS. 'MS. ERNST' placard visible confirms identity. Senator Joni Ernst (R-IA), Ranking Member of SASC Subcommittee on Emerging Threats — delivering her opening statement at 1:58:00. Grey hair, dark-rimmed glasses, coral/pink blazer, blue patterned scarf. Same manual-crop workflow as george-knapp/ref_01 + david-fravor/ref_01 + james-ryder/ref_03.
+- identity: kirsten-gillibrand
+  path: baselines/kirsten-gillibrand/ref_01.jpg
+  sha256: 145cacbf1da52e5eabefe7af4daa5cf3f6e3ba5481ede6a5a0c0749b78445f77
+  source_video_path: sources/video/2023-04-19-sasc-aaro-hearing.mp4
+  source_timestamp: '1:55:00'
+  bbox:
+  - 520
+  - 161
+  - 164
+  - 164
+  added_date: '2026-05-19'
+  note: Haar-detected close-up during Gillibrand's chair opening statement. 'MRS. GILLIBRAND' placard visible in adjacent anchor (1:55:00 wide / 1:54:00) confirms identity. Senator Kirsten Gillibrand (D-NY), Chair of SASC Subcommittee on Emerging Threats. White hair, light blue top, dark blazer. 2023-04-19 SASC AARO hearing.
 - identity: meagan-medick
   path: baselines/meagan-medick/ref_01.jpg
   sha256: f499c18ec0a771364103436af47bc2fe8fb4dd398622c3f1a0814e3bb7f9e44b
@@ -231,3 +267,15 @@
   - 89
   added_date: '2026-05-19'
   note: Haar-detected frontal close-up at the witness table during Graves's opening statement. 'Mr. Graves' placard visible in adjacent anchors (1-00-30 wide shot showing all three witnesses; 1-02-30 / 1-05-00 close-ups) confirms identity. Bald younger man, dark suit, blue tie. 2023-07-26 House Oversight UAP hearing.
+- identity: sean-kirkpatrick
+  path: baselines/sean-kirkpatrick/ref_01.jpg
+  sha256: ffec6707a4095280788fe78da86dff6b75f8f4163c44bc6a0ba358ef28f1e011
+  source_video_path: sources/video/2023-04-19-sasc-aaro-hearing.mp4
+  source_timestamp: '2:44:42'
+  bbox:
+  - 650
+  - 154
+  - 126
+  - 126
+  added_date: '2026-05-19'
+  note: Haar-detected frontal close-up at the witness table during Kirkpatrick's Q&A response. 'Dr. Kirkpatrick' placard visible in adjacent frames confirms identity. Glasses, salt-and-pepper goatee, dark suit, patterned red tie + pocket square. 2023-04-19 SASC Subcommittee on Emerging Threats AARO hearing — Kirkpatrick was the sole witness.

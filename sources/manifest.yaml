@@ -3180,6 +3180,14 @@
   archive_status: 3
   note: 'SEC Form 1-K Part II Annual Report for fiscal year ended December 31, 2024, filed 2025-04-17. Registrant: TO THE STARS INC. (Delaware; EIN 84-3854992; CIK 1710274). Primary-source confirmation of: (a) 2022 rebrand from ''To The Stars Academy of Arts and Science Inc.'' to ''To The Stars Inc.'' (both names now registered trademarks); (b) current HQ 315 S. Coast Highway 101 Suite U38 Encinitas CA 92024; (c) going-concern audit finding; (d) Gravity Holdings LLC holds 52.16% of Class A Common Stock; (e) current board (DeLonge, Semivan, Stan Spry, J. Christopher Mizer); (f) current Advisory Board (Gilpin, Kahn, Schurman, Rapp, Herndon, Puthoff); (g) 2024-09-27 Puthoff/Davis memo submitted to Board as ORNL counter-analysis; (h) 2024 CRADA end; (i) TTSA→USACCDC→ORNL material-testing chain. Fetched directly from SEC EDGAR using research-identifying User-Agent.'
   wayback_date: '2026-04-28'
+- url: https://www.senate.gov/isvp/?auto_play=false&comm=armed&poster=https://www.armed-services.senate.gov/assets/images/video-poster.png&filename=armedB041923
+  format: video
+  status: archived
+  path: video/2023-04-19-sasc-aaro-hearing.mp4
+  archived_date: '2026-05-19'
+  sha256: 4ad61e05a9759639ef6ffd8d7365660ab86b29ce2fe894a57453af3d1d5d8aed
+  archive_status: 1
+  note: Senate ISVP archive of the 2023-04-19 SASC Subcommittee on Emerging Threats AARO hearing video (embedded on government/armed-services-senate-gov-sasc-aaro-event-20230419.html). Downloaded via yt-dlp direct (ISVP serves HLS-only with unknown resolution; bypassed download-video.py's 480p mp4 format selector). Speaker baselines for direction-1 warnings on /people/sean-kirkpatrick + /people/kirsten-gillibrand + /people/joni-ernst + /people/jacky-rosen.
 - url: https://www.sri.com/about/
   format: html
   status: archived
