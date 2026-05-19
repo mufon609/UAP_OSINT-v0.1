@@ -24,12 +24,16 @@ checks rely on ``section_in_scope``. This check keeps only the
 universal metadata plus the type-conditional description-required
 rule.
 
+Per-type ``description_required: true`` declarations live in
+``meta/schema.yaml`` on each content-node type that renders a top-
+level Description section. Person and investigation omit the flag —
+person renders archetype-specific sections instead, and investigation
+treats description as optional.
+
 The description rule isn't expressed in ``conditional_keys`` because
 the grammar (``required_when_any_of: [list of AND-rules]``) only
-supports type-IN matches — the rule's allowlist is the seven types
-that DO require description, expressed inline here as
-``DESCRIPTION_REQUIRED_TYPES``. Investigation's NOT-required state
-falls out of the allowlist by exclusion alongside person.
+supports type-IN matches; the per-type schema flag is the natural
+home for a "required for this type" declaration.
 
 Bundled into one module because the sub-checks are all "this top-level
 shape" enforcement, share the artifact's top-level dict access, and
@@ -54,14 +58,6 @@ REQUIRED_TOP_LEVEL_KEYS = [
     "context_extrinsic", "quotes", "entities_referenced",
     "naming_quirks",
 ]
-
-# description required on the seven content-bearing renderer-supported
-# types. Excluded: person (renderer never calls render_description) and
-# investigation (renderer wires it up but treats it as optional).
-DESCRIPTION_REQUIRED_TYPES = {
-    "document", "transcript", "media", "event",
-    "organization", "finding", "location",
-}
 
 
 def check(ctx):
@@ -129,13 +125,11 @@ def check(ctx):
                 check_name=CHECK_NAME,
             )
 
-    # description required on the seven types in DESCRIPTION_REQUIRED_TYPES
-    # (above). Person and investigation are excluded — see the module
-    # docstring for rationale. Kept as a small inline allowlist rather
-    # than a conditional_keys grammar entry because the rule is
-    # type-IN-allowlist, simple enough to live here.
-    if (ctx.target_type in DESCRIPTION_REQUIRED_TYPES
-            and "description" not in data):
+    # description required when the target's schema block declares
+    # ``description_required: true``. Person and investigation omit the
+    # flag (treated as false) — see the module docstring for rationale.
+    target_spec = ctx.schema.get("types", {}).get(ctx.target_type) or {}
+    if target_spec.get("description_required") and "description" not in data:
         yield Issue(
             ctx.rel, "error",
             f"Missing required top-level key: 'description' "

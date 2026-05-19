@@ -63,66 +63,49 @@ from lib._common import extract_significant_tokens, load_source_tokens
 CHECK_NAME = "prose_drift"
 
 
-# Top-level prose fields by target type. Pooled against the union of
-# all primary_sources[].path token pools.
+# Per-type drift scope is declared in ``meta/schema.yaml`` as each
+# content type's ``prose_drift_fields:`` block:
 #
-# Finding `description` is in scope because finding synthesis prose is
+#   prose_drift_fields:
+#     top_level: [field_name, ...]       # synthesis prose fields on the artifact root
+#     per_entry:                          # synthesis prose inside list entries
+#       - [list_key, field_name_in_entry]
+#
+# Finding ``description`` is in scope because finding synthesis prose is
 # anchored to the convergent multi-source pool — the description
 # explains the pattern visible across those sources and should use
 # their vocabulary.
 #
-# Investigation prose is intentionally NOT in scope at any field —
-# investigations are speculation-tolerant by design (description /
+# Investigation has NO ``prose_drift_fields`` block in schema by design.
+# Investigations are speculation-tolerant: description /
 # hypothesis_evaluation.text / hypothesis_evaluation.status /
 # best_current_answer.text / counter_evidence.text /
 # open_questions.question / closure_path entries / resolution_history
 # entries all carry contributor analytical prose that goes beyond what
-# any single source attests). The investigation_hypothesis_citation
+# any single source attests. The investigation_hypothesis_citation
 # check enforces source-rollup discipline in lieu of token-match drift.
-# Adding ``"investigation": [...]`` here would mis-fire against the
-# design and force investigations to use only source-vocabulary, which
-# defeats the speculation-tolerant layer.
-PROSE_FIELDS_BY_TYPE = {
-    "person": ["background", "top_relevance", "credibility_notes"],
-    "event": ["description"],
-    "media": ["description"],
-    "transcript": ["description"],
-    "document": ["description"],
-    "organization": ["description"],
-    "location": ["description"],
-    "finding": ["description"],
-}
+# Adding prose_drift_fields to investigation's schema block would
+# mis-fire against the design and force investigations to use only
+# source-vocabulary, which defeats the speculation-tolerant layer.
 
-# Per-entry prose fields by target type. Each tuple: (list_key,
-# field_name_within_entry). Pooled against the union of all
-# primary_sources (per entry's own source.path no longer scopes the
-# pool — see commentary in the lifted check).
-#
-# Finding `contradictions[].note` is in scope (synthesis content note
-# describing why the divergence is preserved). Investigation has no
-# per-entry prose-drift-checked surfaces — see the comment above
-# PROSE_FIELDS_BY_TYPE.
-PROSE_ENTRY_FIELDS_BY_TYPE = {
-    "person": [
-        ("vouching_chain", "attestation"),
-    ],
-    "event": [],
-    "transcript": [],
-    "media": [
-        ("media_versioning", "note"),
-    ],
-    "organization": [
-        ("key_personnel", "note"),
-        ("contracts", "note"),
-    ],
-    "location": [
-        ("ownership_timeline", "note"),
-        ("top_scope_activity", "note"),
-    ],
-    "finding": [
-        ("contradictions", "note"),
-    ],
-}
+
+def _drift_scope(schema, target_type):
+    """Return (top_level_fields, per_entry_fields) for the target type,
+    read from schema's per-type ``prose_drift_fields`` block. Returns
+    ([], []) when the type opts out (no block declared) — e.g.,
+    investigation. ``per_entry_fields`` is a list of (list_key,
+    entry_field) tuples; the schema stores them as 2-element lists,
+    coerced to tuples here for stable downstream unpacking.
+    """
+    type_spec = schema.get("types", {}).get(target_type) or {}
+    block = type_spec.get("prose_drift_fields") or {}
+    top_level = list(block.get("top_level") or [])
+    per_entry = [
+        (pair[0], pair[1])
+        for pair in (block.get("per_entry") or [])
+        if isinstance(pair, (list, tuple)) and len(pair) == 2
+    ]
+    return top_level, per_entry
 
 
 def _judge_drift(rel, location, prose_tokens, unmatched):
@@ -159,8 +142,8 @@ def _judge_drift(rel, location, prose_tokens, unmatched):
 
 def check(ctx):
     target_type = ctx.target_type
-    if (target_type not in PROSE_FIELDS_BY_TYPE
-            and target_type not in PROSE_ENTRY_FIELDS_BY_TYPE):
+    top_fields, entry_fields = _drift_scope(ctx.schema, target_type)
+    if not top_fields and not entry_fields:
         return
 
     # Pool top-level source tokens = ∪ primary_sources[].path
@@ -186,7 +169,7 @@ def check(ctx):
         )
         return
 
-    for field in PROSE_FIELDS_BY_TYPE.get(target_type, []):
+    for field in top_fields:
         prose = ctx.data.get(field) or ""
         prose_tokens = extract_significant_tokens(prose)
         if not prose_tokens:
@@ -194,7 +177,7 @@ def check(ctx):
         unmatched = prose_tokens - top_level_pool
         yield from _judge_drift(ctx.rel, field, prose_tokens, unmatched)
 
-    for list_key, entry_field in PROSE_ENTRY_FIELDS_BY_TYPE.get(target_type, []):
+    for list_key, entry_field in entry_fields:
         for i, entry in enumerate(entries(ctx.data, list_key)):
             if not isinstance(entry, dict):
                 continue

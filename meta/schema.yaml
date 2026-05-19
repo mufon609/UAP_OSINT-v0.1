@@ -75,6 +75,13 @@ types:
   person:
     path: people
     status_values: [active, in-progress]
+    # Person artifacts don't render a top-level Description section (the
+    # archetype-specific sections carry the narrative surface), so
+    # description_required is absent (treated as false).
+    prose_drift_fields:
+      top_level: [background, top_relevance, credibility_notes]
+      per_entry:
+        - [vouching_chain, attestation]
     frontmatter:
       required: [id, type, schema_version, status, archetype, created]
       optional: [authored_works]  # list of /documents/... paths (doc_form: book)
@@ -164,6 +171,12 @@ types:
   organization:
     path: organizations
     status_values: [active, in-progress]
+    description_required: true
+    prose_drift_fields:
+      top_level: [description]
+      per_entry:
+        - [key_personnel, note]
+        - [contracts, note]
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
     kinds:
@@ -214,6 +227,10 @@ types:
       - declassified-partial
       - classified
       - unverified-existence
+    description_required: true
+    prose_drift_fields:
+      top_level: [description]
+      per_entry: []
     frontmatter:
       required: [id, type, schema_version, status, kind, doc_form, created]
       optional: [corpus, archival_status]
@@ -287,6 +304,10 @@ types:
   event:
     path: events
     status_values: [documented, in-progress]
+    description_required: true
+    prose_drift_fields:
+      top_level: [description]
+      per_entry: []
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
     kinds:
@@ -318,6 +339,10 @@ types:
   transcript:
     path: transcripts
     status_values: [primary-source-confirmed, partial]
+    description_required: true
+    prose_drift_fields:
+      top_level: [description]
+      per_entry: []
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
       optional: [source_medium, derived_from]
@@ -374,6 +399,11 @@ types:
       - declassified-partial
       - classified
       - unverified-existence
+    description_required: true
+    prose_drift_fields:
+      top_level: [description]
+      per_entry:
+        - [media_versioning, note]
     frontmatter:
       required: [id, type, schema_version, status, kind, created]
       optional: [corpus, derivation_of]
@@ -419,6 +449,12 @@ types:
   location:
     path: locations
     status_values: [active, historical]
+    description_required: true
+    prose_drift_fields:
+      top_level: [description]
+      per_entry:
+        - [ownership_timeline, note]
+        - [top_scope_activity, note]
     frontmatter:
       required: [id, type, schema_version, status, created]
     required_sections:
@@ -461,6 +497,11 @@ types:
   finding:
     path: findings
     status_values: [documented, in-progress, superseded]
+    description_required: true
+    prose_drift_fields:
+      top_level: [description]
+      per_entry:
+        - [contradictions, note]
     frontmatter:
       required: [id, type, schema_version, status, created, updated]
       optional: [superseded_by]
