@@ -316,6 +316,20 @@ def load_topic():
     return _topic_config_cache
 
 
+def topic_substitute(s):
+    """Substitute the ``{topic_display_name}`` placeholder in ``s`` with
+    the current topic's ``display_name`` from ``meta/topic/overview.md``.
+    Symmetric to the renderer's runtime composition of section headers
+    via ``load_topic()`` — consumers reading schema strings that carry
+    topic-bound section names (``required_sections``, header templates)
+    route through this helper so schema stays topic-neutral and the
+    substitution happens at validation/render time. Non-string inputs
+    pass through unchanged."""
+    if not isinstance(s, str) or "{topic_display_name}" not in s:
+        return s
+    return s.replace("{topic_display_name}", load_topic()["display_name"])
+
+
 # ---------------------------------------------------------------------------
 # Manifest helpers — Wayback URL detection + manifest I/O.
 # Schema's ``manifest_entry`` shape is the contract.

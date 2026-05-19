@@ -27,6 +27,7 @@ import re
 from pathlib import Path
 
 from checks import Issue
+from lib._common import topic_substitute
 
 
 CHECK_NAME = "required_sections"
@@ -97,7 +98,11 @@ def _compute_required_sections(fm, type_spec):
     corpus = fm.get("corpus")
     if corpus:
         sections.extend(_load_addendum_sections(corpus))
-    return sections
+    # Substitute {topic_display_name} placeholders before returning so
+    # the validator matches the rendered H2 headers (which the renderer
+    # composes via load_topic() at render time). Schema stays topic-
+    # neutral; this is the symmetric resolution at validation time.
+    return [topic_substitute(s) for s in sections]
 
 
 def check(ctx):

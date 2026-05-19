@@ -91,7 +91,7 @@ types:
         required_sections:
           - Identity
           - Background
-          - UAP Relevance
+          - "{topic_display_name} Relevance"
           - Affiliations
           - Statements
           - Timeline
@@ -104,7 +104,7 @@ types:
         required_sections:
           - Identity
           - Background
-          - UAP Relevance
+          - "{topic_display_name} Relevance"
           - Affiliations
           - Statements
           - Timeline
@@ -118,7 +118,7 @@ types:
         required_sections:
           - Identity
           - Background
-          - UAP Relevance
+          - "{topic_display_name} Relevance"
           - Affiliations
           - Statements
           - Timeline
@@ -131,7 +131,7 @@ types:
         required_sections:
           - Identity
           - Background
-          - UAP Relevance
+          - "{topic_display_name} Relevance"
           - Affiliations
           - Statements
           - Timeline
@@ -461,7 +461,7 @@ types:
       - Overview
       - Description
       - Ownership Timeline
-      - UAP-Scope Activity
+      - "{topic_display_name}-Scope Activity"
       - Key Passages
       - Relationships
       - Associated Nodes
