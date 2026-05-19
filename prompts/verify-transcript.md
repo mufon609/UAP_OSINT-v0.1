@@ -60,10 +60,36 @@ Steps:
 - For broadcast transcripts, cite by timestamp
 - For print, cite by page
 
+**Step 6 — verify speaker attribution.** Transcript quotes carry a
+structural `speaker_id` referencing `speakers[*].id` on the same
+artifact (required per `meta/conventions.md` "Transcript quotes carry
+structural speaker attribution"). For each retained quote:
+
+- Open the source passage at the quote's `source.location`.
+- Confirm the speaker named in the source matches the speaker the
+  `quotes[N].speaker_id` resolves to (the corresponding
+  `speakers[].name`). For auto-caption sources without explicit
+  speaker labels: confirm via the surrounding text + (when available)
+  the video-pipeline stitched transcript at
+  `/tmp/stitch-{slug}/stitched.md` (produced by
+  `scripts/tools/stitch-transcript.py`).
+- If the assignment is wrong: update `quotes[N].speaker_id` to the
+  correct `speakers[].id` and regenerate the node. If the right
+  speaker isn't in `speakers[]` yet, add a `speakers[]` entry first.
+
+The `speaker_baseline_consistency` direction-1 warning (if firing on
+this artifact) is a heads-up signal: a speaker the artifact references
+via `node_link` lacks a registered visual baseline. Not a quote-
+verification blocker, but worth noting and potentially backlogging
+the baseline registration via the video pipeline.
+
 **Output:**
 - Before-and-after diff for each quote that changed
-- Summary count: verbatim / drift-corrected / replaced / removed
-- Re-run `python3 scripts/build/validate.py {path}` to confirm the
-  verbatim-quote check passes on every retained quote
+- Summary count: verbatim / drift-corrected / replaced / removed +
+  speaker_id corrections
+- Re-run `python3 scripts/build/validate.py {path}` and
+  `python3 scripts/build/validate-research.py meta/research/{slug}.yaml`
+  to confirm both the verbatim-quote check and the speaker_id check
+  pass on every retained quote
 - Commit with a message naming the transcript and the categories of
   change applied

@@ -264,6 +264,21 @@ borderline cases.
     hearing-event artifacts, drives Key Testimony sort.
   - `category` (optional free-text tag) — e.g., `filed-claim` on
     whistleblower artifacts so the Claim Inventory renderer can filter.
+  - `speaker_id` — **required on transcript artifacts**. References
+    one of `speakers[*].id` on the same artifact (e.g., `s1` for the
+    witness in a hearing; `s3` for the guest in a 3-host interview).
+    Renderer surfaces the matched speaker's `name` (+ `node_link`
+    when present) as a `Speaker` row above `Attributed to`. Ignored
+    on non-transcript artifacts. See `meta/conventions.md`
+    "Transcript quotes carry structural speaker attribution" for
+    rationale + failure-mode bright lines. For multi-speaker video
+    sources where the speaker assignment isn't obvious from the
+    auto-caption text alone, the canonical resolution path is the
+    video pipeline (`scripts/tools/{download-video, extract-frames,
+    detect-faces, diarize-audio, stitch-transcript}.py`) →
+    speaker-labeled transcript at `/tmp/stitch-{slug}/stitched.md` →
+    use the resolved labels to populate `speaker_id`. See
+    `scripts/tools/VIDEO-PIPELINE.md`.
   - Standard lifecycle fields (id, added_date).
 
 **Discipline:**

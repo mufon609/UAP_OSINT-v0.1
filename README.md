@@ -84,6 +84,14 @@ scripts/
     check-vocab.py          pre-flight prose-drift token check (contributor diagnostic)
     coverage-suggest.py     source-coverage audit aid (read-only; surfaces under-extraction candidates)
     normalize-locations.py  quote `source.location` ref diagnostic (read-only)
+    download-video.py       canonical video archival (yt-dlp wrapper; 480p mp4 default; manifest registration)
+    extract-frames.py       ffmpeg frame extraction — anchor / burst / sweep / transcript modes
+    detect-faces.py         Haar-cascade face detection + pHash dedup + persistent baselines/manifest
+    diarize-audio.py        pyannote.audio speaker diarization (identity-blind SPEAKER_NN; project-local venv)
+    stitch-transcript.py    merges video + diarize segments + identity baselines → speaker-labeled transcript (/tmp/ contributor diagnostic)
+    setup-photo-identity.sh one-time installer for the visual-side video pipeline (cv2, yt-dlp, ffmpeg, JS runtime)
+    setup-diarize-audio.sh  one-time installer for the audio-side diarize step (pyannote, torch, HF_TOKEN walk-through)
+    VIDEO-PIPELINE.md       five-step workflow doc (download → diarize → extract → detect → stitch)
   checks/                   per-check modules — every named validator check
                             lives here as its own file; build/validate.py /
                             build/validate-research.py / build/review-coverage.py

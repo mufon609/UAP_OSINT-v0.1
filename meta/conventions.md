@@ -381,6 +381,49 @@ Each node type renders a filtered view of the same universal primitive:
   its subject — sorted by `statement_date` (see "Key Passages
   ordering" below).
 
+### Transcript quotes carry structural speaker attribution
+
+On a transcript artifact, the speaker of each quote is a structural
+reference, not contributor prose. Every entry in `quotes[]` carries
+`speaker_id` (required on transcript artifacts; enforced by
+`scripts/checks/quotes.py`), pointing at one of the artifact's
+`speakers[*].id` values. The renderer's attribution block emits a
+`Speaker` row above `Attributed to`, populated from the matched
+speakers entry — `Name ([`/people/slug`])` when the speaker has a
+`node_link`, or just `Name` when not (anonymized audience members,
+unidentified panelists).
+
+The bright line: `context` carries circumstance prose (venue, format,
+neighboring exchange — "opening statement", "Q&A exchange with Rep.
+Burchett", "Lacatski continuing his prepared statement"); `speaker_id`
+carries who-said-it. Two contributors authoring quotes from the same
+source can disagree on circumstance phrasing without diverging on the
+attribution — the structural reference is what validates and renders.
+
+Three failure modes the structural reference closes:
+
+- **Prose-attribution drift.** Different sessions could disagree on
+  who said line 2:00 of a podcast and both be wrong with no mechanical
+  check. The `quotes` check now fails when `speaker_id` doesn't
+  resolve to a real `speakers[].id`.
+- **Re-author ambiguity.** Six months later a contributor re-reading
+  the artifact had to re-trace the diarize + frame + baseline merge
+  to recover the speaker assignment. The structural reference makes
+  the assignment self-documenting.
+- **Renderer inconsistency.** Hand-formatted Attributed-to strings
+  varied in how they named speakers ("Lacatski" vs "Dr. James
+  Lacatski" vs "Dr. Lacatski"). Mechanical lookup from `speakers[]`
+  produces one consistent rendered form per identity.
+
+The accompanying `speaker_baseline_consistency` check
+(`scripts/checks/speaker_baseline_consistency.py`) catches the next
+link of the chain: every `speakers[].node_link` that points at
+`/people/{slug}` should have a baseline at
+`sources/photo-identity-log/baselines/{slug}/` so video-pipeline
+tools (`scripts/tools/detect-faces.py`,
+`scripts/tools/stitch-transcript.py`) can mechanically resolve the
+speaker on future videos.
+
 ### Statements speaker-attribution — quotes BY the person, not ABOUT
 
 A person artifact's `quotes[]` section carries verbatim statements *by*
