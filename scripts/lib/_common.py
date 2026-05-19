@@ -610,12 +610,16 @@ def compute_sha256(file_path):
 
 
 # Content-node types the renderer (build-from-research.py) and the
-# coverage reviewer (review-coverage.py) both support.
-SUPPORTED_TYPES = frozenset({
-    "document", "person", "event", "transcript",
-    "media", "organization", "location",
-    "finding", "investigation",
-})
+# coverage reviewer (review-coverage.py) both support — derived from
+# schema's content-node-type declarations via content_node_types().
+# Every schema-declared content-node type has a corresponding renderer
+# dispatch branch in build-from-research.py::render_body(); a fork that
+# adds a schema type without a renderer dispatch branch surfaces as a
+# loud fall-through error at render time.
+def supported_types():
+    """Frozenset of content-node types the renderer + coverage
+    reviewer support. Lazy schema lookup; cached by load_schema()."""
+    return content_node_types()
 
 
 def schema_version_compat_messages(sv, compatible_with, current_version, *, prefix=""):

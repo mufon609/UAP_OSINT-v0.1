@@ -47,8 +47,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from lib._common import (
     REPO_ROOT,
-    SUPPORTED_TYPES,
     content_type_dirs,
+    supported_types,
 )
 
 from renderers._common import load_artifact, load_frontmatter
@@ -172,9 +172,9 @@ def main():
     node_type = reverse.get(dir_name)
     if node_type is None:
         sys.exit(f"ERROR: unknown content-dir {dir_name!r} in target_node")
-    if node_type not in SUPPORTED_TYPES:
+    if node_type not in supported_types():
         sys.exit(f"ERROR: build-from-research.py currently supports "
-                 f"{sorted(SUPPORTED_TYPES)} only (got {node_type!r}).")
+                 f"{sorted(supported_types())} only (got {node_type!r}).")
 
     node_path = REPO_ROOT / dir_name / f"{slug}.md"
     if not node_path.exists():

@@ -49,10 +49,10 @@ from lib._common import (
     strict_yaml_load,
     REPO_ROOT,
     SOURCES_DIR,
-    SUPPORTED_TYPES,
     content_type_dirs,
     extract_source_text,
     load_manifest_paths,
+    supported_types,
     load_schema,
     resolve_cli_path,
 )
@@ -181,7 +181,7 @@ def review_artifact(artifact_path, base_ctx):
 
     # Parse preflight passed; downstream Context reuses the parsed dict.
     node_type = target_node_type(artifact)
-    if node_type not in SUPPORTED_TYPES:
+    if node_type not in supported_types():
         return issues, f"node type {node_type!r} has no renderer; review checks skipped"
 
     node_path = target_node_path(artifact)
