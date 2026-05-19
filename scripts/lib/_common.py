@@ -25,11 +25,11 @@ import yaml
 # ---------------------------------------------------------------------------
 #
 # PyYAML's default ``SafeLoader`` silently uses the last occurrence of a
-# duplicate mapping key. That's the failure mode that bit the Ryder build
-# session: an Edit-tool old_string mismatch produced a research artifact
-# with two ``credibility_notes:`` blocks; the loader silently used the
-# trailing one (which was the OLD content), so the validator passed
-# despite the new content being unreachable.
+# duplicate mapping key. In a repo where YAML is hand-edited, patched via
+# string-replace tooling, or merged across branches, a file can land with
+# two mappings of the same name; SafeLoader picks the trailing one without
+# warning, masking the earlier write. Validators then read the wrong block
+# and pass under stale content.
 #
 # ``StrictYAMLLoader`` overrides ``construct_mapping`` to raise
 # ``yaml.constructor.ConstructorError`` (subclass of ``yaml.YAMLError``)
