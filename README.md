@@ -143,11 +143,14 @@ prompts/                    paste-ready session prompts — see prompts/README.m
 directories themselves); empty `sources/manifest.yaml`. Create your own
 `meta/topic/overview.md` — its frontmatter `topic` and `display_name`
 fields drive every UI surface that names the subject (rendered
-section headers like `## {display_name} Relevance`, archiver
+section headers like `## {topic_display_name} Relevance`, archiver
 User-Agent, etc.); the toolkit reads them via
 `load_topic()`. See `prompts/fork-init.md` for the bootstrap walk-
-through. Everything else — schema, conventions, scripts, templates,
-prompts, validators, test suite — is topic-neutral toolkit.
+through. Everything not deleted by the steps above — the rest of
+`meta/` (schema, conventions, memory, templates, …), all of
+`scripts/` and `prompts/`, and root-level governance (`CLAUDE.md`,
+`AGENT.md`, this `README.md`) — is topic-neutral toolkit and
+survives the fork.
 
 ---
 
