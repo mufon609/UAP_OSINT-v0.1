@@ -52,16 +52,35 @@ Usage examples:
   ./diarize-audio.py sources/video/foo.mp4 --out /tmp/diarize-foo --keep-audio
 """
 
+import os
+import sys
+from pathlib import Path
+
+# ---------------------------------------------------------------------------
+# Venv auto-relaunch — must happen before importing anything pyannote-touched.
+# pyannote.audio is installed inside .venv-diarize/ at the repo root (PEP 668
+# blocks system-wide pip on Debian/Kali, and pyannote's torch dependency is
+# too heavy to want system-wide anyway). Re-exec under the venv Python so
+# contributors don't need to source the activate script.
+# ---------------------------------------------------------------------------
+_HERE = Path(__file__).resolve()
+_REPO_ROOT = _HERE.parent.parent.parent  # scripts/tools/diarize-audio.py → repo root
+_VENV_PYTHON = _REPO_ROOT / ".venv-diarize" / "bin" / "python3"
+if (
+    _VENV_PYTHON.is_file()
+    and os.path.realpath(sys.executable) != os.path.realpath(_VENV_PYTHON)
+    and os.environ.get("DIARIZE_VENV_ACTIVE") != "1"
+):
+    os.environ["DIARIZE_VENV_ACTIVE"] = "1"
+    os.execv(str(_VENV_PYTHON), [str(_VENV_PYTHON)] + sys.argv)
+
 import argparse
 import csv
-import os
 import re
 import shutil
 import subprocess
-import sys
 import tempfile
 from datetime import datetime, timezone
-from pathlib import Path
 from typing import List, Optional, Tuple
 
 # scripts/tools/diarize-audio.py — scripts/ on sys.path
