@@ -22,7 +22,6 @@ description: 'Opening Statement and Closing Statement by David Charles Grusch ([
 primary_sources:
 - path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-written-testimony-grusch-2023-0.txt
   pdf_metadata:
     author: gscie
     creator: PScript5.dll Version 5.2.2

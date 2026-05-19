@@ -16,7 +16,6 @@ description: 'Statement for the House Oversight Committee ([`/events/2023-07-26-
 primary_sources:
 - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-written-testimony-fravor-2023-0.txt
   pdf_metadata:
     author: DMF DMF
     creator: Acrobat PDFMaker 23 for Word

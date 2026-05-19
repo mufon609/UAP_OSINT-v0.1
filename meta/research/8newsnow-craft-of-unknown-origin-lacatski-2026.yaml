@@ -23,7 +23,6 @@ description: 'News story with George ([`/people/george-knapp`]) and Dr. James La
 primary_sources:
 - path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
   format: transcript
-  extracted_text_path: /tmp/scratch-8newsnow-craft-of-unknown-origin-lacatski-2026-0.txt
 document_intrinsic:
   internal_title: 'YouTube Transcript — 8newsnow-craft-of-unknown-origin-lacatski-2026'
   source_url: https://www.youtube.com/watch?v=MiUDl_9v6Ag

@@ -13,13 +13,10 @@ description: 'House Oversight and Accountability Subcommittee hearing on unident
 primary_sources:
 - path: government/oversight-house-gov-hearing-page-20230726.html
   format: html
-  extracted_text_path: /tmp/scratch-2023-07-26-house-uap-hearing-0.txt
 - path: government/docs-house-gov-hearing-event-116282.html
   format: html
-  extracted_text_path: /tmp/scratch-2023-07-26-house-uap-hearing-1.txt
 - path: government/congress-gov-house-hearing-transcript-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-2023-07-26-house-uap-hearing-2.txt
 document_intrinsic:
   internal_title: 'UNIDENTIFIED ANOMALOUS PHENOMENA: IMPLICATIONS ON NATIONAL SECURITY, PUBLIC SAFETY, AND GOVERNMENT TRANSPARENCY'
   serial_no: 118-53

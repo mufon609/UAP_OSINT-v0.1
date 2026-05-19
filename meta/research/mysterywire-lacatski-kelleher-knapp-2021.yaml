@@ -17,7 +17,6 @@ description: 'Book interviews with "dr jim lakatsky" ([`/people/james-lacatski`]
 primary_sources:
 - path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   format: transcript
-  extracted_text_path: /tmp/scratch-mysterywire-lacatski-kelleher-knapp-2021-0.txt
 document_intrinsic:
   internal_title: 'YouTube Transcript — mysterywire-lacatski-kelleher-knapp-2021'
   source_url: https://www.youtube.com/watch?v=b3U0PVvv7RQ

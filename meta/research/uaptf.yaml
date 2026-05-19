@@ -25,10 +25,8 @@ description: 'The Unidentified Aerial Phenomena Task Force ([`/organizations/uap
 primary_sources:
 - path: government/defense-gov-uaptf-establishment-20200814.html
   format: html
-  extracted_text_path: /tmp/scratch-uaptf-0.txt
 - path: government/blackvault-uap-security-classification-guide-20200416.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-uaptf-1.txt
   pdf_metadata:
     title: UAP Security Classification Guide
     issuing_office: Naval Intelligence Activity
@@ -37,7 +35,6 @@ primary_sources:
     foia_case: DON-NAVY-2022-000883
 - path: government/blackvault-uaptf-charter-foia-20250422.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-uaptf-2.txt
   pdf_metadata:
     title: Charter for Unidentified Aerial Phenomenon Task Force
     issuing_office: Naval Intelligence Activity
@@ -47,48 +44,36 @@ primary_sources:
     note: Heavily redacted; signed by Director, Naval Intelligence Activity
 - path: government/dni-gov-odni-preliminary-assessment-20210625.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-uaptf-3.txt
   pdf_metadata:
     title: Preliminary Assessment, Unidentified Aerial Phenomena
     issuing_office: Office of the Director of National Intelligence
     date: '2021-06-25'
 - path: government/congress-gov-hpsci-uap-transcript-20220517.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-uaptf-4.txt
 - path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-uaptf-5.txt
 - path: government/defense-gov-aoimsg-establishment-20211123.html
   format: html
-  extracted_text_path: /tmp/scratch-uaptf-6.txt
 - path: government/defense-gov-aaro-establishment-20220720.html
   format: html
-  extracted_text_path: /tmp/scratch-uaptf-7.txt
 - path: government/govinfo-senate-report-116-233-iaa-fy2021.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-uaptf-8.txt
   pdf_metadata:
     title: 'Senate Report 116-233: Intelligence Authorization Act for Fiscal Year 2021'
     committee: Senate Select Committee on Intelligence
     pages: 10
 - path: news/blackvault-smdc-travis-taylor-uaptf-20220629.html
   format: html
-  extracted_text_path: /tmp/scratch-uaptf-9.txt
 - path: government/oversight-house-gov-grusch-written-testimony-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-uaptf-grusch-testimony.txt
 - path: news/safeaerospace-home-20260420.html
   format: html
-  extracted_text_path: /tmp/scratch-uaptf-10.txt
 - path: government/aaro-hrr-volume-1-20240308.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-uaptf-11.txt
 - path: news/blackvault-uaptf-charter-foia-release-20250422.html
   format: html
-  extracted_text_path: /tmp/scratch-uaptf-12.txt
 - path: news/thedebrief-grusch-2023.html
   format: html
-  extracted_text_path: /tmp/scratch-uaptf-13.txt
 document_intrinsic:
   full_name: Unidentified Aerial Phenomena Task Force
   internal_name: UAPTF

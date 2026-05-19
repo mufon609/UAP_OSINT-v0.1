@@ -26,7 +26,6 @@ description: 'WEAPONIZED part one of two with Dr. James Lacatski ([`/people/jame
 primary_sources:
 - path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   format: transcript
-  extracted_text_path: /tmp/scratch-weaponized-lacatski-part1-2025-0.txt
 document_intrinsic:
   internal_title: 'YouTube Transcript — weaponized-lacatski-part1-2025'
   source_url: https://www.youtube.com/watch?v=Qu8pudJk_-A

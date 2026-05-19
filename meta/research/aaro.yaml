@@ -85,50 +85,39 @@ description: 'The All-domain Anomaly Resolution Office ([`/organizations/aaro`])
 primary_sources:
 - path: government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-aaro-0.txt
   pdf_metadata:
     author: OSDPA
     pages: 2
 - path: government/defense-gov-aaro-establishment-20220720.html
   format: html
-  extracted_text_path: /tmp/scratch-aaro-1.txt
 - path: government/media-defense-gov-moultrie-aaro-memo-20220720.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-aaro-2.txt
 - path: government/media-defense-gov-kirkpatrick-biography-20220720.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-aaro-3.txt
   pdf_metadata:
     author: OSDPA
     pages: 1
 - path: government/defense-gov-kirkpatrick-departure-20231120.html
   format: html
-  extracted_text_path: /tmp/scratch-aaro-4.txt
 - path: government/defense-gov-kosloski-appointment-20240826.html
   format: html
-  extracted_text_path: /tmp/scratch-aaro-5.txt
 - path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-aaro-6.txt
   pdf_metadata:
     title: AARO Historical Record Report Volume 1
     author: OSD
     pages: 63
 - path: government/defense-gov-aaro-website-launch-20230831.html
   format: html
-  extracted_text_path: /tmp/scratch-aaro-7.txt
 - path: government/aaro-phillips-timothy-bio-dec2023.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-aaro-8.txt
   pdf_metadata:
     title: Timothy Phillips Bio
     pages: 1
 - path: government/defense-gov-aoimsg-establishment-20211123.html
   format: html
-  extracted_text_path: /tmp/scratch-aaro-9.txt
 - path: government/defense-gov-uaptf-establishment-20200814.html
   format: html
-  extracted_text_path: /tmp/scratch-aaro-10.txt
 - path: government/blackvault-sancorp-23-f-1114-aaro-pws.pdf
   format: pdf
 - path: government/foia-23-f-0906-sancorp-ipmo-pws.pdf

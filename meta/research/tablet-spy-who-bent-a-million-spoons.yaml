@@ -7,7 +7,6 @@ created: '2026-05-16'
 primary_sources:
 - path: news/tablet-spy-who-bent-a-million-spoons-20260516.html
   format: html
-  extracted_text_path: /tmp/scratch-tablet-spy-who-bent-a-million-spoons-0.txt
 document_intrinsic:
   internal_title: The Spy Who Bent a Million Spoons
   internal_subtitle: Israeli mentalist Uri Geller's mind-over-matter philosophy of life

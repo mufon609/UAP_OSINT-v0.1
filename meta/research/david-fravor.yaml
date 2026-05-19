@@ -7,7 +7,6 @@ created: '2026-04-19'
 primary_sources:
 - path: government/oversight-house-gov-fravor-written-testimony-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-oversight-house-gov-fravor-written-testimony-20230726.txt
   pdf_metadata:
     author: DMF DMF
     creator: Acrobat PDFMaker 23 for Word

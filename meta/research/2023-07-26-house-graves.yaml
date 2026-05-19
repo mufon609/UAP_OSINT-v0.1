@@ -16,7 +16,6 @@ description: 'Ryan Graves''s ([`/people/ryan-graves`]) sworn oral testimony at t
 primary_sources:
 - path: government/congress-gov-house-hearing-transcript-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-2023-07-26-house-graves-0.txt
   pdf_metadata:
     title: U:\OK to Print 118th\53022.TXT
     creator: ACOMP.exe WinVer 2.2a Sep 11 2014

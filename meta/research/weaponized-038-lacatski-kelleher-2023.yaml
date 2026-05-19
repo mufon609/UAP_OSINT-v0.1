@@ -26,7 +26,6 @@ description: 'WEAPONIZED episode 38 with "dr james latsky" ([`/people/james-laca
 primary_sources:
 - path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   format: transcript
-  extracted_text_path: /tmp/scratch-weaponized-038-lacatski-kelleher-2023-0.txt
 document_intrinsic:
   internal_title: 'YouTube Transcript — weaponized-038-lacatski-kelleher-2023'
   source_url: https://www.youtube.com/watch?v=ow7FqiegixQ

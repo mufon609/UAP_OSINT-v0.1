@@ -7,22 +7,16 @@ created: '2026-05-17'
 primary_sources:
 - path: transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md
   format: transcript
-  extracted_text_path: /tmp/scratch-james-lacatski-0.txt
 - path: transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md
   format: transcript
-  extracted_text_path: /tmp/scratch-james-lacatski-1.txt
 - path: government/dia-advancedspacepropulsion-puthoff-dird-20100329.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-james-lacatski-2.txt
 - path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-james-lacatski-3.txt
 - path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   format: transcript
-  extracted_text_path: /tmp/scratch-james-lacatski-4.txt
 - path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   format: transcript
-  extracted_text_path: /tmp/scratch-james-lacatski-5.txt
 - path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
   format: transcript
 - path: transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md

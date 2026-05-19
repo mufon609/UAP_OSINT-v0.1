@@ -16,43 +16,30 @@ description: 'The SAFIRE Project ([`/organizations/safire-project`]) is a plasma
 primary_sources:
 - path: news/safireproject-team-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-0.txt
 - path: news/aureonenergy-history-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-1.txt
 - path: news/cyclostationarity-gardner-biography-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-2.txt
 - path: news/safireproject-genesis-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-3.txt
 - path: news/safireproject-historical-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-4.txt
 - path: news/safireproject-phase-one-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-5.txt
 - path: news/safireproject-phase-two-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-6.txt
 - path: news/safireproject-phase-three-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-7.txt
 - path: news/safireproject-commercialization-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-8.txt
 - path: news/safireproject-resources-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-9.txt
 - path: news/safireproject-presentations-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-10.txt
 - path: news/aureonenergy-team-snapshot.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-11.txt
 - path: news/e-catworld-aureon-launch-20200308.html
   format: html
-  extracted_text_path: /tmp/scratch-safire-project-12.txt
 - path: news/safireproject-genesis-report-20180223.pdf
   format: pdf
 - path: news/safireproject-phase-one-report.pdf

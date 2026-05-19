@@ -22,7 +22,6 @@ description: 'Sean Kirkpatrick''s ([`/people/sean-kirkpatrick`]) open session te
 primary_sources:
 - path: government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-2023-04-19-sasc-kirkpatrick-0.txt
   pdf_metadata:
     title: 'OPEN - To receive testimony on the mission, activities, oversight, and budget of  the All-Domain Anomaly Resolution Office'
     subject: Senate Armed Services Emerging Threats and Capabilities

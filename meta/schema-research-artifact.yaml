@@ -452,7 +452,7 @@ conditional_keys:
 # Primary-source list entries
 primary_sources_entry:
   required: [path, format]
-  optional: [extracted_text_path, pdf_metadata, sha256_at_extraction]
+  optional: [pdf_metadata, sha256_at_extraction]
   # path: relative to sources/, must appear in sources/manifest.yaml
   # sha256_at_extraction: captured SHA256 at extraction time (optional
   #   audit trail; separate from manifest's live sha256 field)

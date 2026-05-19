@@ -16,7 +16,6 @@ primary_sources:
   sha256_at_extraction: eff0ffa55bcafee5dd7b0c4668c5bb21a9617feae8f0d01912a8c73a859dc170
 - path: government/defense-gov-dod-uap-video-release-20200427.html
   format: html
-  extracted_text_path: /tmp/scratch-flir1-video-1.txt
   sha256_at_extraction: fbbda4af8c5c79294a4303929f233afec5071dbf9e552ca249d1df67ef97e834
 document_intrinsic:
   duration: 76.30 seconds

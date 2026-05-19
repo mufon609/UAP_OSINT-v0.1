@@ -7,7 +7,6 @@ created: '2026-05-16'
 primary_sources:
 - path: government/cia-rdp79-00999a000300030027-0-uri-geller-sri-aug1973.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-cia-sri-geller-aug1973-0.txt
   pdf_metadata:
     title: CIA-RDP79-00999A000300030027-0.TIF
     creator: Adobe Acrobat 15.16

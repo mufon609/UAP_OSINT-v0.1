@@ -22,7 +22,6 @@ description: 'Ryan Graves / Americans for Safe Aerospace ([`/organizations/ameri
 primary_sources:
 - path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-written-testimony-graves-2023-0.txt
   pdf_metadata:
     title: Ryan Graves / Americans for Safe Aerospace Written Testimony
     producer: Skia/PDF m117 Google Docs Renderer

@@ -22,7 +22,6 @@ description: 'Dr. Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) Statement for 
 primary_sources:
 - path: government/armed-services-senate-gov-kirkpatrick-statement-20230419.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-written-testimony-kirkpatrick-2023-0.txt
   pdf_metadata:
     author: 'Kieran-Kaufman, Shana  CTR OSD OUSD Intel'
     creator: Microsoft® Word for Microsoft 365

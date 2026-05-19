@@ -7,7 +7,6 @@ created: '2026-05-16'
 primary_sources:
 - path: government/cia-rdp96-00787r000100220001-8-nature-1974-information-transmission.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-nature-1974-targ-puthoff-information-transmission-0.txt
   pdf_metadata:
     title: CIA-RDP96-00787R000100220001-8.TIF
     creator: Adobe Acrobat 15.16

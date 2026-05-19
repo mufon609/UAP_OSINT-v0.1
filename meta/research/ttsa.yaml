@@ -25,52 +25,36 @@ description: 'To The Stars Academy of Arts and Science Inc. ([`/organizations/tt
 primary_sources:
 - path: government/sec-ttsa-1a-partii-20170710.html
   format: html
-  extracted_text_path: /tmp/scratch-ttsa-0.txt
 - path: government/army-ttsa-crada-19-15-nete-20191001.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-ttsa-1.txt
 - path: news/tothestarsacademy-home-20180108.html
   format: html
-  extracted_text_path: /tmp/scratch-ttsa-2.txt
 - path: news/tothestarsacademy-home-20200105.html
   format: html
-  extracted_text_path: /tmp/scratch-ttsa-3.txt
 - path: news/tothestarsacademy-home-20220120.html
   format: html
-  extracted_text_path: /tmp/scratch-ttsa-4.txt
 - path: news/ttsa-blog-adam-research-project-intro-20180727.html
   format: html
-  extracted_text_path: /tmp/scratch-ttsa-5.txt
 - path: news/ttsa-blog-material-of-interest-magnesium-zinc-bismuth-20180929.html
   format: html
-  extracted_text_path: /tmp/scratch-ttsa-6.txt
 - path: news/wikileaks-podesta-email-3099-delonge-mccasland-20160125.html
   format: html
-  extracted_text_path: /tmp/scratch-ttsa-7.txt
 - path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
   format: html
-  extracted_text_path: /tmp/scratch-ttsa-8.txt
 - path: government/aaro-hrr-volume-1-20240308.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-ttsa-9.txt
 - path: government/aaro-ornl-synopsis-metallic-specimen-202404.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-ttsa-10.txt
 - path: government/aaro-supplement-to-ornl-analysis-202407.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-ttsa-11.txt
 - path: news/ttsa-puthoff-davis-ornl-analysis-memo-20250228.html
   format: html
-  extracted_text_path: /tmp/scratch-ttsa-puthoff-davis-ornl-analysis-memo-20250228.txt
 - path: government/sec-ttsa-1k-partii-20250417.html
   format: html
-  extracted_text_path: /tmp/scratch-sec-ttsa-1k-partii-20250417.txt
 - path: government/sec-ttsa-253g2-reg-a-termination-20210917.html
   format: html
-  extracted_text_path: /tmp/scratch-sec-ttsa-253g2-reg-a-termination-20210917.txt
 - path: government/sec-ttsa-1k-partii-20220502.html
   format: html
-  extracted_text_path: /tmp/scratch-sec-ttsa-1k-partii-20220502.txt
 document_intrinsic:
   founded_date: '2017-02'
   org_type: Corp

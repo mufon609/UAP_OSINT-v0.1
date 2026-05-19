@@ -32,49 +32,34 @@ description: 'Skinwalker Ranch — also called Sherman Ranch — is a private ca
 primary_sources:
 - path: government/oversight-house-gov-shellenberger-written-testimony-20241113.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-0.txt
 - path: social/nidsci-org-wayback-20021128.html
   format: html
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-1.txt
 - path: government/aawsap-contract-hhm402-08-c-0072-mod-p00001-20090902.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-2.txt
 - path: news/fox40-bigelow-mysterywire-20210528.html
   format: html
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-3.txt
 - path: news/deseret-frequent-fliers-19960630.html
   format: html
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-4.txt
 - path: news/aliendave-nids-ranch-mirror-19961020.html
   format: html
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-5.txt
 - path: news/theufochronicles-myers-family-20200412.html
   format: html
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-6.txt
 - path: news/vice-fugal-skinwalker-owner-20200310.html
   format: html
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-7.txt
 - path: government/uintah-parcel-150050001-20260420.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-8.txt
 - path: government/uintah-parcel-150050002-20260420.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-9.txt
 - path: government/uintah-parcel-150050004-20260420.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-10.txt
 - path: government/uintah-parcel-150040001-20260420.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-11.txt
 - path: government/uintah-parcel-150040002-20260420.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-12.txt
 - path: government/uintah-parcel-150040003-20260420.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-13.txt
 - path: government/uintah-parcel-140340003-20260420.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-skinwalker-ranch-14.txt
 document_intrinsic:
   full_name: Skinwalker Ranch
   alternate_names:

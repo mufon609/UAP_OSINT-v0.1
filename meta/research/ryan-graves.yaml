@@ -7,10 +7,8 @@ created: '2026-04-20'
 primary_sources:
 - path: government/docs-house-gov-graves-written-testimony-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-ryan-graves-0.txt
 - path: government/congress-gov-house-hearing-transcript-20230726.pdf
   format: pdf
-  extracted_text_path: /tmp/scratch-ryan-graves-1.txt
 document_intrinsic:
   full_name: Ryan Graves
   aliases:
