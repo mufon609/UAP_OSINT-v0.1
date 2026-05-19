@@ -137,7 +137,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 
 | Field | Value |
 |---|---|
-| Attributed to | Q&A with Senator Rosen and Senator Gillibrand, 2023-04-19 |
+| Attributed to | Kirkpatrick Q&A response to Senator Rosen and Senator Gillibrand on AARO operating authorities, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 31 |
 
@@ -145,7 +145,7 @@ Related: [`/transcripts/2023-04-19-sasc-kirkpatrick`] [`/documents/written-testi
 
 | Field | Value |
 |---|---|
-| Attributed to | Q&A with Gillibrand on AARO's logistics and reporting structure, 2023-04-19 |
+| Attributed to | Kirkpatrick Q&A response to Gillibrand on AARO's logistics and reporting structure, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 35 |
 

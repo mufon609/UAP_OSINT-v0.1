@@ -178,7 +178,7 @@ quotes:
   significance: 'Lacatski''s direct attribution of the false documents inserted into AAWSAP / DIA / DoD records as "deliberate" rather than mistaken — "deliberate false information put in there. Deliberate." Lacatski names the counterintelligence technique of "confusion for the sake of confusion" and asks "what was the purpose when other things counted." Extends the PART 1 disinformation framing.'
   context: Lacatski in WEAPONIZED PART 2 elaborating on the false documents he reported to the DOD/DOW IG in PART 1
 - id: q9
-  speaker_id: s1
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   text: |
@@ -187,9 +187,9 @@ quotes:
     path: transcripts/weaponized-lacatski-part2-2025-downloaded.md
     location: '[36:11]–[36:32]'
   significance: 'Lacatski''s direct response to whether the 2004 Tic Tac is US technology — "No, it''s not. I mean, I don''t know that officially, but there are other things that were not discussed in the full descriptions that occurred that would have that implemented on aircraft. If we had that technology" — the counterfactual argument: if it had been US technology, it would be on aircraft 21 years later, and it is not. Establishes "the very first case that OAP investigated" as the Tic Tac.'
-  context: George in WEAPONIZED PART 2 framing the 21st-anniversary point on the 2004 Tic Tac and asking whether Tic Tac is "our technology"
+  context: Lacatski in WEAPONIZED PART 2 responding to Knapp's 21st-anniversary framing on the 2004 Tic Tac, denying that it is US technology
 - id: q10
-  speaker_id: s2
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   text: |
@@ -198,9 +198,9 @@ quotes:
     path: transcripts/weaponized-lacatski-part2-2025-downloaded.md
     location: '[37:10]'
   significance: 'Jeremy''s closing of the Tic Tac question, "the tic tac is not Loheed Martin. Definitively, the tic tac is not Loheed Martin technology from 2004" — Lacatski''s response: "not that I''m aware of." Auto-caption renders Lockheed as "Loheed" — see naming_quirks. Establishes Lacatski''s "not that I''m aware of" on whether Tic Tac is Lockheed Martin technology, the closest the corpus comes on this specific question.'
-  context: Jeremy in WEAPONIZED PART 2 pressing for a Lockheed Martin-specific denial on Tic Tac
+  context: Lacatski in WEAPONIZED PART 2 responding to Corbell pressing for a Lockheed Martin-specific denial on Tic Tac
 - id: q11
-  speaker_id: s2
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   text: |
@@ -209,9 +209,9 @@ quotes:
     path: transcripts/weaponized-lacatski-part2-2025-downloaded.md
     location: '[38:14]–[38:36]'
   significance: 'Lacatski''s on-record opinion on 3I/ATLAS as a possible non-natural object — "doubtful." Frames the visiting-an-alien-civilization-in-a-rock framing as "pre-Star Trek pre-enterprise" — his rocket-scientist-and-propulsion-expert opinion. Documents Lacatski''s assessment of the Avi Loeb-framed extraterrestrial-comet hypothesis as unconvincing.'
-  context: Jeremy in WEAPONIZED PART 2 asking Lacatski as a rocket scientist and propulsion expert about the 3I/ATLAS debate
+  context: Lacatski in WEAPONIZED PART 2 offering his rocket-scientist opinion on the 3I/ATLAS debate, responding to Corbell's question
 - id: q12
-  speaker_id: s1
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   text: |
@@ -220,7 +220,7 @@ quotes:
     path: transcripts/weaponized-lacatski-part2-2025-downloaded.md
     location: '[47:25]–[47:48]'
   significance: 'Lacatski''s first-person framing of his own ranch encounters — "mild" and "a neutrality to it," not the severity others experienced. Documents that Lacatski has had his own encounters which he will describe in the future. Notable shift from third-person institutional-actor narration to first-person experience.'
-  context: George in WEAPONIZED PART 2 asking whether Lacatski's Skinwalker Ranch experience followed him
+  context: Lacatski in WEAPONIZED PART 2 responding to Knapp's question about whether his Skinwalker Ranch experience followed him, framing his encounters as mild relative to others'
 - id: q13
   speaker_id: s3
   added_date: '2026-05-17'
@@ -244,7 +244,7 @@ quotes:
   significance: 'Lacatski''s description of the MIB image — a man in black suit, white shirt, black shoes and tie, black hat illustration on "a full blank page" with two words below: "Join us." Encountered on the express train from Union Station during Kona Blue. The illustration-on-newspaper detail is distinctive — not a person but a printed image presented to him deliberately.'
   context: Lacatski in WEAPONIZED PART 2 describing his MIB sighting on a Union Station express train
 - id: q15
-  speaker_id: s1
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-11'
   text: |
@@ -253,7 +253,7 @@ quotes:
     path: transcripts/weaponized-lacatski-part2-2025-downloaded.md
     location: '[1:04:25]–[1:04:49]'
   significance: 'George frames Senator Reid''s "race-is-still-on" thesis and Jay Stratton''s ([`/people/jay-stratton`]) "you can''t tell your friends without telling your enemies" framing; Lacatski affirms "I agree with it''s still on." Documents Lacatski''s direct on-record agreement that the technology-recovery race with adversary nations is ongoing as of November 2025.'
-  context: George in WEAPONIZED PART 2 framing the race-for-technology question and Lacatski's response
+  context: Lacatski in WEAPONIZED PART 2 agreeing with Knapp's race-for-technology framing — affirming the technology-recovery race is still on
 - id: q16
   speaker_id: s3
   added_date: '2026-05-17'

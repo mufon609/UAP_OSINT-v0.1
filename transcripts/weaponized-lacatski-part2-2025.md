@@ -172,8 +172,8 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
-| Speaker | George Knapp ([`/people/george-knapp`]) |
-| Attributed to | George in WEAPONIZED PART 2 framing the 21st-anniversary point on the 2004 Tic Tac and asking whether Tic Tac is "our technology", 2025-11-11 |
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
+| Attributed to | Lacatski in WEAPONIZED PART 2 responding to Knapp's 21st-anniversary framing on the 2004 Tic Tac, denying that it is US technology, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [36:11]–[36:32] |
 
@@ -185,8 +185,8 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
-| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
-| Attributed to | Jeremy in WEAPONIZED PART 2 pressing for a Lockheed Martin-specific denial on Tic Tac, 2025-11-11 |
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
+| Attributed to | Lacatski in WEAPONIZED PART 2 responding to Corbell pressing for a Lockheed Martin-specific denial on Tic Tac, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [37:10] |
 
@@ -198,8 +198,8 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
-| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
-| Attributed to | Jeremy in WEAPONIZED PART 2 asking Lacatski as a rocket scientist and propulsion expert about the 3I/ATLAS debate, 2025-11-11 |
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
+| Attributed to | Lacatski in WEAPONIZED PART 2 offering his rocket-scientist opinion on the 3I/ATLAS debate, responding to Corbell's question, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [38:14]–[38:36] |
 
@@ -211,8 +211,8 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
-| Speaker | George Knapp ([`/people/george-knapp`]) |
-| Attributed to | George in WEAPONIZED PART 2 asking whether Lacatski's Skinwalker Ranch experience followed him, 2025-11-11 |
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
+| Attributed to | Lacatski in WEAPONIZED PART 2 responding to Knapp's question about whether his Skinwalker Ranch experience followed him, framing his encounters as mild relative to others', 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [47:25]–[47:48] |
 
@@ -250,8 +250,8 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
-| Speaker | George Knapp ([`/people/george-knapp`]) |
-| Attributed to | George in WEAPONIZED PART 2 framing the race-for-technology question and Lacatski's response, 2025-11-11 |
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
+| Attributed to | Lacatski in WEAPONIZED PART 2 agreeing with Knapp's race-for-technology framing — affirming the technology-recovery race is still on, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [1:04:25]–[1:04:49] |
 

@@ -539,6 +539,7 @@ speakers:
   added_date: '2026-04-20'
   name: Ryan Graves
   role: Witness
+  node_link: /people/ryan-graves
   source:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: line 640

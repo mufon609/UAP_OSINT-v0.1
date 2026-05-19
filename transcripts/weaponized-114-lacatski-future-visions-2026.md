@@ -196,8 +196,8 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
-| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
-| Attributed to | Jeremy in WEAPONIZED EP 114 asking Lacatski directly about the Pax River facility Rep. Burchett had referenced, 2026-04-08 |
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
+| Attributed to | Lacatski in WEAPONIZED EP 114 confirming he has been to the Pax River facility, responding to Corbell's question about Rep. Burchett's reference, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [33:51]–[34:32] |
 
@@ -235,8 +235,8 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
-| Speaker | George Knapp ([`/people/george-knapp`]) |
-| Attributed to | George in WEAPONIZED EP 114 asking Lacatski to summarize the Thread 3 / Russian-files content in the new book, 2026-04-08 |
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
+| Attributed to | Lacatski in WEAPONIZED EP 114 summarizing the Thread 3 / Russian-files content, responding to Knapp's question about the new book, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [1:03:54]–[1:04:46] |
 

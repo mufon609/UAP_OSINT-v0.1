@@ -117,7 +117,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 | Field | Value |
 |---|---|
-| Attributed to | Q&A with Ranking Member Garcia, 2023-07-26 |
+| Attributed to | Grusch Q&A response to Ranking Member Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 19 |
 
@@ -133,7 +133,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 | Field | Value |
 |---|---|
-| Attributed to | Q&A with Raskin (first round), 2023-07-26 |
+| Attributed to | Grusch Q&A response to Raskin (first round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 22 |
 
@@ -141,7 +141,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 | Field | Value |
 |---|---|
-| Attributed to | Q&A with Representative Mace, 2023-07-26 |
+| Attributed to | Graves Q&A response to Representative Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 39 |
 
@@ -149,7 +149,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 | Field | Value |
 |---|---|
-| Attributed to | Q&A with Representative Mace, 2023-07-26 |
+| Attributed to | Grusch Q&A response to Representative Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 40 |
 
@@ -157,7 +157,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 | Field | Value |
 |---|---|
-| Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
+| Attributed to | Fravor Q&A response to Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 42 |
 
@@ -165,7 +165,7 @@ Related: [`/documents/written-testimony-fravor-2023`] [`/documents/written-testi
 
 | Field | Value |
 |---|---|
-| Attributed to | closing remarks, 2023-07-26 |
+| Attributed to | Garcia closing remarks, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 49 |
 

@@ -44,7 +44,7 @@ Grusch's Q&A exchange under oath — interviewing over 40 witnesses over 4 years
 |---|---|---|---|
 | David Grusch | Witness | [`/people/david-grusch`] | Primary subject of this transcript; former intelligence officer, NRO Representative to the UAP Task Force; testified under oath on a multi-decade UAP crash retrieval and reverse engineering program allegation. |
 | David Fravor | Witness | [`/people/david-fravor`] | Retired U.S. Navy Commander; 2004 commanding officer of Strike Fighter Squadron 41; testified under oath on the 2004 Nimitz Tic Tac encounter. |
-| Ryan Graves | Witness |  | Former F-18 pilot; Executive Director of Americans for Safe Aerospace; testified under oath on 2014-2015 Virginia Beach encounters. |
+| Ryan Graves | Witness | [`/people/ryan-graves`] | Former F-18 pilot; Executive Director of Americans for Safe Aerospace; testified under oath on 2014-2015 Virginia Beach encounters. |
 | Glenn Grothman | Subcommittee Chair |  | Chairman of the Subcommittee on National Security, the Border, and Foreign Affairs (Wisconsin). |
 | Robert Garcia | Subcommittee Ranking Member |  | Ranking Minority Member of the Subcommittee (California). |
 | Tim Burchett | Member (waived on) |  | Representative (Tennessee); led the effort to secure the hearing; questioned Grusch on retaliation, SAP oversight evasion, corporate involvement, and whistleblower routing. |

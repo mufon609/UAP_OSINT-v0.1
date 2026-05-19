@@ -365,7 +365,7 @@ quotes:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "p. 19"
   significance: Grusch's quantitative basis for his claim that the U.S. Government is in possession of UAPs — 40+ witnesses interviewed over 4 years
-  context: Q&A with Ranking Member Garcia
+  context: Grusch Q&A response to Ranking Member Garcia
 - id: q4
   added_date: '2026-04-20'
   statement_date: '2023-07-26'
@@ -387,7 +387,7 @@ quotes:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "p. 22"
   significance: Grusch's framing of the reprisal pattern he describes against UAP-program whistleblowers
-  context: Q&A with Raskin (first round)
+  context: Grusch Q&A response to Raskin (first round)
 - id: q6
   added_date: '2026-04-20'
   statement_date: '2023-07-26'
@@ -398,7 +398,7 @@ quotes:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "p. 39"
   significance: Graves's estimate that only approximately 5 percent of pilot UAP sightings get reported — quantifies the under-reporting problem central to his testimony
-  context: Q&A with Representative Mace
+  context: Graves Q&A response to Representative Mace
 - id: q7
   added_date: '2026-04-20'
   statement_date: '2023-07-26'
@@ -409,7 +409,7 @@ quotes:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "p. 40"
   significance: Grusch's "nonhuman biologics" assertion about recovered crash-retrieval biologics, attributed to direct-knowledge sources currently on the program
-  context: Q&A with Representative Mace
+  context: Grusch Q&A response to Representative Mace
 - id: q8
   added_date: '2026-04-20'
   statement_date: '2023-07-26'
@@ -420,7 +420,7 @@ quotes:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "p. 42"
   significance: Fravor's framing of the 2004 USS Nimitz encounter as probably the most credible UFO sighting in history — based on multi-sensor tracking plus visual
-  context: Q&A with Representative Langworthy
+  context: Fravor Q&A response to Representative Langworthy
 - id: q9
   added_date: '2026-04-20'
   statement_date: '2023-07-26'
@@ -431,7 +431,7 @@ quotes:
     path: government/congress-gov-house-hearing-transcript-20230726.pdf
     location: "p. 49"
   significance: Ranking Minority Member Garcia's framing of the hearing as unusually bipartisan
-  context: closing remarks
+  context: Garcia closing remarks
 entities_referenced:
 - id: e1
   added_date: '2026-04-20'
