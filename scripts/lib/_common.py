@@ -162,6 +162,23 @@ def entity_type_dirs():
     return frozenset(dir_map[t] for t in types if t in dir_map)
 
 
+def iter_artifacts(entries):
+    """Yield ``(entry, artifact)`` pairs across every URL entry's
+    ``artifacts`` list. Centralizes the nested-iteration pattern that
+    every manifest consumer needs after the C29 schema change. The
+    entry carries URL-level state (url, status, archive_status,
+    wayback_date); the artifact carries per-rendering fields (path,
+    format, sha256, archived_date, extraction_type,
+    transcript_provenance, note).
+    """
+    for entry in entries:
+        if not isinstance(entry, dict):
+            continue
+        for artifact in entry.get("artifacts") or []:
+            if isinstance(artifact, dict):
+                yield entry, artifact
+
+
 def _load_extraction_types():
     """Build a {path: extraction_type} map from sources/manifest.yaml.
 
@@ -181,11 +198,9 @@ def _load_extraction_types():
         return _extraction_type_cache
     if not isinstance(entries, list):
         return _extraction_type_cache
-    for entry in entries:
-        if not isinstance(entry, dict):
-            continue
-        path = entry.get("path")
-        et = entry.get("extraction_type")
+    for _, artifact in iter_artifacts(entries):
+        path = artifact.get("path")
+        et = artifact.get("extraction_type")
         if path and et:
             _extraction_type_cache[path] = et
     return _extraction_type_cache
@@ -220,11 +235,9 @@ def manifest_format(rel_path):
         return None
     if not isinstance(entries, list):
         return None
-    for entry in entries:
-        if not isinstance(entry, dict):
-            continue
-        path = entry.get("path")
-        fmt = entry.get("format")
+    for _, artifact in iter_artifacts(entries):
+        path = artifact.get("path")
+        fmt = artifact.get("format")
         if path and fmt:
             _manifest_format_cache[path] = fmt
     return _manifest_format_cache.get(rel_path)
@@ -391,10 +404,14 @@ def save_manifest(entries):
 
 def load_manifest_paths():
     """Return the set of ``path`` strings registered in
-    ``sources/manifest.yaml``. Convenience wrapper around
-    ``load_manifest()`` for callers that only need path-existence checks
-    (validate-research.py + review-coverage.py both use this shape)."""
-    return {e.get("path") for e in load_manifest() if e.get("path")}
+    ``sources/manifest.yaml`` — across every URL's ``artifacts`` list.
+    Convenience wrapper for callers that only need path-existence
+    checks (validate-research.py + review-coverage.py both use this
+    shape)."""
+    return {
+        a.get("path") for _, a in iter_artifacts(load_manifest())
+        if a.get("path")
+    }
 
 
 def load_source_to_artifacts_index():

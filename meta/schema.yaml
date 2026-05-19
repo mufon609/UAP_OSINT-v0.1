@@ -611,18 +611,36 @@ types:
 # ---------------------------------------------------------------------------
 # Manifest (sources/manifest.yaml) schema
 # ---------------------------------------------------------------------------
+#
+# Each manifest entry models a single source URL. The URL has zero or
+# more archived renderings (the `artifacts` list) — most commonly one
+# (e.g., one PDF download per gov-doc URL), but two for sources where
+# both a video and a transcript are archived (auto-caption pull,
+# whisper transcription, or contributor-corrected transcript). The
+# `artifacts` model replaces the prior flat-list shape where each
+# (url, path) pair was its own row; URLs are now first-class, and
+# renderings nest beneath them.
+#
+# URL-level fields (apply to the source itself):
+#   - url, status, archive_status, wayback_date, wayback_skip, note
+#
+# Artifact-level fields (apply to one archived rendering):
+#   - format, path, sha256, archived_date, extraction_type,
+#     transcript_provenance
 
 manifest_entry:
-  required: [url, format, status, archive_status]
-  optional: [path, sha256, archived_date, wayback_date, wayback_skip, note, category, extraction_type, transcript_provenance]
-  conditionally_required:
-    path: "status == archived"       # must be set when the file is archived locally
-    sha256: "status == archived"     # SHA256 of the archived file; integrity backstop
+  required: [url, status, archive_status]
+  optional: [artifacts, wayback_date, wayback_skip, note]
+  # `artifacts` is conditionally non-empty: required to contain at least one
+  # entry when status == archived; empty list (or absent) when status is
+  # pending / 403-blocked / 402-blocked. The non-emptiness rule is
+  # enforced by scripts/checks/manifest_artifact_shape.py rather than the
+  # conditionally_required mechanism (which checks key presence only).
   status_values: [archived, 403-blocked, 402-blocked, pending]
   archive_status_values: [0, 1, 2, 3]
   # archive_status is a 2-bit presence indicator — bit 0 = locally archived
-  # (status == archived AND path set), bit 1 = archived on the Internet
-  # Archive Wayback Machine (wayback_date set). Combined values:
+  # (status == archived AND artifacts non-empty), bit 1 = archived on the
+  # Internet Archive Wayback Machine (wayback_date set). Combined values:
   #   0 = not in any archive (pending or blocked)
   #   1 = local only
   #   2 = Wayback only (rare — registered a URL we couldn't download
@@ -630,8 +648,12 @@ manifest_entry:
   #   3 = archived in both locations
   # Auto-maintained by manifest.py add (sets bit 0 on local archival)
   # and archive.py (sets bit 1 on Wayback find or successful SPN submit).
-  # Validator enforces consistency against status / path / wayback_date.
+  # Validator enforces consistency against status / artifacts / wayback_date.
   # Contributors don't hand-maintain this field; the scripts do.
+
+artifact_entry:
+  required: [format, path, sha256, archived_date]
+  optional: [extraction_type, transcript_provenance, note]
   format_values: [pdf, html, txt, audio, image, video, transcript]
   extraction_type_values: [text-native, ocr-scan, extraction-lossy]
   # `extraction_type` classifies how the archived file yields text. Optional;
@@ -730,16 +752,22 @@ manifest_entry:
   # ocr-scan-with-clean-extract exception in meta/conventions.md).
   # See meta/conventions.md "Transcript provenance and audit discipline"
   # for the full discipline.
-  # `category` is derived from path prefix (government/, news/, etc.) unless overridden
   # `sha256` detects local file corruption, accidental overwrite, and silent
   # substitution. Computed at archive-time by manifest.py add; re-verified
   # by manifest.py verify-checksums.
-  # `wayback_skip: true` marks entries where Wayback archival is not
-  # applicable — synthetic deep-link URLs that require session state
-  # (e.g., the Uintah County parcel portal deep-links) and therefore
+  # `wayback_skip: true` (URL-level) marks entries where Wayback archival
+  # is not applicable — synthetic deep-link URLs that require session
+  # state (e.g., the Uintah County parcel portal deep-links) and therefore
   # won't resolve cleanly at web-archive time. archive.py skips these
   # permanently; the local archive + sha256 remain the integrity
   # guarantee for such entries.
+  # `note` may appear at either level. URL-level notes describe the
+  # source itself (publication context, access restrictions, broader
+  # provenance); artifact-level notes describe the specific archived
+  # rendering (extraction quirks, transcription corrections applied,
+  # contributor-produced sibling rationale). Most contributor-authored
+  # notes today are about the source — URL-level is the default;
+  # artifact-level for rendering-specific context.
 
 # ---------------------------------------------------------------------------
 # Photo identity log manifest (sources/photo-identity-log/manifest.yaml)

@@ -12,7 +12,7 @@ description: 'AARO ([`/organizations/aaro`]) Historical Record Report Volume I (
 pattern_statement: 'AARO HRR Vol I institutional denial frame addresses a different action-scope than the Lockheed-Bigelow allegation chain Elizondo''s QFR Q6 confirms: AARO denies "ever recovered, possessed, or engaged in reverse-engineering" by named companies and the "movement of and experimentation on" by a former CIA official; the allegation describes a proposed transfer the CIA "opposed."'
 
 primary_sources:
-- path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+- path: government/aaro-hrr-volume-1-20240308.pdf
   format: pdf
 - path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
   format: pdf
@@ -28,7 +28,7 @@ quotes:
   text: |-
     AARO found no empirical evidence for claims that the USG and private companies have been reverse-engineering extraterrestrial technology.
   source:
-    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    path: government/aaro-hrr-volume-1-20240308.pdf
     location: 'Executive Summary, p. 7'
   significance: 'AARO HRR Vol I top-line finding — frames AARO''s headline denial in terms of "reverse-engineering extraterrestrial technology". The action verb is reverse-engineering; the temporal frame is "have been" (a perfect-tense looking-backward claim).'
   context: 'AARO Historical Record Report Volume I Executive Summary top-line finding, March 8, 2024'
@@ -41,7 +41,7 @@ quotes:
   text: |-
     executives, scientists, and chief technology officers of the companies named by interviewees met with the Director of AARO and denied on the record that they have ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology.
   source:
-    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    path: government/aaro-hrr-volume-1-20240308.pdf
     location: 'Executive Summary, p. 8, "Named Companies Allegedly Experimenting on Alien Technology" bullet'
   significance: 'AARO HRR Vol I Named-Companies denial — names the action-scope of the corporate denial as "ever recovered, possessed, or engaged in reverse-engineering of extraterrestrial technology". The action verbs are recovered / possessed / reverse-engineered; the temporal frame is "ever" (perfect-tense looking-backward).'
   context: 'AARO Historical Record Report Volume I Executive Summary p. 8 Named-Companies bullet recording corporate executives'' denials to the Director of AARO'
@@ -54,7 +54,7 @@ quotes:
   text: |-
     The named, former CIA official was not involved in the movement of extraterrestrial technology. The same former CIA officer signed a memo rejecting a claim made by interviewees that he managed the movement of and experimentation on off-world technology.
   source:
-    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    path: government/aaro-hrr-volume-1-20240308.pdf
     location: 'Executive Summary, p. 8, "A CIA Official Allegedly Managed UAP Experimentation" bullet'
   significance: 'AARO HRR Vol I CIA-Official denial — names the action-scope of the official''s denial as "managed the movement of and experimentation on off-world technology". The action verbs are managed / experimentation; the temporal frame is past management of a movement and experimentation event.'
   context: 'AARO Historical Record Report Volume I Executive Summary p. 8 CIA-Official bullet documenting the named former CIA official''s memo rejecting the interviewee claim'
@@ -147,7 +147,7 @@ timeline:
   event: 'AARO publishes Historical Record Report Volume I. Executive Summary p. 7 denies "reverse-engineering extraterrestrial technology" claims; p. 8 denies executives "ever recovered, possessed, or engaged in reverse-engineering" and denies a named CIA official "managed the movement of and experimentation on off-world technology".'
   category: publication
   source:
-    path: government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf
+    path: government/aaro-hrr-volume-1-20240308.pdf
     location: 'Executive Summary p. 7-8'
 
 - id: t2

@@ -459,7 +459,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | Field | Value |
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I Executive Summary, March 2024, 2024-03-08 |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | Executive Summary, p.7 |
 
 ---
@@ -471,7 +471,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | Field | Value |
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I Executive Summary, March 2024, 2024-03-08 |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | Executive Summary, p.7 |
 
 ---
@@ -487,7 +487,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | Field | Value |
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I (March 2024), KONA BLUE section, 2024-03-08 |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | HRR Vol I, p. 34, "KONA BLUE: A Proposed UAP Recovery and Reverse-Engineering Program" section opening |
 
 ---
@@ -506,7 +506,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | Field | Value |
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I, KONA BLUE proposal scope and DHS rejection, 2024-03-08 |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | HRR Vol I, p. 34 |
 
 ---
@@ -522,7 +522,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | Field | Value |
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I, KONA BLUE finding, 2024-03-08 |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | HRR Vol I, p. 34-35 |
 
 ---
@@ -534,7 +534,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | Field | Value |
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I (March 8, 2024), Executive Summary statement on Volume II, 2024-03-08 |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | HRR Vol I, p. 7, Executive Summary |
 
 ---
@@ -552,7 +552,7 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | Field | Value |
 |---|---|
 | Attributed to | AARO Historical Record Report Volume I (March 8, 2024), Scope section, 2024-03-08 |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | HRR Vol I, Scope section |
 
 ---
@@ -1149,8 +1149,8 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 | 2024-03-06 | Heather King (SES, Secretary of Defense office) emails OSD/PA that the Deputy SecDef flagged the Langley/Breaking Defense story as connected to the AARO HRR rollout. Documents Deputy SecDef office linking JBLE December 2023 drone incursions to AARO HRR Vol I rollout in DoD internal correspondence on the day of the rollout briefings (FOIA 24-F-0894). | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 | 2024-03-06 | Pentagon spokesperson Sue Gough emails David A. Kozik (OUSD(I&S) Director Congressional Activities) at 1:45 PM with "Importance: High": "We do not want to see sUAS added to AARO's portfolio!" Formal AARO PA position contesting Sen. Gillibrand's same-day request that AARO catalog sUAS incursions (FOIA 24-F-0894). | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
 | 2024-03-07 | David A. Kozik replies that AARO "absolutely should be involved in cUAS efforts in a *coordinating* role, but they should not/not be the lead", attributing the Gillibrand framing to "a prep failure on our part for ASD HD&HA". Documents direct operational coordination between AARO Public Affairs and OUSD(I&S) Congressional Activities at email-thread level (FOIA 24-F-0894). | other | government/blackvault-foia-24-f-0894-aaro-vol-1-rollout-emails.pdf |  |
-| 2024-03-08 | AARO Historical Record Report Volume I released | other | government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf | [`/documents/aaro-historical-record-report-vol-i`] |
-| 2024-06-15 | Section 6802(j) HRR statutory deadline (540 days after IAA FY 2023 enactment). HRR Vol I (March 8, 2024) published before deadline, satisfying "a written report" requirement. HRR Vol I §III states "AARO will publish Volume II in accordance with the date established in Section 6802"; Vol II remained unpublished as of February 25, 2026. | statutory-deadline | government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf |  |
+| 2024-03-08 | AARO Historical Record Report Volume I released | other | government/aaro-hrr-volume-1-20240308.pdf | [`/documents/aaro-historical-record-report-vol-i`] |
+| 2024-06-15 | Section 6802(j) HRR statutory deadline (540 days after IAA FY 2023 enactment). HRR Vol I (March 8, 2024) published before deadline, satisfying "a written report" requirement. HRR Vol I §III states "AARO will publish Volume II in accordance with the date established in Section 6802"; Vol II remained unpublished as of February 25, 2026. | statutory-deadline | government/aaro-hrr-volume-1-20240308.pdf |  |
 | 2024-08-23 | AARO follow-on support services contract HQ003424C0096 awarded to Sancorp Consulting (\$3,471,829.40, period of performance through January 31, 2026) — continuing the original AARO support PWS scope. | contract | government/usaspending-hq003424c0096.txt | [`/organizations/sancorp-consulting`] |
 | 2024-08-26 | Dr. Jon T. Kosloski appointed as the director of the All-domain Anomaly Resolution Office on detail from the National Security Agency | leadership-transition | government/defense-gov-kosloski-appointment-20240826.html |  |
 | 2024-11-13 | House Oversight + Cybersecurity/IT subcommittee hearing "Unidentified Anomalous Phenomena: Exposing the Truth". Disclosure-side written testimony submitted by Shellenberger ([`/people/michael-shellenberger`]), Gallaudet ([`/people/tim-gallaudet`]), Mike Gold ([`/people/michael-gold`]), and Luis Elizondo ([`/people/luis-elizondo`]) characterizes AARO's historical and analytic work critically — Gallaudet describes a first-person "hours-long influence operation" by the then-acting AARO director and senior staff. | hearing | government/oversight-house-gov-uap-hearing-page-20241113.html |  |

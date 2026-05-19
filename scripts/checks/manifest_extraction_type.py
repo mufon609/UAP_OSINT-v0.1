@@ -25,6 +25,7 @@ single manifest load.
 """
 
 from checks import Issue
+from lib._common import iter_artifacts
 
 
 CHECK_NAME = "manifest_extraction_type"
@@ -32,23 +33,23 @@ MANIFEST_REL = "sources/manifest.yaml"
 
 
 def check(ctx):
-    """Yield error-level Issue for any entry whose extraction_type is
-    set to a value outside the schema's enum. Valid values come from
-    ``schema.yaml::manifest_entry.extraction_type_values`` — schema is
-    the single source of truth, so adding a new extraction_type is one
-    schema edit rather than a schema edit + this check edit."""
-    valid_values = ctx.schema["manifest_entry"]["extraction_type_values"]
-    for entry in ctx.manifest_entries:
-        if not isinstance(entry, dict):
+    """Yield error-level Issue for any artifact whose extraction_type
+    is set to a value outside the schema's enum. Valid values come
+    from ``schema.yaml::artifact_entry.extraction_type_values`` —
+    schema is the single source of truth, so adding a new
+    extraction_type is one schema edit rather than a schema edit +
+    this check edit."""
+    valid_values = ctx.schema["artifact_entry"]["extraction_type_values"]
+    for entry, artifact in iter_artifacts(ctx.manifest_entries):
+        if "extraction_type" not in artifact:
             continue
-        if "extraction_type" not in entry:
-            continue
-        et = entry.get("extraction_type")
+        et = artifact.get("extraction_type")
         if et not in valid_values:
             url = entry.get("url", "(no url)")
+            path = artifact.get("path", "(no path)")
             yield Issue(
                 MANIFEST_REL, "error",
                 f"extraction_type must be one of {list(valid_values)}; "
-                f"got {et!r} (URL: {url})",
+                f"got {et!r} (artifact sources/{path} on URL: {url})",
                 check_name=CHECK_NAME,
             )

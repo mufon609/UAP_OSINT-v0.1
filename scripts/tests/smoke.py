@@ -75,14 +75,14 @@ sys.path.insert(0, str(REPO_ROOT / "scripts" / "build"))
 # worker pays the load cost zero additional times.
 
 from lib import _common
-from lib._common import MANIFEST_PATH, strict_yaml_load
+from lib._common import MANIFEST_PATH, iter_artifacts, strict_yaml_load
 
 _common.load_schema()
 with open(MANIFEST_PATH) as f:
     _MANIFEST = strict_yaml_load(f) or []
 _common.load_manifest = lambda: _MANIFEST
 _common.load_manifest_paths = lambda: {
-    e.get("path") for e in _MANIFEST if e.get("path")
+    a.get("path") for _, a in iter_artifacts(_MANIFEST) if a.get("path")
 }
 
 # ── No-op manifest integrity + governance checks for the smoke run ─────

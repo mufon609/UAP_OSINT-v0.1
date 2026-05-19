@@ -32,7 +32,7 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 | Attributed to | AARO Historical Record Report Volume I Executive Summary top-line finding, March 8, 2024, 2024-03-08 |
 | Tier | on-record |
 | Attestor | [`/organizations/aaro`] |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | Executive Summary, p. 7 |
 
 ---
@@ -46,7 +46,7 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 | Attributed to | AARO Historical Record Report Volume I Executive Summary p. 8 Named-Companies bullet recording corporate executives' denials to the Director of AARO, 2024-03-08 |
 | Tier | on-record |
 | Attestor | [`/organizations/aaro`] |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | Executive Summary, p. 8, "Named Companies Allegedly Experimenting on Alien Technology" bullet |
 
 ---
@@ -60,7 +60,7 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 | Attributed to | AARO Historical Record Report Volume I Executive Summary p. 8 CIA-Official bullet documenting the named former CIA official's memo rejecting the interviewee claim, 2024-03-08 |
 | Tier | on-record |
 | Attestor | [`/organizations/aaro`] |
-| Source | [archived source](../sources/government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf) |
+| Source | [archived source](../sources/government/aaro-hrr-volume-1-20240308.pdf) |
 | Location | Executive Summary, p. 8, "A CIA Official Allegedly Managed UAP Experimentation" bullet |
 
 ---
@@ -103,7 +103,7 @@ AARO ([`/organizations/aaro`]) Historical Record Report Volume I ([`/documents/a
 
 | Date | Event | Source | Node Link |
 |---|---|---|---|
-| 2024-03-08 | AARO publishes Historical Record Report Volume I. Executive Summary p. 7 denies "reverse-engineering extraterrestrial technology" claims; p. 8 denies executives "ever recovered, possessed, or engaged in reverse-engineering" and denies a named CIA official "managed the movement of and experimentation on off-world technology". | government/media-defense-gov-aaro-historical-record-vol-i-20240308.pdf |  |
+| 2024-03-08 | AARO publishes Historical Record Report Volume I. Executive Summary p. 7 denies "reverse-engineering extraterrestrial technology" claims; p. 8 denies executives "ever recovered, possessed, or engaged in reverse-engineering" and denies a named CIA official "managed the movement of and experimentation on off-world technology". | government/aaro-hrr-volume-1-20240308.pdf |  |
 | 2024-12-19 | Luis Elizondo signs Question for the Record response to Rep. Eric Burlison. Q6 response: "Yes. The CIA opposed the transfer of materials of advanced, non-human origin from Lockheed Martin to Bigelow Aerospace." The allegation is reaffirmed at congressional-response level nine months after the AARO HRR Vol I publication. | government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf |  |
 
 ---

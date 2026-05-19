@@ -17,7 +17,7 @@ import sys
 
 import yaml
 
-from lib._common import REPO_ROOT, parse_date_tuple, strict_yaml_load
+from lib._common import REPO_ROOT, iter_artifacts, parse_date_tuple, strict_yaml_load
 
 
 SECTION_SEP = "\n---\n\n"
@@ -187,7 +187,7 @@ def _manifest_sha256_for(path):
     """Look up the sha256 for a given source path from sources/manifest.yaml.
     Loaded once per build, cached. Returns empty string when the path is
     missing from the manifest or has no sha256 field (e.g., pending /
-    blocked sources)."""
+    blocked sources). Walks the URL → artifacts nesting (C29 schema)."""
     global _manifest_sha256_cache
     if _manifest_sha256_cache is None:
         manifest_path = REPO_ROOT / "sources" / "manifest.yaml"
@@ -198,9 +198,9 @@ def _manifest_sha256_for(path):
                 with open(manifest_path) as f:
                     entries = strict_yaml_load(f) or []
                 _manifest_sha256_cache = {
-                    e.get("path"): e.get("sha256")
-                    for e in entries
-                    if isinstance(e, dict) and e.get("path") and e.get("sha256")
+                    a.get("path"): a.get("sha256")
+                    for _, a in iter_artifacts(entries)
+                    if a.get("path") and a.get("sha256")
                 }
             except (yaml.YAMLError, OSError):
                 _manifest_sha256_cache = {}

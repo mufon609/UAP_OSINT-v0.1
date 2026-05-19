@@ -1255,6 +1255,62 @@ When a source is blocked or paywalled, the manifest entry records the
 block status and the archival route (if any) is documented on the
 entry. See `sources-access.md` for site-specific workarounds.
 
+### Manifest shape — URL is canonical, artifacts are renderings
+
+`sources/manifest.yaml` models each source URL as one entry. The URL
+is the canonical thing being archived; the `artifacts` list under it
+records each archived rendering of the URL's content.
+
+URL-level fields describe the source itself:
+
+- `url` — the canonical source URL
+- `status` — `archived` | `403-blocked` | `402-blocked` | `pending`
+- `archive_status` — 2-bit indicator: bit 0 = locally archived
+  (status==archived AND artifacts non-empty); bit 1 = Wayback present
+- `wayback_date` — Wayback snapshot date when bit 1 is set
+- `wayback_skip: true` — URL is structurally unarchivable to Wayback
+  (synthetic deep-links, session-bound URLs)
+- `note` — description of the source itself
+
+Artifact-level fields describe one archived rendering:
+
+- `format` — `pdf` | `html` | `txt` | `audio` | `image` | `video` | `transcript`
+- `path` — relative path under `sources/`
+- `sha256` — content-integrity checksum
+- `archived_date` — date this rendering was downloaded
+- `extraction_type` — `text-native` | `ocr-scan` | `extraction-lossy`
+  (applies to PDF; drives same-stem `.txt` sibling preference)
+- `transcript_provenance` — `stenographic` | `published-transcript` |
+  `human-corrected-caption` | `auto-caption` | `unknown` (applies to
+  `format: transcript`)
+- `note` — description of this specific rendering (extraction
+  caveats, transcription corrections, etc.)
+
+**Dual-artifact pattern.** A source URL whose content has been
+archived twice — most commonly an audio/video URL with both the
+underlying media and a derived transcript — gets ONE URL entry with
+TWO entries in its `artifacts` list (e.g., `format: video` + `format:
+transcript`). The transcript's `transcript_provenance` records how it
+was produced from the underlying media; readers and tools can walk
+the renderings under a URL to find the right one to verify against.
+
+**`manifest.py add` semantics.** `manifest.py add URL --path PATH
+--format FMT` creates a new URL entry on first call, appends a new
+artifact to the existing URL entry on subsequent calls (different
+paths under the same URL). Idempotent when the (URL, path) tuple
+already matches an existing artifact. Errors loudly if the supplied
+path is already registered under a different URL (path uniqueness
+across the whole manifest).
+
+**Invariants** enforced by
+`scripts/checks/manifest_artifact_shape.py`:
+
+1. Every URL is unique (one entry per source URL).
+2. Every artifact path is unique across the whole manifest (no two
+   URLs claim the same archived file).
+3. `artifacts` is non-empty when `status == archived`.
+4. `artifacts` is empty (or absent) when `status != archived`.
+
 ---
 
 ## Scope

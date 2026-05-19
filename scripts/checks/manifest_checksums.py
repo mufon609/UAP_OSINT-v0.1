@@ -29,7 +29,7 @@ field on ``primary_sources_entry`` separate from the manifest's live
 """
 
 from checks import Issue
-from lib._common import SOURCES_DIR, compute_sha256
+from lib._common import SOURCES_DIR, compute_sha256, iter_artifacts
 
 
 CHECK_NAME = "manifest_checksums"
@@ -37,14 +37,10 @@ MANIFEST_REL = "sources/manifest.yaml"
 
 
 def check(ctx):
-    """Yield error-level Issue for every archived entry whose stored
+    """Yield error-level Issue for every archived artifact whose stored
     sha256 doesn't match the file on disk (or whose file is missing)."""
-    for entry in ctx.manifest_entries:
-        if not isinstance(entry, dict):
-            continue
-        if entry.get("status") != "archived":
-            continue
-        path = entry.get("path")
+    for entry, artifact in iter_artifacts(ctx.manifest_entries):
+        path = artifact.get("path")
         if not path:
             continue
         url = entry.get("url", "(no url)")
@@ -58,15 +54,15 @@ def check(ctx):
             )
             continue
 
-        stored = entry.get("sha256")
+        stored = artifact.get("sha256")
         if not stored:
-            # Schema marks sha256 as conditionally_required for
-            # status=archived. manifest.py verify-checksums backfills on
-            # first run; reaching here with status=archived and no sha256
+            # Schema marks sha256 as required on artifact_entry.
+            # manifest.py verify-checksums backfills on first run;
+            # reaching here with a path-bearing artifact and no sha256
             # means something is structurally wrong — fail loudly.
             yield Issue(
                 f"sources/{path}", "error",
-                f"Archived manifest entry has no sha256 — run: "
+                f"Archived artifact has no sha256 — run: "
                 f"python3 scripts/tools/manifest.py verify-checksums  "
                 f"(cited URL: {url})",
                 check_name=CHECK_NAME,

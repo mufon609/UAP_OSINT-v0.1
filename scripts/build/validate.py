@@ -102,6 +102,7 @@ from checks import governance_files as ck_governance_files
 from checks import id_path_match as ck_id_path_match
 from checks import link_resolution as ck_link_resolution
 from checks import manifest_archive_status as ck_manifest_archive_status
+from checks import manifest_artifact_shape as ck_manifest_artifact_shape
 from checks import manifest_checksums as ck_manifest_checksums
 from checks import manifest_extraction_type as ck_manifest_extraction_type
 from checks import manifest_parse as ck_manifest_parse
@@ -276,15 +277,18 @@ def main():
     manifest_parse_issues = list(ck_manifest_parse.check(base_ctx))
     all_issues.extend(manifest_parse_issues)
     if not any(i.fatal for i in manifest_parse_issues):
-        # Manifest-integrity family — content-byte integrity (sha256)
-        # plus the manifest's closed enums (status / format /
-        # extraction_type / archive_status). A checksum mismatch means
-        # downstream quote verifications may be validating against
-        # altered source material.
+        # Manifest-integrity family — content-byte integrity (sha256),
+        # closed enums (status / format / extraction_type / archive_status),
+        # and the C29 artifact-shape invariants (URL uniqueness, artifact-
+        # path uniqueness, status / artifacts alignment). A checksum
+        # mismatch means downstream quote verifications may be validating
+        # against altered source material; a shape violation means the
+        # URL ↔ artifacts model is silently drifting from schema.
         all_issues.extend(ck_manifest_checksums.check(base_ctx))
         all_issues.extend(ck_manifest_archive_status.check(base_ctx))
         all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
         all_issues.extend(ck_manifest_value_enums.check(base_ctx))
+        all_issues.extend(ck_manifest_artifact_shape.check(base_ctx))
 
     # Governance-file validation. Runs regardless of --path argument
     # since template drift propagates to every node scaffolded afterward.

@@ -1,9 +1,10 @@
 """manifest-archive-status check — global BaseContext check.
 
 ``archive_status`` is a 2-bit presence indicator on every manifest
-entry:
+URL entry:
 
-  - bit 0 (value 1) = locally archived (status == archived AND path set)
+  - bit 0 (value 1) = locally archived (status == archived AND the
+                      entry has at least one artifact)
   - bit 1 (value 2) = archived on the Internet Archive Wayback Machine
                       (wayback_date set)
 
@@ -63,7 +64,10 @@ def check(ctx):
             )
             continue
 
-        locally_archived = entry.get("status") == "archived" and bool(entry.get("path"))
+        locally_archived = (
+            entry.get("status") == "archived"
+            and bool(entry.get("artifacts"))
+        )
         wayback_archived = bool(entry.get("wayback_date"))
         expected = (1 if locally_archived else 0) | (2 if wayback_archived else 0)
 
@@ -72,13 +76,13 @@ def check(ctx):
             if (arch & 1) != (expected & 1):
                 if expected & 1:
                     mismatches.append(
-                        "bit 0 should be SET (status == archived AND path is set) "
+                        "bit 0 should be SET (status == archived AND artifacts non-empty) "
                         "but archive_status indicates not-locally-archived"
                     )
                 else:
                     mismatches.append(
                         "bit 0 is SET but the entry is not locally archived "
-                        "(status != archived OR path missing)"
+                        "(status != archived OR artifacts empty)"
                     )
             if (arch & 2) != (expected & 2):
                 if expected & 2:
