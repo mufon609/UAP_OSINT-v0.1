@@ -62,13 +62,19 @@ from pathlib import Path
 # blocks system-wide pip on Debian/Kali, and pyannote's torch dependency is
 # too heavy to want system-wide anyway). Re-exec under the venv Python so
 # contributors don't need to source the activate script.
+#
+# Detection idiom: compare sys.prefix to the venv directory. We can't compare
+# the interpreter binary itself — venv's bin/python3 is a symlink to the
+# system Python (e.g., /usr/bin/python3.13), so realpath() lies. sys.prefix,
+# however, points at the venv root when running under venv-aware Python.
 # ---------------------------------------------------------------------------
 _HERE = Path(__file__).resolve()
 _REPO_ROOT = _HERE.parent.parent.parent  # scripts/tools/diarize-audio.py → repo root
-_VENV_PYTHON = _REPO_ROOT / ".venv-diarize" / "bin" / "python3"
+_VENV_DIR = _REPO_ROOT / ".venv-diarize"
+_VENV_PYTHON = _VENV_DIR / "bin" / "python3"
 if (
     _VENV_PYTHON.is_file()
-    and os.path.realpath(sys.executable) != os.path.realpath(_VENV_PYTHON)
+    and Path(sys.prefix).resolve() != _VENV_DIR.resolve()
     and os.environ.get("DIARIZE_VENV_ACTIVE") != "1"
 ):
     os.environ["DIARIZE_VENV_ACTIVE"] = "1"
@@ -254,7 +260,7 @@ def run_diarization(
         )
 
     try:
-        pipeline = Pipeline.from_pretrained(PYANNOTE_MODEL, use_auth_token=hf_token)
+        pipeline = Pipeline.from_pretrained(PYANNOTE_MODEL, token=hf_token)
     except Exception as e:
         sys.exit(
             f"error: failed to load {PYANNOTE_MODEL}: {e}\n"
@@ -275,9 +281,15 @@ def run_diarization(
     # Use the waveform-dict input path — bypasses pyannote's torchcodec-backed
     # Audio() loader, which fails on this system. See load_wav_as_tensor.
     waveform, sample_rate = load_wav_as_tensor(audio_path)
-    diarization = pipeline(
+    result = pipeline(
         {"waveform": waveform, "sample_rate": sample_rate}, **kwargs
     )
+
+    # pyannote.audio 4.x wraps the diarization Annotation in a DiarizeOutput
+    # object. The .speaker_diarization attribute is the standard (overlap-
+    # tolerant) Annotation; .exclusive_speaker_diarization assigns each
+    # timepoint to exactly one speaker. We use the standard form.
+    diarization = getattr(result, "speaker_diarization", result)
 
     segments: List[Tuple[float, float, str]] = []
     for turn, _, speaker in diarization.itertracks(yield_label=True):
