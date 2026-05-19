@@ -117,6 +117,7 @@ from checks import quotes as ck_quotes
 from checks import relationships as ck_relationships
 from checks import resolution_history as ck_resolution_history
 from checks import rumors as ck_rumors
+from checks import speaker_baseline_consistency as ck_speaker_baseline_consistency
 from checks import speakers as ck_speakers
 from checks import timeline as ck_timeline
 from checks import top_scope_activity as ck_top_scope_activity
@@ -235,6 +236,7 @@ _ARTIFACT_CHECKS = [
     ck_participants,
     ck_witnesses_testimony,
     ck_speakers,
+    ck_speaker_baseline_consistency,
     ck_media_versioning,
     ck_key_personnel,
     ck_org_relationships,
@@ -429,6 +431,14 @@ def main():
     else:
         for p in artifacts:
             all_issues.extend(validate_artifact(p, base_ctx))
+
+    # Manifest-wide post-pass checks — checks that operate on the global
+    # state (filesystem, manifests, cross-artifact rollups) rather than
+    # individual artifacts. Run sequentially in the parent process after
+    # the worker pool completes; fork-shared module state would not
+    # preserve once-only semantics if these ran inside per-artifact
+    # workers.
+    all_issues.extend(ck_speaker_baseline_consistency.manifest_wide_check())
 
     # Append every emitted Issue to the issue log for time-series audit.
     for issue in all_issues:
