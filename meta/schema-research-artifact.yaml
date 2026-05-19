@@ -51,6 +51,18 @@ required_keys:
   # person artifacts; contributors should not populate it on person
   # artifacts (the content will not reach readers — put person-level
   # synthesis prose in the three dedicated fields).
+  #
+  # YAML style: ALWAYS single-quoted scalar (`description: '...'`)
+  # with each paragraph as one unbroken logical line, blank line
+  # between paragraphs, apostrophes escaped as `''`. NEVER literal
+  # block (`description: |`). The literal block style preserves every
+  # author-side newline as a rendered line break, producing a chopped
+  # multi-line `## Description` section instead of flowing paragraphs.
+  # See `meta/research/aaro.yaml` for the canonical shape. The same
+  # rule applies to every multi-paragraph prose field on every
+  # artifact type — `background`, `top_relevance`, `credibility_notes`
+  # on person artifacts follow the same single-quoted scalar
+  # convention when they span multiple paragraphs.
   - primary_sources       # list — sources this artifact draws on
   - document_intrinsic    # dict — facts the primary source(s) state internally.
   #   Per-type key conventions (read by the Phase II renderer):
@@ -461,7 +473,12 @@ primary_sources_entry:
   optional: [pdf_metadata, sha256_at_extraction]
   # path: relative to sources/, must appear in sources/manifest.yaml
   # sha256_at_extraction: captured SHA256 at extraction time (optional
-  #   audit trail; separate from manifest's live sha256 field)
+  #   audit trail; separate from manifest's live sha256 field).
+  #   Populated by scripts/build/research-scaffold.py at scaffold time
+  #   when the source file is on disk; verified by the
+  #   manifest_checksum_at_extraction check (errors on mismatch with
+  #   the manifest's live sha256, catching source-byte changes between
+  #   extraction and commit-time validation).
 
 # --- Entry shapes per top-level list section ---
 

@@ -16,8 +16,14 @@ Two modes:
     extract-source.py --source government/file.pdf
 
 Output paths (deterministic):
-    /tmp/scratch-{artifact_slug}-{source_index}.txt  (batch mode)
-    /tmp/scratch-{source_basename}.txt               (single mode)
+    /tmp/scratch-{artifact_slug}-{source_index}.txt     (batch mode)
+    /tmp/scratch-{artifact_slug}-{source_index}.sha256  (batch mode)
+    /tmp/scratch-{source_basename}.txt                  (single mode)
+    /tmp/scratch-{source_basename}.sha256               (single mode)
+
+The .sha256 sidecar captures the source file's SHA256 at extraction
+time — picked up by research-scaffold.py to populate the artifact's
+``primary_sources[].sha256_at_extraction`` audit-trail field.
 
 Batch mode also prints PDF metadata for each source (useful for
 populating document_intrinsic in the research artifact).
@@ -52,6 +58,7 @@ from lib._common import (  # noqa: E402
     BINARY_FORMATS,
     REPO_ROOT,
     SOURCES_DIR,
+    compute_sha256,
     extract_source_text,
     normalize_source_rel_path,
     strict_yaml_load,
@@ -129,9 +136,16 @@ def do_single(source_rel_path):
     out_path = SCRATCH_DIR / f"scratch-{basename}.txt"
     out_path.write_text(text)
 
+    sha_path = SCRATCH_DIR / f"scratch-{basename}.sha256"
+    sha = compute_sha256(full)
+    if sha is not None:
+        sha_path.write_text(sha + "\n")
+
     line_count = text.count("\n") + (0 if text.endswith("\n") else 1)
     print(f"✓ Extracted sources/{source_rel_path}")
     print(f"  → {out_path} ({line_count} lines)")
+    if sha is not None:
+        print(f"  → {sha_path} (sha256: {sha[:16]}…)")
     if meta:
         print(f"  PDF metadata:")
         for k, v in meta.items():
@@ -187,9 +201,15 @@ def do_batch(artifact_path):
 
         out_path = SCRATCH_DIR / f"scratch-{slug}-{i}.txt"
         out_path.write_text(text)
+        sha_path = SCRATCH_DIR / f"scratch-{slug}-{i}.sha256"
+        sha = compute_sha256(full)
+        if sha is not None:
+            sha_path.write_text(sha + "\n")
         line_count = text.count("\n") + (0 if text.endswith("\n") else 1)
         print(f"  [{i}] ✓ sources/{rel}")
         print(f"       → {out_path} ({line_count} lines)")
+        if sha is not None:
+            print(f"       → {sha_path} (sha256: {sha[:16]}…)")
         if meta:
             for k, v in meta.items():
                 print(f"       {k}: {v}")

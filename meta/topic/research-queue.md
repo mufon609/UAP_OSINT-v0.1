@@ -32,6 +32,19 @@ Two backlogs live here, distinguished by origin:
   commits). The table tells future contributors which nodes have been
   audited and when; the per-node "Known caveats" sections below carry
   forward the substantive caveats and open questions.
+- **Investigate before queueing.** Don't transcribe audit or upstream-
+  agent recommendations into the queue mechanically. Before adding an
+  entry, investigate three things: (a) does the candidate meet the
+  relevant `meta/schema.yaml` threshold (e.g., finding-node creation
+  threshold — 3+ entity nodes, ~200 words, or content about to be
+  duplicated across 3+ nodes); (b) what evidence already exists in
+  built nodes; (c) what pre-build dependencies would give the future
+  node substantive density at launch. Queue with those answers
+  explicit — Scope, Evidence, Build dependencies (priority order),
+  Density math, Surfaced from. If investigation reveals the candidate
+  doesn't meet thresholds, say so explicitly and don't queue.
+  Mechanical queueing creates thin-shell risk where the future build
+  doesn't have enough material to justify its own node structure.
 
 ---
 

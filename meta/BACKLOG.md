@@ -14,12 +14,14 @@ on the active roadmap. Items leave when (a) promoted to a roadmap phase,
 Open items are partitioned into three sections by dependency shape:
 **A — Priority sequence** (ordering / coupling constraints),
 **B — Parallel batch** (renderer-pass items that ship together),
-and **C — Anytime** (no upstream blockers). Item identifiers are
-A1, A2, ..., B1, B2, ..., C1, C2, ... — within each section,
-retired items leave a gap rather than shifting remaining IDs, so
-git-log and commit-message references stay valid. The same
-gap-stable policy in `meta/conventions.md` applies to validator
-check names.
+and **C — Anytime** (no upstream blockers). Item identifiers within
+each section (A1, A2, ..., B1, B2, ..., C1, C2, ...) are positional
+and assigned at write time. When an item is retired, its block is
+deleted in full; no marker, no placeholder, no renumber. The next
+new entry in the section takes the next previously-unused ID — IDs
+are not reused, so commit-message and git-log references to a
+historical ID stay unambiguous when grepped. See `meta/conventions.md`
+"BACKLOG lifecycle discipline" for the rule of record.
 
 **Default focus: Section C.** C items have no upstream dependencies
 and can be picked up and finished in a single pass. A and B items
@@ -44,16 +46,15 @@ Items with ordering or coupling constraints.
 
 ### A1 — Investigation: should `entities_referenced[]` render in the body?
 
-**Open design question, not a tractable fix.** Surfaced by the
-2026-05-19 source-coverage audit follow-up (5bd2bfc): every other
-structured artifact field renders to the body (`description`,
-`background`, `timeline`, `key_personnel`, `relationships`,
-`affiliations`, `corroboration_items`, `quotes`), but
-`entities_referenced[]` is the lone exception. That break in the
-pattern means cross-references declared there are invisible to the
-broken-link signal and to human readers, and contributors have to
-duplicate references across body wraps and `entities_referenced[]`
-to make new build candidates discoverable.
+**Open design question, not a tractable fix.** Every other structured
+artifact field renders to the body (`description`, `background`,
+`timeline`, `key_personnel`, `relationships`, `affiliations`,
+`corroboration_items`, `quotes`), but `entities_referenced[]` is the
+lone exception. That break in the pattern means cross-references
+declared there are invisible to the broken-link signal and to human
+readers, and contributors have to duplicate references across body
+wraps and `entities_referenced[]` to make new build candidates
+discoverable.
 
 **What the investigation needs to answer before any change:**
 
@@ -117,14 +118,10 @@ investigation has to happen before any code change.
 agent / query layer per `AGENT.md`; any structural change has to
 preserve or relocate it.
 
-**Bandaid in effect:** 5bd2bfc placed wraps inside timeline-entry
-`event` fields alongside `entities_referenced[]` entries to force
-broken-link discovery on 6 audit-derived queue items. The bandaid
-is the workaround the investigation exists to retire.
-
-Surfaced: 2026-05-19 source-coverage audit follow-up (5bd2bfc) +
-contributor follow-up question on whether the body-only-rendering
-gap is intentional.
+**Bandaid in effect:** wraps are currently placed inside timeline-
+entry `event` fields alongside `entities_referenced[]` entries to
+force broken-link discovery. That duplication is the workaround the
+investigation exists to retire.
 
 ---
 
@@ -185,11 +182,12 @@ Side benefits:
   drift / coverage / prose-drift checks all already run against the
   artifact, not the rendered node.
 
-Surfaced: 2026-05-19 design-element audit. The current per-node check
-gets the corpus to 0 errors because everything is renderer-emitted, but
-the architecture inverts the source-of-truth direction (verifies
-generated output, not the structured source). Moving to artifact-side
-is the principled fix.
+Why it matters: the current per-node check reaches 0 errors because
+everything is renderer-emitted, but the architecture inverts the
+source-of-truth direction (verifies generated output, not the
+structured source). Moving to artifact-side is the principled fix —
+the rendered node stays faithful to the artifact by construction
+rather than by happenstance.
 
 ### C5 — Auto-generate the per-type section list in `prompts/build.md`
 
@@ -225,78 +223,78 @@ Add `build-md-spec.py --check` as a new pre-commit gate (parallel to
 The narrative + discipline portions of `prompts/build.md` stay hand-
 written. Only the dispatch-table enumeration auto-generates.
 
-Surfaced: 2026-05-19 design-element audit. Complementary to C4's
-artifact-side verbatim-quote move; both reduce duplication between
-governance docs and source-of-truth layers (schema / artifact). Not
-strictly correctness-required after the schema+validator topic-
-substitution fix landed in `5148b2e` — but closes the
-documentation-drift surface for forks and schema evolution.
+Complementary to C4's artifact-side verbatim-quote move; both reduce
+duplication between governance docs and source-of-truth layers
+(schema / artifact). Not strictly correctness-required as a one-time
+fix, but closes the documentation-drift surface for forks and schema
+evolution.
 
-### C6 — Realize `sha256_at_extraction` audit trail
+### C27 — Split reader-visibility discipline into audit prompt + schema comments
 
-The schema declares `sha256_at_extraction` as optional on
-`primary_sources_entry` (`meta/schema-research-artifact.yaml:455`),
-described in the comment as *"captured SHA256 at extraction time
-(optional audit trail; separate from manifest's live sha256 field)"*.
-The `manifest_checksums` check's docstring explicitly defers
-verification: *"Does NOT verify ``sha256_at_extraction``."*
+The rule "verify a fix actually surfaces in the rendered node before
+marking it done" mixes three concerns that need different homes:
 
-Today the field is unrealized — adoption is 1 of 57 artifacts, no
-script populates it, no check validates it. The mechanism is named in
-schema + validator docstring but the populate-and-verify wiring was
-never built.
+- **Workflow discipline** — "regenerate the node and grep for the fix"
+  is a step every audit/build session needs. Land it in
+  `prompts/audit.md` (new file) as a numbered step in the post-fix
+  verification pass. Workflow guidance belongs in prompts, not in
+  free-floating memory.
+- **Per-field render catalog** — which artifact fields render to the
+  node body vs. stay artifact-internal. The renderer code is the
+  source of truth; `meta/schema-research-artifact.yaml` is where
+  per-field semantics already live. For each field that doesn't
+  render, add a one-line "not rendered (artifact-only)" comment to
+  that field's entry in the schema. The catalog co-locates with the
+  field; no standalone prose catalog accumulates.
+- **Specific incident references and dated snapshots** — git log only.
+  Anywhere they accrue in repo files, delete them.
 
-Realizing it delivers a real defense-in-depth window: catches the
-"source replaced after I extracted but before I committed" attack /
-silent corruption between extraction time and commit-time validation.
-The manifest's live sha256 covers the validator-side; this covers the
-contributor-side.
+Concrete work:
 
-Three small wires:
+1. Grep current renderer code (`scripts/build/renderers/*.py`) to
+   determine which fields render and which don't, against the present
+   codebase. Specifically verify `timeline[].note` and
+   `quote.significance` — they were reportedly artifact-only as of an
+   older snapshot; status today needs confirming.
+2. For each artifact-only field, add a `# not rendered (artifact-only)`
+   comment in `schema-research-artifact.yaml`.
+3. Create `prompts/audit.md` (or extend an existing audit prompt) with
+   the "regenerate + grep" verification step.
+4. If a contributor encounters this rule's substance elsewhere
+   (memory, code comment, BACKLOG note), delete it; the new homes are
+   canonical.
 
-- `scripts/build/extract-source.py` — at extraction time, compute the
-  sha256 of the source file and write it alongside the text dump
-  (e.g., into a sidecar `/tmp/scratch-{slug}.sha256` or directly into
-  the artifact via `--inject`). Today the script writes the extracted
-  text but doesn't capture the source's sha256.
-- `scripts/build/research-scaffold.py` — when scaffolding an
-  artifact's `primary_sources[]`, read the sidecar (or recompute from
-  the source file) and populate `sha256_at_extraction` automatically.
-- New check `scripts/checks/manifest_checksum_at_extraction.py` —
-  for every `primary_sources_entry` carrying `sha256_at_extraction`,
-  compare to the manifest's live `sha256`. Mismatch errors with
-  message naming the artifact, the source path, and both checksums.
-  No-ops on entries lacking the field (preserves optional semantic
-  during rollout).
+### C28 — Promote interview-node entities_referenced discipline; optional audit aid
 
-Backfilling the existing 57 artifacts is a follow-up — once the wires
-are in, contributors populate the field on new extractions, and a
-batch-backfill script can fill the rest by recomputing sha256 of each
-artifact's `primary_sources[].path` and asserting (warn-not-error)
-that it matches the manifest. Once corpus-wide coverage is ≥95%,
-promote the check from optional to required.
+Two related pieces:
 
-Surfaced: 2026-05-19 design-element audit, Element 10 (Source-read-
-first). Complementary to the existing `manifest_checksums` check —
-together they bracket the source-bytes-integrity window from
-extraction through commit-time validation.
+**(a) Promote the discipline into `meta/conventions.md`.** When a
+person node cites long-form media appearances as primary-source
+evidence (podcasts, broadcasts, panels, conference talks), each
+**venue** (organization), **host / interviewer / moderator** (person),
+and **transcript-to-be** (transcript node) must be registered as an
+`entities_referenced[]` entry with `wrap_path` AND must appear as a
+`[`/path`]` body wrap somewhere in the node (typically inside the
+corresponding `timeline[].event` text). The validator's
+`stub_linking` check enforces the registered→linked direction; the
+inverse (named-in-prose-but-not-registered) is contributor
+discipline.
 
-C1 retired 2026-05-17 — shipped as `scripts/tools/extract-firefox-cookies.py`;
-ID held open per the gap-stable retirement rule.
+Add as a new "Cross-reference contract" subsection in
+`conventions.md`, near "Associated Nodes" or under the entity-layer
+discussion in "Three-layer evidentiary architecture". Update the
+`stub_linking.py` docstring's "see feedback memory" cross-reference
+to point at the new conventions section.
 
-C2 retired 2026-05-19 — issue-log mechanism removed entirely (function +
-helpers in `scripts/lib/_common.py`, orchestrator call sites, and the
-file itself). Followed C2's "remove" path: log accumulated balloon
-during a single session of validator-heavy work, confirming the
-audit-value-vs-carrying-cost imbalance the 2026-05-17 audit flagged.
-ID held open per the gap-stable retirement rule.
+**(b) Optional audit aid — `coverage-suggest`-style entity scanner.**
+Build a read-only diagnostic that scans node-body prose for
+capitalized terms not in `entities_referenced[]` and surfaces them at
+audit time. Parallel to `scripts/tools/coverage-suggest.py` (which
+catches the analogous gap on source coverage). Read-only; contributor
+judges per-case. Don't promote to a validator error — capitalized-
+word heuristics false-positive on "Pentagon" / "April" / proper
+nouns inside quoted source / etc. Premature enforcement reintroduces
+the category-tuned-threshold failure mode.
 
-C3 retired 2026-05-19 — WEAPONIZED-038 video pipeline registered baselines
-for corbell / lacatski / kelleher / knapp, closing all 17 direction-1
-warnings; ID held open per the gap-stable retirement rule.
-
-B2 retired 2026-05-19 — superseded by A1 (reframed as an open design
-investigation rather than a ready-to-implement renderer pass per
-contributor feedback that the change needs more consideration before
-any code lands). ID held open per the gap-stable retirement rule.
+(b) is optional follow-up; (a) is the load-bearing work.
 

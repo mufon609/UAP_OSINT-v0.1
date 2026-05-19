@@ -58,6 +58,7 @@ If you're doing anything related to this instance's topic, read
 |---|---|
 | Node structure spec | `meta/schema.yaml` |
 | Epistemic standard (why the rules exist) | `meta/conventions.md` |
+| Contributor working knowledge (cross-cutting behavioral patterns) | `meta/memory.md` |
 | Node templates (one per type) | `meta/templates/` |
 | Corpus-specific addenda (this topic) | `meta/topic/addenda/` |
 | Source archive | `sources/` + `sources/manifest.yaml` |

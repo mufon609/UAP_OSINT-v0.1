@@ -19,23 +19,17 @@ doing anything:
 6. Read `meta/topic/research-queue.md` — current priority queue.
 7. Read `meta/BACKLOG.md` — deferred work items; note any active entries
    relevant to the session's planned task.
-8. Review the persistent Claude Code memory for this project. `MEMORY.md`
-   is auto-loaded into your conversation context by the harness; read
-   every file it references (stored in your Claude Code project memory
-   directory — typically `~/.claude/projects/<sanitized-project-path>/memory/`).
-   Apply the durable policies logged there: impartial validator
-   reporting (no category-tuned thresholds); resolve every prose-drift-check
-   warning structurally on scoped fields (top-level free-prose:
-   `description`, `background`, `top_relevance`, `credibility_notes`;
-   per-entry synthesis content notes: `ownership_timeline.note`,
-   `top_scope_activity.note`, `key_personnel.note`, `contracts.note`,
-   `media_versioning.note`, `vouching_chain.attestation`) —
-   zero-warnings target. Structural label cells + cross-reference
-   descriptor notes (`corroboration_items.note`,
-   `witnesses_testimony.note`, `org_relationships.note`,
-   `location_relationships.note`, role titles, `timeline[].event`)
-   are not scanned; never set count targets / ranges when scoping
-   artifact list population — let the source drive density.
+8. Read `meta/memory.md` — cross-cutting contributor working knowledge
+   (behavioral patterns that don't fit `conventions.md` / `schema.yaml`
+   / specific prompts). Then review the personal Claude Code memory
+   directory for this project — `MEMORY.md` is auto-loaded into the
+   conversation context; each referenced file lives at
+   `~/.claude/projects/<sanitized-project-path>/memory/`. The personal
+   memory directory holds Claude-session-specific behavioral patterns
+   (e.g., post-compaction discipline) that don't belong in the repo's
+   contributor-facing files. Durable evidentiary and structural rules
+   are NOT in either memory surface — those live in `conventions.md`,
+   already read in step 3.
 
 Then run the health check:
 

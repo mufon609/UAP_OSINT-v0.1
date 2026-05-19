@@ -44,6 +44,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from lib._common import (
     strict_yaml_load,
     REPO_ROOT,
+    SOURCES_DIR,
+    compute_sha256,
     content_node_types,
     content_type_dirs,
     format_from_path,
@@ -129,7 +131,15 @@ def build_primary_sources_list(source_paths, manifest):
     truth — so scaffolded artifacts cannot diverge from the manifest at
     creation. Falls back to extension-based inference only when the
     path is absent from the manifest (which will trigger a validator
-    error anyway)."""
+    error anyway).
+
+    ``sha256_at_extraction`` is computed from the on-disk source file
+    when present. Independent of the manifest's live ``sha256`` —
+    captures what the contributor saw at scaffold time, so a future
+    re-archival of the same URL under different bytes surfaces as a
+    ``manifest_checksum_at_extraction`` error. Omitted when the source
+    file isn't on disk (the missing-source case is already caught by
+    the primary_sources check)."""
     manifest_by_path = {e["path"]: e for e in manifest if e.get("path")}
     entries = []
     for path in source_paths:
@@ -146,6 +156,11 @@ def build_primary_sources_list(source_paths, manifest):
             "path": path,
             "format": fmt,
         }
+        full = SOURCES_DIR / path
+        if full.exists():
+            sha = compute_sha256(full)
+            if sha is not None:
+                entry["sha256_at_extraction"] = sha
         entries.append(entry)
     return entries
 

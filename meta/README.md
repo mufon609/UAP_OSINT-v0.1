@@ -18,6 +18,7 @@ or scripts (`/scripts/`).
 |---|---|
 | `BACKLOG.md` | Deferred work register — items partitioned A (priority sequence) / B (parallel batch) / C (anytime) |
 | `conventions.md` | Evidentiary discipline + structural rationale (the *why* behind every rule) |
+| `memory.md` | Cross-cutting contributor working knowledge that doesn't fit a more specific surface (behavioral patterns, session-conduct discipline) |
 | `roadmap.md` | Active toolkit-development work + completed phases |
 | `schema.yaml` | Machine-readable spec — node types, archetypes, kinds, required sections, vocabularies |
 | `sources-access.md` | Site-specific archival workarounds (SEC, defense.gov, Twitter/X, etc.) |

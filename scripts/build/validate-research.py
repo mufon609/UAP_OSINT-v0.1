@@ -102,6 +102,7 @@ from checks import investigation_closure_path_when_paused as ck_investigation_cl
 from checks import investigation_hypothesis_citation as ck_investigation_hypothesis_citation
 from checks import key_personnel as ck_key_personnel
 from checks import location_relationships as ck_location_relationships
+from checks import manifest_checksum_at_extraction as ck_manifest_checksum_at_extraction
 from checks import media_versioning as ck_media_versioning
 from checks import naming_quirks as ck_naming_quirks
 from checks import open_questions as ck_open_questions
@@ -219,6 +220,7 @@ _ARTIFACT_CHECKS = [
     ck_iff_section,
     # Universal entry-list checks
     ck_primary_sources,
+    ck_manifest_checksum_at_extraction,
     ck_quotes,
     ck_entities_referenced,
     ck_naming_quirks,

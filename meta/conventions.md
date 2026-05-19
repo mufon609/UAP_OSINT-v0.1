@@ -364,6 +364,33 @@ The five-value `transcript_provenance` enum is the schema layer
 (see `manifest_entry.transcript_provenance_values` in
 `schema.yaml`). The audit discipline above is the contributor layer.
 
+**Caption-tick timestamps in `quotes[].text`.** YouTube-caption source
+files (produced by `scripts/tools/transcribe.py`) carry a `[MM:SS]`
+marker on every caption line — one tick per 2–5 seconds of speech.
+The validator's `normalize_for_compare` (in `lib/_common.py`) strips
+`[MM:SS]` and `[H:MM:SS]` markers from BOTH the quote text and the
+extracted source before substring comparison, so the verification
+check is timestamp-blind. The contributor convention:
+
+- Write each quote as one continuous single-line prose string in
+  YAML (single-quoted scalar style; never `|` literal block which
+  preserves caption-line breaks as rendered newlines).
+- Include AT MOST ONE leading `[MM:SS]` anchor at the start of each
+  quote, matching the source line where the quote's first content
+  word appears. Reader clicking the anchor lands on the start of the
+  quote, not several seconds in.
+- Drop all intermediate timestamps from quote text. They normalize
+  away at comparison time, so preserving them adds visual noise (a
+  15-second quote could carry 9–15 intermediate ticks) without
+  evidentiary value.
+- Auto-caption typos stay verbatim — handle via `naming_quirks` per
+  the per-quote contributor discipline above; don't silently correct.
+
+The source file in `sources/transcripts/` keeps every caption tick
+(that's its primary-source form). Stripping happens at the artifact
+authoring layer for readability, and at the normalization layer for
+verification.
+
 ### Type-specialized views of `quotes[]`
 
 Each node type renders a filtered view of the same universal primitive:
@@ -600,21 +627,107 @@ reference descriptor notes (`corroboration_items.note`,
 on those surfaces; fabrication there is Phase III semantic-review
 territory.
 
-### Free-prose density is source-driven
+**Zero warnings on scoped fields is the target.** Acknowledging a
+warning as "legitimate synthesis vocabulary" and leaving it in place
+defeats the check — converts an evidentiary precision tool into a
+stylistic nag. Every warning drives to one of two outcomes:
 
-Templates and prompts do not impose paragraph or sentence count targets
-on free-prose fields (`description`, `background`, `top_relevance`,
-`credibility_notes`, synthesis-content `.note` fields). Contributors
-populate each field with what archived primary sources support — no
-more, no less.
+- The prose is rewritten to use source vocabulary exactly, OR
+- The source-vs-prose variance is captured as structured evidentiary
+  data (a `naming_quirks` entry, a `rumors[]` entry, a `timeline[]`
+  row, a `quotes[]` entry — pick the surface that carries the
+  variance's evidentiary meaning).
 
-Count targets ("1-2 paragraphs", "one paragraph", "2-4 sentences",
+**Resolution paths for common warning shapes:**
+
+1. **Word-form variant** (`preparing` vs source `prepare`,
+   `staying` vs source `stay`, `flying` vs source `flown`):
+   rewrite prose to use the source morphology. "Was flown by" is
+   not awkward — it's what the source says.
+
+2. **Paraphrase or synonym substitution** (source `Statement` →
+   prose `written testimony`; source `took` → prose `captured`):
+   rewrite to use source vocabulary. Repo filenames like
+   `written-testimony-*.md` are repo-internal conventions; they
+   don't license substituting those conventions into content
+   prose. The wrapped link path renders canonically regardless of
+   the surrounding prose token.
+
+3. **Source-form vs canonical-form naming variance** (source `Lue`
+   vs canonical `Luis`; source `Keane` vs canonical `Kean`;
+   source `Bigalow` vs canonical `Bigelow`): wrap the source form
+   in the canonical link path — e.g., `Lue Elizondo
+   ([`/people/luis-elizondo`])`. The prose-drift check strips the
+   wrap before tokenizing, so the source token matches against
+   source while the canonical wrap provides navigability. Log the
+   variance in `naming_quirks` with a resolution that captures its
+   evidentiary meaning (alias-of-record, OCR artifact, auto-caption
+   typo, formal-vs-informal). For recurring source variants (2+
+   instances), the frequency makes it alias-of-record rather than
+   typo; the note should say so. See "Per-quote contributor
+   discipline" above for the full OCR / auto-caption workflow.
+
+4. **Hyphenated compound vs two-word form** (`mental-health` vs
+   `mental health`, `intelligence-committee` vs `intelligence
+   committee`): rewrite to match source token form. The tokenizer
+   treats `mental-health` as one compound token; `mental health`
+   as two. Source attestations almost always use two-word form;
+   hyphenation is synthesis drift.
+
+5. **Date tokens** (`2023-07-26` vs `July 26, 2023`): use the
+   form that appears in source. Testimony transcripts spell out
+   `July 26, 2023`; hyphenated ISO dates are contributor
+   vocabulary unless source uses that form (some FOIA letter
+   headers do).
+
+6. **Genuinely-necessary contributor vocabulary** — if a word
+   truly isn't in source and has no source synonym, either (a)
+   the sentence is making an inference the source doesn't
+   directly attest, in which case the inference drops or moves to
+   a structured evidentiary field with its own source attribution;
+   or (b) the word is a category-label (enum value, Category
+   column entry, structural descriptor) that shouldn't appear in
+   free prose anyway.
+
+A warning remaining on a clean artifact after this review is a
+deliberate, documented decision — recorded in the relevant
+`naming_quirks` note, `rumors` entry, or the commit message — not
+an unwritten "contributor reviewed and accepted" assumption.
+
+### Density is source-driven
+
+Templates and prompts do not impose count targets on artifact content.
+This applies uniformly to two surfaces:
+
+- **Entry lists.** `quotes`, `entities_referenced`, `naming_quirks`,
+  `rumors`, `affiliations`, `relationships`, `corroboration_items`,
+  `program_involvement`, `publication_record`, `vouching_chain`,
+  `participants`, `witnesses_testimony`, `timeline`, `key_personnel`,
+  `org_relationships`, `contracts`, `media_versioning`, and any
+  other entry-list section the schema defines.
+- **Free-prose fields.** `description`, `background`, `top_relevance`,
+  `credibility_notes`, and synthesis-content `.note` fields.
+
+Contributors populate each surface with what archived primary sources
+support — no more, no less. The source produces the count. If a
+section ends up with one entry, that's correct. If it ends up with
+fifty, that's correct. Validators don't check counts; they check
+each entry's traceability to source.
+
+Count targets ("aim for ~10 quotes", "1-2 paragraphs",
+"approximately 6-10 substantive entries", "2-4 sentences",
 "~50 words per paragraph") create pressure that splits two ways under
 real source variance: filler entries when the source doesn't support
 the count, or hallucinated content when the model fills the gap from
-training knowledge. The durable contributor memory
-`feedback_no_count_targets.md` codified the rule for entry-list
-population; this section extends the same rule to free-prose density.
+training knowledge. The contributor surface that introduces a count
+target is the surface where these failure modes originate — the rule
+applies prospectively to template authoring, prompt drafting, and
+scope-at-session-start.
+
+Comparison framings also count as targets and should be avoided:
+"this section seems sparse", "comparable nodes have N entries; this
+one has fewer — anything to add?". Only flag specific entries that
+look unsupported by source; never flag aggregate counts.
 
 Structural thresholds are different and remain in force. The finding-
 node creation threshold (~200 words, 3+ entity nodes, or text about
@@ -626,8 +739,8 @@ summary plus link back, with the canonical narrative living on the
 finding node — is structural rather than length-prescribed.
 
 Templates describe the WHAT of each field (subject, scope, what to
-capture); they do not prescribe the HOW LONG. New templates and new
-prompt sections follow the same rule.
+capture); they do not prescribe the HOW LONG or HOW MANY. New
+templates and new prompt sections follow the same rule.
 
 ### Date precision: orientation-grade in prose, field-precise in tables
 
@@ -730,6 +843,47 @@ Topic names are stable interfaces — renames ripple the same way any
 API rename does (mass find-replace across refs). Pick names that
 describe what the check verifies, not how it's implemented.
 
+### Validator design — impartial reporting
+
+Validator checks surface drift signals impartially. They do not bake
+in category-tuned thresholds that encode editorial judgment about
+which fields are "allowed" more drift, which sources are "more
+suspect," or which patterns are "expected noise." Bias-dressed-as-
+pragmatism is the failure mode this rule exists to prevent.
+
+Favored shapes:
+
+- **Impartial reporting.** Warn on each signal; let the contributor
+  judge per-case.
+- **Mathematical floors.** 100% divergence, 0% match, presence /
+  absence — these are observations, not judgments. The prose-drift
+  check's error threshold lives at 100% vocabulary divergence (no
+  shared significant tokens with source) precisely because that's
+  a mathematical floor on pure fabrication, not a stylistic
+  threshold.
+- **Single uniform rules across field types.** When a rule fires
+  differently on different fields, the validator has implicitly
+  categorized the fields; that categorization IS the bias.
+
+Disfavored shapes:
+
+- Differentiated thresholds calibrated from "expected noise levels"
+  observed in specific fields.
+- Error cutoffs based on percentage thresholds below 100% — those
+  are stylistic judgments.
+- Code or doc language like "synthesis-heavy fields tolerate higher
+  unmatched rates" — that's the categorization, made explicit.
+
+Noise-reduction extensions (stemming, whitelists, n-gram adjacency)
+must apply uniformly across all scoped fields; scoping a noise-
+reduction technique to "fields we expect to be synthesis-heavy"
+reintroduces the category judgment in a different layer.
+
+This is the validator-side discipline. The contributor-side
+discipline (resolve every warning structurally, don't rationalize
+them away) lives in "Prose-drift discipline on synthesis surfaces"
+above. The two pair: impartial signal → rigorous response.
+
 ---
 
 ## Confirmed vs Flagged
@@ -772,6 +926,56 @@ holds the oral record; the written testimony document node holds the
 written record. Cross-entity comparison between the two (where a claim
 appears and how the placements differ) is a synthesis finding and
 belongs on a finding node, not on either primary record.
+
+---
+
+## Source priority — anchoring when multiple sources attest
+
+When multiple primary sources attest a fact about a subject (rank,
+role, capacity, sequence of events, framing of significance), the
+contributor anchors on the source closest to the subject's own
+first-person attestation:
+
+1. **Subject's own verbatim words** — highest authority for facts
+   about themselves. First-person statements, self-published bios,
+   filings the subject signed.
+2. **Other primary witnesses' attestations** — first-hand observers
+   describing the subject. Direct testimony from someone who was
+   present.
+3. **Media narrator / outlet framing** — lowest priority. The
+   outlet's editorial summary or characterization is one step
+   removed from the witness's own words.
+
+This applies whether or not sources strictly disagree — the hierarchy
+governs which source to cite as the anchor for any fact, not only
+which to "believe" in a contradiction.
+
+How to apply per case:
+
+- **Facts about the subject** (rank, role, identity, motivation,
+  internal state during an event): prefer the subject's verbatim
+  quotes. Fall back to primary witnesses, then outlet framing.
+- **Facts about external events the subject observed** (radar
+  acquisitions, what other personnel did, command structure):
+  prefer whichever primary source has direct attestation —
+  typically the institutional source (military document,
+  after-action report) over witness recall.
+- **When outlet narrator says X but the subject's own quote says
+  Y:** anchor on Y. Record the narrator divergence in
+  `naming_quirks` if recurring or material; otherwise in the
+  relevant entry's `note` field.
+- **When a primary witness attests something about the subject
+  that the subject hasn't themselves attested:** cite the witness's
+  attestation as the source, marking observation_type appropriately.
+- **Don't synthesize across sources to produce a "best of both"
+  composite fact.** Pick one source as the anchor; if the alternate
+  carries material content, capture it as a separate entry with its
+  own source attribution and let the divergence stand.
+
+This rule complements [Contradictions](#contradictions) below — the
+hierarchy decides which source the contributor anchors on; the
+Contradictions framing decides how the divergence itself is documented
+when sources directly conflict.
 
 ---
 
@@ -1205,3 +1409,97 @@ distinction above.
 
 `meta/README.md` is a friendly-face index of the directory's
 contents; this section is the rule of record.
+
+---
+
+## Comments describe code, not refactor history
+
+Code comments describe what a function or script does and any
+non-obvious why — invariants, layering rules, surprising behavior.
+They do not carry refactor history. Specifically forbidden in comments:
+
+- BACKLOG identifiers (`per BACKLOG C21`, `closes BACKLOG #3`)
+- Commit hashes (`migrated at af5f789`, `per commit 60bb88d`)
+- Dated audit notes (`2026-05-05 audit surfaced ...`,
+  `corrected during this session`)
+- Phase / cluster markers (F.5b, D.4, C17)
+- Section blocks: `Origin: introduced at ...`, `Migration: ...`,
+  `Anchor pattern: ...`
+- "Previously X was Y; now Z" reframings of how the code evolved
+- "Mirror X exactly" sync-discipline reminders for code that has
+  since been centralized
+
+The PR description and commit message are where the *why we changed
+it* lives. The code comment is where the *why it is the way it is*
+lives, and only when that why is non-obvious from the identifiers
+and structure.
+
+### NO BANDAIDS rule
+
+Any issue found during an audit either gets fixed immediately or
+filed in BACKLOG for later. Never document the issue as a comment
+in the affected code (`// known issue: X never fires under
+condition Y`). The choices are: fix-now (preferred for mechanical
+issues, missing checks, hygiene gaps) or BACKLOG-and-track (for
+design questions, convention-level changes, items needing user
+consensus). Comments are not a third option.
+
+The carrying-cost concern is concrete. Comments referencing closed
+BACKLOG entries become stale pointers when the entry is removed.
+"Origin / Migration / Anchor pattern" docstrings accumulate as
+refactor cycles compound, eventually drowning the description of
+what the code currently does.
+
+### BACKLOG lifecycle discipline
+
+The goal is to REMOVE items from BACKLOG, not accumulate annotations
+referencing them. When a BACKLOG entry closes:
+
+- Delete the entry's block from `meta/BACKLOG.md` in full. No
+  retirement marker, no placeholder, no renumber. The commit that
+  ships the closure carries the implementation diff and a commit
+  message that describes what shipped — that is the canonical
+  record. `git log --grep <ID> -- meta/BACKLOG.md` retrieves it.
+- IDs within a section are positional and not reused. Before
+  assigning a new ID, check git log for the largest historical ID
+  in the target section (`git log --all -p -- meta/BACKLOG.md |
+  grep -oE '\b<SECTION>[0-9]+\b' | sort -V -u | tail -1`); the new
+  entry takes the next unused number so historical references via
+  `git log` stay unambiguous.
+- Sweep code comments that referenced the closed entry's
+  identifier — either delete the comment entirely (if the entry's
+  resolution is now reflected in the code itself) or rewrite to
+  describe current behavior without the BACKLOG anchor.
+- This sweep is part of closing the entry, not follow-up work.
+
+Open BACKLOG entries follow the same describe-current-state rule.
+The entry text describes the work to be done and why it matters —
+forward-looking, prescriptive. It does NOT carry "Surfaced from",
+"introduced by audit X on date Y", commit hashes pinning when the
+need was identified, or other past-work narrative. Where the
+audit / session / commit that surfaced the work lives is in git
+log, retrievable via `git log --grep <ID>` once the entry is named
+in any commit message. The entry itself describes only the work.
+
+Same rule extends to retirement of validator checks, deletion of
+renderer dispatch branches, removal of conventions sections, and
+removal of obsolete templates: the file should describe current
+state and pending work, not past evolution. Git log carries the
+evolution.
+
+### What TO keep in comments
+
+Functional descriptions of what the code does, plus non-obvious
+why notes that anchor on still-live concepts:
+
+- `meta/conventions.md` section names (the convention is the
+  durable contract)
+- `meta/schema.yaml` field paths
+  (`schema.yaml::types.research-artifact.conditional_keys`)
+- `meta/roadmap.md` mentions when scoping a "not yet implemented"
+  check
+- Layering invariants (e.g., "presence-guard, not truthy — opens a
+  gap with `frontmatter_required` if loosened")
+
+Anchor comments on durable concepts. Avoid anchoring on transient
+ones (specific commits, dated audits, phase markers).

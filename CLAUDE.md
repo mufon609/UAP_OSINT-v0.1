@@ -19,7 +19,8 @@ In order:
 1. `README.md` — what this repository is
 2. `meta/conventions.md` — evidentiary discipline and structural rationale
 3. `meta/schema.yaml` — machine-readable spec (types, kinds, archetypes, required sections, vocabularies)
-4. `meta/topic/research-queue.md` — current priority build queue
+4. `meta/memory.md` — cross-cutting contributor working knowledge (behavioral patterns that don't fit a more specific surface)
+5. `meta/topic/research-queue.md` — current priority build queue
 
 Don't skip. Governance docs change between sessions.
 
