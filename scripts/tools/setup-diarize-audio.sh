@@ -58,20 +58,48 @@ echo "  ✓ venv Python: $($VENV_DIR/bin/python3 --version)"
 echo
 
 # ---------------------------------------------------------------------------
-# pip install pyannote.audio inside the venv (pulls torch + torchaudio + deps)
+# pip install inside the venv.
+#
+# Why this dance: pip's default index serves CUDA-bundled torch wheels
+# (torch+cu130 pulls libnppicc.so.13 and other NVIDIA libs). On a
+# CPU-only or non-NVIDIA system those fail to load at runtime — every
+# pipeline call would print a torchcodec-load traceback. The PyTorch CPU
+# index serves matched CPU-only wheels. Installing torch + torchaudio
+# from there first pins those packages; pyannote.audio's transitive
+# resolution then reuses the already-installed CPU versions.
+#
+# torchcodec gets pulled in by pyannote.audio as a transitive dep, but
+# (a) no aarch64 CPU-only torchcodec wheel exists today, and (b) the
+# CUDA-tied torchcodec wheel fails to load shared libraries on
+# CPU-only systems. We bypass torchcodec entirely from diarize-audio.py
+# by loading audio via stdlib `wave` + numpy and passing pyannote a
+# waveform dict (the documented escape-hatch input format). After
+# pyannote is installed, we uninstall torchcodec so its broken import
+# doesn't fire warnings every run — pyannote's import-time check
+# tolerates its absence (emits a UserWarning, which we suppress in
+# diarize-audio.py).
 # ---------------------------------------------------------------------------
-echo "[3/5] pip install pyannote.audio (inside venv)..."
+echo "[3/5] pip install (inside venv)..."
 "$VENV_DIR/bin/pip" install --upgrade pip
+echo "  Installing CPU-only torch + torchaudio from PyTorch CPU index..."
+"$VENV_DIR/bin/pip" install --upgrade \
+    --index-url https://download.pytorch.org/whl/cpu \
+    torch torchaudio
+echo "  Installing pyannote.audio (reuses CPU torch)..."
 "$VENV_DIR/bin/pip" install --upgrade pyannote.audio
+echo "  Uninstalling torchcodec (bypassed entirely; CPU-only wheel doesn't exist for aarch64)..."
+"$VENV_DIR/bin/pip" uninstall -y torchcodec 2>/dev/null || true
+echo "  Installing numpy (audio I/O via stdlib wave + numpy)..."
+"$VENV_DIR/bin/pip" install --upgrade numpy
 echo
 
 # ---------------------------------------------------------------------------
 # Python module verification — using the venv Python
 # ---------------------------------------------------------------------------
 echo "[4/5] Python module verification (in venv):"
-"$VENV_DIR/bin/python3" -c "import pyannote.audio; print(f'  pyannote.audio {pyannote.audio.__version__} OK')"
+"$VENV_DIR/bin/python3" -W ignore -c "import pyannote.audio; print(f'  pyannote.audio {pyannote.audio.__version__} OK')"
 "$VENV_DIR/bin/python3" -c "import torch; print(f'  torch {torch.__version__} OK (cuda available: {torch.cuda.is_available()})')"
-"$VENV_DIR/bin/python3" -c "import torchaudio; print(f'  torchaudio {torchaudio.__version__} OK')"
+"$VENV_DIR/bin/python3" -c "import numpy; print(f'  numpy {numpy.__version__} OK')"
 echo
 
 # ---------------------------------------------------------------------------

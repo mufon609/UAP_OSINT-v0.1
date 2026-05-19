@@ -80,6 +80,7 @@ import re
 import shutil
 import subprocess
 import tempfile
+import wave
 from datetime import datetime, timezone
 from typing import List, Optional, Tuple
 
@@ -176,6 +177,42 @@ def video_duration(video_path: Path) -> float:
 # ----------------------------------------------------------------------------
 
 
+def load_wav_as_tensor(audio_path: Path):
+    """Load a PCM WAV via stdlib ``wave`` + numpy → ``(torch.Tensor, sr)``.
+
+    Why not torchaudio: torchaudio 2.11+ routes audio I/O through torchcodec,
+    whose binaries currently fail to load on aarch64 Linux without CUDA libs
+    (libnppicc.so.13 / libnvrtc.so.13). The WAV format we produce here is
+    plain 16-bit PCM (from our own ffmpeg extraction), so stdlib + numpy
+    is a clean dependency-free path. The resulting waveform-dict is the
+    documented escape hatch for pyannote's ``Pipeline.__call__``.
+    """
+    import numpy as np
+    import torch
+
+    with wave.open(str(audio_path), "rb") as w:
+        sr = w.getframerate()
+        n_channels = w.getnchannels()
+        sampwidth = w.getsampwidth()
+        n_frames = w.getnframes()
+        raw = w.readframes(n_frames)
+
+    if sampwidth == 2:
+        arr = np.frombuffer(raw, dtype=np.int16).astype(np.float32) / 32768.0
+    elif sampwidth == 4:
+        arr = np.frombuffer(raw, dtype=np.int32).astype(np.float32) / 2147483648.0
+    elif sampwidth == 1:
+        arr = (np.frombuffer(raw, dtype=np.uint8).astype(np.float32) - 128.0) / 128.0
+    else:
+        sys.exit(f"error: unsupported WAV sample width: {sampwidth} bytes")
+
+    if n_channels > 1:
+        arr = arr.reshape(-1, n_channels).mean(axis=1).astype(np.float32)
+
+    tensor = torch.from_numpy(arr).unsqueeze(0)  # shape: (1, samples)
+    return tensor, sr
+
+
 def run_diarization(
     audio_path: Path,
     hf_token: Optional[str],
@@ -193,13 +230,20 @@ def run_diarization(
     HF token / model-conditions aren't set up — points at
     ``setup-diarize-audio.sh``.
     """
-    try:
-        from pyannote.audio import Pipeline
-    except ImportError:
-        sys.exit(
-            "error: pyannote.audio not installed.\n"
-            "  Run scripts/tools/setup-diarize-audio.sh to install."
-        )
+    # pyannote.audio's import emits torchcodec-related warnings on systems
+    # where torchcodec's binaries can't load (aarch64 Linux without CUDA
+    # libs). The actual diarization works via the waveform-dict input path
+    # we use below; suppress the import-time noise.
+    import warnings
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        try:
+            from pyannote.audio import Pipeline
+        except ImportError:
+            sys.exit(
+                "error: pyannote.audio not installed.\n"
+                "  Run scripts/tools/setup-diarize-audio.sh to install."
+            )
 
     if not hf_token:
         sys.exit(
@@ -228,7 +272,12 @@ def run_diarization(
         if max_speakers is not None:
             kwargs["max_speakers"] = max_speakers
 
-    diarization = pipeline(str(audio_path), **kwargs)
+    # Use the waveform-dict input path — bypasses pyannote's torchcodec-backed
+    # Audio() loader, which fails on this system. See load_wav_as_tensor.
+    waveform, sample_rate = load_wav_as_tensor(audio_path)
+    diarization = pipeline(
+        {"waveform": waveform, "sample_rate": sample_rate}, **kwargs
+    )
 
     segments: List[Tuple[float, float, str]] = []
     for turn, _, speaker in diarization.itertracks(yield_label=True):
