@@ -44,7 +44,7 @@ Russian Thread 3 files: Lacatski said "we translated them. Uh we got distributio
 
 Later, George and Jeremy talk about a passage from the book — Lacatski "personally briefed two Department of Homeland Security officials in a skiff for three and a half hours in February of 2011 and he said that they left them shell-shocked. That's a quote with sleepless nights and his exact words were that ASAP never ended but converted to Kona Blue" — Corbell from the book. Knapp and Corbell talk through the future of Kona Blue, saying "at least one element of Kona Blue is going forward. We just don't know what it is."
 
-Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-borland`] [`/people/luis-elizondo`] [`/people/david-grusch`] [`/people/anna-paulina-luna`] [`/people/tim-burchett`] [`/people/donald-trump`] [`/people/michio-kaku`] [`/people/bob-lazar`] [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/bigelow-aerospace`] [`/organizations/dod`] [`/organizations/dhs`] [`/organizations/oni`] [`/organizations/weaponized-podcast`] [`/organizations/klas-tv`] [`/documents/inside-us-gov-covert-ufo-2023`] [`/transcripts/weaponized-lacatski-part1-2025`] [`/transcripts/weaponized-lacatski-part2-2025`]
+Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-borland`] [`/people/luis-elizondo`] [`/people/david-grusch`] [`/people/anna-paulina-luna`] [`/people/tim-burchett`] [`/people/donald-trump`] [`/people/michio-kaku`] [`/people/bob-lazar`] [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/bigelow-aerospace`] [`/organizations/dod`] [`/organizations/dhs`] [`/organizations/oni`] [`/organizations/weaponized-podcast`] [`/organizations/klas-tv`] [`/documents/inside-us-gov-covert-ufo-2023`] [`/transcripts/weaponized-096-lacatski-part1-2025`] [`/transcripts/weaponized-097-lacatski-part2-2025`]
 
 ---
 
@@ -62,7 +62,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ### Lacatski's structural account of his Skinwalker Ranch visit request — sent via "multiple managers approval" at DIA. Establishes the institutional path by which his Ranch investigation was officially sanctioned at DIA — not a personal interest pursued outside the job
 
-> [7:42] Skinwalker Ranch came up. Short discussion, and that started it all. I wrote a letter to uh uh with my managers, multiple managers approval, to request to visit Skinwalker Ranch. I wanted to hear the real details. What is really going on? And that's what DIA was interested in.
+> [7:39] Skinwalker Ranch came up. Short discussion, and that started it all. I wrote a letter to uh uh with my managers, multiple managers approval, to request to visit Skinwalker Ranch. I wanted to hear the real details. What is really going on? And that's what DIA was interested in.
 
 | Field | Value |
 |---|---|
@@ -127,7 +127,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ### Lacatski's direct attestation of his pre-AAWSAP classified DOE / DOD work on "a very advanced weapon system" — approved for research at DOD multiple levels "even to the highest" but "was not buildable" at the time. He says in the next exchange "It is buildable now." Documents a previously-undisclosed advanced-weapon-system research thread in Lacatski's pre-AAWSAP career.
 
-> [14:34] I had the clearance at the time and I was doing classified work both with DOE and DOD. And uh we can't talk about that at all. Because and I can tell you because it was a very advanced weapon system that I was working on, very advanced. Wow. And it is Back then, it was approved for research by DOD multiple levels, even to the highest. But was not buildable.
+> [14:35] I had the clearance at the time and I was doing classified work both with DOE and DOD. And uh we can't talk about that at all. Because and I can tell you because it was a very advanced weapon system that I was working on, very advanced. Wow. And it is Back then, it was approved for research by DOD multiple levels, even to the highest. But was not buildable.
 
 | Field | Value |
 |---|---|
@@ -140,7 +140,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ### Lacatski's direct attestation that Kona Blue was "first put into Skinwalkers in the Pentagon as a future program" — Skinwalkers chapter rear-portions structure matches "almost exactly" the program "DHS and DOD released on what Kona Blue was to be." Lacatski affirms the DHS/DOD release on Kona Blue as "correct" but "incomplete" — by omission. Critical structural framing for understanding the official Kona Blue release record.
 
-> [17:42] No, I mentioned last time on your program the foundation of Kona Blue. Actually, now, your readers can do this. I think both of you are doing it. But if you go through all four of the books you can see the structure that we first put into Skinwalkers in the Pentagon as a future program. You can see that matches up almost exactly with the program that DHS and DOD released on what Kona Blue was to be. Everything they released on Kona Blue was correct. All I'm saying is it was incomplete. Omission.
+> [17:38] No, I mentioned last time on your program the foundation of Kona Blue. Actually, now, your readers can do this. I think both of you are doing it. But if you go through all four of the books you can see the structure that we first put into Skinwalkers in the Pentagon as a future program. You can see that matches up almost exactly with the program that DHS and DOD released on what Kona Blue was to be. Everything they released on Kona Blue was correct. All I'm saying is it was incomplete. Omission.
 
 | Field | Value |
 |---|---|
@@ -153,7 +153,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ### Lacatski's direct attestation that AAWSAP was "highly classified" (contradicting the official "unclassified program" framing) but the books' content was checked by the Pentagon and is unclassified.
 
-> [19:00] And we did the same thing throughout AATIP. Uh when it was untrue that it was an unclassified program. It was It was highly classified. But everything you got out here and checked by the Pentagon is unclassified.
+> [18:58] And we did the same thing throughout AATIP. Uh when it was untrue that it was an unclassified program. It was It was highly classified. But everything you got out here and checked by the Pentagon is unclassified.
 
 | Field | Value |
 |---|---|
@@ -218,7 +218,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ### Lacatski's direct on-record statement on Tic Tac — "there were some things that still haven't been released that were classified on the Tic Tac incident." His personal position: "I just can't believe" that the 2004 Tic Tac was a classified US program. Documents Lacatski's evolving framing on whether Tic Tac is US technology — from "not that I'm aware of" in PART 2 to "I just can't believe that" in EP 114.
 
-> [1:02:08] There were some things that still haven't been released that were classified on um on uh the Tic Tac incident. So, I think if I was just Jim of the street, the the Jim public, I I wouldn't believe it if anyone told me that that was a classified program of the US. I I just I just can't believe that.
+> [1:02:01] There were some things that still haven't been released that were classified on um on uh the Tic Tac incident. So, I think if I was just Jim of the street, the the Jim public, I I wouldn't believe it if anyone told me that that was a classified program of the US. I I just I just can't believe that.
 
 | Field | Value |
 |---|---|
@@ -270,7 +270,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 ### Lacatski's direct on-record framing that he is "hopeful that I'm going to be able to share in one form or another everything from A SAP and Kona Blue" — the canonical statement of his ongoing disclosure intent as of April 2026, while acknowledging "can we have all the details? Probably not."
 
-> [29:31] Well, no, I'm hopeful that I'm going to be able to share in one form or another everything from A SAP and Kona Blue. I I I I expected to be able to do that. Uh can we have all the details? Probably not.
+> [29:40] Well, no, I'm hopeful that I'm going to be able to share in one form or another everything from A SAP and Kona Blue. I I I I expected to be able to do that. Uh can we have all the details? Probably not.
 
 | Field | Value |
 |---|---|
@@ -362,8 +362,8 @@ Naming-quirk entries where two primary sources attest opposing forms of the same
 ### Transcripts
 
 - [`/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026`]
-- [`/transcripts/weaponized-lacatski-part1-2025`]
-- [`/transcripts/weaponized-lacatski-part2-2025`]
+- [`/transcripts/weaponized-096-lacatski-part1-2025`]
+- [`/transcripts/weaponized-097-lacatski-part2-2025`]
 
 ### Locations
 

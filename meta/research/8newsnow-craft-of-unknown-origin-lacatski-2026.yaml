@@ -19,7 +19,7 @@ description: 'News story with George ([`/people/george-knapp`]) and Dr. James La
   George: "This is Dr. Lacatski''s fourth and final book based on the AATIP files. I was co-author on two of those along with Dr. Colm Kelleher ([`/people/colm-kelleher`]). Future Visions contains many new details about dramatic UFO incidents and cases, weird events at Skinwalker Ranch ([`/locations/skinwalker-ranch`]) and similar locations, and hints about another program that grew out of AATIP."
 
 
-  Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`] [`/organizations/aawsap`] [`/organizations/dia`] [`/organizations/baass`] [`/organizations/bigelow-aerospace`] [`/organizations/kona-blue`] [`/documents/inside-us-gov-covert-ufo-2023`] [`/transcripts/weaponized-114-lacatski-future-visions-2026`] [`/transcripts/weaponized-lacatski-part1-2025`] [`/transcripts/weaponized-lacatski-part2-2025`]'
+  Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`] [`/organizations/aawsap`] [`/organizations/dia`] [`/organizations/baass`] [`/organizations/bigelow-aerospace`] [`/organizations/kona-blue`] [`/documents/inside-us-gov-covert-ufo-2023`] [`/transcripts/weaponized-114-lacatski-future-visions-2026`] [`/transcripts/weaponized-096-lacatski-part1-2025`] [`/transcripts/weaponized-097-lacatski-part2-2025`]'
 primary_sources:
 - path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
   format: transcript
@@ -97,7 +97,7 @@ quotes:
   added_date: '2026-05-17'
   statement_date: '2026-04-06'
   text: |
-    [2:29] from the beginning. Uh they were concerned from the beginning about the the leak, but we never had a a leak. Uh not at all.
+    [2:28] from the beginning. Uh they were concerned from the beginning about the the leak, but we never had a a leak. Uh not at all.
   source:
     path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
     location: '[2:29]–[2:36]'
@@ -108,7 +108,7 @@ quotes:
   added_date: '2026-05-17'
   statement_date: '2026-04-06'
   text: |
-    [3:28] That's the purpose of the government effort was to look into is there is there something really there, especially in the paranormal umbrella. And the answer is absolutely yes.
+    [3:26] That's the purpose of the government effort was to look into is there is there something really there, especially in the paranormal umbrella. And the answer is absolutely yes.
   source:
     path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
     location: '[3:28]–[3:42]'
@@ -119,7 +119,7 @@ quotes:
   added_date: '2026-05-17'
   statement_date: '2026-04-06'
   text: |
-    [4:11] You could have craft, you could have bodies, it wouldn't necessarily tell you where they're from, why they're here, what their their plan is. Nope, it it wouldn't, and that's part of the of the story.
+    [4:12] You could have craft, you could have bodies, it wouldn't necessarily tell you where they're from, why they're here, what their their plan is. Nope, it it wouldn't, and that's part of the of the story.
   source:
     path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
     location: '[4:11]–[4:24]'
@@ -231,13 +231,13 @@ entities_referenced:
   added_date: '2026-05-17'
   entity_type: transcript
   name: WEAPONIZED PART 1 (2025-11-05)
-  wrap_path: /transcripts/weaponized-lacatski-part1-2025
+  wrap_path: /transcripts/weaponized-096-lacatski-part1-2025
   context_summary: 'Six-month-prior Lacatski interview where he self-attested as creator and DIA program manager of the follow-on Kona Blue program — the program George''s segment closing alludes to as "another program that grew out of AATIP"'
 - id: e17
   added_date: '2026-05-17'
   entity_type: transcript
   name: WEAPONIZED PART 2 (2025-11-11)
-  wrap_path: /transcripts/weaponized-lacatski-part2-2025
+  wrap_path: /transcripts/weaponized-097-lacatski-part2-2025
   context_summary: 'Companion PART 2 to PART 1; Lacatski''s Kona Blue refinement and "exchange parameters" framing'
 naming_quirks:
 - id: nq1
@@ -247,4 +247,4 @@ naming_quirks:
   location: '[0:38], [0:46], [1:36], [1:42], [3:26], [4:25]'
   source_path: transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md
   resolution: disputed
-  note: 'The 8 News Now news segment narration consistently uses "AATIP" to refer to the program Lacatski directed at DIA. Per Lacatski''s own attestations in WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]), Mystery Wire 2021 ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]), WEAPONIZED PART 1 ([`/transcripts/weaponized-lacatski-part1-2025`]), and the Puthoff DIRD ([`/documents/dird-puthoff-vacuum-metric-engineering-2010`]) attribution, the program he directed was AAWSAP. AATIP is a separate Pentagon program. The news-segment ''AATIP'' framing diverges from Lacatski''s own self-attestation; preserved as it appears with resolution `disputed` per the convention for source-form disagreements between sources.'
+  note: 'The 8 News Now news segment narration consistently uses "AATIP" to refer to the program Lacatski directed at DIA. Per Lacatski''s own attestations in WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]), Mystery Wire 2021 ([`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`]), WEAPONIZED PART 1 ([`/transcripts/weaponized-096-lacatski-part1-2025`]), and the Puthoff DIRD ([`/documents/dird-puthoff-vacuum-metric-engineering-2010`]) attribution, the program he directed was AAWSAP. AATIP is a separate Pentagon program. The news-segment ''AATIP'' framing diverges from Lacatski''s own self-attestation; preserved as it appears with resolution `disputed` per the convention for source-form disagreements between sources.'

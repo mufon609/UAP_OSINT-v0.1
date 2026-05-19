@@ -113,9 +113,9 @@ Exit 0 on both = repo healthy. Any errors → fix first.
 | `/transcripts/lucistrust-rending-veils-ryder-2017` | primary-source-confirmed | other |
 | `/transcripts/mysterywire-lacatski-kelleher-knapp-2021` | primary-source-confirmed | other |
 | `/transcripts/weaponized-038-lacatski-kelleher-2023` | primary-source-confirmed | other |
+| `/transcripts/weaponized-096-lacatski-part1-2025` | primary-source-confirmed | other |
+| `/transcripts/weaponized-097-lacatski-part2-2025` | primary-source-confirmed | other |
 | `/transcripts/weaponized-114-lacatski-future-visions-2026` | primary-source-confirmed | other |
-| `/transcripts/weaponized-lacatski-part1-2025` | primary-source-confirmed | other |
-| `/transcripts/weaponized-lacatski-part2-2025` | primary-source-confirmed | other |
 
 ### Media (1)
 

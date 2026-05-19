@@ -3735,7 +3735,7 @@
 - url: https://www.youtube.com/watch?v=Qu8pudJk_-A
   format: transcript
   status: archived
-  path: transcripts/weaponized-lacatski-part1-2025-downloaded.md
+  path: transcripts/weaponized-096-lacatski-part1-2025-downloaded.md
   archived_date: '2026-05-17'
   sha256: fc4a02a5e0e159ffc1dc8eafdfe3c6fc105cf10517ffc950e27f125f50726042
   archive_status: 3
@@ -3805,7 +3805,7 @@
 - url: https://www.youtube.com/watch?v=cggMuAjFJcI
   format: transcript
   status: archived
-  path: transcripts/weaponized-lacatski-part2-2025-downloaded.md
+  path: transcripts/weaponized-097-lacatski-part2-2025-downloaded.md
   archived_date: '2026-05-17'
   sha256: 90e135b496c455632c680e29399b08582b01780656c4f8ed075405048d90b02c
   archive_status: 3

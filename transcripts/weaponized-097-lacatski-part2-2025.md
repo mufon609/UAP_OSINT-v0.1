@@ -1,5 +1,5 @@
 ---
-id: transcripts/weaponized-lacatski-part2-2025
+id: transcripts/weaponized-097-lacatski-part2-2025
 type: transcript
 schema_version: 1
 status: primary-source-confirmed
@@ -24,7 +24,7 @@ source_medium: youtube
 
 ## Summary
 
-WEAPONIZED part two of two with Dr. James Latsky ([`/people/james-lacatski`]) with George ([`/people/george-knapp`]) and Jeremy ([`/people/jeremy-corbell`]). After ([`/transcripts/weaponized-lacatski-part1-2025`]).
+WEAPONIZED part two of two with Dr. James Latsky ([`/people/james-lacatski`]) with George ([`/people/george-knapp`]) and Jeremy ([`/people/jeremy-corbell`]). After ([`/transcripts/weaponized-096-lacatski-part1-2025`]).
 
 Jeremy said "I am asking you about this craft. I am asking you, was it given to us? Was it gifted to us? Was it a crash..." Latsky said "you are going to get people mad at me for not answering when they know in advance and so do you that I can't answer." Jeremy said the craft makes the technology described in the book ([`/documents/inside-us-gov-covert-ufo-2023`]) look primitive. Latsky said it is "very advanced and with worldwide repercussions."
 
@@ -70,7 +70,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 with George Knapp and Jeremy Corbell, responding to Corbell's continuation of the craft-provenance question from PART 1, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [1:12]–[1:31] |
 
 ---
@@ -83,7 +83,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 responding to Corbell on what "looks primitive" means in the book's craft-of-unknown-origin passage, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [2:12]–[2:23] |
 
 ---
@@ -96,7 +96,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 responding to George on whether the books constitute disclosure, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [2:59]–[3:22] |
 
 ---
@@ -109,7 +109,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 distinguishing Kona-Blue-the-compartment from Kona-Blue-the-program, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [6:25]–[6:48] |
 
 ---
@@ -122,7 +122,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 responding to Jeremy's question about a legacy UAP program before AAWSAP based on investigative journalism over the years, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [19:53]–[20:01] |
 
 ---
@@ -135,7 +135,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 explaining why closed-door briefings have not progressed, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [20:50]–[21:07] |
 
 ---
@@ -148,7 +148,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Jeremy asking Lacatski directly about government-level contact with non-human intelligence, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [21:21] |
 
 ---
@@ -161,7 +161,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 elaborating on the false documents he reported to the DOD/DOW IG in PART 1, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [24:14]–[24:48] |
 
 ---
@@ -174,7 +174,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 responding to Knapp's 21st-anniversary framing on the 2004 Tic Tac, denying that it is US technology, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [36:11]–[36:32] |
 
 ---
@@ -187,7 +187,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 responding to Corbell pressing for a Lockheed Martin-specific denial on Tic Tac, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [37:10] |
 
 ---
@@ -200,7 +200,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 offering his rocket-scientist opinion on the 3I/ATLAS debate, responding to Corbell's question, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [38:14]–[38:36] |
 
 ---
@@ -213,7 +213,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 responding to Knapp's question about whether his Skinwalker Ranch experience followed him, framing his encounters as mild relative to others', 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [47:25]–[47:48] |
 
 ---
@@ -226,20 +226,20 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski introducing the MIB sighting story he is about to describe in WEAPONIZED PART 2, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [47:48]–[48:18] |
 
 ---
 
 ### Lacatski's description of the MIB image — a man in black suit, white shirt, black shoes and tie, black hat illustration on "a full blank page" with two words below: "Join us." Encountered on the express train from Union Station during Kona Blue. The illustration-on-newspaper detail is distinctive — not a person but a printed image presented to him deliberately.
 
-> [49:42] I look over and there's a man in black on a full blank page. A traditional typical always illustrated this way man in black suit, white uh shirt, black shoes and tie, shiny black shoes in the picture and a black hat. Who in Washington wears a black hat like that? and had two words, two words below him. Join us.
+> [49:47] I look over and there's a man in black on a full blank page. A traditional typical always illustrated this way man in black suit, white uh shirt, black shoes and tie, shiny black shoes in the picture and a black hat. Who in Washington wears a black hat like that? and had two words, two words below him. Join us.
 
 | Field | Value |
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 describing his MIB sighting on a Union Station express train, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [49:42]–[50:15] |
 
 ---
@@ -252,20 +252,20 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 agreeing with Knapp's race-for-technology framing — affirming the technology-recovery race is still on, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [1:04:25]–[1:04:49] |
 
 ---
 
 ### Lacatski's direct first-person attestation on recovered bodies / biologics — "I know nothing about that right now." Documents the structural limit on Lacatski's knowledge of the biologics-recovery question that Jeremy has been pursuing. Coupled with "we need those people" — younger scientists with medical degrees and clearances to be read in.
 
-> [1:07:24] like you know Jeremy's recovered bodies. Uh I know nothing about that right now, but we need you know we need those people. Initial revelations was a tough read. I know that.
+> [1:07:26] like you know Jeremy's recovered bodies. Uh I know nothing about that right now, but we need you know we need those people. Initial revelations was a tough read. I know that.
 
 | Field | Value |
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 distinguishing his own knowledge from the biologics-recovery framing Jeremy uses, 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [1:07:24]–[1:07:38] |
 
 ---
@@ -278,7 +278,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 explaining what his "full human capabilities" statement referred to — "in Kona Blue aspects", 2025-11-11 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-097-lacatski-part2-2025-downloaded.md) |
 | Location | [1:10:17]–[1:10:48] |
 
 ---
@@ -289,22 +289,22 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source | Note |
 |---|---|---|---|
-| Latsky | Lacatski | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lacatski" as "Latsky" in the opening intro voice-over and the part-two recap. |
-| Lacy | Lacatski | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lacatski" as "Lacy" in George Knapp's turn-of-speaker address ("Jim uh Lacy"). |
-| Lowsky | Lacatski | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lacatski" as "Lowsky" in the Yankee-Blue discussion ("Dr. Lowsky have been duped about the UFO reality"). |
-| Lasksky | Lacatski | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lacatski" as "Lasksky" in George's closing sign-off ("Dr. James Lasksky, thanks for joining us"). |
-| Latsky | Lacatski | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders Lacatski's name "Jim Latsky's counter measures" — the "counter measures" framing of his structural information control. |
-| OAP | AAWSAP | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "AAWSAP" as "OAP" throughout PART 2. |
-| OSAP | AAWSAP | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "OSAP" in PART 2. |
-| Osap | AAWSAP | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption mixed-case variant "Osap" in Lacatski's PART 2 narration about the MIB sighting timing. |
-| Oset | AAWSAP | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption rendering "Oset" in Lacatski's PART 2 attestation that the MIB sighting was "during Kona Blue, not during Oset" — distinguishing post-AAWSAP timing. |
-| Loheed | Lockheed | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lockheed Martin" as "Loheed Martin" in Jeremy's Tic Tac question. |
-| Bigalow | Bigelow | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Bob Bigelow" as "Bob Bigalow" in Lacatski's closing reflection on the four-year decision-to-write-the-book. |
-| column | Colm | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders Colm Kelleher's first name as "column" in Lacatski's closing reflection. |
-| Reed | Reid | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Harry Reid" as "Senator Reid" / "Senator Reed" — the AAWSAP-founding senator is Harry Reid. |
-| Grush | Grusch | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "David Grusch" as "David Grush" in Lacatski's PART 2 listing of compartment-read-in-blocked witnesses. |
-| DOSAR | DOPSR | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "DOPSR" as "DOSAR" in Jeremy's question about the pre-publication review process. |
-| deal | DOE | transcripts/weaponized-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "DOE" (Department of Energy) as "deal" in Lacatski's PART 2 attestation about his Q clearance — Q clearance is the DOE counterpart to a Top Secret clearance, so the canonical agency is DOE. |
+| Latsky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lacatski" as "Latsky" in the opening intro voice-over and the part-two recap. |
+| Lacy | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lacatski" as "Lacy" in George Knapp's turn-of-speaker address ("Jim uh Lacy"). |
+| Lowsky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lacatski" as "Lowsky" in the Yankee-Blue discussion ("Dr. Lowsky have been duped about the UFO reality"). |
+| Lasksky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lacatski" as "Lasksky" in George's closing sign-off ("Dr. James Lasksky, thanks for joining us"). |
+| Latsky | Lacatski | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders Lacatski's name "Jim Latsky's counter measures" — the "counter measures" framing of his structural information control. |
+| OAP | AAWSAP | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "AAWSAP" as "OAP" throughout PART 2. |
+| OSAP | AAWSAP | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "OSAP" in PART 2. |
+| Osap | AAWSAP | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption mixed-case variant "Osap" in Lacatski's PART 2 narration about the MIB sighting timing. |
+| Oset | AAWSAP | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption rendering "Oset" in Lacatski's PART 2 attestation that the MIB sighting was "during Kona Blue, not during Oset" — distinguishing post-AAWSAP timing. |
+| Loheed | Lockheed | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Lockheed Martin" as "Loheed Martin" in Jeremy's Tic Tac question. |
+| Bigalow | Bigelow | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Bob Bigelow" as "Bob Bigalow" in Lacatski's closing reflection on the four-year decision-to-write-the-book. |
+| column | Colm | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders Colm Kelleher's first name as "column" in Lacatski's closing reflection. |
+| Reed | Reid | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "Harry Reid" as "Senator Reid" / "Senator Reed" — the AAWSAP-founding senator is Harry Reid. |
+| Grush | Grusch | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "David Grusch" as "David Grush" in Lacatski's PART 2 listing of compartment-read-in-blocked witnesses. |
+| DOSAR | DOPSR | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "DOPSR" as "DOSAR" in Jeremy's question about the pre-publication review process. |
+| deal | DOE | transcripts/weaponized-097-lacatski-part2-2025-downloaded.md | YouTube auto-caption renders "DOE" (Department of Energy) as "deal" in Lacatski's PART 2 attestation about his Q clearance — Q clearance is the DOE counterpart to a Top Secret clearance, so the canonical agency is DOE. |
 
 ---
 
@@ -343,7 +343,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 ### Transcripts
 
-- [`/transcripts/weaponized-lacatski-part1-2025`]
+- [`/transcripts/weaponized-096-lacatski-part1-2025`]
 
 ### Locations
 

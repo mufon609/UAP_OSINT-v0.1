@@ -86,7 +86,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ### Lacatski's security-posture attestation — AAWSAP was "not an official SAP but a closed program"; within his own DIA office only leadership knew the contract was being run; staff had "no idea whatsoever" the program existed. Frames the AAWSAP/AATIP press confusion as a consequence of compartmentation rather than deliberate misdirection. Direct first-person attestation by the program's named director.
 
-> [3:20] so getting back to how did this mix-up occur i think it it's it's not deliberate it's not due to to to authors to television personalities etc it's the fact we were running not an official sap but a closed program i can tell you for a fact that within my own office they did not know except leadership that this contract was being run they had no idea whatsoever our security was that tight
+> [3:19] so getting back to how did this mix-up occur i think it it's it's not deliberate it's not due to to to authors to television personalities etc it's the fact we were running not an official sap but a closed program i can tell you for a fact that within my own office they did not know except leadership that this contract was being run they had no idea whatsoever our security was that tight
 
 | Field | Value |
 |---|---|
@@ -164,7 +164,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ### Lacatski extends the DoD-review account — pandemic-era off-site processing through secure channels handling the book "as if it had maybe top secret sci information in it" even though "it didn't"; multi-organization transfer for review and approval. Establishes the procedural shape of the pre-publication review process while attesting the book itself contained no TS/SCI material (per Lacatski).
 
-> [14:02] people i was dealing with and i understood their situation during the pandemic they were working off-site but they had to process it through secure channels because you don't know what's in the book until so they had to process it as if it had maybe top secret sci information in it uh of course it didn't but nevertheless they had to handle it that way they had to go into work transfer to various organizations for their review and approval but it eventually occurred and i'm glad we got that uh approval for release
+> [13:59] people i was dealing with and i understood their situation during the pandemic they were working off-site but they had to process it through secure channels because you don't know what's in the book until so they had to process it as if it had maybe top secret sci information in it uh of course it didn't but nevertheless they had to handle it that way they had to go into work transfer to various organizations for their review and approval but it eventually occurred and i'm glad we got that uh approval for release
 
 | Field | Value |
 |---|---|
@@ -177,7 +177,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 ### Kelleher's closing role-summary — Lacatski "driving force in Washington D.C.", Kelleher "day-to-day manager in Las Vegas" — codifies the two-author program-leadership division for the AAWSAP/BAASS operation. Statement BY Kelleher ABOUT Lacatski's program function; book co-authorship attestation in source.
 
-> [15:56] um i think it's about time that the entire story of ossop is being told and you know dr lykotsky was the driving force in in washington dc and i was the day-to-day manager in las vegas so i think between the two of us we've come up with a pretty good summary of what what the whole program looked like
+> [15:59] um i think it's about time that the entire story of ossop is being told and you know dr lykotsky was the driving force in in washington dc and i was the day-to-day manager in las vegas so i think between the two of us we've come up with a pretty good summary of what what the whole program looked like
 
 | Field | Value |
 |---|---|

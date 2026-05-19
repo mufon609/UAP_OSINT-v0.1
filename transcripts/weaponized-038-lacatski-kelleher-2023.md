@@ -107,7 +107,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ### Lacatski on Elizondo ("Lou") handling AATIP — "I was not prived because it was mainly spun up as I was getting ready to retire." Lacatski's stated retirement date is 2016. References were "electronically specifically scanned in electronically at DIA" when he left; cannot speak to what happened post-2016. Establishes the structural separation between AAWSAP (Lacatski) and AATIP (Elizondo) per Lacatski's first-person account.
 
-> [7:38] but that's where the name atip came from atip was something that was necessary to be uh proceeded with on Military cases Lou handled that I was not prived because it was mainly spun up as I was getting ready to retire I will say this though that when I left all of our references were electronically specifically scanned in electronically at DIA now I can't say what happened in the year since I retired in 2016 it could have been that they're purged but they weren't physical records
+> [7:32] but that's where the name atip came from atip was something that was necessary to be uh proceeded with on Military cases Lou handled that I was not prived because it was mainly spun up as I was getting ready to retire I will say this though that when I left all of our references were electronically specifically scanned in electronically at DIA now I can't say what happened in the year since I retired in 2016 it could have been that they're purged but they weren't physical records
 
 | Field | Value |
 |---|---|
@@ -133,7 +133,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ### Lacatski's direct on-record affirmation — "yes you I was allowed to tell you." First-person attestation by the former AAWSAP program director that he was officially permitted to make the craft-of-unknown-origin statement in the 2011 Capitol meeting. Sworn-statement-adjacent on-record affirmation; not independently verified beyond Lacatski's account.
 
-> [15:59] you're telling us you told us because you were allowed to tell us that our government has a UFO in its possession and has been able to access the inside of it right yes you I was allowed to tell you let me show the back of the book this is I know I know hold up George translate George
+> [15:55] you're telling us you told us because you were allowed to tell us that our government has a UFO in its possession and has been able to access the inside of it right yes you I was allowed to tell you let me show the back of the book this is I know I know hold up George translate George
 
 | Field | Value |
 |---|---|
@@ -159,7 +159,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ### Lacatski's "I can't answer that" non-answer pattern, and the substantive attestation about the 38 DIRD papers — "we solicited the input for the topics for the 38 papers from Air Force intelligence CIA Naval intelligence and Ground Intelligence; those are the topics they chose to do; but they were completely legitimate at the time and pretty close to state-of-the-art right now." Documents the inter-agency origin of the DIRD topic list and Lacatski's framing of the DIRDs as state-of-the-art. The "real answer" to why the DIRDs exist would "floor people" — Lacatski declines to give it.
 
-> [20:46] why one of the questions that you posed to us just now was why was the program started okay you can't answer that but another question you're saying people should ask is why did you do all the the defense intelligence reference documents so can you answer that why did you do all those defense intelligence reference documents and the answer is no I can't answer that because that that would that that would be an answer that would just uh floor people really yes the the real answer and and by the way I I I I I I don't know whether there's ever been real criticism but there kind of has by the nature of some of these topics uh we solicited the input for the topics for the 38 papers from uh from Air Force intelligence CIA uh Naval intelligence and uh uh Ground Intelligence that those are the topics they chose to do but they were completely legitimate at the time and by the way they're pretty close to state-of-the-art right now
+> [20:38] why one of the questions that you posed to us just now was why was the program started okay you can't answer that but another question you're saying people should ask is why did you do all the the defense intelligence reference documents so can you answer that why did you do all those defense intelligence reference documents and the answer is no I can't answer that because that that would that that would be an answer that would just uh floor people really yes the the real answer and and by the way I I I I I I don't know whether there's ever been real criticism but there kind of has by the nature of some of these topics uh we solicited the input for the topics for the 38 papers from uh from Air Force intelligence CIA uh Naval intelligence and uh uh Ground Intelligence that those are the topics they chose to do but they were completely legitimate at the time and by the way they're pretty close to state-of-the-art right now
 
 | Field | Value |
 |---|---|
@@ -185,7 +185,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ### Lacatski's "can't answer that" non-answer when Corbell asks whether Lacatski personally saw the craft. Lacatski refuses to say either yes or no — "I could say no and it still not be the truth." Documents the asymmetric-non-answer pattern: a "no" would itself be a security-controlled answer rather than a factual one. Auto-caption "grush" / "Callum" for Grusch / Colm preserved per naming_quirks.
 
-> [33:45] so let me ask you this though the big the big question with David grush was they're like well he didn't see a UFO now you're in a meeting in the Capital Hill and you're telling them we have a UFO we've gotten inside of it did you see it yourself can't answer that okay but if the answer was no you could answer that right uh no that that comes goes back to something that occurred uh a similar question very similar to your question it wasn't asked by you but it was asked to Callum and he said we found no smoking gun that is the standard answer we're to give is so I could say no and it still not be the truth so the thing is is security is Paramount we follow the rules
+> [33:44] so let me ask you this though the big the big question with David grush was they're like well he didn't see a UFO now you're in a meeting in the Capital Hill and you're telling them we have a UFO we've gotten inside of it did you see it yourself can't answer that okay but if the answer was no you could answer that right uh no that that comes goes back to something that occurred uh a similar question very similar to your question it wasn't asked by you but it was asked to Callum and he said we found no smoking gun that is the standard answer we're to give is so I could say no and it still not be the truth so the thing is is security is Paramount we follow the rules
 
 | Field | Value |
 |---|---|
@@ -237,7 +237,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 ### Lacatski's first-person statement that he is "not going out there and interviewing with everybody to say what I really feel" — only saying "what's been approved." Establishes a structural distinction between Lacatski's media discipline and other disclosure-era figures (Elizondo, Grusch) who have given numerous unscripted public interviews. Self-attests media restraint as deliberate.
 
-> [1:22:37] okay so you are trying to convey that to the American proper way I'm not I'm not going out there and and and uh and interviewing with uh everybody uh to say what I really feel uh no it was hard to get you to do this I mean I can testify you're not understand why people hang up on me when I say you can offer me all of this but I'm not going to say anything more than what's been approved
+> [1:22:34] okay so you are trying to convey that to the American proper way I'm not I'm not going out there and and and uh and interviewing with uh everybody uh to say what I really feel uh no it was hard to get you to do this I mean I can testify you're not understand why people hang up on me when I say you can offer me all of this but I'm not going to say anything more than what's been approved
 
 | Field | Value |
 |---|---|

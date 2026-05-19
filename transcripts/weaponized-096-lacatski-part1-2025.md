@@ -1,5 +1,5 @@
 ---
-id: transcripts/weaponized-lacatski-part1-2025
+id: transcripts/weaponized-096-lacatski-part1-2025
 type: transcript
 schema_version: 1
 status: primary-source-confirmed
@@ -60,7 +60,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski reading from a prepared statement at the opening of WEAPONIZED PART 1, hosted by George Knapp and Jeremy Corbell, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [2:00]–[2:22] |
 
 ---
@@ -73,7 +73,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing his prepared statement on the structural role of the four books in his disclosure footprint, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [3:21]–[4:13] |
 
 ---
@@ -86,7 +86,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining how the books were assembled from DIA government files and reviewed by DoD/DoW, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [5:03]–[5:20] |
 
 ---
@@ -99,7 +99,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski during his prepared statement on the structural cost and revenue of the books, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [5:50]–[6:25] |
 
 ---
@@ -112,7 +112,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing his prepared statement on the disinformation campaign against AAWSAP and Kona Blue, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [8:39]–[9:28] |
 
 ---
@@ -125,7 +125,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing his prepared statement on the early disclosure-era press coverage, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [9:42]–[10:19] |
 
 ---
@@ -138,20 +138,20 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski reading from a recent AARO email proposing a secure-space meeting and explaining why he refused, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [11:43]–[12:23] |
 
 ---
 
 ### Lacatski's on-record reaction to AARO communicating the DOPSR clearance status of his books — "AARO is reviewing books? Wow." Establishes that AARO had visibility into the DOPSR review of Lacatski's books, which Lacatski frames as suspicious meddling.
 
-> [13:09] Oh, by the way, you should have received notice last Friday that your DOPSR request completed staffing. That's on the two books, so that's good news. Now, AARO is reviewing books? Wow.
+> [13:03] Oh, by the way, you should have received notice last Friday that your DOPSR request completed staffing. That's on the two books, so that's good news. Now, AARO is reviewing books? Wow.
 
 | Field | Value |
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski reading the closing of the AARO email, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [13:09]–[13:22] |
 
 ---
@@ -164,7 +164,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining his refusal to meet with AARO after a former deputy director publicly disparaged the program, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [13:31]–[14:29] |
 
 ---
@@ -177,20 +177,20 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski reading the near-conclusion of his prepared statement, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [14:54]–[15:36] |
 
 ---
 
 ### Lacatski's on-record framing of AARO as a "disinformation campaign" — Corbell offers "completely lying to the American public"; Lacatski moderates to "not completely lying" but "steering the direction of the conversation," characterizing AARO as counterintelligence-style information control rather than outright fabrication. Load-bearing on the AARO-as-counterintelligence framing Lacatski extends throughout PART 1.
 
-> [26:50] Now, isn't that great? What did you expect to come out in their review? Any reasonable person said would say or intel analyst or or you know, civilian intel analyst would say, "I'm being ha-having the wool pulled over my eyes." Well, guess what? Arrow's a disinformation campaign you're coming to realize by their public statements and how they're talking about a program that you have knowledge of that they're completely lying to the American public. Well, I wouldn't use the word completely lying. That's not how counterintelligence work. There's some truth. There's some false. But, but you said it very clearly, steering the direction of the conversation.
+> [27:09] Now, isn't that great? What did you expect to come out in their review? Any reasonable person said would say or intel analyst or or you know, civilian intel analyst would say, "I'm being ha-having the wool pulled over my eyes." Well, guess what? Arrow's a disinformation campaign you're coming to realize by their public statements and how they're talking about a program that you have knowledge of that they're completely lying to the American public. Well, I wouldn't use the word completely lying. That's not how counterintelligence work. There's some truth. There's some false. But, but you said it very clearly, steering the direction of the conversation.
 
 | Field | Value |
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Corbell on whether AARO is a disinformation campaign or counterintelligence, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [26:50]–[27:54] |
 
 ---
@@ -203,20 +203,20 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Corbell asking Lacatski why he should not use the past tense for Kona Blue, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [22:27]–[22:38] |
 
 ---
 
 ### Lacatski's structural attestation that a "program" can persist independent of funding state — "A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out." Establishes the framework under which Kona Blue, despite the public DHS narrative of being killed, persists as a structural program.
 
-> [23:43] A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out. So, a UFO study program could continue under that name.
+> [23:47] A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out. So, a UFO study program could continue under that name.
 
 | Field | Value |
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining to Corbell why Kona Blue should not be characterized in past tense, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [23:43]–[23:58] |
 
 ---
@@ -229,7 +229,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Knapp's recap of the public Kona-Blue-killed-at-DHS narrative, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [25:11]–[25:45] |
 
 ---
@@ -242,7 +242,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Corbell asking Lacatski to confirm a reverse engineering program follows from the hull-breach admission, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [40:01]–[40:34] |
 
 ---
@@ -255,7 +255,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Corbell on whether he is concerned about the answer to the UAP question, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [55:14]–[55:21] |
 
 ---
@@ -268,7 +268,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 |---|---|
 | Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Corbell's closing question to Lacatski in PART 1 about the provenance of the recovered craft, 2025-11-05 |
-| Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
+| Source | [archived source](../sources/transcripts/weaponized-096-lacatski-part1-2025-downloaded.md) |
 | Location | [56:29]–[56:43] |
 
 ---
@@ -279,14 +279,14 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 
 | Source Form | Canonical | Source | Note |
 |---|---|---|---|
-| AASAP | AAWSAP | transcripts/weaponized-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "AAWSAP" as "AASAP" throughout PART 1. Preserved as it appears. |
-| AOSAP | AAWSAP | transcripts/weaponized-lacatski-part1-2025-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "AOSAP" in the closing Corbell question about achieving levitating craft. Preserved as it appears. |
-| Bass | BAASS | transcripts/weaponized-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "BAASS" as "Bass" in Lacatski's statement that "Bass was up to speed so fast." Preserved as it appears. |
-| Column | Colm | transcripts/weaponized-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders Colm Kelleher's first name as "Column" in Lacatski's reference to Kelleher having written about private money "in the rear portions of Skinwalkers at the Pentagon." Preserved as it appears. |
-| Kitaski | Lacatski | transcripts/weaponized-lacatski-part1-2025-downloaded.md | YouTube auto-caption variant of "Lacatski" as "Kitaski" in Corbell's reference to "Dr. Kitaski, get in trouble" about the books-vs-Congress framing. Preserved as it appears. |
-| Arrow | AARO | transcripts/weaponized-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "AARO" as "Arrow" in multiple Corbell turns about AARO's role and behavior. Preserved as it appears. |
-| Tar O'Toole | Tara O'Toole | transcripts/weaponized-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "Tara O'Toole" as "Tar O'Toole" in Corbell's question about Lacatski's meeting with her. Preserved as it appears. |
-| Walker | Skinwalker | transcripts/weaponized-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "Skinwalker" as "Walker" / "books, Walker" in Corbell's vampire-and-Skinwalker remark. Preserved as it appears. |
+| AASAP | AAWSAP | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "AAWSAP" as "AASAP" throughout PART 1. Preserved as it appears. |
+| AOSAP | AAWSAP | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption variant of "AAWSAP" as "AOSAP" in the closing Corbell question about achieving levitating craft. Preserved as it appears. |
+| Bass | BAASS | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "BAASS" as "Bass" in Lacatski's statement that "Bass was up to speed so fast." Preserved as it appears. |
+| Column | Colm | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders Colm Kelleher's first name as "Column" in Lacatski's reference to Kelleher having written about private money "in the rear portions of Skinwalkers at the Pentagon." Preserved as it appears. |
+| Kitaski | Lacatski | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption variant of "Lacatski" as "Kitaski" in Corbell's reference to "Dr. Kitaski, get in trouble" about the books-vs-Congress framing. Preserved as it appears. |
+| Arrow | AARO | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "AARO" as "Arrow" in multiple Corbell turns about AARO's role and behavior. Preserved as it appears. |
+| Tar O'Toole | Tara O'Toole | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "Tara O'Toole" as "Tar O'Toole" in Corbell's question about Lacatski's meeting with her. Preserved as it appears. |
+| Walker | Skinwalker | transcripts/weaponized-096-lacatski-part1-2025-downloaded.md | YouTube auto-caption renders "Skinwalker" as "Walker" / "books, Walker" in Corbell's vampire-and-Skinwalker remark. Preserved as it appears. |
 
 ---
 
