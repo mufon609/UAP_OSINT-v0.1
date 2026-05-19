@@ -126,10 +126,21 @@ not direct edits to the node body. Pattern:
    different gets a new entry + pointer.
 3. Regenerate the node (renderer-supported types):
    `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`
-4. Re-run `review-coverage.py` — must pass all four checks
-5. Run the full pre-commit chain — all nine gates green
+4. **Reader-visibility check** — grep the regenerated node for the
+   changed content to confirm the fix actually surfaces in the
+   rendered surface. Mechanical validators verify structure; they
+   don't verify that an artifact edit produced a reader-visible
+   change. Artifact-only fields (`entities_referenced[]` and lifecycle
+   fields `id` / `added_date` per `meta/schema-research-artifact.yaml`)
+   never render — edits to those land only in the artifact, not in
+   the body. If the audit goal required a reader-visible change, the
+   grep must hit; if it doesn't, the edit was to an artifact-only
+   field and the fix needs to move into a rendered surface (prose,
+   timeline entry, quote, structured-data row).
+5. Re-run `review-coverage.py` — must pass all four checks
+6. Run the full pre-commit chain — all nine gates green
    (`bash scripts/tests/pre-commit.sh`)
-6. Commit with a descriptive message; git log is the edit history.
+7. Commit with a descriptive message; git log is the edit history.
 
 ## Audit output
 

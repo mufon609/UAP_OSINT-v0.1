@@ -20,8 +20,9 @@ Inverse-direction limitation: this check only catches "registered
 but not linked." It does NOT catch "named in prose but not
 registered" (a contributor who writes ``CBS News`` without adding
 ``/organizations/cbs-news`` to entities_referenced[]). That
-direction is contributor discipline; see
-``feedback_interview_node_entities`` in the project memory directory.
+direction is contributor discipline — see ``meta/conventions.md``
+"Cross-reference contract for interview-derived testimony" for the
+registration rule that governs venues, hosts, and transcripts.
 
 Consumes ``ctx.node_text`` set by the review-coverage orchestrator.
 """

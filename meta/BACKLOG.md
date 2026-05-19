@@ -81,11 +81,6 @@ settled; implementation co-lands with A2):**
 - **C5** — auto-generate per-type section list in prompts/build.md
   (retired if A2 replaces the monolithic narrative with per-agent
   prompts)
-- **C27** — reader-visibility discipline (workflow half absorbed by
-  builder agent; schema-comment half stays independent)
-- **C28** — interview-node entities_referenced discipline
-  (mechanically absorbed by meta-linker; convention text in
-  meta/conventions.md still needed as the agent's source)
 - **C31** — preflight discipline audit (reduced; manual-invocation
   case stays for tools called outside the agent chain)
 - **C32** — research-scaffold placeholder shape (narrows to
@@ -93,13 +88,10 @@ settled; implementation co-lands with A2):**
 
 **Independent of the A2 chain:**
 
-- **A1** — entities_referenced[] body rendering (orthogonal
-  renderer decision)
+- **A1** — retire mandatory `entities_referenced[]` registration
+  (corpus-migration + schema decision, orthogonal to A2)
 - **C34** — schema↔CLI parity check (orthogonal mechanism question;
   no known concrete drift instance)
-- **C36** — exploratory-query affordance for the corpus (orthogonal
-  infrastructure question; loose interaction with A2's query-heavy
-  agents)
 
 ---
 
@@ -107,89 +99,70 @@ settled; implementation co-lands with A2):**
 
 Items with ordering or coupling constraints.
 
-### A1 — Investigation: should `entities_referenced[]` render in the body?
+### A1 — Retire mandatory `entities_referenced[]` registration
 
-**Open design question, not a tractable fix.** Every other structured
-artifact field renders to the body (`description`, `background`,
-`timeline`, `key_personnel`, `relationships`, `affiliations`,
-`corroboration_items`, `quotes`), but `entities_referenced[]` is the
-lone exception. That break in the pattern means cross-references
-declared there are invisible to the broken-link signal and to human
-readers, and contributors have to duplicate references across body
-wraps and `entities_referenced[]` to make new build candidates
-discoverable.
+**Premise verified by corpus measurement.** The field carries 1,254
+entries across 58 of 59 research artifacts. 100% of those entries'
+`wrap_path` values already appear as `[`/path`]` body wraps in the
+rendered node. The duplication is complete: every entity registered
+in the field is also wrapped in body prose. AGENT.md does not consume
+`entities_referenced[]` — the field has no reader-facing or
+query-agent consumer. The structural consumers are:
 
-**What the investigation needs to answer before any change:**
+- `scripts/checks/link_resolution.py` — builds the broken-link
+  registry, but reads body wraps directly via the same
+  `\[``(/[^``]+)``\]` regex `associate.py` uses. Independent of
+  `entities_referenced[]`.
+- `scripts/checks/stub_linking.py` — enforces every
+  `entities_referenced[].wrap_path` also appears as a body wrap.
+  Symmetry-enforcement check; the symmetry is what creates the
+  duplication burden.
+- `scripts/checks/description_token_drift.py` — uses `name` field
+  as approved-token vocabulary for the description-drift gate.
+- `scripts/tools/coverage-suggest.py` — pools entity text into the
+  missed-entity capitalized-token diagnostic.
 
-1. **What's the design history?** Why was `entities_referenced[]`
-   built as a YAML-only declaration when every other structured
-   field renders? Was the design intent agent-layer-only? Was it
-   "supplementary to body wraps, never primary"? Reading
-   `meta/conventions.md`, the renderer modules under
-   `scripts/build/renderers/`, and `AGENT.md` for original framing
-   is the first step.
+`context_summary` is the only sub-field carrying contributor synthesis
+not derivable from elsewhere. Corpus measurement: 84% of
+`context_summary` content already appears in the rendered body prose;
+16% (173 entries across 58 artifacts) carries unique synthesis content
+not present in body.
 
-2. **What's the actual scope?** How many `entities_referenced[]`
-   entries exist across the corpus? What fraction already have
-   a matching body wrap (would be no-op to render)? What fraction
-   is unique to `entities_referenced[]` (would surface for the
-   first time)? Mechanical answer via a one-pass script over
-   `meta/research/*.yaml`.
+**Direction.** Retire the discipline that every body-wrapped entity
+must be registered. `entities_referenced[]` becomes optional and only
+carries entries the contributor wants to attach a non-trivial
+`context_summary` to. Reduces the field from 1,254 entries to ~173
+entries; retires `stub_linking.py`'s symmetry enforcement; preserves
+the synthesis surface for the 16% of entries where it's load-bearing.
 
-3. **What does each entry look like?** Are they uniform "real
-   cross-references worth surfacing," or is there a mix —
-   load-bearing references, incidental-mentions-in-quoted-source,
-   placeholder declarations that haven't earned a body wrap?
-   Render-everything risks surfacing the incidental-mentions
-   class to readers without editorial framing.
+**Surfaces an investigation has to walk before implementation:**
 
-4. **What does AGENT.md / the query layer consume?** If a query
-   agent walks `entities_referenced[]` today, does it depend on
-   the field being structured-only? Would rendering also into
-   the body create a duplication the query layer would have to
-   reconcile?
-
-5. **What's the body-size impact?** Some artifacts have 40+
-   `entities_referenced[]` entries. If all unique-to-the-field
-   entries render in `## Associated Nodes`, what does the rendered
-   page length look like? Is there a reader-experience cost?
-
-**Candidate approaches the investigation may surface** (none
-recommended; listed for completeness):
-
-- Render in `## Associated Nodes` — extend `scripts/build/associate.py`
-  to also include `wrap_path` values from `entities_referenced[]`
-  not already covered by a body wrap
-- Validator-only crawl — make `validate.py`'s broken-link detector
-  consume `entities_referenced[]` directly from artifacts; no
-  renderer / reader-visible change
-- Schema retire — if entries are mostly redundant with body wraps,
-  retire `entities_referenced[]` entirely and document the body-wrap
-  convention as canonical
-- Hybrid — render only entries whose `context_summary` indicates
-  load-bearing cross-reference; keep "incidental mention" entries
-  YAML-only (would require classifying entries)
-
-The investigation may conclude that the current design is
-load-bearing (and the bandaid is the right cost), or that one
-of these approaches retires the duplication. Either way, the
-investigation has to happen before any code change.
-
-**Out of scope for the investigation:** retiring
-`entities_referenced[]` without preserving the `context_summary`
-+ quote-backlinks metadata. That metadata is consumed by the
-agent / query layer per `AGENT.md`; any structural change has to
-preserve or relocate it.
-
-**Bandaid in effect:** wraps are currently placed inside timeline-
-entry `event` fields alongside `entities_referenced[]` entries to
-force broken-link discovery. That duplication is the workaround the
-investigation exists to retire.
+- `description_token_drift.py` — entity `name` is one input to the
+  approved-token vocabulary. Reducing the entity set shrinks the
+  vocab. Determine whether the 84% redundant entries' names are
+  unique to those entries or are also covered by other vocab sources
+  (body prose tokens, `naming_quirks[]`, structured tables). If
+  unique-to-redundant-entries, a corresponding migration moves those
+  names to a `naming_quirks` or `description_token_overrides` entry
+  before deleting the registration.
+- `coverage-suggest.py` — pooling reduces by the redundant-entries'
+  text. Likely benign (the tool gaps-checks against source content,
+  not artifact density), but verify.
+- `meta/schema-research-artifact.yaml` — drop `entities_referenced`
+  from the universally-required keys list; mark optional in schema.
+- `meta/conventions.md` "Cross-reference contract for interview-
+  derived testimony" — currently requires venue/host/transcript
+  registration. Rewrite to require body wraps (still load-bearing for
+  the broken-link registry) without requiring `entities_referenced[]`
+  registration.
+- 58 research artifacts — corpus migration drops 1,081 redundant
+  entries; preserves 173 with non-trivial `context_summary`. Migration
+  script reads each artifact, keeps only entries whose
+  `context_summary` is unique-to-the-entry (not duplicated in body
+  prose), drops the rest.
 
 **Blocks:** none.
-**Blocked by:** none (independent renderer decision; in Section A
-because the investigation has coupling constraints across renderer,
-schema, validator, and AGENT.md query-layer surfaces).
+**Blocked by:** none.
 
 ---
 
@@ -521,85 +494,6 @@ and schema evolution.
 **A2 effect:** retired in full when A2 replaces the monolithic
 `prompts/build.md` narrative with per-agent prompts. Until A2
 ships, this remains a tractable standalone fix.
-
-### C27 — Split reader-visibility discipline into audit prompt + schema comments
-
-The rule "verify a fix actually surfaces in the rendered node before
-marking it done" mixes three concerns that need different homes:
-
-- **Workflow discipline** — "regenerate the node and grep for the fix"
-  is a step every audit/build session needs. Land it in
-  `prompts/audit.md` (new file) as a numbered step in the post-fix
-  verification pass. Workflow guidance belongs in prompts, not in
-  free-floating memory.
-- **Per-field render catalog** — which artifact fields render to the
-  node body vs. stay artifact-internal. The renderer code is the
-  source of truth; `meta/schema-research-artifact.yaml` is where
-  per-field semantics already live. For each field that doesn't
-  render, add a one-line "not rendered (artifact-only)" comment to
-  that field's entry in the schema. The catalog co-locates with the
-  field; no standalone prose catalog accumulates.
-- **Specific incident references and dated snapshots** — git log only.
-  Anywhere they accrue in repo files, delete them.
-
-Concrete work:
-
-1. Grep current renderer code (`scripts/build/renderers/*.py`) to
-   determine which fields render and which don't, against the present
-   codebase. Specifically verify `timeline[].note` and
-   `quote.significance` — they were reportedly artifact-only as of an
-   older snapshot; status today needs confirming.
-2. For each artifact-only field, add a `# not rendered (artifact-only)`
-   comment in `schema-research-artifact.yaml`.
-3. Create `prompts/audit.md` (or extend an existing audit prompt) with
-   the "regenerate + grep" verification step.
-4. If a contributor encounters this rule's substance elsewhere
-   (memory, code comment, BACKLOG note), delete it; the new homes are
-   canonical.
-
-**A2 effect:** workflow-discipline half ("regenerate + grep"
-verification) absorbed by the builder agent's contract. The
-schema-comment half (per-field render catalog in
-`schema-research-artifact.yaml`) stays independent of A2.
-
-### C28 — Promote interview-node entities_referenced discipline; optional audit aid
-
-Two related pieces:
-
-**(a) Promote the discipline into `meta/conventions.md`.** When a
-person node cites long-form media appearances as primary-source
-evidence (podcasts, broadcasts, panels, conference talks), each
-**venue** (organization), **host / interviewer / moderator** (person),
-and **transcript-to-be** (transcript node) must be registered as an
-`entities_referenced[]` entry with `wrap_path` AND must appear as a
-`[`/path`]` body wrap somewhere in the node (typically inside the
-corresponding `timeline[].event` text). The validator's
-`stub_linking` check enforces the registered→linked direction; the
-inverse (named-in-prose-but-not-registered) is contributor
-discipline.
-
-Add as a new "Cross-reference contract" subsection in
-`conventions.md`, near "Associated Nodes" or under the entity-layer
-discussion in "Three-layer evidentiary architecture". Update the
-`stub_linking.py` docstring's "see feedback memory" cross-reference
-to point at the new conventions section.
-
-**(b) Optional audit aid — `coverage-suggest`-style entity scanner.**
-Build a read-only diagnostic that scans node-body prose for
-capitalized terms not in `entities_referenced[]` and surfaces them at
-audit time. Parallel to `scripts/tools/coverage-suggest.py` (which
-catches the analogous gap on source coverage). Read-only; contributor
-judges per-case. Don't promote to a validator error — capitalized-
-word heuristics false-positive on "Pentagon" / "April" / proper
-nouns inside quoted source / etc. Premature enforcement reintroduces
-the category-tuned-threshold failure mode.
-
-(b) is optional follow-up; (a) is the load-bearing work.
-
-**A2 effect:** (a) the discipline is mechanically encoded by the
-meta-linker agent's contract. (b) the optional audit aid retires —
-the meta-linker's own check is the audit. The convention text in
-`meta/conventions.md` still needs to exist as the agent's source.
 
 ### C30 — Source-prep orchestrator: single command for the full caption + video chain
 
@@ -1042,234 +936,4 @@ investigation would scope-creep it.
 
 **Blocks:** C33 (C33's outcome depends on C35's decision).
 **Blocked by:** none.
-
-### C36 — Exploratory-query affordance for the markdown-as-node corpus
-
-**Structural framing.** The repo is a markdown-as-node knowledge
-base: 144 markdown nodes + 69 YAML files (manifest + per-node
-research artifacts), governed by 111 Python scripts in
-`build/checks/lib/tests/tools`. Two contributor-facing operation
-tiers exist today:
-
-- **Codified tools** in `scripts/tools/` (`manifest.py` with 12
-  subcommands — `add`, `status`, `pending`, `usage`, `orphans`,
-  `missing`, `summary`, `verify-paths`, `verify-checksums`, … —
-  plus `coverage-suggest.py`, `normalize-locations.py`,
-  `check-vocab.py`). High investment, mature, but only cover
-  operations recurring enough to have earned a subcommand.
-- **Inline shell scripts** (`python3 -c "..."`). Zero investment,
-  no trace, used for the recurring class of one-off queries:
-  "remove manifest entries matching X," "count nodes where
-  archetype = whistleblower," "find videos on disk that aren't
-  in the manifest," "list artifacts whose `entities_referenced[]`
-  point at a stub." Frictionless under broad `Bash(python3 *)`
-  allow rules; left no institutional trace.
-
-There is no middle tier. Every ad-hoc query forces a contributor
-choice: build a tool (over-engineered for a one-off) or improvise
-inline (now penalized by harness).
-
-**The precipitating event.** Claude Code (the contributor's
-harness) added a non-configurable safety check that prompts on
-every Bash command containing `\n#` inside a quoted argument. The
-check sits architecturally *above* the permission system, so
-broad `Bash(python3 *)` allow rules cannot reach it. Confirmed
-in [anthropics/claude-code#45008](https://github.com/anthropics/claude-code/issues/45008)
-(open, stale), [#45421](https://github.com/anthropics/claude-code/issues/45421)
-(closed silently, names the architectural cause: "The bash AST
-parser performs security validation at a layer above the
-permissions module where auto-approve takes effect"), and
-[#47106](https://github.com/anthropics/claude-code/issues/47106)
-(closed as duplicate). No maintainer response on any; no opt-out
-flag; no fix on the horizon. The only escape is
-`--dangerously-skip-permissions`, which is nuclear (disables all
-prompts, including the load-bearing ones).
-
-Multi-line Python `-c "..."` scripts naturally contain `#`
-comments. Every one trips the prompt. The friction the harness
-now imposes on inline scripting is permanent under any reasonable
-planning horizon.
-
-**Why this is structural, not tactical.** Three bandaids exist:
-
-1. Drop `#` comments from inline scripts (use `"""..."""` string
-   statements as no-op "comments" instead).
-2. Write throwaway scripts to `/tmp/` and execute via
-   `python3 /tmp/foo.py`.
-3. Promote each repeated query into a `manifest.py` (or sibling)
-   subcommand.
-
-Each addresses the symptom (prompt fires) without addressing the
-cause (no first-class exploratory affordance exists; the inline
-path was never architecturally sound, just frictionless). The
-gaps:
-
-- (1) and (2) keep the inline path alive but make every
-  exploratory query carry friction. They scale poorly across
-  hundreds of sessions and leave no shared trace of "what queries
-  have other sessions already answered."
-- (3) is the right move for *recurring* queries but generates a
-  steady backlog of one-off scripts that never land. The two
-  scripts that surfaced this issue (orphan-URL dedup,
-  stranded-video detection) are exactly the kind of operations
-  that have surfaced session after session and never made it into
-  `manifest.py` because each instance felt one-off in the moment.
-- None of (1)–(3) provides a discoverable surface where a
-  contributor opening a fresh session can see "what corpus
-  queries does this repo already know how to answer?" The current
-  architecture leaves no institutional memory for the ad-hoc
-  operation class.
-
-The architectural weakness was invisible while the inline path
-was frictionless. The guardrail did not create the weakness; it
-revealed it.
-
-**The actual question.** What first-class affordance does the
-repo need for exploratory queries against its own corpus, now
-that the path-of-least-resistance (inline `python3 -c`) is
-structurally penalized?
-
-**Candidate approaches** (none recommended; listed for the
-decision space):
-
-- **Extend the existing CLI tier with explicit graduation
-  discipline.** Adopt a written rule like "the second time you
-  write an inline script for query class X, it lands as a
-  `manifest.py` subcommand." Lowest implementation cost. Doesn't
-  address the subcommand-proliferation discoverability cost;
-  accepts that genuinely one-off queries stay inline (and stay
-  friction-laden). The rule's a process patch, not an
-  architectural answer.
-
-- **Unified query tool.** A new `scripts/tools/query.py` with a
-  small DSL or argparse surface for the common operation classes
-  (filter manifest by field, walk artifacts by archetype,
-  cross-check disk vs. manifest, count entries grouped by Y).
-  Trades per-domain subcommand proliferation for one tool's
-  growing expressiveness. Design questions: fluent CLI vs.
-  embedded SQL-like vs. function-name dispatch vs. expression
-  language; how it composes with the existing per-domain tools
-  (`manifest.py`, `coverage-suggest.py`); whether it consumes the
-  schema (see schema-aware variant below) or stays loosely typed.
-
-- **Contributor REPL / notebook.** A `scripts/tools/explore.py`
-  (or Jupyter setup) that pre-loads corpus state into named
-  Python variables (`entries`, `nodes`, `artifacts`, `manifest`,
-  indexed by path) and drops the contributor into an interactive
-  shell. Closes the guardrail surface entirely — no `-c` string
-  involved, the contributor is in a Python REPL. Discoverability
-  is per-session, not per-tool (a contributor learns by typing
-  `dir(manifest)`). Highest implementation cost among options
-  here; carries a cultural shift (REPL-driven exploration vs.
-  command-driven).
-
-- **Scratch-directory graduation tier.** Formalize
-  `scripts/scratch/` or `scripts/explore/` as a documented
-  landing zone for in-progress queries. Scripts accumulate, then
-  occasionally graduate to `scripts/tools/` when a pattern
-  matures. Provides explicit middle tier between "ad-hoc" and
-  "first-class tool"; preserves inline-script ergonomics via
-  file-based execution (sidestepping the guardrail); relies on
-  contributor discipline to graduate scripts and prune dead ones.
-  Doesn't add machinery, just legitimizes a workflow the repo
-  currently doesn't have a home for.
-
-- **Schema-aware query DSL.** Build a query layer that consumes
-  `meta/schema.yaml` and `meta/schema-research-artifact.yaml` to
-  expose typed query primitives (e.g., `query nodes --type
-  person --archetype whistleblower`, `query manifest --status
-  pending --domain X`, `query artifacts --field
-  entities_referenced --where wrap_path matches /people/*`).
-  Highest implementation cost; closes the largest surface; risks
-  becoming its own maintenance burden if the schema evolves
-  faster than the query layer.
-
-- **Convention-only — accept the friction.** Document the three
-  bandaids in `meta/conventions.md` and `CLAUDE.md`. Don't add
-  affordance; teach contributors to avoid `#` in inline scripts
-  and prefer file-based one-offs. Cheapest; doesn't address the
-  underlying gap; gambles that the lack of institutional memory
-  for ad-hoc operations is tolerable on a multi-year horizon.
-
-The investigation may conclude that the current two-tier
-architecture is correct and the bandaid (convention) is the right
-cost. Or that the absence of a middle tier has been latent and
-the guardrail just made it visible enough to address. Either way,
-the question wants walking before any code lands.
-
-**Surfaces an investigation has to walk:**
-
-- `scripts/tools/manifest.py` — existing query/audit surface (12
-  subcommands); the baseline for "what does extending the CLI
-  tier look like?"
-- `scripts/tools/coverage-suggest.py`, `normalize-locations.py`,
-  `check-vocab.py` — other read-only diagnostic patterns; provides
-  a sense of what query-ish tools already look like in this repo.
-- `scripts/lib/_common.py` — loader/parser helpers any query
-  layer would build on (StrictYAMLLoader, manifest parse helpers,
-  prose-drift tokenizer, the canonical entry/artifact loaders).
-- `meta/schema.yaml`, `meta/schema-research-artifact.yaml` — the
-  schema a typed query DSL would consume.
-- `meta/conventions.md` "Inside `/scripts/`" — current landing
-  rules for scripts; would need updating if a new tier (e.g.,
-  `scripts/scratch/`) is added or if a query-tool convention is
-  formalized.
-- `CLAUDE.md` source-read-first rule and the `scripts/{build,tools}/`
-  landing discipline — the conventions the affordance has to
-  compose with, not violate.
-- A retrospective walk of recent sessions where contributors
-  actually reached for inline `python3 -c`: what operations? what
-  fraction would each candidate resolution have covered? No log
-  exists today; this is qualitative reconstruction from git log,
-  recent commits where one-off manifest manipulation was almost
-  certainly involved, and contributor memory.
-- [anthropics/claude-code#45008](https://github.com/anthropics/claude-code/issues/45008)
-  and the adjacent issues — to assess whether the guardrail is
-  likely to remain non-configurable on a multi-year horizon.
-  Planning under "this is permanent" vs. "this may be fixed in
-  six months" produces different optimal answers; the closed-
-  silently / stale / no-PR pattern on those issues argues for
-  treating it as permanent.
-
-**Out of scope for the investigation.**
-
-- Solving the Claude Code guardrail itself. Upstream's call,
-  outside this repo's reach.
-- Retiring any existing tool. The question is what *additional*
-  affordance is needed, not which existing one to replace.
-- Adopting a workflow that requires contributors to disable
-  harness safety checks (`--dangerously-skip-permissions` mode,
-  custom hook bypasses). That's an escape hatch with broad blast
-  radius — it would mask the prompts that exist to catch genuinely
-  surprising actions, not just the false-positive on `\n#`. Off
-  the table for the standard contributor workflow.
-- Bundling the per-quote / per-artifact data model into the
-  query-layer question. Those are A2 / A3 / C33 / C35 territory.
-  The query-affordance question is about contributor access to
-  the corpus *as it stands*, not about changing the corpus shape.
-
-**Surfaced from:** 2026-05-19 session. The contributor hit the
-`\n#` guardrail twice in quick succession during routine manifest
-work (orphan-URL dedup script and stranded-video detection
-script). Diagnosis confirmed the guardrail is non-configurable
-through any settings surface and is a known/unresolved Claude
-Code issue with no maintainer engagement. The contributor noted
-that the friction reveals a structural absence, not a workflow
-accident: the repo never had a first-class affordance for
-exploratory queries; the inline-script path was always
-architecturally weak (no discoverability, no institutional
-memory, no graduation path to codified tools), but until the
-harness change the architectural weakness was invisible because
-inline scripting was frictionless. Bandaids are explicitly
-insufficient — the investigation has to produce a design, not a
-workaround.
-
-**Blocks:** none.
-**Blocked by:** none. Loose interaction with **A2** (the
-verifier and meta-linker agents are query-heavy; whatever
-affordance lands here, the A2 agents will consume) and **C30**
-(source-prep orchestrator may absorb some narrowly-scoped query
-operations). Neither is a blocking dependency in either
-direction.
-
 

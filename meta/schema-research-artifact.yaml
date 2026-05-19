@@ -133,7 +133,16 @@ required_keys:
   #   created a drift surface that mechanical checks couldn't catch;
   #   eliminated repo-wide. Cross-entity synthesis goes on finding
   #   nodes.
-  - entities_referenced   # list — every named person/org/event/doc/location
+  - entities_referenced   # list — every named person/org/event/doc/location.
+                          # Not rendered (artifact-only). Consumed by
+                          # scripts/checks/stub_linking.py (enforces every
+                          # wrap_path also appears as a body wrap),
+                          # scripts/checks/description_token_drift.py
+                          # (entity names feed the approved-token vocab),
+                          # and scripts/tools/coverage-suggest.py (text
+                          # gets pooled into the missed-entity diagnostic).
+                          # No renderer reads this field — body wraps in
+                          # rendered prose are the reader-visible surface.
   - naming_quirks         # list — source-specific oddities (typos, alt spellings)
 # Audit trail / history: git log and git diff on the artifact file
 # are authoritative. No in-artifact iteration log. Entry lifecycle
@@ -495,6 +504,12 @@ entry_lifecycle_fields:
   # via Superseded By / Contradicted By pointers). Edit history
   # lives in git log / git diff on the artifact file; no in-
   # artifact iteration log.
+  #
+  # Lifecycle fields are not rendered (artifact-only). They drive
+  # the validator's entry-shape checks and the per-entry versioning
+  # graph but never appear in the rendered node body — Superseded By
+  # / Contradicted By annotations surface through the renderer's
+  # per-section logic, not as raw field values.
 
 # Per-section entry shapes (each inherits lifecycle fields above):
 

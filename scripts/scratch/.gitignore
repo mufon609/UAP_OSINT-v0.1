@@ -1,0 +1,5 @@
+# Scratch directory — in-progress exploratory queries (see meta/conventions.md
+# "Inside /scripts/" — scratch tier). Contents are throwaway; only this
+# .gitignore is tracked, so the directory exists for new sessions.
+*
+!.gitignore
