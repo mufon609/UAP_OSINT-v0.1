@@ -8,7 +8,7 @@ wayback_date, wayback_skip, note) describe the source; artifact-level
 fields (format, path, sha256, archived_date, extraction_type,
 transcript_provenance, note) describe each rendering. See
 meta/schema.yaml manifest_entry / artifact_entry for the canonical
-spec. BACKLOG C29 landed this shape (was: flat one-row-per-(url,path)).
+spec.
 
 Commands:
   manifest.py add URL --path PATH [--format FMT] [--note TEXT]

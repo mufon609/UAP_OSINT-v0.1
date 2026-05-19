@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 """One-shot migration: flat manifest -> {url, artifacts: [...]} shape.
 
-BACKLOG C29 Phase 2. Reads the current flat manifest (each row a
-(url, format, path, sha256, ...) tuple) and rewraps each row as a
-URL-level entry whose `artifacts` list carries the per-rendering
-fields. URLs with multiple existing entries (e.g., the Vimeo
-lucistrust-rending-veils video + transcript pair) merge into one
-entry with multiple artifacts.
+Reads the current flat manifest (each row a (url, format, path,
+sha256, ...) tuple) and rewraps each row as a URL-level entry whose
+`artifacts` list carries the per-rendering fields. URLs with multiple
+existing entries (e.g., the Vimeo lucistrust-rending-veils video +
+transcript pair) merge into one entry with multiple artifacts.
 
 Field placement:
   URL-level:      url, status, archive_status, wayback_date,
