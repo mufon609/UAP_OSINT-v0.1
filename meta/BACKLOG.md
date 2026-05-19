@@ -152,6 +152,55 @@ strictly correctness-required after the schema+validator topic-
 substitution fix landed in `5148b2e` — but closes the
 documentation-drift surface for forks and schema evolution.
 
+### C6 — Realize `sha256_at_extraction` audit trail
+
+The schema declares `sha256_at_extraction` as optional on
+`primary_sources_entry` (`meta/schema-research-artifact.yaml:455`),
+described in the comment as *"captured SHA256 at extraction time
+(optional audit trail; separate from manifest's live sha256 field)"*.
+The `manifest_checksums` check's docstring explicitly defers
+verification: *"Does NOT verify ``sha256_at_extraction``."*
+
+Today the field is unrealized — adoption is 1 of 57 artifacts, no
+script populates it, no check validates it. The mechanism is named in
+schema + validator docstring but the populate-and-verify wiring was
+never built.
+
+Realizing it delivers a real defense-in-depth window: catches the
+"source replaced after I extracted but before I committed" attack /
+silent corruption between extraction time and commit-time validation.
+The manifest's live sha256 covers the validator-side; this covers the
+contributor-side.
+
+Three small wires:
+
+- `scripts/build/extract-source.py` — at extraction time, compute the
+  sha256 of the source file and write it alongside the text dump
+  (e.g., into a sidecar `/tmp/scratch-{slug}.sha256` or directly into
+  the artifact via `--inject`). Today the script writes the extracted
+  text but doesn't capture the source's sha256.
+- `scripts/build/research-scaffold.py` — when scaffolding an
+  artifact's `primary_sources[]`, read the sidecar (or recompute from
+  the source file) and populate `sha256_at_extraction` automatically.
+- New check `scripts/checks/manifest_checksum_at_extraction.py` —
+  for every `primary_sources_entry` carrying `sha256_at_extraction`,
+  compare to the manifest's live `sha256`. Mismatch errors with
+  message naming the artifact, the source path, and both checksums.
+  No-ops on entries lacking the field (preserves optional semantic
+  during rollout).
+
+Backfilling the existing 57 artifacts is a follow-up — once the wires
+are in, contributors populate the field on new extractions, and a
+batch-backfill script can fill the rest by recomputing sha256 of each
+artifact's `primary_sources[].path` and asserting (warn-not-error)
+that it matches the manifest. Once corpus-wide coverage is ≥95%,
+promote the check from optional to required.
+
+Surfaced: 2026-05-19 design-element audit, Element 10 (Source-read-
+first). Complementary to the existing `manifest_checksums` check —
+together they bracket the source-bytes-integrity window from
+extraction through commit-time validation.
+
 C1 retired 2026-05-17 — shipped as `scripts/tools/extract-firefox-cookies.py`;
 ID held open per the gap-stable retirement rule.
 
