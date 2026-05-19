@@ -111,6 +111,47 @@ the architecture inverts the source-of-truth direction (verifies
 generated output, not the structured source). Moving to artifact-side
 is the principled fix.
 
+### C5 — Auto-generate the per-type section list in `prompts/build.md`
+
+`prompts/build.md` Phase II Step 1 enumerates the per-type rendered
+section list (~148 lines, `prompts/build.md:594-741`) as `## SectionName
+— from artifact_field` entries — Identity, Background, `{topic_display_name}`
+Relevance, Affiliations, Statements, Timeline, Relationships,
+Corroboration, Credibility Notes, Associated Nodes for person/eyewitness,
+and so on across every type + archetype/kind. This duplicates information
+that already lives in two places:
+
+- `meta/schema.yaml::types.{T}.required_sections` (and per-archetype /
+  per-kind sub-blocks) — the canonical section list
+- `scripts/build/renderers/{T}.py` — the canonical section → artifact-
+  field dispatch
+
+The duplication means the prompt drifts whenever a section is added or
+renamed at the source-of-truth layers. It also still carries the literal
+"UAP Relevance" / "UAP-Scope Activity" examples — accurate documentation
+of *this instance's* rendered output, but a fork would need to edit the
+prompt as a separate step from `prompts/fork-init.md`'s `display_name`
+swap.
+
+Fix shape: wrap the per-type section enumeration in `<!-- BUILD-SPEC-START -->`
+/ `<!-- BUILD-SPEC-END -->` markers (analogous to CLAUDE.md's build-state
+auto-block), and add a generator that walks schema's `required_sections`
++ per-renderer source-field mapping and emits the enumeration. The
+generator routes section names through `topic_substitute()` so the
+prompt's example headers always reflect the current `display_name`.
+Add `build-md-spec.py --check` as a new pre-commit gate (parallel to
+`build-state.py --check`).
+
+The narrative + discipline portions of `prompts/build.md` stay hand-
+written. Only the dispatch-table enumeration auto-generates.
+
+Surfaced: 2026-05-19 design-element audit. Complementary to C4's
+artifact-side verbatim-quote move; both reduce duplication between
+governance docs and source-of-truth layers (schema / artifact). Not
+strictly correctness-required after the schema+validator topic-
+substitution fix landed in `5148b2e` — but closes the
+documentation-drift surface for forks and schema evolution.
+
 C1 retired 2026-05-17 — shipped as `scripts/tools/extract-firefox-cookies.py`;
 ID held open per the gap-stable retirement rule.
 
