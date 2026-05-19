@@ -467,6 +467,18 @@ def main() -> None:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     hf_token = args.hf_token or os.environ.get("HF_TOKEN")
+    # Fail-fast preflight — pyannote's gated model needs a token. Without
+    # this, ffmpeg audio extraction + pyannote import (~60-90s total) run
+    # before the same check inside run_diarization() fires. Gate up-front
+    # so contributors see the install hint before any expensive work.
+    if not hf_token:
+        sys.exit(
+            "error: HF_TOKEN not set.\n"
+            f"  pyannote's {PYANNOTE_MODEL} is gated on Hugging Face.\n"
+            "  Run scripts/tools/setup-diarize-audio.sh for the one-time\n"
+            "  setup (accept user conditions + export HF_TOKEN).\n"
+            "  Or pass --hf-token TOKEN on the command line."
+        )
 
     analyzed = end_s - start_s
     print(f"Video:    {video_path}")
