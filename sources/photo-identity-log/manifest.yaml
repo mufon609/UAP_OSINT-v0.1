@@ -87,3 +87,39 @@
   added_date: '2026-05-18'
   source_video_url: https://www.youtube.com/watch?v=dnnpyNuPdXs
   note: BTS wide-shot of Jesse Michels at 0:15; smaller-bbox second-angle reference complementing the 10:00 solo close-up baseline.
+- identity: meagan-medick
+  path: baselines/meagan-medick/ref_01.jpg
+  sha256: f499c18ec0a771364103436af47bc2fe8fb4dd398622c3f1a0814e3bb7f9e44b
+  source_video_path: sources/video/newsnation-coulthart-qa-church-commission-2026-54ta6fyc5pw.mp4
+  source_timestamp: '11:00'
+  bbox:
+  - 556
+  - 90
+  - 183
+  - 183
+  added_date: '2026-05-19'
+  note: Frontal split-screen shot of NewsNation Reality Check co-host Meagan Medick (right pane, opposite Coulthart at left). Identity confirmed from chyron end-card at 29:50 naming both participants. Blonde, pink top, white-shelf bookcase background.
+- identity: ross-coulthart
+  path: baselines/ross-coulthart/ref_01.jpg
+  sha256: 6af5d1d6156ac145ed1eacb4bc8eb02669f37466a52cae9788481e5f706eec9e
+  source_video_path: sources/video/newsnation-coulthart-qa-church-commission-2026-54ta6fyc5pw.mp4
+  source_timestamp: '15:42'
+  bbox:
+  - 298
+  - 145
+  - 192
+  - 192
+  added_date: '2026-05-19'
+  note: Three-quarter angle, NewsNation 'Reality Check' studio set (world map backdrop + American flag photos). Silver-grey hair, dark blazer, light-blue dress shirt. Solo at-desk Q&A format.
+- identity: ross-coulthart
+  path: baselines/ross-coulthart/ref_02.jpg
+  sha256: 27ddf2d2f47934a7fe150f27205c23e7368f0c2bb3de62eef12209a65714a0fd
+  source_video_path: sources/video/newsnation-coulthart-qa-church-commission-2026-54ta6fyc5pw.mp4
+  source_timestamp: '20:25'
+  bbox:
+  - 335
+  - 131
+  - 194
+  - 194
+  added_date: '2026-05-19'
+  note: Frontal angle, same NewsNation studio segment — cross-pose pair with ref_01 three-quarter angle.

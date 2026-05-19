@@ -3919,6 +3919,13 @@
   archive_status: 3
   note: Rep. Eric Burlison X/Twitter post announcing Grusch hire as UAP Caucus advisor (2025-03-27); fetched via Wayback Machine (20260102 snapshot); x.com blocks direct automated retrieval.
   wayback_date: '2026-01-02'
+- url: https://youtu.be/54TA6fyC5Pw
+  format: video
+  status: archived
+  path: video/newsnation-coulthart-qa-church-commission-2026-54ta6fyc5pw.mp4
+  archived_date: '2026-05-19'
+  sha256: 95acd20161a8f5ae28b9dfed5a4a8775b256efdcbdeab452eb81a206dafaf0d1
+  archive_status: 1
 - url: https://youtu.be/kRO5jOa06Qw
   format: video
   status: archived
