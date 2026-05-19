@@ -61,6 +61,42 @@
   added_date: '2026-05-18'
   source_video_url: https://www.youtube.com/watch?v=dnnpyNuPdXs
   note: Solo close-up of Jake Barber at 1:30:00 in 'I Retrieved a UFO With My Helicopter!' (Jesse Michels / American Alchemy, 2026); bald + glasses + dark plaid frontal view.
+- identity: james-ryder
+  path: baselines/james-ryder/ref_01.jpg
+  sha256: 6374164aaf9df58c821fd8d0113a1c5fb006341c3ce4651d78257caa0cd11012
+  source_video_path: sources/video/lucistrust-rending-veils-pt1-ryder-2017-222366976.mp4
+  source_timestamp: 05:00
+  bbox:
+  - 901
+  - 313
+  - 86
+  - 86
+  added_date: '2026-05-19'
+  note: 'Profile view (facing left toward moderator Lawrence) at Lucis Trust Arcane School Conference London 2017, Rending of the Veils part 1. Silver/grey hair, glasses, blue shirt under dark blazer, headset mic. Pairs with ref_02 (frontal without glasses, 50:10) and ref_03 (frontal with glasses, 07:06) for cross-pose + cross-state coverage. Earlier 2026-05-19 registration of two crops at 03:03 and 48:53 was misidentified (those crops were Lawrence, not Ryder); corrected via user review.'
+- identity: james-ryder
+  path: baselines/james-ryder/ref_02.jpg
+  sha256: 1f01abb47783386aef817fa582caa97823d9389eac7bb9e32965e7dafff2ccdc
+  source_video_path: sources/video/lucistrust-rending-veils-pt1-ryder-2017-222366976.mp4
+  source_timestamp: '50:10'
+  bbox:
+  - 718
+  - 160
+  - 204
+  - 204
+  added_date: '2026-05-19'
+  note: Frontal close-up WITHOUT glasses, mouth open mid-speech. Same Lucis Trust 2017 panel. Ryder is glasses-off for the 49:30–50:10 portion of the talk per contributor review; pairs with ref_02 frontal-with-glasses for cross-state robustness.
+- identity: james-ryder
+  path: baselines/james-ryder/ref_03.jpg
+  sha256: a8efba5a9aea2f9c8d61e7f8e94740778bb34375b56adf8821b48b000b747f8d
+  source_video_path: sources/video/lucistrust-rending-veils-pt1-ryder-2017-222366976.mp4
+  source_timestamp: 07:06
+  bbox:
+  - 540
+  - 130
+  - 320
+  - 320
+  added_date: '2026-05-19'
+  note: Frontal close-up WITH glasses, eyes downcast/contemplative. Same Lucis Trust 2017 panel. Manually cropped — Haar cascade misses the face at this close-up scale (face fills too much of frame). Pairs with the without-glasses frontal for cross-state robustness (Ryder removes glasses during portions of the talk).
 - identity: jesse-michels
   path: baselines/jesse-michels/ref_01.jpg
   sha256: 4f1186fc96cd6d350ae3fc8348a83cb683636d44677a570ab91c984061a072d5
