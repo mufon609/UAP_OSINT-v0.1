@@ -235,12 +235,8 @@ Memory-only is the single supported workflow.
    Then register in manifest:
 
    ```
-   python3 scripts/tools/manifest.py add URL --path transcripts/{slug}-downloaded.md --format transcript
+   python3 scripts/tools/manifest.py add URL --path transcripts/{slug}-downloaded.md --format transcript --transcript-provenance auto-caption
    ```
-
-   Manually append `transcript_provenance: auto-caption` to the
-   manifest entry (the `manifest.py add` CLI doesn't expose the
-   field yet — minor ergonomics gap, fix-when-needed).
 
 4. **End of session — clear the shell variable**:
 
@@ -252,6 +248,17 @@ Memory-only is the single supported workflow.
    account access; if they were ever exposed via paste / inspection
    / accidental echo, rotate the Google session at
    `https://myaccount.google.com/u/0/security`.)
+
+### Also need the video file? Run the speaker-disambiguation pipeline
+
+If the source has multiple on-camera speakers and you'll need
+per-quote `speaker_id` resolution, run the caption pull above first,
+then continue with the visual-side pipeline at
+`scripts/tools/VIDEO-PIPELINE.md` (download-video.py → extract-frames
+→ detect-faces → register baselines → stitch-transcript). Use the
+SAME `--slug` across `transcribe.py` and `download-video.py` —
+`stitch-transcript.py` discovers companion artifacts by slug, and
+slug drift silently breaks auto-discovery.
 
 ### One-video shorthand
 

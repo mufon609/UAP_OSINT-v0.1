@@ -106,6 +106,8 @@ def cmd_add(args):
         entry["wayback_date"] = wb_date
     if args.extraction_type:
         entry["extraction_type"] = args.extraction_type
+    if args.transcript_provenance:
+        entry["transcript_provenance"] = args.transcript_provenance
     if args.wayback_skip:
         entry["wayback_skip"] = True
     if args.note:
@@ -283,6 +285,14 @@ def main():
         choices=["text-native", "ocr-scan", "extraction-lossy"],
         help="How the source's text is extracted "
              "(default: text-native; field omitted from entry when default)")
+    p.add_argument(
+        "--transcript-provenance",
+        choices=["stenographic", "published-transcript",
+                 "human-corrected-caption", "auto-caption", "unknown"],
+        help="How a format=transcript source's text was produced "
+             "(default: unknown; field omitted from entry when unset). "
+             "See schema.yaml manifest_entry.transcript_provenance_values "
+             "for the per-value semantics.")
     p.add_argument(
         "--wayback-skip",
         action="store_true",
