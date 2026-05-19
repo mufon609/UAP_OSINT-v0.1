@@ -68,6 +68,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 with George Knapp and Jeremy Corbell, responding to Corbell's continuation of the craft-provenance question from PART 1, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [1:12]–[1:31] |
@@ -80,6 +81,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 responding to Corbell on what "looks primitive" means in the book's craft-of-unknown-origin passage, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [2:12]–[2:23] |
@@ -92,6 +94,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 responding to George on whether the books constitute disclosure, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [2:59]–[3:22] |
@@ -104,6 +107,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 distinguishing Kona-Blue-the-compartment from Kona-Blue-the-program, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [6:25]–[6:48] |
@@ -116,6 +120,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 responding to Jeremy's question about a legacy UAP program before AAWSAP based on investigative journalism over the years, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [19:53]–[20:01] |
@@ -128,6 +133,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 explaining why closed-door briefings have not progressed, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [20:50]–[21:07] |
@@ -140,6 +146,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Jeremy asking Lacatski directly about government-level contact with non-human intelligence, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [21:21] |
@@ -152,6 +159,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 elaborating on the false documents he reported to the DOD/DOW IG in PART 1, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [24:14]–[24:48] |
@@ -164,6 +172,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | George Knapp ([`/people/george-knapp`]) |
 | Attributed to | George in WEAPONIZED PART 2 framing the 21st-anniversary point on the 2004 Tic Tac and asking whether Tic Tac is "our technology", 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [36:11]–[36:32] |
@@ -176,6 +185,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Jeremy in WEAPONIZED PART 2 pressing for a Lockheed Martin-specific denial on Tic Tac, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [37:10] |
@@ -188,6 +198,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Jeremy in WEAPONIZED PART 2 asking Lacatski as a rocket scientist and propulsion expert about the 3I/ATLAS debate, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [38:14]–[38:36] |
@@ -200,6 +211,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | George Knapp ([`/people/george-knapp`]) |
 | Attributed to | George in WEAPONIZED PART 2 asking whether Lacatski's Skinwalker Ranch experience followed him, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [47:25]–[47:48] |
@@ -212,6 +224,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski introducing the MIB sighting story he is about to describe in WEAPONIZED PART 2, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [47:48]–[48:18] |
@@ -224,6 +237,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 describing his MIB sighting on a Union Station express train, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [49:42]–[50:15] |
@@ -236,6 +250,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | George Knapp ([`/people/george-knapp`]) |
 | Attributed to | George in WEAPONIZED PART 2 framing the race-for-technology question and Lacatski's response, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [1:04:25]–[1:04:49] |
@@ -248,6 +263,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 distinguishing his own knowledge from the biologics-recovery framing Jeremy uses, 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [1:07:24]–[1:07:38] |
@@ -260,6 +276,7 @@ Other names: [`/organizations/aatip`] [`/organizations/baass`] [`/organizations/
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED PART 2 explaining what his "full human capabilities" statement referred to — "in Kona Blue aspects", 2025-11-11 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part2-2025-downloaded.md) |
 | Location | [1:10:17]–[1:10:48] |

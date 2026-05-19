@@ -56,6 +56,7 @@ speakers:
   note: Retired Vice President of Lockheed Martin Space Systems Company ([`/organizations/lockheed-martin-space-systems-company`]) and former head of the Advanced Technology Centre. Chairman of the Board for the International Science Foundation and the Institute for Venture Science at the time of the talk.
 quotes:
 - id: q1
+  speaker_id: s1
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -66,6 +67,7 @@ quotes:
   significance: 'Lucis Trust moderator opens the talk by stating its topic verbatim — "fairies, devas, and unidentified aerial phenomena" — and pointedly contrasting the speaker''s available framings ("a Druid from Glastonbury or a Lockheed guy"). Establishes Ryder''s Lockheed Martin Space Systems VP institutional identity as the talk''s framing from second 15; the talk is a venue where a Lockheed-credentialled physicist speaks publicly on UAP through theosophical lenses.'
   context: Opening of the Lucis Trust Arcane School Conference London 2017 session; the moderator (Lawrence) introduces the speaker and the talk topic.
 - id: q2
+  speaker_id: s1
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -76,6 +78,7 @@ quotes:
   significance: 'The moderator establishes the talk''s theosophical framework — "the dissipation of the etheric veils, and astral phenomena and etheric phenomena is becoming more and more prevalent" — explicitly Alice Bailey / Ageless Wisdom terminology. Ryder is named as preferring "dissipation" over "rending" as the descriptor of what is happening to the veils between physical and subtle planes.'
   context: Moderator (Lawrence) framing the talk''s theosophical premise before handing off to Ryder.
 - id: q3
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -86,6 +89,7 @@ quotes:
   significance: 'Ryder distinguishes UFO from UAP terminology and explains his preference for UAP — "I feel like we''ve already made the question before we actually ask the question." Notable for Ryder using "UAP" terminology in June 2017 — predating mainstream public adoption of the Pentagon-coined term (the 2021 ODNI preliminary assessment and 2022 HPSCI hearing were the public-adoption events). Bridges the phenomena named in the talk title — fairies, angels, the little people — with modern UAP discourse.'
   context: Ryder responding to the moderator's question about whether there is a rise in unexplained phenomena.
 - id: q4
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -96,6 +100,7 @@ quotes:
   significance: 'Ryder explicates the talk title — "rending means to disintegrate that veil of separation" — and frames the central question as whether the veil between "devas and fairies and mankind" is dissipating in the contemporary period. The veil-between-planes framework is core Alice Bailey terminology operationalised on UAP discourse. "Vail" is Ryder''s own spelling pronunciation captured by whisper.'
   context: Ryder explaining the rending-of-the-veils thesis after the moderator's framing.
 - id: q5
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -106,6 +111,7 @@ quotes:
   significance: 'Ryder''s prehistoric-cave-art-as-UAP-record claim — Chauvet and Dordogne cave paintings depict "beings ... they sure look like some of the space people you see in UFOs sometimes" and "your first UFO 42,000 years ago. Lights and all." Establishes the temporal-continuity argument: same entities and phenomena recorded for ~40,000 years across cultures.'
   context: Ryder narrating his cave-art slide presentation showing Chauvet, Dordogne, and Feshman cave drawings 30,000-40,000 years old.
 - id: q6
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -116,6 +122,7 @@ quotes:
   significance: 'The moderator''s explicit devic-causation framing of crop circles — "the crop circles, possibly being created by divas of some kind, in some instances maybe trying to make some kind of communication with humanity" and "building divas ... carry within them the geometrical pattern for the part of the plan." A core Alice Bailey-tradition reading of crop circles as nature-spirit communication overlaid on electromagnetic physics. The moderator''s ontology, framed for Ryder to evaluate.'
   context: Moderator (Lawrence) framing crop circles as devic activity and asking Ryder to evaluate; the conversation has moved through earthquake lights and electromagnetic vortices.
 - id: q7
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -126,6 +133,7 @@ quotes:
   significance: 'The most explicit Alice Bailey reference in the talk — "the ageless wisdom teachings talking about the violet divas accompanying the reappearance of the Christ." Both "violet devas" and "reappearance of the Christ" are specific Bailey categories (Bailey 1948 "The Reappearance of the Christ"). Ryder''s prior off-talk attestation of "violet orbs" with "internal spinning motion" is invoked by the moderator and tied to a Bailey eschatological framework on tape.'
   context: Moderator framing Ryder's prior orb-observation attestation in Alice Bailey terms.
 - id: q8
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -136,6 +144,7 @@ quotes:
   significance: 'Ryder''s most direct non-physical-phenomenon claim — abductions occur under continuous camera surveillance in locked rooms with no detected physical movement. "Whatever''s happening is not happening physically." Couples the contemporary observation with the temporal-continuity claim — "those same descriptions go back 25 to 30,000 years, certainly back to Roman times."'
   context: Ryder presenting the alien-abduction phenomenon as evidence that UAP-class events are not physical in conventional sense.
 - id: q9
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -146,6 +155,7 @@ quotes:
   significance: 'Ryder''s explicit Vallée Magonia framing — names Jacques Vallée as "one of the great explorers in this field" and summarises his thesis on record: "the UFOs are not objects nor flying ... they appear." Establishes Ryder''s ontological commitment that the UAP phenomenon is not a fly-through-the-air physical-object class. The off-record-feeling "senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets" sentence is notable for naming senior UAP researchers in a way Ryder appears familiar with from inside the field.'
   context: Ryder summarising the UFO phenomenon by citing Jacques Vallée.
 - id: q10
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -156,6 +166,7 @@ quotes:
   significance: 'Ryder''s on-record sidestep of an incident the moderator describes as "classified information, which is now released" — "I wouldn''t say it was or wasn''t." Followed by Ryder''s own apparent-firsthand framing of the UAP behavioural signature: "there have been many, many chases of these objects, which when you get close, they''re just not there." The classification non-denial is notable structurally — the moderator''s framing is "now released"; Ryder declines to confirm or deny the classification of the incident.'
   context: Ryder discussing a Russian-American jet encounter with a UAP that disappeared on approach.
 - id: q11
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |
@@ -166,6 +177,7 @@ quotes:
   significance: 'Moderator and Ryder agreeing that upper-atmosphere sprites and dwarves discovered by fighter pilots are "clearly DIVA activity. Or EM, if you''re a hard-nosed physicist. Well, same difference, yeah." Frames the equivalence of theosophical and electromagnetic readings of the same phenomena — the talk''s core ontological move. Ryder affirms "same difference" rather than choosing one frame over the other.'
   context: Moderator and Ryder discussing the recently-discovered upper-atmosphere sprites / dwarves; Ryder confirms the discovery context.
 - id: q12
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2017-06-10'
   text: |

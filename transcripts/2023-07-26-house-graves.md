@@ -72,6 +72,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 10 |
@@ -84,6 +85,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 10 |
@@ -96,6 +98,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 10 |
@@ -108,6 +111,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 10 |
@@ -120,6 +124,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 10 |
@@ -132,6 +137,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 10 |
@@ -144,6 +150,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 10 |
@@ -156,6 +163,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 10 |
@@ -168,6 +176,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 10 |
@@ -180,6 +189,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 11 |
@@ -192,6 +202,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 11 |
@@ -204,6 +215,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 11 |
@@ -216,6 +228,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Subcommittee Chair Glenn Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 15 |
@@ -228,6 +241,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Subcommittee Chair Glenn Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 16 |
@@ -240,6 +254,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Subcommittee Chair Glenn Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 16 |
@@ -252,6 +267,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Ranking Minority Member Robert Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 18 |
@@ -264,6 +280,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Ranking Minority Member Robert Garcia, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 19 |
@@ -276,6 +293,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Rep. Tim Burchett (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 19 |
@@ -288,6 +306,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 21 |
@@ -300,6 +319,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 21 |
@@ -312,6 +332,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 22 |
@@ -324,6 +345,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 9-24 |
@@ -336,6 +358,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 24 |
@@ -348,6 +371,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Rep. Anna Paulina Luna (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 25 |
@@ -360,6 +384,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Subcommittee Member Jared Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 25 |
@@ -372,6 +397,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Subcommittee Member Maxwell Frost, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 29 |
@@ -384,6 +410,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Rep. Alexandria Ocasio-Cortez (waived on), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 33 |
@@ -396,6 +423,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Subcommittee Member Andy Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 34 |
@@ -408,6 +436,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Subcommittee Member Andy Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 35 |
@@ -420,6 +449,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Rep. Matt Gaetz (waived on; yielded time from Burchett), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 38 |
@@ -432,6 +462,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 39 |
@@ -444,6 +475,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Subcommittee Member Nancy Mace, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 29-39 |
@@ -456,6 +488,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 46 |
@@ -468,6 +501,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 47 |
@@ -480,6 +514,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Ranking Minority Member Jamie Raskin (3-minute additional round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 47 |
@@ -492,6 +527,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Rep. Tim Burchett (closing 3-minute round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 47 |
@@ -504,6 +540,7 @@ Graves's Q&A exchange under oath — national security concerns on advanced sens
 
 | Field | Value |
 |---|---|
+| Speaker | Ryan Graves |
 | Attributed to | Q&A exchange with Rep. Tim Burchett (closing 3-minute round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 48 |

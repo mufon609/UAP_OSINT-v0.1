@@ -84,6 +84,7 @@ speakers:
   note: Former BAASS program manager; co-author of the book. Auto-caption renders his first name as "colum" / "Callum" and his last name as "kellerer" — see naming_quirks.
 quotes:
 - id: q1
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -94,6 +95,7 @@ quotes:
   significance: Lacatski's first-person attestation that AAWSAP was "basically created between myself and Senator Reed [Reid] at the defense intelligence agency" — a $22M program with 5-year capability completed in 2 years; "test of various components of a UFO UAP paranormal research program"; "included all aspects of both UFOs and the Paranormal in relationship to UFOs." Establishes Lacatski's first-person claim as program co-creator.
   context: Lacatski responding to Corbell's opening request to outline the AAWSAP / AATIP difference at the start of the episode
 - id: q2
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -104,6 +106,7 @@ quotes:
   significance: Lacatski's attestation that Bob Bigelow's BAASS ("bass") was "created specifically" to address DIA's needs in AAWSAP. Documents the Statement of Needs / Objectives RFP method — "we did not tell the contractor the bidder what to do we said this is what we wanted achieved how would you do it" — the same procedural framing he uses in the 2021 Mystery Wire interview at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] q1.
   context: Lacatski continuing his answer to Corbell on how AAWSAP was structured at DIA
 - id: q3
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -114,6 +117,7 @@ quotes:
   significance: Lacatski on the origin of the AATIP name — he did not create the name; "someone in Congress put secret on the program name" in the funding notification; he wanted a different name to avoid security crossways. Reed's letter asking for special access program is referenced. Documents the operational mechanics of the AATIP-name introduction.
   context: Lacatski responding to Corbell on whether the public confusion over AATIP/AAWSAP came from a deliberate choice
 - id: q4
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -124,6 +128,7 @@ quotes:
   significance: Lacatski's identification of who he believes created the AATIP name — "who we called Axel Rod or perhaps luel isad or perhaps some of their cohorts and maybe all of them" — the "luel isad" auto-caption rendering most plausibly aligns with "Lue Elizondo" given Elizondo's named role in AATIP (compare line 46 "Lou alzando"). Lacatski explains the AAWSAP name was load-bearing at DIA because "assap routed the money to the defense warning office of Dia period it had to be that name."
   context: Lacatski explaining where the AATIP name originated and why AAWSAP's name was load-bearing at DIA
 - id: q5
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -134,6 +139,7 @@ quotes:
   significance: Lacatski on Elizondo ("Lou") handling AATIP — "I was not prived because it was mainly spun up as I was getting ready to retire." Lacatski's stated retirement date is 2016. References were "electronically specifically scanned in electronically at DIA" when he left; cannot speak to what happened post-2016. Establishes the structural separation between AAWSAP (Lacatski) and AATIP (Elizondo) per Lacatski's first-person account.
   context: Lacatski explaining his lack of direct involvement with AATIP and his 2016 retirement
 - id: q6
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -144,6 +150,7 @@ quotes:
   significance: The centerpiece of the interview — Corbell reads verbatim from chapter 9 of the book the 2011 Capitol building meeting where Lacatski posed the "craft of unknown origin" question to a US senator and agency under secretary. Lacatski affirms "the wording that you read is correct" and confirms the meeting happened and "it's true yes." Establishes the on-record affirmation by Lacatski (the named director of AAWSAP) that the meeting occurred — separate from the truth of the underlying claim (which is sworn-claim equivalent in Lacatski's voice but not independently corroborated).
   context: Corbell reading verbatim from chapter 9 of "Inside the US Government Covert UFO Program" with Lacatski responding line by line
 - id: q7
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -154,6 +161,7 @@ quotes:
   significance: Lacatski's direct on-record affirmation — "yes you I was allowed to tell you." First-person attestation by the former AAWSAP program director that he was officially permitted to make the craft-of-unknown-origin statement in the 2011 Capitol meeting. Sworn-statement-adjacent on-record affirmation; not independently verified beyond Lacatski's account.
   context: Corbell's follow-up confirming the substance of the 2011 Capitol passage; Lacatski affirming
 - id: q8
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -164,6 +172,7 @@ quotes:
   significance: 'Lacatski''s security framing for refusing to go beyond the book''s wording — "adversary competitor" listening, possible adversary employees in the contractor space ("hopefully not in Gia but in the contractor part"). The "Assam" reference (auto-caption of AAWSAP) confirms the program was historically targeted by adversary monitoring per Lacatski. Closes with the standing security frame: "we can''t say anything more than what we''ve been approved to say."'
   context: Lacatski explaining why he cannot answer further questions about the craft, post-craft-passage reading by Corbell
 - id: q9
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -174,6 +183,7 @@ quotes:
   significance: Lacatski's "I can't answer that" non-answer pattern, and the substantive attestation about the 38 DIRD papers — "we solicited the input for the topics for the 38 papers from Air Force intelligence CIA Naval intelligence and Ground Intelligence; those are the topics they chose to do; but they were completely legitimate at the time and pretty close to state-of-the-art right now." Documents the inter-agency origin of the DIRD topic list and Lacatski's framing of the DIRDs as state-of-the-art. The "real answer" to why the DIRDs exist would "floor people" — Lacatski declines to give it.
   context: Lacatski responding to Corbell's question about why the program was started, then pivoting to the DIRDs
 - id: q10
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -184,6 +194,7 @@ quotes:
   significance: Lacatski's on-record position on David Grusch's allegations — "what he's saying is credible," "it's reasonable what he's saying" regarding reverse engineering and biologicals; but Lacatski "never witnessed any what I would consider illegal activities I saw security procedures that are Paramount but not illegal activities so I don't concur with that." Distinguishes credible from witnessed; affirms Grusch's reverse-engineering and biologicals claims as "reasonable" without first-person attestation. Auto-caption "colum" preserved for Colm Kelleher per naming_quirks.
   context: Lacatski's response to George Knapp's question about David Grusch ("david grush" in auto-caption)
 - id: q11
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -194,6 +205,7 @@ quotes:
   significance: 'Lacatski''s "can''t answer that" non-answer when Corbell asks whether Lacatski personally saw the craft. Lacatski refuses to say either yes or no — "I could say no and it still not be the truth." Documents the asymmetric-non-answer pattern: a "no" would itself be a security-controlled answer rather than a factual one. Auto-caption "grush" / "Callum" for Grusch / Colm preserved per naming_quirks.'
   context: Corbell asking whether Lacatski personally saw the craft of unknown origin given his presence at the 2011 Capitol meeting
 - id: q12
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -204,6 +216,7 @@ quotes:
   significance: Lacatski's "closed stovepipe" attestation — only "the director of analysis and my office Chief and of course division Chief knew about this program no one else did." Parallels the 2021 Mystery Wire account at [`/transcripts/mysterywire-lacatski-kelleher-knapp-2021`] q4 ("within my own office they did not know except leadership"); EP 38 names the specific leadership tiers (Director of Analysis, office chief, division chief). Adds the stovepipe-insulation framing for himself — "I did not have to D address political type questions I I I was insulated."
   context: Lacatski responding to a discussion of alleged forged documents that had circulated about AAWSAP — re-emphasizing the closed program structure
 - id: q13
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -214,6 +227,7 @@ quotes:
   significance: Lacatski clarifies the AAWSAP timeline — funding stopped September 2010; 90-day no-cost extension December 2010; the 2011 Capitol meeting and the DHS engagement described in "Skinwalkers at the Pentagon" occurred *after* AAWSAP officially terminated. Important for sequencing — distinguishes the AAWSAP contractual period from the post-AAWSAP advocacy / continuation efforts.
   context: Lacatski responding to Knapp's question about whether AAWSAP's team was "on the trail" of the materials when they engaged DHS
 - id: q14
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -224,6 +238,7 @@ quotes:
   significance: Lacatski's direct on-record position — "am I a disclosure Advocate the answer is no." The difference between him and disclosure advocates "is security." Plus a structural attestation about why contractors hang on to technology — heavy investment of contractor capital + stockholders' money in research makes technology hard to pry loose. Lacatski "came from the contractor world in the first half of my career" — establishes his contractor-side experience.
   context: Corbell pressing Lacatski on UAP transparency and disclosure advocacy
 - id: q15
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |
@@ -234,6 +249,7 @@ quotes:
   significance: Lacatski's first-person statement that he is "not going out there and interviewing with everybody to say what I really feel" — only saying "what's been approved." Establishes a structural distinction between Lacatski's media discipline and other disclosure-era figures (Elizondo, Grusch) who have given numerous unscripted public interviews. Self-attests media restraint as deliberate.
   context: Corbell pressing Lacatski on whether he is advocating for disclosure
 - id: q16
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2023-10-16'
   text: |

@@ -75,6 +75,7 @@ speakers:
   note: Former AAWSAP director at DIA; Kona Blue lead per his own self-attestation in this transcript. The auto-caption renders his surname correctly through most of this episode (Lacatski / Dr. Lacatski); one variant "Dr. Kitaski" registered in naming_quirks.
 quotes:
 - id: q1
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -85,6 +86,7 @@ quotes:
   significance: Lacatski's direct on-record self-attestation as creator and DIA program manager of both AAWSAP and Kona Blue (KBP) — the first time he publicly names himself as the Kona Blue lead in this corpus. Establishes the structural Kona Blue → Lacatski lineage and asserts "Both classified" against alternative internet framings.
   context: Lacatski reading from a prepared statement at the opening of WEAPONIZED PART 1, hosted by George Knapp and Jeremy Corbell
 - id: q2
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -95,6 +97,7 @@ quotes:
   significance: 'Lacatski''s four-book ledger as of November 2025 — Skinwalkers at the Pentagon, Inside the US Government Covert UFO Program (Initial Revelations), New Insights (new), and the future-approved Future Visions. Together: ~1,200 pages of "everything that I have been approved to say." Lacatski says the four books are his complete public-record testimony and would tell Congress "a hundred times more than they''re ever going to get from hearings."'
   context: Lacatski continuing his prepared statement on the structural role of the four books in his disclosure footprint
 - id: q3
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -105,6 +108,7 @@ quotes:
   significance: 'Lacatski''s attestation that the books "factually detail the results of AASAP''s day-to-day activities assembled only from official government files at DIA" and "approved for release by the Department of Defense or War." The post-EO-14347 "Department of Defense or War" phrasing is Lacatski''s — the only such phrasing in the corpus attributable to a named institutional actor.'
   context: Lacatski explaining how the books were assembled from DIA government files and reviewed by DoD/DoW
 - id: q4
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -115,6 +119,7 @@ quotes:
   significance: Lacatski's on-record commercial-relationship attestation about book royalties — $0.50/Kindle, $1.50/printed copy; "in this niche market, I am not laughing all the way to the bank." Establishes the per-copy royalty floor for the four-book series; addresses the financial-motivation framing that critics apply to disclosure-era figures.
   context: Lacatski during his prepared statement on the structural cost and revenue of the books
 - id: q5
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -125,6 +130,7 @@ quotes:
   significance: 'Lacatski''s first-person assertion that he has reported deliberately false documents about AASAP and Kona Blue to the DOD/DOW Inspector General''s Office with supporting evidence. The "Deliberately false, not just incorrect, documents have been created about AASAP and Kona Blue, and are in currently in government files" framing is the load-bearing claim; the IG reporting establishes a procedural action on Lacatski''s part. Sworn-adjacent attestation of disinformation against AAWSAP / Kona Blue.'
   context: Lacatski continuing his prepared statement on the disinformation campaign against AAWSAP and Kona Blue
 - id: q6
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -135,6 +141,7 @@ quotes:
   significance: Lacatski's direct attestation that the 2017 New York Times disclosure-breaking story was "totally inaccurate" and that the authors knew his name and position at AATIP yet never contacted him. Washington Post and Politico contacted him only after publication. Establishes the gap between Lacatski's contemporaneous role and the journalistic reconstruction of the program.
   context: Lacatski continuing his prepared statement on the early disclosure-era press coverage
 - id: q7
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -145,6 +152,7 @@ quotes:
   significance: 'Lacatski reading from an AARO email inviting him to a meeting in a secure space — "Under our authorities, you do not need a current clearance. The law also grants us additional security authorities. Under a special program we can hold discussions at any level including human." Lacatski says he has refused both AARO meeting requests. The "discussions at any level including human" phrase becomes the load-bearing concern: HUMINT cannot be discussed across the lines per Lacatski''s ensuing explanation.'
   context: Lacatski reading from a recent AARO email proposing a secure-space meeting and explaining why he refused
 - id: q8
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -155,6 +163,7 @@ quotes:
   significance: 'Lacatski''s on-record reaction to AARO communicating the DOPSR clearance status of his books — "AARO is reviewing books? Wow." Establishes that AARO had visibility into the DOPSR review of Lacatski''s books, which Lacatski frames as suspicious meddling.'
   context: Lacatski reading the closing of the AARO email
 - id: q9
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -165,6 +174,7 @@ quotes:
   significance: 'Lacatski''s on-record attestation that a former deputy director of AARO disparaged the UAP-paranormal connection in a public interview — said "they were looking for werewolves" and "Kona Blue was established as the home for all these paranormal UFO crap." Lacatski frames this as a "clear violation of not disclosing activities" confidentially discussed and as evidence of AARO''s preconception against AAWSAP/Kona Blue.'
   context: Lacatski explaining his refusal to meet with AARO after a former deputy director publicly disparaged the program
 - id: q10
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -175,6 +185,7 @@ quotes:
   significance: 'Lacatski''s direct framing in his prepared statement — only believe AATIP and Kona Blue information directly from the four books or from Lacatski / Kelleher themselves. Lacatski characterizes the disclosure-era public record as "a major and repetitive counterintelligence operation by unknown multiple operators or organizations and for unknown reasons." Asks "What is so important about AATIP or Kona Blue?"'
   context: Lacatski reading the near-conclusion of his prepared statement
 - id: q11
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -185,6 +196,7 @@ quotes:
   significance: 'Lacatski''s on-record framing of AARO as a "disinformation campaign" — Corbell offers "completely lying to the American public"; Lacatski moderates to "not completely lying" but "steering the direction of the conversation," characterizing AARO as counterintelligence-style information control rather than outright fabrication. Load-bearing on the AARO-as-counterintelligence framing Lacatski extends throughout PART 1.'
   context: Lacatski responding to Corbell on whether AARO is a disinformation campaign or counterintelligence
 - id: q12
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -195,6 +207,7 @@ quotes:
   significance: Lacatski's direct on-record statement that Kona Blue was both a compartment and a program — and is "much more than" either. The "compartment" + "program" distinction is the load-bearing structural framing for Lacatski's ensuing explanation that the program continues regardless of funding state.
   context: Corbell asking Lacatski why he should not use the past tense for Kona Blue
 - id: q13
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -205,6 +218,7 @@ quotes:
   significance: 'Lacatski''s structural attestation that a "program" can persist independent of funding state — "A program continues. It can be unfunded, it can be funded, it can be temporarily funded. Money can go in and out." Establishes the framework under which Kona Blue, despite the public DHS narrative of being killed, persists as a structural program.'
   context: Lacatski explaining to Corbell why Kona Blue should not be characterized in past tense
 - id: q14
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -215,6 +229,7 @@ quotes:
   significance: 'Lacatski''s direct contradiction of the public narrative that Kona Blue was killed at DHS — "The program was not killed. You can''t kill Kona Blue." Lacatski says he is planning a fifth book "after these four" about Kona Blue from his perspective, including his statements made in DHS.'
   context: Lacatski responding to Knapp's recap of the public Kona-Blue-killed-at-DHS narrative
 - id: q15
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -225,6 +240,7 @@ quotes:
   significance: 'Lacatski''s "I can''t answer that" on whether the United States has a reverse engineering program — restated almost two years after WEAPONIZED EP 38 ([`/transcripts/weaponized-038-lacatski-kelleher-2023`]). Lacatski pivots from the reverse-engineering question to the propulsion question: "what in the world is the power supply and the motive force?" — frames his own interest as the question of motive force and where the craft came from "if no terrestrial human nation has made it."'
   context: Corbell asking Lacatski to confirm a reverse engineering program follows from the hull-breach admission
 - id: q16
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |
@@ -235,6 +251,7 @@ quotes:
   significance: Lacatski's first-person framing of the UAP phenomenon as "one of the greatest mysteries for me" — establishes his stated continuing interest in the question despite his retirement and the structural restrictions on what he can say in spoken interview.
   context: Lacatski responding to Corbell on whether he is concerned about the answer to the UAP question
 - id: q17
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2025-11-05'
   text: |

@@ -59,6 +59,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Corbell's opening request to outline the AAWSAP / AATIP difference at the start of the episode, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [1:51]–[2:40] |
@@ -71,6 +72,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing his answer to Corbell on how AAWSAP was structured at DIA, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [3:19]–[3:58] |
@@ -83,6 +85,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Corbell on whether the public confusion over AATIP/AAWSAP came from a deliberate choice, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [5:21]–[6:43] |
@@ -95,6 +98,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining where the AATIP name originated and why AAWSAP's name was load-bearing at DIA, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [6:43]–[7:23] |
@@ -107,6 +111,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining his lack of direct involvement with AATIP and his 2016 retirement, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [7:38]–[8:18] |
@@ -119,6 +124,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Corbell reading verbatim from chapter 9 of "Inside the US Government Covert UFO Program" with Lacatski responding line by line, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [14:42]–[15:55] |
@@ -131,6 +137,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Corbell's follow-up confirming the substance of the 2011 Capitol passage; Lacatski affirming, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [15:59]–[16:20] |
@@ -143,6 +150,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining why he cannot answer further questions about the craft, post-craft-passage reading by Corbell, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [16:52]–[18:09] |
@@ -155,6 +163,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Corbell's question about why the program was started, then pivoting to the DIRDs, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [20:46]–[21:54] |
@@ -167,6 +176,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski's response to George Knapp's question about David Grusch ("david grush" in auto-caption), 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [31:44]–[32:25] |
@@ -179,6 +189,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Corbell asking whether Lacatski personally saw the craft of unknown origin given his presence at the 2011 Capitol meeting, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [33:45]–[34:30] |
@@ -191,6 +202,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to a discussion of alleged forged documents that had circulated about AAWSAP — re-emphasizing the closed program structure, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [49:20]–[50:12] |
@@ -203,6 +215,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Knapp's question about whether AAWSAP's team was "on the trail" of the materials when they engaged DHS, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [51:59]–[53:08] |
@@ -215,6 +228,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Corbell pressing Lacatski on UAP transparency and disclosure advocacy, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [1:21:01]–[1:22:00] |
@@ -227,6 +241,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Corbell pressing Lacatski on whether he is advocating for disclosure, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [1:22:37]–[1:23:06] |
@@ -239,6 +254,7 @@ Linked: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-kn
 
 | Field | Value |
 |---|---|
+| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Corbell's closing summary of the interview's centerpiece and what it implies; Lacatski's final response on going beyond the book wording, 2023-10-16 |
 | Source | [archived source](../sources/transcripts/weaponized-038-lacatski-kelleher-2023-downloaded.md) |
 | Location | [1:45:32]–[1:46:40] |

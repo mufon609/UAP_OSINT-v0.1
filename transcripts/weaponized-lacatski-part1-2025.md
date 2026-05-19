@@ -58,6 +58,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski reading from a prepared statement at the opening of WEAPONIZED PART 1, hosted by George Knapp and Jeremy Corbell, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [2:00]–[2:22] |
@@ -70,6 +71,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing his prepared statement on the structural role of the four books in his disclosure footprint, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [3:21]–[4:13] |
@@ -82,6 +84,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining how the books were assembled from DIA government files and reviewed by DoD/DoW, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [5:03]–[5:20] |
@@ -94,6 +97,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski during his prepared statement on the structural cost and revenue of the books, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [5:50]–[6:25] |
@@ -106,6 +110,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing his prepared statement on the disinformation campaign against AAWSAP and Kona Blue, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [8:39]–[9:28] |
@@ -118,6 +123,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing his prepared statement on the early disclosure-era press coverage, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [9:42]–[10:19] |
@@ -130,6 +136,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski reading from a recent AARO email proposing a secure-space meeting and explaining why he refused, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [11:43]–[12:23] |
@@ -142,6 +149,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski reading the closing of the AARO email, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [13:09]–[13:22] |
@@ -154,6 +162,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining his refusal to meet with AARO after a former deputy director publicly disparaged the program, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [13:31]–[14:29] |
@@ -166,6 +175,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski reading the near-conclusion of his prepared statement, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [14:54]–[15:36] |
@@ -178,6 +188,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Corbell on whether AARO is a disinformation campaign or counterintelligence, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [26:50]–[27:54] |
@@ -190,6 +201,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Corbell asking Lacatski why he should not use the past tense for Kona Blue, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [22:27]–[22:38] |
@@ -202,6 +214,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining to Corbell why Kona Blue should not be characterized in past tense, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [23:43]–[23:58] |
@@ -214,6 +227,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Knapp's recap of the public Kona-Blue-killed-at-DHS narrative, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [25:11]–[25:45] |
@@ -226,6 +240,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Corbell asking Lacatski to confirm a reverse engineering program follows from the hull-breach admission, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [40:01]–[40:34] |
@@ -238,6 +253,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Corbell on whether he is concerned about the answer to the UAP question, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [55:14]–[55:21] |
@@ -250,6 +266,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/jay-stra
 
 | Field | Value |
 |---|---|
+| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Corbell's closing question to Lacatski in PART 1 about the provenance of the recovered craft, 2025-11-05 |
 | Source | [archived source](../sources/transcripts/weaponized-lacatski-part1-2025-downloaded.md) |
 | Location | [56:29]–[56:43] |

@@ -55,6 +55,7 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in the 8 News Now news segment opening direct-quote section, 2026-04-06 |
 | Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
 | Location | [0:53]–[1:12] |
@@ -67,6 +68,7 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in the 8 News Now news segment responding to George's framing of AAWSAP as "follow the evidence wherever it led", 2026-04-06 |
 | Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
 | Location | [2:17]–[2:27] |
@@ -79,6 +81,7 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing the previous attestation in the 8 News Now news segment, 2026-04-06 |
 | Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
 | Location | [2:29]–[2:36] |
@@ -91,6 +94,7 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in the 8 News Now segment summarizing the AAWSAP / Future Visions framing, 2026-04-06 |
 | Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
 | Location | [3:28]–[3:42] |
@@ -103,6 +107,7 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in the 8 News Now segment after George frames "the government does possess at least one advanced craft of unknown origin" from the previous book, 2026-04-06 |
 | Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
 | Location | [4:11]–[4:24] |
@@ -115,6 +120,7 @@ Other: [`/people/harry-reid`] [`/people/jay-stratton`] [`/organizations/klas-tv`
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in the 8 News Now segment closing the substantive segment before George's wrap-up, 2026-04-06 |
 | Source | [archived source](../sources/transcripts/8newsnow-craft-of-unknown-origin-lacatski-2026-downloaded.md) |
 | Location | [4:24]–[4:44] |

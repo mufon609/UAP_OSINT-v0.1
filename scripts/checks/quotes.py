@@ -11,8 +11,16 @@ quotes additionally require:
     would omit the row and violate
     ``schema.yaml::quote_verification_fields.required``.
 
-Universal — runs on every research artifact. ``observation_type``
-enforcement varies by target_type.
+Transcript-artifact quotes additionally require:
+
+  - ``speaker_id`` — references one of the artifact's
+    ``speakers[*].id`` values; surfaces in the rendered verification
+    block as a Speaker row. Structural attribution; prevents
+    contributor-prose drift on who-said-what across re-edits and
+    audits.
+
+Universal — runs on every research artifact. ``observation_type``,
+``context``, and ``speaker_id`` enforcement varies by target_type.
 
 Layered enforcement around quote integrity:
 
@@ -55,6 +63,12 @@ def check(ctx):
 
     quotes = entries(ctx.data, "quotes")
     yield from check_unique_ids(ctx.rel, quotes, "quotes", CHECK_NAME)
+
+    # Speakers index for transcript-target speaker_id enforcement
+    # (see below).
+    speakers = entries(ctx.data, "speakers")
+    speaker_ids = {s.get("id") for s in speakers if isinstance(s, dict) and s.get("id")}
+
     for i, q in enumerate(quotes):
         if not isinstance(q, dict):
             continue
@@ -128,6 +142,38 @@ def check(ctx):
                 f"quotes[{i}] ({q.get('id')!r}): observation_type set on "
                 f"a non-person artifact (target_type {ctx.target_type!r}) — "
                 f"ignored by renderer; consider removing",
+                check_name=CHECK_NAME,
+            )
+
+        # speaker_id — required on every quote when target_type is
+        # transcript; references speakers[*].id on the same artifact.
+        # Structural attribution; renderer surfaces the matched speaker
+        # as a Speaker row in the verification block.
+        if ctx.target_type == "transcript":
+            sid = q.get("speaker_id")
+            if not sid:
+                yield Issue(
+                    ctx.rel, "error",
+                    f"quotes[{i}] ({q.get('id')!r}): missing required "
+                    f"'speaker_id' (required on transcript artifacts; "
+                    f"references one of speakers[*].id on this artifact)",
+                    check_name=CHECK_NAME,
+                )
+            elif sid not in speaker_ids:
+                yield Issue(
+                    ctx.rel, "error",
+                    f"quotes[{i}] ({q.get('id')!r}): speaker_id {sid!r} "
+                    f"not in speakers[].id "
+                    f"({sorted(s for s in speaker_ids if s)})",
+                    check_name=CHECK_NAME,
+                )
+        elif ctx.target_type is not None and q.get("speaker_id"):
+            yield Issue(
+                ctx.rel, "warn",
+                f"quotes[{i}] ({q.get('id')!r}): speaker_id set on a "
+                f"non-transcript artifact (target_type "
+                f"{ctx.target_type!r}) — ignored by renderer; "
+                f"consider removing",
                 check_name=CHECK_NAME,
             )
 

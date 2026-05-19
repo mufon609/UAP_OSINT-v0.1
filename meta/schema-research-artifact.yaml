@@ -477,7 +477,7 @@ entry_lifecycle_fields:
 
 quote_entry:
   required: [text, source]
-  optional: [significance, context, observation_type, category, statement_date, attestation_tier, attestor_path]
+  optional: [significance, context, observation_type, category, statement_date, attestation_tier, attestor_path, speaker_id]
   observation_type_values: [direct, relayed]
   attestation_tier_values:
     - sworn-oath
@@ -527,6 +527,17 @@ quote_entry:
   #   ordering"). Populate whenever the source attests a date; quotes
   #   from legitimately undated material (some location quotes, some
   #   reference documents) may omit the field.
+  # speaker_id: references speakers[*].id on the same artifact.
+  #   Required on every quote when target_node type is `transcript`
+  #   (enforced by scripts/checks/quotes.py) — structural attribution
+  #   of every transcript quote to one of the artifact's declared
+  #   speakers. Renderer surfaces the matched speaker's name +
+  #   node_link as a Speaker row in the verification block, distinct
+  #   from `context` which carries circumstance prose only
+  #   (venue, format, neighboring exchange). The speakers[] table is
+  #   the source of truth for who participated; `speaker_id` is the
+  #   per-quote pointer into it. Ignored on non-transcript artifacts
+  #   (renderer omits the Speaker row).
 
 quote_source:
   required: [path, location]

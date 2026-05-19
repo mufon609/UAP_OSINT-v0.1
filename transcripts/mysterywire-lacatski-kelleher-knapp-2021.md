@@ -51,6 +51,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to George Knapp's framing question about DoD spokesperson statements that the $22M AAWSAP funding had "nothing to do with UFOs", 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [0:39]–[1:23] |
@@ -63,6 +64,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing his answer to Knapp on the UFO scope of AAWSAP, describing the program's documentary and database deliverables, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [1:24]–[2:06] |
@@ -75,6 +77,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Knapp's clarification question on the difference between AAWSAP and AATIP after the New York Times and other major media reported the $22M went to AATIP, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [2:22]–[3:19] |
@@ -87,6 +90,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski explaining how the AAWSAP/AATIP press mix-up originated, attributing it to the program's closed-program compartmentation rather than to authors or media personalities, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [3:20]–[3:55] |
@@ -99,6 +103,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. Colm Kelleher ([`/people/colm-kelleher`]) |
 | Attributed to | Kelleher responding to Knapp's question about the BAASS operation — how many people were hired, in what time frame, and what they did, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [4:26]–[5:14] |
@@ -111,6 +116,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. Colm Kelleher ([`/people/colm-kelleher`]) |
 | Attributed to | Kelleher continuing his answer to Knapp on the BAASS staffing profile during the 2008-2009 hiring period, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [5:30]–[6:07] |
@@ -123,6 +129,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. Colm Kelleher ([`/people/colm-kelleher`]) |
 | Attributed to | Kelleher describing the BAASS organization's scale and security infrastructure during the AAWSAP contract execution period, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [6:29]–[7:14] |
@@ -135,6 +142,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. Colm Kelleher ([`/people/colm-kelleher`]) |
 | Attributed to | Kelleher crediting Lacatski as the Washington-D.C.-side enabler of BAASS during a reflection on the 24-month BAASS buildup, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [7:36]–[7:51] |
@@ -147,6 +155,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski responding to Knapp on the 14-month DoD pre-publication review process for "Skinwalkers at the Pentagon", 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [13:30]–[13:57] |
@@ -159,6 +168,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski continuing his answer to Knapp on the mechanics of the DoD pre-publication review, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [14:02]–[14:36] |
@@ -171,6 +181,7 @@ Related: [`/people/james-lacatski`] [`/people/colm-kelleher`] [`/people/george-k
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. Colm Kelleher ([`/people/colm-kelleher`]) |
 | Attributed to | Kelleher's closing comment on the book's coverage of the AAWSAP/BAASS program, 2021-10-12 |
 | Source | [archived source](../sources/transcripts/mysterywire-lacatski-kelleher-knapp-2021-downloaded.md) |
 | Location | [15:56]–[16:19] |

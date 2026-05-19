@@ -70,6 +70,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 13 |
@@ -82,6 +83,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 13 |
@@ -94,6 +96,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 13 |
@@ -106,6 +109,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 13 |
@@ -118,6 +122,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 13 |
@@ -130,6 +135,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 13 |
@@ -142,6 +148,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -154,6 +161,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -166,6 +174,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -178,6 +187,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -190,6 +200,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -202,6 +213,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -214,6 +226,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -226,6 +239,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -238,6 +252,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -250,6 +265,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -262,6 +278,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -274,6 +291,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 14 |
@@ -286,6 +304,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | opening statement, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 15 |
@@ -298,6 +317,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Chairman Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 16 |
@@ -310,6 +330,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Chairman Grothman, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 16 |
@@ -322,6 +343,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Burchett, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 20 |
@@ -334,6 +356,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Burchett, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 21 |
@@ -346,6 +369,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Burchett, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 21 |
@@ -358,6 +382,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 23 |
@@ -370,6 +395,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Raskin, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 23 |
@@ -382,6 +408,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Moskowitz, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 25 |
@@ -394,6 +421,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Frost, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 29 |
@@ -406,6 +434,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Biggs, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 35 |
@@ -418,6 +447,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 41 |
@@ -430,6 +460,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 41 |
@@ -442,6 +473,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 41 |
@@ -454,6 +486,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 41 |
@@ -466,6 +499,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 42 |
@@ -478,6 +512,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 42 |
@@ -490,6 +525,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Langworthy, 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 42 |
@@ -502,6 +538,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Raskin (second round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 46 |
@@ -514,6 +551,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Burchett (second round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 47 |
@@ -526,6 +564,7 @@ Fravor's opening statement — his service as retired Commander in the United St
 
 | Field | Value |
 |---|---|
+| Speaker | David Fravor ([`/people/david-fravor`]) |
 | Attributed to | Q&A with Representative Burchett (second round), 2023-07-26 |
 | Source | [archived source](../sources/government/congress-gov-house-hearing-transcript-20230726.pdf) |
 | Location | p. 48 |

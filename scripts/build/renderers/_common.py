@@ -213,13 +213,17 @@ def _manifest_sha256_for(path):
 # ============================================================================
 
 def _render_attribution_block(quote, artifact):
-    """Render the attribution table for a quote — Attributed-to / Source /
-    Location. Composes an Attributed-to line from quote.context (when set)
-    and quote.statement_date (when set); skips the date append if it
-    already appears in the context string. The block carries no
-    verification marker — confirmation against the underlying source is
-    a precondition for inclusion (enforced by validate.py's verbatim-quote
-    check), not a rendered claim. See meta/conventions.md."""
+    """Render the attribution table for a quote — Speaker / Attributed-to /
+    Source / Location. When ``quote.speaker_id`` is set (transcript
+    artifacts), looks up the matching ``artifact.speakers[*].id`` entry
+    and emits a Speaker row carrying the speaker's name + optional
+    backtick-bracket node_link. Composes an Attributed-to line from
+    quote.context (when set) and quote.statement_date (when set); skips
+    the date append if it already appears in the context string. The
+    block carries no verification marker — confirmation against the
+    underlying source is a precondition for inclusion (enforced by
+    validate.py's verbatim-quote check), not a rendered claim. See
+    meta/conventions.md."""
     ctx = quote.get("context") or ""
     date = quote.get("statement_date") or ""
     if date and date in ctx:
@@ -232,10 +236,28 @@ def _render_attribution_block(quote, artifact):
     src_link = f"[archived source](../sources/{src_path})" if src_path else ""
     loc = src.get("location") or ""
 
+    speaker_cell = ""
+    sid = quote.get("speaker_id")
+    if sid:
+        speakers = artifact.get("speakers") or []
+        matched = next(
+            (s for s in speakers if isinstance(s, dict) and s.get("id") == sid),
+            None,
+        )
+        if matched:
+            name = matched.get("name") or ""
+            node_link = matched.get("node_link") or ""
+            if name and node_link:
+                speaker_cell = f"{name} ([`{node_link}`])"
+            else:
+                speaker_cell = name or node_link
+
     rows = [
         "| Field | Value |",
         "|---|---|",
     ]
+    if speaker_cell:
+        rows.append(f"| Speaker | {speaker_cell} |")
     if attributed_to:
         rows.append(f"| Attributed to | {attributed_to} |")
     if src_link:

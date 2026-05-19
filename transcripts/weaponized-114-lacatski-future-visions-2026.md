@@ -66,6 +66,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 explaining the early origins of the DIA UFO interest that became AAWSAP, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [7:42]–[8:00] |
@@ -78,6 +79,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 framing the controlled-disclosure structure of the AAWSAP-era information, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [8:20]–[8:42] |
@@ -90,6 +92,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 responding to George's framing of how he and Stratton compared notes at DIA, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [9:13]–[9:43] |
@@ -102,6 +105,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 responding to George's framing of his "no religious type beliefs going into this", 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [11:14]–[11:37] |
@@ -114,6 +118,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 walking through his pre-AAWSAP DOE / naval reactors background, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [12:49]–[13:08] |
@@ -126,6 +131,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 responding to Corbell's research into his University of Tennessee / Oak Ridge torsatron thesis, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [14:34]–[15:05] |
@@ -138,6 +144,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 explaining the four-book Kona Blue lineage, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [17:42]–[18:22] |
@@ -150,6 +157,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 explaining the classified status of the underlying program versus the unclassified release, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [19:00]–[19:17] |
@@ -162,6 +170,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 responding to Corbell's framing of the AAWSAP "institutional argument" that followed the data "into the taboo", 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [20:20]–[20:57] |
@@ -174,6 +183,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 closing his framing of the four-book controlled-disclosure structure, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [30:14]–[30:34] |
@@ -186,6 +196,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Jeremy Corbell ([`/people/jeremy-corbell`]) |
 | Attributed to | Jeremy in WEAPONIZED EP 114 asking Lacatski directly about the Pax River facility Rep. Burchett had referenced, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [33:51]–[34:32] |
@@ -198,6 +209,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 responding to Corbell's question of whether Tic Tac is "ours" 22 years later, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [1:00:48]–[1:01:07] |
@@ -210,6 +222,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 directly answering Corbell on whether the 2004 Tic Tac is US technology, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [1:02:08]–[1:02:30] |
@@ -222,6 +235,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | George Knapp ([`/people/george-knapp`]) |
 | Attributed to | George in WEAPONIZED EP 114 asking Lacatski to summarize the Thread 3 / Russian-files content in the new book, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [1:03:54]–[1:04:46] |
@@ -234,6 +248,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 explaining the editorial process for the four books, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [16:52]–[17:07] |
@@ -246,6 +261,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 summarizing the four-book content, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [28:50]–[29:16] |
@@ -258,6 +274,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 responding to Corbell's question whether he is "happy now that the four books are done with what you've been able to share", 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [29:31]–[29:58] |
@@ -270,6 +287,7 @@ Other names: [`/people/colm-kelleher`] [`/people/harry-reid`] [`/people/dylan-bo
 
 | Field | Value |
 |---|---|
+| Speaker | Dr. James Lacatski ([`/people/james-lacatski`]) |
 | Attributed to | Lacatski in WEAPONIZED EP 114 framing the structural future of Kona Blue, 2026-04-08 |
 | Source | [archived source](../sources/transcripts/weaponized-114-lacatski-future-visions-2026-downloaded.md) |
 | Location | [23:26]–[23:48] |

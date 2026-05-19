@@ -114,6 +114,7 @@ speakers:
   note: Anonymous Subcommittee staff member; one brief response in the closing exchange about handling of materials presented by the audience.
 quotes:
 - id: q1
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'Thank you, Chairwoman Gillibrand, Ranking Member Ernst, and distinguished members of the subcommittee. It is a privilege to be here today to testify on the Defense -- Defense''s efforts to address unidentified anomalous phenomena.
@@ -125,6 +126,7 @@ quotes:
   significance: Kirkpatrick's opening statement begins; the transcript stenographer captured his self-correction "the Defense -- Defense's efforts" verbatim
   context: Kirkpatrick oral statement opening
 - id: q2
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'AARO has accomplished much in the last nine months since it was established. The AARO team of more than three dozen experts is organized around four functional areas: operations, scientific research, integrated analysis, and strategic communications.
@@ -136,6 +138,7 @@ quotes:
   significance: Kirkpatrick describes AARO's organizational structure — four functional areas including a strategic communications function
   context: Kirkpatrick oral statement
 - id: q3
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'In the nine months since AARO''s establishment we have taken important steps to involve and improve UAP data collection, standardize the department''s UAP internal reporting requirements, and implement a framework for rigorous scientific and intelligence analysis, allowing us to resolve cases in a systematic and prioritized manner.
@@ -147,6 +150,7 @@ quotes:
   significance: Kirkpatrick summarizes AARO's first-nine-months work program — data collection, internal reporting standardization, framework for analysis
   context: Kirkpatrick oral statement
 - id: q4
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'It is important to note, however, AARO is the culmination of decades of DOD, intelligence community, and congressionally-directed efforts to successfully resolve UAP encountered first and foremost by U.S. military personnel, specifically Navy and Air Force pilots.
@@ -158,6 +162,7 @@ quotes:
   significance: Kirkpatrick situates AARO in lineage of decades of DOD/IC/congressionally-directed UAP resolution work; specifies Navy and Air Force pilots as primary witness population
   context: Kirkpatrick oral statement
 - id: q5
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'However, it would be naive to believe that the resolution of all UAP can be solely accomplished by the DOD and IC alone. We will need to prioritize collection and leverage authorities for monitoring all domains within the continental United States.
@@ -169,6 +174,7 @@ quotes:
   significance: Kirkpatrick acknowledges DOD/IC alone are insufficient; flags continental-U.S. monitoring authorities as a needed extension
   context: Kirkpatrick oral statement
 - id: q6
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'I want to underscore today that only a very small percentage of UAP reports display signatures that could reasonably be described as anomalous. The majority of unidentified objects reported to AARO demonstrate mundane characteristics of balloons, unmanned aerial systems, clutter, natural phenomena, or other readily explainable sources.
@@ -180,6 +186,7 @@ quotes:
   significance: Kirkpatrick characterizes the AARO case-resolution distribution — only a very small percentage anomalous; majority resolve to balloons, drones, clutter, natural phenomena
   context: Kirkpatrick oral statement
 - id: q7
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'Without sufficient data we are unable to reach defendable conclusions that meet the high scientific standards we set for resolution and I will not close a case that I cannot defend the conclusions of.
@@ -191,6 +198,7 @@ quotes:
   significance: Kirkpatrick's evidentiary discipline — will not close cases without defendable conclusions; sets the data-quality threshold for case resolution
   context: Kirkpatrick oral statement
 - id: q8
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'In other words, AARO''s mission is to turn UAP into SEP, somebody else''s problem.
@@ -202,6 +210,7 @@ quotes:
   significance: Kirkpatrick's rhetorical framing of AARO's hand-off mission — readily explainable objects go to intelligence, law enforcement, or operational safety communities
   context: Kirkpatrick oral statement
 - id: q9
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'In doing so AARO is approaching these cases with the highest level of objectivity and analytic rigor. This includes physically testing and employing, modeling, and simulation to validate our analyses and underlying theories, then peer reviewing those results within the U.S. government, industry partners, and appropriately cleared academic institutions before reaching any conclusions.
@@ -213,6 +222,7 @@ quotes:
   significance: Kirkpatrick describes AARO's analytic-rigor protocol — physical testing, modeling, simulation, peer review across government, industry, cleared academia
   context: Kirkpatrick oral statement
 - id: q10
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'I should also state clearly for the record that in our research AARO has found no credible evidence thus far of extraterrestrial activity, off world technology, or objects that defy the known laws of physics.
@@ -224,6 +234,7 @@ quotes:
   significance: Kirkpatrick's on-record statement — AARO has found no credible evidence of extraterrestrial activity, off-world technology, or objects defying the known laws of physics; the most-cited single line from this hearing in subsequent press and policy discussion
   context: Kirkpatrick oral statement
 - id: q11
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'For those few cases that have leaked to the public previously and subsequently commented on by the U.S. government I encourage those who hold alternative theories or views to submit your research to credible peer-reviewed scientific journals. AARO is working very hard to do the same. That is how science works, not by blog or social media.
@@ -235,6 +246,7 @@ quotes:
   significance: Kirkpatrick's framing of the public-discourse standard — peer-reviewed journals, not blog or social media; commits AARO to the same standard
   context: Kirkpatrick oral statement
 - id: q12
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'However, AARO''s work will take time if we are committed to do it right. It means adhering to the scientific method and the highest standards of research integrity. It means being methodical and scrupulous. It means withholding judgment in favor of evidence.
@@ -246,6 +258,7 @@ quotes:
   significance: Kirkpatrick's closing standards commitment — scientific method, research integrity, methodical and scrupulous, withholding judgment in favor of evidence
   context: Kirkpatrick oral statement closing
 - id: q13
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'Over half, about 52 percent, of what has been reported to us are round or spheres. The rest of those break out into all kinds of different other shapes.
@@ -257,6 +270,7 @@ quotes:
   significance: Kirkpatrick's public morphology breakdown — about 52 percent of UAP reports are round or spheres
   context: Kirkpatrick chart presentation following oral statement
 - id: q14
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'In the middle what we have done is reduce the most typically reported UAP characteristics to these fields, mostly round, mostly one to four meters, white, silver, translucent, metallic 10,000 to 30,000 feet with apparent velocities from stationary to Mach two.
@@ -268,6 +282,7 @@ quotes:
   significance: Kirkpatrick's typical-UAP-signature summary from the trend chart — round, 1–4 meters, white/silver/translucent/metallic, 10K–30K feet, stationary to Mach 2
   context: Kirkpatrick chart presentation
 - id: q15
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'So as of this week we are tracking over -- a total of 650 cases.
@@ -279,6 +294,7 @@ quotes:
   significance: Kirkpatrick's case-load count at the time of the hearing — 650 total cases, up from 366 reported in January
   context: Q&A with Gillibrand on case totals
 - id: q16
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'I have an intelligence community team made up of intelligence analysts and I have an S&T team made up of scientists and engineers and the people that actually build a lot of these sensors or physicists because if you are a physicist you can do anything and -- but they are not associated with the intel community. They are not intel officers. They look at this through the lens of the sensor of what the data says.
@@ -290,6 +306,7 @@ quotes:
   significance: Kirkpatrick's red-team / blue-team description — IC analysts as one team, scientists/engineers/physicists as the other; physicists deliberately not embedded in the intel community
   context: Q&A with Gillibrand on the analytic process
 - id: q17
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'That comes back to me. I review it, we make a determination, and I will sign off one way or the other and then that will go out as the case determination.
@@ -301,6 +318,7 @@ quotes:
   significance: Kirkpatrick describes the closure-decision step in the five-step process — the director personally signs off on each case determination after senior technical advisory group peer review
   context: Q&A with Gillibrand on the analytic process
 - id: q18
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'Now, I think it is prudent to say of the -- of the cases that are showing some sort of advanced technical signature of which we are talking single percentages of the entire population of cases we have. I am concerned about what that nexus is and I have indicators that some are related to foreign capabilities.
@@ -312,6 +330,7 @@ quotes:
   significance: Kirkpatrick characterizes the foreign-nexus signal — single-digit percentage of cases show advanced technical signatures and he has indicators some are related to foreign capabilities
   context: Q&A with Senator Ernst on China and Russia advanced technology
 - id: q19
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'The adversary is not waiting. They are advancing and they are advancing quickly. If I were to put on some of my old hats I would tell you they are less risk averse at technical advancement than we are. They are just willing to try things and see if it works.
@@ -323,6 +342,7 @@ quotes:
   significance: Kirkpatrick's adversary-pace characterization — less risk averse, willing to try things; framed via his prior intel-officer assignments
   context: Q&A with Senator Ernst
 - id: q20
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'Are there capabilities that could be employed against us in both and ISR and a weapons fashion? Absolutely. Do I have evidence that they are doing it in these cases? No, but I have concerning indicators.
@@ -334,6 +354,7 @@ quotes:
   significance: Kirkpatrick's conclusion of the foreign-nexus discussion — concerning indicators short of evidence; ISR and weapons capability framings
   context: Q&A with Senator Ernst
 - id: q21
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'So let me start with my relationship with the commands are very good. I just came back from sitting down with General VanHerck and all the all the J staff out at NORTHCOM a couple weeks ago talking through exactly what we need to do to help them get their arms around this.
@@ -345,6 +366,7 @@ quotes:
   significance: Kirkpatrick references recent NORTHCOM coordination with General VanHerck and the J staff — describes the working relationship with the geographic combatant command responsible for North American airspace
   context: Q&A with Senator Rosen on NORTHCOM, NORAD, and SPACECOM coordination
 - id: q22
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'Guidance from the Joint Staff, I think, goes out maybe this week, maybe next week, that we have been working with them for some months that does exactly what I just said. It gives them timelines. It gives them requirements. It gives them here is all the data you have to have and you have got to retain it.
@@ -356,6 +378,7 @@ quotes:
   significance: Kirkpatrick previews imminent Joint Staff guidance to commands and services — timelines, requirements, data retention rules for UAP reporting
   context: Q&A with Senator Rosen
 - id: q23
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'There are some authorities that we need. We currently are operating under Title 10 authorities but we have good relationships across the other agencies. But having additional authorities for collection tasking, counter-intelligence --
@@ -367,6 +390,7 @@ quotes:
   significance: Kirkpatrick states AARO needs additional collection-tasking and counter-intelligence authorities — Gillibrand immediately offered to author legislative language
   context: Q&A with Senator Rosen and Senator Gillibrand on authorities
 - id: q24
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'So USDINS and the -- I currently report to USDINS until they come up with the plan for how they are going to implement legislation.
@@ -378,6 +402,7 @@ quotes:
   significance: Kirkpatrick reports the FY2023 NDAA reporting-chain change has not yet been implemented — he is still reporting to USD(I&S) pending DOD and DNI implementation guidance
   context: Q&A with Gillibrand on AARO's logistics and reporting structure
 - id: q25
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'I have. We submitted the first version of that before Christmas.
@@ -389,6 +414,7 @@ quotes:
   significance: Kirkpatrick confirms AARO submitted a first version of the publicly discoverable safe disclosure website for approval before Christmas 2022 — but as of the hearing it was still under review with no estimate from his superiors
   context: Q&A with Gillibrand on the safe disclosure portal
 - id: q26
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'So I would like to, first, say thank you all very much for referring the witnesses that you have thus far to us. I appreciate that. We have brought in nearly two dozen so far. It has been very helpful.
@@ -400,6 +426,7 @@ quotes:
   significance: Kirkpatrick reports AARO has brought in nearly two dozen witnesses referred by Congress as of the hearing — quantifies the congressional referral pipeline
   context: Q&A with Gillibrand on witness referrals and the safe disclosure portal
 - id: q27
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'When the -- when the objects were first detected I got called by Joint Staff leadership to come in late one night to review events as they were unfolding and to give them an assessment based on what we knew at that time.
@@ -411,6 +438,7 @@ quotes:
   significance: Kirkpatrick describes his role in the early-2023 PRC balloon shoot-downs — called in late at night by Joint Staff leadership for an assessment
   context: Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America
 - id: q28
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'Beyond that, the response I would have to -- I would have to refer you back to the White House for the decision on how they did the response. We did not play a role in what you would respond other than that initial advice on what we are seeing and how we are seeing it.
@@ -422,6 +450,7 @@ quotes:
   significance: Kirkpatrick states AARO did not play a role in DOD's response to the recent UAP incidents over North America other than initial advice — confirms Gillibrand's framing that Pentagon leadership did not turn to AARO to play a leading role in advising the combatant commander; refers further questions back to the White House
   context: Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America
 - id: q29
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'So I would like to lay down here is one of my -- sort of my mission and my goal and my vision here. So the vision is at one point -- at some point in the future you should not need an AARO. If I am successful in what I am doing we should be able to normalize everything that we are doing into existing processes, functions, agencies, and organizations and make that part of their mission and their role.
@@ -433,6 +462,7 @@ quotes:
   significance: Kirkpatrick's stated vision — at some point in the future you should not need an AARO; the office should normalize its work into existing processes, functions, agencies, and organizations
   context: Q&A with Senator Ernst on avoiding redundancy with existing agencies
 - id: q30
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'We are bringing in all of our interagency partners. So NASA is providing a liaison for us. I have FBI liaison. I have OSI liaison. I have service liaisons. Half of my staff come from the IC. Half of my staff come from other scientific and technical backgrounds. I have DOE.
@@ -444,6 +474,7 @@ quotes:
   significance: Kirkpatrick describes AARO's interagency liaison structure — NASA, FBI, OSI, services, DOE; staff split half-IC / half-S&T
   context: Q&A with Senator Ernst on interagency coordination
 - id: q31
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'One of the key tenets that we are trying to do in our science plan is understand what those signatures are. So we get all the raw, for example, radar data prior to the scrubbing and filtering to allow it to enter into our weapon systems and our detection systems.
@@ -455,6 +486,7 @@ quotes:
   significance: Kirkpatrick describes the AARO sensor-data approach — pre-filter raw radar data to find UAP signatures hidden by weapon-system filters
   context: Q&A with Gillibrand on sensor filters and raw surveillance data
 - id: q32
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'In 1979 Carl Sagan said extraordinary claims require extraordinary evidence. I would go one step further and I would say extraordinary claims require not only extraordinary evidence but extraordinary science and so how do you do that?
@@ -466,6 +498,7 @@ quotes:
   significance: Kirkpatrick's scientific-method framing — extends the Sagan formulation to require not only extraordinary evidence but extraordinary science as the standard for AARO conclusions
   context: Q&A with Gillibrand on academic community collaboration and the NASA UAP independent study
 - id: q33
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'Where NASA comes in and the study that they are doing, which I am supporting, is really looking at the unclassified data sources that might be used to augment our classified data sources to understand if there is a signature there we can pull on. So very similar to the radars but civil capability.
@@ -477,6 +510,7 @@ quotes:
   significance: Kirkpatrick describes NASA UAP independent study scope — unclassified data sources to augment AARO's classified data; Kirkpatrick says he is supporting it
   context: Q&A with Gillibrand on academic community collaboration
 - id: q34
+  speaker_id: s1
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'Thank you very much for allowing us to come and share a little bit of insight into what AARO is up to and what we are doing. I hope to be able to share a whole lot more in the future. We have a lot of work to do. So if you do not hear from me outside it is because we have got a lot of work to do.
@@ -488,6 +522,7 @@ quotes:
   significance: Kirkpatrick's closing remarks — frames forward public-engagement cadence; flags work-load against communications availability
   context: Kirkpatrick closing remarks
 - id: q35
+  speaker_id: s5
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'I drove 600 miles to come here. I -- and I presented a book to David Spergel, who I know is associated with the gentleman here.
@@ -499,6 +534,7 @@ quotes:
   significance: First audience-member speaker (Marine veteran) opens the post-hearing exchange; references David Spergel, the chair of the NASA UAP independent study
   context: Audience member exchange following adjournment of formal Q&A; this audience speaker is anonymized in the transcript
 - id: q36
+  speaker_id: s5
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'I have on my phone three different examples of glowing dots flying in circles or going over Sandia Labs and Kirkland Air Force Base.
@@ -510,6 +546,7 @@ quotes:
   significance: Second audience-member speaker (Albuquerque resident) describes UAP loitering over Sandia Labs and Kirtland Air Force Base; transcript renders "Kirtland" phonetically as "Kirkland"
   context: Audience member exchange following adjournment of formal Q&A; this audience speaker is anonymized in the transcript
 - id: q37
+  speaker_id: s2
   added_date: '2026-04-28'
   statement_date: '2023-04-19'
   text: 'My office can be a clearinghouse for this information.

@@ -65,6 +65,7 @@ speakers:
   note: Former BAASS program manager; co-author of "Skinwalkers at the Pentagon"; second guest in the interview. Auto-caption renders his first name as "collin" / "column" — see naming_quirks.
 quotes:
 - id: q1
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -75,6 +76,7 @@ quotes:
   significance: Lacatski's direct on-record response to the DoD spokesperson framing that AAWSAP "had nothing to do with UFOs" — Lacatski says the program was completely UFO-related, explains the Statement of Objectives RFP format that obscured the program's content to anyone reading only the contract without the underlying Bigelow Aerospace Advanced Space Studies (BAASS) proposal, and points to the BAASS proposal's explicit mention of a "worldwide database of advanced aerospace vehicles" among its topics
   context: Lacatski responding to George Knapp's framing question about DoD spokesperson statements that the $22M AAWSAP funding had "nothing to do with UFOs"
 - id: q2
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -85,6 +87,7 @@ quotes:
   significance: Lacatski's deliverables claim — over 100 documents required to be reported to DIA were UFO-related; the AAWSAP database is "probably the largest UFO database that exists in the world" and is "currently being used by the US military" as of October 2021. Closes with the categorical affirmation "so yes it was completely a ufo project."
   context: Lacatski continuing his answer to Knapp on the UFO scope of AAWSAP, describing the program's documentary and database deliverables
 - id: q3
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -95,6 +98,7 @@ quotes:
   significance: Lacatski's structural distinction between AAWSAP (DIA, $22M, main contract + subcontracts, military and civilian UFO coverage, "massive database") and AATIP (Pentagon, zero-funded, no contract, specific military encounters with film). Resolves the long-running NYT-2017-vs-actual-funding-trail confusion by attesting the two programs as substantively distinct organizations with the AATIP name as a nickname used "for certain security reasons" detailed in the book. Auto-caption typos preserved verbatim (atip / asap / osap / atep / "a tip").
   context: Lacatski responding to Knapp's clarification question on the difference between AAWSAP and AATIP after the New York Times and other major media reported the $22M went to AATIP
 - id: q4
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -105,6 +109,7 @@ quotes:
   significance: Lacatski's security-posture attestation — AAWSAP was "not an official SAP but a closed program"; within his own DIA office only leadership knew the contract was being run; staff had "no idea whatsoever" the program existed. Frames the AAWSAP/AATIP press confusion as a consequence of compartmentation rather than deliberate misdirection. Direct first-person attestation by the program's named director.
   context: Lacatski explaining how the AAWSAP/AATIP press mix-up originated, attributing it to the program's closed-program compartmentation rather than to authors or media personalities
 - id: q5
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -115,6 +120,7 @@ quotes:
   significance: Kelleher's program-timeline attestation — AAWSAP ran September 2008 to late 2010 (24-month contract); Kelleher hired November 2008; ~300 telephone interviews + ~100 face-to-face interviews between November 2008 and April 2009 to recruit "ufo focused investigators." Establishes the program's date bounds and recruitment intensity directly from the BAASS program manager.
   context: Kelleher responding to Knapp's question about the BAASS operation — how many people were hired, in what time frame, and what they did
 - id: q6
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -125,6 +131,7 @@ quotes:
   significance: Kelleher's BAASS team-composition attestation — PhD-level physics and biology scientists, master's-level scientists, technicians, database analysts, military intelligence personnel, security officers, plus a 20-year AFOSI veteran as program manager. Establishes the staffing profile of the BAASS organization that executed AAWSAP under DIA's contract.
   context: Kelleher continuing his answer to Knapp on the BAASS staffing profile during the 2008-2009 hiring period
 - id: q7
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -135,6 +142,7 @@ quotes:
   significance: Kelleher's team-size + scope attestation — by May 2009 BAASS had a team of approximately 50 people; the 24-month contract included security infrastructure (facility security clearances "sufficient for inspections"), hiring and training, plus execution of multiple programs side by side. Frames the operational scope as "pretty extraordinary" for a 24-month government contract.
   context: Kelleher describing the BAASS organization's scale and security infrastructure during the AAWSAP contract execution period
 - id: q8
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -145,6 +153,7 @@ quotes:
   significance: Kelleher's attestation about Lacatski's Washington D.C. role — Lacatski's input "in washington dc and greasing the wheels" enabled BAASS to assemble a large organization "focused only on ufo investigations." Statement BY Kelleher ABOUT Lacatski's program-director function; quotes by Kelleher about Lacatski belong on Kelleher's own (unbuilt) person artifact and as a cross-reference on Lacatski's structured surfaces — captured here for transcript completeness.
   context: Kelleher crediting Lacatski as the Washington-D.C.-side enabler of BAASS during a reflection on the 24-month BAASS buildup
 - id: q9
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -155,6 +164,7 @@ quotes:
   significance: Lacatski on the 14-month DoD pre-publication review process — "public release authority" obtained after rewrites and removals; constant communication with DoD reviewers framed as "very pleasant." Direct attestation that "Skinwalkers at the Pentagon" passed an official DoD release-authority review (auto-caption renders "got" as "gut").
   context: Lacatski responding to Knapp on the 14-month DoD pre-publication review process for "Skinwalkers at the Pentagon"
 - id: q10
+  speaker_id: s2
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |
@@ -165,6 +175,7 @@ quotes:
   significance: Lacatski extends the DoD-review account — pandemic-era off-site processing through secure channels handling the book "as if it had maybe top secret sci information in it" even though "it didn't"; multi-organization transfer for review and approval. Establishes the procedural shape of the pre-publication review process while attesting the book itself contained no TS/SCI material (per Lacatski).
   context: Lacatski continuing his answer to Knapp on the mechanics of the DoD pre-publication review
 - id: q11
+  speaker_id: s3
   added_date: '2026-05-17'
   statement_date: '2021-10-12'
   text: |

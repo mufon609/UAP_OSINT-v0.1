@@ -62,6 +62,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement opening, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 8 |
@@ -74,6 +75,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 9-37 |
@@ -86,6 +88,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 9 |
@@ -98,6 +101,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 9-10 |
@@ -110,6 +114,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 10 |
@@ -122,6 +127,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 11 |
@@ -134,6 +140,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 12 |
@@ -146,6 +153,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 13 |
@@ -158,6 +166,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 13 |
@@ -170,6 +179,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 13-14 |
@@ -182,6 +192,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 14 |
@@ -194,6 +205,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick oral statement closing, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 14-15 |
@@ -206,6 +218,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick chart presentation following oral statement, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 16 |
@@ -218,6 +231,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick chart presentation, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 16 |
@@ -230,6 +244,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on case totals, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 21 |
@@ -242,6 +257,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on the analytic process, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 22 |
@@ -254,6 +270,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on the analytic process, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 23 |
@@ -266,6 +283,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Senator Ernst on China and Russia advanced technology, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 26 |
@@ -278,6 +296,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Senator Ernst, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 27 |
@@ -290,6 +309,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Senator Ernst, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 27 |
@@ -302,6 +322,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Senator Rosen on NORTHCOM, NORAD, and SPACECOM coordination, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 29 |
@@ -314,6 +335,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Senator Rosen, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 30 |
@@ -326,6 +348,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Senator Rosen and Senator Gillibrand on authorities, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 31 |
@@ -338,6 +361,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on AARO's logistics and reporting structure, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 35 |
@@ -350,6 +374,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on the safe disclosure portal, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 36 |
@@ -362,6 +387,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on witness referrals and the safe disclosure portal, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 36 |
@@ -374,6 +400,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 38 |
@@ -386,6 +413,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on AARO's role in the recent UAP incidents over North America, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 38 |
@@ -398,6 +426,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Senator Ernst on avoiding redundancy with existing agencies, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 39 |
@@ -410,6 +439,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Senator Ernst on interagency coordination, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 40 |
@@ -422,6 +452,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on sensor filters and raw surveillance data, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 41 |
@@ -434,6 +465,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on academic community collaboration and the NASA UAP independent study, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 42 |
@@ -446,6 +478,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Q&A with Gillibrand on academic community collaboration, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 43-44 |
@@ -458,6 +491,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Sean Kirkpatrick ([`/people/sean-kirkpatrick`]) |
 | Attributed to | Kirkpatrick closing remarks, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 45 |
@@ -470,6 +504,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Audience Member |
 | Attributed to | Audience member exchange following adjournment of formal Q&A; this audience speaker is anonymized in the transcript, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 45 |
@@ -482,6 +517,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Audience Member |
 | Attributed to | Audience member exchange following adjournment of formal Q&A; this audience speaker is anonymized in the transcript, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 47 |
@@ -494,6 +530,7 @@ Related: [`/events/2023-04-19-sasc-aaro-hearing`] [`/documents/written-testimony
 
 | Field | Value |
 |---|---|
+| Speaker | Kirsten E. Gillibrand ([`/people/kirsten-gillibrand`]) |
 | Attributed to | Senator Gillibrand response to audience members, 2023-04-19 |
 | Source | [archived source](../sources/government/armed-services-senate-gov-sasc-aaro-transcript-20230419.pdf) |
 | Location | p. 48 |
