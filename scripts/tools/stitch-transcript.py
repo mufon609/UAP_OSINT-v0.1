@@ -11,8 +11,9 @@ The video-pipeline tooling produces three independent artifacts today:
   3. Identity baselines (detect-faces.py register output) — per-identity
      reference crops.
 
-The contributor has historically had to merge these three artifacts mentally
-when authoring transcript-artifact ``quotes[]``. This tool does the merge:
+This tool merges the three artifacts into a single speaker-labeled
+transcript, so authoring transcript-artifact ``quotes[]`` doesn't
+require manually cross-referencing them:
 
   - For each diarize segment, extracts a frame at the segment's midpoint.
   - Runs Haar-cascade face detection on the frame.

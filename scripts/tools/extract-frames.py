@@ -354,9 +354,8 @@ def write_index(
 # Default anchor fractions — sample 8 points spread across the full
 # video duration (5% / 15% / 25% / 35% / 50% / 65% / 80% / 95%). Covers
 # both early B-roll / title-card content and body interview content
-# regardless of length. The previous early-timestamp-only default
-# (0:15 / 0:30 / 1:00 / 2:00 / 5:00) wasted frames on intros for any
-# video longer than ~10 minutes.
+# regardless of video length; fixed-timestamp defaults would skew toward
+# intros on long videos and overshoot the end on short ones.
 DEFAULT_ANCHOR_FRACTIONS = [0.05, 0.15, 0.25, 0.35, 0.50, 0.65, 0.80, 0.95]
 
 
