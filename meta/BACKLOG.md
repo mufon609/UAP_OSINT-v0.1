@@ -298,3 +298,160 @@ the category-tuned-threshold failure mode.
 
 (b) is optional follow-up; (a) is the load-bearing work.
 
+### C29 — One source URL ↔ many archived artifacts: no schema model
+
+The manifest models `(url, path, format, sha256, …)` as a flat list of
+entries. Conceptually each entry is "this URL is archived at this
+path." The shape doesn't acknowledge that a single source URL can
+yield MULTIPLE archived artifacts of different formats — most
+commonly a video file plus a transcript derived from that file's
+audio (auto-caption pull, whisper transcription, contributor-
+transcribed clean text). Same source, multiple archived renderings,
+all needing manifest registration with their own paths and sha256s.
+
+The current state has three uncoordinated pieces of behavior:
+
+- **Schema** (`meta/schema.yaml::manifest_entry`) does not declare
+  URL uniqueness. Each entry is independent; the list shape permits
+  duplicates.
+- **`scripts/tools/manifest.py::cmd_add`** enforces URL uniqueness:
+  if any existing entry shares the URL, the call is a silent no-op
+  regardless of whether the supplied path differs. The CLI is
+  stricter than the schema.
+- **`scripts/tools/manifest.py::cmd_status`** returns the first match
+  on URL. If multiple entries share a URL, only the first surfaces;
+  the others are invisible to status / lookup workflows.
+
+The mismatch surfaces concretely in the video pipeline: a
+`transcribe.py` run registers `(url, format=transcript)`; the
+subsequent `download-video.py` run for the same URL tries to
+register `(url, format=video)` and is silently rejected by
+`cmd_add`. The video file lands on disk unregistered. No validator
+flags this — manifest integrity checks key on `path`, not on
+which-files-on-disk-have-no-entry.
+
+A workaround pattern would be tempting (allow duplicate URLs as long
+as paths differ) but ages poorly: dual-URL rows accumulate without
+a schema concept of "primary artifact vs. derivation," and
+downstream tooling (`cmd_status`, `cmd_usage`, `save_manifest`
+ordering, the verbatim-quote check's path → URL resolution) has no
+principled way to disambiguate.
+
+**The actual decision the investigation needs to make.** Where does
+the derivation relationship between artifacts live?
+
+1. **Inside one entry.** Make URL the key and let each entry carry
+   multiple archived artifacts — e.g., `artifacts: [{path, format,
+   sha256, derivation_note}, …]`. One URL → one entry. The schema
+   acknowledges that "the cited URL" is distinct from "the archived
+   renderings of what's at that URL." Citation resolution is by URL;
+   verification picks the right artifact by format.
+
+2. **Across entries with a derivation pointer.** Permit duplicate
+   URLs and add a per-entry `derived_from_path` field naming the
+   parent archived artifact. The transcript entry points at its
+   parent video entry; readers and tools can walk the derivation
+   chain. Schema gains a new optional field; URL uniqueness is
+   explicitly retired.
+
+3. **Outside the manifest entirely.** Treat the transcript as a
+   derived artifact whose "source URL" is the local video file path,
+   not the original YouTube URL. The transcript's manifest entry
+   carries a synthesized URL (or no URL). The original YouTube URL
+   appears only on the video entry. Asymmetric but mechanically
+   simple; the cost is that node citations of "the YouTube URL" no
+   longer resolve to the transcript file directly.
+
+4. **Forbid the dual-artifact pattern.** One archived artifact per
+   URL, full stop. Re-derive transcripts on demand from the video
+   file; never register the transcript in the manifest. Loses the
+   verbatim-quote-check substring property against the registered
+   transcript path.
+
+Each option has different implications for the verbatim-quote check
+(which resolves `source.path` on a quote to either a registered file
+or its `.txt` sibling), for `cmd_status` / `cmd_usage` semantics, for
+how nodes cite the underlying source, and for the
+`transcript_provenance` field's home (per-artifact vs. per-entry).
+
+**Investigation owes a decision on each surface before any
+implementation:** the schema definition of `manifest_entry`, the
+`manifest.py` commands (add / status / usage / orphans / missing),
+the build-pipeline tools that call `manifest.py add` (currently
+`download-video.py` and `transcribe.py`'s manual post-step), the
+verbatim-quote check's path resolution, and `meta/conventions.md`
+"Source preservation."
+
+**Out of scope for the investigation.** Picking one option without
+walking the other surfaces. The temptation is to soften `cmd_add`
+to permit duplicate URLs (option 2 lite, without the
+`derived_from_path` field) and call it a day — the BACKLOG entry
+exists explicitly to prevent that path, because the cluttered-
+manifest failure mode it produces would only become visible after
+several more dual-artifact sources accumulate.
+
+**Surfaced from:** the JRE #2194 Elizondo source-prep walkthrough.
+`transcribe.py` ran first (auto-caption pull) and registered the URL
+as `format: transcript`; the subsequent `download-video.py` run
+landed the 480p mp4 on disk but `cmd_add` no-op'd the registration
+attempt — visible only as a one-line `Already in manifest:` message
+in tool output, easy to miss. Pipeline B continues to work because
+the visual tools (`extract-frames.py`, `detect-faces.py`,
+`diarize-audio.py`, `stitch-transcript.py`) read the video from
+disk by path and never consult the manifest for it; the unregistered
+state surfaces only when a node tries to cite the video URL.
+
+### C30 — Source-prep orchestrator: single command for the full caption + video chain
+
+Preparing one YouTube source for a person node currently chains four
+to seven discrete tool invocations across two documented workflows:
+
+- **Caption pull** (`meta/sources-access.md` "YouTube"):
+  `extract-firefox-cookies.py` → `transcribe.py --cookies -` →
+  `manifest.py add ... --format transcript --transcript-provenance auto-caption`
+- **Video + speaker identity** (`scripts/tools/VIDEO-PIPELINE.md`):
+  `download-video.py` → `extract-frames.py anchor` →
+  `detect-faces.py detect` → contributor review → `detect-faces.py register`
+  (per identity, per baseline) → optional `diarize-audio.py` +
+  `stitch-transcript.py`
+
+The two workflows share three contributor-supplied parameters that
+MUST agree: the source URL, the kebab-case slug used for the
+transcript file (`{slug}-downloaded.md`), and the kebab-case slug
+used for the video file (`{slug}.mp4`). When the slugs drift, the
+slug-discovery downstream in `stitch-transcript.py` silently fails
+(it looks for `sources/transcripts/{slug}-downloaded.md` and
+`/tmp/diarize-{slug}/segments.csv` against the video stem). Cross-
+tool slug consistency is currently contributor discipline with no
+mechanical enforcement.
+
+An orchestrator script would take a URL and an output slug and
+invoke the right subset of tools in order, threading the same slug
+through each, surfacing the consent gate once, and emitting a single
+contributor-readable summary at the end. The investigation has to
+decide:
+
+- **Scope of the orchestrator.** Whole-pipeline (caption + video +
+  diarize + frames + detect + stitch) or caption-only-with-optional-
+  video-flag? The visual-baseline registration step is interactive
+  (contributor identifies which crop is which person); a pure
+  orchestrator can't auto-register baselines, only stop and prompt.
+- **Cookies surface.** Caption pull needs Firefox cookies via
+  `extract-firefox-cookies.py`; `download-video.py` uses
+  `--cookies-from-browser firefox` directly. The orchestrator
+  inherits both paths or unifies them.
+- **Failure-mode propagation.** Each step has its own non-zero exit
+  semantics. Orchestrator decides whether to abort on first failure
+  or attempt the rest of the pipeline and report a per-step status
+  summary.
+- **Where it lives.** A new `scripts/tools/prep-source.py` is the
+  most obvious home; alternatively the orchestration logic moves
+  into one of the existing tools (e.g., `download-video.py` gains
+  a `--with-captions` flag). The first preserves single-purpose-
+  per-tool; the second avoids a new entry point.
+
+**Surfaced from:** the JRE #2194 Elizondo source-prep walkthrough.
+The walkthrough ran each step manually to evaluate the pipeline; the
+slug-consistency requirement and the multi-tool consent gates
+emerged as the two friction points an orchestrator would close.
+
