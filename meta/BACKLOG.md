@@ -618,97 +618,270 @@ meta-linker agent's contract. (b) the optional audit aid retires —
 the meta-linker's own check is the audit. The convention text in
 `meta/conventions.md` still needs to exist as the agent's source.
 
-### C29 — One source URL ↔ many archived artifacts: no schema model
+### C29 — One source URL ↔ many archived artifacts: schema redesign to "artifacts under URL"
 
-The manifest models `(url, path, format, sha256, …)` as a flat list of
-entries. Conceptually each entry is "this URL is archived at this
-path." The shape doesn't acknowledge that a single source URL can
-yield MULTIPLE archived artifacts of different formats — most
-commonly a video file plus a transcript derived from that file's
-audio (auto-caption pull, whisper transcription, contributor-
-transcribed clean text). Same source, multiple archived renderings,
-all needing manifest registration with their own paths and sha256s.
+**Direction chosen (2026-05-19):** Option 1 — `manifest_entry` becomes
+`{url, artifacts: [{path, format, sha256, ...}, ...]}`. The schema
+gets a real model of "a URL has zero or more archived renderings of
+its content" instead of a flat list of (url, path) tuples where one
+URL can collide with another on dedup. The other three options
+considered (duplicate URLs + derivation pointer, manifest-external
+transcript paths, forbid dual-artifact) all leave the schema↔reality
+mismatch in place. Detailed evaluation in the investigation block
+below.
 
-The current state has three uncoordinated pieces of behavior:
+**Status:** investigation complete; implementation pending. This
+entry is the roadmap for landing Option 1. The investigation does
+not need to be re-walked, but the implementation phases each carry
+their own scoping work and should be confirmed with the contributor
+before landing.
 
-- **Schema** (`meta/schema.yaml::manifest_entry`) does not declare
-  URL uniqueness. Each entry is independent; the list shape permits
-  duplicates.
-- **`scripts/tools/manifest.py::cmd_add`** enforces URL uniqueness:
-  if any existing entry shares the URL, the call is a silent no-op
-  regardless of whether the supplied path differs. The CLI is
-  stricter than the schema.
-- **`scripts/tools/manifest.py::cmd_status`** returns the first match
-  on URL. If multiple entries share a URL, only the first surfaces;
-  the others are invisible to status / lookup workflows.
+---
 
-The mismatch surfaces concretely in the video pipeline: a
-`transcribe.py` run registers `(url, format=transcript)`; the
-subsequent `download-video.py` run for the same URL tries to
-register `(url, format=video)` and is silently rejected by
-`cmd_add`. The video file lands on disk unregistered. No validator
-flags this — manifest integrity checks key on `path`, not on
-which-files-on-disk-have-no-entry.
+#### Why this is important
 
-A workaround pattern would be tempting (allow duplicate URLs as long
-as paths differ) but ages poorly: dual-URL rows accumulate without
-a schema concept of "primary artifact vs. derivation," and
-downstream tooling (`cmd_status`, `cmd_usage`, `save_manifest`
-ordering, the verbatim-quote check's path → URL resolution) has no
-principled way to disambiguate.
+This is a **structural defect**, not a bug. The data model (flat
+list with implicit URL-uniqueness via CLI silent-dedup) does not
+match reality (URLs can yield multiple archived renderings — most
+commonly video + transcript). The misalignment produces three
+concrete failures today and inherits forward into everything built
+on top of the manifest:
 
-**The actual decision the investigation needs to make.** Where does
-the derivation relationship between artifacts live?
+1. **Active data loss.** Three video files on disk are silently
+   unregistered today (`jre-2194-elizondo-2024.mp4`,
+   `american-alchemy-barber-ufo-helicopter-2026-…mp4`,
+   `weaponized-038-lacatski-kelleher-2023-…mp4`). In each case
+   `transcribe.py` registered the URL as `format: transcript`
+   first; `download-video.py`'s subsequent `cmd_add` was silently
+   rejected. No validator flags this — manifest integrity checks
+   key on `path`, not on which-files-on-disk-have-no-entry.
+2. **Misleading status surfaces.** `cmd_status URL` returns the
+   first match only. Where two entries share a URL (the existing
+   Vimeo `lucistrust-rending-veils` case), the second is invisible
+   to status / lookup workflows.
+3. **Toolchain inheritance.** Every downstream surface built on the
+   manifest — the verifier-agent in **A2**, the schema↔CLI parity
+   mechanism in **C34**, every future workflow that touches
+   `manifest.py add` — inherits the implicit URL-uniqueness
+   assumption. Patching one surface (e.g., making `cmd_add` error
+   loudly instead of silent no-op) is a bandaid; the structural
+   model still doesn't match reality.
 
-1. **Inside one entry.** Make URL the key and let each entry carry
-   multiple archived artifacts — e.g., `artifacts: [{path, format,
-   sha256, derivation_note}, …]`. One URL → one entry. The schema
-   acknowledges that "the cited URL" is distinct from "the archived
-   renderings of what's at that URL." Citation resolution is by URL;
-   verification picks the right artifact by format.
+Production-readiness requires a coherent data model. Continuing to
+operate on the implicit-URL-uniqueness assumption while the schema
+and the corpus contradict it accumulates technical debt with each
+new dual-artifact source.
 
-2. **Across entries with a derivation pointer.** Permit duplicate
-   URLs and add a per-entry `derived_from_path` field naming the
-   parent archived artifact. The transcript entry points at its
-   parent video entry; readers and tools can walk the derivation
-   chain. Schema gains a new optional field; URL uniqueness is
-   explicitly retired.
+---
 
-3. **Outside the manifest entirely.** Treat the transcript as a
-   derived artifact whose "source URL" is the local video file path,
-   not the original YouTube URL. The transcript's manifest entry
-   carries a synthesized URL (or no URL). The original YouTube URL
-   appears only on the video entry. Asymmetric but mechanically
-   simple; the cost is that node citations of "the YouTube URL" no
-   longer resolve to the transcript file directly.
+#### What this blocks
 
-4. **Forbid the dual-artifact pattern.** One archived artifact per
-   URL, full stop. Re-derive transcripts on demand from the video
-   file; never register the transcript in the manifest. Loses the
-   verbatim-quote-check substring property against the registered
-   transcript path.
+- **A2** — Multi-agent decomposition. The verifier-agent / `manifest.py
+  add` contract depends on a coherent URL ↔ artifacts model. Without
+  C29, the verifier agent inherits the silent-no-op failure mode.
+- **C34** — Schema↔CLI parity check. The only known concrete
+  drift instance is the manifest URL-uniqueness gap. C34's
+  parity-mechanism question can't be designed against a single
+  drift instance that's still unresolved.
+- **Three currently-stranded video files.** Functional data-loss
+  bug actively producing failures. Backfilled as part of C29.
 
-Each option has different implications for the verbatim-quote check
-(which resolves `source.path` on a quote to either a registered file
-or its `.txt` sibling), for `cmd_status` / `cmd_usage` semantics, for
-how nodes cite the underlying source, and for the
-`transcript_provenance` field's home (per-artifact vs. per-entry).
+#### What this is blocked by
 
-**Investigation owes a decision on each surface before any
-implementation:** the schema definition of `manifest_entry`, the
-`manifest.py` commands (add / status / usage / orphans / missing),
-the build-pipeline tools that call `manifest.py add` (currently
-`download-video.py` and `transcribe.py`'s manual post-step), the
-verbatim-quote check's path resolution, and `meta/conventions.md`
-"Source preservation."
+Nothing. C29's investigation is complete; implementation can land
+at any time.
 
-**Out of scope for the investigation.** Picking one option without
-walking the other surfaces. The temptation is to soften `cmd_add`
-to permit duplicate URLs (option 2 lite, without the
-`derived_from_path` field) and call it a day — the BACKLOG entry
-exists explicitly to prevent that path, because the cluttered-
-manifest failure mode it produces would only become visible after
-several more dual-artifact sources accumulate.
+---
+
+#### Target shape
+
+Single-entry-per-URL schema. URL-level fields (status,
+archive_status, wayback_date, wayback_skip, note) stay at the top
+level. Per-artifact fields (format, path, sha256, archived_date,
+extraction_type, transcript_provenance) move into the artifacts
+list. Sketch:
+
+```yaml
+- url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  status: archived
+  archive_status: 1
+  artifacts:
+    - format: video
+      path: video/jre-2194-elizondo-2024.mp4
+      sha256: 7f3a...
+      archived_date: 2026-05-15
+    - format: transcript
+      path: transcripts/jre-2194-elizondo-2024-downloaded.md
+      sha256: e12c...
+      archived_date: 2026-05-14
+      transcript_provenance: auto-caption
+```
+
+A URL with one archived rendering carries an `artifacts: [...]`
+list of length one — no shape distinction between the
+"single-artifact" and "multi-artifact" cases (every entry has the
+same shape; cleaner for consumers).
+
+**Open detail (investigate at implementation time):** which fields
+belong at the URL level vs. the artifact level. `status` /
+`archive_status` / `wayback_date` apply to the URL (Wayback archives
+URLs, not local renderings). `format` / `path` / `sha256` /
+`archived_date` apply to each rendering. `extraction_type` and
+`transcript_provenance` apply to the rendering. `note` is
+ambiguous — could be either. Decide during Phase 1.
+
+---
+
+#### Implementation phases
+
+**Phase 1 — Schema design (NOT scriptable; design work).** Land
+the new `manifest_entry` shape in `meta/schema.yaml`. Decide
+URL-level vs. artifact-level field placement. Add validator rules
+for the new shape (every URL is unique; every artifact in the list
+has unique `path`; primary fields populated correctly).
+
+**Phase 2 — Migration script (scriptable; one-shot).**
+`scripts/tools/migrate-manifest-to-artifacts.py` reads the current
+flat manifest and rewraps each entry into the new shape. Each
+existing entry becomes one URL entry with a single-element
+`artifacts` list. Validates round-trip path coverage: the set of
+paths before == the set of paths after. The 1 currently-correct
+duplicate-URL entry (Vimeo `lucistrust-rending-veils`) merges into
+a single URL entry with two artifacts. One-shot — runs once during
+the migration and then retires.
+
+**Phase 3 — CLI rewrite (NOT scriptable; mechanical).**
+Update every command in `scripts/tools/manifest.py`:
+- `cmd_add`: takes URL + path + format. If URL doesn't exist, creates new entry with single artifact. If URL exists and path is new, appends to artifacts list. If URL exists and path matches, idempotent no-op (with explicit log line, not silent). Error if URL exists with conflicting top-level fields.
+- `cmd_status`: prints the URL entry with all artifacts.
+- `cmd_pending`, `cmd_summary`, `cmd_orphans`, `cmd_missing`,
+  `cmd_verify_paths`, `cmd_verify_checksums`: nested iteration
+  (for entry, for artifact in entry.artifacts).
+
+**Phase 4 — Consumer adapters (NOT scriptable; mechanical).**
+Every helper in `scripts/lib/_common.py` and validator check that
+iterates manifest entries:
+- `manifest_format(path)`: nested iteration. Functional contract unchanged.
+- `load_manifest_paths()`: flatten artifact paths across all entries.
+- `load_source_to_artifacts_index()`: path-keyed; nested iteration.
+- `_load_extraction_types()`: nested iteration.
+- Validator checks (`manifest_checksums`, `manifest_archive_status`, `manifest_extraction_type`, `manifest_value_enums`): update field-access paths.
+
+**Phase 5 — `archive.py` adapter (NOT scriptable; mechanical).**
+- Main sweep: per-URL iteration (not per-artifact). Wayback bits live at URL level.
+- `cmd_submit_one`: updates URL entry's Wayback fields. No more first-match.
+
+**Phase 6 — Build-pipeline tools (NOT scriptable; mechanical).**
+- `download-video.py`: calls `manifest.py add` with URL + path + format=video. Works correctly post-rewrite (no silent rejection).
+- `transcribe.py`: same; calls `manifest.py add` with URL + path + format=transcript + --transcript-provenance auto-caption.
+
+**Phase 7 — New validator check (NOT scriptable; new code).**
+`scripts/checks/manifest_artifact_shape.py`: every URL is unique;
+every entry has at least one artifact; every artifact path is
+unique across all entries; one primary artifact per URL (the
+"underlying source" — typically the video; the transcript is
+derived). Open detail: how to express "primary" in the schema —
+positional (first in list) or by a `derived_from` field on
+non-primary artifacts. Decide in Phase 1.
+
+**Phase 8 — Backfill (scriptable; one-shot).** Register the three
+currently-stranded video files via the new shape. Each gets
+appended to its URL's existing transcript-only entry as a second
+artifact.
+
+**Phase 9 — conventions.md (NOT scriptable; doc work).** New
+subsection under "Source preservation" documenting the artifact
+model — what each field means at URL level vs. artifact level,
+how dual-artifact sources are registered, what cmd_add's new
+semantics are.
+
+**Phase 10 — Smoke test + pre-commit gate (NOT scriptable; design).**
+Add a smoke test that exercises the dual-artifact pattern end-to-end
+(transcribe → download-video → verify both registered). Verify
+`pre-commit.sh` runs clean post-migration.
+
+---
+
+#### Sequencing constraints
+
+Phase 1 (schema) is the gate — must land before Phase 2's migration
+can run (migration script reads the new schema). Phases 3–6 (CLI
++ consumer rewrites) must land together with Phase 2 (otherwise
+the consumers can't read the new manifest shape). Phase 7
+(validator check) lands after Phases 3–6 so it has the new shape
+to validate. Phase 8 (backfill) lands after Phases 3–6 so the new
+CLI handles the additions correctly. Phase 9 (conventions) and
+Phase 10 (smoke test) can land any time after Phase 7.
+
+Practically: Phases 1 → (2 + 3 + 4 + 5 + 6 in one PR) → 7 → 8 → 9
++ 10. Two or three commits depending on how the contributor wants
+to slice.
+
+---
+
+#### Risks
+
+- **Migration script bug silently drops entries.** Mitigation:
+  round-trip path-set verification (paths before == paths after);
+  sha256 spot-check on a random sample post-migration.
+- **Consumer rewrite misses a callsite.** Mitigation: grep for
+  every `for e in entries` and `entries.get("path")` pattern across
+  `scripts/`; pre-commit chain (validate.py / validate-research.py /
+  review-coverage.py) catches structural breakage; smoke test
+  exercises the dual-artifact path.
+- **Tooling regression invisible until contributor workflow exercises it.**
+  Mitigation: Phase 10 smoke test seeds a fixture with a dual-artifact
+  URL and runs the relevant tools against it.
+- **In-flight contributor work blocked during the migration window.**
+  Mitigation: land Phases 1–6 in one atomic PR. Repo doesn't enter
+  a half-migrated state.
+
+---
+
+#### Investigation block (preserved for context; decision made)
+
+This investigation walked four candidate options before settling on
+Option 1. Summary of the rejected options:
+
+- **Option 2 — Duplicate URLs + `derived_from_path` pointer.**
+  Lowest implementation cost; existing entries valid. Rejected
+  because the structural model still doesn't match reality — URLs
+  are still listed-as-rows, not modeled as the canonical thing
+  with renderings beneath them. The BACKLOG's "ages poorly" concern
+  about cluttered duplicate-URL rows remains even with the
+  `derived_from_path` field, because the primary vs. derivation
+  distinction is at row-level rather than schema-level.
+- **Option 3 — Outside manifest entirely.** Make transcript URL
+  optional or use local-path-as-URL. Rejected because nodes citing
+  the original YouTube URL would resolve only to the video entry;
+  the transcript file would be invisible to URL-based lookup
+  (cmd_status, etc.).
+- **Option 4 — Forbid dual-artifact pattern.** Re-derive
+  transcripts on demand. Rejected because it breaks the verbatim-
+  quote check's substring match against the transcript file (a
+  text-extractable archived rendering of the audio) — to verify a
+  transcript quote, the validator would have to invoke whisper /
+  ffmpeg every run.
+
+Surfaces walked during investigation: `meta/schema.yaml::manifest_entry`;
+`scripts/tools/manifest.py` (cmd_add, cmd_status, cmd_pending, cmd_usage,
+cmd_orphans, cmd_missing, cmd_summary, cmd_verify_paths,
+cmd_verify_checksums); `scripts/tools/archive.py` (cmd_submit_one,
+main sweep); `scripts/lib/_common.py` (manifest_format,
+load_manifest_paths, load_source_to_artifacts_index,
+_load_extraction_types); `scripts/build/validate.py` (manifest preload);
+`scripts/tools/download-video.py`, `scripts/tools/transcribe.py`;
+verbatim-quote check (path-keyed; unaffected);
+`meta/conventions.md` "Source preservation".
+
+Concrete dual-artifact corpus census (2026-05-19):
+- 447 total manifest entries
+- 1 URL with 2 entries (Vimeo lucistrust-rending-veils, video + transcript)
+- 25 transcript entries; 8 video entries
+- 24 transcript entries whose URL is NOT also registered as video
+  (of which 3 have video files actually on disk but unregistered;
+  the other 21 are transcript-only by design — auto-caption pull
+  without a corresponding video download)
 
 **Surfaced from:** the JRE #2194 Elizondo source-prep walkthrough.
 `transcribe.py` ran first (auto-caption pull) and registered the URL
@@ -723,8 +896,8 @@ state surfaces only when a node tries to cite the video URL.
 
 **Blocks:** A2 (verifier-agent / `manifest.py add` contract), C34
 (the only concrete schema↔CLI drift instance is the manifest
-URL-uniqueness gap C29 hasn't decided).
-**Blocked by:** none.
+URL-uniqueness gap).
+**Blocked by:** none. Investigation complete; ready to implement.
 
 ### C30 — Source-prep orchestrator: single command for the full caption + video chain
 
