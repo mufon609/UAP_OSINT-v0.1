@@ -314,6 +314,7 @@ DoD Public Affairs statement from spokesperson Susan Gough, June 29, 2022: "form
 | 2020-09-23 | NIA Director Scott Bray issues two cross-service outreach memoranda to senior intelligence officials in the U.S. Army and U.S. Air Force, establishing UAPTF cross-service structure. Both memos included in the April 22, 2025 FOIA release package (DON-NAVY-2021-003140). | other | news/blackvault-uaptf-charter-foia-release-20250422.html |  |
 | 2021-06-25 | ODNI Preliminary Assessment, Unidentified Aerial Phenomena published — drafted by UAPTF and the ODNI National Intelligence Manager for Aviation | other | government/dni-gov-odni-preliminary-assessment-20210625.pdf | [`/documents/odni-preliminary-assessment-2021`] |
 | 2021-11-23 | Airborne Object Identification and Management Synchronization Group (AOIMSG) established by Hicks memorandum to succeed the U.S. Navy's Unidentified Aerial Phenomena Task Force. Per AARO HRR Volume I this is the functional end of UAPTF's lifecycle (August 2020 – November 2021); formal disestablishment directive followed in the second Hicks memorandum on July 15, 2022. | leadership-transition | government/defense-gov-aoimsg-establishment-20211123.html | [`/organizations/aoimsg`] |
+| 2022-05-17 | House Permanent Select Committee on Intelligence Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation holds the first public congressional UAP hearing in 50+ years [`/events/2022-05-17-hpsci-uap-hearing`] — DepUSDI&S Ronald Moultrie [`/people/ronald-moultrie`] [`/transcripts/2022-05-17-hpsci-moultrie`] and Deputy Director of Naval Intelligence Scott Bray [`/transcripts/2022-05-17-hpsci-bray`] testify on the UAP Task Force and its planned transition to AARO. | other | government/congress-gov-hpsci-uap-transcript-20220517.pdf |  |
 | 2022-06-29 | DoD Public Affairs statement (via spokesperson Susan Gough) names former Office of Naval Intelligence senior civilian John Stratton as UAPTF lead; Dr. Travis Taylor identified as informal Chief Scientist | other | news/blackvault-smdc-travis-taylor-uaptf-20220629.html |  |
 | 2022-07-15 | Deputy Secretary of Defense memorandum directs the Secretary of the Navy to disestablish UAPTF no later than the date the AARO is established, and to transfer data, analysis, or other relevant material to the AARO | leadership-transition | government/media-defense-gov-hicks-aaro-establishment-memo-20220715.pdf |  |
 | 2022-07-20 | DoD press release publicly announces AARO establishment. Per AARO HRR Volume I (March 2024) the formal AARO establishment date is July 15, 2022 (Hicks memorandum signature date); July 20, 2022 is the public-announcement date. | leadership-transition | government/defense-gov-aaro-establishment-20220720.html | [`/organizations/aaro`] |
@@ -378,6 +379,7 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/david-norquist`]
 - [`/people/jay-stratton`]
 - [`/people/karl-nell`]
+- [`/people/ronald-moultrie`]
 - [`/people/travis-taylor`]
 
 ### Organizations
@@ -392,6 +394,15 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/organizations/uap-excom`]
 - [`/organizations/us-navy`]
 
+### Events
+
+- [`/events/2022-05-17-hpsci-uap-hearing`]
+
 ### Documents
 
 - [`/documents/odni-preliminary-assessment-2021`]
+
+### Transcripts
+
+- [`/transcripts/2022-05-17-hpsci-bray`]
+- [`/transcripts/2022-05-17-hpsci-moultrie`]

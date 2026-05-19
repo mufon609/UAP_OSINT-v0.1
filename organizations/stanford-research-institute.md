@@ -579,7 +579,7 @@ Per Figure 1 of the 1993 DIA ([`/organizations/dia`]) STAR GATE Project Overview
 | 1979 | William F. Miller [`/people/william-f-miller`] becomes SRI's president, succeeding Charles A. Anderson [`/people/charles-a-anderson`]. | governance | news/sri-com-about-history-1970s-wayback-2004.html |  |
 | 1987 | SRI acquires Sarnoff Corp. [`/organizations/sarnoff-corp`] (formerly RCA Labs). Specific date within 1987 not attested. | acquisition | news/sri-international-about-20260515.html |  |
 | 1990 | SRI parapsychology investigation discontinued. FY 1991 Congressional direction for DIA [`/organizations/dia`] establishes successor research at SAIC [`/organizations/saic`] in Menlo Park, CA. | program-termination | government/cia-rdp96-00789r002800180001-2-stargate-project-an-overview-19930430.pdf |  |
-| 1995-09-29 | American Institutes for Research [`/organizations/american-institutes-for-research`] publishes [`/documents/air-mumford-evaluation-remote-viewing-1995`] "An Evaluation of Remote Viewing: Research and Applications" — independent government-commissioned evaluation of the Stargate program. Section 3 covers the 1973-1988 SRI experimental record. | external-evaluation | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |  |
+| 1995-09-29 | American Institutes for Research [`/organizations/american-institutes-for-research`] publishes [`/documents/air-mumford-evaluation-remote-viewing-1995`] "An Evaluation of Remote Viewing: Research and Applications" — independent government-commissioned evaluation of the Stargate program. Section 3 covers the 1973-1988 SRI experimental record. The two-member evaluation panel: Jessica Utts [`/people/jessica-utts`] (Statistics, UC Davis) and Raymond Hyman [`/people/raymond-hyman`] (Psychology, University of Oregon). | external-evaluation | government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf |  |
 | 2000s | Artificial intelligence: CALO — 2000s SRI innovation per the sri.com Timeline of Innovation page 6. CALO (Cognitive Assistant that Learns and Organizes) was the SRI-led DARPA program from which the Siri voice assistant spun out. | innovation | news/sri-international-timeline-of-innovation-page6-20260515.html |  |
 | 2000s | Siri — 2000s SRI innovation per the sri.com Timeline of Innovation page 6. Siri (the voice-assistant technology subsequently acquired by Apple Inc. in 2010 per public record; Apple acquisition not attested in the archived corpus). | innovation | news/sri-international-timeline-of-innovation-page6-20260515.html |  |
 | 2010s | NASA Parker Solar Probe — 2010s SRI innovation per the sri.com Timeline of Innovation page 7. SRI instrument contribution to the NASA [`/organizations/nasa`] solar-science mission. | innovation | news/sri-international-timeline-of-innovation-page7-20260515.html |  |
@@ -646,11 +646,13 @@ Source-form preservations — verbatim tokens in quote text that the cited prima
 - [`/people/hella-hammid`]
 - [`/people/ingo-swann`]
 - [`/people/jacques-vallee`]
+- [`/people/jessica-utts`]
 - [`/people/john-j-young-jr`]
 - [`/people/john-mcintire`]
 - [`/people/kenneth-kress`]
 - [`/people/kit-green`]
 - [`/people/pat-price`]
+- [`/people/raymond-hyman`]
 - [`/people/russell-targ`]
 - [`/people/steven-walker`]
 - [`/people/suresh-sunderrajan`]

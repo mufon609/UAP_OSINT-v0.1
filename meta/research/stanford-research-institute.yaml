@@ -862,6 +862,20 @@ entities_referenced:
   references:
   - quote_id: q37
 
+- id: e39
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Jessica Utts'
+  wrap_path: '/people/jessica-utts'
+  context_summary: 'Statistics professor at UC Davis; one of the two American Institutes for Research (AIR) 1995 evaluation panel members commissioned to review the CIA STARGATE remote viewing program. Per the AIR 1995 source (`government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf`), Utts and Hyman (`/people/raymond-hyman`) were the two-member panel — Utts representing the parapsychology-supportive position, Hyman the methodological-skeptic position. Utts published a paper concluding the statistical results were far beyond chance and could not be explained by methodological flaws — the load-bearing dissent within the AIR evaluation. Separately, Utts was a co-author of the 1988 SRI internal program analysis (May, Utts, Trask, Luke, Frivold, Humphrey 1988) cited by AIR (q15). Unbuilt in this repository.'
+
+- id: e40
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Raymond Hyman'
+  wrap_path: '/people/raymond-hyman'
+  context_summary: 'Psychology professor at University of Oregon; the other AIR 1995 evaluation panel member alongside Utts (`/people/jessica-utts`). Per the AIR 1995 source (`government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf`), Hyman published the opposing assessment — the SRI/SAIC results could be explained by methodological flaws in the experimental design — the methodological-skeptic position vs. Utts'' parapsychology-supportive finding. The Utts/Hyman split assessment is the load-bearing finding of the STARGATE-termination discourse. Unbuilt in this repository.'
+
 naming_quirks:
 
 - id: nq1
@@ -1248,7 +1262,7 @@ timeline:
   added_date: '2026-05-15'
   date: '1995-09-29'
   category: external-evaluation
-  event: 'American Institutes for Research [`/organizations/american-institutes-for-research`] publishes [`/documents/air-mumford-evaluation-remote-viewing-1995`] "An Evaluation of Remote Viewing: Research and Applications" — independent government-commissioned evaluation of the Stargate program. Section 3 covers the 1973-1988 SRI experimental record.'
+  event: 'American Institutes for Research [`/organizations/american-institutes-for-research`] publishes [`/documents/air-mumford-evaluation-remote-viewing-1995`] "An Evaluation of Remote Viewing: Research and Applications" — independent government-commissioned evaluation of the Stargate program. Section 3 covers the 1973-1988 SRI experimental record. The two-member evaluation panel: Jessica Utts [`/people/jessica-utts`] (Statistics, UC Davis) and Raymond Hyman [`/people/raymond-hyman`] (Psychology, University of Oregon).'
   source:
     path: government/air-mumford-evaluation-remote-viewing-stargate-19950929.pdf
     location: 'Cover page'

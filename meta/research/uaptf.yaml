@@ -470,6 +470,14 @@ timeline:
     path: government/defense-gov-aoimsg-establishment-20211123.html
     location: article body ¶1
   node_link: /organizations/aoimsg
+- id: t6b
+  added_date: '2026-05-19'
+  date: '2022-05-17'
+  event: 'House Permanent Select Committee on Intelligence Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation holds the first public congressional UAP hearing in 50+ years [`/events/2022-05-17-hpsci-uap-hearing`] — DepUSDI&S Ronald Moultrie [`/people/ronald-moultrie`] [`/transcripts/2022-05-17-hpsci-moultrie`] and Deputy Director of Naval Intelligence Scott Bray [`/transcripts/2022-05-17-hpsci-bray`] testify on the UAP Task Force and its planned transition to AARO.'
+  category: other
+  source:
+    path: government/congress-gov-hpsci-uap-transcript-20220517.pdf
+    location: p. 1
 - id: t7
   added_date: '2026-04-20'
   date: '2022-06-29'
@@ -557,6 +565,24 @@ entities_referenced:
   entity_type: document
   name: ODNI Preliminary Assessment, Unidentified Aerial Phenomena
   wrap_path: /documents/odni-preliminary-assessment-2021
+- id: e12
+  added_date: '2026-05-19'
+  entity_type: event
+  name: '2022-05-17 HPSCI UAP hearing'
+  wrap_path: /events/2022-05-17-hpsci-uap-hearing
+  context_summary: 'The May 17, 2022 House Permanent Select Committee on Intelligence Subcommittee on Counterterrorism, Counterintelligence, and Counterproliferation UAP hearing — the first public congressional UAP hearing in over 50 years. The hearing covered the just-stood-up UAP Task Force (this artifact) → AARO transition. Two witnesses: DepUSDI&S Ronald Moultrie (`/people/ronald-moultrie`) and Deputy Director of Naval Intelligence Scott Bray. Open-session stenographic transcript at `government/congress-gov-hpsci-uap-transcript-20220517.pdf`. Event node unbuilt in this repository.'
+- id: e13
+  added_date: '2026-05-19'
+  entity_type: transcript
+  name: '2022-05-17 HPSCI hearing — Bray oral testimony'
+  wrap_path: /transcripts/2022-05-17-hpsci-bray
+  context_summary: 'Scott Bray''s portion of the May 17, 2022 HPSCI UAP hearing. Bray as Deputy Director of Naval Intelligence testified on the just-established UAP Task Force operations and the categorization framework being applied to UAP incidents. The Bray "no material we have recovered" testimony on the open-session record is load-bearing for subsequent Grusch (`/people/david-grusch`) disclosure framing. Transcript node unbuilt in this repository.'
+- id: e14
+  added_date: '2026-05-19'
+  entity_type: transcript
+  name: '2022-05-17 HPSCI hearing — Moultrie oral testimony'
+  wrap_path: /transcripts/2022-05-17-hpsci-moultrie
+  context_summary: 'Ronald Moultrie''s (`/people/ronald-moultrie`) portion of the May 17, 2022 HPSCI UAP hearing. Moultrie as Under Secretary of Defense for Intelligence and Security testified on the UAP Task Force → AARO institutional transition and DoD oversight structure. Transcript node unbuilt in this repository; companion to the Bray transcript node above.'
 naming_quirks:
 - id: nq1
   added_date: '2026-04-20'
