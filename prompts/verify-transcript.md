@@ -72,7 +72,9 @@ structural speaker attribution"). For each retained quote:
   speaker labels: confirm via the surrounding text + (when available)
   the video-pipeline stitched transcript at
   `/tmp/stitch-{slug}/stitched.md` (produced by
-  `scripts/tools/stitch-transcript.py`).
+  `scripts/tools/stitch-transcript.py`; see
+  `scripts/tools/VIDEO-PIPELINE.md` for the five-step workflow that
+  produces it).
 - If the assignment is wrong: update `quotes[N].speaker_id` to the
   correct `speakers[].id` and regenerate the node. If the right
   speaker isn't in `speakers[]` yet, add a `speakers[]` entry first.

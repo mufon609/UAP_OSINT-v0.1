@@ -13,6 +13,23 @@ a person actually came from that person" — same evidentiary discipline that
 the verbatim-quote check enforces mechanically, but for sources where the
 speaker isn't stamped in the transcript itself.
 
+## Companion workflow — caption-only archival
+
+For YouTube sources you also want the auto-caption transcript registered as
+a primary source for the verbatim-quote check. That's a separate, lighter
+workflow covered in `meta/sources-access.md` "YouTube (youtube.com)" —
+cookies-authenticated `transcribe.py` → `manifest.py add ... --format
+transcript --transcript-provenance auto-caption`. Run it BEFORE step 1
+below so the caption file is already in place when `stitch-transcript.py`
+runs at step 5.
+
+**Slug discipline.** Use the same `--slug` for `transcribe.py` and
+`download-video.py` on a single source. `stitch-transcript.py`'s
+auto-discovery looks for the caption file at
+`sources/transcripts/{slug}-downloaded.md` and the diarize segments at
+`/tmp/diarize-{slug}/segments.csv` — slugs that drift across tools break
+the auto-discovery silently.
+
 ---
 
 ## One-time setup
