@@ -36,6 +36,19 @@ quote_verification_fields:
   required: [Attributed to, Source, Verified]
   optional: [Location, Note]
 
+# Three-layer evidentiary architecture (see meta/conventions.md).
+# Entity-layer types carry facts; the finding layer documents multi-source
+# patterns over those facts; the investigation layer evaluates hypotheses
+# over findings + entity facts. The flow is one-directional. Consumed by
+# the directional-contract checks (entity_no_finding_or_investigation_refs,
+# finding_no_investigation_refs, finding_source_in_entity_node) and by
+# load_source_to_artifacts_index — adding a new content-node type only
+# requires listing it here for the directional contract to extend to it.
+architecture_layers:
+  entity:        [person, organization, document, event, transcript, media, location]
+  finding:       [finding]
+  investigation: [investigation]
+
 # ---------------------------------------------------------------------------
 # Node types
 # ---------------------------------------------------------------------------

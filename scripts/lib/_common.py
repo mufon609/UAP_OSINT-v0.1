@@ -143,6 +143,26 @@ def content_node_types():
     return frozenset(content_type_dirs().keys())
 
 
+def entity_type_names():
+    """Set of entity-layer type names per the three-layer evidentiary
+    architecture (see meta/conventions.md). Derived from schema's
+    ``architecture_layers.entity`` list — the directional-contract
+    checks (entity_no_finding_or_investigation_refs,
+    finding_source_in_entity_node) gate on this so adding a new entity
+    type is a one-line schema edit."""
+    return frozenset(load_schema()["architecture_layers"]["entity"])
+
+
+def entity_type_dirs():
+    """Set of entity-layer directory names (people, organizations,
+    documents, events, transcripts, media, locations). Convenience
+    for callers that key by directory rather than type name (e.g.,
+    ``target_node`` strings parsed from research artifacts)."""
+    types = entity_type_names()
+    dir_map = content_type_dirs()
+    return frozenset(dir_map[t] for t in types if t in dir_map)
+
+
 def _load_extraction_types():
     """Build a {path: extraction_type} map from sources/manifest.yaml.
 
@@ -386,6 +406,7 @@ def load_source_to_artifacts_index():
     index = defaultdict(list)
     if not RESEARCH_DIR.is_dir():
         return dict(index)
+    entity_dirs = entity_type_dirs()
     for path in sorted(RESEARCH_DIR.glob("*.yaml")):
         try:
             with open(path) as f:
@@ -398,9 +419,10 @@ def load_source_to_artifacts_index():
         if not isinstance(target_node, str) or "/" not in target_node:
             continue
         type_dir = target_node.split("/", 1)[0]
-        # Skip non-entity types — findings consume; investigations
-        # consume findings; meta is governance, not evidentiary.
-        if type_dir in ("findings", "investigations", "meta"):
+        # Positive entity-layer gate per schema's architecture_layers.
+        # Synthesis layer (findings, investigations) consumes facts;
+        # governance (meta) is not evidentiary.
+        if type_dir not in entity_dirs:
             continue
         for ps in (data.get("primary_sources") or []):
             if isinstance(ps, dict):

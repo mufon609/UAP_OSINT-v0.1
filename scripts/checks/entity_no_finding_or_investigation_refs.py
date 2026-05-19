@@ -23,20 +23,17 @@ finding-side prohibition). Together the two checks lock both ends of
 the directional contract.
 
 No-ops on finding / investigation / meta artifacts — those are the
-synthesis and governance layers; only entity-type artifacts (person /
-organization / document / event / transcript / media / location) are
-in scope.
+synthesis and governance layers. Entity-layer scope is derived from
+schema's ``architecture_layers.entity`` via ``entity_type_names()``,
+so adding a new content-node type is a one-line schema edit that
+extends the contract automatically.
 """
 
 from checks import Issue
+from lib._common import entity_type_names
 
 
 CHECK_NAME = "entity_no_finding_or_investigation_refs"
-
-_ENTITY_TYPES = (
-    "person", "organization", "document", "event",
-    "transcript", "media", "location",
-)
 
 
 def _walk(value, path):
@@ -55,7 +52,7 @@ def _walk(value, path):
 
 
 def check(ctx):
-    if ctx.target_type not in _ENTITY_TYPES:
+    if ctx.target_type not in entity_type_names():
         return
     if not isinstance(ctx.data, dict):
         return
