@@ -35,14 +35,16 @@ required_keys:
   - status                # active | archived
   - created               # YYYY-MM-DD
   # ``description`` is type-conditional and lives outside this universal
-  # required_keys list. REQUIRED on document / transcript / media /
-  # event / organization / finding / location artifacts (enforced by
-  # scripts/checks/artifact_top_level.py's DESCRIPTION_REQUIRED_TYPES
-  # allowlist; renders as the node's `## Description` section).
+  # required_keys list. REQUIRED on every content type whose schema
+  # block in ``meta/schema.yaml`` declares ``description_required: true``
+  # (document / transcript / media / event / organization / finding /
+  # location; enforced by scripts/checks/artifact_top_level.py; renders
+  # as the node's `## Description` section).
   # OPTIONAL on investigation artifacts (renderer wires it up but a
   # missing key is permitted). UNRENDERED on person artifacts — the
-  # person body renderer emits `## Background`, `## UAP Relevance`,
-  # and `## Credibility Notes` from dedicated prose fields
+  # person body renderer emits `## Background`,
+  # `## {topic_display_name} Relevance`, and `## Credibility Notes`
+  # from dedicated prose fields
   # (`background`, `top_relevance`, `credibility_notes`) and never
   # calls render_description. The scaffolder
   # (scripts/build/research-scaffold.py) skips emitting this key for
@@ -210,7 +212,9 @@ conditional_keys:
     required_when_any_of:
       - target_node_type_in: [person]
     # Prose string (one paragraph) describing why this person is in
-    # the repository. Renders as the `## UAP Relevance` section.
+    # the repository. Renders as the `## {topic_display_name} Relevance`
+    # section (topic-substituted at render time from
+    # meta/topic/overview.md::display_name).
   affiliations:
     required_when_any_of:
       - target_node_type_in: [person]
@@ -337,8 +341,10 @@ conditional_keys:
     # lore without primary-source backing belongs in `rumors`, not
     # here. Each entry: period_start, period_end (optional),
     # activity, actor_paths (optional list of /people|/organizations),
-    # source. Renders as the `## UAP-Scope Activity` table. Entry
-    # shape: top_scope_activity_entry below.
+    # source. Renders as the `## {topic_display_name}-Scope Activity`
+    # table (topic-substituted at render time from
+    # meta/topic/overview.md::display_name). Entry shape:
+    # top_scope_activity_entry below.
   location_relationships:
     required_when_any_of:
       - target_node_type_in: [location]
