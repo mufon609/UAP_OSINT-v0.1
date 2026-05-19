@@ -1,0 +1,711 @@
+id: meta/research/luis-elizondo
+type: research-artifact
+schema_version: 1
+target_node: people/luis-elizondo
+status: active
+created: '2026-05-19'
+
+primary_sources:
+- path: transcripts/jre-2194-elizondo-2024-downloaded.md
+  format: transcript
+  sha256_at_extraction: 97b4fb010811141483ef64b3c15752ff8fcaab5b73b8b77cfe06d32814ed048e
+- path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+  format: pdf
+  sha256_at_extraction: 70a015557b2ccdf20d8e8c86f4688a373ae9d6a0e86817561fde318bf2b984ec
+- path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+  format: html
+  sha256_at_extraction: c9a95b5dcba3a7cbdfd97099c6621738a0fae7bd0c6068781b62dbfb41260760
+
+document_intrinsic:
+  full_name: 'Luis D. Elizondo'
+  aliases: ['Luis Elizondo', 'Lue Elizondo', 'Mr. Luis Elizondo', 'Luis D. Elizondo']
+  nationality: ''
+  profession: 'former United States Army Counter Intelligence Special Agent and Department of Defense civilian intelligence official; author'
+
+context_extrinsic: {}
+
+background: 'Luis D. Elizondo is a former United States Army ([`/organizations/us-army`]) Counter Intelligence Special Agent and Department of Defense civilian intelligence official who served as the senior ranking person of the Advanced Aerospace Threat Identification Program ([`/organizations/aatip`]) ("AATIP") within the Department of Defense ([`/organizations/dod`]), per his sworn Question-for-the-Record response to Rep. Eric Burlison ([`/people/eric-burlison`]) dated December 19, 2024 (Q1). The New York Times ([`/organizations/the-new-york-times`]) article "Glowing Auras and ‘Black Money’: The Pentagon’s Mysterious U.F.O. Program" by Helene Cooper ([`/people/helene-cooper`]), Ralph Blumenthal ([`/people/ralph-blumenthal`]) and Leslie Kean ([`/people/leslie-kean`]), published December 16, 2017, reported that the program "was run by a military intelligence official, Luis Elizondo, on the fifth floor of the Pentagon’s C Ring, deep within the building’s maze," and identified Elizondo in a photograph caption as the person "who led the Pentagon effort to investigate U.F.O.s until October" 2017, when he resigned. On the Joe Rogan Experience #2194 ([`/transcripts/jre-2194-elizondo-2024`]) of August 23, 2024, Elizondo described his pre-AATIP career as "a special agent in Counter Intelligence" who was "protecting Technologies critical Technologies critical avionic Technologies" before being recruited in early 2009 to run "The Counter Intelligence and security aspect for a particular program" by Dr. James Lacatski ([`/people/james-lacatski`]).
+
+
+  Following his October 2017 resignation, Elizondo joined the To the Stars Academy of Arts and Science ([`/organizations/ttsa`]) alongside Hal Puthoff ([`/people/hal-puthoff`]) and Christopher Mellon ([`/people/christopher-mellon`]) per the NYT 2017 article. He testified before the joint House Oversight subcommittee hearing on November 13, 2024 ([`/events/2024-11-13-house-oversight-uap-hearing`]) titled "Unidentified Anomalous Phenomena: Exposing the Truth," convened by Subcommittee Chairs Nancy Mace ([`/people/nancy-mace`]) and Glenn Grothman ([`/people/glenn-grothman`]), and submitted sworn written Question-for-the-Record responses to Rep. Eric Burlison on December 19, 2024, addressed from a P.O. Box in Buffalo, Wyoming. The QFR responses, made under penalty of 18 U.S.C. § 1001, attest a series of institutional claims including the existence of recovered non-human technology, a 2004 White House conversation about public UAP disclosure, the Central Intelligence Agency ([`/organizations/cia`]) opposing a Lockheed Martin ([`/organizations/lockheed-martin`])-to-Bigelow Aerospace ([`/organizations/bigelow-aerospace`]) materials transfer, and the Patuxent River Naval Air Station Special Access Program Facility (SAP-F) hangar funded at the request of then-Representative Steny Hoyer. The QFR Q9 response further attributes UAP-inquiry suppression to both the CIA ("passive resistance") and the United States Air Force ([`/organizations/us-air-force`]) ("more active campaign"); per the NYT 2017 reporting, in the post-2012 funding-cessation phase of the program Elizondo "worked with officials from the [United States] Navy ([`/organizations/us-navy`]) and the C.I.A."'
+
+top_relevance: 'Elizondo is a primary disclosure-era institutional actor whose significance rests on his attested role as the senior ranking person of AATIP and on the specific institutional claims he has placed on the public record under penalty of perjury. The December 19, 2024 sworn QFR responses to Rep. Burlison ([`/people/eric-burlison`]) confirm — at the UNCLASSIFIED level — that AATIP engaged senior aerospace-company executives who claimed possession of recovered "exotic material" not made by U.S. or foreign sources (Q1); that the U.S. Government or a defense contractor possesses "exotic materials of nonhuman origin" (Q2); that he is aware of "several incidents where the U.S. military and certain Defense Contract companies recovered craft/vehicles of non-human origin" and in some cases "biological specimens were recovered" (Q4a); that the CIA opposed a Lockheed Martin → Bigelow Aerospace materials transfer (Q6); that a Patuxent River Naval Air Station SAP-F hangar (~$10M, funding at the request of then-Representative Steny Hoyer ([`/people/steny-hoyer`])) was purpose-built to receive future UAP materials transferred via air and river but no materials had been transferred at the time of his visit (Q7); and that retaliation against UAP advocates within the DoD and IC has included security-clearance actions, harassment, surveillance, and death threats (Q10). The QFR Q1 response also identifies Dr. James Lacatski ([`/people/james-lacatski`]) as author of a DOPSR-cleared statement (September 6, 2023) addressing crash retrieval of UAP material from the 1950s and naming the AAWSAP funding redirection. The QFR is the load-bearing sworn-record artifact in Elizondo''s public attestation chain; his earlier 2017 disclosure to Cooper, Blumenthal and Kean of The New York Times established AATIP''s existence in the public record. His 2024 long-form Joe Rogan Experience #2194 interview (August 23, 2024) places the same institutional claims on a non-sworn on-record footing and adds first-hand narrative about his 2009 recruitment by Dr. James Lacatski.'
+
+affiliations:
+- id: aff2
+  added_date: '2026-05-19'
+  organization_path: /organizations/odni
+  role: 'civilian intelligence official; integration role between national intelligence and state/local/tribal law enforcement post-9/11'
+  period_start: 2008
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[2:03]'
+- id: aff3
+  added_date: '2026-05-19'
+  organization_path: /organizations/dod
+  role: 'civilian intelligence official; AATIP Counter Intelligence / Security lead, later senior ranking person'
+  period_start: 2008
+  period_end: '2017-10'
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "WASHINGTON — In the $600 billion annual Defense Department budgets"'
+- id: aff4
+  added_date: '2026-05-19'
+  organization_path: /organizations/aatip
+  role: 'Counter Intelligence and security lead (per JRE #2194 self-attestation); later senior ranking person of the program (per QFR Q1)'
+  period_start: 2009
+  period_end: '2017-10'
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q1, ¶1'
+- id: aff5
+  added_date: '2026-05-19'
+  organization_path: /organizations/ttsa
+  role: 'co-founder / public figure; joined alongside Hal Puthoff and Christopher Mellon per NYT 2017'
+  period_start: 2017
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "Mr. Elizondo has now joined Mr. Puthoff and another former Defense Department official, Christopher K. Mellon"'
+
+relationships:
+- id: r1
+  added_date: '2026-05-19'
+  person_path: /people/james-lacatski
+  relationship: 'recruited Elizondo into the AATIP-era program in early 2009 (per JRE #2194 self-attestation); author of the DOPSR-cleared September 6, 2023 statement cited in Elizondo''s QFR Q1 response'
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[6:00]'
+- id: r2
+  added_date: '2026-05-19'
+  person_path: /people/hal-puthoff
+  relationship: 'TTSA co-founder / colleague per NYT December 16, 2017'
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "Mr. Elizondo has now joined Mr. Puthoff and another former Defense Department official"'
+- id: r3
+  added_date: '2026-05-19'
+  person_path: /people/christopher-mellon
+  relationship: 'TTSA co-founder / colleague per NYT December 16, 2017'
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "Mr. Elizondo has now joined Mr. Puthoff and another former Defense Department official"'
+- id: r4
+  added_date: '2026-05-19'
+  person_path: /people/harry-reid
+  relationship: 'AATIP funding origin per NYT 2017; Reid was Senate Majority Leader who initially funded the program at $22M from late 2008 through 2011'
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "The shadowy program — parts of it remain classified — began in 2007"'
+- id: r5
+  added_date: '2026-05-19'
+  person_path: /people/robert-bigelow
+  relationship: 'Bigelow Aerospace was the contract recipient of AATIP funding per NYT 2017; Bigelow Aerospace was identified in Elizondo''s QFR Q7 as planned custodian of UAP materials transferred from Lockheed Martin'
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "Contracts obtained by The Times show a congressional appropriation"'
+- id: r6
+  added_date: '2026-05-19'
+  person_path: /people/eric-burlison
+  relationship: 'House Oversight subcommittee member who submitted the Dec 9, 2024 Question-for-the-Record letter following the November 13, 2024 hearing; Elizondo''s December 19, 2024 sworn QFR responses were addressed to Burlison via the subcommittee chairs'
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Letter header — "Questions from Rep. Eric Burlison"'
+- id: r7
+  added_date: '2026-05-19'
+  person_path: /people/steny-hoyer
+  relationship: 'Then-Representative who allocated approximately $10 million for the Patuxent River Naval Air Station SAP-F hangar per Elizondo''s QFR Q7 response'
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q7, ¶1'
+
+timeline:
+- id: t1
+  added_date: '2026-05-19'
+  date: 2008
+  event: 'Elizondo leaves Army career and enters federal civilian service at the Office of the Director of National Intelligence per his JRE #2194 self-attestation; commutes from Chesapeake Bay'
+  category: role
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[1:48]'
+- id: t2
+  added_date: '2026-05-19'
+  date: 2008
+  event: 'Offered a Pentagon role to run integration between national-level intelligence and state/local/tribal law enforcement post-9/11 per his JRE #2194 self-attestation'
+  category: role
+  node_link: /organizations/dod
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[3:13]'
+- id: t3
+  added_date: '2026-05-19'
+  date: 2009
+  event: 'Approached in early 2009 by two individuals who recruited him into the program subsequently known as AATIP; first meeting with Dr. James Lacatski per JRE #2194 self-attestation'
+  category: role
+  node_link: /people/james-lacatski
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[3:52]'
+- id: t4
+  added_date: '2026-05-19'
+  date: '2017-10-04'
+  event: 'Resigned from his Pentagon role in protest of what he characterized as excessive secrecy and internal opposition to the AATIP program; addressed his resignation letter to Defense Secretary Jim Mattis ([`/people/jim-mattis`])'
+  category: role
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "But Mr. Elizondo said the only thing that had ended"'
+- id: t5
+  added_date: '2026-05-19'
+  date: '2017-12-16'
+  event: 'New York Times publishes "Glowing Auras and ‘Black Money’: The Pentagon’s Mysterious U.F.O. Program" by Helene Cooper, Ralph Blumenthal and Leslie Kean — first public reporting on AATIP and on Elizondo as the program''s lead'
+  category: publication
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: 'Document headline + dateline'
+- id: t6
+  added_date: '2026-05-19'
+  date: '2024-08-23'
+  event: 'Appears on the Joe Rogan Experience #2194 for a 2h15m long-form interview; describes his career trajectory, 2009 Lacatski recruitment, and current institutional claims'
+  category: testimony
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: 'Source URL header — "Source URL: https://www.youtube.com/watch?v=9gLPtRwXgCM"'
+- id: t7
+  added_date: '2026-05-19'
+  date: '2024-11-13'
+  event: 'Testifies at the joint House Oversight subcommittee hearing titled "Unidentified Anomalous Phenomena: Exposing the Truth" before the Subcommittee on Cybersecurity, Information Technology, and Government Innovation and the Subcommittee on National Security, the Border, and Foreign Affairs'
+  category: testimony
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Cover letter ¶1'
+- id: t8
+  added_date: '2026-05-19'
+  date: '2024-12-09'
+  event: 'Receives Question-for-the-Record letter from Subcommittee Chairs Nancy Mace and Glenn Grothman conveying questions from Rep. Eric Burlison following the November 13, 2024 hearing'
+  category: filing
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Cover letter dated December 9, 2024'
+- id: t9
+  added_date: '2026-05-19'
+  date: '2024-12-19'
+  event: 'Submits sworn Question-for-the-Record responses to Rep. Burlison addressed from P.O. Box 337, Buffalo, WY; responses are made under penalty of 18 U.S.C. § 1001 and attest a series of institutional claims about AATIP, recovered non-human material, CIA opposition, and the Patuxent River SAP-F hangar'
+  category: filing
+  node_link: /documents/elizondo-qfr-burlison-20241219
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Signature page'
+
+program_involvement:
+- id: pi1
+  added_date: '2026-05-19'
+  program: '/organizations/aatip'
+  role: 'senior ranking person (per QFR Q1 self-attestation); Counter Intelligence and security lead at recruitment per JRE #2194'
+  period_start: 2009
+  period_end: '2017-10'
+  evidentiary_basis: sworn-testimony
+  confidence: high
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q1, ¶1'
+- id: pi2
+  added_date: '2026-05-19'
+  program: '/organizations/aatip'
+  role: 'led the Pentagon UAP investigation effort until October 2017 (per NYT 2017 third-party reporting)'
+  period_start: 2009
+  period_end: '2017-10'
+  evidentiary_basis: secondary
+  confidence: high
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "WASHINGTON — In the $600 billion annual Defense Department budgets"'
+- id: pi3
+  added_date: '2026-05-19'
+  program: '/organizations/aawsap'
+  role: 'institutional adjacency to AAWSAP via overlapping AATIP context; per QFR Q1, AAWSAP/AATIP custody-of-material question was a joint matter; per QFR Q11, $22M figure described as the AAWSAP/AATIP funding'
+  period_start: 2009
+  period_end: '2017-10'
+  evidentiary_basis: sworn-testimony
+  confidence: medium
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q11, ¶1'
+- id: pi4
+  added_date: '2026-05-19'
+  program: 'Director of National Intelligence integration role (pre-AATIP)'
+  role: 'civilian intelligence official; integration of national-level intelligence into state/local/tribal law enforcement post-9/11'
+  period_start: 2008
+  period_end: 2009
+  evidentiary_basis: self-attested
+  confidence: medium
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[2:03]'
+- id: pi5
+  added_date: '2026-05-19'
+  program: '/organizations/ttsa'
+  role: 'post-resignation co-founder / public-figure association per NYT December 16, 2017'
+  period_start: 2017
+  evidentiary_basis: secondary
+  confidence: high
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "Mr. Elizondo has now joined Mr. Puthoff and another former Defense Department official"'
+
+quotes:
+- id: q1
+  added_date: '2026-05-19'
+  text: |
+    Yes. I served as the senior ranking person of the Advanced Aerospace Threat
+    Identification Program ("AATIP") within the Department of Defense ("DoD"). AATIP
+    investigated unidentified anomalous phenomena ("UAP"). AATIP engaged senior
+    executives at DoD Defense aerospace companies who claimed they possessed recovered
+    "exotic material" not made by any U.S. or foreign source. Because these executives
+    indicated that they could no longer glean additional insight from such material, they initially
+    agreed to allow AATIP/AAWSAP to take custody of the material.
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q1, ¶1'
+  context: 'Sworn Question-for-the-Record response to Rep. Eric Burlison, December 19, 2024; submitted under penalty of 18 U.S.C. § 1001 following the November 13, 2024 House Oversight hearing.'
+  observation_type: relayed
+  statement_date: '2024-12-19'
+  significance: 'Elizondo''s sworn self-attestation of his AATIP role ("senior ranking person") and the foundational AATIP institutional claim — that DoD aerospace company executives claimed possession of recovered "exotic material" not made by U.S. or foreign sources, and that they initially agreed to allow AATIP/AAWSAP to take custody. The 18 U.S.C. § 1001 perjury basis is the highest evidentiary tier available in this artifact.'
+
+- id: q2
+  added_date: '2026-05-19'
+  text: |
+    Yes. The U.S. Government (or a defense contractor) has in its possession exotic
+    materials of nonhuman origin.
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q2, ¶1'
+  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q2 asking whether U.S. military or defense contractors employ exotic materials of non-human or non-terrestrial origin.'
+  observation_type: relayed
+  statement_date: '2024-12-19'
+  significance: 'Single-sentence sworn affirmation of nonhuman-origin material possession by the U.S. Government or a defense contractor. The brevity is itself load-bearing — the response carries no hedge, no scope-limitation, and no source attribution; Elizondo is asserting the fact under penalty of perjury without qualifying language.'
+
+- id: q3
+  added_date: '2026-05-19'
+  text: |
+    (a) Yes. I am aware of several incidents where the U.S. military and certain Defense
+    Contract companies recovered craft/vehicles of non-human origin. In some cases, biological
+    specimens were recovered from such crashes.
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q4(a), ¶1'
+  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q4(a) asking whether the U.S. military or defense contractors have recovered craft of non-human origin and whether non-human entities were associated with these craft.'
+  observation_type: relayed
+  statement_date: '2024-12-19'
+  significance: 'Sworn affirmation that the U.S. military and "certain Defense Contract companies" recovered craft of non-human origin in multiple incidents and that biological specimens were recovered in some cases. The "several incidents" framing introduces multiplicity into the institutional record; the "biological specimens" claim is the most direct sworn statement on non-human biology in the disclosure-era public record.'
+
+- id: q4
+  added_date: '2026-05-19'
+  text: |
+    Several key scientists associated with both AAWSAP and AATIP were part of a
+    conversation, sponsored by the White House in approximately 2004, to determine if the U.S.
+    public was prepared for the acknowledgement of UAP by the U.S. Government. After
+    approximately one week of deliberations, the decision was made that the U.S. Government
+    should not disclose any UAP-related information to the public.
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q4, closing paragraph'
+  context: 'Sworn QFR response, December 19, 2024; appended to the Q4 (recovered craft / biological specimens) response.'
+  observation_type: relayed
+  statement_date: '2024-12-19'
+  significance: 'Attests a 2004 White House–sponsored conversation about whether to disclose UAP information to the public — with the named participation of "Several key scientists associated with both AAWSAP and AATIP" and a stated week-long deliberation ending in a decision against disclosure. The stated week-long deliberation constrains the institutional-decision-against-disclosure narrative; the named participation of AAWSAP/AATIP key scientists constrains the date attribution of the roster to 2004 or earlier in this specific institutional context.'
+
+- id: q5
+  added_date: '2026-05-19'
+  text: |
+    Yes. The CIA opposed the transfer of materials of advanced, non-human origin
+    from Lockheed Martin to Bigelow Aerospace.
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q6, ¶1'
+  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q6 asking about the journalist Christopher Sharp claim regarding Bigelow Aerospace, Lockheed Martin, and CIA blocking of materials transfer.'
+  observation_type: relayed
+  statement_date: '2024-12-19'
+  significance: 'Sworn affirmation of the CIA''s opposition to a Lockheed Martin → Bigelow Aerospace materials transfer of "advanced, non-human origin." The named-entity specificity (CIA, Lockheed Martin, Bigelow Aerospace) and the brevity of the answer make this one of the most concrete institutional attestations in the disclosure-era sworn record.'
+
+- id: q6
+  added_date: '2026-05-19'
+  text: |
+    Yes. I can confirm that specific facilities were identified to enable Bigelow
+    Aerospace to acquire and securely store recovered UAP materials as the new custodian,
+    following their transfer from Lockheed Martin. These facilities included locations in the Las
+    Vegas area and a newly built hangar at the Patuxent River Naval Air Station (“PAX”).
+    Specifically, the PAX River hangar was designed to facilitate the transfer of future materials
+    via air and river. The hangar was purpose-built to meet the requirements of a Special Access
+    Program Facility (“SAP-F”) and was capable of accommodating materials at any
+    classification level. I was informed that funding for the hangar, approximately $10 million,
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q7, ¶1 (first half — pre-page-break)'
+  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q7 asking about the attempt to transfer non-human technology to Bigelow Aerospace from Lockheed Martin during Elizondo''s time at AATIP. First half of Q7 response (the response splits across a PDF page break; second half captured in q16).'
+  observation_type: relayed
+  statement_date: '2024-12-19'
+  significance: 'Sworn affirmation that specific facilities — Las Vegas locations and a newly built Patuxent River Naval Air Station hangar — were identified to enable Bigelow Aerospace to receive UAP materials transferred from Lockheed Martin. The PAX River hangar is described as purpose-built to meet Special Access Program Facility (SAP-F) requirements and capable of accommodating materials at any classification level. The hangar funding is stated as approximately $10 million.'
+
+- id: q16
+  added_date: '2026-05-19'
+  text: |
+    was allocated at the request of then-Representative Steny Hoyer. I have visited this facility;
+    however, as it was a new construction at the time, no materials had yet been transferred.
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q7, ¶1 (second half — post-page-break)'
+  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q7. Second half of the Q7 response (splits across a PDF page break from q6) — names Hoyer as the source of the $10M funding allocation and attests Elizondo''s personal visit to the facility.'
+  observation_type: direct
+  statement_date: '2024-12-19'
+  significance: 'Direct first-hand testimony — Elizondo states "I have visited this facility" — naming then-Representative Steny Hoyer ([`/people/steny-hoyer`]) as the source of the funding-allocation request for the Patuxent River SAP-F hangar described in q6. The "no materials had yet been transferred" closing clause constrains the historical material-custody question to "facility ready, no materials in custody at time of visit."'
+
+- id: q7
+  added_date: '2026-05-19'
+  text: |
+    Yes, and similar obstructionist efforts were also made by the U.S. Air Force.
+    There seemed to be passive resistance from certain elements within the Central Intelligence
+    Agency and a more active campaign by specific factions within the U.S. Air Force to
+    suppress inquiries and investigations into the UAP topic
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q9, ¶1'
+  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q9 asking about CIA efforts to block UAP-related materials or information transfer during Elizondo''s tenure at AATIP.'
+  observation_type: relayed
+  statement_date: '2024-12-19'
+  significance: 'Differentiates CIA "passive resistance" from U.S. Air Force "more active campaign" to suppress UAP inquiries — institutional-actor characterization of two distinct obstructionist patterns rather than a single monolithic blockage. The framing constrains any future analysis that proposes a unified suppression model.'
+
+- id: q8
+  added_date: '2026-05-19'
+  text: |
+    Yes. Many of my former colleagues and I have faced retaliation for our public
+    advocacy for UAP transparency. This has included efforts to suspend or revoke our security
+    clearances, as well as direct threats to our safety and that of our families. Some elements
+    within the DoD and the Intelligence Community ("IC") have engaged in what can only be
+    described as 'administrative terrorism' to deter individuals with security clearances from
+    raising this issue.
+  source:
+    path: government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf
+    location: 'Response to Q10, ¶1'
+  context: 'Sworn QFR response, December 19, 2024; direct answer to Burlison Q10 asking whether the CIA or other government agencies are actively working to conceal UAP-related information from the public.'
+  observation_type: direct
+  statement_date: '2024-12-19'
+  significance: 'First-hand testimony of personal retaliation experience for UAP-transparency advocacy: clearance actions, direct threats to safety and family safety. The "administrative terrorism" phrasing is Elizondo''s own characterization. The "Many of my former colleagues and I" framing pluralizes the retaliation experience across the disclosure-era institutional-actor cohort.'
+
+- id: q9
+  added_date: '2026-05-19'
+  text: |
+    For years, the program investigated reports of unidentified flying objects, according to Defense Department officials, interviews with program participants and records obtained by The New York Times. It was run by a military intelligence official, Luis Elizondo, on the fifth floor of the Pentagon’s C Ring, deep within the building’s maze.
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "WASHINGTON — In the $600 billion annual Defense Department budgets"'
+  context: 'New York Times, "Glowing Auras and ‘Black Money’: The Pentagon’s Mysterious U.F.O. Program," by Helene Cooper, Ralph Blumenthal and Leslie Kean, December 16, 2017 — first public reporting on AATIP.'
+  observation_type: relayed
+  statement_date: '2017-12-16'
+  significance: 'Third-party institutional attestation of Elizondo''s AATIP role at the moment of program disclosure. The "fifth floor of the Pentagon''s C Ring" location specificity is documented only here in the publicly-archived record; corroborates the QFR Q1 self-attestation seven years later via a fully independent source path (NYT interviews with Defense Department officials and program participants).'
+
+- id: q10
+  added_date: '2026-05-19'
+  text: |
+    But Mr. Elizondo said the only thing that had ended was the effort’s government funding, which dried up in 2012. From then on, Mr. Elizondo said in an interview, he worked with officials from the Navy and the C.I.A. He continued to work out of his Pentagon office until this past October, when he resigned to protest what he characterized as excessive secrecy and internal opposition.
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "But Mr. Elizondo said the only thing that had ended"'
+  context: 'NYT December 16, 2017; Elizondo on-record statement to Cooper/Blumenthal/Kean characterizing the post-2012 funding-vs-program continuity question and his October 2017 resignation rationale.'
+  observation_type: relayed
+  statement_date: '2017-12-16'
+  significance: 'Elizondo''s on-record (non-sworn) framing of the AATIP funding-cessation vs. program-continuity question — government funding ended 2012, but the effort itself continued with Navy and CIA collaboration through to his October 2017 resignation. The "excessive secrecy and internal opposition" framing of the resignation is reproduced verbatim from the article''s reporting.'
+
+- id: q11
+  added_date: '2026-05-19'
+  text: |
+    “Why aren’t we spending more time and effort on this issue?” Mr. Elizondo wrote in a resignation letter to Defense Secretary Jim Mattis.
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "But Mr. Elizondo said the only thing that had ended"'
+  context: 'NYT December 16, 2017; quoted excerpt from Elizondo''s resignation letter dated October 4, 2017 addressed to Defense Secretary Jim Mattis.'
+  observation_type: direct
+  statement_date: '2017-10-04'
+  significance: 'Verbatim excerpt from Elizondo''s resignation letter as reported by NYT. The letter itself is unarchived in this repository (flagged stub [`/documents/elizondo-resignation-letter-2017`] per the corpus convention) — NYT''s reporting is the proximate source for the excerpt.'
+
+- id: q12
+  added_date: '2026-05-19'
+  text: |
+    Mr. Elizondo, in his resignation letter of Oct. 4, said there was a need for more serious attention to “the many accounts from the Navy and other services of unusual aerial systems interfering with military weapon platforms and displaying beyond-next-generation capabilities.”
+  source:
+    path: news/nyt-glowing-auras-pentagon-ufo-20171216.html
+    location: '¶ beginning "Mr. Elizondo, in his resignation letter of Oct. 4"'
+  context: 'NYT December 16, 2017; NYT-reported quotation from Elizondo''s October 4, 2017 resignation letter to Defense Secretary Jim Mattis.'
+  observation_type: relayed
+  statement_date: '2017-10-04'
+  significance: 'NYT-mediated verbatim excerpt of Elizondo''s resignation-letter framing of "the many accounts from the Navy and other services" and "beyond-next-generation capabilities." Pairs with q11 to bound the resignation-letter rhetorical content per NYT reporting; resignation letter itself remains unarchived in the corpus.'
+
+- id: q13
+  added_date: '2026-05-19'
+  text: |
+    [3:52] uh I got
+    [3:54] there in 2008 uh it was probably early
+    [3:57] 2009 is when I was approached by two
+    [3:59] individuals who came to me and they said
+    [4:02] look um we'd like to consider you for
+    [4:04] for for a program that we're we're part
+    [4:07] of um it's a very nuanced program very
+    [4:10] secretive program
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[3:52]'
+  context: 'Joe Rogan Experience #2194, August 23, 2024; Elizondo''s self-attestation of his 2009 recruitment into the AATIP-era program by two unnamed individuals.'
+  observation_type: direct
+  statement_date: '2024-08-23'
+  significance: 'Elizondo''s first-hand narrative of his early-2009 recruitment into AATIP at his Pentagon office, prior to meeting Dr. James Lacatski. The "two individuals" identification is unattributed and unsourced beyond Elizondo''s own recollection here; institutional context constrains them to AATIP-era program operators.'
+
+- id: q14
+  added_date: '2026-05-19'
+  text: |
+    [5:53] but
+    [5:55] I went there and I went up to the to the
+    [5:57] top floor uh I think it was the top
+    [5:59] floor almost the top floor and I met for
+    [6:02] the first time a gentleman named James
+    [6:04] latky Dr James latsky PhD and this guy
+    [6:08] was the epitome of a rocket scientist um
+    [6:11] and when I say the epitome I mean he was
+    [6:13] probably and there's no exaggeration the
+    [6:15] number one rocket scientist in the US
+    [6:17] government
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[5:53]'
+  context: 'Joe Rogan Experience #2194, August 23, 2024; Elizondo''s self-attestation of his first meeting with Dr. James Lacatski ([`/people/james-lacatski`]) at an unnamed DC-area facility shortly after his 2009 recruitment.'
+  observation_type: direct
+  statement_date: '2024-08-23'
+  significance: 'Elizondo''s first-hand narrative of his initial Lacatski meeting and his characterization of Lacatski as "the number one rocket scientist in the US government." The caption-orthography forms "latky" and "latsky" appear in the same passage — both auto-caption renderings of "Lacatski"; preserved verbatim per the transcript-provenance auto-caption discipline.'
+
+- id: q15
+  added_date: '2026-05-19'
+  text: |
+    [7:18] I've never been a UFO guy you know people come up
+    [7:21] like oh you're that UFO guy I'm really
+    [7:23] not I I was never really into science
+    [7:25] fiction as a kid um I wasn't into the
+    [7:28] Star Trek or the Star Wars
+  source:
+    path: transcripts/jre-2194-elizondo-2024-downloaded.md
+    location: '[7:18]'
+  context: 'Joe Rogan Experience #2194, August 23, 2024; Elizondo''s self-attestation of his pre-AATIP disposition toward the UFO topic.'
+  observation_type: direct
+  statement_date: '2024-08-23'
+  significance: 'Elizondo''s self-characterization as "never been a UFO guy" — the framing distinguishes his disclosure-era public role from a pre-existing UFO-research personal interest. The framing positions his AATIP involvement as institutional-assignment-driven rather than topical-affinity-driven.'
+
+naming_quirks:
+- id: nq1
+  added_date: '2026-05-19'
+  observed: 'latky'
+  canonical: 'Lacatski'
+  location: 'transcripts/jre-2194-elizondo-2024-downloaded.md, [6:02]'
+  source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Lacatski" in JRE #2194 transcript. The caption alternates between "latky" and "latsky" within the same passage at [6:02]–[6:04]. Both forms preserved verbatim in quote q14 per the transcript-provenance auto-caption discipline; canonical reference at [`/people/james-lacatski`].'
+- id: nq2
+  added_date: '2026-05-19'
+  observed: 'latsky'
+  canonical: 'Lacatski'
+  location: 'transcripts/jre-2194-elizondo-2024-downloaded.md, [6:04]'
+  source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Lacatski" in JRE #2194 transcript at [6:04]. See companion entry nq1 for the "latky" rendering at [6:02].'
+- id: nq3
+  added_date: '2026-05-19'
+  observed: 'langly'
+  canonical: 'Langley'
+  location: 'transcripts/jre-2194-elizondo-2024-downloaded.md, [2:26]'
+  source_path: transcripts/jre-2194-elizondo-2024-downloaded.md
+  resolution: preserve-as-sic-in-quotes
+  note: 'YouTube auto-caption rendering of "Langley" (referring to the CIA Langley headquarters in Northern Virginia) in JRE #2194 at [2:26]. Not currently quoted in this artifact; logged for future-quote discipline.'
+
+rumors: []
+
+credibility_notes: 'Elizondo''s evidentiary posture is anchored by the December 19, 2024 sworn Question-for-the-Record response to Rep. Burlison ([`/people/eric-burlison`]), which is made under penalty of 18 U.S.C. § 1001. This is the highest evidentiary tier in this artifact set — eight quotes (q1–q8) are drawn from that document. The sworn QFR framing of materials-related claims (Q1: AATIP custody, Q2: nonhuman-origin materials possession, Q4a: craft and biological-specimen recovery, Q6: CIA opposition to Lockheed→Bigelow transfer, Q7: PAX River SAP-F hangar) is the highest-evidentiary-tier institutional-actor attestation in the disclosure-era public record on these topics.
+
+
+  The 2017 New York Times reporting by Helene Cooper, Ralph Blumenthal and Leslie Kean (December 16, 2017) provides third-party institutional confirmation of Elizondo''s AATIP role at the moment of program disclosure ("It was run by a military intelligence official, Luis Elizondo, on the fifth floor of the Pentagon''s C Ring") and contemporaneous on-record characterization of his resignation rationale ("excessive secrecy and internal opposition"). The resignation letter itself dated October 4, 2017 to Defense Secretary Jim Mattis ([`/people/jim-mattis`]) is currently not archived in this repository ([`/documents/elizondo-resignation-letter-2017`] is a flagged stub per the corpus convention); NYT-mediated quotation (q11, q12) is the proximate verbatim source.
+
+
+  The Joe Rogan Experience #2194 of August 23, 2024 is an on-record (non-sworn) long-form interview source. Elizondo''s narrative of his 2009 recruitment by Dr. James Lacatski ([`/people/james-lacatski`]) (q13, q14) is self-attested and uncorroborated by other primary sources in this artifact set. The auto-caption typos for "Lacatski" ("latky", "latsky") are preserved in quote text per the transcript-provenance auto-caption discipline; the naming_quirks entries record the source-form → canonical mapping.
+
+
+  No commercial or financial UAP-related affiliation is documented in the primary sources here other than Elizondo''s 2017 co-founding role at To the Stars Academy of Arts and Science ([`/organizations/ttsa`]) per NYT 2017. His current Buffalo, Wyoming P.O. Box 337 mailing address per the QFR cover letter constrains his geographic posture post-resignation; subsequent commercial engagement (book authorship, media appearances) is not catalogued in this artifact set.'
+
+entities_referenced:
+- id: e1
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'Advanced Aerospace Threat Identification Program (AATIP)'
+  wrap_path: /organizations/aatip
+  context_summary: 'Program Elizondo led per his QFR Q1 self-attestation and NYT 2017 reporting.'
+- id: e2
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'Advanced Aerospace Weapon System Application Program (AAWSAP)'
+  wrap_path: /organizations/aawsap
+  context_summary: 'AATIP companion program; Elizondo''s QFR responses reference AAWSAP/AATIP jointly on materials-custody and funding questions.'
+- id: e3
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'Department of Defense'
+  wrap_path: /organizations/dod
+  context_summary: 'Elizondo''s employing institution during AATIP role per QFR Q1.'
+- id: e4
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'Office of the Director of National Intelligence'
+  wrap_path: /organizations/odni
+  context_summary: 'Elizondo''s 2008 pre-AATIP role per JRE #2194 self-attestation.'
+- id: e5
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'To the Stars Academy of Arts and Science'
+  wrap_path: /organizations/ttsa
+  context_summary: 'Post-resignation commercial venture Elizondo joined with Hal Puthoff and Christopher Mellon per NYT December 2017.'
+- id: e6
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'Lockheed Martin'
+  wrap_path: /organizations/lockheed-martin
+  context_summary: 'Named in QFR Q6/Q7 as the named originator of the proposed materials transfer to Bigelow Aerospace.'
+- id: e7
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'Bigelow Aerospace'
+  wrap_path: /organizations/bigelow-aerospace
+  context_summary: 'Named in QFR Q6/Q7 as the named recipient of the proposed Lockheed Martin materials transfer; also the AATIP contract recipient per NYT 2017.'
+- id: e8
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'Central Intelligence Agency'
+  wrap_path: /organizations/cia
+  context_summary: 'Named in QFR Q6/Q9 as opposing the Lockheed → Bigelow transfer (Q6) and as a source of "passive resistance" to UAP inquiries (Q9).'
+- id: e9
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'United States Army'
+  wrap_path: /organizations/us-army
+  context_summary: 'Elizondo''s pre-2008 service per JRE #2194 self-attestation.'
+- id: e10
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'United States Air Force'
+  wrap_path: /organizations/us-air-force
+  context_summary: 'Named in QFR Q9 as the source of a "more active campaign by specific factions" to suppress UAP inquiries.'
+- id: e11
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'United States Navy'
+  wrap_path: /organizations/us-navy
+  context_summary: 'Per NYT 2017, Elizondo "worked with officials from the Navy and the C.I.A." in the post-2012-funding-cessation phase of the program.'
+- id: e12
+  added_date: '2026-05-19'
+  entity_type: organization
+  name: 'The New York Times'
+  wrap_path: /organizations/the-new-york-times
+  context_summary: 'Publisher of the December 16, 2017 article that publicly introduced AATIP and Elizondo.'
+- id: e13
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'James Lacatski'
+  wrap_path: /people/james-lacatski
+  context_summary: 'Recruited Elizondo into the AATIP-era program in early 2009 per JRE #2194 self-attestation; author of the DOPSR-cleared September 6, 2023 statement cited in QFR Q1.'
+- id: e14
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Hal Puthoff'
+  wrap_path: /people/hal-puthoff
+  context_summary: 'TTSA co-founder per NYT December 2017.'
+- id: e15
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Christopher Mellon'
+  wrap_path: /people/christopher-mellon
+  context_summary: 'TTSA co-founder per NYT December 2017; former Deputy Assistant Secretary of Defense for Intelligence.'
+- id: e16
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Harry Reid'
+  wrap_path: /people/harry-reid
+  context_summary: 'Then-Senate Majority Leader who initially funded AATIP per NYT 2017.'
+- id: e17
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Robert Bigelow'
+  wrap_path: /people/robert-bigelow
+  context_summary: 'Bigelow Aerospace founder; AATIP contract recipient per NYT 2017.'
+- id: e18
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Helene Cooper'
+  wrap_path: /people/helene-cooper
+  context_summary: 'NYT December 2017 co-author.'
+- id: e19
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Ralph Blumenthal'
+  wrap_path: /people/ralph-blumenthal
+  context_summary: 'NYT December 2017 co-author.'
+- id: e20
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Leslie Kean'
+  wrap_path: /people/leslie-kean
+  context_summary: 'NYT December 2017 co-author.'
+- id: e21
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Eric Burlison'
+  wrap_path: /people/eric-burlison
+  context_summary: 'House Oversight subcommittee member who submitted the Dec 9, 2024 QFR letter; addressee of Elizondo''s December 19, 2024 sworn responses.'
+- id: e22
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Steny Hoyer'
+  wrap_path: /people/steny-hoyer
+  context_summary: 'Then-Representative who allocated ~$10M for the PAX River SAP-F hangar per QFR Q7.'
+- id: e23
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Jim Mattis'
+  wrap_path: /people/jim-mattis
+  context_summary: 'Defense Secretary addressee of Elizondo''s October 4, 2017 resignation letter per NYT 2017.'
+- id: e24
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Nancy Mace'
+  wrap_path: /people/nancy-mace
+  context_summary: 'Subcommittee on Cybersecurity, Information Technology, and Government Innovation Chairwoman; co-signer of the Dec 9, 2024 QFR cover letter.'
+- id: e25
+  added_date: '2026-05-19'
+  entity_type: person
+  name: 'Glenn Grothman'
+  wrap_path: /people/glenn-grothman
+  context_summary: 'Subcommittee on National Security, the Border, and Foreign Affairs Chairman; co-signer of the Dec 9, 2024 QFR cover letter.'
+- id: e26
+  added_date: '2026-05-19'
+  entity_type: event
+  name: 'November 13, 2024 House Oversight UAP hearing'
+  wrap_path: /events/2024-11-13-house-oversight-uap-hearing
+  context_summary: 'Hearing at which Elizondo testified; the QFR responses follow from this hearing.'
+- id: e27
+  added_date: '2026-05-19'
+  entity_type: document
+  name: 'Elizondo QFR responses to Rep. Burlison (Dec 19, 2024)'
+  wrap_path: /documents/elizondo-qfr-burlison-20241219
+  context_summary: 'The sworn QFR document itself is built as a document node in the corpus; this artifact draws 8 quotes from its primary-source text.'
+- id: e28
+  added_date: '2026-05-19'
+  entity_type: document
+  name: 'Elizondo resignation letter to Mattis (Oct 4, 2017)'
+  wrap_path: /documents/elizondo-resignation-letter-2017
+  context_summary: 'Flagged stub per the corpus convention; NYT 2017 carries the only verbatim excerpts archived in the corpus.'
+- id: e29
+  added_date: '2026-05-19'
+  entity_type: transcript
+  name: 'Joe Rogan Experience #2194 with Luis Elizondo'
+  wrap_path: /transcripts/jre-2194-elizondo-2024
+  context_summary: 'The August 23, 2024 long-form podcast interview that q13–q15 draw from; the underlying transcript node is referenced but not yet built in the corpus.'

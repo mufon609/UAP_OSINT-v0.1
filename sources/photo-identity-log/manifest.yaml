@@ -195,6 +195,32 @@
   added_date: '2026-05-18'
   source_video_url: https://www.youtube.com/watch?v=dnnpyNuPdXs
   note: BTS wide-shot of Jesse Michels at 0:15; smaller-bbox second-angle reference complementing the 10:00 solo close-up baseline.
+- identity: joe-rogan
+  path: baselines/joe-rogan/ref_01.jpg
+  sha256: ae6f2374380d7aac67391511875be075b89160590a329765742430b1cb4da74d
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '1:07:32'
+  bbox:
+  - 440
+  - 133
+  - 152
+  - 152
+  added_date: '2026-05-19'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 with Elizondo; bald, headphones, podcast studio'
+- identity: joe-rogan
+  path: baselines/joe-rogan/ref_02.jpg
+  sha256: 296152da2db71a8bf40a75be8138c3c7ec1959ab0e2b76baa628a55a9bfde02c
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '33:46'
+  bbox:
+  - 418
+  - 142
+  - 174
+  - 174
+  added_date: '2026-05-19'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 with Elizondo; alt pose, smiling'
 - identity: joni-ernst
   path: baselines/joni-ernst/ref_01.jpg
   sha256: f1c0893dbf0eb15fab40991723e9c713e1a0198285c0c662b2a649380f978452
@@ -219,6 +245,32 @@
   - 164
   added_date: '2026-05-19'
   note: Haar-detected close-up during Gillibrand's chair opening statement. 'MRS. GILLIBRAND' placard visible in adjacent anchor (1:55:00 wide / 1:54:00) confirms identity. Senator Kirsten Gillibrand (D-NY), Chair of SASC Subcommittee on Emerging Threats. White hair, light blue top, dark blazer. 2023-04-19 SASC AARO hearing.
+- identity: luis-elizondo
+  path: baselines/luis-elizondo/ref_01.jpg
+  sha256: a599600fd54c9cdf26b79a4ea6b3cb1ce879ce04c3a6829ae23c2ccec048bd84
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '1:48:03'
+  bbox:
+  - 378
+  - 68
+  - 202
+  - 202
+  added_date: '2026-05-19'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 appearance; gray cap, three-quarter view'
+- identity: luis-elizondo
+  path: baselines/luis-elizondo/ref_02.jpg
+  sha256: b846ac7c4551087d79b7e5d3b34445ef550cf808f4407e15cbf6405390081a27
+  source_video_path: sources/video/jre-2194-elizondo-2024.mp4
+  source_timestamp: '1:48:03'
+  bbox:
+  - 416
+  - 140
+  - 99
+  - 99
+  added_date: '2026-05-19'
+  source_video_url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  note: 'JRE #2194 appearance; gray cap, tighter crop'
 - identity: meagan-medick
   path: baselines/meagan-medick/ref_01.jpg
   sha256: f499c18ec0a771364103436af47bc2fe8fb4dd398622c3f1a0814e3bb7f9e44b

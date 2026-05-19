@@ -3686,6 +3686,15 @@
   note: 'YouTube auto-captions for Calling All Beings #104 with Alex Dietrich (~1:11:38). Published 2024-01-05. Discusses UAP activism, Sol Foundation conference attendance, Inquiry into the Anomalous Experience Conference.'
   wayback_date: '2026-04-22'
   transcript_provenance: auto-caption
+- url: https://www.youtube.com/watch?v=9gLPtRwXgCM
+  format: transcript
+  status: archived
+  path: transcripts/jre-2194-elizondo-2024-downloaded.md
+  archived_date: '2026-05-19'
+  sha256: 97b4fb010811141483ef64b3c15752ff8fcaab5b73b8b77cfe06d32814ed048e
+  archive_status: 1
+  transcript_provenance: auto-caption
+  note: 'Joe Rogan Experience #2194 with Luis Elizondo (2024-08-23, 2h 15m)'
 - url: https://www.youtube.com/watch?v=C4rSj5Aum7w
   format: video
   status: archived
