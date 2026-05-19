@@ -414,10 +414,9 @@ per-phase validation output IS each agent's handoff stub.
 - **After verifier** (source archival): `manifest_parse`,
   `manifest_value_enums`, `manifest_archive_status`,
   `manifest_checksums`, `manifest_checksum_at_extraction`,
-  `manifest_extraction_type`.
-- **After marker** (quote extraction): `verbatim_quotes`
-  (artifact-side post-C4), `quotes`, `speakers`,
-  `speaker_baseline_consistency`.
+  `manifest_extraction_type`, `manifest_artifact_shape`.
+- **After marker** (quote extraction): `verbatim_quotes`,
+  `quotes`, `speakers`, `speaker_baseline_consistency`.
 - **After manager** (free-prose synthesis): `prose_drift`,
   `description_token_drift`, `top_scope_activity`,
   `corroboration_items`, `vouching_chain`, `hypotheses`,
@@ -526,11 +525,11 @@ Add `build-md-spec.py --check` as a new pre-commit gate (parallel to
 The narrative + discipline portions of `prompts/build.md` stay hand-
 written. Only the dispatch-table enumeration auto-generates.
 
-Complementary to C4's artifact-side verbatim-quote move; both reduce
-duplication between governance docs and source-of-truth layers
-(schema / artifact). Not strictly correctness-required as a one-time
-fix, but closes the documentation-drift surface for forks and schema
-evolution.
+Same shape as the (now-shipped) artifact-side verbatim-quote
+move: reduce duplication between governance docs and source-of-
+truth layers (schema / artifact). Not strictly correctness-required
+as a one-time fix, but closes the documentation-drift surface for
+forks and schema evolution.
 
 **A2 effect:** retired in full when A2 replaces the monolithic
 `prompts/build.md` narrative with per-agent prompts. Until A2
