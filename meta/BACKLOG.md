@@ -96,8 +96,7 @@ settled; implementation co-lands with A2):**
 - **A1** — entities_referenced[] body rendering (orthogonal
   renderer decision)
 - **C34** — schema↔CLI parity check (orthogonal mechanism question;
-  no known concrete drift instance after C29 closed the manifest
-  URL-uniqueness gap)
+  no known concrete drift instance)
 
 ---
 
@@ -525,11 +524,10 @@ Add `build-md-spec.py --check` as a new pre-commit gate (parallel to
 The narrative + discipline portions of `prompts/build.md` stay hand-
 written. Only the dispatch-table enumeration auto-generates.
 
-Same shape as the (now-shipped) artifact-side verbatim-quote
-move: reduce duplication between governance docs and source-of-
-truth layers (schema / artifact). Not strictly correctness-required
-as a one-time fix, but closes the documentation-drift surface for
-forks and schema evolution.
+Reduces duplication between governance docs and source-of-truth
+layers (schema / artifact). Not strictly correctness-required as a
+one-time fix, but closes the documentation-drift surface for forks
+and schema evolution.
 
 **A2 effect:** retired in full when A2 replaces the monolithic
 `prompts/build.md` narrative with per-agent prompts. Until A2
@@ -881,23 +879,17 @@ may be acceptable. C33 should not implement until C35 resolves.
 
 ### C34 — Schema↔CLI parity check
 
-The schema (`meta/schema.yaml::manifest_entry`) and the CLI
-(`scripts/tools/manifest.py`'s commands) drift independently. The
-JRE #2194 walkthrough originally surfaced a concrete case (C29 —
-schema declared no URL-uniqueness constraint while `cmd_add`
-enforced URL-uniqueness via silent early-return). C29 closed that
-specific instance by aligning schema + CLI behind the artifacts-
-under-URL model and adding a validator check
-(`manifest_artifact_shape`) for the invariants. The general
-question — what mechanism asserts CLI implements schema — remains
-unresolved; C34 now has no known concrete drift instance to design
-against.
-
-The pattern is general. CLI commands carry implicit assumptions
+The schema (`meta/schema.yaml`) and the CLIs in `scripts/tools/`
+can drift independently. CLI commands carry implicit assumptions
 about uniqueness, ordering, dedup keys, and matching semantics
 that aren't declared in the schema and aren't checked against the
 schema. The gap is invisible until contributor workflow exercises
 a permitted-by-schema-but-forbidden-by-CLI case.
+
+No known concrete drift instance currently exists in the corpus.
+The entry stays open as a mechanism question worth designing
+against once a second drift case surfaces; until then, there's
+nothing to design against.
 
 **The actual question:** what mechanism asserts that CLI commands
 implement the same data model the schema declares?
@@ -934,11 +926,9 @@ need to honor); `scripts/build/research-scaffold.py`,
 CLI tools whose behavior implicitly assumes schema semantics).
 
 **Blocks:** none.
-**Blocked by:** none directly. The parity-mechanism question is
-unblocked, but has no known concrete drift instance to design
-against — C29 closed the URL-uniqueness gap that originally
-motivated the entry. Await another corpus-surfaced mismatch
-before designing the parity mechanism.
+**Blocked by:** none. The parity-mechanism question is unblocked
+but has no known concrete drift instance to design against. Await
+a corpus-surfaced mismatch before implementing.
 
 ### C35 — Retire `p. N, ¶M` page-anchored location convention?
 
