@@ -53,12 +53,18 @@ graph below shows what blocks what, and what A2 retires or absorbs
 on landing. Cross-reference lines on individual items name their
 position in the graph.
 
-**Tier 0 — A2 prerequisites (must resolve first; can land
-independently in any order):**
+**Tier 0 — A2 prerequisites (must resolve first):**
 
 - **C29** — manifest URL ↔ artifacts model
+- **C35** — retire `p. N, ¶M` page-anchored location convention?
+  *(blocks C33 implementation; not originally an A2 prerequisite
+  but transitively in the chain)*
 - **C33** — verbatim-quote normalization architecture
+  *(implementation waits on C35)*
 - **A3** — quote-section redesign
+
+Within Tier 0, C29 / A3 are independent and can land in any order;
+C35 and C33 are sequenced (C35 first, then C33).
 
 **Tier 1 — A2 sub-task (scoped after A2's agent decomposition is
 settled; implementation co-lands with A2):**
@@ -896,31 +902,43 @@ fields (`description`, `background`, `top_relevance`,
 
 The `normalize_for_compare` helper in `scripts/lib/_common.py`
 (consumed by the verbatim-quote check) accumulates per-symptom
-normalizations: form-feed character stripping (PDF page-break
-artifacts), `[MM:SS]` / `[H:MM:SS]` caption-timestamp stripping
-(YouTube auto-caption sources), whitespace collapsing. Each was
-added reactively when a failure mode surfaced.
+normalizations: curly-quote → straight (U+201C/U+201D, U+2018/U+2019),
+em/en dash → hyphen → strip, `[MM:SS]` / `[H:MM:SS]` caption-timestamp
+stripping (YouTube auto-caption sources), Markdown blockquote-prefix
+stripping, HTML-entity decoding, whitespace collapsing. Form-feed
+characters collapse via the whitespace rule. Each rule was added
+reactively when a failure mode surfaced.
 
-Two known classes of failure mode are not currently normalized:
+**One known class of failure mode is not currently normalized:**
 
 - **PDF page-number footers.** A multi-page-spanning quote whose
   source extract carries a bare digit ("3") between the body-text
   lines (page-3 footer + form feed + next-page content) fails the
-  substring match. The validator strips the form feed but not the
-  digit. Contributors work around this by splitting quotes at page
-  breaks; the workaround is functional but reader-hostile (one
-  logical passage becomes two artificial quotes).
-- **Curly-quote vs. straight-quote drift.** PDF sources that
-  contain typographically-correct `“` / `”` characters (U+201C /
-  U+201D) fail substring match when the artifact text was authored
-  with straight `"`. Contributors work around this by using the
-  source's curly-quote form verbatim; the workaround is functional
-  but propagates a presentation-layer choice into the artifact-
-  layer text.
+  substring match. The validator collapses the form feed to a
+  space but the digit stays. Contributors work around this by
+  splitting quotes at page breaks; the workaround is functional but
+  reader-hostile (one logical passage becomes two artificial quotes).
 
-The reactive-patch trajectory continues — each new failure mode
-adds a new normalization rule. The question is whether a more
-principled abstraction is reachable.
+**The original BACKLOG framing also named a curly-quote failure
+mode; investigation determined this claim was stale.** Lines 796–797
+of `normalize_for_compare` already map U+201C/U+201D and U+2018/U+2019
+to straight quotes on both sides. Corpus census confirms standard
+curly variants are handled. Exotic variants (U+201E low-9, U+00AB/BB
+guillemets, U+2032/U+2033 primes) occur in <250 total positions
+across 333 text-extractable source files and have not surfaced as
+failure modes; no current action required for them.
+
+The reactive-patch trajectory was forward-looking when the entry
+was written. The pile has converged: one remaining concrete failure
+mode (page-footer digits) plus exotic-quote variants that may never
+fail. The question of whether a more principled abstraction is
+reachable is partly answered by the convergence — but page-footer-
+digit handling specifically intersects with the open structural
+question in **C35** (retire `p. N, ¶M` page-anchored locations in
+favor of grep-based navigation). If C35 retires the convention,
+the page-footer failure mode's contributor cost drops sharply
+(quotes spanning page boundaries are less common when locations
+aren't page-anchored), and C33 narrows further.
 
 **The actual question:** what is the right separation between
 "source content" (the substring the check should match against)
@@ -928,29 +946,35 @@ and "source presentation noise" (the page footers, fonts, glyph
 substitutions, layout artifacts that mechanically appear in
 extracted text but shouldn't gate verbatim verification)?
 
-Candidate resolutions:
+Candidate resolutions (for the one remaining failure mode,
+page-footer digits):
 
-- **Targeted addition.** Add normalizations for the two known
-  classes (page-footer digits, curly-quote → straight-quote)
-  without changing the architecture. Closes the immediate cases
-  at the cost of one more reactive patch on the pile.
-- **PDF-layer abstraction.** Make `extract_source_text` produce a
-  more aggressively-cleaned text layer (drop page-footer digits,
-  unify quote characters, normalize ligatures) before substring
-  comparison even happens; the normalization moves from check-time
-  to extraction-time. Pre-validates a known-clean comparison
-  surface; risks losing fidelity for legitimate digit / quote
-  content in source body text.
+- **Targeted addition in `normalize_for_compare`.** Add a regex
+  stripping bare-digit-only lines adjacent to form feeds in the
+  comparison primitive. Wrong layer architecturally (page footers
+  aren't a comparison concern; they're an extraction artifact)
+  but lowest implementation cost.
+- **PDF-layer abstraction in `extract_source_text`.** Strip the
+  bare-digit footer lines at extraction time — `\n\s*\d+\s*\n(?=\f)`
+  applied to PDF output before downstream consumers see it. All
+  three consumers (verbatim-quote, prose-drift, description-drift)
+  benefit with no per-check change. Form feed itself stays —
+  consumed by `scripts/tools/normalize-locations.py` for page-
+  number computation. Conservative: only strips lines that are
+  *exclusively* whitespace + digits adjacent to form feeds; random
+  content digits stay.
 - **Per-quote whitelist for known artifacts.** Each quote that
   spans a known-noise pattern declares the pattern explicitly via
   a new artifact field (e.g., `source.spans_page_break: true`).
   Validator suppresses substring check around the declared
-  artifact location. Most explicit; most contributor-burden.
+  artifact location. Most explicit; most contributor-burden;
+  doesn't scale.
 - **Question whether substring is the right primitive.** Move from
-  substring match to a token-sequence match (tokenize quote +
-  source, compare sequences after both have presentation noise
-  stripped). Most architecturally invasive; closes the door on
-  multiple classes of presentation drift simultaneously.
+  substring match to a token-sequence match. Most architecturally
+  invasive; closes the door on multiple classes of presentation
+  drift simultaneously, but trades substring's clear failure
+  semantics for tokenization edge cases (split-column reflow,
+  list-item interleaving). Over-engineered for the converged pile.
 
 **Surfaces an investigation has to walk:** `scripts/lib/_common.py`
 (the `normalize_for_compare` and `extract_source_text` helpers);
@@ -962,7 +986,10 @@ drift via contributor declaration rather than mechanical
 normalization).
 
 **Blocks:** A2 (marker-agent extraction primitive).
-**Blocked by:** none.
+**Blocked by:** none directly. Outcome shape depends on C35 — if
+C35 retires page-anchored locations, the page-footer failure mode
+becomes rare enough that targeted addition or even status-quo
+may be acceptable. C33 should not implement until C35 resolves.
 
 ### C34 — Schema↔CLI parity check
 
@@ -1020,4 +1047,140 @@ manifest URL-uniqueness gap, which is precisely what C29 hasn't
 decided). The parity-mechanism question itself is unblocked, but
 has no second drift instance to design against until C29 resolves
 or the corpus surfaces another mismatch.
+
+### C35 — Retire `p. N, ¶M` page-anchored location convention?
+
+**Open structural question.** Every quote in `meta/research/*.yaml`
+carries a `source.location` field anchoring the quoted passage
+within the cited source. `meta/conventions.md` "Quote location
+refs" enforces a canonical form per source-shape: `p. N, ¶M` for
+paginated PDFs, `¶N` for unpaginated short documents, `[MM:SS]`
+for caption / audio / video, `Doc N` for FOIA email-release
+siblings, etc. The location is reader-facing — the renderer emits
+a `| Location | ... |` row in every quote's verification block so
+a reader can navigate to the passage within the cited source.
+
+**The proposal under investigation.** Retire the page-anchored
+location forms (`p. N, ¶M`, `p. N`) in favor of grep-based
+navigation: the source is archived locally, the quote text is
+verbatim, a reader finds the passage by searching the source for
+the quote text. Implication: `source.location` either drops or
+narrows to forms that grep can't replace (timestamps for audio /
+video, document-block markers for FOIA email releases).
+
+**What the reader actually does.** For most sources in the
+corpus (short documents, news articles, single-page memos), the
+reader opens the archived source and locates the quote by
+ctrl-F / `grep` on its text. The `p. N, ¶M` ref provides no
+information beyond what grep produces. For long-form sources
+(200-page hearing transcripts, multi-document FOIA releases,
+government reports with section structure), the page ref is a
+shortcut — without it, the reader greps a 200-page PDF and
+maybe finds multiple matches.
+
+**What the contributor pays today.** Maintaining `p. N, ¶M`
+discipline carries real costs:
+
+- Extraction-version dependence: `pdftotext` page numbers shift
+  when the extract is regenerated against a clean-text sibling
+  (the OCR-scan / extraction-lossy recovery path produces
+  different page boundaries than the underlying PDF). The
+  `meta/conventions.md` "source-anchored, not extraction-
+  anchored" rule documents this fragility.
+- Page-footer normalization pain (parent of **C33**'s remaining
+  failure mode): substring matching breaks at page boundaries
+  because pdftotext emits page-number digits in extracted text.
+- `scripts/tools/normalize-locations.py` is one of the more
+  complex contributor tools — exists to detect / report
+  extraction-version-dependent location refs and propose
+  canonical forms. If page-anchored refs retire, this tool
+  retires with them.
+
+**What grep-based navigation costs.**
+
+- Long-form sources: reader doesn't get the page-shortcut.
+  Mitigation: many PDF viewers' search produces results-with-
+  context that approximates a page ref. Acceptable for most
+  readers; potentially worse for citation discipline (academic-
+  style references that quote "p. 47" carry institutional
+  weight grep doesn't).
+- Sources where the quote text appears multiple times: grep
+  alone is ambiguous. Mitigation: `context` field (already
+  populated on most quotes) disambiguates which occurrence is
+  meant.
+- Sources that don't grep at all: video / audio / scanned PDFs
+  without text layers. These keep their timestamp / document-
+  block / `lines N-M of the extract` locations regardless —
+  the proposal is about retiring page-anchored forms, not all
+  location forms.
+
+**Source-shape category walk** (the investigation has to do this
+properly before any retirement):
+
+| Source shape | Current location form | Grep-navigable? | Retire ref? |
+|---|---|---|---|
+| Short PDF / news article (1–5 pages) | `p. N, ¶M` or `¶N` | Yes | Likely yes |
+| Long PDF (hearing, report, study) | `p. N, ¶M` | Mostly yes; long-form is the edge case | Investigate per-document |
+| HTML article | `¶N` | Yes | Likely yes |
+| TXT / Markdown source | `¶N` or line-based | Yes | Likely yes |
+| Caption / auto-caption transcript | `[MM:SS]` | Sort of (no easy ctrl-F on bare timestamps) | No — timestamps are content-anchored |
+| Audio / video source | `[MM:SS]` | No | No |
+| Scanned PDF (`ocr-scan` flag) | `p. N, ¶M` against `.txt` sibling | Yes against sibling | Likely yes |
+| FOIA email release with `DOCUMENT N` markers | `Doc N, Sender YYYY-MM-DD HH:MM` | Yes via `Doc N` marker | No — markers ARE content-anchored, not page-anchored |
+| Image / photo (visual text) | spatial anchor (e.g., `HUD bottom-right`) | No | No |
+
+**Candidate resolutions:**
+
+- **Full retire.** Drop `p. N, ¶M` entirely. `source.location` becomes
+  optional (timestamp / Doc-N / spatial-anchor / `¶N` only). Renderer
+  omits Location row when location is empty. Existing quotes' `p. N`
+  refs migrate to `¶N`-only or drop. Most aggressive simplification.
+- **Retire for short sources only.** Documents under N pages drop
+  `p. N`; long-form sources keep it as a navigation aid. Per-source
+  judgment via a new manifest field or a page-count threshold. Less
+  aggressive; preserves the long-form reader experience.
+- **Retire the page component; keep `¶N`.** `p. N, ¶M` becomes `¶M`
+  globally — paragraph-anchored, not page-anchored. Eliminates
+  extraction-version dependence (paragraph markers are content-
+  derived, not page-layout-derived). Renderer still shows a Location
+  row; reader uses paragraph-counting instead of page-jumping.
+- **Status quo + better tooling.** Keep page-anchored convention;
+  add a `scripts/tools/locate-quote.py` helper that takes a quote
+  + source and emits the canonical `p. N, ¶M` ref by grep. Eases
+  contributor friction without retiring the convention.
+
+**Surfaces an investigation has to walk:** `meta/conventions.md`
+"Quote location refs" section; `meta/schema-research-artifact.yaml`
+`quote_source.location` field semantics; `scripts/build/renderers/*.py`
+(every renderer that emits a Location row); `scripts/tools/normalize-
+locations.py` (the diagnostic that would retire); every existing
+`meta/research/*.yaml` quote's location form (corpus-wide count by
+shape, current distribution); reader-experience evaluation on a
+representative dense long-form source (e.g., the 2024-11-19 SASC
+hearing transcript).
+
+**Effect on C33.** If C35 lands as "full retire" or "retire page
+component," C33's page-footer failure mode loses most of its
+contributor cost — quotes spanning page boundaries are rare when
+locations aren't page-anchored. The two BACKLOG entries should
+land in dependency order: C35 first (decision on locations), C33
+follows (decision on remaining normalization gap).
+
+**Out of scope for the investigation.** Picking a candidate without
+walking the source-shape category table. Some categories must keep
+their location form (audio / video / image / FOIA); the question
+is exclusively about page-anchored forms for paginated text
+sources. Bundling unrelated location-form changes (timestamp
+syntax, paragraph-anchor enforcement, etc.) into this
+investigation would scope-creep it.
+
+**Surfaced from:** C33 investigation surfaced the page-footer
+substring-match failure mode. Contributor proposed retiring page-
+anchored location refs entirely as a holistic simplification of
+the verbatim-quote / source-navigation surface. The repo-as-a-whole
+production-readiness framing makes the question structural, not
+mechanical.
+
+**Blocks:** C33 (C33's outcome depends on C35's decision).
+**Blocked by:** none.
 
