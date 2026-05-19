@@ -1,3 +1,15 @@
+- identity: colm-kelleher
+  path: baselines/colm-kelleher/ref_01.jpg
+  sha256: dba2ee75186126ad2fb19b1c7b4482b2d353097e50e5e699bfb436cf12e368d7
+  source_video_path: sources/video/weaponized-038-lacatski-kelleher-2023-ow7fqiegixq.mp4
+  source_timestamp: '27:18'
+  bbox:
+  - 379
+  - 121
+  - 178
+  - 178
+  added_date: '2026-05-19'
+  note: 'Frontal close-up, clean-shaven, fuller brown-grey hair, light blue striped button-up, sailing painting backdrop. Biochemist; co-author with Lacatski of ''Inside the US Government Covert UFO Program: Initial Revelations'' (and earlier ''Hunt for the Skinwalker''). Identity confirmed via [24:07] Corbell direct address (''let''s start with colum colum this book is so much different from Skin Walkers at the Pentagon'') — 27:18 falls within Kelleher''s answer; the single-face anchor at 27:18 shows this person in close-up.'
 - identity: danny-sheehan
   path: baselines/danny-sheehan/ref_01.jpg
   sha256: 081e0d77c2af502acdf2790c2ff031296020caa83d4ad64e908198bce38827f6
@@ -48,6 +60,18 @@
   - 192
   added_date: '2026-05-19'
   note: Frontal angle, same outdoor patio sit-down — different expression / cross-pose robustness pair with ref_01.
+- identity: george-knapp
+  path: baselines/george-knapp/ref_01.jpg
+  sha256: c85558cca986cbb462d60b648420c3e69d4342a7d5c7e130e72fb71dbfb22ae8
+  source_video_path: sources/video/weaponized-038-lacatski-kelleher-2023-ow7fqiegixq.mp4
+  source_timestamp: '16:23'
+  bbox:
+  - 475
+  - 20
+  - 200
+  - 200
+  added_date: '2026-05-19'
+  note: Manually cropped from 16-23 anchor TR quadrant — Haar cascade missed Knapp at every anchor + burst extraction in this video (leaning-back / hand-to-chin poses across the quad-layout segments are not Haar-friendly). Crop region (x=475,y=20,w=200,h=200) resized to 256x256 via PIL.LANCZOS. Older white-haired man, dark button-up shirt, file-box bookshelves (Las Vegas KLAS-TV / Mystery Wire office). Co-host with Jeremy Corbell on WEAPONIZED podcast (confirmed by 54-36 banner 'JEREMY CORBELL & GEORGE KNAPP'). Same manual-crop workflow used for james-ryder/ref_03.
 - identity: jake-barber
   path: baselines/jake-barber/ref_01.jpg
   sha256: c4f727193d174dfe7e44c0a1a37d0f636a6aabc3e637ec34c6be6ce3d56769ba
@@ -61,6 +85,18 @@
   added_date: '2026-05-18'
   source_video_url: https://www.youtube.com/watch?v=dnnpyNuPdXs
   note: Solo close-up of Jake Barber at 1:30:00 in 'I Retrieved a UFO With My Helicopter!' (Jesse Michels / American Alchemy, 2026); bald + glasses + dark plaid frontal view.
+- identity: james-lacatski
+  path: baselines/james-lacatski/ref_01.jpg
+  sha256: cab46cd38db8c99f05b790abcf83b90353bfe735e55d473c333b7890daaaaf75
+  source_video_path: sources/video/weaponized-038-lacatski-kelleher-2023-ow7fqiegixq.mp4
+  source_timestamp: '38:13'
+  bbox:
+  - 394
+  - 87
+  - 120
+  - 120
+  added_date: '2026-05-19'
+  note: 'Frontal close-up, glasses visible, balding, light blue button-up shirt, plain backdrop. Co-author with Kelleher of ''Inside the US Government Covert UFO Program: Initial Revelations''. Identity confirmed via [1:56-2:01] transcript first-person attestation: ''the program was created between myself and Senator Reed at the defense intelligence agency'' (= AAWSAP, which Lacatski created at DIA with Sen. Reid); [24:07] Corbell refers to ''Jim'' separately from ''colum'', confirming Jim = Lacatski.'
 - identity: james-ryder
   path: baselines/james-ryder/ref_01.jpg
   sha256: 6374164aaf9df58c821fd8d0113a1c5fb006341c3ce4651d78257caa0cd11012
@@ -72,7 +108,7 @@
   - 86
   - 86
   added_date: '2026-05-19'
-  note: 'Profile view (facing left toward moderator Lawrence) at Lucis Trust Arcane School Conference London 2017, Rending of the Veils part 1. Silver/grey hair, glasses, blue shirt under dark blazer, headset mic. Pairs with ref_02 (frontal without glasses, 50:10) and ref_03 (frontal with glasses, 07:06) for cross-pose + cross-state coverage. Earlier 2026-05-19 registration of two crops at 03:03 and 48:53 was misidentified (those crops were Lawrence, not Ryder); corrected via user review.'
+  note: Profile view (facing left toward moderator Lawrence) at Lucis Trust Arcane School Conference London 2017, Rending of the Veils part 1. Silver/grey hair, glasses, blue shirt under dark blazer, headset mic. Pairs with ref_02 (frontal without glasses, 50:10) and ref_03 (frontal with glasses, 07:06) for cross-pose + cross-state coverage. Earlier 2026-05-19 registration of two crops at 03:03 and 48:53 was misidentified (those crops were Lawrence, not Ryder); corrected via user review.
 - identity: james-ryder
   path: baselines/james-ryder/ref_02.jpg
   sha256: 1f01abb47783386aef817fa582caa97823d9389eac7bb9e32965e7dafff2ccdc
@@ -97,6 +133,18 @@
   - 320
   added_date: '2026-05-19'
   note: Frontal close-up WITH glasses, eyes downcast/contemplative. Same Lucis Trust 2017 panel. Manually cropped — Haar cascade misses the face at this close-up scale (face fills too much of frame). Pairs with the without-glasses frontal for cross-state robustness (Ryder removes glasses during portions of the talk).
+- identity: jeremy-corbell
+  path: baselines/jeremy-corbell/ref_01.jpg
+  sha256: 72ccf880b99d360b14a09abb296b803e2ca12cd2201f62d9e26d6e03af92c623
+  source_video_path: sources/video/weaponized-038-lacatski-kelleher-2023-ow7fqiegixq.mp4
+  source_timestamp: '5:28'
+  bbox:
+  - 172
+  - 36
+  - 102
+  - 102
+  added_date: '2026-05-19'
+  note: Frontal close-up, neutral expression; American Security safe + red lamp backdrop (Corbell's WEAPONIZED studio setup). Co-host with George Knapp on WEAPONIZED podcast (confirmed by 54-36 banner 'JEREMY CORBELL & GEORGE KNAPP'). Speaker recurring across WEAPONIZED-038/114/part1/part2 transcripts.
 - identity: jesse-michels
   path: baselines/jesse-michels/ref_01.jpg
   sha256: 4f1186fc96cd6d350ae3fc8348a83cb683636d44677a570ab91c984061a072d5
