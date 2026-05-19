@@ -92,8 +92,22 @@ def preflight() -> None:
 
 
 def slug_type(s: str) -> str:
-    """argparse type for kebab-case slug validation."""
+    """argparse type for kebab-case slug validation.
+
+    Auto-lowercases input. YouTube IDs are case-sensitive in URLs
+    (``kRO5jOa06Qw``) but slugs are kebab-case lowercase — pasting the URL
+    ID verbatim into the slug is the natural failure mode. We lowercase and
+    print a one-line notice instead of rejecting outright.
+    """
     s = s.strip()
+    lowered = s.lower()
+    if lowered != s:
+        print(
+            f"note: lowercasing slug for kebab-case compliance: "
+            f"{s!r} → {lowered!r}",
+            file=sys.stderr,
+        )
+        s = lowered
     if not re.match(r"^[a-z0-9][a-z0-9-]*$", s):
         raise argparse.ArgumentTypeError(
             f"slug must be kebab-case (lowercase letters, digits, hyphens, "

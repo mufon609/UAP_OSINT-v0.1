@@ -120,8 +120,10 @@ the contested passage.
 ### 2. Extract frames at contested timestamps
 
 ```
-# Anchor frames — preset early timestamps to establish each speaker's visual
-# identity before the contested-passage analysis
+# Anchor frames — 8 timestamps spread across the video's duration
+# (5%, 15%, 25%, 35%, 50%, 65%, 80%, 95%) to establish each speaker's
+# visual identity. Override with --timestamps "MM:SS,MM:SS,..." when you
+# know where the body interview is.
 python3 scripts/tools/extract-frames.py anchor --video sources/video/{slug}.mp4
 
 # Burst at specific timestamps — 5 frames over 2 seconds per timestamp, tiled

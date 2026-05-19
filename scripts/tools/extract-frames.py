@@ -12,9 +12,10 @@ mouth motion across a short burst of frames.
 
 Four modes, dispatched as subcommands:
 
-  anchor     — extract frames at preset early-timestamps (0:15, 0:30, 1:00,
-               2:00, 5:00) to anchor each on-camera speaker's visual identity
-               before contested-passage analysis.
+  anchor     — extract frames spread across the video's duration (8 anchors
+               at 5%, 15%, 25%, 35%, 50%, 65%, 80%, 95%) to anchor each
+               on-camera speaker's visual identity before contested-passage
+               analysis. Override with --timestamps for targeted picks.
 
   burst      — for each timestamp, extract N frames spanning ~T seconds and
                combine them into a contact-sheet jpg. Mouth motion across the
@@ -350,18 +351,29 @@ def write_index(
 # Mode dispatchers
 # ----------------------------------------------------------------------------
 
-# Default anchor times — covers typical intro / title-card / first-speaker
-# windows for conference and interview formats.
-DEFAULT_ANCHORS = [15, 30, 60, 120, 300]
+# Default anchor fractions — sample 8 points spread across the full
+# video duration (5% / 15% / 25% / 35% / 50% / 65% / 80% / 95%). Covers
+# both early B-roll / title-card content and body interview content
+# regardless of length. The previous early-timestamp-only default
+# (0:15 / 0:30 / 1:00 / 2:00 / 5:00) wasted frames on intros for any
+# video longer than ~10 minutes.
+DEFAULT_ANCHOR_FRACTIONS = [0.05, 0.15, 0.25, 0.35, 0.50, 0.65, 0.80, 0.95]
+
+
+def _duration_spread_anchors(duration: float) -> List[float]:
+    """Anchor timestamps spread across the video's duration per
+    ``DEFAULT_ANCHOR_FRACTIONS``."""
+    return [round(duration * f) for f in DEFAULT_ANCHOR_FRACTIONS]
 
 
 def cmd_anchor(args, video: Path, duration: float, out_dir: Path) -> List[dict]:
-    """Extract single anchor frames at preset early timestamps to establish
-    each on-camera speaker's visual identity before contested-passage
-    analysis."""
+    """Extract single anchor frames spread across the video's duration to
+    establish each on-camera speaker's visual identity before contested-
+    passage analysis. Defaults to 8 anchors at 5%, 15%, 25%, 35%, 50%, 65%,
+    80%, 95% of duration; override with --timestamps."""
     anchors = (
         [parse_timestamp(t) for t in args.timestamps.split(",")]
-        if args.timestamps else list(DEFAULT_ANCHORS)
+        if args.timestamps else _duration_spread_anchors(duration)
     )
     anchors = [t for t in anchors if t < duration]
     extractions = []
@@ -578,13 +590,15 @@ def main() -> None:
     # anchor
     p_anchor = sub.add_parser(
         "anchor",
-        help="Extract single anchor frames at preset early timestamps",
+        help="Extract anchor frames spread across the video's duration",
         description=cmd_anchor.__doc__,
     )
     _add_video_and_out(p_anchor)
     p_anchor.add_argument(
         "--timestamps", default=None,
-        help="Comma-separated anchor timestamps (default: 0:15,0:30,1:00,2:00,5:00)",
+        help="Comma-separated anchor timestamps; default spreads 8 anchors "
+             "across the video duration (5%%, 15%%, 25%%, 35%%, 50%%, 65%%, "
+             "80%%, 95%%)",
     )
     p_anchor.add_argument(
         "-q", "--q", type=int, default=2,
