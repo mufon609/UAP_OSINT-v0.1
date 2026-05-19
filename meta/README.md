@@ -23,7 +23,7 @@ or scripts (`/scripts/`).
 | `sources-access.md` | Site-specific archival workarounds (SEC, defense.gov, Twitter/X, etc.) |
 | `templates/` | Scaffolding templates per node type — consumed by `scripts/build/new.py` |
 | `research/` | YAML research artifacts backing each content node — Phase I working surface; consumed by `scripts/build/build-from-research.py`; fork-deletes |
-| `toolkit-notes/` | Validator issue-log (auto-appended). Reserved for future retrospectives or technique notes; currently no `.md` content. |
+| `toolkit-notes/` | Reserved for backward-looking lessons (why a rule exists; what was tried before). Currently empty. |
 | `topic/` | Topic-specific governance — priority research queue, topic overview, corpus addenda, in-progress working notes; fork-deletes when toolkit is forked to a different investigation |
 
 ## Root vs subdirs
@@ -35,8 +35,7 @@ vs subdirs"). Briefly:
 - **Root** holds stable specs and forward-looking work registers
   (rules + active agenda).
 - **`toolkit-notes/`** is reserved for backward-looking lessons
-  (why a rule exists; what was tried before). Currently holds only
-  the validator-appended `issue-log.yaml`.
+  (why a rule exists; what was tried before). Currently empty.
 - **`topic/`** and **`research/`** are the subdirs that fork-delete
   (`topic/` carries topic-specific governance; `research/` carries
   topic-specific structured facts). Everything else is topic-neutral

@@ -50,7 +50,6 @@ from lib._common import (
     REPO_ROOT,
     SOURCES_DIR,
     SUPPORTED_TYPES,
-    append_issue_log,
     content_type_dirs,
     extract_source_text,
     load_manifest_paths,
@@ -305,10 +304,6 @@ def main():
                 continue
             reviewed += 1
             all_issues.extend(issues)
-
-    # Append every emitted Issue to the issue log for time-series audit.
-    for issue in all_issues:
-        append_issue_log(issue, source="validator", phase="review-coverage")
 
     errors = [i for i in all_issues if i.level == "error"]
     warnings = [i for i in all_issues if i.level == "warn"]

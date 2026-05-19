@@ -62,35 +62,6 @@ Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
 
-### C2 — Decide whether to retain `meta/toolkit-notes/issue-log.yaml`
-
-After the 2026-05-17 audit (1,470 entries over 11 days; 23 distinct
-checks; mostly repeated fires of the same issue across runs), the log
-was purged. Open question: does the auto-appended log earn its keep,
-or should the mechanism be removed entirely (delete
-`append_issue_log()` in `scripts/lib/_common.py`, drop all the
-orchestrator call sites, retire the file)?
-
-Arguments for keeping:
-- Time-series visibility into which checks fire most + on which nodes
-- Greppable history for forensic audits ("when did this fail first?")
-- Already wired; cost of removal is non-zero
-
-Arguments for removing:
-- No de-duplication across runs — every warning re-fires its log
-  entry every time the validator runs, so the log balloons on any
-  branch where warnings exist (the audit found one node with the
-  same 3 warnings re-appended on every commit cycle)
-- Audit value is realized once in a while at most; the per-commit
-  carrying cost (append I/O on every issue) is paid every time
-- The validators' own output is already the source of truth at the
-  moment a contributor cares; the log is an after-the-fact mirror
-
-Surfaced: 2026-05-17 corpus check-script audit. Decision deferred —
-purged for now; revisit when the log accumulates ≥ a week of new
-entries and the audit value can be re-evaluated against the carrying
-cost.
-
 ### C4 — Move verbatim-quote check from rendered Markdown to research artifact
 
 The verbatim-quote check (`scripts/checks/verbatim_quotes.py`, dispatched
@@ -141,6 +112,13 @@ generated output, not the structured source). Moving to artifact-side
 is the principled fix.
 
 C1 retired 2026-05-17 — shipped as `scripts/tools/extract-firefox-cookies.py`;
+ID held open per the gap-stable retirement rule.
+
+C2 retired 2026-05-19 — issue-log mechanism removed entirely (function +
+helpers in `scripts/lib/_common.py`, orchestrator call sites, and the
+file itself). Followed C2's "remove" path: log accumulated balloon
+during a single session of validator-heavy work, confirming the
+audit-value-vs-carrying-cost imbalance the 2026-05-17 audit flagged.
 ID held open per the gap-stable retirement rule.
 
 C3 retired 2026-05-19 — WEAPONIZED-038 video pipeline registered baselines

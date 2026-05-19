@@ -105,7 +105,6 @@ from lib._common import (
     strict_yaml_load,
     MANIFEST_PATH,
     REPO_ROOT,
-    append_issue_log,
     content_dirs,
     load_schema,
     parse_frontmatter,
@@ -339,12 +338,6 @@ def main():
     # ck_link_resolution — out-of-band metadata channel; broken stubs
     # are backlog signal, not violations, so they never appear as Issues.
     broken_links = base_ctx.broken_links
-
-    # Append every emitted Issue to the issue log for time-series audit.
-    # Validator-emitted entries; manual web-audit / contributor entries
-    # are appended directly to the log file with the same shape.
-    for issue in all_issues:
-        append_issue_log(issue, source="validator", phase="validate")
 
     errors = [i for i in all_issues if i.level == "error"]
     warnings = [i for i in all_issues if i.level == "warn"]
