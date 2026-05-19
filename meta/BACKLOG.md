@@ -455,3 +455,222 @@ The walkthrough ran each step manually to evaluate the pipeline; the
 slug-consistency requirement and the multi-tool consent gates
 emerged as the two friction points an orchestrator would close.
 
+### C31 — Preflight discipline audit across `scripts/tools/`
+
+Tools that depend on environmental prerequisites (env vars, gated
+model auth, browser session state, JS runtimes, network access)
+currently surface those prerequisite failures at the point the tool
+*uses* the prerequisite, not at the point the tool *starts*. The
+gap means contributors do meaningful work (audio extraction, video
+download, manifest scan, frame-extraction setup) before the
+tool exits with the install hint.
+
+The pattern isn't uniform across `scripts/tools/`. Some tools
+preflight cleanly (`download-video.py`'s `preflight()` checks
+yt-dlp + ffmpeg + JS runtime before the yt-dlp invocation); others
+defer the check until the prerequisite is consumed; the cookie-
+extraction path has its own non-uniform pattern (the canonical
+multi-video shell-variable workflow prompts once per session, but
+the per-tool failure modes vary).
+
+**The actual question:** what's the standard for "prerequisite
+discoverability" across `scripts/tools/`?
+
+Candidate resolutions (none recommended; listed for completeness):
+
+- **Universal `preflight()` discipline.** Every tool grows a
+  `preflight()` function called at `main()` entry that checks
+  every env var, binary, library, and external-service prerequisite
+  the tool consumes anywhere in its execution. Exit non-zero with
+  install hints before any side-effect runs. Most explicit; most
+  invasive.
+- **Shared preflight library.** A `lib/_preflight.py` module that
+  tools register requirements with declaratively (`require_env(
+  "HF_TOKEN")`, `require_binary("yt-dlp")`, `require_python_module(
+  "pyannote.audio")`). Tools call `lib._preflight.check()` at entry.
+  Less per-tool boilerplate; centralizes the install-hint vocabulary.
+- **Status-quo + audit-only.** Accept that some prerequisites only
+  surface deep in the call graph; the audit produces a manifest of
+  "known mid-pipeline failure points" so contributors are warned at
+  documentation time rather than at script-runtime time.
+- **Smoke-test coverage.** Add a `scripts/tests/preflight-check.sh`
+  that confirms each tool exits cleanly with the prerequisite-missing
+  install hint when its prerequisites are absent. Catches regressions
+  but doesn't change the architecture.
+
+**Surfaces an investigation has to walk:** every script under
+`scripts/tools/` and `scripts/build/`; `lib/_common.py` for any
+shared preflight helpers; `meta/conventions.md` "Inside /scripts/"
+for the landing rules; `scripts/tests/` for the smoke / help-check
+patterns the preflight standard would integrate with.
+
+### C32 — `research-scaffold.py` should emit placeholder entries showing required shape
+
+The current scaffold emits empty content sections (`quotes: []`,
+`affiliations: []`, `entities_referenced: []`, `naming_quirks: []`,
+etc.). Contributors learn the required entry shape by reading an
+existing exemplar artifact (e.g., `karl-nell.yaml`) or by hitting
+validation errors and inferring the shape from the error messages.
+
+The required-entry shape is non-trivial: every list entry needs
+lifecycle fields (`id`, `added_date`) plus type-specific required
+fields (e.g., affiliation_entry needs `organization_path`, `role`,
+`source`; quote_entry needs `text`, `source` with sub-fields;
+naming_quirks_entry needs `observed`, `canonical`, `location`,
+`source_path`, `resolution`). Discovering these by validation
+error is high-friction: a contributor populating a fresh artifact
+from-scratch can hit 100+ "missing required field" errors on
+first validate, organized by entry rather than by category.
+
+**The actual question:** how should the scaffold teach the required-
+entry shape to the contributor?
+
+Candidate resolutions:
+
+- **Commented-out placeholder per section.** Scaffold emits one
+  fully-formed placeholder entry per list field, prefixed with
+  `# placeholder — replace or delete`. Contributor learns shape by
+  replacing or deleting; copying-and-extending is the natural path.
+  Lowest friction; small risk that contributors forget to delete
+  unused placeholders.
+- **Schema-driven `--help` doc.** A new `research-scaffold.py
+  --explain {field}` mode that prints the required entry shape for
+  any artifact field, derived from `schema-research-artifact.yaml`.
+  Doesn't change the scaffold; adds discoverability surface.
+- **Pre-populated from sources.** Scaffold runs against the primary
+  sources passed in `--sources` and pre-extracts candidate
+  entries (e.g., detected named entities → `entities_referenced[]`
+  placeholders; detected dates → `timeline[]` placeholders).
+  Highest value but highest implementation cost; risks bad defaults
+  becoming load-bearing.
+- **Status-quo + improve error grouping.** Keep the empty scaffold;
+  refactor `validate-research.py`'s missing-required-field reporting
+  to group by category (e.g., "12 list entries need `added_date`")
+  rather than per-entry. Reduces the cognitive load of the error
+  cascade without changing the scaffold.
+
+**Surfaces an investigation has to walk:** `scripts/build/research-
+scaffold.py`; `meta/schema-research-artifact.yaml` (the
+per-entry shape specs); `scripts/checks/` (the validators that
+detect missing fields); `prompts/build.md` Phase I Step 1
+(how the scaffold integrates with the build prompt).
+
+### C33 — Verbatim-quote normalization: principled refactor vs. reactive patches
+
+The `normalize_for_compare` helper in `scripts/lib/_common.py`
+(consumed by the verbatim-quote check) accumulates per-symptom
+normalizations: form-feed character stripping (PDF page-break
+artifacts), `[MM:SS]` / `[H:MM:SS]` caption-timestamp stripping
+(YouTube auto-caption sources), whitespace collapsing. Each was
+added reactively when a failure mode surfaced.
+
+Two known classes of failure mode are not currently normalized:
+
+- **PDF page-number footers.** A multi-page-spanning quote whose
+  source extract carries a bare digit ("3") between the body-text
+  lines (page-3 footer + form feed + next-page content) fails the
+  substring match. The validator strips the form feed but not the
+  digit. Contributors work around this by splitting quotes at page
+  breaks; the workaround is functional but reader-hostile (one
+  logical passage becomes two artificial quotes).
+- **Curly-quote vs. straight-quote drift.** PDF sources that
+  contain typographically-correct `“` / `”` characters (U+201C /
+  U+201D) fail substring match when the artifact text was authored
+  with straight `"`. Contributors work around this by using the
+  source's curly-quote form verbatim; the workaround is functional
+  but propagates a presentation-layer choice into the artifact-
+  layer text.
+
+The reactive-patch trajectory continues — each new failure mode
+adds a new normalization rule. The question is whether a more
+principled abstraction is reachable.
+
+**The actual question:** what is the right separation between
+"source content" (the substring the check should match against)
+and "source presentation noise" (the page footers, fonts, glyph
+substitutions, layout artifacts that mechanically appear in
+extracted text but shouldn't gate verbatim verification)?
+
+Candidate resolutions:
+
+- **Targeted addition.** Add normalizations for the two known
+  classes (page-footer digits, curly-quote → straight-quote)
+  without changing the architecture. Closes the immediate cases
+  at the cost of one more reactive patch on the pile.
+- **PDF-layer abstraction.** Make `extract_source_text` produce a
+  more aggressively-cleaned text layer (drop page-footer digits,
+  unify quote characters, normalize ligatures) before substring
+  comparison even happens; the normalization moves from check-time
+  to extraction-time. Pre-validates a known-clean comparison
+  surface; risks losing fidelity for legitimate digit / quote
+  content in source body text.
+- **Per-quote whitelist for known artifacts.** Each quote that
+  spans a known-noise pattern declares the pattern explicitly via
+  a new artifact field (e.g., `source.spans_page_break: true`).
+  Validator suppresses substring check around the declared
+  artifact location. Most explicit; most contributor-burden.
+- **Question whether substring is the right primitive.** Move from
+  substring match to a token-sequence match (tokenize quote +
+  source, compare sequences after both have presentation noise
+  stripped). Most architecturally invasive; closes the door on
+  multiple classes of presentation drift simultaneously.
+
+**Surfaces an investigation has to walk:** `scripts/lib/_common.py`
+(the `normalize_for_compare` and `extract_source_text` helpers);
+`scripts/checks/verbatim_quotes.py` (the check itself);
+`meta/conventions.md` "Statements as the universal evidentiary
+primitive" (the principle the check enforces); the existing
+`naming_quirks` machinery (which handles a parallel class of
+drift via contributor declaration rather than mechanical
+normalization).
+
+### C34 — Schema↔CLI parity check
+
+The schema (`meta/schema.yaml::manifest_entry`) and the CLI
+(`scripts/tools/manifest.py`'s commands) drift independently. The
+JRE #2194 walkthrough surfaced a concrete case (cf. C29): the
+schema's `manifest_entry` declares no URL-uniqueness constraint,
+but `cmd_add` enforces URL-uniqueness via a silent early-return;
+`cmd_status` returns the first URL match by similar implicit
+assumption. The schema permits a model the CLI silently forbids.
+
+The pattern is general. CLI commands carry implicit assumptions
+about uniqueness, ordering, dedup keys, and matching semantics
+that aren't declared in the schema and aren't checked against the
+schema. The gap is invisible until contributor workflow exercises
+a permitted-by-schema-but-forbidden-by-CLI case.
+
+**The actual question:** what mechanism asserts that CLI commands
+implement the same data model the schema declares?
+
+Candidate resolutions:
+
+- **Docstring assertion.** Convention that every CLI subcommand's
+  docstring names the schema rules it enforces (e.g., `cmd_add`
+  docstring says "Asserts (url, path) tuple uniqueness per
+  schema.yaml manifest_entry — see compatibility note"). Reviewer-
+  visible discipline; no mechanical enforcement.
+- **Parity check.** A meta-test (`scripts/tests/schema-cli-
+  parity.sh`) that asserts dedup semantics, match semantics, and
+  required-field handling in CLI commands match the schema's
+  declarations. Higher implementation cost; closes the gap
+  mechanically.
+- **Schema-as-CLI-spec.** The CLI consults the schema at runtime
+  to determine dedup keys, required fields, etc. Most architecturally
+  invasive; eliminates the drift surface entirely at the cost of
+  CLI-side complexity.
+- **Per-command audit + accept drift.** One-pass audit cataloging
+  every implicit assumption in CLI commands; document the gaps in
+  `meta/conventions.md`; rely on contributor discipline going
+  forward. Lowest-cost; doesn't prevent future drift.
+
+**Surfaces an investigation has to walk:** every CLI in
+`scripts/tools/` (especially `manifest.py`'s commands —
+add / status / pending / usage / orphans / missing / summary
+/ verify-paths / verify-checksums); `meta/schema.yaml` (the
+manifest_entry, person, organization, etc. blocks); `meta/schema-
+research-artifact.yaml` (the entry-shape specs CLI scaffolders
+need to honor); `scripts/build/research-scaffold.py`,
+`scripts/build/new.py`, `scripts/build/build-state.py` (other
+CLI tools whose behavior implicitly assumes schema semantics).
+
