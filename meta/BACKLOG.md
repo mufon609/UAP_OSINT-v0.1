@@ -42,7 +42,89 @@ externally-blocked item ever surfaces (rare), reinstate the
 
 Items with ordering or coupling constraints.
 
-*No priority-sequence items currently open.*
+### A1 — Investigation: should `entities_referenced[]` render in the body?
+
+**Open design question, not a tractable fix.** Surfaced by the
+2026-05-19 source-coverage audit follow-up (5bd2bfc): every other
+structured artifact field renders to the body (`description`,
+`background`, `timeline`, `key_personnel`, `relationships`,
+`affiliations`, `corroboration_items`, `quotes`), but
+`entities_referenced[]` is the lone exception. That break in the
+pattern means cross-references declared there are invisible to the
+broken-link signal and to human readers, and contributors have to
+duplicate references across body wraps and `entities_referenced[]`
+to make new build candidates discoverable.
+
+**What the investigation needs to answer before any change:**
+
+1. **What's the design history?** Why was `entities_referenced[]`
+   built as a YAML-only declaration when every other structured
+   field renders? Was the design intent agent-layer-only? Was it
+   "supplementary to body wraps, never primary"? Reading
+   `meta/conventions.md`, the renderer modules under
+   `scripts/build/renderers/`, and `AGENT.md` for original framing
+   is the first step.
+
+2. **What's the actual scope?** How many `entities_referenced[]`
+   entries exist across the corpus? What fraction already have
+   a matching body wrap (would be no-op to render)? What fraction
+   is unique to `entities_referenced[]` (would surface for the
+   first time)? Mechanical answer via a one-pass script over
+   `meta/research/*.yaml`.
+
+3. **What does each entry look like?** Are they uniform "real
+   cross-references worth surfacing," or is there a mix —
+   load-bearing references, incidental-mentions-in-quoted-source,
+   placeholder declarations that haven't earned a body wrap?
+   Render-everything risks surfacing the incidental-mentions
+   class to readers without editorial framing.
+
+4. **What does AGENT.md / the query layer consume?** If a query
+   agent walks `entities_referenced[]` today, does it depend on
+   the field being structured-only? Would rendering also into
+   the body create a duplication the query layer would have to
+   reconcile?
+
+5. **What's the body-size impact?** Some artifacts have 40+
+   `entities_referenced[]` entries. If all unique-to-the-field
+   entries render in `## Associated Nodes`, what does the rendered
+   page length look like? Is there a reader-experience cost?
+
+**Candidate approaches the investigation may surface** (none
+recommended; listed for completeness):
+
+- Render in `## Associated Nodes` — extend `scripts/build/associate.py`
+  to also include `wrap_path` values from `entities_referenced[]`
+  not already covered by a body wrap
+- Validator-only crawl — make `validate.py`'s broken-link detector
+  consume `entities_referenced[]` directly from artifacts; no
+  renderer / reader-visible change
+- Schema retire — if entries are mostly redundant with body wraps,
+  retire `entities_referenced[]` entirely and document the body-wrap
+  convention as canonical
+- Hybrid — render only entries whose `context_summary` indicates
+  load-bearing cross-reference; keep "incidental mention" entries
+  YAML-only (would require classifying entries)
+
+The investigation may conclude that the current design is
+load-bearing (and the bandaid is the right cost), or that one
+of these approaches retires the duplication. Either way, the
+investigation has to happen before any code change.
+
+**Out of scope for the investigation:** retiring
+`entities_referenced[]` without preserving the `context_summary`
++ quote-backlinks metadata. That metadata is consumed by the
+agent / query layer per `AGENT.md`; any structural change has to
+preserve or relocate it.
+
+**Bandaid in effect:** 5bd2bfc placed wraps inside timeline-entry
+`event` fields alongside `entities_referenced[]` entries to force
+broken-link discovery on 6 audit-derived queue items. The bandaid
+is the workaround the investigation exists to retire.
+
+Surfaced: 2026-05-19 source-coverage audit follow-up (5bd2bfc) +
+contributor follow-up question on whether the body-only-rendering
+gap is intentional.
 
 ---
 
@@ -51,61 +133,6 @@ Items with ordering or coupling constraints.
 Items that touch the renderer and naturally batch into a single
 polish pass — bundling reduces churn vs. shipping each as a
 separate touch.
-
-### B2 — `entities_referenced[]` doesn't drive the broken-link signal
-
-`entities_referenced[]` carries structured cross-reference declarations
-on every artifact — `wrap_path` (target slug), `context_summary` (why
-the reference exists), and `references` (backlinks to specific
-quotes). It's the canonical place to declare "this artifact knows
-about /people/X" or "this artifact knows about /documents/Y".
-
-But the broken-link detector in `validate.py` only sees `[/path]`
-markdown wraps in **rendered node bodies**. The renderer doesn't emit
-an "Entities Referenced" section that surfaces `wrap_path` values, so
-declarations in `entities_referenced[]` are invisible to the
-broken-link signal. A contributor declaring a cross-reference there
-thinks they've registered it; the broken-link registry silently
-doesn't pick it up.
-
-Surfacing case: 2026-05-19 source-coverage audit added 6 build
-candidates as `entities_referenced[]` entries on `uaptf.yaml` and
-`stanford-research-institute.yaml`; the broken-link registry did
-not list any of them. The wiring commit (5bd2bfc) worked around it
-by ALSO placing the wraps inside a timeline-entry `event` field that
-the renderer emits as body prose — the bandaid is "always also place
-a wrap in rendered prose," which papers over the gap.
-
-Two structural fix options:
-
-- **A. Renderer change.** Extend `## Associated Nodes` (already auto-
-  generated by `scripts/build/associate.py` from body links) to also
-  emit one bullet per `entities_referenced[]` entry whose `wrap_path`
-  isn't already present from a body wrap. Reader-visible; broken-link
-  signal triggers automatically. Per-type renderer cost: zero (the
-  Associated Nodes generator is universal).
-
-- **B. Validator change.** Make `validate.py`'s broken-link detector
-  also crawl `entities_referenced[]` from each artifact (via the same
-  source-to-artifacts index it already builds). No renderer change;
-  no reader-visible difference; the broken-link registry is the only
-  surface affected.
-
-Either fix retires the bandaid. Option A makes the cross-reference
-reader-visible (good for navigation); option B keeps the body
-minimal but ensures the structural signal fires. Picking one is a
-design choice; both are tractable.
-
-Out of scope: retiring `entities_referenced[]` entirely. The field
-carries `context_summary` + `references` (quote-backlinks) that
-incidental body wraps don't capture, and the agent / query layer
-(per `AGENT.md`) consumes it as the structured cross-reference
-surface.
-
-Surfaced: 2026-05-19 source-coverage audit follow-up; partial
-workaround landed in 5bd2bfc (timeline-entry wraps added alongside
-`entities_referenced[]` entries to force broken-link discovery on
-6 audit-derived queue items).
 
 ---
 
@@ -267,4 +294,9 @@ ID held open per the gap-stable retirement rule.
 C3 retired 2026-05-19 — WEAPONIZED-038 video pipeline registered baselines
 for corbell / lacatski / kelleher / knapp, closing all 17 direction-1
 warnings; ID held open per the gap-stable retirement rule.
+
+B2 retired 2026-05-19 — superseded by A1 (reframed as an open design
+investigation rather than a ready-to-implement renderer pass per
+contributor feedback that the change needs more consideration before
+any code lands). ID held open per the gap-stable retirement rule.
 
