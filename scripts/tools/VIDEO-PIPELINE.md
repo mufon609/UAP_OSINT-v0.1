@@ -45,10 +45,15 @@ fails. Re-runnable.
 
 ---
 
-## Four-step pipeline
+## Five-step pipeline
 
 Each step is one command. Defaults are tuned for the common case; flags exist
 for tuning when needed.
+
+Steps 1–4 produce three independent artifacts (video, diarize segments,
+identity baselines). Step 5 merges them into a single speaker-labeled
+transcript the contributor uses when populating `speaker_id` on transcript-
+artifact quotes.
 
 ### 1. Download the source video
 
@@ -203,6 +208,61 @@ Removes crops in `crops/` whose pHash matches no baseline — i.e., unlabeled
 faces the contributor has decided not to keep. Removed crops leave git
 history but no longer in HEAD.
 
+### 5. Stitch the auto-caption transcript with speaker labels
+
+```
+python3 scripts/tools/stitch-transcript.py sources/video/{slug}.mp4
+```
+
+Prereqs: steps 1, 1.5, and 4 above must have completed (video file,
+diarize `segments.csv`, and at least one identity baseline registered),
+plus an auto-caption transcript downloaded via `transcribe.py` at
+`sources/transcripts/{slug}-downloaded.md`. Auto-discovery looks for
+the segments at `/tmp/diarize-{slug}/segments.csv` and the transcript at
+the `-downloaded.md` (or equivalent) path; pass `--diarize-segments` /
+`--transcript` to override.
+
+For each diarize segment, extracts a frame at the segment's midpoint,
+runs face detection, pHash-matches against `baselines/`. Aggregates the
+matches per anonymous speaker label and writes:
+
+- `/tmp/stitch-{slug}/stitched.md` — header carries the speaker-resolution
+  table with confidence rating per speaker; transcript body has the
+  speaker label rendered at every turn boundary (consecutive lines from
+  the same speaker are not re-labeled). Unanalyzed regions (caption ticks
+  outside the diarize range) and unresolved speakers (no baseline match)
+  are marked explicitly so the contributor sees the coverage gaps.
+- `/tmp/stitch-{slug}/speaker-map.csv` — machine-readable rollup of the
+  same speaker resolutions.
+- `/tmp/stitch-{slug}/frames/` — per-segment midpoint frames kept so the
+  contributor can spot-check any speaker assignment that surfaced below
+  `high` confidence.
+
+Confidence ratings the script emits:
+
+- `high`   — single identity dominates this speaker's segment-frame
+             matches AND no other speaker also resolves to the same
+             identity (single-camera coverage with clean switching).
+- `medium` — single identity dominates but matches are partial, OR the
+             same identity also dominates another speaker (split-screen
+             ambiguity; visual baseline alone can't tell which face is
+             actively speaking).
+- `low`    — speaker had visual matches but no single identity dominated.
+- `none`   — no baseline matches at all in this speaker's segments
+             (frame was a graphic overlay, no face detected, or face
+             pHash exceeded the threshold against every baseline).
+
+A `⚠ Manual review required` banner fires whenever any speaker resolves
+below `high`. The contributor uses the stitched output to populate the
+`speaker_id` field on each transcript-artifact quote — and overrides any
+medium / low / none speaker resolution before relying on it.
+
+The output is contributor-diagnostic only; it lands in `/tmp/` and is
+not manifest-registered. The downloaded transcript at
+`sources/transcripts/{slug}-downloaded.md` remains the verbatim source
+the validator's verbatim-quote check verifies against. The stitched
+file is what a human reads to figure out who said what.
+
 ---
 
 ## Cookies — when, why, and the dangerous form
@@ -313,4 +373,5 @@ python3 scripts/tools/detect-faces.py prune
 | `detect-faces.py detect` | After any extract-frames run, to find faces in the extracted frames |
 | `detect-faces.py register` | After reviewing a crop, to promote it to a persistent baseline |
 | `detect-faces.py prune` | Periodic cleanup of unidentified crops |
+| `stitch-transcript.py` | After steps 1, 1.5, 4, and a `transcribe.py` run on the video — bridges the three independent artifacts (video, diarize segments, baselines) into a speaker-labeled transcript for populating `speaker_id` on transcript-artifact quotes |
 | `extract-firefox-cookies.py` | Only when piping cookies into a tool that doesn't support `--cookies-from-browser` (e.g., `transcribe.py`) |
