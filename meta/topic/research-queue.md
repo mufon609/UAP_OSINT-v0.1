@@ -135,8 +135,8 @@ reconciliation below.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/people/ross-coulthart` | person / reporter | High | NewsNation "Reality Check"; primary journalist channel since June 2023; JRE #2065 co-guest. **Visual baselines registered 2026-05-19** (`ross-coulthart/ref_01` three-quarter + `ref_02` frontal, from the 2026-05-17 "Church Commission" Q&A); direction-2 warning fires until person node ships. | NewsNation transcripts (archived) |
-| `/people/jesse-michels` | person / reporter | Medium | American Alchemy "72 hrs With Grusch" documentary ~Oct 2023; American Alchemy host across multiple archived videos in this corpus. **Visual baselines registered 2026-05-18** (`jesse-michels/ref_01` solo close-up + `ref_02` BTS wide, from the Barber-helicopter doc); direction-2 warning fires until person node ships. | YouTube transcripts + American Alchemy archive |
+| `/people/ross-coulthart` | person / reporter | High | NewsNation "Reality Check"; primary journalist channel since June 2023; JRE #2065 co-guest. **Visual baselines registered 2026-05-19** (`ross-coulthart/ref_01` three-quarter + `ref_02` frontal, from the 2026-05-17 "Church Commission" Q&A). | NewsNation transcripts (archived) |
+| `/people/jesse-michels` | person / reporter | Medium | American Alchemy "72 hrs With Grusch" documentary ~Oct 2023; American Alchemy host across multiple archived videos in this corpus. **Visual baselines registered 2026-05-18** (`jesse-michels/ref_01` solo close-up + `ref_02` BTS wide, from the Barber-helicopter doc). | YouTube transcripts + American Alchemy archive |
 | `/people/joe-rogan` | person / reporter | Low | JRE #2065 host 2023-11-21; long-form Grusch interview | YouTube transcript (archived) |
 | `/organizations/newsnation` | organization / private | Medium | Publisher of Coulthart-Grusch reporting; multiple articles archived | Public record |
 | `/organizations/the-debrief` | organization / private | Medium | Debrief article venue; already used as Dietrich source; now needed for Grusch disclosure provenance | Public record |
@@ -265,14 +265,15 @@ UAPTF + ONI builds):
 
 ### Cluster G — Video-pipeline baseline subjects awaiting person nodes
 
-The photo-identity-log baseline registry currently carries identity
-references for five people whose `/people/` nodes haven't been built
-yet. Each was registered preparatively during a video-pipeline run on
-its source documentary or broadcast, ahead of the corresponding
-person-node build (the same workflow that produced the
-`jesse-michels` and `ross-coulthart` baselines already in Cluster E).
-Building these closes the direction-2 warnings from the Phase 3
-`speaker_baseline_consistency` check.
+The photo-identity-log baseline registry carries identity references
+for several people whose `/people/` nodes haven't been built yet. Each
+was registered preparatively during a video-pipeline run on its source
+documentary or broadcast, ahead of the corresponding person-node build
+(the same workflow that produced the `jesse-michels` and
+`ross-coulthart` baselines already in Cluster E). These nodes also
+appear in the `validate.py` broken-link registry when referenced from
+built transcript bodies — that count is the canonical signal for
+build-priority ordering.
 
 `/people/jesse-michels` and `/people/ross-coulthart` also fall into
 this category — they appear in Cluster E above with baseline notes
@@ -280,9 +281,9 @@ on their rationale cells; not duplicated here.
 
 | Path | Type / Kind | Priority | Rationale | Source Access |
 |---|---|---|---|---|
-| `/people/danny-sheehan` | person / institutional-actor | Medium | Civil-rights attorney; main interviewee in American Alchemy "UFOs & JFK" documentary (2026). **Visual baselines registered 2026-05-18** (`danny-sheehan/ref_01` frontal + `ref_02` three-quarter); direction-2 warning fires until person node ships. | Documentary (archived) + Christic Institute public record |
-| `/people/jake-barber` | person / eyewitness | Medium | Claims UAP-retrieval helicopter operations; main interviewee in American Alchemy "I Retrieved a UFO With My Helicopter!" (2026). **Visual baseline registered 2026-05-18** (`jake-barber/ref_01` frontal close-up); direction-2 warning fires until person node ships. | Documentary (archived) + public record |
-| `/people/meagan-medick` | person / reporter | Low | NewsNation "Reality Check" co-host with Ross Coulthart. **Visual baseline registered 2026-05-19** (`meagan-medick/ref_01` frontal split-screen, identity confirmed from chyron end-card at 29:50 of the 2026-05-17 Coulthart Q&A); direction-2 warning fires until person node ships. Build only if a substantive editorial role beyond co-hosting surfaces. | NewsNation public record |
+| `/people/danny-sheehan` | person / institutional-actor | Medium | Civil-rights attorney; main interviewee in American Alchemy "UFOs & JFK" documentary (2026). **Visual baselines registered 2026-05-18** (`danny-sheehan/ref_01` frontal + `ref_02` three-quarter). | Documentary (archived) + Christic Institute public record |
+| `/people/jake-barber` | person / eyewitness | Medium | Claims UAP-retrieval helicopter operations; main interviewee in American Alchemy "I Retrieved a UFO With My Helicopter!" (2026). **Visual baseline registered 2026-05-18** (`jake-barber/ref_01` frontal close-up). | Documentary (archived) + public record |
+| `/people/meagan-medick` | person / reporter | Low | NewsNation "Reality Check" co-host with Ross Coulthart. **Visual baseline registered 2026-05-19** (`meagan-medick/ref_01` frontal split-screen, identity confirmed from chyron end-card at 29:50 of the 2026-05-17 Coulthart Q&A). Build only if a substantive editorial role beyond co-hosting surfaces. | NewsNation public record |
 
 ---
 

@@ -91,57 +91,10 @@ purged for now; revisit when the log accumulates ≥ a week of new
 entries and the audit value can be re-evaluated against the carrying
 cost.
 
-### C3 — Register baselines for the WEAPONIZED-cluster transcript speakers
-
-Phase 3's `speaker_baseline_consistency` check (per
-`scripts/checks/speaker_baseline_consistency.py`) fires direction-1
-warnings on every transcript whose `speakers[].node_link` points at
-a person node lacking a corresponding entry in
-`sources/photo-identity-log/baselines/`. After Phase 3 shipped, the
-james-ryder baseline was registered in-session from the existing
-lucistrust pt1 video; the remaining direction-1 warnings cluster
-across four speakers who recur throughout the WEAPONIZED / mysterywire
-transcripts:
-
-| Identity slug | Warning count | Person node | Source video options |
-|---|---|---|---|
-| `james-lacatski` | 6 | `/people/james-lacatski` (built) | weaponized-038 / weaponized-114 / weaponized-part1 / weaponized-part2 / mysterywire / 8newsnow — any one |
-| `george-knapp` | 5 | `/people/george-knapp` (NOT built — see note) | same set, minus 8newsnow |
-| `jeremy-corbell` | 4 | `/people/jeremy-corbell` (NOT built — see note) | weaponized-038 / 114 / part1 / part2 |
-| `colm-kelleher` | 2 | `/people/colm-kelleher` (NOT built — see note) | mysterywire / weaponized-038 |
-
-**Note** — the four direction-1 warnings reference
-`/people/{slug}` paths via `speakers[].node_link` on transcript
-artifacts. james-lacatski has a built person node; knapp / corbell /
-kelleher are referenced in transcripts but the person nodes
-themselves are not yet built (a separate gap orthogonal to this
-backlog item — would surface from a corpus-wide path-existence check
-that doesn't currently exist; see "double-check" audit notes on the
-67b8cf2 commit for the rationale on deferring that check).
-
-**Path to closure.** One video download (`download-video.py URL --slug
-…`) per WEAPONIZED episode covers multiple speakers in a single
-pipeline run — weaponized-038 features all four (knapp, corbell,
-lacatski, kelleher) on the same panel set, so a single
-download+anchor+detect+register run can close most or all of the
-warnings. Cross-pose pairing is worth it: register one frontal +
-one profile per identity for pHash robustness.
-
-**Acceptance.** Validator `speaker_baseline_consistency` direction-1
-warning count drops to 0 (other than any new transcripts authored in
-the interim that introduce additional speakers).
-
-**Scope.** Self-contained — single video download + frame extraction
-+ face detection + visual identification + baseline registration.
-Estimated session-time: ~30 minutes per WEAPONIZED episode (download
-~5 min on a clean connection; pipeline ~10 min; manual identification
-+ registration ~15 min for four speakers on one episode).
-
-Surfaced: 2026-05-19 audit of the freshly-shipped
-`speaker_baseline_consistency` check; partial fix in-session (ryder)
-landed alongside the check; remaining work backlogged per scope
-discipline.
-
 C1 retired 2026-05-17 — shipped as `scripts/tools/extract-firefox-cookies.py`;
 ID held open per the gap-stable retirement rule.
+
+C3 retired 2026-05-19 — WEAPONIZED-038 video pipeline registered baselines
+for corbell / lacatski / kelleher / knapp, closing all 17 direction-1
+warnings; ID held open per the gap-stable retirement rule.
 

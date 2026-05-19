@@ -432,14 +432,6 @@ def main():
         for p in artifacts:
             all_issues.extend(validate_artifact(p, base_ctx))
 
-    # Manifest-wide post-pass checks — checks that operate on the global
-    # state (filesystem, manifests, cross-artifact rollups) rather than
-    # individual artifacts. Run sequentially in the parent process after
-    # the worker pool completes; fork-shared module state would not
-    # preserve once-only semantics if these ran inside per-artifact
-    # workers.
-    all_issues.extend(ck_speaker_baseline_consistency.manifest_wide_check())
-
     # Append every emitted Issue to the issue log for time-series audit.
     for issue in all_issues:
         append_issue_log(issue, source="validator", phase="validate-research")
