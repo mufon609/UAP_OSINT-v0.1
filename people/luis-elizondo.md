@@ -49,7 +49,7 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 
 ## Statements
 
-### Direct Observations
+### Resignation & Reasons
 
 > “Why aren’t we spending more time and effort on this issue?” Mr. Elizondo wrote in a resignation letter to Defense Secretary Jim Mattis.
 
@@ -58,6 +58,26 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 | Attributed to | NYT December 16, 2017; quoted excerpt from Elizondo's resignation letter dated October 4, 2017 addressed to Defense Secretary Jim Mattis., 2017-10-04 |
 | Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
 | Location | ¶ beginning "But Mr. Elizondo said the only thing that had ended" |
+
+_Direct observation._
+
+> Mr. Elizondo, in his resignation letter of Oct. 4, said there was a need for more serious attention to “the many accounts from the Navy and other services of unusual aerial systems interfering with military weapon platforms and displaying beyond-next-generation capabilities.”
+
+| Field | Value |
+|---|---|
+| Attributed to | NYT December 16, 2017; NYT-reported quotation from Elizondo's October 4, 2017 resignation letter to Defense Secretary Jim Mattis., 2017-10-04 |
+| Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
+| Location | ¶ beginning "Mr. Elizondo, in his resignation letter of Oct. 4" |
+
+> But Mr. Elizondo said the only thing that had ended was the effort’s government funding, which dried up in 2012. From then on, Mr. Elizondo said in an interview, he worked with officials from the Navy and the C.I.A. He continued to work out of his Pentagon office until this past October, when he resigned to protest what he characterized as excessive secrecy and internal opposition.
+
+| Field | Value |
+|---|---|
+| Attributed to | NYT December 16, 2017; Elizondo on-record statement to Cooper/Blumenthal/Kean characterizing the post-2012 funding-vs-program continuity question and his October 2017 resignation rationale., 2017-12-16 |
+| Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
+| Location | ¶ beginning "But Mr. Elizondo said the only thing that had ended" |
+
+### AATIP Role & Recruitment
 
 > [3:52] uh I got
 > [3:54] there in 2008 uh it was probably early
@@ -73,6 +93,8 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 | Attributed to | Joe Rogan Experience #2194, August 23, 2024; Elizondo's self-attestation of his 2009 recruitment into the AATIP-era program by two unnamed individuals., 2024-08-23 |
 | Source | [archived source](../sources/transcripts/jre-2194-elizondo-2024-downloaded.md) |
 | Location | [3:52] |
+
+_Direct observation._
 
 > [5:53] but
 > [5:55] I went there and I went up to the to the
@@ -92,66 +114,7 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 | Source | [archived source](../sources/transcripts/jre-2194-elizondo-2024-downloaded.md) |
 | Location | [5:53] |
 
-> [7:18] I've never been a UFO guy you know people come up
-> [7:21] like oh you're that UFO guy I'm really
-> [7:23] not I I was never really into science
-> [7:25] fiction as a kid um I wasn't into the
-> [7:28] Star Trek or the Star Wars
-
-| Field | Value |
-|---|---|
-| Attributed to | Joe Rogan Experience #2194, August 23, 2024; Elizondo's self-attestation of his pre-AATIP disposition toward the UFO topic., 2024-08-23 |
-| Source | [archived source](../sources/transcripts/jre-2194-elizondo-2024-downloaded.md) |
-| Location | [7:18] |
-
-> Yes. Many of my former colleagues and I have faced retaliation for our public
-> advocacy for UAP transparency. This has included efforts to suspend or revoke our security
-> clearances, as well as direct threats to our safety and that of our families. Some elements
-> within the DoD and the Intelligence Community ("IC") have engaged in what can only be
-> described as 'administrative terrorism' to deter individuals with security clearances from
-> raising this issue.
-
-| Field | Value |
-|---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q10 asking whether the CIA or other government agencies are actively working to conceal UAP-related information from the public., 2024-12-19 |
-| Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | Response to Q10, ¶1 |
-
-> was allocated at the request of then-Representative Steny Hoyer. I have visited this facility;
-> however, as it was a new construction at the time, no materials had yet been transferred.
-
-| Field | Value |
-|---|---|
-| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7. Second half of the Q7 response (splits across a PDF page break from q6) — names Hoyer as the source of the $10M funding allocation and attests Elizondo's personal visit to the facility., 2024-12-19 |
-| Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
-| Location | Response to Q7, ¶1 (second half — post-page-break) |
-
-
-### Other Statements
-
-> Mr. Elizondo, in his resignation letter of Oct. 4, said there was a need for more serious attention to “the many accounts from the Navy and other services of unusual aerial systems interfering with military weapon platforms and displaying beyond-next-generation capabilities.”
-
-| Field | Value |
-|---|---|
-| Attributed to | NYT December 16, 2017; NYT-reported quotation from Elizondo's October 4, 2017 resignation letter to Defense Secretary Jim Mattis., 2017-10-04 |
-| Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
-| Location | ¶ beginning "Mr. Elizondo, in his resignation letter of Oct. 4" |
-
-> For years, the program investigated reports of unidentified flying objects, according to Defense Department officials, interviews with program participants and records obtained by The New York Times. It was run by a military intelligence official, Luis Elizondo, on the fifth floor of the Pentagon’s C Ring, deep within the building’s maze.
-
-| Field | Value |
-|---|---|
-| Attributed to | New York Times, "Glowing Auras and ‘Black Money’: The Pentagon’s Mysterious U.F.O. Program," by Helene Cooper, Ralph Blumenthal and Leslie Kean, December 16, 2017 — first public reporting on AATIP., 2017-12-16 |
-| Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
-| Location | ¶ beginning "WASHINGTON — In the $600 billion annual Defense Department budgets" |
-
-> But Mr. Elizondo said the only thing that had ended was the effort’s government funding, which dried up in 2012. From then on, Mr. Elizondo said in an interview, he worked with officials from the Navy and the C.I.A. He continued to work out of his Pentagon office until this past October, when he resigned to protest what he characterized as excessive secrecy and internal opposition.
-
-| Field | Value |
-|---|---|
-| Attributed to | NYT December 16, 2017; Elizondo on-record statement to Cooper/Blumenthal/Kean characterizing the post-2012 funding-vs-program continuity question and his October 2017 resignation rationale., 2017-12-16 |
-| Source | [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html) |
-| Location | ¶ beginning "But Mr. Elizondo said the only thing that had ended" |
+_Direct observation._
 
 > Yes. I served as the senior ranking person of the Advanced Aerospace Threat
 > Identification Program ("AATIP") within the Department of Defense ("DoD"). AATIP
@@ -166,6 +129,28 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 | Attributed to | Sworn Question-for-the-Record response to Rep. Eric Burlison, December 19, 2024; submitted under penalty of 18 U.S.C. § 1001 following the November 13, 2024 House Oversight hearing., 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q1, ¶1 |
+
+**Also attested:**
+
+- New York Times, "Glowing Auras and ‘Black Money’: The Pentagon’s Mysterious U.F.O. Program," by Helene Cooper, Ralph Blumenthal and Leslie Kean, December 16, 2017 — first public reporting on AATIP.; 2017-12-16; [archived source](../sources/news/nyt-glowing-auras-pentagon-ufo-20171216.html); ¶ beginning "WASHINGTON — In the $600 billion annual Defense Department budgets"
+
+### Personal Disposition Toward UFOs
+
+> [7:18] I've never been a UFO guy you know people come up
+> [7:21] like oh you're that UFO guy I'm really
+> [7:23] not I I was never really into science
+> [7:25] fiction as a kid um I wasn't into the
+> [7:28] Star Trek or the Star Wars
+
+| Field | Value |
+|---|---|
+| Attributed to | Joe Rogan Experience #2194, August 23, 2024; Elizondo's self-attestation of his pre-AATIP disposition toward the UFO topic., 2024-08-23 |
+| Source | [archived source](../sources/transcripts/jre-2194-elizondo-2024-downloaded.md) |
+| Location | [7:18] |
+
+_Direct observation._
+
+### Recovered Non-Human Material
 
 > Yes. The U.S. Government (or a defense contractor) has in its possession exotic
 > materials of nonhuman origin.
@@ -186,6 +171,8 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q4(a), ¶1 |
 
+### 2004 White House Disclosure Decision
+
 > Several key scientists associated with both AAWSAP and AATIP were part of a
 > conversation, sponsored by the White House in approximately 2004, to determine if the U.S.
 > public was prepared for the acknowledgement of UAP by the U.S. Government. After
@@ -197,6 +184,8 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 | Attributed to | Sworn QFR response, December 19, 2024; appended to the Q4 (recovered craft / biological specimens) response., 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q4, closing paragraph |
+
+### Lockheed-Bigelow Transfer & PAX River Hangar
 
 > Yes. The CIA opposed the transfer of materials of advanced, non-human origin
 > from Lockheed Martin to Bigelow Aerospace.
@@ -222,6 +211,19 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q7, ¶1 (first half — pre-page-break) |
 
+> was allocated at the request of then-Representative Steny Hoyer. I have visited this facility;
+> however, as it was a new construction at the time, no materials had yet been transferred.
+
+| Field | Value |
+|---|---|
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q7. Second half of the Q7 response (splits across a PDF page break from q6) — names Hoyer as the source of the $10M funding allocation and attests Elizondo's personal visit to the facility., 2024-12-19 |
+| Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
+| Location | Response to Q7, ¶1 (second half — post-page-break) |
+
+_Direct observation._
+
+### CIA & Air Force Obstruction
+
 > Yes, and similar obstructionist efforts were also made by the U.S. Air Force.
 > There seemed to be passive resistance from certain elements within the Central Intelligence
 > Agency and a more active campaign by specific factions within the U.S. Air Force to
@@ -232,6 +234,23 @@ Elizondo served as the senior ranking person of AATIP, and what he has placed on
 | Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q9 asking about CIA efforts to block UAP-related materials or information transfer during Elizondo's tenure at AATIP., 2024-12-19 |
 | Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
 | Location | Response to Q9, ¶1 |
+
+### Retaliation Against UAP Advocates
+
+> Yes. Many of my former colleagues and I have faced retaliation for our public
+> advocacy for UAP transparency. This has included efforts to suspend or revoke our security
+> clearances, as well as direct threats to our safety and that of our families. Some elements
+> within the DoD and the Intelligence Community ("IC") have engaged in what can only be
+> described as 'administrative terrorism' to deter individuals with security clearances from
+> raising this issue.
+
+| Field | Value |
+|---|---|
+| Attributed to | Sworn QFR response, December 19, 2024; direct answer to Burlison Q10 asking whether the CIA or other government agencies are actively working to conceal UAP-related information from the public., 2024-12-19 |
+| Source | [archived source](../sources/government/douglas-johnson-elizondo-qfr-burlison-20241219.pdf) |
+| Location | Response to Q10, ¶1 |
+
+_Direct observation._
 
 ---
 

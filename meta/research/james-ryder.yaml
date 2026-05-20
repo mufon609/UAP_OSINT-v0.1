@@ -90,6 +90,7 @@ context_extrinsic:
   retirement_date: '2011-02'
 quotes:
   - id: q1
+    claim_group: "Philosophy of Science as Meditation"
     added_date: '2026-05-07'
     text: |
       I'm going to define it as to develop and organize knowledge about the nature of the universe. And if you look at it from the esoteric point of view, that's a pretty big universe.
@@ -101,6 +102,7 @@ quotes:
     statement_date: '2018-04-28'
     significance: 'Ryder''s published self-defined purpose of science, with explicit reference to the esoteric framing — bridges his Lockheed Martin technical career and his Lucis Trust Arcane School lecture series.'
   - id: q2
+    claim_group: "Philosophy of Science as Meditation"
     added_date: '2026-05-07'
     text: |
       Its role, I contend, is collective meditation on truth. There are some interesting philosophical discussions on that in certain science books. I think we pursue science because it's a response to humanity's "cry" to understand and to know.
@@ -112,6 +114,7 @@ quotes:
     statement_date: '2018-04-28'
     significance: 'Ryder''s published characterization of the role of science as collective meditation on truth, framing the Lucis-Trust-adjacent vocabulary (meditation) as compatible with scientific inquiry.'
   - id: q3
+    claim_group: "Philosophy of Science as Meditation"
     added_date: '2026-05-07'
     text: |
       In the end, I think the role of science is to bring light into the world – the light of our understanding of what we are.
@@ -123,6 +126,7 @@ quotes:
     statement_date: '2018-04-28'
     significance: 'Final published Ryder-byline statement on the role of science. Closing line of the edited transcript excerpt; Ryder died approximately one month after the original April 28-29, 2018 New York conference talk.'
   - id: q4
+    claim_group: "Lockheed Martin Spacecraft Leadership"
     added_date: '2026-05-07'
     text: |
       [39:00] so let's look at that i know about ibx internet boundary explorer very well because it was built in my lab and it discovered a ribbon in the sky
@@ -134,6 +138,7 @@ quotes:
     statement_date: '2015-05'
     significance: 'First-person Ryder primary attestation that IBEX (Interstellar Boundary Explorer, NASA Small Explorer mission launched October 2008) was developed in his Lockheed Martin Advanced Technology Center lab. Documents direct R&D leadership of a NASA spacecraft program by name. Auto-caption renders ''IBEX'' as ''ibx''.'
   - id: q5
+    claim_group: "Lockheed Martin Spacecraft Leadership"
     added_date: '2026-05-07'
     text: |
       [31:33] to look through those nose because they're out there in space i know a little about them because my company built a lot of them and i had the luck to oversee a lot of those
@@ -145,6 +150,7 @@ quotes:
     statement_date: '2015-05'
     significance: 'First-person Ryder primary attestation that his company (Lockheed Martin Space Systems Company) built the spacecraft instruments behind the May 2015 Andromeda matter-halo Nature publication and that he personally oversaw the program. A second on-camera attestation of his Lockheed Martin Space Systems Vice President / ATC role beyond the IVS leadership page text.'
   - id: q6
+    claim_group: "Friendship with Hal Puthoff"
     added_date: '2026-05-07'
     text: |
       [59:05] so as my friend dr put off said it's like the manifest universe is instantly intrinsically interconnected
@@ -156,6 +162,7 @@ quotes:
     statement_date: '2015-05'
     significance: 'First-person Ryder attestation of personal friendship with Hal Puthoff, naming Puthoff on camera as ''my friend dr put off''. Confirms the Ryder-Puthoff durable scientific friendship. Auto-caption renders ''Puthoff'' as ''put off''.'
   - id: q7
+    claim_group: "Government Psychic Research History"
     added_date: '2026-05-07'
     text: |
       [1:02:05] i can tell you for a fact governments have looked into leprosy to use it for the purposes of invading other people in a secret way
@@ -167,6 +174,7 @@ quotes:
     statement_date: '2015-05'
     significance: 'First-person Ryder on-record acknowledgment that governments have investigated telepathy for covertly accessing other people, framed as a known historical fact rather than speculation. Auto-caption renders ''telepathy'' as ''leprosy''.'
   - id: q8
+    claim_group: "ESP Wars Book and Targ Relationship"
     added_date: '2026-05-07'
     text: |
       [1:08:10] and they did the first work some forty years ago dr pothos one dr targ who's worked for me for years is another one it's fun being able to say these things
@@ -178,6 +186,7 @@ quotes:
     statement_date: '2018-04-28'
     significance: 'First-person Ryder primary attestation of a direct supervisory relationship with Russell Targ at Lockheed: ''dr targ who''s worked for me for years''. The on-camera caption ''it''s fun being able to say these things'' lands at this moment, indicating Ryder is acknowledging the relationship publicly for the first time. Auto-caption renders ''Puthoff'' as ''pothos''.'
   - id: q9
+    claim_group: "ESP Wars Book and Targ Relationship"
     added_date: '2026-05-07'
     text: |
       [54:57] there you go what's that got to do on the page here i'll tell you a little story on that um a few weeks ago a good friend of mine who's still at lockheed martin still works there mainly as an advisor to the young kids because he's about my age and he just loves working and he sent through my daughter who also works at lockheed martin now said your dad might like this and he sent me a spiral bound book it's a big one like that pretty thick and it says on it esp wars i knew it instantly because that thing was put together when i was the vp there and russell targ dr targ had a lot of input doctor thought of did i get to say this now i'm so delighted
@@ -189,6 +198,7 @@ quotes:
     statement_date: '2018-04-28'
     significance: 'First-person Ryder narration of the internal Lockheed Martin lineage of the ''ESP Wars: East and West'' declassified-psychic-research book project. Establishes: (1) the book was assembled during Ryder''s LMSSC Vice President tenure, (2) Russell Targ ''had a lot of input'', (3) Hal Puthoff (auto-captioned ''thought of'') was involved, (4) Ryder''s daughter also works at Lockheed Martin, (5) a current Lockheed Martin colleague routed the published copy to Ryder via his daughter. Direct primary attestation of the LMSSC-internal psychic-research declassification chain.'
   - id: q10
+    claim_group: "ESP Wars Book and Targ Relationship"
     added_date: '2026-05-07'
     text: |
       [55:50] no put together in 2009 so i was two years away before i retired
@@ -200,6 +210,8 @@ quotes:
     statement_date: '2018-04-28'
     significance: 'Ryder dates the ESP Wars book assembly to 2009, two years before his February 2011 retirement. Cross-anchors with the IVS leadership page period (May 2005 - February 2011) and confirms Ryder''s VP-tenure overlap with the book project.'
   - id: q11
+    claim_group: "Friendship with Hal Puthoff"
+    corroborated_by: [q6]
     added_date: '2026-05-07'
     text: |
       [39:24] the second one is by dr hal put off as a physicist in austin and hal's publishing on that second one did get accepted into the journal of physics
@@ -211,6 +223,7 @@ quotes:
     statement_date: '2018-04-28'
     significance: 'First-person Ryder primary attestation that Hal Puthoff is ''my good buddy'' (line 39:12 of source) and that Puthoff''s vacuum-polarization gravity paper was accepted in the Journal of Physics. Confirms the durable Ryder-Puthoff friendship in 2018, three years after the 2015 talk reference.'
   - id: q12
+    claim_group: "Government Psychic Research History"
     added_date: '2026-05-07'
     text: |
       [20:50] if you wanted to study uh certain kinds of things related to what's called esp in the united states until very recently you had to hide it very carefully because you were crazy and then the government didn't want you people to think they're supporting crazy stuff but if you wanted to do the work in russia go right ahead fine here's your money because they're not caught in the religion that says it's not possible
@@ -222,6 +235,7 @@ quotes:
     statement_date: '2018-04-28'
     significance: 'Ryder''s first-person framing of the Cold War U.S./USSR asymmetry in psychic research funding: in the U.S. ESP work had to be hidden, in the USSR it was openly funded. Provides Ryder''s personal historical framing of the ''ESP Wars'' book context.'
   - id: q13
+    claim_group: "UAP Terminology and Ontology"
     added_date: '2026-05-17'
     text: |
       [05:47] And what I mean by that, from apparitions to what people call fairies, to angels, the little people, the violin, and so forth, and now, of course, we have the traditional term almost of UFOs. I use UAPs because a UFO is an unexplained flying object. But a UAP is unexplained aerial phenomena. And they're definitely aerial in that we see them above the ground. And they're phenomena because, hm, what's that? But I don't like UFOs so much. Because it assumes that they're manned by some creatures from a different planet or star. So I feel like we've already made the question before we actually ask the question.
@@ -233,6 +247,7 @@ quotes:
     statement_date: '2017-06-10'
     significance: 'Ryder explicitly chooses Pentagon-coined "UAP" terminology over "UFO" — "I feel like we''ve already made the question before we actually ask the question." Notable for predating mainstream public adoption of "UAP" terminology by approximately four years (the 2021 ODNI preliminary assessment and 2022 HPSCI hearing were the public-adoption events). Bridges the phenomena named in the talk title — fairies, angels, the little people — with modern UAP discourse.'
   - id: q14
+    claim_group: "Esoteric Veil Framework and Ancient Continuity"
     added_date: '2026-05-17'
     text: |
       [06:50] But Vail, if you look it up in a good dictionary, is a deceptive appearance. Or a masking layer. If you think about much that's been talked about the last two days, you can most certainly think of that. It's related to the word cloak. A cloak is an encompassing veil to exclude interruption or interference between levels of energy. And rending means to disintegrate that veil of separation. And a question, of course, in history, and especially now, as we search the sciences and what they're learning, are we in fact seeing the disintegration of that? And is that veil between what we call devas and fairies and mankind separating to be more clear?
@@ -244,6 +259,7 @@ quotes:
     statement_date: '2017-06-10'
     significance: 'Ryder explicates the talk title — "rending means to disintegrate that veil of separation" — and frames the central question as whether the veil between "devas and fairies and mankind" is dissipating. The veil-between-planes framework is core Ageless Wisdom terminology operationalised on UAP discourse. "Vail" is Ryder''s own spelling pronunciation captured by whisper.'
   - id: q15
+    claim_group: "Esoteric Veil Framework and Ancient Continuity"
     added_date: '2026-05-17'
     text: |
       [11:01] In the lower, the top there, there are lots of beings. I don't know what to call them. I can't call them humans. There's lots of beings, things, look like alive. They have eyes and noses. They sure look like some of the space people you see in UFOs sometimes. You'll see more of those. And below that, there are all these drawings, and if you're a UFO enthusiast of that type, there's your first UFO 42,000 years ago. Lights and all.
@@ -255,6 +271,7 @@ quotes:
     statement_date: '2017-06-10'
     significance: 'Ryder''s prehistoric-cave-art-as-UAP-record claim — Chauvet and Dordogne cave paintings depict "beings ... they sure look like some of the space people you see in UFOs sometimes" and "your first UFO 42,000 years ago. Lights and all." Establishes the temporal-continuity argument: same entities and phenomena recorded for ~40,000 years across cultures.'
   - id: q16
+    claim_group: "Non-Physical Nature of the Phenomenon"
     added_date: '2026-05-17'
     text: |
       [50:00] Interestingly enough, people who have been moved out of their rooms and flown out the window, women who've gone through that, have actually been investigated in sealed rooms where they go to bed and sleep and the room is locked from the outside. There are no windows in it. There are no doors in it. And they have cameras on them all the time. And those people do experience what I just described while in the room and the cameras and all of the sound pickups show nothing happened in the room except she snored or he snored that night. So whatever's happening is not happening physically. And it's also been shown that those same descriptions go back 25 to 30,000 years, certainly back to Roman times.
@@ -266,6 +283,7 @@ quotes:
     statement_date: '2017-06-10'
     significance: 'Ryder''s most direct non-physical-phenomenon claim — abductions occur under continuous camera surveillance in locked rooms with no detected physical movement. "Whatever''s happening is not happening physically." Couples the contemporary observation with the temporal-continuity claim — "those same descriptions go back 25 to 30,000 years, certainly back to Roman times." Ryder''s public on-record statement that the phenomenon is not physical pre-dates by seven years the public allegation that named him as proposer of a Lockheed-Bigelow physical-material transfer.'
   - id: q17
+    claim_group: "UAP Terminology and Ontology"
     added_date: '2026-05-17'
     text: |
       [50:46] In fact, if I could summarize on UFOs a few comments that one of the great explorers in this field is Jacques Vallee, who is actually an American. He's actually an astrophysicist and he studied this for a long time. And some of the senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets. And as he summarized, the UFOs are not objects nor flying. It's an unidentified flying object. But they're not an object and it's not flying because an object is something that I can hit. You know, the light beam is not an object. But you can't do that. And they're not flying because you never actually see them flying. They appear. So you go, you have a... That's why I use UAPs. It's an aerial, it's a phenomena, and it's unexplained. But it isn't flying and it's not an object.
@@ -277,6 +295,7 @@ quotes:
     statement_date: '2017-06-10'
     significance: 'Ryder''s explicit Vallée framing — names Jacques Vallée ([`/people/jacques-vallee`]) as "one of the great explorers in this field" and summarises his thesis on record: "the UFOs are not objects nor flying ... they appear." Establishes Ryder''s ontological commitment that the UAP phenomenon is not a fly-through-the-air physical-object class. The aside "senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets" is notable for naming senior UAP researchers in a way Ryder appears familiar with from inside the field.'
   - id: q18
+    claim_group: "Classification Non-Denial"
     added_date: '2026-05-17'
     text: |
       [53:42] I wouldn't say it was or wasn't.
@@ -288,6 +307,7 @@ quotes:
     statement_date: '2017-06-10'
     significance: 'Ryder''s on-record sidestep of an incident the moderator described as "classified information, which is now released" — "I wouldn''t say it was or wasn''t." The classification non-denial is notable structurally — the moderator''s framing is "now released"; Ryder declines to confirm or deny the classification of the incident.'
   - id: q19
+    claim_group: "Non-Physical Nature of the Phenomenon"
     added_date: '2026-05-17'
     text: |
       [54:08] There have been many, many chases of these objects, which when you get close, they're just not there.
@@ -299,6 +319,7 @@ quotes:
     statement_date: '2017-06-10'
     significance: 'Ryder''s apparent-firsthand framing of the UAP behavioural signature — "many, many chases of these objects, which when you get close, they''re just not there." Couples with q18 to document Ryder speaking with familiarity about a class of incidents the moderator described as having involved classified information.'
   - id: q20
+    claim_group: "Esoteric Veil Framework and Ancient Continuity"
     added_date: '2026-05-17'
     text: |
       [60:00] The top one is a drawing by a person who specializes in drawing pictures of devas and fairies. And he studied the history of it and realized they're always drawn with narrow eyes, slightly angled, and a narrow chin. And that goes back 30,000, 40,000 years in the Roman times and so forth. And this is a drawing by a person who went through Dr. Hancock, a drug-induced dream with the South American peoples, to see devas. And to his shock, this is what he saw. And he says, excuse my penmanship, I'm not an artist. But he drew the same thing. And this one is from another artist who has spent their life studying the devas. And this is what they see, that same kind of shape. So it's certainly bringing up the question, what are we really dealing with when we see these kinds of things?

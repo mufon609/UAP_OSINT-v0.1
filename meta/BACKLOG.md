@@ -338,10 +338,14 @@ apply by field-only insertion (never touch quote `text` / `source`),
 regenerate, validate. Eyewitness nodes are safe (the grouped renderer
 marks first-hand observations inline since `1f3669a`).
 
-**Progress (15 person nodes):** done — `david-grusch`. Remaining (14):
-alex-dietrich, david-fravor, hal-puthoff, james-lacatski, james-ryder,
-karl-nell, kit-green, luis-elizondo, ronald-moultrie, russell-targ,
-ryan-graves, sean-kirkpatrick, sue-gough, uri-geller.
+**Progress (15 person nodes):** done (4) — `david-grusch`,
+`david-fravor`, `luis-elizondo`, `james-ryder` (the latter three migrated
+via the Manager subagent per `prompts/agent-manager.md` — first real
+exercise of that prompt on existing nodes; `david-fravor` confirmed the
+inline `_Direct observation._` marker renders on a real eyewitness).
+Remaining (11): alex-dietrich, hal-puthoff, james-lacatski, karl-nell,
+kit-green, ronald-moultrie, russell-targ, ryan-graves, sean-kirkpatrick,
+sue-gough, uri-geller.
 
 **Blocks:** none.
 **Blocked by:** none (A3 machinery shipped).

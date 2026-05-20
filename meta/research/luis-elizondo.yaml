@@ -253,6 +253,8 @@ program_involvement:
 
 quotes:
 - id: q1
+  claim_group: "AATIP Role & Recruitment"
+  corroborated_by: [q9]
   added_date: '2026-05-19'
   text: |
     Yes. I served as the senior ranking person of the Advanced Aerospace Threat
@@ -271,6 +273,7 @@ quotes:
   significance: 'Elizondo''s sworn self-attestation of his AATIP role ("senior ranking person") and the foundational AATIP institutional claim — that DoD aerospace company executives claimed possession of recovered "exotic material" not made by U.S. or foreign sources, and that they initially agreed to allow AATIP/AAWSAP to take custody. The 18 U.S.C. § 1001 perjury basis is the highest evidentiary tier available in this artifact.'
 
 - id: q2
+  claim_group: "Recovered Non-Human Material"
   added_date: '2026-05-19'
   text: |
     Yes. The U.S. Government (or a defense contractor) has in its possession exotic
@@ -284,6 +287,7 @@ quotes:
   significance: 'Single-sentence sworn affirmation of nonhuman-origin material possession by the U.S. Government or a defense contractor. The brevity is itself load-bearing — the response carries no hedge, no scope-limitation, and no source attribution; Elizondo is asserting the fact under penalty of perjury without qualifying language.'
 
 - id: q3
+  claim_group: "Recovered Non-Human Material"
   added_date: '2026-05-19'
   text: |
     (a) Yes. I am aware of several incidents where the U.S. military and certain Defense
@@ -298,6 +302,7 @@ quotes:
   significance: 'Sworn affirmation that the U.S. military and "certain Defense Contract companies" recovered craft of non-human origin in multiple incidents and that biological specimens were recovered in some cases. The "several incidents" framing introduces multiplicity into the institutional record; the "biological specimens" claim is the most direct sworn statement on non-human biology in the disclosure-era public record.'
 
 - id: q4
+  claim_group: "2004 White House Disclosure Decision"
   added_date: '2026-05-19'
   text: |
     Several key scientists associated with both AAWSAP and AATIP were part of a
@@ -314,6 +319,7 @@ quotes:
   significance: 'Attests a 2004 White House–sponsored conversation about whether to disclose UAP information to the public — with the named participation of "Several key scientists associated with both AAWSAP and AATIP" and a stated week-long deliberation ending in a decision against disclosure. The stated week-long deliberation constrains the institutional-decision-against-disclosure narrative; the named participation of AAWSAP/AATIP key scientists constrains the date attribution of the roster to 2004 or earlier in this specific institutional context.'
 
 - id: q5
+  claim_group: "Lockheed-Bigelow Transfer & PAX River Hangar"
   added_date: '2026-05-19'
   text: |
     Yes. The CIA opposed the transfer of materials of advanced, non-human origin
@@ -327,6 +333,7 @@ quotes:
   significance: 'Sworn affirmation of the CIA''s opposition to a Lockheed Martin → Bigelow Aerospace materials transfer of "advanced, non-human origin." The named-entity specificity (CIA, Lockheed Martin, Bigelow Aerospace) and the brevity of the answer make this one of the most concrete institutional attestations in the disclosure-era sworn record.'
 
 - id: q6
+  claim_group: "Lockheed-Bigelow Transfer & PAX River Hangar"
   added_date: '2026-05-19'
   text: |
     Yes. I can confirm that specific facilities were identified to enable Bigelow
@@ -346,6 +353,7 @@ quotes:
   significance: 'Sworn affirmation that specific facilities — Las Vegas locations and a newly built Patuxent River Naval Air Station hangar — were identified to enable Bigelow Aerospace to receive UAP materials transferred from Lockheed Martin. The PAX River hangar is described as purpose-built to meet Special Access Program Facility (SAP-F) requirements and capable of accommodating materials at any classification level. The hangar funding is stated as approximately $10 million.'
 
 - id: q16
+  claim_group: "Lockheed-Bigelow Transfer & PAX River Hangar"
   added_date: '2026-05-19'
   text: |
     was allocated at the request of then-Representative Steny Hoyer. I have visited this facility;
@@ -359,6 +367,7 @@ quotes:
   significance: 'Direct first-hand testimony — Elizondo states "I have visited this facility" — naming then-Representative Steny Hoyer ([`/people/steny-hoyer`]) as the source of the funding-allocation request for the Patuxent River SAP-F hangar described in q6. The "no materials had yet been transferred" closing clause constrains the historical material-custody question to "facility ready, no materials in custody at time of visit."'
 
 - id: q7
+  claim_group: "CIA & Air Force Obstruction"
   added_date: '2026-05-19'
   text: |
     Yes, and similar obstructionist efforts were also made by the U.S. Air Force.
@@ -374,6 +383,7 @@ quotes:
   significance: 'Differentiates CIA "passive resistance" from U.S. Air Force "more active campaign" to suppress UAP inquiries — institutional-actor characterization of two distinct obstructionist patterns rather than a single monolithic blockage. The framing constrains any future analysis that proposes a unified suppression model.'
 
 - id: q8
+  claim_group: "Retaliation Against UAP Advocates"
   added_date: '2026-05-19'
   text: |
     Yes. Many of my former colleagues and I have faced retaliation for our public
@@ -391,6 +401,7 @@ quotes:
   significance: 'First-hand testimony of personal retaliation experience for UAP-transparency advocacy: clearance actions, direct threats to safety and family safety. The "administrative terrorism" phrasing is Elizondo''s own characterization. The "Many of my former colleagues and I" framing pluralizes the retaliation experience across the disclosure-era institutional-actor cohort.'
 
 - id: q9
+  claim_group: "AATIP Role & Recruitment"
   added_date: '2026-05-19'
   text: |
     For years, the program investigated reports of unidentified flying objects, according to Defense Department officials, interviews with program participants and records obtained by The New York Times. It was run by a military intelligence official, Luis Elizondo, on the fifth floor of the Pentagon’s C Ring, deep within the building’s maze.
@@ -403,6 +414,7 @@ quotes:
   significance: 'Third-party institutional attestation of Elizondo''s AATIP role at the moment of program disclosure. The "fifth floor of the Pentagon''s C Ring" location specificity is documented only here in the publicly-archived record; corroborates the QFR Q1 self-attestation seven years later via a fully independent source path (NYT interviews with Defense Department officials and program participants).'
 
 - id: q10
+  claim_group: "Resignation & Reasons"
   added_date: '2026-05-19'
   text: |
     But Mr. Elizondo said the only thing that had ended was the effort’s government funding, which dried up in 2012. From then on, Mr. Elizondo said in an interview, he worked with officials from the Navy and the C.I.A. He continued to work out of his Pentagon office until this past October, when he resigned to protest what he characterized as excessive secrecy and internal opposition.
@@ -415,6 +427,7 @@ quotes:
   significance: 'Elizondo''s on-record (non-sworn) framing of the AATIP funding-cessation vs. program-continuity question — government funding ended 2012, but the effort itself continued with Navy and CIA collaboration through to his October 2017 resignation. The "excessive secrecy and internal opposition" framing of the resignation is reproduced verbatim from the article''s reporting.'
 
 - id: q11
+  claim_group: "Resignation & Reasons"
   added_date: '2026-05-19'
   text: |
     “Why aren’t we spending more time and effort on this issue?” Mr. Elizondo wrote in a resignation letter to Defense Secretary Jim Mattis.
@@ -427,6 +440,7 @@ quotes:
   significance: 'Verbatim excerpt from Elizondo''s resignation letter as reported by NYT. The letter itself is unarchived in this repository (flagged stub [`/documents/elizondo-resignation-letter-2017`] per the corpus convention) — NYT''s reporting is the proximate source for the excerpt.'
 
 - id: q12
+  claim_group: "Resignation & Reasons"
   added_date: '2026-05-19'
   text: |
     Mr. Elizondo, in his resignation letter of Oct. 4, said there was a need for more serious attention to “the many accounts from the Navy and other services of unusual aerial systems interfering with military weapon platforms and displaying beyond-next-generation capabilities.”
@@ -439,6 +453,7 @@ quotes:
   significance: 'NYT-mediated verbatim excerpt of Elizondo''s resignation-letter framing of "the many accounts from the Navy and other services" and "beyond-next-generation capabilities." Pairs with q11 to bound the resignation-letter rhetorical content per NYT reporting; resignation letter itself remains unarchived in the corpus.'
 
 - id: q13
+  claim_group: "AATIP Role & Recruitment"
   added_date: '2026-05-19'
   text: |
     [3:52] uh I got
@@ -458,6 +473,7 @@ quotes:
   significance: 'Elizondo''s first-hand narrative of his early-2009 recruitment into AATIP at his Pentagon office, prior to meeting Dr. James Lacatski. The "two individuals" identification is unattributed and unsourced beyond Elizondo''s own recollection here; institutional context constrains them to AATIP-era program operators.'
 
 - id: q14
+  claim_group: "AATIP Role & Recruitment"
   added_date: '2026-05-19'
   text: |
     [5:53] but
@@ -480,6 +496,7 @@ quotes:
   significance: 'Elizondo''s first-hand narrative of his initial Lacatski meeting and his characterization of Lacatski as "the number one rocket scientist in the US government." The caption-orthography forms "latky" and "latsky" appear in the same passage — both auto-caption renderings of "Lacatski"; preserved verbatim per the transcript-provenance auto-caption discipline.'
 
 - id: q15
+  claim_group: "Personal Disposition Toward UFOs"
   added_date: '2026-05-19'
   text: |
     [7:18] I've never been a UFO guy you know people come up

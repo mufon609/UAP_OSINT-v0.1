@@ -47,7 +47,7 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 
 ## Statements
 
-### Direct Observations
+### Tic Tac Object Description
 
 > As all 4 looked down we saw a small white Tic Tac shaped object with the longitudinal axis pointing N/S and moving very abruptly over the white water.
 
@@ -57,6 +57,10 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
 | Location | p. 1, ¶7 |
 
+_Direct observation._
+
+### Object's Flight Behavior & Performance
+
 > As we pulled nose onto the object at approximately ½ of a mile with the object just left of our nose, it rapidly accelerated and disappeared right in front of our aircraft.
 
 | Field | Value |
@@ -64,6 +68,8 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
 | Location | p. 2, ¶1 |
+
+_Direct observation._
 
 > This Tic Tac Object had just traveled 60 miles in a very short period of time (less than a minute), was far superior in performance to my brand-new F/A-18F and did not operate with any of the known aerodynamic principles that we expect for objects that fly in our atmosphere.
 
@@ -73,6 +79,10 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
 | Location | p. 2, ¶1 |
 
+_Direct observation._
+
+### Lack of Post-Incident Investigation
+
 > What is shocking is that the incident was never investigated, none of my crew were ever questioned, tapes were never taken, and after a couple of days, it turned into a great story to tell friends.
 
 | Field | Value |
@@ -81,16 +91,9 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
 | Location | p. 2, ¶3 |
 
-> I was scheduled to lead a 2 V 2 Air to Air training exercise. My flight of 2 F/A-18Fs was the Blue Air, the good guys, and we were being controlled by the USS Princeton, CG-59.
+_Direct observation._
 
-| Field | Value |
-|---|---|
-| Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
-| Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | p. 1, ¶4 |
-
-
-### Other Statements
+### Disclosure Chain & TTSA Formation
 
 > Not until 2009 did Jay Stratton contact me to investigate what we observed. Unbeknownst to all of us, Jay was part of the ATIP (Anomalous Threat Identification Program) program led by Lue Elizondo out of the DOD.
 
@@ -116,6 +119,16 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
 | Location | p. 2, ¶4 |
 
+> It was this organization that pressed the issue with leading Industry experts and USG officials, worked with Leslie Keane, Ralph Blumenthal and Helene Cooper to publish the articles in the NYT in Dec 2017 admitting the USG was looking at UAPs and removed the Stigma of the UFO topic which led to us being here today.
+
+| Field | Value |
+|---|---|
+| Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
+| Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
+| Location | p. 2, ¶5 |
+
+### Encounter Setup & Mission Context
+
 > We were at the beginning of our workup cycle that would prepare us for a combat deployment to the Persian Gulf for operations supporting the ground forces in Iraq.
 
 | Field | Value |
@@ -124,13 +137,15 @@ Fravor first-hand observed the November 2004 [`/events/2004-nimitz-encounter`] f
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
 | Location | p. 1, ¶3 |
 
-> It was this organization that pressed the issue with leading Industry experts and USG officials, worked with Leslie Keane, Ralph Blumenthal and Helene Cooper to publish the articles in the NYT in Dec 2017 admitting the USG was looking at UAPs and removed the Stigma of the UFO topic which led to us being here today.
+> I was scheduled to lead a 2 V 2 Air to Air training exercise. My flight of 2 F/A-18Fs was the Blue Air, the good guys, and we were being controlled by the USS Princeton, CG-59.
 
 | Field | Value |
 |---|---|
 | Attributed to | Written testimony, House Oversight Committee, 2023-07-26 |
 | Source | [archived source](../sources/government/oversight-house-gov-fravor-written-testimony-20230726.pdf) |
-| Location | p. 2, ¶5 |
+| Location | p. 1, ¶4 |
+
+_Direct observation._
 
 ---
 

@@ -69,11 +69,7 @@ In February 2026, Rep. Eric Burlison conducted a White House-approved site visit
 
 ## Statements
 
-### Direct Observations
-
-_No direct observations documented._
-
-### Other Statements
+### Lockheed Martin Spacecraft Leadership
 
 > [39:00] so let's look at that i know about ibx internet boundary explorer very well because it was built in my lab and it discovered a ribbon in the sky
 
@@ -91,13 +87,21 @@ _No direct observations documented._
 | Source | [archived source](../sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt) |
 | Location | [31:33] |
 
-> [59:05] so as my friend dr put off said it's like the manifest universe is instantly intrinsically interconnected
+### Friendship with Hal Puthoff
+
+> [39:24] the second one is by dr hal put off as a physicist in austin and hal's publishing on that second one did get accepted into the journal of physics
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2015 Lucis Trust Arcane School Conference talk 'The Soul Is Light. What Then Is Light?'., 2015-05 |
-| Source | [archived source](../sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt) |
-| Location | [59:05] |
+| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', discussing alternative gravity theories. The 'second one' refers to a specific gravity-as-electromagnetism paper Ryder is citing, immediately after referring to its author as 'my good buddy' (line 39:12)., 2018-04-28 |
+| Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
+| Location | [39:24] |
+
+**Also attested:**
+
+- Ryder's 2015 Lucis Trust Arcane School Conference talk 'The Soul Is Light. What Then Is Light?'.; 2015-05; [archived source](../sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt); [59:05]
+
+### Government Psychic Research History
 
 > [1:02:05] i can tell you for a fact governments have looked into leprosy to use it for the purposes of invading other people in a secret way
 
@@ -107,6 +111,16 @@ _No direct observations documented._
 | Source | [archived source](../sources/transcripts/lucistrust-soul-is-light-ryder-2015-youtube-transcript.txt) |
 | Location | [1:02:05] |
 
+> [20:50] if you wanted to study uh certain kinds of things related to what's called esp in the united states until very recently you had to hide it very carefully because you were crazy and then the government didn't want you people to think they're supporting crazy stuff but if you wanted to do the work in russia go right ahead fine here's your money because they're not caught in the religion that says it's not possible
+
+| Field | Value |
+|---|---|
+| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', section on Cold War ESP and psychic research funding history., 2018-04-28 |
+| Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
+| Location | [20:50] |
+
+### UAP Terminology and Ontology
+
 > [05:47] And what I mean by that, from apparitions to what people call fairies, to angels, the little people, the violin, and so forth, and now, of course, we have the traditional term almost of UFOs. I use UAPs because a UFO is an unexplained flying object. But a UAP is unexplained aerial phenomena. And they're definitely aerial in that we see them above the ground. And they're phenomena because, hm, what's that? But I don't like UFOs so much. Because it assumes that they're manned by some creatures from a different planet or star. So I feel like we've already made the question before we actually ask the question.
 
 | Field | Value |
@@ -114,6 +128,16 @@ _No direct observations documented._
 | Attributed to | Ryder's 2017 Lucis Trust Arcane School Conference London talk 'The Rending of the Veils, Part 1: Fairies, Devas and Unidentified Aerial Phenomena' ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), responding to Lawrence ([`/people/lawrence-lucis-trust-moderator`]) opening question about whether there is a rise in unexplained phenomena., 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [05:47]–[06:36] |
+
+> [50:46] In fact, if I could summarize on UFOs a few comments that one of the great explorers in this field is Jacques Vallee, who is actually an American. He's actually an astrophysicist and he studied this for a long time. And some of the senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets. And as he summarized, the UFOs are not objects nor flying. It's an unidentified flying object. But they're not an object and it's not flying because an object is something that I can hit. You know, the light beam is not an object. But you can't do that. And they're not flying because you never actually see them flying. They appear. So you go, you have a... That's why I use UAPs. It's an aerial, it's a phenomena, and it's unexplained. But it isn't flying and it's not an object.
+
+| Field | Value |
+|---|---|
+| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) summarising the UFO phenomenon by citing Jacques Vallee ([`/people/jacques-vallee`])., 2017-06-10 |
+| Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
+| Location | [50:46]–[51:36] |
+
+### Esoteric Veil Framework and Ancient Continuity
 
 > [06:50] But Vail, if you look it up in a good dictionary, is a deceptive appearance. Or a masking layer. If you think about much that's been talked about the last two days, you can most certainly think of that. It's related to the word cloak. A cloak is an encompassing veil to exclude interruption or interference between levels of energy. And rending means to disintegrate that veil of separation. And a question, of course, in history, and especially now, as we search the sciences and what they're learning, are we in fact seeing the disintegration of that? And is that veil between what we call devas and fairies and mankind separating to be more clear?
 
@@ -131,6 +155,16 @@ _No direct observations documented._
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [11:01]–[11:29] |
 
+> [60:00] The top one is a drawing by a person who specializes in drawing pictures of devas and fairies. And he studied the history of it and realized they're always drawn with narrow eyes, slightly angled, and a narrow chin. And that goes back 30,000, 40,000 years in the Roman times and so forth. And this is a drawing by a person who went through Dr. Hancock, a drug-induced dream with the South American peoples, to see devas. And to his shock, this is what he saw. And he says, excuse my penmanship, I'm not an artist. But he drew the same thing. And this one is from another artist who has spent their life studying the devas. And this is what they see, that same kind of shape. So it's certainly bringing up the question, what are we really dealing with when we see these kinds of things?
+
+| Field | Value |
+|---|---|
+| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), closing slide before the meditation break — three drawings (an artist of devas/fairies, a Graham Hancock ([`/people/graham-hancock`])-ayahuasca participant, a lifelong deva researcher) compared., 2017-06-10 |
+| Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
+| Location | [60:00]–[60:57] |
+
+### Non-Physical Nature of the Phenomenon
+
 > [50:00] Interestingly enough, people who have been moved out of their rooms and flown out the window, women who've gone through that, have actually been investigated in sealed rooms where they go to bed and sleep and the room is locked from the outside. There are no windows in it. There are no doors in it. And they have cameras on them all the time. And those people do experience what I just described while in the room and the cameras and all of the sound pickups show nothing happened in the room except she snored or he snored that night. So whatever's happening is not happening physically. And it's also been shown that those same descriptions go back 25 to 30,000 years, certainly back to Roman times.
 
 | Field | Value |
@@ -138,22 +172,6 @@ _No direct observations documented._
 | Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) presenting the alien-abduction phenomenon as evidence that UAP-class events are not physical in conventional sense., 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [50:00]–[50:44] |
-
-> [50:46] In fact, if I could summarize on UFOs a few comments that one of the great explorers in this field is Jacques Vallee, who is actually an American. He's actually an astrophysicist and he studied this for a long time. And some of the senior leaders in this field are actually astrophysicists. So they do know a lot about stars and planets. And as he summarized, the UFOs are not objects nor flying. It's an unidentified flying object. But they're not an object and it's not flying because an object is something that I can hit. You know, the light beam is not an object. But you can't do that. And they're not flying because you never actually see them flying. They appear. So you go, you have a... That's why I use UAPs. It's an aerial, it's a phenomena, and it's unexplained. But it isn't flying and it's not an object.
-
-| Field | Value |
-|---|---|
-| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]) summarising the UFO phenomenon by citing Jacques Vallee ([`/people/jacques-vallee`])., 2017-06-10 |
-| Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
-| Location | [50:46]–[51:36] |
-
-> [53:42] I wouldn't say it was or wasn't.
-
-| Field | Value |
-|---|---|
-| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), responding to Lawrence's framing of a Russian and American jets incident as "classified information, which is now released. It was classified.", 2017-06-10 |
-| Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
-| Location | [53:42] |
 
 > [54:08] There have been many, many chases of these objects, which when you get close, they're just not there.
 
@@ -163,13 +181,17 @@ _No direct observations documented._
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
 | Location | [54:08]–[54:14] |
 
-> [60:00] The top one is a drawing by a person who specializes in drawing pictures of devas and fairies. And he studied the history of it and realized they're always drawn with narrow eyes, slightly angled, and a narrow chin. And that goes back 30,000, 40,000 years in the Roman times and so forth. And this is a drawing by a person who went through Dr. Hancock, a drug-induced dream with the South American peoples, to see devas. And to his shock, this is what he saw. And he says, excuse my penmanship, I'm not an artist. But he drew the same thing. And this one is from another artist who has spent their life studying the devas. And this is what they see, that same kind of shape. So it's certainly bringing up the question, what are we really dealing with when we see these kinds of things?
+### Classification Non-Denial
+
+> [53:42] I wouldn't say it was or wasn't.
 
 | Field | Value |
 |---|---|
-| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), closing slide before the meditation break — three drawings (an artist of devas/fairies, a Graham Hancock ([`/people/graham-hancock`])-ayahuasca participant, a lifelong deva researcher) compared., 2017-06-10 |
+| Attributed to | Ryder's 2017 Lucis Trust talk ([`/transcripts/lucistrust-rending-veils-ryder-2017`]), responding to Lawrence's framing of a Russian and American jets incident as "classified information, which is now released. It was classified.", 2017-06-10 |
 | Source | [archived source](../sources/transcripts/lucistrust-rending-veils-ryder-2017-vimeo-whisper-transcript.txt) |
-| Location | [60:00]–[60:57] |
+| Location | [53:42] |
+
+### Philosophy of Science as Meditation
 
 > I'm going to define it as to develop and organize knowledge about the nature of the universe. And if you look at it from the esoteric point of view, that's a pretty big universe.
 
@@ -195,6 +217,8 @@ _No direct observations documented._
 | Source | [archived source](../sources/news/lucistrust-bi-annual-letter-ryder-science-meditation-snapshot.html) |
 | Location | ¶11 |
 
+### ESP Wars Book and Targ Relationship
+
 > [1:08:10] and they did the first work some forty years ago dr pothos one dr targ who's worked for me for years is another one it's fun being able to say these things
 
 | Field | Value |
@@ -218,22 +242,6 @@ _No direct observations documented._
 | Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', clarifying the assembly date of the 'ESP Wars' book., 2018-04-28 |
 | Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
 | Location | [55:50] |
-
-> [39:24] the second one is by dr hal put off as a physicist in austin and hal's publishing on that second one did get accepted into the journal of physics
-
-| Field | Value |
-|---|---|
-| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', discussing alternative gravity theories. The 'second one' refers to a specific gravity-as-electromagnetism paper Ryder is citing, immediately after referring to its author as 'my good buddy' (line 39:12)., 2018-04-28 |
-| Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
-| Location | [39:24] |
-
-> [20:50] if you wanted to study uh certain kinds of things related to what's called esp in the united states until very recently you had to hide it very carefully because you were crazy and then the government didn't want you people to think they're supporting crazy stuff but if you wanted to do the work in russia go right ahead fine here's your money because they're not caught in the religion that says it's not possible
-
-| Field | Value |
-|---|---|
-| Attributed to | Ryder's 2018 Lucis Trust Arcane School Conference NYC talk 'The Garment of God', section on Cold War ESP and psychic research funding history., 2018-04-28 |
-| Source | [archived source](../sources/transcripts/lucistrust-garment-of-god-ryder-2018-youtube-transcript.txt) |
-| Location | [20:50] |
 
 ---
 
