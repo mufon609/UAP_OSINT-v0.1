@@ -76,8 +76,6 @@ settled; implementation co-lands with A2):**
 
 **Retired or reduced by A2 on landing:**
 
-- **C30** — source-prep orchestrator (fully retired; can ship as
-  interim orchestrator if A2 stays roadmap-scoped)
 - **C31** — preflight discipline audit (reduced; manual-invocation
   case stays for tools called outside the agent chain)
 
@@ -85,8 +83,6 @@ settled; implementation co-lands with A2):**
 
 - **A1** — retire mandatory `entities_referenced[]` registration
   (corpus-migration + schema decision, orthogonal to A2)
-- **C34** — schema↔CLI parity check (orthogonal mechanism question;
-  no known concrete drift instance)
 
 ---
 
@@ -274,8 +270,8 @@ scoped.
 not as recommendations):
 
 - **Status quo + tooling polish** — keep Phase I/II/III monolithic;
-  retire contributor-as-glue via the C30 orchestrator (single
-  slug-threaded command), C32 scaffold placeholders, C31 preflight
+  decompose the contributor-as-glue friction via a single
+  slug-threaded source-prep orchestrator + tighter preflight
   discipline. Decomposes the friction without introducing agent
   boundaries.
 - **Two-phase decomposition** — split source-prep from
@@ -288,7 +284,7 @@ not as recommendations):
   handoff inside `prompts/build.md`, not as separate agent
   invocations.
 
-**Blocks:** retires C30, absorbs sub-pieces of C5 / C27 / C28 / C31 / C32 on landing.
+**Blocks:** absorbs sub-pieces of C31 on landing.
 **Blocked by:** A3, A4, C33.
 
 ---
@@ -467,61 +463,6 @@ Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
 
-### C30 — Source-prep orchestrator: single command for the full caption + video chain
-
-Preparing one YouTube source for a person node currently chains four
-to seven discrete tool invocations across two documented workflows:
-
-- **Caption pull** (`meta/sources-access.md` "YouTube"):
-  `extract-firefox-cookies.py` → `transcribe.py --cookies -` →
-  `manifest.py add ... --format transcript --transcript-provenance auto-caption`
-- **Video + speaker identity** (`scripts/tools/VIDEO-PIPELINE.md`):
-  `download-video.py` → `extract-frames.py anchor` →
-  `detect-faces.py detect` → contributor review → `detect-faces.py register`
-  (per identity, per baseline) → optional `diarize-audio.py` +
-  `stitch-transcript.py`
-
-The two workflows share three contributor-supplied parameters that
-MUST agree: the source URL, the kebab-case slug used for the
-transcript file (`{slug}-downloaded.md`), and the kebab-case slug
-used for the video file (`{slug}.mp4`). When the slugs drift, the
-slug-discovery downstream in `stitch-transcript.py` silently fails
-(it looks for `sources/transcripts/{slug}-downloaded.md` and
-`/tmp/diarize-{slug}/segments.csv` against the video stem). Cross-
-tool slug consistency is currently contributor discipline with no
-mechanical enforcement.
-
-An orchestrator script would take a URL and an output slug and
-invoke the right subset of tools in order, threading the same slug
-through each, surfacing the consent gate once, and emitting a single
-contributor-readable summary at the end. The investigation has to
-decide:
-
-- **Scope of the orchestrator.** Whole-pipeline (caption + video +
-  diarize + frames + detect + stitch) or caption-only-with-optional-
-  video-flag? The visual-baseline registration step is interactive
-  (contributor identifies which crop is which person); a pure
-  orchestrator can't auto-register baselines, only stop and prompt.
-- **Cookies surface.** Caption pull needs Firefox cookies via
-  `extract-firefox-cookies.py`; `download-video.py` uses
-  `--cookies-from-browser firefox` directly. The orchestrator
-  inherits both paths or unifies them.
-- **Failure-mode propagation.** Each step has its own non-zero exit
-  semantics. Orchestrator decides whether to abort on first failure
-  or attempt the rest of the pipeline and report a per-step status
-  summary.
-- **Where it lives.** A new `scripts/tools/prep-source.py` is the
-  most obvious home; alternatively the orchestration logic moves
-  into one of the existing tools (e.g., `download-video.py` gains
-  a `--with-captions` flag). The first preserves single-purpose-
-  per-tool; the second avoids a new entry point.
-
-**A2 effect:** fully retired when A2 ships. The verifier + marker
-agents absorb the orchestration; slug consistency becomes
-agent-internal. Could ship as an interim orchestrator if A2 stays
-roadmap-scoped, but the work does not carry forward into A2 — the
-agents replace the orchestrator rather than build on it.
-
 ### C31 — Standardize preflight discipline across `scripts/tools/`
 
 **Catalog of current state** (one-pass audit; tools with no
@@ -680,59 +621,6 @@ normalization).
 C35 retires page-anchored locations, the page-footer failure mode
 becomes rare enough that targeted addition or even status-quo
 may be acceptable. C33 should not implement until C35 resolves.
-
-### C34 — Schema↔CLI parity check
-
-The schema (`meta/schema.yaml`) and the CLIs in `scripts/tools/`
-can drift independently. CLI commands carry implicit assumptions
-about uniqueness, ordering, dedup keys, and matching semantics
-that aren't declared in the schema and aren't checked against the
-schema. The gap is invisible until contributor workflow exercises
-a permitted-by-schema-but-forbidden-by-CLI case.
-
-No known concrete drift instance currently exists in the corpus.
-The entry stays open as a mechanism question worth designing
-against once a second drift case surfaces; until then, there's
-nothing to design against.
-
-**The actual question:** what mechanism asserts that CLI commands
-implement the same data model the schema declares?
-
-Candidate resolutions:
-
-- **Docstring assertion.** Convention that every CLI subcommand's
-  docstring names the schema rules it enforces (e.g., `cmd_add`
-  docstring says "Asserts (url, path) tuple uniqueness per
-  schema.yaml manifest_entry — see compatibility note"). Reviewer-
-  visible discipline; no mechanical enforcement.
-- **Parity check.** A meta-test (`scripts/tests/schema-cli-
-  parity.sh`) that asserts dedup semantics, match semantics, and
-  required-field handling in CLI commands match the schema's
-  declarations. Higher implementation cost; closes the gap
-  mechanically.
-- **Schema-as-CLI-spec.** The CLI consults the schema at runtime
-  to determine dedup keys, required fields, etc. Most architecturally
-  invasive; eliminates the drift surface entirely at the cost of
-  CLI-side complexity.
-- **Per-command audit + accept drift.** One-pass audit cataloging
-  every implicit assumption in CLI commands; document the gaps in
-  `meta/conventions.md`; rely on contributor discipline going
-  forward. Lowest-cost; doesn't prevent future drift.
-
-**Surfaces an investigation has to walk:** every CLI in
-`scripts/tools/` (especially `manifest.py`'s commands —
-add / status / pending / usage / orphans / missing / summary
-/ verify-paths / verify-checksums); `meta/schema.yaml` (the
-manifest_entry, person, organization, etc. blocks); `meta/schema-
-research-artifact.yaml` (the entry-shape specs CLI scaffolders
-need to honor); `scripts/build/research-scaffold.py`,
-`scripts/build/new.py`, `scripts/build/build-state.py` (other
-CLI tools whose behavior implicitly assumes schema semantics).
-
-**Blocks:** none.
-**Blocked by:** none. The parity-mechanism question is unblocked
-but has no known concrete drift instance to design against. Await
-a corpus-surfaced mismatch before implementing.
 
 ### C35 — Retire `p. N, ¶M` page-anchored location convention?
 
