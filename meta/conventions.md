@@ -1412,6 +1412,14 @@ tier that matches who invokes them and what role they play:
   manifest CLI (`manifest.py`), Wayback submission (`archive.py`),
   YouTube transcription (`transcribe.py`), and read-only contributor
   diagnostics (`check-vocab.py`, `coverage-suggest.py`, `normalize-locations.py`).
+  Tools with environmental prerequisites (binaries, env vars, Python
+  modules, browser session state) verify those prerequisites at
+  `main()` entry rather than deferring the check until first use.
+  Existing patterns vary by tool (`preflight()` in `download-video.py`,
+  `ensure_tools()` in `extract-frames.py`, `_import_deps()` in
+  `detect-faces.py`, inline checks at `main()` entry elsewhere); the
+  load-bearing rule is fail-fast with a contributor-friendly install
+  hint, not a uniform function name.
 - **`/scripts/checks/`**: per-check modules — every named validator
   check (verbatim-quote, prose-drift, chronological-ordering,
   manifest-checksums, iff-section, etc.) lives at

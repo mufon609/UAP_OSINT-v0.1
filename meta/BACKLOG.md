@@ -74,11 +74,6 @@ settled; implementation co-lands with A2):**
 
 - **A2** — multi-agent decomposition of source-prep + Phase I
 
-**Retired or reduced by A2 on landing:**
-
-- **C31** — preflight discipline audit (reduced; manual-invocation
-  case stays for tools called outside the agent chain)
-
 **Independent of the A2 chain:**
 
 - **A1** — retire mandatory `entities_referenced[]` registration
@@ -284,7 +279,7 @@ not as recommendations):
   handoff inside `prompts/build.md`, not as separate agent
   invocations.
 
-**Blocks:** absorbs sub-pieces of C31 on landing.
+**Blocks:** none currently open.
 **Blocked by:** A3, A4, C33.
 
 ---
@@ -462,72 +457,6 @@ separate touch.
 Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
-
-### C31 — Standardize preflight discipline across `scripts/tools/`
-
-**Catalog of current state** (one-pass audit; tools with no
-prerequisites omitted):
-
-| Tool | Prerequisites | Preflight pattern |
-|---|---|---|
-| `download-video.py` | yt-dlp, ffmpeg, ffprobe, Firefox cookies | `def preflight()` at `main()` entry |
-| `diarize-audio.py` | HF_TOKEN, ffmpeg, ffprobe, pyannote, torch | Inline HF_TOKEN check at `main()` entry; other prereqs deferred until use |
-| `transcribe.py` | yt-dlp, Firefox cookies | Deferred (fails at first use) |
-| `extract-frames.py` | ffmpeg, ffprobe | Deferred |
-| `extract-firefox-cookies.py` | yt-dlp (for cookie format), Firefox profile | Deferred |
-| `detect-faces.py` | cv2 (OpenCV), PIL | Deferred (ImportError at top-level) |
-| `stitch-transcript.py` | ffmpeg, pyannote outputs | Deferred |
-| `archive.py` | Network (Wayback Machine) | Deferred (HTTP error at first call) |
-
-Tools with no prerequisites (no preflight needed): `manifest.py`,
-`check-vocab.py`, `coverage-suggest.py`, `normalize-locations.py`,
-`migrate-manifest-to-artifacts.py`.
-
-The pattern is non-uniform: 1 of 8 prerequisite-bearing tools has a
-formal `preflight()`; 1 has an inline check for the most-likely-
-missing prereq (HF_TOKEN); 6 defer entirely. The cluster most exposed
-to mid-pipeline failure is the video pipeline
-(`download-video` → `extract-frames` → `detect-faces` → optional
-`diarize-audio` + `stitch-transcript`) — five tools, four with
-deferred-check failure modes, where a contributor may complete one
-step's work before the next step fails on a missing binary or model.
-
-**The actual question:** what's the standard for "prerequisite
-discoverability" across `scripts/tools/`?
-
-Candidate resolutions (none recommended; listed for completeness):
-
-- **Universal `preflight()` discipline.** Every prerequisite-bearing
-  tool grows a `preflight()` function called at `main()` entry that
-  checks every env var, binary, library, and external-service
-  prerequisite the tool consumes anywhere in its execution. Exit
-  non-zero with install hints before any side-effect runs. Most
-  explicit; most invasive — adds preflight to seven tools.
-- **Shared preflight library.** A `lib/_preflight.py` module tools
-  register requirements with declaratively (`require_env("HF_TOKEN")`,
-  `require_binary("yt-dlp")`, `require_python_module("pyannote.audio")`).
-  Tools call `lib._preflight.check()` at entry. Less per-tool
-  boilerplate; centralizes the install-hint vocabulary; assumes
-  the cluster grows enough to amortize the abstraction.
-- **Smoke-test coverage only.** Add a `scripts/tests/preflight-check.sh`
-  that confirms each tool exits cleanly with the prerequisite-missing
-  install hint when its prerequisites are absent. Catches regressions
-  but doesn't change behavior of any currently-deferred check.
-- **Cluster-only `preflight()`.** Apply universal preflight to the
-  video pipeline cluster (where mid-pipeline failure is most costly)
-  and accept deferred-check on the rest. Trades partial coverage for
-  smaller invasive surface — five new `preflight()` functions instead
-  of seven.
-
-**Surfaces an investigation has to walk:** the seven prerequisite-
-bearing tools above; `lib/_common.py` for shared preflight helpers;
-`scripts/tests/` for the smoke / help-check patterns the preflight
-standard would integrate with.
-
-**A2 effect:** agent-invocation case reduced — agents preflight on
-their own behalf before invoking tools. Manual-invocation case
-stays: tools called directly by contributors outside the agent
-chain still want preflight discipline.
 
 ### C33 — Verbatim-quote normalization: principled refactor vs. reactive patches
 
@@ -721,32 +650,47 @@ appendix names, or labeled paragraph refs ("Opening ¶3") —
 content-anchored, not page-anchored, so they survive any
 page-retirement decision.
 
+**Migration-cost detail (full census of the 507 page-anchored
+locations):** 115 carry the canonical `p. N, ¶M` form (or a `p. N`
++ paragraph-indicator variant); **392 are `p. N` only** with no
+paragraph anchor. The `p. N`-only entries are often content-pointer
+rather than paginated-paragraph — "p. 1, top-right corner stamp",
+"p. 1, Q&A content following DOPSR clearance stamp", "p. 19, About
+the Author". Some `p. N` entries also repeat the page across
+multiple distinct quotes ("p. 13" cited eight times in the same
+artifact for different paragraphs on that page); these depend on
+the `context` field for disambiguation, not the location ref.
+
 **Candidate resolutions:**
 
 - **Full retire.** Drop `p. N, ¶M` entirely. `source.location` becomes
   optional (timestamp / Doc-N / spatial-anchor / `¶N` only). Renderer
-  omits Location row when location is empty. Migration: 506
-  page-anchored refs convert to `¶N`-only or drop. Most aggressive
-  simplification.
+  omits Location row when location is empty. Migration: 115 `p. N, ¶M`
+  entries strip the `p. N` prefix to keep `¶M`; 392 `p. N`-only entries
+  either drop the location field entirely (rely on grep + `context`)
+  or convert to a content-pointer form when the existing wording
+  already points at structure (e.g., "p. 1, top-right corner stamp"
+  drops the `p. 1,` prefix to "top-right corner stamp"). Most
+  aggressive simplification; eliminates extraction-version dependence
+  entirely.
 - **Retire the page component; keep `¶N`.** `p. N, ¶M` becomes `¶M`
-  globally — paragraph-anchored, not page-anchored. Eliminates
-  extraction-version dependence (paragraph markers are content-
-  derived, not page-layout-derived). Migration: 506 PDF/HTML
-  page-anchored refs strip their `p. N` prefix; entries that have
-  only `p. N` (no paragraph anchor) need contributor judgment on
-  whether to drop or compute a paragraph number. Renderer still
-  shows a Location row; reader uses paragraph-counting instead of
-  page-jumping.
+  globally — paragraph-anchored, not page-anchored. Clean migration
+  for the 115 entries with paragraph anchors. The 392 `p. N`-only
+  entries are the friction: no ¶M to fall back on, so contributor must
+  compute paragraph numbers OR convert to content-pointer ("p. 1,
+  top-right corner stamp" → "top-right corner stamp"). Higher
+  contributor cost than the framing initially suggested.
 - **Retire for short sources only.** Documents under N pages drop
   `p. N`; long-form sources keep it as a navigation aid. Per-source
   judgment via a new manifest field or a page-count threshold. Less
   aggressive; preserves the long-form reader experience (the 2024-11-19
   SASC hearing transcript, AARO Historical Record Report Vol I).
-  Highest contributor cost (per-source page-count gating).
+  Highest per-source contributor cost (page-count gating).
 - **Status quo + better tooling.** Keep page-anchored convention;
   add a `scripts/tools/locate-quote.py` helper that takes a quote
   + source and emits the canonical `p. N, ¶M` ref by grep. Eases
-  contributor friction without retiring the convention.
+  contributor friction without retiring the convention. Zero
+  migration cost.
 
 **Surfaces an investigation has to walk:** `meta/conventions.md`
 "Quote location refs" section; `meta/schema-research-artifact.yaml`
