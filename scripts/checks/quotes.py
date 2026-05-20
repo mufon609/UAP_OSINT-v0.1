@@ -69,6 +69,14 @@ def check(ctx):
     speakers = entries(ctx.data, "speakers")
     speaker_ids = {s.get("id") for s in speakers if isinstance(s, dict) and s.get("id")}
 
+    # Quote-id index + claim_group map for the person-quote grouping
+    # checks (claim_group / corroborated_by; see quote_entry.claim_group).
+    quote_ids = {q.get("id") for q in quotes if isinstance(q, dict) and q.get("id")}
+    claim_group_of = {
+        q.get("id"): q.get("claim_group")
+        for q in quotes if isinstance(q, dict) and q.get("id")
+    }
+
     for i, q in enumerate(quotes):
         if not isinstance(q, dict):
             continue
@@ -176,6 +184,44 @@ def check(ctx):
                 f"consider removing",
                 check_name=CHECK_NAME,
             )
+
+        # claim_group / corroborated_by — person-quote grouping (see
+        # quote_entry.claim_group). claim_group must be a non-empty string
+        # when present. On person artifacts, where corroborated_by renders
+        # as the canonical's "Also attested" pointer list, each
+        # corroborated_by id that resolves to a local quote must share the
+        # referencing quote's claim_group (else the pointer would land in a
+        # different group); an id that resolves to no local quote warns
+        # (an external ref does not render in the claim-group view).
+        cg = q.get("claim_group")
+        if cg is not None and not str(cg).strip():
+            yield Issue(
+                ctx.rel, "error",
+                f"quotes[{i}] ({q.get('id')!r}): claim_group is set but "
+                f"empty — omit the key or give it a non-empty label",
+                check_name=CHECK_NAME,
+            )
+        if ctx.target_type == "person":
+            for cid in (q.get("corroborated_by") or []):
+                if cid not in quote_ids:
+                    yield Issue(
+                        ctx.rel, "warn",
+                        f"quotes[{i}] ({q.get('id')!r}): corroborated_by "
+                        f"{cid!r} resolves to no quote in this artifact — "
+                        f"it will not render in the claim-group view "
+                        f"(typo, or an external ref that belongs elsewhere)",
+                        check_name=CHECK_NAME,
+                    )
+                elif cg and claim_group_of.get(cid) != cg:
+                    yield Issue(
+                        ctx.rel, "error",
+                        f"quotes[{i}] ({q.get('id')!r}): corroborated_by "
+                        f"{cid!r} is in claim_group "
+                        f"{claim_group_of.get(cid)!r}, not {cg!r} — a "
+                        f"corroboration pointer must share its primary's "
+                        f"claim_group",
+                        check_name=CHECK_NAME,
+                    )
 
         # attestation_tier — optional finding-scoped field. Validate
         # enum membership when present. Warn when set on non-finding

@@ -37,12 +37,44 @@ def check(ctx):
     if ctx.node_text is None:
         return
     normalized_body = normalize_for_compare(ctx.node_text)
+    quotes = ctx.data.get("quotes") or []
 
-    for q in ctx.data.get("quotes") or []:
+    # Pointer quotes (person claim-group view): a quote that another group
+    # member's `corroborated_by` points at renders as a compact "Also
+    # attested" source-link pointer, NOT as full text — so its `text` will
+    # not appear in the body by design. Exempt those from the full-text
+    # assertion and verify the source link surfaced instead. Scoped to
+    # person artifacts that actually use `claim_group` (the grouped
+    # renderer); on every other artifact each quote still renders in full.
+    # Grouped rendering is person-only (renderers/person.py); detect it
+    # from the artifact's target_node rather than ctx.target_type, which
+    # review-coverage.py does not populate on its ResearchContext.
+    is_person = str(ctx.data.get("target_node") or "").startswith("people/")
+    pointer_ids = set()
+    if is_person and any(
+        isinstance(q, dict) and q.get("claim_group") for q in quotes
+    ):
+        pointer_ids = {
+            cid for q in quotes if isinstance(q, dict)
+            for cid in (q.get("corroborated_by") or [])
+        }
+
+    for q in quotes:
         if not isinstance(q, dict):
             continue
         text = (q.get("text") or "").strip()
         if not text:
+            continue
+        if q.get("id") in pointer_ids:
+            sp = (q.get("source") or {}).get("path") or ""
+            if sp and sp not in ctx.node_text:
+                yield Issue(
+                    ctx.rel, "error",
+                    f"Coverage: pointer quote {q.get('id')!r} source {sp!r} "
+                    f"not found in node body — its 'Also attested' pointer "
+                    f"did not render",
+                    check_name=CHECK_NAME,
+                )
             continue
         if normalize_for_compare(text) not in normalized_body:
             yield Issue(

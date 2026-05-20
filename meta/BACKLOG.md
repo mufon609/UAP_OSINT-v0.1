@@ -143,142 +143,104 @@ decision, tracked in its own BACKLOG entry (A3).
   synthesis-confirmation invariant, the speaker-attribution rule,
   the quotes-by-not-about discipline.
 
-**Open design questions before implementation.**
+**Settled decomposition (2026-05-20).** Five agents, extending the
+existing `prompts/build.md` bounded-task pattern (T2/T4/T5):
 
-1. **Load-bearing determination without source-read is a regression.**
-   The investigator agent listing "what each source contains" cannot
-   summarize from training knowledge or from the URL alone — the
-   source-read-first rule applies. Either the investigator agent
-   also reads each source (collapsing investigator + verifier into
-   one source-read-then-archive stage), or it produces only a
-   candidate list that the verifier reads and prunes against the
-   archived text.
-2. **Handoff-stub home.** Temp file under `/tmp/`? Sidecar YAML next
-   to the research artifact? Frontmatter block on the artifact?
-   Comment region inside the artifact? Each has different
-   post-mortem-debuggability properties — temp files vanish on
-   reboot; sidecars live with the artifact in git; in-artifact
-   comments mix data with provenance.
-3. **Quote-section redesign scope.** Per-quote verification blocks
-   today carry source link, attribution, context, observation type,
-   significance. Which fields move, which compress, and what the
-   node-body rendering looks like vs. the artifact layer — open.
-4. **Agent boundary discipline.** Phase II/III rebuild loops surface
-   failures invisible until validation. More agents create more
-   synchronization points; the proposal needs to be explicit about
-   which agents read primary sources directly vs. consume upstream
-   agent output, and how a defect attributable to a stage three
-   agents upstream is handled when validation surfaces it.
+1. **Scout** (investigator + verifier, COLLAPSED — a URL-only
+   investigator violates source-read-first, so the read lives with the
+   archival). Reads candidate sources directly, confirms load-bearing /
+   non-duplicate, archives (`manifest.py add` → scaffold →
+   `extract-source.py`).
+2. **Marker** — per source, reads directly; emits verbatim quote
+   candidates + a proposed `claim_group` label per candidate (advisory).
+3. **Manager** — consumes Marker output across all sources; clusters by
+   claim, derives the canonical/pointer split via `corroborated_by`
+   (this is where **A3** lives — its shape is now shipped), writes
+   free-prose. May read sources for judgment but MUST NOT introduce a
+   quote outside the Marker phase.
+4. **Meta-linker** — cross-ref surfaces (relationships / affiliations /
+   timeline / program_involvement; naming_quirks / rumors).
+5. **Builder** — `build-from-research.py` → `validate.py` /
+   `associate.py` → `review-coverage.py`; its full pass is the global
+   consistency check.
 
-**Out of scope until upstream structural items resolve.**
+**Resolved design decisions.** (1) Investigator+verifier collapse into
+Scout. (2) Handoff stubs live at `/tmp/handoff-{slug}-{agent}.yaml`,
+mirroring the `/tmp/scratch-{slug}-N.txt` convention — debugging
+surfaces, not git-tracked. (3) Quote-section redesign = A3, shipped
+(`claim_group` grouping + rendered `corroborated_by` pointers). (4)
+Agent-boundary invariant: *no agent may introduce a verbatim quote
+outside the Marker phase*, so the verbatim check always fires at one
+known boundary; a defect surfaces at the phase that produced it and is
+re-driven by re-running that agent (never by editing the node body).
 
-- **A3** — quote-section redesign. The manager-agent's contract
-  (how it organizes quotes into the node) depends on what the
-  rendered quote section looks like.
-- **A4** — per-phase validator dispatch. The agent-chain handoff
-  stubs ARE the per-phase validator outputs. A4 is scoped after
-  A2's agent list is settled, but A2's implementation depends on
-  A4 mechanics being in place.
-
-**Candidate alternative resolutions** (listed for the decision space,
-not as recommendations):
-
-- **Status quo + tooling polish** — keep Phase I/II/III monolithic;
-  decompose the contributor-as-glue friction via a single
-  slug-threaded source-prep orchestrator + tighter preflight
-  discipline. Decomposes the friction without introducing agent
-  boundaries.
-- **Two-phase decomposition** — split source-prep from
-  artifact-construction; keep artifact construction monolithic.
-  Investigator + verifier + marker handle pre-Phase-I; Phase I
-  onwards stays one-agent.
-- **Phase-internal sub-tasks, not agents** — keep Phase I
-  monolithic but formalize the investigator → verifier → marker →
-  manager → meta-linker steps as a checklist with mechanical
-  handoff inside `prompts/build.md`, not as separate agent
-  invocations.
+**Staged implementation.**
+- **1 — A3 data-model + person renderer (DONE 2026-05-20, proven on
+  Grusch).** A2's Tier-0 unblocker; see the A3 entry.
+- **2** — formalize the 5 agents as bounded tasks in `prompts/build.md`
+  (extends the T2/T4/T5 table; documents the `/tmp` handoff-stub format).
+  No new code.
+- **3** — A4 per-phase validator dispatch: a `PHASE` constant per check
+  module + `validate.py --phase {scout|marker|manager|meta-linker|
+  builder}` filtering the existing `_ARTIFACT_CHECKS`/`_NODE_CHECKS`;
+  Builder's flagless run = full pass.
+- **4** — Marker+Manager as real agent invocations producing `/tmp`
+  stubs.
+- **5** — Scout + Meta-linker + Builder; full pipeline.
 
 **Blocks:** none currently open.
-**Blocked by:** A3, A4.
+**Blocked by:** A4 (increment 3) for the full agent-boundary mechanics;
+A3 (increment 1) is shipped.
 
 ---
 
-### A3 — Quote-section redesign (organize by load-bearing statement)
+### A3 — Quote-section redesign (group person Statements by claim)
 
-**Open structural question — purely about ORGANIZATION.** The node
-**must keep its proper verbatim quotes** — the repo's evidentiary
-primitive is verbatim text on the node where the claim is asserted,
-not a compressed pointer to the source node "one click away."
-Compressing quotes to references breaks that and is explicitly NOT
-the goal. The real question is how to *organize* the quotes so the
-surface isn't a dense, repetitive per-quote stream (a person node
-citing many statements today renders one verification block per
-quote).
+**Design settled + machinery shipped 2026-05-20 (proven on Grusch).**
+Scope was narrowed during design: this is purely ORGANIZATION of a
+person's own statements, with NO contradiction subsystem. Group a
+person node's quotes by **claim/topic** (what the statement is *about*)
+instead of the flat chronological `## Statements → Direct/Other` stream;
+where the same claim is attested across multiple of that person's own
+sources, render **one verbatim quote + compact "Also attested" pointers**
+to the other attestations. Self-contradictions ("I did" / "I didn't")
+sit in the same group as separate full statements — no marker.
+Cross-entity contradictions stay on finding nodes (the entity↔finding
+directional contract is untouched — A3 introduces no `/findings/` links
+and no `❌`/`⚠`).
 
-**Direction (framing, not a chosen design).** Reorganize the surface
-around **load-bearing statements** rather than a flat per-quote list,
-complementing the existing `timeline` (the chronological view):
+**Data model (shipped):**
+- `claim_group` — NEW free-text grouping key on `quote_entry`
+  (structurally like `category`; prose-drift-exempt; person-only). One
+  `### {claim_group}` heading per group.
+- `corroborated_by` — EXISTING lifecycle field, now *rendered* on person
+  claim-grouped quotes: a quote pointed at by another group member's
+  `corroborated_by` renders as a compact source+location pointer, not a
+  full duplicate block. The `canonical` flag from the design draft was
+  dropped as redundant — primary-vs-pointer is *derived* (a quote in
+  some group-member's `corroborated_by` is the pointer; everything else
+  is a primary).
+- Verbatim integrity preserved: every quote (primary and pointer) keeps
+  full `text` + `source` and is still verbatim-checked. No compression
+  to bare pointers.
 
-- Each load-bearing statement carries its verbatim quote(s) once.
-- Other sources that bear on the statement **reference** it instead
-  of re-stating it — "source X confirms this statement", "source Y
-  contradicts it" — so cross-source corroboration adds no duplicate
-  quote text.
-- **Contradictions get their own section, adjacent to the statement
-  they contradict** — the disagreement sits next to the claim, not
-  buried in a flat stream or only on a separate node.
+**Shipped surfaces:** `quote_entry.claim_group` + the rendered
+`corroborated_by` (`meta/schema-research-artifact.yaml`); the grouped
+`render_statements` path with a backward-compatible flat fallback
+(`scripts/build/renderers/person.py`); `claim_group`/`corroborated_by`
+integrity checks (`scripts/checks/quotes.py`); pointer-quote coverage
+exemption (`scripts/checks/coverage.py`); `grouped_split_ok` on the
+person Statements section rule (`meta/schema.yaml` + `section_rules.py`).
+Grusch: 165 quotes → 26 claim groups, 19 cross-source duplicates
+collapsed to pointers.
 
-Net: no verbatim loss, far less duplication / clutter, and the
-investigation stays current — a new corroborating or contradicting
-source attaches to the relevant statement instead of appending
-another block.
+**Remaining (incremental, one node per session):** migrate the other
+14 person nodes to `claim_group`. They render unchanged until migrated —
+a person artifact with no `claim_group` renders the legacy flat
+Direct/Other split (the fallback is the backward-compat guarantee).
 
-**The design question to settle — best for BOTH:**
-- the reader / investigator (each load-bearing claim shown with its
-  verbatim support + adjacent confirm/contradict cross-refs), and
-- backend maintenance (how a "statement" + its quote(s) + the
-  cross-source confirm/contradict links are modeled in the research
-  artifact and rendered, without a fragile new layer).
-
-**Architecture boundary to reconcile.** Cross-source contradiction is
-today a **finding** (the three-layer architecture: entity nodes carry
-single-source facts; findings carry multi-source patterns). A
-statement-adjacent "contradicts" section on the entity node must be
-squared with that — e.g., the node carries the pointer + marker
-(`❌` / `⚠`) adjacent to the statement while the cross-source analysis
-still lives on a finding, or the boundary moves. Resolve this as part
-of the design; it is the load-bearing tension.
-
-**Corpus measurement (person nodes) — the duplication the redesign
-targets.** 15 person nodes; mean 30 quotes / median 16 / max 165:
-
-| Person node | Total quotes | Max same-source repetition |
-|---|---|---|
-| `/people/david-grusch` | 165 | 79 |
-| `/people/james-lacatski` | 41 | 14 |
-| `/people/david-fravor` | 16 | 10 |
-| `/people/sean-kirkpatrick` | 43 | 10 |
-| `/people/luis-elizondo` | 23 | 9 |
-
-The Grusch node (165 quotes, 79 to one source — his July 2023 House
-testimony) is the worst case the statement-grouping must handle
-gracefully: those 79 collapse under the statements they support, with
-no loss of verbatim text.
-
-**Surfaces an investigation has to walk.**
-
-- `scripts/build/renderers/{person,document,event,transcript}.py` —
-  current quote rendering across types.
-- `meta/schema-research-artifact.yaml` — `quote_entry` shape; whether
-  a statement grouping + confirm/contradict cross-refs need new fields.
-- `meta/conventions.md` "Statements as the universal evidentiary
-  primitive" (keep verbatim) + "Contradictions" (the `❌` / `⚠`
-  markers and where contradictions are documented).
-- The finding-node layer — the boundary above.
-- A representative read of `/people/david-grusch` (165-quote surface).
-
-**Blocks:** A2 (the manager agent's contract — how it organizes
-quotes into the node — depends on the quote section's shape).
+**Blocks:** A2 — RESOLVED. The Manager agent's contract (how it
+organizes quotes into the node) now has a concrete shape to target.
 **Blocked by:** none.
 
 ---

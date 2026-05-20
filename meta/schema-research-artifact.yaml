@@ -495,21 +495,24 @@ entry_lifecycle_fields:
   # lives in git log / git diff on the artifact file; no in-
   # artifact iteration log.
   #
-  # Lifecycle fields are not rendered (artifact-only). They drive
-  # the validator's entry-shape checks and the per-entry versioning
-  # graph; no renderer reads `id`, `added_date`, `superseded_by`,
-  # `contradicted_by`, or `corroborated_by`. Versioning annotations
-  # the conventions.md "Versioning" section describes are recorded
-  # in the artifact for posterity and for cross-artifact pointer
-  # resolution, but they do not currently surface to readers —
-  # potential reader-visible follow-on, but out of scope for these
-  # fields' present role.
+  # `id` / `added_date` / `superseded_by` / `contradicted_by` are not
+  # rendered (artifact-only); they drive the validator's entry-shape
+  # checks and the per-entry versioning graph. Edit history lives in git
+  # log / git diff on the artifact file.
+  #
+  # `corroborated_by` IS rendered, but only on PERSON quotes that also
+  # carry a `claim_group`: there it lists the same-claim duplicate quotes
+  # that collapse into the canonical's "Also attested" pointer list (see
+  # quote_entry.claim_group). On every other entry type / artifact type it
+  # stays artifact-only metadata. The referenced ids must resolve to real
+  # quotes sharing the referencing quote's claim_group (enforced by
+  # scripts/checks/quotes.py).
 
 # Per-section entry shapes (each inherits lifecycle fields above):
 
 quote_entry:
   required: [text, source]
-  optional: [significance, context, observation_type, category, statement_date, attestation_tier, attestor_path, speaker_id]
+  optional: [significance, context, observation_type, category, statement_date, attestation_tier, attestor_path, speaker_id, claim_group]
   observation_type_values: [direct, relayed]
   attestation_tier_values:
     - sworn-oath
@@ -570,6 +573,22 @@ quote_entry:
   #   the source of truth for who participated; `speaker_id` is the
   #   per-quote pointer into it. Ignored on non-transcript artifacts
   #   (renderer omits the Speaker row).
+  # claim_group: free-text label (NOT a synthesized claim — a structural
+  #   grouping key, like `category`, and prose-drift-exempt for the same
+  #   reason). On PERSON artifacts the renderer groups every quote sharing
+  #   a claim_group under one `### {claim_group}` heading, so the person's
+  #   statements organize by topic rather than the flat chronological
+  #   Direct/Other stream. Within a group, a quote that another group
+  #   member's `corroborated_by` points at renders as a compact "Also
+  #   attested" pointer (source + location) instead of a full duplicate
+  #   block — same-claim statements across the person's own sources
+  #   collapse to one verbatim quote + pointers. Self-contradictions ("I
+  #   did" / "I didn't") sit in the same group as separate full statements;
+  #   no marker (cross-entity contradictions remain finding-layer). Distinct
+  #   from `category` (which the whistleblower Claim Inventory filters on —
+  #   the two are orthogonal axes). A person artifact with NO claim_group on
+  #   any quote renders the legacy flat Direct/Other split unchanged.
+  #   Ignored on non-person artifacts.
 
 quote_source:
   required: [path, location]

@@ -1028,6 +1028,16 @@ finding, not a property of either document.
 | Contested affiliation | `Flagged` subsection of `Affiliations` |
 | Source-form disagreement (two sources attest opposing forms of the same fact, contributor does not adjudicate) | `naming_quirks` entry with `resolution: disputed`; auto-rendered as `## Preserved Disagreements` near the foot of the node body |
 
+A person stating opposing things across their own statements ("I did" /
+"I didn't") is NOT a cross-source contradiction and stays on the person
+node: under the `claim_group` grouping of `## Statements` (see
+`quote_entry.claim_group`), the two statements sit adjacently in the same
+claim group as separate verbatim quotes — both shown, no marker, no
+finding. The grouping is pure organization of a single entity's own
+statements; it carries no `❌`/`⚠` and no `/findings/` link. Cross-entity
+contradictions (one source vs. a *different* entity's source) remain a
+finding per the table above — that boundary is unchanged.
+
 The Confirmed/Flagged binary is unchanged by contradictions —
 "contradicted" is not a third status. Both sources remain confirmed
 from their respective origins; the evidentiary disagreement is

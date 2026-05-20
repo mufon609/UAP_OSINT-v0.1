@@ -99,15 +99,22 @@ def check(ctx):
 
         if "split" in rules:
             h3s = _extract_h3_subsections(section_text)
-            for sub in rules["split"]:
-                if sub == "Flagged":
-                    continue  # omitted when empty by convention
-                if sub not in h3s:
-                    yield Issue(
-                        ctx.rel, "error",
-                        f"Section '{section_name}' missing '### {sub}' subsection",
-                        check_name=CHECK_NAME,
-                    )
+            named = [s for s in rules["split"] if s != "Flagged"]
+            # grouped_split_ok: a person Statements section may organize by
+            # claim_group instead of the named Direct/Other split — accept
+            # when it carries H3 subsections but none of the named ones
+            # (the claim-group layout). A section with no H3s at all still
+            # falls through to the missing-subsection error below.
+            if rules.get("grouped_split_ok") and h3s and not any(n in h3s for n in named):
+                pass
+            else:
+                for sub in named:
+                    if sub not in h3s:
+                        yield Issue(
+                            ctx.rel, "error",
+                            f"Section '{section_name}' missing '### {sub}' subsection",
+                            check_name=CHECK_NAME,
+                        )
 
         if rules.get("requires_quote_attribution"):
             blocks, attributions = _count_quote_blocks_and_attributions(section_text)

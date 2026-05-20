@@ -121,10 +121,23 @@ def render_affiliations(artifact):
 
 
 def render_statements(artifact):
-    """Statements section — split by observation_type into Direct
-    Observations and Other Statements; sorted chronologically by
-    statement_date within each subsection."""
+    """Statements section.
+
+    When any quote carries a ``claim_group``, render grouped-by-claim:
+    statements organize by topic, and same-claim duplicates across the
+    person's own sources collapse to one verbatim quote + compact "Also
+    attested" pointers (see ``_render_statements_grouped``). Otherwise fall
+    back to the legacy chronological Direct Observations / Other Statements
+    split — this keeps every claim_group-free person node byte-identical."""
     quotes = [q for q in (artifact.get("quotes") or []) if isinstance(q, dict)]
+    if any(q.get("claim_group") for q in quotes):
+        return _render_statements_grouped(artifact, quotes)
+    return _render_statements_flat(artifact, quotes)
+
+
+def _render_statements_flat(artifact, quotes):
+    """Legacy Direct/Other chronological split — preserved verbatim for
+    person nodes that have not adopted claim_group grouping."""
     direct = sort_by_date([q for q in quotes if q.get("observation_type") == "direct"], "statement_date")
     other  = sort_by_date([q for q in quotes if q.get("observation_type") != "direct"], "statement_date")
 
@@ -146,6 +159,57 @@ def render_statements(artifact):
     else:
         lines += ["", "_No other statements documented._"]
 
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def _render_statements_grouped(artifact, quotes):
+    """Render quotes grouped by ``claim_group``.
+
+    Each distinct ``claim_group`` becomes a ``### {claim_group}`` heading.
+    Within a group, a quote that another group member's ``corroborated_by``
+    points at is a *pointer* (renders compact: source + location); every
+    other quote is a *primary* (renders as a full statement block via the
+    shared ``_render_statement_block``). Each primary's ``corroborated_by``
+    entries render beneath it as an "Also attested" list — so same-claim
+    statements made across the person's own sources collapse to one
+    verbatim quote plus pointers, with no verbatim loss (the pointer quotes
+    keep full text + source in the artifact and are still verbatim-checked).
+    Self-contradictions ("I did" / "I didn't") are separate primaries in the
+    same group — both shown, no marker. Ungrouped quotes (no claim_group)
+    render as their own headingless block. Groups order by earliest
+    statement_date; primaries and pointers sort chronologically within."""
+    by_id = {q.get("id"): q for q in quotes if q.get("id")}
+    groups, order = {}, []
+    for q in quotes:
+        key = q.get("claim_group") or ("\x00" + str(q.get("id")))
+        if key not in groups:
+            groups[key] = []
+            order.append(key)
+        groups[key].append(q)
+    order.sort(key=lambda k: min((q.get("statement_date") or "9999-99-99") for q in groups[k]))
+
+    lines = ["## Statements", ""]
+    for key in order:
+        gq = groups[key]
+        pointer_ids = {cid for q in gq for cid in (q.get("corroborated_by") or [])}
+        primaries = sort_by_date([q for q in gq if q.get("id") not in pointer_ids], "statement_date")
+        if not key.startswith("\x00"):
+            lines += [f"### {key}", ""]
+        for p in primaries:
+            lines.append(_render_statement_block(p, artifact))
+            ptrs = sort_by_date(
+                [by_id[c] for c in (p.get("corroborated_by") or []) if c in by_id],
+                "statement_date",
+            )
+            if ptrs:
+                lines += ["", "**Also attested:**", ""]
+                for ptr in ptrs:
+                    src = ptr.get("source") or {}
+                    sp, loc = src.get("path") or "", src.get("location") or ""
+                    link = f"[archived source](../sources/{sp})" if sp else ""
+                    bits = [b for b in [ptr.get("context") or "", ptr.get("statement_date") or "", link, loc] if b]
+                    lines.append(f"- {'; '.join(bits)}")
+            lines.append("")
     return "\n".join(lines).rstrip() + "\n"
 
 

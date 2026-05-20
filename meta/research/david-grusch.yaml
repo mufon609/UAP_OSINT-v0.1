@@ -497,6 +497,8 @@ timeline:
     location: lines 394-400 (around [15:41]-[15:57])
 quotes:
 - id: q1
+  claim_group: "Identity, Rank & Career"
+  corroborated_by: [q12, q13, q29, q65]
   added_date: '2026-04-20'
   text: My name is David Charles Grusch. I was an intelligence officer for 14 years, both in the US Air Force (USAF) at the rank of Major and most recently, from 2021-2023, at the National Geospatial-Intelligence Agency at the GS-15 civilian level, which is the military equivalent of a full-bird Colonel.
   source:
@@ -507,6 +509,8 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q2
+  claim_group: "UAP Role: NGA Co-Lead, UAPTF & AARO Reporting"
+  corroborated_by: [q66]
   added_date: '2026-04-20'
   text: I was my agency’s co-lead in Unidentified Anomalous Phenomena (UAP) and trans-medium object analysis, as well as reporting to UAP Task Force (UAPTF) and eventually the All-Domain Anomaly Resolution Office (AARO).
   source:
@@ -517,6 +521,8 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q3
+  claim_group: "Whistleblower Filing (PPD-19 / ICIG)"
+  corroborated_by: [q67]
   added_date: '2026-04-20'
   text: I became a Whistleblower, through a PPD-19 Urgent Concern filing with the Intelligence Community Inspector General (ICIG), following concerning reports from multiple esteemed and credentialed current and former military and Intelligence Community individuals that the US Government is operating with secrecy - above Congressional oversight - with regards to UAPs.
   source:
@@ -528,6 +534,8 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q4
+  claim_group: "Sworn-but-Relayed Framing & Evidentiary Basis"
+  corroborated_by: [q70]
   added_date: '2026-04-20'
   text: But as I stand here under oath now, I am speaking to the facts as I have been told them.
   source:
@@ -538,6 +546,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q5
+  claim_group: "UAP Role: NGA Co-Lead, UAPTF & AARO Reporting"
   added_date: '2026-04-20'
   text: In the USAF, in my National Reconnaissance Office (NRO) reservist capacity, I was a member of the UAPTF from 2019-2021. I served in the NRO Operations Center on the director’s briefing staff, which included the coordination of the Presidential Daily Brief (PDB) and supporting contingency operations.
   source:
@@ -548,6 +557,8 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q6
+  claim_group: "2019 SAPs/CAPs Tasking by UAPTF Director"
+  corroborated_by: [q71]
   added_date: '2026-04-20'
   text: In 2019, the UAPTF director tasked me to identify all Special Access Programs & Controlled Access Programs (SAPs/CAPs) we needed to satisfy our congressionally mandated mission.
   source:
@@ -558,6 +569,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q7
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
   added_date: '2026-04-20'
   text: I was informed, in the course of my official duties, of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-on’s.
   source:
@@ -569,6 +581,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q8
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-20'
   text: As you know, I have suffered retaliation for my decision. But I am hopeful that my actions will ultimately lead to a positive outcome of increased transparency.
   source:
@@ -580,6 +593,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q9
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
   added_date: '2026-04-20'
   text: It is my hope that the revelations we unearth through investigations of the Non-Human Reverse Engineering Programs I have reported will act as an ontological (earth-shattering) shock, a catalyst for a global reassessment of our priorities.
   source:
@@ -590,6 +604,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q10
+  claim_group: "Identity, Rank & Career"
   added_date: '2026-04-20'
   text: As a senior intelligence and strategic engagement advisor, I will provide subject matter expert-level support that utilizes my extensive time as a United States Air Force Intelligence Officer, DoD-contracted Science and Engineering Technical Advisor (SETA), and NGA Senior Geospatial Intelligence Officer.
   source:
@@ -600,6 +615,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q11
+  claim_group: "UAP Role: NGA Co-Lead, UAPTF & AARO Reporting"
   added_date: '2026-04-20'
   text: NGA lead for Unidentified Anomalous Phenomena (UAP) and Trans-Medium Anomaly issues. Executed new program of record responsive to direct tasking by the Congressional Intelligence Committees.
   source:
@@ -610,6 +626,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q12
+  claim_group: "Identity, Rank & Career"
   added_date: '2026-04-22'
   text: '[4:31] who you are. My name is uh David Grush. You know, I came from a bluecollar family in Pittsburgh. I didn''t have the money for college. Always admired people in uniform. And I''ve always wanted to be a part of something bigger than myself. You know, 18 years ago, you know, I got an Air Force scholarship for physics. Uh I originally commissioned on active duty in the Air Force. uh served 14 years in the Air Force.'
   source:
@@ -620,6 +637,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-11'
 - id: q13
+  claim_group: "Identity, Rank & Career"
   added_date: '2026-04-22'
   text: '[5:15] Washington. I was an intel officer for the US for 14 years. my last position which I left in April of 2023. Um I co-led the UAP portfolio for the National Geospatial Intelligence Agency and some of the highest officials within the department and of defense and intelligence community used to call on me to advise them on some of the hardest uh target sets that the country had.'
   source:
@@ -630,6 +648,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-11'
 - id: q14
+  claim_group: "Security Clearance & Access Breadth"
   added_date: '2026-04-22'
   text: '[6:10] my formal security clearance and multiple polygraphs. I had the ability uh to be read into any program that I needed. At one point in time, I was extremely highly cleared.'
   source:
@@ -640,6 +659,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-11'
 - id: q15
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
   added_date: '2026-04-22'
   text: '[6:28] UAP task force was refused access to um a broad crash retrieval program. When you say crash retrieval, what do you mean? Uh these are retrieving nonhuman origin uh technical vehicles. You know, call it spacecraft, if you will. Non-human exotic origin vehicles that have either landed or crashed.'
   source:
@@ -651,6 +671,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-11'
 - id: q16
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-22'
   text: '[7:04] confiding in me. They approached me. I have plenty of current former senior intelligence officers that came to me, many of which I knew almost my whole career that convided to me they were a part of a program. They named the program. I''ve never heard of it. And they they told me based on their oral testimony um and they provided me documents and other other proof that there was in fact a program that the UAP task force was uh not read into.'
   source:
@@ -662,6 +683,8 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-11'
 - id: q17
+  claim_group: "Non-Human Intelligence Terminology & Origin Agnosticism"
+  corroborated_by: [q137, q144]
   added_date: '2026-04-22'
   text: '[7:42] I would couch it as non-human intelligence, you know, NHI, like we like to say in our our language. Why do you say that? Why do you say NHI? I don''t want to necessarily denote origin. I don''t think we have all the data to say, oh, they''re coming from a certain a certain location.'
   source:
@@ -672,6 +695,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-11'
 - id: q18
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-22'
   text: '[8:46] non-believer. I came to the the problem as a hardcore physics guy, intel officer. So I have a you know, excuse my language, high factor. I was very methodical interviewing people who didn''t know each other, making sure this wasn''t some kind of cover up of some other program.'
   source:
@@ -682,6 +706,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-11'
 - id: q19
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
   added_date: '2026-04-22'
   text: '[9:15] shut the door in my face. They denied me access to these programs.'
   source:
@@ -693,6 +718,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-11'
 - id: q20
+  claim_group: "Non-Human Biologics"
   added_date: '2026-04-22'
   text: '[10:40] Well, naturally, um when you recover something that''s either landed or crashed, um sometimes you encounter, um dead pilots. And believe it or not, as f as fantastical as that sounds, it''s true.'
   source:
@@ -704,6 +730,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-11'
 - id: q21
+  claim_group: "Recovered Material Properties (Isotopes / Atomic Signatures)"
   added_date: '2026-04-22'
   text: know, isotopic ratios that would have to be engineered for it to be um at those levels, but also just extremely uh uh strange heavy atomic metal, you know, high up in the periodic table um arrangements that um we don't understand
   source:
@@ -714,6 +741,8 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-11'
 - id: q22
+  claim_group: "Disinformation Campaign Against the Public"
+  corroborated_by: [q107, q121]
   added_date: '2026-04-22'
   text: '[14:29] Yeah, there''s a sophisticated uh disinformation campaign targeting the US populace, which is extremely unethical and immoral.'
   source:
@@ -724,6 +753,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-11'
 - id: q23
+  claim_group: "Program Origin Date (1930s / 80-90 Years)"
   added_date: '2026-04-22'
   text: '[14:59] Just about. Yeah. 90 years. 1933 was the first recovery in Europe in uh Magenta, Italy. They recovered a a partially intact vehicle.'
   source:
@@ -734,6 +764,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-11'
 - id: q24
+  claim_group: "Private-Contractor Custody of Recovered Material"
   added_date: '2026-04-22'
   text: '[24:28] uh overall you know the government has been the custodian of a lot of this right and they''ll they''ll hand receipt it out to clear defense contractor to do some analysis which I find highly unethical. you have a basically a sole source arrangement and you allow certain um private corporate elements uh to look at this develop a potential insight and then sell it back to the government for profit and I think that''s totally unethical.'
   source:
@@ -745,6 +776,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-11'
 - id: q25
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: '[25:48] lie? Well, I know Dr. Sean Kurpatre. I''ve known him for about 8 years and you know, I expressed some concerns to Dr. Kurpatre about a year ago and told him what I was starting to uncover and he didn''t follow up with me and he has my phone number. He could have called me.'
   source:
@@ -755,6 +787,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-11'
 - id: q26
+  claim_group: "People Harmed or Killed to Protect the Secret"
   added_date: '2026-04-22'
   text: '[28:02] there have been attempts to bring down craft that we''ve acted offensively against non-human craft. There have been instances and there are uh certain techniques. Have human beings been hurt or killed by a non-human intelligence? While I can''t get into the specifics because that would reveal uh certain US classified uh operations, uh I was briefed by a few individuals on the program that there were um malevolent events like that.'
   source:
@@ -766,6 +799,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-11'
 - id: q27
+  claim_group: "Funding Mechanisms & Financial Crimes (IR&D / FAR)"
   added_date: '2026-04-22'
   text: '[32:31] been committed? At the very least, I saw substantiative evidence that white collar crime was committed. Have people been killed to protect this secret? uh based on the people I talked to uh that was an ongoing uh concern. Yeah. Unfortunately, I''ve heard some really unamerican things I don''t want to repeat right now.'
   source:
@@ -777,6 +811,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-11'
 - id: q28
+  claim_group: "Whistleblower Filing (PPD-19 / ICIG)"
   added_date: '2026-04-22'
   text: '[37:37] credibility of your complaint. They found after interviewing myself in the subjects and other subjects that I''m not even uh cognizant on who they were, they found my complaint uh urgent and credible uh for the intelligence committees.'
   source:
@@ -788,6 +823,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-11'
 - id: q29
+  claim_group: "Identity, Rank & Career"
   added_date: '2026-04-22'
   text: so I was a Intel officer in the Air Force for 14 years seven active seven Reserve uh then I kind of had like a parallel tract in the civilian Intel world when I became a reservist um uh and ultimately I got brought back in in Civil Service in a government way at the national GE spatial intelligence agency couple years ago um at a senior level uh so I was a major in the Air Force and a gs15 at NGA which is like a full bird colonel equivalent civilian employee
   source:
@@ -798,6 +834,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q30
+  claim_group: "Harry Reid, AAWSAP & Lacatski Corroboration"
   added_date: '2026-04-22'
   text: '[2:07] what''s with this UFO stuff I was uh briefing a senior person uh at the CIA into a couple hundred special access programs uh so I was at the headquarters at the agency and you know after the indoctrination I was giving to the senior person this person um who worked with Lou alzando uh previously was like yeah have Dave have you ever heard of this guy Lou alzando he''s running some UFO program at the Pentagon um we all think he''s crazy'
   source:
@@ -808,6 +845,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q31
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-22'
   text: '[11:14] encounter with the information a very senior individual in the Intel Community came to me when uh I guess I was asking a lot of questions because I''m a very inquisitive guy and it was like hey we I need to introduce you to somebody uh you know he listed that certain person''s academic credentials which were Beyond reproach you know PhD level education clearance resume was insane I''m like well okay sure I''ll I''ll talk to this person and and I ended up meeting that person in a you know uh a top secret facility and you know he started the discussing like hey there was a program I was on it and you know we were reverse engineering crash material that we''ve recovered over the decades'
   source:
@@ -819,6 +857,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q31b
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-24'
   text: '[12:42] that spooked to me and that was like fall of 2019 and you know I don''t take a guy''s word for it'
   source:
@@ -830,6 +869,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q32
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-22'
   text: '[12:50] myself and my trusted colleagues that had a lot of lot of special accesses like me you know we cultivated our Network and we ultimately interviewed about 40 people or so all the way up to multistar generals directors of agencies mid-level guys that literally touched it worked inside of it'
   source:
@@ -841,6 +881,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q33
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: '[15:41] and I eventually went to Congress in December of 2022 and it''s a crazy story why I took so long it''s [ __ ] nuts um but I provided total about 11 and a half to 12 hours of uh you know classified testimony to the Congressional staffers and their lawyers for both the house and the Senate'
   source:
@@ -852,6 +893,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q34
+  claim_group: "Harry Reid, AAWSAP & Lacatski Corroboration"
   added_date: '2026-04-22'
   text: '[26:47] died two years ago so in Spring 2021 I actually flew with a couple colleagues of mine to Las Vegas and I met with Senator Harry Reid about N9 months before he died'
   source:
@@ -862,6 +904,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q35
+  claim_group: "Harry Reid, AAWSAP & Lacatski Corroboration"
   added_date: '2026-04-22'
   text: '[27:44] with me and he straight up says he''s like yeah I knew we had UFO material I was denied access for decades I tried to get access and then he explains some of his efforts during AET app'
   source:
@@ -872,6 +915,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q36
+  claim_group: "Private-Contractor Custody of Recovered Material"
   added_date: '2026-04-22'
   text: '[30:54] freak out but I''m telling the truth here um so lockie Martin wanted to divest itself from this material at a specific facility that''s known to me that I provided to the Inspector General'
   source:
@@ -883,6 +927,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q37
+  claim_group: "Private-Contractor Custody of Recovered Material"
   added_date: '2026-04-22'
   text: '[31:35] and um uh so they were going to Tech transfer it and the 21 or 22 million was actually for Bigalow Aerospace to build out you know facilities in Las Vegas and material analysis equipment and I''ve SE I have I saw the staff meeting slides I saw the paperwork like there''s a paperwork Trail I''ve seen on this'
   source:
@@ -893,6 +938,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q38
+  claim_group: "Harry Reid, AAWSAP & Lacatski Corroboration"
   added_date: '2026-04-22'
   text: '[32:00] this program and you know even Jim laty who ran the program who retired Dia officer PhD in engineering even made this disclosure in his book skinwalkers at the Pentagon uh page 152 to 153'
   source:
@@ -903,6 +949,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q39
+  claim_group: "Harry Reid, AAWSAP & Lacatski Corroboration"
   added_date: '2026-04-22'
   text: '[41:02] answers that question so uh there were sens of human derve foreign intelligence that I read um so I had access to kind of the atip assap uh classified archives and I was like thumbing through everything and there''s some other people were bringing me documents to evaluate and I''ll never forget I had um what it say stolen by the US in assessment from a certain foreign adversary discussing the US reverse engineering program'
   source:
@@ -914,6 +961,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q40
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: '[42:53] Congress and they debriefed me uh from all my accesses over in that other sister agency and made up some bogus excuse like I shouldn''t have been briefed to anything in the first place literally and basically gave me an administrative M middle finger like person non gra don''t ever [ __ ] ask us about that [ __ ] again'
   source:
@@ -925,6 +973,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q41
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: '[46:09] episode I remember correctly you know Chuck Schumer and I knew about the amendment a couple months before I went public and that''s kind of another reason why I did what I did I''m like [ __ ] I''m like the only guy that kind of has the opportunity to do this I know what''s in the shoot so to speak that Chuck Schumer and his staff had with the Schumer M'
   source:
@@ -935,6 +984,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q42
+  claim_group: "Personal Conviction: We Are Not Alone"
   added_date: '2026-04-22'
   text: '[53:57] we alone well the answer is we''re not alone and I know that with 100% certainty which as an Intel officer you never say 100%'
   source:
@@ -945,6 +995,8 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q43
+  claim_group: "Non-Human Intelligence Terminology & Origin Agnosticism"
+  corroborated_by: [q62]
   added_date: '2026-04-22'
   text: '[54:44] so they specifically the people on the program that handled the material that were in executive level briefings with Intel Community leaders and other folks over the years last years or so they did use the term extraterrestrial ET or whatever okay that isn''t a possible origin but the Schumer Amendment if you read it it specifically uses non-human intelligence NH hii very deliberately'
   source:
@@ -955,6 +1007,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q44
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: '[1:06:56] looking into this I mean they came after me so hard to try to revoke my clearance um ruined my career kicked me out of my agency and they accused me of everything you could possibly think of with like no evidence'
   source:
@@ -966,6 +1019,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q45
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: '[1:09:27] is uh they showed my wife and I they can touch me at any time two times and it was very disturbing it was in conjunction with some other people getting a message like that that are to say publicly wellknown some that aren''t publicly wellknown'
   source:
@@ -977,6 +1031,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q46
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: '[1:24:14] physiology yeah no I was in I was in the room when uh I got be careful I don''t want to uh I was in Washington DC with a very uh number of senior people that work for members of Congress put it that way um when I was still in government and I brought the people who worked on that stuff to the hill'
   source:
@@ -988,6 +1043,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-11-21'
 - id: q47
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: '[2:32:10] in parallel and that''s kind of why I helped found the soul foundation with Gary Nolan and Dr Peter skafish who''s an anthropologist uh as well is we wanted to figure out the stem Outreach we wanted to figure out the public policy National policy to advise the US and its allies on this issue'
   source:
@@ -998,6 +1054,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-21'
 - id: q48
+  claim_group: "Whistleblower Filing (PPD-19 / ICIG)"
   added_date: '2026-04-22'
   text: '[9:50] Yeah. Did all the checks I could possibly do, you know, within my, you know, kind of official capacity, realized it was real. And then, uh, kind of during that investigation, you know, I had a lot of pushback that was very unfortunate, you know, reprisals against me and stuff. And that kind of was what led me to file the whistleblower complaint, you know, a for my own protection, but B was to kind of sound the alarm.'
   source:
@@ -1009,6 +1066,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-10-15'
 - id: q49
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: '[10:12] They tried to claim all these things against me, conduct wise, mental health, all this other, uh, unfortunate stuff. I was in combat in Afghanistan, 2013, you know, I was on a convoys outside the wire. I, you know, I had a friend die, got blown up and all this other stuff, you know, baggage that I had for two, three years after coming back. And, you know, I got diagnosed with post-traumatic stress disorder, you know, saw treatment and I got help good to go, but there was an agency that tried to dig that back up and say, Oh, Dave still has ongoing issues. Unmitigated, we need to pull his clearance.'
   source:
@@ -1020,6 +1078,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-10-15'
 - id: q50
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: '[12:48] I was a little restless last night. I was told last night that they requested me to be cleared for a closed session after today, but the request was denied. I was blocked. So that''s like obvious obstruction.'
   source:
@@ -1030,6 +1089,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-10-15'
 - id: q51
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-22'
   text: '[23:42] And I be very general in this to protect this person''s identity. Cause they''re still on active duty. But like, I remember interviewing a guy and I have a background in psychological analysis and other stuff to assess people and for like three hours. And it was a certain very senior Navy individual that saw he was going to work at a certain facility in the morning, you know, not drunk, not high. And a 300 foot triangular craft hovered over his car for a couple minutes.'
   source:
@@ -1040,6 +1100,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-10-15'
 - id: q52
+  claim_group: "Non-Human Biologics"
   added_date: '2026-04-22'
   text: '[44:41] As I''ve stated publicly already in my News Nation interview, uh, biologics came with some of these recoveries. Yeah. Yeah. I mean, it''s, it is a mind blowing side of it, right? It''s a little easy to imagine, you know, an artifact or whatever, but when you start talking about, you know, the biological side of it, it really throws you for a loop psychologically. It did for me. And, you know, I talked to the people that, you know, were on that aspect of, uh, the program, if you will.'
   source:
@@ -1051,6 +1112,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-10-15'
 - id: q54
+  claim_group: "People Harmed or Killed to Protect the Secret"
   added_date: '2026-04-22'
   text: '[48:04] So, the actual reprisal stuff and the access denial stuff actually enhanced my ability to operate. But I will tell you, I talked to these people in the program. They are just so afraid. Because the way it was enforced over the years, threatening nature of some of their indoctrinations where they''re like, this is treason. You''re going to Leavenworth. Have you ever tell anybody not in the program? And oh, by the way, what''s the penalty for treason? Oh, right. Execution, right?'
   source:
@@ -1062,6 +1124,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-10-15'
 - id: q55
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-22'
   text: '[48:49] So like, I also went out of my way to find people who don''t know each other either. That like, you know, through methods like making sure I''m not getting circular reporting, not part of some other kind of faction that might want to push a certain narrative out. Me and I had higher ranking colleagues of mine go, who were part of the same effort in their official capacity, go talk to other people that I didn''t even personally talk to, to keep that separation.'
   source:
@@ -1072,6 +1135,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-10-15'
 - id: q56
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-22'
   text: '[46:57] But they have. The people that I interviewed have. And they were some of the people that were interviewed by the inspector general. Because that was the thing is like, you know, people are like, oh, hearsay, whatever. Okay, I understand secondhand. I literally brought the people firsthand to the authorities.'
   source:
@@ -1083,6 +1147,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-10-15'
 - id: q57
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: '[30:02] I grew up Roman Catholic as a kid, the whole confirmation thing, CCD, and all that, you know, it was reasonably religious, but nothing like crazy kind of average studied physics. I became kind of agnostic. I was like, eh, I don''t know about this, all this kind of woo woo, you know, stuff that the church exposes and stuff. And then oddly enough, I''ve kind of come full circle.'
   source:
@@ -1093,6 +1158,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-10-15'
 - id: q58
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: '[39:23] Yeah, I mean, I didn''t know that I was autistic until I was like in my early 30s. And, you know, I always wondered why in my personal life, if I get fixated on something and obsessed, you know, what was going on with that. I mean, it served me well in the government because I was super good at, you know, doing Intel and like, you know, Dave, we want you to target this facility. Okay, you have six months, figure out everything'
   source:
@@ -1103,6 +1169,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-10-15'
 - id: q59
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: '[2:47] accountability the release of information on non-human intelligences has the potential to unite Humanity in a shared quest for understanding regardless of the ontological shock'
   source:
@@ -1113,6 +1180,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-18'
 - id: q60
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: '[4:07] Sciences releasing this information in a controlled planned manner such as Carl Nell has discussed during the conference as with the Schumer amendment has profound implications on our philosoph philosophical and spiritual perspectives'
   source:
@@ -1123,6 +1191,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-18'
 - id: q61
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: '[7:49] inspiring yeah I mean I did a lot of introspection and reflection to make the decision to come forward you know part of my uh looking into this subject and you know reporting my findings to the Inspector General you know I look back at my you know I Serv 14 years in the Air Force I looked at two my core value the Air Force exposes you know Integrity for service for steal and that been all we do'
   source:
@@ -1133,6 +1202,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-18'
 - id: q62
+  claim_group: "Non-Human Intelligence Terminology & Origin Agnosticism"
   added_date: '2026-04-22'
   text: '[10:40] certainly this phenomenon is is not a you know a singular type Source Etc I mean many of the people I talked to that you know were actively working on the program did use the term extraterrestrial when uh briefing myself and my my colleagues you know on their activity and kind of you know that''s the par they used within the the program but certainly I''m skeptical of that being the the only origin'
   source:
@@ -1143,6 +1213,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-18'
 - id: q63
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: '[18:09] yourself yeah uh certainly I would love to go back to my private life that would be great not something that I ever thought I''d be doing in my life you know I was on a very good trajectory in my intell career so I''ve made an Abrupt dip to the right become a public figure'
   source:
@@ -1153,6 +1224,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-18'
 - id: q64
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: '[18:38] 2030 I would love to work on that as a staff member not necessarily as a panelist I think there needs to be luminaries that are the the best scholars in the in the US to to f you know be on that panel but certainly if the current or you know succeeding administrations would like to bring me on to support the panel in any way I mean I''ll go get coffee just to sit in the room to listen to the discussions'
   source:
@@ -1163,6 +1235,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-18'
 - id: q65
+  claim_group: "Identity, Rank & Career"
   added_date: '2026-04-22'
   text: My name is David Charles Grusch. I was an intelligence officer for 14 years both in the U.S. Air Force, both active-duty Air National Guard and Reserve at the rank of Major and most recently from 2021 to 2025—excuse me, 2023—at the National Geospatial Intelligence Agency, NGA, at the GS–15 civilian level, which is the military equivalent of a full bird colonel.
   source:
@@ -1173,6 +1246,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q66
+  claim_group: "UAP Role: NGA Co-Lead, UAPTF & AARO Reporting"
   added_date: '2026-04-22'
   text: I was my agency’s co-lead in unidentified anomalous phenomena and trans medium object analysis as well as reporting to the UAP Task Force—UAPTF—and eventually, once it was established, the All-Domain Anomaly Resolution Office—AARO.
   source:
@@ -1183,6 +1257,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q67
+  claim_group: "Whistleblower Filing (PPD-19 / ICIG)"
   added_date: '2026-04-22'
   text: I became a whistleblower through a PPD–19 urgent concern filing in May 2022 with the intelligence community inspector general following concerning reports from multiple esteemed and credentialed current and former military and intelligence community individuals that the U.S. Government is operating with secrecy above congressional oversight with regards to UAPs.
   source:
@@ -1194,6 +1269,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q68
+  claim_group: "Sworn-but-Relayed Framing & Evidentiary Basis"
   added_date: '2026-04-22'
   text: My testimony is based on information I have been given by individuals with a long-standing track record of legitimacy and service to this country, many of whom also have shared compelling evidence in the form of photography, official documentation, and classified oral testimony to myself and many of my various colleagues.
   source:
@@ -1204,6 +1280,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q69
+  claim_group: "Sworn-but-Relayed Framing & Evidentiary Basis"
   added_date: '2026-04-22'
   text: I have taken every step I can to corroborate this evidence over a period of 4 years while I was with the UAP Task Force and do my due diligence on the individuals sharing it.
   source:
@@ -1214,6 +1291,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q70
+  claim_group: "Sworn-but-Relayed Framing & Evidentiary Basis"
   added_date: '2026-04-22'
   text: But as I stand here under oath now, I am speaking to the facts as I have been told them.
   source:
@@ -1224,6 +1302,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q71
+  claim_group: "2019 SAPs/CAPs Tasking by UAPTF Director"
   added_date: '2026-04-22'
   text: In 2019, the UAP Task Force Director asked me to identify all special access programs and controlled access programs, also known as SAPs and CAPs, we needed to satisfy our congressionally mandated mission and we would direct report at the time to the DEP/SecDef.
   source:
@@ -1234,6 +1313,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q72
+  claim_group: "Security Clearance & Access Breadth"
   added_date: '2026-04-22'
   text: At the time, due to my extensive executive level intelligence support duties I was cleared to literally all relevant compartments and in a position of extreme trust both in my military and civilian capacities.
   source:
@@ -1244,6 +1324,8 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q73
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
+  corroborated_by: [q7, q15]
   added_date: '2026-04-22'
   text: I was informed in the course of my official duties of a multi-decade UAP crash retrieval and reverse engineering program to which I was denied access to those additional read-ons when I requested it.
   source:
@@ -1255,6 +1337,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q74
+  claim_group: "Whistleblower Filing (PPD-19 / ICIG)"
   added_date: '2026-04-22'
   text: I made the decision based on the data I collected to report this information to my superiors and multiple inspectors general and, in effect, becoming a whistleblower. As you know, I have suffered retaliation for my decision, but I am hopeful that my actions will ultimately lead to a positive outcome of increased transparency.
   source:
@@ -1266,6 +1349,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q75
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: Yes, I can speak to that very briefly in an unclassified manner. As you know, the preponderance of my complaint was classified to the intelligence communities. Both material acquisition and exploitation activity, also baselining the UAPs but not sharing it with, you know, intelligence professionals that are actually doing step briefs to pilots, that kind of information.
   source:
@@ -1285,6 +1369,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q76
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
   added_date: '2026-04-22'
   text: Absolutely, based on interviewing over 40 witnesses over 4 years.
   source:
@@ -1296,6 +1381,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q77
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: I know the exact locations and those locations were provided to the Inspector General and some of which to the intelligence committees. I actually had the people with the firsthand knowledge provide a protected disclosure to the Inspector General.
   source:
@@ -1307,6 +1393,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q78
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: Yes. I have to be careful what I say in detail because there is an open whistleblower reprisal investigation on my behalf, and I do not want to compromise that investigation by providing anything that may help provide somebody information. But it was very brutal and very unfortunate. Some of the tactics they used to hurt me both professionally and personally, to be quite frank. Yes.
   source:
@@ -1318,6 +1405,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q79
+  claim_group: "People Harmed or Killed to Protect the Secret"
   added_date: '2026-04-22'
   text: Yes, personally.
   source:
@@ -1329,6 +1417,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q80
+  claim_group: "People Harmed or Killed to Protect the Secret"
   added_date: '2026-04-22'
   text: I have to be careful asking that question. I directed people with that knowledge to the appropriate authorities.
   source:
@@ -1339,6 +1428,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q81
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: Well, it has only been about 2 months or so. So, I guess my experience has been overwhelming support from former colleagues of mine that have, you know, privately messaged me and I do appreciate that. But I do have knowledge of active planned reprisal activity against myself, and other colleagues and it is very, very upsetting to me.
   source:
@@ -1350,6 +1440,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q82
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: Certain senior leadership at previous agencies I was associated with and that is all I will say publicly. But I can provide more details in a closed environment.
   source:
@@ -1360,6 +1451,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q83
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: Yes. There were certain colleagues of mine that were brutally administratively attacked, and it actually makes me very upset as a leader to see that happen to other co-workers and actually superiors of mine over the last 3 years.
   source:
@@ -1371,6 +1463,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q84
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: I call it administrative terrorism. That is their quiver—their tool in the toolbox to silence people, especially, you know, career government service cares about their career, cares about their clearance, their reputation to climb the ladder, and
   source:
@@ -1381,6 +1474,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q85
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: Yes, personally. Yes.
   source:
@@ -1392,6 +1486,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q86
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: Yes. Him and I had a classified conversation in April 2022 before he took over AARO in July 2022 and I provided him some concerns I had.
   source:
@@ -1402,6 +1497,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q87
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: Unfortunately, I cannot read his mind. I wish he did. I was happy to give sage counsel to him on where to look when he took the helm of AARO.
   source:
@@ -1412,6 +1508,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q88
+  claim_group: "DOPSR Pre-Publication Review"
   added_date: '2026-04-22'
   text: Correct, through DODSR—DoD Prepublication and Security Review—and I just want to remind the public they are just looking from a security perspective. These are my own personal views and opinions, not the Department’s.
   source:
@@ -1422,6 +1519,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q89
+  claim_group: "DOPSR Pre-Publication Review"
   added_date: '2026-04-22'
   text: I am required by law to do that as a former intelligence officer, or I go to jail for revealing classified information.
   source:
@@ -1432,6 +1530,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q90
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-22'
   text: Yes. I personally interviewed those individuals.
   source:
@@ -1443,6 +1542,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q91
+  claim_group: "Security Clearance & Access Breadth"
   added_date: '2026-04-22'
   text: Based on conventional advanced tech I was briefed to the preponderance of the Defense Department’s both space and aerospace compartmented programs. Yes.
   source:
@@ -1453,6 +1553,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q92
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: A complicated question. So, there is, you know, some—I would call it abuse here. So, congressional oversight of conventional Special Access Programs—and I will use Title 10, DoD as an example, right. So, 10 U.S. Code Section 119 discusses congressional oversight of SAPs, discusses the DEP/SecDef’s ability to waive congressional reporting. However, the Gang of 8 is at least supposed to be notified if a—you know, a waived or a waive bigoted unacknowledged SAP is created and that is public law.
   source:
@@ -1463,6 +1564,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q93
+  claim_group: "Funding Mechanisms & Financial Crimes (IR&D / FAR)"
   added_date: '2026-04-22'
   text: I will give you generalities. I can get very specific in a closed session. But misappropriation of funds and self-fund.
   source:
@@ -1474,6 +1576,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q94
+  claim_group: "Funding Mechanisms & Financial Crimes (IR&D / FAR)"
   added_date: '2026-04-22'
   text: Correct, through something called IR&D.
   source:
@@ -1485,6 +1588,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q95
+  claim_group: "Sworn-but-Relayed Framing & Evidentiary Basis"
   added_date: '2026-04-22'
   text: That was one of my primary tasks at NGA since we process, exploit, and disseminate that kind of information. I have seen multiple cases, some of which to my understanding—and, of course, I left NGA in April so that is my information cutoff date. But I personally review both what we call overhead collection and from other strategic and tactical platforms that were—I could not even explain prosaically, and I have a degree in physics, by the way, as well. And I had—I am aware that you guys have not seen these reports, unfortunately and I do not know why.
   source:
@@ -1495,6 +1599,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q96
+  claim_group: "Closed-Session Deferrals & Limits of Open Testimony"
   added_date: '2026-04-22'
   text: I cannot discuss that in an open session.
   source:
@@ -1505,6 +1610,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q97
+  claim_group: "Disinformation Campaign Against the Public"
   added_date: '2026-04-22'
   text: I cannot go beyond what I have already stated publicly in my News Nation interview because it touches other sensitivities.
   source:
@@ -1515,6 +1621,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q98
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: It is not accurate. I believe Dr. Kirkpatrick mentioned he had about 30 individuals that have come to AARO thus far. A few of those individuals have also come to AARO that I also interviewed.
   source:
@@ -1526,6 +1633,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q99
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: And I know what they provided Dr. Kirkpatrick and their team.
   source:
@@ -1536,6 +1644,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q100
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: I was able to evaluate that information.
   source:
@@ -1546,6 +1655,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q101
+  claim_group: "Program Origin Date (1930s / 80-90 Years)"
   added_date: '2026-04-22'
   text: I like to use the term nonhuman. I do not like to denote origin. Keeps the aperture open both scientifically. Certainly, like I have discussed publicly, previously 1930’s.
   source:
@@ -1557,6 +1667,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q102
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: I cannot discuss that publicly, but I did provide that information both to the intel committees and the Inspector General.
   source:
@@ -1567,6 +1678,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q103
+  claim_group: "Classification & Over-Classification Practices"
   added_date: '2026-04-22'
   text: It is a misnomer that there is anything actually above top secret. Executive Order 13526 delineates the classification levels.
   source:
@@ -1577,6 +1689,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q104
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: It is a group of career senior executive officials.
   source:
@@ -1587,6 +1700,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q105
+  claim_group: "Private-Contractor Custody of Recovered Material"
   added_date: '2026-04-22'
   text: Both in and out of government and that is about as far as I can go there.
   source:
@@ -1597,6 +1711,8 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q106
+  claim_group: "Briefing Congress & Withholding from Oversight"
+  corroborated_by: [q33]
   added_date: '2026-04-22'
   text: Yes. I do not know the specific metrics toward the end of your question. The specific corporations I did provide to the committees in specific divisions and I spent 11½ hours with both intel committees.
   source:
@@ -1607,6 +1723,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q107
+  claim_group: "Disinformation Campaign Against the Public"
   added_date: '2026-04-22'
   text: If you reference my News Nation interview and I talked about a multi-decade, you know, campaign to disenfranchise public interest, basically.
   source:
@@ -1618,6 +1735,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q108
+  claim_group: "Private-Contractor Custody of Recovered Material"
   added_date: '2026-04-22'
   text: The kind of general unclassed wave tops. Certainly, the contractors, you know, or the metal benders, so to speak, the ones actually doing specific performance on government contracts.
   source:
@@ -1628,6 +1746,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q109
+  claim_group: "Funding Mechanisms & Financial Crimes (IR&D / FAR)"
   added_date: '2026-04-22'
   text: For certain IR&D activities, I can only think of ones conventional in nature. Sometimes they flow through certain, I will just say SAP programs, that have cognizant authority over the Air Force or something and those are congressionally reported compartments.
   source:
@@ -1638,6 +1757,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q110
+  claim_group: "UAP Role: NGA Co-Lead, UAPTF & AARO Reporting"
   added_date: '2026-04-22'
   text: Yes, I am familiar with the UAP Task Force 2019 Security Classification guide. I think it is fair. I did actually help author that with the Director.
   source:
@@ -1648,6 +1768,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q111
+  claim_group: "Disinformation Campaign Against the Public"
   added_date: '2026-04-22'
   text: Yes. I will say—I will call it a lazy attitude about declassifying videos. I mean, I have seen some of the videos of, you know, the recent shoot down and I saw no reason that could not have been released as long as they mask, you know, some data. The American people deserve to see that imagery and full motion video.
   source:
@@ -1658,6 +1779,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q112
+  claim_group: "People Harmed or Killed to Protect the Secret"
   added_date: '2026-04-22'
   text: I know of multiple colleagues of mine that got physically injured and the activity——
   source:
@@ -1669,6 +1791,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q113
+  claim_group: "People Harmed or Killed to Protect the Secret"
   added_date: '2026-04-22'
   text: Both.
   source:
@@ -1680,6 +1803,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q114
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: I cannot get into the specifics in an open environment, but at least the activity that I personally witnessed—and I have to be very careful here because you do not—you know, they tell you never to acknowledge tradecraft, right. So, what I personally witnessed, myself and my wife, was very disturbing.
   source:
@@ -1691,6 +1815,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q115
+  claim_group: "Closed-Session Deferrals & Limits of Open Testimony"
   added_date: '2026-04-22'
   text: I have to be careful to describe what I have seen firsthand and not in this environment. But I could answer that question behind closed doors.
   source:
@@ -1701,6 +1826,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q116
+  claim_group: "Non-Human Biologics"
   added_date: '2026-04-22'
   text: That is something I have not witnessed myself.
   source:
@@ -1719,6 +1845,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q117
+  claim_group: "Sworn-but-Relayed Framing & Evidentiary Basis"
   added_date: '2026-04-22'
   text: To answer your first question and, you know, I am here as a fact witness and not an expert, but I will give you a theoretical framework at least to work off to kind of espouse crashes. Regardless of, you know, your level of sentience, right—you know, planes crash, cars crash, and a number of sorties, however high, a small percentage are going to end in, you know, mission failure, if you will, as we say in the Air Force.
   source:
@@ -1729,6 +1856,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q118
+  claim_group: "Non-Human Intelligence Terminology & Origin Agnosticism"
   added_date: '2026-04-22'
   text: And then in terms of multidimensionality, that kind of thing, the framework that I am familiar with, for example, is something called the holographic principle both—it derives itself from general relativity and quantum mechanics and that is if you want to imagine a 3D object such as yourself casting a shadow onto a 2D surface that is the holographic principle. So, you can be projected—quasi projected from higher dimensional space to lower dimensional. It is a scientific trope that you can actually cross, literally, as far as I understand, but there is
   source:
@@ -1739,6 +1867,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q119
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
   added_date: '2026-04-22'
   text: Not to my knowledge. Plus, the recoveries predate a lot of our advanced programs that I previously am waiving off. So——
   source:
@@ -1749,6 +1878,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q120
+  claim_group: "Sworn-but-Relayed Framing & Evidentiary Basis"
   added_date: '2026-04-22'
   text: I have actually never seen anything personally, believe it or not.
   source:
@@ -1759,6 +1889,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q121
+  claim_group: "Disinformation Campaign Against the Public"
   added_date: '2026-04-22'
   text: As previously stated publicly, yes.
   source:
@@ -1770,6 +1901,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q122
+  claim_group: "UAP Role: NGA Co-Lead, UAPTF & AARO Reporting"
   added_date: '2026-04-22'
   text: I can only speak for my personal leadership over at NGA. I tried to look at every report that came through that I could triage.
   source:
@@ -1780,6 +1912,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q123
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: There are certain elected leaders that had more information that—I am not sure what they have shared with certain Gang of 8 members or et cetera. But, certainly, I would not be surprised.
   source:
@@ -1790,6 +1923,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q124
+  claim_group: "Closed-Session Deferrals & Limits of Open Testimony"
   added_date: '2026-04-22'
   text: It is something I cannot discuss in a public setting.
   source:
@@ -1800,6 +1934,8 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q125
+  claim_group: "Non-Human Biologics"
+  corroborated_by: [q20, q52]
   added_date: '2026-04-22'
   text: As I have stated publicly already in my News Nation interview, biologics came with some of these recoveries. Yes.
   source:
@@ -1811,6 +1947,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q126
+  claim_group: "Non-Human Biologics"
   added_date: '2026-04-22'
   text: Nonhuman, and that was the assessment of people with direct knowledge on the program I talked to that are currently still on the program.
   source:
@@ -1822,6 +1959,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q127
+  claim_group: "Non-Human Biologics"
   added_date: '2026-04-22'
   text: The specific documentation I would have to talk to you in a SCIF about.
   source:
@@ -1832,6 +1970,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q128
+  claim_group: "Investigation Methodology & ~40-Witness Base"
   added_date: '2026-04-22'
   text: I can give you a specific cooperative and hostile witness list of specific individuals that were in those.
   source:
@@ -1842,6 +1981,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q129
+  claim_group: "UAP as National-Security Threat / Reconnaissance"
   added_date: '2026-04-22'
   text: Fair assessment.
   source:
@@ -1852,6 +1992,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q130
+  claim_group: "UAP as National-Security Threat / Reconnaissance"
   added_date: '2026-04-22'
   text: Yes, sir, potentially.
   source:
@@ -1862,6 +2003,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q131
+  claim_group: "UAP as National-Security Threat / Reconnaissance"
   added_date: '2026-04-22'
   text: By external observation, sure, that could be a fair assessment. Yes.
   source:
@@ -1872,6 +2014,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q132
+  claim_group: "People Harmed or Killed to Protect the Secret"
   added_date: '2026-04-22'
   text: Yes.
   source:
@@ -1883,6 +2026,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q133
+  claim_group: "People Harmed or Killed to Protect the Secret"
   added_date: '2026-04-22'
   text: I cannot get into specifics, but you can imagine assessing an unknown unknown there is a lot of potentialities you cannot fully prepare for.
   source:
@@ -1893,6 +2037,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q134
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: Yes. There was some issue with mine. So, you know, PPD–19 process it goes to the intel committees either through PPD–19 or ICD 120. There is not a good way for the intelligence community Inspector General to provide that to other committees, and I asked my information to be sent to the House and Senate Armed Services Committee because there are Title 10 equities at play. But there was no smooth process to do so.
   source:
@@ -1903,6 +2048,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q135
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
   added_date: '2026-04-22'
   text: Personally, yes.
   source:
@@ -1914,6 +2060,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q136
+  claim_group: "Closed-Session Deferrals & Limits of Open Testimony"
   added_date: '2026-04-22'
   text: Certainly, closed door and assurances that breaking their NDA they are not going to get administratively punished for so.
   source:
@@ -1924,6 +2071,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q137
+  claim_group: "Non-Human Intelligence Terminology & Origin Agnosticism"
   added_date: '2026-04-22'
   text: I think the phenomenon is a very complex and I like to leave an open mind analytically to specific origin.
   source:
@@ -1934,6 +2082,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q138
+  claim_group: "Non-Human Intelligence Terminology & Origin Agnosticism"
   added_date: '2026-04-22'
   text: If it is a traditional extraterrestrial origin or something else that we do not quite understand from an either biological or astrophysics perspective. I just like to keep an open mind on what it could be.
   source:
@@ -1944,6 +2093,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q139
+  claim_group: "Closed-Session Deferrals & Limits of Open Testimony"
   added_date: '2026-04-22'
   text: You are referring to actual—a public treaty in the U.N. register—it is funny you mentioned that—the agreement on measures to reduce the risk of outbreak of nuclear war signed in 1971. Unclassified treaty publicly available, and if you cite the George Washington University National Security Archives you will find the declassified, in 2013, specific provisions and the specific red line flash message traffic with the specific codes pursuant to Article Three and Article—also situation two, which is in the previously classified NSA archive. What I would recommend—and I tried to get access but I got a wall of silence at the White House—was those specific incidents when those—message traffic was used. I think some scholarship on that would open the door to a further investigation using those publicly available information.
   source:
@@ -1954,6 +2104,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q140
+  claim_group: "Funding Mechanisms & Financial Crimes (IR&D / FAR)"
   added_date: '2026-04-22'
   text: I have concerns based on the interviews I conducted under my official duties of potential violations of the Federal Acquisition Regulations—the FAR.
   source:
@@ -1965,6 +2116,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-07-26'
 - id: q141
+  claim_group: "DOPSR Pre-Publication Review"
   added_date: '2026-04-22'
   text: Based on my DODSR security review and what they have determined that is unclassified.
   source:
@@ -1975,6 +2127,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q142
+  claim_group: "Identity, Rank & Career"
   added_date: '2026-04-22'
   text: Purely a sense of duty. My first swore an oath when I was a cadet 18 years ago and I still uphold that even out of uniform.
   source:
@@ -1985,6 +2138,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q143
+  claim_group: "Whistleblower Filing (PPD-19 / ICIG)"
   added_date: '2026-04-22'
   text: I will just touch on the whistleblower side of it. I do encourage, you know, current and former military, intelligence community, and industry contractors to come forward in a legal way, either through the IC or DoD or whatever the cognizant IGs are to join me in this discussion.
   source:
@@ -1995,6 +2149,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-07-26'
 - id: q144
+  claim_group: "Non-Human Intelligence Terminology & Origin Agnosticism"
   added_date: '2026-04-22'
   text: of exotic origin (non-human intelligence, whether extraterrestrial or unknown origin) based on the vehicle morphologies and material science testing and the possession of unique atomic arrangements and radiological signatures
   source:
@@ -2006,6 +2161,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-05'
 - id: q145
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
   added_date: '2026-04-22'
   text: The material includes intact and partially intact vehicles.
   source:
@@ -2017,6 +2173,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-05'
 - id: q146
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: multiple agencies nesting UAP activities in conventional secret access programs without appropriate reporting to various oversight authorities
   source:
@@ -2027,8 +2184,8 @@ quotes:
   observation_type: relayed
   category: filed-claim
   statement_date: '2023-04-06'
-  corroborated_by: [q149]
 - id: q147
+  claim_group: "Multi-Decade Crash-Retrieval & Reverse-Engineering Program"
   added_date: '2026-04-22'
   text: – a competition with near-peer adversaries over the years to identify UAP crashes/landings and retrieve the material for exploitation/reverse engineering to garner asymmetric national defense advantages
   source:
@@ -2040,6 +2197,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-04-06'
 - id: q148
+  claim_group: "Funding Mechanisms & Financial Crimes (IR&D / FAR)"
   added_date: '2026-04-22'
   text: Individuals on these UAP programs approached me in my official capacity and disclosed their concerns regarding a multitude of wrongdoings, such as illegal contracting against the Federal Acquisition Regulations and other criminality and the suppression of information across a qualified industrial base and academia
   source:
@@ -2051,6 +2209,8 @@ quotes:
   category: filed-claim
   statement_date: '2023-04-06'
 - id: q149
+  claim_group: "Briefing Congress & Withholding from Oversight"
+  corroborated_by: [q146]
   added_date: '2026-04-22'
   text: When you have multiple agencies nesting UAP activities in conventional SAP/CAP programs, both as recipients of exploitation-related insights and for operational reasons, without appropriate reporting to various oversight authorities, you have a problem
   source:
@@ -2062,6 +2222,7 @@ quotes:
   category: filed-claim
   statement_date: '2023-06-05'
 - id: q150
+  claim_group: "Program Origin Date (1930s / 80-90 Years)"
   added_date: '2026-04-22'
   text: eighty-year arms race
   source:
@@ -2072,6 +2233,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-05'
 - id: q151
+  claim_group: "Non-Human Intelligence Terminology & Origin Agnosticism"
   added_date: '2026-04-22'
   text: further inhibits the world populace to be prepared for an unexpected, non-human intelligence contact scenario
   source:
@@ -2082,6 +2244,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-05'
 - id: q152
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: I hope this revelation serves as an ontological shock sociologically and provides a generally uniting issue for nations of the world to re-assess their priorities
   source:
@@ -2092,6 +2255,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-06-05'
 - id: q153
+  claim_group: "Disclosure Motivation, Worldview & Policy Advocacy"
   added_date: '2026-04-22'
   text: The public is rightfully demanding to know the truth and it is my true privilege for me to serve the people of this country once again. I will use all my expertise to support Rep. Burlison and help the US Congress restore full oversight while enabling the Legislative Branch’s ability to investigate and hold those accountable who have broken the law and lied not only to our Congress, but also to the Executive Office of the President, Director of National Intelligence, and Department of Justice
   source:
@@ -2102,6 +2266,7 @@ quotes:
   observation_type: relayed
   statement_date: '2025-03-27'
 - id: q154
+  claim_group: "DOPSR Pre-Publication Review"
   added_date: '2026-04-22'
   text: Good Afternoon, Please see attached for review for public release. v/r, David Grusch
   source:
@@ -2114,6 +2279,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-03-07'
 - id: q155
+  claim_group: "DOPSR Pre-Publication Review"
   added_date: '2026-04-22'
   text: Good Afternoon, Here is a future Q&A for review. This was created on my own personal accord and was not a document that was part of my previous official work as a government civilian. -David Grusch
   source:
@@ -2128,6 +2294,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-04-05'
 - id: q156
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: 'Please give me a call to discuss conditions and admin items:'
   source:
@@ -2138,6 +2305,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-10'
 - id: q157
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: 'Thank you for sending these items. As a former agency-level SAPMO and CAPCO I take security policies very seriously. In the DoD SAPCO memo, the term "UAP-related" is not defined. FY23 NDAA Sec. 1673 Subsection B defines it as the following: "any activity or program by a department or agency of the Federal Government or a contractor of such a department or agency relating to unidentified anomalous phenomena, including with respect to material retrieval, material analysis, reverse engineering, research and development, detection and tracking, developmental or operational testing, and security protections and enforcement." The key issue here is that many of these activities have conventional classified and compartmented Security Classification Guides that also cover non-UAP activities as well. To discuss the UAP-related activities would also expose these conventional SAP mission areas. An oral history interview subject must also be absolved of this obligation to protect this information
     as well, some of it may be bigoted or WAIVED (IAW DODI 5205.11 and 10 USC Sec 119). Furthermore, as discussed Friday, I am seeking a ODNI CAPCO determination to absolve an oral history interview subject of any NDA''s relating to UAP-related and adjacent (as stated above) IC CAP information. Additionally, in my particular case, in order to horizontally protect a portion of my oral history testimony previously provided to ICIG and the intelligence committees, we would need to conduct the interview at the HCS-Operations (O) Restricted Handling (RH) level (IAW DNI CAPCO manual Sec. 4). Has the CIA Office of Security (OS) or Directorate of Operations (DO) provided a memo in this regard for oral history interview subjects? Has the OS provided a memo to also cover managed-need-to-know (MNTK) projects not directly reported to ODNI CAPCO? Lastly, what signed policy does AARO have to receive non-title-10 SAPs (ie, DOE and NSC)? Has the EOP NSC Security Director, Director National Program Management
@@ -2150,6 +2318,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-13'
 - id: q158
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: Thank you. I apologize for the confusion this morning about my whereabouts. I should been more clear in my email on Monday. DG
   source:
@@ -2162,6 +2331,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-14'
 - id: q159
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: AARO Staff, With due respect, I will need answers to my questions before I will be comfortable meeting. Please provide responses so that we can hopefully move forward and schedule a meeting. The law may grant your office need-to-know, but does not establish policies and procedures with various data owners. I have managed multi-compartmented activities throughout my entire career and have multiple DCSA security professional certifications. I did not ask these questions for mere curiosity. DG
   source:
@@ -2174,6 +2344,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-14'
 - id: q160
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: Good Evening, Thank you for your email. I had expressed specific concerns, both directly via email and through counsel, and those specific concerns have not yet been addressed in writing. Please reference those emails in this chain. DG
   source:
@@ -2186,6 +2357,7 @@ quotes:
   observation_type: relayed
   statement_date: '2023-11-19'
 - id: q161
+  claim_group: "Grusch-Kirkpatrick & AARO Engagement Dispute"
   added_date: '2026-04-22'
   text: Good Afternoon, Thank you will review. Please address my specific concerns that I sent via email on 19 Nov 23. DG
   source:
@@ -2198,6 +2370,7 @@ quotes:
   observation_type: relayed
   statement_date: '2024-01-08'
 - id: q162
+  claim_group: "Whistleblower Filing (PPD-19 / ICIG)"
   added_date: '2026-04-22'
   text: I have read the disclosure drafted by my attorneys, Irvin Charles McCullough, III, and Andrew P. Bakaj, and I hereby adopt the statements as if they were my own and do solemnly affirm under the penalties of perjury that the contents of the foregoing paper are true and correct to the best of my knowledge.
   source:
@@ -2209,6 +2382,7 @@ quotes:
   category: filed-claim
   statement_date: '2022-05-25'
 - id: q163
+  claim_group: "Briefing Congress & Withholding from Oversight"
   added_date: '2026-04-22'
   text: Mr. Grusch previously served as a fully cleared member of the United States (US) Government’s UAP Task Force. He has direct knowledge that certain IC elements have purposely and intentionally withheld and/or concealed UAP-related classified information from the US Congress. He has direct knowledge that this classified information has been withheld and/or concealed by the involved IC elements to purposely and intentionally thwart legitimate Congressional oversight of the UAP Program.
   source:
@@ -2220,6 +2394,7 @@ quotes:
   category: filed-claim
   statement_date: '2022-05-25'
 - id: q164
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: In July 2021, Mr. Grusch confidentially provided UAP-related classified information to the Department of Defense Inspector General (DoD IG). At that time, Mr. Grusch communicated classified information about the improper withholding and/or concealment of classified material from the US Congress by certain IC elements. Mr. Grusch believes that his identity and the fact of his UAP-related communication(s) with the DoD IG have been disclosed to individuals and/or entities outside the DoD IG, and that he has suffered retaliation and reprisal(s) related thereto.
   source:
@@ -2231,6 +2406,7 @@ quotes:
   category: filed-claim
   statement_date: '2022-05-25'
 - id: q165
+  claim_group: "Reprisal & Retaliation"
   added_date: '2026-04-22'
   text: Since his protected disclosure(s) to the DoD IG, Mr. Grusch has been subjected to numerous adverse security clearance actions. These actions have unfairly and unjustifiably impugned his integrity, character, judgment, professionalism, and mental health. While he remains security-cleared by the NGA, his compartmented accesses at numerous other IC elements have been — mysteriously and apparently without plausible explanation — canceled, delayed, denied, and/or improperly obstructed.
   source:

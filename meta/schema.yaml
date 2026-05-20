@@ -146,6 +146,14 @@ types:
       Statements:
         requires_quote_attribution: true
         split: [Direct Observations, Other Statements]
+        # The Direct/Other split is the legacy flat layout. When a person
+        # artifact groups its quotes by `claim_group`
+        # (quote_entry.claim_group), the renderer instead emits one H3 per
+        # claim group; grouped_split_ok tells section_rules to accept that
+        # H3 layout (H3s present, none matching the named split) in place
+        # of Direct/Other. A Statements section with no H3s at all still
+        # errors.
+        grouped_split_ok: true
       Timeline: {chronological: true}
 
   # --- ORGANIZATION -------------------------------------------------------
