@@ -338,6 +338,26 @@ recommended):
   fields where the source layer already carries them. Smallest
   structural change.
 
+**Corpus measurement (person nodes).** 15 person nodes; mean 30
+quotes / median 16 / max 165. Source-attribution duplication is
+concentrated:
+
+| Person node | Total quotes | Max same-source repetition |
+|---|---|---|
+| `/people/david-grusch` | 165 | 79 |
+| `/people/james-lacatski` | 41 | 14 |
+| `/people/david-fravor` | 16 | 10 |
+| `/people/sean-kirkpatrick` | 43 | 10 |
+| `/people/luis-elizondo` | 23 | 9 |
+
+The Grusch node is the worst case — 79 verification blocks all
+attributing to the same source (his July 2023 House testimony).
+Source-grouped layout collapses that 79 to 1 attribution heading
+with 79 quote bodies underneath; compressed-reference goes further
+and replaces each quote body with a link to the source-node
+passage. Status-quo-tighter would drop the duplicative per-quote
+fields but keep the 79 separate attribution lines.
+
 **Surfaces an investigation has to walk.**
 
 - `scripts/build/renderers/{person,document,event,transcript}.py` —
@@ -345,9 +365,9 @@ recommended):
 - `meta/schema-research-artifact.yaml` — per-quote required fields.
 - `meta/conventions.md` "Statements as the universal evidentiary
   primitive" — the principle the section enforces.
-- A representative sample of dense person nodes (e.g.,
-  `karl-nell`, `david-grusch`) to see how the current surface
-  reads against each candidate layout.
+- A representative read of `/people/david-grusch` (current
+  165-quote rendered surface) to evaluate each candidate against
+  the worst-case reader experience.
 
 **Blocks:** A2 (the manager agent's contract — how it organizes
 quotes into the node — depends on what the rendered quote section
@@ -795,21 +815,46 @@ properly before any retirement):
 | FOIA email release with `DOCUMENT N` markers | `Doc N, Sender YYYY-MM-DD HH:MM` | Yes via `Doc N` marker | No — markers ARE content-anchored, not page-anchored |
 | Image / photo (visual text) | spatial anchor (e.g., `HUD bottom-right`) | No | No |
 
+**Corpus census (quote-location forms by source format):**
+
+| Source format | Page-anchored | Paragraph-anchored | Timestamp | Doc-N | Other |
+|---|---|---|---|---|---|
+| pdf (670 total) | 502 | 52 | 0 | 14 | 102 |
+| html (301 total) | 4 | 165 | 0 | 0 | 132 |
+| transcript (240 total) | 0 | 0 | 240 | 0 | 0 |
+| txt (19 total) | 1 | 0 | 0 | 0 | 18 |
+
+Page-anchored locations are almost entirely a PDF convention:
+**506 of 507 page-anchored refs come from PDF or paginated-HTML
+sources.** Transcripts use timestamps universally. HTML mostly
+uses paragraph-anchored. The "Other" buckets sample as section-
+anchored ("CRADA 19-15, Section II", "AARO HRR Vol I Section V"),
+appendix names, or labeled paragraph refs ("Opening ¶3") —
+content-anchored, not page-anchored, so they survive any
+page-retirement decision.
+
 **Candidate resolutions:**
 
 - **Full retire.** Drop `p. N, ¶M` entirely. `source.location` becomes
   optional (timestamp / Doc-N / spatial-anchor / `¶N` only). Renderer
-  omits Location row when location is empty. Existing quotes' `p. N`
-  refs migrate to `¶N`-only or drop. Most aggressive simplification.
-- **Retire for short sources only.** Documents under N pages drop
-  `p. N`; long-form sources keep it as a navigation aid. Per-source
-  judgment via a new manifest field or a page-count threshold. Less
-  aggressive; preserves the long-form reader experience.
+  omits Location row when location is empty. Migration: 506
+  page-anchored refs convert to `¶N`-only or drop. Most aggressive
+  simplification.
 - **Retire the page component; keep `¶N`.** `p. N, ¶M` becomes `¶M`
   globally — paragraph-anchored, not page-anchored. Eliminates
   extraction-version dependence (paragraph markers are content-
-  derived, not page-layout-derived). Renderer still shows a Location
-  row; reader uses paragraph-counting instead of page-jumping.
+  derived, not page-layout-derived). Migration: 506 PDF/HTML
+  page-anchored refs strip their `p. N` prefix; entries that have
+  only `p. N` (no paragraph anchor) need contributor judgment on
+  whether to drop or compute a paragraph number. Renderer still
+  shows a Location row; reader uses paragraph-counting instead of
+  page-jumping.
+- **Retire for short sources only.** Documents under N pages drop
+  `p. N`; long-form sources keep it as a navigation aid. Per-source
+  judgment via a new manifest field or a page-count threshold. Less
+  aggressive; preserves the long-form reader experience (the 2024-11-19
+  SASC hearing transcript, AARO Historical Record Report Vol I).
+  Highest contributor cost (per-source page-count gating).
 - **Status quo + better tooling.** Keep page-anchored convention;
   add a `scripts/tools/locate-quote.py` helper that takes a quote
   + source and emits the canonical `p. N, ¶M` ref by grep. Eases
