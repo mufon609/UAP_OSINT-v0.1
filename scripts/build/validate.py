@@ -27,9 +27,13 @@ Checks:
 
   Manifest-checksum check — for every archived entry in
   sources/manifest.yaml, recompute SHA256 and compare to stored value.
-  Errors on: file missing on disk, missing sha256 field when required,
-  checksum mismatch (silent corruption / substitution). Run once per
-  validator invocation, before the per-node checks.
+  Errors on: file missing on disk (git-tracked paths), missing sha256
+  field when required, checksum mismatch (silent corruption /
+  substitution). A missing file whose path is git-IGNORED (the large
+  media kept out of the remote, e.g. sources/video/) is expected-absent
+  on a fresh clone — recorded in the Missing-Local-Sources registry
+  (out-of-band, like broken links; not an error). Run once per validator
+  invocation, before the per-node checks.
 
   Governance-frontmatter check — every .md file under meta/ must carry
   id / type / schema_version / created; schema_version must be in
@@ -319,6 +323,12 @@ def main():
     # ck_link_resolution — out-of-band metadata channel; broken stubs
     # are backlog signal, not violations, so they never appear as Issues.
     broken_links = base_ctx.broken_links
+    # missing_sources: git-ignored archived artifacts absent on disk,
+    # populated by ck_manifest_checksums against base_ctx in the main
+    # process (before the per-node fork), so no worker merge is needed.
+    # Same out-of-band treatment as broken_links — expected-absent on a
+    # fresh clone, not an error.
+    missing_sources = base_ctx.missing_sources
 
     errors = [i for i in all_issues if i.level == "error"]
     warnings = [i for i in all_issues if i.level == "warn"]
@@ -331,6 +341,8 @@ def main():
     if not args.quiet:
         print(f"  Warnings:      {len(warnings)}")
     print(f"  Broken links:  {len(broken_links)} unbuilt-stub targets (backlog)")
+    print(f"  Missing local sources: {len(missing_sources)} "
+          f"(git-ignored; recover via source URL / Wayback)")
 
     if all_issues:
         print("\n" + "-" * 64)
@@ -356,6 +368,14 @@ def main():
             print(f"\n  {link} ({len(refs)} ref{'s' if len(refs) != 1 else ''})")
             for r in refs:
                 print(f"    <- {r}")
+
+    if missing_sources and not args.quiet:
+        print("\n" + "-" * 64)
+        print(" Missing Local Sources (git-ignored — recover from source URL / Wayback)")
+        print("-" * 64)
+        for path in sorted(missing_sources.keys()):
+            print(f"\n  {path}")
+            print(f"    URL: {missing_sources[path]}")
 
     print("\n" + "=" * 64)
     if errors:

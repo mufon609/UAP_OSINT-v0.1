@@ -526,8 +526,19 @@ that strips the file from history before re-pushing.
   `sources/<category>/<filename>` is the integrity guarantee per
   `meta/conventions.md`; the manifest entry records the source URL
   and sha256, so anyone cloning the repo can re-download from the
-  source URL and verify integrity against the recorded sha256. The
-  file itself is never committed to the git remote.
+  source URL. The file itself is never committed to the git remote.
+
+  **sha256 reproducibility — read this before relying on it.** Re-download
+  reproduces the recorded sha256 *only for byte-identical static sources*
+  (PDFs, HTML, images, audio fetched verbatim). It does **not** reproduce
+  for **transcoded video**: `download-video.py` runs yt-dlp + an ffmpeg
+  merge whose container/muxing/codec output is not byte-stable across
+  yt-dlp/ffmpeg versions, available formats, or even runs — a re-download
+  yields different bytes and a different hash. For video the recorded
+  sha256 attests to the *originally-archived local copy* (a same-file
+  corruption tripwire), not to regenerability. Consequently the recorded
+  hash cannot gate a fresh clone of a video, and re-archiving the new
+  bytes is not durable (the next clone mismatches again).
 
 - **Add the source category directory (or a specific file pattern
   within it) to `.gitignore`** so future primary sources of the same
@@ -547,6 +558,25 @@ that strips the file from history before re-pushing.
   any file 50MB–100MB / errors on any file >100MB. The error blocks
   the commit; the warning prints but does not block. Set up before
   the first oversized primary source lands.
+
+**Fresh clone — what's absent and how to recover it.** A clone does not
+carry the git-ignored media (only the manifest URL + sha256 do). This is
+expected, not breakage: `validate.py`'s manifest-checksum check does
+**not** error on a git-ignored archived file that is missing on disk — it
+records it in the **Missing-Local-Sources registry** (an out-of-band
+report, like the broken-link registry; never an Issue, never affects the
+exit code), so the build stays green while still listing every absent
+file with its source URL. To see the list, run `python3
+scripts/build/validate.py` and read the "Missing Local Sources" section.
+Recovery is by hand, only when you actually need the bytes locally (e.g.
+to run the speaker-identification pipeline): re-fetch from the source URL
+(`download-video.py` for video) or from a Wayback snapshot when the
+manifest entry carries the bits (`archive_status` 2/3, `wayback_date`).
+There is deliberately no bulk re-download tool — git covers tracked files
+and the manifest URL + Wayback cover the rest, so a bespoke restore script
+would be redundant. A *present* git-ignored file is still checksum-verified
+on every run; only absence is exempt (transcoded video can't reproduce its
+hash — see the sha256 note above).
 
 **Recovery if a large file was committed before the gate caught it:**
 

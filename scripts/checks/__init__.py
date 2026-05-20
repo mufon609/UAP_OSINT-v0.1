@@ -99,6 +99,17 @@ class BaseContext:
     writes to it; orchestrator reads it for the registry print. NOT an
     Issue stream — broken stubs are backlog signal, not violations.
 
+    ``missing_sources`` is the same shape of out-of-band channel for a
+    different signal: archived manifest artifacts whose file is absent on
+    disk *and* whose path is git-ignored (the large primary-source media
+    deliberately kept out of the git remote per ``.gitignore`` —
+    ``sources/video/``). On a fresh clone these are expected-absent, not
+    corrupt, so ``manifest_checksums`` records them here (keyed
+    ``sources/<path>`` → source URL) and yields no Issue. A genuinely
+    *tracked* file gone missing still errors. Orchestrator prints the
+    registry so a fresh checkout sees what to recover (source URL /
+    Wayback). NOT an Issue stream.
+
     ``source_to_artifacts`` is the cross-artifact index keyed by source
     path, mapping to the list of entity-type artifacts (people /
     organizations / documents / events / transcripts / media / locations)
@@ -110,12 +121,20 @@ class BaseContext:
     """
 
     def __init__(self, schema, manifest_paths=None, manifest_entries=None,
-                 broken_links=None, source_to_artifacts=None):
+                 broken_links=None, source_to_artifacts=None,
+                 missing_sources=None):
         self.schema = schema
         self.manifest_paths = manifest_paths if manifest_paths is not None else set()
         self.manifest_entries = manifest_entries if manifest_entries is not None else []
         self.broken_links = broken_links if broken_links is not None else defaultdict(set)
         self.source_to_artifacts = source_to_artifacts if source_to_artifacts is not None else {}
+        # Out-of-band registry, populated by manifest_checksums for
+        # git-ignored archived artifacts missing on disk (expected-absent
+        # on a fresh clone). Keyed sources/<path> → source URL. Only the
+        # global manifest check writes it (against the base context), so —
+        # unlike broken_links — it is not forwarded through the per-node /
+        # per-artifact subclasses.
+        self.missing_sources = missing_sources if missing_sources is not None else {}
 
 
 class NodeContext(BaseContext):
