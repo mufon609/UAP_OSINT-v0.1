@@ -1016,6 +1016,30 @@ before the Manager consumes it) and is re-driven by re-running that
 agent. This composes with the standing rule: fixes go to the artifact,
 never the node body, then rebuild.
 
+**Running the full pipeline.** Each agent has a paste-ready launch prompt
+(`prompts/agent-{scout,marker,manager,meta-linker,builder}.md`). For a
+node build, launch them in order, with a human checkpoint between stages
+(read each handoff stub / fragment before proceeding):
+
+1. **Scout** once — find / confirm / archive sources → scratch files.
+   Check: `validate.py --phase scout`.
+2. **Marker** once per scratch file → quote candidates + proposed
+   `claim_group`. (Parallelizable across sources.)
+3. **Manager** once — cluster into `claim_group`s, de-dup via
+   `corroborated_by`, write prose. Merge into the artifact. Check:
+   `validate-research.py --phase {marker,manager} meta/research/{slug}.yaml`.
+4. **Meta-linker** once — cross-refs / naming_quirks / rumors. Check:
+   `validate-research.py --phase meta-linker …`.
+5. **Builder** once — render + full-pass validate + review. Route any
+   failure back to the owning agent (the `--phase` of the failing check
+   names it), fix the artifact, re-run the Builder.
+
+The handoff stubs (`/tmp/handoff-{slug}-{agent}.yaml`) trace the chain for
+post-mortem; they are ephemeral. The genuine end-to-end run is a node
+build, which is **user-directed** — per `CLAUDE.md`, scope and target
+come from the user and primary sources must be real + archived; the
+pipeline is not run on a fabricated target.
+
 ---
 
 ## What NOT to do

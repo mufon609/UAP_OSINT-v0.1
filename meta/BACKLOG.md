@@ -196,12 +196,25 @@ re-driven by re-running that agent (never by editing the node body).
   dogfooded in increment 1 (the Grusch clustering). Registered in
   `prompts/README.md`; build.md A2 section cross-refs them. Real runtime
   invocation happens on the next node build / `claim_group` migration.
-- **5** — Scout + Meta-linker + Builder as launchable agents; full
-  pipeline run end-to-end on a node.
+- **5 — Scout + Meta-linker + Builder as launchable agents + full-
+  pipeline orchestration doc (DONE 2026-05-20).** Shipped
+  `prompts/agent-scout.md` (find / confirm / archive / scaffold /
+  extract), `prompts/agent-meta-linker.md` (cross-refs + naming_quirks
+  T4 + rumors T5), `prompts/agent-builder.md` (render + full-pass
+  validate + Phase III; routes failures to the owning agent by `--phase`).
+  build.md A2 section gained a "Running the full pipeline" recipe
+  chaining all five agents with per-stage `--phase` checkpoints; all five
+  registered in `prompts/README.md`. **The first live end-to-end run is a
+  user-directed node build** — per `CLAUDE.md`, target + scope come from
+  the user and sources must be real + archived, so the pipeline is not
+  exercised on a fabricated target here.
 
-**Blocks:** none currently open.
-**Blocked by:** none — increments 1–4 shipped; increment 5 (the
-remaining three agent prompts + a full end-to-end pipeline run) remains.
+**Blocks:** none.
+**Blocked by:** none. The A2 decomposition is **complete as a launchable,
+documented pipeline** (all five agents + A3 quote shape + `--phase`
+per-stage validation). What remains is operational, not structural:
+exercise it on the next user-directed node build, and migrate the
+remaining 14 person nodes to `claim_group` one per session.
 
 ---
 
