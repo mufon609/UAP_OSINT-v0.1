@@ -277,20 +277,98 @@ def build_scaffold(node_type, slug, source_paths, manifest):
 # Main
 # =============================================================================
 
+def explain_field(field_name):
+    """Print the entry-shape spec for a research-artifact list field.
+
+    Walks ``meta/schema-research-artifact.yaml`` for the entry-shape
+    definition that backs ``field_name``. Reports required + optional
+    fields plus any ``*_values`` enums. Inline schema comments are not
+    surfaced (PyYAML strips them on load); the contributor reads the
+    schema file directly for per-field semantics. Returns exit code.
+    """
+    schema = load_schema()
+    ra = schema["types"].get("research-artifact") or {}
+
+    # Field-name → entry-shape-key. Most follow drop-trailing-s; the
+    # irregulars are explicit.
+    irregular = {
+        "entities_referenced": "entity_entry",
+        "hypotheses": "hypothesis_entry",
+        "corroboration_items": "corroboration_entry",
+        "primary_sources": "primary_sources_entry",  # plural retained in shape name
+    }
+    if field_name in irregular:
+        shape_key = irregular[field_name]
+    elif field_name + "_entry" in ra:
+        shape_key = field_name + "_entry"
+    elif field_name.rstrip("s") + "_entry" in ra:
+        shape_key = field_name.rstrip("s") + "_entry"
+    else:
+        all_shapes = sorted(k for k in ra if k.endswith("_entry"))
+        print(f"ERROR: no entry shape known for field {field_name!r}",
+              file=sys.stderr)
+        print(f"  Available entry shapes:", file=sys.stderr)
+        for s in all_shapes:
+            print(f"    {s}", file=sys.stderr)
+        return 1
+
+    shape = ra.get(shape_key) or {}
+    required = shape.get("required") or []
+    optional = shape.get("optional") or []
+    enums = {k: v for k, v in shape.items() if k.endswith("_values")}
+
+    print(f"# {field_name}  (entry shape: {shape_key})")
+    print()
+    if required:
+        print("required fields:")
+        for f in required:
+            print(f"  - {f}")
+        print()
+    if optional:
+        print("optional fields:")
+        for f in optional:
+            print(f"  - {f}")
+        print()
+    if enums:
+        print("enum vocabularies:")
+        for k, vals in enums.items():
+            field = k.removesuffix("_values")
+            vals_str = ", ".join(vals) if isinstance(vals, list) else str(vals)
+            print(f"  {field}: {vals_str}")
+        print()
+
+    print("Inline per-field semantics live in")
+    print("meta/schema-research-artifact.yaml as comments adjacent to the")
+    print(f"entry-shape definition. Search for '{shape_key}:' to read.")
+    return 0
+
+
 def main():
     parser = argparse.ArgumentParser(
         description=__doc__,
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
-    parser.add_argument("--target", required=True,
-                        help="Target node: type/slug (e.g., documents/written-testimony-fravor-2023)")
+    parser.add_argument("--target",
+                        help="Target node: type/slug (e.g., documents/written-testimony-fravor-2023). "
+                             "Required for scaffolding; omit when using --explain.")
     parser.add_argument("--sources", default="",
                         help="Comma-separated list of primary-source paths relative to sources/ "
                              "(e.g., government/file.pdf,video/gimbal.mp4). Optional — can be "
                              "added during Phase I.")
     parser.add_argument("--force", action="store_true",
                         help="Overwrite existing research artifact")
+    parser.add_argument("--explain", metavar="FIELD",
+                        help="Print the entry-shape spec (required/optional fields, "
+                             "enums) for a research-artifact list field "
+                             "(e.g., affiliations, quotes, naming_quirks). Mode "
+                             "switch — exits after printing, no scaffolding performed.")
     args = parser.parse_args()
+
+    if args.explain:
+        sys.exit(explain_field(args.explain))
+
+    if not args.target:
+        parser.error("--target is required (or use --explain FIELD)")
 
     node_type, slug, _ = parse_target(args.target)
 

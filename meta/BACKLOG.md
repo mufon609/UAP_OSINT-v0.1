@@ -80,8 +80,6 @@ settled; implementation co-lands with A2):**
   interim orchestrator if A2 stays roadmap-scoped)
 - **C31** — preflight discipline audit (reduced; manual-invocation
   case stays for tools called outside the agent chain)
-- **C32** — research-scaffold placeholder shape (narrows to
-  non-marker-populated fields)
 
 **Independent of the A2 chain:**
 
@@ -569,64 +567,6 @@ standard would integrate with.
 their own behalf before invoking tools. Manual-invocation case
 stays: tools called directly by contributors outside the agent
 chain still want preflight discipline.
-
-### C32 — `research-scaffold.py` should emit placeholder entries showing required shape
-
-The current scaffold emits empty content sections (`quotes: []`,
-`affiliations: []`, `entities_referenced: []`, `naming_quirks: []`,
-etc.). Contributors learn the required entry shape by reading an
-existing exemplar artifact (e.g., `karl-nell.yaml`) or by hitting
-validation errors and inferring the shape from the error messages.
-
-The required-entry shape is non-trivial: every list entry needs
-lifecycle fields (`id`, `added_date`) plus type-specific required
-fields (e.g., affiliation_entry needs `organization_path`, `role`,
-`source`; quote_entry needs `text`, `source` with sub-fields;
-naming_quirks_entry needs `observed`, `canonical`, `location`,
-`source_path`, `resolution`). Discovering these by validation
-error is high-friction: a contributor populating a fresh artifact
-from-scratch can hit 100+ "missing required field" errors on
-first validate, organized by entry rather than by category.
-
-**The actual question:** how should the scaffold teach the required-
-entry shape to the contributor?
-
-Candidate resolutions:
-
-- **Commented-out placeholder per section.** Scaffold emits one
-  fully-formed placeholder entry per list field, prefixed with
-  `# placeholder — replace or delete`. Contributor learns shape by
-  replacing or deleting; copying-and-extending is the natural path.
-  Lowest friction; small risk that contributors forget to delete
-  unused placeholders.
-- **Schema-driven `--help` doc.** A new `research-scaffold.py
-  --explain {field}` mode that prints the required entry shape for
-  any artifact field, derived from `schema-research-artifact.yaml`.
-  Doesn't change the scaffold; adds discoverability surface.
-- **Pre-populated from sources.** Scaffold runs against the primary
-  sources passed in `--sources` and pre-extracts candidate
-  entries (e.g., detected named entities → `entities_referenced[]`
-  placeholders; detected dates → `timeline[]` placeholders).
-  Highest value but highest implementation cost; risks bad defaults
-  becoming load-bearing.
-- **Status-quo + improve error grouping.** Keep the empty scaffold;
-  refactor `validate-research.py`'s missing-required-field reporting
-  to group by category (e.g., "12 list entries need `added_date`")
-  rather than per-entry. Reduces the cognitive load of the error
-  cascade without changing the scaffold.
-
-**Surfaces an investigation has to walk:** `scripts/build/research-
-scaffold.py`; `meta/schema-research-artifact.yaml` (the
-per-entry shape specs); `scripts/checks/` (the validators that
-detect missing fields); `prompts/build.md` Phase I Step 1
-(how the scaffold integrates with the build prompt).
-
-**A2 effect:** narrows to non-marker-populated fields. The marker
-agent fills `quotes[]` (and possibly `timeline[]`) from sources;
-those fields no longer need placeholder teaching. Free-prose
-fields (`description`, `background`, `top_relevance`,
-`credibility_notes`) and structured-data lists not auto-populated
-(`affiliations`, `relationships`) still want scaffold placeholders.
 
 ### C33 — Verbatim-quote normalization: principled refactor vs. reactive patches
 
