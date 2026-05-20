@@ -86,7 +86,7 @@ every boundary):**
   3 renderers, ~507 quote entries across 58 research artifacts,
   `scripts/tools/normalize-locations.py`, `REFACTOR/CLAUDE.md`.
 
-### A1 — Retire mandatory `entities_referenced[]` registration  ⏳ PENDING
+### A1 — Retire mandatory `entities_referenced[]` registration  ✅ SHIPPED 2026-05-20
 
 Promoted from `meta/BACKLOG.md` A1 on 2026-05-19. Full analysis,
 corpus measurement (1,254 entries / 58 artifacts; ~16% substantive),
@@ -281,6 +281,19 @@ every boundary):**
   No code changes expected; logs the post-migration baseline for
   future audits. **Rollback:** not applicable (no changes).
 
+  **Landed.** Verification complete (read-only, no changes).
+  (A) `stub_linking` scope shrank to 655 entries / 51 artifacts (from
+  1,254 / 58); `review-coverage.py --all` = 0 errors. (B)
+  `coverage-suggest.py` runs and stays actionable on affected
+  artifacts (aaro, david-fravor) — noisier by construction (deleted
+  entries' names now surface as unregistered capitalized terms; the
+  contributor dismisses the body-wrapped ones). (C) `link_resolution.py`
+  / broken-link registry unchanged: 0 rendered node-body files changed
+  across all of A1 (it touched only `meta/`, `prompts/`, `scripts/`),
+  broken-link count stable at 510. **Post-migration baseline:** 655
+  entries / 51 artifacts; review-coverage 0 errors; broken-links 510.
+  **A1 fully shipped.**
+
 **Cross-references:**
 - Blocks: none.
 - Touches: `meta/schema-research-artifact.yaml`,
@@ -288,8 +301,8 @@ every boundary):**
   `prompts/build.md`, `prompts/audit.md`,
   `prompts/quote-relevance-audit.md`,
   `scripts/build/research-scaffold.py`,
-  `scripts/tools/coverage-suggest.py`, research artifacts (deletion
-  count = contributor-chosen threshold; 369 at ≥1 token), **no**
+  `scripts/tools/coverage-suggest.py`, research artifacts (599 entries
+  deleted at the contributor-chosen ≥2 threshold; 655 kept), **no**
   `naming_quirks` additions (A1.2 retired), no renderers
   (entities_referenced is artifact-only).
 - Orthogonal to C35 — different files, different decisions; can
@@ -312,4 +325,5 @@ coverage for broken cross-artifact refs.
 - 🟡 = in progress
 - ⏳ = pending (next-up)
 - ⏸ = deferred (not next-up)
+- ✅ = shipped (kept as a design-decision record; git log is the full history)
 - ❌ = removed / rejected
