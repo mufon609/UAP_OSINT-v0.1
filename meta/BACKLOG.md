@@ -177,9 +177,12 @@ re-driven by re-running that agent (never by editing the node body).
 **Staged implementation.**
 - **1 — A3 data-model + person renderer (DONE 2026-05-20, proven on
   Grusch).** A2's Tier-0 unblocker; see the A3 entry.
-- **2** — formalize the 5 agents as bounded tasks in `prompts/build.md`
-  (extends the T2/T4/T5 table; documents the `/tmp` handoff-stub format).
-  No new code.
+- **2 — formalize the 5 agents as bounded tasks in `prompts/build.md`
+  (DONE 2026-05-20).** Added "The multi-agent pipeline (A2)" section
+  documenting Scout/Marker/Manager/Meta-linker/Builder (I/O, source-read
+  discipline, phase mapping), the `/tmp/handoff-{slug}-{agent}.yaml`
+  stub format, and the agent-boundary invariant; `claim_group` added to
+  the T2 field list. No new code.
 - **3** — A4 per-phase validator dispatch: a `PHASE` constant per check
   module + `validate.py --phase {scout|marker|manager|meta-linker|
   builder}` filtering the existing `_ARTIFACT_CHECKS`/`_NODE_CHECKS`;
