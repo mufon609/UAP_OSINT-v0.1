@@ -550,54 +550,66 @@ agent-internal. Could ship as an interim orchestrator if A2 stays
 roadmap-scoped, but the work does not carry forward into A2 — the
 agents replace the orchestrator rather than build on it.
 
-### C31 — Preflight discipline audit across `scripts/tools/`
+### C31 — Standardize preflight discipline across `scripts/tools/`
 
-Tools that depend on environmental prerequisites (env vars, gated
-model auth, browser session state, JS runtimes, network access)
-currently surface those prerequisite failures at the point the tool
-*uses* the prerequisite, not at the point the tool *starts*. The
-gap means contributors do meaningful work (audio extraction, video
-download, manifest scan, frame-extraction setup) before the
-tool exits with the install hint.
+**Catalog of current state** (one-pass audit; tools with no
+prerequisites omitted):
 
-The pattern isn't uniform across `scripts/tools/`. Some tools
-preflight cleanly (`download-video.py`'s `preflight()` checks
-yt-dlp + ffmpeg + JS runtime before the yt-dlp invocation); others
-defer the check until the prerequisite is consumed; the cookie-
-extraction path has its own non-uniform pattern (the canonical
-multi-video shell-variable workflow prompts once per session, but
-the per-tool failure modes vary).
+| Tool | Prerequisites | Preflight pattern |
+|---|---|---|
+| `download-video.py` | yt-dlp, ffmpeg, ffprobe, Firefox cookies | `def preflight()` at `main()` entry |
+| `diarize-audio.py` | HF_TOKEN, ffmpeg, ffprobe, pyannote, torch | Inline HF_TOKEN check at `main()` entry; other prereqs deferred until use |
+| `transcribe.py` | yt-dlp, Firefox cookies | Deferred (fails at first use) |
+| `extract-frames.py` | ffmpeg, ffprobe | Deferred |
+| `extract-firefox-cookies.py` | yt-dlp (for cookie format), Firefox profile | Deferred |
+| `detect-faces.py` | cv2 (OpenCV), PIL | Deferred (ImportError at top-level) |
+| `stitch-transcript.py` | ffmpeg, pyannote outputs | Deferred |
+| `archive.py` | Network (Wayback Machine) | Deferred (HTTP error at first call) |
+
+Tools with no prerequisites (no preflight needed): `manifest.py`,
+`check-vocab.py`, `coverage-suggest.py`, `normalize-locations.py`,
+`migrate-manifest-to-artifacts.py`.
+
+The pattern is non-uniform: 1 of 8 prerequisite-bearing tools has a
+formal `preflight()`; 1 has an inline check for the most-likely-
+missing prereq (HF_TOKEN); 6 defer entirely. The cluster most exposed
+to mid-pipeline failure is the video pipeline
+(`download-video` → `extract-frames` → `detect-faces` → optional
+`diarize-audio` + `stitch-transcript`) — five tools, four with
+deferred-check failure modes, where a contributor may complete one
+step's work before the next step fails on a missing binary or model.
 
 **The actual question:** what's the standard for "prerequisite
 discoverability" across `scripts/tools/`?
 
 Candidate resolutions (none recommended; listed for completeness):
 
-- **Universal `preflight()` discipline.** Every tool grows a
-  `preflight()` function called at `main()` entry that checks
-  every env var, binary, library, and external-service prerequisite
-  the tool consumes anywhere in its execution. Exit non-zero with
-  install hints before any side-effect runs. Most explicit; most
-  invasive.
-- **Shared preflight library.** A `lib/_preflight.py` module that
-  tools register requirements with declaratively (`require_env(
-  "HF_TOKEN")`, `require_binary("yt-dlp")`, `require_python_module(
-  "pyannote.audio")`). Tools call `lib._preflight.check()` at entry.
-  Less per-tool boilerplate; centralizes the install-hint vocabulary.
-- **Status-quo + audit-only.** Accept that some prerequisites only
-  surface deep in the call graph; the audit produces a manifest of
-  "known mid-pipeline failure points" so contributors are warned at
-  documentation time rather than at script-runtime time.
-- **Smoke-test coverage.** Add a `scripts/tests/preflight-check.sh`
+- **Universal `preflight()` discipline.** Every prerequisite-bearing
+  tool grows a `preflight()` function called at `main()` entry that
+  checks every env var, binary, library, and external-service
+  prerequisite the tool consumes anywhere in its execution. Exit
+  non-zero with install hints before any side-effect runs. Most
+  explicit; most invasive — adds preflight to seven tools.
+- **Shared preflight library.** A `lib/_preflight.py` module tools
+  register requirements with declaratively (`require_env("HF_TOKEN")`,
+  `require_binary("yt-dlp")`, `require_python_module("pyannote.audio")`).
+  Tools call `lib._preflight.check()` at entry. Less per-tool
+  boilerplate; centralizes the install-hint vocabulary; assumes
+  the cluster grows enough to amortize the abstraction.
+- **Smoke-test coverage only.** Add a `scripts/tests/preflight-check.sh`
   that confirms each tool exits cleanly with the prerequisite-missing
   install hint when its prerequisites are absent. Catches regressions
-  but doesn't change the architecture.
+  but doesn't change behavior of any currently-deferred check.
+- **Cluster-only `preflight()`.** Apply universal preflight to the
+  video pipeline cluster (where mid-pipeline failure is most costly)
+  and accept deferred-check on the rest. Trades partial coverage for
+  smaller invasive surface — five new `preflight()` functions instead
+  of seven.
 
-**Surfaces an investigation has to walk:** every script under
-`scripts/tools/` and `scripts/build/`; `lib/_common.py` for any
-shared preflight helpers; `meta/conventions.md` "Inside /scripts/"
-for the landing rules; `scripts/tests/` for the smoke / help-check
-patterns the preflight standard would integrate with.
+**Surfaces an investigation has to walk:** the seven prerequisite-
+bearing tools above; `lib/_common.py` for shared preflight helpers;
+`scripts/tests/` for the smoke / help-check patterns the preflight
+standard would integrate with.
 
 **A2 effect:** agent-invocation case reduced — agents preflight on
 their own behalf before invoking tools. Manual-invocation case
