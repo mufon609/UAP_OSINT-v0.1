@@ -87,6 +87,10 @@ Items with ordering or coupling constraints.
 
 ### A1 — Retire mandatory `entities_referenced[]` registration
 
+**PROMOTED 2026-05-19 → `meta/roadmap.md` "A1" (Full retire,
+vocab-preservation migration; phases A1.1–A1.6).** This entry stays
+as the analysis-of-record until phase A1.5 retires it on landing.
+
 **Premise verified by corpus measurement.** The field carries 1,254
 entries across 58 of 59 research artifacts. 100% of those entries'
 `wrap_path` values already appear as `[`/path`]` body wraps in the
@@ -552,6 +556,11 @@ becomes rare enough that targeted addition or even status-quo
 may be acceptable. C33 should not implement until C35 resolves.
 
 ### C35 — Retire `p. N, ¶M` page-anchored location convention?
+
+**PROMOTED 2026-05-19 → `meta/roadmap.md` "C35" (Full Retire;
+phases C35.1–C35.5).** Decision resolved: Full Retire. This entry
+stays as the analysis-of-record until phase C35.5 retires it on
+landing.
 
 **Open structural question.** Every quote in `meta/research/*.yaml`
 carries a `source.location` field anchoring the quoted passage
