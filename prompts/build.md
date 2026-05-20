@@ -351,50 +351,18 @@ without clicking through. Quote overlap with the witness-specific
 transcript or document nodes is acceptable and expected; the
 renderer does not deduplicate across nodes.
 
-### Step 7. Cross-reference entities (optional; bounded agent task T3)
+### Step 7. Cross-reference entities (no separate registration)
 
-Cross-references to other entities are carried by `[`/path`]` body
-wraps in the rendered prose (timeline events, notes, etc.) — those
-wraps drive the broken-link registry and `## Associated Nodes`, and
-are the required mechanism. `entities_referenced[]` is an OPTIONAL,
-curated surface — NOT a per-entity index of everyone the source
-names. Register an entity only when you have a substantive
-`context_summary` to attach: synthesis about how it figures in the
-source that the body does not already carry. A bare entry that only
-duplicates a body wrap adds nothing — omit it. See `meta/conventions.md`
-"Cross-reference contract for interview-derived testimony".
+Cross-references to other entities are carried entirely by `[`/path`]`
+body wraps in the rendered prose (timeline events, notes, etc.) —
+those wraps drive the broken-link registry (Priority Build Queue) and
+the auto-generated `## Associated Nodes` section. There is no separate
+entity-registration step: write the wrap where the entity is named.
 
-**Agent task T3 (optional):**
-- **Input:** extracted plaintext + populated `quotes`
-- **Output:** YAML fragment of `entities_referenced:` — one entry per
-  entity that warrants a substantive `context_summary`. Each entry:
-  - `id` (e1, e2, …)
-  - `entity_type` (person | organization | document | event | location | finding)
-  - `name` (display name)
-  - `wrap_path` (canonical repo path, e.g., `/people/jay-stratton`)
-  - `context_summary` (the synthesis that justifies the entry — not a
-    restatement of the body)
-  - `references` (list of `{quote_id: qN}` — quotes that mention this entity)
-  - Standard lifecycle fields
-  Omit the field entirely when no entity warrants a `context_summary`.
-
-**Discipline:**
-- Substantive only: if the `context_summary` you would write is
-  already in the body, skip the entry — the body wrap suffices.
-- Deduplicate: one entry per entity across the whole artifact. If
-  Stratton appears in ¶8 and also in a quote from ¶9, one entity entry
-  with both references.
-- `wrap_path` uses canonical name form even if the source uses a typo
-  (the typo goes into `naming_quirks`, not here).
-- **Do not include the artifact's own subject.** `entities_referenced`
-  lists entities OTHER than the node's subject. Person nodes don't
-  self-wrap; including the subject (e.g., David Fravor on
-  `/people/david-fravor`) creates a spurious Stub-linking check
-  failure. The subject's identity is carried by the node body itself
-  (Identity section on person; equivalent surfaces elsewhere). The
-  `review-coverage.py` Stub-linking check auto-filters self-references,
-  so a mistaken self-entry will not error out, but the convention is
-  to omit it.
+- `wrap_path` uses the canonical name form even if the source uses a
+  typo (the typo goes into `naming_quirks`, not the wrap).
+- Don't self-wrap the artifact's own subject — its identity is carried
+  by the node body (Identity / Overview), not by a wrap to itself.
 
 ### Step 8. Populate `naming_quirks` (bounded agent task T4)
 
@@ -865,14 +833,11 @@ The script runs four mechanical checks:
    matches what `build-from-research.py --dry-run` would regenerate
    from the current artifact. Divergence means the artifact drifted
    from the node, or the node was hand-edited.
-3. **Stub-linking check** — every `entities_referenced[].wrap_path`
-   appears as a `[`/path`]` link in the node body.
-4. **Description-drift check** — every significant token in the node's
+3. **Description-drift check** — every significant token in the node's
    `## Description` section appears in the artifact's grounding text
    (source + `context_extrinsic` + `document_intrinsic` +
-   `naming_quirks.canonical` + `entities_referenced.name`). Catches
-   fabricated entities and abbreviation expansions that don't trace
-   to grounding.
+   `naming_quirks.canonical`). Catches fabricated entities and
+   abbreviation expansions that don't trace to grounding.
 
 Must exit 0. Fix failures by updating the **artifact** (add the missing
 quote / entity, correct description prose to match grounding) and
@@ -953,11 +918,10 @@ Each task has clear I/O and can be run as a focused agent invocation:
 | Task | Input | Output |
 |---|---|---|
 | T2 — Extract quotes | Plaintext | YAML `quotes:` fragment |
-| T3 — Cross-reference entities (optional) | Plaintext + quotes | YAML `entities_referenced:` fragment — substantive-`context_summary` entries only |
 | T4 — Naming quirks | Plaintext + quotes | YAML `naming_quirks:` fragment |
 | T5 — Rumors (conditional) | Everything above + external context | YAML `rumors:` fragment |
 
-Tasks are **composable** (T3 can use T2's output). They are
+Tasks are **composable** (later tasks can use T2's output). They are
 **validated by humans** before being merged into the research artifact.
 They are **bounded** — each task produces a specific YAML fragment, not
 free-form content.
@@ -971,8 +935,5 @@ free-form content.
 - Do not rephrase source text in quotes (only paraphrase in
   `significance` or `context_summary` fields).
 - Do not create a research artifact for a node that doesn't exist yet.
-- Do not hand-edit `entities_referenced[].references` after agents
-  populate — let the references field reflect what the quotes
-  actually contain.
 - Do not skip the validator. `validate-research.py` errors are
   commit-blocking.

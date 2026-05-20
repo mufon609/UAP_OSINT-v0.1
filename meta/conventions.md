@@ -702,7 +702,7 @@ an unwritten "contributor reviewed and accepted" assumption.
 Templates and prompts do not impose count targets on artifact content.
 This applies uniformly to two surfaces:
 
-- **Entry lists.** `quotes`, `entities_referenced`, `naming_quirks`,
+- **Entry lists.** `quotes`, `naming_quirks`,
   `rumors`, `affiliations`, `relationships`, `corroboration_items`,
   `program_involvement`, `publication_record`, `vouching_chain`,
   `participants`, `witnesses_testimony`, `timeline`, `key_personnel`,
@@ -1261,19 +1261,9 @@ corresponding `timeline[].event` text):
 The body wrap is the load-bearing mechanism: `[`/path`]` wraps drive
 the broken-link registry (the Priority Build Queue) and the
 auto-generated `## Associated Nodes` section, both of which read the
-rendered body, not `entities_referenced[]`.
-
-Registering an entity in `entities_referenced[]` is OPTIONAL — add an
-entry only to attach a substantive `context_summary` (synthesis about
-how the entity figures in the source that the body does not already
-carry). The former discipline of registering every body-wrapped
-entity is retired: a bare registration that only duplicates a body
-wrap adds nothing the wrap doesn't already provide. When an entity
-IS registered, `stub_linking` enforces the registered→linked
-direction (every `entities_referenced[].wrap_path` also appears as a
-body wrap). `coverage-suggest.py` flags source content not reflected
-in the node; contributor judgment decides what is load-bearing vs.
-incidental.
+rendered body. `coverage-suggest.py` flags source content not
+reflected in the node; contributor judgment decides what is
+load-bearing vs. incidental.
 
 ---
 

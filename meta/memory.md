@@ -57,8 +57,8 @@ phases.
 - **Phase 1 — factual correctness.** Wrong attributions,
   misspellings, source-misquotations, mis-linked paths, mixed-speaker
   quotes. Self-contained errors; can ship independently.
-- **Phase 2 — completeness.** Missing timeline events, gaps in
-  `entities_referenced[]`, narrative gaps, under-attribution. The
+- **Phase 2 — completeness.** Missing timeline events, narrative
+  gaps, under-attribution. The
   node works but is thinner than the source supports.
 - **Phase 3 — convention.** Schema changes, renderer changes,
   taxonomy redefinitions. Can't be fixed at the node level; needs

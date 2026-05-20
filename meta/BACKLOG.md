@@ -113,8 +113,8 @@ between them.
    organized. The quote-section structure itself may need redesign
    as part of this work (see Quote-section sub-question below).
 5. **Meta-linker agent** — populates remaining cross-reference
-   surfaces (`entities_referenced`, `relationships`, `affiliations`,
-   `timeline` cross-refs) once the quote layer is settled.
+   surfaces (`relationships`, `affiliations`, `timeline` cross-refs)
+   once the quote layer is settled.
 6. **Builder agent** — runs `build-from-research.py` +
    `validate.py` + `review-coverage.py`, resolves or logs
    validation findings.
@@ -321,8 +321,8 @@ per-phase validation output IS each agent's handoff stub.
   `description_token_drift`, `top_scope_activity`,
   `corroboration_items`, `vouching_chain`, `hypotheses`,
   `open_questions`, `naming_quirks`.
-- **After meta-linker** (cross-references): `entities_referenced`,
-  `stub_linking`, `relationships`, `affiliations`,
+- **After meta-linker** (cross-references): `relationships`,
+  `affiliations`,
   `key_personnel`, `timeline`, `chronological_tables`,
   `org_relationships`, `location_relationships`,
   `program_involvement`, `ownership_timeline`, `participants`,
@@ -666,8 +666,7 @@ the heaviest-synthesis type lands on the lighter side.
   **ERROR per unmatched token**, with dedicated extraction of
   proper nouns, hyphen/slash designators (`VFA-41`, `F/A-18F`),
   numbers, and double-quoted strings, grounded against source text +
-  `context_extrinsic` + `document_intrinsic` + `naming_quirks[].canonical`
-  + `entities_referenced[].name`.
+  `context_extrinsic` + `document_intrinsic` + `naming_quirks[].canonical`.
 - **Person nodes** carry no `## Description` (by design — `background`
   / `top_relevance` / `credibility_notes` are the synthesis surface).
   Those three fields are checked only by `scripts/checks/prose_drift.py`:
@@ -712,12 +711,10 @@ sibling check — not a merge.
   (as `description_token_drift` does) so legitimate canonical-form names
   don't false-positive.
 
-**`entities_referenced` interaction (orthogonal, recorded so it isn't
-re-litigated).** On person artifacts `entities_referenced[].name`
-feeds no drift gate (person nodes render no `## Description`), and
-`entities_referenced` is now an optional, curated field. If C37 later
-adds a person-prose error gate that wants entity names in its
-grounding pool, that pool decision is C37's to make — named entities
+**Note (orthogonal).** `entities_referenced` has been retired (C38), so
+entity names no longer feed any drift gate. Person nodes still render
+no `## Description`, so they still have no error-level drift gate. If
+C37 adds one, its grounding pool is C37's to define — named entities
 remain `[`/path`]` body wraps regardless.
 
 **Blocks:** none.

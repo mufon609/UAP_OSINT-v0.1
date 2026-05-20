@@ -51,9 +51,7 @@ ABOUT other people / programs / events.
      broken-link registry surfaces it as a build candidate, and capture
      the institutional moment in `timeline[]` so the contextual fact is
      not lost; the verbatim quote can be added on the other entity's
-     node when that node is built. Registering the entity in
-     `entities_referenced` is optional — only to attach a substantive
-     `context_summary`.
+     node when that node is built.
 
 ---
 
@@ -139,8 +137,7 @@ Once contributor approves the recommendation set:
 
 1. Edit the artifact (drop selected quotes, update `timeline[]` if
    needed — include a `[`/path`]` body wrap for any future-node entity
-   so the broken-link registry surfaces it; touch `entities_referenced`
-   only to attach a substantive `context_summary`).
+   so the broken-link registry surfaces it).
 2. If consolidating, update `significance` / `context` on the
    surviving quote to capture what was in the dropped siblings.
 3. Re-render: `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`

@@ -9,7 +9,7 @@ no error so legitimate cross-artifact refs aren't false-positive'd.
 Sections to scan are derived from
 ``schema-research-artifact.yaml::conditional_keys`` plus the
 universal entry-bearing top-level sections (``quotes``,
-``entities_referenced``, ``naming_quirks``). Schema is the single
+``naming_quirks``). Schema is the single
 source of truth — when a new conditional section ships, this check
 picks it up without a Python edit. Non-list values (prose fields like
 ``background`` / ``credibility_notes``, dict fields like
@@ -36,7 +36,7 @@ CHECK_NAME = "cross_refs"
 # deliberately excluded: its entries carry no ``id`` lifecycle field
 # (per primary_sources.py docstring), so cross-ref scanning would no-op
 # anyway.
-_UNIVERSAL_ENTRY_SECTIONS = ("quotes", "entities_referenced", "naming_quirks")
+_UNIVERSAL_ENTRY_SECTIONS = ("quotes", "naming_quirks")
 
 
 def _all_entry_sections(ctx):

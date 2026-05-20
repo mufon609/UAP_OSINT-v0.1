@@ -9,7 +9,6 @@ section appears in the artifact's grounding text:
   - document_intrinsic string values  (facts from inside the document —
                                        internal title, classification)
   - naming_quirks[].canonical         (approved canonical forms)
-  - entities_referenced[].name        (approved entity display names)
 
 Description is the contributor-synthesis prose layer on document
 nodes. Fabricated entities, abbreviation expansions that don't match
@@ -34,9 +33,9 @@ Severity differs from prose_drift: this check errors per unmatched
 token rather than warn-then-error-at-100%. The rendered description
 is a published artifact surface; unmatched tokens are either
 fabrication or naming-quirks gaps that should be filed structurally
-(add the canonical form to naming_quirks, the entity to
-entities_referenced, or the metadata to context_extrinsic /
-document_intrinsic) — not contributor-judgment territory.
+(add the canonical form to naming_quirks, or the metadata to
+context_extrinsic / document_intrinsic) — not contributor-judgment
+territory.
 """
 
 import re
@@ -175,10 +174,6 @@ def _gather_grounding_text(artifact, source_text):
         if isinstance(nq, dict) and nq.get("canonical"):
             chunks.append(nq["canonical"])
 
-    for e in artifact.get("entities_referenced") or []:
-        if isinstance(e, dict) and e.get("name"):
-            chunks.append(e["name"])
-
     return "\n".join(chunks)
 
 
@@ -208,8 +203,8 @@ def check(ctx):
             yield Issue(
                 ctx.rel, "error",
                 f"Description drift: token {token!r} not found in source, "
-                f"context_extrinsic, document_intrinsic, naming_quirks "
-                f"canonical, or entities_referenced names. Either correct "
+                f"context_extrinsic, document_intrinsic, or naming_quirks "
+                f"canonical. Either correct "
                 f"the description to match available grounding, or add "
                 f"the supporting data to the artifact.",
                 check_name=CHECK_NAME,

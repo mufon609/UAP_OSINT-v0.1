@@ -130,9 +130,9 @@ not direct edits to the node body. Pattern:
    the changed content to confirm the fix actually surfaces to
    readers. Mechanical validators verify structure; they don't
    verify that an artifact edit produced a reader-visible change.
-   Artifact-only fields (`entities_referenced[]` and the lifecycle
-   fields `id` / `added_date` / `superseded_by` / `contradicted_by`
-   / `corroborated_by` per `meta/schema-research-artifact.yaml`)
+   Artifact-only fields (the lifecycle fields `id` / `added_date` /
+   `superseded_by` / `contradicted_by` / `corroborated_by` per
+   `meta/schema-research-artifact.yaml`)
    never render — edits to those land only in the artifact, not in
    the body. If the audit goal required a reader-visible change, the
    grep must hit; if it doesn't, the edit was to an artifact-only

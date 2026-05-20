@@ -13,8 +13,8 @@ layer does not flow back into the fact substrate. Per
     investigations.
 
 Walks the entire artifact dict recursively for any string that
-contains ``/findings/`` or ``/investigations/`` — entities_referenced
-wrap_paths, prose strings, source descriptions, anchor refs, anywhere.
+contains ``/findings/`` or ``/investigations/`` — prose strings,
+source descriptions, anchor refs, anywhere.
 Each match yields an error with the field path where the reference was
 found.
 

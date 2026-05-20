@@ -914,7 +914,7 @@ naming_quirks:
   location: "¶16 (Brendan Burton article narrator prose)"
   source_path: news/urigeller-com-scientific-paranormal-ufos-metal-bending-psi-war-20260516.html
   resolution: preserve-as-sic-in-quotes
-  note: 'Brendan Burton typo (missing "h"). The canonical form Wernher Magnus Maximilian Freiherr von Braun is used by Wikipedia and by Geller''s own site elsewhere — the standalone urigeller.com piece "Dr Wernher von Braun & Life After Death" (linked from the scientific-paranormal index, not in the archived source set for this node) uses the canonical spelling. The Burton article is the only one-off "Werner" in the archived corpus for this node; Geller-site house style is "Wernher". Source-form preserved in the Burton-attested quote and in entities_referenced.context_summary; canonical slug `/people/wernher-von-braun` used for the cross-reference wrap per Category 3 of the source-form-preservation discipline.'
+  note: 'Brendan Burton typo (missing "h"). The canonical form Wernher Magnus Maximilian Freiherr von Braun is used by Wikipedia and by Geller''s own site elsewhere — the standalone urigeller.com piece "Dr Wernher von Braun & Life After Death" (linked from the scientific-paranormal index, not in the archived source set for this node) uses the canonical spelling. The Burton article is the only one-off "Werner" in the archived corpus for this node; Geller-site house style is "Wernher". Source-form preserved in the Burton-attested quote; canonical slug `/people/wernher-von-braun` used for the cross-reference wrap per Category 3 of the source-form-preservation discipline.'
 
 - id: nq11
   added_date: '2026-05-16'

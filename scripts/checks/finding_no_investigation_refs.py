@@ -6,8 +6,8 @@ findings stay cluster-neutral so they can be cited from multiple
 investigations.
 
 Walks the entire artifact dict recursively for any string that
-contains ``/investigations/`` — entities_referenced wrap_paths,
-prose strings, source descriptions, anchor refs, anywhere. Each
+contains ``/investigations/`` — prose strings, source descriptions,
+anchor refs, anywhere. Each
 match yields an error with the field path where the reference was
 found.
 

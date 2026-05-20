@@ -8,8 +8,8 @@ validate.py (node structure + verbatim quotes) and validate-research.py
 other.
 
 Per-check modules live in scripts/checks/. This file is the orchestrator:
-loads schema + manifest, iterates artifacts, dispatches the four cross-
-layer checks (coverage, boundary, stub_linking, description_token_drift)
+loads schema + manifest, iterates artifacts, dispatches the three cross-
+layer checks (coverage, boundary, description_token_drift)
 via an explicit step list. Skips on unsupported types (only runs against
 types whose renderer ships in build-from-research.py).
 
@@ -63,7 +63,6 @@ from checks import boundary as ck_boundary
 from checks import coverage as ck_coverage
 from checks import description_token_drift as ck_description_token_drift
 from checks import phase_iii_inputs as ck_phase_iii_inputs
-from checks import stub_linking as ck_stub_linking
 
 
 # =============================================================================
@@ -80,7 +79,6 @@ RESEARCH_DIR = REPO_ROOT / "meta" / "research"
 _REVIEW_CHECKS = [
     ck_coverage,
     ck_boundary,
-    ck_stub_linking,
     ck_description_token_drift,
 ]
 

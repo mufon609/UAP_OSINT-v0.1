@@ -23,7 +23,7 @@ Erroring on unbuilt references would force either pre-building every
 stub before its referer (violates the one-new-person-or-organization-
 node-per-session rule when the stub is a person or org, which is the
 common case) or stubbing references in prose (breaks the cross-
-reference graph that ``stub_linking`` and the registry depend on).
+reference graph the registry depends on).
 
 ``_NODE_PATH_FRONTMATTER_FIELDS`` is a small module-level map; promote
 to schema-driven if the list grows past ~5 fields.

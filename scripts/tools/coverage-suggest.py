@@ -159,14 +159,6 @@ def collect_artifact_text(data):
             if isinstance(val, str):
                 parts.append(val)
 
-    # Entities
-    for e in data.get("entities_referenced") or []:
-        if not isinstance(e, dict):
-            continue
-        for key in ("name", "wrap_path", "context_summary"):
-            val = e.get(key)
-            if isinstance(val, str):
-                parts.append(val)
 
     # Top-level prose
     for key in ("description", "background", "top_relevance",
@@ -206,7 +198,7 @@ def collect_artifact_text(data):
     handled_keys = {
         "id", "type", "schema_version", "target_node", "status",
         "created", "updated", "primary_sources",
-        "quotes", "entities_referenced", "naming_quirks", "rumors",
+        "quotes", "naming_quirks", "rumors",
         "description", "background", "top_relevance",
         "credibility_notes", "pattern_statement", "document_intrinsic",
         "context_extrinsic",
@@ -423,8 +415,7 @@ def main():
     else:
         print("Read-only diagnostic. Judge each candidate manually:")
         print("  - Paragraph load-bearing for the subject? → add a quote")
-        print("  - Capitalized term is a named entity? → add a [`/path`] body wrap"
-              " (entities_referenced[] only if it warrants a substantive context_summary)")
+        print("  - Capitalized term is a named entity? → add a [`/path`] body wrap")
         print("  - Boilerplate / navigation / tangential? → ignore (no action needed)")
         print()
         print("[¶~N] indices are paragraph-numbers in the EXTRACTED scratch text")

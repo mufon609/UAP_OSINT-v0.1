@@ -100,7 +100,6 @@ from checks import contradictions as ck_contradictions
 from checks import corroboration_items as ck_corroboration_items
 from checks import cross_refs as ck_cross_refs
 from checks import does_not_establish as ck_does_not_establish
-from checks import entities_referenced as ck_entities_referenced
 from checks import entity_no_finding_or_investigation_refs as ck_entity_no_finding_or_investigation_refs
 from checks import establishes as ck_establishes
 from checks import finding_no_investigation_refs as ck_finding_no_investigation_refs
@@ -233,7 +232,6 @@ _ARTIFACT_CHECKS = [
     ck_manifest_checksum_at_extraction,
     ck_quotes,
     ck_verbatim_quotes,
-    ck_entities_referenced,
     ck_naming_quirks,
     # Type-conditional entry-list checks
     ck_rumors,

@@ -182,6 +182,20 @@ phase one session, validator clean at every boundary):**
   "Cross-reference contract" (becomes body-wraps-only); retire
   `audit-a1-vocab.py` + `migrate-a1-delete.py`. help-check +
   validators clean. **Rollback:** revert the files.
+
+  **Landed.** Deleted `entities_referenced.py` + `stub_linking.py` and
+  their dispatch; dropped the `entities_referenced.name` grounding from
+  `description_token_drift`; removed the `entity_entry` schema def +
+  invariant + optional-note; cleaned `cross_refs`, `coverage-suggest`,
+  `research-scaffold`, `extract-source`, `artifact_top_level`, the
+  `conventions.md` Cross-reference contract (now body-wraps-only),
+  `build.md` Step 7 + check-list + T-table, the audit / quote-relevance
+  prompts, and stale doc refs (`phase_iii_inputs`, `link_resolution`,
+  the directional checks, working-notes, memory, BACKLOG A2/C37, the
+  uri-geller Source-Form note → node rebuilt). Retired the 4 spent
+  migration/audit scripts. All 10 pre-commit gates green; `entities_referenced`
+  / `entity_entry` / `stub_linking` now appear only in the roadmap
+  A1/C38 records + BACKLOG C37/C38 (gone from all code and the corpus).
 - **C38.5 — Verification + retire C38.** Confirm broken-link registry
   unchanged, all gates green, no dangling `entities_referenced`
   references; retire the BACKLOG C38 entry; finalize roadmap.

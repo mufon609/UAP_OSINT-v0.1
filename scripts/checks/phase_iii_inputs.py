@@ -1,10 +1,10 @@
 """phase-iii-inputs check — preflight for review-coverage.py.
 
-Validates the cross-layer inputs the four review checks (boundary,
-coverage, stub_linking, description_token_drift) require:
+Validates the cross-layer inputs the review checks (boundary,
+coverage, description_token_drift) require:
 
   - ``target_node`` frontmatter points to a real ``/{type}/{slug}.md``
-    file (FATAL — boundary / coverage / stub_linking all read
+    file (FATAL — boundary / coverage both read
     ``ctx.node_text``; without a target file the chain can't run).
   - Every ``primary_sources[].path`` is locally available + text-
     extractable. Missing files error; binary-by-design (image /
@@ -29,7 +29,7 @@ CHECK_NAME = "phase_iii_inputs"
 def check(ctx):
     """Yield Issues for cross-layer input failures. Fatal on missing
     target_node; non-fatal on source-extraction failures (boundary /
-    coverage / stub_linking don't need source_text)."""
+    coverage don't need source_text)."""
     target_node = ctx.data.get("target_node") if ctx.data else None
 
     if ctx.node_path is None or not ctx.node_path.exists():

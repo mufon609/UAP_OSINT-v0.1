@@ -30,8 +30,8 @@ that will eventually carry them are pending.
 
 2. **Integration phase.** As content nodes get built, claims and
    evidence from the working-notes file are absorbed into proper
-   structure (description prose, verbatim quotes, entities_referenced,
-   finding-node narratives). The `integration_targets` frontmatter
+   structure (description prose, verbatim quotes, finding-node
+   narratives). The `integration_targets` frontmatter
    field tracks which nodes are owed material from the file.
 
 3. **Retirement.** When every `integration_targets` entry is built

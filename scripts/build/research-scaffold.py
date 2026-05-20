@@ -245,11 +245,6 @@ def build_scaffold(node_type, slug, source_paths, manifest):
         "quotes": [],
         "naming_quirks": [],
     }
-    # entities_referenced is intentionally NOT seeded — it is an optional,
-    # curated surface (see meta/conventions.md "Cross-reference contract").
-    # Contributors add the key only when an entity warrants a substantive
-    # context_summary; an empty seed would invite the per-entity-index
-    # over-population the field is no longer for.
 
     # description is required by the validator on document / transcript /
     # media / event / organization / finding / location types (the types
@@ -296,7 +291,6 @@ def explain_field(field_name):
     # Field-name → entry-shape-key. Most follow drop-trailing-s; the
     # irregulars are explicit.
     irregular = {
-        "entities_referenced": "entity_entry",
         "hypotheses": "hypothesis_entry",
         "corroboration_items": "corroboration_entry",
         "primary_sources": "primary_sources_entry",  # plural retained in shape name
@@ -419,8 +413,7 @@ def main():
     print(f"  2. Fill in document_intrinsic and context_extrinsic from the extracted text")
     print(f"  3. Write `description` (1-3 paragraphs) — renders as the node's Description section")
     print(f"  4. Populate quotes (verbatim passages with location refs)")
-    print(f"  5. Populate naming_quirks (and entities_referenced ONLY for "
-          f"entries carrying a substantive context_summary — optional)")
+    print(f"  5. Populate naming_quirks")
     if "rumors" in artifact:
         print(f"  6. Populate rumors (widely-reported claims lacking primary-source backing)")
     print(f"  7. Validate: python3 scripts/build/validate-research.py {rel}")
