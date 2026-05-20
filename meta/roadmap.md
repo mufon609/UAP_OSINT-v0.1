@@ -119,7 +119,7 @@ judgment A1.4 must settle with contributor review — `audit-a1-vocab.py
 2026-05-19 after content/clutter analysis).** A content analysis of the
 1,254 entries found ~48% (599 entries with ≤1 `context_summary` token
 absent from the rendered body) is clutter — empty stubs or
-restatements of body content — while ~38% (464 at ≥3 tokens) carry
+restatements of body content — while ~37% (464 at ≥3 tokens) carry
 genuine but reader-invisible context (`context_summary` never renders).
 The clutter is the predictable output of mandatory registration plus
 five pipeline attractors that drive "register one entry per entity":
@@ -132,7 +132,7 @@ carrying substantive `context_summary` only) — delete the redundant
 clutter (A1.4) and de-tune all five attractors (A1.5) so the field
 stops re-accreting — **rather than dropping the field entirely.** Full
 drop was scoped (≈15 code/doc touchpoints + relocating-or-losing the
-~38% reader-invisible synthesis, which has no clean rendered home) and
+~37% reader-invisible synthesis, which has no clean rendered home) and
 set aside as the heavier, partly-irreversible alternative; it can be
 revisited after A1.4 reveals the concrete residual. Making the field
 merely schema-optional without de-tuning the attractors would be a
@@ -173,9 +173,10 @@ every boundary):**
   premise behind A1.2 is contradicted — A1.4 deletion is gate-safe
   without a preservation pass. Re-scope A1.2/A1.4 (A1.2 likely a no-op
   or fold into A1.4) before proceeding.** Latent caveat: if a source is
-  ever added to the investigation, its Description already carries ~34
-  other ungrounded tokens, so preserving the 13 names would not make it
-  gate-clean regardless.
+  ever added to the investigation, its Description already carries 49
+  other ungrounded tokens (the 13 names ground 29 tokens; 49 more are
+  ungrounded regardless), so preserving the names would not make it
+  gate-clean.
 
 - **A1.2 — Vocab preservation.** **RETIRED 2026-05-19 after A1.1.**
   Premise contradicted: A1.1 verified ACTIVE `description_token_drift`

@@ -147,6 +147,7 @@ required_keys:
 # feed the approved-token vocab on ## Description nodes), and
 # scripts/tools/coverage-suggest.py (missed-entity diagnostic). See
 # entity_entry below for the per-entry shape.
+#
 # Audit trail / history: git log and git diff on the artifact file
 # are authoritative. No in-artifact iteration log. Entry lifecycle
 # fields (superseded_by / contradicted_by / corroborated_by) provide
