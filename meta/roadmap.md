@@ -115,6 +115,30 @@ match the audit: at substantive-threshold ≥1 token the split is
 judgment A1.4 must settle with contributor review — `audit-a1-vocab.py
 --substantive-threshold N` is the dial.
 
+**Field disposition — curated optional, attractors de-tuned (decided
+2026-05-19 after content/clutter analysis).** A content analysis of the
+1,254 entries found ~48% (599 entries with ≤1 `context_summary` token
+absent from the rendered body) is clutter — empty stubs or
+restatements of body content — while ~38% (464 at ≥3 tokens) carry
+genuine but reader-invisible context (`context_summary` never renders).
+The clutter is the predictable output of mandatory registration plus
+five pipeline attractors that drive "register one entry per entity":
+the `prompts/build.md` Step 7 / agent-task T3 stage, the
+`research-scaffold.py` seed + build-step hint, the
+`coverage-suggest.py` nudge, the `meta/conventions.md` "Cross-reference
+contract" mandate, and the audit prompts. **Decision: keep
+`entities_referenced` as a CURATED OPTIONAL synthesis surface** (entries
+carrying substantive `context_summary` only) — delete the redundant
+clutter (A1.4) and de-tune all five attractors (A1.5) so the field
+stops re-accreting — **rather than dropping the field entirely.** Full
+drop was scoped (≈15 code/doc touchpoints + relocating-or-losing the
+~38% reader-invisible synthesis, which has no clean rendered home) and
+set aside as the heavier, partly-irreversible alternative; it can be
+revisited after A1.4 reveals the concrete residual. Making the field
+merely schema-optional without de-tuning the attractors would be a
+half-measure — the pipeline would keep generating clutter — which is
+why A1.5 now covers all five attractors, not only the convention.
+
 **Phase ordering (each phase = one fresh session, validator clean at
 every boundary):**
 
@@ -166,11 +190,16 @@ every boundary):**
   it's a pre-existing investigation-node grounding gap, not an A1
   concern.)
 
-- **A1.3 — Schema relax.** Update
-  `meta/schema-research-artifact.yaml`: move `entities_referenced`
-  from required-keys to optional. No corpus changes. Validator must
-  pass (existing artifacts still populate the field; the relax is
-  permissive). **Rollback:** revert the schema file.
+- **A1.3 — Schema + check relax.** Make `entities_referenced`
+  optional. The real enforcement is
+  `scripts/checks/artifact_top_level.py::REQUIRED_TOP_LEVEL_KEYS`
+  (a hardcoded list; the schema's `required_keys` is spec-only and
+  not mechanically read) — remove the field from BOTH. The field
+  stays valid when present (no unknown-key rejection); the per-entry
+  `entities_referenced` check and the `entity_entry` shape are
+  unchanged, so populated entries still validate. No corpus changes.
+  Validator must pass (every artifact still populates the field; the
+  relax is permissive). **Rollback:** revert the two files.
 
 - **A1.4 — Corpus deletion.** Write
   `scripts/build/migrate-a1-delete.py`: consumes the A1.1 audit
@@ -184,13 +213,23 @@ every boundary):**
   full deletion, so it's a regression guard, not a question.
   **Rollback:** `git restore meta/research/`.
 
-- **A1.5 — Convention rewrite.** Update `meta/conventions.md`
-  "Cross-reference contract for interview-derived testimony"
-  section (lines 1241–1272): body wraps remain mandatory (the
+- **A1.5 — De-tune population attractors + convention rewrite.**
+  Re-tune every pipeline surface that drives "register one entry
+  per entity" so the now-optional, clutter-pruned field stops
+  re-accreting:
+  (1) `meta/conventions.md` "Cross-reference contract for
+  interview-derived testimony" — body wraps remain mandatory (the
   broken-link registry depends on them); registration becomes
-  optional, used only when attaching a non-trivial
-  `context_summary`. Retire the BACKLOG A1 entry in the same
-  commit. **Rollback:** revert the file.
+  optional, only for entries carrying substantive `context_summary`;
+  (2) `prompts/build.md` Step 7 / agent task T3 — reframe from
+  "enumerate every referenced entity" to "register only
+  substantive-synthesis entries";
+  (3) `scripts/build/research-scaffold.py` build-step hint;
+  (4) `scripts/tools/coverage-suggest.py` nudge;
+  (5) `prompts/audit.md` + `prompts/quote-relevance-audit.md`
+  registration reminders.
+  Retire the BACKLOG A1 entry in the same commit. **Rollback:**
+  revert the files.
 
 - **A1.6 — Verification.** Confirm `stub_linking.py` scope correctly
   shrunk to the retained entries; confirm `coverage-suggest.py`
@@ -201,10 +240,15 @@ every boundary):**
 
 **Cross-references:**
 - Blocks: none.
-- Touches: `meta/schema-research-artifact.yaml`, `meta/conventions.md`,
-  research artifacts (deletion count = contributor-chosen threshold;
-  369 at ≥1 token), **no** `naming_quirks` additions (A1.2 retired),
-  no renderers (entities_referenced is artifact-only).
+- Touches: `meta/schema-research-artifact.yaml`,
+  `scripts/checks/artifact_top_level.py`, `meta/conventions.md`,
+  `prompts/build.md`, `prompts/audit.md`,
+  `prompts/quote-relevance-audit.md`,
+  `scripts/build/research-scaffold.py`,
+  `scripts/tools/coverage-suggest.py`, research artifacts (deletion
+  count = contributor-chosen threshold; 369 at ≥1 token), **no**
+  `naming_quirks` additions (A1.2 retired), no renderers
+  (entities_referenced is artifact-only).
 - Orthogonal to C35 — different files, different decisions; can
   proceed in parallel sessions.
 
