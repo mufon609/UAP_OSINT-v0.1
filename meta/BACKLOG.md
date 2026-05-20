@@ -47,28 +47,20 @@ full graph for items in the A2 chain.
 
 ## Roadmap forward
 
-Section A items participate in a dependency chain anchored by
-**A2** (multi-agent decomposition of source-prep + Phase I). The
-graph below shows what blocks what, and what A2 retires or absorbs
-on landing. Cross-reference lines on individual items name their
-position in the graph.
+Section A is a dependency chain anchored by **A2** (multi-agent
+decomposition of source-prep + Phase I). The prerequisites have landed;
+what remains is A2's own staged implementation (see the A2 entry).
 
-**Tier 0 — A2 prerequisites (must resolve first):**
-
-- **A3** — quote-section redesign
-
-A3 is the sole remaining Tier-0 prerequisite. (C35 was reframed to an
-accuracy-check investigation — page-anchored locations stay — so it does
-not sit in the A2 chain.)
-
-**Tier 1 — A2 sub-task (scoped after A2's agent decomposition is
-settled; implementation co-lands with A2):**
-
-- **A4** — per-phase validator dispatch
-
-**Tier 2 — A2 implementation:**
-
-- **A2** — multi-agent decomposition of source-prep + Phase I
+- **Tier 0 — A3** (quote-section redesign): **shipped** (A2 increment 1)
+  — `claim_group` grouping + rendered `corroborated_by` pointers, proven
+  on Grusch. (C35 was reframed to an accuracy-check investigation, so it
+  does not sit in the A2 chain.)
+- **Tier 1 — A4** (per-phase validator dispatch): **shipped** (A2
+  increment 3) — central phase map + `--phase` on validate.py /
+  validate-research.py.
+- **Tier 2 — A2** (the decomposition itself): in progress — increments
+  1–3 done (A3, agent docs, A4); increments 4–5 (Marker+Manager, then
+  Scout/Meta-linker/Builder as real agent invocations) remain.
 
 ---
 
@@ -183,17 +175,25 @@ re-driven by re-running that agent (never by editing the node body).
   discipline, phase mapping), the `/tmp/handoff-{slug}-{agent}.yaml`
   stub format, and the agent-boundary invariant; `claim_group` added to
   the T2 field list. No new code.
-- **3** — A4 per-phase validator dispatch: a `PHASE` constant per check
-  module + `validate.py --phase {scout|marker|manager|meta-linker|
-  builder}` filtering the existing `_ARTIFACT_CHECKS`/`_NODE_CHECKS`;
-  Builder's flagless run = full pass.
+- **3 — A4 per-phase validator dispatch (DONE 2026-05-20).** A central
+  phase map (`scripts/checks/_phases.py`) classifies all 67 checks into
+  preflight / scout / marker / manager / meta-linker / builder; `--phase`
+  on `validate.py` + `validate-research.py` filters their dispatch
+  (preflight always runs; unlisted → builder; unflagged = full pass, so
+  `--phase` only ever narrows). Chose the central map over a per-module
+  `PHASE` constant — routing is the orchestrator layer's concern per
+  `checks/__init__.py` ("the dispatch lists are the routing source of
+  truth"), and one reviewable map beats 67 scattered constants.
+  review-coverage stays the unflagged builder pass (its checks are all
+  builder/cross-layer).
 - **4** — Marker+Manager as real agent invocations producing `/tmp`
   stubs.
 - **5** — Scout + Meta-linker + Builder; full pipeline.
 
 **Blocks:** none currently open.
-**Blocked by:** A4 (increment 3) for the full agent-boundary mechanics;
-A3 (increment 1) is shipped.
+**Blocked by:** none — A3 (inc 1), the agent docs (inc 2), and A4
+per-phase dispatch (inc 3) are shipped; increments 4–5 (real agent
+invocations) remain.
 
 ---
 
@@ -245,83 +245,6 @@ Direct/Other split (the fallback is the backward-compat guarantee).
 **Blocks:** A2 — RESOLVED. The Manager agent's contract (how it
 organizes quotes into the node) now has a concrete shape to target.
 **Blocked by:** none.
-
----
-
-### A4 — Per-phase validator dispatch (sub-task of A2)
-
-**Proposal framing.** Today `scripts/build/validate.py` runs ~60
-check modules in `scripts/checks/` as a single end-of-build pass.
-Under A2's multi-agent decomposition, each agent emits a phase
-boundary where a defined subset of checks reads the artifact
-state that agent just wrote. Per-phase dispatch makes the
-validator clustering match the agent boundaries — and the
-per-phase validation output IS each agent's handoff stub.
-
-**Natural clustering** (mapped to A2 agent boundaries):
-
-- **Always at the top** (pre-flight on every phase invocation):
-  `frontmatter_parse`, `frontmatter_required`, `artifact_parse`,
-  `artifact_top_level`, `schema_version_compat`,
-  `yaml_colon_space`, `yaml_hash_truncation`, `id_path_match`.
-- **After verifier** (source archival): `manifest_parse`,
-  `manifest_value_enums`, `manifest_archive_status`,
-  `manifest_checksums`, `manifest_checksum_at_extraction`,
-  `manifest_extraction_type`, `manifest_artifact_shape`.
-- **After marker** (quote extraction): `verbatim_quotes`,
-  `quotes`, `speakers`, `speaker_baseline_consistency`.
-- **After manager** (free-prose synthesis): `prose_drift`,
-  `description_token_drift`, `top_scope_activity`,
-  `corroboration_items`, `vouching_chain`, `hypotheses`,
-  `open_questions`, `naming_quirks`.
-- **After meta-linker** (cross-references): `relationships`,
-  `affiliations`,
-  `key_personnel`, `timeline`, `chronological_tables`,
-  `org_relationships`, `location_relationships`,
-  `program_involvement`, `ownership_timeline`, `participants`,
-  `cross_refs`, `closure_path`, `iff_section`.
-- **After builder** (render-time): `link_resolution`,
-  `required_sections`, `section_rules`, `cited_findings`,
-  `contracts`, `contradictions`, `coverage`,
-  `table_cell_word_budget`, `boundary`, `phase_iii_inputs`,
-  `does_not_establish`, `establishes`.
-
-The clustering above is illustrative; the implementation has to
-classify every check module by which artifact field it reads,
-which may surface checks that don't cleanly belong to one phase.
-
-**Open design questions before implementation.**
-
-1. **CLI surface.** `validate.py --phase {verifier|marker|manager|
-   meta-linker|builder}` flags, or per-phase invocations stay
-   full-pass with each agent filtering by its own checklist?
-2. **Phase-not-yet-reached handling.** If marker has run but
-   manager hasn't, and `--phase manager` is invoked, does it skip
-   silently (agent isn't there yet) or error (you ran it out of
-   sequence)?
-3. **Final-pass guarantee.** Even with per-phase dispatch, a final
-   full-pass remains valuable as the global consistency check.
-   Does the builder agent's final run BE the full pass, or is
-   full-pass a separate contributor-invoked step?
-4. **Re-run discipline.** When an upstream agent re-runs (e.g.,
-   manager edits prose after meta-linker has already populated
-   cross-refs), do downstream phases auto-invalidate or does the
-   contributor manually re-trigger them?
-
-**Surfaces an investigation has to walk.**
-
-- `scripts/build/validate.py` — current `_NODE_CHECKS` dispatch.
-- `scripts/build/validate-research.py` — current
-  `_ARTIFACT_CHECKS` dispatch.
-- `scripts/checks/` — every per-check module (each needs
-  classification by which artifact field it reads).
-
-**Blocks:** A2 (the agent-chain handoff stubs ARE the per-phase
-validator outputs; without per-phase dispatch, A2's agent
-boundaries have no mechanical verification).
-**Blocked by:** A2's agent list needs to be settled before the
-check-to-agent mapping can be finalized. Not blocked by A2
-implementation.
 
 ---
 

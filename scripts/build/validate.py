@@ -97,6 +97,7 @@ from lib._common import (
 # Per-check modules. Each named check lives at scripts/checks/{name}.py;
 # orchestrator dispatches via the explicit step lists below.
 from checks import BaseContext, Issue, NodeContext
+from checks._phases import PHASES, in_scope
 from checks import chronological_tables as ck_chronological_tables
 from checks import conditionally_required as ck_conditionally_required
 from checks import doc_form_archival_status as ck_doc_form_archival_status
@@ -186,6 +187,8 @@ def validate_node(path, base_ctx):
 
     for check_module in _NODE_CHECKS:
         check_name = getattr(check_module, "CHECK_NAME", None) or check_module.__name__
+        if not in_scope(check_name, _PHASE):
+            continue
         try:
             fresh = list(check_module.check(node_ctx))
         except Exception as e:
@@ -222,6 +225,12 @@ def collect_nodes():
 # Only the per-node path crosses the pickle boundary.
 _PARALLEL_BASE_CTX = None
 
+# Module-level --phase slot. Set by main() before dispatch; fork workers
+# inherit it via copy-on-write (same mechanism as _PARALLEL_BASE_CTX).
+# None = full pass; otherwise checks run only for that phase (preflight
+# always runs). See scripts/checks/_phases.py.
+_PHASE = None
+
 
 def _validate_one_worker(node_path_str):
     """ProcessPoolExecutor worker: validate one node. Returns
@@ -247,7 +256,16 @@ def main():
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("path", nargs="?", help="Single node path (optional)")
     parser.add_argument("--quiet", action="store_true", help="Errors only")
+    parser.add_argument(
+        "--phase", choices=PHASES, default=None,
+        help="Run only one build-pipeline phase's checks (plus the always-on "
+             "preflight checks) instead of the full sweep — scoped agent "
+             "feedback per prompts/build.md 'The multi-agent pipeline (A2)'. "
+             "Omit for the full pass. See scripts/checks/_phases.py.")
     args = parser.parse_args()
+
+    global _PHASE
+    _PHASE = args.phase
 
     schema = load_schema()
     nodes = [resolve_cli_path(args.path)] if args.path else collect_nodes()
@@ -275,28 +293,33 @@ def main():
 
     base_ctx = BaseContext(schema=schema, manifest_entries=manifest_entries)
 
-    # Manifest-integrity preflight. Skip downstream manifest checks on a
+    # Manifest-integrity preflight (scout phase — see
+    # scripts/checks/_phases.py). Skip downstream manifest checks on a
     # fatal Issue (parse failure / non-list root) — they would no-op on
-    # the empty fallback and pollute the report.
-    manifest_parse_issues = list(ck_manifest_parse.check(base_ctx))
-    all_issues.extend(manifest_parse_issues)
-    if not any(i.fatal for i in manifest_parse_issues):
-        # Manifest-integrity family — content-byte integrity (sha256),
-        # closed enums (status / format / extraction_type / archive_status),
-        # and the C29 artifact-shape invariants (URL uniqueness, artifact-
-        # path uniqueness, status / artifacts alignment). A checksum
-        # mismatch means downstream quote verifications may be validating
-        # against altered source material; a shape violation means the
-        # URL ↔ artifacts model is silently drifting from schema.
-        all_issues.extend(ck_manifest_checksums.check(base_ctx))
-        all_issues.extend(ck_manifest_archive_status.check(base_ctx))
-        all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
-        all_issues.extend(ck_manifest_value_enums.check(base_ctx))
-        all_issues.extend(ck_manifest_artifact_shape.check(base_ctx))
+    # the empty fallback and pollute the report. The whole family is
+    # scout-phase, so a non-scout --phase run skips it.
+    if in_scope("manifest_parse", _PHASE):
+        manifest_parse_issues = list(ck_manifest_parse.check(base_ctx))
+        all_issues.extend(manifest_parse_issues)
+        if not any(i.fatal for i in manifest_parse_issues):
+            # Manifest-integrity family — content-byte integrity (sha256),
+            # closed enums (status / format / extraction_type / archive_status),
+            # and the C29 artifact-shape invariants (URL uniqueness, artifact-
+            # path uniqueness, status / artifacts alignment). A checksum
+            # mismatch means downstream quote verifications may be validating
+            # against altered source material; a shape violation means the
+            # URL ↔ artifacts model is silently drifting from schema.
+            all_issues.extend(ck_manifest_checksums.check(base_ctx))
+            all_issues.extend(ck_manifest_archive_status.check(base_ctx))
+            all_issues.extend(ck_manifest_extraction_type.check(base_ctx))
+            all_issues.extend(ck_manifest_value_enums.check(base_ctx))
+            all_issues.extend(ck_manifest_artifact_shape.check(base_ctx))
 
-    # Governance-file validation. Runs regardless of --path argument
-    # since template drift propagates to every node scaffolded afterward.
-    all_issues.extend(ck_governance_files.check(base_ctx))
+    # Governance-file validation (builder phase). Runs regardless of
+    # --path argument since template drift propagates to every node
+    # scaffolded afterward.
+    if in_scope("governance_files", _PHASE):
+        all_issues.extend(ck_governance_files.check(base_ctx))
 
     # Per-node validation: parallel dispatch when ≥2 nodes, serial for
     # single-node CLI use. Fork-method workers inherit the parent's

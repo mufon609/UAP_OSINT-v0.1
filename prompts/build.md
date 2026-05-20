@@ -998,7 +998,13 @@ would violate source-read-first, so the read lives with the archival).
 `{agent, inputs_consumed, outputs_produced, validator_findings: []}`.
 Stubs are debugging surfaces, not load-bearing data — never git-tracked
 (the research artifact is the source of truth; each phase's per-phase
-validator output IS that stub's `validator_findings`).
+validator output IS that stub's `validator_findings`). That per-phase
+output is produced by `validate.py --phase {scout|marker|manager|
+meta-linker|builder}` and `validate-research.py --phase …`, which run
+only that phase's checks (plus the always-on preflight checks) instead of
+the full sweep — the phase→check map lives in `scripts/checks/_phases.py`.
+The Builder's run is unflagged (the full pass / global consistency
+check).
 
 **Agent-boundary invariant.** No agent may introduce a verbatim quote
 outside the Marker phase, so the verbatim-quote check always fires at one

@@ -82,6 +82,7 @@ from lib._common import (
 )
 
 from checks import BaseContext, Issue, ResearchContext
+from checks._phases import PHASES, in_scope
 
 # Pre-parse checks (raw line scans before strict_yaml_load)
 from checks import yaml_colon_space as ck_yaml_colon_space
@@ -355,6 +356,8 @@ def validate_artifact(path, base_ctx):
 
     for check_module in _ARTIFACT_CHECKS:
         check_name = getattr(check_module, "CHECK_NAME", None) or check_module.__name__
+        if not in_scope(check_name, _PHASE):
+            continue
         try:
             fresh = list(check_module.check(ctx))
         except Exception as e:
@@ -388,6 +391,12 @@ def collect_artifacts():
 # through ``executor.submit`` (small + picklable).
 _PARALLEL_BASE_CTX = None
 
+# Module-level --phase slot. Set by main() before dispatch; fork workers
+# inherit it via copy-on-write (same mechanism as _PARALLEL_BASE_CTX).
+# None = full pass; otherwise the _ARTIFACT_CHECKS loop runs only that
+# phase's checks (preflight always runs). See scripts/checks/_phases.py.
+_PHASE = None
+
 
 def _validate_one_worker(path_str):
     """ProcessPoolExecutor worker: validate one artifact against the
@@ -407,7 +416,16 @@ def main():
         help="Print full structured payload (e.g., the complete unmatched-"
              "token list on prose-drift errors) inline below each issue. "
              "Default keeps the truncated terminal-friendly preview.")
+    parser.add_argument(
+        "--phase", choices=PHASES, default=None,
+        help="Run only one build-pipeline phase's checks (plus the always-on "
+             "preflight checks) instead of the full sweep — scoped agent "
+             "feedback per prompts/build.md 'The multi-agent pipeline (A2)'. "
+             "Omit for the full pass. See scripts/checks/_phases.py.")
     args = parser.parse_args()
+
+    global _PHASE
+    _PHASE = args.phase
 
     schema = load_schema()
     manifest_paths = load_manifest_paths()
