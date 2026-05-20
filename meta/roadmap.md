@@ -88,225 +88,31 @@ every boundary):**
 
 ### A1 — Retire mandatory `entities_referenced[]` registration  ✅ SHIPPED 2026-05-20
 
-Promoted from `meta/BACKLOG.md` A1 on 2026-05-19. Full analysis,
-corpus measurement (1,254 entries / 58 artifacts; ~16% substantive),
-and per-consumer dependency walk lived in the BACKLOG A1 entry
-(retired in A1.5; see git log) and the 2026-05-19 investigation
-report. This roadmap block is the **execution plan**.
+`entities_referenced[]` was a mandatory per-entity registry that
+duplicated body `[`/path`]` wraps — 1,254 entries across 58 artifacts,
+~half pure restatement of the rendered body. A1 made the field
+optional, deleted the redundant entries, and de-tuned the pipeline so
+it stops re-accreting. Full phase history is in git log:
 
-**Direction (re-scoped 2026-05-19 after A1.1).** Retire mandatory
-registration; redundant entries delete directly. The
-vocab-preservation migration originally approved (preserve entity
-names into `naming_quirks` before deletion) was **retired** — the
-A1.1 audit verified end-to-end against the live gate that deleting
-every `entities_referenced[]` entry corpus-wide adds **zero** new
-`description_token_drift` errors (ACTIVE gate risk = 0). The
-karl-nell "300–400 tokens lost" projection measured vocab-pool
-shrinkage, not gate failures; the gate fires only on
-`## Description` + `source_text` nodes, and no live Description
-token grounds solely on an entity name. See the A1.1 landed-note
-below for the full reasoning.
+- **A1.1** — gate-accurate audit: deleting every entry corpus-wide adds
+  **0** new `description_token_drift` errors (active gate risk = 0).
+- **A1.2** — RETIRED: the vocab-preservation premise was contradicted
+  by A1.1 (no `naming_quirks` pass needed).
+- **A1.3** — field made optional (removed from
+  `artifact_top_level.py::REQUIRED_TOP_LEVEL_KEYS` + the schema spec).
+- **A1.4** — 599 redundant entries deleted at the contributor-chosen
+  ≥2 threshold; 655 kept (surgical removal; `references[]` preserved).
+- **A1.5** — five population attractors de-tuned (conventions contract,
+  build.md T3, scaffold seed/hint, coverage-suggest nudge,
+  quote-relevance-audit); BACKLOG A1 retired.
+- **A1.6** — verified: `stub_linking` scope 655/51; broken-link
+  registry unchanged (510); `review-coverage.py` 0 errors.
 
-**Deletion count is a contributor-review dial, not a fixed number.**
-The BACKLOG's "~173 preserve / ~1,081 delete" projection does not
-match the audit: at substantive-threshold ≥1 token the split is
-885 preserve / 369 delete. The threshold (how much unique
-`context_summary` synthesis an entry must carry to be kept) is a
-judgment A1.4 must settle with contributor review — `audit-a1-vocab.py
---substantive-threshold N` is the dial.
-
-**Field disposition — curated optional, attractors de-tuned (decided
-2026-05-19 after content/clutter analysis).** A content analysis of the
-1,254 entries found ~48% (599 entries with ≤1 `context_summary` token
-absent from the rendered body) is clutter — empty stubs or
-restatements of body content — while ~37% (464 at ≥3 tokens) carry
-genuine but reader-invisible context (`context_summary` never renders).
-The clutter is the predictable output of mandatory registration plus
-five pipeline attractors that drive "register one entry per entity":
-the `prompts/build.md` Step 7 / agent-task T3 stage, the
-`research-scaffold.py` seed + build-step hint, the
-`coverage-suggest.py` nudge, the `meta/conventions.md` "Cross-reference
-contract" mandate, and the audit prompts. **Decision: keep
-`entities_referenced` as a CURATED OPTIONAL synthesis surface** (entries
-carrying substantive `context_summary` only) — delete the redundant
-clutter (A1.4) and de-tune all five attractors (A1.5) so the field
-stops re-accreting — **rather than dropping the field entirely.** Full
-drop was scoped (≈15 code/doc touchpoints + relocating-or-losing the
-~37% reader-invisible synthesis, which has no clean rendered home) and
-set aside as the heavier, partly-irreversible alternative; it can be
-revisited after A1.4 reveals the concrete residual. Making the field
-merely schema-optional without de-tuning the attractors would be a
-half-measure — the pipeline would keep generating clutter — which is
-why A1.5 now covers all five attractors, not only the convention.
-
-**Phase ordering (each phase = one fresh session, validator clean at
-every boundary):**
-
-- **A1.1 — Vocab-audit script.** Write
-  `scripts/build/audit-a1-vocab.py`: for each
-  `meta/research/*.yaml`, classify each `entities_referenced[]`
-  entry as "substantive" (non-trivial `context_summary` carrying
-  synthesis not in body) vs. "redundant" (pure duplication). For
-  each redundant entry, determine whether its `name` token is
-  unique-to-that-entry (not covered by body prose tokens or
-  existing `naming_quirks`). Emit per-artifact reports to
-  `/tmp/a1-vocab-audit/` listing (a) entries to preserve, (b)
-  entries to delete with no vocab risk, (c) entries to delete after
-  migrating their `name` into `naming_quirks` first. Read-only;
-  no corpus changes. **Rollback:** delete the script.
-
-  **Landed.** `scripts/build/audit-a1-vocab.py` shipped (run
-  `--all`; reports to `/tmp/a1-vocab-audit/`). Headline finding —
-  **ACTIVE `description_token_drift` risk = 0.** Deleting every
-  `entities_referenced[]` entry corpus-wide adds zero new gate errors,
-  verified end-to-end against the live gate (pre-migration baseline:
-  `review-coverage.py --all` = 0 errors). The gate grounds on entity
-  names ONLY where a node renders `## Description` AND has extractable
-  `source_text`: the 26 person artifacts render no Description; the 31
-  other Description-bearing artifacts ground their Description
-  proper-nouns in their own source text (0 name-grounded tokens); and
-  the sole artifact whose names ground Description tokens
-  (`lockheed-martin-uap-materials` investigation — 13 names) has empty
-  `source_text`, so the gate `check()` early-returns and skips it
-  (LATENT, not active). Conservative whole-corpus name-unique = 117
-  (vs. the 300–400 projection). **Consequence: the vocab-preservation
-  premise behind A1.2 is contradicted — A1.4 deletion is gate-safe
-  without a preservation pass. Re-scope A1.2/A1.4 (A1.2 likely a no-op
-  or fold into A1.4) before proceeding.** Latent caveat: if a source is
-  ever added to the investigation, its Description already carries 49
-  other ungrounded tokens (the 13 names ground 29 tokens; 49 more are
-  ungrounded regardless), so preserving the names would not make it
-  gate-clean.
-
-- **A1.2 — Vocab preservation.** **RETIRED 2026-05-19 after A1.1.**
-  Premise contradicted: A1.1 verified ACTIVE `description_token_drift`
-  risk = 0, so no `naming_quirks` preservation pass is needed before
-  deletion. No `migrate-a1-vocab.py` will be written. The bucket-(c)
-  "delete-migrate" worklist the audit produces is confirmed empty
-  corpus-wide. (One LATENT case — 13 entity names in the
-  `lockheed-martin-uap-materials` investigation — is moot: the gate
-  is skipped there for empty `source_text`, and 49 other Description
-  tokens are ungrounded anyway, so preserving the names wouldn't make
-  the node gate-clean even if a source were later added. Left alone;
-  it's a pre-existing investigation-node grounding gap, not an A1
-  concern.)
-
-- **A1.3 — Schema + check relax.** Make `entities_referenced`
-  optional. The real enforcement is
-  `scripts/checks/artifact_top_level.py::REQUIRED_TOP_LEVEL_KEYS`
-  (a hardcoded list; the schema's `required_keys` is spec-only and
-  not mechanically read) — remove the field from BOTH. The field
-  stays valid when present (no unknown-key rejection); the per-entry
-  `entities_referenced` check and the `entity_entry` shape are
-  unchanged, so populated entries still validate. No corpus changes.
-  Validator must pass (every artifact still populates the field; the
-  relax is permissive). **Rollback:** revert the two files.
-
-  **Landed.** `entities_referenced` removed from
-  `artifact_top_level.py::REQUIRED_TOP_LEVEL_KEYS` (the real
-  enforcement) and from the schema `required_keys` spec; both now
-  document it as an optional, curated synthesis surface. Permissive
-  relax verified: the full corpus (field present everywhere) passes
-  `validate.py` + `validate-research.py` (3 pre-existing prose-drift
-  warnings, unchanged); an in-memory spot-check on `david-fravor` with
-  the field removed introduces 0 errors (no missing-key error). No
-  corpus changes. Behavioral de-clutter (delete redundant entries +
-  de-tune the five attractors) is A1.4 / A1.5.
-
-- **A1.4 — Corpus deletion.** Write
-  `scripts/build/migrate-a1-delete.py`: consumes the A1.1 audit
-  (`audit-a1-vocab.py`) and deletes the redundant (delete-no-risk)
-  entries from each artifact at the contributor-chosen substantive
-  threshold. Preserves auto-populated `references[]` pointers on
-  retained entries. Settle the threshold first (see Direction —
-  885/369 at ≥1; review the per-artifact reports before committing
-  to a count). Validator must pass; `description_token_drift` must
-  report zero new failures — A1.1 already verified this holds for
-  full deletion, so it's a regression guard, not a question.
-  **Rollback:** `git restore meta/research/`.
-
-  **Landed.** Threshold **≥2** (contributor-chosen): kept 655, deleted
-  599 redundant entries across 56 artifacts; 7 artifacts emptied (key
-  removed entirely — optional after A1.3:
-  `2004-nimitz-encounter`, `david-fravor`, the 4 findings, the
-  `lockheed-martin-uap-materials` investigation). Surgical text-level
-  removal via `scripts/build/migrate-a1-delete.py` (dry-run-first; each
-  edit self-checked for re-parse + id-set match) — the diff is
-  deletion-only (0 lines added, 3,645 removed), so kept entries are
-  byte-identical and `references[]` is preserved (113 → 113).
-  Regression guard green: `validate.py`, `validate-research.py`
-  (0 errors), `review-coverage.py` `description_token_drift` = 0 errors
-  (matches the pre-migration baseline), `build-state --check` all pass.
-  Remaining: A1.5 (de-tune the five attractors + retire BACKLOG A1).
-
-- **A1.5 — De-tune population attractors + convention rewrite.**
-  Re-tune every pipeline surface that drives "register one entry
-  per entity" so the now-optional, clutter-pruned field stops
-  re-accreting:
-  (1) `meta/conventions.md` "Cross-reference contract for
-  interview-derived testimony" — body wraps remain mandatory (the
-  broken-link registry depends on them); registration becomes
-  optional, only for entries carrying substantive `context_summary`;
-  (2) `prompts/build.md` Step 7 / agent task T3 — reframe from
-  "enumerate every referenced entity" to "register only
-  substantive-synthesis entries";
-  (3) `scripts/build/research-scaffold.py` build-step hint;
-  (4) `scripts/tools/coverage-suggest.py` nudge;
-  (5) `prompts/audit.md` + `prompts/quote-relevance-audit.md`
-  registration reminders.
-  Retire the BACKLOG A1 entry in the same commit. **Rollback:**
-  revert the files.
-
-  **Landed.** All five attractors de-tuned: (1) conventions
-  "Cross-reference contract" rewritten (body wraps mandatory;
-  registration optional, substantive-`context_summary` only);
-  (2) `build.md` Step 7 + the T3 task-table row reframed to optional
-  curated registration; (3) `research-scaffold.py` no longer seeds
-  `entities_referenced: []` and its build-step hint marks the field
-  optional; (4) `coverage-suggest.py` nudge points to a body wrap
-  first; (5) `quote-relevance-audit.md` reminders reframed to
-  body-wrap-first (also fixed a latent error — build-candidate
-  surfacing comes from the broken-link registry reading body wraps,
-  not from registration). `prompts/audit.md`'s mention was an accurate
-  artifact-only-field description, not an attractor — left as-is.
-  BACKLOG A1 retired (entry + its "Roadmap forward" reference deleted;
-  C37's cross-reference swept). Validators green (`validate.py`,
-  `validate-research.py`, `review-coverage.py`, `build-state --check`)
-  + `help-check` + `build-md-spec`. Remaining: A1.6 (verification).
-
-- **A1.6 — Verification.** Confirm `stub_linking.py` scope correctly
-  shrunk to the retained entries; confirm `coverage-suggest.py`
-  output is noisier but still actionable; confirm
-  `link_resolution.py` and the broken-link registry unchanged.
-  No code changes expected; logs the post-migration baseline for
-  future audits. **Rollback:** not applicable (no changes).
-
-  **Landed.** Verification complete (read-only, no changes).
-  (A) `stub_linking` scope shrank to 655 entries / 51 artifacts (from
-  1,254 / 58); `review-coverage.py --all` = 0 errors. (B)
-  `coverage-suggest.py` runs and stays actionable on affected
-  artifacts (aaro, david-fravor) — noisier by construction (deleted
-  entries' names now surface as unregistered capitalized terms; the
-  contributor dismisses the body-wrapped ones). (C) `link_resolution.py`
-  / broken-link registry unchanged: 0 rendered node-body files changed
-  across all of A1 (it touched only `meta/`, `prompts/`, `scripts/`),
-  broken-link count stable at 510. **Post-migration baseline:** 655
-  entries / 51 artifacts; review-coverage 0 errors; broken-links 510.
-  **A1 fully shipped.**
-
-**Cross-references:**
-- Blocks: none.
-- Touches: `meta/schema-research-artifact.yaml`,
-  `scripts/checks/artifact_top_level.py`, `meta/conventions.md`,
-  `prompts/build.md`, `prompts/audit.md`,
-  `prompts/quote-relevance-audit.md`,
-  `scripts/build/research-scaffold.py`,
-  `scripts/tools/coverage-suggest.py`, research artifacts (599 entries
-  deleted at the contributor-chosen ≥2 threshold; 655 kept), **no**
-  `naming_quirks` additions (A1.2 retired), no renderers
-  (entities_referenced is artifact-only).
-- Orthogonal to C35 — different files, different decisions; can
-  proceed in parallel sessions.
+**Residual open question → `meta/BACKLOG.md` C38.** The 655 kept entries
+carry unrendered, currently-unconsumed `context_summary` synthesis in
+an optional, inconsistently-populated field (51/58 artifacts). Its
+permanent disposition — render / relocate / bless as agent metadata /
+drop — is unresolved.
 
 ### E.3 — Cross-node update propagation  ⏸ DEFERRED
 

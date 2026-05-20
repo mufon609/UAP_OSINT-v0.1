@@ -723,3 +723,70 @@ remain `[`/path`]` body wraps regardless.
 **Blocks:** none.
 **Blocked by:** none. (Independent of the A2 chain.)
 
+---
+
+### C38 — Permanent disposition of the optional `entities_referenced[]` residual
+
+A1 (shipped 2026-05-20) made `entities_referenced[]` optional and
+deleted the redundant entries, leaving **655 curated entries across 51
+of 58 artifacts**. The question A1 deferred: what is the *permanent*
+home for this residual?
+
+**The state today.** Each entry's unique payload is `context_summary`
+— contributor synthesis about how the entity figures in the source.
+It is **unrendered** (no renderer reads it) and **unconsumed by the
+reader / query layer** (`AGENT.md` has zero references). The
+`name` / `wrap_path` feed only `stub_linking` (registered→linked
+symmetry), `description_token_drift` (name grounding — A1.1 measured
+0 active value), and `coverage-suggest.py` (a diagnostic). So the
+synthesis itself currently serves no active reader or tool. The field
+is also **optional with inconsistent population** (51 carry it, 7 do
+not; new artifacts may or may not), and it is the one contributor-prose
+surface NOT covered by the prose-drift check. An unrendered,
+un-drift-checked, largely-unconsumed synthesis layer sits awkwardly
+with the repo's "no unverified contributor-synthesis layer between
+source and reader" principle (`meta/conventions.md` "Statements as the
+universal evidentiary primitive").
+
+**Candidate dispositions:**
+
+- **Render it.** Give `context_summary` a reader-visible surface
+  (e.g., a per-node cross-reference-context section) and subject it to
+  the prose-drift check like other synthesis prose. Delivers the
+  synthesis to readers; re-introduces a drift surface; renderer change.
+- **Relocate it.** Fold each substantive `context_summary` into the
+  rendered surface that already carries the entity (`timeline[].note`,
+  `relationship[].note`, `credibility_notes`, `quote.context`). Lands
+  the synthesis where readers see it, structurally correct; but it is a
+  per-entry editorial migration (655 entries, no clean mechanical
+  mapping).
+- **Bless it as agent / contributor metadata.** Define
+  `context_summary`'s role explicitly as an artifact-only
+  cross-reference index for contributor / agent use (e.g., the A2
+  meta-linker agent) and commit a real consumer. Zero migration; only
+  justified if a consumer is actually built — otherwise it is
+  maintained-but-unread data.
+- **Drop it.** Remove the field entirely (the full-drop scoped before
+  A1.4, now with a 655-entry residual). Cleanest end-state, no optional
+  vestige; loses the synthesis (or relocates the load-bearing bits
+  first). Most code/doc touchpoints were already handled by A1.5's
+  attractor de-tune.
+
+Resolving the optional-population inconsistency is part of the
+decision: render / relocate → the data moves out and the field can be
+dropped; bless → define when it is populated; drop → removed
+everywhere.
+
+**Surfaces an investigation has to walk:** the per-type renderers (if
+rendering); `meta/conventions.md` "Statements as the universal
+evidentiary primitive" + "Synthesis prose is labeled and
+drift-checked" (the no-unverified-layer principle);
+`scripts/checks/prose_drift.py` (scope, if rendered); a content sample
+of the 655 entries (judge relocatability + reader value); `AGENT.md`
+(whether the query layer should consume it); BACKLOG A2 (the
+meta-linker agent — the only prospective consumer if "bless" wins).
+
+**Blocks:** none.
+**Blocked by:** none. (Follow-on to the shipped A1; the A2 meta-linker
+is the prospective consumer if "bless" is chosen.)
+
