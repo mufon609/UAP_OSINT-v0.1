@@ -183,6 +183,17 @@ def cmd_add(args):
             entry["status"] = "archived"
 
     _refresh_archive_status(entry)
+
+    if getattr(args, "dry_run", False):
+        verb = "add new URL entry" if created_url_entry else "append to existing URL"
+        print(f"[dry-run] would {verb}: {args.url}")
+        if appended_artifact:
+            print(f"[dry-run]   artifact: sources/{path}  "
+                  f"format: {appended_artifact['format']!r}")
+        print("[dry-run] validation OK (URL / path / format / path-uniqueness); "
+              "manifest not written")
+        return
+
     save_manifest(entries)
 
     if created_url_entry and appended_artifact:
@@ -378,6 +389,13 @@ def main():
         action="store_true",
         help="Mark the URL entry as ineligible for Wayback submission "
              "(synthetic deep-link URLs that won't resolve at archive time)")
+    p.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Validate the add (URL / path / format / path-uniqueness) and "
+             "report what would change, without writing the manifest. Lets the "
+             "External Investigator self-check a lead before the Archive agent "
+             "commits it.")
 
     p = subparsers.add_parser("status")
     p.add_argument("url")

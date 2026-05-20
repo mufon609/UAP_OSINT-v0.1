@@ -40,12 +40,20 @@ Each layer enforces what it can verify; the split avoids double-firing
 on the same defect.
 """
 
+import re
+
 from checks import Issue
 from checks._research_utils import (
     check_lifecycle_fields,
     check_unique_ids,
     entries,
 )
+
+# source.location must be source-anchored (stable across extract
+# regeneration), not extraction-anchored line numbers. Bare ``lines N-M`` /
+# ``line N`` shift when the source is re-extracted; ``lines N-M of the
+# extract`` is allowed (the extract itself is the cited object).
+_EXTRACTION_ANCHORED_LOCATION = re.compile(r"\s*lines?\s+\d", re.IGNORECASE)
 
 
 CHECK_NAME = "quotes"
@@ -115,6 +123,22 @@ def check(ctx):
                 ctx.rel, "error",
                 f"quotes[{i}] ({q.get('id')!r}): source.path "
                 f"{src['path']!r} not in sources/manifest.yaml",
+                check_name=CHECK_NAME,
+            )
+
+        # Reject extraction-anchored location forms. Canonical forms are
+        # source-anchored: ``p. N, ¶M``, ``¶N``, ``[MM:SS]``, ``p. N``.
+        loc = src.get("location")
+        if (isinstance(loc, str)
+                and _EXTRACTION_ANCHORED_LOCATION.match(loc)
+                and "of the extract" not in loc.lower()):
+            yield Issue(
+                ctx.rel, "error",
+                f"quotes[{i}] ({q.get('id')!r}): source.location {loc!r} is "
+                f"extraction-anchored — line numbers shift when the source is "
+                f"re-extracted. Use a source-anchored form (p. N, ¶M / ¶N / "
+                f"[MM:SS] / p. N), or 'lines N-M of the extract' when the "
+                f"extract itself is the cited object.",
                 check_name=CHECK_NAME,
             )
 

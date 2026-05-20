@@ -18,7 +18,7 @@ Paste-ready launch prompts for each role live at `prompts/agent-{role}.md`
 |---|---|---|---|---|
 | 0 | **Orchestrator** | no | sequencing + the chain of handoff stubs | — (preflight on the scaffold) |
 | 1 | **Internal Investigator** | archived only | reuse survey (`reusable_sources[]`, `gaps[]`) | — (preflight + manifest tools) |
-| 2 | **External Investigator** | yes (candidate content) | confirmed deep-URL queue | — (validated at role 3 archival) |
+| 2 | **External Investigator** | yes (candidate content) | confirmed deep-URL queue | — (`manifest.py add --dry-run` per lead) |
 | 3 | **Archive** | yes (downloads bytes) | manifest entries + `primary_sources[]` + scratch | `archive` |
 | 4 | **Worker** (`worker_kind`) | yes (one source) | `quotes[]` + advisory `claim_group` + cross-ref candidates | `extract` |
 | 5 | **Build Agent** (+ Error Agent) | scratch for judgment only | organized quotes + free-prose + cross-refs + rendered node | `organize` → `link` → `render` |
@@ -26,11 +26,10 @@ Paste-ready launch prompts for each role live at `prompts/agent-{role}.md`
 
 Roles 0/1/2 produce no gated artifact state, so they have no `--phase`
 bucket — their feedback is preflight plus the manifest tools
-(`manifest.py verify-paths` / `verify-checksums`). Role 2's URL queue has
-no check of its own: it is validated when role 3 archives it
-(`manifest.py add` validates each URL / path / format and computes the
-sha256) and ultimately at role 4's `verbatim_quotes` boundary — the
-existing tools, not a new one.
+(`manifest.py verify-paths`). Role 2 self-checks each lead with
+`manifest.py add --dry-run` (validates URL / path / format /
+path-uniqueness without writing); the lead is committed when role 3
+archives it, and the hard guarantee is role 4's `verbatim_quotes` boundary.
 
 **Naming.** The orchestrator is **never** called "Manager" — that word is
 retired from the agent vocabulary. The quote-organization work the old
@@ -99,7 +98,7 @@ generator feeding role 2 — a candidate list, never an inclusion decision.
 | role | runs | writes into the stub's `validator_findings` |
 |---|---|---|
 | 1 Internal Investigator | `manifest.py verify-paths` / `verify-checksums` on the reuse set + `validate-research.py --phase preflight` | manifest health of the sources it plans to reuse |
-| 2 External Investigator | none of its own — queue validated at role 3 archival (`manifest.py add`) | n/a (no gated state) |
+| 2 External Investigator | `manifest.py add --dry-run` per lead | malformed / colliding leads, caught before handoff |
 | 3 Archive | `validate.py --phase archive` + `validate-research.py --phase archive {artifact}` | manifest family + `primary_sources` shape |
 | 4 Worker | `validate-research.py --phase extract {artifact}` | the verbatim-quote boundary (all worker kinds share it) |
 | 5 Build, organize | `validate-research.py --phase organize {artifact}` | synthesis entry-shape |
