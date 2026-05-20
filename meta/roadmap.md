@@ -118,6 +118,28 @@ every boundary):**
   migrating their `name` into `naming_quirks` first. Read-only;
   no corpus changes. **Rollback:** delete the script.
 
+  **Landed.** `scripts/build/audit-a1-vocab.py` shipped (run
+  `--all`; reports to `/tmp/a1-vocab-audit/`). Headline finding —
+  **ACTIVE `description_token_drift` risk = 0.** Deleting every
+  `entities_referenced[]` entry corpus-wide adds zero new gate errors,
+  verified end-to-end against the live gate (pre-migration baseline:
+  `review-coverage.py --all` = 0 errors). The gate grounds on entity
+  names ONLY where a node renders `## Description` AND has extractable
+  `source_text`: the 26 person artifacts render no Description; the 31
+  other Description-bearing artifacts ground their Description
+  proper-nouns in their own source text (0 name-grounded tokens); and
+  the sole artifact whose names ground Description tokens
+  (`lockheed-martin-uap-materials` investigation — 13 names) has empty
+  `source_text`, so the gate `check()` early-returns and skips it
+  (LATENT, not active). Conservative whole-corpus name-unique = 117
+  (vs. the 300–400 projection). **Consequence: the vocab-preservation
+  premise behind A1.2 is contradicted — A1.4 deletion is gate-safe
+  without a preservation pass. Re-scope A1.2/A1.4 (A1.2 likely a no-op
+  or fold into A1.4) before proceeding.** Latent caveat: if a source is
+  ever added to the investigation, its Description already carries ~34
+  other ungrounded tokens, so preserving the 13 names would not make it
+  gate-clean regardless.
+
 - **A1.2 — Vocab preservation.** Write
   `scripts/build/migrate-a1-vocab.py`: consumes the A1.1 report
   and adds `naming_quirks[]` entries for every unique-to-entry name
