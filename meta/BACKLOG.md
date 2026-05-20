@@ -47,9 +47,10 @@ full graph for items in the A2 chain.
 
 ## Roadmap forward
 
-Section A is a dependency chain anchored by **A2** (multi-agent
-decomposition of source-prep + Phase I). The prerequisites have landed;
-what remains is A2's own staged implementation (see the A2 entry).
+Section A is a dependency chain: **A2** (multi-agent decomposition of
+source-prep + Phase I) shipped, and **A5** now expands its topology
+(agent topology + per-agent check bundles). What remains is A5's own
+staged implementation (see the A5 entry).
 
 - **Tier 0 — A3** (quote-section redesign): **shipped** (A2 increment 1)
   — `claim_group` grouping + rendered `corroborated_by` pointers, proven
@@ -61,8 +62,12 @@ what remains is A2's own staged implementation (see the A2 entry).
 - **Tier 2 — A2** (the decomposition itself): all five increments
   shipped — A3 (1), agent docs (2), A4 `--phase` (3), Marker+Manager
   prompts (4), Scout/Meta-linker/Builder prompts (5). The pipeline is
-  complete as launchable prompts + per-phase validation; what remains is
-  operational — C41 (first live run) and C42 (phase-map validation).
+  complete as launchable prompts + per-phase validation.
+- **Tier 3 — A5** (agent topology): supersedes A2's five-agent chain
+  with a seven-role topology + per-agent check bundles. inc-1 (the
+  `_phases.py` re-map, which resolved and retired C42) is shipped; inc-2/3
+  (topology doc + new prompts) and inc-4 (first live run, the C41
+  vehicle) remain.
 
 ---
 
@@ -217,6 +222,9 @@ documented pipeline** (all five agents + A3 quote shape + `--phase`
 per-stage validation). What remains is operational, not structural:
 exercise it on the next user-directed node build (C41). All 15 person
 nodes are now migrated to `claim_group` (C40 — done 2026-05-20).
+**A5 effect:** A5 supersedes this topology (seven roles + per-agent check
+bundles) while inheriting its invariants (handoff stubs, agent-boundary
+invariant, A3 shape). See A5.
 
 ---
 
@@ -268,6 +276,104 @@ with no `claim_group` renders the legacy Direct/Other split unchanged.
 **Blocks:** A2 — RESOLVED. The Manager agent's contract (how it
 organizes quotes into the node) now has a concrete shape to target.
 **Blocked by:** none.
+
+---
+
+### A5 — Agent topology (expanded pipeline + per-phase/per-agent check bundles)
+
+**Supersedes A2's topology; inherits its invariants.** A2 settled a
+five-agent chain (Scout → Marker → Manager → Meta-linker → Builder) with
+per-phase validation. A5 expands it to a seven-role topology for two goals
+A2 left coarse: (a) **instant per-agent feedback** — each agent validates
+only what it just produced — and (b) **no monolithic check pass**. Design
+home: `prompts/topology.md` (inc-2).
+
+**The seven roles (the user-directed workflow).**
+
+0. **Orchestrator** — kicks off + sequences agents, passes handoff stubs,
+   takes the user's scope/target. New; A2's session was the orchestrator.
+   NB: NOT A2's "Manager" — that word is retired from the agent vocabulary
+   to kill the clash; A2-Manager's quote-organization work moves into role 5.
+1. **Internal Investigator** — surveys in-repo nodes/sources linked to the
+   build; re-extracts already-archived sources the build can reuse. New —
+   A2's Scout only looked outward.
+2. **External Investigator** — fills gaps: finds missing load-bearing
+   content, reads candidate CONTENT to confirm load-bearing (not URL-only),
+   queues exact deep URLs for archiving. ≈ A2 Scout's investigator half +
+   `prompts/web-claude-investigator.md` as upstream leads.
+3. **Archive** — archives the queued sources (`manifest.py add` → sha256 +
+   Wayback), extracts new sources, keeps the manifest healthy. ≈ A2 Scout's
+   verifier/archival half.
+4. **Worker** — grabs verbatim quotes + advisory `claim_group` + cross-ref
+   candidates; one generic prompt parameterized by `worker_kind`
+   (paginated-PDF / HTML / caption-transcript / FOIA-`.txt`), all sharing
+   the `extract` phase. ≈ A2 Marker, generalized.
+5. **Build Agent (+ Error Agent)** — organizes quotes (`claim_group` +
+   `corroborated_by`), writes free-prose, normalizes
+   cross-refs/naming_quirks/rumors, tests, then renders only if error-free;
+   routes any failure to an Error Agent that maps the failing check → owning
+   role via the `--phase` table and recommends a DATA fix (never a node-body
+   edit). ≈ A2 Manager + Meta-linker + Builder + a new error-triage role.
+6. **Audit** — global health pass + adjacent-node propagation: finds linked
+   nodes that should carry the new material; that path SKIPS role 2 (material
+   already in hand — the tightening loop). ≈ `prompts/audit.md` + the
+   cross-layer review checks + propagation that has no home today.
+
+**Source-read-first under the 2↔3 split.** A2 collapsed
+investigator+verifier into Scout because a URL-only investigator violates
+source-read-first. The 2/3 split is safe: role 2 reads source CONTENT before
+judging load-bearing-ness (soft enforcement), and the hard mechanical
+guarantee never moved — `verbatim_quotes` matches every quote against the
+archived/extracted file at the single `extract` boundary, and no agent may
+introduce a quote outside it.
+
+**Per-phase/per-agent check bundles (the load-bearing surface; resolves
+C42).** `scripts/checks/_phases.py` is re-mapped so each `--phase` token is
+named for the role whose output it validates: `archive` (3) / `extract` (4) /
+`organize` (5) / `link` (5) / `render` (5/6); preflight always-on; roles
+0/1/2 produce no gated state. The pre-A5 names (scout / marker / manager /
+meta-linker / builder) remain accepted as aliases. C42's substance is
+resolved by re-homing four mis-classified checks to the LATEST phase that
+supplies their inputs: `chronological_tables`, `iff_section`,
+`finding_source_in_entity_node` → `render` (they read the rendered node / the
+full section set / the global cross-artifact index); `prose_drift` → `link`
+(it also scans link-phase synthesis `.note`/`.attestation` fields). Confirmed
+in passing: the two `*_no_*_refs` directional checks are single-artifact
+recursive walks, NOT global — they stay at `link`. The genuinely
+full-pass-only checks (`link_resolution`, `boundary`, `coverage`,
+`description_token_drift`, `finding_source_in_entity_node`,
+`governance_files`) keep the global consistency guarantee at role 5's final
+render run + role 6's audit.
+
+**Staged implementation.**
+- **1 — `_phases.py` re-map + validator `--phase` plumbing (DONE
+  2026-05-20).** Renamed phases + back-compat aliases
+  (`PHASE_CHOICES`/`canonical_phase`); the four C42 re-homes; `--phase` on
+  `review-coverage.py` (render-only short-circuit). Full pass unchanged
+  (`--phase` only narrows); all gates green.
+- **2 — Topology doc + naming.** `prompts/topology.md` (vocabulary,
+  A2→role reconciliation, source-read-first invariant, stub schemas, branch
+  flows); cross-ref from `prompts/build.md`; retire "Manager" from the agent
+  vocabulary.
+- **3 — New launch prompts.** `agent-{orchestrator,internal-investigator,
+  external-investigator,archive,worker,build,error}.md`; extend `audit.md`
+  with role-6 propagation; register in `prompts/README.md`; retire/redirect
+  the five A2 `agent-*.md`.
+- **4 — Exercise end-to-end (the C41 run).** First whole-chain run
+  is a user-directed build (real target + archivable sources; one-new-
+  person/org rule); capture the `/tmp/handoff-{slug}-*.yaml` stubs; prove the
+  worker variants, the tightening loop, and Error-Agent routing; confirm each
+  `--phase X` fires exactly the checks reading state role X produced.
+- **5 (deferred) — `prose_drift` two-phase split** (`prose_drift_toplevel` @
+  organize + `prose_drift_notes` @ link) if one-phase-late surfacing of
+  top-level drift proves annoying in practice.
+
+**Blocks:** none.
+**Blocked by:** inc-4 needs a user-directed build target (couples with C41).
+**Inherits from A2:** the handoff-stub convention
+(`/tmp/handoff-{slug}-{agent}.yaml`), the agent-boundary invariant, and the
+A3 `claim_group`/`corroborated_by` shape (shipped across all 15 person nodes)
+— A5 must not regress these.
 
 ---
 
@@ -344,19 +450,6 @@ handoff-boundary friction the piecewise validation missed.
 **Blocks:** none.
 **Blocked by:** a user-directed build target (scope + real, archivable
 sources) — opportunistic, taken on the next node build.
-
-### C42 — Validate the per-phase check classifications
-
-A2 increment 3 (`--phase`) classifies all 67 checks into
-preflight / scout / marker / manager / meta-linker / builder in
-`scripts/checks/_phases.py`. The map is best-fit, not exhaustively
-litigated — low-stakes today because the full pass is unaffected and
-`--phase` only narrows (unlisted checks default to `builder`). But once
-agents consume `--phase` for real (C41), a mis-classified check gives an
-agent wrong scoped feedback (a missed check, or an irrelevant fire).
-Validate the map against real agent runs: for each phase confirm
-`--phase X` runs exactly the checks that read the artifact state agent X
-produced, and re-home any check whose inputs come from a later phase.
-
-**Blocks:** none.
-**Blocked by:** none (best validated alongside C41's first live run).
+**A5 effect:** the first live run now exercises the expanded topology (A5-inc-4),
+not A2's five-agent chain. C41 is the user-directed-build trigger for
+A5-inc-4; the two are the same milestone.

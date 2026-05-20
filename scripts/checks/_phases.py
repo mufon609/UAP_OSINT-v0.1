@@ -1,11 +1,21 @@
-"""Per-phase validator dispatch — A2 increment 3 (the A4 mechanism).
+"""Per-phase validator dispatch.
 
-Maps each check (by ``CHECK_NAME``) to the build-pipeline agent phase
-whose output it validates, so an agent can run a phase-scoped pass
-(``--phase {scout|marker|manager|meta-linker|builder}``) for fast
-feedback on what it just produced, rather than the full ~67-check
-sweep. The five phases mirror the agents formalized in
-``prompts/build.md`` "The multi-agent pipeline (A2)".
+Maps each check (by ``CHECK_NAME``) to the build-pipeline phase whose
+output it validates, so an agent can run a phase-scoped pass
+(``--phase {archive|extract|organize|link|render}``) for fast feedback
+on what it just produced, rather than the full ~67-check sweep. A phase
+token is named after the role whose output it validates — see the agent
+topology in ``prompts/topology.md``:
+
+  archive   role 3 Archive          (manifest + primary_sources)
+  extract   role 4 Worker           (verbatim quotes / speakers)
+  organize  role 5 Build, organize  (free-prose synthesis)
+  link      role 5 Build, link      (cross-reference surfaces + prose-drift)
+  render    role 5 Build, render    (render-time structure + cross-layer)
+
+Role 6 Audit runs the full unflagged pass. Roles 0/1/2 (Orchestrator,
+Internal/External Investigator) produce no gated artifact state, so they
+have no phase bucket here — their feedback is preflight + manifest tools.
 
 Routing lives HERE, not on the check modules: per
 ``scripts/checks/__init__.py``, "the [dispatch] lists are the routing
@@ -13,10 +23,14 @@ source of truth" — phase is a routing/dispatch concern owned by the
 orchestrator layer, so one reviewable map beats a constant scattered
 across 67 modules.
 
+``_PHASE_ALIASES`` also accepts the older phase names (``scout`` /
+``marker`` / ``manager`` / ``meta-linker`` / ``builder``) and resolves
+them to the canonical ones, so existing invocations keep working.
+
 Discipline:
   - ``preflight`` checks (parse / structure / version) run in EVERY
     phase — they gate everything downstream.
-  - A check absent from the map defaults to ``builder`` (the final
+  - A check absent from the map defaults to ``render`` (the final
     full pass), so a newly added check is always exercised by an
     unflagged run and is never silently dropped.
   - An unflagged run (``--phase`` not given) runs every check
@@ -24,7 +38,22 @@ Discipline:
     NARROWS a run; it never changes the full pass.
 """
 
-PHASES = ("scout", "marker", "manager", "meta-linker", "builder")
+# Canonical phase names (each = the role whose output it validates).
+PHASES = ("archive", "extract", "organize", "link", "render")
+
+# Older phase names → their canonical equivalents. Accepted on the CLI
+# and resolved before comparison so existing invocations keep working.
+_PHASE_ALIASES = {
+    "scout": "archive",
+    "marker": "extract",
+    "manager": "organize",
+    "meta-linker": "link",
+    "builder": "render",
+}
+
+# Everything the ``--phase`` flag accepts: the canonical names plus the
+# back-compat aliases.
+PHASE_CHOICES = PHASES + tuple(_PHASE_ALIASES)
 
 # check CHECK_NAME -> phase whose output it validates.
 CHECK_PHASE = {
@@ -38,81 +67,98 @@ CHECK_PHASE = {
     "yaml_hash_truncation": "preflight",
     "id_path_match": "preflight",
 
-    # scout — source archival (manifest + primary_sources)
-    "manifest_parse": "scout",
-    "manifest_value_enums": "scout",
-    "manifest_archive_status": "scout",
-    "manifest_checksums": "scout",
-    "manifest_checksum_at_extraction": "scout",
-    "manifest_extraction_type": "scout",
-    "manifest_artifact_shape": "scout",
-    "primary_sources": "scout",
-    "doc_form_archival_status": "scout",
+    # archive (role 3) — source archival (manifest + primary_sources)
+    "manifest_parse": "archive",
+    "manifest_value_enums": "archive",
+    "manifest_archive_status": "archive",
+    "manifest_checksums": "archive",
+    "manifest_checksum_at_extraction": "archive",
+    "manifest_extraction_type": "archive",
+    "manifest_artifact_shape": "archive",
+    "primary_sources": "archive",
+    "doc_form_archival_status": "archive",
 
-    # marker — verbatim quote extraction
-    "quotes": "marker",
-    "verbatim_quotes": "marker",
-    "speakers": "marker",
-    "speaker_baseline_consistency": "marker",
+    # extract (role 4) — verbatim quote extraction (the one quote boundary)
+    "quotes": "extract",
+    "verbatim_quotes": "extract",
+    "speakers": "extract",
+    "speaker_baseline_consistency": "extract",
 
-    # manager — free-prose synthesis (incl. A3 quote organization)
-    "prose_drift": "manager",
-    "top_scope_activity": "manager",
-    "corroboration_items": "manager",
-    "vouching_chain": "manager",
-    "hypotheses": "manager",
-    "open_questions": "manager",
-    "establishes": "manager",
-    "does_not_establish": "manager",
+    # organize (role 5) — free-prose synthesis (incl. A3 quote organization)
+    "top_scope_activity": "organize",
+    "corroboration_items": "organize",
+    "vouching_chain": "organize",
+    "hypotheses": "organize",
+    "open_questions": "organize",
+    "establishes": "organize",
+    "does_not_establish": "organize",
 
-    # meta-linker — cross-reference surfaces + structured entries
-    "timeline": "meta-linker",
-    "chronological_tables": "meta-linker",
-    "affiliations": "meta-linker",
-    "relationships": "meta-linker",
-    "program_involvement": "meta-linker",
-    "publication_record": "meta-linker",
-    "participants": "meta-linker",
-    "witnesses_testimony": "meta-linker",
-    "key_personnel": "meta-linker",
-    "org_relationships": "meta-linker",
-    "contracts": "meta-linker",
-    "ownership_timeline": "meta-linker",
-    "location_relationships": "meta-linker",
-    "media_versioning": "meta-linker",
-    "naming_quirks": "meta-linker",
-    "rumors": "meta-linker",
-    "cross_refs": "meta-linker",
-    "cited_findings": "meta-linker",
-    "contradictions": "meta-linker",
-    "closure_path": "meta-linker",
-    "resolution_history": "meta-linker",
-    "iff_section": "meta-linker",
-    "finding_no_investigation_refs": "meta-linker",
-    "finding_source_in_entity_node": "meta-linker",
-    "entity_no_finding_or_investigation_refs": "meta-linker",
-    "investigation_hypothesis_citation": "meta-linker",
-    "investigation_closure_path_when_paused": "meta-linker",
+    # link (role 5) — cross-reference surfaces + structured entries.
+    # prose_drift lives here (not organize): it scans per-entry synthesis
+    # .note/.attestation fields on link-phase entries as well as the
+    # organize-phase top-level prose, so the LATEST input phase is link.
+    "prose_drift": "link",
+    "timeline": "link",
+    "affiliations": "link",
+    "relationships": "link",
+    "program_involvement": "link",
+    "publication_record": "link",
+    "participants": "link",
+    "witnesses_testimony": "link",
+    "key_personnel": "link",
+    "org_relationships": "link",
+    "contracts": "link",
+    "ownership_timeline": "link",
+    "location_relationships": "link",
+    "media_versioning": "link",
+    "naming_quirks": "link",
+    "rumors": "link",
+    "cross_refs": "link",
+    "cited_findings": "link",
+    "contradictions": "link",
+    "closure_path": "link",
+    "resolution_history": "link",
+    "finding_no_investigation_refs": "link",
+    "entity_no_finding_or_investigation_refs": "link",
+    "investigation_hypothesis_citation": "link",
+    "investigation_closure_path_when_paused": "link",
 
-    # builder — render-time structure + cross-layer (also the default)
-    "status_archetype_kind": "builder",
-    "conditionally_required": "builder",
-    "required_sections": "builder",
-    "section_rules": "builder",
-    "link_resolution": "builder",
-    "table_cell_word_budget": "builder",
-    "coverage": "builder",
-    "boundary": "builder",
-    "description_token_drift": "builder",
-    "phase_iii_inputs": "builder",
-    "governance_files": "builder",
+    # render (role 5 / role 6) — render-time structure + cross-layer
+    # (also the default for unlisted checks). chronological_tables,
+    # iff_section and finding_source_in_entity_node belong here because
+    # they read state that exists only after render: the rendered node
+    # body, the full section set, and the global cross-artifact index.
+    "status_archetype_kind": "render",
+    "conditionally_required": "render",
+    "required_sections": "render",
+    "section_rules": "render",
+    "link_resolution": "render",
+    "table_cell_word_budget": "render",
+    "coverage": "render",
+    "boundary": "render",
+    "description_token_drift": "render",
+    "phase_iii_inputs": "render",
+    "governance_files": "render",
+    "chronological_tables": "render",        # reads the RENDERED node body
+    "iff_section": "render",                 # needs the full section set present
+    "finding_source_in_entity_node": "render",  # needs the global cross-artifact index
 }
 
 
+def canonical_phase(requested_phase):
+    """Resolve a CLI ``--phase`` value to its canonical name.
+
+    Accepts both the canonical names and the alias names; passes
+    ``None`` (full pass) and any unknown value through unchanged."""
+    if requested_phase is None:
+        return None
+    return _PHASE_ALIASES.get(requested_phase, requested_phase)
+
+
 def phase_of(check_name):
-    """Phase a check belongs to. Unlisted checks default to ``builder``
+    """Phase a check belongs to. Unlisted checks default to ``render``
     so the full pass always exercises them."""
-    return CHECK_PHASE.get(check_name, "builder")
+    return CHECK_PHASE.get(check_name, "render")
 
 
 def in_scope(check_name, requested_phase):
@@ -120,9 +166,10 @@ def in_scope(check_name, requested_phase):
 
     ``requested_phase`` None → full pass (everything runs). Otherwise a
     check runs iff it is a ``preflight`` check (always) or its phase
-    equals the requested phase.
+    equals the requested phase. The requested phase is resolved through
+    the back-compat aliases first.
     """
     if requested_phase is None:
         return True
     p = phase_of(check_name)
-    return p == "preflight" or p == requested_phase
+    return p == "preflight" or p == canonical_phase(requested_phase)

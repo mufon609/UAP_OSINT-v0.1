@@ -1,5 +1,10 @@
 # Manager agent — cross-source quote organization (owns A3)
 
+> **Superseded by the build topology.** This work moved into the Build Agent
+> (role 5, `prompts/agent-build.md`); "Manager" is retired as an agent
+> name (it now means the Orchestrator, role 0) — see
+> `prompts/topology.md`. Kept as the baseline it expands from.
+
 Paste into a fresh subagent, **once per node**, after every source's
 Marker run. The Manager is stage 4 of the five-agent build pipeline
 (Scout → Marker → **Manager** → Meta-linker → Builder; see

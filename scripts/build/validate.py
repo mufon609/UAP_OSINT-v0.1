@@ -97,7 +97,7 @@ from lib._common import (
 # Per-check modules. Each named check lives at scripts/checks/{name}.py;
 # orchestrator dispatches via the explicit step lists below.
 from checks import BaseContext, Issue, NodeContext
-from checks._phases import PHASES, in_scope
+from checks._phases import PHASE_CHOICES, in_scope
 from checks import chronological_tables as ck_chronological_tables
 from checks import conditionally_required as ck_conditionally_required
 from checks import doc_form_archival_status as ck_doc_form_archival_status
@@ -257,10 +257,12 @@ def main():
     parser.add_argument("path", nargs="?", help="Single node path (optional)")
     parser.add_argument("--quiet", action="store_true", help="Errors only")
     parser.add_argument(
-        "--phase", choices=PHASES, default=None,
+        "--phase", choices=PHASE_CHOICES, default=None, metavar="PHASE",
         help="Run only one build-pipeline phase's checks (plus the always-on "
              "preflight checks) instead of the full sweep — scoped agent "
-             "feedback per prompts/build.md 'The multi-agent pipeline (A2)'. "
+             "feedback per prompts/topology.md. Phases: "
+             "archive / extract / organize / link / render (aliases "
+             "scout / marker / manager / meta-linker / builder also accepted). "
              "Omit for the full pass. See scripts/checks/_phases.py.")
     args = parser.parse_args()
 
@@ -293,11 +295,11 @@ def main():
 
     base_ctx = BaseContext(schema=schema, manifest_entries=manifest_entries)
 
-    # Manifest-integrity preflight (scout phase — see
+    # Manifest-integrity preflight (archive phase — see
     # scripts/checks/_phases.py). Skip downstream manifest checks on a
     # fatal Issue (parse failure / non-list root) — they would no-op on
     # the empty fallback and pollute the report. The whole family is
-    # scout-phase, so a non-scout --phase run skips it.
+    # archive-phase, so a non-archive --phase run skips it.
     if in_scope("manifest_parse", _PHASE):
         manifest_parse_issues = list(ck_manifest_parse.check(base_ctx))
         all_issues.extend(manifest_parse_issues)
@@ -315,7 +317,7 @@ def main():
             all_issues.extend(ck_manifest_value_enums.check(base_ctx))
             all_issues.extend(ck_manifest_artifact_shape.check(base_ctx))
 
-    # Governance-file validation (builder phase). Runs regardless of
+    # Governance-file validation (render phase). Runs regardless of
     # --path argument since template drift propagates to every node
     # scaffolded afterward.
     if in_scope("governance_files", _PHASE):

@@ -1,4 +1,4 @@
-# Design the expanded build pipeline (agent topology v2 + per-phase checks)
+# Design the expanded build pipeline (agent topology + per-phase checks)
 
 Paste into a fresh Claude Code session. This is a **design / plan**
 session in two phases: **(1)** investigate the repo to ground yourself,

@@ -1,5 +1,10 @@
 # Builder agent — render, validate, review
 
+> **Superseded by the build topology.** Now the Build Agent's render sub-phase
+> (role 5, `prompts/agent-build.md`) plus the Error Agent
+> (`prompts/agent-error.md`) — see `prompts/topology.md`. Kept as the
+> baseline they expand from.
+
 Paste into a fresh subagent (or run inline) at the **end** of the build,
 once the artifact is complete. The Builder is stage 6 of the five-agent
 build pipeline (Scout → Marker → Manager → Meta-linker → **Builder**; see

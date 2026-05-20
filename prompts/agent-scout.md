@@ -1,5 +1,10 @@
 # Scout agent — find, confirm, and archive primary sources
 
+> **Superseded by the build topology.** This role was re-decomposed into the
+> Internal Investigator (role 1), External Investigator (role 2), and
+> Archive (role 3) — see `prompts/topology.md`. Kept as the baseline
+> they expand from.
+
 Paste into a fresh subagent at the **start** of a node build. The Scout
 is stage 1–2 of the five-agent build pipeline (**Scout** → Marker →
 Manager → Meta-linker → Builder; see `prompts/build.md` "The multi-agent

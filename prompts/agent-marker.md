@@ -1,5 +1,9 @@
 # Marker agent — per-source quote extraction
 
+> **Superseded by the build topology.** Now the Worker (role 4,
+> `prompts/agent-worker.md`), parameterized by `worker_kind` — see
+> `prompts/topology.md`. Kept as the baseline it expands from.
+
 Paste into a fresh subagent, one invocation **per archived source**. The
 Marker is stage 3 of the five-agent build pipeline (Scout → **Marker** →
 Manager → Meta-linker → Builder; see `prompts/build.md` "The multi-agent

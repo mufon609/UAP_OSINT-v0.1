@@ -63,6 +63,7 @@ from checks import boundary as ck_boundary
 from checks import coverage as ck_coverage
 from checks import description_token_drift as ck_description_token_drift
 from checks import phase_iii_inputs as ck_phase_iii_inputs
+from checks._phases import PHASE_CHOICES, in_scope
 
 
 # =============================================================================
@@ -183,6 +184,16 @@ def review_artifact(artifact_path, base_ctx):
         return issues, f"node type {node_type!r} has no renderer; review checks skipped"
 
     node_path = target_node_path(artifact)
+
+    # --phase guard: every review-coverage check (and the phase_iii_inputs
+    # preflight) is render-phase, so a non-render --phase run has nothing
+    # to do here. Short-circuit BEFORE the expensive node read + source
+    # gather + renderer spawn.
+    if not (in_scope("phase_iii_inputs", _PHASE) or any(
+            in_scope(getattr(c, "CHECK_NAME", None) or c.__name__, _PHASE)
+            for c in _REVIEW_CHECKS)):
+        return issues, f"--phase {_PHASE}: review-coverage checks are render-phase only"
+
     node_text = node_path.read_text() if (node_path and node_path.exists()) else None
     source_text, _ = _gather_source_text(artifact) if node_text else ("", [])
 
@@ -205,6 +216,8 @@ def review_artifact(artifact_path, base_ctx):
 
     for check_module in _REVIEW_CHECKS:
         check_name = getattr(check_module, "CHECK_NAME", None) or check_module.__name__
+        if not in_scope(check_name, _PHASE):
+            continue
         try:
             fresh = list(check_module.check(ctx))
         except Exception as e:
@@ -233,6 +246,15 @@ def collect_artifacts():
 # boundary.
 _PARALLEL_BASE_CTX = None
 
+# Module-level --phase slot. Set by main() before dispatch; fork workers
+# inherit it via copy-on-write (same mechanism as _PARALLEL_BASE_CTX).
+# None = full pass. Every review-coverage check is render-phase, so any
+# non-render --phase short-circuits the whole artifact to "0 checks" —
+# the flag exists for command-shape symmetry with validate*.py so the
+# render sub-phase can call all three orchestrators with one flag.
+# See scripts/checks/_phases.py.
+_PHASE = None
+
 
 def _review_one_worker(path_str):
     """ProcessPoolExecutor worker: review one artifact against the
@@ -257,7 +279,16 @@ def main():
                         help="Review every artifact under meta/research/")
     parser.add_argument("--quiet", action="store_true",
                         help="Errors only; suppress info/skip notices")
+    parser.add_argument(
+        "--phase", choices=PHASE_CHOICES, default=None, metavar="PHASE",
+        help="Command-shape symmetry with validate*.py — all coverage checks "
+             "are render-phase, so only --phase render (or the full pass) runs "
+             "them; any other phase short-circuits to 0 checks. Alias "
+             "'builder' also accepted. See scripts/checks/_phases.py.")
     args = parser.parse_args()
+
+    global _PHASE
+    _PHASE = args.phase
 
     if args.path:
         artifacts = [resolve_cli_path(args.path)]

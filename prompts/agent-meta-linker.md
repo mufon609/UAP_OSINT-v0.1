@@ -1,5 +1,9 @@
 # Meta-linker agent — cross-reference surfaces
 
+> **Superseded by the build topology.** This work moved into the Build Agent's
+> link sub-phase (role 5, `prompts/agent-build.md`) — see
+> `prompts/topology.md`. Kept as the baseline it expands from.
+
 Paste into a fresh subagent, **once per node**, after the Manager has
 settled the quote layer. The Meta-linker is stage 5 of the five-agent
 build pipeline (Scout → Marker → Manager → **Meta-linker** → Builder;

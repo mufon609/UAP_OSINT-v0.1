@@ -82,7 +82,7 @@ from lib._common import (
 )
 
 from checks import BaseContext, Issue, ResearchContext
-from checks._phases import PHASES, in_scope
+from checks._phases import PHASE_CHOICES, in_scope
 
 # Pre-parse checks (raw line scans before strict_yaml_load)
 from checks import yaml_colon_space as ck_yaml_colon_space
@@ -417,10 +417,12 @@ def main():
              "token list on prose-drift errors) inline below each issue. "
              "Default keeps the truncated terminal-friendly preview.")
     parser.add_argument(
-        "--phase", choices=PHASES, default=None,
+        "--phase", choices=PHASE_CHOICES, default=None, metavar="PHASE",
         help="Run only one build-pipeline phase's checks (plus the always-on "
              "preflight checks) instead of the full sweep — scoped agent "
-             "feedback per prompts/build.md 'The multi-agent pipeline (A2)'. "
+             "feedback per prompts/topology.md. Phases: "
+             "archive / extract / organize / link / render (aliases "
+             "scout / marker / manager / meta-linker / builder also accepted). "
              "Omit for the full pass. See scripts/checks/_phases.py.")
     args = parser.parse_args()
 

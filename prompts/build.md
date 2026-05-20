@@ -937,6 +937,14 @@ free-form content. They compose into the five-agent pipeline below.
 
 ## The multi-agent pipeline (A2)
 
+> **Expanded by the build topology — see `prompts/topology.md`.** The
+> seven-role topology (Orchestrator · Internal/External Investigator ·
+> Archive · Worker · Build + Error Agent · Audit) and its per-agent
+> `--phase` check bundles supersede the five agents below, which remain
+> the baseline they expand from. The per-phase tokens were renamed
+> (`scout`→`archive`, `marker`→`extract`, `manager`→`organize`,
+> `meta-linker`→`link`, `builder`→`render`); the old names still resolve.
+
 The phase-internal tasks above (T2/T4/T5) are seeds of a full
 decomposition of the monolithic Phase I → II → III build into five
 bounded agents. Each has a scoped input, a structured output, and emits

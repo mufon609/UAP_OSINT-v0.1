@@ -1,6 +1,8 @@
 # Audit prompt
 
-Paste into a Claude Code session to audit an existing node.
+Paste into a Claude Code session to audit an existing node. This also
+serves as role 6 of the build topology (`prompts/topology.md`): the
+global health pass plus the adjacent-node propagation step (goal 9).
 
 ---
 
@@ -101,6 +103,15 @@ trigger an anti-bot challenge that fuzzy-timestamp URLs bypass.
    For naming quirks (e.g., "Lue" alias-of-record for Elizondo),
    verify the quirk is tracked consistently across all artifacts that
    cite the same source.
+9. **Adjacent-node propagation (the tightening loop)** — when this audit
+   follows a build that added new source material, compare the adjacent /
+   linked nodes against that material: does any already-built node now
+   have a primary source it should cite but doesn't? List each. Because
+   the material is already archived and extracted, that update **skips
+   the External Investigator (role 2)** — re-enter the build at the Worker
+   (role 4) on the in-hand scratch for the adjacent node, then the Build
+   Agent (role 5), then re-audit. See `prompts/topology.md`
+   "Orchestration + branches".
 
 For nodes carrying significant quote material (transcripts, hearing
 events, podcast-heavy person nodes), follow this prompt with
@@ -172,6 +183,11 @@ and contributors. Each section may be empty (skip when nothing applies):
 
 ### Cross-node consistency findings
 - (divergences between this node and nodes it references)
+
+### Adjacent nodes needing the new material (propagation)
+- (already-built nodes that should cite a now-archived source but don't;
+   for each, the in-hand scratch path — these re-enter at the Worker,
+   skipping the External Investigator)
 
 ### Proposed changes
 - (artifact diff preview)
