@@ -136,6 +136,20 @@ phase one session, validator clean at every boundary):**
   Emit a per-artifact review report to `/tmp/`. No changes. Sizes the
   relocation; the later phases firm up / may merge based on the count.
   **Rollback:** delete the script.
+
+  **Landed.** `scripts/build/audit-c38-triage.py` shipped. Of the 655
+  retained entries: **442 have no rendered home** (mentioned-in-passing
+  — nowhere to relocate → drop), **213 occupy a structured slot**
+  (relationship / affiliation / timeline / participant / speaker /
+  key_personnel). On inspection the 213 are paraphrases of facts the
+  verbatim record ALREADY carries (transcript quotes name who
+  questioned whom; participant/speaker rows carry roles) or
+  cross-reference scaffolding the body wrap already surfaces
+  (transcript-to-be entries; "references Grusch in q15"). The genuinely
+  relocatable set ≈ 0. **Recommendation: collapse C38.2 — drop all 655
+  without paraphrase-relocation;** any genuinely-missing load-bearing
+  fact is a normal coverage gap (add a verbatim quote via the build
+  pipeline), not a paraphrase note. Report: `/tmp/c38-triage/`.
 - **C38.2 — Relocation (contributor-reviewed).** Fold each RELOCATE
   entry's synthesis into its target rendered surface (`timeline[].note`,
   `relationship[].note`, `affiliation[].note`, `credibility_notes`,
