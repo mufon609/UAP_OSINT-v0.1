@@ -931,122 +931,23 @@ Each task has clear I/O and can be run as a focused agent invocation:
 Tasks are **composable** (later tasks can use T2's output). They are
 **validated by humans** before being merged into the research artifact.
 They are **bounded** — each task produces a specific YAML fragment, not
-free-form content. They compose into the five-agent pipeline below.
+free-form content. They are the single-session seeds the multi-agent
+roles below generalize.
 
 ---
 
-## The multi-agent pipeline (A2)
+## The multi-agent pipeline
 
-> **Expanded by the build topology — see `prompts/topology.md`.** The
-> seven-role topology (Orchestrator · Internal/External Investigator ·
-> Archive · Worker · Build + Error Agent · Audit) and its per-agent
-> `--phase` check bundles supersede the five agents below, which remain
-> the baseline they expand from. The per-phase tokens were renamed
-> (`scout`→`archive`, `marker`→`extract`, `manager`→`organize`,
-> `meta-linker`→`link`, `builder`→`render`); the old names still resolve.
-
-The phase-internal tasks above (T2/T4/T5) are seeds of a full
-decomposition of the monolithic Phase I → II → III build into five
-bounded agents. Each has a scoped input, a structured output, and emits
-a **handoff stub** — a small temp artifact recording who-did-what-why so
-a mid-pipeline failure traces to the agent that produced the upstream
-artifact. Status: the Manager's quote-section shape (A3) is shipped; the
-agents are documented here and become real invocations in later
-increments (see BACKLOG A2).
-
-| Agent | Maps to | Reads sources? | Produces |
-|---|---|---|---|
-| **Scout** | Prerequisites + Phase I Steps 1–2 | DIRECT | archived sources, `primary_sources[]`, `/tmp/scratch-{slug}-N.txt` |
-| **Marker** | Phase I Step 6 (= T2, extended) | DIRECT (one source at a time) | `quotes[]` candidates + a proposed `claim_group` per quote |
-| **Manager** | Phase I Steps 3–6 organization (owns **A3**) | consumes upstream | final `quotes[]` (`claim_group` + `corroborated_by`) + free-prose fields |
-| **Meta-linker** | Phase I Steps 7–9 (= T4 + T5 + cross-refs) | consumes + reads for ref locations | `relationships`/`affiliations`/`timeline`/`naming_quirks`/`rumors` |
-| **Builder** | Phase II + III | NO | regenerated node + validation results |
-
-**Scout** (investigator + verifier, collapsed — a URL-only investigator
-would violate source-read-first, so the read lives with the archival).
-- **Input:** target `{type}/{slug}` + candidate source leads.
-- Reads each candidate directly; confirms load-bearing + non-duplicate
-  against already-archived sources; archives (`manifest.py add`),
-  scaffolds (`research-scaffold.py`), extracts (`extract-source.py`).
-- **Output:** populated `primary_sources[]` + the scratch files every
-  downstream agent references.
-
-**Marker** (= T2, extended). Runs once per archived source. Launch as a
-subagent with `prompts/agent-marker.md`.
-- **Input:** ONE `/tmp/scratch-{slug}-N.txt`.
-- **Output:** `quotes[]` candidates (verbatim `text`,
-  `source.{path,location}`, `significance`, `context`, person
-  `observation_type`) PLUS a proposed `claim_group` per candidate —
-  advisory, scoped to the one source it read; the Manager normalizes
-  across sources. The Marker cannot cluster across sources (it has seen
-  only one).
-
-**Manager** (owns A3). The first agent that sees all sources at once.
-Launch as a subagent with `prompts/agent-manager.md`.
-- **Input:** ALL Marker fragments + the scratch files (for judgment).
-- **Output:** final `quotes[]` — clusters candidates into `claim_group`s,
-  designates same-claim cross-source duplicates as `corroborated_by`
-  pointers on the primary, and writes the free-prose fields
-  (`description`/`background`/`top_relevance`/`credibility_notes`).
-- MUST NOT introduce a quote the Marker didn't surface — that would
-  bypass the Marker phase boundary; re-run the Marker instead.
-
-**Meta-linker** (= T4 + T5 + cross-references).
-- **Input:** the settled quote layer + scratch files (to locate cross-refs).
-- **Output:** `relationships`/`affiliations`/`timeline`/
-  `program_involvement` cross-refs and `[`/path`]` prose wraps,
-  `naming_quirks` (T4), `rumors` (T5).
-
-**Builder** (= Phase II + III). No source read; no synthesis.
-- Runs `build-from-research.py` → (auto) `validate.py` + `associate.py`
-  → `review-coverage.py`. Its full pass is the global consistency check.
-- A failure routes back to the agent that owns the failing field —
-  never to the node body.
-
-**Handoff stubs.** Each agent writes `/tmp/handoff-{slug}-{agent}.yaml`
-(mirroring the `/tmp/scratch-{slug}-N.txt` convention), recording
-`{agent, inputs_consumed, outputs_produced, validator_findings: []}`.
-Stubs are debugging surfaces, not load-bearing data — never git-tracked
-(the research artifact is the source of truth; each phase's per-phase
-validator output IS that stub's `validator_findings`). That per-phase
-output is produced by `validate.py --phase {scout|marker|manager|
-meta-linker|builder}` and `validate-research.py --phase …`, which run
-only that phase's checks (plus the always-on preflight checks) instead of
-the full sweep — the phase→check map lives in `scripts/checks/_phases.py`.
-The Builder's run is unflagged (the full pass / global consistency
-check).
-
-**Agent-boundary invariant.** No agent may introduce a verbatim quote
-outside the Marker phase, so the verbatim-quote check always fires at one
-known boundary. A defect surfaces at the phase that produced it (a
-non-verbatim Marker candidate trips `verbatim_quotes` at the Marker stub
-before the Manager consumes it) and is re-driven by re-running that
-agent. This composes with the standing rule: fixes go to the artifact,
-never the node body, then rebuild.
-
-**Running the full pipeline.** Each agent has a paste-ready launch prompt
-(`prompts/agent-{scout,marker,manager,meta-linker,builder}.md`). For a
-node build, launch them in order, with a human checkpoint between stages
-(read each handoff stub / fragment before proceeding):
-
-1. **Scout** once — find / confirm / archive sources → scratch files.
-   Check: `validate.py --phase scout`.
-2. **Marker** once per scratch file → quote candidates + proposed
-   `claim_group`. (Parallelizable across sources.)
-3. **Manager** once — cluster into `claim_group`s, de-dup via
-   `corroborated_by`, write prose. Merge into the artifact. Check:
-   `validate-research.py --phase {marker,manager} meta/research/{slug}.yaml`.
-4. **Meta-linker** once — cross-refs / naming_quirks / rumors. Check:
-   `validate-research.py --phase meta-linker …`.
-5. **Builder** once — render + full-pass validate + review. Route any
-   failure back to the owning agent (the `--phase` of the failing check
-   names it), fix the artifact, re-run the Builder.
-
-The handoff stubs (`/tmp/handoff-{slug}-{agent}.yaml`) trace the chain for
-post-mortem; they are ephemeral. The genuine end-to-end run is a node
-build, which is **user-directed** — per `CLAUDE.md`, scope and target
-come from the user and primary sources must be real + archived; the
-pipeline is not run on a fabricated target.
+The Phase I → II → III build above decomposes into a multi-agent pipeline
+for instant per-agent feedback. The roles (Orchestrator · Internal /
+External Investigator · Archive · Worker · Build + Error Agent · Audit),
+the per-agent `--phase` check bundles, the handoff-stub schemas, the
+orchestration branches, and the script-ownership split all live in
+`prompts/topology.md`. Each role has a paste-ready launch prompt at
+`prompts/agent-{orchestrator,internal-investigator,external-investigator,
+archive,worker,build,error}.md`; role 6 is `prompts/audit.md`. The bounded
+tasks T2/T4/T5 above are the single-session seeds the Worker and Build
+roles generalize.
 
 ---
 

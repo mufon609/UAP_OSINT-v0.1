@@ -15,10 +15,14 @@ and carries the handoff stubs between them. (This role is NOT the old
 
 ## What you do
 
-1. **Scaffold** the empty artifact:
+1. **Scaffold the node, then its artifact.** Create the node `.md` from
+   the template (archetype / kind / form come from the user's scope):
+   `python3 scripts/build/new.py {type} --slug {slug} [--archetype|--kind|--form …] --name "…"`.
+   Then scaffold the empty research artifact:
    `python3 scripts/build/research-scaffold.py --target {type}/{slug}`
-   (no `--sources` yet — the Archive agent registers them after archival).
-   Confirm it parses:
+   (no `--sources` yet — the Archive agent registers them after archival;
+   `research-scaffold.py` requires the node to exist, hence `new.py` first).
+   Confirm the artifact parses:
    `python3 scripts/build/validate-research.py --phase preflight meta/research/{slug}.yaml`.
 2. **Launch the agents in order**, reading each
    `/tmp/handoff-{slug}-{agent}.yaml` before launching the next and passing

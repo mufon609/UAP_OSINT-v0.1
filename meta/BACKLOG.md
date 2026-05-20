@@ -357,8 +357,9 @@ render run + role 6's audit.
   vocabulary.
 - **3 — New launch prompts.** `agent-{orchestrator,internal-investigator,
   external-investigator,archive,worker,build,error}.md`; extend `audit.md`
-  with role-6 propagation; register in `prompts/README.md`; retire/redirect
-  the five A2 `agent-*.md`.
+  with role-6 propagation; register in `prompts/README.md`; delete the five
+  superseded A2 `agent-*.md` (they strand no scripts — every script they
+  named is also named in a new role prompt).
 - **4 — Exercise end-to-end (the C41 run).** First whole-chain run
   is a user-directed build (real target + archivable sources; one-new-
   person/org rule); capture the `/tmp/handoff-{slug}-*.yaml` stubs; prove the

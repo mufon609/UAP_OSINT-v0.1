@@ -16,11 +16,6 @@ copy the relevant prompt into a fresh Claude Code session.
 | `agent-worker.md` | Worker (role 4) — per-source verbatim quote extraction, parameterized by `worker_kind` (pdf / html / caption / foia) |
 | `agent-build.md` | Build Agent (role 5) — organize quotes + free-prose + cross-refs, then render; routes failures to the Error Agent, never edits the node body |
 | `agent-error.md` | Error Agent (role 5) — triage a validator failure to its owning role; recommend a data fix, never a node-body edit |
-| `agent-scout.md` | (superseded — baseline for roles 1–3) Scout: find / confirm / archive sources + scaffold + extract |
-| `agent-marker.md` | (superseded — baseline for the Worker) Marker: per-source verbatim quote extraction |
-| `agent-manager.md` | (superseded — baseline for the Build Agent) Manager: cross-source quote organization (A3) + free-prose |
-| `agent-meta-linker.md` | (superseded — baseline for the Build Agent's link sub-phase) Meta-linker: cross-reference surfaces + naming_quirks + rumors |
-| `agent-builder.md` | (superseded — baseline for the Build Agent's render sub-phase + Error Agent) Builder: render + validate + Phase III |
 | `design-expanded-pipeline.md` | Design/plan session — investigate the repo, then design the expanded agent topology (orchestrator + internal/external investigators + archive + type-specialized workers + build/error + audit) and the per-phase decomposition of the checks/scripts for instant per-agent feedback. Extends A2 + `--phase`; resolves C42 |
 | `audit.md` | Audit an existing node for evidentiary integrity (includes the audit-correction pattern); also role 6 of the build topology — the health pass + adjacent-node propagation |
 | `quote-relevance-audit.md` | Audit `quotes[]` on an existing artifact for load-bearing relevance to the node's subject — the content-relevance layer that mechanical checks cannot evaluate. Run after Phase I rebuilds, after 5+ incremental quote additions, or periodically across built nodes. Especially relevant on PA-spokesperson institutional-actor nodes. |

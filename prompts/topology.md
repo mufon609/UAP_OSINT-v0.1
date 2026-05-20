@@ -18,7 +18,7 @@ Paste-ready launch prompts for each role live at `prompts/agent-{role}.md`
 |---|---|---|---|---|
 | 0 | **Orchestrator** | no | sequencing + the chain of handoff stubs | — (preflight on the scaffold) |
 | 1 | **Internal Investigator** | archived only | reuse survey (`reusable_sources[]`, `gaps[]`) | — (preflight + manifest tools) |
-| 2 | **External Investigator** | yes (candidate content) | confirmed deep-URL queue | — (preflight; queue hand-checked) |
+| 2 | **External Investigator** | yes (candidate content) | confirmed deep-URL queue | — (validated at role 3 archival) |
 | 3 | **Archive** | yes (downloads bytes) | manifest entries + `primary_sources[]` + scratch | `archive` |
 | 4 | **Worker** (`worker_kind`) | yes (one source) | `quotes[]` + advisory `claim_group` + cross-ref candidates | `extract` |
 | 5 | **Build Agent** (+ Error Agent) | scratch for judgment only | organized quotes + free-prose + cross-refs + rendered node | `organize` → `link` → `render` |
@@ -26,8 +26,11 @@ Paste-ready launch prompts for each role live at `prompts/agent-{role}.md`
 
 Roles 0/1/2 produce no gated artifact state, so they have no `--phase`
 bucket — their feedback is preflight plus the manifest tools
-(`manifest.py verify-paths` / `verify-checksums`) and, for role 2, a
-hand-check that each queued lead has a resolvable deep URL + tier tag.
+(`manifest.py verify-paths` / `verify-checksums`). Role 2's URL queue has
+no check of its own: it is validated when role 3 archives it
+(`manifest.py add` validates each URL / path / format and computes the
+sha256) and ultimately at role 4's `verbatim_quotes` boundary — the
+existing tools, not a new one.
 
 **Naming.** The orchestrator is **never** called "Manager" — that word is
 retired from the agent vocabulary. The quote-organization work the old
@@ -96,7 +99,7 @@ generator feeding role 2 — a candidate list, never an inclusion decision.
 | role | runs | writes into the stub's `validator_findings` |
 |---|---|---|
 | 1 Internal Investigator | `manifest.py verify-paths` / `verify-checksums` on the reuse set + `validate-research.py --phase preflight` | manifest health of the sources it plans to reuse |
-| 2 External Investigator | preflight + hand-check the queue | every queued lead has a resolvable deep URL + primary/secondary tag |
+| 2 External Investigator | none of its own — queue validated at role 3 archival (`manifest.py add`) | n/a (no gated state) |
 | 3 Archive | `validate.py --phase archive` + `validate-research.py --phase archive {artifact}` | manifest family + `primary_sources` shape |
 | 4 Worker | `validate-research.py --phase extract {artifact}` | the verbatim-quote boundary (all worker kinds share it) |
 | 5 Build, organize | `validate-research.py --phase organize {artifact}` | synthesis entry-shape |
@@ -257,9 +260,10 @@ check fails, the Error Agent maps `check_name` → its phase (via
 
 | script | owner |
 |---|---|
+| `new.py` | role 0 at kickoff — creates the node `.md` from the template (before `research-scaffold.py`, which requires the node) |
 | `manifest.py add` | role 3 (roles 1/6 only read the manifest) |
 | `extract-source.py` | role 1 (existing sources) + role 3 (new sources) — each source extracted once |
-| `research-scaffold.py` | role 0 at kickoff (empty shell, no `--sources`); role 3 registers sources later |
+| `research-scaffold.py` | role 0 at kickoff (after `new.py`; empty artifact shell, no `--sources`); role 3 registers sources later |
 | `build-from-research.py` (+ auto `associate.py` + `validate.py`) | role 5 |
 | `review-coverage.py` | role 5 (gate) + role 6 (audit) |
 | `associate.py` | auto via `build-from-research.py`; standalone only at role 6 after a propagation edit |
