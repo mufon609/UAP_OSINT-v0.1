@@ -498,8 +498,6 @@ The April 14 deadline passed without delivery of the requested videos. On April 
 > BLUE, would restart UAP investigations, paranormal research (including alleged “human
 > consciousness anomalies”) and reverse-engineer any recovered off-world spacecraft that they
 > hoped to acquire. This proposal gained some initial traction at DHS to the point where a
->
->                                                  34
 > Prospective Special Access Program (PSAP) was officially requested to stand up this program,
 > but it was eventually rejected by DHS leadership for lacking merit.
 

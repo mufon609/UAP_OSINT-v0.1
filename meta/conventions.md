@@ -699,9 +699,9 @@ relocated to a structured evidentiary field whose own source
 attribution carries the variance (a `naming_quirks` entry for a
 source-form vs canonical-form name, a `rumors[]` entry for an
 uncorroborated claim, and so on). A token that is absent only because
-of an extraction artifact (e.g. an HTML element-boundary
-concatenation) is fixed at the extraction layer, never accepted as a
-standing error. See BACKLOG C33.
+of an extraction artifact (e.g. an HTML element-boundary concatenation,
+or a PDF page-number footer/header wedged into a page-spanning quote) is
+fixed at the extraction layer, never accepted as a standing error.
 
 ### Density is source-driven
 

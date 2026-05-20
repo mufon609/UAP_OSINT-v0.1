@@ -256,7 +256,10 @@ def manifest_format(rel_path):
 # them flush against adjacent text (e.g. a byline `<span>` immediately
 # followed by a dateline `<time>`). Empty-stripping them concatenates the two
 # ("LESLIE KEAN" + "DEC. 16, 2017" -> "KEANDEC"); the whitespace branch keeps
-# the word boundary. See BACKLOG C33 (source-presentation-noise normalization).
+# the word boundary. This (HTML) and `_strip_pdf_page_number_lines` (PDF) both
+# remove source-presentation noise once at the extraction layer, so the three
+# source-grounded checks (verbatim-quote, prose-drift, description-drift) see
+# clean bytes with no per-check normalization.
 _HTML_INLINE_TAGS = (
     r"span|b|i|em|strong|u|a|small|code|sub|sup|cite|q|mark|del|ins|"
     r"abbr|dfn|samp|kbd|var|bdi|bdo|s|wbr|ruby|rt|rp|tt|font"
@@ -714,6 +717,57 @@ def clean_html_for_text(raw):
     return raw
 
 
+def _strip_pdf_page_number_lines(text):
+    r"""Remove bare page-number lines that pdftotext emits adjacent to its
+    form-feed page separators — a footer digit on its own line at the
+    bottom of a page, or a header digit at the top of the next one. These
+    are presentation noise: a quote spanning a page break carries the page
+    number wedged between the two halves of the sentence, breaking the
+    verbatim substring match (and polluting the prose-drift /
+    description-drift token pools). Before this strip the workaround was
+    to split such quotes at the page break — functional but reader-hostile,
+    turning one logical passage into two artificial quotes.
+
+    Conservative: only a line consisting solely of whitespace + digits,
+    sitting immediately adjacent (across blank lines only) to a ``\f``, is
+    removed. Digits inside body text, numbered-list items, and
+    court-reporter line numbers (which carry following text on the same
+    line) never match. Form feeds themselves are preserved and the ``\f``
+    count is unchanged, so ``normalize-locations.py`` page-number
+    computation is unaffected. This is the PDF analog of the HTML
+    standalone-datum handling above — presentation noise removed once at
+    the extraction layer, so all three source-grounded consumers
+    (verbatim-quote, prose-drift, description-drift) benefit with no
+    per-check change.
+    """
+    if "\f" not in text:
+        return text
+    digit_only = re.compile(r"^[ \t]*\d+[ \t]*$")
+    pages = text.split("\f")
+    last = len(pages) - 1
+    for i, page in enumerate(pages):
+        lines = page.split("\n")
+        # Footer: trailing digit-only line (past any trailing blanks) on a
+        # page that precedes a form feed. Deleted before the header below so
+        # the header index (near the start) is not shifted.
+        if i < last:
+            j = len(lines) - 1
+            while j >= 0 and lines[j].strip() == "":
+                j -= 1
+            if j >= 0 and digit_only.match(lines[j]):
+                del lines[j]
+        # Header: leading digit-only line (before any leading blanks) on a
+        # page that follows a form feed.
+        if i > 0:
+            k = 0
+            while k < len(lines) and lines[k].strip() == "":
+                k += 1
+            if k < len(lines) and digit_only.match(lines[k]):
+                del lines[k]
+        pages[i] = "\n".join(lines)
+    return "\f".join(pages)
+
+
 def extract_source_text(source_path):
     """Extract plain text from a source file. Returns None if unavailable.
     Cached for the duration of one validator run.
@@ -725,6 +779,13 @@ def extract_source_text(source_path):
     scans or extraction-lossy at the generation layer; the sibling
     restores the document's actual content as visually verified against
     the PDF. Falls back to pdftotext if no sibling exists.
+
+    PDF-only normalization: bare page-number lines that pdftotext emits
+    adjacent to its form-feed page separators (a footer digit, or a
+    top-of-page header digit) are stripped via
+    ``_strip_pdf_page_number_lines`` so a quote spanning a page break is
+    not broken by the page number wedged between its halves. Form feeds
+    are preserved.
 
     Post-extraction normalization (applied uniformly across formats):
     line-break hyphens are merged so PDF line-wrap of hyphenated
@@ -779,7 +840,7 @@ def extract_source_text(source_path):
                     capture_output=True, text=True, timeout=60,
                 )
                 if proc.returncode == 0:
-                    result = proc.stdout
+                    result = _strip_pdf_page_number_lines(proc.stdout)
             except (FileNotFoundError, subprocess.TimeoutExpired):
                 result = None
     elif suffix in (".html", ".htm"):

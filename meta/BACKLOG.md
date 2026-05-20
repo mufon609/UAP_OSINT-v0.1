@@ -55,12 +55,11 @@ position in the graph.
 
 **Tier 0 — A2 prerequisites (must resolve first):**
 
-- **C33** — verbatim-quote normalization architecture
 - **A3** — quote-section redesign
 
-Within Tier 0, A3 and C33 are independent. (C35 was reframed to an
-accuracy-check investigation — page-anchored locations stay — so it no
-longer gates C33 or sits in the A2 chain.)
+A3 is the sole remaining Tier-0 prerequisite. (C35 was reframed to an
+accuracy-check investigation — page-anchored locations stay — so it does
+not sit in the A2 chain.)
 
 **Tier 1 — A2 sub-task (scoped after A2's agent decomposition is
 settled; implementation co-lands with A2):**
@@ -173,9 +172,6 @@ decision, tracked in its own BACKLOG entry (A3).
 
 **Out of scope until upstream structural items resolve.**
 
-- **C33** — verbatim-quote normalization architecture. The marker
-  agent's extraction primitive depends on what counts as a
-  verbatim match.
 - **A3** — quote-section redesign. The manager-agent's contract
   (how it organizes quotes into the node) depends on what the
   rendered quote section looks like.
@@ -203,7 +199,7 @@ not as recommendations):
   invocations.
 
 **Blocks:** none currently open.
-**Blocked by:** A3, A4, C33.
+**Blocked by:** A3, A4.
 
 ---
 
@@ -377,117 +373,6 @@ separate touch.
 Items with no upstream blockers; safe to pick up at any point in
 any session. Per the preamble, this is the default-focus tier:
 C work doesn't risk half-baked implementations.
-
-### C33 — Verbatim-quote normalization: principled refactor vs. reactive patches
-
-The `normalize_for_compare` helper in `scripts/lib/_common.py`
-(consumed by the verbatim-quote check) accumulates per-symptom
-normalizations: curly-quote → straight (U+201C/U+201D, U+2018/U+2019),
-em/en dash → hyphen → strip, `[MM:SS]` / `[H:MM:SS]` caption-timestamp
-stripping (YouTube auto-caption sources), Markdown blockquote-prefix
-stripping, HTML-entity decoding, whitespace collapsing. Form-feed
-characters collapse via the whitespace rule. Each rule was added
-reactively when a failure mode surfaced.
-
-**One known class of failure mode is not currently normalized:**
-
-- **PDF page-number footers.** A multi-page-spanning quote whose
-  source extract carries a bare digit ("3") between the body-text
-  lines (page-3 footer + form feed + next-page content) fails the
-  substring match. The validator collapses the form feed to a
-  space but the digit stays. Contributors work around this by
-  splitting quotes at page breaks; the workaround is functional but
-  reader-hostile (one logical passage becomes two artificial quotes).
-
-**The original BACKLOG framing also named a curly-quote failure
-mode; investigation determined this claim was stale.** Lines 796–797
-of `normalize_for_compare` already map U+201C/U+201D and U+2018/U+2019
-to straight quotes on both sides. Corpus census confirms standard
-curly variants are handled. Exotic variants (U+201E low-9, U+00AB/BB
-guillemets, U+2032/U+2033 primes) occur in <250 total positions
-across 333 text-extractable source files and have not surfaced as
-failure modes; no current action required for them.
-
-The reactive-patch trajectory was forward-looking when the entry
-was written. The pile has converged: one remaining concrete failure
-mode (page-footer digits) plus exotic-quote variants that may never
-fail. The question of whether a more principled abstraction is
-reachable is partly answered by the convergence. (C35 was once
-expected to retire page-anchored locations — which would have made
-page-spanning quotes rare and narrowed this further — but C35 has been
-reframed to an accuracy check; page-anchored locations stay, so the
-page-footer failure mode stands on its own merits here.)
-
-**The actual question:** what is the right separation between
-"source content" (the substring the check should match against)
-and "source presentation noise" (the page footers, fonts, glyph
-substitutions, layout artifacts that mechanically appear in
-extracted text but shouldn't gate verbatim verification)?
-
-**2026-05-20 — second presentation-noise class found and fixed at the
-extraction layer (HTML element-boundary concatenation).** While driving
-`meta/research/luis-elizondo.yaml` to zero prose-drift findings, the NYT
-2017 source surfaced the token `KEANDEC`: the byline surname "Leslie
-Kean" (`<span>`) glued to the dateline "Dec. 16, 2017" (`<time>`) because
-`clean_html_for_text` empty-stripped `<time>` — it sat in
-`_HTML_INLINE_TAGS` alongside true mid-word formatters. Standalone-datum
-phrasing elements (`time`, `data`, `meter`, `progress`, `output`,
-`picture`) carry a discrete datum, never a mid-word continuation, so
-empty-stripping concatenates them onto adjacent text. Fix: moved those
-six out of `_HTML_INLINE_TAGS` so they hit the whitespace branch
-(word-boundary preserved). This is the HTML analog of the
-`extract_source_text` candidate below — presentation noise removed once
-at the extraction layer, so all three consumers (verbatim-quote,
-prose-drift, description-drift) benefit with no per-check change.
-Full 58-node re-validation clean (no verbatim-quote regressions;
-broken-link registry unchanged at 510). It settles the "actual question"
-above for the HTML case — the extraction layer is the right home — and
-narrows C33 to the remaining PDF page-footer-digit mode, which keeps the
-entry open.
-
-Candidate resolutions (for the one remaining failure mode,
-page-footer digits):
-
-- **Targeted addition in `normalize_for_compare`.** Add a regex
-  stripping bare-digit-only lines adjacent to form feeds in the
-  comparison primitive. Wrong layer architecturally (page footers
-  aren't a comparison concern; they're an extraction artifact)
-  but lowest implementation cost.
-- **PDF-layer abstraction in `extract_source_text`.** Strip the
-  bare-digit footer lines at extraction time — `\n\s*\d+\s*\n(?=\f)`
-  applied to PDF output before downstream consumers see it. All
-  three consumers (verbatim-quote, prose-drift, description-drift)
-  benefit with no per-check change. Form feed itself stays —
-  consumed by `scripts/tools/normalize-locations.py` for page-
-  number computation. Conservative: only strips lines that are
-  *exclusively* whitespace + digits adjacent to form feeds; random
-  content digits stay.
-- **Per-quote whitelist for known artifacts.** Each quote that
-  spans a known-noise pattern declares the pattern explicitly via
-  a new artifact field (e.g., `source.spans_page_break: true`).
-  Validator suppresses substring check around the declared
-  artifact location. Most explicit; most contributor-burden;
-  doesn't scale.
-- **Question whether substring is the right primitive.** Move from
-  substring match to a token-sequence match. Most architecturally
-  invasive; closes the door on multiple classes of presentation
-  drift simultaneously, but trades substring's clear failure
-  semantics for tokenization edge cases (split-column reflow,
-  list-item interleaving). Over-engineered for the converged pile.
-
-**Surfaces an investigation has to walk:** `scripts/lib/_common.py`
-(the `normalize_for_compare` and `extract_source_text` helpers);
-`scripts/checks/verbatim_quotes.py` (the check itself);
-`meta/conventions.md` "Statements as the universal evidentiary
-primitive" (the principle the check enforces); the existing
-`naming_quirks` machinery (which handles a parallel class of
-drift via contributor declaration rather than mechanical
-normalization).
-
-**Blocks:** A2 (marker-agent extraction primitive).
-**Blocked by:** none. (C35 was reframed to an accuracy check — it no
-longer retires page-anchored locations — so C33 no longer waits on it;
-the page-footer failure mode stands on its own.)
 
 ### C35 — Verify page-anchored location refs are accurate
 
