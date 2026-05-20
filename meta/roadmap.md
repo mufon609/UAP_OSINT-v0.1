@@ -114,98 +114,29 @@ an optional, inconsistently-populated field (51/58 artifacts). Its
 permanent disposition — render / relocate / bless as agent metadata /
 drop — is unresolved.
 
-### C38 — Drop `entities_referenced[]`; relocate load-bearing context_summaries  ⏳ PENDING
+### C38 — Drop `entities_referenced[]`; relocate load-bearing context_summaries  ✅ SHIPPED 2026-05-20
 
-Promoted from `meta/BACKLOG.md` C38 on 2026-05-20. Follow-on to the
-shipped A1: resolves the residual 655 optional, unrendered,
-currently-unconsumed entries. **Direction chosen:** drop the field
-entirely, relocating the genuinely load-bearing `context_summary`
-synthesis into existing rendered surfaces first; the rest is accepted
-as dropped (it duplicates the body or has no rendered home). The
-BACKLOG C38 entry holds the options + rationale.
+Follow-on to A1: resolved the residual 655 optional, unrendered,
+unconsumed entries. C38.1's triage found the relocatable set ≈ 0 (the
+synthesis paraphrased facts the verbatim record already carries), so
+the relocation phase collapsed and the field was dropped outright.
+Full phase history in git log:
 
-**Phase ordering (relocate before drop before retire-machinery; each
-phase one session, validator clean at every boundary):**
+- **C38.1** — triage: 442/655 had no rendered home; the 213 with one
+  were redundant paraphrases → relocation unwarranted.
+- **C38.2** — RETIRED (collapsed): no paraphrase-relocation needed.
+- **C38.3** — `entities_referenced` dropped from all 51 artifacts (655
+  entries); deletion-only; broken-link registry unchanged (510).
+- **C38.4** — machinery retired: deleted the `entities_referenced` +
+  `stub_linking` checks + 4 spent migration scripts; dropped the
+  name-grounding from `description_token_drift`; swept schema,
+  conventions, build.md, tools, prompts, and all doc refs (-1,511 lines).
+- **C38.5** — verified (gates green, registry unchanged at 510, zero
+  references in code/corpus); BACKLOG C38 retired.
 
-- **C38.1 — Triage audit (read-only).** Classify each of the 655
-  entries: RELOCATE (`context_summary` carries reader-value synthesis
-  not already rendered AND the entity has a rendered home on the
-  artifact — affiliation / relationship / timeline / key-personnel /
-  quote), with a proposed target surface; vs DROP (near-clutter,
-  already-covered, or no rendered home → synthesis accepted as lost).
-  Emit a per-artifact review report to `/tmp/`. No changes. Sizes the
-  relocation; the later phases firm up / may merge based on the count.
-  **Rollback:** delete the script.
-
-  **Landed.** `scripts/build/audit-c38-triage.py` shipped. Of the 655
-  retained entries: **442 have no rendered home** (mentioned-in-passing
-  — nowhere to relocate → drop), **213 occupy a structured slot**
-  (relationship / affiliation / timeline / participant / speaker /
-  key_personnel). On inspection the 213 are paraphrases of facts the
-  verbatim record ALREADY carries (transcript quotes name who
-  questioned whom; participant/speaker rows carry roles) or
-  cross-reference scaffolding the body wrap already surfaces
-  (transcript-to-be entries; "references Grusch in q15"). The genuinely
-  relocatable set ≈ 0. **Recommendation: collapse C38.2 — drop all 655
-  without paraphrase-relocation;** any genuinely-missing load-bearing
-  fact is a normal coverage gap (add a verbatim quote via the build
-  pipeline), not a paraphrase note. Report: `/tmp/c38-triage/`.
-- **C38.2 — Relocation (contributor-reviewed).** Fold each RELOCATE
-  entry's synthesis into its target rendered surface (`timeline[].note`,
-  `relationship[].note`, `affiliation[].note`, `credibility_notes`,
-  `quote.context`). Editorial; the relocated prose is
-  prose-drift-checked. Contributor reviews per-artifact diffs.
-  **Rollback:** `git restore meta/research/`.
-- **C38.3 — Drop the field from the corpus.** Surgically remove
-  `entities_referenced` from all artifacts (full version of the A1.4
-  removal). Body wraps untouched → broken-link registry unchanged.
-  **Rollback:** `git restore meta/research/`.
-
-  **Landed.** `entities_referenced` removed from all 51 artifacts (655
-  entries) via `scripts/build/migrate-c38-drop.py` (dry-run-first;
-  per-edit self-check: re-parse + key absent). Field now absent
-  corpus-wide. Deletion-only diff (0 lines added, 4,457 removed); 0
-  rendered node-body files changed; broken-link registry unchanged
-  (510). Regression guard green: `validate.py`, `validate-research.py`
-  (0 errors), `review-coverage.py` `description_token_drift` = 0 errors
-  (full deletion gate-safe, as A1.1 verified), `build-state --check`.
-  The field's machinery (checks, schema def, name-grounding) still
-  present and now no-ops on the empty corpus → retired in C38.4.
-- **C38.4 — Retire the field machinery.** Remove the `entity_entry`
-  schema def + invariants line; delete `scripts/checks/entities_referenced.py`
-  and `scripts/checks/stub_linking.py` + their dispatch in
-  `validate-research.py` / `review-coverage.py`; drop the
-  `entities_referenced.name` grounding from `description_token_drift.py`;
-  clean `coverage-suggest.py` (pooling + sections list),
-  `research-scaffold.py` (`--explain` mapping), `extract-source.py`
-  hint, `prompts/build.md` Step 7, and `conventions.md`
-  "Cross-reference contract" (becomes body-wraps-only); retire
-  `audit-a1-vocab.py` + `migrate-a1-delete.py`. help-check +
-  validators clean. **Rollback:** revert the files.
-
-  **Landed.** Deleted `entities_referenced.py` + `stub_linking.py` and
-  their dispatch; dropped the `entities_referenced.name` grounding from
-  `description_token_drift`; removed the `entity_entry` schema def +
-  invariant + optional-note; cleaned `cross_refs`, `coverage-suggest`,
-  `research-scaffold`, `extract-source`, `artifact_top_level`, the
-  `conventions.md` Cross-reference contract (now body-wraps-only),
-  `build.md` Step 7 + check-list + T-table, the audit / quote-relevance
-  prompts, and stale doc refs (`phase_iii_inputs`, `link_resolution`,
-  the directional checks, working-notes, memory, BACKLOG A2/C37, the
-  uri-geller Source-Form note → node rebuilt). Retired the 4 spent
-  migration/audit scripts. All 10 pre-commit gates green; `entities_referenced`
-  / `entity_entry` / `stub_linking` now appear only in the roadmap
-  A1/C38 records + BACKLOG C37/C38 (gone from all code and the corpus).
-- **C38.5 — Verification + retire C38.** Confirm broken-link registry
-  unchanged, all gates green, no dangling `entities_referenced`
-  references; retire the BACKLOG C38 entry; finalize roadmap.
-
-**Cross-references:**
-- Blocks: none. Follow-on to A1 (shipped).
-- Touches: 51 research artifacts (relocation + 655-entry deletion),
-  `meta/schema-research-artifact.yaml`, `meta/conventions.md`,
-  `prompts/build.md`, several `scripts/checks/` + `scripts/build/` +
-  `scripts/tools/` files.
+End state: cross-references are carried solely by `[`/path`]` body
+wraps (broken-link registry + Associated Nodes); no contributor-prose
+entity layer remains.
 
 ### E.3 — Cross-node update propagation  ⏸ DEFERRED
 
