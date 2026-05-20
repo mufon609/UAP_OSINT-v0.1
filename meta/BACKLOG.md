@@ -324,3 +324,58 @@ sit on the end page).
 **Blocks:** none.
 **Blocked by:** none (residual needs the original rendering / a
 convention call on appendix + chapter page forms).
+
+### C40 — Migrate the remaining person nodes to `claim_group`
+
+A3 (claim-group quote organization) shipped 2026-05-20 with the machinery
++ Grusch as the proof. The other person nodes still render the legacy
+flat `## Statements → Direct / Other` stream (the renderer's
+backward-compatible fallback when no quote carries `claim_group`).
+Migrate them a few per session: launch the Manager
+(`prompts/agent-manager.md`) to cluster a node's existing quotes into
+`claim_group`s and wire `corroborated_by` cross-source de-dup pointers,
+apply by field-only insertion (never touch quote `text` / `source`),
+regenerate, validate. Eyewitness nodes are safe (the grouped renderer
+marks first-hand observations inline since `1f3669a`).
+
+**Progress (15 person nodes):** done — `david-grusch`. Remaining (14):
+alex-dietrich, david-fravor, hal-puthoff, james-lacatski, james-ryder,
+karl-nell, kit-green, luis-elizondo, ronald-moultrie, russell-targ,
+ryan-graves, sean-kirkpatrick, sue-gough, uri-geller.
+
+**Blocks:** none.
+**Blocked by:** none (A3 machinery shipped).
+
+### C41 — Exercise the A2 pipeline end-to-end on a real node build
+
+The five-agent build pipeline (Scout → Marker → Manager → Meta-linker →
+Builder) is complete as launchable prompts + per-phase validation (A2
+increments 1–5), but has never been run *whole* on one node — each stage
+is validated piecewise, not the chain. The first live run is a
+**user-directed** node build (per `CLAUDE.md`, target + scope come from
+the user and sources must be real + archived; the pipeline is not
+exercised on a fabricated target). On the next directed build, launch
+each agent in order with a human checkpoint + `--phase` validation
+between stages (`prompts/build.md` "Running the full pipeline"), capture
+the `/tmp/handoff-{slug}-{agent}.yaml` stubs, and surface any
+handoff-boundary friction the piecewise validation missed.
+
+**Blocks:** none.
+**Blocked by:** a user-directed build target (scope + real, archivable
+sources) — opportunistic, taken on the next node build.
+
+### C42 — Validate the per-phase check classifications
+
+A2 increment 3 (`--phase`) classifies all 67 checks into
+preflight / scout / marker / manager / meta-linker / builder in
+`scripts/checks/_phases.py`. The map is best-fit, not exhaustively
+litigated — low-stakes today because the full pass is unaffected and
+`--phase` only narrows (unlisted checks default to `builder`). But once
+agents consume `--phase` for real (C41), a mis-classified check gives an
+agent wrong scoped feedback (a missed check, or an irrelevant fire).
+Validate the map against real agent runs: for each phase confirm
+`--phase X` runs exactly the checks that read the artifact state agent X
+produced, and re-home any check whose inputs come from a later phase.
+
+**Blocks:** none.
+**Blocked by:** none (best validated alongside C41's first live run).
