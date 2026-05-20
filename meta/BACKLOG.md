@@ -186,14 +186,22 @@ re-driven by re-running that agent (never by editing the node body).
   truth"), and one reviewable map beats 67 scattered constants.
   review-coverage stays the unflagged builder pass (its checks are all
   builder/cross-layer).
-- **4** — Marker+Manager as real agent invocations producing `/tmp`
-  stubs.
-- **5** — Scout + Meta-linker + Builder; full pipeline.
+- **4 — Marker + Manager as launchable agent invocations (DONE
+  2026-05-20).** Shipped paste-ready subagent prompts
+  `prompts/agent-marker.md` (per-source verbatim quote extraction +
+  proposed `claim_group`) and `prompts/agent-manager.md` (cross-source
+  `claim_group` clustering + `corroborated_by` de-dup + free-prose), each
+  specifying its `/tmp/handoff-{slug}-{agent}.yaml` stub I/O and pinned to
+  `--phase {marker,manager}` for scoped validation. The Manager was
+  dogfooded in increment 1 (the Grusch clustering). Registered in
+  `prompts/README.md`; build.md A2 section cross-refs them. Real runtime
+  invocation happens on the next node build / `claim_group` migration.
+- **5** — Scout + Meta-linker + Builder as launchable agents; full
+  pipeline run end-to-end on a node.
 
 **Blocks:** none currently open.
-**Blocked by:** none — A3 (inc 1), the agent docs (inc 2), and A4
-per-phase dispatch (inc 3) are shipped; increments 4–5 (real agent
-invocations) remain.
+**Blocked by:** none — increments 1–4 shipped; increment 5 (the
+remaining three agent prompts + a full end-to-end pipeline run) remains.
 
 ---
 

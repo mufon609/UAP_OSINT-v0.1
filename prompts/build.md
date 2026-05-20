@@ -963,7 +963,8 @@ would violate source-read-first, so the read lives with the archival).
 - **Output:** populated `primary_sources[]` + the scratch files every
   downstream agent references.
 
-**Marker** (= T2, extended). Runs once per archived source.
+**Marker** (= T2, extended). Runs once per archived source. Launch as a
+subagent with `prompts/agent-marker.md`.
 - **Input:** ONE `/tmp/scratch-{slug}-N.txt`.
 - **Output:** `quotes[]` candidates (verbatim `text`,
   `source.{path,location}`, `significance`, `context`, person
@@ -973,6 +974,7 @@ would violate source-read-first, so the read lives with the archival).
   only one).
 
 **Manager** (owns A3). The first agent that sees all sources at once.
+Launch as a subagent with `prompts/agent-manager.md`.
 - **Input:** ALL Marker fragments + the scratch files (for judgment).
 - **Output:** final `quotes[]` — clusters candidates into `claim_group`s,
   designates same-claim cross-source duplicates as `corroborated_by`
