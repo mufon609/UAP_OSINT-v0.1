@@ -1581,16 +1581,16 @@ The goal is to REMOVE items from BACKLOG, not accumulate annotations
 referencing them. When a BACKLOG entry closes:
 
 - Delete the entry's block from `meta/BACKLOG.md` in full. No
-  retirement marker, no placeholder, no renumber. The commit that
-  ships the closure carries the implementation diff and a commit
-  message that describes what shipped — that is the canonical
-  record. `git log --grep <ID> -- meta/BACKLOG.md` retrieves it.
-- IDs within a section are positional and not reused. Before
-  assigning a new ID, check git log for the largest historical ID
-  in the target section (`git log --all -p -- meta/BACKLOG.md |
-  grep -oE '\b<SECTION>[0-9]+\b' | sort -V -u | tail -1`); the new
-  entry takes the next unused number so historical references via
-  `git log` stay unambiguous.
+  retirement marker, no placeholder. The commit that ships the closure
+  carries the implementation diff and a message describing what
+  shipped — that is the canonical record.
+- IDs are positional working labels, NOT stable identifiers. A new
+  entry takes the lowest section number not currently in use, so
+  numbers **recycle**; when a section — and ultimately the whole
+  BACKLOG — is cleared, numbering restarts from 1. An ID therefore
+  must never appear outside `meta/BACKLOG.md`: not in code, docs,
+  prompts, commit messages, or `git log` searches. Reference the
+  work, never the ticket.
 - Sweep code comments that referenced the closed entry's
   identifier — either delete the comment entirely (if the entry's
   resolution is now reflected in the code itself) or rewrite to

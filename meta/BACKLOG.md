@@ -15,13 +15,15 @@ Open items are partitioned into three sections by dependency shape:
 **A — Priority sequence** (ordering / coupling constraints),
 **B — Parallel batch** (renderer-pass items that ship together),
 and **C — Anytime** (no upstream blockers). Item identifiers within
-each section (A1, A2, ..., B1, B2, ..., C1, C2, ...) are positional
-and assigned at write time. When an item is retired, its block is
-deleted in full; no marker, no placeholder, no renumber. The next
-new entry in the section takes the next previously-unused ID — IDs
-are not reused, so commit-message and git-log references to a
-historical ID stay unambiguous when grepped. See `meta/conventions.md`
-"BACKLOG lifecycle discipline" for the rule of record.
+each section (A1, A2, …, B1, …, C1, C2, …) are positional working
+labels, not stable identifiers. A closed item's block is deleted in
+full — no marker, no placeholder. A new entry takes the lowest section
+number not currently in use, so **numbers recycle**; once a section,
+and ultimately the whole BACKLOG, is cleared, numbering restarts from 1.
+Because an ID is transient and reused, never reference it from outside
+this file — not in code, docs, prompts, commit messages, or `git log`
+searches. Describe the work; the commit diff + message are the record.
+See `meta/conventions.md` "BACKLOG lifecycle discipline".
 
 **Default focus: Section C.** C items have no upstream dependencies
 and can be picked up and finished in a single pass. A and B items

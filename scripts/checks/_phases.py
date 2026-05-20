@@ -84,7 +84,7 @@ CHECK_PHASE = {
     "speakers": "extract",
     "speaker_baseline_consistency": "extract",
 
-    # organize (role 5) — free-prose synthesis (incl. A3 quote organization)
+    # organize (role 5) — free-prose synthesis (incl. claim-group quote organization)
     "top_scope_activity": "organize",
     "corroboration_items": "organize",
     "vouching_chain": "organize",

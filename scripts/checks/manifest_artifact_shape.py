@@ -13,13 +13,13 @@ Enforces the four C29 invariants on ``sources/manifest.yaml``:
 The check is structural — it does NOT verify file integrity (that's
 ``manifest_checksums``), state-bit consistency (``manifest_archive_status``),
 or enum membership (``manifest_value_enums`` / ``manifest_extraction_type``).
-This check covers the C29 invariants that those four pre-existing
-checks didn't enforce: the new schema's primary/derived discipline.
+This check covers the invariants those four pre-existing checks don't
+enforce: the URL ↔ artifacts primary/derived discipline.
 
 Errors loudly on any violation. The manifest is a foundational
 toolkit contract — silent drift in the URL ↔ artifacts model
 propagates to every downstream consumer (verbatim-quote check, the
-verifier-agent in A2, manifest.py CLI commands).
+archival agents, manifest.py CLI commands).
 
 Consumes ``BaseContext.manifest_entries`` from the orchestrator's
 single manifest load. Dispatched from validate.py's manifest-

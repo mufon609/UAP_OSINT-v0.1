@@ -2,10 +2,10 @@
 
 The canonical map of how a node build decomposes into agents, which
 `--phase` bundle gives each agent instant feedback, and how the
-orchestrator sequences them. This expands the five-agent pipeline in
-`prompts/build.md` "The multi-agent pipeline (A2)" into seven roles, for
-two goals: **instant per-agent feedback** (each agent validates only what
-it just produced) and **no monolithic check pass**.
+orchestrator sequences them. This expands the prior five-agent pipeline
+(`prompts/build.md` "The multi-agent pipeline") into seven roles, for two
+goals: **instant per-agent feedback** (each agent validates only what it
+just produced) and **no monolithic check pass**.
 
 Paste-ready launch prompts for each role live at `prompts/agent-{role}.md`
 (see the role table). This file is the shared contract they reference.
