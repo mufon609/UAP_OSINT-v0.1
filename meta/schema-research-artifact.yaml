@@ -133,17 +133,20 @@ required_keys:
   #   created a drift surface that mechanical checks couldn't catch;
   #   eliminated repo-wide. Cross-entity synthesis goes on finding
   #   nodes.
-  - entities_referenced   # list — every named person/org/event/doc/location.
-                          # Not rendered (artifact-only). Consumed by
-                          # scripts/checks/stub_linking.py (enforces every
-                          # wrap_path also appears as a body wrap),
-                          # scripts/checks/description_token_drift.py
-                          # (entity names feed the approved-token vocab),
-                          # and scripts/tools/coverage-suggest.py (text
-                          # gets pooled into the missed-entity diagnostic).
-                          # No renderer reads this field — body wraps in
-                          # rendered prose are the reader-visible surface.
   - naming_quirks         # list — source-specific oddities (typos, alt spellings)
+#
+# entities_referenced is OPTIONAL — not a required key. It is a curated
+# cross-reference / synthesis surface, populated only for entries that
+# carry a substantive `context_summary` not already present in the node
+# body. The required cross-reference mechanism is the body `[`/path`]`
+# wrap (which drives the broken-link registry + Associated Nodes); the
+# field is artifact-only and never rendered. When present, entries are
+# validated by scripts/checks/entities_referenced.py (per-entry shape)
+# and consumed by scripts/checks/stub_linking.py (registered->linked
+# symmetry), scripts/checks/description_token_drift.py (entity names
+# feed the approved-token vocab on ## Description nodes), and
+# scripts/tools/coverage-suggest.py (missed-entity diagnostic). See
+# entity_entry below for the per-entry shape.
 # Audit trail / history: git log and git diff on the artifact file
 # are authoritative. No in-artifact iteration log. Entry lifecycle
 # fields (superseded_by / contradicted_by / corroborated_by) provide
@@ -607,6 +610,11 @@ quote_source:
   #   the quote-verbatim check substring-matches the extracted source
   #   text regardless.
 
+# Shape of an entry in the OPTIONAL entities_referenced list (see the
+# note after required_keys above). The list as a whole is optional; when
+# present, each entry has this shape. An entry earns its place by
+# carrying a substantive context_summary — the synthesis is the reason
+# to register; a bare name/wrap_path duplicating a body wrap does not.
 entity_entry:
   required: [entity_type, name, wrap_path]
   optional: [context_summary, references]

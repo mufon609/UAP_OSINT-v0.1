@@ -201,6 +201,17 @@ every boundary):**
   Validator must pass (every artifact still populates the field; the
   relax is permissive). **Rollback:** revert the two files.
 
+  **Landed.** `entities_referenced` removed from
+  `artifact_top_level.py::REQUIRED_TOP_LEVEL_KEYS` (the real
+  enforcement) and from the schema `required_keys` spec; both now
+  document it as an optional, curated synthesis surface. Permissive
+  relax verified: the full corpus (field present everywhere) passes
+  `validate.py` + `validate-research.py` (3 pre-existing prose-drift
+  warnings, unchanged); an in-memory spot-check on `david-fravor` with
+  the field removed introduces 0 errors (no missing-key error). No
+  corpus changes. Behavioral de-clutter (delete redundant entries +
+  de-tune the five attractors) is A1.4 / A1.5.
+
 - **A1.4 — Corpus deletion.** Write
   `scripts/build/migrate-a1-delete.py`: consumes the A1.1 audit
   (`audit-a1-vocab.py`) and deletes the redundant (delete-no-risk)

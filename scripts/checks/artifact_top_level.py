@@ -5,7 +5,10 @@ artifact:
 
   - top-level required keys: id, type, schema_version, target_node,
     status, created, primary_sources, document_intrinsic,
-    context_extrinsic, quotes, entities_referenced, naming_quirks
+    context_extrinsic, quotes, naming_quirks
+    (entities_referenced is OPTIONAL — an artifact populates it only
+    for entries carrying substantive context_summary synthesis; body
+    [`/path`] wraps are the required cross-reference mechanism)
   - id matches the file path (``meta/research/{slug}``)
   - type literal equals ``research-artifact``
   - schema_version is integer in ``schema.compatible_with``
@@ -52,10 +55,15 @@ CHECK_NAME = "artifact_top_level"
 _REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 
+# entities_referenced is intentionally NOT here — it is an optional
+# artifact key (a curated synthesis surface, populated only for entries
+# carrying substantive context_summary). It stays valid when present
+# (no unknown-key rejection); the per-entry entities_referenced check
+# validates entries when the field exists.
 REQUIRED_TOP_LEVEL_KEYS = [
     "id", "type", "schema_version", "target_node", "status", "created",
     "primary_sources", "document_intrinsic",
-    "context_extrinsic", "quotes", "entities_referenced",
+    "context_extrinsic", "quotes",
     "naming_quirks",
 ]
 
