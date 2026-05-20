@@ -46,12 +46,14 @@ ABOUT other people / programs / events.
    another entity's node:
    - If that other entity is built — surface the quote for transfer
      to that artifact (do not silently delete).
-   - If that other entity is not yet built — register it in
-     `entities_referenced` (with wrap_path) so the Stub-linking check
-     surfaces it as a build candidate; capture the institutional moment
-     in the speaker's `timeline[]` so the contextual fact is not lost;
-     the verbatim quote can be added on the other entity's node when
-     that node is built.
+   - If that other entity is not yet built — add a `[`/path`]` body
+     wrap (typically in the speaker's `timeline[].event`) so the
+     broken-link registry surfaces it as a build candidate, and capture
+     the institutional moment in `timeline[]` so the contextual fact is
+     not lost; the verbatim quote can be added on the other entity's
+     node when that node is built. Registering the entity in
+     `entities_referenced` is optional — only to attach a substantive
+     `context_summary`.
 
 ---
 
@@ -136,7 +138,9 @@ contributor approval, especially for ambiguous cases. Present:
 Once contributor approves the recommendation set:
 
 1. Edit the artifact (drop selected quotes, update `timeline[]` if
-   needed, update `entities_referenced` if surfacing for a future node).
+   needed — include a `[`/path`]` body wrap for any future-node entity
+   so the broken-link registry surfaces it; touch `entities_referenced`
+   only to attach a substantive `context_summary`).
 2. If consolidating, update `significance` / `context` on the
    surviving quote to capture what was in the dropped siblings.
 3. Re-render: `python3 scripts/build/build-from-research.py meta/research/{slug}.yaml`

@@ -74,87 +74,11 @@ settled; implementation co-lands with A2):**
 
 - **A2** — multi-agent decomposition of source-prep + Phase I
 
-**Independent of the A2 chain:**
-
-- **A1** — retire mandatory `entities_referenced[]` registration
-  (corpus-migration + schema decision, orthogonal to A2)
-
 ---
 
 ## A. Priority sequence
 
 Items with ordering or coupling constraints.
-
-### A1 — Retire mandatory `entities_referenced[]` registration
-
-**PROMOTED 2026-05-19 → `meta/roadmap.md` "A1" (Full retire,
-vocab-preservation migration; phases A1.1–A1.6).** This entry stays
-as the analysis-of-record until phase A1.5 retires it on landing.
-
-**Premise verified by corpus measurement.** The field carries 1,254
-entries across 58 of 59 research artifacts. 100% of those entries'
-`wrap_path` values already appear as `[`/path`]` body wraps in the
-rendered node. The duplication is complete: every entity registered
-in the field is also wrapped in body prose. AGENT.md does not consume
-`entities_referenced[]` — the field has no reader-facing or
-query-agent consumer. The structural consumers are:
-
-- `scripts/checks/link_resolution.py` — builds the broken-link
-  registry, but reads body wraps directly via the same
-  `\[``(/[^``]+)``\]` regex `associate.py` uses. Independent of
-  `entities_referenced[]`.
-- `scripts/checks/stub_linking.py` — enforces every
-  `entities_referenced[].wrap_path` also appears as a body wrap.
-  Symmetry-enforcement check; the symmetry is what creates the
-  duplication burden.
-- `scripts/checks/description_token_drift.py` — uses `name` field
-  as approved-token vocabulary for the description-drift gate.
-- `scripts/tools/coverage-suggest.py` — pools entity text into the
-  missed-entity capitalized-token diagnostic.
-
-`context_summary` is the only sub-field carrying contributor synthesis
-not derivable from elsewhere. Corpus measurement: 84% of
-`context_summary` content already appears in the rendered body prose;
-16% (173 entries across 58 artifacts) carries unique synthesis content
-not present in body.
-
-**Direction.** Retire the discipline that every body-wrapped entity
-must be registered. `entities_referenced[]` becomes optional and only
-carries entries the contributor wants to attach a non-trivial
-`context_summary` to. Reduces the field from 1,254 entries to ~173
-entries; retires `stub_linking.py`'s symmetry enforcement; preserves
-the synthesis surface for the 16% of entries where it's load-bearing.
-
-**Surfaces an investigation has to walk before implementation:**
-
-- `description_token_drift.py` — entity `name` is one input to the
-  approved-token vocabulary. Reducing the entity set shrinks the
-  vocab. Determine whether the 84% redundant entries' names are
-  unique to those entries or are also covered by other vocab sources
-  (body prose tokens, `naming_quirks[]`, structured tables). If
-  unique-to-redundant-entries, a corresponding migration moves those
-  names to a `naming_quirks` or `description_token_overrides` entry
-  before deleting the registration.
-- `coverage-suggest.py` — pooling reduces by the redundant-entries'
-  text. Likely benign (the tool gaps-checks against source content,
-  not artifact density), but verify.
-- `meta/schema-research-artifact.yaml` — drop `entities_referenced`
-  from the universally-required keys list; mark optional in schema.
-- `meta/conventions.md` "Cross-reference contract for interview-
-  derived testimony" — currently requires venue/host/transcript
-  registration. Rewrite to require body wraps (still load-bearing for
-  the broken-link registry) without requiring `entities_referenced[]`
-  registration.
-- 58 research artifacts — corpus migration drops 1,081 redundant
-  entries; preserves 173 with non-trivial `context_summary`. Migration
-  script reads each artifact, keeps only entries whose
-  `context_summary` is unique-to-the-entry (not duplicated in body
-  prose), drops the rest.
-
-**Blocks:** none.
-**Blocked by:** none.
-
----
 
 ### A2 — Multi-agent decomposition of source-prep + Phase I
 
@@ -788,14 +712,14 @@ sibling check — not a merge.
   (as `description_token_drift` does) so legitimate canonical-form names
   don't false-positive.
 
-**A1 interaction (orthogonal, recorded so it isn't re-litigated).**
-On person artifacts `entities_referenced[].name` feeds no drift gate
-today (no `## Description`), so A1's deletion of redundant entity
-registrations is drift-safe for persons regardless of C37. If C37
-later adds a person-prose error gate that wants entity names in its
-grounding pool, that pool decision is C37's to make — A1 doesn't
-foreclose it (named entities remain `[`/path`]` body wraps either way).
+**`entities_referenced` interaction (orthogonal, recorded so it isn't
+re-litigated).** On person artifacts `entities_referenced[].name`
+feeds no drift gate (person nodes render no `## Description`), and
+`entities_referenced` is now an optional, curated field. If C37 later
+adds a person-prose error gate that wants entity names in its
+grounding pool, that pool decision is C37's to make — named entities
+remain `[`/path`]` body wraps regardless.
 
 **Blocks:** none.
-**Blocked by:** none. (Independent of the A2 chain and of A1.)
+**Blocked by:** none. (Independent of the A2 chain.)
 

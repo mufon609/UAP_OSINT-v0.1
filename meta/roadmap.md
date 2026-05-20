@@ -90,9 +90,9 @@ every boundary):**
 
 Promoted from `meta/BACKLOG.md` A1 on 2026-05-19. Full analysis,
 corpus measurement (1,254 entries / 58 artifacts; ~16% substantive),
-and per-consumer dependency walk live in the BACKLOG entry and the
-2026-05-19 investigation report. This roadmap block is the
-**execution plan**.
+and per-consumer dependency walk lived in the BACKLOG A1 entry
+(retired in A1.5; see git log) and the 2026-05-19 investigation
+report. This roadmap block is the **execution plan**.
 
 **Direction (re-scoped 2026-05-19 after A1.1).** Retire mandatory
 registration; redundant entries delete directly. The
@@ -256,6 +256,23 @@ every boundary):**
   registration reminders.
   Retire the BACKLOG A1 entry in the same commit. **Rollback:**
   revert the files.
+
+  **Landed.** All five attractors de-tuned: (1) conventions
+  "Cross-reference contract" rewritten (body wraps mandatory;
+  registration optional, substantive-`context_summary` only);
+  (2) `build.md` Step 7 + the T3 task-table row reframed to optional
+  curated registration; (3) `research-scaffold.py` no longer seeds
+  `entities_referenced: []` and its build-step hint marks the field
+  optional; (4) `coverage-suggest.py` nudge points to a body wrap
+  first; (5) `quote-relevance-audit.md` reminders reframed to
+  body-wrap-first (also fixed a latent error — build-candidate
+  surfacing comes from the broken-link registry reading body wraps,
+  not from registration). `prompts/audit.md`'s mention was an accurate
+  artifact-only-field description, not an attractor — left as-is.
+  BACKLOG A1 retired (entry + its "Roadmap forward" reference deleted;
+  C37's cross-reference swept). Validators green (`validate.py`,
+  `validate-research.py`, `review-coverage.py`, `build-state --check`)
+  + `help-check` + `build-md-spec`. Remaining: A1.6 (verification).
 
 - **A1.6 — Verification.** Confirm `stub_linking.py` scope correctly
   shrunk to the retained entries; confirm `coverage-suggest.py`

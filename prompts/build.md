@@ -351,24 +351,36 @@ without clicking through. Quote overlap with the witness-specific
 transcript or document nodes is acceptable and expected; the
 renderer does not deduplicate across nodes.
 
-### Step 7. Populate `entities_referenced` (bounded agent task T3)
+### Step 7. Cross-reference entities (optional; bounded agent task T3)
 
-**Agent task T3:**
+Cross-references to other entities are carried by `[`/path`]` body
+wraps in the rendered prose (timeline events, notes, etc.) — those
+wraps drive the broken-link registry and `## Associated Nodes`, and
+are the required mechanism. `entities_referenced[]` is an OPTIONAL,
+curated surface — NOT a per-entity index of everyone the source
+names. Register an entity only when you have a substantive
+`context_summary` to attach: synthesis about how it figures in the
+source that the body does not already carry. A bare entry that only
+duplicates a body wrap adds nothing — omit it. See `meta/conventions.md`
+"Cross-reference contract for interview-derived testimony".
+
+**Agent task T3 (optional):**
 - **Input:** extracted plaintext + populated `quotes`
 - **Output:** YAML fragment of `entities_referenced:` — one entry per
-  unique named entity (person, organization, document, event, location,
-  finding) mentioned anywhere in the source or in the quotes.
-  Each entry:
+  entity that warrants a substantive `context_summary`. Each entry:
   - `id` (e1, e2, …)
   - `entity_type` (person | organization | document | event | location | finding)
   - `name` (display name)
   - `wrap_path` (canonical repo path, e.g., `/people/jay-stratton`)
-  - `context_summary` (one-line note on how this entity appears in the source)
-  - `references` (list of `{quote_id: qN}` — every quote that mentions
-    this entity)
+  - `context_summary` (the synthesis that justifies the entry — not a
+    restatement of the body)
+  - `references` (list of `{quote_id: qN}` — quotes that mention this entity)
   - Standard lifecycle fields
+  Omit the field entirely when no entity warrants a `context_summary`.
 
 **Discipline:**
+- Substantive only: if the `context_summary` you would write is
+  already in the body, skip the entry — the body wrap suffices.
 - Deduplicate: one entry per entity across the whole artifact. If
   Stratton appears in ¶8 and also in a quote from ¶9, one entity entry
   with both references.
@@ -941,7 +953,7 @@ Each task has clear I/O and can be run as a focused agent invocation:
 | Task | Input | Output |
 |---|---|---|
 | T2 — Extract quotes | Plaintext | YAML `quotes:` fragment |
-| T3 — Identify entities | Plaintext + quotes | YAML `entities_referenced:` fragment |
+| T3 — Cross-reference entities (optional) | Plaintext + quotes | YAML `entities_referenced:` fragment — substantive-`context_summary` entries only |
 | T4 — Naming quirks | Plaintext + quotes | YAML `naming_quirks:` fragment |
 | T5 — Rumors (conditional) | Everything above + external context | YAML `rumors:` fragment |
 

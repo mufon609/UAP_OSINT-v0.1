@@ -423,7 +423,8 @@ def main():
     else:
         print("Read-only diagnostic. Judge each candidate manually:")
         print("  - Paragraph load-bearing for the subject? → add a quote")
-        print("  - Capitalized term is a named entity? → register in entities_referenced[]")
+        print("  - Capitalized term is a named entity? → add a [`/path`] body wrap"
+              " (entities_referenced[] only if it warrants a substantive context_summary)")
         print("  - Boilerplate / navigation / tangential? → ignore (no action needed)")
         print()
         print("[¶~N] indices are paragraph-numbers in the EXTRACTED scratch text")
