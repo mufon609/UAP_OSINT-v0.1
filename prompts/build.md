@@ -733,9 +733,10 @@ This:
    - `## Pattern Statement` — from `pattern_statement` prose field
      (the multi-source pattern the finding documents)
    - `## Description` — from `description`
-   - `## Evidence` — from `evidence[]` (verbatim attestations from
-     constituent sources, with per-row attestation_tier in the
-     verification block; sorted chronologically)
+   - `## Evidence` — from `quotes[]` (verbatim attestations from
+     constituent sources; H3 per quote using `significance`, with
+     per-row attestation_tier + attestor_path in the verification
+     block; sorted chronologically by `statement_date`)
    - `## What the Record Establishes` — from `establishes[]`
      (numbered list of conclusions the convergent evidence supports)
    - `## What the Record Doesn't Establish` — from `does_not_establish[]`
@@ -744,8 +745,8 @@ This:
    - **Conditional, populated artifact content only:**
      `## Apparent Contradictions` (from `contradictions[]`, requires
      quote attribution); `## Timeline` (from `timeline[]`,
-     chronological); `## Source-Form Notes` (from `naming_quirks[]`
-     with `resolution: preserve-as-sic-in-quotes`)
+     chronological). Source-Form Notes is universal across types
+     (see the close section below), not finding-specific.
 
    **Investigation nodes:**
    - `## Question` — from frontmatter `question` (mirrored as
@@ -762,15 +763,28 @@ This:
      `investigation_hypothesis_citation`)
    - `## Open Questions` — from `open_questions[]` (sub-questions
      surfaced by the investigation; future-work surface)
-   - `## Best-Current Answer` — from `best_current_answer` prose
-     field (the investigation's current evidentiary standing on the
-     framing question)
+   - `## Best-Current Answer` — from `best_current_answer` object
+     (the investigation's current evidentiary standing on the framing
+     question; carries `text` prose + `sources[]` rollup)
    - **Conditional:** `## Counter-Evidence` (from `counter_evidence[]`
-     when populated); `## Closure Path` (required when frontmatter
-     `status == paused`, from `closure_path` prose);
+     when populated); `## Closure Path` (from `closure_path[]`,
+     required when frontmatter `status == paused`);
      `## Resolution History` (from `resolution_history[]` when populated)
 
    **All renderer-supported types** close with:
+   - `## Source-Form Notes` — **conditional, universal across all
+     types.** Emits when `naming_quirks[]` has any entry with
+     `resolution: preserve-as-sic-in-quotes` — contributor-registered
+     source-form preservations (auto-caption typos, OCR artifacts,
+     alias-of-record) that appear verbatim in quote text. Table
+     columns: Source Form / Canonical / Source / Note.
+   - `## Preserved Disagreements` — **conditional, universal across
+     all types.** Emits when `naming_quirks[]` has any entry with
+     `resolution: disputed` — two primary sources attest opposing
+     forms of the same fact, contributor has chosen not to
+     adjudicate. Table columns: Position / Counterpart / Source /
+     Note. Parallel surface to Source-Form Notes but for the
+     disputed-not-adjudicated case.
    - `## Primary-Source Contradictions` — **conditional, person /
      event / organization / location only.** Emits when the artifact
      has any `rumors[]` entry with `status: primary-source-disputed`.

@@ -83,9 +83,15 @@ def collect_schema_sections():
 
     # Universal conditional sections — rendered by scripts/build/renderers/
     # _universal.py for any artifact whose schema permits the underlying
-    # entry list (e.g., Primary-Source Contradictions from rumors with
-    # status: primary-source-disputed). Not declared per-type in schema;
-    # included here so the check doesn't flag them as build.md-only.
+    # entry list (rumors / naming_quirks). Not declared per-type in
+    # schema; included here so the check doesn't flag them as build.md-
+    # only. Mirrors _universal.py's four conditional emitters:
+    #   - render_source_form_notes              naming_quirks resolution=preserve-as-sic-in-quotes
+    #   - render_preserved_disagreements        naming_quirks resolution=disputed
+    #   - render_primary_source_contradictions  rumors status=primary-source-disputed
+    #   - render_public_record_claims           rumors status=not-primary-source-established
+    out.add("Source-Form Notes")
+    out.add("Preserved Disagreements")
     out.add("Primary-Source Contradictions")
     out.add("Public-Record Claims Without Primary Source")
     return out
