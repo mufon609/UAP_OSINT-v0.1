@@ -31,11 +31,16 @@ Don't skip. Governance docs change between sessions.
 Before building anything:
 
 ```
-python3 scripts/build/validate.py
-python3 scripts/build/build-state.py --check
+python3 scripts/build/validate.py            # node structure + verbatim quotes
+python3 scripts/build/validate-research.py    # artifact structure + prose-drift
+python3 scripts/build/review-coverage.py --all  # cross-layer coverage/boundary/description-drift
+python3 scripts/build/build-state.py --check  # this file's build-state block
 ```
 
-Exit 0 on both = repo healthy. Any errors → fix first.
+Exit 0 on all = repo healthy. Any errors → fix first. Don't stop at
+`validate.py`: the artifact validator carries the prose-drift family and
+the coverage review carries the cross-layer checks, so a node-only pass
+can read clean while artifact-level warnings stand.
 
 ---
 
