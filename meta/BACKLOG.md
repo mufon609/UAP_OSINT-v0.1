@@ -64,10 +64,10 @@ staged implementation (see the A5 entry).
   prompts (4), Scout/Meta-linker/Builder prompts (5). The pipeline is
   complete as launchable prompts + per-phase validation.
 - **Tier 3 — A5** (agent topology): supersedes A2's five-agent chain
-  with a seven-role topology + per-agent check bundles. inc-1 (the
-  `_phases.py` re-map, which resolved and retired C42) is shipped; inc-2/3
-  (topology doc + new prompts) and inc-4 (first live run, the C41
-  vehicle) remain.
+  with a seven-role topology + per-agent check bundles. inc-1 (`_phases.py`
+  re-map, resolved/retired C42), inc-2 (topology doc), and inc-3 (new
+  prompts; the five A2 prompts deleted) are shipped; inc-4 (first live run
+  on a user-directed build) remains.
 
 ---
 
@@ -220,8 +220,9 @@ re-driven by re-running that agent (never by editing the node body).
 **Blocked by:** none. The A2 decomposition is **complete as a launchable,
 documented pipeline** (all five agents + A3 quote shape + `--phase`
 per-stage validation). What remains is operational, not structural:
-exercise it on the next user-directed node build (C41). All 15 person
-nodes are now migrated to `claim_group` (C40 — done 2026-05-20).
+exercise it on the next user-directed node build (now A5-inc-4, since A5
+supersedes this topology). All 15 person nodes are now migrated to
+`claim_group` (C40 — done 2026-05-20).
 **A5 effect:** A5 supersedes this topology (seven roles + per-agent check
 bundles) while inheriting its invariants (handoff stubs, agent-boundary
 invariant, A3 shape). See A5.
@@ -360,17 +361,22 @@ render run + role 6's audit.
   with role-6 propagation; register in `prompts/README.md`; delete the five
   superseded A2 `agent-*.md` (they strand no scripts — every script they
   named is also named in a new role prompt).
-- **4 — Exercise end-to-end (the C41 run).** First whole-chain run
-  is a user-directed build (real target + archivable sources; one-new-
-  person/org rule); capture the `/tmp/handoff-{slug}-*.yaml` stubs; prove the
-  worker variants, the tightening loop, and Error-Agent routing; confirm each
-  `--phase X` fires exactly the checks reading state role X produced.
+- **4 — Exercise end-to-end (first live run).** The seven-role pipeline is
+  complete as launchable prompts + per-phase validation but has never been
+  run *whole* on one node. The first run is a user-directed build (per
+  `CLAUDE.md`, target + scope from the user, sources real + archived — not a
+  fabricated target); launch each role in order with a human checkpoint +
+  `--phase` validation between stages (`prompts/topology.md`), capture the
+  `/tmp/handoff-{slug}-*.yaml` stubs, and prove the worker variants, the
+  tightening loop, and Error-Agent routing; confirm each `--phase X` fires
+  exactly the checks reading state role X produced.
 - **5 (deferred) — `prose_drift` two-phase split** (`prose_drift_toplevel` @
   organize + `prose_drift_notes` @ link) if one-phase-late surfacing of
   top-level drift proves annoying in practice.
 
 **Blocks:** none.
-**Blocked by:** inc-4 needs a user-directed build target (couples with C41).
+**Blocked by:** inc-4 needs a user-directed build target — opportunistic,
+taken on the next node build.
 **Inherits from A2:** the handoff-stub convention
 (`/tmp/handoff-{slug}-{agent}.yaml`), the agent-boundary invariant, and the
 A3 `claim_group`/`corroborated_by` shape (shipped across all 15 person nodes)
@@ -434,23 +440,35 @@ sit on the end page).
 **Blocked by:** none (residual needs the original rendering / a
 convention call on appendix + chapter page forms).
 
-### C41 — Exercise the A2 pipeline end-to-end on a real node build
+### C43 — Mechanical check for source-anchored quote location forms
 
-The five-agent build pipeline (Scout → Marker → Manager → Meta-linker →
-Builder) is complete as launchable prompts + per-phase validation (A2
-increments 1–5), but has never been run *whole* on one node — each stage
-is validated piecewise, not the chain. The first live run is a
-**user-directed** node build (per `CLAUDE.md`, target + scope come from
-the user and sources must be real + archived; the pipeline is not
-exercised on a fabricated target). On the next directed build, launch
-each agent in order with a human checkpoint + `--phase` validation
-between stages (`prompts/build.md` "Running the full pipeline"), capture
-the `/tmp/handoff-{slug}-{agent}.yaml` stubs, and surface any
-handoff-boundary friction the piecewise validation missed.
+`quotes.py` validates that a quote's `source.location` is *present*, but
+nothing validates its *form* — so extraction-anchored refs (`lines N-M`,
+`line N`), which go stale when an extract is regenerated, can still slip in.
+`scripts/tools/normalize-locations.py` is the only guard today, and it is a
+manual diagnostic nobody is scheduled to run (the same bandaid pattern the
+A5 audit flagged). Convert the guard to a mechanical check: flag a
+`source.location` that begins with `line`/`lines` + a number (allowing the
+explicit `lines N-M of the extract` form) per `meta/conventions.md` "Quote
+location refs: source-anchored, not extraction-anchored". Map it to the
+`extract` phase (role 4 produces the quotes). The corpus is currently clean
+(C35 sweep), so the check passes on arrival and prevents regression;
+`normalize-locations.py` then reduces to a fix-aid (it reports where a
+flagged quote's text lives in the extract).
 
 **Blocks:** none.
-**Blocked by:** a user-directed build target (scope + real, archivable
-sources) — opportunistic, taken on the next node build.
-**A5 effect:** the first live run now exercises the expanded topology (A5-inc-4),
-not A2's five-agent chain. C41 is the user-directed-build trigger for
-A5-inc-4; the two are the same milestone.
+**Blocked by:** none.
+
+### C44 — `manifest.py add --dry-run` for role-2 lead self-check
+
+Role 2 (External Investigator) produces a URL queue but has no self-check;
+its leads are validated only when role 3 archives them (`manifest.py add`).
+Add `--dry-run` to `manifest.py add`: run the URL / path / format /
+uniqueness validation and report what *would* change without writing the
+manifest, so role 2 can validate a lead before handoff — the per-agent
+feedback every other role in `prompts/topology.md` already has. Reuses the
+one authoritative archival tool (no second validation surface). Then point
+role 2's feedback line in `prompts/topology.md` at it.
+
+**Blocks:** none.
+**Blocked by:** none.

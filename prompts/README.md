@@ -16,7 +16,6 @@ copy the relevant prompt into a fresh Claude Code session.
 | `agent-worker.md` | Worker (role 4) — per-source verbatim quote extraction, parameterized by `worker_kind` (pdf / html / caption / foia) |
 | `agent-build.md` | Build Agent (role 5) — organize quotes + free-prose + cross-refs, then render; routes failures to the Error Agent, never edits the node body |
 | `agent-error.md` | Error Agent (role 5) — triage a validator failure to its owning role; recommend a data fix, never a node-body edit |
-| `design-expanded-pipeline.md` | Design/plan session — investigate the repo, then design the expanded agent topology (orchestrator + internal/external investigators + archive + type-specialized workers + build/error + audit) and the per-phase decomposition of the checks/scripts for instant per-agent feedback. Extends A2 + `--phase`; resolves C42 |
 | `audit.md` | Audit an existing node for evidentiary integrity (includes the audit-correction pattern); also role 6 of the build topology — the health pass + adjacent-node propagation |
 | `quote-relevance-audit.md` | Audit `quotes[]` on an existing artifact for load-bearing relevance to the node's subject — the content-relevance layer that mechanical checks cannot evaluate. Run after Phase I rebuilds, after 5+ incremental quote additions, or periodically across built nodes. Especially relevant on PA-spokesperson institutional-actor nodes. |
 | `web-claude-investigator.md` | Brief for Claude Web acting as investigator — find primary sources for a target, produce a handoff stub for Claude CLI to build from |
