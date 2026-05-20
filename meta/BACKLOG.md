@@ -55,15 +55,12 @@ position in the graph.
 
 **Tier 0 — A2 prerequisites (must resolve first):**
 
-- **C35** — retire `p. N, ¶M` page-anchored location convention?
-  *(blocks C33 implementation; not originally an A2 prerequisite
-  but transitively in the chain)*
 - **C33** — verbatim-quote normalization architecture
-  *(implementation waits on C35)*
 - **A3** — quote-section redesign
 
-Within Tier 0, A3 is independent; C35 and C33 are sequenced (C35
-first, then C33).
+Within Tier 0, A3 and C33 are independent. (C35 was reframed to an
+accuracy-check investigation — page-anchored locations stay — so it no
+longer gates C33 or sits in the A2 chain.)
 
 **Tier 1 — A2 sub-task (scoped after A2's agent decomposition is
 settled; implementation co-lands with A2):**
@@ -126,13 +123,11 @@ failure mid-pipeline can be traced back to the agent that produced
 the upstream artifact.
 
 **Quote-section sub-question.** The current node-body quote section
-may need to be redesigned to be less clunky. The constraints are no
-info loss and no duplicate noise. A person node always points to
-the source nodes anyway, so verbatim quote content remains
-recoverable from the source layer even if the person-node surface
-itself is leaner. This is a separable structural decision and likely
-wants its own BACKLOG entry once the multi-agent decomposition is
-scoped.
+may need to be reorganized to be less clunky — *without* losing
+verbatim quotes (see **A3**, which reframes this as grouping quotes by
+load-bearing statement with confirm/contradict cross-refs, not
+compressing them to source-node pointers). Separable structural
+decision, tracked in its own BACKLOG entry (A3).
 
 **Surfaces an investigation has to walk.**
 
@@ -212,54 +207,54 @@ not as recommendations):
 
 ---
 
-### A3 — Quote-section redesign
+### A3 — Quote-section redesign (organize by load-bearing statement)
 
-**Open structural question.** The current node-body quote section
-carries per-quote verification blocks with source link,
-attribution, context, observation type, and significance. Across
-the corpus this produces dense, repetitive surfaces — a person
-node citing many statements becomes a long quote-block stream. The
-constraint is load-bearing: every claim must trace to a verbatim
-source. The question is whether the rendered surface can be leaner
-without losing the evidentiary trace.
+**Open structural question — purely about ORGANIZATION.** The node
+**must keep its proper verbatim quotes** — the repo's evidentiary
+primitive is verbatim text on the node where the claim is asserted,
+not a compressed pointer to the source node "one click away."
+Compressing quotes to references breaks that and is explicitly NOT
+the goal. The real question is how to *organize* the quotes so the
+surface isn't a dense, repetitive per-quote stream (a person node
+citing many statements today renders one verification block per
+quote).
 
-**Constraints.**
+**Direction (framing, not a chosen design).** Reorganize the surface
+around **load-bearing statements** rather than a flat per-quote list,
+complementing the existing `timeline` (the chronological view):
 
-1. **No info loss.** Every quote that supports a claim must remain
-   recoverable, with verbatim text + source link + attribution.
-2. **No duplicate noise.** A person node citing the same source for
-   five quotes shouldn't repeat the source attribution five times
-   in the body. The artifact layer carries the data; the rendered
-   surface is the presentation.
-3. **The source node carries the canonical quote text.** A person
-   node always points to the source node (document / transcript /
-   media); the verbatim quote already lives there. The person node
-   could carry compressed references rather than full verbatim
-   repetition, since the source node is one click away.
+- Each load-bearing statement carries its verbatim quote(s) once.
+- Other sources that bear on the statement **reference** it instead
+  of re-stating it — "source X confirms this statement", "source Y
+  contradicts it" — so cross-source corroboration adds no duplicate
+  quote text.
+- **Contradictions get their own section, adjacent to the statement
+  they contradict** — the disagreement sits next to the claim, not
+  buried in a flat stream or only on a separate node.
 
-**Candidate approaches** (listed for the decision space; none
-recommended):
+Net: no verbatim loss, far less duplication / clutter, and the
+investigation stays current — a new corroborating or contradicting
+source attaches to the relevant statement instead of appending
+another block.
 
-- **Compressed reference layout.** Person node renders a short
-  attribution + significance + link to the source node's quote.
-  Full verbatim text lives only in the source node. Smallest body
-  surface; highest navigation cost for a reader who wants the
-  quoted text inline.
-- **Source-grouped layout.** Multiple quotes from the same source
-  render under one attribution heading, not one per quote.
-  Eliminates repetition without losing inline verbatim text.
-- **Collapsible blocks.** Body renders full quote in a
-  collapsible HTML detail/summary structure. Compact by default,
-  expandable on demand. Breaks pure-Markdown discipline (renderer
-  would need to emit raw HTML).
-- **Status quo + tighter discipline.** Keep per-quote blocks;
-  retire the duplicative attribution / context / observation-type
-  fields where the source layer already carries them. Smallest
-  structural change.
+**The design question to settle — best for BOTH:**
+- the reader / investigator (each load-bearing claim shown with its
+  verbatim support + adjacent confirm/contradict cross-refs), and
+- backend maintenance (how a "statement" + its quote(s) + the
+  cross-source confirm/contradict links are modeled in the research
+  artifact and rendered, without a fragile new layer).
 
-**Corpus measurement (person nodes).** 15 person nodes; mean 30
-quotes / median 16 / max 165. Source-attribution duplication is
-concentrated:
+**Architecture boundary to reconcile.** Cross-source contradiction is
+today a **finding** (the three-layer architecture: entity nodes carry
+single-source facts; findings carry multi-source patterns). A
+statement-adjacent "contradicts" section on the entity node must be
+squared with that — e.g., the node carries the pointer + marker
+(`❌` / `⚠`) adjacent to the statement while the cross-source analysis
+still lives on a finding, or the boundary moves. Resolve this as part
+of the design; it is the load-bearing tension.
+
+**Corpus measurement (person nodes) — the duplication the redesign
+targets.** 15 person nodes; mean 30 quotes / median 16 / max 165:
 
 | Person node | Total quotes | Max same-source repetition |
 |---|---|---|
@@ -269,28 +264,25 @@ concentrated:
 | `/people/sean-kirkpatrick` | 43 | 10 |
 | `/people/luis-elizondo` | 23 | 9 |
 
-The Grusch node is the worst case — 79 verification blocks all
-attributing to the same source (his July 2023 House testimony).
-Source-grouped layout collapses that 79 to 1 attribution heading
-with 79 quote bodies underneath; compressed-reference goes further
-and replaces each quote body with a link to the source-node
-passage. Status-quo-tighter would drop the duplicative per-quote
-fields but keep the 79 separate attribution lines.
+The Grusch node (165 quotes, 79 to one source — his July 2023 House
+testimony) is the worst case the statement-grouping must handle
+gracefully: those 79 collapse under the statements they support, with
+no loss of verbatim text.
 
 **Surfaces an investigation has to walk.**
 
 - `scripts/build/renderers/{person,document,event,transcript}.py` —
   current quote rendering across types.
-- `meta/schema-research-artifact.yaml` — per-quote required fields.
+- `meta/schema-research-artifact.yaml` — `quote_entry` shape; whether
+  a statement grouping + confirm/contradict cross-refs need new fields.
 - `meta/conventions.md` "Statements as the universal evidentiary
-  primitive" — the principle the section enforces.
-- A representative read of `/people/david-grusch` (current
-  165-quote rendered surface) to evaluate each candidate against
-  the worst-case reader experience.
+  primitive" (keep verbatim) + "Contradictions" (the `❌` / `⚠`
+  markers and where contradictions are documented).
+- The finding-node layer — the boundary above.
+- A representative read of `/people/david-grusch` (165-quote surface).
 
 **Blocks:** A2 (the manager agent's contract — how it organizes
-quotes into the node — depends on what the rendered quote section
-looks like).
+quotes into the node — depends on the quote section's shape).
 **Blocked by:** none.
 
 ---
@@ -420,13 +412,11 @@ The reactive-patch trajectory was forward-looking when the entry
 was written. The pile has converged: one remaining concrete failure
 mode (page-footer digits) plus exotic-quote variants that may never
 fail. The question of whether a more principled abstraction is
-reachable is partly answered by the convergence — but page-footer-
-digit handling specifically intersects with the open structural
-question in **C35** (retire `p. N, ¶M` page-anchored locations in
-favor of grep-based navigation). If C35 retires the convention,
-the page-footer failure mode's contributor cost drops sharply
-(quotes spanning page boundaries are less common when locations
-aren't page-anchored), and C33 narrows further.
+reachable is partly answered by the convergence. (C35 was once
+expected to retire page-anchored locations — which would have made
+page-spanning quotes rare and narrowed this further — but C35 has been
+reframed to an accuracy check; page-anchored locations stay, so the
+page-footer failure mode stands on its own merits here.)
 
 **The actual question:** what is the right separation between
 "source content" (the substring the check should match against)
@@ -474,186 +464,33 @@ drift via contributor declaration rather than mechanical
 normalization).
 
 **Blocks:** A2 (marker-agent extraction primitive).
-**Blocked by:** none directly. Outcome shape depends on C35 — if
-C35 retires page-anchored locations, the page-footer failure mode
-becomes rare enough that targeted addition or even status-quo
-may be acceptable. C33 should not implement until C35 resolves.
+**Blocked by:** none. (C35 was reframed to an accuracy check — it no
+longer retires page-anchored locations — so C33 no longer waits on it;
+the page-footer failure mode stands on its own.)
 
-### C35 — Retire `p. N, ¶M` page-anchored location convention?
+### C35 — Verify page-anchored location refs are accurate
 
-**PROMOTED 2026-05-19 → `meta/roadmap.md` "C35" (Full Retire;
-phases C35.1–C35.5).** Decision resolved: Full Retire. This entry
-stays as the analysis-of-record until phase C35.5 retires it on
-landing.
+**Investigation (accuracy check — not a convention change).** Every
+quote in `meta/research/*.yaml` carries a `source.location` the
+renderer surfaces so a reader can navigate to the quoted passage.
+~507 of these are page-anchored (`p. N, ¶M` or `p. N`), almost all
+from PDF / paginated-HTML sources. The verbatim-quote check confirms
+the quote TEXT appears somewhere in the source — it does NOT confirm
+the location ref points to the right place. The open question: are
+the page-anchored refs accurate, or have some drifted (wrong page,
+off-by-one paragraph, stale after a re-extraction)?
 
-**Open structural question.** Every quote in `meta/research/*.yaml`
-carries a `source.location` field anchoring the quoted passage
-within the cited source. `meta/conventions.md` "Quote location
-refs" enforces a canonical form per source-shape: `p. N, ¶M` for
-paginated PDFs, `¶N` for unpaginated short documents, `[MM:SS]`
-for caption / audio / video, `Doc N` for FOIA email-release
-siblings, etc. The location is reader-facing — the renderer emits
-a `| Location | ... |` row in every quote's verification block so
-a reader can navigate to the passage within the cited source.
+**What to do.** Sweep (or sample) the page-anchored locations and
+check each against its archived source — does following the ref land
+on the quoted passage? Report (and correct) any inaccurate refs. The
+page-anchored convention stays; the goal is confirming the refs are
+correct. `scripts/tools/normalize-locations.py` (the read-only
+diagnostic that flags extraction-version-dependent refs) is the
+natural starting point; the source files in `sources/` are the ground
+truth.
 
-**The proposal under investigation.** Retire the page-anchored
-location forms (`p. N, ¶M`, `p. N`) in favor of grep-based
-navigation: the source is archived locally, the quote text is
-verbatim, a reader finds the passage by searching the source for
-the quote text. Implication: `source.location` either drops or
-narrows to forms that grep can't replace (timestamps for audio /
-video, document-block markers for FOIA email releases).
-
-**What the reader actually does.** For most sources in the
-corpus (short documents, news articles, single-page memos), the
-reader opens the archived source and locates the quote by
-ctrl-F / `grep` on its text. The `p. N, ¶M` ref provides no
-information beyond what grep produces. For long-form sources
-(200-page hearing transcripts, multi-document FOIA releases,
-government reports with section structure), the page ref is a
-shortcut — without it, the reader greps a 200-page PDF and
-maybe finds multiple matches.
-
-**What the contributor pays today.** Maintaining `p. N, ¶M`
-discipline carries real costs:
-
-- Extraction-version dependence: `pdftotext` page numbers shift
-  when the extract is regenerated against a clean-text sibling
-  (the OCR-scan / extraction-lossy recovery path produces
-  different page boundaries than the underlying PDF). The
-  `meta/conventions.md` "source-anchored, not extraction-
-  anchored" rule documents this fragility.
-- Page-footer normalization pain (parent of **C33**'s remaining
-  failure mode): substring matching breaks at page boundaries
-  because pdftotext emits page-number digits in extracted text.
-- `scripts/tools/normalize-locations.py` is one of the more
-  complex contributor tools — exists to detect / report
-  extraction-version-dependent location refs and propose
-  canonical forms. If page-anchored refs retire, this tool
-  retires with them.
-
-**What grep-based navigation costs.**
-
-- Long-form sources: reader doesn't get the page-shortcut.
-  Mitigation: many PDF viewers' search produces results-with-
-  context that approximates a page ref. Acceptable for most
-  readers; potentially worse for citation discipline (academic-
-  style references that quote "p. 47" carry institutional
-  weight grep doesn't).
-- Sources where the quote text appears multiple times: grep
-  alone is ambiguous. Mitigation: `context` field (already
-  populated on most quotes) disambiguates which occurrence is
-  meant.
-- Sources that don't grep at all: video / audio / scanned PDFs
-  without text layers. These keep their timestamp / document-
-  block / `lines N-M of the extract` locations regardless —
-  the proposal is about retiring page-anchored forms, not all
-  location forms.
-
-**Source-shape category walk** (the investigation has to do this
-properly before any retirement):
-
-| Source shape | Current location form | Grep-navigable? | Retire ref? |
-|---|---|---|---|
-| Short PDF / news article (1–5 pages) | `p. N, ¶M` or `¶N` | Yes | Likely yes |
-| Long PDF (hearing, report, study) | `p. N, ¶M` | Mostly yes; long-form is the edge case | Investigate per-document |
-| HTML article | `¶N` | Yes | Likely yes |
-| TXT / Markdown source | `¶N` or line-based | Yes | Likely yes |
-| Caption / auto-caption transcript | `[MM:SS]` | Sort of (no easy ctrl-F on bare timestamps) | No — timestamps are content-anchored |
-| Audio / video source | `[MM:SS]` | No | No |
-| Scanned PDF (`ocr-scan` flag) | `p. N, ¶M` against `.txt` sibling | Yes against sibling | Likely yes |
-| FOIA email release with `DOCUMENT N` markers | `Doc N, Sender YYYY-MM-DD HH:MM` | Yes via `Doc N` marker | No — markers ARE content-anchored, not page-anchored |
-| Image / photo (visual text) | spatial anchor (e.g., `HUD bottom-right`) | No | No |
-
-**Corpus census (quote-location forms by source format):**
-
-| Source format | Page-anchored | Paragraph-anchored | Timestamp | Doc-N | Other |
-|---|---|---|---|---|---|
-| pdf (670 total) | 502 | 52 | 0 | 14 | 102 |
-| html (301 total) | 4 | 165 | 0 | 0 | 132 |
-| transcript (240 total) | 0 | 0 | 240 | 0 | 0 |
-| txt (19 total) | 1 | 0 | 0 | 0 | 18 |
-
-Page-anchored locations are almost entirely a PDF convention:
-**506 of 507 page-anchored refs come from PDF or paginated-HTML
-sources.** Transcripts use timestamps universally. HTML mostly
-uses paragraph-anchored. The "Other" buckets sample as section-
-anchored ("CRADA 19-15, Section II", "AARO HRR Vol I Section V"),
-appendix names, or labeled paragraph refs ("Opening ¶3") —
-content-anchored, not page-anchored, so they survive any
-page-retirement decision.
-
-**Migration-cost detail (full census of the 507 page-anchored
-locations):** 115 carry the canonical `p. N, ¶M` form (or a `p. N`
-+ paragraph-indicator variant); **392 are `p. N` only** with no
-paragraph anchor. The `p. N`-only entries are often content-pointer
-rather than paginated-paragraph — "p. 1, top-right corner stamp",
-"p. 1, Q&A content following DOPSR clearance stamp", "p. 19, About
-the Author". Some `p. N` entries also repeat the page across
-multiple distinct quotes ("p. 13" cited eight times in the same
-artifact for different paragraphs on that page); these depend on
-the `context` field for disambiguation, not the location ref.
-
-**Candidate resolutions:**
-
-- **Full retire.** Drop `p. N, ¶M` entirely. `source.location` becomes
-  optional (timestamp / Doc-N / spatial-anchor / `¶N` only). Renderer
-  omits Location row when location is empty. Migration: 115 `p. N, ¶M`
-  entries strip the `p. N` prefix to keep `¶M`; 392 `p. N`-only entries
-  either drop the location field entirely (rely on grep + `context`)
-  or convert to a content-pointer form when the existing wording
-  already points at structure (e.g., "p. 1, top-right corner stamp"
-  drops the `p. 1,` prefix to "top-right corner stamp"). Most
-  aggressive simplification; eliminates extraction-version dependence
-  entirely.
-- **Retire the page component; keep `¶N`.** `p. N, ¶M` becomes `¶M`
-  globally — paragraph-anchored, not page-anchored. Clean migration
-  for the 115 entries with paragraph anchors. The 392 `p. N`-only
-  entries are the friction: no ¶M to fall back on, so contributor must
-  compute paragraph numbers OR convert to content-pointer ("p. 1,
-  top-right corner stamp" → "top-right corner stamp"). Higher
-  contributor cost than the framing initially suggested.
-- **Retire for short sources only.** Documents under N pages drop
-  `p. N`; long-form sources keep it as a navigation aid. Per-source
-  judgment via a new manifest field or a page-count threshold. Less
-  aggressive; preserves the long-form reader experience (the 2024-11-19
-  SASC hearing transcript, AARO Historical Record Report Vol I).
-  Highest per-source contributor cost (page-count gating).
-- **Status quo + better tooling.** Keep page-anchored convention;
-  add a `scripts/tools/locate-quote.py` helper that takes a quote
-  + source and emits the canonical `p. N, ¶M` ref by grep. Eases
-  contributor friction without retiring the convention. Zero
-  migration cost.
-
-**Surfaces an investigation has to walk:** `meta/conventions.md`
-"Quote location refs" section; `meta/schema-research-artifact.yaml`
-`quote_source.location` field semantics; `scripts/build/renderers/*.py`
-(every renderer that emits a Location row); `scripts/tools/normalize-
-locations.py` (the diagnostic that would retire); every existing
-`meta/research/*.yaml` quote's location form (corpus-wide count by
-shape, current distribution); reader-experience evaluation on a
-representative dense long-form source (e.g., the 2024-11-19 SASC
-hearing transcript).
-
-**Effect on C33.** If C35 lands as "full retire" or "retire page
-component," C33's page-footer failure mode loses most of its
-contributor cost — quotes spanning page boundaries are rare when
-locations aren't page-anchored. The two BACKLOG entries should
-land in dependency order: C35 first (decision on locations), C33
-follows (decision on remaining normalization gap).
-
-**Out of scope for the investigation.** Picking a candidate without
-walking the source-shape category table. Some categories must keep
-their location form (audio / video / image / FOIA); the question
-is exclusively about page-anchored forms for paginated text
-sources. Bundling unrelated location-form changes (timestamp
-syntax, paragraph-anchor enforcement, etc.) into this
-investigation would scope-creep it.
-
-**Blocks:** C33 (C33's outcome depends on C35's decision).
+**Blocks:** none.
 **Blocked by:** none.
-
----
 
 ### C37 — Person synthesis prose has no error-level drift gate
 
@@ -719,3 +556,34 @@ remain `[`/path`]` body wraps regardless.
 
 **Blocks:** none.
 **Blocked by:** none. (Independent of the A2 chain.)
+
+---
+
+### C39 — Remove the auto-generated `## Associated Nodes` section
+
+**Proposal.** Every node renders a `## Associated Nodes` section
+(auto-generated by `scripts/build/associate.py` from the `[`/path`]`
+body wraps, grouped by target type). It is a *derived duplicate* — it
+re-lists cross-references that already appear inline as body wraps in
+the prose. Remove it: the inline wraps already establish every
+cross-reference, and `associate.py` + its `--check` parity gate exist
+only to keep the duplicate in sync.
+
+(For the record: the section IS rendered today — it appears in all 58
+nodes. The issue is redundancy, not absence.)
+
+**What removal touches.** `scripts/build/associate.py` (retire the
+generator + `--check`); the build pipeline / renderers that emit or
+expect the section; any `scripts/checks/` parity gate; `meta/conventions.md`
+"Associated Nodes"; the 58 rendered node bodies (strip the section on
+next rebuild).
+
+**Trade-off to weigh.** The section is a navigational convenience — an
+at-a-glance, grouped-by-type "what does this node connect to" that
+wraps scattered through prose don't surface at a glance. The question
+is whether that index earns a rendered section or is redundant clutter
+given the inline wraps (and given that the broken-link registry, not
+this section, drives the Priority Build Queue).
+
+**Blocks:** none.
+**Blocked by:** none.
